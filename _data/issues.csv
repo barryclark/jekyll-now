@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1478,196668279,2016-12-20 13:42:02,2016-12-20 13:07:36,Cercasi casa nel maceratese,,,"[""Accettato"", ""Fabbisogni"", ""Form"", ""Sisma Ottobre""]",,,"{""cosa"": ""Casa recintata"", ""data"": ""20/12/2016"", ""descrizione"": ""Cerco una casa indipendente in affitto con corte recintanta perch\u00e9 ho tre cani, nei comuni del maceratese. La mia casa \u00e8 inagibile e attualmente sono in affitto in un condominio con piccolo giardino, ma i cani abbaiano e trattandosi di un condominio danno fastidio....ho gi\u00e0 dovuto regalare tutti gli altri animali che avevo con molto dolore....potrebbe andare bene anche una casa che veniva affitatta nei mesi estivi come casa vacanza, bed & breakfast (pagherei l'affitto tutto l'anno al posto dei soli affitti, seppure pi\u00f9 elevati, dei soli mesi estivi). Grazie"", ""email"": ""gdajeannot@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3333067313""}","<pre><yamldata>tel: '3333067313'
+email: gdajeannot@gmail.com
+cosa: 'Casa recintata'
+descrizione: 'Cerco una casa indipendente in affitto con corte recintanta perché ho tre cani, nei comuni del maceratese. La mia casa è inagibile e attualmente sono in affitto in un condominio con piccolo giardino, ma i cani abbaiano e trattandosi di un condominio danno fastidio....ho già dovuto regalare tutti gli altri animali che avevo con molto dolore....potrebbe andare bene anche una casa che veniva affitatta nei mesi estivi come casa vacanza, bed & breakfast (pagherei l''affitto tutto l''anno al posto dei soli affitti, seppure più elevati, dei soli mesi estivi). Grazie'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 20/12/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1476,196444837,2016-12-19 15:41:30,2016-12-19 15:41:14,Il Comune di #Fiastra ha bisogno di due motoseghe,43.0361407,13.1554547,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Sisma Ottobre""]",,,"{""cosa"": ""Il Comune di #Fiastra ha bisogno di due motoseghe"", ""data"": ""19/12/2016"", ""descrizione"": ""Il Comune di Fiastra ha bisogno urgente di un paio di motoseghe professionali (Still o Usqvarna) perch\u00e8 sono state rubate e il Comune \u00e8 rimasto senza, mentre in questo momento sarebbero molto utili. Per contatti: Maurizio, geometra del Comune."", ""email"": ""sia_82@hotmail.com"", ""immagine"": """", ""indirizzo"": ""Via Roma, Fiastra, MC, Marche, 62035, Italia"", ""lat"": ""43.0361407"", ""link"": """", ""lon"": ""13.1554547"", ""tel"": ""339 5803585""}","<pre><yamldata>tel: '339 5803585'
 email: sia_82@hotmail.com
 cosa: 'Il Comune di #Fiastra ha bisogno di due motoseghe'
@@ -1260,11 +1271,6 @@ lat: '42.6280156'
 lon: '13.292479100000037'
 link: ''
 immagine: ''
-data: 18/11/2016
-</yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1306,190343242,2016-11-25 23:38:42,2016-11-18 15:16:08,RicostruiAmo Natale: i cesti solidali del comitato Ricostruiamo #Saletta,,,"[""Accettato"", ""acquisto solidale"", ""Bollettino"", ""Form"", ""Sisma Ottobre""]",,,"{""data"": ""18/11/2016"", ""descrizione"": ""Presentiamo le proposte del Comitato Ricostruiamo Saletta per i vostri cesti solidali. Non perdete l'occasione di aiutare le aziende colpite dal terremoto e degustare prodotti di altissima qualit\u00e0. Per info e prenotazioni scrivete a ricostruiamonatale@gmail.com, oppure sulla pagina facebook RicostruiAmo Natale. Grazie!"", ""link"": ""https://www.facebook.com/regalodinatalesolidale/?ref=aymt_homepage_panel"", ""titolo"": ""RicostruiAmo Natale. Un aiuto concreto per le aziende del Centro Italia.""}","<pre><yamldata>titolo: 'RicostruiAmo Natale. Un aiuto concreto per le aziende del Centro Italia.'
-descrizione: 'Presentiamo le proposte del Comitato Ricostruiamo Saletta per i vostri cesti solidali. Non perdete l''occasione di aiutare le aziende colpite dal terremoto e degustare prodotti di altissima qualità. Per info e prenotazioni scrivete a ricostruiamonatale@gmail.com, oppure sulla pagina facebook RicostruiAmo Natale. Grazie!'
-link: 'https://www.facebook.com/regalodinatalesolidale/?ref=aymt_homepage_panel'
 data: 18/11/2016
 </yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1306,190343242,2016-11-25 23:38:42,2016-11-18 15:16:08,RicostruiAmo Natale: i cesti solidali del comitato Ricostruiamo #Saletta,,,"[""Accettato"", ""acquisto solidale"", ""Bollettino"", ""Form"", ""Sisma Ottobre""]",,,"{""data"": ""18/11/2016"", ""descrizione"": ""Presentiamo le proposte del Comitato Ricostruiamo Saletta per i vostri cesti solidali. Non perdete l'occasione di aiutare le aziende colpite dal terremoto e degustare prodotti di altissima qualit\u00e0. Per info e prenotazioni scrivete a ricostruiamonatale@gmail.com, oppure sulla pagina facebook RicostruiAmo Natale. Grazie!"", ""link"": ""https://www.facebook.com/regalodinatalesolidale/?ref=aymt_homepage_panel"", ""titolo"": ""RicostruiAmo Natale. Un aiuto concreto per le aziende del Centro Italia.""}","<pre><yamldata>titolo: 'RicostruiAmo Natale. Un aiuto concreto per le aziende del Centro Italia.'
