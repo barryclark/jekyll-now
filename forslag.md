@@ -5,7 +5,7 @@ permalink: /forslag/
 group: nav
 ---
 
-Hvis du har et forslag til aktiviteter den nye forening skal lave eller ikke lave kan man udfylde kontakformularen herunder. Alternativt kan forslag sendes til [alle@it-tutor.dk](mailto:alle@it-tutor.dk)
+Hvis du har et forslag til aktiviteter, som den nye tutorforening skal lave eller ikke lave, kan du udfylde kontakformularen herunder. Alternativt kan forslag sendes til [alle@it-tutor.dk](mailto:alle@it-tutor.dk)
 
 <form action="https://getsimpleform.com/messages?form_api_token=910d804bba2783c53638739d33772b5b" method="post">
   <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
