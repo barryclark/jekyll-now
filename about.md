@@ -4,12 +4,14 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+This is my first Github page.
+
+And there are using Jekyll II.
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+This is my first page.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[keiject@gmail.com](mailto:keiject@gmail.com)
