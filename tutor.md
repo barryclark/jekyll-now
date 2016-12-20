@@ -5,16 +5,16 @@ permalink: /tutor/
 group: nav
 ---
 
-Ansøgningsfristen for at blive tutor er i starten af april. Den specifikke dato fra år til år kan ses i kalderen under fanen [Hold dig opdateret](/info)
+Ansøgningsfristen for at søge om at blive tutor er i starten af april. Den specifikke dato fra år til år kan ses i kalderen under fanen [Hold dig opdateret](/info).
 
 En uge inden ansøgningsfristen afholdes der et infomøde på Katrinebjerg. 
 
-** Hvis du vil være sikker på ikke at gå glip af datoer kan du tilmelde dig vores nyhedsbrev med tutordeadlines nederest på siden. **
+** Hvis du vil være sikker på ikke at gå glip af vigtige datoer, kan du tilmelde dig vores nyhedsbrev med tutordeadlines nederest på siden. **
 
 ## Om at være tutor 
-Når man ansøger om at blive tutor forventes det af én at man kan deltage i de information møder der ligger i foråret samt rusdagene. For at man som tutor har mulighed for at fokusere på at give sit rushold den bedste start på universitetet, er der på disse informations møde indlagt tid til at man kan få planlagt aktiviteter samt lærer sit tutorhold at kende på de efterfølgende sociale arrangementer.
+Når man ansøger om at blive tutor forventes det, at man kan deltage i de informationsmøder, der ligger i foråret samt rusdagene. For at man som tutor har mulighed for at fokusere på at give sit rushold den bedste start på universitetet, er der på disse møder indlagt tid til, at man kan få planlagt aktiviteter. Der vil ligeledes blive afholdt sociale arrangementer for tutorerne, som det forventes, at man deltager i, så tutorholdet kan lære hinanden bedre at kende.
 
-For at blive en del af dette års tutor hold, skal man inden deadline sende en **motiveret** ansøgning til [ansoeg@it-tutor.dk](mailto:ansoeg@it-tutor.dk). 
+For at blive en del af dette års tutorhold, skal du inden deadlinen sende en **motiveret** ansøgning til [ansoeg@it-tutor.dk](mailto:ansoeg@it-tutor.dk). 
 Denne ansøgning skal som minimum indeholde:
 
 - Navn 
@@ -25,10 +25,10 @@ Denne ansøgning skal som minimum indeholde:
 - Andet du finder relevant for dine kvalifikationer som tutor
 
 
-På bagrrund af din ansøgning sammensættes og udvælges dette års tutorhold af bestyrelsen. For at sikre at de nye studerende får den bedste start på IT studiet, vil tutorholdene sammensættes således at der vil være en god fordeling af både gamle og nye tutorer. 
+På bagrrund af ansøgningerne sammensættes og udvælges årets tutorhold af bestyrelsen. For at sikre at de nye studerende får den bedste start på studiet, vil tutorholdene sammensættes, så der bliver en god fordeling af gamle og nye tutorer. 
 
 
-Hvis du vil være sikker på ikke at overse en deadline kan du skrive dig op til vores nyhedsbrev herunder. Vil vil løbende sende emails til alle på listen frem mod ansøgningsfristen i april.
+Hvis du vil være sikker på, at du ikke overser en deadline, kan du skrive dig op til vores nyhedsbrev herunder. Vil vil løbende sende emails til alle på listen frem mod ansøgningsfristen i april.
 
 
 <!-- Begin MailChimp Signup Form -->
