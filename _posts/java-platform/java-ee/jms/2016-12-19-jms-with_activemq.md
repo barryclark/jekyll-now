@@ -62,19 +62,17 @@ Bir örnek yapalım;
 Properties file'da aşağıdaki tanımları yapalım;
 
 
-| Name                            | Value           
-| -------------                   |:-------------:
-| jms.connection.factory.name      |  org.apache.activemq.jndi.ActiveMQInitialContextFactory
-| jms.provider.url                | tcp://localhost:61616     
-| connection.factory.jndi.name    | ConnectionFactory
-| output.queue.name               | jms/caysever.shop.1.1.Shopping
-| jms.message.timetolive          | 60
-| jms.correlation.id.delimeter    | :
-| jms.connection.username         | ""
-| jms.connection.password         | ""
+* jms.connection.factory.name -> **org.apache.activemq.jndi.ActiveMQInitialContextFactory**
+* jms.provider.url -> **tcp://localhost:61616**
+* connection.factory.jndi.name -> **ConnectionFactory**
+* output.queue.name -> **jms/caysever.shop.1.1.Shopping**
+* jms.message.timetolive -> **60**
+* jms.correlation.id.delimeter -> **:**
+* jms.connection.username -> **""**
+* jms.connection.password -> **""**
 
 
-```java
+{% highlight java %}
 package com.caysever.jms.adaptors;
 
 import java.net.InetAddress;
@@ -403,7 +401,7 @@ public class JMSAdaptor {
 		return correlationID.toString();
 	}
 }
-```
+{% endhighlight %}
 
 MQ'ya mesajı ilettik, şimdi browse edelim;
 ![activemq message](/images/java-platform/java-ee/jms/activemq_message.png)
@@ -412,6 +410,7 @@ Kod içerisinde açıklamalar mevcut ancak şunlara değinelim.
 İlk olarak initialize ile MQ ile ilgili bilgileri alıyor ve gerekli objeleri oluşturuyoruz. JNDI name ile lookup yaparak bir ConnectionFactory elde ediyoruz. Burada sadece jndi lookup yapıp bırakıyoruz arka tarafda jms vendor ile konuşup sonuç olarak bir ConnectionFactory veriyor bize.
 
 > Örneğimizde QueueConnectionFactory kullandık. TopicConnectionFactory de kullanılabilir. Ya da sadece ConnectionFactory kullanılabilir.
+
 1. Eğer QueueConnectionFactory kullanıyor isek sadece MQ üzerindeki Queue'lara erişebiliriz.
 2. Eğer TopicConnectionFactory kullanıyor isek sadece MQ üzerindeki Topic'lere erişebiliriz.
 3. Eğer ConnectionFactory kullanıyor isek MQ üzerindeki Queue ve Topic'lere erişebiliriz.
@@ -420,7 +419,7 @@ Kod içerisinde açıklamalar mevcut ancak şunlara değinelim.
 writeToMQ methodunda önce SESSION_TRANSACTED olacak şekilde bir Queue session aldık daha sonra MessageProducer ile sender oluşturup bir text mesaj gönderdik. Mesaj tipi text, stream veya obje olabilir.
 
 Gönderilen mesaj şöyle;
-```xml
+{% highlight xml %}
 <?xml version="1.0" encoding="UTF-8"?>
 <Ticket captureDate="09 Dec 2016 11:18:12" recordTemplateCode="501">
 	<TicketDate>2016-12-19 14:53:00.000</TicketDate>
@@ -432,7 +431,7 @@ Gönderilen mesaj şöyle;
 	<Dealer>AAkkus</Dealer>
 	<BankName>TRET</BankName>
 </Ticket>
-```
+{% endhighlight %}
 
 Dikkat edilecek iki nokta var;
 
@@ -442,7 +441,7 @@ Dikkat edilecek iki nokta var;
 
 Kodu asenkron olacak şekilde refactor edelim.
 
-```java
+{% highlight java %}
 package com.caysever.jms.adaptors;
 
 import java.net.InetAddress;
@@ -782,7 +781,7 @@ public class JMSAdaptor implements MessageListener{
 	}
 
 }
-```
+{% endhighlight %}
 
 Yaptığımız işler şunlar;
 1. MessageListener'ı implemente etmek ve onMessage içeriğini doldurmak.
@@ -790,17 +789,15 @@ Yaptığımız işler şunlar;
 
 Bunları yaptıktan sonra asenkron şekilde time independent iş yapabiliyor olacağız. ActiveMQ web console'dan mesaj gönderebiliriz. İlk olarak properties'leri şöyle güncelleyelim.
 
-| Name                            | Value           
-| -------------                   |:-------------:
-| jms.connection.factory.name     | org.apache.activemq.jndi.ActiveMQInitialContextFactory
-| jms.provider.url                | tcp://localhost:61616     
-| connection.factory.jndi.name    | ConnectionFactory
-| output.queue.name               | jms/caysever.shop.1.1.Shopping
-| jms.message.timetolive          | 60
-| jms.correlation.id.delimeter    | :
-| jms.connection.username         | ""
-| jms.connection.password         | ""
-| reply.queue.name                | jms/caysever.shop.1.1.ShoppingR
+* jms.connection.factory.name -> **org.apache.activemq.jndi.ActiveMQInitialContextFactory**
+* jms.provider.url -> **tcp://localhost:61616**
+* connection.factory.jndi.name -> **ConnectionFactory**
+* output.queue.name -> **jms/caysever.shop.1.1.Shopping**
+* jms.message.timetolive -> **60**
+* jms.correlation.id.delimeter -> **:**
+* jms.connection.username -> **""**
+* jms.connection.password -> **""**
+* reply.queue.name -> **jms/caysever.shop.1.1.ShoppingR**
 
 Queue name + "R" şeklinde yeni bir Queue oluşturalım. Web konsoldan Queue'ya mesaj gönderelim;
 
