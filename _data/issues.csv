@@ -332,17 +332,10 @@ descrizione: 'Il presidente della Regione Emilia Romagna Stefano Bonaccini ha in
 link: 'http://www.orizzontescuola.it/sisma-inaugurata-una-scuola-nel-maceratese-dono-della-regione-emilia-romagna/'
 data: 09/12/2016
 </yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1432,194664660,2016-12-20 10:20:42,2016-12-09 18:28:37,Materiale di falegnameria per sfollati di #Accumoli,42.9415743,13.8828904,"[""Accettato"", ""Bollettino"", ""Da rilanciare"", ""Fabbisogni"", ""Form"", ""Sisma Ottobre""]",,,"{""cosa"": ""Materiale per laboratorio di falegnameria \""Artistica Accumolese\"""", ""data"": ""09/12/2016"", ""descrizione"": ""Psy+ Onlus, organizzazione presente nelle aree colpite dal sisma dal 25 Agosto, oltre ad occuparsi di supporto psicologico, facilita iniziative di auto-organizzazione delle persone colpite dal Sisma. Dopo la costituzione del gruppo di maglieria Accumoli in Gomitolo, vi rappresentiamo la richiesta di un gruppo in fase di avvio che ha bisogno del sostegno di tutti noi. Per poter attuare il nostro progetto abbiamo bisogno per\u00f2 degli strumenti e del legno: pirografo pantografo combinata scalpelli per legno varie dimensioni morsetti sega da traforo pannelli multistrato da 2,5 mm a 5 mm"", ""email"": ""terremoto2016@psyplus.org"", ""immagine"": """", ""indirizzo"": ""Via Golgi, Sant'Antonio, San Benedetto del Tronto, AP, Marche, 63074, Italia"", ""lat"": ""42.9415743"", ""link"": ""http://www.psyplus.org/"", ""lon"": ""13.8828904"", ""tel"": ""3278825312""}","<pre><yamldata>tel: '3278825312'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1432,194664660,2016-12-20 10:22:37,2016-12-09 18:28:37,Materiale di falegnameria per sfollati di #Accumoli,,,"[""Accettato"", ""Bollettino"", ""Da rilanciare"", ""Fabbisogni"", ""Form"", ""Sisma Ottobre""]",,,{},"<pre><yamldata>tel: '3278825312'
 email: terremoto2016@psyplus.org
 cosa: 'Materiale per laboratorio di falegnameria ""Artistica Accumolese""'
-descrizione: 'Psy+ Onlus, organizzazione presente nelle aree colpite dal sisma dal 25 Agosto, oltre ad occuparsi di supporto psicologico, facilita iniziative di auto-organizzazione delle persone colpite dal Sisma. Dopo la costituzione del gruppo di maglieria Accumoli in Gomitolo, vi rappresentiamo la richiesta di un gruppo in fase di avvio che ha bisogno del sostegno di tutti noi. Per poter attuare il nostro progetto abbiamo bisogno però degli strumenti e del legno:
-pirografo
-pantografo
-combinata 
-scalpelli per legno varie dimensioni
-morsetti
-sega da traforo
-pannelli multistrato da 2,5 mm a 5 mm'
+descrizione: 'Psy+ Onlus, organizzazione presente nelle aree colpite dal sisma dal 25 agosto, oltre ad occuparsi di supporto psicologico, facilita iniziative di auto-organizzazione delle persone colpite dal sisma. Dopo l'impegno nel campo di accoglienza allestito ad Accumoli, oggi gli operatori dell'associazione operano a San Benedetto del Tronto e offrono sostegno alle persone di Accumoli sfollate negli alberghi. Dopo la costituzione del gruppo di maglieria ""Accumoli in Gomitolo"", vi rappresentiamo la richiesta di un gruppo di sfollati che vorrebbe avviare un laboratorio di falegnameria. Per poter attuare il progetto abbiamo bisogno però degli strumenti e del legno: pirografo, pantografo, combinata, scalpelli per legno varie dimensioni, morsetti, sega da traforo, pannelli multistrato da 2,5 mm a 5 mm.'
 indirizzo: 'Via Golgi, Sant''Antonio, San Benedetto del Tronto, AP, Marche, 63074, Italia'
 lat: '42.9415743'
 lon: '13.8828904'
