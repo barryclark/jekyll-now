@@ -4,12 +4,14 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+HN : Shinobu HUYUGIRI - xinolinx
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+I'm one of programmers in JP, I love low-level-layer (such as, CPUs, Device-Drivers, Virtual-Machines).
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[ixiv2015@gmail.com](mailto:ixiv2015@gmail.com)
+
+I'm enjoy current works, then I have not want a new-job offer, Sorry.
