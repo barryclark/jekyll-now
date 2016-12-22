@@ -1,4 +1,14 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1483,197206345,2016-12-22 16:13:38,2016-12-22 16:01:06,Arquata Viva,42.7723609,13.2965826,"[""Accettato"", ""Contatti"", ""Facebook"", ""Sisma Ottobre""]",,,"{""data"": ""22/12/2016"", ""descrizione"": ""Il progetto Arquata Viva - Ricostruirsi si Pu\u00f2! nasce per la comunit\u00e0 ma soprattutto con la comunit\u00e0; vuole fornire strumenti concreti e sostegno reale alle persone affinch\u00e9 possano essere Artefici in Prima Persona del processo di ricostruzione, se non delle case, almeno di loro stessi; sentirsi protagonisti attivi e non solo vittime, ritrovare la voglia e la forza di reinventarsi la vita, adesso, in questo tempo che \u00e8 uno spazio vuoto in cui o si crea o ci si smarrisce. I fondi raccolti con le Donazioni e le Iniziative Solidali, verranno impiegati per: - Attivare processi di RICOLLOCAZIONE PROFESSIONALE. - CONSULENZA E ORIENTAMENTO. - FORMAZIONE per chi ha VOGLIA e/o BISOGNO di REINVENTARSI un LAVORO. - Sviluppo e sostegno di azioni di MARKETING per agevolare la divulgazione e distribuzione di prodotti e servizi. Mentre i fondi raccolti con gli Acquisti Solidali andranno direttamente ai Produttori."", ""email"": ""segreteria@accademiamedioevo.it"", ""indirizzo"": ""Piazza Umberto I, Arquata del Tronto, AP, Marche, Italia"", ""lat"": ""42.7723609"", ""link"": ""http://www.arquataviva.it"", ""lon"": ""13.2965826"", ""nome"": ""Arquata Viva"", ""tel"": """"}","<pre><yamldata>nome: 'Arquata Viva'
+tel: ''
+email: segreteria@accademiamedioevo.it
+descrizione: 'Il progetto Arquata Viva - Ricostruirsi si Può! nasce per la comunità ma soprattutto con la comunità; vuole fornire strumenti concreti e sostegno reale alle persone affinché possano essere Artefici in Prima Persona del processo di ricostruzione, se non delle case, almeno di loro stessi; sentirsi protagonisti attivi e non solo vittime, ritrovare la voglia e la forza di reinventarsi la vita, adesso, in questo tempo che è uno spazio vuoto in cui o si crea o ci si smarrisce. I fondi raccolti con le Donazioni e le Iniziative Solidali, verranno impiegati per: - Attivare processi di RICOLLOCAZIONE PROFESSIONALE. - CONSULENZA E ORIENTAMENTO. - FORMAZIONE per chi ha VOGLIA e/o BISOGNO di REINVENTARSI un LAVORO. - Sviluppo e sostegno di azioni di MARKETING per agevolare la divulgazione e distribuzione di prodotti e servizi. Mentre i fondi raccolti con gli Acquisti Solidali andranno direttamente ai Produttori.'
+indirizzo: 'Piazza Umberto I, Arquata del Tronto, AP, Marche, Italia'
+lat: '42.7723609'
+lon: '13.2965826'
+link: 'http://www.arquataviva.it'
+data: 22/12/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1482,197203875,2016-12-22 16:13:00,2016-12-22 15:50:32,Il 23 dicembre riapre la Strada #Valnerina,,,"[""Accettato"", ""Bollettino"", ""Notizie Utili"", ""Sisma Ottobre""]",,,"{""data"": ""22/12/2016"", ""descrizione"": ""\u201cRiaprir\u00e0 il prossimo 23 dicembre, a senso unico alternato, la strada 209 Valnerina chiusa a seguito del sisma, sar\u00e0 cos\u00ec pi\u00f9 agevole raggiungere le zone colpite dal terremoto\u201d: lo annuncia l\u2019assessore regionale alla viabilit\u00e0 Giuseppe Chianella."", ""link"": ""http://www.valnerinaoggi.it/norcia/terremoto-23-dicembre-riapre-strada-valnerina-chiusa-sisma-6183/"", ""titolo"": ""Il 23 dicembre riapre la Strada #Valnerina""}","<pre><yamldata>titolo: 'Il 23 dicembre riapre la Strada #Valnerina'
 descrizione: '“Riaprirà il prossimo 23 dicembre, a senso unico alternato, la strada 209 Valnerina chiusa a seguito del sisma, sarà così più agevole raggiungere le zone colpite dal terremoto”: lo annuncia l’assessore regionale alla viabilità Giuseppe Chianella.'
 link: 'http://www.valnerinaoggi.it/norcia/terremoto-23-dicembre-riapre-strada-valnerina-chiusa-sisma-6183/'
@@ -2022,16 +2032,6 @@ postale: ''
 causale: 'progetto Miele per la Vita'
 link: 'https://postribu.net/2016/11/08/salviamo-le-api-di-amatrice-adotta-unazienda-e-sostieni-miele-per-la-vita/'
 email: post.tribu@gmail.com
-data: 09/11/2016
-</yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1195,188376309,2016-11-09 23:14:00,2016-11-09 23:07:33,Contatti Centro Operativo Comunale #Norcia,42.7952898,13.0918788,"[""Accettato"", ""Bollettino"", ""Contatti"", ""Form"", ""Notizie Utili"", ""Sisma Ottobre""]",,,"{""data"": ""09/11/2016"", ""descrizione"": ""Il Centro Operativo Comunale (COC) di Norcia \u00e8 il punto di riferimento per tutte le richieste di informazioni, di assistenza e per le donazioni nel Comune di Norcia."", ""email"": """", ""indirizzo"": ""Via Circonvallazione, Casa Cupa, Norcia, PG, UMB, 06046, Italy"", ""lat"": ""42.7952898"", ""link"": ""http://www.comune.norcia.pg.it"", ""lon"": ""13.0918788"", ""nome"": ""Centro Operativo Comunale Norcia"", ""tel"": ""0743 81 79 01 / 82 87 11""}","<pre><yamldata>nome: 'Centro Operativo Comunale Norcia'
-tel: '0743 81 79 01 / 82 87 11'
-email: ''
-descrizione: 'Il Centro Operativo Comunale (COC) di Norcia è il punto di riferimento per tutte le richieste di informazioni, di assistenza e per le donazioni nel Comune di Norcia.'
-indirizzo: 'Via Circonvallazione, Casa Cupa, Norcia, PG, UMB, 06046, Italy'
-lat: '42.7952898'
-lon: '13.0918788'
-link: 'http://www.comune.norcia.pg.it'
 data: 09/11/2016
 </yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1195,188376309,2016-11-09 23:14:00,2016-11-09 23:07:33,Contatti Centro Operativo Comunale #Norcia,42.7952898,13.0918788,"[""Accettato"", ""Bollettino"", ""Contatti"", ""Form"", ""Notizie Utili"", ""Sisma Ottobre""]",,,"{""data"": ""09/11/2016"", ""descrizione"": ""Il Centro Operativo Comunale (COC) di Norcia \u00e8 il punto di riferimento per tutte le richieste di informazioni, di assistenza e per le donazioni nel Comune di Norcia."", ""email"": """", ""indirizzo"": ""Via Circonvallazione, Casa Cupa, Norcia, PG, UMB, 06046, Italy"", ""lat"": ""42.7952898"", ""link"": ""http://www.comune.norcia.pg.it"", ""lon"": ""13.0918788"", ""nome"": ""Centro Operativo Comunale Norcia"", ""tel"": ""0743 81 79 01 / 82 87 11""}","<pre><yamldata>nome: 'Centro Operativo Comunale Norcia'
