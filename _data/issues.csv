@@ -1,5 +1,10 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1481,197203085,2016-12-22 16:12:39,2016-12-22 15:47:00,Nasce l'associazione Casa delle donne di #Amatrice,,,"[""Accettato"", ""Bollettino"", ""Notizie Utili"", ""Sisma Ottobre""]",,,"{""data"": ""22/12/2016"", ""descrizione"": ""Costituito ufficialmente stamattina il direttivo dell\u2019Associazione \u201cCasa delle donne di Amatrice e Frazioni\u201d. \u201cL'idea -spiega la neo presidente Sonia Mascioli - nasce da un desiderio comune, quello di creare un luogo dove le donne di Amatrice, possano liberamente mettere in atto la loro creativit\u00e0\u201d. L\u2019associazione \u00e8 composta anche dalla tesoriera Sabrina Capanna, dalla segretaria Claudia Mozzetti e dalle consigliere Assunta Perilli, Francesca Romana Brunamonte, Samantha Pecci e Simona Paoletti. \u201cAmatrice deve ripartire anche dalle sue donne -ha detto la Mascioli- impegnate in prima persona nel sociale e nell'economia del proprio territorio\u201d."", ""link"": ""http://www.amatricenews.it/apri_news.asp?id_news=373"", ""titolo"": ""Nasce l'associazione Casa delle donne di #Amatrice""}","<pre><yamldata>titolo: 'Nasce l''associazione Casa delle donne di #Amatrice'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1482,197203875,2016-12-22 16:13:00,2016-12-22 15:50:32,Il 23 dicembre riapre la Strada #Valnerina,,,"[""Accettato"", ""Bollettino"", ""Notizie Utili"", ""Sisma Ottobre""]",,,"{""data"": ""22/12/2016"", ""descrizione"": ""\u201cRiaprir\u00e0 il prossimo 23 dicembre, a senso unico alternato, la strada 209 Valnerina chiusa a seguito del sisma, sar\u00e0 cos\u00ec pi\u00f9 agevole raggiungere le zone colpite dal terremoto\u201d: lo annuncia l\u2019assessore regionale alla viabilit\u00e0 Giuseppe Chianella."", ""link"": ""http://www.valnerinaoggi.it/norcia/terremoto-23-dicembre-riapre-strada-valnerina-chiusa-sisma-6183/"", ""titolo"": ""Il 23 dicembre riapre la Strada #Valnerina""}","<pre><yamldata>titolo: 'Il 23 dicembre riapre la Strada #Valnerina'
+descrizione: '“Riaprirà il prossimo 23 dicembre, a senso unico alternato, la strada 209 Valnerina chiusa a seguito del sisma, sarà così più agevole raggiungere le zone colpite dal terremoto”: lo annuncia l’assessore regionale alla viabilità Giuseppe Chianella.'
+link: 'http://www.valnerinaoggi.it/norcia/terremoto-23-dicembre-riapre-strada-valnerina-chiusa-sisma-6183/'
+data: 22/12/2016
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1481,197203085,2016-12-22 16:13:18,2016-12-22 15:47:00,Nasce l'associazione Casa delle donne di #Amatrice,,,"[""Accettato"", ""Bollettino"", ""Facebook"", ""Notizie Utili"", ""Sisma Ottobre""]",,,"{""data"": ""22/12/2016"", ""descrizione"": ""Costituito ufficialmente stamattina il direttivo dell\u2019Associazione \u201cCasa delle donne di Amatrice e Frazioni\u201d. \u201cL'idea -spiega la neo presidente Sonia Mascioli - nasce da un desiderio comune, quello di creare un luogo dove le donne di Amatrice, possano liberamente mettere in atto la loro creativit\u00e0\u201d. L\u2019associazione \u00e8 composta anche dalla tesoriera Sabrina Capanna, dalla segretaria Claudia Mozzetti e dalle consigliere Assunta Perilli, Francesca Romana Brunamonte, Samantha Pecci e Simona Paoletti. \u201cAmatrice deve ripartire anche dalle sue donne -ha detto la Mascioli- impegnate in prima persona nel sociale e nell'economia del proprio territorio\u201d."", ""link"": ""http://www.amatricenews.it/apri_news.asp?id_news=373"", ""titolo"": ""Nasce l'associazione Casa delle donne di #Amatrice""}","<pre><yamldata>titolo: 'Nasce l''associazione Casa delle donne di #Amatrice'
 descrizione: 'Costituito ufficialmente stamattina il direttivo dell’Associazione “Casa delle donne di Amatrice e Frazioni”. “L''idea -spiega la neo presidente Sonia Mascioli - nasce da un desiderio comune, quello di creare un luogo dove le donne di Amatrice, possano liberamente mettere in atto la loro creatività”. L’associazione è composta anche dalla tesoriera Sabrina Capanna, dalla segretaria Claudia Mozzetti e dalle consigliere Assunta Perilli, Francesca Romana Brunamonte, Samantha Pecci e Simona Paoletti. “Amatrice deve ripartire anche dalle sue donne -ha detto la Mascioli- impegnate in prima persona nel sociale e nell''economia del proprio territorio”.'
 link: 'http://www.amatricenews.it/apri_news.asp?id_news=373'
 data: 22/12/2016
@@ -2017,6 +2022,16 @@ postale: ''
 causale: 'progetto Miele per la Vita'
 link: 'https://postribu.net/2016/11/08/salviamo-le-api-di-amatrice-adotta-unazienda-e-sostieni-miele-per-la-vita/'
 email: post.tribu@gmail.com
+data: 09/11/2016
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1195,188376309,2016-11-09 23:14:00,2016-11-09 23:07:33,Contatti Centro Operativo Comunale #Norcia,42.7952898,13.0918788,"[""Accettato"", ""Bollettino"", ""Contatti"", ""Form"", ""Notizie Utili"", ""Sisma Ottobre""]",,,"{""data"": ""09/11/2016"", ""descrizione"": ""Il Centro Operativo Comunale (COC) di Norcia \u00e8 il punto di riferimento per tutte le richieste di informazioni, di assistenza e per le donazioni nel Comune di Norcia."", ""email"": """", ""indirizzo"": ""Via Circonvallazione, Casa Cupa, Norcia, PG, UMB, 06046, Italy"", ""lat"": ""42.7952898"", ""link"": ""http://www.comune.norcia.pg.it"", ""lon"": ""13.0918788"", ""nome"": ""Centro Operativo Comunale Norcia"", ""tel"": ""0743 81 79 01 / 82 87 11""}","<pre><yamldata>nome: 'Centro Operativo Comunale Norcia'
+tel: '0743 81 79 01 / 82 87 11'
+email: ''
+descrizione: 'Il Centro Operativo Comunale (COC) di Norcia è il punto di riferimento per tutte le richieste di informazioni, di assistenza e per le donazioni nel Comune di Norcia.'
+indirizzo: 'Via Circonvallazione, Casa Cupa, Norcia, PG, UMB, 06046, Italy'
+lat: '42.7952898'
+lon: '13.0918788'
+link: 'http://www.comune.norcia.pg.it'
 data: 09/11/2016
 </yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1195,188376309,2016-11-09 23:14:00,2016-11-09 23:07:33,Contatti Centro Operativo Comunale #Norcia,42.7952898,13.0918788,"[""Accettato"", ""Bollettino"", ""Contatti"", ""Form"", ""Notizie Utili"", ""Sisma Ottobre""]",,,"{""data"": ""09/11/2016"", ""descrizione"": ""Il Centro Operativo Comunale (COC) di Norcia \u00e8 il punto di riferimento per tutte le richieste di informazioni, di assistenza e per le donazioni nel Comune di Norcia."", ""email"": """", ""indirizzo"": ""Via Circonvallazione, Casa Cupa, Norcia, PG, UMB, 06046, Italy"", ""lat"": ""42.7952898"", ""link"": ""http://www.comune.norcia.pg.it"", ""lon"": ""13.0918788"", ""nome"": ""Centro Operativo Comunale Norcia"", ""tel"": ""0743 81 79 01 / 82 87 11""}","<pre><yamldata>nome: 'Centro Operativo Comunale Norcia'
@@ -4101,17 +4116,6 @@ data: 30/10/2016
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/893,186127595,2016-10-30 10:35:47,2016-10-30 10:05:47,Mettiamo a disposizione casa per famiglia a Varazze (Sv),,,"[""Accettato"", ""Alloggi"", ""Bollettino"", ""Form"", ""Sisma Ottobre""]",,,"{""data"": ""30/10/2016"", ""descrizione"": ""Mettiamo a disposizione casa per famiglia con bambini, 4 posti letto, in piccola localit\u00e0 di mare Varazze (SV) per persone danneggiate dal terremoto. In pi\u00f9 offriamo ospitalit\u00e0 presso nostra abitazione nella citt\u00e0 di Genova per mamma con bambini."", ""email"": ""dspiridi@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3383788135""}","<pre><yamldata>tel: '3383788135'
 email: dspiridi@gmail.com
 descrizione: 'Mettiamo a disposizione casa per famiglia con bambini, 4 posti letto, in piccola località di mare Varazze (SV) per persone danneggiate dal terremoto. In più offriamo ospitalità presso nostra abitazione nella città di Genova per mamma con bambini.'
-indirizzo: ''
-lat: ''
-lon: ''
-link: ''
-immagine: ''
-data: 30/10/2016
-</yamldata></pre>
-",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/892,186125811,2016-10-30 09:42:53,2016-10-30 09:24:42,Offresi alloggio a Buja (UD),,,"[""Accettato"", ""Alloggi"", ""Bollettino"", ""Form"", ""Sisma Ottobre""]",,,"{""data"": ""30/10/2016"", ""descrizione"": ""Offresi disponibilit\u00e0 presso propria abitazione a Buja (UD), una camera doppia con bagno ed eventuali altre due persone (famiglia o altro) per il tempo necessario"", ""email"": ""val_gue@hotmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""348/3051736""}","<pre><yamldata>tel: 348/3051736
-email: val_gue@hotmail.com
-descrizione: 'Offresi disponibilità presso propria abitazione a Buja (UD), una camera doppia con bagno ed eventuali altre due persone (famiglia o altro) per il tempo necessario'
 indirizzo: ''
 lat: ''
 lon: ''
