@@ -1,18 +1,14 @@
 <!DOCTYPE html>
 <html lang="ja">
   <head>
-    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+    <title>{% if page.title %}{{ page.title }} ? {% endif %}{{ site.name }} ? {{ site.description }}</title>
 
-    {% include meta.html %}
+{% include meta.html %}
 
     <!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <base href="{{ site.baseurl }}" />
-    <meta charset="UTF-8">
-    <meta http-equiv="content-type" content="text/html" charset="UTF-8">
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <meta http-equiv="content-language" content="ja">
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
 
