@@ -12,7 +12,8 @@ layout: default
         {{ post.content | truncatewords:100 }}
       </div>
 
-      <a class="readmore" href="{{ site.baseurl }}{{ post.url }}" class="read-more">+ Read More +</a>
+      <div class="read-more">......</div>
+      <div class="date"> Written on {{ page.date | date: "%B %e, %Y" }}</div>
     </article>
   {% endfor %}
 </div>
