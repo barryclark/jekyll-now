@@ -1,4 +1,9 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1487,197214249,2016-12-22 16:36:57,2016-12-22 16:36:18,"Insieme per #Arquata, 35 borse di studio per studenti di Arquata del Tronto",,,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Facebook"", ""Notizie Utili"", ""Sisma Ottobre""]",,,"{""data"": ""22/12/2016"", ""descrizione"": ""L'associazione Omnibus Omnes promuove un bando per 25 borse di studio per studenti residenti ad Arquata. Sono previste 8 borse di studio per gli studenti delle scuole elementari, 8 per gli studenti delle scuole medie, 11 per gli studenti delle scuole superiori. E saranno 8 borse di studio per gli universitari, con un bando congiunto di Omnibus e Soroptimist di Ascoli Piceno. Scadenza bando il 31 dicembre 2016. Per info: info@omnibusomnes.org oppure Raffaella Milandri 335 6126630. Bando e moduli sono disponibili sul sito."", ""link"": ""http://omnibusomnes.org/"", ""titolo"": ""Insieme per #Arquata, 35 borse di studio per studenti di Arquata del Tronto""}","<pre><yamldata>titolo: 'Insieme per #Arquata, 35 borse di studio per studenti di Arquata del Tronto'
+descrizione: 'L''associazione Omnibus Omnes promuove un bando per 25 borse di studio per studenti residenti ad Arquata. Sono previste 8 borse di studio per gli studenti delle scuole elementari, 8 per gli studenti delle scuole medie, 11 per gli studenti delle scuole superiori. E saranno 8 borse di studio per gli universitari, con un bando congiunto di Omnibus e Soroptimist di Ascoli Piceno. Scadenza bando il 31 dicembre 2016. Per info: info@omnibusomnes.org oppure Raffaella Milandri 335 6126630. Bando e moduli sono disponibili sul sito.'
+link: 'http://omnibusomnes.org/'
+data: 22/12/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1483,197206345,2016-12-22 16:13:38,2016-12-22 16:01:06,Arquata Viva,42.7723609,13.2965826,"[""Accettato"", ""Contatti"", ""Facebook"", ""Sisma Ottobre""]",,,"{""data"": ""22/12/2016"", ""descrizione"": ""Il progetto Arquata Viva - Ricostruirsi si Pu\u00f2! nasce per la comunit\u00e0 ma soprattutto con la comunit\u00e0; vuole fornire strumenti concreti e sostegno reale alle persone affinch\u00e9 possano essere Artefici in Prima Persona del processo di ricostruzione, se non delle case, almeno di loro stessi; sentirsi protagonisti attivi e non solo vittime, ritrovare la voglia e la forza di reinventarsi la vita, adesso, in questo tempo che \u00e8 uno spazio vuoto in cui o si crea o ci si smarrisce. I fondi raccolti con le Donazioni e le Iniziative Solidali, verranno impiegati per: - Attivare processi di RICOLLOCAZIONE PROFESSIONALE. - CONSULENZA E ORIENTAMENTO. - FORMAZIONE per chi ha VOGLIA e/o BISOGNO di REINVENTARSI un LAVORO. - Sviluppo e sostegno di azioni di MARKETING per agevolare la divulgazione e distribuzione di prodotti e servizi. Mentre i fondi raccolti con gli Acquisti Solidali andranno direttamente ai Produttori."", ""email"": ""segreteria@accademiamedioevo.it"", ""indirizzo"": ""Piazza Umberto I, Arquata del Tronto, AP, Marche, Italia"", ""lat"": ""42.7723609"", ""link"": ""http://www.arquataviva.it"", ""lon"": ""13.2965826"", ""nome"": ""Arquata Viva"", ""tel"": """"}","<pre><yamldata>nome: 'Arquata Viva'
 tel: ''
 email: segreteria@accademiamedioevo.it
@@ -7549,6 +7554,12 @@ link: 'http://www.regione.marche.it/Entra-in-Regione/Terremoto-Marche'
 data: 15/09/2016
 </yamldata></pre>
 ",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/438,177178027,2016-10-01 16:45:13,2016-09-15 13:34:50,Regione Marche apre un sito web dedicato al post terremoto,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""15/09/2016"", ""descrizione"": ""Sito Regione Marche per Terremoto / documenti e info"", ""link"": ""http://www.regione.marche.it/Entra-in-Regione/Terremoto-Marche"", ""titolo"": ""Sito web Regione Marche dedicato a terremoto""}","<pre><yamldata>titolo: 'Sito web Regione Marche dedicato a terremoto'
+descrizione: 'Sito Regione Marche per Terremoto / documenti e info'
+link: 'http://www.regione.marche.it/Entra-in-Regione/Terremoto-Marche'
+data: 15/09/2016
+</yamldata></pre>
+",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/437,177177922,2016-10-01 16:45:23,2016-09-15 13:34:26,Università di Cagliari: esonero tasse universitarie per gli studenti provenienti dai comuni colpiti dal sisma,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""15/09/2016"", ""descrizione"": ""L'Universit\u00e0 di Cagliari ha deciso di esonerare totalmente dal pagamento delle tasse e dei contributi universitari gli studenti residenti, o famiglia residente, nei comuni colpiti dall'evento sismico del 24 agosto"", ""link"": ""http://www.unica.it/pub/7/show.jsp?id=33656&iso=-2&is=7"", ""titolo"": ""Universit\u00e0 di Cagliari: esonero tasse universitarie per gli studenti provenienti dai comuni colpiti dal sisma""}","<pre><yamldata>titolo: 'Università di Cagliari: esonero tasse universitarie per gli studenti provenienti dai comuni colpiti dal sisma'
 descrizione: 'L''Università di Cagliari ha deciso di esonerare totalmente dal pagamento delle tasse e dei contributi universitari gli studenti residenti, o famiglia residente, nei comuni colpiti dall''evento sismico del 24 agosto'
 link: 'http://www.unica.it/pub/7/show.jsp?id=33656&iso=-2&is=7'
@@ -10433,17 +10444,6 @@ lon: '13.269536'
 data: 13/09/2016
 </yamldata></pre>
 ",closed
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/148,176622336,2016-09-13 12:18:39,2016-09-13 12:03:24,Arci Nazionale,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",Milestone(number=2),,"{""bic"": null, ""causale"": ""Terremoto centro italia"", ""chi"": ""Arci Nazionale"", ""data"": ""13/09/2016"", ""descrizione"": ""BIBLIOBUS ARCI \u2013 La Cultura per la Ricostruzione L'Arci sta cercando fondi per riempire di libri (e carburante) un autobus che porter\u00e0 cultura e momenti di distensione alle persone colpite nelle zone del terremoto del 24 Agosto scorso."", ""email"": null, ""iban"": ""IT 36 A 0501803200 000000000041"", ""intestazione"": ""Arci"", ""link"": ""https://www.produzionidalbasso.com/project/bibliobus-arci-la-cultura-per-la-ricostruzione/"", ""postale"": null}","<pre><yamldata>chi: Arci Nazionale
-descrizione: BIBLIOBUS ARCI – La Cultura per la Ricostruzione L'Arci sta cercando fondi per riempire di libri (e carburante) un autobus che porterà cultura e momenti di distensione alle persone colpite nelle zone del terremoto del 24 Agosto scorso.
-intestazione: Arci
-iban: IT 36 A 0501803200 000000000041
-bic: 
-postale: 
-causale: Terremoto centro italia
-link: https://www.produzionidalbasso.com/project/bibliobus-arci-la-cultura-per-la-ricostruzione/
-email: 
-data: 13/09/2016</yamldata></pre>
-",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/148,176622336,2016-09-13 12:18:39,2016-09-13 12:03:24,Arci Nazionale,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",Milestone(number=2),,"{""bic"": null, ""causale"": ""Terremoto centro italia"", ""chi"": ""Arci Nazionale"", ""data"": ""13/09/2016"", ""descrizione"": ""BIBLIOBUS ARCI \u2013 La Cultura per la Ricostruzione L'Arci sta cercando fondi per riempire di libri (e carburante) un autobus che porter\u00e0 cultura e momenti di distensione alle persone colpite nelle zone del terremoto del 24 Agosto scorso."", ""email"": null, ""iban"": ""IT 36 A 0501803200 000000000041"", ""intestazione"": ""Arci"", ""link"": ""https://www.produzionidalbasso.com/project/bibliobus-arci-la-cultura-per-la-ricostruzione/"", ""postale"": null}","<pre><yamldata>chi: Arci Nazionale
 descrizione: BIBLIOBUS ARCI – La Cultura per la Ricostruzione L'Arci sta cercando fondi per riempire di libri (e carburante) un autobus che porterà cultura e momenti di distensione alle persone colpite nelle zone del terremoto del 24 Agosto scorso.
 intestazione: Arci
