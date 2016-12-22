@@ -78,11 +78,18 @@ p {
 
 a {
   color: $blue;
+  background-color: #EEE;
   text-decoration: none;
 	cursor: pointer;
   &:hover, &:active {
     color: $blue;
+    background-color: #EEF;
   }
+}
+
+h1 a {
+  color: inherit;
+  background-color: initial;
 }
 
 .readmore {
