@@ -84,6 +84,11 @@ a {
   }
 }
 
+.readmore {
+  color: $blue;
+  background-color: $lightBlue;
+}
+
 ul, ol {
   margin: 15px 0;
   padding-left: 30px;
@@ -221,7 +226,8 @@ nav {
   float: right;
   margin-top: 23px; // @TODO: Vertically middle align
   font-family: $helveticaNeue;
-  font-size: 18px;
+  font-size: 12px;
+  font-weight: 500;
 
   @include mobile {
     float: none;
@@ -234,7 +240,6 @@ nav {
     margin-left: 20px;
     color: $darkGray;
     text-align: right;
-    font-weight: 300;
     letter-spacing: 1px;
 
     @include mobile {
