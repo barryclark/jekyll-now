@@ -250,7 +250,8 @@ nav {
     color: $darkGray;
     text-align: right;
     letter-spacing: 1px;
-
+    background-color: initial;
+    
     @include mobile {
       margin: 0 10px;
       color: $blue;
