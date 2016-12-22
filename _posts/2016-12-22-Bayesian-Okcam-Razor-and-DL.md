@@ -1,4 +1,3 @@
-
 ---
 title: Bayesian Occam's Razor and Deep Learning 
 layout: post
