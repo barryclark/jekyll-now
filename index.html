@@ -16,3 +16,16 @@ layout: default
     </article>
   {% endfor %}
 </div>
+
+<div class="todos">
+  {% for todo in site.todos %}
+    <article class="todo">
+
+      <h1>{{ todo.title }}</h1>
+
+      <div class="entry">
+        {{ todo.content }}
+      </div>
+    </article>
+  {% endfor %}
+</div>
