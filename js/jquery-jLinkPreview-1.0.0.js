@@ -32,6 +32,7 @@ $.fn.jLinkPreview = function(custom) {
             'elementsHavingId': '',
             'elementsHavingClass': '',
             'elementsRejectParenet': '',
+            'elementsRejectClass': '',
             'attribute': 'title'
         };
         
@@ -63,6 +64,11 @@ $.fn.jLinkPreview = function(custom) {
     
     if(settings['preload'] == true) {
         $(targetA).each(function(event) {
+            if (settings['elementsRejectClass'] != "") {
+                if($(this).attr("class") == settings['elementsRejectClass']) {
+                    return;
+                }
+            }
             if(rejectParents.length > 0) {
                 for(j = 0; j < rejectParents.length; j++) {
                     if ($(this).parents(rejectParents[j]).size() > 0) {
@@ -83,6 +89,12 @@ $.fn.jLinkPreview = function(custom) {
     }
     
     $(targetA).hover(function(event) {
+
+        if (settings['elementsRejectClass'] != "") {
+            if($(this).attr("class") == settings['elementsRejectClass']) {
+                return;
+            }
+        }
         if(rejectParents.length > 0) {
             for(j = 0; j < rejectParents.length; j++) {
                 if ($(this).parents(rejectParents[j]).size() > 0) {
