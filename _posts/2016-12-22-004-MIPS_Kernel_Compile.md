@@ -26,7 +26,7 @@ $ cd linux-4.1.32/
 $ make ARCH=mips malta_defconfig
 $ make ARCH=mips menuconfig
 ```
-
+<!--break-->
 - set configuration parameter for 64bit MIPS
  - CPU Selection -> CPU Type ... MIPS64 Release 6(EXPERIMENTAL)
  - Kernel Type -> Kernel code model ... 64bit kernel
