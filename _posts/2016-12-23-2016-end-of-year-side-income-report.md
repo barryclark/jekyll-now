@@ -5,6 +5,7 @@ tags: [money]
 keywords: [income, income report, blog income report, side income]
 javascripts: [/js/d3.min.js, /js/c3.min.js]
 csses: [/css/c3.css]
+image: /images/covers/2016-side-income.jpg
 ---
 
 One popular reoccurring post on blogs, regardless of niche, is an income report. For instance, [MyBlogLift](http://www.mybloglift.com/category/income-traffic-report/) has a monthly (well, two) income and traffic report. [Cash Flow Diaries has a long list of different income reports.](http://www.cashflowdiaries.com/blog-income-reports/)
@@ -101,10 +102,10 @@ Rewards for each receipt vary, but a typical receipt nets about 5 "coins." Coins
 
 | dollars  | coins  |
 |---|---|
-|  5.00 | 1000  |
-|  10.00 |  1800 |
-|  20.00 | 3200  |
-|  30.00 | 4500  |
+|  $5.00 | 1000  |
+|  $10.00 |  1800 |
+|  $20.00 | 3200  |
+|  $30.00 | 4500  |
 
 That means, at best, a coin is worth [a third of a cent](https://www.google.com/search?q=30%2F4500).
 
