@@ -14,18 +14,22 @@
     
     <script type="text/javascript" src="{{ site.baseurl }}/js/jquery-1.6.1.min.js"></script>
     <script type="text/javascript" src="{{ site.baseurl }}/js/jquery-jLinkPreview-1.0.0-min.js"></script>
-    <script>
-$().jLinkPreview({
-	  'preload': true,
-	  'width': 256,
-	  'height': 192,
-	  'fade': 300,
-	  'background-color': '#333',
-	  'elementsHavingId': '',
-	  'elementsHavingClass': '',
-	  'attribute': 'title'
+
+<script type="text/javascript">
+$(function() {
+   $().jLinkPreview({
+         'preload': true,
+         'width': 256,
+         'height': 192,
+         'fade': 300,
+         'background-color': '#333',
+         'elementsHavingId': '',
+         'elementsHavingClass': 'example',
+         'attribute': 'title'
+   });
 });
-    </script>
+</script>
+
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
   </head>
 
