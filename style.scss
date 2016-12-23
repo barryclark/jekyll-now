@@ -297,9 +297,14 @@ nav {
   }
 
   .highlighter-rouge {
+    line-height: 13px;
+  }
+  .highlighter-rouge code {
+    background-color: $lightGray;
+  }
+  .highlighter-rouge div {
     margin-left: 20px;
     margin-right: 10px;
-    line-height: 13px;
   }
 }
 
