@@ -203,6 +203,7 @@ Bean injection methodları yanında sendMessage methodumuz ile JMSTemplate üzer
 
 > MessageCreator'ü JMS'deki MessageProducer gibi düşünebilirsiniz.
 
+
 **jmsReceiver**;
 
 ``` java
@@ -295,9 +296,10 @@ public class JMSTemplateTest {
 }
 ```
 
-Before class ile app Contexti oluşturup jms sender ve receiver için bean alıyoruz
-.
+Before class ile app Context'i oluşturup jms sender ve receiver için bean alıyoruz.
+
 > FileSystemXmlApplicationContext kullanmaktaki amaç conf bilgilerini classpath dışından alıyor olmamızdır. İlerde değişebilecek olan herşeyi conf tabanlı yapıp uygulama dışından almak mantıklı olacaktır.
+
 
 **jmsSenderReceiver** unit test ile mesaj gönderip hemen ardından mesaj bekliyoruz.
 
