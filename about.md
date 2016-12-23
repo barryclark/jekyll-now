@@ -12,4 +12,4 @@ Thanh T. Nguyen
 * I realized blogging is good for my research  
 
 ## Research interests
-Bayesian Inference and Information Theory for Deep Neural Network 
+Neural Information Processing Systems, specifically, Bayesian Inference and Information Theory for Deep Neural Network 
