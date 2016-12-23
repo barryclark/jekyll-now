@@ -45,7 +45,9 @@ $.fn.jLinkPreview = function(custom) {
     if(settings['elementsHavingClass'] != "") {
         classArray = settings['elementsHavingClass'].split(",");
     }
-    
+    if (settings['elementsRejectClass'] != "") {
+        rejectClasses = settings['elementsRejectClass'].split(",");
+    }
     if(settings['elementsRejectParenet'] != "") {
         rejectParents = settings['elementsRejectParenet'].split(",");
     }
@@ -64,9 +66,11 @@ $.fn.jLinkPreview = function(custom) {
     
     if(settings['preload'] == true) {
         $(targetA).each(function(event) {
-            if (settings['elementsRejectClass'] != "") {
-                if($(this).attr("class") == settings['elementsRejectClass']) {
-                    return;
+            if (rejectClasses.length > 0) {
+                for(j = 0; j < rejectClasses.length; j++) {
+                    if($(this).attr("class") == rejectClasses[j]) {
+                        return;
+                    }
                 }
             }
             if(rejectParents.length > 0) {
@@ -89,10 +93,11 @@ $.fn.jLinkPreview = function(custom) {
     }
     
     $(targetA).hover(function(event) {
-
-        if (settings['elementsRejectClass'] != "") {
-            if($(this).attr("class") == settings['elementsRejectClass']) {
-                return;
+        if (rejectClasses.length > 0) {
+            for(j = 0; j < rejectClasses.length; j++) {
+                if($(this).attr("class") == rejectClasses[j]) {
+                    return;
+                }
             }
         }
         if(rejectParents.length > 0) {
