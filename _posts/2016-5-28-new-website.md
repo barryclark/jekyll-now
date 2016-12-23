@@ -14,7 +14,7 @@ The first thing to stand out in this website is that it works using github pages
 
 - A simple way to publish content (a blog!), and Jekyll Now offers just that.
 - Decoupled theming system that allows me to change the website design without affecting the content
-- Simple hosting, since I dont need much space, database or dynamic content I didnt want to deal with web hosting services and the monthly cost.
+- Simple hosting, since I dont need much space, database or dynamic content I didn't want to deal with web hosting services and the monthly cost.
 
 **Whats next**
 
