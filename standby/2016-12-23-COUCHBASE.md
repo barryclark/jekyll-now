@@ -1,0 +1,169 @@
+CouchBase(Membase) 의존성 제거
+==============================
+
+환경
+----
+
+-	Membase Cluster
+	-	DB Server 01 (Membase)
+	-	DB Server 02 (Membase)
+-	WEB Server
+	-	Spring Boot Web Application
+		-	SpyMemCached
+
+---
+
+사전 알아야 할 내용
+-------------------
+
+### CouchBase(Membase)
+
+#### 1. Bucket
+
+Couchbase Server 클러스터의 물리적 리소스의 논리적 그룹
+
+**종류**
+
+-	Couchbase
+	-	영구 및 복제 서비스를 제공하여 높은 가용성과 동적 재구성 가능한 분산 데이터 스토리지를 제공
+-	Memcached
+	-	직접 주소 지정 (확장)은 분산 메모리에 키와 값의 캐시를 제공
+	-	버킷은 관계형 데이터베이스 기술과 함께 사용하도록 설계
+
+**주요 기능**
+
+-	Rebalancing
+	-	자원과 동적 추가 또는 클러스터의 버킷과 서버 제거 간 부하 분산을 가능하게 함
+-	Replacing
+	-	복제 서버 설정 가능한 수는 Couchbase(Membase) 유형 버킷의 모든 데이터 객체의 복사본을 받을 수 있습니다. 호스트 시스템에 장애가 발생한 경우, 복제 서버가 Fail Over를 통해 avilability 클러스터 작업을 제공하고 호스트 서버로 승격 할 수 있습니다. 복제가 버킷 레벨로 설정되어 있습니다.
+
+**vBucket**
+
+-	실제데이타와 물리서버간의 맵핑을 관리
+-	각 키가 어디에 저장되어 있는지를 vBucket이라는 단위로 관리
+-	키에 대한 해쉬값을 계산한 후에, 각 해쉬값에 따라서 저장되는 vBucket을 맵핑한다음 각 vBucket을 노드에 맵핑
+
+![vBucket](/images/2016/2016_12_23_COUCHBASE/vbucket.png)
+
+출처 : http://docs.couchbase.com/couchbase-manual-2.5/cb-admin/#vbuckets
+
+#### 2. Node
+
+-	Couchbase(Membase)는 여러 개의 노드로 이루어진 클러스터로 구성
+-	물리적인 서버에서 기동하는 하나의 Couchbase(Membase) 인스턴스
+
+![vBucket](/images/2016/2016_12_23_COUCHBASE/node.png)
+
+출처 : http://hamait.tistory.com/198
+
+**Cluster Manager**
+
+-	8091 포트의 REST API를 통해서, 설정 정보와 vBucket 정보를 읽어옴
+
+**Data Manager**
+
+-	직접 데이터에 접근하는 부분
+-	윗단에는 memcached가 있으며, 데이터를 cache하는데 사용
+-	Memcached 위에는 moxi가 Proxy로 사용
+
+**데이터 쓰기, 복제**
+
+1.	Client SDK를 통해서 쓰기 요청
+2.	해쉬 알고리즘에 따라 데이터의 키 값에 맵핑 되는 vBucket을 탐색
+3.	vBucket에 맵핑 되는 노드를 찾아서 쓰기 요청
+4.	쓰기 요청은 해당 노드의 Listener로 전달
+5.	들어온 데이터를 로컬의 캐쉬에 씀
+6.	클러스터의 다른 노드로 복제 요청
+7.	노드의 디스크에 데이터 저장
+
+![vBucket](/images/2016/2016_12_23_COUCHBASE/node_copy.png)
+
+출처 : http://hamait.tistory.com/198
+
+#### 3. Rebalancing
+
+-	새롭게 배치된 데이터에 따라서 vBucket to 노드간의 데이터 맵핑 정보 업데이트
+-	노드가 클러스터에 추가되거나, 장애등의 이유로 삭제되었을 때 물리적으로 데이터가 다른 노드로 다시 분산 배치
+-	**노드간에 데이터 복제가 심하게 일어나기 때문에, 리밸런스는 부하가 적은 시간대에 하도록 권장**
+
+---
+
+[참고 : Bucket이란? : hans story](http://goldfing.blogspot.kr/2013/03/couchbase-server-20-bucket.html)
+
+[참고 : 카우치베이스(Couchbase) 서버-#6 아키텍쳐 구조 살펴보기 : 조대협의 블로그](http://hamait.tistory.com/198)
+
+<br>
+
+### Spring Security
+
+-	인증(Authentication)과 권한부여(Authorization)를 담당
+-	세션 정보의 존재 여부에 따라 인증을 판단
+-	사용자의 보호 및 인증된 세션을 SecurityContext에 저장
+
+#### SecurityContextPersistenceFilter
+
+-	`SecurityContext`를 로드하고 저장하는 역할을 담당
+
+#### SecurityContextRepository
+
+-	`SecurityContextPersistenceFilter`에서 `SecurityContext`가 저장될 저장소와의 통신과 관련된 기능을 담당
+	-	`MemcachedSecurityContextRepository`(자체 구현) 사용
+-	`Session` Object를 생성 인자로 갖음
+
+### SpyMemcached
+
+클라이언트단에서 Couchbase(Membase)와 통신을 지원하는 오픈소스 클라이언트 SDK
+
+#### MemcachedClient
+
+-	Couchbase(Membase)의 정보 및 통신과 관련된 기능을 담당
+-	생성 인자로 Bucket 생성에 필요한 정보(server list, bucket name, pwd)를 갖음
+
+#### Session
+
+-	`Session` 정보를 생성, 변경 및 로드하는 역할을 담당
+	-	`MemcachedSession`(자체 구현) 사용
+-	`SecurityContextRepository`의 생성인자로 `SecurityContextRepository`에 유일한 객체로 생성 됨
+
+---
+
+의존성 제거
+-----------
+
+### 일부 Membase 서버의 장애 발생시
+
+#### 문제 현상
+
+**OpertationTimeOut**
+
+`OpertationTimeOut: Timeout waiting for value`
+
+#### 문제 원인
+
+**Auto Failover**
+
+#### 해결 방안
+
+**increasing the DefaultOperationTimeout so that more retry attempts**
+
+### 모든 Membase Server의 장애 상황에서 어플리케이션을 구동할 수 없는 문제
+
+#### 문제 현상
+
+#### 문제 원인
+
+**MemcachedClient**
+
+#### 해결 방안
+
+**1. 동적 빈 생성**
+
+**2. 복구 스케줄링**
+
+### 어플리케이션이 구동 후 모든 Membase Server 장애 발생시
+
+#### 해결 방안
+
+**감지 및 복구 스케줄링**
+
+**Server Restart & Pending**
