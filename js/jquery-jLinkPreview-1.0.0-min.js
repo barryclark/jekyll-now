@@ -1,0 +1,13 @@
+/**
+ * jQuery "Link Preview" Plugin
+ * 
+ * @name jquery-jLinkPreview-1.0.0.js
+ * @author Sarpdoruk TAHMAZ - http://www.sarpdoruktahmaz.com
+ * @version 1.0.0
+ * @date June 12, 2011
+ * @category jQuery Plugin Widget
+ * @copyright (c) 2011 Sarpdoruk TAHMAZ (sarpdoruktahmaz.com)
+ * @license GNU - GENERAL PUBLIC LICENSE - https://github.com/jquery/jquery/blob/master/GPL-LICENSE.txt
+ * @info Visit http://www.sarpdoruktahmaz.com/projects/j-link-preview for more info
+**/
+(function(a){a.fn.jLinkPreview=function(e){var l,k,f,m=[],n=[],i="",d,b,h,c,g={preload:true,width:256,height:192,fade:300,"background-color":"#555",elementsHavingId:"",elementsHavingClass:"",attribute:"title"};a.extend(g,e);if(g.elementsHavingId!=""){m=g.elementsHavingId.split(",")}if(g.elementsHavingClass!=""){n=g.elementsHavingClass.split(",")}if(m.length==0&&n.length==0){i="BODY A"}else{for(h=0;h<m.length;h++){i+="#"+m[h]+", "}for(h=0;h<n.length;h++){i+="."+n[h]+", "}}if(g.preload==true){a(i).each(function(j){l=new Image();if(a(this).attr("href").substring(0,4)==="http"){c=a(this).attr("href")}else{c="http://"+a(this).attr("href")}l.src="http://wimg.ca/w_"+g.width+"_h_"+g.height+"/"+c;l=null})}a(i).hover(function(j){l=new Image();if(a(this).attr("href").substring(0,4)==="http"){c=a(this).attr("href")}else{c="http://"+a(this).attr("href")}l.src="http://wimg.ca/w_"+g.width+"_h_"+g.height+"/"+c;if(g.height<96){l.height=96}else{if(g.height>384){l.height=384}else{l.height=g.height}}if(g.width<128){l.width=128}else{if(g.width>512){l.width=512}else{l.width=g.width}}if(a(this).attr(g.attribute)==null||a(this).attr(g.attribute)=="noreferrer"){k="";f=0}else{k=a(this).attr(g.attribute);f=25}if((j.clientX+a(".jLinkPreview").width()+20)>a(window).width()){d=(j.clientX-a(".jLinkPreview").width()-15)}else{d=j.clientX+15}if((j.clientY+a(".jLinkPreview").height()+20)>a(window).height()){b=(j.clientY-a(".jLinkPreview").height()-15)}else{b=j.clientY+15}a("BODY").prepend("<div class='jLinkPreview' style='background:url("+l.src+")"+g["background-color"]+" no-repeat bottom; width:"+l.width+"px; height:"+(l.height+f)+"px; top:"+b+"px; left:"+d+"px;'>"+k+"</div>");a(".jLinkPreview").fadeIn(g.fade)},function(){a(".jLinkPreview").remove();l=null});a(i).mousemove(function(j){if((j.clientX+a(".jLinkPreview").width()+20)>a(window).width()){d=(j.clientX-a(".jLinkPreview").width()-15)}else{d=j.clientX+15}if((j.clientY+a(".jLinkPreview").height()+20)>a(window).height()){b=(j.clientY-a(".jLinkPreview").height()-15)}else{b=j.clientY+15}a(".jLinkPreview").css({top:b+"px",left:d+"px"})});String.prototype.startsWith=function(j){return(this.indexOf(j)===0)}}})(jQuery);

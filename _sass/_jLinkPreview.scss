@@ -1,0 +1,15 @@
+.jLinkPreview {
+    display:none;
+    position:fixed;
+    border:7px #555 solid;
+    overflow:hidden;
+	 line-height: 25px;
+    border-radius:15px;
+    -moz-boder-radius:15px;
+    -khtml-border-radius:15px;
+    -webkit-border-radius:15px;
+    color:#FFFFFF;
+    font-family:Trebuchet MS;
+    text-align:center;
+    z-index:9999;
+}
