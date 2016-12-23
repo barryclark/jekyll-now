@@ -64,23 +64,32 @@ $.fn.jLinkPreview = function(custom) {
         }
     }
     
+    var ignoreNode = function(obj) {
+        if (obj.attr("href").startsWith("mailto:") == true) {
+            return true;
+        }
+        if (rejectClasses.length > 0) {
+            for(j = 0; j < rejectClasses.length; j++) {
+                if(obj.attr("class") == rejectClasses[j]) {
+                    return true;
+                }
+            }
+        }
+        if(rejectParents.length > 0) {
+            for(j = 0; j < rejectParents.length; j++) {
+                if (obj.parents(rejectParents[j]).size() > 0) {
+                    return true;
+                }
+            }
+        }
+        return false;
+    };
+    
     if(settings['preload'] == true) {
         $(targetA).each(function(event) {
-            if (rejectClasses.length > 0) {
-                for(j = 0; j < rejectClasses.length; j++) {
-                    if($(this).attr("class") == rejectClasses[j]) {
-                        return;
-                    }
-                }
+            if (ignoreNode($(this)) == true) {
+                return;
             }
-            if(rejectParents.length > 0) {
-                for(j = 0; j < rejectParents.length; j++) {
-                    if ($(this).parents(rejectParents[j]).size() > 0) {
-                        return;
-                    }
-                }
-            }
-
             temp = new Image();
 			if($(this).attr("href").substring(0, 4) === "http") { 
 				href = $(this).attr("href");
@@ -93,21 +102,9 @@ $.fn.jLinkPreview = function(custom) {
     }
     
     $(targetA).hover(function(event) {
-        if (rejectClasses.length > 0) {
-            for(j = 0; j < rejectClasses.length; j++) {
-                if($(this).attr("class") == rejectClasses[j]) {
-                    return;
-                }
-            }
+        if (ignoreNode($(this)) == true) {
+            return;
         }
-        if(rejectParents.length > 0) {
-            for(j = 0; j < rejectParents.length; j++) {
-                if ($(this).parents(rejectParents[j]).size() > 0) {
-                    return;
-                }
-            }
-        }
-
         temp = new Image();		
 		if($(this).attr("href").substring(0, 4) === "http") {
 			href = $(this).attr("href");
