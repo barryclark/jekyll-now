@@ -8,13 +8,13 @@ It's live! and no, it's not done, it's not perfect but it's live, and as any web
 
 **Technology**
 
-The first thing to stand out in this website is that it works using github pages, powered by Jekyll, a flat file website generator. You probalby have heard about flat file cms, and sttaic website generators and their advantages (simple, fast and easy to deploy).
+The first thing to stand out in this website is that it works using github pages, powered by Jekyll, a flat file website generator. You probably have heard about flat file cms, and static website generators and their advantages (simple, fast and easy to deploy).
 
 **Checklist for the new website:**
 
 - A simple way to publish content (a blog!), and Jekyll Now offers just that.
 - Decoupled theming system that allows me to change the website design without affecting the content
-- Simple hosting, since I dont need much space, database or dynamc content I didnt want to deal with web hosting services and the monthly cost.
+- Simple hosting, since I dont need much space, database or dynamic content I didnt want to deal with web hosting services and the monthly cost.
 
 **Whats next**
 
