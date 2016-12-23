@@ -17,7 +17,7 @@ This is just some general information and links about the issues in Ohio, or, mo
 #### Issue 1 : Proposal to establish the bipartisan Ohio Redistricting Commission
 
 * [This issue on ballotpedia.org](http://ballotpedia.org/Ohio_Bipartisan_Redistricting_Commission_Amendment,_Issue_1_%282015%29)
-* [Libertarian Party of Ohio says no](https://www.lpo.org/elections/state-ballot-issues/701-lpo-recommends-no-vote-on-ballot-issue-1)
+* [Libertarian Party of Ohio says no](https://web.archive.org/web/20160410211854/https://www.lpo.org/elections/state-ballot-issues/701-lpo-recommends-no-vote-on-ballot-issue-1)
 * [Ohio Green Party says yes](http://www.ohiogreens.org/story/green-party-ohio-announces-recommendations-ohio-statewide-ballot-issues)
 
 #### Issue 2 : Proposal to prohibit any petitioner from using the Ohio Constitution to grant a monopoly, oligopoly, or cartel
@@ -31,7 +31,7 @@ This is just some general information and links about the issues in Ohio, or, mo
 
 * [This issue on ballotpedia.org](http://ballotpedia.org/Ohio_Marijuana_Legalization_Initiative_%282015%29)
 * [Libertarian Party of Ohio says no](https://www.lpo.org/elections/state-ballot-issues/703-lpo-recommends-no-vote-on-ballot-issue-3)
-* [Ohio Green Party says no](http://www.ohiogreens.org/story/green-party-ohio-announces-recommendations-ohio-statewide-ballot-issues)
+* [Ohio Green Party says no](https://web.archive.org/web/20151007041244/http://www.ohiogreens.org/story/green-party-ohio-announces-recommendations-ohio-statewide-ballot-issues)
 
 ### Proposed Tax Levy
 
@@ -50,7 +50,7 @@ A "[mill](https://en.wikipedia.org/wiki/Mill_%28currency%29)" is a thousandth of
 #### Dayton Municipal Court Judge
 
 * Colette Moorman
-  * [Campaign website](http://colettemoormanforjudge.nationbuilder.com/)
+  * [Campaign website](https://web.archive.org/web/20150320014440/http://colettemoormanforjudge.nationbuilder.com/)
   * [Facebook page](https://www.facebook.com/colettemoormanforjudge)
 * Mia Wortham Spells
   * [Campaign website](https://miaspells.com/)
@@ -62,7 +62,7 @@ A "[mill](https://en.wikipedia.org/wiki/Mill_%28currency%29)" is a thousandth of
 #### Dayton Commission (vote for 2)
 
 * Darryl Fairchild
-  * [Campaign website](http://www.fairchildfordayton.com)
+  * [Campaign website](https://web.archive.org/web/20151127025320/http://www.fairchildfordayton.com/)
   * [Facebook page](https://www.facebook.com/FairchildforDayton)
   * [2 News Meet the candidates: Darryl Fairchild](http://wdtn.com/2015/04/20/meet-the-candidates-darryl-fairchild)
   * [Dayton Daily News 2012 Article: Community activist announces run for Dayton Commission](http://www.daytondailynews.com/news/news/local-govt-politics/community-activist-announces-run-for-dayton-commis/nTcj2)
