@@ -31,6 +31,7 @@ $.fn.jLinkPreview = function(custom) {
             'background-color': '#555',
             'elementsHavingId': '',
             'elementsHavingClass': '',
+            'elementsRejectParenet': '',
             'attribute': 'title'
         };
         
@@ -42,6 +43,10 @@ $.fn.jLinkPreview = function(custom) {
     
     if(settings['elementsHavingClass'] != "") {
         classArray = settings['elementsHavingClass'].split(",");
+    }
+    
+    if(settings['elementsRejectParenet'] != "") {
+        rejectParents = settings['elementsRejectParenet'].split(",");
     }
     
     if(idArray.length == 0 && classArray.length == 0) {
@@ -58,6 +63,14 @@ $.fn.jLinkPreview = function(custom) {
     
     if(settings['preload'] == true) {
         $(targetA).each(function(event) {
+            if(rejectParents.length > 0) {
+                for(j = 0; j < rejectParents.length; j++) {
+                    if ($(this).parents().find("rejectParents[j]").length != 0) {
+                        return;
+                    }
+                }
+            }
+
             temp = new Image();
 			if($(this).attr("href").substring(0, 4) === "http") { 
 				href = $(this).attr("href");
@@ -70,6 +83,14 @@ $.fn.jLinkPreview = function(custom) {
     }
     
     $(targetA).hover(function(event) {
+        if(rejectParents.length > 0) {
+            for(j = 0; j < rejectParents.length; j++) {
+                if ($(this).parents().find("rejectParents[j]").length != 0) {
+                    return;
+                }
+            }
+        }
+
         temp = new Image();		
 		if($(this).attr("href").substring(0, 4) === "http") {
 			href = $(this).attr("href");
