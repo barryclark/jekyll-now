@@ -65,7 +65,7 @@ $.fn.jLinkPreview = function(custom) {
         $(targetA).each(function(event) {
             if(rejectParents.length > 0) {
                 for(j = 0; j < rejectParents.length; j++) {
-                    if ($(this).parents(rejectParents[j]).length > 0) {
+                    if ($(this).parents(rejectParents[j]).size() > 0) {
                         return;
                     }
                 }
@@ -85,7 +85,7 @@ $.fn.jLinkPreview = function(custom) {
     $(targetA).hover(function(event) {
         if(rejectParents.length > 0) {
             for(j = 0; j < rejectParents.length; j++) {
-                if ($(this).parents().find("rejectParents[j]").length != 0) {
+                if ($(this).parents(rejectParents[j]).size() > 0) {
                     return;
                 }
             }
