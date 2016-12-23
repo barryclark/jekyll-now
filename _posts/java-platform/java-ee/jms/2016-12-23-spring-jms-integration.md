@@ -295,10 +295,12 @@ public class JMSTemplateTest {
 }
 ```
 
-Before class ile app Contexti oluşturup jms sender ve receiver için bean alıyoruz.
+Before class ile app Contexti oluşturup jms sender ve receiver için bean alıyoruz
+.
 > FileSystemXmlApplicationContext kullanmaktaki amaç conf bilgilerini classpath dışından alıyor olmamızdır. İlerde değişebilecek olan herşeyi conf tabanlı yapıp uygulama dışından almak mantıklı olacaktır.
 
 **jmsSenderReceiver** unit test ile mesaj gönderip hemen ardından mesaj bekliyoruz.
+
 1. outputQueue'ya mesaj gönder.
 2. replyQueue'dan receiveTimeout süresi kadar mesaj bekle. Burada synchronous yaklaşımını kullanıyoruz. replyQueue'dan mesaj gelene kadar method call stack'ini blokluyoruz. Belirtilen süreden önce mesaj alınırsa işlem yapılıp sonlandırılacaktır, mesaj alınamaz ise receiveTimeout'dan sonra ilgili kaynaklar serbest bırakılıp bir sonraki kod bloğu çalışacaktır.
 
