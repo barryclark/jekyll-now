@@ -1,3 +1,0 @@
-[submodule "_plugins/amazon"]
-	path = _plugins/amazon
-	url = git://github.com/longkey1/jekyll-amazon-plugin.git
