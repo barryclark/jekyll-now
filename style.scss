@@ -299,10 +299,10 @@ nav {
   .highlighter-rouge {
     line-height: 13px;
   }
-  .highlighter-rouge code {
+  code .highlighter-rouge {
     background-color: $lightGray;
   }
-  .highlighter-rouge div {
+  div .highlighter-rouge {
     margin-left: 20px;
     margin-right: 10px;
   }
