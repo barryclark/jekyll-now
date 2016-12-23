@@ -142,6 +142,30 @@ Couchbase Server 클러스터의 물리적 리소스의 논리적 그룹
 
 **Auto Failover**
 
+`Failover`는 Couchbase(membase) 클러스터의 노드에서 수행되며 이는 비정상이고 더 이상 도달 할 수없는 노드에서 수행됩니다. 그 목적은 비정상적인 노드를 제거하고 다른 노드에서 복제본 데이터를 사용 가능하게하여 클러스터를 일관된 상태로 만드는 것입니다.
+
+`Auto Fialover`는 설정해준 시간을 주기로 각 노드 서버의 상황을 확인하고, 해당 노드 서버가 장애라고 판단되면 해당 서버를 FailOver 시켜주는 옵션입니다.<br>
+
+Failover의 동작은 아래와 같습니다.
+
+1.	클러스터의 새로운 토폴로지로 업데이트 된 클러스터 맵을 수신
+2.	새로운 설정에 적응
+3.	현재 활성 구성과 비교
+4.	어떤 TCP 연결 및 자원을 종료 및 제거해야하는지 결정
+5.	복제된 데이터 사용 가능하도록 함
+
+공식 홈페이지에서는 아래의 경고를 제공합니다.
+
+```
+When a node is removed from the cluster during failover, it's possible for operations to be in mid-flight as a request or response from the server or being processed on the server. This means that the underlying TCP connection executing the operation may be closed by the server or the client which would result. In most cases this will result in that operation failing with either a with a client or server IO exception. In certain cases the operation will be retried up until it's configured operation "lifespan". It may be retried multiple times and fail multitple times until it either succeeds to or times out. In the event of a timeout, an OperationTimeoutException will returned in the Exception field of the IOperationResult.
+```
+
+위의 동작 과정 등이 리소스에 어느 정도 영향을 미치므로, 아래의 Exception들이 발생할 수 있다고 합니다.
+
+-	OperationTimeoutException
+-	NodeUnavailableException
+-	ConnectionUnavailableException
+
 #### 해결 방안
 
 **increasing the DefaultOperationTimeout so that more retry attempts**
@@ -152,7 +176,15 @@ Couchbase Server 클러스터의 물리적 리소스의 논리적 그룹
 
 #### 문제 원인
 
-**MemcachedClient**
+**Bean 생성 실패**
+
+Spring Application은 의존성 부여된 모든 Bean들이 로드되어야 합니다. 일부 빈의 실패만으로도 어플리케이션 로드가 실패게 됩니다.
+
+SpyMemchaced의 MemcachedClient는 최초 어플리케이션 로드시 주입해준 Bucket 정보의 노드들이 하나 이상 connection을 성공적으로 맺지 못하면 null을 리턴하게 되며, null을 리턴하므로 Bean 생성을 실패하게 됩니다.
+
+MemcachedClient의 Bean 생성 실패로 의존성을 갖는 나머지 빈들(MemcachedSession, MemcachedSecurityContextRepository)도 로드할 수 없게 됩니다.
+
+![Memcached 의존성](/images/2016/2016_12_23_COUCHBASE/dependence.jpg)
 
 #### 해결 방안
 
