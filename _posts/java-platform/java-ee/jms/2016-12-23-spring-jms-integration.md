@@ -15,6 +15,7 @@ Kısacası Spring arka tarafta sizin yerinize birçok işi hallediyor ama hangi 
 Bugün kısaca Spring&JMS entegrasonunu ActvieMQ kullanarak yapmaya çalışacağız. Hemen bir proje oluşturalım ve pom.xml'i ayarlayalım;
 
 **pom.xml**;
+
 ``` xml
 
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
@@ -77,6 +78,7 @@ Bugün kısaca Spring&JMS entegrasonunu ActvieMQ kullanarak yapmaya çalışaca�
 
 </project>
 ```
+
 ActiveMQ'yu default ayarlar ile çalıştıralım.
 ![activemq start](/images/java-platform/java-ee/jms/activemq_start.png)
 
@@ -84,6 +86,7 @@ Spring bean definition'lara bakalım;
 **appContext.xml**;
 
 ``` xml
+
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
@@ -150,6 +153,7 @@ jms.reply.queue.name=jms/caysever.shop.1.1.ShoppingR
 Properties dosyamız içerisinde pure JMS çalışırken kullandığımız yaklaşımı kullanıyoruz. ConnectionFactory name , broker url ve queue bilglerini buradan alıyoruz.
 
 **jmsSender**;
+
 ``` java
 package com.caysever.jms;
 
@@ -200,6 +204,7 @@ Bean injection methodları yanında sendMessage methodumuz ile JMSTemplate üzer
 > MessageCreator'ü JMS'deki MessageProducer gibi düşünebilirsiniz.
 
 **jmsReceiver**;
+
 ``` java
 package com.caysever.jms;
 
@@ -244,6 +249,7 @@ public class MessageReceiver {
 Yine bean injection methodları dışında receiveMessage methodumuz ile queue'daki mesajı almayı amaçlıyoruz.
 
 Test edelim;
+
 ``` java
 package com.caysever.springjms;
 
