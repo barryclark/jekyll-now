@@ -71,7 +71,7 @@ $.fn.jLinkPreview = function(custom) {
             var retstr;
             return "_waitbgpic_" + encodeURIComponent(settings['waitingimage']);
             if (settings['waitingimagetype'] != "") {
-                retstr += "_waitbgpictype_" + settings['waitingimagetype'];
+                retstr = retstr + "_waitbgpictype_" + settings['waitingimagetype'];
             }
             return retstr;
         } else {
