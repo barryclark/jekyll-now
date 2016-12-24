@@ -1,5 +1,6 @@
 ---
 layout: default
+published: true
 ---
 
 <div class="posts">
