@@ -33,8 +33,8 @@ $.fn.jLinkPreview = function(custom) {
             'elementsHavingClass': '',
             'elementsRejectParenet': '',
             'elementsRejectClass': '',
-            'attribute': 'title'
-            'waitingimage': ''
+            'attribute': 'title',
+            'waitingimage': '',
             'waitingimagetype': 'png'
         };
         
