@@ -34,6 +34,8 @@ $.fn.jLinkPreview = function(custom) {
             'elementsRejectParenet': '',
             'elementsRejectClass': '',
             'attribute': 'title'
+            'waitingimage': ''
+            'waitingimagetype': 'png'
         };
         
     $.extend(settings, custom);
@@ -61,6 +63,19 @@ $.fn.jLinkPreview = function(custom) {
         
         for(j = 0; j < classArray.length; j++) {
             targetA += "." + classArray[j] + ", ";
+        }
+    }
+    
+    var getWatingImageUri = function() {
+        if (settings['waitingimage'] != "") {
+            var retstr;
+            return "_waitbgpic_" + encodeURIComponent(settings['waitingimage']);
+            if (settings['waitingimagetype'] != "") {
+                retstr += "_waitbgpictype_" + settings['waitingimagetype'];
+            }
+            return retstr;
+        } else {
+            return "";
         }
     }
     
@@ -96,7 +111,7 @@ $.fn.jLinkPreview = function(custom) {
 			} else {
 				href = "http://" + $(this).attr("href");
 			}
-            temp.src = "http://wimg.ca/w_" + settings['width'] + "_h_" + settings['height'] + "/" + href;
+            temp.src = "http://wimg.ca/w_" + settings['width'] + "_h_" + settings['height'] + getWatingImageUri() + "/" + href;
             temp = null;
         });
     }
@@ -111,7 +126,7 @@ $.fn.jLinkPreview = function(custom) {
 		} else {
 			href = "http://" + $(this).attr("href");
 		}
-        temp.src = "http://wimg.ca/w_" + settings['width'] + "_h_" + settings['height'] + "/" + href;
+        temp.src = "http://wimg.ca/w_" + settings['width'] + "_h_" + settings['height'] + getWatingImageUri() + "/" + href;
         
         if(settings['height'] < 96) {
             temp.height = 96;
