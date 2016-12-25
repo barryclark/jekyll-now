@@ -3,6 +3,7 @@ layout: post
 title: JMS with ActiveMQ
 permalink: /blog/java-platform/java-ee/jms/jms-with-activemq
 summary: Merhaba arkadaslar, bu yazımızda JMS vendor olarak ActiveMQ kullanarak örnek yapacağız.
+image: images/java-platform/java-ee/jms/ActiveMQ-logo-2.png
 ---
 
 Merhaba arkadaslar, bu yazımızda JMS vendor olarak ActiveMQ kullanarak örnek yapacağız.

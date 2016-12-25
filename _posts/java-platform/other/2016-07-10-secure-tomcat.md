@@ -3,6 +3,7 @@ layout: post
 title: Secure Tomcat
 permalink: /blog/java/java-ee/secure-tomcat
 summary: Merhaba arkadaslar, bu yazımda Tomcat'i secure olarak ayağa kaldırmayı anlatmaya çalışacağım.
+image: images/java-platform/tomcat-ssl.png
 ---
 
 Merhaba arkadaslar, bu yazımda Tomcat'i secure olarak ayağa kaldırmayı anlatmaya çalışacağım.

@@ -3,6 +3,7 @@ layout: post
 title: Servlet Container
 permalink: /blog/java-platform/java-ee/servlet-jsp/servlet-container
 summary: Merhaba arkadaşlar , Servlet&Jsp yazılarımıza 2.ci yazı ile devam ediyoruz. Bugün Servlet hakkında yine birkaç bilgi verip , Servlet Contaıner'ın görevlerinden biraz bahsedicez.
+image: images/java-platform/java-ee/servlet-jsp/servlet-container.jpg
 ---
 
 Merhaba arkadaşlar , Servlet&Jsp yazılarımıza 2.ci yazı ile devam ediyoruz. Bugün Servlet hakkında yine birkaç bilgi verip , Servlet Contaıner'ın görevlerinden biraz bahsedicez.Kullanacagımız Servlet Motoru Tomcat olacaktır. Bugün Tomcat kurulumunu da İntellij İdea üzerinden gerçekleştireceğiz. Başlayalım :) Daha önce söylediğimiz gibi Servlet'ler sunucu ile istemci arasında dynamic bir yapı oluşturmamızı sağlar.

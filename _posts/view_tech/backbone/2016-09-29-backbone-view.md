@@ -3,6 +3,7 @@ layout: post
 title: Backbone View
 permalink: /blog/view-tech/backbone/backbone-view
 summary: Merhaba arkadaslar, Backbone yazı dizisine devam ediyoruz. Bugün ki konumuz View olacaktır. Önceki yazılarımda belirttiğim gibi Backbone, MVC yapısında olan bir javascript framework'udur.
+image: images/view-tech/backbone/introduction-to-backbonejs.jpg
 ---
 
 Merhaba arkadaslar, Backbone yazı dizisine devam ediyoruz. Bugün ki konumuz View olacaktır. Önceki yazılarımda belirttiğim gibi Backbone, MVC yapısında olan bir javascript framework'udur.

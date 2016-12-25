@@ -3,6 +3,7 @@ layout: post
 title: Spring&JMS Integration
 permalink: /blog/java-platform/java-ee/jms/jms-spring-integration
 summary: Merhaba arkadaslar, bu yazımızda Spring ile JMS kullanımına bakacağız.
+image: /images/java-platform/java-ee/jms/spring-jms-and-activemq.jpg
 ---
 
 Merhaba arkadaslar, bu yazımızda Spring ile JMS kullanımına bakacağız.

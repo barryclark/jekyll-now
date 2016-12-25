@@ -3,6 +3,7 @@ layout: post
 title: Avoid Multiple Session Per User
 permalink: /blog/java/java-ee/avoid-multiple-per-user
 summary: Merhaba arkadaslar, bu ufak yazıda web application'lar içerisinde karşılaşabileceğiniz bir durumu aktarmaya çalışacağım.
+image: images/java-platform/Session-Management-in-Java-HttpSession-Session-in-Java.jpg
 ---
 
 Merhaba arkadaslar,

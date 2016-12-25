@@ -3,6 +3,7 @@ layout: post
 title: Apache Mina Client
 permalink: /blog/apache-guys/apache-mina/apache-mina-client
 summary: Merhaba arkadaslar, bir önceki yazımda Mina ile basit bir server socket'in nasıl oluşturulabileceğini, NIO tabanlı olduğunu ve mina hakkında birkaç detay vermiştik. Bugün ise Mina ile bir socket client oluşturmaya çalışacağız.
+image: images/apache-guys/apache-mina/mam.jpg
 ---
 
 Merhaba arkadaslar, bir önceki yazımda Mina ile basit bir server socket'in nasıl oluşturulabileceğini, NIO tabanlı olduğunu ve mina hakkında birkaç detay vermiştik. Bugün ise Mina ile bir socket client oluşturmaya çalışacağız.

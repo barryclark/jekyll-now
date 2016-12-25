@@ -3,6 +3,7 @@ layout: post
 title: Apache Mina Introduction
 permalink: /blog/apache-guys/apache-mina/apache-mina-introduction
 summary: Merhaba arkadaslar, Apache Mina yazılarına giriş yazımızla başlamış bulunmaktayız. Blogumu az çok takip ediyorsanız yazıların nasıl bir taslak içerdiği hakkında bir fikriniz vardır diye düşünüyorum.
+image: images/apache-guys/apache-mina/mina_app_arch.png
 ---
 
 Merhaba arkadaslar,

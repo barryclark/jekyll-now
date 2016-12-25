@@ -3,6 +3,7 @@ layout: post
 title: JMS Introduction
 permalink: /blog/java-platform/java-ee/jms/jms-introduction
 summary: Merhaba arkadaslar, bu yazımızda JMS'in genel yapısından bahsediyor olacağız.
+image: images/java-platform/java-ee/jms/jms_logo.png
 ---
 
 Merhaba arkadaslar, bu yazımızda JMS'in genel yapısından bahsediyor olacağız. JMS ve vendor'lerinden bahsedeceğiz.

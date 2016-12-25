@@ -7,35 +7,20 @@ layout: default
     <article class="post">
       <div class="media">
         {% if post.image %}
-        <div class="media-left">
-          <a href="{{ site.baseurl }}{{ post.url }}" class="media-object"><img class="img" src="{{ post.image }}" /></a>
+        <div align="center">
+            <a style="color: #808000;" href="{{ site.baseurl }}{{ post.url }}"><img class="media-object" src="{{ post.image }}" /></a>
         </div>
         {% endif %}
 
         <div class="media-body">
-          <h4 class="media-heading"><a style="color: #808000;" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h4>
-
-          <div class="entry">
-            {{ post.summary }}..<a style="color: #808000;" href="{{ site.baseurl }}{{ post.url }}">Read More</a>
+          <div align="center">
+            <h4 class="media-heading"><a style="color: #808000;" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h4>
           </div>
-
+          <p>
+            {{ post.summary }}..<a style="color: #808000;" href="{{ site.baseurl }}{{ post.url }}">Read More</a>
+          </p>
         </div>
       </div>
-
     </article>
-  {% endfor %}
-    <!-- Pagination links -->
-  <div class="pagination">
-    {% if paginator.previous_page %}
-      <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
-    {% else %}
-      <span class="previous">Previous</span>
-    {% endif %}
-    <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
-    {% if paginator.next_page %}
-      <a href="{{ paginator.next_page_path }}" class="next">Next</a>
-    {% else %}
-      <span class="next ">Next</span>
-    {% endif %}
-  </div>
+ {% endfor %}
 </div>

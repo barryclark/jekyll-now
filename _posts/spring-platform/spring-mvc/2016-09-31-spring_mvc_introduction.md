@@ -3,6 +3,7 @@ layout: post
 title: Spring MVC Introduction
 permalink: /blog/spring-platform/spring-mvc-tutorial/spring-mvc-introduction
 summary: Merhaba arkadaslar, bu yazımda Spring MVC konusuna giriş yapacağız. Öncelikle Spring'in ne olduğundan, neyi amaçladığından, kime ne olarak alternatif olduğundan bahsetmek gerekir.
+image: images/spring-platform/spring-mvc/springmvc.png
 ---
 
 Merhaba arkadaslar, bu yazımda Spring MVC konusuna giriş yapacağız.

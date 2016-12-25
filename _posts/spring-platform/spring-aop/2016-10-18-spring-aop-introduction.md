@@ -3,6 +3,7 @@ layout: post
 title: Spring AOP Introduction
 permalink: /blog/spring-platform/spring-aop-tutorial/spring-aop-introduction
 summary: Merhaba arkadaslar, bugün AOP paradigmasına giriş yapacağız. Klasik ilk yazılarımda olduğu gibi, nedir ne dedildir niçin kullanacağız gibi konulara değineceğim.
+image: images/spring-platform/spring-aop/Spring-AOP-–-Introduction.png
 ---
 
 

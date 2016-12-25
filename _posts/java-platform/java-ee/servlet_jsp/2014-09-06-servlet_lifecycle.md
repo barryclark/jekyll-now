@@ -3,6 +3,7 @@ layout: post
 title: Servlet Lifecycle
 permalink: /blog/java-platform/java-ee/servlet-jsp/servlet-lifecycle
 summary: Merhaba arkadaslar, bu yazımızda Servlet Lifecycle konusuna deginicez. Servlet'lerin yaşam döngüsüne bakınmış olucaz.
+image: images/java-platform/java-ee/servlet-jsp/Servlet_LifeCycle.png
 ---
 
 

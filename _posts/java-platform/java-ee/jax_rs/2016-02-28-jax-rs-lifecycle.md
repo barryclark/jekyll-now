@@ -3,6 +3,7 @@ layout: post
 title: JAX-RS Lifecycle
 permalink: /blog/java-platform/java-ee/jax-rs/jax-rs-lifecycle
 summary: Merhaba arkadaslar, bu yazımızda bir restful kaynağının yaşam döngüsünden bahsediyor olacağız.
+image: images/java-platform/java-ee/jaxrs/bejug-jaxrs-event.jpg
 ---
 
 
