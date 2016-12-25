@@ -580,7 +580,7 @@ If you have reached this far, I have to reveal to you another motivation of mine
 
 I hope you would feel prepared and that you have an understanding of this system and how it works. If you want to start tinkering with code, feel free to pick up from the intro [tutorial](https://www.tensorflow.org/versions/r0.10/tutorials/mnist/beginners/index.html) and teach a neural network how to detect handwritten digits.
 
-You should also continue your education by learning the theoretical and mathimatical underpinnings of the concepts we discussed here. Good questions to ask now include:
+You should also continue your education by learning the theoretical and mathematical underpinnings of the concepts we discussed here. Good questions to ask now include:
 
  * What other kinds of cost functions exist? Which are better for which applications?
  * What's the algorithm to actually calculate new weights using gradient descent?
@@ -601,7 +601,7 @@ Thanks to [Yasmine Alfouzan](https://www.linkedin.com/in/yasmine-alfouzan-b05ba3
 
 Please contact me on [Twitter](https://twitter.com/jalammar) with any corrections or feedback.
 
+<script type="text/javascript" src="/js/nnVizUtils.js"></script>
 <script type="text/javascript" src="/js/simple_nn.js"></script>
 <script type="text/javascript" src="/js/two_variable_nn.js"></script>
-
 <script type="text/javascript" src="/js/shallow_nn_grapher.js"></script>

@@ -19,6 +19,7 @@ $black: #000;
 $darkerGray: #222;
 $darkGray: #333;
 $gray: #666;
+$lighterGray: #999;
 $lightGray: #eee;
 $white: #fff;
 
@@ -34,7 +35,15 @@ $nnSoftmaxNode: #faf6c9;
 $nnStrokeWidth: 2px;
 $nnNodeStrokeWidth: 1px;
 
+$inputOutlineColor: #d18fe2;
+$biasOutlineColor: #a19cf0;
+$outputOutlineColor: #f2afc7;
+$softmaxOutlineColor: #ebe79f;
+
 $nnGrapherStrokeWidth: 3px;
+$lighterOutlinedNodeStrokeWidth: 3px;
+$outlinedNodeStrokeWidth: 4px;
+$outlinedNodeStrokeWidthHover: 8px;
 
 // Font stacks
 $helvetica: Helvetica, Arial, sans-serif;

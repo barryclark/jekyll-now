@@ -291,6 +291,22 @@ td.error-cell{  text-align:center;  }
 }
 
 
+div.nn-tooltip {
+  position: absolute;
+  text-align: center;
+  /*width: 60px;
+  height: 28px;*/
+  padding: 15px;
+  font: 12px sans-serif;
+  background: white;
+  border: 1px solid #333;
+  border-radius: 8px;
+  pointer-events: none;
+}
+
+
+
+
 .gif_space{
   margin-top: 80px;
 }
@@ -365,6 +381,51 @@ td.error-cell{  text-align:center;  }
   font-size: 12px;
   fill: #666;
 }
+
+// Neural Network Calculation Viz
+#neural-network-calculation-viz{  text-align:center;  }
+
+.nn-node{  fill: white;  stroke-width: $lighterOutlinedNodeStrokeWidth;  }
+.nn-node:hover{ stroke: $lighterGray; }
+.input-group text{   pointer-events: none;  }
+.outlined-input-node{  stroke: $inputOutlineColor;}
+.outlined-weight-node{  stroke: $nnWeightNode; }
+.outlined-bias-node{  stroke: $biasOutlineColor;}
+.outlined-output-node{  stroke: $outputOutlineColor;}
+.outlined-softmax-node{  stroke: $softmaxOutlineColor;}
+
+
+.nn-arrow{
+  stroke-width:$nnStrokeWidth;
+  stroke:$lighterGray;
+}
+
+
+line.nn-arrow-highlighted{
+  stroke: $darkGray !important;
+}
+
+.arrowHead{  stroke:$lighterGray;  }
+
+#neural-network-calculation-viz .weightNodeText{  font-size: 9px; fill: #999;  pointer-events: none;}
+//#neural-network-calculation-viz .weightNodeText:hover{  font-size: 11px; fill: $gray;  pointer-events: none;}
+#neural-network-calculation-viz .node-text{
+  font-size: 14px;
+  fill: #666;
+}
+#neural-network-calculation-viz .outlined-weight-node:hover{
+  stroke: $lighterGray;
+}
+
+#neural-network-calculation-viz  .outlined-weight-node:hover .weightNodeText{
+  font-size: 12px;
+  fill: $gray;
+}
+#neural-network-calculation-viz .weightNodeText{
+
+}
+
+// ============
 
 strong, b {
   font-weight: bold;
