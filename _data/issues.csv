@@ -1,4 +1,14 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1494,197598577,2016-12-26 15:34:31,2016-12-26 15:34:02,Nasce il comitato Con Arquata per Arquata,42.7723609,13.2965826,"[""Accettato"", ""Bollettino"", ""Contatti"", ""Notizie Utili"", ""Sisma Ottobre""]",,,"{""data"": ""26/12/2016"", ""descrizione"": ""Ad Arquata del Tronto \u00e8 nato un nuovo comitato denominato \u201cArquata per Arquata\u201d. Si tratta di un comitato civico indipendente, costituito il 9 dicembre 2016 per raccogliere e dare informazione alla popolazione arquatana residente e non residente, vigilare sul processo di ricostruzione usando tutti gli strumenti possibili di partecipazione democratica, dare voce alle istanze delle popolazioni terremotate di Arquata del Tronto. La partecipazione al Comitato \u00e8 spontanea e gratuita."", ""email"": ""conarquataperarquata@gmail.com"", ""indirizzo"": ""Piazza Umberto I, Arquata del Tronto, AP, Marche, Italia"", ""lat"": ""42.7723609"", ""link"": ""https://www.facebook.com/conarquataperarquata/"", ""lon"": ""13.2965826"", ""nome"": ""Nasce il comitato Con Arquata per Arquata"", ""tel"": """"}","<pre><yamldata>nome: 'Nasce il comitato Con Arquata per Arquata'
+tel: ''
+email: conarquataperarquata@gmail.com
+descrizione: 'Ad Arquata del Tronto è nato un nuovo comitato denominato “Arquata per Arquata”. Si tratta di un comitato civico indipendente, costituito il 9 dicembre 2016 per raccogliere e dare informazione alla popolazione arquatana residente e non residente, vigilare sul processo di ricostruzione usando tutti gli strumenti possibili di partecipazione democratica, dare voce alle istanze delle popolazioni terremotate di Arquata del Tronto. La partecipazione al Comitato è spontanea e gratuita.'
+indirizzo: 'Piazza Umberto I, Arquata del Tronto, AP, Marche, Italia'
+lat: '42.7723609'
+lon: '13.2965826'
+link: 'https://www.facebook.com/conarquataperarquata/'
+data: 26/12/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1493,197591951,2016-12-26 14:12:56,2016-12-26 14:12:33,Allevatore di Colle #Arquata del Tronto ha bisogno urgente di fieno,42.7284709,13.3101503,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Sisma Ottobre"", ""Twitter""]",,,"{""cosa"": ""Allevatore di Colle #Arquata del Tronto ha bisogno urgente di fieno"", ""data"": ""26/12/2016"", ""descrizione"": ""L'associazione Libra 2.0 cerca con urgenza fieno per un allevatore di Colle Arquata del Tronto."", ""email"": ""centro.culturale.libra@gmail.com"", ""immagine"": """", ""indirizzo"": ""Strada Provinciale 20 Colle, Arquata del Tronto, AP, Marche, Italia"", ""lat"": ""42.7284709"", ""link"": ""https://twitter.com/libra2puntozero/status/813318279070629888"", ""lon"": ""13.3101503"", ""tel"": ""347 7618417""}","<pre><yamldata>tel: '347 7618417'
 email: centro.culturale.libra@gmail.com
 cosa: 'Allevatore di Colle #Arquata del Tronto ha bisogno urgente di fieno'
@@ -6988,18 +6998,6 @@ indirizzo: ''
 lat: ''
 lon: ''
 link: 'http://www.arquatadeltronto.com/it/news/610-cercasi-container-per-stoccaggio-materiali.html'
-immagine: ''
-data: 16/09/2016
-</yamldata></pre>
-",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/512,177454003,2016-11-26 00:05:18,2016-09-16 15:27:50,Consorzio Pecorino Monti della Laga cerca punti vendita per commercializzare prodotti caseari,,,"[""Accettato"", ""acquisto solidale""]",,,"{""cosa"": ""Punti vendita per commercializzare prodotti caseari."", ""data"": ""16/09/2016"", ""descrizione"": ""Consorzio di tutela \""L\u2019Amatriciano: il Pecorino dei Monti della Laga\u201d cerca punti vendita in tutta Italia per commercializzare prodotti caseari di aziende colpite dal sisma"", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""https://postribu.net/2016/09/05/sos-pecorino-di-amatrice-acquisto-solidale/"", ""lon"": """", ""tel"": """"}","<pre><yamldata>tel: ''
-email: ''
-cosa: 'Punti vendita per commercializzare prodotti caseari.'
-descrizione: 'Consorzio di tutela ""L’Amatriciano: il Pecorino dei Monti della Laga” cerca punti vendita in tutta Italia per commercializzare prodotti caseari di aziende colpite dal sisma'
-indirizzo: ''
-lat: ''
-lon: ''
-link: 'https://postribu.net/2016/09/05/sos-pecorino-di-amatrice-acquisto-solidale/'
 immagine: ''
 data: 16/09/2016
 </yamldata></pre>
