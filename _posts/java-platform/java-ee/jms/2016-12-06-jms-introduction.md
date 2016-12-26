@@ -87,7 +87,7 @@ JMS yada mesajlaşma servisleri önemli ve ciddi konularda oldukça kullanılır
 Kullanılan alanlar önemli alanlar olduğu için best practice olarak bazı pattern'ların incelenmesi gerekir. Bunlardan biri message id, correletion id ve req/resp yaklaşımıdır;
 [şu kaynağa](https://docs.oracle.com/cd/E13171_01/alsb/docs25/interopjms/MsgIDPatternforJMS.html) göz atabilirsiniz.
 
-Bir diğer pattern olarak da Delivery ve ACK pattern'a göz atabilirsiniz, [şuradan](JMS Message Delivery Reliability and Acknowledgement Patterns)
+Bir diğer pattern olarak da Delivery ve ACK pattern'a göz atabilirsiniz, [şuradan](http://wso2.com/library/articles/2013/01/jms-message-delivery-reliability-acknowledgement-patterns/)
 
 Blogdaki örneklerde pure JMS ile ActiveMQ ile örnekler yapacağız. Hali hazırda IBM WebSphere MQ için sertifika sınavına hazırlanıyorum. IBM MQ'nun yapısı biraz daha farklı, farklı queue tipleri var, distributed olayları var.  
 
