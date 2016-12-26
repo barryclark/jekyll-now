@@ -73,9 +73,11 @@ Message Header
  * JMSPriority : Mesajlara öncelik verebiliyoruz. Önceliği yüksek olan mesaj ilk önce receiver'a gönderilecektir.
 
 Message properties
+
  * Custom properties olarak name/value şeklinde set edilebilir.
 
 Message Body
+
  * Aynı zamanda JMSType'a karşılık gelmektedir. Text message, Object message, Bytes message, Stream message ve Map message olabilir.
 
 
