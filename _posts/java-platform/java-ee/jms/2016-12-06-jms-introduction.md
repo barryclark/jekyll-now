@@ -35,6 +35,7 @@ JMS'de iki mesajlaşma şekli vardır. İkisi de önemlidir, ihtiyaca göre kull
 Point To Point model'de mesajı gönderen sender client , mesajın bulunduğu kısım queue ve mesajı alacak olan receiver client bulunur. Burada her mesaj için birer client olmalıdır. Mesajı alacak olan tek bir client'dır. JMS ve vendorlar, ilgili mesajın receiver client'ın up/down durumundan bağımsız olarak karşı tarafa iletileceğini garanti eder. Mesaj client tarafından browse edilgidinde ve/veya expiry time dolduğunda queue'dan silinir.
 
 Burada Expiration Policy farklı amaçlar için kullanılabilir.
+
 * Persist edilecek sekilde ayarlayabilirsiniz ki herhangi bir expiry time bulunmaz ve receiver hazır olup mesajı aldığında queue'dan silinir.
 * Data için zamanın önemli olduğu durumlarda expiry policy kullanabilirsiniz. Örneğin; Döviz/Kur yayını yaptığınızı düşünün. USD/TRY currency pair için bir çapraz kur yayınladınız. Ancak bu kurun 5dk için geçerli olmasını istiyorsunuz. 5dk sonra ilgili mesaj herhangi bir receiver tarafından alınmadı ise mesaj silinecektir. Sender ise yeni kur yayını yapabilir bu durumda.
 
@@ -49,6 +50,7 @@ Ayrıca mesaj expiry olduğunda hangi aksiyonun alınması gerektiğini ayarlaya
 
 Queue'dan mesaj alma işini seknron yada asenkron şekilde yapabilirsiniz.
 Eğer;
+
   * Senkron olarak alınacak ise JMS üzerinde client'ın istek yapması gerekir. JMS receive ile mesaj gelene kadar sistem bloklanabilir. Bir diğer yöntem de XX kadar süre bekle gelirse kullanırım gelmezse işi bitir de diyebilirsiniz.
 
   * Asnekron seçilirse message listener'lara register olunur ve queue'a bir mesaj put edildiğinde callback ile listener method çağrılır ve mesaj receiver'a iletilmiş olur.
@@ -57,6 +59,7 @@ Eğer;
 Bir JMS mesajında; message header, message properties ve message body olmak üzere 3 kısım vardır.
 
 Message Header
+
  * JMSDestination : Mesajın gönderileceği kısımır. Queue yada Topic olabilir.
  * JMSDeliveryMode : Mesajın saklanma biçimidir. Persistance yada NonPersitence olabilir. Her iki durumda da duplicate mesaj oluşmaz ve karşı tarafa iletileceği garanti edilmektedir.
     Persistance durumda JMS provider fail olsa bile revoery ederek mesajı işler , NonPersitence durumda ise fail olursa JMS provider ilgili mesaj çöpe gider. Default'da JMS delivery mode Persistance'dır.
