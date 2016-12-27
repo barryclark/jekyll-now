@@ -23,6 +23,14 @@ body {
   color: $darkGray;
 }
 
+.hero {
+    height: 250px;
+    background-color: #FD7F05;
+    background-position: center center;
+    background-size: cover;
+    text-align: center;
+}
+
 .container {
   margin: 0 auto;
   max-width: 740px;
