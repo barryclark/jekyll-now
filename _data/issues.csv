@@ -1,11 +1,11 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1496,197705750,2016-12-27 14:56:21,2016-12-27 13:49:52,A #Pretare azienda agricola ha bisogno urgente di un gruppo elettrogeno,,,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Sisma Ottobre""]",,,"{""cosa"": ""Richiesta urgente di 1 Gruppo elettrogeno a gasolio, utile presso l'azienda agricola, di Pretare (frazione di Arquata del Tronto)"", ""data"": ""27/12/2016"", ""descrizione"": ""Serve necessariamente 1 Gruppo elettrogeno preferibilmente a gasolio e con una potenza di almeno 5 Kw, richiesto specificatamente per un fabbisogno avvertito,presso l'azienda agricola \""La Terra della Fate\"" della Frazione Pretare di Arquata del Tronto a gestione famigliare, perch\u00e9 \u00e8 mancata la corrente elettrica proprio in questi giorni ed anche adesso da come \u00e8 stato riferito,vi sono difficolt\u00e0 per l'uso dell'elettricit\u00e0, utile specialmente per la loro attivit\u00e0 lavorativa e per l'illuminazione ad essi necessaria per portare avanti la loro azienda e per delle altre attivit\u00e0 quotidiane per iniziativa di figli e titolare della stessa azienda e cio\u00e8 la Signora \""Santolini Santa\"". Per ogni possibile contatto diretto utile alla consegna e donazione del Gruppo elettrogeno, ci si pu\u00f2 rivolgere alla Titolare a ad uno dei figli impegnati nella gestione famigliare, dell'azienda agricola locale considerando i recapiti specificati nella pubblicazione della richiesta."", ""email"": ""mirkotrenta@libero.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3804323871""}","<pre><yamldata>tel: '3804323871'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1496,197705750,2016-12-27 14:56:50,2016-12-27 13:49:52,A #Pretare azienda agricola ha bisogno urgente di un gruppo elettrogeno,42.7978600,13.3004100,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Sisma Ottobre""]",,,"{""cosa"": ""Richiesta urgente di 1 Gruppo elettrogeno a gasolio, utile presso l'azienda agricola, di Pretare (frazione di Arquata del Tronto)"", ""data"": ""27/12/2016"", ""descrizione"": ""Serve urgentemente un gruppo elettrogeno, preferibilmente a gasolio e con una potenza di almeno 5 kw, per l'azienda agricola a gestione famigliare \""La Terra della Fate\"" di Pretare, frazione di Arquata del Tronto, perch\u00e9 spesso manca la corrente elettrica e ci\u00f2 impedisce lo svolgimento delle attivit\u00e0 in una situazione gi\u00e0 precaria. Chi pu\u00f2 dare una mano a reperire il gruppo elettrogeno pu\u00f2 contattare la signora Santa Santolini e i figli al numero telefonico o indirizzo email indicati. Grazie!"", ""email"": ""mirkotrenta@libero.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": ""42.7978600"", ""link"": """", ""lon"": ""13.3004100"", ""tel"": ""3804323871""}","<pre><yamldata>tel: '3804323871'
 email: mirkotrenta@libero.it
 cosa: 'Richiesta urgente di 1 Gruppo elettrogeno a gasolio, utile presso l''azienda agricola, di Pretare (frazione di Arquata del Tronto)'
-descrizione: 'Serve necessariamente 1 Gruppo elettrogeno preferibilmente a gasolio e con una potenza di almeno 5 Kw, richiesto specificatamente per un fabbisogno avvertito,presso l''azienda agricola ""La Terra della Fate"" della Frazione Pretare di Arquata del Tronto a gestione famigliare, perché è mancata la corrente elettrica proprio in questi giorni ed anche adesso da come è stato riferito,vi sono difficoltà per l''uso dell''elettricità, utile specialmente per la loro attività lavorativa e per l''illuminazione ad essi necessaria per portare avanti la loro azienda e per delle altre attività quotidiane per iniziativa di figli e titolare della stessa azienda e cioè la Signora ""Santolini Santa"". Per ogni possibile contatto diretto utile alla consegna e donazione del Gruppo elettrogeno, ci si può rivolgere alla Titolare a ad uno dei figli impegnati nella gestione famigliare, dell''azienda agricola locale considerando i recapiti specificati nella pubblicazione della richiesta.'
+descrizione: 'Serve urgentemente un gruppo elettrogeno, preferibilmente a gasolio e con una potenza di almeno 5 kw, per l''azienda agricola a gestione famigliare ""La Terra della Fate"" di Pretare, frazione di Arquata del Tronto, perché spesso manca la corrente elettrica e ciò impedisce lo svolgimento delle attività in una situazione già precaria. Chi può dare una mano a reperire il gruppo elettrogeno può contattare la signora Santa Santolini e i figli al numero telefonico o indirizzo email indicati. Grazie!'
 indirizzo: ''
-lat: ''
-lon: ''
+lat: '42.7978600'
+lon: '13.3004100'
 link: ''
 immagine: ''
 data: 27/12/2016
@@ -3590,6 +3590,17 @@ indirizzo: ''
 lat: ''
 lon: ''
 link: ''
+immagine: ''
+data: 31/10/2016
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/990,186269270,2016-10-31 14:36:58,2016-10-31 12:14:20,A #Norcia serve mangime per animali,42.7927706,13.0930812,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Sisma Ottobre"", ""Twitter""]",,,"{""cosa"": ""Mangime per animali"", ""data"": ""31/10/2016"", ""descrizione"": ""Serve MANGIME per gli animali: 200 polli 10 cavalli 10 mucche 30 pecore capre. Contatti tramite messaggio FB: https://www.facebook.com/groups/CoordinamentoComitatiAec/"", ""email"": """", ""immagine"": """", ""indirizzo"": ""Piazza San Benedetto, Casa Coletti, Norcia, PG, UMB, 06046, Italia"", ""lat"": ""42.7927706"", ""link"": ""https://www.facebook.com/photo.php?fbid=727424790745036&set=gm.551537291716332&type=3"", ""lon"": ""13.0930812"", ""tel"": """"}","<pre><yamldata>tel: ''
+email: ''
+cosa: 'Mangime per animali'
+descrizione: 'Serve MANGIME per gli animali: 200 polli 10 cavalli 10 mucche 30 pecore capre. Contatti tramite messaggio FB: https://www.facebook.com/groups/CoordinamentoComitatiAec/'
+indirizzo: 'Piazza San Benedetto, Casa Coletti, Norcia, PG, UMB, 06046, Italia'
+lat: '42.7927706'
+lon: '13.0930812'
+link: 'https://www.facebook.com/photo.php?fbid=727424790745036&set=gm.551537291716332&type=3'
 immagine: ''
 data: 31/10/2016
 </yamldata></pre>",open
