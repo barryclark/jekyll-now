@@ -1,20 +1,3 @@
----
-layout: post
-title: 1. Implement an algorithm to determine if a string has all unique characters
-date: 2016-12-26
----
-
-## Tests
-
-```markdown
-hasAllUniaqueChar("");
-hasAllUniaqueChar("aba");
-hasAllUniaqueChar("agrb");
-```
-
-### Solution
-
-```markdown
 import java.util.HashSet;
 import java.lang.System;
 
@@ -25,7 +8,8 @@ public class Solution1 {
 		if (s == "")
 			return false;
 		HashSet<Character> set = new HashSet<Character>();
-		for (int i = 0; i < s.length(); i++) {
+		for (int i = 0; i < s.length(); i++)
+		{
 		  if (set.contains(s.charAt(i)))
 		    return false;
 		  else
@@ -42,9 +26,3 @@ public class Solution1 {
 	}
 
 }
-
-```
-
-### Conclusion
-something could go here
-
