@@ -7,7 +7,10 @@ published: true
   
 
 
-# Pet Projects  
+# Pet Projects   
+* **Real-time Deep Learning Pedestrian Detection for CCTV** [(Demo website)](http://saildemo.unist.ac.kr:8080/) - *Thanh Nguyen* and *Rafael*   
+We designed an end-to-end pedestrian detection network based on Region Proposal Network from Faster R-CNN and VGG16.  
+![](/images/ped_demo2.png)
 * **Advanced Machine Learning Project: Learning to Attend Relevant Regions in Videos from Eye Fixations** [(Demo)](https://www.youtube.com/watch?v=HusCcKEoAdU) - *Thanh Nguyen* and *Dzung Nguyen*     
 We train a LSTM in videos conditioned on eye fixations to predict attention regions in each frame. 
 ![](/images/att_red_car.png)
