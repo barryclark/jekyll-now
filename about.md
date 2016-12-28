@@ -49,7 +49,7 @@ Lenovo Y510P
 
 ### Contact me
 
-rkalajian [at] gmail.com
+rkalajian [at] pawnsperspective.com
 
 ### [My Game Collection](https://boardgamegeek.com/collection/user/rkalajian?own=1&subtype=boardgame&ff=1)
 
