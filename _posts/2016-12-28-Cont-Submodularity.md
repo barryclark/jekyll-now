@@ -33,17 +33,18 @@ functions:
 * $\cal X_i = [a, b]$ is an interval: submodular continuous-function.
 
 The submodularity of all of them can be defined as:
->**Submodularity and submodular functions:**
->For all $(x,y)$ in the domain, it holds $$
->f(x) + f(y) \geq f(x\vee y) + f(x\wedge y)$$. This function $f$ is a submodular function.
+> **Submodularity and submodular functions:**
+> For all $(x,y)$ in the domain, it holds $$
+> f(x) + f(y) \geq f(x\vee y) + f(x\wedge y)$$. This function $f$ is a submodular function.
 
 It is well-known that for set-functions, submodularity is equivalent to the diminishing
 returns (**DR**) property. However, this does not hold when generalized to generic
 functions defined over $\cal X$:
-> **DR property & DR-submodular functions**: Let $\chi_i$ be the $i^\text{th}$ characteristic vector. $f$ satisfies the DR property if  $\forall a\leq b\in \cal X$, for any coordinate $i$, $\forall k\in \mathbb{R}_+$ s.t. $k\chi_i+a$ and $k\chi_i+b$ are still in $\cal X$, it holds
-$$f(k\chi_i+a) - f(a) \geq f(k\chi_i+b) - f(b)$$.   
-This function $f$ is called a
-DR-submodular function.
+> **DR property & DR-submodular functions**: Let $\chi_i$ be the $i^\text{th}$ characteristic vector.
+> $f$ satisfies the DR property if  $\forall a\leq b\in \cal X$, for any coordinate $i$, $\forall k\in \mathbb{R}_+$ s.t. $k\chi_i+a$ and $k\chi_i+b$
+> are still in $\cal X$, it holds
+> $$f(k\chi_i+a) - f(a) \geq f(k\chi_i+b) - f(b)$$.   
+> This function $f$ is called a DR-submodular function.
 
 
 One immediate observation is that $\nabla f(a)\geq \nabla f(b)$ (if $f$ is differentiable), so the gradient of a differentiable DR-submodualr function is an _antitone_ mapping.
@@ -63,8 +64,9 @@ These questions will be answered in the following.
 
 
 First of all, we give a positive answer to question Q2 by proposing the _weak DR_ property:
-> **weak DR:** $f$ satisfies the weak DR property if  $\forall a\leq b\in \cal X$, for any coordinate $i\in \\{i'| a_{i'} = b_{i'} \\}$, $\forall k\in \mathbb{R}_+$ s.t. $k\chi_i+a$ and $k\chi_i+b$ are still in $\cal X$, it holds
-$$f(k\chi_i+a) - f(a) \geq f(k\chi_i+b) - f(b)$$.
+> **weak DR:** $f$ satisfies the weak DR property if  $\forall a\leq b\in \cal X$, for any
+> coordinate $i\in \\{i'| a_{i'} = b_{i'} \\}$, $\forall k\in \mathbb{R}_+$ s.t. $k\chi_i+a$ and $k\chi_i+b$ are still in $\cal X$, it holds
+> $$f(k\chi_i+a) - f(a) \geq f(k\chi_i+b) - f(b)$$.
 
 and show that
 > **Lemma**: For a generic function $f$,  weak DR $\Leftrightarrow$ submodularity.
@@ -88,7 +90,7 @@ submodularity of a continuous-function.
 <img src="/images/cont-submodularity/table1.png" style="size:120%"/>
 ![Table 2](/images/cont-submodularity/table2.png)
 
-For question Q3, please see the following. 
+For question Q3, please see the following.
 
 ## What we can say about optimizing submodular continuous-functions so far?
 
