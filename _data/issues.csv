@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1500,197857723,2016-12-28 14:01:07,2016-12-28 14:00:43,Raccolta fondi per la ricostruzione di #Maltignano di #Cascia,,,"[""Accettato"", ""Bollettino"", ""Raccolte Fondi"", ""Sisma Ottobre"", ""Twitter""]",,,"{""bic"": """", ""causale"": ""Raccolta Fondi per i Terremotati"", ""chi"": ""Raccolta fondi per la ricostruzione di #Maltignano di #Cascia"", ""data"": ""28/12/2016"", ""descrizione"": ""Raccolta fondi promossa dalla Pro Loco di Maltignano di Cascia per la ricostruzione del paese gravemente colpito dal sisma del 30 ottobre."", ""email"": ""prolocomaltignanodicascia@gmail.com"", ""iban"": ""It28v076010300000004869552"", ""intestazione"": ""Proloco Maltignano Di Cascia"", ""link"": ""https://twitter.com/maltignano"", ""postale"": ""48695522""}","<pre><yamldata>chi: 'Raccolta fondi per la ricostruzione di #Maltignano di #Cascia'
+descrizione: 'Raccolta fondi promossa dalla Pro Loco di Maltignano di Cascia per la ricostruzione del paese gravemente colpito dal sisma del 30 ottobre.'
+intestazione: 'Proloco Maltignano Di Cascia'
+iban: It28v076010300000004869552
+bic: ''
+postale: '48695522'
+causale: 'Raccolta Fondi per i Terremotati'
+link: 'https://twitter.com/maltignano'
+email: prolocomaltignanodicascia@gmail.com
+data: 28/12/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1499,197766650,2016-12-28 11:26:51,2016-12-27 22:31:59,"#RinascitaCastelluccio, raccolta fondi online per #Castelluccio di #Norcia",,,"[""Accettato"", ""Bollettino"", ""Form"", ""Raccolte Fondi"", ""Sisma Ottobre""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""#RinascitaCastelluccio, raccolta fondi online per #Castelluccio di #Norcia"", ""data"": ""27/12/2016"", ""descrizione"": ""A fine ottobre una scossa di terremoto ha lesionato gravemente il borgo di Castelluccio, colpendo duramente le attivit\u00e0 produttive e mettendole letteralmente in ginocchio. Il Ministero delle Politiche Agricole, Regione Umbria e Perugina hanno quindi lanciato una campagna di raccolta fondi online per far rifiorire la piana di Castelluccio, aiutare concretamente gli abitanti e gli operatori economici per rilanciare l\u2019economia del territorio."", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""https://www.rinascitacastelluccio.it/"", ""postale"": """"}","<pre><yamldata>chi: '#RinascitaCastelluccio, raccolta fondi online per #Castelluccio di #Norcia'
 descrizione: 'A fine ottobre una scossa di terremoto ha lesionato gravemente il borgo di Castelluccio, colpendo duramente le attività produttive e mettendole letteralmente in ginocchio. Il Ministero delle Politiche Agricole, Regione Umbria e Perugina hanno quindi lanciato una campagna di raccolta fondi online per far rifiorire la piana di Castelluccio, aiutare concretamente gli abitanti e gli operatori economici per rilanciare l’economia del territorio.'
 intestazione: ''
@@ -5310,18 +5321,6 @@ link: 'http://www.piccolimaestri.org/piccoli-maestri-per-amatrice/'
 data: 02/10/2016
 </yamldata></pre>
 ",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/737,180502759,2016-10-11 21:32:10,2016-10-02 08:54:57,#Amatricianasolidale a Lissone (MB) per il Comune di #Acquasanta (AP) domenica 9 ottobre 2016,,,"[""Accettato"", ""Bollettino"", ""Facebook"", ""Raccolte Fondi""]",Milestone(number=12),,"{""bic"": """", ""causale"": """", ""chi"": ""#Amatricianasolidale a Lissone (MB) per il Comune di #Acquasanta (AP) domenica 9 ottobre 2016"", ""data"": ""02/10/2016"", ""descrizione"": ""Insieme per sostenere il comune di #Acquasanta in provincia di Ascoli Piceno. Il sindaco di Acquasanta ha comunicato la necessit\u00e0 di garantire l'attivit\u00e0 didattica per le scuole dell'infanzia e primaria crollate ed inagibili. Ora i bambini sono in strutture di emergenza. Pranziamo insieme! Un gesto semplice e spontaneo pu\u00f2 sostenere e trasmettere vicinanza. Prenotazioni entro il 7 ottobre 2016 (tel. 039 7397257)."", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1777339639200286/"", ""postale"": """"}","<pre><yamldata>chi: '#Amatricianasolidale a Lissone (MB) per il Comune di #Acquasanta (AP) domenica 9 ottobre 2016'
-descrizione: 'Insieme per sostenere il comune di #Acquasanta in provincia di Ascoli Piceno. Il sindaco di Acquasanta ha comunicato la necessità di garantire l''attività didattica per le scuole dell''infanzia e primaria crollate ed inagibili. Ora i bambini sono in strutture di emergenza. Pranziamo insieme! Un gesto semplice e spontaneo può sostenere e trasmettere vicinanza. Prenotazioni entro il 7 ottobre 2016 (tel. 039 7397257).'
-intestazione: ''
-iban: ''
-bic: ''
-postale: ''
-causale: ''
-link: 'https://www.facebook.com/groups/1758670357733881/permalink/1777339639200286/'
-email: ''
-data: 02/10/2016
-</yamldata></pre>
-",closed
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/737,180502759,2016-10-11 21:32:10,2016-10-02 08:54:57,#Amatricianasolidale a Lissone (MB) per il Comune di #Acquasanta (AP) domenica 9 ottobre 2016,,,"[""Accettato"", ""Bollettino"", ""Facebook"", ""Raccolte Fondi""]",Milestone(number=12),,"{""bic"": """", ""causale"": """", ""chi"": ""#Amatricianasolidale a Lissone (MB) per il Comune di #Acquasanta (AP) domenica 9 ottobre 2016"", ""data"": ""02/10/2016"", ""descrizione"": ""Insieme per sostenere il comune di #Acquasanta in provincia di Ascoli Piceno. Il sindaco di Acquasanta ha comunicato la necessit\u00e0 di garantire l'attivit\u00e0 didattica per le scuole dell'infanzia e primaria crollate ed inagibili. Ora i bambini sono in strutture di emergenza. Pranziamo insieme! Un gesto semplice e spontaneo pu\u00f2 sostenere e trasmettere vicinanza. Prenotazioni entro il 7 ottobre 2016 (tel. 039 7397257)."", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1777339639200286/"", ""postale"": """"}","<pre><yamldata>chi: '#Amatricianasolidale a Lissone (MB) per il Comune di #Acquasanta (AP) domenica 9 ottobre 2016'
 descrizione: 'Insieme per sostenere il comune di #Acquasanta in provincia di Ascoli Piceno. Il sindaco di Acquasanta ha comunicato la necessità di garantire l''attività didattica per le scuole dell''infanzia e primaria crollate ed inagibili. Ora i bambini sono in strutture di emergenza. Pranziamo insieme! Un gesto semplice e spontaneo può sostenere e trasmettere vicinanza. Prenotazioni entro il 7 ottobre 2016 (tel. 039 7397257).'
 intestazione: ''
