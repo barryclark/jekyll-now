@@ -7,9 +7,29 @@ Membase를 사용하면서 발생한 문제점을 분석하고, 개선을 진행
 ----
 
 -	Membase Cluster
+
 	-	DB Server 01 (Membase)
 	-	DB Server 02 (Membase)
+	-	각 서버 Membase 설정
+
+		-	Node
+
+			-	4개
+			-	노드당 Replica 2개
+			-	노드당 할당 메모리 2GB
+
+		-	Bucket
+
+			-	1개
+			-	메모리 8GB(노드당 메모리 * 노드 수)
+
+	-	각 서버 스팩
+
+		-	RAM 8GB
+		-	HDD 30GB
+
 -	WEB Server
+
 	-	Spring Boot Web Application
 		-	SpyMemCached
 
@@ -124,6 +144,10 @@ When a node is removed from the cluster during failover, it's possible for opera
 
 ---
 
+[참고 : Couchbase Docs](http://docs.couchbase.com/admin/admin)
+
+[참고 : Couchbase Administrator Guide](http://docs.couchbase.com/couchbase-manual-2.5)
+
 [참고 : Bucket이란? : hans story](http://goldfing.blogspot.kr/2013/03/couchbase-server-20-bucket.html)
 
 [참고 : 카우치베이스(Couchbase) 서버-#6 아키텍쳐 구조 살펴보기 : 조대협의 블로그](http://hamait.tistory.com/198)
@@ -180,15 +204,47 @@ When a node is removed from the cluster during failover, it's possible for opera
 
 -	재배포 통해 어플리케이션 장애 복구
 
+<br>
+
+> **저는 여기까지 조치된 이후 해당 장애에 대한 분석 및 개선을 인계 받았습니다**
+
+<br>
+
 ### 문제 분석
 
 **1. 회원 로그인 문제 발생**
 
--	특정 서버가 `Out Of Memory` 문제를 일으키며, 로그인 문제 발생
+특정 서버가 `Out Of Memory` 문제를 일으키며, 로그인 문제 발생
 
-```
-`net.spy.memcached.OperationTimeoutException: Timeout waiting for value`
-```
+-	어플리케이션 상 로그
+
+	```java
+	net.spy.memcached.OperationTimeoutException: Timeout waiting for value
+	```
+
+-	Membase 로그
+
+	```
+	Hard Out Of Memory. Bucket "***" on node ***.***.***.*** is full. All memory allocated to this bucket is used for metadata.
+	```
+
+어플리케이션 로그를 보고 처음에는 `Auto FailOver`로 인한 Timeout을 생각했으나, `Membase Console`에서 확인하였을 때 Membase의 노드는 FailOver되어있지 않았습니다. 서버 로그를 확인해보니 발생한 특정 서버의 문제는 `Out Of Memory`!
+
+'그동안 문제가 없었고, 큰 트래픽의 변화도 없었는데 어째서?'라고 생각하고 CouchBase(Membase)의 처음부터 다시 생각을 해보았습니다.
+
+일단 하루 데이터 수치를 기준으로 최소 필요 메모리양을 계산해보았습니다.
+
+`(키크기(60바이트) + 메타 데이터(60바이트))*(332K)/ 4(노드수) * 3 (복제본수)` = `약 30MB`
+
+CouchBase(Membase)가 가지고 있어야 하는 데이터는 많이 여유롭습니다. 계산 필요없이 Membase Console로만 보아도 CouchBase가 가지고 있는 메모리는 적다는 것을 쉽게 알 수 있습니다.
+
+![램 사용량](/images/2016/2016_12_23_COUCHBASE/couchbaseuseram.png)
+
+그렇다면 저장되는 데이터로 인한 `Out Of Memory`일 가능성이 매우 크다고 생각됩니다.
+
+다시 로그를 살펴보며, 문제의 현상을 찾게 되었습니다.
+
+![현상](/images/2016/2016_12_23_COUCHBASE/memorystatus.png)
 
 **2. 특정 사용자의 로그아웃 오류**
 
