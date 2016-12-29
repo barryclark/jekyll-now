@@ -11,7 +11,9 @@ QEMUでx86上でMIPSバイナリを実行できるようになったので、ク
 - refer [this site](http://wiki.prplfoundation.org/wiki/MIPS_QEMU_MIPS64R6)
 - use [CodeScape MIPS SDK](https://community.imgtec.com/developers/mips/tools/codescape-mips-sdk/download-codescape-mips-sdk-essentials/)
 - we use "SDK Installers v1.4 - Linux 64bit"
+
 <!--break-->
+
 ```bash
 $ wget http://codescape-mips-sdk.imgtec.com/installer/essentials/release/CodescapeMIPSSDK-1.4.1.07/CodescapeMIPSSDK-1.4.1.07-linux-x64-installer.run
 $ chmod +x CodescapeMIPSSDK-1.4.1.07-linux-x64-installer.run
