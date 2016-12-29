@@ -84,3 +84,15 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+
+t:
+  en:
+    home: "Home"
+    about: "About"
+    written_on: "Written on"
+    read_more: "Read more"
+  pt:
+    home: "Início"
+    about: "Sobre"
+    written_on: "Escrito em"
+    read_more: "Ler mais"
