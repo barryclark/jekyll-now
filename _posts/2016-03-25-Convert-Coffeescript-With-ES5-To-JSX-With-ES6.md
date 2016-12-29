@@ -1,6 +1,7 @@
 ---
 layout: post
 title: How to migrate from Coffeescript + JSX => ES6 + JSX
+comments: true
 ---
 
 I maintained an SPA with relatively old frontend. The main trouble was coffeescript - a lot of new things built by ES6 standard and tying process can be a nightmare.

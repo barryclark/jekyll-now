@@ -1,6 +1,7 @@
 ---
 layout: post
 title: How I migrated SPA backend codebase from Rails to Phoenix
+comments: true
 ---
 
 Some time ago I developed a pretty simple SPA with Rails on backend & React.js on the front. It was pretty simple, but (surprisingly for me!) started to grow like on steroids. Rails started to be a bottleneck since one of the customer requirements was not just making application fast. He wanted it to be instant.
