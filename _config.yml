@@ -22,12 +22,12 @@ paginate: 8
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email: rkalajian@gmail.com
+  email: rkalajian@pawnsperspective.com
   facebook: pawnsperspective
   flickr:
-  github: rkalajian
-  instagram: r_kalajian
-  linkedin: rkalajian
+  github:
+  instagram: pawnsperspective
+  linkedin: company/11005917
   periscope: rkalajian
   pinterest: rkalajian
   rss: rss
