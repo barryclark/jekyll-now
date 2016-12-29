@@ -78,6 +78,7 @@ ACK dediğim gibi JMS içerisinde çok önemli bir role sahiptir. ACK pattern, J
 
 #### Redelivery Approach
 JMS bir mesajı karşı tarafa gönderemedi, ancak göndereceğini garanti ediyor bize. Ancak biz bazı durumlarda bunu istemeyebiliriz. Az önce de ifade ettiğim gibi mesela 3.52TL kuru iletilemedi ancak JMS tekrar göndermeye çalışacak. Bu durum bizim açımızdan iyi mi kötü mü?
+
 * **Tekrar gönderdiği durum :** Mesaj kaybolmadı evet bu güzel birşey. Ancak kur değişmiş olabilir, sn'ler içerisinde bazı kur'lar defalarca update alabiliyor. Bu durumda stale bir kur bilgisi karşı tarafda işlenmiş olacaktır.
 * **Tekrar gönderilmediği durum :** Mesaj kayboldu :)
 
