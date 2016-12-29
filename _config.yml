@@ -28,13 +28,13 @@ footer-links:
   github:
   instagram: pawnsperspective
   linkedin: company/11005917
-  periscope: rkalajian
-  pinterest: rkalajian
+  periscope:
+  pinterest:
   rss: rss
   twitch: rkalajian
   twitter: perspectivepawn
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
-  youtube: user/rkalajian
+  youtube: channel/UCn0oN0SslDDS5Od5usgJ9fw
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 # You can find your shortname on the Settings page of your Disqus account
