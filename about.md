@@ -9,4 +9,4 @@ Thanh T. Nguyen
 
 
 ## Research interests  
-Deep Neural Network, Bayesian Inference, Information Theory, Randomness and Structuredness. 
+I work at the intersection between Deep Neural Network and Probabilistic Models 
