@@ -5,6 +5,7 @@ published: true
 ---
 I maintain a list of interesting AI/ML blogs, and scientist and researcher profiles so that I can keep in touch with research trends in AIML and keep myself motivated and informative for research.  
 
+* [Prof. Judea Pearl](http://bayes.cs.ucla.edu/stat_bio.html) Famous for Bayesian networks and Causality for AI.  
 * [Dustin Tran](http://dustintran.com/): a Ph.D student in Computer Science at Columbia who works in Bayesian statisics. 
 * [Yarin Gal](http://mlg.eng.cam.ac.uk/yarin/index.html): He works in Bayesian Deep Learning and  approximate inference which are closely related to my research. 
 * [Diederik P. Kingma](http://dpkingma.com/): He works in variational methods and Bayesian statistics for Deep Learning and have published various papers to NIPS. ICML and ICLR
