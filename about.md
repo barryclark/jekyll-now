@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+A data science blog for projects, write-ups, analysis, and miscellany.
 
 ### More Information
 
