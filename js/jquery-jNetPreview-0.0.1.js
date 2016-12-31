@@ -66,6 +66,7 @@ $(document).ready(function(){
 				var type = attrs[0].trim();
 				var name = attrs[1];
 				var info = attrs[2];
+				var option = attrs[3];
 
 				if (depth > prevdepth) {
 					/* enter children */
@@ -91,6 +92,18 @@ $(document).ready(function(){
 					left: left + "px"
 				};
 				$(settag).css(setcss);
+				
+				if (option) {
+					setimg = "<img"
+						+ " src=\"" + getimgurl_option(option) + "\""
+						+ " alt=\"" + name + "\""  
+						+ " name=\"" + name + "("+ info + ")" + "\""  
+						+ " />";
+					$(canvas).append(setimg);
+					settag = canvas.lastChild;
+					$(settag).css(setcss);
+				}
+				
 				$(settag).mouseover(
 				function (e) {
 					var setcss = {
@@ -135,12 +148,31 @@ $(document).ready(function(){
 			var tail = top + size_h;
 			$(canvas).css("height", tail + "px");
 
+			function getimgurl_option(type){
+				var url = "./icon_default.png";
+				switch (type) {
+				case "wire":
+					url = "./attr_wired.png";
+					break;
+				case "storage":
+					url = "./attr_storage.png";
+					break;
+				case "printer":
+					url = "./attr_printer.png";
+					break;
+				case "func":
+					url = "./attr_function.png";
+					break;
+				}
+				return imgdir + url;
+			}
+
 			function getimgurl(type){
 				var url = "./icon_default.png";
 				switch (type) {
 				case "ni":
 					url = "./icon_internet.png";
-					break;						
+					break;
 				case "nw":
 					url = "./icon_wifi.png";
 					break;
@@ -155,13 +187,13 @@ $(document).ready(function(){
 					break;
 				case "ps":
 					url = "./icon_default.png";
-					break;						
+					break;
 				case "pt":
 					url = "./icon_tablet.png";
 					break;
 				case "pa":
 					url = "./icon_android.png";
-					break;						
+					break;
 				case "tv":
 					url = "./icon_tv.png";
 					break;
