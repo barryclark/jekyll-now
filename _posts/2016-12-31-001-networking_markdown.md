@@ -28,4 +28,4 @@ ns,xinolinx-bf1,192.168.0.3
  pd,master,dhcp
  pd,linux,dhcp
 </div>
-<div id="pclink" background-color="#EEE"></div>
+<div id="pclink"></div>
