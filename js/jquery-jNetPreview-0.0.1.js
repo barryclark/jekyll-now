@@ -90,7 +90,7 @@ $(document).ready(function(){
 					left: left + "px"
 				};
 				$(settag).css(setcss);
-				$(settag).hover(
+				$(settag).mouseover(
 				function (e) {
 					var setcss = {
 						color: "#AAC",
@@ -108,11 +108,21 @@ $(document).ready(function(){
 					$(comment).empty();
 					$(comment).append(e.target.name);
 					$(comment).show();
-				},
+				});
+				
+				$(settag).mouseout(
 				function (e) {
 					$(comment).hide();
-				}
-				);
+				});
+				
+				$(settag).mousemove(
+				function (e) {
+					var setcss = {
+						top: e.clientY + "px",
+						left: e.clientX + "px",
+					};
+					$(comment).css(setcss);
+				});	
 
 				left += size_w;
 				if (left > maxleft) {
