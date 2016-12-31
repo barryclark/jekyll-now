@@ -136,7 +136,7 @@ $(document).ready(function(){
 			$(canvas).css("height", tail + "px");
 
 			function getimgurl(type){
-				var url = "./icon_desktop.png";
+				var url = "./icon_default.png";
 				switch (type) {
 				case "nw":
 					url = "./icon_wifi.png";
@@ -150,9 +150,15 @@ $(document).ready(function(){
 				case "pd":
 					url = "./icon_desktop.png";
 					break;
+				case "ps":
+					url = "./icon_default.png";
+					break;						
 				case "pt":
 					url = "./icon_tablet.png";
 					break;
+				case "pa":
+					url = "./icon_android.png";
+					break;						
 				case "tv":
 					url = "./icon_tv.png";
 					break;
