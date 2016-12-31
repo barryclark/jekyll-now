@@ -122,6 +122,7 @@ $(document).ready(function(){
 			}
 			
 			var tail = top + size_h;
+			$(canvas).css("height", tail + "px");
 
 			function getimgurl(type){
 				var url = "./icon_desktop.png";
