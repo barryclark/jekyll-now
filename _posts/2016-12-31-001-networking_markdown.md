@@ -16,7 +16,7 @@ nw,xinolinx-sub,192.168.0.1
  pn,nec_note,dhcp
  pn,macbook,dhcp
  pd,subpc,dhcp
- pt,kindle,dhcp
+ pa,kindle,dhcp
 nw,xinolinx,192.168.0.2
  pd,imac,192.168.0.101
  pt,iphone6s(1),dhcp
@@ -26,6 +26,6 @@ nw,xinolinx,192.168.0.2
  gm,wii,dhcp
 ns,xinolinx-bf1,192.168.0.3
  pd,masterpc,192.168.0.103
- pd,linux,192.168.0.102
+ ps,linux,192.168.0.102
 </div>
 <div id="pclink"></div>
