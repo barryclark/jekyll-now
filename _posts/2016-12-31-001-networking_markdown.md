@@ -12,20 +12,21 @@ title: JavaScriptでcoding納め（ネットワーク表示用Markdown）
 <!--break-->
 
 <div id="pclink-info">
-nw,xinolinx-sub,192.168.0.1
- pn,nec_note,dhcp
- pn,macbook,dhcp
- pd,subpc,dhcp
- pa,kindle,dhcp
-nw,xinolinx,192.168.0.2
- pd,imac,192.168.0.101
- pt,iphone6s(1),dhcp
- pt,iphone6s(2),dhcp
- tv,bravia,dhcp
- gm,ps3,dhcp
- gm,wii,dhcp
-ns,xinolinx-bf1,192.168.0.3
- pd,masterpc,192.168.0.103
- ps,linux,192.168.0.102
+ni,gateway,internet
+ nw,xinolinx-sub,192.168.0.1
+  pn,nec_note,dhcp
+  pt,iphone6s(1),dhcp
+  pa,kindle,dhcp
+ nw,xinolinx,192.168.0.2
+  pd,imac,192.168.0.101
+  pn,macbook,dhcp
+  pd,subpc,dhcp
+  pt,iphone6s(2),dhcp
+  tv,bravia,dhcp
+  gm,ps3,dhcp
+  gm,wii,dhcp
+ ns,xinolinx-bf1,192.168.0.3
+  pd,masterpc,192.168.0.103
+  ps,linux,192.168.0.102
 </div>
 <div id="pclink"></div>

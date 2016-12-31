@@ -138,6 +138,9 @@ $(document).ready(function(){
 			function getimgurl(type){
 				var url = "./icon_default.png";
 				switch (type) {
+				case "ni":
+					url = "./icon_internet.png";
+					break;						
 				case "nw":
 					url = "./icon_wifi.png";
 					break;
