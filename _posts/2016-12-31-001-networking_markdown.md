@@ -13,19 +13,19 @@ title: 自宅のネットワークをメモする意味でMarkdown
 
 <div id="pclink-info">
 nw,xinolinx-sub,192.168.0.1
- pn,snpc,dhcp
+ pn,nec_note,dhcp
  pn,macbook,dhcp
- pd,mother,dhcp
-nw,xinolinx,192.168.0.2
- pd,imac,dhcp
- pt,iphone1,dhcp
- pt,iphone2,dhcp
+ pd,subpc,dhcp
  pt,kindle,dhcp
+nw,xinolinx,192.168.0.2
+ pd,imac,192.168.0.101
+ pt,iphone6s(1),dhcp
+ pt,iphone6s(2),dhcp
  tv,bravia,dhcp
  gm,ps3,dhcp
  gm,wii,dhcp
 ns,xinolinx-bf1,192.168.0.3
- pd,master,dhcp
- pd,linux,dhcp
+ pd,masterpc,192.168.0.103
+ pd,linux,192.168.0.102
 </div>
 <div id="pclink"></div>
