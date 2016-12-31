@@ -13,6 +13,7 @@
 $(document).ready(function(){
 
 	var imgdir = "https://xinolinx.github.io/images/icon/";
+	var pointer_offset = 20;
 
 	function draw_pc_link (list_pclink, list_infos){
 		if (list_pclink.length == 0) {
@@ -95,7 +96,7 @@ $(document).ready(function(){
 					var setcss = {
 						color: "#AAC",
 						position: "fixed",
-						top: e.clientY + "px",
+						top: (pointer_offset + e.clientY) + "px",
 						left: e.clientX + "px",
 						border: "1px solid #EEE"
 					};
@@ -118,7 +119,7 @@ $(document).ready(function(){
 				$(settag).mousemove(
 				function (e) {
 					var setcss = {
-						top: e.clientY + "px",
+						top: (pointer_offset + e.clientY) + "px",
 						left: e.clientX + "px",
 					};
 					$(comment).css(setcss);
