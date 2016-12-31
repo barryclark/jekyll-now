@@ -63,7 +63,7 @@ $(document).ready(function(){
 				if (depthinfo) {
 					depth = depthinfo.length;
 				}
-				var type = attrs[0].replace(" ", "");
+				var type = attrs[0].trim();
 				var name = attrs[1];
 				var info = attrs[2];
 
