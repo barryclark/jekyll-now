@@ -13,6 +13,7 @@
 $(document).ready(function(){
 
 	var imgdir = "https://xinolinx.github.io/images/icon/";
+	var pointer_offset = 20;
 
 	function draw_pc_link (list_pclink, list_infos){
 		if (list_pclink.length == 0) {
@@ -90,12 +91,12 @@ $(document).ready(function(){
 					left: left + "px"
 				};
 				$(settag).css(setcss);
-				$(settag).hover(
+				$(settag).mouseover(
 				function (e) {
 					var setcss = {
 						color: "#AAC",
 						position: "fixed",
-						top: e.clientY + "px",
+						top: (pointer_offset + e.clientY) + "px",
 						left: e.clientX + "px",
 						border: "1px solid #EEE"
 					};
@@ -108,11 +109,21 @@ $(document).ready(function(){
 					$(comment).empty();
 					$(comment).append(e.target.name);
 					$(comment).show();
-				},
+				});
+				
+				$(settag).mouseout(
 				function (e) {
 					$(comment).hide();
-				}
-				);
+				});
+				
+				$(settag).mousemove(
+				function (e) {
+					var setcss = {
+						top: (pointer_offset + e.clientY) + "px",
+						left: e.clientX + "px",
+					};
+					$(comment).css(setcss);
+				});	
 
 				left += size_w;
 				if (left > maxleft) {
@@ -122,9 +133,10 @@ $(document).ready(function(){
 			}
 			
 			var tail = top + size_h;
+			$(canvas).css("height", tail + "px");
 
 			function getimgurl(type){
-				var url = "./icon_desktop.png";
+				var url = "./icon_default.png";
 				switch (type) {
 				case "nw":
 					url = "./icon_wifi.png";
@@ -138,9 +150,15 @@ $(document).ready(function(){
 				case "pd":
 					url = "./icon_desktop.png";
 					break;
+				case "ps":
+					url = "./icon_default.png";
+					break;						
 				case "pt":
 					url = "./icon_tablet.png";
 					break;
+				case "pa":
+					url = "./icon_android.png";
+					break;						
 				case "tv":
 					url = "./icon_tv.png";
 					break;
