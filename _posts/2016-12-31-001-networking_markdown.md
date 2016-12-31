@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 自宅のネットワークをメモする意味でMarkdown
+title: JavaScriptでcoding納め（ネットワーク表示用Markdown）
 ---
 
 自宅のネットワーク構成とかWi-Fiどの電波拾うと混んでないのかなどなどをたまに聞かれるので、 [ICON HOIHOIさま](http://iconhoihoi.oops.jp/) のiconを使ってテキストを書くだけでネットワーク構成っぽいものを表示してくれるjsを組んでみました。本当は線とか冗長構成とかも書きたいけど、まぁ次回以降のアップデートでやるかもしれません。
