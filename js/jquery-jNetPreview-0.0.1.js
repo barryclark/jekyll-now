@@ -154,6 +154,9 @@ $(document).ready(function(){
 				case "wire":
 					url = "./attr_wired.png";
 					break;
+				case "dualwire":
+					url = "./attr_dualwired.png";
+					break;
 				case "storage":
 					url = "./attr_storage.png";
 					break;
