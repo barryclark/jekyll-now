@@ -160,6 +160,12 @@ $(document).ready(function(){
 				case "scan":
 					url = "./attr_scanner.png";
 					break;
+				case "wifi":
+					url = "./attr_wifi.png";
+					break;
+				case "game":
+					url = "./attr_gaming.png";
+					break;
 				case "storage":
 					url = "./attr_storage.png";
 					break;

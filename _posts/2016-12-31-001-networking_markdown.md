@@ -16,20 +16,20 @@ title: JavaScriptでcoding納め（ネットワーク表示用Markdown）
 
 <div id="pclink-info">
 ni,gateway,internet
- nw,xinolinx-sub,192.168.0.1,func
-  pn,nec_note,dhcp
-  pt,iphone6s(1),dhcp
-  pa,kindle,dhcp
+ nw,xinolinx-sub,192.168.0.1,wifi
+  pn,nec_note,dhcp,none
+  pt,iphone6s(1),dhcp,none
+  pa,kindle,dhcp,none
   op,canon6130,dhcp,scan
- nw,xinolinx,192.168.0.2
+ nw,xinolinx,192.168.0.2,wifi
   pd,imac,192.168.0.101,printer
   pn,macbook,dhcp
-  pd,subpc,dhcp
-  pt,iphone6s(2),dhcp
-  tv,bravia,dhcp
-  gm,ps3,dhcp
-  gm,wii,dhcp
- ns,xinolinx-bf1,192.168.0.3
+  pd,subpc,dhcp,game
+  pt,iphone6s(2),dhcp,none
+  tv,bravia,dhcp,none
+  gm,ps3,dhcp,none
+  gm,wii,dhcp,none
+ ns,xinolinx-bf1,192.168.0.3,none
   pd,masterpc,192.168.0.103,wire
   ps,linux,192.168.0.102,dualwire
 </div>
