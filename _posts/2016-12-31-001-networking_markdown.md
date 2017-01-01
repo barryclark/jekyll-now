@@ -28,6 +28,6 @@ ni,gateway,internet
   gm,wii,dhcp
  ns,xinolinx-bf1,192.168.0.3
   pd,masterpc,192.168.0.103,wire
-  ps,linux,192.168.0.102,wire
+  ps,linux,192.168.0.102,dualwire
 </div>
 <div id="pclink"></div>
