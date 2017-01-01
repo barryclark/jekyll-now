@@ -3,7 +3,10 @@ layout: post
 title: JavaScriptでcoding納め（ネットワーク表示用Markdown）
 ---
 
-自宅のネットワーク構成とかWi-Fiどの電波拾うと混んでないのかなどなどをたまに聞かれるので、 [ICON HOIHOIさま](http://iconhoihoi.oops.jp/) のiconを使ってテキストを書くだけでネットワーク構成っぽいものを表示してくれるjsを組んでみました。本当は線とか冗長構成とかも書きたいけど、まぁ次回以降のアップデートでやるかもしれません。
+自宅のネットワーク構成とかWi-Fiどの電波拾うと混んでないのかなどなどをたまに聞かれるので、フリー素材の画像を利用しましてテキストからネットワーク構成図を生成してくれるjsを組んでみました（本当は線とか冗長構成とかも書きたいけど、まぁ次回以降のアップデートでやるかもしれません）。
+
+- http://iconhoihoi.oops.jp/
+- http://findicons.com/pack/1035/human_o2
 
 ~~ちなみに31日になって無線LAN組み替えたりしました。はてさて。~~
 
@@ -28,6 +31,6 @@ ni,gateway,internet
   gm,wii,dhcp
  ns,xinolinx-bf1,192.168.0.3
   pd,masterpc,192.168.0.103,wire
-  ps,linux,192.168.0.102,wire
+  ps,linux,192.168.0.102,dualwire
 </div>
 <div id="pclink"></div>
