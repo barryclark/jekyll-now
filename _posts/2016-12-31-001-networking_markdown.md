@@ -18,13 +18,13 @@ title: JavaScriptでcoding納め（ネットワーク表示用Markdown）
 ni,gateway,internet
  nw,xinolinx-sub,192.168.0.1,wifi
   pn,nec_note,dhcp,none
+  pd,subpc,dhcp,game
   pt,iphone6s(1),dhcp,none
   pa,kindle,dhcp,none
   op,canon6130,dhcp,scan
  nw,xinolinx,192.168.0.2,wifi
   pd,imac,192.168.0.101,printer
   pn,macbook,dhcp
-  pd,subpc,dhcp,game
   pt,iphone6s(2),dhcp,none
   tv,bravia,dhcp,none
   gm,ps3,dhcp,none
