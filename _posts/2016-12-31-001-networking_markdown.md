@@ -17,7 +17,7 @@ ni,gateway,internet
   pn,nec_note,dhcp
   pt,iphone6s(1),dhcp
   pa,kindle,dhcp
-  op,canon6130,dhcp
+  op,canon6130,dhcp,scan
  nw,xinolinx,192.168.0.2
   pd,imac,192.168.0.101,printer
   pn,macbook,dhcp

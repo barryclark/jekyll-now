@@ -149,13 +149,16 @@ $(document).ready(function(){
 			$(canvas).css("height", tail + "px");
 
 			function getimgurl_option(type){
-				var url = "./icon_default.png";
+				var url = "./attr_default.png";
 				switch (type) {
 				case "wire":
 					url = "./attr_wired.png";
 					break;
 				case "dualwire":
 					url = "./attr_dualwired.png";
+					break;
+				case "scan":
+					url = "./attr_scanner.png";
 					break;
 				case "storage":
 					url = "./attr_storage.png";
