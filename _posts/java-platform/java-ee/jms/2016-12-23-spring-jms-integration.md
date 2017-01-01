@@ -10,7 +10,7 @@ Merhaba arkadaslar, bu yazımızda Spring ile JMS kullanımına bakacağız.
 
 ### JMSTemplate
 Spring ekosisteminde ki birçok entegrasyondan biri de JMS entegrasyonudur. Daha önceden de ifade ettiğim gibi Spring'in işleri kolaylaştırdığı teknolojileri kullanmadan önce mutlaka işin mutfağına girmelisiniz.
-Örneğin; Spring DATA kullanacak iseniz öncesinde Hibernate gibi ORM vendor'unu iyice kavramanız gerekir. Onun öncesinde ise JDBC yapısını kavramanız gerekmektedir. Aksi taktirde arka tarafta yapılan/yapılacak olan işleri tam olarak anlayamazsınız. Yada Spring MVC ile çalışmadan önce mutlaka Servlet benzeri yapıları biliyor olmanız gerekmektedir.
+Örneğin; Spring DATA kullanacak iseniz öncesinde ORM vendor'unu iyice kavramanız gerekir. Onun öncesinde ise JDBC yapısını kavramanız gerekmektedir. Aksi taktirde arka tarafta yapılan/yapılacak olan işleri tam olarak anlayamazsınız. Yada Spring MVC ile çalışmadan önce mutlaka Servlet benzeri yapıları biliyor olmanız gerekmektedir.
 Kısacası Spring arka tarafta sizin yerinize birçok işi hallediyor ama hangi işleri nasıl yapılıyor konusunda fikrinizin olması gerekmektedir.
 
 Bugün kısaca Spring&JMS entegrasonunu ActvieMQ kullanarak yapmaya çalışacağız. Hemen bir proje oluşturalım ve pom.xml'i ayarlayalım;
