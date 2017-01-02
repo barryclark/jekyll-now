@@ -18,8 +18,8 @@ title: ネットワーク表示用Markdown.js 解説
 <html lang="ja">
   <head>
     ...
-    <script type="text/javascript" src="/js/jquery-1.6.1.min.js"></script>
-    <script type="text/javascript" src="/js/jquery-jNetPreview-0.0.1.js"></script>
+    <script type="text/javascript" src="https://xinolinx.github.io/js/jquery-1.6.1.min.js"></script>
+    <script type="text/javascript" src="https://xinolinx.github.io/js/jquery-jNetPreview-0.0.1.js"></script>
     ...
   <head>
   <body>
@@ -54,12 +54,10 @@ var imgdir = "https://xinolinx.github.io/images/icon/";
 ```javascript
 	function draw_pc_link (list_pclink, list_infos){
 		if (list_pclink.length == 0) {
-			/* Canvas is NOT exist (bye) */
-			return;
+		...
 		}
 		if (list_pclink.length != list_infos.length) {
-			/* Canvas is NOT exist (bye) */
-			return;
+		...
 		}
 		for (var i = 0; i < list_pclink.length; i++) {
 			var target = list_pclink.get(i);
