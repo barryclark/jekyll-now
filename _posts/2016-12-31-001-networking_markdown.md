@@ -24,7 +24,7 @@ ni,gateway,internet
  nw,xinolinx,192.168.0.2,wifi
   pd,imac,192.168.0.101,printer
   pn,macbook,dhcp
-  pd,subpc,dhcp,game
+  pd,subpc,dhcp,game,wire
   pt,iphone6s(2),dhcp,none
   tv,bravia,dhcp,none
   gm,ps3,dhcp,none

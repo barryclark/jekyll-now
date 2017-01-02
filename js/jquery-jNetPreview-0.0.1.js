@@ -66,7 +66,7 @@ $(document).ready(function(){
 				var type = attrs[0].trim();
 				var name = attrs[1];
 				var info = attrs[2];
-				var option = attrs[3];
+				var current_option_pos = 3;
 
 				if (depth > prevdepth) {
 					/* enter children */
@@ -93,7 +93,9 @@ $(document).ready(function(){
 				};
 				$(settag).css(setcss);
 				
-				if (option) {
+				/* multi option */
+				var option = attrs[current_option_pos];
+				while (option) {
 					setimg = "<img"
 						+ " src=\"" + getimgurl_option(option) + "\""
 						+ " alt=\"" + name + "\""  
@@ -102,6 +104,9 @@ $(document).ready(function(){
 					$(canvas).append(setimg);
 					settag = canvas.lastChild;
 					$(settag).css(setcss);
+
+					current_option_pos++;
+					option = attrs[current_option_pos];
 				}
 				
 				$(settag).mouseover(
