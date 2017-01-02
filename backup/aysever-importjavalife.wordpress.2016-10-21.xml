@@ -5520,7 +5520,7 @@
 	<link>http://alicanakkus.com</link>
 	<width>32</width>
 	<height>32</height>
-</image> 
+</image>
 
 	<item>
 		<title>logo-head</title>
@@ -21291,19 +21291,19 @@ Jax-RS ile web servis yazarken kullandığımız methodlar için bazen Mime type
 27 September 2015
 
 Java'da iki String ifadeyi karşılaştırmak sıkça karşılaşılan bir durumdur. Bunu birden fazla çeşitle gerçekleştirebiliriz. Bunlar; == kullanmak, equals() methodu yada compareTo() methodunu kullanmak olabilir.  == ve equals() arasındaki farkı çoğu kişi biliyordur sanırım ve interview question'lar içerisinde en sık bulunan konulardandır. == ifadesi reference karşılaştırması yapar yani obje eşitliğini kontrol eder, equals() ise içerik/value karşılaştırması yapar. Bu nedenle farklı sonuçlar üretilir ikisinin kullanımında. Örn;
-<pre class="theme:eclipse lang:java decode:true ">String literal = "abc"; 
+<pre class="theme:eclipse lang:java decode:true ">String literal = "abc";
 String object = new String(literal);
 
-if(literal.equals(object)){ 
+if(literal.equals(object)){
     System.out.printf("String %s and %s are equal %n", literal, object); }
-else { 
-    System.out.printf("String %s and %s are not equal %n", literal, object); 
-} 
+else {
+    System.out.printf("String %s and %s are not equal %n", literal, object);
+}
 
-if(literal == object){ 
-    System.out.printf("String %s and %s are same object %n", literal, object); 
-}else { 
-    System.out.printf("String %s and %s are different object %n", literal, object); 
+if(literal == object){
+    System.out.printf("String %s and %s are same object %n", literal, object);
+}else {
+    System.out.printf("String %s and %s are different object %n", literal, object);
 }
 </pre>
 Çıktı olarak şunu görebiliriz;
@@ -21315,27 +21315,27 @@ if(literal == object){
 String/obje compare etmek için best practice olabilecek nitelikte şunları standart hale getirmek, yazılan kodu daha sağlam yapıcaktır.
 <ul>
  	<li>equals() methodu obje üzerinden değil, String ifade üzerinden çağrılmalıdır. Bu sayede Null Pointer oluşmasının önüne geçilebilir. Şöyle ki;
-<pre class="theme:eclipse lang:java decode:true">String apple = "Apple"; 
+<pre class="theme:eclipse lang:java decode:true">String apple = "Apple";
 String fruit = getFruit(); // methoddan fruit null gelebilir, dikkat!
 
 // Bu kod fruit null ise exception fırlatacaktır
-if(fruit.equals("Apple"){ 
-    System.out.println("Make Apple Shake"); 
+if(fruit.equals("Apple"){
+    System.out.println("Make Apple Shake");
 }
 // Bu kod her zaman çalışacaktır. Fruit null olsa dahi. Bunu tercih etmeliyiz.
-if("Apple".equals(fruit){ 
-    System.out.println("Make Apple Shake"); 
+if("Apple".equals(fruit){
+    System.out.println("Make Apple Shake");
 }</pre>
 </li>
  	<li>String yada objenin null ile compare edilmesi yine yukarıdaki gibi NullPointer'a sebep olabilir. Şöyle ki;
 <pre class="theme:eclipse lang:java decode:true ">//fruit null ise exception fırlatır. Null reference üzerinden birşey çağrılamaz!
-if(!fruit.equals(null)){ 
-    System.out.printf("We have got %s today", fruit.name()); 
+if(!fruit.equals(null)){
+    System.out.printf("We have got %s today", fruit.name());
 }
 
 //yukardakine göre bunu tercih etmeliyiz. Null ise dahi calısacaktır.
-if(fruit != null){ 
-    System.out.printf("We have got %s today", fruit.name()); 
+if(fruit != null){
+    System.out.printf("We have got %s today", fruit.name());
 }
 </pre>
 &nbsp;</li>
@@ -21378,12 +21378,12 @@ Servlete erişmek istediğimizde aşağıdaki sonucu görebiliriz;
 
 Nullable pattern olarak da bilinen beklenilen durum haricinde bir olay gerçekleştiğinde exception fırlatmak yerine geçersiz/invalid değerlere sahip objeler kullanmak exceptionlara takılmamanızı ve ek null, !null kontrolleri yapmamınızı sağlar. Örn; DB'den Employee getirmek istiyen bir methodunuz bulunsun.  Employee bulunmazsa hata fırlatmak yerine boş bir Employee nesnesi göndermeniz kodu global kod standartlarına uymasını ve exceptionlara takılmamanızı sağlar.
 <pre class="lang:default decode:true ">public Employee getEmployee(int id){
-		
+
 		if (is employee found in a db)
 			return employee
 		else
 			return default employee instead of exception
-		
+
 }</pre>
 Employee db'de bulunursa dönen Employee objesinde name : Alican, surname : Akkus, id : 12345 oldugunu varsayalım. Bulunmadıgı durumlarda ise null object yeribe name : Unknow, surname : Unknow, id : Unknow gibi bir objenin gelmesini beklememiz lazım.
 
@@ -21854,7 +21854,7 @@ Banner: http://www.androiddeveloperday.com/2015/tr/banners-for-supporters/]]></w
 			<wp:comment_author_IP><![CDATA[78.191.167.88]]></wp:comment_author_IP>
 			<wp:comment_date><![CDATA[2015-04-07 16:03:33]]></wp:comment_date>
 			<wp:comment_date_gmt><![CDATA[2015-04-07 13:03:33]]></wp:comment_date_gmt>
-			<wp:comment_content><![CDATA[Merhabalar, 
+			<wp:comment_content><![CDATA[Merhabalar,
 Gerekli desteği vermeye hazırım. İletişim adreslerinden devam edebiliriz :)
 
 İyi günler dilerim.]]></wp:comment_content>
@@ -23271,687 +23271,6 @@ Chapter 9 : Play Framework Tips&amp;Trick
 		</wp:postmeta>
 	</item>
 	<item>
-		<title>Hâl-i Cünunum</title>
-		<link>http://alicanakkus.com/hal-i-cununum/</link>
-		<pubDate>Fri, 11 Mar 2016 23:49:22 +0000</pubDate>
-		<dc:creator><![CDATA[AlicanAkkus]]></dc:creator>
-		<guid isPermaLink="false">http://alicanakkus.com/?page_id=1197</guid>
-		<description></description>
-		<content:encoded><![CDATA[<strong><a href="#18Oct2016">18 Ekim 2016 - 16:30</a></strong>
-<p id="18Oct2016">Gök çoğalınca,
-Göğe açılan göz kapanınca,
-Beni duyacak anlamayacaksın.</p>
-~ Cahit Zarifoğlu
-
-<strong><a href="#29Sem2016">29 Eylül 2016 - 08:30</a></strong>
-<p id="29Sem2016">bu çılgın eğlentinin karşıtı bir yürek,
-hangi kuşun sesinde dinlensin.</p>
-~ Nilgün Marmara
-
-<strong><a href="#16Sem2016">16 Eylül 2016 - 19:30</a></strong>
-<iframe width="550" height="385" id="16Sem2016" src="https://www.youtube.com/embed/PHo5U9Rios0"></iframe>
-
-~ Mehmet Güreli - Kimse Bilmez
-
-<strong><a href="#6Sem2016">6 Eylül 2016 - 00:00</a></strong>
-<p id="6Sem2016">Annem tanısa seni kesin çok severdi.
-Bana kalırsa seni bütün dünya çok sever,
-Ben de seni çok severim ama şu an konu bu değil.</p>
-~ Ali Lidar
-
-<strong><a href="#1Sem2016">1 Eylül 2016 - 00:00</a></strong>
-
-Son Feci Bisiklet - Bu Kız
-
-<iframe width="550" height="385" src="https://www.youtube.com/embed/1_0Ec694FNM"></iframe>
-<p id="1Sem2016">Bu kız beni sever
-Bu kız beni öldürür
-Bu kız bana güzel hayaller gördürür</p>
-Bu kız beni tutar
-Ve kendine çeker
-Bu kızla bana bir oda bir yatak bi kütüphane yeter
-
-Belli ki bi sır vardı onun sesinde
-Her düşündüğümde onu beyaz elbisesinde
-Bela bulur beni
-Ve uyku kaybolur gibi
-Bu kız beni görünce gülümser
-
-Bu kız beni sever
-Bu kız beni öldürür
-Bu kız bana güzel hayaller gördürür
-
-Bu kız bana güzel
-Yalanlar söyletir
-Bu kız bana yeni bi takım şeyler öğretir
-Her gece
-
-Yalpalayaraktan giderim kapısına
-Biliyorum saat çok geç
-Ama yine de beni suçlama bebek
-Sevişmek ne demek
-
-Çizgi filmler mi izlesek?
-Hiç bir yere de gitmesek
-Kimseleri görmesek
-Ama açlıktan da ölmesek iyi
-
-Belli ki bi sır vardı onun sesinde
-Her düşündüğümde onu beyaz elbisesinde
-Bela bulur beni
-Ve uyku kaybolur gibi
-
-Bu kız
-Bu kız
-Bu kız
-
-~ Söz-Müzik: Arda Kemirgent
-
-&nbsp;
-
-<strong><a href="#13Agu2016">13 Ağustos 2016 - 13:30</a></strong>
-<p id="13Agu2016">Ama şunu biliyorum ki o birbirine benzeyen günlerin içine sızan her şeyde biraz sen varsın.</p>
-~ Ali Lidar
-
-<a href="#10Jul2016"><strong>10 Temmuz 2016 - 22:00</strong></a>
-<p id="10Jul2016">assuman: beni artık sevmiyorsun, öyle mi?</p>
-mükremin: ya seni seviyorum da, seni sevmeyi eskisi kadar sevemiyorum.. hani eskiden seni sevmenin, birbirimizi sevmenin, yeşil gevrek bir tadı vardı. seni güldürmenin lezzeti damağıma yerleşir, orada mutlu mesut yaşardı.. yani bişey olduğu vakit, ilk bunu koşayım gideyim, assuman'a söyleyeyim tarzında bir haberci telaşı olurdu.
-
-assuman: şimdi n'oldu peki?
-
-mükremin: bilmiyorum assuman, bilmiyorum.. kalbim bir kuyunun dibindeki suyun içinde nefes almaya çalışan bir gariban.yukarı tırmanmaya çalışıyor..ama ne yapsın? kuyunun duvarları düz..kuyunun duvarları ıslak..
-
-~ Bir Demet Tiyatro
-<div>
-
-<a href="#10Jun2016"><strong>10 Haziran 2016 - 01:00</strong></a>
-<p id="10Jun2016">Ölsem ayıptır, sussam tehlikeli, çok sevmeli öyleyse, çok söylemeli.</p>
-<iframe width="550" height="385" src="https://www.youtube.com/embed/r-LCLmHhjwU"></iframe>
-
-</div>
-<a href="#02Jun2016"><strong>2 Haziran 2016 - 22:00</strong></a>
-<p id="02Jun2016">Halbuki ne kadar saf, temiz bir yüzü var.</p>
-~ Sabahattin Ali
-<div>
-
-<a href="#30May2016"><strong>31 Mayıs 2016 - 23:45</strong></a>
-<p id="30May2016">Gözlerine baktım ise ki bakmışımdır.
-Onlar bir denizi sezme derinliğindedir.</p>
-<iframe width="550" height="385" src="https://www.youtube.com/embed/7odXfJnqT9U"></iframe>
-
-</div>
-<a href="#16May2016"><strong>16 Mayıs 2016 - 21:15</strong></a>
-<p id="16May2016">Yaşamın anlamı gece duyumsanır ve sorgulanır. Kimse bunu öğle yemeği sırasında tartışmaz. Yaşam gecenin konusudur.</p>
-~ Gündüz Vassaf
-
-<a href="#11May2016"><strong>11 Mayıs 2016 - 00:05</strong></a>
-<p id="11May2016">Vaktinde ediIememiş sevgi sözIeri, nefret zırhını kuşanır dönerken geri.</p>
-<iframe width="550" height="385" src="https://www.youtube.com/embed/jySSUCUbXLs">
-</iframe>
-
-<a href="#7May2016"><strong>7 Mayıs 2016 - 00:35</strong></a>
-<p id="7May2016">Hiç ayrılmayalım demek vardı fakat bu pek geniş manalı ve müphemdi. Nasıl ayrılmayalım? Bir yuva kuralım deseler bu da pek bayağı kaçacaktı.</p>
-~ Sabahattin Ali
-
-<a href="#3May2016"><strong>3 Mayıs 2016 - 17:05</strong></a>
-
-Abbas
-<p id="3May2016">Haydi Abbas, vakit tamam;
-Akşam diyordun işte oldu akşam.
-Kur bakalım çilingir soframızı;
-Dinsin artık bu kalb ağrısı.
-Şu ağacın gölgesinde olsun;
-Tam kenarında havuzun.
-Aya haber sal çıksın bu gece;
-Görünsün şöyle gönlümce.
-Bas kırbacı sihirli seccadeye,
-Göster hükmettiğini mesafeye
-Ve zamana.
-Katıp tozu dumana,
-Var git,
-Böyle ferman etti Cahit,
-Al getir ilk sevgiliyi Beşiktaş'tan;
-Yaşamak istiyorum gençliğimi yeni baştan.</p>
-~ Cahit Sıtkı Tarancı
-
-<a href="#30Nis2016"><strong>30 Nisan 2016 - 23:15</strong></a>
-Kulağında karanfil
-Teninde tarçın
-Gözlerinde göç var.
-
-<a href="#27Nis2016"><strong>27 Nisan 2016 - 08:55</strong></a>
-<p id="27Nis2016">Bulamayacağım bir şeyi daima arıyor gibiyim. Nedir beni mesut edecek, ne gibi bir şeydir, onu da bilmiyorum.</p>
-~ Leyla Erbil
-
-<a href="#19Nis2016"><strong>19 Nisan 2016 - 21:15</strong></a>
-<p id="19Nis2016">Desem ki vakitlerden bir nisan akşamıdır,
-Rüzgârların en ferahlatıcısı senden esiyor.</p>
-~ Cahit Sıtkı Tarancı
-
-<a href="#08Nis2016"><strong>8 Nisan 2016 - 00:25</strong></a>
-<p id="08Nis2016">Önce sesin gelir aklıma, çaresiz kaldıkça hep seni düşünürüm.</p>
-~ Turgut Uyar
-
-<a href="#03Nis2016"><strong>3 Nisan 2016 - 20:55</strong></a>
-<p id="03Nis2016">Yatağına nasıl uzandığını, nasıl ağır ağır nefes aldığını tasavvur ediyor ve bunu görmekten daha büyük saadet olamayacağını düşünüyordum.</p>
-~ Sabahattin Ali
-
-<a href="#02Nis2016"><strong>2 Nisan 2016 - 12:30</strong></a>
-<p id="02Nis2016">Onunla beni, bizim iradelerimizin üstünde bir bağın bağladığına eminim.</p>
-~ Sabahattin Ali
-
-<a href="#25Mart2016"><strong>25 Mart 2016 - 23:20</strong></a>
-<p id="25Mart2016">Günah ki en güzel kadındır, sizler güzele kanan,
-Tabiatın şeytan olacaksa yılan doğursun anan!</p>
-~ kafkef
-
-<a href="#23Mart2016"><strong>23 Mart 2016 - 00:10</strong></a>
-<p id="23Mart2016">- Hem biz seninle hiç dans etmedik, değil mi?
-+ Hayır etmedik
-- Ben zaten dans etmekten fazla zevk almam, bazen dans ettiğim kimse hoşuma gider ve bu yüzden o sıkıntıya katlanırım.
-+ Bu iş için hoşuna gideceğimi tahmin etmem.
-+ Ben de tahmin etmem. Ama olsun, arkadaşlıkta fedakarlık lazımdır.
-~ Sabahattin Ali / Kürk Mantolu Madonna</p>
-<a href="#16Mart2016"><strong>16 Mart 2016 - 23:30</strong></a>
-<p id="16Mart2016">Bir deniz gibisin resimlerde.
-~ Ahmet Aslan</p>
-<a href="#15Mart22016"><strong>15 Mart 2016 - 21:33</strong></a>
-<p id="15Mart22016">Ben seni severim sevmesine de toplum buna hazır değil
-Nükleer denemeler kyoto sözleşmesi küresel ısınma falan.
-Belki sen çok küçüksün belki benim ruhum ölü
-Biraz Nietzsche biraz Kant kafan karışmış belki
-Parlıamanet'i de bozdular tutunacak dalımız mı kaldı?
-Pavyonda tanıdığım bilge bir pezevenk vardı!
-Kötü kitaplar okumak kötü yaşamak gibidir derdi.
-İyi kitaplar okudum bir boka yaramadı..</p>
-Ben seni severim aslında da düzenim bozulur diye korkuyorum
-Durduk yere başımıza saçma sapan bir aşk çıkar
-Sinemaya gitmeye ele ele tutuşmaya falan kalkarız
-İşin yoksa çiçek al,saç tara, parfüm sık.
-Küsmesi,barışması,ayılması,bayılması
-Hatta eninde sonunda kaçınılmaz ayrılması
-Meyhanede tanıdığım gerzek bir filozof vardı!
-Güzel kadınlar insanın ömrünü uzatır derdi.
-Bir sürü güzel kadın girdi hayatıma
-Hepsi ağzıma sıçtı..
-
-Ben seni severim belki de rabbim buna hazır değil.
-Her şeyin güzelini sever o ideal birliktelikler ister
-Seninle benim yan yana oturacağımız çekyata
-Ne ilahi adalet sığar ne de diyalektik..
-İçime çöreklenmiş sığ bir sığır var benim.
-Ben seni severim sevmesine de
-İş çıkarmasana şimdi ne gerek var güzelim..
-
-~ Ali Lidar
-
-<a href="15Mart2016"><strong>15 Mart 2016 - 01:11</strong></a>
-
-Nasıl öfkelenmem düşündükçe memleketimi?
-Çırpınıyor ayakları altında, bir avuç hergelenin.
-~ Nazım Hikmet
-
-<a href="#12Mart22016"><strong>12 Mart 2015</strong></a>
-
-Büsbütün başka bir hayat, daha az gülünç ve daha çok manalı bir hayat istiyorum. Belki bunu arayıp bulmak da mümkündür.
-~ Sabahattin Ali
-
-<a href="#12Mart2016"><strong>12 Mart 2015</strong></a>
-
-kalbim ak da pak da desen yüzünden yansır pisliğin.
-~ kafkef
-
-<a href="#8Mart2016"><strong>8 Mart 2016</strong></a>
-
-Seni çok anıyorum ama aramıyorum.
-Çünkü biz, birbirimizi acıdan öldürürüz.
-- Ali Lidar
-
-<a href="#3Mart2016"><strong>3 Mart 2016</strong></a>
-
-Yalnızlık bir tarihtir,
-Gök dediğin ise iki kuşun arası.
-
-<a href="#29Sub2016"><strong>29 Şubat 2016</strong></a>
-
-Bir şeyin çaresi varsa tembellik yapma.
-Bir şeyin çaresi yoksa üzüntü yapma.
-~ Said Nursi(r.a)
-
-<a href="#15Sub2016"><strong>15 Şubat 2016</strong></a>
-
-Şerle ulaşılan hayır, hayır değildir.
-~ Hazreti Ali(Kerramellahu Vecheh)
-
-<a href="#3Sub2016"><strong>3 Şubat 2016</strong></a>
-
-Siz garip bir insansınız dedi. Konuşmuyor, sormuyorsunuz.
-Fakat öyle bir haliniz var ki, her şeyi anlayabilirsiniz hissi veriyor.
-~ Sabahattin Ali
-
-<a href="#24Oca2016"><strong>24 Ocak 2016</strong></a>
-
-Yemek yemek üzerine ne düşünürsünüz bilmem ama kahvaltının mutlulukla bir ilgisi olmalı.
-~ Cemal Süreya
-
-<a href="#21Oca2016"><strong>21 Ocak 2016</strong></a>
-
-Suyu dinlemek gerek, ateş zaten içimizde.
-~ Ahmet Telli
-
-<a href="#23Ara2015"><strong>23 Aralık 2015</strong></a>
-
-La rahate fid'dünya, illa fil ahire.
-Rahat dünyada değildir, ancak ahirettedir.
-
-<a href="#18Ara2015"><strong>18 Aralık 2015</strong></a>
-
-İçtiğimiz çay dans eden bir kadının ayak bilekleri gibidir.
-~ Sezai Karakoç
-
-<a href="#5Ara2015"><strong>5 Aralık 2015</strong></a>
-
-Sonuçta biz gönül adamıyız tabii. Dağı severiz, taşı severiz, yeri gelir bir güvercine tutuluruz.
-~ A.Akkus
-
-<a href="#28Kas2015"><strong>28 Kasım 2015</strong></a>
-
-Çocuğuna otomobil değil,
-Bir şarkı, bir şiir bırak.
-Aşağı mahallede gördüm, arabalar eskiyor.
-~ Ah Muhsin Ünlü
-
-<a href="#23Kas2015"><strong>23 Kasım 2015</strong></a>
-
-- Ne çok şey biliyor bu insanlar Olric?
-+ Herkes işine geleni biliyor efendimiz.
-~ Oğuz Atay
-
-<a href="#30Ekim2015"><strong>30 Ekim 2015</strong></a>
-
-sudo apt-get install happiness love respect peace.
-~ A.Akkus
-
-<a href="#12Ekim2015"><strong>12 Ekim 2015</strong></a>
-
-++küfür;
-~ A.Akkus
-
-<a href="#11Ekim2015"><strong>11 Ekim 2015?</strong></a>
-
-Fil çoğalsın.. Ebabilden umut kesilmez.
-Firavun azsa da, Nil'den umut kesilmez.
-Zalimler ölmüyor diye yese kapılma.
-Sabret hele.. Azrailden umut kesilmez...
-~ Abdurrahim Karakoç
-
-<a href="#29Eyl2015"><strong>29 Eylül 2015</strong></a>
-
-Ölünceye kadar hep gülsem yine gülmekten bıkmayacak bir adamım.
-~ Sabahattin Ali
-
-<a href="#17Eyl2015"><strong>17 Eylül 2015</strong></a>
-
-siyah saç ak defterle geldin,
-ak saç siyah defterle gidiyorsun.
-~ kafkef
-
-<a href="#6Eyl2015"><strong>6 Eylül 2015</strong></a>
-
-Doğrusu insan çok zalim, çok nankördür!
-~ İbrahim-34
-
-<a href="#3Eyl2015"><strong>3 Eylül 2015</strong></a>
-
-Hayatta hiçbir zaman kafamızdaki kadar harikulade şeyler olmayacağını henüz idrak etmemiştim.
-~ Sabahattin Ali
-
-<a href="#28Agu2015"><strong>28 Ağustos 2015</strong></a>
-
-Sonra gitgide hissizleşiyorsun azizim.
-Kimse ne muhabbet ehli,
-Ne de yol arkadaşı gibi görünmüyor gözüne.
-- Servet Saygınoğlu
-
-<a href="#10Agu2015"><strong>10 Ağustos 2015</strong></a>
-
-Ey iman edenler! Yapmayacağınız şeyleri niçin söylüyorsunuz?
-- SAFF/2
-
-<a href="#6Agu2015"><strong>6 Ağustos 2015</strong></a>
-
-İçimdeki sultanın yüzünü görmek ister gözlerim.
-~ kafkef
-
-<a href="#31Tem2015"><strong>31 Temmuz 2015</strong></a>
-
-Ak siyah saçları
-Düşmüş alnına
-Kaybolasım gelir
-Ateşte
-
-Dönmek ne mümkün
-Düştüm sevdana
-Ah yanasım gelir
-Ateşte
-
-Belki de yoktur
-Sonumuz
-Hasretle bitecek
-Yolumuz
-
-Aman efendim
-Canım efendim
-Konuş biraz
-
-Aman efendim
-Canım efendim
-Sarıl biraz
-Sev biraz
-
-Akşam çöküyor
-Dağların üstüne
-Çaresizliğimse
-Yüreğime
-
-Bırak seveyim seni
-Sadece bir gece
-Seher vakti bitsin
-Gizlice
-Sessizce
-~ Birsen Tezer
-
-<a href="#23Tem2015"><strong>23 Temmuz 2015</strong></a>
-
-İnsanların en zayıf tarafları, sormadan, araştırmadan, düşünmeden, kafalarını patlatmadan inanmak hususundaki hayret verici temayülleridir.
-~ Sabahattin Ali
-
-<a href="#22Tem2015"><strong>22 Temmuz 2015</strong></a>
-
-Bilmediğin şeyler hakkında konuşmayı ve üzerine düşmediği halde söz söylemeyi terk et.
-~ Hz. Ali
-
-<a href="#21Tem2015"><strong>21 Temmuz 2015</strong></a>
-
-İyiliğin ödülü, iyilikten başka nedir ki?
-~ Rahman/60
-
-<a href="#15Tem2015"><strong>15 Temmuz 2015</strong></a>
-
-Müthiş bir gevşeklik içindeyim, üşeniyorum.
-Sürüklenip gidiyorum.
-~ Sabahattin Ali
-
-<a href="#5Tem2015"><strong>5 Temmuz 2015</strong></a>
-
-Bir şeyin çaresi varsa tembellik yapma.
-Bir şeyin çaresi yoksa üzüntü yapma.
-~ Said Nursi(r.a)
-
-<a href="#13Haz2015"><strong>13 Haziran 2015</strong></a>
-
-Neydi bu içinden çıkılmaz meseleler? Neydi bu mavi göğe veya sevgili bir yüze bakmayı zevk olmaktan çıkaran hisler ve üzüntüler?
-~ Sabahattin Ali
-
-<a href="#29May2015"><strong>29 Mayıs 2015</strong></a>
-
-Şu kalabalığın içerisine gözüm kapalı karışsam, bir kuvvet beni muhakkak hiç şaşırtmadan doğruca Ona götürecektir.
-~ Sabahattin Ali
-
-<a href="#10May2015"><strong>10 Mayıs 2015</strong></a>
-
-İnsanın en birinci üstadı ve tesirli muallimi onun validesidir.
-~ Bediuzzaman
-
-<a href="#8May2015"><strong>8 Mayıs 2015</strong></a>
-
-Gelmesi muhakkak olan her şey uzak da olsa yakındır.
-~ Hz.Muhammed(s.a.v)
-
-<a href="#30Nis2015"><strong>30 Nisan 2015</strong></a>
-
-Hiçbir süs ve makyaj bir kadını, analık sevgisi kadar güzelleştiremez.
-~ Emile Brochvogel
-
-<a href="#20Nis2015"><strong>20 Nisan 2015</strong></a>
-
-Allah'ım! Recep ve Şaban ayını bize bereketli kıl ve bizi Ramazan'a kavuştur.
-~ Hz.Muhammed (s.a.v.)
-
-<a href="#30Mart2015"><strong>30 Mart 2015</strong></a>
-
-İhtiyacımız olan esaslı ve soylu bir öfke.
-~ Nuri Pakdil
-
-<a href="#19Mart22015"><strong>19 Mart 2015</strong></a>
-
-Uzun mesafelere ulaşmak, yakın mesafeleri aşmakla mümkündür.
-~ İmam Gazâlî
-
-<a href="#19Mart2015"><strong>19 Mart 2015</strong></a>
-
-Her an karanlığını giyinecek gibisin.
-~ Cahit Zarifoğlu
-
-<a href="#8Mart2015"><strong>8 Mart 2015</strong></a>
-
-Bize ağır gelen kendimiziz.
-~ Cahit Zarifoğlu
-
-<a href="#4Mart2015"><strong>4 Mart 2015</strong></a>
-
-İnsanlık ince işçilik ister.
-~ İbrahim Tenekeci
-
-<a href="#2Mart2015"><strong>2 Mart 2015</strong></a>
-
-Üç kez öfkelendiği halde sana kötü söz söylemeyen dostu, kaybetme!
-~ Câfer-i Sadık(k.s)
-
-<a href="#15Sub2015"><strong>15 Şubat 2015</strong></a>
-
-Kadınların gülümsemediği bir ülkenin, erkekleri cesur olamaz.
-~ Murat Menteş
-
-<a href="#10Sub2015"><strong>10 Şubat 2015</strong></a>
-
-İlk işim. Tübitak/Gebze/Martek/32Bit Bilgisayar Hizmetleri
-
-Allah utandırmasın.
-
-~ A.Akkus
-
-<a href="#8Sub2014"><strong>8 Şubat 2015</strong></a>
-
-Sorumluluğunu taşıyabileceğin düşüncenin insanı ol.
-~ Ahmet Hamdi Tanpınar
-
-<a href="#4Sub22015"><strong>4 Şubat 2015</strong></a>
-
-Sana Allah'ı hatırlatacak bir arkadaş bulunca ona sımsıkı sarıl, ondan ayrılma, onu küçümseme onu kendin için bir devlet bil... böyle kimseler mü'min için bir ganimettir.
-~ İmam Gazali
-
-<a href="#4Sub2015"><strong>4 Şubat 2015</strong></a>
-
-Bu dünya soğuk. Rüzgar genelde ters yöne eser.
-Limon ağaçları kurur. Bahaneler hep hazır.
-Güzel günler çabuk geçer..
-~ Cahit Zarifoğlu
-
-<a href="#31Ara2014"><strong>31 Aralık 2014</strong></a>
-
-'Yılbaşının sence hiçbir hususiyeti yok mudur'' diye sordum.
-''Hayır'' dedi. ''senenin diğer günlerinden ne farkı var sanki? Tabiat onu her hangi bir şekilde ayırmış mı? Ömrümüzden bir sene geçtiğini göstermesi bile o kadar mühim değil; çünkü ömrümüzü senelere ayırmak da insanların uydurması. İnsan ömrü doğumdan ölüme uzanan tek bir yoldan ibarettir ve bunun üzerinde yapılan her türlü taksimat sunidir..''
-~ Sabahattin Ali
-
-<a href="#23Ara2014"><strong>23 Aralık 2014</strong></a>
-
-Hayat, eli sopalı bir öğretmen.
-~ kafkef
-
-<a href="#17Ara2014"><strong>17 Aralık 2014</strong></a>
-
-Şu küçücük kalpte nice hakkın yüklü.
-~ Cahit Zarifoğlu
-
-<a href="#10Ara2014"><strong>10 Aralık 2014</strong></a>
-
-Çay içerek bile mutlu olmayı başarmalı insan.
-~ Prof. Dr. Nevzat Tarhan
-
-<a href="#18Kas2014"><strong>18 Kasım 2014</strong></a>
-
-Hadi göğe bakalım.
-~ Turgut Uyar
-
-<a href="#3Kas2014"><strong>3 Kasım 2014</strong></a>
-
-Bir kez kaçar uçurtman, sonra gökyüzüne küser insan.
-~ Hermann Hesse
-
-<a href="#30Ekim2014"><strong>30 Ekim 2014</strong></a>
-
-Allah'ın sevgisine erişeceğin yerlerde bulunmak, hayatın değerini bilmektir.
-~ İbn Ataullah el- İskenderî
-
-<a href="#25Ekim2014"><strong>25 Ekim 2014</strong></a>
-
-Scala is also a functional language in the sense that every function is a value and because every value is an object so ultimately every function is an object.
-
-<a href="#23Ekim2014"><strong>23 Ekim 2014</strong></a>
-
-Aylar sonra ilk defa gözlerim bir işe yarayacak seni görerek.
-~ Franz Kafka
-
-<a href="#18Ekim2014"><strong>18 Ekim 2014</strong></a>
-
-"Beni görmedikleri halde bana iman eden kardeşlerimi görmeyi çok isterdim."
-~ Hz.Muhammed(s.a.v)
-
-<a href="#17Ekim2014"><strong>17 Ekim 2014</strong></a>
-
-“Eğer siz, benim bildiklerimi bilseydiniz, mutlaka az güler, çok ağlardınız.”
-~ Hadis-i Şerif
-
-<a href="#7Ekim2014"><strong>7 Ekim 2014</strong></a>
-
-İnsanı insan yapan duyguların ilkidir aşk.
-Bir kişiyi seven, bütün insanları sever.
-~ Necati Cumalı
-
-<a href="#5Ekim2014"><strong>5 Ekim 2014</strong></a>
-
-Acaba bunlar neden yaşıyorlar? Yaşamakta ne buluyorlar?
-Hangi mantık, hangi hikmet bunların yeryüzünde dolaşıp nefes almalarını emrediyor?
-~ Sabahattin Ali
-
-<a href="#1Ekim2014"><strong>1 Ekim 2014</strong></a>
-
-Her nasip için ayrı bir rahmet şekillenir.
-~ Cahit Zarifoğlu
-
-<a href="#17Eyl2014"><strong>17 Eylül 2014</strong></a>
-
-Ve giderek bütün gençleri saran bir gırgır furyası, bir gevezelik, malayanilik, bir seviyesizlik..
-~ Cahit Zarifoğlu
-
-<a href="#14Eyl2014"><strong>14 Eylül 2014</strong></a>
-
-...Rabbini hamd ile tesbih et. Güneşin doğuşundan önce de , batışından sonra da , gece saatlerinde de , gündüzün etrafında da.. tâ ki rızaya eresin.
-~ Taha, 130
-
-<a href="#9Eyl2014"><strong>9 Eylül 2014</strong></a>
-
-Sen hep gül ,
-Öylece kal ,
-İzlemek Seni ,
-Düşlerin en güzeli.
-~ Cahit Zarifoğlu
-
-<a href="#30Agu2014"><strong>30 Ağustos 2014</strong></a>
-
-İnsanların çoğu bilmezler; " Hiçbir Aşk yoktur ki Allah’ın rızası olmadan bir anlam ifade etsin.. "
-~ Kurtuluş Aybirdi
-
-<a href="#29Agu2014"><strong>29 Ağustos 2014</strong></a>
-
-Kibir taşıyan kafada akla rastlayamazsınız.
-~ Ahmet İbni Hanbel(r.a)
-
-<a href="#10Agu2014"><strong>20 Ağustos 2014</strong></a>
-
-Unutma , problemler küçük insanlarin şevkini kırar , büyük insanların ise azmini arttırır.
-~ Zübeyir Gündüzalp
-
-<a href="#29Tem2014"><strong>29 Temmuz 2014</strong></a>
-
-dertle anlaş deva bul,üzüntü kalbi sömürür.
-~kafkef
-
-<a href="#6Tem2014"><strong>6 Temmuz 2014</strong></a>
-
-..."sırdır ki gizli gerektir, sevgilinin adını dile düşürmek hakikatte ayıptır.
-Kays bir dağ delisi gibi davrandı, gitti sahralarda çöllerde aşkımız ona buna anlattı, ben kimseciklerle paylaşmadım onun sevgisini, içimde büyüttüm, büyüttüm, büyüttüm...
-Budur ki benim onu daha çok sevdiğime delildir.“
-~ Iskender Pala
-
-<a href="#30Haz2014"><strong>30 Haziran 2014</strong></a>
-
-Sevmeyi bilen adamlara acı çektirmeyin ,
-Sonra şiir yazıyorlar , Hepimiz dertleniyoruz ..
-~ Serdar Tuncer
-
-<a href="#4Haz2014"><strong>4 Haziran 2014</strong></a>
-
-Eğer C++ dilinin gereğinden fazla kamaşık olmadığını düşünüyorsanız bana " protected abstract virtual base pure virtual private destructor" ın ne olduğunu söyleyin.
-~ Tom Cargill.]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>1197</wp:post_id>
-		<wp:post_date><![CDATA[2016-03-12 01:49:22]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2016-03-11 23:49:22]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[open]]></wp:comment_status>
-		<wp:ping_status><![CDATA[open]]></wp:ping_status>
-		<wp:post_name><![CDATA[hal-i-cununum]]></wp:post_name>
-		<wp:status><![CDATA[publish]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[page]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
-			<wp:meta_value><![CDATA[default]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_layout]]></wp:meta_key>
-			<wp:meta_value><![CDATA[inherit]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[dsq_thread_id]]></wp:meta_key>
-			<wp:meta_value><![CDATA[4771021115]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[bnw_my_checkbox_option]]></wp:meta_key>
-			<wp:meta_value><![CDATA[0]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[post-style]]></wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[supernova-recommended-post]]></wp:meta_key>
-			<wp:meta_value><![CDATA[0]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[supernova-popular-post]]></wp:meta_key>
-			<wp:meta_value><![CDATA[0]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
 		<title>Apache</title>
 		<link>http://alicanakkus.com/apache/</link>
 		<pubDate>Tue, 15 Mar 2016 12:56:09 +0000</pubDate>
@@ -24189,9 +23508,7 @@ Thymeleaf - 2 : <span style="color: #808000;"><a style="color: #808000;" href="h
 		<wp:is_sticky>0</wp:is_sticky>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
+			<wp:meta_val
 			<wp:meta_key><![CDATA[_thumbnail_id]]></wp:meta_key>
 			<wp:meta_value><![CDATA[1393]]></wp:meta_value>
 		</wp:postmeta>
@@ -24362,7 +23679,7 @@ import android.widget.ListView;
 
 public class MainActivity extends Activity {
           String webAdress[] = { "google.com", "facebook.com", "injavawetrust.com",
-                                  "javaturk.org", "kurumsaljava.com", "java.com/tr/", 
+                                  "javaturk.org", "kurumsaljava.com", "java.com/tr/",
                                   "linkedin.com" }; // ( 1 )
           ListView listView; // ( 2 )
           ArrayAdapter adapter; // ( 2 )
@@ -24373,7 +23690,7 @@ public class MainActivity extends Activity {
                    setContentView(R.layout.activity_main);
 
                    listView = (ListView) findViewById(R.id.listView1); // ( 3 )
-                   adapter = new ArrayAdapter&lt;&gt;(getApplicationContext(), 
+                   adapter = new ArrayAdapter&lt;&gt;(getApplicationContext(),
                                   android.R.layout.simple_list_item_1, arrayList);  // ( 3 )
                    listView.setAdapter(adapter); // ( 3 )
 
@@ -24489,7 +23806,7 @@ android:targetSdkVersion="17" /&gt;
               &lt;category android:name="android.intent.category.LAUNCHER" /&gt;
            &lt;/intent-filter&gt;
     &lt;/activity&gt;
-   &lt;activity 
+   &lt;activity
         android:name="com.example.webviewexample.WebViewActivity"&gt; // ( 2 )
    &lt;/activity&gt;
 &lt;/application&gt;
@@ -24529,12 +23846,12 @@ import android.webkit.WebViewClient;
 import android.widget.Toast;
 
 public class WebViewActivity extends Activity {
-          
+
             WebView webView; // ( 1 )
 
            @Override
            protected void onCreate(final Bundle savedInstanceState) {
-           
+
            // TODO Auto-generated method stub
            super.onCreate(savedInstanceState);
            setContentView(R.layout.webview_layout);
@@ -24554,7 +23871,7 @@ public class WebViewActivity extends Activity {
                @Override
                public void onPageFinished(final WebView view, final String url) {
               // TODO Auto-generated method stub
-              
+
                     Toast.makeText(getApplicationContext(),
                           "Web Adresi Yüklendi..", Toast.LENGTH_SHORT).show();
                }
@@ -24564,7 +23881,7 @@ public class WebViewActivity extends Activity {
                           final int errorCode, final String description,
                           final String failingUrl) {
                // TODO Auto-generated method stub
-           
+
                       Toast.makeText(getApplicationContext(),
                            "Web Adresi Yüklenirken Hata Oluştu..",
                              Toast.LENGTH_SHORT).show();
@@ -25034,9 +24351,9 @@ import android.widget.TextView;
 public class MainActivity extends Activity {
 	List&lt;String&gt; list;              - |
 	Spinner spinner;                  |
-	TextView txtTeam;                 |  ( 1 )  
+	TextView txtTeam;                 |  ( 1 )
 	Context context = this;           |
-	ArrayAdapter&lt;String&gt; adapter;    -| 
+	ArrayAdapter&lt;String&gt; adapter;    -|
 
 	@Override
 	protected void onCreate(final Bundle savedInstanceState) {
@@ -25050,13 +24367,13 @@ public class MainActivity extends Activity {
 
 	public void init() {
                 // ( 3 )
-		list = new ArrayList&lt;&gt;(); 
+		list = new ArrayList&lt;&gt;();
 
 		list.add("Galatasaray");
 		list.add("Fenerbahçe");
 		list.add("Beşiktaş");
 		list.add("Trabzon Spor");
-                
+
                 // ( 4 )
 		spinner = (Spinner) findViewById(R.id.spinner1);
 		txtTeam = (TextView) findViewById(R.id.textView2);
@@ -25066,9 +24383,9 @@ public class MainActivity extends Activity {
 	}
 
 	OnItemSelectedListener select = new OnItemSelectedListener() {
-           
+
                // ( 5 )
-                 
+
 		@Override
 		public void onItemSelected(final AdapterView&lt;?&gt; arg0, final View arg1,
 				final int arg2, final long arg3) {
@@ -25314,7 +24631,7 @@ public class MainActivity extends Activity {
 
 		listView.setOnItemClickListener(new OnItemClickListener() {
 
-                        //  ( 5 )    
+                        //  ( 5 )
 
 			@Override
 			public void onItemClick(final AdapterView&lt;?&gt; parent,
@@ -26128,35 +25445,35 @@ import android.widget.Button;
 import android.widget.EditText;
 
 public class MainActivity extends Activity {
-	
+
 	EditText edtName,edtSurName;
 	Button btnSend;
-	
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		
+
 		edtName = (EditText)findViewById(R.id.editText1);
 		edtSurName = (EditText)findViewById(R.id.editText2);
 		btnSend = (Button)findViewById(R.id.button1);
-		
+
 		btnSend.setOnClickListener(new OnClickListener() {
-			
+
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stu
 				String name = edtName.getText().toString();
 				String surName = edtSurName.getText().toString();
-				
+
 				Intent i= new Intent(MainActivity.this,InfoPerson.class);
 				i.putExtra("name", name);
 				i.putExtra("surname", surName);
-				
+
 				startActivity(i);
 			}
 		});
-		
+
 	}
 
 }
@@ -26185,26 +25502,26 @@ import android.os.Bundle;
 import android.widget.TextView;
 
 public class InfoPerson extends Activity {
-	
+
 	TextView txtName,txtSurname;
-	
+
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.second_page);
-		
+
 		txtName = (TextView)findViewById(R.id.textView3);
 		txtSurname = (TextView)findViewById(R.id.textView4);
-		
+
 		Intent intent = getIntent();
 		Bundle bundle = intent.getExtras();
-		
+
 		String name = bundle.getString("name");
 		String surName = bundle.getString("surname");
-		
-		
+
+
 		txtName.setText(name);
 		txtSurname.setText(surName);
-		
+
 	};
 }
 </pre>
@@ -26425,7 +25742,7 @@ public class IkinciSayfa extends Activity {
                 &lt;category android:name="android.intent.category.DEFAULT" /&gt; // ( 4 )
             &lt;/intent-filter&gt;
         &lt;/activity&gt;
-        
+
     &lt;/application&gt;
 
 &lt;/manifest&gt;
@@ -26705,7 +26022,7 @@ public class MainActivity extends Activity {
 				final String mesaj = "Android , Custom Toast �rne�i ..";// ( 7 )
 				text.setText(mesaj); // ( 7 )
 
-                                // ( 8 ) 
+                                // ( 8 )
 				final Toast toast = new Toast(getApplicationContext());
 				toast.setView(view);
 				toast.setDuration(Toast.LENGTH_SHORT);
@@ -27864,7 +27181,7 @@ Res -&gt; Menu -&gt; New Android Xml File diyerek yeni bir xml dosyası olusturu
         android:title="Sil"/&gt;
     &lt;item android:id="@+id/edit"
         android:title="Düzenle"/&gt;
-    
+
 &lt;/menu&gt;
 </pre>
 * Menu'müze item ekliyoruz . Burada<strong> id</strong> degeri , Java tarafından bu iteme ulaşmak için , <strong>title</strong> degeri ise ekranda gözükecek olan yazı özelliği olmakta .
@@ -27903,7 +27220,7 @@ Res -&gt; Menu -&gt; New Android Xml File diyerek yeni bir xml dosyası olusturu
 		setContentView(R.layout.activity_main);
 
                 /*
-                 * NE KERVAN KALDI, NE AT ; HEPSİ SİLİNİP GİTTİ.. 
+                 * NE KERVAN KALDI, NE AT ; HEPSİ SİLİNİP GİTTİ..
                  * İYİ İNSANLAR İYİ ATLARA BİNİP GİTTİ..
                  * [ NECİP FAZIL KISAKÜREK ]
                  */
@@ -28173,17 +27490,17 @@ Geçerli Activity tanımı ;
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" &gt;
-        
+
         &lt;activity
             android:name="com.example.activityexample.MainActivity" &gt;
-            
+
         &lt;/activity&gt;
 &lt;/application&gt;</pre>
 Geçersiz Activity tanımı , <strong>application</strong> tagının içinde olmalı ;
 <pre class="theme:eclipse lang:xhtml decode:true">&lt;activity
         android:name="com.example.activityexample.MainActivity"
         android:label="@string/app_name" &gt;
-            
+
 &lt;/activity&gt;
 
 &lt;application
@@ -28191,27 +27508,27 @@ Geçersiz Activity tanımı , <strong>application</strong> tagının içinde olm
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" &gt;
-        
+
 &lt;/application&gt;</pre>
 </li>
 	<li>Activity'imizin mutlaka bir adı olmalı ve bu ad Java dosyamız ile aynı adı taşımalıdır !
 Dogru tanımlama ;
 <pre class="theme:eclipse lang:xhtml decode:true">  &lt;activity
-           android:name="com.example.activityexample.MainActivity" &gt;    
+           android:name="com.example.activityexample.MainActivity" &gt;
   &lt;/activity&gt;</pre>
 Dogru tanımlama ;
-<pre class="theme:eclipse lang:xhtml decode:true">  &lt;activity 
-          android:name=".MainActivity"&gt; 
+<pre class="theme:eclipse lang:xhtml decode:true">  &lt;activity
+          android:name=".MainActivity"&gt;
   &lt;/activity&gt;</pre>
 Yanlış tanımlama ;
-<pre class="theme:eclipse lang:xhtml decode:true"> &lt;activity 
-    android:name=".MainAcTiViy"&gt; 
+<pre class="theme:eclipse lang:xhtml decode:true"> &lt;activity
+    android:name=".MainAcTiViy"&gt;
  &lt;/activity&gt;</pre>
 </li>
 	<li>Activity üzerinde intent-filter ile activity'mizi özel hale getirebiliriz , şöyle ki;
 <pre class="lang:default decode:true ">&lt;intent-filter&gt;
        &lt;action android:name="android.intent.action.MAIN" /&gt;
-                
+
        &lt;category android:name="android.intent.category.LAUNCHER" /&gt;
 &lt;/intent-filter&gt;</pre>
 <strong> &lt;action</strong> ile activity'mizi <strong>MAIN</strong> , yani uygulamanın başlangıç noktası olarak ayarlamışız .
@@ -28947,7 +28264,7 @@ public class Student implements Serializable {
 				+ " Gender : " + gender + "\n" + " Phone : " + phone + " ]";
 
 		/*
-		 
+
 	}
 }
 </pre>
@@ -30106,7 +29423,7 @@ Bir Servlet'in yasam döngüsü 5 adımdan ibarettir ;
 &nbsp;
 
 * <strong>service()</strong> methodu ile beraber Servlet istekleri işler. <strong>service()</strong> methodu gelen <strong>HTTP</strong> methodu tipine göre Servletimizde buluna <strong>doXXX()</strong> methodunu çağırır. Unutmayalım ki her bir istek aynı servlet üzerinde farklı thread'larda çalışır. <strong>service()</strong> methodu iki obje barındırır. Bunlar ; <strong>request</strong> ve <strong>response</strong> objeleridir. Bu objeler ilgili <strong>doXXX()</strong> methoduna çağrılırken parametre olarak  yollanır.
-<pre class="theme:eclipse lang:java decode:true ">public void service(ServletRequest request, ServletResponse response)   
+<pre class="theme:eclipse lang:java decode:true ">public void service(ServletRequest request, ServletResponse response)
   throws ServletException, IOException</pre>
 * Son olarak <strong>destroy()</strong> methodu ile Servlet'imiz ölür :) . Servlet'in kullandıgı kaynaklar serbest bıraklılır . Bu methodunda servlet yaşam döngüsünde sadece birkez çağrıldıgını unutmayalım.
 <pre class="theme:eclipse lang:java decode:true">public void destroy()</pre>
@@ -30197,16 +29514,16 @@ Merhaba arkadaslar , yeni bir Servlet yazısı ile tekrar beraberiz. Yazımız S
 	<li><strong>ServletConfig </strong>ayarları , web.xml içerisinde &lt;init-param&gt; etiketleri içerisinde tanımlanır.</li>
 	<li><strong>&lt;init-param&gt;</strong> etiketleri key-value String degerler ile oluşturulur.</li>
 </ul>
-<pre class="theme:eclipse lang:xhtml decode:true">&lt;web-app&gt;  
-  &lt;servlet&gt;  
-    ......  
-      
-    &lt;init-param&gt;  
-      &lt;param-name&gt;parameter-name&lt;/param-name&gt;  
-      &lt;param-value&gt;parameter-value&lt;/param-value&gt;  
-    &lt;/init-param&gt;  
-    ......  
-  &lt;/servlet&gt;  
+<pre class="theme:eclipse lang:xhtml decode:true">&lt;web-app&gt;
+  &lt;servlet&gt;
+    ......
+
+    &lt;init-param&gt;
+      &lt;param-name&gt;parameter-name&lt;/param-name&gt;
+      &lt;param-value&gt;parameter-value&lt;/param-value&gt;
+    &lt;/init-param&gt;
+    ......
+  &lt;/servlet&gt;
 &lt;/web-app&gt;</pre>
 &nbsp;
 <h3>ServletConfig Interface Methodları</h3>
@@ -30242,7 +29559,7 @@ web.xml dosyamız ;
         &lt;/init-param&gt;
         &lt;load-on-startup&gt;1&lt;/load-on-startup&gt;
     &lt;/servlet&gt;
-    
+
     &lt;servlet-mapping&gt;
         &lt;servlet-name&gt;MyServlet&lt;/servlet-name&gt;
         &lt;url-pattern&gt;/ServletConfigDemo&lt;/url-pattern&gt;
@@ -30487,7 +29804,7 @@ Bir örnek üzerinden gidelim;
         &lt;servlet-name&gt;MyServlet2&lt;/servlet-name&gt;
         &lt;servlet-class&gt;MyServlet2&lt;/servlet-class&gt;
     &lt;/servlet&gt;
-    
+
     &lt;servlet-mapping&gt;
         &lt;servlet-name&gt;MyServlet1&lt;/servlet-name&gt;
         &lt;url-pattern&gt;/MyServlet1&lt;/url-pattern&gt;
@@ -30541,9 +29858,9 @@ public class MyServlet1 extends HttpServlet {
 		pw.println("Driver : "+driver);
 		pw.println("Username : "+username);
 		pw.println("Password : "+password);
-                
+
                 pw.close();
-                
+
 
 	}
 }
@@ -30608,7 +29925,7 @@ public class MyServlet2 extends javax.servlet.http.HttpServlet {
 		pw.println("Driver : "+driver);
 		pw.println("Username : "+username);
 		pw.println("Password : "+password);
-                
+
                 pw.close();
 	}
 }
@@ -30655,7 +29972,7 @@ public class ContextListener implements ServletContextListener{
 	// -------------------------------------------------------
 	public void contextInitialized( ServletContextEvent sce ) {
 	  /* This method is called when the servlet context is
-         initialized(when the Web application is deployed). 
+         initialized(when the Web application is deployed).
          You can initialize servlet context related data here.
       */
 
@@ -30673,8 +29990,8 @@ public class ContextListener implements ServletContextListener{
 	}
 
 	public void contextDestroyed( ServletContextEvent sce ) {
-      /* This method is invoked when the Servlet Context 
-         (the Web application) is undeployed or 
+      /* This method is invoked when the Servlet Context
+         (the Web application) is undeployed or
          Application Server shuts down.
       */
 
@@ -30871,15 +30188,15 @@ Yukarıdaki örneğimizden yola çıkarak browser özelliğini kullanabiliriz. <
 <pre class="theme:eclipse lang:xhtml decode:true">&lt;intent-filter&gt;
      &lt;action android:name="android.intent.action.VIEW" /&gt;
      &lt;category android:name="android.intent.category.DEFAULT" /&gt;
-     &lt;data android:scheme="http"/&gt; 
+     &lt;data android:scheme="http"/&gt;
 &lt;/intent-filter&gt;</pre>
 Eger herhangi bir url istegi geldiginde birden fazla eşleşme olucak ve bizim uygulamamızda bu listede yer alıcaktır.
 
 Bir text paylaşımı yapan uygulamamız varsa (mesaj , facebook ,twitter vs.) manifest.xml dosyamızda şunu belirtebiliriz. Böylece bir text paylaşım istegi geldiginde Android'in sundugu seçeneklerin arasında bizim uygulamamızda yer alıcaktır.
 <pre class="lang:xhtml decode:true">&lt;intent-filter&gt;
-      &lt;action android:name="android.intent.action.SEND" /&gt;   
+      &lt;action android:name="android.intent.action.SEND" /&gt;
       &lt;category android:name="android.intent.category.DEFAULT" /&gt;
-      &lt;data android:mimeType="text/plain" /&gt;  
+      &lt;data android:mimeType="text/plain" /&gt;
 &lt;/intent-filter&gt;</pre>
 &nbsp;
 
@@ -30984,22 +30301,22 @@ Filter'ın bir java class'ı olduğunu söylemiştik. Sınıfımız  <strong>ja
 Filter bir java class'ıdır dedik. Filter<strong> deployment descriptor</strong> dosyamız(<strong>web.xml</strong>) içerisine yazılır. Servlet ve Jsp dosyalarımız ile URL Pattern ile eşleştirilir.
 
 Filter şu şekilde web.xml içerisinde belirtilir ;
-<pre class="theme:eclipse lang:xhtml decode:true">&lt;web-app&gt;  
-  
-   &lt;filter&gt;  
-       &lt;filter-name&gt;...&lt;/filter-name&gt;  
-       &lt;filter-class&gt;...&lt;/filter-class&gt;  
-   &lt;/filter&gt;  
-   
-   &lt;filter-mapping&gt;  
-       &lt;filter-name&gt;...&lt;/filter-name&gt;  
+<pre class="theme:eclipse lang:xhtml decode:true">&lt;web-app&gt;
+
+   &lt;filter&gt;
+       &lt;filter-name&gt;...&lt;/filter-name&gt;
+       &lt;filter-class&gt;...&lt;/filter-class&gt;
+   &lt;/filter&gt;
+
+   &lt;filter-mapping&gt;
+       &lt;filter-name&gt;...&lt;/filter-name&gt;
        &lt;url-pattern&gt;...&lt;/url-pattern&gt;
        &lt;init-param&gt;
             &lt;param-name&gt;..&lt;/param-name&gt;
             &lt;param-value&gt;..&lt;/param-value&gt;
        &lt;/init-param&gt;
-   &lt;/filter-mapping&gt;  
-  
+   &lt;/filter-mapping&gt;
+
 &lt;/web-app&gt;</pre>
 * Filter'ımızı bu şekilde web.xml de belirttik. &lt;init-param&gt; da ekleyebiliriz.
 
@@ -31232,7 +30549,7 @@ Parametre olarak; Dynamic olarak olusturdugumuz brodcast receiver'ı(innet-clas
 Static bir Broadcast oluşturmamız için öncelikle manifest.xml dosyamız içerisinde bunun tanımını yapmamız gerekmektedir.
 <pre class="lang:xhtml decode:true">&lt;receiver android:name="com.example.wora.broadcastreceiverexample.MyReceiver" &gt;
             &lt;intent-filter&gt;
-                &lt;action android:name="android.intent.action.BATTERY_CHANGED" /&gt;               
+                &lt;action android:name="android.intent.action.BATTERY_CHANGED" /&gt;
             &lt;/intent-filter&gt;
 &lt;/receiver&gt;</pre>
 &nbsp;
@@ -31265,8 +30582,8 @@ Kendi yayınlarımızı da olusturabiliriz. Bunun için manifest.xml içerisinde
             &lt;/intent-filter&gt;
 &lt;/receiver&gt;</pre>
 ^ Kendi uygulamamız içerisinde broadcastı baslatabiliriz;
-<pre class="theme:eclipse lang:java decode:true">Intent intent = new Intent(); 
-intent.setAction("com.wora.CUSTON_INTENT"); 
+<pre class="theme:eclipse lang:java decode:true">Intent intent = new Intent();
+intent.setAction("com.wora.CUSTON_INTENT");
 sendBroadcast(intent);</pre>
 Öncelikle bir intent nesnesi olusturup action özelliğini ayarlamamız gerekmekte. manifest.xml içerisindeki receiver'ın action kısmında tanımladıgımız Stringi vermemiz lazım. Daha sonra sendBroadcast(intent) ile yayınımızı başlatmış oluyoruz.
 
@@ -31589,7 +30906,7 @@ public class JDBCPersonImpl implements IPerson {
 
     @Override
     public ArrayList&lt;PersonBean&gt; getAllPerson(Connection connection) {
- 
+
         System.out.println("getAllPerson method is started.");
         ArrayList&lt;PersonBean&gt; allPerson = new ArrayList&lt;PersonBean&gt;();
         PreparedStatement statement = null;
@@ -31661,8 +30978,8 @@ public class DBConnectListener implements ServletContextListener {
 
         try{
             Class.forName(driver);
-            Connection connection = createConnection(url,username,password); 
-            context.setAttribute("dbConnection",connection); 
+            Connection connection = createConnection(url,username,password);
+            context.setAttribute("dbConnection",connection);
         }catch (Exception e){
             e.printStackTrace();
             throw new RuntimeException("Could't not taken connection..");
@@ -31686,7 +31003,7 @@ public class DBConnectListener implements ServletContextListener {
         }catch (Exception e){
             throw new RuntimeException("createConnection exception : "+e.getMessage());
         }
-        
+
         System.out.println("createConnection method is finished.");
         return connection;
 
@@ -31815,7 +31132,7 @@ Son olarak<strong> web.xml</strong> dosyamız ;
         &lt;servlet-name&gt;GetAllPersonServlet&lt;/servlet-name&gt;
         &lt;servlet-class&gt;GetAllPersonServlet&lt;/servlet-class&gt;
     &lt;/servlet&gt;
-    
+
     &lt;servlet-mapping&gt;
         &lt;servlet-name&gt;GetAllPersonServlet&lt;/servlet-name&gt;
         &lt;url-pattern&gt;/GetAllPersonServlet&lt;/url-pattern&gt;
@@ -32532,28 +31849,28 @@ Argüman almamalıdır.
 </ul>
 Örnek Java Bean ;
 <pre class="theme:eclipse lang:java decode:true ">public class PersonBean{
-    
+
     private String name = null;
     private boolean deceased = false;
- 
+
     /** No-arg constructor (takes no arguments). */
     public PersonBean() {
     }
- 
+
     /**
      * Getter for property
      */
     public String getName() {
         return name;
     }
- 
+
     /**
      * Setter for property
      */
     public void setName(final String value) {
         name = value;
     }
- 
+
     /**
      * Getter for property "deceased"
      * Different syntax for a boolean field (is or get)
@@ -32561,7 +31878,7 @@ Argüman almamalıdır.
     public boolean isDeceased() {
         return deceased;
     }
- 
+
     /**
      * Setter for property
      */
@@ -32851,7 +32168,7 @@ public class MainActivity extends Activity {
                 CityBean bean = new CityBean(name,code);//instantie bean
                 cityList.add(bean);//add city to list
                 cityDBHelper.insertCity(bean);//insert city to db, calling insertCity method on your database helper
-                
+
                 Log.d("İnsert City", cityDBHelper.getDatabaseName()+" - " + new Date().toString() + bean.toString()+" eklendi.");
                 adapter.notifyDataSetChanged();//notify data changed
             }
@@ -33114,12 +32431,12 @@ Acaba siz yardımcı olabilir misiniz?
 			<wp:comment_date_gmt><![CDATA[2016-07-12 05:52:00]]></wp:comment_date_gmt>
 			<wp:comment_content><![CDATA[Selamlar,
 
-Yukarıdaki 3 veriyi(Etiket, Değer 1 ve 2) sarmalayacak bir class oluşturmalısınız. Açıklamaya çalışayım. Yukarıdaki verileri içerecek bir class oluşturunuz. Class adı ihtiyaca göre olabilir, Ürün olabilir mesela. 
+Yukarıdaki 3 veriyi(Etiket, Değer 1 ve 2) sarmalayacak bir class oluşturmalısınız. Açıklamaya çalışayım. Yukarıdaki verileri içerecek bir class oluşturunuz. Class adı ihtiyaca göre olabilir, Ürün olabilir mesela.
 
 List yada Map ikiside ihtiyacı görür ancak benim önerim neye ihtiyaç duyuyorsanız ona göre seçim yapmalısınız. Ben olsam şöyle yapabilirim mesela;
 Etiket verisi her obje için unique(tekil/ayırt edici) ise Map'de tutabilirim. Map'de key olarak etiket'i, value olarak da objenin kendisini tutabilirim. Değilse klasik Liste yapabilirim.
 
-List'de işinizi görebilir, öncesinde ufak birkaç Collections örneği yapabilirsiniz. Performans olarak List'de arama O(n)'dir, Map de ise key-value oldugundan O(1)dir. Map, arama konusunda hızlıdır ancak daha fazla memory kullanır. 
+List'de işinizi görebilir, öncesinde ufak birkaç Collections örneği yapabilirsiniz. Performans olarak List'de arama O(n)'dir, Map de ise key-value oldugundan O(1)dir. Map, arama konusunda hızlıdır ancak daha fazla memory kullanır.
 
 Şuraya http://paste2.org/Y3w4pBhf ufak bir örnek ekledim, umarım faydası olur. Fikir verir.
 
@@ -33224,7 +32541,7 @@ Map yapısı itibari ile  formatındadır. Key-Value şeklinde. K ve V obje oldu
 
 
 
-Mesela; 
+Mesela;
 ArrayList bireyler = new ArrayList();
 bireyler.add("alican");
 bireyler.add("merve");
@@ -33651,7 +32968,7 @@ Java;
 <pre class="theme:eclipse lang:java decode:true ">for (int i=0; i &lt; 4; i++){
     System.out.println(i + ", ");
 }
-  
+
 </pre>
 Scala;
 <pre class="theme:eclipse lang:scala decode:true ">for (i &lt;- 1 to 3){
@@ -33762,7 +33079,7 @@ object Car{
 </pre>
 <h3> Class</h3>
 Objeler için state/behaviors template oluşturmaya yarar.
-<pre class="theme:eclipse lang:scala decode:true">           //constructor  
+<pre class="theme:eclipse lang:scala decode:true">           //constructor
 class MyCar(name : String , color : String , power : Int) {
 
   var carName : String = name //member car
@@ -33822,7 +33139,7 @@ object SampleClass {
     val Car1 = new MyCar("Anadol","Red",250);
     println(Car1.toString());
 
-    
+
     Car1 goCar()
     Car1.goCar()
     Car1 goCar
@@ -34034,7 +33351,7 @@ bu yazımda sınıf ve arabirim tanımlamasına değiniceğim. Öncelikle source
 <h3>Class Declaration</h3>
 <pre class="theme:eclipse lang:java decode:true">public MyClass{  }</pre>
 Yukarıdaki şekilde en basit bir sınıf tanımı yapabiliriz. Önerilen sınıf tanımı ise şu şekildedir;
-<pre class="theme:eclipse lang:java decode:true ">public MyClass{  
+<pre class="theme:eclipse lang:java decode:true ">public MyClass{
 
    //declare instance variable
    ------------------
@@ -34459,7 +33776,7 @@ Method declarasyonunun şu şekilde oldugunu bilelim;
 <pre class="theme:eclipse lang:scala decode:true">def add(a : Int  = 5, b : Int = 7 ) : Int = {
      return a + b
 }
-add() //12 
+add() //12
 add(3,5) // 8</pre>
 * Daha sonra anonymous, Currying ve nested functionlara değineceğim.
 
@@ -34562,9 +33879,9 @@ println(foo("Çaysever")("Alican")) // Çaysever Alican</pre>
 <h3>Nested Function</h3>
 İç içe fonksiyonlar yazabiliriz , şöyleki;
 <pre class="theme:eclipse lang:scala decode:true" title="Nested Func">def outFunc(s : String): Unit ={
-     
+
     inFun()
- 
+
     def inFun(): Unit ={
       for ( i &lt;- 1 to 3){
         println(i + "." +s)
@@ -34848,11 +34165,11 @@ Bir obje oluşturduğumuzda ilk olarak constructor'un çağrıldığını biliyo
 
 
     void Foo2() { }// illegal constructors, it's a method, not a constructor
- 
+
     Foo() { }// not a method or a constructor
- 
+
     Foo2(short s);// looks like an abstract method
- 
+
     static Foo2(float f) { } // can't be static
 
     final Foo2(long x) { } // can't be final
@@ -34939,16 +34256,16 @@ Restful'un farklı response tiplerini desteklediğini giriş yazısında anlatm�
   &lt;groupId&gt;HelloRest&lt;/groupId&gt;
   &lt;artifactId&gt;HelloRest&lt;/artifactId&gt;
   &lt;version&gt;0.0.1-SNAPSHOT&lt;/version&gt;
-  
-  
+
+
   &lt;dependencies&gt;
-  
+
   	&lt;dependency&gt;
   		&lt;groupId&gt;com.sun.jersey&lt;/groupId&gt;
   		&lt;artifactId&gt;jersey-server&lt;/artifactId&gt;
   		&lt;version&gt;1.9&lt;/version&gt;
   	&lt;/dependency&gt;
-  
+
   &lt;/dependencies&gt;
 &lt;/project&gt;</pre>
 * dependency olarak jersey-server eklememiz gerekmekte.
@@ -34966,24 +34283,24 @@ Restful'un farklı response tiplerini desteklediğini giriş yazısında anlatm�
 * Şimdi deployment descriptor(web.xml) içerisine bunu servlet olarak kayıt edelim.
 <pre class="theme:eclipse lang:xhtml decode:true" title="web.xml file for restful">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0"&gt;
-  
-    
+
+
     &lt;servlet&gt;
         &lt;!-- Servlet adı ve class tanımı yapıyoruz --&gt;
         &lt;!-- Dikkat etmemiz gereken servlet-class parametresinin jersey servlet container'ı olmasıdır --&gt;
         &lt;servlet-name&gt;Hello Restful&lt;/servlet-name&gt;
         &lt;servlet-class&gt;com.sun.jersey.spi.container.servlet.ServletContainer&lt;/servlet-class&gt;
-        
-        &lt;!-- init param ile servlete özgü paket tanımı yapıyoruz. İlgili url geldiğinde 
+
+        &lt;!-- init param ile servlete özgü paket tanımı yapıyoruz. İlgili url geldiğinde
              container url'e ulaşmak için bu paket içerisinde arama yapacaktır.--&gt;
         &lt;init-param&gt;
             &lt;param-name&gt;com.sun.jersey.config.property.packages&lt;/param-name&gt;
             &lt;param-value&gt;com.restful.tutorial&lt;/param-value&gt;
         &lt;/init-param&gt;
-        
+
         &lt;load-on-startup&gt;1&lt;/load-on-startup&gt;
     &lt;/servlet&gt;
-    
+
     &lt;servlet-mapping&gt;
         &lt;!-- Servlet mapping yapıyoruz --&gt;
         &lt;!-- url pattern olarak display-name/rest/ ile başlayan herhangi bir url request geldiginde container ilgili paket
@@ -34991,7 +34308,7 @@ Restful'un farklı response tiplerini desteklediğini giriş yazısında anlatm�
         &lt;servlet-name&gt;Hello Restful&lt;/servlet-name&gt;
         &lt;url-pattern&gt;/rest/*&lt;/url-pattern&gt;
     &lt;/servlet-mapping&gt;
-  
+
 &lt;/web-app&gt;</pre>
 * com.sun.jersey.config.property.packages parametresi Jerseyin web service classı için bakacağı paket tanımıdır.
 
@@ -35009,9 +34326,9 @@ import javax.ws.rs.core.MediaType;
 //Sınıf icin path yolu
 @Path("/hello")
 public class Hello {
-	
-	
-	    
+
+
+
 	    @Path("/text") // response olarak text return eden method icin path yolu , /hello/text
 	    @GET // http method type
 	    @Produces(MediaType.TEXT_PLAIN) //response type , text
@@ -35019,7 +34336,7 @@ public class Hello {
 	        return "Hello Restful..";
 	    }
 
-		
+
 	    @Path("/xml") // response olarak text return eden method icin path yolu , /hello/xml
 	    @GET // http method type
 	    @Produces(MediaType.TEXT_XML) // response type , xml
@@ -35050,7 +34367,7 @@ public class Hello {
 	        builder.append(" \"surname\" : \"akkus\" }");
 	        return builder.toString();
 	    }
-            
+
 
 }
 </pre>
@@ -35306,7 +34623,7 @@ Servletin yaşam döngüsünü 3 kısma ayıralım. Bunlar; <strong>new</strong>
 
       HttpServletRequest  request;
       HttpServletResponse response;
-         
+
       try {
              request = (HttpServletRequest) req;
              response = (HttpServletResponse) res;
@@ -35318,7 +34635,7 @@ Servletin yaşam döngüsünü 3 kısma ayıralım. Bunlar; <strong>new</strong>
 * public olan service methodu gelen Servlet request objelerini Http request  objelerine cast eder ve diğer service methodunu çağırır ve objeleri parametre olarak ekler. Diğer service methoduna bakalım;
 <pre class="theme:eclipse lang:java decode:true ">protected void service(HttpServletRequest req, HttpServletResponse resp)
          throws ServletException, IOException {
- 
+
          String method = req.getMethod();
          if (method.equals(METHOD_GET)) {
              long lastModified = getLastModified(req);
@@ -35343,26 +34660,26 @@ Servletin yaşam döngüsünü 3 kısma ayıralım. Bunlar; <strong>new</strong>
              long lastModified = getLastModified(req);
              maybeSetLastModified(resp, lastModified);
              doHead(req, resp);
- 
+
          } else if (method.equals(METHOD_POST)) {
              doPost(req, resp);
-            
+
          } else if (method.equals(METHOD_PUT)) {
-             doPut(req, resp);                  
+             doPut(req, resp);
          } else if (method.equals(METHOD_DELETE)) {
-             doDelete(req, resp);            
+             doDelete(req, resp);
          } else if (method.equals(METHOD_OPTIONS)) {
-             doOptions(req,resp);            
+             doOptions(req,resp);
         } else if (method.equals(METHOD_TRACE)) {
-             doTrace(req,resp);           
+             doTrace(req,resp);
         } else {
             // Note that this means NO servlet supports whatever
-            // method was requested, anywhere on this server. 
+            // method was requested, anywhere on this server.
              String errMsg = lStrings.getString("http.method_not_implemented");
              Object[] errArgs = new Object[1];
              errArgs[0] = method;
              errMsg = MessageFormat.format(errMsg, errArgs);
-        
+
              resp.sendError(HttpServletResponse.SC_NOT_IMPLEMENTED, errMsg);
          }
      }</pre>
@@ -35631,7 +34948,7 @@ List, ekleme ve silmenin hızlı yapıldığı veri yapısıdır. Fakat index ol
 
 Sort edelim;
 <pre class="theme:eclipse lang:scala decode:true ">println(list.sortWith( _ &gt; _)) // buyukten kucuge , List(8, 6, 5, 4, 3, 1)
-println(list.sortWith( _ &lt; _ )) // kucukten buyuge , List(1, 3, 4, 5, 6, 8) 
+println(list.sortWith( _ &lt; _ )) // kucukten buyuge , List(1, 3, 4, 5, 6, 8)
 </pre>
 Daha anlaşılılır ve functional olarak yapalım;
 <pre class="theme:eclipse lang:scala decode:true">var list2 = list.sortWith((e1, e2) =&gt; (e1 compareTo e2 ) &lt; 0 )
@@ -36223,7 +35540,7 @@ Kaynak kodlar : <span style="color: #808080;"><a style="color: #808080;" href="h
 			<wp:comment_author_IP><![CDATA[176.234.13.233]]></wp:comment_author_IP>
 			<wp:comment_date><![CDATA[2015-11-25 23:28:44]]></wp:comment_date>
 			<wp:comment_date_gmt><![CDATA[2015-11-25 21:28:44]]></wp:comment_date_gmt>
-			<wp:comment_content><![CDATA[Emeğinize sağlık.Güzel bir derleme 
+			<wp:comment_content><![CDATA[Emeğinize sağlık.Güzel bir derleme
 
 Fakat Türkçe içerikli bir derlemenin başlığı neden ingilizce olur onu çözemedim.Kolay Gelsin :)]]></wp:comment_content>
 			<wp:comment_approved><![CDATA[1]]></wp:comment_approved>
@@ -36256,7 +35573,7 @@ Fakat Türkçe içerikli bir derlemenin başlığı neden ingilizce olur onu ç�
 			<wp:comment_date><![CDATA[2015-11-26 16:02:08]]></wp:comment_date>
 			<wp:comment_date_gmt><![CDATA[2015-11-26 14:02:08]]></wp:comment_date_gmt>
 			<wp:comment_content><![CDATA[Merhabalar, teşekkür ederim.
-Sürekli ingilizce kaynaklarla ilgilendiğimiz için ister istemez teknik terimleri ingilizce kullanabiliyoruz. Ayrıca herhangi bir sorunla karşılaştığınızda ingilizce olarak arama yaparsanız çok daha fazla ve doğru cevaplara erişebilir, sorununuzu daha çabuk çözebilirsiniz. 
+Sürekli ingilizce kaynaklarla ilgilendiğimiz için ister istemez teknik terimleri ingilizce kullanabiliyoruz. Ayrıca herhangi bir sorunla karşılaştığınızda ingilizce olarak arama yaparsanız çok daha fazla ve doğru cevaplara erişebilir, sorununuzu daha çabuk çözebilirsiniz.
 Kolay gelsin, iyi çalışmalar. :)]]></wp:comment_content>
 			<wp:comment_approved><![CDATA[1]]></wp:comment_approved>
 			<wp:comment_type><![CDATA[]]></wp:comment_type>
@@ -36385,19 +35702,19 @@ public class Employee {
 
 * Local değişkenler kullanılmadan önce initalize edilmelidir. Local değişkenler, intance değişkenler gibi default değerlere sahipt değildir.
 <pre class="theme:eclipse lang:java decode:true">public static void main(String args...){
-     int localVariable; 
+     int localVariable;
      System.out.println(localVariable); // compile error
 }</pre>
 <strong>Shadowing :  </strong>Local değişkenin, aynı isme sahip instance değişkeni gölgelemesidir.
 <pre class="theme:eclipse lang:java decode:true">class Shadowing {
      int count = 9; // Declare an instance variable named count
-    
+
      public void logIn() {
        int count = 10; // Declare a local variable named count
        // shadowing burada gerceklesmektedir.
        System.out.println("local variable count is " + count);
      }
-     
+
      public void count() {
        System.out.println("instance variable count is " + count);
      }
@@ -36472,7 +35789,7 @@ public class DeclareEnums {
 
 
 public class DeclareEnums {
-    
+
     enum LEVEL{
         HIGH(10), MEDIUM(6), LOW(4);
 
@@ -36704,43 +36021,43 @@ Polymorphism, OOP jargonunda birden fazla form'a sahip olmak demektir. Bir nesn
 Java'da iki tip polymorphism(çok biçimlilik) vardır. Bunlar; static(compile time) polymorphism ve dynamic(runtime) polymorphism'dır.
 
 <strong>Compile time polymorphism : </strong>Method overloading olarak bilinir.
-<pre class="theme:eclipse lang:java decode:true ">package oopsconcept;  
-class Overloadsample {  
-    public void print(String s){  
-        System.out.println("First Method with only String- "+ s);  
-    }  
-    public void print (int i){  
-        System.out.println("Second Method with only int- "+ i);  
-    }  
-    public void print (String s, int i){  
-        System.out.println("Third Method with both- "+ s + "--" + i);  
-    }  
-}  
-public class PolymDemo {  
-    public static void main(String[] args) {  
-        Overloadsample obj = new Overloadsample();  
-        obj.print(10);  
-        obj.print("Amit");  
-        obj.print("Hello", 100);  
-    }  
+<pre class="theme:eclipse lang:java decode:true ">package oopsconcept;
+class Overloadsample {
+    public void print(String s){
+        System.out.println("First Method with only String- "+ s);
+    }
+    public void print (int i){
+        System.out.println("Second Method with only int- "+ i);
+    }
+    public void print (String s, int i){
+        System.out.println("Third Method with both- "+ s + "--" + i);
+    }
+}
+public class PolymDemo {
+    public static void main(String[] args) {
+        Overloadsample obj = new Overloadsample();
+        obj.print(10);
+        obj.print("Amit");
+        obj.print("Hello", 100);
+    }
 }</pre>
 <strong>Dynamic Polymorphism(Run time) : </strong>Method overriding olarak bilinir. Subclass objesi oluşturulduğunda süperclassın özelliklerine de sahip olur. Android ve Blackberry burada Mobile sınıfının sublclass'larıdır. Bu methodlar override edilerek run time anında sublclass'lar değişik form'lara sahip olabilir.
-<pre class="theme:eclipse lang:java decode:true">package oopsconcept;  
-public class OverridingDemo {  
-    public static void main(String[] args) {  
+<pre class="theme:eclipse lang:java decode:true">package oopsconcept;
+public class OverridingDemo {
+    public static void main(String[] args) {
 
-        //Creating Object of SuperClass and calling getModel Method  
-        Mobile m = new Mobile("Nokia", "Win8", "Lumia",10000);  
-        System.out.println(m.getModel());  
+        //Creating Object of SuperClass and calling getModel Method
+        Mobile m = new Mobile("Nokia", "Win8", "Lumia",10000);
+        System.out.println(m.getModel());
 
-        //Creating Object of Sublcass and calling getModel Method  
-        Android a = new Android("Samsung", "Android", "Grand",30000);  
-        System.out.println(a.getModel());  
+        //Creating Object of Sublcass and calling getModel Method
+        Android a = new Android("Samsung", "Android", "Grand",30000);
+        System.out.println(a.getModel());
 
-        //Creating Object of Sublcass and calling getModel Method  
-        Blackberry b = new Blackberry("BlackB", "RIM", "Curve",20000);  
-        System.out.println(b.getModel());  
-    }  
+        //Creating Object of Sublcass and calling getModel Method
+        Blackberry b = new Blackberry("BlackB", "RIM", "Curve",20000);
+        System.out.println(b.getModel());
+    }
 }</pre>
 &nbsp;
 <h4>Özet</h4>
@@ -37128,7 +36445,7 @@ public class LoginServlet extends HttpServlet {
             session.setAttribute("user","Alican Akkus");// session attribute
             session.setMaxInactiveInterval(15*60);//session suresi 15 dk
 
-            Cookie cookie = new Cookie("user",user);// crate new cookie 
+            Cookie cookie = new Cookie("user",user);// crate new cookie
             cookie.setMaxAge(30*60);
             response.addCookie(cookie);
             response.sendRedirect("/login.jsp");//senRedirect methodu ile requesti login.jsp'ye yönlendiriyoruz.
@@ -37317,7 +36634,7 @@ MVC hakkında bilgi sahibi değilseniz <span style="color: #808080;"><a style="c
 Her uygulama kendi içerisinde kullandığı dataları organize etmek isteyecektir. Birbiri ile ilişkili datalar belli bir model olarak kullanılır. Veriyi soyutlamak , gerçek hayattaki nesneler gibi düşünmek işlerimizi kolaylaştırmaktadır. Backbone, kendi modellerini oluşturmanızı ve yönetmenizi sağlar. Backbone, default olarak modelleri persist( kalıcılık/db , yakında JPA'da yazıcam insaAllah :) ) eder. Default olarak localStorage üzerinde modeller persist edilir. Ek olarak RESTful entegrasyonu ile server üzerinde de persist edebiliriz. Model üzerinde validasyon kontrolllerini de gerçekleştirebiliriz. Bir modelin, persist edilmeden önce doğruluğu belirlenmelidir. Yanlış bilgi adamı kalpten götürür :) . Backbone Model nasıl kullanırız bir bakalım;
 <pre class="theme:eclipse lang:js decode:true ">Person = Backbone.Model.extend({
      ....
-     ....        
+     ....
 });</pre>
 Bir Person modelimizi oluşturduk. Bunun için Backbone.Model sınıfından extend ettik. Yeni tanımlanmış her model Backbone.Model üzerinden extend edilmelidir. Daha sonra Person modelimiz içerisine değişken, method, yapılandırıcı vs. yazacağız.
 
@@ -37368,27 +36685,27 @@ js dosyaları şu sırayla sayfaya dahil edilmelidir.
     &lt;script type="text/javascript" src="/js/backbone.js"&gt;&lt;/script&gt;
 &lt;/head&gt;
     &lt;script&gt;
-        
+
         Person = Backbone.Model.extend({
             //....
         });
-        
+
         PersonCollection = Backbone.Collection.extend({
             //....
             model : Person
         });
-        
+
         PersonView = Backbone.View.extend({
             //....
         });
-        
+
         PersonViewList = Backbone.Router.extend({
             //....
         });
-         
+
     &lt;/script&gt;
-    
-&lt;body&gt;    
+
+&lt;body&gt;
 &lt;/body&gt;
 
 &lt;/html&gt;</pre>
@@ -37482,7 +36799,7 @@ Not : destroy() methodunun sonucunu dinleyebiliriz;
 Modelimizin bir kopyasını oluşturalım;
 <pre class="lang:js decode:true">var person = new Person({name : 'Alican', surname : 'Akkus'});
 var person2 = person.clone();
- 
+
 console.log(person.get('name')); // Alican
 console.log(person2.get('name')); // Alican</pre>
 <h3>Model Attributes</h3>
@@ -37514,11 +36831,11 @@ Not : <strong>person.name</strong> ifadesi invalid bir durumdur. Backbone , attr
 Model üzerinde attr set edelim;
 <pre class="lang:js decode:true">var person = new Person({name : 'Abdullah', surname : 'Sarıkaya', age : 21});
 document.write(person.get('name') + " - " + person.get('age') +"&lt;br&gt;"); //Abdullah - 21
-        
+
 person.set('name' , 'Alican');
 person.set('age' , 22);
 document.writeln(person.get('name') + " - " + person.get('age')+"&lt;br&gt;"); //Alican - 22
-        
+
 person.set({name : 'Çay', surname : 'Sever', age : '22'});
 document.writeln(person.get('name') + " - " + person.get('age')+"&lt;br&gt;"); //Çay - 22</pre>
 * Tek tek set edebileceğimiz gibi bir kerede de set edebiliriz.
@@ -37537,7 +36854,7 @@ Modelimiz için fonksiyon tanımı yapalım ve kullanalım;
          surname : 'Sever',
          age : 0
      },
-            
+
      increaseAge : function(age){
          var oldAge = this.get('age');
          this.set('age' , oldAge + age);
@@ -37545,7 +36862,7 @@ Modelimiz için fonksiyon tanımı yapalım ve kullanalım;
      info : function(){
          document.write(this.get('name') + " - " + this.get('age')  + "&lt;br&gt;");
      }
-            
+
 });</pre>
 <pre class="lang:js decode:true ">var person = new Person({name : 'Abdullah', surname : 'Sarıkaya', age : 21});
 person.info(); // Abdullah - 21
@@ -37564,7 +36881,7 @@ Modelimiz üzerinde validasyon kullanalım;
 Modelimiz içerisine validate ekledik şimdi kullanalım;
 <pre class="lang:js decode:true ">var person = new Person({name : "Alican", surname : "Akkus", age : 21});
 person.set('age' , -10);
-        
+
 if(!person.isValid()){
       console.log(person.validationError);
 }</pre>
@@ -37583,7 +36900,7 @@ Modelimiz üzerinde constructor ve initialize oluşturabiliriz. Kelime anlamı o
      },
       initialize : function(){
           console.log("Create model object.");
-      },           
+      },
 });</pre>
 Modelimizden nesne oluşturduğumuzda initalize çalışacaktır.
 <pre class="lang:js decode:true">var person = new Person({"name" : "Alican", "surname" : "Akkus" , age : 2}); // Create model object</pre>
@@ -37596,14 +36913,14 @@ Bir backbone model objesi oluşturulduğunda constructor çağrılır. Construct
      },
       initialize : function(){
           console.log("Create model object.");
-      },           
+      },
       constructor : function(attributes, options ){
-          console.log("Person\' constructor had been called"); 
+          console.log("Person\' constructor had been called");
       }
 });</pre>
 * Bu şekilde obje oluşturduğumuzda önce constructor daha sonra initalize methodları çağrılacaktır. Ancak constructor'un bu şekilde bırakırsak çalışmayacaktır. Consol'a baktığımızda constructor çalışırken initalize methodunun çağrılmadığı görünecektir. Constructor methodunu şöyle değiştirelim;
 <pre class="lang:js decode:true">constructor : function(attributes, options ){
-      console.log("Person\' constructor had been called"); 
+      console.log("Person\' constructor had been called");
       Backbone.Model.apply(this, arguments);// initialize icin ve backbone'nun bazı ayarları yapması için
 }</pre>
 * Yukarıdaki şekilde constructor yazdığımız zaman doğru bir şekilde objemiz oluşturulacaktır. Kendi ihtiyaçlarımıza göre constructor/initalize methodlarını override edebiliriz.
@@ -39433,14 +38750,14 @@ Contaıner yukarıdaki jsp kodunu şu şekilde yorumlayacaktır;
 
    int count=1;
 
-public void _jspService(HttpServletRequest request,HttpServletResponse response) 
+public void _jspService(HttpServletRequest request,HttpServletResponse response)
                                throws IOException,ServletException
 
   {
       PrintWriter out = response.getWriter();
       response.setContenType("text/html");
       out.write("&lt;html&gt;&lt;body&gt;");
-      
+
       out.write("Page count is:");
       out.print(count++);
       out.write("&lt;/body&gt;&lt;/html&gt;");
@@ -39479,14 +38796,14 @@ Not 2 : Değikenin , method tanımından sonra yapılmasında Java için bir ref
    }
    int count=1;
 
-public void _jspService(HttpServletRequest request,HttpServletResponse response) 
+public void _jspService(HttpServletRequest request,HttpServletResponse response)
                                throws IOException,ServletException
 
   {
       PrintWriter out = response.getWriter();
       response.setContenType("text/html");
       out.write("&lt;html&gt;&lt;body&gt;");
-   
+
       out.write("Page count is now :");
       out.print(doubleCount());
       out.write("&lt;/body&gt;&lt;/html&gt;");
@@ -39670,11 +38987,11 @@ Her Backbone model nesnesi kendisini diğer nesnelerden ayırt edecek bir unique
         &lt;title&gt;Beginner for Backbone.js- Hello backbone&lt;/title&gt;
         &lt;script type="text/javascript" src="/js/jquery-2.1.3.min.js"&gt;&lt;/script&gt;
         &lt;script type="text/javascript" src="/js/underscore.js"&gt;&lt;/script&gt;
-        &lt;script type="text/javascript" src="/js/backbone.js"&gt;&lt;/script&gt;       
-    &lt;/head&gt;   
-    &lt;body&gt;   
+        &lt;script type="text/javascript" src="/js/backbone.js"&gt;&lt;/script&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
        &lt;script&gt;
-    
+
            Person = Backbone.Model.extend({
                defaults : {
                    name : '',
@@ -39683,15 +39000,15 @@ Her Backbone model nesnesi kendisini diğer nesnelerden ayırt edecek bir unique
                },
                initialize : function(){
                    console.log("Create model object.");
-               }             
+               }
            });
-           
+
            var person = new Person({"name" : "Alican", "surname" : "Akkus" , age : 22});
            var person2 = new Person({"name" : "Ahmet", "surname" : "Ateş" , age : 22});
            console.log(person);
-           console.log(person2);       
+           console.log(person2);
        &lt;/script&gt;
-      
+
     &lt;/body&gt;
 &lt;/html&gt;</pre>
 Tarayıcı konsoluna bakalım;
@@ -39716,7 +39033,7 @@ console.log(person);</pre>
 
 Her modelin kendine özgü bir attribute alanı vardır. Burada açık olarak id ile değer vermiş bulunduk. Bunu implicit olarak kapalı şekilde vermeye bakalım, model declarasyonumuzu değiştirelim;
 <pre class="theme:eclipse lang:js decode:true ">&lt;script&gt;
-         
+
            Person = Backbone.Model.extend({
                defaults : {
                    ID : '',
@@ -39727,11 +39044,11 @@ Her modelin kendine özgü bir attribute alanı vardır. Burada açık olarak id
                idAttribute : 'ID',
                initialize : function(){
                    console.log("Create model object.");
-               }             
+               }
            });
-           
+
            var person = new Person({ID : 5});
-           console.log(person);           
+           console.log(person);
        &lt;/script&gt;
 </pre>
 Modelimiz üzerinde kullanacağımız idAttribute ile modelimiz için id olacak olan attribute tanımını gerçekleştiririz. Konsolda şunu görebiliriz;
@@ -39771,7 +39088,7 @@ Backbone için çoğu yerde crud işlemlerinin kolayca yapıldığını görmü�
 Not : Model üzerindeki herhangi bir attribute değişmiş ise POST yerine PUT methodu çağrılacaktır.
 
 Modelimiz için url template tanımı yapalım;
-<pre class="theme:eclipse lang:js decode:true ">&lt;script&gt;      
+<pre class="theme:eclipse lang:js decode:true ">&lt;script&gt;
            Person = Backbone.Model.extend({
                urlRoot : "/rest/api/person",
                defaults : {
@@ -39783,8 +39100,8 @@ Modelimiz için url template tanımı yapalım;
                idAttribute : 'ID',
                initialize : function(){
                    console.log("Create model object.");
-               }                 
-           });      
+               }
+           });
        &lt;/script&gt;</pre>
 Backbone modelimizi server üzerinde kayıt etmek için urlRoot tanımını modelimiz için yapmamız gerekicektir.
 <h4>Create</h4>
@@ -39824,8 +39141,8 @@ Modeli serverdan okumak için model nesnemiz üzerinden fetch methodunu çağır
            person.fetch({
         	  success: function(person){
         		  alert(person.get("name"));
-        	  } 
-        	   
+        	  }
+
            });</pre>
 Url template + id ile GET methodu kullanılarak request yapılacaktır.
 
@@ -39947,7 +39264,7 @@ Mutlu kalın, kod'la kalın ve bol bol Çay için :)
 			<wp:comment_date><![CDATA[2015-06-25 15:20:47]]></wp:comment_date>
 			<wp:comment_date_gmt><![CDATA[2015-06-25 12:20:47]]></wp:comment_date_gmt>
 			<wp:comment_content><![CDATA[Selamlar,
-Blog'da restful ile alakalı birkac yazı yazdım surada; 
+Blog'da restful ile alakalı birkac yazı yazdım surada;
 http://alicanakkus.com/web-services/
 Kolay gelsin =)]]></wp:comment_content>
 			<wp:comment_approved><![CDATA[1]]></wp:comment_approved>
@@ -40030,7 +39347,7 @@ public final class BasicCounter_jsp extends org.apache.jasper.runtime.HttpJspBas
          session = pageContext.getSession();
          out = pageContext.getOut();
          _jspx_out = out;
-         
+
          out.write(“\r&lt;html&gt;\r&lt;body&gt;\r”);
          out.write(“\rThe page count is now: \r”);
          out.print( ++count );
@@ -40600,7 +39917,7 @@ myCollection.set([person1, {id : 6, 'name' : 'Ates','surname' : 'Ates'}]);</pre>
 <a href="http://alicanakkus.com/wp-content/uploads/2015/07/Screenshot-from-2015-07-15-230948.png"><img class="aligncenter size-full wp-image-937" src="http://alicanakkus.com/wp-content/uploads/2015/07/Screenshot-from-2015-07-15-230948.png" alt="Screenshot from 2015-07-15 23:09:48" width="341" height="157" /></a>
 
 İlk olarak person4 objesi eklendiğinden dolayı 8 id ile eklendi bilgisini gördük. Daha sonra person3'ü sildik ve logu gördük. Burada önemli olan set methodudur. Set methodu ile collection üzerinde model set edebiliriz. Set methodu içerisinde dikkat ederseniz person1 yer almakta ve id 6 olan person2 objesinin 'name' alanı değiştirilmiş. Değişimden dolayı Model is changed : 6 logunu görmemiz normal. Ancak Model is remove : 8 kısmı person4 objesinin collection üzerinden silindiğini gösterir. Set methodunda person4 objesine yer vermediğimiz için collection üzerinden silindi.
-<pre class="">myCollection.set([person1, {id : 6, 'name' : 'Ates','surname' : 'Ates'}]); 
+<pre class="">myCollection.set([person1, {id : 6, 'name' : 'Ates','surname' : 'Ates'}]);
 //id 6 olan modeli set et/change ve person4 objesini collection üzerinden sil.</pre>
 <strong>Collection sorting, koleksiyonumuzu sıralayalım. Bunun için collection tanımı içerisine comparator tanımı yapmamız gerekicek. Name bilgisine göre sıralı biçimde modellerimiz collection üzerinde yer alacaktır;</strong>
 <pre class="">comparator : function(model){
@@ -40895,12 +40212,12 @@ Kullanmış olduğum ve önemli gördüğüm expressionlara örnek bir xml üzer
 		&lt;name&gt;Alican&lt;/name&gt;
 		&lt;surname&gt;Akkus&lt;/surname&gt;
 	&lt;/employee&gt;
-	
+
 	&lt;employee id="2"&gt;
 		&lt;name&gt;Abdullah&lt;/name&gt;
 		&lt;surname&gt;Sarıkaya&lt;/surname&gt;
 	&lt;/employee&gt;
-	
+
 	&lt;employee&gt;
 		&lt;name&gt;Ahmet&lt;/name&gt;
 		&lt;surname&gt;Ateş&lt;/surname&gt;
@@ -41051,56 +40368,56 @@ Yukarıdaki xml içerisinde tomcatin match edeceği username ve password bilgile
 <pre class="lang:default decode:true">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0"&gt;
   &lt;display-name&gt;TomcatAuth&lt;/display-name&gt;
-  
+
   &lt;servlet&gt;
     &lt;servlet-name&gt;Jersey&lt;/servlet-name&gt;
     &lt;servlet-class&gt;com.sun.jersey.spi.container.servlet.ServletContainer&lt;/servlet-class&gt;
-    
+
     &lt;init-param&gt;
       &lt;param-name&gt;com.sun.jersey.config.property.packages&lt;/param-name&gt;
       &lt;param-value&gt;com.wora.restful&lt;/param-value&gt;
     &lt;/init-param&gt;
-    
+
     &lt;init-param&gt;
       &lt;param-name&gt;com.sun.jersey.spi.container.ResourceFilters&lt;/param-name&gt;
       &lt;param-value&gt;com.sun.jersey.api.container.filter.RolesAllowedResourceFilterFactory&lt;/param-value&gt;
     &lt;/init-param&gt;
-    
+
     &lt;security-role-ref&gt;
       &lt;role-name&gt;superadmin&lt;/role-name&gt;
       &lt;role-link&gt;superadmin&lt;/role-link&gt;
     &lt;/security-role-ref&gt;
-    
+
     &lt;security-role-ref&gt;
       &lt;role-name&gt;user&lt;/role-name&gt;
       &lt;role-link&gt;user&lt;/role-link&gt;
     &lt;/security-role-ref&gt;
-    
+
   &lt;/servlet&gt;
-  
+
   &lt;servlet-mapping&gt;
     &lt;servlet-name&gt;Jersey&lt;/servlet-name&gt;
     &lt;url-pattern&gt;/rest/*&lt;/url-pattern&gt;
   &lt;/servlet-mapping&gt;
-  
+
   &lt;servlet&gt;
   	&lt;servlet-name&gt;AuthTest&lt;/servlet-name&gt;
   	&lt;servlet-class&gt;com.wora.test.AuthTestServlet&lt;/servlet-class&gt;
   &lt;/servlet&gt;
-  
+
   &lt;servlet-mapping&gt;
   	&lt;servlet-name&gt;AuthTest&lt;/servlet-name&gt;
   	&lt;url-pattern&gt;/test&lt;/url-pattern&gt;
   &lt;/servlet-mapping&gt;
-  
+
   &lt;security-role&gt;
     &lt;role-name&gt;superadmin&lt;/role-name&gt;
   &lt;/security-role&gt;
-  
+
   &lt;security-role&gt;
     &lt;role-name&gt;user&lt;/role-name&gt;
   &lt;/security-role&gt;
-  
+
   &lt;security-constraint&gt;
     &lt;web-resource-collection&gt;
       &lt;web-resource-name&gt;Secured resources&lt;/web-resource-name&gt;
@@ -41109,17 +40426,17 @@ Yukarıdaki xml içerisinde tomcatin match edeceği username ve password bilgile
       &lt;http-method&gt;GET&lt;/http-method&gt;
       &lt;http-method&gt;POST&lt;/http-method&gt;
     &lt;/web-resource-collection&gt;
-    
+
     &lt;auth-constraint&gt;
       &lt;role-name&gt;superadmin&lt;/role-name&gt;
       &lt;role-name&gt;user&lt;/role-name&gt;
     &lt;/auth-constraint&gt;
   &lt;/security-constraint&gt;
-  
+
   &lt;login-config&gt;
     &lt;auth-method&gt;BASIC&lt;/auth-method&gt;
   &lt;/login-config&gt;
-  
+
 &lt;/web-app&gt;</pre>
 Yukarida web.xml içerisindeki tanımlara bir bakalım;
 <ul>
@@ -41146,15 +40463,15 @@ import javax.ws.rs.Path;
 @DeclareRoles("{superadmin, user}")
 public class PersonRest {
 
-	
+
 	@GET
 	@Path("/appinfo")
 	@RolesAllowed("superadmin")
 	public String getApplicatoinVersion(){
 		return "Tomcat Auth " + "v.20";
 	}
-	
-	
+
+
 }
 </pre>
 Çok kısa olan rest servisimizdeki annotationlara bakalım;
@@ -41383,7 +40700,7 @@ public class OSCacheSingleton extends GeneralCacheAdministrator {
 
 	/**
 	 * Singleton sinifindan olusturulabilen tek nesneye ulasmak icin instance() metodu kullanilir.
-	 * 
+	 *
 	 * @return OSCacheSingleton static Singleton nesnesi
 	 */
 
@@ -41419,7 +40736,7 @@ public abstract class AbstractCacheManager {
 
         //cache üzerinde bir key ile tutulan objeyi siler.
 	public static void remove(String cacheKey) {
-		cacheAdmin.removeEntry(cacheKey);	
+		cacheAdmin.removeEntry(cacheKey);
 	}
 
         //cache'e bir key ile obje ekler. Bu obje javadakü tüm objeler olabilir.
@@ -41521,7 +40838,7 @@ public class CacheService extends AbstractCacheManager {
 				} else {
 					cancelCacheUpdate(cacheKey);
 				}
-				
+
 				//çekilen obje return edilsin.
 				return productDTO;
 			} catch (Exception e) {
@@ -41572,7 +40889,7 @@ public class ServiceFacade {
 	// Services
 	private IShopServiceDAO shopService;
 	private IProductServiceDAO productService;
-	
+
 	public static ServiceFacade getInstance() {
 		return instance;
 	}
@@ -41589,7 +40906,7 @@ public class ServiceFacade {
 
 			// Cache Service
 			cacheService = new CacheService();
-		
+
 
 		} catch (Exception e) {
 			logger.error(e, e);
@@ -42484,7 +41801,7 @@ config implicit objesi ServletConfig objesidir ve Jsp sayfasınına özgüdür. 
             &lt;param-value&gt;alican@alicanakkus.com&lt;/param-value&gt;
          &lt;/init-param&gt;
      &lt;/servlet&gt;
-  
+
     &lt;servlet-mapping&gt;
        &lt;servlet-name&gt;Home&lt;/servlet-name&gt;
        &lt;url-pattern&gt;/Home.jsp&lt;/url-pattern&gt;
@@ -42890,7 +42207,7 @@ public class VaadinHelloWordUI extends UI {
 		final VerticalLayout layout = new VerticalLayout();//bir layout olusturduk.
 		setContent(layout);
 
-		final Button button = new Button("Click Me");//com.vaadin.ui paketi altinda bir cok ui element var. 
+		final Button button = new Button("Click Me");//com.vaadin.ui paketi altinda bir cok ui element var.
 		final TextField textfield = new TextField("Name..");
 
 		button.addClickListener(new Button.ClickListener() {
@@ -43085,9 +42402,9 @@ Mimarideki başlıkları açıklayalım;
 </ul>
 Bir önceki yazımızda kullandıgımız olan örneği hatırlayalım;
 <pre class="theme:eclipse lang:java decode:true">package com.example.vaadinhelloword;
- 
+
 import javax.servlet.annotation.WebServlet;
- 
+
 import com.vaadin.annotations.Theme;
 import com.vaadin.annotations.Title;
 import com.vaadin.annotations.VaadinServletConfiguration;
@@ -43099,40 +42416,40 @@ import com.vaadin.ui.Notification;
 import com.vaadin.ui.TextField;
 import com.vaadin.ui.UI;
 import com.vaadin.ui.VerticalLayout;
- 
+
 @SuppressWarnings("serial")
 @Title("ÇaySever - Vaadin Tutorials") // sayfada görünecek olan title
 @Theme("valo") // valo temasi kullanildi. Temalara deginecegim.
-@Push // server push olacaktır. 
+@Push // server push olacaktır.
 public class VaadinHelloWordUI extends UI {
- 
+
         // olusturdugumuz ui bir url ile map ediliyor.
         @WebServlet(value = "/*", asyncSupported = true)
         @VaadinServletConfiguration(productionMode = false, ui = VaadinhellowordUI.class)
         public static class Servlet extends VaadinServlet {
         }
- 
+
         // abstract olan init methodunu override ediyooruz ve ekrani ciziyoruz
         @Override
         protected void init(VaadinRequest request) {
-  
+
            final VerticalLayout layout = new VerticalLayout();//bir layout olusturduk.
            setContent(layout);
- 
+
            final Button button = new Button("Click Me");//com.vaadin.ui paketi altinda bir cok ui element var.
            final TextField textfield = new TextField("Name..");
- 
+
            button.addClickListener(new Button.ClickListener() {
- 
+
                  @Override
                  public void buttonClick(ClickEvent event) {
                       Notification.show("Hello! "+textfield.getValue());// buton click eventinde notifiaction verecegiz.
                  }
            });
- 
+
        layout.addComponent(textfield);// compoenentleri ekliyoruz.
        layout.addComponent(button);
- 
+
       }
 }
 </pre>
@@ -43327,18 +42644,18 @@ public class HelloServlet extends HttpServlet {
     &lt;welcome-file&gt;default.htm&lt;/welcome-file&gt;
     &lt;welcome-file&gt;default.jsp&lt;/welcome-file&gt;
   &lt;/welcome-file-list&gt;
-  
-  
+
+
   &lt;servlet&gt;
       &lt;servlet-name&gt;Hello Servlet&lt;/servlet-name&gt;
       &lt;servlet-class&gt;com.wora.servlet.HelloServlet&lt;/servlet-class&gt;
   &lt;/servlet&gt;
-  
+
   &lt;servlet-mapping&gt;
       &lt;servlet-name&gt;Hello Servlet&lt;/servlet-name&gt;
       &lt;url-pattern&gt;/hello&lt;/url-pattern&gt;
   &lt;/servlet-mapping&gt;
-  
+
 &lt;/web-app&gt;</pre>
 Browserdan şunu girelim : http://localhost:8081/HelloWord/hello ve çıktıya bakalım;
 
@@ -43501,18 +42818,18 @@ public class PersonService implements IPersonDao{
 	}
 
 	public void init(Properties appProps) throws Exception {
-		// TODO somethings	
+		// TODO somethings
 	}
-	
+
 }
 </pre>
 <strong>web.xml</strong>
 <pre class="theme:eclipse lang:xhtml decode:true">&lt;web-app id="WebApp_ID" version="2.4"
 	xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee
 	http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"&gt;
 	&lt;display-name&gt;Restful Web Application&lt;/display-name&gt;
-	
+
 	&lt;listener&gt;
 		&lt;listener-class&gt;com.wora.servlet.ContextListener&lt;/listener-class&gt;
 	&lt;/listener&gt;
@@ -43557,13 +42874,13 @@ public class ContextListener implements ServletContextListener{
 	}
 
 	public void contextInitialized(ServletContextEvent event) {
-		
+
 		Properties appProps = null;
 		try {
 			appProps = new Properties();
 			String appPropsPath = event.getServletContext().getRealPath("/WEB-INF/classes/RestfulTutorial.properties");
 
-			
+
 			File f = new File(appPropsPath);
 			if (f.exists() &amp;&amp; !f.isDirectory()) {
 				try {
@@ -43577,13 +42894,13 @@ public class ContextListener implements ServletContextListener{
 			} else {
 				//TODO log
 			}
-			
+
 
 			ServiceFacade.getInstance().start(appProps);
 		} catch (Exception e) {
 			//TODO log
 		}
-		
+
 	}
 
 }
@@ -43602,30 +42919,30 @@ import com.wora.dao.person.PersonDaoImpl;
 public class ServiceFacade {
 	private static ServiceFacade applicationInstance;
 	private IPersonDao personDao = null;
-	
+
 	public static ServiceFacade getInstance(){
 		if(applicationInstance == null)
 			applicationInstance = new ServiceFacade();
-		
+
 		return applicationInstance;
 	}
-	
+
 	public void start(Properties appProps){
-		
-		
+
+
 		try{
-			
+
 			personDao = new PersonDaoImpl();
 			personDao.init(appProps);
-			
-			
-			
+
+
+
 		}catch(Exception e){
 			//TODO Log
 		}
-		
+
 	}
-	
+
 	public  Person getPerson(long personId) throws Exception{
 		return personDao.getPerson(personId);
 	}
@@ -43670,7 +42987,7 @@ public class PersonDaoImpl extends DBConnectionHelper implements IPersonDao{
 	public void init(Properties appProps) throws Exception {
 		super.init(appProps);
 	}
-	
+
 	public Person getPerson(long personId) throws Exception {
 		// TODO Auto-generated method stub
 		return null;
@@ -43708,24 +43025,24 @@ import com.wora.bean.DBParam;
 
 public class DBConnectionHelper {
 	DBParam dbParam = null;
-	
+
 	public void init(Properties appProps) throws Exception{
 		dbParam = new DBParam();
-		
+
 		dbParam.setDriver(appProps.getProperty("database.driver"));
 		dbParam.setUrl(appProps.getProperty("database.url"));
 		dbParam.setUsername(appProps.getProperty("database.username"));
 		dbParam.setPassword(appProps.getProperty("database.password"));
 	}
-	
+
 	public Connection getConnection() throws Exception{
-		
+
 		Class.forName(dbParam.getDriver());
 		Connection conn = DriverManager.getConnection(dbParam.getUrl(), dbParam.getUsername(), dbParam.getPassword());
 
-		return conn;	
+		return conn;
 	}
-	
+
 	public void closeConnection(Connection connection){
 		try{
 			if(connection != null){
@@ -43735,7 +43052,7 @@ public class DBConnectionHelper {
 			//TODO log
 		}
 	}
-	
+
 	public void closeResultSet(ResultSet rs){
 		try{
 			if(rs != null){
@@ -43745,7 +43062,7 @@ public class DBConnectionHelper {
 			//TODO log
 		}
 	}
-	
+
 	public void closePreparedStatement(PreparedStatement psmt){
 		try{
 			if(psmt != null){
@@ -43755,7 +43072,7 @@ public class DBConnectionHelper {
 			//TODO log
 		}
 	}
-	
+
 }
 </pre>
 <strong>Not : Yazı sonunda proje'ye erişebileceğiniz link yer alacaktır.</strong>
@@ -43861,7 +43178,7 @@ Gereken durumlarda ilgili kaynağımız için auth'a yani kimlik dogrulamaya iht
 	&lt;welcome-file-list&gt;
 		&lt;welcome-file&gt;index.jsp&lt;/welcome-file&gt;
 	&lt;/welcome-file-list&gt;
-	
+
 	&lt;security-constraint&gt;
 		&lt;web-resource-collection&gt;
 			&lt;web-resource-name&gt;Secured resources&lt;/web-resource-name&gt;
@@ -43945,7 +43262,7 @@ Bunun için web.xml dosyamızda şu değişiklikleri yapalım;
 	&lt;welcome-file-list&gt;
 		&lt;welcome-file&gt;index.jsp&lt;/welcome-file&gt;
 	&lt;/welcome-file-list&gt;
-	
+
 	&lt;security-constraint&gt;
 		&lt;web-resource-collection&gt;
 			&lt;web-resource-name&gt;Secured resources&lt;/web-resource-name&gt;
@@ -44524,7 +43841,7 @@ import play.db.jpa.Model;
 @Entity
 public class User extends Model {
     public String login;
-  
+
     @Required @Email
     public String email;
 }
@@ -44893,14 +44210,14 @@ package controllers;
 import router.RoutesPrefix;
 
 public class routes {
-  
+
 
   public static final controllers.ReverseHomeController HomeController = new controllers.ReverseHomeController(RoutesPrefix.byNamePrefix());
   public static final controllers.ReverseAssets Assets = new controllers.ReverseAssets(RoutesPrefix.byNamePrefix());
   public static final controllers.ReverseCountController PersonController = new controllers.ReverseCountController(RoutesPrefix.byNamePrefix());
 
   public static class javascript {
-    
+
     public static final controllers.javascript.ReverseHomeController HomeController = new controllers.javascript.ReverseHomeController(RoutesPrefix.byNamePrefix());
     public static final controllers.javascript.ReverseAssets Assets = new controllers.javascript.ReverseAssets(RoutesPrefix.byNamePrefix());
     public static final controllers.javascript.ReversePersonController CountController = new controllers.javascript.ReversePersonController(RoutesPrefix.byNamePrefix());
@@ -45508,7 +44825,7 @@ Action'larımız;
         PersonService personService = PersonService.getInstance();
         cacheApi.set("persons", personService.getPersons(), 60 * 15);
         return ok(index.render());// response
-    
+
 }
 public Result getPersons() {
         PersonService personService = PersonService.getInstance();
@@ -45725,16 +45042,16 @@ Daha sonra detaylı olarak pom'un içeriğine değinecegiz ama şuan örnek bir 
   &lt;version&gt;1.0 -SNAPSHOT&lt;/version&gt;
 
   &lt;!-- library dependencies --&gt;
-  
+
   &lt;dependencies&gt;
     &lt;dependency&gt;
-    
+
       &lt;!-- coordinates of the required library --&gt;
-      
+
       &lt;groupId&gt;junit&lt;/groupId&gt;
       &lt;artifactId&gt;junit&lt;/artifactId&gt;
       &lt;version&gt;3.8.1&lt;/version&gt;
-      
+
     &lt;/dependency&gt;
   &lt;/dependencies&gt;
 &lt;/project&gt;</pre>
@@ -46289,11 +45606,11 @@ public class TemplateInitializer implements ServletContextListener {
 		templateResolver.setPrefix("/WEB-INF/"); // template prefix
 		templateResolver.setSuffix(".html"); // template suffix
 		templateResolver.setCacheTTLMs(3600000L); // template cache time to live
-		
+
 		sce.getServletContext().setAttribute("templateResolver", templateResolver); // add resolver to context
-		
-		ServiceFacade.getInstance().startService(); 
-		
+
+		ServiceFacade.getInstance().startService();
+
 		logger.info("Context initialized..");
 	}
 
@@ -46334,8 +45651,8 @@ public class OrderServlet extends HttpServlet {
 
 	private void execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
                 //template reolsverı alalım
-		ServletContextTemplateResolver templateResolver = (ServletContextTemplateResolver) request.getServletContext().getAttribute("templateResolver"); 
-                
+		ServletContextTemplateResolver templateResolver = (ServletContextTemplateResolver) request.getServletContext().getAttribute("templateResolver");
+
 
 		TemplateEngine engine = new TemplateEngine();//template engine olusturlaım
 		engine.setTemplateResolver(templateResolver);// template engine'e hangi template'lerini kullanacagını resolver ile bildirelim
@@ -46349,9 +45666,9 @@ public class OrderServlet extends HttpServlet {
 			ctx.setVariable("orders", ServiceFacade.getInstance().getOrders());
 		} catch (Exception e) {
 			e.printStackTrace();
-		}	
-		
-                //engine'e işlemesi için bir template adı ve context verelim 
+		}
+
+                //engine'e işlemesi için bir template adı ve context verelim
 		String result = engine.process("thy", ctx); // result
 
 		PrintWriter out = null;
@@ -46403,19 +45720,19 @@ Servlet'in mappingi şu şekilde;
 
 	&lt;div class="container"&gt;
 		&lt;div th:include="header :: header"&gt;...&lt;/div&gt;
-		
+
 		&lt;div class="row"&gt;
 			&lt;div class="col-sm-6"&gt;
-	
+
 				&lt;form th:attr="action=@{/addOrder}" role="form" data-toggle="validator"&gt;
-	
+
 					&lt;div class="form-group" id="orderIdGroup"&gt;
-						&lt;label for="orderId"&gt;Order ID:&lt;/label&gt; 
+						&lt;label for="orderId"&gt;Order ID:&lt;/label&gt;
 						&lt;input type="number" max="10000000" min="1" class="form-control" name="orderId" id="orderId" placeholder="Order id.." required="required"/&gt;
 					&lt;/div&gt;
 					&lt;div class="form-group"&gt;
 						&lt;div class="input-grouo"&gt;
-							&lt;label for="orderPrice"&gt;Order Price:&lt;/label&gt; 
+							&lt;label for="orderPrice"&gt;Order Price:&lt;/label&gt;
 							&lt;div class="input-group-addon"&gt;$&lt;/div&gt;
 							&lt;input type="number" step="any" max="1000" min="0.1" class="form-control" name="orderPrice" id="orderPrice" placeholder="Order price.." required="required" /&gt;
 						&lt;/div&gt;
@@ -46433,11 +45750,11 @@ Servlet'in mappingi şu şekilde;
 						&lt;label class="radio-inline"&gt;&lt;input type="radio" name="orderStatus" value="false" /&gt;Deactive&lt;/label&gt;
 					&lt;/div&gt;
 					&lt;button id="orderFormButton" type="submit" class="btn btn-default"&gt;Save&lt;/button&gt;
-					
+
 					&lt;input id="action" name="action" type="hidden" value="save" /&gt;
 				&lt;/form&gt;
 			&lt;/div&gt;
-	
+
 			&lt;div class="col-sm-6"&gt;
 					&lt;table class="table table-bordered"&gt;
 						&lt;thead&gt;
@@ -46671,7 +45988,7 @@ App.java
  * Hello world!
  *
  */
-public class App 
+public class App
 {
     public static void main( String[] args )
     {
@@ -46796,17 +46113,17 @@ POM içerisinde kullanabilecegimiz bazı tag'lere bakalım;
 Örnekle bakalım;
 <pre class="theme:eclipse lang:xhtml decode:true">&lt;project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd"&gt;
-  
+
   &lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;
-  
+
   &lt;groupId&gt;com.wora&lt;/groupId&gt;
   &lt;artifactId&gt;caysever-app&lt;/artifactId&gt;
   &lt;packaging&gt;jar&lt;/packaging&gt;
   &lt;version&gt;1.0.0&lt;/version&gt;
-  
+
   &lt;name&gt;caysever-app @javaman&lt;/name&gt;
   &lt;url&gt;alicanakkus.com&lt;/url&gt;
-  
+
    &lt;developers&gt;
     &lt;developer&gt;
       &lt;id&gt;caysever&lt;/id&gt;
@@ -46818,7 +46135,7 @@ POM içerisinde kullanabilecegimiz bazı tag'lere bakalım;
       &lt;/roles&gt;
     &lt;/developer&gt;
   &lt;/developers&gt;
-  
+
   &lt;dependencies&gt;
     &lt;dependency&gt;
       &lt;groupId&gt;junit&lt;/groupId&gt;
@@ -47167,7 +46484,7 @@ Bugün quartz'ı configüre etmeyi göreceğiz. Quartz temelde iki configürasyo
 Şimdi örnek bir quartz.xml hazırlayalım;
 <pre class="theme:eclipse lang:xhtml decode:true">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;job-scheduling-data xmlns="http://www.quartz-scheduler.org/xml/JobSchedulingData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://www.quartz-scheduler.org/xml/JobSchedulingData 
+	xsi:schemaLocation="http://www.quartz-scheduler.org/xml/JobSchedulingData
         http://www.quartz-scheduler.org/xml/job_scheduling_data_2_0.xsd" version="2.0"&gt;
 
 	&lt;schedule&gt;
@@ -47234,23 +46551,23 @@ Trigger tanımına bakalım;
 </ul>
 Job tanımlarını ve Trigger tanımlarını yaptıktan sonra quartz'ın çalışması için gerekli olan metadata bilgilerini içeren properties dosyasına bakalım;
 <pre class="theme:eclipse lang:java decode:true">#======================
-# Created by Caysever  
+# Created by Caysever
 #======================
 
 
 #============================================================================
-# Configure Main Scheduler Properties  
+# Configure Main Scheduler Properties
 #============================================================================
 
 org.quartz.scheduler.instanceName = AmelScheduler
 org.quartz.scheduler.instanceId = AUTO
-org.quartz.plugin.jobInitializer.class =org.quartz.plugins.xml.XMLSchedulingDataProcessorPlugin 
-org.quartz.plugin.jobInitializer.fileNames = quartz.xml 
+org.quartz.plugin.jobInitializer.class =org.quartz.plugins.xml.XMLSchedulingDataProcessorPlugin
+org.quartz.plugin.jobInitializer.fileNames = quartz.xml
 org.quartz.plugin.jobInitializer.failOnFileNotFound = true
 
 
 #============================================================================
-# Configure ThreadPool  
+# Configure ThreadPool
 #============================================================================
 
 org.quartz.threadPool.class = org.quartz.simpl.SimpleThreadPool
@@ -47258,7 +46575,7 @@ org.quartz.threadPool.threadCount = 5
 org.quartz.threadPool.threadPriority = 5
 
 #============================================================================
-# Configure JobStore  
+# Configure JobStore
 #============================================================================
 
 org.quartz.jobStore.misfireThreshold = 60000
@@ -47273,7 +46590,7 @@ org.quartz.jobStore.isClustered = true
 org.quartz.jobStore.clusterCheckinInterval = 20000
 
 #============================================================================
-# Configure Datasources  
+# Configure Datasources
 #============================================================================
 #org.quartz.dataSource.myDS.jndiURL=jdbc/caysever
 org.quartz.dataSource.myDS.jndiURL= java:/comp/env/jdbc/caysever
@@ -47545,7 +46862,7 @@ public class Startup implements ServletContextListener {
 	public void contextInitialized(ServletContextEvent contextEvent) {
 
 		ServletContext context = contextEvent.getServletContext();
-		
+
 		//user audit icin eklendi.
 		UserSessionManager userSessionManager = UserSessionManager.getInstance();
 		context.setAttribute("UserSessionManager", userSessionManager);
@@ -47727,83 +47044,83 @@ server.xml içerisindeki Service içerisinde aşağıdaki Connector tanımını 
 	&lt;Listener className="org.apache.catalina.core.ThreadLocalLeakPreventionListener"/&gt;
 
 	&lt;GlobalNamingResources&gt;
-		&lt;Resource auth="Container" description="User database that can be updated and saved" 
-                       factory="org.apache.catalina.users.MemoryUserDatabaseFactory" name="UserDatabase" 
+		&lt;Resource auth="Container" description="User database that can be updated and saved"
+                       factory="org.apache.catalina.users.MemoryUserDatabaseFactory" name="UserDatabase"
                        pathname="conf/tomcat-users.xml" type="org.apache.catalina.UserDatabase"/&gt;
 	&lt;/GlobalNamingResources&gt;
 
-	&lt;!-- A "Service" is a collection of one or more "Connectors" that share 
-		a single "Container" Note: A "Service" is not itself a "Container", so you 
-		may not define subcomponents such as "Valves" at this level. Documentation 
+	&lt;!-- A "Service" is a collection of one or more "Connectors" that share
+		a single "Container" Note: A "Service" is not itself a "Container", so you
+		may not define subcomponents such as "Valves" at this level. Documentation
 		at /docs/config/service.html --&gt;
 	&lt;Service name="Catalina"&gt;
 
-		&lt;!-- A "Connector" represents an endpoint by which requests are received 
-			and responses are returned. Documentation at : Java HTTP Connector: /docs/config/http.html 
-			(blocking &amp; non-blocking) Java AJP Connector: /docs/config/ajp.html APR (HTTP/AJP) 
+		&lt;!-- A "Connector" represents an endpoint by which requests are received
+			and responses are returned. Documentation at : Java HTTP Connector: /docs/config/http.html
+			(blocking &amp; non-blocking) Java AJP Connector: /docs/config/ajp.html APR (HTTP/AJP)
 			Connector: /docs/apr.html Define a non-SSL HTTP/1.1 Connector on port 8080 --&gt;
 		&lt;!-- &lt;Connector connectionTimeout="20000" port="8080" protocol="HTTP/1.1" redirectPort="8443"/&gt; --&gt;
 		&lt;!-- A "Connector" using the shared thread pool --&gt;
-		&lt;!-- &lt;Connector executor="tomcatThreadPool" port="8080" protocol="HTTP/1.1" 
+		&lt;!-- &lt;Connector executor="tomcatThreadPool" port="8080" protocol="HTTP/1.1"
 			connectionTimeout="20000" redirectPort="8443" /&gt; --&gt;
-		&lt;!-- Define a SSL HTTP/1.1 Connector on port 8443 This connector uses the 
-			BIO implementation that requires the JSSE style configuration. When using 
-			the APR/native implementation, the OpenSSL style configuration is required 
+		&lt;!-- Define a SSL HTTP/1.1 Connector on port 8443 This connector uses the
+			BIO implementation that requires the JSSE style configuration. When using
+			the APR/native implementation, the OpenSSL style configuration is required
 			as described in the APR/native documentation --&gt;
-		&lt;!-- &lt;Connector port="8443" protocol="org.apache.coyote.http11.Http11Protocol" 
-			maxThreads="150" SSLEnabled="true" scheme="https" secure="true" clientAuth="false" 
+		&lt;!-- &lt;Connector port="8443" protocol="org.apache.coyote.http11.Http11Protocol"
+			maxThreads="150" SSLEnabled="true" scheme="https" secure="true" clientAuth="false"
 			sslProtocol="TLS" /&gt; --&gt;
 
 		&lt;!-- Define an AJP 1.3 Connector on port 8009 --&gt;
 		&lt;Connector port="8009" protocol="AJP/1.3" redirectPort="8443"/&gt;
 
                 &lt;!-- Tomcat with SSL --&gt;
-		&lt;Connector SSLEnabled="true" clientAuth="false" keystoreFile="/home/wora/wora.keystore" 
-			keystorePass="caysever" maxThreads="150" port="8443" protocol="HTTP/1.1" 
+		&lt;Connector SSLEnabled="true" clientAuth="false" keystoreFile="/home/wora/wora.keystore"
+			keystorePass="caysever" maxThreads="150" port="8443" protocol="HTTP/1.1"
 			scheme="https" secure="true" sslProtocol="TLS"/&gt;
 
-		&lt;!-- An Engine represents the entry point (within Catalina) that processes 
-			every request. The Engine implementation for Tomcat stand alone analyzes 
-			the HTTP headers included with the request, and passes them on to the appropriate 
+		&lt;!-- An Engine represents the entry point (within Catalina) that processes
+			every request. The Engine implementation for Tomcat stand alone analyzes
+			the HTTP headers included with the request, and passes them on to the appropriate
 			Host (virtual host). Documentation at /docs/config/engine.html --&gt;
 
-		&lt;!-- You should set jvmRoute to support load-balancing via AJP ie : &lt;Engine 
+		&lt;!-- You should set jvmRoute to support load-balancing via AJP ie : &lt;Engine
 			name="Catalina" defaultHost="localhost" jvmRoute="jvm1"&gt; --&gt;
 		&lt;Engine defaultHost="localhost" name="Catalina"&gt;
 
-			&lt;!--For clustering, please take a look at documentation at: /docs/cluster-howto.html 
+			&lt;!--For clustering, please take a look at documentation at: /docs/cluster-howto.html
 				(simple how to) /docs/config/cluster.html (reference documentation) --&gt;
 			&lt;!-- &lt;Cluster className="org.apache.catalina.ha.tcp.SimpleTcpCluster"/&gt; --&gt;
 
-			&lt;!-- Use the LockOutRealm to prevent attempts to guess user passwords 
+			&lt;!-- Use the LockOutRealm to prevent attempts to guess user passwords
 				via a brute-force attack --&gt;
 			&lt;Realm className="org.apache.catalina.realm.LockOutRealm"&gt;
-				&lt;!-- This Realm uses the UserDatabase configured in the global JNDI resources 
-					under the key "UserDatabase". Any edits that are performed against this UserDatabase 
+				&lt;!-- This Realm uses the UserDatabase configured in the global JNDI resources
+					under the key "UserDatabase". Any edits that are performed against this UserDatabase
 					are immediately available for use by the Realm. --&gt;
 				&lt;Realm className="org.apache.catalina.realm.UserDatabaseRealm" resourceName="UserDatabase"/&gt;
 			&lt;/Realm&gt;
 
 			&lt;Host appBase="webapps" autoDeploy="true" name="localhost" unpackWARs="true"&gt;
 
-				&lt;!-- SingleSignOn valve, share authentication between web applications 
+				&lt;!-- SingleSignOn valve, share authentication between web applications
 					Documentation at: /docs/config/valve.html --&gt;
-				&lt;!-- &lt;Valve className="org.apache.catalina.authenticator.SingleSignOn" 
+				&lt;!-- &lt;Valve className="org.apache.catalina.authenticator.SingleSignOn"
 					/&gt; --&gt;
 
-				&lt;!-- Access log processes all example. Documentation at: /docs/config/valve.html 
+				&lt;!-- Access log processes all example. Documentation at: /docs/config/valve.html
 					Note: The pattern used is equivalent to using pattern="common" --&gt;
 				&lt;Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &amp;quot;%r&amp;quot; %s %b" prefix="localhost_access_log." suffix=".txt"/&gt;
 
-				
+
 			&lt;Context docBase="SpringMVCTutorial" path="/SpringMVCTutorial" reloadable="true" source="org.eclipse.jst.jee.server:SpringMVCTutorial"/&gt;&lt;/Host&gt;
 		&lt;/Engine&gt;
 	&lt;/Service&gt;
 &lt;/Server&gt;</pre>
 Connector tanımımız şu şekilde;
 <pre class="lang:default decode:true">&lt;!-- Tomcat with SSL --&gt;
-&lt;Connector SSLEnabled="true" clientAuth="false" keystoreFile="/home/wora/wora.keystore" 
-	keystorePass="caysever" maxThreads="150" port="8443" protocol="HTTP/1.1" 
+&lt;Connector SSLEnabled="true" clientAuth="false" keystoreFile="/home/wora/wora.keystore"
+	keystorePass="caysever" maxThreads="150" port="8443" protocol="HTTP/1.1"
 	scheme="https" secure="true" sslProtocol="TLS"/&gt;</pre>
 Burada keystore dosyasınını, sifre olarak "caysever", port, protocol, scheme(https) gibi bilgileri giriyoruz. Tomcati restart ettikten sonra HTTPS olarak HTTP + SSL olarak çalışabiliyor olacağız.
 
@@ -48055,20 +47372,20 @@ public class LiteralsServlet extends HttpServlet {
 			if(templateResolver != null){
 				TemplateEngine engine = new TemplateEngine();
 				engine.setTemplateResolver(templateResolver);
-				
+
 				WebContext ctx = new WebContext(request, response, getServletConfig().getServletContext(), request.getLocale());
-			;	
+			;
 				Order myOrder = new Order();
 				myOrder.setId(112233);
 				myOrder.setPrice(105.4);
 				myOrder.setStatus(true);
 				myOrder.setSummary("Phone");
 				myOrder.setDetails("I bought a new phone for my sister!");
-				
+
 				ctx.setVariable("today", DateUtils.getLocalDate());
 				ctx.setVariable("myOrder", myOrder);
 				String result = engine.process("literals", ctx);
-				
+
 				PrintWriter out = response.getWriter();
 				out.println(result);
 			}
@@ -48418,7 +47735,7 @@ public class Client {
 
     // Constructor
     Client() {
-       
+
     }
 
     public void setService(Service service){
@@ -48595,7 +47912,7 @@ Yukarıdaki iki görsel de de request lifecycle'ın başlangıç noktası Dispac
   &lt;welcome-file-list&gt;
     &lt;welcome-file&gt;index.jsp&lt;/welcome-file&gt;
   &lt;/welcome-file-list&gt;
-  
+
     &lt;servlet&gt;
         &lt;servlet-name&gt;springmvc&lt;/servlet-name&gt;
         &lt;servlet-class&gt;
@@ -48607,7 +47924,7 @@ Yukarıdaki iki görsel de de request lifecycle'ın başlangıç noktası Dispac
         &lt;servlet-name&gt;springmvc&lt;/servlet-name&gt;
         &lt;url-pattern&gt;*.do&lt;/url-pattern&gt;
     &lt;/servlet-mapping&gt;
-  
+
 &lt;/web-app&gt;</pre>
 web.xml'de Servlet class olarak DispatcherServlet verdik ve url mapping olarak *.do olarak mapledik. Spring default olarak WEB-INF altında(web.xml orada bulunduğu için) servletname-servlet.xml adında bir dosya arar. Bu dosya bean definition olarak tanımlansa da birçok konfigürasyon buradan ayağa kaldırılır. Yukarıdaki örnekte WEB-INF altında springmvc-servlet.xml dosyasının bulunması gereklidir. Dosya bulunamaz ise Spring, BeanDefinitionStoreException fırlatır. İsimlendirme standartı olarak servlet adı + "-" +servlet + ".xml" şeklinde bir standart mevcut. Default olarak yukarıda belirttigim sekilde arar. Ancak farklı bir yere konumlandırabiliriz. Bunun için context param ve/veya init param şeklinde ekleyebiliriz.
 <pre class="theme:eclipse lang:xhtml decode:true">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
@@ -48616,7 +47933,7 @@ web.xml'de Servlet class olarak DispatcherServlet verdik ve url mapping olarak *
   &lt;welcome-file-list&gt;
     &lt;welcome-file&gt;index.jsp&lt;/welcome-file&gt;
   &lt;/welcome-file-list&gt;
-  
+
     &lt;servlet&gt;
         &lt;servlet-name&gt;springmvc&lt;/servlet-name&gt;
         &lt;servlet-class&gt;
@@ -48628,7 +47945,7 @@ web.xml'de Servlet class olarak DispatcherServlet verdik ve url mapping olarak *
         &lt;servlet-name&gt;springmvc&lt;/servlet-name&gt;
         &lt;url-pattern&gt;/*&lt;/url-pattern&gt;
     &lt;/servlet-mapping&gt;
-    
+
     &lt;context-param&gt;
        &lt;param-name&gt;contextConfigLocation&lt;/param-name&gt;
        &lt;param-value&gt;
@@ -48644,15 +47961,15 @@ Bean definitionlar ile beraber aslında DispatcherServlet'in sadece merkezi bir 
 	xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:context="http://www.springframework.org/schema/context"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="
-        http://www.springframework.org/schema/beans     
+        http://www.springframework.org/schema/beans
         http://www.springframework.org/schema/beans/spring-beans.xsd
-        http://www.springframework.org/schema/mvc 
+        http://www.springframework.org/schema/mvc
         http://www.springframework.org/schema/mvc/spring-mvc.xsd
-        http://www.springframework.org/schema/context 
+        http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd"&gt;
- 
+
 	&lt;context:component-scan base-package="com.wora.controller" /&gt;
- 
+
 	&lt;bean id="viewResolver"
 		class="org.springframework.web.servlet.view.UrlBasedViewResolver"&gt;
 		&lt;property name="viewClass"
@@ -48660,7 +47977,7 @@ Bean definitionlar ile beraber aslında DispatcherServlet'in sadece merkezi bir 
 		&lt;property name="prefix" value="/jsp/" /&gt;
 		&lt;property name="suffix" value=".jsp" /&gt;
 	&lt;/bean&gt;
- 
+
 &lt;/beans&gt;</pre>
 Bean definition olarak viewResolver verdik ilk aşamada. Bunun detayına belki daha sonra inebiliriz. &lt;context:component ile Spring'e Annotation'larla derdimizi anlatacağımızı belirttik. com.wora.controller paketi altında çalışacaktır dispatcher'ımız. View resolver'da prefix ve suffix olarak WebContent altında ki jsp klasörü içerisindeki .jsp uzantılı dosyaları kullanacağız dedik. Request lifecyle son aşamalarında ViewResolver yardımı ile ilgili view bulunur ve response olarak return edilir.
 
@@ -48673,12 +47990,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class BaseController {
-	
+
 	@RequestMapping("/")
 	public String home() {
 		return "index";
 	}
-	
+
 }
 </pre>
 Oldukça kısa ve sasde bir pure Java class'ından ibaret. Context name'den sonra örneğin localhost:8080/springmvc yazıldığında home() controller çalışacaktır. @Controller ile class'ın Spring Controller'ı oldugunu belirttik. @Controller, class level'dır, method level'da kullanılamaz. RequestMapping ile  de home page gösterilecek. @RequestMapping hem class level hem method level'dir. Bu sayede class level'da da url tanımı yapılabilir. Dikkat ederseniz return type olarak String ve değer olarak da "index" döndürdük. Bu, bak Spring kardeş ben sana view name olarak index'i verdim git viewResolver yardımıyla(suffix ve prefix) view'ı bul ve response olarak dön. Örnegimizde az önceki url girildiğinde /WebContent/jsp/index.jsp sayfası view olarak görüntülenecektir.
@@ -48809,7 +48126,7 @@ Bir önceki yazımda portType, binding, service, types maddelerine değinmiştim
 			&lt;wsdl:output message="tns:sampleResponse" /&gt;
 		&lt;/wsdl:operation&gt;
 	&lt;/wsdl:portType&gt;
-	
+
 	&lt;wsdl:binding name="sampleSOAP" type="tns:sample"&gt;
 		&lt;soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http" /&gt;
 		&lt;wsdl:operation name="sampleWS"&gt;
@@ -48822,13 +48139,13 @@ Bir önceki yazımda portType, binding, service, types maddelerine değinmiştim
 			&lt;/wsdl:output&gt;
 		&lt;/wsdl:operation&gt;
 	&lt;/wsdl:binding&gt;
-	
+
 	&lt;wsdl:service name="sample"&gt;
 		&lt;wsdl:port binding="tns:sampleSOAP" name="sampleSOAP"&gt; &lt;!--  binding --&gt;
 			&lt;soap:address location="http://localhost:8080/jaxws/sample" /&gt; &lt;!-- endpoint --&gt;
 		&lt;/wsdl:port&gt;
 	&lt;/wsdl:service&gt;
-	
+
 &lt;/wsdl:definitions&gt;
 </pre>
 Görüldüğü gibi root tag wsdl:definitions'dur, diğer tüm etiketleri sarmalar. Sondan başa doğru gitmeyi uygun görüyorum.
@@ -48975,18 +48292,18 @@ Controller'ın amacı, model ile view arasında ki iletişimdir en temelde. Clie
 
 Bir önceki örneğimizdeki Controller'ı kullanalım;
 <pre class="theme:eclipse lang:java decode:true">package com.wora.controller;
- 
+
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
- 
+
 @Controller
 public class BaseController {
-	
+
 	@RequestMapping("/")
 	public String home() {
 		return "index";
 	}
-	
+
 }
 </pre>
 BaseController normal bir Java class'dır. Spring Controller olabilmesi için @Controller ile işaretlenmesi yeterlidir. @Controller annotation'u class level'dır, method level de kullanılamaz.
@@ -49117,7 +48434,7 @@ public class AuthanticationController {
 
 	@RequestMapping("/auth")
 	public String auth(Principal principal, Model model) {
-		
+
 		if(principal != null) {
 			ArrayList&lt;Product&gt; products = sellerService.findProducts(principal.getName());
 			model.addAllAttributes("products", products);
@@ -49125,7 +48442,7 @@ public class AuthanticationController {
 		}else {
 			throw new Exception("Seller dont authanticed.");
 		}
-		
+
 	}
 
 }
@@ -49327,3 +48644,4 @@ Sağlıklı ve esen kalın.
 	</item>
 </channel>
 </rss>
+,,
