@@ -12,6 +12,7 @@ layout: default
 {% if post.content contains '<!--break-->' %}
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">(Read More)</a>
 {% endif %}
+      <a href="https://validator.w3.org/nu/?doc={{ site.baseurl | url_encode }}{{ post.url | url_encode }}"><img src="https://xinolinx.github.io/images/check.png" alt="{{ post.url }}_check"></a>
     </article>
   {% endfor %}
 </div>
