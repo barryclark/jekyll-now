@@ -115,6 +115,7 @@ var imgdir = "https://xinolinx.github.io/images/icon/";
 
 以降は各ノードに対応した画像を埋め込んでいます。どのような画像が出力されるかは、`getimgurl(type)`関数と、`getimgurl_option(option)`関数を参照してください。
 
+
 - `getimgurl(type)`関数
  - ni ... インターネットゲートウェイ
  - nw ... Wi-Fi
@@ -129,6 +130,8 @@ var imgdir = "https://xinolinx.github.io/images/icon/";
  - op ... プリンタ
  - os ... ストレージ
  - (other) ... PC(サーバ型)
+ 
+ 
 - `getimgurl_option(option)`関数
  - wire ... 有線NIC
  - dualwire ... デュアルポート有線NIC
@@ -139,6 +142,7 @@ var imgdir = "https://xinolinx.github.io/images/icon/";
  - printer ... プリンタ接続
  - func ... 特定機能
  - (other) ... 透明画像(48x48px)
+ 
  
 ```javascript
 				var setimg = "<img"
