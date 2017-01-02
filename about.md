@@ -11,4 +11,4 @@ published: true
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[jakelogananderson@gmail.com](mailto:jakelogananderson@gmail.com)
