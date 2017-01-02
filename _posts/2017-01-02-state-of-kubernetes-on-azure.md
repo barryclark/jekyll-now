@@ -30,7 +30,7 @@ header-img: "images/bg-post-clover.jpg"
 * [tl;dr](#tldr)
 * [Links](#links)
 
-As we all know, containers are all the rage, and of course Microsoft also takes a shot at implementing a reliable runtime for running those Docker containers, called "[Azure Container Service](https://azure.microsoft.com/de-de/services/container-service/)". Fairly recently, the also [introduced support for one of the most interesting - and mature - runtime orchestration layers for containers: Kubernetes](https://azure.microsoft.com/en-us/blog/azure-container-service-the-cloud-s-most-open-option-for-containers/) (in addition to Docker Swarm and DC/OS).
+As we all know, containers are all the rage, and of course Microsoft also takes a shot at implementing a reliable runtime for running those Docker containers, called "[Azure Container Service](https://azure.microsoft.com/de-de/services/container-service/)". Fairly recently, they also [introduced support for one of the most interesting - and mature - runtime orchestration layers for containers: Kubernetes](https://azure.microsoft.com/en-us/blog/azure-container-service-the-cloud-s-most-open-option-for-containers/) (in addition to Docker Swarm and DC/OS).
 
 This blog post will cover how well Kubernetes is supported on Azure today, and where there is still room to improve.
 
@@ -109,7 +109,7 @@ As mentioned above, this may or may not be an issue for you (depending on your w
 
 #### Upgrading Kubernetes (e.g. to 1.5.1) {#upgrading}
 
-The Kubernetes cluster you get is currently a 1.4.6 cluster. This is not bad, it's a stable version, but currently you can't influence it in a convenient way. It's 1.4.6 you get, period. Kubernets on Azure being the standard version though, it's possible to do a manual upgrade of the Kubernetes version, as one of the [issues on Cole Mickens' `azure-kubernetes-status` repository](https://github.com/colemickens/azure-kubernetes-status/issues/15) suggests.
+The Kubernetes cluster you get is currently a 1.4.6 cluster. This is not bad, it's a stable version, but currently you can't influence it in a convenient way. It's 1.4.6 you get, period. Kubernetes on Azure being the standard version though, it's possible to do a manual upgrade of the Kubernetes version, as one of the [issues on Cole Mickens' `azure-kubernetes-status` repository](https://github.com/colemickens/azure-kubernetes-status/issues/15) suggests.
 
 I raised an issue on the Azure Support asking for how this will be done once Kubernetes on Azure reaches GA (General Availability), and the answer I got for this was that it's a "reasonable expectation" that there either will be explicit support for automatically upgrading the Kubernetes components, **or** that there will be documentation on how to accomplish this manually, as part of the official documentation of the Azure Container Service. Both options are valid in my opinion.
 
