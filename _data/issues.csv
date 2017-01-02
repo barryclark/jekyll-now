@@ -8644,6 +8644,17 @@ immagine: ''
 data: 14/09/2016
 </yamldata></pre>
 ",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/332,176995781,2016-09-22 16:06:48,2016-09-14 19:18:46,"Filetto, CH - B&B ""La Terrazza D'Abruzzo"" ",42.221929,14.245735,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""14/09/2016"", ""descrizione"": ""B&B \""LA TERRAZZA D'ABRUZZO\"" per 12 persone"", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": ""42.221929"", ""link"": """", ""lon"": ""14.245735"", ""tel"": ""3473805566""}","<pre><yamldata>tel: '3473805566'
+email: ''
+descrizione: 'B&B ""LA TERRAZZA D''ABRUZZO"" per 12 persone'
+indirizzo: ''
+lat: '42.221929'
+lon: '14.245735'
+link: ''
+immagine: ''
+data: 14/09/2016
+</yamldata></pre>
+",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/331,176995551,2016-09-14 19:18:37,2016-09-14 19:17:49,Croce Rossa Pescara,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Croce Rossa Pescara"", ""data"": ""14/09/2016"", ""descrizione"": ""Il 26/08/2016 e il giorno 27/08/2016, presso: 2. la sede della Croce Rossa in via Avezzano, Pescara, sotto il palazzo della Provincia, dove sar\u00e0 attivato un punto di raccolta aperto dalle 09:30 alle 23:30 per l'esclusiva raccolta di: -intimo uomo, donna e bambino; -pigiami; -tute. Questi indumenti dovranno essere nuovi e muniti di cartellino. Servono, inoltre, - powerbank per le ricariche dei cellulari. In via Avezzano, Pescara"", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""https://www.facebook.com/events/182936302118217/"", ""postale"": """"}","<pre><yamldata>chi: 'Croce Rossa Pescara'
 descrizione: 'Il 26/08/2016 e il giorno 27/08/2016, presso: 2. la sede della Croce Rossa in via Avezzano, Pescara, sotto il palazzo della Provincia, dove sarà attivato un punto di raccolta aperto dalle 09:30 alle 23:30 per l''esclusiva raccolta di: -intimo uomo, donna e bambino; -pigiami; -tute. Questi indumenti dovranno essere nuovi e muniti di cartellino. Servono, inoltre, - powerbank per le ricariche dei cellulari. In via Avezzano, Pescara'
 intestazione: ''
