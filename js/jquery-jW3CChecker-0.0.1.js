@@ -14,13 +14,13 @@ $(document).ready(function(){
 	var w3curl = "https://validator.w3.org/nu/?doc="
 		+ encodeURIComponent(location.href);
 	var offset = 10;
+	var iconsize = 20;
 
 	var imgdir = "https://xinolinx.github.io/images/";
 	var img_on_url = imgdir + "check.png";
 	var img_off_url = imgdir + "blank.png";
-	var iconsize = 20;
 
-	tag = "<div>"
+	tag = "<div class=\"w3ccheck_div\">"
 		+ "<a class=\"w3ccheck_link\""
 		+ " href=\"" + w3curl + "\">"
 		+ "<img"
@@ -50,4 +50,14 @@ $(document).ready(function(){
 		$(this).find("img").attr("src", img_off_url);
 	});
 
+});
+
+$(document).resize(function(){
+	var offset = 10;
+	var iconsize = 20;
+	var icon_pos_l = document.documentElement.clientWidth 
+		- iconsize - offset;
+	var icon_pos_t = offset;
+	$(".w3ccheck_div").css("top", icon_pos_t);
+	$(".w3ccheck_div").css("left", icon_pos_l);
 });
