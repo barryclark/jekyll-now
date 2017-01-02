@@ -1,1 +1,1 @@
-Repozitář, ze kterého se generuje web <http://jakpsatweb.cz>
+Repozitář, ze kterého se generuje web <http://jakpsatphp.cz>
