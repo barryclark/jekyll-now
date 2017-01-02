@@ -18,7 +18,7 @@ title: JavaScriptでcoding納め（ネットワーク表示用Markdown）
 ni,gateway,internet
  nw,xinolinx-sub,192.168.0.1,wifi
   pn,nec_note,dhcp,none
-  pd,subpc,dhcp,game
+  pd,subpc,dhcp,game,wire
   pt,iphone6s(1),dhcp,none
   pa,kindle,dhcp,none
   op,canon6130,dhcp,scan
