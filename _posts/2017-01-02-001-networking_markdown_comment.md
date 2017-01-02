@@ -129,9 +129,8 @@ var imgdir = "https://xinolinx.github.io/images/icon/";
  - gm ... Game機
  - op ... プリンタ
  - os ... ストレージ
- - (other) ... PC(サーバ型)
- 
- 
+ - other ... PC(サーバ型)
+  
 - `getimgurl_option(option)`関数
  - wire ... 有線NIC
  - dualwire ... デュアルポート有線NIC
@@ -141,8 +140,7 @@ var imgdir = "https://xinolinx.github.io/images/icon/";
  - storage ... ストレージ
  - printer ... プリンタ接続
  - func ... 特定機能
- - (other) ... 透明画像(48x48px)
- 
+ - other ... 透明画像(48x48px)
  
 ```javascript
 				var setimg = "<img"
