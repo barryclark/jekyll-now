@@ -1,6 +1,6 @@
 ---
 layout: post
-title: You're up and running!
+title: 2017-01-01-Welcome-2017
 published: true
 ---
 
