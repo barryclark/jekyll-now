@@ -8,6 +8,10 @@ name: Luciano Bandeira
 # Short bio or description (displayed in the header)
 description: Ruby developer
 
+index:
+  en: posts
+  pt:
+
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://avatars0.githubusercontent.com/u/1225630
 
@@ -87,11 +91,13 @@ exclude:
 
 t:
   en:
+    flag: "us"
     home: "Home"
     about: "About"
     written_on: "Written on"
     read_more: "Read more"
   pt:
+    flag: "br"
     home: "Início"
     about: "Sobre"
     written_on: "Escrito em"
