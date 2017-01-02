@@ -35,4 +35,4 @@ Vedle testování se pro ladění aplikace používají debuggery. V zásadě sl
 # Too Long, Didn’t Read?
 Začněte co nejdříve používat verzovací systém, nejlépe git. Naučte se ho používat do hloubky a ušetří vám spoustu zbytečných starostí. Mrkněte na Composer. Používejte debugger místo vypisování proměnných  do prohlížeče. Zkuste si vývoj založený na testování; spoustě lidem vyhovuje více než ostatní schémata práce.    
 
-Příště se podíváme kam ukládat projekty, na databáze a dotkneme se PHP frameworků.  
+Příště se podíváme kam ukládat projekty, na databáze a dotkneme se PHP frameworků. 
