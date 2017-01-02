@@ -24,7 +24,7 @@ Sám delší dobu používám [PhpStorm od firmy JetBrains](https://www.jetbrain
 
 Mezi další používaná IDE se řadí Sublime, které je oproti PhpStormu podstatně lehčí a nabízí mnohem širší paletu doplňkových pluginů, kterými si lze editor dotvořit ke spokojenosti. Jako další známé a mnou nevyzkoušené IDE bych zmínil Eclipse, phpDesigner a Brackets. Existuje i mnoho dalších editorů vhodných pro psaní PHP. Jejich seznam naleznete například na <https://en.wikipedia.org/wiki/List_of_PHP_editors>. 
 
-# Too Long, Don't Read?
+# Too Long, Didn't Read?
 Na psaní kódu si určitě prvně pořiďte kvalitní vývojové prostředí. Já doporučuji [PhpStorm](https://www.jetbrains.com/phpstorm/). Když si s něčím v kódu nebudete vědět rady, navštivte [dokumentaci](https://secure.php.net/manual/en/) nebo [StackOverflow](https://stackoverflow.com/questions/tagged/php). A zaměřte do hledáčku [komunity](http://pehapkari.cz), [twitter](https://twitter.com/tomtomklima) a [tento blog](http://jakpsatphp.cz). 
 
 Příště se těšte na debugging, verzovací systémy a řešení závislostí v PHP! 
