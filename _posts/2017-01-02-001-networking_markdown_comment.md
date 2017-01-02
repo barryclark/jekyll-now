@@ -73,11 +73,11 @@ var imgdir = "https://xinolinx.github.io/images/icon/";
 		{
 			var string = info.firstChild.data;
 			var nodes = string.replace("\r", "").split("\n");
-      ... 
-      /* floating canvas */
+			... 
+			/* floating canvas */
 			$(info).hide();
-      ...
-      var comment_tag = "<div>comment</div>";
+			...
+			var comment_tag = "<div>comment</div>";
 			$(canvas).append(comment_tag);
 			var comment = canvas.lastChild;
 			$(comment).hide();
