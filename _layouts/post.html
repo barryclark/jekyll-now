@@ -2,6 +2,9 @@
 layout: default
 comments: true
 ---
+{% if page.image %}
+<img src=./{{ page.image }} width=100%>
+{% endif %}
 
 <div class="post">
   <h1 class="post-title">{{ page.title }}
