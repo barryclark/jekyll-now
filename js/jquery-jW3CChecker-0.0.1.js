@@ -52,7 +52,7 @@ $(document).ready(function(){
 
 });
 
-$(document).resize(function(){
+$(window).resize(function(){
 	var offset = 10;
 	var iconsize = 20;
 	var icon_pos_l = document.documentElement.clientWidth 
