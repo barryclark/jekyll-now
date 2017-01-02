@@ -130,7 +130,6 @@ var imgdir = "https://xinolinx.github.io/images/icon/";
  - op ... プリンタ
  - os ... ストレージ
  - other ... PC(サーバ型)
-  
 - `getimgurl_option(option)`関数
  - wire ... 有線NIC
  - dualwire ... デュアルポート有線NIC
