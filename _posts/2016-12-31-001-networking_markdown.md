@@ -27,8 +27,8 @@ ni,gateway,internet
   pn,macbook,dhcp
   pt,iphone6s(2),dhcp,none
   tv,bravia,dhcp,none
-  gm,ps3,dhcp,none
-  gm,wii,dhcp,none
+  gp,ps3,dhcp,none
+  gn,wii,dhcp,none
  ns,xinolinx-bf1,192.168.0.3,none
   pd,masterpc,192.168.0.103,wire
   ps,linux,192.168.0.102,dualwire

@@ -126,7 +126,9 @@ var imgdir = "https://xinolinx.github.io/images/icon/";
  - pt ... タブレット端末
  - pa ... Android端末
  - tv ... TV機
- - gm ... Game機
+ - gm ... ゲーム機
+ - gn ... ゲーム機（NES）
+ - gp ... ゲーム機（PS）
  - op ... プリンタ
  - os ... ストレージ
  - other ... PC(サーバ型)
