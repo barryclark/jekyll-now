@@ -21,7 +21,7 @@ $(document).ready(function(){
 			return;
 		}
 		if (list_pclink.length != list_infos.length) {
-			/* Canvas is NOT exist (bye) */
+			set_error();
 			return;
 		}
 		for (var i = 0; i < list_pclink.length; i++) {
@@ -227,6 +227,29 @@ $(document).ready(function(){
 				return imgdir + url;
 			}
 
+		}
+
+		function set_error() {
+			/* Canvas is NOT exist (bye) */
+			var seterr = "<div class=\"jnetpreview_err\">"
+				+ "The Number of div#pclink and div#pclink-info are NOT equaled"
+				+ "</div>";
+			
+			$("div#pclink-info").empty();
+			$("div#pclink-info").css("color","blue");
+			$("div#pclink-info").css("padding","10px");
+			$("div#pclink-info").css("margin","10px");
+			$("div#pclink-info").css("background-color","#D0D0E0");
+			$("div#pclink-info").append(seterr);
+
+			$("div#pclink").empty();
+			$("div#pclink").css("color","red");
+			$("div#pclink").css("background-color","#E0D0D0");
+			$("div#pclink").css("padding","10px");
+			$("div#pclink").css("margin","10px");
+			$("div#pclink").append(seterr);
+
+			return;
 		}
 	}
 
