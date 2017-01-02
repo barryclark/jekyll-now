@@ -217,6 +217,12 @@ $(document).ready(function(){
 				case "gm":
 					url = "./icon_game.png";
 					break;
+				case "gp":
+					url = "./icon_gmps.png";
+					break;
+				case "gn":
+					url = "./icon_gmnes.png";
+					break;
 				case "op":
 					url = "./icon_printer.png";
 					break;
