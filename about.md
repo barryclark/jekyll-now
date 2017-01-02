@@ -18,6 +18,6 @@ Just a little more about me you may not already know.
 
 ### Contact me
 
-![](/images/Linkedin-Github.png)
+![Linkedin](/images/Linkedin-Github.png)
 
 [jakelogananderson@gmail.com](mailto:jakelogananderson@gmail.com)
