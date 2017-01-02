@@ -30,7 +30,7 @@ header-img: "images/bg-post-clover.jpg"
 * [tl;dr](#tldr)
 * [Links](#links)
 
-As we all know, containers are all the rage, and of course Microsofts also takes a shot at implementing a reliable runtime for running those Docker containers, called "[Azure Container Service](https://azure.microsoft.com/de-de/services/container-service/)". Fairly recently, the also [introduced support for one of the most interesting - and mature - runtime orchestration layers for containers: Kubernetes](https://azure.microsoft.com/en-us/blog/azure-container-service-the-cloud-s-most-open-option-for-containers/) (in addition to Docker Swarm and DC/OS).
+As we all know, containers are all the rage, and of course Microsoft also takes a shot at implementing a reliable runtime for running those Docker containers, called "[Azure Container Service](https://azure.microsoft.com/de-de/services/container-service/)". Fairly recently, the also [introduced support for one of the most interesting - and mature - runtime orchestration layers for containers: Kubernetes](https://azure.microsoft.com/en-us/blog/azure-container-service-the-cloud-s-most-open-option-for-containers/) (in addition to Docker Swarm and DC/OS).
 
 This blog post will cover how well Kubernetes is supported on Azure today, and where there is still room to improve.
 
