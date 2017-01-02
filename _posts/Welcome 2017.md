@@ -1,7 +1,0 @@
----
-layout: post
-title: 2017-01-01-Welcome-2017
-published: true
----
-
-It's the start of the new year from what was certainly an unexpected 2016. Around the world dramatic changes happened and my life was no different. Working at the largest health insurance company in Hawai'i has proved to be an eye-opening experience. The information, the structure, and the people are all apart of this scintillating enviornment.
