@@ -7,10 +7,6 @@ title: ネットワーク表示用Markdown.js 解説
 
 利用する際にはRAWでDLした後に、ネットワーク表示をさせたい箇所に埋め込んで下さい。`id="pclink-info"`が構造を記載する箇所で、`id="pclink"`の中に出力されます。複数セット表示したい場合は、`id="pclink-info"`と`id="pclink"`のペアを複数定義すると表示可能です（同数存在しない場合はエラーとして処理を停止します）。
 
-```bash
-$ wget https://raw.githubusercontent.com/xinolinx/xinolinx.github.io/master/js/jquery-jNetPreview-0.0.1.js
-```
-
 ```html
 <!DOCTYPE html>
 <html lang="ja">
