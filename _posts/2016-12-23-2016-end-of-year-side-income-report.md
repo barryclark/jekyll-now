@@ -5,7 +5,7 @@ tags: [money]
 keywords: [income, income report, blog income report, side income]
 javascripts: [/js/d3.min.js, /js/c3.min.js]
 csses: [/css/c3.css]
-image: /images/covers/2016-side-income.jpg
+image: /images/covers/2016-side-income.png
 ---
 
 One popular reoccurring post on blogs, regardless of niche, is an income report. For instance, [MyBlogLift](http://www.mybloglift.com/category/income-traffic-report/) has a monthly (well, two) income and traffic report. [Cash Flow Diaries has a long list of different income reports.](http://www.cashflowdiaries.com/blog-income-reports/)
