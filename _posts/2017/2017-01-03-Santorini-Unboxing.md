@@ -4,7 +4,7 @@ title: "Unboxing Santorini"
 description: "Santorini is a cute game from Roxley about building. Let's see what's inside!"
 category: unboxing
 featured: santorini.jpg
-amazontag: santorini
+amazonterm: santorini
 tags: [unboxing, games, santorini, roxley]
 author: Rob Kalajian
 ---
