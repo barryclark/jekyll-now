@@ -44,7 +44,7 @@ jQuery.fn.loadRepositories = function(username) {
                     //+ '<i class="right floated like icon"></i><i class="right floated star icon"></i>'
                     //+ "<div style='text-align:center'><a style='' href='"+ repo.html_url + "''>" + repo.name + "</a></div>"
                     + "</div>"
-                    + '<div class="extra content">'
+                    + '<div class="header">'
                         + "<a style='' href='"+ repo.html_url + "''>" + repo.name + "</a>"
                     + "</div>"
                     + '<div class="extra content">'
