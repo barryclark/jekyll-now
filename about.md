@@ -4,8 +4,7 @@ title: About
 permalink: /about/
 ---
 
- name: dongjoonlee 
- 
+ Name: dongjoonlee  
  
  age : 25 
  
