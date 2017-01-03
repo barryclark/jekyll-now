@@ -9,7 +9,7 @@ published: true
 
 Just a little more about me you may not already know.
 
-* My favorite animal is the majestic polar bear 
+* Transitioned from the marketing and PR field to the world of data science. 
 
 * I completed in Masters in Health Economics and Health Policy from the University of Lucerne in beautiful Lucerne, Switzerland. 
 
