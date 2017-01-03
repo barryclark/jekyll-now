@@ -9,10 +9,10 @@ permalink: /about/
  univ : gachon univ(south korea)
  email : ehdwns46@naver.com
 
- ### More Information
+### More Information
 
 
  I am currently studying html5, css, bootstrap, react, jquery, jquery-ajax, jsp, spring!!
- ### Contact me
+### Contact me
 
  [ehdwns46@naver.com](mailto:ehdwns46@naver.com)
