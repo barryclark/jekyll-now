@@ -1,4 +1,13 @@
-# LessOrMore
+---
+layout: post
+title:  如何使用LessOrMore这个Jekyll模版
+date:   2016-08-27 01:08:00 +0800
+categories: document
+tag: 教程
+---
+
+* content
+{:toc}
 
 
 致谢
@@ -17,9 +26,9 @@
 
 使用git从[LessOrMore](https://github.com/luoyan35714/LessOrMore.git)主页下载项目
 
-``` bash
+{% highlight bash %}
 git clone https://github.com/luoyan35714/LessOrMore.git
-```
+{% endhighlight %}
 
 配置
 ------------------------------------
@@ -28,7 +37,7 @@ git clone https://github.com/luoyan35714/LessOrMore.git
 
 > 特别注意`baseurl`的配置。如果是`***.github.io`项目，不修改为空''的话，会导致JS,CSS等静态资源无法找到的错误
 
-``` bash
+{% highlight bash %}
 name: 博客名称
 email: 邮箱地址
 author: 作者名
@@ -45,14 +54,14 @@ FB:
         short_name : 多说账户
     disqus :
         short_name : Disqus账户
-```
+{% endhighlight %}
 
 如何写文章
 ------------------------------------
 
 在`LessOrMore/_posts`目录下新建一个文件，可以创建文件夹并在文件夹中添加文件，方便维护。在新建文件中粘贴如下信息，并修改以下的`titile`,`date`,`categories`,`tag`的相关信息，添加`* content {:toc}`为目录相关信息，在进行正文书写前需要在目录和正文之间输入至少2行空行。然后按照正常的Markdown语法书写正文。
 
-``` bash
+{% highlight bash %}
 ---
 layout: post
 #标题配置
@@ -70,14 +79,14 @@ tag: 教程
 
 
 我是正文。我是正文。我是正文。我是正文。我是正文。我是正文。
-```
+{% endhighlight %}
 
 执行
 ------------------------------------
 
-``` bash
+{% highlight bash %}
 jekyll server
-```
+{% endhighlight %}
 
 效果
 ------------------------------------
@@ -108,8 +117,8 @@ jekyll server
 支付宝
 ----------------
 
-<img src="/styles/images/zhifubao.PNG" alt="支付宝二维码付款给Freud" width="310" />
+<img src="{{ '/styles/images/zhifubao.PNG' | prepend: site.baseurl }}" alt="支付宝二维码付款给Freud" width="310" />
 
 微信
 ----------------
-![微信二维码付款给Freud](/styles/images/weixin.png)
+![微信二维码付款给Freud]({{ '/styles/images/weixin.png' | prepend: site.baseurl }})

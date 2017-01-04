@@ -1,52 +1,19 @@
 <!DOCTYPE html>
-<html lang="{{ site.isolang }}" itemscope itemtype="http://schema.org/WebPage">
+<html>
 
-{% include head.html %}
+  {% include head.html %}
 
-<body class="wrap wider">
-	<div class="grid">
-		<div id="/home" class="unit one-third">
-			<div class="grid">
-				<div class="unit whole" id="/home">
-					<h1>{{ site.title }}</h1>
-					<p>{{ site.description }}</p>
-				</div>
-				<div class="unit whole" id="/contact">
-					<a href="https://weibo.com/{{ site.twitter_username }}" class="twitter-icon btn"><i class="icon ion-ios-paperplane"></i></a>
-					<a href="https://github.com/{{ site.github_username }}" class="github-icon btn"><i class="icon ion-social-github"></i></a>
-					<a href="mailto:{{ site.email }}" class="mail-icon btn"><i class="icon ion-email"></i></a>
-					<a href="feed.xml" class="rss-icon btn"><i class="icon ion-social-rss"></i></a>
-				</div>
-				<div class="unit whole hide-on-mobiles" id="/projects">
-					{% include projects.html %}
-				</div>
-				<div class="unit whole hide-on-mobiles" id="/impressum">
-					{% include imprint.html %}
-				</div>
-			</div>
-		</div>
-		<div class="unit two-thirds blog-column">
-			<div class="grid">
-				<div class="unit whole" id="/blog">
-					<h1>Blog</h1>
-				</div>
-				{{ content }}
-				<div class="unit whole" id="/subscribe">
-					<p><a href="feed.xml">RSS</a> & <a href="atom.xml">ATOM</a> Feed<br>Built with Jekyll, Code on <a href="https://github.com/lukas-h/onepage">Github</a></p>
-				</div>
-			</div>
-		</div>
+  <body class="index">
 
-		<div class="unit whole hide-on-desktops" id="/projects">
-			{% include projects.html %}
-		</div>
-		<div class="unit whole hide-on-desktops" id="/impressum">
-			{% include imprint.html %}
-		</div>
-	</div>
+    {% include header.html %}
+    {% include docs_header.html %}
+    {% if page.title %}
+      {% include banner.html %}
+    {% endif %}
 
-	{% include foot.html %}
+    {{ content }}
+    
+    {% include footer.html %}
 
-</body>
-
+  </body>
 </html>

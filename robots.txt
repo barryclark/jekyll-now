@@ -1,3 +1,0 @@
-User-agent: *
-Disallow:
-Sitemap: http://himsel.me/sitemap.xml
