@@ -1,18 +1,26 @@
 ---
 layout: default
----
+--- 
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
+{% for post in site.posts %}
+<div id="{{ post.date | date: "%F-%H" }}" class="unit whole align-left post">
+	<article itemscope itemtype="http://schema.org/BlogPosting">
+		<h2>{{ post.title }}<br>
+		<small class="chip">{{ post.date | date: "%b %-d, %Y" }}</small>
+		<a class="chip" href="https://twitter.com/intent/tweet?text={{ post.title | cgi_escape }}&url={{ post.date | date: "%F-%H" | prepend: "#" | prepend: site.baseurl | prepend: site.url | cgi_escape }}"><i class="icon ion-social-twitter"></i> TWEET</a>
+		<a class="chip" href="{{ site.url }}{{ site.baseurl }}#{{ post.date | date: "%F-%H" }}"><i class="icon ion-android-share-alt"></i> LINK</a>
+		</h2>
+		
+		<div class="post-content">
+			{{ post.content }}
+		</div>
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+		{% if post.author %}
+		<span class="chip" itemprop="author" itemscope itemtype="http://schema.org/Person">
+			<span itemprop="name">Article by {{ post.author }}</span>
+		</span>
+		{% endif %}
 
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
-
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
+	</article>
 </div>
+{% endfor %}

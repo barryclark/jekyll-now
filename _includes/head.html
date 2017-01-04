@@ -1,0 +1,38 @@
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+
+    <title>{{ site.title }}</title>
+    <meta name="description" content="{{ site.description }}">
+    <meta name="robots" content="index,follow">
+    <meta name="author" content="{{ site.author }}">
+    <meta itemprop="name" content="{{ site.title }}">
+
+    <meta property="og:url" content="{{ site.url }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="{{ site.title }}" />
+    <meta property="og:description" content="{{ site.description }}" />
+    <meta property="og:image" content="{{ site.url }}/images/favicon.png" />
+    <meta property="og:image:type" content="image/png" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="{% if site.twitter_username %}@{{ site.twitter_username }}{% else %} "lukashimsel" {% endif %}" />
+    <meta name="twitter:title" content="{{ site.title }}" />
+    <meta name="twitter:description" content="{{ site.description }}" />
+    <meta name="twitter:image" content="{{ site.url }}/images/favicon.png" />
+
+    <link href="{{ "/atom.xml" | prepend: site.baseurl }}" type="application/atom+xml" rel="alternate" title="ATOM feed">
+    <link href="{{ "/feed.xml" | prepend: site.baseurl }}" type="application/rss+xml" rel="alternate" title="RSS feed">
+
+
+    <link rel="shortcut icon" href="{{ "/images/favicon.png" | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ "/assets/css/gridism.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ "/assets/css/ionicons.css" | prepend: site.baseurl }}">    
+    <style>
+        .blog-column{
+            background: {{ site.accent }};
+        }
+    </style>
+</head>

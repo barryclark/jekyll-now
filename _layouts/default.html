@@ -1,51 +1,52 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+<html lang="{{ site.isolang }}" itemscope itemtype="http://schema.org/WebPage">
 
-    {% include meta.html %}
+{% include head.html %}
 
-    <!--[if lt IE 9]>
-      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+<body class="wrap wider">
+	<div class="grid">
+		<div id="/home" class="unit one-third">
+			<div class="grid">
+				<div class="unit whole" id="/home">
+					<h1>{{ site.title }}</h1>
+					<p>{{ site.description }}</p>
+				</div>
+				<div class="unit whole" id="/contact">
+					<a href="https://twitter.com/{{ site.twitter_username }}" class="twitter-icon btn"><i class="icon ion-social-twitter"></i></a>
+					<a href="https://github.com/{{ site.github_username }}" class="github-icon btn"><i class="icon ion-social-github"></i></a>
+					<a href="mailto:{{ site.email }}" class="mail-icon btn"><i class="icon ion-email"></i></a>
+					<a href="feed.xml" class="rss-icon btn"><i class="icon ion-social-rss"></i></a>
+				</div>
+				<div class="unit whole hide-on-mobiles" id="/projects">
+					{% include projects.html %}
+				</div>
+				<div class="unit whole hide-on-mobiles" id="/impressum">
+					{% include imprint.html %}
+				</div>
+			</div>
+		</div>
+		<div class="unit two-thirds blog-column">
+			<div class="grid">
+				<div class="unit whole" id="/blog">
+					<h1>Blog</h1>
+				</div>
+				{{ content }}
+				<div class="unit whole" id="/subscribe">
+					<p><a href="feed.xml">RSS</a> & <a href="atom.xml">ATOM</a> Feed<br>Built with Jekyll, Code on <a href="https://github.com/lukas-h/onepage">Github</a></p>
+				</div>
+			</div>
+		</div>
 
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
-    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+		<div class="unit whole hide-on-desktops" id="/projects">
+			{% include projects.html %}
+		</div>
+		<div class="unit whole hide-on-desktops" id="/impressum">
+			{% include imprint.html %}
+		</div>
+	</div>
 
-    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
-  </head>
+	{% include foot.html %}
 
-  <body>
-    <div class="wrapper-masthead">
-      <div class="container">
-        <header class="masthead clearfix">
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
+</body>
 
-          <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-            <p class="site-description">{{ site.description }}</p>
-          </div>
-
-          <nav>
-            <a href="{{ site.baseurl }}/">Blog</a>
-            <a href="{{ site.baseurl }}/about">About</a>
-          </nav>
-        </header>
-      </div>
-    </div>
-
-    <div id="main" role="main" class="container">
-      {{ content }}
-    </div>
-
-    <div class="wrapper-footer">
-      <div class="container">
-        <footer class="footer">
-          {% include svg-icons.html %}
-        </footer>
-      </div>
-    </div>
-
-    {% include analytics.html %}
-  </body>
 </html>

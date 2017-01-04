@@ -1,0 +1,14 @@
+<h4>Imprint</h4>
+<ul>
+    <li>
+        <p>{{ site.address }}<br><small>Address</small></p>
+    </li>
+    <li>
+        <p>{{ site.email }}<br><small>Email</small></p>
+    </li>
+    {% if site.g_analytics %}
+    <li>
+        <p><a href="https://www.google.com/analytics/terms/en.html">Google Analytics</a><br><small>Disclaimer</small></p>
+    </li>
+    {% endif %}
+</ul>
