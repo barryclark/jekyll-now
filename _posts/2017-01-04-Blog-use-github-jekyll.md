@@ -1,16 +1,11 @@
----
-
 layout: post
 title:  github搭建个人静态Blog简明教程
 date:   2017-01-04 20:20:00 +0800
 categories: document
 tag: 教程
 
----
-
 * content
-
-*  {:toc}
+{:toc}
 
 # 写在前面
 
