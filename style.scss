@@ -271,6 +271,13 @@ nav {
   .read-more {
     text-transform: uppercase;
     font-size: 0.875rem;
+    border-radius:1rem;
+    background:$blue;
+    color:#fff;
+    padding:.5rem;
+    &:hover, &:active {
+    background: $lightblue;
+  }
   }
 }
 
