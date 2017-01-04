@@ -16,7 +16,7 @@ Como o objetivo é entender o funcionamento, irei fazer os exemplos apenas com u
 
 ## OiMundoServlet.java
 
-{% highlight java %}
+```java
 
 import java.io.*;
 import javax.servlet.*;
@@ -36,17 +36,17 @@ public class OiMundoServlet extends HttpServlet {
     }
 }
 
-{% endhighlight %}
+```
 
 Basicamente o servlet OiMundoServlet utiliza um Writer, obtido do objeto de response, para imprimir no browser a mensagem "Primeira servlet". Salve o OiMundoServlet.java na pasta <unidade>/ocejwcd/OlaMundo/src entre no diretório e execute o comando:
 
-{% highlight bash %}
+```bash
 javac -d ../classes OiMundoServlet.java -cp <caminho para seu servidor tomcat>/lib/servlet-api.jar
-{% endhighlight %}
+```
 
 O comando irá colocar seu arquivo de classe compilada (.class) no diretório <unidade>/ocejwcd/OlaMundo/classes. Copie o arquivo .class criado para o ambiente de deployement em <caminho para seu servidor tomcat>/webapps/OlaMundo/WEB-INF/classes e crie o arquivo de deployement descriptor (web.xml) no mesmo lugar.
 
-{% highlight xml %}
+```xml
 
 <?xml version="1.0" encoding="ISO-8859-1" ?>
 
@@ -67,7 +67,7 @@ version="2.4">
 
 </web-app>
 
-{% endhighlight %}
+```
 
 Execute o Tomcat e escreva o endereço http://localhost:8080/OlaMundo/oimundo e "Primeira servlet" deve aparecer em seu browser.
 

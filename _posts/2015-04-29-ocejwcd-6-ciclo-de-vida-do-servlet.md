@@ -20,9 +20,9 @@ Lembrando que um servlet não tem um método main() e é controlado pelo contain
 ##Interação cliente-servidor
 
 O que acontece quando uma __request__ vem do browser? Vejamos esse código html:
-{% highlight html %}
+```html
 <form action="HelloServlet" method="POST">
-{% endhighlight %}
+```
 
 Quando clicamos no botão de submit do form em questão o browser envia a solicitação para o container e o mesmo identifica que a solicitação é para um servlet e cria dois objetos, um do tipo **HttpServletRequest** e um **HttpServletResponse**. Em seguida encontra o servlet correto para a solicitação e cria uma thread para ele, no passo seguinte envia os dois objetos e chama o método service(), que repassa os objetos para o método apropriado em função do tipo de solicitação (POST nesse caso). A resposta correta é criada e entregue ao objeto response que por sua vez é retornado para o cliente.
 

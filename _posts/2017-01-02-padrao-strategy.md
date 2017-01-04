@@ -11,13 +11,13 @@ Esse post será o início de uma série o qual vou tentar explicar os padrões d
 
 > - Capitão Nascimento (Filme Tropa de Elite).
 
-##Strategy
+## Strategy
 
 É um padrão comportamental utilizado quando uma classe possui muitos algoritmos que tem o mesmo propósito e que podem ser alternados na lógica da aplicação. A execução do algoritmo fica sob responsabilidade de uma instância que compõe a classe principal.
 
 {% include image.html url="/images/20170102/padrao_estrategia.svg" description="Diagrama do projeto de exemplo utilizanco o padrão Strategy" %}
 
-###Aplicabilidade
+### Aplicabilidade
 
 Use o padrão Strategy quando:
 
@@ -29,11 +29,11 @@ Use o padrão Strategy quando:
 
 * uma classe define muitos comportamentos, e estes aparecem em suas operações como múltiplos comandos condicionais da linguagem. Em vez de usar muitos comandos condicionais, mova os ramos condicionais relacionados para a sua própria classe Strategy. 
 
-##Implementação
+## Implementação
 
 Para exemplo criei uma classe AgenteSecreto que irá consumir os algoritmos de estratégia, possui um método que executa a ação (no caso combater) e outro método que muda a estratégia em tempo de execução.
 
-{% highlight java %}
+```java
 public class AgenteSecreto {
 
     private EstrategiaAgente estrategia;
@@ -51,26 +51,26 @@ public class AgenteSecreto {
     }
 
 }
-{% endhighlight %}
+```
 
 A interface que define o algoritmo de execução:
 
-{% highlight java %}
+```java
 public interface EstrategiaAgente {
     
     public void executar();
     
 }
-{% endhighlight %}
+```
 
 Criei três implementações da interface com os algoritmos: [EstrategiaEngenharia](https://raw.githubusercontent.com/ivanqueiroz/padroes-projeto-java/master/strategy/src/main/java/com/ivanqueiroz/padroes/strategy/EstrategiaEngenharia.java), [EstrategiaLinhaDeFrente](https://raw.githubusercontent.com/ivanqueiroz/padroes-projeto-java/master/strategy/src/main/java/com/ivanqueiroz/padroes/strategy/EstrategiaLinhaDeFrente.java) e [EstrategiaSuporte](https://raw.githubusercontent.com/ivanqueiroz/padroes-projeto-java/master/strategy/src/main/java/com/ivanqueiroz/padroes/strategy/EstrategiaSuporte.java). Agora vamos a Implementação do programa.
 
 
-##Antes do Java 8
+## Antes do Java 8
 
 Após definir a interface que encapsula o algoritmo só precisamos instanciar a estratégia que queremos utilizar, passando por construtor para a classe AgenteSecreto ou chamando o método mudarEstrategia():
 
-{% highlight java %}
+```java
 LOGGER.info("Inimigos localizados dentro do forte!");
 AgenteSecreto agente = new AgenteSecreto(new EstrategiaLinhaDeFrente());
 agente.combater();
@@ -82,17 +82,17 @@ agente.combater();
 LOGGER.info("Equipe sendo alvejada!");
 agente.mudarEstrategia(new EstrategiaSuporte());
 agente.combater();
-{% endhighlight %}
+```
 
-##Após o Java 8
+## Após o Java 8
 
 A partir do Java 8 e o suporte a programação funcional, podemos utilizar novas sintaxes para alterar os algoritmos.
 
-###Lambdas
+### Lambdas
 
 Com o suporte a [Lambdas](https://docs.oracle.com/javase/tutorial/java/javaOO/lambdaexpressions.html), podemos "passar" a implementação do algoritmo diretamente para o construtor de AgenteSecreto ou ao método mudarEstrategia():
 
-{% highlight java %}
+```java
 LOGGER.info("Java 8 Lambdas");
 LOGGER.info("Inimigos localizados dentro do forte!");
 agente = new AgenteSecreto(() -> LOGGER.info("Segurar escudo e invadir."));
@@ -105,15 +105,15 @@ agente.combater();
 LOGGER.info("Equipe sendo alvejada!");
 agente.mudarEstrategia(()-> LOGGER.info("Esperar feridos e ajudar."));
 agente.combater();
-{% endhighlight %}
+```
 
 A vantagem dessa abordagem é de não termos que criar uma classe para algoritmos pequenos, diminuindo o número de classes do projeto.
 
-###Referência a métodos
+### Referência a métodos
 
 Outra facilidade da programação funcional do Java 8 é o de referenciar métodos ou o chamado [Method Reference](https://docs.oracle.com/javase/tutorial/java/javaOO/methodreferences.html), essa facilidade é interessante quando a expressão lâmbda chama métodos já existentes, para exemplo criei em cada implementação de estratégia um método estático que realiza em si a ação requerida, com isso é possível utilizar a sintaxe do method reference e "passar" os métodos diretamente para o AgenteSecreto:
 
-{% highlight java %}
+```java
 LOGGER.info("Java 8 Method References");
 LOGGER.info("Inimigos localizados dentro do forte!");
 agente.mudarEstrategia(EstrategiaLinhaDeFrente::combaterComoLinhaDeFrente);
@@ -126,15 +126,15 @@ agente.combater();
 LOGGER.info("Equipe sendo alvejada!");
 agente.mudarEstrategia(EstrategiaSuporte::combaterComoSuporte);
 agente.combater();
-{% endhighlight %}
+```
 
 Essa abordagem é interessante para os casos em que temos expressões lambda que apenas chamam outros métodos. Com ela deixamos o código mais legível além de chamarmos diretamente o método de ação.
 
-###Executando
+### Executando
 
 Ao executarmos a aplicação temos o seguinte resultado:
 
-{% highlight Text %}
+```text
 
 padroes.strategy.Aplicacao - Inimigos localizados dentro do forte!
 padroes.strategy.EstrategiaLinhaDeFrente - Segurar escudo e invadir.
@@ -156,9 +156,9 @@ padroes.strategy.Aplicacao - Inimigos efetuando disparos!
 padroes.strategy.EstrategiaEngenharia - Armar torreta, jogar granadas de efeito e plantar minas.
 padroes.strategy.Aplicacao - Equipe sendo alvejada!
 padroes.strategy.EstrategiaSuporte - Esperar feridos e ajudar.
-{% endhighlight %}
+```
 
-##Vantagens e desvantagens do Strategy
+## Vantagens e desvantagens do Strategy
 
 Em outras fontes você irá encontrar diversas vantagens e desvantagens sobre o padrão, para mim as principais vantagens são:
 
@@ -171,14 +171,14 @@ Já as desvantagens:
 * aumento no número de classes;
 * aumento na complexidade de criação do objeto, já que a instância da dependência precisa ser criada e configurada.
 
-##Finalizando
+## Finalizando
 
 Na versão 8 a linguagem Java trouxe ótimas novidades que ajudam bastante no desenvolvimento de soluções de código mais simples e legíveis. O suporte a programação funcional trás um novo paradigma para os desenvolvedores que utilizam a linguagem, cabe a nós avaliar e escolher a melhor forma de aproveitá-la. Um forte abraço e até a próxima.
 
-###Código no Github
+### Código no Github
 [https://github.com/ivanqueiroz/padroes-projeto-java](https://github.com/ivanqueiroz/padroes-projeto-java)
 
-##Créditos
+## Créditos
 
 * [Design Patterns: Elements of Reusable Object-Oriented Software](http://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612)
 * [http://java-design-patterns.com/](http://java-design-patterns.com/)

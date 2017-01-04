@@ -32,29 +32,29 @@ A interface **javax.servlet.http.HttpServletRequest** representa a requisição 
 ###Método getParameter
 Obtém o valor do parâmetro passado pelo formulário na requisição, recebe uma String que representa o nome do parâmetro e retorna uma String com o valor do parâmetro. Ex:
 
-{% highlight java %}
+```java
 String var = req.getParameter("parametro");
-{% endhighlight %}
+```
 
 ###Método getHeader e getIntHeader
 O ```getHeader(String value)``` obtém informação do cabeçalho (header) da requisição, recebe uma String com o nome do cabeçalho desejado e retorna uma String com o valor do mesmo.
 
-{% highlight java %}
+```java
 String head = req.getHeader("nome");
-{% endhighlight %}
+```
 
 Já o método ```getIntHeader(String value)``` retorna o valor do cabeçalho escolhido como um int ou -1 caso não seja possível retornar valor.
 
-{% highlight java %}
+```java
 int i = req.getIntHeader("value");
-{% endhighlight %}
+```
 
 ###Método getInputStream
 Retorna um **ServletInputStream** que permite obter o corpo (body) da requisição como dados binários (stream).
 
-{% highlight java %}
+```java
 InputStream is = req.getInputStream();
-{% endhighlight %}
+```
 
 Esse método está definido na interface ServletRequest.
 
@@ -78,54 +78,54 @@ A interface **javax.servlet.http.HttpServletResponse** representa a resposta do 
 ###Método setContentType
 Configura o tipo do conteúdo respondido para o cliente, seja um texto, imagem ou arquivo. No exemplo seguinte é configurada uma resposta html na codificação UTF-8:
 
-{% highlight java %}
+```java
 res.setContentType("text/html; charset=UTF-8");
-{% endhighlight %}
+```
 
 ###Método setHeader
 Configura um determinado cabeçalho com um valor passado, caso o cabeçalho já exista o valor é sobrescrito. Segue exemplo:
 
-{% highlight java %}
+```java
 res.setHeader("Content-Language", "es");
-{% endhighlight %}
+```
 
 ###Método addHeader
 Adiciona um cabeçalho com o valor informado na resposta, permitindo que a mesma tenha um ou mais cabeçalhos.
 
-{% highlight java %}
+```java
 response.addHeader("Content-Disposition","inline");
-{% endhighlight %}
+```
 
 ###Método sendRedirect
 Esse método envia uma resposta de redirecionamento para o cliente utilizando  a url informada, ele aceita caminhos relativos a raiz da aplicação, caso a url tenha um "/", ou absolutos.
 Só deve ser chamado antes da resposta não ter sido efetivada, caso contrário será lançada uma ```IllegalStateException```. No exemplo seguinte uma forma de direcionar uma consulta para o Google utilizando o sendRedirect:
 
-{% highlight java %}
+```java
 String name=request.getParameter("name");
 response.sendRedirect("https://www.google.co.in/#q="+name);
-{% endhighlight %}
+```
 
 ###RequestDispatcher
 O RequestDispatcher redireciona a requisição para outro elemento dentro do servidor (um servlet, jsp etc). Exemplo:
 
-{% highlight java %}
+```java
 RequestDispatcher requestDispatcher = request.getRequestDispatcher("/endereco.jsp");
-{% endhighlight %}
+```
 
 Por ser realizado no lado do servidor o cliente não sabe que ocorreu o redirecionamento e a url no browser não muda.
 
 ###Cookie
 Cookies são pequenos pedaços de informação enviados pelo servlet para o browser segundo a documentação da API. Para criar um cookie basta instanciar um objeto do mesmo passando o nome e valor.
 
-{% highlight java %}
+```java
 Cookie cookie = new Cookie("usuario","1234");
-{% endhighlight %}
+```
 
 Com o objeto cookie criado adicioná-lo a resposta através do método addCookie.
 
-{% highlight java %}
+```java
 res.addCookie(cookie);
-{% endhighlight %}
+```
 
 Sem mistérios e bem simples a utilização dos Cookies pela API.
 

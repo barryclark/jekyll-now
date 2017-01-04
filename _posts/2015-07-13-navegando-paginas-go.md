@@ -10,37 +10,37 @@ Após muito tempo trago mais um post sobre Go, confesso que a demora foi devido 
 
 Para usar a api do Steam precisei manipular chamadas HTTP e logo descobri que pode ser feito facilmente com a utilização do pacote ```net/http``` e ```net/url``` do Go.
 
-{% highlight go %}
+```go
 import (
 	"net/http"
   "net/url"
 )
-{% endhighlight %}
+```
 
 Com o import desses pacotes, já se pode utilizar as funções cliente do pacote:
 
-{% highlight go %}
+```go
 resp, err := http.Get("http://teste.com/")
 
 resp, err := http.Post("http://teste.com.br/upload", "image/jpeg", &buf)
 
 resp, err := http.PostForm("http://teste.com.br/form",
 	url.Values{"key": {"Value"}, "id": {"123"}})
-{% endhighlight %}
+```
 
 Para o meu propósito coloquei uma função que trata o retorno de erro:
 
-{% highlight go %}
+```go
 func perror(err error) {
 	if err != nil {
 		panic(err)
 	}
 }
-{% endhighlight %}
+```
 
 Basicamente a função ```perror``` verifica se houve erro e chama a função ```panic``` para interromper a execução do programa. Então criei uma função que recebe o endereço http e retorna uma string com o conteúdo da resposta:
 
-{% highlight go %}
+```go
 func navigateToString(address string) (response string) {
 	_, err := url.Parse(address)
 	perror(err)
@@ -53,11 +53,11 @@ func navigateToString(address string) (response string) {
 
 	return string(body)
 }
-{% endhighlight %}
+```
 
 Como a função ```http.Get``` retorna o tipo [Response](https://golang.org/pkg/net/http/#Response) que possui o elemento ```Body``` (que é um Reader), usei a função ReadAll do pacote utilitário ```io/ioutil``` para convertê-lo em um array de bytes e construir a string de retorno. Segue o código completo para testar a função:
 
-{% highlight go %}
+```go
 package main
 
 import (
@@ -89,7 +89,7 @@ func navigateToString(address string) (response string) {
 func main() {
 	fmt.Println(navigateToString("http://www.atarde.com.br"))
 }
-{% endhighlight %}
+```
 
 O código de [webapiutils.go](https://raw.githubusercontent.com/ivanqueiroz/steam4go/9c67291b0e8c6f7bde8dffd11ca4fad44bba346d/webapiutils.go) que criei se baseia na utilização do pacote ```net/url``` para obter a lista de métodos disponíveis na Steam Web API, no formato JSON, e possui funções que retornam a resposta como string, array de bytes ou como uma ```struct```.
 
