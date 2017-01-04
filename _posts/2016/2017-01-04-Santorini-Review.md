@@ -37,7 +37,7 @@ Everything in Santorini's box screams quality. The first thing you'll be present
 
 After the rulebook and the bottom of the board. Underneath that are the bags of building pieces, the builders, and the rest of the board.
 
-![Santorini Board]({{ site.url }}/images/santorini/board.jpg)
+![Santorini Board]({{ site.url }}/images/santorini/board1.jpg)
 *The beautiful, 3D board in all its glory.*{: .center }
 
 The board is amazing, with the play space elevated a few inches off the table. The builder miniatures are finely sculpted and cast in a sturdy plastic. The building pieces are lightweight, yet strong, and fit together in a way that's incredibly satisfying. The cardstock is thick, yet the cards are easily shuffled. As for the artwork and design, it's all top notch through and through.
