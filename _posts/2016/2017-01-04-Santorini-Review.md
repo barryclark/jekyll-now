@@ -25,7 +25,7 @@ That's it!
 
 Of course, there's more to it than that if you want a bit more depth. There's a stack of God cards that can be used to provide tons of variation to how builders are moved, buildings are built, and more. The youngest player chooses as many God cards as there are players, and then the players choose which God cards they want. The power granted from that card is used throughout the game.
 
-Want a bit more than that? There's also the Golden Fleece expansion which adds more God cards, Hero cards with powers that can only be used once per game, and a Golden Fleece token that changes the way God cards are used.
+Want a bit more than that? There's also the <a target="_blank" href="https://www.amazon.com/gp/product/0992126878/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0992126878&linkCode=as2&tag=pawnsperspect-20&linkId=dd033e9f67d43314f3e40fe9edcba4c5">Golden Fleece Expansion</a><img src="//ir-na.amazon-adsystem.com/e/ir?t=pawnsperspect-20&l=am2&o=1&a=0992126878" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /> which adds more God cards, Hero cards with powers that can only be used once per game, and a Golden Fleece token that changes the way God cards are used.
 
 When using the Golden Fleece, the token is placed on the board by the first player to place a builder. A single God card is chosen, then the player who placed their workers second takes the first turn. Whenever a builder is placed next to the Golden Fleece token that player can use the God power listed on the chosen card.
 
