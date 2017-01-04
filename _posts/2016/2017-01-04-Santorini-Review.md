@@ -37,8 +37,8 @@ Everything in Santorini's box screams quality. The first thing you'll be present
 
 After the rulebook and the bottom of the board. Underneath that are the bags of building pieces, the builders, and the rest of the board.
 
-![Santorini Board]({{ site.url }}/images/santorini/board1.jpg)
-*The beautiful, 3D board in all its glory.*{: .center }
+![Santorini Components]({{ site.url }}/images/santorini/santorinicollage.jpg)
+*Outstanding components.*{: .center }
 
 The board is amazing, with the play space elevated a few inches off the table. The builder miniatures are finely sculpted and cast in a sturdy plastic. The building pieces are lightweight, yet strong, and fit together in a way that's incredibly satisfying. The cardstock is thick, yet the cards are easily shuffled. As for the artwork and design, it's all top notch through and through.
 
@@ -46,9 +46,22 @@ Santorini has some of the best components I've been in a while.
 
 <h2>Perspective</h2>
 
-Santorini hit all the right buttons with me and my family. With colorful, cute artwork, amazing components, and easy-to-learn gameplay I can see this one hitting the table a lot in the near future. Already we've played the game more than a few times and the kids keep asking for more. Between the sheer quantity of God cards, and the added bonus of Hero cards and alternate gameplay added with the Golden Fleece expansion, I can't imagine us getting board with it anytime soon.
+One of the things that I really love about Santorini is how accessible it is. Not only is it a great strategy game, but it's packaged in a way that makes it friendly and approachable. While the game stands perfectly on its own mechanically, the updated design brings it light years ahead in the appeal department.
 
-This is one I'd say is a must-have for any gamer's board game collection. It's a serious strategy game that's family friendly, easily accessible, and looks absolutely amazing.
+The previous version of Santorini looked like this:
+
+![Old Santorini Board]({{ site.url }}/images/santorini/oldsantorini.jpg){: .center }
+*An older, unthemed Santorini board.*{: .center }
+
+I'm a fan of abstract strategy games, as is my oldest son. Getting my 6-year-old to play a game that looks like the one above may have been a bit of a challenge. Getting him to play Roxley's version took no coaxing at all.
+
+Speaking of my 6-year-old, he was the first person to play Santorini with me. We spent some time reading the book and going over all the pieces in the box before playing our first game. Just as Roxley promises, it only took about 30 seconds to explain the rules to him and we were off. A few games later we had incorporated the God cards and he went from barely scraping by to besting his old man.
+
+That's one of the *other* things I love about Santorini. While it's highly strategic, the rules couldn't be simpler. Even when adding in the God cards, and even the Golden Fleece expansion, the game remains simple enough for my whole family to enjoy. To me, that's the mark of a quality game.
+
+Santorini has already seen a lot of play in our home in the short amount of time that we've owned it, and I don't see that changing anytime soon. This is one I'd love to bring to work for some lunchtime gaming with co-workers as it's simple, attractive and something we could fit multiple games in the time we have. Unfortunately I don't think my kids are going to let me take it out of the house.
+
+This is one I'd say is a must-have for any gamer's collection. It's a serious strategy game that's family friendly, easily accessible, and looks absolutely amazing.
 
 *A copy of Santorini was provided free for review by Roxley.*
 
