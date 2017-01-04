@@ -33,7 +33,7 @@ Santorini works best with two players, but there are rules for playing with 3-4.
 
 <h2>Pieces</h2>
 
-Everything in Santorini's box screams quality. The first thing you'll be presented with upon opening the game is a softcover children's story explaining how the game of Santorini came to be. The book is beautifully illustrated and excellently crafted.
+Everything in Santorini's box screams quality. The first thing you'll be presented with upon opening the game is a softcover children's story explaining how the game of Santorini came to be<sup>&#10013;</sup>. The book is beautifully illustrated and excellently crafted.
 
 After the rulebook and the bottom of the board. Underneath that are the bags of building pieces, the builders, and the rest of the board.
 
@@ -51,6 +51,8 @@ Santorini hit all the right buttons with me and my family. With colorful, cute a
 This is one I'd say is a must-have for any gamer's board game collection. It's a serious strategy game that's family friendly, easily accessible, and looks absolutely amazing.
 
 *A copy of Santorini was provided free for review by Roxley.*
+
+**&#10013;** *The softcover storybook is a Kickstarter exclusive, and will not be included in the retail version of Santorini.*
 
 <h3>Supporting Links</h3>
 
