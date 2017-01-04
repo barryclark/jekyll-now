@@ -17,7 +17,7 @@
   src: url(../fonts/st.ttf) format('truetype');
 }
 body{
-    font-family: 'Playfair Display', serif;
+    font-family: PingFang SC,Hiragino Sans GB,Arial,Microsoft YaHei,Helvetica Neue, sans-serif;
     font-size: 16.5px;
 }
 h1{ font-size: 42px; }
@@ -116,7 +116,7 @@ li{
 .post-content h4,
 .post-content h5,
 .post-content h6{
-    font-family: '-apple-system,PingFang SC,Hiragino Sans GB,Arial,Microsoft YaHei,Helvetica Neue', sans-serif;
+    font-family: PingFang SC,Hiragino Sans GB,Arial,Microsoft YaHei,Helvetica Neue, sans-serif;
     padding-left: 8px;
     border-left: 5px solid #db4646;
 }

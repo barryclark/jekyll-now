@@ -6,5 +6,5 @@ tags: ['example', 'welcome']
 author: "Your Name"
 ---
 
-Welcome to this jekyll theme!  
+修改8 
 Edit `_config.yml` how you want, and see what happens.....
