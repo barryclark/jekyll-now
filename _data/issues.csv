@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1515,198752486,2017-01-04 16:40:56,2017-01-04 16:40:05,"Raccolta fondi per ricostruire la fattoria sociale #Montepacini, centro socio-educativo per disabili",,,"[""Accettato"", ""Bollettino"", ""Raccolte Fondi"", ""Sisma Ottobre""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Raccolta fondi per ricostruire la fattoria sociale #Montepacini, centro socio-educativo per disabili"", ""data"": ""04/01/2017"", ""descrizione"": ""l'Associazione Dokita, da sempre al fianco delle persone con disabilit\u00e0, in collaborazione con la Comunit\u00e0 di Capodarco e il Forum Nazionale dell\u2019Agricoltura Sociale, ha attivato una raccolta fondi da destinare all\u2019accoglienza e all\u2019assistenza delle persone con disabilit\u00e0 ospitate nella Fattoria Sociale Montepacini, in provincia di Fermo. La Fattoria Montepacini nasce come Centro Socio Educativo Riabilitativo diurno per giovani/adulti disabili. Successivamente, la fattoria sociale ha ampliato le sue attivit\u00e0, aprendo un Centro Estivo che accoglie annualmente, oltre 250 minori. Le attivit\u00e0 che il Centro offre ai ragazzi disabili sono molte. I ragazzi vengono seguiti da personale specializzato nel loro percorso di fisioterapia e/o di riabilitazione e hanno la possibilit\u00e0 di vivere e sperimentare esperienze positive e costruttive a contatto con la natura e gli animali (pet therapy, onodidattica, ippoterapia, animali della fattoria) in modo da promuovere l\u2019agricoltura sociale per l\u2019inclusione di minori e giovani adulti disabili. A causa del terremoto di Agosto la fattoria ha subito degli evidenti danni strutturali. I fondi raccolti sono destinati alla riparazione dei danni strutturali degli ambienti didattici della fattoria e al supporto delle attivit\u00e0 didattiche rivolte ai bambini disabili rimasti vittima del terremoto. Al link per le donazioni online."", ""email"": ""dokita@dokita.org"", ""iban"": ""IT 36 Q 03359 01600 100000001058"", ""intestazione"": ""Ass. Volontari Dokita onlus"", ""link"": ""http://www.dokita.org/emergenza-terremoto/"", ""postale"": ""22445001""}","<pre><yamldata>chi: 'Raccolta fondi per ricostruire la fattoria sociale #Montepacini, centro socio-educativo per disabili'
+descrizione: 'l''Associazione Dokita, da sempre al fianco delle persone con disabilità, in collaborazione con la Comunità di Capodarco e il Forum Nazionale dell’Agricoltura Sociale, ha attivato una raccolta fondi da destinare all’accoglienza e all’assistenza delle persone con disabilità ospitate nella Fattoria Sociale Montepacini, in provincia di Fermo. La Fattoria Montepacini nasce come Centro Socio Educativo Riabilitativo diurno per giovani/adulti disabili. Successivamente, la fattoria sociale ha ampliato le sue attività, aprendo un Centro Estivo che accoglie annualmente, oltre 250 minori. Le attività che il Centro offre ai ragazzi disabili sono molte. I ragazzi vengono seguiti da personale specializzato nel loro percorso di fisioterapia e/o di riabilitazione e hanno la possibilità di vivere e sperimentare esperienze positive e costruttive a contatto con la natura e gli animali (pet therapy, onodidattica, ippoterapia, animali della fattoria) in modo da promuovere l’agricoltura sociale per l’inclusione di minori e giovani adulti disabili. A causa del terremoto di Agosto la fattoria ha subito degli evidenti danni strutturali. I fondi raccolti sono destinati alla riparazione dei danni strutturali degli ambienti didattici della fattoria e al supporto delle attività didattiche rivolte ai bambini disabili rimasti vittima del terremoto. Al link per le donazioni online.'
+intestazione: 'Ass. Volontari Dokita onlus'
+iban: 'IT 36 Q 03359 01600 100000001058'
+bic: ''
+postale: '22445001'
+causale: ''
+link: 'http://www.dokita.org/emergenza-terremoto/'
+email: dokita@dokita.org
+data: 04/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1514,198714503,2017-01-04 16:07:19,2017-01-04 14:04:49,Famiglia emiliana offre casa mobile a famiglia terremotata,,,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Form""]",,,"{""data"": ""04/01/2017"", ""descrizione"": ""Salve, siamo una famiglia dell'Emilia Romagna e siamo stati colpiti dal terremoto del 2012 siamo rientrati ora in casa e vorremmo aiutare qualche famiglia colpita dal terremoto come noi. Mettiamo in vendita la casa mobile/bungalow da noi acquistata per dormire fuori in giardino durante il periodo di ricostruzione della casa, se mi date la vostra e-mail e se di vostro interesse mando il volantino della casa mobile. Ringraziamo in anticipo e ci auguriamo che possa essere utile. Cordiali Saluti, Agnese."", ""email"": ""agnese.chendi@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3386211946""}","<pre><yamldata>tel: '3386211946'
 email: agnese.chendi@gmail.com
 descrizione: 'Salve, siamo una famiglia dell''Emilia Romagna e siamo stati colpiti dal terremoto del 2012 siamo rientrati ora in casa e vorremmo aiutare qualche famiglia colpita dal terremoto come noi. Mettiamo in vendita la casa mobile/bungalow da noi acquistata per dormire fuori in giardino durante il periodo di ricostruzione della casa, se mi date la vostra e-mail e se di vostro interesse mando il volantino della casa mobile. Ringraziamo in anticipo e ci auguriamo che possa essere utile. Cordiali Saluti, Agnese.'
@@ -9980,18 +9991,6 @@ bic: ''
 postale: ''
 causale: 'Emergenza sisma centro Italia'
 link: 'http://www.regione.veneto.it/web/guest/dettaglio-giunta-news?_spp_detailId=3049515'
-email: ''
-data: 13/09/2016
-</yamldata></pre>
-",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/216,176774807,2016-09-13 23:26:04,2016-09-13 23:16:19,Diocesi di Novara,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": ""Colletta terremoto centro Italia"", ""chi"": ""Diocesi di Novara"", ""data"": ""13/09/2016"", ""descrizione"": """", ""email"": """", ""iban"": ""IT28E 05034 10100 000000009788"", ""intestazione"": """", ""link"": """", ""postale"": """"}","<pre><yamldata>chi: 'Diocesi di Novara'
-descrizione: ''
-intestazione: ''
-iban: 'IT28E 05034 10100 000000009788'
-bic: ''
-postale: ''
-causale: 'Colletta terremoto centro Italia'
-link: ''
 email: ''
 data: 13/09/2016
 </yamldata></pre>
