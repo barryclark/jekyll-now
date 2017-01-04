@@ -20,6 +20,9 @@ $helvetica: Helvetica, Arial, sans-serif;
 $helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $georgia: Georgia, serif;
 
+//Letter-spacing
+$letterSpacing:.065rem;
+
 // Mobile breakpoints
 @mixin mobile {
   @media screen and (max-width: 640px) {
