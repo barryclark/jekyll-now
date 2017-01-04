@@ -11,7 +11,7 @@ description: "怕什么真理无穷，得一寸有一寸的欢喜！"
 baseurl: ""
 url: "http://blog.dzq.tech" # replace by your site's url
 twitter_username: your-name
-github_username:  dzqoo # (your name)
+github_username:  dzqoo
 accent: "#f7f7e6" # accent color for blog column
 
 author: "都真全"
