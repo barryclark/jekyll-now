@@ -8,8 +8,8 @@ github: https://github.com/dzqoo/
 baseurl: ""
 description: 怕什么真理无穷，得一寸又一寸的欢喜
 meta_description: 都真全;个人博客;
-motto: It's our wits that make us men.
-banner: 学而不思则罔，思而不学则殆。
+motto: Talk is cheap , show me the code.
+banner: 调不完的bug，看不厌的电影。
 
 #permalink: /:categories/:year/:month/:day/:title/
 permalink: /:year/:month/:day/:title/
