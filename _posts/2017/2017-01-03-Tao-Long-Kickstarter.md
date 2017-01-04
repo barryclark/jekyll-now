@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Unboxing Santorini"
+title: "Tao Long"
 description: "Tao Long is a new Kickstarter from Thundergryph Games, the publisher that put out Overseers."
 category: kickstarter
 featured: taolong.jpg
@@ -9,7 +9,7 @@ tags: [kickstarter, games, tao long, thundergryph games]
 author: Rob Kalajian
 ---
 
-<iframe style="float:right; margin-left:10px;"frameborder="0" height="420" scrolling="no" src="https://www.kickstarter.com/projects/gonab/tao-long/widget/card.html?v=2" width="220"></iframe>
+<iframe style="float:right; argin-left:10px;" frameborder="0" height="420" scrolling="no" src="https://www.kickstarter.com/projects/gonab/tao-long/widget/card.html?v=2" width="220"></iframe>
 
 Thundergryph has a great new Kickstarter up and running. Tao Long is a game of two dragons trying to outdo the other, but are bound by Tao. Each action taken by one dragon opens up new options for the other to move, attack, or block. In the end, there can be only one.
 
