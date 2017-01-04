@@ -6,6 +6,6 @@ layout: post
 
 Strips everything down to the bare minimum, eliminating a lot of complexity.
 
-![_config.yml]({{ site.baseurl }}/images/configHome.png)
+![_config.yml]({{ site.baseurl }}/images/configHome.svg)
 
 
