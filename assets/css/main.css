@@ -116,7 +116,7 @@ li{
 .post-content h4,
 .post-content h5,
 .post-content h6{
-    font-family: 'Playfair Display', serif;
+    font-family: '-apple-system,PingFang SC,Hiragino Sans GB,Arial,Microsoft YaHei,Helvetica Neue', sans-serif;
     padding-left: 8px;
     border-left: 5px solid #db4646;
 }
