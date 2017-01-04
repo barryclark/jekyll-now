@@ -17,7 +17,7 @@
   src: url(../fonts/st.ttf) format('truetype');
 }
 body{
-    font-family: PingFang SC,Hiragino Sans GB,Arial,Microsoft YaHei,Helvetica Neue, sans-serif;
+    font-family: Microsoft YaHei,Helvetica Neue, sans-serif;
     font-size: 16.5px;
 }
 h1{ font-size: 42px; }
