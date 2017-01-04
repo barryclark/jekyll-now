@@ -19,9 +19,10 @@ html {
 
 body {
 	background: $white;
-  font: 18px/1.5 $helveticaNeue;
+  font: 1.125rem/1.5 $helveticaNeue;
   color: $darkGray;
   font-weight:200;
+  letter-spacing:.05rem;
 }
 
 .container {
