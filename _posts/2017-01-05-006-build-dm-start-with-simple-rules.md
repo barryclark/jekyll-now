@@ -85,8 +85,8 @@ In other words, tank-filling DMs. When you do this, you are having an investor m
 
 I build other tank-filling DM such as 
 
-1. sleep at least 7.5hrs
-2.  ignoring facebook
+1. sleep 7.5hrs
+2. ignoring facebook
 3. unsubscribe from stuff I no longer read or watch, and 
 4. schedule one meet-up a month with friends. 
 
@@ -96,7 +96,7 @@ More accurately, I started with Simple Rules. Rules about what to do (sleep 7.5 
 
 ## What other DMs you have built?
 
-I don't consider the moment you created a set of Simple Rules means you have a DM. 
+When you create a set of Simple Rules, it doesn't mean you have a DM. At best, I now have 3 different DMs ranging between 5%-25% becoming full DM.
 
 Recall I wrote earlier that, *Simple Rules are how a DM is expressed*. If you have stated a set of Simple Rule, that's just the starting point. Until you are well-practiced in **executing** them, they are not DM. Maybe, just M.
 
@@ -130,7 +130,6 @@ Let's start with **Make Execution Easy**:
 
 - If I recharge my tanks, execution (in a day to day sense) becomes easy (or easier).
 - If I build new DMs and have more options, execution becomes easy (or easier).
-- If I build new DMs and have more options, execution becomes easy (or easier).
 - If I improve the efficiency of my current DMs, execution becomes easy (or easier).
 - If I make the rules easier to execute, execution becomes easy (or easier).
 
@@ -144,7 +143,13 @@ Now, let's try **Make Understanding Deep**:
 
 and so on. You get the idea.
 
-So that's it. I feel (some) progress with this idea. Already I have updated the Doc on some minor wins. (E.g., I have a story about me using a checklist for out-processing an employee who resigned, but that's another story for another day.) I have every intention to share more such stories with the Doc and some of you in the future.
+So that's it. 
+
+I feel good about this DM to make DMs (a meta-DM!). I have some results. Already I have updated the Doc on some minor wins. (E.g., I have a story about me using a checklist for out-processing an employee who resigned, but that's another story for another day.) 
+
+If you are thinking whether you can do the same, yes, you can. Maybe the Simple Rules are the same, maybe they will be different -- it doesn't matter. Try. Experiment. Change.
+
+My plan is that, I will have more success stories to share with the Doc and some of you in the future. I also have some screw-up stories, but hey, you cannot have the sweet without the sour.
 
 In the meantime, be patient and be safe. 
 
