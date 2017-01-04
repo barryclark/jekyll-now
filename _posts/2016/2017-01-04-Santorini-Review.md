@@ -33,7 +33,7 @@ Santorini works best with two players, but there are rules for playing with 3-4.
 
 <h2>Pieces</h2>
 
-Everything in Santorini's box screams quality. The first thing you'll be presented with upon opening the game is a softcover children's story explaining how the game of Santorini came to be<sup>&#10013;</sup>. The book is beautifully illustrated and excellently crafted.
+Everything in Santorini's box screams quality. The first thing you'll be presented with upon opening the game is a softcover children's story explaining how the game of Santorini came to be<sup>**&#10013;**</sup>. The book is beautifully illustrated and excellently crafted.
 
 After the rulebook and the bottom of the board. Underneath that are the bags of building pieces, the builders, and the rest of the board.
 
