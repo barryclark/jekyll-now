@@ -203,10 +203,10 @@ link: ''
 immagine: ''
 data: 23/12/2016
 </yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1491,197393678,2017-01-04 17:59:30,2016-12-23 16:11:56,MATERIALE PER LABORATORIO DI FALEGNAMERIA,,,"[""Accettato"", ""Fabbisogni"", ""Form"", ""Sisma Ottobre""]",,,{},"<pre><yamldata>tel: '3249850445 - 3478794690'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1491,197393678,2017-01-04 17:59:48,2016-12-23 16:11:56,MATERIALE PER LABORATORIO DI FALEGNAMERIA,42.9525328,13.8807144,"[""Accettato"", ""Fabbisogni"", ""Form"", ""Sisma Ottobre""]",,,"{""cosa"": ""MATERIALE PER LABORATORIO DI FALEGNAMERIA"", ""data"": ""23/12/2016"", ""descrizione"": ""GUS - GRUPPO UMANA SOLIDARIET\u00c0, associazione presente per la popolazione terremotata dal 24 agosto, cerca materiale per poter attivare un laboratorio di falegnameria a San Benedetto del Tronto, in via Camillo Golgi (ex scuola Curzi), per la popolazione di Arquata del Tronto e dintorni. Il materiale pu\u00f2 essere consegnato direttamente in via Golgi. Per info 3478794690."", ""email"": ""guscentroascolto@gmail.com"", ""immagine"": """", ""indirizzo"": ""Via Raffaello Sanzio, Marina centro, San Benedetto del Tronto, AP, Marche, 63039, Italia"", ""lat"": ""42.9525328"", ""link"": """", ""lon"": ""13.8807144"", ""tel"": ""3249850445 - 3478794690""}","<pre><yamldata>tel: '3249850445 - 3478794690'
 email: guscentroascolto@gmail.com
 cosa: 'MATERIALE PER LABORATORIO DI FALEGNAMERIA'
-descrizione: 'GUS - GRUPPO UMANA SOLIDARIETÀ, associazione presente per la popolazione terremotata dal 24 agosto, cerca materiale per poter attivare un laboratorio di falegnameria a San Benedetto del Tronto, in via Camillo Golgi (ex scuola Curzi), per la popolazione di Arquata del Tronto e dintorni. Il materiale può essere consegnato direttamente in via Golgi. Per info 3478794690.
+descrizione: 'GUS - GRUPPO UMANA SOLIDARIETÀ, associazione presente per la popolazione terremotata dal 24 agosto, cerca materiale per poter attivare un laboratorio di falegnameria a San Benedetto del Tronto, in via Camillo Golgi (ex scuola Curzi), per la popolazione di Arquata del Tronto e dintorni. Il materiale può essere consegnato direttamente in via Golgi. Per info 3478794690.'
 indirizzo: 'Via Raffaello Sanzio, Marina centro, San Benedetto del Tronto, AP, Marche, 63039, Italia'
 lat: '42.9525328'
 lon: '13.8807144'
