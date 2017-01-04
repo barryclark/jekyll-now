@@ -1,7 +1,7 @@
 ---
-layout: page
 title: About
-permalink: /about/
+layout: page
+permalink: "/about/"
 ---
 
 Jas is a designer based in Taipei‎, Taiwan.
