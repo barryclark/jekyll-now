@@ -6,7 +6,7 @@ highlighter: rouge
 lsi: false
 permalink: /:title
 
-title: "Your Name"
+title: "都真全"
 description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam"
 baseurl: ""
 url: "http://himsel.me" # replace by your site's url
