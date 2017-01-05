@@ -1,15 +1,15 @@
 ---
 layout: page
-title: About
+title: 关于我
 permalink: /about/
 ---
 
-Some information about you!
+大龄理科男，武大郎学校毕业，后从事开发、管理与产品等工作，先后参与设计与开发的系统涉及银行、证券、建筑及移动医疗等行业。
 
-### More Information
+### 联系我
 
-A place to include any other types of information that you'd like to include about yourself.
+微信号: robossliu 
 
-### Contact me
+![微信号：robossliu]({{ site.baseurl }}/images/wechat.png)
 
-[email@domain.com](mailto:email@domain.com)
+Email: <a href="mailto:robossliu@163.com">robossliu@163.com</a>

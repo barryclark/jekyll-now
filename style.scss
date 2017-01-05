@@ -14,13 +14,15 @@
 /**************/
 
 html {
-  font-size: 100%;
+  // font-size: 100%;  
 }
 
 body {
 	background: $white;
   font: 18px/1.4 $helvetica;
-  color: $darkGray;
+  // color: $darkGray;
+  // color:#333;    
+  color:#333;
 }
 
 .container {
@@ -117,7 +119,9 @@ img {
 
 .date {
   font-style: italic;
+  font-size: 16px;
   color: $gray;
+  text-align: right;
 }
 
 // Specify the color of the selection
@@ -257,7 +261,7 @@ nav {
     border-left: 2px solid $gray;
     padding: 0.1em 1em;
     color: $gray;
-    font-size: 22px;
+    font-size: 16fpx;
     font-style: italic;
   }
 
@@ -267,7 +271,7 @@ nav {
 
   .read-more {
     text-transform: uppercase;
-    font-size: 15px;
+    font-size: 12px;
   }
 }
 
