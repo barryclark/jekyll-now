@@ -519,10 +519,10 @@ link: ''
 immagine: ''
 data: 16/12/2016
 </yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1459,195983827,2017-01-05 21:52:24,2016-12-16 05:27:52,A #Treia (Mc) c'è bisogno di una roulotte,,,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Sisma Ottobre""]",,,"{""cosa"": ""Ruolotte"", ""data"": ""16/12/2016"", ""descrizione"": ""Sono\"" terremotata\"" da Agosto e sto cercando disperatamente una ruolotte per tornare sul mio posto. Mi servirebbe piccola ma pulita. La prendo o a prezzo modico, in dono o anche in prestito. Zona Treia MC.Grazie"", ""email"": ""pelange23@web.de"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3291693360""}","<pre><yamldata>tel: '3291693360'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1459,195983827,2017-01-05 21:53:31,2016-12-16 05:27:52,A #Treia (Mc) c'è bisogno di una roulotte,,,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Sisma Ottobre""]",,,"{""cosa"": ""Ruolotte"", ""data"": ""16/12/2016"", ""descrizione"": ""Sono \""terremotata\"" da Agosto e sto cercando disperatamente una ruolotte per tornare sul mio posto. Mi servirebbe piccola ma pulita. La prendo o a prezzo modico, in dono o anche in prestito. Zona Treia (MC). Grazie"", ""email"": ""pelange23@web.de"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3291693360""}","<pre><yamldata>tel: '3291693360'
 email: pelange23@web.de
 cosa: Ruolotte
-descrizione: 'Sono"" terremotata"" da Agosto e sto cercando disperatamente una ruolotte per tornare sul mio posto. Mi servirebbe piccola ma pulita. La prendo o a prezzo modico, in dono o anche in prestito. Zona Treia MC.Grazie'
+descrizione: 'Sono ""terremotata"" da Agosto e sto cercando disperatamente una ruolotte per tornare sul mio posto. Mi servirebbe piccola ma pulita. La prendo o a prezzo modico, in dono o anche in prestito. Zona Treia (MC). Grazie'
 indirizzo: ''
 lat: ''
 lon: ''
