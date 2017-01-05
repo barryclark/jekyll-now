@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1522,199071517,2017-01-05 22:04:47,2017-01-05 22:04:06,Disponibilità a donare caravan,,,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Form"", ""Sisma Ottobre""]",,,"{""cosa"": ""Disponibilit\u00e0 a donare caravan"", ""data"": ""05/01/2017"", ""descrizione"": ""Abbiamo ancora qualche disponibilit\u00e0 di caravan da donare al solo costo del passaggio, ripristino e trasporto (max 500 euro). Chi \u00e8 interessato pu\u00f2 inviare una mail a fada.donata@gmail.com e vedremo di fare il possibile, a presto. Cristina Fustignoni."", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""http://terremotocentroitalia.info/issues/1459/index.html#comment-3084661124"", ""lon"": """", ""tel"": """"}","<pre><yamldata>tel: ''
+email: ''
+cosa: 'Disponibilità a donare caravan'
+descrizione: 'Abbiamo ancora qualche disponibilità di caravan da donare al solo costo del passaggio, ripristino e trasporto (max 500 euro). Chi è interessato può inviare una mail a fada.donata@gmail.com e vedremo di fare il possibile, a presto. Cristina Fustignoni.'
+indirizzo: ''
+lat: ''
+lon: ''
+link: 'http://terremotocentroitalia.info/issues/1459/index.html#comment-3084661124'
+immagine: ''
+data: 05/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1521,199062114,2017-01-05 21:20:23,2017-01-05 21:19:33,A #Muccia c'è bisogno di una roulotte,43.0817007,13.0429675,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Sisma Ottobre"", ""Twitter""]",,,"{""cosa"": ""A Muccia c'\u00e8 bisogno di una roulotte"", ""data"": ""05/01/2017"", ""descrizione"": ""Giancarlo Copponi, residente a Muccia in provincia di Macerata, cerca disperatamente una roulotte."", ""email"": ""g.carlocop@alice.it"", ""immagine"": """", ""indirizzo"": ""Muccia, MC, Marche, Italia"", ""lat"": ""43.0817007"", ""link"": """", ""lon"": ""13.0429675"", ""tel"": ""3389942731""}","<pre><yamldata>tel: '3389942731'
 email: g.carlocop@alice.it
 cosa: 'A Muccia c''è bisogno di una roulotte'
@@ -10689,18 +10700,6 @@ postale: ''
 causale: 'Terremoto Centro Italia 2016'
 link: ''
 email: 
-data: 13/09/2016
-</yamldata></pre>
-",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/160,176718573,2016-09-13 18:50:54,2016-09-13 18:45:16,CAI,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": ""IL CAI PER IL SISMA DELL\u2019ITALIA CENTRALE (LAZIO, MARCHE E UMBRIA)"", ""chi"": ""CAI"", ""data"": ""13/09/2016"", ""descrizione"": ""Attivato il c/c presso \""Banca Popolare di Sondrio \u2013 Agenzia Milano 21\"""", ""email"": """", ""iban"": ""IT06 D056 9601 6200 0001 0373 X15"", ""intestazione"": """", ""link"": """", ""postale"": """"}","<pre><yamldata>chi: CAI
-descrizione: 'Attivato il c/c presso ""Banca Popolare di Sondrio – Agenzia Milano 21""'
-intestazione: ''
-iban: 'IT06 D056 9601 6200 0001 0373 X15'
-bic: ''
-postale: ''
-causale: 'IL CAI PER IL SISMA DELL’ITALIA CENTRALE (LAZIO, MARCHE E UMBRIA)'
-link: ''
-email: ''
 data: 13/09/2016
 </yamldata></pre>
 ",open
