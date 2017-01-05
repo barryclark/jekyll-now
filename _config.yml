@@ -6,7 +6,7 @@
 name: Jas's 9Stars
 
 # Short bio or description (displayed in the header)
-description: I am a designer living in Taiwan.
+description: It's Time to Catch a Rising Star!
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://avatars0.githubusercontent.com/u/514297?v=3&s=96
@@ -47,7 +47,7 @@ url: https://jas9.github.io/9stars/
 # (http://yourusername.github.io/repository-name)
 # and NOT your User repository (http://yourusername.github.io)
 # then add in the baseurl here, like this: "/repository-name"
-baseurl: ""
+baseurl: "/9stars"
 
 #
 # !! You don't need to change any of the configuration flags below !!
