@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1521,199062114,2017-01-05 21:20:23,2017-01-05 21:19:33,A #Muccia c'è bisogno di una roulotte,43.0817007,13.0429675,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Sisma Ottobre"", ""Twitter""]",,,"{""cosa"": ""A Muccia c'\u00e8 bisogno di una roulotte"", ""data"": ""05/01/2017"", ""descrizione"": ""Giancarlo Copponi, residente a Muccia in provincia di Macerata, cerca disperatamente una roulotte."", ""email"": ""g.carlocop@alice.it"", ""immagine"": """", ""indirizzo"": ""Muccia, MC, Marche, Italia"", ""lat"": ""43.0817007"", ""link"": """", ""lon"": ""13.0429675"", ""tel"": ""3389942731""}","<pre><yamldata>tel: '3389942731'
+email: g.carlocop@alice.it
+cosa: 'A Muccia c''è bisogno di una roulotte'
+descrizione: 'Giancarlo Copponi, residente a Muccia in provincia di Macerata, cerca disperatamente una roulotte.'
+indirizzo: 'Muccia, MC, Marche, Italia'
+lat: '43.0817007'
+lon: '13.0429675'
+link: ''
+immagine: ''
+data: 05/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1520,198912989,2017-01-05 10:03:00,2017-01-05 09:39:53,Disponibilità volontariato per trasporto aiuti e caravan/camper/roulotte,,,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Facebook""]",,,"{""cosa"": ""disponibilit\u00e0 #volontariato  per trasporto aiuti e caravan / camper / roulotte"", ""data"": ""05/01/2017"", ""descrizione"": ""Possiamo esservi utili? Siamo in tanti e collaboriamo con i diversi gruppi ed associazioni . Abbiamo ganci traino ed amici disposti a trainare caravan da tutta Italia per aiutare il popolo del #TerremotoCentroItalia. Contattateci."", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1824190147848568/"", ""lon"": """", ""tel"": """"}","<pre><yamldata>tel: ''
 email: ''
 cosa: 'disponibilità #volontariato  per trasporto aiuti e caravan / camper / roulotte'
@@ -5553,12 +5564,6 @@ data: 30/09/2016
 ",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/726,180246707,2016-10-01 14:01:14,2016-09-30 08:19:41,#Arquata: ieri sera in Consiglio Comunale il punto della situazione sulle strutture scolastiche,,,"[""Accettato"", ""Bollettino"", ""Facebook"", ""Notizie Utili""]",,,"{""data"": ""30/09/2016"", ""descrizione"": ""Dal 30 settembre la fondazione Rava inizier\u00e0 le opere per la costruzione della scuola provvisoria, tempi previsti 30 gg. Per la scuola definitiva, donata dalla fondazione \""specchio dei tempi\"", serviranno 120 gg (a partire dalla fine dei lavori legati alle demolizioni dei vecchi edifici). Una volta completata la scuola, le strutture provvisorie verranno destinate a usi sociali e ricreativi."", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1776267972640786/"", ""titolo"": ""#Arquata: ieri sera in Consiglio Comunale il punto della situazione sulle strutture scolastiche""}","<pre><yamldata>titolo: '#Arquata: ieri sera in Consiglio Comunale il punto della situazione sulle strutture scolastiche'
 descrizione: 'Dal 30 settembre la fondazione Rava inizierà le opere per la costruzione della scuola provvisoria, tempi previsti 30 gg. Per la scuola definitiva, donata dalla fondazione ""specchio dei tempi"", serviranno 120 gg (a partire dalla fine dei lavori legati alle demolizioni dei vecchi edifici). Una volta completata la scuola, le strutture provvisorie verranno destinate a usi sociali e ricreativi.'
-link: 'https://www.facebook.com/groups/1758670357733881/permalink/1776267972640786/'
-data: 30/09/2016
-</yamldata></pre>
-",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/725,180246427,2016-11-05 23:45:27,2016-09-30 08:17:59,Comune di #Arquata: in corso verifiche per acquisti pubblici finalizzati ad opere provvisionali e puntellamenti,,,"[""Accettato"", ""Facebook"", ""Notizie Utili""]",,,"{""data"": ""30/09/2016"", ""descrizione"": ""Nell'attesa del decreto che chiarir\u00e0 se \u00e8 possibile andare in deroga alle gare europee, in corso verifiche da parte dell'Amministrazione Comunale di Arquata sulle normative da seguire per gli acquisti necessari alle opere provvisionali e ai puntellamenti ."", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1776267972640786/"", ""titolo"": ""Comune di #Arquata: in corso verifiche per acquisti pubblici finalizzati ad opere provvisionali e puntellamenti""}","<pre><yamldata>titolo: 'Comune di #Arquata: in corso verifiche per acquisti pubblici finalizzati ad opere provvisionali e puntellamenti'
-descrizione: 'Nell''attesa del decreto che chiarirà se è possibile andare in deroga alle gare europee, in corso verifiche da parte dell''Amministrazione Comunale di Arquata sulle normative da seguire per gli acquisti necessari alle opere provvisionali e ai puntellamenti .'
 link: 'https://www.facebook.com/groups/1758670357733881/permalink/1776267972640786/'
 data: 30/09/2016
 </yamldata></pre>
