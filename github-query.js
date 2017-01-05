@@ -45,7 +45,7 @@ jQuery.fn.loadRepositories = function(username) {
                     //+ "<div style='text-align:center'><a style='' href='"+ repo.html_url + "''>" + repo.name + "</a></div>"
                     + "</div>"
                     + '<div class="extra content">'
-                        + "<a style='color:rgb(60,60,60)' href='"+ repo.html_url + "''>" + repo.name + "</a>"
+                        + "<a class='header' style='color:rgb(60,60,60)' href='"+ repo.html_url + "''>" + repo.name + "</a>"
                     + "</div>"
                     + '<div class="extra content">'
                         + "<div class='description'><p>" + repo.description + "</p></div>"
