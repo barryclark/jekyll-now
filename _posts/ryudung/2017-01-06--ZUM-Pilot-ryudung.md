@@ -88,51 +88,51 @@ tag: [spring,boot,pilot,zum,zuminternet,줌인터넷,포털개발,신입]
 - 게시판은 하나 (여러 개의 게시판 X)
 - 게시판의 글에 답글은 달리지 않음
 - 게시글 글자수 제한(10000자), 댓글 글자수 제한(140자)
-    - textchange(MIT license) 모듈(js)을 사용하여 사용자의 입력에 이벤트를 걸어 글자수를 제한
+    - textchange(MIT license) 모듈(js)을 사용하여 사용자의 입력에 이벤트를 걸어 글자수를 제한<br>
     >검증된 오픈소스를 사용해야 합니다.
     
 - 권한 처리(내가 쓴 글만 지울 수 있어야 함)
-    - spring security를 사용하여 사용자의 권한에 맞는 이벤트만 가능하도록 함
+    - spring security를 사용하여 사용자의 권한에 맞는 이벤트만 가능하도록 함<br>
     >(순수 jdbc연동하는 방법 UserDetails, UserDetailsService을 상속받는 방법. 똑같은 걸 2번 개발했습니다.)
     
     - 유저 아이디와 session 속 로그인아이디를 비교하여 내가 쓴글만 수정가능하게 함.
 - 글은 [번호, 제목, 내용, 글쓴이, 시간, 조회수] 의 정보를 가짐
 - 새 글 등록/수정/삭제 기능 및 권한 처리
-    - hibernate의 criteria를 사용한 CRUD
+    - hibernate의 criteria를 사용한 CRUD<br>
     >하이버네이트를 myBatis 처럼 사용한 것을 보고 당황해 하셧던 선임분들..
     
 - 페이징 기능                    
-    - 직접 paging만 처리하는 객체를 만들어서 구현.
+    - 직접 paging만 처리하는 객체를 만들어서 구현.<br>
      >JPA에 JpaRepository을 이용한 pageable이란 좋은게 있었습니다.
      
 - 보안(tag, script 입력 필터링)
-    - hibernate.Validator 어노테이션을 이용 
+    - hibernate.Validator 어노테이션을 이용 <br>
     >서버에서 Domain의 값을 제한하기 좋습니다.
     
-    - taglib escapeXml 
+    - taglib escapeXml <br>
     >스크립팅 공격, injection tag을 막을 수 있습니다.
     
 - 계층형 댓글 기능
-    - 재귀함수를 통해 부모의 자식을 찾아서 계층형을 만드는 방법
+    - 재귀함수를 통해 부모의 자식을 찾아서 계층형을 만드는 방법<br>
     >가장 어려운 부분이엿습니다. 알맞은 로직을 찾아내는 것.<br>
         개발 전 오라클 처럼 START WITH 쓰면 되겠지 했지만 (그건 저의 오산..)<br>
         mysql에는 START WITH 같은 계층형을 지원하는 쿼리가 존재하지 않았습니다..<br><br>
         그래서 저의 선택은 step을 만들어서..재귀함수까지.(성능 망함)<br>
         결국, 시간이 부족해서 만들지 못했지만, 찾아낸 방법은 바로 소수점 계층형 게시판입니다.(괜찮을 걸 찾았다!!)
         
-- 이미지(jpg,png,gif) 업로드 기능
-    >파일과 이미지를 따로 전송하는 AJAX  방법<br>
-     enctype="multipartform-data"로 한번에 전송하는 방법. 똑같은 걸 또..2번 만들어 봤습니다.
+- 이미지(jpg,png,gif) 업로드 기능<br>
+    >1)파일과 이미지를 따로 전송하는 AJAX  방법<br>
+     2)enctype="multipartform-data"로 한번에 전송하는 방법. 똑같은 걸 또..2번 만들어 봤습니다.
 
 >이상으로 필수 기능과 필수 기능을 구현하기 위해, 사용했던 기술 설명을 추가로 붙여 보았습니다.(궁금.. 하셧죠?)
 
 ###1차 프로젝트 어려웠던 점.
 
-- 혼자서 모든 것을 판단하고, DB ~ QA까지 진행했던 점
+- 혼자서 모든 것을 판단하고, DB ~ QA까지 진행했던 점<br>
 >(학원이나 스터디에서 오로지 기능완성만을 위해서 개발을 진행했습니다..<br>
     회사에서 서비스 관점에서도 본다면 훠~~~얼씬 고려해 봐야 할 것이 많다는 것을 알게 되었습니다.)
     
-- 네이밍 규칙, 컨벤션
+- 네이밍 규칙, 컨벤션<br>
 >코드리뷰를 하며, 가장 많이 수정해야할 부분이 네이밍 규칙이였습니다.<br>
 습관 처럼 마음대로 변수 이름을 정하고, 테이블을 만들어 내고 있었습니다..<br>
 *우리팀은 DB는 snake 표기법을 준수하고, 코드는 camelCase를 따릅니다.<br><br>
@@ -145,7 +145,7 @@ tag: [spring,boot,pilot,zum,zuminternet,줌인터넷,포털개발,신입]
 *변수명은 소문자로 시작합니다.<br>
 등.. 많습니다.<br>
 
-- Git
+- Git<br>
 >개발을 시작한지 3일만에 git을 잘 못 사용해서 프로젝트를 날려먹고 다시 처음부터 개발했습니다.<br>
  그 만큼 저에게는 친숙하지 못했는데 쓰면 쓸수록 개발자에겐 필수 tool이라는 것을 느꼈습니다.
  
@@ -179,7 +179,7 @@ tag: [spring,boot,pilot,zum,zuminternet,줌인터넷,포털개발,신입]
   >*1차 프로젝트에서는 다른 사람의 도움없이 오로지 혼자 프로젝트를 수행합니다.
 
  >*노다지 [명사]<br> 
-  **1. <광업>캐내려 하는 광물이 많이 묻혀 있는 광맥.** 
+    1. <광업>캐내려 하는 광물이 많이 묻혀 있는 광맥.<br>
     2. 손쉽게 많은 이익을 얻을 수 있는 일감을 비유적으로 이르는 말.
 
 <br>
@@ -208,16 +208,16 @@ tag: [spring,boot,pilot,zum,zuminternet,줌인터넷,포털개발,신입]
  <br>
 
  **시스템 구조도**<br>
- ![구조](/images/2016_12_26_ryudung_pilot/2.PNG)<br><br>
+ ![구조](/images/2016_12_26_ryudung_pilot/2.PNG) {.aligncenter}<br><br>
 **배치성 파일 parsing 로직**<br>
- ![배치성파일 parsing 로직](/images/2016_12_26_ryudung_pilot/3.PNG)
+ ![배치성파일 parsing 로직](/images/2016_12_26_ryudung_pilot/3.PNG) {.aligncenter}
  <br>
  간략한 설명 : Spring 스케줄러가 배치성파일(인기글(테마별), 전체 인기글, 인기테마 등)을 파싱하고, 이를 EHcache에 담아 사용합니다.
  또한, 내부 API를 호출하여, 실시간 검색 랭킹 데이터를 활용하였습니다.
  
  - 기술
  <br>
- ![사용 기술](/images/2016_12_26_ryudung_pilot/1.PNG)
+ ![사용 기술](/images/2016_12_26_ryudung_pilot/1.PNG) {.aligncenter}
  <br>
  >2차 프로젝트부터는 기술의 제한없이 기술을 선택하여 구현합니다.<br>
  1차 프로젝트 때, 코드리뷰를 수정하며 추가했던 npm(패키지관리 모듈, package.json으로 관리)과 grunt(빌드 툴), handlebars, require.js를 적용 하였습니다.
