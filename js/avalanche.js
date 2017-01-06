@@ -190,7 +190,7 @@ function getTimeString(months) {
 function generateRow(debt) {
 	var nameString = "<input type='text' name='name' value='" + debt.name + "' required />";
         var balanceString = "<span class='input-dollar'>$</span><input type='number' name='balance' class='input-dollar' min='0' value='" + debt.balance + "' required />";
-        var rateString = "<input type='number' name='rate' class='input-percent' min='0' max='100' step='0.01' value='" + debt.rate * 100 + "' required /><span class='input-percent'>%</a>";
+        var rateString = "<input type='number' name='rate' class='input-percent' min='0' max='100' step='0.001' value='" + debt.rate * 100 + "' required /><span class='input-percent'>%</a>";
         var minpaymentString = "<input type='number' name='minpayment' min='0' value='";
 	
 	if(debt.minpaymenttype === 'percent') {
