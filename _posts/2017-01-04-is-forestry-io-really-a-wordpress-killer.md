@@ -14,3 +14,5 @@ comments: true
 Developer 可以輕鬆地用 GitHub + Jekyll 來 Blogging，但，Non-Developer 要用 GitHub + Jekyll 來 Blogging 就不是那麼輕鬆。
 
 這之中的癥結在於使用介面，而 Forestry.io 正好補足了 GitHub + Jekyll 相對於 WordPress 所欠缺的部份。
+
+然後，即使 Non-Developer 全程都用 Forestry.io 所提供的介面來發文，所有的更新改動還是會即時同步 Commit 到 GitHub 去版本管理。
