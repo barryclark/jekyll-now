@@ -38,11 +38,11 @@ tag: [spring,boot,pilot,zum,zuminternet,줌인터넷,포털개발,신입]
 - JUnit
 - Node.js
 - Backbone.js
-- #BootStrap#
+-  <u>BootStrap</u>
 - 빌드 시스템(grunt)
-- <u>다양한 Spring Annotation</u>
-- <u>다양한 Design Pattern</u>
-- <u>다양한 opensource, framework</u>
+-  <u>다양한 Spring Annotation</u>
+-  <u>다양한 Design Pattern</u>
+-  <u>다양한 opensource, framework</u>
 
 > 필수 사항은 반드시 사용해야하는 기술이였고, 선택사항은 추가적인 기술스펙이였습니다.<br>
 필수 스펙을 보면 아시겠지만, java8, Spring 4.*버전, SpringBoot 등 최신 버전(제가 쫌 올드한 것 같다는 느낌이 많이 들었..)으로 개발을 진행하였습니다.<br>
