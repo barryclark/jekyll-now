@@ -38,19 +38,19 @@ tag: [spring,boot,pilot,zum,zuminternet,줌인터넷,포털개발,신입]
 - JUnit
 - Node.js
 - Backbone.js
-- <U>BootStrap</U>
+- <u>BootStrap</u>
 - 빌드 시스템(grunt)
-- <U>다양한 Spring Annotation</U>
-- <U>다양한 Design Pattern</U>
-- <U>다양한 opensource, framework</U>
+- <u>다양한 Spring Annotation</u>
+- <u>다양한 Design Pattern</u>
+- <u>다양한 opensource, framework</u>
 
->필수 사항은 반드시 사용해야하는 기술이였고, 선택사항은 추가적인 기술스펙이였습니다.<br>
+> 필수 사항은 반드시 사용해야하는 기술이였고, 선택사항은 추가적인 기술스펙이였습니다.<br>
 필수 스펙을 보면 아시겠지만, java8, Spring 4.*버전, SpringBoot 등 최신 버전(제가 쫌 올드한 것 같다는 느낌이 많이 들었..)으로 개발을 진행하였습니다.<br>
-이전에 3.0 버전과 전자정부프레임워크, Maven만을 사용해봐서 SpringBoot, Gradle을 사용하며 신세계를 맛(쓰면 쓸수록 스프링개발이 편한 맛??)보았습니다.<br>
-그 밖에 처음 사용해 보았던 hibernate(책만 사놓고 안써봄, 결국 처음엔 개발에 급급해서 myBatis, iBatis처럼 개발), MySQL(학원에서 오라클 만 써봄, 노트북도 오라클..), Git(뭔지 궁금해서 한번해보고 SVN만 써봄), Security(한번 해봄..)
+ 이전에 3.0 버전과 전자정부프레임워크, Maven만을 사용해봐서 SpringBoot, Gradle을 사용하며 신세계를 맛(쓰면 쓸수록 스프링개발이 편한 맛??)보았습니다.<br>
+ 그 밖에 처음 사용해 보았던 hibernate(책만 사놓고 안써봄, 결국 처음엔 개발에 급급해서 myBatis, iBatis처럼 개발), MySQL(학원에서 오라클 만 써봄, 노트북도 오라클..), Git(뭔지 궁금해서 한번해보고 SVN만 써봄), Security(한번 해봄..)
 ,Log4j(로그찍는 것은 실서비스에서 꼭 필요한 기능임을 알게 됨..로그 레벨도 있음..) 등을 사용하였습니다.<br>
 
-><U>밑줄</U>은 제가 선택했던 선택기술입니다.(나머지는? 잘 모르는 것들..)
+><u>밑줄</u>은 제가 선택했던 선택기술입니다.(나머지는? 잘 모르는 것들..)
 
 >Freemarker는 태어나서 처음 들어 봤는데(저만 몰랐음. 서버렌더닝, 프론트렌더링 개념도 없었음. 1차에서 사용안함..)<br>
  알고 보니.. JSP탬플릿은 몇 해 전 부터 개발이 중단되었고, 그 뒤를 이어가는 자바진영의 서버 탬플릿(그 밖에 대표적인 서버 탬플릿 Velocity, Thymeleaf) 이란 것을 알게 되었습니다.<br>
