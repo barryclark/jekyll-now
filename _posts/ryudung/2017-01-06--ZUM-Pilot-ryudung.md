@@ -49,7 +49,7 @@ tag: [spring,boot,pilot,zum,zuminternet,줌인터넷,포털개발,신입]
 - **다양한 Design Pattern**
 - **다양한 opensource, framework**
 
- 필수 사항은 반드시 사용해야하는 기술이였고, 선택사항은 추가적인 기술스펙이였습니다.<br>
+필수 사항은 반드시 사용해야하는 기술이였고, 선택사항은 추가적인 기술스펙이였습니다.<br>
 필수 스펙을 보면 아시겠지만, java8, Spring 4.*버전, SpringBoot 등 최신 버전(제가 쫌 올드한 것 같다는 느낌이 많이 들었습니다.)으로 개발을 진행하였습니다.<br><br>
  이전에 3.0 버전과 전자정부프레임워크, Maven만을 사용해봐서 SpringBoot, Gradle을 사용하며 신세계를 맛(쓰면 쓸수록 스프링개발이 편한 맛??)보았습니다.<br><br>
  그 밖에 처음 사용해 보았던 hibernate(책만 사놓고 안써봄, 결국 처음엔 개발에 급급해서 myBatis, iBatis처럼 개발), MySQL(오라클만 써보았습니다.), Git(뭔지 궁금해서 한번해보고 SVN만 써봄), Security(한번 써봤습니다.)
