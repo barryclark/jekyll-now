@@ -178,9 +178,9 @@ tag: [spring,boot,pilot,zum,zuminternet,줌인터넷,포털개발,신입]
 - 더불어 주변에 믿고 물어볼 선임 분들(정말 고마운 존재? 사랑합니다.)이 있다는 것은 정말 좋은 일이라는 것을 느꼈습니다.
   >*1차 프로젝트에서는 다른 사람의 도움없이 오로지 혼자 프로젝트를 수행합니다.
 
- >*노다지 [명사]<br> 
-    1. <광업>캐내려 하는 광물이 많이 묻혀 있는 광맥.<br>
-    2. 손쉽게 많은 이익을 얻을 수 있는 일감을 비유적으로 이르는 말.
+ >*노다지 [명사]<br>
+ >1. <광업>캐내려 하는 광물이 많이 묻혀 있는 광맥.<br>
+ >2. 손쉽게 많은 이익을 얻을 수 있는 일감을 비유적으로 이르는 말.
 
 <br>
 
@@ -208,16 +208,16 @@ tag: [spring,boot,pilot,zum,zuminternet,줌인터넷,포털개발,신입]
  <br>
 
  **시스템 구조도**<br>
- ![구조](/images/2016_12_26_ryudung_pilot/2.PNG) {.aligncenter}<br><br>
+ ![구조](/images/2016_12_26_ryudung_pilot/2.PNG){.aligncenter}<br><br>
 **배치성 파일 parsing 로직**<br>
- ![배치성파일 parsing 로직](/images/2016_12_26_ryudung_pilot/3.PNG) {.aligncenter}
+ ![배치성파일 parsing 로직](/images/2016_12_26_ryudung_pilot/3.PNG){.aligncenter}
  <br>
  간략한 설명 : Spring 스케줄러가 배치성파일(인기글(테마별), 전체 인기글, 인기테마 등)을 파싱하고, 이를 EHcache에 담아 사용합니다.
  또한, 내부 API를 호출하여, 실시간 검색 랭킹 데이터를 활용하였습니다.
  
  - 기술
- <br>
- ![사용 기술](/images/2016_12_26_ryudung_pilot/1.PNG) {.aligncenter}
+ <br><br>
+ ![사용 기술](/images/2016_12_26_ryudung_pilot/1.PNG){.aligncenter}
  <br>
  >2차 프로젝트부터는 기술의 제한없이 기술을 선택하여 구현합니다.<br>
  1차 프로젝트 때, 코드리뷰를 수정하며 추가했던 npm(패키지관리 모듈, package.json으로 관리)과 grunt(빌드 툴), handlebars, require.js를 적용 하였습니다.
