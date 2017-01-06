@@ -7,7 +7,6 @@
 
 @import "reset";
 @import "variables";
-@import "jLinkPreview";
 // Syntax highlighting @import is at the bottom of this file
 
 /**************/
@@ -330,6 +329,20 @@ footer {
   padding: 20px 0;
   text-align: center;
 }
+
+/*********************/
+/* LAYOUT / xinolinx */
+/*********************/
+@import "table";
+
+/*********************/
+/* LAYOUT / for JS   */
+/*********************/
+@import "jLinkPreview";
+
+/*********************/
+/* LAYOUT / includes */
+/*********************/
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start

@@ -1,0 +1,24 @@
+
+//
+// Table
+//
+
+thead th {
+    color: #909090;
+    background-color: #E0E0E0;
+}
+
+tbody td {
+    color: #707080;
+    background-color:  #F8F8F0;
+}
+
+table {
+    border-collapse: collapse;
+}
+table th,
+table td {
+    border: 4px #ffffff solid;
+    padding: 2px;
+    font-size: 90%;
+}
