@@ -207,10 +207,11 @@ tag: [spring,boot,pilot,zum,zuminternet,줌인터넷,포털개발,신입]
  
  - 설계
  >이글루스 개발서버에서 사용되고 있는 배치성 파일들과 개발 DB를 활용하여 구조를 설계하였습니다.(보안 상 파일럿프로젝트 부분만 공개합니다)
-  <br>
  <br>
- 
+
+ **시스템 구조**
  ![구조](/images/2016_12_26_ryudung_pilot/2.PNG)<br>
+**배치성파일 parsing 로직**
  ![배치성파일 parsing 로직](/images/2016_12_26_ryudung_pilot/3.PNG)
  <br>
  간략한 설명 : Spring 스케줄러가 배치성파일(인기글(테마별), 전체 인기글, 인기테마 등)을 파싱하고, 이를 EHcache에 담아 사용합니다.
