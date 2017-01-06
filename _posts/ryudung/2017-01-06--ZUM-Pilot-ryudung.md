@@ -267,6 +267,7 @@ Freemarker는 처음 들어 봤는데(`알고 보니.. JSP탬플릿은 몇 해 �
  war 파일 생성 -> 개발 서버로 복사 -> nohup을 이용한 백그라운드 실행 -> NginX 리로드(`NginX 설정 파일을 생성은 미리`)
  (`위 배포 방법은 실제 서비스 배포와 전혀 무관한 방식입니다.`)
  <br><br><br>
+ 
  ###부딪혔던 문제 해설
  
  `많은 문제가 있었지만, 기억에 남는 일부입니다.`
@@ -292,14 +293,16 @@ Freemarker는 처음 들어 봤는데(`알고 보니.. JSP탬플릿은 몇 해 �
  사고를 친 이후 POJO를 이용해 Domain(`다른 Domain과 Relation 관계를 맺고 있던`)을 Transform하여 사용하였고, 영속성을 걱정할 필요없이 데이터를 마음껏 가공할 수 있었습니다.
  
  - **static Util이냐? @Component냐?**<br><br>
- 프로젝트를 진행하면서 Util성 클래스를 생성해야 했고, 어떻게 만드는 것이 좋은지 고민이 많이 되었습니다. 아래와 같이 정리 해보았습니다. 
- 1.static Util <br> 변함없는 단순 메소드<br>  JDK당? 하나를 만들어 공유할 경우<br>
- 2.@Component(default : singleton)<br> 
+ 프로젝트를 진행하면서 Util성 클래스를 생성해야 했고, 어떻게 만드는 것이 좋은지 고민이 많이 되었습니다. 아래와 같이 정리 해보았습니다. <br>
+ 1) static Util <br> 변함없는 단순 메소드<br>  JDK당? 하나를 만들어 공유할 경우<br>
+ 
+ 2) @Component(default : singleton)<br> 
     - 초기화가 필요한 경우(ex-@PostConstruct)
     - DB 관련 작업이 있는 경우(@Autowired를 사용할 때)
     - lazy 생성이 필요한 경우
     - 좀 더 객체지향 구현을 원하는 경우
     - IOC(스프링컨테이너) 당 하나를 공유할 경우 <br><br>
+    
  성능상 차이는 거의 없다고 합니다. 또한, 둘다 스레드 safe 입니다. static Util은 사용자가 객체를 생성하고, @Component는 IOC에 객체생성을 위임합니다(제어의 역전).
  <br> 
  
