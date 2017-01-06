@@ -16,7 +16,7 @@ tag: [spring,boot,pilot,zum,zuminternet,줌인터넷,포털개발,신입]
 #3개월의 수습기간 동안 진행한 프로젝트 
  개발을 시작함과 동시에 점점 시간이 빛과 같은 속도로 흘러감을 느끼게 되었...하..
  
-##1. 계층형 댓글을 구현한 간단한 게시판 만들기(웹 개발자에겐 누워서 떡먹기?? 난...아니던데..)
+##1. 계층형 댓글을 구현한 간단한 게시판 만들기<br>(웹 개발자에겐 누워서 떡먹기?? 난...아니던데..)
  >게시판을 만들기위해 필요한 조건을 PPT로 만들어 주셨고, 필수 스펙은 다음과 같았습니다.
  
 - Java8
@@ -38,7 +38,7 @@ tag: [spring,boot,pilot,zum,zuminternet,줌인터넷,포털개발,신입]
 - JUnit
 - Node.js
 - Backbone.js
-- <u>BootStrap</u>
+- #BootStrap#
 - 빌드 시스템(grunt)
 - <u>다양한 Spring Annotation</u>
 - <u>다양한 Design Pattern</u>
