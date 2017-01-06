@@ -210,12 +210,13 @@ Freemarker는 처음 들어 봤는데(`알고 보니.. JSP탬플릿은 몇 해 �
 <br>
 <br>
 <br>
-![다음엔 더 잘 할 수 있을거야..](/images/2016_12_26_ryudung_pilot/6.PNG)<br><br>
+![다음엔 더 잘 할 수 있을거야..](/images/2016_12_26_ryudung_pilot/6.PNG)<br>`다음엔 더 잘 할 수 있을거야..`<br>
 
 ##2. 이글루스(php)를 자바로 포팅하기.
  
- >실서비스를 포팅해본다는 엄청난 경험이 나에게??
-  ![두근두근?](/images/2016_12_26_ryudung_pilot/7.PNG)<br><br>
+ `실서비스를 포팅해본다는 엄청난 경험이 나에게??`
+  
+![두근두근?](/images/2016_12_26_ryudung_pilot/7.PNG)<br><br>
  
 ###진행할 작업
  
