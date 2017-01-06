@@ -15,3 +15,8 @@ I'm one of programmers in JP, I love low-level-layer (such as, CPUs, Device-Driv
 [ixiv2015@gmail.com](mailto:ixiv2015@gmail.com)
 
 I'm enjoy current works, then I have not want a new-job offer, Sorry.
+
+### Reading List
+
+- http://math-koshimizu.hatenablog.jp/
+- (Add)
