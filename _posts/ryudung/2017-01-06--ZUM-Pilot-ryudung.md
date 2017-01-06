@@ -38,7 +38,7 @@ tag: [spring,boot,pilot,zum,zuminternet,줌인터넷,포털개발,신입]
 - JUnit
 - Node.js
 - Backbone.js
-- <u> BootStrap </u>
+- **BootStrap**
 - 빌드 시스템(grunt)
 -  <u>다양한 Spring Annotation</u>
 -  <u>다양한 Design Pattern</u>
