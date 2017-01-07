@@ -1,4 +1,14 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1527,199386801,2017-01-07 21:40:34,2017-01-07 21:40:11,"Salve, mettiamo a disposizione",,,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""07/01/2017"", ""descrizione"": ""Salve, mettiamo a disposizione casa nostra per accogliere chi si trovasse in difficolt\u00e0 con queste temperature bassissime, specialmente se persone con necessit\u00e0 particolari o famiglia con bimbi.. Siamo a Prato, mettiamo a disposizione un divano letto matrimoniale comodo e anche un lettino da campeggio, possiamo inserire anche un altro singolo. So che siamo lontani, ma con tutto il cuore siamo disposti ad ospitare chi pi\u00f9 \u00e8 in difficolt\u00e0 in questo periodo, possiamo anche contribuire al viaggio se pu\u00f2 essere d'aiuto. Abbiamo due bimbi di 6 e 4 anni che vorrebbero volentieri aiutare anche loro, magari qualche nuovo amichetto! Non esitate a contattare per informazioni.. Grazie!"", ""email"": ""valentinachiesi@hotmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3494012362""}","<pre><yamldata>tel: '3494012362'
+email: valentinachiesi@hotmail.com
+descrizione: 'Salve, mettiamo a disposizione casa nostra per accogliere chi si trovasse in difficoltà con queste temperature bassissime, specialmente se persone con necessità particolari o famiglia con bimbi.. Siamo a Prato, mettiamo a disposizione un divano letto matrimoniale comodo e anche un lettino da campeggio, possiamo inserire anche un altro singolo. So che siamo lontani, ma con tutto il cuore siamo disposti ad ospitare chi più è in difficoltà in questo periodo, possiamo anche contribuire al viaggio se può essere d''aiuto. Abbiamo due bimbi di 6 e 4 anni che vorrebbero volentieri aiutare anche loro, magari qualche nuovo amichetto! Non esitate a contattare per informazioni.. Grazie!'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 07/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1525,199364676,2017-01-07 14:35:42,2017-01-07 14:34:43,"#Saletta #Amatrice temperatura -16, si cerca aiuto per costruire ricovero animali",,,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Facebook""]",,,"{""cosa"": ""#Saletta #Amatrice temperatura -16, si cerca aiuto per costruire ricovero animali"", ""data"": ""07/01/2017"", ""descrizione"": ""S.O.S. AMATRICE - DOPO IL TERREMOTO IL GELO A -16!!!! SERVE AIUTO IMMEDIATO A BETTY GREGORI - BISOGNA SALVARE DUE MUCCHE CREANDO PER LORO UN RICOVERO E SISTEMARE UNA RECINZIONE PER DEI CANI!!! I RIFLETTORI E LE FOTO NON CI SONO E NON CI SARANNO!!! DUE VOLONTARI VERI SI TROVANO LASS\u00d9?????? Cellulare BETTY GREGORI 3391847914 BETTY SCRIVE: \""HO BISOGNO OGGI, NON DOMANI O DOPO MA OGGI, ADESSO, DI ALMENO DUE/TRE PERSONE CHE VENGANO CON ME A SALETTA A SISTEMARE UNA RECINZIONE PER I CANI E A DARE UNA MANO ALMENO PER COMINCIARE A COSTRUIRE UN RICOVERO PER DUE MUCCHE CHE PER LA DISPERAZIONE SONO STATE RIMESSE DENTRO UNA STALLA CHE CON UN SOFFIO GLI CROLLERA' ADDOSSO. A PAROLE E PROMESSE TUTTI BRAVI, CON IL SOLE E CON I RIFLETTORI TUTTI BRAVI. A SALETTA NON C'\u00e8 UN'ANIMA FA UN FREDDO PORCO CHE TI CASCANO LE MANI E NON CI SONO ONORI DA RACCOGLIERE, SOLO ANIMALI DA METTERE IN SICUREZZA E SALVARE DAL GELO E DALLA CATTIVERIA. VOLONTARI VERI NE ABBIAMO??? IL MIO NUMERO \u00e8 3391847914. GRAZIE BETTY\"""", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1825081041092812/"", ""lon"": """", ""tel"": """"}","<pre><yamldata>tel: ''
 email: ''
 cosa: '#Saletta #Amatrice temperatura -16, si cerca aiuto per costruire ricovero animali'
@@ -4367,18 +4377,6 @@ indirizzo: 'Via Golgi, Sant''Antonio, San Benedetto del Tronto, AP, Marche, 6307
 lat: '42.9415743'
 lon: '13.8828904'
 link: 'https://www.facebook.com/psyplus.org/'
-data: 30/10/2016
-</yamldata></pre>
-",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/908,186134120,2016-10-30 13:56:16,2016-10-30 12:43:37,Psy+ Onlus: ASSISTENZA PSICOLOGICA,42.9415743,13.8828904,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Form"", ""Sisma Ottobre""]",,,"{""cosa"": ""Psy+ Onlus: ASSISTENZA PSICOLOGICA"", ""data"": ""30/10/2016"", ""descrizione"": ""Presenti a San Benedetto ininterrottamente, presso la sede dell'ex Scuola Curzi in via Golgi per garantire supporto psicologico alle vittime del terremoto. Alle due psicologhe, Rita Fiorentino e Patrizia Perrone presenti sul posto, sono affiancati altri due psicologi per poter ampliare il numero di professionisti data l'enorme crescita di richieste d'aiuto pervenuta in queste ore a seguito delle nuove scosse. Per informazioni contattare."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Via Golgi, Sant'Antonio, San Benedetto del Tronto, AP, Marche, 63074, Italia"", ""lat"": ""42.9415743"", ""link"": """", ""lon"": ""13.8828904"", ""tel"": ""3278825312""}","<pre><yamldata>tel: '3278825312'
-email: ''
-cosa: 'Psy+ Onlus: ASSISTENZA PSICOLOGICA'
-descrizione: 'Presenti a San Benedetto ininterrottamente, presso la sede dell''ex Scuola Curzi in via Golgi per garantire supporto psicologico alle vittime del terremoto. Alle due psicologhe, Rita Fiorentino e Patrizia Perrone presenti sul posto, sono affiancati altri due psicologi per poter ampliare il numero di professionisti data l''enorme crescita di richieste d''aiuto pervenuta in queste ore a seguito delle nuove scosse. Per informazioni contattare.'
-indirizzo: 'Via Golgi, Sant''Antonio, San Benedetto del Tronto, AP, Marche, 63074, Italia'
-lat: '42.9415743'
-lon: '13.8828904'
-link: ''
-immagine: ''
 data: 30/10/2016
 </yamldata></pre>
 ",open
