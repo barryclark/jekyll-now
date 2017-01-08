@@ -84,3 +84,7 @@ exclude:
   - README.md
   - CNAME
 
+# subsite information
+subsite: https://xinolinx.wordpress.com/
+subsitename: Pics
+
