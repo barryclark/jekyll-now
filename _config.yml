@@ -38,7 +38,7 @@ footer-links:
 # for Jekyll Feed plugin
 # https://github.com/jekyll/jekyll-feed
 feed:
-  path: /feed.xml
+  path: atom.xml
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 # You can find your shortname on the Settings page of your Disqus account
