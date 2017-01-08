@@ -1,4 +1,14 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1533,199430627,2017-01-08 23:41:35,2017-01-08 16:24:26,Offro ospitalità a famiglia di tre persone in provincia di Caserta,41.080214,14.256527,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Ottobre""]",,,"{""data"": ""08/01/2017"", ""descrizione"": ""Ospito famiglia di massimo tre persone in Santa Maria Capua Vetere (CE)"", ""email"": ""antonio.dott.comm.scognamiglio@gmail.com"", ""immagine"": """", ""indirizzo"": ""Corso Giuseppe Garibaldi, Sant'Andrea dei Lagni, Santa Maria Capua Vetere, CE, CAM, 81055, Italia"", ""lat"": ""41.080214"", ""link"": """", ""lon"": ""14.256527"", ""tel"": ""3396307148""}","<pre><yamldata>tel: '3396307148'
+email: antonio.dott.comm.scognamiglio@gmail.com
+descrizione: 'Ospito famiglia di massimo tre persone in Santa Maria Capua Vetere (CE)'
+indirizzo: 'Corso Giuseppe Garibaldi, Sant''Andrea dei Lagni, Santa Maria Capua Vetere, CE, CAM, 81055, Italia'
+lat: '41.080214'
+lon: '14.256527'
+link: ''
+immagine: ''
+data: 08/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1532,199424297,2017-01-08 14:24:41,2017-01-08 14:18:21,Disponibilità ricovero per animali in zona Riccione.,,,"[""Accettato"", ""Bollettino"", ""Donazioni""]",,,"{""cosa"": ""Disponibilit\u00e0 ricovero per animali in zona Riccione."", ""data"": ""08/01/2017"", ""descrizione"": ""Se qualcuno nelle zone terremotate ha bisogno di un tetto per gli animali che sono fuori al freddo, il Wish Club a titolo gratuito concede uno spazio al coperto in zona Riccione di circa 80 mq. Non lasciateli al freddo per favore. Info 3932910000"", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1825577214376528/"", ""lon"": """", ""tel"": ""3932910000""}","<pre><yamldata>tel: '3932910000'
 email: ''
 cosa: 'Disponibilità ricovero per animali in zona Riccione.'
@@ -4370,12 +4380,6 @@ data: 30/10/2016
 ",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/923,186138249,2016-10-30 14:18:43,2016-10-30 14:12:11,COMUNE DI #MACERATA: PRESIDI SANITARI,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""30/10/2016"", ""descrizione"": ""Attivi nel pomeriggio due presidi sanitari con la Croce Verde al Fontescodella e alla Domus San Giuliano. Operativo l'Ospedale di Macerata."", ""link"": ""https://www.facebook.com/comunedimacerata/?fref=nf"", ""titolo"": ""COMUNE DI #MACERATA: PRESIDI SANITARI""}","<pre><yamldata>titolo: 'COMUNE DI #MACERATA: PRESIDI SANITARI'
 descrizione: 'Attivi nel pomeriggio due presidi sanitari con la Croce Verde al Fontescodella e alla Domus San Giuliano. Operativo l''Ospedale di Macerata.'
-link: 'https://www.facebook.com/comunedimacerata/?fref=nf'
-data: 30/10/2016
-</yamldata></pre>
-",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/914,186137580,2016-10-30 14:02:43,2016-10-30 13:57:44,COMUNE DI #MACERATA: contatti per associazioni di volontariato che vogliano offrire aiuto,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili"", ""Pubblicare su FB"", ""Sisma Ottobre""]",,,"{""data"": ""30/10/2016"", ""descrizione"": ""Le associazioni e i gruppi di volontariato che volessero collaborare all'emergenza terremoto debbono chiamare il numero 340.8507049 per il coordinamento."", ""link"": ""https://www.facebook.com/comunedimacerata/?fref=nf"", ""titolo"": ""COMUNE DI #MACERATA:  CONTATTI PER ASSOCIAZIONI E GRUPPI DI VOLONTARIATO""}","<pre><yamldata>titolo: 'COMUNE DI #MACERATA:  CONTATTI PER ASSOCIAZIONI E GRUPPI DI VOLONTARIATO'
-descrizione: 'Le associazioni e i gruppi di volontariato che volessero collaborare all''emergenza terremoto debbono chiamare il numero 340.8507049 per il coordinamento.'
 link: 'https://www.facebook.com/comunedimacerata/?fref=nf'
 data: 30/10/2016
 </yamldata></pre>
