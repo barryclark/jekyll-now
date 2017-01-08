@@ -8,9 +8,12 @@ HN : Shinobu HUYUGIRI - xinolinx
 
 ### More Information
 
-I'm one of programmers in JP, I love low-level-layer (such as, CPUs, Device-Drivers, Virtual-Machines).
+- I'm one of programmers in JP, I love low-level-layer (such as, CPUs, Device-Drivers, Virtual-Machines).
+- Link-free, let's join us!
 
-### Contact me
+![xinolinx_bn.jpg](http://xinolinx.net/workspace/xinolinx_bn.jpg)
+
+### Contact
 
 [ixiv2015@gmail.com](mailto:ixiv2015@gmail.com)
 
@@ -22,3 +25,4 @@ I'm enjoy current works, then I have not want a new-job offer, Sorry.
 - [http://allzero.jp/](http://allzero.jp/)
 - [http://on-ze.com/archives/2629](http://on-ze.com/archives/2629)
 - (Add)
+
