@@ -88,3 +88,5 @@ exclude:
 subsite: https://xinolinx.wordpress.com/
 subsitename: Pics
 
+# for amazon api
+amazon_asid: soundvoxxjp-22
