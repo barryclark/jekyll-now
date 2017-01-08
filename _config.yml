@@ -2,9 +2,6 @@
 # This file contains configuration flags to customize your site
 #
 
-# for system setup
-timezone: Asia/Tokyo
-
 # Name of your site (displayed in the header)
 name: tech::xinolinx
 
@@ -76,7 +73,6 @@ sass:
 
 # Use the following plug-ins
 gems:
-  - jekyll-mentions
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
 
