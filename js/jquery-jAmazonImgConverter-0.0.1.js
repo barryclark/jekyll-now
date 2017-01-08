@@ -11,7 +11,7 @@
  * @info (none)
 **/
 $(document).ready(function(){
-	var targets = $("#amazon_img");
+	var targets = $(".amazon_img");
 	for (var idx = 0; idx < targets.idx; idx++) {
 		var target = $(targets).get(idx);
 		var insert = $("#amazon_template_book").get(0).clone();
