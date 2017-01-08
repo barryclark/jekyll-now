@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1529,199409575,2017-01-08 08:05:29,2017-01-08 08:03:54,#Scai #Amatrice richiesta urgente  per famiglia con bimbo piccolo,,,"[""Accettato"", ""Bollettino"", ""Da rilanciare"", ""Fabbisogni"", ""Facebook""]",,,"{""cosa"": ""#Scai #Amatrice richiesta urgente  per famiglia con bimbo piccolo"", ""data"": ""08/01/2017"", ""descrizione"": ""Barbara Angelini, nella frazione Scai di Amatrice, e', con la sua famiglia in queste condizioni. Quella di rimanere li', comprando con i propri soldi, una casina su ruote, e' stata una loro scelta poiche' hanno degli animali da accudire...sicuramente non avevano messo in conto questo freddo...mi domando , non c'e' una soluzione a questa situazione? Non c'e' nessuno che li puo' aiutare, magari trovando un ricovero anche per gli animali? Ciao Barbara, lo so, il fatto che ti pensiamo tutti non ti e' certo di aiuto!"", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1825267201074196/"", ""lon"": """", ""tel"": """"}","<pre><yamldata>tel: ''
+email: ''
+cosa: '#Scai #Amatrice richiesta urgente  per famiglia con bimbo piccolo'
+descrizione: 'Barbara Angelini, nella frazione Scai di Amatrice, e'', con la sua famiglia in queste condizioni. Quella di rimanere li'', comprando con i propri soldi, una casina su ruote, e'' stata una loro scelta poiche'' hanno degli animali da accudire...sicuramente non avevano messo in conto questo freddo...mi domando , non c''e'' una soluzione a questa situazione? Non c''e'' nessuno che li puo'' aiutare, magari trovando un ricovero anche per gli animali? Ciao Barbara, lo so, il fatto che ti pensiamo tutti non ti e'' certo di aiuto!'
+indirizzo: ''
+lat: ''
+lon: ''
+link: 'https://www.facebook.com/groups/1758670357733881/permalink/1825267201074196/'
+immagine: ''
+data: 08/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1528,199391350,2017-01-07 23:42:01,2017-01-07 23:21:54,"Offerta di manodopera e coperta per box cavallo, maglioni, scarponi",,,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Form"", ""Sisma Ottobre""]",,,"{""cosa"": ""Manodopera,coperte,scarponi n 38"", ""data"": ""07/01/2017"", ""descrizione"": ""Se avete bisogno posso mandarvi una coperta da box per cavallo tipo avelignese,coperte di lana,scarponi n 38,maglioni pesanti. Sono a Torino. Il weekend posso anche partire per darvi una mano.Luned\u00ec 9 e marted\u00ec 10 gennaio anche. Chiara"", ""email"": ""chiaravietti80@yahoo.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3404864630""}","<pre><yamldata>tel: '3404864630'
 email: chiaravietti80@yahoo.it
 cosa: 'Manodopera,coperte,scarponi n 38'
@@ -269,17 +280,6 @@ link: 'https://www.facebook.com/photo.php?fbid=10154799068664449&set=a.446963799
 immagine: 'http://i.imgur.com/8MOWjcR.jpg'
 data: 27/12/2016
 </yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1496,197705750,2017-01-04 17:55:36,2016-12-27 13:49:52,A #Pretare azienda agricola ha bisogno urgente di un gruppo elettrogeno,42.7978600,13.3004100,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Sisma Ottobre""]",,,"{""cosa"": ""Richiesta urgente di 1 Gruppo elettrogeno a gasolio, utile presso l'azienda agricola, di Pretare (frazione di Arquata del Tronto)"", ""data"": ""27/12/2016"", ""descrizione"": ""Serve urgentemente un gruppo elettrogeno, preferibilmente a gasolio e con una potenza di almeno 5 kw, per l'azienda agricola a gestione famigliare \""Le Terre delle Fate\"", ubicata sui Monti Sibillini a Pretare, frazione di Arquata del Tronto. Avere un generatore sarebbe importante e urgente perch\u00e9 spesso manca la corrente elettrica e ci\u00f2 impedisce lo svolgimento delle attivit\u00e0 in una situazione gi\u00e0 precaria. Chi pu\u00f2 dare una mano a reperire il gruppo elettrogeno pu\u00f2 contattare la signora Santa Santolini e i figli al numero telefonico o indirizzo email indicati. Grazie!"", ""email"": ""mirkotrenta@libero.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": ""42.7978600"", ""link"": """", ""lon"": ""13.3004100"", ""tel"": ""3804323871""}","<pre><yamldata>tel: '3804323871'
-email: mirkotrenta@libero.it
-cosa: 'Richiesta urgente di 1 Gruppo elettrogeno a gasolio, utile presso l''azienda agricola, di Pretare (frazione di Arquata del Tronto)'
-descrizione: 'Serve urgentemente un gruppo elettrogeno, preferibilmente a gasolio e con una potenza di almeno 5 kw, per l''azienda agricola a gestione famigliare ""Le Terre delle Fate"", ubicata sui Monti Sibillini a Pretare, frazione di Arquata del Tronto. Avere un generatore sarebbe importante e urgente perché spesso manca la corrente elettrica e ciò impedisce lo svolgimento delle attività in una situazione già precaria. Chi può dare una mano a reperire il gruppo elettrogeno può contattare la signora Santa Santolini e i figli al numero telefonico o indirizzo email indicati. Grazie!'
-indirizzo: ''
-lat: '42.7978600'
-lon: '13.3004100'
-link: ''
-immagine: ''
-data: 27/12/2016
-</yamldata></pre>",closed
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1496,197705750,2017-01-04 17:55:36,2016-12-27 13:49:52,A #Pretare azienda agricola ha bisogno urgente di un gruppo elettrogeno,42.7978600,13.3004100,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Sisma Ottobre""]",,,"{""cosa"": ""Richiesta urgente di 1 Gruppo elettrogeno a gasolio, utile presso l'azienda agricola, di Pretare (frazione di Arquata del Tronto)"", ""data"": ""27/12/2016"", ""descrizione"": ""Serve urgentemente un gruppo elettrogeno, preferibilmente a gasolio e con una potenza di almeno 5 kw, per l'azienda agricola a gestione famigliare \""Le Terre delle Fate\"", ubicata sui Monti Sibillini a Pretare, frazione di Arquata del Tronto. Avere un generatore sarebbe importante e urgente perch\u00e9 spesso manca la corrente elettrica e ci\u00f2 impedisce lo svolgimento delle attivit\u00e0 in una situazione gi\u00e0 precaria. Chi pu\u00f2 dare una mano a reperire il gruppo elettrogeno pu\u00f2 contattare la signora Santa Santolini e i figli al numero telefonico o indirizzo email indicati. Grazie!"", ""email"": ""mirkotrenta@libero.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": ""42.7978600"", ""link"": """", ""lon"": ""13.3004100"", ""tel"": ""3804323871""}","<pre><yamldata>tel: '3804323871'
 email: mirkotrenta@libero.it
 cosa: 'Richiesta urgente di 1 Gruppo elettrogeno a gasolio, utile presso l''azienda agricola, di Pretare (frazione di Arquata del Tronto)'
