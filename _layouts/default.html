@@ -53,7 +53,13 @@ $(function() {
           <nav>
             <a href="{{ site.baseurl }}/">Blog</a>
             <a href="{{ site.baseurl }}/about">About</a>
-            <a href="http://xinolinx.net/">Xinolinx</a>
+            {% if site.subsite %}
+            {% if site.subsitename %}
+            <a href="{{ site.subsite }}">{{ site.subsitename }}</a>
+            {% else %}
+            <a href="{{ site.subsite }}">SubSite</a>
+            {% endif %}
+            {% endif %}
           </nav>
         </header>
       </div>
