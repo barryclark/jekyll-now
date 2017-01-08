@@ -2,16 +2,21 @@
 layout: default
 ---
 
-<article class="post">
-  <h1>{{ page.title }}</h1>
-
-  <div class="entry">
-    {{ content }}
-  </div>
-
-  <div class="date">
-    Written on {{ page.date | date: "%B %e, %Y" }}
-  </div>
-
-  {% include disqus.html %}
-</article>
+<div class="page-container">
+   {% if page.img %}
+    <img class="featured-img" src={{ "/images-hq/" | prepend: site.baseurl | append : page.img}} alt="{{page.title}}">
+    {% endif %}
+    <div class="content">
+    <article>
+        <h1 class="page-title">{{page.title}}</h1>
+        {% if page.author %}
+        <div class="meta"><span><i class="fa fa-calendar-o" aria-hidden="true"></i> {{page.date | date: '%Y, %b %d'}}&nbsp;&nbsp;&nbsp;&nbsp;</span><span><i class="fa fa-pencil-square-o" aria-hidden="true"></i> {{page.author}}</span></div>
+        {% endif %}
+        {{page.content | markdownify}}
+    </article>
+            {% if page.categories %}
+                {% include disqus.html %}
+            {% else %}
+            {% endif %}
+    </div>
+</div>
