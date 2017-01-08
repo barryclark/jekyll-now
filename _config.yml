@@ -3,7 +3,6 @@
 #
 
 # for system setup
-encoding: utf-8
 timezone: Asia/Tokyo
 
 # Name of your site (displayed in the header)
