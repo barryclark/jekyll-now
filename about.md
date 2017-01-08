@@ -18,5 +18,7 @@ I'm enjoy current works, then I have not want a new-job offer, Sorry.
 
 ### Reading List
 
-- http://math-koshimizu.hatenablog.jp/
+- [http://math-koshimizu.hatenablog.jp/](http://math-koshimizu.hatenablog.jp/)
+- [http://allzero.jp/](http://allzero.jp/)
+- [http://on-ze.com/archives/2629](http://on-ze.com/archives/2629)
 - (Add)
