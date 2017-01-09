@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1538,199670470,2017-01-09 21:44:48,2017-01-09 21:44:11,Appello per riaprire la Valnerina,42.9312321,13.087449,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Notizie Utili"", ""Pubblicare su FB"", ""Sisma Ottobre""]",,,"{""cosa"": ""Appello per riaprire la Valnerina"", ""data"": ""09/01/2017"", ""descrizione"": ""Su Change.org l'appello di Sonia Fiorello, proprietaria di un'attivit\u00e0 commerciale a Visso, perch\u00e9 venga riaperto quel tratto di strada della Valnerina che collega Visso al resto delle Marche e che \u00e8 chiusa dal 30 ottobre. \""\u00c8 inammissibile che il Comune di Visso sia spaccato in due e che nessuno faccia nulla per riunirlo!! Noi abitanti delle frazioni di Visso siamo stufi di essere abbandonati a noi stessi e di percorrere 45 /60 km al giorno per raggiungere Visso Comune!! Quel tratto di strada va riaperto non solo per noi che ci viviamo e ci lavoriamo, ma anche per tutti i turisti e per coloro che hanno le seconde case da venire a visionare dopo quel maledetto 30 ottobre!!! Aiutateci a ripartire e a riavere un po' di normalit\u00e0!!\"""", ""email"": """", ""immagine"": """", ""indirizzo"": ""Piazza Martiri Vissani, Visso, MC, Marche, 62039, Italia"", ""lat"": ""42.9312321"", ""link"": ""https://www.change.org/p/prefetto-di-macerata-protezione-civile-regione-marche-regione-umbria-riapertura-della-valnerina?recruiter=659781299&utm_source=share_petition&utm_medium=facebook&utm_campaign=share_for_starters_page&utm_term=mob-xs-no_src-no_msg"", ""lon"": ""13.087449"", ""tel"": """"}","<pre><yamldata>tel: ''
+email: ''
+cosa: 'Appello per riaprire la Valnerina'
+descrizione: 'Su Change.org l''appello di Sonia Fiorello, proprietaria di un''attività commerciale a Visso, perché venga riaperto quel tratto di strada della Valnerina che collega Visso al resto delle Marche e che è chiusa dal 30 ottobre. ""È inammissibile che il Comune di Visso sia spaccato in due e che nessuno faccia nulla per riunirlo!! Noi abitanti delle frazioni di Visso siamo stufi di essere abbandonati a noi stessi e di percorrere 45 /60 km al giorno per raggiungere Visso Comune!! Quel tratto di strada va riaperto non solo per noi che ci viviamo e ci lavoriamo, ma anche per tutti i turisti e per coloro che hanno le seconde case da venire a visionare dopo quel maledetto 30 ottobre!!! Aiutateci a ripartire e a riavere un po'' di normalità!!""'
+indirizzo: 'Piazza Martiri Vissani, Visso, MC, Marche, 62039, Italia'
+lat: '42.9312321'
+lon: '13.087449'
+link: 'https://www.change.org/p/prefetto-di-macerata-protezione-civile-regione-marche-regione-umbria-riapertura-della-valnerina?recruiter=659781299&utm_source=share_petition&utm_medium=facebook&utm_campaign=share_for_starters_page&utm_term=mob-xs-no_src-no_msg'
+immagine: ''
+data: 09/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1537,199664589,2017-01-09 21:31:05,2017-01-09 21:18:05,A San Giorgio di #Cascia serve con urgenza un cannone di riscaldamento,42.7541637,13.0035959,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Sisma Ottobre"", ""Twitter""]",,http://i.imgur.com/JCQtWH7.jpg,"{""cosa"": ""A San Giorgio di #Cascia serve con urgenza un cannone di riscaldamento"", ""data"": ""09/01/2017"", ""descrizione"": ""L'associazione Libra 2.0 lancia un appello per reperire con urgenza a San Giorgio di Cascia un cannone per riscaldare 40 persone che rischiano il gelo. Per contatti: Davide 340 484 5633."", ""email"": """", ""immagine"": ""http://i.imgur.com/JCQtWH7.jpg"", ""indirizzo"": ""Strada Statale 320 di Cascia, Cascia, PG, UMB, 06043, Italia"", ""lat"": ""42.7541637"", ""link"": ""https://twitter.com/libra2puntozero/status/818566041370578945"", ""lon"": ""13.0035959"", ""tel"": ""340 484 5633""}","<pre><yamldata>tel: '340 484 5633'
 email: ''
 cosa: 'A San Giorgio di #Cascia serve con urgenza un cannone di riscaldamento'
@@ -9247,18 +9258,6 @@ indirizzo: ''
 lat: '44.04252'
 lon: '12.53566'
 link: ''
-immagine: ''
-data: 14/09/2016
-</yamldata></pre>
-",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/300,176948051,2016-09-14 18:03:32,2016-09-14 16:00:27,Libri e cancelleria,,,"[""Accettato"", ""Donazioni"", ""Form""]",,,"{""cosa"": ""Libri e cancelleria"", ""data"": ""14/09/2016"", ""descrizione"": ""L\u2019Associazione Nazionale Presidi del Lazio e il Progetto Bambini dell\u2019U.N.I.T.A.L.S.I. (Unione Nazionale Italiana Trasporto Ammalati a Lourdes e Santuari Internazionali) hanno lanciato l\u2019iniziativa \u201cScuola solidale\u201d grazie alla quale verranno raccolti fondi a favore dell\u2019Istituto omnicomprensivo di Amatrice che \u00e8 andato completamente distrutto a causa del sisma - IN TUTTA ITALIA"", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""http://www.corriere.it/scuola/primaria/16_agosto_26/terremoto-al-via-scuola-solidale-raccolta-fondi-bambini-amatrice-c0196278-6b66-11e6-8bdd-2a860cc068c8.shtml?refresh_ce-cp"", ""lon"": """", ""tel"": """"}","<pre><yamldata>tel: ''
-email: ''
-cosa: 'Libri e cancelleria'
-descrizione: 'L’Associazione Nazionale Presidi del Lazio e il Progetto Bambini dell’U.N.I.T.A.L.S.I. (Unione Nazionale Italiana Trasporto Ammalati a Lourdes e Santuari Internazionali) hanno lanciato l’iniziativa “Scuola solidale” grazie alla quale verranno raccolti fondi a favore dell’Istituto omnicomprensivo di Amatrice che è andato completamente distrutto a causa del sisma - IN TUTTA ITALIA'
-indirizzo: ''
-lat: ''
-lon: ''
-link: 'http://www.corriere.it/scuola/primaria/16_agosto_26/terremoto-al-via-scuola-solidale-raccolta-fondi-bambini-amatrice-c0196278-6b66-11e6-8bdd-2a860cc068c8.shtml?refresh_ce-cp'
 immagine: ''
 data: 14/09/2016
 </yamldata></pre>
