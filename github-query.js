@@ -79,7 +79,21 @@ jQuery.fn.loadRepositories = function(username) {
                        $("#"+repo.name).css("background-position", 'center');
                        $("#"+repo.name).css("min-height", '150px');
                     } else {
-                       $("#"+repo.name).append('<h4>Image Not Available</h4>');
+                       //$("#"+repo.name).append('<h4>Image Not Available</h4>');
+                       $("#"+repo.name).append("<canvas id='"+repo.name+"_canvas'></canvas>");
+                       var canvas = document.getElementById(repo.name+"_canvas");
+                       var div = document.getElementById(repo.name);
+                       canvas.width = div.clientWidth;
+                       canvas.height = div.clientHeight;
+                       var ctx = canvas.getContext("2d");
+                       ctx.beginPath();
+                       ctx.moveTo(0,0);
+                       ctx.lineTo(canvas.width,canvas.height);
+                       ctx.stroke();
+                       ctx.beginPath();
+                       ctx.moveTo(canvas.width,0);
+                       ctx.lineTo(0,canvas.height);
+                       ctx.stroke();	
                     }
                 });
             });
