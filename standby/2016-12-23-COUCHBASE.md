@@ -187,27 +187,7 @@ When a node is removed from the cluster during failover, it's possible for opera
 문제 접근
 ---------
 
-### 문제 상황
-
-**1. 회원 로그인 문제 발생**
-
--	문제 발생 서버 임시 제외
-
-**2. 특정 사용자의 로그아웃 오류**
-
--	장애 서버 재투입
-
-**3. 리밸런싱 도중 어플리케이션 장애 발생**
-
--	재배포 통해 어플리케이션 장애 복구
-
-<br>
-
-> **저는 여기까지 조치된 이후 해당 장애에 대한 분석 및 개선을 인계 받았습니다**
-
-<br>
-
-### 문제 접근
+### 문제점
 
 특정 서버가 `Out Of Memory` 문제를 일으키며, 로그인 문제 발생
 
@@ -239,7 +219,7 @@ CouchBase(Membase)가 가지고 있어야 하는 데이터는 많이 여유롭�
 
 2016년 10월 28일(장애 발생 당일)과 2017년 01월 04일(안정화)의 Membase 로그를 추출하였고, 다수의 이상 항목이 발견되어 뽑아보았습니다.
 
-#### 이상 로그
+### 이상 로그
 
 **1. 계속 줄어드는 free memory**
 
@@ -346,9 +326,10 @@ vb_replica_queue_size -> 641362829/436994
 
 각 항목에 대한 설명은 [[memory : couchbase doc]](https://developer.couchbase.com/documentation/server/current/cli/cbstats/cbstats-memory.html)와 [[cbstats : couchbase doc]](https://developer.couchbase.com/documentation/server/current/cli/cbstats-intro.html)에서 확인 가능하지만, Membase Server 1.7.2 이후로 굉장히 많은 수정사항이 업데이트되며 사라지거나 새로 생긴 통계 항목들이 많기 때문에 정확한 확인이 어려웠습니다.
 
-### 문제 분석
+문제 분석 및 개선
+-----------------
 
-#### 로그 수치 분석
+### 로그 수치 분석
 
 메모리 반환 작업이 정상적으로 수행되지 못하는 것을 의심하였으나 ep engine은 정상적인 주기로 동작하고 있는 것을 확인
 
@@ -378,7 +359,7 @@ ep_kv_size 누적 증가량 321088428
 
 ![램 사용량](/images/2016/2016_12_23_COUCHBASE/update_item.png)
 
-membase에서 관리되는 Value가 사용자의 세션이기 때문에 사용자가 새로고침을 했을 경우에도 expire를 갱신하는 update 쿼리가 발생했을 것으로 예상
+membase에서 관리되는 Value가 사용자의 세션이기 때문에 사용자가 새로고침을 했을 경우에 expire를 갱신하는 update 쿼리가 발생했을 것으로 예상
 
 **Set Operation 통계 수치**
 
@@ -388,30 +369,179 @@ membase에서 관리되는 Value가 사용자의 세션이기 때문에 사용�
 
 어플리케이션의 동작 로직에 문제가 있다는 예상을 함
 
+### 어플리케이션 개선
+
+#### 1. 불필요한 요청 제거
+
+첫번째로 테스트 환경을 구성하여 단일 사용자 접속시 그래프가 어떻게 그려지는지 확인을 해보았습니다.
+
+**New User**
+
+![단일 사용자 테스트1](/images/2016/2016_12_23_COUCHBASE/newuser.png)
+
+**Set**
+
+![단일 사용자 테스트1](/images/2016/2016_12_23_COUCHBASE/set.png)
+
+**Update**
+
+![단일 사용자 테스트1](/images/2016/2016_12_23_COUCHBASE/update.png)
+
+**Get**
+
+![단일 사용자 테스트1](/images/2016/2016_12_23_COUCHBASE/get.png)
+
+단일 첫 접속 대비 너무 많은 요청이 가고 있다는 것을 확인하여 `Debuger`를 통해 요청 트래픽을 알보았습니다.
+
+문제는 Spring Security의 `fillterChaninMap` 이였습니다. 과거 동적 요청이 거의 없었던 시절 개발되었던 프로젝트에서 동적 요청이 다수 추가되었지만, 필터는 업데이트되지 않았기 때문입니다.
+
+```java
+filterChainMap.put((String) urlMatcher.compile("/**"), filters);
+```
+
+*(resource 요청을 제외한 모든 트래픽이 Security fillter를 거침)*
+
+수정 후
+
+```java
+filterChainMap.put((String) urlMatcher.compile("/view/**"), Lists.<Filter>newArrayList());
+filterChainMap.put((String) urlMatcher.compile("/**"), filters);
+```
+
+`동적 요청을` 처리하지 않도록 빈 필터를 적용
+
+다시 테스트!
+
+**New User**
+
+![단일 사용자 테스트2](/images/2016/2016_12_23_COUCHBASE/newuser2.png)
+
+**Set**
+
+![단일 사용자 테스트2](/images/2016/2016_12_23_COUCHBASE/set2.png)
+
+**Update**
+
+![단일 사용자 테스트2](/images/2016/2016_12_23_COUCHBASE/update2.png)
+
+**Get**
+
+![단일 사용자 테스트2](/images/2016/2016_12_23_COUCHBASE/get2.png)
+
+눈에 띄게 요청 빈도가 떨어졌습니다. 사용자 체류시간과 활동을 알아야 정확히 통계를 낼 수 있기 때문에, 정확한 수치를 낼 수는 없지만 많은 트래픽이 이 부분에서 감소할 수 있을 거라고 생각합니다.
+
+#### 2. Touch Command를 활용
+
+위에서 설명했 듯 `Membase`를 어플리케이션은 `SpringSecurity`의 `SecurityContextPersistenceFilter`에서 사용하는 `SecurityContextRepository`를 통해 `Membase`와 교류를 하고 있고 우리는 `SecurityContextRepository`를 상속한 `MemcachedSecurityContextRepository`를 구현해서 사용하고 있습니다.
+
+`SecurityContextRepository`의 핵심 로직은 `loadContext`와 `saveContext`입니다.
+
+Spring Docs에서는 `loadContext`는 보안 콘텍스트를 로드하는 역할을 하도록 명시되어 있고, `saveContext`는 보안 콘텍스트를 저장하는 역할을 하도록 명시되어 있습니다.
+
+눈 여겨 볼 부분은 `saveContext` 입니다.
+
+`saveContext`은 보안 콘텍스트를 저장하는 역할을 하지만, 이미 데이터가 있을 경우 expire를 갱신하는 역할을 수행할 수도 있습니다. 그리고 expire를 갱신할 때 사용할 수 있는 mamcached의 유용한 기능이 바로 `touch` 입니다.
+
+`touch` 기능은 `Membase 1.7`에서부터 적용이 되었으며, `spymemcached 2.7`로 자바로 공식 지원을 하고 있습니다.
+
+Couchbase 공식 홈페이지에서 `touch` 기능을 아래와 같이 설명하고 있습니다.
+
+```
+Touch
+
+We have heard from quite a few projects owners that they’d like the ability to have items with a sliding window of expiration. For example, instead of having an item expire after five minutes of mutating (which is how you specify an object’s time-to-live today), we’d like it to expire after five minutes of inactivity.
+
+If you’re familiar with LRU caches (such as memcached), you should note that this is semantically quite different from LRU. With an LRU, we effectively don’t care about old data. The use cases for touch require us to actively disable access to inactive data on a user-defined schedule.
+
+The touch command can be used to adjust expiration on an existing key without touching the value. It uses the same type of expiration definition all mutation commands use, but doesn’t actually touch the data.
+
+Similar to touch we added a gat (get-and-touch) command that returns the data and adjusts the expiration at the same time. For most use cases, gat is probably more appropriate than touch, but it really depends on how you build your application.
+```
+
+이 내용의 핵심은
+
+```
+The touch command can be used to adjust expiration on an existing key without touching the value. It uses the same type of expiration definition all mutation commands use, but doesn’t actually touch the data.
+```
+
+`touch` 명령을 사용한다면, 실제로 데이터를 건드리지않고, 키 값의 만기를 저장할 수 있다는 내용입니다. 또한 `get-and-touch` 기능으로 조회와 만기 수정을 한번에 할 수 있는 기능도 제공합니다.
+
+이 기능을 보았을 때 의아한 점이 생기게 되었습니다.
+
+*TEST CODE<br>(Disk Queue를 보기 위하여 일시적으로 많은 데이터 전송)*
+
+```java
+memcachedClient.set("TEST1", 10000, "TEST DATA");
+for(int i=0;i<10;i++) {
+    memcachedClient.set("TEST1",10000);
+}
+```
+
+**Update**
+
+![단일 사용자 테스트3](/images/2016/2016_12_23_COUCHBASE/update3.png)
+
+**Disk Wirte Queue**
+
+![단일 사용자 테스트3](/images/2016/2016_12_23_COUCHBASE/diskqueue3.png)
+
+현재의 expire를 갱신하는데에는 disk queue를 사용하고 있고, 이 말은 expire를 갱신하는데에 set operation을 사용하고 있다는 점 입니다. 이 부분에 touch 기능을 사용한다면 조금 더 서버 성능에 개선이 가능해보였습니다.
+
+다시 테스트!
+
+*TEST CODE<br>(Disk Queue를 보기 위하여 일시적으로 많은 데이터 전송)*
+
+```java
+memcachedClient.set("TEST2", 10000, "TEST DATA");
+for(int i=0;i<10;i++) {
+    memcachedClient.getAndTouch("TEST2",10000);
+}
+```
+
+**Update**
+
+![단일 사용자 테스트4](/images/2016/2016_12_23_COUCHBASE/update4.png)
+
+**Disk Wirte Queue**
+
+![단일 사용자 테스트4](/images/2016/2016_12_23_COUCHBASE/diskqueue4.png)
+
+즉 서버의 Disk Write Queue를 사용하지 않을 수 있으며, 서버의 부담을 덜어줄 수 있습니다. 확인해볼 결과 현재도 `touch` 기능을 일부 사용하고 있으나, 해당 어플리케이션의 주요 로직에서는 적용되어 있지 않았습니다.
+
+개선할 현재의 로직 입니다.
+
+```java
+...
+if(!trustResolver.isAnonymous(context.getAuthentication())) {
+	memcachedSession.set(MEMCACHE_SECURITY_CONTEXT_KEY, context);
+	...
+}
+```
+
+수정 후
+
+```java
+...
+if(!trustResolver.isAnonymous(context.getAuthentication())) {
+	if(memcachedSession.getAndTouch(MEMCACHE_SECURITY_CONTEXT_KEY) == null) {
+		memcachedSession.set(MEMCACHE_SECURITY_CONTEXT_KEY, context);
+	}
+	...
+}
+```
+
 ---
 
-**1. 회원 로그인 문제 발생**
+**여기까지 Membase의 서버 부하를 줄여 서버를 조금 더 안정적으로 만들고자 하는 개선을 해보았습니다. 그러나 이번 이슈로 떠오른 이슈가 한가지 더 있습니다. <br><br>바로 Membase 서버가 죽었을 때 어플리케이션을 구동할 수 없는 문제입니다. Membase는 세션을 관리해주는 용도로 사용하기 때문, Membase가 죽었다고 어플리케이션을 올릴 수 없는 문제는 일어나서는 안되기 때문입니다.**
 
-**2. 특정 사용자의 로그아웃 오류**
+어플리케이션 - Membase 의존성 제거하기
+--------------------------------------
 
-**3. 리밸런싱 도중 어플리케이션 장애 발생**
+### 문제 현상
 
----
+![Application Exception](/images/2016/2016_12_23_COUCHBASE/exception.png)
 
-개선
-----
-
-### 메모리 부족 현상 해소
-
-### 무의미한 트래픽 제거
-
-### 서버 구성
-
-### 모든 Membase Server의 장애 상황에서 어플리케이션을 구동할 수 없는 문제
-
-#### 문제 현상
-
-#### 문제 원인
+### 문제 원인
 
 **Bean 생성 실패**
 
