@@ -1,5 +1,3 @@
-> March, 2016: If you're on an old version of Jekyll Now and run into a) build warnings or b) syntax highlighting issues caused by [Jekyll 3 and GitHub Pages updates](https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0), just :sparkles:[update your _config.yml](https://github.com/barryclark/jekyll-now/pull/445/files):sparkles: and you'll be set!
-
 # Jekyll Now (v1.2_x* ... xinolinx_version)
 
 **Jekyll** is a static site generator that's perfect for GitHub hosted blogs ([Jekyll Repository](https://github.com/jekyll/jekyll))
@@ -60,33 +58,33 @@ Edit `/_posts/2014-3-3-Hello-World.md` to publish your first blog post. This [Ma
 
 #### by Jekyll Now
 
-? Command-line free _fork-first workflow_, using GitHub.com to create, customize and post to your blog  
-? Fully responsive and mobile optimized base theme (**[Theme Demo](http://xinolinx.github.io)**)  
-? Sass/Coffeescript support using Jekyll 2.0  
-? Free hosting on your GitHub Pages user site  
-? Markdown blogging  
-? Syntax highlighting  
-? Disqus commenting  
-? Google Analytics integration  
-? SVG social icons for your footer  
-? 3 http requests, including your avatar  
+- Command-line free _fork-first workflow_, using GitHub.com to create, customize and post to your blog  
+- Fully responsive and mobile optimized base theme (**[Theme Demo](http://xinolinx.github.io)**)  
+- Sass/Coffeescript support using Jekyll 2.0  
+- Free hosting on your GitHub Pages user site  
+- Markdown blogging  
+- Syntax highlighting  
+- Disqus commenting  
+- Google Analytics integration  
+- SVG social icons for your footer  
+- 3 http requests, including your avatar  
 
 #### + Xinolinx Features
 
-? Generate Amazon link (in JP)
-? Kaomoji Highlight
-? Preview each Web-Links by wimg.ca
-? Markdown for Network-Topologies (jquery-jNetPreview-0.0.1.js)
-? Validation for HTML5 in each page
-? Validation for RSS in about page
+- Generate Amazon link (in JP)
+- Kaomoji Highlight
+- Preview each Web-Links by wimg.ca
+- Markdown for Network-Topologies (jquery-jNetPreview-0.0.1.js)
+- Validation for HTML5 in each page
+- Validation for RSS in about page
 
 #### not supported.
 
-? No installing dependencies
-? No need to set up local development  
-? No configuring plugins  
-? No need to spend time on theming  
-? More time to code other things ... wait ?!  
+- No installing dependencies
+- No need to set up local development  
+- No configuring plugins  
+- No need to spend time on theming  
+- More time to code other things ... wait ?!  
 
 ## Questions?
 
