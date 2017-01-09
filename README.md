@@ -40,11 +40,11 @@ You must configure following atttributes.
 - description ... site description
 - avatar ... icon in top of page
 - footer-links ... to contact you via Mail and SNSes.
-- url ... "https://[your repo].github.io"
-- baseurl ... "https://[your repo].github.io"
+- url ... "http://yourgithubusername.github.io"
+- baseurl ... "http://yourgithubusername.github.io"
 - subsite ... if you have sub-site, site URL
 - subsitename ... sub site name
-- amazon_asid ... your amazon affiriate ID
+- amazon_asid ... your amazon (JP) affiriate ID
 
 ### Step 3) Publish your first blog post
 
@@ -71,7 +71,7 @@ Edit `/_posts/2014-3-3-Hello-World.md` to publish your first blog post. This [Ma
 
 #### + Xinolinx Features
 
-- Generate Amazon link (in JP)
+- Generate Amazon (JP) link
 - Kaomoji Highlight
 - Preview each Web-Links by wimg.ca
 - Markdown for Network-Topologies (jquery-jNetPreview-0.0.1.js)
