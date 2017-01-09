@@ -30,12 +30,12 @@ $(document).ready(function(){
 		var insert = $(target).next();
 		var setimg = $(insert).find("img:first").get(0);
 		var imgurl = $(setimg).attr("src");
-		imgurl.string.replace(/__AMAZON_ASIN__/g, asincode);
+		imgurl.replace(/__AMAZON_ASIN__/g, asincode);
 		$(setimg).attr("src", imgurl);
 		$(setimg).attr("alt", asincode + "." + "000");
 		var setlink = $(insert).find("a:first").get(0);
 		var linkurl = $(setlink).attr("href");
-		linkurl.string.replace(/__AMAZON_ASIN__/g, asincode);
+		linkurl.replace(/__AMAZON_ASIN__/g, asincode);
 		$(setlink).attr("href", linkurl);
 	}
 });
