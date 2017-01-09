@@ -87,7 +87,7 @@ jQuery.fn.loadRepositories = function(username) {
                        canvas.width = div.clientWidth;
                        canvas.height = div.clientHeight;
                        var ctx = canvas.getContext("2d");
-                       ctx.strokeStyle = "D4D4D5";
+                       ctx.strokeStyle = "#E0E1E2";
                        ctx.beginPath();
                        ctx.moveTo(0,0);
                        ctx.lineTo(canvas.width,canvas.height);
@@ -97,19 +97,18 @@ jQuery.fn.loadRepositories = function(username) {
                        ctx.lineTo(0,canvas.height);
                        ctx.stroke();	
                        // Handle resizing
-                       $("#"+repo.name).resize(function() {
-                          canvas.width = div.clientWidth;
-                          canvas.height = div.clientHeight;
-                          var ctx = canvas.getContext("2d");
+                       window.onresize = function() {
+                          c.width = theDiv.clientWidth;
+                          c.height = theDiv.clientHeight;
                           ctx.beginPath();
                           ctx.moveTo(0,0);
-                          ctx.lineTo(canvas.width, canvas.height);
+                          ctx.lineTo(c.width,c.height);
                           ctx.stroke();
                           ctx.beginPath();
-                          ctx.moveTo(canvas.width,0);
-                          ctx.lineTo(0,canvas.height);
+                          ctx.moveTo(c.width,0);
+                          ctx.lineTo(0,c.height);
                           ctx.stroke();	
-                       });
+                       };
                     }
                 });
             });
