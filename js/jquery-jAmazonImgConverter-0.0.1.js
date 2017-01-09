@@ -22,21 +22,21 @@ $(document).ready(function(){
 			/* WARNING : ASIN code is not exist. */
 			continue;
 		}
-		var insert = $("#" + tag_template_id).get(0);
+		var insert = $("#" + tag_template_id + ":first");
 		if (!insert) {
 			/* ERROR : id=amazon_template_book is not found */
 			break;
 		}
 		$(target).after($(insert).clone());
-		var setimg = $(insert).children("img");
-		var imgurl = $(setimg).get(0).attr("src");
+		var setimg = $(insert).children("img:first");
+		var imgurl = $(setimg).attr("src");
 		imgurl.replace(tag_asin_template, asincode);
-		$(setimg).get(0).attr("src", imgurl);
-		$(setimg).get(0).attr("alt", asincode + "." + "000");
-		var setlink = $(insert).children("a");
-		var linkurl = $(setlink).get(0).attr("href");
+		$(setimg).attr("src", imgurl);
+		$(setimg).attr("alt", asincode + "." + "000");
+		var setlink = $(insert).children("a:first");
+		var linkurl = $(setlink).attr("href");
 		linkurl.replace(tag_asin_template, asincode);
-		$(setlink).get(0).attr("href", linkurl);
+		$(setlink).attr("href", linkurl);
 	}
 });
 
