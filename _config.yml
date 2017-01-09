@@ -3,13 +3,13 @@
 #
 
 # Name of your site (displayed in the header)
-name: tech::xinolinx
+name: Your Name
 
 # Short bio or description (displayed in the header)
-description: technical memos for me.
+description: Web Developer from Somewhere
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://avatars0.githubusercontent.com/u/19658083?v=3&s=460
+avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
 
 #
 # Flags below are optional
@@ -18,14 +18,14 @@ avatar: https://avatars0.githubusercontent.com/u/19658083?v=3&s=460
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email: ixiv2015@gmail.com
+  email:
   facebook:
   flickr:
-  github: xinolinx
+  github: barryclark/jekyll-now
   instagram:
   linkedin:
   pinterest:
-  rss: https://xinolinx.github.io/feed.xml # just type anything here for a working RSS icon
+  rss: # just type anything here for a working RSS icon
   twitter: 
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
@@ -40,13 +40,13 @@ google_analytics:
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
-url: https://xinolinx.github.io
+url: https://yourrepositoryname.github.io
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
 # and NOT your User repository (http://yourusername.github.io)
 # then add in the baseurl here, like this: "/repository-name"
-baseurl: "https://xinolinx.github.io"
+baseurl: "https://yourrepositoryname.github.io"
 
 #
 # !! You don't need to change any of the configuration flags below !!
@@ -85,8 +85,8 @@ exclude:
   - CNAME
 
 # subsite information
-subsite: https://xinolinx.wordpress.com/
-subsitename: Pics
+subsite: #if you have sub site
+subsitename: # sub site name
 
 # for amazon api
-amazon_asid: soundvoxxjp-22
+amazon_asid: #amazon affiriate ID
