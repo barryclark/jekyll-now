@@ -8,4 +8,4 @@ MarkdownにASINを`**4894921847**{: .amazon_img }`として書くとAmazonの表
 - `https://www.amazon.co.jp/gp/product/B01MQTQFLO/ref=series_rw_dp_sw` = B01MQTQFLO
 - `https://www.amazon.co.jp/dp/4894921847/` = 4894921847
 
-**B01MQTQFLO**{: .amazon_img }
+**B01MQTQFLO**{: .amazon_img } **4894921847**{: .amazon_img }
