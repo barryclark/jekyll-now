@@ -39,48 +39,74 @@ Ben de seni çok severim ama şu an konu bu değil.</p>
 Son Feci Bisiklet - Bu Kız
 
 <iframe width="550" height="385" src="https://www.youtube.com/embed/1_0Ec694FNM"></iframe>
-<p>
+
 Bu kız beni sever
+
 Bu kız beni öldürür
+
 Bu kız bana güzel hayaller gördürür
+
 Bu kız beni tutar
+
 Ve kendine çeker
+
 Bu kızla bana bir oda bir yatak bi kütüphane yeter
 
+
 Belli ki bi sır vardı onun sesinde
+
 Her düşündüğümde onu beyaz elbisesinde
+
 Bela bulur beni
+
 Ve uyku kaybolur gibi
+
 Bu kız beni görünce gülümser
 
 Bu kız beni sever
+
 Bu kız beni öldürür
+
 Bu kız bana güzel hayaller gördürür
 
 Bu kız bana güzel
+
 Yalanlar söyletir
+
 Bu kız bana yeni bi takım şeyler öğretir
+
 Her gece
 
 Yalpalayaraktan giderim kapısına
+
 Biliyorum saat çok geç
+
 Ama yine de beni suçlama bebek
+
 Sevişmek ne demek
 
 Çizgi filmler mi izlesek?
+
 Hiç bir yere de gitmesek
+
 Kimseleri görmesek
+
 Ama açlıktan da ölmesek iyi
 
 Belli ki bi sır vardı onun sesinde
+
 Her düşündüğümde onu beyaz elbisesinde
+
 Bela bulur beni
+
 Ve uyku kaybolur gibi
 
 Bu kız
+
 Bu kız
+
 Bu kız
-</p>
+
 ~ Söz-Müzik: Arda Kemirgent
 
 <a href="#13Agu2016">13 Ağustos 2016 - 13:30</a>
