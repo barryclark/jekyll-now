@@ -28,12 +28,12 @@ $(document).ready(function(){
 			break;
 		}
 		$(target).after($(insert).clone());
-		var setimg = $(insert).children("img:first").get(0);
+		var setimg = $(insert).find("img:first").get(0);
 		var imgurl = $(setimg).attr("src");
 		imgurl.replace(tag_asin_template, asincode);
 		$(setimg).attr("src", imgurl);
 		$(setimg).attr("alt", asincode + "." + "000");
-		var setlink = $(insert).children("a:first").get(0);
+		var setlink = $(insert).find("a:first").get(0);
 		var linkurl = $(setlink).attr("href");
 		linkurl.replace(tag_asin_template, asincode);
 		$(setlink).attr("href", linkurl);
