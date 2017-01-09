@@ -8,6 +8,6 @@ MarkdownにASINを`**4894921847**{: .amazon_img }`として書くとAmazon商品
 - `https://www.amazon.co.jp/gp/product/B01MQTQFLO/` = B01MQTQFLO
 - `https://www.amazon.co.jp/dp/4894921847/` = 4894921847
 
-**B01MQTQFLO**{: .amazon_img } **4894921847**{: .amazon_img }
+**B01MQTQFLO**{: .amazon_img } **4894921847**{: .amazon_img } **B01MQVJE2W**{: .amazon_img }
 
 Release tagは [v1.2_x7](https://github.com/xinolinx/xinolinx.github.io/releases/tag/v1.2_x7) です。
