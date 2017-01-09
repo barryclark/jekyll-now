@@ -60,7 +60,18 @@ You must configure following atttributes.
 
 Edit `/amout.md` to publish your profile, that is linked in header nav-tag "About". This [Markdown Cheatsheet](http://www.jekyllnow.com/Markdown-Style-Guide/) might come in handy.
 
-### Step 5) Publish your first blog post
+### Step 5) fix amazon locale in amazon_img.html for your country.
+
+Edit `_include/amazon_img.html` and fix amazon address for your country(This repository has amazon.co.jp locale).
+This work is helped by amazon affiriate link (the bar is in top of page) od your country amazon web site.
+In Japan, these links are following values.
+
+```
+img-src="//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=__AMAZON_ASIN__&Format=_SL160_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag={{ site.amazon_asid }}"
+a-href="https://www.amazon.co.jp/dp/__AMAZON_ASIN__/ref=as_li_ss_il?ie=UTF8&linkCode=li2&tag={{ site.amazon_asid }}"
+```
+
+### Step 6) Publish your first blog post
 
 Edit `/_posts/YYYY-MM-DD-Hello-World.md` to publish your first blog post. This [Markdown Cheatsheet](http://www.jekyllnow.com/Markdown-Style-Guide/) might come in handy.
 
