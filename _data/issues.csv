@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1537,199664589,2017-01-09 21:31:05,2017-01-09 21:18:05,A San Giorgio di #Cascia serve con urgenza un cannone di riscaldamento,42.7541637,13.0035959,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Sisma Ottobre"", ""Twitter""]",,http://i.imgur.com/JCQtWH7.jpg,"{""cosa"": ""A San Giorgio di #Cascia serve con urgenza un cannone di riscaldamento"", ""data"": ""09/01/2017"", ""descrizione"": ""L'associazione Libra 2.0 lancia un appello per reperire con urgenza a San Giorgio di Cascia un cannone per riscaldare 40 persone che rischiano il gelo. Per contatti: Davide 340 484 5633."", ""email"": """", ""immagine"": ""http://i.imgur.com/JCQtWH7.jpg"", ""indirizzo"": ""Strada Statale 320 di Cascia, Cascia, PG, UMB, 06043, Italia"", ""lat"": ""42.7541637"", ""link"": ""https://twitter.com/libra2puntozero/status/818566041370578945"", ""lon"": ""13.0035959"", ""tel"": ""340 484 5633""}","<pre><yamldata>tel: '340 484 5633'
+email: ''
+cosa: 'A San Giorgio di #Cascia serve con urgenza un cannone di riscaldamento'
+descrizione: 'L''associazione Libra 2.0 lancia un appello per reperire con urgenza a San Giorgio di Cascia un cannone per riscaldare 40 persone che rischiano il gelo. Per contatti: Davide 340 484 5633.'
+indirizzo: 'Strada Statale 320 di Cascia, Cascia, PG, UMB, 06043, Italia'
+lat: '42.7541637'
+lon: '13.0035959'
+link: 'https://twitter.com/libra2puntozero/status/818566041370578945'
+immagine: 'http://i.imgur.com/JCQtWH7.jpg'
+data: 09/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1533,199430627,2017-01-08 23:41:35,2017-01-08 16:24:26,Offro ospitalità a famiglia di tre persone in provincia di Caserta,41.080214,14.256527,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Ottobre""]",,,"{""data"": ""08/01/2017"", ""descrizione"": ""Ospito famiglia di massimo tre persone in Santa Maria Capua Vetere (CE)"", ""email"": ""antonio.dott.comm.scognamiglio@gmail.com"", ""immagine"": """", ""indirizzo"": ""Corso Giuseppe Garibaldi, Sant'Andrea dei Lagni, Santa Maria Capua Vetere, CE, CAM, 81055, Italia"", ""lat"": ""41.080214"", ""link"": """", ""lon"": ""14.256527"", ""tel"": ""3396307148""}","<pre><yamldata>tel: '3396307148'
 email: antonio.dott.comm.scognamiglio@gmail.com
 descrizione: 'Ospito famiglia di massimo tre persone in Santa Maria Capua Vetere (CE)'
