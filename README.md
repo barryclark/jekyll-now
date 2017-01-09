@@ -1,4 +1,6 @@
-# Jekyll Now (v1.2_x* ... xinolinx_version)
+# Jekyll Now (v1.2_xN[s])
+
+## About
 
 **Jekyll** is a static site generator that's perfect for GitHub hosted blogs ([Jekyll Repository](https://github.com/jekyll/jekyll))
 
@@ -13,6 +15,14 @@
 - It's easy to try out, you can just delete your forked repository if you don't like it
 
 In a few minutes you'll be set up with a minimal, responsive blog like the one below giving you more time to spend on writing epic blog posts!
+
+### Versioning Rule
+
+- v1.2 : the main repository version of jekyll-now before fork.
+- xN : xinolinx_version = N
+- [s] : stabled / working
+
+### Screen Shot
 
 ![Jekyll Now Xinolinx Theme Screenshot](/images/jekyll-now-xinolinx-theme-screenshot.jpg "Jekyll Now Xinolinx Theme Screenshot")
 
