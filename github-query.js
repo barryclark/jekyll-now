@@ -80,6 +80,7 @@ jQuery.fn.loadRepositories = function(username) {
                        $("#"+repo.name).css("min-height", '150px');
                     } else {
                        //$("#"+repo.name).append('<h4>Image Not Available</h4>');
+                       // Draw a cross in the box if no images are available
                        $("#"+repo.name).append("<canvas id='"+repo.name+"_canvas'></canvas>");
                        var canvas = document.getElementById(repo.name+"_canvas");
                        var div = document.getElementById(repo.name);
@@ -94,6 +95,20 @@ jQuery.fn.loadRepositories = function(username) {
                        ctx.moveTo(canvas.width,0);
                        ctx.lineTo(0,canvas.height);
                        ctx.stroke();	
+                       // Handle resizing
+                       $("#"+repo.name).resize(function() {
+                          canvas.width = div.clientWidth;
+                          canvas.height = div.clientHeight;
+                          var ctx = canvas.getContext("2d");
+                          ctx.beginPath();
+                          ctx.moveTo(0,0);
+                          ctx.lineTo(canvas.width, canvas.height);
+                          ctx.stroke();
+                          ctx.beginPath();
+                          ctx.moveTo(canvas.width,0);
+                          ctx.lineTo(0,canvas.height);
+                          ctx.stroke();	
+                       });
                     }
                 });
             });
