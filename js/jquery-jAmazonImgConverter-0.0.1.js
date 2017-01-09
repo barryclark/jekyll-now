@@ -11,15 +11,32 @@
  * @info (none)
 **/
 $(document).ready(function(){
+	var tag_asin_template = "__AMAZON_ASIN__";
+	var tag_template_id = "amazon_template_book";
 	var targets = $(".amazon_img");
-	for (var idx = 0; idx < targets.idx; idx++) {
+
+	for (var idx = 0; idx < targets.length; idx++) {
 		var target = $(targets).get(idx);
-		var insert = $("#amazon_template_book").get(0).clone();
+		var asincode = $(target).text();
+		if (!asincode) {
+			/* WARNING : ASIN code is not exist. */
+			continue;
+		}
+		var insert = $("#" + tag_template_id).get(0).clone();
 		if (!insert) {
 			/* ERROR : id=amazon_template_book is not found */
 			break;
 		}
 		$(target).after(insert);
+		var setimg = $(insert).children("img");
+		var imgurl = $(setimg).get(0).attr("src");
+		imgurl.replace(tag_asin_template, asincode);
+		$(setimg).get(0).attr("src", imgurl);
+		$(setimg).get(0).attr("alt", asincode + "." + "000");
+		var setlink = $(insert).children("a");
+		var linkurl = $(setlink).get(0).attr("href");
+		linkurl.replace(tag_asin_template, asincode);
+		$(setlink).get(0).attr("href", linkurl);
 	}
 });
 
