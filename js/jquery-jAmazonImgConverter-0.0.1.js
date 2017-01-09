@@ -22,12 +22,12 @@ $(document).ready(function(){
 			/* WARNING : ASIN code is not exist. */
 			continue;
 		}
-		var insert = $("#" + tag_template_id).get(0).clone();
+		var insert = $("#" + tag_template_id).get(0);
 		if (!insert) {
 			/* ERROR : id=amazon_template_book is not found */
 			break;
 		}
-		$(target).after(insert);
+		$(target).after($(insert).clone());
 		var setimg = $(insert).children("img");
 		var imgurl = $(setimg).get(0).attr("src");
 		imgurl.replace(tag_asin_template, asincode);
