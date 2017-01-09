@@ -11,7 +11,6 @@
  * @info (none)
 **/
 $(document).ready(function(){
-	var tag_asin_template = "__AMAZON_ASIN__";
 	var tag_template_id = "amazon_template_book";
 	var targets = $(".amazon_img");
 
@@ -31,12 +30,12 @@ $(document).ready(function(){
 		var insert = $(target).next();
 		var setimg = $(insert).find("img:first").get(0);
 		var imgurl = $(setimg).attr("src");
-		imgurl.replace(tag_asin_template, asincode);
+		imgurl.string.replace(/__AMAZON_ASIN__/g, asincode);
 		$(setimg).attr("src", imgurl);
 		$(setimg).attr("alt", asincode + "." + "000");
 		var setlink = $(insert).find("a:first").get(0);
 		var linkurl = $(setlink).attr("href");
-		linkurl.replace(tag_asin_template, asincode);
+		linkurl.string.replace(/__AMAZON_ASIN__/g, asincode);
 		$(setlink).attr("href", linkurl);
 	}
 });
