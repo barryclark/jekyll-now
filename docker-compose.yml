@@ -4,7 +4,7 @@ services:
   jekyll:
     ports:
     - "4000:4000"
-    image: starefossen/github-pages
+    image: richardjennings/github-pages-alpine
     volumes:
 #    - "~/Source/Repos/SSpeights.github.io:/usr/src/app"
     - ".:/usr/src/app"
