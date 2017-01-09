@@ -46,9 +46,15 @@ You must configure following atttributes.
 - subsitename ... sub site name
 - amazon_asid ... your amazon (JP) affiriate ID
 
-### Step 3) Publish your first blog post
+### Step 4) Update about.md wiz your profile.
 
-Edit `/_posts/2014-3-3-Hello-World.md` to publish your first blog post. This [Markdown Cheatsheet](http://www.jekyllnow.com/Markdown-Style-Guide/) might come in handy.
+Edit `/amout.md` to publish your profile, that is linked in header nav-tag "About". This [Markdown Cheatsheet](http://www.jekyllnow.com/Markdown-Style-Guide/) might come in handy.
+
+### Step 5) Publish your first blog post
+
+Edit `/_posts/YYYY-MM-DD-Hello-World.md` to publish your first blog post. This [Markdown Cheatsheet](http://www.jekyllnow.com/Markdown-Style-Guide/) might come in handy.
+
+#### `/_posts` directory naming rule hints
 
 > You can add additional posts in the browser on GitHub.com too! Just hit the + icon in `/_posts/` to create new content. Just make sure to include the [front-matter](http://jekyllrb.com/docs/frontmatter/) block at the top of each new blog post and make sure the post's filename is in this format: year-month-day-title.md
 
