@@ -30,13 +30,14 @@ $(document).ready(function(){
 		var insert = $(target).next();
 		var setimg = $(insert).find("img:first").get(0);
 		var imgurl = $(setimg).attr("src");
-		String(imgurl).replace("__AMAZON_ASIN__", asincode);
-		$(setimg).attr("src", imgurl);
-		$(setimg).attr("alt", asincode + "." + "000");
+		var imgurl_sub = String(imgurl).split("__AMAZON_ASIN__");
+		$(setimg).attr("src", imgurl_sub[0] + asincode + imgurl_sub[1]);
+		$(setimg).attr("alt", asincode + "." + Math.random());
+
 		var setlink = $(insert).find("a:first").get(0);
 		var linkurl = $(setlink).attr("href");
-		String(linkurl).replace("__AMAZON_ASIN__", asincode);
-		$(setlink).attr("href", linkurl);
+		var linkurl_sub = String(linkurl).split("__AMAZON_ASIN__");
+		$(setlink).attr("href", linkurl_sub[0] + asincode + linkurl_sub[1]);
 		$(insert).css("display", "initial");
 	}
 });
