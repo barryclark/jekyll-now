@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1543,199766873,2017-01-10 16:05:05,2017-01-10 09:07:56,A #Visso serve con urgenza cibo per cani,,,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Sisma Ottobre""]",,,"{""cosa"": ""Cibo per cani"", ""data"": ""10/01/2017"", ""descrizione"": ""A Visso necessito urgentemente di crocchette per 5 cani di taglia medio/ grande e croccantinii per 2 gatti. Aiutataci"", ""email"": ""silviavagni@vodafone.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3396442275""}","<pre><yamldata>tel: '3396442275'
+email: silviavagni@vodafone.it
+cosa: 'Cibo per cani'
+descrizione: 'A Visso necessito urgentemente di crocchette per 5 cani di taglia medio/ grande e croccantinii per 2 gatti. Aiutataci'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 10/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1542,199690137,2017-01-09 23:24:02,2017-01-09 23:18:23,Una casetta per Aurora,,,"[""Accettato"", ""Bollettino"", ""Facebook"", ""Raccolte Fondi"", ""Sisma Ottobre""]",,,"{""bic"": ""BNLIITR1CCZ"", ""causale"": """", ""chi"": ""Una casetta per Aurora"", ""data"": ""09/01/2017"", ""descrizione"": ""Conoscere Aurora \u00e8 una esperienza unica, difficile da raccontare. Aurora \u00e8 un esserino di circa un metro, con patologie di varia natura. Ha 14 anni ed \u00e8 dolcissima. Viveva a Colleposta, una delle frazioni di Accumolii distrutte dal terremoto di Agosto. Ora vive a Castiglione di Montereale, a 1200 m di altitudine, in una roulotte in mezzo alla neve. Fa freddo, freddissimo. E Aurora ha bisogno di una casetta. Aiutaci a regalare una casetta ad Aurora. Fai una donazione e condividi questo progetto fra i tuoi contatti. Un piccolo contributo da ciascuno di noi, un grande risultato per Aurora e la sua famiglia."", ""email"": ""laviadelsaleonlus@gmail.com"", ""iban"": ""IT47O0100503240000000002838"", ""intestazione"": ""La Via del Sale Onlus"", ""link"": ""https://www.facebook.com/laviadelsaleonlus/videos/538244496384311/"", ""postale"": """"}","<pre><yamldata>chi: 'Una casetta per Aurora'
 descrizione: 'Conoscere Aurora è una esperienza unica, difficile da raccontare. Aurora è un esserino di circa un metro, con patologie di varia natura. Ha 14 anni ed è dolcissima. Viveva a Colleposta, una delle frazioni di Accumolii distrutte dal terremoto di Agosto. Ora vive a Castiglione di Montereale, a 1200 m di altitudine, in una roulotte in mezzo alla neve. Fa freddo, freddissimo. E Aurora ha bisogno di una casetta. Aiutaci a regalare una casetta ad Aurora. Fai una donazione e condividi questo progetto fra i tuoi contatti. Un piccolo contributo da ciascuno di noi, un grande risultato per Aurora e la sua famiglia.'
 intestazione: 'La Via del Sale Onlus'
