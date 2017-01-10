@@ -3,6 +3,8 @@ layout: post
 title: Jak psát PHP? (2/3) - Závislosti + verzovací systémy + debugging
 ---
 
+Druhý díl přehledu o nástrojích pro jazyk PHP. Mrkneme na composer, git a spoustu dalšího. Minuli jste první díl? Najdete ho [tady](http://jakpsatphp.cz/Jak-psat-php-Zdroje-znalosti+vyvojove-prostredi/). 
+
 # Manažer pro závislosti
 ## Composer
 [Composer](https://getcomposer.org/) je software řešící závislosti v kódu. V podstatě se stará o to, aby všechny balíčky cizího kódu (na kterých vlastním kódem závisíte, proto závislosti) byly stažené, ve správné verzi a nebily se mezi sebou. Composer je sám stahuje, komtroluje nové verze a je umí i bezpečně odstraňovat. Za zmínku stojí, že pomocí něj můžou ostatní používat jednoduše kód váš. 
