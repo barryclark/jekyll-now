@@ -88,6 +88,7 @@ jQuery.fn.loadRepositories = function(username) {
                        canvas.height = div.clientHeight;
                        var ctx = canvas.getContext("2d");
                        ctx.strokeStyle = "#E0E1E2";
+                       ctx.lineWidth = 2;
                        ctx.beginPath();
                        ctx.moveTo(0,0);
                        ctx.lineTo(canvas.width,canvas.height);
