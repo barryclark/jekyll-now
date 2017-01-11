@@ -7,11 +7,11 @@ categories: [java, padroes, desing, comportamental]
 
 Esse post será o início de uma série o qual vou tentar explicar os padrões de projeto utilizando as novidades do Java 8, se visitou esse assunto espero que já conheça os conceitos de orientação a objetos, a linguagem java e [Padrões de Projeto](https://pt.wikipedia.org/wiki/Padr%C3%A3o_de_projeto_de_software).
 
-> "O conceito de estratégia, em grego strateegia, em latim strategi, em francês stratégie..." 
+> "O conceito de estratégia, em grego strateegia, em latim strategi, em francês stratégie..."
+>
+> -- _Capitão Nascimento (Filme Tropa de Elite)._
 
-> - Capitão Nascimento (Filme Tropa de Elite).
-
-## Strategy
+# Strategy
 
 É um padrão comportamental utilizado quando uma classe possui muitos algoritmos que tem o mesmo propósito e que podem ser alternados na lógica da aplicação. A execução do algoritmo fica sob responsabilidade de uma instância que compõe a classe principal.
 
@@ -27,11 +27,11 @@ Use o padrão Strategy quando:
 
 * um algoritmo usa dados dos quais os clientes não deveriam ter conhecimento. Use o padrão Strategy para evitar a exposição das estruturas de dados complexas, específicas do algoritmo;
 
-* uma classe define muitos comportamentos, e estes aparecem em suas operações como múltiplos comandos condicionais da linguagem. Em vez de usar muitos comandos condicionais, mova os ramos condicionais relacionados para a sua própria classe Strategy. 
+* uma classe define muitos comportamentos, e estes aparecem em suas operações como múltiplos comandos condicionais da linguagem. Em vez de usar muitos comandos condicionais, mova os ramos condicionais relacionados para a sua própria classe Strategy.
 
 ## Implementação
 
-Para exemplo criei uma classe AgenteSecreto que irá consumir os algoritmos de estratégia, possui um método que executa a ação (no caso combater) e outro método que muda a estratégia em tempo de execução.
+Para exemplo criei uma classe AgenteSecreto que irá consumir os algoritmos de estratégia, possui um método que executa a ação (no caso combater) e outro método que muda a estratégia em tempo de execução:
 
 ```java
 public class AgenteSecreto {
@@ -97,11 +97,11 @@ LOGGER.info("Java 8 Lambdas");
 LOGGER.info("Inimigos localizados dentro do forte!");
 agente = new AgenteSecreto(() -> LOGGER.info("Segurar escudo e invadir."));
 agente.combater();
-        
+
 LOGGER.info("Inimigos efetuando disparos!");
 agente.mudarEstrategia(() -> LOGGER.info("Armar torreta, jogar granadas de efeito e plantar minas."));
 agente.combater();
-        
+
 LOGGER.info("Equipe sendo alvejada!");
 agente.mudarEstrategia(()-> LOGGER.info("Esperar feridos e ajudar."));
 agente.combater();
@@ -118,11 +118,11 @@ LOGGER.info("Java 8 Method References");
 LOGGER.info("Inimigos localizados dentro do forte!");
 agente.mudarEstrategia(EstrategiaLinhaDeFrente::combaterComoLinhaDeFrente);
 agente.combater();
-        
+
 LOGGER.info("Inimigos efetuando disparos!");
 agente.mudarEstrategia(EstrategiaEngenharia::combaterComoEngenheiro);
 agente.combater();
-        
+
 LOGGER.info("Equipe sendo alvejada!");
 agente.mudarEstrategia(EstrategiaSuporte::combaterComoSuporte);
 agente.combater();
@@ -176,6 +176,7 @@ Já as desvantagens:
 Na versão 8 a linguagem Java trouxe ótimas novidades que ajudam bastante no desenvolvimento de soluções de código mais simples e legíveis. O suporte a programação funcional trás um novo paradigma para os desenvolvedores que utilizam a linguagem, cabe a nós avaliar e escolher a melhor forma de aproveitá-la. Um forte abraço e até a próxima.
 
 ### Código no Github
+
 [https://github.com/ivanqueiroz/padroes-projeto-java](https://github.com/ivanqueiroz/padroes-projeto-java)
 
 ## Créditos

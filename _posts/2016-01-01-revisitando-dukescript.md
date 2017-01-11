@@ -20,7 +20,7 @@ A algum tempo fiz um [post]({% post_url 2015-05-15-dukescript-html5-e-java-junto
 ## Pontos negativos
 
 * **plugin somente para uma IDE** - apesar de eu preferir o Netbeans como IDE, acredito que é um ponto fraco a falta de suporte para as outras;
- * **pouco material de aprendizagem** - á uma série de posts no blog oficial, mas muito superficiais ainda, acredito que seja por ser uma tecnologia muito nova;
+* **pouco material de aprendizagem** - á uma série de posts no blog oficial, mas muito superficiais ainda, acredito que seja por ser uma tecnologia muito nova;
 * **tecnologia muito nova** - por ser uma tecnologia muito nova não recomendaria para projetos médios para grandes ou grandes;
 * **dependência do plugin Netbeans** - caso não queira utilizar o plugin do Netbeans a configuração do projeto se torna muito onerosa.
 
