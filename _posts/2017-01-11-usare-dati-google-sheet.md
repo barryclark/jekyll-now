@@ -15,6 +15,7 @@ Per chi avesse più difficoltà a fare questo, un modo semplicissimo per riusare
 Questa la procedura:
 
   - Aprite un nuovo foglio Google Sheet
+  - IMPORTARE [questo](https://gist.github.com/paulgambill/cacd19da95a1421d3164) script nello script editor del foglio.
   - Nella cella A1 scrivete la formula =ImportJSON("https://raw.githubusercontent.com/emergenzeHack/terremotocentro/master/_data/issuesjson.json")
   - Attendere qualche secondo
 
