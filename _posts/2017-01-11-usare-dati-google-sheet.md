@@ -4,11 +4,13 @@ title: Usare i dati di TerremotoCentroItalia con Google Sheet
 categories: blog
 ---
 
-Come potete leggere qui il nostro progetto consente libero riuso delle informazioni registrate in questo sito. Il che significa che i nostri dati sono aperti e riusabili purchè si citi la fonte dalla quale provengono.
+Come potete leggere [qui](http://www.terremotocentroitalia.info/opendata/) il nostro progetto consente libero riuso delle informazioni registrate in questo sito. Il che significa che i nostri dati sono aperti e riusabili purchè si citi la fonte dalla quale provengono.
 
 Questo significa che non solo potete condivdere le informazioni registrate su TerremotoCentroItalia o segnalarle, ma che tecnicamente è possibile usare i nostri dati per analisi, statistiche, altri servizi di informazione etc...
 
-Un modo semplicissimo per riusare i dati delle segnalazioni presenti sul nostro portale è quello di usare un foglio Google Sheet.
+Chi volesse cimentarsi nell'utilizzo dei dati grezzi può trovare i link ai nostri dati [qui](http://www.terremotocentroitalia.info/opendata/).
+
+Per chi avesse più difficoltà a fare questo, un modo semplicissimo per riusare i dati delle segnalazioni presenti sul nostro portale è quello di usare un foglio Google Sheet per importare tutti i nostri dati e lavorarci direttamente da Google Sheet (praticamente la versione Excel di Google).
 
 Questa la procedura:
 
