@@ -1,4 +1,14 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1544,200121005,2017-01-11 18:29:00,2017-01-11 15:20:16,A #Camerino nasce il comitato Officina2630,,,"[""Accettato"", ""Bollettino"", ""Contatti"", ""Form"", ""Notizie Utili"", ""Sisma Ottobre""]",,,"{""data"": ""11/01/2017"", ""descrizione"": ""Ciao a tutti. Faccio parte del Comitato Officina2630 nato a Camerino (Mc) all'indomani del sisma del 26 ottobre 2016. Vi mando questo messaggio per segnalare l'esistenza del comitato stesso e la relativa pagina web : www.officina2630.it. Ci stiamo attivando per raccogliere progetti fattibili e concreti e per informare la cittadinanza rispetto a normative vigenti e problematiche quotidiane, e per scongiurare lo spopolamento delle nostre zone montane."", ""email"": ""monica.pigotti@live.it"", ""indirizzo"": """", ""lat"": """", ""link"": ""http://www.officina2630.it"", ""lon"": """", ""nome"": ""Monica Pigotti"", ""tel"": ""3381319476""}","<pre><yamldata>nome: 'Monica Pigotti'
+tel: '3381319476'
+email: monica.pigotti@live.it
+descrizione: 'Ciao a tutti. Faccio parte del Comitato Officina2630 nato a Camerino (Mc) all''indomani del sisma del 26 ottobre 2016. Vi mando questo messaggio per segnalare l''esistenza del comitato stesso e la relativa pagina web : www.officina2630.it. Ci stiamo attivando per raccogliere progetti fattibili e concreti e per informare la cittadinanza rispetto a normative vigenti e problematiche quotidiane, e per scongiurare lo spopolamento delle nostre zone montane.'
+indirizzo: ''
+lat: ''
+lon: ''
+link: 'http://www.officina2630.it'
+data: 11/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1543,199766873,2017-01-10 16:05:05,2017-01-10 09:07:56,A #Visso serve con urgenza cibo per cani,,,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Sisma Ottobre""]",,,"{""cosa"": ""Cibo per cani"", ""data"": ""10/01/2017"", ""descrizione"": ""A Visso necessito urgentemente di crocchette per 5 cani di taglia medio/ grande e croccantinii per 2 gatti. Aiutataci"", ""email"": ""silviavagni@vodafone.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3396442275""}","<pre><yamldata>tel: '3396442275'
 email: silviavagni@vodafone.it
 cosa: 'Cibo per cani'
@@ -4667,12 +4677,6 @@ lat: '44.8433298'
 lon: '11.609086'
 link: ''
 immagine: ''
-data: 30/10/2016
-</yamldata></pre>
-",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/890,186123419,2016-10-30 09:03:11,2016-10-30 08:19:37,VIABILITA' ROMA,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili"", ""Sisma Ottobre""]",,,"{""data"": ""30/10/2016"", ""descrizione"": ""Tor Pignattara CHIUSA Via Gabrio Serbelloni tra Via Ciro da Urbino e Via Muzio Oddi per verifica stabilit\u00e0 a seguito terremoto."", ""link"": """", ""titolo"": ""VIABILITA' ROMA""}","<pre><yamldata>titolo: 'VIABILITA'' ROMA'
-descrizione: 'Tor Pignattara CHIUSA Via Gabrio Serbelloni tra Via Ciro da Urbino e Via Muzio Oddi per verifica stabilità a seguito terremoto.'
-link: ''
 data: 30/10/2016
 </yamldata></pre>
 ",open
