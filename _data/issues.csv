@@ -1,4 +1,9 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1545,200133944,2017-01-11 18:30:54,2017-01-11 16:04:37,"Verifiche di agibilità, Protezione Civile e Commissario dicono due cose diverse",,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili"", ""Pubblicare su FB"", ""Sisma Ottobre""]",,,"{""data"": ""11/01/2017"", ""descrizione"": ""La Protezione Civile ha pubblicato un aggiornamento delle \u201cDomande e Risposte \u201c a servizio dei cittadini sulle verifiche di agibilit\u00e0 degli immobili che contraddice l\u2019ordinanza del Commissario alla ricostruzione, Vasco Errani, emanata il 19 dicembre scorso, ma non ancora pubblicata in Gazzetta Ufficiale. La questione, tutt\u2019altro che irrilevante, riguarda i termini entro i quali i proprietari degli immobili devono procedere a far compilare dai tecnici da loro incaricati la scheda di valutazione Aedes, necessaria per ottenere i contributi per la ricostruzione. La nuova procedura per le verifiche di agibilit\u00e0 stabilita dalla Protezione Civile prevede che i tecnici coordinati dalla Dicomac eseguano da fine dicembre solo le verifiche speditive Fast, lasciando poi ai proprietari l\u2019onere di approfondirne gli esiti, per avere i rimborsi, con le Aedes redatte dai tecnici abilitati. Per il Commissario ha stabilito un termine di 30 giorni entro il quale, ricevuta la notifica dell\u2019ordinanza dal Comune, i tecnici incaricati dai privati devono consegnare l\u2019Aedes alla Regione. Per la Protezione Civile i 30 giorni sono invece il termine entro il quale i proprietari devono attribuire l\u2019incarico ai professionisti di redigere l\u2019Aedes."", ""link"": ""https://sibilla-online.com/2017/01/11/agibilita-fast-aedes-commissario-e-protezione-civile-parlano-lingue-diverse/"", ""titolo"": ""Verifiche di agibilit\u00e0, Protezione Civile e Commissario dicono due cose diverse""}","<pre><yamldata>titolo: 'Verifiche di agibilità, Protezione Civile e Commissario dicono due cose diverse'
+descrizione: 'La Protezione Civile ha pubblicato un aggiornamento delle “Domande e Risposte “ a servizio dei cittadini sulle verifiche di agibilità degli immobili che contraddice l’ordinanza del Commissario alla ricostruzione, Vasco Errani, emanata il 19 dicembre scorso, ma non ancora pubblicata in Gazzetta Ufficiale. La questione, tutt’altro che irrilevante, riguarda i termini entro i quali i proprietari degli immobili devono procedere a far compilare dai tecnici da loro incaricati la scheda di valutazione Aedes, necessaria per ottenere i contributi per la ricostruzione. La nuova procedura per le verifiche di agibilità stabilita dalla Protezione Civile prevede che i tecnici coordinati dalla Dicomac eseguano da fine dicembre solo le verifiche speditive Fast, lasciando poi ai proprietari l’onere di approfondirne gli esiti, per avere i rimborsi, con le Aedes redatte dai tecnici abilitati. Per il Commissario ha stabilito un termine di 30 giorni entro il quale, ricevuta la notifica dell’ordinanza dal Comune, i tecnici incaricati dai privati devono consegnare l’Aedes alla Regione. Per la Protezione Civile i 30 giorni sono invece il termine entro il quale i proprietari devono attribuire l’incarico ai professionisti di redigere l’Aedes.'
+link: 'https://sibilla-online.com/2017/01/11/agibilita-fast-aedes-commissario-e-protezione-civile-parlano-lingue-diverse/'
+data: 11/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1544,200121005,2017-01-11 18:29:00,2017-01-11 15:20:16,A #Camerino nasce il comitato Officina2630,,,"[""Accettato"", ""Bollettino"", ""Contatti"", ""Form"", ""Notizie Utili"", ""Sisma Ottobre""]",,,"{""data"": ""11/01/2017"", ""descrizione"": ""Ciao a tutti. Faccio parte del Comitato Officina2630 nato a Camerino (Mc) all'indomani del sisma del 26 ottobre 2016. Vi mando questo messaggio per segnalare l'esistenza del comitato stesso e la relativa pagina web : www.officina2630.it. Ci stiamo attivando per raccogliere progetti fattibili e concreti e per informare la cittadinanza rispetto a normative vigenti e problematiche quotidiane, e per scongiurare lo spopolamento delle nostre zone montane."", ""email"": ""monica.pigotti@live.it"", ""indirizzo"": """", ""lat"": """", ""link"": ""http://www.officina2630.it"", ""lon"": """", ""nome"": ""Monica Pigotti"", ""tel"": ""3381319476""}","<pre><yamldata>nome: 'Monica Pigotti'
 tel: '3381319476'
 email: monica.pigotti@live.it
@@ -8698,18 +8703,6 @@ immagine: ''
 data: 15/09/2016
 </yamldata></pre>
 ",closed
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/367,177122374,2016-09-23 22:18:30,2016-09-15 08:52:01,Materiale di Prima necessità,45.13642,7.15089,"[""Accettato"", ""Donazioni"", ""Form""]",,,"{""cosa"": ""Materiale di Prima necessit\u00e0"", ""data"": ""15/09/2016"", ""descrizione"": ""- acqua minerale; - cibo a lunga conservazione; - coperte e vestiti; - pannolini e materiale per bambini; - Materiale per igiene intima."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Osteria La Credenza, Via Walter Fontan, 16, 10053 Bussoleno TO"", ""lat"": 45.13642, ""link"": """", ""lon"": 7.15089, ""tel"": ""Andrea 3287535300""}","<pre><yamldata>tel: 'Andrea 3287535300'
-email: ''
-cosa: 'Materiale di Prima necessità'
-descrizione: '- acqua minerale; - cibo a lunga conservazione; - coperte e vestiti; - pannolini e materiale per bambini; - Materiale per igiene intima.'
-indirizzo: 'Osteria La Credenza, Via Walter Fontan, 16, 10053 Bussoleno TO'
-lat: 45.13642
-lon: 7.15089
-link: ''
-immagine: ''
-data: 15/09/2016
-</yamldata></pre>
-",closed
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/366,177122040,2016-09-15 08:50:24,2016-09-15 08:50:01,Sala Stampa Nazionale Milano,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Sala Stampa Nazionale Milano"", ""data"": ""15/09/2016"", ""descrizione"": ""- acqua minerale; - cibo a lunga conservazione; - coperte e vestiti; - pannolini e materiale per bambini; - Materiale per igiene intima; - pannoloni per anziani. Sala Stampa Nazionale via cordusio 4 Milano - 02/866.860 \u2013 867.824 \u2013 875.557 \u2013 875.888"", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""https://www.facebook.com/Sala-Stampa-Nazionale-Milano-634022066651287/?fref=nf"", ""postale"": """"}","<pre><yamldata>chi: 'Sala Stampa Nazionale Milano'
 descrizione: '- acqua minerale; - cibo a lunga conservazione; - coperte e vestiti; - pannolini e materiale per bambini; - Materiale per igiene intima; - pannoloni per anziani. Sala Stampa Nazionale via cordusio 4 Milano - 02/866.860 – 867.824 – 875.557 – 875.888'
 intestazione: ''
@@ -10289,6 +10282,18 @@ bic: ''
 postale: ''
 causale: 'Terremoto centro Italia'
 link: ''
+email: ''
+data: 13/09/2016
+</yamldata></pre>
+",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/214,176774502,2016-09-13 23:26:20,2016-09-13 23:14:17,Regione Umbria,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Regione Umbria"", ""data"": ""13/09/2016"", ""descrizione"": ""Donazioni anche online sul sito della Regione - https://pagoumbria.regione.umbria.it/pagoumbria/addon/bollettino_bianco/edit.jsf?cdTrbEnte=TERREMOTO2016&idEnte=33ED3E1B55346CBB0001"", ""email"": """", ""iban"": ""IT32R 02008 03033 000104429137"", ""intestazione"": ""Regione Umbria_Sisma agosto 2016"", ""link"": ""http://www.presidente.regione.umbria.it/news/-/asset_publisher/epXtRtYVn9JP/content/sisma-umbria-aperto-conto-corrente-bancario-per-raccolta-fondi"", ""postale"": """"}","<pre><yamldata>chi: 'Regione Umbria'
+descrizione: 'Donazioni anche online sul sito della Regione - https://pagoumbria.regione.umbria.it/pagoumbria/addon/bollettino_bianco/edit.jsf?cdTrbEnte=TERREMOTO2016&idEnte=33ED3E1B55346CBB0001'
+intestazione: 'Regione Umbria_Sisma agosto 2016'
+iban: 'IT32R 02008 03033 000104429137'
+bic: ''
+postale: ''
+causale: ''
+link: 'http://www.presidente.regione.umbria.it/news/-/asset_publisher/epXtRtYVn9JP/content/sisma-umbria-aperto-conto-corrente-bancario-per-raccolta-fondi'
 email: ''
 data: 13/09/2016
 </yamldata></pre>
