@@ -1,0 +1,32 @@
+http://salsacycles.com/images/template_images/story_loader.gif
+body {
+    background: #FFF url("http://i.imgur.com/KheAuef.png") top left repeat-x;
+    font-family:"Brush Script MT", cursive;
+}/*
+h1 {
+    font-size: 2em;
+    margin-bottom: 0.2em;
+    padding-bottom: 0;
+}
+p {
+    font-size: 1.5em;
+    margin-top: 0;
+    padding-top: 0;
+}*/
+#page {
+    display: none;
+}
+#loading {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    background-color: #FFF;
+    background-image: url("../img/sun.gif");
+    /*background-size: 1200px 40px;*/
+    background-repeat: no-repeat;
+    background-position: center;
+}
