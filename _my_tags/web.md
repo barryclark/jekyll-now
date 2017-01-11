@@ -1,4 +1,0 @@
----
-slug: web
-name: Web
----
