@@ -27,13 +27,13 @@ That's the gist of it. Make your path across the board, collecting keys along th
 
 ![Race to the Treasure! Pieces](/images/raceforthetreasure/gmc2-2.jpg){: .float-right}Race to the Treasure! is part of Peaceable Kingdom's "Green Commitment." That means that it's printed with soy-based inks, utilizes corn-based plastics, and is made with F[orest Stewardship Council](https://us.fsc.org/en-us) certified paper and wood. The game doesn't even come shrinkwrapped, so there's no plastic waste. Are the components any less nice, or durable? Nope.
 
-Everything in Race for the Treasure! feels sturdy, is well made, and feels like it'll last a while. Peaceable Kingdom isn't a company to sacrifice quality just to be green.
+Everything in Race to the Treasure! feels sturdy, is well made, and feels like it'll last a while. Peaceable Kingdom isn't a company to sacrifice quality just to be green.
 
 <h2>Perspective</h2>
 
-Race for the Treasure! has quickly become on of our favorite Peaceable Kingdom titles in a very short time. It hasn't bumped Cauldron Quest, but it's sitting in a solid 2nd place.
+Race to the Treasure! has quickly become on of our favorite Peaceable Kingdom titles in a very short time. It hasn't bumped Cauldron Quest, but it's sitting in a solid 2nd place.
 
-Even though it utilizes many common features to other PK games (A patch to track the "bad guy's" path, items to slow down the game's countdown, etc...) Race for the Treasure! still feels exciting and fresh because of the open nature of each player's turn. Players choose how to play the path tiles to best get where they need to go. It's not always the best, or most efficient, way, but the game can still be completed by the players anyway.
+Even though it utilizes many common features to other PK games (A patch to track the "bad guy's" path, items to slow down the game's countdown, etc...) Race to the Treasure! still feels exciting and fresh because of the open nature of each player's turn. Players choose how to play the path tiles to best get where they need to go. It's not always the best, or most efficient, way, but the game can still be completed by the players anyway.
 
 As for the Ogre? We've seen this mechanic time and time again with games like The Great Cheese Chase, Stack Up!, and Buzz, but it doesn't feel overdone. The Ogre isn't very aggressive, and players will end up winning this game more often than not, especially if they're able to grab the Ogre Snack. In my eyes this is a positive, giving younger players a sense of accomplishment but with a little tension as that Ogre gets closer to the End.
 
