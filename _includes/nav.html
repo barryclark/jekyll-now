@@ -1,0 +1,19 @@
+<h1>{{ site.title }}</h1>
+<ul id='links'>
+  {% for post in site.posts %}
+    {% if post.category == null %}
+    <li><a href='#{{ post.url }}'>{{ post.title }}</a></li>
+    {% endif %}
+  {% endfor %}
+  {% for category in site.categories %}
+  <li><h2>{{ category | first }}</h2>
+    <ul>
+    {% for posts in category %}
+      {% for post in posts %}        
+        <li class='{{ post.type }}'><a href='#{{ post.url }}'>{{ post.title }}</a></li>
+      {% endfor %}
+    {% endfor %}
+    </ul>
+  </li>
+{% endfor %}
+</ul>

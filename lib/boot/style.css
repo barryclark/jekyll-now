@@ -1,0 +1,240 @@
+/* GENERAL */
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: #fff;
+}
+
+body,
+input,
+textarea {
+  color: #191919;
+  font: 14px/140% 'Open Sans', Arial, sans-serif;
+}
+
+a {
+  color: #119bdf;
+  text-decoration: none;
+}
+a:hover {
+  color: #29aeef;
+  text-decoration: underline;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+code {
+  margin: 0 0 20px;
+}
+
+code {
+  font-family: 'Monaco', monospace, sans-serif;
+}
+
+/* SIDEBAR */
+#sidebar {
+  background: #191919;
+  color: #fff;
+  float: left;  
+  height: 100%;
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  width: 240px;
+}
+
+#sidebar h1 {
+  background: #111;
+  font-size: 14px;
+  margin: 0;
+  padding: 20px;
+  text-transform: uppercase;
+}
+
+#sidebar h2 {
+  color: #888;
+  font-size: 14px;
+  margin: 0;
+}
+
+#sidebar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#sidebar ul#links {
+  padding: 20px;
+}
+
+#sidebar ul ul {
+  padding-left: 20px;
+}
+
+#sidebar ul li a {
+  color: #fff;
+  display: block;
+  padding: 0 0 15px;
+}
+#sidebar ul li a:active,
+#sidebar ul li a.active {
+  text-decoration: underline;
+}
+
+#sidebar input {
+  background: #111;
+  border: 0;
+  border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.2);
+  color: #ddd;
+  margin-bottom: 20px;
+  padding: 5px 10px;
+}
+#sidebar input:active,
+#sidebar input:focus {
+  border-color: #ccc;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+/* References */
+#content {
+  padding: 20px;
+  padding-left: 260px;
+  max-width: 700px;
+}
+
+#content .control {
+  cursor: pointer;
+  font-size: 12px;
+  margin-left: 15px;
+}
+
+#content article {
+  clear: both;
+  margin: 15px 0;
+}
+
+#content article > a {
+  background: #333;
+  border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  cursor: pointer;
+  display: block;
+  padding: 15px;
+}
+#content article > a:hover {
+  background: #222;
+  text-decoration: none;
+}
+
+#content a h2 {
+  color: #fff;
+  font-size: 18px;
+  font-weight: normal;
+  margin: 0;
+}
+
+#content a h2 code {
+  float: right;
+  font-size: 14px;
+}
+
+#content a h2 code b {
+  border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  color: #fff;
+  font-weight: normal;
+  padding: 3px 6px;
+}
+
+/* Default */
+#content article {
+  border-color: #e2e7ea;
+}
+
+#content article a h2 code {
+  color: #657e8b;
+}
+
+#content article a h2 code b {
+  background: #657e8b;
+  text-transform: uppercase;
+}
+
+/* GET */
+#content article.GET a h2 code {
+  color: #119bdf;
+}
+
+#content article.GET a h2 code b {
+  background: #119bdf;
+}
+
+/* POST */
+#content article.POST a h2 code {
+  color: #52ce0e;
+}
+
+#content article.POST a h2 code b {
+  background: #52ce0e;
+}
+
+/* PUT */
+#content article.PUT a h2 code {
+  color: #e08f10;
+}
+
+#content article.PUT a h2 code b {
+  background: #e08f10;
+}
+
+/* DELETE */
+#content article.DELETE a h2 code {
+  color: #e02a10;
+}
+
+#content article.DELETE a h2 code b {
+  background: #e02a10;
+}
+
+/* Reference's body */
+#content h3 {
+}
+
+#content .body {
+  border-top: 1px solid #eef1f2;
+  display: block;
+  padding: 15px 15px 0;
+}
+
+#content .body code {
+  border: 1px solid #e2e7ea;
+  background: #eef1f2;
+  border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  color: #546974;
+  padding: 0 1px;
+}
+
+#content .body p > code {
+  display: block;
+  padding: 15px;
+  white-space: pre;
+}

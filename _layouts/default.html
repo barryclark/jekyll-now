@@ -1,28 +1,17 @@
 <!DOCTYPE html>
-<html>
-
-  {% include head.html %}
-
- <!--  <body data-spy="scroll" data-target="#myAffix"> -->
-  <body>
-
-    {% include header.html %}
-
-    <div id="main" class="container main">
-      {{ content }}
-    </div>
-
-    
-    <div id="top" data-toggle="tooltip" data-placement="left" title="back to top">
-      <a href="javascript:;">
-        <div class="arrow"></div>
-        <div class="stick"></div>
-      </a>
-    </div>
-
-    {% include footer.html %}
-
-    {% include newpost.html %}
+<head>
+  <title>{{ site.title }}</title>
+  <meta charset='utf-8'/>
+  <meta name='description' content='Documentation website'/>
+  <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1'/>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'/>
+  <link href='assets.css' rel='stylesheet' type='text/css'>
+</head>
+<body>  
+  {{ content }}
   
-  </body>
+  <!--[if lt IE 9]><script src='http://html5shim.googlecode.com/svn/trunk/html5.js'></script><![endif]-->
+  <script src='assets.js' type='text/javascript'></script>
+  <script>require('boot');</script>
+</body>
 </html>
