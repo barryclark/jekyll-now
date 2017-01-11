@@ -10,7 +10,7 @@ Questo significa che non solo potete condivdere le informazioni registrate su Te
 
 Chi volesse cimentarsi nell'utilizzo dei dati grezzi può trovare i link ai nostri dati [qui](http://www.terremotocentroitalia.info/opendata/).
 
-Per chi avesse più difficoltà a fare questo, un modo semplicissimo per riusare i dati delle segnalazioni presenti sul nostro portale è quello di usare un foglio Google Sheet per importare tutti i nostri dati e lavorarci direttamente da Google Sheet (praticamente la versione Excel di Google).
+Per chi avesse più difficoltà a fare questo, un modo semplicissimo per riusare i dati delle segnalazioni presenti sul nostro portale è quello di usare un foglio [Google Sheet](https://www.google.it/intl/it/sheets/about/) per importare tutti i nostri dati e lavorarci direttamente da Google Sheet (praticamente la versione Excel di Google).
 
 Questa la procedura:
 
