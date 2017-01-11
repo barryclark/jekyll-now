@@ -21,6 +21,7 @@ Questa la procedura:
 Fatto. Questo comando non fa altro che importare in modo dinamico i dati presenti nel nostro file delle segnalazioni all'interno del google sheet, formattando le segnalazioni in colonne e rendendole quindi facilmente visibili ed elaborabili se volete fare ulteriori analisi.
 
 La prima riga rappresenta l'intestazione dei dati, in particolare i record principali che potrebbero esservi utili sono:
+
   - Issue Body: corpo della segnalazione. All'interno vi sono i metadati della segnalazione taggati con appositi campi.
   - Issue Created At: data di creazione della segnalazione
   - Issue Data Cosa: oggetto della segnalazione
