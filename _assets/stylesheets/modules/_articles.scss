@@ -1,0 +1,208 @@
+// =============================================================================
+// Articles
+// =============================================================================
+
+.article {
+  display: block;
+  margin: 100px 0;
+}
+
+.article-list {
+  display: block;
+  padding: 0;
+  margin: 50px 0;
+  list-style: none;
+  li {
+    position: relative;
+    display: block;
+    padding: 50px 0;
+    border-bottom: 1px solid $base-border-color;
+    &:last-child {
+      border-bottom: 0;
+    }
+    &.article-pagination {
+      display: block;
+      height: 93px;
+      padding: 15px 0 50px;
+      a {
+        display: inline-block;
+        font-size: 11px;
+        font-weight: 600;
+        letter-spacing: .1em;
+        color: $gray;
+        text-transform: uppercase;
+        transition: color $base-transition-speed linear;
+        .icon {
+          display: inline-block;
+          margin-top: -2px;
+          font-size: 20px;
+          vertical-align: middle;
+        }
+        &:hover {
+          color: $article-paginator-color-hover;
+        }
+      }
+    }
+  }
+}
+
+.article-list-item {
+  h5 {
+    position: relative;
+    display: block;
+    padding-right: 25px;
+    color: $article-header-title-color;
+    border-bottom: 1px solid transparent;
+    .icon {
+      display: inline-block;
+      margin-top: -2px;
+      vertical-align: middle;
+      opacity: 0;
+      transition: opacity $base-transition-speed linear;
+    }
+    &:hover .icon {
+      opacity: 1;
+    }
+  }
+  a {
+    text-decoration: none;
+  }
+  p {
+    display: block;
+    margin: 12px 0 10px;
+    font-size: 15px;
+    color: $article-header-description-color;
+  }
+}
+
+.article-list-footer {
+  display: block;
+  span,
+  a {
+    display: inline-block;
+    font-size: 12px;
+    color: $article-footer-color;
+    text-transform: uppercase;
+    vertical-align: middle;
+  }
+  a {
+    margin-right: 7.5px;
+    color: $article-footer-link-color;
+    &:hover {
+      color: $article-footer-link-color-hover;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.article-list-divider {
+  margin: 0 15px;
+}
+
+.article-list-tags {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.article-empty {
+  display: block;
+  margin: 100px 0;
+  font-style: italic;
+  color: $gray-light;
+  text-align: center;
+}
+
+// Paginator
+// =============================================================================
+
+.article-pagination-right {
+  float: right;
+}
+
+// Article page
+// =============================================================================
+
+.article-header {
+  display: block;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid $base-border-color;
+  p {
+    display: block;
+    margin: 12px 0 10px;
+    font-size: 15px;
+    color: $article-header-description-color;
+  }
+  a {
+    text-decoration: none;
+  }
+}
+
+.article-content {
+  display: block;
+  p,
+  ul,
+  ol,
+  img,
+  blockquote {
+    display: block;
+    margin-bottom: 30px;
+  }
+  h2,
+  h3,
+  h4 {
+    display: block;
+    margin-bottom: 10px;
+    font-family: $sans-serif;
+    color: $article-post-titles-color;
+  }
+  blockquote p {
+    margin-bottom: 0;
+  }
+  img.emoji {
+    display: inline-block;
+    margin-top: -4px;
+    margin-bottom: 0;
+    vertical-align: middle;
+  }
+}
+
+.article-comments {
+  display: block;
+  padding-top: 20px;
+  margin-top: 30px;
+  border-top: 1px solid $base-border-color;
+}
+
+.article-share {
+  display: block;
+  margin-top: -4px;
+  a {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 18px;
+    color: $gray-light;
+    vertical-align: middle;
+    &:hover {
+      color: $gray-dark;
+    }
+  }
+}
+
+// Responsive
+// =============================================================================
+
+@include breakpoint(small) {
+  .article-list-footer {
+    display: block;
+  }
+  .article-list-divider:last-of-type {
+    display: none;
+  }
+  .article-list-tags {
+    display: block;
+    margin-top: -7px;
+  }
+}
