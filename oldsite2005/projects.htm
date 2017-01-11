@@ -1,0 +1,318 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/concise.dwt" codeOutsideHTMLIsLocked="false" -->
+<!-- DW6 -->
+<head>
+<meta http-equiv="Content-Type" content="text/html" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>projects after 2001</title>
+<!-- InstanceEndEditable -->
+<link rel="stylesheet" href="2col_leftNav.css" type="text/css" />
+<!-- InstanceBeginEditable name="head" -->
+<style type="text/css">
+<!--
+.style1 {color: #3333FF}
+.style2 {
+	color: #FF0000;
+	font-weight: bold;
+}
+-->
+</style>
+<!-- InstanceEndEditable --><!-- InstanceParam name="Headline" type="boolean" value="true" --><!-- InstanceParam name="foot" type="boolean" value="true" -->
+</head>
+<!-- The structure of this file is exactly the same as 2col_rightNav.html;
+     the only difference between the two is the stylesheet they use -->
+<body> 
+<div id="masthead"> 
+  <!-- InstanceBeginEditable name="Title" -->
+  <h1 id="siteName"><font color="#FF6600">Xizhi Li's Project Index</font></h1>
+  <!-- InstanceEndEditable -->
+  <div id="globalNav"> 
+    <a href="index.htm">Home</a> | <a href="cv.htm">CV</a> | <a href="projects.htm">Projects</a> | <a href="publications.htm">Publications</a> | <a href="thoughts.htm">Thoughts</a> | <a href="mailto:lxz1982@hotmail.com">Contact</a> </div> 
+</div> 
+<!-- end masthead --> 
+<!-- InstanceBeginEditable name="content" -->
+<div id="content">
+<h2>My Formal Projects: 2001 - present</h2>
+  <div class="story">
+    <p>This page provides a list of my formal projects from 2001 to present. They are ordered by starting time. All projects are at least finished in version 1.0. Some are still under further development. For each project, I provide a <span class="style1">further reading</span> section where interested readers can order any listed artifact by writing the author (me) an email. Because of copyright issues and lack of web space, I did not provide direct download for all of them. Please note, I maintain this page less frequently than the publication page where a complete article reference can always be found.</p>
+  </div>
+  <div class="story">
+	<h3>ParaEngine or 3D parallel game engine <a name="paraengine" id="paraengine"></a></h3>
+	<p><img src="images/ParaEngine.jpg" width="107" height="80" hspace="5" vspace="5" align="left" /><span class="style1">Futher reading:</span>      <br />
+      <span class="style2">New:</span> ParaEngine Tech Website. Click <a href="paraworld/web/index.htm">here</a>. <br />
+      Li Xizhi. ParaEngine Reference Book . (book: 700 pages, 2004/8) <br />
+      
+ Li Xizhi, Li Tiecai. ParaEngine and Parallel World Game. (in Chinese)<br />
+Li Xizhi, Li Tiecai. Multi-Agent System, Neuron network and Parallel World Game. (in Chinese) <br />
+Li Xizhi, Game Engine Movie [<a href="paraworld/ParaEngine.wmv">download:38MB</a>] <br />
+Li Xizhi. Using Neural Parallel Language in Distributed Game World Composing. IEEE conf. Distributed Framework of Multimedia Applications' 05</p>
+    <p> ParaEngine is aimed to develop networked, cooperative, high-quality 3D games. Parallel World is a distributed game, built on top of ParaEngine. Player may have its own game world hosted like a personal website on its PC or other web servers. Beside my own zest in making networked computer games, ParaEngine is also the testbed for many of my research works, such as the simulation theory used in learning and synthesizing human animations, the neural parallel language, the distributed HCI framework, etc.</p>
+    <table border="0" cellspacing="0" cellpadding="0" width="100%">
+      <tr>
+        <td><p><strong>Supported    OS:</strong></p></td>
+        <td><p>Windows XP/2000/2003 server</p></td>
+      </tr>
+      <tr>
+        <td><p><strong>API:</strong></p></td>
+        <td><p>DirectX 9.0C</p></td>
+      </tr>
+      <tr>
+        <td><p><strong>Language:</strong></p></td>
+        <td><p>C/C++ (VS.NET 7.1)</p></td>
+      </tr>
+      <tr>
+        <td valign="top"><p><strong>Features:</strong></p></td>
+        <td valign="top"><p><strong>Graphic    engine:</strong></p>
+            <ol>
+              <li>3D scene management and    rendering system, supporting 40,000m*40,000m continuous game world. It is    suitable for RPG games with super large continuous map, many globally movable    characters, complex scene triggers and story design.</li>
+              <li>Advanced programmable    pipeline for all renderable objects in the scene. </li>
+              <li>Flexible shader management on    a per object basis. One can dynamically change the shader program of any    scene objects on a per frame basis.</li>
+              <li>Fixed function pipeline    support, which allows the game engine to run on older machines while    retaining most of the graphics qualities. It can be mixed with the    programmable pipeline to adapt to a wide variety of graphics cards on the    market.</li>
+              <li>Hardware-occlusion testing    can be turned on in the rendering pipeline, if there are a huge number of    small yet dense models in the game scene. </li>
+              <li>Tile based ROAM/CLOD terrain    engine. Because it is tiled, there is no limit to the size of the terrain. Terrain    holes can be created dynamically, which allows game developers to build    caves, tunnels or underground world directly in the same global terrain    environment. In-game terrain editing supports height field modifications, unlimited    multi-texturing on terrain surface, auto-breaking super large terrain texture    files in to smaller ones, fast ray-tracing on global height field.</li>
+              <li>FFT based ocean wave simulation    with reflection and refraction mapping for both above and underwater scenes. The    underwater scene has blur effect. </li>
+              <li>Unlimited ranged light sources    can be put anywhere in the game world. </li>
+              <li>Robust shadows: supporting    both shadow volume and shadow mapping at the same time.</li>
+              <li>Game resource management    system: textures (dds, png, tga, bmp, jpg), 3D objects (x file, m2, ParaX file),    3D skeletal animation (X file, m2 and ParaX file), effect file (FX file), sound    (wav, mp3), virtual file management (zip), database file management.</li>
+              <li>A comprehensive 2.5D GUI    engine, fully scriptable through the NPL language. Drag and drop controls,    scrollable containers, three-state buttons, list box, slider bar, grid view, AVI    video player, edit box, IME edit box supporting various language input    methods, supporting GUI objects attached to 3D scene objects.</li>
+              <li>Skeletal animation with customizable    character appearance and reconfigurable equipment, such as hair style, skin    color, clothes, etc. Settings can be made persistent by the pre-designed    database. </li>
+              <li>Particle systems are    supported in the animation systems</li>
+              <li>Three customizable follow    cameras modes and one free camera mode. The camera will automatically    position itself to avoid collision with the view frustum and the physical    environment. Thus, it is eligible for third-person RPG games.</li>
+              <li>In-game movie recording in    any movie format, such as AVI. </li>
+              <li>Fast mouse ray-picking with 3D    scene objects.</li>
+              <li>[Effect] global sunlight    simulation. It will affect shadows and scene illumination. </li>
+              <li>[Effect] per-pixel lighting    and fog can be turned on in each model shader.</li>
+              <li>[Effect] For each renderable object,    some other effects can be dynamically applied to it when necessary, such as    object construction shader, occlusion shader, shadow mapping shader, etc.</li>
+              <li>[Effect] Full screen glow    effect and HDR. </li>
+            </ol>
+          <p><strong>Scripting    engine:</strong></p>
+          <ol>
+            <li>The build-in scripting engine    is powered by NPL language. It mimics the functioning of neural networks and    codes the logics of distributed game world into files that could be deployed    to arbitrary runtime locations on the network.</li>
+            <li>In the NPL programming    environment, it makes little difference between developing network    applications and stand-alone ones. </li>
+            <li>All API of the game engine    are exposed through the scripting interface, including GUI, game events, 3D    scene management, AI game logics, resource management, networking, database    queries, etc. It is possible to develop a traditional RPG game through the    scripting interface only. The scripting interface is well documented with    over 20, 000 lines of source code examples. </li>
+            <li>The new scripting paradigm    implies new ways of game content development on the following aspects: online    game and game society establishment and maintenance, non-linear stand-alone    AI behaviors and networked AI behaviors, stand-alone game story development    and network distributed story development, game cut-scene design and    interactive game movie shooting, game map design/storage/transmission, visual    scripting environment, etc. </li>
+            <li>All network behaviors are    written in NPL. </li>
+          </ol>
+          <p><strong>Middleware    support:</strong> </p>
+          <ol>
+            <li>Polygon level physics effect    middleware support [optional]: Novodex [Havok, ODE]</li>
+            <li>Vegetation middleware support    [optional]: [speed tree]</li>
+          </ol>
+          <p><strong>AI,    physics, and others:</strong></p>
+          <ol>
+            <li>Fast character simulation engine.    It supports a large number of characters on a vast continuous game world (as    long as 32bits floating point position vector do not lose accuracy). It    integrates well with the global terrain and ocean engine. It provides    interfaces for path-finding, perception, collision detection and response. It    supports ray picking based character controller. For each character, quite a    few character sensors can be turned on to process custom character AI logics    in the NPL script callback functions. </li>
+            <li>AI controllers: multiple    hard-coded AI controllers can be parameterized and combined with each other    or with character sensor scripts to efficiently emulate convincing AI    behaviors. Supported AI controllers are: (1) Movie controller: it can record    and replay character actions in a time accurate manner. This is an easy way    to build in-game character cinematic. (2) Sequence controller: a list of AI    commands to be executed one or several per frame. It can be used to perform    general NPC logics such as patrolling, dialoging, etc. (3) Combat controller:    such as attack, evade, flee actions. (4) Face tracking controller: rotate the    character¡¯s neck to face a target. (5) Follow controller: follow another    object. </li>
+            <li>Biped state manager. It is a    finite state machine which applies jumping, walking and swimming animation,    etc and their transitional animations automatically, according to the    physical environment. </li>
+            <li>Mount system: characters can    be mounted on other characters, such as a person be ing mounted on a horse.</li>
+            <li>Local database support,    supporting most SQL-92 standard. </li>
+            <li>Debugging and logging can be    turned on which tracks all aspects of the game engine status. </li>
+            <li>[Game object] missile object.    Firing a missile to any place in the game world. </li>
+            <li>[Game object] D&amp;D based    RPG character object. Character attributes are exposed through the scripting    interface and character data is made persistent by the database. This is a    helper game object for building simple RPG game.</li>
+          </ol>
+          <p><strong>Tools    and libraries:</strong></p>
+          <ol>
+            <li>3dsmax7&amp;8 model    exporters: both static and animated models are supported. Characters with multiple    animation sequences are also supported. </li>
+            <li>3dsmax terrain, scene    exporters: this is written in 3dsmax script, and we allow users to modify the    source code to suit their needs in their own specific level design tools.</li>
+            <li>Virtual world builder: This    is a simple to use in-game game development environment. It comes with a free    collection of game art data. There are no sophisticated interfaces in it;    even children can learn to play with it. One can create a huge    40,000m*40,000m game world by just mouse clicking and editing simple game    events (the latter is only for serious users). Editable entities in the world    builder includes: terrain, ocean, models, characters, GUI, sounds, lights,    scripts, etc. It also supports a powerful feature called <em>world inheritance</em>, in which a new world can be built by    inheriting from multiple existing game worlds. Virtual world builder is    written entirely by our proprietary NPL scripting language and we allow users    to modify the source code to suit their needs in their own specific level    design tools. <em>Chinese version only.    English version is planned at the end of 2006.</em></li>
+            <li>World asset manager: managing    resources used in a game title. Source code in C#</li>
+            <li>In-game movie recorder: with source    code in NPL</li>
+            <li>In-game GUI IDE: with source    code in NPL</li>
+            <li>Third party tools: virtual    file browser, deep exploration (3D model viewers), sqlite analyzer (database    query builder), ultra edit (optional script editor).</li>
+          </ol>
+          <p><strong>Documentation    and support:</strong></p>
+          <ol>
+            <li>NPL scripting reference: (150    pages) <em>English version only</em>.</li>
+            <li>Demo ¡°Parallel World¡±: It is    a distributed game, built on top of ParaEngine. Player may have its own game    world hosted like a personal website on its PC or other web severs.<em> It is available on our website at the end    of 2006</em>. </li>
+            <li>Artists¡¯ guide: (50 pages)    both Chinese and English version. </li>
+            <li>Book ¡°Design and    Implementation of a Distributed Game Engine¡±: (approx. 300 pages) written by    the main author of ParaEngine. Available in print in September 2006. <em>English version only. Chinese version is    planned at the end of 2006.</em> </li>
+            <li>ParaEngine source code and    design documentation: (approx. 2000 pages) only available for enterprise    edition users.<em> English version only.</em></li>
+            <li>Website forums: http://<a href="http://www.paraengine.com/">www.paraengine.com</a>? </li>
+          </ol></td>
+      </tr>
+      <tr>
+        <td valign="top"><p><strong>Summary:</strong></p></td>
+        <td valign="top"><p>ParaEngine is a distributed 3D computer    game engine. It aims to develop the next generation online games, where the    game world content and logics are distributed over arbitrary networks.</p></td>
+      </tr>
+      <tr>
+        <td valign="top"><p><strong>License:</strong></p></td>
+        <td valign="top"><p>To be released in three editions:</p>
+            <ol>
+              <li><strong>Personal Edition</strong>: (<em>Free of charge.</em>) Users can take the    full advantage of NPL to construct their own virtual game world. The following    is also available: source code of virtual world builder written in NPL language,    documentation and tutorials of NPL, all ParaEngine related tools and    libraries. It can be used for non-commercial uses and <em>commercial uses with some limitations</em>. Available in September    2006.</li>
+              <li><strong>Professional Edition</strong>: The personal    edition plus partial source code of the game engine and technical support. <strong>Available now</strong>.</li>
+              <li><strong>Enterprise</strong><strong> Edition</strong>: The professional edition plus source code of the game engine and    technical support. We can also modify the game engine according to your    needs. <strong>Available now.</strong> </li>
+            </ol></td>
+      </tr>
+    </table>
+    <h3>&nbsp;</h3>
+    <h3>Aerospace Robot<br />
+      <em>RobotA: the Physically-based Simulation and Real-time Visualization Platform</em> <a name="RobotA" id="RobotA"></a></h3>
+    <p> <img src="images/RobotA.gif" width="120" height="67" hspace="5" vspace="5" align="left" /><span class="style1">Futher reading:</span><br />
+      Xizhi Li. RobotA: Development Manual and Report. (2005/02) <br />
+      Please note: this project is developed by me on demand and is considered confidential at present. It is a personal project, but not initiated by my personal interest. However, in goal two, I listed my own plans for it. </p>
+    <p>RobotA is an outer space flight simulation and real-time visualization platform for the aerospace robot project. The design targets the following scenario: A satellite is orbiting the earth. A 6-joint robot arm is located on the satellite. A child satellite which is initially installed on the mother satellite can be dispatched from the mother satellite. The robot arm installed on the mother satellite can be used to recollect the child satellite. Both satellites may have their own trust engines.</p>
+    <p>Goal One </p>
+    <ul>
+      <li>Achieving real-time visualization by transforming CAD satellite mod to low-poly 3D models digestible by the 3D game engine. </li>
+      <li>Defining skeletal animation hierarchy for all joints in satellite models. Also providing GUI and API interface to control the joint trajectories.</li>
+      <li>Providing animation recording and playing back functionalities, so that recorded movie can be used for demonstration purposes.</li>
+      <li>Making demo scenarios with the recording system, for evaluation at STI.</li>
+      <li>Writing design document for further development if the platform is accepted for use. </li>
+    </ul>
+    Goal two
+    <ul>
+      <li>Providing a test bed for the Simulation Theory developed in the <a href="download/Human%20Anim.pdf">thesis</a>.</li>
+      <li>Serving as a test bed for experiments in robotics. </li>
+    </ul>
+    <h3>&nbsp; </h3>
+    <h3>Neural Parallel Language<a name="nnl" id="nnl"></a></h3>
+    <p><img src="images/POL1.gif" width="107" height="70" hspace="5" vspace="5" align="left" /><span class="style1">Futher reading:</span> <br />
+      Li Xizhi. Using Neural Parallel Language in Distributed Game World Composing. IEEE conf. Distributed Framework of Multimedia Applications' 05<br />
+      Li Xizhi. DHCI: an HCI Framework in Distributed Environment . (thesis: 2004/7)	<br />
+Li Xizhi. ParaEngine Reference Book .Page1-36 (book: 700 pages, 2004/8)	<br />
+Li Xizhi, Li Tiecai. Multi-Agent System, Neuron network and Parallel World Game. (in Chinese)	</p>
+	<p> Neural Parallel Language or NPL is the networking and scripting language used in our 3D computer game engine . 
+
+
+ Metaphorically speaking, a game engine can be regarded as a local viewport and simulation space for a usually much larger 3D virtual reality space on the web and local disk. Globally referenced art resources and a separate (usually simplified) language system constitute a high-level game programming interface on top of the game engine itself. In some aspects, a game engine can be compared to a web browser, where multimedia files and HTML/XML constitute its high-level programming interface.</p>
+	<p> An important design issue of the game engine and its high-level programming interface is that, unlike most fixed and pre-compiled distributed applications, distributed game worlds are subject to constant content updates and even deployment site reconfigurations. In my viewpoint, the next generation high-level language may be programmed in a uniform manner independent of its networked runtime environments ; the resulting program code will be compiled automatically at their deployment sites; its runtime environments will ensure that the same program will function in the same way under arbitrary deployment scheme ; and its development environment may allow visualized design of parallel code and its deployment configurations . In other words, the compiling and deployment process may both be carried out in a distributed manner and environment ; whereas the source code is ignorant of this process . This calls for a new language dedicated to this task and a new human-computer interface (HCI) adopted by both its runtime s and the programming interface .</p>
+	<p>With this vision, I have proposed a neural network based programming paradigm called Neural Parallel Language or NPL to be used in my game engine . It mimics the functioning of neural networks and codes the logics of distributed game world into files that could be deployed to arbitrary runtime locations on the network. Both its programming interface and the game engine platform allows for arbitrary number of visualization and interaction clients running on the huge networked gaming space. The result is that thousands of players simultaneously play in a networked 3D environment which may be hosted on many game servers and even the players' own PCs.</p>
+	<h3>Parallel World Game <a name="paragame" id="paragame"></a></h3>
+	<p> <span class="style1">Futher reading:
+
+
+      </span><br />
+    Li Xizhi, Li Tiecai. ParaEngine and Parallel World Game. (in Chinese)</p>
+	<p> Parallel World is a distributed game, built on top of ParaEngine. Player may have its own game world hosted like a personal website on its PC or other web servers.
+
+ NPL is the enabling technology to script the ever evolving game world logic on the network. Both ParaEngine and NPL are from my own research projects. </p>
+	<h3>MicroWindows program development and embedded-device simulation platform<a name="microwin" id="microwin"></a></h3>
+	<p><img src="images/windvd.gif" width="107" height="80" hspace="5" vspace="5" align="left" /><span class="style1">Futher reading: </span><br />
+    Li Xizhi. Design Document of MicroWindows Sim Platform. MicroWinForVC.pdf [<a href="download/MicroWinForVC.pdf">download</a>] </p>
+	<p>The whole project can be divided into the following intensely intertwined sub-domains.<br />
+	  <strong>A. MicroWindows Extension: A cross-platform GUI library for Win32 and Linux</strong><br />
+	  a) Identifying the em85xx architecture.<br />
+	  b) Porting a device-independent GUI library from Linux edition (MicroWindows) to Win32.<br />
+	  c) Developing software interface for user-defined screen device driver.<br />
+	  d) Developing software interface for user-defined keyboard device driver.<br />
+	  e) Making the keyboard driver, somewhat compatible with the em85xx FIP driver module<br />
+	  <strong>B. MicroWindows embedded-hardware device simulator: integrated with the Microsoft Visual C++.Net IDE and Debugging environment.</strong><br />
+	  a) User interface design to accommodate a monitor and a key board simulator.<br />
+	  b) Using another thread to run the simulated application program for em85xx. Multi-threading and
+	  data synchronization needs to be considered.<br />
+	  c) Writing the Screen driver implementation code for the MicroWindows Extension.<br />
+	  d) Writing the Keyboard driver implementation code for the MicroWindows Extension.<br />
+	  e) Writing FIP remote control simulation code for em85xx.<br />
+	  f) Rewriting GsSelect() event polling function for software simulator. It is a combo of the UNIX
+	  and DOS version. A simulated timeout is implemented in the polling mechanism.<br />
+	  <strong>C. Porting MicroWindows Sample applications and DVD Player program to the Simulator.</strong><br />
+	  a) Porting sample applications from MicroWindows demos. The following samples are ported.<br />
+	  i. MyProgram.cpp: A very simple C++ application that shows a gif picture with
+	  MicroWindows APIs. IO operation and image display are illustrated.<br />
+	  ii. NTetris.c: A slightly more complex C application that implements the famous Tetris game.
+	  Win GUI and Message handling (for keyboards) are demonstrated in the sample.<br />
+	  b) DVD player: The original code of this application is provided by em85xx. Its event handling is
+	  based on its old polling mechanism with fip module; while its display interface is built upon a
+	  thin-wrapper (OsdWindow) of MicroWindows API. This mixture of coding style makes it
+	  extremely inefficient to be ported to the simulator.<br />
+	  <strong>D. Testing and documentation</strong><br />
+	  a) Software-based tests performed on the software simulator (Windows NT edition)<br />
+	  b) Documentation edited and reviewed.<br />
+	  c) TODO: Performing tests with real hardware system: Integration into the hardware development
+	  cycle.<br />
+    d) TODO: User application development: HTML browser, E-BOOK viewer.</p>
+	<h3>Microprocessor and peripherals for motion control system --A verilog implementation optimized for FPGA with reduced MIPS instruction set and specialized I/O controls<a name="ecomips" id="ecomips"></a></h3>
+	<p><img src="images/ecomips.gif" width="107" height="65" hspace="5" vspace="5" align="left" /><span class="style1">Futher reading: </span><br />
+    Li Xizhi. User guide: 
+    Mips Design suite  . UserGuide.doc<br />
+    Li Xizhi. Design Document. MP001_overview.pdf<br />
+Li Xizhi, Li Tiecai. ECOMIPS: An Economic MIPS CPU Design on FPGA . IWSOC'04 (workshop) [<a href="download/xizhil_ecomips.pdf">download</a>]</p>
+	<p>The project's object is to integrate the self-functioning panel system circuit into the motion control FPGA chip. A causal definition of the panel system is given below. Panel system (PS) is a self-functioning control center for the motor control circuit. Its main function is to provide another mean to monitor and modify the behavior of the motor (by modifying its corresponding registers). The following components are included: 1) CPU: CPU core interface with reduced instruction sets and specialized IO controls 2) ROM: It contains read-only software program for the panel system. 3) RS-232 port: This standard serial port is usually connected to a general purpose computer (usually a PC) and can bypass the panel system (independent of its CPU) and send motion control commands to the motion control circuits. We may also consider providing the functionality of downloading PS program to the ROM through this port. 4) 6-Key keyboard interface: receive commands from the user through a simple key-stroke interface 5) 8-block LED interface: it's an interactive LED display to communicate with the end-user. Typically it displays parameters of the motion control system one at a time. During modification mode, it reacts to key-strokes by the end user possibly by blistering the digit that is being modified. It's all up to the program in ROM and the CPU instruction sets to define the logic. 6) Predefined ports: ports that may be used by the motion circuits to control or debug it at real-time. The benefits of implementing this design through FPGA are primarily reduced costs and increased performances.</p>
+	<h3>Web Agent Framework<a name="waf" id="waf"></a></h3>
+	<p><img src="images/WAF.jpg" width="107" height="95" hspace="5" vspace="5" align="left" /><span class="style1">Futher reading:</span> <br />
+LiXizhi, Interactive tutorials for web agent framework 1.1, File: Quick interactive tutorial.doc [ <a href="download/Quick%20interactive%20tutorial.doc">Download </a>]	  <br />
+Li Xizhi. A General Outlook on Multi-Agent System. (overview thesis: 2003/8) [<a href="download/A%20general%20research%20and%20outlook%20of%20MAS.pdf">download</a>] <br />
+Li Xizhi, Li Tiecai. Multi-Agent System, Neuron network and Parallel World Game. (in Chinese)<br />
+	  LiXizhi, Report: Security and Relation-forming in Multi-Agent System [<a href="download/ReportSRMAS.doc">download</a>]<br />
+    LiXizhi, WAF : web-agent based personal information publishing tools, File: WAF-PIP tool.doc <br />
+    LiXizhi, White paper for WAF, File: White paper for WAF.doc <br />
+    LiXizhi, 2003 Mid term report for Microsoft Innovation cup programming contest, File: Mid term report.doc <br />
+    LiXizhi, Web Agent Framework archi-review , File: Web Agent Framework archi-review.doc <br />
+    LiXizhi. A neuron-based authentication mechanism.doc <br />
+    LiXizhi. Client Agent Mainframe work Specification.doc <br />
+    LiXizhi. Security and relation.doc <br />
+    LiXizhi. WAS specification.doc <br />
+    LiXizhi. Web Agent Framework Reengineering.doc<br />
+    LiXizhi. Web agent framework setup. WAF_concise.rar [<a href="webagent/Setup/WAF_concise.rar">download</a>] <br />
+    LiXizhi. Introduction Movie. Codec [<a href="webagent/IntroMedia/TSCC.exe">download</a>] preface.avi [<a href="webagent/IntroMedia/preface.avi">download</a>]
+	</p>
+	<p> Web agent framework or WAF is a web-alike topology multi-agent system application. It aims to create a visible virtual human relationship network on the Internet. Using agent to represent human beings and provide information to other visitors (including agent) is not a new idea. However, current implementations lack a flexible user interface to convince users that agents are active humanoid entities that exist on the network with them. This is due to static user interfaces and conventional object manipulation techniques adopted by these agent applications. </p>
+	<p>In WAF, user's navigation path can be visualized in an off-line tree graph. The client explorer of WAF will remember each visited agent as well as any downloaded artifacts such as a piece of news or a group of other related agents (e.g. friend agents). It allows reconfiguration of the topology of all these intelligent agents as well as data resources on the client side and save them into local map files. Agents and information in these map files can be updated automatically when they are reactivated or re-opened from the history records kept in the local memory pool(database); they can later be used as the starting point of a new navigation or just provide a group of related web services to its user.</p>
+	<p> In WAF, although most computing occurs at the place where agents are actually situated, users (including other agents) can customize foreign agent references in different activation maps on their local environment. In our everyday life, we accept the existence of an object only through different perspectives and from many situations in which it used to act. Likewise, in order to let people accept the existence of an agent, the user is allowed to create multiple situations in which the same agent is referenced. </p>
+	<h3>Funding interface for Home Design and Improvement System (HDIS)<a name="hdis" id="hdis"></a></h3>
+	<p><img src="images/funding.gif" width="107" height="93" hspace="5" vspace="5" align="left" /><span class="style1">Futher reading: </span><br />
+	  Team work. Full Software Engineering Document Suite. [<a href="hdis/default.htm">Documentation site</a>]<br />
+	  Li Xizhi. HDIS website: Funding Interface  . [<a href="hdis/default.htm">Website</a>] : this website provide executable downloads and all software engineering document. It is originally an ASP.NET website. However, the version put up here is pure HTML just for introductory purposes. <br />
+    </p>
+	<p>Funding interface is an interface division of the Home Design and Improvement System (HDIS). Funding is an extremely difficulty task when there are too many funding items to be managed like in the HDIS. As an interface component in the HDIS, the funding interface features to make it easier than ever to manage users' finances and investments. The user is no longer buried in paper bills, and is prevented from making any calculation mistakes, relieved from going place to place to do the transactions. Instead, the funding interface in the HDIS will manage all the finances and investment with a single user account in an integrated user interface---all transaction views, data validation, personal budgets, etc can be browsed and edited in the funding UI. Funding UI also provides data interface to the HDIS components, so that the whole HDIS automation system will help (guide) the end user through managing the user's money. The funding interface alone is a separate money management software, although additional features are provided to work with the HDIS integration environment. </p>
+	<h3>Plane plot: A civic pipeline plotting tool <a name="plot" id="plot"></a></h3>
+	<p><img src="images/planeplot.jpg" width="300" height="217" hspace="5" vspace="5" align="left" /><span class="style1">Futher reading:</span> <br />
+Li Xizhi. Project Report Website.<br />
+Li Xizhi. User guide website. <br />
+Li Xizhi. Plotting Tool: software suite. [<a href="download/before2001/PlaneView.msi">Download</a>].</p>
+	<p>PlaneView is a network graph generating system created for a wide range of applications. It's initially coming from the needs of designing AI neural networks. But this software's first application has been in a Water pipeline project to aid the design and calculation of city water pipeline system <br />
+      For this release the following function and tools are shipped with the software. </p>
+	<ul>
+      <li>1. Simple Nodes editing, serializing </li>
+      <li>2. Simple nodes navigation. </li>
+      <li>3. Intelligent selection </li>
+      <li>4. Nodes directional connection editing. </li>
+      <li>5. Nodes impulse stimulation. </li>
+      <li>6. Layers integration (view only) </li>
+      <li>7. UI elements editing. </li>
+      <li>8. XML file showing. </li>
+      <li>9. Property based object editing. </li>
+      <li>10. 3D simple viewer (openglTest.exe), build-in XML-&gt;binary file converter.</li>
+    </ul>
+    <h3>      Directory Robot<a name="dirbot" id="dirbot"></a></h3>
+    <p> <img src="images/Dirbot.gif" width="107" height="90" hspace="5" vspace="5" align="left" /><span class="style1">Futher reading</span>: <br />
+    Li Xizhi. User manual. <br />
+    Li Xizhi. DirBob software suite. [<a href="download/before2001/DirRobot.rar">Download</a>]</p>
+    <p>The original version of this DirRobot was finished in 2003, February, with the simple need to build a personal website from hard disk tree folders. A little bit automation is achieved with an agent interface. <br />
+    </p>
+  </div>
+</div>
+<!--end content -->
+<div id="navBar"> 
+  <div id="search"> 
+    <form action="#"> 
+      <label>search</label> 
+      <input type="text" size ="10" /> 
+      <input type="submit" value="go" /> 
+    </form> 
+  </div> 
+  <div id="sectionLinks"> 
+    <h3>Index of projects </h3> 
+    <ul> 
+	  <li><a href="#paraengine">ParaEngine</a></li> 
+      <li><a href="#RobotA">Aerospace Robot</a></li> 
+	  <li><a href="#nnl">Neuron Parallel language</a></li> 
+	  <li><a href="#paragame">Parallel world game</a></li> 
+	  <li><a href="#microwin"> MicroWindows program development and embedded-device simulation platform</a></li> 
+	  <li><a href="#ecomips">ECOMIPS: MIPS CPU Core design</a></li> 
+	  <li><a href="#waf">Web Agent Framework </a></li> 
+	  <li><a href="#hdis">Funding interface for Home Design and Improvement System (HDIS)</a></li> 
+	  <li><a href="#plot">Plane plot: A civic pipeline plotting tool </a></li> 
+	  <li><a href="#dirbot">Directory Robot</a></li> 
+	  <li><a href="project1990.htm">Before 2000</a></li> 	  
+    </ul> 
+    <p>&nbsp;</p>
+  </div> 
+</div>
+<!--end navbar --> 
+<!-- InstanceEndEditable -->
+<div id="siteInfo"> <a href="mailto:lxz1982@hotmail.com">Email: lxz1982@hotmail.com </a> | Built by Li, Xizhi &copy;2004 <a href="http://www1.com.cn/hosting/template/gbook/index.asp?vh=LiXizhi&key=e1b34aa24a4460441dd1d7729a0aee38" target="_blank">Leave me a message</a>
+</div>
+<br /> 
+</body>
+<!-- InstanceEnd --></html>

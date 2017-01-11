@@ -1,0 +1,31 @@
+<script type="text/javascript">
+    function OnClickNewPost()
+    {
+        var title = prompt("Please enter title of your post");
+        if (title!=null){
+            title = title.replace(" ", "-");
+            var currentdate = new Date();
+            var urlNewPage = "{{ site.newsourceroot }}?filename=_posts/" 
+                + currentdate.getFullYear() + "-" + (currentdate.getMonth()+1) + "-" + currentdate.getDate() + "-" + title + ".md";
+                
+            var defaultText =  [
+                '---',
+                'layout: post',
+                'comments: true',
+                'categories: diary',
+                '---',
+                '## Title',
+                'text'
+                ].join('\n');
+            urlNewPage += "&value=" + encodeURIComponent(defaultText);
+            window.open(urlNewPage);
+        }
+    }
+    
+    $(function() {
+      // CreateNewPostLinks
+      $('.newpost').each(function(){
+          $(this).click(OnClickNewPost);
+      });
+    });
+</script>

@@ -1,0 +1,41 @@
+---
+layout: default
+---
+<div class="row">
+  <div id="myArticle" class="col-sm-9">
+    <div class="post-area post">
+      <header>
+        <h1>{{ page.title }}</h1>
+        <p>{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+      </header>
+      <hr>
+      <article>
+        {{content}}
+      </article>
+      <hr>
+        <div class="bdsharebuttonbox">
+            <a href="#" class="bds_more" data-cmd="more"></a>
+            <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+            <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+            <a href="#" class="bds_douban" data-cmd="douban" title="分享到豆瓣网"></a>
+            <a href="#" class="bds_fbook" data-cmd="fbook" title="Share to Facebook"></a>
+            <a href="#" class="bds_copy" data-cmd="copy" title="分享到复制网址"></a>
+        </div>
+        <script>
+            window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+        </script>
+    </div>
+	{% include comments.html %}
+  </div>
+  
+  <div id="content" class="col-sm-3">
+    <!-- <div id="myAffix" class="shadow-bottom-center hidden-xs" data-spy="affix" data-offset-top="0" data-offset-bottom="-20"> -->
+    <div id="myAffix" class="shadow-bottom-center hidden-xs" >
+      <div class="categories-list-header">
+        Content
+      </div>
+      <div class="content-text"></div>
+    </div>
+  </div>
+  
+</div>

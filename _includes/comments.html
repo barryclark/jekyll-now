@@ -1,0 +1,36 @@
+{% if page.comments %}
+    <!-- duoshuo.com javascript include code. -->    
+    {% if site.duoshuo_url %}
+      <div class="post-area post comment">
+        <div class="ds-thread" data-thread-key="{{ page.id }}" data-title="{{ page.title }}" data-url="{{ site.duoshuo_url }}{{ page.url }}"></div>
+      </div>
+	  <script type="text/javascript">
+		var duoshuoQuery = {short_name:"{{ site.duoshuo_shortname }}"};
+		(function() {
+		  var ds = document.createElement('script');
+		  ds.type = 'text/javascript';ds.async = true;
+		  ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		  ds.charset = 'UTF-8';
+		  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
+		})();
+	  </script>
+	{% endif %}
+    <!-- disqus.com javascript include code. -->
+	{% if site.disqus_url %}
+    <div class="post-area post comment">
+        <div id="disqus_thread"></div>
+    </div>
+	<script>
+		var disqus_config = function () {
+			this.page.url = "{{ site.disqus_url }}{{ page.url }}"; 
+			this.page.identifier = "{{ page.id }}"; 
+		};
+		(function() {
+			var d = document, s = d.createElement('script');
+			s.src = '//{{ site.disqus_shortname }}.disqus.com/embed.js';
+			s.setAttribute('data-timestamp', +new Date());
+			(d.head || d.body).appendChild(s);
+		})();
+	</script>
+	{% endif %}
+{% endif %}    
