@@ -3,13 +3,11 @@
 #
 
 # Name of your site (displayed in the header)
-name: Your Name
-
+name: "상수렁이 개인 블로그" 
 # Short bio or description (displayed in the header)
-description: Web Developer from Somewhere
-
+description: "개발자를 꿈꾸는 지렁이 "
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
+avatar: https://raw.githubusercontent.com/better4636/better4636.github.io/master/images/lion.png
 
 #
 # Flags below are optional
@@ -34,7 +32,7 @@ footer-links:
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 # You can find your shortname on the Settings page of your Disqus account
-disqus:
+disqus: sangsulungE
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
 google_analytics:
