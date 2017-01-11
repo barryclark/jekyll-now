@@ -15,8 +15,11 @@ Per chi avesse più difficoltà a fare questo, un modo semplicissimo per riusare
 Questa la procedura:
 
   - Aprite un nuovo foglio Google Sheet
-  - IMPORTARE [questo](https://gist.github.com/paulgambill/cacd19da95a1421d3164) script nello script editor del foglio.
-  - Nella cella A1 scrivete la formula =ImportJSON("https://raw.githubusercontent.com/emergenzeHack/terremotocentro/master/_data/issuesjson.json")
+  - Fate click su Strumenti -> Editor di script
+  - Fare click su Crea Script per Speadsheet
+  - Cancellare tutto ciò che trovate scritto nel file e incollare [questo](https://gist.github.com/paulgambill/cacd19da95a1421d3164) script nello script editor del foglio
+  - Rinominare lo script in ImportJSON.gs e salvare
+  - Tornando nel foglio di lavoro, nella cella A1 scrivete la formula =ImportJSON("https://raw.githubusercontent.com/emergenzeHack/terremotocentro/master/_data/issuesjson.json")
   - Attendere qualche secondo
 
 Fatto. Questo comando non fa altro che importare in modo dinamico i dati presenti nel nostro file delle segnalazioni all'interno del google sheet, formattando le segnalazioni in colonne e rendendole quindi facilmente visibili ed elaborabili se volete fare ulteriori analisi.
