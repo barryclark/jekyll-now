@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 # Mandatory settings
 
 name: Chalk
@@ -64,3 +65,16 @@ gems:
   - jekyll-sitemap
   - jemoji
 permalink: posts/:slug
+=======
+title: Researcher
+url: "http://ankitsultana.me"
+baseurl: "/researcher"
+
+markdown: kramdown
+
+tracking_id: #
+
+sass:
+    style: compressed
+    sass_dir: _sass
+>>>>>>> Stashed changes
