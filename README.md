@@ -18,8 +18,6 @@ In a few minutes you'll be set up with a minimal, responsive blog like the one b
 
 ## Quick Start
 
-[Tutorial](https://www.smashingmagazine.com/2014/08/build-blog-jekyll-github-pages/)
-
 ### Step 1) Fork Jekyll Now to your User Repository
 
 Fork this repo, then rename the repository to yourgithubusername.github.io.
