@@ -541,6 +541,10 @@ if(!trustResolver.isAnonymous(context.getAuthentication())) {
 
 -	상황 1. 어플리케이션 실행 중 일부 Membase 서버가 죽었을 때
 
+	**서버에서는** `Auto FailOver`가 작동되어 장애 조치 노드에서 처리하는 복제 된 데이터가 클러스터의 다른 노드에서 활성화되게 됩니다. (서버 2대 추가 발급 후 정확한 동작 확인 예정)
+
+	어플리케이션에서는 이미 Bean으로 등록된 SpyMemchaced가 모든 노드의 정보를 가지고 있기 때문에, 장애 서버 외 다른 서버로부터 vBucket 정보를 수신받아 정상적으로 동작될 수 있으며, SpyMemchaced Auto Reconect 전략에 따라, 지속적으로 해당 노드의 connect를 확인합니다. 장애 복구 조치에 따라 일부 요청에 실패할 가능성이 있습니다.
+
 -	상황 2. 어플리케이션 실행 중 모든 Membase 서버가 죽었을 때
 
 -	상황 3. 일부 Membase 서버가 죽었을 때 어플리케이션 로드
