@@ -4,17 +4,17 @@ title: WebPortfolio
 ---
 
 WebPortfolio
-======
+---
 
 ## 개발환경
-+ "'Django == 1.10.4"'
-+ "'Python == 3.4.3"'
++ \'Django == 1.10.4'
++ \'Python == 3.4.3\'
 
 ## 프로젝트 기간
 2017.1.1 ~ 현재
 
 ## 결과물
-
+poqw.pythonanywhere.com
 
 
 
