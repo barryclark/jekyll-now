@@ -4,7 +4,6 @@ layout: default
 
 <div class="posts">
   {% for post in site.posts %}
-    {% if 'projects' in post.categories %}
     <article class="post">
 
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
@@ -14,19 +13,7 @@ layout: default
 
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
     </article>
-    {% endif %}
-    <article class="post">
-    {% if post.category == "articleprojects" %}
-    articleprojects / category
-    {% endif %}
-    {% if post.categories == "articleprojects" %}
-    articleprojects / categories
-    {% endif %}
-    {% for categ in post.categories %}
-      Hello {{categ}}
-    {% endfor %}
-    wtf
-    </article>
+    
   {% endfor %}
   
 </div>
