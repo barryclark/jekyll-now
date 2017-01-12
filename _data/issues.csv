@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1552,200309488,2017-01-12 15:35:07,2017-01-12 08:55:31,Donazione di impianto stereo AIWA,,,"[""Accettato"", ""Donazioni"", ""Form""]",,,"{""cosa"": ""impianto stereo AIWA"", ""data"": ""12/01/2017"", ""descrizione"": ""Dono impianto stereo con radio, lettore cd e lettore audiocassette. Completo di telecomando. Altoparlanti collegati all'unit\u00e0 con fili."", ""email"": ""cesaroni.massimo@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3929628733""}","#<pre><yamldata>tel: '3929628733'
+email: cesaroni.massimo@gmail.com
+cosa: 'impianto stereo AIWA'
+descrizione: 'Dono impianto stereo con radio, lettore cd e lettore audiocassette. Completo di telecomando. Altoparlanti collegati all''unità con fili.'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 12/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1551,200233167,2017-01-11 23:01:38,2017-01-11 23:01:13,A #Camerino urge coprire le macerie del santuario S. Maria in Via e salvare le opere d'arte,43.1357641,13.0683092,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Facebook"", ""Sisma Ottobre""]",,http://i.imgur.com/LYtlCv2.jpg,"{""cosa"": ""A #Camerino urge coprire le macerie del santuario S. Maria in Via e salvare le opere d'arte"", ""data"": ""11/01/2017"", ""descrizione"": ""Camerino, 9 gennaio 2017. Acqua dentro S. Maria in Via. Mentre a Norcia si proteggono anche le macerie della basilica di S. Benedetto, a Camerino nemmeno uno straccio di telone per salvaguardare dalla pioggia e dalla neve almeno le numerose opere d\u2019arte ancora tutte dentro il santuario. Sembra che S. Maria in via non interessi proprio a nessuno."", ""email"": """", ""immagine"": ""http://i.imgur.com/LYtlCv2.jpg"", ""indirizzo"": ""Piazza Cavour, Camerino, MC, Marche, 62032, Italia"", ""lat"": ""43.1357641"", ""link"": ""https://www.facebook.com/groups/187581041319919/permalink/1196058280472185/"", ""lon"": ""13.0683092"", ""tel"": """"}","<pre><yamldata>tel: ''
 email: ''
 cosa: 'A #Camerino urge coprire le macerie del santuario S. Maria in Via e salvare le opere d''arte'
