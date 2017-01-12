@@ -1,5 +1,5 @@
 ---
 layout: post
 title: WebPortfolio
+categories: [projects]
 ---
-{% categories: [projects] %}
