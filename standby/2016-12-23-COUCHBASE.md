@@ -537,11 +537,19 @@ if(!trustResolver.isAnonymous(context.getAuthentication())) {
 어플리케이션 - Membase 의존성 제거하기
 --------------------------------------
 
-### 문제 현상
+### 문제
 
-![Application Exception](/images/2016/2016_12_23_COUCHBASE/exception.png)
+-	상황 1. 어플리케이션 실행 중 일부 Membase 서버가 죽었을 때
 
-### 문제 원인
+-	상황 2. 어플리케이션 실행 중 모든 Membase 서버가 죽었을 때
+
+-	상황 3. 일부 Membase 서버가 죽었을 때 어플리케이션 로드
+
+-	상황 4. 모든 Membase 서버가 죽었을 때 어플리케이션 로드
+
+	![Application Exception](/images/2016/2016_12_23_COUCHBASE/exception.png)
+
+#### 문제 원인
 
 **Bean 생성 실패**
 
@@ -555,14 +563,133 @@ MemcachedClient의 Bean 생성 실패로 의존성을 갖는 나머지 빈들(Me
 
 #### 해결 방안
 
-**1. 동적 빈 생성**
+스프링의 `BeanFacotry`를 활용하여 직접 원하는 빈을 등록하면 간단하게 해결할 수 있씁니다. 그러나 해당 `Bean`만을 위한 클래스를 만드는 것보다 확장할 수 있는 범용적인 구조를 만들어보았습니다.
 
-**2. 복구 스케줄링**
+##### 동적 빈 생성 모듈 : DynamicGenerator
 
-### 어플리케이션이 구동 후 모든 Membase Server 장애 발생시
+![DynamicGenerator 설계](/images/2016/2016_12_23_COUCHBASE/dynamicbeanpattern.png)
 
-#### 해결 방안
+Adapter Pattern을 적용하여 `DynamicGeneratorAdapter`를 만들었고, Adapter를 상속하는 3개의 `DynamicGenerator`를 만들었습니다.
 
-**감지 및 복구 스케줄링**
+**빈 생성 정의**
 
-**Server Restart & Pending**
+각 `DynamicGenerator` 구현체는 `Generic`을 통해 생성하여 등록해야 하는 `Bean` Class를 정의하였고, `generate` Method를 재정의하여 세부적인을 객체 생성을 할 수 있도록 만들었습니다.
+
+**후 처리 정의**
+
+빈 생성 후에 수행해야 할 작업이 있다면 `DynamicBeanExecuter`를 상속하여 `execute` Method를 정의할 수 있도록 하였습니다.
+
+**의존성 주입**
+
+![DynamicGenerator 설계](/images/2016/2016_12_23_COUCHBASE/dynamicbeanpattern2.png)
+
+구현체들을 스프링 `Component`로 등록하여, 각 구현체에게 기본적인 의존성 주입을 스프링에서 해주도록 했습니다.
+
+**생성 실패시 복구 스케줄링 정의**
+
+`DynamicGeneratorAdapter`가 상속하고 있는 `RecoverableAdapter`는 해당 객체가 로드에 실패했을 경우 복구가 필요한지에 대한 정의를 정의할 수 있도록 합니다. `Default`로는 복구가 필요하지 않도록 정의되어 있으며, `getDelaySeconds` Method를 재정의하여 몇 초를 주기로 복구를 시도할지 정의할 수 있습니다.
+
+**동적 의존성 주입**
+
+동적으로 생성하려는 `Bean` 간에도 의존 관계를 갖을 수 있는데, 기존 `@Autowired`와 같은 원리이지만 동적으로 의존성 주입을 표시할 수 있도록 `@DynamicAutowired`라는 어노테이션을 생성했습니다. 이 어노테이션을 기반으로 동적 `Bean`들 간의 관계를 파악하여 의존성을 주입받을 수 있습니다.
+
+**즉시 생성 정의**
+
+`DynamicGeneratorAdapter`는 `isOnlyDirectGenerate` 메서드를 정의하고 있으며, 기본 값은 `false` 입니다. 해당 메서드는 아래에서 설명할 동적 빈 생성 관리자인 `DynamicBeanFactory`가 생성될 때 자동으로 생성되도록 할 것인가를 정의하는 메서입니다. 반환 값을 `true`로 재정의할 경우, 자동으로 생성되지 않고 `DynamicBeanFactory를` 통해 직접 생성할 수만 있습니다.
+
+##### 동적 빈 생성 관리자 : DynamicBeanFactory
+
+`DynamicGenerator`에서 정의하고 있는 모든 내용을 기반으로 실제 Bean을 생성하고 등록, 복구하는 역할을 하는 객체는 `DynamicBeanFactory` 입니다.
+
+![DynamicGenerator 설계](/images/2016/2016_12_23_COUCHBASE/dynamicbeanpattern3.png)
+
+`DynamicBeanFactory`은 스프링 `Component`로 등록되어, 스프링으로부터 `beanFactory`와, `Generator Map`을 주입받아 사용도록 하였습니다.
+
+**빈 생성**
+
+`@PostConstruct`를 통해 초기화 작업에서 즉시 생성하도록 정의되어있는 `Generator`만 사용하여 동적 빈을 생성합니다.
+
+빈을 생성할 때 `@DynamicAutowired`를 기반으로 재귀로 동적 빈들을 탐색하여, 동적 관계를 파악하고 빈을 생성하여 동적으로 의존성 주입을 하게 됩니다.
+
+성공적으로 생성된 객체는 `BeanFactory에` `singleton`으로 등록됩니다.
+
+**후 처리**
+
+`DynamicBeanFactory`는 빈이 성공적으로 생성되어 `BeanFactory`에 등록되면, 해당 `Generator`가 `DynamicBeanExecuter`를 `Interface`로 가지고 있을 시 `execute` 메서드를 실행하게 됩니다.
+
+**복구 스케줄링**
+
+![DynamicGenerator 설계](/images/2016/2016_12_23_COUCHBASE/dynamicbeanpattern4.png)
+
+스프링 스케줄링을 사용하여, 30초를 주기로 recover()를 실행하는 역할을 하는 `DynamicBeanRecover`를 생성하였습니다.
+
+```java
+@Service
+@EnableScheduling
+public class DynamicBeanRecover {
+
+    @Autowired
+    private DynamicBeanFactory dynamicBeanFactory;
+
+    @Scheduled(cron = "0/30 * * * * *")
+    @SuppressWarnings("unchecked")
+    public void recover() {
+        dynamicBeanFactory.recovery((new DateTime().getSecondOfDay()) + 86400);
+    }
+}
+```
+
+`DynamicBeanRecover`는 일정 주기로 복구를 수행하는 스케줄링 역할만 하고, 실제 복구 작업은 `DynamicBeanFactory` 객체로 위임하였습니다. `DynamicBeanFactory`는 Generator를 탐색하여, 해당 시간에 맞는 Generator를 통해 빈 객체 생성을 시도하게 됩니다.
+
+스케줄 단위를 30초로 해두었으므로, `getDelaySeconds`를 재정의할 때는 30초 단위로 작성하여야 합니다.
+
+생성하려는 Bean의 의존성 관계의 최상단에 위치하고 있는 `MemcachedSecurityContextRepository`을 생성하기 위한 `MemcachedSecurityContextRepositoryDynamicGenerator`로 예를 들자면,
+
+```java
+@Component
+public class MemcachedSecurityContextRepositoryDynamicGenerator extends DynamicGeneratorAdapter<MemcachedSecurityContextRepository> implements DynamicBeanExecuter {
+
+		@Autowired
+		private FilterChainProxy filterChainProxy;
+
+    @DynamicAutowired
+    private MemcachedSession memcachedSession;
+
+    @Override
+    public MemcachedSecurityContextRepository generate() throws Exception {
+        return new MemcachedSecurityContextRepository(memcachedSession);
+    }    
+
+    @Override
+    public void execute() {
+				...
+				(생략)
+				...
+
+        filterChainMap.put((String) urlMatcher.compile("/**"), generateMemcachedSessionFilters(securityContextPersistenceFilter));
+    }
+
+    private List<Filter> generateMemcachedSessionFilters(SecurityContextPersistenceFilter securityContextPersistenceFilter) {
+        ...
+				(생략)
+				...
+    }
+
+    @Override
+    public int getDelaySeconds() {
+        return 30;
+    }
+}
+```
+
+Generic Type으로 `MemcachedSecurityContextRepository`을 등록하여 해당 객체를 생성해주도록 하였고,
+
+DynamicGeneratorAdapter의 `generate` Method를 재정의하여 세부적인 설정으로 객체를 생성할 수 있도록 하였으며,
+
+내부에서 사용한 `Environment` 객체에 대한 의존성 주입은 `@Autowired`을 통해 스프링에서 해주게 했습니다.
+
+`@DynamicAutowired`이 선언된 `MemcachedSession` 객체는 `DynamicBeanFactory`로부터 의존성을 주입받도록 하였습니다.
+
+`DynamicBeanExecuter`를 `Interface`로 갖고 있으므로, 빈이 등록된 후 `execute` 메서드가 실행되어 해당 어플리케이션의 SecurityFilter에 Memcached 반영된 필터를 등록하게 됩니다.
+
+`getDelaySeconds` 메서드를 재정의하여 30초를 주기로 복구 스케줄을 실행하도록 하였기 때문에 빈 생성에 실패했다면 30초를 주기로 빈 생성을 시도하게 됩니다.
