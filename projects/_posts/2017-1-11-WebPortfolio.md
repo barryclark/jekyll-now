@@ -14,7 +14,7 @@ WebPortfolio
 2017.1.1 ~ 현재
 
 ## 결과물
-Link: [Google][Web_Portfolio]
+[poqw's Web Portfolio][Web_Portfolio]
 [Web_Portfolio]: http://poqw.pythonanywhere.com "poqw's Web_Portfolio"
 
 
