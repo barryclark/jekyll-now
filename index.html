@@ -4,11 +4,11 @@ layout: default
 
 <div class="posts">
   {% for post in site.posts %}
-    {% if post.categories != projects %}
+    {% if 'projects' in post.categories %}
     <article class="post">
 
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-      <h2>Category - {{ post.categories }}</h2>
+      <h2>Category - {{ print post.categories }}</h2>
       <div class="entry">
         {{ post.excerpt }}
       </div>
