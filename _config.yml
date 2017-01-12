@@ -11,10 +11,6 @@ avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/je
 # Flags below are optional
 #
 
-# paginate
-paginate: 5
-paginate_path: "/num/"
-
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
