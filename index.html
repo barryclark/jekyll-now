@@ -16,5 +16,15 @@ layout: default
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
     </article>
     {% endif %}
+  
+    {% if post.category == "articleprojects" %}
+    articleprojects / category
+    {% endif %}
+    {% if post.categories == "articleprojects" %}
+    articleprojects / categories
+    {% endif %}
+    {% for categ in post.categories %}
+      Hello {{categ}}
+    {% endfor %}
   {% endfor %}
 </div>
