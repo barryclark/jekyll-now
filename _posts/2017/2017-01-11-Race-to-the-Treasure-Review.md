@@ -9,7 +9,8 @@ tags: [review, games, race to the treasure, peaceable kingdom]
 author: Rob Kalajian
 ---
 
-![Race to the Treasure!](/images/featured/racetreasure.png){: .float-right}<h2>Prelude</h2>
+![Race to the Treasure!](/images/featured/racetreasure.png){: .float-right}
+<h2>Prelude</h2>
 
 It's pretty well known by anyone who's read this site, or [Purple Pawn](http://purplepawn.com), that my kids and I are big fans of Peaceable Kingdom games. The latest to arrive on my doorstep, Race to the Treasure!, requires a bit more thought on my little ones' part. That's a great thing. It's got simple rules and quick gameplay, just what I'd expect from a PK game.
 
