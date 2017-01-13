@@ -110,4 +110,4 @@ I'm a bit torn on this one. It's a solid game, by no means bad. It just didn't m
 
 [The Rose King at Thames & KOSMOS](http://www.thamesandkosmos.com/index.php/product/category/games/the-rose-king)\\
 [The Rose King at BGG](https://boardgamegeek.com/boardgame/201/rose-king/images)\\
-[Purchase Race to the Treasure!](http://amzn.to/2jFbLdx)
+[Purchase The Rose King](http://amzn.to/2jFbLdx)
