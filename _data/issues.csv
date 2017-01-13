@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1563,200758295,2017-01-13 23:40:26,2017-01-13 23:36:21,A San Marco di #Norcia c'è bisogno di mettere in sicurezza porta e cinta muraria del XIII sec.,42.716847,13.1360231,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Facebook"", ""Sisma Ottobre""]",,http://i.imgur.com/NRc7L3m.jpg,"{""cosa"": ""A San Marco di #Norcia c'\u00e8 bisogno di mettere in sicurezza porta e cinta muraria del XIII sec."", ""data"": ""13/01/2017"", ""descrizione"": ""Luca Cimarosti segnala che a San Marco di Norcia la Porta e la cinta muraria del XIII secolo devono essere necessariamente messa in sicurezza perch\u00e9 pericolanti (sul profilo Facebook altre foto)."", ""email"": """", ""immagine"": ""http://i.imgur.com/NRc7L3m.jpg"", ""indirizzo"": ""Via Adua, Norcia, PG, UMB, 06046, Italia"", ""lat"": ""42.716847"", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1827380570862859/"", ""lon"": ""13.1360231"", ""tel"": """"}","<pre><yamldata>tel: ''
+email: ''
+cosa: 'A San Marco di #Norcia c''è bisogno di mettere in sicurezza porta e cinta muraria del XIII sec.'
+descrizione: 'Luca Cimarosti segnala che a San Marco di Norcia la Porta e la cinta muraria del XIII secolo devono essere necessariamente messa in sicurezza perché pericolanti (sul profilo Facebook altre foto).'
+indirizzo: 'Via Adua, Norcia, PG, UMB, 06046, Italia'
+lat: '42.716847'
+lon: '13.1360231'
+link: 'https://www.facebook.com/groups/1758670357733881/permalink/1827380570862859/'
+immagine: 'http://i.imgur.com/NRc7L3m.jpg'
+data: 13/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1562,200757651,2017-01-13 23:39:33,2017-01-13 23:31:11,Raccolta mangimi per allevatori di #Ussita,43.2484575,13.509212,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Facebook"", ""Sisma Ottobre""]",,http://i.imgur.com/9ADGQSs.jpg,"{""cosa"": ""Raccolta mangimi per allevatori di #Ussita"", ""data"": ""13/01/2017"", ""descrizione"": ""Ad Ussita servono mangimi per vari tipi di animali (cani, gatti, conigli, polli, bovini, pecore). Si possono donare tutti i tipi di mangimi, senza particolari componenti o specialistiche. Il punto di raccolta \u00e8 a Corridonia (Mc), in via Castellano 5, tutti i giorni ore 15-19. Contatti: Chiara Fratani 3476870848, Loredana Capone (veterinaria) 3384666953."", ""email"": """", ""immagine"": ""http://i.imgur.com/9ADGQSs.jpg"", ""indirizzo"": ""Piazza Filippo Corridoni, Corridonia, MC, Marche, 62014, Italia"", ""lat"": ""43.2484575"", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1827433597524223/"", ""lon"": ""13.509212"", ""tel"": ""3476870848 - 3384666953""}","<pre><yamldata>tel: '3476870848 - 3384666953'
 email: ''
 cosa: 'Raccolta mangimi per allevatori di #Ussita'
@@ -1302,17 +1313,6 @@ descrizione: 'Un messaggio strappalacrime, la foto giusta del terremoto di Norci
 link: 'http://www.perugiatoday.it/cronaca/terremoto-norcia-denuncia-sciacallo-facebook-truffa-carabinieri-denuncia-terremotati.html'
 data: 29/11/2016
 </yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1395,192347302,2016-12-11 16:56:01,2016-11-29 17:28:45,A #Cascia famiglia che vive in una casetta cerca asciugatrice,42.7170082,13.0135022,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Sisma Ottobre""]",,,"{""cosa"": ""asciugatrice"", ""data"": ""29/11/2016"", ""descrizione"": ""Siamo una famiglia che per ora vive in una casetta di legno di amici. Abbiamo un grosso problema: il freddo non ci permette di asciugare i panni e spesso ci troviamo in difficolt\u00e0. Un'asciugatrice ci risolverebbe il problema."", ""email"": ""caterina.fiordiani@alice.it"", ""immagine"": """", ""indirizzo"": ""Largo Monsignor Antonio Elemosina, Cascia, PG, UMB, 06043, Italia"", ""lat"": ""42.7170082"", ""link"": """", ""lon"": ""13.0135022"", ""tel"": ""3392750292""}","<pre><yamldata>tel: '3392750292'
-email: caterina.fiordiani@alice.it
-cosa: asciugatrice
-descrizione: 'Siamo una famiglia che per ora vive in una casetta di legno di amici. Abbiamo un grosso problema: il freddo non ci permette di asciugare i panni e spesso ci troviamo in difficoltà. Un''asciugatrice ci risolverebbe il problema.'
-indirizzo: 'Largo Monsignor Antonio Elemosina, Cascia, PG, UMB, 06043, Italia'
-lat: '42.7170082'
-lon: '13.0135022'
-link: ''
-immagine: ''
-data: 29/11/2016
-</yamldata></pre>",closed
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1395,192347302,2016-12-11 16:56:01,2016-11-29 17:28:45,A #Cascia famiglia che vive in una casetta cerca asciugatrice,42.7170082,13.0135022,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Sisma Ottobre""]",,,"{""cosa"": ""asciugatrice"", ""data"": ""29/11/2016"", ""descrizione"": ""Siamo una famiglia che per ora vive in una casetta di legno di amici. Abbiamo un grosso problema: il freddo non ci permette di asciugare i panni e spesso ci troviamo in difficolt\u00e0. Un'asciugatrice ci risolverebbe il problema."", ""email"": ""caterina.fiordiani@alice.it"", ""immagine"": """", ""indirizzo"": ""Largo Monsignor Antonio Elemosina, Cascia, PG, UMB, 06043, Italia"", ""lat"": ""42.7170082"", ""link"": """", ""lon"": ""13.0135022"", ""tel"": ""3392750292""}","<pre><yamldata>tel: '3392750292'
 email: caterina.fiordiani@alice.it
 cosa: asciugatrice
