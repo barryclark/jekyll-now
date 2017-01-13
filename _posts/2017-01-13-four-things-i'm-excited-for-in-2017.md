@@ -6,9 +6,16 @@ keywords: [tax, solar eclipse, 2017, married]
 image: /images/covers/4Things2017-cover.png
 ---
 
+2017 is going to be an exciting year for me, and there are going to be a lot of things happening. Here are four things I'm especially excited for!
+
+<style>
+.entry img{margin-left: 0;}
+</style>
+
 ## Selling My House
 
 ![Selling My House](/images/4things2017/sell-house.jpg "Selling My House")
+*image derived from [unsplash.com](https://unsplash.com/photos/1ddol8rgUH8)*
 
 I moved into my current home back in 2007 - which means I've lived there about 10 years. Since I'm getting married this year (see item #4 below) and moving in with my future wife, I no longer need my house.
 I thought of renting it out, but I don't want to deal with tenants or upkeep, especially since it doesn't have air conditioning.
@@ -20,6 +27,7 @@ I guess it's possible that I'll sell it for over $250,000 - but I highly doubt i
 ## Graduating
 
 ![Graduating](/images/4things2017/graduate.jpg "Graduating")
+*image derived from [unsplash.com](https://unsplash.com/photos/32jpXPNlmqY)*
 
 I received my Bachelor in Computer Science from Wright State in 2012, and have been working on my Master in Computer Science since fall 2014. Since work is paying for it, and I don't want to overdo myself, I've only been taking on class a semester.
 
@@ -32,6 +40,7 @@ This is a soft goal for me - if I have to wait until 2018 to graduate, I'm fine 
 ## Solar Eclipse
 
 ![Solar Eclipse](/images/4things2017/eclipse.jpg "Solar Eclipse")
+*image derived from [www.lucnix.be](http://www.lucnix.be/v/Astronomy/Solar+eclipse+1999+Luc+Viatour.jpg.html)*
 
 The last solar eclipse - [May 10, 1994](https://en.wikipedia.org/wiki/Solar_eclipse_of_May_10,_1994) - I missed because I had detention. Yep, I was in elementary school back then, and the teachers decided whatever infraction I had committed was serious enough to warrant that I miss the most incredible event that is a solar eclipse.
 
@@ -42,6 +51,7 @@ Bitter as I am about that, I'm not too worried about it since [the next solar ec
 ## Getting Married
 
 ![Getting Married](/images/4things2017/marry.jpg "Getting Married")
+*image derived from [unsplash.com](https://unsplash.com/search/marriage?photo=w4bp40RJZ9M)*
 
 Saving the best for last - I'm getting married (and hopefully starting a family) this year! We've got a lot to plan for the wedding, although I think we've already accomplished a lot.
 
