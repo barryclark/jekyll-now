@@ -3,7 +3,7 @@ layout: post
 title: Struts2 Introduction
 permalink: /blog/java-platform/java-ee/struts2/struts2-introduction
 summary: Merhaba arkadaşlar, bu yazımızda J2EE web framework'lerinden biri olan Struts2'ye giriş yapacağız.
-image: /images/java-platform/java-ee/jms/jms_bestpractice.png
+image: /images/java-platform/java-ee/struts2/struts2-index.jsp.png
 ---
 
 ### Struts2
