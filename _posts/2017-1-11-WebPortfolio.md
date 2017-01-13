@@ -4,9 +4,6 @@ title: WebPortfolio
 category: projects
 ---
 
-WebPortfolio
----
-
 ## 개발환경
 + <pre><code>Django == 1.10.4</code></pre>
 + <pre><code>Python == 3.4.3</code></pre>
