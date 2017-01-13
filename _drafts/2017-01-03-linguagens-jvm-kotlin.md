@@ -31,12 +31,12 @@ O Kotlin foi pensado para ser uma linguagem moderna e voltada para a indústria 
 
 A linguagem foi criada para ser pragmática na resolução de problemas além de trazer diversas funcionalidades que vemos em outras linguagens modernas.
 
-## Preparação de ambiente
+## Configuração e suporte de IDE's
 
 Existem plugins para o [IntelliJ IDEA](https://kotlinlang.org/docs/tutorials/getting-started.html), [Eclipse](https://kotlinlang.org/docs/tutorials/getting-started-eclipse.html) e [Netbeans](http://plugins.netbeans.org/plugin/68590/kotlin), mas a [configuração](https://kotlinlang.org/docs/tutorials/command-line.html) é bem simples para qualquer plataforma, basta efetuar o [download](https://github.com/JetBrains/kotlin/releases/tag/v1.0.5-2) do compilador e colocar a pasta bin no PATH do sistema (para os sistemas Posix pode-se utilizar o [SDKMAN](http://sdkman.io/)).
 
 {% include image.html url="/images/20170103/kotlinc.gif" description="Teste do funcionamento do compilador do Kotlin" %}
 
-## Funcionalidades
+## Comparando com a linguagem Java
 
-
+O Kotlin possui funcionalidades muito úteis e interessantes, irei listar os que me chamaram mais atenção. 
