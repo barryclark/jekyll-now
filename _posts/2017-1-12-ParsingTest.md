@@ -4,9 +4,6 @@ title: ParsingTest
 category: projects
 ---
 
-ParsingTest
----
-
 ## 개발환경
 + Django == 1.10.4
 + Python == 3.4.3
