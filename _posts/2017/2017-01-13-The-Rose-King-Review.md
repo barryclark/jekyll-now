@@ -102,7 +102,7 @@ There's something satisfying about moving the single Crown Token over the spaces
 
 There's certainly a place in our collection for The Rose King, but I'm not certain how much play it'll really get even though we've had a good time playing it. While it holds up great for its age, there's nothing about it that really stood out in my mind as going above and beyond for a great gaming experience.
 
-I'm a bit torn on this one. It's a solid game, by no means bad. It just didn't make *enough* of an impression on me. I don't feel the need, and in the end it may be one that just slips from memory in time.
+I'm a bit torn on this one. It's a solid game, by no means bad. It just didn't make *enough* of an impression on me. I don't feel the need to play, and in the end it may be one that just slips from memory in time.
 
 *A copy of The Rose King was provided free for review by Thames & KOSMOS.*
 
