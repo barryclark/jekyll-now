@@ -12,7 +12,7 @@ author: Rob Kalajian
 ![The Rose King!](/images/theroseking/box.jpg){: .float-right}
 <h2>Prelude</h2>
 
-Originally published in 1997 (with a theme of farmers and ranchers), then reprinted in 1999 as part of KOSMOS's 2-player series, Rosenkönig was never really an easy game to find in the US. Last year Thames & KOSMOS brought a new reprinting of the states, titled The Rose King. The game brings almost a nostalgic feeling back when playing, and really fits well into the KOSMOS 2-player frame of mind.
+Originally published in 1997 (with a theme of farmers and ranchers), then reprinted in 1999 as part of KOSMOS's 2-player series, Rosenkönig was never really an easy game to find in the US. Last year Thames & KOSMOS brought a new reprint to the states, titled The Rose King. The game brings almost a nostalgic feeling back when playing, and really fits well into the KOSMOS 2-player frame of mind.
 
 <h2>Play</h2>
 
