@@ -24,7 +24,8 @@ Struts2'nin temel avantajları şunlardır;
 
 #### Strut2 Starter Project
 Struts2'ye giriş yapacağımız örneğe geçelim. Öncelikle Struts2 de dosya/dizin yapısı nasıldır ona bakalım;
-```
+
+``` java
 project(web-app)
 │   
 │    
