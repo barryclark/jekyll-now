@@ -10,6 +10,10 @@ layout: default
       <div class="entry">
         {{ post.excerpt }}
         {{ post.category }}
+        test
+        {{% for category in post.categories %}}
+          category
+        {{% end for %}
       </div>
 
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
