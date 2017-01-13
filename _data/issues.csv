@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1562,200757651,2017-01-13 23:39:33,2017-01-13 23:31:11,Raccolta mangimi per allevatori di #Ussita,43.2484575,13.509212,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Facebook"", ""Sisma Ottobre""]",,http://i.imgur.com/9ADGQSs.jpg,"{""cosa"": ""Raccolta mangimi per allevatori di #Ussita"", ""data"": ""13/01/2017"", ""descrizione"": ""Ad Ussita servono mangimi per vari tipi di animali (cani, gatti, conigli, polli, bovini, pecore). Si possono donare tutti i tipi di mangimi, senza particolari componenti o specialistiche. Il punto di raccolta \u00e8 a Corridonia (Mc), in via Castellano 5, tutti i giorni ore 15-19. Contatti: Chiara Fratani 3476870848, Loredana Capone (veterinaria) 3384666953."", ""email"": """", ""immagine"": ""http://i.imgur.com/9ADGQSs.jpg"", ""indirizzo"": ""Piazza Filippo Corridoni, Corridonia, MC, Marche, 62014, Italia"", ""lat"": ""43.2484575"", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1827433597524223/"", ""lon"": ""13.509212"", ""tel"": ""3476870848 - 3384666953""}","<pre><yamldata>tel: '3476870848 - 3384666953'
+email: ''
+cosa: 'Raccolta mangimi per allevatori di #Ussita'
+descrizione: 'Ad Ussita servono mangimi per vari tipi di animali (cani, gatti, conigli, polli, bovini, pecore). Si possono donare tutti i tipi di mangimi, senza particolari componenti o specialistiche. Il punto di raccolta è a Corridonia (Mc), in via Castellano 5, tutti i giorni ore 15-19. Contatti: Chiara Fratani 3476870848, Loredana Capone (veterinaria) 3384666953.'
+indirizzo: 'Piazza Filippo Corridoni, Corridonia, MC, Marche, 62014, Italia'
+lat: '43.2484575'
+lon: '13.509212'
+link: 'https://www.facebook.com/groups/1758670357733881/permalink/1827433597524223/'
+immagine: 'http://i.imgur.com/9ADGQSs.jpg'
+data: 13/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1561,200754783,2017-01-13 23:12:10,2017-01-13 23:11:06,"DireGiovani, sportello di ascolto giovani",,,"[""Accettato"", ""Bollettino"", ""Contatti"", ""Notizie Utili"", ""Sisma Ottobre""]",,,"{""data"": ""13/01/2017"", ""descrizione"": ""La rete DireGiovani offre supporto psicologico online ai giovani che vivono nelle zone terremotate. Psicologi, medici, adolescentologi, e altri specialisti, attraverso il servizio in rete, offrono supporto, indirizzano verso le strutture adeguate o danno semplicemente un consiglio basato sulla professionalit\u00e0 e l\u2019esperienza quotidiana a contatto con i giovani."", ""email"": ""esperti@diregiovani.it"", ""indirizzo"": """", ""lat"": """", ""link"": ""http://www.diregiovani.it/rubrica/esperti/"", ""lon"": """", ""nome"": ""DireGiovani, sportello di ascolto giovani"", ""tel"": ""3334118790 (sms)""}","<pre><yamldata>nome: 'DireGiovani, sportello di ascolto giovani'
 tel: '3334118790 (sms)'
 email: esperti@diregiovani.it
