@@ -99,3 +99,5 @@ Vhodné je si i zatrhnout při commitování volbu `Reformat code` pro automatic
 
 # Too Long, Didn't Read?
 Komentujte s rozvahou a proč, ne co kód dělá. Dokumentujte v kódu, usnadněte si život automatikou. Ve formátování kódu buďte konzistentní a dodržujte stardardy dané projektem. 
+
+*Mnoho vývojářů už většinu doporučení v tomto miniseriálu bude znát a někdy může mít jiný názor. Prosím, ozvěte se do komentářů s čím nesouhlasíte či byste doplnili, věcná polemika je mnohem přínosnější než taktní mlčení.* 
