@@ -91,6 +91,10 @@ figcaption {
     }
 }
 
+img + em {
+    font-size: 0.7em;	
+}
+
 .fourOhFour {
     width: 400px;
     display: block;
