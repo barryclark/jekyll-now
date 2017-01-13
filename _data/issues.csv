@@ -10,7 +10,7 @@ link: 'https://www.facebook.com/groups/1758670357733881/permalink/18274335975242
 immagine: 'http://i.imgur.com/9ADGQSs.jpg'
 data: 13/01/2017
 </yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1561,200754783,2017-01-13 23:12:10,2017-01-13 23:11:06,"DireGiovani, sportello di ascolto giovani",,,"[""Accettato"", ""Bollettino"", ""Contatti"", ""Notizie Utili"", ""Sisma Ottobre""]",,,"{""data"": ""13/01/2017"", ""descrizione"": ""La rete DireGiovani offre supporto psicologico online ai giovani che vivono nelle zone terremotate. Psicologi, medici, adolescentologi, e altri specialisti, attraverso il servizio in rete, offrono supporto, indirizzano verso le strutture adeguate o danno semplicemente un consiglio basato sulla professionalit\u00e0 e l\u2019esperienza quotidiana a contatto con i giovani."", ""email"": ""esperti@diregiovani.it"", ""indirizzo"": """", ""lat"": """", ""link"": ""http://www.diregiovani.it/rubrica/esperti/"", ""lon"": """", ""nome"": ""DireGiovani, sportello di ascolto giovani"", ""tel"": ""3334118790 (sms)""}","<pre><yamldata>nome: 'DireGiovani, sportello di ascolto giovani'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1561,200754783,2017-01-13 23:39:53,2017-01-13 23:11:06,"DireGiovani, sportello di ascolto giovani",,,"[""Accettato"", ""Bollettino"", ""Contatti"", ""Facebook"", ""Notizie Utili"", ""Sisma Ottobre""]",,,"{""data"": ""13/01/2017"", ""descrizione"": ""La rete DireGiovani offre supporto psicologico online ai giovani che vivono nelle zone terremotate. Psicologi, medici, adolescentologi, e altri specialisti, attraverso il servizio in rete, offrono supporto, indirizzano verso le strutture adeguate o danno semplicemente un consiglio basato sulla professionalit\u00e0 e l\u2019esperienza quotidiana a contatto con i giovani."", ""email"": ""esperti@diregiovani.it"", ""indirizzo"": """", ""lat"": """", ""link"": ""http://www.diregiovani.it/rubrica/esperti/"", ""lon"": """", ""nome"": ""DireGiovani, sportello di ascolto giovani"", ""tel"": ""3334118790 (sms)""}","<pre><yamldata>nome: 'DireGiovani, sportello di ascolto giovani'
 tel: '3334118790 (sms)'
 email: esperti@diregiovani.it
 descrizione: 'La rete DireGiovani offre supporto psicologico online ai giovani che vivono nelle zone terremotate. Psicologi, medici, adolescentologi, e altri specialisti, attraverso il servizio in rete, offrono supporto, indirizzano verso le strutture adeguate o danno semplicemente un consiglio basato sulla professionalità e l’esperienza quotidiana a contatto con i giovani.'
@@ -1302,6 +1302,17 @@ descrizione: 'Un messaggio strappalacrime, la foto giusta del terremoto di Norci
 link: 'http://www.perugiatoday.it/cronaca/terremoto-norcia-denuncia-sciacallo-facebook-truffa-carabinieri-denuncia-terremotati.html'
 data: 29/11/2016
 </yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1395,192347302,2016-12-11 16:56:01,2016-11-29 17:28:45,A #Cascia famiglia che vive in una casetta cerca asciugatrice,42.7170082,13.0135022,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Sisma Ottobre""]",,,"{""cosa"": ""asciugatrice"", ""data"": ""29/11/2016"", ""descrizione"": ""Siamo una famiglia che per ora vive in una casetta di legno di amici. Abbiamo un grosso problema: il freddo non ci permette di asciugare i panni e spesso ci troviamo in difficolt\u00e0. Un'asciugatrice ci risolverebbe il problema."", ""email"": ""caterina.fiordiani@alice.it"", ""immagine"": """", ""indirizzo"": ""Largo Monsignor Antonio Elemosina, Cascia, PG, UMB, 06043, Italia"", ""lat"": ""42.7170082"", ""link"": """", ""lon"": ""13.0135022"", ""tel"": ""3392750292""}","<pre><yamldata>tel: '3392750292'
+email: caterina.fiordiani@alice.it
+cosa: asciugatrice
+descrizione: 'Siamo una famiglia che per ora vive in una casetta di legno di amici. Abbiamo un grosso problema: il freddo non ci permette di asciugare i panni e spesso ci troviamo in difficoltà. Un''asciugatrice ci risolverebbe il problema.'
+indirizzo: 'Largo Monsignor Antonio Elemosina, Cascia, PG, UMB, 06043, Italia'
+lat: '42.7170082'
+lon: '13.0135022'
+link: ''
+immagine: ''
+data: 29/11/2016
+</yamldata></pre>",closed
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1395,192347302,2016-12-11 16:56:01,2016-11-29 17:28:45,A #Cascia famiglia che vive in una casetta cerca asciugatrice,42.7170082,13.0135022,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Sisma Ottobre""]",,,"{""cosa"": ""asciugatrice"", ""data"": ""29/11/2016"", ""descrizione"": ""Siamo una famiglia che per ora vive in una casetta di legno di amici. Abbiamo un grosso problema: il freddo non ci permette di asciugare i panni e spesso ci troviamo in difficolt\u00e0. Un'asciugatrice ci risolverebbe il problema."", ""email"": ""caterina.fiordiani@alice.it"", ""immagine"": """", ""indirizzo"": ""Largo Monsignor Antonio Elemosina, Cascia, PG, UMB, 06043, Italia"", ""lat"": ""42.7170082"", ""link"": """", ""lon"": ""13.0135022"", ""tel"": ""3392750292""}","<pre><yamldata>tel: '3392750292'
 email: caterina.fiordiani@alice.it
 cosa: asciugatrice
