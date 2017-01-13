@@ -10,9 +10,12 @@ layout: default
       <div class="entry">
         {{ post.excerpt }}
         {{ post.category }}
-        test
         {{% for category in post.categories %}}
+        {{% if post.category == "projects" %}}
           category
+        {{ post.title }}
+        {{% end if %}}
+        
         {{% end for %}
       </div>
 
