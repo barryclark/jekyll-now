@@ -539,17 +539,39 @@ if(!trustResolver.isAnonymous(context.getAuthentication())) {
 
 ### 문제
 
--	상황 1. 어플리케이션 실행 중 일부 Membase 서버가 죽었을 때
+-	**상황 1. 어플리케이션 실행 중 일부 Membase 서버가 죽었을 때**
 
-	**서버에서는** `Auto FailOver`가 작동되어 장애 조치 노드에서 처리하는 복제 된 데이터가 클러스터의 다른 노드에서 활성화되게 됩니다. (서버 2대 추가 발급 후 정확한 동작 확인 예정)
+	<br>**서버에서는** `Auto FailOver`가 작동되어 장애 조치 노드에서 처리하는 복제 된 데이터가 클러스터의 다른 노드에서 활성화되게 됩니다.
 
-	어플리케이션에서는 이미 Bean으로 등록된 SpyMemchaced가 모든 노드의 정보를 가지고 있기 때문에, 장애 서버 외 다른 서버로부터 vBucket 정보를 수신받아 정상적으로 동작될 수 있으며, SpyMemchaced Auto Reconect 전략에 따라, 지속적으로 해당 노드의 connect를 확인합니다. 장애 복구 조치에 따라 일부 요청에 실패할 가능성이 있습니다.
+	<br>Auto FailOver 전
 
--	상황 2. 어플리케이션 실행 중 모든 Membase 서버가 죽었을 때
+	![Failver Before](/images/2016/2016_12_23_COUCHBASE/a_failover_before.png)
 
--	상황 3. 일부 Membase 서버가 죽었을 때 어플리케이션 로드
+	<br>Auto FailOver 후
 
--	상황 4. 모든 Membase 서버가 죽었을 때 어플리케이션 로드
+	![Failver After](/images/2016/2016_12_23_COUCHBASE/a_failover_after.png)
+
+	<br>88번 서버에 장애가 발생하였고 자동 장애 조치가 발생하여 88번 서버가 자동으로 `failover` 되었으며, 88번 서버에 존재하던 3개의 아이템에 대한 복제본을 가지고 있던 128번 서버에서 데이터가 활성상태로 변경된 것을 확인할 수 있습니다.
+
+	<br> 각 서버로 흩어져 있는 복제본 데이터가 비장애 서버에서 활성화되며, 이 때 데이터가 각 서버에 골고루 활성화되는 것은 아닙니다. 데이터를 재분배하려면 Rebalance 작업을 해야되며, 이 작업은 수동으로 진행되어야 합니다.<br><br>
+
+	![Failver Status](/images/2016/2016_12_23_COUCHBASE/a_failover_status.png)
+
+	연쇄 장애를 막기 위해 `Auto failover`는 한번만 발생하며, `Quota`를 Reset해주어야만 다시 자동 장애 조치를 하게 됩니다.
+
+	`Auto Failover`는 최소 30초마다 서버를 확인하게 되므로 최대 30초 간 해당 서버의 데이터를 가져오려는 요청에 대해서 TimeOut을 발생시키게 되며, `Auto Failover` 과정에서는 기존 장애 서버에 대한 요청에 대하여 `Cancel`을 반환하는 작업을 하게 되며, 복제본 데이터를 활성화하는 서버에서는 리소스를 다소 사용할 수 있습니다.
+
+	<br>**어플리케이션에서는** 이미 `Bean`으로 등록된 `SpyMemchaced`가 모든 노드의 정보를 가지고 있기 때문에, 장애 서버 외 다른 서버로부터 vBucket 정보를 수신받아 정상적으로 동작됩니다.
+
+	`Auto FailOver`되기 전에는 vBucket에서 장애 서버가 제외되지 않았기 때문에 SpyMemchaced Auto Reconnect 전략에 따라, 지속적으로 해당 노드의 connect를 확인하며, 이 과정에서 `TimeOutException`이 발생할 수 있습니다.
+
+	`Auto FailOver` 후에는 vBucket 정보를 새로 수신받아 장애 서버에 대한 connect를 확인하지 않습니다.
+
+-	**상황 2. 어플리케이션 실행 중 모든 Membase 서버가 죽었을 때**
+
+-	**상황 3. 일부 Membase 서버가 죽었을 때 어플리케이션 로드**
+
+-	**상황 4. 모든 Membase 서버가 죽었을 때 어플리케이션 로드**
 
 	![Application Exception](/images/2016/2016_12_23_COUCHBASE/exception.png)
 
@@ -581,7 +603,7 @@ Adapter Pattern을 적용하여 `DynamicGeneratorAdapter`를 만들었고, Adapt
 
 **후 처리 정의**
 
-빈 생성 후에 수행해야 할 작업이 있다면 `DynamicBeanExecuter`를 상속하여 `execute` Method를 정의할 수 있도록 하였습니다.
+빈 생성 후에 수행해야 할 작업는 `Generator`는 `AbstractExecutableDynamicBeanGeneratorAdapter`를 상속하여 `execute` Method를 정의할 수 있도록 하였습니다.
 
 **의존성 주입**
 
@@ -619,7 +641,7 @@ Adapter Pattern을 적용하여 `DynamicGeneratorAdapter`를 만들었고, Adapt
 
 **후 처리**
 
-`DynamicBeanFactory`는 빈이 성공적으로 생성되어 `BeanFactory`에 등록되면, 해당 `Generator`가 `DynamicBeanExecuter`를 `Interface`로 가지고 있을 시 `execute` 메서드를 실행하게 됩니다.
+`DynamicBeanFactory`는 빈이 성공적으로 생성되어 `BeanFactory`에 등록되면, 해당 `Generator`가 `AbstractExecutableDynamicBeanGeneratorAdapter`를 상속하고 있을 때 있을 시 `execute` 메서드를 실행하게 됩니다.
 
 **복구 스케줄링**
 
@@ -651,7 +673,7 @@ public class DynamicBeanRecover {
 
 ```java
 @Component
-public class MemcachedSecurityContextRepositoryDynamicGenerator extends DynamicGeneratorAdapter<MemcachedSecurityContextRepository> implements DynamicBeanExecuter {
+public class MemcachedSecurityContextRepositoryDynamicGenerator extends AbstractExecutableDynamicBeanGeneratorAdapter<MemcachedSecurityContextRepository> {
 
 		@Autowired
 		private FilterChainProxy filterChainProxy;
