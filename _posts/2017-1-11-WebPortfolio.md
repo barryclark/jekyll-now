@@ -8,8 +8,8 @@ endDate: continue
 ---
 
 ## 개발환경
-+ <code>Django == 1.10.4</code>
-+ <code>Python == 3.4.3</code>
++ `Django == 1.10.4`
++ `Python == 3.4.3`
 
 ## 프로젝트 기간
 2017.1.1 ~ 현재
