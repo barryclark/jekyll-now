@@ -5,7 +5,7 @@ layout: json
 [
 {% for post in site.categories.projects %}
     {
-        "url"           : "{{ site.url }}{{ post.url }}"
+        "url"           : "{{ site.url }}{{ post.url }}",
         "headLine"      : "{{ post.title }}",
         "text"          : "{{ post.timelineText }}",
         "startDate"     : "{{ post.startDate }}",
