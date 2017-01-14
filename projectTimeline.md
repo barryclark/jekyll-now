@@ -5,7 +5,8 @@ layout: json
 [
 {% for post in site.categories.projects %}
     {
-        "headLine"      : "<a href='{{ site.url }}{{ post.url }}'>{{ post.title }}</a>",
+        "url"           : "{{ site.url }}{{ post.url }}"
+        "headLine"      : "{{ post.title }}",
         "text"          : "{{ post.timelineText }}",
         "startDate"     : "{{ post.startDate }}",
         "endDate"       : "{{ post.endDate }}"
