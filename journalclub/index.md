@@ -14,25 +14,17 @@ As the tools in experiments neuroscience are rapidly developing, this is an impo
 * recent advances in theoretical neuroscience
 * popular theories in neuroscience
 
-Journal club meetings take place on Tuesdays at 12:30 pm in the Life Sciences Building, grad student lounge conference room (LSB 550). Sometimes there are treats.
+Journal club meetings currently take place on Wednesdays at 12:00 pm in seminar room of the Institute for Advanced Computational Science (IACS). Sometimes there are treats.
 
 **Join the club** by emailing [David Hocker](mailto:david.hocker@stonybrook.edu?subject=computational journal club)!
 
-# 2016 Fall Schedule
+# 2017 Spring Schedule, coming soon!
 
-- August 16: Il Memming Park
-- August 23: David Hocker
-- August 30: Gregory Kirschen
-- September 6: Luca Mazzucato
-- September 13: Luisa Le Donne
-- September 20: Jonathan Beck
-- September 27: Gulce Nazli Dikecligil
-- October 11: Giancarlo La Camera
-- October 18: Yuan Zhao
-- October 25: Arthur Zhao
-- November 1: Jin Wang
-- November 8: Shaohua Wang
-- November 16: Sriram Ganeshan
+- January 18: David Hocker
+
+
+
+
 
 You can pick or [**suggest papers**](https://www.google.com/url?q=https://docs.google.com/document/d/17SuoVIIDbCae5GnxSHGO5BW2zbVP6wBCbaGGfgFLAOQ/edit?usp%3Dsharing&sa=D&ust=1472068897083000&usg=AFQjCNF5f_dZMloe4l3jWOm_mhxe7utbqw) to be discussed.
 
