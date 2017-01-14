@@ -9,7 +9,7 @@ layout: json
         "url"           : "{{ site.url }}{{ post.url }}",
         "timelineText"  : "{{ post.timelineText }}",
         "startDate"     : "{{ post.startDate }}",
-        "endDate"       : "{{ post.endDate }}",
+        "endDate"       : "{{ post.endDate }}"
     } {% if forloop.last %}{% else %},{% endif %}
 {% endfor %}
 ] 
