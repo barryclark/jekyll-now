@@ -10,7 +10,7 @@ layout: json
         "headLine"      : "{{ post.title }}",
         "text"          : "{{ post.timelineText }}",
         "asset"         : {
-                            "media": "https://vine.co/v/b55LOA1dgJU", 
+                            "media": "", 
                             "caption": "", 
                             "credit": ""
                           },
