@@ -7529,6 +7529,17 @@ immagine: ''
 data: 16/09/2016
 </yamldata></pre>
 ",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/522,177469546,2016-09-22 15:53:38,2016-09-16 16:40:16,"Castellaneta, TA - Alloggio",40.627224,16.936893,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""16/09/2016"", ""descrizione"": ""Piero mette a disposizione un alloggio"", ""email"": """", ""immagine"": """", ""indirizzo"": ""Via Giovanni Verga, Castellaneta, TA, Puglia, 74011, Italia"", ""lat"": ""40.627224"", ""link"": """", ""lon"": ""16.936893"", ""tel"": ""3389533799""}","<pre><yamldata>tel: '3389533799'
+email: ''
+descrizione: Piero mette a disposizione un alloggio
+indirizzo: 'Via Giovanni Verga, Castellaneta, TA, Puglia, 74011, Italia'
+lat: '40.627224'
+lon: '16.936893'
+link: ''
+immagine: ''
+data: 16/09/2016
+</yamldata></pre>
+",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/521,177468625,2016-09-22 15:54:23,2016-09-16 16:35:25,"Cesenatico, FC - Camping Village Cesenatico",44.20651,12.3874595,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""16/09/2016"", ""descrizione"": ""CAMPING VILLAGE CESENATICO"", ""email"": ""info@campingcesenatico.it"", ""immagine"": """", ""indirizzo"": ""Viale Giuseppe Mazzini, Valverde, Cesenatico, FC, Emilia-Romagna, 47042, Italia"", ""lat"": ""44.20651"", ""link"": """", ""lon"": ""12.3874595"", ""tel"": ""054781344""}","<pre><yamldata>tel: '054781344'
 email: info@campingcesenatico.it
 descrizione: 'CAMPING VILLAGE CESENATICO'
