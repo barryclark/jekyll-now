@@ -9,13 +9,13 @@ layout: default
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
       <div class="entry">
         {{ post.excerpt }}
-          {{% for category in post.categories %}}
-          {{% if post.category == "projects" %}}
+          {% for category in post.categories %}
+          {% if post.category == "projects" %}
             category
           {{ post.title }}
-          {{% endif %}}
+          {% endif %}
         
-        {{% endfor %}
+        {% endfor %}
       </div>
 
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
