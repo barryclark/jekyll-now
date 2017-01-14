@@ -9,7 +9,7 @@ layout: json
         "endDate"       : "{{ post.endDate }}",
         "headLine"      : "{{ post.title }}",
         "text"          : "{{ post.timelineText }}",
-        "asset":        : {
+        "asset"         : {
                             "media": "https://vine.co/v/b55LOA1dgJU", 
                             "caption": "", 
                             "credit": ""
