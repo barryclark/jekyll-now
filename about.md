@@ -4,12 +4,15 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+菊田遥平です。
+そのうち色々書きます。多分。
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+個人事業主としてデータ分析業務の請負などもやっています。
+もし何か依頼したい仕事などありましたらご連絡ください。
+ただしほとんどの場合返事を返さないのでその点ご了承ください。
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[diracdiego@gmail.com](mailto:diracdiego@gmail.com)
