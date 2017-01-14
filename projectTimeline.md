@@ -1,3 +1,7 @@
+---
+layout: json
+---
+
 [
 {% for post in site.categories.projects %}
     {
