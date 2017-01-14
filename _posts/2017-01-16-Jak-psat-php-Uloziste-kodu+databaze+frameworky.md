@@ -35,7 +35,7 @@ Do nestukturovaných databází se většinou informace ukládají ve tvaru `kl�
 
 Z pohledu ovládání databáze se dají používat funkce nebo knihovny přímo z PHP, jako třeba [mysqli](https://secure.php.net/manual/en/book.mysqli.php) nebo [PDO](https://secure.php.net/manual/en/book.pdo.php). Často se také pro usnadnění práce používá nějaká externí knihovna. Knihovny můžou pracovat s jazykem SQL napřímo, jako kupříkladu [Dibi](https://www.dibiphp.com/), nebo pomocí objektově relačního mapování (ORM), jako třeba [Doctrine](http://www.doctrine-project.org/). Problematika databází je široká a určitě se jim někdy tento blog bude věnovat více. 
 
-Pro ovládání databáze uživatelem se nejvíce používá [phpMyAdmin](https://www.phpmyadmin.net/). Za sebe můžu doporučit mnohem lehčí [adminer](https://www.adminer.org/cs/) od [Jakuba Vrány](https://www.vrana.cz/) - stačí stáhnout `adminer.php` soubor, ten nahrát na webhosting a použít přes prohlížeč. 
+Pro ovládání databáze uživatelem se nejvíce používá [phpMyAdmin](https://www.phpmyadmin.net/). Za sebe můžu doporučit mnohem lehčí [adminer](https://www.adminer.org/cs/) od [Jakuba Vrány](https://www.vrana.cz/). 
 
 # Frameworky
 Ve vývoji webových aplikací je spousta funkcionalit, které se v každém projektu opakují. Tyto funkce i s jejich problémy jsou zkušenějšími vývojáři bezpočetněkrát popsané, dobře vymyšlené i implementované. Tento hotový kód lze nalézt v knihovnách a balíčcích. A když je spojených více takových balíčků dohromady, vznikne framework. Frameworky jsou tedy sady kódu, které řeší běžné problémy projektů pomocí nejlepšího hotového řešení. 
