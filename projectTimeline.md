@@ -5,11 +5,12 @@ layout: json
 [
 {% for post in site.categories.projects %}
     {
-        "url"           : "{{ site.url }}{{ post.url }}",
+        "startDate"     : "{{ post.startDate }}",
+        "endDate"       : "{{ post.endDate }}",
         "headLine"      : "{{ post.title }}",
         "text"          : "{{ post.timelineText }}",
-        "startDate"     : "{{ post.startDate }}",
-        "endDate"       : "{{ post.endDate }}"
+        "asset":        : "",
+        "url"           : "{{ site.url }}{{ post.url }}"
     } {% if forloop.last %}{% else %},{% endif %}
 {% endfor %}
 ] 
