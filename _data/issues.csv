@@ -1,4 +1,9 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1572,200834194,2017-01-14 22:36:58,2017-01-14 22:36:24,"Regione Lazio, online il sito dell'Ufficio Speciale per la Ricostruzione",,,"[""Accettato"", ""Bollettino"", ""Facebook"", ""Notizie Utili""]",,,"{""data"": ""14/01/2017"", ""descrizione"": ""\u00c8 online il sito dell'Ufficio Speciale per la Ricostruzione della Regione Lazio con documenti, materiali e info utili per cittadini e imprese delle aree colpite dal sisma."", ""link"": ""http://www.ricostruzionelazio.it/"", ""titolo"": ""Regione Lazio, online il sito dell'Ufficio Speciale per la Ricostruzione""}","<pre><yamldata>titolo: 'Regione Lazio, online il sito dell''Ufficio Speciale per la Ricostruzione'
+descrizione: 'È online il sito dell''Ufficio Speciale per la Ricostruzione della Regione Lazio con documenti, materiali e info utili per cittadini e imprese delle aree colpite dal sisma.'
+link: 'http://www.ricostruzionelazio.it/'
+data: 14/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1571,200823734,2017-01-14 19:21:34,2017-01-14 19:21:02,Associazione Montanari Testoni - Norcia,42.7927706,13.0930812,"[""Accettato"", ""Contatti"", ""Sisma Ottobre""]",,,"{""data"": ""14/01/2017"", ""descrizione"": ""I Montanari Testoni si costituiscono ufficialmente venerd\u00ec 25 Novembre 2016 nella Citt\u00e0 di Norcia, dentro una tenda da campo. Dal 31 ottobre 2016 l\u2019urgenza dettata dagli eventi ci ha portati ad unirci per affrontare insieme le avversit\u00e0 legate al terremoto. Ci siamo riuniti spontaneamente per parlare e confrontarci sulla situazione personale e collettiva di ognuno di noi. I Montanari Testoni intendono abbracciare tutte le iniziative culturali, sociali e che valorizzano e non sfruttano il territorio e il momento, per lucrosi fini personali. Vogliamo promuovere l\u2019aggregazione sociale attraverso il miglioramento del benessere della persona e del suo ambiente di vita per noi sacrosanto, mediante iniziative che partono dal basso."", ""email"": ""montanaritestoni@gmail.com"", ""indirizzo"": ""Piazza San Benedetto, Casa Coletti, Norcia, PG, UMB, 06046, Italia"", ""lat"": ""42.7927706"", ""link"": ""http://www.montanaritestoni.it/"", ""lon"": ""13.0930812"", ""nome"": ""Associazione Montanari Testoni - Norcia"", ""tel"": """"}","<pre><yamldata>nome: 'Associazione Montanari Testoni - Norcia'
 tel: ''
 email: montanaritestoni@gmail.com
@@ -5599,18 +5604,6 @@ postale: ''
 causale: 'Donazione asta di beneficenza per terremoto centro Italia.'
 link: 'https://www.facebook.com/groups/663650213787679/'
 email: 'antonio.scanferlato@ilteatrodellestelle.it'
-data: 11/10/2016
-</yamldata></pre>
-",closed
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/780,182225969,2016-10-21 21:35:19,2016-10-11 10:12:54,"Associazione ‘Le Castagne’ di Cossito (Amatrice) - Cena di solidarietà, Roma 21 ottobre",,,"[""Accettato"", ""Pubblicare su FB"", ""Pubblicare su TW"", ""Raccolte Fondi""]",Milestone(number=22),,"{""bic"": """", ""causale"": """", ""chi"": ""Associazione \u2018Le Castagne\u2019 di Cossito (Amatrice)"", ""data"": ""11/10/2016"", ""descrizione"": ""Il 21 Ottobre l\u2019associazione \u2018Le Castagne\u2019 di Cossito (Amatrice) organizza a Roma, presso la Parrocchia della Chiesa Evangelica Metodista, in via Firenze, 38 zona Termini, la cena di beneficenza \u2018Amatrice, una realt\u00e0 fatta di frazioni, adottane una\u2019. La quota di partecipazione \u00e8 di 30 euro. L\u2019incasso della serata sar\u00e0 devoluto per attrezzature, ricostruzione e soluzioni abitative per gli sfollati del terremoto."", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""http://www.agenparl.com/terremoto-2110-lassociazione-le-castagne-cossito-cena-beneficenza-amatrice-realta-fatta-frazioni-adottane/"", ""postale"": """"}","<pre><yamldata>chi: 'Associazione ‘Le Castagne’ di Cossito (Amatrice)'
-descrizione: 'Il 21 Ottobre l’associazione ‘Le Castagne’ di Cossito (Amatrice) organizza a Roma, presso la Parrocchia della Chiesa Evangelica Metodista, in via Firenze, 38 zona Termini, la cena di beneficenza ‘Amatrice, una realtà fatta di frazioni, adottane una’. La quota di partecipazione è di 30 euro. L’incasso della serata sarà devoluto per attrezzature, ricostruzione e soluzioni abitative per gli sfollati del terremoto.'
-intestazione: ''
-iban: ''
-bic: ''
-postale: ''
-causale: ''
-link: 'http://www.agenparl.com/terremoto-2110-lassociazione-le-castagne-cossito-cena-beneficenza-amatrice-realta-fatta-frazioni-adottane/'
-email: ''
 data: 11/10/2016
 </yamldata></pre>
 ",closed
