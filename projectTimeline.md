@@ -1,12 +1,11 @@
 ---
 layout: nil
 ---
-
 [
 {% for post in site.categories.projects %}
     {
         "title"         : "{{ post.title }}",
-        "url"           : "{{ post.url }}",
+        "url"           : "{{ site.url }}{{ post.url }}",
         "timelineText"  : "{{ post.timelineText }}",
         "startDate"     : "{{ post.startDate }}",
         "endDate"       : "{{ post.endDate }}",
