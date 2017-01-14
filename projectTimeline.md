@@ -7,7 +7,7 @@ layout: json
     {
         "startDate"     : "{{ post.startDate }}",
         "endDate"       : "{{ post.endDate }}",
-        "headLine"      : "{{ post.title }}",
+        "headline"      : "{{ post.title }}",
         "text"          : "{{ post.timelineText }}",
         "asset"         : {
                             "media": "", 
