@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1574,200867942,2017-01-15 13:10:41,2017-01-15 13:10:18,"Urge mettere in sicurezza la chiesa e il campanile di #Ospedaletto, fraz. di #Norcia",42.776967,13.0596464,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Sisma Ottobre"", ""Twitter""]",,http://i.imgur.com/1bf1sLd.jpg,"{""cosa"": ""Urge mettere in sicurezza la chiesa e il campanile di #Ospedaletto, fraz. di #Norcia"", ""data"": ""15/01/2017"", ""descrizione"": ""L'associazione Libra 2.0 lancia un appello perch\u00e9 siano messi in sicurezza la chiesa e il campanile di Ospedaletto, frazione del comune di Norcia, pericolanti dal 30 ottobre."", ""email"": """", ""immagine"": ""http://i.imgur.com/1bf1sLd.jpg"", ""indirizzo"": ""Strada provinciale di Cascia, Cascia, PG, UMB, 06043, Italia"", ""lat"": ""42.776967"", ""link"": ""https://twitter.com/libra2puntozero/status/820515576426729472"", ""lon"": ""13.0596464"", ""tel"": """"}","<pre><yamldata>tel: ''
+email: ''
+cosa: 'Urge mettere in sicurezza la chiesa e il campanile di #Ospedaletto, fraz. di #Norcia'
+descrizione: 'L''associazione Libra 2.0 lancia un appello perché siano messi in sicurezza la chiesa e il campanile di Ospedaletto, frazione del comune di Norcia, pericolanti dal 30 ottobre.'
+indirizzo: 'Strada provinciale di Cascia, Cascia, PG, UMB, 06043, Italia'
+lat: '42.776967'
+lon: '13.0596464'
+link: 'https://twitter.com/libra2puntozero/status/820515576426729472'
+immagine: 'http://i.imgur.com/1bf1sLd.jpg'
+data: 15/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1572,200834194,2017-01-14 22:36:58,2017-01-14 22:36:24,"Regione Lazio, online il sito dell'Ufficio Speciale per la Ricostruzione",,,"[""Accettato"", ""Bollettino"", ""Facebook"", ""Notizie Utili""]",,,"{""data"": ""14/01/2017"", ""descrizione"": ""\u00c8 online il sito dell'Ufficio Speciale per la Ricostruzione della Regione Lazio con documenti, materiali e info utili per cittadini e imprese delle aree colpite dal sisma."", ""link"": ""http://www.ricostruzionelazio.it/"", ""titolo"": ""Regione Lazio, online il sito dell'Ufficio Speciale per la Ricostruzione""}","<pre><yamldata>titolo: 'Regione Lazio, online il sito dell''Ufficio Speciale per la Ricostruzione'
 descrizione: 'È online il sito dell''Ufficio Speciale per la Ricostruzione della Regione Lazio con documenti, materiali e info utili per cittadini e imprese delle aree colpite dal sisma.'
 link: 'http://www.ricostruzionelazio.it/'
@@ -2057,16 +2068,6 @@ data: 18/11/2016
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1306,190343242,2016-11-25 23:38:42,2016-11-18 15:16:08,RicostruiAmo Natale: i cesti solidali del comitato Ricostruiamo #Saletta,,,"[""Accettato"", ""acquisto solidale"", ""Bollettino"", ""Form"", ""Sisma Ottobre""]",,,"{""data"": ""18/11/2016"", ""descrizione"": ""Presentiamo le proposte del Comitato Ricostruiamo Saletta per i vostri cesti solidali. Non perdete l'occasione di aiutare le aziende colpite dal terremoto e degustare prodotti di altissima qualit\u00e0. Per info e prenotazioni scrivete a ricostruiamonatale@gmail.com, oppure sulla pagina facebook RicostruiAmo Natale. Grazie!"", ""link"": ""https://www.facebook.com/regalodinatalesolidale/?ref=aymt_homepage_panel"", ""titolo"": ""RicostruiAmo Natale. Un aiuto concreto per le aziende del Centro Italia.""}","<pre><yamldata>titolo: 'RicostruiAmo Natale. Un aiuto concreto per le aziende del Centro Italia.'
 descrizione: 'Presentiamo le proposte del Comitato Ricostruiamo Saletta per i vostri cesti solidali. Non perdete l''occasione di aiutare le aziende colpite dal terremoto e degustare prodotti di altissima qualità. Per info e prenotazioni scrivete a ricostruiamonatale@gmail.com, oppure sulla pagina facebook RicostruiAmo Natale. Grazie!'
 link: 'https://www.facebook.com/regalodinatalesolidale/?ref=aymt_homepage_panel'
-data: 18/11/2016
-</yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1304,190237976,2016-11-18 11:42:54,2016-11-18 05:15:33,Contatti Protezione civile #Marche per donazioni e informazioni utili ,,,"[""Accettato"", ""Contatti"", ""Form"", ""Notizie Utili"", ""Sisma Ottobre""]",,,"{""data"": ""18/11/2016"", ""descrizione"": ""Chi vuole donare o abbia bisogno di contattare la Protezione civile della Regione Marche pu\u00f2 inviare un email a prot.civ@regione.marche.it o telefonare a 0718064163."", ""email"": ""prot.civ@regione.marche.it"", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""nome"": ""Protezione civile marche - regione"", ""tel"": ""0718064163""}","<pre><yamldata>nome: 'Protezione civile marche - regione'
-tel: '0718064163'
-email: prot.civ@regione.marche.it
-descrizione: 'Chi vuole donare o abbia bisogno di contattare la Protezione civile della Regione Marche può inviare un email a prot.civ@regione.marche.it o telefonare a 0718064163.'
-indirizzo: ''
-lat: ''
-lon: ''
-link: ''
 data: 18/11/2016
 </yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1304,190237976,2016-11-18 11:42:54,2016-11-18 05:15:33,Contatti Protezione civile #Marche per donazioni e informazioni utili ,,,"[""Accettato"", ""Contatti"", ""Form"", ""Notizie Utili"", ""Sisma Ottobre""]",,,"{""data"": ""18/11/2016"", ""descrizione"": ""Chi vuole donare o abbia bisogno di contattare la Protezione civile della Regione Marche pu\u00f2 inviare un email a prot.civ@regione.marche.it o telefonare a 0718064163."", ""email"": ""prot.civ@regione.marche.it"", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""nome"": ""Protezione civile marche - regione"", ""tel"": ""0718064163""}","<pre><yamldata>nome: 'Protezione civile marche - regione'
