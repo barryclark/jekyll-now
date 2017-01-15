@@ -4,12 +4,14 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Hello! We are participants of Technovation Challenge 2017. We want to make the world better using technologies. Join and support us! :)
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+We all are students of Nazarbayev Intellectual School 10th grade.
+
+Our project mentors are Ms Aigerim and Mr Yermek. 
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[email@domain.com](mailto:whynottechnovation@gmail.com)
