@@ -10,9 +10,9 @@ layout: json
         "headline"      : "{{ post.title }}",
         "text"          : "{{ post.timelineText }}",
         "asset"         : {
-                            "media": "", 
-                            "caption": "", 
-                            "credit": ""
+                            "media": "{{ post.asset_media }}",
+                            "caption": "{{ post.asset_caption }}",
+                            "credit": "{{ post.asset_credit }}"
                           },
         "url"           : "{{ site.url }}{{ post.url }}"
     } {% if forloop.last %}{% else %},{% endif %}
