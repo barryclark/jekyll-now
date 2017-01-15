@@ -9,7 +9,7 @@ name: Red Box Labs
 description: Creating useful things
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: images/logo.png
+avatar: https://red-box-labs.github.io/images/box-logo.png
 
 #
 # Flags below are optional
