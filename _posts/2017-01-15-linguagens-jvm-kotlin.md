@@ -118,7 +118,7 @@ Esses foram os pontos que achei mais interessantes da linguagem, mas existem mui
 
 ## Concluindo
 
-A sintaxe linguagem ajuda a diminuir as linhas de código, não só pelo suporte a programação funcional, mas pelas utilidades apresentadas. O objetivo de ser uma linguagem mais prática para o dia-a-dia, acredito ter sido alcançada, principalmente por apresentar muitas facilidades encontradas em bibliotecas à parte já embutidas na linguagem.
+A sintaxe linguagem ajuda a diminuir as linhas de código, não só pelo suporte a programação funcional, mas pelas utilidades apresentadas. Acredito que o objetivo de ser uma linguagem mais prática para o desenvolvedor foi alcançada, principalmente por apresentar muitas facilidades que só encontramos em bibliotecas à parte.
 
 ## Fonte
 
