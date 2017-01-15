@@ -7,6 +7,9 @@ startDate: 2016.12.27
 endDate: continue
 ---
 
+## Summary
+This is my first django project for Web portfolio.
+
 ## Environment
 + `Python == 3.4.3`
 + `Django == 1.10.4`
@@ -16,9 +19,6 @@ endDate: continue
 
 ## Project duration
 2017.1.1 ~ continue
-
-## Summary
-This is my first django project for Web portfolio.
 
 ## Main Text
 I uploaded my source code in [Github](https://github.com/poqw/portfolio).
