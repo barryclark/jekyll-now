@@ -2,21 +2,27 @@
 layout: post
 title: WebPortfolio
 category: projects
-timelineText: My first Django Project.
+timelineText: My Web portfolio.
 startDate: 2016.12.27
 endDate: continue
 ---
 
-## 개발환경
+## Environment
 + `Django == 1.10.4`
 + `Python == 3.4.3`
 
-## 프로젝트 기간
-2017.1.1 ~ 현재
+## Project duration
+2017.1.1 ~ continue
 
-## 결과물
-[poqw's Web Portfolio][Web_Portfolio]
-[Web_Portfolio]: http://poqw.pythonanywhere.com "poqw's Web_Portfolio"
+## Summary
+This is my first django project for Web portfolio.
+
+## Main Text
+I uploaded my source code in [Github](https://github.com/poqw/portfolio).I used web hosting service by [pythonanywhere](pythonanywhere.com) to serve my site. 
+
+## Result
+
+[poqw's Web Portfolio](http://poqw.pythonanywhere.com)
 
 
 
