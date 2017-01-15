@@ -10,7 +10,7 @@ Tappd.net is about you. It's about giving you the informaation you need to make 
 
 We're a group of people who care; Environmental scientists, software developers, information designers, and just people who want to get involved. We're donating our personal time ot this project, because it's worth it.
 
-![Shoshanna](https://raw.githubusercontent.com/SuperdogBlog/SuperdogBlog.github.io/901ddcf51641dd4bee177835878f970416c57625/images/ShosheTappdHeadshot.jpg) 
+![Shoshanna](https://raw.githubusercontent.com/SuperdogBlog/SuperdogBlog.github.io/901ddcf51641dd4bee177835878f970416c57625/images/ShosheTappdHeadshotSm.png) 
 ## Shoshanna: Chief Ideator
 
 ![Kathita] (https://raw.githubusercontent.com/SuperdogBlog/SuperdogBlog.github.io/901ddcf51641dd4bee177835878f970416c57625/images/KathitaTappdHeadshotSm.png) 
