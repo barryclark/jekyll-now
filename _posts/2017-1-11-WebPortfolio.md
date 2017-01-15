@@ -32,7 +32,7 @@ With my fisrt project with django, this is a graet experiance of me.
 
 ## Result
 
-![Web Portfolio]({{ site.url }}/images/webportfolio_1.png)
+![Web Portfolio]({{ site.url }}/images/webportfolio_1.PNG)
 
 [poqw's Web Portfolio](http://poqw.pythonanywhere.com)
 
