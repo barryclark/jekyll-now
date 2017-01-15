@@ -194,7 +194,17 @@ img {
   margin: 0;
   color: $darkGray;
   cursor: pointer;
-  font-family: $helveticaNeue;
+  font-family: Courier;
+  font-weight: 300;
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+
+.site-name-em {
+  margin: 0;
+  color: $darkRed;
+  cursor: pointer;
+  font-family: Courier;
   font-weight: 300;
   font-size: 28px;
   letter-spacing: 1px;
