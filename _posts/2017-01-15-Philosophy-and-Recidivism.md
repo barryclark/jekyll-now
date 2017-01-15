@@ -30,7 +30,7 @@ That is why we need to expect more from a decolonized statistics than simply dev
 These recidivism algorithms are proving inaccurate based on patterns of structural bias which mirror racial and socio-economic biases already present in the criminal justice system and yet people are not questioning them because of the implicit “perfection” of mathematics and mathematical modelling by extension. 
 It is therefore up to a decolonized statistics to welcome the emotional and philosophical discomfort that comes with using a computer program to essentially determine prison sentences for vulnerable individuals.  
 We need to expect as standard the development of values driven, ethically sound models. 
-In 2017 we need to be able to expect imagination and forward thinking to help create the world we want, rather than thinking which further cements the colonial foundations of our capitalist society.  
+In 2017 we need to be able to expect imagination and forward thinking to help create the world we want, rather than thinking which further cements the colonial foundations of our capitalist society.
 Learning about decolonization is an ongoing process and it took a while before I diagnosed the problems in my own thinking.
 
 With that said, my detailed misgivings about current recidivism models and some explanations about how to improve and decolonize them will follow in the next post.
