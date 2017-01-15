@@ -14,4 +14,4 @@ Our project mentors are Ms Aigerim and Mr Yermek.
 
 ### Contact me
 
-[email@domain.com](mailto:whynottechnovation@gmail.com)
+[whynottechnovation@gmail.com](mailto:whynottechnovation@gmail.com)
