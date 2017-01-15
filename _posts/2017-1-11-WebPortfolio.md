@@ -31,9 +31,9 @@ In my Web site, you can see the timeline table about projects I've done. And the
 With my fisrt project with django, this is a graet experiance of me.
 
 ## Result
-```html
-<img src="{{ site.url }}/images/webportfolio_1.jpg" style="width: 400px;"/><br>
-```
+
+![Web Portfolio]({{ site.url }}/images/webportfolio_1.jpg)
+
 [poqw's Web Portfolio](http://poqw.pythonanywhere.com)
 
 
