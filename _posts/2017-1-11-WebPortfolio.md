@@ -6,8 +6,8 @@ timelineText: This is my first django project for Web portfolio.
 startDate: 2016.12.27
 endDate: continue
 asset_media: /images/webportfolio_1.PNG
-asset_caption: caption
-asset_credit: credit
+asset_caption: 
+asset_credit: 
 ---
 
 ## Summary
