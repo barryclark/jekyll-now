@@ -10,6 +10,9 @@ endDate: continue
 ## Environment
 + `Python == 3.4.3`
 + `Django == 1.10.4`
++ `jquery == 3.1.1`
++ `font-awesome == 4.7.0`
++ `bootstrap == 3.2.0`
 
 ## Project duration
 2017.1.1 ~ continue
@@ -21,12 +24,14 @@ This is my first django project for Web portfolio.
 I uploaded my source code in [Github](https://github.com/poqw/portfolio).
 In the project, I used web hosting service by [pythonanywhere](pythonanywhere.com). 
 If you create an account and launch a site as first on that site, you can get free web hosting service for 5 months.
-And also, [pythonanywhere](pythonanywhere.com) provides web console. 
+And also, [pythonanywhere](pythonanywhere.com) provides web console. The console can save its status when you leave the site.
+This my first use of web hosting service too, but I think this hosting service is good for beginners like me.
+
 In my Web site, you can see the timeline table about projects I've done. And the table was created by [TimelineJS](https://timeline.knightlab.com/). I think it is very confortable of using and applying it.
 With my fisrt project with django, this is a graet experiance of me.
 
 ## Result
-
+[<img src="{{ site.baseurl }}/images/webportfolio_1.jpg" style="width: 400px;"/>]({{ site.baseurl }}/)
 [poqw's Web Portfolio](http://poqw.pythonanywhere.com)
 
 
