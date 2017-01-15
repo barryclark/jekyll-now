@@ -5,7 +5,7 @@ author: Nathaniel Joselson
 tags: Decolonization Statistics Science Colonization University
 ---
 
-![Decolonization]({{ site.baseurl }}/images/prison.jpg)
+![Decolonization]({{ site.baseurl }}/images/prison.jpeg)
 
 It has been a while since I posted because I have been going deep in my research about the so-called “science” of recidivism modeling (ie predicting the risk that a person convicted of a crime re-offends). 
 There are many types of recidivism prediction algorithms which are used and misused on all levels of the American criminal justice system (including sentencing) supposedly to help states better allocate resources to people that need it. 
