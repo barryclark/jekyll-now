@@ -5,6 +5,9 @@ category: projects
 timelineText: This is my first django project for Web portfolio.
 startDate: 2016.12.27
 endDate: continue
+asset_media: {{ site.url }}/images/webportfolio_1.PNG
+asset_caption: ""
+asset_credit: ""
 ---
 
 ## Summary
