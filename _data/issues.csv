@@ -2069,6 +2069,16 @@ lon: ''
 link: ''
 data: 18/11/2016
 </yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1304,190237976,2016-11-18 11:42:54,2016-11-18 05:15:33,Contatti Protezione civile #Marche per donazioni e informazioni utili ,,,"[""Accettato"", ""Contatti"", ""Form"", ""Notizie Utili"", ""Sisma Ottobre""]",,,"{""data"": ""18/11/2016"", ""descrizione"": ""Chi vuole donare o abbia bisogno di contattare la Protezione civile della Regione Marche pu\u00f2 inviare un email a prot.civ@regione.marche.it o telefonare a 0718064163."", ""email"": ""prot.civ@regione.marche.it"", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""nome"": ""Protezione civile marche - regione"", ""tel"": ""0718064163""}","<pre><yamldata>nome: 'Protezione civile marche - regione'
+tel: '0718064163'
+email: prot.civ@regione.marche.it
+descrizione: 'Chi vuole donare o abbia bisogno di contattare la Protezione civile della Regione Marche può inviare un email a prot.civ@regione.marche.it o telefonare a 0718064163.'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+data: 18/11/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1303,190179718,2016-11-17 22:14:41,2016-11-17 22:13:44,Consip: aggiudicata la procedura negoziata d'urgenza per i #container,,,"[""Accettato"", ""Bollettino"", ""Notizie Utili"", ""Sisma Ottobre""]",,,"{""data"": ""17/11/2016"", ""descrizione"": ""Consip Spa ha indetto una Procedura negoziata d\u2019urgenza in tre lotti per affidamento di accordi quadro per fornitura di beni e servizi connessi, finalizzati all\u2019allestimento delle aree di accoglienza della popolazione interessata dagli eventi sismici che hanno colpito l\u2019Italia centrale nei mesi di agosto e ottobre 2016, per conto della Presidenza del Consiglio dei ministri - Dipartimento della Protezione civile. Al link i documenti e l'elenco delle aziende che si sono aggiudicate la fornitura di beni e servizi connessi, finalizzati all\u2019allestimento delle aree di accoglienza della popolazione interessata dagli eventi sismici di agosto e ottobre 2016."", ""link"": ""http://www.consip.it/gare/bandi/storico_gare/2016/gara_0061/index.html"", ""titolo"": ""Consip: aggiudicata la procedura negoziata d'urgenza per i #container""}","<pre><yamldata>titolo: 'Consip: aggiudicata la procedura negoziata d''urgenza per i #container'
 descrizione: 'Consip Spa ha indetto una Procedura negoziata d’urgenza in tre lotti per affidamento di accordi quadro per fornitura di beni e servizi connessi, finalizzati all’allestimento delle aree di accoglienza della popolazione interessata dagli eventi sismici che hanno colpito l’Italia centrale nei mesi di agosto e ottobre 2016, per conto della Presidenza del Consiglio dei ministri - Dipartimento della Protezione civile. Al link i documenti e l''elenco delle aziende che si sono aggiudicate la fornitura di beni e servizi connessi, finalizzati all’allestimento delle aree di accoglienza della popolazione interessata dagli eventi sismici di agosto e ottobre 2016.'
 link: 'http://www.consip.it/gare/bandi/storico_gare/2016/gara_0061/index.html'
