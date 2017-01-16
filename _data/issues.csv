@@ -1,4 +1,9 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1577,200876038,2017-01-16 12:54:09,2017-01-15 15:47:22,"#Ussita, aperti al pubblico gli uffici comunali",,,"[""Accettato"", ""Bollettino"", ""Facebook"", ""Notizie Utili"", ""Sisma Ottobre""]",,,"{""data"": ""15/01/2017"", ""descrizione"": ""Dal 9 gennaio 2017 gli uffici del Comune di Ussita saranno aperti al pubblico dal luned\u00ec al venerd\u00ec dalle ore 10.00 alle ore 12.30. Il C.O.C. (centro operativo comunale) sar\u00e0 aperto anche il sabato."", ""link"": ""http://www.comune.ussita.mc.it/avvisi-cms/apertura-al-pubblico-degli-uffici-comunali-e-del-centro-operativo-comunale/"", ""titolo"": ""#Ussita, aperti al pubblico gli uffici comunali""}","<pre><yamldata>titolo: '#Ussita, aperti al pubblico gli uffici comunali'
+descrizione: 'Dal 9 gennaio 2017 gli uffici del Comune di Ussita saranno aperti al pubblico dal lunedì al venerdì dalle ore 10.00 alle ore 12.30. Il C.O.C. (centro operativo comunale) sarà aperto anche il sabato.'
+link: 'http://www.comune.ussita.mc.it/avvisi-cms/apertura-al-pubblico-degli-uffici-comunali-e-del-centro-operativo-comunale/'
+data: 15/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1574,200867942,2017-01-15 13:10:41,2017-01-15 13:10:18,"Urge mettere in sicurezza la chiesa e il campanile di #Ospedaletto, fraz. di #Norcia",42.776967,13.0596464,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Sisma Ottobre"", ""Twitter""]",,http://i.imgur.com/1bf1sLd.jpg,"{""cosa"": ""Urge mettere in sicurezza la chiesa e il campanile di #Ospedaletto, fraz. di #Norcia"", ""data"": ""15/01/2017"", ""descrizione"": ""L'associazione Libra 2.0 lancia un appello perch\u00e9 siano messi in sicurezza la chiesa e il campanile di Ospedaletto, frazione del comune di Norcia, pericolanti dal 30 ottobre."", ""email"": """", ""immagine"": ""http://i.imgur.com/1bf1sLd.jpg"", ""indirizzo"": ""Strada provinciale di Cascia, Cascia, PG, UMB, 06043, Italia"", ""lat"": ""42.776967"", ""link"": ""https://twitter.com/libra2puntozero/status/820515576426729472"", ""lon"": ""13.0596464"", ""tel"": """"}","<pre><yamldata>tel: ''
 email: ''
 cosa: 'Urge mettere in sicurezza la chiesa e il campanile di #Ospedaletto, fraz. di #Norcia'
@@ -4413,6 +4418,12 @@ lat: '41.8711875'
 lon: '12.5154678'
 link: ''
 immagine: ''
+data: 30/10/2016
+</yamldata></pre>
+",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/969,186164159,2016-10-30 22:16:55,2016-10-30 21:03:38,"#Camerino: allargata zona rossa, oltre 1000 persone trasferite",,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili"", ""Sisma Ottobre""]",,,"{""data"": ""30/10/2016"", ""descrizione"": ""Allargati i confini della zona rossa di Camerino che ora \u00e8 molto pi\u00f9 estesa e ricomprende ormai tutto il centro storico ed alcune zone a ridosso delle mura cittadine. Domenica hanno trovato ospitalit\u00e0 nei centri di accoglienza circa 600 persone e altrettante sono state trasferite negli alberghi della costa convenzionati con la Regione Marche. Le richieste per trasferirsi negli hotel possono essere compilate al Centro Operativo Comunale che si trova in via Le Mosse 19. Rimane anche la possibilit\u00e0 di richiedere il Contributo di Autonoma Sistemazione per quelle persone che vorranno provvedere autonomamente a trovare una collocazione."", ""link"": ""https://goo.gl/KxovwK"", ""titolo"": ""#Camerino - dichiarazioni del #Sindaco""}","<pre><yamldata>titolo: '#Camerino - dichiarazioni del #Sindaco'
+descrizione: 'Allargati i confini della zona rossa di Camerino che ora è molto più estesa e ricomprende ormai tutto il centro storico ed alcune zone a ridosso delle mura cittadine. Domenica hanno trovato ospitalità nei centri di accoglienza circa 600 persone e altrettante sono state trasferite negli alberghi della costa convenzionati con la Regione Marche. Le richieste per trasferirsi negli hotel possono essere compilate al Centro Operativo Comunale che si trova in via Le Mosse 19. Rimane anche la possibilità di richiedere il Contributo di Autonoma Sistemazione per quelle persone che vorranno provvedere autonomamente a trovare una collocazione.'
+link: 'https://goo.gl/KxovwK'
 data: 30/10/2016
 </yamldata></pre>
 ",open
