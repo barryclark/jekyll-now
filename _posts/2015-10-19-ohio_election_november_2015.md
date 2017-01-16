@@ -24,13 +24,13 @@ This is just some general information and links about the issues in Ohio, or, mo
 
 * [This issue on ballotpedia.org](http://ballotpedia.org/Ohio_Initiated_Monopolies_Amendment,_Issue_2_%282015%29)
 * [Libertarian Party of Ohio says no](https://www.lpo.org/elections/state-ballot-issues/702-lpo-recommends-no-vote-on-ballot-issue-2)
-* [Ohio Green Party says no](http://www.ohiogreens.org/story/ohio-green-party-withdraws-support-issue-2)
-* [Ohio Green Party previously said yes](http://www.ohiogreens.org/story/green-party-ohio-announces-recommendations-ohio-statewide-ballot-issues)
+* [Ohio Green Party says no](https://web.archive.org/web/20151009032050/http://www.ohiogreens.org/story/ohio-green-party-withdraws-support-issue-2)
+* [Ohio Green Party previously said yes](https://web.archive.org/web/20151007041244/http://www.ohiogreens.org/story/green-party-ohio-announces-recommendations-ohio-statewide-ballot-issues)
 
 #### Issue 3 : Proposal to permit marijuana growing, cultivation, extraction, & manufacturing facilities, retail stores & not-for-profit medical marijuana dispensaries
 
 * [This issue on ballotpedia.org](http://ballotpedia.org/Ohio_Marijuana_Legalization_Initiative_%282015%29)
-* [Libertarian Party of Ohio says no](https://www.lpo.org/elections/state-ballot-issues/703-lpo-recommends-no-vote-on-ballot-issue-3)
+* [Libertarian Party of Ohio says no](https://web.archive.org/web/20160410172705/https://www.lpo.org/elections/state-ballot-issues/703-lpo-recommends-no-vote-on-ballot-issue-3)
 * [Ohio Green Party says no](https://web.archive.org/web/20151007041244/http://www.ohiogreens.org/story/green-party-ohio-announces-recommendations-ohio-statewide-ballot-issues)
 
 ### Proposed Tax Levy
@@ -66,11 +66,11 @@ A "[mill](https://en.wikipedia.org/wiki/Mill_%28currency%29)" is a thousandth of
   * [Facebook page](https://www.facebook.com/FairchildforDayton)
   * [2 News Meet the candidates: Darryl Fairchild](http://wdtn.com/2015/04/20/meet-the-candidates-darryl-fairchild)
   * [Dayton Daily News 2012 Article: Community activist announces run for Dayton Commission](http://www.daytondailynews.com/news/news/local-govt-politics/community-activist-announces-run-for-dayton-commis/nTcj2)
-  * [Bellbrook UMC pdf on him](http://www.bellbrookumc.org/docs/church/darryl_fairchild.pdf)
+  * [Bellbrook UMC pdf on him](https://web.archive.org/web/20130725005019/http://bellbrookumc.org/docs/church/darryl_fairchild.pdf)
 * Matt Joseph
   * [Campaign website](http://www.mattjoseph.com)
   * [My Store: Matt Joseph](http://www.welcomedayton.org/my-story-matt-joseph)
-  * [City of Dayton Web Page](http://www.cityofdayton.org/CCO/pages/commissionermattjoseph.aspx)
+  * [City of Dayton Web Page](https://web.archive.org/web/20151103093311/http://www.cityofdayton.org/cco/Pages/CommissionerMattJoseph.aspx)
 * Chris Shaw
   * [Campaign website](http://chrisshawfordayton.com)
 * Scott Sliver
