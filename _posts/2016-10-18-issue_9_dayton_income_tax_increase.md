@@ -35,6 +35,6 @@ Use the following table to calculate how much the tax could cost you:
 
 Further reading:
 
-* http://daytonmayor.blogspot.com/2016/09/vote-no-on-issue-9-here-is-why.html
-* http://wdtn.com/2016/09/06/city-of-dayton-income-tax-hike-to-be-on-november-ballot/
-* http://www.daytondailynews.com/news/local-govt--politics/dayton-ask-voters-raise-income-taxes/JgQgxXL2mMazJPD4EvrBSP/
+* [Vote NO on Issue 9. Here is Why ,DaytonMayor.BlogSpot.org](http://daytonmayor.blogspot.com/2016/09/vote-no-on-issue-9-here-is-why.html)
+* [City of Dayton income tax hike to be on November ballot, 2News](http://wdtn.com/2016/09/06/city-of-dayton-income-tax-hike-to-be-on-november-ballot/)
+* [Dayton to ask voters to raise income taxes, Dayton Daily News](http://www.daytondailynews.com/news/local-govt--politics/dayton-ask-voters-raise-income-taxes/JgQgxXL2mMazJPD4EvrBSP/)
