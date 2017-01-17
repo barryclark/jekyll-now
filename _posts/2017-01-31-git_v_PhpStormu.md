@@ -1,0 +1,57 @@
+---
+layout: post
+title: Git v PhpStormu a Github - jak začít 
+---
+
+[Git](https://git-scm.com/) je **verzovací systém**. Co to znamená? Je to systém umožňující správu souborů v čase. Svého druhu verzovací systém je třeba i _Historie revizí dokumentů_ používaných v Google dokumentech nebo prosté _Zpět_ a _Dopředu_ používané v prohlížečích. 
+
+Oproti tomu [Github](http://github.com/) je internetová služba, která git využívá a díky ní je spolupráce ve více lidech velmi zjednodušená. V základu je zdarma a v článku ho budu používat spolu s gitem. 
+
+#Proč zrovna git?
+Git byl stvořený hlavně pro práci s textovými soubory - programátorské kódy jsou přeci jen snůška texťáků, proto git funguje hlavně pro kodéry a jejich práci. Dobře bude fungovat třeba i pro psaní knihy, blogu (tento blog je taky verzovaný v gitu) nebo i bakalářky či diplomky. 
+ 
+Git poskytuje pohled na texty v čase. Díky tomu se už nemusí ukládat víc verzí jednoho dokumentu ručně. Navíc velmi zjednodušuje spolupráci více lidí najednou nebo udržování více paralelních verzí - tam se projeví jeho pravá síla. 
+
+Git je primárně určen pro ovládání z příkazové řádky. Většina IDE ho ovšem má integrovaný, proto je možné používat klávesové zkratky a rozbalovaní meníček přímo v editoru. A to bude máš případ - zbytek článku budu popisovat práci v PhpStormu. Jestli máte zájem se naučit používat git nativně, dva odkazy na kvalitní návody jsem připojil na konec článku a až na tomto blogu přibude článek, dozvíte se to tady. 
+
+#Praxe - jdeme na to!
+Jestli se chceš s gitem naučit v příkazovém řádku (což je těžší, ale užitečnější), přeskoč na [další článek, který vyjde týden po tomto](http://jakpsatphp.cz/git-v-prikazovem-radku). Zbytek článku je psán pro PhpStorm 2016, práce v novější verzi ale bude velmi podobná. 
+
+> Všechny praktické rady budou formátovány tímto způsobem - pokud chceš rychle načíst jen teorii, tyto pasáže přeskakuj - ovšem nedoporučuju to, protože půlka mojí práce potom přijde nazmar. 
+
+##Repozitář
+Místo, kde se všechna gitovská magie odehrává, se nazývá **repozitář** nebo i **repo**. Repozitář je složka v počítači, kterou git sleduje. Dá se určit, že se nějaké soubory sledovat nemají (například lokální konfigurace), nemůžeme ale do repozitáře zahrnout soubory mimo tuto složku. 
+
+> Založ si nový gitový repozitář, tedy postupně: vytvoř si nový projekt v PhpStorm a vyber z horní nabídky _VCS_ (zkratka z version control systems) > _Enable Version Controll Integration..._, tam vyber _git_ a potvrď. Tím se vytvořil gitový repozitář pro celý projekt. Když se teď podíváš do složky s projektem, objevila se tam nová složka _.git_ Pozor, je označená systémem jako skrytá, takže bude viditelná až po povolení zobrazování skrytých souborů. Jestli ji nevidíš, nemusíš to moc řešit, není to příliš důležité. Když tuto složku smažeš, efektivně tím zrušíš sledování repozitáře, kde složka _.git_ byla. 
+
+##Commit
+Základním kamenem pro práci s gitem je **commit**. Commit je zachycení stavu souborů tak, jak zrovna jsou. Commit jako takový není dál dělitelný, je tou nejmenší jednotkou, s kterou se v gitu potkáš. Commity se řadí za sebou v čase, jeden následuje druhý tak, jak byly postupně pořizovány. 
+
+> Vytvoř si nový soubor `index.php`. V tomto momentě by měl PhpStorm nabídnout přidání souboru do verzovacího systému. Pokud ne, klikneš pravým myšítkem na soubor a z místní nabídky vyber _Git_ > _Add_. Název přidaného souboru se defaultně zbarví z červené do zelené - to značí, že je soubor nově přidaný do verzovacího systému. 
+> Do `index.php` zapiš obligátní pozdrav celému světu, aby si měli dál s čím pracovat. Vložíme tedy třeba
+ 
+ ```php
+ <?php echo('Hello World!');
+ ```
+ 
+> A teď soubor ulož v čase - slangově commitni. Zvol z horního menu _VCS_ > _Commit changes_ (zkratka _Ctrl + K_). Otevře se okno, do kterého v dolní části vlož popis commitu (commit message), třeba `první commit`. Okno potvrď a je to! 
+
+Správné vymyšlení názvu a popisu commitu (commit message) je celkem náročné. Jsou to totiž zásadní informace, podle kterých se potom v commitech dá nebo nedá vyznat. Název commitu by měl být výstižný a vyjadřovat, co commit s projektem dělá. Dobré popisy jsou třeba: `added sending request via mail` nebo: `fixed bug #34`. Naopak se vyhni popisům typu: `opraveno` nebo: `další commit`. Název commitu by se měl vejít do 50 znaků, do popisu commitu potom patří zbytek. Podrobnější věci ale nepatří ani tam, protože ty si čtenář může najít přímo v kódu. 
+
+Ve velkých projektech se stejně jako na čistotu kódu dbá i na čistotu commitích názvů a jejich popisů. Všechny commity tam jsou popsány stejným stylem - jen tak lze udržet v rozsáhlých projektech přehled a pořádek. Tento přístup se hodí dodržovat i v malých a svých projektech - stejně jako správná úprava kódu tě v budoucnosti ušetří od nejednoho bolení hlavy. Osobně popisuji commity pouze v angličtině a vždy začínám slovesem v minulém čase - popisuji tím, co se s projektem stalo, když se commit objevil. Není to ale jediný ani univerzálně správný způsob. Příklady najdeš v [repozitáři tohoto blogu](https://github.com/tomtomklima/tomtomklima.github.io). 
+
+##Vzdálený repozitář
+Repozitářů může být pro jeden projekt i více a tady přichází ke slovu Github. Github slouží jako **vzdálený repozitář** (remote repository), což je výraz pro složku s projektem někde online na internetu. Důležité je, že se automaticky nesynchronizují, jak by někdo mohl čekat. Vypadá to neprakticky, ale má to svoje výhody: díky tomuto triku si můžeme udržovat rozpracovanou práci (klidně verzovanou commity) a nikam ji ještě nenahrávat online, když není hotová, takže ji ještě nikdo nemusí vidět. Práci se vzdáleným repozitářem zabezpečí příkazy **push**, který práci nahraje online a **pull**, který aktuální projekt stáhne a lokálně uloží. 
+
+> Připrav se na založení si **vzdáleného repozitáře** na Githubu a nahrání svého rozpracovaného projektu. Zaregistruj se nebo přihlaš na [Github](https://github.com/). Po přihlášení klikni na tlačítko s pluskem vpravo nahoře a vyber položku _New repository_. Zvol jméno (například `hello-git`) a klikni na _Create repository_. 
+> Vrať se zpátky do PhpStormu a ve svém projektu z horního menu zvol položku _VCS_ > _Git_ > _Push_. V dialogu je vidět seznam commitů (tvůj jeden `první commit`) a na horní liště klikací položku `master -> define remote`. Klikni na ní a do kolonky URL zadáme adresu vedoucí k založenému repozitáři na githubu, který jsme před chvíli opustili. Potvrdíme, zadáme přihlašovací jméno a heslo a znovu potvrdíme. Pro kontrolu refreshneme stránku s githubím repozitářem a v prohlížeči je vidět náš `index.php` online. A to je vše, projekt máme nahraný ve vzdáleném repozitáři! 
+ 
+##Update projektu
+Představ si, že se do tvého projektu nadchnul druhý vývojář jménem Nina. Nina si projekt prohlédla online a po získání práv od tebe jako vlastníka si teď chce projekt stáhnout, aby na něm mohla začít pracovat. Založí si s PhpStormu nový projekt a zkušeně vybere _Checkout from verison control_ > _GitHub_. Do dialogu vloží webovou adresu projektu, potvrdí a projekt má stažený lokálně u sebe, jednoduše a rychle. 
+
+Po přidání svého kódu projekt commitne a pushne ho zpět na github stejně, jako před tím ty. Github ti pošle email, že Nina projekt aktualizovala a ty by sis měl stáhnout novější verzi. V PhpStormu získáš aktuální verzi přes volbu _VCS_ > _Git_ > _Pull..._ (nebo zkatkou _Ctrl + T_) a potvrzením dialogu. Pokud mezitím neuděláš žádně konfliktní změny (nebo žádně změny jako takové), projekt se aktualizovat a ty máš u sebe Nininu práci. 
+
+#Jak dál?
+Pro git a Gihub je na internetu celá řada kvalitních tutoriálů, například na [Treehouse](http://blog.teamtreehouse.com/git-for-designers-part-1), na [blogu Rogera Dudlera](http://rogerdudler.github.io/git-guide/) nebo na [Pluralsightu](https://www.pluralsight.com/blog/software-development/github-tutorial). Čím více ho budeš využívat, tím více se ti dostane pod kůži a stane se tvojí přirozenou věcí stejně jako ukládání. 
+ 
+ Mimo git existují i jiné verzovací systémy, například [Mercurial](https://www.mercurial-scm.org/) nebo [Subversion od Apache](https://subversion.apache.org/). Pro Github jsou alternativy také, kupříkladu [GitLab](https://about.gitlab.com/) či [BitBucket](https://bitbucket.org/). Pokud ti něco doporučeného z článku nevyhovuje, vyzkoušej třeba tyto alternativy. Verzování za to stojí! 
