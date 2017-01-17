@@ -1,3 +1,8 @@
+---
+layout: post
+title: You're up and running!
+---
+
 An h1 header
 ============
 
