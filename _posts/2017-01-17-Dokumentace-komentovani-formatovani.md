@@ -3,7 +3,7 @@ layout: post
 title: Jak psát PHP? (4/3) - Dokumentace, komentování a formátování
 ---
 
-Čtvrtý díl ze tří přehledu nástrojů pro PHP. Podíváme se na dokumentování v kódu, komentáře a formátování kódu. A kdyby náhodou bylo potřeba, tady najdete [první]((http://jakpsatphp.cz/Jak-psat-php-Zdroje-znalosti+vyvojove-prostredi/)), [druhý](http://jakpsatphp.cz/Jak-psat-php-Zavislosti+verzovaci-systemy+debugging/) i [třetí] díl. 
+Čtvrtý díl ze tří přehledu nástrojů pro PHP. Podíváme se na dokumentování v kódu, komentáře a formátování kódu. A kdyby náhodou bylo potřeba, tady najdete [první]({{site.baseurl}}/Jak-psat-php-Zdroje-znalosti+vyvojove-prostredi/), [druhý]({{site.baseurl}}/Jak-psat-php-Zavislosti+verzovaci-systemy+debugging/) i [třetí]({{site.baseurl}}/Uloziste-kodu+databaze+frameworky/) díl. 
 
 # Komentování v kódu
 Pro pořádek a úplné začátečníky, komentáře v PHP se značí `//` pro komentář na jeden řádek, nebo `/* komentář */` pro blokový komentář přes jeden i víc řádků. Tak, a když teď nejste úplní začátečníci, jdeme na věc. 
@@ -80,16 +80,16 @@ function square($base, $exponent) {
    return $result;
 }
 ```
-Takto vlastně vůbec nemusíme číst kód, stačí prolétnout dokumentaci a hned je vidět, co má za úkol a co funkce nebo metoda dělá. U takto krátké funkce to asi není nutné, ale u delších je to velmi užtečné. 
+Takto vlastně vůbec nemusíme číst kód, stačí prolétnout dokumentaci a hned je vidět, co má za úkol a co funkce nebo metoda dělá. U takto krátké funkce to asi není nutné ani efektivní, ale u delších je to velmi užtečné. 
 
 IDE umí s generováním dokumentace v kódu pomoci. V PhpStorm stačí nastavit kurzor na funkci, kliknout na žlutou žárovku a vybrat `Generate PHPdocs for function`. Nebo můžeme před funkci napsat `/**` a stisknout `Enter`. Pro vygenerování základní dokumentace pro celou třídu nebo i projekt můžeme použít funkce kontroly kódu, která se nachází v `Code > Inspect Code`. Ta po potvrzení otevře dialogové okno a tam v řádku PhpDocs pravým tlačítkem zvolíme `Apply Fix`. 
 
 # Formátování kódu
-Pro formátování je několik obecných standardů. Pravdou však je, že co projekt a kodér, to jiný styl. Někomu se čte kód lépe s více odsazeními, někdo preferuje mezery mezi operandy. Možná už máte nějaký svůj styl zaběhaný, možná ho ještě hledáte - na tom není nic špatného. A když se pořád nemůžete rozhodnout, prostě si jeden vyberte a ten potom ve svých kódech používejte. 
+Pro formátování je několik obecných standardů. Pravdou však je, že co projekt a kodér, to jiný styl. Někomu se čte kód lépe s více odsazeními a někdo třeba preferuje mezery mezi operandy. Možná už máte nějaký svůj styl zaběhaný, možná ho ještě hledáte - na tom není nic špatného. A když se pořád nemůžete rozhodnout, prostě si jeden vyberte a ten potom ve svých kódech používejte. 
 
 Jak formátujete kód ve svých projektech je čistě na vás. Důležité je zůstat konzistentní. Vyberte si tedy mezery nebo tabulátory, hlavně je potom používejte všude. Složené závorky odsazujte nebo ne, ale všude je ne/odsazuje stejně. V konzistentnosti hodně pomůže IDE, o tom víc níže. 
  
-V práci nebo při sdílených projektech je požadavek na konzistentnost kódu ještě větší. Konzistentní kód je velké výhoda v momentě, kdy v projektu přecházíte z jednoho zákoutí do druhého a všude je kód psaný jakoby jedním vývojářem. Styl potom tolik neruší a je možnost se lépe soustředit na obsah. 
+V práci nebo při sdílených projektech je požadavek na konzistentnost kódu ještě větší. Konzistentní kód je velká výhoda v momentě, kdy v projektu přecházíte z jednoho zákoutí do druhého a všude je kód psaný jakoby jedním vývojářem. Styl potom tolik neruší a je možnost se lépe soustředit na obsah. 
 
 Většina velkých projektů má vypsané standardy, které je třeba dodržovat. Důležité je ctít je, ať už je mají sepsané, nebo ne. Na začátku hodně opisujte styl okolo sebe a napodobujte svůj kód tak, jak ho vidíte. Ze začátku se na to sice musíte víc soustředit, později se to stane přirozenou věcí. 
 
@@ -98,6 +98,6 @@ IDE opět může hodně s formátováním pomoci. V PhpStorm se styl formátová
 Vhodné je si i zatrhnout při commitování volbu `Reformat code` pro automatické zformátování před commitem. Potom můžete celé formátování pustit z hlavy a psát svým stylem. Jen občas svůj kód už potom nepoznáte (: Širší náhled na PhpDocs najdete třeba na [SitePointu](https://www.sitepoint.com/introduction-to-phpdoc/). 
 
 # Too Long, Didn't Read?
-Komentujte s rozvahou a proč, ne co kód dělá. Dokumentujte v kódu, usnadněte si život automatikou. Ve formátování kódu buďte konzistentní a dodržujte stardardy dané projektem. 
+Komentujte s rozvahou a proč, ne co kód dělá. Dokumentujte v kódu a usnadněte si život automatikou. Ve formátování kódu buďte konzistentní a dodržujte stardardy dané projektem. 
 
-*Mnoho vývojářů už většinu doporučení v tomto miniseriálu bude znát a někdy může mít jiný názor. Prosím, ozvěte se do komentářů s čím nesouhlasíte či byste doplnili, věcná polemika je mnohem přínosnější než taktní mlčení.* 
+*Mnoho vývojářů už většinu doporučení v tomto krátkém seriálu bude znát a někdy může mít jiný názor. Prosím, ozvěte se do komentářů s čím nesouhlasíte či byste doplnili, věcná polemika je mnohem přínosnější než taktní mlčení.* 
