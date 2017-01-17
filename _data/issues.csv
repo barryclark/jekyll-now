@@ -1,4 +1,9 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1587,201438166,2017-01-17 23:39:03,2017-01-17 23:38:26,Chi contattare per l'emergenza neve nell'area di #Amatrice,,,"[""Accettato"", ""Bollettino"", ""Notizie Utili"", ""Twitter""]",,,"{""data"": ""17/01/2017"", ""descrizione"": ""Al link i numeri dei responsabili delle ditte da contattare per l\u2019emergenza neve, relativamente alle strade di competenza comunale nell'area di #Amatrice."", ""link"": ""http://comunicacity.net/amatrice/2017/01/17/emergenza-neve-contatti-telefonici-dei-referenti-per-le-strade-di-competenza-comunale/"", ""titolo"": ""Chi contattare per l'emergenza neve nell'area di #Amatrice""}","<pre><yamldata>titolo: 'Chi contattare per l''emergenza neve nell''area di #Amatrice'
+descrizione: 'Al link i numeri dei responsabili delle ditte da contattare per l’emergenza neve, relativamente alle strade di competenza comunale nell''area di #Amatrice.'
+link: 'http://comunicacity.net/amatrice/2017/01/17/emergenza-neve-contatti-telefonici-dei-referenti-per-le-strade-di-competenza-comunale/'
+data: 17/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1586,201410712,2017-01-17 22:55:24,2017-01-17 21:30:19,A Pretare di Arquata del Tronto allevatore ha bisogno urgente di una motoslitta,42.7978600,13.3004100,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""motoslitta"", ""data"": ""17/01/2017"", ""descrizione"": ""Buonasera, siamo di nuovo qui a chiedere aiuto agli italiani e non alle assenti istituzioni, vista l'abbondante nevicata, chiediamo, anche in prestito per un piccolo periodo, una motoslitta efficiente, poich\u00e9 non hanno montato le tensostrutture ed i nostri animali sono all'aperto, si riparano in una pineta. Grazie a chiunque voglia aiutarci. Mirko Trenta, frazione Pretare 4 B - Arquata del Tronto (AP)."", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": ""42.7978600"", ""link"": """", ""lon"": ""13.3004100"", ""tel"": ""3804323871""}","<pre><yamldata>tel: '3804323871'
 email: ''
 cosa: motoslitta
@@ -9455,12 +9460,6 @@ lat: 41.49390
 lon: 13.04892
 link: ''
 immagine: ''
-data: 14/09/2016
-</yamldata></pre>
-",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/315,176959632,2016-10-01 16:23:02,2016-09-14 16:45:11,Contributo fino a 600 Euro per ogni famiglia,,,"[""Accettato"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""14/09/2016"", ""descrizione"": ""Ordinanza della Protezione Civile n.388 articolo 3."", ""link"": ""https://twitter.com/cypherinfo/status/769874038244122625"", ""titolo"": ""Contributo fino a 600 Euro per ogni famiglia""}","<pre><yamldata>titolo: 'Contributo fino a 600 Euro per ogni famiglia'
-descrizione: 'Ordinanza della Protezione Civile n.388 articolo 3.'
-link: 'https://twitter.com/cypherinfo/status/769874038244122625'
 data: 14/09/2016
 </yamldata></pre>
 ",open
