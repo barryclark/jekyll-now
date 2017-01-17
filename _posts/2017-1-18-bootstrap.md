@@ -15,6 +15,28 @@ Now you want to declare that this doc is html and set a default language:
 
 <html lang="en">
 
+
+We're going to use two different templates for each page. There will be a base.html and a page.html for each page. The base will contain everything we want spread across all pages, such as a navigation bar.
+
+We will need a navigation bar. Using navbar-inverse makes it dark, which looks nice. Again, we'll use container-fluid to fill the screen.
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Sappho</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">Page 1</a></li>
+      <li><a href="#">Page 2</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+  </div>
+</nav>
+
 Now you can start your post. Let's focus on the header.
 
 ```
@@ -79,6 +101,7 @@ But if we want a full width container, be sure to use:
 
     </body>
 ```
+
 
 Font:
 
@@ -243,47 +266,14 @@ Here's the dropdown menu to choose which type of writing we're doing:
   </ul>
 </div>
 
-We will need a navigation bar. Using navbar-inverse makes it dark, which looks nice. Again, we'll use container-fluid to fill the screen.
 
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">Sappho</a>
-    </div>
-    <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Home</a></li>
-      <li><a href="#">Page 1</a></li>
-      <li><a href="#">Page 2</a></li>
-    </ul>
-    <ul class="nav navbar-nav navbar-right">
-      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-    </ul>
-  </div>
-</nav>
 
 
 We're going to need a large text area where people can put their writing. Here's how you do that:
 
 <div class="form-group">
-  <label for="comment">Comment:</label>
+  <label for="comment">Text:</label>
   <textarea class="form-control" rows="5" id="comment" placeholder="Enter your text here"></textarea>
 </div>
 
 
-We want them to have a large input area, so we'll use:
-
-<form>
-  <div class="form-group">
-    <label for="inputdefault">Default input</label>
-    <input class="form-control" id="inputdefault" type="text">
-  </div>
-  <div class="form-group">
-    <label for="inputlg">input-lg</label>
-    <input class="form-control input-lg" id="inputlg" type="text">
-  </div>
-  <div class="form-group">
-    <label for="inputsm">input-sm</label>
-    <input class="form-control input-sm" id="inputsm" type="text">
-  </div>
-</form>
