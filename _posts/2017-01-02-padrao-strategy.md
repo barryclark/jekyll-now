@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Revisando Padões com Java 8: O Padrão Strategy"
+title: "Revisando Padrões com Java 8: O Padrão Strategy"
 permalink: "/2017/01/revisando-padroes-java-8-o-padrao-strategy.html"
 categories: [java, padroes, desing, comportamental]
 ---
@@ -17,7 +17,7 @@ Esse post será o início de uma série o qual vou tentar explicar os padrões d
 
 {% include image.html url="/images/20170102/padrao_estrategia.svg" description="Diagrama do projeto de exemplo utilizanco o padrão Strategy" %}
 
-### Aplicabilidade
+## Aplicabilidade
 
 Use o padrão Strategy quando:
 
@@ -57,14 +57,13 @@ A interface que define o algoritmo de execução:
 
 ```java
 public interface EstrategiaAgente {
-    
+
     public void executar();
-    
+
 }
 ```
 
 Criei três implementações da interface com os algoritmos: [EstrategiaEngenharia](https://raw.githubusercontent.com/ivanqueiroz/padroes-projeto-java/master/strategy/src/main/java/com/ivanqueiroz/padroes/strategy/EstrategiaEngenharia.java), [EstrategiaLinhaDeFrente](https://raw.githubusercontent.com/ivanqueiroz/padroes-projeto-java/master/strategy/src/main/java/com/ivanqueiroz/padroes/strategy/EstrategiaLinhaDeFrente.java) e [EstrategiaSuporte](https://raw.githubusercontent.com/ivanqueiroz/padroes-projeto-java/master/strategy/src/main/java/com/ivanqueiroz/padroes/strategy/EstrategiaSuporte.java). Agora vamos a Implementação do programa.
-
 
 ## Antes do Java 8
 
