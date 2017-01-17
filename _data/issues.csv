@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1582,201204128,2017-01-17 13:41:02,2017-01-17 08:24:58,"Raccolta fondi Comune di #Monteleone di #Spoleto per realizzazione progetto ""Villaggio Sicuro""",,,"[""Accettato"", ""Bollettino"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": ""SWIFT  BPSP IT3S IT94 C057 0473 6600 0000 0200 578"", ""causale"": ""Causale  \u201c SISMA 2016\u201d  raccolta fondi  \""Villaggio Sicuro Monteleone di Spoleto\u201d .   IBAN: IT94C0570473660000000200578"", ""chi"": ""Comune di Monteleone di Spoleto"", ""data"": ""17/01/2017"", ""descrizione"": ""Il Comune di Monteleone di Spoleto \u00e8 inserito nel cratere sismico dal 24 agosto 2016. Il Progetto \u201cVillaggio Sicuro\u201c redatto gi\u00e0 nel 2014, in conformit\u00e0 con il Piano di Protezione Civile del Comune di Monteleone di Spoleto, \u00e8 stato ideato per dare risposte di protezione e assistenza alla popolazione del territorio durante gli eventi calamitosi e sismici. In tempo di pace esso risponde alle logiche del turismo itinerante. L\u2019Amministrazione Comunale lancia una raccolta fondi perch\u00e9 si arrivi alla sua realizzazione e secondo il metodo Augustus sia un villaggio che attui la logistica per la piena tutela psicofisica della popolazione nella fase di emergenza, sia un luogo di ristoro e ritrovo per gli sfollati dalle proprie case nel momento dell'emergenza. Il Sindaco Marisa Angelini, cell. 3208855155, e-mail marisa.angelini@mac.com"", ""email"": ""comune.monteleonedispoleto@postacert.umbria.it"", ""iban"": ""IBAN: IT94C0570473660000000200578"", ""intestazione"": ""Comune di Monteleone di Spoleto"", ""link"": ""http://www.comune.monteleonedispoleto.pg.it/c054031/zf/index.php/servizi-aggiuntivi/index/index/idtesto/20049"", ""postale"": """"}","<pre><yamldata>chi: 'Comune di Monteleone di Spoleto'
+descrizione: 'Il Comune di Monteleone di Spoleto è inserito nel cratere sismico dal 24 agosto 2016. Il Progetto “Villaggio Sicuro“ redatto già nel 2014, in conformità con il Piano di Protezione Civile del Comune di Monteleone di Spoleto, è stato ideato per dare risposte di protezione e assistenza alla popolazione del territorio durante gli eventi calamitosi e sismici. In tempo di pace esso risponde alle logiche del turismo itinerante. L’Amministrazione Comunale lancia una raccolta fondi perché si arrivi alla sua realizzazione e secondo il metodo Augustus sia un villaggio che attui la logistica per la piena tutela psicofisica della popolazione nella fase di emergenza, sia un luogo di ristoro e ritrovo per gli sfollati dalle proprie case nel momento dell''emergenza. Il Sindaco Marisa Angelini, cell. 3208855155, e-mail marisa.angelini@mac.com'
+intestazione: 'Comune di Monteleone di Spoleto'
+iban: 'IBAN: IT94C0570473660000000200578'
+bic: 'SWIFT  BPSP IT3S IT94 C057 0473 6600 0000 0200 578'
+postale: ''
+causale: 'Causale  “ SISMA 2016”  raccolta fondi  ""Villaggio Sicuro Monteleone di Spoleto” .   IBAN: IT94C0570473660000000200578'
+link: 'http://www.comune.monteleonedispoleto.pg.it/c054031/zf/index.php/servizi-aggiuntivi/index/index/idtesto/20049'
+email: comune.monteleonedispoleto@postacert.umbria.it
+data: 17/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1581,201133699,2017-01-17 13:38:25,2017-01-16 22:40:19,"Terremoto, ordinanza per i cani e gatti abbandonati. I sindaci pensino ai ricoveri",,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""16/01/2017"", ""descrizione"": ""I sindaci dei comuni colpiti dal terremoto potranno adoperarsi per trovare un riparo agli animali domestici rimasti tra le macerie senza pi\u00f9 i loro padroni. L\u2019articolo 2 della nuova Ordinanza firmata l\u201911 gennaio dal capo della Protezione Civile, \u201cDisposizioni volte a contrastare fenomeni di randagismo\u201d, stabilisce che \u201cal fine di assicurare il ricovero temporaneo degli animali da affezione i cui proprietari, al momento del verificarsi degli eventi sismici, dimoravano in maniera abituale e continuativa nei territori colpiti, i Comuni interessati possono stipulare convenzioni con altri Comuni o individuare strutture private preferibilmente nel territorio regionale\u201d, il tutto in deroga alle norme che regolano gli appalti. Le stesse disposizioni, si legge, \u201csi applicano anche agli animali presenti nei canili rifigio danneggiati a seguito degli eventi sismici\u201d."", ""link"": ""https://sibilla-online.com/2017/01/12/terremoto-ce-pure-unordinanza-per-i-cani-e-gatti-abbandonati-i-sindaci-pensino-ai-ricoveri/"", ""titolo"": ""Terremoto, ordinanza per i cani e gatti abbandonati. I sindaci pensino ai ricoveri""}","<pre><yamldata>titolo: 'Terremoto, ordinanza per i cani e gatti abbandonati. I sindaci pensino ai ricoveri'
 descrizione: 'I sindaci dei comuni colpiti dal terremoto potranno adoperarsi per trovare un riparo agli animali domestici rimasti tra le macerie senza più i loro padroni. L’articolo 2 della nuova Ordinanza firmata l’11 gennaio dal capo della Protezione Civile, “Disposizioni volte a contrastare fenomeni di randagismo”, stabilisce che “al fine di assicurare il ricovero temporaneo degli animali da affezione i cui proprietari, al momento del verificarsi degli eventi sismici, dimoravano in maniera abituale e continuativa nei territori colpiti, i Comuni interessati possono stipulare convenzioni con altri Comuni o individuare strutture private preferibilmente nel territorio regionale”, il tutto in deroga alle norme che regolano gli appalti. Le stesse disposizioni, si legge, “si applicano anche agli animali presenti nei canili rifigio danneggiati a seguito degli eventi sismici”.'
 link: 'https://sibilla-online.com/2017/01/12/terremoto-ce-pure-unordinanza-per-i-cani-e-gatti-abbandonati-i-sindaci-pensino-ai-ricoveri/'
@@ -8905,18 +8916,6 @@ postale: ''
 causale: ''
 link: ''
 email: ''
-data: 15/09/2016
-</yamldata></pre>
-",closed
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/370,177124045,2016-09-23 22:18:48,2016-09-15 09:00:42,Beni di prima necessità,41.5633,12.53864,"[""Accettato"", ""Donazioni"", ""Form""]",,,"{""cosa"": ""Beni di prima necessit\u00e0"", ""data"": ""15/09/2016"", ""descrizione"": ""Cibo in scatola , secco , acqua e latte UHT. Ogni giorno verr\u00e0 effettuato un viaggio"", ""email"": """", ""immagine"": """", ""indirizzo"": ""Sede di via dei Fenicotteri 6 a Tor San Lorenzo"", ""lat"": 41.5633, ""link"": """", ""lon"": 12.53864, ""tel"": """"}","<pre><yamldata>tel: ''
-email: ''
-cosa: 'Beni di prima necessità'
-descrizione: 'Cibo in scatola , secco , acqua e latte UHT. Ogni giorno verrà effettuato un viaggio'
-indirizzo: 'Sede di via dei Fenicotteri 6 a Tor San Lorenzo'
-lat: 41.56330
-lon: 12.53864
-link: ''
-immagine: ''
 data: 15/09/2016
 </yamldata></pre>
 ",closed
