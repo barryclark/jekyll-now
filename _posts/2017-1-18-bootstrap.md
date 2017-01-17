@@ -26,6 +26,16 @@ Now you can start your post. Let's focus on the header.
     </head>
 ```    
 That's a pretty good header. Now let's focus on the body:
+
+We want to put everything in a container. One way to do this is:
+
+<div class="container">
+
+But if we want a full width container, be sure to use:
+
+<div class="container-fluid">
+
+
 ```
    <body>
         <nav class="navbar navbar-inverse">
@@ -67,3 +77,45 @@ That's a pretty good header. Now let's focus on the body:
 
     </body>
 ```
+
+Font:
+
+Bootstrap's global default font-size is 14px, with a line-height of 1.428.
+
+This is applied to the <body> and all paragraphs.
+
+In addition, all <p> elements have a bottom margin that equals half their computed line-height (10px by default).
+
+It uses the default HTML headings: <h1> to <h6> where <h1> is the largest and <h6> is the smallest.
+
+
+Lightlighting:
+
+We will be doing a lot of text highlighting on this page. To do so:
+
+<p>Use the mark element to <mark>highlight</mark> text.</p>
+
+Bootstrap also has a coloring feature:
+
+<div class="container">
+  <h2>Contextual Colors</h2>
+  <p>Use the contextual classes to provide "meaning through colors":</p>
+  <p class="text-muted">This text is muted.</p>
+  <p class="text-primary">This text is important.</p>
+  <p class="text-success">This text indicates success.</p>
+  <p class="text-info">This text represents some information.</p>
+  <p class="text-warning">This text represents a warning.</p>
+  <p class="text-danger">This text represents danger.</p>
+</div>
+
+You can do the same thing with backgrounds:
+
+<div class="container">
+  <h2>Contextual Backgrounds</h2>
+  <p>Use the contextual background classes to provide "meaning through colors":</p>
+  <p class="bg-primary">This text is important.</p>
+  <p class="bg-success">This text indicates success.</p>
+  <p class="bg-info">This text represents some information.</p>
+  <p class="bg-warning">This text represents a warning.</p>
+  <p class="bg-danger">This text represents danger.</p>
+</div>
