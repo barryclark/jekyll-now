@@ -24,9 +24,9 @@ Now you can start your post. Let's focus on the header.
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
         
     </head>
-    
+```    
 That's a pretty good header. Now let's focus on the body:
-
+```
    <body>
         <nav class="navbar navbar-inverse">
           <div class="container">
