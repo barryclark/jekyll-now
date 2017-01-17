@@ -263,3 +263,27 @@ We will need a navigation bar. Using navbar-inverse makes it dark, which looks n
 </nav>
 
 
+We're going to need a large text area where people can put their writing. Here's how you do that:
+
+<div class="form-group">
+  <label for="comment">Comment:</label>
+  <textarea class="form-control" rows="5" id="comment" placeholder="Enter your text here"></textarea>
+</div>
+
+
+We want them to have a large input area, so we'll use:
+
+<form>
+  <div class="form-group">
+    <label for="inputdefault">Default input</label>
+    <input class="form-control" id="inputdefault" type="text">
+  </div>
+  <div class="form-group">
+    <label for="inputlg">input-lg</label>
+    <input class="form-control input-lg" id="inputlg" type="text">
+  </div>
+  <div class="form-group">
+    <label for="inputsm">input-sm</label>
+    <input class="form-control input-sm" id="inputsm" type="text">
+  </div>
+</form>
