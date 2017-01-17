@@ -15,6 +15,8 @@ Now you want to declare that this doc is html and set a default language:
 
 Now you can start your post. Let's focus on the header.
 
+```
+
     <head>
         <title>Sappho</title>
         <meta charset="utf-8">
@@ -64,3 +66,4 @@ That's a pretty good header. Now let's focus on the body:
         </div>
 
     </body>
+```
