@@ -3,10 +3,10 @@
 #
 
 # Name of your site (displayed in the header)
-name: Gompro89のブログ
+name: "Gompro89のブログ"
 
 # Short bio or description (displayed in the header)
-description: 日本で働いている初心者の韓国人プログラマーのブログです
+description: "日本で働いている初心者の韓国人プログラマーのブログです"
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
