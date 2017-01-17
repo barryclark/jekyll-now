@@ -26,7 +26,7 @@ Databáze slouží k ukládání dat. Data jdou řešit i jinak, například ukl
 ## Jak se pracuje s databází? 
 Program do databázového systému (DMBS) posílá příkazy typicky v jazyce SQL (structured query language), systém je provede a vrátí výsledek. Mezi databázovy systém a PHP se může vložit další programová vrstva (knihovna nebo ORM), která zlepšuje čitelnost a použitelnost příkazů a dat v rámci projektu - více se dozvíš níže. 
 
-Do databáze se pomocí jazyka SQL dají posílat jednoduché příkazy jako `vrať všechny sloupce z tabulky users`, což zapsáno v SQL vypadá 
+Do databáze se pomocí jazyka SQL dají posílat jednoduché příkazy jako: `vrať všechny sloupce z tabulky users`, což zapsáno v SQL vypadá 
 
 ```sql
 SELECT * FROM users
@@ -35,10 +35,15 @@ SELECT * FROM users
 Příkaz pro vybírání je mocný a dá se hodně rozvinout, jako třeba 
 
 ```sql
-SELECT firstname, surname, photos FROM users JOIN userPhotos ON userPhotos.user = user.id WHERE user.gender = 'female' AND user.age BETWEEN 15 AND 25 AND user.city = 'Brno'
+SELECT firstname, surname, photos 
+FROM users 
+JOIN userPhotos ON userPhotos.user = user.id 
+WHERE user.gender = 'female' 
+	AND user.age BETWEEN 15 
+	AND 25 AND user.city = 'Brno'
 ```
 
-což znamená něco jako `vrať všechny jména, příjmení a fotky uživatelů, kteří jsou ženy, mají od 15 do 25 let a jsou z Brna`. 
+což znamená něco jako: `vrať všechny jména, příjmení a fotky uživatelů, kteří jsou ženy, mají od 15 do 25 let a jsou z Brna`. 
 
 ## Druhy databází
 Databáze se obecně dělí na strukturované (relační) a nestukturované (známé i jako noSQL). **Relační databáze** mají pevně danou strukturu tabulek a sloupců v nich. Tabulky vypadají skoro stejně jako ty v Excelu nebo Calcu, relační databáze mezi nimi navíc definují předem dané vazby. Asi nejpoužívanější relační databázový systém je [MySQL](https://www.mysql.com/) od firmy Sun. Další známé systémy jsou [MariaDB](https://mariadb.org/) jako opensource klon MySQL, oblíbený [PostgreSQL](https://www.postgresql.org/), [Firebird](http://www.firebirdsql.org/) používaný hlavně v komerční sféře a jednoduchý [SQLite](https://sqlite.org/) vhodný pro malé projekty. 
