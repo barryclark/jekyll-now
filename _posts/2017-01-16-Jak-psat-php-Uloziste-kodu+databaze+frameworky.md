@@ -26,10 +26,22 @@ Databáze slouží k ukládání dat. Data jdou řešit i jinak, například ukl
 ## Jak se pracuje s databází? 
 Program do databázového systému (DMBS) posílá příkazy typicky v jazyce SQL (structured query language), systém je provede a vrátí výsledek. Mezi databázovy systém a PHP se může vložit další programová vrstva (knihovna nebo ORM), která zlepšuje čitelnost a použitelnost příkazů a dat v rámci projektu - více se dozvíš níže. 
 
-Do databáze se pomocí jazyka SQL dají posílat jednoduché příkazy jako `vrať všechny sloupce z tabulky users`, což zapsáno v QL vypadá `SELECT * FROM users`. Příkaz pro vybírání je mocný a dá se hodně rozvinout, jako třeba `SELECT firstname, surname, photos FROM users JOIN userPhotos ON userPhotos.user = user.id WHERE user.gender = 'female' AND user.age BETWEEN 15 AND 25 AND user.city = 'Brno'`, což znamená něco jako `vrať všechny jména, příjmení a fotky uživatelů, kteří jsou ženy, mají od 15 do 25 let a jsou z Brna`. 
+Do databáze se pomocí jazyka SQL dají posílat jednoduché příkazy jako `vrať všechny sloupce z tabulky users`, což zapsáno v SQL vypadá 
+
+```sql
+SELECT * FROM users
+```
+
+Příkaz pro vybírání je mocný a dá se hodně rozvinout, jako třeba 
+
+```sql
+SELECT firstname, surname, photos FROM users JOIN userPhotos ON userPhotos.user = user.id WHERE user.gender = 'female' AND user.age BETWEEN 15 AND 25 AND user.city = 'Brno'
+```
+
+což znamená něco jako `vrať všechny jména, příjmení a fotky uživatelů, kteří jsou ženy, mají od 15 do 25 let a jsou z Brna`. 
 
 ## Druhy databází
-Databáze se obecně dělí na strukturované (relační) a nestukturované (známé i jako noSQL). **Relační databáze** mají pevně danou strukturu tabulek a sloupců v nich. Tabulky vypadají skoro stejně jako ty v Excelu nebo Calcu, relační databáze mezi nimi navíc definují předem dané vazby. Asi nejpoužívanější relační databázový systém je [MySQL](https://www.mysql.com/) od firmy Sun. Další známé systémy jsou [MariaDB](https://mariadb.org/) jako opensource klon MySQL, oblíbený [PostgresQL](https://www.postgresql.org/), [Firebird](http://www.firebirdsql.org/) používaný hlavně v komerční sféře a jednoduchý [SQLite](https://sqlite.org/) vhodný pro malé projekty. 
+Databáze se obecně dělí na strukturované (relační) a nestukturované (známé i jako noSQL). **Relační databáze** mají pevně danou strukturu tabulek a sloupců v nich. Tabulky vypadají skoro stejně jako ty v Excelu nebo Calcu, relační databáze mezi nimi navíc definují předem dané vazby. Asi nejpoužívanější relační databázový systém je [MySQL](https://www.mysql.com/) od firmy Sun. Další známé systémy jsou [MariaDB](https://mariadb.org/) jako opensource klon MySQL, oblíbený [PostgreSQL](https://www.postgresql.org/), [Firebird](http://www.firebirdsql.org/) používaný hlavně v komerční sféře a jednoduchý [SQLite](https://sqlite.org/) vhodný pro malé projekty. 
 
 Do **nestukturovaných databází** se většinou informace ukládají ve tvaru `klíč:hodnota`. Používají se zejména tam, kde by byla nejasná či příliš složitá struktua relační databáze či při požadavcích na velkou rychlost a objem v jednoduché struktuře. Používají se například u ticketovacích systémů či dat generovaných z internetu věcí (Internet of Things). Mezi používané nestrukturované dtabáze se řadí [MongoDB](https://www.mongodb.com/) nebo [Redis](https://redis.io/). 
 
@@ -49,4 +61,4 @@ Pokud stojíte před úkolem napsat velkou aplikaci, zvolit si framework jako z�
 # Too Long, Don't Read?
 Zálohujte si kód i jinam než na vlastní disk. Načtěte si základy o databázích a používejte tu, která se na daný úkol hodí nejvíc. Vyzkoušejte alespoň jeden menší a jeden velký framework a určitě nějaký zvažte, když začnete psát velkou aplikaci. 
 
-Na prosbu onlinu rozvinu třídílný seriál na čtyři díly a tak pokryjeme i komentování k=odu, jeho základní dokumentaci a jeho formátování. 
+Na prosbu onlinu rozvinu třídílný seriál na čtyři díly a tak pokryjeme i komentování kódu, jeho základní dokumentaci a jeho formátování. 
