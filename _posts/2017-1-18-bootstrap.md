@@ -82,11 +82,11 @@ Font:
 
 Bootstrap's global default font-size is 14px, with a line-height of 1.428.
 
-This is applied to the <body> and all paragraphs.
+This is applied to the `<body>` and all paragraphs.
 
-In addition, all <p> elements have a bottom margin that equals half their computed line-height (10px by default).
+In addition, all `<p>` elements have a bottom margin that equals half their computed line-height (10px by default).
 
-It uses the default HTML headings: <h1> to <h6> where <h1> is the largest and <h6> is the smallest.
+It uses the default HTML headings: `<h1>` to `<h6>` where `<h1>` is the largest and `<h6>` is the smallest.
 
 
 Lightlighting:
