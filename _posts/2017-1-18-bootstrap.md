@@ -82,11 +82,11 @@ Font:
 
 Bootstrap's global default font-size is 14px, with a line-height of 1.428.
 
-This is applied to the &lt;body> and all paragraphs.
+This is applied to the &lt;body&gt; and all paragraphs.
 
 In addition, all &lt;p&gt; elements have a bottom margin that equals half their computed line-height (10px by default).
 
-It uses the default HTML headings: &lt;h1> to &lt;h6> where &lt;h1> is the largest and &lt;h6> is the smallest.
+It uses the default HTML headings: &lt;h1&gt; to &lt;h6&gt; where &lt;h1&gt; is the largest and &lt;h6&gt; is the smallest.
 
 
 Lightlighting:
@@ -119,3 +119,87 @@ You can do the same thing with backgrounds:
   <p class="bg-warning">This text represents a warning.</p>
   <p class="bg-danger">This text represents danger.</p>
 </div>
+
+
+To get an image with rounded corners:
+
+<img src="cinqueterre.jpg" class="img-rounded" alt="Cinque Terre" width="304" height="236">
+
+If you want your image to be responsive to the screen size, add an .img-responsive class to the &lt;img&gt; tag:
+
+<img class="img-responsive" src="img_chania.jpg" alt="Chania">
+
+
+A page header is like a section divider:
+
+<div class="page-header">
+  <h1>Example Page Header</h1>
+</div>
+
+Alerts are really useful too. We want to create an alert when the user does something:
+
+<div class="alert alert-success">
+  <strong>Success!</strong> Indicates a successful or positive action.
+</div>
+
+<div class="alert alert-info">
+  <strong>Info!</strong> Indicates a neutral informative change or action.
+</div>
+
+<div class="alert alert-warning">
+  <strong>Warning!</strong> Indicates a warning that might need attention.
+</div>
+
+<div class="alert alert-danger">
+  <strong>Danger!</strong> Indicates a dangerous or potentially negative action.
+</div>
+
+
+You might also want to make the alert closable:
+
+<div class="alert alert-success alert-dismissable">
+  <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+  <strong>Success!</strong> Indicates a successful or positive action.
+</div>
+
+
+Buttons have the same patterns as alerts:
+
+<button type="button" class="btn btn-default">Default</button>
+<button type="button" class="btn btn-primary">Primary</button>
+<button type="button" class="btn btn-success">Success</button>
+<button type="button" class="btn btn-info">Info</button>
+<button type="button" class="btn btn-warning">Warning</button>
+<button type="button" class="btn btn-danger">Danger</button>
+<button type="button" class="btn btn-link">Link</button>
+
+The button classes can be used on an &lt;a&gt;, &lt;button&gt;, or &lt;input&gt; element:
+
+<div class="container">
+  <h2>Button Tags</h2>
+  <a href="#" class="btn btn-info" role="button">Link Button</a>
+  <button type="button" class="btn btn-info">Button</button>
+  <input type="button" class="btn btn-info" value="Input Button">
+  <input type="submit" class="btn btn-info" value="Submit Button">
+</div>
+
+Why do we put a # in the href attribute of the link?
+
+Since we do not have any page to link it to, and we do not want to get a "404" message, we put # as the link. In real life it should of course been a real URL to the "Search" page.
+
+
+<button type="button" class="btn btn-primary btn-lg">Large</button>
+<button type="button" class="btn btn-primary btn-md">Medium</button>
+<button type="button" class="btn btn-primary btn-sm">Small</button>
+<button type="button" class="btn btn-primary btn-xs">XSmall</button>
+
+
+A button can be set to an active (appear pressed) or a disabled (unclickable) state:
+
+<button type="button" class="btn btn-primary active">Active Primary</button>
+<button type="button" class="btn btn-primary disabled">Disabled Primary</button>
+
+
+Bootstrap provides 260 glyphicons from the Glyphicons Halflings set.
+
+<span class="glyphicon glyphicon-haflings-search"></span>
