@@ -202,4 +202,11 @@ A button can be set to an active (appear pressed) or a disabled (unclickable) st
 
 Bootstrap provides 260 glyphicons from the Glyphicons Halflings set.
 
-<span class="glyphicon glyphicon-haflings-search"></span>
+  <p>Search icon on a styled button:
+    <button type="button" class="btn btn-info">
+      <span class="glyphicon glyphicon-search"></span> Search
+    </button>
+  </p>
+  
+  
+  
