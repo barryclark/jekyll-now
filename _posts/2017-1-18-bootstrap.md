@@ -9,6 +9,8 @@ First, you need to specify your doctype. If you don't specify this, web browsers
 
 <!DOCTYPE html>
 
+It's good to use ARIA (Accessible Rich Internet Applications) on your page. ARIA defines ways to make Web content and Web applications  more accessible to people with disabilities.
+
 Now you want to declare that this doc is html and set a default language:
 
 <html lang="en">
@@ -240,3 +242,24 @@ Here's the dropdown menu to choose which type of writing we're doing:
     <li role="presentation"><a role="menuitem" href="#">About Us</a></li>
   </ul>
 </div>
+
+We will need a navigation bar. Using navbar-inverse makes it dark, which looks nice. Again, we'll use container-fluid to fill the screen.
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Sappho</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">Page 1</a></li>
+      <li><a href="#">Page 2</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+  </div>
+</nav>
+
+
