@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1588,201527868,2017-01-18 10:05:59,2017-01-18 10:04:34,#Visso urgente intervento in aiuto azienda agricola,,,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Facebook""]",,,"{""cosa"": ""#Visso urgente intervento in aiuto azienda agricola"", ""data"": ""18/01/2017"", ""descrizione"": ""Azienda Agricola Scolastici In tanti ci avete chiesto un aggiornamento riguardo la situazione, purtroppo \u00e8 peggiorata e ha nevicato tutta la notte, anche stamattina c'\u00e8 una bufera fortissima. L'altezza della neve \u00e8 intorno a al metro e ottanta ma ci sono cumuli alti anche quattro metri. Siamo usciti a fatica da casa e non riusciamo a raggiungere le stalle neanche a piedi. Le strade provinciali sono interrotte da ieri sera e tutte le frazioni sono isolate. Stanotte sono crollate due stalle con mucche e pecore all'interno, una a Gualdo e una a Belforte. Non sappiamo in che condizioni siano i nostri animali e dalle sei di questa mattina stiamo contattando tutte le forze dell'ordine per richiedere un intervento.. sembra non ci siano abbastanza mezzi e comunque squadre mal equipaggiate. Speriamo che in giornata intervenga l'esercito perch\u00e9 gli animali sono senza cibo n\u00e9 acqua da ieri."", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1830279550572961/"", ""lon"": """", ""tel"": """"}","<pre><yamldata>tel: ''
+email: ''
+cosa: '#Visso urgente intervento in aiuto azienda agricola'
+descrizione: 'Azienda Agricola Scolastici In tanti ci avete chiesto un aggiornamento riguardo la situazione, purtroppo è peggiorata e ha nevicato tutta la notte, anche stamattina c''è una bufera fortissima. L''altezza della neve è intorno a al metro e ottanta ma ci sono cumuli alti anche quattro metri. Siamo usciti a fatica da casa e non riusciamo a raggiungere le stalle neanche a piedi. Le strade provinciali sono interrotte da ieri sera e tutte le frazioni sono isolate. Stanotte sono crollate due stalle con mucche e pecore all''interno, una a Gualdo e una a Belforte. Non sappiamo in che condizioni siano i nostri animali e dalle sei di questa mattina stiamo contattando tutte le forze dell''ordine per richiedere un intervento.. sembra non ci siano abbastanza mezzi e comunque squadre mal equipaggiate. Speriamo che in giornata intervenga l''esercito perché gli animali sono senza cibo né acqua da ieri.'
+indirizzo: ''
+lat: ''
+lon: ''
+link: 'https://www.facebook.com/groups/1758670357733881/permalink/1830279550572961/'
+immagine: ''
+data: 18/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1587,201438166,2017-01-17 23:39:03,2017-01-17 23:38:26,Chi contattare per l'emergenza neve nell'area di #Amatrice,,,"[""Accettato"", ""Bollettino"", ""Notizie Utili"", ""Twitter""]",,,"{""data"": ""17/01/2017"", ""descrizione"": ""Al link i numeri dei responsabili delle ditte da contattare per l\u2019emergenza neve, relativamente alle strade di competenza comunale nell'area di #Amatrice."", ""link"": ""http://comunicacity.net/amatrice/2017/01/17/emergenza-neve-contatti-telefonici-dei-referenti-per-le-strade-di-competenza-comunale/"", ""titolo"": ""Chi contattare per l'emergenza neve nell'area di #Amatrice""}","<pre><yamldata>titolo: 'Chi contattare per l''emergenza neve nell''area di #Amatrice'
 descrizione: 'Al link i numeri dei responsabili delle ditte da contattare per l’emergenza neve, relativamente alle strade di competenza comunale nell''area di #Amatrice.'
 link: 'http://comunicacity.net/amatrice/2017/01/17/emergenza-neve-contatti-telefonici-dei-referenti-per-le-strade-di-competenza-comunale/'
@@ -1048,17 +1059,6 @@ lon: ''
 link: ''
 immagine: ''
 data: 16/12/2016
-</yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1457,195859138,2016-12-15 22:50:27,2016-12-15 17:00:36,A #Visso c'è bisogno di una roulotte,42.9312321,13.087449,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Sisma Ottobre""]",,,"{""cosa"": ""Roulotte #Visso"", ""data"": ""15/12/2016"", ""descrizione"": ""Sono Angelo Lupidi e a Visso serve una roulotte per 3 adulti che non vogliono lasciare la propria terra. Grazie"", ""email"": """", ""immagine"": """", ""indirizzo"": ""Piazza Martiri Vissani, Visso, MC, Marche, 62039, Italia"", ""lat"": ""42.9312321"", ""link"": """", ""lon"": ""13.087449"", ""tel"": ""3927698337""}","<pre><yamldata>tel: '3927698337'
-email: ''
-cosa: 'Roulotte #Visso'
-descrizione: 'Sono Angelo Lupidi e a Visso serve una roulotte per 3 adulti che non vogliono lasciare la propria terra. Grazie'
-indirizzo: 'Piazza Martiri Vissani, Visso, MC, Marche, 62039, Italia'
-lat: '42.9312321'
-lon: '13.087449'
-link: ''
-immagine: ''
-data: 15/12/2016
 </yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1457,195859138,2016-12-15 22:50:27,2016-12-15 17:00:36,A #Visso c'è bisogno di una roulotte,42.9312321,13.087449,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Sisma Ottobre""]",,,"{""cosa"": ""Roulotte #Visso"", ""data"": ""15/12/2016"", ""descrizione"": ""Sono Angelo Lupidi e a Visso serve una roulotte per 3 adulti che non vogliono lasciare la propria terra. Grazie"", ""email"": """", ""immagine"": """", ""indirizzo"": ""Piazza Martiri Vissani, Visso, MC, Marche, 62039, Italia"", ""lat"": ""42.9312321"", ""link"": """", ""lon"": ""13.087449"", ""tel"": ""3927698337""}","<pre><yamldata>tel: '3927698337'
 email: ''
