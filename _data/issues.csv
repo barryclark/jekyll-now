@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1659,201699845,2017-01-18 21:55:33,2017-01-18 21:39:58,Offresi disponibilità di sgombraneve con operatore ,43.48680489735277,11.374293565750122,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""Sgombraneve"", ""data"": ""18/01/2017"", ""descrizione"": ""Protezione Civile Radda in Chianti offre disponibilit\u00e0 ad inviare mezzo sgombraneve con operatore"", ""email"": ""protezionecivile@comune.raddainchianti.si.it"", ""immagine"": """", ""indirizzo"": ""Propositura di San Niccol\u00f2, Piazza della Chiesa, Lecci, Radda in Chianti, SI, TOS, 53017, Italia"", ""lat"": ""43.48680489735277"", ""link"": """", ""lon"": ""11.374293565750122"", ""tel"": ""3292606300""}","<pre><yamldata>tel: '3292606300'
+email: protezionecivile@comune.raddainchianti.si.it
+cosa: Sgombraneve
+descrizione: 'Protezione Civile Radda in Chianti offre disponibilità ad inviare mezzo sgombraneve con operatore'
+indirizzo: 'Propositura di San Niccolò, Piazza della Chiesa, Lecci, Radda in Chianti, SI, TOS, 53017, Italia'
+lat: '43.48680489735277'
+lon: '11.374293565750122'
+link: ''
+immagine: ''
+data: 18/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1657,201691884,2017-01-18 21:23:09,2017-01-18 21:04:48,Cercasi stalli e adozioni per animali in zone terremotate,,,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Sisma Gennaio 2017"", ""Twitter""]",,,"{""cosa"": ""Cercasi stalli e adozioni per animali in zone terremotate"", ""data"": ""18/01/2017"", ""descrizione"": ""S\u00ec cercano stalli e adozioni gli animali delle zone terremotate e invase dalla neve. Contatto: Bencini Paola 3396498145."", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""https://twitter.com/poetyca/status/821822115762622470"", ""lon"": """", ""tel"": ""3396498145 - 3313121217""}","<pre><yamldata>tel: '3396498145 - 3313121217'
 email: ''
 cosa: 'Cercasi stalli e adozioni per animali in zone terremotate'
@@ -734,17 +745,6 @@ postale: ''
 causale: ''
 link: 'https://www.facebook.com/laviadelsaleonlus/videos/538244496384311/'
 email: laviadelsaleonlus@gmail.com
-data: 09/01/2017
-</yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1541,199689377,2017-01-09 23:22:34,2017-01-09 23:14:04,"Offresi stallo per cani, gatti, animali da cortile e possibilità di trovare una stalla per animali più grossi",42.5873361,11.5159878,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Facebook"", ""Sisma Ottobre""]",,,"{""cosa"": ""Offresi stallo per cani, gatti, animali da cortile e possibilit\u00e0 di trovare una stalla per animali pi\u00f9 grossi"", ""data"": ""09/01/2017"", ""descrizione"": ""Buonasera a tutti, volevo fare un appello dicendo che ho la disponibilit\u00e0 di ospitare una famiglia con bambini, e posso ospitare e prendere in stallo cani gatti animali da cortile. Sono a completa disposizione. Per animali pi\u00f9 grossi come mucche, posso provare a cercare una stalla. Mi trovo a Manciano, in bassa Toscana. Elisa Milioni."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Via Corsini, Podere Pian di Roccetta, Manciano, GR, TOS, 58010, Italia"", ""lat"": ""42.5873361"", ""link"": ""https://www.facebook.com/groups/184616618663358/permalink/228528744272145/"", ""lon"": ""11.5159878"", ""tel"": """"}","<pre><yamldata>tel: ''
-email: ''
-cosa: 'Offresi stallo per cani, gatti, animali da cortile e possibilità di trovare una stalla per animali più grossi'
-descrizione: 'Buonasera a tutti, volevo fare un appello dicendo che ho la disponibilità di ospitare una famiglia con bambini, e posso ospitare e prendere in stallo cani gatti animali da cortile. Sono a completa disposizione. Per animali più grossi come mucche, posso provare a cercare una stalla. Mi trovo a Manciano, in bassa Toscana. Elisa Milioni.'
-indirizzo: 'Via Corsini, Podere Pian di Roccetta, Manciano, GR, TOS, 58010, Italia'
-lat: '42.5873361'
-lon: '11.5159878'
-link: 'https://www.facebook.com/groups/184616618663358/permalink/228528744272145/'
-immagine: ''
 data: 09/01/2017
 </yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1541,199689377,2017-01-09 23:22:34,2017-01-09 23:14:04,"Offresi stallo per cani, gatti, animali da cortile e possibilità di trovare una stalla per animali più grossi",42.5873361,11.5159878,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Facebook"", ""Sisma Ottobre""]",,,"{""cosa"": ""Offresi stallo per cani, gatti, animali da cortile e possibilit\u00e0 di trovare una stalla per animali pi\u00f9 grossi"", ""data"": ""09/01/2017"", ""descrizione"": ""Buonasera a tutti, volevo fare un appello dicendo che ho la disponibilit\u00e0 di ospitare una famiglia con bambini, e posso ospitare e prendere in stallo cani gatti animali da cortile. Sono a completa disposizione. Per animali pi\u00f9 grossi come mucche, posso provare a cercare una stalla. Mi trovo a Manciano, in bassa Toscana. Elisa Milioni."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Via Corsini, Podere Pian di Roccetta, Manciano, GR, TOS, 58010, Italia"", ""lat"": ""42.5873361"", ""link"": ""https://www.facebook.com/groups/184616618663358/permalink/228528744272145/"", ""lon"": ""11.5159878"", ""tel"": """"}","<pre><yamldata>tel: ''
