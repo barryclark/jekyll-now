@@ -52,6 +52,21 @@ descrizione: 'L’Amministrazione comunale di Rieti, in seguito alle scosse di o
 link: 'http://www.comune.rieti.it/article/17/01/emergenza-terremoto-elenco-centri-accoglienza-popolazione-la-notte'
 data: 18/01/2017
 </yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1640,201647971,2017-01-18 19:06:50,2017-01-18 17:58:53,#Rieti scuole chiuse fino al 21 gennaio,,,"[""Accettato"", ""Form"", ""Notizie Utili"", ""Sisma Gennaio 2017""]",,,"{""data"": ""18/01/2017"", ""descrizione"": ""L\u2019Amministrazione comunale di Rieti comunica che in seguito alle scosse di questa mattina, in via precauzionale, il sindaco ha deciso di emanare una apposita ordinanza di sospensione delle attivit\u00e0 didattiche nelle scuole pubbliche e private di ogni ordine e grado nei giorni dal 18 al 21 gennaio compreso per accertare l\u2019assenza di eventuali danni o lesioni presso gli edifici scolastici."", ""link"": ""http://www.comune.rieti.it/article/17/01/emergenza-terremoto-scuole-chiuse-rieti-fino-al-21-gennaio-compreso"", ""titolo"": ""#Rieti scuole chiuse fino al 21 gennaio""}","<pre><yamldata>titolo: '#Rieti scuole chiuse fino al 21 gennaio'
+descrizione: 'L’Amministrazione comunale di Rieti comunica che in seguito alle scosse di questa mattina, in via precauzionale, il sindaco ha deciso di emanare una apposita ordinanza di sospensione delle attività didattiche nelle scuole pubbliche e private di ogni ordine e grado nei giorni dal 18 al 21 gennaio compreso per accertare l’assenza di eventuali danni o lesioni presso gli edifici scolastici.'
+link: 'http://www.comune.rieti.it/article/17/01/emergenza-terremoto-scuole-chiuse-rieti-fino-al-21-gennaio-compreso'
+data: 18/01/2017
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1638,201644379,2017-01-18 19:06:33,2017-01-18 17:45:52,Offresi alloggio per tre persone in provincia di Reggio Emilia,,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""18/01/2017"", ""descrizione"": ""Prima collina provincia di Reggio Emilia, possibilit\u00e0 di accogliere 3 persone (anziani, adulti, bimbi) o due adulti e due bimbi in casa indipendente piano terra. Barbara."", ""email"": ""puoessere73@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3311880837""}","<pre><yamldata>tel: '3311880837'
+email: puoessere73@gmail.com
+descrizione: 'Prima collina provincia di Reggio Emilia, possibilità di accogliere 3 persone (anziani, adulti, bimbi) o due adulti e due bimbi in casa indipendente piano terra. Barbara.'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 18/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1635,201641001,2017-01-18 17:36:41,2017-01-18 17:32:51,A San Giorgio di #Cascia c'è bisogno di un bob cat #fb,42.7495189,13.0174067,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Sisma Gennaio 2017"", ""Twitter""]",,,"{""cosa"": ""A San Giorgio di #Cascia c'\u00e8 bisogno di un bob cat"", ""data"": ""18/01/2017"", ""descrizione"": ""L'associazione Libra 2.0 comunica grandi difficolt\u00e0 per la neve a Santa Giusta, Amatrice e sul lago Scandarello. Inoltre ha ricevuto una richiesta urgente a San Giorgio di Cascia per un bob cat. Contatto: Domenico Lorentucci 328 693 2354."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Localit\u00e0 Logna, Cascia, PG, UMB, 06043, Italia"", ""lat"": ""42.7495189"", ""link"": ""https://twitter.com/libra2puntozero/status/821744526498926592"", ""lon"": ""13.0174067"", ""tel"": ""328 693 2354""}","<pre><yamldata>tel: '328 693 2354'
 email: ''
 cosa: 'A San Giorgio di #Cascia c''è bisogno di un bob cat'
@@ -3036,17 +3051,6 @@ data: 10/11/2016
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1216,188633669,2016-11-25 23:52:10,2016-11-10 22:17:26,I produttori Slow Food nelle #Marche e nel #Lazio che è possibile sostenere ,,,"[""Accettato"", ""acquisto solidale"", ""Bollettino"", ""Sisma Ottobre"", ""Twitter""]",,,"{""data"": ""10/11/2016"", ""descrizione"": ""Sul sito di Slow Food elenco in continuo aggiornamento dei produttori dei Presidi Slow Food nelle Marche e nel Lazio dai quali \u00e8 possibile acquistare i prodotti per sostenere le economie e la ripresa delle attivit\u00e0 nei luoghi del terremoto."", ""link"": ""http://www.slowfood.it/terremoto-aiutiamo-le-aziende-colpite-scegliamo-i-loro-prodotti/"", ""titolo"": ""Acquisti solidali: i produttori Slow Food nella #Marche e nel #Lazio""}","<pre><yamldata>titolo: 'Acquisti solidali: i produttori Slow Food nella #Marche e nel #Lazio'
 descrizione: 'Sul sito di Slow Food elenco in continuo aggiornamento dei produttori dei Presidi Slow Food nelle Marche e nel Lazio dai quali è possibile acquistare i prodotti per sostenere le economie e la ripresa delle attività nei luoghi del terremoto.'
 link: 'http://www.slowfood.it/terremoto-aiutiamo-le-aziende-colpite-scegliamo-i-loro-prodotti/'
-data: 10/11/2016
-</yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1215,188632405,2016-11-10 22:41:46,2016-11-10 22:11:21,"""Il futuro non crolla"". Le magliette dell'Università di #Camerino per sostenere la ricostruzione",,,"[""Accettato"", ""Bollettino"", ""Raccolte Fondi"", ""Sisma Ottobre"", ""Twitter""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""\""il futuro non crolla\"". Le magliette dell'Universit\u00e0 di #Camerino per sostenere la ricostruzione"", ""data"": ""10/11/2016"", ""descrizione"": ""L\u2019Universit\u00e0 di Camerino ha attivato la vendita online delle magliette #ilfuturononcrolla per raccogliere fondi a sostegno del progetto volto alla edificazione di collegi per studenti Unicam meritevoli."", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""https://www.ilfuturononcrolla.it/"", ""postale"": """"}","<pre><yamldata>chi: '""il futuro non crolla"". Le magliette dell''Università di #Camerino per sostenere la ricostruzione'
-descrizione: 'L’Università di Camerino ha attivato la vendita online delle magliette #ilfuturononcrolla per raccogliere fondi a sostegno del progetto volto alla edificazione di collegi per studenti Unicam meritevoli.'
-intestazione: ''
-iban: ''
-bic: ''
-postale: ''
-causale: ''
-link: 'https://www.ilfuturononcrolla.it/'
-email: ''
 data: 10/11/2016
 </yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1215,188632405,2016-11-10 22:41:46,2016-11-10 22:11:21,"""Il futuro non crolla"". Le magliette dell'Università di #Camerino per sostenere la ricostruzione",,,"[""Accettato"", ""Bollettino"", ""Raccolte Fondi"", ""Sisma Ottobre"", ""Twitter""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""\""il futuro non crolla\"". Le magliette dell'Universit\u00e0 di #Camerino per sostenere la ricostruzione"", ""data"": ""10/11/2016"", ""descrizione"": ""L\u2019Universit\u00e0 di Camerino ha attivato la vendita online delle magliette #ilfuturononcrolla per raccogliere fondi a sostegno del progetto volto alla edificazione di collegi per studenti Unicam meritevoli."", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""https://www.ilfuturononcrolla.it/"", ""postale"": """"}","<pre><yamldata>chi: '""il futuro non crolla"". Le magliette dell''Università di #Camerino per sostenere la ricostruzione'
@@ -7702,17 +7706,6 @@ immagine: ''
 data: 16/09/2016
 </yamldata></pre>
 ",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/550,177481724,2016-09-22 14:04:42,2016-09-16 17:44:42,"Salerno, SA - Lloyd’s Baia Hotel ",40.6801561,14.7596754,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""16/09/2016"", ""descrizione"": ""Il Lloyd\u2019s Baia Hotel a disposizione degli sfollati. Per coloro, tra gli sfollati di Accumoli, Arquata del Tronto, Amatrice e degli altri centri colpiti dal sisma, che avessero la possibilit\u00e0 di raggiungere la nostra regione, magari per la presenza di parenti, la famiglia Marinelli fa sapere che metter\u00e0 a disposizione adeguata sistemazione all\u2019interno della propria struttura.\tSalerno"", ""email"": ""info@lloydsbaiahotel.it"", ""immagine"": """", ""indirizzo"": ""Via Roberto il Guiscardo, Salerno, SA, Campania, 84121, Italia"", ""lat"": ""40.6801561"", ""link"": ""http://www.lloydsbaiahotel.it"", ""lon"": ""14.7596754"", ""tel"": ""0897633111""}","<pre><yamldata>tel: '0897633111'
-email: info@lloydsbaiahotel.it
-descrizione: ""Il Lloyd’s Baia Hotel a disposizione degli sfollati. Per coloro, tra gli sfollati di Accumoli, Arquata del Tronto, Amatrice e degli altri centri colpiti dal sisma, che avessero la possibilità di raggiungere la nostra regione, magari per la presenza di parenti, la famiglia Marinelli fa sapere che metterà a disposizione adeguata sistemazione all’interno della propria struttura.\tSalerno""
-indirizzo: 'Via Roberto il Guiscardo, Salerno, SA, Campania, 84121, Italia'
-lat: '40.6801561'
-lon: '14.7596754'
-link: 'http://www.lloydsbaiahotel.it'
-immagine: ''
-data: 16/09/2016
-</yamldata></pre>
-",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/549,177481248,2016-09-22 14:16:30,2016-09-16 17:42:02,"L'Aquila, AQ - ospitalità circolo Arci Querencia",42.3488992,13.3981375,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""16/09/2016"", ""descrizione"": ""\""Il circolo Arci Querencia dell'Aquila sta promuovendo un Coordinamento per offrire ospitalit\u00e0 a famigliari di persone ricoverate all\u2019ospedale dell\u2019Aquila, oppure con necessit\u00e0 analoghe. chi vuole aderire o conosce qualcuno che potrebbe essere interessato pu\u00f2 contattare il circolo\"""", ""email"": """", ""immagine"": """", ""indirizzo"": ""L'Aquila, AQ, Abruzzo, Italia"", ""lat"": ""42.3488992"", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1760302424237341/"", ""lon"": ""13.3981375"", ""tel"": ""3297792549""}","<pre><yamldata>tel: '3297792549'
 email: ''
 descrizione: '""Il circolo Arci Querencia dell''Aquila sta promuovendo un Coordinamento per offrire ospitalità a famigliari di persone ricoverate all’ospedale dell’Aquila, oppure con necessità analoghe. chi vuole aderire o conosce qualcuno che potrebbe essere interessato può contattare il circolo""'
@@ -9677,6 +9670,17 @@ descrizione: 'HOTEL ""VETTA D''ABRUZZO"" ROCCARASO AQ (per 2 famiglie)'
 indirizzo: ''
 lat: '41.850455'
 lon: '14.079666'
+link: ''
+immagine: ''
+data: 14/09/2016
+</yamldata></pre>
+",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/326,176991736,2016-09-22 16:09:06,2016-09-14 19:01:21,"Senigallia, AN - Appartamento con tre camere",43.67746,13.21006,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""14/09/2016"", ""descrizione"": ""Fam. Paolini SENIGALLIA (AN) mette a disposizione appartamento con ascensore per 4/5 persone (3 camere)."", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": ""43.67746"", ""link"": """", ""lon"": ""13.21006"", ""tel"": ""3661083315""}","<pre><yamldata>tel: '3661083315'
+email: ''
+descrizione: 'Fam. Paolini SENIGALLIA (AN) mette a disposizione appartamento con ascensore per 4/5 persone (3 camere).'
+indirizzo: ''
+lat: '43.67746'
+lon: '13.21006'
 link: ''
 immagine: ''
 data: 14/09/2016
