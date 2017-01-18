@@ -40,7 +40,6 @@ The next thing you want to do with you base.html file is include a place for the
 Which gives us
 
 
->
     <div class="container-fluid">
         {% block content %}
         {% endblock %}
