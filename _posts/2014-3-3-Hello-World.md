@@ -13,8 +13,16 @@ I have created this e-document as a memoire for myself to look back on. It remin
 
 For you, I am grateful because I learn through your mistakes and successes, too.
 
+It took me about 13 months to learn how it all works properly. Life was hectic, but it got better because I taught myself how to be a creative problem solver.
 
+I persevered through the year of constant self-doubt, confusion, and struggle. And now that I’ve got the hang of it, I’d like to pay it forward by publishing my progress as I continue to grow. Heck, it may even help some of you experts out there in the digi-world.
 
-![_config.yml]({{ site.baseurl }}/images/config.png)
+It is my sincere hope to read of your accomplishments and progress as well. Social networks are a great place for developers to learn from colleages, contact clients, find solution to problems and resources, and improve their own skills.
 
-The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
+So, please feel free to connect with me through email or social links below!
+
+I thank you for your time and hope to hear from you soon,
+
+Emily
+
+emilypmendez@gmail.com
