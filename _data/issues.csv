@@ -4,6 +4,16 @@ descrizione: 'L''AQUILA: NUOVO AGGIORNAMENTO ELENCO EDIFICI COMUNALI APERTI AL C
 link: 'http://www.comune.laquila.gov.it/archivio3_notizie-e-comunicati_0_4819.html?utm_source=dlvr.it&utm_medium=facebook'
 data: 18/01/2017
 </yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1610,201589628,2017-01-18 15:02:35,2017-01-18 14:32:56,Offro appartamento a Palestrina provincia di Roma,,,"[""Accettato"", ""Alloggi"", ""Bollettino"", ""Form""]",,,"{""data"": ""18/01/2017"", ""descrizione"": ""Palestrina provincia di Roma, offro alloggio temporaneo a terremotati centro Italia, \u00e8 una porzione del mio villino bifamiliare. Alloggio con entrata indipendente, circa 80mq, salone doppio, camera da letto, bagno, cucina. Completamente arredato di tutto, potete usufruirne da subito. ideale per coppia anziani o giovani senza bimbi, unica condizione non dovete avere paura di cani e gatti perch\u00e8 con me vivono due cani e due gatti. Contattatemi. Gabriella"", ""email"": ""gabry9671.gc@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""334.7431815""}","<pre><yamldata>tel: '334.7431815'
+email: gabry9671.gc@gmail.com
+descrizione: 'Palestrina provincia di Roma, offro alloggio temporaneo a terremotati centro Italia, è una porzione del mio villino bifamiliare. Alloggio con entrata indipendente, circa 80mq, salone doppio, camera da letto, bagno, cucina. Completamente arredato di tutto, potete usufruirne da subito. ideale per coppia anziani o giovani senza bimbi, unica condizione non dovete avere paura di cani e gatti perchè con me vivono due cani e due gatti. Contattatemi. Gabriella'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 18/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1609,201587494,2017-01-18 14:26:09,2017-01-18 14:24:58,Casa indipendente,,,"[""Accettato"", ""Alloggi"", ""Bollettino"", ""Donazioni"", ""Form""]",,,"{""cosa"": ""Casa indipendente"", ""data"": ""18/01/2017"", ""descrizione"": ""Offro temporaneamente una parte del mio villino bifamiliare, appartamento con entrata indipendente, circa 80mq, salone doppio, camera da letto, bagno e cucina, completamente arredato e completo di tutto, potete entrare da subito. Perfetto per coppia anziani o giovane coppia senza bimbi. Unica cosa non dovete avere paura di cani o gatti perch\u00e9 con me nel mio giardino vivono due cani e due gatti ma sono tutti buonissimi. La casa si trova in provincia di Roma, Palestrina. Contattatemi Gabriella"", ""email"": ""gabry9671.gc@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""334.7431815""}","<pre><yamldata>tel: '334.7431815'
 email: gabry9671.gc@gmail.com
 cosa: 'Casa indipendente'
@@ -5811,18 +5821,6 @@ email: ''
 data: 11/10/2016
 </yamldata></pre>
 ",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/785,182339015,2016-10-12 09:24:09,2016-10-11 18:30:34,Cagnolino senza padrone a Pescara del Tronto,42.7510272,13.2714902,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Twitter""]",,http://i.imgur.com/eioWhFn.jpg,"{""cosa"": ""Cagnolino apparso Pescara del Tronto"", ""data"": ""11/10/2016"", ""descrizione"": ""C'\u00e8 questo cagnolino a Pescara del Tronto apparso oggi. Ha il collare, ma non sappiamo a chi appartenga. Se qualcuno conosce o proprietari, per favore li avvisi."", ""email"": """", ""immagine"": ""http://i.imgur.com/eioWhFn.jpg"", ""indirizzo"": ""Strada Provinciale 129 Trisungo d'Arquata - Tufo, Arquata del Tronto, AP, Marche, 63096, Italia"", ""lat"": ""42.7510272"", ""link"": ""https://www.facebook.com/groups/1758670357733881/1781941882073395/?notif_t=group_activity&notif_id=1476044977616271"", ""lon"": ""13.2714902"", ""tel"": """"}","<pre><yamldata>tel: ''
-email: ''
-cosa: 'Cagnolino apparso Pescara del Tronto'
-descrizione: 'C''è questo cagnolino a Pescara del Tronto apparso oggi. Ha il collare, ma non sappiamo a chi appartenga. Se qualcuno conosce o proprietari, per favore li avvisi.'
-indirizzo: 'Strada Provinciale 129 Trisungo d''Arquata - Tufo, Arquata del Tronto, AP, Marche, 63096, Italia'
-lat: '42.7510272'
-lon: '13.2714902'
-link: 'https://www.facebook.com/groups/1758670357733881/1781941882073395/?notif_t=group_activity&notif_id=1476044977616271'
-immagine: 'http://i.imgur.com/eioWhFn.jpg'
-data: 11/10/2016
-</yamldata></pre>
-",closed
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/785,182339015,2016-10-12 09:24:09,2016-10-11 18:30:34,Cagnolino senza padrone a Pescara del Tronto,42.7510272,13.2714902,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Twitter""]",,http://i.imgur.com/eioWhFn.jpg,"{""cosa"": ""Cagnolino apparso Pescara del Tronto"", ""data"": ""11/10/2016"", ""descrizione"": ""C'\u00e8 questo cagnolino a Pescara del Tronto apparso oggi. Ha il collare, ma non sappiamo a chi appartenga. Se qualcuno conosce o proprietari, per favore li avvisi."", ""email"": """", ""immagine"": ""http://i.imgur.com/eioWhFn.jpg"", ""indirizzo"": ""Strada Provinciale 129 Trisungo d'Arquata - Tufo, Arquata del Tronto, AP, Marche, 63096, Italia"", ""lat"": ""42.7510272"", ""link"": ""https://www.facebook.com/groups/1758670357733881/1781941882073395/?notif_t=group_activity&notif_id=1476044977616271"", ""lon"": ""13.2714902"", ""tel"": """"}","<pre><yamldata>tel: ''
 email: ''
 cosa: 'Cagnolino apparso Pescara del Tronto'
