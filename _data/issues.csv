@@ -1301,6 +1301,11 @@ descrizione: 'Cittadinanzattiva Umbria presenta un report sulle iniziative in co
 link: 'http://www.cittadinanzattiva.it/notizie/dal-territorio/9747-il-report-presidi-civici-delle-comunita-coinvolte-dal-sisma-in-umbria.html'
 data: 16/12/2016
 </yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1465,196106867,2016-12-16 17:05:21,2016-12-16 17:03:02,Cittadinanzattiva #Umbria presenta report sui Presidi civici nelle comunità terremotate,,,"[""Accettato"", ""Bollettino"", ""Notizie Utili"", ""Sisma Ottobre""]",,,"{""data"": ""16/12/2016"", ""descrizione"": ""Cittadinanzattiva Umbria presenta un report sulle iniziative in corso dopo l'avvio del programma presidi civici delle comunit\u00e0 colpite dal sisma."", ""link"": ""http://www.cittadinanzattiva.it/notizie/dal-territorio/9747-il-report-presidi-civici-delle-comunita-coinvolte-dal-sisma-in-umbria.html"", ""titolo"": ""Cittadinanzattiva #Umbria presenta report sui Presidi civici nelle comunit\u00e0 terremotate""}","<pre><yamldata>titolo: 'Cittadinanzattiva #Umbria presenta report sui Presidi civici nelle comunità terremotate'
+descrizione: 'Cittadinanzattiva Umbria presenta un report sulle iniziative in corso dopo l''avvio del programma presidi civici delle comunità colpite dal sisma.'
+link: 'http://www.cittadinanzattiva.it/notizie/dal-territorio/9747-il-report-presidi-civici-delle-comunita-coinvolte-dal-sisma-in-umbria.html'
+data: 16/12/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1464,196092756,2016-12-16 17:04:48,2016-12-16 16:04:24,"Offro scarpe, vestiti per bambini e giocattoli in ottimo stato",,,"[""Accettato"", ""Donazioni"", ""Form"", ""Sisma Ottobre""]",,,"{""cosa"": ""Scarpei bambina e giocattoli usato"", ""data"": ""16/12/2016"", ""descrizione"": ""Ho quattro paia di scarpe in ottimo stato numero 27, qualche vestito 2-3 anni, sempre in buono stato e qualche giocattolo tra cui una bicicletta a tre ruote per i bambini piccoli, tutto usato in ottimo stato. Sto in Ancona, ho difficolt\u00e0 a muovermi ma in qualche modo magari ci si riesce ad organizzare. Se interessati chiamatemi"", ""email"": ""alice.camaterou@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3488828831""}","<pre><yamldata>tel: '3488828831'
 email: alice.camaterou@gmail.com
 cosa: 'Scarpei bambina e giocattoli usato'
@@ -10348,6 +10353,18 @@ email: info@leijimatsumoto.it
 data: 14/09/2016
 </yamldata></pre>
 ",closed
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/262,176854813,2016-09-14 09:15:06,2016-09-14 09:11:33,Coldiretti,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Coldiretti"", ""data"": ""14/09/2016"", ""descrizione"": ""Iniziativa con un impatto economico diretto sul territorio per fermare l'abbandono con il lavoro per la popolazione, che nelle campagne terremotate significa soprattutto salvare le stalle."", ""email"": """", ""iban"": ""IT 74 N 05704 03200 000000127000"", ""intestazione"": ""COLDIRETTI PRO-TERREMOTATI"", ""link"": ""http://www.agi.it/economia/2016/09/02/news/terremoto_arrivano_le_prime_caciotte_solidali_salva_mucche-1048380/"", ""postale"": """"}","<pre><yamldata>chi: Coldiretti
+descrizione: 'Iniziativa con un impatto economico diretto sul territorio per fermare l''abbandono con il lavoro per la popolazione, che nelle campagne terremotate significa soprattutto salvare le stalle.'
+intestazione: 'COLDIRETTI PRO-TERREMOTATI'
+iban: 'IT 74 N 05704 03200 000000127000'
+bic: ''
+postale: ''
+causale: ''
+link: 'http://www.agi.it/economia/2016/09/02/news/terremoto_arrivano_le_prime_caciotte_solidali_salva_mucche-1048380/'
+email: ''
+data: 14/09/2016
+</yamldata></pre>
+",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/262,176854813,2016-09-14 09:15:06,2016-09-14 09:11:33,Coldiretti,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Coldiretti"", ""data"": ""14/09/2016"", ""descrizione"": ""Iniziativa con un impatto economico diretto sul territorio per fermare l'abbandono con il lavoro per la popolazione, che nelle campagne terremotate significa soprattutto salvare le stalle."", ""email"": """", ""iban"": ""IT 74 N 05704 03200 000000127000"", ""intestazione"": ""COLDIRETTI PRO-TERREMOTATI"", ""link"": ""http://www.agi.it/economia/2016/09/02/news/terremoto_arrivano_le_prime_caciotte_solidali_salva_mucche-1048380/"", ""postale"": """"}","<pre><yamldata>chi: Coldiretti
 descrizione: 'Iniziativa con un impatto economico diretto sul territorio per fermare l''abbandono con il lavoro per la popolazione, che nelle campagne terremotate significa soprattutto salvare le stalle.'
 intestazione: 'COLDIRETTI PRO-TERREMOTATI'
