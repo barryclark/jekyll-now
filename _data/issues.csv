@@ -63,10 +63,10 @@ link: ''
 immagine: ''
 data: 18/01/2017
 </yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1642,201648752,2017-01-18 18:07:56,2017-01-18 18:01:53,Abbigliamento da neve #Cittareale,,,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Sisma Gennaio 2017"", ""Twitter""]",,,{},"<pre><yamldata>tel: '0746947006'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1642,201648752,2017-01-18 20:53:02,2017-01-18 18:01:53,Abbigliamento da neve #Cittareale,42.6182543,13.1596844,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Sisma Gennaio 2017"", ""Twitter""]",,,"{""cosa"": ""Abbigliamento da neve #Cittareale"", ""data"": ""18/01/2017"", ""descrizione"": ""La Via del Sale Onlus segnala che servono tute, doposci e abbigliamento da neve. Per la consegna, contattare Centro di Smistamento di Cittareale."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Corso Vittorio Emanuele, Cittareale, RI, Lazio, Italia"", ""lat"": ""42.6182543"", ""link"": """", ""lon"": ""13.1596844"", ""tel"": ""0746947006""}","<pre><yamldata>tel: '0746947006'
 email: ''
 cosa: 'Abbigliamento da neve #Cittareale'
-descrizione: 'L'Associazione La Via del Sale Onlus segnala che servono tute, doposci e abbigliamento da neve. Per la consegna, contattare Centro di Smistamento di Cittareale.'
+descrizione: 'La Via del Sale Onlus segnala che servono tute, doposci e abbigliamento da neve. Per la consegna, contattare Centro di Smistamento di Cittareale.'
 indirizzo: 'Corso Vittorio Emanuele, Cittareale, RI, Lazio, Italia'
 lat: '42.6182543'
 lon: '13.1596844'
