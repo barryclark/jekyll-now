@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1648,201669691,2017-01-18 19:31:36,2017-01-18 19:30:18,AIUTI URGENTI #Atri,42.5801368,13.9764121,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""AIUTI URGENTI #Atri"", ""data"": ""18/01/2017"", ""descrizione"": ""Nel Comune di Atri provincia di Teramo sono senza acqua, luce e riscaldamento da 48h, senza linea telefonica n\u00e8 mobile n\u00e8 fissa, scarsit\u00e0 viveri e isolamento viabilit\u00e0. Situazione pesantissima e fuori dai canali di comunicazione: servono aiuti immediatamente."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Piazza Duomo, Atri, TE, Abruzzo, 64032, Italia"", ""lat"": ""42.5801368"", ""link"": """", ""lon"": ""13.9764121"", ""tel"": """"}","<pre><yamldata>tel: ''
+email: ''
+cosa: 'AIUTI URGENTI #Atri'
+descrizione: 'Nel Comune di Atri provincia di Teramo sono senza acqua, luce e riscaldamento da 48h, senza linea telefonica nè mobile nè fissa, scarsità viveri e isolamento viabilità. Situazione pesantissima e fuori dai canali di comunicazione: servono aiuti immediatamente.'
+indirizzo: 'Piazza Duomo, Atri, TE, Abruzzo, 64032, Italia'
+lat: '42.5801368'
+lon: '13.9764121'
+link: ''
+immagine: ''
+data: 18/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1646,201662962,2017-01-18 19:03:29,2017-01-18 19:03:05,"Riaperti centri accoglienza a #Fabriano, #Tolentino, #SanSeverino, #Ascoli",,,"[""Accettato"", ""Bollettino"", ""Notizie Utili"", ""Sisma Gennaio 2017""]",,,"{""data"": ""18/01/2017"", ""descrizione"": ""(ANSA) - ANCONA, 18 GEN - Anche se non ci sono stati danni rilevanti, le scosse di terremoto di oggi hanno riportato la paura fra la popolazione delle Marche e molti sindaci hanno riaperto centri di accoglienza per le persone che hanno paura di dormire in casa o che per qualche motivo vogliono lasciare i centri pi\u00f9 vicini al luogo dell'epicentro, che \u00e8 in Abruzzo. A San Severino Marche \u00e8 stata aperta una struttura dotata di brandine e di personale che prester\u00e0 assistenza nella vecchia palestra dell'Istituto comprensivo 'Padre Tacchi Venturi'. Anche a Tolentino, dove non si registrano particolari problemi o crolli, \u00e8 stato riaperto il punto di prima accoglienza all'interno dello Spazio '815. A disposizione anche l'area Camper di zona Sticchi. A Fabriano il sindaco ha aperto il PalaGuerrieri. Anche qui non si registrano danni."", ""link"": ""http://ow.ly/NFPv508I0bl"", ""titolo"": ""Riaperti centri accoglienza a #Fabriano, #Tolentino, #SanSeverino, #Ascoli""}","<pre><yamldata>titolo: 'Riaperti centri accoglienza a #Fabriano, #Tolentino, #SanSeverino, #Ascoli'
 descrizione: '(ANSA) - ANCONA, 18 GEN - Anche se non ci sono stati danni rilevanti, le scosse di terremoto di oggi hanno riportato la paura fra la popolazione delle Marche e molti sindaci hanno riaperto centri di accoglienza per le persone che hanno paura di dormire in casa o che per qualche motivo vogliono lasciare i centri più vicini al luogo dell''epicentro, che è in Abruzzo. A San Severino Marche è stata aperta una struttura dotata di brandine e di personale che presterà assistenza nella vecchia palestra dell''Istituto comprensivo ''Padre Tacchi Venturi''. Anche a Tolentino, dove non si registrano particolari problemi o crolli, è stato riaperto il punto di prima accoglienza all''interno dello Spazio ''815. A disposizione anche l''area Camper di zona Sticchi. A Fabriano il sindaco ha aperto il PalaGuerrieri. Anche qui non si registrano danni.'
 link: 'http://ow.ly/NFPv508I0bl'
@@ -8008,17 +8019,6 @@ descrizione: 'AHMED mette a disposizione appartamento ammobiliato.'
 indirizzo: 'Piazza Antonello, IV Circoscrizione, Messina, ME, Sicily, 98122, Italia'
 lat: '38.1937571'
 lon: '15.5542082'
-link: ''
-immagine: ''
-data: 16/09/2016
-</yamldata></pre>
-",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/519,177468125,2016-09-22 15:56:50,2016-09-16 16:32:44,"Vicopisano, PI - Casa, 6 posti letto",43.6873261,10.5462333,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""16/09/2016"", ""descrizione"": ""Laura offre casa (6 posti letto)"", ""email"": """", ""immagine"": """", ""indirizzo"": ""Via di Villa, Case Grandiana, Vicopisano, PI, Tuscany, 56021, Italia"", ""lat"": ""43.6873261"", ""link"": """", ""lon"": ""10.5462333"", ""tel"": ""004795104142""}","<pre><yamldata>tel: '004795104142'
-email: ''
-descrizione: 'Laura offre casa (6 posti letto)'
-indirizzo: 'Via di Villa, Case Grandiana, Vicopisano, PI, Tuscany, 56021, Italia'
-lat: '43.6873261'
-lon: '10.5462333'
 link: ''
 immagine: ''
 data: 16/09/2016
