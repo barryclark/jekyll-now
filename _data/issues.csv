@@ -1,4 +1,14 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1631,201630386,2017-01-18 17:13:36,2017-01-18 16:53:12,Offresi ospitalità per 4-5 persone a Brescia,45.5399392,10.2204897,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""18/01/2017"", ""descrizione"": ""Cir\u00f2 offre ospitalit\u00e0 a Brescia, dispone di due stanze con 4/5 posti letto"", ""email"": """", ""immagine"": """", ""indirizzo"": ""Piazza Bell'Italia, Centro Storico Nord, Zona Centro, Brescia, Lombardia, 25122, Italia"", ""lat"": ""45.5399392"", ""link"": """", ""lon"": ""10.2204897"", ""tel"": ""3394633402""}","<pre><yamldata>tel: '3394633402'
+email: ''
+descrizione: 'Cirò offre ospitalità a Brescia, dispone di due stanze con 4/5 posti letto'
+indirizzo: 'Piazza Bell''Italia, Centro Storico Nord, Zona Centro, Brescia, Lombardia, 25122, Italia'
+lat: '45.5399392'
+lon: '10.2204897'
+link: ''
+immagine: ''
+data: 18/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1630,201629867,2017-01-18 17:11:32,2017-01-18 16:51:26,Associazione offre 4 volontari per manovalanza gratuita,,,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Form""]",,,"{""cosa"": ""Offriamo manovalanza gratuita"", ""data"": ""18/01/2017"", ""descrizione"": ""L' associazione MAM beyond borders mette a disposizione 4 ragazzi volontari da Frosinone per lavori di manovalanza in zone terremotate (spalare neve, sistemazione stalle e cos\u00ec via) gi\u00e0 per i giorni Sabato 21 e Domenica22. Per informazioni potete contattarci sulla pagina Facebook \""mam beyond borders \"". Grazie!"", ""email"": ""gengisvannir@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""https://m.facebook.com/profile.php?id=563881680324872"", ""lon"": """", ""tel"": ""3297239367""}","<pre><yamldata>tel: '3297239367'
 email: gengisvannir@gmail.com
 cosa: 'Offriamo manovalanza gratuita'
@@ -5585,12 +5595,6 @@ data: 21/10/2016
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/831,184575561,2016-10-21 21:53:12,2016-10-21 21:39:02,Insediato Comitato Istituzionale Regione Lazio previsto dal Decreto legge n. 189 del 17 ottobre,,,"[""Accettato"", ""Bollettino"", ""Notizie Utili""]",,,"{""data"": ""21/10/2016"", ""descrizione"": ""Insediato il 20 ottobre 2016, alla presenza del vice commissario Nicola Zingaretti, del Commissario straordinario Vasco Errani e del Direttore del Dipartimento di Protezione civile nazionale Fabrizio Curcio, il Comitato Istituzionale della Regione Lazio previsto dall\u2019Art. 1 comma 6 del Decreto legge 17 ottobre 2016 numero 189 in merito agli interventi urgenti in favore delle popolazioni colpite dal sisma del 24 agosto 2016. Alla riunione hanno partecipato tutti i sindaci dei Comuni individuati dal Decreto legge: Accumoli, Amatrice, Antrodoco, Borbona, Borgo Velino, Castel Sant\u2019Angelo, Cittareale, Leonessa, Micigliano e Posta, il Presidente della Provincia di Rieti, Giuseppe Rinaldi e l\u2019assessore regionale alle Infrastrutture Fabio Refrigeri."", ""link"": ""http://www.regione.lazio.it/rl_main/?vw=newsdettaglio&id=3634"", ""titolo"": ""SISMA: INSEDIATO IL COMITATO ISTITUZIONALE DELLA REGIONE LAZIO""}","<pre><yamldata>titolo: 'SISMA: INSEDIATO IL COMITATO ISTITUZIONALE DELLA REGIONE LAZIO'
 descrizione: 'Insediato il 20 ottobre 2016, alla presenza del vice commissario Nicola Zingaretti, del Commissario straordinario Vasco Errani e del Direttore del Dipartimento di Protezione civile nazionale Fabrizio Curcio, il Comitato Istituzionale della Regione Lazio previsto dall’Art. 1 comma 6 del Decreto legge 17 ottobre 2016 numero 189 in merito agli interventi urgenti in favore delle popolazioni colpite dal sisma del 24 agosto 2016. Alla riunione hanno partecipato tutti i sindaci dei Comuni individuati dal Decreto legge: Accumoli, Amatrice, Antrodoco, Borbona, Borgo Velino, Castel Sant’Angelo, Cittareale, Leonessa, Micigliano e Posta, il Presidente della Provincia di Rieti, Giuseppe Rinaldi e l’assessore regionale alle Infrastrutture Fabio Refrigeri.'
 link: 'http://www.regione.lazio.it/rl_main/?vw=newsdettaglio&id=3634'
-data: 21/10/2016
-</yamldata></pre>
-",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/830,184498520,2016-10-22 21:11:34,2016-10-21 14:25:56,"“Coordinamento Nazionale Alluvionati e Terremotati Italiani” e “Cuore Tricolore – Cittadini in Movimento” chiedono una modifica del Decreto Legge 17 ottobre 2016, n. 189.",,,"[""Accettato"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""21/10/2016"", ""descrizione"": ""Petizione online \""Chiediamo la modifica urgente del Decreto Legge Terremoto Centro Italia\""."", ""link"": ""https://www.change.org/p/chiediamo-la-modifica-urgente-del-decreto-legge-terremoto-centro-italia?recruiter=56179740&utm_source=share_petition&utm_medium=copylink"", ""titolo"": ""Petizione online change.org""}","<pre><yamldata>titolo: 'Petizione online change.org'
-descrizione: 'Petizione online ""Chiediamo la modifica urgente del Decreto Legge Terremoto Centro Italia"".'
-link: 'https://www.change.org/p/chiediamo-la-modifica-urgente-del-decreto-legge-terremoto-centro-italia?recruiter=56179740&utm_source=share_petition&utm_medium=copylink'
 data: 21/10/2016
 </yamldata></pre>
 ",open
