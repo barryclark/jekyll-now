@@ -35,13 +35,8 @@ We will need a navigation bar. Using navbar-inverse makes it dark, which looks n
 </nav>
 
 
-The next thing you want to do with you base.html file is include a place for the templates you extend from here. Just create a container and specify that you want any additional content (such as page.html) to go there. We want to put everything in a container. One way to do this is:&lt;div class="container"&gt;. But if we want the container container to resize as the screen size changes, we use: &lt;div class="container-fluid"&gt;.
 
-
-&lt;div class="container-fluid">
-{% block content %}
-{% endblock %}
-&lt;/div>
+You had stuff here until you deleted it.
 
 
 After you add some closing markers to close the body and html document, you're base.html should look like this:
