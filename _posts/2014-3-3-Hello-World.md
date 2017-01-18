@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Becoming a developer also "becomes" worth the struggle
+title: 'My First Post! AKA: Becoming a developer also "becomes" worth the struggle'
 published: true
 ---
 
