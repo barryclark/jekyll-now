@@ -30,3 +30,12 @@ then, to get them back to your pythonanywhere app, use `git pull origin master`
 
 
 
+If you add a new file:
+
+git add .
+
+git commit -m "added xxx"
+
+git push origin master
+
+Enter your username and password if required

@@ -9,8 +9,6 @@ First, you need to specify your doctype. If you don't specify this, web browsers
 
 <!DOCTYPE html>
 
-It's good to use ARIA (Accessible Rich Internet Applications) on your page. ARIA defines ways to make Web content and Web applications  more accessible to people with disabilities.
-
 Now you want to declare that this doc is html and set a default language:
 
 <html lang="en">
