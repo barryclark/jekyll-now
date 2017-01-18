@@ -2080,6 +2080,17 @@ link: 'http://www.valnerinaoggi.it/norcia/campi/a-campi-si-rimboccano-le-maniche
 email: ''
 data: 21/11/2016
 </yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1330,190655834,2016-11-21 20:35:44,2016-11-21 09:04:28,Raccolta fondi per Campi di Norcia,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Raccolte Fondi"", ""Sisma Ottobre""]",,,"{""bic"": """", ""causale"": ""Ricostruzione Campi di Norcia"", ""chi"": ""Raccolta fondi per Campi di Norcia"", ""data"": ""21/11/2016"", ""descrizione"": ""La Pro Loco di Campi di Norcia ha avviato una raccolta fondi per la ricostruzione del paese"", ""email"": """", ""iban"": ""IT27X0631538580000001004333"", ""intestazione"": ""Cassa di Risparmio dell\u2019Umbria Ag. di Norcia"", ""link"": ""http://www.valnerinaoggi.it/norcia/campi/a-campi-si-rimboccano-le-maniche-aiutiamoli-ce-liban-a-disposizione-5507/"", ""postale"": """"}","<pre><yamldata>chi: 'Raccolta fondi per Campi di Norcia'
+descrizione: 'La Pro Loco di Campi di Norcia ha avviato una raccolta fondi per la ricostruzione del paese'
+intestazione: 'Cassa di Risparmio dell’Umbria Ag. di Norcia'
+iban: IT27X0631538580000001004333
+bic: ''
+postale: ''
+causale: 'Ricostruzione Campi di Norcia'
+link: 'http://www.valnerinaoggi.it/norcia/campi/a-campi-si-rimboccano-le-maniche-aiutiamoli-ce-liban-a-disposizione-5507/'
+email: ''
+data: 21/11/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1329,190586362,2016-12-06 22:43:37,2016-11-20 21:51:51,Cercasi camper o roulotte con 5  posti a #Norcia,42.7927706,13.0930812,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Facebook""]",,,"{""cosa"": ""Cercasi camper o roulotte con 5  posti a #Norcia"", ""data"": ""20/11/2016"", ""descrizione"": ""Cerco camper o roulotte 5 posti per tornare a Norcia, attualmente in albergo dal 30. Siamo una famiglia con tre figli, mio marito fa il pendolare Perugia-Norcia per lavorare in quanto ha investito tutto in un una attivit\u00e0 a Norcia che fortunatamente ha resistito al sisma del 30 .Vogliamo stare tutti insieme, vi prego aiutateci."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Piazza San Benedetto, Casa Coletti, Norcia, PG, UMB, 06046, Italia"", ""lat"": ""42.7927706"", ""link"": ""https://www.facebook.com/groups/993292824038901/permalink/1330348846999962/"", ""lon"": ""13.0930812"", ""tel"": """"}","<pre><yamldata>tel: ''
 email: ''
 cosa: 'Cercasi camper o roulotte con 5  posti a #Norcia'
@@ -6298,6 +6309,12 @@ link: 'http://www.regione.marche.it/Regione-Utile/Terremoto-Marche/News-ed-event
 data: 28/09/2016
 </yamldata></pre>
 ",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/694,179687863,2016-10-02 08:47:40,2016-09-28 06:08:31,Regione #Marche - aperto un avviso pubblico per accoglienza persone colpite dal sisma in strutture ricettive,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili"", ""pubblicare in archive.org""]",Milestone(number=6),,"{""data"": ""28/09/2016"", ""descrizione"": ""Regione Marche apre un avviso pubblico - Manifestazione di interesse per l'accoglienza delle persone colpite dal sisma rivolta ai titolari di strutture ricettive del territorio limitrofo alle zone interessate."", ""link"": ""http://www.regione.marche.it/Regione-Utile/Terremoto-Marche/Appalti?id_13025=319"", ""titolo"": ""Regione Marche - aperto un avviso pubblico per la ricerca di strutture  ricettive per accoglienza persone colpite dal sisma strutture""}","<pre><yamldata>titolo: 'Regione Marche - aperto un avviso pubblico per la ricerca di strutture  ricettive per accoglienza persone colpite dal sisma strutture'
+descrizione: 'Regione Marche apre un avviso pubblico - Manifestazione di interesse per l''accoglienza delle persone colpite dal sisma rivolta ai titolari di strutture ricettive del territorio limitrofo alle zone interessate.'
+link: 'http://www.regione.marche.it/Regione-Utile/Terremoto-Marche/Appalti?id_13025=319'
+data: 28/09/2016
+</yamldata></pre>
+",closed
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/694,179687863,2016-10-02 08:47:40,2016-09-28 06:08:31,Regione #Marche - aperto un avviso pubblico per accoglienza persone colpite dal sisma in strutture ricettive,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili"", ""pubblicare in archive.org""]",Milestone(number=6),,"{""data"": ""28/09/2016"", ""descrizione"": ""Regione Marche apre un avviso pubblico - Manifestazione di interesse per l'accoglienza delle persone colpite dal sisma rivolta ai titolari di strutture ricettive del territorio limitrofo alle zone interessate."", ""link"": ""http://www.regione.marche.it/Regione-Utile/Terremoto-Marche/Appalti?id_13025=319"", ""titolo"": ""Regione Marche - aperto un avviso pubblico per la ricerca di strutture  ricettive per accoglienza persone colpite dal sisma strutture""}","<pre><yamldata>titolo: 'Regione Marche - aperto un avviso pubblico per la ricerca di strutture  ricettive per accoglienza persone colpite dal sisma strutture'
 descrizione: 'Regione Marche apre un avviso pubblico - Manifestazione di interesse per l''accoglienza delle persone colpite dal sisma rivolta ai titolari di strutture ricettive del territorio limitrofo alle zone interessate.'
 link: 'http://www.regione.marche.it/Regione-Utile/Terremoto-Marche/Appalti?id_13025=319'
