@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1642,201648752,2017-01-18 18:02:39,2017-01-18 18:01:53,Abbigliamento da neve #Cittareale,42.6182543,13.1596844,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Sisma Gennaio 2017"", ""Twitter""]",,,"{""cosa"": ""Abbigliamento da neve #Cittareale"", ""data"": ""18/01/2017"", ""descrizione"": ""Servono tute, doposc\u00ec e abbigliamento da neve. Per la consegna, contattare Centro di Smistamento di Cittareale."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Corso Vittorio Emanuele, Cittareale, RI, Lazio, Italia"", ""lat"": ""42.6182543"", ""link"": """", ""lon"": ""13.1596844"", ""tel"": ""0746947006""}","<pre><yamldata>tel: '0746947006'
+email: ''
+cosa: 'Abbigliamento da neve #Cittareale'
+descrizione: 'Servono tute, doposcì e abbigliamento da neve. Per la consegna, contattare Centro di Smistamento di Cittareale.'
+indirizzo: 'Corso Vittorio Emanuele, Cittareale, RI, Lazio, Italia'
+lat: '42.6182543'
+lon: '13.1596844'
+link: ''
+immagine: ''
+data: 18/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1641,201648430,2017-01-18 18:01:21,2017-01-18 18:00:37,#Rieti allestiti centri accoglienza per la notte,,,"[""Accettato"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""18/01/2017"", ""descrizione"": ""L\u2019Amministrazione comunale di Rieti, in seguito alle scosse di oggi e in via precauzionale, ha approntato un centro di stazionamento, dove la popolazione potr\u00e0 soltanto sostare sia all'esterno che all'interno, e due centri di accoglienza dove la popolazione potr\u00e0 trascorrere la notte. La sala operativa comunale del Coi rimarr\u00e0 costantemente attiva e raggiungibile ai numeri 0746/287215 e 348/8856270. - Centro di stazionamento, operativo dalle 17 di oggi 18 gennaio: Pala Cordoni e Piazzale Leoni - Centro di accoglienza Rieti Nord, operativo dalle 20 di oggi 18 gennaio: Bocciodromo comunale (via De Gasperi) - Centro di accoglienza Rieti Sud, operativo dalle 20 di oggi 18 gennaio: Campi da tennis (via Dupr\u00e8 Thes\u00e8ider)"", ""link"": ""http://www.comune.rieti.it/article/17/01/emergenza-terremoto-elenco-centri-accoglienza-popolazione-la-notte"", ""titolo"": ""#Rieti allestiti centri accoglienza per la notte""}","<pre><yamldata>titolo: '#Rieti allestiti centri accoglienza per la notte'
 descrizione: 'L’Amministrazione comunale di Rieti, in seguito alle scosse di oggi e in via precauzionale, ha approntato un centro di stazionamento, dove la popolazione potrà soltanto sostare sia all''esterno che all''interno, e due centri di accoglienza dove la popolazione potrà trascorrere la notte. La sala operativa comunale del Coi rimarrà costantemente attiva e raggiungibile ai numeri 0746/287215 e 348/8856270. - Centro di stazionamento, operativo dalle 17 di oggi 18 gennaio: Pala Cordoni e Piazzale Leoni - Centro di accoglienza Rieti Nord, operativo dalle 20 di oggi 18 gennaio: Bocciodromo comunale (via De Gasperi) - Centro di accoglienza Rieti Sud, operativo dalle 20 di oggi 18 gennaio: Campi da tennis (via Duprè Thesèider)'
 link: 'http://www.comune.rieti.it/article/17/01/emergenza-terremoto-elenco-centri-accoglienza-popolazione-la-notte'
@@ -5120,17 +5131,6 @@ descrizione: 'Presenti a San Benedetto ininterrottamente, presso la sede dell''e
 indirizzo: 'Via Golgi, Sant''Antonio, San Benedetto del Tronto, AP, Marche, 63074, Italia'
 lat: '42.9415743'
 lon: '13.8828904'
-link: ''
-immagine: ''
-data: 30/10/2016
-</yamldata></pre>
-",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/907,186133958,2016-10-30 13:54:52,2016-10-30 12:40:04,Metto a disposizione alloggio in provincia di Parma,,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Ottobre""]",,,"{""data"": ""30/10/2016"", ""descrizione"": ""Metto a disposizione una camera con bagno per adulto con 1 bambino,cucina da condividere con la mia famiglia:2 adulti e 1 ragazza. Siamo in un paese a 10 km da Parma: monticelli terme.via Dossetti 24"", ""email"": ""marinaalfieri@virgilio.itv"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3385217178""}","<pre><yamldata>tel: '3385217178'
-email: marinaalfieri@virgilio.itv
-descrizione: 'Metto a disposizione una camera con bagno per adulto con 1 bambino,cucina da condividere con la mia famiglia:2 adulti e 1 ragazza. Siamo in un paese a 10 km da Parma: monticelli terme.via Dossetti 24'
-indirizzo: ''
-lat: ''
-lon: ''
 link: ''
 immagine: ''
 data: 30/10/2016
