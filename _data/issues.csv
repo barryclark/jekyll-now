@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1652,201673488,2017-01-18 19:46:35,2017-01-18 19:45:07,Serve Jeep o macchina con catene FAMIGLIA INTRAPPOLATA #Cermignano #Teramo,42.5929123,13.7973984,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""Jeep o macchina con catene FAMIGLIA INTRAPPOLATA #Cermignano #Teramo"", ""data"": ""18/01/2017"", ""descrizione"": ""Serve una jeep o macchina con catene per recuperare moglie e marito \""intrappolati\"" in casa senza elettricit\u00e0, zona Poggio delle Rose - comune di Cermignano (TE): difficilissimo arrivarci."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Strada Statale 81 Piceno Aprutina, Cellino Attanasio, TE, Abruzzo, Italia"", ""lat"": ""42.5929123"", ""link"": ""https://www.facebook.com/sara.capecci.7/posts/10211686939159472"", ""lon"": ""13.7973984"", ""tel"": """"}","<pre><yamldata>tel: ''
+email: ''
+cosa: 'Jeep o macchina con catene FAMIGLIA INTRAPPOLATA #Cermignano #Teramo'
+descrizione: 'Serve una jeep o macchina con catene per recuperare moglie e marito ""intrappolati"" in casa senza elettricità, zona Poggio delle Rose - comune di Cermignano (TE): difficilissimo arrivarci.'
+indirizzo: 'Strada Statale 81 Piceno Aprutina, Cellino Attanasio, TE, Abruzzo, Italia'
+lat: '42.5929123'
+lon: '13.7973984'
+link: 'https://www.facebook.com/sara.capecci.7/posts/10211686939159472'
+immagine: ''
+data: 18/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1648,201669691,2017-01-18 19:34:02,2017-01-18 19:30:18,AIUTI URGENTI #Atri,42.5801368,13.9764121,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""AIUTI URGENTI #Atri"", ""data"": ""18/01/2017"", ""descrizione"": ""Nel Comune di Atri provincia di Teramo sono senza acqua, luce e riscaldamento da 48h, senza linea telefonica n\u00e8 mobile n\u00e8 fissa, scarsit\u00e0 viveri e isolamento viabilit\u00e0. Situazione pesantissima e fuori dai canali di comunicazione: servono aiuti immediatamente."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Piazza Duomo, Atri, TE, Abruzzo, 64032, Italia"", ""lat"": ""42.5801368"", ""link"": """", ""lon"": ""13.9764121"", ""tel"": """"}","<pre><yamldata>tel: ''
 email: ''
 cosa: 'AIUTI URGENTI #Atri'
@@ -11408,18 +11419,6 @@ bic: ''
 postale: ''
 causale: 'Solidarietà Terremoto Arquata del Tronto'
 link: 'https://www.facebook.com/ascolipiceno/photos/a.334802869887682.85935.131745913526713/1253222841379009/?type=3'
-email: ''
-data: 13/09/2016
-</yamldata></pre>
-",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/173,176749451,2016-09-13 21:05:53,2016-09-13 21:05:11,Associazione Enea Grilli,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": ""Sisma Centro Italia"", ""chi"": ""Associazione Enea Grilli"", ""data"": ""13/09/2016"", ""descrizione"": """", ""email"": """", ""iban"": ""IT74H 05387 66850 000002064231"", ""intestazione"": """", ""link"": ""http://www.associazioneeneagrilli.org/index.php/news"", ""postale"": """"}","<pre><yamldata>chi: 'Associazione Enea Grilli'
-descrizione: ''
-intestazione: ''
-iban: 'IT74H 05387 66850 000002064231'
-bic: ''
-postale: ''
-causale: 'Sisma Centro Italia'
-link: 'http://www.associazioneeneagrilli.org/index.php/news'
 email: ''
 data: 13/09/2016
 </yamldata></pre>
