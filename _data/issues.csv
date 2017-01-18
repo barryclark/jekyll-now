@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1661,201700447,2017-01-18 22:00:10,2017-01-18 21:42:39,Offresi casa e terreno per pascolo a Velletri,41.6867015,12.7770433,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Facebook"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""Offresi casa e terreno per pascolo a Velletri"", ""data"": ""18/01/2017"", ""descrizione"": ""Questo mio appello \u00e8 rivolto ai pastori ai contadini delle zone colpite dal terremoto che hanno animali da pascolo in mezzo alla neve, ho un terreno a Velletri (Rm) di 16mila mq. a pascolo e uliveto con una casa, la offro per stallo per i vostri animali e per voi, non ho stalle per i vostri animali per proteggerli dal freddo e dalla pioggia ma almeno non c'\u00e8 la neve, per info 3478153378, Massimiliano Marchi."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Piazza Ottaviano Augusto, Velletri, RM, LAZ, 00049, Italia"", ""lat"": ""41.6867015"", ""link"": ""https://www.facebook.com/massimiliano.m.marchi/posts/10210448440960111"", ""lon"": ""12.7770433"", ""tel"": ""3478153378""}","<pre><yamldata>tel: '3478153378'
+email: ''
+cosa: 'Offresi casa e terreno per pascolo a Velletri'
+descrizione: 'Questo mio appello è rivolto ai pastori ai contadini delle zone colpite dal terremoto che hanno animali da pascolo in mezzo alla neve, ho un terreno a Velletri (Rm) di 16mila mq. a pascolo e uliveto con una casa, la offro per stallo per i vostri animali e per voi, non ho stalle per i vostri animali per proteggerli dal freddo e dalla pioggia ma almeno non c''è la neve, per info 3478153378, Massimiliano Marchi.'
+indirizzo: 'Piazza Ottaviano Augusto, Velletri, RM, LAZ, 00049, Italia'
+lat: '41.6867015'
+lon: '12.7770433'
+link: 'https://www.facebook.com/massimiliano.m.marchi/posts/10210448440960111'
+immagine: ''
+data: 18/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1660,201699849,2017-01-18 21:59:07,2017-01-18 21:40:00,"Offresi vestiario, biancheria intima, coperte, prodotti igiene personale, materiale scolastico",,,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Form"", ""Sisma Gennaio 2017""]",,,{},"<pre><yamldata>tel: '3200377766'
 email: fabiola.tomada@gmail.com
 cosa: 'Vestiario uomo donna bambino (nuovo e usato), biancheria intima uomo donna (nuovo), coperte (usate),  prodotti per l''igene personale, materiale scolastico.'
@@ -5135,6 +5146,17 @@ immagine: ''
 data: 30/10/2016
 </yamldata></pre>
 ",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/939,186140971,2016-10-30 15:17:27,2016-10-30 14:54:25,Offro parte di casa indipendente a Ferrara centro per 3-4 persone,,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Ottobre""]",,,"{""data"": ""30/10/2016"", ""descrizione"": ""Offro parte di casa indipendente al secondo piano in Ferrara centro. Possibilit\u00e0 di alloggio per 3/4 persone che abbiano necessit\u00e0 immediata ."", ""email"": ""valeria.salvetti57@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": """"}","<pre><yamldata>tel: ''
+email: valeria.salvetti57@gmail.com
+descrizione: 'Offro parte di casa indipendente al secondo piano in Ferrara centro. Possibilità di alloggio per 3/4 persone che abbiano necessità immediata .'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 30/10/2016
+</yamldata></pre>
+",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/938,186140686,2016-10-30 15:16:30,2016-10-30 14:49:05,COMUNE DI #MATELICA: PUNTI DI ACCOGLIENZA PER DORMIRE,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili"", ""Sisma Ottobre""]",,,"{""data"": ""30/10/2016"", ""descrizione"": ""Restano attivi la PALESTRA MANCINELLI (Via Bellini) e la CRI (Via Sciamanna) dove possono trovare riparo e ristoro gli sfollati. Sono stati allestiti nuovi punti di prima accoglienza BOCCIOFILA (Borgo Nazario Sauro) REGINA PACIS (adiacenze CHIESA). E' possibile ancora l'utilizzo dei piazzali. Sono individuati i seguenti punti Piazzale Campo Sportivo ( con bagni dello Stadio) Piazzale Parcheggio Halley (con Bagno) Parcheggio centro commerciale OASI (con Bagni) Piazzale LIDL La Prot. Civile allestir\u00e0 un punto informativo a PIAZZALE GERANI che coordiner\u00e0 le stimazioni e l'assistenza. TUTTI I CITTADINI MAGGIORENNI ED IN BUONA SALUTE, dopo aver sistemato le rispettive famiglie, possono rendersi disponibili a collaborare con la Prot. Civile per le esigenze del caso. Gli interessati devono presentarsi presso l'ufficio della Protezione Civile in Piazza."", ""link"": ""http://www.comune.matelica.mc.it/comune/uffici-news.asp?id=4436"", ""titolo"": ""COMUNE DI #MATELICA: PUNTI DI ACCOGLIENZA PER DORMIRE""}","<pre><yamldata>titolo: 'COMUNE DI #MATELICA: PUNTI DI ACCOGLIENZA PER DORMIRE'
 descrizione: 'Restano attivi la PALESTRA MANCINELLI (Via Bellini) e la CRI (Via Sciamanna) dove possono trovare riparo e ristoro gli sfollati. Sono stati allestiti nuovi punti di prima accoglienza BOCCIOFILA (Borgo Nazario Sauro) REGINA PACIS (adiacenze CHIESA). E'' possibile ancora l''utilizzo dei piazzali. Sono individuati i seguenti punti Piazzale Campo Sportivo ( con bagni dello Stadio) Piazzale Parcheggio Halley (con Bagno) Parcheggio centro commerciale OASI (con Bagni) Piazzale LIDL La Prot. Civile allestirà un punto informativo a PIAZZALE GERANI che coordinerà le stimazioni e l''assistenza. TUTTI I CITTADINI MAGGIORENNI ED IN BUONA SALUTE, dopo aver sistemato le rispettive famiglie, possono rendersi disponibili a collaborare con la Prot. Civile per le esigenze del caso. Gli interessati devono presentarsi presso l''ufficio della Protezione Civile in Piazza.'
 link: 'http://www.comune.matelica.mc.it/comune/uffici-news.asp?id=4436'
@@ -8657,12 +8679,6 @@ data: 15/09/2016
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/466,177216002,2016-10-01 18:23:08,2016-09-15 15:54:26,"Intervista ai ragazzi e alle ragazze di ""Chiedi alla polvere-Ask the Dust"" della fraz.Borgo di Arquata",,,"[""Accettato"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""15/09/2016"", ""descrizione"": ""Potete ascoltare qui http://www.radiostella180.it/wordpress/?p=627 il Podcast della puntata di oggi appena andata in onda dal campo tenda di Pescara del Tronto. Abbiamo intervistato i ragazzi e le ragazze della Pro Loco e di \""Chiedi alla polvere\"". Giovani che si stanno gi\u00e0 rimboccando le maniche per ripartire e danno speranza, perch\u00e9 nei loro occhi e nelle loro parole c'\u00e8 la voglia di reagire"", ""link"": ""http://www.radiostella180.it/wordpress/?p=627"", ""titolo"": ""Intervista ai ragazzi e alle ragazze di \""Chiedi alla polvere-Ask the Dust\"" della fraz.Borgo di Arquata""}","<pre><yamldata>titolo: 'Intervista ai ragazzi e alle ragazze di ""Chiedi alla polvere-Ask the Dust"" della fraz.Borgo di Arquata'
 descrizione: 'Potete ascoltare qui http://www.radiostella180.it/wordpress/?p=627 il Podcast della puntata di oggi appena andata in onda dal campo tenda di Pescara del Tronto. Abbiamo intervistato i ragazzi e le ragazze della Pro Loco e di ""Chiedi alla polvere"". Giovani che si stanno già rimboccando le maniche per ripartire e danno speranza, perché nei loro occhi e nelle loro parole c''è la voglia di reagire'
 link: 'http://www.radiostella180.it/wordpress/?p=627'
-data: 15/09/2016
-</yamldata></pre>
-",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/463,177190526,2016-10-01 18:25:18,2016-09-15 14:20:46,Fondi per prevenzione rischio sismico,,,"[""Accettato"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""15/09/2016"", ""descrizione"": ""Il Decreto della Presidenza del Consiglio dei Ministri del 21 giugno 2016 assegna all'Abruzzo la somma di 10 milioni e 90 mila euro per interventi di prevenzione del rischio sismico, di cui circa 1 ML per approfondire gli studi di microzonazione sismica e 8,9 ML per finanziare interventi antisismici su edifici ritenuti \""strategici\"" pubblici e su edifici privati."", ""link"": ""http://www.regione.abruzzo.it/portale/index.asp?modello=articolo&servizio=xList&stileDiv=mono&msv=articolo114250&tom=14250"", ""titolo"": ""Fondi per prevenzione rischio sismico""}","<pre><yamldata>titolo: 'Fondi per prevenzione rischio sismico'
-descrizione: 'Il Decreto della Presidenza del Consiglio dei Ministri del 21 giugno 2016 assegna all''Abruzzo la somma di 10 milioni e 90 mila euro per interventi di prevenzione del rischio sismico, di cui circa 1 ML per approfondire gli studi di microzonazione sismica e 8,9 ML per finanziare interventi antisismici su edifici ritenuti ""strategici"" pubblici e su edifici privati.'
-link: 'http://www.regione.abruzzo.it/portale/index.asp?modello=articolo&servizio=xList&stileDiv=mono&msv=articolo114250&tom=14250'
 data: 15/09/2016
 </yamldata></pre>
 ",open
