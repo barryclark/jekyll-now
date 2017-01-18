@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1597,201565265,2017-01-18 13:16:39,2017-01-18 12:47:56,Aiuti e gruppo elettrogeno a #Scorrano (TE),42.561,12.1374,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""Aiuti e gruppo elettrogeno a #Scorrano"", ""data"": ""18/01/2017"", ""descrizione"": ""A Scorrano frazione di Celleno Atanasio (TE) isolati da 2mt di neve e senza corrente. Servono aiuti e gruppo elettrogeno. Contatto Lusiana."", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": ""42.561"", ""link"": """", ""lon"": ""12.1374"", ""tel"": ""3288818703""}","<pre><yamldata>tel: '3288818703'
+email: ''
+cosa: 'Aiuti e gruppo elettrogeno a #Scorrano'
+descrizione: 'A Scorrano frazione di Celleno Atanasio (TE) isolati da 2mt di neve e senza corrente. Servono aiuti e gruppo elettrogeno. Contatto Lusiana.'
+indirizzo: ''
+lat: '42.561'
+lon: '12.1374'
+link: ''
+immagine: ''
+data: 18/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1594,201552839,2017-01-18 12:10:04,2017-01-18 11:52:15,***AGGIORNAMENTO*** Centri di accoglienza L'Aquila:,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""18/01/2017"", ""descrizione"": ""AGGIORNAMENTO Centri di accoglienza L'Aquila: Musp della Scuola Primaria di Arischia stadio di Acquasanta (palestra e spogliatoi) SCuola Mariele Ventre Via Ficara De Amicis Via Della Polveriera Scuola Primaria Coppito Scuola media Alighieri succursale Paganica Scuola Secondaria Mazzini Pile Usi Civici Tempera Scuola Pagliare di Sassa Centro anziani di civita di bagno Ex Centro Caritas di Preturo"", ""link"": ""http://news-town.it/cronaca/14606-forte-scossa-di-terremoto-percepita-in-abruzzo-fino-a-roma.html"", ""titolo"": ""***AGGIORNAMENTO*** Centri di accoglienza L'Aquila:""}","<pre><yamldata>titolo: '***AGGIORNAMENTO*** Centri di accoglienza L''Aquila:'
 descrizione: 'AGGIORNAMENTO Centri di accoglienza L''Aquila: Musp della Scuola Primaria di Arischia stadio di Acquasanta (palestra e spogliatoi) SCuola Mariele Ventre Via Ficara De Amicis Via Della Polveriera Scuola Primaria Coppito Scuola media Alighieri succursale Paganica Scuola Secondaria Mazzini Pile Usi Civici Tempera Scuola Pagliare di Sassa Centro anziani di civita di bagno Ex Centro Caritas di Preturo'
 link: 'http://news-town.it/cronaca/14606-forte-scossa-di-terremoto-percepita-in-abruzzo-fino-a-roma.html'
@@ -7435,17 +7446,6 @@ indirizzo: 'L''Aquila, AQ, Abruzzo, Italia'
 lat: '42.3488992'
 lon: '13.3981375'
 link: 'https://www.facebook.com/groups/1758670357733881/permalink/1760302424237341/'
-immagine: ''
-data: 16/09/2016
-</yamldata></pre>
-",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/548,177481064,2016-09-22 15:22:45,2016-09-16 17:41:08,"Castiglion Fiorentino, AR - Stanza per 3 persone",43.3420464,11.9227306,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""16/09/2016"", ""descrizione"": ""Gabriele Galimberti - 28 agosto-8 settembre stanza per 3 persone (pi\u00f9 un divanoletto) con bagno privato, uso cucina compreso, disponibili anche 2 biciclette. Servita bene da treno."", ""email"": ""info@gabrielegalimberti.it"", ""immagine"": """", ""indirizzo"": ""Castiglion Fiorentino, AR, Tuscany, Italia"", ""lat"": ""43.3420464"", ""link"": """", ""lon"": ""11.9227306"", ""tel"": ""3286241806""}","<pre><yamldata>tel: '3286241806'
-email: info@gabrielegalimberti.it
-descrizione: 'Gabriele Galimberti - 28 agosto-8 settembre stanza per 3 persone (più un divanoletto) con bagno privato, uso cucina compreso, disponibili anche 2 biciclette. Servita bene da treno.'
-indirizzo: 'Castiglion Fiorentino, AR, Tuscany, Italia'
-lat: '43.3420464'
-lon: '11.9227306'
-link: ''
 immagine: ''
 data: 16/09/2016
 </yamldata></pre>
