@@ -1,4 +1,14 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1682,201723822,2017-01-18 23:37:53,2017-01-18 23:35:39,Offro alloggio a Giffoni Valle (Sa),,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""18/01/2017"", ""descrizione"": ""Offro alloggio a giffoni valle piana (sa) sei posti letto"", ""email"": ""xgarzia@hotmail.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3351591153""}","<pre><yamldata>tel: '3351591153'
+email: xgarzia@hotmail.it
+descrizione: 'Offro alloggio a giffoni valle piana (sa) sei posti letto'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 18/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1681,201720085,2017-01-18 23:15:32,2017-01-18 23:14:06,CENTRO DI RIFERIMENTO REGIONALE AUTISMO L'#AQUILA. EMERGENZA TERREMOTO.,,,"[""Accettato"", ""Bollettino"", ""Contatti"", ""Facebook"", ""Notizie Utili"", ""Sisma Gennaio 2017""]",,,"{""data"": ""18/01/2017"", ""descrizione"": ""Per famiglie e utenti con autismo. Per consulto su comportamenti problematici e per supporto psicologico, alcuni professionisti esperti e operatori della nostra struttura sono a disposizione per dare un primo supporto telefonico e organizzare nei limiti del possibile eventuali interventi. Ecco un primo elenco in via di aggiornamento: Direttore Crra (prof. Marco Valenti) 3288352370 Prof.ssa Monica Mazza 328 323 9666 Dott.ssa Chiara Di Giovanni 3281665961 Dott. Rosario Sabelli 328 262 4102 Dott.ssa Roberta Pirro +393388106065 Dott.ssa Emanuela Di Tommaso 333 404 5048 Dott.ssa Stefania Conti 339 418 4195 Dott. Mario D'Amico 340 593 3598 Dott.ssa Sara Fossati 349 451 0364 Dott. Pelliccione 347 129 7347 Dott. ssa Maria Grazia Giampaoli 347 304 3009 Dott.ssa Carla Curto 328 222 2956 Dott.ssa Manuela Memmi 347 943 7041 Dott. Paolo Del Vecchio 328 180 805 Dott.ssa . Ilaria Taddei 320 344 7783. Per supporto logistico, si puo' fare riferimento all'associazione Autismo Abruzzo Onlus (rif. Dario Verzulli 347675119). Ringrazio sin d'ora tutti i colleghi e gli operatori, per la straordinaria dedizione."", ""link"": ""https://www.facebook.com/marcovalenti61/posts/1332356393489840"", ""titolo"": ""CENTRO DI RIFERIMENTO REGIONALE AUTISMO L'#AQUILA. EMERGENZA TERREMOTO.""}","<pre><yamldata>titolo: 'CENTRO DI RIFERIMENTO REGIONALE AUTISMO L''#AQUILA. EMERGENZA TERREMOTO.'
 descrizione: 'Per famiglie e utenti con autismo. Per consulto su comportamenti problematici e per supporto psicologico, alcuni professionisti esperti e operatori della nostra struttura sono a disposizione per dare un primo supporto telefonico e organizzare nei limiti del possibile eventuali interventi. Ecco un primo elenco in via di aggiornamento: Direttore Crra (prof. Marco Valenti) 3288352370 Prof.ssa Monica Mazza 328 323 9666 Dott.ssa Chiara Di Giovanni 3281665961 Dott. Rosario Sabelli 328 262 4102 Dott.ssa Roberta Pirro +393388106065 Dott.ssa Emanuela Di Tommaso 333 404 5048 Dott.ssa Stefania Conti 339 418 4195 Dott. Mario D''Amico 340 593 3598 Dott.ssa Sara Fossati 349 451 0364 Dott. Pelliccione 347 129 7347 Dott. ssa Maria Grazia Giampaoli 347 304 3009 Dott.ssa Carla Curto 328 222 2956 Dott.ssa Manuela Memmi 347 943 7041 Dott. Paolo Del Vecchio 328 180 805 Dott.ssa . Ilaria Taddei 320 344 7783. Per supporto logistico, si puo'' fare riferimento all''associazione Autismo Abruzzo Onlus (rif. Dario Verzulli 347675119). Ringrazio sin d''ora tutti i colleghi e gli operatori, per la straordinaria dedizione.'
 link: 'https://www.facebook.com/marcovalenti61/posts/1332356393489840'
@@ -9394,18 +9404,6 @@ descrizione: 'dal 26 settembre, dalle 11,00 e nei giorni seguenti a partire dall
 - coperte. 
 
 Casetta Rossa via Giovanni Battista Magnaghi, 14'
-intestazione: ''
-iban: ''
-bic: ''
-postale: ''
-causale: ''
-link: ''
-email: ''
-data: 15/09/2016
-</yamldata></pre>
-",closed
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/376,177126922,2016-09-15 09:15:36,2016-09-15 09:15:25,Comune di Pineto,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Comune di Pineto"", ""data"": ""15/09/2016"", ""descrizione"": ""Il Comune di Pineto, in collaborazione con gli operatori della rete del sociale, con la Caritas, il PROS e con alcuni cittadini che si sono resi disponibili, ha organizzato un punto di raccolta dei beni di prima necessit\u00e0 in favore delle zone terremotate. Sono richiesti: - latte in polvere per bambini - prodotti per celiaci(prodotti senza glutine) - coperte - prodotti per l'igiene personale Il punto di raccolta sar\u00e0 attivo dal 25 agosto al 28 agosto nei seguenti orari: 10.00-13.00 17.00-20.00. Per eventuali necessit\u00e0 \u00e8 possibile contattare, negli orari di apertura, la dott.ssa Serena Bellante 3485126750. Locali dell'oratorio della chiesa di Sant'Agnese, ingresso lato piazza della libert\u00e0"", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": """", ""postale"": """"}","<pre><yamldata>chi: 'Comune di Pineto'
-descrizione: 'Il Comune di Pineto, in collaborazione con gli operatori della rete del sociale, con la Caritas, il PROS e con alcuni cittadini che si sono resi disponibili, ha organizzato un punto di raccolta dei beni di prima necessità in favore delle zone terremotate. Sono richiesti: - latte in polvere per bambini - prodotti per celiaci(prodotti senza glutine) - coperte - prodotti per l''igiene personale Il punto di raccolta sarà attivo dal 25 agosto al 28 agosto nei seguenti orari: 10.00-13.00 17.00-20.00. Per eventuali necessità è possibile contattare, negli orari di apertura, la dott.ssa Serena Bellante 3485126750. Locali dell''oratorio della chiesa di Sant''Agnese, ingresso lato piazza della libertà'
 intestazione: ''
 iban: ''
 bic: ''
