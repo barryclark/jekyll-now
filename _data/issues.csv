@@ -1,4 +1,9 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1641,201648430,2017-01-18 18:01:21,2017-01-18 18:00:37,#Rieti allestiti centri accoglienza per la notte,,,"[""Accettato"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""18/01/2017"", ""descrizione"": ""L\u2019Amministrazione comunale di Rieti, in seguito alle scosse di oggi e in via precauzionale, ha approntato un centro di stazionamento, dove la popolazione potr\u00e0 soltanto sostare sia all'esterno che all'interno, e due centri di accoglienza dove la popolazione potr\u00e0 trascorrere la notte. La sala operativa comunale del Coi rimarr\u00e0 costantemente attiva e raggiungibile ai numeri 0746/287215 e 348/8856270. - Centro di stazionamento, operativo dalle 17 di oggi 18 gennaio: Pala Cordoni e Piazzale Leoni - Centro di accoglienza Rieti Nord, operativo dalle 20 di oggi 18 gennaio: Bocciodromo comunale (via De Gasperi) - Centro di accoglienza Rieti Sud, operativo dalle 20 di oggi 18 gennaio: Campi da tennis (via Dupr\u00e8 Thes\u00e8ider)"", ""link"": ""http://www.comune.rieti.it/article/17/01/emergenza-terremoto-elenco-centri-accoglienza-popolazione-la-notte"", ""titolo"": ""#Rieti allestiti centri accoglienza per la notte""}","<pre><yamldata>titolo: '#Rieti allestiti centri accoglienza per la notte'
+descrizione: 'L’Amministrazione comunale di Rieti, in seguito alle scosse di oggi e in via precauzionale, ha approntato un centro di stazionamento, dove la popolazione potrà soltanto sostare sia all''esterno che all''interno, e due centri di accoglienza dove la popolazione potrà trascorrere la notte. La sala operativa comunale del Coi rimarrà costantemente attiva e raggiungibile ai numeri 0746/287215 e 348/8856270. - Centro di stazionamento, operativo dalle 17 di oggi 18 gennaio: Pala Cordoni e Piazzale Leoni - Centro di accoglienza Rieti Nord, operativo dalle 20 di oggi 18 gennaio: Bocciodromo comunale (via De Gasperi) - Centro di accoglienza Rieti Sud, operativo dalle 20 di oggi 18 gennaio: Campi da tennis (via Duprè Thesèider)'
+link: 'http://www.comune.rieti.it/article/17/01/emergenza-terremoto-elenco-centri-accoglienza-popolazione-la-notte'
+data: 18/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1635,201641001,2017-01-18 17:36:41,2017-01-18 17:32:51,A San Giorgio di #Cascia c'è bisogno di un bob cat #fb,42.7495189,13.0174067,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Sisma Gennaio 2017"", ""Twitter""]",,,"{""cosa"": ""A San Giorgio di #Cascia c'\u00e8 bisogno di un bob cat"", ""data"": ""18/01/2017"", ""descrizione"": ""L'associazione Libra 2.0 comunica grandi difficolt\u00e0 per la neve a Santa Giusta, Amatrice e sul lago Scandarello. Inoltre ha ricevuto una richiesta urgente a San Giorgio di Cascia per un bob cat. Contatto: Domenico Lorentucci 328 693 2354."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Localit\u00e0 Logna, Cascia, PG, UMB, 06043, Italia"", ""lat"": ""42.7495189"", ""link"": ""https://twitter.com/libra2puntozero/status/821744526498926592"", ""lon"": ""13.0174067"", ""tel"": ""328 693 2354""}","<pre><yamldata>tel: '328 693 2354'
 email: ''
 cosa: 'A San Giorgio di #Cascia c''è bisogno di un bob cat'
@@ -1288,17 +1293,6 @@ data: 16/12/2016
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1462,196055011,2016-12-16 13:21:54,2016-12-16 13:04:27,Tra bufale e truffe: finte perizie per derubare in casa,,,"[""Accettato"", ""Bollettino"", ""Bufale"", ""Sisma Ottobre""]",,,"{""data"": ""16/12/2016"", ""descrizione"": ""Il Corriere di Caserta pubblica la notizia secondo cui in Campania alcuni malviventi lasciano del finto intonaco sul pianerottolo della vittima \u2013 anziana di solito \u2013 e un avviso che informa che alcune case sono state trovate inagibili dopo le scosse di terremoto del Centro Italia. Questo avviso \u00e8 firmato da una finta ditta di controlli. Visto l\u2019intonaco e presi dalla paura, gli anziani pi\u00f9 ingenui chiamano il numero indicato dal volantino per una perizia. Ed ecco che i delinquenti entrano in casa, invitati proprio dalle ignare vittime che vengono cos\u00ec derubate."", ""link"": ""http://www.corrierecaserta.it/notizie-campania/2016/12/16/incredibile-impazza-in-campania-la-truffa-del-terremoto.html"", ""titolo"": ""Tra bufale e truffe: finte perizie per derubare in casa""}","<pre><yamldata>titolo: 'Tra bufale e truffe: finte perizie per derubare in casa'
 descrizione: 'Il Corriere di Caserta pubblica la notizia secondo cui in Campania alcuni malviventi lasciano del finto intonaco sul pianerottolo della vittima – anziana di solito – e un avviso che informa che alcune case sono state trovate inagibili dopo le scosse di terremoto del Centro Italia. Questo avviso è firmato da una finta ditta di controlli. Visto l’intonaco e presi dalla paura, gli anziani più ingenui chiamano il numero indicato dal volantino per una perizia. Ed ecco che i delinquenti entrano in casa, invitati proprio dalle ignare vittime che vengono così derubate.'
 link: 'http://www.corrierecaserta.it/notizie-campania/2016/12/16/incredibile-impazza-in-campania-la-truffa-del-terremoto.html'
-data: 16/12/2016
-</yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1461,196054458,2016-12-16 13:12:37,2016-12-16 13:01:12,Cercasi appartamento a #PortodAscoli,42.9124055,13.8935711,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Sisma Ottobre""]",,,"{""cosa"": ""Appartamento #PortodAscoli"", ""data"": ""16/12/2016"", ""descrizione"": ""Per una famiglia terremotata stiamo cercando un appartamento in affitto in zona Porto D'Ascoli, 4 persone pi\u00f9 un animale, necessit\u00e0 ovviamente di riscaldamento. Contattare Don Paolo Sabatini."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Via Filippo Turati, Salaria, San Benedetto del Tronto, AP, Marche, 63074, Italia"", ""lat"": ""42.9124055"", ""link"": """", ""lon"": ""13.8935711"", ""tel"": ""3289839222""}","<pre><yamldata>tel: '3289839222'
-email: ''
-cosa: 'Appartamento #PortodAscoli'
-descrizione: 'Per una famiglia terremotata stiamo cercando un appartamento in affitto in zona Porto D''Ascoli, 4 persone più un animale, necessità ovviamente di riscaldamento. Contattare Don Paolo Sabatini.'
-indirizzo: 'Via Filippo Turati, Salaria, San Benedetto del Tronto, AP, Marche, 63074, Italia'
-lat: '42.9124055'
-lon: '13.8935711'
-link: ''
-immagine: ''
 data: 16/12/2016
 </yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1461,196054458,2016-12-16 13:12:37,2016-12-16 13:01:12,Cercasi appartamento a #PortodAscoli,42.9124055,13.8935711,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Sisma Ottobre""]",,,"{""cosa"": ""Appartamento #PortodAscoli"", ""data"": ""16/12/2016"", ""descrizione"": ""Per una famiglia terremotata stiamo cercando un appartamento in affitto in zona Porto D'Ascoli, 4 persone pi\u00f9 un animale, necessit\u00e0 ovviamente di riscaldamento. Contattare Don Paolo Sabatini."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Via Filippo Turati, Salaria, San Benedetto del Tronto, AP, Marche, 63074, Italia"", ""lat"": ""42.9124055"", ""link"": """", ""lon"": ""13.8935711"", ""tel"": ""3289839222""}","<pre><yamldata>tel: '3289839222'
@@ -5126,6 +5120,17 @@ descrizione: 'Presenti a San Benedetto ininterrottamente, presso la sede dell''e
 indirizzo: 'Via Golgi, Sant''Antonio, San Benedetto del Tronto, AP, Marche, 63074, Italia'
 lat: '42.9415743'
 lon: '13.8828904'
+link: ''
+immagine: ''
+data: 30/10/2016
+</yamldata></pre>
+",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/907,186133958,2016-10-30 13:54:52,2016-10-30 12:40:04,Metto a disposizione alloggio in provincia di Parma,,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Ottobre""]",,,"{""data"": ""30/10/2016"", ""descrizione"": ""Metto a disposizione una camera con bagno per adulto con 1 bambino,cucina da condividere con la mia famiglia:2 adulti e 1 ragazza. Siamo in un paese a 10 km da Parma: monticelli terme.via Dossetti 24"", ""email"": ""marinaalfieri@virgilio.itv"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3385217178""}","<pre><yamldata>tel: '3385217178'
+email: marinaalfieri@virgilio.itv
+descrizione: 'Metto a disposizione una camera con bagno per adulto con 1 bambino,cucina da condividere con la mia famiglia:2 adulti e 1 ragazza. Siamo in un paese a 10 km da Parma: monticelli terme.via Dossetti 24'
+indirizzo: ''
+lat: ''
+lon: ''
 link: ''
 immagine: ''
 data: 30/10/2016
