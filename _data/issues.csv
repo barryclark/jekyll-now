@@ -9,10 +9,10 @@ descrizione: 'Stamani nuove forte scosse in provincia dell''Aquila, avvertite an
 link: ''
 data: 18/01/2017
 </yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1592,201550805,2017-01-18 11:43:00,2017-01-18 11:42:41,Gruppi elettrogeni #Montemonaco (AP),42.8991551,13.3268587,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""Gruppi elettrogeni #Montemonaco (AP)"", ""data"": ""18/01/2017"", ""descrizione"": ""Serve aiuto a Montemonaco, sono isolati con 2 metri neve senza corrente gruppi elettrogeni down, non possono comunicare."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Strada Provinciale 83 Subappennina, Montemonaco, AP, Marche, 63088, Italia"", ""lat"": ""42.8991551"", ""link"": ""https://m.facebook.com/story.php?story_fbid=10210000862273070&id=1081124294"", ""lon"": ""13.3268587"", ""tel"": """"}","<pre><yamldata>tel: ''
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1592,201550805,2017-01-18 12:24:53,2017-01-18 11:42:41,Gruppi elettrogeni #Montemonaco (AP),42.8991551,13.3268587,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""Gruppi elettrogeni #Montemonaco (AP)"", ""data"": ""18/01/2017"", ""descrizione"": ""Serve aiuto a Montemonaco, sono isolati con 2 metri neve senza corrente gruppi elettrogeni down, non possono comunicare linee telefoniche interrotte."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Strada Provinciale 83 Subappennina, Montemonaco, AP, Marche, 63088, Italia"", ""lat"": ""42.8991551"", ""link"": ""https://m.facebook.com/story.php?story_fbid=10210000862273070&id=1081124294"", ""lon"": ""13.3268587"", ""tel"": ""3455758496""}","<pre><yamldata>tel: '3455758496'
 email: ''
 cosa: 'Gruppi elettrogeni #Montemonaco (AP)'
-descrizione: 'Serve aiuto a Montemonaco, sono isolati con 2 metri neve senza corrente gruppi elettrogeni down, non possono comunicare.'
+descrizione: 'Serve aiuto a Montemonaco, sono isolati con 2 metri neve senza corrente gruppi elettrogeni down, non possono comunicare linee telefoniche interrotte.'
 indirizzo: 'Strada Provinciale 83 Subappennina, Montemonaco, AP, Marche, 63088, Italia'
 lat: '42.8991551'
 lon: '13.3268587'
