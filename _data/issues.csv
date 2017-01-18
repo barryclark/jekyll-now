@@ -25,7 +25,7 @@ link: ''
 immagine: ''
 data: 18/01/2017
 </yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1643,201655307,2017-01-18 18:30:51,2017-01-18 18:30:22,**URGENTE** Soccorsi a #Ortolano #Campotosto,42.5198625,13.4234008,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""**URGENTE** Soccorsi a #Ortolano #Campotosto"", ""data"": ""18/01/2017"", ""descrizione"": ""La frazione di Ortolano nel comune di Campotosto \u00e8 sotto tre metri di neve. Continua a nevicare. I cittadini sono bloccati sia verso Teramo che verso L'Aquila. Questa mattina una slavina ha investito il paese e un concittadino \u00e8 disperso. Ci sono anziani e bambini piccoli, uno di appena un mese. Servono urgentemente aiuti con mezzi necessari."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Strada Statale 80 del Gran Sasso d'Italia, L'Aquila, AQ, Abruzzo, Italia"", ""lat"": ""42.5198625"", ""link"": """", ""lon"": ""13.4234008"", ""tel"": """"}","<pre><yamldata>tel: ''
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1643,201655307,2017-01-18 19:05:50,2017-01-18 18:30:22,**URGENTE** Soccorsi a #Ortolano #Campotosto,42.5198625,13.4234008,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Facebook"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""**URGENTE** Soccorsi a #Ortolano #Campotosto"", ""data"": ""18/01/2017"", ""descrizione"": ""La frazione di Ortolano nel comune di Campotosto \u00e8 sotto tre metri di neve. Continua a nevicare. I cittadini sono bloccati sia verso Teramo che verso L'Aquila. Questa mattina una slavina ha investito il paese e un concittadino \u00e8 disperso. Ci sono anziani e bambini piccoli, uno di appena un mese. Servono urgentemente aiuti con mezzi necessari."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Strada Statale 80 del Gran Sasso d'Italia, L'Aquila, AQ, Abruzzo, Italia"", ""lat"": ""42.5198625"", ""link"": """", ""lon"": ""13.4234008"", ""tel"": """"}","<pre><yamldata>tel: ''
 email: ''
 cosa: '**URGENTE** Soccorsi a #Ortolano #Campotosto'
 descrizione: 'La frazione di Ortolano nel comune di Campotosto è sotto tre metri di neve. Continua a nevicare. I cittadini sono bloccati sia verso Teramo che verso L''Aquila. Questa mattina una slavina ha investito il paese e un concittadino è disperso. Ci sono anziani e bambini piccoli, uno di appena un mese. Servono urgentemente aiuti con mezzi necessari.'
@@ -3036,6 +3036,17 @@ data: 10/11/2016
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1216,188633669,2016-11-25 23:52:10,2016-11-10 22:17:26,I produttori Slow Food nelle #Marche e nel #Lazio che è possibile sostenere ,,,"[""Accettato"", ""acquisto solidale"", ""Bollettino"", ""Sisma Ottobre"", ""Twitter""]",,,"{""data"": ""10/11/2016"", ""descrizione"": ""Sul sito di Slow Food elenco in continuo aggiornamento dei produttori dei Presidi Slow Food nelle Marche e nel Lazio dai quali \u00e8 possibile acquistare i prodotti per sostenere le economie e la ripresa delle attivit\u00e0 nei luoghi del terremoto."", ""link"": ""http://www.slowfood.it/terremoto-aiutiamo-le-aziende-colpite-scegliamo-i-loro-prodotti/"", ""titolo"": ""Acquisti solidali: i produttori Slow Food nella #Marche e nel #Lazio""}","<pre><yamldata>titolo: 'Acquisti solidali: i produttori Slow Food nella #Marche e nel #Lazio'
 descrizione: 'Sul sito di Slow Food elenco in continuo aggiornamento dei produttori dei Presidi Slow Food nelle Marche e nel Lazio dai quali è possibile acquistare i prodotti per sostenere le economie e la ripresa delle attività nei luoghi del terremoto.'
 link: 'http://www.slowfood.it/terremoto-aiutiamo-le-aziende-colpite-scegliamo-i-loro-prodotti/'
+data: 10/11/2016
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1215,188632405,2016-11-10 22:41:46,2016-11-10 22:11:21,"""Il futuro non crolla"". Le magliette dell'Università di #Camerino per sostenere la ricostruzione",,,"[""Accettato"", ""Bollettino"", ""Raccolte Fondi"", ""Sisma Ottobre"", ""Twitter""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""\""il futuro non crolla\"". Le magliette dell'Universit\u00e0 di #Camerino per sostenere la ricostruzione"", ""data"": ""10/11/2016"", ""descrizione"": ""L\u2019Universit\u00e0 di Camerino ha attivato la vendita online delle magliette #ilfuturononcrolla per raccogliere fondi a sostegno del progetto volto alla edificazione di collegi per studenti Unicam meritevoli."", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""https://www.ilfuturononcrolla.it/"", ""postale"": """"}","<pre><yamldata>chi: '""il futuro non crolla"". Le magliette dell''Università di #Camerino per sostenere la ricostruzione'
+descrizione: 'L’Università di Camerino ha attivato la vendita online delle magliette #ilfuturononcrolla per raccogliere fondi a sostegno del progetto volto alla edificazione di collegi per studenti Unicam meritevoli.'
+intestazione: ''
+iban: ''
+bic: ''
+postale: ''
+causale: ''
+link: 'https://www.ilfuturononcrolla.it/'
+email: ''
 data: 10/11/2016
 </yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1215,188632405,2016-11-10 22:41:46,2016-11-10 22:11:21,"""Il futuro non crolla"". Le magliette dell'Università di #Camerino per sostenere la ricostruzione",,,"[""Accettato"", ""Bollettino"", ""Raccolte Fondi"", ""Sisma Ottobre"", ""Twitter""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""\""il futuro non crolla\"". Le magliette dell'Universit\u00e0 di #Camerino per sostenere la ricostruzione"", ""data"": ""10/11/2016"", ""descrizione"": ""L\u2019Universit\u00e0 di Camerino ha attivato la vendita online delle magliette #ilfuturononcrolla per raccogliere fondi a sostegno del progetto volto alla edificazione di collegi per studenti Unicam meritevoli."", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""https://www.ilfuturononcrolla.it/"", ""postale"": """"}","<pre><yamldata>chi: '""il futuro non crolla"". Le magliette dell''Università di #Camerino per sostenere la ricostruzione'
@@ -7676,6 +7687,17 @@ indirizzo: 'Cordonata, Municipio Roma I, Roma, RM, Lazio, 00186, Italia'
 lat: '41.8935085'
 lon: '12.4825526'
 link: 'http://www.acli.it/le-notizie/news-nazionali/11048-terremoto-centro-italia-casacli-offre-ospitalita-alle-vittime-del-sisma#ixzz4ISSo4gdn'
+immagine: ''
+data: 16/09/2016
+</yamldata></pre>
+",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/550,177481724,2016-09-22 14:04:42,2016-09-16 17:44:42,"Salerno, SA - Lloyd’s Baia Hotel ",40.6801561,14.7596754,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""16/09/2016"", ""descrizione"": ""Il Lloyd\u2019s Baia Hotel a disposizione degli sfollati. Per coloro, tra gli sfollati di Accumoli, Arquata del Tronto, Amatrice e degli altri centri colpiti dal sisma, che avessero la possibilit\u00e0 di raggiungere la nostra regione, magari per la presenza di parenti, la famiglia Marinelli fa sapere che metter\u00e0 a disposizione adeguata sistemazione all\u2019interno della propria struttura.\tSalerno"", ""email"": ""info@lloydsbaiahotel.it"", ""immagine"": """", ""indirizzo"": ""Via Roberto il Guiscardo, Salerno, SA, Campania, 84121, Italia"", ""lat"": ""40.6801561"", ""link"": ""http://www.lloydsbaiahotel.it"", ""lon"": ""14.7596754"", ""tel"": ""0897633111""}","<pre><yamldata>tel: '0897633111'
+email: info@lloydsbaiahotel.it
+descrizione: ""Il Lloyd’s Baia Hotel a disposizione degli sfollati. Per coloro, tra gli sfollati di Accumoli, Arquata del Tronto, Amatrice e degli altri centri colpiti dal sisma, che avessero la possibilità di raggiungere la nostra regione, magari per la presenza di parenti, la famiglia Marinelli fa sapere che metterà a disposizione adeguata sistemazione all’interno della propria struttura.\tSalerno""
+indirizzo: 'Via Roberto il Guiscardo, Salerno, SA, Campania, 84121, Italia'
+lat: '40.6801561'
+lon: '14.7596754'
+link: 'http://www.lloydsbaiahotel.it'
 immagine: ''
 data: 16/09/2016
 </yamldata></pre>
