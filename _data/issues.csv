@@ -109,7 +109,7 @@ link: ''
 immagine: ''
 data: 18/01/2017
 </yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1659,201699845,2017-01-18 21:55:33,2017-01-18 21:39:58,Offresi disponibilità di sgombraneve con operatore ,43.48680489735277,11.374293565750122,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""Sgombraneve"", ""data"": ""18/01/2017"", ""descrizione"": ""Protezione Civile Radda in Chianti offre disponibilit\u00e0 ad inviare mezzo sgombraneve con operatore"", ""email"": ""protezionecivile@comune.raddainchianti.si.it"", ""immagine"": """", ""indirizzo"": ""Propositura di San Niccol\u00f2, Piazza della Chiesa, Lecci, Radda in Chianti, SI, TOS, 53017, Italia"", ""lat"": ""43.48680489735277"", ""link"": """", ""lon"": ""11.374293565750122"", ""tel"": ""3292606300""}","<pre><yamldata>tel: '3292606300'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1659,201699845,2017-01-18 23:53:59,2017-01-18 21:39:58,Offresi disponibilità di sgombraneve con operatore ,43.48680489735277,11.374293565750122,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""Sgombraneve"", ""data"": ""18/01/2017"", ""descrizione"": ""Protezione Civile Radda in Chianti offre disponibilit\u00e0 ad inviare mezzo sgombraneve con operatore"", ""email"": ""protezionecivile@comune.raddainchianti.si.it"", ""immagine"": """", ""indirizzo"": ""Propositura di San Niccol\u00f2, Piazza della Chiesa, Lecci, Radda in Chianti, SI, TOS, 53017, Italia"", ""lat"": ""43.48680489735277"", ""link"": """", ""lon"": ""11.374293565750122"", ""tel"": ""3292606300""}","<pre><yamldata>tel: '3292606300'
 email: protezionecivile@comune.raddainchianti.si.it
 cosa: Sgombraneve
 descrizione: 'Protezione Civile Radda in Chianti offre disponibilità ad inviare mezzo sgombraneve con operatore'
@@ -119,7 +119,7 @@ lon: '11.374293565750122'
 link: ''
 immagine: ''
 data: 18/01/2017
-</yamldata></pre>",open
+</yamldata></pre>",closed
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1658,201698896,2017-01-18 22:08:27,2017-01-18 21:35:51,Disponibilità di 3 alloggi per famiglie a Radda in Chianti,43.48662586225133,11.374229192733765,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""18/01/2017"", ""descrizione"": ""Disponibilit\u00e0 n. 3 alloggi per famiglie a Radda in Chianti."", ""email"": ""protezionecivile@comune.raddainchianti.si.it"", ""immagine"": """", ""indirizzo"": ""Municipio, 1, Piazza Francesco Ferrucci, Lecci, Radda in Chianti, SI, TOS, 53017, Italia"", ""lat"": ""43.48662586225133"", ""link"": """", ""lon"": ""11.374229192733765"", ""tel"": ""3292606300""}","<pre><yamldata>tel: '3292606300'
 email: protezionecivile@comune.raddainchianti.si.it
 descrizione: 'Disponibilità n. 3 alloggi per famiglie a Radda in Chianti.'
