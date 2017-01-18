@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1599,201569996,2017-01-18 13:18:54,2017-01-18 13:10:27,A #Coppito servono coperte e brandine,,,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""Coperte e brandina #Coppito"", ""data"": ""18/01/2017"", ""descrizione"": ""La Portezione civile della Pro loco di Coppito ha attrezzato il Musp scolastico e servono coperte e brandine per la notte."", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": """"}","<pre><yamldata>tel: ''
+email: ''
+cosa: 'Coperte e brandina #Coppito'
+descrizione: 'La Portezione civile della Pro loco di Coppito ha attrezzato il Musp scolastico e servono coperte e brandine per la notte.'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 18/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1598,201568640,2017-01-18 13:17:58,2017-01-18 13:04:02,Offresi appartamento in Friuli a Valvasone Arzene,,,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""18/01/2017"", ""descrizione"": ""Friuli, Valvasone Arzene. Ospito terremotati gratuitamente in appartamentino autonomo arredato. Cucina, bagno, salotto con 2 divani-letto. Consigliate 2 persone. Massimo 4."", ""email"": ""Letizia.zancope@libero.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3407885204""}","<pre><yamldata>tel: '3407885204'
 email: Letizia.zancope@libero.it
 descrizione: 'Friuli, Valvasone Arzene. Ospito terremotati gratuitamente in appartamentino autonomo arredato. Cucina, bagno, salotto con 2 divani-letto. Consigliate 2 persone. Massimo 4.'
@@ -5143,17 +5154,6 @@ link: 'https://www.facebook.com/proloco.campi/'
 data: 28/10/2016
 </yamldata></pre>
 ",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/875,186018276,2016-10-28 21:39:49,2016-10-28 20:47:07,Pro Loco Campi (Norcia) - Richiesta gemellaggio con altre Pro Loco per aiuto a sfollati ,42.8493534,13.0947414,"[""Accettato"", ""Bollettino"", ""Contatti"", ""Fabbisogni"", ""Form"", ""Pubblicare su FB"", ""Sisma Ottobre""]",,,"{""data"": ""28/10/2016"", ""descrizione"": ""Gemellaggio con altre Pro Loco in aiuto degli sfollati post-sisma."", ""email"": """", ""indirizzo"": ""Via dei Casali, Casa Cupa, Norcia, PG, UMB, 06046, Italia"", ""lat"": ""42.8493534"", ""link"": ""https://www.facebook.com/proloco.campi/"", ""lon"": ""13.0947414"", ""nome"": ""Pro Loco Campi"", ""tel"": ""0743 820225""}","<pre><yamldata>nome: 'Pro Loco Campi'
-tel: '0743 820225'
-email: ''
-descrizione: 'Gemellaggio con altre Pro Loco in aiuto degli sfollati post-sisma.'
-indirizzo: 'Via dei Casali, Casa Cupa, Norcia, PG, UMB, 06046, Italia'
-lat: '42.8493534'
-lon: '13.0947414'
-link: 'https://www.facebook.com/proloco.campi/'
-data: 28/10/2016
-</yamldata></pre>
-",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/874,186009567,2016-10-29 08:58:21,2016-10-28 20:04:23,"COMUNE DI AMATRICE - REPORT RIEPILOGATIVO DELLE SCHEDE DI RILEVAMENTO DEL DANNO, PRONTO INTERVENTO E AGIBILITA' (AEDES)",,,"[""Accettato"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""28/10/2016"", ""descrizione"": ""Pubblicati i primi report di censimento danni, schede AEDES, nell'albo pretorio del Comune di Amatrice, scaricabili anche dal nostro archivio, potete essere aggiornati sul materiale presente nell'archivio documentazione di terremotocentroitalia nella seguente pagina Facebook: https://www.facebook.com/terremotocentroita/?fref=ts"", ""link"": ""https://archive.org/details/DocumentoAmatrice"", ""titolo"": ""COMUNE DI AMATRICE - REPORT RIEPILOGATIVO DELLE SCHEDE DI RILEVAMENTO DEL DANNO, PRONTO INTERVENTO E AGIBILITA' (AEDES)""}","<pre><yamldata>titolo: 'COMUNE DI AMATRICE - REPORT RIEPILOGATIVO DELLE SCHEDE DI RILEVAMENTO DEL DANNO, PRONTO INTERVENTO E AGIBILITA'' (AEDES)'
 descrizione: 'Pubblicati i primi report di censimento danni, schede AEDES, nell''albo pretorio del Comune di Amatrice, scaricabili anche dal nostro archivio, potete essere aggiornati sul materiale presente nell''archivio documentazione di terremotocentroitalia nella seguente pagina Facebook: https://www.facebook.com/terremotocentroita/?fref=ts'
 link: 'https://archive.org/details/DocumentoAmatrice'
@@ -5836,6 +5836,18 @@ bic: ''
 postale: ''
 causale: ''
 link: 'https://www.facebook.com/permalink.php?story_fbid=1636554243302468&id=1627862690838290'
+email: ''
+data: 10/10/2016
+</yamldata></pre>
+",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/773,182111673,2016-10-10 20:49:18,2016-10-10 20:48:51,Raccolta fondi Brigate della Solidarietà - aggiornamento impiego donazioni,,,"[""Accettato"", ""Facebook"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Raccolta fondi Brigate della Solidariet\u00e0 - aggiornamento impiego donazioni"", ""data"": ""10/10/2016"", ""descrizione"": ""Grazie alla raccolta fondi lanciata dalle Brigate della Solidariet\u00e0, l'8 ottobre sono arrivati i 168 paia di scarponcini e stivali di cui aveva bisogno la popolazione amatriciana e non solo in vista dell'arrivo dell'inverno. L'acquisto \u00e8 costato euro 2.705,50."", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""https://www.facebook.com/terremotocentroitalia/posts/1398208940209118"", ""postale"": """"}","<pre><yamldata>chi: 'Raccolta fondi Brigate della Solidarietà - aggiornamento impiego donazioni'
+descrizione: 'Grazie alla raccolta fondi lanciata dalle Brigate della Solidarietà, l''8 ottobre sono arrivati i 168 paia di scarponcini e stivali di cui aveva bisogno la popolazione amatriciana e non solo in vista dell''arrivo dell''inverno. L''acquisto è costato euro 2.705,50.'
+intestazione: ''
+iban: ''
+bic: ''
+postale: ''
+causale: ''
+link: 'https://www.facebook.com/terremotocentroitalia/posts/1398208940209118'
 email: ''
 data: 10/10/2016
 </yamldata></pre>
