@@ -5355,6 +5355,14 @@ lon: '13.332316'
 data: 27/10/2016
 </yamldata></pre>
 ",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/851,185611345,2016-10-27 09:38:27,2016-10-27 09:02:09,Notte difficile a Montegallo,42.841026,13.332316,"[""Accettato"", ""Sisma Ottobre"", ""Telegram""]",,,"{""data"": ""27/10/2016"", ""descrizione"": ""Notte difficile anche a Montegallo. Altri crolli in zona rossa e tutta la comunit\u00e0 in strada. L'amministrazione sta valutando in queste ore come attrezzare un'area di accoglienza."", ""immagine"": """", ""lat"": ""42.841026"", ""lon"": ""13.332316"", ""telegram_user"": """"}","<pre><yamldata>telegram_user: ''
+descrizione: 'Notte difficile anche a Montegallo. Altri crolli in zona rossa e tutta la comunità in strada. L''amministrazione sta valutando in queste ore come attrezzare un''area di accoglienza.'
+immagine: ''
+lat: '42.841026'
+lon: '13.332316'
+data: 27/10/2016
+</yamldata></pre>
+",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/850,185608862,2016-10-27 09:35:30,2016-10-27 08:50:56,Arquata del Tronto. Crolli.,42.773936,13.298718,"[""Accettato"", ""Sisma Ottobre"", ""Telegram""]",,http://i.imgur.com/p36tW2h.jpg,"{""data"": ""27/10/2016"", ""descrizione"": ""Arquata del Tronto. Nella notte altri crolli in zona rossa."", ""immagine"": ""http://i.imgur.com/p36tW2h.jpg"", ""lat"": ""42.773936"", ""lon"": ""13.298718"", ""telegram_user"": """"}","<pre><yamldata>telegram_user: ''
 descrizione: 'Arquata del Tronto. Nella notte altri crolli in zona rossa.'
 immagine: 'http://i.imgur.com/p36tW2h.jpg'
