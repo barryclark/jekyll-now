@@ -1,4 +1,14 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1666,201708542,2017-01-18 22:22:02,2017-01-18 22:18:25,Offro alloggio e vitto a coppia anche con bimbo in provincia di La Spezia,44.107033,9.8282255,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""18/01/2017"", ""descrizione"": ""Offro alloggio a coppia anche con bimbo titolo gratuito anche il vitto"", ""email"": ""lcaldino@hotmail.com"", ""immagine"": """", ""indirizzo"": ""Via XXIV Maggio, Migliarina, La Spezia, SP, LIG, 19100, Italia"", ""lat"": ""44.107033"", ""link"": """", ""lon"": ""9.8282255"", ""tel"": ""3357726875""}","<pre><yamldata>tel: '3357726875'
+email: lcaldino@hotmail.com
+descrizione: 'Offro alloggio a coppia anche con bimbo titolo gratuito anche il vitto'
+indirizzo: 'Via XXIV Maggio, Migliarina, La Spezia, SP, LIG, 19100, Italia'
+lat: '44.107033'
+lon: '9.8282255'
+link: ''
+immagine: ''
+data: 18/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1664,201703001,2017-01-18 22:01:18,2017-01-18 21:53:47,Offresi rimessaggio per 300 ovini a Fara in Sabina (Ri),42.2095582,12.7293703,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""Offresi rimessaggio per 300 ovini a Fara in Sabina (Ri)"", ""data"": ""18/01/2017"", ""descrizione"": ""URGENTE..... FATE GIRARE PER FAVORE.... IO E LA MIA FAMIGLIA METTIAMO A DISPOSIZIONE PER GLI ALLEVATORI DELLE ZONE COLPITE DAL SISMA UN CAPANNONE DI NOSTRA PROPRIETA ADIBITO A RIMESSAGGIO PER OVINI CAPRINI ASINI MUCCHE E ALTRI ANIMALI ANCHE CON POSTAZIONE MUNGITURA....ATTUALMENTE CI SONO NELLA MET\u00c0 DEL CAPANNONE LE NOSTRE BESTIE MA ABBIAMO ANCORA POSTO PER CIRCA 300 PECORE, QUALCHE CAVALLO, ASINO, MUCCA O QUALSIASI ALTRO ANIMALE....PI\u00d9 DI QUESTO NON POSSIAMO FARE MA SIAMO LIETI DI DARE UN TETTO A TUTTE QUELLE POVERE BESTIE...FATE GIRARE GRAZIE ... IL CAPANNONE SI TROVA NEL COMUNE DI FARA IN SABINA PRECISAMENTE NELLE CAMPAGNE DI PASSO CORESE (RI)."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Tabbacchino trail, Toffia, RI, LAZ, 00017, Italia"", ""lat"": ""42.2095582"", ""link"": ""https://www.facebook.com/permalink.php?story_fbid=252237361856740&id=100012114337943"", ""lon"": ""12.7293703"", ""tel"": """"}","<pre><yamldata>tel: ''
 email: ''
 cosa: 'Offresi rimessaggio per 300 ovini a Fara in Sabina (Ri)'
