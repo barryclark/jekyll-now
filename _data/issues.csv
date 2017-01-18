@@ -1,4 +1,14 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1598,201568640,2017-01-18 13:17:58,2017-01-18 13:04:02,Offresi appartamento in Friuli a Valvasone Arzene,,,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""18/01/2017"", ""descrizione"": ""Friuli, Valvasone Arzene. Ospito terremotati gratuitamente in appartamentino autonomo arredato. Cucina, bagno, salotto con 2 divani-letto. Consigliate 2 persone. Massimo 4."", ""email"": ""Letizia.zancope@libero.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3407885204""}","<pre><yamldata>tel: '3407885204'
+email: Letizia.zancope@libero.it
+descrizione: 'Friuli, Valvasone Arzene. Ospito terremotati gratuitamente in appartamentino autonomo arredato. Cucina, bagno, salotto con 2 divani-letto. Consigliate 2 persone. Massimo 4.'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 18/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1597,201565265,2017-01-18 13:16:39,2017-01-18 12:47:56,Aiuti e gruppo elettrogeno a #Scorrano (TE),42.561,12.1374,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""Aiuti e gruppo elettrogeno a #Scorrano"", ""data"": ""18/01/2017"", ""descrizione"": ""A Scorrano frazione di Celleno Atanasio (TE) isolati da 2mt di neve e senza corrente. Servono aiuti e gruppo elettrogeno. Contatto Lusiana."", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": ""42.561"", ""link"": """", ""lon"": ""12.1374"", ""tel"": ""3288818703""}","<pre><yamldata>tel: '3288818703'
 email: ''
 cosa: 'Aiuti e gruppo elettrogeno a #Scorrano'
@@ -3095,17 +3105,6 @@ link: 'https://www.facebook.com/groups/1758670357733881/permalink/17968724405803
 immagine: ''
 data: 08/11/2016
 </yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1179,188123765,2016-11-15 07:17:46,2016-11-08 22:40:14,Casa di riposo nel maceratese ha bisogno di beni e cibo a lunga scadenza,43.2383009,13.0673041,"[""Accettato"", ""Bollettino"", ""Cibo"", ""Fabbisogni"", ""Facebook"", ""Sisma Ottobre""]",,,"{""cosa"": ""Casa di riposo nel maceratese ha bisogno di beni e cibo a lunga scadenza"", ""data"": ""08/11/2016"", ""descrizione"": ""A Gagliole (MC) la Casa di riposo Chierichetti ha bisogno di: - pannoloni per adulti - omogeneizzati - scatolame, olio, pomodori, prodotti a lunga cadenza. Referente: Giuseppe Pup Cingolani, c/o Casa di riposo Chierichetti via Bergoni, 40 - Gagliole, 62022 Macerata."", ""email"": ""aspgagliole@libero.it-aspgagliole@gmail.com"", ""immagine"": """", ""indirizzo"": ""Scoglietti, Gagliole, MC, Marche, Italia"", ""lat"": ""43.2383009"", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1796872440580339/"", ""lon"": ""13.0673041"", ""tel"": ""0737/641183""}","<pre><yamldata>tel: 0737/641183
-email: aspgagliole@libero.it-aspgagliole@gmail.com
-cosa: 'Casa di riposo nel maceratese ha bisogno di beni e cibo a lunga scadenza'
-descrizione: 'A Gagliole (MC) la Casa di riposo Chierichetti ha bisogno di: - pannoloni per adulti - omogeneizzati - scatolame, olio, pomodori, prodotti a lunga cadenza. Referente: Giuseppe Pup Cingolani, c/o Casa di riposo Chierichetti via Bergoni, 40 - Gagliole, 62022 Macerata.'
-indirizzo: 'Scoglietti, Gagliole, MC, Marche, Italia'
-lat: '43.2383009'
-lon: '13.0673041'
-link: 'https://www.facebook.com/groups/1758670357733881/permalink/1796872440580339/'
-immagine: ''
-data: 08/11/2016
-</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1178,188120917,2016-11-18 15:07:04,2016-11-08 22:26:22,Associazione Carabinieri di Saronno raccoglie libri e indumenti invernali e cerca contatto per donazione,,,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Form"", ""Sisma Ottobre""]",,,"{""data"": ""08/11/2016"", ""descrizione"": ""Come Associazione Nazionale Carabinieri Sezione di Saronno (VA) in collaborazione con l'Arma in servizio ed alcuni cittadini di questo Comune, stiamo raccogliendo materiale invernale e libri. Ci servirebbe un referente per poter portare noi personalmente il materiale. Oppure diteci voi di cosa avete necessit\u00e0. Il Presidente della Sezione A.N.C. di Saronno Brig. Capo Dario Canonici"", ""email"": ""canonicidario@gmail.com"", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""nome"": ""Dario Canonici"", ""tel"": ""3387356895""}","<pre><yamldata>nome: 'Dario Canonici'
 tel: '3387356895'
 email: canonicidario@gmail.com
@@ -5131,6 +5130,17 @@ https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/877,1860632
 descrizione: 'Cinque esoneri a copertura totale destinati ai ragazzi colpiti dal sisma del 24 agosto.'
 link: 'http://www.luiss.it/news/2016/10/14/luiss-mette-disposizione-borse-di-studio-gli-studenti-colpiti-dal-terremoto#'
 data: 29/10/2016
+</yamldata></pre>
+",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/875,186018276,2016-10-28 21:39:49,2016-10-28 20:47:07,Pro Loco Campi (Norcia) - Richiesta gemellaggio con altre Pro Loco per aiuto a sfollati ,42.8493534,13.0947414,"[""Accettato"", ""Bollettino"", ""Contatti"", ""Fabbisogni"", ""Form"", ""Pubblicare su FB"", ""Sisma Ottobre""]",,,"{""data"": ""28/10/2016"", ""descrizione"": ""Gemellaggio con altre Pro Loco in aiuto degli sfollati post-sisma."", ""email"": """", ""indirizzo"": ""Via dei Casali, Casa Cupa, Norcia, PG, UMB, 06046, Italia"", ""lat"": ""42.8493534"", ""link"": ""https://www.facebook.com/proloco.campi/"", ""lon"": ""13.0947414"", ""nome"": ""Pro Loco Campi"", ""tel"": ""0743 820225""}","<pre><yamldata>nome: 'Pro Loco Campi'
+tel: '0743 820225'
+email: ''
+descrizione: 'Gemellaggio con altre Pro Loco in aiuto degli sfollati post-sisma.'
+indirizzo: 'Via dei Casali, Casa Cupa, Norcia, PG, UMB, 06046, Italia'
+lat: '42.8493534'
+lon: '13.0947414'
+link: 'https://www.facebook.com/proloco.campi/'
+data: 28/10/2016
 </yamldata></pre>
 ",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/875,186018276,2016-10-28 21:39:49,2016-10-28 20:47:07,Pro Loco Campi (Norcia) - Richiesta gemellaggio con altre Pro Loco per aiuto a sfollati ,42.8493534,13.0947414,"[""Accettato"", ""Bollettino"", ""Contatti"", ""Fabbisogni"", ""Form"", ""Pubblicare su FB"", ""Sisma Ottobre""]",,,"{""data"": ""28/10/2016"", ""descrizione"": ""Gemellaggio con altre Pro Loco in aiuto degli sfollati post-sisma."", ""email"": """", ""indirizzo"": ""Via dei Casali, Casa Cupa, Norcia, PG, UMB, 06046, Italia"", ""lat"": ""42.8493534"", ""link"": ""https://www.facebook.com/proloco.campi/"", ""lon"": ""13.0947414"", ""nome"": ""Pro Loco Campi"", ""tel"": ""0743 820225""}","<pre><yamldata>nome: 'Pro Loco Campi'
