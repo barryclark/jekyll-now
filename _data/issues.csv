@@ -1301,6 +1301,17 @@ link: ''
 immagine: ''
 data: 16/12/2016
 </yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1461,196054458,2016-12-16 13:12:37,2016-12-16 13:01:12,Cercasi appartamento a #PortodAscoli,42.9124055,13.8935711,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Sisma Ottobre""]",,,"{""cosa"": ""Appartamento #PortodAscoli"", ""data"": ""16/12/2016"", ""descrizione"": ""Per una famiglia terremotata stiamo cercando un appartamento in affitto in zona Porto D'Ascoli, 4 persone pi\u00f9 un animale, necessit\u00e0 ovviamente di riscaldamento. Contattare Don Paolo Sabatini."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Via Filippo Turati, Salaria, San Benedetto del Tronto, AP, Marche, 63074, Italia"", ""lat"": ""42.9124055"", ""link"": """", ""lon"": ""13.8935711"", ""tel"": ""3289839222""}","<pre><yamldata>tel: '3289839222'
+email: ''
+cosa: 'Appartamento #PortodAscoli'
+descrizione: 'Per una famiglia terremotata stiamo cercando un appartamento in affitto in zona Porto D''Ascoli, 4 persone più un animale, necessità ovviamente di riscaldamento. Contattare Don Paolo Sabatini.'
+indirizzo: 'Via Filippo Turati, Salaria, San Benedetto del Tronto, AP, Marche, 63074, Italia'
+lat: '42.9124055'
+lon: '13.8935711'
+link: ''
+immagine: ''
+data: 16/12/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1459,195983827,2017-01-05 21:53:31,2016-12-16 05:27:52,A #Treia (Mc) c'è bisogno di una roulotte,,,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Sisma Ottobre""]",,,"{""cosa"": ""Ruolotte"", ""data"": ""16/12/2016"", ""descrizione"": ""Sono \""terremotata\"" da Agosto e sto cercando disperatamente una ruolotte per tornare sul mio posto. Mi servirebbe piccola ma pulita. La prendo o a prezzo modico, in dono o anche in prestito. Zona Treia (MC). Grazie"", ""email"": ""pelange23@web.de"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3291693360""}","<pre><yamldata>tel: '3291693360'
 email: pelange23@web.de
 cosa: Ruolotte
