@@ -19,31 +19,29 @@ We're going to use two different templates for each page. There will be a base.h
 We will need a navigation bar. Using navbar-inverse makes it dark, which looks nice. Again, we'll use container-fluid to fill the screen.
 
 <nav class="navbar navbar-inverse">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="#">Sappho</a>
-            </div>
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-            </ul>
-        </div>
-    </nav>
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Sappho</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+  </div>
+</nav>
 
 
 The next thing you want to do with you base.html file is include a place for the templates you extend from here. Just create a container and specify that you want any additional content (such as page.html) to go there. We want to put everything in a container. One way to do this is:&lt;div class="container"&gt;. But if we want the container container to resize as the screen size changes, we use: &lt;div class="container-fluid"&gt;.
 
-Which gives us
 
-
-    <div class="container-fluid">
-        {% block content %}
-        {% endblock %}
-    </div>
+&lt;div class="container-fluid">
+{% block content %}
+{% endblock %}
+&lt;/div>
 
 
 After you add some closing markers to close the body and html document, you're base.html should look like this:
@@ -52,33 +50,33 @@ After you add some closing markers to close the body and html document, you're b
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Sappho</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+  <title>Sappho</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
 
 </head>
 
 <body>
-    <nav class="navbar navbar-inverse">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="#">Sappho</a>
-            </div>
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-            </ul>
-        </div>
-    </nav>
-    <div class="container">
-        {% block content %}
-        {% endblock %}
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Sappho</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
     </div>
+  </nav>
+  <div class="container">
+    {% block content %}
+    {% endblock %}
+  </div>
 
 </body>
 </html>
@@ -91,31 +89,31 @@ Now you can start on page.html. We've already got a good header, so let's focus 
 
 
 ```
-   <body>
-        <div class="container">
+<body>
+  <div class="container">
 
-           {% for comment in comments %}
-    <div class="row">
-        {{ comment.content }}
-    </div>
-{% endfor %}
+   {% for comment in comments %}
+   <div class="row">
+    {{ comment.content }}
+  </div>
+  {% endfor %}
 
-            <div class="row">
-                <form action="." method="POST">
-                    <textarea class="form-control" name="contents" placeholder="Enter a comment"></textarea>
-                    <input type="submit" value="Post comment">
-                </form>
-            </div>
+  <div class="row">
+    <form action="." method="POST">
+      <textarea class="form-control" name="contents" placeholder="Enter a comment"></textarea>
+      <input type="submit" value="Post comment">
+    </form>
+  </div>
 
-            <div class="row">
-                <form action="." method="POST">
-                    <textarea class="form-control" name="contents" placeholder="Enter your feature requests here!"></textarea>
-                    <input type="submit" value="Send request">
-                </form>
-            </div>
-        </div>
+  <div class="row">
+    <form action="." method="POST">
+      <textarea class="form-control" name="contents" placeholder="Enter your feature requests here!"></textarea>
+      <input type="submit" value="Send request">
+    </form>
+  </div>
+</div>
 
-    </body>
+</body>
 ```
 
 
@@ -243,21 +241,21 @@ A button can be set to an active (appear pressed) or a disabled (unclickable) st
 
 Bootstrap provides 260 glyphicons from the Glyphicons Halflings set.
 
-  <p>Search icon on a styled button:
-    <button type="button" class="btn btn-info">
-      <span class="glyphicon glyphicon-search"></span> Search
-    </button>
-  </p>
-  
+<p>Search icon on a styled button:
+  <button type="button" class="btn btn-info">
+    <span class="glyphicon glyphicon-search"></span> Search
+  </button>
+</p>
+
 You also might want a progress bar:
-  
-  <div class="progress">
+
+<div class="progress">
   <div class="progress-bar" role="progressbar" aria-valuenow="70"
   aria-valuemin="0" aria-valuemax="100" style="width:70%">
-    70%
-  </div>
+  70%
 </div>
-  
+</div>
+
 
 You need a panel to display your results in:
 
@@ -272,24 +270,24 @@ Here's the dropdown menu to choose which type of writing we're doing:
 
 <div class="dropdown">
   <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Tutorials
-  <span class="caret"></span></button>
-  <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-    <li role="presentation"><a role="menuitem" href="#">General writing</a></li>
-    <li role="presentation" class="active"><a role="menuitem" href="#">Newspaper articles</a></li>
-    <li role="presentation"><a role="menuitem" href="#">JavaScript</a></li>
-    <li role="presentation" class="divider"></li>
-    <li role="presentation"><a role="menuitem" href="#">About Us</a></li>
-  </ul>
-</div>
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+      <li role="presentation"><a role="menuitem" href="#">General writing</a></li>
+      <li role="presentation" class="active"><a role="menuitem" href="#">Newspaper articles</a></li>
+      <li role="presentation"><a role="menuitem" href="#">JavaScript</a></li>
+      <li role="presentation" class="divider"></li>
+      <li role="presentation"><a role="menuitem" href="#">About Us</a></li>
+    </ul>
+  </div>
 
 
 
 
-We're going to need a large text area where people can put their writing. Here's how you do that:
+  We're going to need a large text area where people can put their writing. Here's how you do that:
 
-<div class="form-group">
-  <label for="comment">Text:</label>
-  <textarea class="form-control" rows="5" id="comment" placeholder="Enter your text here"></textarea>
-</div>
+  <div class="form-group">
+    <label for="comment">Text:</label>
+    <textarea class="form-control" rows="5" id="comment" placeholder="Enter your text here"></textarea>
+  </div>
 
 
