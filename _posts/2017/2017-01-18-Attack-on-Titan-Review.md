@@ -9,7 +9,7 @@ tags: [review, games, attack on titan, cryptozoic, cerberus]
 author: Rob Kalajian
 ---
 
-![Attack on Titan](/images/features/attackontitan.png){: .float-right}
+![Attack on Titan](/images/featured/attackontitan.png){: .float-right}
 <h2>Prelude</h2>
 
 Back in November, I took some [unboxing shots](http://pawnsperspective.com/Attack-on-Titan-Unboxing/) of Attack on Titan. Unfortunately, it sat, unplayed, on my shelf for quite some time after that with the craziness that is the holidays. Finally having a chance to sit down and play, I discovered a very competent deck builder with a movement mechanic that really brings the game to life.
