@@ -19,9 +19,14 @@ Protagonists are genuine, caring people who talk the talk and walk the walk, and
 ----------
 
 ## Professional Overview
-	* Strengths:      HTML,  CSS,  Javascript,  jQuery,  PHP
+
+	
+    * Strengths:      HTML,  CSS,  Javascript,  jQuery,  PHP
 	* Knowledge:      Java, Ruby, Python, MySQL, AngularJS, Node.js,  Jekyll, Cucumber
 	* Tools:          Adobe CS6 Suite,  XCode,  StackOverflow,  MDN, GoogleDevs
+    
+    
+
 
 ## 2016-2017 Projects
   ✔ **TipCalc**         -- Basic tip calculator built with Javascript
