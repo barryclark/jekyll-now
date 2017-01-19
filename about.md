@@ -28,17 +28,18 @@ Protagonists are genuine, caring people who talk the talk and walk the walk, and
     
 
 
-## 2016-2017 Projects
-  ✔ **TipCalc**         -- Basic tip calculator built with Javascript
+## 2016-2017 Projects (Source Code Links)
+
+  ✔ [**TipCalc**](https://github.com/emilypmendez/TipCalc)         -- Basic tip calculator built with Javascript
     
     
-  ✔ **Balloon Tap**     -- Mobile app game via Corona SDK
+  ✔ [**Balloon Tap**](https://github.com/emilypmendez/BalloonTap)     -- Mobile app game via Corona SDK
     
     
-  ✔ **Memory Keeper**   -- Mobile app built for reminders
+  ✔ [**Memory Keeper**](https://github.com/emilypmendez/MemoryKeeper)   -- Mobile app built for reminders
     
     
-  ✔ **Priority App**    -- Business software application, Personal Project
+  ✔ [**Priority App**](https://github.com/emilypmendez/PriorityApp)   -- Business software application, Personal Project
 
 ## Contact me
 
