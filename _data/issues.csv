@@ -1,4 +1,14 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1696,201791670,2017-01-19 08:32:50,2017-01-19 08:19:54,Disponibilità offrire alloggio a tre persone in provincia di Milano,,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""19/01/2017"", ""descrizione"": ""Disponibilit\u00e0 offrire nella mia casa ospitalit\u00e0 per 3 persone bisognose colpite dall'emergenza neve/terremoto nel centro Italia. Ho disponibili una camera con letto singolo + una saletta con divano letto matrimoniale e bagno, il tutto \u00e8 da condividere con i nostri spazi. La casa \u00e8 a Magenta nella provincia di Milano."", ""email"": ""bignami.achille@libero.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3343079306""}","<pre><yamldata>tel: '3343079306'
+email: bignami.achille@libero.it
+descrizione: 'Disponibilità offrire nella mia casa ospitalità per 3 persone bisognose colpite dall''emergenza neve/terremoto nel centro Italia. Ho disponibili una camera con letto singolo + una saletta con divano letto matrimoniale e bagno, il tutto è da condividere con i nostri spazi. La casa è a Magenta nella provincia di Milano.'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 19/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1695,201788416,2017-01-19 08:32:01,2017-01-19 07:59:36,Offro vitto e alloggio a famiglia a Crema,,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""19/01/2017"", ""descrizione"": ""Offro vitto e alloggio a famiglia di 2/3 persone presso famiglia composta da marito, moglie, bimbo di due anni e due cagnolini. Zona Crema (CR)."", ""email"": ""darka1978@hotmail.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3203191846""}","<pre><yamldata>tel: '3203191846'
 email: darka1978@hotmail.it
 descrizione: 'Offro vitto e alloggio a famiglia di 2/3 persone presso famiglia composta da marito, moglie, bimbo di due anni e due cagnolini. Zona Crema (CR).'
@@ -6619,18 +6629,6 @@ link: 'http://www.piccolimaestri.org/piccoli-maestri-per-amatrice/'
 data: 02/10/2016
 </yamldata></pre>
 ",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/737,180502759,2016-10-11 21:32:10,2016-10-02 08:54:57,#Amatricianasolidale a Lissone (MB) per il Comune di #Acquasanta (AP) domenica 9 ottobre 2016,,,"[""Accettato"", ""Bollettino"", ""Facebook"", ""Raccolte Fondi""]",Milestone(number=12),,"{""bic"": """", ""causale"": """", ""chi"": ""#Amatricianasolidale a Lissone (MB) per il Comune di #Acquasanta (AP) domenica 9 ottobre 2016"", ""data"": ""02/10/2016"", ""descrizione"": ""Insieme per sostenere il comune di #Acquasanta in provincia di Ascoli Piceno. Il sindaco di Acquasanta ha comunicato la necessit\u00e0 di garantire l'attivit\u00e0 didattica per le scuole dell'infanzia e primaria crollate ed inagibili. Ora i bambini sono in strutture di emergenza. Pranziamo insieme! Un gesto semplice e spontaneo pu\u00f2 sostenere e trasmettere vicinanza. Prenotazioni entro il 7 ottobre 2016 (tel. 039 7397257)."", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1777339639200286/"", ""postale"": """"}","<pre><yamldata>chi: '#Amatricianasolidale a Lissone (MB) per il Comune di #Acquasanta (AP) domenica 9 ottobre 2016'
-descrizione: 'Insieme per sostenere il comune di #Acquasanta in provincia di Ascoli Piceno. Il sindaco di Acquasanta ha comunicato la necessità di garantire l''attività didattica per le scuole dell''infanzia e primaria crollate ed inagibili. Ora i bambini sono in strutture di emergenza. Pranziamo insieme! Un gesto semplice e spontaneo può sostenere e trasmettere vicinanza. Prenotazioni entro il 7 ottobre 2016 (tel. 039 7397257).'
-intestazione: ''
-iban: ''
-bic: ''
-postale: ''
-causale: ''
-link: 'https://www.facebook.com/groups/1758670357733881/permalink/1777339639200286/'
-email: ''
-data: 02/10/2016
-</yamldata></pre>
-",closed
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/737,180502759,2016-10-11 21:32:10,2016-10-02 08:54:57,#Amatricianasolidale a Lissone (MB) per il Comune di #Acquasanta (AP) domenica 9 ottobre 2016,,,"[""Accettato"", ""Bollettino"", ""Facebook"", ""Raccolte Fondi""]",Milestone(number=12),,"{""bic"": """", ""causale"": """", ""chi"": ""#Amatricianasolidale a Lissone (MB) per il Comune di #Acquasanta (AP) domenica 9 ottobre 2016"", ""data"": ""02/10/2016"", ""descrizione"": ""Insieme per sostenere il comune di #Acquasanta in provincia di Ascoli Piceno. Il sindaco di Acquasanta ha comunicato la necessit\u00e0 di garantire l'attivit\u00e0 didattica per le scuole dell'infanzia e primaria crollate ed inagibili. Ora i bambini sono in strutture di emergenza. Pranziamo insieme! Un gesto semplice e spontaneo pu\u00f2 sostenere e trasmettere vicinanza. Prenotazioni entro il 7 ottobre 2016 (tel. 039 7397257)."", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1777339639200286/"", ""postale"": """"}","<pre><yamldata>chi: '#Amatricianasolidale a Lissone (MB) per il Comune di #Acquasanta (AP) domenica 9 ottobre 2016'
 descrizione: 'Insieme per sostenere il comune di #Acquasanta in provincia di Ascoli Piceno. Il sindaco di Acquasanta ha comunicato la necessità di garantire l''attività didattica per le scuole dell''infanzia e primaria crollate ed inagibili. Ora i bambini sono in strutture di emergenza. Pranziamo insieme! Un gesto semplice e spontaneo può sostenere e trasmettere vicinanza. Prenotazioni entro il 7 ottobre 2016 (tel. 039 7397257).'
 intestazione: ''
