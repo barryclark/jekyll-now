@@ -119,6 +119,16 @@ link: ''
 immagine: ''
 data: 19/01/2017
 </yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1824,201853997,2017-01-19 13:54:39,2017-01-19 12:56:11,"Offresi ospitalità in provincia di Reggio Emilia, anche con animali domestici ",44.5310343,10.4063727,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""19/01/2017"", ""descrizione"": ""A Trinit\u00e0 di Canossa (Reggio Emilia) Offro alloggio in casa privata (in condivisione) a mamma con bambini o coppia con un bambino e/o un neonato. Accettati e molto graditi animali domestici (ce ne sono diversi presenti in casa e fuori casa nostra). Indispensabile la macchina, casa situata in tranquilla zona collinare distante dalla citt\u00e0."", ""email"": ""elena_lasagni@virgilio.it"", ""immagine"": """", ""indirizzo"": ""Localit\u00e0 Vedriano - Localit\u00e0 Trinit\u00e0, Casina, RE, EMR, Italia"", ""lat"": ""44.5310343"", ""link"": """", ""lon"": ""10.4063727"", ""tel"": ""3389919241""}","<pre><yamldata>tel: '3389919241'
+email: elena_lasagni@virgilio.it
+descrizione: 'A Trinità di Canossa (Reggio Emilia) Offro alloggio in casa privata (in condivisione) a mamma con bambini o coppia con un bambino e/o un neonato. Accettati e molto graditi animali domestici (ce ne sono diversi presenti in casa e fuori casa nostra). Indispensabile la macchina, casa situata in tranquilla zona collinare distante dalla città.'
+indirizzo: 'Località Vedriano - Località Trinità, Casina, RE, EMR, Italia'
+lat: '44.5310343'
+lon: '10.4063727'
+link: ''
+immagine: ''
+data: 19/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1799,201842248,2017-01-19 13:48:11,2017-01-19 12:07:22,"Università di #Teramo: sedi chiuse fino al 21 gennaio, attivato centro di accoglienza studenti",,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili"", ""Sisma Gennaio 2017""]",,,"{""data"": ""19/01/2017"", ""descrizione"": ""Universit\u00e0 di Teramo chiusa fino al 21 gennaio. Ospedale veterinario di Piano D'Accio \u00e8 centro di Accoglienza per studenti e dottorandi."", ""link"": ""http://www.unite.it/UniTE/Engine/RAServePG.php/P/364621UTE0400"", ""titolo"": ""AGGIORNAMENTO: SEDI CHIUSE FINO AL 21 GENNAIO #Teramo""}","<pre><yamldata>titolo: 'AGGIORNAMENTO: SEDI CHIUSE FINO AL 21 GENNAIO #Teramo'
 descrizione: 'Università di Teramo chiusa fino al 21 gennaio. Ospedale veterinario di Piano D''Accio è centro di Accoglienza per studenti e dottorandi.'
 link: 'http://www.unite.it/UniTE/Engine/RAServePG.php/P/364621UTE0400'
@@ -1614,6 +1624,17 @@ lon: ''
 link: ''
 immagine: ''
 data: 04/01/2017
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1513,198457198,2017-01-03 11:39:29,2017-01-03 11:38:26,"""RiapriAmo #Castelluccio di #Norcia"", raccolta firme per aprire una via di accesso al paese",42.8287758,13.2076515,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Sisma Ottobre""]",,http://i.imgur.com/BJDHl0Y.jpg,"{""cosa"": ""\""RiapriAmo #Castelluccio di #Norcia\"", raccolta firme per aprire una via di accesso al paese"", ""data"": ""03/01/2017"", ""descrizione"": ""Dal sisma del 30 ottobre 2016 che ha coinvolto diversi borghi del centro Italia, Castelluccio di Norcia non ha una via di accesso percorribile. Con oltre due mesi di tempo, nelle nostre strade non \u00e8 stato spostato nemmeno un sassolino caduto. l'associazione La Casa sull'Albero ha lanciato su Change.org una petizione per chiedere il ripristino di una via di accesso al paese."", ""email"": ""lacasasullalberoonlus@gmail.com"", ""immagine"": ""http://i.imgur.com/BJDHl0Y.jpg"", ""indirizzo"": ""Via Dietro la Torre, Norcia, PG, UMB, 06046, Italia"", ""lat"": ""42.8287758"", ""link"": ""https://www.change.org/p/la-casa-sull-albero-onlus-riapriamo-castelluccio-di-norcia"", ""lon"": ""13.2076515"", ""tel"": """"}","<pre><yamldata>tel: ''
+email: lacasasullalberoonlus@gmail.com
+cosa: '""RiapriAmo #Castelluccio di #Norcia"", raccolta firme per aprire una via di accesso al paese'
+descrizione: 'Dal sisma del 30 ottobre 2016 che ha coinvolto diversi borghi del centro Italia, Castelluccio di Norcia non ha una via di accesso percorribile. Con oltre due mesi di tempo, nelle nostre strade non è stato spostato nemmeno un sassolino caduto. l''associazione La Casa sull''Albero ha lanciato su Change.org una petizione per chiedere il ripristino di una via di accesso al paese.'
+indirizzo: 'Via Dietro la Torre, Norcia, PG, UMB, 06046, Italia'
+lat: '42.8287758'
+lon: '13.2076515'
+link: 'https://www.change.org/p/la-casa-sull-albero-onlus-riapriamo-castelluccio-di-norcia'
+immagine: 'http://i.imgur.com/BJDHl0Y.jpg'
+data: 03/01/2017
 </yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1513,198457198,2017-01-03 11:39:29,2017-01-03 11:38:26,"""RiapriAmo #Castelluccio di #Norcia"", raccolta firme per aprire una via di accesso al paese",42.8287758,13.2076515,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Sisma Ottobre""]",,http://i.imgur.com/BJDHl0Y.jpg,"{""cosa"": ""\""RiapriAmo #Castelluccio di #Norcia\"", raccolta firme per aprire una via di accesso al paese"", ""data"": ""03/01/2017"", ""descrizione"": ""Dal sisma del 30 ottobre 2016 che ha coinvolto diversi borghi del centro Italia, Castelluccio di Norcia non ha una via di accesso percorribile. Con oltre due mesi di tempo, nelle nostre strade non \u00e8 stato spostato nemmeno un sassolino caduto. l'associazione La Casa sull'Albero ha lanciato su Change.org una petizione per chiedere il ripristino di una via di accesso al paese."", ""email"": ""lacasasullalberoonlus@gmail.com"", ""immagine"": ""http://i.imgur.com/BJDHl0Y.jpg"", ""indirizzo"": ""Via Dietro la Torre, Norcia, PG, UMB, 06046, Italia"", ""lat"": ""42.8287758"", ""link"": ""https://www.change.org/p/la-casa-sull-albero-onlus-riapriamo-castelluccio-di-norcia"", ""lon"": ""13.2076515"", ""tel"": """"}","<pre><yamldata>tel: ''
 email: lacasasullalberoonlus@gmail.com
@@ -8919,17 +8940,6 @@ immagine: ''
 data: 16/09/2016
 </yamldata></pre>
 ",closed
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/498,177437994,2016-09-22 15:57:52,2016-09-16 14:22:26,"Campofilone FM - Camping village ""Fontana Marina""",42.562265,12.644217,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""16/09/2016"", ""descrizione"": ""CAMPING VILLAGE \""FONTANA MARINA\"" di TERNI (dal 3 settembre offre alloggi)"", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": ""42.562265"", ""link"": """", ""lon"": ""12.644217"", ""tel"": ""URP Comune di Terni: 0744 432201""}","<pre><yamldata>tel: 'URP Comune di Terni: 0744 432201'
-email: ''
-descrizione: 'CAMPING VILLAGE ""FONTANA MARINA"" di TERNI (dal 3 settembre offre alloggi)'
-indirizzo: ''
-lat: '42.562265'
-lon: '12.644217'
-link: ''
-immagine: ''
-data: 16/09/2016
-</yamldata></pre>
-",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/498,177437994,2016-09-22 15:57:52,2016-09-16 14:22:26,"Campofilone FM - Camping village ""Fontana Marina""",42.562265,12.644217,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""16/09/2016"", ""descrizione"": ""CAMPING VILLAGE \""FONTANA MARINA\"" di TERNI (dal 3 settembre offre alloggi)"", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": ""42.562265"", ""link"": """", ""lon"": ""12.644217"", ""tel"": ""URP Comune di Terni: 0744 432201""}","<pre><yamldata>tel: 'URP Comune di Terni: 0744 432201'
 email: ''
 descrizione: 'CAMPING VILLAGE ""FONTANA MARINA"" di TERNI (dal 3 settembre offre alloggi)'
