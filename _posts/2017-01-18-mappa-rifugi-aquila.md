@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Mappa dei centri d'accoglienza dal Comune dell'Aquila
+title: Mappa dei centri d'accoglienza dai Comuni dell'Aquila e di Rieti
 categories: blog
 ---
 
-Mappa dei centri d'accoglienza segnalati dal Comune dell'Aquila aggiornati al 18 Gennaio 2017.
+Mappa dei centri d'accoglienza segnalati dai Comune dell'Aquilae di Rieti aggiornati al 18 Gennaio 2017.
 Cliccare sulle icone per avere più informazioni.
 
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.0/dist/leaflet.css" />
@@ -33,16 +33,16 @@ var attr_osm = 'Map data &copy; <a href="http://openstreetmap.org/">OpenStreetMa
 var osm = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: [attr_osm, attr_overpass].join(', ')
 });
-var map = new L.Map('map').addLayer(osm).setView(new L.LatLng(42.39544583718582,13.458080291748047), 11);
+var map = new L.Map('map').addLayer(osm).setView(new L.LatLng(42.39404,13.12141), 10);
 var opl = new L.OverPassLayer({
     debug: false,
     endPoint: 'https://overpass-api.de/api/',
-    minZoom: 11,
+    minZoom: 10,
     markerIcon: houseMarker,
-    query: 'node({{bbox}})["amenity"="social_facility"]["social_facility"="shelter"];out qt;',
+    query: 'node({{bbox}})["amenity"="social_facility"]["social_facility"="shelter"]["social_facility:for"="displaced"];out qt;',
     minZoomIndicatorOptions: {
         position: 'topright',
-        minZoomMessage: 'Current zoom level: CURRENTZOOM - All data at level: MINZOOMLEVEL'
+        minZoomMessage: 'Livello di zoom attuale: CURRENTZOOM - Minimo zoom per vedere i dati: MINZOOMLEVEL'
     }
 });
 map.addLayer(opl);
