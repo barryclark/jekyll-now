@@ -1,4 +1,14 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1683,201728926,2017-01-19 06:05:58,2017-01-19 00:08:30,Ospitalità a Milano fino al 5 febbraio ,,,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""19/01/2017"", ""descrizione"": ""Offro fino al 5 febbraio appartamento a Milano centro, tre camere da letto, 5 posti letto."", ""email"": ""elenadalpra@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3498043293""}","<pre><yamldata>tel: '3498043293'
+email: elenadalpra@gmail.com
+descrizione: 'Offro fino al 5 febbraio appartamento a Milano centro, tre camere da letto, 5 posti letto.'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 19/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1682,201723822,2017-01-18 23:37:53,2017-01-18 23:35:39,Offro alloggio a Giffoni Valle (Sa),,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""18/01/2017"", ""descrizione"": ""Offro alloggio a giffoni valle piana (sa) sei posti letto"", ""email"": ""xgarzia@hotmail.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3351591153""}","<pre><yamldata>tel: '3351591153'
 email: xgarzia@hotmail.it
 descrizione: 'Offro alloggio a giffoni valle piana (sa) sei posti letto'
@@ -1564,17 +1574,6 @@ descrizione: 'Per una famiglia terremotata stiamo cercando un appartamento in af
 indirizzo: 'Via Filippo Turati, Salaria, San Benedetto del Tronto, AP, Marche, 63074, Italia'
 lat: '42.9124055'
 lon: '13.8935711'
-link: ''
-immagine: ''
-data: 16/12/2016
-</yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1459,195983827,2017-01-05 21:53:31,2016-12-16 05:27:52,A #Treia (Mc) c'è bisogno di una roulotte,,,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Sisma Ottobre""]",,,"{""cosa"": ""Ruolotte"", ""data"": ""16/12/2016"", ""descrizione"": ""Sono \""terremotata\"" da Agosto e sto cercando disperatamente una ruolotte per tornare sul mio posto. Mi servirebbe piccola ma pulita. La prendo o a prezzo modico, in dono o anche in prestito. Zona Treia (MC). Grazie"", ""email"": ""pelange23@web.de"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3291693360""}","<pre><yamldata>tel: '3291693360'
-email: pelange23@web.de
-cosa: Ruolotte
-descrizione: 'Sono ""terremotata"" da Agosto e sto cercando disperatamente una ruolotte per tornare sul mio posto. Mi servirebbe piccola ma pulita. La prendo o a prezzo modico, in dono o anche in prestito. Zona Treia (MC). Grazie'
-indirizzo: ''
-lat: ''
-lon: ''
 link: ''
 immagine: ''
 data: 16/12/2016
