@@ -1,4 +1,14 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1794,201837755,2017-01-19 11:51:56,2017-01-19 11:46:11,Alloggio per 2 persone a Padova,45.58533,12.0536504,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""19/01/2017"", ""descrizione"": ""Mettiamo a disposizione a Trebaseleghe (PD) stanza con letto a una piazza e mezza in abitazione privata. Possiamo ospitare due persone."", ""email"": ""bonaldi.emanuele@gmail.com"", ""immagine"": """", ""indirizzo"": ""Via Marco Polo, Trebaseleghe, PD, Veneto, 30033, Italia"", ""lat"": ""45.58533"", ""link"": """", ""lon"": ""12.0536504"", ""tel"": ""3392477457""}","<pre><yamldata>tel: '3392477457'
+email: bonaldi.emanuele@gmail.com
+descrizione: 'Mettiamo a disposizione a Trebaseleghe (PD) stanza con letto a una piazza e mezza in abitazione privata. Possiamo ospitare due persone.'
+indirizzo: 'Via Marco Polo, Trebaseleghe, PD, Veneto, 30033, Italia'
+lat: '45.58533'
+lon: '12.0536504'
+link: ''
+immagine: ''
+data: 19/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1793,201836083,2017-01-19 11:51:06,2017-01-19 11:38:38,4 posti letto a Brindisi,,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""19/01/2017"", ""descrizione"": ""Dispongo di una casa vacanza con quattro posti letto, sita in Ceglie Messapica provincia Di Brindisi"", ""email"": ""gallonefederico@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3396517097""}","<pre><yamldata>tel: '3396517097'
 email: gallonefederico@gmail.com
 descrizione: 'Dispongo di una casa vacanza con quattro posti letto, sita in Ceglie Messapica provincia Di Brindisi'
@@ -5707,17 +5717,6 @@ lat: '42.8210425'
 lon: '12.9176291'
 link: 'https://www.facebook.com/groups/1758670357733881/permalink/1792004511067132/'
 immagine: ''
-data: 30/10/2016
-</yamldata></pre>
-",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/909,186134276,2016-10-30 13:02:40,2016-10-30 12:46:23,Psy+ Onlus: Rita Fiorentino e Patrizia Perrone,42.9415743,13.8828904,"[""Accettato"", ""Contatti"", ""Form""]",,,"{""data"": ""30/10/2016"", ""descrizione"": ""SUPPORTO PSICOLOGICO alle vittime del terremoto. Le due psicologhe Psy+ Onlus, presenti sul posto, sono affiancate altri due psicologi per poter ampliare il numero di professionisti data l'enorme crescita di richieste d'aiuto pervenuta in queste ore a seguito delle nuove scosse."", ""email"": """", ""indirizzo"": ""Via Golgi, Sant'Antonio, San Benedetto del Tronto, AP, Marche, 63074, Italia"", ""lat"": ""42.9415743"", ""link"": ""https://www.facebook.com/psyplus.org/"", ""lon"": ""13.8828904"", ""nome"": ""Psy+ Onlus: Rita Fiorentino e Patrizia Perrone"", ""tel"": ""3278825312""}","<pre><yamldata>nome: 'Psy+ Onlus: Rita Fiorentino e Patrizia Perrone'
-tel: '3278825312'
-email: ''
-descrizione: 'SUPPORTO PSICOLOGICO alle vittime del terremoto. Le due psicologhe Psy+ Onlus, presenti sul posto, sono affiancate altri due psicologi per poter ampliare il numero di professionisti data l''enorme crescita di richieste d''aiuto pervenuta in queste ore a seguito delle nuove scosse.'
-indirizzo: 'Via Golgi, Sant''Antonio, San Benedetto del Tronto, AP, Marche, 63074, Italia'
-lat: '42.9415743'
-lon: '13.8828904'
-link: 'https://www.facebook.com/psyplus.org/'
 data: 30/10/2016
 </yamldata></pre>
 ",open
