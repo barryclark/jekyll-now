@@ -6,8 +6,7 @@ published: true
 ---
 
 
-## ENFJ-A, "The Protagonist"
-_Myers-Briggs Personality Type_
+## ENFJ-A, "The Protagonist" - _Myers-Briggs Personality Type_
 
 ## **FUN FACT:**
 Protagonists are genuine, caring people who talk the talk and walk the walk, and nothing makes them happier than leading the charge, uniting and motivating their team with infectious enthusiasm.
@@ -22,9 +21,14 @@ _**ENFJ-A** (extraverted, intuitive, feeling, judging, assertive) are abbreviati
 
 	
 * Programming Languages:    
-		- HTML   		- jQuery  	- Git
-    	- CSS    		- PHP 		- Python
-        - Javascript 	- Lua 		- Ruby
+		- HTML   	
+        - CSS
+        - Javascript
+        - jQuery  
+        - PHP
+    	- Lua
+        - Python
+        - Ruby
     
 * Past Experience:    
 		- Agile ; SCRUM Development
