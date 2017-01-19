@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1919,201927931,2017-01-19 17:46:29,2017-01-19 17:42:14,Aiuto pulizia neve dalle strade,,,"[""Accettato"", ""Donazioni"", ""Facebook"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""Aiuto pulizia neve dalle strade"", ""data"": ""19/01/2017"", ""descrizione"": ""Mettiamo a disposizione uomini e mezzi per la rotta neve e pulizia aree per le zone terremotate: 338 333 9647 Miki 334 6778304 Sara"", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""https://www.facebook.com/groups/197031290730621/permalink/251223945311355/"", ""lon"": """", ""tel"": """"}","<pre><yamldata>tel: ''
+email: ''
+cosa: 'Aiuto pulizia neve dalle strade'
+descrizione: 'Mettiamo a disposizione uomini e mezzi per la rotta neve e pulizia aree per le zone terremotate: 338 333 9647 Miki 334 6778304 Sara'
+indirizzo: ''
+lat: ''
+lon: ''
+link: 'https://www.facebook.com/groups/197031290730621/permalink/251223945311355/'
+immagine: ''
+data: 19/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1918,201923452,2017-01-19 17:25:19,2017-01-19 17:23:55,Offresi 3 posti letto #Roma,41.8935085,12.4825526,"[""Accettato"", ""Alloggi"", ""Facebook"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""19/01/2017"", ""descrizione"": ""Metto a disposizione 3 posti letto a Roma. Contattatemi via facebook: Fabiola Lucidi."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Cordonata, Municipio Roma I, Roma, RM, Lazio, 00186, Italia"", ""lat"": ""41.8935085"", ""link"": ""https://www.facebook.com/profile.php?id=100010746691778&fref=nf"", ""lon"": ""12.4825526"", ""tel"": """"}","<pre><yamldata>tel: ''
 email: ''
 descrizione: 'Metto a disposizione 3 posti letto a Roma. Contattatemi via facebook: Fabiola Lucidi.'
@@ -39,7 +50,7 @@ link: ''
 immagine: 'http://i.imgur.com/gIFj2fF.jpg'
 data: 19/01/2017
 </yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1914,201919719,2017-01-19 17:14:31,2017-01-19 17:09:05,"OFFRESI COPERTE, CIBO UMIDO E SECCO PER CANI E GATTI, CUCCE",,,"[""Accettato"", ""Donazioni"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""OFFRESI COPERTE, CIBO UMIDO E SECCO PER CANI E GATTI, CUCCE"", ""data"": ""19/01/2017"", ""descrizione"": ""Siamo un canile in provincia di Torino: grazie alla generosit\u00e0 riscontrata in un nostro recente momento di bisogno, ora ci troviamo nelle condizioni di poter aiutare chi \u00e8 pi\u00f9 in difficolt\u00e0 di noi. Possiamo far pervenire cibo, coperte e cucce. L'unica nostra difficolt\u00e0 \u00e8 il non poter spedire utilizzando un corriere in quanto non riusciremmo ad imballare tutto affinch\u00e9 ci\u00f2 sia fattibile. La soluzione sarebbe trovare un punto raggiungibile, con viaggio andata e ritorno giornaliero, da furgone da noi noleggiato."", ""email"": ""blackangek76@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3457733132""}","<pre><yamldata>tel: '3457733132'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1914,201919719,2017-01-19 17:47:48,2017-01-19 17:09:05,"OFFRESI COPERTE, CIBO UMIDO E SECCO PER CANI E GATTI, CUCCE",,,"[""Accettato"", ""Donazioni"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""OFFRESI COPERTE, CIBO UMIDO E SECCO PER CANI E GATTI, CUCCE"", ""data"": ""19/01/2017"", ""descrizione"": ""Siamo un canile in provincia di Torino: grazie alla generosit\u00e0 riscontrata in un nostro recente momento di bisogno, ora ci troviamo nelle condizioni di poter aiutare chi \u00e8 pi\u00f9 in difficolt\u00e0 di noi. Possiamo far pervenire cibo, coperte e cucce. L'unica nostra difficolt\u00e0 \u00e8 il non poter spedire utilizzando un corriere in quanto non riusciremmo ad imballare tutto affinch\u00e9 ci\u00f2 sia fattibile. La soluzione sarebbe trovare un punto raggiungibile, con viaggio andata e ritorno giornaliero, da furgone da noi noleggiato."", ""email"": ""blackangek76@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3457733132""}","<pre><yamldata>tel: '3457733132'
 email: blackangek76@gmail.com
 cosa: 'OFFRESI COPERTE, CIBO UMIDO E SECCO PER CANI E GATTI, CUCCE'
 descrizione: 'Siamo un canile in provincia di Torino: grazie alla generosità riscontrata in un nostro recente momento di bisogno, ora ci troviamo nelle condizioni di poter aiutare chi è più in difficoltà di noi. Possiamo far pervenire cibo, coperte e cucce. L''unica nostra difficoltà è il non poter spedire utilizzando un corriere in quanto non riusciremmo ad imballare tutto affinché ciò sia fattibile. La soluzione sarebbe trovare un punto raggiungibile, con viaggio andata e ritorno giornaliero, da furgone da noi noleggiato.'
@@ -49,7 +60,7 @@ lon: ''
 link: ''
 immagine: ''
 data: 19/01/2017
-</yamldata></pre>",open
+</yamldata></pre>",closed
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1913,201919602,2017-01-19 17:12:21,2017-01-19 17:08:38,AGRIPUNK ONLUS adozione animali,43.4161428,11.6035176,"[""Accettato"", ""Alloggi"", ""Facebook"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""19/01/2017"", ""descrizione"": ""AGRIPUNK ONLUS: Se siete a conoscenza di allevatori, pastori e non che pur di salvare i propri animali dalla morsa del freddo e del terremoto cederebbero gratuitamente gli animali ad un rifugio oppure associazioni che cercano adozione per ovini, caprini, pennuti ecc vittime delle calamit\u00e0, per favore girategli i nostri contatti! Per motivazione etica offriamo adozione definitiva senza alcun scopo di lucro e non stallo provvisorio in modo da non proseguire con lo sfruttamento."", ""email"": ""agripunkonlus@gmail.com"", ""immagine"": """", ""indirizzo"": ""Via del Fossato, Podere Falceto, Bucine, AR, Tuscany, Italia"", ""lat"": ""43.4161428"", ""link"": ""https://www.facebook.com/agripunk.it/photos/a.372669699504838.1073741829.368980899873718/1019175724854229/?type=3"", ""lon"": ""11.6035176"", ""tel"": ""055996946""}","<pre><yamldata>tel: '055996946'
 email: agripunkonlus@gmail.com
 descrizione: 'AGRIPUNK ONLUS: Se siete a conoscenza di allevatori, pastori e non che pur di salvare i propri animali dalla morsa del freddo e del terremoto cederebbero gratuitamente gli animali ad un rifugio oppure associazioni che cercano adozione per ovini, caprini, pennuti ecc vittime delle calamità, per favore girategli i nostri contatti! Per motivazione etica offriamo adozione definitiva senza alcun scopo di lucro e non stallo provvisorio in modo da non proseguire con lo sfruttamento.'
@@ -57,6 +68,28 @@ indirizzo: 'Via del Fossato, Podere Falceto, Bucine, AR, Tuscany, Italia'
 lat: '43.4161428'
 lon: '11.6035176'
 link: 'https://www.facebook.com/agripunk.it/photos/a.372669699504838.1073741829.368980899873718/1019175724854229/?type=3'
+immagine: ''
+data: 19/01/2017
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1910,201913302,2017-01-19 17:48:38,2017-01-19 16:45:03,Posto letto per una persona #Milano,,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""offro posto letto per una persona, Milano"", ""data"": ""19/01/2017"", ""descrizione"": ""Abito a Milano citt\u00e0, l'appartamento \u00e8 piccolino ma sarei felice di poter ospitare una persona (divano letto). Elisabetta (47 anni)"", ""email"": ""elisabetta.demartin@sudler.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""349.2895637""}","<pre><yamldata>tel: '349.2895637'
+email: elisabetta.demartin@sudler.com
+cosa: 'offro posto letto per una persona, Milano'
+descrizione: 'Abito a Milano città, l''appartamento è piccolino ma sarei felice di poter ospitare una persona (divano letto). Elisabetta (47 anni)'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 19/01/2017
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1909,201913039,2017-01-19 17:47:11,2017-01-19 16:44:09,"COPERTE, CUCCE, CIBO SECCO E UMIDO PER CANI E GATTI",,,"[""Accettato"", ""Donazioni"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""COPERTE, CUCCE, CIBO SECCO E UMIDO PER CANI E GATTI"", ""data"": ""19/01/2017"", ""descrizione"": ""Siamo un canile in provincia di Torino. A seguito di alluvione, il grande cuore della gente ci ha donato veramente tanto e adesso abbiamo la possibilit\u00e0 di condividere questi aiuti con chi ora ha pi\u00f9 bisogno di noi. Coperte, cucce e cibo. Il nostro problema \u00e8 farveli arrivare. Spedirle con corriere significa riuscire ad imballare tutto, cosa problematica, ma se trovassimo invece un punto di raccolta raggiungibile da noi in modo da fare andata e ritorno in giornata noleggiando un furgone sarebbe fantastico."", ""email"": ""blackangek76@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": """"}","<pre><yamldata>tel: ''
+email: blackangek76@gmail.com
+cosa: 'COPERTE, CUCCE, CIBO SECCO E UMIDO PER CANI E GATTI'
+descrizione: 'Siamo un canile in provincia di Torino. A seguito di alluvione, il grande cuore della gente ci ha donato veramente tanto e adesso abbiamo la possibilità di condividere questi aiuti con chi ora ha più bisogno di noi. Coperte, cucce e cibo. Il nostro problema è farveli arrivare. Spedirle con corriere significa riuscire ad imballare tutto, cosa problematica, ma se trovassimo invece un punto di raccolta raggiungibile da noi in modo da fare andata e ritorno in giornata noleggiando un furgone sarebbe fantastico.'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
 immagine: ''
 data: 19/01/2017
 </yamldata></pre>",open
