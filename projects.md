@@ -7,6 +7,8 @@ published: true
 
 ## 2016-2017 Projects (Source Code Links)
 
+Welcome to my website where you can view my skills and some of my work (source code is provided on GitHub). If you have any questions feel free to contact me.
+
 
 ---------
 
@@ -30,7 +32,7 @@ published: true
 ---------
     
   ✔ 3. **BalloonTap** - Game made with Lua, Corona SDK
-  |   [**View on GitHub**](https://github.com/emilypmendez/TipCalc)
+  [**View on GitHub**](https://github.com/emilypmendez/TipCalc)
 
 > ![]({{site.baseurl}}/emilypmendez.github.io/images/sbs-balloon-0.png)
   
@@ -38,23 +40,25 @@ published: true
 ---------
   
   
-  ✔ 4. **Website Login System** - Built with PHP  |  [**View on GitHub**](https://github.com/emilypmendez/php-login)
+  ✔ 4. **Website Login System** - Built with PHP
+  [**View on GitHub**](https://github.com/emilypmendez/php-login)
   
   
 ---------
 
     
-  ✔ 5. **MemoryKeeper** - HTML, CSS, and Javascript |  [**View on GitHub**](https://github.com/emilypmendez/MemoryKeeper)
+  ✔ 5. **MemoryKeeper** - HTML, CSS, and Javascript
+  [**View on GitHub**](https://github.com/emilypmendez/MemoryKeeper)
   
   
 ---------
 
 
-  ✔ 6. **PriorityApp** - Built with Javascript and PHP  |  [**View on GitHub**](https://github.com/emilypmendez/PriorityApp)
+  ✔ 6. **PriorityApp** - Built with Javascript and PHP
+  [**View on GitHub**](https://github.com/emilypmendez/PriorityApp)
   
   
-  Try the app using Invision Software! Click here:   
-  [Prototype App](https://projects.invisionapp.com/static-signed/live-embed/127470428/183406726/1/latest/TNwSXy8641hvCnQUIoNiRd9NqTADfZj1LRqlEJaHlESZzlEkzrX9TBs7rRElEuXw41wyA6C2wYPklELtnGlEPf354KwlE/the-fun-life-app-project-HOME.png)
+  Try the app using Invision Software! Click here: [Prototype App](https://projects.invisionapp.com/static-signed/live-embed/127470428/183406726/1/latest/TNwSXy8641hvCnQUIoNiRd9NqTADfZj1LRqlEJaHlESZzlEkzrX9TBs7rRElEuXw41wyA6C2wYPklELtnGlEPf354KwlE/the-fun-life-app-project-HOME.png)
   
   
 ---------
