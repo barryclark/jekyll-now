@@ -1,4 +1,14 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1851,201865315,2017-01-19 13:50:00,2017-01-19 13:48:28,Casa vicino a #Roma,41.55212493419297,12.543672323226929,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""19/01/2017"", ""descrizione"": ""Metto a disposizione per una famiglia con bambini, casa al mare nei pressi di Roma. Localit\u00e0 Ardea Tor San Lorenzo"", ""email"": ""MARCODIBIAGIO@TISCALI.IT"", ""immagine"": """", ""indirizzo"": ""Via Elena, Marina di Tor San Lorenzo, Ardea, RM, Lazio, Italy"", ""lat"": ""41.55212493419297"", ""link"": """", ""lon"": ""12.543672323226929"", ""tel"": ""3925442645""}","<pre><yamldata>tel: '3925442645'
+email: MARCODIBIAGIO@TISCALI.IT
+descrizione: 'Metto a disposizione per una famiglia con bambini, casa al mare nei pressi di Roma. Località Ardea Tor San Lorenzo'
+indirizzo: 'Via Elena, Marina di Tor San Lorenzo, Ardea, RM, Lazio, Italy'
+lat: '41.55212493419297'
+lon: '12.543672323226929'
+link: ''
+immagine: ''
+data: 19/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1850,201863778,2017-01-19 13:42:06,2017-01-19 13:41:36,Camper per Continuità Assistenziale #Cascia,42.7170082,13.0135022,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""Camper per Continuit\u00e0 Assistenziale #Cascia"", ""data"": ""19/01/2017"", ""descrizione"": ""Dopo le ultime forti scosse del 18 gennaio si richiede un camper per poter garantire un adeguato servizio di continuit\u00e0 assistenziale (ex guardia medica) nella sede di Cascia. Sarebbe opportuno per poter permettere al personale medico di poter svolgere il proprio lavoro in tranquillit\u00e0 e lavorare serenamente dal punto di vista nervoso. Contattare il dott. Cariani."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Largo Monsignor Antonio Elemosina, Cascia, PG, UMB, 06043, Italia"", ""lat"": ""42.7170082"", ""link"": """", ""lon"": ""13.0135022"", ""tel"": ""3383202296""}","<pre><yamldata>tel: '3383202296'
 email: ''
 cosa: 'Camper per Continuità Assistenziale #Cascia'
@@ -56,6 +66,16 @@ lat: ''
 lon: ''
 link: ''
 immagine: 'http://i.imgur.com/ktQ23el.jpg'
+data: 19/01/2017
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1842,201856314,2017-01-19 13:50:07,2017-01-19 13:07:08,Offro camera tripla a Roma,,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""19/01/2017"", ""descrizione"": ""offro camera tripla, anche con possibilit\u00e0 di culla, nel mio appartamento in Roma - Prati, appartamento al primo piano con ascensore, bagno a disposizione (la casa dispone di due bagni), cucina abitabile e soggiorno. sono una signora di 63 anni che vive sola. In grado di fornire anche assistenza anziani se necessario."", ""email"": ""maria.tecchi@fastwebnet.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""333 4227935""}","<pre><yamldata>tel: '333 4227935'
+email: maria.tecchi@fastwebnet.it
+descrizione: 'offro camera tripla, anche con possibilità di culla, nel mio appartamento in Roma - Prati, appartamento al primo piano con ascensore, bagno a disposizione (la casa dispone di due bagni), cucina abitabile e soggiorno. sono una signora di 63 anni che vive sola. In grado di fornire anche assistenza anziani se necessario.'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
 data: 19/01/2017
 </yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1828,201854012,2017-01-19 13:48:11,2017-01-19 12:56:14,Offro stallo animali domestici e padroni #Canossa,44.5383549,10.4157866,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""Offro stallo animali domestici"", ""data"": ""19/01/2017"", ""descrizione"": ""A Trinit\u00e0 di Canossa (Reggio Emilia) Offro stallo a cani, gatti, furetti, conigli, cavie o qualsiasi altro animale previo accordi. Abito in campagna. Offro anche alloggio ai proprietari che non vogliono separarsi dai loro animali, ho due posti letto + una culla/lettino."", ""email"": ""elena_lasagni@virgilio.it"", ""immagine"": """", ""indirizzo"": ""SP79, Canossa, RE, EMR, 42026, Italia"", ""lat"": ""44.5383549"", ""link"": """", ""lon"": ""10.4157866"", ""tel"": ""3389919241""}","<pre><yamldata>tel: '3389919241'
@@ -8265,14 +8285,6 @@ https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/566,1775635
 descrizione: 'L''Università di Parma esonera dal pagamento delle tasse gli studenti delle zone colpite dal terremoto. Al link tutte le info.'
 link: 'http://www.unipr.it/notizie/terremoto-luniversita-di-parma-esonerera-delle-tasse-gli-studenti-delle-zone-colpite'
 data: 17/09/2016
-</yamldata></pre>
-",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/565,177527784,2016-09-17 13:24:17,2016-09-16 21:50:14,"Chiesa del SS. Sacramento, Grottazzolina",43.110992,13.600152,"[""Accettato"", ""Telegram""]",,http://i.imgur.com/6grbiw8.jpg,"{""data"": ""16/09/2016"", ""descrizione"": ""Chiesa del SS. Sacramento, Grottazzolina"", ""immagine"": ""http://i.imgur.com/6grbiw8.jpg"", ""lat"": ""43.110992"", ""lon"": ""13.600152"", ""telegram_user"": ""MarcoAlici""}","<pre><yamldata>telegram_user: MarcoAlici
-descrizione: 'Chiesa del SS. Sacramento, Grottazzolina'
-immagine: 'http://i.imgur.com/6grbiw8.jpg'
-lat: '43.110992'
-lon: '13.600152'
-data: 16/09/2016
 </yamldata></pre>
 ",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/565,177527784,2016-09-17 13:24:17,2016-09-16 21:50:14,"Chiesa del SS. Sacramento, Grottazzolina",43.110992,13.600152,"[""Accettato"", ""Telegram""]",,http://i.imgur.com/6grbiw8.jpg,"{""data"": ""16/09/2016"", ""descrizione"": ""Chiesa del SS. Sacramento, Grottazzolina"", ""immagine"": ""http://i.imgur.com/6grbiw8.jpg"", ""lat"": ""43.110992"", ""lon"": ""13.600152"", ""telegram_user"": ""MarcoAlici""}","<pre><yamldata>telegram_user: MarcoAlici
