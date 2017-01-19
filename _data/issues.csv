@@ -256,6 +256,16 @@ link: 'https://www.google.it/maps/@43.4209426,11.1120481,17z?hl=it'
 immagine: ''
 data: 19/01/2017
 </yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1804,201847268,2017-01-19 14:34:47,2017-01-19 12:28:10,Offresi camera matrimoniale vicino a Colle Val d'Elsa,43.42098405,11.114204049003,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""19/01/2017"", ""descrizione"": ""Comune di Colle Val d'Elsa (Siena) - disponibile una camera con 2 letti singoli/1 matrimoniale, comoda per 2 adulti anche con 1/2 bambini piccoli."", ""email"": ""primodipalo@gmail.com"", ""immagine"": """", ""indirizzo"": ""Piazza Bajos, Localit\u00e0 Le Mosse, Il Poggino, Colle di Val d'Elsa, SI, Tuscany, 53034, Italia"", ""lat"": ""43.42098405"", ""link"": """", ""lon"": ""11.114204049003"", ""tel"": ""347 40 14 376""}","<pre><yamldata>tel: '347 40 14 376'
+email: primodipalo@gmail.com
+descrizione: 'Comune di Colle Val d''Elsa (Siena) - disponibile una camera con 2 letti singoli/1 matrimoniale, comoda per 2 adulti anche con 1/2 bambini piccoli.'
+indirizzo: 'Piazza Bajos, Località Le Mosse, Il Poggino, Colle di Val d''Elsa, SI, Tuscany, 53034, Italia'
+lat: '43.42098405'
+lon: '11.114204049003'
+link: ''
+immagine: ''
+data: 19/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1799,201842248,2017-01-19 13:48:11,2017-01-19 12:07:22,"Università di #Teramo: sedi chiuse fino al 21 gennaio, attivato centro di accoglienza studenti",,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili"", ""Sisma Gennaio 2017""]",,,"{""data"": ""19/01/2017"", ""descrizione"": ""Universit\u00e0 di Teramo chiusa fino al 21 gennaio. Ospedale veterinario di Piano D'Accio \u00e8 centro di Accoglienza per studenti e dottorandi."", ""link"": ""http://www.unite.it/UniTE/Engine/RAServePG.php/P/364621UTE0400"", ""titolo"": ""AGGIORNAMENTO: SEDI CHIUSE FINO AL 21 GENNAIO #Teramo""}","<pre><yamldata>titolo: 'AGGIORNAMENTO: SEDI CHIUSE FINO AL 21 GENNAIO #Teramo'
 descrizione: 'Università di Teramo chiusa fino al 21 gennaio. Ospedale veterinario di Piano D''Accio è centro di Accoglienza per studenti e dottorandi.'
 link: 'http://www.unite.it/UniTE/Engine/RAServePG.php/P/364621UTE0400'
@@ -6478,6 +6488,12 @@ link: 'http://www.corrierenazionale.it/2016/10/24/terremoto-donazioni-italiani/'
 data: 24/10/2016
 </yamldata></pre>
 ",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/838,184904784,2016-10-24 17:31:13,2016-10-24 17:30:49,"Terremoto, donano quasi 3 italiani su 4. L'indagine di Coldiretti a due mesi dal sisma",,,"[""Accettato"", ""Bollettino"", ""Notizie Utili"", ""Twitter""]",,,"{""data"": ""24/10/2016"", ""descrizione"": ""Nei due mesi trascorsi dal terremoto in Centro Italia, quasi tre italiani su quattro (74%) hanno partecipato ad iniziative di solidariet\u00e0. \u00c8 quanto emerge da una analisi Coldiretti/Ix\u00e8. Ben il 42% degli italiani ha effettuato donazioni con SMS o su conto corrente, il 19% tramite associazioni e ben il 13% mangiando l\u2019amatriciana nei luoghi che hanno aderito all\u2019iniziativa di sostegno che si \u00e8 estesa anche all\u2019estero."", ""link"": ""http://www.corrierenazionale.it/2016/10/24/terremoto-donazioni-italiani/"", ""titolo"": ""Terremoto, donano quasi 3 italiani su 4. L'indagine di Coldiretti a due mesi dal sisma""}","<pre><yamldata>titolo: 'Terremoto, donano quasi 3 italiani su 4. L''indagine di Coldiretti a due mesi dal sisma'
+descrizione: 'Nei due mesi trascorsi dal terremoto in Centro Italia, quasi tre italiani su quattro (74%) hanno partecipato ad iniziative di solidarietà. È quanto emerge da una analisi Coldiretti/Ixè. Ben il 42% degli italiani ha effettuato donazioni con SMS o su conto corrente, il 19% tramite associazioni e ben il 13% mangiando l’amatriciana nei luoghi che hanno aderito all’iniziativa di sostegno che si è estesa anche all’estero.'
+link: 'http://www.corrierenazionale.it/2016/10/24/terremoto-donazioni-italiani/'
+data: 24/10/2016
+</yamldata></pre>
+",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/837,184900777,2016-10-24 17:14:01,2016-10-24 17:13:11,"""La rinascita ha il cuore giovane"". Contributi per giovani imprenditori delle zone colpite dal sisma",,,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Notizie Utili"", ""Pubblicare su FB"", ""Twitter""]",,,"{""cosa"": ""\""La rinascita ha il cuore giovane\"". Contributi per giovani imprenditori delle zone colpite dal sisma"", ""data"": ""24/10/2016"", ""descrizione"": ""Grazie alla campagna di raccolta fondi \""La rinascita ha il cuore giovane\"", promossa da Legambiente, Libera, Alce Nero, Alleanza Cooperative Italiane Giovani, Altromercato, Federparchi e Fondazione Symbola, giovani imprenditori delle zone colpite dal sisma del 24 agosto possono richiedere contributi economici fino a 5mila euro. Moduli e ulteriori informazioni sul sito della campagna."", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""http://rinascitacuoregiovane.it/come-richiedere-il-contributo/"", ""lon"": """", ""tel"": """"}","<pre><yamldata>tel: ''
 email: ''
 cosa: '""La rinascita ha il cuore giovane"". Contributi per giovani imprenditori delle zone colpite dal sisma'
@@ -8902,18 +8918,6 @@ indirizzo: ''
 lat: ''
 lon: ''
 link: 'http://www.arquatadeltronto.com/it/news/610-cercasi-container-per-stoccaggio-materiali.html'
-immagine: ''
-data: 16/09/2016
-</yamldata></pre>
-",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/512,177454003,2016-11-26 00:05:18,2016-09-16 15:27:50,Consorzio Pecorino Monti della Laga cerca punti vendita per commercializzare prodotti caseari,,,"[""Accettato"", ""acquisto solidale""]",,,"{""cosa"": ""Punti vendita per commercializzare prodotti caseari."", ""data"": ""16/09/2016"", ""descrizione"": ""Consorzio di tutela \""L\u2019Amatriciano: il Pecorino dei Monti della Laga\u201d cerca punti vendita in tutta Italia per commercializzare prodotti caseari di aziende colpite dal sisma"", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""https://postribu.net/2016/09/05/sos-pecorino-di-amatrice-acquisto-solidale/"", ""lon"": """", ""tel"": """"}","<pre><yamldata>tel: ''
-email: ''
-cosa: 'Punti vendita per commercializzare prodotti caseari.'
-descrizione: 'Consorzio di tutela ""L’Amatriciano: il Pecorino dei Monti della Laga” cerca punti vendita in tutta Italia per commercializzare prodotti caseari di aziende colpite dal sisma'
-indirizzo: ''
-lat: ''
-lon: ''
-link: 'https://postribu.net/2016/09/05/sos-pecorino-di-amatrice-acquisto-solidale/'
 immagine: ''
 data: 16/09/2016
 </yamldata></pre>
