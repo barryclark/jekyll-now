@@ -1,4 +1,14 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1916,201921289,2017-01-19 17:20:58,2017-01-19 17:15:26,Offresi monolocale a #Savona,44.3381826,8.5098994,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,http://i.imgur.com/JjJfJSd.jpg,"{""data"": ""19/01/2017"", ""descrizione"": ""Offro monolocale sito in Savona per coppia + eventuale bambino piccolo per qualche giorno."", ""email"": ""lorenzo.valenza@gmail.com"", ""immagine"": ""http://i.imgur.com/JjJfJSd.jpg"", ""indirizzo"": ""Via Turati, Albisola Capo, Albisola Superiore, SV, Liguria, 17011, Italia"", ""lat"": ""44.3381826"", ""link"": """", ""lon"": ""8.5098994"", ""tel"": ""3355651812""}","<pre><yamldata>tel: '3355651812'
+email: lorenzo.valenza@gmail.com
+descrizione: 'Offro monolocale sito in Savona per coppia + eventuale bambino piccolo per qualche giorno.'
+indirizzo: 'Via Turati, Albisola Capo, Albisola Superiore, SV, Liguria, 17011, Italia'
+lat: '44.3381826'
+lon: '8.5098994'
+link: ''
+immagine: 'http://i.imgur.com/JjJfJSd.jpg'
+data: 19/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1915,201920512,2017-01-19 17:13:22,2017-01-19 17:12:27,Offro una camera matrimoniale a #Fiumicino,41.915922,12.210907947173,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,http://i.imgur.com/gIFj2fF.jpg,"{""data"": ""19/01/2017"", ""descrizione"": ""Offro una camera matrimoniale con bagno privato annesso, perfetta privacy. Televisione e wifi. Dividerete con me spazio comune cucina e salone. La mia abitazione \u00e8 in un casale vicino al mare di Roma, localit\u00e0 MACCARESE, comune di Fiumicino. Ci sono tutti i servizi in zona, \u00e8 preferibile avere proprio mezzo di trasporto. La stazione ferroviaria \u00e8 a 3 km., il treno in 10 minuti porta al centro di Roma. Purtroppo non posso accogliere animali perch\u00e8 ho gi\u00e0 un cane, grande, e c'\u00e8 una colonia felina. Se desiderate un p\u00f2 di tranquillit\u00e0 \u00e8 il posto ideale. Marcella"", ""email"": ""marcellanardire@gmail.com"", ""immagine"": ""http://i.imgur.com/gIFj2fF.jpg"", ""indirizzo"": ""Via Aurelia, Torrimpietra, Fiumicino, RM, Lazio, 2378, Italia"", ""lat"": ""41.915922"", ""link"": """", ""lon"": ""12.210907947173"", ""tel"": ""335255153""}","<pre><yamldata>tel: '335255153'
 email: marcellanardire@gmail.com
 descrizione: 'Offro una camera matrimoniale con bagno privato annesso, perfetta privacy. Televisione e wifi. Dividerete con me spazio comune cucina e salone. La mia abitazione è in un casale vicino al mare di Roma, località MACCARESE, comune di Fiumicino. Ci sono tutti i servizi in zona, è preferibile avere proprio mezzo di trasporto. La stazione ferroviaria è a 3 km., il treno in 10 minuti porta al centro di Roma. Purtroppo non posso accogliere animali perchè ho già un cane, grande, e c''è una colonia felina. Se desiderate un pò di tranquillità è il posto ideale. Marcella'
@@ -2684,6 +2694,16 @@ postale: ''
 causale: ''
 link: 'https://www.facebook.com/groups/1758670357733881/permalink/1807404969527086/?match=dGVycmVtb3RvY2VudHJvaXRhbGlhLG1hcmlldmE%3D'
 email: ''
+data: 03/12/2016
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1411,193278437,2016-12-03 18:40:29,2016-12-03 10:03:52,Associazione Intercomunale di Protezione Civile #Valnerina #Norcia,42.780409307185934,13.099082708358765,"[""Accettato"", ""Bollettino"", ""Contatti"", ""Form"", ""Sisma Ottobre""]",,,"{""data"": ""03/12/2016"", ""descrizione"": ""L'associazione interviene a sostegno delle popolazioni colpite da disastri naturali. Il Presidente Antonio Duca - 3292985691, \u00e8 anche referente per gli aiuti per le aziende agricole, come ad es. le stalle provvisorie. I referenti che gestiscono il magazzino degli aiuti per il terremoto sono Angelo Cambi - 329 2985670 e Giorgio Iorio - 3202198705."", ""email"": ""procivilevalnerina@gmail.com"", ""indirizzo"": ""Viale della Stazione, Madonnabella, Norcia, PG, UMB, 06046, Italia"", ""lat"": ""42.780409307185934"", ""link"": ""https://www.facebook.com/ProtCivValnerinaNorcia/"", ""lon"": ""13.099082708358765"", ""nome"": ""Associazione Intercomunale di Protezione Civile Valnerina Norcia"", ""tel"": ""3292985670""}","<pre><yamldata>nome: 'Associazione Intercomunale di Protezione Civile Valnerina Norcia'
+tel: '3292985670'
+email: procivilevalnerina@gmail.com
+descrizione: 'L''associazione interviene a sostegno delle popolazioni colpite da disastri naturali. Il Presidente Antonio Duca - 3292985691, è anche referente per gli aiuti per le aziende agricole, come ad es. le stalle provvisorie. I referenti che gestiscono il magazzino degli aiuti per il terremoto sono Angelo Cambi - 329 2985670 e Giorgio Iorio - 3202198705.'
+indirizzo: 'Viale della Stazione, Madonnabella, Norcia, PG, UMB, 06046, Italia'
+lat: '42.780409307185934'
+lon: '13.099082708358765'
+link: 'https://www.facebook.com/ProtCivValnerinaNorcia/'
 data: 03/12/2016
 </yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1411,193278437,2016-12-03 18:40:29,2016-12-03 10:03:52,Associazione Intercomunale di Protezione Civile #Valnerina #Norcia,42.780409307185934,13.099082708358765,"[""Accettato"", ""Bollettino"", ""Contatti"", ""Form"", ""Sisma Ottobre""]",,,"{""data"": ""03/12/2016"", ""descrizione"": ""L'associazione interviene a sostegno delle popolazioni colpite da disastri naturali. Il Presidente Antonio Duca - 3292985691, \u00e8 anche referente per gli aiuti per le aziende agricole, come ad es. le stalle provvisorie. I referenti che gestiscono il magazzino degli aiuti per il terremoto sono Angelo Cambi - 329 2985670 e Giorgio Iorio - 3202198705."", ""email"": ""procivilevalnerina@gmail.com"", ""indirizzo"": ""Viale della Stazione, Madonnabella, Norcia, PG, UMB, 06046, Italia"", ""lat"": ""42.780409307185934"", ""link"": ""https://www.facebook.com/ProtCivValnerinaNorcia/"", ""lon"": ""13.099082708358765"", ""nome"": ""Associazione Intercomunale di Protezione Civile Valnerina Norcia"", ""tel"": ""3292985670""}","<pre><yamldata>nome: 'Associazione Intercomunale di Protezione Civile Valnerina Norcia'
@@ -10866,6 +10886,18 @@ immagine: ''
 data: 14/09/2016
 </yamldata></pre>
 ",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/307,176951458,2016-09-20 14:41:46,2016-09-14 16:13:17,ARCI Nazionale,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""cosa"": ""ARCI Nazionale"", ""data"": ""14/09/2016"", ""descrizione"": ""Arci nazionale ha attivato un progetto di crowdfunding specifico per il Bibliobus, \""\""BIBLIOBUS ARCI \u2013 La Cultura per la Ricostruzione\""\"". Cosa finanzieremo con i fondi raccolti - Assicurazione autobus e volontari - Revisione autobus - Combustibile - Spese di gestione - Attivit\u00e0 itineranti (presentazioni con autori, iniziative pubbliche, etc.) - Acquisto nuovi libri - Abbonamenti a riviste e quotidiani - Acquisto di attrezzatura minuta (sedie, tavolino, ombrellone etc..)"", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""https://www.produzionidalbasso.com/project/bibliobus-arci-la-cultura-per-la-ricostruzione/"", ""lon"": """", ""tel"": """"}","<pre><yamldata>tel: ''
+email: ''
+cosa: 'ARCI Nazionale'
+descrizione: 'Arci nazionale ha attivato un progetto di crowdfunding specifico per il Bibliobus, """"BIBLIOBUS ARCI – La Cultura per la Ricostruzione"""". Cosa finanzieremo con i fondi raccolti - Assicurazione autobus e volontari - Revisione autobus - Combustibile - Spese di gestione - Attività itineranti (presentazioni con autori, iniziative pubbliche, etc.) - Acquisto nuovi libri - Abbonamenti a riviste e quotidiani - Acquisto di attrezzatura minuta (sedie, tavolino, ombrellone etc..)'
+indirizzo: ''
+lat: ''
+lon: ''
+link: 'https://www.produzionidalbasso.com/project/bibliobus-arci-la-cultura-per-la-ricostruzione/'
+immagine: ''
+data: 14/09/2016
+</yamldata></pre>
+",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/306,176951262,2016-09-23 22:13:20,2016-09-14 16:12:30,Fondazione Triulza,45.483243508682186,9.129638671875,"[""Accettato"", ""Donazioni"", ""Form""]",,,"{""cosa"": ""Fondazione Triulza"", ""data"": ""14/09/2016"", ""descrizione"": ""Bandi per il riutilizzo di alcuni beni mobili di Expo Milano 2015 Potranno fare richiesta enti pubblici e organizzazioni del terzo settore (scadenza 20 settembre 2016)."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Via Diomede, Municipio 7, Milano, MI, Lombardia, 20148, Italia"", ""lat"": ""45.483243508682186"", ""link"": ""http://www.fondazionetriulza.org/it/news/2016/07/22/bandi-per-il-riutilizzo-di-alcuni-beni-mobili-di-expo-milano-2015/3674/"", ""lon"": ""9.129638671875"", ""tel"": """"}","<pre><yamldata>tel: ''
 email: ''
 cosa: 'Fondazione Triulza'
@@ -11574,18 +11606,6 @@ bic: ''
 postale: ''
 causale: ''
 link: 'http://www.umbriadomani.it/umbria-in-pillole/spello-raccolta-fondi-durante-il-concerto-di-gianna-nannini-105078/'
-email: ''
-data: 14/09/2016
-</yamldata></pre>
-",closed
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/244,176849163,2016-09-14 08:46:59,2016-09-14 08:44:48,Il Jazz italiano per Amatrice e per gli altri territori colpiti dal sisma,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Il Jazz italiano per Amatrice e per gli altri territori colpiti dal sisma"", ""data"": ""14/09/2016"", ""descrizione"": ""4 settembre: I musicisti si esibiranno gratuitamente e i presenti potranno partecipare all\u2019iniziativa di una campagna di crowdfunding nazionale e di un sms per raccogliere fondi destinati al restauro e alla riapertura del Cinema Teatro Comunale \u201cGiuseppe Garibaldi\u201d di Amatrice. Due grandi eventi con numerosi concerti in tutta Italia caratterizzeranno la giornata: alla Casa del Jazz a Roma, dalla mattina al tardo pomeriggio, e in serata a l\u2019Aquila nel piazzale adiacente la Basilica di Santa Maria di Collemaggio. Informazioni: 0862 645259 / 055 240397\"""", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""http://www.diregiovani.it/2016/08/30/49317-terremoto-jazz-italiano-amatrice.dg/"", ""postale"": """"}","<pre><yamldata>chi: 'Il Jazz italiano per Amatrice e per gli altri territori colpiti dal sisma'
-descrizione: '4 settembre: I musicisti si esibiranno gratuitamente e i presenti potranno partecipare all’iniziativa di una campagna di crowdfunding nazionale e di un sms per raccogliere fondi destinati al restauro e alla riapertura del Cinema Teatro Comunale “Giuseppe Garibaldi” di Amatrice. Due grandi eventi con numerosi concerti in tutta Italia caratterizzeranno la giornata: alla Casa del Jazz a Roma, dalla mattina al tardo pomeriggio, e in serata a l’Aquila nel piazzale adiacente la Basilica di Santa Maria di Collemaggio. Informazioni: 0862 645259 / 055 240397""'
-intestazione: ''
-iban: ''
-bic: ''
-postale: ''
-causale: ''
-link: 'http://www.diregiovani.it/2016/08/30/49317-terremoto-jazz-italiano-amatrice.dg/'
 email: ''
 data: 14/09/2016
 </yamldata></pre>
