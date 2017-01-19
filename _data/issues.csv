@@ -1,4 +1,14 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1760,201819365,2017-01-19 10:29:40,2017-01-19 10:26:40,Il team Airbnb che si occupa d,,,"[""Accettato"", ""Alloggi"", ""Bollettino"", ""Facebook"", ""Form"", ""Notizie Utili"", ""Sisma Gennaio 2017""]",,,"{""data"": ""19/01/2017"", ""descrizione"": ""Il team Airbnb che si occupa di emergenze ha appena attivato il programma di risposta alle catastrofi/sistemazioni urgenti per le zone colpite in queste ore, attraverso cui chi possiede una stanza o una casa da affittare pu\u00f2 farlo gratuitamente in aiuto alle persone colpite. Tutti i costi del servizio sono annullati. Nelle prossime ore gli iscritti saranno avvisati dell'attivazione del tool. Info: https://www.airbnb.it/disaster/italy"", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""https://www.airbnb.it/disaster/italy"", ""lon"": """", ""tel"": """"}","<pre><yamldata>tel: ''
+email: ''
+descrizione: 'Il team Airbnb che si occupa di emergenze ha appena attivato il programma di risposta alle catastrofi/sistemazioni urgenti per le zone colpite in queste ore, attraverso cui chi possiede una stanza o una casa da affittare può farlo gratuitamente in aiuto alle persone colpite. Tutti i costi del servizio sono annullati. Nelle prossime ore gli iscritti saranno avvisati dell''attivazione del tool. Info: https://www.airbnb.it/disaster/italy'
+indirizzo: ''
+lat: ''
+lon: ''
+link: 'https://www.airbnb.it/disaster/italy'
+immagine: ''
+data: 19/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1737,201809264,2017-01-19 09:53:57,2017-01-19 09:44:51,Offresi alloggio per 2 adulti ,,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""19/01/2017"", ""descrizione"": ""Offresi alloggio per 2 adulti con bambini. Siamo famiglia con bambina di 6 anni a Firenze. Offriamo condivisione della casa con stanza privata e bagno privato."", ""email"": ""paola.simonetti@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3384098231""}","<pre><yamldata>tel: '3384098231'
 email: paola.simonetti@gmail.com
 descrizione: 'Offresi alloggio per 2 adulti con bambini. Siamo famiglia con bambina di 6 anni a Firenze. Offriamo condivisione della casa con stanza privata e bagno privato.'
@@ -1590,11 +1600,6 @@ lon: '13.2965826'
 link: 'http://www.arquataviva.it'
 data: 22/12/2016
 </yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1482,197203875,2017-01-16 15:54:42,2016-12-22 15:50:32,Il 23 dicembre riapre la Strada #Valnerina,,,"[""Accettato"", ""Bollettino"", ""Notizie Utili"", ""Sisma Ottobre""]",,,"{""data"": ""22/12/2016"", ""descrizione"": ""\u201cRiaprir\u00e0 il prossimo 23 dicembre, a senso unico alternato, la strada 209 Valnerina chiusa a seguito del sisma, sar\u00e0 cos\u00ec pi\u00f9 agevole raggiungere le zone colpite dal terremoto\u201d: lo annuncia l\u2019assessore regionale alla viabilit\u00e0 Giuseppe Chianella."", ""link"": ""http://www.valnerinaoggi.it/norcia/terremoto-23-dicembre-riapre-strada-valnerina-chiusa-sisma-6183/"", ""titolo"": ""Il 23 dicembre riapre la Strada #Valnerina""}","<pre><yamldata>titolo: 'Il 23 dicembre riapre la Strada #Valnerina'
-descrizione: '“Riaprirà il prossimo 23 dicembre, a senso unico alternato, la strada 209 Valnerina chiusa a seguito del sisma, sarà così più agevole raggiungere le zone colpite dal terremoto”: lo annuncia l’assessore regionale alla viabilità Giuseppe Chianella.'
-link: 'http://www.valnerinaoggi.it/norcia/terremoto-23-dicembre-riapre-strada-valnerina-chiusa-sisma-6183/'
-data: 22/12/2016
-</yamldata></pre>",closed
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1482,197203875,2017-01-16 15:54:42,2016-12-22 15:50:32,Il 23 dicembre riapre la Strada #Valnerina,,,"[""Accettato"", ""Bollettino"", ""Notizie Utili"", ""Sisma Ottobre""]",,,"{""data"": ""22/12/2016"", ""descrizione"": ""\u201cRiaprir\u00e0 il prossimo 23 dicembre, a senso unico alternato, la strada 209 Valnerina chiusa a seguito del sisma, sar\u00e0 cos\u00ec pi\u00f9 agevole raggiungere le zone colpite dal terremoto\u201d: lo annuncia l\u2019assessore regionale alla viabilit\u00e0 Giuseppe Chianella."", ""link"": ""http://www.valnerinaoggi.it/norcia/terremoto-23-dicembre-riapre-strada-valnerina-chiusa-sisma-6183/"", ""titolo"": ""Il 23 dicembre riapre la Strada #Valnerina""}","<pre><yamldata>titolo: 'Il 23 dicembre riapre la Strada #Valnerina'
 descrizione: '“Riaprirà il prossimo 23 dicembre, a senso unico alternato, la strada 209 Valnerina chiusa a seguito del sisma, sarà così più agevole raggiungere le zone colpite dal terremoto”: lo annuncia l’assessore regionale alla viabilità Giuseppe Chianella.'
 link: 'http://www.valnerinaoggi.it/norcia/terremoto-23-dicembre-riapre-strada-valnerina-chiusa-sisma-6183/'
