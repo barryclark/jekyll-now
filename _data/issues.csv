@@ -1,4 +1,20 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1845,201861161,2017-01-19 13:32:34,2017-01-19 13:30:01,Da Bologna offresi roulotte con 4 posti letto e riscaldamento a gas,44.4936714,11.3430347,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""Roulotte #Bologna"", ""data"": ""19/01/2017"", ""descrizione"": ""A Bologna ho una roulotte con riscaldamento a gas incluso, 4 letti, cucina e bagno. La metto gratis a totale disposizione di chi ne avesse necessit\u00e0 nelle zone terremotate a tempo indefinito. Necessita di essere prelevata perch\u00e9 io mi trovo ora in Puglia. Chi fosse interessato mi contatti anche in privato."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Piazza Maggiore, Santo Stefano, Bologna, BO, Emilia-Romagna, 40121-40141, Italia"", ""lat"": ""44.4936714"", ""link"": ""https://www.facebook.com/andrea.cimino2/posts/10207823202644184"", ""lon"": ""11.3430347"", ""tel"": """"}","<pre><yamldata>tel: ''
+email: ''
+cosa: 'Roulotte #Bologna'
+descrizione: 'A Bologna ho una roulotte con riscaldamento a gas incluso, 4 letti, cucina e bagno. La metto gratis a totale disposizione di chi ne avesse necessità nelle zone terremotate a tempo indefinito. Necessita di essere prelevata perché io mi trovo ora in Puglia. Chi fosse interessato mi contatti anche in privato.'
+indirizzo: 'Piazza Maggiore, Santo Stefano, Bologna, BO, Emilia-Romagna, 40121-40141, Italia'
+lat: '44.4936714'
+lon: '11.3430347'
+link: 'https://www.facebook.com/andrea.cimino2/posts/10207823202644184'
+immagine: ''
+data: 19/01/2017
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1796,201842232,2017-01-19 13:31:06,2017-01-19 12:07:18,"Università di #Teramo: sedi chiuse fino al 21/1, attivato centro accoglienza studenti",,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili"", ""Sisma Gennaio 2017""]",,,"{""data"": ""19/01/2017"", ""descrizione"": ""Universit\u00e0 di Teramo chiusa fino al 21 gennaio. Ospedale veterinario di Piano D'Accio \u00e8 centro di Accoglienza per studenti e dottorandi."", ""link"": ""http://www.unite.it/UniTE/Engine/RAServePG.php/P/364621UTE0400"", ""titolo"": ""AGGIORNAMENTO: SEDI CHIUSE FINO AL 21 GENNAIO #Teramo""}","<pre><yamldata>titolo: 'AGGIORNAMENTO: SEDI CHIUSE FINO AL 21 GENNAIO #Teramo'
+descrizione: 'Università di Teramo chiusa fino al 21 gennaio. Ospedale veterinario di Piano D''Accio è centro di Accoglienza per studenti e dottorandi.'
+link: 'http://www.unite.it/UniTE/Engine/RAServePG.php/P/364621UTE0400'
+data: 19/01/2017
+</yamldata></pre>",closed
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1795,201842222,2017-01-19 13:08:55,2017-01-19 12:07:16,Counselor offro sostegno per stress post traumatico ,,,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""Relazione d'aiuto, sostegno in caso di stress post traumatico in seguito al sisma ed alle perdite."", ""data"": ""19/01/2017"", ""descrizione"": ""Sono counselor professionista e naturopata. Utilizzo tecniche che possono essere di grande aiuto per il superamento dello stress post traumatico, paura, attacchi di panico, ansia in seguito agli eventi sismici. Per adulti, anziani e bambini ed adolescenti. Vivo ed opero ad Assisi-Perugia (Umbria) ma sono disposta a sportarmi per sostenere le persone degli epicentri."", ""email"": ""annarita.sarro@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3495710943""}","<pre><yamldata>tel: '3495710943'
 email: annarita.sarro@gmail.com
 cosa: 'Relazione d''aiuto, sostegno in caso di stress post traumatico in seguito al sisma ed alle perdite.'
