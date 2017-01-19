@@ -1,4 +1,14 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1697,201792016,2017-01-19 08:34:37,2017-01-19 08:21:59,Offro bilocale con piccola cucina per 4 persone a Castelfiorentino. Fino a 20 marzo,,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",Milestone(number=51),,"{""data"": ""19/01/2017"", ""descrizione"": ""Bilocake con piccola cucina per famiglia 4 persone , disponibile fino al 20 marzo 2017. Localit\u00e0 in campagna a 3 km da Castelfiorentino ( Firenze)"", ""email"": ""giuliaperticucci@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3355941425""}","<pre><yamldata>tel: '3355941425'
+email: giuliaperticucci@gmail.com
+descrizione: 'Bilocake con piccola cucina per famiglia 4 persone , disponibile fino al 20 marzo 2017. Località in campagna a 3 km da Castelfiorentino ( Firenze)'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 19/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1696,201791670,2017-01-19 08:32:50,2017-01-19 08:19:54,Disponibilità offrire alloggio a tre persone in provincia di Milano,,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""19/01/2017"", ""descrizione"": ""Disponibilit\u00e0 offrire nella mia casa ospitalit\u00e0 per 3 persone bisognose colpite dall'emergenza neve/terremoto nel centro Italia. Ho disponibili una camera con letto singolo + una saletta con divano letto matrimoniale e bagno, il tutto \u00e8 da condividere con i nostri spazi. La casa \u00e8 a Magenta nella provincia di Milano."", ""email"": ""bignami.achille@libero.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3343079306""}","<pre><yamldata>tel: '3343079306'
 email: bignami.achille@libero.it
 descrizione: 'Disponibilità offrire nella mia casa ospitalità per 3 persone bisognose colpite dall''emergenza neve/terremoto nel centro Italia. Ho disponibili una camera con letto singolo + una saletta con divano letto matrimoniale e bagno, il tutto è da condividere con i nostri spazi. La casa è a Magenta nella provincia di Milano.'
@@ -8639,18 +8649,6 @@ immagine: ''
 data: 29/08/2016
 </yamldata></pre>
 ",closed
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/488,177431768,2016-09-16 13:56:41,2016-09-16 13:55:56,"CONTAINER,ROULOTTE/CAMPER/MODULI ABITATIVI(anche in prestito), MANGIMI PER(mucche da latte,maiali,galline,conigli)",42.64280,13.31046,"[""Accettato"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""CONTAINER,ROULOTTE/CAMPER/MODULI ABITATIVI(anche in prestito), MANGIMI PER(mucche da latte,maiali,galline,conigli)"", ""data"": ""16/09/2016"", ""descrizione"": ""Fra non molto a Sommati sar\u00e0 difficilissimo vivere in tenda a causa del freddo/acqua/vento e neve;altrettanto impossibile \u00e8 accettare la proposta avanzata di dover andare in albergo lasciando il bestiame e le propriet\u00e0 abbandonate;"", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": ""42.64280"", ""link"": """", ""lon"": ""13.31046"", ""tel"": ""3489169956""}","<pre><yamldata>tel: '3489169956'
-email: ''
-cosa: 'CONTAINER,ROULOTTE/CAMPER/MODULI ABITATIVI(anche in prestito), MANGIMI PER(mucche da latte,maiali,galline,conigli)'
-descrizione: 'Fra non molto a Sommati sarà difficilissimo vivere in tenda a causa del freddo/acqua/vento e neve;altrettanto impossibile è accettare la proposta avanzata di dover andare in albergo lasciando il bestiame e le proprietà abbandonate;'
-indirizzo: ''
-lat: '42.64280'
-lon: '13.31046'
-link: ''
-immagine: ''
-data: 16/09/2016
-</yamldata></pre>
-",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/488,177431768,2016-09-16 13:56:41,2016-09-16 13:55:56,"CONTAINER,ROULOTTE/CAMPER/MODULI ABITATIVI(anche in prestito), MANGIMI PER(mucche da latte,maiali,galline,conigli)",42.64280,13.31046,"[""Accettato"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""CONTAINER,ROULOTTE/CAMPER/MODULI ABITATIVI(anche in prestito), MANGIMI PER(mucche da latte,maiali,galline,conigli)"", ""data"": ""16/09/2016"", ""descrizione"": ""Fra non molto a Sommati sar\u00e0 difficilissimo vivere in tenda a causa del freddo/acqua/vento e neve;altrettanto impossibile \u00e8 accettare la proposta avanzata di dover andare in albergo lasciando il bestiame e le propriet\u00e0 abbandonate;"", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": ""42.64280"", ""link"": """", ""lon"": ""13.31046"", ""tel"": ""3489169956""}","<pre><yamldata>tel: '3489169956'
 email: ''
 cosa: 'CONTAINER,ROULOTTE/CAMPER/MODULI ABITATIVI(anche in prestito), MANGIMI PER(mucche da latte,maiali,galline,conigli)'
