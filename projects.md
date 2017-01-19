@@ -5,7 +5,7 @@ permalink: /projects/
 published: true
 ---
 
-## 2016-2017 Projects (Source Code Links)
+## 2016-2017 Projects :floppy_disk:
 
 Welcome to my website where you can view my skills and some of my work (source code is provided on GitHub and CodePen). If you have any questions feel free to contact me.
 
@@ -65,6 +65,6 @@ Welcome to my website where you can view my skills and some of my work (source c
 
 
 
-## You can email me at emilypmendez@gmail.com if you would like to contact me. 
+## Hope to hear from you soon! :mailbox: 
 
 # [Click To Send Email to emilypmendez@gmail.com](mailto:emilypmendez@gmail.com)
