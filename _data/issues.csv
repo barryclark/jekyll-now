@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1795,201842222,2017-01-19 13:08:55,2017-01-19 12:07:16,Counselor offro sostegno per stress post traumatico ,,,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""Relazione d'aiuto, sostegno in caso di stress post traumatico in seguito al sisma ed alle perdite."", ""data"": ""19/01/2017"", ""descrizione"": ""Sono counselor professionista e naturopata. Utilizzo tecniche che possono essere di grande aiuto per il superamento dello stress post traumatico, paura, attacchi di panico, ansia in seguito agli eventi sismici. Per adulti, anziani e bambini ed adolescenti. Vivo ed opero ad Assisi-Perugia (Umbria) ma sono disposta a sportarmi per sostenere le persone degli epicentri."", ""email"": ""annarita.sarro@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3495710943""}","<pre><yamldata>tel: '3495710943'
+email: annarita.sarro@gmail.com
+cosa: 'Relazione d''aiuto, sostegno in caso di stress post traumatico in seguito al sisma ed alle perdite.'
+descrizione: 'Sono counselor professionista e naturopata. Utilizzo tecniche che possono essere di grande aiuto per il superamento dello stress post traumatico, paura, attacchi di panico, ansia in seguito agli eventi sismici. Per adulti, anziani e bambini ed adolescenti. Vivo ed opero ad Assisi-Perugia (Umbria) ma sono disposta a sportarmi per sostenere le persone degli epicentri.'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 19/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1794,201837755,2017-01-19 11:51:56,2017-01-19 11:46:11,Alloggio per 2 persone a Padova,45.58533,12.0536504,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""19/01/2017"", ""descrizione"": ""Mettiamo a disposizione a Trebaseleghe (PD) stanza con letto a una piazza e mezza in abitazione privata. Possiamo ospitare due persone."", ""email"": ""bonaldi.emanuele@gmail.com"", ""immagine"": """", ""indirizzo"": ""Via Marco Polo, Trebaseleghe, PD, Veneto, 30033, Italia"", ""lat"": ""45.58533"", ""link"": """", ""lon"": ""12.0536504"", ""tel"": ""3392477457""}","<pre><yamldata>tel: '3392477457'
 email: bonaldi.emanuele@gmail.com
 descrizione: 'Mettiamo a disposizione a Trebaseleghe (PD) stanza con letto a una piazza e mezza in abitazione privata. Possiamo ospitare due persone.'
@@ -7446,17 +7457,6 @@ descrizione: 'Celico - Calabria Metto a disposizione gratuitamente la mia strutt
 indirizzo: 'SS107, Celico, CS, Calabria, 87058, Italia'
 lat: '39.310475075525034'
 lon: '16.33950501680374'
-link: ''
-immagine: ''
-data: 22/09/2016
-</yamldata></pre>
-",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/654,178618714,2016-09-22 14:03:53,2016-09-22 14:02:47,"Villorba, TV - abitazione per famiglia",45.7395269,12.2327902,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""22/09/2016"", ""descrizione"": ""Villorba - Veneto Mi rendo disponibile ad offrire una abitazione con terreno a famiglia (anche con bambini). Ben servita da mezzi e scuole sicuro inserimento sociale nella zona. Anche se lontano dal paese natale potrebbe aiutare a far passare l'inverno."", ""email"": ""ritabortoletto66@gmail.com"", ""immagine"": """", ""indirizzo"": ""Via Chiesa Villorba, Villorba, TV, Veneto, 31040, Italia"", ""lat"": ""45.7395269"", ""link"": """", ""lon"": ""12.2327902"", ""tel"": """"}","<pre><yamldata>tel: ''
-email: ritabortoletto66@gmail.com
-descrizione: 'Villorba - Veneto Mi rendo disponibile ad offrire una abitazione con terreno a famiglia (anche con bambini). Ben servita da mezzi e scuole sicuro inserimento sociale nella zona. Anche se lontano dal paese natale potrebbe aiutare a far passare l''inverno.'
-indirizzo: 'Via Chiesa Villorba, Villorba, TV, Veneto, 31040, Italia'
-lat: '45.7395269'
-lon: '12.2327902'
 link: ''
 immagine: ''
 data: 22/09/2016
