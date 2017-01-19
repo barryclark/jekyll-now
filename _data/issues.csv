@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1781,201829373,2017-01-19 11:27:23,2017-01-19 11:09:24,BISOGNO SOCCORSI A #PennaSantAndrea #Teramo,,,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""BISOGNO SOCCORSI A PENNA SANT'ANDREA (TE)"", ""data"": ""19/01/2017"", ""descrizione"": ""A Penna Sant'Andrea provincia di Teramo sono isolati, senza elettricit\u00e0 da 3 giorni, linee telefoniche fisse isolate e cellulari per lo pi\u00f9 fuori uso. Alcune frazioni e contrade (ho notizie certe da fraz. Sant'Andrea)non hanno neppure accesso alle strade principali, causa neve e rami caduti. I mezzi del comune per la rimozione della neve non riescono a liberare i passaggi. Sono in trappola! C'\u00e8 bisogno di soccorsi attrezzati."", ""email"": ""candeloro.sabina@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3394907952""}","<pre><yamldata>tel: '3394907952'
+email: candeloro.sabina@gmail.com
+cosa: 'BISOGNO SOCCORSI A PENNA SANT''ANDREA (TE)'
+descrizione: 'A Penna Sant''Andrea provincia di Teramo sono isolati, senza elettricità da 3 giorni, linee telefoniche fisse isolate e cellulari per lo più fuori uso. Alcune frazioni e contrade (ho notizie certe da fraz. Sant''Andrea)non hanno neppure accesso alle strade principali, causa neve e rami caduti. I mezzi del comune per la rimozione della neve non riescono a liberare i passaggi. Sono in trappola! C''è bisogno di soccorsi attrezzati.'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 19/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1778,201827232,2017-01-19 11:08:43,2017-01-19 10:59:51,Camera tre posti letto e culla,42.761444464524814,11.120417118072508,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""OFFRO CAMERA tre posti letto e culla"", ""data"": ""19/01/2017"", ""descrizione"": ""camera in famiglia,con tre posti letto,uso bagno e cucina,per gennaio e febbraio. Famigliola o mamma con bambini"", ""email"": ""nicolettadipietro@yahoo.it"", ""immagine"": """", ""indirizzo"": ""Bar Zero, Via Scansanese, Sugherella, Grosseto, GR, Tuscany, 58100, Italia"", ""lat"": ""42.761444464524814"", ""link"": """", ""lon"": ""11.120417118072508"", ""tel"": ""3403222782""}","<pre><yamldata>tel: '3403222782'
 email: nicolettadipietro@yahoo.it
 cosa: 'OFFRO CAMERA tre posti letto e culla'
@@ -11316,18 +11327,6 @@ postale: ''
 causale: ''
 link: 'http://www.slowfood.it/un-futuro-amatrice-locali-aderenti/'
 email: unfuturoperamatrice@slowfood.it
-data: 13/09/2016
-</yamldata></pre>
-",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/221,176775392,2016-09-13 23:24:53,2016-09-13 23:19:44,Comune di Accumoli,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": ""Contributo sisma agosto 2016"", ""chi"": ""Comune di Accumoli"", ""data"": ""13/09/2016"", ""descrizione"": """", ""email"": """", ""iban"": ""IT83 E030 6914 6011 0000 0046 108"", ""intestazione"": """", ""link"": ""http://www.comune.accumoli.ri.it/sisma-centro-italia-2016/"", ""postale"": """"}","<pre><yamldata>chi: 'Comune di Accumoli'
-descrizione: ''
-intestazione: ''
-iban: 'IT83 E030 6914 6011 0000 0046 108'
-bic: ''
-postale: ''
-causale: 'Contributo sisma agosto 2016'
-link: 'http://www.comune.accumoli.ri.it/sisma-centro-italia-2016/'
-email: ''
 data: 13/09/2016
 </yamldata></pre>
 ",open
