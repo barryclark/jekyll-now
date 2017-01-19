@@ -266,6 +266,17 @@ link: ''
 immagine: ''
 data: 19/01/2017
 </yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1801,201844968,2017-01-19 14:35:45,2017-01-19 12:20:04,Offresi accoglienza per giovane famiglia in provincia di Salerno,,,"[""Accettato"", ""Donazioni"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""accoglienza per giovane famiglia e minori orfani"", ""data"": ""19/01/2017"", ""descrizione"": ""buongiorno, siamo una giovane famiglia (io, mia moglie, nostro figlio ed uno in arrivo) ed offriamo accoglienza ad una famiglia simile alla nostra, o a minori orfani del terremoto, in sistemazioni domestica a salerno o a sala consilina o presso la nostra struttura ricettiva a sala consilina. grazie e buon lavoro"", ""email"": ""stefano.darco@yahoo.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3406675009""}","<pre><yamldata>tel: '3406675009'
+email: stefano.darco@yahoo.it
+cosa: 'accoglienza per giovane famiglia e minori orfani'
+descrizione: 'buongiorno, siamo una giovane famiglia (io, mia moglie, nostro figlio ed uno in arrivo) ed offriamo accoglienza ad una famiglia simile alla nostra, o a minori orfani del terremoto, in sistemazioni domestica a salerno o a sala consilina o presso la nostra struttura ricettiva a sala consilina. grazie e buon lavoro'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 19/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1799,201842248,2017-01-19 13:48:11,2017-01-19 12:07:22,"Università di #Teramo: sedi chiuse fino al 21 gennaio, attivato centro di accoglienza studenti",,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili"", ""Sisma Gennaio 2017""]",,,"{""data"": ""19/01/2017"", ""descrizione"": ""Universit\u00e0 di Teramo chiusa fino al 21 gennaio. Ospedale veterinario di Piano D'Accio \u00e8 centro di Accoglienza per studenti e dottorandi."", ""link"": ""http://www.unite.it/UniTE/Engine/RAServePG.php/P/364621UTE0400"", ""titolo"": ""AGGIORNAMENTO: SEDI CHIUSE FINO AL 21 GENNAIO #Teramo""}","<pre><yamldata>titolo: 'AGGIORNAMENTO: SEDI CHIUSE FINO AL 21 GENNAIO #Teramo'
 descrizione: 'Università di Teramo chiusa fino al 21 gennaio. Ospedale veterinario di Piano D''Accio è centro di Accoglienza per studenti e dottorandi.'
 link: 'http://www.unite.it/UniTE/Engine/RAServePG.php/P/364621UTE0400'
@@ -6482,12 +6493,6 @@ link: 'https://www.facebook.com/events/513899795484942/'
 data: 25/10/2016
 </yamldata></pre>
 ",closed
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/838,184904784,2016-10-24 17:31:13,2016-10-24 17:30:49,"Terremoto, donano quasi 3 italiani su 4. L'indagine di Coldiretti a due mesi dal sisma",,,"[""Accettato"", ""Bollettino"", ""Notizie Utili"", ""Twitter""]",,,"{""data"": ""24/10/2016"", ""descrizione"": ""Nei due mesi trascorsi dal terremoto in Centro Italia, quasi tre italiani su quattro (74%) hanno partecipato ad iniziative di solidariet\u00e0. \u00c8 quanto emerge da una analisi Coldiretti/Ix\u00e8. Ben il 42% degli italiani ha effettuato donazioni con SMS o su conto corrente, il 19% tramite associazioni e ben il 13% mangiando l\u2019amatriciana nei luoghi che hanno aderito all\u2019iniziativa di sostegno che si \u00e8 estesa anche all\u2019estero."", ""link"": ""http://www.corrierenazionale.it/2016/10/24/terremoto-donazioni-italiani/"", ""titolo"": ""Terremoto, donano quasi 3 italiani su 4. L'indagine di Coldiretti a due mesi dal sisma""}","<pre><yamldata>titolo: 'Terremoto, donano quasi 3 italiani su 4. L''indagine di Coldiretti a due mesi dal sisma'
-descrizione: 'Nei due mesi trascorsi dal terremoto in Centro Italia, quasi tre italiani su quattro (74%) hanno partecipato ad iniziative di solidarietà. È quanto emerge da una analisi Coldiretti/Ixè. Ben il 42% degli italiani ha effettuato donazioni con SMS o su conto corrente, il 19% tramite associazioni e ben il 13% mangiando l’amatriciana nei luoghi che hanno aderito all’iniziativa di sostegno che si è estesa anche all’estero.'
-link: 'http://www.corrierenazionale.it/2016/10/24/terremoto-donazioni-italiani/'
-data: 24/10/2016
-</yamldata></pre>
-",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/838,184904784,2016-10-24 17:31:13,2016-10-24 17:30:49,"Terremoto, donano quasi 3 italiani su 4. L'indagine di Coldiretti a due mesi dal sisma",,,"[""Accettato"", ""Bollettino"", ""Notizie Utili"", ""Twitter""]",,,"{""data"": ""24/10/2016"", ""descrizione"": ""Nei due mesi trascorsi dal terremoto in Centro Italia, quasi tre italiani su quattro (74%) hanno partecipato ad iniziative di solidariet\u00e0. \u00c8 quanto emerge da una analisi Coldiretti/Ix\u00e8. Ben il 42% degli italiani ha effettuato donazioni con SMS o su conto corrente, il 19% tramite associazioni e ben il 13% mangiando l\u2019amatriciana nei luoghi che hanno aderito all\u2019iniziativa di sostegno che si \u00e8 estesa anche all\u2019estero."", ""link"": ""http://www.corrierenazionale.it/2016/10/24/terremoto-donazioni-italiani/"", ""titolo"": ""Terremoto, donano quasi 3 italiani su 4. L'indagine di Coldiretti a due mesi dal sisma""}","<pre><yamldata>titolo: 'Terremoto, donano quasi 3 italiani su 4. L''indagine di Coldiretti a due mesi dal sisma'
 descrizione: 'Nei due mesi trascorsi dal terremoto in Centro Italia, quasi tre italiani su quattro (74%) hanno partecipato ad iniziative di solidarietà. È quanto emerge da una analisi Coldiretti/Ixè. Ben il 42% degli italiani ha effettuato donazioni con SMS o su conto corrente, il 19% tramite associazioni e ben il 13% mangiando l’amatriciana nei luoghi che hanno aderito all’iniziativa di sostegno che si è estesa anche all’estero.'
 link: 'http://www.corrierenazionale.it/2016/10/24/terremoto-donazioni-italiani/'
