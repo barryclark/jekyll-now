@@ -28,6 +28,6 @@ Protagonists are genuine, caring people who talk the talk and walk the walk, and
     
     
 
-## Contact me
+## Let's have a pleasant chat about anything :-)
 
 # [Email: emilypmendez@gmail.com](mailto:emilypmendez@gmail.com)
