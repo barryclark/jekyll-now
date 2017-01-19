@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1690,201779917,2017-01-19 07:31:15,2017-01-19 07:02:52,Abbigliamento bambino 0-4 anni,,,"[""Accettato"", ""Donazioni"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""Abbigliamento bambino 0-4 anni"", ""data"": ""19/01/2017"", ""descrizione"": ""Offro abbigliamento bambino da 0 a 4 anni (usato ma ottimo stato). Sono in provincia di Vicenza ma posso spedire senza problemi."", ""email"": ""s.piccoli@inwind.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""328-6334795""}","<pre><yamldata>tel: 328-6334795
+email: s.piccoli@inwind.it
+cosa: 'Abbigliamento bambino 0-4 anni'
+descrizione: 'Offro abbigliamento bambino da 0 a 4 anni (usato ma ottimo stato). Sono in provincia di Vicenza ma posso spedire senza problemi.'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 19/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1688,201779101,2017-01-19 06:57:47,2017-01-19 06:56:50,"Montegabbione,  frazione Monte Giove (Terni) isolata: richiesta di aiuto urgente",,,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Facebook"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""Montegabbione,  frazione Monte Giove (Terni) isolata: richiesta di aiuto urgente"", ""data"": ""19/01/2017"", ""descrizione"": ""Montegabbione, in provincia di Terni, frazione Monte Giove \u00e8 isolata ci sono persone."", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1830607870540129/"", ""lon"": """", ""tel"": """"}","<pre><yamldata>tel: ''
 email: ''
 cosa: 'Montegabbione,  frazione Monte Giove (Terni) isolata: richiesta di aiuto urgente'
