@@ -1,4 +1,14 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1789,201829427,2017-01-19 11:41:50,2017-01-19 11:09:39,Stanza in Veneto,45.58533,12.0536504,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""19/01/2017"", ""descrizione"": ""Mettiamo a disposizione stanza con letto a una piazza e mezzo in abitazione privata. Possiamo ospitare due persone."", ""email"": ""bonaldi.emanuele@gmail.com"", ""immagine"": """", ""indirizzo"": ""Via Marco Polo, Trebaseleghe, PD, Veneto, 30033, Italia"", ""lat"": ""45.58533"", ""link"": """", ""lon"": ""12.0536504"", ""tel"": ""3392477457""}","<pre><yamldata>tel: '3392477457'
+email: bonaldi.emanuele@gmail.com
+descrizione: 'Mettiamo a disposizione stanza con letto a una piazza e mezzo in abitazione privata. Possiamo ospitare due persone.'
+indirizzo: 'Via Marco Polo, Trebaseleghe, PD, Veneto, 30033, Italia'
+lat: '45.58533'
+lon: '12.0536504'
+link: ''
+immagine: ''
+data: 19/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1784,201829396,2017-01-19 11:28:21,2017-01-19 11:09:31,Servono coperte a #Montereale.,42.5250955,13.2440724,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Sisma Gennaio 2017"", ""Twitter""]",,,"{""cosa"": ""Servono coperte a #Montereale."", ""data"": ""19/01/2017"", ""descrizione"": ""Servono coperte a Montereale. Chi pu\u00f2 fornirle si metta in contatto con la Cgil Rieti al 0746270190."", ""email"": """", ""immagine"": """", ""indirizzo"": ""SS266, Montereale, AQ, ABR, Italia"", ""lat"": ""42.5250955"", ""link"": ""https://twitter.com/cgilrietirmeva/status/822014229578448897"", ""lon"": ""13.2440724"", ""tel"": """"}","<pre><yamldata>tel: ''
 email: ''
 cosa: 'Servono coperte a #Montereale.'
