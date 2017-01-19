@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: More about Emily Mendez...
 permalink: /about/
 published: true
 ---
@@ -9,7 +9,7 @@ published: true
 ##  Discover My Personality
 > Myers-Briggs Personality Type: = ENFJ-A
 
-**FUN FACT:**
+ **FUN FACT:**
 Protagonists are genuine, caring people who talk the talk and walk the walk, and nothing makes them happier than leading the charge, uniting and motivating their team with infectious enthusiasm.
     
    ![]({{site.baseurl}}/https://github.com/emilypmendez/emilypmendez.github.io/blob/master/images/protagonist%20full%20profile.png)
