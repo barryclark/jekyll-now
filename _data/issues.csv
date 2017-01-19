@@ -1,4 +1,24 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1976,202001750,2017-01-19 23:07:32,2017-01-19 23:04:30,Offro 3 posti letto ad Ancona,,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""19/01/2017"", ""descrizione"": ""Sono ad ancona. vivo da sola ed ho disponibili tre letti e una poltrona letto. Almeno fino a che non rientra l'emergenza posso ospitare delle persone. Famiglie con bambini, anziani (comunque persone autonome perch\u00e9 sono al terzo piano senza ascensore e buona parte della giornata sono fuori casa per lavoro)."", ""email"": ""vanessabianchini@hotmail.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": """"}","<pre><yamldata>tel: ''
+email: vanessabianchini@hotmail.it
+descrizione: 'Sono ad ancona. vivo da sola ed ho disponibili tre letti e una poltrona letto. Almeno fino a che non rientra l''emergenza posso ospitare delle persone. Famiglie con bambini, anziani (comunque persone autonome perché sono al terzo piano senza ascensore e buona parte della giornata sono fuori casa per lavoro).'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 19/01/2017
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1975,201997137,2017-01-19 23:06:22,2017-01-19 22:41:37,Offro appartamentino in provincia di Pisa,,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""19/01/2017"", ""descrizione"": ""vivo solo in un appartamentino in affitto a monteverdi marittimo (pisa), ma la mia camera (e la sala e la cucina) la metto volentieri a disposizione (2 persone o 2 persone + bimbi). Dovrei mollarlo a fine febbraio, ma paghero' quest'affitto per chi ha bisogno sino a fine giugno volentieri."", ""email"": ""gigibs3@hotmail.fr"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3738319524""}","<pre><yamldata>tel: '3738319524'
+email: gigibs3@hotmail.fr
+descrizione: 'vivo solo in un appartamentino in affitto a monteverdi marittimo (pisa), ma la mia camera (e la sala e la cucina) la metto volentieri a disposizione (2 persone o 2 persone + bimbi). Dovrei mollarlo a fine febbraio, ma paghero'' quest''affitto per chi ha bisogno sino a fine giugno volentieri.'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 19/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1974,201996768,2017-01-19 23:04:54,2017-01-19 22:39:51,Offriamo alloggio in provincia di Viterbo ,,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""19/01/2017"", ""descrizione"": ""Io e la mia famiglia saremo felici di accogliere in casa nostra chi volesse stare in un posto caldo e tranquillo e condividere un'esperienza di vita. Provincia di Viterbo."", ""email"": ""tizianabozzini.tb@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": """"}","<pre><yamldata>tel: ''
 email: tizianabozzini.tb@gmail.com
 descrizione: 'Io e la mia famiglia saremo felici di accogliere in casa nostra chi volesse stare in un posto caldo e tranquillo e condividere un''esperienza di vita. Provincia di Viterbo.'
