@@ -28,5 +28,3 @@ I thank you for your time and hope to hear from you soon,
 Email: [emilypmendez@gmail.com](mailto:emilypmendez@gmail.com)
 
 Phone: +1 (786) - 300 - 6036
-
-Skype: [emilypmendez](skype:emilypmendez)
