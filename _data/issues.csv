@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1771,201824852,2017-01-19 10:54:05,2017-01-19 10:50:03,Camera tripla GROSSETO,42.7612711709209,11.119633913040161,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""Camera tripla GROSSETO"", ""data"": ""19/01/2017"", ""descrizione"": ""Offro per famigliola o mamma con bambini,camera con tre letti singoli(possibilit\u00e0 lettino infante),riscaldamento,bagno e uso cucina,giochi. Purtroppo solo per gennaio e febbraio."", ""email"": ""nicolettadipietro@yahoo.it"", ""immagine"": """", ""indirizzo"": ""Il Carrettino (gluten free food), Via Tagliamento, Sugherella, Grosseto, GR, Tuscany, 58100, Italia"", ""lat"": ""42.7612711709209"", ""link"": """", ""lon"": ""11.119633913040161"", ""tel"": ""3403222782""}","<pre><yamldata>tel: '3403222782'
+email: nicolettadipietro@yahoo.it
+cosa: 'Camera tripla GROSSETO'
+descrizione: 'Offro per famigliola o mamma con bambini,camera con tre letti singoli(possibilità lettino infante),riscaldamento,bagno e uso cucina,giochi. Purtroppo solo per gennaio e febbraio.'
+indirizzo: 'Il Carrettino (gluten free food), Via Tagliamento, Sugherella, Grosseto, GR, Tuscany, 58100, Italia'
+lat: '42.7612711709209'
+lon: '11.119633913040161'
+link: ''
+immagine: ''
+data: 19/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1763,201819907,2017-01-19 10:35:01,2017-01-19 10:28:52,Appartamento a Lecce,,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""19/01/2017"", ""descrizione"": ""Anche se \u00e8 un p\u00f2 distante dalle vostre zone, metto a disposizione appartamento in provincia di Lecce in localit\u00e0 San Foca per 4 persone. E' attrezzato con camino e condizionatore."", ""email"": ""eleonoraromano3@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3293859605""}","<pre><yamldata>tel: '3293859605'
 email: eleonoraromano3@gmail.com
 descrizione: 'Anche se è un pò distante dalle vostre zone, metto a disposizione appartamento in provincia di Lecce in località San Foca per 4 persone. E'' attrezzato con camino e condizionatore.'
@@ -9151,12 +9162,6 @@ data: 15/09/2016
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/439,177178273,2016-10-01 16:45:04,2016-09-15 13:35:44,Confartigianato Ascoli e Fermo: gazebo informativi per imprese di Acquasanta e Arquata colpite dal sisma,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""15/09/2016"", ""descrizione"": ""La Confartigiano di Ascoli e Fermo attiva gazebo informativo per imprese colpite dal sisma a Cagnano luned\u00ec ore 9-13, Acquasanta marted\u00ec ore 9-13, Borgo di Arquata giovedi 10-14"", ""link"": ""https://www.instagram.com/p/BKBbcENAYXh/"", ""titolo"": ""Confartigianato Ascoli e Fermo: gazebo informativi per imprese di Acquasanta e Arquata colpite dal sisma""}","<pre><yamldata>titolo: 'Confartigianato Ascoli e Fermo: gazebo informativi per imprese di Acquasanta e Arquata colpite dal sisma'
 descrizione: 'La Confartigiano di Ascoli e Fermo attiva gazebo informativo per imprese colpite dal sisma a Cagnano lunedì ore 9-13, Acquasanta martedì ore 9-13, Borgo di Arquata giovedi 10-14'
 link: 'https://www.instagram.com/p/BKBbcENAYXh/'
-data: 15/09/2016
-</yamldata></pre>
-",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/438,177178027,2016-10-01 16:45:13,2016-09-15 13:34:50,Regione Marche apre un sito web dedicato al post terremoto,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""15/09/2016"", ""descrizione"": ""Sito Regione Marche per Terremoto / documenti e info"", ""link"": ""http://www.regione.marche.it/Entra-in-Regione/Terremoto-Marche"", ""titolo"": ""Sito web Regione Marche dedicato a terremoto""}","<pre><yamldata>titolo: 'Sito web Regione Marche dedicato a terremoto'
-descrizione: 'Sito Regione Marche per Terremoto / documenti e info'
-link: 'http://www.regione.marche.it/Entra-in-Regione/Terremoto-Marche'
 data: 15/09/2016
 </yamldata></pre>
 ",open
