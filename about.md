@@ -6,8 +6,8 @@ published: true
 ---
 
 
-##  Personality
- **Myers-Briggs Personality Type:** = ENFJ-A
+##  Discover My Personality
+> Myers-Briggs Personality Type: = ENFJ-A
 
 **FUN FACT:**
 Protagonists are genuine, caring people who talk the talk and walk the walk, and nothing makes them happier than leading the charge, uniting and motivating their team with infectious enthusiasm.
