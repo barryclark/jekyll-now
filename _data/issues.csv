@@ -98,6 +98,16 @@ link: ''
 immagine: ''
 data: 19/01/2017
 </yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1835,201854039,2017-01-19 13:52:53,2017-01-19 12:56:18,Offresi camera matrimoniale a Colle Val d'Elsa (Si),43.4215075541024,11.112713813781738,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""19/01/2017"", ""descrizione"": ""Offro una camera matrimoniale in abitazione privata, comoda per 2 adulti con 1/2 bambini, nel comune di Colle Val d'Elsa (Siena)"", ""email"": ""primodipalo@gmail.com"", ""immagine"": """", ""indirizzo"": ""San Lorenzo, Via Gracco del Secco, Localit\u00e0 Le Mosse, Faule, Colle di Val d'Elsa, SI, Tuscany, 53034, Italia"", ""lat"": ""43.4215075541024"", ""link"": """", ""lon"": ""11.112713813781738"", ""tel"": ""3474014376""}","<pre><yamldata>tel: '3474014376'
+email: primodipalo@gmail.com
+descrizione: 'Offro una camera matrimoniale in abitazione privata, comoda per 2 adulti con 1/2 bambini, nel comune di Colle Val d''Elsa (Siena)'
+indirizzo: 'San Lorenzo, Via Gracco del Secco, Località Le Mosse, Faule, Colle di Val d''Elsa, SI, Tuscany, 53034, Italia'
+lat: '43.4215075541024'
+lon: '11.112713813781738'
+link: ''
+immagine: ''
+data: 19/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1828,201854012,2017-01-19 13:48:11,2017-01-19 12:56:14,Offro stallo animali domestici e padroni #Canossa,44.5383549,10.4157866,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""Offro stallo animali domestici"", ""data"": ""19/01/2017"", ""descrizione"": ""A Trinit\u00e0 di Canossa (Reggio Emilia) Offro stallo a cani, gatti, furetti, conigli, cavie o qualsiasi altro animale previo accordi. Abito in campagna. Offro anche alloggio ai proprietari che non vogliono separarsi dai loro animali, ho due posti letto + una culla/lettino."", ""email"": ""elena_lasagni@virgilio.it"", ""immagine"": """", ""indirizzo"": ""SP79, Canossa, RE, EMR, 42026, Italia"", ""lat"": ""44.5383549"", ""link"": """", ""lon"": ""10.4157866"", ""tel"": ""3389919241""}","<pre><yamldata>tel: '3389919241'
 email: elena_lasagni@virgilio.it
 cosa: 'Offro stallo animali domestici'
@@ -5215,17 +5225,6 @@ postale: ''
 causale: 'EMERGENZA TERREMOTO'
 link: 'http://www.viverecamerino.it/2016/11/01/terremoto-partita-una-raccolta-fondi-per-pieve-torina/613316/'
 email: ''
-data: 31/10/2016
-</yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1008,186394089,2016-10-31 22:46:21,2016-10-31 20:50:41,Ad #Amatrice cercasi urgentemente un gazebo per camper e un container,,,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Sisma Ottobre""]",,http://i.imgur.com/ufCGqwj.jpg,"{""cosa"": ""#amatrice Cercasi urgentemente un gazebo per camper e un container"", ""data"": ""31/10/2016"", ""descrizione"": ""Cercasi urgentemente un gazebo per camper e un container non per uso abitativo per una famiglia colpita dal terremoto in grande difficolt\u00e0. La consegna deve avvenire sul posto, per chi potesse aiutare contattare 392 7015986."", ""email"": """", ""immagine"": ""http://i.imgur.com/ufCGqwj.jpg"", ""indirizzo"": """", ""lat"": """", ""link"": ""https://www.facebook.com/emanuela.bignami.9/posts/10154612533584449"", ""lon"": """", ""tel"": """"}","<pre><yamldata>tel: ''
-email: ''
-cosa: '#amatrice Cercasi urgentemente un gazebo per camper e un container'
-descrizione: 'Cercasi urgentemente un gazebo per camper e un container non per uso abitativo per una famiglia colpita dal terremoto in grande difficoltà. La consegna deve avvenire sul posto, per chi potesse aiutare contattare 392 7015986.'
-indirizzo: ''
-lat: ''
-lon: ''
-link: 'https://www.facebook.com/emanuela.bignami.9/posts/10154612533584449'
-immagine: 'http://i.imgur.com/ufCGqwj.jpg'
 data: 31/10/2016
 </yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1008,186394089,2016-10-31 22:46:21,2016-10-31 20:50:41,Ad #Amatrice cercasi urgentemente un gazebo per camper e un container,,,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Sisma Ottobre""]",,http://i.imgur.com/ufCGqwj.jpg,"{""cosa"": ""#amatrice Cercasi urgentemente un gazebo per camper e un container"", ""data"": ""31/10/2016"", ""descrizione"": ""Cercasi urgentemente un gazebo per camper e un container non per uso abitativo per una famiglia colpita dal terremoto in grande difficolt\u00e0. La consegna deve avvenire sul posto, per chi potesse aiutare contattare 392 7015986."", ""email"": """", ""immagine"": ""http://i.imgur.com/ufCGqwj.jpg"", ""indirizzo"": """", ""lat"": """", ""link"": ""https://www.facebook.com/emanuela.bignami.9/posts/10154612533584449"", ""lon"": """", ""tel"": """"}","<pre><yamldata>tel: ''
