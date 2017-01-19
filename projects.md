@@ -67,4 +67,4 @@ Welcome to my website where you can view my skills and some of my work (source c
 
 ## You can email me at emilypmendez@gmail.com if you would like to contact me. 
 
-# [Email: emilypmendez@gmail.com](mailto:emilypmendez@gmail.com)
+# [Click To Send Email to emilypmendez@gmail.com](mailto:emilypmendez@gmail.com)
