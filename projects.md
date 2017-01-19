@@ -1,4 +1,9 @@
-
+---
+layout: page
+title: Projects
+permalink: /projects/
+published: true
+---
 
 ## 2016-2017 Projects (Source Code Links)
 
