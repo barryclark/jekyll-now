@@ -29,7 +29,8 @@ _**ENFJ-A** (extraverted, intuitive, feeling, judging, assertive) are abbreviati
     - Lua
     - Python
     - Ruby
-    
+
+
 * Past Experience:    
      - SASS, LESS
      - NoSQL, MySQL
@@ -37,6 +38,8 @@ _**ENFJ-A** (extraverted, intuitive, feeling, judging, assertive) are abbreviati
      - Jekyll, Wordpress
      - Cucumber
      - Corona SDK
+
+
 
 * Current Tools (2017):
 	- Photoshop 	- XCode 	- StackOverflow
