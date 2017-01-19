@@ -38,32 +38,23 @@ published: true
 ---------
   
   
-  ✔ 4. **Website Login System** - Built with PHP 
-  |  [**View on GitHub**](https://github.com/emilypmendez/php-login)
-  
-![]({{site.baseurl}}//emilypmendez.github.io/images/pending.png)
+  ✔ 4. **Website Login System** - Built with PHP  |  [**View on GitHub**](https://github.com/emilypmendez/php-login)
   
   
 ---------
 
     
-  ✔ 5. **MemoryKeeper** - HTML, CSS, and Javascript
-  |  [**View on GitHub**](https://github.com/emilypmendez/MemoryKeeper)
-    
-![]({{site.baseurl}}/emilypmendez.github.io/images/pending.png)
+  ✔ 5. **MemoryKeeper** - HTML, CSS, and Javascript |  [**View on GitHub**](https://github.com/emilypmendez/MemoryKeeper)
   
   
 ---------
 
 
-  ✔ 6. **PriorityApp** - Time management app built with Javascript and PHP 
-  |  [**View on GitHub**](https://github.com/emilypmendez/PriorityApp)
+  ✔ 6. **PriorityApp** - Built with Javascript and PHP  |  [**View on GitHub**](https://github.com/emilypmendez/PriorityApp)
   
   
   Try the app using Invision Software! Click here:   
   [Prototype App](https://projects.invisionapp.com/static-signed/live-embed/127470428/183406726/1/latest/TNwSXy8641hvCnQUIoNiRd9NqTADfZj1LRqlEJaHlESZzlEkzrX9TBs7rRElEuXw41wyA6C2wYPklELtnGlEPf354KwlE/the-fun-life-app-project-HOME.png)
-  
-> ![]({{site.baseurl}}/emilypmendez.github.io/images/prod-app-HOME.png)
   
   
 ---------
