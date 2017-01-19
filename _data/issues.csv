@@ -1,4 +1,14 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1737,201809264,2017-01-19 09:53:57,2017-01-19 09:44:51,Offresi alloggio per 2 adulti ,,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""19/01/2017"", ""descrizione"": ""Offresi alloggio per 2 adulti con bambini. Siamo famiglia con bambina di 6 anni a Firenze. Offriamo condivisione della casa con stanza privata e bagno privato."", ""email"": ""paola.simonetti@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3384098231""}","<pre><yamldata>tel: '3384098231'
+email: paola.simonetti@gmail.com
+descrizione: 'Offresi alloggio per 2 adulti con bambini. Siamo famiglia con bambina di 6 anni a Firenze. Offriamo condivisione della casa con stanza privata e bagno privato.'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 19/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1736,201802472,2017-01-19 09:45:29,2017-01-19 09:16:35,OFFRO CIBO SENZA GLUTINE,,,"[""Accettato"", ""Cibo"", ""Donazioni"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""OFFRO CIBO SENZA GLUTINE"", ""data"": ""19/01/2017"", ""descrizione"": ""Offro pane, pasta, biscotti, farine, pan grattato o quello di cui c'\u00e8 bisogno per chi deve mangiare senza glutine. Sono di Bologna, fatemi sapere perch\u00e8 desidero di cuore poter aiutare come posso."", ""email"": ""silviamu70@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3318620003""}","<pre><yamldata>tel: '3318620003'
 email: silviamu70@gmail.com
 cosa: 'OFFRO CIBO SENZA GLUTINE'
