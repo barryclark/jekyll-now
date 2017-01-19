@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 ## Step 1 - Try Codecademy First,
 ## Then Mix It Up So That Your Brain Doesn’t Get Bored…
