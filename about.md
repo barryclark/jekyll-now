@@ -21,27 +21,27 @@ _**ENFJ-A** (extraverted, intuitive, feeling, judging, assertive) are abbreviati
 
 	
 * Programming Languages:    
-		- HTML   	
-        - CSS
-        - Javascript
-        - jQuery  
-        - PHP
-    	- Lua
-        - Python
-        - Ruby
+	- HTML   	
+    - CSS
+    - Javascript
+    - jQuery  
+    - PHP
+    - Lua
+    - Python
+    - Ruby
     
 * Past Experience:    
-        - SASS, LESS
-    	- NoSQL, MySQL
-        - AngularJS, Node.js; Express.js
-    	- Jekyll, Wordpress
-        - Cucumber
-        - Corona SDK
+     - SASS, LESS
+     - NoSQL, MySQL
+     - AngularJS, Node.js; Express.js
+     - Jekyll, Wordpress
+     - Cucumber
+     - Corona SDK
 
-* Current Tools (2017):        
-		- Photoshop 	- XCode 	- StackOverflow
-    	- Illustrator   - Invision  - GoogleDevs
-        - Prose.io  	- GitHub    - Mozilla Dev Network
+* Current Tools (2017):
+	- Photoshop 	- XCode 	- StackOverflow
+    - Illustrator   - Invision  - GoogleDevs
+    - Prose.io  	- GitHub    - Mozilla Dev Network
     
 ----------
 
