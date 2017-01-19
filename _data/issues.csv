@@ -1,4 +1,24 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1918,201923452,2017-01-19 17:25:19,2017-01-19 17:23:55,Offresi 3 posti letto #Roma,41.8935085,12.4825526,"[""Accettato"", ""Alloggi"", ""Facebook"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""19/01/2017"", ""descrizione"": ""Metto a disposizione 3 posti letto a Roma. Contattatemi via facebook: Fabiola Lucidi."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Cordonata, Municipio Roma I, Roma, RM, Lazio, 00186, Italia"", ""lat"": ""41.8935085"", ""link"": ""https://www.facebook.com/profile.php?id=100010746691778&fref=nf"", ""lon"": ""12.4825526"", ""tel"": """"}","<pre><yamldata>tel: ''
+email: ''
+descrizione: 'Metto a disposizione 3 posti letto a Roma. Contattatemi via facebook: Fabiola Lucidi.'
+indirizzo: 'Cordonata, Municipio Roma I, Roma, RM, Lazio, 00186, Italia'
+lat: '41.8935085'
+lon: '12.4825526'
+link: 'https://www.facebook.com/profile.php?id=100010746691778&fref=nf'
+immagine: ''
+data: 19/01/2017
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1917,201922749,2017-01-19 17:25:57,2017-01-19 17:21:08,Offresi alloggio per 2 persone #Siena,,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""19/01/2017"", ""descrizione"": ""offro alloggio per due persone a Chiusi (siena)"", ""email"": ""decar14@libero.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3334017818""}","<pre><yamldata>tel: '3334017818'
+email: decar14@libero.it
+descrizione: 'offro alloggio per due persone a Chiusi (siena)'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 19/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1916,201921289,2017-01-19 17:20:58,2017-01-19 17:15:26,Offresi monolocale a #Savona,44.3381826,8.5098994,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,http://i.imgur.com/JjJfJSd.jpg,"{""data"": ""19/01/2017"", ""descrizione"": ""Offro monolocale sito in Savona per coppia + eventuale bambino piccolo per qualche giorno."", ""email"": ""lorenzo.valenza@gmail.com"", ""immagine"": ""http://i.imgur.com/JjJfJSd.jpg"", ""indirizzo"": ""Via Turati, Albisola Capo, Albisola Superiore, SV, Liguria, 17011, Italia"", ""lat"": ""44.3381826"", ""link"": """", ""lon"": ""8.5098994"", ""tel"": ""3355651812""}","<pre><yamldata>tel: '3355651812'
 email: lorenzo.valenza@gmail.com
 descrizione: 'Offro monolocale sito in Savona per coppia + eventuale bambino piccolo per qualche giorno.'
@@ -2694,16 +2714,6 @@ postale: ''
 causale: ''
 link: 'https://www.facebook.com/groups/1758670357733881/permalink/1807404969527086/?match=dGVycmVtb3RvY2VudHJvaXRhbGlhLG1hcmlldmE%3D'
 email: ''
-data: 03/12/2016
-</yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1411,193278437,2016-12-03 18:40:29,2016-12-03 10:03:52,Associazione Intercomunale di Protezione Civile #Valnerina #Norcia,42.780409307185934,13.099082708358765,"[""Accettato"", ""Bollettino"", ""Contatti"", ""Form"", ""Sisma Ottobre""]",,,"{""data"": ""03/12/2016"", ""descrizione"": ""L'associazione interviene a sostegno delle popolazioni colpite da disastri naturali. Il Presidente Antonio Duca - 3292985691, \u00e8 anche referente per gli aiuti per le aziende agricole, come ad es. le stalle provvisorie. I referenti che gestiscono il magazzino degli aiuti per il terremoto sono Angelo Cambi - 329 2985670 e Giorgio Iorio - 3202198705."", ""email"": ""procivilevalnerina@gmail.com"", ""indirizzo"": ""Viale della Stazione, Madonnabella, Norcia, PG, UMB, 06046, Italia"", ""lat"": ""42.780409307185934"", ""link"": ""https://www.facebook.com/ProtCivValnerinaNorcia/"", ""lon"": ""13.099082708358765"", ""nome"": ""Associazione Intercomunale di Protezione Civile Valnerina Norcia"", ""tel"": ""3292985670""}","<pre><yamldata>nome: 'Associazione Intercomunale di Protezione Civile Valnerina Norcia'
-tel: '3292985670'
-email: procivilevalnerina@gmail.com
-descrizione: 'L''associazione interviene a sostegno delle popolazioni colpite da disastri naturali. Il Presidente Antonio Duca - 3292985691, è anche referente per gli aiuti per le aziende agricole, come ad es. le stalle provvisorie. I referenti che gestiscono il magazzino degli aiuti per il terremoto sono Angelo Cambi - 329 2985670 e Giorgio Iorio - 3202198705.'
-indirizzo: 'Viale della Stazione, Madonnabella, Norcia, PG, UMB, 06046, Italia'
-lat: '42.780409307185934'
-lon: '13.099082708358765'
-link: 'https://www.facebook.com/ProtCivValnerinaNorcia/'
 data: 03/12/2016
 </yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1411,193278437,2016-12-03 18:40:29,2016-12-03 10:03:52,Associazione Intercomunale di Protezione Civile #Valnerina #Norcia,42.780409307185934,13.099082708358765,"[""Accettato"", ""Bollettino"", ""Contatti"", ""Form"", ""Sisma Ottobre""]",,,"{""data"": ""03/12/2016"", ""descrizione"": ""L'associazione interviene a sostegno delle popolazioni colpite da disastri naturali. Il Presidente Antonio Duca - 3292985691, \u00e8 anche referente per gli aiuti per le aziende agricole, come ad es. le stalle provvisorie. I referenti che gestiscono il magazzino degli aiuti per il terremoto sono Angelo Cambi - 329 2985670 e Giorgio Iorio - 3202198705."", ""email"": ""procivilevalnerina@gmail.com"", ""indirizzo"": ""Viale della Stazione, Madonnabella, Norcia, PG, UMB, 06046, Italia"", ""lat"": ""42.780409307185934"", ""link"": ""https://www.facebook.com/ProtCivValnerinaNorcia/"", ""lon"": ""13.099082708358765"", ""nome"": ""Associazione Intercomunale di Protezione Civile Valnerina Norcia"", ""tel"": ""3292985670""}","<pre><yamldata>nome: 'Associazione Intercomunale di Protezione Civile Valnerina Norcia'
@@ -10874,18 +10884,6 @@ immagine: ''
 data: 14/09/2016
 </yamldata></pre>
 ",closed
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/307,176951458,2016-09-20 14:41:46,2016-09-14 16:13:17,ARCI Nazionale,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""cosa"": ""ARCI Nazionale"", ""data"": ""14/09/2016"", ""descrizione"": ""Arci nazionale ha attivato un progetto di crowdfunding specifico per il Bibliobus, \""\""BIBLIOBUS ARCI \u2013 La Cultura per la Ricostruzione\""\"". Cosa finanzieremo con i fondi raccolti - Assicurazione autobus e volontari - Revisione autobus - Combustibile - Spese di gestione - Attivit\u00e0 itineranti (presentazioni con autori, iniziative pubbliche, etc.) - Acquisto nuovi libri - Abbonamenti a riviste e quotidiani - Acquisto di attrezzatura minuta (sedie, tavolino, ombrellone etc..)"", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""https://www.produzionidalbasso.com/project/bibliobus-arci-la-cultura-per-la-ricostruzione/"", ""lon"": """", ""tel"": """"}","<pre><yamldata>tel: ''
-email: ''
-cosa: 'ARCI Nazionale'
-descrizione: 'Arci nazionale ha attivato un progetto di crowdfunding specifico per il Bibliobus, """"BIBLIOBUS ARCI – La Cultura per la Ricostruzione"""". Cosa finanzieremo con i fondi raccolti - Assicurazione autobus e volontari - Revisione autobus - Combustibile - Spese di gestione - Attività itineranti (presentazioni con autori, iniziative pubbliche, etc.) - Acquisto nuovi libri - Abbonamenti a riviste e quotidiani - Acquisto di attrezzatura minuta (sedie, tavolino, ombrellone etc..)'
-indirizzo: ''
-lat: ''
-lon: ''
-link: 'https://www.produzionidalbasso.com/project/bibliobus-arci-la-cultura-per-la-ricostruzione/'
-immagine: ''
-data: 14/09/2016
-</yamldata></pre>
-",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/307,176951458,2016-09-20 14:41:46,2016-09-14 16:13:17,ARCI Nazionale,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""cosa"": ""ARCI Nazionale"", ""data"": ""14/09/2016"", ""descrizione"": ""Arci nazionale ha attivato un progetto di crowdfunding specifico per il Bibliobus, \""\""BIBLIOBUS ARCI \u2013 La Cultura per la Ricostruzione\""\"". Cosa finanzieremo con i fondi raccolti - Assicurazione autobus e volontari - Revisione autobus - Combustibile - Spese di gestione - Attivit\u00e0 itineranti (presentazioni con autori, iniziative pubbliche, etc.) - Acquisto nuovi libri - Abbonamenti a riviste e quotidiani - Acquisto di attrezzatura minuta (sedie, tavolino, ombrellone etc..)"", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""https://www.produzionidalbasso.com/project/bibliobus-arci-la-cultura-per-la-ricostruzione/"", ""lon"": """", ""tel"": """"}","<pre><yamldata>tel: ''
 email: ''
 cosa: 'ARCI Nazionale'
