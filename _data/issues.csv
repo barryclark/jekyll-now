@@ -19,6 +19,16 @@ link: 'https://www.airbnb.it/disaster/italy'
 immagine: ''
 data: 19/01/2017
 </yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1754,201817881,2017-01-19 10:40:41,2017-01-19 10:20:48,Ospitalità a Feltre,46.0163755,11.9062541,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,http://i.imgur.com/RFlrG7e.jpg,"{""data"": ""19/01/2017"", ""descrizione"": ""Offro ospitalit\u00e0 gratuita in piccolo appartamento da condividere a 1 (2 se ci si adatta) persone giovani non fumatrici e incensurate che sentono il bisogno di allontanarsi dalle zone terremotate nei mesi invernali! L'appartamento \u00e8 di 60mq, riscaldamento autonomo, wifi, la dispensa \u00e8 rifornita di cibo biologico, e viene pulito 2 volte al mese. Ho 35 anni e passo tutta la giornata al lavoro. Posso collaborare anche per trovare un lavoro part-time per il periodo di permanenza concordato se ci sono le condizioni per farlo. Mi trovate su fb come Vago Vago"", ""email"": ""thomasvago@alice.it"", ""immagine"": ""http://i.imgur.com/RFlrG7e.jpg"", ""indirizzo"": ""Via Giuseppe Garibaldi, Feltre, BL, Veneto, 32032, Italia"", ""lat"": ""46.0163755"", ""link"": """", ""lon"": ""11.9062541"", ""tel"": ""+39 3478685600""}","<pre><yamldata>tel: '+39 3478685600'
+email: thomasvago@alice.it
+descrizione: 'Offro ospitalità gratuita in piccolo appartamento da condividere a 1 (2 se ci si adatta) persone giovani non fumatrici e incensurate che sentono il bisogno di allontanarsi dalle zone terremotate nei mesi invernali! L''appartamento è di 60mq, riscaldamento autonomo, wifi, la dispensa è rifornita di cibo biologico, e viene pulito 2 volte al mese. Ho 35 anni e passo tutta la giornata al lavoro. Posso collaborare anche per trovare un lavoro part-time per il periodo di permanenza concordato se ci sono le condizioni per farlo. Mi trovate su fb come Vago Vago'
+indirizzo: 'Via Giuseppe Garibaldi, Feltre, BL, Veneto, 32032, Italia'
+lat: '46.0163755'
+lon: '11.9062541'
+link: ''
+immagine: 'http://i.imgur.com/RFlrG7e.jpg'
+data: 19/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1737,201809264,2017-01-19 09:53:57,2017-01-19 09:44:51,Offresi alloggio per 2 adulti ,,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""19/01/2017"", ""descrizione"": ""Offresi alloggio per 2 adulti con bambini. Siamo famiglia con bambina di 6 anni a Firenze. Offriamo condivisione della casa con stanza privata e bagno privato."", ""email"": ""paola.simonetti@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3384098231""}","<pre><yamldata>tel: '3384098231'
 email: paola.simonetti@gmail.com
 descrizione: 'Offresi alloggio per 2 adulti con bambini. Siamo famiglia con bambina di 6 anni a Firenze. Offriamo condivisione della casa con stanza privata e bagno privato.'
@@ -4922,16 +4932,6 @@ postale: ''
 causale: ''
 link: ''
 email: ''
-data: 01/11/2016
-</yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1013,186434932,2016-11-01 11:58:32,2016-11-01 00:19:28,"A Paganica villetta antisismica per famiglia, anche per persone con difficoltà motoria",,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Ottobre""]",,,"{""data"": ""01/11/2016"", ""descrizione"": ""a paganica zona alta villetta su due piani giardino strada privata. possibilit\u00e0 di due appartamenti per sfollati sisma del centro italia. L'immobile \u00e8 stato realizzato con criteri antisismici ed \u00e8 munito della relativa certificazione del genio civile ed \u00e8 quindi anche assicurato per l'evento sisma. L'appartamento al piano terra \u00e8 comodo ed adatto per famiglia composta da persone con difficolt\u00e0 motoria (sedia a rotelle ecc)"", ""email"": ""paloca2@libero.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3451526258""}","<pre><yamldata>tel: '3451526258'
-email: paloca2@libero.it
-descrizione: 'a paganica zona alta villetta su due piani giardino strada privata. possibilità di due appartamenti per sfollati sisma del centro italia. L''immobile è stato realizzato con criteri antisismici ed è munito della relativa certificazione del genio civile ed è quindi anche assicurato per l''evento sisma. L''appartamento al piano terra è comodo ed adatto per famiglia composta da persone con difficoltà motoria (sedia a rotelle ecc)'
-indirizzo: ''
-lat: ''
-lon: ''
-link: ''
-immagine: ''
 data: 01/11/2016
 </yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1013,186434932,2016-11-01 11:58:32,2016-11-01 00:19:28,"A Paganica villetta antisismica per famiglia, anche per persone con difficoltà motoria",,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Ottobre""]",,,"{""data"": ""01/11/2016"", ""descrizione"": ""a paganica zona alta villetta su due piani giardino strada privata. possibilit\u00e0 di due appartamenti per sfollati sisma del centro italia. L'immobile \u00e8 stato realizzato con criteri antisismici ed \u00e8 munito della relativa certificazione del genio civile ed \u00e8 quindi anche assicurato per l'evento sisma. L'appartamento al piano terra \u00e8 comodo ed adatto per famiglia composta da persone con difficolt\u00e0 motoria (sedia a rotelle ecc)"", ""email"": ""paloca2@libero.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3451526258""}","<pre><yamldata>tel: '3451526258'
