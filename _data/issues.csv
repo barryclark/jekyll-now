@@ -548,7 +548,7 @@ descrizione: 'Stamani nuove forte scosse in provincia dell''Aquila, avvertite an
 link: ''
 data: 18/01/2017
 </yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1592,201550805,2017-01-18 12:24:53,2017-01-18 11:42:41,Gruppi elettrogeni #Montemonaco (AP),42.8991551,13.3268587,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""Gruppi elettrogeni #Montemonaco (AP)"", ""data"": ""18/01/2017"", ""descrizione"": ""Serve aiuto a Montemonaco, sono isolati con 2 metri neve senza corrente gruppi elettrogeni down, non possono comunicare linee telefoniche interrotte."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Strada Provinciale 83 Subappennina, Montemonaco, AP, Marche, 63088, Italia"", ""lat"": ""42.8991551"", ""link"": ""https://m.facebook.com/story.php?story_fbid=10210000862273070&id=1081124294"", ""lon"": ""13.3268587"", ""tel"": ""3455758496""}","<pre><yamldata>tel: '3455758496'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1592,201550805,2017-01-19 07:46:34,2017-01-18 11:42:41,Gruppi elettrogeni #Montemonaco (AP),42.8991551,13.3268587,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""Gruppi elettrogeni #Montemonaco (AP)"", ""data"": ""18/01/2017"", ""descrizione"": ""Serve aiuto a Montemonaco, sono isolati con 2 metri neve senza corrente gruppi elettrogeni down, non possono comunicare linee telefoniche interrotte."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Strada Provinciale 83 Subappennina, Montemonaco, AP, Marche, 63088, Italia"", ""lat"": ""42.8991551"", ""link"": ""https://m.facebook.com/story.php?story_fbid=10210000862273070&id=1081124294"", ""lon"": ""13.3268587"", ""tel"": ""3455758496""}","<pre><yamldata>tel: '3455758496'
 email: ''
 cosa: 'Gruppi elettrogeni #Montemonaco (AP)'
 descrizione: 'Serve aiuto a Montemonaco, sono isolati con 2 metri neve senza corrente gruppi elettrogeni down, non possono comunicare linee telefoniche interrotte.'
@@ -558,7 +558,7 @@ lon: '13.3268587'
 link: 'https://m.facebook.com/story.php?story_fbid=10210000862273070&id=1081124294'
 immagine: ''
 data: 18/01/2017
-</yamldata></pre>",open
+</yamldata></pre>",closed
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1591,201547005,2017-01-18 23:56:12,2017-01-18 11:26:06,#Aquila Edifici comunali disponibili per l'accoglienza 18/01,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili""]",,,{},"<pre><yamldata>titolo: 'Edifici comunali disponibili per l''accoglienza 18/01'
 descrizione: 'Il Centro operativo comunale (Coc) dell'Aquila ha reso noto che, all''elenco degli edifici comunali disponibili e pronti per l''accoglienza per chi non volesse rimanere nelle proprie abitazioni, sono stati aggiunti il Musp della Scuola Primaria di Arischia e lo stadio di Acquasanta (palestra e spogliatoi)'
 link: ''
