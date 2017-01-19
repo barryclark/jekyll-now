@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1772,201825393,2017-01-19 11:05:20,2017-01-19 10:52:13,Servono coperte a #Montereale.,42.5250955,13.2440724,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""Servono coperte a #Montereale."", ""data"": ""19/01/2017"", ""descrizione"": ""Servono coperte a Montereale. Chi pu\u00f2 fornirle si metta in contatto con la Cgil Rieti al 0746270190."", ""email"": """", ""immagine"": """", ""indirizzo"": ""SS266, Montereale, AQ, ABR, Italia"", ""lat"": ""42.5250955"", ""link"": ""https://twitter.com/cgilrietirmeva/status/822014229578448897"", ""lon"": ""13.2440724"", ""tel"": """"}","<pre><yamldata>tel: ''
+email: ''
+cosa: 'Servono coperte a #Montereale.'
+descrizione: 'Servono coperte a Montereale. Chi può fornirle si metta in contatto con la Cgil Rieti al 0746270190.'
+indirizzo: 'SS266, Montereale, AQ, ABR, Italia'
+lat: '42.5250955'
+lon: '13.2440724'
+link: 'https://twitter.com/cgilrietirmeva/status/822014229578448897'
+immagine: ''
+data: 19/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1771,201824852,2017-01-19 10:54:05,2017-01-19 10:50:03,Camera tripla GROSSETO,42.7612711709209,11.119633913040161,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""Camera tripla GROSSETO"", ""data"": ""19/01/2017"", ""descrizione"": ""Offro per famigliola o mamma con bambini,camera con tre letti singoli(possibilit\u00e0 lettino infante),riscaldamento,bagno e uso cucina,giochi. Purtroppo solo per gennaio e febbraio."", ""email"": ""nicolettadipietro@yahoo.it"", ""immagine"": """", ""indirizzo"": ""Il Carrettino (gluten free food), Via Tagliamento, Sugherella, Grosseto, GR, Tuscany, 58100, Italia"", ""lat"": ""42.7612711709209"", ""link"": """", ""lon"": ""11.119633913040161"", ""tel"": ""3403222782""}","<pre><yamldata>tel: '3403222782'
 email: nicolettadipietro@yahoo.it
 cosa: 'Camera tripla GROSSETO'
@@ -558,17 +569,6 @@ indirizzo: 'Piazza Bell''Italia, Centro Storico Nord, Zona Centro, Brescia, Lomb
 lat: '45.5399392'
 lon: '10.2204897'
 link: ''
-immagine: ''
-data: 18/01/2017
-</yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1630,201629867,2017-01-18 17:20:29,2017-01-18 16:51:26,Associazione offre 4 volontari per manovalanza gratuita,,,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""Offriamo manovalanza gratuita"", ""data"": ""18/01/2017"", ""descrizione"": ""L' associazione MAM beyond borders mette a disposizione 4 ragazzi volontari da Frosinone per lavori di manovalanza in zone terremotate (spalare neve, sistemazione stalle e cos\u00ec via) gi\u00e0 per i giorni Sabato 21 e Domenica22. Per informazioni potete contattarci sulla pagina Facebook \""mam beyond borders \"". Grazie!"", ""email"": ""gengisvannir@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""https://m.facebook.com/profile.php?id=563881680324872"", ""lon"": """", ""tel"": ""3297239367""}","<pre><yamldata>tel: '3297239367'
-email: gengisvannir@gmail.com
-cosa: 'Offriamo manovalanza gratuita'
-descrizione: 'L'' associazione MAM beyond borders mette a disposizione 4 ragazzi volontari da Frosinone per lavori di manovalanza in zone terremotate (spalare neve, sistemazione stalle e così via) già per i giorni Sabato 21 e Domenica22. Per informazioni potete contattarci sulla pagina Facebook ""mam beyond borders "". Grazie!'
-indirizzo: ''
-lat: ''
-lon: ''
-link: 'https://m.facebook.com/profile.php?id=563881680324872'
 immagine: ''
 data: 18/01/2017
 </yamldata></pre>",open
