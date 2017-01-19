@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Projects
-permalink: /projects.md/
+permalink: /projects/
 published: true
 ---
 
