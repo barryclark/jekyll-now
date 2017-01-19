@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1692,201785383,2017-01-19 08:07:15,2017-01-19 07:39:27,Offresi pala da neve per trattore,,,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""Pala da neve per trattore"", ""data"": ""19/01/2017"", ""descrizione"": ""Buongiorno, vi contatto dalla Geo Italy Srl. Siamo una ditta di Asti, costruiamo e commercializziamo attrezzatura agricola. Vorremmo donare una pala da neve per trattore. Si tratta di un aiuto specifico, ci serve qualcuno che abbia un trattore e gli serva una pala da neve per liberare le strade ai soccorsi. Potete darci un nominativo? Vorremmo saltare le lungaggini burocratiche ed arrivare subito a chi ne abbia veramente bisogno. Guido Di Paolo"", ""email"": ""guido.dipaolo@geo-agric.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""https://www.geo-agric.com"", ""lon"": """", ""tel"": ""3406569627""}","<pre><yamldata>tel: '3406569627'
+email: guido.dipaolo@geo-agric.com
+cosa: 'Pala da neve per trattore'
+descrizione: 'Buongiorno, vi contatto dalla Geo Italy Srl. Siamo una ditta di Asti, costruiamo e commercializziamo attrezzatura agricola. Vorremmo donare una pala da neve per trattore. Si tratta di un aiuto specifico, ci serve qualcuno che abbia un trattore e gli serva una pala da neve per liberare le strade ai soccorsi. Potete darci un nominativo? Vorremmo saltare le lungaggini burocratiche ed arrivare subito a chi ne abbia veramente bisogno. Guido Di Paolo'
+indirizzo: ''
+lat: ''
+lon: ''
+link: 'https://www.geo-agric.com'
+immagine: ''
+data: 19/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1691,201781338,2017-01-19 07:32:24,2017-01-19 07:13:23,OFFRO ALLOGGIO CON VITTO PER 2-3 PERSONE A RIMINI,,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""19/01/2017"", ""descrizione"": ""OFFRO ALLOGGIO CON VITTO PER 2/3 PERSONE PRESSO FAMIGLIA A RIMINI VIA FUCINI, DISPONIBILIT\u00c0 IMMEDIATA."", ""email"": ""criluglio65@hotmail.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3663166280""}","<pre><yamldata>tel: '3663166280'
 email: criluglio65@hotmail.it
 descrizione: 'OFFRO ALLOGGIO CON VITTO PER 2/3 PERSONE PRESSO FAMIGLIA A RIMINI VIA FUCINI, DISPONIBILITÀ IMMEDIATA.'
@@ -3105,17 +3116,6 @@ link: ''
 immagine: 'http://i.imgur.com/FOVSz6Y.jpg'
 data: 13/11/2016
 </yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1248,188955628,2016-11-30 23:16:18,2016-11-13 06:40:51,Giocattoli per i bambini di #Preci,,,"[""Accettato"", ""Bambini"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Sisma Ottobre""]",,,"{""cosa"": ""Giocattoli"", ""data"": ""13/11/2016"", ""descrizione"": ""Siamo un gruppo di mamme con bambini dai 5 ai 10 anni di Preci con i propri cuccioli terrorizzati dalla paura del terremoto, chiedevano se per Natale potevano arrivare dei giochi e dei vestiti nuovi per rallegrare, soprattutto il loro animo, grazie Barbara D'Angeli."", ""email"": ""dangelibarbara@yahoo.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3298140621""}","<pre><yamldata>tel: '3298140621'
-email: dangelibarbara@yahoo.it
-cosa: Giocattoli
-descrizione: 'Siamo un gruppo di mamme con bambini dai 5 ai 10 anni di Preci con i propri cuccioli terrorizzati dalla paura del terremoto, chiedevano se per Natale potevano arrivare dei giochi e dei vestiti nuovi per rallegrare, soprattutto il loro animo, grazie Barbara D''Angeli.'
-indirizzo: ''
-lat: ''
-lon: ''
-link: ''
-immagine: ''
-data: 13/11/2016
-</yamldata></pre>",closed
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1248,188955628,2016-11-30 23:16:18,2016-11-13 06:40:51,Giocattoli per i bambini di #Preci,,,"[""Accettato"", ""Bambini"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Sisma Ottobre""]",,,"{""cosa"": ""Giocattoli"", ""data"": ""13/11/2016"", ""descrizione"": ""Siamo un gruppo di mamme con bambini dai 5 ai 10 anni di Preci con i propri cuccioli terrorizzati dalla paura del terremoto, chiedevano se per Natale potevano arrivare dei giochi e dei vestiti nuovi per rallegrare, soprattutto il loro animo, grazie Barbara D'Angeli."", ""email"": ""dangelibarbara@yahoo.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3298140621""}","<pre><yamldata>tel: '3298140621'
 email: dangelibarbara@yahoo.it
 cosa: Giocattoli
