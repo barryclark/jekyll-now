@@ -8,7 +8,7 @@ published: true
 # Personality
  	* Myers-Briggs Personality Type: INTJ / INFJ
     
-    **INTJ** (introversion, intuition, thinking, judgment) and [**INFJ** (introversion, intuition, feeling, judgment)](https://www.16personalities.com/infj-personality) are abbreviations used in the publications of the [Myers-Briggs Type Indicator (MBTI)](https://www.cpp.com/products/mbti/index.aspx) to refer to one of the 16 psychological types.
+   **INTJ** (introversion, intuition, thinking, judgment) and [**INFJ** (introversion, intuition, feeling, judgment)](https://www.16personalities.com/infj-personality) are abbreviations used in the publications of the [Myers-Briggs Type Indicator (MBTI)](https://www.cpp.com/products/mbti/index.aspx) to refer to one of the 16 psychological types.
     
     The INTJ represents "The Mastermind," according to the Myters-Briggs test. INTJs are one of the rarest of the 16 psychological types and account for approximately 2-4% of the population.[[1]](https://www.capt.org/mbti-assessment/estimated-frequencies.htm) Women of this personality type are especially rare, forming just 0.8% of the population.
     
