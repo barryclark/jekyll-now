@@ -31,10 +31,12 @@ _**ENFJ-A** (extraverted, intuitive, feeling, judging, assertive) are abbreviati
         - Ruby
     
 * Past Experience:    
-		- Agile ; SCRUM Development
-        - SASS, LESS, Bootstrap, GitHub
-    	- NoSQL, MySQL, AngularJS, Node.js; Express.js
-    	- Jekyll, Wordpress, Cucumber, Corona SDK
+        - SASS, LESS
+    	- NoSQL, MySQL
+        - AngularJS, Node.js; Express.js
+    	- Jekyll, Wordpress
+        - Cucumber
+        - Corona SDK
 
 * Current Tools (2017):        
 		- Photoshop 	- XCode 	- StackOverflow
