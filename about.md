@@ -8,6 +8,8 @@ published: true
 
 ##  Personality
  **Myers-Briggs Personality Type:** = ENFJ-A
+ 
+ <center>![]({{site.baseurl}}//Screen%20Shot%202017-01-19%20at%2010.03.31%20AM.png)</center>
     
 **ENFJ-A** (extraverted, intuitive, feeling, judging, assertive) are abbreviations used in the publications of the [Myers-Briggs Type Indicator (MBTI)](https://www.cpp.com/products/mbti/index.aspx) to refer to one of the 16 psychological types.
   
