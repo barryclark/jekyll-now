@@ -72,6 +72,16 @@ link: ''
 immagine: ''
 data: 19/01/2017
 </yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1699,201794703,2017-01-19 10:09:25,2017-01-19 08:36:38,Ospitalità a Milano,,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""19/01/2017"", ""descrizione"": ""Milano citt\u00e0. La mia casa non \u00e8 grande, ma posso ospitare fino a due persone ed eventualmente anche un gatto/cane, finch\u00e8 sar\u00e0 necessario, io ho un piccolo cane."", ""email"": ""barbaralupis@hotmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3451775513""}","<pre><yamldata>tel: '3451775513'
+email: barbaralupis@hotmail.com
+descrizione: 'Milano città. La mia casa non è grande, ma posso ospitare fino a due persone ed eventualmente anche un gatto/cane, finchè sarà necessario, io ho un piccolo cane.'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 19/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1698,201792562,2017-01-19 09:43:34,2017-01-19 08:25:00,Offresi alloggio per tre persone a Chiusi (Si),43.017167,11.9354319,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""19/01/2017"", ""descrizione"": ""Il signor Carmine de Vivo mette a disposizione 3 posti letto in un appartamento a Chiusi (SI) confine con l'Umbria, a circa 2 ore dalle zona colpite dal Sisma."", ""email"": ""alfaric@libero.it"", ""immagine"": """", ""indirizzo"": ""Strada Provinciale di Chianciano, Chiusi, SI, Tuscany, 53043, Italia"", ""lat"": ""43.017167"", ""link"": ""https://www.facebook.com/carmine.devivo1?lst=756693526%3A1569347704%3A1484814060"", ""lon"": ""11.9354319"", ""tel"": ""3334017818""}","<pre><yamldata>tel: '3334017818'
 email: alfaric@libero.it
 descrizione: 'Il signor Carmine de Vivo mette a disposizione 3 posti letto in un appartamento a Chiusi (SI) confine con l''Umbria, a circa 2 ore dalle zona colpite dal Sisma.'
@@ -4417,17 +4427,6 @@ lat: '42.79525894512876'
 lon: '13.092012405395508'
 link: 'http://www.enpa.it'
 immagine: 'http://i.imgur.com/bUIqTgH.jpg'
-data: 03/11/2016
-</yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1083,187049557,2016-11-03 14:02:50,2016-11-03 12:43:36,ENPA | Ente Nazionale Protezione Animali Onlus,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Raccolte Fondi"", ""Sisma Ottobre""]",,,"{""bic"": ""ICRAITRREQ0"", ""causale"": ""Terremoto"", ""chi"": ""ENPA | Ente Nazionale Protezione Animali Onlus"", ""data"": ""03/11/2016"", ""descrizione"": ""Prosegue senza sosta l'attivit\u00e0 di ENPA nel cratere sempre pi\u00f9 esteso del terremoto in Centro Italia. I nostri volontari e i nostri mezzi operano incessantemente, con passione e abnegazione, da mesi nell'area. Per segnalazioni, necessit\u00e0 e disponibilit\u00e0 in loco contattare 342.9565574 oppure uo.enpa@gmail.com. POTETE AIUTARCI AD AIUTARE GLI ANIMALI E I LORO PROPRIETARI COLPITI DA QUESTA EMERGENZA CON UN CONTRIBUTO. Bonifico su IBAN IT 39 S 08530 46040 000430101775 intestato a E.N.P.A. ENTE NAZIONALE PROTEZIONE ANIMALI causale TERREMOTO Bonifico internazionale su codice BIC ICRAITRREQ0 intestato a E.N.P.A. ENTE NAZIONALE PROTEZIONE ANIMALI causale TERREMOTO Conto Corrente Postale 7482084 intestato a \""MPS cassiere pro tempore ENPA\"" causale TERREMOTO Ulteriori info su www.enpa.it | Diretta interventi su twitter.com/enpaonlus"", ""email"": ""uo.enpa@gmail.com"", ""iban"": ""IT 39 S 08530 46040 000430101775"", ""intestazione"": ""E.N.P.A. ENTE NAZIONALE PROTEZIONE ANIMALI"", ""link"": ""http://www.enpa.it"", ""postale"": ""7482084""}","<pre><yamldata>chi: 'ENPA | Ente Nazionale Protezione Animali Onlus'
-descrizione: 'Prosegue senza sosta l''attività di ENPA nel cratere sempre più esteso del terremoto in Centro Italia. I nostri volontari e i nostri mezzi operano incessantemente, con passione e abnegazione, da mesi nell''area. Per segnalazioni, necessità e disponibilità in loco contattare 342.9565574 oppure uo.enpa@gmail.com. POTETE AIUTARCI AD AIUTARE GLI ANIMALI E I LORO PROPRIETARI COLPITI DA QUESTA EMERGENZA CON UN CONTRIBUTO. Bonifico su IBAN IT 39 S 08530 46040 000430101775 intestato a E.N.P.A. ENTE NAZIONALE PROTEZIONE ANIMALI causale TERREMOTO Bonifico internazionale su codice BIC ICRAITRREQ0 intestato a E.N.P.A. ENTE NAZIONALE PROTEZIONE ANIMALI causale TERREMOTO Conto Corrente Postale 7482084 intestato a ""MPS cassiere pro tempore ENPA"" causale TERREMOTO Ulteriori info su www.enpa.it | Diretta interventi su twitter.com/enpaonlus'
-intestazione: 'E.N.P.A. ENTE NAZIONALE PROTEZIONE ANIMALI'
-iban: 'IT 39 S 08530 46040 000430101775'
-bic: ICRAITRREQ0
-postale: '7482084'
-causale: Terremoto
-link: 'http://www.enpa.it'
-email: uo.enpa@gmail.com
 data: 03/11/2016
 </yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1083,187049557,2016-11-03 14:02:50,2016-11-03 12:43:36,ENPA | Ente Nazionale Protezione Animali Onlus,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Raccolte Fondi"", ""Sisma Ottobre""]",,,"{""bic"": ""ICRAITRREQ0"", ""causale"": ""Terremoto"", ""chi"": ""ENPA | Ente Nazionale Protezione Animali Onlus"", ""data"": ""03/11/2016"", ""descrizione"": ""Prosegue senza sosta l'attivit\u00e0 di ENPA nel cratere sempre pi\u00f9 esteso del terremoto in Centro Italia. I nostri volontari e i nostri mezzi operano incessantemente, con passione e abnegazione, da mesi nell'area. Per segnalazioni, necessit\u00e0 e disponibilit\u00e0 in loco contattare 342.9565574 oppure uo.enpa@gmail.com. POTETE AIUTARCI AD AIUTARE GLI ANIMALI E I LORO PROPRIETARI COLPITI DA QUESTA EMERGENZA CON UN CONTRIBUTO. Bonifico su IBAN IT 39 S 08530 46040 000430101775 intestato a E.N.P.A. ENTE NAZIONALE PROTEZIONE ANIMALI causale TERREMOTO Bonifico internazionale su codice BIC ICRAITRREQ0 intestato a E.N.P.A. ENTE NAZIONALE PROTEZIONE ANIMALI causale TERREMOTO Conto Corrente Postale 7482084 intestato a \""MPS cassiere pro tempore ENPA\"" causale TERREMOTO Ulteriori info su www.enpa.it | Diretta interventi su twitter.com/enpaonlus"", ""email"": ""uo.enpa@gmail.com"", ""iban"": ""IT 39 S 08530 46040 000430101775"", ""intestazione"": ""E.N.P.A. ENTE NAZIONALE PROTEZIONE ANIMALI"", ""link"": ""http://www.enpa.it"", ""postale"": ""7482084""}","<pre><yamldata>chi: 'ENPA | Ente Nazionale Protezione Animali Onlus'
