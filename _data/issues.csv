@@ -277,6 +277,16 @@ link: ''
 immagine: ''
 data: 19/01/2017
 </yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1800,201844960,2017-01-19 14:37:10,2017-01-19 12:20:03,Offresi alloggio a famiglia in B&B in provincia di Asti,,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""19/01/2017"", ""descrizione"": ""Sono il proprietario di un B&B in provincia di Asti...io e mia moglie offriamo la disponibilit\u00e0 della nostra struttura dal 5 febbraio fino a met\u00e0 marzo...vogliamo offrire un weekend o una settimana a qualche famiglia che sta molto peggio di noi, magari con i loro bambini! Offriamo il nostro alloggio con servizio B&B con colazione... speriamo di far felice qualche famiglia!"", ""email"": ""bbdanonnairene@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3292541873""}","<pre><yamldata>tel: '3292541873'
+email: bbdanonnairene@gmail.com
+descrizione: 'Sono il proprietario di un B&B in provincia di Asti...io e mia moglie offriamo la disponibilità della nostra struttura dal 5 febbraio fino a metà marzo...vogliamo offrire un weekend o una settimana a qualche famiglia che sta molto peggio di noi, magari con i loro bambini! Offriamo il nostro alloggio con servizio B&B con colazione... speriamo di far felice qualche famiglia!'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 19/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1799,201842248,2017-01-19 13:48:11,2017-01-19 12:07:22,"Università di #Teramo: sedi chiuse fino al 21 gennaio, attivato centro di accoglienza studenti",,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili"", ""Sisma Gennaio 2017""]",,,"{""data"": ""19/01/2017"", ""descrizione"": ""Universit\u00e0 di Teramo chiusa fino al 21 gennaio. Ospedale veterinario di Piano D'Accio \u00e8 centro di Accoglienza per studenti e dottorandi."", ""link"": ""http://www.unite.it/UniTE/Engine/RAServePG.php/P/364621UTE0400"", ""titolo"": ""AGGIORNAMENTO: SEDI CHIUSE FINO AL 21 GENNAIO #Teramo""}","<pre><yamldata>titolo: 'AGGIORNAMENTO: SEDI CHIUSE FINO AL 21 GENNAIO #Teramo'
 descrizione: 'Università di Teramo chiusa fino al 21 gennaio. Ospedale veterinario di Piano D''Accio è centro di Accoglienza per studenti e dottorandi.'
 link: 'http://www.unite.it/UniTE/Engine/RAServePG.php/P/364621UTE0400'
