@@ -1,4 +1,20 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1939,201956046,2017-01-19 19:43:36,2017-01-19 19:42:45,Consulenza legale gratuita,,,"[""Accettato"", ""Donazioni"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""Consulenza legale gratuita"", ""data"": ""19/01/2017"", ""descrizione"": ""Offro consulenza ed assistenza legale TOTALMENTE GRATUITA per gli amici che hanno subito danni dal terremoto."", ""email"": ""Claudio_dg@hotmail.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": """"}","<pre><yamldata>tel: ''
+email: Claudio_dg@hotmail.it
+cosa: 'Consulenza legale gratuita'
+descrizione: 'Offro consulenza ed assistenza legale TOTALMENTE GRATUITA per gli amici che hanno subito danni dal terremoto.'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 19/01/2017
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1938,201955057,2017-01-19 19:44:37,2017-01-19 19:38:35,Cittareale (RI),,,"[""Accettato"", ""Form"", ""Notizie Utili"", ""Sisma Gennaio 2017""]",,,"{""data"": ""19/01/2017"", ""descrizione"": ""Continuano le scosse in Centro Italia. A Cittareale, vicino Amatrice, in Provincia di Rieti, il paese \u00e8 in ginocchio per i continui crolli e la neve flagella gli abitanti e anche i soccorritori."", ""link"": """", ""titolo"": ""Cittareale (RI)""}","<pre><yamldata>titolo: 'Cittareale (RI)'
+descrizione: 'Continuano le scosse in Centro Italia. A Cittareale, vicino Amatrice, in Provincia di Rieti, il paese è in ginocchio per i continui crolli e la neve flagella gli abitanti e anche i soccorritori.'
+link: ''
+data: 19/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1920,201929702,2017-01-19 17:53:53,2017-01-19 17:49:34,Offro camera matrimoniale a #Manziana (RM),,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""19/01/2017"", ""descrizione"": ""Offro la mia camera matrimoniale per 2 persone ed un bimbo piccolo, fino a quando la neve ed il brutto tempo non permetter\u00e0 il rientro. Siamo una coppia di sorella e fratello di 64 anni. Viviamo a Manziana -rm- in una casetta di campagna appena fuori paese. Vitto compreso"", ""email"": ""daniela.pompili@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""337473990""}","<pre><yamldata>tel: '337473990'
 email: daniela.pompili@gmail.com
 descrizione: 'Offro la mia camera matrimoniale per 2 persone ed un bimbo piccolo, fino a quando la neve ed il brutto tempo non permetterà il rientro. Siamo una coppia di sorella e fratello di 64 anni. Viviamo a Manziana -rm- in una casetta di campagna appena fuori paese. Vitto compreso'
