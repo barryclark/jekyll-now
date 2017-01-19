@@ -1,4 +1,14 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1962,201982750,2017-01-19 21:39:27,2017-01-19 21:37:55,Metto a disposizione 2 camere con bagno a Milano,45.4749233,9.2166988,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""19/01/2017"", ""descrizione"": ""metto a disposizione 2 camere con bagno indipendente a Milano."", ""email"": ""alessandrofoti@alice.it"", ""immagine"": """", ""indirizzo"": ""Via Francesco Hayez, Zona Buenos Aires, Municipio 3, Milano, Lombardia, 20129, Italia"", ""lat"": ""45.4749233"", ""link"": """", ""lon"": ""9.2166988"", ""tel"": ""3357043887""}","<pre><yamldata>tel: '3357043887'
+email: alessandrofoti@alice.it
+descrizione: 'metto a disposizione 2 camere con bagno indipendente a Milano.'
+indirizzo: 'Via Francesco Hayez, Zona Buenos Aires, Municipio 3, Milano, Lombardia, 20129, Italia'
+lat: '45.4749233'
+lon: '9.2166988'
+link: ''
+immagine: ''
+data: 19/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1960,201981320,2017-01-19 21:34:26,2017-01-19 21:31:52,Offresi cibo per cani/gatti e manovalanza per costruire ripari per gli animali,,,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""cibo per cani,gatti e quanto altro possa servire per le bestiole delle zone terremotate"", ""data"": ""19/01/2017"", ""descrizione"": ""Stiamo raccogliendo cibo per animali, coperte, cucce per gli animali che ne hanno bisogno, inoltre siamo un gruppo di persone disponibili per lavori di manovalanza e disposti ad aiutare a costruire ripari per questi animali.Contattateci e fateci sapere dove possiamo venire. Massimo e Manuela 328-4089801 / 347-9526902."", ""email"": ""mafly66@tiscali.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3479526902""}","<pre><yamldata>tel: '3479526902'
 email: mafly66@tiscali.it
 cosa: 'cibo per cani,gatti e quanto altro possa servire per le bestiole delle zone terremotate'
@@ -443,7 +453,7 @@ link: ''
 immagine: ''
 data: 19/01/2017
 </yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1907,201911181,2017-01-19 17:20:01,2017-01-19 16:37:37,Offro agli sfollati alloggio g,38.94151988716845,17.099533081054688,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""19/01/2017"", ""descrizione"": ""Offro agli sfollati alloggio gratuito in provincia di Crotone per famiglia di 5/6 persone fino a miglioramento condizioni meteo."", ""email"": ""otticamaiolo@libero.it"", ""immagine"": """", ""indirizzo"": ""Via Capo Rizzuto, Stumio, Isola di Capo Rizzuto, KR, CAL, 88841, Italia"", ""lat"": ""38.94151988716845"", ""link"": """", ""lon"": ""17.099533081054688"", ""tel"": ""3282027919""}","<pre><yamldata>tel: '3282027919'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1907,201911181,2017-01-19 21:35:23,2017-01-19 16:37:37,Offro alloggio in provincia di Crotone ,38.94151988716845,17.099533081054688,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""19/01/2017"", ""descrizione"": ""Offro agli sfollati alloggio gratuito in provincia di Crotone per famiglia di 5/6 persone fino a miglioramento condizioni meteo."", ""email"": ""otticamaiolo@libero.it"", ""immagine"": """", ""indirizzo"": ""Via Capo Rizzuto, Stumio, Isola di Capo Rizzuto, KR, CAL, 88841, Italia"", ""lat"": ""38.94151988716845"", ""link"": """", ""lon"": ""17.099533081054688"", ""tel"": ""3282027919""}","<pre><yamldata>tel: '3282027919'
 email: otticamaiolo@libero.it
 descrizione: 'Offro agli sfollati alloggio gratuito in provincia di Crotone per famiglia di 5/6 persone fino a miglioramento condizioni meteo.'
 indirizzo: 'Via Capo Rizzuto, Stumio, Isola di Capo Rizzuto, KR, CAL, 88841, Italia'
@@ -467,6 +477,16 @@ lat: ''
 lon: ''
 link: ''
 immagine: 'http://i.imgur.com/1udKYam.jpg'
+data: 19/01/2017
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1901,201904710,2017-01-19 21:36:36,2017-01-19 16:15:44,Si mette a disposizione due posti per cani a Montegranaro (Fm),43.2325226,13.6315802,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""19/01/2017"", ""descrizione"": ""Si mette a disposizione due posti per cani in un allevamento a montegranaro (FM)."", ""email"": ""silviagirotti@hotmail.it"", ""immagine"": """", ""indirizzo"": ""Strada Provinciale SP30 Fermana, Montegranaro, FM, Marche, 63812, Italia"", ""lat"": ""43.2325226"", ""link"": ""terremotocentroitalia.info"", ""lon"": ""13.6315802"", ""tel"": ""3397377884""}","<pre><yamldata>tel: '3397377884'
+email: silviagirotti@hotmail.it
+descrizione: 'Si mette a disposizione due posti per cani in un allevamento a montegranaro (FM).'
+indirizzo: 'Strada Provinciale SP30 Fermana, Montegranaro, FM, Marche, 63812, Italia'
+lat: '43.2325226'
+lon: '13.6315802'
+link: terremotocentroitalia.info
+immagine: ''
 data: 19/01/2017
 </yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1899,201902819,2017-01-19 16:13:49,2017-01-19 16:09:21,Posto per due cani #Montegranaro,,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""Posto per due cani"", ""data"": ""19/01/2017"", ""descrizione"": ""Metto a disposizione due posti per cani in un allevamento a Montegranaro"", ""email"": ""silviagirotti@hotmail.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3397377884""}","<pre><yamldata>tel: '3397377884'
@@ -689,10 +709,10 @@ link: ''
 immagine: ''
 data: 19/01/2017
 </yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1828,201854012,2017-01-19 13:48:11,2017-01-19 12:56:14,Offro stallo animali domestici e padroni #Canossa,44.5383549,10.4157866,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""Offro stallo animali domestici"", ""data"": ""19/01/2017"", ""descrizione"": ""A Trinit\u00e0 di Canossa (Reggio Emilia) Offro stallo a cani, gatti, furetti, conigli, cavie o qualsiasi altro animale previo accordi. Abito in campagna. Offro anche alloggio ai proprietari che non vogliono separarsi dai loro animali, ho due posti letto + una culla/lettino."", ""email"": ""elena_lasagni@virgilio.it"", ""immagine"": """", ""indirizzo"": ""SP79, Canossa, RE, EMR, 42026, Italia"", ""lat"": ""44.5383549"", ""link"": """", ""lon"": ""10.4157866"", ""tel"": ""3389919241""}","<pre><yamldata>tel: '3389919241'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1828,201854012,2017-01-19 21:38:11,2017-01-19 12:56:14,Offro stallo animali domestici e padroni #Canossa,44.5383549,10.4157866,"[""Accettato"", ""Alloggi"", ""Donazioni"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""Offro stallo animali domestici"", ""data"": ""19/01/2017"", ""descrizione"": ""A Trinit\u00e0 di Canossa (Reggio Emilia) offro stallo a cani, gatti, furetti, conigli, cavie o qualsiasi altro animale previo accordi. Abito in campagna. Offro anche alloggio ai proprietari che non vogliono separarsi dai loro animali, ho due posti letto + una culla/lettino."", ""email"": ""elena_lasagni@virgilio.it"", ""immagine"": """", ""indirizzo"": ""SP79, Canossa, RE, EMR, 42026, Italia"", ""lat"": ""44.5383549"", ""link"": """", ""lon"": ""10.4157866"", ""tel"": ""3389919241""}","<pre><yamldata>tel: '3389919241'
 email: elena_lasagni@virgilio.it
 cosa: 'Offro stallo animali domestici'
-descrizione: 'A Trinità di Canossa (Reggio Emilia) Offro stallo a cani, gatti, furetti, conigli, cavie o qualsiasi altro animale previo accordi. Abito in campagna. Offro anche alloggio ai proprietari che non vogliono separarsi dai loro animali, ho due posti letto + una culla/lettino.'
+descrizione: 'A Trinità di Canossa (Reggio Emilia) offro stallo a cani, gatti, furetti, conigli, cavie o qualsiasi altro animale previo accordi. Abito in campagna. Offro anche alloggio ai proprietari che non vogliono separarsi dai loro animali, ho due posti letto + una culla/lettino.'
 indirizzo: 'SP79, Canossa, RE, EMR, 42026, Italia'
 lat: '44.5383549'
 lon: '10.4157866'
