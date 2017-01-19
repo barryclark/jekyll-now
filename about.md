@@ -8,7 +8,7 @@ published: true
 
 ## ENFJ-A, "The Protagonist" - _Myers-Briggs Personality Type_
 
-## **FUN FACT:**
+## :thought_balloon: **FUN FACT:**
 Protagonists are genuine, caring people who talk the talk and walk the walk, and nothing makes them happier than leading the charge, uniting and motivating their team with infectious enthusiasm.
     
 ![]({{site.baseurl}}/emilypmendez.github.io/images/protag-full-profile.png)
