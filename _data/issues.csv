@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1846,201861641,2017-01-19 13:35:00,2017-01-19 13:32:12,Brigate della Solidarietà cercano con urgenza generatori per aree terremotate ,,,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""Emergenza generatori"", ""data"": ""19/01/2017"", ""descrizione"": ""APPELLO URGENTE: Servono Generatori - Chiediamo a chi ne ha disposizione di donare generatori per il cratere. Chi \u00e8 disponibile ci contatti per email o su Facebook in privato - Brigate Solidariet\u00e0 Attiva"", ""email"": ""volontaribsa@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""https://www.facebook.com/terremotocentroitalia/"", ""lon"": """", ""tel"": """"}","<pre><yamldata>tel: ''
+email: 'volontaribsa@gmail.com'
+cosa: 'Emergenza generatori'
+descrizione: 'APPELLO URGENTE: Servono Generatori - Chiediamo a chi ne ha disposizione di donare generatori per il cratere. Chi è disponibile ci contatti per email o su Facebook in privato - Brigate Solidarietà Attiva'
+indirizzo: ''
+lat: ''
+lon: ''
+link: 'https://www.facebook.com/terremotocentroitalia/'
+immagine: ''
+data: 19/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1845,201861161,2017-01-19 13:32:34,2017-01-19 13:30:01,Da Bologna offresi roulotte con 4 posti letto e riscaldamento a gas,44.4936714,11.3430347,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""Roulotte #Bologna"", ""data"": ""19/01/2017"", ""descrizione"": ""A Bologna ho una roulotte con riscaldamento a gas incluso, 4 letti, cucina e bagno. La metto gratis a totale disposizione di chi ne avesse necessit\u00e0 nelle zone terremotate a tempo indefinito. Necessita di essere prelevata perch\u00e9 io mi trovo ora in Puglia. Chi fosse interessato mi contatti anche in privato."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Piazza Maggiore, Santo Stefano, Bologna, BO, Emilia-Romagna, 40121-40141, Italia"", ""lat"": ""44.4936714"", ""link"": ""https://www.facebook.com/andrea.cimino2/posts/10207823202644184"", ""lon"": ""11.3430347"", ""tel"": """"}","<pre><yamldata>tel: ''
 email: ''
 cosa: 'Roulotte #Bologna'
