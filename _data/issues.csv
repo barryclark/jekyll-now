@@ -1,11 +1,40 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1953,201973966,2017-01-19 21:24:36,2017-01-19 21:00:13,Offro camera matrimoniale con culla in provincia di Ancona,,,"[""Accettato"", ""Donazioni"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""Offro camera marche"", ""data"": ""19/01/2017"", ""descrizione"": ""Offro una camera con possibilit\u00e0 di 2 letti ed eventuale culla per bambino. Regione Marche, localit\u00e0 Castelleone di suasa provincia di Ancona"", ""email"": ""toderi.francesca@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3382454845""}","<pre><yamldata>tel: '3382454845'
-email: toderi.francesca@gmail.com
-cosa: 'Offro camera marche'
-descrizione: 'Offro una camera con possibilità di 2 letti ed eventuale culla per bambino. Regione Marche, località Castelleone di suasa provincia di Ancona'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1957,201979932,2017-01-19 21:29:37,2017-01-19 21:25:55,Offresi 2 miniappartamenti in provincia di Salerno ,,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""19/01/2017"", ""descrizione"": ""Abbiamo possibilit\u00e0 di ospitare, fino a fine febbraio chi, a causa del terremoto e del freddo, avesse bisogno di un alloggio. Mettiamo a disposizione due mini appartamenti da 4 ed uno da 2 posti letto nei comuni di Paestum ed Agropoli (Salerno). Aiutateci a diffondere, aiutiamoci tra noi. 3281495794 - 3333966787 - 3299886385"", ""email"": ""info@casaelve.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3333966787""}","<pre><yamldata>tel: '3333966787'
+email: info@casaelve.it
+descrizione: 'Abbiamo possibilità di ospitare, fino a fine febbraio chi, a causa del terremoto e del freddo, avesse bisogno di un alloggio. Mettiamo a disposizione due mini appartamenti da 4 ed uno da 2 posti letto nei comuni di Paestum ed Agropoli (Salerno). Aiutateci a diffondere, aiutiamoci tra noi. 3281495794 - 3333966787 - 3299886385'
 indirizzo: ''
 lat: ''
 lon: ''
+link: ''
+immagine: ''
+data: 19/01/2017
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1956,201978990,2017-01-19 21:28:00,2017-01-19 21:21:37,Disponibile bella taverna arredata per una persona a Settimo Milanese,,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""19/01/2017"", ""descrizione"": ""Disponibile bella taverna arredata con posto letto all'interno di una villetta a schiera adatta ad una pesona autonoma per il tempo necessario a superare la criticita' di questi mesi difficili .Con tutto il cuore! A Settimo Mianese, Milano"", ""email"": ""s.alineri@libero.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3397858862""}","<pre><yamldata>tel: '3397858862'
+email: s.alineri@libero.it
+descrizione: 'Disponibile bella taverna arredata con posto letto all''interno di una villetta a schiera adatta ad una pesona autonoma per il tempo necessario a superare la criticita'' di questi mesi difficili .Con tutto il cuore! A Settimo Mianese, Milano'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 19/01/2017
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1955,201976943,2017-01-19 21:26:59,2017-01-19 21:12:55,Offriamo ospitalità a una fame glia a Verona,,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""19/01/2017"", ""descrizione"": ""Offriamo ospitalit\u00e0 per una famiglia con bambini a casa nostra. Siamo di Verona"", ""email"": ""fabiola.mar87@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3474160071""}","<pre><yamldata>tel: '3474160071'
+email: fabiola.mar87@gmail.com
+descrizione: 'Offriamo ospitalità per una famiglia con bambini a casa nostra. Siamo di Verona'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 19/01/2017
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1954,201975553,2017-01-19 21:25:52,2017-01-19 21:07:07,Offro camera matrimoniale con culla in provincia di Ancona,43.6057805,12.9753738,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""19/01/2017"", ""descrizione"": ""Offro stanza con possibilit\u00e0 di 2 posti letto ed eventuale culla per bambino. Regione Marche localit\u00e0 Castelleone di suasa provincia di Ancona"", ""email"": ""toderi.francesca@gmail.com"", ""immagine"": """", ""indirizzo"": ""Viale della Repubblica, Castelleone di Suasa, AN, Marche, 61047, Italia"", ""lat"": ""43.6057805"", ""link"": """", ""lon"": ""12.9753738"", ""tel"": ""3382454845""}","<pre><yamldata>tel: '3382454845'
+email: toderi.francesca@gmail.com
+descrizione: 'Offro stanza con possibilità di 2 posti letto ed eventuale culla per bambino. Regione Marche località Castelleone di suasa provincia di Ancona'
+indirizzo: 'Viale della Repubblica, Castelleone di Suasa, AN, Marche, 61047, Italia'
+lat: '43.6057805'
+lon: '12.9753738'
 link: ''
 immagine: ''
 data: 19/01/2017
@@ -9853,17 +9882,6 @@ descrizione: 'NOEMI mette a disposizione casa in campagna per 4/6 persone a Mont
 indirizzo: ''
 lat: '41.59965'
 lon: '12.98018'
-link: ''
-immagine: ''
-data: 15/09/2016
-</yamldata></pre>
-",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/471,177284962,2016-11-12 22:43:58,2016-09-15 20:43:48,Offresi 2 roulotte e 2 stanze a Arcevia (An),"43.43622,",12.82482,"[""Accettato"", ""Alloggi"", ""Donazioni"", ""Form""]",,,"{""data"": ""15/09/2016"", ""descrizione"": ""LUIGI offre 2 roulotte e 2 stanze ad ARCEVIA (AN)."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Arcevia, AN, Marche, Italia"", ""lat"": ""43.43622,"", ""link"": """", ""lon"": ""12.82482"", ""tel"": ""3472397478""}","<pre><yamldata>tel: '3472397478'
-email: ''
-descrizione: 'LUIGI offre 2 roulotte e 2 stanze ad ARCEVIA (AN).'
-indirizzo: 'Arcevia, AN, Marche, Italia'
-lat: '43.43622,'
-lon: '12.82482'
 link: ''
 immagine: ''
 data: 15/09/2016
