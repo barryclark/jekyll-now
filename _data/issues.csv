@@ -1,4 +1,14 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1793,201836083,2017-01-19 11:51:06,2017-01-19 11:38:38,4 posti letto a Brindisi,,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""19/01/2017"", ""descrizione"": ""Dispongo di una casa vacanza con quattro posti letto, sita in Ceglie Messapica provincia Di Brindisi"", ""email"": ""gallonefederico@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3396517097""}","<pre><yamldata>tel: '3396517097'
+email: gallonefederico@gmail.com
+descrizione: 'Dispongo di una casa vacanza con quattro posti letto, sita in Ceglie Messapica provincia Di Brindisi'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 19/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1792,201835352,2017-01-19 11:50:19,2017-01-19 11:35:27,Alloggio a Roma,,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""19/01/2017"", ""descrizione"": ""Metto a disposizione a Roma Nord in casa mia due stanze matrimoniali oltre una terza stanza con letto doppio. Dove si mangia in tre possiamo mangiare in dieci. Graditi anche cani e/o gatti. Claudia"", ""email"": ""titeres12@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""335405502""}","<pre><yamldata>tel: '335405502'
 email: titeres12@gmail.com
 descrizione: 'Metto a disposizione a Roma Nord in casa mia due stanze matrimoniali oltre una terza stanza con letto doppio. Dove si mangia in tre possiamo mangiare in dieci. Graditi anche cani e/o gatti. Claudia'
@@ -5711,6 +5721,17 @@ link: 'https://www.facebook.com/psyplus.org/'
 data: 30/10/2016
 </yamldata></pre>
 ",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/909,186134276,2016-10-30 13:02:40,2016-10-30 12:46:23,Psy+ Onlus: Rita Fiorentino e Patrizia Perrone,42.9415743,13.8828904,"[""Accettato"", ""Contatti"", ""Form""]",,,"{""data"": ""30/10/2016"", ""descrizione"": ""SUPPORTO PSICOLOGICO alle vittime del terremoto. Le due psicologhe Psy+ Onlus, presenti sul posto, sono affiancate altri due psicologi per poter ampliare il numero di professionisti data l'enorme crescita di richieste d'aiuto pervenuta in queste ore a seguito delle nuove scosse."", ""email"": """", ""indirizzo"": ""Via Golgi, Sant'Antonio, San Benedetto del Tronto, AP, Marche, 63074, Italia"", ""lat"": ""42.9415743"", ""link"": ""https://www.facebook.com/psyplus.org/"", ""lon"": ""13.8828904"", ""nome"": ""Psy+ Onlus: Rita Fiorentino e Patrizia Perrone"", ""tel"": ""3278825312""}","<pre><yamldata>nome: 'Psy+ Onlus: Rita Fiorentino e Patrizia Perrone'
+tel: '3278825312'
+email: ''
+descrizione: 'SUPPORTO PSICOLOGICO alle vittime del terremoto. Le due psicologhe Psy+ Onlus, presenti sul posto, sono affiancate altri due psicologi per poter ampliare il numero di professionisti data l''enorme crescita di richieste d''aiuto pervenuta in queste ore a seguito delle nuove scosse.'
+indirizzo: 'Via Golgi, Sant''Antonio, San Benedetto del Tronto, AP, Marche, 63074, Italia'
+lat: '42.9415743'
+lon: '13.8828904'
+link: 'https://www.facebook.com/psyplus.org/'
+data: 30/10/2016
+</yamldata></pre>
+",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/908,186134120,2016-10-30 13:56:16,2016-10-30 12:43:37,Psy+ Onlus: ASSISTENZA PSICOLOGICA,42.9415743,13.8828904,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Form"", ""Sisma Ottobre""]",,,"{""cosa"": ""Psy+ Onlus: ASSISTENZA PSICOLOGICA"", ""data"": ""30/10/2016"", ""descrizione"": ""Presenti a San Benedetto ininterrottamente, presso la sede dell'ex Scuola Curzi in via Golgi per garantire supporto psicologico alle vittime del terremoto. Alle due psicologhe, Rita Fiorentino e Patrizia Perrone presenti sul posto, sono affiancati altri due psicologi per poter ampliare il numero di professionisti data l'enorme crescita di richieste d'aiuto pervenuta in queste ore a seguito delle nuove scosse. Per informazioni contattare."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Via Golgi, Sant'Antonio, San Benedetto del Tronto, AP, Marche, 63074, Italia"", ""lat"": ""42.9415743"", ""link"": """", ""lon"": ""13.8828904"", ""tel"": ""3278825312""}","<pre><yamldata>tel: '3278825312'
 email: ''
 cosa: 'Psy+ Onlus: ASSISTENZA PSICOLOGICA'
@@ -7723,17 +7744,6 @@ lon: '13.2714902'
 link: 'http://facebook.com/pescaradeltronto'
 data: 20/09/2016
 </yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/620,178192035,2016-09-21 08:03:10,2016-09-20 22:01:36,Amatrice Scoiattolo Infopoint - Numero Verde,,,"[""Accettato"", ""Contatti"", ""Form""]",,,"{""data"": ""20/09/2016"", ""descrizione"": ""Numero Verde 800 608 535 dedicato a tutti i piccoli imprenditori: agricoltori, allevatori, artigiani e commercianti che hanno subito danni alla loro attivit\u00e0 nei comuni colpiti dal terremoto. L'iniziativa \u00e8 collaterale al punto di ascolto \""Amatrice Scoiattolo Infopoint\"" promosso dal Rotary Club di Ascoli Piceno."", ""email"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""https://www.facebook.com/Amatricescoiattoloinfopoint/photos/a.1844858829062796.1073741828.1844846815730664/1846750778873601/?type=3&theater"", ""lon"": """", ""nome"": ""Amatrice Scoiattolo Infopoint - Numero Verde"", ""tel"": ""800 608 535""}","<pre><yamldata>nome: 'Amatrice Scoiattolo Infopoint - Numero Verde'
-tel: '800 608 535'
-email: ''
-descrizione: 'Numero Verde 800 608 535 dedicato a tutti i piccoli imprenditori: agricoltori, allevatori, artigiani e commercianti che hanno subito danni alla loro attività nei comuni colpiti dal terremoto. L''iniziativa è collaterale al punto di ascolto ""Amatrice Scoiattolo Infopoint"" promosso dal Rotary Club di Ascoli Piceno.'
-indirizzo: ''
-lat: ''
-lon: ''
-link: 'https://www.facebook.com/Amatricescoiattoloinfopoint/photos/a.1844858829062796.1073741828.1844846815730664/1846750778873601/?type=3&theater'
-data: 20/09/2016
-</yamldata></pre>
-",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/620,178192035,2016-09-21 08:03:10,2016-09-20 22:01:36,Amatrice Scoiattolo Infopoint - Numero Verde,,,"[""Accettato"", ""Contatti"", ""Form""]",,,"{""data"": ""20/09/2016"", ""descrizione"": ""Numero Verde 800 608 535 dedicato a tutti i piccoli imprenditori: agricoltori, allevatori, artigiani e commercianti che hanno subito danni alla loro attivit\u00e0 nei comuni colpiti dal terremoto. L'iniziativa \u00e8 collaterale al punto di ascolto \""Amatrice Scoiattolo Infopoint\"" promosso dal Rotary Club di Ascoli Piceno."", ""email"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""https://www.facebook.com/Amatricescoiattoloinfopoint/photos/a.1844858829062796.1073741828.1844846815730664/1846750778873601/?type=3&theater"", ""lon"": """", ""nome"": ""Amatrice Scoiattolo Infopoint - Numero Verde"", ""tel"": ""800 608 535""}","<pre><yamldata>nome: 'Amatrice Scoiattolo Infopoint - Numero Verde'
 tel: '800 608 535'
 email: ''
