@@ -23,16 +23,16 @@ published: true
 	* Tools:          Adobe CS6 Suite,  XCode,  StackOverflow,  MDN, GoogleDevs
 
 # 2016-2017 Projects
-  ✔ <b> TipCalc </b>         -- Basic tip calculator built with Javascript
+  ✔ **TipCalc**         -- Basic tip calculator built with Javascript
     
     
-  ✔ <b> Balloon Tap </b>     -- Mobile app game via Corona SDK
+  ✔ **Balloon Tap**     -- Mobile app game via Corona SDK
     
     
-  ✔ <b> Memory Keeper </b>   -- Mobile app built for reminders
+  ✔ **Memory Keeper**   -- Mobile app built for reminders
     
     
-  ✔ <b> Priority App </b>    -- Business software application, Personal Project
+  ✔ **Priority App**    -- Business software application, Personal Project
 
 ### Contact me
 
