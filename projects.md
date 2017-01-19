@@ -7,7 +7,7 @@ published: true
 
 ## 2016-2017 Projects (Source Code Links)
 
-Welcome to my website where you can view my skills and some of my work (source code is provided on GitHub). If you have any questions feel free to contact me.
+Welcome to my website where you can view my skills and some of my work (source code is provided on GitHub and CodePen). If you have any questions feel free to contact me.
 
 
 ---------
