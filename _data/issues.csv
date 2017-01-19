@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1778,201827232,2017-01-19 11:08:43,2017-01-19 10:59:51,Camera tre posti letto e culla,42.761444464524814,11.120417118072508,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""OFFRO CAMERA tre posti letto e culla"", ""data"": ""19/01/2017"", ""descrizione"": ""camera in famiglia,con tre posti letto,uso bagno e cucina,per gennaio e febbraio. Famigliola o mamma con bambini"", ""email"": ""nicolettadipietro@yahoo.it"", ""immagine"": """", ""indirizzo"": ""Bar Zero, Via Scansanese, Sugherella, Grosseto, GR, Tuscany, 58100, Italia"", ""lat"": ""42.761444464524814"", ""link"": """", ""lon"": ""11.120417118072508"", ""tel"": ""3403222782""}","<pre><yamldata>tel: '3403222782'
+email: nicolettadipietro@yahoo.it
+cosa: 'OFFRO CAMERA tre posti letto e culla'
+descrizione: 'camera in famiglia,con tre posti letto,uso bagno e cucina,per gennaio e febbraio. Famigliola o mamma con bambini'
+indirizzo: 'Bar Zero, Via Scansanese, Sugherella, Grosseto, GR, Tuscany, 58100, Italia'
+lat: '42.761444464524814'
+lon: '11.120417118072508'
+link: ''
+immagine: ''
+data: 19/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1772,201825393,2017-01-19 11:05:20,2017-01-19 10:52:13,Servono coperte a #Montereale.,42.5250955,13.2440724,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""Servono coperte a #Montereale."", ""data"": ""19/01/2017"", ""descrizione"": ""Servono coperte a Montereale. Chi pu\u00f2 fornirle si metta in contatto con la Cgil Rieti al 0746270190."", ""email"": """", ""immagine"": """", ""indirizzo"": ""SS266, Montereale, AQ, ABR, Italia"", ""lat"": ""42.5250955"", ""link"": ""https://twitter.com/cgilrietirmeva/status/822014229578448897"", ""lon"": ""13.2440724"", ""tel"": """"}","<pre><yamldata>tel: ''
 email: ''
 cosa: 'Servono coperte a #Montereale.'
@@ -1044,17 +1055,6 @@ lon: ''
 link: ''
 immagine: ''
 data: 12/01/2017
-</yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1551,200233167,2017-01-16 13:10:20,2017-01-11 23:01:13,A #Camerino urge mettere in sicurezza il santuario S. Maria in Via e salvare le opere d'arte,43.1357641,13.0683092,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Facebook"", ""Sisma Ottobre""]",,http://i.imgur.com/LYtlCv2.jpg,"{""cosa"": ""A #Camerino urge coprire le macerie del santuario S. Maria in Via e salvare le opere d'arte"", ""data"": ""11/01/2017"", ""descrizione"": ""Camerino, 9 gennaio 2017. Acqua dentro S. Maria in Via. Mentre a Norcia si proteggono le macerie della basilica di S. Benedetto, a Camerino nemmeno uno straccio di telone per salvaguardare dalla pioggia e dalla neve, che entrano dalla cupola danneggiata, le numerose opere d\u2019arte ancora tutte dentro il santuario."", ""email"": """", ""immagine"": ""http://i.imgur.com/LYtlCv2.jpg"", ""indirizzo"": ""Piazza Cavour, Camerino, MC, Marche, 62032, Italia"", ""lat"": ""43.1357641"", ""link"": ""https://www.facebook.com/groups/187581041319919/permalink/1196058280472185/"", ""lon"": ""13.0683092"", ""tel"": """"}","<pre><yamldata>tel: ''
-email: ''
-cosa: 'A #Camerino urge coprire le macerie del santuario S. Maria in Via e salvare le opere d''arte'
-descrizione: 'Camerino, 9 gennaio 2017. Acqua dentro S. Maria in Via. Mentre a Norcia si proteggono le macerie della basilica di S. Benedetto, a Camerino nemmeno uno straccio di telone per salvaguardare dalla pioggia e dalla neve, che entrano dalla cupola danneggiata, le numerose opere d’arte ancora tutte dentro il santuario.'
-indirizzo: 'Piazza Cavour, Camerino, MC, Marche, 62032, Italia'
-lat: '43.1357641'
-lon: '13.0683092'
-link: 'https://www.facebook.com/groups/187581041319919/permalink/1196058280472185/'
-immagine: 'http://i.imgur.com/LYtlCv2.jpg'
-data: 11/01/2017
 </yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1551,200233167,2017-01-16 13:10:20,2017-01-11 23:01:13,A #Camerino urge mettere in sicurezza il santuario S. Maria in Via e salvare le opere d'arte,43.1357641,13.0683092,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Facebook"", ""Sisma Ottobre""]",,http://i.imgur.com/LYtlCv2.jpg,"{""cosa"": ""A #Camerino urge coprire le macerie del santuario S. Maria in Via e salvare le opere d'arte"", ""data"": ""11/01/2017"", ""descrizione"": ""Camerino, 9 gennaio 2017. Acqua dentro S. Maria in Via. Mentre a Norcia si proteggono le macerie della basilica di S. Benedetto, a Camerino nemmeno uno straccio di telone per salvaguardare dalla pioggia e dalla neve, che entrano dalla cupola danneggiata, le numerose opere d\u2019arte ancora tutte dentro il santuario."", ""email"": """", ""immagine"": ""http://i.imgur.com/LYtlCv2.jpg"", ""indirizzo"": ""Piazza Cavour, Camerino, MC, Marche, 62032, Italia"", ""lat"": ""43.1357641"", ""link"": ""https://www.facebook.com/groups/187581041319919/permalink/1196058280472185/"", ""lon"": ""13.0683092"", ""tel"": """"}","<pre><yamldata>tel: ''
 email: ''
