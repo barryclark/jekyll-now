@@ -1,4 +1,14 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1691,201781338,2017-01-19 07:32:24,2017-01-19 07:13:23,OFFRO ALLOGGIO CON VITTO PER 2-3 PERSONE A RIMINI,,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""19/01/2017"", ""descrizione"": ""OFFRO ALLOGGIO CON VITTO PER 2/3 PERSONE PRESSO FAMIGLIA A RIMINI VIA FUCINI, DISPONIBILIT\u00c0 IMMEDIATA."", ""email"": ""criluglio65@hotmail.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3663166280""}","<pre><yamldata>tel: '3663166280'
+email: criluglio65@hotmail.it
+descrizione: 'OFFRO ALLOGGIO CON VITTO PER 2/3 PERSONE PRESSO FAMIGLIA A RIMINI VIA FUCINI, DISPONIBILITÀ IMMEDIATA.'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 19/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1690,201779917,2017-01-19 07:31:30,2017-01-19 07:02:52,Offresi Abbigliamento bambino 0-4 anni,,,"[""Accettato"", ""Donazioni"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""Abbigliamento bambino 0-4 anni"", ""data"": ""19/01/2017"", ""descrizione"": ""Offro abbigliamento bambino da 0 a 4 anni (usato ma ottimo stato). Sono in provincia di Vicenza ma posso spedire senza problemi."", ""email"": ""s.piccoli@inwind.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""328-6334795""}","<pre><yamldata>tel: 328-6334795
 email: s.piccoli@inwind.it
 cosa: 'Abbigliamento bambino 0-4 anni'
@@ -4143,11 +4153,6 @@ link: 'http://www.sibillini.net'
 immagine: ''
 data: 03/11/2016
 </yamldata></pre>",closed
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1099,187207422,2016-11-03 23:12:56,2016-11-03 22:27:00,"Comune di #Cingoli - Info su numeri utili, strutture di accoglienza e assistenza, segnalazioni danni",,,"[""Accettato"", ""Bollettino"", ""Facebook"", ""Notizie Utili"", ""Sisma Ottobre""]",,,"{""data"": ""03/11/2016"", ""descrizione"": ""Avviso del Comune di Cingoli del 31 ottobre con info utili su: strutture di accoglienza e assistenza alla popolazione aperte dalla protezione civile, distribuzione pasti, viabilit\u00e0, scuole, segnalazione danni a strutture private e aziende agricole, numeri telefonici di sindaco, comandante vigili urbani."", ""link"": ""http://www.comune.cingoli.mc.it/avvisi-cms/terremoto-aggiornamento-31-ottobre-2016-ore-17-00-coc-centrale-operativa-comunale-aperta-nelle-24-ore-tel-0733-601915/"", ""titolo"": ""Comune di #Cingoli - Info su numeri utili, strutture di accoglienza e assistenza, segnalazioni danni""}","<pre><yamldata>titolo: 'Comune di #Cingoli - Info su numeri utili, strutture di accoglienza e assistenza, segnalazioni danni'
-descrizione: 'Avviso del Comune di Cingoli del 31 ottobre con info utili su: strutture di accoglienza e assistenza alla popolazione aperte dalla protezione civile, distribuzione pasti, viabilità, scuole, segnalazione danni a strutture private e aziende agricole, numeri telefonici di sindaco, comandante vigili urbani.'
-link: 'http://www.comune.cingoli.mc.it/avvisi-cms/terremoto-aggiornamento-31-ottobre-2016-ore-17-00-coc-centrale-operativa-comunale-aperta-nelle-24-ore-tel-0733-601915/'
-data: 03/11/2016
-</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1099,187207422,2016-11-03 23:12:56,2016-11-03 22:27:00,"Comune di #Cingoli - Info su numeri utili, strutture di accoglienza e assistenza, segnalazioni danni",,,"[""Accettato"", ""Bollettino"", ""Facebook"", ""Notizie Utili"", ""Sisma Ottobre""]",,,"{""data"": ""03/11/2016"", ""descrizione"": ""Avviso del Comune di Cingoli del 31 ottobre con info utili su: strutture di accoglienza e assistenza alla popolazione aperte dalla protezione civile, distribuzione pasti, viabilit\u00e0, scuole, segnalazione danni a strutture private e aziende agricole, numeri telefonici di sindaco, comandante vigili urbani."", ""link"": ""http://www.comune.cingoli.mc.it/avvisi-cms/terremoto-aggiornamento-31-ottobre-2016-ore-17-00-coc-centrale-operativa-comunale-aperta-nelle-24-ore-tel-0733-601915/"", ""titolo"": ""Comune di #Cingoli - Info su numeri utili, strutture di accoglienza e assistenza, segnalazioni danni""}","<pre><yamldata>titolo: 'Comune di #Cingoli - Info su numeri utili, strutture di accoglienza e assistenza, segnalazioni danni'
 descrizione: 'Avviso del Comune di Cingoli del 31 ottobre con info utili su: strutture di accoglienza e assistenza alla popolazione aperte dalla protezione civile, distribuzione pasti, viabilità, scuole, segnalazione danni a strutture private e aziende agricole, numeri telefonici di sindaco, comandante vigili urbani.'
 link: 'http://www.comune.cingoli.mc.it/avvisi-cms/terremoto-aggiornamento-31-ottobre-2016-ore-17-00-coc-centrale-operativa-comunale-aperta-nelle-24-ore-tel-0733-601915/'
