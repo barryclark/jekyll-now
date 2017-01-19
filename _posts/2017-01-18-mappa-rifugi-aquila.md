@@ -39,7 +39,7 @@ var opl = new L.OverPassLayer({
     endPoint: 'https://overpass-api.de/api/',
     minZoom: 11,
     markerIcon: houseMarker,
-    query: 'node({{bbox}})["amenity"="social_facility"];out qt;',
+    query: 'node({{bbox}})["amenity"="social_facility"]["social_facility"="shelter"];out qt;',
     minZoomIndicatorOptions: {
         position: 'topright',
         minZoomMessage: 'Current zoom level: CURRENTZOOM - All data at level: MINZOOMLEVEL'
