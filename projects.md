@@ -20,7 +20,7 @@ published: true
 ---------
 
 
-  ✔ 2. **Animated Slideshow** - Built with HTML, CSS, and Javascript
+  ✔ 2. **Animated Slideshow** - HTML, CSS, and Javascript
   
   <p data-height="265" data-theme-id="0" data-slug-hash="oLAybp" data-default-tab="js,result" data-user="emilypmendez" data-embed-version="2" data-pen-title="Making & Breaking Slideshows" class="codepen">See the Pen <a href="http://codepen.io/emilypmendez/pen/oLAybp/">Making & Breaking Slideshows</a> by Emily Mendez (<a href="http://codepen.io/emilypmendez">@emilypmendez</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
@@ -30,7 +30,7 @@ published: true
 ---------
     
   ✔ 3. **BalloonTap** - Game made with Lua, Corona SDK
-  |   [**View Source Code**](https://github.com/emilypmendez/TipCalc)
+  |   [**View on GitHub**](https://github.com/emilypmendez/TipCalc)
 
 > ![]({{site.baseurl}}/emilypmendez.github.io/images/sbs-balloon-0.png)
   
@@ -48,7 +48,7 @@ published: true
 
     
   ✔ 5. **MemoryKeeper** - HTML, CSS, and Javascript
-  |  [**View Source Code**](https://github.com/emilypmendez/MemoryKeeper)
+  |  [**View on GitHub**](https://github.com/emilypmendez/MemoryKeeper)
     
 ![]({{site.baseurl}}/emilypmendez.github.io/images/pending.png)
   
@@ -57,7 +57,7 @@ published: true
 
 
   ✔ 6. **PriorityApp** - Time management app built with Javascript and PHP 
-  |  [**View Source Code**](https://github.com/emilypmendez/PriorityApp)
+  |  [**View on GitHub**](https://github.com/emilypmendez/PriorityApp)
   
   
   Try the app using Invision Software! Click here:   
