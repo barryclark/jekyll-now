@@ -1,4 +1,14 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1943,201963655,2017-01-19 21:12:52,2017-01-19 20:14:18,Metto a disposizione di una famiglia rustico a Mentana (Rm),,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""19/01/2017"", ""descrizione"": ""Metto a disposizione di un nucleo familiare di 4/5 persone rustico in Mentana (RM) con 5 posti letto bagno privato acqua luce riscaldamento e quanto utile"", ""email"": ""katia.sant@libero.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": """"}","<pre><yamldata>tel: ''
+email: katia.sant@libero.it
+descrizione: 'Metto a disposizione di un nucleo familiare di 4/5 persone rustico in Mentana (RM) con 5 posti letto bagno privato acqua luce riscaldamento e quanto utile'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 19/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1942,201962604,2017-01-19 20:12:33,2017-01-19 20:10:09,B&B a disposizione #Ortona (CH),42.349643,14.403913,"[""Accettato"", ""Alloggi"", ""Bollettino"", ""Facebook"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""19/01/2017"", ""descrizione"": ""Siamo in uno stato di emergenza cittadina, e noi siamo stati estremamente fortunati per aver riavuto l'elettricit\u00e0. Per questo motivo mettiamo a disposizione camere per la notte, per le docce, per ricaricare i telefoni fino al ritorno della corrente elettrica. Abbiamo giochi in scatola e caminetto. T\u00e8 e caff\u00e8 non mancano. Per qualsiasi cosa contattate LEA RADICO su facebook"", ""email"": """", ""immagine"": """", ""indirizzo"": ""Via B. Cascella, Ortona, CH, Abruzzo, 66026, Italia"", ""lat"": ""42.349643"", ""link"": ""https://www.facebook.com/leadesign.ecobeb/posts/1501745099843298"", ""lon"": ""14.403913"", ""tel"": ""3286168332""}","<pre><yamldata>tel: '3286168332'
 email: ''
 descrizione: 'Siamo in uno stato di emergenza cittadina, e noi siamo stati estremamente fortunati per aver riavuto l''elettricità. Per questo motivo mettiamo a disposizione camere per la notte, per le docce, per ricaricare i telefoni fino al ritorno della corrente elettrica. Abbiamo giochi in scatola e caminetto. Tè e caffè non mancano. Per qualsiasi cosa contattate LEA RADICO su facebook'
@@ -631,7 +641,7 @@ link: 'https://www.google.it/maps/@43.4209426,11.1120481,17z?hl=it'
 immagine: ''
 data: 19/01/2017
 </yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1804,201847268,2017-01-19 14:34:47,2017-01-19 12:28:10,Offresi camera matrimoniale vicino a Colle Val d'Elsa,43.42098405,11.114204049003,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""19/01/2017"", ""descrizione"": ""Comune di Colle Val d'Elsa (Siena) - disponibile una camera con 2 letti singoli/1 matrimoniale, comoda per 2 adulti anche con 1/2 bambini piccoli."", ""email"": ""primodipalo@gmail.com"", ""immagine"": """", ""indirizzo"": ""Piazza Bajos, Localit\u00e0 Le Mosse, Il Poggino, Colle di Val d'Elsa, SI, Tuscany, 53034, Italia"", ""lat"": ""43.42098405"", ""link"": """", ""lon"": ""11.114204049003"", ""tel"": ""347 40 14 376""}","<pre><yamldata>tel: '347 40 14 376'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1804,201847268,2017-01-19 21:14:56,2017-01-19 12:28:10,Offresi camera matrimoniale vicino a Colle Val d'Elsa,43.42098405,11.114204049003,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""19/01/2017"", ""descrizione"": ""Comune di Colle Val d'Elsa (Siena) - disponibile una camera con 2 letti singoli/1 matrimoniale, comoda per 2 adulti anche con 1/2 bambini piccoli."", ""email"": ""primodipalo@gmail.com"", ""immagine"": """", ""indirizzo"": ""Piazza Bajos, Localit\u00e0 Le Mosse, Il Poggino, Colle di Val d'Elsa, SI, Tuscany, 53034, Italia"", ""lat"": ""43.42098405"", ""link"": """", ""lon"": ""11.114204049003"", ""tel"": ""347 40 14 376""}","<pre><yamldata>tel: '347 40 14 376'
 email: primodipalo@gmail.com
 descrizione: 'Comune di Colle Val d''Elsa (Siena) - disponibile una camera con 2 letti singoli/1 matrimoniale, comoda per 2 adulti anche con 1/2 bambini piccoli.'
 indirizzo: 'Piazza Bajos, Località Le Mosse, Il Poggino, Colle di Val d''Elsa, SI, Tuscany, 53034, Italia'
@@ -640,7 +650,7 @@ lon: '11.114204049003'
 link: ''
 immagine: ''
 data: 19/01/2017
-</yamldata></pre>",open
+</yamldata></pre>",closed
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1801,201844968,2017-01-19 14:35:45,2017-01-19 12:20:04,Offresi accoglienza per giovane famiglia in provincia di Salerno,,,"[""Accettato"", ""Donazioni"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""accoglienza per giovane famiglia e minori orfani"", ""data"": ""19/01/2017"", ""descrizione"": ""buongiorno, siamo una giovane famiglia (io, mia moglie, nostro figlio ed uno in arrivo) ed offriamo accoglienza ad una famiglia simile alla nostra, o a minori orfani del terremoto, in sistemazioni domestica a salerno o a sala consilina o presso la nostra struttura ricettiva a sala consilina. grazie e buon lavoro"", ""email"": ""stefano.darco@yahoo.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3406675009""}","<pre><yamldata>tel: '3406675009'
 email: stefano.darco@yahoo.it
 cosa: 'accoglienza per giovane famiglia e minori orfani'
