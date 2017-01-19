@@ -1,4 +1,14 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1698,201792562,2017-01-19 08:35:43,2017-01-19 08:25:00,offresi alloggio per tre persone a Chiusi (Si),43.017167,11.9354319,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""19/01/2017"", ""descrizione"": ""Il signor Carmine de Vivo mette a disposizione 3 posti letto in un appartamento a Chiusi (SI) confine con l'Umbria, a circa 2 ore dalle zona colpite dal Sisma."", ""email"": ""alfaric@libero.it"", ""immagine"": """", ""indirizzo"": ""Strada Provinciale di Chianciano, Chiusi, SI, Tuscany, 53043, Italia"", ""lat"": ""43.017167"", ""link"": ""https://www.facebook.com/carmine.devivo1?lst=756693526%3A1569347704%3A1484814060"", ""lon"": ""11.9354319"", ""tel"": ""3357522178""}","<pre><yamldata>tel: '3357522178'
+email: alfaric@libero.it
+descrizione: 'Il signor Carmine de Vivo mette a disposizione 3 posti letto in un appartamento a Chiusi (SI) confine con l''Umbria, a circa 2 ore dalle zona colpite dal Sisma.'
+indirizzo: 'Strada Provinciale di Chianciano, Chiusi, SI, Tuscany, 53043, Italia'
+lat: '43.017167'
+lon: '11.9354319'
+link: 'https://www.facebook.com/carmine.devivo1?lst=756693526%3A1569347704%3A1484814060'
+immagine: ''
+data: 19/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1697,201792016,2017-01-19 08:34:37,2017-01-19 08:21:59,Offro bilocale con piccola cucina per 4 persone a Castelfiorentino. Fino a 20 marzo,,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",Milestone(number=51),,"{""data"": ""19/01/2017"", ""descrizione"": ""Bilocake con piccola cucina per famiglia 4 persone , disponibile fino al 20 marzo 2017. Localit\u00e0 in campagna a 3 km da Castelfiorentino ( Firenze)"", ""email"": ""giuliaperticucci@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3355941425""}","<pre><yamldata>tel: '3355941425'
 email: giuliaperticucci@gmail.com
 descrizione: 'Bilocake con piccola cucina per famiglia 4 persone , disponibile fino al 20 marzo 2017. Località in campagna a 3 km da Castelfiorentino ( Firenze)'
