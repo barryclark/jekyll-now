@@ -1,4 +1,24 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1942,201962604,2017-01-19 20:12:33,2017-01-19 20:10:09,B&B a disposizione #Ortona (CH),42.349643,14.403913,"[""Accettato"", ""Alloggi"", ""Bollettino"", ""Facebook"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""19/01/2017"", ""descrizione"": ""Siamo in uno stato di emergenza cittadina, e noi siamo stati estremamente fortunati per aver riavuto l'elettricit\u00e0. Per questo motivo mettiamo a disposizione camere per la notte, per le docce, per ricaricare i telefoni fino al ritorno della corrente elettrica. Abbiamo giochi in scatola e caminetto. T\u00e8 e caff\u00e8 non mancano. Per qualsiasi cosa contattate LEA RADICO su facebook"", ""email"": """", ""immagine"": """", ""indirizzo"": ""Via B. Cascella, Ortona, CH, Abruzzo, 66026, Italia"", ""lat"": ""42.349643"", ""link"": ""https://www.facebook.com/leadesign.ecobeb/posts/1501745099843298"", ""lon"": ""14.403913"", ""tel"": ""3286168332""}","<pre><yamldata>tel: '3286168332'
+email: ''
+descrizione: 'Siamo in uno stato di emergenza cittadina, e noi siamo stati estremamente fortunati per aver riavuto l''elettricità. Per questo motivo mettiamo a disposizione camere per la notte, per le docce, per ricaricare i telefoni fino al ritorno della corrente elettrica. Abbiamo giochi in scatola e caminetto. Tè e caffè non mancano. Per qualsiasi cosa contattate LEA RADICO su facebook'
+indirizzo: 'Via B. Cascella, Ortona, CH, Abruzzo, 66026, Italia'
+lat: '42.349643'
+lon: '14.403913'
+link: 'https://www.facebook.com/leadesign.ecobeb/posts/1501745099843298'
+immagine: ''
+data: 19/01/2017
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1941,201960750,2017-01-19 20:13:28,2017-01-19 20:02:02,Offresi alloggio a #Cremona,45.285171,9.707262,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""19/01/2017"", ""descrizione"": ""In paese ben servito in provincia di Cremona offro 5 posti letto per famiglia con bimbi piccoli. Possibilit\u00e0 di inserimento in scuola pubblica per terminare l'anno scolastico e nel settore ludico/sportivo. Posizione tranquilla e protetta per bambini."", ""email"": ""baldassarre.davide.76@gmail.com"", ""immagine"": """", ""indirizzo"": ""Via Crotti, Montodine, Cremona, Lombardia, Italia"", ""lat"": ""45.285171"", ""link"": """", ""lon"": ""9.707262"", ""tel"": ""3315765824""}","<pre><yamldata>tel: '3315765824'
+email: baldassarre.davide.76@gmail.com
+descrizione: 'In paese ben servito in provincia di Cremona offro 5 posti letto per famiglia con bimbi piccoli. Possibilità di inserimento in scuola pubblica per terminare l''anno scolastico e nel settore ludico/sportivo. Posizione tranquilla e protetta per bambini.'
+indirizzo: 'Via Crotti, Montodine, Cremona, Lombardia, Italia'
+lat: '45.285171'
+lon: '9.707262'
+link: ''
+immagine: ''
+data: 19/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1939,201956046,2017-01-19 19:43:36,2017-01-19 19:42:45,Consulenza legale gratuita,,,"[""Accettato"", ""Donazioni"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""Consulenza legale gratuita"", ""data"": ""19/01/2017"", ""descrizione"": ""Offro consulenza ed assistenza legale TOTALMENTE GRATUITA per gli amici che hanno subito danni dal terremoto."", ""email"": ""Claudio_dg@hotmail.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": """"}","<pre><yamldata>tel: ''
 email: Claudio_dg@hotmail.it
 cosa: 'Consulenza legale gratuita'
