@@ -7,7 +7,8 @@
   -webkit-box-shadow: 3px 3px rgba(0,0,0,0.1);
   box-shadow: 3px 3px rgba(0,0,0,0.1);
   margin: 20px 0 20px 0;
-  overflow: scroll;
+  overflow: auto;
+  font-size: 0.8em;
 }
 
 code {
@@ -82,3 +83,8 @@ code {
 .highlight .vg { color: #268BD2 } /* Name.Variable.Global */
 .highlight .vi { color: #268BD2 } /* Name.Variable.Instance */
 .highlight .il { color: #2AA198 } /* Literal.Number.Integer.Long */
+
+.highlight .lineno {
+  color: rgba(0,0,0,0.3);
+  margin-right: 10px;
+}
