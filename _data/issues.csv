@@ -1,4 +1,14 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1792,201835352,2017-01-19 11:50:19,2017-01-19 11:35:27,Alloggio a Roma,,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""19/01/2017"", ""descrizione"": ""Metto a disposizione a Roma Nord in casa mia due stanze matrimoniali oltre una terza stanza con letto doppio. Dove si mangia in tre possiamo mangiare in dieci. Graditi anche cani e/o gatti. Claudia"", ""email"": ""titeres12@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""335405502""}","<pre><yamldata>tel: '335405502'
+email: titeres12@gmail.com
+descrizione: 'Metto a disposizione a Roma Nord in casa mia due stanze matrimoniali oltre una terza stanza con letto doppio. Dove si mangia in tre possiamo mangiare in dieci. Graditi anche cani e/o gatti. Claudia'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 19/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1791,201835318,2017-01-19 11:47:47,2017-01-19 11:35:20,"1 Furgone, 2 jeep, manovalanza.",,,"[""Accettato"", ""Donazioni"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""1 Furgone, 2 jeep, manovalanza."", ""data"": ""19/01/2017"", ""descrizione"": ""Mettiamo a disposizione Furgone ducato cassonato aperto, all'occorrenza con capra per trasporto vetri ante pannelli ecc., una o pi\u00f9 persone montatori factotum per le giornate di sabato e domenica, se servono anche due mezzi 4 ruote motrici con ridotte - Luca 3486518357"", ""email"": ""l.bendini@outlook.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3486518357""}","<pre><yamldata>tel: '3486518357'
 email: l.bendini@outlook.it
 cosa: '1 Furgone, 2 jeep, manovalanza.'
@@ -7724,6 +7734,17 @@ link: 'https://www.facebook.com/Amatricescoiattoloinfopoint/photos/a.18448588290
 data: 20/09/2016
 </yamldata></pre>
 ",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/620,178192035,2016-09-21 08:03:10,2016-09-20 22:01:36,Amatrice Scoiattolo Infopoint - Numero Verde,,,"[""Accettato"", ""Contatti"", ""Form""]",,,"{""data"": ""20/09/2016"", ""descrizione"": ""Numero Verde 800 608 535 dedicato a tutti i piccoli imprenditori: agricoltori, allevatori, artigiani e commercianti che hanno subito danni alla loro attivit\u00e0 nei comuni colpiti dal terremoto. L'iniziativa \u00e8 collaterale al punto di ascolto \""Amatrice Scoiattolo Infopoint\"" promosso dal Rotary Club di Ascoli Piceno."", ""email"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""https://www.facebook.com/Amatricescoiattoloinfopoint/photos/a.1844858829062796.1073741828.1844846815730664/1846750778873601/?type=3&theater"", ""lon"": """", ""nome"": ""Amatrice Scoiattolo Infopoint - Numero Verde"", ""tel"": ""800 608 535""}","<pre><yamldata>nome: 'Amatrice Scoiattolo Infopoint - Numero Verde'
+tel: '800 608 535'
+email: ''
+descrizione: 'Numero Verde 800 608 535 dedicato a tutti i piccoli imprenditori: agricoltori, allevatori, artigiani e commercianti che hanno subito danni alla loro attività nei comuni colpiti dal terremoto. L''iniziativa è collaterale al punto di ascolto ""Amatrice Scoiattolo Infopoint"" promosso dal Rotary Club di Ascoli Piceno.'
+indirizzo: ''
+lat: ''
+lon: ''
+link: 'https://www.facebook.com/Amatricescoiattoloinfopoint/photos/a.1844858829062796.1073741828.1844846815730664/1846750778873601/?type=3&theater'
+data: 20/09/2016
+</yamldata></pre>
+",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/619,178175523,2016-10-01 18:46:37,2016-09-20 20:45:33,Aperto a Sommati punto di raccolta e distribuzione mangimi,42.6410621,13.3056988110206,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Form"", ""Notizie Utili"", ""Twitter""]",,,"{""cosa"": ""Aperto a Sommati un punto di raccolta e distribuzione mangimi"", ""data"": ""20/09/2016"", ""descrizione"": ""Presso la localit\u00e0 di Sommati (frazione di Amatrice) \u00e8 stato aperto il punto di raccolta/distribuzione di alimenti per animali (foraggi e mangimi) a cui fare riferimento per le necessit\u00e0 e/o offerte."", ""email"": ""carmignani.l@aralazio.itmartellucci.a@aralazio.it"", ""immagine"": """", ""indirizzo"": ""SP20, Casale Zocchi, Amatrice, RI, LAZ, Italia"", ""lat"": ""42.6410621"", ""link"": ""http://www.veterinariaalimenti.marche.it/Veterinaria/tabid/82/novusact/viewarticle/articleid/7940/Default.aspx"", ""lon"": ""13.3056988110206"", ""tel"": ""335/1232834; 339/3334298; 366/6935217""}","<pre><yamldata>tel: '335/1232834; 339/3334298; 366/6935217'
 email: carmignani.l@aralazio.itmartellucci.a@aralazio.it
 cosa: 'Aperto a Sommati un punto di raccolta e distribuzione mangimi'
@@ -10593,18 +10614,6 @@ bic: ''
 postale: ''
 causale: ''
 link: 'http://www.anpas.org/anpas-informa/com-stamp/2429-amatricenelcuore-ricostruzione.html'
-email: ''
-data: 14/09/2016
-</yamldata></pre>
-",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/288,176860541,2016-09-14 09:39:45,2016-09-14 09:37:40,Conservatorio L'Aquila,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": ""Una fisarmonica per ricominciare"", ""chi"": ""Conservatorio L'Aquila"", ""data"": ""14/09/2016"", ""descrizione"": ""Raccolta fondi per comprare fisarmonica a studente che nel sisma ha perso la sua fisarmonica Bajan (costo: 8000 euro)"", ""email"": """", ""iban"": ""IT47B0760105138241508841512"", ""intestazione"": """", ""link"": ""https://www.facebook.com/permalink.php?story_fbid=617397508419944&id=617346548425040"", ""postale"": """"}","<pre><yamldata>chi: 'Conservatorio L''Aquila'
-descrizione: 'Raccolta fondi per comprare fisarmonica a studente che nel sisma ha perso la sua fisarmonica Bajan (costo: 8000 euro)'
-intestazione: ''
-iban: IT47B0760105138241508841512
-bic: ''
-postale: ''
-causale: 'Una fisarmonica per ricominciare'
-link: 'https://www.facebook.com/permalink.php?story_fbid=617397508419944&id=617346548425040'
 email: ''
 data: 14/09/2016
 </yamldata></pre>
