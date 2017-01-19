@@ -1,4 +1,14 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1970,201994329,2017-01-19 22:59:28,2017-01-19 22:28:19,Offro alloggio per stallo in m,43.8367688,10.3585443,"[""Accettato"", ""Alloggi"", ""Bollettino"", ""Donazioni"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""19/01/2017"", ""descrizione"": ""Offro alloggio per stallo in maneggio, paddock per cavalli e o asini ...organizzando meglio la recinzione anche per pecore e capre"", ""email"": ""cami_dom@yahoo.it"", ""immagine"": """", ""indirizzo"": ""Via Pietra a Padule, La Casetta, Massarosa, LU, Tuscany, 55050, Italia"", ""lat"": ""43.8367688"", ""link"": """", ""lon"": ""10.3585443"", ""tel"": ""3289029273""}","<pre><yamldata>tel: '3289029273'
+email: cami_dom@yahoo.it
+descrizione: 'Offro alloggio per stallo in maneggio, paddock per cavalli e o asini ...organizzando meglio la recinzione anche per pecore e capre'
+indirizzo: 'Via Pietra a Padule, La Casetta, Massarosa, LU, Tuscany, 55050, Italia'
+lat: '43.8367688'
+lon: '10.3585443'
+link: ''
+immagine: ''
+data: 19/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1969,201992068,2017-01-19 22:21:25,2017-01-19 22:18:12,Condividiamo volentieri la nostra casa in provincia di Trento,46.0603525,11.2405019,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""19/01/2017"", ""descrizione"": ""Condividiamo volentieri la nostra casa con una famiglia! Siamo in Provincia di Trento"", ""email"": ""serenaserina@yahoo.it"", ""immagine"": """", ""indirizzo"": ""Piazza del Municipio, Pergine Valsugana, Comunit\u00e0 Alta Valsugana e Bersntol, TN, Trentino-Alto Adige/S\u00fcdtirol, 38057, Italy"", ""lat"": ""46.0603525"", ""link"": """", ""lon"": ""11.2405019"", ""tel"": ""3207736493""}","<pre><yamldata>tel: '3207736493'
 email: serenaserina@yahoo.it
 descrizione: 'Condividiamo volentieri la nostra casa con una famiglia! Siamo in Provincia di Trento'
