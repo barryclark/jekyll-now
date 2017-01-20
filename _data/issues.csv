@@ -1,4 +1,36 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2074,202159186,2017-01-20 14:59:04,2017-01-20 14:53:32,Offresi postazioni lavoro a #Pescara a chi ha uffici danneggiati dal sisma/neve,42.4225896,14.1834425,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""Offresi postazioni lavoro a #Pescara zona aeroporto a chi ha uffici danneggiati dal sisma/neve"", ""data"": ""20/01/2017"", ""descrizione"": ""Per chi ha bisogno di tornare al lavoro e ha uffici inagibili, metto a disposizione i locali del mio ufficio con la possibilit\u00e0 di installare 3/4 postazioni lavoro in zona aeroporto #Pescara. L\u2019ufficio \u00e8 dotato di: scrivanie/sedie; accesso ad Internet Wi-Fi; stampante; tel/fax; riscaldamento e servizi igienici; angolo risotoro. Chi fosse interessato pu\u00f2 contattarmi ai numeri 0854684949 3289772559."", ""email"": ""claudio.iezzi@gkollektiv.it"", ""immagine"": """", ""indirizzo"": ""Via D'Ilio, San Giovanni Teatino, CH, Abruzzo, 66020, Italia"", ""lat"": ""42.4225896"", ""link"": ""https://www.facebook.com/gkollektivlab/"", ""lon"": ""14.1834425"", ""tel"": ""085 4684949""}","<pre><yamldata>tel: '085 4684949'
+email: claudio.iezzi@gkollektiv.it
+cosa: 'Offresi postazioni lavoro a #Pescara zona aeroporto a chi ha uffici danneggiati dal sisma/neve'
+descrizione: 'Per chi ha bisogno di tornare al lavoro e ha uffici inagibili, metto a disposizione i locali del mio ufficio con la possibilità di installare 3/4 postazioni lavoro in zona aeroporto #Pescara. L’ufficio è dotato di: scrivanie/sedie; accesso ad Internet Wi-Fi; stampante; tel/fax; riscaldamento e servizi igienici; angolo risotoro. Chi fosse interessato può contattarmi ai numeri 0854684949 3289772559.'
+indirizzo: 'Via D''Ilio, San Giovanni Teatino, CH, Abruzzo, 66020, Italia'
+lat: '42.4225896'
+lon: '14.1834425'
+link: 'https://www.facebook.com/gkollektivlab/'
+immagine: ''
+data: 20/01/2017
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2073,202157703,2017-01-20 14:58:28,2017-01-20 14:47:18,"A #Basciano (TE) servono generatori, turbine e aiuto. Appello del sindaco",,,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Sisma Gennaio 2017""]",,,{},"<pre><yamldata>tel: ''
+email: ''
+cosa: 'Situazione a Basciano'
+descrizione: 'Appello del sindaco di Basciano: ""abbiamo cittadini malati che devono fare la dialisi"". Servono turbine, generatori elettrici, mezzi idonei ed assistenza, visto che sono quattro giorni che l'energia elettrica non è disponibile su tutto il territorio comunale, ma non è arrivato nulla. L'energia elettrica fornita attraverso i generatori ora è di vitale importanza. Sulla provinciale da oggi si transita su una sola corsia in mezzo a muri di neve alti 4 metri e rami di alberi abbattuti dal peso della neve. Le comunicazioni attraverso i cellulari è quasi impossibile ed abbiamo difficoltà anche a contattare i due operatori comunali a lavoro sul mezzo, per coordinarli"". Testo completo dell'appelo del sindaco al link.'
+indirizzo: ''
+lat: '42.5963900'
+lon: '13.7356100'
+link: 'http://www.iduepunti.it/19_gennaio_2017/la-disperazione-del-sindaco-di-basciano-abbiamo-cittadini-malati-che-devono-fare-la-'
+immagine: ''
+data: 20/01/2017
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2070,202153495,2017-01-20 14:59:50,2017-01-20 14:29:48,HOTEL SALGETTI a MEZZANO (Tn) offre alloggio gratuito fino a metà febbraio,46.1566846,11.8147538460194,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""20/01/2017"", ""descrizione"": ""HOTEL SALGETTI a MEZZANO (Trentino); Fino a meta Febbraio, offriamo alloggio GRATUITO alle famiglie colpite da terremoto ed emergenza neve."", ""email"": ""salgetti@libero.it"", ""immagine"": """", ""indirizzo"": ""Via Roma, Melai, Mezzano, Comunit\u00e0 di Primiero, TN, Trentino-Alto Adige/S\u00fcdtirol, 38054, Italy"", ""lat"": ""46.1566846"", ""link"": """", ""lon"": ""11.8147538460194"", ""tel"": ""043967172""}","<pre><yamldata>tel: '043967172'
+email: salgetti@libero.it
+descrizione: 'HOTEL SALGETTI a MEZZANO (Trentino); Fino a meta Febbraio, offriamo alloggio GRATUITO alle famiglie colpite da terremoto ed emergenza neve.'
+indirizzo: 'Via Roma, Melai, Mezzano, Comunità di Primiero, TN, Trentino-Alto Adige/Südtirol, 38054, Italy'
+lat: '46.1566846'
+lon: '11.8147538460194'
+link: ''
+immagine: ''
+data: 20/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2063,202142986,2017-01-20 13:50:00,2017-01-20 13:42:17,Offresi casa al mare a famiglia terremotata in Sicilia,,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,{},"<pre><yamldata>tel: '3282084277'
 email: elisabetta.arria@gmail.com
 descrizione: 'Offriamo a persone terremotate, magari in pensione, una casa al mare in Sicilia fino a marzo 2017, chiaramente in comodato d'uso gratuito, almeno x l'inverno. Farete finta di essere in vacanza...'
@@ -855,6 +887,16 @@ link: http://www.comune.sangiovanniinfiore.cs.it/
 immagine: ''
 data: 19/01/2017
 </yamldata></pre>",closed
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1933,201944286,2017-01-19 19:50:38,2017-01-19 18:52:02,Offro alloggio per 4-5 persone #Lecce,,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""19/01/2017"", ""descrizione"": ""Offro alloggio per 4-5 persone in provincia di Lecce"", ""email"": ""leletrianni@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3474768937""}","<pre><yamldata>tel: '3474768937'
+email: leletrianni@gmail.com
+descrizione: 'Offro alloggio per 4-5 persone in provincia di Lecce'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 19/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1933,201944286,2017-01-19 19:50:38,2017-01-19 18:52:02,Offro alloggio per 4-5 persone #Lecce,,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""19/01/2017"", ""descrizione"": ""Offro alloggio per 4-5 persone in provincia di Lecce"", ""email"": ""leletrianni@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3474768937""}","<pre><yamldata>tel: '3474768937'
 email: leletrianni@gmail.com
 descrizione: 'Offro alloggio per 4-5 persone in provincia di Lecce'
@@ -6183,16 +6225,6 @@ descrizione: 'il Sindaco ha disposto la proroga della chiusura delle scuole (inf
 link: 'http://www.comune.camerino.mc.it/albo-pretorio/   e   https://ia601501.us.archive.org/2/items/DocumentoProrogaChiusuraScuole/Documento_-proroga_chiusura_scuole.pdf'
 data: 02/11/2016
 </yamldata></pre>",closed
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1062,186884490,2016-11-02 21:16:12,2016-11-02 18:32:34,Offro posto letto con bagno a San Gregorio (RC),38.0615552,15.6656776,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""02/11/2016"", ""descrizione"": ""Offro posto letto con bagno privato in appartamento indipendente dotato di ogni confort a Reggio Calabria nei pressi dell'aeroporto a persone disagiate dal terremoto...spazio sufficiente per un adulto piu' eventualmente un bambino piccolo"", ""email"": ""marcoielo81@gmail.com"", ""immagine"": """", ""indirizzo"": ""Strada Statale 106 Jonica, San Gregorio, Reggio, RC, CAL, 89131, Italia"", ""lat"": ""38.0615552"", ""link"": """", ""lon"": ""15.6656776"", ""tel"": """"}","<pre><yamldata>tel: ''
-email: marcoielo81@gmail.com
-descrizione: 'Offro posto letto con bagno privato in appartamento indipendente dotato di ogni confort a Reggio Calabria nei pressi dell''aeroporto a persone disagiate dal terremoto...spazio sufficiente per un adulto piu'' eventualmente un bambino piccolo'
-indirizzo: 'Strada Statale 106 Jonica, San Gregorio, Reggio, RC, CAL, 89131, Italia'
-lat: '38.0615552'
-lon: '15.6656776'
-link: ''
-immagine: ''
-data: 02/11/2016
-</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1062,186884490,2016-11-02 21:16:12,2016-11-02 18:32:34,Offro posto letto con bagno a San Gregorio (RC),38.0615552,15.6656776,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""02/11/2016"", ""descrizione"": ""Offro posto letto con bagno privato in appartamento indipendente dotato di ogni confort a Reggio Calabria nei pressi dell'aeroporto a persone disagiate dal terremoto...spazio sufficiente per un adulto piu' eventualmente un bambino piccolo"", ""email"": ""marcoielo81@gmail.com"", ""immagine"": """", ""indirizzo"": ""Strada Statale 106 Jonica, San Gregorio, Reggio, RC, CAL, 89131, Italia"", ""lat"": ""38.0615552"", ""link"": """", ""lon"": ""15.6656776"", ""tel"": """"}","<pre><yamldata>tel: ''
 email: marcoielo81@gmail.com
 descrizione: 'Offro posto letto con bagno privato in appartamento indipendente dotato di ogni confort a Reggio Calabria nei pressi dell''aeroporto a persone disagiate dal terremoto...spazio sufficiente per un adulto piu'' eventualmente un bambino piccolo'
