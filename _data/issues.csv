@@ -1,4 +1,24 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2110,202233386,2017-01-20 20:54:44,2017-01-20 20:22:14,Oltrepo' Pavese (Pavia): ospitalità in due camere per 4 persone anche con bimbi e animali,45.0332137,9.24392750997506,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""20/01/2017"", ""descrizione"": ""Metto a disposizione due camera da letto per 4 persone, sono benvenuti animali e bambini. Piccolo giardino.#Oltrep\u00f2Pavese #Pavia"", ""email"": ""brigidapaolasampino@gmail.com"", ""immagine"": """", ""indirizzo"": ""Piazza Castello, Casa Fontanini, Cigognola, Pavia, Lombardia, 27040, Italia"", ""lat"": ""45.0332137"", ""link"": """", ""lon"": ""9.24392750997506"", ""tel"": ""3349362577""}","<pre><yamldata>tel: '3349362577'
+email: brigidapaolasampino@gmail.com
+descrizione: 'Metto a disposizione due camera da letto per 4 persone, sono benvenuti animali e bambini. Piccolo giardino.#OltrepòPavese #Pavia'
+indirizzo: 'Piazza Castello, Casa Fontanini, Cigognola, Pavia, Lombardia, 27040, Italia'
+lat: '45.0332137'
+lon: '9.24392750997506'
+link: ''
+immagine: ''
+data: 20/01/2017
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2108,202232923,2017-01-20 20:51:05,2017-01-20 20:19:49,ospitalità per famiglia o mamma con bimbi in mansarda con 4 posti letto e bagno autonomo,,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""20/01/2017"", ""descrizione"": ""Possiamo ospitare famiglia o mamma e bambini in Mansarda con 4 posti letto e bagno privato metto a disposizione per chi ha bisogno di alloggio causa emergenza terremoto e maltempo"", ""email"": ""salin.rimina@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3388308252""}","<pre><yamldata>tel: '3388308252'
+email: salin.rimina@gmail.com
+descrizione: 'Possiamo ospitare famiglia o mamma e bambini in Mansarda con 4 posti letto e bagno privato metto a disposizione per chi ha bisogno di alloggio causa emergenza terremoto e maltempo'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 20/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2107,202232438,2017-01-20 20:49:44,2017-01-20 20:17:18,A Vicenza ospitalità in due stanze singole per famiglie con bimbi,,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""20/01/2017"", ""descrizione"": ""Siamo una coppia giovane di Vicenza e abbiamo 2 stanze singole vuote che momentaneamente non usiamo, abbiamo due cani piccoli e una gatta. Siamo disponibili ad offrire ospitalit\u00e0 a famiglie con bimbi!"", ""email"": ""norivale@libero.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3401409761""}","<pre><yamldata>tel: '3401409761'
 email: norivale@libero.it
 descrizione: 'Siamo una coppia giovane di Vicenza e abbiamo 2 stanze singole vuote che momentaneamente non usiamo, abbiamo due cani piccoli e una gatta. Siamo disponibili ad offrire ospitalità a famiglie con bimbi!'
@@ -7045,6 +7065,16 @@ link: 'https://www.facebook.com/permalink.php?story_fbid=1214366278637704&id=119
 immagine: ''
 data: 01/11/2016
 </yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1042,186660490,2016-11-01 22:06:58,2016-11-01 22:03:04,"LA ROCCA DI MANTIGNANA, Corciano (PG)",43.1600436,12.2864765,"[""Accettato"", ""Alloggi"", ""Facebook"", ""Form"", ""Sisma Ottobre""]",,,"{""data"": ""01/11/2016"", ""descrizione"": ""LA ROCCA DI MANTIGNANA, Corciano (PG): disponibili 2 appartamenti per due nuclei familiari da 4 persone l'uno. Contattare Anna."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Via Michelangelo Buonarroti, Corciano, PG, UMB, 06073, Italia"", ""lat"": ""43.1600436"", ""link"": ""https://www.facebook.com/permalink.php?story_fbid=1214366278637704&id=119031281504548"", ""lon"": ""12.2864765"", ""tel"": ""3478553422""}","<pre><yamldata>tel: '3478553422'
+email: ''
+descrizione: 'LA ROCCA DI MANTIGNANA, Corciano (PG): disponibili 2 appartamenti per due nuclei familiari da 4 persone l''uno. Contattare Anna.'
+indirizzo: 'Via Michelangelo Buonarroti, Corciano, PG, UMB, 06073, Italia'
+lat: '43.1600436'
+lon: '12.2864765'
+link: 'https://www.facebook.com/permalink.php?story_fbid=1214366278637704&id=119031281504548'
+immagine: ''
+data: 01/11/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1040,186658874,2016-11-06 00:30:29,2016-11-01 21:55:46,RACCOLTA BENI DI PRIMA NECESSITÀ A #PERUGIA DA INVIARE A #NORCIA,43.1119613,12.3890104,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Facebook"", ""Form"", ""Sisma Ottobre""]",,,"{""cosa"": ""RACCOLTA BENI DI PRIMA NECESSIT\u00c0 A #PERUGIA DA INVIARE A #NORCIA"", ""data"": ""01/11/2016"", ""descrizione"": ""IL CENTRO DI RACCOLTA \u00c8 PRESSO IL CAMPO DA RUGBY DI PIAN DI MASSIANO. L'ORARIO PER LA CONSEGNA DEI BENI PRESSO IL CENTRO RACCOLTA \u00c8 DALLE 17:00 ALLE 21:00. IL TERMINE ULTIMO PER CONSEGNARE GLI AIUTI \u00c8 VENERD\u00cc 4/10. QUI DI SEGUITO L'ELENCO DEI BENI CHE SERVONO: - Coperte e giacconi (vanno bene anche se usate purch\u00e8 in buono stato) - Prodotti per igiene personale (sapone per mani, docciashampoo, igienizzante mani senza acqua tipo amuchina, spazzolini, dentifricio, salviette umidificate) - Batterie e pile (stilo, torcie) - Torcie o attrezzature per illuminare a batteria - Cibo per cani(crocchette e cibo secco) - Magliette e intimo sia maschile che femminile(ovviamente nuovo) - Medicinali da banco - Alimentari a lunga scadenza"", ""email"": """", ""immagine"": """", ""indirizzo"": ""Piazza IV Novembre, San Marco, Perugia, PG, UMB, 06100, Italia"", ""lat"": ""43.1119613"", ""link"": ""https://www.facebook.com/1421014554788410/photos/a.1421019758121223.1073741828.1421014554788410/1889441507945710/?type=3"", ""lon"": ""12.3890104"", ""tel"": """"}","<pre><yamldata>tel: ''
 email: ''
 cosa: 'RACCOLTA BENI DI PRIMA NECESSITÀ A #PERUGIA DA INVIARE A #NORCIA'
@@ -13395,18 +13425,6 @@ bic: IBSPIT2P
 postale: ''
 causale: ''
 link: 'https://comunapp-ita.appspot.com/publishedItem?key=ag5zfmNvbXVuYXBwLWl0YXI4CxIGQ29tdW5lIghjb211bmFwcAwLEgZDb211bmUYgICAwKC5gwkMCxIESXRlbRiAgIDgxoGSCgw'
-email: ''
-data: 14/09/2016
-</yamldata></pre>
-",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/240,176847679,2016-09-14 08:40:47,2016-09-14 08:37:58,Caritas Frosinone - Veroli - Ferentino,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": ""Terremoto Centro Italia"", ""chi"": ""Caritas Frosinone - Veroli - Ferentino"", ""data"": ""14/09/2016"", ""descrizione"": ""Al momento si procede solo a raccolta di offerte in denaro tramite versamento sui conti correnti indicati. Tranne le Parrocchie, nessuno \u00e8 incaricato di raccogliere offerte in contanti a nome della Caritas."", ""email"": """", ""iban"": ""IT93 C052 9714 801C C103 0008 343"", ""intestazione"": ""Caritas diocesana di Frosinone-Veroli-Ferentino"", ""link"": ""http://caritas.diocesifrosinone.it/18-/-sp-930/149-terremoto-centro-italia-domenica-18-settembre-2016-colletta-in-tutte-le-chiese.html"", ""postale"": """"}","<pre><yamldata>chi: 'Caritas Frosinone - Veroli - Ferentino'
-descrizione: 'Al momento si procede solo a raccolta di offerte in denaro tramite versamento sui conti correnti indicati. Tranne le Parrocchie, nessuno è incaricato di raccogliere offerte in contanti a nome della Caritas.'
-intestazione: 'Caritas diocesana di Frosinone-Veroli-Ferentino'
-iban: 'IT93 C052 9714 801C C103 0008 343'
-bic: ''
-postale: ''
-causale: 'Terremoto Centro Italia'
-link: 'http://caritas.diocesifrosinone.it/18-/-sp-930/149-terremoto-centro-italia-domenica-18-settembre-2016-colletta-in-tutte-le-chiese.html'
 email: ''
 data: 14/09/2016
 </yamldata></pre>
