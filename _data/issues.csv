@@ -1,4 +1,14 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2078,202169544,2017-01-20 15:44:46,2017-01-20 15:35:27,Offro stalla 50-60mq e abitazione in provincia di Bergamo,45.76373212213923,9.68969464302063,"[""Accettato"", ""Alloggi"", ""Bollettino"", ""Donazioni"", ""Form"", ""Ospitalita animali"", ""Sisma Gennaio 2017""]",,,"{""data"": ""20/01/2017"", ""descrizione"": ""Offro stalla 50/60mq ovini/bovini e pascoli in zona, con annessa abitazione di tipo rurale (acqua da cisterna, no luce elettrica, modesta ma tutto in ordine come una casetta delle vacanze di una volta) con 6/7 posti letto cucina, bagno, sala, ma tutto indipendente, 2 stufe a legna e stufa a gas, raggiungibile tramite sentiero a 10 minuti di cammino dalla strada di Monte di Nese a realmente bisognosi per tutto il tempo necessario a rimettersi in piedi o passare la brutta stagione. Da altro sentiero 5 minuti in pi\u00f9 sempre vicino strada si pu\u00f2 salire con motocarriole o altri mezzi meccanici di piccola taglia"", ""email"": ""diegodona@libero.it"", ""immagine"": """", ""indirizzo"": ""CAI 533bis, Zogno, Comunit\u00e0 Montana della Valle Brembana, Bergamo, Lombardia, 24022, Italia"", ""lat"": ""45.76373212213923"", ""link"": """", ""lon"": ""9.68969464302063"", ""tel"": ""3395456888""}","<pre><yamldata>tel: '3395456888'
+email: diegodona@libero.it
+descrizione: 'Offro stalla 50/60mq ovini/bovini e pascoli in zona, con annessa abitazione di tipo rurale (acqua da cisterna, no luce elettrica, modesta ma tutto in ordine come una casetta delle vacanze di una volta) con 6/7 posti letto cucina, bagno, sala, ma tutto indipendente, 2 stufe a legna e stufa a gas, raggiungibile tramite sentiero a 10 minuti di cammino dalla strada di Monte di Nese a realmente bisognosi per tutto il tempo necessario a rimettersi in piedi o passare la brutta stagione. Da altro sentiero 5 minuti in più sempre vicino strada si può salire con motocarriole o altri mezzi meccanici di piccola taglia'
+indirizzo: 'CAI 533bis, Zogno, Comunità Montana della Valle Brembana, Bergamo, Lombardia, 24022, Italia'
+lat: '45.76373212213923'
+lon: '9.68969464302063'
+link: ''
+immagine: ''
+data: 20/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2077,202162756,2017-01-20 15:09:16,2017-01-20 15:08:23,Offriamo ospitalità in una mansarda a Trento,,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""20/01/2017"", ""descrizione"": ""Offriamo ospitalit\u00e0 a Trento, mettiamo a disposizione la nostra mansarda con bagno personale, letto matrimoniale o due letti singoli ed eventualmente lettini bimbi."", ""email"": ""giulia.damaro@libero.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": """"}","<pre><yamldata>tel: ''
 email: giulia.damaro@libero.it
 descrizione: 'Offriamo ospitalità a Trento, mettiamo a disposizione la nostra mansarda con bagno personale, letto matrimoniale o due letti singoli ed eventualmente lettini bimbi.'
@@ -301,6 +311,36 @@ indirizzo: ''
 lat: ''
 lon: ''
 link: 'https://www.facebook.com/alexcampoli/posts/10209659139690066'
+immagine: ''
+data: 20/01/2017
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2042,202122430,2017-01-20 15:40:33,2017-01-20 11:52:05,A Cividale del Friuli offriamo dependance con tre posti letto,46.0541164,13.4608727,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""20/01/2017"", ""descrizione"": ""Cividale del Friuli offro piccola dependance tre posti letto autonoma"", ""email"": ""alessandra.isaia@attalpeadria.it"", ""immagine"": """", ""indirizzo"": ""Via Fornalis, Bivio Romanutti, Cividale del Friuli, UD, Friuli Venezia Giulia, 33043, Italia"", ""lat"": ""46.0541164"", ""link"": """", ""lon"": ""13.4608727"", ""tel"": ""3886014559""}","<pre><yamldata>tel: '3886014559'
+email: alessandra.isaia@attalpeadria.it
+descrizione: 'Cividale del Friuli offro piccola dependance tre posti letto autonoma'
+indirizzo: 'Via Fornalis, Bivio Romanutti, Cividale del Friuli, UD, Friuli Venezia Giulia, 33043, Italia'
+lat: '46.0541164'
+lon: '13.4608727'
+link: ''
+immagine: ''
+data: 20/01/2017
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2041,202120359,2017-01-20 15:41:20,2017-01-20 11:40:53,Offro alloggio per una famiglia in provincia di Messina,38.1594298,14.7444926,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""20/01/2017"", ""descrizione"": ""PROVINCIA DI MESSINA - Offro alloggio per una famiglia di 4 persone (2 adulti e 2 bambini) nella provincia di messina."", ""email"": ""robertoprinciotto@hotmail.it"", ""immagine"": """", ""indirizzo"": ""Via Roma, Capo d'Orlando, ME, Sicily, 98071, Italia"", ""lat"": ""38.1594298"", ""link"": """", ""lon"": ""14.7444926"", ""tel"": ""3351049249""}","<pre><yamldata>tel: '3351049249'
+email: robertoprinciotto@hotmail.it
+descrizione: 'PROVINCIA DI MESSINA - Offro alloggio per una famiglia di 4 persone (2 adulti e 2 bambini) nella provincia di messina.'
+indirizzo: 'Via Roma, Capo d''Orlando, ME, Sicily, 98071, Italia'
+lat: '38.1594298'
+lon: '14.7444926'
+link: ''
+immagine: ''
+data: 20/01/2017
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2040,202119631,2017-01-20 15:43:14,2017-01-20 11:36:52,Offriamo container ben coibentato nella Valle del Salto (70km da #Amatrice),,,"[""Accettato"", ""Alloggi"", ""Bollettino"", ""Donazioni"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""20/01/2017"", ""descrizione"": ""offriamo alloggio nella valle del salto, a una settantina di chilometri da amatrice. Abbiamo un container riscaldato e ben coibentato in giardino che pu\u00f2 ospitare due persone!"", ""email"": ""c.carinci@tiscali.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3395698250""}","<pre><yamldata>tel: '3395698250'
+email: c.carinci@tiscali.it
+descrizione: 'offriamo alloggio nella valle del salto, a una settantina di chilometri da amatrice. Abbiamo un container riscaldato e ben coibentato in giardino che può ospitare due persone!'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
 immagine: ''
 data: 20/01/2017
 </yamldata></pre>",open
@@ -4639,6 +4679,11 @@ descrizione: '“La Verità” dedica una pagina intera a tal Aleksander Trofimo
 link: 'http://attivissimo.blogspot.it/2016/11/la-verita-pubblica-unintervista-un.html'
 data: 18/11/2016
 </yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1319,190446516,2016-11-18 23:29:49,2016-11-18 23:29:16,Viaggiatore nel tempo che prevede i terremoti,,,"[""Accettato"", ""Bufale""]",,,"{""data"": ""18/11/2016"", ""descrizione"": ""\u201cLa Verit\u00e0\u201d dedica una pagina intera a tal Aleksander Trofimov, \""viaggiatore nel tempo\"" che prevede i terremoti ed \u00e8 in contatto con gli alieni."", ""link"": ""http://attivissimo.blogspot.it/2016/11/la-verita-pubblica-unintervista-un.html"", ""titolo"": ""Viaggiatore nel tempo che prevede i terremoti""}","<pre><yamldata>titolo: 'Viaggiatore nel tempo che prevede i terremoti'
+descrizione: '“La Verità” dedica una pagina intera a tal Aleksander Trofimov, ""viaggiatore nel tempo"" che prevede i terremoti ed è in contatto con gli alieni.'
+link: 'http://attivissimo.blogspot.it/2016/11/la-verita-pubblica-unintervista-un.html'
+data: 18/11/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1318,190442236,2016-11-18 22:59:38,2016-11-18 22:59:09,"""RicostruiAmo Voceto"". Raccolta fondi associazione Amici di #Voceto - #Amatrice",,,"[""Accettato"", ""Facebook"", ""Raccolte Fondi""]",,,"{""bic"": ""ARBAIT33047"", ""causale"": ""Pro terremoto Voceto Amatrice"", ""chi"": ""\""RicostruiAmo Voceto\"". Raccolta fondi associazione Amici di #Voceto - #Amatrice"", ""data"": ""18/11/2016"", ""descrizione"": ""E' possibile contribuire alla ricostruzione di Voceto, frazione di Amatrice distrutta dal terremoto del 24 agosto, facendo una donazione all'Associazione senza fini di lucro \u00abAmici di Voceto\u00bb."", ""email"": """", ""iban"": ""IT65P0539073470000000091257"", ""intestazione"": ""Associazione Amici di Voceto"", ""link"": ""https://www.facebook.com/amicidivoceto/"", ""postale"": """"}","<pre><yamldata>chi: '""RicostruiAmo Voceto"". Raccolta fondi associazione Amici di #Voceto - #Amatrice'
 descrizione: 'E'' possibile contribuire alla ricostruzione di Voceto, frazione di Amatrice distrutta dal terremoto del 24 agosto, facendo una donazione all''Associazione senza fini di lucro «Amici di Voceto».'
 intestazione: 'Associazione Amici di Voceto'
@@ -5968,17 +6013,6 @@ indirizzo: 'Corso Vittorio Emanuele, Cittareale, RI, LAZ, Italia'
 lat: '42.6182543'
 lon: '13.1596844'
 link: 'https://www.facebook.com/groups/1758670357733881/permalink/1794314920836091/'
-immagine: ''
-data: 06/11/2016
-</yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1125,187533903,2016-11-06 00:57:50,2016-11-06 00:49:06,Comune #Amandola cerca volontari per servizi di compagnia e supporto a chi vive nella tenso-struttura,42.98089725,13.3584042326598,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Facebook"", ""Sisma Ottobre""]",,,"{""cosa"": ""Comune #Amandola cerca volontari per servizi di compagnia e supporto a chi vive nella tenso-struttura"", ""data"": ""06/11/2016"", ""descrizione"": ""Visto il cos\u00ec alto numero di persone, soprattutto bambini e anziani che in questi giorni particolari stanno vivendo nella tenso-struttura al campo sportivo, il Comune di Amandola cerca personale volontario per alcuni servizi di sistemazione, compagnia e maggiore qualit\u00e0 della vita. Chiunque fosse interessato a questa esperienza di solidariet\u00e0 pu\u00f2 recarsi presso la palestra geodetica (riferimento Denise) oppure contattare l'ufficio informazioni 0736840731."", ""email"": """", ""immagine"": """", ""indirizzo"": ""SP239, Amandola, FM, Marche, 63857, Italia"", ""lat"": ""42.98089725"", ""link"": ""https://www.facebook.com/amandolacomuneofficial/posts/1818217228399609"", ""lon"": ""13.3584042326598"", ""tel"": """"}","<pre><yamldata>tel: ''
-email: ''
-cosa: 'Comune #Amandola cerca volontari per servizi di compagnia e supporto a chi vive nella tenso-struttura'
-descrizione: 'Visto il così alto numero di persone, soprattutto bambini e anziani che in questi giorni particolari stanno vivendo nella tenso-struttura al campo sportivo, il Comune di Amandola cerca personale volontario per alcuni servizi di sistemazione, compagnia e maggiore qualità della vita. Chiunque fosse interessato a questa esperienza di solidarietà può recarsi presso la palestra geodetica (riferimento Denise) oppure contattare l''ufficio informazioni 0736840731.'
-indirizzo: 'SP239, Amandola, FM, Marche, 63857, Italia'
-lat: '42.98089725'
-lon: '13.3584042326598'
-link: 'https://www.facebook.com/amandolacomuneofficial/posts/1818217228399609'
 immagine: ''
 data: 06/11/2016
 </yamldata></pre>",open
