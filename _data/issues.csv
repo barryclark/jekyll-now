@@ -19,6 +19,16 @@ link: ''
 immagine: ''
 data: 20/01/2017
 </yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1996,202073335,2017-01-20 08:00:23,2017-01-20 07:40:51,Disponibilità di alloggi #Catanzaro,,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""20/01/2017"", ""descrizione"": ""Disponibilit\u00e0 di alloggi per famiglie, comune di Palermiti (CZ)"", ""email"": ""rotru67@libero.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""http://www.comune.palermiti.cz.it/"", ""lon"": """", ""tel"": ""3345045769""}","<pre><yamldata>tel: '3345045769'
+email: rotru67@libero.it
+descrizione: 'Disponibilità di alloggi per famiglie, comune di Palermiti (CZ)'
+indirizzo: ''
+lat: ''
+lon: ''
+link: 'http://www.comune.palermiti.cz.it/'
+immagine: ''
+data: 20/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1987,202063100,2017-01-20 07:20:37,2017-01-20 06:31:41,Offro vitto e alloggio a famiglia con animali da cortile e allevamento in provincia di Vicenza,,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""Vitto e alloggio per famiglia"", ""data"": ""20/01/2017"", ""descrizione"": ""Offro ospitalita' a famiglia presso mia abitazione. Possibilita' di ospitare anche animali da cortile e allevamento. Dueville (VI)"", ""email"": ""paolo.tognato@kypa.eu"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3482203374""}","<pre><yamldata>tel: '3482203374'
 email: paolo.tognato@kypa.eu
 cosa: 'Vitto e alloggio per famiglia'
@@ -3542,17 +3552,6 @@ indirizzo: ''
 lat: ''
 lon: ''
 link: 'https://www.facebook.com/presidicivici/'
-data: 27/11/2016
-</yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1377,191834432,2016-11-27 00:39:30,2016-11-27 00:27:47,Raccolta fondi per comprare uno scuolabus a #Pievebovigliana,,,"[""Accettato"", ""Bollettino"", ""Facebook"", ""Raccolte Fondi"", ""Sisma Ottobre""]",,,"{""bic"": ""HELADEF1WEM"", ""causale"": ""\""Erdbeben Italien\u201c"", ""chi"": ""Raccolta fondi per comprare uno scuolabus a #Pievebovigliana"", ""data"": ""27/11/2016"", ""descrizione"": ""La Federazione delle Associazioni culturali italo-tedesche VDIG - Italienfreunde ha dato vita ad una raccolta fondi per acquistare uno scuolabus per gli scolari di Pievebovigliana, paesino marchigiano semidistrutto dal terremoto. Qui ulteriori informazioni: http://bit.ly/2frhW5K"", ""email"": """", ""iban"": ""DE84820510000301039771"", ""intestazione"": """", ""link"": ""https://www.facebook.com/radiocolonia.funkhaus/posts/1794383717497435"", ""postale"": """"}","<pre><yamldata>chi: 'Raccolta fondi per comprare uno scuolabus a #Pievebovigliana'
-descrizione: 'La Federazione delle Associazioni culturali italo-tedesche VDIG - Italienfreunde ha dato vita ad una raccolta fondi per acquistare uno scuolabus per gli scolari di Pievebovigliana, paesino marchigiano semidistrutto dal terremoto. Qui ulteriori informazioni: http://bit.ly/2frhW5K'
-intestazione: ''
-iban: DE84820510000301039771
-bic: HELADEF1WEM
-postale: ''
-causale: '""Erdbeben Italien“'
-link: 'https://www.facebook.com/radiocolonia.funkhaus/posts/1794383717497435'
-email: ''
 data: 27/11/2016
 </yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1377,191834432,2016-11-27 00:39:30,2016-11-27 00:27:47,Raccolta fondi per comprare uno scuolabus a #Pievebovigliana,,,"[""Accettato"", ""Bollettino"", ""Facebook"", ""Raccolte Fondi"", ""Sisma Ottobre""]",,,"{""bic"": ""HELADEF1WEM"", ""causale"": ""\""Erdbeben Italien\u201c"", ""chi"": ""Raccolta fondi per comprare uno scuolabus a #Pievebovigliana"", ""data"": ""27/11/2016"", ""descrizione"": ""La Federazione delle Associazioni culturali italo-tedesche VDIG - Italienfreunde ha dato vita ad una raccolta fondi per acquistare uno scuolabus per gli scolari di Pievebovigliana, paesino marchigiano semidistrutto dal terremoto. Qui ulteriori informazioni: http://bit.ly/2frhW5K"", ""email"": """", ""iban"": ""DE84820510000301039771"", ""intestazione"": """", ""link"": ""https://www.facebook.com/radiocolonia.funkhaus/posts/1794383717497435"", ""postale"": """"}","<pre><yamldata>chi: 'Raccolta fondi per comprare uno scuolabus a #Pievebovigliana'
