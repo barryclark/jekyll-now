@@ -1,4 +1,14 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2120,202253730,2017-01-20 22:13:54,2017-01-20 22:02:39,Offriamo due camere matrimonia,45.70725,9.6260676,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""20/01/2017"", ""descrizione"": ""Offriamo due camere matrimoniali con la possibilit\u00e0 di aggiungere letto. Bagno e balcone privato"", ""email"": ""agriturismomarco@alice.it"", ""immagine"": """", ""indirizzo"": ""Via Madonna del Bosco, Longuelo, Bergamo, Lombardia, 24035, Italia"", ""lat"": ""45.70725"", ""link"": """", ""lon"": ""9.6260676"", ""tel"": ""3427589877""}","<pre><yamldata>tel: '3427589877'
+email: agriturismomarco@alice.it
+descrizione: 'Offriamo due camere matrimoniali con la possibilità di aggiungere letto. Bagno e balcone privato'
+indirizzo: 'Via Madonna del Bosco, Longuelo, Bergamo, Lombardia, 24035, Italia'
+lat: '45.70725'
+lon: '9.6260676'
+link: ''
+immagine: ''
+data: 20/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2119,202253678,2017-01-20 22:03:40,2017-01-20 22:02:23,Sostegno per allevatori in difficoltà: trasporto e ospitalità animali,42.3488992,13.3981375,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Facebook"", ""Ospitalita animali"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""Sostegno per allevatori in difficolt\u00e0: trasporto e ospitalit\u00e0 animali"", ""data"": ""20/01/2017"", ""descrizione"": ""La Cooperativa Agricola Raiano mette a disposizione delle aziende danneggiare dal terremoto i suoi spazi inutilizzati. La Cooperativa \u00e8 disposta a proprie spese a trasportare gli animali. La Confagricoltura di Modena si offre per un sostegno ai nostri allevatori in difficolt\u00e0. Per contatti potete chiamare la nostra associazione."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Piazza Duomo, Pettino, L'Aquila, AQ, Abruzzo, 67100, Italia"", ""lat"": ""42.3488992"", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1831749653759284/"", ""lon"": ""13.3981375"", ""tel"": """"}","<pre><yamldata>tel: ''
 email: ''
 cosa: 'Sostegno per allevatori in difficoltà: trasporto e ospitalità animali'
