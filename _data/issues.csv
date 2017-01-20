@@ -20,6 +20,16 @@ link: ''
 immagine: ''
 data: 20/01/2017
 </yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2059,202137865,2017-01-20 13:44:41,2017-01-20 13:16:31,Offro alloggio gratuito per 4/5 persone a #Monterchi (AR),43.498448823331834,12.093876600265503,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""20/01/2017"", ""descrizione"": ""Offro alloggio gratuito per 4/5 persone a #Monterchi AR a chi \u00e8 stato colpito dal terremoto e desidera un alloggio dotato di tutti i confort e super attrezzato, offro gratuitamente la possibilit\u00e0 di soggiornare qui."", ""email"": ""orsiniraffaela@gmail.com"", ""immagine"": """", ""indirizzo"": ""SP42, Vicchio di Mezzo, Monterchi, AR, Tuscany, Italia"", ""lat"": ""43.498448823331834"", ""link"": """", ""lon"": ""12.093876600265503"", ""tel"": ""3384562547""}","<pre><yamldata>tel: '3384562547'
+email: orsiniraffaela@gmail.com
+descrizione: 'Offro alloggio gratuito per 4/5 persone a #Monterchi AR a chi è stato colpito dal terremoto e desidera un alloggio dotato di tutti i confort e super attrezzato, offro gratuitamente la possibilità di soggiornare qui.'
+indirizzo: 'SP42, Vicchio di Mezzo, Monterchi, AR, Tuscany, Italia'
+lat: '43.498448823331834'
+lon: '12.093876600265503'
+link: ''
+immagine: ''
+data: 20/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2058,202137095,2017-01-20 13:15:00,2017-01-20 13:12:28,Associazione 180amici e ActionAid: risposta emergenza Alto Aterno,42.3488992,13.3981375,"[""Accettato"", ""Bollettino"", ""Contatti"", ""Form"", ""Notizie Utili"", ""Sisma Gennaio 2017""]",,,"{""data"": ""20/01/2017"", ""descrizione"": ""L'associazione 180amici dell'Aquila in collaborazione con ActionAid ha attivato un numero di telefono per rispondere alle esigenze delle persone colpite dal terremoto nell'Alto Aterno."", ""email"": """", ""indirizzo"": ""Piazza Duomo, Pettino, L'Aquila, AQ, Abruzzo, 67100, Italia"", ""lat"": ""42.3488992"", ""link"": """", ""lon"": ""13.3981375"", ""nome"": ""Associazione 180amici e ActionAid"", ""tel"": ""3246393207""}","<pre><yamldata>nome: 'Associazione 180amici e ActionAid'
 tel: '3246393207'
 email: ''
