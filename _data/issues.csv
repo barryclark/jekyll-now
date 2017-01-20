@@ -228,7 +228,7 @@ lon: '13.3981375'
 link: ''
 data: 20/01/2017
 </yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2057,202136468,2017-01-20 13:12:51,2017-01-20 13:08:59,COPERTE,,,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""COPERTE"", ""data"": ""20/01/2017"", ""descrizione"": ""A Milano, sto radunando con amici e conoscenti, pi\u00f9 coperte possibili. Mi \u00e8 stato detto di inviarle al comune di Montereale con un corriere. Chiunque ne avesse bisogno me lo segnali che le dividiamo. Abbiamo la possibilit\u00e0 di radunare anche qualche vestito pesante da sci. Noi siamo disponibili!!! Fateci sapere. Ci serve capire solo come inviarveli e dove. Grazie"", ""email"": ""e.belloni6@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3333526903""}","<pre><yamldata>tel: '3333526903'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2057,202136468,2017-01-20 17:16:11,2017-01-20 13:08:59,RACCOLTA DI COPERTE A MILANO DA INVIARE A MONTEREALE,,,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""COPERTE"", ""data"": ""20/01/2017"", ""descrizione"": ""A Milano, sto radunando con amici e conoscenti, pi\u00f9 coperte possibili. Mi \u00e8 stato detto di inviarle al comune di Montereale con un corriere. Chiunque ne avesse bisogno me lo segnali che le dividiamo. Abbiamo la possibilit\u00e0 di radunare anche qualche vestito pesante da sci. Noi siamo disponibili!!! Fateci sapere. Ci serve capire solo come inviarveli e dove. Grazie"", ""email"": ""e.belloni6@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3333526903""}","<pre><yamldata>tel: '3333526903'
 email: e.belloni6@gmail.com
 cosa: COPERTE
 descrizione: 'A Milano, sto radunando con amici e conoscenti, più coperte possibili. Mi è stato detto di inviarle al comune di Montereale con un corriere. Chiunque ne avesse bisogno me lo segnali che le dividiamo. Abbiamo la possibilità di radunare anche qualche vestito pesante da sci. Noi siamo disponibili!!! Fateci sapere. Ci serve capire solo come inviarveli e dove. Grazie'
@@ -742,6 +742,16 @@ link: ''
 immagine: ''
 data: 20/01/2017
 </yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2000,202080202,2017-01-20 17:18:14,2017-01-20 08:24:13,Offresi alloggio a Cinisello Balsamo (MI) ,45.5498263,9.2078137,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""20/01/2017"", ""descrizione"": ""A Cinisello Balsamo (MI) offriamo con amore un letto gonfiabile in soggiorno (\u00e8 comodo) con bagno privato. Siamo una coppia di lavoratori senza figli."", ""email"": ""danila.poggi@gmail.com"", ""immagine"": """", ""indirizzo"": ""Via Aquileia, Campo dei Fiori, Balsamo, Cinisello Balsamo, Milano, Lombardia, 20092, Italia"", ""lat"": ""45.5498263"", ""link"": """", ""lon"": ""9.2078137"", ""tel"": ""3492235155""}","<pre><yamldata>tel: '3492235155'
+email: danila.poggi@gmail.com
+descrizione: 'A Cinisello Balsamo (MI) offriamo con amore un letto gonfiabile in soggiorno (è comodo) con bagno privato. Siamo una coppia di lavoratori senza figli.'
+indirizzo: 'Via Aquileia, Campo dei Fiori, Balsamo, Cinisello Balsamo, Milano, Lombardia, 20092, Italia'
+lat: '45.5498263'
+lon: '9.2078137'
+link: ''
+immagine: ''
+data: 20/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1999,202078861,2017-01-20 11:12:42,2017-01-20 08:16:14,Offro miniappartamento #Tarquinia,,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""20/01/2017"", ""descrizione"": ""Offro miniappartamento (camera matrimoniale + divano letto a una piazza) a persone autosufficienti e con auto propria. L\u2019alloggio si trova in prossimit\u00e0 di Tarquinia (VT) e sar\u00e0 disponibile per tutto il mese di febbraio. Scrivetemi o telefonatemi prima della fine del mese. Grazie"", ""email"": ""angela.costantini@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3403129688""}","<pre><yamldata>tel: '3403129688'
 email: angela.costantini@gmail.com
 descrizione: 'Offro miniappartamento (camera matrimoniale + divano letto a una piazza) a persone autosufficienti e con auto propria. L’alloggio si trova in prossimità di Tarquinia (VT) e sarà disponibile per tutto il mese di febbraio. Scrivetemi o telefonatemi prima della fine del mese. Grazie'
@@ -788,6 +798,16 @@ descrizione: 'Mettiamo a disposizione appartamento 5 posti letto in Sardegna e p
 indirizzo: ''
 lat: ''
 lon: ''
+link: ''
+immagine: ''
+data: 20/01/2017
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1994,202072148,2017-01-20 17:19:04,2017-01-20 07:34:02,offresi alloggio per due persone in provincia di Trento,45.733793,10.937181,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""20/01/2017"", ""descrizione"": ""Posso ospitare due persone, ho una stanza libera con due posti letto, in provincia di Trento."", ""email"": ""cipriani.veronica@gmail.com"", ""immagine"": """", ""indirizzo"": ""Via Campagnola, Avio, Comunit\u00e0 della Vallagarina, TN, Trentino-Alto Adige, 38063, Italia"", ""lat"": ""45.733793"", ""link"": """", ""lon"": ""10.937181"", ""tel"": ""3282181004""}","<pre><yamldata>tel: '3282181004'
+email: cipriani.veronica@gmail.com
+descrizione: 'Posso ospitare due persone, ho una stanza libera con due posti letto, in provincia di Trento.'
+indirizzo: 'Via Campagnola, Avio, Comunità della Vallagarina, TN, Trentino-Alto Adige, 38063, Italia'
+lat: '45.733793'
+lon: '10.937181'
 link: ''
 immagine: ''
 data: 20/01/2017
