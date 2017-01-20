@@ -1,4 +1,34 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2038,202118067,2017-01-20 11:29:55,2017-01-20 11:28:36,Offresi ricovero bestiame #LAquila,42.098927,13.084888,"[""Accettato"", ""Alloggi"", ""Form"", ""Ospitalit\u00e0 animali"", ""Sisma Gennaio 2017""]",,,"{""data"": ""20/01/2017"", ""descrizione"": ""INVITO AGLI ALLEVATORI La signora Stefania Bellantoni offre ricovero in stalla per circa 250 pecore ma utilizzabile per qualsiasi altro animale con casetta adiacente per pastore e piccolo terreno per pascolo. Zona Carsoli (AQ)"", ""email"": """", ""immagine"": """", ""indirizzo"": ""Via Tiburtina Valeria, Carsoli, AQ, Abruzzo, 67065, Italia"", ""lat"": ""42.098927"", ""link"": """", ""lon"": ""13.084888"", ""tel"": ""3275988323""}","<pre><yamldata>tel: '3275988323'
+email: ''
+descrizione: 'INVITO AGLI ALLEVATORI La signora Stefania Bellantoni offre ricovero in stalla per circa 250 pecore ma utilizzabile per qualsiasi altro animale con casetta adiacente per pastore e piccolo terreno per pascolo. Zona Carsoli (AQ)'
+indirizzo: 'Via Tiburtina Valeria, Carsoli, AQ, Abruzzo, 67065, Italia'
+lat: '42.098927'
+lon: '13.084888'
+link: ''
+immagine: ''
+data: 20/01/2017
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2037,202117455,2017-01-20 11:27:16,2017-01-20 11:25:21,Offro appartamento a #Monticiano (SI),43.1375172,11.1786595,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""20/01/2017"", ""descrizione"": ""Offro appartamento a Monticiano (Siena) 4-5 posti letto, nel centro del paese vicino ai servizi, a chi ne avesse bisogno. Completamente indipendente, dotato di tutti i comfort, disponibile subito."", ""email"": ""cosci3@unisi.it"", ""immagine"": """", ""indirizzo"": ""Via Giuseppe Mazzini, Podere Orbano, Monticiano, SI, Tuscany, Italia"", ""lat"": ""43.1375172"", ""link"": """", ""lon"": ""11.1786595"", ""tel"": ""3470769190""}","<pre><yamldata>tel: '3470769190'
+email: cosci3@unisi.it
+descrizione: 'Offro appartamento a Monticiano (Siena) 4-5 posti letto, nel centro del paese vicino ai servizi, a chi ne avesse bisogno. Completamente indipendente, dotato di tutti i comfort, disponibile subito.'
+indirizzo: 'Via Giuseppe Mazzini, Podere Orbano, Monticiano, SI, Tuscany, Italia'
+lat: '43.1375172'
+lon: '11.1786595'
+link: ''
+immagine: ''
+data: 20/01/2017
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2036,202117323,2017-01-20 11:26:45,2017-01-20 11:24:39,Offresi ospitalità a mamma con bambino ,,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""20/01/2017"", ""descrizione"": ""Sono una mamma Sola e vivo con i miei due bambini di 6 e 8 anni ad Anguillara Sabazia, 30km da roma. Casa non \u00e8 molto grande ma posso offrire ospitalit\u00e0 ad una mamma con bambino. Metto a disposizione la mia camera con un letto da 1 piazza e mezza. Questo \u00e8 tutto ci\u00f2 che posso dare."", ""email"": ""giulianigiosiana@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3470293194""}","<pre><yamldata>tel: '3470293194'
+email: giulianigiosiana@gmail.com
+descrizione: 'Sono una mamma Sola e vivo con i miei due bambini di 6 e 8 anni ad Anguillara Sabazia, 30km da roma. Casa non è molto grande ma posso offrire ospitalità ad una mamma con bambino. Metto a disposizione la mia camera con un letto da 1 piazza e mezza. Questo è tutto ciò che posso dare.'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 20/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2035,202112201,2017-01-20 11:13:10,2017-01-20 10:59:32,Offro una stanza con due posti #Livorno,,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""20/01/2017"", ""descrizione"": ""Offro una stanza con due posti letto in casa grande a Livorno centro."", ""email"": ""marco.cavallini9@virgilio.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""328-1135636""}","<pre><yamldata>tel: 328-1135636
 email: marco.cavallini9@virgilio.it
 descrizione: 'Offro una stanza con due posti letto in casa grande a Livorno centro.'
