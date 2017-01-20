@@ -36,9 +36,6 @@ We will need a navigation bar. Using navbar-inverse makes it dark, which looks n
 
 
 
-
-
-
 After you add some closing markers to close the body and html document, you're base.html should look like this:
 
 ```
@@ -70,7 +67,10 @@ After you add some closing markers to close the body and html document, you're b
     </div>
   </nav>
 
-
+<!-- <div class="container">
+  {% block content %}
+  {% endblock %}
+</div> -->
 
 </body>
 
