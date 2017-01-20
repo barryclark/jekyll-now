@@ -19,10 +19,10 @@ link: 'https://www.google.it/maps/place/Piazzale+Dateo,+20129+Milano/@45.4682629
 immagine: ''
 data: 20/01/2017
 </yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2032,202108417,2017-01-20 10:43:02,2017-01-20 10:41:22,Fieno #ArquataDelTronto,42.7723609,13.2965826,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Facebook"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""Fieno #ArquataDelTronto"", ""data"": ""20/01/2017"", ""descrizione"": ""Richiedo 10 rotoli di fieno per foraggiare 4 cavalli a Pretare, frazione di Arquata del Tronto."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Piazza Umberto I, Arquata del Tronto, AP, Marche, Italia"", ""lat"": ""42.7723609"", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1831454010455515/"", ""lon"": ""13.2965826"", ""tel"": """"}","<pre><yamldata>tel: ''
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2032,202108417,2017-01-20 11:08:05,2017-01-20 10:41:22,Fieno #ArquataDelTronto,42.7723609,13.2965826,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Facebook"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""Fieno #ArquataDelTronto"", ""data"": ""20/01/2017"", ""descrizione"": ""Richiedo 10 rotoli di fieno per foraggiare 4 cavalli a Pretare, frazione di Arquata del Tronto. 3478301258 Carlo"", ""email"": """", ""immagine"": """", ""indirizzo"": ""Piazza Umberto I, Arquata del Tronto, AP, Marche, Italia"", ""lat"": ""42.7723609"", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1831454010455515/"", ""lon"": ""13.2965826"", ""tel"": ""3478301258""}","<pre><yamldata>tel: '3478301258'
 email: ''
 cosa: 'Fieno #ArquataDelTronto'
-descrizione: 'Richiedo 10 rotoli di fieno per foraggiare 4 cavalli a Pretare, frazione di Arquata del Tronto.'
+descrizione: 'Richiedo 10 rotoli di fieno per foraggiare 4 cavalli a Pretare, frazione di Arquata del Tronto. 3478301258 Carlo'
 indirizzo: 'Piazza Umberto I, Arquata del Tronto, AP, Marche, Italia'
 lat: '42.7723609'
 lon: '13.2965826'
