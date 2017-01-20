@@ -4,8 +4,8 @@ title: Bootstrap main_page.html on Pythonanywhere
 ---
 
 
-Now you can start on page.html. We've already got a good header, so let's focus on the body:
 
+Now you can start on page.html. We've already got a good header, so let's focus on the body. Let's look at the code:
 
 
 
@@ -36,6 +36,8 @@ Now you can start on page.html. We've already got a good header, so let's focus 
 
 </body>
 ```
+
+
 
 
 Font:
