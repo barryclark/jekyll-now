@@ -1,4 +1,14 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2055,202133913,2017-01-20 12:58:16,2017-01-20 12:55:19,Offresi ospitalità a #Firenze,,,"[""Accettato"", ""Alloggi"", ""Form"", ""Ospitalit\u00e0 animali"", ""Sisma Gennaio 2017""]",,,"{""data"": ""20/01/2017"", ""descrizione"": ""Firenze . Offro ospitalit\u00e0 gratuita nella mia casa mettendo a disposizione una stanza doppia e la condivisione di cucina, bagno e salotto. la casa ha un grande giardino pertanto \u00e8 possibile portare un cane, gatti e, attrezzandosi, animali da cortile. sono una donna lavoratrice di 55 anni con figli ormai grandi, fuori casa. sarei lieta di aiutare"", ""email"": ""cristina.panuccio@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3290073225""}","<pre><yamldata>tel: '3290073225'
+email: cristina.panuccio@gmail.com
+descrizione: 'Firenze . Offro ospitalità gratuita nella mia casa mettendo a disposizione una stanza doppia e la condivisione di cucina, bagno e salotto. la casa ha un grande giardino pertanto è possibile portare un cane, gatti e, attrezzandosi, animali da cortile. sono una donna lavoratrice di 55 anni con figli ormai grandi, fuori casa. sarei lieta di aiutare'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 20/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2054,202133387,2017-01-20 12:53:34,2017-01-20 12:52:12,Capannone a disposizione per ricovero e mungitura animali,,,"[""Accettato"", ""Alloggi"", ""Form"", ""Ospitalit\u00e0 animali"", ""Sisma Gennaio 2017""]",,,"{""data"": ""20/01/2017"", ""descrizione"": ""IO E LA MIA FAMIGLIA METTIAMO A DISPOSIZIONE PER GLI ALLEVATORI DELLE ZONE COLPITE DAL SISMA UN CAPANNONE DI NOSTRA PROPRIETA' ADIBITO A RIMESSAGGIO PER OVINI CAPRINI ASINI MUCCHE E ALTRI. ANIMALI ANCHE CON POSTAZIONE MUNGITURA....ATTUALMENTE CI SONO NELLA MET\u00c0 DEL CAPANNONE LE NOSTRE BESTIE MA ABBIAMO ANCORA POSTO PER CIRCA 300 PECORE E QUALCHE CAVALLO ASINO MUCCA O QUALSIASI ALTRO ANIMALE. Contattare Teresa."", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""https://www.facebook.com/mamy.gabry.5/posts/1526038030757961"", ""lon"": """", ""tel"": ""329 949 17 40""}","<pre><yamldata>tel: '329 949 17 40'
 email: ''
 descrizione: 'IO E LA MIA FAMIGLIA METTIAMO A DISPOSIZIONE PER GLI ALLEVATORI DELLE ZONE COLPITE DAL SISMA UN CAPANNONE DI NOSTRA PROPRIETA'' ADIBITO A RIMESSAGGIO PER OVINI CAPRINI ASINI MUCCHE E ALTRI. ANIMALI ANCHE CON POSTAZIONE MUNGITURA....ATTUALMENTE CI SONO NELLA METÀ DEL CAPANNONE LE NOSTRE BESTIE MA ABBIAMO ANCORA POSTO PER CIRCA 300 PECORE E QUALCHE CAVALLO ASINO MUCCA O QUALSIASI ALTRO ANIMALE. Contattare Teresa.'
@@ -326,10 +336,41 @@ link: 'http://www.comune.palermiti.cz.it/'
 immagine: ''
 data: 20/01/2017
 </yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1991,202070496,2017-01-20 12:59:48,2017-01-20 07:23:13,Offresi gruppo elettrogeno o altri beni,,,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""gruppo elettrogeno o altri beni"", ""data"": ""20/01/2017"", ""descrizione"": ""Buongiorno, sono della provincia di Treviso, vorrei far avere il mio aiuto offrendo un gruppo elettrogeno o altro. Come posso fare? Grazie"", ""email"": ""susy.vidali@libero.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3472214126""}","<pre><yamldata>tel: '3472214126'
+email: susy.vidali@libero.it
+cosa: 'gruppo elettrogeno o altri beni'
+descrizione: 'Buongiorno, sono della provincia di Treviso, vorrei far avere il mio aiuto offrendo un gruppo elettrogeno o altro. Come posso fare? Grazie'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 20/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1987,202063100,2017-01-20 08:59:20,2017-01-20 06:31:41,Offro vitto e alloggio a famiglia con animali da cortile e allevamento in provincia di Vicenza,,,"[""Accettato"", ""Alloggi"", ""Form"", ""Ospitalit\u00e0 animali"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""Vitto e alloggio per famiglia"", ""data"": ""20/01/2017"", ""descrizione"": ""Offro ospitalita' a famiglia presso mia abitazione. Possibilita' di ospitare anche animali da cortile e allevamento. Dueville (VI)"", ""email"": ""paolo.tognato@kypa.eu"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3482203374""}","<pre><yamldata>tel: '3482203374'
 email: paolo.tognato@kypa.eu
 cosa: 'Vitto e alloggio per famiglia'
 descrizione: 'Offro ospitalita'' a famiglia presso mia abitazione. Possibilita'' di ospitare anche animali da cortile e allevamento. Dueville (VI)'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 20/01/2017
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1983,202059776,2017-01-20 12:57:10,2017-01-20 06:10:25,Offro una mansarda per due/tre #Bergamo,45.6945115,9.669839,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""20/01/2017"", ""descrizione"": ""Offro una mansarda per due/tre persone con bagno a chi ne ha davvero bisogno (zone colpite dal sisma/neve). Econome io ci sono per un pasto caldo \u00e8 un po' di calore. Niente di pi\u00f9 .Ricambio un po' di amore che mi \u00e8 stato dato quando avevo bisogno io. Non voglio niente in cambio, solo aiutare chi ha bisogno. Sono a Bergamo."", ""email"": ""valentinabotta@hotmail.it"", ""immagine"": """", ""indirizzo"": ""Piazza Giacomo Matteotti, Malpensata, Bergamo, Lombardia, 24122, Italia"", ""lat"": ""45.6945115"", ""link"": """", ""lon"": ""9.669839"", ""tel"": ""3451752976""}","<pre><yamldata>tel: '3451752976'
+email: valentinabotta@hotmail.it
+descrizione: 'Offro una mansarda per due/tre persone con bagno a chi ne ha davvero bisogno (zone colpite dal sisma/neve). Econome io ci sono per un pasto caldo è un po'' di calore. Niente di più .Ricambio un po'' di amore che mi è stato dato quando avevo bisogno io. Non voglio niente in cambio, solo aiutare chi ha bisogno. Sono a Bergamo.'
+indirizzo: 'Piazza Giacomo Matteotti, Malpensata, Bergamo, Lombardia, 24122, Italia'
+lat: '45.6945115'
+lon: '9.669839'
+link: ''
+immagine: ''
+data: 20/01/2017
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1982,202056473,2017-01-20 12:55:47,2017-01-20 05:43:31,Offresi alloggio #Siena,,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""20/01/2017"", ""descrizione"": ""Offro alloggio per due tre persone. Provincia di siena."", ""email"": ""ylenia.malentacchi@yahoo.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3932304961""}","<pre><yamldata>tel: '3932304961'
+email: ylenia.malentacchi@yahoo.it
+descrizione: 'Offro alloggio per due tre persone. Provincia di siena.'
 indirizzo: ''
 lat: ''
 lon: ''
@@ -8943,12 +8984,6 @@ data: 22/09/2016
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/640,178563427,2016-10-01 18:43:09,2016-09-22 09:37:40,"Amatrice, assistenza agli animali senza padroni",,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""22/09/2016"", ""descrizione"": ""Servizi veterinari Asl Rieti nelle zone colpite dal Sisma: Istituito il Coordinamento Tecnico Interregionale. Coinvolti Enti, Istituti Zooprofilattici sperimentali Lazio-Toscana e Umbria-Marche e il Centro referenza nazionale per le emergenze non epidemiche. Coordinamento del Ministero della Salute"", ""link"": ""http://www.rietilife.com/2016/09/21/ad-amatrice-arriva-lassistenza-agli-animali-perso-padroni/"", ""titolo"": ""Amatrice, assistenza agli animali senza padroni""}","<pre><yamldata>titolo: 'Amatrice, assistenza agli animali senza padroni'
 descrizione: 'Servizi veterinari Asl Rieti nelle zone colpite dal Sisma: Istituito il Coordinamento Tecnico Interregionale. Coinvolti Enti, Istituti Zooprofilattici sperimentali Lazio-Toscana e Umbria-Marche e il Centro referenza nazionale per le emergenze non epidemiche. Coordinamento del Ministero della Salute'
 link: 'http://www.rietilife.com/2016/09/21/ad-amatrice-arriva-lassistenza-agli-animali-perso-padroni/'
-data: 22/09/2016
-</yamldata></pre>
-",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/639,178563205,2016-10-01 18:43:24,2016-09-22 09:36:25,"A Montegallo (Ap) inaugurati scuola, municipio, chiesa e farmacia",,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""22/09/2016"", ""descrizione"": ""A Montegallo (Ap) inaugurazione domenica 25 settembre dei moduli provvisori riscaldati che ospiteranno scuola, municipio, chiesa e farmacia. Ad annunciarlo il presidente della Regione Emilia Romagna, Stefano Bonaccini, la cui protezione civile sta realizzando le strutture."", ""link"": ""https://www.facebook.com/stebonaccini/posts/1119258541444375"", ""titolo"": ""A Montegallo inaugurati domenica scuola, municipio, chiesa e farmacia""}","<pre><yamldata>titolo: 'A Montegallo inaugurati domenica scuola, municipio, chiesa e farmacia'
-descrizione: 'A Montegallo (Ap) inaugurazione domenica 25 settembre dei moduli provvisori riscaldati che ospiteranno scuola, municipio, chiesa e farmacia. Ad annunciarlo il presidente della Regione Emilia Romagna, Stefano Bonaccini, la cui protezione civile sta realizzando le strutture.'
-link: 'https://www.facebook.com/stebonaccini/posts/1119258541444375'
 data: 22/09/2016
 </yamldata></pre>
 ",open
