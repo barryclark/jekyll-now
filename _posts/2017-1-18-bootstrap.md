@@ -37,7 +37,7 @@ We will need a navigation bar. Using navbar-inverse makes it dark, which looks n
 
 
 
-You had stuff here until you deleted it.
+
 
 
 After you add some closing markers to close the body and html document, you're base.html should look like this:
@@ -59,16 +59,6 @@ After you add some closing markers to close the body and html document, you're b
       <div class="navbar-header">
         <a class="navbar-brand" href="#">Sappho</a>
       </div>
-    </div>
-  </nav>
-</body>
-
-<body>
-  <nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <a class="navbar-brand" href="#">Sappho</a>
-      </div>
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">Home</a></li>
         <li><a href="#">About</a></li>
@@ -78,7 +68,14 @@ After you add some closing markers to close the body and html document, you're b
         <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
       </ul>
     </div>
+  </nav>
+  <div class="container">
+    {% block content %}
+    {% endblock %}
+  </div>
+
 </body>
+
 
 </html>
 
