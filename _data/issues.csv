@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2044,202124677,2017-01-20 12:18:01,2017-01-20 12:04:35,Offresi pullman per trasporto persone,,,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Facebook"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""Offresi pullman per trasporto"", ""data"": ""20/01/2017"", ""descrizione"": ""Se servono dei pullman per portare persone a dare una mano ai terremotati io ne metterei a disposizione in una giornata da accordare in base alle necessit\u00e0 5 dei miei da 50. Posti per portare le persone e riprenderle gratuitamente. Fate girare qualora ce ne fosse esigenza mandate una mail al nostro ufficio operativo : operativo@mma-autoservizi.it In ufficio potete contattare Chiara o Marta."", ""email"": ""operativo@mma-autoservizi.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""https://www.facebook.com/alexcampoli/posts/10209659139690066"", ""lon"": """", ""tel"": """"}","<pre><yamldata>tel: ''
+email: operativo@mma-autoservizi.it
+cosa: 'Offresi pullman per trasporto'
+descrizione: 'Se servono dei pullman per portare persone a dare una mano ai terremotati io ne metterei a disposizione in una giornata da accordare in base alle necessità 5 dei miei da 50. Posti per portare le persone e riprenderle gratuitamente. Fate girare qualora ce ne fosse esigenza mandate una mail al nostro ufficio operativo : operativo@mma-autoservizi.it In ufficio potete contattare Chiara o Marta.'
+indirizzo: ''
+lat: ''
+lon: ''
+link: 'https://www.facebook.com/alexcampoli/posts/10209659139690066'
+immagine: ''
+data: 20/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2038,202118067,2017-01-20 11:40:46,2017-01-20 11:28:36,Offresi ricovero per 250 pecore e alloggio all'#LAquila,42.098927,13.084888,"[""Accettato"", ""Alloggi"", ""Bollettino"", ""Form"", ""Ospitalit\u00e0 animali"", ""Sisma Gennaio 2017""]",,,"{""data"": ""20/01/2017"", ""descrizione"": ""INVITO AGLI ALLEVATORI La signora Stefania Bellantoni offre ricovero in stalla per circa 250 pecore ma utilizzabile per qualsiasi altro animale con casetta adiacente per pastore e piccolo terreno per pascolo. Zona Carsoli (AQ)"", ""email"": """", ""immagine"": """", ""indirizzo"": ""Via Tiburtina Valeria, Carsoli, AQ, Abruzzo, 67065, Italia"", ""lat"": ""42.098927"", ""link"": """", ""lon"": ""13.084888"", ""tel"": ""3275988323""}","<pre><yamldata>tel: '3275988323'
 email: ''
 descrizione: 'INVITO AGLI ALLEVATORI La signora Stefania Bellantoni offre ricovero in stalla per circa 250 pecore ma utilizzabile per qualsiasi altro animale con casetta adiacente per pastore e piccolo terreno per pascolo. Zona Carsoli (AQ)'
