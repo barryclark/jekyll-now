@@ -142,7 +142,7 @@
         NProgress.done();
     }
 
-    var usedLabels= ["Alloggi", "acquisto solidale", "Bambini", "Bollettino", "Bufale", "Contatti", "Donazioni", "Fabbisogni", "Notizie Utili", "Ospita animali", "Raccolte Fondi",];
+    var usedLabels= ["Alloggi", "acquisto solidale", "Bambini", "Bollettino", "Bufale", "Contatti", "Donazioni", "Fabbisogni", "Notizie Utili", "Ospitalita animali", "Raccolte Fondi",];
 
     var searchTerm = getQueryVariable('query');
     var searchLabel = getQueryVariable('label');
