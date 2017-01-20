@@ -196,10 +196,10 @@ link: ''
 immagine: ''
 data: 20/01/2017
 </yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2058,202137095,2017-01-20 13:15:00,2017-01-20 13:12:28,Associazione 180amici e ActionAid: risposta emergenza Alto Aterno,42.3488992,13.3981375,"[""Accettato"", ""Bollettino"", ""Contatti"", ""Form"", ""Notizie Utili"", ""Sisma Gennaio 2017""]",,,"{""data"": ""20/01/2017"", ""descrizione"": ""L'associazione 180amici dell'Aquila in collaborazione con ActionAid ha attivato un numero di telefono per rispondere alle esigenze delle persone colpite dal terremoto nell'Alto Aterno."", ""email"": """", ""indirizzo"": ""Piazza Duomo, Pettino, L'Aquila, AQ, Abruzzo, 67100, Italia"", ""lat"": ""42.3488992"", ""link"": """", ""lon"": ""13.3981375"", ""nome"": ""Associazione 180amici e ActionAid"", ""tel"": ""3246393207""}","<pre><yamldata>nome: 'Associazione 180amici e ActionAid'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2058,202137095,2017-01-20 15:59:12,2017-01-20 13:12:28,Associazione 180amici e ActionAid: risposta emergenza Alto Aterno,42.3488992,13.3981375,"[""Accettato"", ""Bollettino"", ""Contatti"", ""Form"", ""Notizie Utili"", ""Sisma Gennaio 2017""]",,,"{""data"": ""20/01/2017"", ""descrizione"": ""L'associazione 180amici dell'Aquila in collaborazione con ActionAid ha attivato un numero di telefono per rispondere alle esigenze delle persone colpite dal terremoto nell'Alto Aterno. Tel. 3246393207"", ""email"": """", ""indirizzo"": ""Piazza Duomo, Pettino, L'Aquila, AQ, Abruzzo, 67100, Italia"", ""lat"": ""42.3488992"", ""link"": """", ""lon"": ""13.3981375"", ""nome"": ""Associazione 180amici e ActionAid"", ""tel"": ""3246393207""}","<pre><yamldata>nome: 'Associazione 180amici e ActionAid'
 tel: '3246393207'
 email: ''
-descrizione: 'L''associazione 180amici dell''Aquila in collaborazione con ActionAid ha attivato un numero di telefono per rispondere alle esigenze delle persone colpite dal terremoto nell''Alto Aterno.'
+descrizione: 'L''associazione 180amici dell''Aquila in collaborazione con ActionAid ha attivato un numero di telefono per rispondere alle esigenze delle persone colpite dal terremoto nell''Alto Aterno. Tel. 3246393207'
 indirizzo: 'Piazza Duomo, Pettino, L''Aquila, AQ, Abruzzo, 67100, Italia'
 lat: '42.3488992'
 lon: '13.3981375'
@@ -626,6 +626,66 @@ descrizione: 'Offro alloggio in appartamento indipendente e dotato di tutti i co
 indirizzo: 'Via Giuseppe Mazzini, Podere Orbano, Monticiano, SI, Tuscany, Italia'
 lat: '43.1375172'
 lon: '11.1786595'
+link: ''
+immagine: ''
+data: 20/01/2017
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2010,202087112,2017-01-20 15:55:30,2017-01-20 09:02:02,Offresi box e paddocks per cavalli o altri animali in provincia di Grosseto,,,"[""Accettato"", ""Alloggi"", ""Bollettino"", ""Form"", ""Ospitalita animali"", ""Sisma Gennaio 2017""]",,,"{""data"": ""20/01/2017"", ""descrizione"": ""Si mette a disposizione box e paddocks per cavalli o altri animali in zona Magliano in Toscana provincia di Grosseto."", ""email"": ""lisa-valenti@hotmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3336671681""}","<pre><yamldata>tel: '3336671681'
+email: lisa-valenti@hotmail.com
+descrizione: 'Si mette a disposizione box e paddocks per cavalli o altri animali in zona Magliano in Toscana provincia di Grosseto.'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 20/01/2017
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2009,202086068,2017-01-20 15:56:26,2017-01-20 08:56:44,Offro alloggio per 4 persone in provincia di Como,45.74713246996559,9.225661754608154,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""20/01/2017"", ""descrizione"": ""Ciao, posso offrire alloggio in casa mia per 4 persone. Si tratta di un appartamento intero con una camera matrimoniale, due letti singoli in salotto, un bagno e una cucina. Si trova a Inverigo (CO) . So che \u00e8 lontano dalle zone colpite ma almeno per affrontare le settimane pi\u00f9 fredde, finch\u00e8 la situazione si sia ristabilita."", ""email"": ""bosisio.giulia@gmail.com"", ""immagine"": """", ""indirizzo"": ""via Mandresca, Inverigo, Como, Lombardia, 22045, Italia"", ""lat"": ""45.74713246996559"", ""link"": """", ""lon"": ""9.225661754608154"", ""tel"": ""3396968194""}","<pre><yamldata>tel: '3396968194'
+email: bosisio.giulia@gmail.com
+descrizione: 'Ciao, posso offrire alloggio in casa mia per 4 persone. Si tratta di un appartamento intero con una camera matrimoniale, due letti singoli in salotto, un bagno e una cucina. Si trova a Inverigo (CO) . So che è lontano dalle zone colpite ma almeno per affrontare le settimane più fredde, finchè la situazione si sia ristabilita.'
+indirizzo: 'via Mandresca, Inverigo, Como, Lombardia, 22045, Italia'
+lat: '45.74713246996559'
+lon: '9.225661754608154'
+link: ''
+immagine: ''
+data: 20/01/2017
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2008,202086041,2017-01-20 15:57:14,2017-01-20 08:56:35,Offresi due posti letto a Sirtori (Lc),,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""20/01/2017"", ""descrizione"": ""SIRTORI (LC) - Io e il mio compagno saremmo felici di ospitare chi ne avesse bisogno, possiamo offrire due posti letto. Informo che il complesso abitativo ha molte scale ed \u00e8 sprovvisto di ascensore."", ""email"": ""hele_90@hotmail.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3343983670""}","<pre><yamldata>tel: '3343983670'
+email: hele_90@hotmail.it
+descrizione: 'SIRTORI (LC) - Io e il mio compagno saremmo felici di ospitare chi ne avesse bisogno, possiamo offrire due posti letto. Informo che il complesso abitativo ha molte scale ed è sprovvisto di ascensore.'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 20/01/2017
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2007,202084378,2017-01-20 15:58:14,2017-01-20 08:47:49,Offresi alloggio in B&B ad Arona (No) con giardino per animali,,,"[""Accettato"", ""Alloggi"", ""Form"", ""Ospitalita animali"", ""Sisma Gennaio 2017""]",,,"{""data"": ""20/01/2017"", ""descrizione"": ""Siamo un po' lontani, ma mettiamo a disposizione il nostro B&B ad Arona (NO) in via Vittorio Veneto, 41 fino al 10 marzo. Possiamo offrire una camera quadrupla, una tripla e una matrimoniale, cucina, sala pranzo e salone in comune. Abbiamo anche un grande terrazzo e giardino in caso di animali domestici."", ""email"": ""bbdieci@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""https://www.bbdieci.it"", ""lon"": """", ""tel"": ""3803210460""}","<pre><yamldata>tel: '3803210460'
+email: bbdieci@gmail.com
+descrizione: 'Siamo un po'' lontani, ma mettiamo a disposizione il nostro B&B ad Arona (NO) in via Vittorio Veneto, 41 fino al 10 marzo. Possiamo offrire una camera quadrupla, una tripla e una matrimoniale, cucina, sala pranzo e salone in comune. Abbiamo anche un grande terrazzo e giardino in caso di animali domestici.'
+indirizzo: ''
+lat: ''
+lon: ''
+link: 'https://www.bbdieci.it'
+immagine: ''
+data: 20/01/2017
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2006,202083994,2017-01-20 15:58:55,2017-01-20 08:45:48,Offro monolocale per due persone a Massa Marittima,,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""20/01/2017"", ""descrizione"": ""Offro monolocale per 1 o 2 persone con piccolo angolo cottura nel centro storico d iMassa Marittima (Lu) fino al 31 marzo con possibilit\u00e0 di un altro mese ."", ""email"": ""brilla2003@hotmail.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""0566901274""}","<pre><yamldata>tel: '0566901274'
+email: brilla2003@hotmail.it
+descrizione: 'Offro monolocale per 1 o 2 persone con piccolo angolo cottura nel centro storico d iMassa Marittima (Lu) fino al 31 marzo con possibilità di un altro mese .'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 20/01/2017
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2005,202083797,2017-01-20 15:59:35,2017-01-20 08:44:37,Offro ospitalità per 2-4 persone a Garda (Vr),,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""20/01/2017"", ""descrizione"": ""Posso offrire ospitalit\u00e0 a 2 / 3 forse anche 4 persone colpite dal terremoto e neve che intendono allontanarsi momentaneamente dal proprio territorio nel Comune di Garda in provincia di Verona, sul Lago di Garda."", ""email"": ""turrinadaniela@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3395355076""}","<pre><yamldata>tel: '3395355076'
+email: turrinadaniela@gmail.com
+descrizione: 'Posso offrire ospitalità a 2 / 3 forse anche 4 persone colpite dal terremoto e neve che intendono allontanarsi momentaneamente dal proprio territorio nel Comune di Garda in provincia di Verona, sul Lago di Garda.'
+indirizzo: ''
+lat: ''
+lon: ''
 link: ''
 immagine: ''
 data: 20/01/2017
@@ -5426,17 +5486,6 @@ indirizzo: 'Via della Libertà, Preci, Casale Maggiori, Preci, PG, UMB, 06047, I
 lat: '42.87848895'
 lon: '13.0390821148298'
 link: 'http://www.comune.preci.pg.it'
-data: 10/11/2016
-</yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1207,188550702,2016-11-25 23:55:39,2016-11-10 16:15:08,Sibillini a Tavola. Pacco con prodotti tipici dei Sibillini - Comune di #Amandola,,,"[""Accettato"", ""acquisto solidale"", ""Bollettino"", ""Form"", ""Sisma Ottobre""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Sibillini a Tavola - Pacco con prodotti tipici dei Sibillini - Comune di Amandola"", ""data"": ""10/11/2016"", ""descrizione"": ""Il cesto della ripartenza! Quale miglior regalo e nel puro spirito del Natale si potrebbe fare se non acquistare un cesto natalizio contenente i prodotti tipici dei Monti Sibillini per far ripartire l'economia di queste zone fortemente colpite dal sisma di Agosto e Ottobre? Sibillini a Tavola si pone l'obiettivo di promuovere le tipicit\u00e0 prodotte nel Parco Nazionale dei Monti Sibillini insieme alla ricostruzione delle bellezze storico-artistiche di Amandola!! 50,00\u20ac (iva inclusa) per continuare a dare un futuro e una solida base di ripartenza a queste terre cos\u00ec duramente colpite!! Cosa aspettate ad assaggiare queste bont\u00e0 locali: Nel pacco dono troverete i prodotti delle seguenti Aziende : Az. Agr. Angolo di Paradiso: 4 vasetti in vetro di yogurt ai gusti tipici dei Monti Sibillini. - Az. Agr. La Regina dei Sibillini: 500gr di pasta. - Az. Agr. Le Spiazzette: Vasetto da 230gr di confettura di Mela Rosa dei Monti Sibillini (Presidio Slow Food) - Az. Agr. La Madia: una ciambella tradizionale di mosto. - Az. Agr. La Tradizione: 500gr di Olive Ascolane da friggere. - Az. Agr. Leonardi Giampiero: 500gr di Lenticchia di Monte Monaco. Il 20% del ricavato verr\u00e0 utilizzato per la ricostruzione dei beni artistico-culturali di Amandola danneggiati dai Terremoti. Per info e prenotazioni: 0736 840731. Per poter visionare altri cesti di prodotti locali dei Sibillini e contribuire alla ricostruzione del patrimonio di Amandola visita anche il sito: www.itesoridellasibilla.it Prenotazioni entro il 4 dicembre. Il pacco dono verr\u00e0 consegnato tra l'11 e il 18 dicembre."", ""email"": ""protocollo@comune.amandola.fm.it"", ""iban"": """", ""intestazione"": """", ""link"": ""https://docs.google.com/forms/d/e/1FAIpQLSdNDfb6lS9LKLHNAVmWQ-40983PQ0zyOlNvSGfZcieyR71r2g/viewform"", ""postale"": """"}","<pre><yamldata>chi: 'Sibillini a Tavola - Pacco con prodotti tipici dei Sibillini - Comune di Amandola'
-descrizione: 'Il cesto della ripartenza! Quale miglior regalo e nel puro spirito del Natale si potrebbe fare se non acquistare un cesto natalizio contenente i prodotti tipici dei Monti Sibillini per far ripartire l''economia di queste zone fortemente colpite dal sisma di Agosto e Ottobre? Sibillini a Tavola si pone l''obiettivo di promuovere le tipicità prodotte nel Parco Nazionale dei Monti Sibillini insieme alla ricostruzione delle bellezze storico-artistiche di Amandola!! 50,00€ (iva inclusa) per continuare a dare un futuro e una solida base di ripartenza a queste terre così duramente colpite!! Cosa aspettate ad assaggiare queste bontà locali: Nel pacco dono troverete i prodotti delle seguenti Aziende : Az. Agr. Angolo di Paradiso: 4 vasetti in vetro di yogurt ai gusti tipici dei Monti Sibillini. - Az. Agr. La Regina dei Sibillini: 500gr di pasta. - Az. Agr. Le Spiazzette: Vasetto da 230gr di confettura di Mela Rosa dei Monti Sibillini (Presidio Slow Food) - Az. Agr. La Madia: una ciambella tradizionale di mosto. - Az. Agr. La Tradizione: 500gr di Olive Ascolane da friggere. - Az. Agr. Leonardi Giampiero: 500gr di Lenticchia di Monte Monaco. Il 20% del ricavato verrà utilizzato per la ricostruzione dei beni artistico-culturali di Amandola danneggiati dai Terremoti. Per info e prenotazioni: 0736 840731. Per poter visionare altri cesti di prodotti locali dei Sibillini e contribuire alla ricostruzione del patrimonio di Amandola visita anche il sito: www.itesoridellasibilla.it Prenotazioni entro il 4 dicembre. Il pacco dono verrà consegnato tra l''11 e il 18 dicembre.'
-intestazione: ''
-iban: ''
-bic: ''
-postale: ''
-causale: ''
-link: 'https://docs.google.com/forms/d/e/1FAIpQLSdNDfb6lS9LKLHNAVmWQ-40983PQ0zyOlNvSGfZcieyR71r2g/viewform'
-email: protocollo@comune.amandola.fm.it
 data: 10/11/2016
 </yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1207,188550702,2016-11-25 23:55:39,2016-11-10 16:15:08,Sibillini a Tavola. Pacco con prodotti tipici dei Sibillini - Comune di #Amandola,,,"[""Accettato"", ""acquisto solidale"", ""Bollettino"", ""Form"", ""Sisma Ottobre""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Sibillini a Tavola - Pacco con prodotti tipici dei Sibillini - Comune di Amandola"", ""data"": ""10/11/2016"", ""descrizione"": ""Il cesto della ripartenza! Quale miglior regalo e nel puro spirito del Natale si potrebbe fare se non acquistare un cesto natalizio contenente i prodotti tipici dei Monti Sibillini per far ripartire l'economia di queste zone fortemente colpite dal sisma di Agosto e Ottobre? Sibillini a Tavola si pone l'obiettivo di promuovere le tipicit\u00e0 prodotte nel Parco Nazionale dei Monti Sibillini insieme alla ricostruzione delle bellezze storico-artistiche di Amandola!! 50,00\u20ac (iva inclusa) per continuare a dare un futuro e una solida base di ripartenza a queste terre cos\u00ec duramente colpite!! Cosa aspettate ad assaggiare queste bont\u00e0 locali: Nel pacco dono troverete i prodotti delle seguenti Aziende : Az. Agr. Angolo di Paradiso: 4 vasetti in vetro di yogurt ai gusti tipici dei Monti Sibillini. - Az. Agr. La Regina dei Sibillini: 500gr di pasta. - Az. Agr. Le Spiazzette: Vasetto da 230gr di confettura di Mela Rosa dei Monti Sibillini (Presidio Slow Food) - Az. Agr. La Madia: una ciambella tradizionale di mosto. - Az. Agr. La Tradizione: 500gr di Olive Ascolane da friggere. - Az. Agr. Leonardi Giampiero: 500gr di Lenticchia di Monte Monaco. Il 20% del ricavato verr\u00e0 utilizzato per la ricostruzione dei beni artistico-culturali di Amandola danneggiati dai Terremoti. Per info e prenotazioni: 0736 840731. Per poter visionare altri cesti di prodotti locali dei Sibillini e contribuire alla ricostruzione del patrimonio di Amandola visita anche il sito: www.itesoridellasibilla.it Prenotazioni entro il 4 dicembre. Il pacco dono verr\u00e0 consegnato tra l'11 e il 18 dicembre."", ""email"": ""protocollo@comune.amandola.fm.it"", ""iban"": """", ""intestazione"": """", ""link"": ""https://docs.google.com/forms/d/e/1FAIpQLSdNDfb6lS9LKLHNAVmWQ-40983PQ0zyOlNvSGfZcieyR71r2g/viewform"", ""postale"": """"}","<pre><yamldata>chi: 'Sibillini a Tavola - Pacco con prodotti tipici dei Sibillini - Comune di Amandola'
