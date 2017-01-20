@@ -1,4 +1,14 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2035,202112201,2017-01-20 11:13:10,2017-01-20 10:59:32,Offro una stanza con due posti #Livorno,,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""20/01/2017"", ""descrizione"": ""Offro una stanza con due posti letto in casa grande a Livorno centro."", ""email"": ""marco.cavallini9@virgilio.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""328-1135636""}","<pre><yamldata>tel: 328-1135636
+email: marco.cavallini9@virgilio.it
+descrizione: 'Offro una stanza con due posti letto in casa grande a Livorno centro.'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 20/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2034,202109329,2017-01-20 10:56:52,2017-01-20 10:45:54,Offresi alloggio a #Lecce,,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,http://i.imgur.com/nCcaTLX.png,"{""data"": ""20/01/2017"", ""descrizione"": ""Se pu\u00f2 servire, offriamo una indipendente camera matrimoniale con bagno, all'interno della nostra casa. Possibilit\u00e0 di aggiungere uno/due lettini. Siamo a pochi chilometri da Lecce. Possiamo partire per prendere la famiglia."", ""email"": ""dorygreco@yahoo.it"", ""immagine"": ""http://i.imgur.com/nCcaTLX.png"", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3337979702""}","<pre><yamldata>tel: '3337979702'
 email: dorygreco@yahoo.it
 descrizione: 'Se può servire, offriamo una indipendente camera matrimoniale con bagno, all''interno della nostra casa. Possibilità di aggiungere uno/due lettini. Siamo a pochi chilometri da Lecce. Possiamo partire per prendere la famiglia.'
@@ -37,6 +47,26 @@ indirizzo: 'Viale Venezia, Malga Busa Verle, Levico Terme, Comunità Alta Valsug
 lat: '46.0092209'
 lon: '11.3186851'
 link: 'https://www.facebook.com/HotelDanielaLevico/?fref=nf'
+immagine: ''
+data: 20/01/2017
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2030,202106729,2017-01-20 11:13:55,2017-01-20 10:33:15,Offro ospitalità #Torino,,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""20/01/2017"", ""descrizione"": ""Offro ospitalit\u00e0 in appartamento a Torino. Ho a disposizione una camera con letto matrimoniale e un letto singolo."", ""email"": ""aga.leanza@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3284095075""}","<pre><yamldata>tel: '3284095075'
+email: aga.leanza@gmail.com
+descrizione: 'Offro ospitalità in appartamento a Torino. Ho a disposizione una camera con letto matrimoniale e un letto singolo.'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 20/01/2017
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2029,202105806,2017-01-20 11:14:45,2017-01-20 10:28:40,Offresi alloggio in #Puglia,,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""20/01/2017"", ""descrizione"": ""Sono in puglia forse un po lontana ma posso ospitare chi ha bisogno di alloggio anc h e famiglia con bambini ."", ""email"": ""tersicore70@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3457530049""}","<pre><yamldata>tel: '3457530049'
+email: tersicore70@gmail.com
+descrizione: 'Sono in puglia forse un po lontana ma posso ospitare chi ha bisogno di alloggio anc h e famiglia con bambini .'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
 immagine: ''
 data: 20/01/2017
 </yamldata></pre>",open
@@ -107,6 +137,16 @@ https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2014,202091
 email: angela@virgoimage.com
 cosa: Abbigliamento
 descrizione: 'Buongiorno da privato posso donare vestiti bambina fino a 1 anno e come direttore di un''azienda di abbigliamento da donna jeans e altri capi disponibili in magazzino. Attendiamo vostre su come fare se serve Noi siamo di Milano. Grazie'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 20/01/2017
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1999,202078861,2017-01-20 11:12:42,2017-01-20 08:16:14,Offro miniappartamento #Tarquinia,,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""20/01/2017"", ""descrizione"": ""Offro miniappartamento (camera matrimoniale + divano letto a una piazza) a persone autosufficienti e con auto propria. L\u2019alloggio si trova in prossimit\u00e0 di Tarquinia (VT) e sar\u00e0 disponibile per tutto il mese di febbraio. Scrivetemi o telefonatemi prima della fine del mese. Grazie"", ""email"": ""angela.costantini@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3403129688""}","<pre><yamldata>tel: '3403129688'
+email: angela.costantini@gmail.com
+descrizione: 'Offro miniappartamento (camera matrimoniale + divano letto a una piazza) a persone autosufficienti e con auto propria. L’alloggio si trova in prossimità di Tarquinia (VT) e sarà disponibile per tutto il mese di febbraio. Scrivetemi o telefonatemi prima della fine del mese. Grazie'
 indirizzo: ''
 lat: ''
 lon: ''
@@ -6101,6 +6141,11 @@ link: ''
 immagine: ''
 data: 01/11/2016
 </yamldata></pre>",closed
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1030,186566676,2016-11-26 00:03:52,2016-11-01 15:40:58,"I Love #Norcia, nasce il consorzio salva #Valnerina",,,"[""Accettato"", ""acquisto solidale"", ""Form"", ""Sisma Ottobre"", ""Twitter""]",,,"{""data"": ""01/11/2016"", ""descrizione"": ""Imprenditori, commercianti, agricoltori, gi\u00e0 riunitisi in un consorzio, stanno pensando a come poter realizzare un prodotto alimentare innovativo tipico della Valnerina, da proporre sul mercato mondiale mondiale con il brand \""I Love Norcia\"". La gastronomia \u00e8 infatti uno dei cuori pulsanti di queste zone, attrazione e meta di migliaia di turisti da ogni parte del mondo. Ma, soprattutto \u00e8 tanta la voglia di restare qui. Tra le idee per rilanciare Norcia, anche quella di poter realizzare una scuola di alta formazione dedicata al turismo."", ""link"": ""http://www.perugiatoday.it/cronaca/terremoto-i-love-norcia-brand-prodotti-tipici-creazione-consorzio.html"", ""titolo"": ""I Love Norcia: nasce il consorzio salva-Valnerina""}","<pre><yamldata>titolo: 'I Love Norcia: nasce il consorzio salva-Valnerina'
+descrizione: 'Imprenditori, commercianti, agricoltori, già riunitisi in un consorzio, stanno pensando a come poter realizzare un prodotto alimentare innovativo tipico della Valnerina, da proporre sul mercato mondiale mondiale con il brand ""I Love Norcia"". La gastronomia è infatti uno dei cuori pulsanti di queste zone, attrazione e meta di migliaia di turisti da ogni parte del mondo. Ma, soprattutto è tanta la voglia di restare qui. Tra le idee per rilanciare Norcia, anche quella di poter realizzare una scuola di alta formazione dedicata al turismo.'
+link: 'http://www.perugiatoday.it/cronaca/terremoto-i-love-norcia-brand-prodotti-tipici-creazione-consorzio.html'
+data: 01/11/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1030,186566676,2016-11-26 00:03:52,2016-11-01 15:40:58,"I Love #Norcia, nasce il consorzio salva #Valnerina",,,"[""Accettato"", ""acquisto solidale"", ""Form"", ""Sisma Ottobre"", ""Twitter""]",,,"{""data"": ""01/11/2016"", ""descrizione"": ""Imprenditori, commercianti, agricoltori, gi\u00e0 riunitisi in un consorzio, stanno pensando a come poter realizzare un prodotto alimentare innovativo tipico della Valnerina, da proporre sul mercato mondiale mondiale con il brand \""I Love Norcia\"". La gastronomia \u00e8 infatti uno dei cuori pulsanti di queste zone, attrazione e meta di migliaia di turisti da ogni parte del mondo. Ma, soprattutto \u00e8 tanta la voglia di restare qui. Tra le idee per rilanciare Norcia, anche quella di poter realizzare una scuola di alta formazione dedicata al turismo."", ""link"": ""http://www.perugiatoday.it/cronaca/terremoto-i-love-norcia-brand-prodotti-tipici-creazione-consorzio.html"", ""titolo"": ""I Love Norcia: nasce il consorzio salva-Valnerina""}","<pre><yamldata>titolo: 'I Love Norcia: nasce il consorzio salva-Valnerina'
 descrizione: 'Imprenditori, commercianti, agricoltori, già riunitisi in un consorzio, stanno pensando a come poter realizzare un prodotto alimentare innovativo tipico della Valnerina, da proporre sul mercato mondiale mondiale con il brand ""I Love Norcia"". La gastronomia è infatti uno dei cuori pulsanti di queste zone, attrazione e meta di migliaia di turisti da ogni parte del mondo. Ma, soprattutto è tanta la voglia di restare qui. Tra le idee per rilanciare Norcia, anche quella di poter realizzare una scuola di alta formazione dedicata al turismo.'
 link: 'http://www.perugiatoday.it/cronaca/terremoto-i-love-norcia-brand-prodotti-tipici-creazione-consorzio.html'
