@@ -722,6 +722,16 @@ link: ''
 immagine: ''
 data: 20/01/2017
 </yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2002,202082426,2017-01-20 16:20:57,2017-01-20 08:36:45,Offresi alloggio in residence #SalaDiCesenatico,,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""20/01/2017"", ""descrizione"": ""Metto a disposizione il mio residence per ospitare alcune famiglie che sono state costrette a lasciare le proprie abitazioni. Due Ponti Village - Via Fenili, 106 - 47042 Sala di Cesenatico (FC)"", ""email"": ""info@duepontivillage.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""http://www.duepontivillage.it/it/dove-siamo.html"", ""lon"": """", ""tel"": ""0547 680228""}","<pre><yamldata>tel: '0547 680228'
+email: info@duepontivillage.it
+descrizione: 'Metto a disposizione il mio residence per ospitare alcune famiglie che sono state costrette a lasciare le proprie abitazioni. Due Ponti Village - Via Fenili, 106 - 47042 Sala di Cesenatico (FC)'
+indirizzo: ''
+lat: ''
+lon: ''
+link: 'http://www.duepontivillage.it/it/dove-siamo.html'
+immagine: ''
+data: 20/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2001,202081107,2017-01-20 15:05:34,2017-01-20 08:29:07,Offro ad Ancona appartamento,,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""20/01/2017"", ""descrizione"": ""Offro ad Ancona appartamento con due camere."", ""email"": ""popi69@libero.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3388427028""}","<pre><yamldata>tel: '3388427028'
 email: popi69@libero.it
 descrizione: 'Offro ad Ancona appartamento con due camere.'
@@ -769,6 +779,16 @@ indirizzo: ''
 lat: ''
 lon: ''
 link: 'http://www.comune.palermiti.cz.it/'
+immagine: ''
+data: 20/01/2017
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1995,202072848,2017-01-20 16:22:30,2017-01-20 07:37:51,Appartamento 5 posti letto #Olbia,,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,{},"<pre><yamldata>tel: '3291394909'
+email: tonycorti@tiscali.it
+descrizione: 'Mettiamo a disposizione appartamento 5 posti letto in Sardegna e precisamente a Olbia. Sappiamo che siamo lontani e c'è la difficolta'' del viaggio, pero'' se ci fosse qualcuno interessato non esitate a contattarci.'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
 immagine: ''
 data: 20/01/2017
 </yamldata></pre>",open
@@ -10407,17 +10427,6 @@ descrizione: 'Laura offre casa (6 posti letto)'
 indirizzo: 'Via di Villa, Case Grandiana, Vicopisano, PI, Tuscany, 56021, Italia'
 lat: '43.6873261'
 lon: '10.5462333'
-link: ''
-immagine: ''
-data: 16/09/2016
-</yamldata></pre>
-",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/518,177466265,2016-09-22 15:56:45,2016-09-16 16:23:41,"Predappio, FC - Agri-campeggio ""La Banditina""",44.0662019,11.9700003,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""16/09/2016"", ""descrizione"": ""AGRICAMPEGGIO \""LA BANDITINA\"" offre sistemazioni momentanee per 10 persone."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Via San Francesco d'Assisi, Sambuche, Predappio, FC, Emilia-Romagna, Italia"", ""lat"": ""44.0662019"", ""link"": """", ""lon"": ""11.9700003"", ""tel"": ""3477534680""}","<pre><yamldata>tel: '3477534680'
-email: ''
-descrizione: 'AGRICAMPEGGIO ""LA BANDITINA"" offre sistemazioni momentanee per 10 persone.'
-indirizzo: 'Via San Francesco d''Assisi, Sambuche, Predappio, FC, Emilia-Romagna, Italia'
-lat: '44.0662019'
-lon: '11.9700003'
 link: ''
 immagine: ''
 data: 16/09/2016
