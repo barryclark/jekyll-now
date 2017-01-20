@@ -1,4 +1,24 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2116,202249331,2017-01-20 21:44:27,2017-01-20 21:41:35,Metto a disposizione appartamento per una famiglia a Lido di Fermo,,,"[""Accettato"", ""Alloggi"", ""Bollettino"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""20/01/2017"", ""descrizione"": ""Metto a disposizione appartamento per 3-4 persone (ideale sarebbe genitori con 1 o 2 bambini) a Lido di Fermo (FM)."", ""email"": ""info@easytrad.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3478285302""}","<pre><yamldata>tel: '3478285302'
+email: info@easytrad.it
+descrizione: 'Metto a disposizione appartamento per 3-4 persone (ideale sarebbe genitori con 1 o 2 bambini) a Lido di Fermo (FM).'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 20/01/2017
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2115,202248872,2017-01-20 21:43:31,2017-01-20 21:39:24,È disponibile casolare di campagna in provincia di Brindisi,40.6460444,17.5170566,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,http://i.imgur.com/2NPDikk.jpg,"{""data"": ""20/01/2017"", ""descrizione"": ""\u00c8 disponibile casolare di campagna in provincia di Brindisi per 5 persone e animali, ci sono due cani e tre gatti in giardino. Saremmo felici di poter essere di aiuto"", ""email"": ""tania.mtv.89@hotmail.it"", ""immagine"": ""http://i.imgur.com/2NPDikk.jpg"", ""indirizzo"": ""Piazza Plebiscito, Ceglie Messapica, BR, Puglia, 72013, Italia"", ""lat"": ""40.6460444"", ""link"": """", ""lon"": ""17.5170566"", ""tel"": ""3331060431""}","<pre><yamldata>tel: '3331060431'
+email: tania.mtv.89@hotmail.it
+descrizione: 'È disponibile casolare di campagna in provincia di Brindisi per 5 persone e animali, ci sono due cani e tre gatti in giardino. Saremmo felici di poter essere di aiuto'
+indirizzo: 'Piazza Plebiscito, Ceglie Messapica, BR, Puglia, 72013, Italia'
+lat: '40.6460444'
+lon: '17.5170566'
+link: ''
+immagine: 'http://i.imgur.com/2NPDikk.jpg'
+data: 20/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2114,202243571,2017-01-20 21:38:11,2017-01-20 21:12:55,Offro tre posti letto e intero alloggio per 5 persone in provincia di Torino ,,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""20/01/2017"", ""descrizione"": ""Offro tre posti letto con bagno privato a Cavagli\u00e0 (biella) e un intero alloggio con 5 posti letto a fenestrelle (Torino) per info 3281656338 Daniela"", ""email"": ""rossonemo@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3281656338""}","<pre><yamldata>tel: '3281656338'
 email: rossonemo@gmail.com
 descrizione: 'Offro tre posti letto con bagno privato a Cavaglià (biella) e un intero alloggio con 5 posti letto a fenestrelle (Torino) per info 3281656338 Daniela'
