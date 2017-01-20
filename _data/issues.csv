@@ -812,10 +812,50 @@ link: ''
 immagine: ''
 data: 20/01/2017
 </yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1992,202071517,2017-01-20 17:21:16,2017-01-20 07:30:04,Metto a disposizione appartamento in provincia di Agrigento ,,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""20/01/2017"", ""descrizione"": ""Metto a disposizione appartamento 4/5 posti letto per i terremotati.In provincia di Agrigento"", ""email"": ""trupia.ca@libero"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3204868780""}","<pre><yamldata>tel: '3204868780'
+email: trupia.ca@libero
+descrizione: 'Metto a disposizione appartamento 4/5 posti letto per i terremotati.In provincia di Agrigento'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 20/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1991,202070496,2017-01-20 13:46:18,2017-01-20 07:23:13,Offresi gruppo elettrogeno o altri beni,,,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""gruppo elettrogeno o altri beni"", ""data"": ""20/01/2017"", ""descrizione"": ""Buongiorno, sono della provincia di Treviso, vorrei far avere il mio aiuto offrendo un gruppo elettrogeno o altro. Grazie"", ""email"": ""susy.vidali@libero.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3472214126""}","<pre><yamldata>tel: '3472214126'
 email: susy.vidali@libero.it
 cosa: 'gruppo elettrogeno o altri beni'
 descrizione: 'Buongiorno, sono della provincia di Treviso, vorrei far avere il mio aiuto offrendo un gruppo elettrogeno o altro. Grazie'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 20/01/2017
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1990,202069701,2017-01-20 17:23:24,2017-01-20 07:17:27,Offiamo due camere a pochi km da Perugia,,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""20/01/2017"", ""descrizione"": ""Offiamo a pochi km da perugia, la nostra disponibilit\u00e0 per chi avesse bisogno. due camere da letto e il nostro supporto!"", ""email"": ""lacasadimamela@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": """"}","<pre><yamldata>tel: ''
+email: lacasadimamela@gmail.com
+descrizione: 'Offiamo a pochi km da perugia, la nostra disponibilità per chi avesse bisogno. due camere da letto e il nostro supporto!'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 20/01/2017
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1989,202067721,2017-01-20 17:24:20,2017-01-20 07:02:37,Offresi alloggio per due persone a Latina,,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""20/01/2017"", ""descrizione"": ""sono a latina da sola ed ho una piccola casa con un cane ed un gatto. Posso ospitare fino ad Aprile, 2 persone anziane autonome per un posto caldo e tranquillo."", ""email"": ""cristiana68@hotmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3485256728""}","<pre><yamldata>tel: '3485256728'
+email: cristiana68@hotmail.com
+descrizione: 'sono a latina da sola ed ho una piccola casa con un cane ed un gatto. Posso ospitare fino ad Aprile, 2 persone anziane autonome per un posto caldo e tranquillo.'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 20/01/2017
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1988,202067112,2017-01-20 17:25:06,2017-01-20 06:58:33,Offro camera in appartamento a Torino,,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""20/01/2017"", ""descrizione"": ""Offro la disponibilit\u00e0 di una camera da letto con letto matrimoniale e un lettino. L'appartamento si trova a Torino e ci vivo da sola."", ""email"": ""aga.leanza@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3284095075""}","<pre><yamldata>tel: '3284095075'
+email: aga.leanza@gmail.com
+descrizione: 'Offro la disponibilità di una camera da letto con letto matrimoniale e un lettino. L''appartamento si trova a Torino e ci vivo da sola.'
 indirizzo: ''
 lat: ''
 lon: ''
@@ -13050,6 +13090,18 @@ email: ''
 data: 14/09/2016
 </yamldata></pre>
 ",closed
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/243,176848996,2016-09-14 08:47:45,2016-09-14 08:44:03,Associazione Docenti Senza Frontiere,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": ""Contributo Terremoto Italia"", ""chi"": ""Associazione Docenti Senza Frontiere"", ""data"": ""14/09/2016"", ""descrizione"": ""E' attivo conto corrente per una raccolta fondi immediata destinata alla ricostruzione di edifici scolastici, per aiutare, gli alunni, i Dirigenti Scolastici e gli insegnanti nella ricostruzione della comunit\u00e0 scolastica e al ripristino veloce delle condizioni di normalit\u00e0."", ""email"": """", ""iban"": ""IT46T0501812101000000175233"", ""intestazione"": ""Docenti Senza Frontiere"", ""link"": ""http://www.docentisenzafrontiere.org/it/sostienici/speciale-emergenze/terremoto.html"", ""postale"": """"}","<pre><yamldata>chi: 'Associazione Docenti Senza Frontiere'
+descrizione: 'E'' attivo conto corrente per una raccolta fondi immediata destinata alla ricostruzione di edifici scolastici, per aiutare, gli alunni, i Dirigenti Scolastici e gli insegnanti nella ricostruzione della comunità scolastica e al ripristino veloce delle condizioni di normalità.'
+intestazione: 'Docenti Senza Frontiere'
+iban: IT46T0501812101000000175233
+bic: ''
+postale: ''
+causale: 'Contributo Terremoto Italia'
+link: 'http://www.docentisenzafrontiere.org/it/sostienici/speciale-emergenze/terremoto.html'
+email: ''
+data: 14/09/2016
+</yamldata></pre>
+",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/243,176848996,2016-09-14 08:47:45,2016-09-14 08:44:03,Associazione Docenti Senza Frontiere,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": ""Contributo Terremoto Italia"", ""chi"": ""Associazione Docenti Senza Frontiere"", ""data"": ""14/09/2016"", ""descrizione"": ""E' attivo conto corrente per una raccolta fondi immediata destinata alla ricostruzione di edifici scolastici, per aiutare, gli alunni, i Dirigenti Scolastici e gli insegnanti nella ricostruzione della comunit\u00e0 scolastica e al ripristino veloce delle condizioni di normalit\u00e0."", ""email"": """", ""iban"": ""IT46T0501812101000000175233"", ""intestazione"": ""Docenti Senza Frontiere"", ""link"": ""http://www.docentisenzafrontiere.org/it/sostienici/speciale-emergenze/terremoto.html"", ""postale"": """"}","<pre><yamldata>chi: 'Associazione Docenti Senza Frontiere'
 descrizione: 'E'' attivo conto corrente per una raccolta fondi immediata destinata alla ricostruzione di edifici scolastici, per aiutare, gli alunni, i Dirigenti Scolastici e gli insegnanti nella ricostruzione della comunità scolastica e al ripristino veloce delle condizioni di normalità.'
 intestazione: 'Docenti Senza Frontiere'
