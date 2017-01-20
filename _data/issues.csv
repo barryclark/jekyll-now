@@ -1,4 +1,14 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1998,202075080,2017-01-20 07:54:52,2017-01-20 07:50:58,Strutture per animali a #Pisa,43.7159395,10.4018624,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""20/01/2017"", ""descrizione"": ""Il Centro Ippico Campalto a.s.d. di Pisa, in via del Tiro a segno 20, mette a disposizione le proprie strutture, 50 box e paddocks, per cavalli o altri animali delle zone terremotate o colpite dalla violenta nevicata. INFO Via del Tiro a Segno 20 - 56122 Pisa"", ""email"": ""info@campalto.com"", ""immagine"": """", ""indirizzo"": ""Ponte di Mezzo, San Giusto, Pisa, PI, Tuscany, 56126, Italia"", ""lat"": ""43.7159395"", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1831399813794268/"", ""lon"": ""10.4018624"", ""tel"": ""050/530288""}","<pre><yamldata>tel: 050/530288
+email: info@campalto.com
+descrizione: 'Il Centro Ippico Campalto a.s.d. di Pisa, in via del Tiro a segno 20, mette a disposizione le proprie strutture, 50 box e paddocks, per cavalli o altri animali delle zone terremotate o colpite dalla violenta nevicata. INFO Via del Tiro a Segno 20 - 56122 Pisa'
+indirizzo: 'Ponte di Mezzo, San Giusto, Pisa, PI, Tuscany, 56126, Italia'
+lat: '43.7159395'
+lon: '10.4018624'
+link: 'https://www.facebook.com/groups/1758670357733881/permalink/1831399813794268/'
+immagine: ''
+data: 20/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1987,202063100,2017-01-20 07:20:37,2017-01-20 06:31:41,Offro vitto e alloggio a famiglia con animali da cortile e allevamento in provincia di Vicenza,,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""Vitto e alloggio per famiglia"", ""data"": ""20/01/2017"", ""descrizione"": ""Offro ospitalita' a famiglia presso mia abitazione. Possibilita' di ospitare anche animali da cortile e allevamento. Dueville (VI)"", ""email"": ""paolo.tognato@kypa.eu"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3482203374""}","<pre><yamldata>tel: '3482203374'
 email: paolo.tognato@kypa.eu
 cosa: 'Vitto e alloggio per famiglia'
