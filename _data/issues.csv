@@ -1,4 +1,14 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2113,202238697,2017-01-20 21:01:46,2017-01-20 20:48:36,ospitalità per famiglia di tre persone con bimbo ,,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""20/01/2017"", ""descrizione"": ""La nostra casa nn \u00e8 grandissima siamo una famiglia di tre persone cn una bambina di 7 anni per\u00f2 abbiamo un divano letto matrimoniale e potremmo ospitare una famiglia di tre persone cn un bambino"", ""email"": ""mangini.marica@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3403564089""}","<pre><yamldata>tel: '3403564089'
+email: mangini.marica@gmail.com
+descrizione: 'La nostra casa nn è grandissima siamo una famiglia di tre persone cn una bambina di 7 anni però abbiamo un divano letto matrimoniale e potremmo ospitare una famiglia di tre persone cn un bambino'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 20/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2112,202236569,2017-01-20 20:56:49,2017-01-20 20:37:45,Ischia di Castro (VT) ospitalità per 2 persone in camera con bagno autonomo ,42.544026,11.756252,"[""Accettato"", ""Alloggi"", ""Bollettino"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""20/01/2017"", ""descrizione"": ""Offro disponibilit\u00e0 per 2 persone in camera privata con bagno autonomo. Poi condividiamo il resto della casa e un'esperienza di vita."", ""email"": ""tizianabozzini.tb@gmail.com"", ""immagine"": """", ""indirizzo"": ""Strada Provinciale 47 Lamone, Ischia di Castro, VT, Lazio, Italia"", ""lat"": ""42.544026"", ""link"": """", ""lon"": ""11.756252"", ""tel"": """"}","<pre><yamldata>tel: ''
 email: tizianabozzini.tb@gmail.com
 descrizione: 'Offro disponibilità per 2 persone in camera privata con bagno autonomo. Poi condividiamo il resto della casa e un''esperienza di vita.'
