@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Bootstrap base.html on Pythonanywhere
+title: Bootstrap basehtml on Pythonanywhere
 ---
 
 This article goes over how to use bootstrap with Pythonanywhere (or anywhere else). For some reason Github is having a problem building this page.
@@ -53,28 +53,7 @@ After you add some closing markers to close the body and html document, you're b
 
 </head>
 
-<body>
-  <nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <a class="navbar-brand" href="#">Sappho</a>
-      </div>
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-      </ul>
-    </div>
-  </nav>
-  <div class="container">
-    {% block content %}
-    {% endblock %}
-  </div>
 
-</body>
 </html>
 
 
