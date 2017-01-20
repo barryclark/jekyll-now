@@ -1587,7 +1587,7 @@ link: www.terremotocentroitalia.info
 immagine: ''
 data: 19/01/2017
 </yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1899,201902819,2017-01-19 16:13:49,2017-01-19 16:09:21,Posto per due cani #Montegranaro,,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""Posto per due cani"", ""data"": ""19/01/2017"", ""descrizione"": ""Metto a disposizione due posti per cani in un allevamento a Montegranaro"", ""email"": ""silviagirotti@hotmail.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3397377884""}","<pre><yamldata>tel: '3397377884'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1899,201902819,2017-01-20 17:31:24,2017-01-19 16:09:21,Posto per due cani #Montegranaro,,,"[""Accettato"", ""Form"", ""Ospitalita animali"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""Posto per due cani"", ""data"": ""19/01/2017"", ""descrizione"": ""Metto a disposizione due posti per cani in un allevamento a Montegranaro"", ""email"": ""silviagirotti@hotmail.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3397377884""}","<pre><yamldata>tel: '3397377884'
 email: silviagirotti@hotmail.it
 cosa: 'Posto per due cani'
 descrizione: 'Metto a disposizione due posti per cani in un allevamento a Montegranaro'
@@ -1608,7 +1608,7 @@ link: ''
 immagine: ''
 data: 19/01/2017
 </yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1897,201901234,2017-01-19 16:11:04,2017-01-19 16:03:15,Offresi stalla a #Recanati,43.4035085,13.5486016,"[""Accettato"", ""Donazioni"", ""Facebook"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""Offresi stalla a #Recanati"", ""data"": ""19/01/2017"", ""descrizione"": ""Abito in campagna a Recanati ed ho una struttura vuota che nonno adibiva a stalla."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Piazza Giacomo Leopardi, Recanati, MC, Marche, 62019, Italia"", ""lat"": ""43.4035085"", ""link"": ""https://www.facebook.com/simone.giaconi.3/posts/10208467083855443"", ""lon"": ""13.5486016"", ""tel"": """"}","<pre><yamldata>tel: ''
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1897,201901234,2017-01-20 17:30:58,2017-01-19 16:03:15,Offresi stalla a #Recanati,43.4035085,13.5486016,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Facebook"", ""Ospitalita animali"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""Offresi stalla a #Recanati"", ""data"": ""19/01/2017"", ""descrizione"": ""Abito in campagna a Recanati ed ho una struttura vuota che nonno adibiva a stalla."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Piazza Giacomo Leopardi, Recanati, MC, Marche, 62019, Italia"", ""lat"": ""43.4035085"", ""link"": ""https://www.facebook.com/simone.giaconi.3/posts/10208467083855443"", ""lon"": ""13.5486016"", ""tel"": """"}","<pre><yamldata>tel: ''
 email: ''
 cosa: 'Offresi stalla a #Recanati'
 descrizione: 'Abito in campagna a Recanati ed ho una struttura vuota che nonno adibiva a stalla.'
