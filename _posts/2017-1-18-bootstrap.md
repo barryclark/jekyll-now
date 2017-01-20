@@ -53,6 +53,15 @@ After you add some closing markers to close the body and html document, you're b
 
 </head>
 
+<body>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Sappho</a>
+      </div>
+    </div>
+  </nav>
+</body>
 
 </html>
 
