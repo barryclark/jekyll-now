@@ -4,11 +4,11 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Hello!
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+You can message me to learn more about my projects.
 
 ### Contact me
 
