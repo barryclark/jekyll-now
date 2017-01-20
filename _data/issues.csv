@@ -1,4 +1,14 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2034,202109329,2017-01-20 10:56:52,2017-01-20 10:45:54,Offresi alloggio a #Lecce,,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,http://i.imgur.com/nCcaTLX.png,"{""data"": ""20/01/2017"", ""descrizione"": ""Se pu\u00f2 servire, offriamo una indipendente camera matrimoniale con bagno, all'interno della nostra casa. Possibilit\u00e0 di aggiungere uno/due lettini. Siamo a pochi chilometri da Lecce. Possiamo partire per prendere la famiglia."", ""email"": ""dorygreco@yahoo.it"", ""immagine"": ""http://i.imgur.com/nCcaTLX.png"", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3337979702""}","<pre><yamldata>tel: '3337979702'
+email: dorygreco@yahoo.it
+descrizione: 'Se può servire, offriamo una indipendente camera matrimoniale con bagno, all''interno della nostra casa. Possibilità di aggiungere uno/due lettini. Siamo a pochi chilometri da Lecce. Possiamo partire per prendere la famiglia.'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: 'http://i.imgur.com/nCcaTLX.png'
+data: 20/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2033,202108526,2017-01-20 10:44:57,2017-01-20 10:41:57,Offro due posti letto #Milano,,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""20/01/2017"", ""descrizione"": ""Offro due posti letto a casa insieme a noi per questo periodo di emergenza invernale. Vorremmo dare preferenza a una coppia di anziani o a una mamma con bambino."", ""email"": ""stunchia@libero.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""https://www.google.it/maps/place/Piazzale+Dateo,+20129+Milano/@45.4682629,9.2143566,17z/data=!3m1!4b1!4m5!3m4!1s0x4786c69100568edf:0xcd42423bf1b24747!8m2!3d45.4682592!4d9.2165453"", ""lon"": """", ""tel"": """"}","<pre><yamldata>tel: ''
 email: stunchia@libero.it
 descrizione: 'Offro due posti letto a casa insieme a noi per questo periodo di emergenza invernale. Vorremmo dare preferenza a una coppia di anziani o a una mamma con bambino.'
