@@ -1,4 +1,14 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2054,202133387,2017-01-20 12:53:34,2017-01-20 12:52:12,Capannone a disposizione per ricovero e mungitura animali,,,"[""Accettato"", ""Alloggi"", ""Form"", ""Ospitalit\u00e0 animali"", ""Sisma Gennaio 2017""]",,,"{""data"": ""20/01/2017"", ""descrizione"": ""IO E LA MIA FAMIGLIA METTIAMO A DISPOSIZIONE PER GLI ALLEVATORI DELLE ZONE COLPITE DAL SISMA UN CAPANNONE DI NOSTRA PROPRIETA' ADIBITO A RIMESSAGGIO PER OVINI CAPRINI ASINI MUCCHE E ALTRI. ANIMALI ANCHE CON POSTAZIONE MUNGITURA....ATTUALMENTE CI SONO NELLA MET\u00c0 DEL CAPANNONE LE NOSTRE BESTIE MA ABBIAMO ANCORA POSTO PER CIRCA 300 PECORE E QUALCHE CAVALLO ASINO MUCCA O QUALSIASI ALTRO ANIMALE. Contattare Teresa."", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""https://www.facebook.com/mamy.gabry.5/posts/1526038030757961"", ""lon"": """", ""tel"": ""329 949 17 40""}","<pre><yamldata>tel: '329 949 17 40'
+email: ''
+descrizione: 'IO E LA MIA FAMIGLIA METTIAMO A DISPOSIZIONE PER GLI ALLEVATORI DELLE ZONE COLPITE DAL SISMA UN CAPANNONE DI NOSTRA PROPRIETA'' ADIBITO A RIMESSAGGIO PER OVINI CAPRINI ASINI MUCCHE E ALTRI. ANIMALI ANCHE CON POSTAZIONE MUNGITURA....ATTUALMENTE CI SONO NELLA METÀ DEL CAPANNONE LE NOSTRE BESTIE MA ABBIAMO ANCORA POSTO PER CIRCA 300 PECORE E QUALCHE CAVALLO ASINO MUCCA O QUALSIASI ALTRO ANIMALE. Contattare Teresa.'
+indirizzo: ''
+lat: ''
+lon: ''
+link: 'https://www.facebook.com/mamy.gabry.5/posts/1526038030757961'
+immagine: ''
+data: 20/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2044,202124677,2017-01-20 12:18:01,2017-01-20 12:04:35,Offresi pullman per trasporto persone,,,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Facebook"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""Offresi pullman per trasporto"", ""data"": ""20/01/2017"", ""descrizione"": ""Se servono dei pullman per portare persone a dare una mano ai terremotati io ne metterei a disposizione in una giornata da accordare in base alle necessit\u00e0 5 dei miei da 50. Posti per portare le persone e riprenderle gratuitamente. Fate girare qualora ce ne fosse esigenza mandate una mail al nostro ufficio operativo : operativo@mma-autoservizi.it In ufficio potete contattare Chiara o Marta."", ""email"": ""operativo@mma-autoservizi.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""https://www.facebook.com/alexcampoli/posts/10209659139690066"", ""lon"": """", ""tel"": """"}","<pre><yamldata>tel: ''
 email: operativo@mma-autoservizi.it
 cosa: 'Offresi pullman per trasporto'
@@ -8933,6 +8943,12 @@ data: 22/09/2016
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/640,178563427,2016-10-01 18:43:09,2016-09-22 09:37:40,"Amatrice, assistenza agli animali senza padroni",,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""22/09/2016"", ""descrizione"": ""Servizi veterinari Asl Rieti nelle zone colpite dal Sisma: Istituito il Coordinamento Tecnico Interregionale. Coinvolti Enti, Istituti Zooprofilattici sperimentali Lazio-Toscana e Umbria-Marche e il Centro referenza nazionale per le emergenze non epidemiche. Coordinamento del Ministero della Salute"", ""link"": ""http://www.rietilife.com/2016/09/21/ad-amatrice-arriva-lassistenza-agli-animali-perso-padroni/"", ""titolo"": ""Amatrice, assistenza agli animali senza padroni""}","<pre><yamldata>titolo: 'Amatrice, assistenza agli animali senza padroni'
 descrizione: 'Servizi veterinari Asl Rieti nelle zone colpite dal Sisma: Istituito il Coordinamento Tecnico Interregionale. Coinvolti Enti, Istituti Zooprofilattici sperimentali Lazio-Toscana e Umbria-Marche e il Centro referenza nazionale per le emergenze non epidemiche. Coordinamento del Ministero della Salute'
 link: 'http://www.rietilife.com/2016/09/21/ad-amatrice-arriva-lassistenza-agli-animali-perso-padroni/'
+data: 22/09/2016
+</yamldata></pre>
+",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/639,178563205,2016-10-01 18:43:24,2016-09-22 09:36:25,"A Montegallo (Ap) inaugurati scuola, municipio, chiesa e farmacia",,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""22/09/2016"", ""descrizione"": ""A Montegallo (Ap) inaugurazione domenica 25 settembre dei moduli provvisori riscaldati che ospiteranno scuola, municipio, chiesa e farmacia. Ad annunciarlo il presidente della Regione Emilia Romagna, Stefano Bonaccini, la cui protezione civile sta realizzando le strutture."", ""link"": ""https://www.facebook.com/stebonaccini/posts/1119258541444375"", ""titolo"": ""A Montegallo inaugurati domenica scuola, municipio, chiesa e farmacia""}","<pre><yamldata>titolo: 'A Montegallo inaugurati domenica scuola, municipio, chiesa e farmacia'
+descrizione: 'A Montegallo (Ap) inaugurazione domenica 25 settembre dei moduli provvisori riscaldati che ospiteranno scuola, municipio, chiesa e farmacia. Ad annunciarlo il presidente della Regione Emilia Romagna, Stefano Bonaccini, la cui protezione civile sta realizzando le strutture.'
+link: 'https://www.facebook.com/stebonaccini/posts/1119258541444375'
 data: 22/09/2016
 </yamldata></pre>
 ",open
