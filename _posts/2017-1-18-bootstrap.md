@@ -3,8 +3,7 @@ layout: post
 title: Bootstrap basehtml on Pythonanywhere
 ---
 
-This article goes over how to use bootstrap with Pythonanywhere (or anywhere else). For some reason Github is having a problem building this page.
-
+This article goes over how to use bootstrap to make a nice homepage. This will be a two part post. The first part will focus on making a base.html file that can be extended
 
 First, you need to specify your doctype. If you don't specify this, web browsers will load your page in something called "Quirks mode". It has something to do with how IE used to render pages but now isn't common. To do this, enter:
 
@@ -71,10 +70,7 @@ After you add some closing markers to close the body and html document, you're b
     </div>
   </nav>
 
-<div class="container">
-  {% block content %}
-  {% endblock %}
-</div>
+
 
 </body>
 
