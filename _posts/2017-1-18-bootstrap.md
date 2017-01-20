@@ -68,8 +68,7 @@ After you add some closing markers to close the body and html document, you're b
   </nav>
 
 <!-- <div class="container">
-  {% block content %}
-  {% endblock %}
+  See comment here
 </div> -->
 
 </body>
@@ -79,4 +78,6 @@ After you add some closing markers to close the body and html document, you're b
 
 ```
 
-I don't think you can include the black content, endblock part as code. Github doesn't seem to like that.
+I don't think you can include the black content, endblock part as code. Github doesn't seem to like that. After the nav section, you'll need some curly braces around: % block content %
+  
+Ad then some around: % endblock %
