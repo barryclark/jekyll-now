@@ -42,41 +42,41 @@ We will need a navigation bar. Using navbar-inverse makes it dark, which looks n
 
 After you add some closing markers to close the body and html document, you're base.html should look like this:
 
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Sappho</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+&lt;!DOCTYPE html>
+&lt;html>
+&lt;head>
+  &lt;title>Sappho</title>
+  &lt;meta charset="utf-8">
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1">
+  &lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
 
-</head>
+&lt;/head>
 
-<body>
-  <nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-      <div class="navbar-header">
+&lt;body>
+  &lt;nav class="navbar navbar-inverse">
+    &lt;div class="container-fluid">
+      &lt;div class="navbar-header">
         <a class="navbar-brand" href="#">Sappho</a>
-      </div>
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-      </ul>
-    </div>
-  </nav>
-  <div class="container">
-    <p>{% block content %}
-    {% endblock %}<p>
-  </div>
+      &lt;/div>
+      &lt;ul class="nav navbar-nav">
+        &lt;li class="active"><a href="#">Home</a></li>
+        &lt;li><a href="#">About</a></li>
+      &lt;/ul>
+      &lt;ul class="nav navbar-nav navbar-right">
+        &lt;li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        &lt;li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      &lt;/ul>
+    &lt;/div>
+  &lt;/nav>
+  &lt;div class="container">
+    {% block content %}
+    {% endblock %}
+  &lt;/div>
 
-</body>
+&lt;/body>
 
 
-</html>
+&lt;/html>
 
 
 
