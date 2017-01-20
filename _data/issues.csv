@@ -1,4 +1,25 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2033,202108526,2017-01-20 10:44:57,2017-01-20 10:41:57,Offro due posti letto #Milano,,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""20/01/2017"", ""descrizione"": ""Offro due posti letto a casa insieme a noi per questo periodo di emergenza invernale. Vorremmo dare preferenza a una coppia di anziani o a una mamma con bambino."", ""email"": ""stunchia@libero.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""https://www.google.it/maps/place/Piazzale+Dateo,+20129+Milano/@45.4682629,9.2143566,17z/data=!3m1!4b1!4m5!3m4!1s0x4786c69100568edf:0xcd42423bf1b24747!8m2!3d45.4682592!4d9.2165453"", ""lon"": """", ""tel"": """"}","<pre><yamldata>tel: ''
+email: stunchia@libero.it
+descrizione: 'Offro due posti letto a casa insieme a noi per questo periodo di emergenza invernale. Vorremmo dare preferenza a una coppia di anziani o a una mamma con bambino.'
+indirizzo: ''
+lat: ''
+lon: ''
+link: 'https://www.google.it/maps/place/Piazzale+Dateo,+20129+Milano/@45.4682629,9.2143566,17z/data=!3m1!4b1!4m5!3m4!1s0x4786c69100568edf:0xcd42423bf1b24747!8m2!3d45.4682592!4d9.2165453'
+immagine: ''
+data: 20/01/2017
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2032,202108417,2017-01-20 10:43:02,2017-01-20 10:41:22,Fieno #ArquataDelTronto,42.7723609,13.2965826,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Facebook"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""Fieno #ArquataDelTronto"", ""data"": ""20/01/2017"", ""descrizione"": ""Richiedo 10 rotoli di fieno per foraggiare 4 cavalli a Pretare, frazione di Arquata del Tronto."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Piazza Umberto I, Arquata del Tronto, AP, Marche, Italia"", ""lat"": ""42.7723609"", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1831454010455515/"", ""lon"": ""13.2965826"", ""tel"": """"}","<pre><yamldata>tel: ''
+email: ''
+cosa: 'Fieno #ArquataDelTronto'
+descrizione: 'Richiedo 10 rotoli di fieno per foraggiare 4 cavalli a Pretare, frazione di Arquata del Tronto.'
+indirizzo: 'Piazza Umberto I, Arquata del Tronto, AP, Marche, Italia'
+lat: '42.7723609'
+lon: '13.2965826'
+link: 'https://www.facebook.com/groups/1758670357733881/permalink/1831454010455515/'
+immagine: ''
+data: 20/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2023,202101938,2017-01-20 10:13:04,2017-01-20 10:11:05,CAMPER in comodato d'uso,,,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Facebook"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""CAMPER in comodato d'uso"", ""data"": ""20/01/2017"", ""descrizione"": ""DO IN COMODATO D,USO UN CAMPER X 4 PERSONE x due adulti e due bambini ha tutto il comfort Anche il riscaldamento sono a disposizione"", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""https://www.facebook.com/pcampoli1/posts/10206660981801862"", ""lon"": """", ""tel"": """"}","<pre><yamldata>tel: ''
 email: ''
 cosa: 'CAMPER in comodato d''uso'
