@@ -44,37 +44,42 @@ After you add some closing markers to close the body and html document, you're b
 
 ```
 
-&lt;!DOCTYPE html>
-&lt;html>
-&lt;head>
-  &lt;title>Sappho</title>
-  &lt;meta charset="utf-8">
-  &lt;meta name="viewport" content="width=device-width, initial-scale=1">
-  &lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sappho</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
 
-&lt;/head>
+</head>
 
-&lt;body>
-  &lt;nav class="navbar navbar-inverse">
-    &lt;div class="container-fluid">
-      &lt;div class="navbar-header">
+<body>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
         <a class="navbar-brand" href="#">Sappho</a>
-      &lt;/div>
-      &lt;ul class="nav navbar-nav">
-        &lt;li class="active"><a href="#">Home</a></li>
-        &lt;li><a href="#">About</a></li>
-      &lt;/ul>
-      &lt;ul class="nav navbar-nav navbar-right">
-        &lt;li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-        &lt;li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-      &lt;/ul>
-    &lt;/div>
-  &lt;/nav>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </nav>
 
-&lt;/body>
+<div class="container">
+  {% block content %}
+  {% endblock %}
+</div>
+
+</body>
 
 
-&lt;/html>
+</html>
 
 ```
 
