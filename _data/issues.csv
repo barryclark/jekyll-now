@@ -1,11 +1,21 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1998,202075080,2017-01-20 07:54:52,2017-01-20 07:50:58,Strutture per animali a #Pisa,43.7159395,10.4018624,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""20/01/2017"", ""descrizione"": ""Il Centro Ippico Campalto a.s.d. di Pisa, in via del Tiro a segno 20, mette a disposizione le proprie strutture, 50 box e paddocks, per cavalli o altri animali delle zone terremotate o colpite dalla violenta nevicata. INFO Via del Tiro a Segno 20 - 56122 Pisa"", ""email"": ""info@campalto.com"", ""immagine"": """", ""indirizzo"": ""Ponte di Mezzo, San Giusto, Pisa, PI, Tuscany, 56126, Italia"", ""lat"": ""43.7159395"", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1831399813794268/"", ""lon"": ""10.4018624"", ""tel"": ""050/530288""}","<pre><yamldata>tel: 050/530288
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1998,202075080,2017-01-20 07:57:13,2017-01-20 07:50:58,Strutture per animali a #Pisa,43.7159395,10.4018624,"[""Accettato"", ""Alloggi"", ""Facebook"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""20/01/2017"", ""descrizione"": ""Il Centro Ippico Campalto a.s.d. di Pisa, in via del Tiro a segno 20, mette a disposizione le proprie strutture, 50 box e paddocks, per cavalli o altri animali delle zone terremotate o colpite dalla violenta nevicata. INFO Via del Tiro a Segno 20 - 56122 Pisa"", ""email"": ""info@campalto.com"", ""immagine"": """", ""indirizzo"": ""Ponte di Mezzo, San Giusto, Pisa, PI, Tuscany, 56126, Italia"", ""lat"": ""43.7159395"", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1831399813794268/"", ""lon"": ""10.4018624"", ""tel"": ""050/530288""}","<pre><yamldata>tel: 050/530288
 email: info@campalto.com
 descrizione: 'Il Centro Ippico Campalto a.s.d. di Pisa, in via del Tiro a segno 20, mette a disposizione le proprie strutture, 50 box e paddocks, per cavalli o altri animali delle zone terremotate o colpite dalla violenta nevicata. INFO Via del Tiro a Segno 20 - 56122 Pisa'
 indirizzo: 'Ponte di Mezzo, San Giusto, Pisa, PI, Tuscany, 56126, Italia'
 lat: '43.7159395'
 lon: '10.4018624'
 link: 'https://www.facebook.com/groups/1758670357733881/permalink/1831399813794268/'
+immagine: ''
+data: 20/01/2017
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1997,202073503,2017-01-20 07:56:57,2017-01-20 07:41:39,Offresi ospitalità a #Roma,45.6024427,9.4576108,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""20/01/2017"", ""descrizione"": ""Io e la mia famiglia saremo felici di accogliere in casa nostra chi volesse stare in un posto caldo e tranquillo e condividere questa tragica situazione."", ""email"": ""alessio.carbone@mediaset.it"", ""immagine"": """", ""indirizzo"": ""Via Roma, Roncello, Monza e della Brianza, Lombardia, 20877, Italia"", ""lat"": ""45.6024427"", ""link"": """", ""lon"": ""9.4576108"", ""tel"": ""3485102675""}","<pre><yamldata>tel: '3485102675'
+email: alessio.carbone@mediaset.it
+descrizione: 'Io e la mia famiglia saremo felici di accogliere in casa nostra chi volesse stare in un posto caldo e tranquillo e condividere questa tragica situazione.'
+indirizzo: 'Via Roma, Roncello, Monza e della Brianza, Lombardia, 20877, Italia'
+lat: '45.6024427'
+lon: '9.4576108'
+link: ''
 immagine: ''
 data: 20/01/2017
 </yamldata></pre>",open
@@ -3532,6 +3542,17 @@ indirizzo: ''
 lat: ''
 lon: ''
 link: 'https://www.facebook.com/presidicivici/'
+data: 27/11/2016
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1377,191834432,2016-11-27 00:39:30,2016-11-27 00:27:47,Raccolta fondi per comprare uno scuolabus a #Pievebovigliana,,,"[""Accettato"", ""Bollettino"", ""Facebook"", ""Raccolte Fondi"", ""Sisma Ottobre""]",,,"{""bic"": ""HELADEF1WEM"", ""causale"": ""\""Erdbeben Italien\u201c"", ""chi"": ""Raccolta fondi per comprare uno scuolabus a #Pievebovigliana"", ""data"": ""27/11/2016"", ""descrizione"": ""La Federazione delle Associazioni culturali italo-tedesche VDIG - Italienfreunde ha dato vita ad una raccolta fondi per acquistare uno scuolabus per gli scolari di Pievebovigliana, paesino marchigiano semidistrutto dal terremoto. Qui ulteriori informazioni: http://bit.ly/2frhW5K"", ""email"": """", ""iban"": ""DE84820510000301039771"", ""intestazione"": """", ""link"": ""https://www.facebook.com/radiocolonia.funkhaus/posts/1794383717497435"", ""postale"": """"}","<pre><yamldata>chi: 'Raccolta fondi per comprare uno scuolabus a #Pievebovigliana'
+descrizione: 'La Federazione delle Associazioni culturali italo-tedesche VDIG - Italienfreunde ha dato vita ad una raccolta fondi per acquistare uno scuolabus per gli scolari di Pievebovigliana, paesino marchigiano semidistrutto dal terremoto. Qui ulteriori informazioni: http://bit.ly/2frhW5K'
+intestazione: ''
+iban: DE84820510000301039771
+bic: HELADEF1WEM
+postale: ''
+causale: '""Erdbeben Italien“'
+link: 'https://www.facebook.com/radiocolonia.funkhaus/posts/1794383717497435'
+email: ''
 data: 27/11/2016
 </yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1377,191834432,2016-11-27 00:39:30,2016-11-27 00:27:47,Raccolta fondi per comprare uno scuolabus a #Pievebovigliana,,,"[""Accettato"", ""Bollettino"", ""Facebook"", ""Raccolte Fondi"", ""Sisma Ottobre""]",,,"{""bic"": ""HELADEF1WEM"", ""causale"": ""\""Erdbeben Italien\u201c"", ""chi"": ""Raccolta fondi per comprare uno scuolabus a #Pievebovigliana"", ""data"": ""27/11/2016"", ""descrizione"": ""La Federazione delle Associazioni culturali italo-tedesche VDIG - Italienfreunde ha dato vita ad una raccolta fondi per acquistare uno scuolabus per gli scolari di Pievebovigliana, paesino marchigiano semidistrutto dal terremoto. Qui ulteriori informazioni: http://bit.ly/2frhW5K"", ""email"": """", ""iban"": ""DE84820510000301039771"", ""intestazione"": """", ""link"": ""https://www.facebook.com/radiocolonia.funkhaus/posts/1794383717497435"", ""postale"": """"}","<pre><yamldata>chi: 'Raccolta fondi per comprare uno scuolabus a #Pievebovigliana'
