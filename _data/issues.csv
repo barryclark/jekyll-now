@@ -9,6 +9,17 @@ link: ''
 immagine: 'http://i.imgur.com/ieNuLey.jpg'
 data: 20/01/2017
 </yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2062,202142792,2017-01-20 13:51:06,2017-01-20 13:41:22,Offresi aiuto per trasporto beni o animali (cavalli) e spalatura neve,44.4760177,11.2756857,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""trasporto beni o animali - cavalli - spalatura neve"", ""data"": ""20/01/2017"", ""descrizione"": ""buongiorno ho esperienza di gestione cavalli - posso intervenire per soccorso o trasporto animali/cose da un punto ad un altro. Posso intervenire con auto 4x4 + trailer cavalli oppure per merci con auto 4x4 + rimorchio cose. Per il pernottamento posso arrangiarmi in auto o in tenda. Disponibile anche solo per spalatura neve."", ""email"": ""Ebacciocchi@gmail.com"", ""immagine"": """", ""indirizzo"": ""Via Augusto Righi, Casalecchio di Reno, BO, EMR, 40050, Italia"", ""lat"": ""44.4760177"", ""link"": """", ""lon"": ""11.2756857"", ""tel"": ""3466651838""}","<pre><yamldata>tel: '3466651838'
+email: Ebacciocchi@gmail.com
+cosa: 'trasporto beni o animali - cavalli - spalatura neve'
+descrizione: 'buongiorno ho esperienza di gestione cavalli - posso intervenire per soccorso o trasporto animali/cose da un punto ad un altro. Posso intervenire con auto 4x4 + trailer cavalli oppure per merci con auto 4x4 + rimorchio cose. Per il pernottamento posso arrangiarmi in auto o in tenda. Disponibile anche solo per spalatura neve.'
+indirizzo: 'Via Augusto Righi, Casalecchio di Reno, BO, EMR, 40050, Italia'
+lat: '44.4760177'
+lon: '11.2756857'
+link: ''
+immagine: ''
+data: 20/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2061,202140478,2017-01-20 13:31:06,2017-01-20 13:30:03,Offresi stalle a #Petriolo (MC),43.221693,13.4653351,"[""Accettato"", ""Alloggi"", ""Bollettino"", ""Form"", ""Ospitalita animali"", ""Sisma Gennaio 2017""]",,,"{""data"": ""20/01/2017"", ""descrizione"": ""A Petriolo (MC) c'\u00e8 un vecchio stabile abbandonato dove allevavano maiali, sono tutte piccole stalle di cemento armato sono ancora in buone condizioni, attorno allo stabile \u00e8 tutto ancora recintato. Zona vicino fiumi Fiastra difronte Lago \""Chiavari\""."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Via del castellano, Petriolo, MC, Marche, 620101, Italia"", ""lat"": ""43.221693"", ""link"": ""https://www.facebook.com/groups/1104882906294788/permalink/1191051137677964/"", ""lon"": ""13.4653351"", ""tel"": """"}","<pre><yamldata>tel: ''
 email: ''
 descrizione: 'A Petriolo (MC) c''è un vecchio stabile abbandonato dove allevavano maiali, sono tutte piccole stalle di cemento armato sono ancora in buone condizioni, attorno allo stabile è tutto ancora recintato. Zona vicino fiumi Fiastra difronte Lago ""Chiavari"".'
