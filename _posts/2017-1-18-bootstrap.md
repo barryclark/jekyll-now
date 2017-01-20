@@ -42,7 +42,7 @@ We will need a navigation bar. Using navbar-inverse makes it dark, which looks n
 
 After you add some closing markers to close the body and html document, you're base.html should look like this:
 
-
+'''
 <!DOCTYPE html>
 <html>
 <head>
@@ -79,4 +79,4 @@ After you add some closing markers to close the body and html document, you're b
 
 </html>
 
-
+'''
