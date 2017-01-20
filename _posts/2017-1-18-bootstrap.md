@@ -68,10 +68,6 @@ After you add some closing markers to close the body and html document, you're b
       &lt;/ul>
     &lt;/div>
   &lt;/nav>
-  &lt;div class="container">
-    {% block content %}
-    {% endblock %}
-  &lt;/div>
 
 &lt;/body>
 
