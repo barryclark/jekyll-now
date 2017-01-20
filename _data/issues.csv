@@ -419,13 +419,13 @@ link: ''
 immagine: ''
 data: 19/01/2017
 </yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1935,201946430,2017-01-19 19:51:31,2017-01-19 19:01:07,Offresi alloggio in provincia di #Cosenza,39.2527263,16.6960607,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""19/01/2017"", ""descrizione"": ""Alloggio per 4/5 persone con tutti i confort"", ""email"": ""ad@whatsuptoday.it"", ""immagine"": """", ""indirizzo"": ""Via Antonio Gramsci, San Giovanni in Fiore, CS, CAL, 87055, Italia"", ""lat"": ""39.2527263"", ""link"": ""sangiovanniinfiore"", ""lon"": ""16.6960607"", ""tel"": ""3921186375""}","<pre><yamldata>tel: '3921186375'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1935,201946430,2017-01-20 09:31:59,2017-01-19 19:01:07,Offresi alloggio in provincia di #Cosenza,39.2527263,16.6960607,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""19/01/2017"", ""descrizione"": ""Alloggio per 4/5 persone con tutti i confort"", ""email"": ""ad@whatsuptoday.it"", ""immagine"": """", ""indirizzo"": ""Via Antonio Gramsci, San Giovanni in Fiore, CS, CAL, 87055, Italia"", ""lat"": ""39.2527263"", ""link"": ""http://www.comune.sangiovanniinfiore.cs.it/"", ""lon"": ""16.6960607"", ""tel"": ""3921186375""}","<pre><yamldata>tel: '3921186375'
 email: ad@whatsuptoday.it
 descrizione: 'Alloggio per 4/5 persone con tutti i confort'
 indirizzo: 'Via Antonio Gramsci, San Giovanni in Fiore, CS, CAL, 87055, Italia'
 lat: '39.2527263'
 lon: '16.6960607'
-link: sangiovanniinfiore
+link: http://www.comune.sangiovanniinfiore.cs.it/
 immagine: ''
 data: 19/01/2017
 </yamldata></pre>",closed
@@ -681,13 +681,13 @@ link: ''
 immagine: 'http://i.imgur.com/1udKYam.jpg'
 data: 19/01/2017
 </yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1901,201904710,2017-01-19 21:36:36,2017-01-19 16:15:44,Si mette a disposizione due posti per cani a Montegranaro (Fm),43.2325226,13.6315802,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""19/01/2017"", ""descrizione"": ""Si mette a disposizione due posti per cani in un allevamento a montegranaro (FM)."", ""email"": ""silviagirotti@hotmail.it"", ""immagine"": """", ""indirizzo"": ""Strada Provinciale SP30 Fermana, Montegranaro, FM, Marche, 63812, Italia"", ""lat"": ""43.2325226"", ""link"": ""terremotocentroitalia.info"", ""lon"": ""13.6315802"", ""tel"": ""3397377884""}","<pre><yamldata>tel: '3397377884'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1901,201904710,2017-01-20 09:31:15,2017-01-19 16:15:44,Si mette a disposizione due posti per cani a Montegranaro (Fm),43.2325226,13.6315802,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""19/01/2017"", ""descrizione"": ""Si mette a disposizione due posti per cani in un allevamento a montegranaro (FM)."", ""email"": ""silviagirotti@hotmail.it"", ""immagine"": """", ""indirizzo"": ""Strada Provinciale SP30 Fermana, Montegranaro, FM, Marche, 63812, Italia"", ""lat"": ""43.2325226"", ""link"": ""www.terremotocentroitalia.info"", ""lon"": ""13.6315802"", ""tel"": ""3397377884""}","<pre><yamldata>tel: '3397377884'
 email: silviagirotti@hotmail.it
 descrizione: 'Si mette a disposizione due posti per cani in un allevamento a montegranaro (FM).'
 indirizzo: 'Strada Provinciale SP30 Fermana, Montegranaro, FM, Marche, 63812, Italia'
 lat: '43.2325226'
 lon: '13.6315802'
-link: terremotocentroitalia.info
+link: www.terremotocentroitalia.info
 immagine: ''
 data: 19/01/2017
 </yamldata></pre>",open
