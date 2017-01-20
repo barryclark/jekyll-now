@@ -18,10 +18,20 @@ Journal club meetings currently take place on Wednesdays at 12:00 pm in seminar 
 
 **Join the club** by emailing [David Hocker](mailto:david.hocker@stonybrook.edu?subject=computational journal club)!
 
-# 2017 Spring Schedule, coming soon!
+# 2017 Spring Schedule
 
 - January 18: David Hocker
-
+- January 25: Tankut Can
+- February 1: Adrián Soto Cambres
+- February 8: Jonathan Rawski
+- February 15: Arthur Zhao
+- February 22,29:  no journal club, Cosyne meeting
+- March 8: Memming Park
+- March 15: no journal club, Spring break!
+- March 22: Luca Mazzucato
+- March 29: Yuan Zhao
+- April 5: Jin Wang
+- April 12: Giancarlo La Camera 
 
 
 
