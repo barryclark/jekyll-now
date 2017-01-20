@@ -1,4 +1,24 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2112,202236569,2017-01-20 20:56:49,2017-01-20 20:37:45,Ischia di Castro (VT) ospitalità per 2 persone in camera con bagno autonomo ,42.544026,11.756252,"[""Accettato"", ""Alloggi"", ""Bollettino"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""20/01/2017"", ""descrizione"": ""Offro disponibilit\u00e0 per 2 persone in camera privata con bagno autonomo. Poi condividiamo il resto della casa e un'esperienza di vita."", ""email"": ""tizianabozzini.tb@gmail.com"", ""immagine"": """", ""indirizzo"": ""Strada Provinciale 47 Lamone, Ischia di Castro, VT, Lazio, Italia"", ""lat"": ""42.544026"", ""link"": """", ""lon"": ""11.756252"", ""tel"": """"}","<pre><yamldata>tel: ''
+email: tizianabozzini.tb@gmail.com
+descrizione: 'Offro disponibilità per 2 persone in camera privata con bagno autonomo. Poi condividiamo il resto della casa e un''esperienza di vita.'
+indirizzo: 'Strada Provinciale 47 Lamone, Ischia di Castro, VT, Lazio, Italia'
+lat: '42.544026'
+lon: '11.756252'
+link: ''
+immagine: ''
+data: 20/01/2017
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2111,202236287,2017-01-20 20:55:38,2017-01-20 20:36:30,Ospitalità per coppia di anziani o mamma con bambini vicino a Malpensa,,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""20/01/2017"", ""descrizione"": ""Nella nostra casa vicino a Malpensa mettiamo a disposizione per coppia di anziani o mamma con bambini anche piccoli taverna al piano terra con cucina e bagno indipendenti. Benvenuti animali di compagnia."", ""email"": ""supersilvia_@hotmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3383884900""}","<pre><yamldata>tel: '3383884900'
+email: supersilvia_@hotmail.com
+descrizione: 'Nella nostra casa vicino a Malpensa mettiamo a disposizione per coppia di anziani o mamma con bambini anche piccoli taverna al piano terra con cucina e bagno indipendenti. Benvenuti animali di compagnia.'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 20/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2110,202233386,2017-01-20 20:54:44,2017-01-20 20:22:14,Oltrepo' Pavese (Pavia): ospitalità in due camere per 4 persone anche con bimbi e animali,45.0332137,9.24392750997506,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""20/01/2017"", ""descrizione"": ""Metto a disposizione due camera da letto per 4 persone, sono benvenuti animali e bambini. Piccolo giardino.#Oltrep\u00f2Pavese #Pavia"", ""email"": ""brigidapaolasampino@gmail.com"", ""immagine"": """", ""indirizzo"": ""Piazza Castello, Casa Fontanini, Cigognola, Pavia, Lombardia, 27040, Italia"", ""lat"": ""45.0332137"", ""link"": """", ""lon"": ""9.24392750997506"", ""tel"": ""3349362577""}","<pre><yamldata>tel: '3349362577'
 email: brigidapaolasampino@gmail.com
 descrizione: 'Metto a disposizione due camera da letto per 4 persone, sono benvenuti animali e bambini. Piccolo giardino.#OltrepòPavese #Pavia'
@@ -7053,16 +7073,6 @@ data: 01/11/2016
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1043,186660618,2016-11-01 22:07:36,2016-11-01 22:03:40,Comune #SanSeverino: centri di accoglienza notturna,,,"[""Accettato"", ""Bollettino"", ""Notizie Utili"", ""Sisma Ottobre""]",,,"{""data"": ""01/11/2016"", ""descrizione"": ""Il Comune di San Severino Marche informa che per chi volesse trascorrere la notte presso i Centri di accoglienza sono disponibili le seguenti strutture: \u2013 palasport comunale \u201cAlbino Ciarapica\u201d di viale Mazzini (180 posti letto), \u2013 palestre Istituto comprensivo \u201cP. Tacchi Venturi\u201d viale Bigioli (86+150 posti letto), \u2013 palestra plesso scolastico Cesolo (30 posti letto), \u2013 modulo abitativo presso ex chiesa Cesolo (25 posti letto)."", ""link"": ""http://www.comune.sanseverinomarche.mc.it/comunicati-cms/terremoto-ecco-la-lista-dei-centri-daccoglienza-attivati-per-trascorrere-la-notte/"", ""titolo"": ""Comune #SanSeverino: centri di accoglienza notturna""}","<pre><yamldata>titolo: 'Comune #SanSeverino: centri di accoglienza notturna'
 descrizione: 'Il Comune di San Severino Marche informa che per chi volesse trascorrere la notte presso i Centri di accoglienza sono disponibili le seguenti strutture: – palasport comunale “Albino Ciarapica” di viale Mazzini (180 posti letto), – palestre Istituto comprensivo “P. Tacchi Venturi” viale Bigioli (86+150 posti letto), – palestra plesso scolastico Cesolo (30 posti letto), – modulo abitativo presso ex chiesa Cesolo (25 posti letto).'
 link: 'http://www.comune.sanseverinomarche.mc.it/comunicati-cms/terremoto-ecco-la-lista-dei-centri-daccoglienza-attivati-per-trascorrere-la-notte/'
-data: 01/11/2016
-</yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1042,186660490,2016-11-01 22:06:58,2016-11-01 22:03:04,"LA ROCCA DI MANTIGNANA, Corciano (PG)",43.1600436,12.2864765,"[""Accettato"", ""Alloggi"", ""Facebook"", ""Form"", ""Sisma Ottobre""]",,,"{""data"": ""01/11/2016"", ""descrizione"": ""LA ROCCA DI MANTIGNANA, Corciano (PG): disponibili 2 appartamenti per due nuclei familiari da 4 persone l'uno. Contattare Anna."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Via Michelangelo Buonarroti, Corciano, PG, UMB, 06073, Italia"", ""lat"": ""43.1600436"", ""link"": ""https://www.facebook.com/permalink.php?story_fbid=1214366278637704&id=119031281504548"", ""lon"": ""12.2864765"", ""tel"": ""3478553422""}","<pre><yamldata>tel: '3478553422'
-email: ''
-descrizione: 'LA ROCCA DI MANTIGNANA, Corciano (PG): disponibili 2 appartamenti per due nuclei familiari da 4 persone l''uno. Contattare Anna.'
-indirizzo: 'Via Michelangelo Buonarroti, Corciano, PG, UMB, 06073, Italia'
-lat: '43.1600436'
-lon: '12.2864765'
-link: 'https://www.facebook.com/permalink.php?story_fbid=1214366278637704&id=119031281504548'
-immagine: ''
 data: 01/11/2016
 </yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1042,186660490,2016-11-01 22:06:58,2016-11-01 22:03:04,"LA ROCCA DI MANTIGNANA, Corciano (PG)",43.1600436,12.2864765,"[""Accettato"", ""Alloggi"", ""Facebook"", ""Form"", ""Sisma Ottobre""]",,,"{""data"": ""01/11/2016"", ""descrizione"": ""LA ROCCA DI MANTIGNANA, Corciano (PG): disponibili 2 appartamenti per due nuclei familiari da 4 persone l'uno. Contattare Anna."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Via Michelangelo Buonarroti, Corciano, PG, UMB, 06073, Italia"", ""lat"": ""43.1600436"", ""link"": ""https://www.facebook.com/permalink.php?story_fbid=1214366278637704&id=119031281504548"", ""lon"": ""12.2864765"", ""tel"": ""3478553422""}","<pre><yamldata>tel: '3478553422'
