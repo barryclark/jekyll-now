@@ -1,4 +1,24 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2091,202199385,2017-01-20 20:20:03,2017-01-20 17:38:05,Condividiamo la nostra abitazione in provincia di Treviso,45.821089,12.2510713,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""20/01/2017"", ""descrizione"": ""Condividiamo la nostra abitazione con chi ne avesse bisogno. Siamo una coppia con un bambino di 3 anni e mezzo. Provincia di Treviso."", ""email"": ""chiara.pazzaia@gmail.com"", ""immagine"": """", ""indirizzo"": ""Via Fagar\u00e8, Susegana, TV, Veneto, 31058, Italia"", ""lat"": ""45.821089"", ""link"": """", ""lon"": ""12.2510713"", ""tel"": ""3404960668""}","<pre><yamldata>tel: '3404960668'
+email: chiara.pazzaia@gmail.com
+descrizione: 'Condividiamo la nostra abitazione con chi ne avesse bisogno. Siamo una coppia con un bambino di 3 anni e mezzo. Provincia di Treviso.'
+indirizzo: 'Via Fagarè, Susegana, TV, Veneto, 31058, Italia'
+lat: '45.821089'
+lon: '12.2510713'
+link: ''
+immagine: ''
+data: 20/01/2017
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2090,202197818,2017-01-20 20:19:28,2017-01-20 17:30:45,Condividiamo la nostra abitazione in provincia di Treviso,,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""20/01/2017"", ""descrizione"": ""Condividiamo la nostra abitazione con chi ne avesse bisogno. Siamo in provincia di Treviso."", ""email"": ""chiara.pazzaia@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3404960668""}","<pre><yamldata>tel: '3404960668'
+email: chiara.pazzaia@gmail.com
+descrizione: 'Condividiamo la nostra abitazione con chi ne avesse bisogno. Siamo in provincia di Treviso.'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 20/01/2017
+</yamldata></pre>",closed
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2089,202197204,2017-01-20 20:07:25,2017-01-20 17:27:41,A Roma possiamo ospitare due adulti e un bambino,,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""20/01/2017"", ""descrizione"": ""A Roma possiamo ospitare in casa nostra massimo due adulti e un bambino in una stanza. Siamo una famiglia con due bambini."", ""email"": ""faby.faby75@gmai.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3474254144""}","<pre><yamldata>tel: '3474254144'
 email: faby.faby75@gmai.com
 descrizione: 'A Roma possiamo ospitare in casa nostra massimo due adulti e un bambino in una stanza. Siamo una famiglia con due bambini.'
