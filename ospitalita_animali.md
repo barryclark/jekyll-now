@@ -17,7 +17,7 @@ permalink: /ospitalita_animali/
 <div class="panel-group">
 {% assign filteredissues = site.data.issuesjson | where: "state","open" %}
 {% for member in filteredissues %}
-{% if member.issue.labels contains "Ospita animali" %}
+{% if member.issue.labels contains "Ospitalita animali" %}
 <div class="panel-body">
 <a href="/issues/{{ member.number }}" class="list-group-item">
 	<h4 class="list-group-item-heading">{{member.title}}</h4>
@@ -48,7 +48,7 @@ markerColor: 'green'
 });
 var markerList=[];
 {% for member in filteredissues %}
-{% if member.issue.labels contains "Ospita animali" %}
+{% if member.issue.labels contains "Ospitalita animali" %}
 {% if member.issue.lat != blank and member.issue.lon != blank %}
 markerList.push([{{member.issue.lat}}, {{member.issue.lon}}, "{{member.title|uri_escape}}", "/issues/{{ member.number }}"]);
 {% endif %}
