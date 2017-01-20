@@ -1,4 +1,25 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2107,202232438,2017-01-20 20:49:44,2017-01-20 20:17:18,A Vicenza ospitalità in due stanze singole per famiglie con bimbi,,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""20/01/2017"", ""descrizione"": ""Siamo una coppia giovane di Vicenza e abbiamo 2 stanze singole vuote che momentaneamente non usiamo, abbiamo due cani piccoli e una gatta. Siamo disponibili ad offrire ospitalit\u00e0 a famiglie con bimbi!"", ""email"": ""norivale@libero.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3401409761""}","<pre><yamldata>tel: '3401409761'
+email: norivale@libero.it
+descrizione: 'Siamo una coppia giovane di Vicenza e abbiamo 2 stanze singole vuote che momentaneamente non usiamo, abbiamo due cani piccoli e una gatta. Siamo disponibili ad offrire ospitalità a famiglie con bimbi!'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 20/01/2017
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2106,202231292,2017-01-20 20:48:42,2017-01-20 20:11:28,"Vestiti per bambini e da donna, lenzuola e coperte",,,"[""Accettato"", ""Donazioni"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""vestiti x bambini,lenzuola e coperte"", ""data"": ""20/01/2017"", ""descrizione"": ""Metto a disposizione vestiti x bambini e da donna, lenzuola o coperte, cottattatemi."", ""email"": ""mary.molinari@alice.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3333296896""}","<pre><yamldata>tel: '3333296896'
+email: mary.molinari@alice.it
+cosa: 'vestiti x bambini,lenzuola e coperte'
+descrizione: 'Metto a disposizione vestiti x bambini e da donna, lenzuola o coperte, cottattatemi.'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 20/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2104,202225965,2017-01-20 20:39:45,2017-01-20 19:46:05,Agriclub a Venaus (TO) può ospitare gratuitamente 25 -30 terremotati ,45.1519757,7.0161905,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""20/01/2017"", ""descrizione"": ""L'agriclub a Venaus si offre di ospitare gratuitamente 25 -30 terremotati che si trovano in condizioni disperate almeno fino a quando non passa il freddo.se il governo ha deciso di aiutare solo gli stranieri noi ci aiutiamo da soli grazie fare girare per favore. Link corretto e verificato https://www.facebook.com/venaus.agriclub.7/posts/193887901086340"", ""email"": ""gabriella.secco@libero.it"", ""immagine"": """", ""indirizzo"": ""SP210, Alberea, Venaus, TO, Piemonte, 10059, Italia"", ""lat"": ""45.1519757"", ""link"": ""https://www.facebook.com/venaus.agriclub.7/posts/193887901086340?__mref=message_bubble"", ""lon"": ""7.0161905"", ""tel"": """"}","<pre><yamldata>tel: ''
 email: gabriella.secco@libero.it
 descrizione: 'L''agriclub a Venaus si offre di ospitare gratuitamente 25 -30 terremotati che si trovano in condizioni disperate almeno fino a quando non passa il freddo.se il governo ha deciso di aiutare solo gli stranieri noi ci aiutiamo da soli grazie fare girare per favore. Link corretto e verificato https://www.facebook.com/venaus.agriclub.7/posts/193887901086340'
@@ -13374,6 +13395,18 @@ bic: IBSPIT2P
 postale: ''
 causale: ''
 link: 'https://comunapp-ita.appspot.com/publishedItem?key=ag5zfmNvbXVuYXBwLWl0YXI4CxIGQ29tdW5lIghjb211bmFwcAwLEgZDb211bmUYgICAwKC5gwkMCxIESXRlbRiAgIDgxoGSCgw'
+email: ''
+data: 14/09/2016
+</yamldata></pre>
+",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/240,176847679,2016-09-14 08:40:47,2016-09-14 08:37:58,Caritas Frosinone - Veroli - Ferentino,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": ""Terremoto Centro Italia"", ""chi"": ""Caritas Frosinone - Veroli - Ferentino"", ""data"": ""14/09/2016"", ""descrizione"": ""Al momento si procede solo a raccolta di offerte in denaro tramite versamento sui conti correnti indicati. Tranne le Parrocchie, nessuno \u00e8 incaricato di raccogliere offerte in contanti a nome della Caritas."", ""email"": """", ""iban"": ""IT93 C052 9714 801C C103 0008 343"", ""intestazione"": ""Caritas diocesana di Frosinone-Veroli-Ferentino"", ""link"": ""http://caritas.diocesifrosinone.it/18-/-sp-930/149-terremoto-centro-italia-domenica-18-settembre-2016-colletta-in-tutte-le-chiese.html"", ""postale"": """"}","<pre><yamldata>chi: 'Caritas Frosinone - Veroli - Ferentino'
+descrizione: 'Al momento si procede solo a raccolta di offerte in denaro tramite versamento sui conti correnti indicati. Tranne le Parrocchie, nessuno è incaricato di raccogliere offerte in contanti a nome della Caritas.'
+intestazione: 'Caritas diocesana di Frosinone-Veroli-Ferentino'
+iban: 'IT93 C052 9714 801C C103 0008 343'
+bic: ''
+postale: ''
+causale: 'Terremoto Centro Italia'
+link: 'http://caritas.diocesifrosinone.it/18-/-sp-930/149-terremoto-centro-italia-domenica-18-settembre-2016-colletta-in-tutte-le-chiese.html'
 email: ''
 data: 14/09/2016
 </yamldata></pre>
