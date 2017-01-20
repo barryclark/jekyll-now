@@ -42,6 +42,8 @@ We will need a navigation bar. Using navbar-inverse makes it dark, which looks n
 
 After you add some closing markers to close the body and html document, you're base.html should look like this:
 
+```
+
 &lt;!DOCTYPE html>
 &lt;html>
 &lt;head>
@@ -74,6 +76,6 @@ After you add some closing markers to close the body and html document, you're b
 
 &lt;/html>
 
-
+```
 
 I don't think you can include the black content, endblock part as code. Github doesn't seem to like that.
