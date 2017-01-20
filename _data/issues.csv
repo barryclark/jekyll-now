@@ -1,5 +1,25 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2083,202182379,2017-01-20 19:59:39,2017-01-20 16:25:23,Disponibilità di 4 posti letto a Taranto,,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""20/01/2017"", ""descrizione"": ""Ho disponibilit\u00e0 di 4 posti letto sono a taranto attendo una risposta grazie"", ""email"": ""francesca.bungaro@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3930552149""}","<pre><yamldata>tel: '3930552149'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2085,202187638,2017-01-20 20:04:09,2017-01-20 16:46:08,Disponibilità di 10 posti letto a Marina di Massa (MS) ,44.0094968,10.1019306,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""20/01/2017"", ""descrizione"": ""Abbiamo un agenzia immobiliare e abbiamo a disposizione una decina di posti letti per chi si trova in difficolta. Ci troviamo a Marina di Massa, provincia di Massa Carrara (toscana). Disponibilit\u00e0 immediata senza limitazioni per la durata dell'alloggio. Siamo lieti di aiutare chi ha bisogno."", ""email"": ""chiara-1992@hotmail.it"", ""immagine"": """", ""indirizzo"": ""Via San Leonardo, Massa, MS, Tuscany, 54037, Italia"", ""lat"": ""44.0094968"", ""link"": """", ""lon"": ""10.1019306"", ""tel"": ""3282154720""}","<pre><yamldata>tel: '3282154720'
+email: chiara-1992@hotmail.it
+descrizione: 'Abbiamo un agenzia immobiliare e abbiamo a disposizione una decina di posti letti per chi si trova in difficolta. Ci troviamo a Marina di Massa, provincia di Massa Carrara (toscana). Disponibilità immediata senza limitazioni per la durata dell''alloggio. Siamo lieti di aiutare chi ha bisogno.'
+indirizzo: 'Via San Leonardo, Massa, MS, Tuscany, 54037, Italia'
+lat: '44.0094968'
+lon: '10.1019306'
+link: ''
+immagine: ''
+data: 20/01/2017
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2084,202184217,2017-01-20 20:02:33,2017-01-20 16:32:37,Ho disponibilità di 4 posti l,40.4078328,17.2453728,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""20/01/2017"", ""descrizione"": ""Ho disponibilit\u00e0 di 4 posti letto a Lama prov taranto Puglia"", ""email"": ""francesca.bungaro@gmail.com"", ""immagine"": """", ""indirizzo"": ""Via Girasoli, Taranto, TA, Puglia, 74122, Italia"", ""lat"": ""40.4078328"", ""link"": """", ""lon"": ""17.2453728"", ""tel"": ""3930552149""}","<pre><yamldata>tel: '3930552149'
+email: francesca.bungaro@gmail.com
+descrizione: 'Ho disponibilità di 4 posti letto a Lama prov taranto Puglia'
+indirizzo: 'Via Girasoli, Taranto, TA, Puglia, 74122, Italia'
+lat: '40.4078328'
+lon: '17.2453728'
+link: ''
+immagine: ''
+data: 20/01/2017
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2083,202182379,2017-01-20 20:01:52,2017-01-20 16:25:23,Disponibilità di 4 posti letto a Taranto,,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""20/01/2017"", ""descrizione"": ""Ho disponibilit\u00e0 di 4 posti letto sono a taranto attendo una risposta grazie"", ""email"": ""francesca.bungaro@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3930552149""}","<pre><yamldata>tel: '3930552149'
 email: francesca.bungaro@gmail.com
 descrizione: 'Ho disponibilità di 4 posti letto sono a taranto attendo una risposta grazie'
 indirizzo: ''
@@ -8,8 +28,8 @@ lon: ''
 link: ''
 immagine: ''
 data: 20/01/2017
-</yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2082,202181788,2017-01-20 19:58:52,2017-01-20 16:23:04,"Ospitalità per qualche mese, per una famiglia (2-3 max 4 persone) a Perugia",,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""20/01/2017"", ""descrizione"": ""Ho la possibilit\u00e0 di ospitare per qualche mese, una famiglia (2-3 max 4 persone) in appartamento, a Perugia, di circa 60 mq con camera matrimoniale e soggiorno con divano letto....non \u00e8 molto ma \u00e8 quello che posso mettere a disposizione....almeno per fronteggiare questo periodo di alta criticit\u00e0."", ""email"": ""claudiamoncada@libero.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3282635126""}","<pre><yamldata>tel: '3282635126'
+</yamldata></pre>",closed
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2082,202181788,2017-01-20 20:01:21,2017-01-20 16:23:04,"Ospitalità per qualche mese, per una famiglia (2-3 max 4 persone) a Perugia",,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""20/01/2017"", ""descrizione"": ""Ho la possibilit\u00e0 di ospitare per qualche mese, una famiglia (2-3 max 4 persone) in appartamento, a Perugia, di circa 60 mq con camera matrimoniale e soggiorno con divano letto....non \u00e8 molto ma \u00e8 quello che posso mettere a disposizione....almeno per fronteggiare questo periodo di alta criticit\u00e0."", ""email"": ""claudiamoncada@libero.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3282635126""}","<pre><yamldata>tel: '3282635126'
 email: claudiamoncada@libero.it
 descrizione: 'Ho la possibilità di ospitare per qualche mese, una famiglia (2-3 max 4 persone) in appartamento, a Perugia, di circa 60 mq con camera matrimoniale e soggiorno con divano letto....non è molto ma è quello che posso mettere a disposizione....almeno per fronteggiare questo periodo di alta criticità.'
 indirizzo: ''
@@ -876,6 +896,17 @@ data: 20/01/2017
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1988,202067112,2017-01-20 17:25:06,2017-01-20 06:58:33,Offro camera in appartamento a Torino,,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""20/01/2017"", ""descrizione"": ""Offro la disponibilit\u00e0 di una camera da letto con letto matrimoniale e un lettino. L'appartamento si trova a Torino e ci vivo da sola."", ""email"": ""aga.leanza@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3284095075""}","<pre><yamldata>tel: '3284095075'
 email: aga.leanza@gmail.com
 descrizione: 'Offro la disponibilità di una camera da letto con letto matrimoniale e un lettino. L''appartamento si trova a Torino e ci vivo da sola.'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 20/01/2017
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1987,202063100,2017-01-20 08:59:20,2017-01-20 06:31:41,Offro vitto e alloggio a famiglia con animali da cortile e allevamento in provincia di Vicenza,,,"[""Accettato"", ""Alloggi"", ""Form"", ""Ospitalita animali"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""Vitto e alloggio per famiglia"", ""data"": ""20/01/2017"", ""descrizione"": ""Offro ospitalita' a famiglia presso mia abitazione. Possibilita' di ospitare anche animali da cortile e allevamento. Dueville (VI)"", ""email"": ""paolo.tognato@kypa.eu"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3482203374""}","<pre><yamldata>tel: '3482203374'
+email: paolo.tognato@kypa.eu
+cosa: 'Vitto e alloggio per famiglia'
+descrizione: 'Offro ospitalita'' a famiglia presso mia abitazione. Possibilita'' di ospitare anche animali da cortile e allevamento. Dueville (VI)'
 indirizzo: ''
 lat: ''
 lon: ''
