@@ -4,7 +4,7 @@ title: Mappa dei centri d'accoglienza dai Comuni dell'Aquila e di Rieti
 categories: blog
 ---
 
-Mappa dei centri d'accoglienza segnalati dai Comune dell'Aquilae di Rieti aggiornati al 18 Gennaio 2017.
+Mappa dei centri d'accoglienza segnalati dai Comune dell'Aquila e di Rieti aggiornati al 18 Gennaio 2017.
 Cliccare sulle icone per avere più informazioni.
 
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.0/dist/leaflet.css" />
