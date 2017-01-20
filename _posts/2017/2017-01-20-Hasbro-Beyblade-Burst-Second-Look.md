@@ -44,4 +44,4 @@ Beyblade Burst is finally showing up on store shelves in the US allowing fans in
 ![Beyblade Burst Nepstrius Parts](/images/beybladeburst/nepparts.jpg)
 ![Beyblade Burst Nepstrius](/images/beybladeburst/nep.jpg)
 ![Beyblade Burst Roktavor Parts](/images/beybladeburst/rokparts.jpg)
-![Beyblade Burst Roktavor](/images/beybladeburst/rock.jpg)
+![Beyblade Burst Roktavor](/images/beybladeburst/rok.jpg)
