@@ -874,6 +874,37 @@ link: ''
 immagine: ''
 data: 20/01/2017
 </yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1986,202062830,2017-01-20 17:26:36,2017-01-20 06:30:01,"Condividiamo la nostra casa con chi ha bisogno, prov. Treviso",,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""alloggio"", ""data"": ""20/01/2017"", ""descrizione"": ""Condividiamo la nostra casa con chi ne avesse bisogno. Siamo in provincia di Treviso."", ""email"": ""chiara.pazzaia@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3404960668""}","<pre><yamldata>tel: '3404960668'
+email: chiara.pazzaia@gmail.com
+cosa: alloggio
+descrizione: 'Condividiamo la nostra casa con chi ne avesse bisogno. Siamo in provincia di Treviso.'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 20/01/2017
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1985,202062637,2017-01-20 17:27:35,2017-01-20 06:28:56,Offro appartamento autonomo in provincia di Varese,45.9989084,8.739907,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""20/01/2017"", ""descrizione"": ""Offro appartamento autonomo in provincia di varese per famiglia bisognosa vittima del sisma. Siete i benvenuti"", ""email"": ""luca.e.baglioni@gmail.com"", ""immagine"": """", ""indirizzo"": ""Via del Carmine, Luino, Comunit\u00e0 Montana Valli del Verbano, Varese, Lombardia, 21016, Italia"", ""lat"": ""45.9989084"", ""link"": """", ""lon"": ""8.739907"", ""tel"": ""3337782490""}","<pre><yamldata>tel: '3337782490'
+email: luca.e.baglioni@gmail.com
+descrizione: 'Offro appartamento autonomo in provincia di varese per famiglia bisognosa vittima del sisma. Siete i benvenuti'
+indirizzo: 'Via del Carmine, Luino, Comunità Montana Valli del Verbano, Varese, Lombardia, 21016, Italia'
+lat: '45.9989084'
+lon: '8.739907'
+link: ''
+immagine: ''
+data: 20/01/2017
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1984,202061798,2017-01-20 17:28:35,2017-01-20 06:23:34,Siamo una famiglia con due bambini e possiamo ospitare due persone a Roma,,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""20/01/2017"", ""descrizione"": ""Siamo una famiglia con due bambini, possiamo ospitare, nel nostro appartamento massimo tre persone a Roma"", ""email"": ""faby.faby75@gmai.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3474254144""}","<pre><yamldata>tel: '3474254144'
+email: faby.faby75@gmai.com
+descrizione: 'Siamo una famiglia con due bambini, possiamo ospitare, nel nostro appartamento massimo tre persone a Roma'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 20/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1983,202059776,2017-01-20 12:57:10,2017-01-20 06:10:25,Offro una mansarda per due/tre #Bergamo,45.6945115,9.669839,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""20/01/2017"", ""descrizione"": ""Offro una mansarda per due/tre persone con bagno a chi ne ha davvero bisogno (zone colpite dal sisma/neve). Econome io ci sono per un pasto caldo \u00e8 un po' di calore. Niente di pi\u00f9 .Ricambio un po' di amore che mi \u00e8 stato dato quando avevo bisogno io. Non voglio niente in cambio, solo aiutare chi ha bisogno. Sono a Bergamo."", ""email"": ""valentinabotta@hotmail.it"", ""immagine"": """", ""indirizzo"": ""Piazza Giacomo Matteotti, Malpensata, Bergamo, Lombardia, 24122, Italia"", ""lat"": ""45.6945115"", ""link"": """", ""lon"": ""9.669839"", ""tel"": ""3451752976""}","<pre><yamldata>tel: '3451752976'
 email: valentinabotta@hotmail.it
 descrizione: 'Offro una mansarda per due/tre persone con bagno a chi ne ha davvero bisogno (zone colpite dal sisma/neve). Econome io ci sono per un pasto caldo è un po'' di calore. Niente di più .Ricambio un po'' di amore che mi è stato dato quando avevo bisogno io. Non voglio niente in cambio, solo aiutare chi ha bisogno. Sono a Bergamo.'
@@ -1546,7 +1577,7 @@ link: ''
 immagine: 'http://i.imgur.com/1udKYam.jpg'
 data: 19/01/2017
 </yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1901,201904710,2017-01-20 09:31:15,2017-01-19 16:15:44,Si mette a disposizione due posti per cani a Montegranaro (Fm),43.2325226,13.6315802,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""19/01/2017"", ""descrizione"": ""Si mette a disposizione due posti per cani in un allevamento a montegranaro (FM)."", ""email"": ""silviagirotti@hotmail.it"", ""immagine"": """", ""indirizzo"": ""Strada Provinciale SP30 Fermana, Montegranaro, FM, Marche, 63812, Italia"", ""lat"": ""43.2325226"", ""link"": ""www.terremotocentroitalia.info"", ""lon"": ""13.6315802"", ""tel"": ""3397377884""}","<pre><yamldata>tel: '3397377884'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1901,201904710,2017-01-20 17:29:45,2017-01-19 16:15:44,Si mette a disposizione due posti per cani a Montegranaro (Fm),43.2325226,13.6315802,"[""Accettato"", ""Form"", ""Ospitalita animali"", ""Sisma Gennaio 2017""]",,,"{""data"": ""19/01/2017"", ""descrizione"": ""Si mette a disposizione due posti per cani in un allevamento a montegranaro (FM)."", ""email"": ""silviagirotti@hotmail.it"", ""immagine"": """", ""indirizzo"": ""Strada Provinciale SP30 Fermana, Montegranaro, FM, Marche, 63812, Italia"", ""lat"": ""43.2325226"", ""link"": ""www.terremotocentroitalia.info"", ""lon"": ""13.6315802"", ""tel"": ""3397377884""}","<pre><yamldata>tel: '3397377884'
 email: silviagirotti@hotmail.it
 descrizione: 'Si mette a disposizione due posti per cani in un allevamento a montegranaro (FM).'
 indirizzo: 'Strada Provinciale SP30 Fermana, Montegranaro, FM, Marche, 63812, Italia'
@@ -13090,18 +13121,6 @@ email: ''
 data: 14/09/2016
 </yamldata></pre>
 ",closed
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/243,176848996,2016-09-14 08:47:45,2016-09-14 08:44:03,Associazione Docenti Senza Frontiere,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": ""Contributo Terremoto Italia"", ""chi"": ""Associazione Docenti Senza Frontiere"", ""data"": ""14/09/2016"", ""descrizione"": ""E' attivo conto corrente per una raccolta fondi immediata destinata alla ricostruzione di edifici scolastici, per aiutare, gli alunni, i Dirigenti Scolastici e gli insegnanti nella ricostruzione della comunit\u00e0 scolastica e al ripristino veloce delle condizioni di normalit\u00e0."", ""email"": """", ""iban"": ""IT46T0501812101000000175233"", ""intestazione"": ""Docenti Senza Frontiere"", ""link"": ""http://www.docentisenzafrontiere.org/it/sostienici/speciale-emergenze/terremoto.html"", ""postale"": """"}","<pre><yamldata>chi: 'Associazione Docenti Senza Frontiere'
-descrizione: 'E'' attivo conto corrente per una raccolta fondi immediata destinata alla ricostruzione di edifici scolastici, per aiutare, gli alunni, i Dirigenti Scolastici e gli insegnanti nella ricostruzione della comunità scolastica e al ripristino veloce delle condizioni di normalità.'
-intestazione: 'Docenti Senza Frontiere'
-iban: IT46T0501812101000000175233
-bic: ''
-postale: ''
-causale: 'Contributo Terremoto Italia'
-link: 'http://www.docentisenzafrontiere.org/it/sostienici/speciale-emergenze/terremoto.html'
-email: ''
-data: 14/09/2016
-</yamldata></pre>
-",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/243,176848996,2016-09-14 08:47:45,2016-09-14 08:44:03,Associazione Docenti Senza Frontiere,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": ""Contributo Terremoto Italia"", ""chi"": ""Associazione Docenti Senza Frontiere"", ""data"": ""14/09/2016"", ""descrizione"": ""E' attivo conto corrente per una raccolta fondi immediata destinata alla ricostruzione di edifici scolastici, per aiutare, gli alunni, i Dirigenti Scolastici e gli insegnanti nella ricostruzione della comunit\u00e0 scolastica e al ripristino veloce delle condizioni di normalit\u00e0."", ""email"": """", ""iban"": ""IT46T0501812101000000175233"", ""intestazione"": ""Docenti Senza Frontiere"", ""link"": ""http://www.docentisenzafrontiere.org/it/sostienici/speciale-emergenze/terremoto.html"", ""postale"": """"}","<pre><yamldata>chi: 'Associazione Docenti Senza Frontiere'
 descrizione: 'E'' attivo conto corrente per una raccolta fondi immediata destinata alla ricostruzione di edifici scolastici, per aiutare, gli alunni, i Dirigenti Scolastici e gli insegnanti nella ricostruzione della comunità scolastica e al ripristino veloce delle condizioni di normalità.'
 intestazione: 'Docenti Senza Frontiere'
