@@ -1,4 +1,26 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2081,202178667,2017-01-20 16:16:50,2017-01-20 16:10:26,Coperte e generi conforto,,,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""Coperte e generi conforto"", ""data"": ""20/01/2017"", ""descrizione"": ""Coperte abbigliamento pesante generi conforto"", ""email"": ""radda.llpp@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""336705586""}","<pre><yamldata>tel: '336705586'
+email: radda.llpp@gmail.com
+cosa: 'Coperte e generi conforto'
+descrizione: 'Coperte abbigliamento pesante generi conforto'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 20/01/2017
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2080,202174862,2017-01-20 16:16:30,2017-01-20 15:56:12,Materiale vario uso campeggio,45.7389861675298,9.720797538757324,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""Stoviglie e varie uso campeggio"", ""data"": ""20/01/2017"", ""descrizione"": ""Ho a disposizione delle padelle, bicchieri, attrezzature da campeggio varie (2/3 tende, sacchi a pelo, tavolino con sedie, materassini, fornelletto a gas etc.) da mettere a disposizione a bisognosi delle zone colpite da sisma.Ideale ritiro da parte di associazioni che lavorano sul campo."", ""email"": ""diegodona@libero.it"", ""immagine"": """", ""indirizzo"": ""Al Vecchio Tagliere, Via Guglielmo Marconi, Brumano, Alzano Lombardo, Bergamo, Lombardia, 24022, Italia"", ""lat"": ""45.7389861675298"", ""link"": """", ""lon"": ""9.720797538757324"", ""tel"": ""3395456888""}","<pre><yamldata>tel: '3395456888'
+email: diegodona@libero.it
+cosa: 'Stoviglie e varie uso campeggio'
+descrizione: 'Ho a disposizione delle padelle, bicchieri, attrezzature da campeggio varie (2/3 tende, sacchi a pelo, tavolino con sedie, materassini, fornelletto a gas etc.) da mettere a disposizione a bisognosi delle zone colpite da sisma.Ideale ritiro da parte di associazioni che lavorano sul campo.'
+indirizzo: 'Al Vecchio Tagliere, Via Guglielmo Marconi, Brumano, Alzano Lombardo, Bergamo, Lombardia, 24022, Italia'
+lat: '45.7389861675298'
+lon: '9.720797538757324'
+link: ''
+immagine: ''
+data: 20/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2079,202171490,2017-01-20 15:45:29,2017-01-20 15:43:13,Offro posto letto a Lecce,,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""20/01/2017"", ""descrizione"": ""A seguito delle difficili condizioni climatiche che interessano le zone terremotate, voglio offrire ovviamente gratuitamente la disponibilit\u00e0 di un posto letto nella mia casa a lecce a chiunque ne avesse bisogno. Resto a vostra disposizione!"", ""email"": ""giulianodm80@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3203315466""}","<pre><yamldata>tel: '3203315466'
 email: giulianodm80@gmail.com
 descrizione: 'A seguito delle difficili condizioni climatiche che interessano le zone terremotate, voglio offrire ovviamente gratuitamente la disponibilità di un posto letto nella mia casa a lecce a chiunque ne avesse bisogno. Resto a vostra disposizione!'
@@ -10385,6 +10407,17 @@ descrizione: 'Laura offre casa (6 posti letto)'
 indirizzo: 'Via di Villa, Case Grandiana, Vicopisano, PI, Tuscany, 56021, Italia'
 lat: '43.6873261'
 lon: '10.5462333'
+link: ''
+immagine: ''
+data: 16/09/2016
+</yamldata></pre>
+",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/518,177466265,2016-09-22 15:56:45,2016-09-16 16:23:41,"Predappio, FC - Agri-campeggio ""La Banditina""",44.0662019,11.9700003,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""16/09/2016"", ""descrizione"": ""AGRICAMPEGGIO \""LA BANDITINA\"" offre sistemazioni momentanee per 10 persone."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Via San Francesco d'Assisi, Sambuche, Predappio, FC, Emilia-Romagna, Italia"", ""lat"": ""44.0662019"", ""link"": """", ""lon"": ""11.9700003"", ""tel"": ""3477534680""}","<pre><yamldata>tel: '3477534680'
+email: ''
+descrizione: 'AGRICAMPEGGIO ""LA BANDITINA"" offre sistemazioni momentanee per 10 persone.'
+indirizzo: 'Via San Francesco d''Assisi, Sambuche, Predappio, FC, Emilia-Romagna, Italia'
+lat: '44.0662019'
+lon: '11.9700003'
 link: ''
 immagine: ''
 data: 16/09/2016
