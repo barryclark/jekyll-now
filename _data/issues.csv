@@ -2703,7 +2703,7 @@ descrizione: 'Aggiornamento dell''associazione Chiedi alla polvere. Situazione a
 link: 'https://www.facebook.com/centroItaliaterremoto/posts/593214754199457'
 data: 18/01/2017
 </yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1676,201715297,2017-01-18 23:16:59,2017-01-18 22:50:11,Nelle frazioni di #Amandola servono Gruppi Elettrogeni,42.979965,13.3560847,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""Diversi Gruppi Elettrogeni"", ""data"": ""18/01/2017"", ""descrizione"": ""Abbiamo bisogno di gruppi elettrogeni per le frazioni del comune di Amandola che sono senza corrente da alcuni giorni. Grazie mille"", ""email"": ""sindaco.amandola@gmail.com"", ""immagine"": """", ""indirizzo"": ""SP239, Amandola, FM, Marche, 63857, Italia"", ""lat"": ""42.979965"", ""link"": ""http://www.comune.amandola.fm.it"", ""lon"": ""13.3560847"", ""tel"": ""331.6293213""}","<pre><yamldata>tel: '331.6293213'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1676,201715297,2017-01-20 22:32:26,2017-01-18 22:50:11,Nelle frazioni di #Amandola servono Gruppi Elettrogeni,42.979965,13.3560847,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""OK"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""Diversi Gruppi Elettrogeni"", ""data"": ""18/01/2017"", ""descrizione"": ""Abbiamo bisogno di gruppi elettrogeni per le frazioni del comune di Amandola che sono senza corrente da alcuni giorni. Grazie mille"", ""email"": ""sindaco.amandola@gmail.com"", ""immagine"": """", ""indirizzo"": ""SP239, Amandola, FM, Marche, 63857, Italia"", ""lat"": ""42.979965"", ""link"": ""http://www.comune.amandola.fm.it"", ""lon"": ""13.3560847"", ""tel"": ""331.6293213""}","<pre><yamldata>tel: '331.6293213'
 email: sindaco.amandola@gmail.com
 cosa: 'Diversi Gruppi Elettrogeni'
 descrizione: 'Abbiamo bisogno di gruppi elettrogeni per le frazioni del comune di Amandola che sono senza corrente da alcuni giorni. Grazie mille'
@@ -2713,7 +2713,7 @@ lon: '13.3560847'
 link: 'http://www.comune.amandola.fm.it'
 immagine: ''
 data: 18/01/2017
-</yamldata></pre>",open
+</yamldata></pre>",closed
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1670,201708876,2017-01-18 22:28:22,2017-01-18 22:19:57,Waze segnala i punti di emergenza e le strade chiuse causa neve e terremoto,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili"", ""Sisma Gennaio 2017""]",,,"{""data"": ""18/01/2017"", ""descrizione"": ""Nuove scosse di terremoto: Waze segnala i punti di emergenza e le strade chiuse. Dopo le ultime scosse di terremoto di oggi 18 gennaio 2017, per chi utilizza Waze sono attivi gi\u00e0 a partire da questa sera, dei PINS, dedicati ai \u201cPunti d\u2019emergenza\u201d dove \u00e8 possibile rivolgersi per avere assistenza e alloggio."", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1830614703872779/"", ""titolo"": ""Nuove scosse di terremoto: Waze segnala i punti di emergenza e le strade chiuse.""}","<pre><yamldata>titolo: 'Nuove scosse di terremoto: Waze segnala i punti di emergenza e le strade chiuse.'
 descrizione: 'Nuove scosse di terremoto: Waze segnala i punti di emergenza e le strade chiuse. Dopo le ultime scosse di terremoto di oggi 18 gennaio 2017, per chi utilizza Waze sono attivi già a partire da questa sera, dei PINS, dedicati ai “Punti d’emergenza” dove è possibile rivolgersi per avere assistenza e alloggio.'
 link: 'https://www.facebook.com/groups/1758670357733881/permalink/1830614703872779/'
