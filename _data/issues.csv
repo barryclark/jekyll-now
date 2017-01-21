@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2138,202308776,2017-01-21 11:04:08,2017-01-21 10:56:40,Centro Equestre a Rocca di Papa offre aiuto agli allevatori in difficoltà,41.7454282,12.7805838,"[""Accettato"", ""Bollettino"", ""Form"", ""Ospitalita animali"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""Centro Equestre a Rocca di Papa offre aiuto agli allevatori in difficolt\u00e0"", ""data"": ""21/01/2017"", ""descrizione"": ""Il Centro Equestre Ranieri di Campello si mette a disposizione delle Associazioni volte ad aiutare gli allevatori in difficolt\u00e0 delle zone colpite dai recenti eventi sismici e climatici."", ""email"": ""ranieridicampello@gmail.com"", ""immagine"": """", ""indirizzo"": ""Strada del Vivaro, Rocca di Papa, RM, LAZ, Italia"", ""lat"": ""41.7454282"", ""link"": ""https://www.facebook.com/centroequestreranieridicampello/posts/381831005513478"", ""lon"": ""12.7805838"", ""tel"": """"}","<pre><yamldata>tel: ''
+email: ranieridicampello@gmail.com
+cosa: 'Centro Equestre a Rocca di Papa offre aiuto agli allevatori in difficoltà'
+descrizione: 'Il Centro Equestre Ranieri di Campello si mette a disposizione delle Associazioni volte ad aiutare gli allevatori in difficoltà delle zone colpite dai recenti eventi sismici e climatici.'
+indirizzo: 'Strada del Vivaro, Rocca di Papa, RM, LAZ, Italia'
+lat: '41.7454282'
+lon: '12.7805838'
+link: 'https://www.facebook.com/centroequestreranieridicampello/posts/381831005513478'
+immagine: ''
+data: 21/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2131,202300308,2017-01-21 07:43:33,2017-01-21 07:42:29,Ospitalità animali in provincia di Foggia,,,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Facebook"", ""Ospitalita animali"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""Ospitalit\u00e0 animali in provincia di Foggia"", ""data"": ""21/01/2017"", ""descrizione"": ""Buongiorno a tutti cari amici Offro la disponibilit\u00e0 della mia azienda agricola X gli animali ma anche abitazioni che abbiamo vuote nella mia zona tra Biccari, Alberona e Lucera in provincia di Foggia, o qualsiasi altro aiuto nelle mie possibilit\u00e0! L'importante che possiamo aiutare in qualche maniera. Contattatemi pure al 3475447622"", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1831403520460564/"", ""lon"": """", ""tel"": ""3475447622""}","<pre><yamldata>tel: '3475447622'
 email: ''
 cosa: 'Ospitalità animali in provincia di Foggia'
@@ -6015,6 +6026,17 @@ link: 'https://www.facebook.com/groups/1758670357733881/permalink/17975121405163
 immagine: ''
 data: 10/11/2016
 </yamldata></pre>",closed
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1211,188600742,2016-11-10 20:49:40,2016-11-10 19:46:30,COMUNE DI #NORCIA: IBAN PER DONAZIONI,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Raccolte Fondi"", ""Sisma Ottobre""]",,,"{""bic"": ""CRSPIT31010"", ""causale"": ""Emergenza Sisma"", ""chi"": ""COMUNE DI #NORCIA: IBAN PER DONAZIONI"", ""data"": ""10/11/2016"", ""descrizione"": ""Per effettuare donazioni al Comune di Norcia"", ""email"": """", ""iban"": ""IT48 M063 1538 5801 0000 0300 005"", ""intestazione"": """", ""link"": ""http://www.comune.norcia.pg.it/2016/11/07/emergenza-sisma-iban-per-donazioni/"", ""postale"": """"}","<pre><yamldata>chi: 'COMUNE DI #NORCIA: IBAN PER DONAZIONI'
+descrizione: 'Per effettuare donazioni al Comune di Norcia'
+intestazione: ''
+iban: 'IT48 M063 1538 5801 0000 0300 005'
+bic: CRSPIT31010
+postale: ''
+causale: 'Emergenza Sisma'
+link: 'http://www.comune.norcia.pg.it/2016/11/07/emergenza-sisma-iban-per-donazioni/'
+email: ''
+data: 10/11/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1211,188600742,2016-11-10 20:49:40,2016-11-10 19:46:30,COMUNE DI #NORCIA: IBAN PER DONAZIONI,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Raccolte Fondi"", ""Sisma Ottobre""]",,,"{""bic"": ""CRSPIT31010"", ""causale"": ""Emergenza Sisma"", ""chi"": ""COMUNE DI #NORCIA: IBAN PER DONAZIONI"", ""data"": ""10/11/2016"", ""descrizione"": ""Per effettuare donazioni al Comune di Norcia"", ""email"": """", ""iban"": ""IT48 M063 1538 5801 0000 0300 005"", ""intestazione"": """", ""link"": ""http://www.comune.norcia.pg.it/2016/11/07/emergenza-sisma-iban-per-donazioni/"", ""postale"": """"}","<pre><yamldata>chi: 'COMUNE DI #NORCIA: IBAN PER DONAZIONI'
 descrizione: 'Per effettuare donazioni al Comune di Norcia'
 intestazione: ''
