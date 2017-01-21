@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2146,202313723,2017-01-21 12:45:02,2017-01-21 12:44:12,"Riparo agli animali terremotati - Cavalli, asini e capre",43.3938308,11.7875457,"[""Accettato"", ""Donazioni"", ""Form"", ""Ospitalita animali""]",,,"{""cosa"": ""Riparo agli animali terremotati - Cavalli, asini e capre"", ""data"": ""21/01/2017"", ""descrizione"": ""Roberta Casalati apre le porte del maneggio che si trova a Tegoleto agli animali delle zone terremotate."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Strada Statale 73 Senese Aretina, Civitella in Val di Chiana, AR, Tuscany, 52041, Italia"", ""lat"": ""43.3938308"", ""link"": ""https://www.facebook.com/roberta.casalati/posts/10208363089659451?pnref=story"", ""lon"": ""11.7875457"", ""tel"": ""3381665229""}","<pre><yamldata>tel: '3381665229'
+email: ''
+cosa: 'Riparo agli animali terremotati - Cavalli, asini e capre'
+descrizione: 'Roberta Casalati apre le porte del maneggio che si trova a Tegoleto agli animali delle zone terremotate.'
+indirizzo: 'Strada Statale 73 Senese Aretina, Civitella in Val di Chiana, AR, Tuscany, 52041, Italia'
+lat: '43.3938308'
+lon: '11.7875457'
+link: 'https://www.facebook.com/roberta.casalati/posts/10208363089659451?pnref=story'
+immagine: ''
+data: 21/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2145,202311100,2017-01-21 11:50:25,2017-01-21 11:47:27,"Sos cavalli, Cavallo Magazine aiuta a trovare stalli",,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili"", ""Ospitalita animali"", ""Sisma Gennaio 2017""]",,,"{""data"": ""21/01/2017"", ""descrizione"": ""Cavallo Magazine ha a disposizione un 'elenco con i dati di chi offre stalli e ospitalit\u00e0 ai cavalli delle zone terremotate o sotto emergenza neve. Chi avesse necessit\u00e0 pu\u00f2 scrivere a mcmagri@gmail.com o inviare un messaggio privato sulla pagina Facebook di Cavallo Magazine."", ""link"": ""http://www.cavallomagazine.it/terremoto-sos-cavalli-stalli-a-disposizione-1.2834797?wt_mc=twitteruser"", ""titolo"": ""Sos cavalli, Cavallo Magazine aiuta gli allevatori a trovare stalli""}","<pre><yamldata>titolo: 'Sos cavalli, Cavallo Magazine aiuta gli allevatori a trovare stalli'
 descrizione: 'Cavallo Magazine ha a disposizione un ''elenco con i dati di chi offre stalli e ospitalità ai cavalli delle zone terremotate o sotto emergenza neve. Chi avesse necessità può scrivere a mcmagri@gmail.com o inviare un messaggio privato sulla pagina Facebook di Cavallo Magazine.'
 link: 'http://www.cavallomagazine.it/terremoto-sos-cavalli-stalli-a-disposizione-1.2834797?wt_mc=twitteruser'
