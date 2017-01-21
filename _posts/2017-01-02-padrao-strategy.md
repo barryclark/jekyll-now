@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Revisando Padrões com Java 8: O Padrão Strategy"
 permalink: "/2017/01/revisando-padroes-java-8-o-padrao-strategy.html"
 categories: [java, padroes, desing, comportamental]

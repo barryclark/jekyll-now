@@ -11,11 +11,6 @@ description: Pai, analista e desenvolvedor de software.
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://raw.githubusercontent.com/ivanqueiroz/ivanqueiroz.github.io/master/images/avatar.jpg
 
-#
-# Flags below are optional
-#
-paginate: 5
-
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
@@ -54,16 +49,20 @@ baseurl: ""
 #
 # !! You don't need to change any of the configuration flags below !!
 #
-
-markdown: kramdown
-kramdown:
-  input: GFM
-highlighter: rouge
-line_numbers: true
 permalink: /:title/
 
 # The release of Jekyll Now that you're using
-version: v3.3.1
+version: v1.2.0
+
+# Jekyll 3 now only supports Kramdown for Markdown
+kramdown:
+  # Use GitHub flavored markdown, including triple backtick fenced code blocks
+  input: GFM
+  # Jekyll 3 and GitHub Pages now only support rouge for syntax highlighting
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    # Use existing pygments syntax highlighting css
+    css_class: 'highlight'
 
 # Set the Sass partials directory, as we're using @imports
 sass:
@@ -72,7 +71,7 @@ sass:
 # Use the following plug-ins
 gems:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
-  - jekyll-paginate
+  - jekyll-feed
 
 # Exclude these files from your production _site
 exclude:
@@ -81,3 +80,10 @@ exclude:
     - LICENSE
     - README.md
     - CNAME
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "post"

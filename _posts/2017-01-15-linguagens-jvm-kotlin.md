@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Linguagens da JVM: Kotlin"
 permalink: "/2017/01/linguagens-jvm-kotlin.html"
 categories: [java, linguagem, plataforma, ferramentas, kotlin]
