@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2153,202315212,2017-01-21 13:21:22,2017-01-21 13:20:39,Stallo per animali da pascolo,43.411159,13.438376,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Form"", ""Notizie Utili"", ""Ospitalita animali""]",,,"{""cosa"": ""Stallo per animali da pascolo"", ""data"": ""21/01/2017"", ""descrizione"": ""L'azienda agricola \""Selva Leona\"" di Roberto Pignataro offre stallo per animali da pascolo. Luogo caldo e riparato. Totalmente recintato ed all'interno diviso in altri recinti."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Via Montefanese, Montefano, MC, Marche, Italia"", ""lat"": ""43.411159"", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1832107173723532/"", ""lon"": ""13.438376"", ""tel"": ""3487649823""}","<pre><yamldata>tel: '3487649823'
+email: ''
+cosa: 'Stallo per animali da pascolo'
+descrizione: 'L''azienda agricola ""Selva Leona"" di Roberto Pignataro offre stallo per animali da pascolo. Luogo caldo e riparato. Totalmente recintato ed all''interno diviso in altri recinti.'
+indirizzo: 'Via Montefanese, Montefano, MC, Marche, Italia'
+lat: '43.411159'
+lon: '13.438376'
+link: 'https://www.facebook.com/groups/1758670357733881/permalink/1832107173723532/'
+immagine: ''
+data: 21/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2152,202314884,2017-01-21 13:14:45,2017-01-21 13:12:51,Acquasanta Terme scuole chiuse anche 23 e 24 genn,,,"[""Accettato"", ""Bollettino"", ""Notizie Utili"", ""Sisma Gennaio 2017""]",,,{},"<pre><yamldata>titolo: 'Acquasanta Terme scuole chiuse anche 23 e 24 genn'
 descrizione: '*** SERVIZI SCOLASTICI *** Si rende noto che le attività scolastiche saranno sospese anche nei giorni di LUNEDÌ 23 e MARTEDÌ 24' Dalla pagina facebook del comune di Acquasanta 
 link: 'https://www.facebook.com/paginaufficialedelcomunediacquasantaterme/posts/1263361773757258'
