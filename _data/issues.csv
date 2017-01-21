@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2150,202314393,2017-01-21 13:02:06,2017-01-21 13:01:27,"Stallo per Asini, cani e animali in genere",43.9336213,10.9174238,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Form"", ""Notizie Utili"", ""Ospitalita animali""]",,,"{""cosa"": ""Stallo per Asini, cani e animali in genere"", ""data"": ""21/01/2017"", ""descrizione"": ""Possibilit\u00e0 di ospitare cani, ma, anche animali di grossa taglia."", ""email"": ""elenaboldrini@hotmail.it"", ""immagine"": """", ""indirizzo"": ""Piazza del Duomo, Case Bergamo, Pistoia, PT, Tuscany, 2, Italia"", ""lat"": ""43.9336213"", ""link"": ""https://www.facebook.com/elena.boldrini.353/posts/368105326896123"", ""lon"": ""10.9174238"", ""tel"": """"}","<pre><yamldata>tel: ''
+email: elenaboldrini@hotmail.it
+cosa: 'Stallo per Asini, cani e animali in genere'
+descrizione: 'Possibilità di ospitare cani, ma, anche animali di grossa taglia.'
+indirizzo: 'Piazza del Duomo, Case Bergamo, Pistoia, PT, Tuscany, 2, Italia'
+lat: '43.9336213'
+lon: '10.9174238'
+link: 'https://www.facebook.com/elena.boldrini.353/posts/368105326896123'
+immagine: ''
+data: 21/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2146,202313723,2017-01-21 12:45:24,2017-01-21 12:44:12,"Riparo agli animali terremotati - Cavalli, asini e capre",43.3938308,11.7875457,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Form"", ""Notizie Utili"", ""Ospitalita animali""]",,,"{""cosa"": ""Riparo agli animali terremotati - Cavalli, asini e capre"", ""data"": ""21/01/2017"", ""descrizione"": ""Roberta Casalati apre le porte del maneggio che si trova a Tegoleto agli animali delle zone terremotate."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Strada Statale 73 Senese Aretina, Civitella in Val di Chiana, AR, Tuscany, 52041, Italia"", ""lat"": ""43.3938308"", ""link"": ""https://www.facebook.com/roberta.casalati/posts/10208363089659451?pnref=story"", ""lon"": ""11.7875457"", ""tel"": ""3381665229""}","<pre><yamldata>tel: '3381665229'
 email: ''
 cosa: 'Riparo agli animali terremotati - Cavalli, asini e capre'
