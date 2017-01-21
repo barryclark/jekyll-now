@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Struts2 Introduction
+title: Struts2 Action
 permalink: /blog/java-platform/java-ee/struts2/struts2-action
 summary: Merhaba arkadaşlar, bu yazımızda Struts2 içerisidneki Action'lara giriş yapacağız.
 image: /images/java-platform/java-ee/struts2/Struts2-Architecture.png
