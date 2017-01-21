@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2154,202318800,2017-01-21 14:35:43,2017-01-21 14:34:44,Servizio telefonico Istit Zooprofilattico Abruzzo e Molise (animali da reddito e compagnia),,,"[""Accettato"", ""Bollettino"", ""Contatti"", ""Donazioni"", ""Form"", ""Notizie Utili"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""Servizio telefonico Istit Zooprofilattico Abruzzo e Molise (animali da reddito e compagnia)"", ""data"": ""21/01/2017"", ""descrizione"": ""L\u2019Istituto Zooprofilattico Sperimentale dell\u2019Abruzzo e del Molise (IZSAM) G. Caporale ha attivato, d\u2019intesa con la Prefettura di Teramo, un servizio telefonico per raccogliere segnalazioni in merito alle emergenze e alle criticit\u00e0 insorte a carico di allevamenti o relative ad animali da compagnia, a cui rivolgersi anche per comunicare la scomparsa o il ritrovamento di animali. Il servizio risponde al numero 800082280 da rete fissa, 0861 332500 da rete mobile, tutti i giorni incluso i festivi, dalle 8 alle 20. A disposizione anche l\u2019indirizzo di posta elettronica iuvene@izs.it per l\u2019invio di informazioni e materiale fotografico a supporto delle segnalazioni."", ""email"": ""iuvene@izs.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""https://www.facebook.com/provinciateramo/posts/1545154838835817"", ""lon"": """", ""tel"": ""800082280 da rete fissa, 0861 332500 da rete mobile""}","<pre><yamldata>tel: '800082280 da rete fissa, 0861 332500 da rete mobile'
+email: iuvene@izs.it
+cosa: 'Servizio telefonico Istit Zooprofilattico Abruzzo e Molise (animali da reddito e compagnia)'
+descrizione: 'L’Istituto Zooprofilattico Sperimentale dell’Abruzzo e del Molise (IZSAM) G. Caporale ha attivato, d’intesa con la Prefettura di Teramo, un servizio telefonico per raccogliere segnalazioni in merito alle emergenze e alle criticità insorte a carico di allevamenti o relative ad animali da compagnia, a cui rivolgersi anche per comunicare la scomparsa o il ritrovamento di animali. Il servizio risponde al numero 800082280 da rete fissa, 0861 332500 da rete mobile, tutti i giorni incluso i festivi, dalle 8 alle 20. A disposizione anche l’indirizzo di posta elettronica iuvene@izs.it per l’invio di informazioni e materiale fotografico a supporto delle segnalazioni.'
+indirizzo: ''
+lat: ''
+lon: ''
+link: 'https://www.facebook.com/provinciateramo/posts/1545154838835817'
+immagine: ''
+data: 21/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2153,202315212,2017-01-21 13:44:13,2017-01-21 13:20:39,Stallo per animali da pascolo,43.411159,13.438376,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Form"", ""Notizie Utili"", ""Ospitalita animali"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""Stallo per animali da pascolo"", ""data"": ""21/01/2017"", ""descrizione"": ""L'azienda agricola \""Selva Leona\"" di Roberto Pignataro offre stallo per animali da pascolo. Luogo caldo e riparato. Totalmente recintato ed all'interno diviso in altri recinti."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Via Montefanese, Montefano, MC, Marche, Italia"", ""lat"": ""43.411159"", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1832107173723532/"", ""lon"": ""13.438376"", ""tel"": ""3487649823""}","<pre><yamldata>tel: '3487649823'
 email: ''
 cosa: 'Stallo per animali da pascolo'
@@ -10,8 +21,8 @@ link: 'https://www.facebook.com/groups/1758670357733881/permalink/18321071737235
 immagine: ''
 data: 21/01/2017
 </yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2152,202314884,2017-01-21 13:14:45,2017-01-21 13:12:51,Acquasanta Terme scuole chiuse anche 23 e 24 genn,,,"[""Accettato"", ""Bollettino"", ""Notizie Utili"", ""Sisma Gennaio 2017""]",,,{},"<pre><yamldata>titolo: 'Acquasanta Terme scuole chiuse anche 23 e 24 genn'
-descrizione: '*** SERVIZI SCOLASTICI *** Si rende noto che le attività scolastiche saranno sospese anche nei giorni di LUNEDÌ 23 e MARTEDÌ 24' Dalla pagina facebook del comune di Acquasanta 
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2152,202314884,2017-01-21 14:39:59,2017-01-21 13:12:51,Acquasanta Terme scuole chiuse anche 23 e 24 genn,,,"[""Accettato"", ""Bollettino"", ""Notizie Utili"", ""Sisma Gennaio 2017""]",,,{},"<pre><yamldata>titolo: 'Acquasanta Terme scuole chiuse anche 23 e 24 genn'
+descrizione: '*** SERVIZI SCOLASTICI *** Si rende noto che le attività scolastiche saranno sospese anche nei giorni di LUNEDÌ 23 e MARTEDÌ 24' Dalla pagina facebook del comune di Acquasanta'
 link: 'https://www.facebook.com/paginaufficialedelcomunediacquasantaterme/posts/1263361773757258'
 data: 21/01/2017
 </yamldata></pre>",open
@@ -8404,17 +8415,6 @@ descrizione: 'Offresi disponibilità presso propria abitazione a Buja (UD), una 
 indirizzo: ''
 lat: ''
 lon: ''
-link: ''
-immagine: ''
-data: 30/10/2016
-</yamldata></pre>
-",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/891,186125594,2016-10-30 09:42:05,2016-10-30 09:18:30,Offerta appartamento a Ferrara ,44.8433298,11.609086,"[""Accettato"", ""Alloggi"", ""Bollettino"", ""Form"", ""Sisma Ottobre""]",,,"{""data"": ""30/10/2016"", ""descrizione"": ""Vivo in un appartamento spazioso. Ho posto comodo per 6 persone in centro storico a Ferrara. Due bagni, due camere matrimoniali, una camera pi\u00f9 piccola con due posti letto, cucina e salotto. Metto a disposizione gli spazi per chiunque avesse bisogno di allontanarsi dalla zona a rischio sismico."", ""email"": ""buchettadellelettere@gmail.com"", ""immagine"": """", ""indirizzo"": ""Viale Cavour, Centro cittadino, Giardino, Ferrara, FE, Emilia-Romagna, 44121, Italia"", ""lat"": ""44.8433298"", ""link"": """", ""lon"": ""11.609086"", ""tel"": ""+393495954549""}","<pre><yamldata>tel: '+393495954549'
-email: buchettadellelettere@gmail.com
-descrizione: 'Vivo in un appartamento spazioso. Ho posto comodo per 6 persone in centro storico a Ferrara. Due bagni, due camere matrimoniali, una camera più piccola con due posti letto, cucina e salotto. Metto a disposizione gli spazi per chiunque avesse bisogno di allontanarsi dalla zona a rischio sismico.'
-indirizzo: 'Viale Cavour, Centro cittadino, Giardino, Ferrara, FE, Emilia-Romagna, 44121, Italia'
-lat: '44.8433298'
-lon: '11.609086'
 link: ''
 immagine: ''
 data: 30/10/2016
