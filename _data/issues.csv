@@ -1,5 +1,35 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2159,202321695,2017-01-21 16:19:37,2017-01-21 15:29:58,Offro alloggio in #Toscana presso Quarrata (Pistoia),,,"[""Accettato"", ""Alloggi"", ""Bollettino"", ""Form""]",,,"{""data"": ""21/01/2017"", ""descrizione"": ""Offro alloggio in Toscana, Quarrata (PT) in porzione di corte perfettamente ristrutturata. Ho una camera disponibile con letto matrimoniale. Ideale per mamma con bambini. Coppia di anziani. Calda e confortevole."", ""email"": ""carla@paroladicopy.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3385248672""}","<pre><yamldata>tel: '3385248672'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2162,202324024,2017-01-21 16:23:05,2017-01-21 16:13:14,"Offriamo ospitalità a cavalli e asini a Magliano, Grosseto",42.58721367762801,11.255149841308594,"[""Accettato"", ""Bollettino"", ""Form"", ""Ospitalita animali"", ""Sisma Gennaio 2017""]",,,"{""data"": ""21/01/2017"", ""descrizione"": ""Offriamo ospitalit\u00e0 a cavalli o asini provenienti dalle zone terremotate abbiamo disponibili recinti e qualche ricovero coperto. Siamo in provincia di Grosseto comune di Magliano in Toscana."", ""email"": ""marea85@virgilio.it"", ""immagine"": """", ""indirizzo"": ""Podere Le Granchiaie, Magliano in Toscana, GR, Tuscany, Italia"", ""lat"": ""42.58721367762801"", ""link"": """", ""lon"": ""11.255149841308594"", ""tel"": ""0564 592670""}","<pre><yamldata>tel: '0564 592670'
+email: marea85@virgilio.it
+descrizione: 'Offriamo ospitalità a cavalli o asini provenienti dalle zone terremotate abbiamo disponibili recinti e qualche ricovero coperto. Siamo in provincia di Grosseto comune di Magliano in Toscana.'
+indirizzo: 'Podere Le Granchiaie, Magliano in Toscana, GR, Tuscany, Italia'
+lat: '42.58721367762801'
+lon: '11.255149841308594'
+link: ''
+immagine: ''
+data: 21/01/2017
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2161,202323603,2017-01-21 16:23:35,2017-01-21 16:05:25,Possibilità di ospitare una famiglia in provincia di Cremona,,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""21/01/2017"", ""descrizione"": ""Ho la possibilit\u00e0 di ospitare nel mio appartamento una famiglia, 2 adulti e 1 o 2 bimbi. Mi trovo a Casalmaggiore provincia di Cremona"", ""email"": ""h2o11@libero.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3478059376""}","<pre><yamldata>tel: '3478059376'
+email: h2o11@libero.it
+descrizione: 'Ho la possibilità di ospitare nel mio appartamento una famiglia, 2 adulti e 1 o 2 bimbi. Mi trovo a Casalmaggiore provincia di Cremona'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 21/01/2017
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2160,202322695,2017-01-21 16:20:24,2017-01-21 15:48:15,Offro appartamento di 100 mq a Pietrasanta (Lu),43.9545657,10.2333245,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""21/01/2017"", ""descrizione"": ""Appartamento di 100 mq in Pietrasanta (LU), Toscana. 2 camere grandi 4-5 posti letto."", ""email"": ""serespin@hotmail.com"", ""immagine"": """", ""indirizzo"": ""Via Nazario Sauro, Verziere, Pietrasanta, LU, Tuscany, 55045, Italia"", ""lat"": ""43.9545657"", ""link"": """", ""lon"": ""10.2333245"", ""tel"": ""3403844897""}","<pre><yamldata>tel: '3403844897'
+email: serespin@hotmail.com
+descrizione: 'Appartamento di 100 mq in Pietrasanta (LU), Toscana. 2 camere grandi 4-5 posti letto.'
+indirizzo: 'Via Nazario Sauro, Verziere, Pietrasanta, LU, Tuscany, 55045, Italia'
+lat: '43.9545657'
+lon: '10.2333245'
+link: ''
+immagine: ''
+data: 21/01/2017
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2159,202321695,2017-01-21 16:21:34,2017-01-21 15:29:58,Offro alloggio in #Toscana presso Quarrata (Pistoia),,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""21/01/2017"", ""descrizione"": ""Offro alloggio in Toscana, Quarrata (PT) in porzione di corte perfettamente ristrutturata. Ho una camera disponibile con letto matrimoniale. Ideale per mamma con bambini. Coppia di anziani. Calda e confortevole."", ""email"": ""carla@paroladicopy.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3385248672""}","<pre><yamldata>tel: '3385248672'
 email: carla@paroladicopy.it
 descrizione: 'Offro alloggio in Toscana, Quarrata (PT) in porzione di corte perfettamente ristrutturata. Ho una camera disponibile con letto matrimoniale. Ideale per mamma con bambini. Coppia di anziani. Calda e confortevole.'
 indirizzo: ''
@@ -12,6 +42,16 @@ data: 21/01/2017
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2158,202321069,2017-01-21 15:18:12,2017-01-21 15:17:27,"#Viabilità #Abruzzo: elenco aggiornato di tutte le strade chiuse regionali, provinciali e statali",,,"[""Accettato"", ""Bollettino"", ""Notizie Utili"", ""Sisma Gennaio 2017"", ""Twitter""]",,,"{""data"": ""21/01/2017"", ""descrizione"": ""Al link l'elenco, zona per zona, di tutte le strade statali, regionali e provinciali chiuse in Abruzzo, nelle quattro province, a causa dell'impraticabilit\u00e0 per neve, delle frane, delle lesioni per il terremoto dello scorso 18 gennaio. L'elenco \u00e8 aggiornato alle 15 di oggi sabato 21 gennaio."", ""link"": ""http://news-town.it/cronaca/14658-abruzzo-tutte-le-strade-statali,-regionali-e-provinciali-chiuse-per-l-emergenza.html"", ""titolo"": ""#Viabilit\u00e0 #Abruzzo: elenco aggiornato di tutte le strade chiuse regionali, provinciali e statali""}","<pre><yamldata>titolo: '#Viabilità #Abruzzo: elenco aggiornato di tutte le strade chiuse regionali, provinciali e statali'
 descrizione: 'Al link l''elenco, zona per zona, di tutte le strade statali, regionali e provinciali chiuse in Abruzzo, nelle quattro province, a causa dell''impraticabilità per neve, delle frane, delle lesioni per il terremoto dello scorso 18 gennaio. L''elenco è aggiornato alle 15 di oggi sabato 21 gennaio.'
 link: 'http://news-town.it/cronaca/14658-abruzzo-tutte-le-strade-statali,-regionali-e-provinciali-chiuse-per-l-emergenza.html'
+data: 21/01/2017
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2157,202320528,2017-01-21 16:21:26,2017-01-21 15:06:59,Offresi appartamento a Ravenna fino a maggio,44.4473951,12.2902646,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""21/01/2017"", ""descrizione"": ""appartamento 1^ piano, DUE CAMERE, CUCINA, BAGNO, fino ai primi di maggio offro ai terremotati"", ""email"": ""cristianacedrini@fastwebnet.it"", ""immagine"": """", ""indirizzo"": ""Via dell'Ancora, Ravenna, RA, Emilia-Romagna, 48020, Italia"", ""lat"": ""44.4473951"", ""link"": """", ""lon"": ""12.2902646"", ""tel"": ""373-7084986""}","<pre><yamldata>tel: 373-7084986
+email: cristianacedrini@fastwebnet.it
+descrizione: 'appartamento 1^ piano, DUE CAMERE, CUCINA, BAGNO, fino ai primi di maggio offro ai terremotati'
+indirizzo: 'Via dell''Ancora, Ravenna, RA, Emilia-Romagna, 48020, Italia'
+lat: '44.4473951'
+lon: '12.2902646'
+link: ''
+immagine: ''
 data: 21/01/2017
 </yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2156,202319003,2017-01-21 16:19:06,2017-01-21 14:38:40,Offriamo alloggio a una famiglia a Milano,,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""21/01/2017"", ""descrizione"": ""Io mia moglie e le mie due bambine abitiamo vicino a Milano, vorremmo contribuire per quello che sono le nostre possibilita'. Offriamo una stanza per una famiglia con bimbi nel nostro appartamento , \u00e8 caldo e c'\u00e8 il necessario per tutti quelli che volessero anche solo per una settimana,per un week end o per il tempo che si necessita ,anche solo per staccare un po la spina e ricaricare le batterie. Per gli spostamenti andata e ritorno , in caso di difficolta' , cercheremo di organizzarci nel miglior modo possibile . Un Saluto e un abbraccio Daniele"", ""email"": ""opt.rossi@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3922431501""}","<pre><yamldata>tel: '3922431501'
@@ -4567,17 +4607,6 @@ link: ''
 immagine: ''
 data: 13/12/2016
 </yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1452,195345964,2016-12-20 10:45:13,2016-12-13 19:30:49,A Bastia Umbra raccolta di giocattoli per i bambini di #Preci,43.0608196,12.5422118,"[""Accettato"", ""Bambini"", ""Bollettino"", ""Donazioni"", ""Form"", ""Sisma Ottobre""]",Milestone(number=43),,"{""cosa"": ""Giocattoli"", ""data"": ""13/12/2016"", ""descrizione"": ""Il Gruppo Comunale Volontari Protezione Civile di Bastia Umbra raccoglie giocattoli NUOVI (anni 6 +) da donare ai bambini di Preci, in occasione delle festivit\u00e0 natalizie. \u00c8 possibile portare questi regali il prossimo venerd\u00ec sera (16 dicembre) presso la sede del Gruppo (Bastia Umbra, via delle Nazioni). Sempre venerd\u00ec e sempre in sede ci sar\u00e0 anche una tombolata il cui ricavato sar\u00e0 destinato ai terremotati :-)"", ""email"": ""vaxdix1982@gmail.com"", ""immagine"": """", ""indirizzo"": ""Via delle Nazioni, Bastiola, Bastia Umbra, PG, UMB, 06083, Italia"", ""lat"": ""43.0608196"", ""link"": """", ""lon"": ""12.5422118"", ""tel"": ""3397502198""}","<pre><yamldata>tel: '3397502198'
-email: vaxdix1982@gmail.com
-cosa: Giocattoli
-descrizione: 'Il Gruppo Comunale Volontari Protezione Civile di Bastia Umbra raccoglie giocattoli NUOVI (anni 6 +) da donare ai bambini di Preci, in occasione delle festività natalizie. È possibile portare questi regali il prossimo venerdì sera (16 dicembre) presso la sede del Gruppo (Bastia Umbra, via delle Nazioni). Sempre venerdì e sempre in sede ci sarà anche una tombolata il cui ricavato sarà destinato ai terremotati :-)'
-indirizzo: 'Via delle Nazioni, Bastiola, Bastia Umbra, PG, UMB, 06083, Italia'
-lat: '43.0608196'
-lon: '12.5422118'
-link: ''
-immagine: ''
-data: 13/12/2016
-</yamldata></pre>",closed
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1452,195345964,2016-12-20 10:45:13,2016-12-13 19:30:49,A Bastia Umbra raccolta di giocattoli per i bambini di #Preci,43.0608196,12.5422118,"[""Accettato"", ""Bambini"", ""Bollettino"", ""Donazioni"", ""Form"", ""Sisma Ottobre""]",Milestone(number=43),,"{""cosa"": ""Giocattoli"", ""data"": ""13/12/2016"", ""descrizione"": ""Il Gruppo Comunale Volontari Protezione Civile di Bastia Umbra raccoglie giocattoli NUOVI (anni 6 +) da donare ai bambini di Preci, in occasione delle festivit\u00e0 natalizie. \u00c8 possibile portare questi regali il prossimo venerd\u00ec sera (16 dicembre) presso la sede del Gruppo (Bastia Umbra, via delle Nazioni). Sempre venerd\u00ec e sempre in sede ci sar\u00e0 anche una tombolata il cui ricavato sar\u00e0 destinato ai terremotati :-)"", ""email"": ""vaxdix1982@gmail.com"", ""immagine"": """", ""indirizzo"": ""Via delle Nazioni, Bastiola, Bastia Umbra, PG, UMB, 06083, Italia"", ""lat"": ""43.0608196"", ""link"": """", ""lon"": ""12.5422118"", ""tel"": ""3397502198""}","<pre><yamldata>tel: '3397502198'
 email: vaxdix1982@gmail.com
 cosa: Giocattoli
