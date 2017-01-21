@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2139,202309208,2017-01-21 11:09:40,2017-01-21 11:06:47,Dono coperte e trapunte,,,"[""Accettato"", ""Donazioni"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""Offro coperte e trapunte"", ""data"": ""21/01/2017"", ""descrizione"": ""Dono coperte matrimoniali e singole e trapunte matrimoniali e singole usate a chi ne ha bisogno."", ""email"": ""cinziafasolato@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3806996999""}","<pre><yamldata>tel: '3806996999'
+email: cinziafasolato@gmail.com
+cosa: 'Offro coperte e trapunte'
+descrizione: 'Dono coperte matrimoniali e singole e trapunte matrimoniali e singole usate a chi ne ha bisogno.'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 21/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2138,202308776,2017-01-21 11:04:08,2017-01-21 10:56:40,Centro Equestre a Rocca di Papa offre aiuto agli allevatori in difficoltà,41.7454282,12.7805838,"[""Accettato"", ""Bollettino"", ""Form"", ""Ospitalita animali"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""Centro Equestre a Rocca di Papa offre aiuto agli allevatori in difficolt\u00e0"", ""data"": ""21/01/2017"", ""descrizione"": ""Il Centro Equestre Ranieri di Campello si mette a disposizione delle Associazioni volte ad aiutare gli allevatori in difficolt\u00e0 delle zone colpite dai recenti eventi sismici e climatici."", ""email"": ""ranieridicampello@gmail.com"", ""immagine"": """", ""indirizzo"": ""Strada del Vivaro, Rocca di Papa, RM, LAZ, Italia"", ""lat"": ""41.7454282"", ""link"": ""https://www.facebook.com/centroequestreranieridicampello/posts/381831005513478"", ""lon"": ""12.7805838"", ""tel"": """"}","<pre><yamldata>tel: ''
 email: ranieridicampello@gmail.com
 cosa: 'Centro Equestre a Rocca di Papa offre aiuto agli allevatori in difficoltà'
@@ -7,6 +18,47 @@ indirizzo: 'Strada del Vivaro, Rocca di Papa, RM, LAZ, Italia'
 lat: '41.7454282'
 lon: '12.7805838'
 link: 'https://www.facebook.com/centroequestreranieridicampello/posts/381831005513478'
+immagine: ''
+data: 21/01/2017
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2137,202308617,2017-01-21 11:08:57,2017-01-21 10:53:01,"Offresi alloggio per famiglia, terreno e stalla a Ponzano Romano",42.2577967,12.5716266,"[""Accettato"", ""Alloggi"", ""Bollettino"", ""Form"", ""Ospitalita animali"", ""Sisma Gennaio 2017""]",,,"{""data"": ""21/01/2017"", ""descrizione"": ""A Ponzano Romano (Rm) posso ospitare famiglia di quattro persone mettendo a disposizione due camere, ognuna con letto matrimoniale e bagno indipendente. Possibilit\u00e0 di utilizzare stalla in grado di ospitare max cinque ovini ( oltre ai miei) in terreno di 2 ettari completamente recintato in regime di fondo chiuso."", ""email"": ""dr.pepperesci@tiscali.it"", ""immagine"": """", ""indirizzo"": ""Autostrada del Sole, Ponzano Romano, RM, Lazio, Italia"", ""lat"": ""42.2577967"", ""link"": """", ""lon"": ""12.5716266"", ""tel"": ""3202169802 - 0765338244""}","<pre><yamldata>tel: '3202169802 - 0765338244'
+email: dr.pepperesci@tiscali.it
+descrizione: 'A Ponzano Romano (Rm) posso ospitare famiglia di quattro persone mettendo a disposizione due camere, ognuna con letto matrimoniale e bagno indipendente. Possibilità di utilizzare stalla in grado di ospitare max cinque ovini ( oltre ai miei) in terreno di 2 ettari completamente recintato in regime di fondo chiuso.'
+indirizzo: 'Autostrada del Sole, Ponzano Romano, RM, Lazio, Italia'
+lat: '42.2577967'
+lon: '12.5716266'
+link: ''
+immagine: ''
+data: 21/01/2017
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2135,202305937,2017-01-21 11:07:33,2017-01-21 09:50:08,Offro alloggio per 2-3 persone a Udine fino ad aprile,,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""21/01/2017"", ""descrizione"": ""offro disponibilit\u00e0 di alloggio per due tre persone fino ad aprile, poi dovr\u00f2 cambiare casa, nella mia abitazione in Udine. Almeno per passare l'inverno pu\u00f2 essere un aiuto. Un abbraccio di cuore. Dina"", ""email"": ""dina.desantis@email.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3343173285""}","<pre><yamldata>tel: '3343173285'
+email: dina.desantis@email.it
+descrizione: 'offro disponibilità di alloggio per due tre persone fino ad aprile, poi dovrò cambiare casa, nella mia abitazione in Udine. Almeno per passare l''inverno può essere un aiuto. Un abbraccio di cuore. Dina'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 21/01/2017
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2134,202304448,2017-01-21 11:06:38,2017-01-21 09:13:27,Offresi abiti e coperte invernali,,,"[""Accettato"", ""Donazioni"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""Abiti e coperte invernali"", ""data"": ""21/01/2017"", ""descrizione"": ""Offro abbigliamento vario e coperte"", ""email"": ""Alestefymegane@hotmail.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3475816209""}","<pre><yamldata>tel: '3475816209'
+email: Alestefymegane@hotmail.it
+cosa: 'Abiti e coperte invernali'
+descrizione: 'Offro abbigliamento vario e coperte'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 21/01/2017
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2133,202302660,2017-01-21 11:05:31,2017-01-21 08:27:54,"Offresi ospitalità a mucche, pecore, cavalli in provincia di Livorno",43.5529166,10.4354565,"[""Accettato"", ""Bollettino"", ""Form"", ""Ospitalita animali"", ""Sisma Gennaio 2017""]",,,"{""data"": ""21/01/2017"", ""descrizione"": ""Abbiamo disponibilit\u00e0 per ospitare animali mucche, pecore, cavalli in campagna ."", ""email"": ""martinaangioli@hotmail.it"", ""immagine"": """", ""indirizzo"": ""SP6 Parrana San Martino, Collesalvetti, LI, TOS, 57014, Italia"", ""lat"": ""43.5529166"", ""link"": """", ""lon"": ""10.4354565"", ""tel"": ""3337777989""}","<pre><yamldata>tel: '3337777989'
+email: martinaangioli@hotmail.it
+descrizione: 'Abbiamo disponibilità per ospitare animali mucche, pecore, cavalli in campagna .'
+indirizzo: 'SP6 Parrana San Martino, Collesalvetti, LI, TOS, 57014, Italia'
+lat: '43.5529166'
+lon: '10.4354565'
+link: ''
 immagine: ''
 data: 21/01/2017
 </yamldata></pre>",open
@@ -6026,17 +6078,6 @@ link: 'https://www.facebook.com/groups/1758670357733881/permalink/17975121405163
 immagine: ''
 data: 10/11/2016
 </yamldata></pre>",closed
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1211,188600742,2016-11-10 20:49:40,2016-11-10 19:46:30,COMUNE DI #NORCIA: IBAN PER DONAZIONI,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Raccolte Fondi"", ""Sisma Ottobre""]",,,"{""bic"": ""CRSPIT31010"", ""causale"": ""Emergenza Sisma"", ""chi"": ""COMUNE DI #NORCIA: IBAN PER DONAZIONI"", ""data"": ""10/11/2016"", ""descrizione"": ""Per effettuare donazioni al Comune di Norcia"", ""email"": """", ""iban"": ""IT48 M063 1538 5801 0000 0300 005"", ""intestazione"": """", ""link"": ""http://www.comune.norcia.pg.it/2016/11/07/emergenza-sisma-iban-per-donazioni/"", ""postale"": """"}","<pre><yamldata>chi: 'COMUNE DI #NORCIA: IBAN PER DONAZIONI'
-descrizione: 'Per effettuare donazioni al Comune di Norcia'
-intestazione: ''
-iban: 'IT48 M063 1538 5801 0000 0300 005'
-bic: CRSPIT31010
-postale: ''
-causale: 'Emergenza Sisma'
-link: 'http://www.comune.norcia.pg.it/2016/11/07/emergenza-sisma-iban-per-donazioni/'
-email: ''
-data: 10/11/2016
-</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1211,188600742,2016-11-10 20:49:40,2016-11-10 19:46:30,COMUNE DI #NORCIA: IBAN PER DONAZIONI,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Raccolte Fondi"", ""Sisma Ottobre""]",,,"{""bic"": ""CRSPIT31010"", ""causale"": ""Emergenza Sisma"", ""chi"": ""COMUNE DI #NORCIA: IBAN PER DONAZIONI"", ""data"": ""10/11/2016"", ""descrizione"": ""Per effettuare donazioni al Comune di Norcia"", ""email"": """", ""iban"": ""IT48 M063 1538 5801 0000 0300 005"", ""intestazione"": """", ""link"": ""http://www.comune.norcia.pg.it/2016/11/07/emergenza-sisma-iban-per-donazioni/"", ""postale"": """"}","<pre><yamldata>chi: 'COMUNE DI #NORCIA: IBAN PER DONAZIONI'
 descrizione: 'Per effettuare donazioni al Comune di Norcia'
 intestazione: ''
