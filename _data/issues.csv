@@ -1,4 +1,14 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2151,202314484,2017-01-21 13:06:36,2017-01-21 13:03:33,Diamo disponibilita' di due ap,44.4835771,10.6207938,"[""Accettato"", ""Alloggi"", ""Form"", ""Ospitalita animali"", ""Sisma Gennaio 2017""]",,,"{""data"": ""21/01/2017"", ""descrizione"": ""Diamo disponibilita' di due appartamenti da 5/6 posti letto l'uno e per una ventina di capi di bestiame da ospitare nelle nostre stalle. non sappiamo bene a chi rivolgerci ma speriamo che il passaparola di facebook serva in qualche modo a raggiungere chi si sta impegnando per trovare sistemazioni per questa povera gente martoriata dal terremoto e dalla neve. Agriturismo \""La Borgaccia\"" Localit\u00e0 - C\u00e1 D'Orio - REGGIO EMILIA"", ""email"": """", ""immagine"": """", ""indirizzo"": ""Via Ca' d'Orio, Mussolino, Baiso, RE, Emilia-Romagna, 42031, Italy"", ""lat"": ""44.4835771"", ""link"": """", ""lon"": ""10.6207938"", ""tel"": ""Tel 0522 843667 Mario Tel 3802067736 Simona Tel 3341688541 Baiso""}","<pre><yamldata>tel: 'Tel 0522 843667 Mario Tel 3802067736 Simona Tel 3341688541 Baiso'
+email: ''
+descrizione: 'Diamo disponibilita'' di due appartamenti da 5/6 posti letto l''uno e per una ventina di capi di bestiame da ospitare nelle nostre stalle. non sappiamo bene a chi rivolgerci ma speriamo che il passaparola di facebook serva in qualche modo a raggiungere chi si sta impegnando per trovare sistemazioni per questa povera gente martoriata dal terremoto e dalla neve. Agriturismo ""La Borgaccia"" Località - Cá D''Orio - REGGIO EMILIA'
+indirizzo: 'Via Ca'' d''Orio, Mussolino, Baiso, RE, Emilia-Romagna, 42031, Italy'
+lat: '44.4835771'
+lon: '10.6207938'
+link: ''
+immagine: ''
+data: 21/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2150,202314393,2017-01-21 13:02:06,2017-01-21 13:01:27,"Stallo per Asini, cani e animali in genere",43.9336213,10.9174238,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Form"", ""Notizie Utili"", ""Ospitalita animali""]",,,"{""cosa"": ""Stallo per Asini, cani e animali in genere"", ""data"": ""21/01/2017"", ""descrizione"": ""Possibilit\u00e0 di ospitare cani, ma, anche animali di grossa taglia."", ""email"": ""elenaboldrini@hotmail.it"", ""immagine"": """", ""indirizzo"": ""Piazza del Duomo, Case Bergamo, Pistoia, PT, Tuscany, 2, Italia"", ""lat"": ""43.9336213"", ""link"": ""https://www.facebook.com/elena.boldrini.353/posts/368105326896123"", ""lon"": ""10.9174238"", ""tel"": """"}","<pre><yamldata>tel: ''
 email: elenaboldrini@hotmail.it
 cosa: 'Stallo per Asini, cani e animali in genere'
