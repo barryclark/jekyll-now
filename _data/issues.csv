@@ -1,4 +1,14 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2142,202309629,2017-01-21 11:16:52,2017-01-21 11:14:08,Offro alloggio per 4 persone in provincia di Arezzo,43.5185083,11.5804737,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""21/01/2017"", ""descrizione"": ""Offro una stanza della mia casa che pu\u00f2 ospitare fino a 4 persone."", ""email"": ""eva.righeschi@gmail.com"", ""immagine"": """", ""indirizzo"": ""Via Guglielmo Marconi, Giglio, Montevarchi, AR, Tuscany, 52025, Italia"", ""lat"": ""43.5185083"", ""link"": ""http://terremotocentroitalia.info/segnala/"", ""lon"": ""11.5804737"", ""tel"": ""3398723637""}","<pre><yamldata>tel: '3398723637'
+email: eva.righeschi@gmail.com
+descrizione: 'Offro una stanza della mia casa che può ospitare fino a 4 persone.'
+indirizzo: 'Via Guglielmo Marconi, Giglio, Montevarchi, AR, Tuscany, 52025, Italia'
+lat: '43.5185083'
+lon: '11.5804737'
+link: 'http://terremotocentroitalia.info/segnala/'
+immagine: ''
+data: 21/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2140,202309384,2017-01-21 11:13:36,2017-01-21 11:09:30,"Offresi pentole, lenzuola, coperte e vario materiale per la casa",,,"[""Accettato"", ""Donazioni"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""pentole lenzuola coperte e varie"", ""data"": ""21/01/2017"", ""descrizione"": ""per una famiglia che deve sistemarsi in una casetta offro lenzuola singole e matrimoniali, piumino matrimoniale, pentole bicchieri posate tazzine ecc, materiale vario per la casa, invio tramite corriere"", ""email"": ""alessandratagliolato@libero.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3406767817""}","<pre><yamldata>tel: '3406767817'
 email: alessandratagliolato@libero.it
 cosa: 'pentole lenzuola coperte e varie'
@@ -99,7 +109,7 @@ link: ''
 immagine: ''
 data: 20/01/2017
 </yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2126,202269945,2017-01-21 00:04:00,2017-01-20 23:45:03,A Gualdo Tadino si offre stallo per mucche e altri animali,43.2316518,12.7809617,"[""Accettato"", ""Facebook"", ""Ospitalita animali"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""A Gualdo Tadino s\u00ec offre stallo per mucche e altri animali"", ""data"": ""20/01/2017"", ""descrizione"": ""AZIENDA AGRICOLA DI GUALDO TADINO OFFRE STALLO PER MUCCHE OPPURE ALTRI ANIMALI DELLE ZONE TERREMOTATE. IL NUMERO DA CONTATTARE E' IL 334 5003490. GRUPPO SORGENTE"", ""email"": """", ""immagine"": """", ""indirizzo"": ""Via Andrea dei Bensi, Gualdo Tadino, PG, UMB, 06023, Italia"", ""lat"": ""43.2316518"", ""link"": ""https://www.facebook.com/procivgualdotadino/posts/10154335407490658"", ""lon"": ""12.7809617"", ""tel"": ""334 5003490""}","<pre><yamldata>tel: '334 5003490'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2126,202269945,2017-01-21 11:17:57,2017-01-20 23:45:03,A Gualdo Tadino si offre stallo per mucche e altri animali,43.2316518,12.7809617,"[""Accettato"", ""Bollettino"", ""Facebook"", ""Ospitalita animali"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""A Gualdo Tadino s\u00ec offre stallo per mucche e altri animali"", ""data"": ""20/01/2017"", ""descrizione"": ""AZIENDA AGRICOLA DI GUALDO TADINO OFFRE STALLO PER MUCCHE OPPURE ALTRI ANIMALI DELLE ZONE TERREMOTATE. IL NUMERO DA CONTATTARE E' IL 334 5003490. GRUPPO SORGENTE"", ""email"": """", ""immagine"": """", ""indirizzo"": ""Via Andrea dei Bensi, Gualdo Tadino, PG, UMB, 06023, Italia"", ""lat"": ""43.2316518"", ""link"": ""https://www.facebook.com/procivgualdotadino/posts/10154335407490658"", ""lon"": ""12.7809617"", ""tel"": ""334 5003490""}","<pre><yamldata>tel: '334 5003490'
 email: ''
 cosa: 'A Gualdo Tadino sì offre stallo per mucche e altri animali'
 descrizione: 'AZIENDA AGRICOLA DI GUALDO TADINO OFFRE STALLO PER MUCCHE OPPURE ALTRI ANIMALI DELLE ZONE TERREMOTATE. IL NUMERO DA CONTATTARE E'' IL 334 5003490. GRUPPO SORGENTE'
