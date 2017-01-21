@@ -2249,10 +2249,10 @@ link: ''
 immagine: ''
 data: 19/01/2017
 </yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1919,201927931,2017-01-19 21:31:15,2017-01-19 17:42:14,Offriamo uomini e mezzi per liberare le strade dalla neve,,,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Facebook"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""Aiuto pulizia neve dalle strade"", ""data"": ""19/01/2017"", ""descrizione"": ""Mettiamo a disposizione uomini e mezzi per la rotta neve e pulizia aree per le zone terremotate: 338 333 9647 Miki 334 6778304 Sara"", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""https://www.facebook.com/groups/197031290730621/permalink/251223945311355/"", ""lon"": """", ""tel"": """"}","<pre><yamldata>tel: ''
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1919,201927931,2017-01-21 22:21:27,2017-01-19 17:42:14,Offriamo uomini e mezzi per liberare le strade dalla neve,,,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Facebook"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""Aiuto pulizia neve dalle strade"", ""data"": ""19/01/2017"", ""descrizione"": ""Mettiamo a disposizione uomini e mezzi per la rotta neve e pulizia aree per le zone terremotate: 338 333 9647 Miki, 334 6778304 Sara"", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""https://www.facebook.com/groups/197031290730621/permalink/251223945311355/"", ""lon"": """", ""tel"": ""338 333 9647 Miki, 334 6778304 Sara""}","<pre><yamldata>tel: '338 333 9647 Miki, 334 6778304 Sara'
 email: ''
 cosa: 'Aiuto pulizia neve dalle strade'
-descrizione: 'Mettiamo a disposizione uomini e mezzi per la rotta neve e pulizia aree per le zone terremotate: 338 333 9647 Miki 334 6778304 Sara'
+descrizione: 'Mettiamo a disposizione uomini e mezzi per la rotta neve e pulizia aree per le zone terremotate: 338 333 9647 Miki, 334 6778304 Sara'
 indirizzo: ''
 lat: ''
 lon: ''
@@ -2389,24 +2389,13 @@ link: ''
 immagine: 'http://i.imgur.com/1udKYam.jpg'
 data: 19/01/2017
 </yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1901,201904710,2017-01-20 17:29:45,2017-01-19 16:15:44,Si mette a disposizione due posti per cani a Montegranaro (Fm),43.2325226,13.6315802,"[""Accettato"", ""Form"", ""Ospitalita animali"", ""Sisma Gennaio 2017""]",,,"{""data"": ""19/01/2017"", ""descrizione"": ""Si mette a disposizione due posti per cani in un allevamento a montegranaro (FM)."", ""email"": ""silviagirotti@hotmail.it"", ""immagine"": """", ""indirizzo"": ""Strada Provinciale SP30 Fermana, Montegranaro, FM, Marche, 63812, Italia"", ""lat"": ""43.2325226"", ""link"": ""www.terremotocentroitalia.info"", ""lon"": ""13.6315802"", ""tel"": ""3397377884""}","<pre><yamldata>tel: '3397377884'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1901,201904710,2017-01-21 22:22:09,2017-01-19 16:15:44,Si mettono a disposizione due posti per cani a Montegranaro (Fm),43.2325226,13.6315802,"[""Accettato"", ""Form"", ""Ospitalita animali"", ""Sisma Gennaio 2017""]",,,"{""data"": ""19/01/2017"", ""descrizione"": ""Si mette a disposizione due posti per cani in un allevamento a montegranaro (FM)."", ""email"": ""silviagirotti@hotmail.it"", ""immagine"": """", ""indirizzo"": ""Strada Provinciale SP30 Fermana, Montegranaro, FM, Marche, 63812, Italia"", ""lat"": ""43.2325226"", ""link"": ""www.terremotocentroitalia.info"", ""lon"": ""13.6315802"", ""tel"": ""3397377884""}","<pre><yamldata>tel: '3397377884'
 email: silviagirotti@hotmail.it
 descrizione: 'Si mette a disposizione due posti per cani in un allevamento a montegranaro (FM).'
 indirizzo: 'Strada Provinciale SP30 Fermana, Montegranaro, FM, Marche, 63812, Italia'
 lat: '43.2325226'
 lon: '13.6315802'
 link: www.terremotocentroitalia.info
-immagine: ''
-data: 19/01/2017
-</yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1899,201902819,2017-01-20 17:31:24,2017-01-19 16:09:21,Posto per due cani #Montegranaro,,,"[""Accettato"", ""Form"", ""Ospitalita animali"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""Posto per due cani"", ""data"": ""19/01/2017"", ""descrizione"": ""Metto a disposizione due posti per cani in un allevamento a Montegranaro"", ""email"": ""silviagirotti@hotmail.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3397377884""}","<pre><yamldata>tel: '3397377884'
-email: silviagirotti@hotmail.it
-cosa: 'Posto per due cani'
-descrizione: 'Metto a disposizione due posti per cani in un allevamento a Montegranaro'
-indirizzo: ''
-lat: ''
-lon: ''
-link: ''
 immagine: ''
 data: 19/01/2017
 </yamldata></pre>",open
