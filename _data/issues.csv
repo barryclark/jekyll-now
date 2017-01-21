@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2168,202327750,2017-01-21 17:29:59,2017-01-21 17:18:54,Counselor offre supporto per superare difficoltà emotive causa terremoto,,,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""ascolto"", ""data"": ""21/01/2017"", ""descrizione"": ""Sono una counselor professionista, offro gratuitamente il mio supporto per aiutare e ascoltare le persone con difficolt\u00e0 emotive legate al terremoto. Cristina 3482446672."", ""email"": ""cristina.rubegni@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3482446672""}","<pre><yamldata>tel: '3482446672'
+email: cristina.rubegni@gmail.com
+cosa: ascolto
+descrizione: 'Sono una counselor professionista, offro gratuitamente il mio supporto per aiutare e ascoltare le persone con difficoltà emotive legate al terremoto. Cristina 3482446672.'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 21/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2164,202326189,2017-01-21 16:51:16,2017-01-21 16:50:45,L'associazione Mam Beyond Borders cerca volontari per dare aiuto nelle zone terremotate,42.7856415,13.0226337,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Sisma Gennaio 2017"", ""Twitter""]",,,"{""cosa"": ""L'associazione Mam Beyond Borders cerca volontari per dare aiuto nelle zone terremotate"", ""data"": ""21/01/2017"", ""descrizione"": ""MAM cerca volontari per aiutare nelle zone terremotate, cerchiamo persone volenterose disposte ad aiutare e portare un sorriso alle popolazioni duramente colpite sia dal terremoto sia dalla neve caduta abbondantemente in questi giorni. MAM in questi giorni \u00e8 presente a San Giorgio di Cascia con 4 volontari, Andrea, Umberto, Riccardo ed Eugenio. In questo momento i nostri volontari si stanno occupando delle stalle per gli animali. Al telefono ci dicono: \u201cla situazione \u00e8 brutta, non tanto per la neve perch\u00e9 ora le strade sono sgombre quanto per le continue scosse essendo San Giorgio di Cascia tra le due faglie, quella di Amatrice e quella di Norcia.\u201d"", ""email"": ""info@mambeyondborders.org"", ""immagine"": """", ""indirizzo"": ""Strada Statale 320 di Cascia, Norcia, PG, UMB, 06046, Italia"", ""lat"": ""42.7856415"", ""link"": ""http://www.mambeyondborders.org/"", ""lon"": ""13.0226337"", ""tel"": ""Ludovica 340 5091260 \u2013 Monia 349 3422274 \u2013 Greta 3490061642""}","<pre><yamldata>tel: 'Ludovica 340 5091260 – Monia 349 3422274 – Greta 3490061642'
 email: info@mambeyondborders.org
 cosa: 'L''associazione Mam Beyond Borders cerca volontari per dare aiuto nelle zone terremotate'
@@ -7380,6 +7391,11 @@ descrizione: 'Si comunica che tutti gli studenti Unicam sono esentati dal pagame
 link: 'http://www.unicam.it/'
 data: 02/11/2016
 </yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1058,186810821,2016-11-02 21:24:34,2016-11-02 14:10:03,Università #Camerino: studenti #Unicam esentati da pagamento tasse universitarie,,,"[""Accettato"", ""Bollettino"", ""Notizie Utili"", ""Sisma Ottobre""]",,,"{""data"": ""02/11/2016"", ""descrizione"": ""Si comunica che tutti gli studenti Unicam sono esentati dal pagamento delle tasse universitarie (compresa la tassa regionale per il diritto allo studio di 140 euro). Le immatricolazioni e le iscrizioni agli anni successivi si perfezionano con il versamento tramite MAV di 16 euro di bollo virtuale. A tutti coloro che hanno gi\u00e0 pagato le tasse universitarie e quella regionale saranno rimborsati automaticamente dall\u2019Ateneo i relativi importi (non il bollo virtuale). La scadenza per le immatricolazioni ed iscrizioni all\u2019Universit\u00e0 di Camerino \u00e8 fissata al 13 gennaio 2017."", ""link"": ""http://www.unicam.it/"", ""titolo"": ""Universita' di #Camerino: studenti #Unicam esentati dal pagamento delle tasse universitarie""}","<pre><yamldata>titolo: 'Universita'' di #Camerino: studenti #Unicam esentati dal pagamento delle tasse universitarie'
+descrizione: 'Si comunica che tutti gli studenti Unicam sono esentati dal pagamento delle tasse universitarie (compresa la tassa regionale per il diritto allo studio di 140 euro). Le immatricolazioni e le iscrizioni agli anni successivi si perfezionano con il versamento tramite MAV di 16 euro di bollo virtuale. A tutti coloro che hanno già pagato le tasse universitarie e quella regionale saranno rimborsati automaticamente dall’Ateneo i relativi importi (non il bollo virtuale). La scadenza per le immatricolazioni ed iscrizioni all’Università di Camerino è fissata al 13 gennaio 2017.'
+link: 'http://www.unicam.it/'
+data: 02/11/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1056,186806908,2016-11-03 11:46:48,2016-11-02 13:55:00,Ospitalità per una famiglia fino a fine gennaio a Casalpusterlengo (Lodi),,,"[""Accettato"", ""Alloggi"", ""Form""]",Milestone(number=29),,"{""data"": ""02/11/2016"", ""descrizione"": ""Ospito in famiglia una famiglia fino a fine gennaio a Casalpusterlengo"", ""email"": ""franco.algieri@libero.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""347 5758039""}","<pre><yamldata>tel: '347 5758039'
 email: franco.algieri@libero.it
 descrizione: 'Ospito in famiglia una famiglia fino a fine gennaio a Casalpusterlengo'
@@ -11281,6 +11297,18 @@ indirizzo: ''
 lat: ''
 lon: ''
 link: 'https://postribu.net/2016/09/05/sos-pecorino-di-amatrice-acquisto-solidale/'
+immagine: ''
+data: 16/09/2016
+</yamldata></pre>
+",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/511,177452208,2016-09-16 15:30:30,2016-09-16 15:20:33,Caravan o piccolo appartamento (anche da condividere),,,"[""Accettato"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""Caravan o piccolo appartamento (anche da condividere)"", ""data"": ""16/09/2016"", ""descrizione"": ""Studente di Amatrice, rimasto solo e senza casa, cerca urgentemente a L'Aquila caravan o appartamentino da condividere con altri studenti, cos\u00ec da poter continuare gli studi."", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1764807577120159/"", ""lon"": """", ""tel"": """"}","<pre><yamldata>tel: ''
+email: ''
+cosa: 'Caravan o piccolo appartamento (anche da condividere)'
+descrizione: 'Studente di Amatrice, rimasto solo e senza casa, cerca urgentemente a L''Aquila caravan o appartamentino da condividere con altri studenti, così da poter continuare gli studi.'
+indirizzo: ''
+lat: ''
+lon: ''
+link: 'https://www.facebook.com/groups/1758670357733881/permalink/1764807577120159/'
 immagine: ''
 data: 16/09/2016
 </yamldata></pre>
