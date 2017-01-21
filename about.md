@@ -1,15 +1,12 @@
 ---
 layout: page
 title: About
-permalink: /about/
 ---
 
-Some information about you!
+## Who I am
 
-### More Information
+<!-- <img class="profilePic" src="{{ site.profilePic }}" alt="Emerald Hieu" /> -->
 
-A place to include any other types of information that you'd like to include about yourself.
+![Emerald Hieu]({{ site.avatar }} "Here I am")
 
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+I love writing. I once thought that if I didn't study Computer Science, I would become a writer traveling around the world and write about different things I met on my journeys.

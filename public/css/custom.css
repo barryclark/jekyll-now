@@ -1,0 +1,12 @@
+.profilePic {
+	width: 200px;
+}
+
+.socialPanel {
+	text-align: center
+}
+
+.socialItem {
+	float: left;
+	margin: 0 6px;
+}
