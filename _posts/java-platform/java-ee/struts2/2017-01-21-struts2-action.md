@@ -102,6 +102,7 @@ Anlayacağınız gibi int alan üzerinde increment yada decrement yapıyoruz;
 Bir http request'i ilk olarak Servlet Container'a uğrar, buradan ise filter'lara geçer. Sonrasında ise zorunlu olan struts filter'a uğrar. Bu filter, action mapper ile actionun var olup olmadıgını sorgular. Var ise bir sonraki adım işletişir. Action Mapper eğer ilgili action var ve çağrılabilir bilgisini döner ise yukarıda gördüğünüz gibi ActionProxy ile devam edilir. ActionProxy ise Configuration Manager ile iletişime geçerek son noktaya ulaşılır ve Java class'ı içerisinde http requesti handle edilebilir duruma gelir.
 
 Burada action oluşturulma mantığı şöyledir;
+
 * Her HTTP request'i yeni bir Struts Action oluşturulmasına neden olur.
 * Her HTTP redirect yeni bir Struts Action oluşturulmasına neden olur.
 * Core Servlet'den hatırlayacağınız gibi Servlet'ler app lifecyle içerisinde sadece bir kez oluşturulurdu. Gelen her http isteğinde ise yeni bir Thread oluşturulup istek işlenmeye çalışılırdı. Bu yüzden Servletler thread safe değiller.
