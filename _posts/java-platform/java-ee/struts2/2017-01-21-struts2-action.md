@@ -177,6 +177,7 @@ CounterAction içerisine CounterBean ekledik, count ve incrementOrDecrement degi
 View'a daha sonra detaylı değineceğiz insaAllah. Burada bir örneğini görmüş olduk sadece.
 
 Yukarıda ifade ettiğim gibi her HTTP request'i için yeni bir Action oluşturulur. Action'ı farklı yollardan oluşturabiliriz;
+
 1. **Action** interface'ini implemente ederek.
 2. **@Action** annotation'u kullanrak.
 3. **ActionSupport** classını extends ederek.
@@ -234,6 +235,7 @@ Configuration dosyasındaki action tanımına bakalım;
 Bazı durumlarda mappingi dinamik olarak üretmek isteyebilir yada daha az config yaparak mapping yapmak isteyebiliriz. Örnek bir senaryoya bakalım. Örneğimizde 4 işlem yapan ufak bir calculator yapalım;
 
 Mappingimiz şöyle olsun;
+
 ``` xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE struts PUBLIC
@@ -337,11 +339,10 @@ public class CalculatorBean {
         this.result = result;
     }
 }
-
-
 ```
 
 Url'den şunları deneyelim;
+
 * /subtractNumber?calculator.firstNumber=2&calculator.secondNumber=5 sonuç -> -3
 * /divideNumber?calculator.firstNumber=2&calculator.secondNumber=5 sonuç -> 0 (int dolayı)
 * /multiplytNumber?calculator.firstNumber=2&calculator.secondNumber=5 sonuç -> 10
@@ -350,7 +351,6 @@ Url'den şunları deneyelim;
 Bir sorun yok ama biz daha akıllı yapalım şu işi dedik. Mappingleri wildcard ile yapalım şimdi;
 
 ``` xml
-
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE struts PUBLIC
    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
@@ -401,6 +401,7 @@ Action class'ında birşey değiştirmemize gerek yok. Yukarıdaki url'leri tekr
 
 4 adet jsp sayfası oluşturalım;
 **addResult.jsp**
+
 ``` html
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
@@ -426,6 +427,7 @@ Action class'ında birşey değiştirmemize gerek yok. Yukarıdaki url'leri tekr
 ```
 
 **substractResult.jsp**
+
 ``` html
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
@@ -451,6 +453,7 @@ Action class'ında birşey değiştirmemize gerek yok. Yukarıdaki url'leri tekr
 ```
 
 **divideResult.jsp**
+
 ``` html
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
@@ -476,6 +479,7 @@ Action class'ında birşey değiştirmemize gerek yok. Yukarıdaki url'leri tekr
 ```
 
 **multiplyResult.jsp**
+
 ``` html
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
