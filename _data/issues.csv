@@ -1,4 +1,14 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2180,202343475,2017-01-21 22:28:24,2017-01-21 22:19:02,"Offro appartamento con giardino in provincia di Como, fino a maggio",45.920983,9.26264,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""21/01/2017"", ""descrizione"": ""Offro appartamento libero fino a maggio, piano terra con piccolo giardino, 5/6 posti letto, situato a Magreglio in provincia di Como"", ""email"": ""zaza262009@libero.it"", ""immagine"": """", ""indirizzo"": ""Strada provinciale 41 Vallassina, Magreglio, Como, Lombardia, 23865, Italia"", ""lat"": ""45.920983"", ""link"": """", ""lon"": ""9.26264"", ""tel"": ""320 1878450""}","<pre><yamldata>tel: '320 1878450'
+email: zaza262009@libero.it
+descrizione: 'Offro appartamento libero fino a maggio, piano terra con piccolo giardino, 5/6 posti letto, situato a Magreglio in provincia di Como'
+indirizzo: 'Strada provinciale 41 Vallassina, Magreglio, Como, Lombardia, 23865, Italia'
+lat: '45.920983'
+lon: '9.26264'
+link: ''
+immagine: ''
+data: 21/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2179,202339452,2017-01-21 21:59:03,2017-01-21 20:58:33,"Offresi a Suviana, nell'appennino  tosco emiliano, casetta per due/tre persone",,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""A suviana (bologna) casetta , per due /tre persone, nell'appennino  tosco emiliano."", ""data"": ""21/01/2017"", ""descrizione"": ""60 mq, ampio corridoio, una camera da letto, una sala con divano-letto, una piccola cucina, abitabile x tre persone. \u00e9 il mio nido e volentieri posso offrire da subito, fino a maggio/giugno. Ben riscaldabile con termopellet, camino ad aria e stufa a legna, pannelli solari. Ampio giardino, tutto recintato, al limite di un bosco. c'\u00e8 buona scorta di legna e di pellet. \u00e8 a pian terreno, adatta se servono carrozzine..... . La frazione di suviana \u00e8 molto piccola. c'\u00e8 un negozio ad un km dalla casa, ma la fermata della corriera \u00e8 proprio sotto casa e in mezz'ora di autobus, 20 minuti in auto si \u00e8 a porretta terme. Col cuore, a disposizione, poi io verrei frequentemente...... lavoro a porretta...."", ""email"": ""apicchio60@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3405582411""}","<pre><yamldata>tel: '3405582411'
 email: apicchio60@gmail.com
 cosa: 'A suviana (bologna) casetta , per due /tre persone, nell''appennino  tosco emiliano.'
@@ -3125,7 +3135,7 @@ descrizione: 'Per famiglie e utenti con autismo. Per consulto su comportamenti p
 link: 'https://www.facebook.com/marcovalenti61/posts/1332356393489840'
 data: 18/01/2017
 </yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1680,201718908,2017-01-19 14:40:38,2017-01-18 23:08:19,Offresi stallo per cani in provincia di Ancona,,,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""Stallo cani"", ""data"": ""18/01/2017"", ""descrizione"": ""Offro stallo per cani in provincia di Ancona"", ""email"": ""bellai90@hotmail.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3200922305""}","<pre><yamldata>tel: '3200922305'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1680,201718908,2017-01-21 22:25:19,2017-01-18 23:08:19,Offresi stallo per cani in provincia di Ancona,,,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Form"", ""Ospitalita animali"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""Stallo cani"", ""data"": ""18/01/2017"", ""descrizione"": ""Offro stallo per cani in provincia di Ancona"", ""email"": ""bellai90@hotmail.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3200922305""}","<pre><yamldata>tel: '3200922305'
 email: bellai90@hotmail.it
 cosa: 'Stallo cani'
 descrizione: 'Offro stallo per cani in provincia di Ancona'
