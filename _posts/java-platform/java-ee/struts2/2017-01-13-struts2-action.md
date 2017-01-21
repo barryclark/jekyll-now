@@ -3,7 +3,7 @@ layout: post
 title: Struts2 Introduction
 permalink: /blog/java-platform/java-ee/struts2/struts2-action
 summary: Merhaba arkadaşlar, bu yazımızda Struts2 içerisidneki Action'lara giriş yapacağız.
-image: /images/java-platform/java-ee/struts2/struts2-index.jsp.png
+image: /images/java-platform/java-ee/struts2/Struts2-Architecture.png
 ---
 
 ### Struts2 Action
@@ -503,5 +503,8 @@ Yapılan matematiksel işleme göre ilgili sayfayı kendisi bulacaktır;
 ![struts2-action-resultwidlcard2](/images/java-platform/java-ee/struts2/struts2-action-resultwidlcard2.png)
 ![struts2-action-resultwidlcard3](/images/java-platform/java-ee/struts2/struts2-action-resultwidlcard3.png)
 
+İlgili uygulamaya bir önceki yazıda vermiş oldugum git reposundan erişebilirsiniz -> Örnek uygulamaya [şurada](https://github.com/AlicanAkkus/Struts2Starter) erişebilirsiniz.
+
 Mutlu ve esen kalın.
+
 ~ A.Akkus

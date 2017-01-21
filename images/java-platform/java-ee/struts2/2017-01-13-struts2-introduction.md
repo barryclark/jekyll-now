@@ -499,9 +499,5 @@ Action class'ında birşey değiştirmemize gerek yok. Yukarıdaki url'leri tekr
 </html>
 ```
 
-Yapılan matematiksel işleme göre ilgili sayfayı kendisi bulacaktır;
-![struts2-action-resultwidlcard2](/images/java-platform/java-ee/struts2/struts2-action-resultwidlcard2.png)
-![struts2-action-resultwidlcard3](/images/java-platform/java-ee/struts2/struts2-action-resultwidlcard3.png)
-
 Mutlu ve esen kalın.
 ~ A.Akkus
