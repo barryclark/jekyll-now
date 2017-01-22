@@ -1,4 +1,9 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2202,202394260,2017-01-22 17:04:16,2017-01-22 16:48:54,Aggiornamento #EmergenzaAbruzzo: 15mila utenze ancora senza luce,,,"[""Accettato"", ""Bollettino"", ""Facebook"", ""Notizie Utili"", ""Sisma Gennaio 2017""]",,,"{""data"": ""22/01/2017"", ""descrizione"": ""Sono ancora poco meno di 15mila le utenze Enel disalimentate in Abruzzo. Con la provincia dell'Aquila sempre attiva - eccezion fatta per alcuni casi sparsi - l'attenzione \u00e8 rivolta alla provincia di Teramo: qui sarebbero 14mila le famiglie ancora senza luce, di cui 5mila in comuni le cui reti non sono ancora raggiungibili (a causa della neve) e un migliaio nelle frazioni totalmente isolate. Gli sforzi sarebbero dunque concentrati con l'obiettivo del ripristino delle rimanenti 9mila utenze nel teramano, che l'Enel conta di riattivare in giornata. A comunicarlo \u00e8 Carlo Tamburi, direttore generaledi Enel Italia. Dopo una settimana di inferno situazione in via di risoluzione nelle province di Pescara e Chieti, vessate all'inizio della scorsa settimana da neve, vento e gelo. A Pescara ci sono alcune utenze residue da ripristinare, mentre a Chieti l'emergenza \u00e8 finita, ed \u00e8 stato chiusa anche la Sala coordinamento soccorsi."", ""link"": ""http://news-town.it/cronaca/14664-abruzzo-15mila-utenze-ancora-senza-luce,-5mila-in-comuni-non-raggiungibili.html"", ""titolo"": ""Aggiornamento #EmergenzaAbruzzo: 15mila utenze ancora senza luce""}","<pre><yamldata>titolo: 'Aggiornamento #EmergenzaAbruzzo: 15mila utenze ancora senza luce'
+descrizione: 'Sono ancora poco meno di 15mila le utenze Enel disalimentate in Abruzzo. Con la provincia dell''Aquila sempre attiva - eccezion fatta per alcuni casi sparsi - l''attenzione è rivolta alla provincia di Teramo: qui sarebbero 14mila le famiglie ancora senza luce, di cui 5mila in comuni le cui reti non sono ancora raggiungibili (a causa della neve) e un migliaio nelle frazioni totalmente isolate. Gli sforzi sarebbero dunque concentrati con l''obiettivo del ripristino delle rimanenti 9mila utenze nel teramano, che l''Enel conta di riattivare in giornata. A comunicarlo è Carlo Tamburi, direttore generaledi Enel Italia. Dopo una settimana di inferno situazione in via di risoluzione nelle province di Pescara e Chieti, vessate all''inizio della scorsa settimana da neve, vento e gelo. A Pescara ci sono alcune utenze residue da ripristinare, mentre a Chieti l''emergenza è finita, ed è stato chiusa anche la Sala coordinamento soccorsi.'
+link: 'http://news-town.it/cronaca/14664-abruzzo-15mila-utenze-ancora-senza-luce,-5mila-in-comuni-non-raggiungibili.html'
+data: 22/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2200,202392445,2017-01-22 16:58:44,2017-01-22 16:18:59,Coldiretti Cuneo offre stalle e vasche ad allevatori terremotati,44.3895619,7.5478699,"[""Accettato"", ""Form"", ""Ospitalita animali"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""Coldiretti Cuneo offre stalle e vasche ad allevatori terremotati"", ""data"": ""22/01/2017"", ""descrizione"": ""Coldiretti Cuneo torna ad offrire stalle per gli animali sfollati dal terremoto del centro Italia. \u201cNoi avevamo gi\u00e0 dato la nostra disponibilit\u00e0 questo autunno \u2013 dichiara Delia Revelli, presidente di Coldiretti Cuneo e Coldiretti Piemonte -. C'erano due stalle nella zona di Bra pronte ad accogliere 400 ovicaprini. Un invito che non era stato accolto perch\u00e8 gli imprenditori di quelle zone non avevano voluto abbandonare le loro aziende e il loro territorio. Ora la situazione in centro Italia con la neve \u00e8 peggiorata e noi rinnoviamo la nostra disponibilit\u00e0 per ospitare capi bovini, ovini o caprini\u201d."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Piazza Tancredi Galimberti, cascina Chiri, Cuneo, CN, Piemonte, 12100, Italia"", ""lat"": ""44.3895619"", ""link"": ""http://www.targatocn.it/2017/01/21/mobile/leggi-notizia/argomenti/attualita/articolo/coldiretti-cuneo-offre-stalle-e-vasche-per-gli-animali-sfollati-dal-terremoto-del-centro-italia.html"", ""lon"": ""7.5478699"", ""tel"": """"}","<pre><yamldata>tel: ''
 email: ''
 cosa: 'Coldiretti Cuneo offre stalle e vasche ad allevatori terremotati'
@@ -7,6 +12,17 @@ indirizzo: 'Piazza Tancredi Galimberti, cascina Chiri, Cuneo, CN, Piemonte, 1210
 lat: '44.3895619'
 lon: '7.5478699'
 link: 'http://www.targatocn.it/2017/01/21/mobile/leggi-notizia/argomenti/attualita/articolo/coldiretti-cuneo-offre-stalle-e-vasche-per-gli-animali-sfollati-dal-terremoto-del-centro-italia.html'
+immagine: ''
+data: 22/01/2017
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2199,202391327,2017-01-22 17:01:56,2017-01-22 15:59:21,A #Treia (Mc) cercasi roulotte o camper ,,,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""Roulotte o container"", ""data"": ""22/01/2017"", ""descrizione"": ""buon giorno sto cercando un ruolotte o camper ( piccolo, ma con i servizzi funzionanti) fino a cessare l\u00e9mergenza. Ho la mia casa ( zona Treia, MC) inagibile da agosto e bivvacco da un allogio provosiorio all altro. Chi volesse auitarmi sarei davvero contenta! Contatto: Petra 3291693369"", ""email"": ""pelange23@web.de"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3291693360""}","<pre><yamldata>tel: '3291693360'
+email: pelange23@web.de
+cosa: 'Roulotte o container'
+descrizione: 'buon giorno sto cercando un ruolotte o camper ( piccolo, ma con i servizzi funzionanti) fino a cessare lémergenza. Ho la mia casa ( zona Treia, MC) inagibile da agosto e bivvacco da un allogio provosiorio all altro. Chi volesse auitarmi sarei davvero contenta! Contatto: Petra 3291693369'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
 immagine: ''
 data: 22/01/2017
 </yamldata></pre>",open
@@ -1185,6 +1201,16 @@ link: ''
 immagine: ''
 data: 20/01/2017
 </yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2059,202137865,2017-01-20 13:44:41,2017-01-20 13:16:31,Offro alloggio gratuito per 4/5 persone a #Monterchi (AR),43.498448823331834,12.093876600265503,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""20/01/2017"", ""descrizione"": ""Offro alloggio gratuito per 4/5 persone a #Monterchi AR a chi \u00e8 stato colpito dal terremoto e desidera un alloggio dotato di tutti i confort e super attrezzato, offro gratuitamente la possibilit\u00e0 di soggiornare qui."", ""email"": ""orsiniraffaela@gmail.com"", ""immagine"": """", ""indirizzo"": ""SP42, Vicchio di Mezzo, Monterchi, AR, Tuscany, Italia"", ""lat"": ""43.498448823331834"", ""link"": """", ""lon"": ""12.093876600265503"", ""tel"": ""3384562547""}","<pre><yamldata>tel: '3384562547'
+email: orsiniraffaela@gmail.com
+descrizione: 'Offro alloggio gratuito per 4/5 persone a #Monterchi AR a chi è stato colpito dal terremoto e desidera un alloggio dotato di tutti i confort e super attrezzato, offro gratuitamente la possibilità di soggiornare qui.'
+indirizzo: 'SP42, Vicchio di Mezzo, Monterchi, AR, Tuscany, Italia'
+lat: '43.498448823331834'
+lon: '12.093876600265503'
+link: ''
+immagine: ''
+data: 20/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2058,202137095,2017-01-21 01:13:32,2017-01-20 13:12:28,Associazione 180amici: nemero emergenza Alto Aterno,42.3488992,13.3981375,"[""Accettato"", ""Bollettino"", ""Contatti"", ""Form"", ""Notizie Utili"", ""Sisma Gennaio 2017""]",,,"{""data"": ""20/01/2017"", ""descrizione"": ""L'associazione 180amici dell'Aquila in collaborazione con ActionAid ha attivato un numero di telefono per rispondere alle esigenze delle persone colpite dal terremoto nell'Alto Aterno. Tel. 3246393207"", ""email"": """", ""indirizzo"": ""Piazza Duomo, Pettino, L'Aquila, AQ, Abruzzo, 67100, Italia"", ""lat"": ""42.3488992"", ""link"": """", ""lon"": ""13.3981375"", ""nome"": ""Associazione 180amici e ActionAid"", ""tel"": ""3246393207""}","<pre><yamldata>nome: 'Associazione 180amici e ActionAid'
 tel: '3246393207'
 email: ''
@@ -1494,10 +1520,10 @@ link: ''
 immagine: ''
 data: 20/01/2017
 </yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2023,202101938,2017-01-21 00:18:28,2017-01-20 10:11:05,Offresi CAMPER in comodato d'uso,,,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Facebook"", ""Form"", ""Sisma Gennaio 2017""]",,,{},"<pre><yamldata>tel: ''
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2023,202101938,2017-01-22 17:03:04,2017-01-20 10:11:05,Offresi CAMPER in comodato d'uso,,,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Facebook"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""CAMPER in comodato d'uso"", ""data"": ""20/01/2017"", ""descrizione"": ""OFFRO IN COMODATO D'USO UN CAMPER X 4 PERSONE x due adulti e due bambini, ha tutto il comfort. Anche il riscaldamento, sono a disposizione"", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""https://www.facebook.com/pcampoli1/posts/10206660981801862"", ""lon"": """", ""tel"": """"}","<pre><yamldata>tel: ''
 email: ''
 cosa: 'CAMPER in comodato d''uso'
-descrizione: 'OFFRO IN COMODATO D'USO UN CAMPER X 4 PERSONE x due adulti e due bambini, ha tutto il comfort. Anche il riscaldamento, sono a disposizione'
+descrizione: 'OFFRO IN COMODATO D''USO UN CAMPER X 4 PERSONE x due adulti e due bambini, ha tutto il comfort. Anche il riscaldamento, sono a disposizione'
 indirizzo: ''
 lat: ''
 lon: ''
@@ -10989,18 +11015,6 @@ lat: '42.55610425'
 lon: '14.1134542382887'
 link: 'http://www.cityrumors.it/notizie-teramo/cronaca-teramo/309348-santomero-sentinelle-ecologiche-raccolta-beni-necessita-popolazioni-terremotate.html'
 immagine: ''
-data: 17/09/2016
-</yamldata></pre>
-",closed
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/577,177595846,2016-09-24 19:55:23,2016-09-17 18:08:30,Trastevere AMAtrice,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Trastevere AMAtrice"", ""data"": ""17/09/2016"", ""descrizione"": ""Cena di solidariet\u00e0 a base di pasta all'amatriciana in largo san Giovanni de Matha il 24 settembre dalle ore 19. L'intero ricavato verr\u00e0 devoluto alle popolazioni colpite dal sisma. Evento organizzato dall'Arciconfraternita del Carmine in Trastevere www.arciconfraternitadelcarmineintrastevere.it In collaborazione con Sei De Trastevere se..... ROBA DA GRAFICI I ragazzi del Cinema America Trastevere App ANPS Gruppo Roma 1 Associazione Amatrice-Configno La serata sar\u00e0 allietata dalle musiche di Giancarletto (Giancarlo Colarossi) accompagnato dal maestro Testa e presentata da Angelo Blasetti"", ""email"": null, ""iban"": """", ""intestazione"": """", ""link"": ""https://www.facebook.com/events/710807695739230/?ti=cl"", ""postale"": """"}","<pre><yamldata>chi: 'Trastevere AMAtrice'
-descrizione: 'Cena di solidarietà a base di pasta all''amatriciana in largo san Giovanni de Matha il 24 settembre dalle ore 19. L''intero ricavato verrà devoluto alle popolazioni colpite dal sisma. Evento organizzato dall''Arciconfraternita del Carmine in Trastevere www.arciconfraternitadelcarmineintrastevere.it In collaborazione con Sei De Trastevere se..... ROBA DA GRAFICI I ragazzi del Cinema America Trastevere App ANPS Gruppo Roma 1 Associazione Amatrice-Configno La serata sarà allietata dalle musiche di Giancarletto (Giancarlo Colarossi) accompagnato dal maestro Testa e presentata da Angelo Blasetti'
-intestazione: ''
-iban: ''
-bic: ''
-postale: ''
-causale: ''
-link: 'https://www.facebook.com/events/710807695739230/?ti=cl'
-email: 
 data: 17/09/2016
 </yamldata></pre>
 ",closed
