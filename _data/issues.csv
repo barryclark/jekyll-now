@@ -2661,13 +2661,13 @@ link: ''
 immagine: 'http://i.imgur.com/1udKYam.jpg'
 data: 19/01/2017
 </yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1901,201904710,2017-01-21 22:22:09,2017-01-19 16:15:44,Si mettono a disposizione due posti per cani a Montegranaro (Fm),43.2325226,13.6315802,"[""Accettato"", ""Form"", ""Ospitalita animali"", ""Sisma Gennaio 2017""]",,,"{""data"": ""19/01/2017"", ""descrizione"": ""Si mette a disposizione due posti per cani in un allevamento a montegranaro (FM)."", ""email"": ""silviagirotti@hotmail.it"", ""immagine"": """", ""indirizzo"": ""Strada Provinciale SP30 Fermana, Montegranaro, FM, Marche, 63812, Italia"", ""lat"": ""43.2325226"", ""link"": ""www.terremotocentroitalia.info"", ""lon"": ""13.6315802"", ""tel"": ""3397377884""}","<pre><yamldata>tel: '3397377884'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1901,201904710,2017-01-22 22:14:21,2017-01-19 16:15:44,Si mettono a disposizione due posti per cani a Montegranaro (Fm),43.2325226,13.6315802,"[""Accettato"", ""Form"", ""Ospitalita animali"", ""Sisma Gennaio 2017""]",,,"{""data"": ""19/01/2017"", ""descrizione"": ""Si mette a disposizione due posti per cani in un allevamento a montegranaro (FM)."", ""email"": ""silviagirotti@hotmail.it"", ""immagine"": """", ""indirizzo"": ""Strada Provinciale SP30 Fermana, Montegranaro, FM, Marche, 63812, Italia"", ""lat"": ""43.2325226"", ""link"": ""http://www.terremotocentroitalia.info"", ""lon"": ""13.6315802"", ""tel"": ""3397377884""}","<pre><yamldata>tel: '3397377884'
 email: silviagirotti@hotmail.it
 descrizione: 'Si mette a disposizione due posti per cani in un allevamento a montegranaro (FM).'
 indirizzo: 'Strada Provinciale SP30 Fermana, Montegranaro, FM, Marche, 63812, Italia'
 lat: '43.2325226'
 lon: '13.6315802'
-link: www.terremotocentroitalia.info
+link: http://www.terremotocentroitalia.info
 immagine: ''
 data: 19/01/2017
 </yamldata></pre>",open
