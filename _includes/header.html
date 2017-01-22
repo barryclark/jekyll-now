@@ -36,7 +36,7 @@
 	      s.parentNode.insertBefore(gcse, s);
 	    })();
 	  </script>
-	  <gcse:search></gcse:search>	
+	  <gcse:search></gcse:search>
   	</div>
         <div class="{{ include.type }}-heading">
           <h1>{% if page.title %}{{ page.title }}{% else %}<br/>{% endif %}</h1>
@@ -48,7 +48,7 @@
 			<h2 class="{{ include.type }}-subheading">{{ page.subtitle }}</h2>
 			{% endif %}
 		  {% endif %}
-		  
+
 		  {% if include.type == "post" %}
 		  <span class="post-meta">Posted on {{ page.date | date: "%B %-d, %Y" }}</span>
 		  {% endif %}
@@ -75,10 +75,17 @@
 			<h2 class="{{ include.type }}-subheading">{{ page.subtitle }}</h2>
 			{% endif %}
 		  {% endif %}
-		  
+
 		  {% if include.type == "post" %}
 		  <span class="post-meta">Posted on {{ page.date | date: "%B %-d, %Y" }}</span>
 		  {% endif %}
+
+      {% if include.type == "issue" %}
+        {% if page.issue.image != blank %}
+        <meta property="og:image" content="{{page.issue.image}}"/>
+        {% endif %}
+      {% endif %}
+
         </div>
       </div>
     </div>
