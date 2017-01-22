@@ -1,4 +1,24 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2216,202411460,2017-01-22 22:18:34,2017-01-22 21:29:52,Offresi a Marina Modica villetta sul mare,,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""22/01/2017"", ""descrizione"": ""Metto a disposizione la mia casa sul mare una villetta a Marina di Modica, 7 posti disponibili, 2camere letto matrimoniali di cui una anche con letto singolo, e un'altra camera con due letti singoli. 2bagni. Grande salone, cucina abitabile. Davanti la spiaggia. Disponibile per circa 3mesi."", ""email"": ""simonacanzonieri@virgilio.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""0033630885043""}","<pre><yamldata>tel: '0033630885043'
+email: simonacanzonieri@virgilio.it
+descrizione: 'Metto a disposizione la mia casa sul mare una villetta a Marina di Modica, 7 posti disponibili, 2camere letto matrimoniali di cui una anche con letto singolo, e un''altra camera con due letti singoli. 2bagni. Grande salone, cucina abitabile. Davanti la spiaggia. Disponibile per circa 3mesi.'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 22/01/2017
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2215,202410193,2017-01-22 22:17:16,2017-01-22 21:11:32,Disponibilità in prov. Reggio Emilia di 2 appartamenti e stalle per 20 capi,,,"[""Accettato"", ""Alloggi"", ""Bollettino"", ""Form"", ""Ospitalita animali""]",,,"{""data"": ""22/01/2017"", ""descrizione"": ""Diamo disponibilita' in provincia di Reggio Emilia di due appartamenti da 5/6 posti letto l'uno e per una ventina di capi di bestiame da ospitare nelle nostre stalle. non sappiamo bene a chi rivolgerci ma speriamo che il passaparola di facebook serva in qualche modo a raggiungere chi si sta impegnando per trovare sistemazioni per questa povera gente martoriata dal terremoto e dalla neve. Agriturismo la Borgaccia Tel 0522 843667 Mario 3802067736 Simona 3341688541 Baiso"", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""http://www.laborgaccia.it/"", ""lon"": """", ""tel"": ""0522843667""}","<pre><yamldata>tel: '0522843667'
+email: ''
+descrizione: 'Diamo disponibilita'' in provincia di Reggio Emilia di due appartamenti da 5/6 posti letto l''uno e per una ventina di capi di bestiame da ospitare nelle nostre stalle. non sappiamo bene a chi rivolgerci ma speriamo che il passaparola di facebook serva in qualche modo a raggiungere chi si sta impegnando per trovare sistemazioni per questa povera gente martoriata dal terremoto e dalla neve. Agriturismo la Borgaccia Tel 0522 843667 Mario 3802067736 Simona 3341688541 Baiso'
+indirizzo: ''
+lat: ''
+lon: ''
+link: 'http://www.laborgaccia.it/'
+immagine: ''
+data: 22/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2214,202410142,2017-01-22 21:12:25,2017-01-22 21:10:46,A #Grosseto punto raccolta rifornimenti per le popolazioni colpite dal #terremoto,,,"[""Accettato"", ""Bollettino"", ""Cibo"", ""Facebook"", ""Notizie Utili"", ""Sisma Gennaio 2017""]",,,"{""data"": ""22/01/2017"", ""descrizione"": ""Da Luned\u00ec 23/01 a Venerd\u00ec 27/01 il circolo ARCI Khorakhan\u00e8 sar\u00e0 a disposizione come centro di raccolta rifornimenti per le zone colpite dal terremoto. Venerd\u00ec i rifornimenti raccolti saranno spediti ai gruppi delle Brigate di Solidariet\u00e0 Attiva - Terremoto Centro Italia, presenti nelle zone interessate."", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1832998856967697/"", ""titolo"": ""Rifornimenti per le popolazioni colpite dal terremoto: a #Grosseto punto raccolta dal 23 al 23 gennaio""}","<pre><yamldata>titolo: 'Rifornimenti per le popolazioni colpite dal terremoto: a #Grosseto punto raccolta dal 23 al 23 gennaio'
 descrizione: 'Da Lunedì 23/01 a Venerdì 27/01 il circolo ARCI Khorakhanè sarà a disposizione come centro di raccolta rifornimenti per le zone colpite dal terremoto. Venerdì i rifornimenti raccolti saranno spediti ai gruppi delle Brigate di Solidarietà Attiva - Terremoto Centro Italia, presenti nelle zone interessate.'
 link: 'https://www.facebook.com/groups/1758670357733881/permalink/1832998856967697/'
