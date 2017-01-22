@@ -8,6 +8,7 @@ apt-get upgradeとかでkernelがversion upしてNVIDIAのdriverのversionと不
 こんなもん調べればいくらでも記事が出てくるだろうが、自分用に記録しておく。
 
 <br>
+
 ### 現在使っているkernel versionを調べる
 これは `aptitude` を使うのが楽。なければおもむろに `sudo apt-get install aptitude` で入れておく。
 
@@ -30,6 +31,7 @@ Description: Complete Generic Linux kernel and headers
 
 
 <br>
+
 ### versionを固定する設定ファイルを記載する
 versionは上記コマンドで調べたものとする。
 書き込むにはroot権限が必要なので `sudo vim /etc/cat/preferences.d/linux-kernel.pref` とかで編集。
@@ -49,8 +51,9 @@ Pin: version 4.4.0.59.62
 Pin-Priority: 1001
 ```
 
-<br>
-<br>
-だん。これで安心。<br>
+だん。これで安心。
+
+---
+---
 <br>
 

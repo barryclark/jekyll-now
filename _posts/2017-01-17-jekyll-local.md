@@ -7,6 +7,7 @@ UbuntuでGithub Pagesに公開するjekyllで作成したサイトをローカ�
 ちなみにUbuntu 16.04 LTS。
 
 <br>
+
 ### rbenvを用いたRuby環境の構築
 version management toolであるrbenvを用いてRuby環境を構築する。<br>
 まずは必要な依存関係のあるパッケージをインストール。
@@ -45,6 +46,7 @@ $ gem install bundler
 ```
 
 <br>
+
 ### Railsをインストール
 Railsでアプリケーションを動かすために必要になるNode.jsもインストールする。
 
@@ -67,6 +69,7 @@ $ gem install github-pages
 ```
 
 <br>
+
 ### repositoryをcloneしてきてローカルで確認
 自分の場合はこんな感じ。
 
@@ -83,8 +86,9 @@ Configuration file: /home/yohei/git/yoheikikuta.github.io/_config.yml
 これでブラウザで [http://127.0.0.1:4000/](http://127.0.0.1:4000/) にアクセスすれば確認できる。<br>
 止める場合は ```Ctrl+c``` で止める。ちなみに起動中にファイルを変更して保存すると自動的にウェブページの再生成が走るので、ブラウザをリロードすれば変更を確認できる。
 
-<br>
-<br>
-最も基本的な使い方はこんなもんでしょうか。<br>
+最も基本的な使い方はこんなもんでしょうか。
+
+---
+---
 <br>
 
