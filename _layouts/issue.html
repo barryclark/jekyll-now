@@ -43,6 +43,7 @@ layout: base
 
   {% if page.issue.image != blank %}
   <div class="row"> <div class="col-md-2">Immagine:</div> <div class="col-md-10"> <img alt="immagine" src="{{page.issue.image}}"></img> </div> </div>
+  <meta property="og:image" content="{{page.issue.image}}"/>
   {% endif %}
   {% if page.issue.data.link != blank %}
   <div class="row"> <div class="col-md-2">Link Fonte:</div> <div class="col-md-10"> <a href="{{page.issue.data.link}}">{{page.issue.data.link}}</a></div> </div>
