@@ -1,4 +1,36 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2190,202376354,2017-01-22 11:23:21,2017-01-22 11:06:47,A San Martino di #Fiastra servono ciaspole,,,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""Ciaspole"", ""data"": ""22/01/2017"", ""descrizione"": ""A San Martino di Fiastra agriturismo cerca ciaspole per raggiungere gatti a due km su sentiero con neve"", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3209742788""}","<pre><yamldata>tel: '3209742788'
+email: ''
+cosa: Ciaspole
+descrizione: 'A San Martino di Fiastra agriturismo cerca ciaspole per raggiungere gatti a due km su sentiero con neve'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 22/01/2017
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2187,202373468,2017-01-22 11:24:03,2017-01-22 10:04:31,Offresi alloggio in provincia di Verona,,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""22/01/2017"", ""descrizione"": ""Siamo una famiglia con la bimba di 4 anni, Comune di Cologna Veneta, VR. Offriamo una stanza e uso del resto della casa assieme a noi."", ""email"": ""alberto.vignato@yahoo.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3492189650""}","<pre><yamldata>tel: '3492189650'
+email: alberto.vignato@yahoo.it
+descrizione: 'Siamo una famiglia con la bimba di 4 anni, Comune di Cologna Veneta, VR. Offriamo una stanza e uso del resto della casa assieme a noi.'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 22/01/2017
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2184,202351863,2017-01-22 11:22:21,2017-01-22 01:20:21,A Rignano sull'Arno (Fi) raccolta beni di prima necessità,,,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Form"", ""Sisma Gennaio 2017""]",,,{},"<pre><yamldata>tel: '348 5914029 - 348 5914027'
+email: associazioneambrogio@gmail.com
+cosa: 'L''associazione San Ambrogio di Rignano sull'Arno (Fi) raccoglie beni di prima necessità'
+descrizione: 'L''associazione San Ambrogio di Rignano sull'Arno (Fi) raccoglie beni di prima necessità. Stiamo raccogliendo denaro (per comprare il mangime per gli animali), vestiti , cibo in scatole, libri e giochi per bimbi, e andremo di persona con i nostri mezzi a portarli. Partenza prevista non appena riusciamo ad avere sufficienti scorte forse già per il 28-29 gennaio. Punto di raccolta c/o associazione San Ambrogio, loc praticelli, RIGNANO SULL ARNO, altrimenti presso ufficio Generali assicurazioni, via luigi Gori 48 Pontassieve. Se avete problemi a portarci il vostro contributo veniamo noi da voi.'
+indirizzo: 'Via Luigi Gori, Podere Catese, Pontassieve, Metropolitan City of Florence, Tuscany, 50061, Italy'
+lat: '43.7755536'
+lon: '11.4423784'
+link: 'https://www.facebook.com/AssociazioneSportivaDilettantisticaAmbrogio/posts/1403844039666839'
+immagine: ''
+data: 22/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2182,202345926,2017-01-21 23:27:46,2017-01-21 23:06:29,Caritas di #Teramo raccoglie beni di prima necessità,42.66451,13.7199186,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Facebook"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""Caritas di #Teramo raccoglie beni di prima necessit\u00e0"", ""data"": ""21/01/2017"", ""descrizione"": ""La Caritas di Teramo-Atri raccoglie beni e generi di prima necessit\u00e0 per le popolazioni rimaste bloccate dalla neve. Dalle 10.00 alle 17.00 nell\u2019emporio della solidariet\u00e0 di Via Tevere a Teramo \u2013 Orari 10.00/17.00. Per info: 333 9438258 \u2013 0861 241427. S\u00ec pu\u00f2 portare: - Acqua - Cibo in scatola (fagioli, ceci, lenticchie, latte, biscotti, tonno, carne in scatola, omogeneizzati, passata di pomodoro, pancarr\u00e9, formaggi, affettati, pasta, olio in lattina) - Pannolini per bambini e per anziani - Assorbenti igienici - Carta igienica - Candele"", ""email"": """", ""immagine"": """", ""indirizzo"": ""Via della Pescara, Coste Sant'Agostino, San Berardo, Teramo, TE, ABR, 64100, Italia"", ""lat"": ""42.66451"", ""link"": ""https://www.facebook.com/mirella.lelli1/posts/10208541315117257"", ""lon"": ""13.7199186"", ""tel"": ""333 9438258 \u2013 0861 241427""}","<pre><yamldata>tel: '333 9438258 – 0861 241427'
 email: ''
 cosa: 'Caritas di #Teramo raccoglie beni di prima necessità'
