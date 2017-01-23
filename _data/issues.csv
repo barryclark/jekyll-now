@@ -1,4 +1,23 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2230,202566868,2017-01-23 16:42:33,2017-01-23 15:34:57,**URGENTE** Contrada villa alzano di fronte al cimitero manca la luce da 7 giorni #Tossicia,,,"[""Accettato"", ""Bollettino"", ""emergenzaAbruzzo"", ""nodo001"", ""Sisma Gennaio 2017""]",,,{},"tel: ''
+email: 
+descrizione: 'Contrada villa alzano di fronte al cimitero (tossicia) manca la luce da 7 giorni, ci sono persone anziane'
+indirizzo: 'Contrada villa alzano, tossicia. zona cimitero'
+lat: '42.551278'
+lon: '13.647401
+link: ''
+immagine: ''
+data: '23/01/2017'
+necessita: ''
+accesso: 'Accessibile a fuoristrada'
+latStrada: ''
+lonStrada: ''
+notastrada: ''",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2228,202559169,2017-01-23 16:40:27,2017-01-23 15:08:34,Attivo l'Ufficio Speciale per la ricostruzione della Regione Marche,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili"", ""Sisma Gennaio 2017""]",,,"{""data"": ""23/01/2017"", ""descrizione"": ""Dopo quasi tre mesi dal terremoto di fine ottobre, la Regione Marche ha reso noto i recapiti dell'Ufficio Speciale per la Ricostruzione, cui debbono essere inviate tutte le pratiche relative al sisma, a cominciare dalle richieste dei contributi. Le sedi dell'Ufficio sono due, una a Macerata, che copre anche provincia di Ancona, l'altro ad Ascoli, operativo anche per la provincia di Fermo. I recapiti sul sito Sibilla online"", ""link"": ""https://sibilla-online.com/2017/01/23/ufficio-speciale-ricostruzione-marche-recapiti-telefoni-e-indirizzi-email/"", ""titolo"": ""Attivo l'Ufficio Speciale per la ricostruzione della Regione Marche""}","<pre><yamldata>titolo: 'Attivo l''Ufficio Speciale per la ricostruzione della Regione Marche'
+descrizione: 'Dopo quasi tre mesi dal terremoto di fine ottobre, la Regione Marche ha reso noto i recapiti dell''Ufficio Speciale per la Ricostruzione, cui debbono essere inviate tutte le pratiche relative al sisma, a cominciare dalle richieste dei contributi. Le sedi dell''Ufficio sono due, una a Macerata, che copre anche provincia di Ancona, l''altro ad Ascoli, operativo anche per la provincia di Fermo. I recapiti sul sito Sibilla online'
+link: 'https://sibilla-online.com/2017/01/23/ufficio-speciale-ricostruzione-marche-recapiti-telefoni-e-indirizzi-email/'
+data: 23/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2224,202493990,2017-01-23 15:36:39,2017-01-23 10:18:44,Offro stalla per 600 suini #Forlì,,,"[""Accettato"", ""Alloggi"", ""Form"", ""Ospitalita animali"", ""Sisma Gennaio 2017""]",,,"{""data"": ""23/01/2017"", ""descrizione"": ""Offro stalla per suini capienza 600 capi adulti provincia di Forl\u00ec"", ""email"": ""claudio@canalimangimi.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3356554344""}","<pre><yamldata>tel: '3356554344'
 email: claudio@canalimangimi.com
 descrizione: 'Offro stalla per suini capienza 600 capi adulti provincia di Forlì'
@@ -4861,17 +4880,6 @@ https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1479,196670
 email: gdajeannot@gmail.com
 cosa: 'Cerco amante dei cani disposto a prendere in affidamento tre cagnolini terremotati'
 descrizione: 'Salve, purtroppo la mia casa, dove abitavo da 10 anni nella campagna maceratese, è inagibile e attualmente sono in affitto con i miei tre cani in un condominio con un piccolo giardino. Ho cercato uan casa recintata in modo da poter tenere con me i cani (prima avevano un grande spazio recintanto), ma per ora senza esito. I tre cani sono sue bastardine di 7 e 13 kg (Lilù di 4 anni e Chloé di 8 anni) e un Husky di poco più di 1 anno, Sasha. Non posso e non voglio separarli perché soffrirebbero troppo, per cui cerco una persona che ama veramente i cani, che avendo una casa recintata possa prenderli in affidamento. Nel condominio che ha un piccolo giardino abbaiano e quindi devo trovare assolutamente una situazione. Sono disperata! Sono disposta a contribuire al loro mantenimento acquistando il cibo. Vorrei solo che fossero felici come lo erano prima! Grazie.'
-indirizzo: ''
-lat: ''
-lon: ''
-link: ''
-immagine: ''
-data: 20/12/2016
-</yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1478,196668279,2016-12-20 13:45:11,2016-12-20 13:07:36,Cercasi casa nel maceratese,,,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Sisma Ottobre""]",,,"{""cosa"": ""Casa recintata"", ""data"": ""20/12/2016"", ""descrizione"": ""Cerco una casa indipendente in affitto con corte recintata perch\u00e9 ho tre cani, nei comuni del maceratese. La mia casa \u00e8 inagibile e attualmente sono in affitto in un condominio con piccolo giardino, ma i cani abbaiano e trattandosi di un condominio danno fastidio....ho gi\u00e0 dovuto regalare tutti gli altri animali che avevo con molto dolore....potrebbe andare bene anche una casa che veniva affitatta nei mesi estivi come casa vacanza, bed & breakfast (pagherei l'affitto tutto l'anno al posto dei soli affitti, seppure pi\u00f9 elevati, dei soli mesi estivi). Grazie."", ""email"": ""gdajeannot@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3333067313""}","<pre><yamldata>tel: '3333067313'
-email: gdajeannot@gmail.com
-cosa: 'Casa recintata'
-descrizione: 'Cerco una casa indipendente in affitto con corte recintata perché ho tre cani, nei comuni del maceratese. La mia casa è inagibile e attualmente sono in affitto in un condominio con piccolo giardino, ma i cani abbaiano e trattandosi di un condominio danno fastidio....ho già dovuto regalare tutti gli altri animali che avevo con molto dolore....potrebbe andare bene anche una casa che veniva affitatta nei mesi estivi come casa vacanza, bed & breakfast (pagherei l''affitto tutto l''anno al posto dei soli affitti, seppure più elevati, dei soli mesi estivi). Grazie.'
 indirizzo: ''
 lat: ''
 lon: ''
