@@ -49,3 +49,4 @@ Not available for purchase - Rules not yet publicly available.
 ![X-Wing](/images/10x10/2017-x-wing.jpg){: .float-left}I'm way behind the times when it comes to the X-Wing Miniatures Game. I've even had The Force Awakens core set for months now and still hadn't opened it. That changes now. I got my first game in yesterday and I can already feel myself sliding down the slippery slope of looking up new ships and shopping for the best prices. My daughter especially loves miniatures games and she, too, has fallen in love with the game. I can't believe it's taken me this long to get into [Fantasy Flight](https://www.fantasyflightgames.com/en/products/x-wing/)'s miniature empire (pun intended.)
 
 [Purchase](https://www.fantasyflightgames.com/en/products/x-wing/products/force-awakens-core-set/) - [View Tutorial](https://www.youtube.com/embed/PuhwSma960Y)
+<div class="clear"></div>
