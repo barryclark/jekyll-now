@@ -88,4 +88,3 @@ Not available for purchase - Rules not yet publicly available.
 [Purchase](https://www.fantasyflightgames.com/en/products/x-wing/products/force-awakens-core-set/) - [View Tutorial](https://www.youtube.com/embed/PuhwSma960Y)
 <div class="clear"></div>
 \\
-\\
