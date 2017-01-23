@@ -324,6 +324,24 @@ vb_replica_queue_pending -> 201443403603/104791634
 vb_replica_queue_size -> 641362829/436994
 ```
 
+**4. 장애직전 / 안정화 후 Free Memory**
+
+```
+비교 시간
+BEFORE : 2016-10-25 11:24:32(화요일)
+AFTER : 2017-01-03 11:31:07(화요일)
+******************** Result *********************
+<vBucket>
+<Server : 104>
+free_memory -> 71368704/2002853888
+<Server : 105>
+free_memory -> 110706688/3659141120
+<Server : 106>
+free_memory -> 67575808/3229872128
+<Server : 107>
+free_memory -> 95576064/3940560896
+```
+
 각 항목에 대한 설명은 [[memory : couchbase doc]](https://developer.couchbase.com/documentation/server/current/cli/cbstats/cbstats-memory.html)와 [[cbstats : couchbase doc]](https://developer.couchbase.com/documentation/server/current/cli/cbstats-intro.html)에서 확인 가능하지만, Membase Server 1.7.2 이후로 굉장히 많은 수정사항이 업데이트되며 사라지거나 새로 생긴 통계 항목들이 많기 때문에 정확한 확인이 어려웠습니다.
 
 #### 로그 수치 분석
