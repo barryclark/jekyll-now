@@ -208,6 +208,9 @@ img {
   font-weight: bold;
   font-size: 28px;
   letter-spacing: 1px;
+  &:hover {
+    color: $darkGray;
+  }
 }
 
 .site-description {
