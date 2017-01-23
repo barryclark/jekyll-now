@@ -1,4 +1,14 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2235,202602138,2017-01-23 17:44:08,2017-01-23 17:41:32,Sedi dell'Ufficio Speciale per la Ricostruzione della Regione Marche,,,"[""Accettato"", ""Contatti"", ""Form""]",,,"{""data"": ""23/01/2017"", ""descrizione"": ""Due le sedi dell'Ufficio Speciale per la Ricostruzione della Regione Marche. Una per Macerata-Ancona: Via Lorenzoni 169, Macerata (sede provvisoria), Tel. 0733 279841, Email: usr.mc@regione.marche.it, PEC: regione.marche.usr@emarche.it. L'altra per Ascoli Piceno-Fermo: Via della Cardatura, Ascoli Piceno, localit\u00e0 Marino del Tronto, Tel. 0736 343832, Fax 0736 342997, Email: Usr.AP@regione.marche.it, PEC: regione.marche.usr@emarche.it"", ""email"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""http://www.regione.marche.it/"", ""lon"": """", ""nome"": ""Sedi dell'Ufficio Speciale per la Ricostruzione della Regione Marche"", ""tel"": """"}","<pre><yamldata>nome: 'Sedi dell''Ufficio Speciale per la Ricostruzione della Regione Marche'
+tel: ''
+email: ''
+descrizione: 'Due le sedi dell''Ufficio Speciale per la Ricostruzione della Regione Marche. Una per Macerata-Ancona: Via Lorenzoni 169, Macerata (sede provvisoria), Tel. 0733 279841, Email: usr.mc@regione.marche.it, PEC: regione.marche.usr@emarche.it. L''altra per Ascoli Piceno-Fermo: Via della Cardatura, Ascoli Piceno, località Marino del Tronto, Tel. 0736 343832, Fax 0736 342997, Email: Usr.AP@regione.marche.it, PEC: regione.marche.usr@emarche.it'
+indirizzo: ''
+lat: ''
+lon: ''
+link: 'http://www.regione.marche.it/'
+data: 23/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2234,202599885,2017-01-23 17:33:58,2017-01-23 17:32:36,Centro Operativo di Accoglienza e Alloggiamento della Regione Abruzzo a Giulianova,42.7534856,13.9667011,"[""Accettato"", ""Contatti"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""23/01/2017"", ""descrizione"": ""Centro Operativo di Accoglienza e Alloggiamento della Regione Abruzzo a Giulianova, contatti: 335/6193966; 335/6783753; 338/4170008; 331/6249492."", ""email"": """", ""indirizzo"": ""Viale Vincenzo Orsini, Giulianova, TE, ABR, 64021, Italia"", ""lat"": ""42.7534856"", ""link"": ""http://www.regione.abruzzo.it/content/emergenza-sono-circa-2700-le-persone-ospitate-nelle-strutture-ricettive-della-costa"", ""lon"": ""13.9667011"", ""nome"": ""Centro Operativo di Accoglienza e Alloggiamento della Regione Abruzzo a Giulianova"", ""tel"": ""335/6193966; 335/6783753; 338/4170008; 331/6249492""}","<pre><yamldata>nome: 'Centro Operativo di Accoglienza e Alloggiamento della Regione Abruzzo a Giulianova'
 tel: '335/6193966; 335/6783753; 338/4170008; 331/6249492'
 email: ''
