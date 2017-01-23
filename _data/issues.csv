@@ -1,4 +1,14 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2224,202493990,2017-01-23 15:36:39,2017-01-23 10:18:44,Offro stalla per 600 suini #Forlì,,,"[""Accettato"", ""Alloggi"", ""Form"", ""Ospitalita animali"", ""Sisma Gennaio 2017""]",,,"{""data"": ""23/01/2017"", ""descrizione"": ""Offro stalla per suini capienza 600 capi adulti provincia di Forl\u00ec"", ""email"": ""claudio@canalimangimi.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3356554344""}","<pre><yamldata>tel: '3356554344'
+email: claudio@canalimangimi.com
+descrizione: 'Offro stalla per suini capienza 600 capi adulti provincia di Forlì'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 23/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2223,202489555,2017-01-23 10:01:01,2017-01-23 10:00:09,"Raccolta a Roma di cibo per animali, cucce e coperte dell'associazione Libra 2.0",41.8359338,12.6022242,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""Raccolta a Roma di cibo per animali, cucce e coperte dell'associazione Libra 2.0"", ""data"": ""23/01/2017"", ""descrizione"": ""L'associazione Libra 2.0 sta raccogliendo cibo per cani, gatti, conigli e fieno per cavalli per gli animali delle zone terremotate. Servono anche cucce e coperte. Sono in contatto con alcuni allevatori che sono VERAMENTE DISPERATI. Per contatti: 347-9526902 Manuela o portare al centro raccolta via Tuscolana 507 - Roma, sig. Stefano. Partiranno il 29 gennaio con il materiale raccolto."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Via Tuscolana, Romanina, Municipio Roma VII, Roma, RM, LAZ, 00173, Italia"", ""lat"": ""41.8359338"", ""link"": ""https://libraduepuntozero.wordpress.com/2017/01/23/raccolta-cibo-per-cani-gatti-conigli-e-cavalli-zone-terremot/"", ""lon"": ""12.6022242"", ""tel"": """"}","<pre><yamldata>tel: ''
 email: ''
 cosa: 'Raccolta a Roma di cibo per animali, cucce e coperte dell''associazione Libra 2.0'
