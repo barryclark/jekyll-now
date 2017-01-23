@@ -15,45 +15,54 @@ Back toward the beginning of the month I posted about the [10x10 Board Game Chal
 [Purchase](https://www.thegamecrafter.com/games/avoid-the-void) - [View Rules](https://s3.amazonaws.com/download.thegamecrafter.com/1485194460/RulesDoc.pdf)
 <div class="clear"></div>
 
+
 ![Brass Empire](/images/10x10/2017-brassempire.png){: .float-left}Brass Empire is one of my favorite deckbuilding games. Put out last year by [Rock Manor Games](http://www.rockmanorgames.com/), it's already sold out after an very successfully Kickstarter run and pre-order campaign. You can still snag the Travel Edition off The Game Crafter, but the full game is really one to seek out. One of the coolest parts? You can play a single player campaign against an automated opponent.
 
 [Purchase Travel Edition](https://www.thegamecrafter.com/games/brass-empire-travel-edition-) - [View Rules](http://rockmanor.s3.amazonaws.com/brassempire/rulebook.pdf)
 <div class="clear"></div>
+
 
 ![Dragon Dice](/images/10x10/2017-dragondice.jpg){: .float-left}Dragon Dice currently sits at the top as one of my favorite games, although it's not one that really gets to the table that often. I'm hoping to change that this year, especially with the re-release of the Undead faction. For those who aren't familiar, Dragon Dice has been around a *long* time. [SFR, Inc](http://www.sfr-inc.com/index.php) has kept it alive and has done an amazing job putting out new products and reprinting older ones.
 
 [Purchase 2-Player Starter](http://www.sfr-inc.com/cart/product_info.php?cPath=21&products_id=184) - [View Rules](http://sfr-inc.com/whatisthat/graphicalrulebookdraft.pdf)
 <div class="clear"></div>
 
+
 ![Dreadball](/images/10x10/2017-dreadball.jpg){: .float-left}Another of my favorites, Dreadball is a fast-paced, sci-fi sports game by [Mantic Games](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=0ahUKEwjxsYKi79jRAhXHqFQKHU_mCEEQFggcMAA&url=http%3A%2F%2Fwww.manticgames.com%2F&usg=AFQjCNErbmbedfdPP63_3bHHItSRUoNDRQ&sig2=umP9n1DNJvN3JILWt3NdAA). I was introduced to this one back in 2013 at my first PAX East. While not a sports fan, this one really captured my attention. I've since gone on to assemble several teams (though haven't really painted them yet) and played a few games with my kids. This is another I've added to the list because I really want to get it to the table more.
 
 [Purchase](http://www.manticgames.com/mantic-shop/dreadball/getting-started.html) - Rules not Available Online
 <div class="clear"></div>
+
 
 ![Gruff](/images/10x10/2017-gruff.png){: .float-left}Gruff is an excellent mutant goat card-battling game put out by [Studio Woe](http://www.studiowoe.com). Pick a Shepard and build a team of Mean, Weird, and Fat Gruffs to decimate your opponent's team. I was first introduced to his while previewing it's stand-alone expansion, Clash of the Battle Goats, when it hit Kickstarter. I was given a copy by the designer last year at PAX East to round out my collection. It's one my oldest and I have a great time playing, and it certainly deserves more table time.
 
 [Purchase](http://studio-woe.myshopify.com/products/gruff-the-tactical-card-game-of-mutated-monster-goats) - [Rules](https://drive.google.com/file/d/0B6jopDNVTQ08V25IdXNZQ3hTZGM/view)
 <div class="clear"></div>
 
+
 ![Guardians of AsunDur](/images/10x10/2017-guardiansofasundur.jpg){: .float-left}Guardians of AsunDur was the runner-up for Best in Show at the first ever Connecticut Festival for Indie Games, and for good reason! It's a cooperative game where Angels are trying to stop Corruption from entering the world. The game employs great mechanics that really force the players to work together or suffer horrible defeat. Streamlined play, beautiful art, and easy to learn. There's not reason [DPH Studioz](http://www.dphstudioz.com/index.html)' game shouldn't be on this list. The problem? The game isn't out yet. The solution? I've got an in.
 
 Not available for purchase - Rules not yet publicly available.
 <div class="clear"></div>
+
 
 ![Hero Realms](/images/10x10/2017-herorealms.png){: .float-left}[White Wizard Games](http://www.whitewizardgames.com/herorealms/) made waves when it first released Star Realms, an excellent and extremely inexpensive deckbuilding game. Hero Realms is the fantasy version of the game, though it has a few different mechanics that can be added in. Character Decks allow players to start with different hands, and have different cards available to them throughout the game. Soon a Campaign Deck will be released that allows players to play a longer game where their heroes can level up and gain more powerful cards as the campaign progresses. It's fantastic, and I can't wait to get my hands on everything that's released for it.
 
 [Purchase](http://white-wizard-games.myshopify.com/collections/hero-realms/products/pre-order-hero-realms-base-game) - [View Rules](http://www.whitewizardgames.com/wp-content/uploads/2016/09/Hero_Realms_Rules_Web.pdf)
 <div class="clear"></div>
 
+
 ![OGRE](/images/10x10/2017-ogre.jpg){: .float-left}It's been *long* time since I played [Steve Jackson's](http://www.sjgames.com/ogre/) OGRE, and it's a game I feel obligated to share with my kids. I picked up the Pocket Edition a while back but haven't gotten it to the table yet. There's also a new, boxed 6th Edition coming out that looks pretty amazing. OGRE may be old, but it's stood up well over time. Time to teach the younger generation and also get my dose of awesome nostalgia!
 
 [Purchase](http://www.sjgames.com/ogre/products/ogre6e/) - [View Rules](http://www.sjgames.com/ogre/products/ogredesigner/img/ogre_rulebook.pdf)
 <div class="clear"></div>
 
+
 ![Tak](/images/10x10/2017-tak.jpg){: .float-left}[Cheapass Games](http://cheapass.com/tak/) knocked it out of the park with Tak, a game pulled from the pages of Patrick Rothfuss' *The Wise Man's Fear*. The game had a phenomenal Kickstarter campaign, but Cheapass also released the rules and piece dimensions for those who want to make their own sets. I was able to 3D print pieces I found on Thingiverse and make a crappy fabric board so I could take this one wherever I go. I played a lot of Tak this year, and I don't see that changing this year. Why add it to the list? My goal is to play Tak not just 10 times this year, *but with 10 different people*. I love spreading the joy of Tak, and couldn't leave this one out.
 
 [Pre-order](https://thetinkerspacks.com/collections/tak) - [View Rules](http://cheapass.com/wp-content/uploads/2016/05/TakWebRules.pdf)
 <div class="clear"></div>
+
 
 ![X-Wing](/images/10x10/2017-x-wing.jpg){: .float-left}I'm way behind the times when it comes to the X-Wing Miniatures Game. I've even had The Force Awakens core set for months now and still hadn't opened it. That changes now. I got my first game in yesterday and I can already feel myself sliding down the slippery slope of looking up new ships and shopping for the best prices. My daughter especially loves miniatures games and she, too, has fallen in love with the game. I can't believe it's taken me this long to get into [Fantasy Flight](https://www.fantasyflightgames.com/en/products/x-wing/)'s miniature empire (pun intended.)
 
