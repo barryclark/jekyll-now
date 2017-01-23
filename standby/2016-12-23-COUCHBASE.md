@@ -328,6 +328,8 @@ vb_replica_queue_size -> 641362829/436994
 
 #### 로그 수치 분석
 
+*아래 로그는 장애 발생 일주일 전부터의 데이터를 다룹니다.*
+
 메모리 반환 작업이 정상적으로 수행되지 못하는 것을 의심하였으나 ep engine은 정상적인 주기로 동작하고 있는 것을 확인했습니다.
 
 ```
@@ -335,16 +337,22 @@ ep_exp_pager_stime            3600
 ep_item_flush_expired         1240193940
 ```
 
-eject에 실패했다는 `ep_num_eject_failures` 수치가 비정상적으로 높은 것을 확인하였고, 메타데이터-키-값을 저장하는데 사용되는 메모리인 `ep_kv_size`가 지속적으로 증가하고 있는 것을 확인하였고!
+메타데이터-키-값을 저장하는데 사용되는 메모리인 `ep_kv_size`가 지속적으로 증가하고 있는 것을 확인하였고!
 
 ```
-ep_num_eject_failures  161119834
 ep_kv_size 누적 증가량 321088428
+ep_total_cache_size 누적 증가량 7564122
 ```
 
 메모리는 해제되고 있으나, 메모리가 해제되는 것보다 쌓이는 속도가 더 클 수 있다는 가설을 세워 보았습니다.(가설이 맞다면 비정상적으로 많이 쌓인 DiskQueue가 설명이 될 것이라는..)
 
-메모리를 쌓는 set, update operation 수치를 Membase Console을 통해 확인해보았습니다.
+그래서 `ep_total_new_items`과 `ep_total_del_items`의 차를 현재 가지고 있는 Item 갯수로 정의하고 값을 추출하여 그래프를 그려보았습니다.
+
+![증가하는 아이템 수](/images/2016/2016_12_23_COUCHBASE/current_item.png)
+
+위에서 보았던 `free memory`의 지속적 하락과 비슷한 곡선을 보인다고 파악됩니다.
+
+원인을 파악하기 위하여 메모리를 쌓는 set, update operation 수치를 Membase Console을 통해 확인해보았습니다.
 
 **신규 Key 값에 대한 통계 수치**
 
