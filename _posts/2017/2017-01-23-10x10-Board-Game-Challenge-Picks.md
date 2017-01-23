@@ -11,6 +11,8 @@ author: Rob Kalajian
 Back toward the beginning of the month I posted about the [10x10 Board Game Challenge](http://pawnsperspective.com/10x10-Board-Game-Challenge/). I've finally printed out the sheet and picked my 10 games. Here they are in no particular order (lies, they're alphabetical.)
 \\
 \\
+\\
+\\
 ![Avoid the Void](/images/10x10/2017-avoidthevoid.png){: .float-left}Avoid the Void is an excellent game that was released last year by [Geek Fever Games](http://www.geekfevergames.com/avoid-the-void.html). It's faced paced, handles up to 7 players, and is ultra chaotic. Basically the idea of the game is to stay on the board as long as possible. If you ever run out of cards, or can't move on your movement turn, you become a Void Beast who's sole purpose is to mess with everyone else. It's a hell of a good time, and one that I can find an audience for almost anywhere.
 
 [Purchase](https://www.thegamecrafter.com/games/avoid-the-void) - [View Rules](https://s3.amazonaws.com/download.thegamecrafter.com/1485194460/RulesDoc.pdf)
