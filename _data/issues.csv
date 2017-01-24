@@ -1,4 +1,14 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2248,202763529,2017-01-24 10:07:10,2017-01-24 09:21:06,Offro appartamento #Bergamo,,,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""24/01/2017"", ""descrizione"": ""Offro appartamento pi\u00f9 riscaldamento gratuitamente a famiglia max 4 persone con sei vani per tutto il tempo necessario in Val Brembilla. Provincia di Bergamo. Ho vissuto una alluvione e so cosa vuol dire perdere la casa ."", ""email"": ""salvicarlogiovanni@virgilio.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3204238949""}","<pre><yamldata>tel: '3204238949'
+email: salvicarlogiovanni@virgilio.it
+descrizione: 'Offro appartamento più riscaldamento gratuitamente a famiglia max 4 persone con sei vani per tutto il tempo necessario in Val Brembilla. Provincia di Bergamo. Ho vissuto una alluvione e so cosa vuol dire perdere la casa .'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 24/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2246,202713553,2017-01-24 07:14:43,2017-01-24 03:09:10,Offresi stalla per almeno 10 bovini in provincia di Firenze ,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Ospitalita animali"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""Stalla"", ""data"": ""24/01/2017"", ""descrizione"": ""Mettiamo a disposizione la nostra stalla, c'\u00e8 posto per almeno 10 bovini. Provincia di Firenze."", ""email"": ""info@laiadimartino.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3280725857""}","<pre><yamldata>tel: '3280725857'
 email: info@laiadimartino.it
 cosa: Stalla
