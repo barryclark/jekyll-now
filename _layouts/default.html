@@ -1,80 +1,542 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+<html xmlns="http://www.w3.org/1999/xhtml">
 
-    {% include meta.html %}
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Igor Khailin</title>
+	<meta name="author" content="Igor Khailin" />
+	<meta name="description" content="Front-end developer portfolio." />
+	<meta name="keywords"  content="portfolio,front-end,developer,fullpage,jquery,anime.js" />
+	<meta name="Resource-type" content="Document" />
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" href="css/normalize.css">
+		<!--[if IE]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<script>
+		document.documentElement.className = 'js';
+		</script>
 
-    <!--[if lt IE 9]>
-      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-      <meta name="apple-mobile-web-app-capable" content="yes">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="shortcut icon" href="/images/favicon.png" type="image/png">
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
-    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
 
-    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
-  </head>
+</head>
+<body class="demo5">
+	<header>
+		<nav class="nav nav--kafa" id="menu">
+			<a href="#firstPage"><button data-menuanchor="firstPage" class="nav__item active" aria-label="Item 1"><span class="nav__item-inner"><img class="nav__item-img" src="img/Stars.svg" alt="Avatar 1" /></span><span class="nav__item-title">Главная</span></button></a>
+			<a href="#secondPage"><button data-menuanchor="secondPage" class="nav__item" aria-label="Item 2"><span class="nav__item-inner"><img class="nav__item-img" src="img/Astronaut.svg" alt="Avatar 2" /></span><span class="nav__item-title">Навыки</span></button></a>
+			<a href="#3rdPage"><button data-menuanchor="3rdPage" class="nav__item" aria-label="Item 3"><span class="nav__item-inner"><img class="nav__item-img" src="img/Planet_3.svg" alt="Avatar 3" /></span><span class="nav__item-title">Портфолио</span></button></a>
+			<a href="#4rdPage"><button data-menuanchor="4rdPage" class="nav__item" aria-label="Item 4"><span class="nav__item-inner"><img class="nav__item-img" src="img/UFO_2.svg" alt="Avatar 4" /></span><span class="nav__item-title">Контакты</span></button></a>
+		</nav>
+	</header>
 
-  <body>
-    <div class="wrapper-masthead">
-      <div class="container">
-        <header class="masthead clearfix">
-           <!-- <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
 
-          <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-            <p class="site-description">{{ site.description }}</p>
-          </div> -->
-              <h1>
-                 <a href="/">
-                  <span class="logo">Igor Khailin</span>
-                 </a> 
-              </h1>
-          <p class="small-text">// front-end developer //</p>
-        </header>
-        <div class="header_bottom_hr"></div>
-          <nav>
-            <a href="#Work">Work</a>
-            <a href="#About">About me</a>
-            <a href="#contact">Contact</a>
-          </nav>
-      </div>
-    </div>
-
-    <section class="section-work">
-        <h3 id="work">Work</h3>
-            <div class="info">
-			<div class="buttons">
-				<p class="flex-p">
-					<a href="http://ups.in.ua" data-modal="#modal" class="modal__trigger" target="_blank"><img src="/images/thumb.png" alt="proj-2" class="modall"></a>
-					<a href="http://mikro.in.ua" data-modal="#modal2" class="modal__trigger" target="_blank"><img src="/images/thumb(1).png" alt="proj-3" class="modall"></a>
-					<a href="{{ site.baseurl }}/poool" data-modal="#modal3" class="modal__trigger" target="_blank"><img src="/images/thumb(2).png" alt="proj-4" class="modall"></a>
-					<a href="http://giordany-partners.com.ua" data-modal="#modal4" class="modal__trigger" target="_blank"><img src="/images/thumb(3).png" alt="proj-5" class="modall"></a>
-					<a href="http://prime-room.com" data-modal="#modal5" class="modal__trigger" target="_blank"><img src="/images/thumb(4).png" alt="proj-6" class="modall"></a>
-					<a href="http://sm-avto.com/" data-modal="#modal6" class="modal__trigger" target="_blank"><img src="/images/thumb(5).png" alt="proj-7" class="modall"></a>
-				</p>
+<div id="fullpage">
+	<div class="section" id="section0">
+		<svg class="hidden">
+			<defs>
+				<symbol id="icon-arrow" viewBox="0 0 24 24">
+					<title>arrow</title>
+					<polygon points="6.3,12.8 20.9,12.8 20.9,11.2 6.3,11.2 10.2,7.2 9,6 3.1,12 9,18 10.2,16.8 " />
+				</symbol>
+				<symbol id="icon-drop" viewBox="0 0 24 24">
+					<title>drop</title>
+					<path d="M12,21c-3.6,0-6.6-3-6.6-6.6C5.4,11,10.8,4,11.4,3.2C11.6,3.1,11.8,3,12,3s0.4,0.1,0.6,0.3c0.6,0.8,6.1,7.8,6.1,11.2C18.6,18.1,15.6,21,12,21zM12,4.8c-1.8,2.4-5.2,7.4-5.2,9.6c0,2.9,2.3,5.2,5.2,5.2s5.2-2.3,5.2-5.2C17.2,12.2,13.8,7.3,12,4.8z" />
+					<path d="M12,18.2c-0.4,0-0.7-0.3-0.7-0.7s0.3-0.7,0.7-0.7c1.3,0,2.4-1.1,2.4-2.4c0-0.4,0.3-0.7,0.7-0.7c0.4,0,0.7,0.3,0.7,0.7C15.8,16.5,14.1,18.2,12,18.2z" />
+				</symbol>
+			</defs>
+		</svg>
+		<main>
+			<section>
+				<!-- Initial markup -->
+				<div class="segmenter" style="background-image: url(img/5.jpg)"></div>
+				<h2 class="trigger-headline trigger-headline--hidden flex">
+					<span>Igor Khailin</span>
+					<span class="small-text">// front-end developer //</span>
+				</h2>
+				<div class="bottom-nav no_show">
+					<button class="btn btn--trigger">Нажмите меня!</button>
+					<a href="#secondPage">
+						<span class="mouse">
+							<span class="mouse--wheel"></span>
+						</span>
+					</a>
+				</div>
+			</section>
+		</main>
+	
+	</div>
+	<div class="section" id="section1">
+	<canvas id="c"></canvas>
+		<div class="intro no-show">
+			<header class="skills-head">
+				<h1>Навыки</h1>
+			</header>
+			<div class="wrapper-skills ">
+				<section class="skills">
+					<div class="skills-item">
+						<figure>
+							<img src="img/javascript.svg" alt="Javascript" class="javascript">
+							<figcaption>JavaScript</figcaption>
+						</figure>
+					</div>
+					<div class="skills-item">
+						<figure>
+							<img src="img/jquery.svg" alt="jQuery">
+							<figcaption>jQuery</figcaption>
+						</figure>
+					</div>
+					<div class="skills-item">
+						<figure>
+							<img src="img/gulp.svg" alt="Gulp">
+							<figcaption>Gulp</figcaption>
+						</figure>
+					</div>
+					<div class="skills-item">
+						<figure>
+							<img src="img/html5.svg" alt="HTML5">
+							<figcaption>HTML5</figcaption>
+						</figure>
+					</div>
+					<div class="skills-item">
+						<figure>
+							<img src="img/Boostrap.svg" alt="Bootstrap">
+							<figcaption>Bootstrap</figcaption>
+						</figure>
+					</div>
+					<div class="skills-item">
+						<figure>
+							<img src="img/css3.svg" alt="CSS3">
+							<figcaption>CSS3</figcaption>
+						</figure>
+					</div>
+					<div class="skills-item">
+						<figure>
+							<img src="img/npm.svg" alt="npm">
+							<figcaption>npm</figcaption>
+						</figure>
+					</div>
+					<div class="skills-item">
+						<figure class="flipInY">
+							<img src="img/sass.svg" alt="Sass" class="flipInY">
+							<figcaption>Sass</figcaption>
+						</figure>
+					</div>
+					<div class="skills-item">
+						<figure>
+							<img src="img/git.svg" alt="Git">
+							<figcaption>Git</figcaption>
+						</figure>
+					</div>
+					<div class="skills-item">
+						<figure>
+							<img src="img/github.svg" alt="GitHub">
+							<figcaption>GitHub</figcaption>
+						</figure>
+					</div>
+					<div class="skills-item">
+						<figure>
+							<img src="img/jekyll.svg" alt="Jekyll">
+							<figcaption>Jekyll</figcaption>
+						</figure>
+					</div>
+					<div class="skills-item">
+						<figure>
+							<img src="img/wordpress.svg" alt="WordPress">
+							<figcaption>WordPress</figcaption>
+						</figure>
+					</div>
+				</section>
 			</div>
-		    </div>
+		</div>
+	</div>
+	<div class="section" id="section2">
+		<div class="intro3 no--show">
+			<header class="portfolio-head">
+				<h1>Портфолио</h1>
+			</header>
+			<div class="wrapper-portfolio ">
+				<section class="portfolio">
+					<div class="portfolio-item">
+						<a href="http://sm-avto.com/">see in live</a>
+						<figure>
+							<img src="img/thumb(5).png" alt="sm-avto.com">
+						</figure>
+						
+					</div>
+					<div class="portfolio-item">
+						<figure>
+							<img src="img/thumb(2).png" alt="Poool">
+						</figure>
+						<a href="http://gingabit.github.io/poool">see in live</a>
+					</div>
+					<div class="portfolio-item">
+						<figure>
+							<img src="img/thumb(4).png" alt="prime-room.com">
+						</figure>
+						<a href="http://prime-room.com">see in live</a>
+					</div>
+					<div class="portfolio-item">
+						<figure>
+							<img src="img/thumb(1).png" alt="Mikro.in.ua">
+						</figure>
+						<a href="http://mikro.in.ua">see in live</a>
+					</div>
+					<div class="portfolio-item">
+						<figure>
+							<img src="img/thumb(3).png" alt="giordany-partners.com.ua">
+						</figure>
+						<a href="http://giordany-partners.com.ua">see in live</a>
+					</div>
+				</section>
+			</div>
+		</div>
+	</div>
+	<div class="section" id="section3">
+		<div class="intro4 no__show">
+			<header class="contacts-head">
+				<h1>Контакты</h1>
+			</header>
+			<div class="wrapper-contacts">
+				<section class="social">
+					<div class="social-item">
+						<a href="https://vk.com/khailin" target="_blank" class="vk"><img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTguMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDExMi4xOTYgMTEyLjE5NiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMTEyLjE5NiAxMTIuMTk2OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4Ij4KPGc+Cgk8Zz4KCQk8Y2lyY2xlIGlkPSJYTUxJRF8xMV8iIHN0eWxlPSJmaWxsOiM0RDc2QTE7IiBjeD0iNTYuMDk4IiBjeT0iNTYuMDk4IiByPSI1Ni4wOTgiLz4KCTwvZz4KCTxwYXRoIHN0eWxlPSJmaWxsLXJ1bGU6ZXZlbm9kZDtjbGlwLXJ1bGU6ZXZlbm9kZDtmaWxsOiNGRkZGRkY7IiBkPSJNNTMuOTc5LDgwLjcwMmg0LjQwM2MwLDAsMS4zMy0wLjE0NiwyLjAwOS0wLjg3OCAgIGMwLjYyNS0wLjY3MiwwLjYwNS0xLjkzNCwwLjYwNS0xLjkzNHMtMC4wODYtNS45MDgsMi42NTYtNi43NzhjMi43MDMtMC44NTcsNi4xNzQsNS43MSw5Ljg1Myw4LjIzNSAgIGMyLjc4MiwxLjkxMSw0Ljg5NiwxLjQ5Miw0Ljg5NiwxLjQ5Mmw5LjgzNy0wLjEzN2MwLDAsNS4xNDYtMC4zMTcsMi43MDYtNC4zNjNjLTAuMi0wLjMzMS0xLjQyMS0yLjk5My03LjMxNC04LjQ2MyAgIGMtNi4xNjgtNS43MjUtNS4zNDItNC43OTksMi4wODgtMTQuNzAyYzQuNTI1LTYuMDMxLDYuMzM0LTkuNzEzLDUuNzY5LTExLjI5Yy0wLjUzOS0xLjUwMi0zLjg2Ny0xLjEwNS0zLjg2Ny0xLjEwNWwtMTEuMDc2LDAuMDY5ICAgYzAsMC0wLjgyMS0wLjExMi0xLjQzLDAuMjUyYy0wLjU5NSwwLjM1Ny0wLjk3OCwxLjE4OS0wLjk3OCwxLjE4OXMtMS43NTMsNC42NjctNC4wOTEsOC42MzZjLTQuOTMyLDguMzc1LTYuOTA0LDguODE3LTcuNzEsOC4yOTcgICBjLTEuODc1LTEuMjEyLTEuNDA3LTQuODY5LTEuNDA3LTcuNDY3YzAtOC4xMTYsMS4yMzEtMTEuNS0yLjM5Ny0xMi4zNzZjLTEuMjA0LTAuMjkxLTIuMDktMC40ODMtNS4xNjktMC41MTQgICBjLTMuOTUyLTAuMDQxLTcuMjk3LDAuMDEyLTkuMTkxLDAuOTRjLTEuMjYsMC42MTctMi4yMzIsMS45OTItMS42NCwyLjA3MWMwLjczMiwwLjA5OCwyLjM5LDAuNDQ3LDMuMjY5LDEuNjQ0ICAgYzEuMTM1LDEuNTQ0LDEuMDk1LDUuMDEyLDEuMDk1LDUuMDEyczAuNjUyLDkuNTU0LTEuNTIzLDEwLjc0MWMtMS40OTMsMC44MTQtMy41NDEtMC44NDgtNy45MzgtOC40NDYgICBjLTIuMjUzLTMuODkyLTMuOTU0LTguMTk0LTMuOTU0LTguMTk0cy0wLjMyOC0wLjgwNC0wLjkxMy0xLjIzNGMtMC43MS0wLjUyMS0xLjcwMi0wLjY4Ny0xLjcwMi0wLjY4N2wtMTAuNTI1LDAuMDY5ICAgYzAsMC0xLjU4LDAuMDQ0LTIuMTYsMC43MzFjLTAuNTE2LDAuNjExLTAuMDQxLDEuODc1LTAuMDQxLDEuODc1czguMjQsMTkuMjc4LDE3LjU3LDI4Ljk5MyAgIEM0NC4yNjQsODEuMjg3LDUzLjk3OSw4MC43MDIsNTMuOTc5LDgwLjcwMkw1My45NzksODAuNzAyeiIvPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=" /></a>
+						<a href="https://github.com/Gingabit" target="_blank" class="github"><img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCAyOTEuMzIgMjkxLjMyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAyOTEuMzIgMjkxLjMyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4Ij4KPGc+Cgk8cGF0aCBzdHlsZT0iZmlsbDojMkI0MTREOyIgZD0iTTE0NS42NiwwQzY1LjIxOSwwLDAsNjUuMjE5LDAsMTQ1LjY2YzAsODAuNDUsNjUuMjE5LDE0NS42NiwxNDUuNjYsMTQ1LjY2ICAgczE0NS42Ni02NS4yMSwxNDUuNjYtMTQ1LjY2QzI5MS4zMTksNjUuMjE5LDIyNi4xLDAsMTQ1LjY2LDB6IE0xODYuNDYyLDI1Ni42MjVjLTAuODM4LTExLjM5OC0xLjc3NS0yNS41MTgtMS44My0zMS4yMzUgICBjLTAuMzY0LTQuMzg4LTAuODM4LTE1LjU0OS0xMS40MzQtMjIuNjc3YzQyLjA2OC0zLjUyMyw2Mi4wODctMjYuNzc0LDYzLjUyNi01Ny40OTljMS4yMDItMTcuNDk3LTUuNzU0LTMyLjg4My0xOC4xMDctNDUuMyAgIGMwLjYyOC0xMy4yODItMC40MDEtMjkuMDIzLTEuMjU2LTM1Ljk0MWMtOS40ODYtMi43MzEtMzEuNjA4LDguOTQ5LTM3Ljc5LDEzLjk0N2MtMTMuMDM3LTUuMDYyLTQ0Ljk0NS02LjgzNy02NC4zMzYsMCAgIGMtMTMuNzQ3LTkuNjY4LTI5LjM5Ni0xNS42NC0zNy45MjYtMTMuOTc0Yy03Ljg3NSwxNy40NTItMi44MTMsMzMuOTQ4LTEuMjc1LDM1LjkxNGMtMTAuMTQyLDkuMjY4LTI0LjI4OSwyMC42NzUtMjAuNDQ3LDQ0LjU3MiAgIGM2LjE2MywzNS4wNCwzMC44MTYsNTMuOTQsNzAuNTA4LDU4LjU2NGMtOC40NjYsMS43My05Ljg5Niw4LjA0OC0xMC42MDYsMTAuNzg4Yy0yNi42NTYsMTAuOTk3LTM0LjI3NS02Ljc5MS0zNy42NDQtMTEuNDI1ICAgYy0xMS4xODgtMTMuODQ3LTIxLjIzLTkuODMyLTIxLjg0OS05LjYxNGMtMC42MDEsMC4yMTgtMS4wNTYsMS4wOTItMC45OTIsMS41MTFjMC41NjQsMi45ODYsNi42NTUsNi4wMTgsNi45NTUsNi4yNjMgICBjOC4yNTcsNi4xNTQsMTEuMzE2LDE3LjI3LDEzLjIsMjAuNDM4YzExLjg0NCwxOS40NzMsMzkuMzc0LDExLjM5OCwzOS42MzgsMTEuNTYyYzAuMDE4LDEuNzAyLTAuMTkxLDE2LjAzMi0wLjM1NSwyNy4xODQgICBDNjQuMjQ1LDI0NS45OTIsMjcuMzExLDIwMC4yLDI3LjMxMSwxNDUuNjZjMC02NS4zNjUsNTIuOTg0LTExOC4zNDgsMTE4LjM0OC0xMTguMzQ4UzI2NC4wMDgsODAuMjk1LDI2NC4wMDgsMTQ1LjY2ICAgQzI2NC4wMDgsMTk2LjY2OCwyMzEuNjksMjM5Ljk5MiwxODYuNDYyLDI1Ni42MjV6Ii8+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==" /></a>
+						<a href="https://www.facebook.com/igor.khailin" target="_blank" class="fb"><img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTguMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDExMi4xOTYgMTEyLjE5NiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMTEyLjE5NiAxMTIuMTk2OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4Ij4KPGc+Cgk8Y2lyY2xlIHN0eWxlPSJmaWxsOiMzQjU5OTg7IiBjeD0iNTYuMDk4IiBjeT0iNTYuMDk4IiByPSI1Ni4wOTgiLz4KCTxwYXRoIHN0eWxlPSJmaWxsOiNGRkZGRkY7IiBkPSJNNzAuMjAxLDU4LjI5NGgtMTAuMDF2MzYuNjcySDQ1LjAyNVY1OC4yOTRoLTcuMjEzVjQ1LjQwNmg3LjIxM3YtOC4zNCAgIGMwLTUuOTY0LDIuODMzLTE1LjMwMywxNS4zMDEtMTUuMzAzTDcxLjU2LDIxLjgxdjEyLjUxaC04LjE1MWMtMS4zMzcsMC0zLjIxNywwLjY2OC0zLjIxNywzLjUxM3Y3LjU4NWgxMS4zMzRMNzAuMjAxLDU4LjI5NHoiLz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K" /></a>
+						<a href="skype:gingabit?chat" class="fb"><img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA0MDAuOTMyIDQwMC45MzIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDQwMC45MzIgNDAwLjkzMjsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSI1MTJweCIgaGVpZ2h0PSI1MTJweCI+CjxwYXRoIHN0eWxlPSJmaWxsOiMwMEFBRjI7IiBkPSJNMzg0Ljc2MiwyMzEuMDM5Yy02LjM2MS04Ljc5Mi05LjMwOS0xOS41My05LjI5Ny0zMC4zODJjMC4wMDEtMC4wNjMsMC4wMDEtMC4xMjYsMC4wMDEtMC4xOSAgYzAtOTYuNjQ5LTc4LjM1LTE3NC45OTktMTc0Ljk5OS0xNzQuOTk5Yy0yMS4xNDMsMC00MS40MDIsMy43NjMtNjAuMTYyLDEwLjY0Yy0xMC4xNDksMy43Mi0yMS4yNjcsNC40MzUtMzEuNjcyLDEuNTA0ICBjLTkuMTkxLTIuNTg5LTE5LjAwOS0zLjY4MS0yOS4xOC0yLjk4MWMtNDIuNzI1LDIuOTQtNzcuMTIxLDM3Ljk1NS03OS4zMzUsODAuNzI0Yy0xLjA1NywyMC40MTQsNS4wNjUsMzkuMzUxLDE2LjA1Myw1NC41MzkgIGM2LjM2MSw4Ljc5Miw5LjMwOSwxOS41Myw5LjI5NiwzMC4zODJjMCwwLjA2MywwLDAuMTI2LDAsMC4xOWMwLDk2LjY0OSw3OC4zNDksMTc0Ljk5OSwxNzQuOTk5LDE3NC45OTkgIGMyMS4xNDQsMCw0MS40MDMtMy43NjMsNjAuMTYyLTEwLjY0YzEwLjE0OS0zLjcyLDIxLjI2Ny00LjQzNSwzMS42NzItMS41MDRjOS4xOTEsMi41ODksMTkuMDA4LDMuNjgxLDI5LjE4LDIuOTgxICBjNDIuNzI1LTIuOTQsNzcuMTItMzcuOTU0LDc5LjMzNS04MC43MjJDNDAxLjg3MiwyNjUuMTY2LDM5NS43NSwyNDYuMjI4LDM4NC43NjIsMjMxLjAzOXogTTIwNi44NzMsMTY5LjA5MyAgYzM1LjI4Niw4LjM5MSw4OC42MDgsMjEuMDcxLDg4LjYwOCw3OS44MDZjMCwyOC45MzQtMTQuMjQ5LDUxLjAwNi00MC4xMjQsNjIuMTQ5Yy0xOC40NjQsNy45NTItMzkuMzYxLDkuMDI1LTU3LjM2OCw5LjAyNSAgYy01NS4zMzYsMC05MC4yODYtNDMuMDI4LTkxLjc0Ny00NC44NmMtOS4wNjItMTEuMzY2LTcuMTk3LTI3LjkyOCw0LjE3LTM2Ljk5YzExLjM2NC05LjA2NiwyNy45MjYtNy4xOTYsMzYuOTksNC4xNjcgIGMwLjA4MSwwLjA5NywyMC45ODIsMjQuMTAxLDUwLjU4NywyNS4wNGMzNS42NSwxLjEzMSw0My43OTUtOS40NzYsNDQuODQ4LTE4LjUzYzEuMjg3LTExLjA1OC04LjU1LTE5LjE3Ni00OC4xNDYtMjguNTkyICBjLTMzLjU2Mi03Ljk4Mi04NC4yODctMjAuMDQ0LTg0LjI4Ny03NC4xMzdjMC0xNi44NDUsNi44NTEtNzEuODA3LDk1LjAxMy03MS44MDdjNTUuNjY4LDAsODguNTI3LDQzLjgyOSw4OS44OTksNDUuNjk1ICBjOC42MSwxMS43MTMsNi4wOTYsMjguMTg5LTUuNjE3LDM2Ljc5OGMtMTEuNjYyLDguNTcyLTI4LjAzNCw2LjExOS0zNi42NzctNS40NTJjLTAuNjItMC43OTctMTkuNDI5LTIxLjcyMy00Ny42MDUtMjQuMzk4ICBjLTIxLjMyLTIuMDI1LTQyLjM3LDUuNjYzLTQyLjM3LDE3LjAyQzE2My4wNDcsMTU2LjA2LDE2OS4wOTIsMTYwLjEwOCwyMDYuODczLDE2OS4wOTN6Ii8+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=" /></a>
+					</div>
+					<hr class="line">
+					<a href="tel:+380679465704" class="contact-phone">+380 (67) 946 57 04</a>
+					<a href="mailto:igor.khai27@gmail.com" class="contact-mail bttn-stretch">igor.khai27@gmail.com</a>
+					<a href="#firstPage">
+						<span class="mouse">
+							<span class="mouse--wheel"></span>
+						</span>
+					</a>
+				</section>
+			</div>
+			
+		</div>
+	</div>
+	
+</div>
 
-	
-	
-</section>      
-  
-   
-  <!--  <div id="main" role="main" class="main">
-      {{ content }}
-    </div>
--->
-    <div class="wrapper-footer">
-      <div class="container">
-        <footer class="footer" id="contact">
-          {% include svg-icons.html %}
-        </footer>
-      </div>
-    </div>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="js/scrolloverflow.min.js"></script>
+		<script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
+		<script type="text/javascript" src="js/anime.min.js"></script>
+		<script type="text/javascript" src="js/imagesloaded.pkgd.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+		<!-- segment header image -->
+		<script type="text/javascript">
+		(function() {
+			var headline = document.querySelector('.trigger-headline'),
+				trigger = document.querySelector('.btn--trigger'),
+				segmenter = new Segmenter(document.querySelector('.segmenter'), {
+					pieces: 8,
+					positions: [
+						{top: 0, left: 0, width: 100, height: 100},
+						{top: 0, left: 0, width: 100, height: 100},
+						{top: 0, left: 0, width: 100, height: 100},
+						{top: 0, left: 0, width: 100, height: 100},
+						{top: 0, left: 0, width: 100, height: 100},
+						{top: 0, left: 0, width: 100, height: 100},
+						{top: 0, left: 0, width: 100, height: 100},
+						{top: 0, left: 0, width: 100, height: 100}
+					],
+					shadows: false,
+					parallax: true,
+					parallaxMovement: {min: 10, max: 30},
+					animation: {
+						duration: 2500,
+						easing: 'easeOutExpo',
+						delay: 0,
+						opacity: .1,
+						translateZ: {min: 10, max: 25}
+					},
+					onReady: function() {
+						trigger.classList.remove('btn--hidden');
+						trigger.addEventListener('click', function() {
+							segmenter.animate();
+							headline.classList.remove('trigger-headline--hidden');
+							this.classList.add('btn--hidden');
+						});
+					}
+				});
+		})();
+		</script>
+		<!-- canvas -->
+		<script type="text/javascript">var c = document.getElementById("c");
+var ctx = c.getContext("2d");
+var cH;
+var cW;
+var bgColor = "#FF6138";
+var animations = [];
+var circles = [];
+
+var colorPicker = (function() {
+  var colors = ["#FF6138", "#FFBE53", "#2980B9", "#282741"];
+  var index = 0;
+  function next() {
+    index = index++ < colors.length-1 ? index : 0;
+    return colors[index];
+  }
+  function current() {
+    return colors[index]
+  }
+  return {
+    next: next,
+    current: current
+  }
+})();
+
+function removeAnimation(animation) {
+  var index = animations.indexOf(animation);
+  if (index > -1) animations.splice(index, 1);
+}
+
+function calcPageFillRadius(x, y) {
+  var l = Math.max(x - 0, cW - x);
+  var h = Math.max(y - 0, cH - y);
+  return Math.sqrt(Math.pow(l, 2) + Math.pow(h, 2));
+}
+
+function addClickListeners() {
+  document.addEventListener("touchstart", handleEvent);
+  document.addEventListener("mousedown", handleEvent);
+};
+
+function handleEvent(e) {
+    if (e.touches) { 
+      e.preventDefault();
+      e = e.touches[0];
+    }
+    var currentColor = colorPicker.current();
+    var nextColor = colorPicker.next();
+    var targetR = calcPageFillRadius(e.pageX, e.pageY);
+    var rippleSize = Math.min(200, (cW * .4));
+    var minCoverDuration = 750;
     
-    {% include analytics.html %}
-  </body>
+    var pageFill = new Circle({
+      x: e.pageX,
+      y: e.pageY,
+      r: 0,
+      fill: nextColor
+    });
+    var fillAnimation = anime({
+      targets: pageFill,
+      r: targetR,
+      duration:  Math.max(targetR / 2 , minCoverDuration ),
+      easing: "easeOutQuart",
+      complete: function(){
+        bgColor = pageFill.fill;
+        removeAnimation(fillAnimation);
+      }
+    });
+    
+    var ripple = new Circle({
+      x: e.pageX,
+      y: e.pageY,
+      r: 0,
+      fill: currentColor,
+      stroke: {
+        width: 3,
+        color: currentColor
+      },
+      opacity: 1
+    });
+    var rippleAnimation = anime({
+      targets: ripple,
+      r: rippleSize,
+      opacity: 0,
+      easing: "easeOutExpo",
+      duration: 900,
+      complete: removeAnimation
+    });
+    
+    var particles = [];
+    for (var i=0; i<32; i++) {
+      var particle = new Circle({
+        x: e.pageX,
+        y: e.pageY,
+        fill: currentColor,
+        r: anime.random(24, 48)
+      })
+      particles.push(particle);
+    }
+    var particlesAnimation = anime({
+      targets: particles,
+      x: function(particle){
+        return particle.x + anime.random(rippleSize, -rippleSize);
+      },
+      y: function(particle){
+        return particle.y + anime.random(rippleSize * 1.15, -rippleSize * 1.15);
+      },
+      r: 0,
+      easing: "easeOutExpo",
+      duration: anime.random(1000,1300),
+      complete: removeAnimation
+    });
+    animations.push(fillAnimation, rippleAnimation, particlesAnimation);
+}
+
+function extend(a, b){
+  for(var key in b) {
+    if(b.hasOwnProperty(key)) {
+      a[key] = b[key];
+    }
+  }
+  return a;
+}
+
+var Circle = function(opts) {
+  extend(this, opts);
+}
+
+Circle.prototype.draw = function() {
+  ctx.globalAlpha = this.opacity || 1;
+  ctx.beginPath();
+  ctx.arc(this.x, this.y, this.r, 0, 2 * Math.PI, false);
+  if (this.stroke) {
+    ctx.strokeStyle = this.stroke.color;
+    ctx.lineWidth = this.stroke.width;
+    ctx.stroke();
+  }
+  if (this.fill) {
+    ctx.fillStyle = this.fill;
+    ctx.fill();
+  }
+  ctx.closePath();
+  ctx.globalAlpha = 1;
+}
+
+var animate = anime({
+  duration: Infinity,
+  update: function() {
+    ctx.fillStyle = bgColor;
+    ctx.fillRect(0, 0, cW, cH);
+    animations.forEach(function(anim) {
+      anim.animatables.forEach(function(animatable) {
+        animatable.target.draw();
+      });
+    });
+  }
+});
+
+var resizeCanvas = function() {
+  cW = window.innerWidth;
+  cH = window.innerHeight;
+  c.width = cW * devicePixelRatio;
+  c.height = cH * devicePixelRatio;
+  ctx.scale(devicePixelRatio, devicePixelRatio);
+};
+
+(function init() {
+  resizeCanvas();
+  if (window.CP) {
+    // CodePen's loop detection was causin' problems
+    // and I have no idea why, so...
+    window.CP.PenTimer.MAX_TIME_IN_LOOP_WO_EXIT = 6000; 
+  }
+  window.addEventListener("resize", resizeCanvas);
+  addClickListeners();
+  if (!!window.location.pathname.match(/fullcpgrid/)) {
+    startFauxClicking();
+  }
+  handleInactiveUser();
+})();
+
+function handleInactiveUser() {
+  var inactive = setTimeout(function(){
+    fauxClick(cW/2, cH/2);
+  }, 2000);
+  
+  function clearInactiveTimeout() {
+    clearTimeout(inactive);
+    document.removeEventListener("mousedown", clearInactiveTimeout);
+    document.removeEventListener("touchstart", clearInactiveTimeout);
+  }
+  
+  document.addEventListener("mousedown", clearInactiveTimeout);
+  document.addEventListener("touchstart", clearInactiveTimeout);
+}
+
+function startFauxClicking() {
+  setTimeout(function(){
+    fauxClick(anime.random( cW * .2, cW * .8), anime.random(cH * .2, cH * .8));
+    startFauxClicking();
+  }, anime.random(200, 900));
+}
+
+function fauxClick(x, y) {
+  var fauxClick = new Event("mousedown");
+  fauxClick.pageX = x;
+  fauxClick.pageY = y;
+  document.dispatchEvent(fauxClick);
+}</script>
+		<!-- fullPage -->
+		<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				sectionsColor: ['#1bbc9b', '#ea575b', '#a9af4d', '#FAD64F'],
+				anchors: ['firstPage', 'secondPage', '3rdPage', '4rdPage'],
+				menu: '#menu',
+				loopTop: true,
+				loopBottom: true,
+				afterLoad: function(anchorLink, index){
+					// Stage 2 manipulations
+					if (anchorLink == 'firstPage') {
+						$('.bottom-nav').removeClass('no_show')
+						$('.bottom-nav').addClass('animated hinge fadeInDownBig')
+					} else {
+						$('.bottom-nav').removeClass('animated hinge fadeInDownBig')
+						$('.bottom-nav').addClass('no_show')
+					}
+					if (anchorLink == 'secondPage') {
+						$('.intro').removeClass('no-show');
+						$('figure').addClass('animated hinge fadeInLeftBig');
+						$('.skills-head').addClass('animated fadeInDown');
+					} else {
+						$('figure').removeClass('animated hinge fadeInLeftBig');
+						$('.intro').addClass('no-show');
+						$('.skills-head').removeClass('animated fadeInDown');
+					}
+					if (anchorLink == '3rdPage') {
+						$('.intro3').removeClass('no--show');
+						$('.portfolio-head').addClass('animated fadeInDown')
+						$('.portfolio-item').addClass('animated hinge bounceIn')
+					} else{
+						$('.portfolio-head').removeClass('animated fadeInDown');
+						$('.portfolio-item').removeClass('animated hinge bounceIn');
+						$('.intro3').addClass('no--show');
+					}
+					if (anchorLink == '4rdPage') {
+						$('.intro4').removeClass('no__show');
+						$('.contacts-head').addClass('animated fadeInDown')
+						$('.social-item').addClass('animated flipInX')
+						$('.line').addClass('animated infinite pulse')
+						$('.contact-mail').addClass('animated fadeIn')
+						$('.contact-phone').addClass('animated fadeIn')
+						$('.mouse').addClass('animated fadeInUp')
+					} else {
+						$('.contacts-head').removeClass('animated fadeInDown');
+						$('.social-item').removeClass('animated flipInX');
+						$('.line').removeClass('animated infinite pulse');
+						$('.contact-mail').removeClass('animated fadeIn');
+						$('.contact-phone').removeClass('animated fadeIn');
+						$('.mouse').removeClass('animated fadeInUp');
+						$('.intro4').addClass('no__show');
+					}
+				}
+			});
+		});
+	</script>
+	{% include analytics.html %}
+</body>
 </html>
