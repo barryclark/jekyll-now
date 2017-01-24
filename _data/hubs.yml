@@ -1,5 +1,6 @@
 region: ABRUZZO
-  tag: emergenzaAbruzzo
+  label: emergenzaAbruzzo
     hub:
-      nodo001: Provincia di Teramo
+      nome: Provincia di Teramo
+        label: node001
         link: https://enketo.ona.io/x/#YBjh
