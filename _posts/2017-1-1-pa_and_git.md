@@ -93,3 +93,4 @@ from flask_app import app as application
 Other useful commands:
 git log
 
+You can also add files and commit in one go: git commit -am "Going for broke"
