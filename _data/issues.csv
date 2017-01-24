@@ -229,15 +229,15 @@ link: ''
 immagine: ''
 data: 23/01/2017
 </yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2230,202566868,2017-01-24 21:15:11,2017-01-23 15:34:57,**URGENTE** Contrada villa alzano di fronte al cimitero manca la luce da 7 giorni #Tossicia,,,"[""Accettato"", ""Bollettino"", ""emergenzaAbruzzo"", ""nodo001"", ""Sisma Gennaio 2017""]",,,{},"<pre><yamldata>tel: ''
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2230,202566868,2017-01-24 21:36:09,2017-01-23 15:34:57,**URGENTE** Contrada villa alzano di fronte al cimitero manca la luce da 7 giorni #Tossicia,42.551278,13.647401,"[""Accettato"", ""Bollettino"", ""emergenzaAbruzzo"", ""nodo001"", ""Sisma Gennaio 2017""]",,,"{""accesso"": ""Accessibile a fuoristrada"", ""data"": ""23/01/2017"", ""descrizione"": ""Contrada villa alzano di fronte al cimitero (tossicia) manca la luce da 7 giorni, ci sono persone anziane"", ""email"": null, ""immagine"": """", ""indirizzo"": ""Contrada villa alzano, tossicia. zona cimitero"", ""lat"": 42.551278, ""latStrada"": """", ""link"": """", ""lon"": 13.647401, ""lonStrada"": """", ""necessita"": """", ""notastrada"": """", ""tel"": """"}","<pre><yamldata>tel: ''
 email: 
 descrizione: 'Contrada villa alzano di fronte al cimitero (tossicia) manca la luce da 7 giorni, ci sono persone anziane'
 indirizzo: 'Contrada villa alzano, tossicia. zona cimitero'
-lat: '42.551278'
-lon: '13.647401
+lat: 42.551278
+lon: 13.647401
 link: ''
 immagine: ''
-data: '23/01/2017'
+data: 23/01/2017
 necessita: ''
 accesso: 'Accessibile a fuoristrada'
 latStrada: ''
