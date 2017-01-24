@@ -20,7 +20,7 @@ html {
 body {
 	background: $white;
   font: 18px/1.4 $helvetica;
-  color: $darkGray;
+  color: #477087;
 }
 
 .container {
@@ -123,11 +123,11 @@ img {
 // Specify the color of the selection
 ::-moz-selection {
   color: $black;
-  background: $lightGray;
+  background: #6F8FA2;
 }
 ::selection {
   color: $black;
-  background: $lightGray;
+  background: #6F8FA2;
 }
 
 // Nicolas Gallagher's micro clearfix hack
@@ -192,7 +192,7 @@ img {
 
 .site-name {
   margin: 0;
-  color: $darkGray;
+  color: #477087;
   cursor: pointer;
   font-family: $helveticaNeue;
   font-weight: 300;
@@ -225,7 +225,7 @@ nav {
 
   a {
     margin-left: 20px;
-    color: $darkGray;
+    color: #477087;
     text-align: right;
     font-weight: 300;
     letter-spacing: 1px;
