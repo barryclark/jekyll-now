@@ -229,7 +229,7 @@ link: ''
 immagine: ''
 data: 23/01/2017
 </yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2230,202566868,2017-01-23 17:10:05,2017-01-23 15:34:57,**URGENTE** Contrada villa alzano di fronte al cimitero manca la luce da 7 giorni #Tossicia,,,"[""Accettato"", ""Bollettino"", ""emergenzaAbruzzo"", ""nodo001"", ""Sisma Gennaio 2017""]",,,{},"tel: ''
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2230,202566868,2017-01-24 21:15:11,2017-01-23 15:34:57,**URGENTE** Contrada villa alzano di fronte al cimitero manca la luce da 7 giorni #Tossicia,,,"[""Accettato"", ""Bollettino"", ""emergenzaAbruzzo"", ""nodo001"", ""Sisma Gennaio 2017""]",,,{},"<pre><yamldata>tel: ''
 email: 
 descrizione: 'Contrada villa alzano di fronte al cimitero (tossicia) manca la luce da 7 giorni, ci sono persone anziane'
 indirizzo: 'Contrada villa alzano, tossicia. zona cimitero'
@@ -242,7 +242,8 @@ necessita: ''
 accesso: 'Accessibile a fuoristrada'
 latStrada: ''
 lonStrada: ''
-notastrada: ''",closed
+notastrada: ''
+</yamldata></pre>",closed
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2229,202559596,2017-01-23 17:18:57,2017-01-23 15:10:05,Firmata convenzione per ammortizzatori sociali per lavoratori delle zone terremotate,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili"", ""Sisma Gennaio 2017""]",,,"{""data"": ""23/01/2017"", ""descrizione"": ""E' stata firmata il 20 gennaio la convenzione tra i Ministeri del Lavoro, dell\u2019Economia e le Regioni Abruzzo, Lazio, Marche, Umbria, per la concessione degli ammortizzatori sociali a favore dei lavoratori privati (compresi quelli agricoli), autonomi e titolari di impresa individuali colpiti dal terremoto del 24 agosto e 26 ottobre scorso. Alle Marche sono state assegnati 96,1 milioni di euro stanziati dal Governo nazionale."", ""link"": ""http://www.regione.marche.it/Regione-Utile/Terremoto-Marche/News-ed-eventi/Post/18809/Terremoto-del-24-agosto-e-del-26-ottobre-firmato-la-convezione-per-gli-ammortizzatori-sociali-96-1-milione-di-euro-alle-Marche"", ""titolo"": ""Firmata convenzione per ammortizzatori sociali""}","<pre><yamldata>titolo: 'Firmata convenzione per ammortizzatori sociali'
 descrizione: ""E' stata firmata il 20 gennaio la convenzione tra i Ministeri del Lavoro, dell’Economia e le Regioni Abruzzo, Lazio, Marche, Umbria, per la concessione degli ammortizzatori sociali a favore dei lavoratori privati (compresi quelli agricoli), autonomi e titolari di impresa individuali colpiti dal terremoto del 24 agosto e 26 ottobre scorso. Alle Marche sono state assegnati 96,1 milioni di euro stanziati dal Governo nazionale.""
 link: 'http://www.regione.marche.it/Regione-Utile/Terremoto-Marche/News-ed-eventi/Post/18809/Terremoto-del-24-agosto-e-del-26-ottobre-firmato-la-convezione-per-gli-ammortizzatori-sociali-96-1-milione-di-euro-alle-Marche'
