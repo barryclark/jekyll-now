@@ -50,7 +50,7 @@ Komentáře taky můžou pomoci vysvětlit složitější kontstrukci nebo důvo
 define('DB_server', 'localhost');
 define('DB_login', 'login');
 define('DB_pass', 'pass');
- ```
+```
  
 Jsou i zastánci nepoužívámí komentářů v kódu. Tvrdí, že když je kód dostatečně čitelný, nejsou potřeba. Sám ale komentáře používám - myslím, že zjednodušují čtení kódu pro ostatní. Správně napsaný komentář umí zrychlit pochopení smyslu kódu i těm, co nejsou tak zkušení jako autor nebo třeba daný jazyk vůbec neznají. 
  
@@ -100,6 +100,7 @@ V práci nebo při sdílených projektech je požadavek na konzistentnost kódu 
 
 Většina velkých projektů má vypsané či ustálené standardy, které je třeba dodržovat. Důležité je ctít je, ať už je mají sepsané, nebo ne. Na začátku hodně opisujte styl okolo sebe a napodobujte svůj kód tak, jak ho vidíte. Ze začátku se na to sice musíte víc soustředit, později se to stane přirozenou věcí. 
 
+## Automatické formátování
 IDE může hodně s formátováním pomoci. V PhpStorm se styl formátování nastaví `Settings > Editor > Code Style > PHP`. Klávesová zkratka pro zformátování kódu je `Ctrl + Alt + L`, používám ji skoro stejně často jako zkratku pro uložení. Někteří lidé si dokonce `Ctrl + S` nastaví na oba dva příkazy dohromady, takže se provedou najednou a nemusí na úpravu kódu dál myslet. 
 
 Vhodné je si i zatrhnout při commitování volbu `Reformat code` pro automatické zformátování před commitem. Potom můžete celé formátování pustit z hlavy a psát svým stylem. Jen občas svůj kód už potom nepoznáte (: Širší náhled na PhpDocs najdete třeba na [SitePointu](https://www.sitepoint.com/introduction-to-phpdoc/). 
