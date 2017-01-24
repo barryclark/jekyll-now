@@ -6,20 +6,20 @@ title: Jak psát PHP? (4/3) - Dokumentace, komentování a formátování
 Čtvrtý díl ze tří přehledu nástrojů pro PHP. Podíváme se na dokumentování v kódu, komentáře a formátování kódu. A kdyby náhodou bylo potřeba, tady najdete [první]({{site.baseurl}}/Jak-psat-php-Zdroje-znalosti+vyvojove-prostredi/), [druhý]({{site.baseurl}}/Jak-psat-php-Zavislosti+verzovaci-systemy+debugging/) i [třetí]({{site.baseurl}}/Uloziste-kodu+databaze+frameworky/) díl. 
 
 # Komentování v kódu
-Pro pořádek a úplné začátečníky, komentáře v PHP se značí `//` pro komentář na jeden řádek, nebo `/* komentář */` pro blokový komentář přes jeden i víc řádků. Tak, a když teď nejste úplní začátečníci, jdeme na mírně pokročilé. 
+Pro pořádek a úplné začátečníky, komentáře v PHP se značí `//` pro komentář na jeden řádek, nebo `/* comment */` pro blokový komentář přes jeden i víc řádků. Tak, a když teď nejste úplní začátečníci, jdeme na mírně pokročilé. 
 
 Komentáře mají odrážet ideje a myšlenky, které nejsou v kódu vidět na první ani na druhý pohled. Nemusí popisovat to, co kód dělá - to by mělo být jasné z kódu samotného. Komentáře by měly zachycovat širší rámec, proč kód něco dělá, a ne co dělá. Uvedu příklad, jak komentáře vypadat nemají: 
 
 ```php
 <?php
 function square($base, $exponent) {
-    //kontrola, jestli jsou to čísla
+    //check, if there are numbers
     if (!(is_numeric($base) || is_numeric($exponent))) {
         throw new Exception('Jedno ze vstupů není číslo');
     }
-    //spočítáme mocninu
+    //count the power
     $result = $base ** $exponent;
-    //vrátíme vypočtený výsledek
+    //return thr result
     return $result;
 }
 ```
@@ -30,10 +30,10 @@ Komentáře tu jen slepě popisují to, co se dozvíme hned na dalším řádku.
 <?php
 function square($base, $exponent) {
     if (!(is_numeric($base) || is_numeric($exponent))) {
-        //chceme radši výjimku než error, protože aplikace ji zachytí a pošle ticket
+        //we want Exception more than error; our app will catch it and send proper ticket
         throw new Exception('Jedno ze vstupů není číslo');
     }
-    //můžeme použít i pow() pro případné nasazení na nižší verzi než PHP 5.6
+    //we can use pow() too, useful for lower verions of PHP that 5.6
     $result = $base ** $exponent;
     
     return $result;
@@ -46,7 +46,7 @@ Komentáře taky můžou pomoci vysvětlit složitější kontstrukci nebo důvo
 
 ```php
 <?php
-//pro nastavení používáme konstanty; je to nejrychlejší způsob načtení do paměti
+//using define() because its fastest for loading constants in RAM
 define('DB_server', 'localhost');
 define('DB_login', 'login');
 define('DB_pass', 'pass');
@@ -54,7 +54,7 @@ define('DB_pass', 'pass');
  
 Jsou i zastánci nepoužívámí komentářů v kódu. Tvrdí, že když je kód dostatečně čitelný, nejsou potřeba. Sám ale komentáře používám - myslím, že zjednodušují čtení kódu pro ostatní. Správně napsaný komentář umí zrychlit pochopení smyslu kódu i těm, co nejsou tak zkušení jako autor nebo třeba daný jazyk vůbec neznají. 
  
-Šikovná je komentářová formule `//TODO popis úkolu`. Používá se pro místo, kde je potřeba ještě v kódu trochu zapracovat, ne ale hned teď. IDE umí tuto značku označit výraznější barvou nebo vyfiltrovat jejich seznam. V PHPstorm tento seznam najddš pod zkratkou `Alt + 6`. 
+Šikovná je komentářová formule `//TODO description of task`. Používá se pro místo, kde je potřeba ještě v kódu trochu zapracovat, ne ale hned teď. IDE umí tuto značku označit výraznější barvou nebo vyfiltrovat jejich seznam. V PHPstorm tento seznam najddš pod zkratkou `Alt + 6`. 
  
 Poslední otázkou zůstává jazyk komentářů. Preferuje se jazyk použitý v kódu. Pokud vyvíjíš aplikaci v angličtině, která ale zůstane vždy u českých vývojářů, klidně použij české komentáře. Hlavní účel totiž vždy zůstává lépe pochopit kód. 
 
@@ -75,7 +75,7 @@ U funkcí a metod se používá DocBlocks. Začíná vždy `/**` a pokračuje `*
  * @param int $base
  * @param int $exponent
  * @return int
- * @throws Exception Když jedno ze vstupů není číslo
+ * @throws Exception when one or both variable is not number 
  */
 function square($base, $exponent) {
    if (!(is_numeric($base) || is_numeric($exponent))) {
