@@ -1,6 +1,6 @@
 ---
-layout: windows
-title: canvas
+layout: tag
+title: windows
 permalink: /tags/windows/
 noindex: true
 ---
