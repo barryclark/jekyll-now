@@ -1,4 +1,19 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2257,202820056,2017-01-24 15:06:03,2017-01-24 13:38:33,"Regione Lazio, prorogate di un mese forniture straordinarie di mangimi agli allevatori",,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili"", ""Sisma Gennaio 2017""]",,,"{""data"": ""24/01/2017"", ""descrizione"": ""La Regione Lazio, in collaborazione con Arsial, ha prorogato per un mese la distribuzione di foraggio, mangime e acqua come fornitura straordinaria per le aziende delle zone colpite dal sisma."", ""link"": ""http://www.regione.lazio.it/rl_main/?vw=newsDettaglio&id=3780"", ""titolo"": ""Regione Lazio, prorogate di un mese forniture straordinarie di mangini agli allevatori""}","<pre><yamldata>titolo: 'Regione Lazio, prorogate di un mese forniture straordinarie di mangini agli allevatori'
+descrizione: 'La Regione Lazio, in collaborazione con Arsial, ha prorogato per un mese la distribuzione di foraggio, mangime e acqua come fornitura straordinaria per le aziende delle zone colpite dal sisma.'
+link: 'http://www.regione.lazio.it/rl_main/?vw=newsDettaglio&id=3780'
+data: 24/01/2017
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2256,202819918,2017-01-24 15:07:10,2017-01-24 13:37:55,Offro alloggio indipendente per 4/5 persone a Incisa Valdarno (Fi),43.6581475,11.446932,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""24/01/2017"", ""descrizione"": ""Offro alloggio per 4/5 persone, indipendente posto al pt della mia abitazione possibilit\u00e0 di ospitare anche cani (ne ho uno di media taglia) due bagni con doccia e piano cottura!Sono ad Incisa valdarno prov. di Firenze (uscita A1)"", ""email"": ""tamara.ermini@yahoo.com"", ""immagine"": """", ""indirizzo"": ""Via Fratelli Cervi, Poggio Pratelli, Figline e Incisa Valdarno, Metropolitan City of Florence, Tuscany, 50064, Italia"", ""lat"": ""43.6581475"", ""link"": """", ""lon"": ""11.446932"", ""tel"": ""3355850203""}","<pre><yamldata>tel: '3355850203'
+email: tamara.ermini@yahoo.com
+descrizione: 'Offro alloggio per 4/5 persone, indipendente posto al pt della mia abitazione possibilità di ospitare anche cani (ne ho uno di media taglia) due bagni con doccia e piano cottura!Sono ad Incisa valdarno prov. di Firenze (uscita A1)'
+indirizzo: 'Via Fratelli Cervi, Poggio Pratelli, Figline e Incisa Valdarno, Metropolitan City of Florence, Tuscany, 50064, Italia'
+lat: '43.6581475'
+lon: '11.446932'
+link: ''
+immagine: ''
+data: 24/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2255,202807676,2017-01-24 13:12:44,2017-01-24 12:41:18,Offro bilocale 60 mq per due persone in prov. di Bergamo,,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""24/01/2017"", ""descrizione"": ""offro bilocale 60 mq per due persone provincia Bergamo"", ""email"": ""simomanzoni72@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""035-863263""}","<pre><yamldata>tel: 035-863263
 email: simomanzoni72@gmail.com
 descrizione: 'offro bilocale 60 mq per due persone provincia Bergamo'
@@ -9704,12 +9719,6 @@ https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/813,1835083
 descrizione: 'Il Comune di Accumoli ha pubblicato gli esiti delle verifiche di agibilità al 14 ottobre.'
 link: 'http://www.comune.accumoli.ri.it/avvisi/Accumoli_4°_invio_def.pdf'
 data: 17/10/2016
-</yamldata></pre>
-",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/812,183260629,2016-10-17 06:31:34,2016-10-16 10:49:41,#ArquatadelTronto in arrivo 140 casette in legno (MAP - moduli abitativi provvisori) entro il mese di aprile,,,"[""Accettato"", ""Bollettino"", ""Facebook"", ""Notizie Utili""]",,,"{""data"": ""16/10/2016"", ""descrizione"": ""I Map verranno garantiti solamente ai RESIDENTI EFFETTIVI del territorio di Arquata che non riescono a rendere agibili le proprie abitazioni nel giro di poco tempo."", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1783699348564315/"", ""titolo"": ""#ArquatadelTronto in arrivo 140 casette in legno (MAP - moduli abitativi provvisori) entro il mese di aprile""}","<pre><yamldata>titolo: '#ArquatadelTronto in arrivo 140 casette in legno (MAP - moduli abitativi provvisori) entro il mese di aprile'
-descrizione: 'I Map verranno garantiti solamente ai RESIDENTI EFFETTIVI del territorio di Arquata che non riescono a rendere agibili le proprie abitazioni nel giro di poco tempo.'
-link: 'https://www.facebook.com/groups/1758670357733881/permalink/1783699348564315/'
-data: 16/10/2016
 </yamldata></pre>
 ",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/812,183260629,2016-10-17 06:31:34,2016-10-16 10:49:41,#ArquatadelTronto in arrivo 140 casette in legno (MAP - moduli abitativi provvisori) entro il mese di aprile,,,"[""Accettato"", ""Bollettino"", ""Facebook"", ""Notizie Utili""]",,,"{""data"": ""16/10/2016"", ""descrizione"": ""I Map verranno garantiti solamente ai RESIDENTI EFFETTIVI del territorio di Arquata che non riescono a rendere agibili le proprie abitazioni nel giro di poco tempo."", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1783699348564315/"", ""titolo"": ""#ArquatadelTronto in arrivo 140 casette in legno (MAP - moduli abitativi provvisori) entro il mese di aprile""}","<pre><yamldata>titolo: '#ArquatadelTronto in arrivo 140 casette in legno (MAP - moduli abitativi provvisori) entro il mese di aprile'
