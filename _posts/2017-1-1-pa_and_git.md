@@ -92,5 +92,24 @@ from flask_app import app as application
 
 Other useful commands:
 git log
+git diff
+There are different ways to use git diff.
+1. Show changes you haven't commited yet: git diff [filename]
+2. Show changes you already commited (but haven't sync'd): git diff --cached [filename]
+3.
+
 
 You can also add files and commit in one go: git commit -am "Going for broke"
+
+
+
+
+Creating a new branch
+
+You can create a new branch on your local machine. Let's say your new branch is called database
+
+git checkout database
+
+You can make changes, break stuff, then switch back to your main branch at any time:
+
+git checkout master

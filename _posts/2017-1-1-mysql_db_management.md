@@ -68,3 +68,14 @@ To extract data from your database:
 go to a bash console and run:
 
 mysqldump -u jss367 -h jss367.mysql.pythonanywhere-services.com 'jss367$comments'  > db-backup.sql
+
+
+
+
+To change your database:
+
+use sappho$sapphodb;
+
+To remove a database:
+
+drop database sappho$sapphodb;
