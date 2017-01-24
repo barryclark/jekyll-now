@@ -1,18 +1,18 @@
 # Site settings
-title: Another Blog
-url: "http://laobubu.github.io"    # the protocol and hostname of your site, eg. `http://laobubu.github.io`
-baseurl: "/jekyll-theme-EasyBook" # the prefix of your site uri, eg. `/jekyll-theme-EasyBook` or just one slash `/`
+title: David Seo's Software Story
+url: "http://shs11023.github.io"
+baseurl: "/"
 #timezone: Asia/Chongqing
 description: >
   One or more sentences introducing this blog.
 
 # Your information
-email: your_email@example.com
-author: your_name
-avatar: "//www.gravatar.com/avatar/your_email_md5?d=mm&s=135"
+email: shs11023@gmail.com
+author: David Seo
+avatar: "//https://s.gravatar.com/avatar/49464e707e4a3b9c8de7be7e39289b6e?s=80"
 profile: One sentence introducing yourself.
 #twitter_username: twitter_username
-#github_username:  github_username
+github_username:  shs11023
 
 # Comment Service (Disqus or 多说)
 #  choose one and un-comment the line to active it
