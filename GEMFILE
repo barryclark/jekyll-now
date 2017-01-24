@@ -1,8 +1,5 @@
 source 'https://rubygems.org'
-source 'http://jekyllthemes.org/themes/'
 gem 'jekyll', '3.1.6'
-
-gem 'Glas'
 
 group :jekyll_plugins do
   gem 'jekyll-feed'
