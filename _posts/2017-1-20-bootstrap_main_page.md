@@ -38,6 +38,7 @@ Now you can start on page.html. We've already got a good header, so let's focus 
 ```
 
 
+By convention, HTML commands are from the browser's point of view. Thus a GET command is the browser getting data from the webpage and a POST command is the browser (i.e. the Internet user) posting data. If it were from the website's point of view it might be called PROVIDE and RECEIVE.
 
 
 Font:

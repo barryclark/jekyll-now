@@ -13,20 +13,34 @@ Give it a title and click "Create repository"
 
 Find the URL for the remote repository by clicking on the green "Clone or download" button, the click the copy to clipboard button to copy the url. It should end with .git. Something like: https://github.com/jss367/pythonanywhere.git
 
-Then go to your bash console on pythonanywhere and type: `git remote add origin <remote_repository_URL>`.
+Then go to your bash console on pythonanywhere inside the folder you want to connect to Github. This is possibly your mysite folder. Type: `git remote add origin <remote_repository_URL>`.
 
 Then test out that the connection owrk. Type: `git remote -v`. You should get a response verifying the remote URL
 
-Then, to push the changes, type: `git push origin master`. This is one of the most common commands you will use. It is of the format `git pull <remote> <branch>`. 
+Then, to push the changes, type: `git push origin master`. This is one of the most common commands you will use. It is of the format `git pull <remote> <branch>`.
+
+You may have to enter your Github username and password if you haven't already.
 
 It will fail if there's anything in the repo, even an insignificant README.md file. If it does you will need to pull first. Pull by: `git pull origin master`. This will probably force you to merge, which will then open up the evil that is vim. vim is awful so I recommend trying to exit it ASAP. Some combination of the escape key and q might do the trick. Before you freeze everything you should Google it.
 
+
+
+
+
+
+
 Send changes to the master branch of your remote repository:	
+`git commit -m "my changes`
+
 `git push origin master`
 
 Hit "`q`" to exit the git log
 
 then, to get them back to your pythonanywhere app, use `git pull origin master`
+
+
+If you make changes you want to delete (i.e. return to previous commit): git checkout -- flask_app.py. Or, if you want to revert everything: "git checkout ."
+
 
 
 
@@ -39,3 +53,43 @@ git commit -m "added xxx"
 git push origin master
 
 Enter your username and password if required
+
+
+<h2>Connecting to an existing repo</h2>
+
+git clone https://github.com/jss367/pythonanywhere.git
+
+To get your app working, we'll need to configure a WSGI file that imports your app, as a Python variable. That means you need to know two things:
+
+The path to the Python file containing your web app's WSGI file.
+
+The name of the application.
+
+For Flask, the WSGI app is usually invoked as app = Flask(__name__) somewhere. Locate this file and variable
+
+
+Here is what your final WSGI file should look like. jss367_pythonanywhere_com_wsgi.py:
+
+import sys
+#
+## The "/home/jss367" below specifies your home
+## directory -- the rest should be the directory you uploaded your Flask
+## code to underneath the home directory.  So if you just ran
+## "git clone git@github.com/myusername/myproject.git"
+## ...or uploaded files to the directory "myproject", then you should
+## specify "/home/jss367/myproject"
+path = '/home/jss367/pythonanywhere'
+if path not in sys.path:
+    sys.path.append(path)
+#
+## After you uncomment the line below, the yellow triangle on the left
+## side in our in-browser editor shows a warning saying:
+##     'application' imported but unused.
+## You can ignore this error. The line is necessary, and the variable
+## is used externally.
+from flask_app import app as application
+
+
+Other useful commands:
+git log
+
