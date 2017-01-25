@@ -54,7 +54,7 @@ describe comments;
 to show all your comments: select * from comments;
 
 
-to clear all the content from the command line:
+to clear all the content from the command line (make it clear, doesn't actually wipe the database):
 
 system clear
 
@@ -71,13 +71,13 @@ go to a bash console and run:
 
 mysqldump -u jss367 -h jss367.mysql.pythonanywhere-services.com 'jss367$comments'  > db-backup.sql
 
-
+`mysqldump -u sappho -h sappho.mysql.pythonanywhere-services.com 'sappho$comments'  > db-backup.sql`
 
 
 To change your database:
 
-use sappho$sapphodb;
+`use sappho$sapphodb;`
 
 To remove a database:
 
-drop database sappho$sapphodb;
+`drop database sappho$sapphodb;`

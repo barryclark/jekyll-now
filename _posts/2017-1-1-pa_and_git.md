@@ -102,7 +102,7 @@ There are different ways to use git diff.
 You can also add files and commit in one go: git commit -am "Going for broke"
 
 
-
+If you want to sync your git with the remote one (like when you've added a branch): git remote update
 
 Creating a new branch
 
@@ -113,3 +113,15 @@ git checkout database
 You can make changes, break stuff, then switch back to your main branch at any time:
 
 git checkout master
+
+To see all your git branches:
+
+What branch are you on: git branch
+What branches are there: git branch -a
+
+When you want to merge a branch back into it's master:
+
+git checkout <master>
+git pull origin <master>
+git merge <branch>
+git push origin <master>

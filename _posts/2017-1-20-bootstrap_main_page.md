@@ -37,6 +37,8 @@ Now you can start on page.html. We've already got a good header, so let's focus 
 </body>
 ```
 
+There are other ways to input user data, such as the &lt;input> tag. This is usually for smaller inputs. For multi-line inputs, you want to use &lt;textarea>
+
 
 By convention, HTML commands are from the browser's point of view. Thus a GET command is the browser getting data from the webpage and a POST command is the browser (i.e. the Internet user) posting data. If it were from the website's point of view it might be called PROVIDE and RECEIVE.
 
@@ -215,3 +217,9 @@ Here's the dropdown menu to choose which type of writing we're doing:
   </div>
 
 
+
+
+
+
+
+We used Bootstrap to add a bit of style so our page isn’t completely hideous. Then we added a form with a text input box for users to enter a URL into. Additionally, we utilized a Jinja for loop to iterate through a list of errors, displaying each one.
