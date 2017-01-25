@@ -47,11 +47,20 @@ create the tables: db.create_all()
 
 In your MySQL console:
 
-show tables;          vs      show databases;
+To see all your databases: show databases;
 
-describe comments;
+To select (or change) a database: `use sappho$comments;`
 
-to show all your comments: select * from comments;
+Then to look at what tables you have: `show tables;`
+
+Let's say you have a table named comments and you to see it parameters: `describe comments;`
+
+Now you want to view all the entries: `select * from comments;`
+
+
+If you want to clear all the entries from that database: `truncate table comments`
+
+
 
 
 to clear all the content from the command line (make it clear, doesn't actually wipe the database):
@@ -74,9 +83,6 @@ mysqldump -u jss367 -h jss367.mysql.pythonanywhere-services.com 'jss367$comments
 `mysqldump -u sappho -h sappho.mysql.pythonanywhere-services.com 'sappho$comments'  > db-backup.sql`
 
 
-To change your database:
-
-`use sappho$sapphodb;`
 
 To remove a database:
 
