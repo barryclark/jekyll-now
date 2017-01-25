@@ -1,4 +1,9 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2278,203119788,2017-01-25 14:40:24,2017-01-25 14:38:26,Confartigianato Macerata: compilazione gratuita dei modelli per i contributi ai terremotati,,,"[""Accettato"", ""Bollettino"", ""Facebook"", ""Notizie Utili"", ""Sisma Gennaio 2017""]",,,"{""data"": ""25/01/2017"", ""descrizione"": ""Presso tutti gli uffici della Confartigianato di Macerata (sede provinciale e sedi territoriali) \u00e8 possibile fin da oggi procedere alla compilazione gratuita dei moduli."", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1834558780145038/"", ""titolo"": ""Presso la Confartigianato compilazione gratuita dei modelli per i contributi ai terremotati""}","<pre><yamldata>titolo: 'Presso la Confartigianato compilazione gratuita dei modelli per i contributi ai terremotati'
+descrizione: 'Presso tutti gli uffici della Confartigianato di Macerata (sede provinciale e sedi territoriali) è possibile fin da oggi procedere alla compilazione gratuita dei moduli.'
+link: 'https://www.facebook.com/groups/1758670357733881/permalink/1834558780145038/'
+data: 25/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2276,203113989,2017-01-25 14:29:32,2017-01-25 14:16:12,Raccolta beni di prima necessità Associazione Protezione Civile #Valnerina,42.7899469,13.095505,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Facebook"", ""Sisma Ottobre""]",,,"{""cosa"": ""Raccolta beni di prima necessit\u00e0 Associazione Protezione Civile Valnerina"", ""data"": ""25/01/2017"", ""descrizione"": ""Continua la raccolta di beni di prima ncessit\u00e0 per le popolazioni di Valnerina-Norcia. E' possibile portarli di persona oppure spedirili a: Protezione Civile Intercomunale Valnerina, Viale della Stazione (Magazzino ex Comunit\u00e0 Montana), 06046 Norcia (Pg) - Referente Cambi Angelo. Ecco il materiale di cui abbiamo bisogno: ALIMENTI - Pane in cassetta Olio Aceto Sale Pomodori pelati (confezioni da kg2,5 o kg5) Tonno Piselli Ceci Carne in scatola Succhi di frutta Merendine Marmellata Cioccolata Caff\u00e8 Latte - IGIENE CASA - Detersivo lavatrice Detersivo stoviglie Detersivo igienizzante per superfici - ALTRO - Armadi blindati per armi Tovagliette di carta per vassoi mense Guanti monouso in lattice Fornelli (gas ed elettrici) Lenzuola invernali nuove"", ""email"": ""procivilevalnerina@gmail.com"", ""immagine"": """", ""indirizzo"": ""Viale dell'Ospedale, Casa Coletti, Norcia, PG, UMB, 06046, Italia"", ""lat"": ""42.7899469"", ""link"": ""https://www.facebook.com/ProtCivValnerinaNorcia/?fref=nf"", ""lon"": ""13.095505"", ""tel"": ""3292985670 Cambi Angelo""}","<pre><yamldata>tel: '3292985670 Cambi Angelo'
 email: procivilevalnerina@gmail.com
 cosa: 'Raccolta beni di prima necessità Associazione Protezione Civile Valnerina'
@@ -1753,16 +1758,6 @@ indirizzo: 'Via Augusto Righi, Casalecchio di Reno, BO, EMR, 40050, Italia'
 lat: '44.4760177'
 lon: '11.2756857'
 link: ''
-immagine: ''
-data: 20/01/2017
-</yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2061,202140478,2017-01-20 13:31:06,2017-01-20 13:30:03,Offresi stalle a #Petriolo (MC),43.221693,13.4653351,"[""Accettato"", ""Alloggi"", ""Bollettino"", ""Form"", ""Ospitalita animali"", ""Sisma Gennaio 2017""]",,,"{""data"": ""20/01/2017"", ""descrizione"": ""A Petriolo (MC) c'\u00e8 un vecchio stabile abbandonato dove allevavano maiali, sono tutte piccole stalle di cemento armato sono ancora in buone condizioni, attorno allo stabile \u00e8 tutto ancora recintato. Zona vicino fiumi Fiastra difronte Lago \""Chiavari\""."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Via del castellano, Petriolo, MC, Marche, 620101, Italia"", ""lat"": ""43.221693"", ""link"": ""https://www.facebook.com/groups/1104882906294788/permalink/1191051137677964/"", ""lon"": ""13.4653351"", ""tel"": """"}","<pre><yamldata>tel: ''
-email: ''
-descrizione: 'A Petriolo (MC) c''è un vecchio stabile abbandonato dove allevavano maiali, sono tutte piccole stalle di cemento armato sono ancora in buone condizioni, attorno allo stabile è tutto ancora recintato. Zona vicino fiumi Fiastra difronte Lago ""Chiavari"".'
-indirizzo: 'Via del castellano, Petriolo, MC, Marche, 620101, Italia'
-lat: '43.221693'
-lon: '13.4653351'
-link: 'https://www.facebook.com/groups/1104882906294788/permalink/1191051137677964/'
 immagine: ''
 data: 20/01/2017
 </yamldata></pre>",open
