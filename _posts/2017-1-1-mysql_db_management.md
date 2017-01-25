@@ -51,6 +51,8 @@ show tables;          vs      show databases;
 
 describe comments;
 
+to show all your comments: select * from comments;
+
 
 to clear all the content from the command line:
 
