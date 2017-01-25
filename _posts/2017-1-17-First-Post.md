@@ -3,7 +3,7 @@ title:  "Metis Week 1"
 subtitle: "The Fly!"
 <!-- author: "Hrayr" -->
 avatar: "img/authors/wferr.png"
-image: "img/a.jpg"
+image: "IMG_2493.jpg"
 date:   2017-01-17
 
 ---
