@@ -1,8 +1,13 @@
 ---
-layout: post
-title: Metis Week 1
+title:  "Metis Week 1"
+subtitle: "The Fly!"
+<!-- author: "Hrayr" -->
+avatar: "img/authors/wferr.png"
+image: "img/a.jpg"
+date:   2017-01-17
+
 ---
-## 
+##
 
 ### A lot of googling and stack overflow
 
@@ -27,4 +32,4 @@ $\sum_{i=1}^{4} minds^{great} = productive, creative, successful, expedient$
 
 ### Getting used to working with different personalities  
 
-Be open to *helping* otheres
+Be open to *helping* others
