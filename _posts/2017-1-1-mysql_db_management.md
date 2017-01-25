@@ -76,7 +76,7 @@ mysqldump -u jss367 -h jss367.mysql.pythonanywhere-services.com 'jss367$comments
 
 To change your database:
 
-`use sappho$sapphodb;`
+`use sappho$sapphodatebase;`
 
 To remove a database:
 
