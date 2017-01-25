@@ -4,12 +4,12 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+A Computer Systems (mature) student.
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+Originally a music technology graduate, I tried my hand at making a career in the music industry, but after learning firsthand about the politics and heartbreak that exists within, I decided to return to college, and to pursue my other passion, Computer Science. 
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+Reach out on twitter, or drop me an email at myFirstName_myLastName@me.com
