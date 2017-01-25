@@ -39,18 +39,18 @@ Hit "`q`" to exit the git log
 then, to get them back to your pythonanywhere app, use `git pull origin master`
 
 
-If you make changes you want to delete (i.e. return to previous commit): git checkout -- flask_app.py. Or, if you want to revert everything: "git checkout ."
+If you make changes you want to delete (i.e. return to previous commit): git checkout -- flask_app.py. Or, if you want to revert everything: ``git checkout .`
 
 
 
 
 If you add a new file:
 
-git add .
+`git add .`
 
-git commit -m "added xxx"
+`git commit -m "added xxx"`
 
-git push origin master
+`git push origin master`
 
 Enter your username and password if required
 
@@ -91,37 +91,37 @@ from flask_app import app as application
 
 
 Other useful commands:
-git log
-git diff
+`git log`
+`git diff`
 There are different ways to use git diff.
-1. Show changes you haven't commited yet: git diff [filename]
-2. Show changes you already commited (but haven't sync'd): git diff --cached [filename]
+1. Show changes you haven't commited yet: `git diff [filename]`
+2. Show changes you already commited (but haven't sync'd): `git diff --cached [filename]`
 3.
 
 
-You can also add files and commit in one go: git commit -am "Going for broke"
+You can also add files and commit in one go: `git commit -am "Going for broke"`
 
 
-If you want to sync your git with the remote one (like when you've added a branch): git remote update
+If you want to sync your git with the remote one (like when you've added a branch): `git remote update`
 
 Creating a new branch
 
 You can create a new branch on your local machine. Let's say your new branch is called database
 
-git checkout database
+`git checkout database`
 
 You can make changes, break stuff, then switch back to your main branch at any time:
 
-git checkout master
+`git checkout master`
 
 To see all your git branches:
 
-What branch are you on: git branch
-What branches are there: git branch -a
+What branch are you on: `git branch`
+What branches are there: `git branch -a`
 
 When you want to merge a branch back into it's master:
 
-git checkout <master>
+`git checkout <master>
 git pull origin <master>
 git merge <branch>
-git push origin <master>
+git push origin <master>`
