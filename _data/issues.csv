@@ -1,4 +1,9 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2285,203150690,2017-01-25 16:25:53,2017-01-25 16:25:33,"Parlamento, informativa del Presidente del Consiglio sulla situazione di emergenza nel Centro Italia",,,"[""Accettato"", ""Bollettino"", ""Facebook"", ""Notizie Utili"", ""Sisma Gennaio 2017""]",,,"{""data"": ""25/01/2017"", ""descrizione"": ""Si sono svolte questa mattina, 25 gennaio, presso l'Assemblea del Senato, le comunicazioni del Presidente del Consiglio, Paolo Gentiloni, sulla situazione di emergenza nel Centro Italia. Per saperne di pi\u00f9 \u00e8 possibile consultare sul sito della Camera (vedi link) il resoconto stenografico della seduta; il paragrafo \""Gli eventi sismici di agosto-ottobre 2016 nel centro-Italia\"" del tema \""Terremoti\""; l'approfondimento che sintetizza i contenuti delle ordinanze finora emanate."", ""link"": ""http://www.camera.it/temiap/t/news/post-OCD15-12781"", ""titolo"": ""Parlamento, informativa del Presidente del Consiglio sulla situazione di emergenza nel Centro Italia""}","<pre><yamldata>titolo: 'Parlamento, informativa del Presidente del Consiglio sulla situazione di emergenza nel Centro Italia'
+descrizione: 'Si sono svolte questa mattina, 25 gennaio, presso l''Assemblea del Senato, le comunicazioni del Presidente del Consiglio, Paolo Gentiloni, sulla situazione di emergenza nel Centro Italia. Per saperne di più è possibile consultare sul sito della Camera (vedi link) il resoconto stenografico della seduta; il paragrafo ""Gli eventi sismici di agosto-ottobre 2016 nel centro-Italia"" del tema ""Terremoti""; l''approfondimento che sintetizza i contenuti delle ordinanze finora emanate.'
+link: 'http://www.camera.it/temiap/t/news/post-OCD15-12781'
+data: 25/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2284,203135165,2017-01-25 15:47:32,2017-01-25 15:32:32,Servono ciaspole e ghette per gli allevatori della provincia di #Teramo,42.6628499,13.7213024,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Facebook"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""Servono ciaspole e ghette per gli allevatori della provincia di #Teramo"", ""data"": ""25/01/2017"", ""descrizione"": ""Servono ciaspole e ghette. Questa \u00e8 la richiesta che fa l'Ente Parco del Gran Sasso. Ora gli allevatori devono raggiungere i loro animali e condurli in un posto sicuro per dargli da mangiare. Chi volesse donare ciaspole o ghette pu\u00f2 farle pervenire al Centro Emergenza Zootecnica e Sanitaria presso il Parco della Scienza a Teramo, in loc. Gammarana. Per il coordinamento pu\u00f2 contattare il Resp. Dott. Di Ubaldo (3473357804) oppure il Dott. Dalla Villa (3666235997)."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Via Antonio Tripoti, Coste Sant'Agostino, Gammarana, Teramo, TE, Abruzzo, 64100, Italia"", ""lat"": ""42.6628499"", ""link"": ""https://www.facebook.com/parcogransassolaga/posts/1813718718879555"", ""lon"": ""13.7213024"", ""tel"": ""3473357804 - 3666235997""}","<pre><yamldata>tel: '3473357804 - 3666235997'
 email: ''
 cosa: 'Servono ciaspole e ghette per gli allevatori della provincia di #Teramo'
@@ -9512,17 +9517,6 @@ https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/877,1860632
 descrizione: 'Cinque esoneri a copertura totale destinati ai ragazzi colpiti dal sisma del 24 agosto.'
 link: 'http://www.luiss.it/news/2016/10/14/luiss-mette-disposizione-borse-di-studio-gli-studenti-colpiti-dal-terremoto#'
 data: 29/10/2016
-</yamldata></pre>
-",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/875,186018276,2016-10-28 21:39:49,2016-10-28 20:47:07,Pro Loco Campi (Norcia) - Richiesta gemellaggio con altre Pro Loco per aiuto a sfollati ,42.8493534,13.0947414,"[""Accettato"", ""Bollettino"", ""Contatti"", ""Fabbisogni"", ""Form"", ""Pubblicare su FB"", ""Sisma Ottobre""]",,,"{""data"": ""28/10/2016"", ""descrizione"": ""Gemellaggio con altre Pro Loco in aiuto degli sfollati post-sisma."", ""email"": """", ""indirizzo"": ""Via dei Casali, Casa Cupa, Norcia, PG, UMB, 06046, Italia"", ""lat"": ""42.8493534"", ""link"": ""https://www.facebook.com/proloco.campi/"", ""lon"": ""13.0947414"", ""nome"": ""Pro Loco Campi"", ""tel"": ""0743 820225""}","<pre><yamldata>nome: 'Pro Loco Campi'
-tel: '0743 820225'
-email: ''
-descrizione: 'Gemellaggio con altre Pro Loco in aiuto degli sfollati post-sisma.'
-indirizzo: 'Via dei Casali, Casa Cupa, Norcia, PG, UMB, 06046, Italia'
-lat: '42.8493534'
-lon: '13.0947414'
-link: 'https://www.facebook.com/proloco.campi/'
-data: 28/10/2016
 </yamldata></pre>
 ",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/875,186018276,2016-10-28 21:39:49,2016-10-28 20:47:07,Pro Loco Campi (Norcia) - Richiesta gemellaggio con altre Pro Loco per aiuto a sfollati ,42.8493534,13.0947414,"[""Accettato"", ""Bollettino"", ""Contatti"", ""Fabbisogni"", ""Form"", ""Pubblicare su FB"", ""Sisma Ottobre""]",,,"{""data"": ""28/10/2016"", ""descrizione"": ""Gemellaggio con altre Pro Loco in aiuto degli sfollati post-sisma."", ""email"": """", ""indirizzo"": ""Via dei Casali, Casa Cupa, Norcia, PG, UMB, 06046, Italia"", ""lat"": ""42.8493534"", ""link"": ""https://www.facebook.com/proloco.campi/"", ""lon"": ""13.0947414"", ""nome"": ""Pro Loco Campi"", ""tel"": ""0743 820225""}","<pre><yamldata>nome: 'Pro Loco Campi'
