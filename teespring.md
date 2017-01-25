@@ -4,8 +4,7 @@ title: My TeeSpring Tees
 permalink: /teespring/
 ---
 
-<style>h2{ text-align: center; }
-.entry img{ max-width: 500px; }</style>
+<style>h1,h2{ text-align: center; } .entry img{ max-width: 500px; }</style>
 
 {% for tee in site.data.teespring %}
 ## [{{ tee.title }}]({{ tee.link }})
