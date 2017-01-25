@@ -209,6 +209,16 @@ lon: ''
 link: ''
 data: 24/01/2017
 </yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2258,202858096,2017-01-25 23:14:07,2017-01-24 15:53:18,Offro alloggio per una famiglia,45.6493300,9.6061700,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""24/01/2017"", ""descrizione"": ""Offro alloggio per una famiglia con 1/2 bambini in una villetta a schiera a Dalmine, prov. di Bergamo. In qualit\u00e0 di insegnante, sono disponibile per lezioni di recupero e/o potenziamento."", ""email"": ""daniela.fuccio@virgilio.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": ""45.6493300"", ""link"": """", ""lon"": ""9.6061700"", ""tel"": ""3485244584""}","<pre><yamldata>tel: '3485244584'
+email: daniela.fuccio@virgilio.it
+descrizione: 'Offro alloggio per una famiglia con 1/2 bambini in una villetta a schiera a Dalmine, prov. di Bergamo. In qualità di insegnante, sono disponibile per lezioni di recupero e/o potenziamento.'
+indirizzo: ''
+lat: '45.6493300'
+lon: '9.6061700'
+link: ''
+immagine: ''
+data: 24/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2257,202820056,2017-01-24 15:06:03,2017-01-24 13:38:33,"Regione Lazio, prorogate di un mese forniture straordinarie di mangimi agli allevatori",,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili"", ""Sisma Gennaio 2017""]",,,"{""data"": ""24/01/2017"", ""descrizione"": ""La Regione Lazio, in collaborazione con Arsial, ha prorogato per un mese la distribuzione di foraggio, mangime e acqua come fornitura straordinaria per le aziende delle zone colpite dal sisma."", ""link"": ""http://www.regione.lazio.it/rl_main/?vw=newsDettaglio&id=3780"", ""titolo"": ""Regione Lazio, prorogate di un mese forniture straordinarie di mangini agli allevatori""}","<pre><yamldata>titolo: 'Regione Lazio, prorogate di un mese forniture straordinarie di mangini agli allevatori'
 descrizione: 'La Regione Lazio, in collaborazione con Arsial, ha prorogato per un mese la distribuzione di foraggio, mangime e acqua come fornitura straordinaria per le aziende delle zone colpite dal sisma.'
 link: 'http://www.regione.lazio.it/rl_main/?vw=newsDettaglio&id=3780'
