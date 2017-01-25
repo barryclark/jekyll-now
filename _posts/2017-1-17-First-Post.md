@@ -4,7 +4,7 @@ title: Metis Week 1
 ---
 ##
 
-### A lot of googling and stack overflow
+## A lot of googling and stack overflow
 
 
 ### Github: the hub of it all
