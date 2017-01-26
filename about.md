@@ -15,7 +15,7 @@ Area of interest:
 *Network Security
 *Forensics
 *Programming
-*Pen testing
+
 ### Contact me
 
 [me@exit.wtf](mailto:me@exit.wtf)
