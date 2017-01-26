@@ -1,4 +1,14 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2294,203414745,2017-01-26 16:23:47,2017-01-26 16:20:10,Gestiamo l'Albergo Garni Enros,46.4204045,11.6726135,"[""Accettato"", ""Alloggi"", ""Bollettino"", ""Form""]",,,"{""data"": ""26/01/2017"", ""descrizione"": ""Con il nostro Bed&Breakfast Garni Enrosadira a Vigo di Fassa (Trento) offriamo soggiorni gratuiti a chi \u00e8 stato colpito dal sisma e dall'emergenza neve per regalare un attimo di pace e serenit\u00e0. Per contatti: Lisanna Cincelli 346 36 73 004."", ""email"": ""lisanna.cincelli@gmail.com"", ""immagine"": """", ""indirizzo"": ""Strada Rezia, Vigo di Fassa, Comunit\u00e0 della Val di Fassa, TN, Trentino-Alto Adige, 38039, Italia"", ""lat"": ""46.4204045"", ""link"": ""https://www.facebook.com/hotelgarnienrosadira/"", ""lon"": ""11.6726135"", ""tel"": ""346 36 73 004""}","<pre><yamldata>tel: '346 36 73 004'
+email: lisanna.cincelli@gmail.com
+descrizione: 'Con il nostro Bed&Breakfast Garni Enrosadira a Vigo di Fassa (Trento) offriamo soggiorni gratuiti a chi è stato colpito dal sisma e dall''emergenza neve per regalare un attimo di pace e serenità. Per contatti: Lisanna Cincelli 346 36 73 004.'
+indirizzo: 'Strada Rezia, Vigo di Fassa, Comunità della Val di Fassa, TN, Trentino-Alto Adige, 38039, Italia'
+lat: '46.4204045'
+lon: '11.6726135'
+link: 'https://www.facebook.com/hotelgarnienrosadira/'
+immagine: ''
+data: 26/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2293,203412781,2017-01-26 16:13:24,2017-01-26 16:13:01,"Regione #Lazio, disponibili i moduli per una tantum ai lavoratori autonomi colpiti dal sisma",,,"[""Accettato"", ""Bollettino"", ""Notizie Utili""]",,,"{""data"": ""26/01/2017"", ""descrizione"": ""Ai sindaci sono stati distribuiti i moduli per l'indennit\u00e0 una tantum di 5000 euro che la Regione Lazio conceder\u00e0 a tutti i lavoratori delle aziende autonome colpite nella zona del sisma\u201d. Al link i moduli."", ""link"": ""http://www.ricostruzionelazio.it/ricostruzionelazio/zingaretti-fondi-una-tantum-per-aziende-autonome/"", ""titolo"": ""Regione #Lazio, disponibili i moduli per una tantum ai lavoratori autonomi colpiti dal sisma""}","<pre><yamldata>titolo: 'Regione #Lazio, disponibili i moduli per una tantum ai lavoratori autonomi colpiti dal sisma'
 descrizione: 'Ai sindaci sono stati distribuiti i moduli per l''indennità una tantum di 5000 euro che la Regione Lazio concederà a tutti i lavoratori delle aziende autonome colpite nella zona del sisma”. Al link i moduli.'
 link: 'http://www.ricostruzionelazio.it/ricostruzionelazio/zingaretti-fondi-una-tantum-per-aziende-autonome/'
