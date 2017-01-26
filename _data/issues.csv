@@ -1,4 +1,14 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2290,203340137,2017-01-26 15:27:22,2017-01-26 10:42:29,Offresi uno o due posti letto in Trentino,,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""26/01/2017"", ""descrizione"": ""Mettiamo a disposizione uno/due posti letto in Trentino. Ben accetti bambini e animali ."", ""email"": ""marazuech@libero.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3334551621""}","<pre><yamldata>tel: '3334551621'
+email: marazuech@libero.it
+descrizione: 'Mettiamo a disposizione uno/due posti letto in Trentino. Ben accetti bambini e animali .'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 26/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2288,203238614,2017-01-25 22:15:08,2017-01-25 22:14:39,Cercasi con urgenza trasporto per una roulotte da Roma a Treia (Mc),43.310556,13.311475,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""Cercasi con urgenza trasporto per una roulotte da Roma a Treia (Mc)"", ""data"": ""25/01/2017"", ""descrizione"": ""Grazie al vostro sito ho finalmente trovato una roulotte che mi permetter\u00e0 di stare nel paese dove vivo, Treia in provincia di Macerata. La roulotte \u00e8 a Roma ma non pu\u00f2 viaggiare e quindi cerco qualcuno che mi aiuti a trasportarla con un carrello o camioncino. Sono sfollata da agosto e sono passata da un alloggio precario all'altro ma adesso con questa roulotte potrei finalmente \""stabilizzarmi\"". Grazie a chiunque potr\u00e0 darmi un aiuto. Petra"", ""email"": ""pelange23@web.de"", ""immagine"": """", ""indirizzo"": ""Viale Armando Diaz, Treia, MC, Marche, Italia"", ""lat"": ""43.310556"", ""link"": """", ""lon"": ""13.311475"", ""tel"": ""3291693369""}","<pre><yamldata>tel: '3291693369'
 email: pelange23@web.de
 cosa: 'Cercasi con urgenza trasporto per una roulotte da Roma a Treia (Mc)'
@@ -12944,12 +12954,6 @@ data: 15/09/2016
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/426,177172799,2016-10-01 16:36:04,2016-09-15 13:13:56,Regione Abruzzo: contributo autonoma sistemazione,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""15/09/2016"", ""descrizione"": ""Sul sito di Regione Abruzzo le indicazioni per i cittadini colpiti dal sisma che vogliano chiedere il contributo di autonoma sistemazione"", ""link"": ""http://www.regione.abruzzo.it/portale/index.asp?modello=articolo&servizio=xList&stileDiv=mono&msv=articolo114290&tom=14290"", ""titolo"": ""Regione Abruzzo: contributo autonoma sistemazione""}","<pre><yamldata>titolo: 'Regione Abruzzo: contributo autonoma sistemazione'
 descrizione: 'Sul sito di Regione Abruzzo le indicazioni per i cittadini colpiti dal sisma che vogliano chiedere il contributo di autonoma sistemazione'
 link: 'http://www.regione.abruzzo.it/portale/index.asp?modello=articolo&servizio=xList&stileDiv=mono&msv=articolo114290&tom=14290'
-data: 15/09/2016
-</yamldata></pre>
-",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/425,177172683,2016-10-01 16:31:09,2016-09-15 13:13:24,Punto di ascolto Caritas Rieti ad Amatrice,,,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""15/09/2016"", ""descrizione"": ""Caritas Rieti ha installato una tenda con volontari nel parco pubblico di Amatrice per ascoltare i bisogni dei cittadini colpiti dal sisma"", ""link"": ""https://www.facebook.com/Caritas-Rieti-828773247178943/"", ""titolo"": ""Punto di ascolto Caritas Rieti ad Amatrice""}","<pre><yamldata>titolo: 'Punto di ascolto Caritas Rieti ad Amatrice'
-descrizione: 'Caritas Rieti ha installato una tenda con volontari nel parco pubblico di Amatrice per ascoltare i bisogni dei cittadini colpiti dal sisma'
-link: 'https://www.facebook.com/Caritas-Rieti-828773247178943/'
 data: 15/09/2016
 </yamldata></pre>
 ",open
