@@ -4,12 +4,18 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Security undergraduate about to enter the real world.
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
-
+Area of interest:
+*Reverse Engineering
+*Vulnerability Research & Exploit Development
+*Malware Analysis
+*Network Security
+*Forensics
+*Programming
+*Pen testing
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[me@exit.wtf](mailto:me@exit.wtf)
