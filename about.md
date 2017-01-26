@@ -9,12 +9,13 @@ Security undergraduate about to enter the real world.
 ### More Information
 
 Area of interest:
-*Reverse Engineering
-*Vulnerability Research & Exploit Development
-*Malware Analysis
-*Network Security
-*Forensics
-*Programming
+
+* Reverse Engineering
+* Vulnerability Research & Exploit Development
+* Malware Analysis
+* Network Security
+* Forensics
+* Programming
 
 ### Contact me
 
