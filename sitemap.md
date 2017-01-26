@@ -9,6 +9,7 @@ permalink: /sitemap/
 * [Front Page](/index.html)
 * [About](/about/)
 * [Privacy Policy](/privacy/)
+* [My TeeSpring Tees](/teespring/)
 * [Sitemap (this page)](/sitemap/)
 * [Sitemap.xml](/sitemap.xml)
 * [robots.txt](/robots.txt)
