@@ -1,4 +1,20 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2301,203516524,2017-01-26 23:10:35,2017-01-26 23:09:48,Raccolta di beni a Parma,44.8064575,10.3034503,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Facebook"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""Raccolta di beni a Parma"", ""data"": ""26/01/2017"", ""descrizione"": ""A Parma il gruppo Io non crollo raccoglie beni presso il negozio di Roberto Zanella \""Spazio Verde\"" - Via Emilia Ovest 323 (vicino al ponte di Pontetaro)."", ""email"": ""info@spazioverdeparma.it"", ""immagine"": """", ""indirizzo"": ""Via Emilia Ovest, Parma, PR, EMR, 43126, Italia"", ""lat"": ""44.8064575"", ""link"": ""https://www.facebook.com/profile.php?id=100009804013677&fref=ts"", ""lon"": ""10.3034503"", ""tel"": ""0521 671689""}","<pre><yamldata>tel: '0521 671689'
+email: info@spazioverdeparma.it
+cosa: 'Raccolta di beni a Parma'
+descrizione: 'A Parma il gruppo Io non crollo raccoglie beni presso il negozio di Roberto Zanella ""Spazio Verde"" - Via Emilia Ovest 323 (vicino al ponte di Pontetaro).'
+indirizzo: 'Via Emilia Ovest, Parma, PR, EMR, 43126, Italia'
+lat: '44.8064575'
+lon: '10.3034503'
+link: 'https://www.facebook.com/profile.php?id=100009804013677&fref=ts'
+immagine: ''
+data: 26/01/2017
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2300,203515236,2017-01-26 23:10:18,2017-01-26 23:02:47,"Umbria, occhiali da vista gratis grazie a Federottica",,,"[""Accettato"", ""Bollettino"", ""Facebook"", ""Notizie Utili"", ""Sisma Gennaio 2017""]",,,"{""data"": ""26/01/2017"", ""descrizione"": ""Federottica Umbria, aderente a Confcommercio, con Luxottica offre occhiali gratis alle persone colpite dal terremoto. Le richieste saranno raccolte dalla segreteria di Federottica Umbria, presso Confcommercio Umbria (sede di Perugia, tel. 075.506711 \u2013 s.ragnacci@confcommercio.umbria.it), che provveder\u00e0 a trasmetterle alla Scuola di Ottica e Optometria dell\u2019Istituto Fermi per l\u2019assemblaggio degli occhiali, e per concordare modalit\u00e0 e tempi i consegna. Per l\u2019eventuale visita oculistica, \u00e8 possibile contattare la Clinica oculistica di Perugia. Per una valutazione optometrica, le persone interessate potranno recarsi presso l\u2019istituto Enrico Fermi di Perugia, nelle date e secondo le modalit\u00e0 descritte nel sito www.confcommercio.umbria.it."", ""link"": ""http://tuttoggi.info/terremoto-occhiali-vista-gratis-grazie-confcommercio/378604/"", ""titolo"": ""Umbria, occhiali da vista gratis grazie a Federottica""}","<pre><yamldata>titolo: 'Umbria, occhiali da vista gratis grazie a Federottica'
+descrizione: 'Federottica Umbria, aderente a Confcommercio, con Luxottica offre occhiali gratis alle persone colpite dal terremoto. Le richieste saranno raccolte dalla segreteria di Federottica Umbria, presso Confcommercio Umbria (sede di Perugia, tel. 075.506711 – s.ragnacci@confcommercio.umbria.it), che provvederà a trasmetterle alla Scuola di Ottica e Optometria dell’Istituto Fermi per l’assemblaggio degli occhiali, e per concordare modalità e tempi i consegna. Per l’eventuale visita oculistica, è possibile contattare la Clinica oculistica di Perugia. Per una valutazione optometrica, le persone interessate potranno recarsi presso l’istituto Enrico Fermi di Perugia, nelle date e secondo le modalità descritte nel sito www.confcommercio.umbria.it.'
+link: 'http://tuttoggi.info/terremoto-occhiali-vista-gratis-grazie-confcommercio/378604/'
+data: 26/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2299,203510395,2017-01-26 22:39:58,2017-01-26 22:39:12,"Scuole da ricostruire, l'elenco nell'ordinanza n. 14 del Commissario straordinario",,,"[""Accettato"", ""Bollettino"", ""Facebook"", ""Notizie Utili""]",,,"{""data"": ""26/01/2017"", ""descrizione"": ""Pubblicata l'ordinanza n. 14 del 17/1/2017 \""Approvazione del programma straordinario per la riapertura delle scuole per l\u2019anno scolastico 2017-2018\"" con l'elenco delle scuole da ricostruire in Lazio, Marche, Umbria e Abruzzo. Al link il testo completo dell'ordinanza."", ""link"": ""https://sisma2016.gov.it/wp-content/uploads/2017/01/ordinanza-n.-14-riapertura-scuole-A.S.-2017-2018.pdf"", ""titolo"": ""Scuole da ricostruire, l'elenco nell'ordinanza n. 14 del Commissario straordinario""}","<pre><yamldata>titolo: 'Scuole da ricostruire, l''elenco nell''ordinanza n. 14 del Commissario straordinario'
 descrizione: 'Pubblicata l''ordinanza n. 14 del 17/1/2017 ""Approvazione del programma straordinario per la riapertura delle scuole per l’anno scolastico 2017-2018"" con l''elenco delle scuole da ricostruire in Lazio, Marche, Umbria e Abruzzo. Al link il testo completo dell''ordinanza.'
 link: 'https://sisma2016.gov.it/wp-content/uploads/2017/01/ordinanza-n.-14-riapertura-scuole-A.S.-2017-2018.pdf'
@@ -3206,16 +3222,6 @@ indirizzo: 'Cordonata, Municipio Roma I, Roma, RM, Lazio, 00186, Italia'
 lat: '41.8935085'
 lon: '12.4825526'
 link: 'https://www.facebook.com/profile.php?id=100010746691778&fref=nf'
-immagine: ''
-data: 19/01/2017
-</yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1917,201922749,2017-01-19 17:25:57,2017-01-19 17:21:08,Offresi alloggio per 2 persone #Siena,,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""19/01/2017"", ""descrizione"": ""offro alloggio per due persone a Chiusi (siena)"", ""email"": ""decar14@libero.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3334017818""}","<pre><yamldata>tel: '3334017818'
-email: decar14@libero.it
-descrizione: 'offro alloggio per due persone a Chiusi (siena)'
-indirizzo: ''
-lat: ''
-lon: ''
-link: ''
 immagine: ''
 data: 19/01/2017
 </yamldata></pre>",open
@@ -6684,11 +6690,6 @@ lat: '42.9312321'
 lon: '13.087449'
 link: 'https://www.facebook.com/ilaria.silvestrini.9/posts/10154809394770087'
 immagine: ''
-data: 18/11/2016
-</yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1314,190432557,2016-11-18 22:13:24,2016-11-18 22:02:52,"Comune di #Tolentino: nuove sedi e nuova organizzazione per Licei Coreutico, Classico e Scientifico Istituto Filelfo",,,"[""Accettato"", ""Bollettino"", ""Facebook"", ""Notizie Utili"", ""Sisma Ottobre""]",,,"{""data"": ""18/11/2016"", ""descrizione"": ""Comune di Tolentino comunica la nuova riorganizzazione e le nuovi sedi per la ripresa delle lezioni del Liceo Classico, del Liceo Scientifico e del Liceo Coreutico dell\u2019Istituto di Istruzione Superiore \u201cFrancesco Filelfo\"". Al link tutti i dettagli."", ""link"": ""http://www.comune.tolentino.mc.it/comunicati-cms/nuove-sedi-e-nuova-organizzazione-per-i-licei-coreutico-classico-e-scientifico-dellistituto-filelfo/"", ""titolo"": ""Comune di #Tolentino: nuove sedi e nuova organizzazione per i Licei Coreutico, Classico e Scientifico Istituto Filelfo""}","<pre><yamldata>titolo: 'Comune di #Tolentino: nuove sedi e nuova organizzazione per i Licei Coreutico, Classico e Scientifico Istituto Filelfo'
-descrizione: 'Comune di Tolentino comunica la nuova riorganizzazione e le nuovi sedi per la ripresa delle lezioni del Liceo Classico, del Liceo Scientifico e del Liceo Coreutico dell’Istituto di Istruzione Superiore “Francesco Filelfo"". Al link tutti i dettagli.'
-link: 'http://www.comune.tolentino.mc.it/comunicati-cms/nuove-sedi-e-nuova-organizzazione-per-i-licei-coreutico-classico-e-scientifico-dellistituto-filelfo/'
 data: 18/11/2016
 </yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1314,190432557,2016-11-18 22:13:24,2016-11-18 22:02:52,"Comune di #Tolentino: nuove sedi e nuova organizzazione per Licei Coreutico, Classico e Scientifico Istituto Filelfo",,,"[""Accettato"", ""Bollettino"", ""Facebook"", ""Notizie Utili"", ""Sisma Ottobre""]",,,"{""data"": ""18/11/2016"", ""descrizione"": ""Comune di Tolentino comunica la nuova riorganizzazione e le nuovi sedi per la ripresa delle lezioni del Liceo Classico, del Liceo Scientifico e del Liceo Coreutico dell\u2019Istituto di Istruzione Superiore \u201cFrancesco Filelfo\"". Al link tutti i dettagli."", ""link"": ""http://www.comune.tolentino.mc.it/comunicati-cms/nuove-sedi-e-nuova-organizzazione-per-i-licei-coreutico-classico-e-scientifico-dellistituto-filelfo/"", ""titolo"": ""Comune di #Tolentino: nuove sedi e nuova organizzazione per i Licei Coreutico, Classico e Scientifico Istituto Filelfo""}","<pre><yamldata>titolo: 'Comune di #Tolentino: nuove sedi e nuova organizzazione per i Licei Coreutico, Classico e Scientifico Istituto Filelfo'
