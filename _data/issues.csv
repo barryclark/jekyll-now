@@ -1,7 +1,23 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2291,203407677,2017-01-26 15:59:50,2017-01-26 15:55:06,"#Marche, dal 30/1 domande per una tantum ai lavoratori autonomi colpiti dal sisma",,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili"", ""Sisma Gennaio 2017""]",,,"{""data"": ""26/01/2017"", ""descrizione"": ""Da luned\u00ec 30 gennaio i lavoratori autonomi e liberi professionisti delle Marche che hanno cessato l'attivit\u00e0 a causa del terremoto possono fare domanda per ottenere i 5 mila euro una tantum previsti dalla normativa. La modulistica per compilare le domande sar\u00e0 scaricabile dal sito della Regione gi\u00e0 da luned\u00ec, mentre per la cassa integrazione in deroga da mercoled\u00ec primo febbraio."", ""link"": ""http://www.ansa.it/marche/notizie/2017/01/26/sisma-dal-301-domande-per-una-tantum_87534667-43cc-4144-8d34-7b5365d4e97d.html"", ""titolo"": ""Sisma, dal 30/1 domande per una tantum""}","<pre><yamldata>titolo: 'Sisma, dal 30/1 domande per una tantum'
+descrizione: 'Da lunedì 30 gennaio i lavoratori autonomi e liberi professionisti delle Marche che hanno cessato l''attività a causa del terremoto possono fare domanda per ottenere i 5 mila euro una tantum previsti dalla normativa. La modulistica per compilare le domande sarà scaricabile dal sito della Regione già da lunedì, mentre per la cassa integrazione in deroga da mercoledì primo febbraio.'
+link: 'http://www.ansa.it/marche/notizie/2017/01/26/sisma-dal-301-domande-per-una-tantum_87534667-43cc-4144-8d34-7b5365d4e97d.html'
+data: 26/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2290,203340137,2017-01-26 15:27:22,2017-01-26 10:42:29,Offresi uno o due posti letto in Trentino,,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""26/01/2017"", ""descrizione"": ""Mettiamo a disposizione uno/due posti letto in Trentino. Ben accetti bambini e animali ."", ""email"": ""marazuech@libero.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3334551621""}","<pre><yamldata>tel: '3334551621'
 email: marazuech@libero.it
 descrizione: 'Mettiamo a disposizione uno/due posti letto in Trentino. Ben accetti bambini e animali .'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 26/01/2017
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2289,203337341,2017-01-26 15:58:59,2017-01-26 10:28:52,Associazione di volontariato offre scorte alimentari ,,,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""OFFRESI SCORTE ALIMENTARI"", ""data"": ""26/01/2017"", ""descrizione"": ""Siamo l'associazione A.E.O.P. di Torremaggiore (FG), associazione di volontariato e offriamo scorte alimentari: pasta , zucchero, farina, pelati, sale, passate, ecc ecc. Non potendo recarci sul posto, siamo disposti a spedire direttamente alle famiglie bisognose o presso centri di raccolta."", ""email"": ""palma.luigi.lp@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3293684667 Luigi""}","<pre><yamldata>tel: '3293684667 Luigi'
+email: palma.luigi.lp@gmail.com
+cosa: 'OFFRESI SCORTE ALIMENTARI'
+descrizione: 'Siamo l''associazione A.E.O.P. di Torremaggiore (FG), associazione di volontariato e offriamo scorte alimentari: pasta , zucchero, farina, pelati, sale, passate, ecc ecc. Non potendo recarci sul posto, siamo disposti a spedire direttamente alle famiglie bisognose o presso centri di raccolta.'
 indirizzo: ''
 lat: ''
 lon: ''
@@ -25,10 +41,10 @@ descrizione: 'L''Ordine dei Geologi della Regione Abruzzo nell''esprimere la pro
 link: 'http://www.geologiabruzzo.it/287n121/comunicato-stampa-sulla-vicenda-dell-hotel-rigopiano.html'
 data: 25/01/2017
 </yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2286,203220980,2017-01-26 08:34:59,2017-01-25 21:01:13,A #Cascia si cerca con urgenza container uso magazzino per officina meccanica,,,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Sisma Gennaio 2017"", ""Sisma Ottobre""]",,,{},"<pre><yamldata>tel: '3462281941'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2286,203220980,2017-01-26 15:56:20,2017-01-25 21:01:13,A #Cascia si cerca con urgenza container uso magazzino per officina meccanica,,,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Sisma Gennaio 2017"", ""Sisma Ottobre""]",,,"{""cosa"": ""Container uso magazzino"", ""data"": ""25/01/2017"", ""descrizione"": ""Avrei necessit\u00e0 di un container (anche due se possibile) per trasferirvi materiale dai locali della mia attivit\u00e0 resa inagibili dal terremoto. Si tratta di un'officina meccanica a Cascia andata completamente distrutta. Il container mi serve perch\u00e9 devo mettere al riparo i materiali che ho recuperato in attesa dei lavori di ricostruzione. Chiunque possa aiutarmi pu\u00f2 contattarmi al 3462281941. Grazie. Guerrino Aloisi"", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3462281941""}","<pre><yamldata>tel: '3462281941'
 email: ''
 cosa: 'Container uso magazzino'
-descrizione: 'Avrei necessità di un container (anche due se possibile) per trasferirvi materiale dai locali della mia attività resa inagibili dal terremoto. Si tratta di un'officina meccanica a Cascia andata completamente distrutta. Il container mi serve perché devo mettere al riparo i materiali che ho recuperato in attesa dei lavori di ricostruzione. Chiunque possa aiutarmi può contattarmi al 3462281941. Grazie. Guerrino Aloisi'
+descrizione: 'Avrei necessità di un container (anche due se possibile) per trasferirvi materiale dai locali della mia attività resa inagibili dal terremoto. Si tratta di un''officina meccanica a Cascia andata completamente distrutta. Il container mi serve perché devo mettere al riparo i materiali che ho recuperato in attesa dei lavori di ricostruzione. Chiunque possa aiutarmi può contattarmi al 3462281941. Grazie. Guerrino Aloisi'
 indirizzo: ''
 lat: ''
 lon: ''
@@ -5412,17 +5428,6 @@ descrizione: 'Il Comune di Fiastra ha bisogno urgente di un paio di motoseghe pr
 indirizzo: 'Via Roma, Fiastra, MC, Marche, 62035, Italia'
 lat: '43.0361407'
 lon: '13.1554547'
-link: ''
-immagine: ''
-data: 19/12/2016
-</yamldata></pre>",closed
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1475,196430452,2016-12-26 15:41:51,2016-12-19 14:45:19,"Azienda agricola di #Pretare ha bisogno di mangime per bovini, equini e ovini",42.7978600,13.3004100,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Sisma Ottobre""]",,,"{""cosa"": ""richiesta mangime"", ""data"": ""19/12/2016"", ""descrizione"": ""Buonasera, sono Santolini Santa, titolare dell'azienda agricola Le Terre delle fate, situata a Pretare, piccola frazione di Arquata del Tronto. Il mio paese \u00e8 stato duramente colpito dal sisma, cos\u00ec come la mia azienda. Essa \u00e8 composta da 20 bovini, 15 ovini e 4 equini. E' a conduzione familiare, gestita da me, con l'ausilio dei miei due figli. Ogni giorno siamo costretti a recarci da San Benedetto a Pretare, percorrendo circa 70 chilometri. Abbiamo necessit\u00e0 di almeno 50 quintali di mangime per soddisfare tutti i nostri animali. Purtroppo, a causa delle spese ingenti che stiamo affrontando, considerando anche le innumerevoli perdite economiche ricevute a causa del sisma, ci troviamo nella condizione di chiedere aiuto. Teniamo a precisare che la necessit\u00e0 \u00e8 reale e confidiamo nella comprensione di quanti vorranno darci una mano."", ""email"": ""mirkotrenta@libero.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": ""42.7978600"", ""link"": """", ""lon"": ""13.3004100"", ""tel"": ""3804323871""}","<pre><yamldata>tel: '3804323871'
-email: mirkotrenta@libero.it
-cosa: 'richiesta mangime'
-descrizione: 'Buonasera, sono Santolini Santa, titolare dell''azienda agricola Le Terre delle fate, situata a Pretare, piccola frazione di Arquata del Tronto. Il mio paese è stato duramente colpito dal sisma, così come la mia azienda. Essa è composta da 20 bovini, 15 ovini e 4 equini. E'' a conduzione familiare, gestita da me, con l''ausilio dei miei due figli. Ogni giorno siamo costretti a recarci da San Benedetto a Pretare, percorrendo circa 70 chilometri. Abbiamo necessità di almeno 50 quintali di mangime per soddisfare tutti i nostri animali. Purtroppo, a causa delle spese ingenti che stiamo affrontando, considerando anche le innumerevoli perdite economiche ricevute a causa del sisma, ci troviamo nella condizione di chiedere aiuto. Teniamo a precisare che la necessità è reale e confidiamo nella comprensione di quanti vorranno darci una mano.'
-indirizzo: ''
-lat: '42.7978600'
-lon: '13.3004100'
 link: ''
 immagine: ''
 data: 19/12/2016
