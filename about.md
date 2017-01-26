@@ -8,7 +8,7 @@ A Computer Systems (mature) student.
 
 ### More Information
 
-Originally a music technology graduate, I tried my hand at making a career in the music industry, but after learning firsthand about the politics and heartbreak that exists within, I decided to return to college, and to pursue my other passion, Computer Science. 
+Originally a music technology graduate, I tried my hand at making a career in the music industry, but after trying my hand at making a career in music, I decided to return to college to pursue my other passion, Computer Science. 
 
 ### Contact me
 
