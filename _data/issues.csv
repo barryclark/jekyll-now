@@ -3219,6 +3219,16 @@ link: ''
 immagine: ''
 data: 19/01/2017
 </yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1917,201922749,2017-01-19 17:25:57,2017-01-19 17:21:08,Offresi alloggio per 2 persone #Siena,,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""19/01/2017"", ""descrizione"": ""offro alloggio per due persone a Chiusi (siena)"", ""email"": ""decar14@libero.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3334017818""}","<pre><yamldata>tel: '3334017818'
+email: decar14@libero.it
+descrizione: 'offro alloggio per due persone a Chiusi (siena)'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 19/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1916,201921289,2017-01-19 17:20:58,2017-01-19 17:15:26,Offresi monolocale a #Savona,44.3381826,8.5098994,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,http://i.imgur.com/JjJfJSd.jpg,"{""data"": ""19/01/2017"", ""descrizione"": ""Offro monolocale sito in Savona per coppia + eventuale bambino piccolo per qualche giorno."", ""email"": ""lorenzo.valenza@gmail.com"", ""immagine"": ""http://i.imgur.com/JjJfJSd.jpg"", ""indirizzo"": ""Via Turati, Albisola Capo, Albisola Superiore, SV, Liguria, 17011, Italia"", ""lat"": ""44.3381826"", ""link"": """", ""lon"": ""8.5098994"", ""tel"": ""3355651812""}","<pre><yamldata>tel: '3355651812'
 email: lorenzo.valenza@gmail.com
 descrizione: 'Offro monolocale sito in Savona per coppia + eventuale bambino piccolo per qualche giorno.'
@@ -6674,6 +6684,11 @@ lat: '42.9312321'
 lon: '13.087449'
 link: 'https://www.facebook.com/ilaria.silvestrini.9/posts/10154809394770087'
 immagine: ''
+data: 18/11/2016
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1314,190432557,2016-11-18 22:13:24,2016-11-18 22:02:52,"Comune di #Tolentino: nuove sedi e nuova organizzazione per Licei Coreutico, Classico e Scientifico Istituto Filelfo",,,"[""Accettato"", ""Bollettino"", ""Facebook"", ""Notizie Utili"", ""Sisma Ottobre""]",,,"{""data"": ""18/11/2016"", ""descrizione"": ""Comune di Tolentino comunica la nuova riorganizzazione e le nuovi sedi per la ripresa delle lezioni del Liceo Classico, del Liceo Scientifico e del Liceo Coreutico dell\u2019Istituto di Istruzione Superiore \u201cFrancesco Filelfo\"". Al link tutti i dettagli."", ""link"": ""http://www.comune.tolentino.mc.it/comunicati-cms/nuove-sedi-e-nuova-organizzazione-per-i-licei-coreutico-classico-e-scientifico-dellistituto-filelfo/"", ""titolo"": ""Comune di #Tolentino: nuove sedi e nuova organizzazione per i Licei Coreutico, Classico e Scientifico Istituto Filelfo""}","<pre><yamldata>titolo: 'Comune di #Tolentino: nuove sedi e nuova organizzazione per i Licei Coreutico, Classico e Scientifico Istituto Filelfo'
+descrizione: 'Comune di Tolentino comunica la nuova riorganizzazione e le nuovi sedi per la ripresa delle lezioni del Liceo Classico, del Liceo Scientifico e del Liceo Coreutico dell’Istituto di Istruzione Superiore “Francesco Filelfo"". Al link tutti i dettagli.'
+link: 'http://www.comune.tolentino.mc.it/comunicati-cms/nuove-sedi-e-nuova-organizzazione-per-i-licei-coreutico-classico-e-scientifico-dellistituto-filelfo/'
 data: 18/11/2016
 </yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1314,190432557,2016-11-18 22:13:24,2016-11-18 22:02:52,"Comune di #Tolentino: nuove sedi e nuova organizzazione per Licei Coreutico, Classico e Scientifico Istituto Filelfo",,,"[""Accettato"", ""Bollettino"", ""Facebook"", ""Notizie Utili"", ""Sisma Ottobre""]",,,"{""data"": ""18/11/2016"", ""descrizione"": ""Comune di Tolentino comunica la nuova riorganizzazione e le nuovi sedi per la ripresa delle lezioni del Liceo Classico, del Liceo Scientifico e del Liceo Coreutico dell\u2019Istituto di Istruzione Superiore \u201cFrancesco Filelfo\"". Al link tutti i dettagli."", ""link"": ""http://www.comune.tolentino.mc.it/comunicati-cms/nuove-sedi-e-nuova-organizzazione-per-i-licei-coreutico-classico-e-scientifico-dellistituto-filelfo/"", ""titolo"": ""Comune di #Tolentino: nuove sedi e nuova organizzazione per i Licei Coreutico, Classico e Scientifico Istituto Filelfo""}","<pre><yamldata>titolo: 'Comune di #Tolentino: nuove sedi e nuova organizzazione per i Licei Coreutico, Classico e Scientifico Istituto Filelfo'
