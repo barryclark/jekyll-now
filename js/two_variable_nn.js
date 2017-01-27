@@ -5,7 +5,7 @@ var multiVariableNeuralNetworkTrainer = function (numberOfInputNodes,
                                                   gradientDescentButton, gradientDescent10Button, gradientDescent100Button,
                                                   gradientDescentConvergeButton,
                                                   weightsRanges, biasRanges,
-                                                  neuralNetworkGraphEl) {
+                                                  neuralNetworkGraphEl, analyticsCategory) {
 
     this.numberOfInputNodes = numberOfInputNodes;
     this.svg_el = svg_el;
@@ -22,6 +22,7 @@ var multiVariableNeuralNetworkTrainer = function (numberOfInputNodes,
     this.biasRanges = biasRanges;
 
     this.neuralNetworkGraphEl = neuralNetworkGraphEl;
+    this.analyticsCategory = analyticsCategory;
 
 
     this.initializeErrorGraph();
@@ -38,26 +39,45 @@ var multiVariableNeuralNetworkTrainer = function (numberOfInputNodes,
             }
         );
     }
-
-
     $(this.table_el + " #biasSlider").on("input change", (function () {
         trainerSelf.updateParameter("bias", 0, this.value, true);
     }));
 
+
+    // Attach Analytics events to when a user interacts with the sliders
+    for (var c = 0; c < this.weights.length; c++){
+        $(this.table_el + " #weight" + c + "Slider").on("mouseup touchend", {key_id: c},
+            function(e){
+                ga('send', 'event', trainerSelf.analyticsCategory, "Interacted with", "Weight " + c + " slider");
+            }
+        );
+    }
+
+    $(this.table_el + " #biasSlider").on("mouseup touchend", (function(){
+        ga('send', 'event', trainerSelf.analyticsCategory, "Interacted with", "Bias slider");
+    }));
+
+
+
+
+
     if (gradientDescentButton != '') {
         $(this.table_el + " " + gradientDescentButton).click(function () {
-            trainerSelf.gradientDescentStep(1)
+            trainerSelf.gradientDescentStep(1);
+            ga('send', 'event', trainerSelf.analyticsCategory, "Clicked on", "1 Gradient Descent Step");
         });
     }
     if (gradientDescent10Button != '') {
         $(this.table_el + " " + gradientDescent10Button).click(function () {
-            trainerSelf.gradientDescentStep(10)
+            trainerSelf.gradientDescentStep(10);
+            ga('send', 'event', trainerSelf.analyticsCategory, "Clicked on", "10 Gradient Descent Steps");
         });
     }
 
     if (gradientDescent100Button != '') {
         $(this.table_el + " " + gradientDescent100Button).click(function () {
-            trainerSelf.gradientDescentStep(100)
+            trainerSelf.gradientDescentStep(100);
+            ga('send', 'event', trainerSelf.analyticsCategory, "Clicked on", "100 Gradient Descent Steps");
         });
     }
 
@@ -542,5 +562,6 @@ var trainer3 = new multiVariableNeuralNetworkTrainer(2,
     "#gradient-descent-100-button",
     "#gradient-descent-converge-button",
     weightRanges, biasRange,
-    "#neural-network-two-graph"
+    "#neural-network-two-graph",
+    "Basics of Neural Networks - Viz 3 two variables"
 );

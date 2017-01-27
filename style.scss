@@ -299,7 +299,7 @@ div.nn-tooltip {
   padding: 15px;
   font: 12px sans-serif;
   background: white;
-  border: 1px solid #333;
+  border: 1px solid #666;
   border-radius: 8px;
   pointer-events: none;
 }
@@ -373,26 +373,33 @@ div.nn-tooltip {
   stroke-width: $nnStrokeWidth;
 }
 
-.grapherWeightNodeText{
-  font-size: 9px
-}
-
-.grapher-node-text{
-  font-size: 12px;
-  fill: #666;
-}
+.grapherWeightNodeText{  font-size: 9px  }
+.grapher-node-text{  font-size: 12px;  fill: #666;  }
 
 // Neural Network Calculation Viz
 #neural-network-calculation-viz{  text-align:center;  }
 
 .nn-node{  fill: white;  stroke-width: $lighterOutlinedNodeStrokeWidth;  }
 .nn-node:hover{ stroke: $lighterGray; }
+.nn-node-highlighted{ stroke: $lighterGray !important; }
+.layer-input-value{font-size: 11px;  opacity:0.7;}
+g text.layer-input-value-highlighted{font-size: 11px;  opacity:1 !important ; fill:$gray !important;}
+.layer-input-value-from-input{fill: #7ac680}
+//.layer-input-value-from-input{fill: #a8e7ad}
+.layer-input-value-from-bias{fill: #b2aef4}
 .input-group text{   pointer-events: none;  }
+.output-group text.node-text{   pointer-events: none; fill:$nnOutputNodeText !important;   }
 .outlined-input-node{  stroke: $inputOutlineColor;}
 .outlined-weight-node{  stroke: $nnWeightNode; }
 .outlined-bias-node{  stroke: $biasOutlineColor;}
 .outlined-output-node{  stroke: $outputOutlineColor;}
 .outlined-softmax-node{  stroke: $softmaxOutlineColor;}
+g.softmax text{   pointer-events: none;  }
+
+.input-node-text{ color:$nnInputNodeText}
+.weight-node-text{ color:$nnWeightNodeText}
+.bias-node-text{ color:$nnBiasNodeText}
+.output-node-text{ color:$nnOutputNodeText}
 
 
 .nn-arrow{
@@ -408,22 +415,50 @@ line.nn-arrow-highlighted{
 .arrowHead{  stroke:$lighterGray;  }
 
 #neural-network-calculation-viz .weightNodeText{  font-size: 9px; fill: #999;  pointer-events: none;}
-//#neural-network-calculation-viz .weightNodeText:hover{  font-size: 11px; fill: $gray;  pointer-events: none;}
-#neural-network-calculation-viz .node-text{
-  font-size: 14px;
-  fill: #666;
-}
-#neural-network-calculation-viz .outlined-weight-node:hover{
-  stroke: $lighterGray;
-}
+#neural-network-calculation-viz .weightNodeText-highlighted{  fill: $gray; }
+#neural-network-calculation-viz {  font-size: 14px;  fill: #666;  }
+#neural-network-calculation-viz .outlined-weight-node:hover{  stroke: $lighterGray;  }
+#neural-network-calculation-viz  .outlined-weight-node:hover .weightNodeText{  font-size: 12px;  fill: $gray;  }
+#neural-network-calculation-viz .highlighted-softmax-output{ fill:#333}
+#neural-network-calculation-viz .dim-softmax-output{ fill:#ccc}
 
-#neural-network-calculation-viz  .outlined-weight-node:hover .weightNodeText{
-  font-size: 12px;
-  fill: $gray;
-}
-#neural-network-calculation-viz .weightNodeText{
 
-}
+
+.prediction table.input-calculation{  font-size: 80% ;  border-collapse: collapse;  margin: 8px;  color: #888;  }
+.prediction table.input-calculation tr{  padding: 1px 10px;  }
+.prediction table.input-calculation th{  padding: 4px 5px;  font-weight: bold;  font-size: 90%;  }
+.prediction table.input-calculation td{  padding: 4px 5px;  border-top: 0px solid #333; ;  }
+
+.prediction table.input-calculation td.importance-10{ color: #ccc; }
+.prediction table.input-calculation td.importance-20{ color: #999; }
+.prediction table.input-calculation td.importance-30{ color: #333; }
+
+.prediction table.input-calculation  tr.total-row{ border-top:1px dashed #ccc; }
+
+
+
+.prediction table.softmax-calculation{  font-size: 100% ;  border-collapse: collapse;  margin: 8px;  color: #888;  }
+
+.prediction table.softmax-calculation, .prediction table.softmax-calculation th,
+.prediction table.softmax-calculation td{  border: 1px solid #ddd;}
+
+.prediction table.softmax-calculation tr{  padding: 1px 5px;  }
+.prediction table.softmax-calculation th{  font-weight:normal; font-size: 90%; text-align: center; padding:12px 12px;}
+.prediction table.softmax-calculation td{  padding: 4px 5px;  border-top: 0px solid #333;  text-align: center;  }
+.prediction table.softmax-calculation td.input{  color:$nnOutputNodeText; }
+.prediction table.softmax-calculation td.calculation{  font-size: 12pt ; padding: 8px 8px; }
+.prediction table.softmax-calculation td.class-name{  vertical-align: middle; font-size: 90%;}
+.prediction table.softmax-calculation td.highlighted{ font-weight: bold}
+
+.prediction table.softmax-calculation td.importance-10{ color: #ccc; }
+.prediction table.softmax-calculation td.importance-20{ color: #999; }
+.prediction table.softmax-calculation td.importance-30{ color: #333; }
+
+.prediction table.softmax-calculation  tr.total-row{ border-top:1px dashed #ccc; }
+
+
+
+
 
 // ============
 

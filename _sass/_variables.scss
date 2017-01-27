@@ -28,15 +28,19 @@ $chartLabel: #aaa;
 
 //Neural network graph parameters
 $nnInputNode: #e7b7f3;
+$nnInputNodeText: #af80bb;
 $nnWeightNode: #a8e7ad;
+$nnWeightNodeText: #81c086;
 $nnBiasNode: #ccc9fa;
+$nnBiasNodeText: #8c84ec;
 $nnOutputNode: #f2afc7;
+$nnOutputNodeText: #c8849c;
 $nnSoftmaxNode: #faf6c9;
 $nnStrokeWidth: 2px;
 $nnNodeStrokeWidth: 1px;
 
 $inputOutlineColor: #d18fe2;
-$biasOutlineColor: #a19cf0;
+$biasOutlineColor: #b2aef4; //#a19cf0;
 $outputOutlineColor: #f2afc7;
 $softmaxOutlineColor: #ebe79f;
 

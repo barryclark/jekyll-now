@@ -46,3 +46,76 @@ function average(data){
     var avg = sum / data.length;
     return avg;
 }
+
+// From http://cwestblog.com/2012/11/12/javascript-degree-and-radian-conversion/
+// Converts from degrees to radians.
+Math.radians = function(degrees) {
+    return degrees * Math.PI / 180;
+};
+
+// Converts from radians to degrees.
+Math.degrees = function(radians) {
+    return radians * 180 / Math.PI;
+};
+
+
+roundPrecision = function(number, precision) {
+    precision = Math.floor(precision);
+    var factor = Math.pow(10, precision);
+    var tempNumber = number * factor;
+    var roundedTempNumber = Math.round(tempNumber);
+    return roundedTempNumber / factor;
+};
+
+softmax = function (input){
+
+    if( !(input instanceof Array))
+    throw(TypeError("Input passed into softmax() is not an array. softmax() expects an array. Input: "+ input, "nnVizUtils.js"));
+
+    var output = [], expSum = 0;
+
+    // Calculate the sum of exp's
+    for (var i = 0; i < input.length; i++){
+        if( !(typeof(input[i]) == "number") ){
+            throw(TypeError("An element in the array passed to softmax() is not a number. softmax() expects an array of numbers. Input: "+ input[i], "nnVizUtils.js"));
+        }
+        expSum = expSum + Math.exp(input[i]);
+    }
+
+    for (var j = 0; j < input.length; j++)
+        output[j] = Math.exp(input[j]) / expSum;
+
+    return output;
+};
+
+
+numberFormatter = function(value, digit_limit){
+
+    // default to 4 digits if not set
+    digit_limit = digit_limit || 4;
+    console.log(value);
+
+    //If abs(value) has more than 6 digits, we'll show it as exp
+    digits = Math.floor(Math.log10(Math.abs(value)) + 1);
+
+    // Deals with numbers above 99999 and below -99999
+    if (digits > digit_limit){
+        return value.toExponential(1);
+    }
+
+    // Deals with abs(numbers) between 99999 and 1
+    if ((value > 1) || (value < -1)){
+        return roundPrecision(value, digit_limit - digits);
+    }
+
+    //Deals with decimals with less than digit_limit significant digits
+    if (digits > -digit_limit){
+        return roundPrecision(value, digit_limit);
+    }
+
+    if( value == 0 )
+        return 0;
+
+    return value.toExponential(1);
+
+};

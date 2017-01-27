@@ -1,11 +1,12 @@
 /**
  * Created by alammar on 12/8/16.
  */
-var shallowNeuralNetworkGrapher = function (inputNodeCount, outputNodeCount, svgElement) {
+var shallowNeuralNetworkGrapher = function (inputNodeCount, outputNodeCount, svgElement, analyticsCategory) {
     this.inputNodeCount = inputNodeCount;
     this.outputNodeCount = outputNodeCount;
     this.svgElement = svgElement;
     this.graphWidth = 350;
+    this.analyticsCategory = analyticsCategory;
 
     this.initializeGraph();
     this.drawGraph()
@@ -567,7 +568,8 @@ shallowNeuralNetworkGrapher.prototype.graphSoftmax = function (data) {
 
 };
 
-var softmaxNNExample = new shallowNeuralNetworkGrapher(2, 2, "#shallow-neural-network-graph");
+var softmaxNNExample = new shallowNeuralNetworkGrapher(2, 2, "#shallow-neural-network-graph",
+    "Basics of Neural Networks - Viz 4 Features & Classes");
 //softmaxNNExample.updateNodeCount("input", 4)
 
 
@@ -638,10 +640,14 @@ $( document ).ready(function() {
 
         ///var fieldName = $(this).attr('data-field');
         var fieldName = $(this).attr('name');
-        if(fieldName == "quant[1]")
+        if(fieldName == "quant[1]"){
             softmaxNNExample.updateNodeCount("input", valueCurrent);
-        else if(fieldName == "quant[2]")
+            ga('send', 'event', softmaxNNExample.analyticsCategory, "Set number of", "Features", valueCurrent);
+        }
+        else if(fieldName == "quant[2]") {
             softmaxNNExample.updateNodeCount("output", valueCurrent);
+            ga('send', 'event', softmaxNNExample.analyticsCategory, "Set number of", "Classes", valueCurrent);
+        }
     });
     $(".input-number").keydown(function (e) {
         // Allow: backspace, delete, tab, escape, enter and .

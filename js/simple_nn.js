@@ -9,7 +9,7 @@
 var NN_trainer = function (svg_el, table_el, areas, prices, weight, bias, x1, y1, x2, y2,
                            gradientDescentButton, gradientDescent10Button, gradientDescent100Button,
                            gradientDescentConvergeButton, normalize, error_chart_el, heatmap_el,
-                           weightRange, biasRange, neuralNetworkGraphEl) {
+                           weightRange, biasRange, neuralNetworkGraphEl, analyticsCategory) {
     this.svg_el = svg_el;
     this.table_el = table_el;
     this.areas = areas;
@@ -26,6 +26,7 @@ var NN_trainer = function (svg_el, table_el, areas, prices, weight, bias, x1, y1
     this.normalize = normalize;
     this.error_chart_el = error_chart_el;
     this.heatmap_el = heatmap_el;
+    this.analyticsCategory = analyticsCategory;
 
     this.graphWidth = 350;
 
@@ -67,20 +68,35 @@ var NN_trainer = function (svg_el, table_el, areas, prices, weight, bias, x1, y1
         trainer_self.updateWeightAndBias(-1, this.value, true)
     }));
 
+
+    // Attach Analytics events to when a user interacts with the sliders
+    $(this.table_el + " #weightSlider").on("mouseup touchend", (function(){
+        ga('send', 'event', trainer_self.analyticsCategory, "Interacted with", "Weight slider");
+    }));
+
+    $(this.table_el + " #biasSlider").on("mouseup touchend", (function(){
+        ga('send', 'event', trainer_self.analyticsCategory, "Interacted with", "Bias slider");
+    }));
+
+
+    // Attach events to the gradient descent buttons if they exist
     if (gradientDescentButton != ''){
         $(this.table_el + " " + gradientDescentButton).click(function(){
-            trainer_self.gradientDescentStep(1)
+            trainer_self.gradientDescentStep(1);
+            ga('send', 'event', trainer_self.analyticsCategory, "Clicked on", "1 Gradient Descent Step");
         });
     }
     if (gradientDescent10Button != ''){
         $(this.table_el + " " + gradientDescent10Button).click(function(){
             trainer_self.gradientDescentStep(10)
+            ga('send', 'event', trainer_self.analyticsCategory, "Clicked on", "10 Gradient Descent Steps");
         });
     }
 
     if (gradientDescent100Button != ''){
         $(this.table_el + " " + gradientDescent100Button).click(function(){
             trainer_self.gradientDescentStep(100)
+            ga('send', 'event', trainer_self.analyticsCategory, "Clicked on", "100 Gradient Descent Steps");
         });
     }
 
@@ -802,7 +818,8 @@ var trainer = new NN_trainer("#training-one-chart",  "#training-one",
     0,      // y1
     2600,   // x2
     410,    //y2
-    "", "", "", "", false, "", "", "", "", "#neural-network-graph");
+    "", "", "", "", false, "", "", "", "", "#neural-network-graph",
+    "Basics of Neural Networks - Viz 1 weight & bias");
 
 
 
@@ -824,7 +841,8 @@ var trainer2 = new NN_trainer("#training-one-gd-chart",  "#training-one-gd",
     "#training-one-gd-heatmap",
     [0, 0.4],
     [0, 460],
-    "#neural-network-gd-graph"
+    "#neural-network-gd-graph",
+    "Basics of Neural Networks - Viz 2 gradient descent"
 );
 
 

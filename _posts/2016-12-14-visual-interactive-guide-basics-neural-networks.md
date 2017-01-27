@@ -602,6 +602,9 @@ Thanks to [Yasmine Alfouzan](https://www.linkedin.com/in/yasmine-alfouzan-b05ba3
 Please contact me on [Twitter](https://twitter.com/jalammar) with any corrections or feedback.
 
 <script type="text/javascript" src="/js/nnVizUtils.js"></script>
+<!-- Visualizations 1 Weight & bias, and 2 Gradient Descent -->
 <script type="text/javascript" src="/js/simple_nn.js"></script>
+<!-- Visualization 3 - Two variables -->
 <script type="text/javascript" src="/js/two_variable_nn.js"></script>
+<!-- Visualization 4 - Features & classes -->
 <script type="text/javascript" src="/js/shallow_nn_grapher.js"></script>
