@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2308,203719256,2017-01-27 19:28:48,2017-01-27 19:28:14,Raccolta di beni a #Terni dal 31 gennaio al 3 febbraio,42.5641417,12.6405466,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Sisma Gennaio 2017"", ""Twitter""]",,http://i.imgur.com/5Me2pzA.jpg,"{""cosa"": ""Raccolta di beni a #Terni dal 31 gennaio al 3 febbraio"", ""data"": ""27/01/2017"", ""descrizione"": ""Dal 31 gennaio al 3 febbraio la Casa delle donne di Terni raccoglie beni di prima necessit\u00e0 da consegnare ai volontari delle Brigate della Solidariet\u00e0 che li porteranno alle famiglie colpite dal terremoto. Al link ulteriori informazioni e l'elenco dei beni che servono."", ""email"": ""ternidonne@gmail.com"", ""immagine"": ""http://i.imgur.com/5Me2pzA.jpg"", ""indirizzo"": ""Piazzale dei Poeti, Vocabolo Pentima Bassa, Terni, TR, UMB, 05100, Italia"", ""lat"": ""42.5641417"", ""link"": ""https://www.facebook.com/events/186662191814554/?ti=icl"", ""lon"": ""12.6405466"", ""tel"": """"}","<pre><yamldata>tel: ''
+email: ternidonne@gmail.com
+cosa: 'Raccolta di beni a #Terni dal 31 gennaio al 3 febbraio'
+descrizione: 'Dal 31 gennaio al 3 febbraio la Casa delle donne di Terni raccoglie beni di prima necessità da consegnare ai volontari delle Brigate della Solidarietà che li porteranno alle famiglie colpite dal terremoto. Al link ulteriori informazioni e l''elenco dei beni che servono.'
+indirizzo: 'Piazzale dei Poeti, Vocabolo Pentima Bassa, Terni, TR, UMB, 05100, Italia'
+lat: '42.5641417'
+lon: '12.6405466'
+link: 'https://www.facebook.com/events/186662191814554/?ti=icl'
+immagine: 'http://i.imgur.com/5Me2pzA.jpg'
+data: 27/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2306,203705638,2017-01-27 19:22:56,2017-01-27 18:26:41,Offresi alloggio per due persone o mamma con bimbo a Bergamo,,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""27/01/2017"", ""descrizione"": ""Mamma con due bimbi offre gratuitamente camera con bagno ad altra mamma con bimbo o comunque due persone. Zona giorno in condivisione. A Bergamo in zona ben servita."", ""email"": ""pamelanodari@tiscali.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3388583651""}","<pre><yamldata>tel: '3388583651'
 email: pamelanodari@tiscali.it
 descrizione: 'Mamma con due bimbi offre gratuitamente camera con bagno ad altra mamma con bimbo o comunque due persone. Zona giorno in condivisione. A Bergamo in zona ben servita.'
