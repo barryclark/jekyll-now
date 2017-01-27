@@ -1,4 +1,9 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2304,203588034,2017-01-27 09:19:29,2017-01-27 09:18:30,Silvio Berlusconi dona 100 milioni di euro ai terremotati.,,,"[""Accettato"", ""Bufale"", ""Form""]",,,"{""data"": ""27/01/2017"", ""descrizione"": """", ""link"": ""http://www.ilgiornaleitaliano.it/2017/01/25/silvio-berlusconi-dona-100milioni-euro-ai-terremotati-un-gesto-commuove-mondo/"", ""titolo"": ""Silvio Berlusconi dona 100 milioni di euro ai terremotati. Un gesto che commuove il mondo.""}","<pre><yamldata>titolo: 'Silvio Berlusconi dona 100 milioni di euro ai terremotati. Un gesto che commuove il mondo.'
+descrizione: ''
+link: 'http://www.ilgiornaleitaliano.it/2017/01/25/silvio-berlusconi-dona-100milioni-euro-ai-terremotati-un-gesto-commuove-mondo/'
+data: 27/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2301,203516524,2017-01-26 23:10:35,2017-01-26 23:09:48,Raccolta di beni a Parma,44.8064575,10.3034503,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Facebook"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""Raccolta di beni a Parma"", ""data"": ""26/01/2017"", ""descrizione"": ""A Parma il gruppo Io non crollo raccoglie beni presso il negozio di Roberto Zanella \""Spazio Verde\"" - Via Emilia Ovest 323 (vicino al ponte di Pontetaro)."", ""email"": ""info@spazioverdeparma.it"", ""immagine"": """", ""indirizzo"": ""Via Emilia Ovest, Parma, PR, EMR, 43126, Italia"", ""lat"": ""44.8064575"", ""link"": ""https://www.facebook.com/profile.php?id=100009804013677&fref=ts"", ""lon"": ""10.3034503"", ""tel"": ""0521 671689""}","<pre><yamldata>tel: '0521 671689'
 email: info@spazioverdeparma.it
 cosa: 'Raccolta di beni a Parma'
