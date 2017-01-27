@@ -66,7 +66,7 @@ I had a previous post this year about [checking bonuses](http://hendrixjoseph.gi
 
 There's generally some hoops to jump through to get these bonuses (direct deposit, bill pay, etc.), but they're not too hard to do.
 
-I've made a total of $500 bonuses - $250 from Huntington, $150 from Chase, and $200 from Fifth Third.
+I've made a total of $600 bonuses - $250 from Huntington, $150 from Chase, and $200 from Fifth Third.
 
 ## Class Action Settlements
 
@@ -174,7 +174,7 @@ $(document).ready(function() {
                 ['Amazon Mechanical Turk', 1194.33],
                 ['flipping', 0.00],
                 ['credit card rewards', 246.55],
-                ['checking bonuses', 500.00],
+                ['checking bonuses', 600.00],
                 ['class action settlements', 32.26],
                 ['Ibotta', 20],
                 ['savings account interest', 39.67]
