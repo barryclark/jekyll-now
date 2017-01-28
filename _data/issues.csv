@@ -14405,6 +14405,18 @@ email: ''
 data: 14/09/2016
 </yamldata></pre>
 ",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/289,176860636,2016-09-14 09:39:52,2016-09-14 09:38:07,Amatrice nel cuore - Magliette Anpas,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Amatrice nel cuore - Magliette Anpas"", ""data"": ""14/09/2016"", ""descrizione"": ""Anpas lancia raccolta fondi per la ricostruzione con vendita di speciali magliette (10 euro)"", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""http://www.anpas.org/anpas-informa/com-stamp/2429-amatricenelcuore-ricostruzione.html"", ""postale"": """"}","<pre><yamldata>chi: 'Amatrice nel cuore - Magliette Anpas'
+descrizione: 'Anpas lancia raccolta fondi per la ricostruzione con vendita di speciali magliette (10 euro)'
+intestazione: ''
+iban: ''
+bic: ''
+postale: ''
+causale: ''
+link: 'http://www.anpas.org/anpas-informa/com-stamp/2429-amatricenelcuore-ricostruzione.html'
+email: ''
+data: 14/09/2016
+</yamldata></pre>
+",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/288,176860541,2016-09-14 09:39:45,2016-09-14 09:37:40,Conservatorio L'Aquila,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": ""Una fisarmonica per ricominciare"", ""chi"": ""Conservatorio L'Aquila"", ""data"": ""14/09/2016"", ""descrizione"": ""Raccolta fondi per comprare fisarmonica a studente che nel sisma ha perso la sua fisarmonica Bajan (costo: 8000 euro)"", ""email"": """", ""iban"": ""IT47B0760105138241508841512"", ""intestazione"": """", ""link"": ""https://www.facebook.com/permalink.php?story_fbid=617397508419944&id=617346548425040"", ""postale"": """"}","<pre><yamldata>chi: 'Conservatorio L''Aquila'
 descrizione: 'Raccolta fondi per comprare fisarmonica a studente che nel sisma ha perso la sua fisarmonica Bajan (costo: 8000 euro)'
 intestazione: ''
