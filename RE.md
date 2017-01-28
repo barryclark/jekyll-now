@@ -1,7 +1,7 @@
 ---
 layout: page
-title: CTF Challenges
-permalink: /CTF/
+title: Reverse Engineering
+permalink: /RE/
 ---
 
 <ul class="posts">
