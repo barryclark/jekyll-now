@@ -1,4 +1,14 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2325,203832990,2017-01-28 22:49:12,2017-01-28 21:34:32,Offriamo allggio per due persone in Piemonte,,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""28/01/2017"", ""descrizione"": ""Offriamo camera con due posti letto e spazio disponibile per aggiungere un eventuale lettino o branda. Possibilit\u00e0 di bagno personale. Abitiamo in campagna ma con prossimit\u00e0 di tutti i servizi. La casa \u00e8 in Piemonte, a Monforte d'Alba."", ""email"": ""frila.b@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3289442443""}","<pre><yamldata>tel: '3289442443'
+email: frila.b@gmail.com
+descrizione: 'Offriamo camera con due posti letto e spazio disponibile per aggiungere un eventuale lettino o branda. Possibilità di bagno personale. Abitiamo in campagna ma con prossimità di tutti i servizi. La casa è in Piemonte, a Monforte d''Alba.'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 28/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2319,203815569,2017-01-28 16:23:04,2017-01-28 16:22:21,"Comune dell'#Aquila, ancora attivi 8 centri di accoglienza",,,"[""Accettato"", ""Bollettino"", ""Notizie Utili"", ""Sisma Gennaio 2017"", ""Twitter""]",,,"{""data"": ""28/01/2017"", ""descrizione"": ""Il Centro Operativo comunale (Coc) venerd\u00ec 27 gennaio ha reso noto che rimangono attive otto aree di accoglienza. Si tratta di: - Murata Gigotti di Coppito (completo) - Centro Anziani di Civita di Bagno - Circolo Sant\u2019Anna di Preturo - Ex Centro Caritas di Preturo - Area di Camarda - Pro Loco Roio, vicino Progetto Case Roio 1 - Ex Centro Caritas di Sassa - Area civica di Menzano di Preturo - Usi civici di Tempera Il Coc consiglia \u2013 per chi volesse usufruire di tali aree \u2013 di dotarsi di coperte e viveri."", ""link"": ""http://www.comune.laquila.gov.it/index.php?id_oggetto=3&id_cat=0&id_doc=4841&id_sez_ori=0&template_ori=1&&gtp=1"", ""titolo"": ""Comune dell'#Aquila, ancora attivi 8 centri di accoglienza""}","<pre><yamldata>titolo: 'Comune dell''#Aquila, ancora attivi 8 centri di accoglienza'
 descrizione: 'Il Centro Operativo comunale (Coc) venerdì 27 gennaio ha reso noto che rimangono attive otto aree di accoglienza. Si tratta di: - Murata Gigotti di Coppito (completo) - Centro Anziani di Civita di Bagno - Circolo Sant’Anna di Preturo - Ex Centro Caritas di Preturo - Area di Camarda - Pro Loco Roio, vicino Progetto Case Roio 1 - Ex Centro Caritas di Sassa - Area civica di Menzano di Preturo - Usi civici di Tempera Il Coc consiglia – per chi volesse usufruire di tali aree – di dotarsi di coperte e viveri.'
 link: 'http://www.comune.laquila.gov.it/index.php?id_oggetto=3&id_cat=0&id_doc=4841&id_sez_ori=0&template_ori=1&&gtp=1'
