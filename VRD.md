@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Reverse Engineering
-permalink: /RE/
+title: Vulnerability Research
+permalink: /VRD/
 ---
 
 <ul class="posts">
