@@ -4,13 +4,13 @@ permalink: "/2017/01/o-que-devo-saber-sobre-nosql.html"
 categories: [nosql, banco de dados]
 ---
 
-> O modo como você reúne, administra e usa a informação determina se vencerá ou perderá.
->
-> -*Bill Gates*
-
 O modelo relacional é o tipo mais utilizado pela maioria dos bancos de dados mais populares do mercado, mas ao passar dos anos o volume de dados foi crescendo e a forma de se extrair informações foram se tornando cada vez mais custosas nesse modelo, o que levou a criação de novas técnicas como utilizar *datawarehouses* para geração de relatórios, views materializadas etc. Além disso novas necessidades surgiram como escalabilidade, baixo tempo de leitura e resposta e flexibilidade de modelagem, esse novo ambiente fez com que algumas pessoas questionassem a forma de armazenamento de dados e desse pensamento surgiu o NoSQL (not only SQL).
 
 Mas o que é o NoSQL? É melhor que o modelo relacional? Nesse post irei explicar o que acho importante saber sobre a tecnologia.
+
+> O modo como você reúne, administra e usa a informação determina se vencerá ou perderá.
+>
+> -*Bill Gates*
 
 ## Motivações do modelo relacional
 
