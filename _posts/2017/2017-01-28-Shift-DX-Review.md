@@ -39,4 +39,4 @@ In the end Shift DX is a great puzzle game that I keep coming back to. It's avai
 
 <h3>Supporting Links</h3>
 
-[Shift DX at Choice Publishing](http://choicepublishing.com/game/shift-dx)\\
+[Shift DX at Choice Publishing](http://choicepublishing.com/game/shift-dx)
