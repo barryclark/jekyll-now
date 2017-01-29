@@ -8,7 +8,7 @@ V poslední části přehledu o nástrojích vhodných pro jazyk PHP se podívá
 # Úložiště kódu
 Když nebudeš pracovat sám nebo se budeš chtít pochlubit svým novým projektem, musíš svůj kód dát někam online. Kód je vhodné dávat někam, kde se s ním bude dál dobře pracovat, kde ho snadno můžou najít a procházet ostatní a kde ho můžeš jednoduše stáhnout a použít jinde. Přesně pro tyto potřeby vznikly služby, které se specializují na tuto online práci s kódem. 
 
-Nejpoužívanějším úložištěm je [github.com](https://github.com). Je úzce provázaný s gitem a díky němu je možné snadno nahrávat, stahovat, opravovat i větvit cizí i vlastní kód. Jedinnou nevýhodou v neplacené verzi je nemožnost soukromých repozitářů. I přes to bych ho doporučil jako první volbu, protože je vvelmi rozšířený a lze na něj najít spoustu dobrých návodů. 
+Nejpoužívanějším úložištěm je [github.com](https://github.com). Je úzce provázaný s Gitem a díky němu je možné snadno nahrávat, stahovat, opravovat i větvit cizí i vlastní kód. Jedinnou nevýhodou v neplacené verzi je nemožnost soukromých repozitářů. I přes to bych ho doporučil jako první volbu, protože je vvelmi rozšířený a lze na něj najít spoustu dobrých návodů. 
 
 [Gitlab.com](https://about.gitlab.com/) je mladší služba, která proti githubu nabízí i soukromé repozitáře pro všechny. Jako jedno z mála úložišť je opensourcovaný a můžete si ho tedy zdarma nasadit i do vlastního řešení. Bohužel nenabízí sledování jednotlivých uživatelů a nepoužívá ho tolik lidí jako github. 
 
