@@ -66,7 +66,7 @@ kramdown:
 
 # Set the Sass partials directory, as we're using @imports
 sass:
-  style: :expanded # You might prefer to minify using :compressed
+  style: :compressed # You might prefer to minify using :compressed
 
 # Use the following plug-ins
 gems:
@@ -87,3 +87,7 @@ defaults:
       path: "" # an empty string here means all files in the project
     values:
       layout: "post"
+
+timezone: America/Bahia
+
+show_drafts: TRUE
