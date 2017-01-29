@@ -1,4 +1,14 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2327,203897931,2017-01-29 21:54:56,2017-01-29 21:29:28,Offriamo alloggio in villetta in provincia di Bergamo,45.879525,9.989516,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""29/01/2017"", ""descrizione"": ""Offriamo alloggio in villetta a schiera composta da 3 locali bagno e piccola cucina (eventualmente box), Songavazzo (Bg)."", ""email"": ""grossi.claudio@gmail.com"", ""immagine"": """", ""indirizzo"": ""Via San Bartolomeo, Songavazzo, Bergamo, Lombardia, 24023, Italia"", ""lat"": ""45.879525"", ""link"": """", ""lon"": ""9.989516"", ""tel"": ""02 90003487   338 411 72 40""}","<pre><yamldata>tel: '02 90003487   338 411 72 40'
+email: grossi.claudio@gmail.com
+descrizione: 'Offriamo alloggio in villetta a schiera composta da 3 locali bagno e piccola cucina (eventualmente box), Songavazzo (Bg).'
+indirizzo: 'Via San Bartolomeo, Songavazzo, Bergamo, Lombardia, 24023, Italia'
+lat: '45.879525'
+lon: '9.989516'
+link: ''
+immagine: ''
+data: 29/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2325,203832990,2017-01-28 22:51:04,2017-01-28 21:34:32,Offriamo alloggio per due persone in Piemonte,,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""28/01/2017"", ""descrizione"": ""Offriamo camera con due posti letto e spazio disponibile per aggiungere un eventuale lettino o branda. Possibilit\u00e0 di bagno personale. Abitiamo in campagna ma con prossimit\u00e0 di tutti i servizi. La casa \u00e8 in Piemonte, a Monforte d'Alba."", ""email"": ""frila.b@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3289442443""}","<pre><yamldata>tel: '3289442443'
 email: frila.b@gmail.com
 descrizione: 'Offriamo camera con due posti letto e spazio disponibile per aggiungere un eventuale lettino o branda. Possibilità di bagno personale. Abitiamo in campagna ma con prossimità di tutti i servizi. La casa è in Piemonte, a Monforte d''Alba.'
