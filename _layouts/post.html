@@ -13,9 +13,15 @@ comments: true
     </div>
 
     <div class="date">
-        Publikováno {{ page.date | date: "%B %e, %Y" }}
+        Publikováno {{ page.date | date: "%e. %m. %Y" }}
     </div>
-
-    {% include disqus.html %}
+    
+    <div class="annex">
+        Líbil se ti článek? Napiš komentář, co si o něm myslíš: 
+    </div>
+    
+    <div class="disqus">
+        {% include disqus.html %}
+    </div>
 
 </article>
