@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2331,204060623,2017-01-30 18:17:41,2017-01-30 16:34:21,Si donano forno e 2 impastatrici,,,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""Forno"", ""data"": ""30/01/2017"", ""descrizione"": ""Salve, dono impastatrici da 3 e 1 quintale e forno da 18 mq. Smontaggio e trasporto a vostro carico. I macchinari sono a Oriolo Cs 87063"", ""email"": ""vivacca12@tiscali.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3278651267""}","<pre><yamldata>tel: '3278651267'
+email: vivacca12@tiscali.it
+cosa: Forno
+descrizione: 'Salve, dono impastatrici da 3 e 1 quintale e forno da 18 mq. Smontaggio e trasporto a vostro carico. I macchinari sono a Oriolo Cs 87063'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 30/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2329,203959761,2017-01-30 10:00:39,2017-01-30 09:24:41,Mettiamo a disposizione due bilocali in agriturismo in provincia di Livorno,,,"[""Accettato"", ""Alloggi"", ""Bollettino"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""30/01/2017"", ""descrizione"": ""La nostra famiglia gestisce un agriturismo a Suvereto prov. di Livorno, possiamo mettere a disposizione 2 bilocali adatti per 3-4 persone ciascuno, disponibili fino a maggio. I bilocali comprendono una camera matrimoniale, bagno e ampia cucina con divano letto matrimoniale, sono al piano primo."", ""email"": ""gianluca.casini@ording.gr.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3393028659""}","<pre><yamldata>tel: '3393028659'
 email: gianluca.casini@ording.gr.it
 descrizione: 'La nostra famiglia gestisce un agriturismo a Suvereto prov. di Livorno, possiamo mettere a disposizione 2 bilocali adatti per 3-4 persone ciascuno, disponibili fino a maggio. I bilocali comprendono una camera matrimoniale, bagno e ampia cucina con divano letto matrimoniale, sono al piano primo.'
