@@ -44,7 +44,12 @@ authors:
     web: https://www.infinityworks.com
     web_short_name: infinityworks.com
     linkedin: paul-lucas-3209203
-
+  ivor_caldwell:
+    display_name: Ivor Caldwell
+    email: ivor.caldwell@infinityworks.com
+    web: https://ivorcaldwell.org
+    web_short_name: ivorcaldwell.org
+    linkedin: ivor-caldwell-95930a6
 #
 # Flags below are optional
 #
