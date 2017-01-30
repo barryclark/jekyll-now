@@ -3,9 +3,9 @@ layout: post
 title: Git v PhpStormu a Github.com - jak začít?
 ---
 
-[Git](https://git-scm.com/) je **verzovací systém**. Co to znamená? Je to systém umožňující správu souborů v čase. 
+[Git](https://git-scm.com/) je verzovací systém. Co to znamená? Je to systém umožňující správu souborů v čase. Svého druhu verzovací systém je třeba i _Historie revizí dokumentů_ používaných v Google dokumentech nebo prosté _Zpět_ a _Dopředu_ používané v prohlížečích. 
 
-Svého druhu verzovací systém je třeba i _Historie revizí dokumentů_ používaných v Google dokumentech nebo prosté _Zpět_ a _Dopředu_ používané v prohlížečích. Oproti tomu [Github](http://github.com/) je internetová služba, která Git využívá a díky ní je spolupráce ve více lidech velmi zjednodušená. V základu je pro opensourcované projekty zdarma a v článku ho budu používat spolu s gitem. 
+ Oproti tomu [Github](http://github.com/) je internetová služba, která Git využívá a díky ní je spolupráce ve více lidech velmi zjednodušená. V základu je pro opensourcované projekty zdarma a v článku ho budu používat spolu s gitem. 
 
 # Proč zrovna Git?
 Git byl stvořený hlavně pro práci s **textovými soubory** - programátorské kódy jsou přeci jen snůška texťáků, proto Git funguje hlavně pro kodéry a jejich práci. Dobře bude fungovat třeba i pro psaní knihy, blogu (tento blog je taky verzovaný v Gitu) nebo i bakalářky či diplomky. 
@@ -28,11 +28,7 @@ Místo, kde se všechna Gitovská magie odehrává, se nazývá **repozitář** 
 Základním kamenem pro práci s Gitem je **commit**. Commit je zachycení stavu souborů tak, jak zrovna jsou. Commit jako takový není dál dělitelný, je tou nejmenší jednotkou, s kterou se při běžném používání v Gitu potkáš. Commity se řadí za sebou v čase, jeden následuje druhý tak, jak byly postupně pořizovány. 
 
 > Vytvoř si nový soubor `index.php`. V tomto momentě by měl PhpStorm nabídnout přidání souboru do verzovacího systému - tuto nabídku potvrď. Pokud ji nenabídl, klikni pravým tlačítkem myši na soubor a z místní nabídky vyber _Git_ > _Add_. Název přidaného souboru se defaultně zbarví z červené do zelené - to značí, že je soubor nově přidaný do verzovacího systému. 
-> Do `index.php` zapiš obligátní pozdrav celému světu, aby si měl dál s čím pracovat. Vlož tedy třeba
- 
- ```php
- <?php echo('Hello World!');
- ```
+> Do `index.php` zapiš obligátní pozdrav celému světu, aby si měl dál s čím pracovat. Vlož tedy do souboru třeba `<?php echo('Hello World!');`
  
 > A teď soubor ulož v čase - slangově commitni. Zvol z horního menu _VCS_ > _Commit changes_ (klávesová zkratka _Ctrl + K_). Otevře se okno, do kterého v dolní části vlož popis commitu (commit message), třeba `první commit`. Okno potvrď a je to! 
 
@@ -64,5 +60,5 @@ Pro git a Gihub je na internetu celá řada kvalitních tutoriálů, například
  
  Mimo git existují i jiné verzovací systémy, například [Mercurial](https://www.mercurial-scm.org/) nebo [Subversion od Apache](https://subversion.apache.org/). Pro Github jsou alternativy také, kupříkladu [GitLab](https://about.gitlab.com/) či [BitBucket](https://bitbucket.org/). Pokud ti něco doporučeného z článku nevyhovuje, vyzkoušej třeba tyto alternativy. Verzování za to stojí! 
  
- # Too Long, Don't Read?
+# Too Long, Don't Read?
 Základem práce s Gitem je **commit**. Ty se ukládají do **lokálního repozitáře**. Pro ukázání kódu světu se používá **vzdálený repozitář**, hosting na něj poskytuje například github.com. Při práci v PhpStormu se při práci s gitovým repozitářem používá menu **VCS** (zkratka z Version Control Systems). 
