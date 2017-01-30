@@ -1,4 +1,14 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2329,203959761,2017-01-30 10:00:39,2017-01-30 09:24:41,Mettiamo a disposizione due bilocali in agriturismo in provincia di Livorno,,,"[""Accettato"", ""Alloggi"", ""Bollettino"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""30/01/2017"", ""descrizione"": ""La nostra famiglia gestisce un agriturismo a Suvereto prov. di Livorno, possiamo mettere a disposizione 2 bilocali adatti per 3-4 persone ciascuno, disponibili fino a maggio. I bilocali comprendono una camera matrimoniale, bagno e ampia cucina con divano letto matrimoniale, sono al piano primo."", ""email"": ""gianluca.casini@ording.gr.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3393028659""}","<pre><yamldata>tel: '3393028659'
+email: gianluca.casini@ording.gr.it
+descrizione: 'La nostra famiglia gestisce un agriturismo a Suvereto prov. di Livorno, possiamo mettere a disposizione 2 bilocali adatti per 3-4 persone ciascuno, disponibili fino a maggio. I bilocali comprendono una camera matrimoniale, bagno e ampia cucina con divano letto matrimoniale, sono al piano primo.'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 30/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2328,203899753,2017-01-29 21:59:22,2017-01-29 21:58:08,"A #Saletta, fraz. #Amatrice, serve una lavatrice (anche usata)",42.6713248,13.2720634,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Sisma Ottobre"", ""Twitter""]",,,"{""cosa"": ""A #Saletta, frazione di #Amatric, serve una lavatrice (anche usata)"", ""data"": ""29/01/2017"", ""descrizione"": ""Serve con urgenza una lavatrice anche usata ma funzionante a Saletta. Grazie. Monica Maggi"", ""email"": ""maggi.monica@gmail.com"", ""immagine"": """", ""indirizzo"": ""SP20, Pedivilla, Amatrice, RI, LAZ, 02011, Italia"", ""lat"": ""42.6713248"", ""link"": ""https://twitter.com/libra2puntozero/status/825800680380194817"", ""lon"": ""13.2720634"", ""tel"": """"}","<pre><yamldata>tel: ''
 email: maggi.monica@gmail.com
 cosa: 'A #Saletta, frazione di #Amatric, serve una lavatrice (anche usata)'
@@ -3758,17 +3768,6 @@ data: 19/01/2017
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1812,201847291,2017-01-19 14:00:09,2017-01-19 12:28:15,Offresi alloggio per due persone con animale domestico in provincia di Grosseto,,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""19/01/2017"", ""descrizione"": ""Possiamo ospitare a casa di mia mamma fino due persone e un animale domestico. Premetto mia mamma ha una shitzu di 15anni. Abita ad Albinia provincia di Grosseto in Toscana"", ""email"": ""lubart79@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3394132127""}","<pre><yamldata>tel: '3394132127'
 email: lubart79@gmail.com
 descrizione: 'Possiamo ospitare a casa di mia mamma fino due persone e un animale domestico. Premetto mia mamma ha una shitzu di 15anni. Abita ad Albinia provincia di Grosseto in Toscana'
-indirizzo: ''
-lat: ''
-lon: ''
-link: ''
-immagine: ''
-data: 19/01/2017
-</yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1811,201847288,2017-01-19 14:01:36,2017-01-19 12:28:14,"Offresi abbigliamento, coperte, lenzuola, pentole",,,"[""Accettato"", ""Donazioni"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""Abbigliamento ,coperte lenzuola pentole"", ""data"": ""19/01/2017"", ""descrizione"": ""Ho capi abbigliamento donna, coperte, lenzuola, se qualcuno fosse interessato mi mandi indirizzo dove recapitare. Grazie"", ""email"": ""fedebeldi@libero.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3478150747""}","<pre><yamldata>tel: '3478150747'
-email: fedebeldi@libero.it
-cosa: 'Abbigliamento ,coperte lenzuola pentole'
-descrizione: 'Ho capi abbigliamento donna, coperte, lenzuola, se qualcuno fosse interessato mi mandi indirizzo dove recapitare. Grazie'
 indirizzo: ''
 lat: ''
 lon: ''
