@@ -63,7 +63,7 @@ Frameworků existuje mnoho a stále vznikají další. K těm nejznámějším s
 
 Pokud stojíte před úkolem napsat velkou aplikaci, zvolit si framework jako základ svojí práce je správná volba. Čisté PHP oproti tomu lépe poslouží na psaní jednorázových skriptů, pro řešení specifických úloh a je mnohem jednodušší v něm vypsat na obrazovku `Hello World!`. A také pozor na to, že techniky naučené v jednom frameworku nemusí často fungovat v těch dalších a ani v samotném PHP, zatímco použít PHP ve frameworku jde snadno a téměř vždy. 
 
-# Too Long, Don't Read?
+# Too Long, Didn't Read?
 Zálohujte si kód i jinam než na vlastní disk. Načtěte si základy o databázích a používejte tu, která se na daný úkol hodí nejvíc. Vyzkoušejte alespoň jeden menší a jeden velký framework a určitě nějaký zvažte, když začnete psát velkou aplikaci. 
 
 Na prosbu onlinu rozvinu třídílný seriál na čtyři díly a tak pokryjeme i komentování kódu, jeho základní dokumentaci a jeho formátování. 

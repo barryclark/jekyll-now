@@ -60,5 +60,5 @@ Pro git a Gihub je na internetu celá řada kvalitních tutoriálů, například
  
  Mimo git existují i jiné verzovací systémy, například [Mercurial](https://www.mercurial-scm.org/) nebo [Subversion od Apache](https://subversion.apache.org/). Pro Github jsou alternativy také, kupříkladu [GitLab](https://about.gitlab.com/) či [BitBucket](https://bitbucket.org/). Pokud ti něco doporučeného z článku nevyhovuje, vyzkoušej třeba tyto alternativy. Verzování za to stojí! 
  
-# Too Long, Don't Read?
+# Too Long, Didn't Read?
 Základem práce s Gitem je **commit**. Ty se ukládají do **lokálního repozitáře**. Pro ukázání kódu světu se používá **vzdálený repozitář**, hosting na něj poskytuje například github.com. Při práci v PhpStormu se při práci s gitovým repozitářem používá menu **VCS** (zkratka z Version Control Systems). 
