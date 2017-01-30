@@ -54,7 +54,7 @@ define('DB_pass', 'pass');
  
 Jsou i zastánci nepoužívámí komentářů v kódu. Tvrdí, že když je kód dostatečně čitelný, nejsou potřeba. Sám ale komentáře používám - myslím, že zjednodušují čtení kódu pro ostatní. Správně napsaný komentář umí zrychlit pochopení smyslu kódu i těm, co nejsou tak zkušení jako autor nebo třeba daný jazyk vůbec neznají. 
  
-Šikovná je komentářová formule `//TODO description of task`. Používá se pro místo, kde je potřeba ještě v kódu trochu zapracovat, ne ale hned teď. IDE umí tuto značku označit výraznější barvou nebo vyfiltrovat jejich seznam. V PHPstorm tento seznam najddš pod zkratkou `Alt + 6`. 
+Šikovná je komentářová formule `//TODO description of task`. Používá se pro místo, kde je potřeba ještě v kódu trochu zapracovat, ne ale hned teď. IDE umí tuto značku označit výraznější barvou nebo vyfiltrovat jejich seznam. V PHPstorm tento seznam najdeš pod zkratkou `Alt + 6`. 
  
 Poslední otázkou zůstává jazyk komentářů. Preferuje se jazyk použitý v kódu. Pokud vyvíjíš aplikaci v angličtině, která ale zůstane vždy u českých vývojářů, klidně použij české komentáře. Hlavní účel totiž vždy zůstává lépe pochopit kód. 
 
