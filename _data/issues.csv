@@ -1,9 +1,4 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2330,204027536,2017-01-30 14:39:58,2017-01-30 14:38:55,"Regione Lazio, sostegno al reddito per i lavoratori colpiti dal sisma",,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili"", ""Pubblicare su FB""]",,,"{""data"": ""30/01/2017"", ""descrizione"": ""Le modalit\u00e0 per la richiesta dei contributi per l\u2019indennit\u00e0 di 5.000 euro per i lavoratori autonomi e la presentazione dei moduli per la richiesta dei contributi per l\u2019indennit\u00e0 una tantum di 5.000 euro per chi \u00e8 stato colpito dal sisma."", ""link"": ""http://www.regione.lazio.it/rl_lavoro/?vw=newsDettaglio&id=165"", ""titolo"": ""Regione Lazio, sostegno al reddito per i lavoratori colpiti dal sisma""}","<pre><yamldata>titolo: 'Regione Lazio, sostegno al reddito per i lavoratori colpiti dal sisma'
-descrizione: 'Le modalità per la richiesta dei contributi per l’indennità di 5.000 euro per i lavoratori autonomi e la presentazione dei moduli per la richiesta dei contributi per l’indennità una tantum di 5.000 euro per chi è stato colpito dal sisma.'
-link: 'http://www.regione.lazio.it/rl_lavoro/?vw=newsDettaglio&id=165'
-data: 30/01/2017
-</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2329,203959761,2017-01-30 10:00:39,2017-01-30 09:24:41,Mettiamo a disposizione due bilocali in agriturismo in provincia di Livorno,,,"[""Accettato"", ""Alloggi"", ""Bollettino"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""30/01/2017"", ""descrizione"": ""La nostra famiglia gestisce un agriturismo a Suvereto prov. di Livorno, possiamo mettere a disposizione 2 bilocali adatti per 3-4 persone ciascuno, disponibili fino a maggio. I bilocali comprendono una camera matrimoniale, bagno e ampia cucina con divano letto matrimoniale, sono al piano primo."", ""email"": ""gianluca.casini@ording.gr.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3393028659""}","<pre><yamldata>tel: '3393028659'
 email: gianluca.casini@ording.gr.it
 descrizione: 'La nostra famiglia gestisce un agriturismo a Suvereto prov. di Livorno, possiamo mettere a disposizione 2 bilocali adatti per 3-4 persone ciascuno, disponibili fino a maggio. I bilocali comprendono una camera matrimoniale, bagno e ampia cucina con divano letto matrimoniale, sono al piano primo.'
@@ -10208,6 +10203,12 @@ link: 'http://www.consiglio.regione.lazio.it/consiglioweb/news_dettaglio.php?id=
 data: 18/10/2016
 </yamldata></pre>
 ",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/813,183508334,2016-10-18 11:08:55,2016-10-17 19:42:16,#Accumoli: esiti agibilità al 14.10.2016,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili"", ""pubblicare in archive.org""]",,,"{""data"": ""17/10/2016"", ""descrizione"": ""Il Comune di Accumoli ha pubblicato gli esiti delle verifiche di agibilit\u00e0 al 14 ottobre."", ""link"": ""http://www.comune.accumoli.ri.it/avvisi/Accumoli_4\u00b0_invio_def.pdf"", ""titolo"": ""Accumoli: Esiti agibilit\u00e0 al 14.10.2016""}","<pre><yamldata>titolo: 'Accumoli: Esiti agibilità al 14.10.2016'
+descrizione: 'Il Comune di Accumoli ha pubblicato gli esiti delle verifiche di agibilità al 14 ottobre.'
+link: 'http://www.comune.accumoli.ri.it/avvisi/Accumoli_4°_invio_def.pdf'
+data: 17/10/2016
+</yamldata></pre>
+",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/812,183260629,2016-10-17 06:31:34,2016-10-16 10:49:41,#ArquatadelTronto in arrivo 140 casette in legno (MAP - moduli abitativi provvisori) entro il mese di aprile,,,"[""Accettato"", ""Bollettino"", ""Facebook"", ""Notizie Utili""]",,,"{""data"": ""16/10/2016"", ""descrizione"": ""I Map verranno garantiti solamente ai RESIDENTI EFFETTIVI del territorio di Arquata che non riescono a rendere agibili le proprie abitazioni nel giro di poco tempo."", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1783699348564315/"", ""titolo"": ""#ArquatadelTronto in arrivo 140 casette in legno (MAP - moduli abitativi provvisori) entro il mese di aprile""}","<pre><yamldata>titolo: '#ArquatadelTronto in arrivo 140 casette in legno (MAP - moduli abitativi provvisori) entro il mese di aprile'
 descrizione: 'I Map verranno garantiti solamente ai RESIDENTI EFFETTIVI del territorio di Arquata che non riescono a rendere agibili le proprie abitazioni nel giro di poco tempo.'
 link: 'https://www.facebook.com/groups/1758670357733881/permalink/1783699348564315/'
@@ -10464,12 +10465,6 @@ link: 'https://twitter.com/consigliolazio/status/785519156552753152'
 data: 10/10/2016
 </yamldata></pre>
 ",closed
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/779,182124895,2016-10-19 14:30:08,2016-10-10 21:56:30,17 ottobre ore 15 Consiglio regionale Lazio per comunicazioni del presidente sul terremoto,,,"[""Accettato"", ""Bollettino"", ""Notizie Utili"", ""Pubblicare su FB"", ""Twitter""]",Milestone(number=21),,"{""data"": ""10/10/2016"", ""descrizione"": ""Convocato per il 17 ottobre, ore 15.00 il Consiglio regionale del Lazio per comunicazioni del presidente Zingaretti sul terremoto del 24/8 ad Amatrice e Accumoli. Il Consiglio sar\u00e0 trasmesso in streaming su MapRadio http://www.mepradio.it"", ""link"": ""https://twitter.com/consigliolazio/status/785519156552753152"", ""titolo"": ""17 ottobre ore 15 Consiglio regionale Lazio per comunicazioni del presidente sul terremoto""}","<pre><yamldata>titolo: '17 ottobre ore 15 Consiglio regionale Lazio per comunicazioni del presidente sul terremoto'
-descrizione: 'Convocato per il 17 ottobre, ore 15.00 il Consiglio regionale del Lazio per comunicazioni del presidente Zingaretti sul terremoto del 24/8 ad Amatrice e Accumoli. Il Consiglio sarà trasmesso in streaming su MapRadio http://www.mepradio.it'
-link: 'https://twitter.com/consigliolazio/status/785519156552753152'
-data: 10/10/2016
-</yamldata></pre>
-",closed
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/778,182120807,2016-10-10 21:33:52,2016-10-10 21:33:32,"Terremoto, gli interventi della Regione Lazio per le imprese",,,"[""Accettato"", ""Notizie Utili"", ""Pubblicare su FB"", ""Twitter""]",,,"{""data"": ""10/10/2016"", ""descrizione"": ""La commissione Agricoltura e attivit\u00e0 produttive del Consiglio regionale del Lazio ha ascoltato oggi 10 ottobre gli assessori Carlo Hausmann e Guido Fabiani per fare il punto sulla situazione delle imprese nelle zone interessate dal terremoto del 24 agosto. Nel comunicato i dettagli sugli interventi discussi in Commissione."", ""link"": ""http://ift.tt/2eje7Ae"", ""titolo"": ""Terremoto, gli interventi della Regione Lazio per le imprese""}","<pre><yamldata>titolo: 'Terremoto, gli interventi della Regione Lazio per le imprese'
 descrizione: 'La commissione Agricoltura e attività produttive del Consiglio regionale del Lazio ha ascoltato oggi 10 ottobre gli assessori Carlo Hausmann e Guido Fabiani per fare il punto sulla situazione delle imprese nelle zone interessate dal terremoto del 24 agosto. Nel comunicato i dettagli sugli interventi discussi in Commissione.'
 link: 'http://ift.tt/2eje7Ae'
@@ -10701,6 +10696,18 @@ data: 03/10/2016
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/743,180702170,2016-10-03 17:47:50,2016-10-03 17:47:25,Inaugurati a Rieti sede provvisoria e anno formativo del centro di formazione professionale di Amatrice,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""03/10/2016"", ""descrizione"": ""Inaugurato oggi nella nuova sede provvisoria di Rieti l'anno formativo del centro di Formazione Professionale di Amatrice: questa apertura certifica l\u2019impegno delle istituzioni che ad ogni livello, attraverso un confronto continuo con le persone, si sono mosse anche per ricostruire opportunit\u00e0."", ""link"": ""http://www.regione.lazio.it/rl_main/?vw=newsdettaglio&id=3607"", ""titolo"": ""Inaugurati a Rieti sede provvisoria e anno formativo del centro di formazione professionale di Amatrice""}","<pre><yamldata>titolo: 'Inaugurati a Rieti sede provvisoria e anno formativo del centro di formazione professionale di Amatrice'
 descrizione: 'Inaugurato oggi nella nuova sede provvisoria di Rieti l''anno formativo del centro di Formazione Professionale di Amatrice: questa apertura certifica l’impegno delle istituzioni che ad ogni livello, attraverso un confronto continuo con le persone, si sono mosse anche per ricostruire opportunità.'
 link: 'http://www.regione.lazio.it/rl_main/?vw=newsdettaglio&id=3607'
+data: 03/10/2016
+</yamldata></pre>
+",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/742,180692278,2016-10-03 17:03:28,2016-10-03 17:01:52,RicostruiAmo #Saletta - Raccolta fondi del comitato civico,,,"[""Accettato"", ""Bollettino"", ""Raccolte Fondi"", ""Twitter""]",,,"{""bic"": """", ""causale"": ""Donazioni progetti Saletta"", ""chi"": ""RicostruiAmo Saletta"", ""data"": ""03/10/2016"", ""descrizione"": ""Raccolta fondi del comitato civico RicostruiAmo Saletta, fondato lo scorso 14 settembre da un gruppo di abitanti di Saletta, frazione di Amatrice, colpita dal terremoto."", ""email"": """", ""iban"": ""IT 62 H 0542803215000000001983"", ""intestazione"": ""Comitato RicostruiAmo Saletta"", ""link"": ""http://www.ricostruiamosaletta.org"", ""postale"": """"}","<pre><yamldata>chi: 'RicostruiAmo Saletta'
+descrizione: 'Raccolta fondi del comitato civico RicostruiAmo Saletta, fondato lo scorso 14 settembre da un gruppo di abitanti di Saletta, frazione di Amatrice, colpita dal terremoto.'
+intestazione: 'Comitato RicostruiAmo Saletta'
+iban: 'IT 62 H 0542803215000000001983'
+bic: ''
+postale: ''
+causale: 'Donazioni progetti Saletta'
+link: 'http://www.ricostruiamosaletta.org'
+email: ''
 data: 03/10/2016
 </yamldata></pre>
 ",open
