@@ -504,10 +504,10 @@ link: ''
 immagine: ''
 data: 24/01/2017
 </yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2260,202859946,2017-01-25 07:17:19,2017-01-24 15:59:33,Offresi stalla per 30-40 capi ad #Atri,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Ospitalita animali"", ""Sisma Gennaio 2017""]",,,{},"<pre><yamldata>nome: 'Marina D''Amario'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2260,202859946,2017-01-31 13:59:09,2017-01-24 15:59:33,Offresi stalla per 30-40 capi ad #Atri,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Ospitalita animali"", ""Sisma Gennaio 2017""]",,,"{""data"": ""24/01/2017"", ""descrizione"": ""Al telegiornale si parla ancora di animali bloccati in stalle pericolanti o, peggio ancora, distrutte.... Mettiamo a disposizione una stalla per circa 30/40 capi di bestiame. Siamo ad Atri, contrada Paterno, azienda agricola D'Amario e Feliciani. Per qualunque informazione contattateci al 3204137330"", ""email"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""nome"": ""Marina D'Amario"", ""tel"": ""3204137330""}","<pre><yamldata>nome: 'Marina D''Amario'
 tel: '3204137330'
 email: ''
-descrizione: 'Al telegiornale si parla ancora di animali bloccati in stalle pericolanti o, peggio ancora, distrutte.... Mettiamo a disposizione una stalla per circa 30/40 capi di bestiame. Siamo ad Atri, contrada Paterno, azienda agricola D'Amario e Feliciani. Per qualunque informazione contattateci al 3204137330'
+descrizione: 'Al telegiornale si parla ancora di animali bloccati in stalle pericolanti o, peggio ancora, distrutte.... Mettiamo a disposizione una stalla per circa 30/40 capi di bestiame. Siamo ad Atri, contrada Paterno, azienda agricola D''Amario e Feliciani. Per qualunque informazione contattateci al 3204137330'
 indirizzo: ''
 lat: ''
 lon: ''
@@ -3014,9 +3014,9 @@ descrizione: 'In seguito alle quattro forti scosse che ieri hanno interessato il
 link: 'http://www.protezionecivile.gov.it/jcms/it/view_new.wp?contentId=NEW62119'
 data: 19/01/2017
 </yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1967,201990951,2017-01-21 22:13:45,2017-01-19 22:13:19,Offresi stalle e pascolo per ovini con annesso edificio in provincia di Cuneo,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Ospitalita animali"", ""Sisma Gennaio 2017""]",,,{},"<pre><yamldata>tel: '347 5821212'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1967,201990951,2017-01-31 13:57:57,2017-01-19 22:13:19,Offresi stalle e pascolo per ovini con annesso edificio in provincia di Cuneo,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Ospitalita animali"", ""Sisma Gennaio 2017""]",,,"{""data"": ""19/01/2017"", ""descrizione"": ""Attenzione il messaggio e rivolto ad aziende agricole ovine. Metto a disposizione presso il comune di Elva, provincia di Cuneo, una struttura idonea con stalle, fienili ecc, edificio e circa 15 ettari di pascolo idoneo agli ovini, il sito si trova in Piemonte Valle Maira. Attualmente essendo in quota 1815 slm, la strada \u00e8 chiusa, da fine marzo a pasqua 2017 il sito \u00e8 raggiungibile. Il tutto viene dato in condizioni d'uso gratuito fino a termine stato disagio."", ""email"": ""pierfrancescorolando@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""347 5821212""}","<pre><yamldata>tel: '347 5821212'
 email: pierfrancescorolando@gmail.com
-descrizione: 'attenzione il messaggio e rivolto ad aziende agricole ovine.metto a disposizione presso il comune di elva ,provincia di cuneo una struttura idonea stalle fienili ecc con edificio e circa 15 ettari di pascolo idoneo agli ovini,il sito si trova in Piemonte valle maira,attualmente esendo in quota 1815 slm, la strada e chiusa, da fine marzo a pasqua 2017, il sito e raggiungibile. Il tutto viene dato in condizioni d'uso gratuito fino a termine stato disagio.'
+descrizione: 'Attenzione il messaggio e rivolto ad aziende agricole ovine. Metto a disposizione presso il comune di Elva, provincia di Cuneo, una struttura idonea con stalle, fienili ecc, edificio e circa 15 ettari di pascolo idoneo agli ovini, il sito si trova in Piemonte Valle Maira. Attualmente essendo in quota 1815 slm, la strada è chiusa, da fine marzo a pasqua 2017 il sito è raggiungibile. Il tutto viene dato in condizioni d''uso gratuito fino a termine stato disagio.'
 indirizzo: ''
 lat: ''
 lon: ''
