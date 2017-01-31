@@ -46,7 +46,7 @@ This card gives you 1.5% cash back on purchases, plus a $150 bonus if you spend 
 
 Check out the link below to get yours. It's a referral link, so I'll get something, too.
 
-> [Earn $150 cash back with Chase Freedom Unlimited&#8480;](https://applynow.chase.com/FlexAppWeb/renderApp.do?SPID=FKXL&CELL=63HB&MSC=1535963954)  #sponsored
+> [Earn $150 cash back with Chase Freedom Unlimited&#8480;](https://applynow.chase.com/FlexAppWeb/renderApp.do?SPID=FMLQ&CELL=63HB&MSC=1535963954)  #sponsored
 
 ### Chase Freedom
 
@@ -58,7 +58,7 @@ I just got it this month, so I didn't get any rewards this year. I have $252.28 
 
 The link below should lead to an application page. Again, it's a referral link.
 
-> [Earn $150 cash back with Chase Freedom&reg;](https://applynow.chase.com/FlexAppWeb/renderApp.do?SPID=FJF6&CELL=63HB&MSC=1538443475) #sponsored
+> [Earn $150 cash back with Chase Freedom&reg;](https://applynow.chase.com/FlexAppWeb/renderApp.do?SPID=FMM3&CELL=63HB&MSC=1538443475) #sponsored
 
 ## Checking Bonuses
 
