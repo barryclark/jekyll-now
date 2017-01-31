@@ -1,4 +1,25 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2335,204223346,2017-01-31 07:40:50,2017-01-31 07:34:30,"Comune di #Fiastra cerca due container, uno uso magazzino e uno per centro di aggregazione",43.0361407,13.1554547,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Sisma Ottobre""]",,,"{""cosa"": ""Comune di #Fiastra cerca due container, uno uso magazzino e uno per centro di aggregazione"", ""data"": ""31/01/2017"", ""descrizione"": ""Il Comune di Fiastra ha ricevuto molti doni per la nuova scuola che verr\u00e0 costruita e, avendo la sede del Comune inagibile e la scuola distrutta, avremmo bisogno di un piccolo container (o simili) dove conservarle onde evitare possano rovinarsi o peggio ancora fare una brutta fine. Inoltre avremmo bisogno di un altro container, ma per le persone. Mi spiego meglio: purtroppo siamo rimasti senza punti di incontro, soprattutto per i giovani. Sarebbe bello allora poter avere un posto riscaldabile con magari un televisore, dei tavoli e una macchinetta per il caff\u00e8, dove ritrovarsi per scambiare quattro chiacchiere o semplicemente leggere un libro in compagnia, studiare, riunirsi, ecc. Chi pu\u00f2 aiutarci ci contatti, grazie! Silvia Belli."", ""email"": ""sia_82@hotmail.com"", ""immagine"": """", ""indirizzo"": ""Via Roma, Fiastra, MC, Marche, 62035, Italia"", ""lat"": ""43.0361407"", ""link"": """", ""lon"": ""13.1554547"", ""tel"": ""339205803585 Maurizio (geometra comunale)""}","<pre><yamldata>tel: '339205803585 Maurizio (geometra comunale)'
+email: sia_82@hotmail.com
+cosa: 'Comune di #Fiastra cerca due container, uno uso magazzino e uno per centro di aggregazione'
+descrizione: 'Il Comune di Fiastra ha ricevuto molti doni per la nuova scuola che verrà costruita e, avendo la sede del Comune inagibile e la scuola distrutta, avremmo bisogno di un piccolo container (o simili) dove conservarle onde evitare possano rovinarsi o peggio ancora fare una brutta fine. Inoltre avremmo bisogno di un altro container, ma per le persone. Mi spiego meglio: purtroppo siamo rimasti senza punti di incontro, soprattutto per i giovani. Sarebbe bello allora poter avere un posto riscaldabile con magari un televisore, dei tavoli e una macchinetta per il caffè, dove ritrovarsi per scambiare quattro chiacchiere o semplicemente leggere un libro in compagnia, studiare, riunirsi, ecc. Chi può aiutarci ci contatti, grazie! Silvia Belli.'
+indirizzo: 'Via Roma, Fiastra, MC, Marche, 62035, Italia'
+lat: '43.0361407'
+lon: '13.1554547'
+link: ''
+immagine: ''
+data: 31/01/2017
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2334,204118343,2017-01-31 07:40:30,2017-01-30 20:18:56,Offriamo alloggio a adulto con bimbo/a in provincia di Bergamo,,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""30/01/2017"", ""descrizione"": ""Siamo una coppia di 28 e 22 anni con una bimba di 2 anni e 6 mesi e siamo disposti a ospitare un adulto con un bambino/a a Vertova (Bergamo), a disposizione mettiamo una camera. Bagno, cucina e sala in comune."", ""email"": ""Crazywarry@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3488957575""}","<pre><yamldata>tel: '3488957575'
+email: Crazywarry@gmail.com
+descrizione: 'Siamo una coppia di 28 e 22 anni con una bimba di 2 anni e 6 mesi e siamo disposti a ospitare un adulto con un bambino/a a Vertova (Bergamo), a disposizione mettiamo una camera. Bagno, cucina e sala in comune.'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 30/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2333,204102527,2017-01-31 07:36:40,2017-01-30 19:15:05,Offro alloggio per 4 persone a Lampedusa,35.49956561983097,12.597799301147461,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""30/01/2017"", ""descrizione"": ""Offro alloggio per 4 persone presso Lampedusa (AG). L'Appartamento \u00e8 composto da due camere ed 1 bagno. Salvatore Cappello"", ""email"": ""condocata@alice.it"", ""immagine"": """", ""indirizzo"": ""Via Vicolo Linosa, Lampedusa e Linosa, AG, Sicily, Italia"", ""lat"": ""35.49956561983097"", ""link"": """", ""lon"": ""12.597799301147461"", ""tel"": ""3386204148""}","<pre><yamldata>tel: '3386204148'
 email: condocata@alice.it
 descrizione: 'Offro alloggio per 4 persone presso Lampedusa (AG). L''Appartamento è composto da due camere ed 1 bagno. Salvatore Cappello'
@@ -5663,17 +5684,6 @@ link: ''
 immagine: ''
 data: 19/12/2016
 </yamldata></pre>",closed
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1476,196444837,2017-01-13 22:58:23,2016-12-19 15:41:14,Il Comune di #Fiastra ha bisogno di due motoseghe,43.0361407,13.1554547,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Sisma Ottobre""]",,,"{""cosa"": ""Il Comune di #Fiastra ha bisogno di due motoseghe"", ""data"": ""19/12/2016"", ""descrizione"": ""Il Comune di Fiastra ha bisogno urgente di un paio di motoseghe professionali (Still o Usqvarna) perch\u00e8 sono state rubate e il Comune \u00e8 rimasto senza, mentre in questo momento sarebbero molto utili. Per contatti: Maurizio, geometra del Comune."", ""email"": ""sia_82@hotmail.com"", ""immagine"": """", ""indirizzo"": ""Via Roma, Fiastra, MC, Marche, 62035, Italia"", ""lat"": ""43.0361407"", ""link"": """", ""lon"": ""13.1554547"", ""tel"": ""339 5803585""}","<pre><yamldata>tel: '339 5803585'
-email: sia_82@hotmail.com
-cosa: 'Il Comune di #Fiastra ha bisogno di due motoseghe'
-descrizione: 'Il Comune di Fiastra ha bisogno urgente di un paio di motoseghe professionali (Still o Usqvarna) perchè sono state rubate e il Comune è rimasto senza, mentre in questo momento sarebbero molto utili. Per contatti: Maurizio, geometra del Comune.'
-indirizzo: 'Via Roma, Fiastra, MC, Marche, 62035, Italia'
-lat: '43.0361407'
-lon: '13.1554547'
-link: ''
-immagine: ''
-data: 19/12/2016
-</yamldata></pre>",closed
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1475,196430452,2016-12-26 15:41:51,2016-12-19 14:45:19,"Azienda agricola di #Pretare ha bisogno di mangime per bovini, equini e ovini",42.7978600,13.3004100,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Sisma Ottobre""]",,,"{""cosa"": ""richiesta mangime"", ""data"": ""19/12/2016"", ""descrizione"": ""Buonasera, sono Santolini Santa, titolare dell'azienda agricola Le Terre delle fate, situata a Pretare, piccola frazione di Arquata del Tronto. Il mio paese \u00e8 stato duramente colpito dal sisma, cos\u00ec come la mia azienda. Essa \u00e8 composta da 20 bovini, 15 ovini e 4 equini. E' a conduzione familiare, gestita da me, con l'ausilio dei miei due figli. Ogni giorno siamo costretti a recarci da San Benedetto a Pretare, percorrendo circa 70 chilometri. Abbiamo necessit\u00e0 di almeno 50 quintali di mangime per soddisfare tutti i nostri animali. Purtroppo, a causa delle spese ingenti che stiamo affrontando, considerando anche le innumerevoli perdite economiche ricevute a causa del sisma, ci troviamo nella condizione di chiedere aiuto. Teniamo a precisare che la necessit\u00e0 \u00e8 reale e confidiamo nella comprensione di quanti vorranno darci una mano."", ""email"": ""mirkotrenta@libero.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": ""42.7978600"", ""link"": """", ""lon"": ""13.3004100"", ""tel"": ""3804323871""}","<pre><yamldata>tel: '3804323871'
 email: mirkotrenta@libero.it
 cosa: 'richiesta mangime'
@@ -9767,12 +9777,6 @@ data: 30/10/2016
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/885,186083099,2016-10-29 16:12:34,2016-10-29 15:05:24,COMUNE DI #SERRAVALLE DI CHIENTI: apertura uffici comunali per emergenza sismica,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili"", ""Sisma Ottobre""]",,,"{""data"": ""29/10/2016"", ""descrizione"": ""A seguito dell\u2019emergenza sismica il comune rester\u00e0 aperto anche nei giorni festivi del 30/10/2016 e del 01/11/2016."", ""link"": ""http://www.comune.serravalledichienti.mc.it/avvisi-cms/apertura-uffici-comunali-per-emergenza-sismica/"", ""titolo"": ""COMUNE DI #SERRAVALLE DI CHIENTI:Apertura uffici comunali per emergenza sismica.""}","<pre><yamldata>titolo: 'COMUNE DI #SERRAVALLE DI CHIENTI:Apertura uffici comunali per emergenza sismica.'
 descrizione: 'A seguito dell’emergenza sismica il comune resterà aperto anche nei giorni festivi del 30/10/2016 e del 01/11/2016.'
 link: 'http://www.comune.serravalledichienti.mc.it/avvisi-cms/apertura-uffici-comunali-per-emergenza-sismica/'
-data: 29/10/2016
-</yamldata></pre>
-",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/884,186082467,2016-10-29 16:11:42,2016-10-29 14:52:22,COMUNE DI #SANGINESIO: disponibilità stanze ostello comunale,,,"[""Accettato"", ""Alloggi"", ""Bollettino"", ""Form"", ""Notizie Utili"", ""Sisma Ottobre""]",,,"{""data"": ""29/10/2016"", ""descrizione"": ""Comunichiamo la disponibilit\u00e0 di stanze presso l\u2019ostello comunale per coloro che, pur non avendo avuto danni alle abitazioni, non se la sentono, per ora, di rientrare in casa. La precedenza rimane a coloro che avranno ordinanze di sgombero. Per contatti: tel.3312114588 sig. Walter Zecchini"", ""link"": ""http://www.comune.sanginesio.mc.it/avvisi-cms/comunicazione-disponibilita-stanze-ostello-comunale/"", ""titolo"": ""COMUNE DI #SANGINESIO: Comunicazione disponibilit\u00e0 stanze ostello comunale""}","<pre><yamldata>titolo: 'COMUNE DI #SANGINESIO: Comunicazione disponibilità stanze ostello comunale'
-descrizione: 'Comunichiamo la disponibilità di stanze presso l’ostello comunale per coloro che, pur non avendo avuto danni alle abitazioni, non se la sentono, per ora, di rientrare in casa. La precedenza rimane a coloro che avranno ordinanze di sgombero. Per contatti: tel.3312114588 sig. Walter Zecchini'
-link: 'http://www.comune.sanginesio.mc.it/avvisi-cms/comunicazione-disponibilita-stanze-ostello-comunale/'
 data: 29/10/2016
 </yamldata></pre>
 ",open
