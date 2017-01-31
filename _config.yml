@@ -15,6 +15,12 @@ avatar: https://red-box-labs.github.io/images/box-logo.png
 # Flags below are optional
 #
 
+# Categories
+collections:
+  my_categories:
+    output: true
+    permalink: /blog/category/:name/
+
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
