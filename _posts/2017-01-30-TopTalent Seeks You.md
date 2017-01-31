@@ -10,7 +10,7 @@ This company is one where you can find many varying kinds of opportunities to ad
 
 Aside from their prestiguous titles and many developer portfolios, their free email newsletter offers insightful feedback for those seeking a little more help with their programming practices.
 
-I've reviewed multiple articles on MVC framework customizations, increasing workflow optimization, and overall very helpful guidelines that aim to focus on furthering your skill sets as a professional developer. I was even able to [use some of these insights in my personal app projects.](emilypmendez.github.io/projects)
+After reviewing multiple articles on MVC framework customizations, learning how to increase workflow optimization, and evaluating overall very helpful guidelines, I have determined that TopTalent truly aims to focus on furthering your skill sets as a professional developer. I was even able to [use some of these insights in my client side Javascript based app projects.](emilypmendez.github.io/projects)
 
 I'm personally excited to become part of the network due to many "answers" provided by legitimately successful programmers and otherwise engineers located on **Quora**.
 
