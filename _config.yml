@@ -18,6 +18,9 @@ avatar: https://red-box-labs.github.io/images/box-logo.png
 # Categories
 collections:
   projects:
+    output: true
+  updates:
+    output: false
   
   
 # Includes an icon in the footer for each username you enter
