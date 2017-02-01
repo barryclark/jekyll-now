@@ -14,10 +14,10 @@ link: ''
 immagine: 'http://i.imgur.com/pCCTMzv.jpg'
 data: 01/02/2017
 </yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2343,204440344,2017-02-01 09:53:17,2017-01-31 22:16:52,Donazione Roulotte,,,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Form""]",,,"{""cosa"": ""Roulotte"", ""data"": ""31/01/2017"", ""descrizione"": ""Regalo roulotte con letto matrimoniale e uno da una piazza e mezza con stufa funzionante, trainabile, purch\u00e9 veniate a prenderla. Si trova a Marina di Grosseto. Emanuela"", ""email"": ""em.lucato@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3488062840""}","<pre><yamldata>tel: '3488062840'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2343,204440344,2017-02-01 10:32:55,2017-01-31 22:16:52,Donazione roulotte,,,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Form""]",,,"{""cosa"": ""Roulotte"", ""data"": ""31/01/2017"", ""descrizione"": ""Regalo roulotte con letto matrimoniale e uno da una piazza e mezza con stufa funzionante, trainabile purch\u00e9 veniate a prenderla. Si trova a Marina di Grosseto. Emanuela"", ""email"": ""em.lucato@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3488062840""}","<pre><yamldata>tel: '3488062840'
 email: em.lucato@gmail.com
 cosa: Roulotte
-descrizione: 'Regalo roulotte con letto matrimoniale e uno da una piazza e mezza con stufa funzionante, trainabile, purché veniate a prenderla. Si trova a Marina di Grosseto. Emanuela'
+descrizione: 'Regalo roulotte con letto matrimoniale e uno da una piazza e mezza con stufa funzionante, trainabile purché veniate a prenderla. Si trova a Marina di Grosseto. Emanuela'
 indirizzo: ''
 lat: ''
 lon: ''
@@ -25,14 +25,14 @@ link: ''
 immagine: ''
 data: 31/01/2017
 </yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2342,204340464,2017-02-01 09:59:43,2017-01-31 16:00:26,Riccardo Visentin - NOLEGGIO TENDOSTRUTTURE,,,"[""Accettato"", ""Bollettino"", ""Contatti"", ""Form""]",,,"{""data"": ""31/01/2017"", ""descrizione"": ""Noleggiatori tendostrutture www.gruppocsc.it"", ""email"": ""riccardo.visentin@gruppocsc.it"", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""nome"": ""Riccardo Visentin"", ""tel"": ""0226263627""}","<pre><yamldata>nome: 'Riccardo Visentin'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2342,204340464,2017-02-01 10:31:45,2017-01-31 16:00:26,Gruppo Csc - Noleggio tendostrutture,,,"[""Accettato"", ""Bollettino"", ""Contatti"", ""Form""]",,,"{""data"": ""31/01/2017"", ""descrizione"": ""Noleggiatori tendostrutture. Prezzi particolarmente vantaggiosi per le aree colpite dal terremoto. Per info e contatti: Riccardo Visentin."", ""email"": ""riccardo.visentin@gruppocsc.it"", ""indirizzo"": """", ""lat"": """", ""link"": ""http://www.gruppocsc.it"", ""lon"": """", ""nome"": ""Riccardo Visentin"", ""tel"": ""0226263627""}","<pre><yamldata>nome: 'Riccardo Visentin'
 tel: '0226263627'
 email: riccardo.visentin@gruppocsc.it
-descrizione: 'Noleggiatori tendostrutture www.gruppocsc.it'
+descrizione: 'Noleggiatori tendostrutture. Prezzi particolarmente vantaggiosi per le aree colpite dal terremoto. Per info e contatti: Riccardo Visentin.'
 indirizzo: ''
 lat: ''
 lon: ''
-link: ''
+link: 'http://www.gruppocsc.it'
 data: 31/01/2017
 </yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2341,204301799,2017-01-31 16:06:41,2017-01-31 13:50:19,Offresi indumenti invernali e da montagna,45.4653931,8.8838429,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""Indumenti invernali"", ""data"": ""31/01/2017"", ""descrizione"": ""Offro vestiti, giacconi, cappelli, stivali doposci sia da uomo che da donna. Diverse taglie disponibili. Fatemi sapere dove posso portarle/spedirle."", ""email"": ""paoli88_36@hotmail.com"", ""immagine"": """", ""indirizzo"": ""Piazza della Liberazione, Magenta, Milano, Lombardia, 20013, Italia"", ""lat"": ""45.4653931"", ""link"": """", ""lon"": ""8.8838429"", ""tel"": """"}","<pre><yamldata>tel: ''
@@ -7183,6 +7183,11 @@ postale: ''
 causale: ''
 link: 'http://sosteniamoarquata.it/'
 email: info@sostieniamoarquata.it
+data: 14/11/2016
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1267,189239485,2016-11-14 22:04:35,2016-11-14 22:04:17,"""Super Luna"" e terremoti, la bufala da sfatare",,,"[""Accettato"", ""Bollettino"", ""Bufale"", ""Sisma Ottobre""]",,,"{""data"": ""14/11/2016"", ""descrizione"": ""Il fenomeno della \""Super Luna\"" ha da sempre suscitato teorie non ufficiali o addirittura nefaste, una delle quali \u00e8 la relazione con i terremoti. La coincidenza di forti terremoti e perigeo lunare \u00e8 una teoria non supportata dai dati disponibili (considerate che un terremoto di magnitudo 7 avviene circa 15-20 volte l\u2019anno nel globo). \""E\u2019 noto - spiega il geologo Gabriele Lena, presidente di Int.Geo.Mod, ex spin-off dell'Universit\u00e0 di Perugia, che la luna genera maree negli oceani ma anche maree crostali, di limitata entit\u00e0. Alcuni scienziati hanno rilevato una possibile influenza della combinazione di queste maree nei grandi oceani con un particolare tipo di terremoti compressivi, ma le forze in gioco rispetto ad un terremoto di grande entit\u00e0 sono estremamente differenti. Allo stato attuale si pu\u00f2 escludere con ragionevole certezza una influenza delle maree crostali su terremoti come quelli avvenuti in Centro Italia\u201d."", ""link"": ""http://www.perugiatoday.it/cronaca/super-luna-bufala-collegamento-terremoto.html"", ""titolo"": ""\""Super Luna\"" e terremoti, la bufala da sfatare""}","<pre><yamldata>titolo: '""Super Luna"" e terremoti, la bufala da sfatare'
+descrizione: 'Il fenomeno della ""Super Luna"" ha da sempre suscitato teorie non ufficiali o addirittura nefaste, una delle quali è la relazione con i terremoti. La coincidenza di forti terremoti e perigeo lunare è una teoria non supportata dai dati disponibili (considerate che un terremoto di magnitudo 7 avviene circa 15-20 volte l’anno nel globo). ""E’ noto - spiega il geologo Gabriele Lena, presidente di Int.Geo.Mod, ex spin-off dell''Università di Perugia, che la luna genera maree negli oceani ma anche maree crostali, di limitata entità. Alcuni scienziati hanno rilevato una possibile influenza della combinazione di queste maree nei grandi oceani con un particolare tipo di terremoti compressivi, ma le forze in gioco rispetto ad un terremoto di grande entità sono estremamente differenti. Allo stato attuale si può escludere con ragionevole certezza una influenza delle maree crostali su terremoti come quelli avvenuti in Centro Italia”.'
+link: 'http://www.perugiatoday.it/cronaca/super-luna-bufala-collegamento-terremoto.html'
 data: 14/11/2016
 </yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1267,189239485,2016-11-14 22:04:35,2016-11-14 22:04:17,"""Super Luna"" e terremoti, la bufala da sfatare",,,"[""Accettato"", ""Bollettino"", ""Bufale"", ""Sisma Ottobre""]",,,"{""data"": ""14/11/2016"", ""descrizione"": ""Il fenomeno della \""Super Luna\"" ha da sempre suscitato teorie non ufficiali o addirittura nefaste, una delle quali \u00e8 la relazione con i terremoti. La coincidenza di forti terremoti e perigeo lunare \u00e8 una teoria non supportata dai dati disponibili (considerate che un terremoto di magnitudo 7 avviene circa 15-20 volte l\u2019anno nel globo). \""E\u2019 noto - spiega il geologo Gabriele Lena, presidente di Int.Geo.Mod, ex spin-off dell'Universit\u00e0 di Perugia, che la luna genera maree negli oceani ma anche maree crostali, di limitata entit\u00e0. Alcuni scienziati hanno rilevato una possibile influenza della combinazione di queste maree nei grandi oceani con un particolare tipo di terremoti compressivi, ma le forze in gioco rispetto ad un terremoto di grande entit\u00e0 sono estremamente differenti. Allo stato attuale si pu\u00f2 escludere con ragionevole certezza una influenza delle maree crostali su terremoti come quelli avvenuti in Centro Italia\u201d."", ""link"": ""http://www.perugiatoday.it/cronaca/super-luna-bufala-collegamento-terremoto.html"", ""titolo"": ""\""Super Luna\"" e terremoti, la bufala da sfatare""}","<pre><yamldata>titolo: '""Super Luna"" e terremoti, la bufala da sfatare'
