@@ -26,12 +26,14 @@ Journal club meetings currently take place on Wednesdays at 12:00 pm in seminar 
 - February 8: Jonathan Rawski
 - February 15: Arthur Zhao
 - February 22,29:  no journal club, Cosyne meeting
-- March 8: Memming Park
+- March 8: Logan Becker
 - March 15: no journal club, Spring break!
 - March 22: Luca Mazzucato
 - March 29: Yuan Zhao
 - April 5: Jin Wang
 - April 12: Giancarlo La Camera 
+- April 19: Naz Gulce
+- April 26: Memming Park
 
 
 
