@@ -1,4 +1,9 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2346,204566083,2017-02-01 12:06:15,2017-02-01 12:02:40,Il Comune di Fiastra invita chi avesse abitazioni nel territorio comunale da affittare a prendere contatti con l'Associazione Ricostrui AMO Fiastra,,,"[""Accettato"", ""Bollettino"", ""Facebook"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""01/02/2017"", ""descrizione"": ""In accordo con il Comune, l'associazione cerca di sostenere chi volesse e/o dovesse tornare a vivere a Fiastra raccogliendo e rendendo pubbliche tutte le offerte di affitto di abitazioni all'interno del territorio comunale."", ""link"": ""https://www.facebook.com/ComuneDiFiastra/photos/a.1833113043566742.1073741828.1832186496992730/1874161986128514/?type=3"", ""titolo"": ""Il Comune di Fiastra invita chi avesse abitazioni nel territorio comunale da affittare a prendere contatti con l'Associazione Ricostrui AMO Fiastra""}","<pre><yamldata>titolo: 'Il Comune di Fiastra invita chi avesse abitazioni nel territorio comunale da affittare a prendere contatti con l''Associazione Ricostrui AMO Fiastra'
+descrizione: 'In accordo con il Comune, l''associazione cerca di sostenere chi volesse e/o dovesse tornare a vivere a Fiastra raccogliendo e rendendo pubbliche tutte le offerte di affitto di abitazioni all''interno del territorio comunale.'
+link: 'https://www.facebook.com/ComuneDiFiastra/photos/a.1833113043566742.1073741828.1832186496992730/1874161986128514/?type=3'
+data: 01/02/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2345,204531322,2017-02-01 09:55:22,2017-02-01 09:17:05,"Terremoto-Neve in Abruzzo: da CIA operazione ""Help Foraggio""",,,"[""Accettato"", ""Bollettino"", ""Facebook"", ""Form"", ""Notizie Utili"", ""Sisma Gennaio 2017""]",,,"{""data"": ""01/02/2017"", ""descrizione"": ""All'operazione \""Help Foraggio\"", la rete di solidariet\u00e0 della Cia-Agricoltori Italiani per portare un aiuto concreto alle aziende dell'Appennino centrale stremate dalle nuove scosse di terremoto e sommerse dalla neve, si aggiunte la CIA lucana."", ""link"": ""http://www.gazzettadellavaldagri.it/terremoto-neve-abruzzo-cia-operazione-help-foraggio/"", ""titolo"": ""Terremoto-Neve in Abruzzo: da CIA operazione \""Help Foraggio\""""}","<pre><yamldata>titolo: 'Terremoto-Neve in Abruzzo: da CIA operazione ""Help Foraggio""'
 descrizione: 'All''operazione ""Help Foraggio"", la rete di solidarietà della Cia-Agricoltori Italiani per portare un aiuto concreto alle aziende dell''Appennino centrale stremate dalle nuove scosse di terremoto e sommerse dalla neve, si aggiunte la CIA lucana.'
 link: 'http://www.gazzettadellavaldagri.it/terremoto-neve-abruzzo-cia-operazione-help-foraggio/'
@@ -15749,18 +15754,6 @@ immagine: ''
 data: 13/09/2016
 </yamldata></pre>
 ",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/185,176758797,2016-09-13 22:07:21,2016-09-13 21:46:12,Tende e sacchi a pelo per frazioni intorno ad Amatrice,42.64204079304426,13.216552734375,"[""Accettato"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""Tende e sacchi a pelo per frazioni intorno ad Amatrice"", ""data"": ""13/09/2016"", ""descrizione"": ""URGENTE - Occorrono tende e sacchi a pelo per le frazioni intorno ad Amatrice. Chi ne ha me li pu\u00f2 portare tra oggi e domani per quanto riguarda Roma, senn\u00f2 a Citt\u00e0 Reale dal militare che si sta occupando della distribuzione."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Strada Statale 4 Via Salaria, Amatrice, RI, LAZ, Italia"", ""lat"": ""42.64204079304426"", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1760332610900989/"", ""lon"": ""13.216552734375"", ""tel"": """"}","<pre><yamldata>tel: ''
-email: ''
-cosa: 'Tende e sacchi a pelo per frazioni intorno ad Amatrice'
-descrizione: 'URGENTE - Occorrono tende e sacchi a pelo per le frazioni intorno ad Amatrice. Chi ne ha me li può portare tra oggi e domani per quanto riguarda Roma, sennò a Città Reale dal militare che si sta occupando della distribuzione.'
-indirizzo: 'Strada Statale 4 Via Salaria, Amatrice, RI, LAZ, Italia'
-lat: '42.64204079304426'
-lon: '13.216552734375'
-link: 'https://www.facebook.com/groups/1758670357733881/permalink/1760332610900989/'
-immagine: ''
-data: 13/09/2016
-</yamldata></pre>
-",closed
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/185,176758797,2016-09-13 22:07:21,2016-09-13 21:46:12,Tende e sacchi a pelo per frazioni intorno ad Amatrice,42.64204079304426,13.216552734375,"[""Accettato"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""Tende e sacchi a pelo per frazioni intorno ad Amatrice"", ""data"": ""13/09/2016"", ""descrizione"": ""URGENTE - Occorrono tende e sacchi a pelo per le frazioni intorno ad Amatrice. Chi ne ha me li pu\u00f2 portare tra oggi e domani per quanto riguarda Roma, senn\u00f2 a Citt\u00e0 Reale dal militare che si sta occupando della distribuzione."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Strada Statale 4 Via Salaria, Amatrice, RI, LAZ, Italia"", ""lat"": ""42.64204079304426"", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1760332610900989/"", ""lon"": ""13.216552734375"", ""tel"": """"}","<pre><yamldata>tel: ''
 email: ''
 cosa: 'Tende e sacchi a pelo per frazioni intorno ad Amatrice'
