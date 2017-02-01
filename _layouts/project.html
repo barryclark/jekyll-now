@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+<article class="page">
+
+  <h1>{{ page.title }}</h1>
+
+  {% for update in site.updates %} 
+    {% if update.project == page.project %} 
+
+      <div class="entry">
+        {{ update.output }} 
+      </div>
+    {% endif %} 
+  {% endfor %}
+
+</article>
