@@ -20,7 +20,7 @@ collections:
   projects:
     output: true
   updates:
-    output: false
+    output: true
   
   
 # Includes an icon in the footer for each username you enter
