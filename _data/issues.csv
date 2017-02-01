@@ -4354,6 +4354,17 @@ link: ''
 immagine: ''
 data: 18/01/2017
 </yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1680,201718908,2017-01-23 09:47:29,2017-01-18 23:08:19,Offresi stallo per cani in provincia di Ancona,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Ospitalita animali"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""Stallo cani"", ""data"": ""18/01/2017"", ""descrizione"": ""Offro stallo per cani in provincia di Ancona"", ""email"": ""bellai90@hotmail.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3200922305""}","<pre><yamldata>tel: '3200922305'
+email: bellai90@hotmail.it
+cosa: 'Stallo cani'
+descrizione: 'Offro stallo per cani in provincia di Ancona'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 18/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1679,201717746,2017-01-18 23:17:32,2017-01-18 23:02:29,Situazione molto critica per i 16 abitanti di Colle di #Arquata,,,"[""Accettato"", ""Bollettino"", ""Facebook"", ""Notizie Utili"", ""Sisma Gennaio 2017""]",,,"{""data"": ""18/01/2017"", ""descrizione"": ""Aggiornamento dell'associazione Chiedi alla polvere. Situazione ancora critica per i 16 abitanti (di cui 6 anziani e 4 donne) della frazione di Colle di Arquata bloccati dalla neve, senza riscaldamenti a causa della corrente che va e viene. I soccorsi hanno difficolt\u00e0 ad arrivare, la turbina che avrebbe dovuto velocizzare il recupero \u00e8 incorsa in un incidente e il tempo previsto per il salvataggio, affidato alla ruspa dei vigili del fuoco, \u00e8 di almeno tre ore. La situazione \u00e8 disperata, vi teniamo aggiornati."", ""link"": ""https://www.facebook.com/centroItaliaterremoto/posts/593214754199457"", ""titolo"": ""Situazione molto critica per i 16 abitanti di Colle di #Arquata""}","<pre><yamldata>titolo: 'Situazione molto critica per i 16 abitanti di Colle di #Arquata'
 descrizione: 'Aggiornamento dell''associazione Chiedi alla polvere. Situazione ancora critica per i 16 abitanti (di cui 6 anziani e 4 donne) della frazione di Colle di Arquata bloccati dalla neve, senza riscaldamenti a causa della corrente che va e viene. I soccorsi hanno difficoltà ad arrivare, la turbina che avrebbe dovuto velocizzare il recupero è incorsa in un incidente e il tempo previsto per il salvataggio, affidato alla ruspa dei vigili del fuoco, è di almeno tre ore. La situazione è disperata, vi teniamo aggiornati.'
 link: 'https://www.facebook.com/centroItaliaterremoto/posts/593214754199457'
