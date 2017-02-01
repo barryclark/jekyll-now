@@ -17,17 +17,16 @@ avatar: https://red-box-labs.github.io/images/box-logo.png
 
 # Categories
 collections:
-  my_categories:
-    output: true
-    permalink: /blog/category/:name/
-
+  projects:
+  
+  
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
   email:
   facebook:
   flickr:
-  github: 
+  github: red-box-labs
   instagram:
   linkedin:
   pinterest:
