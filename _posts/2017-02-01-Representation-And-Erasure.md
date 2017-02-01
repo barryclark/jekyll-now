@@ -16,7 +16,7 @@ Combine that with enough societally chosen success stories from role models who 
 
 One integral part of dismantling this system of exclusion and breaking this academic monopoly is equitable representation in academia. 
 Many universities around the world have recognized (finally) the huge importance of equitable representation in the natural sciences.
-However, even if many universities try to paint their investment in representation as **charity** to systematically excluded groups, this is categorically untrue.
+However, even if many universities try to paint their investment in representation as **charity** to systematically excluded groups this is categorically untrue.
 
 Any scientific researcher will tell you the most important ingredient for innovative research is creative thinking, which in turn is fostered by diverse research groups.
 Furthermore, it is clear that being able to see oneself succeeding as a scientist is a deciding factor in a student's ultimate success and that this can be boosted by success stories from relatable role models.
