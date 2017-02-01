@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2343,204440344,2017-02-01 09:53:17,2017-01-31 22:16:52,Donazione Roulotte,,,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Form""]",,,"{""cosa"": ""Roulotte"", ""data"": ""31/01/2017"", ""descrizione"": ""Regalo roulotte con letto matrimoniale e uno da una piazza e mezza con stufa funzionante, trainabile, purch\u00e9 veniate a prenderla. Si trova a Marina di Grosseto. Emanuela"", ""email"": ""em.lucato@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3488062840""}","<pre><yamldata>tel: '3488062840'
+email: em.lucato@gmail.com
+cosa: Roulotte
+descrizione: 'Regalo roulotte con letto matrimoniale e uno da una piazza e mezza con stufa funzionante, trainabile, purché veniate a prenderla. Si trova a Marina di Grosseto. Emanuela'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 31/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2341,204301799,2017-01-31 16:06:41,2017-01-31 13:50:19,Offresi indumenti invernali e da montagna,45.4653931,8.8838429,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""Indumenti invernali"", ""data"": ""31/01/2017"", ""descrizione"": ""Offro vestiti, giacconi, cappelli, stivali doposci sia da uomo che da donna. Diverse taglie disponibili. Fatemi sapere dove posso portarle/spedirle."", ""email"": ""paoli88_36@hotmail.com"", ""immagine"": """", ""indirizzo"": ""Piazza della Liberazione, Magenta, Milano, Lombardia, 20013, Italia"", ""lat"": ""45.4653931"", ""link"": """", ""lon"": ""8.8838429"", ""tel"": """"}","<pre><yamldata>tel: ''
 email: paoli88_36@hotmail.com
 cosa: 'Indumenti invernali'
@@ -1045,6 +1056,17 @@ link: 'https://twitter.com/libra2puntozero/status/823148224315883520'
 immagine: ''
 data: 22/01/2017
 </yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2194,202387969,2017-01-23 21:57:32,2017-01-22 15:00:46,"**URGENTE** Ad #ATRI serve aiuto: case sepolte dalla neve, mancano acqua e corrente da 4 giorni",42.5801368,13.9764121,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Sisma Gennaio 2017"", ""Twitter""]",,http://i.imgur.com/AaonwA6.jpg,"{""cosa"": ""**URGENTE** Ad #Atri serve aiuto: case sepolte dalla neve, mancano acqua e corrente da 4 giorni"", ""data"": ""22/01/2017"", ""descrizione"": ""Atri, in provincia di Teramo, \u00e8 sepolta dalla neve e da 4 giorni mancano acqua e corrente elttrica. Ci sono stati crolli e alcuni abitanti si sono rifugiati presso l'hotel Hermitge perch\u00e9 hanno le case inagibili. Ci sono dei generatori ma non bastano per dare corrente a tutti e il freddo \u00e8 grande. Servono con urgenza acqua, uomini e mezzi per liberare strade, tetti e case dalla neve, sale a sacchi da spargere, e sopralluoghi VF. Qui per ora non si \u00e8 visto nessuno se non qualche vigile del fuoco per poco tempo. Stiamo facendo tutto da soli ma non ce la facciamo! Serve subito aiuto! Paolo Castagna"", ""email"": """", ""immagine"": ""http://i.imgur.com/AaonwA6.jpg"", ""indirizzo"": ""Piazza Duomo, Atri, TE, ABR, 64032, Italia"", ""lat"": ""42.5801368"", ""link"": """", ""lon"": ""13.9764121"", ""tel"": ""3358222882 Paolo Castagna""}","<pre><yamldata>tel: '3358222882 Paolo Castagna'
+email: ''
+cosa: '**URGENTE** Ad #Atri serve aiuto: case sepolte dalla neve, mancano acqua e corrente da 4 giorni'
+descrizione: 'Atri, in provincia di Teramo, è sepolta dalla neve e da 4 giorni mancano acqua e corrente elttrica. Ci sono stati crolli e alcuni abitanti si sono rifugiati presso l''hotel Hermitge perché hanno le case inagibili. Ci sono dei generatori ma non bastano per dare corrente a tutti e il freddo è grande. Servono con urgenza acqua, uomini e mezzi per liberare strade, tetti e case dalla neve, sale a sacchi da spargere, e sopralluoghi VF. Qui per ora non si è visto nessuno se non qualche vigile del fuoco per poco tempo. Stiamo facendo tutto da soli ma non ce la facciamo! Serve subito aiuto! Paolo Castagna'
+indirizzo: 'Piazza Duomo, Atri, TE, ABR, 64032, Italia'
+lat: '42.5801368'
+lon: '13.9764121'
+link: ''
+immagine: 'http://i.imgur.com/AaonwA6.jpg'
+data: 22/01/2017
+</yamldata></pre>",closed
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2194,202387969,2017-01-23 21:57:32,2017-01-22 15:00:46,"**URGENTE** Ad #ATRI serve aiuto: case sepolte dalla neve, mancano acqua e corrente da 4 giorni",42.5801368,13.9764121,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Sisma Gennaio 2017"", ""Twitter""]",,http://i.imgur.com/AaonwA6.jpg,"{""cosa"": ""**URGENTE** Ad #Atri serve aiuto: case sepolte dalla neve, mancano acqua e corrente da 4 giorni"", ""data"": ""22/01/2017"", ""descrizione"": ""Atri, in provincia di Teramo, \u00e8 sepolta dalla neve e da 4 giorni mancano acqua e corrente elttrica. Ci sono stati crolli e alcuni abitanti si sono rifugiati presso l'hotel Hermitge perch\u00e9 hanno le case inagibili. Ci sono dei generatori ma non bastano per dare corrente a tutti e il freddo \u00e8 grande. Servono con urgenza acqua, uomini e mezzi per liberare strade, tetti e case dalla neve, sale a sacchi da spargere, e sopralluoghi VF. Qui per ora non si \u00e8 visto nessuno se non qualche vigile del fuoco per poco tempo. Stiamo facendo tutto da soli ma non ce la facciamo! Serve subito aiuto! Paolo Castagna"", ""email"": """", ""immagine"": ""http://i.imgur.com/AaonwA6.jpg"", ""indirizzo"": ""Piazza Duomo, Atri, TE, ABR, 64032, Italia"", ""lat"": ""42.5801368"", ""link"": """", ""lon"": ""13.9764121"", ""tel"": ""3358222882 Paolo Castagna""}","<pre><yamldata>tel: '3358222882 Paolo Castagna'
 email: ''
 cosa: '**URGENTE** Ad #Atri serve aiuto: case sepolte dalla neve, mancano acqua e corrente da 4 giorni'
