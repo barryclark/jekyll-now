@@ -15,4 +15,4 @@ I'm sure this needs a bit more testing and tweaking, but I wanted to share the c
 
 If I make any updates to the card I'll be sure to update it here, so keep this post bookmarked if you're going to use it!
 
-![Jungle Dragon - Arena of the Planeswalkers Card](/images/safaritoys/jungledragoncard.jpg){: .center}
+![Jungle Dragon - Arena of the Planeswalkers Card](/images/safaritoys/jungledragoncard.jpg){: .center}![Jungle Dragon - Arena of the Planeswalkers Card](/images/safaritoys/jungledragoncard2.jpg){: .center}
