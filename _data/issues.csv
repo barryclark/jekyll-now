@@ -1,4 +1,14 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2358,204834999,2017-02-02 11:13:22,2017-02-02 10:31:21,Regione #Marche: modulistica per la richiesta indennità,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""02/02/2017"", ""descrizione"": ""La Regione Marche ha pubblicato la modulistica per la richiesta dell\u2019indennit\u00e0 per i \u201clavoratori dipendenti del settore privato compreso quello agricolo\u201d e per i \u201clavoratori autonomi, i titolari di attivit\u00e0 d\u2019impresa e professionali, co.co.pro., titolari di rapporti di agenzia e di rappresentanza commerciale\u201d in base alla legge di conversione dei decreti sul terremoto 2016 (L. n.229/2016)."", ""link"": ""https://picchionews.it/economia/sospensione-attivita-i-servizi-cna-per-la-richiesta-di-contributi"", ""titolo"": ""Sospensione attivit\u00e0: i servizi CNA per la richiesta di contributi""}","<pre><yamldata>titolo: 'Sospensione attività: i servizi CNA per la richiesta di contributi'
+descrizione: 'La Regione Marche ha pubblicato la modulistica per la richiesta dell’indennità per i “lavoratori dipendenti del settore privato compreso quello agricolo” e per i “lavoratori autonomi, i titolari di attività d’impresa e professionali, co.co.pro., titolari di rapporti di agenzia e di rappresentanza commerciale” in base alla legge di conversione dei decreti sul terremoto 2016 (L. n.229/2016).'
+link: 'https://picchionews.it/economia/sospensione-attivita-i-servizi-cna-per-la-richiesta-di-contributi'
+data: 02/02/2017
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2357,204834128,2017-02-02 11:11:21,2017-02-02 10:27:21,"Progetto ""Tutti sotto coperta"": progetto di ospitalità per bambini e famiglie",,,"[""Accettato"", ""Bollettino"", ""Facebook"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""02/02/2017"", ""descrizione"": ""Nasce il progetto nazionale di ospitalit\u00e0 \u201cTutti sotto coperta!\u201d. Promosso da una rete di oltre 500 Comuni, l\u2019iniziativa crea un ponte tra bambini e famiglie colpiti dal terremoto e comunit\u00e0 di accoglienza."", ""link"": ""http://comunivirtuosi.org/iniziative/emergenza-terremoto/"", ""titolo"": ""EMERGENZA TERREMOTO \u2013 Tutti sotto coperta""}","<pre><yamldata>titolo: 'EMERGENZA TERREMOTO – Tutti sotto coperta'
+descrizione: 'Nasce il progetto nazionale di ospitalità “Tutti sotto coperta!”. Promosso da una rete di oltre 500 Comuni, l’iniziativa crea un ponte tra bambini e famiglie colpiti dal terremoto e comunità di accoglienza.'
+link: 'http://comunivirtuosi.org/iniziative/emergenza-terremoto/'
+data: 02/02/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2356,204825717,2017-02-02 09:52:00,2017-02-02 09:50:03,#Norcia: dalla Protezione Civile la lista di ciò che serve,,,"[""Accettato"", ""Bollettino"", ""Facebook"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""02/02/2017"", ""descrizione"": ""La Protezione civile di Norcia ha diffuso un comunicato con il quale spiega cosa manca in questo momento per le scorte. Di seguito, l\u2019elenco completo degli alimenti e degli altri che necessitano."", ""link"": ""http://www.lanotiziaquotidiana.it/umbria/2017/02/01/sisma-norcia-dalla-protezione-civile-la-lista-di-cio-che-serve/"", ""titolo"": ""Sisma, Norcia: dalla Protezione Civile la lista di ci\u00f2 che serve""}","<pre><yamldata>titolo: 'Sisma, Norcia: dalla Protezione Civile la lista di ciò che serve'
 descrizione: 'La Protezione civile di Norcia ha diffuso un comunicato con il quale spiega cosa manca in questo momento per le scorte. Di seguito, l’elenco completo degli alimenti e degli altri che necessitano.'
 link: 'http://www.lanotiziaquotidiana.it/umbria/2017/02/01/sisma-norcia-dalla-protezione-civile-la-lista-di-cio-che-serve/'
@@ -1316,17 +1326,6 @@ link: ''
 immagine: ''
 data: 21/01/2017
 </yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2175,202335676,2017-01-27 20:24:52,2017-01-21 19:43:19,A #Visso allevatore ha bisogno di mangime (fioccato e gran turco) ,42.9400077,13.0819231178949,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""Mangime per allevatore a Visso"", ""data"": ""21/01/2017"", ""descrizione"": ""A Visso, Villa Sant'Antonio, all'allevatore Marco Sebastiani servono con urgenza fioccato e gran turco per gli animali. Al link articolo con la sua storia."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Strada Provinciale 209 Valnerina, Visso, MC, Marche, 62039, Italy"", ""lat"": ""42.9400077"", ""link"": ""http://www.ilrestodelcarlino.it/macerata/cronaca/terremoto-oggi-allevatore-miracolato-1.2831489"", ""lon"": ""13.0819231178949"", ""tel"": ""3662535053 Marco Sebastiani""}","<pre><yamldata>tel: '3662535053 Marco Sebastiani'
-email: ''
-cosa: 'Mangime per allevatore a Visso'
-descrizione: 'A Visso, Villa Sant''Antonio, all''allevatore Marco Sebastiani servono con urgenza fioccato e gran turco per gli animali. Al link articolo con la sua storia.'
-indirizzo: 'Strada Provinciale 209 Valnerina, Visso, MC, Marche, 62039, Italy'
-lat: '42.9400077'
-lon: '13.0819231178949'
-link: 'http://www.ilrestodelcarlino.it/macerata/cronaca/terremoto-oggi-allevatore-miracolato-1.2831489'
-immagine: ''
-data: 21/01/2017
-</yamldata></pre>",closed
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2175,202335676,2017-01-27 20:24:52,2017-01-21 19:43:19,A #Visso allevatore ha bisogno di mangime (fioccato e gran turco) ,42.9400077,13.0819231178949,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""Mangime per allevatore a Visso"", ""data"": ""21/01/2017"", ""descrizione"": ""A Visso, Villa Sant'Antonio, all'allevatore Marco Sebastiani servono con urgenza fioccato e gran turco per gli animali. Al link articolo con la sua storia."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Strada Provinciale 209 Valnerina, Visso, MC, Marche, 62039, Italy"", ""lat"": ""42.9400077"", ""link"": ""http://www.ilrestodelcarlino.it/macerata/cronaca/terremoto-oggi-allevatore-miracolato-1.2831489"", ""lon"": ""13.0819231178949"", ""tel"": ""3662535053 Marco Sebastiani""}","<pre><yamldata>tel: '3662535053 Marco Sebastiani'
 email: ''
 cosa: 'Mangime per allevatore a Visso'
