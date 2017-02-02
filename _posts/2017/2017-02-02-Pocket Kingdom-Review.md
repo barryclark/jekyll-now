@@ -1,10 +1,9 @@
 ---
 layout: post
 title: "Review - Pocket Kingdom"
-description: "Born from an online game, Shift DX brings all the excitement of the originals plus more."
+description: "Pocket Kingdom is a steampunk puzzle platformer that recalls the days of the Amiga. It's a damn fine game."
 category: review
 featured: pocketkingdom.jpg
-amazonterm: "3ds"
 tags: [review, video games, shift dx, choice publishing]
 author: Rob Kalajian
 ---
