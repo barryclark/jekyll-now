@@ -12,7 +12,7 @@
         </div>
 
         <nav>
-          {% for navlink in site.navlinks %}<a href="{{ navlink.url }}">{{ navlink.text }}</a>{% if forloop.last %}{% else %}|{% endif %}{% endfor %}
+          {% for navlink in site.navlinks %}<a href="{{ navlink.url }}">{{ navlink.text }}</a>{% unless forloop.last %}|{% endunless %}{% endfor %}
         </nav>
       </div>
       <div>
