@@ -125,3 +125,5 @@ When you want to merge a branch back into it's master:
 git pull origin <master>
 git merge <branch>
 git push origin <master>`
+
+If you want, you can delete the branch you just merged: `git branch -d <mergedbranch>`
