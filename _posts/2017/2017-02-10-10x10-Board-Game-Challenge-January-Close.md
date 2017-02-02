@@ -22,6 +22,8 @@ January is over. It's now time to check how well I'm doing in my [10x10 Board Ga
 \\
 \\
 \\
+\\
+\\
 ![Tak](/images/10x10/2017-tak.jpg){: .float-left}**[Tak](http://cheapass.com/tak/)**
 
 **3 Plays**
