@@ -52,7 +52,9 @@ So let's get started!
 ## Almost Forgot!
 
 Even though I have a bunch of screen-shots throughout the post the demo of the
-application can be found here: url
+application can be found here: 
+
+[**Deployed Demo Application**](http://web-shop-demo.azurewebsites.net)
 
 *Also remember that you can open the images in a new tab which will show the
 full size image. Quite useful for the larger images like the graphs at the
