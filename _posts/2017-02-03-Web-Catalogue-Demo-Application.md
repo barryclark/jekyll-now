@@ -6,7 +6,7 @@ author: emir_osmanoski
 comments: true
 ---
 
-![WebCatalog]({{ site.baseurl }}/images/2017-02-02-So-I-Built-A-Thing/00_header.png)
+![WebCatalog]({{ site.baseurl }}/images/2017-02-03-So-I-Built-A-Thing/00_header.png)
 
 First of all, first post of 2017! May there be many more! At least one more
 than in 2016!
@@ -61,7 +61,7 @@ full size image. Quite useful for the larger images like the graphs at the
 bottom*
 
 To access the administration views and actions you can log in with the good
-old U:'admin', P:'admin' credentials.
+old U:'admin', P:'adminA' credentials.
 
 Please note that for demo purposes some of the administrator features have
 been disabled!
@@ -306,7 +306,7 @@ projects because I can  experiment and try different things.
 
 And 2 years ago this is what I came up with:
 
-![Solution]({{ site.baseurl }}/images/2017-02-02-So-I-Built-A-Thing/Solution.png)
+![Solution]({{ site.baseurl }}/images/2017-02-03-So-I-Built-A-Thing/Solution.png)
 
 #### Core 
 Contains contracts (mainly POCOs) and toolbox utilities that are
@@ -550,7 +550,7 @@ of "M".
 > mind I introduces a bunch of keyboard shortcuts, like for example hitting
 > escape to clear the current filters results.
 
-![ProductSearch]({{ site.baseurl }}/images/2017-02-02-So-I-Built-A-Thing/Product_Search.png)
+![ProductSearch]({{ site.baseurl }}/images/2017-02-03-So-I-Built-A-Thing/Product_Search.png)
 
 ## Product Details
 
@@ -575,7 +575,7 @@ The bottom of the screen also contains the similar products which are
 generated on the back-end using a simple algorithm that seeks through the
 category hierarchy to find at least 3 similar products.
 
-![ProductDetails]({{ site.baseurl }}/images/2017-02-02-So-I-Built-A-Thing/details.png)
+![ProductDetails]({{ site.baseurl }}/images/2017-02-03-So-I-Built-A-Thing/details.png)
 
 ## Product Compare
 
@@ -586,7 +586,7 @@ At that point a right hand side menu will appear to show which products have
 been selected for comparison. Users can  remove and add different products but
 can currently only compare 2 products at a time.
 
-![ProductCompareWindow]({{ site.baseurl }}/images/2017-02-02-So-I-Built-A-Thing/compare_01.png)
+![ProductCompareWindow]({{ site.baseurl }}/images/2017-02-03-So-I-Built-A-Thing/compare_01.png)
 
 Clicking on Compare takes the user to the Compare screen where the two
 selected products are displayed side by side.
@@ -600,7 +600,7 @@ compared Where in most cases described using text only.
 So using the tag system and a little bit of code to find the common tags
 between two products the compare screen tends to solve that problem:
 
-![ProductCompareView]({{ site.baseurl }}/images/2017-02-02-So-I-Built-A-Thing/compare_02.png)
+![ProductCompareView]({{ site.baseurl }}/images/2017-02-03-So-I-Built-A-Thing/compare_02.png)
 
 ## Administration
 
@@ -620,7 +620,7 @@ it is immediately propagated to the back end.
 The main workhorse of this screen is a modal dialog for simple text property
 editing which is all the manufacturer entity requires:
 
-![ManufacturerManagement]({{ site.baseurl }}/images/2017-02-02-So-I-Built-A-Thing/admin_manu.png)
+![ManufacturerManagement]({{ site.baseurl }}/images/2017-02-03-So-I-Built-A-Thing/admin_manu.png)
 
 ### Category Management
 
@@ -641,7 +641,7 @@ browser/tab and be able to edit the same category there as well.
 This was the cause of a massive re-write of the routing and authentication
 part of the code which at the end was absolutely worth it:
 
-![CategoryManagement]({{ site.baseurl }}/images/2017-02-02-So-I-Built-A-Thing/admin_cat.png)
+![CategoryManagement]({{ site.baseurl }}/images/2017-02-03-So-I-Built-A-Thing/admin_cat.png)
 
 ### Tag Type Management
 
@@ -660,7 +660,7 @@ attached to the current specific category.
 > can access through in a different tab/browser via the URL. Goes to show
 > that there are quite specific little missed parts in the front-end
 
-![TagTypeManagement]({{ site.baseurl }}/images/2017-02-02-So-I-Built-A-Thing/admin_tags.png)
+![TagTypeManagement]({{ site.baseurl }}/images/2017-02-03-So-I-Built-A-Thing/admin_tags.png)
 
 ### Product Management
 
@@ -675,7 +675,7 @@ presented with a grid of products in the system. The grid can be used to
 select products for editing as well as being one of the main tools for
 deactivating and activating the products:
 
-![ProductAdminList]({{ site.baseurl }}/images/2017-02-02-So-I-Built-A-Thing/admin_prod_grid.png)
+![ProductAdminList]({{ site.baseurl }}/images/2017-02-03-So-I-Built-A-Thing/admin_prod_grid.png)
 
 --- Learning Point: The Product Management Grid Screen is one of the more
 --- unfinished views in the application in my opinion. I am still struggling
@@ -699,7 +699,7 @@ defined by its category hierarchy.
 Administrators can also add product images and set a primary image which is
 displayed when the product is returned in the general search results.
 
-![ProductAdminDetails]({{ site.baseurl }}/images/2017-02-02-So-I-Built-A-Thing/admin_prod_det.png)
+![ProductAdminDetails]({{ site.baseurl }}/images/2017-02-03-So-I-Built-A-Thing/admin_prod_det.png)
 
 One interesting feature here which deepened my knowledge of angular
 services/factories/controllers is the undo changes feature. Administrators can
@@ -793,11 +793,11 @@ Plugin in Bitbucket!
 
 First a look at the frequency of commits:
 
-![CommitFrequency]({{ site.baseurl }}/images/2017-02-02-So-I-Built-A-Thing/Contributions.png)
+![CommitFrequency]({{ site.baseurl }}/images/2017-02-03-So-I-Built-A-Thing/Contributions.png)
 
 And then a quick glance at a punch card which shows which days I've been most active:
 
-![Punch]({{ site.baseurl }}/images/2017-02-02-So-I-Built-A-Thing/punch.png)
+![Punch]({{ site.baseurl }}/images/2017-02-03-So-I-Built-A-Thing/punch.png)
 
 -- As it's not quite visible from the Graphs, I will just mention that I've
 -- made a total of 237 commits!
