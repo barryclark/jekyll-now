@@ -35,6 +35,9 @@ I've actually played Tak a few more times than this, but I've only played 3 time
 \\
 \\
 \\
+\\
+\\
+\\
 ![X-Wing](/images/10x10/2017-x-wing.jpg){: .float-left}**[X-Wing](https://www.fantasyflightgames.com/en/products/x-wing/)**
 
 **1 Play**
