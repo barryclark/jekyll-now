@@ -37,4 +37,10 @@ I've actually played Tak a few more times than this, but I've only played 3 time
 
 **1 Play**
 
-I finally got this one to the table with my 9-year-old daughter. We had a blast and are already adding new ships to our wishlist. I was surprised at how easy this one was to learn and how fast we were able to play with only 3 ships.
+I finally got this one to the table with my 9-year-old daughter. We had a blast and are already adding new ships to our wishlist. I was surprised at how easy this one was to learn and how fast we were able to play with only 3 ships.\\
+\\
+\\
+\\
+\\
+\\
+I'm hoping that this month I can get some more plays in. It's going to be tough, as most of our weekends are booked pretty solid with overnights and Toy Fair.
