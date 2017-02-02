@@ -28,4 +28,4 @@ We hope this brings some joy and of course convenience on your journey to cloud.
 
    [Zookeeper]: <http://zookeeper.apache.org/>
    [Patroni]: <https://github.com/zalando/patroni>
-   [here]: <https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Ftangibletransfer.blob.core.windows.net%2Fpublic%2Fpostgresha%2FPostgresHA.json>
+   [here]: <https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Ftangibletransfer.blob.core.windows.net%2Fpublic%2Fpostgresha%2FpostgresHAstandalone.json>
