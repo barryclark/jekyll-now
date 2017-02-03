@@ -1,5 +1,6 @@
 <div id="electricCostOverUserChart" style="width: 90%; height: 300px;"></div>
 <script type="text/javascript">
+$( document ).ready(function() {
     c3.generate({
         bindto: '#electricCostOverUserChart',
         data: {
@@ -39,4 +40,5 @@
             }
         }
     });
+});
 </script>
