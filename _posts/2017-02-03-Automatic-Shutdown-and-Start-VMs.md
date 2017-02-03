@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Schedule the auto shutdown and start of your VMs using Azure Automation and Runbooks
-subtitle: Cut down on the cost of your DEV environment
+subtitle: Cut down on the cost of your DEV environments
 category: howto
 tags: [cloud, automation]
 author: esmaeil_sarabadani
@@ -40,6 +40,9 @@ I assume you are already familiar with Azure, so I will not go into every single
 
 
 ### Link the subscription service admin/owner to the imported automation Runbook
-The action to shut down or start virtual machines needs to happen under a user account defined on Azure Active Directory. This user account needs to be both an Azure Subscription Owner on the new portal AND a Service Administrator/Co-Administrator on the classic portal. (Please pay attention to the AND)...
+The action to shut down or start virtual machines needs to happen under a user account defined on Azure Active Directory. This user account needs to be both an Azure Subscription Owner on the new portal AND a Service Administrator/Co-Administrator on the classic portal. (Please pay attention to the AND)... Once you make sure about it:
 
-
+ - Open your Automation Account blade and click the **Assets** tile and then in the new blade click the **Credentials** tile.  
+ - Click **Add a Credential** and then enter the value **Default Automation Credential** for the **Name** and enter the above-mentioned username and password and click **Create**. Please take note the User name field is case-sensitive (I know it is crazy, you don't need to tell me)... 
+ - Going back to the **Assets** tiles now click the **Variables** tile and click **Add a variable** and then enter the value **Default Azure Subscription** for the **Name**, select the **String** type and then enter the subscription name you are targetting in the **Value** field and click **Create**. 
+ - 
