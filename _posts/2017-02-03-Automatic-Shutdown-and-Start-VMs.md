@@ -69,7 +69,7 @@ The action to shut down or start virtual machines needs to happen under a user a
  - Click **Add a Schedule** and enter the required values. For the **Parameters and run settings** just leave all the fields empty. If you are implementing the solution for multiple subscriptions, enter the subscription name in the **AZURESUBSCRIPTIONNAME** field and make sure you create one schedule per subscription. 
 
 ### Tag Virtual Machines or the Resource Groups which contain them
-Now that we defined a schedule for the runbook to run, how does the runbook know which virtual machines in the specified subscription are development machines to shut down or start? based on what time frame? That is when the tagging come in to play.
+Now that we defined a schedule for the runbook to run, how does the runbook know which virtual machines in the specified subscription to shut down or start? based on what time frame? That is when the tagging come in to play.
 
 You can either tag the virtual machines or the resource groups which contain those virtual machines. Once the runbook finds a tag with the name **AutoShutdownSchedule**, it looks into the tag value and based on its finding it either shuts down/starts the machine or takes no action. Here is a table which explains the tagging structure: 
 
