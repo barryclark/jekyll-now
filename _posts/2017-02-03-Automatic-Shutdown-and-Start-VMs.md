@@ -34,7 +34,7 @@ I assume you are already familiar with Azure, so I will not go into every single
  - Create a new **Resource Group** and inside your Resource Group click **Add** and search for the word Automation.
 
 
-{:.center}![Automation](/images/Automation.PNG){:style="margin:auto"}
+![Automation](/images/Automation.PNG)
  
  - Click on **Automation** and fill in the form to create a new Automation Account. Make sure you check the box **Create Azure Run As account**. The Automation Account does not have to be in the same Resource Group as your virtual machines. 
  
@@ -44,9 +44,9 @@ I assume you are already familiar with Azure, so I will not go into every single
 
 ![Import](/images/Import.PNG)
  
- - Download this PowerShell script from here and in the new blade select it as the *Runbook File* and then click *Create*.
+ - Download this PowerShell [script] from here and in the new blade select it as the *Runbook File* and then click *Create*.
  
-> Please take note this PowerShell script was mainly developed by Noah Stahl (see his website here) and slightly modified and used for our scenario here. 
+> Please take note this PowerShell script was mainly developed by Noah Stahl (see his website [here]) and slightly modified and used for our scenario here. 
 
 
 ### Link the subscription service admin/owner to the imported automation Runbook
@@ -99,3 +99,6 @@ How do they wake up? The runbook will start your virtual machines on the next sc
 
 Have fun and in case you had questions just leave a comment... 
 Happy saving cost!
+
+   [here]: <https://automys.com/>
+   [script]: </resources/Assert-AutoShutdownSchedule.ps1>
