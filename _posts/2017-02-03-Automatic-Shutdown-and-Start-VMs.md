@@ -92,7 +92,7 @@ Shut down always – I don’t want this VM online, ever |	0:00 -> 23:59:59
 
 Simply open your Resource Group/Virtual Machine and on the left-side menu click **Tags** and start tagging as shown below:
 
-![Tag](/images/tag.PNG)
+![Tag](Haufe-Lexware.github.io/images/Tag.PNG)
 
 ### Wait for the magic to happen...
 
