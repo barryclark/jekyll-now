@@ -17,8 +17,8 @@ You can implement this solution either individually per subscription or have it 
 
  - Create an automation account on Azure and import a Runbook which performs the VM shutdown/start job
  - Link the subscription service admin/owner to the imported automation Runbook
- - Define hourly schedules for the runbook to check the target subscriptions
- - Tag the Virtual Machines (or the Resource Groups which includes them) which you want to shut down or start
+ - Define schedules for the runbook to check the target subscriptions
+ - Tag Virtual Machines (or the Resource Groups which includes them) which you want to shut down or start
  - Wait for the magic to happen
  
  
@@ -46,8 +46,14 @@ The action to shut down or start virtual machines needs to happen under a user a
  - Click **Add a Credential** and then enter the value **Default Automation Credential** for the **Name** and enter the above-mentioned username and password and click **Create**. Please take note the User name field is case-sensitive (I know it is crazy, you don't need to tell me)... 
  - Going back to the **Assets** tiles now click the **Variables** tile and click **Add a variable** and then enter the value **Default Azure Subscription** for the **Name**, select the **String** type and then enter the subscription name you are targetting in the **Value** field and click **Create**. 
  
-> Take note here you are only implementing this solution for one subscription in this case. If you want to target multiple subscriptions, do not perform the previous step and go to the next sections. 
+> Take note here you are only implementing this solution for one subscription in this case. If you want to target multiple subscriptions, do not perform the previous step and go to the next section of the blog (Defining Schedules). 
 
 
-### Define hourly schedules for the runbook to check the target subscriptions
-Now in this step Open the created Runbook and click the **Schedules** tile. 
+### Define schedules for the runbook to check the target subscriptions
+ - Now in this step Open the created Runbook and click the **Schedules** tile. In here you will define how often the runbook is checked against the target virtual machines and if you have multiple subscriptions, you will need to define one schedule per subscription.
+ - Click **Add a Schedule** and enter the required values. For the **Parameters and run settings** just leave all the fields empty. If you are implementing the solution for multiple subscriptions, enter the subscription name in the **AZURESUBSCRIPTIONNAME** field and make sure you create one schedule per subscription. 
+
+### Tag Virtual Machines or the Resource Groups which contain them
+Now that we defined a schedule for the runbook to run, how does the runbook know which virtual machines in the specified subscription are development machines to shut down or start? based on what time frame? That is when the tagging come in to play.
+
+
