@@ -5,28 +5,13 @@ $( document ).ready(function() {
         bindto: '#electricUseChart',
         data: {
             x: 'month',
-            rows: [
-                ['month', 'usage'],
-		['Feb 2017', '137'],
-		['Jan', '215'],
-		['Dec', '182'],
-		['Nov', '170'],
-		['Oct', '200'],
-		['Sep', '164'],
-		['Aug', '147'],
-		['Jul', '170'],
-		['Jun', '164'],
-		['May', '202'],
-		['Apr', '196'],
-		['Mar', '243'],
-		['Feb', '249'],
-		['Jan', '217'],
-		['Dec', '188']
-            ],
+	    columns: [['usage', 137, 215, 182, 170, 200, 164, 147, 170, 164, 202, 196, 243, 249, 217, 188]],
             type: 'spline'
         },
         axis: {
             x: {
+		type: 'category',
+            	categories: ['Feb', 'Jan', 'Dec', 'Nov', 'Oct', 'Sep', 'Aug', 'Jul', 'Jun', 'May', 'Apr', 'Mar', 'Feb', 'Jan', 'Dec'],
                 label: {
                     text: 'month',
                     position: 'outer-center'
