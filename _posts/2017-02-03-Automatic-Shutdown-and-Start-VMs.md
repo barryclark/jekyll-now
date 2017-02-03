@@ -33,7 +33,7 @@ I assume you are already familiar with Azure, so I will not go into every single
 
  - Create a new **Resource Group** and inside your Resource Group click **Add** and search for the word Automation.
  
-![Automation](/images/Automation.png)
+![Automation](/images/Automation.PNG)
  
  - Click on **Automation** and fill in the form to create a new Automation Account. Make sure you check the box **Create Azure Run As account**. The Automation Account does not have to be in the same Resource Group as your virtual machines. 
  - One you are done with creating the Automation Account, open it and go into the **Runbooks** section and click **Add a runbook** and then in the new blade click **Import and existing runbook**.
