@@ -54,7 +54,7 @@ So let's get started!
 Even though I have a bunch of screen-shots throughout the post the demo of the
 application can be found here: 
 
-<a href="http://web-shop-demo.azurewebsites.net"><b>Deployed Demo Application</b></a>
+<a href="http://web-shop-demo.azurewebsites.net" target="_blank"><b>Deployed Demo Application</b></a>
 
 *Also remember that you can open the images in a new tab which will show the
 full size image. Quite useful for the larger images like the graphs at the
