@@ -21,4 +21,6 @@ You can implement this solution either individually per subscription or have it 
  - Tag the Virtual Machines (or the Resource Groups which includes them) which you want to shut down or start
  - Wait for the magic to happen
  
-> ***Note: If you are an Azure developer at Haufe, this solution is already implemented on your subscription and you just need to proceed > to the next section of the article to learn how you should tag your Virtual Machines or Resource Groups. Or if you still want to learn  > the solution, be my guest and read on...**
+> Note: If you are an Azure developer at Haufe, this solution is already implemented on your subscription and you just need to proceed 
+> to the next section of the article to learn how you should tag your Virtual Machines or Resource Groups. Or if you still want to learn 
+> the solution, be my guest and read on...
