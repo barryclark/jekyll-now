@@ -13,3 +13,7 @@ Are you a developer on Azure? Have a lot of virtual machines running on your Azu
 
 You can implement this solution either individually per subscription or have it on a single Azure subscription and deploy it to all the other subscriptions from there... If you are planning for a solid Azure governance model in your organization the later choice is a better one... 
 
+**What are we going to cover in this post?**
+
+ - Create an automation account on Azure and import a Runbook which performs the VM shutdown/start job
+ - 
