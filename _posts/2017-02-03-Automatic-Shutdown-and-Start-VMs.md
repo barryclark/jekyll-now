@@ -33,8 +33,8 @@ I assume you are already familiar with Azure, so I will not go into every single
 
  - Create a new **Resource Group** and inside your Resource Group click **Add** and search for the word Automation.
 
-{:.center}
-![Automation](/images/Automation.PNG){:style="margin:auto"}
+
+{:.center}![Automation](/images/Automation.PNG){:style="margin:auto"}
  
  - Click on **Automation** and fill in the form to create a new Automation Account. Make sure you check the box **Create Azure Run As account**. The Automation Account does not have to be in the same Resource Group as your virtual machines. 
  
