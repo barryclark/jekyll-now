@@ -34,4 +34,6 @@ I assume you are already familiar with Azure, so I will not go into every single
  - Create a new **Resource Group** and inside your Resource Group click **Add** and search for the word Automation.
  - Click on **Automation** and fill in the form to create a new Automation Account. Make sure you check the box **Create Azure Run As account**. The Automation Account does not have to be in the same Resource Group as your virtual machines. 
  - One you are done with creating the Automation Account, open it and go into the **Runbooks** section and click **Add a runbook** and then in the new blade click **Import and existing runbook**.
- - 
+ - Download this PowerShell script from here and in the new blade select it as the *Runbook File* and then click *Create*.
+ 
+> Please take note this PowerShell was mainly developed by Noah Stahl (see his website here) and slightly modified and used for our scenario here. 
