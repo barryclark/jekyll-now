@@ -4,7 +4,7 @@ title: "Unboxing Villages of Valeria"
 description: "Daily Magic's game, Villages of Valeria, players competing to build successful villages. Let's see what's inside!"
 category: unboxing
 featured: villagesofvaleria.jpg
-amazonterm: santorini
+amazonterm: "villages of valeria"
 tags: [unboxing, games, villages of valeria, daily magic games]
 author: Rob Kalajian
 ---
