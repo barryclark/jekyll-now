@@ -43,7 +43,7 @@ I assume you are already familiar with Azure, so I will not go into every single
 
 ![Import](/images/Import.PNG)
  
- - Download this PowerShell [script] from here and in the new blade select it as the *Runbook File* and then click *Create*.
+ - Download this PowerShell [script] from here and in the new blade select it as the **Runbook File** and then click **Create**.
  
 > Please take note this PowerShell script was mainly developed by Noah Stahl (see his website [here]) and slightly modified and used for our scenario here. 
 
