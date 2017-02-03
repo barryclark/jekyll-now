@@ -46,7 +46,7 @@ The action to shut down or start virtual machines needs to happen under a user a
  - Click **Add a Credential** and then enter the value **Default Automation Credential** for the **Name** and enter the above-mentioned username and password and click **Create**. Please take note the User name field is case-sensitive (I know it is crazy, you don't need to tell me)... 
  - Going back to the **Assets** tiles now click the **Variables** tile and click **Add a variable** and then enter the value **Default Azure Subscription** for the **Name**, select the **String** type and then enter the subscription name you are targetting in the **Value** field and click **Create**. 
  
-> Take note here you are only implementing this solution for one subscription in this case. If you want to target multiple  > subscriptions, do not perform the previous step and go to the next sections. 
+> Take note here you are only implementing this solution for one subscription in this case. If you want to target multiple >subscriptions, do not perform the previous step and go to the next sections. 
 
 
 ### Define hourly schedules for the runbook to check the target subscriptions
