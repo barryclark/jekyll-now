@@ -56,7 +56,7 @@ The action to shut down or start virtual machines needs to happen under a user a
 ### Tag Virtual Machines or the Resource Groups which contain them
 Now that we defined a schedule for the runbook to run, how does the runbook know which virtual machines in the specified subscription are development machines to shut down or start? based on what time frame? That is when the tagging come in to play.
 
-You can either tag the virtual machines or the resource groups which contain those virtual machines. Once the runbook finds a tag with the name **AutoShutdownSchedule**, it looks into the tag value and based on its finding it either shuts down/starts the machine or takes no action. But here is a table which explains the tagging structure: 
+You can either tag the virtual machines or the resource groups which contain those virtual machines. Once the runbook finds a tag with the name **AutoShutdownSchedule**, it looks into the tag value and based on its finding it either shuts down/starts the machine or takes no action. Here is a table which explains the tagging structure: 
 
 Description     | Tag Value
 -------- | ----------- 
@@ -69,3 +69,17 @@ Shut down on Christmas Day and New Year’s Day | December 25, January 1
 Shut down from 2AM to 7AM UTC every day, and all day on weekends, and on Christmas Day | 2:00 -> 7:00, Saturday, Sunday, December 25
 Shut down always – I don’t want this VM online, ever |	0:00 -> 23:59:59
 
+> Please take note these times are based on GMT time zone.
+
+> Once again to emphasize, if you are an Azure developer in Haufe, all you need to do is just simply tag your Resource Groups/Virtual Machines and your machines will shut down and start accordingly.
+
+**But how do you tag a Virtual Machine or Resource Group?**
+Simply open your Resource Group/Virtual Machine and on the left-side menu click **Tags** and start tagging as shown below:
+
+### Wait for the magic to happen...
+Well, this is the easiest part... All you need to do is just wait...
+Once the defined schedule triggers the Runbook, your VMs are checked and if the GMT time matches the shutdown time of your VMs they will be simply shut down. 
+How do they wake up? The runbook will start your virtual machines on the next schedule if the GMT time falls out of the shutdown time frame in the VM tag. 
+
+Have fun and in case you had questions just leave a comment... 
+Happy saving cost!
