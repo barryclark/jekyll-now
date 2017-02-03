@@ -1,21 +1,21 @@
 ---
 layout: post
-title: "Unboxing Element"
-description: "Rather Dashing Games recently released Element, an abstract strategy game with some great mechanics. Let's see what's inside!"
+title: "Unboxing Villages of Valeria"
+description: "Daily Magic's game, Villages of Valeria, players competing to build successful villages. Let's see what's inside!"
 category: unboxing
-featured: element.jpg
+featured: villagesofvaleria.jpg
 amazonterm: santorini
-tags: [unboxing, games, element, rather dashing games]
+tags: [unboxing, games, villages of valeria, daily magic games]
 author: Rob Kalajian
 ---
 
-I just received my copy of Element from Rather Dashing Games over the weekend and I've been dying for a chance to sit down and take some pictures of it. While there's not much in the box, what is in there looks great. The sage's have a really nice feel, similar to the pawns in Onitama. The embroidered bag was much larger than I expected and also of a much higher quality than I thought it would be!
+I had only recently heard about Villages of Valeria and reached out to Daily Magic Games with an inquiry to review the game. A few days later the game showed up at my doorstep and now I can provide you fine folks with some pictures of what comes in the box. I'm hoping to get a chance to play the game this weekend and then get my review written up sometime next week. Until then, enjoy the pretty pictures!
 
-The entire package is excellent overall. I can't wait to really dig into this game and put it through its paces.
-
-![Element Box]({{ site.url }}/images/element/box.jpg)
-![Element Box Back]({{ site.url }}/images/element/back.jpg)
-![Element Rules]({{ site.url }}/images/element/rules.jpg)
-![Element Board]({{ site.url }}/images/element/board.jpg)
-![Element Sages]({{ site.url }}/images/element/sages.jpg)
-![Element Pieces]({{ site.url }}/images/element/pieces.jpg)
+![Villages of Valeria Box]({{ site.url }}/images/villagesofvaleria/box.jpg)
+![Villages of Valeria Box Back]({{ site.url }}/images/villagesofvaleria/back.jpg)
+![Villages of Valeria Rules]({{ site.url }}/images/villagesofvaleria/rules.jpg)
+![Villages of Valeria Tokens]({{ site.url }}/images/villagesofvaleria/tokens.jpg)
+![Villages of Valeria Decks]({{ site.url }}/images/villagesofvaleria/decks.jpg)
+![Villages of Valeria Cards]({{ site.url }}/images/villagesofvaleria/cards1.jpg)
+![Villages of Valeria Cards]({{ site.url }}/images/villagesofvaleria/cards2.jpg)
+![Villages of Valeria Cards]({{ site.url }}/images/villagesofvaleria/cards3.jpg)
