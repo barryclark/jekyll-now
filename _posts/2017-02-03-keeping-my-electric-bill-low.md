@@ -5,6 +5,7 @@ tags: [money]
 keywords: [electric, cost, average, DP&L, dayton power and light, chart, charts]
 javascripts: [/js/d3.min.js, /js/c3.min.js]
 csses: [/css/c3.css]
+image: /images/covers/2017-02-03-keeping-my-electric-bill-low.png
 ---
 
 [Last October I posted about my electric bill over the year](http://hendrixjoseph.github.io/my_electric_bill_over_the_past_year/). In order to save money, I switched my supplier from DP&L to AEP via [Ohio's Apples-to-Apples website](http://www.energychoice.ohio.gov/ApplesToApplesComparision.aspx?Category=Electric&TerritoryId=9&RateCode=1), lowering my costs from 7.3&cent; to 4.59&cent; per kilowatt.
