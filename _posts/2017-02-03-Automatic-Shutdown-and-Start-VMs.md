@@ -39,7 +39,7 @@ I assume you are already familiar with Azure, so I will not go into every single
  
 ![Automation2](/images/Automation2.PNG)
  
- - One you are done with creating the Automation Account, open it and go into the **Runbooks** section and click **Add a runbook** and then in the new blade click **Import and existing runbook**.
+ - One you are done with creating the Automation Account, open it and go into the **Runbooks** section and click **Add a runbook** and then in the new blade click **Import an existing runbook**.
 
 ![Import](/images/Import.PNG)
  
