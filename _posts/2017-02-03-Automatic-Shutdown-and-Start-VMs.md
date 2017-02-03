@@ -89,13 +89,18 @@ Shut down always – I don’t want this VM online, ever |	0:00 -> 23:59:59
 > Once again to emphasize, if you are an Azure developer in Haufe, all you need to do is just simply tag your Resource Groups/Virtual Machines and your machines will shut down and start accordingly.
 
 **But how do you tag a Virtual Machine or Resource Group?**
+
 Simply open your Resource Group/Virtual Machine and on the left-side menu click **Tags** and start tagging as shown below:
 
 ### Wait for the magic to happen...
+
 Well, this is the easiest part... All you need to do is just wait...
+
 Once the defined schedule triggers the Runbook, your VMs are checked and if the GMT time matches the shutdown time of your VMs they will be simply shut down. 
+
 How do they wake up? The runbook will start your virtual machines on the next schedule if the GMT time falls out of the shutdown time frame in the VM tag. 
-<center>Have fun and in case you had questions just leave a comment... </center>
+
+Have fun and in case you had questions just leave a comment...
 
 Happy saving cost!
 
