@@ -36,16 +36,25 @@ I assume you are already familiar with Azure, so I will not go into every single
 ![Automation](/images/Automation.PNG)
  
  - Click on **Automation** and fill in the form to create a new Automation Account. Make sure you check the box **Create Azure Run As account**. The Automation Account does not have to be in the same Resource Group as your virtual machines. 
+ 
+![Automation2](/images/Automation2.PNG)
+ 
  - One you are done with creating the Automation Account, open it and go into the **Runbooks** section and click **Add a runbook** and then in the new blade click **Import and existing runbook**.
+
+![Import](/images/Import.PNG)
+ 
  - Download this PowerShell script from here and in the new blade select it as the *Runbook File* and then click *Create*.
  
-> Please take note this PowerShell was mainly developed by Noah Stahl (see his website here) and slightly modified and used for our scenario here. 
+> Please take note this PowerShell script was mainly developed by Noah Stahl (see his website here) and slightly modified and used for our scenario here. 
 
 
 ### Link the subscription service admin/owner to the imported automation Runbook
 The action to shut down or start virtual machines needs to happen under a user account defined on Azure Active Directory. This user account needs to be both an Azure Subscription Owner on the new portal AND a Service Administrator/Co-Administrator on the classic portal. (Please pay attention to the AND)... Once you make sure about it:
 
  - Open your Automation Account blade and click the **Assets** tile and then in the new blade click the **Credentials** tile.  
+ 
+![Assets](/images/assets.PNG)
+ 
  - Click **Add a Credential** and then enter the value **Default Automation Credential** for the **Name** and enter the above-mentioned username and password and click **Create**. Please take note the User name field is case-sensitive (I know it is crazy, you don't need to tell me)... 
  - Going back to the **Assets** tiles now click the **Variables** tile and click **Add a variable** and then enter the value **Default Azure Subscription** for the **Name**, select the **String** type and then enter the subscription name you are targetting in the **Value** field and click **Create**. 
  
@@ -54,6 +63,9 @@ The action to shut down or start virtual machines needs to happen under a user a
 
 ### Define schedules for the runbook to check the target subscriptions
  - Now in this step Open the created Runbook and click the **Schedules** tile. In here you will define how often the runbook is checked against the target virtual machines and if you have multiple subscriptions, you will need to define one schedule per subscription.
+
+![Schedules](/images/schedules_tile.PNG)
+
  - Click **Add a Schedule** and enter the required values. For the **Parameters and run settings** just leave all the fields empty. If you are implementing the solution for multiple subscriptions, enter the subscription name in the **AZURESUBSCRIPTIONNAME** field and make sure you create one schedule per subscription. 
 
 ### Tag Virtual Machines or the Resource Groups which contain them
