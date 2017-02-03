@@ -37,3 +37,9 @@ I assume you are already familiar with Azure, so I will not go into every single
  - Download this PowerShell script from here and in the new blade select it as the *Runbook File* and then click *Create*.
  
 > Please take note this PowerShell was mainly developed by Noah Stahl (see his website here) and slightly modified and used for our scenario here. 
+
+
+### Link the subscription service admin/owner to the imported automation Runbook
+The action to shut down or start virtual machines needs to happen under a user account defined on Azure Active Directory. This user account needs to be both an Azure Subscription Owner on the new portal AND a Service Administrator/Co-Administrator on the classic portal. (Please pay attention to the AND)...
+
+
