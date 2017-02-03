@@ -27,4 +27,10 @@ You can implement this solution either individually per subscription or have it 
 > the solution, be my guest and read on...
 
 
+
 ### Create an Automation Account and Runbook
+I assume you are already familiar with Azure, so I will not go into every single step in doing basic things. 
+
+1- Create a new **Resource Group** and inside your Resource Group click **Add** and search for the word Automation.
+2- Click on **Automation** and fill in the form to create a new Automation Account. Make sure you check the box **Create Azure Run As account**. The automation account does not have to be in the same Resource Group as your virtual machines. 
+3- 
