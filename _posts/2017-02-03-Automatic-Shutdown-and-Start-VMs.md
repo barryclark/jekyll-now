@@ -33,7 +33,6 @@ I assume you are already familiar with Azure, so I will not go into every single
 
  - Create a new **Resource Group** and proceed to add an **Automation Account**.
 
-
 ![Automation](/images/Automation.PNG)
  
  - Make sure you check the box **Create Azure Run As account**. The Automation Account does not have to be in the same Resource Group as your virtual machines. 
@@ -96,8 +95,8 @@ Simply open your Resource Group/Virtual Machine and on the left-side menu click 
 Well, this is the easiest part... All you need to do is just wait...
 Once the defined schedule triggers the Runbook, your VMs are checked and if the GMT time matches the shutdown time of your VMs they will be simply shut down. 
 How do they wake up? The runbook will start your virtual machines on the next schedule if the GMT time falls out of the shutdown time frame in the VM tag. 
+<center>Have fun and in case you had questions just leave a comment... </center>
 
-Have fun and in case you had questions just leave a comment... 
 Happy saving cost!
 
    [here]: <https://automys.com/>
