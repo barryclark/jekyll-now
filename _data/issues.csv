@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2388,205341130,2017-02-04 11:04:20,2017-02-04 11:03:44,Cibo per animali a #Montemonaco,42.8991551,13.3268587,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Facebook"", ""Form""]",,,"{""cosa"": ""Cibo per animali a #Montemonaco"", ""data"": ""04/02/2017"", ""descrizione"": ""Servono urgentemente: fieno, granturco, orzo e fioccato. Il tutto verr\u00e0 distribuito in maniera equa tra gli allevatori. Contattare Manuela Corbelli, vicesindaco di Montemonaco: 338 4104640; Monica Maggi: 366 4008466. Grazie davvero."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Strada Provinciale 83 Subappennina, Montemonaco, AP, Marche, 63088, Italia"", ""lat"": ""42.8991551"", ""link"": """", ""lon"": ""13.3268587"", ""tel"": ""338 4104640""}","<pre><yamldata>tel: '338 4104640'
+email: ''
+cosa: 'Cibo per animali a #Montemonaco'
+descrizione: 'Servono urgentemente: fieno, granturco, orzo e fioccato. Il tutto verrà distribuito in maniera equa tra gli allevatori. Contattare Manuela Corbelli, vicesindaco di Montemonaco: 338 4104640; Monica Maggi: 366 4008466. Grazie davvero.'
+indirizzo: 'Strada Provinciale 83 Subappennina, Montemonaco, AP, Marche, 63088, Italia'
+lat: '42.8991551'
+lon: '13.3268587'
+link: ''
+immagine: ''
+data: 04/02/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2387,205287754,2017-02-03 22:45:32,2017-02-03 22:34:01,Azienda agricola Maccarese accoglie bestiame di allevatori in difficoltà per terremoto e neve,41.8773647,12.2145902,"[""Accettato"", ""Bollettino"", ""Facebook"", ""Ospitalita animali""]",,,"{""cosa"": ""Azienda agricola Maccarese accoglie bestiame di allevatori in difficolt\u00e0 per terremoto e neve"", ""data"": ""03/02/2017"", ""descrizione"": ""L'azienda agricola Maccarese, associata Coldiretti, ha gi\u00e0 \u2018adottato\u2019 34 bovini prelevati da un allevamento di Roccapassa, frazione di Amatrice e trasferiti provvisoriamente nelle proprie stalle \u00e8 disponibile ad ospitare, per tutta la durata dell\u2019emergenza nei luoghi del terremoto, altri capi di bestiame."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Via del Vergaro, Maccarese, Fiumicino, RM, LAZ, 2378, Italia"", ""lat"": ""41.8773647"", ""link"": ""http://www.frontierarieti.com/wordpress/terremoto-neve-azienda-agricola-adotta-34-bovini-allevamento-amatrice"", ""lon"": ""12.2145902"", ""tel"": """"}","<pre><yamldata>tel: ''
 email: ''
 cosa: 'Azienda agricola Maccarese accoglie bestiame di allevatori in difficoltà per terremoto e neve'
