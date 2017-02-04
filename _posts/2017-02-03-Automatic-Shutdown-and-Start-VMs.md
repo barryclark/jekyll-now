@@ -3,7 +3,7 @@ layout: post
 title: Schedule the auto shutdown and start of your VMs using Azure Automation and Runbooks
 subtitle: Cut down on the cost of your DEV environments
 category: howto
-tags: [cloud, automation]
+tags: [cloud, devops]
 author: esmaeil_sarabadani
 author_email: esmaeil.sarabadani@haufe-lexware.com
 header-img: "images/bg-post.jpg"
