@@ -3,7 +3,7 @@ layout: post
 title: Using HALBuilder with german characters
 subtitle: How to make sure that umlauts are properly displayed
 category: Howto
-tags: [devops]
+tags: [api]
 author: Filip Fiat
 author_email: filip.fiat@haufe-lexware.com
 header-img: "images/bg-post.jpg"
