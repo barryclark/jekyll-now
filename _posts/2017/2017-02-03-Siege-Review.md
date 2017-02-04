@@ -3,7 +3,7 @@ layout: post
 title: "Review - Siege"
 description: "Defeat the other players' kings in AEG's game of deceit and deduction."
 category: review
-featured: siege.png
+featured: siege.jpg
 amazonterm: "aeg siege"
 tags: [review, games, siege, aeg]
 author: Rob Kalajian
