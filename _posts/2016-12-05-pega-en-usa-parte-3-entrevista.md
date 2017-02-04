@@ -21,17 +21,30 @@ tags:
   - visa
 ---
 
-Dado que el post anterior fue de utilidad para varias personas que buscaban mejorar su "Resume" antes de presentarlo en oportunidades de trabajo en el extranjero, quiero continuar con mi serie de post. Esta vez hablando sobre mi experiencia y opinión con algunos "postulantes" que he intentado ayudar.
+Bueno, llegamos al tercer post relacionado con trabajos en el extranjero.
 
-### Capacidades vs preparacion
+En esta oportunidad quiero compartir algunos tips relacionados con conseguir una entrevista, como prepararse para una entrevista tecnica y que esperar 
+luego de la entrevista.
 
-## Como llamar la atencion de un reclutador
-### Linkedin
-### Github
-### Eventos
-### Referal
+## Como conseguir una entrevista
 
-## Como conseguir una entrevista tecnica
+La verdad es que existen varias formas para conseguir una entrevista. Creo que ls forma mas comub es gracias a un conocido que puede pasar tu CV y 
+recomendarte, y ojo, muchos estaran felices de presentarte, no solo por buen Karma, sino tambien porque tipicamente las empresas ofrecen bonos por 
+referir especialistas que son contratados. Aunque hoy por hoy, tambien es bastante comun el ser contactado por un reclutador, que descubrio tu perfil 
+en Linkedin o vio uno de tus proyectos en Github. Por eso es muy importante aplicar las mismas tecnicas discutidas en el primer post para mejorar tu CV 
+a los sitios de busqueda de trabajo. En menor medida puedes participsr de eventos donde en ocasiones asisten reclutadores, aunque creo que los antes 
+mencionados son los que mejor destacan.
+
+
+## Capacidades vs preparacion
+
+Si!, seguro eres muy inteligente y capaz, eres el ubercracker del mundo moderno, pero no hay nada peor que alguien no preparado, y no me refiero a 
+portar paraguas en un dia nublado. Me refiero a que si realmente quieres el trabajo, lo minimo que deberias hacer es investigar y conocer a detalle 
+la empresa, sus politicas, algo de su historia, sus productos, etc. Esto te va a dar una ventaja competitiva y demuestra interes al entrevistador,
+
+Luego de aprenderte de memoria el sitio web de la empresa, su mision y vision, queda investigar algo mas, lo que solo podrias saber preguntando a 
+trabajadores. Temas como sueldo, clima laboral, beneficios, visa, etc
+
 ### Practica tu spanglish
 ### Libros que debes leer
 ### Averigua de que trata el puesto
@@ -39,9 +52,6 @@ Dado que el post anterior fue de utilidad para varias personas que buscaban mejo
 #### Visa
 #### Condiciones
 #### Sueldo
-
-
-/******/
 
 
 ## Preparando la entrevista
