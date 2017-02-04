@@ -3,7 +3,7 @@ layout: post
 title: SCS - Self-Contained Systems
 subtitle: Thoughts about Self-Contained Systems architecture pattern  
 category: api
-tags: [cto, microservice, devops]
+tags: [cto, microservice]
 author: rainer_zehnle
 author_email: rainer.zehnle@haufe-lexware.com 
 header-img: "images/bg-post-clover.jpg"
