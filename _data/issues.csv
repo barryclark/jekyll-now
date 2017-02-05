@@ -1,4 +1,14 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2398,205425989,2017-02-05 13:51:52,2017-02-05 13:43:05,Casa disponibile 5 posti letto a Jesi,43.5219801,13.2443764,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""05/02/2017"", ""descrizione"": ""Ho una casa disponibile con 5 posti letto a Jesi, in provincia di Ancona, completa di tutto il necessario. Se pu\u00f2 servire contattatemi."", ""email"": ""federy82@gmail.com"", ""immagine"": """", ""indirizzo"": ""Piazza della Repubblica, Jesi, AN, Marche, 60035, Italia"", ""lat"": ""43.5219801"", ""link"": """", ""lon"": ""13.2443764"", ""tel"": ""3490905691""}","<pre><yamldata>tel: '3490905691'
+email: federy82@gmail.com
+descrizione: 'Ho una casa disponibile con 5 posti letto a Jesi, in provincia di Ancona, completa di tutto il necessario. Se può servire contattatemi.'
+indirizzo: 'Piazza della Repubblica, Jesi, AN, Marche, 60035, Italia'
+lat: '43.5219801'
+lon: '13.2443764'
+link: ''
+immagine: ''
+data: 05/02/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2397,205418361,2017-02-05 12:56:43,2017-02-05 11:11:02,Cercasi roulotte ad #ArquataDelTronto,42.7723609,13.2965826,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Facebook""]",,,"{""cosa"": ""Cercasi roulotte #ArquataDelTronto"", ""data"": ""05/02/2017"", ""descrizione"": ""Sono di Arquata del Tronto, ho la casa inagibile e mio marito sta gravemente male, vorrei una roulotte di 4 posti se qualcuno me la pu\u00f2 donare, vi ringrazio mille volte. Per contattarmi: Maura Lalli 3930083011"", ""email"": """", ""immagine"": """", ""indirizzo"": ""Piazza Umberto I, Arquata del Tronto, AP, Marche, Italia"", ""lat"": ""42.7723609"", ""link"": """", ""lon"": ""13.2965826"", ""tel"": ""3930083011""}","<pre><yamldata>tel: '3930083011'
 email: ''
 cosa: 'Cercasi roulotte #ArquataDelTronto'
