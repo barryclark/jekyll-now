@@ -4,7 +4,7 @@ title: "Unboxing Element"
 description: "Rather Dashing Games recently released Element, an abstract strategy game with some great mechanics. Let's see what's inside!"
 category: unboxing
 featured: element.jpg
-amazonterm: element
+amazonterm: "rather dashing element"
 tags: [unboxing, games, element, rather dashing games]
 author: Rob Kalajian
 ---
@@ -17,5 +17,6 @@ The entire package is excellent overall. I can't wait to really dig into this ga
 ![Element Box Back]({{ site.url }}/images/element/back.jpg)
 ![Element Rules]({{ site.url }}/images/element/rules.jpg)
 ![Element Board]({{ site.url }}/images/element/board.jpg)
+![Element Bag]({{ site.url }}/images/element/bag.jpg)
 ![Element Sages]({{ site.url }}/images/element/sages.jpg)
 ![Element Pieces]({{ site.url }}/images/element/pieces.jpg)
