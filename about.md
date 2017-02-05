@@ -4,12 +4,12 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+24/INHA.uni/Computer Engineering/junior Developer
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+Now Its time to cording
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[gomdori626@gmail.com](gomdori626@gmail.com)
