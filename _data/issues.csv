@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2397,205418361,2017-02-05 12:26:28,2017-02-05 11:11:02,Cercasi roulotte #ArquataDelTronto,42.7723609,13.2965826,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Facebook"", ""Form""]",,,"{""cosa"": ""Cercasi roulotte #ArquataDelTronto"", ""data"": ""05/02/2017"", ""descrizione"": ""Sono si Arquata del Tronto ho la casa inagibile e mio marito sta gravemente male vorrei una roulotte di 4 posti se qualcuno me la pu\u00f2 donare vi ringrazio mille volte. Per contattarmi: Maura Lalli 3930083011"", ""email"": """", ""immagine"": """", ""indirizzo"": ""Piazza Umberto I, Arquata del Tronto, AP, Marche, Italia"", ""lat"": ""42.7723609"", ""link"": """", ""lon"": ""13.2965826"", ""tel"": ""3930083011""}","<pre><yamldata>tel: '3930083011'
+email: ''
+cosa: 'Cercasi roulotte #ArquataDelTronto'
+descrizione: 'Sono si Arquata del Tronto ho la casa inagibile e mio marito sta gravemente male vorrei una roulotte di 4 posti se qualcuno me la può donare vi ringrazio mille volte. Per contattarmi: Maura Lalli 3930083011'
+indirizzo: 'Piazza Umberto I, Arquata del Tronto, AP, Marche, Italia'
+lat: '42.7723609'
+lon: '13.2965826'
+link: ''
+immagine: ''
+data: 05/02/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2396,205383411,2017-02-04 22:41:18,2017-02-04 22:36:53,"#Norcia, riduzione della ""zona rossa""",,,"[""Accettato"", ""Bollettino"", ""Facebook"", ""Notizie Utili"", ""Sisma Ottobre""]",,,"{""data"": ""04/02/2017"", ""descrizione"": ""Comune di Norcia, Riduzione 'Zona Rossa', Ordinanza n. 236 del 4 febbraio 2017. Sono escluse dalla zona rossa delle seguenti vie: Porta San Giovanni, PiazzaCarloAlberto, tratto di Via Podgora, tratto di Via delle Vergini, tratto di Via Umberto, Vicolo del Tempietto, Via Cappellini, tratto di V.lo del Fardello, V.lo della Fuga (ad esclusione del tratto distinto catastalmente con laPart.n 78), Via Cairoli, Via Gorizia, Piazzetta Elena, V.lo Ciompi, Via Bandiera."", ""link"": ""http://www.halleyweb.com/c054035/zf/index.php/atti-amministrativi/ordinanze/dettaglio/atto/G5npjMkT3PT0-A"", ""titolo"": ""#Norcia, riduzione della \""zona rossa\""""}","<pre><yamldata>titolo: '#Norcia, riduzione della ""zona rossa""'
 descrizione: 'Comune di Norcia, Riduzione ''Zona Rossa'', Ordinanza n. 236 del 4 febbraio 2017. Sono escluse dalla zona rossa delle seguenti vie: Porta San Giovanni, PiazzaCarloAlberto, tratto di Via Podgora, tratto di Via delle Vergini, tratto di Via Umberto, Vicolo del Tempietto, Via Cappellini, tratto di V.lo del Fardello, V.lo della Fuga (ad esclusione del tratto distinto catastalmente con laPart.n 78), Via Cairoli, Via Gorizia, Piazzetta Elena, V.lo Ciompi, Via Bandiera.'
 link: 'http://www.halleyweb.com/c054035/zf/index.php/atti-amministrativi/ordinanze/dettaglio/atto/G5npjMkT3PT0-A'
