@@ -6,7 +6,7 @@ group: nav
 ---
 Velkommen til IT-Tutor!
 
-IT-Tutor er tutorforeningen for IT-studiet på Aarhus Universitet, som sørger for, at de nye studerende får en god start på universitetet. 
+IT-Tutor er tutorforeningen for IT-studiet på Aarhus Universitet, der sørger for, at de nye studerende får en god start på universitetet. 
 
 Hvis du er interesseret i arbejdet som tutor, har du mulighed for at tilføje din email til vores mailliste under fanen (Hold dig opdateret), hvor du løbende vil modtage information om tutorarbejdet og vigtige datoer. 
 
