@@ -1,3 +1,8 @@
+---
+layout: post
+title: Dagsorden til mødet d. 8. februar
+---
+
 Hej, 
 
 Her kommer dagsorden til mødet på onsdag. Hvis man har lyst til at deltage bliver det i Turing-130 kl 17:15 :) 
