@@ -4,7 +4,7 @@ title: Logo Konkurrence
 ---
 
 Hvis I endnu ikke har set det, har IT's tutorforening, IT-Tutor, oprettet en Facebookside [IT-Tutor](https://www.facebook.com/ITTutorforening). 
-Hvor vi løbende vil komme med informationer omkring tutorforeningen, rusdagene og kommende events. 
+Her vil vi løbende komme med informationer omkring tutorforeningen, rusdagene og kommende events. 
 
 **IT-Tutor har brug for et super fedt logo!**
 
