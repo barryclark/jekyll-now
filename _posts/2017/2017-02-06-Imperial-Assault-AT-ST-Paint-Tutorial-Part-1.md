@@ -2,7 +2,7 @@
 layout: post
 title: "Paint Tutorial - Imperial Assault AT-ST - Part 1"
 description: "Part 1 of Frank Grip's tutorial on painting an Imperial Assault AT-ST."
-category: tutorial
+category: tutorials
 featured: atstpart1.png
 amazonterm: "imperial assault"
 tags: [games, miniatures, tutorial, imperial assault, fantasy flight games]
