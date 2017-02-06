@@ -93,7 +93,6 @@ numberFormatter = function(value, digit_limit){
 
     // default to 4 digits if not set
     digit_limit = digit_limit || 4;
-    console.log(value);
 
     //If abs(value) has more than 6 digits, we'll show it as exp
     digits = Math.floor(Math.log10(Math.abs(value)) + 1);

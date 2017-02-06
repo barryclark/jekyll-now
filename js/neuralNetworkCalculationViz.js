@@ -916,7 +916,6 @@ neuralNetworkCalculationViz.prototype.graphSoftmaxToOutputArrows = function (dat
             }
         })
         .text(function(d, i){
-            console.log('IIIII2', i);
             return d.class_name
         });
 
@@ -1126,10 +1125,15 @@ neuralNetworkCalculationViz.prototype.setInput = function (input) {
 };
 
 
-var weights = [[-0.11510573, -0.08358583],
-    [0.19847003, -1.00007236]];
-var biases = [-0.07722114, 0.07722116];
+var weights = [[-0.11510573],
+    [0.19847003]];
+var biases = [-0.07722114];
+//
+//var weights = [[-0.11510573, -0.08358583],
+//    [0.19847003, -1.00007236]];
+//var biases = [-0.07722114, 0.07722116];
 
+//var classes=["Survived", "Didn't survive"];
 
 var trainingSet = [
     {age: 22, sex: 0, survived: 0},
@@ -1137,13 +1141,13 @@ var trainingSet = [
     {age: 26, sex: 1, survived: 1}
 ];
 
-var classes=["Survived", "Didn't survive"];
+var classes=["Survived"];
 
 //var weights = [[2.14149564e-04, -2.14149914e-04],
 //    [5.12748193e-05, -5.12747974e-05]];
 //var biases = [1.19155184e-05, -1.19155284e-05];
 
-var nnCalculationViz = new neuralNetworkCalculationViz(2, 2, "#neural-network-calculation-viz", weights, biases,
+var nnCalculationViz = new neuralNetworkCalculationViz(2, 1, "#neural-network-calculation-viz", weights, biases,
     "#neural-network-calculation-table", trainingSet, classes);
 
 

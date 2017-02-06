@@ -72,10 +72,12 @@ var NN_trainer = function (svg_el, table_el, areas, prices, weight, bias, x1, y1
     // Attach Analytics events to when a user interacts with the sliders
     $(this.table_el + " #weightSlider").on("mouseup touchend", (function(){
         ga('send', 'event', trainer_self.analyticsCategory, "Interacted with", "Weight slider");
+        _paq.push(['trackEvent', trainer_self.analyticsCategory, "Interacted with", "Weight slider"]);
     }));
 
     $(this.table_el + " #biasSlider").on("mouseup touchend", (function(){
         ga('send', 'event', trainer_self.analyticsCategory, "Interacted with", "Bias slider");
+        _paq.push(['trackEvent', trainer_self.analyticsCategory, "Interacted with", "Bias slider"]);
     }));
 
 

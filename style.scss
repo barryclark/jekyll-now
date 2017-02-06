@@ -457,8 +457,41 @@ line.nn-arrow-highlighted{
 .prediction table.softmax-calculation  tr.total-row{ border-top:1px dashed #ccc; }
 
 
+// Quick guide to neurons
+
+.prediction div.neuron-expo{
+  border-bottom: 1px solid #ddd;
+  padding: 15px 0;
+}
+
+.side-column{
+  font-size: 80%;
+  color: #888;
+}
+
+.side-column code{
+  font-size: 80%;
+  color: #666;
+}
 
 
+
+.grid line {
+  stroke: lightgrey;
+  stroke-opacity: 0.7;
+  shape-rendering: crispEdges;
+}
+
+.grid path {
+  stroke-width: 0;
+}
+
+
+#sigmoid-formula-input{
+  width:60px;
+  display: inline-block;
+  text-align:left;
+}
 
 // ============
 
