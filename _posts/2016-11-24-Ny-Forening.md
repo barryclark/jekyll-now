@@ -14,7 +14,7 @@ Hvis du allerede nu ved, at du vil være tutor og ikke vil gå glip af ansøgnin
 
 Målet med den nye foreningen er først og fremmest at skabe en bedre og mere relevant studiestart for de nye IT-studerende. For at kunne gøre det, har vi brug for en masse input. 
 
-Derfor vil vi meget gerne høre fra jer, hvis I har en fed idé til, hvad rusdagsprogrammet skal indeholde eller, hvis I har andre gode idéer, som I enten selv vil stå for eller blot vil give videre, så andre har mulighed for at arbejde på dem. Det samme gælder holdninger til tidligere aktiviteter i studiestarten. Hvis du har en mening om, hvad vi skal beholde eller, hvad der skal væk, modtages den med kyshånd.
+Derfor vil vi meget gerne høre fra jer, hvis I har en fed idé til, hvad rusdagsprogrammet skal indeholde eller hvis I har andre gode idéer, som I enten selv vil stå for eller blot vil give videre, så andre har mulighed for at arbejde på dem. Det samme gælder holdninger til tidligere aktiviteter i studiestarten. Hvis du har en mening om, hvad vi skal beholde eller, hvad der skal væk, modtages den med kyshånd.
 
 
 Ideer kan afleveres direkte på: it-tutor.dk/forslag eller ved at tage kontakt til styregruppen.
