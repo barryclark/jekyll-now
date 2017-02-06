@@ -1,4 +1,36 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2405,205646314,2017-02-06 21:20:04,2017-02-06 16:58:56,Cerco Trasporto per Roulotte Roma-Visso,42.9312321,13.087449,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""Cerco Trasporto per Roulotte Roma-Visso"", ""data"": ""06/02/2017"", ""descrizione"": ""Stiamo cercando qualcuno disponibile a trasportare una roulotte a Visso presso un allevatore. Sarebbe meglio un carroattrezzi. La roulotte (piccola) si trova a Roma."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Piazza Martiri Vissani, Visso, MC, Marche, 62039, Italia"", ""lat"": ""42.9312321"", ""link"": """", ""lon"": ""13.087449"", ""tel"": ""3479526902 Manuela o 3284089801 Massimo""}","<pre><yamldata>tel: '3479526902 Manuela o 3284089801 Massimo'
+email: ''
+cosa: 'Cerco Trasporto per Roulotte Roma-Visso'
+descrizione: 'Stiamo cercando qualcuno disponibile a trasportare una roulotte a Visso presso un allevatore. Sarebbe meglio un carroattrezzi. La roulotte (piccola) si trova a Roma.'
+indirizzo: 'Piazza Martiri Vissani, Visso, MC, Marche, 62039, Italia'
+lat: '42.9312321'
+lon: '13.087449'
+link: ''
+immagine: ''
+data: 06/02/2017
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2403,205578256,2017-02-06 21:17:49,2017-02-06 13:06:22,Offresi camper 5 posti,,,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Form""]",,,"{""cosa"": ""Camper 5 posti"", ""data"": ""06/02/2017"", ""descrizione"": ""Fiat Ducato 2000 turbodiesel del 1994. Km. 90.000 - Marciante ma senza assicurazione - Bisogna riparare il lavandino del bagno. Il mezzo \u00e8 disponibile per il ritiro in un campeggio del Castelletto Ticino (NO)."", ""email"": ""gio.mantovani@libero.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3389059437""}","<pre><yamldata>tel: '3389059437'
+email: gio.mantovani@libero.it
+cosa: 'Camper 5 posti'
+descrizione: 'Fiat Ducato 2000 turbodiesel del 1994. Km. 90.000 - Marciante ma senza assicurazione - Bisogna riparare il lavandino del bagno. Il mezzo è disponibile per il ritiro in un campeggio del Castelletto Ticino (NO).'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 06/02/2017
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2402,205570778,2017-02-06 21:16:18,2017-02-06 12:35:06,Associazione offre alloggi gratuiti in provincia di Monza ,,,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""06/02/2017"", ""descrizione"": ""Alcuni membri della nostra associazione mettono a disposizione alloggio per famiglie jn zona Monza gratuitamente. Per info: presidente@salvagenteitalia.org"", ""email"": ""presidente@salvagenteitalia.org"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3440691479""}","<pre><yamldata>tel: '3440691479'
+email: presidente@salvagenteitalia.org
+descrizione: 'Alcuni membri della nostra associazione mettono a disposizione alloggio per famiglie jn zona Monza gratuitamente. Per info: presidente@salvagenteitalia.org'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 06/02/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2401,205531320,2017-02-06 21:15:00,2017-02-06 09:44:07,Offresi vestiario invernale,,,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Form""]",,,"{""cosa"": ""Raccolta vestiario invernale"", ""data"": ""06/02/2017"", ""descrizione"": ""Guanti, maglioni, giacche di varie taglie, cappelli: gruppo di amiche nel Lazio ha raccolto vestiario invernale e vorrebbe darlo a chi ne necessita."", ""email"": ""puritana@hotmail.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3284152219""}","<pre><yamldata>tel: '3284152219'
 email: puritana@hotmail.it
 cosa: 'Raccolta vestiario invernale'
@@ -15884,18 +15916,6 @@ bic: ''
 postale: ''
 causale: 'Raccolta fondi per terremoto'
 link: 'http://www.comune.fi.it/export/sites/retecivica/comune_firenze/ultime_notizie/e0707.html'
-email: ''
-data: 13/09/2016
-</yamldata></pre>
-",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/201,176772645,2016-09-13 23:25:17,2016-09-13 23:01:57,Misericordia Firenze,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Misericordia Firenze"", ""data"": ""13/09/2016"", ""descrizione"": ""Chi desidera contribuire pu\u00f2 rivolgersi direttamente presso la sede di piazza Duomo oppure nelle Sezioni di via del Sansovino, Ponte di Mezzo, Viale dei Mille e via Faentina. Attivato c/c presso ChiantiBanca - Filiale Campo di Marte"", ""email"": """", ""iban"": ""IT83C 08673 02804 035000351546"", ""intestazione"": ""Venerabile Arciconfraternita della Misericordia di Firenze"", ""link"": ""http://www.misericordia.firenze.it/News/Dettaglio/1854/Sottoscrizione-vittime-terremoto"", ""postale"": """"}","<pre><yamldata>chi: 'Misericordia Firenze'
-descrizione: 'Chi desidera contribuire può rivolgersi direttamente presso la sede di piazza Duomo oppure nelle Sezioni di via del Sansovino, Ponte di Mezzo, Viale dei Mille e via Faentina. Attivato c/c presso ChiantiBanca - Filiale Campo di Marte'
-intestazione: 'Venerabile Arciconfraternita della Misericordia di Firenze'
-iban: 'IT83C 08673 02804 035000351546'
-bic: ''
-postale: ''
-causale: ''
-link: 'http://www.misericordia.firenze.it/News/Dettaglio/1854/Sottoscrizione-vittime-terremoto'
 email: ''
 data: 13/09/2016
 </yamldata></pre>
