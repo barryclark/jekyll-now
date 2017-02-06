@@ -7,43 +7,43 @@ Hej,
 
 Her kommer dagsorden til mødet på onsdag. Hvis man har lyst til at deltage bliver det i Turing-130 kl 17:15 :) 
 
-###Dagsorden 8/2 - 2017###
+#Dagsorden 8/2 - 2017###
 
-#Mentorordning#
-Status på mentorordning
-Bør vi tage stilling til om tutorer kan blive mentorer?
+###Mentorordning###
+1. Status på mentorordning
+2. Bør vi tage stilling til om tutorer kan blive mentorer?
 
 
-#Planlægning  af rusdagsprogram#
-Faste punkter 
-Nye punkter
-Udkast til program
-Samarbejde med mat/fys
-Evt? 
+###Planlægning  af rusdagsprogram###
+1. Faste punkter 
+2. Nye punkter
+3. Udkast til program
+4. Samarbejde med mat/fys
+5. Evt? 
 
-#Planlægning af hyttetur#
-Hytte 
-Budget 
-Program for dagene (Udkast) 
-Bus 
-Mad 
-Evt? 
+###Planlægning af hyttetur###
+1. Hytte 
+2. Budget 
+3. Program for dagene (Udkast) 
+4. Bus 
+5. Mad 
+6. Evt? 
 
-#Opdateringer på hjemmesiden og Facebook#
-Vinder af logokonkurrence 
-Dagsordner på hjemmeside og Facebook 
-Opdatering af kalender
+###Opdateringer på hjemmesiden og Facebook###
+1. Vinder af logokonkurrence 
+2. Dagsordner på hjemmeside og Facebook 
+3. Opdatering af kalender
 
 #Infotutormøde#
-Hvad skal være klar? 
-Guidelines for hvordan tutorer udvælges
+1. Hvad skal være klar? 
+2. Guidelines for hvordan tutorer udvælges
 
-#Andet# 
-Effektivitet 
-Deadlines skal overholdes bedre 
-Logo skal offentliggøres + laves færdigt 
-Møde med TÅGEKAMMERET
-Status på økonomi
-Sponsor 
-Næste møde
-Hjemmesiden skal læses igennem for stavefejl :) 
+###Andet###
+1. Effektivitet 
+2. Deadlines skal overholdes bedre 
+3. Logo skal offentliggøres + laves færdigt 
+4. Møde med TÅGEKAMMERET
+5. Status på økonomi
+6. Sponsor 
+7. Næste møde
+8. Hjemmesiden skal læses igennem for stavefejl :) 
