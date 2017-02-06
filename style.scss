@@ -18,9 +18,9 @@ html {
 }
 
 body {
-	background: $white;
+	background: $darkGray;
   font: 18px/1.4 $helvetica;
-  color: #013ADF;
+  color: $darkGray; //This is the color of the font of the body
 }
 
 .container {
