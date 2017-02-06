@@ -4,8 +4,8 @@ title: AIML blog lists
 published: true
 ---
 I maintain a list of interesting AI/ML blogs, and scientist and researcher profiles so that I can keep in touch with research trends in AIML and keep myself motivated and informative for research.  
-
-* [Researcher Shakir](http://blog.shakirm.com/): Statistical Machine Learning and AI
+* [Charles Martin, Ph.D](https://calculatedcontent.com/): Applied AI and ML  
+* [Shakir](http://blog.shakirm.com/): Statistical Machine Learning and AI
 * [Prof. Judea Pearl](http://bayes.cs.ucla.edu/stat_bio.html) Famous for Bayesian networks and Causality for AI.  
 * [Dustin Tran](http://dustintran.com/): a Ph.D student in Computer Science at Columbia who works in Bayesian statisics. 
 * [Yarin Gal](http://mlg.eng.cam.ac.uk/yarin/index.html): He works in Bayesian Deep Learning and  approximate inference which are closely related to my research. 
