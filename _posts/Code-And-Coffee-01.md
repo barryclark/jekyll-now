@@ -25,7 +25,7 @@ After only four meetups, we’re already starting to see some inspiring collabor
 
     The oldest of our projects is finding it’s wings again with some new talent and brilliant ideas. This group is working to make choosing a school easier on Delaware parents...because [right now](https://www.schoolchoicede.org/), it’s anything but easy.  
 
-    When finished, they’ll have a fully functional website that will walk parents through the step-by-step of what choices they have, the ups and downs of each school, and all the info they need to navigate the school choice process within the state. Their biggest update for January: they have a [gitHub repo](https://github.com/OpenDataDE), a [Trello](https://trello.com/home), and a plan!
+    When finished, they’ll have a fully functional website that will walk parents through the step-by-step of what choices they have, the ups and downs of each school, and all the info they need to navigate the school choice process within the state. Their biggest update for January: they have a [gitHub repo](https://github.com/OpenDataDE/educationsherpa), a [Trello](https://trello.com/opendatadelaware), and a plan!
 
 - ### **Nursing Home Finder**
 
