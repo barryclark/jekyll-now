@@ -16,7 +16,9 @@ Foreningen har til formål at arrangere og afholde studiestartsuge for nyimmatri
 
 ## §3
 **Stk. 1.** Foreningens medlemmer tæller udelukkende styregruppen som planlægger tutorarbejdet på Bacheloruddannelsen i IT på Institut for Datalogi.
-**Stk. 2.** Medlemskab varer indtil optagelse af nye medlemmer har fundet sted, jf. §3 Stk. 1. Stk. 3. Eksklusion kan ske, hvis særlige forhold giver anledning hertil. Beslutningen kræver, at mindst 2/3 af foreningens medlemmer har stemt for eksklusionen. Dog kan en enstemmig bestyrelse ekskludere et medlem, såfremt vedkommende ikke opfylder kravet om aktiv medvirken. Stk. 4. Skulle et medlem efter eget valg forlade foreningen, kan et nyt medlem optages hvis der i bestyrelsen er almindeligt flertal for dette.
+**Stk. 2.** Medlemskab varer indtil optagelse af nye medlemmer har fundet sted, jf. §3 Stk. 1. 
+**Stk. 3.** Eksklusion kan ske, hvis særlige forhold giver anledning hertil. Beslutningen kræver, at mindst 2/3 af foreningens medlemmer har stemt for eksklusionen. Dog kan en enstemmig bestyrelse ekskludere et medlem, såfremt vedkommende ikke opfylder kravet om aktiv medvirken. 
+**Stk. 4.** Skulle et medlem efter eget valg forlade foreningen, kan et nyt medlem optages hvis der i bestyrelsen er almindeligt flertal for dette.
 
 
 ## §4
