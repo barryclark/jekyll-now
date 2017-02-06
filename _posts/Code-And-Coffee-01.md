@@ -1,7 +1,7 @@
 ---
 author: Aiyani Martin
 layout: post
-title: Code & Coffee: A First Month’s Recap
+title: Code & Coffee - A First Month’s Recap
 ---
 
 It’s hard to believe January is already over, but it’s been a great start to a new year for us at Open Data Delaware! The star of the show so far: [Code & Coffee](https://www.meetup.com/Open-Data-Delaware/events/236676690/)! Our new partnership with [Delaware Public Libraries](http://lib.de.us/) is proving to be an amazing opportunity for our group.  In just one month, we’ve been able to meet, learn, work, and grow together more regularly than ever before.
