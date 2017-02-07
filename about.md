@@ -5,7 +5,9 @@ permalink: /about/
 ---
 
 TARO FURUYA
-ただのエンジニア。六本木一丁目のソシャゲ会社で働いています
+
+六本木一丁目のソシャゲ会社で働いているエンジニア
+
 C#/Unity/ASP.NET
 
 ### Qiita
