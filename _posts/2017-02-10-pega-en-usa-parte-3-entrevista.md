@@ -40,24 +40,55 @@ algunos casos donde los desarrolladores han sido contactados gracias a sus proye
 Finalmente, en algunas ocasiones (las menores la verdad) he visto reclutadores asistiendo a eventos de tecnologia, buscando posibles candidatos, por esto 
 es tan importante mantenerse activo en eventos y actividades, y por supuesto, tener un buen CV preparado y listo para ser presentado.
 
-Creo que conseguir una posibilidad es bastante simple, el como te la juegas, bueno, ese es otro cuento.
+Creo que conseguir una posibilidad es bastante simple, el como te la juegas, bueno, ese es otro cuento. Porque muchas empresas bloquean a los postulantes cuando no tienen 
+exito en el proceso, los bloquean por 6 meses o hasta 1 anho. Por lo que ir preparado es realmente importante.
 
 ## Capacidades vs preparacion
 
-Si!, seguro eres muy inteligente y capaz, eres el ubercracker del mundo moderno, pero no hay nada peor que alguien no preparado, y no me refiero a 
-portar paraguas en un dia nublado. Me refiero a que si realmente quieres el trabajo, lo minimo que deberias hacer es investigar y conocer a detalle 
-la empresa, sus politicas, algo de su historia, sus productos, etc. Esto te va a dar una ventaja competitiva y demuestra interes al entrevistador,
+He visto muchos casos de super gurus que llegan a la entrevista sin preparacion y simplemente "dan la hora". He visto quienes ni siquiera saben a que van,
+no leyeron o investigaron al respecto, no leyeron ni un articulo sobre la empresa a la que desean postular y en definitiva esperan ser elegidos por lo
+buena onda.
 
-Luego de aprenderte de memoria el sitio web de la empresa, su mision y vision, queda investigar algo mas, lo que solo podrias saber preguntando a 
-trabajadores. Temas como sueldo, clima laboral, beneficios, visa, etc
+Como todo en la vida, tener exito en una entrevista tecnica del nivel de Google, Microsoft, Amazon, etc. requiere practica y preparacion. No llegar sonriendo el 
+dia de la entrevista. Osea, si realmente quieres el trabajo, lo minimo que deberias hacer es investigar sobre la empresa, su cultura, mision, vision, estrategia, 
+productos, servicios, noticias recientes y ademas estudiar su tecnologia (puedes obtener esta informacion del mismo aviso de empleo o de otros avisos similares).
+
+Si realmente quieres el empleo, entonces preparate, ganate el puesto.
 
 ### Practica tu spanglish
-### Libros que debes leer
+
+Si, las entrevistas son en ingles. No, no hay excepciones. Aunque muchas veces no necesitaras tener un ingles fluido a nivel nativo, si debes tener la capacidad 
+de poder entender instrucciones, realizar comentarios, entender la documentacion y ser capaz de explicar un modelo de arquitectura de sistemas en forma basica.
+
+Por lo que si no te sientes al nivel, entonces practica, estudia y preparate.
+
+### Libros no-tecnicos que debes leer
+
+Si vas a una entrevista tecnica lo minimo que deberias hacer es dar un repaso a tus apuntes o alguno que otro librillo sobre algoritmos, estructuras de dato y desarrollo 
+orientado a objetos. Sin embargo hay un libro en particular que DEBES leer, esta disponible en varios sitios y se llama "The Google Resume". (Si, esta en ingles y si, 
+tienes que leerlo completo). Te da flojera?, por favor deja de leer este post y vuelve a tu trabajo en alguna empresa "Moledora de Carne 2.0". Queres seguir 
+leyendo el post? vamos entonces que seguro te mereces el trabajo.
+
+El libro mencionado es una excelente herramienta que no solo te ensenara como funciona el proceso, tambien te dara los tips necesarios para que te vaya bien en la entrevista. 
+Cubre cosas tales como el como vestirse, que cosas preguntar, que puedes esperar del proceso, etc.
+
 ### Averigua de que trata el puesto
-#### Salario
+
+Antes de responder al reclutador sobre cual es tu pretencion de renta, o hacer preguntas tontas sobre el trabajo, dejame darte una excelente fuente de informacion. Se llama
+Glassdoor.com y podras encontrar toda la informacion relevalente al cargo que estas postulando, por ejemplo: "SDE Salary Amazon".
+
+Fijate bien en el tema de package/vs salary. El sueldo o salary es el pago mensual, que normalmente lo presentan por un monto anual, en ocasiones esto puede ser algo bajo, 
+pero la mayoria de las empresas ofrecen otros montos adicionales al sueldo que en su conjunto le llaman paquete. Un paquete tipico por ejemplo podria ser:
+
+* Sueldo: Entre 120K anuales
+* Bono por firmar: 25K
+* Acciones (RSU): 120
+* Bono relocacion: 15K
+
+Total paquete: 160K + 120 RSU
+
 #### Visa
 #### Condiciones
-#### Sueldo
 
 
 ## Preparando la entrevista
