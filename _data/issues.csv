@@ -1,11 +1,11 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2408,205844146,2017-02-07 14:41:38,2017-02-07 10:20:28,Frigo ad una porta per roulotte #Muccia,,,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""frigo usato ad una porta per roulottte"", ""data"": ""07/02/2017"", ""descrizione"": ""Sono un terremotato di Muccia mi \u00e8 stata regalata una roulotte ma \u00e8 priva di frigorifero, chiedo se \u00e8 possibile trovarne uno piccolo ad una porta, grazie"", ""email"": ""g.catlocop@alice.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""338 9942731""}","<pre><yamldata>tel: '338 9942731'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2408,205844146,2017-02-07 15:39:14,2017-02-07 10:20:28,Frigo ad una porta per roulotte #Muccia,43.0823200,13.0432300,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""frigo usato ad una porta per roulottte"", ""data"": ""07/02/2017"", ""descrizione"": ""Sono un terremotato di Muccia, mi \u00e8 stata regalata una roulotte ma \u00e8 priva di frigorifero, chiedo se \u00e8 possibile di trovarne uno piccolo ad una porta, grazie."", ""email"": ""g.catlocop@alice.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": ""43.0823200"", ""link"": """", ""lon"": ""13.0432300"", ""tel"": ""338 9942731""}","<pre><yamldata>tel: '338 9942731'
 email: g.catlocop@alice.it
 cosa: 'frigo usato ad una porta per roulottte'
-descrizione: 'Sono un terremotato di Muccia mi è stata regalata una roulotte ma è priva di frigorifero, chiedo se è possibile trovarne uno piccolo ad una porta, grazie'
+descrizione: 'Sono un terremotato di Muccia, mi è stata regalata una roulotte ma è priva di frigorifero, chiedo se è possibile di trovarne uno piccolo ad una porta, grazie.'
 indirizzo: ''
-lat: ''
-lon: ''
+lat: '43.0823200'
+lon: '13.0432300'
 link: ''
 immagine: ''
 data: 07/02/2017
