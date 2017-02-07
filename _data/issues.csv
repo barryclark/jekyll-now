@@ -1,4 +1,20 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2411,205946768,2017-02-07 16:57:13,2017-02-07 16:43:47,Terremoto: domani a #Visso operativa la nuova sede del Comune,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""07/02/2017"", ""descrizione"": ""Si inaugura domani, mercoled\u00ec 8 febbraio alle 12, la nuova sede del Comune di Visso"", ""link"": ""http://www.meteoweb.eu/2017/02/terremoto-domani-a-visso-operativa-la-nuova-sede-del-comune-con-curcio-ed-errani/850652/"", ""titolo"": ""Terremoto: domani a Visso operativa la nuova sede del Comune con Curcio ed Errani""}","<pre><yamldata>titolo: 'Terremoto: domani a Visso operativa la nuova sede del Comune con Curcio ed Errani'
+descrizione: 'Si inaugura domani, mercoledì 8 febbraio alle 12, la nuova sede del Comune di Visso'
+link: 'http://www.meteoweb.eu/2017/02/terremoto-domani-a-visso-operativa-la-nuova-sede-del-comune-con-curcio-ed-errani/850652/'
+data: 07/02/2017
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2410,205943205,2017-02-07 16:56:19,2017-02-07 16:32:56,Donazione 2 macchine per maglieria professionali funzionanti disponibili a Verona,,,"[""Accettato"", ""Donazioni"", ""Form""]",,,"{""cosa"": ""2  macchine per maglieria professionali funzionanti pronte all'uso disponibili a Verona"", ""data"": ""07/02/2017"", ""descrizione"": ""Per chi fosse interessato posso inviare ulteriori informazioni con le fotografie delle macchine e relativi accessori d'uso.Chiamatemi risponder\u00f2 direttamente al mio cell. segnato nella scheda.Saluti.Paolo Tosi Verona"", ""email"": ""tipomac1002@libero.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3339937339""}","<pre><yamldata>tel: '3339937339'
+email: tipomac1002@libero.it
+cosa: '2  macchine per maglieria professionali funzionanti pronte all''uso disponibili a Verona'
+descrizione: 'Per chi fosse interessato posso inviare ulteriori informazioni con le fotografie delle macchine e relativi accessori d''uso.Chiamatemi risponderò direttamente al mio cell. segnato nella scheda.Saluti.Paolo Tosi Verona'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 07/02/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2408,205844146,2017-02-07 15:40:07,2017-02-07 10:20:28,Cercasi frigo ad una porta per roulotte a #Muccia,43.0823200,13.0432300,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""frigo usato ad una porta per roulottte"", ""data"": ""07/02/2017"", ""descrizione"": ""Sono un terremotato di Muccia, mi \u00e8 stata regalata una roulotte ma \u00e8 priva di frigorifero, chiedo se \u00e8 possibile di trovarne uno piccolo ad una porta, grazie."", ""email"": ""g.catlocop@alice.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": ""43.0823200"", ""link"": """", ""lon"": ""13.0432300"", ""tel"": ""338 9942731""}","<pre><yamldata>tel: '338 9942731'
 email: g.catlocop@alice.it
 cosa: 'frigo usato ad una porta per roulottte'
@@ -15151,18 +15167,6 @@ bic: BCITITMM
 postale: '15204639'
 causale: 'Chiese Amandola e Beni Culturali Amandola'
 link: 'https://www.facebook.com/groups/1758670357733881/permalink/1764952897105627/'
-email: ''
-data: 14/09/2016
-</yamldata></pre>
-",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/271,176857171,2016-10-01 16:19:53,2016-09-14 09:22:27,ANCI Toscana,,,"[""Accettato"", ""Form"", ""Notizie Utili"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""ANCI Toscana"", ""data"": ""14/09/2016"", ""descrizione"": ""#ToscanaperlaRicostruzione pagina sul sito di ANCI Toscana dove vengono raccolte tutte le iniziative dei Comuni toscani in sostegno delle popolazioni colpite dal terremoto"", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""http://www.ancitoscana.it/component/k2/603-terremoto-una-pagina-ad-hoc-per-le-iniziative-dei-comuni-toscani.html"", ""postale"": """"}","<pre><yamldata>chi: 'ANCI Toscana'
-descrizione: '#ToscanaperlaRicostruzione pagina sul sito di ANCI Toscana dove vengono raccolte tutte le iniziative dei Comuni toscani in sostegno delle popolazioni colpite dal terremoto'
-intestazione: ''
-iban: ''
-bic: ''
-postale: ''
-causale: ''
-link: 'http://www.ancitoscana.it/component/k2/603-terremoto-una-pagina-ad-hoc-per-le-iniziative-dei-comuni-toscani.html'
 email: ''
 data: 14/09/2016
 </yamldata></pre>
