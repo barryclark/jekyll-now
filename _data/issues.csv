@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2412,205971886,2017-02-07 19:34:32,2017-02-07 18:18:24,Cercasi Pneumatici per trattore,,,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""Pneumatici"", ""data"": ""07/02/2017"", ""descrizione"": ""Cerco 4 gomme usate, in buono stato, x il mio trattore qualcuno mi pu\u00f2 aiutare? Le misure sono : posteriori 480/70/34 anteriori 420/70/24 .. contattatemi in privato . Grazie in anticipo."", ""email"": ""bernardinoperotti@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3289833822""}","<pre><yamldata>tel: '3289833822'
+email: bernardinoperotti@gmail.com
+cosa: Pneumatici
+descrizione: 'Cerco 4 gomme usate, in buono stato, x il mio trattore qualcuno mi può aiutare? Le misure sono : posteriori 480/70/34 anteriori 420/70/24 .. contattatemi in privato . Grazie in anticipo.'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 07/02/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2411,205946768,2017-02-07 16:57:13,2017-02-07 16:43:47,Terremoto: domani a #Visso operativa la nuova sede del Comune,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""07/02/2017"", ""descrizione"": ""Si inaugura domani, mercoled\u00ec 8 febbraio alle 12, la nuova sede del Comune di Visso"", ""link"": ""http://www.meteoweb.eu/2017/02/terremoto-domani-a-visso-operativa-la-nuova-sede-del-comune-con-curcio-ed-errani/850652/"", ""titolo"": ""Terremoto: domani a Visso operativa la nuova sede del Comune con Curcio ed Errani""}","<pre><yamldata>titolo: 'Terremoto: domani a Visso operativa la nuova sede del Comune con Curcio ed Errani'
 descrizione: 'Si inaugura domani, mercoledì 8 febbraio alle 12, la nuova sede del Comune di Visso'
 link: 'http://www.meteoweb.eu/2017/02/terremoto-domani-a-visso-operativa-la-nuova-sede-del-comune-con-curcio-ed-errani/850652/'
