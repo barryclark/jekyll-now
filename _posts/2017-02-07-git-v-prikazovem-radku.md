@@ -14,7 +14,7 @@ Nainstaluj si Git. Pro osX najdeš návod třeba na [code.google.com](http://cod
 git help
 ```
 
-Správě by ti měl ukázat nově dostupné možnosti Gitu. Pokud ne, někde v instalaci nastala chyba. 
+Správě by ti měl ukázat všechny nově dostupné možnosti Gitu. Pokud ne, někde v instalaci nastala chyba. 
 
 # Základní příkazy
 ## Nový repozitář
@@ -36,7 +36,7 @@ git clone https://github.com/tomtomklima/tomtomklima.github.io.git
 ```
 
 ## Přidání souboru do repozitáře a vytvoření commitu
-Soubor se do repozitáře sám **nepřidá**, dokud se Gitu specificky neřekne, že ho má přidat. Soubory se tedy nepřidávají automaticky - je to neintuitivní, ale užitečné. 
+Soubor se do repozitáře sám **nepřidá**, dokud se Gitu specificky neřekne, že ho má přidat. Soubory se tedy nepřidávají automaticky - je to neintuitivní, ale ve výsledku velmi užitečné. 
 
 ```git
 git add index.php #přidej soubor index.php
@@ -55,7 +55,7 @@ Tímto se soubory dostanou do lokálního repozitáře, ale ještě ne do toho v
 ## Nahrání změn do vzdáleného repozitáře
 Když jsi spokojený se stavem svého lokálního repozitáře, můžeš ho svěřit světu. 
  
-Pokud je projekt klonovaný, není potřeba vzdálený repozitář přidávat ručně, git už ho tam přidal sám. Pokud jsi ale svůj projekt neklonoval, ale vytvářel nový, je potřeba přidat tvůj nový vzdálený repozitář třeba na githubu (nezapomeň si ho tam online založit!) pomocí příkazu
+Pokud je projekt *klonovaný*, není potřeba vzdálený repozitář přidávat ručně, git už ho tam přidal sám. Pokud jsi svůj projekt neklonoval, ale *vytvářel nový*, je potřeba do repozitáře přidat tvůj nový vzdálený repozitář třeba na githubu (nezapomeň si ho tam online založit!) pomocí příkazu
 
 ```git
 git remote add origin [cesta na vzdálený repozitář]
@@ -87,18 +87,18 @@ Pro zobrazení logu s jedním commitem na řádek použij
 git log --pretty=oneline
 ```
 
-a pro hezké ASCII art zobrazení větví třeba
+a pro hezký ASCII art zobrazení větví třeba
 ```git
 git log --graph --oneline --decorate --all
 ```
 
-Nastavení příznaků pro příkaz `git log` je hodně; všechny najdeš pomocí `git log --help`. 
+Nastavení příznaků pro příkaz `git log` je hodně. Všechny najdeš pomocí `git log --help`. 
 
-A to je ze základních příkazů vše!
+A to je ze základních příkazů vše, teď můžeš používat Git jako každý průměrný uživatel! 
 
 # Pokročilé příkazy
 ## Větvení (branching) projektu na víc verzí
-Větve v Gitu se používají pro více verzí projektu najednou. Hlavní projekt je držen v hlavní větvi standardně pojmenované `master`. Když chceš začít v projektu vyvíjet novou funkci, tak je nejlepší pracovat na své verzi (větvi) kódu a teprve až s ní budeš spokojený, obě větve projektu spojit. 
+Větve v Gitu se používají pro držení více verzí projektu najednou. Hlavní projekt je většinou obsažen v hlavní větvi standardně pojmenované `master`. Když chceš začít v projektu vyvíjet novou funkci, tak je nejlepší pracovat na své vlastní, nezávislé verzi (větvi) kódu a teprve až s ní budeš spokojený, obě větve projektu spojit - nebo přesněji, provést se svou větví do té hlavní *merge* (bude vysvětleno níže). 
 
 Novou větev projektu založíš příkazem
 
@@ -109,9 +109,11 @@ git checkout -b nova-funkce-foo
 Pro změnu aktuální větve, kde pracuješ, použij příkaz
 
 ```git
-git checkout [žádaná větev]
+git checkout [chtěná větev]
 #tedy pro hlavní větev
 git checkout master
+#a zpět do naší nové větve
+git checkout nova-funkce-foo
 ```
 
 Na smazání větve, kterou už nepotřebuješ, napiš příkaz
@@ -127,9 +129,13 @@ Aktualizace ze vzdáleného repozitáře do lokálního se provádí příkazem
 
 ```git
 git pull
+#nebo při potřebě konkrétní větve
+git pull [vzdálený repozitář] [žádaná větev]
+#takže
+git pull origin master
 ```
 
-Je důležité ji dělat často, protože bys jinak mohl pracovat s neaktuálním kódem a třeba vyvíjet či opravovat něco, co už jiný vývojář zvládnul před tebou. 
+Je důležité aktualizaci dělat často, protože bys jinak mohl pracovat s neaktuálním kódem a třeba vyvíjet či opravovat něco, co už jiný vývojář zvládnul před tebou. V praxi se pro představu spouští minimálně ráno a potom třeba po obědě. 
 
 ## Spojení (merge) různých verzí projektu
 Pro náhled spojení dvou verzí projektu použij příkaz 
@@ -140,7 +146,7 @@ git diff [zdrojová větev] [cílová větev]
 git diff nova-funkce-foo master
 ```
 
-Pro spojení tvé lokální verze s hlavní větví projektu (nezapomň přepnout do hlavní větve pomocí `git checkout master`) použij příkaz
+Pro spojení tvé lokální verze do hlavní větve projektu (nezapomň přepnout do hlavní větve pomocí `git checkout master`) použij příkaz
 
 ```git
 git merge [tvoje větev]
@@ -157,6 +163,8 @@ Pro vrácení obsahu souboru stačí použít příkaz
 
 ```git
 git checkout -- [název souboru]
+#tedy třeba
+git checkout -- index.php
 ```
 
 Smazání všech lokálních změn a navrácení projektu do stejného stavu jako je ve vzdáleném repozitáři provedeš příkazem
