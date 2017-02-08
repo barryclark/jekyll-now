@@ -1,0 +1,108 @@
+#contact
+	@include tile
+	
+	.wrapper
+		@include wrapper
+		flex-direction: column
+		justify-content: center
+		
+		.blurb
+			max-width: 950px
+			margin-top: -45px
+			text-align: center
+			
+			h2
+				@include heading
+				
+			p
+				margin-bottom: 45px
+				
+		form
+			position: relative
+			display: flex
+			max-width: 600px
+			flex-wrap: wrap
+			justify-content: space-between
+			color: $black
+			font-family: $raleway
+						
+			input[type="email"],
+			input[type="text"]
+				width: 42%
+				height: 40px
+				padding: 0 15px
+				border: 1px solid $black
+				border-radius: 20px
+				transition-duration: 0.5s
+				background: transparent
+				
+				&::placeholder
+					color: $black
+				&::-webkit-input-placeholder
+					color: $black
+				&::-moz-placeholder
+					color: $black
+				:-moz-placeholder
+					color: $black
+				:-ms-input-placeholder
+					color: $black
+								
+				&:focus
+					outline: none
+					box-shadow: 0 0 15px 5px #b3daff
+					transition-duration: 0.5s
+			textarea
+				width: 100%
+				height: 90px
+				margin: 30px 0
+				padding: 10px 15px
+				border: 1px solid $black
+				border-radius: 20px
+				transition-duration: 0.5s
+				background: transparent
+				resize: none
+				
+				&::placeholder
+					color: $black
+				&::-webkit-input-placeholder
+					color: $black
+				&::-moz-placeholder
+					color: $black
+				:-moz-placeholder
+					color: $black
+				:-ms-input-placeholder
+					color: $black
+					
+				&:focus
+					outline: none
+					box-shadow: 0 0 15px 5px #b3daff
+					transition-duration: 0.5s
+				
+			input[type="submit"]
+				width: 100%
+				height: 40px
+				color: $white
+				font-weight: 700
+				text-transform: uppercase
+				border: none
+				border-radius: 0
+				background-color: $black
+				
+			@media (max-width: 640px)
+				input[type="email"],
+				input[type="text"]
+					width: 100%
+					margin-bottom: 10px
+					
+				textarea
+					margin: 0 0 10px 0
+						
+	.copyright
+		position: absolute
+		bottom: 10px
+		left: 50%
+		transform: translate(-50%)
+		margin-bottom: 0
+		font-family: $raleway
+		font-size: 12px
+		

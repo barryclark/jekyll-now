@@ -1,0 +1,51 @@
+#featured
+	@include tile
+	
+	.wrapper
+		@include wrapper
+	
+		.blurb
+			width: 45%
+			
+			&:after
+				content: ""
+				display: inline-block
+				width: 1px
+				height: 70px
+				background-color: $black
+		
+			h2
+				@include heading
+				
+			p
+				max-width: 400px
+				margin-bottom: 30px
+			
+		.featured
+			width: 55%
+		
+			img
+				width: 100%
+				
+		@media (max-width: 1023px)
+			.blurb
+				display: flex
+				width: 100%
+				flex-direction: column
+				align-items: flex-end
+				text-align: right
+				
+				&:after
+					display: none
+					
+				p
+					margin-bottom: 0
+				
+			.featured
+				display: none
+				
+		@media (max-width: 640px)
+			.blurb
+				align-items: center
+				text-align: center
+				

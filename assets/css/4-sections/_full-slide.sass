@@ -1,0 +1,73 @@
+#full-slide
+	@include tile
+	
+	.banner
+		position: relative
+		width: 100%
+		height: 100%
+		margin: 0
+		padding: 0
+		list-style: none
+		
+		li
+			position: absolute
+			top: 0
+			left: 0
+			right: 0
+			bottom: 0
+			background:
+				position: center
+				size: cover
+				repeat: no-repeat
+			opacity: 0
+			transition: opacity .6s ease-in-out
+			
+			&.active
+				opacity: 1
+				transition: opacity .6s ease-in-out
+		
+		li:nth-child(1)
+			background-image: url('../img/full-slide/thumb-1.jpg')
+			
+		li:nth-child(2)
+			background-image: url('../img/full-slide/thumb-2.jpg')
+			
+		li:nth-child(3)
+			background-image: url('../img/full-slide/thumb-3.jpg')
+					
+	i
+		position: absolute
+		top: 50%
+		transform: translateY(-50%) scale(1)
+		width: 60px
+		height: 60px
+		font-size: 28px
+		text-align: center
+		line-height: 60px
+		background-color: $white
+		cursor: pointer
+		z-index: 10
+		transition: all .2s ease-in-out
+		
+		&:hover
+			transform: translateY(-50%) scale(1.1)
+		
+	.prev
+		left: 30px
+		
+	.next
+		right: 30px
+		
+	@media (max-width: 767px)
+		i
+			transform: translateY(-50%) scale(.7)
+			
+			&:hover
+				transform: translateY(-50%) scale(.8)
+				
+		.prev
+			left: 0
+			
+		.next
+			right: 0
+			

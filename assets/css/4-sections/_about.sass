@@ -1,0 +1,75 @@
+#about
+	@include tile
+	
+	.wrapper
+		@include wrapper
+		
+		.pool
+			width: 45%
+	
+			img
+				width: 85%
+				transform: rotate(-50deg) scale(1.4)
+				transform-origin: center
+				
+		.blurb
+			width: 55%
+		
+			h2
+				@include heading
+				
+				&:before
+					content: ""
+					position: relative
+					bottom: 15px
+					display: inline-block
+					width: 70px
+					height: 1px
+					margin-right: 30px
+					background-color: $black
+					
+			p		
+				max-width: 600px
+				margin-bottom: 45px
+			
+			.social
+				display: flex
+				width: 180px
+				justify-content: space-between
+				
+				a
+					color: $white
+					text-decoration: none
+				
+				i
+					display: block
+					width: 30px
+					height: 30px
+					font-size: 16px
+					text-align: center
+					line-height: 30px
+					background-color: #64AFF7
+					transition: background-color .2s ease-in-out
+					
+					&:hover
+						background-color: #2162A1
+						
+		@media (max-width: 1023px)
+			.pool
+				display: none
+					
+			.blurb
+				display: flex
+				width: 100%
+				flex-direction: column
+				align-items: flex-end
+				text-align: right
+				
+				h2:before
+					display: none
+					
+		@media (max-width: 640px)
+			.blurb
+				align-items: center
+				text-align: center
+				

@@ -18,18 +18,23 @@ html {
 }
 
 body {
-	background: $white;
+  background: $white;
   font: 18px/1.4 $helvetica;
   color: $darkGray;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
 }
 
 .container {
   margin: 0 auto;
-  max-width: 740px;
-  padding: 0 10px;
   width: 100%;
 }
-
+.main{
+  margin: 0 auto;
+  width: 100%;
+  max-width: 740px;
+  padding: 0 10px;
+}
 h1, h2, h3, h4, h5, h6 {
   font-family: $helveticaNeue;
   color: $darkerGray;
@@ -68,8 +73,22 @@ p {
   margin: 15px 0;
 }
 
+nav a {
+  color: $yellow;
+  text-decoration: none;
+	cursor: pointer;
+  &:hover, &:active {
+    color: $yellow;
+    text-shadow: 0 0 14px $black;
+    background-color: $black;
+    box-shadow: 0 0 25px 13px $black;
+    transition-duration: 0.5s;
+    border-radius: 1em;
+  }
+}
+
 a {
-  color: $blue;
+  color: $black;
   text-decoration: none;
 	cursor: pointer;
   &:hover, &:active {
@@ -108,6 +127,64 @@ strong, b {
 
 img {
   max-width: 100%;
+  transition-duration: 0.5s;
+}
+header h1 {
+    text-align: center;
+    font-size: 72px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 20px;
+    clear: both;
+    padding-top: 100px;
+    line-height: 1.05;
+    
+    @include mobile{
+        padding-top: 20px;    
+    }
+}
+h3#work{
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 400;
+    padding: 0 0 0 2em;
+    border-bottom: 3px solid #00ffad;
+    line-height: 1;
+    margin: 0 0 20px 0px;
+    border-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='50' height='50'><defs><linearGradient id='redgradient'><stop offset='0' stop-color='%23FC373C'/><stop offset='0.362' stop-color='%23FAD64F'/><stop offset='1' stop-color='%23323C40'/></linearGradient></defs><g id='Layer_1'><path d='M0,0 L50,0 L50,50 L0,50 L0,0 z' fill='url(%23redgradient)' width='100%' height='100%'/></g></svg>") 10% stretch;
+}
+header h1 span {
+    display: inline-block;
+    padding: 0.2em 0.5em;
+    border: #fff solid 10px;
+    border-radius: 0.3em;
+    font-size: 72px;
+    border-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='50' height='50'><defs><linearGradient id='redgradient'><stop offset='0' stop-color='%23FC373C'/><stop offset='0.362' stop-color='%23FAD64F'/><stop offset='1' stop-color='%23323C40'/></linearGradient></defs><g id='Layer_1'><path d='M0,0 L50,0 L50,50 L0,50 L0,0 z' fill='url(%23redgradient)' width='100%' height='100%'/></g></svg>") 10% stretch;
+    
+    @include mobile {
+        padding:0.2em 0em;
+        font-size: 62px;
+    }
+}
+header .small-text{
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #fff;
+    line-height: 1;
+    text-shadow: 0 0 15px $yellow;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: $helvetica;
+}
+.header_bottom_hr{
+    border-bottom: 2px solid #D4B94C;
+    width: 100%;
+    max-width: 740px;
+    margin: 0 auto;
+    border-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='50' height='50'><defs><linearGradient id='redgradient'><stop offset='0' stop-color='%23FC373C'/><stop offset='0.362' stop-color='%23FAD64F'/><stop offset='1' stop-color='%23323C40'/></linearGradient></defs><g id='Layer_1'><path d='M0,0 L50,0 L50,50 L0,50 L0,0 z' fill='url(%23redgradient)' width='100%' height='100%'/></g></svg>") 10% stretch;
 }
 
 // Fixes images in popup boxes from Google Translate
@@ -152,11 +229,20 @@ img {
 
 .wrapper-masthead {
   margin-bottom: 50px;
+  background-position: 50% 30%;
+  background-image: url(../images/header-2.png);
+  padding-bottom: 23px;
+  box-shadow: 0 0px 33px 0px black;
+}
+.wrapper-masthead, .wrapper-footer{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: normal;
+    background-attachment: fixed;
 }
 
 .masthead {
-  padding: 20px 0;
-  border-bottom: 1px solid $lightGray;
+  padding: 20px 0 0 0;
 
   @include mobile {
     text-align: center;
@@ -211,28 +297,37 @@ img {
 }
 
 nav {
-  float: right;
-  margin-top: 23px; // @TODO: Vertically middle align
-  font-family: $helveticaNeue;
-  font-size: 18px;
-
-  @include mobile {
-    float: none;
-    margin-top: 9px;
-    display: block;
-    font-size: 16px;
-  }
+    display: flex;
+    margin-top: 23px;
+    font-family: $helveticaNeue;
+    font-size: 18px;
+    justify-content: center;
+    
+    @include mobile {
+        float: none;
+        margin-top: 9px;
+        display: flex;
+        font-size: 16px;
+    }
 
   a {
-    margin-left: 20px;
-    color: $darkGray;
-    text-align: right;
-    font-weight: 300;
+    margin: 0px 5em;
+    color: $white;
+    text-align: center;
+    font-weight: 800;
     letter-spacing: 1px;
+    text-shadow: 0 0 15px $yellow;
+    transition-duration: 0.5s;
+    text-transform: uppercase;
 
     @include mobile {
+      display: flex;
+      justify-content: center;
+      text-transform: uppercase;
       margin: 0 10px;
-      color: $blue;
+      color: $white;
+      text-shadow: 0 0 15px $yellow;
+      transition-duration: 0.5s;
     }
   }
 }
@@ -273,9 +368,9 @@ nav {
 
 .wrapper-footer {
   margin-top: 50px;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  background-color: $lightGray;
+  background-image: url(../images/header-2.png);
+  background-position: 50% 84%;
+  box-shadow: 0 0px 33px 0px black;
 }
 
 footer {
@@ -283,7 +378,224 @@ footer {
   text-align: center;
 }
 
+//work section
+
+//modal begin
+.modal {
+  will-change: visibility, opacity;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  z-index: 1000;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+     -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+}
+.modal--active {
+  visibility: visible;
+  opacity: 1;
+}
+.modal--align-top {
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.modal__bg {
+  background: transparent;
+}
+.modal__dialog {
+  max-width: 600px;
+  padding: 1.2rem;
+}
+.modal__content {
+  will-change: transform, opacity;
+  background: $white;
+  position: relative;
+  padding: 2.4rem;
+  background-clip: padding-box;
+  box-shadow: 0 12px 15px 0 rgba(0,0,0,0.25);
+  opacity: 0;
+  -webkit-transition: all 0.25s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: all 0.25s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.modal__content--active {
+  opacity: 1;
+}
+.modal__close {
+  z-index: 1100;
+  cursor: pointer;
+}
+.modal__trigger {
+  position: relative;
+  cursor: pointer;
+  -webkit-transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  -webkit-flex: 0 0 33%;
+  flex: 0 0 33%;
+    @include mobile {
+         margin: 0 5%;
+         -webkit-flex: 0 0 100%;
+         flex: 0 0 100%;
+         position: relative;
+         cursor: pointer;
+         -webkit-transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+         transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    
+}
+.modal__trigger--active {
+  z-index: 10;
+}
+#modal__temp {
+  will-change: transform, opacity;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transform: none;
+          transform: none;
+  opacity: 1;
+  -webkit-transition: opacity 0.1s ease-out, -webkit-transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: opacity 0.1s ease-out, -webkit-transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: opacity 0.1s ease-out, transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: opacity 0.1s ease-out, transform 0.5s cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+//end modal section
+/**
+ * Demo specific CSS
+ */
+.demo-btns header {
+  padding: 7vh 10vw;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.demo-btns header h1 {
+  margin: 0;
+  color: rgba(0,0,0,0.54);
+  font-weight: 300;
+}
+.demo-btns .info {
+  background: $white;
+  padding: 3vh 10vw;
+  height: 70vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-flex-flow: column wrap;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+}
+.demo-btns p {
+  text-align: center;
+  color: #fff;
+}
+.demo-btns .link {
+  font-size: 20px;
+}
+.demo-btns .modal__trigger {
+  margin-right: 3px;
+}
+@media (max-width: 640px) {
+  .demo-btns .modal__trigger {
+    margin-bottom: 0.8rem;
+  }
+}
+.demo-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 1.2rem;
+  padding: 0.6rem;
+  background: rgba(0,0,0,0.3);
+  border-radius: 50%;
+  -webkit-transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.demo-close svg {
+  width: 24px;
+  fill: #fff;
+  pointer-events: none;
+  vertical-align: top;
+}
+.demo-close:hover {
+  background: rgba(0,0,0,0.6);
+}
+div.info{
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    
+}
+.flex-p{
+    display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+	-webkit-justify-content: center;
+	justify-content:center;
+}
+img.modall:hover{
+    //transform: matrix(0.55,-0.15,0,0.8,-100,0);
+    transform: scale(0.8);
+    transition-duration: 0.5s;
+    box-shadow: 0px 20px 25px 5px rgba(128, 128, 128, 0.59);
+}
+//end demo
+
+h1 a .logo:hover{
+    -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #2aab33;
+  background-image: linear-gradient(to right, #FC373C 0%, #FAD64F 28.2%, #323C40 125%);
+  background-image: -o-linear-gradient(transparent, transparent);
+  transition-duration: 1.2s;
+  box-shadow: 0 0 18px 2px #fbc74d;
+}
+
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
 @import "svg-icons";
+
+
+
+
+

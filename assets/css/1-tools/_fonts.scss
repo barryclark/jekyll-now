@@ -1,0 +1,16 @@
+// https://fonts.googleapis.com/css?family=Raleway
+
+@import 'https://fonts.googleapis.com/css?family=Raleway:100,400,700';
+
+// https://www.fontsquirrel.com/fonts/Latin-Modern-Roman
+
+@font-face {
+  font-family: 'LMRomanSlant10';
+  src: url('fonts/lmromanslant10-regular-webfont.eot');
+  src: url('fonts/lmromanslant10-regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('fonts/lmromanslant10-regular-webfont.woff') format('woff'),
+       url('fonts/lmromanslant10-regular-webfont.ttf') format('truetype'),
+       url('fonts/lmromanslant10-regular-webfont.svg#latin_modern_roman_slante10Rg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
