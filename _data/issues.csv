@@ -1,4 +1,14 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2422,206274042,2017-02-08 21:30:15,2017-02-08 17:52:04,Offresi appartamento a Grosio in Valtellina anche per l'estate,46.2989301,10.2745156,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""08/02/2017"", ""descrizione"": ""Salve offro a Grosio in Valtellina da marzo e per tutta l'estate appartamento per 4 persone in ordine e ben sistemato, ideale per famiglia con bambini (sopratutto questi ultimi troverebbero un ambiente pieno di ragazzini in et\u00e0 scolare con cui legare e spazio per giocare). Io abito a venti metri da questo appartamento perci\u00f2 sono disponibile in caso di necessit\u00e0. Grosio \u00e8 un piccolo centro montano di 4500 persone con negozi, scuole, oratorio, ospedale a dieci minuti. Se qualcuno fosse interessato a salire anche solo per l'estate mi faccia sapere che lo tengo libero. Vi aspetto, forza amici!"", ""email"": ""manuost@alice.it"", ""immagine"": """", ""indirizzo"": ""Via Roma, Grosio, Comunit\u00e0 Montana della Valtellina di Tirano, Sondrio, Lombardia, Italia"", ""lat"": ""46.2989301"", ""link"": ""http://www.grosio.info/"", ""lon"": ""10.2745156"", ""tel"": ""3498302251""}","<pre><yamldata>tel: '3498302251'
+email: manuost@alice.it
+descrizione: 'Salve offro a Grosio in Valtellina da marzo e per tutta l''estate appartamento per 4 persone in ordine e ben sistemato, ideale per famiglia con bambini (sopratutto questi ultimi troverebbero un ambiente pieno di ragazzini in età scolare con cui legare e spazio per giocare). Io abito a venti metri da questo appartamento perciò sono disponibile in caso di necessità. Grosio è un piccolo centro montano di 4500 persone con negozi, scuole, oratorio, ospedale a dieci minuti. Se qualcuno fosse interessato a salire anche solo per l''estate mi faccia sapere che lo tengo libero. Vi aspetto, forza amici!'
+indirizzo: 'Via Roma, Grosio, Comunità Montana della Valtellina di Tirano, Sondrio, Lombardia, Italia'
+lat: '46.2989301'
+lon: '10.2745156'
+link: 'http://www.grosio.info/'
+immagine: ''
+data: 08/02/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2421,206272560,2017-02-08 21:21:52,2017-02-08 17:46:21,"""Lettere dal terremoto"" - Gli alunni romani scrivono ai bimbi dei paesi terremotati",41.8935085,12.4825526,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Form"", ""Sisma Ottobre""]",,,"{""cosa"": ""\""Lettere dal terremoto\"" - Gli alunni romani scrivono ai bimbi dei paesi terremotati"", ""data"": ""08/02/2017"", ""descrizione"": ""Il progetto nasce da un lavoro gi\u00e0 avviato in alcune scuole romane, che stavano realizzando laboratori di scrittura narrativa e di giornalismo. Immediatamente dopo il terremoto l\u2019Associazione Libra, gi\u00e0 operativa come raccolta e consegna aiuti nelle zone terremotate, ha individuato la necessit\u00e0 (soprattutto da parte dei bambini di quelle zone) di recuperare la gioia della lettura e del contatto con i coetanei. Nasce quindi LETTERE DAL TERREMOTO, un progetto spontaneo e gratuito che chiede ai bimbi e ragazzi delle scuole romane di recuperare a casa UN LIBRO MOLTO AMATO, al cui interno viene lasciata una letterina o un disegno. Questo pacco dono verr\u00e0 consegnato ai ragazzi delle scuole colpite dal sisma. Finora ecco le scuole romane che hanno aderito: IL CUTIGLIANO (Roma Magliana), Istituto MANIN (Roma Esquilino). I libri e le letterine verranno recapitate nei paesi di Montefortino (Ascoli Piceno) e Pieve Torina (Macerata). I libri verranno consegnati tra marzo e aprile prossimi. Chiunque volesse partecipare al progetto pu\u00f2 scrivere a centro.culturale.libra@gmail.com"", ""email"": ""centro.culturale.libra@gmail.com"", ""immagine"": """", ""indirizzo"": ""Roma, RM, LAZ, Italia"", ""lat"": ""41.8935085"", ""link"": ""https://libraduepuntozero.wordpress.com/2017/02/08/lettere-dal-terremoto-caro-amico-ti-scrivo/"", ""lon"": ""12.4825526"", ""tel"": """"}","<pre><yamldata>tel: ''
 email: centro.culturale.libra@gmail.com
 cosa: '""Lettere dal terremoto"" - Gli alunni romani scrivono ai bimbi dei paesi terremotati'
@@ -70,10 +80,10 @@ link: 'http://www.iocisono.info'
 email: info@iocisono.info
 data: 07/02/2017
 </yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2412,205971886,2017-02-07 19:34:32,2017-02-07 18:18:24,Cercasi Pneumatici per trattore,,,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""Pneumatici"", ""data"": ""07/02/2017"", ""descrizione"": ""Cerco 4 gomme usate, in buono stato, x il mio trattore qualcuno mi pu\u00f2 aiutare? Le misure sono : posteriori 480/70/34 anteriori 420/70/24 .. contattatemi in privato . Grazie in anticipo."", ""email"": ""bernardinoperotti@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3289833822""}","<pre><yamldata>tel: '3289833822'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2412,205971886,2017-02-08 21:35:07,2017-02-07 18:18:24,Cercasi Pneumatici per trattore ad #Arquata del Tronto,,,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""Pneumatici"", ""data"": ""07/02/2017"", ""descrizione"": ""Sono di Arquata del Tronto. Cerco 4 gomme usate, in buono stato, x il mio trattore qualcuno mi pu\u00f2 aiutare? Le misure sono: posteriori 480/70/34 anteriori 420/70/24. Contattatemi in privato. Grazie in anticipo."", ""email"": ""bernardinoperotti@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3289833822""}","<pre><yamldata>tel: '3289833822'
 email: bernardinoperotti@gmail.com
 cosa: Pneumatici
-descrizione: 'Cerco 4 gomme usate, in buono stato, x il mio trattore qualcuno mi può aiutare? Le misure sono : posteriori 480/70/34 anteriori 420/70/24 .. contattatemi in privato . Grazie in anticipo.'
+descrizione: 'Sono di Arquata del Tronto. Cerco 4 gomme usate, in buono stato, x il mio trattore qualcuno mi può aiutare? Le misure sono: posteriori 480/70/34 anteriori 420/70/24. Contattatemi in privato. Grazie in anticipo.'
 indirizzo: ''
 lat: ''
 lon: ''
@@ -1815,16 +1825,6 @@ descrizione: 'Offriamo ospitalità a cavalli o asini provenienti dalle zone terr
 indirizzo: 'Podere Le Granchiaie, Magliano in Toscana, GR, Tuscany, Italia'
 lat: '42.58721367762801'
 lon: '11.255149841308594'
-link: ''
-immagine: ''
-data: 21/01/2017
-</yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2161,202323603,2017-01-21 16:23:35,2017-01-21 16:05:25,Possibilità di ospitare una famiglia in provincia di Cremona,,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""21/01/2017"", ""descrizione"": ""Ho la possibilit\u00e0 di ospitare nel mio appartamento una famiglia, 2 adulti e 1 o 2 bimbi. Mi trovo a Casalmaggiore provincia di Cremona"", ""email"": ""h2o11@libero.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3478059376""}","<pre><yamldata>tel: '3478059376'
-email: h2o11@libero.it
-descrizione: 'Ho la possibilità di ospitare nel mio appartamento una famiglia, 2 adulti e 1 o 2 bimbi. Mi trovo a Casalmaggiore provincia di Cremona'
-indirizzo: ''
-lat: ''
-lon: ''
 link: ''
 immagine: ''
 data: 21/01/2017
