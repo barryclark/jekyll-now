@@ -80,7 +80,7 @@ link: ''
 immagine: ''
 data: 06/02/2017
 </yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2403,205578256,2017-02-06 21:17:49,2017-02-06 13:06:22,Offresi camper 5 posti,,,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Form""]",,,"{""cosa"": ""Camper 5 posti"", ""data"": ""06/02/2017"", ""descrizione"": ""Fiat Ducato 2000 turbodiesel del 1994. Km. 90.000 - Marciante ma senza assicurazione - Bisogna riparare il lavandino del bagno. Il mezzo \u00e8 disponibile per il ritiro in un campeggio del Castelletto Ticino (NO)."", ""email"": ""gio.mantovani@libero.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3389059437""}","<pre><yamldata>tel: '3389059437'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2403,205578256,2017-02-08 11:01:34,2017-02-06 13:06:22,Offresi camper 5 posti,,,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Form""]",,,"{""cosa"": ""Camper 5 posti"", ""data"": ""06/02/2017"", ""descrizione"": ""Fiat Ducato 2000 turbodiesel del 1994. Km. 90.000 - Marciante ma senza assicurazione - Bisogna riparare il lavandino del bagno. Il mezzo \u00e8 disponibile per il ritiro in un campeggio del Castelletto Ticino (NO)."", ""email"": ""gio.mantovani@libero.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3389059437""}","<pre><yamldata>tel: '3389059437'
 email: gio.mantovani@libero.it
 cosa: 'Camper 5 posti'
 descrizione: 'Fiat Ducato 2000 turbodiesel del 1994. Km. 90.000 - Marciante ma senza assicurazione - Bisogna riparare il lavandino del bagno. Il mezzo è disponibile per il ritiro in un campeggio del Castelletto Ticino (NO).'
@@ -90,7 +90,7 @@ lon: ''
 link: ''
 immagine: ''
 data: 06/02/2017
-</yamldata></pre>",open
+</yamldata></pre>",closed
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2402,205570778,2017-02-07 08:15:33,2017-02-06 12:35:06,Associazione offre alloggi gratuiti a Monza ,,,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""06/02/2017"", ""descrizione"": ""Alcuni membri della nostra associazione mettono a disposizione alloggio per famiglie jn zona Monza gratuitamente. Per info: presidente@salvagenteitalia.org"", ""email"": ""presidente@salvagenteitalia.org"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3440691479""}","<pre><yamldata>tel: '3440691479'
 email: presidente@salvagenteitalia.org
 descrizione: 'Alcuni membri della nostra associazione mettono a disposizione alloggio per famiglie jn zona Monza gratuitamente. Per info: presidente@salvagenteitalia.org'
@@ -9108,7 +9108,7 @@ descrizione: 'Si comunica che tutti gli studenti Unicam sono esentati dal pagame
 link: 'http://www.unicam.it/'
 data: 02/11/2016
 </yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1056,186806908,2016-11-03 11:46:48,2016-11-02 13:55:00,Ospitalità per una famiglia fino a fine gennaio a Casalpusterlengo (Lodi),,,"[""Accettato"", ""Alloggi"", ""Form""]",Milestone(number=29),,"{""data"": ""02/11/2016"", ""descrizione"": ""Ospito in famiglia una famiglia fino a fine gennaio a Casalpusterlengo"", ""email"": ""franco.algieri@libero.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""347 5758039""}","<pre><yamldata>tel: '347 5758039'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1056,186806908,2017-02-08 11:02:33,2016-11-02 13:55:00,Ospitalità per una famiglia fino a fine gennaio a Casalpusterlengo (Lodi),,,"[""Accettato"", ""Alloggi"", ""Form""]",Milestone(number=29),,"{""data"": ""02/11/2016"", ""descrizione"": ""Ospito in famiglia una famiglia fino a fine gennaio a Casalpusterlengo"", ""email"": ""franco.algieri@libero.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""347 5758039""}","<pre><yamldata>tel: '347 5758039'
 email: franco.algieri@libero.it
 descrizione: 'Ospito in famiglia una famiglia fino a fine gennaio a Casalpusterlengo'
 indirizzo: ''
@@ -9117,7 +9117,7 @@ lon: ''
 link: ''
 immagine: ''
 data: 02/11/2016
-</yamldata></pre>",open
+</yamldata></pre>",closed
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1055,186733499,2016-11-02 08:03:07,2016-11-02 07:55:46,Comune di #Cantalice (#Rieti) - Ordinanza di sgombero,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili"", ""pubblicare in archive.org"", ""Sisma Ottobre""]",,,"{""data"": ""02/11/2016"", ""descrizione"": ""ORDINANZA N. 42 SGOMBERO DELLA POPOLAZIONE RESIDENTE NELL'AREA SOTTOSTANTE LA PARETE ROCCIOSA SITA IN PIAZZA DELLA REPUBBLICA"", ""link"": ""https://ia601505.us.archive.org/2/items/OrdinanzaDiSgomberoDellaPopolazione/ordinanza%20di%20sgombero%20della%20popolazione.pdf"", ""titolo"": ""Comune di Cantalice - Rieti""}","<pre><yamldata>titolo: 'Comune di Cantalice - Rieti'
 descrizione: 'ORDINANZA N. 42 SGOMBERO DELLA POPOLAZIONE RESIDENTE NELL''AREA SOTTOSTANTE LA PARETE ROCCIOSA SITA IN PIAZZA DELLA REPUBBLICA'
 link: 'https://ia601505.us.archive.org/2/items/OrdinanzaDiSgomberoDellaPopolazione/ordinanza%20di%20sgombero%20della%20popolazione.pdf'
