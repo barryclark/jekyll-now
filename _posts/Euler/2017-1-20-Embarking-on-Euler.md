@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Embarking on Euler
-permalink: /Euler/
+permalink: /Euler/Intro
 ---
 
 
