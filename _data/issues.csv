@@ -80,12 +80,12 @@ link: 'http://www.iocisono.info'
 email: info@iocisono.info
 data: 07/02/2017
 </yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2412,205971886,2017-02-08 21:35:07,2017-02-07 18:18:24,Cercasi Pneumatici per trattore ad #Arquata del Tronto,,,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""Pneumatici"", ""data"": ""07/02/2017"", ""descrizione"": ""Sono di Arquata del Tronto. Cerco 4 gomme usate, in buono stato, x il mio trattore qualcuno mi pu\u00f2 aiutare? Le misure sono: posteriori 480/70/34 anteriori 420/70/24. Contattatemi in privato. Grazie in anticipo."", ""email"": ""bernardinoperotti@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3289833822""}","<pre><yamldata>tel: '3289833822'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2412,205971886,2017-02-08 21:37:41,2017-02-07 18:18:24,Cercasi Pneumatici per trattore ad #Arquata del Tronto,42.7722867,,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""Pneumatici"", ""data"": ""07/02/2017"", ""descrizione"": ""Sono di Arquata del Tronto. Cerco 4 gomme usate, in buono stato, x il mio trattore. Qualcuno mi pu\u00f2 aiutare? Le misure sono: posteriori 480/70/34 anteriori 420/70/24. Contattatemi in privato. Grazie in anticipo."", ""email"": ""bernardinoperotti@gmail.com"", ""immagine"": """", ""indirizzo"": ""13.2949129"", ""lat"": ""42.7722867"", ""link"": """", ""lon"": """", ""tel"": ""3289833822""}","<pre><yamldata>tel: '3289833822'
 email: bernardinoperotti@gmail.com
 cosa: Pneumatici
-descrizione: 'Sono di Arquata del Tronto. Cerco 4 gomme usate, in buono stato, x il mio trattore qualcuno mi può aiutare? Le misure sono: posteriori 480/70/34 anteriori 420/70/24. Contattatemi in privato. Grazie in anticipo.'
-indirizzo: ''
-lat: ''
+descrizione: 'Sono di Arquata del Tronto. Cerco 4 gomme usate, in buono stato, x il mio trattore. Qualcuno mi può aiutare? Le misure sono: posteriori 480/70/34 anteriori 420/70/24. Contattatemi in privato. Grazie in anticipo.'
+indirizzo: '13.2949129'
+lat: '42.7722867'
 lon: ''
 link: ''
 immagine: ''
