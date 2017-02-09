@@ -75,13 +75,15 @@
 	{% if layout.isPost %}<body itemscope itemtype="http://schema.org/BlogPosting">{% elsif page.url == "/index.html" or page.url contains "/tags/" or page.url contains "/page" %}<body itemscope itemtype="http://schema.org/Blog">{% else %}<body>{% endif %}
 {% include metadata/schema.html %}  
 {% include social/facebook.html %}	    
+
+<div class="container">
 {% include header.html %}
-	
-<div id="main" role="main" class="container">
+<div id="main" role="main">
 {{ content }}
 </div>	
-	
 {% include footer.html %}
+</div>
+	
 {% include google/analytics.html %}
 </body>
 </html>
