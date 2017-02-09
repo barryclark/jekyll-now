@@ -53,4 +53,4 @@ Again, that's just me. I'd read the rules for yourself and see if this is one th
 
 [The Lords of Rock at SolarFlare Games](http://solarflaregames.com/the-lords-of-rock/)\\
 [The Lords of Rock at BGG](https://boardgamegeek.com/boardgame/178958/lords-rock)\\
-[Purchase Brut@l on The Lords of Rock](https://bravefrontier.pledgemanager.com/projects/lords-of-rock/participate/?ref=sfg)
+[Purchase The Lords of Rock](https://bravefrontier.pledgemanager.com/projects/lords-of-rock/participate/?ref=sfg)
