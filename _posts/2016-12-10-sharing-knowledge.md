@@ -3,7 +3,7 @@ layout: post
 title: Sharing in Knowledge Oragnisations
 tags: teams, presentations, knowledge, teams
 category: work
-img: 12/presentation.jpg
+img: 01/art-of-code.jpg
 ---
 
 > At the agency I work at we run periodical show-and-tell events where our specialists in consumer trends, technology, digital and print design talk about what they’ve been working on and share their work with others in the business...and provide biscuits.
@@ -20,7 +20,7 @@ It was a great opportunity to share some of the principles and tools we use; a w
 
 We had great feedback and I think we achieved what we set out to do: to approach a shared understanding and empathy between Project Managers and other non-technical stakeholders in our web projects. More personally, I felt an easing of my anxieties around public speaking.
 
-Sharing what we know
+## Sharing what we know
 
 There’s little in our work more satisfying than sharing what we know - what we take for granted and often don’t give ourselves credit for. Sharing knowledge and teaching others is a great multiplier and adds greater visibility and so confidence in our colleagues.
 
