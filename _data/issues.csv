@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2428,206560405,2017-02-09 18:10:14,2017-02-09 16:47:09,Raccolta di crocchette e cibo umido per i gatti di #ArquatadelTronto,,,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form""]",,http://i.imgur.com/oKgZGCQ.jpg,"{""cosa"": ""Raccolta di crocchette e cibo umido per i gatti di Arquata del Tronto"", ""data"": ""09/02/2017"", ""descrizione"": ""Dopo il terremoto e le abbondanti nevicate Arquata del Tronto e le frazioni limitrofe sono rimaste isolate ed abbandonate. Qui tantissimi gatti sono rimasti soli. Vagano tra le case disabitate e non hanno nulla da mangiare, la loro sorte \u00e8 nelle mani dei volontari che ogni giorno si recano nelle zone rosse per accudirli. Scodinzolandia Petshop Ambulatorio Veterinario di San Ginesio, da sempre sensibile alle sorti degli animali indifesi , sta raccogliendo crocchette e cibo umido da portare personalmente in queste zone. Abbiamo bisogno del \""vostro piccolo aiuto\"" perch\u00e9 ...l'unione fa la forza! Un grande miaograzie da tutti i gatti di Arquata del Tronto! Leo e Angelita 3277786853 \u2013 3498653579 - 0733663432 Scodinzolandia Petshop Ambulatorio Veterinario via Faleriense, 36 \u2013 62026 - San Ginesio Facebook: scodinzolandia petshop ambulatorio veterinario"", ""email"": ""scodinzolandiapet@gmail.com"", ""immagine"": ""http://i.imgur.com/oKgZGCQ.jpg"", ""indirizzo"": """", ""lat"": """", ""link"": ""http://www.scodinzolandiapet.it/"", ""lon"": """", ""tel"": ""3277786853""}","<pre><yamldata>tel: '3277786853'
+email: scodinzolandiapet@gmail.com
+cosa: 'Raccolta di crocchette e cibo umido per i gatti di Arquata del Tronto'
+descrizione: 'Dopo il terremoto e le abbondanti nevicate Arquata del Tronto e le frazioni limitrofe sono rimaste isolate ed abbandonate. Qui tantissimi gatti sono rimasti soli. Vagano tra le case disabitate e non hanno nulla da mangiare, la loro sorte è nelle mani dei volontari che ogni giorno si recano nelle zone rosse per accudirli. Scodinzolandia Petshop Ambulatorio Veterinario di San Ginesio, da sempre sensibile alle sorti degli animali indifesi , sta raccogliendo crocchette e cibo umido da portare personalmente in queste zone. Abbiamo bisogno del ""vostro piccolo aiuto"" perché ...l''unione fa la forza! Un grande miaograzie da tutti i gatti di Arquata del Tronto! Leo e Angelita 3277786853 – 3498653579 - 0733663432 Scodinzolandia Petshop Ambulatorio Veterinario via Faleriense, 36 – 62026 - San Ginesio Facebook: scodinzolandia petshop ambulatorio veterinario'
+indirizzo: ''
+lat: ''
+lon: ''
+link: 'http://www.scodinzolandiapet.it/'
+immagine: 'http://i.imgur.com/oKgZGCQ.jpg'
+data: 09/02/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2427,206558625,2017-02-09 16:41:28,2017-02-09 16:40:56,Azienda di moda offre stage retribuiti per giovani abruzzesi colpiti dal sisma,42.7866747,13.8018386,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Form"", ""Offro lavoro""]",,,"{""cosa"": ""Azienda di moda offre stage retribuiti per giovani abruzzesi colpiti dal sisma"", ""data"": ""09/02/2017"", ""descrizione"": ""La F.G.1936, azienda manifatturiera tessile abruzzese con sede in provincia di Teramo, che ha deciso di offrire 10 posti per uno stage formativo in azienda, destinati ad altrettanti giovani abruzzesi, di et\u00e0 compresa tra i 18 e i 25 anni, provenienti dalle province della regione."", ""email"": """", ""indirizzo"": ""Via Vittorio Veneto, Sant'Omero, TE, ABR, 64027, Italia"", ""lat"": ""42.7866747"", ""link"": ""http://www.abruzzolive.it/?p=56781"", ""lon"": ""13.8018386"", ""nom"": ""F.G.1936"", ""tel"": """"}","<pre><yamldata>nom: F.G.1936
 tel: ''
 email: ''
@@ -1821,17 +1832,6 @@ descrizione: 'Chiuso il centro di accoglienza Pala Binchi all''Acquaviva. I citt
 link: 'http://www.comune.teramo.it/index.php?id=48&itemid=890'
 data: 21/01/2017
 </yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2168,202327750,2017-01-30 16:10:49,2017-01-21 17:18:54,Counselor offre supporto per superare difficoltà emotive causa terremoto,,,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""ascolto"", ""data"": ""21/01/2017"", ""descrizione"": ""Sono una counselor professionista, offro gratuitamente il mio supporto per aiutare e ascoltare le persone con difficolt\u00e0 emotive legate al terremoto. Cristina 3482446672."", ""email"": ""cristina.rubegni@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3482446672""}","<pre><yamldata>tel: '3482446672'
-email: cristina.rubegni@gmail.com
-cosa: ascolto
-descrizione: 'Sono una counselor professionista, offro gratuitamente il mio supporto per aiutare e ascoltare le persone con difficoltà emotive legate al terremoto. Cristina 3482446672.'
-indirizzo: ''
-lat: ''
-lon: ''
-link: ''
-immagine: ''
-data: 21/01/2017
-</yamldata></pre>",closed
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2168,202327750,2017-01-30 16:10:49,2017-01-21 17:18:54,Counselor offre supporto per superare difficoltà emotive causa terremoto,,,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""ascolto"", ""data"": ""21/01/2017"", ""descrizione"": ""Sono una counselor professionista, offro gratuitamente il mio supporto per aiutare e ascoltare le persone con difficolt\u00e0 emotive legate al terremoto. Cristina 3482446672."", ""email"": ""cristina.rubegni@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3482446672""}","<pre><yamldata>tel: '3482446672'
 email: cristina.rubegni@gmail.com
 cosa: ascolto
