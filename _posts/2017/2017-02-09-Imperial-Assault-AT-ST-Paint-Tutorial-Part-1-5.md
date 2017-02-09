@@ -9,6 +9,8 @@ tags: [games, miniatures, tutorial, imperial assault, fantasy flight games, olde
 author: Frank Grip
 ---
 
+**Previous Posts in Series:** [Part 1](http://pawnsperspective.com/Imperial-Assault-AT-ST-Paint-Tutorial-Part-1/)
+
 There is no “right” way to paint your model. With so many personal style preferences and color options out there, the possibilities are limitless. Before touching a brush to a model, I always comb through the interwebs for some inspiration. There are a lot of very talented people out there sharing pictures of their painted models, tips, and advice, or how-to videos. It is worth taking the time to view some finished examples of the model that you are going to paint before you begin.
 
 Matthew Sullivan, who runs [OldenHammer.com](http://oldenhammer.com) is someone that I frequently look to for ideas. His blog is loaded with photos of well-painted minis. His painting talent and abilities are light-years beyond my amateur skills and his work is a wealth of ideas for color options and stylistic techniques. I reached out to Matthew and asked him to share some images of his painted AT-ST. He agreed and here is the result:
