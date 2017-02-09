@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Review - Ophidian 2360"
+title: "Review - Ophidian 2360: Survival of the Fittest"
 description: "The Gods of various Pantheon compete in a Battle of the Bands for our souls."
 category: review
 featured: ophidian2360.jpg
@@ -11,7 +11,7 @@ author: Rob Kalajian
 ![Ophidian 2360](/images/featured/ophidian2360.jpg){: .float-right}
 <h2>Prelude</h2>
 
-Ophidian first hit the scene over 10 years ago with Ophidian 2350, a CCG from Ophidian Games and Fleer. A few years back one Small Cave Games released a stand-alone, non-collectible version called Ophidian Wars. Now Hack & Slash games have created Ophidian 2360 with an all-new look. All the game are still compatible with each other, though there are some things you will need to keep in mind with older cards (this will be covered in an embedded video below).
+Ophidian first hit the scene over 10 years ago with Ophidian 2350, a CCG from Ophidian Games and Fleer. A few years back one Small Cave Games released a stand-alone, non-collectible version called Ophidian Wars. Now Hack & Slash games have created Ophidian 2360: Survival of the Fittest with an all-new look. All the game are still compatible with each other, though there are some things you will need to keep in mind with older cards (this will be covered in an embedded video below).
 
 <h2>Play</h2>
 
@@ -52,12 +52,12 @@ Ophidian 2360, with the addition of the Ophidian Wars deck we have, is now a gam
 
 <h3>Supporting Links</h3>
 
-[Ophidian 2360 at Hack & Slash Games](http://hackandslashgames.com/our-games/ophidian/ophidian-2360-survival-of-the-fittest/)\\
-[Ophidian 2360 (Art of War vs. Otherworld Allies Pack) at BGG](https://boardgamegeek.com/boardgame/191619/ophidian-2360-survival-fittest-art-war-vs-otherwor)\\
-[Ophidian 2360 (Mental Block vs. Warrior's Resolve Pack) at BGG](https://boardgamegeek.com/boardgame/202585/ophidian-2360-survival-fittest-mental-block-vs-war)\\
-[Ophidian 2360 (War Machine vs. Bio-Hazard Pack) at BGG](https://boardgamegeek.com/boardgame/202574/ophidian-2360-survival-fittest-war-machine-vs-bio)\\
-[Purchase Ophidian 2360 (War Machine vs. Bio-Hazard Pack)](http://amzn.to/2kNeByK)\\
-[Purchase Ophidian 2360 (Art of War vs. Otherworld Allies Pack)](http://amzn.to/2krQW6f)
+[Ophidian 2360: Survival of the Fittest at Hack & Slash Games](http://hackandslashgames.com/our-games/ophidian/ophidian-2360-survival-of-the-fittest/)\\
+[Ophidian 2360: Survival of the Fittest (Art of War vs. Otherworld Allies Pack) at BGG](https://boardgamegeek.com/boardgame/191619/ophidian-2360-survival-fittest-art-war-vs-otherwor)\\
+[Ophidian 2360: Survival of the Fittest (Mental Block vs. Warrior's Resolve Pack) at BGG](https://boardgamegeek.com/boardgame/202585/ophidian-2360-survival-fittest-mental-block-vs-war)\\
+[Ophidian 2360: Survival of the Fittest (War Machine vs. Bio-Hazard Pack) at BGG](https://boardgamegeek.com/boardgame/202574/ophidian-2360-survival-fittest-war-machine-vs-bio)\\
+[Purchase Ophidian 2360: Survival of the Fittest (War Machine vs. Bio-Hazard Pack)](http://amzn.to/2kNeByK)\\
+[Purchase Ophidian 2360: Survival of the Fittest (Art of War vs. Otherworld Allies Pack)](http://amzn.to/2krQW6f)
 
 [Ophidian Wars Site](https://www.ophidian-wars.com)\\
 [Ophidian Wars at BGG](https://boardgamegeek.com/boardgame/176546/ophidian-wars)\\
