@@ -9,4 +9,4 @@ Thanh T. Nguyen
 
 
 ## Research interests  
-Efficient Data Representation (Sparity, Autoencoding, Information Bottleneck Representation) and Application in Medicine and Business. 
+Unsupervised Learning, Efficient Data Representation (Sparity, Autoencoding, Information Bottleneck Representation) and Application in Medicine and Business. 
