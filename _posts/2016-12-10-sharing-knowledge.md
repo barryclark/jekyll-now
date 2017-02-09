@@ -6,7 +6,7 @@ category: work
 img: 01/art-of-code.jpg
 ---
 
-> At the agency I work at we run periodical show-and-tell events where our specialists in consumer trends, technology, digital and print design talk about what they’ve been working on and share their work with others in the business...and provide biscuits.
+> *The Art of Code*: At the agency I work at we run periodical show-and-tell events where our specialists in consumer trends, technology, digital and print design talk about what they’ve been working on and share their work with others in the business...and provide biscuits.
 
 Public speaking ranks decidedly among the things likely to forget how to speak. I’d probably rather be having a filling. However it was this aversion that spurred me to overcome that self-obsessed anxiety and actually go after the thing that makes me a bit uncomfortable.
 
