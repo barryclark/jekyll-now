@@ -1,6 +1,6 @@
 ---
 layout: post
-title: You're up and running!
+title: Властелину дверей посвящается!
 published: true
 ---
 Александр Жданов &mdash; REAL GANGSTA SHIT!
