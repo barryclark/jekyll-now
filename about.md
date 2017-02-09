@@ -9,4 +9,4 @@ Thanh T. Nguyen
 
 
 ## Research interests  
-I work at the intersection between Deep Neural Network, Information Theory and Probabilistic Models 
+Efficient Data Representation (Sparity, Autoencoding, Information Bottleneck Representation) and Application in Medicine and Business. 
