@@ -20,6 +20,10 @@ permalink: /sitemap/
 {% for post in site.posts %}
 * {{ post.date | date: "%B %e, %Y" }}: [{{ post.title }}]({{ post.url }}){% endfor %}
 
+| Date | Title |
+|-------|--------|{% for post in site.posts %}
+| {{ post.date | date: "%B %e, %Y" }} | [{{ post.title }}]({{ post.url }}) |{% endfor %}
+
 ## Tags
 
 {% for tag in site.tags %}
