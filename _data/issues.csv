@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2433,206640820,2017-02-10 07:56:03,2017-02-09 21:52:42,Scuola di Ischia cerca scuola in zone terremotate per gemellaggio,,,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Form""]",,,"{""cosa"": ""proposta di gemellaggio scuole in zone terremotate"", ""data"": ""09/02/2017"", ""descrizione"": ""Istituto Comprensivo Forio - Isola d'Ischia (NA) cerca scuole in territori colpiti dal terremoto per instaurare rapporti di gemellaggio, referente prof. Irace- via Castellaccio, 4 - Forio"", ""email"": ""fraverde@libero.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""http://www.ischianonsoloscuola.gov.it"", ""lon"": """", ""tel"": ""3385631917""}","<pre><yamldata>tel: '3385631917'
+email: fraverde@libero.it
+cosa: 'proposta di gemellaggio scuole in zone terremotate'
+descrizione: 'Istituto Comprensivo Forio - Isola d''Ischia (NA) cerca scuole in territori colpiti dal terremoto per instaurare rapporti di gemellaggio, referente prof. Irace- via Castellaccio, 4 - Forio'
+indirizzo: ''
+lat: ''
+lon: ''
+link: 'http://www.ischianonsoloscuola.gov.it'
+immagine: ''
+data: 09/02/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2428,206560405,2017-02-09 18:10:14,2017-02-09 16:47:09,Raccolta di crocchette e cibo umido per i gatti di #ArquatadelTronto,,,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form""]",,http://i.imgur.com/oKgZGCQ.jpg,"{""cosa"": ""Raccolta di crocchette e cibo umido per i gatti di Arquata del Tronto"", ""data"": ""09/02/2017"", ""descrizione"": ""Dopo il terremoto e le abbondanti nevicate Arquata del Tronto e le frazioni limitrofe sono rimaste isolate ed abbandonate. Qui tantissimi gatti sono rimasti soli. Vagano tra le case disabitate e non hanno nulla da mangiare, la loro sorte \u00e8 nelle mani dei volontari che ogni giorno si recano nelle zone rosse per accudirli. Scodinzolandia Petshop Ambulatorio Veterinario di San Ginesio, da sempre sensibile alle sorti degli animali indifesi , sta raccogliendo crocchette e cibo umido da portare personalmente in queste zone. Abbiamo bisogno del \""vostro piccolo aiuto\"" perch\u00e9 ...l'unione fa la forza! Un grande miaograzie da tutti i gatti di Arquata del Tronto! Leo e Angelita 3277786853 \u2013 3498653579 - 0733663432 Scodinzolandia Petshop Ambulatorio Veterinario via Faleriense, 36 \u2013 62026 - San Ginesio Facebook: scodinzolandia petshop ambulatorio veterinario"", ""email"": ""scodinzolandiapet@gmail.com"", ""immagine"": ""http://i.imgur.com/oKgZGCQ.jpg"", ""indirizzo"": """", ""lat"": """", ""link"": ""http://www.scodinzolandiapet.it/"", ""lon"": """", ""tel"": ""3277786853""}","<pre><yamldata>tel: '3277786853'
 email: scodinzolandiapet@gmail.com
 cosa: 'Raccolta di crocchette e cibo umido per i gatti di Arquata del Tronto'
@@ -12532,18 +12543,6 @@ link: 'http://www.abruzzoweb.it/contenuti/terremoto-centro-italia-ad-amatrice-na
 data: 17/09/2016
 </yamldata></pre>
 ",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/583,177612073,2016-11-14 22:18:42,2016-09-17 21:56:50,"""Le stelle tornano a scuola - Chef per Amatrice""",,,"[""Accettato"", ""Bollettino"", ""Facebook"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""\""Le stelle tornano a scuola - Chef per Amatrice\"""", ""data"": ""17/09/2016"", ""descrizione"": ""Per permettere agli studenti dell'Istituto Alberghiero di Amatrice di continuare a studiare e coltivare il sogno di diventare grandi chef e grandi ristoratori, si svolgeranno a Rieti l'8-9-10 ottobre \""Le stelle tornano a scuola - Chef per Amatrice\"", tre cene di benificienza a cui parteciperanno 60 chef. La raccolta fondi \u00e8 promossa dal ristorante La trota di Rivodutri."", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""https://www.facebook.com/notes/la-trota-dei-fratelli-serva/i-grandi-chef-insieme-per-amatrice/768815279925609"", ""postale"": """"}","<pre><yamldata>chi: '""Le stelle tornano a scuola - Chef per Amatrice""'
-descrizione: 'Per permettere agli studenti dell''Istituto Alberghiero di Amatrice di continuare a studiare e coltivare il sogno di diventare grandi chef e grandi ristoratori, si svolgeranno a Rieti l''8-9-10 ottobre ""Le stelle tornano a scuola - Chef per Amatrice"", tre cene di benificienza a cui parteciperanno 60 chef. La raccolta fondi è promossa dal ristorante La trota di Rivodutri.'
-intestazione: ''
-iban: ''
-bic: ''
-postale: ''
-causale: ''
-link: 'https://www.facebook.com/notes/la-trota-dei-fratelli-serva/i-grandi-chef-insieme-per-amatrice/768815279925609'
-email: ''
-data: 17/09/2016
-</yamldata></pre>
-",closed
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/583,177612073,2016-11-14 22:18:42,2016-09-17 21:56:50,"""Le stelle tornano a scuola - Chef per Amatrice""",,,"[""Accettato"", ""Bollettino"", ""Facebook"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""\""Le stelle tornano a scuola - Chef per Amatrice\"""", ""data"": ""17/09/2016"", ""descrizione"": ""Per permettere agli studenti dell'Istituto Alberghiero di Amatrice di continuare a studiare e coltivare il sogno di diventare grandi chef e grandi ristoratori, si svolgeranno a Rieti l'8-9-10 ottobre \""Le stelle tornano a scuola - Chef per Amatrice\"", tre cene di benificienza a cui parteciperanno 60 chef. La raccolta fondi \u00e8 promossa dal ristorante La trota di Rivodutri."", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""https://www.facebook.com/notes/la-trota-dei-fratelli-serva/i-grandi-chef-insieme-per-amatrice/768815279925609"", ""postale"": """"}","<pre><yamldata>chi: '""Le stelle tornano a scuola - Chef per Amatrice""'
 descrizione: 'Per permettere agli studenti dell''Istituto Alberghiero di Amatrice di continuare a studiare e coltivare il sogno di diventare grandi chef e grandi ristoratori, si svolgeranno a Rieti l''8-9-10 ottobre ""Le stelle tornano a scuola - Chef per Amatrice"", tre cene di benificienza a cui parteciperanno 60 chef. La raccolta fondi è promossa dal ristorante La trota di Rivodutri.'
 intestazione: ''
