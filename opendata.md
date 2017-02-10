@@ -4,6 +4,7 @@ title: Opendata
 permalink: /opendata/
 ---
 
+
 In tabella trovi tutti i riferimenti ai contenuti e ai dati prodotti o raccolti da questo progetto TerremotoCentroItalia assieme alla loro licenza di riuso.
 
 {: .table .table-striped #opendata}
