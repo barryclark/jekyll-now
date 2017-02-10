@@ -1,4 +1,14 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2441,206765496,2017-02-10 10:56:18,2017-02-10 10:52:17,"TRA NORCIA E CAMERINO UNA TERRA FERITA, UN PATRIMONIO DA SALVARE - Summer School 2-8 luglio 2017",,,"[""Accettato"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""10/02/2017"", ""descrizione"": ""La Summer School, con base a Spoleto, Norcia, Camerino e Matelica, si propone di far conoscere la specificit\u00e0 di questo territorio ricco di storia e di arte, unendo lezioni in aula e visite sul campo, l\u2019analisi storico-filologica e la riflessione sui problemi di oggi. Si cerca cos\u00ec di contribuire a lanciare la sfida per una valorizzazione rispettosa dei contesti e delle identit\u00e0, che potrebbe divenire un modello."", ""link"": ""http://www.fondazionezeri.unibo.it/it/formazione/corsi-e-seminari/corsi-e-seminari-di-formazione-specialistica-in/tra-norcia-e-camerino-una-terra-ferita-un-patrimonio-da-salvare"", ""titolo"": ""TRA NORCIA E CAMERINO UNA TERRA FERITA, UN PATRIMONIO DA SALVARE - Summer School 2-8 luglio 2017""}","<pre><yamldata>titolo: 'TRA NORCIA E CAMERINO UNA TERRA FERITA, UN PATRIMONIO DA SALVARE - Summer School 2-8 luglio 2017'
+descrizione: 'La Summer School, con base a Spoleto, Norcia, Camerino e Matelica, si propone di far conoscere la specificità di questo territorio ricco di storia e di arte, unendo lezioni in aula e visite sul campo, l’analisi storico-filologica e la riflessione sui problemi di oggi. Si cerca così di contribuire a lanciare la sfida per una valorizzazione rispettosa dei contesti e delle identità, che potrebbe divenire un modello.'
+link: 'http://www.fondazionezeri.unibo.it/it/formazione/corsi-e-seminari/corsi-e-seminari-di-formazione-specialistica-in/tra-norcia-e-camerino-una-terra-ferita-un-patrimonio-da-salvare'
+data: 10/02/2017
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2440,206764519,2017-02-10 10:56:50,2017-02-10 10:48:01,"""Per un sorriso - Monica De Carlo"" sostengono Norcia",,,"[""Accettato"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""10/02/2017"", ""descrizione"": ""Dopo aver visitato le zone colpite dal sisma, i volontari della onlus \""Per un sorriso - Monica De Carlo\"" a Campi di Norcia hanno sostenuto la pro loco acquistando i generi alimentari di un negozio distrutto dal sisma. A Norcia, hanno sostenuto la realizzazione di un piccolo ricovero per la nascita dei puledri. Per altre famiglie della zona un sostegno diretto per far fronte alle piccole per quanto immediate esigenze: dai generi alimentari al pellet, dai piccoli elettrodomestici, come un\u2019asciugatrice, al cibo per i tanti cani e gatti dei quali si prendono cura alcuni residenti che, per non abbandonarli, hanno rinunciato al soggiorno in albergo."", ""link"": ""http://www.csvnet.it/notizie/le-notizie/notiziecsv/2325-norcia-quel-lavoro-insostituibile-dei-volontari-delle-piccole-cose"", ""titolo"": ""\""Per un sorriso - Monica De Carlo\"" sostengono Norcia""}","<pre><yamldata>titolo: '""Per un sorriso - Monica De Carlo"" sostengono Norcia'
+descrizione: 'Dopo aver visitato le zone colpite dal sisma, i volontari della onlus ""Per un sorriso - Monica De Carlo"" a Campi di Norcia hanno sostenuto la pro loco acquistando i generi alimentari di un negozio distrutto dal sisma. A Norcia, hanno sostenuto la realizzazione di un piccolo ricovero per la nascita dei puledri. Per altre famiglie della zona un sostegno diretto per far fronte alle piccole per quanto immediate esigenze: dai generi alimentari al pellet, dai piccoli elettrodomestici, come un’asciugatrice, al cibo per i tanti cani e gatti dei quali si prendono cura alcuni residenti che, per non abbandonarli, hanno rinunciato al soggiorno in albergo.'
+link: 'http://www.csvnet.it/notizie/le-notizie/notiziecsv/2325-norcia-quel-lavoro-insostituibile-dei-volontari-delle-piccole-cose'
+data: 10/02/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2438,206762023,2017-02-10 10:38:07,2017-02-10 10:36:59,BAO Publishing dona 1200€ in favore di BSA - Terremoto Centro Italia,,,"[""Accettato"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""10/02/2017"", ""descrizione"": ""1200\u20ac sono i primi proventi della vendita di Palla Rossa e il terremoto, la storia inedita di BAO Publishing che si pu\u00f2 ancora comprare in PDF su Gumroad (https://gumroad.com/l/iLco#) facendo un'offerta libera da due euro in su."", ""link"": ""https://www.facebook.com/photo.php?fbid=1754933908168068&set=a.1391058387888957.1073741830.100009544262446&type=3&theater"", ""titolo"": ""BAO Publishing dona 1200\u20ac in favore di BSA - Terremoto Centro Italia""}","<pre><yamldata>titolo: 'BAO Publishing dona 1200€ in favore di BSA - Terremoto Centro Italia'
 descrizione: '1200€ sono i primi proventi della vendita di Palla Rossa e il terremoto, la storia inedita di BAO Publishing che si può ancora comprare in PDF su Gumroad (https://gumroad.com/l/iLco#) facendo un''offerta libera da due euro in su.'
 link: 'https://www.facebook.com/photo.php?fbid=1754933908168068&set=a.1391058387888957.1073741830.100009544262446&type=3&theater'
@@ -16519,18 +16529,6 @@ bic: PASCITMMROM
 postale: ''
 causale: 'Partito Democratico - Raccolta fondi per terremoto'
 link: 'http://www.partitodemocratico.it/partito/terremoto-pd-avvia-raccolta-fondi/'
-email: ''
-data: 13/09/2016
-</yamldata></pre>
-",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/169,176722264,2016-09-13 19:01:36,2016-09-13 18:58:49,AUSER nazionale,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": ""Raccolta fondi terremoto 2016 Centro Italia"", ""chi"": ""AUSER nazionale"", ""data"": ""13/09/2016"", ""descrizione"": """", ""email"": """", ""iban"": ""IT89L 05018 03200 000000105900"", ""intestazione"": ""AUSER"", ""link"": ""http://www1.auser.it/primo-piano/terremoto-centro-italia-scatta-la-solidarieta-di-auser/"", ""postale"": """"}","<pre><yamldata>chi: 'AUSER nazionale'
-descrizione: ''
-intestazione: AUSER
-iban: 'IT89L 05018 03200 000000105900'
-bic: ''
-postale: ''
-causale: 'Raccolta fondi terremoto 2016 Centro Italia'
-link: 'http://www1.auser.it/primo-piano/terremoto-centro-italia-scatta-la-solidarieta-di-auser/'
 email: ''
 data: 13/09/2016
 </yamldata></pre>
