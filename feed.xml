@@ -8,7 +8,7 @@ layout: null
     <description>{{ site.description | xml_escape }}</description>
     <link>{{ site.url }}</link>
     <atom:link href="{{ site.url }}/feed.xml" rel="self" type="application/rss+xml" />
-    <copyright>&copy; 2017 Joseph Hendrix</copyright>
+    <copyright>2017 Joseph Hendrix</copyright>
     <language>en-us</language>
     <!-- image>
       <url>http://www.w3schools.com/images/logo.gif</url>
