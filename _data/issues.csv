@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2450,206849437,2017-02-10 22:15:54,2017-02-10 16:59:20,Pranzo di Solidarietà a Ogliano di Conegliano per restaurare la chiesa di Capodacqua - Arquata del Tronto,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",Milestone(number=56),,"{""bic"": """", ""causale"": """", ""chi"": ""Pranzo di Solidariet\u00e0 - Ogliano di Conegliano"", ""data"": ""10/02/2017"", ""descrizione"": ""Domenica 19 febbraio dalle ore 12 presso il salone parrocchiale di Ogliano di Conegliano pranzo solidale con prodotti tipici marchigiani di raccolta fondi per il restauro della chiesa della Madonna del Sole di Capodacqua di Arquata del Tronto."", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""https://www.facebook.com/Capodacqua.AP/photos/a.10150315529560396.389881.51273025395/10154861165925396/?type=3&theater"", ""postale"": """"}","<pre><yamldata>chi: 'Pranzo di Solidarietà - Ogliano di Conegliano'
+descrizione: 'Domenica 19 febbraio dalle ore 12 presso il salone parrocchiale di Ogliano di Conegliano pranzo solidale con prodotti tipici marchigiani di raccolta fondi per il restauro della chiesa della Madonna del Sole di Capodacqua di Arquata del Tronto.'
+intestazione: ''
+iban: ''
+bic: ''
+postale: ''
+causale: ''
+link: 'https://www.facebook.com/Capodacqua.AP/photos/a.10150315529560396.389881.51273025395/10154861165925396/?type=3&theater'
+email: ''
+data: 10/02/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2448,206836668,2017-02-10 16:15:18,2017-02-10 16:11:54,"#Chieti, dichiarato inagibile il Palazzo Comunale",,,"[""Accettato"", ""Bollettino"", ""Notizie Utili"", ""Twitter""]",,,"{""data"": ""10/02/2017"", ""descrizione"": ""Chieti. \u00c8 stato dichiarato inagibile Palazzo de Pasquale, edificio del Comune di Chieti, nel quale hanno sede gli uffici Commercio e Cultura del Comune, la societ\u00e0 Teateservizi e alcuni servizi dell\u2019azienda Chieti Solidale, e dovr\u00e0 essere sgomberato. Alla parziale e temporanea inagibilit\u00e0 dello stabile causata dal terremoto di agosto del 2016, e sancita da un\u2019ordinanza sindacale in particolare per quel che riguarda la scala nobiliare di accesso, l\u2019intero terzo livello e una porzione del fabbricato, hanno fatto seguito le ulteriori verifiche statiche eseguite a gennaio scorso dai tecnici comunali e del ministero dei Beni Culturali. In base ai nuovi controlli sono state accertate criticit\u00e0 legate alla messa in sicurezza dell\u2019edificio. Gli uffici ospitati presso palazzo de Pasquale saranno trasferiti nell\u2019ex ospedale pediatrico, di propriet\u00e0 della Provincia, dove questa mattina si \u00e8 svolto un sopralluogo."", ""link"": ""http://www.abruzzolive.it/?p=56952"", ""titolo"": ""#Chieti, dichiarato inagibile il Palazzo Comunale""}","<pre><yamldata>titolo: '#Chieti, dichiarato inagibile il Palazzo Comunale'
 descrizione: 'Chieti. È stato dichiarato inagibile Palazzo de Pasquale, edificio del Comune di Chieti, nel quale hanno sede gli uffici Commercio e Cultura del Comune, la società Teateservizi e alcuni servizi dell’azienda Chieti Solidale, e dovrà essere sgomberato. Alla parziale e temporanea inagibilità dello stabile causata dal terremoto di agosto del 2016, e sancita da un’ordinanza sindacale in particolare per quel che riguarda la scala nobiliare di accesso, l’intero terzo livello e una porzione del fabbricato, hanno fatto seguito le ulteriori verifiche statiche eseguite a gennaio scorso dai tecnici comunali e del ministero dei Beni Culturali. In base ai nuovi controlli sono state accertate criticità legate alla messa in sicurezza dell’edificio. Gli uffici ospitati presso palazzo de Pasquale saranno trasferiti nell’ex ospedale pediatrico, di proprietà della Provincia, dove questa mattina si è svolto un sopralluogo.'
 link: 'http://www.abruzzolive.it/?p=56952'
@@ -1192,16 +1203,6 @@ indirizzo: ''
 lat: ''
 lon: ''
 link: ''
-data: 24/01/2017
-</yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2258,202858096,2017-01-25 23:14:07,2017-01-24 15:53:18,Offro alloggio per una famiglia,45.6493300,9.6061700,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""24/01/2017"", ""descrizione"": ""Offro alloggio per una famiglia con 1/2 bambini in una villetta a schiera a Dalmine, prov. di Bergamo. In qualit\u00e0 di insegnante, sono disponibile per lezioni di recupero e/o potenziamento."", ""email"": ""daniela.fuccio@virgilio.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": ""45.6493300"", ""link"": """", ""lon"": ""9.6061700"", ""tel"": ""3485244584""}","<pre><yamldata>tel: '3485244584'
-email: daniela.fuccio@virgilio.it
-descrizione: 'Offro alloggio per una famiglia con 1/2 bambini in una villetta a schiera a Dalmine, prov. di Bergamo. In qualità di insegnante, sono disponibile per lezioni di recupero e/o potenziamento.'
-indirizzo: ''
-lat: '45.6493300'
-lon: '9.6061700'
-link: ''
-immagine: ''
 data: 24/01/2017
 </yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2258,202858096,2017-01-25 23:14:07,2017-01-24 15:53:18,Offro alloggio per una famiglia,45.6493300,9.6061700,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""24/01/2017"", ""descrizione"": ""Offro alloggio per una famiglia con 1/2 bambini in una villetta a schiera a Dalmine, prov. di Bergamo. In qualit\u00e0 di insegnante, sono disponibile per lezioni di recupero e/o potenziamento."", ""email"": ""daniela.fuccio@virgilio.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": ""45.6493300"", ""link"": """", ""lon"": ""9.6061700"", ""tel"": ""3485244584""}","<pre><yamldata>tel: '3485244584'
