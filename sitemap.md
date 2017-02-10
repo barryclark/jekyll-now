@@ -17,9 +17,6 @@ permalink: /sitemap/
 
 ## Posts
 
-{% for post in site.posts %}
-* {{ post.date | date: "%B %e, %Y" }}: [{{ post.title }}]({{ post.url }}){% endfor %}
-
 | Date | Title |
 |-------|--------|{% for post in site.posts %}
 | {{ post.date | date: "%B %e, %Y" }} | [{{ post.title }}]({{ post.url }}) |{% endfor %}
