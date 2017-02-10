@@ -1,8 +1,8 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2444,206779094,2017-02-10 12:27:55,2017-02-10 11:59:59,Regalo biciclette da bambina,,,"[""Accettato"", ""Donazioni"", ""Form""]",,,"{""cosa"": ""Regalo biciclette da bambina"", ""data"": ""10/02/2017"", ""descrizione"": ""Regalo biciclette da bambina in ottimo stato. 1- bicicletta BOTTECCHIA per bambina di 3/4 anni con ruotini. 2- bicicletta BOTTECCHIA per bambina dai 7/8 anni . Disponibile a portarle in loco."", ""email"": ""Corrado.principi@alice.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3494666120""}","<pre><yamldata>tel: '3494666120'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2444,206779094,2017-02-10 12:54:32,2017-02-10 11:59:59,Regalo 2 biciclette da bambina,,,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Form""]",,,"{""cosa"": ""Regalo biciclette da bambina"", ""data"": ""10/02/2017"", ""descrizione"": ""Regalo biciclette da bambina in ottimo stato. 1- bicicletta BOTTECCHIA per bambina di 3/4 anni con ruotini. 2- bicicletta BOTTECCHIA per bambina dai 7/8 anni. Disponibile a portarle in loco."", ""email"": ""Corrado.principi@alice.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3494666120""}","<pre><yamldata>tel: '3494666120'
 email: Corrado.principi@alice.it
 cosa: 'Regalo biciclette da bambina'
-descrizione: 'Regalo biciclette da bambina in ottimo stato. 1- bicicletta BOTTECCHIA per bambina di 3/4 anni con ruotini. 2- bicicletta BOTTECCHIA per bambina dai 7/8 anni . Disponibile a portarle in loco.'
+descrizione: 'Regalo biciclette da bambina in ottimo stato. 1- bicicletta BOTTECCHIA per bambina di 3/4 anni con ruotini. 2- bicicletta BOTTECCHIA per bambina dai 7/8 anni. Disponibile a portarle in loco.'
 indirizzo: ''
 lat: ''
 lon: ''
