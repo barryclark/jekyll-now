@@ -12,7 +12,7 @@ author: Rob Kalajian
 ![Ophidian 2360](/images/featured/ophidian2360.jpg){: .float-right}
 <h2>Prelude</h2>
 
-Ophidian first hit the scene over 10 years ago with Ophidian 2350, a CCG from Ophidian Games and Fleer. A few years back one Small Cave Games released a stand-alone, non-collectible version called Ophidian Wars. Now Hack & Slash games have created Ophidian 2360: Survival of the Fittest with an all-new look. 2360 is fully compatible with 2350, though there are some things you will need to keep in mind with older cards (this will be covered in an embedded video below).
+Ophidian first hit the scene over 10 years ago with Ophidian 2350, a CCG from Ophidian Games and Fleer. A few years back one Small Cave Games released a stand-alone, non-collectible version called Ophidian Wars. Now Hack & Slash games have created Ophidian 2360: Survival of the Fittest, a Expandable Card Game with an all-new look. 2360 is fully compatible with 2350, though there are some things you will need to keep in mind with older cards (this will be covered in an embedded video below).
 
 <h2>Play</h2>
 
@@ -35,7 +35,7 @@ After a wave is complete there's a Breather phase where cards are refreshed, Gla
 
 <h2>Pieces</h2>
 
-While I've never owned any Ophidian 2350 cards, I have seen some. Ophidian 2360 has completely overhauled the artwork and layout of the cards and they completely blow away the older sets. The card feel is comparable to other CCGs on the market.
+While I've never owned any Ophidian 2350 cards, I have seen some. Ophidian 2360 has completely overhauled the artwork and layout of the cards and they completely blow away the older sets. The card feel is comparable to other ECGs on the market.
 
 I was also sent a set of acrylic Rage Tokens for the game as well as the neoprene play mats. Both take the game to the next level. The tokens are translucent purple, thick, and expertly cut. The mats are gigantic, covered in game artwork, and have everything to you need to keep track of cards, victory points, and cheer.
 
@@ -47,7 +47,7 @@ We've played a lot of card battle games. Other than deck builders they're my old
 
 I should also mention that my initial reaction to the game wasn't as favorable. It felt too hard to get Gladiators' levels up so I could play cards I had in my hand. This made the game feel a bit slow and clunky to me. About a week after we first played a new edition of the rules came out that allow multiple Gladiators to level up during a Breather, among other rule clarifications and tweaks, that pretty much fixed all the issues I had with the game.
 
-Ophidian 2360 is now a game both my son and I can enjoy together on a regular basis. I'm actually looking forward to the release of more cards so we can really dig into building decks and master flow combos. Ophidian is fresh, interesting, and a bit of a departure from your standard CCGs.
+Ophidian 2360 is now a game both my son and I can enjoy together on a regular basis. I'm actually looking forward to the release of more cards so we can really dig into building decks and master flow combos. Ophidian is fresh, interesting, and a bit of a departure from your standard ECGs.
 
 *Copies of the Ophidian 2360 Mental Block vs. Warrior's Resolve pack and War Machine vs. Bio-Hazard pack were provided by Hack & Slash games for review.*
 
