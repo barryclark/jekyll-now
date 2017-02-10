@@ -16535,6 +16535,18 @@ email: ''
 data: 13/09/2016
 </yamldata></pre>
 ",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/169,176722264,2016-09-13 19:01:36,2016-09-13 18:58:49,AUSER nazionale,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": ""Raccolta fondi terremoto 2016 Centro Italia"", ""chi"": ""AUSER nazionale"", ""data"": ""13/09/2016"", ""descrizione"": """", ""email"": """", ""iban"": ""IT89L 05018 03200 000000105900"", ""intestazione"": ""AUSER"", ""link"": ""http://www1.auser.it/primo-piano/terremoto-centro-italia-scatta-la-solidarieta-di-auser/"", ""postale"": """"}","<pre><yamldata>chi: 'AUSER nazionale'
+descrizione: ''
+intestazione: AUSER
+iban: 'IT89L 05018 03200 000000105900'
+bic: ''
+postale: ''
+causale: 'Raccolta fondi terremoto 2016 Centro Italia'
+link: 'http://www1.auser.it/primo-piano/terremoto-centro-italia-scatta-la-solidarieta-di-auser/'
+email: ''
+data: 13/09/2016
+</yamldata></pre>
+",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/168,176722098,2016-09-13 19:01:29,2016-09-13 18:58:16,Rotaract Rieti,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": ""Sisma Amatrice Accumoli Rieti + Indirizzo email + Club di appartenenza e/o nominativo del donatore"", ""chi"": ""Rotaract Rieti"", ""data"": ""13/09/2016"", ""descrizione"": """", ""email"": """", ""iban"": ""IT98U 08327 14600 000000003217"", ""intestazione"": ""Rotaract Club Rieti"", ""link"": ""https://www.facebook.com/rotaract.rieti/posts/1783447371896395"", ""postale"": """"}","<pre><yamldata>chi: 'Rotaract Rieti'
 descrizione: ''
 intestazione: 'Rotaract Club Rieti'
