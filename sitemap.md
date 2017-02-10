@@ -12,6 +12,7 @@ permalink: /sitemap/
 * [My TeeSpring Tees](/teespring/)
 * [Sitemap (this page)](/sitemap/)
 * [Sitemap.xml](/sitemap.xml)
+* [RSS feed](/feed.xml)
 * [robots.txt](/robots.txt)
 
 ## Posts
