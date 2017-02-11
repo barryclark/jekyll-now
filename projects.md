@@ -9,6 +9,40 @@ published: true
 
 Welcome to my website where you can view my skills and some of my work (source code is provided on GitHub and CodePen). If you have any questions feel free to contact me.
 
+----------
+
+## Professional Overview
+
+	
+* Programming Languages:    
+	  - HTML   	    - CSS
+    - Javascript  - jQuery  
+    - PHP         - Lua
+    - Python      - Ruby
+
+
+* Experience:    
+     - HTML, CSS, SCSS, LESS
+     - AngularJS, Node.js; Express.js
+     - NoSQL, MySQL, MongoDB
+     - Wordpress, Jekyll
+     - Cucumber
+     - Corona SDK
+
+
+
+* Current Tools (2017):
+	- Photoshop 	  - XCode 	  - StackOverflow
+  - Illustrator   - Invision  - GoogleDevs
+  - Prose.io  	  - GitHub    - Mozilla Dev Network
+    
+----------
+
+
+
+## Shall we have a pleasant chat about anything? :-)
+
+> # :email: [Email: emilypmendez@gmail.com](mailto:emilypmendez@gmail.com)
 
 ---------
 
