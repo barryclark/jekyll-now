@@ -128,6 +128,9 @@ You might also want to make the alert closable:
 </div>
 
 
+
+When we have a button, we want to make sure to use type="button" and not type="submit", because we want our text to remain on the site after we click the button. However, it will not longer submit the form :( . To do that we need some JavaScript on top.
+
 Buttons have the same patterns as alerts:
 
 <button type="button" class="btn btn-default">Default</button>
