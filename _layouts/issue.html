@@ -29,6 +29,14 @@ layout: base
   <div class="row"> <div class="col-md-2">Promotore:</div> <div class="col-md-10"> {{page.issue.data.promotore}}</div> </div>
   {% endif %}
 
+  {% if page.issue.data.data_evento != blank %}
+  <div class="row"> <div class="col-md-2">Data Evento:</div> <div class="col-md-10"> {{page.issue.data.data_evento}}</div> </div>
+  {% endif %}
+
+  {% if page.issue.data.ora_evento != blank %}
+  <div class="row"> <div class="col-md-2">Ora Evento:</div> <div class="col-md-10"> {{page.issue.data.ora_evento}}</div> </div>
+  {% endif %}
+
   {% if page.issue.data.iban != blank %}
   <div class="row"> <div class="col-md-2">IBAN:</div> <div class="col-md-10"> {{page.issue.data.iban}}</div> </div>
   {% endif %}
