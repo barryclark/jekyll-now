@@ -22,17 +22,18 @@ Welcome to my website where you can view my skills and some of my work (source c
 
 * Experience:    
      - SCSS / LESS
-     - AngularJS, Node.js (Express)
-     - NoSQL, MySQL, MongoDB
+     - AngularJS // Node.js (Express)
+     - NoSQL, MongoDB
      - Wordpress, Jekyll
      - Cucumber
      - Corona SDK
 
 
-* Current Tools (2017):
-	- Photoshop 	- XCode 	- StackOverflow
-  	- Illustrator 	- Invision 	- GoogleDevs
-  	- Prose.io  	- GitHub 	- Mozilla Dev Network
+* Tools (2017):
+	- Mac OS X, Linux (Ubuntu), Windows Vista
+	- Adobe CS6 Photoshop, Illustrator, Sketch, Invision
+	- XCode, Laravel, Git, Dash, Cucumber, Serenity
+	- GoogleDevs, Chromium, StackOverflow, MDN
     
 ----------
 
