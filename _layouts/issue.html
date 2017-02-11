@@ -70,9 +70,9 @@ layout: base
   <div class="row"> <div class="col-md-2">Mappa:</div><div class="col-md-4"> <div id="map"></div> </div> </div>
   {% endif %}
 
-  <div class="row"> <div class="col-md-2">Link della Segnalazione:</div> <div class="col-md-10"> <a href="{{page.issue.url}}">{{page.issue.url}}</a></div> </div>
-  <div class="row"> <div class="col-md-2">Segnalazione creata:</div> <div class="col-md-10"> {{page.issue.created_at | italianDate}} </div> </div>
-  <div class="row"> <div class="col-md-2">Segnalazione aggiornata:</div> <div class="col-md-10"> {{page.issue.updated_at | italianDate}} </div> </div>
+  <div class="row"> <div class="col-md-2">Link:</div> <div class="col-md-10"> <a href="{{page.issue.url}}">{{page.issue.url}}</a></div> </div>
+  <div class="row"> <div class="col-md-2">Creato:</div> <div class="col-md-10"> {{page.issue.created_at | italianDate}} </div> </div>
+  <div class="row"> <div class="col-md-2">Aggiornato:</div> <div class="col-md-10"> {{page.issue.updated_at | italianDate}} </div> </div>
 
 {% include social-share.html %}
 
