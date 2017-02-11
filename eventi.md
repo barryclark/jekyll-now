@@ -20,9 +20,9 @@ permalink: /eventi/
 {% if member.issue.labels contains "Eventi" %}
 <div class="panel-body">
 <a href="/issues/{{ member.number }}" class="list-group-item">
+	<p class="list-group-item-text">{{member.issue.data.data}}</p>
 	<h4 class="list-group-item-heading">{{member.title}}</h4>
 	<p class="list-group-item-text">{{member.issue.data.descrizione|markdownify}}</p>
-	<p class="list-group-item-text">{{member.issue.data.data}}</p>
 </a>
 
 <div class="panel-footer">
