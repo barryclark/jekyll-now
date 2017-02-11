@@ -1,8 +1,8 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2456,207009713,2017-02-11 21:56:48,2017-02-11 21:34:49,Cercasi con urgenza appartamento in prov. di #Macerata o #Ancona,,,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form""]",,,{},"<pre><yamldata>tel: '3291809694'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2456,207009713,2017-02-11 23:48:57,2017-02-11 21:34:49,Cercasi con urgenza appartamento in prov. di #Macerata o #Ancona,,,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""alloggio"", ""data"": ""11/02/2017"", ""descrizione"": ""Salve, cerchiamo un appartamento anche in affitto in prov di Macerata o prov di Ancona, causa inagibilit\u00e0 della nostra abitazione. Fra pochi giorni saremo per strada, abbiamo con noi un cane anziano e due mici che non sporcano e non fanno danni, chi puo aiutarci ci contatti per favore, ci occorre alloggio per alcuni mesi finch\u00e9 non si concluderanno i lavori."", ""email"": ""sandos00@libero.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3291809694""}","<pre><yamldata>tel: '3291809694'
 email: sandos00@libero.it
 cosa: alloggio
-descrizione: 'Salve, cerchiamo un appartamento anche in affitto in prov di Macerata o prov di Ancona, causa inagibilità della nostra abitazione. Fra pochi giorni saremo per strada, abbiamo con noi un cane anziano e due mici che non sporcano e non fanno danni, chi puo aiutarci ci contatti perfavore, ci occorre l'alloggio per alcuni mesi finché non si concluderanno i lavori.'
+descrizione: 'Salve, cerchiamo un appartamento anche in affitto in prov di Macerata o prov di Ancona, causa inagibilità della nostra abitazione. Fra pochi giorni saremo per strada, abbiamo con noi un cane anziano e due mici che non sporcano e non fanno danni, chi puo aiutarci ci contatti per favore, ci occorre alloggio per alcuni mesi finché non si concluderanno i lavori.'
 indirizzo: ''
 lat: ''
 lon: ''
@@ -10,10 +10,10 @@ link: ''
 immagine: ''
 data: 11/02/2017
 </yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2455,207009322,2017-02-11 21:58:40,2017-02-11 21:28:20,Cercasi camper o roulotte in provincia di #Macerata,,,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form""]",,,{},"<pre><yamldata>tel: '3291809694'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2455,207009322,2017-02-11 23:47:56,2017-02-11 21:28:20,Cercasi camper o roulotte in provincia di #Macerata,,,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""camper o roulotte"", ""data"": ""11/02/2017"", ""descrizione"": ""A causa dell'inagibilita della casa dove viviamo, cerco urgentemente camper o roulotte a prezzo modico, siamo in prov. di Macerata, grazie a chi potr\u00e0 aiutarci."", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3291809694""}","<pre><yamldata>tel: '3291809694'
 email: ''
 cosa: 'camper o roulotte'
-descrizione: 'A causa dell'inagibilità della casa dove viviamo, cerco urgentemente camper o roulotte a prezzo modico, siamo in prov di Macerata, grazie a chi potrà aiutarci.'
+descrizione: 'A causa dell''inagibilita della casa dove viviamo, cerco urgentemente camper o roulotte a prezzo modico, siamo in prov. di Macerata, grazie a chi potrà aiutarci.'
 indirizzo: ''
 lat: ''
 lon: ''
