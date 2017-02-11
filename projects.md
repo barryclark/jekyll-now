@@ -14,27 +14,25 @@ Welcome to my website where you can view my skills and some of my work (source c
 ## Professional Overview
 
 	
-* Programming Languages:    
-	  - HTML   	    - CSS
-    - Javascript  - jQuery  
-    - PHP         - Lua
-    - Python      - Ruby
+* Programming Languages: 
+
+    - HTML, CSS / SCSS, Javascript, jQuery
+    - PHP, Lua, Python, Ruby, Java
 
 
 * Experience:    
-     - HTML, CSS, SCSS, LESS
-     - AngularJS, Node.js; Express.js
+     - SCSS / LESS
+     - AngularJS, Node.js (Express)
      - NoSQL, MySQL, MongoDB
      - Wordpress, Jekyll
      - Cucumber
      - Corona SDK
 
 
-
 * Current Tools (2017):
-	- Photoshop 	  - XCode 	  - StackOverflow
-  - Illustrator   - Invision  - GoogleDevs
-  - Prose.io  	  - GitHub    - Mozilla Dev Network
+	- Photoshop 	- XCode 	- StackOverflow
+  	- Illustrator 	- Invision 	- GoogleDevs
+  	- Prose.io  	- GitHub 	- Mozilla Dev Network
     
 ----------
 
