@@ -912,13 +912,13 @@ descrizione: 'La piana di Santa Scolastica di Norcia, nell’area che ospitava u
 link: 'http://www.umbriaon.it/norcia-cascia-e-preci-via-macerie-del-sisma/'
 data: 26/01/2017
 </yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2297,203485691,2017-01-26 22:56:17,2017-01-26 20:52:54,Offresi due appartamenti per famiglie in provincia di Milano ,45.3439758,9.1724181,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""26/01/2017"", ""descrizione"": ""Residenze Vione a Basiglio (MI) mette a disposizione due appartamenti uniti con sei camere e quattro bagni in un contesto residenziale particolarmente indicato per famiglie con bambini e ragazzi."", ""email"": ""l.baffoni@residenzevione.it"", ""immagine"": """", ""indirizzo"": ""SP122, Basiglio, Milano, Lombardia, 20089, Italia"", ""lat"": ""45.3439758"", ""link"": ""www.borgodivione.it"", ""lon"": ""9.1724181"", ""tel"": ""3456731219""}","<pre><yamldata>tel: '3456731219'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2297,203485691,2017-02-11 19:16:57,2017-01-26 20:52:54,Offresi due appartamenti per famiglie in provincia di Milano ,45.3439758,9.1724181,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""26/01/2017"", ""descrizione"": ""Residenze Vione a Basiglio (MI) mette a disposizione due appartamenti uniti con sei camere e quattro bagni in un contesto residenziale particolarmente indicato per famiglie con bambini e ragazzi."", ""email"": ""l.baffoni@residenzevione.it"", ""immagine"": """", ""indirizzo"": ""SP122, Basiglio, Milano, Lombardia, 20089, Italia"", ""lat"": ""45.3439758"", ""link"": ""http://www.borgodivione.it"", ""lon"": ""9.1724181"", ""tel"": ""3456731219""}","<pre><yamldata>tel: '3456731219'
 email: l.baffoni@residenzevione.it
 descrizione: 'Residenze Vione a Basiglio (MI) mette a disposizione due appartamenti uniti con sei camere e quattro bagni in un contesto residenziale particolarmente indicato per famiglie con bambini e ragazzi.'
 indirizzo: 'SP122, Basiglio, Milano, Lombardia, 20089, Italia'
 lat: '45.3439758'
 lon: '9.1724181'
-link: www.borgodivione.it
+link: 'http://www.borgodivione.it'
 immagine: ''
 data: 26/01/2017
 </yamldata></pre>",open
