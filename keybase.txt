@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/georgesale
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://curiousgeorge-thecybermonkey.github.io
+  * I am georgesale (https://keybase.io/georgesale) on keybase.
+  * I have a public key with fingerprint 3C11 08BE 7E0D 7CE4 179C  CDC8 0C02 3A39 909D A0E4
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "01015e21a840acb961a683454a5c342994b8977c66256850c7f9d012ab917f10eec50a",
+            "fingerprint": "3c1108be7e0d7ce4179ccdc80c023a39909da0e4",
+            "host": "keybase.io",
+            "key_id": "0c023a39909da0e4",
+            "kid": "01015e21a840acb961a683454a5c342994b8977c66256850c7f9d012ab917f10eec50a",
+            "uid": "495ed3608354a5ca6f8e5f30dee25d19",
+            "username": "georgesale"
+        },
+        "service": {
+            "hostname": "curiousgeorge-thecybermonkey.github.io",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1486816349,
+    "expire_in": 157680000,
+    "prev": "797177f2f792278092d90c213febb4b13f54110d43b2ef1fe7b1d89d1cd0c1b8",
+    "seqno": 21,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.62
+Comment: https://keybase.io/crypto
+
+yMIzAnicrVJJaBRBFJ1oJomRgBuowYM0KqhJrOq9BlFBxQUFjwEjY1fV75k2yfTY
+y5hJ0EMUBcElqAeNS1APEgJuIR7U4BIVdxCjEowKCiqj4HYJuFUnevJqXT71ee/9
+935VX8XoWHlRLL5y+9uZc2cV3b3aHcZqjxWva5Goy/NSokWqh+ECDRz8IFnvcCkh
+IYywBjK2TBVZjBIdW7qpqJpqaUxRZUJUahLDYLoua7qpIWbYhCMsW5Rgw8YIgGnI
+kqok28mkwMt6TiYQsgrDGJkUDEDcYKBigzDGmYkYkhVLIQQRbiFQBTHt+hFDmKOW
+DzWOK3rikhyx9y/+P/sOh+VUogFXdGQqwwqWbpug2QriALLGMYmAPngZqxEEOgWu
+lwLfagBpc5Uk+jmHQbTaKMsfDAs9xw39EWh1kAaWp+A1uhmRrSblBOmQjmTNem7g
+MrdBcNJBkPUTkWaQz0Yim4Am/8gnqZPhYseCkQPPd9yMlMACyQInmodVUzexrqik
+SoKmrONB0okQmqGbSJxoDuSEpEEMbBi2bBtElg0TEZkTxGSs2ECpSkXVVPF2XFWo
+DDa2waCYm4RjxhHD1JSiwBszrpSQsfBppYSm76QyVhB6Yh3XrtQVx4rKYyXxUdHn
+i5WPGff3S57uL4sdwxXncze//brw+vje75VhXWf4qnr2s0VLjzffO/PkfNPdwsvc
+pcd4UtdHp//k1g9T2nf1HUjv2LewsFh9M9S5MOx5NLTmxv1plW3zp7/b1lW8ZN7E
+CWeHxn5akjxSP/1Ei3M1nh216Sl6XhHUookzftatLRmQb6W71998wdry8W3z17Yw
++fCipqmF1o7rG45syW1p7e/Ye/Ec7fmV7lRL7a+nznT4A7d3li3vae9q3N+s9+aX
+fT/Ye6fmwe72nsPK4L2Dc15XpmvPTh4TnIiXtqLC7JVt77cOHrqzH/V9/pFaVVJf
+uLxm/PjwweCC692vjAOlXx6uuFC0MVzFk6mOzc2rYc/R35raSvQ=
+=OKXt
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/georgesale
+
+==================================================================
