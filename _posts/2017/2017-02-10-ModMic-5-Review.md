@@ -4,7 +4,6 @@ title: "Review - ModMic 5"
 description: "A high-quality mic that can attach to any set of headphones. I'm loving my ModMid 5."
 category: review
 featured: modmic5.jpg
-amazonterm: modmic
 tags: [review, video games, accessories, antlion audio, modmic]
 author: Rob Kalajian
 ---
