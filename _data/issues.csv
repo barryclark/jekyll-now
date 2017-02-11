@@ -1,4 +1,26 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2456,207009713,2017-02-11 21:56:48,2017-02-11 21:34:49,Cercasi con urgenza appartamento in prov. di #Macerata o #Ancona,,,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form""]",,,{},"<pre><yamldata>tel: '3291809694'
+email: sandos00@libero.it
+cosa: alloggio
+descrizione: 'Salve, cerchiamo un appartamento anche in affitto in prov di Macerata o prov di Ancona, causa inagibilità della nostra abitazione. Fra pochi giorni saremo per strada, abbiamo con noi un cane anziano e due mici che non sporcano e non fanno danni, chi puo aiutarci ci contatti perfavore, ci occorre l'alloggio per alcuni mesi finché non si concluderanno i lavori.'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 11/02/2017
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2455,207009322,2017-02-11 21:58:40,2017-02-11 21:28:20,Cercasi camper o roulotte in provincia di #Macerata,,,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form""]",,,{},"<pre><yamldata>tel: '3291809694'
+email: ''
+cosa: 'camper o roulotte'
+descrizione: 'A causa dell'inagibilità della casa dove viviamo, cerco urgentemente camper o roulotte a prezzo modico, siamo in prov di Macerata, grazie a chi potrà aiutarci.'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 11/02/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2453,207008065,2017-02-11 21:49:09,2017-02-11 21:04:40,Cosa dice la normativa post-terremoto? Incontro a Porto Recanati,43.4350815,13.6630083,"[""Accettato"", ""Bollettino"", ""Eventi"", ""Form""]",,,"{""data"": ""11/02/2017"", ""data_evento"": ""2017-02-12"", ""descrizione"": ""Camping Bellamare Via Scarfiotti, 13 - Porto Recanati (MC), domenica 12 febbraio, ore 16.00-18.00. Allo scopo di comprendere la Legge n. 229 del 15 dicembre 2016, il decreto-legge 11 novembre 2016, n. 205 in discussione al Senato e il decreto del 2017, per diffondere la corretta conoscenza e raccogliere domande e idee, ActionAid Italia e Cittadinanzattiva Onlus, in collaborazione con esperti legali, promuovono un incontro per illustrare ai cittadini la normativa di recente pubblicazione."", ""indirizzo"": ""Via Manin, Porto Recanati, MC, Marche, 62017, Italia"", ""lat"": ""43.4350815"", ""link"": ""https://www.facebook.com/events/1282573061804560/"", ""lon"": ""13.6630083"", ""ora_evento"": ""16:00"", ""promotore"": ""ActionAid e Cittadinanzattiva"", ""titolo_evento"": ""Cosa dice la normativa post-terremoto?""}","<pre><yamldata>titolo_evento: 'Cosa dice la normativa post-terremoto?'
 data_evento: '2017-02-12'
 ora_evento: '16:00'
