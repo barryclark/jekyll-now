@@ -9,7 +9,7 @@ name: Carpinterzeta
 description: Freak.
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: hhttps://pbs.twimg.com/profile_images/771095134175895552/UGj7CTKU.jpg
+avatar: https://pbs.twimg.com/profile_images/771095134175895552/UGj7CTKU.jpg
 
 #
 # Flags below are optional
@@ -21,8 +21,8 @@ footer-links:
   email: albcarpintero@gmail.com
   facebook:
   flickr:
-  github: barryclark/jekyll-now
-  instagram:
+  github: 
+  instagram: 
   linkedin:
   pinterest:
   rss: rss
