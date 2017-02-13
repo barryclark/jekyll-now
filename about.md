@@ -8,4 +8,4 @@ permalink: /about/
 
 [georgesale.co.uk](http://www.georgesale.co.uk)
 
-[george@georgesale.co.uk](mailto:george@georgesale.co.uk)
+[@GeorgeTweeted](https://www.twitter.com/georgetweeted)
