@@ -15,10 +15,10 @@ link: ''
 email: francesca.abignente@gmail.com
 data: 13/02/2017
 </yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2460,207209846,2017-02-13 12:56:55,2017-02-13 12:50:15,Cercasi stufa a pellet a #Bolognola,,,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form""]",,,{},"<pre><yamldata>tel: ''
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2460,207209846,2017-02-13 13:51:58,2017-02-13 12:50:15,Cercasi stufa a pellet a #Bolognola,42.994904,13.2263425,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""Cercasi stufa a pellet #Bolognola"", ""data"": ""13/02/2017"", ""descrizione"": ""Cerco una stufa a pellet per appartamento di mq 70 donatomi per l'emergenza terremoto visto che ho casa inagibile e ci dobbiamo trasferire per un periodo. Grazie mille fin da ora da parte della mia famiglia. Il mio paese \u00e8 Bolognola nell'epicentro. Contattare Daniela Cecchini."", ""email"": ""irustichellididany@libero.it"", ""immagine"": """", ""indirizzo"": ""Strada Provinciale 47 Fiastra - Bolognola, Bolognola, MC, Marche, 62033, Italia"", ""lat"": ""42.994904"", ""link"": """", ""lon"": ""13.2263425"", ""tel"": """"}","<pre><yamldata>tel: ''
 email: irustichellididany@libero.it
 cosa: 'Cercasi stufa a pellet #Bolognola'
-descrizione: 'Cerco una stufa a pellet per appartamento di mq 70 donatomi per l'emergenza terremoto visto che ho casa inagibile e ci dobbiamo trasferire per un periodo. Grazie mille fin da ora da parte della mia famiglia. Il mio paese è Bolognola nell'epicentro. Contattare Daniela Cecchini.'
+descrizione: 'Cerco una stufa a pellet per appartamento di mq 70 donatomi per l''emergenza terremoto visto che ho casa inagibile e ci dobbiamo trasferire per un periodo. Grazie mille fin da ora da parte della mia famiglia. Il mio paese è Bolognola nell''epicentro. Contattare Daniela Cecchini.'
 indirizzo: 'Strada Provinciale 47 Fiastra - Bolognola, Bolognola, MC, Marche, 62033, Italia'
 lat: '42.994904'
 lon: '13.2263425'
