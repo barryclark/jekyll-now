@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2469,207360868,2017-02-13 22:38:06,2017-02-13 22:37:49,"Sindaco di #Norcia incontra i cittadini a Terni, Spoleto e Cascia",,,"[""Accettato"", ""Bollettino"", ""Eventi"", ""Facebook""]",,,"{""data"": ""13/02/2017"", ""data_evento"": """", ""descrizione"": ""Il Sindaco di Norcia incontra i cittadini in due incontri: marted\u00ec 14 febbraio ore 16 a Terni, presso hotel Garden e alle 18.30 a Spoleto, presso hotel Albornoz. Il secondo incontro sar\u00e0 invece a Cascia il 15 febbraio ore 18, hotel La Corte. Al link i dettagli."", ""indirizzo"": """", ""lat"": """", ""link"": ""https://www.facebook.com/ComuneNorcia/photos/a.530545117051128.1073741829.527183190720654/1016837455088556/?type=3"", ""lon"": """", ""ora_evento"": """", ""promotore"": ""Comune di Norcia"", ""titolo_evento"": ""Sindaco di #Norcia incontra i cittadini a Terni, Spoleto e Cascia""}","<pre><yamldata>titolo_evento: 'Sindaco di #Norcia incontra i cittadini a Terni, Spoleto e Cascia'
+data_evento: ''
+ora_evento: ''
+promotore: 'Comune di Norcia'
+descrizione: 'Il Sindaco di Norcia incontra i cittadini in due incontri: martedì 14 febbraio ore 16 a Terni, presso hotel Garden e alle 18.30 a Spoleto, presso hotel Albornoz. Il secondo incontro sarà invece a Cascia il 15 febbraio ore 18, hotel La Corte. Al link i dettagli.'
+indirizzo: ''
+lat: ''
+lon: ''
+link: 'https://www.facebook.com/ComuneNorcia/photos/a.530545117051128.1073741829.527183190720654/1016837455088556/?type=3'
+data: 13/02/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2468,207358265,2017-02-13 22:26:46,2017-02-13 22:26:09,"#Fabriano, incontro sulla gestione dell'emergenza organizzato da Terre in Moto",43.3358407,12.9046187,"[""Accettato"", ""Bollettino"", ""Eventi"", ""Facebook""]",,,"{""data"": ""13/02/2017"", ""data_evento"": ""2017-02-16"", ""descrizione"": ""Incontro pubblico su terremoto e gestione dell'emergenza e presentazione del libro \""Politiche del disastro\"" di Silvia Pitzalis."", ""indirizzo"": ""Piazza del Comune, Centro, Fabriano, AN, Marche, 60044, Italia"", ""lat"": ""43.3358407"", ""link"": ""https://www.facebook.com/events/1887020184867096/?ti=icl"", ""lon"": ""12.9046187"", ""ora_evento"": ""18:30"", ""promotore"": ""Associazione Terre in Moto"", ""titolo_evento"": ""#Fabriano, incontro sulla gestione dell'emergenza organizzato da Terre in Moto""}","<pre><yamldata>titolo_evento: '#Fabriano, incontro sulla gestione dell''emergenza organizzato da Terre in Moto'
 data_evento: '2017-02-16'
 ora_evento: '18:30'
