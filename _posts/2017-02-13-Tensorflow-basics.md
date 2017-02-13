@@ -12,3 +12,37 @@ The computation process in Tensorflow occurs as follows:
 * Construct a computational graph  
 * Launch the graph into a **Session** in which the graph ops are placed onto **devices** (GPU, CPU)  
 * The computation returns **Tensors** as Numpy *ndarray* objects in Python and as `Tensorflow::Tensor` instances in C and C++.  
+
+Example:  Compute matrix multiplication in Tensorflow  
+
+
+* Build a computational graph. Recall that an **op** takes in **Tensors**(or nothing)  and produces **Tensors** (or nothing)   
+
+```
+import tensorflow as tf   
+
+mat1 = tf.constant([[1.,2.]])
+mat2 = tf.constant([[3.], [4.]])
+prod = tf.matmul(mat1,mat2)
+```  
+
+* Launch the constructed graph into a **Session()**. There are three different ways to do so. 
+	* Basic way: 
+    
+    ```
+    sess = tf.Session()
+    print(sess.run(prod))
+    sess.close() 
+    ```   
+    * Using `with` block:  
+    
+    ```
+    with tf.Session() as sess:
+    	print(sess.run(prod))
+    ```  
+    * Using Interactive Session:  
+    
+    ```
+    sess = tf.InteractiveSession()
+    prod.eval() 
+    ```
