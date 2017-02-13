@@ -1,8 +1,10 @@
 ---
-published: false
+published: true
 ---
 This note is not designed to replace the Tensorflow official documentation but rather to try to summarize the fundamental principles in Tensorflow. Fundamental principles are important to use and debug Tensorflow-based programs more effectively and less time-consuming. I won't write about detail APIs because the official [Tensorflow website](https://www.tensorflow.org/) serves this job better.    
 
+
+## Tensorflow as Computational Graph  
 Tensorflow represents computations in graph whose nodes are operations (**ops** for short). An op takes zero or more **Tensors** as input, performs some computations, and produces zero or more **Tensor** as output. 
 
 ![computational graph](/images/comp_graph.png)
@@ -46,3 +48,9 @@ prod = tf.matmul(mat1,mat2)
     sess = tf.InteractiveSession()
     prod.eval() 
     ```
+
+## Common Tensorflow ops and Tensors 
+|Syntax|Meaning|
+|------|-------|
+|`tf.placeholder(tf.float32, [None, 784])`| A interactive tensor specified with data type and shape. `None` means of any length|
+|`tf.Variable(tf.zeros([784,10])`| A modifiable tensor which needs to be initialized. In this example, it is initialized to zeros| 
