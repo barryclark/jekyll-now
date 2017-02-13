@@ -15,13 +15,15 @@ permalink: /about/
 
 
 Questo è un progetto non profit, organizzato interamente da volontari. È nato per condividere informazioni utili e
-verificate sugli eventi sismici che hanno coinvolto il centro Italia durante il 2016.
+verificate sugli eventi sismici che hanno coinvolto il centro Italia durante il 2016 e il 2017.
 
-Il terremoto ha interessato molti comuni del centro Italia causando numerose vittime e notevoli danni. Al momento in cui viene scritta questa pagina le notizie che provengono dalle fonti ufficiali sono sempre in divenire e vengono aggiornate con informazioni dettagliate e puntuali non appena possibile.
+I terremoti hanno interessato molti comuni del centro Italia causando numerose vittime e notevoli danni.
 
 Il progetto si pone come scopo quello di aggregare e non disperdere contenuti utili a tutti provenienti da fonti di varia natura (ufficiali e non) al fine creare valore in un momento di crisi per il paese.
 
 Il progetto non vuole in alcun modo sostituirsi a fonti istituzionali di informazione a cui rimandiamo caldamente per l'attendibilità.
+
+Il progetto, laddove lo si ritenga utile, è usabile da organizzazioni, associazioni, gruppi informali ed anche pubbliche amministrazioni che avessero bisogno di un servizio per informare su quanto sta avvenendo a seguito dei sismi.
 
 Il progetto è descritto tramite il nostro [wiki](https://github.com/emergenzeHack/terremotocentro/wiki).
 
@@ -37,13 +39,15 @@ Un grazie sentito a :
 - [Openstreetmap Italia](https://openstreetmap.it/) per il lavoro di mappatura nelle zone del terremoto
 - [Andrea Borruso](https://twitter.com/aborruso); [Nino Galante](https://twitter.com/picomiles); [Maurizio de Magnis](https://twitter.com/olistik); [Sabas](https://twitter.com/__sabas);[Alberto Cottica](https://twitter.com/alberto_cottica); [Piersoft](https://twitter.com/piersoft?lang=it) [Andrea Nelson Mauro](https://twitter.com/nelsonmau) per il loro contributo da civic hackers
 - [Francesco Pinzauti](https://twitter.com/pinzauti7);[Timothy Redaelli](https://twitter.com/drizztbsd);[Vincenzo Tilotta](https://twitter.com/SprayLinux) per il loro contributo nello sviluppo software
+-  L'associazione [OnData](http://ondata.it/)
 - [Rosy Battaglia](https://twitter.com/rosybattaglia), [Donata Columbro](https://twitter.com/dontyna), [Marieva Favoino](https://twitter.com/marievafavoino), [Cristina Galasso](https://twitter.com/cristigalas), [Fabio Manfrin](https://twitter.com/FManfri), [Gloria Schiavi](https://twitter.com/gloria_schiavi) per la gestione della comunicazione
 - [Chiara Spinelli](https://twitter.com/ChiaraPeggy) per il supporto nella verifica del crowdfounding
-- [Valeria Villan](https://twitter.com/Tersillina) per la sua esperienza in crisi management
-- Il team della [standbytaskforce](http://www.standbytaskforce.org/) per il supporto
-- Marco Milesi e [Piersoft](https://twitter.com/Piersoft) per il bot Telegram
-- [Ernesto Belisario](https://twitter.com/diritto2punto0?lang=it) per gli aspetti legali
+- [Valeria Villan](https://twitter.com/Tersillina) per la sua esperienza in crisis management
+- Il team della [standbytaskforce](http://www.standbytaskforce.org/) per il supporto fornito
+- Marco Milesi e [Piersoft](https://twitter.com/Piersoft) per la realizzazione del bot Telegram
+- [Ernesto Belisario](https://twitter.com/diritto2punto0?lang=it) per l'elaborazione delle note legali
 - Il gruppo di ricerca [geoSDI](http://www.geosdi.org) del CNR IMAA per il supporto ai test della piattaforma e la generazione del servizio WMS
+- Tutti gli iscritti al [gruppo Telegram](https://t.me/joinchat/AAAAAEBsI3rY23dm9L7FJg) che collaborano al progetto
 
 .....
 (i ringraziamenti sono in progress ogni giorno....Non avertene a male se non compari ancora, grazie lo stesso!)
