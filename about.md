@@ -8,4 +8,4 @@ A Computer Systems (mature) student.
 
 ### Contact me
 
-Reach out on twitter, or drop me an email at myFirstName_myLastName@me.com
+Reach out on twitter @jamxf, or drop me an email at myFirstName_myLastName@me.com
