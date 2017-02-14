@@ -1,0 +1,39 @@
+---
+title: "This is a test"
+author: "Michael K Oberst"
+output: html_document
+layout: post
+---
+
+# Introduction
+
+Exploratory data analysis cheatsheet!
+
+# Importing and cleaning the data
+
+## Loading the data
+
+```{r eval = FALSE}
+my_data <- read.csv("example_data.csv")
+```
+
+## Basic analysis using R commands
+
+A couple of basic commands to examine the structure
+
+* str() - Gives a basic structure with variables names and types
+* summary() - Gives more information on variable distributions
+
+## Cleaning up the data types
+
+You can use the following commands to change types
+
+```{r eval = FALSE}
+date_vars <- names(episode_df) %in% c(
+	"date_of_birth",
+	"admission_date",
+	"discharge_date",
+	"episode_end_date")
+
+episode_df[, date_vars] <- lapply(episode_df[, date_vars], as.Date)
+```
