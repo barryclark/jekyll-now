@@ -5,6 +5,8 @@ title: Sbírání dat z formuláře
 
 Jak a kde v PHP zjistit, jaká data uživatel poslal pomocí formuláře?
 
+Formuláře ve formátu HTML slouží k přenosu dat od uživatele k serveru. Co jsou to formuláře se můžeš dozvědět [ve starším článku na jakpsatweb.cz](https://www.jakpsatweb.cz/html/formulare.html), nebo (pokud máš víc času) si projdi kategorii [Formuláře na webu JeČas.cz](http://jecas.cz/formulare). 
+
 _Kódy v článku jsou určené pro pochopení principu přenosu dat z formuláře do jazyka PHP. Nepoužívej je prosím v produkčních aplikacích, chybí jim důležité náležitosti._ 
 
 # Co je potřeba?
@@ -61,7 +63,9 @@ Zkus teď udělat úpravu v souboru `index.html`:
 Při vyzkoušení znaky z řádku zmizely, skript ale funguje pořád, takže informace stále server zachytává zprávně. Jak to? 
 
 # Proměnné $_GET a $_POST
-Všechny informace z formulářů najdeme v superglobální array `$_GET` nebo `$_POST`. Práce s nimi je stejná, jen se každý způsob používá pro něco jiného. Jako klíče se v array použíjí `id` formulářových součástí. Příklad: text z prvku s `id="age"` poslaný metodou GET nalezneme v proměnné `$_GET['age']`. 
+Data se posílají podle definice v protokolu HTTP. V té je popsaných několik metod. Ty sis zatím vyzkoušel ty zdaleka nejužitečnější: `POST` a `GET`. Mezi dalšími se používá například `PUT`, `OPTIONS` a `DELETE`. Po obdržení požadavku serverem PHP vytáhne uživatelská data zadaná ve formulářích a zpřístupní je v předem definovaných proměnných, které potom můžeme volně používat. 
+
+Všechny informace z formulářů tedy najdeme v superglobální array `$_GET` nebo `$_POST`. Práce s nimi je stejná, jen se každý způsob používá pro něco jiného. Jako klíče se v array použíjí `id` formulářových součástí. Příklad: text z prvku s `id="age"` poslaný metodou GET nalezneme v proměnné `$_GET['age']`. 
  
 **Superglobální array** znamená, že je daná pevně od PHP a že do nich můžeme přístupovat kdekoli v kódu. To není vždy žádané řešení. Většina aplikací to řeší obalením těchto array do vlastních struktur, kterým už můžou přířadit žádanou přístupnost. Typicky se používá třída `Request`. 
 
