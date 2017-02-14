@@ -34,7 +34,7 @@ Journal club meetings currently take place on Wednesdays at 12:00 pm in seminar 
 - April 12: Giancarlo La Camera 
 - April 19: Naz Gulce
 - April 26: Memming Park
-
+- May 3: Phillip Kang
 
 
 
