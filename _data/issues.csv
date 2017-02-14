@@ -1,4 +1,20 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2471,207468695,2017-02-14 11:00:02,2017-02-14 09:59:56,Abbigliamento intimo NUOVO,,,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Form""]",,,"{""cosa"": ""Abbigliamento intimo NUOVO"", ""data"": ""14/02/2017"", ""descrizione"": ""La misericordia di Montegrosso (Puglia) cerca ente riconosciuto per donazione di circa 4 mila capi di biancheria intima nuovi."", ""email"": ""misemontegrosso@libero.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3272808922""}","<pre><yamldata>tel: '3272808922'
+email: misemontegrosso@libero.it
+cosa: 'Abbigliamento intimo NUOVO'
+descrizione: 'La misericordia di Montegrosso (Puglia) cerca ente riconosciuto per donazione di circa 4 mila capi di biancheria intima nuovi.'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 14/02/2017
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2470,207452125,2017-02-14 10:59:22,2017-02-14 08:49:24,Aperte le iscrizioni all'elenco dei professionisti: attiva l'apposita piattaforma online,,,"[""Accettato"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""14/02/2017"", ""descrizione"": ""Il commissario per la ricostruzione, Vasco Errani, ha emanato l'avviso con il quale d\u00e0 il via alla raccolta delle domande di iscrizione all'Elenco speciale dei professionisti abilitati ad operare per la ricostruzione nei luoghi colpiti dagli eventi sismici che si sono susseguiti dallo scorso 24 agosto. Si tratta di un passaggio fondamentale giacch\u00e9 solo i professionisti iscritti nell'elenco speciale possono ricevere incarichi di progettazione e di direzione dei lavori e dunque operare per la ricostruzione."", ""link"": ""https://www.professionearchitetto.it/news/notizie/23498/Terremoto-aperte-le-iscrizioni-all-elenco-dei-professionisti-attiva-l-apposita-piattaforma-online"", ""titolo"": ""Terremoto, aperte le iscrizioni all'elenco dei professionisti: attiva l'apposita piattaforma online""}","<pre><yamldata>titolo: 'Terremoto, aperte le iscrizioni all''elenco dei professionisti: attiva l''apposita piattaforma online'
+descrizione: 'Il commissario per la ricostruzione, Vasco Errani, ha emanato l''avviso con il quale dà il via alla raccolta delle domande di iscrizione all''Elenco speciale dei professionisti abilitati ad operare per la ricostruzione nei luoghi colpiti dagli eventi sismici che si sono susseguiti dallo scorso 24 agosto. Si tratta di un passaggio fondamentale giacché solo i professionisti iscritti nell''elenco speciale possono ricevere incarichi di progettazione e di direzione dei lavori e dunque operare per la ricostruzione.'
+link: 'https://www.professionearchitetto.it/news/notizie/23498/Terremoto-aperte-le-iscrizioni-all-elenco-dei-professionisti-attiva-l-apposita-piattaforma-online'
+data: 14/02/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2469,207360868,2017-02-13 22:38:06,2017-02-13 22:37:49,"Sindaco di #Norcia incontra i cittadini a Terni, Spoleto e Cascia",,,"[""Accettato"", ""Bollettino"", ""Eventi"", ""Facebook""]",,,"{""data"": ""13/02/2017"", ""data_evento"": """", ""descrizione"": ""Il Sindaco di Norcia incontra i cittadini in due incontri: marted\u00ec 14 febbraio ore 16 a Terni, presso hotel Garden e alle 18.30 a Spoleto, presso hotel Albornoz. Il secondo incontro sar\u00e0 invece a Cascia il 15 febbraio ore 18, hotel La Corte. Al link i dettagli."", ""indirizzo"": """", ""lat"": """", ""link"": ""https://www.facebook.com/ComuneNorcia/photos/a.530545117051128.1073741829.527183190720654/1016837455088556/?type=3"", ""lon"": """", ""ora_evento"": """", ""promotore"": ""Comune di Norcia"", ""titolo_evento"": ""Sindaco di #Norcia incontra i cittadini a Terni, Spoleto e Cascia""}","<pre><yamldata>titolo_evento: 'Sindaco di #Norcia incontra i cittadini a Terni, Spoleto e Cascia'
 data_evento: ''
 ora_evento: ''
