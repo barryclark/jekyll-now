@@ -45,7 +45,7 @@ git add index.php #přidej soubor index.php
 git add * #přidej všechny soubory v aktuální složce
 ```
 
-Pro odeslání všechn změn do commitu použij příkaz
+Pro odeslání všech změn do commitu použij příkaz
 
 ```
 git commit -m "zpráva, která popisuje commit"
@@ -124,6 +124,8 @@ Na smazání větve, kterou už nepotřebuješ, napiš příkaz
 git branch -d [nepotřebná větev]
 #takže třeba
 git branch -d nova-funkce-foo
+#a pokud chceš větev smazat, i když není nikde zařazená
+git branch -D nova-nepotrebna-funkce-boo
 ```
 
 ## Aktualizace projektu
@@ -156,7 +158,7 @@ git merge [tvoje větev]
 git merge nova-funkce-foo
 ```
 
-Merge může vyústit ve dva výsledky. V lepším připadě proběhne merge čistě a všechno je dobré. Někdy se ale Git nemůže rozhodnout, která změna je správná (zda ta nová nebo stará) a příkaz vyústí v **conflict**. Stává se typicky při snaze udělat v kódu změnu tam, kde už nějaká změna od rozdělení větví nastala. Konflikty je třeba vyřešit ručně. Po vyřešení znovu použij příkaz `diff` pro kontrolu a `merge` pro spojení. 
+Merge může vyústit ve dva výsledky. V lepším připadě proběhne merge čistě a všechno je dobré. Někdy se ale Git nemůže rozhodnout, která změna je správná (zda nová, stará nebo nějaká jejich kombinace) a příkaz vyústí v **conflict**. Stává se typicky při snaze udělat v kódu změnu tam, kde už nějaká změna od rozdělení větví nastala. Konflikty je třeba vyřešit ručně. Po vyřešení znovu použij příkaz `diff` pro kontrolu a `merge` pro spojení. 
 
 ## Vrácení změn
 V případě že se do kódu beznadějně zamotáš a už se nevíš rady, bývá nejrychlejší začít zase od začátku. 
