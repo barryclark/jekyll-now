@@ -9,4 +9,4 @@ Thanh T. Nguyen
 
 
 ## Research interests  
-Unsupervised Learning, Efficient Data Representation (Sparity, Autoencoding, Information Bottleneck Representation) and Application in Medicine and Business. 
+Bayesian statistics and Probability Models in Deep Learning, and Applications.  
