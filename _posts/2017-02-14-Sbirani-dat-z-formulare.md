@@ -7,7 +7,7 @@ Jak a kde v PHP zjistit, jaká data uživatel poslal pomocí formuláře?
 
 _Kódy v článku jsou určené pro pochopení principu přenosu dat z formuláře do jazyka PHP. Nepoužívejte je prosím v produkčních aplikacích, chybí jim důležité náležitosti._ 
 
-# Co je minimálně potřeba
+# Co je potřeba?
 Co potřebujeme pro zpracovávání uživatelských informací na straně serveru?
  - u každého vstupu (textové políčko, checkbox, radiobutton...) správně nastavit jeho `id`
  - v souboru na serveru, který informace zpracovává, použít údaje pomocí `$_GET` nebo `$_POST`
