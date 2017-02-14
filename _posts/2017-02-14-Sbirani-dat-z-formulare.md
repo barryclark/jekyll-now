@@ -5,17 +5,17 @@ title: Sbírání dat z formuláře
 
 Jak a kde v PHP zjistit, jaká data uživatel poslal pomocí formuláře?
 
-_Kódy v článku jsou určené pro pochopení principu přenosu dat z formuláře do jazyka PHP. Nepoužívejte je prosím v produkčních aplikacích, chybí jim důležité náležitosti._ 
+_Kódy v článku jsou určené pro pochopení principu přenosu dat z formuláře do jazyka PHP. Nepoužívej je prosím v produkčních aplikacích, chybí jim důležité náležitosti._ 
 
 # Co je potřeba?
-Co potřebujeme pro zpracovávání uživatelských informací na straně serveru?
+Co potřebuješ pro zpracovávání uživatelských informací na straně serveru?
  - u každého vstupu (textové políčko, checkbox, radiobutton...) správně nastavit jeho `id`
  - v souboru na serveru, který informace zpracovává, použít údaje pomocí `$_GET` nebo `$_POST`
- - ve formuláři je potřeba nastavit správně atribut `action`, který určuje, který soubor se má pro zpracování zavolat (technicky tam být nemusí, potom se použije atribut `GET`, vždy ho tam ale pište, protože na to není spoleh)
+ - ve formuláři je potřeba nastavit správně atribut `action`, který určuje, jaký soubor se má pro zpracování zavolat (technicky tam být nemusí, potom se použije atribut `GET`, vždy ho tam ale piš, protože na to není spoleh)
 
-Důležitou věcí je uvědomit si, kde se používají jaké části naší aplikace. Protože vyznávám učení hrou, předestřu zde příkald. Ten bude mít dvě funkční části nebo strany: 
+Důležitou věcí je uvědomit si, kde se používají jaké části naší aplikace. Protože vyznávám učení hrou, předestřu zde příklad. Ten bude mít dvě funkční části nebo strany: 
  - **uživatel** - v internetovém prohlížeči se vykresluje text v HTML - tedy i formulář, kam uživatel zadává data. Po stisku tlačítka _Odeslat_ se data odešlou na
- - **server** - tam je může zpracovat jazyk PHP a dál s nimi nakládat - třeba je uložit, přilhásit nebo nepřihlásit uživatele a mnoho dalšího. 
+ - **server** - tam je může zpracovat jazyk PHP a dál s nimi nakládat - třeba je uložit, přihlásit nebo nepřihlásit uživatele a mnoho dalšího. 
 
 Pro příklad musíš mít zprovozněný PHP server - jak na to se dozvíš třeba ve [článku na JeČas.cz](http://jecas.cz/localhost). 
 
@@ -31,7 +31,7 @@ Budeš potřebovat formulář v HTML, do kterého uživatel zadává informace. 
 </form>
 ```
 
-Důležitý je zejména atribut `action="zpracuj.php"`, což je adresa, na který se bude formulář odesílat a `method="get"`, který určuje, jakým způsobem budou data na server doručena. K tomu se dočteš více za chvíli. Potřebujš také správně nastavené `id` pro všechny vstupy, abychom je potom podle toho na serveru poznali. 
+Důležitý je zejména atribut `action="zpracuj.php"`, což je adresa, na který se bude formulář odesílat a `method="get"`, který určuje, jakým způsobem budou data na server doručena. K tomu se dočteš více za chvíli. Potřebuješ také správně nastavené `id` pro všechny vstupy, abychom je potom podle toho na serveru poznali. 
 
 ## Serverová část
 Vytvoř si nový PHP soubor jménem `zpracuj.php`, na který soubor `index.html` bude posílat data. Soubor by měl zachytit oba textové vstupy, porovnat je a vypsat, zda jsou stejné či ne a mohl by vypadat třeba: 
@@ -50,7 +50,7 @@ if ($prvniVstup === $druhyVstup) {
 
 To je vše, co potřebuješ - vyzkoušej ho!  
 
-_Pokud jste se ztratili nebo kód příkladu nechceš ručně tvořit, nalezneš ho na <https://github.com/tomtomklima/sbirani-dat-z-formulare>. Pokud ti stejně nepůjde zprovoznit, napiš do komentářů a poradím, co s tím._ 
+_Pokud ses ztratil nebo kód příkladu nechceš ručně tvořit, nalezneš ho na <https://github.com/tomtomklima/sbirani-dat-z-formulare>. Pokud ti stejně nepůjde zprovoznit, napiš do komentářů a poradím, co s tím._ 
 
 ## Úprava z GET na POST
 Při vyzkoušení příkladu si můžeš všimnout, že se za výslednou adresou objevily další symboly - něco jako `zpracuj.php?prvni=text&druhy=text`. 
@@ -69,7 +69,7 @@ Všechny informace z formulářů najdeme v superglobální array `$_GET` nebo `
 
 `POST` naproti tomu posílá data v hlavičce pro normální uživatele většinou neviditelné (jde zobrazit třeba přes vývojářskou konzoli v každém prohlížeči). Není omezený délkou. Používá se hlavně pro delší texty a pro informace, které nemají být veřejné (například uživatelská jména a hesla). 
 
-Obecně platí, že když bude výsledek jen **zobrazovat**, měli bychom použít metodu `GET`. Když bude výsledek něco **měnit** (ukládat, mazat), měl bys použít `POST`. 
+Obecně platí, že když se bude výsledek jen **zobrazovat**, měl bys použít metodu `GET`. Když bude výsledek něco **měnit** (ukládat, mazat), měl bys použít `POST`. 
 
 # Too Long, Didn't Read?
-Pro správně posílání dat na server poutřebuješ mít `<form>`, u něj atribut `method="GET"` nebo `method="POST"` a na serverové straně najdeš data v superglobální array `$_GET` nebo `$_POST`. 
+Pro správné posílání dat na server potřebuješ mít `<form>`, u něj atribut `method="GET"` nebo `method="POST"` a na serverové straně najdeš data v superglobální array `$_GET` nebo `$_POST`. 
