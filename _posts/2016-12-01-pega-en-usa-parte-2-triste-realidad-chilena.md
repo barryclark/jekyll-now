@@ -32,7 +32,7 @@ He visto muchos casos de personas que realmente quieren conseguir trabajo en una
 Osea, por mucha buena intención que tenga una reclutadora que trabajaba consiguiendo técnicos de soporte, probablemente no tendrá la experiencia y/o conocimiento para mejorar tu CV con la idea de ser presentado en Google, Amazon, Microsoft, Apple, etc. Y ojo, por mucho que respeto a los Psicólogos, casi la mayoría
 de las top tech NO TIENEN PRUEBAS PSICOLÓGICAS, ni de manchas, colores, dibujar hombres bajo la lluvia o similares, sino solo de inteligencia y conocimientos técnicos y justamente en esto debes enfocar tu CV.
 
-Finalmente, si van a gastar us$1.000 en mejorar su CV, sigan mi recomendación y compren los libros que sugiero mas abajo y/o busquen a algún amigo o conocido que trabaje en una top tech, invítenle un par de cervezas y les aseguro que no gastaran mas de us$50 para obtener una buena oportunidad de conseguir el trabajo que quieres.
+Finalmente, si van a gastar us$1.000 en mejorar su CV, sigan mi recomendación y compren 2 libros: "Cracking the code interview" y "The Google Resume". Otra forma muy efectiva es buscar a algún amigo o conocido que trabaje en una top tech, invítenle un par de cervezas y les aseguro que no gastaran mas de us$50 para obtener una buena oportunidad de conseguir el trabajo que quieres.
 
 ## Desarrolladores inmaduros, sin experiencia o poco atrevidos?
 
