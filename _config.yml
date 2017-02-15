@@ -12,8 +12,6 @@ description: Articles about React Native
 # Flags below are optional
 #
 
-
-
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
@@ -84,4 +82,4 @@ exclude:
   - README.md
   - CNAME
 
-theme: jekyll-theme-minimal
+theme: mediator
