@@ -8,6 +8,15 @@ nickname: kingbbode
 tag: [bug tracking,membase,couchbase,servlet,spring]
 ---
 
+<script language="JavaScript" type="text/javascript">
+function paragraph_toggle(obj) {
+  if (obj.style.display == 'none')
+    obj.style.display = 'block';
+  else if (obj.style.display == 'block')
+    obj.style.display = 'none';
+};
+</script>
+
 버그트래킹 환경
 -----------
 
