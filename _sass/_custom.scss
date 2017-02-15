@@ -1,5 +1,21 @@
 .post {
-  max-width: 500px;
+  p {
+    /*max-width: 600px;*/
+  }
+  line-height: 1.7;
+
+  iframe {
+    max-width: 100%;
+  }
+
+  img + em {
+    font-size: 10px;
+    font-style: normal;
+  }
+
+  .flex {
+    display: flex;
+  }
 }
 
 header {
@@ -16,3 +32,10 @@ header {
   margin-bottom: 100px;
 }
 
+code.highlighter-rouge {
+  background: #EEE;
+  border-radius: 5px;
+  border: 1px solid #DDD;
+  padding: 0 5px;
+  line-height: 1.2;
+}
