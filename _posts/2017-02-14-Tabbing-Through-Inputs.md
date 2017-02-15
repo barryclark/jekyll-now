@@ -56,7 +56,6 @@ In our example, we're storing each `TextInput`'s ref on an internal `inputs` obj
   }}
   ...
 />
-
 ```
 
 Since the ref is defined in the `render` function, don't store the reference with `setState`; [doing so will cause an infinite loop](https://github.com/facebook/react/issues/5591) and many tears will be shed.
@@ -138,14 +137,8 @@ The final gist is here:
 You can see it in action on iOS and Android:
 
 <div class="flex">
-<div>
-<iframe width="50%" height="480" src="https://www.youtube.com/embed/rHjJh0qk1dg" frameborder="0" allowfullscreen></iframe>
-*iOS*
-</div>
-<div>
-<iframe width="50%" height="480" src="https://www.youtube.com/embed/KFazq6ZBFyw" frameborder="0" allowfullscreen></iframe>
-*Android*
-</div>
+  <iframe width="50%" height="480" src="https://www.youtube.com/embed/rHjJh0qk1dg" frameborder="0" allowfullscreen></iframe>
+  <iframe width="50%" height="480" src="https://www.youtube.com/embed/KFazq6ZBFyw" frameborder="0" allowfullscreen></iframe>
 </div>
 
 You can download it at this link, for which I'll need your email address.
