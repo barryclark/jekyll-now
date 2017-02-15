@@ -31,7 +31,7 @@ link: ''
 immagine: 'http://i.imgur.com/AfUFn3s.jpg'
 data: 15/02/2017
 </yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2484,207751168,2017-02-15 16:44:57,2017-02-15 09:35:47,Cercasi furgone+volontario per caricare materiale #Roma - #Visso,42.9312321,13.087449,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""Cercasi furgone con carico 3mt + volontario per caricare il materiale (Roma-Visso)"", ""data"": ""15/02/2017"", ""descrizione"": ""Stiamo CERCANDO un FURGONE con carico per 3 mt per portare del materiale da Roma a Visso. Cerchiamo anche un volontario per caricare il materiale a Roma e portarlo a Visso. Un allevatore ne ha bisogno per mettere in SICUREZZA LA STALLA. Potete contattarmi al 3479526902 Manuela o 3284089801 Massimo, grazie in anticipo."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Piazza Martiri Vissani, Visso, MC, Marche, 62039, Italia"", ""lat"": ""42.9312321"", ""link"": """", ""lon"": ""13.087449"", ""tel"": ""3479526902 Manuela Fazi""}","<pre><yamldata>tel: '3479526902 Manuela Fazi'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2484,207751168,2017-02-15 16:45:19,2017-02-15 09:35:47,Cercasi furgone e un volontario per trasportare materiale da #Roma a #Visso,42.9312321,13.087449,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""Cercasi furgone con carico 3mt + volontario per caricare il materiale (Roma-Visso)"", ""data"": ""15/02/2017"", ""descrizione"": ""Stiamo CERCANDO un FURGONE con carico per 3 mt per portare del materiale da Roma a Visso. Cerchiamo anche un volontario per caricare il materiale a Roma e portarlo a Visso. Un allevatore ne ha bisogno per mettere in SICUREZZA LA STALLA. Potete contattarmi al 3479526902 Manuela o 3284089801 Massimo, grazie in anticipo."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Piazza Martiri Vissani, Visso, MC, Marche, 62039, Italia"", ""lat"": ""42.9312321"", ""link"": """", ""lon"": ""13.087449"", ""tel"": ""3479526902 Manuela Fazi""}","<pre><yamldata>tel: '3479526902 Manuela Fazi'
 email: ''
 cosa: 'Cercasi furgone con carico 3mt + volontario per caricare il materiale (Roma-Visso)'
 descrizione: 'Stiamo CERCANDO un FURGONE con carico per 3 mt per portare del materiale da Roma a Visso. Cerchiamo anche un volontario per caricare il materiale a Roma e portarlo a Visso. Un allevatore ne ha bisogno per mettere in SICUREZZA LA STALLA. Potete contattarmi al 3479526902 Manuela o 3284089801 Massimo, grazie in anticipo.'
@@ -2906,6 +2906,16 @@ link: ''
 immagine: ''
 data: 20/01/2017
 </yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2083,202182379,2017-01-20 20:01:52,2017-01-20 16:25:23,Disponibilità di 4 posti letto a Taranto,,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""20/01/2017"", ""descrizione"": ""Ho disponibilit\u00e0 di 4 posti letto sono a taranto attendo una risposta grazie"", ""email"": ""francesca.bungaro@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3930552149""}","<pre><yamldata>tel: '3930552149'
+email: francesca.bungaro@gmail.com
+descrizione: 'Ho disponibilità di 4 posti letto sono a taranto attendo una risposta grazie'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 20/01/2017
+</yamldata></pre>",closed
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2083,202182379,2017-01-20 20:01:52,2017-01-20 16:25:23,Disponibilità di 4 posti letto a Taranto,,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""20/01/2017"", ""descrizione"": ""Ho disponibilit\u00e0 di 4 posti letto sono a taranto attendo una risposta grazie"", ""email"": ""francesca.bungaro@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3930552149""}","<pre><yamldata>tel: '3930552149'
 email: francesca.bungaro@gmail.com
 descrizione: 'Ho disponibilità di 4 posti letto sono a taranto attendo una risposta grazie'
