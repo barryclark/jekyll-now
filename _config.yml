@@ -4,11 +4,11 @@ gems:
   - jekyll-paginate
 
 # Site settings
-title: "Mediator"
+title: "React Nativist"
 description: > # this means to ignore newlines until "email:"
-   A Jekyll theme - Medium inspired
+   Musings on React Native
 
-email: a-mail@mail.mail
+email: kevin@reactnativist.com
 #blog logo
 logo: "/assets/images/df_logo.jpg"
 float_logo: true # true, false (default)
@@ -16,23 +16,22 @@ float_logo: true # true, false (default)
 # blog cover
 cover: "/assets/images/cA4aKEIPQrerBnp1yGHv_IMG_9534-3-2.jpg"
 
-name: 'Dirk Fabisch'
-author: 'Dirk Fabisch'
+name: 'Kevin Scott'
+author: 'Kevin Scott'
 author_image: "/assets/images/author.jpg"
 
 paginate:	5
 
-url: "http://myblog.***.***" # the base hostname & protocol for your site
+url: "https://reactnativist.com"
 baseurl: ""
-#used to display twitter cards
-twitter_handle: '@dirkfabisch'
+twitter_handle: '@reactnativist'
 
-#google_analytics: UA-XXXXX-X
+google_analytics: UA-70988756-2
 
 # social icons and sharing options
 social:
   - icon:	twitter
-    url:	https://twitter.com/dirkfabisch
+    url:	https://twitter.com/reactnativist
     desc: Follow me on twitter
     share_url: http://twitter.com/share
     share_title: ?text=
@@ -46,7 +45,7 @@ social:
 #    share_link: "&amp;u="
 
   - icon:	github
-    url:	https://github.com/dirkfabisch
+    url:	https://github.com/thekevinscott
     desc:	Fork me on github
     share_url:
     share_title:
