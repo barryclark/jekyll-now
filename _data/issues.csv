@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2484,207751168,2017-02-15 09:41:31,2017-02-15 09:35:47,Cercasi furgone+volontario per caricare materiale #Roma - #Visso,42.9312321,13.087449,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""Cercasi furgone con carico 3mt + volontario per caricare il materiale (Roma-Visso)"", ""data"": ""15/02/2017"", ""descrizione"": ""Stiamo CERCANDO un FURGONE con carico per 3 mt per portare del materiale a Visso. Cerchiamo un volontario per caricare il materiale a Roma e portarlo a Visso. Un allevatore ne ha bisogno per mettere in SICUREZZA LA STALLA. Potete contattarmi al 3479526902 Manuela o 3284089801 Massimo, grazie in anticipo."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Piazza Martiri Vissani, Visso, MC, Marche, 62039, Italia"", ""lat"": ""42.9312321"", ""link"": """", ""lon"": ""13.087449"", ""tel"": ""3479526902 Manuela Fazi""}","<pre><yamldata>tel: '3479526902 Manuela Fazi'
+email: ''
+cosa: 'Cercasi furgone con carico 3mt + volontario per caricare il materiale (Roma-Visso)'
+descrizione: 'Stiamo CERCANDO un FURGONE con carico per 3 mt per portare del materiale a Visso. Cerchiamo un volontario per caricare il materiale a Roma e portarlo a Visso. Un allevatore ne ha bisogno per mettere in SICUREZZA LA STALLA. Potete contattarmi al 3479526902 Manuela o 3284089801 Massimo, grazie in anticipo.'
+indirizzo: 'Piazza Martiri Vissani, Visso, MC, Marche, 62039, Italia'
+lat: '42.9312321'
+lon: '13.087449'
+link: ''
+immagine: ''
+data: 15/02/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2483,207555226,2017-02-14 16:09:47,2017-02-14 15:54:21,Truffa via Facebook coi soldi della beneficenza,,,"[""Accettato"", ""Bufale"", ""Facebook""]",,,{},"<pre><yamldata>titolo: 'Terremoto, truffa coi soldi della beneficenza'
 descrizione: 'E'’ stata rinviata la messa in onda del servizio del programma tv Le Iene sulla presunta truffa ai danni dei terremotati organizzata tramite Facebook da una residente del Piceno. La sua diffusione, inizialmente prevista per domenica durante la prima puntata della nuova stagione, è stata rimandata in conseguenza degli importanti sviluppi registrati proprio in questi giorni e scaturiti dalla denuncia da parte di una delle truffate, l''ascolana Anna Quatela, che, dopo aver contattato gli autori del programma, ha depositato una denuncia per truffa al comando della Guardia di Finanza di Ascoli. L''accusa per R.R. è truffa perchè pare che raccogliesse merce donata attraverso iniziative di beneficenza organizzate in rete con il gruppo Facebook Tutti uniti ancora una volta e poi, invece, di consegnarla agli effettivi destinatari, la tratteneva e, secondo alcune fonti, la rivendeva attraverso vari canali. Al link ulteriori dettagli sulla vicenda.'
 link: 'http://www.ilrestodelcarlino.it/ascoli/cronaca/terremoto-truffa-soldi-beneficenza-1.2894119?wt_mc=fbuser'
@@ -10935,12 +10946,6 @@ link: ''
 data: 26/10/2016
 </yamldata></pre>
 ",closed
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/847,185517490,2016-10-27 06:33:05,2016-10-26 21:38:52,Ad Ascoli sfollati di #Arquata e #Pescara del Tronto dormono in auto,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili"", ""Pubblicare su FB"", ""Sisma Ottobre""]",,,"{""data"": ""26/10/2016"", ""descrizione"": ""Pare che questa notte alcuni tra gli Arquatani e i Pescaresi che usufruivano dell autonoma sistemazione ad Ascoli siano tutti in giro alla ricerc di uno spazio aperto dove parcheggiare ka macchina e trascorrere la notte.Noi siamo al parcheggio di BRICO (ascoli piceno zona al battente)"", ""link"": """", ""titolo"": ""Un'altra notte da sfollati""}","<pre><yamldata>titolo: 'Un''altra notte da sfollati'
-descrizione: 'Pare che questa notte alcuni tra gli Arquatani e i Pescaresi che usufruivano dell autonoma sistemazione ad Ascoli siano tutti in giro alla ricerc di uno spazio aperto dove parcheggiare ka macchina e trascorrere la notte.Noi siamo al parcheggio di BRICO (ascoli piceno zona al battente)'
-link: ''
-data: 26/10/2016
-</yamldata></pre>
-",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/847,185517490,2016-10-27 06:33:05,2016-10-26 21:38:52,Ad Ascoli sfollati di #Arquata e #Pescara del Tronto dormono in auto,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili"", ""Pubblicare su FB"", ""Sisma Ottobre""]",,,"{""data"": ""26/10/2016"", ""descrizione"": ""Pare che questa notte alcuni tra gli Arquatani e i Pescaresi che usufruivano dell autonoma sistemazione ad Ascoli siano tutti in giro alla ricerc di uno spazio aperto dove parcheggiare ka macchina e trascorrere la notte.Noi siamo al parcheggio di BRICO (ascoli piceno zona al battente)"", ""link"": """", ""titolo"": ""Un'altra notte da sfollati""}","<pre><yamldata>titolo: 'Un''altra notte da sfollati'
 descrizione: 'Pare che questa notte alcuni tra gli Arquatani e i Pescaresi che usufruivano dell autonoma sistemazione ad Ascoli siano tutti in giro alla ricerc di uno spazio aperto dove parcheggiare ka macchina e trascorrere la notte.Noi siamo al parcheggio di BRICO (ascoli piceno zona al battente)'
 link: ''
