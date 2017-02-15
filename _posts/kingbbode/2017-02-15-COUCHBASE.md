@@ -37,11 +37,11 @@ tag: [bug tracking,membase,couchbase,servlet,spring]
 
 ---
 
-<detail>
-
-<summary> 사전 알아야 할 내용 </summary>
-
-<p>
+<div style="display: block" id="hOpen01">
+	<a onclick="paragraph_toggle(document.getElementById('hOpen01')); paragraph_toggle(document.getElementById('hClose01')); return false;" href="#">사전 알아야할 내용 펼치기</a>
+	<a onclick="paragraph_toggle(document.getElementById('hOpen01')); paragraph_toggle(document.getElementById('hClose01')); return false;" href="#">사전 알아야할 내용 접기</a>
+</div>
+<div style="display: none" id="hClose01">
 
 ### CouchBase(Membase)
 
@@ -190,7 +190,7 @@ When a node is removed from the cluster during failover, it's possible for opera
 	-	`MemcachedSession`(자체 구현) 사용
 -	`SecurityContextRepository`의 생성인자로 `SecurityContextRepository`에 유일한 객체로 생성 됨
 
-</detail>
+</div>
 
 ---
 
