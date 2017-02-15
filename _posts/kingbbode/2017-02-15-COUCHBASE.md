@@ -8,15 +8,6 @@ nickname: kingbbode
 tag: [bug tracking,membase,couchbase,servlet,spring]
 ---
 
-<script language="JavaScript" type="text/javascript">
-function paragraph_toggle(obj) {
-  if (obj.style.display == 'none')
-    obj.style.display = 'block';
-  else if (obj.style.display == 'block')
-    obj.style.display = 'none';
-};
-</script>
-
 버그트래킹 환경
 -----------
 
@@ -46,11 +37,7 @@ function paragraph_toggle(obj) {
 
 ---
 
-<div style="display: block" id="hOpen01">
-	<a onclick="paragraph_toggle(document.getElementById('hOpen01')); paragraph_toggle(document.getElementById('hClose01')); return false;" href="#">사전 알아야할 내용 펼치기</a>
-	<a onclick="paragraph_toggle(document.getElementById('hOpen01')); paragraph_toggle(document.getElementById('hClose01')); return false;" href="#">사전 알아야할 내용 접기</a>
-</div>
-<div style="display: none" id="hClose01">
+## 사전 지식
 
 ### CouchBase(Membase)
 
@@ -198,8 +185,6 @@ When a node is removed from the cluster during failover, it's possible for opera
 -	`Session` 정보를 생성, 변경 및 로드하는 역할을 담당
 	-	`MemcachedSession`(자체 구현) 사용
 -	`SecurityContextRepository`의 생성인자로 `SecurityContextRepository`에 유일한 객체로 생성 됨
-
-</div>
 
 ---
 
