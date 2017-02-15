@@ -1,10 +1,15 @@
-Membase 문제점 극복!
-====================
+---
+layout: post
+title: ZUM 프론트 Membase 문제점 극복!
+subtitle: Membase를 사용하면서 발생한 문제점을 분석하고, 개선을 진행하면서 문서를 작성합니다.
+category: zuminternet
+author: 권용근
+nickname: kingbbode
+tag: [bug tracking,membase,couchbase,servlet,spring]
+---
 
-Membase를 사용하면서 발생한 문제점을 분석하고, 개선을 진행하면서 문서를 작성합니다.
-
-환경
-----
+버그트래킹 환경
+-----------
 
 -	Membase Server
 
