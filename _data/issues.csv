@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2513,208119862,2017-02-16 13:33:54,2017-02-16 13:23:21,Cercasi URGENTE furgone per trasporto materiale  #Visso,42.9312321,13.087449,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""Cercasi URGENTE furgone per trasporto materiale vicino a #visso"", ""data"": ""16/02/2017"", ""descrizione"": ""SCUSATE, stiamo CERCANDO URGENTEMENTE un furgone che possa trasportare del materiale vicino VISSO presso un allevatore. Sabato ci aspetta x aiutarlo a risistemare la recinzione degli animali distrutta causa neve e terremoto. E' URGENTE abbiamo il materiale ma non sappiamo come trasportarlo. Potete contattare 3479526902 Manuela o 3284089801 Massimo, grazie mille AIUTATECI."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Piazza Martiri Vissani, Visso, MC, Marche, 62039, Italia"", ""lat"": ""42.9312321"", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1846323618968554/?comment_id=1846324368968479&notif_t=group_comment_mention&notif_id=1487250676680833"", ""lon"": ""13.087449"", ""tel"": ""3479526902 Manuela o 3284089801 Massimo,""}","<pre><yamldata>tel: '3479526902 Manuela o 3284089801 Massimo,'
+email: ''
+cosa: 'Cercasi URGENTE furgone per trasporto materiale vicino a #visso'
+descrizione: 'SCUSATE, stiamo CERCANDO URGENTEMENTE un furgone che possa trasportare del materiale vicino VISSO presso un allevatore. Sabato ci aspetta x aiutarlo a risistemare la recinzione degli animali distrutta causa neve e terremoto. E'' URGENTE abbiamo il materiale ma non sappiamo come trasportarlo. Potete contattare 3479526902 Manuela o 3284089801 Massimo, grazie mille AIUTATECI.'
+indirizzo: 'Piazza Martiri Vissani, Visso, MC, Marche, 62039, Italia'
+lat: '42.9312321'
+lon: '13.087449'
+link: 'https://www.facebook.com/groups/1758670357733881/permalink/1846323618968554/?comment_id=1846324368968479&notif_t=group_comment_mention&notif_id=1487250676680833'
+immagine: ''
+data: 16/02/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2510,208076198,2017-02-16 13:07:03,2017-02-16 10:10:36,Un logo per Chiedi alla polvere - Concorso Creativo,,,"[""Accettato"", ""Bollettino"", ""Eventi"", ""Form""]",,,"{""data"": ""16/02/2017"", ""data_evento"": ""2017-02-16"", ""descrizione"": ""Dal 13/20/2017 al 26/02/2017 chiediamo a tutti gli amici che hanno fantasia e un po\u2019 di abilit\u00e0 grafica di regalarci una nuova immagine che possa rappresentarci in modo semplice e diretto."", ""indirizzo"": """", ""lat"": """", ""link"": ""https://www.facebook.com/events/1677801082520403/"", ""lon"": """", ""ora_evento"": """", ""promotore"": ""Chiedi alla Polvere"", ""titolo_evento"": ""Un Logo per chiedi alla polvere - Concorso Creativo""}","<pre><yamldata>titolo_evento: 'Un Logo per chiedi alla polvere - Concorso Creativo'
 data_evento: '2017-02-16'
 ora_evento: ''
