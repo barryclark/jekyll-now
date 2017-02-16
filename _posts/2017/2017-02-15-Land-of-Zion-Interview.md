@@ -32,7 +32,7 @@ The biggest inspiration for the game came from Final Fantasy Tactics. A game by 
 
 We spent many months searching the web for artists that had a style that fit our vision for the game, and we are excited about working with the team at Caravan studios to achieve that vision.*
 
-![Land of Zion Artwork](/images/landofzion/zionart.png)
+![Land of Zion Artwork](/images/landofzion/zionart.jpg)
 
 **The game is currently up on Kickstarter and moving quite along. Can you explain a bit about your experience with Kickstarter? How much planning went into the campaign and how much support do you put in on a daily basis to help meet your goal?**
 
@@ -42,6 +42,6 @@ KS has been a great platform for sharing Land of Zion with the community and def
 
 *Nope - appreciate your interest in the project and the interview. Thanks Rob*
 
-![Land of Zion Layout](/images/landofzion/landofzion.png)
+![Land of Zion Layout](/images/landofzion/landofzion.jpg)
 
 Make sure you check out the [Land of Zion Kickstarter](https://www.kickstarter.com/projects/skykingdomgames/land-of-zion-ecg) and help the project become a reality!
