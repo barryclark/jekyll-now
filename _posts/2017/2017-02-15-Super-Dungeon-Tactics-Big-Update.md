@@ -2,7 +2,7 @@
 layout: post
 title: "Super Dungeon Tactics v1.2 Brings Big Changes"
 description: "Underbite has listened to fan feedback, and there's some big changes coming for Super Dungeon Tactics."
-category: tutorials
+category: video games
 featured: sdetactics.png
 amazonterm: "super dungeon explore"
 tags: [video games, super dungeon explore, super dungeon tactics, underbite games]
