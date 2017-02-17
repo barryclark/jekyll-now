@@ -1,10 +1,10 @@
 ---
 layout: page
-title: About
+title: Hakkımda
 permalink: /about/
 ---
 
-Some information about you!
+Merhaba benim adım Deniz Atmaca
 
 ### More Information
 
