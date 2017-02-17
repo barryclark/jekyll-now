@@ -202,6 +202,14 @@ Como citei antes a vantagem principal do Null Object é proporcionar uma maneira
 
 Apesar de não haver efeito colateral em se utilizar o Null Object, existem desvantagens, as que mais me chamam atenção é o aumento do número de classes e muito trabalho para implementar classes grandes.
 
+**Obs.**: Em uma conversa com meu amigo [Mateus Malaquias](https://github.com/mmalaquias1) ele me chamou a atenção que na JSR-335 (responsável pelo Optional) não recomenda utilizar o Optional como atributo de DTO's, atributos de Entidades ou em construtores, pelo fato dele não ser serializável. Ele está certo na observação!
+
+Mas no caso não vejo problema em utilizar em classes POJO que apenas manipulam os dados. Mas concordo que não deveria ser utilizado em construtores, pois perdemos a flexibilidade dos generics e utilização de práticas como o padrão builder.
+
+Além disso os códigos que apresento são exemplos didáticos, ou seja, possuem o propósito de ilustrar o conhecimento que tento passar no texto.
+
+Fiquem de olho no [blog do Mateus](https://medium.com/@mmalaquias1) ele vai colocar um texto excelente sobre o Optional.
+
 ## Finalizando
 
 O Java 8 e a nova API funcional trouxe uma nova maneira de lidar com referência nula com a classe Optional, com isso temos a opção de desenhar soluções mais elegantes para o caso utilizando apenas as classes padrões.
