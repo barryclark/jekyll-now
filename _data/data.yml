@@ -516,7 +516,15 @@
   category_gr: Παραγωγός φακής
   category_en: Lentil farmer
   location_gr: Εγκλουβή, Λευκάδα, Ελλάδα
-  location_en: Englouvi, Lefkada, Greece    
+  location_en: Englouvi, Lefkada, Greece   
+  
+- company_gr: Chronostore
+  company_en: Chronostore
+  url: http://www.chronostore.gr/
+  category_gr: Κατάστημα οπτικών
+  category_en: Eyeware store
+  location_gr: Κέρκυρα, Ελλάδα
+  location_en: Corfu, Greece      
 
 - company_gr: Here Comes The Paint TShirt Printing
   company_en: Here Comes The Paint TShirt Printing
