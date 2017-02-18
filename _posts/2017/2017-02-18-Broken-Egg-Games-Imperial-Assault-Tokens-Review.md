@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Review - Broken Egg Games' Imperial Assault Tokens"
-description: "A high-quality mic that can attach to any set of headphones. I'm loving my ModMid 5."
+description: "A look at Broken Egg Games' custom tokens for Imperial Assault."
 category: review
 featured: brokeneggtokens.jpg
 amazonterm: "imperial assault"
