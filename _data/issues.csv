@@ -1,4 +1,26 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2530,208648177,2017-02-18 22:22:07,2017-02-18 15:26:43,Famiglia di 4 persone cerca roulotte a #Musicchio #Amatrice,,,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""ROULOTTE   USATA"", ""data"": ""18/02/2017"", ""descrizione"": ""CERCO UNA ROULOTTE, ANCHE USATA, PER UNA FAMIGLIA DI 4 PERSONE DA PORTARE A MUSICCHIO (AMATRICE). \u00c8 urgente, ci sono bambini."", ""email"": ""TORRESI6777@GMAIL.COM"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""348 3043184""}","<pre><yamldata>tel: '348 3043184'
+email: TORRESI6777@GMAIL.COM
+cosa: 'ROULOTTE   USATA'
+descrizione: 'CERCO UNA ROULOTTE, ANCHE USATA, PER UNA FAMIGLIA DI 4 PERSONE DA PORTARE A MUSICCHIO (AMATRICE). È urgente, ci sono bambini.'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 18/02/2017
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2529,208639043,2017-02-18 22:19:46,2017-02-18 12:28:39,Coppia di anziani cerca roulotte a #Muccia (Mc),,,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""muccia ( mc)"", ""data"": ""18/02/2017"", ""descrizione"": ""Siamo due anziani coniugi, cerchiamo una roulotte per poter tornare al nostro paese Muccia, nella nostra terra!! Vi ringrazio per quello che potete fare."", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""334 3332612 (Torresi Alberto)""}","<pre><yamldata>tel: '334 3332612 (Torresi Alberto)'
+email: ''
+cosa: 'muccia ( mc)'
+descrizione: 'Siamo due anziani coniugi, cerchiamo una roulotte per poter tornare al nostro paese Muccia, nella nostra terra!! Vi ringrazio per quello che potete fare.'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 18/02/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2528,208586349,2017-02-17 23:42:37,2017-02-17 23:38:43,Regione #Marche: bilancio mortalità bestiame a causa di sisma e maltempo,,,"[""Accettato"", ""Bollettino"", ""Notizie Utili"", ""Twitter""]",,,"{""data"": ""17/02/2017"", ""descrizione"": ""A qualche settimana di distanza la Regione Marche ha effettuato un punto sulla portata della mortalit\u00e0 dei capi di bestiame. La vice presidente Anna Casini ha rilasciato una nota a tal proposito. \u201cSu un totale di 50.387 bovini, 147.678 ovi-caprini, 104.235 suini e 3.287.247 avicoli presenti negli 87 comuni marchigiani del cratere, gli animali morti ufficialmente dichiarati dagli allevatori presso i Servizi veterinari territoriali dell\u2019Asur, sono stati: 40 capi bovini, 188 ovi-caprini, 28 suini, 2.500 avicoli a cui si aggiungono 6 equidi e 100 selvatici da penna \u2013 afferma la vice presidente \u2013 Al fine di agevolare il disagio degli allevatori colpiti dagli straordinari eventi calamitosi, la Protezione Civile della Regione Marche ha supportato il servizio di recupero e smaltimento delle carcasse attraverso ditte autorizzate senza oneri per gli allevatori stessi\u201d."", ""link"": ""https://www.picenooggi.it/2017/02/16/42581/mortalita-dei-capi-di-bestiame-dopo-sisma-e-maltempo-regione-marche-dirama-bilancio/"", ""titolo"": ""Regione #Marche: bilancio mortalit\u00e0 bestiame a causa di sisma e maltempo""}","<pre><yamldata>titolo: 'Regione #Marche: bilancio mortalità bestiame a causa di sisma e maltempo'
 descrizione: 'A qualche settimana di distanza la Regione Marche ha effettuato un punto sulla portata della mortalità dei capi di bestiame. La vice presidente Anna Casini ha rilasciato una nota a tal proposito. “Su un totale di 50.387 bovini, 147.678 ovi-caprini, 104.235 suini e 3.287.247 avicoli presenti negli 87 comuni marchigiani del cratere, gli animali morti ufficialmente dichiarati dagli allevatori presso i Servizi veterinari territoriali dell’Asur, sono stati: 40 capi bovini, 188 ovi-caprini, 28 suini, 2.500 avicoli a cui si aggiungono 6 equidi e 100 selvatici da penna – afferma la vice presidente – Al fine di agevolare il disagio degli allevatori colpiti dagli straordinari eventi calamitosi, la Protezione Civile della Regione Marche ha supportato il servizio di recupero e smaltimento delle carcasse attraverso ditte autorizzate senza oneri per gli allevatori stessi”.'
 link: 'https://www.picenooggi.it/2017/02/16/42581/mortalita-dei-capi-di-bestiame-dopo-sisma-e-maltempo-regione-marche-dirama-bilancio/'
