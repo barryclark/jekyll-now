@@ -4,6 +4,7 @@ title: "Review - Broken Egg Games' Imperial Assault Tokens"
 description: "A high-quality mic that can attach to any set of headphones. I'm loving my ModMid 5."
 category: review
 featured: brokeneggtokens.jpg
+amazonterm: "imperial assault"
 tags: [review, games, accessories, broken egg games, imperial assault]
 author: Frank Grip
 ---
