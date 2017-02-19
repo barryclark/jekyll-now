@@ -18,18 +18,18 @@ avatar: https://raw.githubusercontent.com/denizen/deniz/master/images/deniz1.png
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email:
-  facebook:
-  flickr:
+  email: atmacadeniz@gmail.com
+  facebook: atmacadeniz
+  flickr: denizatm
   github: denizen
-  instagram: 
+  instagram: darklback
   linkedin: deniz-atmaca-784b0923/
   pinterest:
   rss: RSS # just type anything here for a working RSS icon
   twitter: darkblack
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
-  googleplus: # anything in your profile username that comes after plus.google.com/
+  googleplus: 104890476485106844872 # anything in your profile username that comes after plus.google.com/
 
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
