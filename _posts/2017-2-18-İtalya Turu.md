@@ -1,6 +1,8 @@
 ---
 layout: post
-title: Merhaba
+title: 10 Günlük İtalya Turu
+category: Seyahat
+tags: [italya, tur]
 ---
 
 1-10 Eylül arasında otobüsle İtalya-Yunanistan gezisindeydim. Edindiğim tecrübeleri yazarak tura katılmak isteyen ya da herhangi bir yurt dışı turuna çıkmak isteyenlere yardımcı olayım dedim.
@@ -52,6 +54,7 @@ Sabah gözümüzü açtığımızda yağmurlu bir Selanik karşıladı bizi. Mor
 Önce rehberin tavsiyesi üzerine yağmur da çiselediğinden dolayı Mojo adlı bir kafeye gidip oturduk. Bazıları ayrılıp dolaşmaya başladı. Orada sıcak çikolata içip yol yorgunluğunu üzerimizden atıp ücretsiz wireless’i kullandık. Sonra kalkıp dolaşmaya başladık. Önce sahil tarafına değil, üst caddeye ve meydana çıktık. Sahil tarafına yüzünüzü döndüğünüzde sağda ilk arada kalan pazara girip dolaştık. Orası o kadar çok Türk Pazarına benziyordu ki şaşırdık. Yanımıza şemsiye almadığımızdan oradan şemsiye aldık. Ayrıca çok ucuza magnetler, kupa bardaklar filan vardı, onlardan aldık. Daha sonra yine üst yoldan geri, buluşma noktasına doğru yavaş yavaş yürüdük. Yolda rehberin anlattığı kemeri, kiliseyi inceledik. Kalabalık bir meydanda durup etrafı izledik. Rehberin de dediği gibi, turlarla bir şehrin ruhunun yakalanamayacağını orada anladık. Selanik genel olarak güzel bir yer. Tüm Yunanistan için konuşacak olursam, Türklere bakış açıları iyi. Bir olumsuzlukla karşılaşmadık. Türkçe konuşuyorlar, sıcak kanlılar. Ekonomik krizin etkilerini Yunanistan’ın en büyük ikinci kenti olan Selanik’te apaçık görebiliyorsunuz. Her taraf duvar yazıları, çoğu dükkan kapanmış. Bir Avrupa Birliği ülkesinde olduğunuza inanamıyorsunuz.
 
 İtalya’ya gidecek olan gemimiz gece saat 00’da kalkacağından ve hayli vaktimiz olduğundan sıkılmayalım diye rehberimizin ekstra eklediği ilk tura gittik. İsmi Meteora. Kesinlikle pişman olmayacaksınız dedi ve kesinlikle pişman olmadık. İnternette yazdığı gibi Yunanistan’ın Kapadokya’sı. Burada bacaların üzerinde keşişlerin kurduğu devasa kiliseler mevcut. Meteora çok enteresan gidilesi bir yer. Otobüsle ta en tepeye çıkıyorsunuz. Manzara muhteşem. Kiliselerden birine giriyorsunuz. Kilisenin oraya nasıl kurulduğunu düşünüyorsunuz. Her şeyi yüzlerce yıl önce yaşamış keşişler uzun uğralar sonucunda yapmış. Kasnak sistemi ile aşağıdan malzemeleri yukarı çekmişler. Kilisenin içi muazzam. Manzara muazzam.
+![Meteora](/images/yunan.png)
 
 Güneşi Meteora’nın muhteşem manzarasında batırıp otobüsle vapura bineceğimiz limana gitmeye başladık. Limana gittiğimizde akşam saat 8 gibiydi. Rehberin tavsiyesi üzerine hep beraber restorana gidip cacıklı tavuk dürüm yedik. Ayrıca burada yerel bira da var. Rehber, tüm tavsiyelerini özellikle domuz eti ve domuz yağı olmayan ürünler üzerinden yaptığı için içiniz rahat yiyebilirsiniz. İtalya’da iken McDonalds’a bile girip bir şeyler yiyemiyorsunuz eğer bu konuda hassassanız.
 
