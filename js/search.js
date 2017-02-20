@@ -42,14 +42,22 @@
         if (results.length) { // Are there any results?
             var appendString = '';
 
-            // reverse order results
-            results = results.sort(function(a,b) {
-                    return -1 * (parseInt(a.created_at) - parseInt(b.created_at));
-            }
+            var resultsArray=[];
 
-            appendString += '<div class="panel-group">';
             for (var i = 0; i < results.length; i++) {  // Iterate over the results
                 var item = store[results[i].ref];
+                resultsArray.push(item);
+            }
+            
+
+            // reverse order results
+            resultsArray = resultsArray.sort(function(a,b) {
+                    return -1 * (parseInt(a.created_at) - parseInt(b.created_at));
+            });
+
+            appendString += '<div class="panel-group">';
+            for (var i = 0; i < resultsArray.length; i++) {  // Iterate over the results
+                var item = resultsArray[i];
                 if (item.state == "open") {
                     appendString += displayDoc(item);
                 }
@@ -57,8 +65,8 @@
             appendString += '</div>';
 
             appendString += '<div class="panel-group">';
-            for (var i = 0; i < results.length; i++) {  // Iterate over the results
-                var item = store[results[i].ref];
+            for (var i = 0; i < resultsArray.length; i++) {  // Iterate over the results
+                var item = resultsArray[i];
                 if (item.state != "open") {
                     appendString += displayDoc(item);
                 }
@@ -76,12 +84,19 @@
         if (Object.keys(store).length) { // Are there any results?
             var appendString = '';
 
-            results = store.sort(function(a,b) {
+            var resultsArray=[];
+
+            $.each(store,function(index,item) {
+                    resultsArray.push(item);
+            })
+
+            // reverse order results
+            resultsArray = resultsArray.sort(function(a,b) {
                     return -1 * (parseInt(a.created_at) - parseInt(b.created_at));
-            }
+            });
 
             appendString += '<div class="panel-group">';
-            $.each(results,function(index,item) {
+            $.each(resultsArray,function(index,item) {
                 if (!searchLabel || $.inArray(searchLabel,item.label.toLowerCase().split(","))>=0) {
                     if (item.state == "open") {
                         appendString += displayDoc(item);
@@ -92,7 +107,7 @@
             appendString += '</div>';
 
             appendString += '<div class="panel-group">';
-            $.each(results,function(index,item) {
+            $.each(resultsArray,function(index,item) {
                 if (!searchLabel || $.inArray(searchLabel,item.label.toLowerCase().split(","))>=0) {
                     if (item.state != "open") {
                         appendString += displayDoc(item);
