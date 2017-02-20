@@ -37,9 +37,9 @@ Each player's turn consists of 3 phases:
   * Gain 1 currency
   * Increase Income Level by paying the next level's number + 1
   * Play one of three Warlord Actions (once per turn)
-    1. Heal Warlord by 1
-    2. Move Warlord to an adjacent space
-    3. Use your Warlord's special ability
+      1. Heal Warlord by 1
+      2. Move Warlord to an adjacent space
+      3. Use your Warlord's special ability
 3. Market Phase
 
 The game immediately ends when a player completes the Mission or there are no other Warlords on the board.
