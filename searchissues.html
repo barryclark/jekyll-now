@@ -66,6 +66,7 @@ window.store["{{site.url}}/issues/{{member.number}}"]={
         {% endif %}
         {% if member.issue.created_at != blank %}
         "date": "{{member.issue.created_at | date: '%-d/%m/%Y' }}",
+        "created_at": "{{member.issue.created_at | date: '%s' }}",
         {% endif %}
         "url": "{{site.url}}/issues/{{member.number}}",
         "state": "{{member.state}}"
