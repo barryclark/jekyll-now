@@ -5,7 +5,7 @@ title: 100 Days of Code
 
 I am starting #100DaysOfCode officially on 6/20/2016.  This will be based losely on [Alexander Kallaway's post](https://medium.freecodecamp.com/join-the-100daysofcode-556ddb4579e4#.u1ybmmydq "Join the #100DaysOfCode").  The main difference is the first few weeks will focused more on learning and then near the end I hope to have a few simple projects under my belt.
 
-<!--Excerpt-->
+<!--more-->
 
 ## Rules
 
