@@ -5,7 +5,7 @@ title: Week 3
 
 Week three is underway and shall continue until 2/26/2017.
 
-excerpt_separator: <!--more-->
+<!--more-->
 
 ## Completed Items this week
 
