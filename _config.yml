@@ -86,4 +86,4 @@ exclude:
   - CNAME
 
 # Adding global excerpt seperator
-excerpt_separator: <!--Excerpt-->
+excerpt_separator: <!--more-->
