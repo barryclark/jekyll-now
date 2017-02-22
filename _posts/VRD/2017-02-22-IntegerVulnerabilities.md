@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Integer Vulnerabilities
+title: Looking at an Integer Overflow
 category: VRD
 ---
 # Introduction
@@ -8,14 +8,14 @@ Having been doing research and coursework within vulnerability development, inte
 This post will be looking at how the integer overflow and underflow works in both x86 and ARM.
 Integer vulnerabilities are common in many applications and can affect the application in a small way, and in a costly way.
 An example of an integer overflow causing a significant amount of damage, is the [ARIANE 5 Explosion](https://www.youtube.com/watch?v=qnHn8W1Em6E). This was due to a data conversion between a 64bit floating point and a 16 bit signed integer.
-The inquiry board write up is worth a read and can be found here [Inquiry Board](http://www-users.math.umn.edu/~arnold/disasters/ariane5rep.html)
+The inquiry board write up is worth a read and can be found here [Inquiry Board](http://www-users.math.umn.edu/~arnold/disasters/ariane5rep.html).<br>
 *All code demonstrated below was compiled on Ubuntu 16.04 LTS, using the GCC compiler*
 # What is an integer?
 An integer is a 32-bit/4-byte sized variable which holds values ranging from -2147483648 to 2147483647.
 The following code block will help demonstrate these values. In C, the int value by default is signed.
 Meaning that an integer can be both negative and positive, which can lead to problems when the value goes out of bounds of an array.
 
-## Demonstration of the size, minimum and maximum of the type 'int'.
+## Demonstration of size, minimum and maximum of the type 'int'.
 ~~~c
 #include <stdio.h>
 #include <limits.h>
@@ -37,8 +37,8 @@ INT_MAX = 2147483647 = 0x7fffffff
 INT_MIN = -2147483648 = 0x8000000
 ~~~
 # Integer Overflow
-When the variable holds a number that is larger than it can hold it will cause the wrap around to occur, going from 2147483647 to -2147483648.
-This doesn't lead to an exploit in the same way as a buffer overflow would, as the integer overflow doesn't write over memory. However that being said
+When the variable holds a number that is larger than it can hold, it will cause the wrap around to occur, going from 2147483647 to -2147483648.
+This doesn't lead to an exploit in the same way a buffer overflow would, as the integer overflow doesn't write over memory. However that being said
 in the context of the variable, it could be used to access outside the bounds of an array, or could generate a segmentation fault when assigning a particular block of memory from the heap via malloc.
 
 ## Demonstration of a wraparound
@@ -63,10 +63,13 @@ i * 3 = 2147483645, 7ffffffd
 i + i = -2, fffffffe
 ~~~
 
-## Demonstration of Malloc
-Too help demonstrate the risk in which an integer overflow could cause if not properly implemented, we can allocate memory based on an integer using Malloc.
-### Side Note
+## Demonstration of Malloc + a wraparound
+To demonstrate the risk in which an integer overflow could cause if not properly implemented, we can allocate memory based on an integer using Malloc.
+### Malloc & Strcpy
 Malloc is a function which is found in the stdlib.h library within C. Malloc is a function in which we can use to request and allocate memory for a specific purpose.
+~~~c
+malloc(specify the size of memory to allocate);
+~~~
 Strcpy is a function which is found in the string.h library within C. Strcpy copies a string from a certain memory location another. The following example demonstrates this going from string location 1(stringloc1) to string location 2(stringloc2).
 ~~~c
 strcpy(stringloc2, stringloc1);
@@ -118,4 +121,8 @@ The following image is of the second code segement of the above malloc which is 
 
 In Addition: If a segmentation fault doesn't occur, the value that is being set will automatically wrap around not to a negative number but to a significantly higher number within the unsigned region. This is because malloc is expecting an unsigned value, in which the compiler can automatically allocate this
 # Conclusion
-As demonstrated an integer overflow isn't directly exploitable as it doesn't effect memory, but can be a problem when coupled with another problem such as a Heap based buffer overflow. It is always important to check that you are using the right variable types when writing code. 
+As demonstrated an integer vulnerabilities can cause extreme problems which is why it is always important to check that you are using the right variable types when writing code. 
+
+# References
+[Phrack: Basic Integer Overflows](http://phrack.org/issues/60/10.html)
+
