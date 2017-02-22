@@ -110,9 +110,10 @@ function highestRate(debts) {
     });
 }
 
-function usingMethod(debts, method) {
+function usingMethod(debts, extra, method) {
 	var numOpen = totalAccounts(debts);
 	var totalPayment = sumMinpayments(debts);
+
 	
 	var results = {
 			balances: [['month', 'balance', 'minimum payment'],
@@ -171,11 +172,17 @@ function getResults(debts) {
 	
 	var just = JSON.parse(JSON.stringify(debts));
 	just.forEach(function(debt) {$.extend(debt, new DebtProto() );});
+
+	var extra = 0;
+		
+	if(hasKey('extra')) {
+		extra = getValueOfFirstKey('extra');
+	}
 	
 	var results = {
-		highestRate: usingMethod(highest, highestRate),
-		lowestBalance: usingMethod(lowest, lowestBalance),
-		justPayments: usingMethod(just)
+		highestRate: usingMethod(highest, extra, highestRate),
+		lowestBalance: usingMethod(lowest, extra, lowestBalance),
+		justPayments: usingMethod(just, extra)
 	};
     return results;
 }
