@@ -13,6 +13,7 @@ The inquiry board write up is worth a read and can be found here [Inquiry Board]
 * g - extra debugging information
 * m32 - Compile in 32bit mode
 * o - output file with a specific name or location
+
 # What is an integer?
 An integer is a 32-bit/4-byte sized variable which holds values ranging from -2147483648 to 2147483647.
 The following code block will help demonstrate these values. In C, the int value by default is signed.
