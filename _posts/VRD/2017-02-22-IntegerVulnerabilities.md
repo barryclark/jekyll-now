@@ -46,7 +46,7 @@ INT_MIN = -2147483648 = 0x8000000
 # Integer Overflow
 When the variable holds a number that is larger than it can hold, it will cause the wrap around to occur, going from 2147483647 to -2147483648.
 This doesn't lead to an exploit in the same way a buffer overflow would, as the integer overflow doesn't write over memory. However that being said
-in the context of the variable, it could be used to access outside the bounds of an array, or could generate a segmentation fault when assigning a particular block of memory from the heap via malloc.
+in the context of the variable, it could be used to access memory locations outside the bounds of an array, or could generate a segmentation fault when assigning a particular block of memory from the heap via malloc.
 
 ## Demonstration of a wraparound
 ~~~c
