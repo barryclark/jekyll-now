@@ -91,7 +91,7 @@ Carrying on with our demonstration of malloc + strcpy + an integer overflow. We 
 void main(void)
 {
 	int size = 0; /*Variable to store the sizeof the memory allocated */
-	char *str = (char *) malloc(256); /* Allocates four bytes of memory to the 'str' variable*/
+	char *str = (char *) malloc(256); /* Allocates 256 bytes of memory to the 'str' variable*/
 	size = sizeof(*str); /*Gets the size of our 'str' variable (line 2) which should be one byte as it is a char */
 	strcpy(str, "eXit");
 	printf("The size of the memory block is %d byte(s), and the memory is %p, and the value is %s\n", size, str, str);
