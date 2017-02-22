@@ -174,11 +174,11 @@
   location_gr: Νίκαια, Αττική, Ελλάδα
   location_en: Nikaia, Attica, Greece
 
-- company_gr: Host Chefs
-  company_en: Host Chefs
+- company_gr: HostChefs
+  company_en: HostChefs
   url: https://hostchefs.eu
-  category_gr: Δημιουργία και φιλοξενία ιστοσελίδων
-  category_en: Web page design and hosting
+  category_gr: Κατασκευή & φιλοξενία ιστοσελίδων
+  category_en: Website Design & Hosting
   location_gr: Βόλος, Ελλάδα
   location_en: Volos, Greece
 
