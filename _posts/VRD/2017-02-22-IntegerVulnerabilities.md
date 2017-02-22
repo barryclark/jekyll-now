@@ -9,9 +9,9 @@ This post will be looking at how the integer overflow within C and in x86 disass
 Integer vulnerabilities are common in many applications and can affect the application in a small way, and in a costly way.
 An example of an integer overflow causing a significant amount of damage, is the [ARIANE 5 Explosion](https://www.youtube.com/watch?v=qnHn8W1Em6E). This was due to a data conversion between a 64bit floating point and a 16 bit signed integer.
 The inquiry board write up is worth a read and can be found here [Inquiry Board](http://www-users.math.umn.edu/~arnold/disasters/ariane5rep.html).<br>
-*All code demonstrated below was compiled on Ubuntu 16.04 LTS, using the GCC compiler with the following flags: 
+*All code demonstrated below was compiled on Ubuntu 16.04 LTS, using the GCC compiler with the following flags.
 ~~~shell
-gcc -m32 -g filename -o fileout*
+gcc -m32 -g filename -o fileout
 ~~~
 - g: extra debugging information
 - m32: Compile in 32bit mode
