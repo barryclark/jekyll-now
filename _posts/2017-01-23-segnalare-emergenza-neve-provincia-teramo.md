@@ -23,7 +23,7 @@ Questo contenitore è secondo me la punta di diamante del progetto TCI, con migl
 L'indomani allora mi sono messo a studiare [le API][5] di Ona, in modo da poterle fare dialogare con [quelle delle issue di GiTHub][6] e produrre delle segnalazioni dentro TCI, con lo stesso schema usato per questo progetto ([qui][7] una d'esempio), in modo che questo nuovo flusso possa essere "trasparente" rispetto alla destinazione.  
 Inoltre Barbara ci ha chiesto di poter esporre su una mappa i dati raccolti e Gianluca invece su un foglio elettronico web.
 
-[![](http://wp.ondata.it/ondata/wp-content/uploads/sites/5/2017/01/2017-01-23_09h12_39.png)]()
+[![Emergenza Neve in Abruzzo: invia una segnalazione](http://wp.ondata.it/ondata/wp-content/uploads/sites/5/2017/01/2017-01-23_09h12_39.png)]()
 
 Gli elementi attivi sono questi:
 

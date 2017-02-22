@@ -41,7 +41,7 @@ ext-js:
 <div class="row">
 
 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-<a href="#">
+<a href="">
 <div class="card yellow summary-inline">
 <div class="card-body">
 <i class="icon fa fa-flag fa-4x"></i> <span style="font-size:1.2em">Tutti </span>
@@ -56,7 +56,7 @@ ext-js:
 </div>
 
 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-<a href="#">
+<a href="">
 <div class="card blue summary-inline">
 <div class="card-body">
 <i class="icon fa fa-map-marker fa-4x"></i> <span style="font-size:1.2em">Georeferenziati</span>
@@ -71,7 +71,7 @@ ext-js:
 </div>
 
 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-<a href="#">
+<a href="">
 <div class="card green summary-inline">
 <div class="card-body">
 <i class="icon fa fa-check fa-4x"></i> <span style="font-size:1.2em">Closed </span>
@@ -89,7 +89,7 @@ ext-js:
 <div class="row">
 
 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-<a href="#">
+<a href="">
 <div class="card dark summary-inline">
 <div class="card-body">
 <i class="icon fa fa-child fa-4x"></i> <span style="font-size:1.2em">Fabbisogni </span>
@@ -104,7 +104,7 @@ ext-js:
 </div>
 
 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-<a href="#">
+<a href="">
 <div class="card dark summary-inline">
 <div class="card-body">
 <i class="icon fa fa-home fa-4x"></i> <span style="font-size:1.2em">Alloggi </span>
@@ -119,7 +119,7 @@ ext-js:
 </div>
 
 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-<a href="#">
+<a href="">
 <div class="card dark summary-inline">
 <div class="card-body">
 <i class="icon fa fa-heart-o fa-4x"></i> <span style="font-size:1.2em">Donazioni </span>
@@ -134,7 +134,7 @@ ext-js:
 </div>
 
 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-<a href="#">
+<a href="">
 <div class="card dark summary-inline">
 <div class="card-body">
 <i class="icon fa fa-user fa-4x"></i> <span style="font-size:1.2em">Contatti </span>
@@ -153,7 +153,7 @@ ext-js:
 <div class="row">
 
 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-<a href="#">
+<a href="">
 <div class="card summary-inline">
 <div class="card-body">
 <i class="icon fa fa-file-text-o fa-4x"></i> <span style="font-size:1.2em">Form </span>
@@ -168,7 +168,7 @@ ext-js:
 </div>
 
 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-<a href="#">
+<a href="">
 <div class="card summary-inline">
 <div class="card-body">
 <i class="icon fa fa-facebook fa-4x"></i> <span style="font-size:1.2em">Facebook </span>
@@ -183,7 +183,7 @@ ext-js:
 </div>
 
 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-<a href="#">
+<a href="">
 <div class="card summary-inline">
 <div class="card-body">
 <i class="icon fa fa-twitter fa-4x"></i> <span style="font-size:1.2em">Twitter </span>
@@ -198,7 +198,7 @@ ext-js:
 </div>
 
 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-<a href="#">
+<a href="">
 <div class="card summary-inline">
 <div class="card-body">
 <i class="icon fa fa-paper-plane-o fa-4x"></i> <span style="font-size:1.2em">Telegram </span>
@@ -267,7 +267,7 @@ ext-js:
 </div>
 <div class="card-body no-padding" style="height:550px;overflow:auto" >
 <ul class="message-list" >
-<a href="#" id="message-load-more">
+<a href="" id="message-load-more">
 <li class="text-center load-more">
 <i class="fa fa-refresh"></i> load more..
 </li>
