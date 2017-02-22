@@ -5,13 +5,15 @@ tags: [money, math, javascript, html5]
 keywords: [avalanche, snowball, debt, debts, debt snowball, debt stacking, debt avalanche, chart, charts, interest]
 jquery: true
 javascripts: [/js/d3.min.js, /js/c3.min.js, /js/parseGet.min.js]
-deferedjavascripts: [/js/avalanche.js]
+deferedjavascripts: [/js/avalanche.min.js]
 csses: [/css/c3.min.css, /css/debtChart.css]
 image: /images/avalanche.jpg
 thumbnail: true
 excerpt: I was curious as to the difference between the two methods of snowballing debt. The snowball method, if you're not familiar with it, is often used when you have multiple debts. You keep paying the same amount each month...
-updated: 2016-01-26
+updated: 2016-02-22
 ---
+
+*February 22, 2017 Update: Merged the "minimum payment" and "minimum payment type" columns and added an "extra" field
 
 *January 26, 2017 Update: I added a sentence mentioning debt stacking / debt avalance.*
 
@@ -21,4 +23,4 @@ I was curious as to the difference between the two methods of snowballing debt. 
 
 Scroll down to the bottom to play with the variables. I used [c3](http://c3js.org/) for the charts, which in turn uses [d3](https://d3js.org/). I also used [jQuery](https://jquery.com/). After I was done, I used [jscompress.com](https://jscompress.com/) to minify and hopefully improve some performance. [Check out the unminified code here.](https://github.com/hendrixjoseph/hendrixjoseph.github.io/blob/master/js/avalanche.js)
 
-{% include avalanche.html %}
+{% include avalanche.min.html %}
