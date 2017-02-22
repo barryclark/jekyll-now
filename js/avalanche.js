@@ -112,8 +112,7 @@ function highestRate(debts) {
 
 function usingMethod(debts, extra, method) {
 	var numOpen = totalAccounts(debts);
-	var totalPayment = sumMinpayments(debts);
-
+	var totalPayment = sumMinpayments(debts) + extra;
 	
 	var results = {
 			balances: [['month', 'balance', 'minimum payment'],
@@ -177,6 +176,7 @@ function getResults(debts) {
 		
 	if(hasKey('extra')) {
 		extra = getValueOfFirstKey('extra');
+		extra = parseInt(extra);
 		$('#extra-money').val(extra);
 	}
 	
