@@ -126,7 +126,7 @@ The following image is of the first code segement of the above malloc.
 The following image is of the second code segement of the above malloc which is using a negative value to demonstrate what could happen with an Integer Overflow.
 ![IDA dissassembly of Malloc](/images/dis_image1.png "Malloc with an Integer Overflow")
 
-In Addition: If a segmentation fault doesn't occur, the value that is being set will automatically wrap around not to a negative number but to a significantly higher number within the unsigned region. This is because malloc is expecting an unsigned value, in which the compiler can automatically allocate this
+In Addition: If a segmentation fault doesn't occur, the value that is being set will automatically wrap around not to a negative number but to a significantly higher number within the unsigned region. This is because malloc is expecting an unsigned value, in which the compiler can automatically allocate this.
 # Conclusion
 As demonstrated an integer vulnerabilities can cause extreme problems which is why it is always important to check that you are using the right variable types when writing code. 
 
