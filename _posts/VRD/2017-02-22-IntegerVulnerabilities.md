@@ -13,9 +13,9 @@ All code demonstrated below was compiled on Ubuntu 16.04 LTS, using the GCC comp
 ~~~shell
 gcc -m32 -g filename -o fileout
 ~~~
-- g: Extra debugging information
-- m32: Compile in 32bit mode
-- o: Output file with a specific name or location
+- g - Extra debugging information
+- m32 - Compile in 32bit mode
+- o - Output file with a specific name or location
 
 # What is an integer?
 An integer is a 32-bit/4-byte sized variable which holds values ranging from -2147483648 to 2147483647.
