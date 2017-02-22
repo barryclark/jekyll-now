@@ -210,7 +210,7 @@ function generateRow(debt) {
         var row = '<tr><td>' + nameString + '</td><td>' 
             + balanceString  + '</td><td>' 
             + rateString + '</td><td>'
-            + minpaymentString + '</td><td>'
+            + minpaymentString
             + minpaymenttypeString + '</td></tr>';
 	
 	return row;
