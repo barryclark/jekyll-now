@@ -18,7 +18,7 @@ gcc -m32 -g filename -o fileout
 - o - Output file with a specific name or location
 
 # What is an integer?
-An integer is a 32-bit/4-byte sized variable which holds values ranging from -2147483648 to 2147483647.
+An integer in this case is a 32-bit/4-byte sized variable which holds values ranging from -2147483648 to 2147483647.
 The following code block will help demonstrate these values. In C, the int value by default is signed.
 Meaning that an integer can be both negative and positive, which can lead to problems when the value goes out of bounds of an array.
 
