@@ -12,4 +12,4 @@ author: Rob Kalajian
 
 Headup Games and Fabraz have announced their upcoming action-platformer [Slime-san](http://slime-san.com/) for PC, Mac, and Linux via Steam & Humble Bundle. Console releases will follow shortly after. Slime-san will feature 100 levels of twitch-timing, platforming action with different play styles, mini-games, and a shop to buy cool new stuff (using in-game currency earned, not microtransactions.)
 
-I've been playing the game for a bit now, and am really enjoying it. It has a Super Meat Boy kind of feel with its own unique visual style and an amazing chiptune soundtrack. I should have a full review of the game going up in the next few weeks, so keep an eye out for that!
+I've been playing the game for a bit now, and am really enjoying it. It has a Super Meat Boy kind of feel with its own unique visual style and an amazing chiptune soundtrack. I should have a full review of the game going up in the next few weeks, so keep an eye out for that! 
