@@ -113,7 +113,7 @@ Segmentation fault (core dumped)
 ~~~
 
 Using IDA(free) we can disassemble the C code into x86 instructions which demonstrates what is going on at a machine code level.
-The following image is of the first code segement of the above malloc
+The following image is of the first code segement of the above malloc.
 ![IDA dissassembly of Malloc](/images/dis_image2.png "Malloc without an Integer Overflow")
 
 The following image is of the second code segement of the above malloc which is using a negative value to demonstrate what could happen with an Integer Overflow.
