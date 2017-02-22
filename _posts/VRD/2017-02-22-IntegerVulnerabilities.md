@@ -5,7 +5,7 @@ category: VRD
 ---
 # Introduction
 Having been doing research and coursework within vulnerability development, integer overflows and underflows have kept cropping up.
-This post will be looking at how the integer overflow and underflow works in both x86 and ARM.
+This post will be looking at how the integer overflow within C.
 Integer vulnerabilities are common in many applications and can affect the application in a small way, and in a costly way.
 An example of an integer overflow causing a significant amount of damage, is the [ARIANE 5 Explosion](https://www.youtube.com/watch?v=qnHn8W1Em6E). This was due to a data conversion between a 64bit floating point and a 16 bit signed integer.
 The inquiry board write up is worth a read and can be found here [Inquiry Board](http://www-users.math.umn.edu/~arnold/disasters/ariane5rep.html).<br>
