@@ -177,6 +177,7 @@ function getResults(debts) {
 		
 	if(hasKey('extra')) {
 		extra = getValueOfFirstKey('extra');
+		$('#extra-money').val(extra);
 	}
 	
 	var results = {
