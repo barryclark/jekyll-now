@@ -15,4 +15,3 @@ Initially, I was concerned that some of the chemicals I had been working with - 
 The post suggests putting a piece of a post-it note behind the power button assembly beneath the phone case. I didn't need to do this - I  gently squeezed the assembly (see image below) and heard it reconnect with a small "snap." I tried pressing the power button again, and voila, it worked!
 
 ![Samsung Galaxy S5 Power Button Assemby](/images/phone-parts.jpg "Samsung Galaxy S5 Power Button Assemby")
-
