@@ -4,6 +4,7 @@ title: "Cards Against Humanity and BioWare Release Mass Effect Pack for $1"
 description: "$1 shipped. Mass Effect cards for Cards Against Humanity"
 category: games
 featured: cahmasseffect.png
+amazonterm: "cards against humanity"
 tags: [video games, games, bioware, mass effect, cards against humanity]
 author: Rob Kalajian
 ---
