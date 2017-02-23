@@ -13,7 +13,7 @@ excerpt: I was curious as to the difference between the two methods of snowballi
 updated: 2016-02-22
 ---
 
-*February 22, 2017 Update: Merged the "minimum payment" and "minimum payment type" columns and added an "extra" field
+*February 22, 2017 Update: Merged the "minimum payment" and "minimum payment type" columns and added an "extra" field*
 
 *January 26, 2017 Update: I added a sentence mentioning debt stacking / debt avalance.*
 
