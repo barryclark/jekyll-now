@@ -208,7 +208,7 @@ Mas no caso não vejo problema em utilizar em classes POJO que apenas manipulam 
 
 Além disso os códigos que apresento são exemplos didáticos, ou seja, possuem o propósito de ilustrar o conhecimento que tento passar no texto.
 
-Fiquem de olho no [blog do Mateus](https://medium.com/@mmalaquias1) ele vai colocar um texto excelente sobre o Optional.
+Deêm uma olhada no [excelente post que Matheus fez](https://medium.com/@mmalaquias1/como-usar-o-optional-do-java-8-com-a-jpa-hibernate-c1e48a4aa546#.brmhrwves) sobre Optional.
 
 ## Finalizando
 
