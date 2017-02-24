@@ -1,7 +1,7 @@
 ---
 title: Review - Shift DX 3DS
 date: 2017-01-28 00:00:00 Z
-category:
+categories:
 - review
 tags:
 - review

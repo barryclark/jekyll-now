@@ -1,7 +1,7 @@
 ---
 title: Review - Pocket Kingdom
 date: 2017-02-02 00:00:00 Z
-category:
+categories:
 - review
 tags:
 - review

@@ -1,7 +1,7 @@
 ---
 title: 'The Pokémon TCG: Sun & Moon Expansion has Arrived'
 date: 2017-02-07 00:00:00 Z
-category:
+categories:
 - games
 tags:
 - games

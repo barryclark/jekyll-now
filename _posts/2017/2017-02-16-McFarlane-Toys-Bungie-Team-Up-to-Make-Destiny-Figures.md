@@ -1,7 +1,7 @@
 ---
 title: McFarlane Toys & Bungie Team Up to Make Destiny Figures
 date: 2017-02-16 00:00:00 Z
-category:
+categories:
 - toys
 tags:
 - toys

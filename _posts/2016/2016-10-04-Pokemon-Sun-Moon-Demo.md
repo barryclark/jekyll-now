@@ -1,7 +1,7 @@
 ---
 title: Pokémon Sun and Pokémon Moon Demo Drops Oct 18
 date: 2016-10-04 00:00:00 Z
-category:
+categories:
 - video games
 tags:
 - video games

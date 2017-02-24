@@ -1,7 +1,7 @@
 ---
 title: Review - Three Cheers for Master
 date: 2016-08-13 00:00:00 Z
-category:
+categories:
 - review
 tags:
 - games

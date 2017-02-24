@@ -1,7 +1,7 @@
 ---
 title: Children Can Design Their Own Clothes With Picture This
 date: 2016-09-08 00:00:00 Z
-category:
+categories:
 - other
 tags:
 - other

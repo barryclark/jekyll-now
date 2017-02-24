@@ -1,7 +1,7 @@
 ---
 title: Review - Armadora
 date: 2016-09-01 00:00:00 Z
-category:
+categories:
 - review
 tags:
 - games

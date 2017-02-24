@@ -1,7 +1,7 @@
 ---
 title: The Future of A Pawn's Perspective
 date: 2016-12-28 00:00:00 Z
-category:
+categories:
 - news
 tags:
 - news

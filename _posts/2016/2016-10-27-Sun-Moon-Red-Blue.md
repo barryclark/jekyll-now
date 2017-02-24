@@ -1,7 +1,7 @@
 ---
 title: Pokémon Sun and Moon Starter Final Evolutions. Also, Red and Blue!
 date: 2016-10-27 00:00:00 Z
-category:
+categories:
 - video games
 tags:
 - video games

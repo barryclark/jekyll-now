@@ -1,7 +1,7 @@
 ---
 title: Pokemon GO Launched
 date: 2016-07-07 00:00:00 Z
-category:
+categories:
 - video games
 tags:
 - video games

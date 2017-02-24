@@ -1,7 +1,7 @@
 ---
 title: Unboxing Legend of Vyas
 date: 2016-04-25 00:00:00 Z
-category:
+categories:
 - unboxing
 tags:
 - games

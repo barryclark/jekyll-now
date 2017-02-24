@@ -1,7 +1,7 @@
 ---
 title: Card Master Preview
 date: 2016-06-29 00:00:00 Z
-category:
+categories:
 - preview
 tags:
 - games

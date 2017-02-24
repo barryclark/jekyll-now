@@ -1,7 +1,7 @@
 ---
 title: Eight New Safari Toys Include an Amazing Behemoth
 date: 2016-09-15 00:00:00 Z
-category:
+categories:
 - toys
 tags:
 - toys

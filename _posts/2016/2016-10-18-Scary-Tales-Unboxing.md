@@ -1,7 +1,7 @@
 ---
 title: Unboxing Storyline Scary Tales
 date: 2016-10-18 00:00:00 Z
-category:
+categories:
 - unboxing
 tags:
 - games

@@ -1,7 +1,7 @@
 ---
 title: Unboxing Avoid the Void
 date: 2016-10-28 00:00:00 Z
-category:
+categories:
 - unboxing
 tags:
 - games

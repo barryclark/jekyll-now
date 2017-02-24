@@ -1,7 +1,7 @@
 ---
 title: Connecticut Festival of Indie Games Mid Year Event
 date: 2016-09-14 00:00:00 Z
-category:
+categories:
 - conventions
 tags:
 - conventions

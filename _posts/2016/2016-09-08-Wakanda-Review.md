@@ -1,7 +1,7 @@
 ---
 title: Review - Wakanda
 date: 2016-09-08 00:00:00 Z
-category:
+categories:
 - review
 tags:
 - games

@@ -1,7 +1,7 @@
 ---
 title: Bacterionomicon - The Creatures of the Healing Blade
 date: 2016-05-01 00:00:00 Z
-category:
+categories:
 - books
 tags:
 - rpg

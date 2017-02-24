@@ -1,7 +1,7 @@
 ---
 title: "#RPGaDay 2016 - Day 4"
 date: 2016-08-04 00:00:00 Z
-category:
+categories:
 - games
 tags:
 - games

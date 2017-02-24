@@ -1,7 +1,7 @@
 ---
 title: Review - Gigamons
 date: 2016-11-08 00:00:00 Z
-category:
+categories:
 - review
 tags:
 - games

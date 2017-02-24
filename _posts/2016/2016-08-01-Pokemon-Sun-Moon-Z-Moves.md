@@ -1,7 +1,7 @@
 ---
 title: Pokemon Sun and Moon Z-Moves and More
 date: 2016-08-01 00:00:00 Z
-category:
+categories:
 - video games
 tags:
 - video games

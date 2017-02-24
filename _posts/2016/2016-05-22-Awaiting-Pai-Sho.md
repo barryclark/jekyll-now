@@ -1,7 +1,7 @@
 ---
 title: Awaiting Pai Sho
 date: 2016-05-22 00:00:00 Z
-category:
+categories:
 - games
 tags:
 - games

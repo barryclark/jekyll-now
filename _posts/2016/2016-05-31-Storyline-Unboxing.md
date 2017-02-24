@@ -1,7 +1,7 @@
 ---
 title: Unboxing Storyline Fairy Tales
 date: 2016-05-31 00:00:00 Z
-category:
+categories:
 - unboxing
 tags:
 - games

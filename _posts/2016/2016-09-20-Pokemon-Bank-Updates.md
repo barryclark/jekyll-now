@@ -1,7 +1,7 @@
 ---
 title: Pokémon Bank Updates and new Sun and Moon Pokémon.
 date: 2016-09-20 00:00:00 Z
-category:
+categories:
 - video games
 tags:
 - video games

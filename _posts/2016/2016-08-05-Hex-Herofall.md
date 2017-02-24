@@ -1,7 +1,7 @@
 ---
 title: 'HEX: Shards of Fate – Herofall Set Announced'
 date: 2016-08-05 00:00:00 Z
-category:
+categories:
 - video games
 tags:
 - video games

@@ -1,7 +1,7 @@
 ---
 title: Review - Attila
 date: 2016-08-05 00:00:00 Z
-category:
+categories:
 - review
 tags:
 - games

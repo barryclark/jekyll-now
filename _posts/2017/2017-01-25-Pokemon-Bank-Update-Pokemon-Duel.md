@@ -1,7 +1,7 @@
 ---
 title: Pokémon Duel for Mobile / Pokémon Bank Update
 date: 2017-01-25 00:00:00 Z
-category:
+categories:
 - video games
 tags:
 - pokemon

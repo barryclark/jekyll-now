@@ -1,7 +1,7 @@
 ---
 title: 'Unboxing Mystic Vale: Vale of Magic'
 date: 2016-10-27 00:00:00 Z
-category:
+categories:
 - unboxing
 tags:
 - games

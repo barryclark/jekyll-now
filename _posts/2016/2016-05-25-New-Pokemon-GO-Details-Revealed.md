@@ -1,7 +1,7 @@
 ---
 title: New Pokemon GO Details Revealed
 date: 2016-05-25 00:00:00 Z
-category:
+categories:
 - video games
 tags:
 - video games

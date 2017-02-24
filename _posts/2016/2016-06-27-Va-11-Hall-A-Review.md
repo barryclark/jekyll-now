@@ -1,7 +1,7 @@
 ---
 title: Review - VA-11 Hall-A
 date: 2016-06-27 00:00:00 Z
-category:
+categories:
 - review
 tags:
 - video games

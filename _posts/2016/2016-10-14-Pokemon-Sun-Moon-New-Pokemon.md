@@ -1,7 +1,7 @@
 ---
 title: New Pokémon and Characters revealed for Pokémon Sun and Pokémon Moon
 date: 2016-10-14 00:00:00 Z
-category:
+categories:
 - video games
 tags:
 - video games

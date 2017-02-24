@@ -1,7 +1,7 @@
 ---
 title: Review - Odd World
 date: 2016-07-12 00:00:00 Z
-category:
+categories:
 - review
 tags:
 - games

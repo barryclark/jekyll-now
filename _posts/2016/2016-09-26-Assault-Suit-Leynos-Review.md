@@ -1,7 +1,7 @@
 ---
 title: Review - Assault Suit Leynos
 date: 2016-09-26 00:00:00 Z
-category:
+categories:
 - review
 tags:
 - video games

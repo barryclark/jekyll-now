@@ -1,7 +1,7 @@
 ---
 title: Card Hunter
 date: 2016-04-21 00:00:00 Z
-category:
+categories:
 - video games
 tags:
 - video games

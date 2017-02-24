@@ -1,7 +1,7 @@
 ---
 title: A Pawn's Perspective
 date: 2016-04-13 00:00:00 Z
-category:
+categories:
 - news
 tags:
 - news
