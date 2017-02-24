@@ -36,5 +36,3 @@ Tomorrow, I begin a new campaign of Imperial Assault with some friends and these
 
 [Broken Egg Games](https://www.brokenegggames.com/)\\
 [Broken Egg Games Imperial Assault Token Set](http://www.brokenegggames.com/destiny-token-sets.html)
-
-*Frank is an attorney and family man currently based out of Las Vegas. He's a long time gaming enthusiast with a tabletop interest in most dungeon crawlers and map strategy games. If it has dice and minis, it probably has his attention.*
