@@ -4,11 +4,11 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+I have a dream - travel around the world. Now, it is time to earn some money.
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+If 40 is the end of a software engineer's life, then I should take these years very seriously, because there is no way back.
 
 ### Contact me
 
