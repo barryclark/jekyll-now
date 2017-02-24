@@ -8,7 +8,7 @@ TARO FURUYA
 
 六本木一丁目のソシャゲ会社で働いているエンジニア
 
-C# / Unity / ASP.NET / ProjectManagement / Go / MachineLearning
+興味がある→C# / Unity / ASP.NET / ProjectManagement / Golang / MachineLearning
 
 ### Qiita
 http://qiita.com/t_furuya
