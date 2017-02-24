@@ -95,7 +95,8 @@ Elected President of the National Federation of Atheist, Humanist and Secular St
 | CRYS007H7 | Systems Biology                                 | 15              | 93     |
 | CRYS008H7 | Sequence Analysis and Genomics                  | 15              | 70     |
 | CRYS015D7 | Project MSc Bioinformatics with Systems Biology | 60              | 71     |
- 
+
+ 
 
 ## 4.2	Nottingham MSci Biochemistry and Genetics - Results by Module
 
@@ -178,7 +179,7 @@ L=Lecture, P=Practical
 | Jun-10              | GENA2       | SCIENCE AND SOCIETY                                        | AQA        | 73  | 100 | B     |
 | Jan-11              | GENA4       | SCIENCE AND SOCIETY                                        | AQA        | 72  | 100 | B     |
 | Jun-11              | GENA3       | CULTURE AND SOCIETY                                        | AQA        | 74  | 100 | B     |
-|                     |             | _*Subject Score and Grade*_                                |            | 297 | 400 | B     |
+|                     |             | *_Subject Score and Grade_*                                |            | 297 | 400 | B     |
 | __Mathematics__     |             |                                                            |            |                   |
 | Jan-10              | MPC1        | PURE CORE 1                                                | AQA        | 86  | 100 | A     |
 | Jun-10              | MM1B        | MECHANICS 1B                                               | AQA        | 91  | 100 | A     |
@@ -186,7 +187,7 @@ L=Lecture, P=Practical
 | Jan-11              | MPC3        | PURE CORE 3                                                | AQA        | 86  | 100 | A     |
 | Jun-11              | MM2B        | MECHANICS 2B                                               | AQA        | 61  | 100 | C     |
 | Jun-11              | MPC4        | PURE CORE 4                                                | AQA        | 72  | 100 | B     |
-|                     |             | _*Subject Score and Grade*_                                |            | 477 | 600 | B     |
+|                     |             | *_Subject Score and Grade_*                                |            | 477 | 600 | B     |
 | __Physics__         |             |                                                            |            |     |     |       |
 | Jan-10              | G491        | PHYSICS IN ACTION                                          | OCR        | 70  | 90  | B     |
 | Jun-10              | G492        | UNDERSTANDING PROCESSES, EXPERIMENTATION AND DATA HANDLING | OCR        | 139 | 150 | A     |
@@ -194,4 +195,4 @@ L=Lecture, P=Practical
 | Jan-11              | G494        | RISE AND FALL OF THE CLOCKWORK UNIVERSE                    | OCR        | 54  | 90  | C     |
 | Jun-11              | G495        | FIELD PARTICLE PICTURES                                    | OCR        | 137 | 150 | A     |
 | Jun-11              | G496        | ADVANCES IN PHYSICS                                        | OCR        | 58  | 60  | A     |
-|                     |             | _*Subject Score and Grade*_                                |            | 516 | 600 | A     |
+|                     |             | *_Subject Score and Grade_*                                |            | 516 | 600 | A     |
