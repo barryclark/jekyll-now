@@ -32,7 +32,7 @@ The above items being stated, I should mention that I generally accept review pr
 
 **Phone/Camera:**
 
-[OnePlus 2](https://oneplus.net/oneplus-2)
+[Samsung Galaxy S7 Edge](http://www.samsung.com/us/explore/galaxy-s7-features-and-specs/?cid=ppc-)
 
 **Everyday Laptop:**
 
