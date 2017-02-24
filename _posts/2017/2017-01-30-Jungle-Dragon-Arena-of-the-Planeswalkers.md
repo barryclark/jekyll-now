@@ -16,7 +16,7 @@ description: 'Safari''s toys make excellent pieces of games. Here''s my take on 
   Jungle Dragon in Magic: Arena of the Planeswalkers.'
 featured: jungledragonareana.jpg
 amazonterm: arena of the planeswalkers
-author: Rob Kalajian
+author: robk
 ---
 
 ***Update*** *There are now 3 Jungle Dragon cards, each with a different ability. Test them out and comment on which one you like best!*

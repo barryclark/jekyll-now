@@ -13,7 +13,7 @@ description: Similar to the old pen-and-paper game boxes, Armadora is fun game f
   families.
 featured: armadora.jpg
 amazonterm: blue orange games
-author: Rob Kalajian
+author: robk
 ---
 
 <img src="/images/armadora/armadora.jpg" alt="Armadora" width="300" class="float-right" />

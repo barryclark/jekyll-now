@@ -13,7 +13,7 @@ layout: post
 description: Infinity Wars, the digital trading card, is getting a huge update planned
   for the end of the year.
 featured: infinitywars.jpg
-author: Rob Kalajian
+author: robk
 ---
 
 Infinity Wars is a free-to-play CCG on Steam. As my readers will know, I'm a sucker for free CCGs, even if I only play each one for a short while. Sometimes you find a great one that sticks. I'll be giving Infinity Wars a spin soon to see if this is one of those titles.

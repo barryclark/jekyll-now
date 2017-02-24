@@ -14,7 +14,7 @@ description: A new edition of Tally Ho! has been released in Kosmos' 2-player li
   How does it hold up?
 featured: tallyho.jpg
 amazonterm: tally ho
-author: Rob Kalajian
+author: robk
 ---
 
 <img src="/images/tallyho/product.jpg" alt="Tally Ho!" class="float-right" />

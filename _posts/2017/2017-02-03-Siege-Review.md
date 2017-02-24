@@ -12,7 +12,7 @@ layout: post
 description: Defeat the other players' kings in AEG's game of deceit and deduction.
 featured: siege.jpg
 amazonterm: aeg siege
-author: Rob Kalajian
+author: robk
 ---
 
 ![Siege](/images/featured/siege.jpg){: .float-right}

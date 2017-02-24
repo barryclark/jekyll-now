@@ -12,7 +12,7 @@ layout: post
 description: A deckbuilder with no shuffling or sorting? That's what Mageling plans
   to deliver.
 featured: mageling.png
-author: Rob Kalajian
+author: robk
 ---
 
 <iframe style="float:right; margin-left:10px;" src="https://www.kickstarter.com/projects/familiargames/mageling-0/widget/card.html?v=2" width="220" height="420" frameborder="0" scrolling="no"></iframe>

@@ -13,7 +13,7 @@ description: Ever want to kill stuff with Yahtzee rolls? Fantahzee lets you do j
   that.
 featured: fantahzee.png
 amazonterm: AEG games
-author: Rob Kalajian
+author: robk
 ---
 
 <img src="/images/fantahzee/fantahzee.png" alt="Fantahzee Box" class="float-right" />

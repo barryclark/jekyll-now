@@ -11,7 +11,7 @@ tags:
 layout: post
 description: Dragoon is an amazing game by Lay Waste Games. Let's see what's inside!
 featured: dragoon.png
-author: Rob Kalajian
+author: robk
 ---
 
 Back in March of last year I did a [preview of Dragoon](http://www.purplepawn.com/2015/03/kickstarter-previewdragoon/), by Lay Waste Games, for Purple Pawn. Lay Waste had a wildly successful Kickstarter campaign, and a bit over a year later, I have the final product in my hands. The version I received is the Full Metal Mantis. This is the full color, full metal, version of the game available at the $75 pledge level of their campaign.

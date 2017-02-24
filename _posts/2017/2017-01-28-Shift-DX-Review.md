@@ -13,7 +13,7 @@ description: Born from an online game, Shift DX brings all the excitement of the
   plus more.
 featured: shiftdx.png
 amazonterm: 3ds
-author: Rob Kalajian
+author: robk
 ---
 
 ![Shift DX](/images/featured/shiftdx.png){: .float-right}

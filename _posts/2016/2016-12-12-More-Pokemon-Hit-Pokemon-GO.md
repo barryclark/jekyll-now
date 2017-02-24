@@ -14,7 +14,7 @@ description: Pichu, Togepi, and more Pokémon from the Johto region are now in P
   GO.
 featured: pokexmas.jpg
 amazonterm: pokemon
-author: Rob Kalajian
+author: robk
 ---
 
 ![Santa Pikachu](/images/pokemongo/santapikachu.jpg)

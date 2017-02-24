@@ -12,7 +12,7 @@ layout: post
 description: Pixel Glory is all about beefing up your 8-bit wizard and killing some
   monsters.
 featured: pixelglory.png
-author: Rob Kalajian
+author: robk
 ---
 
 <img src="/images/pixelglory/pixelglory.png" alt="Pixel Glory" width="300" class="float-right" />

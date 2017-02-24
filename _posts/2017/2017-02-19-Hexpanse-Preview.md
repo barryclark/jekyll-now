@@ -12,7 +12,7 @@ tags:
 layout: post
 description: A thematic abstract strategy game? That's the best way to describe Hexspanse.
 featured: hexpanse.jpg
-author: Rob Kalajian
+author: robk
 ---
 
 ![Hexpanse](/images/featured/hexpanse.jpg){: .float-right}

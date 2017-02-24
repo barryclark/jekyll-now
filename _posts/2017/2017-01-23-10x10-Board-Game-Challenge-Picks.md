@@ -30,7 +30,7 @@ layout: post
 description: I've picked my games for the 2017 10x10 Board Game Challenge. Now to
   try and meet the goal!
 featured: 10x10Chal.png
-author: Rob Kalajian
+author: robk
 ---
 
 Back toward the beginning of the month I posted about the [10x10 Board Game Challenge](http://pawnsperspective.com/10x10-Board-Game-Challenge/). I've finally printed out the sheet and picked my 10 games. Here they are in no particular order (lies, they're alphabetical.)

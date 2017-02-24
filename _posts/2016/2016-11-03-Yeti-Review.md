@@ -14,7 +14,7 @@ description: There's a yeti on the mountain. Snap pics, climb the mountain, and 
   the yet to win!
 featured: yeti.jpg
 amazonterm: yeti game
-author: Rob Kalajian
+author: robk
 ---
 
 <img src="/images/yeti/box.jpg" alt="Yeti Box" width="300" class="float-right" />

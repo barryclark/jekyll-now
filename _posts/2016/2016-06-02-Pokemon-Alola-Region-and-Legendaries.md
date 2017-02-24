@@ -15,7 +15,7 @@ layout: post
 description: The Pokémon Company has released more Pokémon Sun and Moon information,
   including information on the Alola Region, Legendaries, and more.
 featured: alola.png
-author: Rob Kalajian
+author: robk
 ---
 
 The Pokémon Company has released more Pokémon Sun and Moon information today, including information on the Alola Region, Legendaries, and more.

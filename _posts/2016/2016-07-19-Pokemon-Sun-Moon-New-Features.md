@@ -16,7 +16,7 @@ description: The Pokémon Company has released more Pokémon Sun and Moon inform
   including information on the Hyper Training and Pokémon.
 featured: mimikyu.png
 amazonterm: pokemon sun and moon
-author: Rob Kalajian
+author: robk
 ---
 
 The Pokémon Company International announced six new Pokémon today, along with a bunch of new features for Pokémon Sun and Moon.

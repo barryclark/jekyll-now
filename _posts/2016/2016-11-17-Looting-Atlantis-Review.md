@@ -13,7 +13,7 @@ description: Looting Atlantis is easy to learn but holds a bit of deeper critica
   thinking inside.
 featured: lootingatlantis.jpg
 amazonterm: Looting Atlantis
-author: Rob Kalajian
+author: robk
 ---
 
 <h2>Prelude</h2>

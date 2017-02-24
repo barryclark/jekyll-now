@@ -10,7 +10,7 @@ layout: post
 description: I had a great time at CT FIG, played some sweet games, and met some amazing
   new people.
 featured: ctfig.png
-author: Rob Kalajian
+author: robk
 ---
 
 The [Connecticut Festival of Indie Games Mid-Year Event](http://www.ct-fig.com/festival-info.html) is now over, and it was a great time. As usual, the folks over at [Geek Fever Games](http://www.geekfevergames.com) put on a hell of a show. [The Tabletop Shop](https://www.facebook.com/TabletopShopCT/info?tab=overview) was an excellent venue with tons of space for everyone and I'm glad I finally had a chance to take the ride over there. Huge thanks to Matt for letting everyone use the space.

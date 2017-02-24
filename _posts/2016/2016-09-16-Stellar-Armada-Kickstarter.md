@@ -11,7 +11,7 @@ layout: post
 description: A full game for a buck? Stellar Armanda looks like it's got the goods
   for not a lot of cash
 featured: stellararmada.png
-author: Rob Kalajian
+author: robk
 ---
 
 <iframe style="float:right;margin-left:10px;" frameborder="0" height="420" scrolling="no" src="https://www.kickstarter.com/projects/423304770/stellar-armada-1-board-game/widget/card.html?v=2" width="220"></iframe>

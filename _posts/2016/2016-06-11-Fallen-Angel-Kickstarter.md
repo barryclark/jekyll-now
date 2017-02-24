@@ -12,7 +12,7 @@ layout: post
 description: My June Kickstarter pick is Fallen Angel, a sci-fi / fantasy game revolving
   around rolling and placing dice.
 featured: fallenangel.png
-author: Rob Kalajian
+author: robk
 ---
 
 <iframe width="1000" height="563" src="https://www.kickstarter.com/projects/1928897770/fallen-angel-0/widget/video.html" frameborder="0" scrolling="no"> </iframe>

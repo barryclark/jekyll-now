@@ -13,7 +13,7 @@ description: 'The beloved Blue Bomber comes to the table in Mega Man: The Board 
   Maybe he should have stayed in the digital realm.'
 featured: megaman1.jpg
 amazonterm: mega man board game
-author: Rob Kalajian
+author: robk
 ---
 
 ![Mega Man Board Game](/images/megaman/promo.jpg)

@@ -14,7 +14,7 @@ description: The Rose King used to be hard to obtain in the US, but Thames & KOS
   brought us a new edition last year.
 featured: theroseking.jpg
 amazonterm: the rose king
-author: Rob Kalajian
+author: robk
 ---
 
 ![The Rose King!](/images/theroseking/box.jpg){: .float-right}

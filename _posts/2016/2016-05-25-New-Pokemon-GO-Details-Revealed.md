@@ -11,7 +11,7 @@ layout: post
 description: More details for Pokémon GO came out from The Pokémon Company and Niantic,
   Inc. including information on the battle system, a new peripheral, and microtransactions.
 featured: pokemongo.png
-author: Rob Kalajian
+author: robk
 ---
 
 More details for Pokémon GO came out from The Pokémon Company and Niantic, Inc. today, including information on the battle system, a new peripheral, and microtransactions. The game has also entered a closed-beta phase while it's still being developed.

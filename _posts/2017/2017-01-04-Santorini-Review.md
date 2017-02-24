@@ -13,7 +13,7 @@ description: An amazing Kickstarter run. Simple to learn rules. Wonderful compon
   Santorini is a huge win.
 featured: santorini2.png
 amazonterm: Santorini
-author: Rob Kalajian
+author: robk
 ---
 
 <h2>Prelude</h2>

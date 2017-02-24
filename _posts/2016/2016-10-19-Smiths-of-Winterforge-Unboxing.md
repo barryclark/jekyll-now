@@ -13,7 +13,7 @@ layout: post
 description: Smiths of Winterforge is currently on Kickstarter, but the prototype
   is amazing. Let's look inside.
 featured: smithsofwinterforge.jpg
-author: Rob Kalajian
+author: robk
 ---
 
 [Smiths of Winterforge](https://www.kickstarter.com/projects/allofthed/smiths-of-winterforge-a-game-for-2-5-dwarven-black) is currently up for funding on Kickstarter. I'll actually have a review of the game going up soon on [Purple Pawn](http://purplepawn.com), most likely this Friday.

@@ -13,7 +13,7 @@ description: Tao Long is a new Kickstarter from Thundergryph Games, the publishe
   that put out Overseers.
 featured: taolong.jpg
 amazontag: santorini
-author: Rob Kalajian
+author: robk
 ---
 
 <iframe style="float:right; argin-left:10px;" frameborder="0" height="420" scrolling="no" src="https://www.kickstarter.com/projects/gonab/tao-long/widget/card.html?v=2" width="220"></iframe>

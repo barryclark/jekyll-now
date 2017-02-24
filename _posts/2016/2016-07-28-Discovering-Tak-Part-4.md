@@ -12,7 +12,7 @@ tags:
 layout: post
 description: Continuing my Tak posts, I'm checking out Tak boards.
 featured: takboard.jpg
-author: Rob Kalajian
+author: robk
 ---
 
 One of the greatest things about Tak is the open nature of the game. Cheapass Games provides the [rules](http://cheapass.com/node/215) online, along with piece dimensions. People all over have been making their own Tak sets, and some of them are just awe inspiring. I've started keeping a [Pinterest Board](https://www.pinterest.com/rkalajian/tak/) with sets I like, but I figured I'd spotlight a few here.

@@ -10,7 +10,7 @@ tags:
 layout: post
 description: 'What aspect of RPGs has had the most effect on you? Day 7 of #RPGaDay.'
 featured: rpgaday.png
-author: Rob Kalajian
+author: robk
 ---
 
 **What aspect of RPGs has had the most effect on you?**

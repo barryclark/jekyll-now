@@ -13,7 +13,7 @@ layout: post
 description: This review gives Hex Shards of Fate a "pass priority" due to being needlessly
   complex.
 featured: hex.png
-author: Rob Kalajian
+author: robk
 ---
 
 Another free-to-play, digital CCG, Hex: Shards of Fate attempts to combine CCGs with MMOs. Players navigate through the world and narrative battling anything that stands in their way. It's very familiar to veteran CCG players, using gems as energy to cast cards. Each gem adds to your total mana count, but each color adds to your color level. This means that a ruby and diamond give you two mana, and 1 level in red and 1 level in white. It's pretty easy to pick up on once you play.

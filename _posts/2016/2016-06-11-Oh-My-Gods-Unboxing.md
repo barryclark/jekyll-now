@@ -13,7 +13,7 @@ layout: post
 description: Oh My Gods is a game I first played at CT FIG. Let's unbox it and see
   what's inside.
 featured: ohmygods.jpg
-author: Rob Kalajian
+author: robk
 ---
 
 [Oh My Gods](http://www.gameworthylabs.com/games/oh-my-gods) is a game I first played at [CT FIG](http://ct-fig.com). I've got a review of the game coming shortly, but I figured I'd take some pictures and get them posted before then.

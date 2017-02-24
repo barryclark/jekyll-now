@@ -10,7 +10,7 @@ tags:
 layout: post
 description: 'Beyond the game, what''s involved in an ideal setting? Day 9 of #RPGaDay.'
 featured: rpgaday.png
-author: Rob Kalajian
+author: robk
 ---
 
 **Beyond the game, what's involved in an ideal setting?**

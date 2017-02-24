@@ -16,7 +16,7 @@ description: Steve Jackson's popular 80's adventure book is brought to life in T
 featured: firetop.png
 amazonterm: the warlock of firetop mountain
 amazoncat: Books
-author: Rob Kalajian
+author: robk
 ---
 
 <h2>Prelude</h2>

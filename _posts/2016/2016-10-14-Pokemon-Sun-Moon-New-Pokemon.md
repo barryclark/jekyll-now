@@ -15,7 +15,7 @@ layout: post
 description: More Alolan variations, Type:Null's evolution, and more!
 featured: silvally.png
 amazonterm: pokemon sun and moon
-author: Rob Kalajian
+author: robk
 ---
 
 Let's start this post off with some new Pokémon that were announced.

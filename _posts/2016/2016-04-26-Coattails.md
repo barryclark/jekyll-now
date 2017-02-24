@@ -10,7 +10,7 @@ tags:
 layout: post
 description: So many people are making Cards Against Humanity clones...
 featured: coattails.png
-author: Rob Kalajian
+author: robk
 ---
 
 Thomas Deeny ([@DenaghDesign](https://twitter.com/DenaghDesign)), another [Purple Pawn](http://purplepawn.com) Editor, wins the award for making me laugh so hard I almost fell out of my seat today. Thomas handles our Crowdfunding Highlights, and has started reporting on "Marketplace Confusion/Parody/Coattail Riding" games. Generally these are party games that are following in the footsteps of Cards Against Humanity. Usually these games are terrible.

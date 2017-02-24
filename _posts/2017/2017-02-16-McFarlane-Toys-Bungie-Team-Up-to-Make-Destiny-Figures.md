@@ -14,7 +14,7 @@ description: McFarlane Toys links up with Bungie to become legend and create toy
   based off the smash hit video game Destiny
 featured: mcdestiny.jpg
 amazonterm: McFarlane
-author: Rob Kalajian
+author: robk
 ---
 
 ![McFarlane/Bungie Destiny](/images/mcfarlane/destiny.png)

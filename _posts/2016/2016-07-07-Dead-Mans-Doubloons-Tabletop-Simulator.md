@@ -12,7 +12,7 @@ layout: post
 description: Geek Fever Games will be kickstarting Dead Man's Doubloons in August,
   but you can currently play on Tabletop Simulator.
 featured: deadmansdoubloons.jpg
-author: Rob Kalajian
+author: robk
 ---
 
 Tonight I had a chance to play [Geek Fever Games](http://geekfevergames.com)' upcoming game, Dead Man's Doubloons. The cool part? I got to play over Tabletop Simulator and Skype with the game's designer, Jason Miceli.

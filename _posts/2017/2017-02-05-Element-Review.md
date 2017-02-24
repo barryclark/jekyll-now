@@ -13,7 +13,7 @@ description: Control the elements and surround the other player's sage. Element 
   elegant.
 featured: element2.jpg
 amazonterm: rather dashing element
-author: Rob Kalajian
+author: robk
 ---
 
 ![Element](/images/featured/element2.jpg){: .float-right}

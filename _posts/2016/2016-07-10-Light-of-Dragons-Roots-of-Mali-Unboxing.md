@@ -13,7 +13,7 @@ layout: post
 description: Light of Dragons and Roots of Mali are two dice-based, abstract strategy
   games from SunCoreGames. Let's unbox them and see what's inside.
 featured: lodrom.jpg
-author: Rob Kalajian
+author: robk
 ---
 
 I just got a box from [SunCoreGames](http://suncoregames.ch/en/) containing their 2015 release, Light of Dragons, and their current prototype, Roots of Mali. Both look really top notch, and I should be playing them soon and posting my official review. Until then, here's some pictures of what comes in each box. In all the following, Light of Dragons will be on the left of the pictures, and Roots of Mali will be on the right.

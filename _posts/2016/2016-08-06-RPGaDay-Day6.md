@@ -10,7 +10,7 @@ tags:
 layout: post
 description: 'Most amazing thing a game group did for their community? Day 6 of #RPGaDay.'
 featured: rpgaday.png
-author: Rob Kalajian
+author: robk
 ---
 
 **Most amazing thing a game group did for their community?**

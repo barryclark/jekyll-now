@@ -13,7 +13,7 @@ description: Safari puts out some great toys, but their new Behemoth is an impre
   sight.
 featured: behemoth.jpg
 amazonterm: Safari Toys ltd
-author: Rob Kalajian
+author: robk
 ---
 
 Safari Toys has announced [eight new toys](https://www.safariltd.com/new-dragon-animal-dinosaur-toys/?mc_cid=086c062ed3&mc_eid=1308119b49) that are now available for purchase. One of those stood out to me immediately.

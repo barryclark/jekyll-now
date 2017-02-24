@@ -10,7 +10,7 @@ tags:
 layout: post
 description: Looty Dungeon brings the RPG to Crossy Road.
 featured: lootydungeon.jpg
-author: Rob Kalajian
+author: robk
 ---
 
 Yodo1 is releasing [Looty Dungeon](http://lootydungeon.com/) to Android on September 27th. The game tosses 40 different classes, each with their own abilities, into increasingly difficult dungeons filled with monsters and traps. In a similar fashion to their wildly popular Crossy Road, Looty Dungeon features a "one-tap" control scheme. Of course it will also use a similar free-to-play model with paid unlockables.

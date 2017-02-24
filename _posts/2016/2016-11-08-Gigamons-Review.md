@@ -12,7 +12,7 @@ layout: post
 description: Gigamons is more than just Memory, and an excellent game for kids.
 featured: gigamons.jpg
 amazonterm: gigamons
-author: Rob Kalajian
+author: robk
 ---
 
 <img src="/images/gigamons/gigamons.jpg" width="300" alt="Gigamons" class="float-right" />

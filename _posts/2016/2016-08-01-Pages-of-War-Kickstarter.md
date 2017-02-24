@@ -12,7 +12,7 @@ layout: post
 description: Pages of War is a game of epic combat in a small package. It's up on
   Kickstarter, and is my first pic of August.
 featured: pagesofwar.jpg
-author: Rob Kalajian
+author: robk
 ---
 
 <iframe frameborder="0"  style="float:left;margin-right:10px;margin-bottom:10px;" height="420" scrolling="no" src="https://www.kickstarter.com/projects/jkloudgames/pages-of-war/widget/card.html?v=2" width="220"></iframe>Pages of War is a game I previously [previewed](http://www.purplepawn.com/2016/03/kickstarter-previewpages-of-war/) on Purple Pawn, and has just hit Kickstarter. There's been a few changes since I've played, but apparently nothing so major that my impressions of the game should differ in any way.

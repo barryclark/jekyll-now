@@ -13,7 +13,7 @@ description: Cryptozoic captures Jeff Smith's Fone Bone in 4-inch Vinyl.
 featured: bonelogo.png
 amazonterm: Bone
 amazoncat: Books
-author: Rob Kalajian
+author: robk
 ---
 
 ![Fone Bone](/images/bone/bone.png){: .float-right }

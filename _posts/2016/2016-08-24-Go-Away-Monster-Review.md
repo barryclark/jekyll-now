@@ -13,7 +13,7 @@ description: Gamewright has a new edition of their classic kid's game. The new G
   Away Monster is a charming treat.
 featured: goaway.jpg
 amazonterm: Go away monster
-author: Rob Kalajian
+author: robk
 ---
 
 <img src="/images/goawaymonster/goawaynew.jpg" alt="Go Away Monster, 2016 Edition" width="300" class="float-right" />

@@ -9,7 +9,7 @@ tags:
 layout: post
 description: I'm hoping on the 10x10 Board Game Challenge, because why not?
 featured: 10x10Chal.png
-author: Rob Kalajian
+author: robk
 ---
 
 I've been seeing a lot of posts about the 10 x 10 Board Game Challenge now that the new year has started. The first place I saw it was on Tim Blank's [post](http://www.gameworthylabs.com/blog/578) on Gameworthy Labs' site. The idea is to choose 10 board games and play each 10 times over the course of the year. Not an easy task, and even harder since I rarely play many games multiple times with the revolving door of review titles coming in.

@@ -12,7 +12,7 @@ tags:
 layout: post
 description: Continuing my Tak posts, I'm checking out Tak bots.
 featured: playtak.jpg
-author: Rob Kalajian
+author: robk
 ---
 
 Continuing my earlier [Tak](http://pawnsperspective.com/Discovering-Tak/) [posts](http://pawnsperspective.com/Discovering-Tak-Part-2/), I figured I'd look into some Tak bots. Sometimes it's nice to practice against an AI, and i've played with 3 pretty good ones.

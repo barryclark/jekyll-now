@@ -13,7 +13,7 @@ description: I've always loved Target Earth for the Genesis. Now the game gets a
   with its original Japanese title, Assualt Suit Leynos.
 featured: leynos.jpg
 amazonterm: assault suit leynos
-author: Rob Kalajian
+author: robk
 ---
 
 <h2>Prelude</h2>

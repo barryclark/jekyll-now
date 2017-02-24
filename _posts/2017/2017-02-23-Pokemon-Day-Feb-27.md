@@ -13,7 +13,7 @@ layout: post
 description: Pokémon Day is just a few short days away. Here's what's happening.
 featured: pokemonday.png
 amazonterm: pokemon
-author: Rob Kalajian
+author: robk
 ---
 
 ![Pokémon Day](/images/pokemon/pokemonday.jpg){: .center}

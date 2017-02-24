@@ -12,7 +12,7 @@ layout: post
 description: Originz is a great superhero card game that I've talked about before.
   Let's see what's inside.
 featured: originz.jpg
-author: Rob Kalajian
+author: robk
 ---
 
 I finally got my hands on a physical prototype of Flavor Factions' [Originz](http://www.originzthegame.com/), and I couldn't be more excited. Having played the game a fews times at both CT FIG and over [Tabletop Simulator](http://pawnsperspective.com/Originz-Tabletop-Simulator/), it's great to have a copy of my own to try out with my kids.

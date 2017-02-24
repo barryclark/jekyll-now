@@ -17,7 +17,7 @@ description: The Pokémon bank is getting some updates to support Sun and Moon, 
   also to transfer from Red, Blue and Yellow.
 featured: pokebank.png
 amazonterm: pokemon sun and moon
-author: Rob Kalajian
+author: robk
 ---
 
 The Pokémon Bank will be getting an update in January that will update the system to be compatible with Pokémon Sun and Moon. The update also will include the addition of a new National Pokédex. This new feature reads saved data from any compatible titles you connect to Pokémon Bank and collects information about all the Pokémon you have caught. You can then check out all of this information in the Pokémon Bank application and even see Pokémon that don’t natively appear in the Alola region.

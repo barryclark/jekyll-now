@@ -12,7 +12,7 @@ layout: post
 description: The Gods of various Pantheon compete in a Battle of the Bands for our
   souls.
 featured: lordsofrock.jpg
-author: Rob Kalajian
+author: robk
 ---
 
 ![The Lords of Rock](/images/featured/lordsofrock.jpg){: .float-right}

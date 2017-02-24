@@ -13,7 +13,7 @@ layout: post
 description: Safari's Jungle Dragon is an earthy delight.
 featured: jungledragon.jpg
 amazonterm: Safari Toys ltd
-author: Rob Kalajian
+author: robk
 ---
 
 <h2>Prelude</h2>

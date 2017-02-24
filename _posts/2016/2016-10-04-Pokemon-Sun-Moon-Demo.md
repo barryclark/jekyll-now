@@ -16,7 +16,7 @@ description: Pokémon Sun and Moon is getting a demo on October 18th. Also, star
   evolutions revealed!
 featured: pelago.jpg
 amazonterm: pokemon sun and moon
-author: Rob Kalajian
+author: robk
 ---
 
 The Pokémon Sun and Pokémon Moon Special Demo Version will be available to download from the Nintendo eShop on October 18th. The Special Demo Version introduces players to the Alola region and features Ash-Greninja, the Pokémon that appears alongside the hero Ash in the animated TV series Pokémon the Series: XYZ. Players will be able to transfer their Ash-Greninja from the Special Demo Version to their full version of Pokémon Sun or Pokémon Moon once purchased when the games launch on November 18.

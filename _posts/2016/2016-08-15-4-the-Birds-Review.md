@@ -11,7 +11,7 @@ tags:
 layout: post
 description: 4 the Birds is a four-in-a-row game with modern mechanics and great bits.
 featured: 4thebirds.png
-author: Rob Kalajian
+author: robk
 ---
 
 <img src="/images/4thebirds/4thebirds.jpg" alt="4 the Birds" class="float-right" />

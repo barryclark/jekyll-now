@@ -15,7 +15,7 @@ description: Safari's Behemoth and Crystal Cave Dragon are beautiful, and are ma
   to play.
 featured: behemoth.jpg
 amazonterm: Safari Toys ltd
-author: Rob Kalajian
+author: robk
 ---
 
 <h2>Prelude</h2>

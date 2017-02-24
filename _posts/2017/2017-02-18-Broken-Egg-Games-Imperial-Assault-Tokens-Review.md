@@ -13,7 +13,7 @@ layout: post
 description: A look at Broken Egg Games' custom tokens for Imperial Assault.
 featured: brokeneggtokens.jpg
 amazonterm: imperial assault
-author: Frank Grip
+author: frankg
 ---
 
 ![Imperial Assault Tokens](/images/featured/brokeneggtokens.jpg){: .float-right}

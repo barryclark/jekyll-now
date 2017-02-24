@@ -12,7 +12,7 @@ layout: post
 description: Castle Combat is a great CCG for younger kids that's self published,
   and not widely known.
 featured: castlecombat.jpg
-author: Rob Kalajian
+author: robk
 ---
 
 <img src="/images/castlecombat/cardback.png" alt="Castle Combat Card Back" class="float-right" />

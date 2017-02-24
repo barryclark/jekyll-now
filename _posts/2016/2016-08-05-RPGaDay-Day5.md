@@ -10,7 +10,7 @@ tags:
 layout: post
 description: 'What story does your group tell about your character? Day 5 of #RPGaDay.'
 featured: rpgaday.png
-author: Rob Kalajian
+author: robk
 ---
 
 **What story does your group tell about your character?**

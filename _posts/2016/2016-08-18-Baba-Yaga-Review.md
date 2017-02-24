@@ -12,7 +12,7 @@ layout: post
 description: Baba Yaga is a clever card game that's easy to learn, and great for kids.
 featured: babayaga.jpg
 amazonterm: baba yaga
-author: Rob Kalajian
+author: robk
 ---
 
 <img src="/images/babayaga/baba.jpg" alt="Baba Yaga" width="300" class="float-right" />

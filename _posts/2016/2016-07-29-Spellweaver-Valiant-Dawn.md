@@ -12,7 +12,7 @@ tags:
 layout: post
 description: The first new set for Spellweaver, Valiant Dawn, has been released.
 featured: vdawn.png
-author: Rob Kalajian
+author: robk
 ---
 
 Dream Reactor has just released the first major expansion to [Spellweaver](https://spellweaver-tcg.com/), Valiant Dawn. The new set brings a load of [new mechanics](http://go.sparkpostmail1.com/f/a/0jjhaQGqN7nCZUHsJxEpaw~~/AACSLQA~/RgRZfjf6P0EIAKvNPj7RRJlXA3NwY1gEAAAAAFkGc2hhcmVkYQNuZXdgDTU0LjI0NC40OC4xNDJII1RoZSBWYWxpYW50IERhd24gRXhwYW5zaW9uIGlzIEhlcmUhQgoAAiu0m1fvHuQLUhNya2FsYWppYW5AZ21haWwuY29tCVEEAAAAAERGaHR0cHM6Ly9zcGVsbHdlYXZlci10Y2cuY29tL3ZhbGlhbnQtZGF3bi1leHBhbnNpb24tbWVjaGFuaWNzLWV4cGxhaW5lZEcCe30~), 6 new heroes, new skills via shrines, and multi-aspect cards.

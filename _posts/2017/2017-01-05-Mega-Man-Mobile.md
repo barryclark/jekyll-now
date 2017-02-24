@@ -10,7 +10,7 @@ tags:
 layout: post
 description: Mega Man 1-6 have hit the Google Play Store. They look like crap.
 featured: megamanmobile.png
-author: Rob Kalajian
+author: robk
 ---
 
 Capcom has released the first six Mega Man games have been released on the Google Play store today.

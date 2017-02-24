@@ -13,7 +13,7 @@ layout: post
 description: Four is a new, team based card game from March Forth Games. Let's see
   what's inside.
 featured: four.jpg
-author: Rob Kalajian
+author: robk
 ---
 
 <a class="center" href="http://www.marchforthgames.com/idevaffiliate/idevaffiliate.php?id=1_2_1_3" target="_blank"><img style="border:0px" src="http://www.marchforthgames.com/idevaffiliate/media/banners/FOUR-Banner-2.jpg" width="728" height="90" alt=""></a>

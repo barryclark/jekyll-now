@@ -13,7 +13,7 @@ description: Stack 12 blocks before the Stack Smasher knocks them over in this c
   kids' game.
 featured: stackup.jpg
 amazonterm: Stack Up
-author: Rob Kalajian
+author: robk
 ---
 
 <h2>Prelude</h2>

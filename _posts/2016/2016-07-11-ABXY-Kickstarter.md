@@ -12,7 +12,7 @@ layout: post
 description: ABXY is a speedy 2-player game inspired by the legendary battles from
   our favorite monster training RPGs. It's my July Kickstarter pick.
 featured: abxy.png
-author: Rob Kalajian
+author: robk
 ---
 
 <iframe style="float:left; margin-right:10px;" frameborder="0" height="420" scrolling="no" src="https://www.kickstarter.com/projects/brokengames/abxy-0/widget/card.html?v=2" width="220"></iframe>This month ABXY has caught my eye. It's marketed as a simple, 2-player game of monster battles. The overall design of the game is what really drew my attention, but then watching the [how to play](https://www.youtube.com/watch?v=5tb9lhvbGOs) video really gained my attention.

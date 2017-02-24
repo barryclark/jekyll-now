@@ -13,7 +13,7 @@ description: Daily Magic's game, Villages of Valeria, players competing to build
   villages. Let's see what's inside!
 featured: villagesofvaleria.jpg
 amazonterm: villages of valeria
-author: Rob Kalajian
+author: robk
 ---
 
 I had only recently heard about Villages of Valeria and reached out to Daily Magic Games with an inquiry to review the game. A few days later the game showed up at my doorstep and now I can provide you fine folks with some pictures of what comes in the box. I'm hoping to get a chance to play the game this weekend and then get my review written up sometime next week. Until then, enjoy the pretty pictures!

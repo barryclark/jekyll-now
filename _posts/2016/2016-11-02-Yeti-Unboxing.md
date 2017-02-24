@@ -13,7 +13,7 @@ layout: post
 description: AEG just released Yeti, a game with a sweet 3D board. Let's look inside.
 featured: yeti.jpg
 amazonterm: yeti game
-author: Rob Kalajian
+author: robk
 ---
 
 AEG is on a hot streak with games recently and Yeti doesn't look to be an exception. Aimed at families, it has a 3D board that you build before you play and comes in at 20-40 minutes of game time.

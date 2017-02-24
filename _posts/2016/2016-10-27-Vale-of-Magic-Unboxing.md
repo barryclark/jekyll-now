@@ -13,7 +13,7 @@ layout: post
 description: Mystic Vale's first expansion, Vale of Magic, is out. Let's look inside.
 featured: valeofmagic.jpg
 amazonterm: vale of magic
-author: Rob Kalajian
+author: robk
 ---
 
 Previously I've unboxed[^1] and reviewed[^2] AEG's Mystic Vale. Now I've gotten my hands on its first expansion, Vale of Magic.

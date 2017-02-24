@@ -16,7 +16,7 @@ description: The Pokémon Company has released more Pokémon Sun and Moon inform
   including information on the Z-Moves and Pokémon.
 featured: alolapop.jpg
 amazonterm: pokemon sun and moon
-author: Rob Kalajian
+author: robk
 ---
 
 The Pokémon Company International announced Pokémon Sun and Moon info today, including: new Pokémon, Z-Moves, Poké Ride, and the Island Challenge!

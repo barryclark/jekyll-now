@@ -14,7 +14,7 @@ description: Yu-Gi-Oh! Legacy of the Duelist is now available on PC Steam in the
   popular PC platform.
 featured: legacyoftheduelist.jpg
 amazonterm: yu-gi-oh
-author: Rob Kalajian
+author: robk
 ---
 
 Konami Digital Entertainment, Inc. (KONAMI) announced today that Yu-Gi-Oh! Legacy of the Duelist is now available on PC Steam in the Americas and Europe, marking the first time the Yu-Gi-Oh! franchise is available for the popular PC platform.

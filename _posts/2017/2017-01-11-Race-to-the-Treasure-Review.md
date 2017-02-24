@@ -13,7 +13,7 @@ description: Peaceable Kingdom's line of cooperative games rarely fails to impre
   Race to the Treasure! continues this pattern.
 featured: racetreasure.png
 amazonterm: peaceable kingdom
-author: Rob Kalajian
+author: robk
 ---
 
 ![Race to the Treasure!](/images/featured/racetreasure.png){: .float-right}

@@ -13,7 +13,7 @@ layout: post
 description: A high-quality mic that can attach to any set of headphones. I'm loving
   my ModMid 5.
 featured: modmic5.jpg
-author: Rob Kalajian
+author: robk
 ---
 
 ![ModMic 5](/images/featured/modmic5.jpg){: .float-right}

@@ -11,7 +11,7 @@ layout: post
 description: "#RPGaDay asks people to answer write about a specific RPG-related topic
   for every day in August. Here's my Day 1."
 featured: rpgaday.png
-author: Rob Kalajian
+author: robk
 ---
 
 The past few years I've seen several people participate in #RPGaDay, an event in August where people write about a specific RPG-related topic for each day in August. It's a great idea, but since I really don't play many RPGs as much as I'd like to anymore I've just enjoyed reading everyone's content without participating. Then I read Thomas Deeny's, a fellow Pawn, [latest post](http://denaghdesign.com) on the subject, and how last year he used #RPGaDay as an exercise in writing. I figure I may as well give it a shot.

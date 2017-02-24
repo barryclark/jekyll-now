@@ -14,7 +14,7 @@ description: Hasbro's Beyblade Burst app made a brief appearance on the iTunes s
   and was quickly taken down.
 featured: beybladeburstapp.png
 amazonterm: Beyblade burst
-author: Rob Kalajian
+author: robk
 ---
 
 Yesterday some Beyblade fans were lucky enough to grab Hasbro's upcoming Beyblade Burst app as it popped up on the iTunes store, then was quickly taken down.

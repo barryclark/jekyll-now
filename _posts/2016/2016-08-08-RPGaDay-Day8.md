@@ -11,7 +11,7 @@ layout: post
 description: 'Do you prefer hardcover, softcover, or electronic books? What are the
   benefits of your preference? Day 8 of #RPGaDay.'
 featured: rpgaday.png
-author: Rob Kalajian
+author: robk
 ---
 
 **Do you prefer hardcover, softcover, or electronic books? What are the benefits of your preference?**

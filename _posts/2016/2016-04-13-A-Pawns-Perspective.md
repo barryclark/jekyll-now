@@ -8,7 +8,7 @@ tags:
 - purple pawn
 layout: post
 description: Site name change, perspective change.
-author: Rob Kalajian
+author: robk
 ---
 
 For a long time I've never really had a direction on this blog, or any of its previous incarnations. I've decided to change that, and start a focus to these posts.

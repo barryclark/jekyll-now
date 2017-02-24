@@ -11,7 +11,7 @@ layout: post
 description: I've been a fan of Triple Triad ever since I first played it in Final
   Fantasy 8. Now it hits mobile phones.
 featured: tripletriad.png
-author: Rob Kalajian
+author: robk
 ---
 
 I've been a fan of Triple Triad ever since I first played it in Final Fantasy 8. I even bought some physical cards back in the day, though I have no idea whatever happened to them. I hit a bit of nostalgia for the game when I wrote about [Card Master](http://www.purplepawn.com/2016/05/card-master-up-on-prefundia/) over on Purple Pawn the other day. Card Master is basically just Triple Triad with a different theme. I need it. Let's move on.

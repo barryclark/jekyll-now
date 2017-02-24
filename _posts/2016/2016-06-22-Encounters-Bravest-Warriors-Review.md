@@ -13,7 +13,7 @@ layout: post
 description: Encounters! Bravest Warriors is a really easy game to pick up and play,
   and it's really enjoyable.
 featured: bravestwarriors.png
-author: Rob Kalajian
+author: robk
 ---
 
 I actually played Encounters! Bravest Warriors for the first time during PAX East 2015. It's by new means "new", but Catalyst sent me both decks to get a better look at along with some of their newest stuff after this year's PAX East.

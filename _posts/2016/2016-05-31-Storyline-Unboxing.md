@@ -12,7 +12,7 @@ layout: post
 description: Storyline Fairy Tales contains only cards and tokens, but the production
   value is excellent. Let's unbox it and see what's inside.
 featured: storyline.png
-author: Rob Kalajian
+author: robk
 ---
 
 Having just written a review for [Storyline: Fairy Tales](http://www.purplepawn.com/2016/05/second-look-storyline-fairy-tales/), I figured I'd take the time do take some unboxing photos. The game doesn't contain much except cards and tokens, but the production value is excellent.

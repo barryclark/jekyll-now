@@ -12,7 +12,7 @@ layout: post
 description: Aurora was an entry into The Game Crafters's Learning Game contest. Let's
   see what's inside.
 featured: aurora.jpg
-author: Rob Kalajian
+author: robk
 ---
 
 [Aurora](https://www.thegamecrafter.com/games/aurora1) is a game about the evolution of a solar system that was entered into The Game Crafter's Learning Games contest by Rampage Games. I got a chance to see it briefly at CT FIG, but now have my own copy to review and take some pictures of.

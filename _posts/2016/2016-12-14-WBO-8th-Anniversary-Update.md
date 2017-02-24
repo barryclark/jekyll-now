@@ -16,7 +16,7 @@ description: The 8th Anniversary celebration is happening at the WBO, and they'v
   got a brand new site at its center.
 featured: wbo8th.jpg
 amazonterm: beyblade burst
-author: Rob Kalajian
+author: robk
 ---
 
 <img src="/images/beybladeburst/8th.jpg" alt="WBO 8th" class="float-right" width="300"/>After a lengthy downtime the [World Beyblade Organization](http://worldbeyblade.org) has relaunched with a brand-new site for their 8th Anniversary celebration. The new site is fully responsive, bright, and airy. It's a much-needed step in a modern direction for the WBO.

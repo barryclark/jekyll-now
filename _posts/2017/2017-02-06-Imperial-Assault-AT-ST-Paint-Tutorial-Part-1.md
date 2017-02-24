@@ -13,7 +13,7 @@ layout: post
 description: Part 1 of Frank Grip's tutorial on painting an Imperial Assault AT-ST.
 featured: atstpart1.png
 amazonterm: imperial assault
-author: Frank Grip
+author: frankg
 ---
 
 With the recent release of [Jabba’s Realm](http://amzn.to/2lfAjKH) box set expansion for Imperial Assault and a few exciting add-ons coming down the pike, like the Jawa Scavenger Villian Pack (YES!), Hera Syndulla and C1-10P Ally Pack, and BT-1 and 0-0-0 Villain Pack, doing a painting guide for the AT-ST seemed like a good idea. I am an amateur painter, but every now and then I have some success.

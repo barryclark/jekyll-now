@@ -12,7 +12,7 @@ layout: post
 description: Card Master is a Triple Triad clone by Jeff Hurcomb, but does it live
   up to the classic Final Fantasy 8 mini-game?
 featured: cardmaster.png
-author: Rob Kalajian
+author: robk
 ---
 
 Having already signed up as an early backer for [Card Master on Prefundia](http://www.purplepawn.com/2016/05/card-master-up-on-prefundia/), I was excited to get a prototype in today to preview. For those unfamiliar, Card Master is basically [Triple Triad](http://finalfantasy.wikia.com/wiki/Triple_Triad), a popular card mini-game found in Final Fantasy 8. Not collectable, it's a deck of 81 cards with the numbers on the sides only ranging from 1-3. The rules for the game are simple:

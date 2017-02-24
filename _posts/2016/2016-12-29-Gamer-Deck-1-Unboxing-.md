@@ -12,7 +12,7 @@ layout: post
 description: The first Gamer Deck was a great Kickstarter success. Let's see what's
   inside!
 featured: gamerdeck1.png
-author: Rob Kalajian
+author: robk
 ---
 
 After a great run on Kickstarter, Gamer Deck 1 is starting to arrive in the hands of backers. You may remember my [original post](http://pawnsperspective.com/Gamer-Deck-1-Kickstarter/) about the deck from when I first backed it. The turnaround from Kickstarter to delivered product was pretty quick, and now I've got my own Gamer Deck to enjoy.

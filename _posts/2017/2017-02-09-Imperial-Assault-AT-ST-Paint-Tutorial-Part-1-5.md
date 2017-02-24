@@ -14,7 +14,7 @@ layout: post
 description: Part 1.5 of Frank Grip's tutorial on painting an Imperial Assault AT-ST.
 featured: atstpart1-5.png
 amazonterm: imperial assault
-author: Frank Grip
+author: frankg
 ---
 
 **Previous Posts in Series:** [Part 1](http://pawnsperspective.com/Imperial-Assault-AT-ST-Paint-Tutorial-Part-1/)

@@ -13,7 +13,7 @@ layout: post
 description: Every once and a while BCW shoots me some samples of their new products
   to take a look at. It's nice, seeing as I'm a huge fan of their line of stuff.
 featured: commanderlt.png
-author: Rob Kalajian
+author: robk
 ---
 
 Every once and a while BCW shoots me some samples of their new products to take a look at. It's nice, seeing as I'm a huge fan of their line of stuff, and we can always use some new deck boxes, card protectors, and folios in the house.

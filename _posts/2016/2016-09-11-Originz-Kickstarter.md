@@ -12,7 +12,7 @@ layout: post
 description: 'Become a Superpowered Hero or Villain and battle with 2 to 8 players
   in ORIGINZ: The Superpowered Card Game.'
 featured: originz.jpg
-author: Rob Kalajian
+author: robk
 ---
 
 <iframe style="float:left;margin-right:10px;margin-bottom:10px;" frameborder="0" height="420" scrolling="no" src="https://www.kickstarter.com/projects/flavorfaction/originz-the-superpowered-card-game/widget/card.html?v=2" width="220"></iframe>

@@ -16,7 +16,7 @@ description: Purchase Pokémon Sun or Moon before January 11th, 2017 for a speci
   Munchlax.
 featured: pulsnor.png
 amazonterm: pokemon sun and moon
-author: Rob Kalajian
+author: robk
 ---
 
 The Pokémon Company International has announced a special in-game bonus for those who purchase Pokémon Sun or Moon before January 11th, 2017. Early purchasers will recieved a special Munchlax that will evolve into a Pulverizing Snorlax, a power Snorlax that hold *Snorlium Z*, granting it the Pulverizing Pancake Z-Move.

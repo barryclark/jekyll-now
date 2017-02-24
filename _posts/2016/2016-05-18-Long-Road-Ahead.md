@@ -11,7 +11,7 @@ description: I decided to sit down and take inventory of everything that's come 
   recently. In line with my estimates, I've got 50 games on the dot that need to get
   played and reviewed.
 featured: longroad.png
-author: Rob Kalajian
+author: robk
 ---
 
 After [yesterday's post](/Drowning) I decided to sit down and take inventory of everything that's come in recently. In line with my estimates, I've got 50 games on the dot that need to get played and reviewed. Again, this doesn't include games already played, digital titles, toys, or gaming accessories. There's a long road ahead, but I've already started planning **r_day**, and am hoping to lock down a date and location soon.

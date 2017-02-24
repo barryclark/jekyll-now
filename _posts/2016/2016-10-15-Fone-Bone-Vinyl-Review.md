@@ -13,7 +13,7 @@ description: Cryptozoic's Fone Bone in 4-inch Vinyl makes my shelf happy.
 featured: fonebone.jpg
 amazonterm: Bone
 amazoncat: Books
-author: Rob Kalajian
+author: robk
 ---
 
 <h2>Prelude</h2>

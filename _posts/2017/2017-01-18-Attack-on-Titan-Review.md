@@ -14,7 +14,7 @@ description: The wildy popular Attack on Titan is now an excellent deckbuilding 
   from Cryptozoic.
 featured: attackontitan.png
 amazonterm: attack on titan
-author: Rob Kalajian
+author: robk
 ---
 
 ![Attack on Titan](/images/featured/attackontitan.png){: .float-right}

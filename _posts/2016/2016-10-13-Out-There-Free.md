@@ -11,7 +11,7 @@ layout: post
 description: Out There is a hard sci-fi space exploration game blending roguelike,
   resource management and gamebook mechanics. It's also free on Amazon Underground.
 featured: outthere.png
-author: Rob Kalajian
+author: robk
 ---
 
 Out There: Ω Edition, the rougelike sci-fi that inspired Out There Chronicles, is currently free on [Amazon Underground](http://miclos.us7.list-manage1.com/track/click?u=0342687b8b29c92bc2a5ab0a3&id=9bbc5836e5&e=c0f8783cab).

@@ -11,7 +11,7 @@ tags:
 layout: post
 description: Formula μ is a clever racing game in a small package.
 featured: formulamicro.jpg
-author: Rob Kalajian
+author: robk
 ---
 
 <img src="/images/formulamicro/micro.jpg" alt="Formula Micro" class="float-right" />

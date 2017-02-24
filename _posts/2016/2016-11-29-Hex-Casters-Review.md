@@ -13,7 +13,7 @@ description: Created by RIT students and now licensed by Hasbro, Hex Casters is 
   OK time.
 featured: hexcasters2.jpg
 amazonterm: Hex Casters
-author: Rob Kalajian
+author: robk
 ---
 
 <h2>Prelude</h2>

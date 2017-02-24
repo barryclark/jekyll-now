@@ -13,7 +13,7 @@ layout: post
 description: Two new Pokémon announcements in just a few day!
 featured: pokemonduel.jpg
 amazonterm: pokemon
-author: Rob Kalajian
+author: robk
 ---
 
 There's been two new announcements coming from the Pokémon camp in the past few days.

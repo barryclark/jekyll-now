@@ -12,7 +12,7 @@ layout: post
 description: Geek Fever Games has finally released Avoid the Void, one of my favorite
   games from PAX East. Let's look inside.
 featured: avoid.jpg
-author: Rob Kalajian
+author: robk
 ---
 
 I'm a [huge fan](http://www.purplepawn.com/2016/04/pax-east-2016-avoid-the-void-by-geek-fever-games/) of Avoid the Void and was really bummed when the Kickstarter campaign for the game fell short. Thankfully [http://www.geekfevergames.com/](http://www.geekfevergames.com/) didn't give up, and crowdfunded the game through [The Game Crafter](https://www.thegamecrafter.com/games/avoid-the-void?). My copy finally arrived, and I couldn't be happier. Now I can enjoy galaxy destroying fun with my kids!

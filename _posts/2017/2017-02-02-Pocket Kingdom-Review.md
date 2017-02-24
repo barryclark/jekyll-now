@@ -12,7 +12,7 @@ layout: post
 description: Pocket Kingdom is a steampunk puzzle platformer that recalls the days
   of the Amiga. It's a damn fine game.
 featured: pocketkingdom.jpg
-author: Rob Kalajian
+author: robk
 ---
 
 ![Pocket Kingdom](/images/pocketkingdom/pocketkingdom.jpg){: .float-right}

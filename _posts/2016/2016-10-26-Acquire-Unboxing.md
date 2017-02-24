@@ -14,7 +14,7 @@ description: Hasbro and Avalon Hill put out a new version of the classic Acquire
   Let's look inside.
 featured: acquire.jpg
 amazonterm: avalon hill
-author: Rob Kalajian
+author: robk
 ---
 
 [Acquire](https://boardgamegeek.com/boardgame/5/acquire) has changed hands quite a bit in its history. It's been in the hands of Hasbro since 1999 when they first published it under their newly-acquires (pun intended) Avalon Hill brand. Acquire has gone from a more functional to a more visually pleasing transition over the years, but the basic gameplay has stayed the same.

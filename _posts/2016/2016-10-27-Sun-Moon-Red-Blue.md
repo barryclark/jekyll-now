@@ -16,7 +16,7 @@ description: Pokémon Sun and Moon's starters' final evolutions revealed. Also, 
   by Red and Blue!
 featured: redblue.jpg
 amazonterm: pokemon sun and moon
-author: Rob Kalajian
+author: robk
 ---
 
 The Pokémon Company International and Nintendo showcased the final evolutions of Pokémon Sun and Pokémon Moon, along with the Alolan Guardians and a few other new Pokémon.

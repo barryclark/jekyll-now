@@ -14,7 +14,7 @@ layout: post
 description: Futuristic Gladiators battle it out in this updated CGG from Hack & Slash
   Games.
 featured: ophidian2360.jpg
-author: Rob Kalajian
+author: robk
 ---
 
 ![Ophidian 2360](/images/featured/ophidian2360.jpg){: .float-right}

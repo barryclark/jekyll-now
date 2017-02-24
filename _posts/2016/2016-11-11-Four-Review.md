@@ -12,7 +12,7 @@ tags:
 layout: post
 description: Four is lightweight, family fun.
 featured: four2.jpg
-author: Rob Kalajian
+author: robk
 ---
 
 <a class="center" href="http://www.marchforthgames.com/idevaffiliate/idevaffiliate.php?id=1_2_1_3" target="_blank"><img style="border:0px" src="http://www.marchforthgames.com/idevaffiliate/media/banners/FOUR-Banner-2.jpg" width="728" height="90" alt=""></a>

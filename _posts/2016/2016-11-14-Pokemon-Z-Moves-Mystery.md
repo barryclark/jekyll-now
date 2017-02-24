@@ -17,7 +17,7 @@ description: Pokémon Sun and Moon is right around the corner. There's some new 
   on Ultra Beasts and a mystery Pokémon!
 featured: sunmoonmystery.png
 amazonterm: pokemon sun and moon
-author: Rob Kalajian
+author: robk
 ---
 
 Pokémon Sun and Moon are right around the corner, and The Pokémon Company has released some new info about the game today.

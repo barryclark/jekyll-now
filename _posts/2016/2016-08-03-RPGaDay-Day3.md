@@ -10,7 +10,7 @@ tags:
 layout: post
 description: 'Character moment you''re proudest of? Day 3 of #RPGaDay.'
 featured: rpgaday.png
-author: Rob Kalajian
+author: robk
 ---
 
 **Character moment you're proudest of?**

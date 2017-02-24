@@ -12,7 +12,7 @@ layout: post
 description: Mega Man is a game I've been waiting to get my hands on for a while now.
   Let's unbox it and see what's inside.
 featured: megaman.png
-author: Rob Kalajian
+author: robk
 ---
 
 Mega Man is a game I've been waiting to get my hands on for a while now. I still haven't had a chance to get it to the table yet, but I couldn't resist tearing into it and seeing all the wonderful bits inside. I've got pictures from both the base game and the Time Man/Oil Man expansion, so there was a lot to go through.

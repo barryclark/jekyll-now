@@ -16,7 +16,7 @@ description: Shadows over Innistrad is a new base set for Arena of the Planeswal
   Let's see what's inside!
 featured: aopsoi.jpg
 amazonterm: Arena of the Planeswalkers
-author: Rob Kalajian
+author: robk
 ---
 
 There's a lot of excitement in our house today as we just received our copy of Magic the Gathering Arena of the Planeswalkers: Shadows of Innistrad. It's a new base game, so it can be played without the original boxed set. The Battle for Zendikar expansion is fully compatible.

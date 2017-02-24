@@ -12,7 +12,7 @@ layout: post
 description: Party Hard has a new story DLC coming out. It also has some interactive
   Twitch functions included.
 featured: partyhard.jpg
-author: Rob Kalajian
+author: robk
 ---
 
 ![High Crimes](/images/partyhard/highcrimes.gif){: .center }

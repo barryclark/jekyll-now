@@ -13,7 +13,7 @@ description: 'A deck builder with an excellent comic book theme. Emergents: Gene
   is worth your time.'
 featured: emergents.jpg
 amazonterm: emergents genesis
-author: Rob Kalajian
+author: robk
 ---
 
 ![Emergents Art](/images/emergents/emergents.png)

@@ -30,7 +30,7 @@ layout: post
 description: I've picked my games for the 2017 10x10 Board Game Challenge. Here's
   January's plays!
 featured: 10x10Chal.png
-author: Rob Kalajian
+author: robk
 ---
 
 January is over. It's now time to check how well I'm doing in my [10x10 Board Game Challenge](http://pawnsperspective.com/10x10-Board-Game-Challenge/). I've played a lot of games this month. Unfortunately not many off my list.

@@ -10,7 +10,7 @@ tags:
 layout: post
 description: 'Most impressive thing another''s character did? Day 4 of #RPGaDay.'
 featured: rpgaday.png
-author: Rob Kalajian
+author: robk
 ---
 
 **Most impressive thing another's character did?**

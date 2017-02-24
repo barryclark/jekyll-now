@@ -13,7 +13,7 @@ description: Wakanda is a Blue Orange game about totem poles. It took a bit to g
   used to, but was pretty fun.
 featured: wakanda.jpg
 amazonterm: wakanda
-author: Rob Kalajian
+author: robk
 ---
 
 <img src="/images/wakanda/wakanda.jpg" alt="Wakanda" width="300" class="float-right" />

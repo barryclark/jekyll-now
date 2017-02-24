@@ -13,7 +13,7 @@ layout: post
 description: Barnyard Battle is a standalone, non-collectible version of KidRealm's
   Castle Combat.
 featured: kidrealm.jpg
-author: Rob Kalajian
+author: robk
 ---
 
 <img src="/images/barnyardbattle/barnyardbattle.jpg" alt="Barnyard Battle" width="300" class="float-right" />

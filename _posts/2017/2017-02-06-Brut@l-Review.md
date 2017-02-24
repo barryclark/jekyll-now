@@ -12,7 +12,7 @@ layout: post
 description: Stormcloud Games brings the past to the present with Brut@l, a modern
   ASCII rogue-like dungeon crawl.
 featured: brut@l.png
-author: Rob Kalajian
+author: robk
 ---
 
 ![Brut@l](/images/featured/brut@l.png){: .float-right}

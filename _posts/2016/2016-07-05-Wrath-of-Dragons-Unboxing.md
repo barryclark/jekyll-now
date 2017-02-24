@@ -12,7 +12,7 @@ layout: post
 description: Wrath of Dragons is an excellent Resource Destruction game from Catalyst
   Game Labs. Let's unbox it and see what's inside.
 featured: wrathofdragons.jpg
-author: Rob Kalajian
+author: robk
 ---
 
 I first played [Wrath of Dragons](http://www.catalystgamelabs.com/casual-games/wrath-of-dragons/) at PAX East this year. The giant fire-breathing dragon kind of caught my eye while at the [Catalyst Game Labs](http://www.catalystgamelabs.com) booth, and I just had to request a demo.

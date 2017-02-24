@@ -10,7 +10,7 @@ tags:
 layout: post
 description: An interesting game gets a sequel, and a new companion
 featured: handfate2.jpg
-author: Rob Kalajian
+author: robk
 ---
 
 I enjoyed the original [Hate of Fate](http://www.purplepawn.com/2014/08/second-lookhand-of-fate/), though I got burnt out on it fairly quickly. It felt like a great start, but it needed a bit more. Hand of Fate 2 looks like it may deliver that, though I'll have to see once it's actually released.

@@ -13,7 +13,7 @@ description: Three Cheers for Master is a twisted game of little monster trying 
   please their master.
 featured: threecheers.jpg
 amazonterm: Three cheers for master
-author: Rob Kalajian
+author: robk
 ---
 
 <img src="/images/threecheers/3cheers.jpg" alt="Three Cheers for Master box" class="float-right" />

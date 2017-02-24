@@ -15,7 +15,7 @@ layout: post
 description: Mattel recently released a new Game Developer Barbie. Marcus Montgomery
   changed it a bit for his wife.
 featured: gamebarbie.jpg
-author: Rob Kalajian
+author: robk
 ---
 
 Mattel recently released a new [Game Developer Barbie](http://shop.mattel.com/product/index.jsp?productId=99225426) after a pretty nasty snafu with a similar theme in a book back in 2014. Thankfully the new Barbie hits the nail on the head, and is a great doll.

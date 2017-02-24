@@ -5,7 +5,7 @@ categories:
 - misc
 layout: post
 description: My new job let me setup an aquarium in my cubicle. Here's the lowdown.
-author: Rob Kalajian
+author: robk
 ---
 
 Recently I started a new job where I'm working in an office again. I've got a great cubicle, and the OK from my boss to put a small aquarium in it.
