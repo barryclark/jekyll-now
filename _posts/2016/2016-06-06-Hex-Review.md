@@ -1,10 +1,18 @@
 ---
-layout: post
 title: Review - Hex Shards of Fate
-description: This review gives Hex Shards of Fate a "pass priority" due to being needlessly complex.
-category: review
+date: 2016-06-06 00:00:00 Z
+categories:
+- review
+tags:
+- video games
+- ccg
+- review
+- hex
+- hex entertainment
+layout: post
+description: This review gives Hex Shards of Fate a "pass priority" due to being needlessly
+  complex.
 featured: hex.png
-tags: [video games, ccg, review, hex, hex entertainment]
 author: Rob Kalajian
 ---
 

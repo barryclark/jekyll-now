@@ -1,11 +1,22 @@
 ---
+title: 'Force Grey: Giant Hunters'
+date: 2016-08-23 00:00:00 Z
+categories:
+- games
+tags:
+- games
+- D&D
+- nerdist
+- rpgs
+- matthew mercer
+- video
+- forgotten realms
+- storm king's thunder
 layout: post
-title: "Force Grey: Giant Hunters"
-description: "A new weekly Dungeon & Dragons series, Force Grey: Giant Hunters, airs on the Nerdist YouTube channel"
-category: games
+description: 'A new weekly Dungeon & Dragons series, Force Grey: Giant Hunters, airs
+  on the Nerdist YouTube channel'
 featured: forcegrey.jpg
-amazonterm: "Storm King's Thunder"
-tags: [games, D&D, nerdist, rpgs, matthew mercer, video, forgotten realms, storm king's thunder]
+amazonterm: Storm King's Thunder
 author: Rob Kalajian
 ---
 

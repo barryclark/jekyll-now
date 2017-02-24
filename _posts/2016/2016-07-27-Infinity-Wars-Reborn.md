@@ -1,10 +1,18 @@
 ---
-layout: post
 title: Infinity Wars Reborn Coming to Steam
-description: Infinity Wars, the digital trading card, is getting a huge update planned for the end of the year.
-category: video games
+date: 2016-07-27 00:00:00 Z
+categories:
+- video games
+tags:
+- video games
+- ccg
+- infinity wars
+- lightmare studios
+- yodo1
+layout: post
+description: Infinity Wars, the digital trading card, is getting a huge update planned
+  for the end of the year.
 featured: infinitywars.jpg
-tags: [video games, ccg, infinity wars, lightmare studios, yodo1]
 author: Rob Kalajian
 ---
 

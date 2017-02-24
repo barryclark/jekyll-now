@@ -1,11 +1,17 @@
 ---
+title: Unboxing Hasbro's Beyblade Burst - Part 2
+date: 2017-01-20 00:00:00 Z
+categories:
+- unboxing
+tags:
+- toys
+- beyblade
+- hasbro
+- beyblade burst
 layout: post
-title: "Unboxing Hasbro's Beyblade Burst - Part 2"
-description: "Hasbro's Beyblade Burst is on the shelves in the US. Let's take a look!"
-category: unboxing
+description: Hasbro's Beyblade Burst is on the shelves in the US. Let's take a look!
 featured: beybladeburst2.jpg
-amazonterm: "Beyblade burst"
-tags: [toys, beyblade, hasbro, beyblade burst]
+amazonterm: Beyblade burst
 author: Rob Kalajian
 ---
 

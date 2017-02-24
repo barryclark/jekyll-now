@@ -1,11 +1,21 @@
 ---
+title: World Beyblade Organization Launches New Site for 8th Anniversary
+date: 2016-12-14 00:00:00 Z
+categories:
+- games
+tags:
+- games
+- toys
+- beyblade
+- world beyblade organization
+- hasbro
+- takara tomy
+- beyblade burst
 layout: post
-title: "World Beyblade Organization Launches New Site for 8th Anniversary"
-description: "The 8th Anniversary celebration is happening at the WBO, and they've got a brand new site at its center."
-category: games
+description: The 8th Anniversary celebration is happening at the WBO, and they've
+  got a brand new site at its center.
 featured: wbo8th.jpg
-amazonterm: "beyblade burst"
-tags: [games, toys, beyblade, world beyblade organization, hasbro, takara tomy, beyblade burst]
+amazonterm: beyblade burst
 author: Rob Kalajian
 ---
 

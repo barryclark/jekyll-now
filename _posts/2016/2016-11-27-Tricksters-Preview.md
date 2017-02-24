@@ -1,10 +1,17 @@
 ---
-layout: post
 title: Tricksters Preview
-description: Tricksters is a fast paced card game for 2-4 players with adorable critters called Annukuh.
-category: preview
+date: 2016-11-27 00:00:00 Z
+categories:
+- preview
+tags:
+- games
+- preview
+- tricksters
+- aether tower
+layout: post
+description: Tricksters is a fast paced card game for 2-4 players with adorable critters
+  called Annukuh.
 featured: tricksters.jpg
-tags: [games, preview, tricksters, aether tower]
 author: Rob Kalajian
 ---
 

@@ -1,11 +1,21 @@
 ---
+title: Jungle Dragon Card for Arena of the Planeswalkers
+date: 2017-01-30 00:00:00 Z
+categories:
+- games
+tags:
+- unboxing
+- games
+- toys
+- safari
+- hasbro
+- magic the gathering
+- arena of the planeswalkers
 layout: post
-title: "Jungle Dragon Card for Arena of the Planeswalkers"
-description: "Safari's toys make excellent pieces of games. Here's my take on their Jungle Dragon in Magic: Arena of the Planeswalkers."
-category: games
+description: 'Safari''s toys make excellent pieces of games. Here''s my take on their
+  Jungle Dragon in Magic: Arena of the Planeswalkers.'
 featured: jungledragonareana.jpg
-amazonterm: "arena of the planeswalkers"
-tags: [unboxing, games, toys, safari, hasbro, magic the gathering, arena of the planeswalkers]
+amazonterm: arena of the planeswalkers
 author: Rob Kalajian
 ---
 

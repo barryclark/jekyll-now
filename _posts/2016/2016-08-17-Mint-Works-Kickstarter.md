@@ -1,12 +1,20 @@
 ---
-layout: post
 title: Kickstarter - Mint Works
-description: A pocket-sided worker placement game, Mint Works promises to be a refreshing take on the genre.
-category: kickstarter
+date: 2016-08-17 00:00:00 Z
+categories:
+- kickstarter
+tags:
+- games
+- kickstarter
+- mint works
+- five24 labs
+layout: post
+description: A pocket-sided worker placement game, Mint Works promises to be a refreshing
+  take on the genre.
 featured: mintworks.jpg
-tags: [games, kickstarter, mint works, five24 labs]
 author: Rob Kalajian
 ---
+
 <iframe style="float:left;margin-right:10px;margin-bottom:10px;" frameborder="0" height="420" scrolling="no" src="https://www.kickstarter.com/projects/five24labs/mint-works-the-pocket-sized-worker-placement-game/widget/card.html?v=2" width="220"></iframe>
 
 My next pick for the month of August is Mint Works, by Five24 Labs. It's a pocket-sized, light worker placement game for 2-4 players, and fits in a mint tin. Mint Works supposedly plays in 20 minutes, yet provides a level of depth beyond it's size and easy of play.

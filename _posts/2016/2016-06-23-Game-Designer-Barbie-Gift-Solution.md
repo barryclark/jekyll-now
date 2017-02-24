@@ -1,10 +1,20 @@
 ---
-layout: post
 title: Game Designer Modifies Game Developer Barbie for His Wife
-description: Mattel recently released a new Game Developer Barbie. Marcus Montgomery changed it a bit for his wife.
-category: toys
+date: 2016-06-23 00:00:00 Z
+categories:
+- toys
+tags:
+- toys
+- barbie
+- mattel
+- game developer barbie
+- marcus montgomery
+- we are game devs
+- barbie careers
+layout: post
+description: Mattel recently released a new Game Developer Barbie. Marcus Montgomery
+  changed it a bit for his wife.
 featured: gamebarbie.jpg
-tags: [toys, barbie, mattel, game developer barbie, marcus montgomery, we are game devs, barbie careers]
 author: Rob Kalajian
 ---
 

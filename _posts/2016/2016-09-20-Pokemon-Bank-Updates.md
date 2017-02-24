@@ -1,11 +1,22 @@
 ---
+title: Pokémon Bank Updates and new Sun and Moon Pokémon.
+date: 2016-09-20 00:00:00 Z
+categories:
+- video games
+tags:
+- video games
+- pokemon
+- pokemon sun
+- pokemon moon
+- the pokemon company
+- gamefreak
+- nintendo
+- pokemon bank
 layout: post
-title: "Pokémon Bank Updates and new Sun and Moon Pokémon."
-description: "The Pokémon bank is getting some updates to support Sun and Moon, but also to transfer from Red, Blue and Yellow."
-category: video games
+description: The Pokémon bank is getting some updates to support Sun and Moon, but
+  also to transfer from Red, Blue and Yellow.
 featured: pokebank.png
-amazonterm: "pokemon sun and moon"
-tags: [video games, pokemon, pokemon sun, pokemon moon, the pokemon company, gamefreak, nintendo, pokemon bank]
+amazonterm: pokemon sun and moon
 author: Rob Kalajian
 ---
 

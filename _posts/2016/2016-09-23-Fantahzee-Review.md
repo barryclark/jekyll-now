@@ -1,11 +1,18 @@
 ---
+title: 'Review - Fantahzee: Hordes and Heroes'
+date: 2016-09-23 00:00:00 Z
+categories:
+- review
+tags:
+- games
+- review
+- fantahzee
+- aeg
 layout: post
-title: "Review - Fantahzee: Hordes and Heroes"
-description: "Ever want to kill stuff with Yahtzee rolls? Fantahzee lets you do just that."
-category: review
+description: Ever want to kill stuff with Yahtzee rolls? Fantahzee lets you do just
+  that.
 featured: fantahzee.png
-amazonterm: "AEG games"
-tags: [games, review, fantahzee, aeg]
+amazonterm: AEG games
 author: Rob Kalajian
 ---
 

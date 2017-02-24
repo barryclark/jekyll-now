@@ -1,10 +1,17 @@
 ---
+title: Micro Unboxing Sandships
+date: 2016-12-21 00:00:00 Z
+categories:
+- unboxing
+tags:
+- unboxing
+- sandships
+- looney labs
+- pyramid arcade
 layout: post
-title: "Micro Unboxing Sandships"
-description: "A Looney Labs pyramid game, Sandships, just arrived. Let's see what's inside!"
-category: unboxing
+description: A Looney Labs pyramid game, Sandships, just arrived. Let's see what's
+  inside!
 featured: sandships2.jpg
-tags: [unboxing, sandships, looney labs, pyramid arcade]
 author: Rob Kalajian
 ---
 

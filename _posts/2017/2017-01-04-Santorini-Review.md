@@ -1,11 +1,18 @@
 ---
+title: Review - Santorini
+date: 2017-01-04 00:00:00 Z
+categories:
+- review
+tags:
+- games
+- review
+- Santorini
+- roxley
 layout: post
-title: "Review - Santorini"
-description: "An amazing Kickstarter run. Simple to learn rules. Wonderful components. Santorini is a huge win."
-category: review
+description: An amazing Kickstarter run. Simple to learn rules. Wonderful components.
+  Santorini is a huge win.
 featured: santorini2.png
-amazonterm: "Santorini"
-tags: [games, review, Santorini, roxley]
+amazonterm: Santorini
 author: Rob Kalajian
 ---
 

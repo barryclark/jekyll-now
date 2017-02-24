@@ -1,9 +1,13 @@
 ---
-layout: post
 title: Dragon Dice
+date: 2015-09-10 00:00:00 Z
+categories:
+- games
+tags:
+- games
+- dragon dice
+layout: post
 description: A great game, Dragon Dice becomes a new obsession.
-category: games
-tags: [games, dragon dice]
 author: Rob Kalajian
 ---
 

@@ -1,11 +1,18 @@
 ---
+title: Children Can Design Their Own Clothes With Picture This
+date: 2016-09-08 00:00:00 Z
+categories:
+- other
+tags:
+- other
+- clothing
+- design
+- creativity
+- picture this
 layout: post
-title: "Children Can Design Their Own Clothes With Picture This"
-description: "Picture This puts clothing design into your children's hands."
-category: other
+description: Picture This puts clothing design into your children's hands.
 featured: picture-this-dress.jpg
 amazonterm: clothes
-tags: [other, clothing, design, creativity, picture this]
 author: Rob Kalajian
 ---
 

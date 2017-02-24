@@ -1,10 +1,16 @@
 ---
+title: Dragoon's Upcoming Expansion has a Print-and-Play Beta
+date: 2017-01-01 00:00:00 Z
+categories:
+- games
+tags:
+- games
+- dragoon
+- lay waste games
 layout: post
-title: "Dragoon's Upcoming Expansion has a Print-and-Play Beta"
-description: "Dragoon is a great game. The new expansion adds humans to the mix, and you can download it now."
-category: games
+description: Dragoon is a great game. The new expansion adds humans to the mix, and
+  you can download it now.
 featured: dragoonbarb.png
-tags: [games, dragoon, lay waste games]
 author: Rob Kalajian
 ---
 

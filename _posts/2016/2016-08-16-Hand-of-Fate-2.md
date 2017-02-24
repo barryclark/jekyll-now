@@ -1,10 +1,15 @@
 ---
+title: Hand of Fate 2 - New Companion
+date: 2016-08-16 00:00:00 Z
+categories:
+- video games
+tags:
+- video games
+- hand of fate 2
+- defiant development
 layout: post
-title: "Hand of Fate 2 - New Companion"
-description: "An interesting game gets a sequel, and a new companion"
-category: video games
+description: An interesting game gets a sequel, and a new companion
 featured: handfate2.jpg
-tags: [video games, hand of fate 2, defiant development]
 author: Rob Kalajian
 ---
 

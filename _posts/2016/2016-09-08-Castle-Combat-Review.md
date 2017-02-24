@@ -1,10 +1,17 @@
 ---
+title: Review - Castle Combat
+date: 2016-09-08 00:00:00 Z
+categories:
+- review
+tags:
+- games
+- review
+- castle combat
+- kid realms
 layout: post
-title: "Review - Castle Combat"
-description: "Castle Combat is a great CCG for younger kids that's self published, and not widely known."
-category: review
+description: Castle Combat is a great CCG for younger kids that's self published,
+  and not widely known.
 featured: castlecombat.jpg
-tags: [games, review, castle combat, kid realms]
 author: Rob Kalajian
 ---
 

@@ -1,11 +1,20 @@
 ---
+title: New Pokémon and Characters revealed for Pokémon Sun and Pokémon Moon
+date: 2016-10-14 00:00:00 Z
+categories:
+- video games
+tags:
+- video games
+- pokemon
+- pokemon sun
+- pokemon moon
+- the pokemon company
+- gamefreak
+- nintendo
 layout: post
-title: "New Pokémon and Characters revealed for Pokémon Sun and Pokémon Moon"
-description: "More Alolan variations, Type:Null's evolution, and more!"
-category: video games
+description: More Alolan variations, Type:Null's evolution, and more!
 featured: silvally.png
-amazonterm: "pokemon sun and moon"
-tags: [video games, pokemon, pokemon sun, pokemon moon, the pokemon company, gamefreak, nintendo]
+amazonterm: pokemon sun and moon
 author: Rob Kalajian
 ---
 

@@ -1,10 +1,17 @@
 ---
-layout: post
 title: Unboxing Monarch
-description: Monarch gameplay is simple, fast, and tight. Let's unbox it and see what's inside.
-category: unboxing
+date: 2016-05-12 00:00:00 Z
+categories:
+- unboxing
+tags:
+- games
+- unboxing
+- monarch
+- Mary Flanagan
+layout: post
+description: Monarch gameplay is simple, fast, and tight. Let's unbox it and see what's
+  inside.
 featured: monarch.png
-tags: [games, unboxing, monarch, Mary Flanagan]
 author: Rob Kalajian
 ---
 

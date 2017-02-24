@@ -1,10 +1,17 @@
 ---
-layout: post
 title: Originz on Tabletop Simulator
-description: Flavor Faction will be kickstarting Originz soon, but you can currently play on Tabletop Simulator.
-category: games
+date: 2016-07-14 00:00:00 Z
+categories:
+- games
+tags:
+- games
+- originz
+- flavor faction
+- tabletop simulator
+layout: post
+description: Flavor Faction will be kickstarting Originz soon, but you can currently
+  play on Tabletop Simulator.
 featured: ttsoriginz.jpg
-tags: [games, originz, flavor faction, tabletop simulator]
 author: Rob Kalajian
 ---
 

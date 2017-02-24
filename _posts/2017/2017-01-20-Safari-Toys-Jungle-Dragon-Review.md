@@ -1,11 +1,18 @@
 ---
+title: Review - Safari Ltd Jungle Dragon Dragon
+date: 2017-01-20 00:00:00 Z
+categories:
+- review
+tags:
+- toys
+- safari ltd
+- jungle dragon
+- mythical realms
+- review
 layout: post
-title: "Review - Safari Ltd Jungle Dragon Dragon"
-description: "Safari's Jungle Dragon is an earthy delight."
-category: review
+description: Safari's Jungle Dragon is an earthy delight.
 featured: jungledragon.jpg
-amazonterm: "Safari Toys ltd"
-tags: [toys, safari ltd, jungle dragon, mythical realms, review]
+amazonterm: Safari Toys ltd
 author: Rob Kalajian
 ---
 

@@ -1,10 +1,17 @@
 ---
+title: 'Party Hard: High Crimes, New Twitch Integration'
+date: 2016-11-09 00:00:00 Z
+categories:
+- video games
+tags:
+- video games
+- party hard
+- high crimes
+- tinybuild
 layout: post
-title: "Party Hard: High Crimes, New Twitch Integration"
-description: "Party Hard has a new story DLC coming out. It also has some interactive Twitch functions included."
-category: video games
+description: Party Hard has a new story DLC coming out. It also has some interactive
+  Twitch functions included.
 featured: partyhard.jpg
-tags: [video games, party hard, high crimes, tinybuild]
 author: Rob Kalajian
 ---
 

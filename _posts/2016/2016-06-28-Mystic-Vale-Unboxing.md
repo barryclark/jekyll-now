@@ -1,10 +1,17 @@
 ---
-layout: post
 title: Unboxing Mystic Vale
-description: I've been eagerly awaiting Mystic Vale since I saw a prototype at Toy Fair 2015. Let's unbox it and see what's inside.
-category: unboxing
+date: 2016-06-28 00:00:00 Z
+categories:
+- unboxing
+tags:
+- games
+- unboxing
+- mystic vale
+- aeg
+layout: post
+description: I've been eagerly awaiting Mystic Vale since I saw a prototype at Toy
+  Fair 2015. Let's unbox it and see what's inside.
 featured: mysticvale.jpg
-tags: [games, unboxing, mystic vale, aeg]
 author: Rob Kalajian
 ---
 

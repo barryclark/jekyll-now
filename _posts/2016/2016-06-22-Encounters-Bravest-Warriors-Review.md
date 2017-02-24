@@ -1,10 +1,18 @@
 ---
-layout: post
 title: Review - Encounters! Bravest Warriors
-description: Encounters! Bravest Warriors is a really easy game to pick up and play, and it's really enjoyable.
-category: review
+date: 2016-06-22 00:00:00 Z
+categories:
+- review
+tags:
+- games
+- review
+- bravest warriors
+- encounters
+- catalyst game labs
+layout: post
+description: Encounters! Bravest Warriors is a really easy game to pick up and play,
+  and it's really enjoyable.
 featured: bravestwarriors.png
-tags: [games, review, bravest warriors, encounters, catalyst game labs]
 author: Rob Kalajian
 ---
 

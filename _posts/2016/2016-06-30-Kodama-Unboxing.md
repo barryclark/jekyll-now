@@ -1,10 +1,18 @@
 ---
-layout: post
 title: Unboxing Kodama
-description: Kodama is a beautiful and wonderful evolution of Kigi, by Daniel Solis. Let's unbox it and see what's inside.
-category: unboxing
+date: 2016-06-30 00:00:00 Z
+categories:
+- unboxing
+tags:
+- games
+- unboxing
+- kodama
+- daniel solis
+- action phase games
+layout: post
+description: Kodama is a beautiful and wonderful evolution of Kigi, by Daniel Solis.
+  Let's unbox it and see what's inside.
 featured: kodama.jpg
-tags: [games, unboxing, kodama, daniel solis, action phase games]
 author: Rob Kalajian
 ---
 

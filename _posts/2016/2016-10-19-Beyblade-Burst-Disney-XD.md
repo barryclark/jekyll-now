@@ -1,11 +1,19 @@
 ---
+title: SUNRIGHTS INC. Brings Beyblade Burst Animated Series to Disney XD
+date: 2016-10-19 00:00:00 Z
+categories:
+- toys
+tags:
+- toys
+- beyblade
+- hasbro
+- beyblade burst
+- disney xd
+- sunrights inc
 layout: post
-title: "SUNRIGHTS INC. Brings Beyblade Burst Animated Series to Disney XD"
-description: "Beyblade Burst will air on Disney XD, premiering in December 2016."
-category: toys
+description: Beyblade Burst will air on Disney XD, premiering in December 2016.
 featured: burstxd.jpg
-amazonterm: "Beyblade burst"
-tags: [toys, beyblade, hasbro, beyblade burst, disney xd, sunrights inc]
+amazonterm: Beyblade burst
 author: Rob Kalajian
 ---
 

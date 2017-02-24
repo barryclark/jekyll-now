@@ -1,12 +1,18 @@
 ---
+title: Review - Fone Bone 4-Inch Vinyl Figure
+date: 2016-10-15 00:00:00 Z
+categories:
+- review
+tags:
+- toys
+- bone
+- jeff smith
+- cryptozoic
 layout: post
-title: "Review - Fone Bone 4-Inch Vinyl Figure"
-description: "Cryptozoic's Fone Bone in 4-inch Vinyl makes my shelf happy."
-category: review
+description: Cryptozoic's Fone Bone in 4-inch Vinyl makes my shelf happy.
 featured: fonebone.jpg
-amazonterm: "Bone"
+amazonterm: Bone
 amazoncat: Books
-tags: [toys, bone, jeff smith, cryptozoic]
 author: Rob Kalajian
 ---
 

@@ -1,10 +1,16 @@
 ---
-layout: post
 title: "#RPGaDay 2016 - Day 8"
-description: "Do you prefer hardcover, softcover, or electronic books? What are the benefits of your preference? Day 8 of #RPGaDay."
-category: games
+date: 2016-08-08 00:00:00 Z
+categories:
+- games
+tags:
+- games
+- rpgs
+- rpgaday
+layout: post
+description: 'Do you prefer hardcover, softcover, or electronic books? What are the
+  benefits of your preference? Day 8 of #RPGaDay.'
 featured: rpgaday.png
-tags: [games, rpgs, rpgaday]
 author: Rob Kalajian
 ---
 

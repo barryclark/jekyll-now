@@ -1,11 +1,19 @@
 ---
+title: Hasbro Unveiling Transformers Trypticon at New York Toy Fair 2017
+date: 2017-02-17 00:00:00 Z
+categories:
+- toys
+tags:
+- toys
+- hasbro
+- transformers
+- titans return
+- trypticon
 layout: post
-title: "Hasbro Unveiling Transformers Trypticon at New York Toy Fair 2017"
-description: "The fans voted and Trypticon is now being added to the Transformers Titans Return line!"
-category: toys
+description: The fans voted and Trypticon is now being added to the Transformers Titans
+  Return line!
 featured: TRYPTICON.jpg
-amazonterm: "Transformers Titans Return"
-tags: [toys, hasbro, transformers, titans return, trypticon]
+amazonterm: Transformers Titans Return
 author: Rob Kalajian
 ---
 

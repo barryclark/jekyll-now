@@ -1,11 +1,17 @@
 ---
+title: Review - Siege
+date: 2017-02-03 00:00:00 Z
+categories:
+- review
+tags:
+- review
+- games
+- siege
+- aeg
 layout: post
-title: "Review - Siege"
-description: "Defeat the other players' kings in AEG's game of deceit and deduction."
-category: review
+description: Defeat the other players' kings in AEG's game of deceit and deduction.
 featured: siege.jpg
-amazonterm: "aeg siege"
-tags: [review, games, siege, aeg]
+amazonterm: aeg siege
 author: Rob Kalajian
 ---
 

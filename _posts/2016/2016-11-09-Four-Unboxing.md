@@ -1,12 +1,21 @@
 ---
+title: Unboxing Four ($)
+date: 2016-11-09 00:00:00 Z
+categories:
+- unboxing
+tags:
+- games
+- unboxing
+- four
+- march forth games
+- paid
 layout: post
-title: "Unboxing Four ($)"
-description: "Four is a new, team based card game from March Forth Games. Let's see what's inside."
-category: unboxing
+description: Four is a new, team based card game from March Forth Games. Let's see
+  what's inside.
 featured: four.jpg
-tags: [games, unboxing, four, march forth games, paid]
 author: Rob Kalajian
 ---
+
 <a class="center" href="http://www.marchforthgames.com/idevaffiliate/idevaffiliate.php?id=1_2_1_3" target="_blank"><img style="border:0px" src="http://www.marchforthgames.com/idevaffiliate/media/banners/FOUR-Banner-2.jpg" width="728" height="90" alt=""></a>
 
 [Four](http://www.marchforthgames.com/idevaffiliate/idevaffiliate.php?id=1) is a new, team-based card game by March Forth Games. It's a chaotic game where teams of players ages 8+ can enjoy an easy-to-learn rule set and a quick 20 minute play time.

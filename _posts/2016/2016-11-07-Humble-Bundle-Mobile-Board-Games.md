@@ -1,10 +1,24 @@
 ---
+title: New Humble Mobile Bundle is Full of Board Games
+date: 2016-11-07 00:00:00 Z
+categories:
+- games
+tags:
+- video games
+- games
+- ticket to ride
+- scotland yard
+- carcassonne
+- san juan
+- galaxy trucker
+- splendor
+- catan
+- the amazing labyrinth
+- humble bundle
 layout: post
-title: "New Humble Mobile Bundle is Full of Board Games"
-description: "I love Humble Bundle. Their new Mobile Bundle may be the best yet, with lots of great board games"
-category: games
+description: I love Humble Bundle. Their new Mobile Bundle may be the best yet, with
+  lots of great board games
 featured: humbleboard.png
-tags: [video games, games, ticket to ride, scotland yard, carcassonne, san juan, galaxy trucker, splendor, catan, the amazing labyrinth, humble bundle]
 author: Rob Kalajian
 ---
 

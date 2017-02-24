@@ -1,10 +1,17 @@
 ---
-layout: post
 title: The Silver Case HD Remaster
-description: SUDA51's debut game, The Silver Case, is being remastered in HD. It's also being localized in English for the first time.
-category: video games
+date: 2016-07-20 00:00:00 Z
+categories:
+- video games
+tags:
+- video games
+- suda51
+- the silver case
+- grasshopper manufacture
+layout: post
+description: SUDA51's debut game, The Silver Case, is being remastered in HD. It's
+  also being localized in English for the first time.
 featured: silvercase.png
-tags: [video games, suda51, the silver case, grasshopper manufacture]
 author: Rob Kalajian
 ---
 

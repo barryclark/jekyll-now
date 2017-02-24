@@ -1,11 +1,18 @@
 ---
+title: Unboxing OGRE 6th Edition
+date: 2017-02-21 00:00:00 Z
+categories:
+- unboxing
+tags:
+- unboxing
+- games
+- ogre
+- steve jackson games
 layout: post
-title: "Unboxing OGRE 6th Edition"
-description: "The mighty Deluxe version of OGRE made a bit smaller for the average consumer."
-category: unboxing
+description: The mighty Deluxe version of OGRE made a bit smaller for the average
+  consumer.
 featured: ogre6th.jpg
-amazonterm: "Steve Jackson OGRE"
-tags: [unboxing, games, ogre, steve jackson games]
+amazonterm: Steve Jackson OGRE
 author: Rob Kalajian
 ---
 

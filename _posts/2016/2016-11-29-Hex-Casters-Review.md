@@ -1,11 +1,18 @@
 ---
+title: Review - Hex Casters
+date: 2016-11-29 00:00:00 Z
+categories:
+- review
+tags:
+- games
+- review
+- hex casters
+- hasbro
 layout: post
-title: "Review - Hex Casters"
-description: "Created by RIT students and now licensed by Hasbro, Hex Casters is an OK time."
-category: review
+description: Created by RIT students and now licensed by Hasbro, Hex Casters is an
+  OK time.
 featured: hexcasters2.jpg
-amazonterm: "Hex Casters"
-tags: [games, review, hex casters, hasbro]
+amazonterm: Hex Casters
 author: Rob Kalajian
 ---
 

@@ -1,11 +1,18 @@
 ---
-layout: post
 title: Unboxing Attack on Titan Deckbuilding Game
-description: "Cryptozoic follows up the amazing popular Attack on Titan anime with a deckbuilding game. Let's see what's inside."
-category: unboxing
+date: 2016-11-03 00:00:00 Z
+categories:
+- unboxing
+tags:
+- games
+- unboxing
+- attack on titan
+- cryptozoic
+layout: post
+description: Cryptozoic follows up the amazing popular Attack on Titan anime with
+  a deckbuilding game. Let's see what's inside.
 featured: attackontitan.jpg
-amazonterm: "cryptozoic"
-tags: [games, unboxing, attack on titan, cryptozoic]
+amazonterm: cryptozoic
 author: Rob Kalajian
 ---
 

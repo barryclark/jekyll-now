@@ -1,10 +1,17 @@
 ---
+title: Slime-san Announced from Fabraz and Headup Games
+date: 2017-02-22 00:00:00 Z
+categories:
+- video games
+tags:
+- video games
+- slime-san
+- headup games
+- fabraz
 layout: post
-title: "Slime-san Announced from Fabraz and Headup Games"
-description: "Headup and Fabraz have announced the upcoming release of Slime-san, a twitch-timing platformer."
-category: video games
+description: Headup and Fabraz have announced the upcoming release of Slime-san, a
+  twitch-timing platformer.
 featured: slime-san.png
-tags: [video games, slime-san, headup games, fabraz]
 author: Rob Kalajian
 ---
 

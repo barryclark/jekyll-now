@@ -1,11 +1,21 @@
 ---
-layout: post
 title: Pokemon Sun and Moon Team Skull and More
-description: The Pokémon Company has released more Pokémon Sun and Moon information, including information on the Team Skull and Pokémon.
-category: video games
+date: 2016-08-11 00:00:00 Z
+categories:
+- video games
+tags:
+- video games
+- pokemon
+- pokemon sun
+- pokemon moon
+- the pokemon company
+- gamefreak
+- nintendo
+layout: post
+description: The Pokémon Company has released more Pokémon Sun and Moon information,
+  including information on the Team Skull and Pokémon.
 featured: alola.png
-amazonterm: "pokemon sun and moon"
-tags: [video games, pokemon, pokemon sun, pokemon moon, the pokemon company, gamefreak, nintendo]
+amazonterm: pokemon sun and moon
 author: Rob Kalajian
 ---
 

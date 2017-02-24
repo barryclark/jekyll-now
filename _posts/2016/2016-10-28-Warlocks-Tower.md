@@ -1,10 +1,16 @@
 ---
-layout: post
 title: Warlock's Tower is a Gameboy Throwback
-description: "Warlock's Tower is a puzzle game arriving in 2017 with an old Gameboy feel."
-category: video games
+date: 2016-10-28 00:00:00 Z
+categories:
+- video games
+tags:
+- video games
+- warlock's tower
+- midipixel studio
+layout: post
+description: Warlock's Tower is a puzzle game arriving in 2017 with an old Gameboy
+  feel.
 featured: wizardstower.png
-tags: [video games, warlock's tower, midipixel studio]
 author: Rob Kalajian
 ---
 

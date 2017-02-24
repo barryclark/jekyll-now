@@ -1,11 +1,18 @@
 ---
+title: Unboxing Villages of Valeria
+date: 2017-02-03 00:00:00 Z
+categories:
+- unboxing
+tags:
+- unboxing
+- games
+- villages of valeria
+- daily magic games
 layout: post
-title: "Unboxing Villages of Valeria"
-description: "Daily Magic's game, Villages of Valeria, players competing to build successful villages. Let's see what's inside!"
-category: unboxing
+description: Daily Magic's game, Villages of Valeria, players competing to build successful
+  villages. Let's see what's inside!
 featured: villagesofvaleria.jpg
-amazonterm: "villages of valeria"
-tags: [unboxing, games, villages of valeria, daily magic games]
+amazonterm: villages of valeria
 author: Rob Kalajian
 ---
 

@@ -1,10 +1,19 @@
 ---
+title: 'Review - Ophidian 2360: Survival of the Fittest'
+date: 2017-02-09 00:00:00 Z
+categories:
+- review
+tags:
+- review
+- games
+- ophidian 2360
+- ophidian wars
+- small cave games
+- hack & slash games
 layout: post
-title: "Review - Ophidian 2360: Survival of the Fittest"
-description: "Futuristic Gladiators battle it out in this updated CGG from Hack & Slash Games."
-category: review
+description: Futuristic Gladiators battle it out in this updated CGG from Hack & Slash
+  Games.
 featured: ophidian2360.jpg
-tags: [review, games, ophidian 2360, ophidian wars, small cave games, hack & slash games]
 author: Rob Kalajian
 ---
 

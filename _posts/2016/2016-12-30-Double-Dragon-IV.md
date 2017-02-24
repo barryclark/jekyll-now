@@ -1,11 +1,17 @@
 ---
+title: Double Dragon IV Coming to PS4 and Steam
+date: 2016-12-30 00:00:00 Z
+categories:
+- video games
+tags:
+- video games
+- double dragon
+- arc system works
 layout: post
-title: "Double Dragon IV Coming to PS4 and Steam"
-description: "The next game in the Double Dragon series is coming out at the end of January 2017!"
-category: video games
+description: The next game in the Double Dragon series is coming out at the end of
+  January 2017!
 featured: doubledragoniv.png
-amazonterm: "double dragon"
-tags: [video games, double dragon, arc system works]
+amazonterm: double dragon
 author: Rob Kalajian
 ---
 

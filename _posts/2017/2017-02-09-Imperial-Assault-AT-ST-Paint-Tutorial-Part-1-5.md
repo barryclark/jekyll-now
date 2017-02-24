@@ -1,11 +1,19 @@
 ---
+title: Paint Tutorial - Imperial Assault AT-ST - Part 1.5
+date: 2017-02-09 00:00:00 Z
+categories:
+- tutorials
+tags:
+- games
+- miniatures
+- tutorial
+- imperial assault
+- fantasy flight games
+- oldenhammer
 layout: post
-title: "Paint Tutorial - Imperial Assault AT-ST - Part 1.5"
-description: "Part 1.5 of Frank Grip's tutorial on painting an Imperial Assault AT-ST."
-category: tutorials
+description: Part 1.5 of Frank Grip's tutorial on painting an Imperial Assault AT-ST.
 featured: atstpart1-5.png
-amazonterm: "imperial assault"
-tags: [games, miniatures, tutorial, imperial assault, fantasy flight games, oldenhammer]
+amazonterm: imperial assault
 author: Frank Grip
 ---
 

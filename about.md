@@ -1,7 +1,7 @@
 ---
-layout: page
 title: About
-permalink: /about/
+permalink: "/about/"
+layout: page
 ---
 
 <img src="/images/me.jpg" alt="Me" width="300" style="border: 1px solid #4682b4;float: right;margin-bottom: 10px;margin-left: 10px;padding: 5px;"/>

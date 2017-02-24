@@ -1,10 +1,17 @@
 ---
-layout: post
 title: Spellweaver - Valiant Dawn
+date: 2016-07-29 00:00:00 Z
+categories:
+- video games
+tags:
+- video games
+- spellweaver
+- ccg
+- valiant dawn
+- dream reactor
+layout: post
 description: The first new set for Spellweaver, Valiant Dawn, has been released.
-category: video games
 featured: vdawn.png
-tags: [video games, spellweaver, ccg, valiant dawn, dream reactor]
 author: Rob Kalajian
 ---
 

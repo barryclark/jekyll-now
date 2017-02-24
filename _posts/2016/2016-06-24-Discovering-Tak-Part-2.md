@@ -1,10 +1,18 @@
 ---
-layout: post
 title: Discovering Tak - Part 2
-description: Continuing my Tak post, I figured I'd give my initial thoughts on the game.
-category: games
+date: 2016-06-24 00:00:00 Z
+categories:
+- games
+tags:
+- games
+- tak
+- cheapass games
+- a wise man's fear
+- patrick rothfuss
+layout: post
+description: Continuing my Tak post, I figured I'd give my initial thoughts on the
+  game.
 featured: tak2.jpg
-tags: [games, tak, cheapass games, a wise man's fear, patrick rothfuss]
 author: Rob Kalajian
 ---
 

@@ -1,11 +1,19 @@
 ---
-layout: post
 title: Unboxing Acquire
-description: "Hasbro and Avalon Hill put out a new version of the classic Acquire. Let's look inside."
-category: unboxing
+date: 2016-10-26 00:00:00 Z
+categories:
+- unboxing
+tags:
+- games
+- unboxing
+- acquire
+- hasbro
+- avalon hill
+layout: post
+description: Hasbro and Avalon Hill put out a new version of the classic Acquire.
+  Let's look inside.
 featured: acquire.jpg
-amazonterm: "avalon hill"
-tags: [games, unboxing, acquire, hasbro, avalon hill]
+amazonterm: avalon hill
 author: Rob Kalajian
 ---
 

@@ -1,12 +1,20 @@
 ---
-layout: post
 title: Kickstarter - Fallen Angel
-description: My June Kickstarter pick is Fallen Angel, a sci-fi / fantasy game revolving around rolling and placing dice.
+date: 2016-06-11 00:00:00 Z
+categories:
+- kickstarter
+tags:
+- games
+- kickstarter
+- fallen angel
+- asteria board game creation
+layout: post
+description: My June Kickstarter pick is Fallen Angel, a sci-fi / fantasy game revolving
+  around rolling and placing dice.
 featured: fallenangel.png
-category: kickstarter
-tags: [games, kickstarter, fallen angel, asteria board game creation]
 author: Rob Kalajian
 ---
+
 <iframe width="1000" height="563" src="https://www.kickstarter.com/projects/1928897770/fallen-angel-0/widget/video.html" frameborder="0" scrolling="no"> </iframe>
 
 This month I decided to back [Fallen Angel](https://www.kickstarter.com/projects/1928897770/fallen-angel-0?ref=hero_thanks) by Asteria Board Game Creation. It was a tough call, as there's some really great projects out there right now. Fallen Angel has a few things going for it. The game itself sounds really interesting, has great looking components, is affordable, and comes with a dice tower!

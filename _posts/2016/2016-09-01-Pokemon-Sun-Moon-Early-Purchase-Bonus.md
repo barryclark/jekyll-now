@@ -1,11 +1,21 @@
 ---
+title: Pokémon Sun and Moon Early Purchase Bonus
+date: 2016-09-01 00:00:00 Z
+categories:
+- video games
+tags:
+- video games
+- pokemon
+- pokemon sun
+- pokemon moon
+- the pokemon company
+- gamefreak
+- nintendo
 layout: post
-title: "Pokémon Sun and Moon Early Purchase Bonus"
-description: "Purchase Pokémon Sun or Moon before January 11th, 2017 for a special Munchlax."
-category: video games
+description: Purchase Pokémon Sun or Moon before January 11th, 2017 for a special
+  Munchlax.
 featured: pulsnor.png
-amazonterm: "pokemon sun and moon"
-tags: [video games, pokemon, pokemon sun, pokemon moon, the pokemon company, gamefreak, nintendo]
+amazonterm: pokemon sun and moon
 author: Rob Kalajian
 ---
 

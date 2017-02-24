@@ -1,11 +1,19 @@
 ---
+title: Review - Tally Ho!
+date: 2016-08-16 00:00:00 Z
+categories:
+- review
+tags:
+- games
+- review
+- tally ho
+- thames
+- kosmos
 layout: post
-title: "Review - Tally Ho!"
-description: "A new edition of Tally Ho! has been released in Kosmos' 2-player line. How does it hold up?"
-category: review
+description: A new edition of Tally Ho! has been released in Kosmos' 2-player line.
+  How does it hold up?
 featured: tallyho.jpg
-amazonterm: "tally ho"
-tags: [games, review, tally ho, thames, kosmos]
+amazonterm: tally ho
 author: Rob Kalajian
 ---
 

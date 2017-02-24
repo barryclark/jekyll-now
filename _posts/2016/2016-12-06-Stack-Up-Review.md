@@ -1,11 +1,18 @@
 ---
+title: Review - Stack Up!
+date: 2016-12-06 00:00:00 Z
+categories:
+- review
+tags:
+- games
+- review
+- stack up!
+- peaceable kingdom
 layout: post
-title: "Review - Stack Up!"
-description: "Stack 12 blocks before the Stack Smasher knocks them over in this cooperative kids' game."
-category: review
+description: Stack 12 blocks before the Stack Smasher knocks them over in this cooperative
+  kids' game.
 featured: stackup.jpg
-amazonterm: "Stack Up"
-tags: [games, review, stack up!, peaceable kingdom]
+amazonterm: Stack Up
 author: Rob Kalajian
 ---
 

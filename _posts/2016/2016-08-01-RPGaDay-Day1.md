@@ -1,10 +1,16 @@
 ---
-layout: post
 title: "#RPGaDay 2016 - Day 1"
-description: "#RPGaDay asks people to answer write about a specific RPG-related topic for every day in August. Here's my Day 1."
-category: games
+date: 2016-08-01 00:00:00 Z
+categories:
+- games
+tags:
+- games
+- rpgs
+- rpgaday
+layout: post
+description: "#RPGaDay asks people to answer write about a specific RPG-related topic
+  for every day in August. Here's my Day 1."
 featured: rpgaday.png
-tags: [games, rpgs, rpgaday]
 author: Rob Kalajian
 ---
 

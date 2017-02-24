@@ -1,10 +1,17 @@
 ---
-layout: post
 title: Unboxing Aurora
-description: Aurora was an entry into The Game Crafters's Learning Game contest. Let's see what's inside.
-category: unboxing
+date: 2016-07-25 00:00:00 Z
+categories:
+- unboxing
+tags:
+- games
+- unboxing
+- aurora
+- rampage games
+layout: post
+description: Aurora was an entry into The Game Crafters's Learning Game contest. Let's
+  see what's inside.
 featured: aurora.jpg
-tags: [games, unboxing, aurora, rampage games]
 author: Rob Kalajian
 ---
 

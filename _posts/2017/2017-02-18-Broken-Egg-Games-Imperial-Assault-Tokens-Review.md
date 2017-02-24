@@ -1,11 +1,18 @@
 ---
+title: Review - Broken Egg Games' Imperial Assault Tokens
+date: 2017-02-18 00:00:00 Z
+categories:
+- review
+tags:
+- review
+- games
+- accessories
+- broken egg games
+- imperial assault
 layout: post
-title: "Review - Broken Egg Games' Imperial Assault Tokens"
-description: "A look at Broken Egg Games' custom tokens for Imperial Assault."
-category: review
+description: A look at Broken Egg Games' custom tokens for Imperial Assault.
 featured: brokeneggtokens.jpg
-amazonterm: "imperial assault"
-tags: [review, games, accessories, broken egg games, imperial assault]
+amazonterm: imperial assault
 author: Frank Grip
 ---
 

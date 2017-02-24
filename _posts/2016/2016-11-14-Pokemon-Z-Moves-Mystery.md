@@ -1,11 +1,22 @@
 ---
+title: Pokémon Sun and Moon Alolan Diglett/Dugtrio, New Z-Moves and Ultra Beasts,
+  Mystery Pokémon Revealed
+date: 2016-11-14 00:00:00 Z
+categories:
+- video games
+tags:
+- video games
+- pokemon
+- pokemon sun
+- pokemon moon
+- the pokemon company
+- gamefreak
+- nintendo
 layout: post
-title: "Pokémon Sun and Moon Alolan Diglett/Dugtrio, New Z-Moves and Ultra Beasts, Mystery Pokémon Revealed"
-description: "Pokémon Sun and Moon is right around the corner. There's some new news on Ultra Beasts and a mystery Pokémon!"
-category: video games
+description: Pokémon Sun and Moon is right around the corner. There's some new news
+  on Ultra Beasts and a mystery Pokémon!
 featured: sunmoonmystery.png
-amazonterm: "pokemon sun and moon"
-tags: [video games, pokemon, pokemon sun, pokemon moon, the pokemon company, gamefreak, nintendo]
+amazonterm: pokemon sun and moon
 author: Rob Kalajian
 ---
 

@@ -1,11 +1,17 @@
 ---
-layout: post
 title: Goldieblox Releases Invention Mansion
+date: 2016-08-18 00:00:00 Z
+categories:
+- toys
+tags:
+- toys
+- goldieblox
+- invention mansion
+- stem
+layout: post
 description: Goldieblox releases its take on the dollhouse, the Invention Mansion.
-category: toys
 featured: inventionmansion.jpg
 amazonterm: Goldieblox
-tags: [toys, goldieblox, invention mansion, stem]
 author: Rob Kalajian
 ---
 

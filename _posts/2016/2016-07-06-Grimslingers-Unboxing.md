@@ -1,10 +1,17 @@
 ---
-layout: post
 title: Unboxing Grimslingers
-description: Grimslingers is a sci-fi/western card game with both co-op and versus modes. Let's unbox it and see what's inside.
-category: unboxing
+date: 2016-07-06 00:00:00 Z
+categories:
+- unboxing
+tags:
+- games
+- unboxing
+- grimslingers
+- greenbrier games
+layout: post
+description: Grimslingers is a sci-fi/western card game with both co-op and versus
+  modes. Let's unbox it and see what's inside.
 featured: grimslingers.jpg
-tags: [games, unboxing, grimslingers, greenbrier games]
 author: Rob Kalajian
 ---
 

@@ -1,10 +1,17 @@
 ---
-layout: post
 title: Review - Odd World
-description: Odd World is a light, planetary card game from Foxmind. It has a interesting quirk, but I wish it has some science facts!
-category: review
+date: 2016-07-12 00:00:00 Z
+categories:
+- review
+tags:
+- games
+- review
+- odd world
+- foxmind
+layout: post
+description: Odd World is a light, planetary card game from Foxmind. It has a interesting
+  quirk, but I wish it has some science facts!
 featured: odd-world.png
-tags: [games, review, odd world, foxmind]
 author: Rob Kalajian
 ---
 

@@ -1,10 +1,19 @@
 ---
-layout: post
 title: Total War - WARHAMMER Stream
-description: I did a quick stream of the Total War - WARHAMMER Stream's Campaign Mode using the Empire and running through the tutorial.
-category: streaming
+date: 2016-05-19 00:00:00 Z
+categories:
+- streaming
+tags:
+- video games
+- streaming
+- sega
+- games workshop
+- total war
+- warhammer
+layout: post
+description: I did a quick stream of the Total War - WARHAMMER Stream's Campaign Mode
+  using the Empire and running through the tutorial.
 featured: totalwar.png
-tags: [video games, streaming, sega, games workshop, total war, warhammer]
 author: Rob Kalajian
 ---
 

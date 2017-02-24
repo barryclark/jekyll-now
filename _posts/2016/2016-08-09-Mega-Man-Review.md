@@ -1,11 +1,18 @@
 ---
+title: 'Review - Mega Man: The Board Game'
+date: 2016-08-09 00:00:00 Z
+categories:
+- review
+tags:
+- games
+- review
+- mega man
+- jasco games
 layout: post
-title: "Review - Mega Man: The Board Game"
-description: "The beloved Blue Bomber comes to the table in Mega Man: The Board Game. Maybe he should have stayed in the digital realm."
-category: review
+description: 'The beloved Blue Bomber comes to the table in Mega Man: The Board Game.
+  Maybe he should have stayed in the digital realm.'
 featured: megaman1.jpg
-amazonterm: "mega man board game"
-tags: [games, review, mega man, jasco games]
+amazonterm: mega man board game
 author: Rob Kalajian
 ---
 

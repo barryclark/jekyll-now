@@ -1,10 +1,17 @@
 ---
-layout: post
 title: Unboxing Onitama
-description: A beautiful two-player strategy game, Onitama is top notch. Let's see what's inside.
-category: unboxing
+date: 2016-04-19 00:00:00 Z
+categories:
+- unboxing
+tags:
+- games
+- unboxing
+- onitama
+- arcane wonders
+layout: post
+description: A beautiful two-player strategy game, Onitama is top notch. Let's see
+  what's inside.
 featured: onitama.png
-tags: [games, unboxing, onitama, arcane wonders]
 author: Rob Kalajian
 ---
 

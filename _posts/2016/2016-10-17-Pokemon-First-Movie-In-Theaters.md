@@ -1,12 +1,16 @@
 ---
+title: 'Pokémon: The First Movie Back in Theaters for Two Days.'
+date: 2016-10-17 00:00:00 Z
+categories:
+- misc
+tags:
+- movies
+- pokémon
 layout: post
-title: "Pokémon: The First Movie Back in Theaters for Two Days."
-description: "Relive the magic of the first Pokémon on the big screen. Try not to cry."
-category: misc
+description: Relive the magic of the first Pokémon on the big screen. Try not to cry.
 featured: pokemovie.jpg
-amazonterm: "Pokémon"
+amazonterm: Pokémon
 amazoncat: Movies
-tags: [movies, pokémon]
 author: Rob Kalajian
 ---
 

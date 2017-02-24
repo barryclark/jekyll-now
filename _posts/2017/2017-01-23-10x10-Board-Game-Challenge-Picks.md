@@ -1,10 +1,35 @@
 ---
+title: 10 x 10 Board Game Challenge Picks
+date: 2017-01-23 00:00:00 Z
+categories:
+- news
+tags:
+- games
+- news
+- avoid the void
+- geek fever games
+- brass empire
+- rock manor games
+- dragon dice
+- sfr inc
+- dreadball
+- mantic games
+- gruff
+- studio woe
+- guardians of asundur
+- dph studioz
+- hero realms
+- white wizard games
+- ogre
+- steve jackson games
+- tak
+- cheapass games
+- x-wing
+- fantasy flight games
 layout: post
-title: "10 x 10 Board Game Challenge Picks"
-description: "I've picked my games for the 2017 10x10 Board Game Challenge. Now to try and meet the goal!"
-category: news
+description: I've picked my games for the 2017 10x10 Board Game Challenge. Now to
+  try and meet the goal!
 featured: 10x10Chal.png
-tags: [games, news, avoid the void, geek fever games, brass empire, rock manor games, dragon dice, sfr inc, dreadball, mantic games, gruff, studio woe, guardians of asundur, dph studioz, hero realms, white wizard games, ogre, steve jackson games, tak, cheapass games, x-wing, fantasy flight games]
 author: Rob Kalajian
 ---
 

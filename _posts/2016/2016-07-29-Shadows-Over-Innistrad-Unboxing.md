@@ -1,11 +1,21 @@
 ---
-layout: post
 title: Unboxing Arena of the Planeswalkers - Shadows Over Innistrad
-description: Shadows over Innistrad is a new base set for Arena of the Planeswalkers. Let's see what's inside!
-category: unboxing
+date: 2016-07-29 00:00:00 Z
+categories:
+- unboxing
+tags:
+- games
+- unboxing
+- magic the gathering
+- arena of the planeswalkers
+- hasbro
+- wizards of the coast
+- shadows over innistrad
+layout: post
+description: Shadows over Innistrad is a new base set for Arena of the Planeswalkers.
+  Let's see what's inside!
 featured: aopsoi.jpg
-amazonterm: "Arena of the Planeswalkers"
-tags: [games, unboxing, magic the gathering, arena of the planeswalkers, hasbro, wizards of the coast, shadows over innistrad]
+amazonterm: Arena of the Planeswalkers
 author: Rob Kalajian
 ---
 

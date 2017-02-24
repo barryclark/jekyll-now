@@ -1,10 +1,17 @@
 ---
+title: Unboxing Gamer Deck 1
+date: 2016-12-29 00:00:00 Z
+categories:
+- unboxing
+tags:
+- unboxing
+- gamer deck
+- hackogames
+- games
 layout: post
-title: "Unboxing Gamer Deck 1"
-description: "The first Gamer Deck was a great Kickstarter success. Let's see what's inside!"
-category: unboxing
+description: The first Gamer Deck was a great Kickstarter success. Let's see what's
+  inside!
 featured: gamerdeck1.png
-tags: [unboxing, gamer deck, hackogames, games]
 author: Rob Kalajian
 ---
 

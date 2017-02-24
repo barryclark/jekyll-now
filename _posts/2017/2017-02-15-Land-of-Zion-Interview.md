@@ -1,10 +1,18 @@
 ---
+title: Interview - Eric Bittermann of Sky Kingdom Games
+date: 2017-02-15 00:00:00 Z
+categories:
+- interview
+tags:
+- games
+- land of zion
+- kickstarter
+- sky kingdom games
+- interview
 layout: post
-title: "Interview - Eric Bittermann of Sky Kingdom Games"
-description: "Eric Bittermann answers some questions about Sky Kingdom Games' Land of Zion."
-category: interview
+description: Eric Bittermann answers some questions about Sky Kingdom Games' Land
+  of Zion.
 featured: landofzion.jpg
-tags: [games, land of zion, kickstarter, sky kingdom games, interview]
 author: Rob Kalajian
 ---
 

@@ -1,10 +1,17 @@
 ---
-layout: post
 title: Unboxing Originz Prototype
-description: Originz is a great superhero card game that I've talked about before. Let's see what's inside.
-category: unboxing
+date: 2016-07-26 00:00:00 Z
+categories:
+- unboxing
+tags:
+- games
+- unboxing
+- originz
+- flavor faction
+layout: post
+description: Originz is a great superhero card game that I've talked about before.
+  Let's see what's inside.
 featured: originz.jpg
-tags: [games, unboxing, originz, flavor faction]
 author: Rob Kalajian
 ---
 

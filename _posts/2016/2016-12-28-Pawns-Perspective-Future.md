@@ -1,10 +1,15 @@
 ---
+title: The Future of A Pawn's Perspective
+date: 2016-12-28 00:00:00 Z
+categories:
+- news
+tags:
+- news
+- a pawn's perspective
 layout: post
-title: "The Future of A Pawn's Perspective"
-description: "I've got a plan for A Pawn's Perspective in 2017. I'm hoping to expand a bit."
-category: news
+description: I've got a plan for A Pawn's Perspective in 2017. I'm hoping to expand
+  a bit.
 featured: logo.png
-tags: [news, a pawn's perspective]
 author: Rob Kalajian
 ---
 

@@ -1,11 +1,21 @@
 ---
+title: Pokémon Sun and Moon Starter Final Evolutions. Also, Red and Blue!
+date: 2016-10-27 00:00:00 Z
+categories:
+- video games
+tags:
+- video games
+- pokemon
+- pokemon sun
+- pokemon moon
+- the pokemon company
+- gamefreak
+- nintendo
 layout: post
-title: "Pokémon Sun and Moon Starter Final Evolutions. Also, Red and Blue!"
-description: "Pokémon Sun and Moon's starters' final evolutions revealed. Also, appearances by Red and Blue!"
-category: video games
+description: Pokémon Sun and Moon's starters' final evolutions revealed. Also, appearances
+  by Red and Blue!
 featured: redblue.jpg
-amazonterm: "pokemon sun and moon"
-tags: [video games, pokemon, pokemon sun, pokemon moon, the pokemon company, gamefreak, nintendo]
+amazonterm: pokemon sun and moon
 author: Rob Kalajian
 ---
 

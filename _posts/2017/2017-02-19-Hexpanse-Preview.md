@@ -1,10 +1,17 @@
 ---
+title: Hexpanse Preview
+date: 2017-02-19 00:00:00 Z
+categories:
+- preview
+tags:
+- preview
+- games
+- hexpanse
+- kickstarter
+- korona games
 layout: post
-title: "Hexpanse Preview"
-description: "A thematic abstract strategy game? That's the best way to describe Hexspanse."
-category: preview
+description: A thematic abstract strategy game? That's the best way to describe Hexspanse.
 featured: hexpanse.jpg
-tags: [preview, games, hexpanse, kickstarter, korona games]
 author: Rob Kalajian
 ---
 
