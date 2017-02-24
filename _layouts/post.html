@@ -24,6 +24,7 @@ amzn_assoc_linkid = "e8bcf19004d5d57047646f8bcbaa9a21";
   <span class="postedby">Posted by <em><a href="{{ author.apage }}">{{ author.display_name }}</a></em> {% if page.category %} in <a href="/category/#{{ page.category | slugify }}">{{ page.category }}</a> {% endif %}</span>
   <div class="entry">
     {{ content }}
+    {% include author.html %}
   </div>
 
   <div class="date">

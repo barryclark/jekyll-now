@@ -13,11 +13,11 @@ description: Toy and Game reviews, unboxings, and more.
 avatar: https://secure.gravatar.com/userimage/204666/806084f3e9206b3e4cae74875d7bff5a?size=250
 paginate: 8
 footer-links:
-  dribbble: 
+  dribbble:
   email: rkalajian@pawnsperspective.com
   facebook: pawnsperspective
-  flickr: 
-  github: 
+  flickr:
+  github:
   instagram: pawnsperspective
   linkedin: company/11005917
   periscope: perspectivepawn
@@ -25,15 +25,18 @@ footer-links:
   rss: rss
   twitch: rkalajian
   twitter: perspectivepawn
-  stackoverflow: 
+  stackoverflow:
   youtube: channel/UCn0oN0SslDDS5Od5usgJ9fw
 authors:
   robk:
     display_name: Rob Kalajian
+    avatar: /images/me.jpg
+    blurb: Father. Lover. Geek. Rob is the owner of A Pawn's Perspective and an Editor over at Purple Pawn. During the day he's a Senior Web Developer for an ad agency in Avon, CT. In his free time...he has no free time. Games. Toys. Books. Scouting.
     email: rkalajian@pawnsperspective.com
     apage: "/about"
   frankg:
     display_name: Frank Grip
+    blurb: Frank is an attorney and family man currently based out of Las Vegas. He's a long time gaming enthusiast with a tabletop interest in most dungeon crawlers and map strategy games. If it has dice and minis, it probably has his attention.
     email: fgrip@pawnsperspective.com
     apage: "/author-frankgrip"
 disqus: rck2
