@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2603,210000560,2017-02-24 11:48:29,2017-02-24 09:36:41,Donazione 2 stampanti HP4250,,,"[""Accettato"", ""Donazioni"", ""Form""]",,http://i.imgur.com/KpCM8Fd.jpg,"{""cosa"": ""offerta 2 stampanti HP4250;"", ""data"": ""24/02/2017"", ""descrizione"": ""L\u2019azienda per cui lavoro sta smaltendo 2 stampanti HP4250; le macchine sono state sostituite perch\u00e9 un po\u2019 vecchie, ma sono ancora tutte buone e funzionanti. Se avete contatti con qualche scuola, associazione o altro che ne potesse avere bisogno vi lascio i miei recapiti. Faccio presente che sono oggetti pesanti ed ingombranti, che richiedono un\u2019organizzazione per il trasporto. Dimensioni (LxAxP): 418x377x451 mm; Peso: 22,7 kg. patrizia puccetti 3472287761"", ""email"": ""puccetti@intermonte.it"", ""immagine"": ""http://i.imgur.com/KpCM8Fd.jpg"", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3472287761""}","<pre><yamldata>tel: '3472287761'
+email: puccetti@intermonte.it
+cosa: 'offerta 2 stampanti HP4250;'
+descrizione: 'L’azienda per cui lavoro sta smaltendo 2 stampanti HP4250; le macchine sono state sostituite perché un po’ vecchie, ma sono ancora tutte buone e funzionanti. Se avete contatti con qualche scuola, associazione o altro che ne potesse avere bisogno vi lascio i miei recapiti. Faccio presente che sono oggetti pesanti ed ingombranti, che richiedono un’organizzazione per il trasporto. Dimensioni (LxAxP): 418x377x451 mm; Peso: 22,7 kg. patrizia puccetti 3472287761'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: 'http://i.imgur.com/KpCM8Fd.jpg'
+data: 24/02/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2602,209853569,2017-02-24 08:41:59,2017-02-23 19:04:44,"Convegno: UNA NUOVA STRADA PER RICOSTRUIRE, INNOVARE E VIVERE IL NOSTRO TERRITORIO #Comunanza",42.9568523,13.4128721,"[""Accettato"", ""Bollettino"", ""Eventi"", ""Form""]",,,"{""data"": ""23/02/2017"", ""data_evento"": ""24/02/2017"", ""descrizione"": ""Convegno per identificare Proposte e Soluzioni a sostegno di un Territorio accomunato dall\u2019Area di Crisi Complessa e Zona. Si terr\u00e0 al Palacongressi A.Luzi."", ""indirizzo"": ""Via Ermanno Pascali, Comunanza, AP, MAR, 63044, Italy"", ""lat"": ""42.9568523"", ""link"": ""http://www.comune.comunanza.ap.it/po/mostra_news.php?id=91&area=H"", ""lon"": ""13.4128721"", ""ora_evento"": ""16:00"", ""promotore"": ""Comune di Comunanza"", ""titolo_evento"": ""Convegno: UNA NUOVA STRADA PER RICOSTRUIRE, INNOVARE E VIVERE IL NOSTRO TERRITORIO""}","<pre><yamldata>titolo_evento: 'Convegno: UNA NUOVA STRADA PER RICOSTRUIRE, INNOVARE E VIVERE IL NOSTRO TERRITORIO'
 data_evento: 24/02/2017
 ora_evento: '16:00'
