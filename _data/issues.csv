@@ -271,10 +271,10 @@ data: 21/02/2017
 fonte: 'Subissati azienda'
 link: 'http://subissati.it/it/ussita-riparte-dagli-uffici-del-comune.html'
 </yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2580,209223083,2017-02-21 21:33:52,2017-02-21 17:53:21,Ad #Amatrice serve un piatto doccia per alloggio provvisorio ,,,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""Richiesta utile ed urgente di un \""Box\"" piatto da sistemare per Doccia ad Amatrice"", ""data"": ""21/02/2017"", ""descrizione"": ""Ad Amatrice serve un piatto \""doccia\"" detto anche \""Box\"" presso alloggio provvisorio con pi\u00f9 persone. Per donazioni o ulteriori informazioni si pu\u00f2 contattare Christian Varani, volontario della Protezione Civile, ai recapiti indicati."", ""email"": ""christianvarani@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3248824117""}","<pre><yamldata>tel: '3248824117'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2580,209223083,2017-02-24 22:20:50,2017-02-21 17:53:21,Ad #Amatrice serve un box doccia per alloggio provvisorio ,,,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""Richiesta utile ed urgente di un \""Box\"" piatto da sistemare per Doccia ad Amatrice"", ""data"": ""21/02/2017"", ""descrizione"": ""Ad Amatrice serve un box doccia per un alloggio provvisorio con pi\u00f9 persone. Per donazioni o ulteriori informazioni si pu\u00f2 contattare Christian Varani, volontario della Protezione Civile, ai recapiti indicati."", ""email"": ""christianvarani@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3248824117""}","<pre><yamldata>tel: '3248824117'
 email: christianvarani@gmail.com
 cosa: 'Richiesta utile ed urgente di un ""Box"" piatto da sistemare per Doccia ad Amatrice'
-descrizione: 'Ad Amatrice serve un piatto ""doccia"" detto anche ""Box"" presso alloggio provvisorio con più persone. Per donazioni o ulteriori informazioni si può contattare Christian Varani, volontario della Protezione Civile, ai recapiti indicati.'
+descrizione: 'Ad Amatrice serve un box doccia per un alloggio provvisorio con più persone. Per donazioni o ulteriori informazioni si può contattare Christian Varani, volontario della Protezione Civile, ai recapiti indicati.'
 indirizzo: ''
 lat: ''
 lon: ''
