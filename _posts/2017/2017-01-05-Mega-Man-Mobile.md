@@ -1,7 +1,9 @@
 ---
 title: Mega Man Mobile Out on Google Play Store
 date: 2017-01-05 00:00:00 Z
-category: video games
+categories:
+- video
+- games
 tags:
 - video games
 - mega man

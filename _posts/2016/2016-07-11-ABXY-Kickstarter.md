@@ -1,7 +1,8 @@
 ---
 title: Kickstarter - ABXY
 date: 2016-07-11 00:00:00 Z
-category: kickstarter
+categories:
+- kickstarter
 tags:
 - games
 - kickstarter

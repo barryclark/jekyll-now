@@ -1,7 +1,8 @@
 ---
 title: World Beyblade Organization Launches New Site for 8th Anniversary
 date: 2016-12-14 00:00:00 Z
-category: games
+categories:
+- games
 tags:
 - games
 - toys

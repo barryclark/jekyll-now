@@ -1,7 +1,8 @@
 ---
 title: Review - Spellweaver
 date: 2016-05-16 00:00:00 Z
-category: review
+categories:
+- review
 tags:
 - video games
 - ccg

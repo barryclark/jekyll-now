@@ -1,7 +1,8 @@
 ---
 title: Hexpanse Preview
 date: 2017-02-19 00:00:00 Z
-category: preview
+categories:
+- preview
 tags:
 - preview
 - games

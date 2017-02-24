@@ -1,7 +1,8 @@
 ---
 title: Mageling Kickstarter
 date: 2017-01-16 00:00:00 Z
-category: kickstarter
+categories:
+- kickstarter
 tags:
 - kickstarter
 - games

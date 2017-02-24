@@ -1,7 +1,8 @@
 ---
 title: Review - Go Away Monster
 date: 2016-08-24 00:00:00 Z
-category: review
+categories:
+- review
 tags:
 - games
 - review

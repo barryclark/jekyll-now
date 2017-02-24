@@ -1,7 +1,8 @@
 ---
 title: Review - Light of Dragons
 date: 2016-07-18 00:00:00 Z
-category: review
+categories:
+- review
 tags:
 - games
 - review

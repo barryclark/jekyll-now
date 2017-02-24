@@ -1,7 +1,8 @@
 ---
 title: Review - 4 the Birds
 date: 2016-08-15 00:00:00 Z
-category: review
+categories:
+- review
 tags:
 - games
 - review

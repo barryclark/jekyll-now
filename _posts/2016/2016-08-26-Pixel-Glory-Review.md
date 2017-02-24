@@ -1,7 +1,8 @@
 ---
 title: Review - Pixel Glory
 date: 2016-08-26 00:00:00 Z
-category: review
+categories:
+- review
 tags:
 - games
 - review

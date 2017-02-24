@@ -1,7 +1,8 @@
 ---
 title: 'Review - Ophidian 2360: Survival of the Fittest'
 date: 2017-02-09 00:00:00 Z
-category: review
+categories:
+- review
 tags:
 - review
 - games

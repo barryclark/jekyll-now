@@ -10,7 +10,7 @@ Frank is an attorney and family man currently based out of Las Vegas. He's a lon
 </p>
 <div class="posts clearfix">
   {% for post in site.posts %}
-    {% if post.author contains 'frankg' %}
+    {% if post.author contains 'Frank Grip' %}
       <article class="post">
         <div class="eyebrow">{{ post.date | date: "%d %b %Y" }} {% if post.category %} in <a href="/category/#{{ post.category | slugify }}">{{ post.category }}</a> {% endif %}</div>
         {% if post.featured %}
