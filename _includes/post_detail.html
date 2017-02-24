@@ -1,3 +1,4 @@
+{% assign author = site.authors[page.author] %}
 {% if page.url != "/" %}{% else %}
 <h1 class="entry-title">
     <a href="{{ root_url }}{{ post.url }}">{{ post.title }}</a>
