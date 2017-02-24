@@ -1,0 +1,31 @@
+---
+layout:   listing
+title:    Frank Grip - Author Page
+description: "A Pawn's Perspective Author Page for Frank Grip"
+---
+<h1>Frank Grip</h1>
+<p>
+Frank is an attorney and family man currently based out of Las Vegas. He's a long time gaming enthusiast with a tabletop interest in most dungeon crawlers and map strategy games. If it has dice and minis, it probably has his attention.</p>
+</p>
+<div class="posts clearfix">
+  {% for post in site.posts %}
+    {% if post.author contains 'Frank Grip' %}
+      <article class="post">
+        <div class="eyebrow">{{ post.date | date: "%d %b %Y" }} {% if post.category %} in <a href="/category/#{{ post.category | slugify }}">{{ post.category }}</a> {% endif %}</div>
+        {% if post.featured %}
+          <a href="{{ site.baseurl }}{{ post.url }}"><img src="/images/featured/{{ post.featured }}"/></a>
+        {% endif %}
+        <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+
+        <div class="entry">
+          {% if post.featured %}
+            <a href="{{ site.baseurl }}{{ post.url }}" class="small-link">Read details</a>
+          {% else %}
+            <p>  {{ post.content | strip_html| truncatewords:20}}</p>
+            <a href="{{ site.baseurl }}{{ post.url }}" class="small-link">Read details</a>
+          {% endif %}
+        </div>
+      </article>
+    {% endif %}
+  {% endfor %}
+</div>
