@@ -3,7 +3,7 @@ layout: post
 title: Angular2 Resources
 ---
 
-Really, you need to check this out.  [Github](https://github.com/timjacobi/angular2-education)
+Really, you need to check this out. There are plenty of resources for Angular2 [Github](https://github.com/timjacobi/angular2-education)
 
 # ![AngularJS](https://angular.io/resources/images/logos/standard/shield-large.png)
 
