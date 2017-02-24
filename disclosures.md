@@ -4,8 +4,6 @@ title: Vulnerability Disclosure Policy
 permalink: /disclosures/
 ---
 
-### Vulnerability Disclosure Policy
-
 I regularly disclose security vulnerabilities to organisations. Where possible, I'll provide reasonable assistance and clarification to help you fix these, for free.
 
 Publishing information about these vulnerabilities is important and necessary, especially where it involves customer data. If an organisation does not intend to fix a vulnerability, I will publicly disclose this vulnerability, so that customers/stakeholders are properly informed of the risk.
