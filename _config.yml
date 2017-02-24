@@ -13,11 +13,11 @@ description: Toy and Game reviews, unboxings, and more.
 avatar: https://secure.gravatar.com/userimage/204666/806084f3e9206b3e4cae74875d7bff5a?size=250
 paginate: 8
 footer-links:
-  dribbble: 
+  dribbble:
   email: rkalajian@pawnsperspective.com
   facebook: pawnsperspective
-  flickr: 
-  github: 
+  flickr:
+  github:
   instagram: pawnsperspective
   linkedin: company/11005917
   periscope: perspectivepawn
@@ -25,17 +25,17 @@ footer-links:
   rss: rss
   twitch: rkalajian
   twitter: perspectivepawn
-  stackoverflow: 
+  stackoverflow:
   youtube: channel/UCn0oN0SslDDS5Od5usgJ9fw
 authors:
   robk:
     display_name: Rob Kalajian
     email: rkalajian@pawnsperspective.com
-    apage: about
+    apage: /about
   frankg:
     display_name: Frank Grip
     email: fgrip@pawnsperspective.com
-    apage: author-frankgrip
+    apage: /author-frankgrip
 disqus: rck2
 google_analytics: UA-383978-14
 url: http://pawnsperspective.com
