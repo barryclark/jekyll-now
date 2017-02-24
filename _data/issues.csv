@@ -1,5 +1,5 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2607,210052869,2017-02-24 13:53:37,2017-02-24 13:50:30,Vincenzo Correnti: il mio Henghel per la musica di Camerino,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Vincenzo Correnti: il mio Henghel per la musica di Camerino"", ""data"": ""24/02/2017"", ""descrizione"": ""Raccolta fondi con i quali finanziare la costruzione di una nuova scuola di musica a Camerino"", ""email"": """", ""iban"": ""IT71Q 08456 68830 000020155054"", ""intestazione"": """", ""link"": ""http://laperonza.blogspot.it/2017/02/vincenzo-correnti-il-mio-henghel-per-la.html?spref=fb"", ""postale"": """"}","<pre><yamldata>chi: 'Vincenzo Correnti: il mio Henghel per la musica di Camerino'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2607,210052869,2017-02-24 13:57:29,2017-02-24 13:50:30,Raccolta fondi  costruzione di una nuova scuola di musica #Camerino,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Vincenzo Correnti: il mio Henghel per la musica di Camerino"", ""data"": ""24/02/2017"", ""descrizione"": ""Raccolta fondi con i quali finanziare la costruzione di una nuova scuola di musica a Camerino"", ""email"": """", ""iban"": ""IT71Q 08456 68830 000020155054"", ""intestazione"": """", ""link"": ""http://laperonza.blogspot.it/2017/02/vincenzo-correnti-il-mio-henghel-per-la.html?spref=fb"", ""postale"": """"}","<pre><yamldata>chi: 'Vincenzo Correnti: il mio Henghel per la musica di Camerino'
 descrizione: 'Raccolta fondi con i quali finanziare la costruzione di una nuova scuola di musica a Camerino'
 intestazione: ''
 iban: 'IT71Q 08456 68830 000020155054'
@@ -19,6 +19,17 @@ indirizzo: 'SR2, Campagnano di Roma, RM, Lazio, 00063, Italia'
 lat: '42.1101087'
 lon: '12.3636369'
 link: 'https://www.facebook.com/events/297164300699237/'
+data: 24/02/2017
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2604,210050551,2017-02-24 13:59:50,2017-02-24 13:39:50,Cercasi roulotte #Arquata,,,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""Richiesta di aiuto. Un aiuto per il #popolo dei terremotati"", ""data"": ""24/02/2017"", ""descrizione"": ""Alessandra, terremotata di Arquata, chiede aiuto per una roulotte per lei e sua madre: \u201cnon possiamo permetterci di pagare un affitto\u201d commenta e ringrazia anticipatamente quanti potranno darle una mano a risolvere questo loro grave problema. Per avere il numero diretto contattateci sul nostro cellulare 3472869633 grazie"", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1850769768523939/?comment_id=1850841928516723&notif_t=group_comment_mention&notif_id=1487942809612470"", ""lon"": """", ""tel"": ""3472869633""}","<pre><yamldata>tel: '3472869633'
+email: ''
+cosa: 'Richiesta di aiuto. Un aiuto per il #popolo dei terremotati'
+descrizione: 'Alessandra, terremotata di Arquata, chiede aiuto per una roulotte per lei e sua madre: “non possiamo permetterci di pagare un affitto” commenta e ringrazia anticipatamente quanti potranno darle una mano a risolvere questo loro grave problema. Per avere il numero diretto contattateci sul nostro cellulare 3472869633 grazie'
+indirizzo: ''
+lat: ''
+lon: ''
+link: 'https://www.facebook.com/groups/1758670357733881/permalink/1850769768523939/?comment_id=1850841928516723&notif_t=group_comment_mention&notif_id=1487942809612470'
+immagine: ''
 data: 24/02/2017
 </yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2603,210000560,2017-02-24 11:48:29,2017-02-24 09:36:41,Donazione 2 stampanti HP4250,,,"[""Accettato"", ""Donazioni"", ""Form""]",,http://i.imgur.com/KpCM8Fd.jpg,"{""cosa"": ""offerta 2 stampanti HP4250;"", ""data"": ""24/02/2017"", ""descrizione"": ""L\u2019azienda per cui lavoro sta smaltendo 2 stampanti HP4250; le macchine sono state sostituite perch\u00e9 un po\u2019 vecchie, ma sono ancora tutte buone e funzionanti. Se avete contatti con qualche scuola, associazione o altro che ne potesse avere bisogno vi lascio i miei recapiti. Faccio presente che sono oggetti pesanti ed ingombranti, che richiedono un\u2019organizzazione per il trasporto. Dimensioni (LxAxP): 418x377x451 mm; Peso: 22,7 kg. patrizia puccetti 3472287761"", ""email"": ""puccetti@intermonte.it"", ""immagine"": ""http://i.imgur.com/KpCM8Fd.jpg"", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3472287761""}","<pre><yamldata>tel: '3472287761'
