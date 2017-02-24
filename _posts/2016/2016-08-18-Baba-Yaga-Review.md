@@ -1,7 +1,7 @@
 ---
 title: Review - Baba Yaga
 date: 2016-08-18 00:00:00 Z
-categories:
+category:
 - review
 tags:
 - games

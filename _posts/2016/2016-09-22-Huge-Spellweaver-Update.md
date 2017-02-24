@@ -1,7 +1,7 @@
 ---
 title: Huge Spellweaver Update
 date: 2016-09-22 00:00:00 Z
-categories:
+category:
 - video games
 tags:
 - video games

@@ -1,7 +1,7 @@
 ---
 title: Review - Spellweaver
 date: 2016-05-16 00:00:00 Z
-categories:
+category:
 - review
 tags:
 - video games

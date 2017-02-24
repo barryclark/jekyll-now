@@ -1,7 +1,7 @@
 ---
 title: CT FIG - The Games I Played
 date: 2016-05-01 00:00:00 Z
-categories:
+category:
 - conventions
 tags:
 - ct fig

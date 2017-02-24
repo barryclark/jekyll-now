@@ -1,7 +1,7 @@
 ---
 title: Micro Unboxing Sandships
 date: 2016-12-21 00:00:00 Z
-categories:
+category:
 - unboxing
 tags:
 - unboxing

@@ -1,7 +1,7 @@
 ---
 title: Spellweaver - Valiant Dawn
 date: 2016-07-29 00:00:00 Z
-categories:
+category:
 - video games
 tags:
 - video games

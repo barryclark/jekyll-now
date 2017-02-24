@@ -1,7 +1,7 @@
 ---
 title: 'Out There: Ω Edition Free on Amazon Underground'
 date: 2016-10-13 00:00:00 Z
-categories:
+category:
 - video games
 tags:
 - video games

@@ -1,7 +1,7 @@
 ---
 title: Unboxing Villages of Valeria
 date: 2017-02-03 00:00:00 Z
-categories:
+category:
 - unboxing
 tags:
 - unboxing

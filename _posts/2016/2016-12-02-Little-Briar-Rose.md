@@ -1,7 +1,7 @@
 ---
 title: Little Briar Rose
 date: 2016-12-02 00:00:00 Z
-categories:
+category:
 - video games
 tags:
 - video games

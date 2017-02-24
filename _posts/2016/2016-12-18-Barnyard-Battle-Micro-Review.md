@@ -1,7 +1,7 @@
 ---
 title: Micro Review - Barnyard Battle
 date: 2016-12-18 00:00:00 Z
-categories:
+category:
 - review
 tags:
 - games

@@ -1,7 +1,7 @@
 ---
 title: 'Review - Emergents: Genesis'
 date: 2016-08-10 00:00:00 Z
-categories:
+category:
 - review
 tags:
 - games

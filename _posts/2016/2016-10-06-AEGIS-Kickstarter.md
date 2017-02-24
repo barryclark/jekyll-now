@@ -1,7 +1,7 @@
 ---
 title: Kickstarter - A.E.G.I.S.
 date: 2016-10-06 00:00:00 Z
-categories:
+category:
 - kickstarter
 tags:
 - games

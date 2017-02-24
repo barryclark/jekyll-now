@@ -1,7 +1,7 @@
 ---
 title: 'Review - Attack on Titan: Deckbuilding Game'
 date: 2017-01-18 00:00:00 Z
-categories:
+category:
 - review
 tags:
 - review

@@ -1,7 +1,7 @@
 ---
 title: Super Terraria World
 date: 2016-09-30 00:00:00 Z
-categories:
+category:
 - video games
 tags:
 - video games

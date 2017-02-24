@@ -1,7 +1,7 @@
 ---
 title: Assault Suit Leynos
 date: 2016-08-30 00:00:00 Z
-categories:
+category:
 - video games
 tags:
 - video games

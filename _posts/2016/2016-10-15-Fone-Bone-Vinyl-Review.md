@@ -1,7 +1,7 @@
 ---
 title: Review - Fone Bone 4-Inch Vinyl Figure
 date: 2016-10-15 00:00:00 Z
-categories:
+category:
 - review
 tags:
 - toys

@@ -1,7 +1,7 @@
 ---
 title: Eternal Destiny - Animation Card Battle
 date: 2016-04-28 00:00:00 Z
-categories:
+category:
 - video games
 tags:
 - video games

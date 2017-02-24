@@ -1,7 +1,7 @@
 ---
 title: Warlock's Tower is a Gameboy Throwback
 date: 2016-10-28 00:00:00 Z
-categories:
+category:
 - video games
 tags:
 - video games

@@ -1,7 +1,7 @@
 ---
 title: Unboxing Acquire
 date: 2016-10-26 00:00:00 Z
-categories:
+category:
 - unboxing
 tags:
 - games

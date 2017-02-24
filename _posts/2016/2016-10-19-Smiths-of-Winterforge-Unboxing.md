@@ -1,7 +1,7 @@
 ---
 title: Unboxing Smiths of Winterforge
 date: 2016-10-19 00:00:00 Z
-categories:
+category:
 - unboxing
 tags:
 - games
