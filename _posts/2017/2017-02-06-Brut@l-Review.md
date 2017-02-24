@@ -1,8 +1,7 @@
 ---
 title: Review - Brut@l
 date: 2017-02-06 00:00:00 Z
-categories:
-- review
+categories: review
 tags:
 - review
 - video games

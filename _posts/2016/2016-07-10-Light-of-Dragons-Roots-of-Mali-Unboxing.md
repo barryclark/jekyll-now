@@ -1,8 +1,7 @@
 ---
 title: Unboxing Light of Dragons and Roots of Mali
 date: 2016-07-10 00:00:00 Z
-categories:
-- unboxing
+categories: unboxing
 tags:
 - games
 - unboxing

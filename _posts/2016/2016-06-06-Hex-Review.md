@@ -1,8 +1,7 @@
 ---
 title: Review - Hex Shards of Fate
 date: 2016-06-06 00:00:00 Z
-categories:
-- review
+categories: review
 tags:
 - video games
 - ccg

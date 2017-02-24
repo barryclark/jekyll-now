@@ -1,8 +1,7 @@
 ---
 title: Earth's Dawn Hits Steam on December 7th
 date: 2016-12-01 00:00:00 Z
-categories:
-- video games
+categories: video games
 tags:
 - video games
 - earth's dawn

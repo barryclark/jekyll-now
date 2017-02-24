@@ -1,8 +1,7 @@
 ---
 title: Unboxing Wrath of Dragons
 date: 2016-07-05 00:00:00 Z
-categories:
-- unboxing
+categories: unboxing
 tags:
 - games
 - unboxing

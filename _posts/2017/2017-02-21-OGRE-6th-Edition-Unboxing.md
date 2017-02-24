@@ -1,8 +1,7 @@
 ---
 title: Unboxing OGRE 6th Edition
 date: 2017-02-21 00:00:00 Z
-categories:
-- unboxing
+categories: unboxing
 tags:
 - unboxing
 - games

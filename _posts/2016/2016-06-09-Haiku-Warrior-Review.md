@@ -1,8 +1,7 @@
 ---
 title: Review - Haiku Warrior
 date: 2016-06-09 00:00:00 Z
-categories:
-- review
+categories: review
 tags:
 - games
 - review

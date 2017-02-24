@@ -1,8 +1,7 @@
 ---
 title: Battle Princess Madelyn Set to Come Out of Greenlight
 date: 2017-02-22 00:00:00 Z
-categories:
-- video games
+categories: video games
 tags:
 - video games
 - battle princess madelyn

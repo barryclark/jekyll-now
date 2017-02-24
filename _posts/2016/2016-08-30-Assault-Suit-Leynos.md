@@ -1,8 +1,7 @@
 ---
 title: Assault Suit Leynos
 date: 2016-08-30 00:00:00 Z
-categories:
-- video games
+categories: video games
 tags:
 - video games
 - assault suit leynos

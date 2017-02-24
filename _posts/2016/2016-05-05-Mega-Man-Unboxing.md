@@ -1,8 +1,7 @@
 ---
 title: Unboxing Mega Man
 date: 2016-05-05 00:00:00 Z
-categories:
-- unboxing
+categories: unboxing
 tags:
 - games
 - unboxing

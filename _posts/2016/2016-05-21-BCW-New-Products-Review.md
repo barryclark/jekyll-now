@@ -1,8 +1,7 @@
 ---
 title: Review - New BCW Products
 date: 2016-05-21 00:00:00 Z
-categories:
-- review
+categories: review
 tags:
 - ccg
 - review

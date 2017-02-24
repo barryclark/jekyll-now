@@ -1,8 +1,7 @@
 ---
 title: Kickstarter - Avoid the Void
 date: 2016-05-11 00:00:00 Z
-categories:
-- kickstarter
+categories: kickstarter
 tags:
 - games
 - kickstarter

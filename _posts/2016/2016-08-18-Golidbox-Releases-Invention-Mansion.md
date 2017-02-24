@@ -1,8 +1,7 @@
 ---
 title: Goldieblox Releases Invention Mansion
 date: 2016-08-18 00:00:00 Z
-categories:
-- toys
+categories: toys
 tags:
 - toys
 - goldieblox

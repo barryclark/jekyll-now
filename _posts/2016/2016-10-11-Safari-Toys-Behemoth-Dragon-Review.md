@@ -1,8 +1,7 @@
 ---
 title: Review - Safari Ltd Behemoth and Crystal Cavern Dragon
 date: 2016-10-11 00:00:00 Z
-categories:
-- review
+categories: review
 tags:
 - toys
 - safari ltd

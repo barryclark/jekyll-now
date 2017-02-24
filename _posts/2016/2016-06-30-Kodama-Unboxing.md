@@ -1,8 +1,7 @@
 ---
 title: Unboxing Kodama
 date: 2016-06-30 00:00:00 Z
-categories:
-- unboxing
+categories: unboxing
 tags:
 - games
 - unboxing

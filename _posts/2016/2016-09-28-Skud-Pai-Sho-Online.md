@@ -1,8 +1,7 @@
 ---
 title: Skud Pai Sho Online
 date: 2016-09-28 00:00:00 Z
-categories:
-- games
+categories: games
 tags:
 - games
 - pai sho

@@ -1,8 +1,7 @@
 ---
 title: Unboxing Onitama
 date: 2016-04-19 00:00:00 Z
-categories:
-- unboxing
+categories: unboxing
 tags:
 - games
 - unboxing

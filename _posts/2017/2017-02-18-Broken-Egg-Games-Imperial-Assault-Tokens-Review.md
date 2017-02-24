@@ -1,8 +1,7 @@
 ---
 title: Review - Broken Egg Games' Imperial Assault Tokens
 date: 2017-02-18 00:00:00 Z
-categories:
-- review
+categories: review
 tags:
 - review
 - games

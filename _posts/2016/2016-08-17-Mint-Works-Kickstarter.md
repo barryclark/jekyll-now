@@ -1,8 +1,7 @@
 ---
 title: Kickstarter - Mint Works
 date: 2016-08-17 00:00:00 Z
-categories:
-- kickstarter
+categories: kickstarter
 tags:
 - games
 - kickstarter
