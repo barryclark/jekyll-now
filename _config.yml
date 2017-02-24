@@ -73,6 +73,7 @@ gems:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
   - jekyll-paginate #pagination
   - jekyll-rss #RSS
+  - jekyll-author-plugin #author pages
 
 
 # Exclude these files from your production _site
