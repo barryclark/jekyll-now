@@ -428,7 +428,6 @@ footer {
 
 #authorblurb {
   background-color: #edeef0;
-  height: 150px;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
   margin-bottom: 10px;
@@ -437,6 +436,9 @@ footer {
     float: left;
     margin-right:20px;
     margin-left:20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
   }
 
   p {
