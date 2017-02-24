@@ -36,6 +36,17 @@ footer-links:
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: channel/UCn0oN0SslDDS5Od5usgJ9fw
 
+# Authors
+authors:
+  robk:
+    display_name: Rob Kalajian
+    email: rkalajian@pawnsperspective.com
+    apage: about
+  frankg:
+    display_name: Frank Grip
+    email: fgrip@pawnsperspective.com
+    apage: author-frankgrip
+
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 # You can find your shortname on the Settings page of your Disqus account
 disqus: rck2
