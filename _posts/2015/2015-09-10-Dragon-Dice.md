@@ -1,7 +1,7 @@
 ---
 title: Dragon Dice
 date: 2015-09-10 00:00:00 Z
-categories: games
+category: games
 tags:
 - games
 - dragon dice

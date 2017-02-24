@@ -1,7 +1,7 @@
 ---
 title: Infinity Wars Reborn Coming to Steam
 date: 2016-07-27 00:00:00 Z
-categories: video games
+category: video games
 tags:
 - video games
 - ccg

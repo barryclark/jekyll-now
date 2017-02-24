@@ -1,7 +1,7 @@
 ---
 title: Unboxing Hex Casters
 date: 2016-10-28 00:00:00 Z
-categories: unboxing
+category: unboxing
 tags:
 - games
 - unboxing

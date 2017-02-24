@@ -1,7 +1,7 @@
 ---
 title: Double Dragon IV Coming to PS4 and Steam
 date: 2016-12-30 00:00:00 Z
-categories: video games
+category: video games
 tags:
 - video games
 - double dragon

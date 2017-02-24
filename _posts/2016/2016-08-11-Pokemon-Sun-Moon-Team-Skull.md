@@ -1,7 +1,7 @@
 ---
 title: Pokemon Sun and Moon Team Skull and More
 date: 2016-08-11 00:00:00 Z
-categories: video games
+category: video games
 tags:
 - video games
 - pokemon

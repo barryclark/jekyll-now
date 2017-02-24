@@ -1,7 +1,7 @@
 ---
 title: 'Party Hard: High Crimes, New Twitch Integration'
 date: 2016-11-09 00:00:00 Z
-categories: video games
+category: video games
 tags:
 - video games
 - party hard

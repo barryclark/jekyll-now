@@ -1,7 +1,7 @@
 ---
 title: New Humble Mobile Bundle is Full of Board Games
 date: 2016-11-07 00:00:00 Z
-categories: games
+category: games
 tags:
 - video games
 - games

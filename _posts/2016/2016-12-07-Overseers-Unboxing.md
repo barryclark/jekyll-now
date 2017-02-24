@@ -1,7 +1,7 @@
 ---
 title: Unboxing Overseers
 date: 2016-12-07 00:00:00 Z
-categories: unboxing
+category: unboxing
 tags:
 - games
 - unboxing

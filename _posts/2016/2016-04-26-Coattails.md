@@ -1,7 +1,7 @@
 ---
 title: Coattails
 date: 2016-04-26 00:00:00 Z
-categories: news
+category: news
 tags:
 - games
 - news

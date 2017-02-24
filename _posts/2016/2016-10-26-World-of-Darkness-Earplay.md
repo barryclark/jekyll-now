@@ -1,7 +1,7 @@
 ---
 title: Interactive Audio World of Darkness Project
 date: 2016-10-26 00:00:00 Z
-categories: games
+category: games
 tags:
 - games
 - world of darkness

@@ -1,7 +1,7 @@
 ---
 title: Review - Tally Ho!
 date: 2016-08-16 00:00:00 Z
-categories: review
+category: review
 tags:
 - games
 - review

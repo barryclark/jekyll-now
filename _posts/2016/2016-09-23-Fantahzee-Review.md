@@ -1,7 +1,7 @@
 ---
 title: 'Review - Fantahzee: Hordes and Heroes'
 date: 2016-09-23 00:00:00 Z
-categories: review
+category: review
 tags:
 - games
 - review

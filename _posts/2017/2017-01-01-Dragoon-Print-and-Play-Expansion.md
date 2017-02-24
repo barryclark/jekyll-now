@@ -1,7 +1,7 @@
 ---
 title: Dragoon's Upcoming Expansion has a Print-and-Play Beta
 date: 2017-01-01 00:00:00 Z
-categories: games
+category: games
 tags:
 - games
 - dragoon

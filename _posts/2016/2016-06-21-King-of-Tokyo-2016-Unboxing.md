@@ -1,7 +1,7 @@
 ---
 title: Unboxing King of Tokyo 2016
 date: 2016-06-21 00:00:00 Z
-categories: unboxing
+category: unboxing
 tags:
 - games
 - unboxing

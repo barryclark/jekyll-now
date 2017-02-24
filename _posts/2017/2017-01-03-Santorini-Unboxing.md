@@ -1,7 +1,7 @@
 ---
 title: Unboxing Santorini
 date: 2017-01-03 00:00:00 Z
-categories: unboxing
+category: unboxing
 tags:
 - unboxing
 - games

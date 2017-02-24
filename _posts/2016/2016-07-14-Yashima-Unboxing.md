@@ -1,7 +1,7 @@
 ---
 title: Unboxing Yashima
 date: 2016-07-14 00:00:00 Z
-categories: unboxing
+category: unboxing
 tags:
 - games
 - unboxing

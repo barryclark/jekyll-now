@@ -1,7 +1,7 @@
 ---
 title: 'Review - Mega Man: The Board Game'
 date: 2016-08-09 00:00:00 Z
-categories: review
+category: review
 tags:
 - games
 - review

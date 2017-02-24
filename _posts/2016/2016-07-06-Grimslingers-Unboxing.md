@@ -1,7 +1,7 @@
 ---
 title: Unboxing Grimslingers
 date: 2016-07-06 00:00:00 Z
-categories: unboxing
+category: unboxing
 tags:
 - games
 - unboxing

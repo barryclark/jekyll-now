@@ -1,7 +1,7 @@
 ---
 title: Hasbro Unveiling Transformers Trypticon at New York Toy Fair 2017
 date: 2017-02-17 00:00:00 Z
-categories: toys
+category: toys
 tags:
 - toys
 - hasbro

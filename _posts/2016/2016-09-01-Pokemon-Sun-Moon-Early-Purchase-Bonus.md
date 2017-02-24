@@ -1,7 +1,7 @@
 ---
 title: Pokémon Sun and Moon Early Purchase Bonus
 date: 2016-09-01 00:00:00 Z
-categories: video games
+category: video games
 tags:
 - video games
 - pokemon

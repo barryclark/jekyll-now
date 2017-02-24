@@ -1,7 +1,7 @@
 ---
 title: Guilty Gear Xrd -Revelator-
 date: 2016-12-01 00:00:00 Z
-categories: video games
+category: video games
 tags:
 - video games
 - Guilty Gear Xrd -Revelator-

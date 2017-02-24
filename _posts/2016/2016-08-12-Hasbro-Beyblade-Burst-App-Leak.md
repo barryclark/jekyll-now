@@ -1,7 +1,7 @@
 ---
 title: Hasbro's Beyblade Burst App Briefly Hits iTunes Store
 date: 2016-08-12 00:00:00 Z
-categories: toys
+category: toys
 tags:
 - toys
 - beyblade

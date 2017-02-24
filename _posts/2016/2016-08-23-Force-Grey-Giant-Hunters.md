@@ -1,7 +1,7 @@
 ---
 title: 'Force Grey: Giant Hunters'
 date: 2016-08-23 00:00:00 Z
-categories: games
+category: games
 tags:
 - games
 - D&D
