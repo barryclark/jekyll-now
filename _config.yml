@@ -3,13 +3,13 @@
 #
 
 # Name of your site (displayed in the header)
-name: Your Name
+name: Richard J. Acton
 
 # Short bio or description (displayed in the header)
-description: Web Developer from Somewhere
+description: Bioinformatics PhD candidate studying the Epigenomics of Human Aging.
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
+avatar: 
 
 #
 # Flags below are optional
@@ -18,22 +18,22 @@ avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/je
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email:
-  facebook:
+  email: richardjacton@gmail.com
+  facebook: RichardJActon
   flickr:
-  github: barryclark/jekyll-now
+  github: richardjacton
   instagram:
-  linkedin:
+  linkedin: richard-james-acton-1175053b
   pinterest:
-  rss: # just type anything here for a working RSS icon
-  twitter: jekyllrb
-  stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
+  rss: rss # just type anything here for a working RSS icon
+  twitter: RichardJActon
+  stackoverflow: users/6083749/richard-acton
   youtube: # channel/<your_long_string> or user/<user-name>
-  googleplus: # anything in your profile username that comes after plus.google.com/
-  researchgate: # username
-  academiaedu: #<institution>.academia.edu/<username>
-  orcid: # ORCID ID
-  quora: # username
+  googleplus: u/0/109933232936336027477
+  researchgate: Richard_Acton
+  academiaedu: nottingham.academia.edu/RichardActon
+  orcid: 0000-0002-2574-9611
+  quora: Richard-Acton-2
 
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
@@ -41,11 +41,11 @@ footer-links:
 disqus:
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-google_analytics:
+google_analytics: UA-90952604-1
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
-url:
+url: http://richardjacton.github.io/
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
