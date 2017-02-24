@@ -1,4 +1,26 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2607,210052869,2017-02-24 13:53:37,2017-02-24 13:50:30,Vincenzo Correnti: il mio Henghel per la musica di Camerino,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Vincenzo Correnti: il mio Henghel per la musica di Camerino"", ""data"": ""24/02/2017"", ""descrizione"": ""Raccolta fondi con i quali finanziare la costruzione di una nuova scuola di musica a Camerino"", ""email"": """", ""iban"": ""IT71Q 08456 68830 000020155054"", ""intestazione"": """", ""link"": ""http://laperonza.blogspot.it/2017/02/vincenzo-correnti-il-mio-henghel-per-la.html?spref=fb"", ""postale"": """"}","<pre><yamldata>chi: 'Vincenzo Correnti: il mio Henghel per la musica di Camerino'
+descrizione: 'Raccolta fondi con i quali finanziare la costruzione di una nuova scuola di musica a Camerino'
+intestazione: ''
+iban: 'IT71Q 08456 68830 000020155054'
+bic: ''
+postale: ''
+causale: ''
+link: 'http://laperonza.blogspot.it/2017/02/vincenzo-correnti-il-mio-henghel-per-la.html?spref=fb'
+email: ''
+data: 24/02/2017
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2605,210051484,2017-02-24 13:53:05,2017-02-24 13:44:09,#Capodacqua in fiera,42.1101087,12.3636369,"[""Accettato"", ""Eventi"", ""Form""]",,,"{""data"": ""24/02/2017"", ""data_evento"": ""26/02/2017"", ""descrizione"": ""Venite ad ammirare e ad acquistare il nostro artigianato e aiutateci a realizzare un sogno: ricostruire Capodacqua, il nostro paese nel comune di #ArquatadelTronto distrutto dal terremoto.."", ""indirizzo"": ""SR2, Campagnano di Roma, RM, Lazio, 00063, Italia"", ""lat"": ""42.1101087"", ""link"": ""https://www.facebook.com/events/297164300699237/"", ""lon"": ""12.3636369"", ""ora_evento"": ""09:00"", ""promotore"": """", ""titolo_evento"": ""Capodacqua in fiera""}","<pre><yamldata>titolo_evento: 'Capodacqua in fiera'
+data_evento: 26/02/2017
+ora_evento: '09:00'
+promotore: ''
+descrizione: 'Venite ad ammirare e ad acquistare il nostro artigianato e aiutateci a realizzare un sogno: ricostruire Capodacqua, il nostro paese nel comune di #ArquatadelTronto distrutto dal terremoto..'
+indirizzo: 'SR2, Campagnano di Roma, RM, Lazio, 00063, Italia'
+lat: '42.1101087'
+lon: '12.3636369'
+link: 'https://www.facebook.com/events/297164300699237/'
+data: 24/02/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2603,210000560,2017-02-24 11:48:29,2017-02-24 09:36:41,Donazione 2 stampanti HP4250,,,"[""Accettato"", ""Donazioni"", ""Form""]",,http://i.imgur.com/KpCM8Fd.jpg,"{""cosa"": ""offerta 2 stampanti HP4250;"", ""data"": ""24/02/2017"", ""descrizione"": ""L\u2019azienda per cui lavoro sta smaltendo 2 stampanti HP4250; le macchine sono state sostituite perch\u00e9 un po\u2019 vecchie, ma sono ancora tutte buone e funzionanti. Se avete contatti con qualche scuola, associazione o altro che ne potesse avere bisogno vi lascio i miei recapiti. Faccio presente che sono oggetti pesanti ed ingombranti, che richiedono un\u2019organizzazione per il trasporto. Dimensioni (LxAxP): 418x377x451 mm; Peso: 22,7 kg. patrizia puccetti 3472287761"", ""email"": ""puccetti@intermonte.it"", ""immagine"": ""http://i.imgur.com/KpCM8Fd.jpg"", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3472287761""}","<pre><yamldata>tel: '3472287761'
 email: puccetti@intermonte.it
 cosa: 'offerta 2 stampanti HP4250;'
