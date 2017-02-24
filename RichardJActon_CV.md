@@ -38,6 +38,7 @@ MSc in Bioinformatics and Systems biology (Distinction). I undertook this degree
 1st Class MSci with Honours in Biochemistry and Genetics from the University of Nottingham. (See 4.1 for detailed breakdown by module)
 
 ## 2.3	A-levels (The Sixth Form College Farnborough 2009-11)
+
 | Biology (A2) | Chemistry (A2) | Physics (A2) |Maths (A2) | Economics (AS) | General Studies (A2) |
 |--------------|----------------|--------------|-----------|----------------|----------------------|
 | A            | A              | A            | B         | A              | B                    |
@@ -82,7 +83,6 @@ Elected President of the National Federation of Atheist, Humanist and Secular St
 
 # 4	Appendices
 ## 4.1	Birkbeck MSc Bioinformatics with Systems Biology - Results by Module
-
 
 | Code      | Title                                           | Credit (180/yr) | Mark/% |
 |-----------|-------------------------------------------------|-----------------|--------|
