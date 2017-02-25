@@ -1,7 +1,8 @@
 ---
 title: Fone Bone 4-Inch Vinyl Figure
 date: 2016-10-06 00:00:00 Z
-category: toys
+categories:
+- toys
 tags:
 - toys
 - bone

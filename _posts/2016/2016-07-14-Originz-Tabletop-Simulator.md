@@ -1,7 +1,8 @@
 ---
 title: Originz on Tabletop Simulator
 date: 2016-07-14 00:00:00 Z
-category: games
+categories:
+- games
 tags:
 - games
 - originz

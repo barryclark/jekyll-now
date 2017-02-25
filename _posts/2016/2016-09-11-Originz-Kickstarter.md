@@ -1,7 +1,8 @@
 ---
 title: 'Kickstarter - ORIGINZ: The Superpowered Card Game'
 date: 2016-09-11 00:00:00 Z
-category: kickstarter
+categories:
+- kickstarter
 tags:
 - games
 - kickstarter

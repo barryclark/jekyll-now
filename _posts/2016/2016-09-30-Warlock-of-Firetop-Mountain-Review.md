@@ -1,7 +1,8 @@
 ---
 title: Review - The Warlock of Firetop Mountain
 date: 2016-09-30 00:00:00 Z
-category: review
+categories:
+- review
 tags:
 - video games
 - review

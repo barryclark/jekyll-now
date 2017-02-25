@@ -1,7 +1,8 @@
 ---
 title: 10 x 10 Board Game Challenge January Plays
 date: 2017-02-01 00:00:00 Z
-category: news
+categories:
+- news
 tags:
 - games
 - news
