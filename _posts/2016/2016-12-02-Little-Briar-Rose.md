@@ -1,10 +1,17 @@
 ---
+title: Little Briar Rose
+date: 2016-12-02 00:00:00 Z
+categories:
+- video games
+tags:
+- video games
+- little briar rose
+- mangatar
+- elf games
 layout: post
-title: "Little Briar Rose"
-description: "Little Briar Rose is a beautiful, stained-glass, point-and-click adventure that just came out."
-category: video games
+description: Little Briar Rose is a beautiful, stained-glass, point-and-click adventure
+  that just came out.
 featured: littlebriarrose.png
-tags: [video games, little briar rose, mangatar, elf games]
 author: robk
 ---
 

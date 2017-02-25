@@ -1,10 +1,16 @@
 ---
+title: Super Blackjack Battle II Turbo Edition
+date: 2016-12-05 00:00:00 Z
+categories:
+- video games
+tags:
+- video games
+- super blackjack battle II turbo edition
+- headup games
+- stage clear studios
 layout: post
-title: "Super Blackjack Battle II Turbo Edition"
-description: "A Blackjack game with a Street Fighter II flair? Sign me up."
-category: video games
+description: A Blackjack game with a Street Fighter II flair? Sign me up.
 featured: superblackjack.png
-tags: [video games, super blackjack battle II turbo edition, headup games, stage clear studios ]
 author: robk
 ---
 

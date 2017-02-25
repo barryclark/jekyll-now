@@ -1,10 +1,15 @@
 ---
-layout: post
 title: Connecticut Festival of Indie Games Mid Year Event
-description: The CT FIG Mid-Year event is coming up, and I'll be there covering the show.
-category: conventions
+date: 2016-09-14 00:00:00 Z
+categories:
+- conventions
+tags:
+- conventions
+- ctfig
+layout: post
+description: The CT FIG Mid-Year event is coming up, and I'll be there covering the
+  show.
 featured: ctfig.png
-tags: [conventions, ctfig]
 author: robk
 ---
 

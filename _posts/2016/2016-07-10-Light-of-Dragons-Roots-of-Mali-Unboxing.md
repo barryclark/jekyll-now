@@ -1,10 +1,18 @@
 ---
-layout: post
 title: Unboxing Light of Dragons and Roots of Mali
-description: Light of Dragons and Roots of Mali are two dice-based, abstract strategy games from SunCoreGames. Let's unbox them and see what's inside.
-category: unboxing
+date: 2016-07-10 00:00:00 Z
+categories:
+- unboxing
+tags:
+- games
+- unboxing
+- roots of mali
+- light of dragons
+- suncoregames
+layout: post
+description: Light of Dragons and Roots of Mali are two dice-based, abstract strategy
+  games from SunCoreGames. Let's unbox them and see what's inside.
 featured: lodrom.jpg
-tags: [games, unboxing, roots of mali, light of dragons, suncoregames]
 author: robk
 ---
 

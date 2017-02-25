@@ -1,11 +1,18 @@
 ---
+title: Unboxing This Belongs in a Museum
+date: 2017-02-24 00:00:00 Z
+categories:
+- unboxing
+tags:
+- unboxing
+- games
+- this belongs in a museum
+- rather dashing games
 layout: post
-title: "Unboxing This Belongs in a Museum"
-description: "This Belongs in a Museum is the latest release from Rather Dashing Games. Let's see what's inside!"
-category: unboxing
+description: This Belongs in a Museum is the latest release from Rather Dashing Games.
+  Let's see what's inside!
 featured: thisbelongsinamuseum.jpg
-amazonterm: "Rather Dashing Games"
-tags: [unboxing, games, this belongs in a museum, rather dashing games]
+amazonterm: Rather Dashing Games
 author: robk
 ---
 

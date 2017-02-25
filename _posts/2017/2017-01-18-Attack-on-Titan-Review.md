@@ -1,11 +1,19 @@
 ---
+title: 'Review - Attack on Titan: Deckbuilding Game'
+date: 2017-01-18 00:00:00 Z
+categories:
+- review
+tags:
+- review
+- games
+- attack on titan
+- cryptozoic
+- cerberus
 layout: post
-title: "Review - Attack on Titan: Deckbuilding Game"
-description: "The wildy popular Attack on Titan is now an excellent deckbuilding game from Cryptozoic."
-category: review
+description: The wildy popular Attack on Titan is now an excellent deckbuilding game
+  from Cryptozoic.
 featured: attackontitan.png
-amazonterm: "attack on titan"
-tags: [review, games, attack on titan, cryptozoic, cerberus]
+amazonterm: attack on titan
 author: robk
 ---
 

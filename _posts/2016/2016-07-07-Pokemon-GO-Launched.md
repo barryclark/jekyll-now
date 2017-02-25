@@ -1,11 +1,18 @@
 ---
-layout: post
 title: Pokemon GO Launched
-description: Pokemon GO, the eagerly awaited mobile game that let's you capture Pokemon in real-world location, launched in the US.
-category: video games
+date: 2016-07-07 00:00:00 Z
+categories:
+- video games
+tags:
+- video games
+- pokemon
+- pokemon go
+- niantic
+layout: post
+description: Pokemon GO, the eagerly awaited mobile game that let's you capture Pokemon
+  in real-world location, launched in the US.
 featured: pokemongo2.png
 amazonterm: pokemon
-tags: [video games, pokemon, pokemon go, niantic]
 author: robk
 ---
 

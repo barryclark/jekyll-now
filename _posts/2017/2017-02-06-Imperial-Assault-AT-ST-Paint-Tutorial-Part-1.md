@@ -1,11 +1,18 @@
 ---
+title: Paint Tutorial - Imperial Assault AT-ST - Part 1
+date: 2017-02-06 00:00:00 Z
+categories:
+- tutorials
+tags:
+- games
+- miniatures
+- tutorial
+- imperial assault
+- fantasy flight games
 layout: post
-title: "Paint Tutorial - Imperial Assault AT-ST - Part 1"
-description: "Part 1 of Frank Grip's tutorial on painting an Imperial Assault AT-ST."
-category: tutorials
+description: Part 1 of Frank Grip's tutorial on painting an Imperial Assault AT-ST.
 featured: atstpart1.png
-amazonterm: "imperial assault"
-tags: [games, miniatures, tutorial, imperial assault, fantasy flight games]
+amazonterm: imperial assault
 author: frankg
 ---
 

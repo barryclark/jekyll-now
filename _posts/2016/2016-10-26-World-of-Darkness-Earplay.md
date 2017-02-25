@@ -1,12 +1,19 @@
 ---
-layout: post
 title: Interactive Audio World of Darkness Project
-description: "Dave Grossman and Richard Dansky have written a World of Darkness game for Earplay enabled devices."
-category: games
+date: 2016-10-26 00:00:00 Z
+categories:
+- games
+tags:
+- games
+- world of darkness
+- earplay
+- the orpheus device
+layout: post
+description: Dave Grossman and Richard Dansky have written a World of Darkness game
+  for Earplay enabled devices.
 featured: earplay.png
-amazonterm: "amazon echo"
+amazonterm: amazon echo
 amazoncat: Electronics
-tags: [games, world of darkness, earplay, the orpheus device]
 author: robk
 ---
 

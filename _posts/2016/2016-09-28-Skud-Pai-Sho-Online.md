@@ -1,11 +1,17 @@
 ---
+title: Skud Pai Sho Online
+date: 2016-09-28 00:00:00 Z
+categories:
+- games
+tags:
+- games
+- pai sho
+- skud pai sho
 layout: post
-title: "Skud Pai Sho Online"
-description: "Skud is a Pai Sho variation using the Wiki Pai Sho tile set. Now you can play by email online!"
-category: games
+description: Skud is a Pai Sho variation using the Wiki Pai Sho tile set. Now you
+  can play by email online!
 featured: paishoboard.png
-amazonterm: "avatar the last airbender"
-tags: [games, pai sho, skud pai sho]
+amazonterm: avatar the last airbender
 author: robk
 ---
 

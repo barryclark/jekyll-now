@@ -1,10 +1,17 @@
 ---
+title: 88 Heroes Gets a Physical Release
+date: 2017-01-10 00:00:00 Z
+categories:
+- video games
+tags:
+- video games
+- 88 heroes
+- rising star games
+- bitmap bureau
 layout: post
-title: "88 Heroes Gets a Physical Release"
-description: "Rising Stars' new 88 Heroes gets a release in March and also gets a physical PS4 release."
-category: video games
+description: Rising Stars' new 88 Heroes gets a release in March and also gets a physical
+  PS4 release.
 featured: 88heroes.png
-tags: [video games, 88 heroes, rising star games, bitmap bureau]
 author: robk
 ---
 

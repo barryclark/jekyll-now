@@ -1,10 +1,17 @@
 ---
-layout: post
 title: Unboxing Avoid the Void
-description: "Geek Fever Games has finally released Avoid the Void, one of my favorite games from PAX East. Let's look inside."
-category: unboxing
+date: 2016-10-28 00:00:00 Z
+categories:
+- unboxing
+tags:
+- games
+- unboxing
+- geek fever games
+- avoid the void
+layout: post
+description: Geek Fever Games has finally released Avoid the Void, one of my favorite
+  games from PAX East. Let's look inside.
 featured: avoid.jpg
-tags: [games, unboxing, geek fever games, avoid the void]
 author: robk
 ---
 

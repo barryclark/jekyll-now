@@ -1,10 +1,14 @@
 ---
+title: 10 x 10 Board Game Challenge
+date: 2017-01-02 00:00:00 Z
+categories:
+- news
+tags:
+- games
+- news
 layout: post
-title: "10 x 10 Board Game Challenge"
-description: "I'm hoping on the 10x10 Board Game Challenge, because why not?"
-category: news
+description: I'm hoping on the 10x10 Board Game Challenge, because why not?
 featured: 10x10Chal.png
-tags: [games, news]
 author: robk
 ---
 

@@ -1,11 +1,18 @@
 ---
+title: Pokémon Duel for Mobile / Pokémon Bank Update
+date: 2017-01-25 00:00:00 Z
+categories:
+- video games
+tags:
+- pokemon
+- the pokemon company
+- video games
+- pokemon bank
+- pokemon duel
 layout: post
-title: "Pokémon Duel for Mobile / Pokémon Bank Update"
-description: "Two new Pokémon announcements in just a few day!"
-category: video games
+description: Two new Pokémon announcements in just a few day!
 featured: pokemonduel.jpg
 amazonterm: pokemon
-tags: [pokemon, the pokemon company, video games, pokemon bank, pokemon duel]
 author: robk
 ---
 

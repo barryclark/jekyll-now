@@ -1,10 +1,17 @@
 ---
+title: Review - The Lords of Rock
+date: 2017-02-08 00:00:00 Z
+categories:
+- review
+tags:
+- review
+- games
+- the lords of rock
+- solarflare games
 layout: post
-title: "Review - The Lords of Rock"
-description: "The Gods of various Pantheon compete in a Battle of the Bands for our souls."
-category: review
+description: The Gods of various Pantheon compete in a Battle of the Bands for our
+  souls.
 featured: lordsofrock.jpg
-tags: [review, games, the lords of rock, solarflare games]
 author: robk
 ---
 

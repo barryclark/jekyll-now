@@ -1,11 +1,17 @@
 ---
+title: 'Anima: Gate of Memories Coming to Mac'
+date: 2016-10-21 00:00:00 Z
+categories:
+- video games
+tags:
+- video games
+- anima
+- badland games
 layout: post
-title: "Anima: Gate of Memories Coming to Mac"
-description: "Kickstarted, then released in June, Anima will be available on Mac on October 28th."
-category: video games
+description: Kickstarted, then released in June, Anima will be available on Mac on
+  October 28th.
 featured: animagate.jpg
-amazonterm: "Anima"
-tags: [video games, anima, badland games]
+amazonterm: Anima
 author: robk
 ---
 

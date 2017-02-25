@@ -1,10 +1,17 @@
 ---
-layout: post
 title: Review - VA-11 Hall-A
-description: To be honest, I almost passed on the opportunity to review VA-11 Hall-A. I'm really glad I didn't.
-category: review
+date: 2016-06-27 00:00:00 Z
+categories:
+- review
+tags:
+- video games
+- review
+- va-11 hall-a
+- sukeban games
+layout: post
+description: To be honest, I almost passed on the opportunity to review VA-11 Hall-A.
+  I'm really glad I didn't.
 featured: va-llhall-a.png
-tags: [video games, review, va-11 hall-a, sukeban games]
 author: robk
 ---
 

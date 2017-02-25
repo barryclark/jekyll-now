@@ -1,10 +1,18 @@
 ---
+title: 2017 Toy of the Year Award Finalists Unveiled by Toy Industry Association
+date: 2016-11-22 00:00:00 Z
+categories:
+- news
+tags:
+- news
+- toys
+- games
+- toty
+- toy of the year
 layout: post
-title: "2017 Toy of the Year Award Finalists Unveiled by Toy Industry Association"
-description: "Consumers invited to vote for their favorites at ToyAwards.org - now until January 15, 2017"
-category: news
+description: Consumers invited to vote for their favorites at ToyAwards.org - now
+  until January 15, 2017
 featured: TOTY17Logo.jpg
-tags: [news, toys, games, toty, toy of the year]
 author: robk
 ---
 

@@ -1,10 +1,18 @@
 ---
-layout: post
 title: Review - Light of Dragons
-description: SunCoreGames is launching a Kickstarter for Roots of Mali tomorrow. Today I take a look at the first game in the series, Light of Dragons.
-category: review
+date: 2016-07-18 00:00:00 Z
+categories:
+- review
+tags:
+- games
+- review
+- light of dragons
+- roots of mali
+- suncoregames
+layout: post
+description: SunCoreGames is launching a Kickstarter for Roots of Mali tomorrow. Today
+  I take a look at the first game in the series, Light of Dragons.
 featured: lightofdragons.jpg
-tags: [games, review, light of dragons, roots of mali, suncoregames]
 author: robk
 ---
 

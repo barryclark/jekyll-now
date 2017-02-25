@@ -1,11 +1,19 @@
 ---
+title: More Pokémon Arrive in Pokémon GO
+date: 2016-12-12 00:00:00 Z
+categories:
+- video games
+tags:
+- video games
+- niantic
+- the pokemon company
+- nintedo
+- pokemon go
 layout: post
-title: "More Pokémon Arrive in Pokémon GO"
-description: "Pichu, Togepi, and more Pokémon from the Johto region are now in Pokémon GO."
-category: video games
+description: Pichu, Togepi, and more Pokémon from the Johto region are now in Pokémon
+  GO.
 featured: pokexmas.jpg
 amazonterm: pokemon
-tags: [video games, niantic, the pokemon company, nintedo, pokemon go]
 author: robk
 ---
 

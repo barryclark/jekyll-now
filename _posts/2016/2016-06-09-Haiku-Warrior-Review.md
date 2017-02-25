@@ -1,10 +1,17 @@
 ---
-layout: post
 title: Review - Haiku Warrior
-description: Haiku Warrior is light, easy to play, portable, and was a pleasure to review.
-category: review
+date: 2016-06-09 00:00:00 Z
+categories:
+- review
+tags:
+- games
+- review
+- haiku warrior
+- jason anarchy
+layout: post
+description: Haiku Warrior is light, easy to play, portable, and was a pleasure to
+  review.
 featured: haikuwarrior.png
-tags: [games, review, haiku warrior, jason anarchy]
 author: robk
 ---
 

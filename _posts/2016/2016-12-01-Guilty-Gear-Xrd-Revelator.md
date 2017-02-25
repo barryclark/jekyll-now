@@ -1,11 +1,17 @@
 ---
+title: Guilty Gear Xrd -Revelator-
+date: 2016-12-01 00:00:00 Z
+categories:
+- video games
+tags:
+- video games
+- Guilty Gear Xrd -Revelator-
+- arc system works
 layout: post
-title: "Guilty Gear Xrd -Revelator-"
-description: "Guilty Gear Xrd -Revelator- will be coming to Steam (PC) on December 14th and will retail for $49.99 USD."
-category: video games
+description: Guilty Gear Xrd -Revelator- will be coming to Steam (PC) on December
+  14th and will retail for $49.99 USD.
 featured: ggxrd-revelator.png
-amazonterm: "Guilty Gear"
-tags: [video games, Guilty Gear Xrd -Revelator-, arc system works]
+amazonterm: Guilty Gear
 author: robk
 ---
 

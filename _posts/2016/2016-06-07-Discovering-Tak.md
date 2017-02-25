@@ -1,10 +1,18 @@
 ---
-layout: post
 title: Discovering Tak
-description: Cheapass games wrapped up a wildly successful Kickstarter to bring Tak to life. I decided to 3D print my own set.
-category: games
+date: 2016-06-07 00:00:00 Z
+categories:
+- games
+tags:
+- games
+- tak
+- cheapass games
+- a wise man's fear
+- patrick rothfuss
+layout: post
+description: Cheapass games wrapped up a wildly successful Kickstarter to bring Tak
+  to life. I decided to 3D print my own set.
 featured: tak.jpg
-tags: [games, tak, cheapass games, a wise man's fear, patrick rothfuss]
 author: robk
 ---
 

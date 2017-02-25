@@ -1,8 +1,10 @@
 ---
-layout: post
 title: Office Aquarium
+date: 2016-03-08 00:00:00 Z
+categories:
+- misc
+layout: post
 description: My new job let me setup an aquarium in my cubicle. Here's the lowdown.
-category: misc
 author: robk
 ---
 

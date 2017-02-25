@@ -1,10 +1,17 @@
 ---
-layout: post
 title: Pox Nora's 29th Expansion Launches July 27
-description: Pox Nora has been around a LONG time. On July 27th it's 29th expansion launches
-category: video games
+date: 2016-07-27 00:00:00 Z
+categories:
+- video games
+tags:
+- video games
+- ccg
+- pox nora
+- desert owl games
+layout: post
+description: Pox Nora has been around a LONG time. On July 27th it's 29th expansion
+  launches
 featured: poxnora.jpg
-tags: [video games, ccg, pox nora, desert owl games]
 author: robk
 ---
 

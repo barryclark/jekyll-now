@@ -1,10 +1,18 @@
 ---
+title: 'HEX: Shards of Fate – Herofall Set Announced'
+date: 2016-08-05 00:00:00 Z
+categories:
+- video games
+tags:
+- video games
+- ccg
+- hex
+- hex entertainment
+- herofall
+- gameforge
 layout: post
-title: "HEX: Shards of Fate – Herofall Set Announced"
 description: Herofall expansion introduces over 270 new cards for Hex.
-category: video games
 featured: herofall.jpg
-tags: [video games, ccg, hex, hex entertainment, herofall, gameforge]
 author: robk
 ---
 

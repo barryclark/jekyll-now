@@ -1,11 +1,18 @@
 ---
+title: Review - Wakanda
+date: 2016-09-08 00:00:00 Z
+categories:
+- review
+tags:
+- games
+- review
+- wakanda
+- blue orange games
 layout: post
-title: "Review - Wakanda"
-description: "Wakanda is a Blue Orange game about totem poles. It took a bit to get used to, but was pretty fun."
-category: review
+description: Wakanda is a Blue Orange game about totem poles. It took a bit to get
+  used to, but was pretty fun.
 featured: wakanda.jpg
 amazonterm: wakanda
-tags: [games, review, wakanda, blue orange games]
 author: robk
 ---
 

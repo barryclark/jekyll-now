@@ -1,11 +1,19 @@
 ---
+title: Review - Yeti
+date: 2016-11-03 00:00:00 Z
+categories:
+- review
+tags:
+- games
+- review
+- yeti
+- aeg
+- pegasus spiele
 layout: post
-title: "Review - Yeti"
-description: "There's a yeti on the mountain. Snap pics, climb the mountain, and find the yet to win!"
-category: review
+description: There's a yeti on the mountain. Snap pics, climb the mountain, and find
+  the yet to win!
 featured: yeti.jpg
-amazonterm: "yeti game"
-tags: [games, review, yeti, aeg, pegasus spiele]
+amazonterm: yeti game
 author: robk
 ---
 

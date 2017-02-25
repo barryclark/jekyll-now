@@ -1,11 +1,18 @@
 ---
+title: 'The Pokémon TCG: Sun & Moon Expansion has Arrived'
+date: 2017-02-07 00:00:00 Z
+categories:
+- games
+tags:
+- games
+- pokemon
+- tcg
+- the pokemon company
 layout: post
-title: "The Pokémon TCG: Sun & Moon Expansion has Arrived"
-description: "The latest expansion for the Pokémon TCG, Sun & Moon, has arrived on shelves!"
-category: games
+description: The latest expansion for the Pokémon TCG, Sun & Moon, has arrived on
+  shelves!
 featured: sunmoontcg.jpg
-amazonterm: "pokemon tcg"
-tags: [games, pokemon, tcg, the pokemon company]
+amazonterm: pokemon tcg
 author: robk
 ---
 

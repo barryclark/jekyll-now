@@ -1,11 +1,17 @@
 ---
-layout: post
 title: Review - Attila
+date: 2016-08-05 00:00:00 Z
+categories:
+- review
+tags:
+- games
+- review
+- attila
+- blue orange games
+layout: post
 description: Attila is a fun little 2-player game from Blue Orange Games.
-category: review
 featured: attila.jpg
-amazonterm: "blue orange games"
-tags: [games, review, attila, blue orange games]
+amazonterm: blue orange games
 author: robk
 ---
 

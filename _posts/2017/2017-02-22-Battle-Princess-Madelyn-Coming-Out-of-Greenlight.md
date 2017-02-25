@@ -1,10 +1,15 @@
 ---
+title: Battle Princess Madelyn Set to Come Out of Greenlight
+date: 2017-02-22 00:00:00 Z
+categories:
+- video games
+tags:
+- video games
+- battle princess madelyn
+- causal bit games
 layout: post
-title: "Battle Princess Madelyn Set to Come Out of Greenlight"
-description: "Battle Princess Madelyn is a throwback to classics like Ghouls N' Ghosts."
-category: video games
+description: Battle Princess Madelyn is a throwback to classics like Ghouls N' Ghosts.
 featured: bpm.jpg
-tags: [video games, battle princess madelyn, causal bit games]
 author: robk
 ---
 

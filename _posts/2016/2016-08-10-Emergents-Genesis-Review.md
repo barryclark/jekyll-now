@@ -1,11 +1,18 @@
 ---
+title: 'Review - Emergents: Genesis'
+date: 2016-08-10 00:00:00 Z
+categories:
+- review
+tags:
+- games
+- review
+- emergents genesis
+- urban island games
 layout: post
-title: "Review - Emergents: Genesis"
-description: "A deck builder with an excellent comic book theme. Emergents: Genesis is worth your time."
-category: review
+description: 'A deck builder with an excellent comic book theme. Emergents: Genesis
+  is worth your time.'
 featured: emergents.jpg
-amazonterm: "emergents genesis"
-tags: [games, review, emergents genesis, urban island games]
+amazonterm: emergents genesis
 author: robk
 ---
 

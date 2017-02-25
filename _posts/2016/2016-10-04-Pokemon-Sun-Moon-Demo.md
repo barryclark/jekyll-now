@@ -1,11 +1,21 @@
 ---
+title: Pokémon Sun and Pokémon Moon Demo Drops Oct 18
+date: 2016-10-04 00:00:00 Z
+categories:
+- video games
+tags:
+- video games
+- pokemon
+- pokemon sun
+- pokemon moon
+- the pokemon company
+- gamefreak
+- nintendo
 layout: post
-title: "Pokémon Sun and Pokémon Moon Demo Drops Oct 18"
-description: "Pokémon Sun and Moon is getting a demo on October 18th. Also, starter evolutions revealed!"
-category: video games
+description: Pokémon Sun and Moon is getting a demo on October 18th. Also, starter
+  evolutions revealed!
 featured: pelago.jpg
-amazonterm: "pokemon sun and moon"
-tags: [video games, pokemon, pokemon sun, pokemon moon, the pokemon company, gamefreak, nintendo]
+amazonterm: pokemon sun and moon
 author: robk
 ---
 

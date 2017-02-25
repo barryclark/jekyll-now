@@ -1,11 +1,18 @@
 ---
+title: Beyblade Burst on Shelves in Canada
+date: 2016-09-03 00:00:00 Z
+categories:
+- toys
+tags:
+- toys
+- beyblade
+- hasbro
+- beyblade burst
 layout: post
-title: "Beyblade Burst on Shelves in Canada"
-description: "We're still waiting for the release in the US, but Beyblade Burst has been seen on Canadian shelves."
-category: toys
+description: We're still waiting for the release in the US, but Beyblade Burst has
+  been seen on Canadian shelves.
 featured: Beybladeburst_logo.png
-amazonterm: "beyblade burst"
-tags: [toys, beyblade, hasbro, beyblade burst]
+amazonterm: beyblade burst
 author: robk
 ---
 

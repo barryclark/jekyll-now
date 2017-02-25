@@ -1,10 +1,17 @@
 ---
-layout: post
 title: Discovering Tak - Part 4
+date: 2016-07-28 00:00:00 Z
+categories:
+- games
+tags:
+- games
+- tak
+- cheapass games
+- a wise man's fear
+- patrick rothfuss
+layout: post
 description: Continuing my Tak posts, I'm checking out Tak boards.
-category: games
 featured: takboard.jpg
-tags: [games, tak, cheapass games, a wise man's fear, patrick rothfuss]
 author: robk
 ---
 

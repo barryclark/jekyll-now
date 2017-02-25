@@ -1,11 +1,18 @@
 ---
-layout: post
 title: Unboxing Hex Casters
-description: "Hex Casters is one of the first games funded by Hasbro through Indiegogo. Let's look inside."
-category: unboxing
+date: 2016-10-28 00:00:00 Z
+categories:
+- unboxing
+tags:
+- games
+- unboxing
+- hex casters
+- hasbro
+layout: post
+description: Hex Casters is one of the first games funded by Hasbro through Indiegogo.
+  Let's look inside.
 featured: hexcasters.jpg
-amazonterm: "hex casters"
-tags: [games, unboxing, hex casters, hasbro]
+amazonterm: hex casters
 author: robk
 ---
 

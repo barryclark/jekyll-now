@@ -1,10 +1,18 @@
 ---
-layout: post
 title: Unboxing Smiths of Winterforge
-description: "Smiths of Winterforge is currently on Kickstarter, but the prototype is amazing. Let's look inside."
-category: unboxing
+date: 2016-10-19 00:00:00 Z
+categories:
+- unboxing
+tags:
+- games
+- unboxing
+- smiths of winterforge
+- table tyrant
+- kickstarter
+layout: post
+description: Smiths of Winterforge is currently on Kickstarter, but the prototype
+  is amazing. Let's look inside.
 featured: smithsofwinterforge.jpg
-tags: [games, unboxing, smiths of winterforge, table tyrant, kickstarter]
 author: robk
 ---
 

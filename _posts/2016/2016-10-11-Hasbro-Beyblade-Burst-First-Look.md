@@ -1,11 +1,18 @@
 ---
+title: Unboxing Hasbro's Beyblade Burst
+date: 2016-10-11 00:00:00 Z
+categories:
+- unboxing
+tags:
+- toys
+- beyblade
+- hasbro
+- beyblade burst
 layout: post
-title: "Unboxing Hasbro's Beyblade Burst"
-description: "Hasbro's Beyblade Burst is on the shelves in Canada and will be in the US in January. Let's take a look!"
-category: unboxing
+description: Hasbro's Beyblade Burst is on the shelves in Canada and will be in the
+  US in January. Let's take a look!
 featured: hasbroburst.jpg
-amazonterm: "Beyblade burst"
-tags: [toys, beyblade, hasbro, beyblade burst]
+amazonterm: Beyblade burst
 author: robk
 ---
 

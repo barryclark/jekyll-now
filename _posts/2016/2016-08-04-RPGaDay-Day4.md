@@ -1,10 +1,15 @@
 ---
-layout: post
 title: "#RPGaDay 2016 - Day 4"
-description: "Most impressive thing another's character did? Day 4 of #RPGaDay."
-category: games
+date: 2016-08-04 00:00:00 Z
+categories:
+- games
+tags:
+- games
+- rpgs
+- rpgaday
+layout: post
+description: 'Most impressive thing another''s character did? Day 4 of #RPGaDay.'
 featured: rpgaday.png
-tags: [games, rpgs, rpgaday]
 author: robk
 ---
 

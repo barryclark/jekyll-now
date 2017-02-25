@@ -1,10 +1,15 @@
 ---
-layout: post
 title: "#RPGaDay 2016 - Day 6"
-description: "Most amazing thing a game group did for their community? Day 6 of #RPGaDay."
-category: games
+date: 2016-08-06 00:00:00 Z
+categories:
+- games
+tags:
+- games
+- rpgs
+- rpgaday
+layout: post
+description: 'Most amazing thing a game group did for their community? Day 6 of #RPGaDay.'
 featured: rpgaday.png
-tags: [games, rpgs, rpgaday]
 author: robk
 ---
 

@@ -1,11 +1,19 @@
 ---
-layout: post
 title: Unboxing Storyline Scary Tales
-description: "The Storyline series continues with Scary Tales in time for Halloween. Let's look inside."
-category: unboxing
+date: 2016-10-18 00:00:00 Z
+categories:
+- unboxing
+tags:
+- games
+- unboxing
+- storyline
+- asmodee
+- scary tales
+layout: post
+description: The Storyline series continues with Scary Tales in time for Halloween.
+  Let's look inside.
 featured: scarytales.jpg
-amazonterm: "Storyline"
-tags: [games, unboxing, storyline, asmodee, scary tales]
+amazonterm: Storyline
 author: robk
 ---
 

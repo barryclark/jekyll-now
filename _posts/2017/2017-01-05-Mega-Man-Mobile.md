@@ -1,10 +1,15 @@
 ---
+title: Mega Man Mobile Out on Google Play Store
+date: 2017-01-05 00:00:00 Z
+categories:
+- video games
+tags:
+- video games
+- mega man
+- capcom
 layout: post
-title: "Mega Man Mobile Out on Google Play Store"
-description: "Mega Man 1-6 have hit the Google Play Store. They look like crap."
-category: video games
+description: Mega Man 1-6 have hit the Google Play Store. They look like crap.
 featured: megamanmobile.png
-tags: [video games, mega man, capcom]
 author: robk
 ---
 

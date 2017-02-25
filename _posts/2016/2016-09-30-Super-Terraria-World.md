@@ -1,10 +1,16 @@
 ---
+title: Super Terraria World
+date: 2016-09-30 00:00:00 Z
+categories:
+- video games
+tags:
+- video games
+- terraria
+- super terraria world
 layout: post
-title: "Super Terraria World"
-description: "Super Terraria World is an RPG mod for the wildly popular building and exploration game."
-category: video games
+description: Super Terraria World is an RPG mod for the wildly popular building and
+  exploration game.
 featured: superterraria.png
-tags: [video games, terraria, super terraria world]
 amazonterm: terraria
 author: robk
 ---

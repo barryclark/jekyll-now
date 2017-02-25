@@ -1,10 +1,18 @@
 ---
-layout: post
 title: Huge Spellweaver Update
-description: Spellweaver just unvieled a huge update containing foil cards, new AI opponents, and more tournament prizes.
-category: video games
+date: 2016-09-22 00:00:00 Z
+categories:
+- video games
+tags:
+- video games
+- ccg
+- review
+- spellweaver
+- dream reactor
+layout: post
+description: Spellweaver just unvieled a huge update containing foil cards, new AI
+  opponents, and more tournament prizes.
 featured: spellweaver2.jpg
-tags: [video games, ccg, review, spellweaver, dream reactor]
 author: robk
 ---
 

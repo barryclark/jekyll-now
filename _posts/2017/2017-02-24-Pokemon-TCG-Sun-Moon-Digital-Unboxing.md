@@ -1,14 +1,20 @@
 ---
+title: Digital Unboxing Pokémon TCG Sun & Moon
+date: 2017-02-24 00:00:00 Z
+categories:
+- unboxing
+tags:
+- unboxing
+- games
+- pokemon tcg
+- video games
+- the pokemon company
 layout: post
-title: "Digital Unboxing Pokémon TCG Sun & Moon"
-description: "A digital unboxing of some new Pokémon Sun & Moon TCG cards."
-category: unboxing
+description: A digital unboxing of some new Pokémon Sun & Moon TCG cards.
 featured: sunmoontcg.png
-amazonterm: "Pokemon TCG"
-tags: [unboxing, games, pokemon tcg, video games, the pokemon company]
+amazonterm: Pokemon TCG
 author: robk
 ---
-
 
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/fsYx5APt4ck' frameborder='0' allowfullscreen></iframe></div>
 

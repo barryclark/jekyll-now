@@ -1,11 +1,18 @@
 ---
+title: Unboxing Santorini
+date: 2017-01-03 00:00:00 Z
+categories:
+- unboxing
+tags:
+- unboxing
+- games
+- santorini
+- roxley
 layout: post
-title: "Unboxing Santorini"
-description: "Santorini is a cute game from Roxley about building. Let's see what's inside!"
-category: unboxing
+description: Santorini is a cute game from Roxley about building. Let's see what's
+  inside!
 featured: santorini.jpg
 amazonterm: santorini
-tags: [unboxing, games, santorini, roxley]
 author: robk
 ---
 

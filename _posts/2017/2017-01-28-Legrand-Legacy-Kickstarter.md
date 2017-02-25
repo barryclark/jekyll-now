@@ -1,10 +1,16 @@
 ---
+title: Kickstarter - Legrand Legacy
+date: 2017-01-28 00:00:00 Z
+categories:
+- kickstarter
+tags:
+- kickstarter
+- video games
+- legrand legacy
+- semisoft
 layout: post
-title: "Kickstarter - Legrand Legacy"
-description: "A turn based RPG with beautiful visual. Legrand Legacy looks pretty amazing."
-category: kickstarter
+description: A turn based RPG with beautiful visual. Legrand Legacy looks pretty amazing.
 featured: legrandlegacy.jpg
-tags: [kickstarter, video games, legrand legacy, semisoft]
 author: robk
 ---
 

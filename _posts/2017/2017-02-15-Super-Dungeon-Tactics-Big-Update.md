@@ -1,11 +1,18 @@
 ---
+title: Super Dungeon Tactics v1.2 Brings Big Changes
+date: 2017-02-15 00:00:00 Z
+categories:
+- video games
+tags:
+- video games
+- super dungeon explore
+- super dungeon tactics
+- underbite games
 layout: post
-title: "Super Dungeon Tactics v1.2 Brings Big Changes"
-description: "Underbite has listened to fan feedback, and there's some big changes coming for Super Dungeon Tactics."
-category: video games
+description: Underbite has listened to fan feedback, and there's some big changes
+  coming for Super Dungeon Tactics.
 featured: sdetactics.png
-amazonterm: "super dungeon explore"
-tags: [video games, super dungeon explore, super dungeon tactics, underbite games]
+amazonterm: super dungeon explore
 author: robk
 ---
 

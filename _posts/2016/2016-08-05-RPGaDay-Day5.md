@@ -1,10 +1,15 @@
 ---
-layout: post
 title: "#RPGaDay 2016 - Day 5"
-description: "What story does your group tell about your character? Day 5 of #RPGaDay."
-category: games
+date: 2016-08-05 00:00:00 Z
+categories:
+- games
+tags:
+- games
+- rpgs
+- rpgaday
+layout: post
+description: 'What story does your group tell about your character? Day 5 of #RPGaDay.'
 featured: rpgaday.png
-tags: [games, rpgs, rpgaday]
 author: robk
 ---
 

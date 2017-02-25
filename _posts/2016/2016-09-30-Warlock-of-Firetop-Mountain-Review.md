@@ -1,11 +1,20 @@
 ---
+title: Review - The Warlock of Firetop Mountain
+date: 2016-09-30 00:00:00 Z
+categories:
+- review
+tags:
+- video games
+- review
+- warlock of firetop mountain
+- fighting fantasy
+- steve jackson
+- tin man games
 layout: post
-title: "Review - The Warlock of Firetop Mountain"
-description: "Steve Jackson's popular 80's adventure book is brought to life in Tin Man Games' Warlock of Firetop Mountain."
-category: review
+description: Steve Jackson's popular 80's adventure book is brought to life in Tin
+  Man Games' Warlock of Firetop Mountain.
 featured: firetop.png
-tags: [video games, review, warlock of firetop mountain, fighting fantasy, steve jackson, tin man games]
-amazonterm: "the warlock of firetop mountain"
+amazonterm: the warlock of firetop mountain
 amazoncat: Books
 author: robk
 ---

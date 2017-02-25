@@ -1,11 +1,19 @@
 ---
+title: Pokémon Generations Series Coming to YouTube
+date: 2016-09-13 00:00:00 Z
+categories:
+- other
+tags:
+- video games
+- pokemon
+- the pokemon company
+- gamefreak
+- nintendo
 layout: post
-title: "Pokémon Generations Series Coming to YouTube"
-description: "Pokémon Generations will be 18 episodes each running between 3 and 5 minutes in length, with the first two episodes launching September 16."
-category: other
+description: Pokémon Generations will be 18 episodes each running between 3 and 5
+  minutes in length, with the first two episodes launching September 16.
 featured: generations.jpg
-amazonterm: "pokemon generations"
-tags: [video games, pokemon, the pokemon company, gamefreak, nintendo]
+amazonterm: pokemon generations
 author: robk
 ---
 

@@ -1,10 +1,18 @@
 ---
-layout: post
 title: Unboxing Oh My Gods
-description: Oh My Gods is a game I first played at CT FIG. Let's unbox it and see what's inside.
-category: unboxing
+date: 2016-06-11 00:00:00 Z
+categories:
+- unboxing
+tags:
+- games
+- unboxing
+- oh my gods
+- gameworthy labs
+- ct fig
+layout: post
+description: Oh My Gods is a game I first played at CT FIG. Let's unbox it and see
+  what's inside.
 featured: ohmygods.jpg
-tags: [games, unboxing, oh my gods, gameworthy labs, ct fig]
 author: robk
 ---
 

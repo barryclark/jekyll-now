@@ -1,12 +1,20 @@
 ---
-layout: post
 title: Kickstarter - The Lords of Rock
-description: The Gods, all of them, are rocking out for your belief. The Lords of Rock looks amazing.
-category: kickstarter
+date: 2016-08-29 00:00:00 Z
+categories:
+- kickstarter
+tags:
+- games
+- kickstarter
+- the lords of rock
+- solarflare games
+layout: post
+description: The Gods, all of them, are rocking out for your belief. The Lords of
+  Rock looks amazing.
 featured: lordsofrock.jpg
-tags: [games, kickstarter, the lords of rock, solarflare games]
 author: robk
 ---
+
 <iframe style="float:left;margin-right:10px;margin-bottom:10px;" frameborder="0" height="420" scrolling="no" src="https://www.kickstarter.com/projects/bravefrontierstudios/the-lords-of-rock/widget/card.html?v=2" width="220"></iframe>
 
 >After ruling the universe for millennia, the gods have found their power diminishing and some have faded away completely. Those remaining are forced into a battle for their very survival: War would only lead to annihilation.

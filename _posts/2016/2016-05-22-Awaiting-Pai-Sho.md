@@ -1,10 +1,17 @@
 ---
-layout: post
 title: Awaiting Pai Sho
-description: Ever since gamers saw Pai Sho played on Nickelodean's Avatar The Last Airbender, they've been coming up with ways to play.
-category: games
+date: 2016-05-22 00:00:00 Z
+categories:
+- games
+tags:
+- games
+- avatar the last airbender
+- pai sho
+- lyris laser studio
+layout: post
+description: Ever since gamers saw Pai Sho played on Nickelodean's Avatar The Last
+  Airbender, they've been coming up with ways to play.
 featured: paisho.png
-tags: [games, avatar the last airbender, pai sho, lyris laser studio]
 author: robk
 ---
 

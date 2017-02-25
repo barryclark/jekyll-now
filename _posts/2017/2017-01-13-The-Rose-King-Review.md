@@ -1,11 +1,19 @@
 ---
+title: Review - The Rose King
+date: 2017-01-13 00:00:00 Z
+categories:
+- review
+tags:
+- review
+- games
+- the rose king
+- thames
+- kosmos
 layout: post
-title: "Review - The Rose King"
-description: "The Rose King used to be hard to obtain in the US, but Thames & KOSMOS brought us a new edition last year."
-category: review
+description: The Rose King used to be hard to obtain in the US, but Thames & KOSMOS
+  brought us a new edition last year.
 featured: theroseking.jpg
-amazonterm: "the rose king"
-tags: [review, games, the rose king, thames, kosmos]
+amazonterm: the rose king
 author: robk
 ---
 

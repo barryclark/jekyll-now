@@ -1,10 +1,17 @@
 ---
-layout: post
 title: Card Master Preview
-description: Card Master is a Triple Triad clone by Jeff Hurcomb, but does it live up to the classic Final Fantasy 8 mini-game?
-category: preview
+date: 2016-06-29 00:00:00 Z
+categories:
+- preview
+tags:
+- games
+- preview
+- card master
+- triple triad
+layout: post
+description: Card Master is a Triple Triad clone by Jeff Hurcomb, but does it live
+  up to the classic Final Fantasy 8 mini-game?
 featured: cardmaster.png
-tags: [games, preview, card master, triple triad]
 author: robk
 ---
 

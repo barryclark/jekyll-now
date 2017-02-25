@@ -1,10 +1,16 @@
 ---
+title: 'Out There: Ω Edition Free on Amazon Underground'
+date: 2016-10-13 00:00:00 Z
+categories:
+- video games
+tags:
+- video games
+- out there
+- mi-clos studio
 layout: post
-title: "Out There: Ω Edition Free on Amazon Underground"
-description: "Out There is a hard sci-fi space exploration game blending roguelike, resource management and gamebook mechanics. It's also free on Amazon Underground."
-category: video games
+description: Out There is a hard sci-fi space exploration game blending roguelike,
+  resource management and gamebook mechanics. It's also free on Amazon Underground.
 featured: outthere.png
-tags: [video games, out there, mi-clos studio]
 author: robk
 ---
 

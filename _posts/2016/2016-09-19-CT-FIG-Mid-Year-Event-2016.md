@@ -1,10 +1,15 @@
 ---
-layout: post
 title: Connecticut Festival of Indie Games Mid Year Event Wrap Up
-description: I had a great time at CT FIG, played some sweet games, and met some amazing new people.
-category: conventions
+date: 2016-09-19 00:00:00 Z
+categories:
+- conventions
+tags:
+- conventions
+- ctfig
+layout: post
+description: I had a great time at CT FIG, played some sweet games, and met some amazing
+  new people.
 featured: ctfig.png
-tags: [conventions, ctfig]
 author: robk
 ---
 

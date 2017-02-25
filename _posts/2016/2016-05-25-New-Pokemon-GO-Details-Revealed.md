@@ -1,10 +1,16 @@
 ---
-layout: post
 title: New Pokemon GO Details Revealed
-description: More details for Pokémon GO came out from The Pokémon Company and Niantic, Inc. including information on the battle system, a new peripheral, and microtransactions.
+date: 2016-05-25 00:00:00 Z
+categories:
+- video games
+tags:
+- video games
+- pokemon
+- pokemon go
+layout: post
+description: More details for Pokémon GO came out from The Pokémon Company and Niantic,
+  Inc. including information on the battle system, a new peripheral, and microtransactions.
 featured: pokemongo.png
-category: video games
-tags: [video games, pokemon, pokemon go]
 author: robk
 ---
 

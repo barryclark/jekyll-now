@@ -1,10 +1,17 @@
 ---
-layout: post
 title: Unboxing Overseers
-description: "I just recieved my copy of Overseers Deluxe following a great Kickstarter campaign. Let's see what's inside."
-category: unboxing
+date: 2016-12-07 00:00:00 Z
+categories:
+- unboxing
+tags:
+- games
+- unboxing
+- Overseers
+- thundergryph
+layout: post
+description: I just recieved my copy of Overseers Deluxe following a great Kickstarter
+  campaign. Let's see what's inside.
 featured: overseers.jpg
-tags: [games, unboxing, Overseers, thundergryph]
 author: robk
 ---
 

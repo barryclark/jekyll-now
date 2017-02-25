@@ -1,10 +1,15 @@
 ---
-layout: post
 title: Card Hunter
+date: 2016-04-21 00:00:00 Z
+categories:
+- video games
+tags:
+- video games
+- card hunter
+- blue manchu
+layout: post
 description: Card Hunter has tons of 80's RPG nostalgia in a humorous, tactical game.
-category: video games
 featured: cardhunter.png
-tags: [video games, card hunter, blue manchu]
 author: robk
 ---
 
