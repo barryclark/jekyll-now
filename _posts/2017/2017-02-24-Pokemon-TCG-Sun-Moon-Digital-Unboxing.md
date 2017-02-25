@@ -20,4 +20,4 @@ author: robk
 
 The Pokémon Company recently sent me some cards from the new Sun & Moon set: 1 of each of the three new Theme Decks and 4 booster packs. Of course my kids eagerly divvied up the loot and eagerly unwrapped everything. This is to be expected in our household. Dad asks only one thing: save the code cards for him. I then use those code cards to import the packs and Theme Decks into the Pokémon TCG Online client. The result of which is what you see above. A digital unboxing.
 
-I haven't had a chance to play with any of the new cards yet, but there's some great looking ones in there. The Incineroar GX is particularly nice.
+I haven't had a chance to play with any of the new cards yet, but there's some great looking ones in there. The Incineroar GX is particularly nice. 
