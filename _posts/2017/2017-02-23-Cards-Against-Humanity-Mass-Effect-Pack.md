@@ -1,8 +1,7 @@
 ---
 title: Cards Against Humanity and BioWare Release Mass Effect Pack for $1
 date: 2017-02-23 00:00:00 Z
-categories:
-- games
+category: games
 tags:
 - video games
 - games

@@ -1,8 +1,7 @@
 ---
 title: Unboxing Gamer Deck 1
 date: 2016-12-29 00:00:00 Z
-categories:
-- unboxing
+category: unboxing
 tags:
 - unboxing
 - gamer deck

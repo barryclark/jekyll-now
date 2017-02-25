@@ -1,8 +1,7 @@
 ---
 title: The Silver Case HD Remaster
 date: 2016-07-20 00:00:00 Z
-categories:
-- video games
+category: video games
 tags:
 - video games
 - suda51

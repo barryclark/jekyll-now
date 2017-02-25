@@ -1,8 +1,7 @@
 ---
 title: Tao Long
 date: 2017-01-03 00:00:00 Z
-categories:
-- kickstarter
+category: kickstarter
 tags:
 - kickstarter
 - games

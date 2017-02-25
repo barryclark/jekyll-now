@@ -1,8 +1,7 @@
 ---
 title: 2017 Toy of the Year Award Finalists Unveiled by Toy Industry Association
 date: 2016-11-22 00:00:00 Z
-categories:
-- news
+category: news
 tags:
 - news
 - toys
