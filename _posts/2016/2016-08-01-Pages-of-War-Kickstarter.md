@@ -1,7 +1,8 @@
 ---
 title: Kickstarter - Pages of War
 date: 2016-08-01 00:00:00 Z
-category: kickstarter
+categories:
+- kickstarter
 tags:
 - games
 - kickstarter

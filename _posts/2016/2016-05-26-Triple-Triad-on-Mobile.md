@@ -1,7 +1,8 @@
 ---
 title: Triple Triad on Mobile
 date: 2016-05-26 00:00:00 Z
-category: video games
+categories:
+- video games
 tags:
 - video games
 - triple triad

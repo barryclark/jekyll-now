@@ -1,7 +1,8 @@
 ---
 title: Unboxing Hasbro's Beyblade Burst
 date: 2016-10-11 00:00:00 Z
-category: unboxing
+categories:
+- unboxing
 tags:
 - toys
 - beyblade

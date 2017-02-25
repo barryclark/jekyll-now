@@ -1,7 +1,8 @@
 ---
 title: Game Designer Modifies Game Developer Barbie for His Wife
 date: 2016-06-23 00:00:00 Z
-category: toys
+categories:
+- toys
 tags:
 - toys
 - barbie

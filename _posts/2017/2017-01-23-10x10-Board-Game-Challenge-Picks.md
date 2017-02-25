@@ -1,7 +1,8 @@
 ---
 title: 10 x 10 Board Game Challenge Picks
 date: 2017-01-23 00:00:00 Z
-category: news
+categories:
+- news
 tags:
 - games
 - news

@@ -1,7 +1,8 @@
 ---
 title: New Pokemon and Features Announced for Pokemon Sun and Moon
 date: 2016-07-19 00:00:00 Z
-category: video games
+categories:
+- video games
 tags:
 - video games
 - pokemon

@@ -1,7 +1,8 @@
 ---
 title: Yu-Gi-Oh! Legacy of the Duelist now available on Steam
 date: 2016-12-08 00:00:00 Z
-category: video games
+categories:
+- video games
 tags:
 - video games
 - konami

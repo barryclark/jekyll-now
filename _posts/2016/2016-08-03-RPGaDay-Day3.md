@@ -1,7 +1,8 @@
 ---
 title: "#RPGaDay 2016 - Day 3"
 date: 2016-08-03 00:00:00 Z
-category: games
+categories:
+- games
 tags:
 - games
 - rpgs

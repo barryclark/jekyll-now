@@ -1,7 +1,8 @@
 ---
 title: Kickstarter - Legrand Legacy
 date: 2017-01-28 00:00:00 Z
-category: kickstarter
+categories:
+- kickstarter
 tags:
 - kickstarter
 - video games
