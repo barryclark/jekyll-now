@@ -5,7 +5,7 @@ description: Spellweaver just unvieled a huge update containing foil cards, new 
 category: video games
 featured: spellweaver2.jpg
 tags: [video games, ccg, review, spellweaver, dream reactor]
-author: Rob Kalajian
+author: robk
 ---
 
 Dream Reactor released a big update to Spellweaver yesterday including foil cards, new AI opponents, and a reworked tournament system.

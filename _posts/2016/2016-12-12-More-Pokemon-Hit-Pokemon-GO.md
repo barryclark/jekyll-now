@@ -6,7 +6,7 @@ category: video games
 featured: pokexmas.jpg
 amazonterm: pokemon
 tags: [video games, niantic, the pokemon company, nintedo, pokemon go]
-author: Rob Kalajian
+author: robk
 ---
 
 ![Santa Pikachu](/images/pokemongo/santapikachu.jpg)

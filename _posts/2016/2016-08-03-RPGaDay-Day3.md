@@ -5,7 +5,7 @@ description: "Character moment you're proudest of? Day 3 of #RPGaDay."
 category: games
 featured: rpgaday.png
 tags: [games, rpgs, rpgaday]
-author: Rob Kalajian
+author: robk
 ---
 
 **Character moment you're proudest of?**

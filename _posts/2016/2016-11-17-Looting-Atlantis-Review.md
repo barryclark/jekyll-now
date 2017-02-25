@@ -6,7 +6,7 @@ category: review
 featured: lootingatlantis.jpg
 amazonterm: "Looting Atlantis"
 tags: [games, review, looting atlantis, shoot again games]
-author: Rob Kalajian
+author: robk
 ---
 
 <h2>Prelude</h2>

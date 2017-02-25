@@ -1,31 +1,23 @@
-#
-# This file contains configuration flags to customize your site
-#
-
-# Name of your site (displayed in the header)
+---
+title: Rkalajian.Github.Io
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
 name: A Pawn's Perspective
-
-# Short bio or description (displayed in the header)
 description: Toy and Game reviews, unboxings, and more.
-
-# URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://secure.gravatar.com/userimage/204666/806084f3e9206b3e4cae74875d7bff5a?size=250
-
-#
-# Flags below are optional
-#
-
-#pagination
-
 paginate: 8
-
-# Includes an icon in the footer for each username you enter
 footer-links:
-  dribbble:
+  dribbble: 
   email: rkalajian@pawnsperspective.com
   facebook: pawnsperspective
-  flickr:
-  github:
+  flickr: 
+  github: 
   instagram: pawnsperspective
   linkedin: company/11005917
   periscope: perspectivepawn
@@ -33,62 +25,42 @@ footer-links:
   rss: rss
   twitch: rkalajian
   twitter: perspectivepawn
-  stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
+  stackoverflow: 
   youtube: channel/UCn0oN0SslDDS5Od5usgJ9fw
-
-# Authors
 authors:
   robk:
     display_name: Rob Kalajian
+    avatar: "/images/me.jpg"
+    blurb: Father of 4. Husband to 1. Overall Geek. Rob is the owner of A Pawn's Perspective
+      and an Editor over at Purple Pawn. During the day he's a Senior Web Developer
+      for an ad agency in Avon, CT. In his free time...he has no free time. Games.
+      Toys. Books. Scouting.
     email: rkalajian@pawnsperspective.com
-    apage: about
+    apage: "/about"
   frankg:
     display_name: Frank Grip
+    avatar: https://secure.gravatar.com/userimage/204666/806084f3e9206b3e4cae74875d7bff5a?size=250
+    blurb: Frank is an attorney and family man currently based out of Las Vegas. He's
+      a long time gaming enthusiast with a tabletop interest in most dungeon crawlers
+      and map strategy games. If it has dice and minis, it probably has his attention.
     email: fgrip@pawnsperspective.com
-    apage: author-frankgrip
-
-# Enter your Disqus shortname (not your username) to enable commenting on posts
-# You can find your shortname on the Settings page of your Disqus account
+    apage: "/author-frankgrip"
 disqus: rck2
-
-# Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
 google_analytics: UA-383978-14
-
-# Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
-# Used for Sitemap.xml and your RSS feed
 url: http://pawnsperspective.com
-
-# If you're hosting your site at a Project repository on GitHub pages
-# (http://yourusername.github.io/repository-name)
-# and NOT your User repository (http://yourusername.github.io)
-# then add in the baseurl here, like this: "/repository-name"
-baseurl: ""
-
-#
-# !! You don't need to change any of the configuration flags below !!
-#
-
+baseurl: ''
 highlighter: rouge
-permalink: /:title/
-
-# The release of Jekyll Now that you're using
+permalink: "/:title/"
 version: v1.1.0
-
-# Set the Sass partials directory, as we're using @imports
 sass:
   sass_dir: _scss
-  style: :expanded # You might prefer to minify using :compressed
-
-# Use the following plug-ins
+  style: :expanded
 gems:
-  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
-  - jekyll-paginate #pagination
-  - jekyll-rss #RSS
-
-
-# Exclude these files from your production _site
+- jekyll-sitemap
+- jekyll-paginate
+- jekyll-rss
 exclude:
-    - Gemfile
-    - Gemfile.lock
-    - LICENSE
-    - README.md
+- Gemfile
+- Gemfile.lock
+- LICENSE
+- README.md

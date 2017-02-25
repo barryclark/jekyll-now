@@ -5,7 +5,7 @@ description: In the spirit of Tabletop Day, I'd like to give a shout out to all 
 featured: ctfig.png
 category: conventions
 tags: [ct fig, games, international tabletop day]
-author: Rob Kalajian
+author: robk
 ---
 
 Not only was yesterday CT FIG, but it was also [International Tabletop Day](http://geekandsundry.com/table-top-day/). In the spirit of Tabletop Day, I'd like to give a shout out to all the awesome games I played while at the festival.

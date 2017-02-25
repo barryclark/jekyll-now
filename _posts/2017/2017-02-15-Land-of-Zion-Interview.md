@@ -5,7 +5,7 @@ description: "Eric Bittermann answers some questions about Sky Kingdom Games' La
 category: interview
 featured: landofzion.jpg
 tags: [games, land of zion, kickstarter, sky kingdom games, interview]
-author: Rob Kalajian
+author: robk
 ---
 
 Over the past few days I've shot some questions back and forth with Eric Bittermann of Sky Kingdom Games about Land of Zion, and Expandable Card Game currently up on Kickstarter. I'd seen some buzz about it online and was immediately drawn to the game's style. Below you'll find the full interview, with link to the Kickstarter project at the bottom.

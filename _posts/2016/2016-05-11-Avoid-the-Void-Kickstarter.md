@@ -5,7 +5,7 @@ description: One of the things I don't regularly do is back Kickstarter projects
 featured: avoidthevoid.png
 category: kickstarter
 tags: [games, kickstarter, avoid the void, geek fever games]
-author: Rob Kalajian
+author: robk
 ---
 
 <iframe style="float:right;margin-left:10px;margin-bottom:10px;" frameborder="0" height="420" scrolling="no" src="https://www.kickstarter.com/projects/geekfevergames/avoid-the-void-a-board-game-of-chaos-and-survival/widget/card.html?v=2" width="220"></iframe>One of the things I don't regularly do is back Kickstarter projects. Sure, I cover plenty of them for [Purple Pawn](http://purplepawn.com), but I generally ended up getting them for free for writing such coverage. I'd like to change that a bit here on A Pawn's Perspective. Ideally I'd like to back a project per month. Something I'm really interested in. Cream of the crop in my opinion and price range.

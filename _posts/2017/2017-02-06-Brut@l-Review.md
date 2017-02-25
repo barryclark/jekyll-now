@@ -5,7 +5,7 @@ description: "Stormcloud Games brings the past to the present with Brut@l, a mod
 category: review
 featured: brut@l.png
 tags: [review, video games, brut@l, stormcloud games]
-author: Rob Kalajian
+author: robk
 ---
 
 ![Brut@l](/images/featured/brut@l.png){: .float-right}

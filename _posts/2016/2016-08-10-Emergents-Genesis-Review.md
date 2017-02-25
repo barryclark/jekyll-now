@@ -6,7 +6,7 @@ category: review
 featured: emergents.jpg
 amazonterm: "emergents genesis"
 tags: [games, review, emergents genesis, urban island games]
-author: Rob Kalajian
+author: robk
 ---
 
 ![Emergents Art](/images/emergents/emergents.png)

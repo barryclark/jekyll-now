@@ -5,7 +5,7 @@ description: "Warlock's Tower is a puzzle game arriving in 2017 with an old Game
 category: video games
 featured: wizardstower.png
 tags: [video games, warlock's tower, midipixel studio]
-author: Rob Kalajian
+author: robk
 ---
 
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/-vVddyXUPbg' frameborder='0' allowfullscreen></iframe></div>

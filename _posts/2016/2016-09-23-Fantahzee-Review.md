@@ -6,7 +6,7 @@ category: review
 featured: fantahzee.png
 amazonterm: "AEG games"
 tags: [games, review, fantahzee, aeg]
-author: Rob Kalajian
+author: robk
 ---
 
 <img src="/images/fantahzee/fantahzee.png" alt="Fantahzee Box" class="float-right" />

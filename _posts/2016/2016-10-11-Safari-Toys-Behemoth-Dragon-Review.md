@@ -6,7 +6,7 @@ category: review
 featured: behemoth.jpg
 amazonterm: "Safari Toys ltd"
 tags: [toys, safari ltd, behemoth, mythical realms, review, crystal cavern dragon]
-author: Rob Kalajian
+author: robk
 ---
 
 <h2>Prelude</h2>

@@ -6,7 +6,7 @@ category: review
 featured: element2.jpg
 amazonterm: "rather dashing element"
 tags: [review, games, element, rather dashing games]
-author: Rob Kalajian
+author: robk
 ---
 
 ![Element](/images/featured/element2.jpg){: .float-right}

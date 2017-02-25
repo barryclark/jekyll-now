@@ -6,7 +6,7 @@ category: review
 featured: hexcasters2.jpg
 amazonterm: "Hex Casters"
 tags: [games, review, hex casters, hasbro]
-author: Rob Kalajian
+author: robk
 ---
 
 <h2>Prelude</h2>

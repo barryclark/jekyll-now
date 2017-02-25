@@ -5,7 +5,7 @@ description: "Pocket Kingdom is a steampunk puzzle platformer that recalls the d
 category: review
 featured: pocketkingdom.jpg
 tags: [review, video games, shift dx, choice publishing]
-author: Rob Kalajian
+author: robk
 ---
 
 ![Pocket Kingdom](/images/pocketkingdom/pocketkingdom.jpg){: .float-right}

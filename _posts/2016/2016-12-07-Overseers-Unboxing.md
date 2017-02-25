@@ -5,7 +5,7 @@ description: "I just recieved my copy of Overseers Deluxe following a great Kick
 category: unboxing
 featured: overseers.jpg
 tags: [games, unboxing, Overseers, thundergryph]
-author: Rob Kalajian
+author: robk
 ---
 
 Thundergryph Games ran a really successful campaign with Overseers and I was delighted when the Deluxe edition of the game arrived on my doorstep last night. Not really wanting to wait, I dug right in and took some photos.

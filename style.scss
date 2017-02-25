@@ -424,6 +424,30 @@ footer {
   margin-bottom: 10px;
 }
 
+//Author stuff
+
+#authorblurb {
+  background-color: #edeef0;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  margin-bottom: 10px;
+  height: 180px;
+
+  img {
+    float: left;
+    margin-right:20px;
+    margin-left:20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+  }
+
+  p {
+    font-size: 12px;
+    margin-right: 50px;
+  }
+}
+
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "_highlights";

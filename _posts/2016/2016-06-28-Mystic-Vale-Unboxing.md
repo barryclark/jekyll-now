@@ -5,7 +5,7 @@ description: I've been eagerly awaiting Mystic Vale since I saw a prototype at T
 category: unboxing
 featured: mysticvale.jpg
 tags: [games, unboxing, mystic vale, aeg]
-author: Rob Kalajian
+author: robk
 ---
 
 Back during Toy Fair 2015 I saw an early set of notes for Mystic Vale at the AEG booth. To be more specific, it was rough information about the Card Crafting System, as the game was still early in development and didn't even have a name or specific theme. Ever since that day I've been waiting for AEG to announce what the game would be. Then came the news about Mystic Vale. I couldn't wait to get my hands on it.

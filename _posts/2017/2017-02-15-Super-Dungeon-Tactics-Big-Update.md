@@ -6,7 +6,7 @@ category: video games
 featured: sdetactics.png
 amazonterm: "super dungeon explore"
 tags: [video games, super dungeon explore, super dungeon tactics, underbite games]
-author: Rob Kalajian
+author: robk
 ---
 
 [Super Dungeon Tactics](http://store.steampowered.com/app/463160), for those who are unfamiliar, is a digital take on the wildly popular dungeon crawler, [Super Dungeon Explore](http://amzn.to/2liER6S). While it's not a true digital port, it's familiar enough that players of SDE will feel right at home. I saw SDT at PAX East last year and have been eagerly awaiting its release. It's out now and there's some big changes on the way based off player feedback gathered by Underbite Games. On Thursday the following updates will take effect in v1.2:

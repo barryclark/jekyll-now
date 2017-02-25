@@ -6,7 +6,7 @@ category: review
 featured: shiftdx.png
 amazonterm: "3ds"
 tags: [review, video games, shift dx, choice publishing]
-author: Rob Kalajian
+author: robk
 ---
 
 ![Shift DX](/images/featured/shiftdx.png){: .float-right}

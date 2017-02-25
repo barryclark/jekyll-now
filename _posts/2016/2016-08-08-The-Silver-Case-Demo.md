@@ -5,7 +5,7 @@ description: The Silver Case HD remaster now has demo containing the first chapt
 category: video games
 featured: silvercase.png
 tags: [video games, suda51, the silver case, grasshopper manufacture]
-author: Rob Kalajian
+author: robk
 ---
 
 I recently posted about the upcoming visual novel, [The Silver Case](http://pawnsperspective.com/the-silver-case-hd-remaster/). Today Grasshopper Manufacture Inc. has released a playable demo of the game on Steam and PLAYISM. The demo contains the first chapter of the game, "Decoyman." The full game will be released in Fall 2016.

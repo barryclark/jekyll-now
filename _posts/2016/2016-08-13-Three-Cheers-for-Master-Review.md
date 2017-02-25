@@ -6,7 +6,7 @@ category: review
 featured: threecheers.jpg
 amazonterm: "Three cheers for master"
 tags: [games, review, three cheers for master, atlas games]
-author: Rob Kalajian
+author: robk
 ---
 
 <img src="/images/threecheers/3cheers.jpg" alt="Three Cheers for Master box" class="float-right" />

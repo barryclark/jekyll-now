@@ -6,7 +6,7 @@ category: review
 featured: wakanda.jpg
 amazonterm: wakanda
 tags: [games, review, wakanda, blue orange games]
-author: Rob Kalajian
+author: robk
 ---
 
 <img src="/images/wakanda/wakanda.jpg" alt="Wakanda" width="300" class="float-right" />

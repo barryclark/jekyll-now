@@ -6,7 +6,7 @@ category: video games
 featured: redblue.jpg
 amazonterm: "pokemon sun and moon"
 tags: [video games, pokemon, pokemon sun, pokemon moon, the pokemon company, gamefreak, nintendo]
-author: Rob Kalajian
+author: robk
 ---
 
 The Pokémon Company International and Nintendo showcased the final evolutions of Pokémon Sun and Pokémon Moon, along with the Alolan Guardians and a few other new Pokémon.

@@ -5,7 +5,7 @@ description: Geek Fever Games will be kickstarting Dead Man's Doubloons in Augus
 category: games
 featured: deadmansdoubloons.jpg
 tags: [games, dead man's doubloons, geek fever games, tabletop simulator]
-author: Rob Kalajian
+author: robk
 ---
 
 Tonight I had a chance to play [Geek Fever Games](http://geekfevergames.com)' upcoming game, Dead Man's Doubloons. The cool part? I got to play over Tabletop Simulator and Skype with the game's designer, Jason Miceli.

@@ -6,7 +6,7 @@ category: video games
 featured: earthsdawn.png
 amazonterm: "earth's dawn"
 tags: [video games, earth's dawn, rising star games, oneoreight]
-author: Rob Kalajian
+author: robk
 ---
 
 A press release for Earth's Dawn, a 2D action side-scroller, just hit my desk yesterday and immediately caught my eye. Developed by [oneoreight](http://one-or-eight.co.jp/) and being published in the US by [Rising Star Games](http://www.risingstargames.com/), it hits [Steam](http://reverbinc.us14.list-manage2.com/track/click?u=3bf7cfebe67d59589d33ba07a&id=01b60ef331&e=047d414620) on December 7th. It'll cost $29.99 but will be 20% during its launch period.

@@ -6,7 +6,7 @@ category: review
 featured: babayaga.jpg
 amazonterm: "baba yaga"
 tags: [games, review, baba yaga, gamewright]
-author: Rob Kalajian
+author: robk
 ---
 
 <img src="/images/babayaga/baba.jpg" alt="Baba Yaga" width="300" class="float-right" />

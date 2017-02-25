@@ -6,7 +6,7 @@ category: review
 featured: megaman1.jpg
 amazonterm: "mega man board game"
 tags: [games, review, mega man, jasco games]
-author: Rob Kalajian
+author: robk
 ---
 
 ![Mega Man Board Game](/images/megaman/promo.jpg)

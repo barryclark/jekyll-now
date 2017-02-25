@@ -6,7 +6,7 @@ category: games
 featured: jungledragonareana.jpg
 amazonterm: "arena of the planeswalkers"
 tags: [unboxing, games, toys, safari, hasbro, magic the gathering, arena of the planeswalkers]
-author: Rob Kalajian
+author: robk
 ---
 
 ***Update*** *There are now 3 Jungle Dragon cards, each with a different ability. Test them out and comment on which one you like best!*

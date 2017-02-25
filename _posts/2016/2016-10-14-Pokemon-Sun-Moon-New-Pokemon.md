@@ -6,7 +6,7 @@ category: video games
 featured: silvally.png
 amazonterm: "pokemon sun and moon"
 tags: [video games, pokemon, pokemon sun, pokemon moon, the pokemon company, gamefreak, nintendo]
-author: Rob Kalajian
+author: robk
 ---
 
 Let's start this post off with some new Pokémon that were announced.

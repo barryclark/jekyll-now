@@ -5,7 +5,7 @@ description: "tinyBuild's The Final Station is one part train sim, one part plat
 category: review
 featured: tfs.png
 tags: [video games, review, the final station, tinybuild, do my best]
-author: Rob Kalajian
+author: robk
 ---
 
 <img src="/images/finalstation/hero.png" alt="Hero" class="float-right" />

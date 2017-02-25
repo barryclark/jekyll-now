@@ -5,7 +5,7 @@ description: "Dragoon is a great game. The new expansion adds humans to the mix,
 category: games
 featured: dragoonbarb.png
 tags: [games, dragoon, lay waste games]
-author: Rob Kalajian
+author: robk
 ---
 
 [Lay Waste Games](http://www.laywastegames.com) announced a [print-and-play beta](https://www.dropbox.com/s/oszkzkn4fp7wi4r/DragoonExpPNP_Beta3.zip?dl=0) of their upcoming 5-6 Player expansion for Dragoon. The expansion adds humans into the mix, specifically a Barbarian and Rouge. Each has their own nasty way to play and cause trouble for those pesky dragons.

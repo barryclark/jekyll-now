@@ -6,7 +6,7 @@ category: review
 featured: attackontitan.png
 amazonterm: "attack on titan"
 tags: [review, games, attack on titan, cryptozoic, cerberus]
-author: Rob Kalajian
+author: robk
 ---
 
 ![Attack on Titan](/images/featured/attackontitan.png){: .float-right}

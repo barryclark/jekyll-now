@@ -6,7 +6,7 @@ category: unboxing
 featured: ogre6th.jpg
 amazonterm: "Steve Jackson OGRE"
 tags: [unboxing, games, ogre, steve jackson games]
-author: Rob Kalajian
+author: robk
 ---
 
 Steve Jackson's OGRE is a classic wargame that has stood the test of time. There's been a few modern releases, [OGRE Pocket Edition](http://amzn.to/2lCV9Hz) which was a faithful reproduction of the original, and [OGRE Designer's Edition](http://amzn.to/2kIyEBF), a recording breaking Kickstarter release that was *massive* in scale. Now Steve Jackson Games has released [OGRE 6th Edition](http://amzn.to/2lD333Q), a version that captures the quality of the Designer's Edition but makes it a bit more manageable both in size and price.

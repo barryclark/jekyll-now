@@ -6,7 +6,7 @@ category: review
 featured: goaway.jpg
 amazonterm: "Go away monster"
 tags: [games, review, go away monster, gamewright]
-author: Rob Kalajian
+author: robk
 ---
 
 <img src="/images/goawaymonster/goawaynew.jpg" alt="Go Away Monster, 2016 Edition" width="300" class="float-right" />

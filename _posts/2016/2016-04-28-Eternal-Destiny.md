@@ -5,7 +5,7 @@ description: Eternal Destiny is more about boobs than gameplay, and it's complet
 featured: eternal-destiny.png
 category: video games
 tags: [video games, eternal destiny]
-author: Rob Kalajian
+author: robk
 ---
 
 Exploitive Anime: Animation Card Battle would have been a better name for this pile of rubbish. The original press release I got for this game promised "an epic card game inspired by myths, legends, and H.P. Lovecraft." I don't know what the hell they were talking about, because I'm not seeing much Lovecraft here.

@@ -5,7 +5,7 @@ description: "Most amazing thing a game group did for their community? Day 6 of 
 category: games
 featured: rpgaday.png
 tags: [games, rpgs, rpgaday]
-author: Rob Kalajian
+author: robk
 ---
 
 **Most amazing thing a game group did for their community?**

@@ -5,7 +5,7 @@ description: "Twin Flames is a 2D action platformer with roguelike elements to s
 category: kickstarter
 featured: twinflames.jpg
 tags: [video games, twin flames, kickstarter, fat panda games]
-author: Rob Kalajian
+author: robk
 ---
 
 My first-ever video game Kickstarter pick is Fat Panda Games' [Twin Flames](http://twinflamesgame.com). It's actually not on Kickstarter yet but should be soon.

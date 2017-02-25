@@ -6,7 +6,7 @@ category: unboxing
 featured: hasbroburst.jpg
 amazonterm: "Beyblade burst"
 tags: [toys, beyblade, hasbro, beyblade burst]
-author: Rob Kalajian
+author: robk
 ---
 
 I finally got some samples in of Hasbro's new Beyblade Burst Beys. These are currently already out in Canada and will be in on US shelves in January of 2017. So far I like what I see with the exceptions of the launchers and stadiums. I'll soon post some video of the Beys in action, but until there here're some shots of the actual Beys themselves. I've also included a pic of the Hasbro launcher next to the far superior Takara Tomy launcher, and a shot of some of the new Hasbro wheels above their Takara Tomy counterparts.

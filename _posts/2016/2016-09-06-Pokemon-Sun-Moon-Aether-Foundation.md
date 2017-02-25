@@ -6,7 +6,7 @@ category: video games
 featured: pokefinder.jpg
 amazonterm: "pokemon sun and moon"
 tags: [video games, pokemon, pokemon sun, pokemon moon, the pokemon company, gamefreak, nintendo]
-author: Rob Kalajian
+author: robk
 ---
 
 Some big news from The Pokémon Company today about the differences between Sun and Moon. Usually the different versions of a release have certain Pokémon that can only be caught in each one. Sun and Moon are also different in that the internal timer of the games are different. Sun's time will coincide with the system clock of the 3DS, while Moon's time will be shifted by 12 hours. Players will encounter different Pokémon on the same route depending on whether it is day or night, which means players will have different experiences according to their chosen version of the game.

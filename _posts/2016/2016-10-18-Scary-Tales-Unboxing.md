@@ -6,7 +6,7 @@ category: unboxing
 featured: scarytales.jpg
 amazonterm: "Storyline"
 tags: [games, unboxing, storyline, asmodee, scary tales]
-author: Rob Kalajian
+author: robk
 ---
 
 I've already [reviewed](http://www.purplepawn.com/2016/05/second-look-storyline-fairy-tales/) and [unboxed](http://pawnsperspective.com/Storyline-Unboxing/) [Storyline: Fairy Tales](https://www.amazon.com/gp/product/B01ABYSWP4/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B01ABYSWP4&linkCode=as2&tag=pawnsperspect-20&linkId=8529a8350c86f5f6da37a8274cdfeffb). Now Asmodee has released Storyline: Scarytales just in time for Halloween. It's the same game, just spookier.

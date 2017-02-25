@@ -6,7 +6,7 @@ category: games
 featured: paishoboard.png
 amazonterm: "avatar the last airbender"
 tags: [games, pai sho, skud pai sho]
-author: Rob Kalajian
+author: robk
 ---
 
 [Skud Pai Sho](https://skudpaisho.wordpress.com) is a set of rules for playing Pai Sho using the [Wiki Pai Sho](http://paisho.pbworks.com/w/page/24174526/Wiki%20Pai%20Sho) tile set. I've been trying to get a game to the table for some time, having received a beautiful Pai Sho set from [Lyris Laser Studio](http://lyrislaser.com/product/pai-sho-board/), but it's been tough for some reason. Now, the creator of the Skud Pai Sho variation has created a [play-by-email interface](http://skudpaisho.com) for playing the game.

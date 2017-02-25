@@ -4,7 +4,7 @@ title: A Pawn's Perspective
 description: Site name change, perspective change.
 category: news
 tags: [news, purple pawn]
-author: Rob Kalajian
+author: robk
 ---
 
 For a long time I've never really had a direction on this blog, or any of its previous incarnations. I've decided to change that, and start a focus to these posts.

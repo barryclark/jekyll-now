@@ -6,7 +6,7 @@ category: review
 featured: yeti.jpg
 amazonterm: "yeti game"
 tags: [games, review, yeti, aeg, pegasus spiele]
-author: Rob Kalajian
+author: robk
 ---
 
 <img src="/images/yeti/box.jpg" alt="Yeti Box" width="300" class="float-right" />

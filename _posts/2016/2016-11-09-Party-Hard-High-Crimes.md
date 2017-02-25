@@ -5,7 +5,7 @@ description: "Party Hard has a new story DLC coming out. It also has some intera
 category: video games
 featured: partyhard.jpg
 tags: [video games, party hard, high crimes, tinybuild]
-author: Rob Kalajian
+author: robk
 ---
 
 ![High Crimes](/images/partyhard/highcrimes.gif){: .center }

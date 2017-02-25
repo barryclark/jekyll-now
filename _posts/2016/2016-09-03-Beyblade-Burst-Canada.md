@@ -6,7 +6,7 @@ category: toys
 featured: Beybladeburst_logo.png
 amazonterm: "beyblade burst"
 tags: [toys, beyblade, hasbro, beyblade burst]
-author: Rob Kalajian
+author: robk
 ---
 
 Bey Brad over at the World Beyblade Organization has posted [some pics](https://worldbeyblade.org/Thread-Hasbro-s-Beyblade-Burst-OUT-in-Canada-First-Photos-LOTS-of-images) of Beyblade Burst on shelves in Canada. Toronto, Ontario, to be exact.

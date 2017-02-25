@@ -6,7 +6,7 @@ category: toys
 featured: behemoth.jpg
 amazonterm: "Safari Toys ltd"
 tags: [toys, safari toys, behemoth, mythical realms]
-author: Rob Kalajian
+author: robk
 ---
 
 Safari Toys has announced [eight new toys](https://www.safariltd.com/new-dragon-animal-dinosaur-toys/?mc_cid=086c062ed3&mc_eid=1308119b49) that are now available for purchase. One of those stood out to me immediately.

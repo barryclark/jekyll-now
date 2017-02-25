@@ -6,7 +6,7 @@ category: video games
 featured: mimikyu.png
 amazonterm: "pokemon sun and moon"
 tags: [video games, pokemon, pokemon sun, pokemon moon, the pokemon company, gamefreak, nintendo]
-author: Rob Kalajian
+author: robk
 ---
 
 The Pokémon Company International announced six new Pokémon today, along with a bunch of new features for Pokémon Sun and Moon.

@@ -5,7 +5,7 @@ description: "Rising Stars' new 88 Heroes gets a release in March and also gets 
 category: video games
 featured: 88heroes.png
 tags: [video games, 88 heroes, rising star games, bitmap bureau]
-author: Rob Kalajian
+author: robk
 ---
 
 Rising Star Games today announced that [88 Heroes](http://88heroes.com), the chaotic 2D action platform game from acclaimed development studio Bitmap Bureau, will release in March 2017. Available digitally on the PS4, PC, Mac, Linux and Xbox One, 88 Hereos is also getting a special, physical release on the PS4.

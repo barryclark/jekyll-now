@@ -5,7 +5,7 @@ description: "Castle Combat is a great CCG for younger kids that's self publishe
 category: review
 featured: castlecombat.jpg
 tags: [games, review, castle combat, kid realms]
-author: Rob Kalajian
+author: robk
 ---
 
 <img src="/images/castlecombat/cardback.png" alt="Castle Combat Card Back" class="float-right" />

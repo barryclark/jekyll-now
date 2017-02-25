@@ -5,7 +5,7 @@ description: Storyline Fairy Tales contains only cards and tokens, but the produ
 category: unboxing
 featured: storyline.png
 tags: [games, unboxing, storyline, asmodee]
-author: Rob Kalajian
+author: robk
 ---
 
 Having just written a review for [Storyline: Fairy Tales](http://www.purplepawn.com/2016/05/second-look-storyline-fairy-tales/), I figured I'd take the time do take some unboxing photos. The game doesn't contain much except cards and tokens, but the production value is excellent.

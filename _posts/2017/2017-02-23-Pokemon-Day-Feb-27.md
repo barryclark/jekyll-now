@@ -6,7 +6,7 @@ category: games
 featured: pokemonday.png
 amazonterm: "pokemon"
 tags: [video games, games, pokemon, the pokemon company, pokemon day]
-author: Rob Kalajian
+author: robk
 ---
 
 ![Pokémon Day](/images/pokemon/pokemonday.jpg){: .center}

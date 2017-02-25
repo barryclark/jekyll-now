@@ -5,7 +5,7 @@ description: "Quite the unexpected gift in the mail! A Looney Labs pyramid game,
 category: games
 featured: sandships.jpg
 tags: [games, sandships, looney labs, pyramid arcade]
-author: Rob Kalajian
+author: robk
 ---
 
 

@@ -7,7 +7,7 @@ featured: fonebone.jpg
 amazonterm: "Bone"
 amazoncat: Books
 tags: [toys, bone, jeff smith, cryptozoic]
-author: Rob Kalajian
+author: robk
 ---
 
 <h2>Prelude</h2>

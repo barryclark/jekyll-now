@@ -5,7 +5,7 @@ description: "Become a Superpowered Hero or Villain and battle with 2 to 8 playe
 category: kickstarter
 featured: originz.jpg
 tags: [games, kickstarter, ORIGINZ, flavor faction]
-author: Rob Kalajian
+author: robk
 ---
 <iframe style="float:left;margin-right:10px;margin-bottom:10px;" frameborder="0" height="420" scrolling="no" src="https://www.kickstarter.com/projects/flavorfaction/originz-the-superpowered-card-game/widget/card.html?v=2" width="220"></iframe>
 

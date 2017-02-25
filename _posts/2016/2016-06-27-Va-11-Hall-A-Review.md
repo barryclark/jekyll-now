@@ -5,7 +5,7 @@ description: To be honest, I almost passed on the opportunity to review VA-11 Ha
 category: review
 featured: va-llhall-a.png
 tags: [video games, review, va-11 hall-a, sukeban games]
-author: Rob Kalajian
+author: robk
 ---
 
 To be honest, I almost passed on the opportunity to review [VA-11 Hall-A - Cyberpunk Bartender Action](http://waifubartending.com), a new game by Sukeban Games. Something about the logo caught my eye, and a quick lookup of the game had me hooked at the music. After that, I figured it couldn't hurt to request a review code and give the game a shot.

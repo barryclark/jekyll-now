@@ -6,7 +6,7 @@ category: review
 featured: brokeneggtokens.jpg
 amazonterm: "imperial assault"
 tags: [review, games, accessories, broken egg games, imperial assault]
-author: Frank Grip
+author: frankg
 ---
 
 ![Imperial Assault Tokens](/images/featured/brokeneggtokens.jpg){: .float-right}

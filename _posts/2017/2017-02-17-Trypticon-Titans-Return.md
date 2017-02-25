@@ -6,7 +6,7 @@ category: toys
 featured: TRYPTICON.jpg
 amazonterm: "Transformers Titans Return"
 tags: [toys, hasbro, transformers, titans return, trypticon]
-author: Rob Kalajian
+author: robk
 ---
 
 In 2015 Hasbro gave fans the option to vote for their favorite character to become the next Generations Titans Return Titan Class toy. The ballots were counted and fans voted on Trypticon! Now, coming in the fall, Trypticon is the largest figure in the 2017 Titans Return universe and is also the biggest Decepticon figure ever made. It converts between three different modes: dino, spaceship and city.

@@ -5,7 +5,7 @@ description: Having just written about the release of the two new Spellweaver DL
 category: review
 featured: spellweaver.png
 tags: [video games, ccg, review, spellweaver, dream reactor]
-author: Rob Kalajian
+author: robk
 ---
 
 Having just [written](http://www.purplepawn.com/2016/05/spell-weaver-dlcs-now-available-on-steam/) about the release of the two new Spellweaver DLC packs, I realized I had never gotten around to actually reviewing the game.

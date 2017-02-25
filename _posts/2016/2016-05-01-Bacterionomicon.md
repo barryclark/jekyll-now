@@ -5,7 +5,7 @@ description: The Bacterionomicon, an amazing book where diseases and medication 
 featured: bact.png
 category: books
 tags: [rpg, books, bacterionomicon, healing blade, nerdcore medical, ct fig, dunegon world, not thank you evil]
-author: Rob Kalajian
+author: robk
 ---
 
 Yesterday was the [Connecticut Festival of Indie Games](http://www.ct-fig.com), and while there's a ton I'm going to be posting on [Purple Pawn](http://purplepawn.com) soon, there was an item there that didn't *quite* fit in with the regular fair that I wanted to write about.

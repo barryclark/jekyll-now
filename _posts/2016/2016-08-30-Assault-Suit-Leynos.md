@@ -6,7 +6,7 @@ category: video games
 featured: leynos.jpg
 amazonterm: "assault suit leynos"
 tags: [video games, assault suit leynos, rising star games]
-author: Rob Kalajian
+author: robk
 ---
 I get a lot of press releases, and more often than not I skip a lot of the video game related ones. Every once and a while something catches my eye. This time it's Assault Suit Leynos, a side-scrolling-bullet-hell-mech game from Rising Star Games. Available now for [Steam](http://click.icptrack.com/icp/relay.php?r=35733063&msgid=527186&act=8QBT&c=275324&destination=http%3A%2F%2Fstore.steampowered.com%2Fapp%2F441350%2F) and PS4 at $19.99 for the standard edition, with a digital-only special edition costing $24.99.
 

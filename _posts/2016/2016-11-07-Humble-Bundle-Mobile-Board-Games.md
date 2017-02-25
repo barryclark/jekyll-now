@@ -5,7 +5,7 @@ description: "I love Humble Bundle. Their new Mobile Bundle may be the best yet,
 category: games
 featured: humbleboard.png
 tags: [video games, games, ticket to ride, scotland yard, carcassonne, san juan, galaxy trucker, splendor, catan, the amazing labyrinth, humble bundle]
-author: Rob Kalajian
+author: robk
 ---
 
 For those unfamiliar with Humble Bundles, they're bundles of items (usually digital) that are sold on a pay-what-you-like basis with money going to charity. The program has grown tremendously over the years with multiple bundles being offered at a time with different themes. One of the more popular bundles, the mobile bundle, focuses on apps for Android and iOS. This time around it's a [Board Game bundle](https://www.humblebundle.com/mobile/board-games-mobile-bundle), and it's chock full of awesome games.

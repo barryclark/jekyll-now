@@ -6,7 +6,7 @@ category: tutorials
 featured: atstpart1-5.png
 amazonterm: "imperial assault"
 tags: [games, miniatures, tutorial, imperial assault, fantasy flight games, oldenhammer]
-author: Frank Grip
+author: frankg
 ---
 
 **Previous Posts in Series:** [Part 1](http://pawnsperspective.com/Imperial-Assault-AT-ST-Paint-Tutorial-Part-1/)

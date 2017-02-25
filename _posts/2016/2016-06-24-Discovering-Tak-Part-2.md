@@ -5,7 +5,7 @@ description: Continuing my Tak post, I figured I'd give my initial thoughts on t
 category: games
 featured: tak2.jpg
 tags: [games, tak, cheapass games, a wise man's fear, patrick rothfuss]
-author: Rob Kalajian
+author: robk
 ---
 
 Continuing my [earlier Tak post](http://pawnsperspective.com/Discovering-Tak/), I figured I'd give my initial thoughts on the game. I finished my set, and have played more than a handful of the game, teaching 3 of my kids to play over our recent vacation.

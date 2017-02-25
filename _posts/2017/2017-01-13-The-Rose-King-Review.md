@@ -6,7 +6,7 @@ category: review
 featured: theroseking.jpg
 amazonterm: "the rose king"
 tags: [review, games, the rose king, thames, kosmos]
-author: Rob Kalajian
+author: robk
 ---
 
 ![The Rose King!](/images/theroseking/box.jpg){: .float-right}

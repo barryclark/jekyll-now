@@ -5,7 +5,7 @@ description: To celebrate the 5th anniversary of King of Tokyo there's a new ver
 category: unboxing
 featured: kot.jpg
 tags: [games, unboxing, king of tokyo, iello]
-author: Rob Kalajian
+author: robk
 ---
 
 To celebrate the 5th anniversary of the game, there's a new version of [King of Tokyo](http://www.iellogames.com/KingOfTokyo.html) out with brand new artwork. The game is exactly the same as before, but got a facelift to match the upcoming mobile version of the game.

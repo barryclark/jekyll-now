@@ -6,7 +6,7 @@ category: review
 featured: stackup.jpg
 amazonterm: "Stack Up"
 tags: [games, review, stack up!, peaceable kingdom]
-author: Rob Kalajian
+author: robk
 ---
 
 <h2>Prelude</h2>

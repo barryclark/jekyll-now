@@ -6,7 +6,7 @@ category: video games
 featured: sunmoonmystery.png
 amazonterm: "pokemon sun and moon"
 tags: [video games, pokemon, pokemon sun, pokemon moon, the pokemon company, gamefreak, nintendo]
-author: Rob Kalajian
+author: robk
 ---
 
 Pokémon Sun and Moon are right around the corner, and The Pokémon Company has released some new info about the game today.

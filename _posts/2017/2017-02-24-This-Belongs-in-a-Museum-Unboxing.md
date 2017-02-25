@@ -6,7 +6,7 @@ category: unboxing
 featured: thisbelongsinamuseum.jpg
 amazonterm: "Rather Dashing Games"
 tags: [unboxing, games, this belongs in a museum, rather dashing games]
-author: Rob Kalajian
+author: robk
 ---
 
 Rather Dashing Games will soon be releasing This Belongs in a Museum, the 3rd game in their Drawn & Quartered series. It's actually [available for pre-order](http://www.ratherdashinggames.com/this-belongs-in-a-museum) if you're interested.

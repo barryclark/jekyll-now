@@ -5,7 +5,7 @@ description: "Best game session since August 2015? Day 2 of #RPGaDay."
 category: games
 featured: rpgaday.png
 tags: [games, rpgs, rpgaday]
-author: Rob Kalajian
+author: robk
 ---
 
 **Best gaming session since August 2015?**

@@ -5,7 +5,7 @@ description: "Formula μ is a clever racing game in a small package."
 category: review
 featured: formulamicro.jpg
 tags: [games, review, formula micro, michael groll's games]
-author: Rob Kalajian
+author: robk
 ---
 
 <img src="/images/formulamicro/micro.jpg" alt="Formula Micro" class="float-right" />

@@ -6,7 +6,7 @@ category: review
 featured: gigamons.jpg
 amazonterm: "gigamons"
 tags: [games, review, gigamons, blue orange games]
-author: Rob Kalajian
+author: robk
 ---
 
 <img src="/images/gigamons/gigamons.jpg" width="300" alt="Gigamons" class="float-right" />

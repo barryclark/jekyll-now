@@ -6,7 +6,7 @@ category: video games
 featured: pokemonduel.jpg
 amazonterm: pokemon
 tags: [pokemon, the pokemon company, video games, pokemon bank, pokemon duel]
-author: Rob Kalajian
+author: robk
 ---
 
 There's been two new announcements coming from the Pokémon camp in the past few days.

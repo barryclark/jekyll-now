@@ -4,7 +4,7 @@ title: I Am Elemental
 description: I Am Elemental has shown off some amazing actions figures that don't suffer from female sterotypes.
 category: toys
 tags: [i am elemental, toy fair]
-author: Rob Kalajian
+author: robk
 ---
 
 While at Toy Fair this year, the women over at the [Goldieblox](http://goldieblox.com) booth had told me I just *had* to go see the [I Am Elemental](http://iamelemental.com) booth. I'm really glad I did, because what they had to show off was amazing.

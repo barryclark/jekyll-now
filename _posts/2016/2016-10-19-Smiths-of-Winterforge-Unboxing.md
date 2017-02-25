@@ -5,7 +5,7 @@ description: "Smiths of Winterforge is currently on Kickstarter, but the prototy
 category: unboxing
 featured: smithsofwinterforge.jpg
 tags: [games, unboxing, smiths of winterforge, table tyrant, kickstarter]
-author: Rob Kalajian
+author: robk
 ---
 
 [Smiths of Winterforge](https://www.kickstarter.com/projects/allofthed/smiths-of-winterforge-a-game-for-2-5-dwarven-black) is currently up for funding on Kickstarter. I'll actually have a review of the game going up soon on [Purple Pawn](http://purplepawn.com), most likely this Friday.

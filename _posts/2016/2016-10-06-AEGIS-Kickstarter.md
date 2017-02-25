@@ -5,7 +5,7 @@ description: "A.E.G.I.S. is a strategy game about giant combining robots. What m
 category: kickstarter
 featured: aegis.png
 tags: [games, kickstarter, AEGIS, zephyr workshop, greenbrier games]
-author: Rob Kalajian
+author: robk
 ---
 <iframe style="float:left;margin-right:10px;margin-bottom:10px;" frameborder="0" height="420" scrolling="no" src="https://www.kickstarter.com/projects/gbg/aegis-combining-robot-strategy-game/widget/card.html?v=2" width="220"></iframe>
 

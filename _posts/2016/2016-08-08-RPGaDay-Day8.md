@@ -5,7 +5,7 @@ description: "Do you prefer hardcover, softcover, or electronic books? What are 
 category: games
 featured: rpgaday.png
 tags: [games, rpgs, rpgaday]
-author: Rob Kalajian
+author: robk
 ---
 
 **Do you prefer hardcover, softcover, or electronic books? What are the benefits of your preference?**

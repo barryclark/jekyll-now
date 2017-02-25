@@ -5,7 +5,7 @@ description: The Gods, all of them, are rocking out for your belief. The Lords o
 category: kickstarter
 featured: lordsofrock.jpg
 tags: [games, kickstarter, the lords of rock, solarflare games]
-author: Rob Kalajian
+author: robk
 ---
 <iframe style="float:left;margin-right:10px;margin-bottom:10px;" frameborder="0" height="420" scrolling="no" src="https://www.kickstarter.com/projects/bravefrontierstudios/the-lords-of-rock/widget/card.html?v=2" width="220"></iframe>
 

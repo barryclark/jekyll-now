@@ -7,7 +7,7 @@ featured: firetop.png
 tags: [video games, review, warlock of firetop mountain, fighting fantasy, steve jackson, tin man games]
 amazonterm: "the warlock of firetop mountain"
 amazoncat: Books
-author: Rob Kalajian
+author: robk
 ---
 
 <h2>Prelude</h2>

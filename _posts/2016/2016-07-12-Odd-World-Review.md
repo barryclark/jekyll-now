@@ -5,7 +5,7 @@ description: Odd World is a light, planetary card game from Foxmind. It has a in
 category: review
 featured: odd-world.png
 tags: [games, review, odd world, foxmind]
-author: Rob Kalajian
+author: robk
 ---
 
 <img src="/images/featured/odd-world.png" style="float:right;margin-left:10px;margin-bottom:10px;" alt="Odd World"/>[Odd World](http://www.foxmind.com/games/1625-odd-world) is a new release from FoxMind, developed by Jack Degnan. It's a small, inexpensive card game with easy-to-learn rules, but with a little bit more than you'd expect from a kids' title like this.

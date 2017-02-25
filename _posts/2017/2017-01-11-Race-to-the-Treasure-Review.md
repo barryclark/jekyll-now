@@ -6,7 +6,7 @@ category: review
 featured: racetreasure.png
 amazonterm: "peaceable kingdom"
 tags: [review, games, race to the treasure, peaceable kingdom]
-author: Rob Kalajian
+author: robk
 ---
 
 ![Race to the Treasure!](/images/featured/racetreasure.png){: .float-right}

@@ -5,7 +5,7 @@ description: Tricksters is a fast paced card game for 2-4 players with adorable 
 category: preview
 featured: tricksters.jpg
 tags: [games, preview, tricksters, aether tower]
-author: Rob Kalajian
+author: robk
 ---
 
 <iframe frameborder="0" height="420" scrolling="no" style="float:left;margin-right:10px;" src="https://www.kickstarter.com/projects/aethertower/tricksters-the-first-game-with-the-mischievous-ann/widget/card.html?v=2" width="220"></iframe>

@@ -5,7 +5,7 @@ description: "What story does your group tell about your character? Day 5 of #RP
 category: games
 featured: rpgaday.png
 tags: [games, rpgs, rpgaday]
-author: Rob Kalajian
+author: robk
 ---
 
 **What story does your group tell about your character?**

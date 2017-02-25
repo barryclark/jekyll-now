@@ -5,7 +5,7 @@ description: "The Gods of various Pantheon compete in a Battle of the Bands for 
 category: review
 featured: lordsofrock.jpg
 tags: [review, games, the lords of rock, solarflare games]
-author: Rob Kalajian
+author: robk
 ---
 
 ![The Lords of Rock](/images/featured/lordsofrock.jpg){: .float-right}

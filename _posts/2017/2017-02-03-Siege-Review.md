@@ -6,7 +6,7 @@ category: review
 featured: siege.jpg
 amazonterm: "aeg siege"
 tags: [review, games, siege, aeg]
-author: Rob Kalajian
+author: robk
 ---
 
 ![Siege](/images/featured/siege.jpg){: .float-right}

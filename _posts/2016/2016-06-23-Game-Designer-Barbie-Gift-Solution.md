@@ -5,7 +5,7 @@ description: Mattel recently released a new Game Developer Barbie. Marcus Montgo
 category: toys
 featured: gamebarbie.jpg
 tags: [toys, barbie, mattel, game developer barbie, marcus montgomery, we are game devs, barbie careers]
-author: Rob Kalajian
+author: robk
 ---
 
 Mattel recently released a new [Game Developer Barbie](http://shop.mattel.com/product/index.jsp?productId=99225426) after a pretty nasty snafu with a similar theme in a book back in 2014. Thankfully the new Barbie hits the nail on the head, and is a great doll.

@@ -6,7 +6,7 @@ category: video games
 featured: doubledragoniv.png
 amazonterm: "double dragon"
 tags: [video games, double dragon, arc system works]
-author: Rob Kalajian
+author: robk
 ---
 
 <img src="/images/doubledragon/doubledragon4.png" alt="Double Dragon IV" class="float-right"/>Arc System Works just announced the latest installment of the popular Double Dragon series, Double Dragon IV, will arrive on the PlayStation®Network for the PlayStation®4 and Steam (PC) on January 29th and 30th in North America respectively (1/30 and 31st JST.) Key team members involved in the 1987 arcade version including Original Planner, Yoshihisa Kishimoto, Designer, Koji Ogata, and Composer, Kazunaka Yamane are involved with the game, with the story picking up after the elimination of the Black Warriors in Double Dragon II.

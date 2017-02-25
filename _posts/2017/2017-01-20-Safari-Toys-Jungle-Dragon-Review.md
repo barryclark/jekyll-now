@@ -6,7 +6,7 @@ category: review
 featured: jungledragon.jpg
 amazonterm: "Safari Toys ltd"
 tags: [toys, safari ltd, jungle dragon, mythical realms, review]
-author: Rob Kalajian
+author: robk
 ---
 
 <h2>Prelude</h2>

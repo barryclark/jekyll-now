@@ -4,7 +4,7 @@ title: High Roller
 description: I got to ride an adult Big Wheel at Toy Fair. The High Roller is damn amazing.
 category: misc
 tags: [high roller, toy fair, bikes]
-author: Rob Kalajian
+author: robk
 ---
 
 OK, I really just need to start off my post with this image.

@@ -6,7 +6,7 @@ category: unboxing
 featured: valeofmagic.jpg
 amazonterm: "vale of magic"
 tags: [games, unboxing, vale of magic, aeg, mystic vale]
-author: Rob Kalajian
+author: robk
 ---
 
 Previously I've unboxed[^1] and reviewed[^2] AEG's Mystic Vale. Now I've gotten my hands on its first expansion, Vale of Magic.

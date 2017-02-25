@@ -6,7 +6,7 @@ category: kickstarter
 featured: taolong.jpg
 amazontag: santorini
 tags: [kickstarter, games, tao long, thundergryph games]
-author: Rob Kalajian
+author: robk
 ---
 
 <iframe style="float:right; argin-left:10px;" frameborder="0" height="420" scrolling="no" src="https://www.kickstarter.com/projects/gonab/tao-long/widget/card.html?v=2" width="220"></iframe>

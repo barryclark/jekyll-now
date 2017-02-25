@@ -5,7 +5,7 @@ description: "A turn based RPG with beautiful visual. Legrand Legacy looks prett
 category: kickstarter
 featured: legrandlegacy.jpg
 tags: [kickstarter, video games, legrand legacy, semisoft]
-author: Rob Kalajian
+author: robk
 ---
 
 <iframe style="float:right; margin-left:10px;" src="https://www.kickstarter.com/projects/984434986/legrand-legacy-tale-of-the-fatebounds/widget/card.html?v=2" width="220" height="420" frameborder="0" scrolling="no"></iframe>

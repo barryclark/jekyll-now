@@ -5,7 +5,7 @@ description: A pocket-sided worker placement game, Mint Works promises to be a r
 category: kickstarter
 featured: mintworks.jpg
 tags: [games, kickstarter, mint works, five24 labs]
-author: Rob Kalajian
+author: robk
 ---
 <iframe style="float:left;margin-right:10px;margin-bottom:10px;" frameborder="0" height="420" scrolling="no" src="https://www.kickstarter.com/projects/five24labs/mint-works-the-pocket-sized-worker-placement-game/widget/card.html?v=2" width="220"></iframe>
 

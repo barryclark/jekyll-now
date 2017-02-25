@@ -5,7 +5,7 @@ description: "Futuristic Gladiators battle it out in this updated CGG from Hack 
 category: review
 featured: ophidian2360.jpg
 tags: [review, games, ophidian 2360, ophidian wars, small cave games, hack & slash games]
-author: Rob Kalajian
+author: robk
 ---
 
 ![Ophidian 2360](/images/featured/ophidian2360.jpg){: .float-right}

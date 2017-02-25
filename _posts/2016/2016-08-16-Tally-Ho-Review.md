@@ -6,7 +6,7 @@ category: review
 featured: tallyho.jpg
 amazonterm: "tally ho"
 tags: [games, review, tally ho, thames, kosmos]
-author: Rob Kalajian
+author: robk
 ---
 
 <img src="/images/tallyho/product.jpg" alt="Tally Ho!" class="float-right" />

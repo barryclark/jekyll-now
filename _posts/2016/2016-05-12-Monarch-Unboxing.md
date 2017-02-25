@@ -5,7 +5,7 @@ description: Monarch gameplay is simple, fast, and tight. Let's unbox it and see
 category: unboxing
 featured: monarch.png
 tags: [games, unboxing, monarch, Mary Flanagan]
-author: Rob Kalajian
+author: robk
 ---
 
 Dr. Mary Flanagan, designer and publisher of Monarch, sent me a prototype of the game while she was Kickstarting it a while back ago. Immediately I was [hooked](http://www.purplepawn.com/2015/03/kickstarter-previewmonarch/). Gameplay is simple, fast, and tight. Back then most of the art for the game hadn't been finished, so there was a lot of placeholder art on the cards, tiles, etc...

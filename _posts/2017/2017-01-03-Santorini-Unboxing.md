@@ -6,7 +6,7 @@ category: unboxing
 featured: santorini.jpg
 amazonterm: santorini
 tags: [unboxing, games, santorini, roxley]
-author: Rob Kalajian
+author: robk
 ---
 
 Roxley just sent me a copy of Santorini, a game I've been excitedly waiting for. It's pretty awesome, but I'll leave that for the review later this week. Until then I've snagged pics of all the amazing components that come with the game. Everything is top notch from the storybook to the 3D board to all the building pieces and amazing card art.

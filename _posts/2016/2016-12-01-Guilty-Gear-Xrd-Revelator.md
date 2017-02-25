@@ -6,7 +6,7 @@ category: video games
 featured: ggxrd-revelator.png
 amazonterm: "Guilty Gear"
 tags: [video games, Guilty Gear Xrd -Revelator-, arc system works]
-author: Rob Kalajian
+author: robk
 ---
 
 One of my favorite fighting game series, Guilty Gear, has its latest installment coming to Steam on December 17th. Titled Guilty Gear Xrd -Revelator-, it will be available for $49.99, but will feature a launch-discount of 10%. Also, available at launch will be the One Dawn Bundle, which includes all of the DLC, for $64.99 USD. As a special bonus the game will include the GUILTY GEAR Sound Live 2014 Archives + which consists of 11 tracks plus 3 vocal tracks new in Revelator as well as Dizzy's Maine Theme song "One Dawn".

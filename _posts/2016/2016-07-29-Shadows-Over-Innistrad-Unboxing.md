@@ -6,7 +6,7 @@ category: unboxing
 featured: aopsoi.jpg
 amazonterm: "Arena of the Planeswalkers"
 tags: [games, unboxing, magic the gathering, arena of the planeswalkers, hasbro, wizards of the coast, shadows over innistrad]
-author: Rob Kalajian
+author: robk
 ---
 
 There's a lot of excitement in our house today as we just received our copy of Magic the Gathering Arena of the Planeswalkers: Shadows of Innistrad. It's a new base game, so it can be played without the original boxed set. The Battle for Zendikar expansion is fully compatible.

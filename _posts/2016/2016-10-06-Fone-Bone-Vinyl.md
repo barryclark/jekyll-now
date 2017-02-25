@@ -7,7 +7,7 @@ featured: bonelogo.png
 amazonterm: "Bone"
 amazoncat: Books
 tags: [toys, bone, jeff smith, cryptozoic]
-author: Rob Kalajian
+author: robk
 ---
 ![Fone Bone](/images/bone/bone.png){: .float-right }
 

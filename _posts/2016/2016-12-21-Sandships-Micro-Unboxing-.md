@@ -5,7 +5,7 @@ description: "A Looney Labs pyramid game, Sandships, just arrived. Let's see wha
 category: unboxing
 featured: sandships2.jpg
 tags: [unboxing, sandships, looney labs, pyramid arcade]
-author: Rob Kalajian
+author: robk
 ---
 
 Hot on the heels of [last night's post](http://pawnsperspective.com/Looney-Labs-Holiday-Gift-Sandships/) is my micro-unboxing of Looney Lab's Sandships!

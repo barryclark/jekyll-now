@@ -5,7 +5,7 @@ description: Herofall expansion introduces over 270 new cards for Hex.
 category: video games
 featured: herofall.jpg
 tags: [video games, ccg, hex, hex entertainment, herofall, gameforge]
-author: Rob Kalajian
+author: robk
 ---
 
 Gameforge and HEX Entertainment have announced HEX's upcoming fifth set, [“Herofall”](http://en.hex.gameforge.com/news.html?p=7711). The latest card set brings an additional 275 new cards to HEX: Shards of Fate, and is slated for release this fall. Alongside the new cards, we will see the first tournament based on the newly introduced ladder system in the “Cosmic Crown Showdown”.

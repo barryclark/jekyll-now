@@ -7,7 +7,7 @@ featured: earplay.png
 amazonterm: "amazon echo"
 amazoncat: Electronics
 tags: [games, world of darkness, earplay, the orpheus device]
-author: Rob Kalajian
+author: robk
 ---
 
 I hadn't heard of [Earplay](http://ear-play.com) before today. Earplay is currently available as a skill on Alexa Enabled devices, and enables you to play games via voice and audio on said devices.

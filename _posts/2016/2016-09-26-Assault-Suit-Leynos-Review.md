@@ -6,7 +6,7 @@ category: review
 featured: leynos.jpg
 tags: [video games, review, assault suit leynos, rising star games]
 amazonterm: "assault suit leynos"
-author: Rob Kalajian
+author: robk
 ---
 
 <h2>Prelude</h2>

@@ -6,7 +6,7 @@ category: toys
 featured: mcdestiny.jpg
 amazonterm: "McFarlane"
 tags: [toys, video games, bungie, mcfarlane toys, destiny]
-author: Rob Kalajian
+author: robk
 ---
 
 ![McFarlane/Bungie Destiny](/images/mcfarlane/destiny.png)

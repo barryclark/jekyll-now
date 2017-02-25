@@ -5,7 +5,7 @@ description: "Barnyard Battle is a standalone, non-collectible version of KidRea
 category: review
 featured: kidrealm.jpg
 tags: [games, review, castle combat, barnyard battle, kid realms]
-author: Rob Kalajian
+author: robk
 ---
 
 

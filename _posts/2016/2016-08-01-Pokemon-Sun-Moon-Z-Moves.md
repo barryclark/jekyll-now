@@ -6,7 +6,7 @@ category: video games
 featured: alolapop.jpg
 amazonterm: "pokemon sun and moon"
 tags: [video games, pokemon, pokemon sun, pokemon moon, the pokemon company, gamefreak, nintendo]
-author: Rob Kalajian
+author: robk
 ---
 
 The Pokémon Company International announced Pokémon Sun and Moon info today, including: new Pokémon, Z-Moves, Poké Ride, and the Island Challenge!

@@ -6,7 +6,7 @@ category: video games
 featured: pulsnor.png
 amazonterm: "pokemon sun and moon"
 tags: [video games, pokemon, pokemon sun, pokemon moon, the pokemon company, gamefreak, nintendo]
-author: Rob Kalajian
+author: robk
 ---
 
 The Pokémon Company International has announced a special in-game bonus for those who purchase Pokémon Sun or Moon before January 11th, 2017. Early purchasers will recieved a special Munchlax that will evolve into a Pulverizing Snorlax, a power Snorlax that hold *Snorlium Z*, granting it the Pulverizing Pancake Z-Move.

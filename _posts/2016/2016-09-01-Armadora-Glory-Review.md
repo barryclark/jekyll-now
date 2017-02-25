@@ -6,7 +6,7 @@ category: review
 featured: armadora.jpg
 amazonterm: "blue orange games"
 tags: [games, review, armadora, blue orange games]
-author: Rob Kalajian
+author: robk
 ---
 
 <img src="/images/armadora/armadora.jpg" alt="Armadora" width="300" class="float-right" />

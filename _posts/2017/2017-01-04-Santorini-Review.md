@@ -6,7 +6,7 @@ category: review
 featured: santorini2.png
 amazonterm: "Santorini"
 tags: [games, review, Santorini, roxley]
-author: Rob Kalajian
+author: robk
 ---
 
 <h2>Prelude</h2>

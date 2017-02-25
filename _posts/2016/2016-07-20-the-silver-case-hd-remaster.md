@@ -5,7 +5,7 @@ description: SUDA51's debut game, The Silver Case, is being remastered in HD. It
 category: video games
 featured: silvercase.png
 tags: [video games, suda51, the silver case, grasshopper manufacture]
-author: Rob Kalajian
+author: robk
 ---
 
 Grasshopper Manufacture Inc. has announced that they're remastering SUDA51's debut game, The Silver Chair, in HD, along with localizing the game in English for the first time. The first trailer for the game just hit YouTube, and contains scenes from the game's first chapter, "Decoyman."

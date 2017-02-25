@@ -5,7 +5,7 @@ description: I did a quick stream of the Total War - WARHAMMER Stream's Campaign
 category: streaming
 featured: totalwar.png
 tags: [video games, streaming, sega, games workshop, total war, warhammer]
-author: Rob Kalajian
+author: robk
 ---
 
 Today I was lucky enough to receive and early access copy of [Total War: WARHAMMER](http://store.steampowered.com/app/364360/) for review/streaming. I did a [quick stream](https://www.twitch.tv/rkalajian/v/67447447) of the game's Campaign Mode using the Empire and running through the tutorial.

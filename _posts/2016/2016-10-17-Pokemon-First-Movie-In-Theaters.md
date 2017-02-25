@@ -7,7 +7,7 @@ featured: pokemovie.jpg
 amazonterm: "Pokémon"
 amazoncat: Movies
 tags: [movies, pokémon]
-author: Rob Kalajian
+author: robk
 ---
 
 Pokémon movie will be shown at over 200 Cinemark theaters on Saturday, October 29, and Tuesday, November 1. The movie will run with the “Pikachu's Vacation” short. You can [preorder tickets](https://www.cinemark.com/pokemon-the-first-movie) now for $5, which may be a good idea since I have a feeling shows will sell out.

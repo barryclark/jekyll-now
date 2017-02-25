@@ -6,7 +6,7 @@ category: toys
 featured: beybladeburstapp.png
 amazonterm: "Beyblade burst"
 tags: [toys, beyblade, hasbro, beyblade burst, video games]
-author: Rob Kalajian
+author: robk
 ---
 
 Yesterday some Beyblade fans were lucky enough to grab Hasbro's upcoming Beyblade Burst app as it popped up on the iTunes store, then was quickly taken down.
