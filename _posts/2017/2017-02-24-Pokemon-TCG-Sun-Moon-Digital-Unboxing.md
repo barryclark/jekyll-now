@@ -3,7 +3,7 @@ layout: post
 title: "Digital Unboxing Pokémon TCG Sun & Moon"
 description: "A digital unboxing of some new Pokémon Sun & Moon TCG cards."
 category: unboxing
-featured: thisbelongsinamuseum.jpg
+featured: sunmoontcg.png
 amazonterm: "Pokemon TCG"
 tags: [unboxing, games, pokemon tcg, video games, the pokemon company]
 author: robk
