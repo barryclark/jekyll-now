@@ -1,8 +1,7 @@
 ---
 title: Review - Stack Up!
 date: 2016-12-06 00:00:00 Z
-categories:
-- review
+category: review
 tags:
 - games
 - review

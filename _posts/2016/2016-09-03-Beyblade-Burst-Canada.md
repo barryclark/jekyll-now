@@ -1,8 +1,7 @@
 ---
 title: Beyblade Burst on Shelves in Canada
 date: 2016-09-03 00:00:00 Z
-categories:
-- toys
+category: toys
 tags:
 - toys
 - beyblade

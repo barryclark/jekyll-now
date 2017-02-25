@@ -1,8 +1,7 @@
 ---
 title: 'Pokémon: The First Movie Back in Theaters for Two Days.'
 date: 2016-10-17 00:00:00 Z
-categories:
-- misc
+category: misc
 tags:
 - movies
 - pokémon

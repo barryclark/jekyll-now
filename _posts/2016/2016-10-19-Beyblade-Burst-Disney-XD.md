@@ -1,8 +1,7 @@
 ---
 title: SUNRIGHTS INC. Brings Beyblade Burst Animated Series to Disney XD
 date: 2016-10-19 00:00:00 Z
-categories:
-- toys
+category: toys
 tags:
 - toys
 - beyblade

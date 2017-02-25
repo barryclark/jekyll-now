@@ -1,8 +1,7 @@
 ---
 title: Digital Unboxing Pokémon TCG Sun & Moon
 date: 2017-02-24 00:00:00 Z
-categories:
-- unboxing
+category: unboxing
 tags:
 - unboxing
 - games

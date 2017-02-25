@@ -1,8 +1,7 @@
 ---
 title: 88 Heroes Gets a Physical Release
 date: 2017-01-10 00:00:00 Z
-categories:
-- video games
+category: video games
 tags:
 - video games
 - 88 heroes

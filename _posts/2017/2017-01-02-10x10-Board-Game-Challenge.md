@@ -1,8 +1,7 @@
 ---
 title: 10 x 10 Board Game Challenge
 date: 2017-01-02 00:00:00 Z
-categories:
-- news
+category: news
 tags:
 - games
 - news
