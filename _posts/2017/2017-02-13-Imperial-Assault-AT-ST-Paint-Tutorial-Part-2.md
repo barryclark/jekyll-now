@@ -43,5 +43,3 @@ And there you have it. The AT-ST was relatively simple to paint and I am pretty 
 ![MHD-19](/images/atstpaint/2-5.jpg)
 
 Next up, I’ll tackle some of the organics. . . maybe the Wampa or the Rancor? Until next time.
-
-*Frank is an attorney and family man currently based out of Las Vegas. He's a long time gaming enthusiast with a tabletop interest in most dungeon crawlers and map strategy games. If it has dice and minis, it probably has his attention.*

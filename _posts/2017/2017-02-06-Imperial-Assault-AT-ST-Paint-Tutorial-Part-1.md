@@ -33,5 +33,3 @@ Before assembly, inspect each component and locate the imperfections. I like to 
 It is important to note that not all blemishes need to be eliminated. Use your best judgment and remember, it is not a science. The model that I am using has some imperfections on the cabin piece. I am going to roll with it. In the end, it will make for some nice battle scarring. Once you are satisfied, go ahead and assemble the model. As for the base, at this point, you can attach it or not. For this model, I will attach the base to the legs later on in the process. I often find it awkward and difficult to paint bases. But, that might be just a personal problem. If you want the base attached, go for it. Once you are assembled and glued, you are ready to go.
 
 Next post, we will prime the model and get painting.
-
-*Frank is an attorney and family man currently based out of Las Vegas. He's a long time gaming enthusiast with a tabletop interest in most dungeon crawlers and map strategy games. If it has dice and minis, it probably has his attention.*
