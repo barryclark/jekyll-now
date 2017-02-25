@@ -1,4 +1,5 @@
 {% assign author = site.authors[page.author] %}
 <div id="authorblurb">
-<img src="{{ author.avatar }}" width="150" alt="{{ author.display_name }}"><p>{{ author.blurb }}
+<img src="{{ author.avatar }}" width="150" alt="{{ author.display_name }}"><p>{{ author.blurb }}</p>
+{% if author.email %}<a href="mailto:{{ author.email }}"><i class="svg-icon email"></i></a>{% endif %}
 </div>
