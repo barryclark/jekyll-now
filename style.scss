@@ -428,6 +428,9 @@ footer {
 
 #authorblurb {
   border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  display: table;
+  background-color: #edeef0;
 
   img {
     float: left;
