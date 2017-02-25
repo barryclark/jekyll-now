@@ -1,7 +1,8 @@
 ---
 title: Unboxing Monarch
 date: 2016-05-12 00:00:00 Z
-category: unboxing
+categories:
+- unboxing
 tags:
 - games
 - unboxing

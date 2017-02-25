@@ -1,7 +1,8 @@
 ---
 title: Unboxing Mystic Vale
 date: 2016-06-28 00:00:00 Z
-category: unboxing
+categories:
+- unboxing
 tags:
 - games
 - unboxing

@@ -1,7 +1,8 @@
 ---
 title: Unboxing Attack on Titan Deckbuilding Game
 date: 2016-11-03 00:00:00 Z
-category: unboxing
+categories:
+- unboxing
 tags:
 - games
 - unboxing

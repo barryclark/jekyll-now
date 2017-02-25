@@ -1,7 +1,8 @@
 ---
 title: Jungle Dragon Card for Arena of the Planeswalkers
 date: 2017-01-30 00:00:00 Z
-category: games
+categories:
+- games
 tags:
 - unboxing
 - games

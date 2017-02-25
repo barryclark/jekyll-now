@@ -1,7 +1,8 @@
 ---
 title: The Long Road Ahead
 date: 2016-05-18 00:00:00 Z
-category: news
+categories:
+- news
 tags:
 - games
 - news

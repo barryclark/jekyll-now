@@ -1,7 +1,8 @@
 ---
 title: Slime-san Announced from Fabraz and Headup Games
 date: 2017-02-22 00:00:00 Z
-category: video games
+categories:
+- video games
 tags:
 - video games
 - slime-san

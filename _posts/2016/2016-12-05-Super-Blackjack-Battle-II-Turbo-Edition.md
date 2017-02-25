@@ -1,7 +1,8 @@
 ---
 title: Super Blackjack Battle II Turbo Edition
 date: 2016-12-05 00:00:00 Z
-category: video games
+categories:
+- video games
 tags:
 - video games
 - super blackjack battle II turbo edition

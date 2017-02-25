@@ -2,7 +2,8 @@
 title: Pokémon Sun and Moon Alolan Diglett/Dugtrio, New Z-Moves and Ultra Beasts,
   Mystery Pokémon Revealed
 date: 2016-11-14 00:00:00 Z
-category: video games
+categories:
+- video games
 tags:
 - video games
 - pokemon

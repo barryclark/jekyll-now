@@ -1,7 +1,8 @@
 ---
 title: Total War - WARHAMMER Stream
 date: 2016-05-19 00:00:00 Z
-category: streaming
+categories:
+- streaming
 tags:
 - video games
 - streaming

@@ -1,7 +1,8 @@
 ---
 title: Stellar Armada - $1 Board Game
 date: 2016-09-16 00:00:00 Z
-category: kickstarter
+categories:
+- kickstarter
 tags:
 - games
 - kickstarter

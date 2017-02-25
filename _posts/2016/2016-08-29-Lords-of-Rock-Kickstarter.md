@@ -1,7 +1,8 @@
 ---
 title: Kickstarter - The Lords of Rock
 date: 2016-08-29 00:00:00 Z
-category: kickstarter
+categories:
+- kickstarter
 tags:
 - games
 - kickstarter

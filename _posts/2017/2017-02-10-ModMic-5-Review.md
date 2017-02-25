@@ -1,7 +1,8 @@
 ---
 title: Review - ModMic 5
 date: 2017-02-10 00:00:00 Z
-category: review
+categories:
+- review
 tags:
 - review
 - video games
