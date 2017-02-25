@@ -1,8 +1,7 @@
 ---
 title: Pox Nora's 29th Expansion Launches July 27
 date: 2016-07-27 00:00:00 Z
-categories:
-- video
+category: video
 - games
 tags:
 - video games

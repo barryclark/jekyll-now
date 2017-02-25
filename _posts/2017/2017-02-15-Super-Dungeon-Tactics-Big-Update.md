@@ -1,8 +1,7 @@
 ---
 title: Super Dungeon Tactics v1.2 Brings Big Changes
 date: 2017-02-15 00:00:00 Z
-categories:
-- video
+category: video
 - games
 tags:
 - video games

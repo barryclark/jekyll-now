@@ -1,8 +1,7 @@
 ---
 title: Pokemon Sun and Pokemon Moon Launches November 18
 date: 2016-05-10 00:00:00 Z
-categories:
-- video
+category: video
 - games
 tags:
 - video games

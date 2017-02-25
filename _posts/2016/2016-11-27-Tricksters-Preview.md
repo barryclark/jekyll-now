@@ -1,8 +1,7 @@
 ---
 title: Tricksters Preview
 date: 2016-11-27 00:00:00 Z
-categories:
-- preview
+category: preview
 tags:
 - games
 - preview

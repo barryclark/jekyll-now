@@ -1,8 +1,7 @@
 ---
 title: Forced Showdown
 date: 2016-04-14 00:00:00 Z
-categories:
-- video
+category: video
 - games
 tags:
 - stream

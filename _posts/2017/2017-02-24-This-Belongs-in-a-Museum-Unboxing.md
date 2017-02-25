@@ -1,8 +1,7 @@
 ---
 title: Unboxing This Belongs in a Museum
 date: 2017-02-24 00:00:00 Z
-categories:
-- unboxing
+category: unboxing
 tags:
 - unboxing
 - games

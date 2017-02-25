@@ -1,8 +1,7 @@
 ---
 title: Awaiting Pai Sho
 date: 2016-05-22 00:00:00 Z
-categories:
-- games
+category: games
 tags:
 - games
 - avatar the last airbender

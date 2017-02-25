@@ -1,8 +1,7 @@
 ---
 title: Review - Encounters! Bravest Warriors
 date: 2016-06-22 00:00:00 Z
-categories:
-- review
+category: review
 tags:
 - games
 - review
