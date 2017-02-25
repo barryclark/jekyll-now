@@ -1,8 +1,7 @@
 ---
 title: Review - Race to the Treasure!
 date: 2017-01-11 00:00:00 Z
-categories:
-- review
+category: review
 tags:
 - review
 - games

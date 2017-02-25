@@ -1,8 +1,7 @@
 ---
 title: Discovering Tak
 date: 2016-06-07 00:00:00 Z
-categories:
-- games
+category: games
 tags:
 - games
 - tak

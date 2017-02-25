@@ -1,8 +1,7 @@
 ---
 title: Pokémon Generations Series Coming to YouTube
 date: 2016-09-13 00:00:00 Z
-categories:
-- other
+category: other
 tags:
 - video games
 - pokemon

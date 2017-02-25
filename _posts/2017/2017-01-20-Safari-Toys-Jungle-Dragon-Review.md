@@ -1,8 +1,7 @@
 ---
 title: Review - Safari Ltd Jungle Dragon Dragon
 date: 2017-01-20 00:00:00 Z
-categories:
-- review
+category: review
 tags:
 - toys
 - safari ltd
