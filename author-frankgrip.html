@@ -11,6 +11,7 @@ description: A Pawn's Perspective Author Page for Frank Grip
 Frank is an attorney and family man currently based out of Las Vegas. He's a long time gaming enthusiast with a tabletop interest in most dungeon crawlers and map strategy games. If it has dice and minis, it probably has his attention.</p>
 </p>
 {% if author.email %}<a href="mailto:{{ author.email }}"><i class="svg-icon email"></i></a>{% endif %}
+<br/><br/>
 <div class="posts clearfix">
   {% for post in site.posts %}
     {% if post.author contains 'frankg' %}
