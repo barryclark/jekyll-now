@@ -1,8 +1,7 @@
 ---
 title: Review - Four ($)
 date: 2016-11-11 00:00:00 Z
-categories:
-- review
+category: review
 tags:
 - games
 - review

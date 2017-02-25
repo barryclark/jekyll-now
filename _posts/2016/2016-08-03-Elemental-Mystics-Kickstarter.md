@@ -1,8 +1,7 @@
 ---
 title: Kickstarter - Elemental Mystics
 date: 2016-08-03 00:00:00 Z
-categories:
-- kickstarter
+category: kickstarter
 tags:
 - games
 - kickstarter

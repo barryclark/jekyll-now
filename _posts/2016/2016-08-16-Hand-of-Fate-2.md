@@ -1,8 +1,7 @@
 ---
 title: Hand of Fate 2 - New Companion
 date: 2016-08-16 00:00:00 Z
-categories:
-- video games
+category: video games
 tags:
 - video games
 - hand of fate 2

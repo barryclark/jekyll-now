@@ -1,8 +1,7 @@
 ---
 title: Dead Man's Doubloons on Tabletop Simulator
 date: 2016-07-07 00:00:00 Z
-categories:
-- games
+category: games
 tags:
 - games
 - dead man's doubloons

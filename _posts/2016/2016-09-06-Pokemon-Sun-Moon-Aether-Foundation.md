@@ -1,8 +1,7 @@
 ---
 title: Pokémon Sun and Moon Aether Foundation, Differences, More Reveals
 date: 2016-09-06 00:00:00 Z
-categories:
-- video games
+category: video games
 tags:
 - video games
 - pokemon
