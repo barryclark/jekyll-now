@@ -1,7 +1,8 @@
 ---
 title: Paint Tutorial - Imperial Assault AT-ST - Part 1
 date: 2017-02-06 00:00:00 Z
-category: tutorials
+categories:
+- tutorials
 tags:
 - games
 - miniatures

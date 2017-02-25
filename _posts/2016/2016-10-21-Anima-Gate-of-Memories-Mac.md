@@ -1,7 +1,8 @@
 ---
 title: 'Anima: Gate of Memories Coming to Mac'
 date: 2016-10-21 00:00:00 Z
-category: video games
+categories:
+- video games
 tags:
 - video games
 - anima

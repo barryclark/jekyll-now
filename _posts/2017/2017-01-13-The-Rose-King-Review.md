@@ -1,7 +1,8 @@
 ---
 title: Review - The Rose King
 date: 2017-01-13 00:00:00 Z
-category: review
+categories:
+- review
 tags:
 - review
 - games

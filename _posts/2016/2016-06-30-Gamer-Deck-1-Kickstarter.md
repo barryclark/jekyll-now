@@ -1,7 +1,8 @@
 ---
 title: Kickstarter - Gamer Deck 1
 date: 2016-06-30 00:00:00 Z
-category: kickstarter
+categories:
+- kickstarter
 tags:
 - games
 - kickstarter

@@ -1,7 +1,8 @@
 ---
 title: Unboxing Arena of the Planeswalkers - Shadows Over Innistrad
 date: 2016-07-29 00:00:00 Z
-category: unboxing
+categories:
+- unboxing
 tags:
 - games
 - unboxing

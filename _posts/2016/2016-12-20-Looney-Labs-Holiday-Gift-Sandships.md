@@ -1,7 +1,8 @@
 ---
 title: Looney Labs Holiday Gift - Sandships
 date: 2016-12-20 00:00:00 Z
-category: games
+categories:
+- games
 tags:
 - games
 - sandships

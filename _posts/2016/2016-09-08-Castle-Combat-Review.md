@@ -1,7 +1,8 @@
 ---
 title: Review - Castle Combat
 date: 2016-09-08 00:00:00 Z
-category: review
+categories:
+- review
 tags:
 - games
 - review

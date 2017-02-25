@@ -1,7 +1,8 @@
 ---
 title: Discovering Tak - Part 4
 date: 2016-07-28 00:00:00 Z
-category: games
+categories:
+- games
 tags:
 - games
 - tak

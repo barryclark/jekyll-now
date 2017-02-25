@@ -1,7 +1,8 @@
 ---
 title: Unboxing Dragoon
 date: 2016-04-16 00:00:00 Z
-category: unboxing
+categories:
+- unboxing
 tags:
 - games
 - unboxing

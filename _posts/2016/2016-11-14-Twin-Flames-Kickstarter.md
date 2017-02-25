@@ -1,7 +1,8 @@
 ---
 title: Kickstarter - Twin Flames
 date: 2016-11-14 00:00:00 Z
-category: kickstarter
+categories:
+- kickstarter
 tags:
 - video games
 - twin flames

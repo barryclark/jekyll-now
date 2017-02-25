@@ -1,7 +1,8 @@
 ---
 title: A Pawn's Perspective
 date: 2016-04-13 00:00:00 Z
-category: news
+categories:
+- news
 tags:
 - news
 - purple pawn

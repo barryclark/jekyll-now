@@ -1,7 +1,8 @@
 ---
 title: More Pokémon Arrive in Pokémon GO
 date: 2016-12-12 00:00:00 Z
-category: video games
+categories:
+- video games
 tags:
 - video games
 - niantic

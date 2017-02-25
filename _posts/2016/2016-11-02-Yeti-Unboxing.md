@@ -1,7 +1,8 @@
 ---
 title: Unboxing Yeti
 date: 2016-11-02 00:00:00 Z
-category: unboxing
+categories:
+- unboxing
 tags:
 - games
 - unboxing

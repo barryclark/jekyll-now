@@ -1,7 +1,8 @@
 ---
 title: Review - Cthulhu Realms
 date: 2016-05-24 00:00:00 Z
-category: review
+categories:
+- review
 tags:
 - video games
 - deck-building

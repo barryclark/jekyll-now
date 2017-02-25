@@ -1,7 +1,8 @@
 ---
 title: Review - The Lords of Rock
 date: 2017-02-08 00:00:00 Z
-category: review
+categories:
+- review
 tags:
 - review
 - games

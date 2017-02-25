@@ -1,7 +1,8 @@
 ---
 title: The Silver Case HD Remaster Demo Released
 date: 2016-08-08 00:00:00 Z
-category: video games
+categories:
+- video games
 tags:
 - video games
 - suda51
