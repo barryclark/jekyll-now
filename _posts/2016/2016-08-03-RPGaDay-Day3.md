@@ -1,16 +1,11 @@
 ---
-title: "#RPGaDay 2016 - Day 3"
-date: 2016-08-03 00:00:00 Z
-categories:
-- games
-tags:
-- games
-- rpgs
-- rpgaday
 layout: post
-description: 'Character moment you''re proudest of? Day 3 of #RPGaDay.'
+title: "#RPGaDay 2016 - Day 3"
+description: "Character moment you're proudest of? Day 3 of #RPGaDay."
+category: games
 featured: rpgaday.png
-author: robk
+tags: [games, rpgs, rpgaday]
+author: Rob Kalajian
 ---
 
 **Character moment you're proudest of?**

@@ -1,18 +1,11 @@
 ---
-title: Unboxing Onitama
-date: 2016-04-19 00:00:00 Z
-categories:
-- unboxing
-tags:
-- games
-- unboxing
-- onitama
-- arcane wonders
 layout: post
-description: A beautiful two-player strategy game, Onitama is top notch. Let's see
-  what's inside.
+title: Unboxing Onitama
+description: A beautiful two-player strategy game, Onitama is top notch. Let's see what's inside.
+category: unboxing
 featured: onitama.png
-author: robk
+tags: [games, unboxing, onitama, arcane wonders]
+author: Rob Kalajian
 ---
 
 I just wrote up a [review of Onitama](http://www.purplepawn.com/2016/04/second-lookonitama/), by Arcane Wonders, for Purple Pawn.  It's an amazing little game with a ton of strategy, depth, and staying power.

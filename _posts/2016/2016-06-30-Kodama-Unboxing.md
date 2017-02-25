@@ -1,19 +1,11 @@
 ---
-title: Unboxing Kodama
-date: 2016-06-30 00:00:00 Z
-categories:
-- unboxing
-tags:
-- games
-- unboxing
-- kodama
-- daniel solis
-- action phase games
 layout: post
-description: Kodama is a beautiful and wonderful evolution of Kigi, by Daniel Solis.
-  Let's unbox it and see what's inside.
+title: Unboxing Kodama
+description: Kodama is a beautiful and wonderful evolution of Kigi, by Daniel Solis. Let's unbox it and see what's inside.
+category: unboxing
 featured: kodama.jpg
-author: robk
+tags: [games, unboxing, kodama, daniel solis, action phase games]
+author: Rob Kalajian
 ---
 
 Daniel Solis is an amazing game designer. I haven't played a game of his that I didn't like. A while ago Daniel had created a card game called [Kigi](http://www.drivethrucards.com/product/139066/Kigi), a beautiful game about painting the most lovely trees. It was self-published and sold through DriveThruCards. A while later Action Phase Games picked up the game, rethemed it, and had Daniel flesh it out and refine it bit more. Thus [Kodama](http://www.actionphasegames.com/pages/kodama-the-tree-spirits) was born.

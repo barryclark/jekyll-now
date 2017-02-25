@@ -1,19 +1,12 @@
 ---
-title: Review - Assault Suit Leynos
-date: 2016-09-26 00:00:00 Z
-categories:
-- review
-tags:
-- video games
-- review
-- assault suit leynos
-- rising star games
 layout: post
-description: I've always loved Target Earth for the Genesis. Now the game gets a remake
-  with its original Japanese title, Assualt Suit Leynos.
+title: "Review - Assault Suit Leynos"
+description: "I've always loved Target Earth for the Genesis. Now the game gets a remake with its original Japanese title, Assualt Suit Leynos."
+category: review
 featured: leynos.jpg
-amazonterm: assault suit leynos
-author: robk
+tags: [video games, review, assault suit leynos, rising star games]
+amazonterm: "assault suit leynos"
+author: Rob Kalajian
 ---
 
 <h2>Prelude</h2>

@@ -1,17 +1,11 @@
 ---
-title: CT FIG - The Games I Played
-date: 2016-05-01 00:00:00 Z
-categories:
-- conventions
-tags:
-- ct fig
-- games
-- international tabletop day
 layout: post
-description: In the spirit of Tabletop Day, I'd like to give a shout out to all the
-  awesome games I played while at the CT FIG
+title: CT FIG - The Games I Played
+description: In the spirit of Tabletop Day, I'd like to give a shout out to all the awesome games I played while at the CT FIG
 featured: ctfig.png
-author: robk
+category: conventions
+tags: [ct fig, games, international tabletop day]
+author: Rob Kalajian
 ---
 
 Not only was yesterday CT FIG, but it was also [International Tabletop Day](http://geekandsundry.com/table-top-day/). In the spirit of Tabletop Day, I'd like to give a shout out to all the awesome games I played while at the festival.

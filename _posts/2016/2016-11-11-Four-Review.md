@@ -1,18 +1,11 @@
 ---
-title: Review - Four ($)
-date: 2016-11-11 00:00:00 Z
-categories:
-- review
-tags:
-- games
-- review
-- four
-- march forth games
-- paid
 layout: post
-description: Four is lightweight, family fun.
+title: "Review - Four ($)"
+description: "Four is lightweight, family fun."
+category: review
 featured: four2.jpg
-author: robk
+tags: [games, review, four, march forth games, paid]
+author: Rob Kalajian
 ---
 
 <a class="center" href="http://www.marchforthgames.com/idevaffiliate/idevaffiliate.php?id=1_2_1_3" target="_blank"><img style="border:0px" src="http://www.marchforthgames.com/idevaffiliate/media/banners/FOUR-Banner-2.jpg" width="728" height="90" alt=""></a>

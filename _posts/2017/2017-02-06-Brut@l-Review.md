@@ -1,18 +1,11 @@
 ---
-title: Review - Brut@l
-date: 2017-02-06 00:00:00 Z
-categories:
-- review
-tags:
-- review
-- video games
-- brut@l
-- stormcloud games
 layout: post
-description: Stormcloud Games brings the past to the present with Brut@l, a modern
-  ASCII rogue-like dungeon crawl.
+title: "Review - Brut@l"
+description: "Stormcloud Games brings the past to the present with Brut@l, a modern ASCII rogue-like dungeon crawl."
+category: review
 featured: brut@l.png
-author: robk
+tags: [review, video games, brut@l, stormcloud games]
+author: Rob Kalajian
 ---
 
 ![Brut@l](/images/featured/brut@l.png){: .float-right}

@@ -1,19 +1,11 @@
 ---
-title: Discovering Tak - Part 2
-date: 2016-06-24 00:00:00 Z
-categories:
-- games
-tags:
-- games
-- tak
-- cheapass games
-- a wise man's fear
-- patrick rothfuss
 layout: post
-description: Continuing my Tak post, I figured I'd give my initial thoughts on the
-  game.
+title: Discovering Tak - Part 2
+description: Continuing my Tak post, I figured I'd give my initial thoughts on the game.
+category: games
 featured: tak2.jpg
-author: robk
+tags: [games, tak, cheapass games, a wise man's fear, patrick rothfuss]
+author: Rob Kalajian
 ---
 
 Continuing my [earlier Tak post](http://pawnsperspective.com/Discovering-Tak/), I figured I'd give my initial thoughts on the game. I finished my set, and have played more than a handful of the game, teaching 3 of my kids to play over our recent vacation.

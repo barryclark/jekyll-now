@@ -1,19 +1,12 @@
 ---
-title: Unboxing Yashima
-date: 2016-07-14 00:00:00 Z
-categories:
-- unboxing
-tags:
-- games
-- unboxing
-- yashima
-- greenbrier games
 layout: post
-description: Yashima is a fast-paced combat game with gorgeous art and awesome minis.
-  Let's unbox it and see what's inside.
+title: Unboxing Yashima
+description: Yashima is a fast-paced combat game with gorgeous art and awesome minis. Let's unbox it and see what's inside.
+category: unboxing
 featured: yashima.jpg
-amazonterm: Yashima
-author: robk
+amazonterm: "Yashima"
+tags: [games, unboxing, yashima, greenbrier games]
+author: Rob Kalajian
 ---
 
 [Yashima](http://www.greenbriergames.com/main/index.php/project/yashima/) is another Greenbrier Games release I have in for review. I first saw it at PAX East, and was instantly drawn to it by it's art style and amazing looking miniatures.

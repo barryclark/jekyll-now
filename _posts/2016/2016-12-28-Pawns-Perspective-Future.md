@@ -1,16 +1,11 @@
 ---
-title: The Future of A Pawn's Perspective
-date: 2016-12-28 00:00:00 Z
-categories:
-- news
-tags:
-- news
-- a pawn's perspective
 layout: post
-description: I've got a plan for A Pawn's Perspective in 2017. I'm hoping to expand
-  a bit.
+title: "The Future of A Pawn's Perspective"
+description: "I've got a plan for A Pawn's Perspective in 2017. I'm hoping to expand a bit."
+category: news
 featured: logo.png
-author: robk
+tags: [news, a pawn's perspective]
+author: Rob Kalajian
 ---
 
 It's almost 2017 and soon A Pawn's Perspective will be a year old. The site has come a long way since I first started it as an overflow of items that didn't really fit on [Purple Pawn](http://purplepawn.com). It's grown by leaps and bounds, and I'm starting to feel like maybe using my own personal social accounts aren't doing the content much justice.

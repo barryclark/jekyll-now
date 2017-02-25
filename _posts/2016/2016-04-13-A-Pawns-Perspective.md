@@ -1,14 +1,10 @@
 ---
-title: A Pawn's Perspective
-date: 2016-04-13 00:00:00 Z
-categories:
-- news
-tags:
-- news
-- purple pawn
 layout: post
+title: A Pawn's Perspective
 description: Site name change, perspective change.
-author: robk
+category: news
+tags: [news, purple pawn]
+author: Rob Kalajian
 ---
 
 For a long time I've never really had a direction on this blog, or any of its previous incarnations. I've decided to change that, and start a focus to these posts.

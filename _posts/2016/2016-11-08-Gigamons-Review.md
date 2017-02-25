@@ -1,18 +1,12 @@
 ---
-title: Review - Gigamons
-date: 2016-11-08 00:00:00 Z
-categories:
-- review
-tags:
-- games
-- review
-- gigamons
-- blue orange games
 layout: post
-description: Gigamons is more than just Memory, and an excellent game for kids.
+title: "Review - Gigamons"
+description: "Gigamons is more than just Memory, and an excellent game for kids."
+category: review
 featured: gigamons.jpg
-amazonterm: gigamons
-author: robk
+amazonterm: "gigamons"
+tags: [games, review, gigamons, blue orange games]
+author: Rob Kalajian
 ---
 
 <img src="/images/gigamons/gigamons.jpg" width="300" alt="Gigamons" class="float-right" />

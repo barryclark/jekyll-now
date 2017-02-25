@@ -1,14 +1,10 @@
 ---
-title: Dragon Dice
-date: 2015-09-10 00:00:00 Z
-categories:
-- games
-tags:
-- games
-- dragon dice
 layout: post
+title: Dragon Dice
 description: A great game, Dragon Dice becomes a new obsession.
-author: robk
+category: games
+tags: [games, dragon dice]
+author: Rob Kalajian
 ---
 
 [Dragon Dice](http://sfr-inc.com/dragondice.php) has become something of a new obsession of mine. I recieved a Starter Set to review over at [Purple Pawn](http://www.purplepawn.com/2015/09/second-lookdragon-dice-firewalkertreefolk-starter/) and I've become quite smitten with the game. It has a long history, and is still kicking, but I figured I'd do my best to spread the word about it. Hopefully I can even get some demo time in at a few game stores around here in hopes that they'll carry dice.

@@ -1,19 +1,13 @@
 ---
-title: Looney Labs Holiday Gift - Sandships
-date: 2016-12-20 00:00:00 Z
-categories:
-- games
-tags:
-- games
-- sandships
-- looney labs
-- pyramid arcade
 layout: post
-description: Quite the unexpected gift in the mail! A Looney Labs pyramid game, Sandships,
-  just arrived.
+title: "Looney Labs Holiday Gift - Sandships"
+description: "Quite the unexpected gift in the mail! A Looney Labs pyramid game, Sandships, just arrived."
+category: games
 featured: sandships.jpg
-author: robk
+tags: [games, sandships, looney labs, pyramid arcade]
+author: Rob Kalajian
 ---
+
 
 <img src="/images/sandships/sandships.jpg" alt="Sandships" height="200" class="float-right" />A wonderful surprise showed up in the mail today courtesy of Looney Labs. Packed into a neat envelope was Sandships, a Pyramid Arcade game that is played with stacks of 3 pyramids in 5 different colors. I haven't opened it yet (I'm waiting until tomorrow to get some better pictures of it) so I haven't read the rules.
 

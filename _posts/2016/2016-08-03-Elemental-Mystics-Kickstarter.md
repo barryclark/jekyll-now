@@ -1,18 +1,12 @@
 ---
-title: Kickstarter - Elemental Mystics
-date: 2016-08-03 00:00:00 Z
-categories:
-- kickstarter
-tags:
-- games
-- kickstarter
-- elemental mystics
 layout: post
+title: Kickstarter - Elemental Mystics
 description: Elemental Mystics is a new XCG up on Kickstarter with an amazing look.
+category: kickstarter
 featured: elementalmystics.jpg
-author: robk
+tags: [games, kickstarter, elemental mystics]
+author: Rob Kalajian
 ---
-
 <iframe style="float:left;margin-right:10px;margin-bottom:10px;" frameborder="0" height="420" scrolling="no" src="https://www.kickstarter.com/projects/elementalmystics/elemental-mystics-a-mythological-expandable-card-g/widget/card.html?v=2" width="220"></iframe>
 
 Another Kickstarter pick, already?

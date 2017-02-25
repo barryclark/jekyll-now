@@ -1,19 +1,12 @@
 ---
-title: Review - Go Away Monster
-date: 2016-08-24 00:00:00 Z
-categories:
-- review
-tags:
-- games
-- review
-- go away monster
-- gamewright
 layout: post
-description: Gamewright has a new edition of their classic kid's game. The new Go
-  Away Monster is a charming treat.
+title: "Review - Go Away Monster"
+description: "Gamewright has a new edition of their classic kid's game. The new Go Away Monster is a charming treat."
+category: review
 featured: goaway.jpg
-amazonterm: Go away monster
-author: robk
+amazonterm: "Go away monster"
+tags: [games, review, go away monster, gamewright]
+author: Rob Kalajian
 ---
 
 <img src="/images/goawaymonster/goawaynew.jpg" alt="Go Away Monster, 2016 Edition" width="300" class="float-right" />

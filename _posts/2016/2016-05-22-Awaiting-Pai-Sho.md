@@ -1,18 +1,11 @@
 ---
-title: Awaiting Pai Sho
-date: 2016-05-22 00:00:00 Z
-categories:
-- games
-tags:
-- games
-- avatar the last airbender
-- pai sho
-- lyris laser studio
 layout: post
-description: Ever since gamers saw Pai Sho played on Nickelodean's Avatar The Last
-  Airbender, they've been coming up with ways to play.
+title: Awaiting Pai Sho
+description: Ever since gamers saw Pai Sho played on Nickelodean's Avatar The Last Airbender, they've been coming up with ways to play.
+category: games
 featured: paisho.png
-author: robk
+tags: [games, avatar the last airbender, pai sho, lyris laser studio]
+author: Rob Kalajian
 ---
 
 Ever since gamers saw [Pai Sho](http://www.purplepawn.com/2010/09/pai-sho/) played on Nickelodean's Avatar: The Last Airbender, they've been coming up with ways to play. Pai Sho, in a playable form, has come a long way. There's been many rules sets, and even tile sets, and lots of people have made their own boards and pieces. You can find a bunch on Etsy, but one of the most impressive sets I've seen comes from [Lyris Laser Studio](http://lyrislaser.com/product/pai-sho-board/). Their full set includes a board, two sets of tiles, and a beautiful wooden box to store the tiles in. The best part? I've got a set on the way.

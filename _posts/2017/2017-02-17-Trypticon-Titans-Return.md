@@ -1,20 +1,12 @@
 ---
-title: Hasbro Unveiling Transformers Trypticon at New York Toy Fair 2017
-date: 2017-02-17 00:00:00 Z
-categories:
-- toys
-tags:
-- toys
-- hasbro
-- transformers
-- titans return
-- trypticon
 layout: post
-description: The fans voted and Trypticon is now being added to the Transformers Titans
-  Return line!
+title: "Hasbro Unveiling Transformers Trypticon at New York Toy Fair 2017"
+description: "The fans voted and Trypticon is now being added to the Transformers Titans Return line!"
+category: toys
 featured: TRYPTICON.jpg
-amazonterm: Transformers Titans Return
-author: robk
+amazonterm: "Transformers Titans Return"
+tags: [toys, hasbro, transformers, titans return, trypticon]
+author: Rob Kalajian
 ---
 
 In 2015 Hasbro gave fans the option to vote for their favorite character to become the next Generations Titans Return Titan Class toy. The ballots were counted and fans voted on Trypticon! Now, coming in the fall, Trypticon is the largest figure in the 2017 Titans Return universe and is also the biggest Decepticon figure ever made. It converts between three different modes: dino, spaceship and city.

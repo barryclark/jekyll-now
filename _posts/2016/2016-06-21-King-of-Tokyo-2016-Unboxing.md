@@ -1,18 +1,11 @@
 ---
-title: Unboxing King of Tokyo 2016
-date: 2016-06-21 00:00:00 Z
-categories:
-- unboxing
-tags:
-- games
-- unboxing
-- king of tokyo
-- iello
 layout: post
-description: To celebrate the 5th anniversary of King of Tokyo there's a new version.
-  Let's unbox it and see what's inside.
+title: Unboxing King of Tokyo 2016
+description: To celebrate the 5th anniversary of King of Tokyo there's a new version. Let's unbox it and see what's inside.
+category: unboxing
 featured: kot.jpg
-author: robk
+tags: [games, unboxing, king of tokyo, iello]
+author: Rob Kalajian
 ---
 
 To celebrate the 5th anniversary of the game, there's a new version of [King of Tokyo](http://www.iellogames.com/KingOfTokyo.html) out with brand new artwork. The game is exactly the same as before, but got a facelift to match the upcoming mobile version of the game.

@@ -1,0 +1,20 @@
+---
+layout: post
+title: I Am Elemental
+description: I Am Elemental has shown off some amazing actions figures that don't suffer from female sterotypes.
+category: toys
+tags: [i am elemental, toy fair]
+author: Rob Kalajian
+---
+
+While at Toy Fair this year, the women over at the [Goldieblox](http://goldieblox.com) booth had told me I just *had* to go see the [I Am Elemental](http://iamelemental.com) booth. I'm really glad I did, because what they had to show off was amazing.
+
+For those not familiar, I Am Elemental makes a line of action figures for girls. Seeing an problem with the current selection of female action figures on the market, they came up with powerful superheroes with a more realistic body type. The women are also race-neutral, letting girls (hey, boys too!) to personify them as they wish.
+
+![The Courage Line]({{ site.url }}/images/iamelemental.png)
+
+The first line of figures are based on courage, each heroine an element of courage. There's Bravery, Energy, Persistance, Honesty, Industry, Enthusiasm, and Fear. It's interesting to note that these aren't women with superpowers, but the elements our courage personified. It's also important to note that Fear isn't the villain here. Courage cannot exist without fear, and the I Am Elemental team believe it's important for children to know and embrace this.
+
+My wife and I recently ordered the full set of figures for my daughter's 8th birthday at the end of the month. I can't tell if we're more excited to give them to her, or more excited that we'll get to play with them too!
+
+I highly suggest giving them a look. I'll post more here once my daughter has opened them and put them through their butt-kicking paces.

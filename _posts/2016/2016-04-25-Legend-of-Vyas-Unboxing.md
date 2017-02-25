@@ -1,18 +1,11 @@
 ---
-title: Unboxing Legend of Vyas
-date: 2016-04-25 00:00:00 Z
-categories:
-- unboxing
-tags:
-- games
-- unboxing
-- legend of vyas
-- vansh games
 layout: post
-description: Legend of Vyas is a new CCG by Vansh Games, and it looks great. Let's
-  see what's inside!
+title: Unboxing Legend of Vyas
+description: Legend of Vyas is a new CCG by Vansh Games, and it looks great. Let's see what's inside!
+category: unboxing
 featured: vyas.png
-author: robk
+tags: [games, unboxing, legend of vyas, vansh games]
+author: Rob Kalajian
 ---
 
 My [review of Legend of Vyas](http://www.purplepawn.com/2016/04/second-looklegend-of-vyas/), by Vansh Games, went up today on Purple Pawn.  The game is a CCG based on the Indian epic, The Mahabharata. Along with it being a great game, the box and components are top notch.

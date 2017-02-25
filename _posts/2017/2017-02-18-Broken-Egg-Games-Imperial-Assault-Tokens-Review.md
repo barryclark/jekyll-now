@@ -1,19 +1,12 @@
 ---
-title: Review - Broken Egg Games' Imperial Assault Tokens
-date: 2017-02-18 00:00:00 Z
-categories:
-- review
-tags:
-- review
-- games
-- accessories
-- broken egg games
-- imperial assault
 layout: post
-description: A look at Broken Egg Games' custom tokens for Imperial Assault.
+title: "Review - Broken Egg Games' Imperial Assault Tokens"
+description: "A look at Broken Egg Games' custom tokens for Imperial Assault."
+category: review
 featured: brokeneggtokens.jpg
-amazonterm: imperial assault
-author: frankg
+amazonterm: "imperial assault"
+tags: [review, games, accessories, broken egg games, imperial assault]
+author: Frank Grip
 ---
 
 ![Imperial Assault Tokens](/images/featured/brokeneggtokens.jpg){: .float-right}
@@ -36,3 +29,5 @@ Tomorrow, I begin a new campaign of Imperial Assault with some friends and these
 
 [Broken Egg Games](https://www.brokenegggames.com/)\\
 [Broken Egg Games Imperial Assault Token Set](http://www.brokenegggames.com/destiny-token-sets.html)
+
+*Frank is an attorney and family man currently based out of Las Vegas. He's a long time gaming enthusiast with a tabletop interest in most dungeon crawlers and map strategy games. If it has dice and minis, it probably has his attention.*

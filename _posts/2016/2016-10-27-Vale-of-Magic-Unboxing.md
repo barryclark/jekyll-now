@@ -1,19 +1,12 @@
 ---
-title: 'Unboxing Mystic Vale: Vale of Magic'
-date: 2016-10-27 00:00:00 Z
-categories:
-- unboxing
-tags:
-- games
-- unboxing
-- vale of magic
-- aeg
-- mystic vale
 layout: post
-description: Mystic Vale's first expansion, Vale of Magic, is out. Let's look inside.
+title: "Unboxing Mystic Vale: Vale of Magic"
+description: "Mystic Vale's first expansion, Vale of Magic, is out. Let's look inside."
+category: unboxing
 featured: valeofmagic.jpg
-amazonterm: vale of magic
-author: robk
+amazonterm: "vale of magic"
+tags: [games, unboxing, vale of magic, aeg, mystic vale]
+author: Rob Kalajian
 ---
 
 Previously I've unboxed[^1] and reviewed[^2] AEG's Mystic Vale. Now I've gotten my hands on its first expansion, Vale of Magic.

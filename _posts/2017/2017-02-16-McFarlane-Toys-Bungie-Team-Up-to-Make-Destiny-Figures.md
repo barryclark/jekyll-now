@@ -1,20 +1,12 @@
 ---
-title: McFarlane Toys & Bungie Team Up to Make Destiny Figures
-date: 2017-02-16 00:00:00 Z
-categories:
-- toys
-tags:
-- toys
-- video games
-- bungie
-- mcfarlane toys
-- destiny
 layout: post
-description: McFarlane Toys links up with Bungie to become legend and create toys
-  based off the smash hit video game Destiny
+title: "McFarlane Toys & Bungie Team Up to Make Destiny Figures"
+description: "McFarlane Toys links up with Bungie to become legend and create toys based off the smash hit video game Destiny"
+category: toys
 featured: mcdestiny.jpg
-amazonterm: McFarlane
-author: robk
+amazonterm: "McFarlane"
+tags: [toys, video games, bungie, mcfarlane toys, destiny]
+author: Rob Kalajian
 ---
 
 ![McFarlane/Bungie Destiny](/images/mcfarlane/destiny.png)

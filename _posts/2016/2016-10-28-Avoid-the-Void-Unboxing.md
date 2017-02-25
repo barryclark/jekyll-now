@@ -1,18 +1,11 @@
 ---
-title: Unboxing Avoid the Void
-date: 2016-10-28 00:00:00 Z
-categories:
-- unboxing
-tags:
-- games
-- unboxing
-- geek fever games
-- avoid the void
 layout: post
-description: Geek Fever Games has finally released Avoid the Void, one of my favorite
-  games from PAX East. Let's look inside.
+title: Unboxing Avoid the Void
+description: "Geek Fever Games has finally released Avoid the Void, one of my favorite games from PAX East. Let's look inside."
+category: unboxing
 featured: avoid.jpg
-author: robk
+tags: [games, unboxing, geek fever games, avoid the void]
+author: Rob Kalajian
 ---
 
 I'm a [huge fan](http://www.purplepawn.com/2016/04/pax-east-2016-avoid-the-void-by-geek-fever-games/) of Avoid the Void and was really bummed when the Kickstarter campaign for the game fell short. Thankfully [http://www.geekfevergames.com/](http://www.geekfevergames.com/) didn't give up, and crowdfunded the game through [The Game Crafter](https://www.thegamecrafter.com/games/avoid-the-void?). My copy finally arrived, and I couldn't be happier. Now I can enjoy galaxy destroying fun with my kids!

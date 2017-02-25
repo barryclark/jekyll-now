@@ -1,7 +1,7 @@
 ---
-title: About
-permalink: "/about/"
 layout: page
+title: About
+permalink: /about/
 ---
 
 <img src="/images/me.jpg" alt="Me" width="300" style="border: 1px solid #4682b4;float: right;margin-bottom: 10px;margin-left: 10px;padding: 5px;"/>
@@ -32,7 +32,7 @@ The above items being stated, I should mention that I generally accept review pr
 
 **Phone/Camera:**
 
-[Samsung Galaxy S7 Edge](http://www.samsung.com/us/explore/galaxy-s7-features-and-specs/?cid=ppc-)
+[OnePlus 2](https://oneplus.net/oneplus-2)
 
 **Everyday Laptop:**
 

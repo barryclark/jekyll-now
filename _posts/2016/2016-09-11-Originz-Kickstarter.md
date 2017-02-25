@@ -1,20 +1,12 @@
 ---
-title: 'Kickstarter - ORIGINZ: The Superpowered Card Game'
-date: 2016-09-11 00:00:00 Z
-categories:
-- kickstarter
-tags:
-- games
-- kickstarter
-- ORIGINZ
-- flavor faction
 layout: post
-description: 'Become a Superpowered Hero or Villain and battle with 2 to 8 players
-  in ORIGINZ: The Superpowered Card Game.'
+title: "Kickstarter - ORIGINZ: The Superpowered Card Game"
+description: "Become a Superpowered Hero or Villain and battle with 2 to 8 players in ORIGINZ: The Superpowered Card Game."
+category: kickstarter
 featured: originz.jpg
-author: robk
+tags: [games, kickstarter, ORIGINZ, flavor faction]
+author: Rob Kalajian
 ---
-
 <iframe style="float:left;margin-right:10px;margin-bottom:10px;" frameborder="0" height="420" scrolling="no" src="https://www.kickstarter.com/projects/flavorfaction/originz-the-superpowered-card-game/widget/card.html?v=2" width="220"></iframe>
 
 My first September Kickstarter pick is a game I'm a huge fan on. [ORIGINZ: The Superpowered Card Game](https://www.kickstarter.com/projects/flavorfaction/originz-the-superpowered-card-game/comments) is a self-contained card battling game with 12 different superpower decks. I've already done a [Kickstarter Preview](http://www.purplepawn.com/2016/09/kickstarter-preview-originz-the-superpowered-card-game/) for the game on Purple Pawn and have [streamed the game live](http://pawnsperspective.com/Originz-Tabletop-Simulator/) over Tabletop Simulator with one of the game's designers, Evan.

@@ -1,19 +1,12 @@
 ---
-title: Unboxing Santorini
-date: 2017-01-03 00:00:00 Z
-categories:
-- unboxing
-tags:
-- unboxing
-- games
-- santorini
-- roxley
 layout: post
-description: Santorini is a cute game from Roxley about building. Let's see what's
-  inside!
+title: "Unboxing Santorini"
+description: "Santorini is a cute game from Roxley about building. Let's see what's inside!"
+category: unboxing
 featured: santorini.jpg
 amazonterm: santorini
-author: robk
+tags: [unboxing, games, santorini, roxley]
+author: Rob Kalajian
 ---
 
 Roxley just sent me a copy of Santorini, a game I've been excitedly waiting for. It's pretty awesome, but I'll leave that for the review later this week. Until then I've snagged pics of all the amazing components that come with the game. Everything is top notch from the storybook to the 3D board to all the building pieces and amazing card art.

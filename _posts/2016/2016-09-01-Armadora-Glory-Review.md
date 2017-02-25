@@ -1,19 +1,12 @@
 ---
-title: Review - Armadora
-date: 2016-09-01 00:00:00 Z
-categories:
-- review
-tags:
-- games
-- review
-- armadora
-- blue orange games
 layout: post
-description: Similar to the old pen-and-paper game boxes, Armadora is fun game for
-  families.
+title: "Review - Armadora"
+description: "Similar to the old pen-and-paper game boxes, Armadora is fun game for families."
+category: review
 featured: armadora.jpg
-amazonterm: blue orange games
-author: robk
+amazonterm: "blue orange games"
+tags: [games, review, armadora, blue orange games]
+author: Rob Kalajian
 ---
 
 <img src="/images/armadora/armadora.jpg" alt="Armadora" width="300" class="float-right" />

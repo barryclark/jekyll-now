@@ -1,17 +1,11 @@
 ---
-title: Review - Formula μ
-date: 2016-08-17 00:00:00 Z
-categories:
-- review
-tags:
-- games
-- review
-- formula micro
-- michael groll's games
 layout: post
-description: Formula μ is a clever racing game in a small package.
+title: "Review - Formula μ"
+description: "Formula μ is a clever racing game in a small package."
+category: review
 featured: formulamicro.jpg
-author: robk
+tags: [games, review, formula micro, michael groll's games]
+author: Rob Kalajian
 ---
 
 <img src="/images/formulamicro/micro.jpg" alt="Formula Micro" class="float-right" />

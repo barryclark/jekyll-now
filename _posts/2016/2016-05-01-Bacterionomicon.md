@@ -1,22 +1,11 @@
 ---
-title: Bacterionomicon - The Creatures of the Healing Blade
-date: 2016-05-01 00:00:00 Z
-categories:
-- books
-tags:
-- rpg
-- books
-- bacterionomicon
-- healing blade
-- nerdcore medical
-- ct fig
-- dunegon world
-- not thank you evil
 layout: post
-description: The Bacterionomicon, an amazing book where diseases and medication become
-  beautiful fantasy illustrations.
+title: Bacterionomicon - The Creatures of the Healing Blade
+description: The Bacterionomicon, an amazing book where diseases and medication become beautiful fantasy illustrations. 
 featured: bact.png
-author: robk
+category: books
+tags: [rpg, books, bacterionomicon, healing blade, nerdcore medical, ct fig, dunegon world, not thank you evil]
+author: Rob Kalajian
 ---
 
 Yesterday was the [Connecticut Festival of Indie Games](http://www.ct-fig.com), and while there's a ton I'm going to be posting on [Purple Pawn](http://purplepawn.com) soon, there was an item there that didn't *quite* fit in with the regular fair that I wanted to write about.

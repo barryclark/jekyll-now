@@ -1,19 +1,11 @@
 ---
-title: Review - Light of Dragons
-date: 2016-07-18 00:00:00 Z
-categories:
-- review
-tags:
-- games
-- review
-- light of dragons
-- roots of mali
-- suncoregames
 layout: post
-description: SunCoreGames is launching a Kickstarter for Roots of Mali tomorrow. Today
-  I take a look at the first game in the series, Light of Dragons.
+title: Review - Light of Dragons
+description: SunCoreGames is launching a Kickstarter for Roots of Mali tomorrow. Today I take a look at the first game in the series, Light of Dragons.
+category: review
 featured: lightofdragons.jpg
-author: robk
+tags: [games, review, light of dragons, roots of mali, suncoregames]
+author: Rob Kalajian
 ---
 
 <img src="/images/featured/lightofdragons.jpg" style="float:right;margin-left:10px;margin-bottom:10px;" alt="Odd World"/>With the [Kickstarter](https://www.kickstarter.com/projects/9317481/791540056?token=066e3700) for Roots of Mali, [SunCoreGames](http://suncoregames.ch)' new base set, hitting tomorrow I figured I'd get my review of last year's Light of Dragons up. Light of Dragons and Roots of Mali are both the same game, just with different tribes. The tribes in both games have different spells and innate powers, making them play completely differently. Both games are completely stand-alone, but can be mixed for varied gameplay. I'll be posting a preview of Roots of Mali on [Purple Pawn](http://purplepawn.com) tomorrow, so this post will strictly be about Light of Dragons.

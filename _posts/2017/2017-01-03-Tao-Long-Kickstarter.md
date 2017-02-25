@@ -1,19 +1,12 @@
 ---
-title: Tao Long
-date: 2017-01-03 00:00:00 Z
-categories:
-- kickstarter
-tags:
-- kickstarter
-- games
-- tao long
-- thundergryph games
 layout: post
-description: Tao Long is a new Kickstarter from Thundergryph Games, the publisher
-  that put out Overseers.
+title: "Tao Long"
+description: "Tao Long is a new Kickstarter from Thundergryph Games, the publisher that put out Overseers."
+category: kickstarter
 featured: taolong.jpg
 amazontag: santorini
-author: robk
+tags: [kickstarter, games, tao long, thundergryph games]
+author: Rob Kalajian
 ---
 
 <iframe style="float:right; argin-left:10px;" frameborder="0" height="420" scrolling="no" src="https://www.kickstarter.com/projects/gonab/tao-long/widget/card.html?v=2" width="220"></iframe>

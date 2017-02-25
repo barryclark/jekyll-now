@@ -1,19 +1,11 @@
 ---
-title: Review - Spellweaver
-date: 2016-05-16 00:00:00 Z
-categories:
-- review
-tags:
-- video games
-- ccg
-- review
-- spellweaver
-- dream reactor
 layout: post
-description: Having just written about the release of the two new Spellweaver DLC
-  packs, I realized I had never gotten around to actually reviewing the game.
+title: Review - Spellweaver
+description: Having just written about the release of the two new Spellweaver DLC packs, I realized I had never gotten around to actually reviewing the game.
+category: review
 featured: spellweaver.png
-author: robk
+tags: [video games, ccg, review, spellweaver, dream reactor]
+author: Rob Kalajian
 ---
 
 Having just [written](http://www.purplepawn.com/2016/05/spell-weaver-dlcs-now-available-on-steam/) about the release of the two new Spellweaver DLC packs, I realized I had never gotten around to actually reviewing the game.

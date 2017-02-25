@@ -1,16 +1,11 @@
 ---
-title: "#RPGaDay 2016 - Day 9"
-date: 2016-08-09 00:00:00 Z
-categories:
-- games
-tags:
-- games
-- rpgs
-- rpgaday
 layout: post
-description: 'Beyond the game, what''s involved in an ideal setting? Day 9 of #RPGaDay.'
+title: "#RPGaDay 2016 - Day 9"
+description: "Beyond the game, what's involved in an ideal setting? Day 9 of #RPGaDay."
+category: games
 featured: rpgaday.png
-author: robk
+tags: [games, rpgs, rpgaday]
+author: Rob Kalajian
 ---
 
 **Beyond the game, what's involved in an ideal setting?**

@@ -1,21 +1,12 @@
 ---
-title: Review - Safari Ltd Behemoth and Crystal Cavern Dragon
-date: 2016-10-11 00:00:00 Z
-categories:
-- review
-tags:
-- toys
-- safari ltd
-- behemoth
-- mythical realms
-- review
-- crystal cavern dragon
 layout: post
-description: Safari's Behemoth and Crystal Cave Dragon are beautiful, and are made
-  to play.
+title: "Review - Safari Ltd Behemoth and Crystal Cavern Dragon"
+description: "Safari's Behemoth and Crystal Cave Dragon are beautiful, and are made to play."
+category: review
 featured: behemoth.jpg
-amazonterm: Safari Toys ltd
-author: robk
+amazonterm: "Safari Toys ltd"
+tags: [toys, safari ltd, behemoth, mythical realms, review, crystal cavern dragon]
+author: Rob Kalajian
 ---
 
 <h2>Prelude</h2>

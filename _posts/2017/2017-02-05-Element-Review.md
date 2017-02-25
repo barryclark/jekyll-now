@@ -1,19 +1,12 @@
 ---
-title: Review - Element
-date: 2017-02-05 00:00:00 Z
-categories:
-- review
-tags:
-- review
-- games
-- element
-- rather dashing games
 layout: post
-description: Control the elements and surround the other player's sage. Element is
-  elegant.
+title: "Review - Element"
+description: "Control the elements and surround the other player's sage. Element is elegant."
+category: review
 featured: element2.jpg
-amazonterm: rather dashing element
-author: robk
+amazonterm: "rather dashing element"
+tags: [review, games, element, rather dashing games]
+author: Rob Kalajian
 ---
 
 ![Element](/images/featured/element2.jpg){: .float-right}

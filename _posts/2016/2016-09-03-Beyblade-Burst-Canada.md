@@ -1,19 +1,12 @@
 ---
-title: Beyblade Burst on Shelves in Canada
-date: 2016-09-03 00:00:00 Z
-categories:
-- toys
-tags:
-- toys
-- beyblade
-- hasbro
-- beyblade burst
 layout: post
-description: We're still waiting for the release in the US, but Beyblade Burst has
-  been seen on Canadian shelves.
+title: "Beyblade Burst on Shelves in Canada"
+description: "We're still waiting for the release in the US, but Beyblade Burst has been seen on Canadian shelves."
+category: toys
 featured: Beybladeburst_logo.png
-amazonterm: beyblade burst
-author: robk
+amazonterm: "beyblade burst"
+tags: [toys, beyblade, hasbro, beyblade burst]
+author: Rob Kalajian
 ---
 
 Bey Brad over at the World Beyblade Organization has posted [some pics](https://worldbeyblade.org/Thread-Hasbro-s-Beyblade-Burst-OUT-in-Canada-First-Photos-LOTS-of-images) of Beyblade Burst on shelves in Canada. Toronto, Ontario, to be exact.

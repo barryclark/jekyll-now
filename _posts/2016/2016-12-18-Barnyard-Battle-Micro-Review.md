@@ -1,20 +1,13 @@
 ---
-title: Micro Review - Barnyard Battle
-date: 2016-12-18 00:00:00 Z
-categories:
-- review
-tags:
-- games
-- review
-- castle combat
-- barnyard battle
-- kid realms
 layout: post
-description: Barnyard Battle is a standalone, non-collectible version of KidRealm's
-  Castle Combat.
+title: "Micro Review - Barnyard Battle"
+description: "Barnyard Battle is a standalone, non-collectible version of KidRealm's Castle Combat."
+category: review
 featured: kidrealm.jpg
-author: robk
+tags: [games, review, castle combat, barnyard battle, kid realms]
+author: Rob Kalajian
 ---
+
 
 <img src="/images/barnyardbattle/barnyardbattle.jpg" alt="Barnyard Battle" width="300" class="float-right" />
 <h2>Prelude</h2>

@@ -1,18 +1,11 @@
 ---
-title: Kickstarter - Twin Flames
-date: 2016-11-14 00:00:00 Z
-categories:
-- kickstarter
-tags:
-- video games
-- twin flames
-- kickstarter
-- fat panda games
 layout: post
-description: Twin Flames is a 2D action platformer with roguelike elements to spice
-  it up. It's my first Kickstarter pick for November.
+title: "Kickstarter - Twin Flames"
+description: "Twin Flames is a 2D action platformer with roguelike elements to spice it up. It's my first Kickstarter pick for November."
+category: kickstarter
 featured: twinflames.jpg
-author: robk
+tags: [video games, twin flames, kickstarter, fat panda games]
+author: Rob Kalajian
 ---
 
 My first-ever video game Kickstarter pick is Fat Panda Games' [Twin Flames](http://twinflamesgame.com). It's actually not on Kickstarter yet but should be soon.

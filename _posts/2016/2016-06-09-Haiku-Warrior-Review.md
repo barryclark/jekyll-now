@@ -1,18 +1,11 @@
 ---
-title: Review - Haiku Warrior
-date: 2016-06-09 00:00:00 Z
-categories:
-- review
-tags:
-- games
-- review
-- haiku warrior
-- jason anarchy
 layout: post
-description: Haiku Warrior is light, easy to play, portable, and was a pleasure to
-  review.
+title: Review - Haiku Warrior
+description: Haiku Warrior is light, easy to play, portable, and was a pleasure to review.
+category: review
 featured: haikuwarrior.png
-author: robk
+tags: [games, review, haiku warrior, jason anarchy]
+author: Rob Kalajian
 ---
 
 Some may know Jason Anarchy as the designer of [Drinking Quest](http://www.drinkingquest.com/games/drinking-quest-journey-into-draught-preorder-price-5-off) the card-based, drinking RPG. Jason has a new game, Haiku Warrior, that's similar, but much more subdued. It can be played solo, or up to four players. The cards still drive the adventure, and every card carries a haiku. Jason told me at PAX East that he wanted to make a solo variant for Drinking Quest, but the thought of people drinking alone was too depressing. Hence, Haiku Warrior was born.

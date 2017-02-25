@@ -1,18 +1,11 @@
 ---
-title: Kickstarter - Gamer Deck 1
-date: 2016-06-30 00:00:00 Z
-categories:
-- kickstarter
-tags:
-- games
-- kickstarter
-- gamer deck 1
-- odd hackwelder
 layout: post
-description: Gamer Deck 1 is a card system/poker deck highlighting different game
-  mechanics. It's my 2nd June Kickstarter pick.
+title: Kickstarter - Gamer Deck 1
+description: Gamer Deck 1 is a card system/poker deck highlighting different game mechanics. It's my 2nd June Kickstarter pick.
+category: kickstarter
 featured: gamerdeck.jpg
-author: robk
+tags: [games, kickstarter, gamer deck 1, odd hackwelder]
+author: Rob Kalajian
 ---
 
 <iframe style="float:left; margin-right:10px;" frameborder="0" height="420" scrolling="no" src="https://www.kickstarter.com/projects/1238697612/gamer-deck-1-mechanics/widget/card.html?v=2" width="220"></iframe>Though not what I plan to normally do, I've made a 2nd Kickstarter pick this month. [Gamer Deck 1: Mechanics](https://www.kickstarter.com/projects/1238697612/gamer-deck-1-mechanics?ref=user_menu) is a card system/poker deck highlighting different game mechanics. It's a standard card deck featuring game mechanics as a theme. The four suits are: Cards, Meeples, Hexes, and Pawns. Each card in a suits has a game mechanic that relates to its suit. Each card also has a die faced on it equal to its value.

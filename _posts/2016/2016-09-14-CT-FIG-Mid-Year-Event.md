@@ -1,16 +1,11 @@
 ---
-title: Connecticut Festival of Indie Games Mid Year Event
-date: 2016-09-14 00:00:00 Z
-categories:
-- conventions
-tags:
-- conventions
-- ctfig
 layout: post
-description: The CT FIG Mid-Year event is coming up, and I'll be there covering the
-  show.
+title: Connecticut Festival of Indie Games Mid Year Event
+description: The CT FIG Mid-Year event is coming up, and I'll be there covering the show.
+category: conventions
 featured: ctfig.png
-author: robk
+tags: [conventions, ctfig]
+author: Rob Kalajian
 ---
 
 This coming Saturday, September 16th, I'll be covering the [Connecticut Festival of Indie Games Mid-Year Event](http://www.ct-fig.com/festival-info.html) in Newington, CT. The event, being held at the Tabletop Shop, will have indie game developers showing off and demoing their games. Exhibitors include:

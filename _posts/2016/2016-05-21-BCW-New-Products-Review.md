@@ -1,19 +1,11 @@
 ---
-title: Review - New BCW Products
-date: 2016-05-21 00:00:00 Z
-categories:
-- review
-tags:
-- ccg
-- review
-- games
-- accessories
-- BCW
 layout: post
-description: Every once and a while BCW shoots me some samples of their new products
-  to take a look at. It's nice, seeing as I'm a huge fan of their line of stuff.
+title: Review - New BCW Products
+description: Every once and a while BCW shoots me some samples of their new products to take a look at. It's nice, seeing as I'm a huge fan of their line of stuff.
+category: review
 featured: commanderlt.png
-author: robk
+tags: [ccg, review, games, accessories, BCW]
+author: Rob Kalajian
 ---
 
 Every once and a while BCW shoots me some samples of their new products to take a look at. It's nice, seeing as I'm a huge fan of their line of stuff, and we can always use some new deck boxes, card protectors, and folios in the house.

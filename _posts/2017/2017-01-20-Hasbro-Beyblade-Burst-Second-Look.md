@@ -1,18 +1,12 @@
 ---
-title: Unboxing Hasbro's Beyblade Burst - Part 2
-date: 2017-01-20 00:00:00 Z
-categories:
-- unboxing
-tags:
-- toys
-- beyblade
-- hasbro
-- beyblade burst
 layout: post
-description: Hasbro's Beyblade Burst is on the shelves in the US. Let's take a look!
+title: "Unboxing Hasbro's Beyblade Burst - Part 2"
+description: "Hasbro's Beyblade Burst is on the shelves in the US. Let's take a look!"
+category: unboxing
 featured: beybladeburst2.jpg
-amazonterm: Beyblade burst
-author: robk
+amazonterm: "Beyblade burst"
+tags: [toys, beyblade, hasbro, beyblade burst]
+author: Rob Kalajian
 ---
 
 Beyblade Burst is finally showing up on store shelves in the US allowing fans in the states to finally snag these awesome Beys at reasonable prices. I was able to get my hands on some more of Hasbro's releases, and I'm still pretty impressed. Stadiums are still a disappointment, but I didn't expect Hasbro to produce any of quality like Takara Tomy does. What I was surprised with is that Hasbro released the Supergrip Launcher. This gives me hope that we'll see more Beyblade accessories in the future, hopefully an actual grip with add-ons.

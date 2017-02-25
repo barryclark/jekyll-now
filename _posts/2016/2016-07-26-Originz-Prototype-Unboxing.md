@@ -1,18 +1,11 @@
 ---
-title: Unboxing Originz Prototype
-date: 2016-07-26 00:00:00 Z
-categories:
-- unboxing
-tags:
-- games
-- unboxing
-- originz
-- flavor faction
 layout: post
-description: Originz is a great superhero card game that I've talked about before.
-  Let's see what's inside.
+title: Unboxing Originz Prototype
+description: Originz is a great superhero card game that I've talked about before. Let's see what's inside.
+category: unboxing
 featured: originz.jpg
-author: robk
+tags: [games, unboxing, originz, flavor faction]
+author: Rob Kalajian
 ---
 
 I finally got my hands on a physical prototype of Flavor Factions' [Originz](http://www.originzthegame.com/), and I couldn't be more excited. Having played the game a fews times at both CT FIG and over [Tabletop Simulator](http://pawnsperspective.com/Originz-Tabletop-Simulator/), it's great to have a copy of my own to try out with my kids.

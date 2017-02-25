@@ -1,19 +1,12 @@
 ---
-title: Celebrate Pokémon Day on February 27
-date: 2017-02-23 00:00:00 Z
-categories:
-- games
-tags:
-- video games
-- games
-- pokemon
-- the pokemon company
-- pokemon day
 layout: post
-description: Pokémon Day is just a few short days away. Here's what's happening.
+title: "Celebrate Pokémon Day on February 27"
+description: "Pokémon Day is just a few short days away. Here's what's happening."
+category: games
 featured: pokemonday.png
-amazonterm: pokemon
-author: robk
+amazonterm: "pokemon"
+tags: [video games, games, pokemon, the pokemon company, pokemon day]
+author: Rob Kalajian
 ---
 
 ![Pokémon Day](/images/pokemon/pokemonday.jpg){: .center}

@@ -1,21 +1,14 @@
 ---
-title: Fone Bone 4-Inch Vinyl Figure
-date: 2016-10-06 00:00:00 Z
-categories:
-- toys
-tags:
-- toys
-- bone
-- jeff smith
-- cryptozoic
 layout: post
-description: Cryptozoic captures Jeff Smith's Fone Bone in 4-inch Vinyl.
+title: Fone Bone 4-Inch Vinyl Figure
+description: "Cryptozoic captures Jeff Smith's Fone Bone in 4-inch Vinyl."
+category: toys
 featured: bonelogo.png
-amazonterm: Bone
+amazonterm: "Bone"
 amazoncat: Books
-author: robk
+tags: [toys, bone, jeff smith, cryptozoic]
+author: Rob Kalajian
 ---
-
 ![Fone Bone](/images/bone/bone.png){: .float-right }
 
 Hobby store shelves got a bit more exciting lately with the release of Cryptozoic's Fone Bone 4" Vinyl Figure figure. For those unfamiliar, Fone Bone is the original protagonist of the classic Bone graphic novels by Jeff Smith. Fone is short, but brave, and the most courageous of his cousins in the books.

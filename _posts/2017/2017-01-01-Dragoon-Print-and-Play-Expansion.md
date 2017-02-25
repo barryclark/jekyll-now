@@ -1,17 +1,11 @@
 ---
-title: Dragoon's Upcoming Expansion has a Print-and-Play Beta
-date: 2017-01-01 00:00:00 Z
-categories:
-- games
-tags:
-- games
-- dragoon
-- lay waste games
 layout: post
-description: Dragoon is a great game. The new expansion adds humans to the mix, and
-  you can download it now.
+title: "Dragoon's Upcoming Expansion has a Print-and-Play Beta"
+description: "Dragoon is a great game. The new expansion adds humans to the mix, and you can download it now."
+category: games
 featured: dragoonbarb.png
-author: robk
+tags: [games, dragoon, lay waste games]
+author: Rob Kalajian
 ---
 
 [Lay Waste Games](http://www.laywastegames.com) announced a [print-and-play beta](https://www.dropbox.com/s/oszkzkn4fp7wi4r/DragoonExpPNP_Beta3.zip?dl=0) of their upcoming 5-6 Player expansion for Dragoon. The expansion adds humans into the mix, specifically a Barbarian and Rouge. Each has their own nasty way to play and cause trouble for those pesky dragons.

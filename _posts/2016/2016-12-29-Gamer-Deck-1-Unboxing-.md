@@ -1,18 +1,11 @@
 ---
-title: Unboxing Gamer Deck 1
-date: 2016-12-29 00:00:00 Z
-categories:
-- unboxing
-tags:
-- unboxing
-- gamer deck
-- hackogames
-- games
 layout: post
-description: The first Gamer Deck was a great Kickstarter success. Let's see what's
-  inside!
+title: "Unboxing Gamer Deck 1"
+description: "The first Gamer Deck was a great Kickstarter success. Let's see what's inside!"
+category: unboxing
 featured: gamerdeck1.png
-author: robk
+tags: [unboxing, gamer deck, hackogames, games]
+author: Rob Kalajian
 ---
 
 After a great run on Kickstarter, Gamer Deck 1 is starting to arrive in the hands of backers. You may remember my [original post](http://pawnsperspective.com/Gamer-Deck-1-Kickstarter/) about the deck from when I first backed it. The turnaround from Kickstarter to delivered product was pretty quick, and now I've got my own Gamer Deck to enjoy.

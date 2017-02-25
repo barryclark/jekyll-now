@@ -1,16 +1,11 @@
 ---
-title: "#RPGaDay 2016 - Day 2"
-date: 2016-08-02 00:00:00 Z
-categories:
-- games
-tags:
-- games
-- rpgs
-- rpgaday
 layout: post
-description: 'Best game session since August 2015? Day 2 of #RPGaDay.'
+title: "#RPGaDay 2016 - Day 2"
+description: "Best game session since August 2015? Day 2 of #RPGaDay."
+category: games
 featured: rpgaday.png
-author: robk
+tags: [games, rpgs, rpgaday]
+author: Rob Kalajian
 ---
 
 **Best gaming session since August 2015?**

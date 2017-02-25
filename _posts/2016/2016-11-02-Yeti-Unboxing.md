@@ -1,19 +1,12 @@
 ---
-title: Unboxing Yeti
-date: 2016-11-02 00:00:00 Z
-categories:
-- unboxing
-tags:
-- games
-- unboxing
-- yeti
-- aeg
-- pegasus spiele
 layout: post
-description: AEG just released Yeti, a game with a sweet 3D board. Let's look inside.
+title: Unboxing Yeti
+description: "AEG just released Yeti, a game with a sweet 3D board. Let's look inside."
+category: unboxing
 featured: yeti.jpg
-amazonterm: yeti game
-author: robk
+amazonterm: "yeti game"
+tags: [games, unboxing, yeti, aeg, pegasus spiele]
+author: Rob Kalajian
 ---
 
 AEG is on a hot streak with games recently and Yeti doesn't look to be an exception. Aimed at families, it has a 3D board that you build before you play and comes in at 20-40 minutes of game time.

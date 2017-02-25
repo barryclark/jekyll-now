@@ -1,19 +1,12 @@
 ---
-title: Review - Shift DX 3DS
-date: 2017-01-28 00:00:00 Z
-categories:
-- review
-tags:
-- review
-- video games
-- shift dx
-- choice publishing
 layout: post
-description: Born from an online game, Shift DX brings all the excitement of the originals
-  plus more.
+title: "Review - Shift DX 3DS"
+description: "Born from an online game, Shift DX brings all the excitement of the originals plus more."
+category: review
 featured: shiftdx.png
-amazonterm: 3ds
-author: robk
+amazonterm: "3ds"
+tags: [review, video games, shift dx, choice publishing]
+author: Rob Kalajian
 ---
 
 ![Shift DX](/images/featured/shiftdx.png){: .float-right}

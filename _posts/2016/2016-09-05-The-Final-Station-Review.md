@@ -1,19 +1,11 @@
 ---
-title: Review - The Final Station
-date: 2016-09-05 00:00:00 Z
-categories:
-- review
-tags:
-- video games
-- review
-- the final station
-- tinybuild
-- do my best
 layout: post
-description: tinyBuild's The Final Station is one part train sim, one part platformer,
-  and all story.
+title: "Review - The Final Station"
+description: "tinyBuild's The Final Station is one part train sim, one part platformer, and all story."
+category: review
 featured: tfs.png
-author: robk
+tags: [video games, review, the final station, tinybuild, do my best]
+author: Rob Kalajian
 ---
 
 <img src="/images/finalstation/hero.png" alt="Hero" class="float-right" />

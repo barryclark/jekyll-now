@@ -1,19 +1,12 @@
 ---
-title: Review - Looting Atlantis
-date: 2016-11-17 00:00:00 Z
-categories:
-- review
-tags:
-- games
-- review
-- looting atlantis
-- shoot again games
 layout: post
-description: Looting Atlantis is easy to learn but holds a bit of deeper critical
-  thinking inside.
+title: "Review - Looting Atlantis"
+description: "Looting Atlantis is easy to learn but holds a bit of deeper critical thinking inside."
+category: review
 featured: lootingatlantis.jpg
-amazonterm: Looting Atlantis
-author: robk
+amazonterm: "Looting Atlantis"
+tags: [games, review, looting atlantis, shoot again games]
+author: Rob Kalajian
 ---
 
 <h2>Prelude</h2>

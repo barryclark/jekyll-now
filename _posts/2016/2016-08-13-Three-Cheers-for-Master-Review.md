@@ -1,19 +1,12 @@
 ---
-title: Review - Three Cheers for Master
-date: 2016-08-13 00:00:00 Z
-categories:
-- review
-tags:
-- games
-- review
-- three cheers for master
-- atlas games
 layout: post
-description: Three Cheers for Master is a twisted game of little monster trying to
-  please their master.
+title: "Review - Three Cheers for Master"
+description: "Three Cheers for Master is a twisted game of little monster trying to please their master."
+category: review
 featured: threecheers.jpg
-amazonterm: Three cheers for master
-author: robk
+amazonterm: "Three cheers for master"
+tags: [games, review, three cheers for master, atlas games]
+author: Rob Kalajian
 ---
 
 <img src="/images/threecheers/3cheers.jpg" alt="Three Cheers for Master box" class="float-right" />

@@ -1,18 +1,11 @@
 ---
-title: Unboxing Mega Man
-date: 2016-05-05 00:00:00 Z
-categories:
-- unboxing
-tags:
-- games
-- unboxing
-- mega man
-- jasco games
 layout: post
-description: Mega Man is a game I've been waiting to get my hands on for a while now.
-  Let's unbox it and see what's inside.
+title: Unboxing Mega Man
+description: Mega Man is a game I've been waiting to get my hands on for a while now. Let's unbox it and see what's inside.
+category: unboxing
 featured: megaman.png
-author: robk
+tags: [games, unboxing, mega man, jasco games]
+author: Rob Kalajian
 ---
 
 Mega Man is a game I've been waiting to get my hands on for a while now. I still haven't had a chance to get it to the table yet, but I couldn't resist tearing into it and seeing all the wonderful bits inside. I've got pictures from both the base game and the Time Man/Oil Man expansion, so there was a lot to go through.

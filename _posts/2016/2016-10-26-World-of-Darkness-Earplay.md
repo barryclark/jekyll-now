@@ -1,20 +1,13 @@
 ---
-title: Interactive Audio World of Darkness Project
-date: 2016-10-26 00:00:00 Z
-categories:
-- games
-tags:
-- games
-- world of darkness
-- earplay
-- the orpheus device
 layout: post
-description: Dave Grossman and Richard Dansky have written a World of Darkness game
-  for Earplay enabled devices.
+title: Interactive Audio World of Darkness Project
+description: "Dave Grossman and Richard Dansky have written a World of Darkness game for Earplay enabled devices."
+category: games
 featured: earplay.png
-amazonterm: amazon echo
+amazonterm: "amazon echo"
 amazoncat: Electronics
-author: robk
+tags: [games, world of darkness, earplay, the orpheus device]
+author: Rob Kalajian
 ---
 
 I hadn't heard of [Earplay](http://ear-play.com) before today. Earplay is currently available as a skill on Alexa Enabled devices, and enables you to play games via voice and audio on said devices.

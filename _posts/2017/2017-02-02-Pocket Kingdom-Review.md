@@ -1,18 +1,11 @@
 ---
-title: Review - Pocket Kingdom
-date: 2017-02-02 00:00:00 Z
-categories:
-- review
-tags:
-- review
-- video games
-- shift dx
-- choice publishing
 layout: post
-description: Pocket Kingdom is a steampunk puzzle platformer that recalls the days
-  of the Amiga. It's a damn fine game.
+title: "Review - Pocket Kingdom"
+description: "Pocket Kingdom is a steampunk puzzle platformer that recalls the days of the Amiga. It's a damn fine game."
+category: review
 featured: pocketkingdom.jpg
-author: robk
+tags: [review, video games, shift dx, choice publishing]
+author: Rob Kalajian
 ---
 
 ![Pocket Kingdom](/images/pocketkingdom/pocketkingdom.jpg){: .float-right}

@@ -1,20 +1,12 @@
 ---
-title: Paint Tutorial - Imperial Assault AT-ST - Part 1.5
-date: 2017-02-09 00:00:00 Z
-categories:
-- tutorials
-tags:
-- games
-- miniatures
-- tutorial
-- imperial assault
-- fantasy flight games
-- oldenhammer
 layout: post
-description: Part 1.5 of Frank Grip's tutorial on painting an Imperial Assault AT-ST.
+title: "Paint Tutorial - Imperial Assault AT-ST - Part 1.5"
+description: "Part 1.5 of Frank Grip's tutorial on painting an Imperial Assault AT-ST."
+category: tutorials
 featured: atstpart1-5.png
-amazonterm: imperial assault
-author: frankg
+amazonterm: "imperial assault"
+tags: [games, miniatures, tutorial, imperial assault, fantasy flight games, oldenhammer]
+author: Frank Grip
 ---
 
 **Previous Posts in Series:** [Part 1](http://pawnsperspective.com/Imperial-Assault-AT-ST-Paint-Tutorial-Part-1/)
@@ -27,3 +19,5 @@ Matthew Sullivan, who runs [OldenHammer.com](http://oldenhammer.com) is someone 
 *Used with permission from Matthew Sullivan of [OldenHammer.com](http://oldenhammer.com)*{: .center}
 
 I wanted to take a moment and highlight this top-notch paint job. Matthew’s AT-ST sports a beautiful sandy weathered look. His ability to capture lighting and maximize layering really makes the model pop. He has done an excellent job in creating contrast in and around the more detailed mechanical aspects of the model. Notice the rust and grime effects. His careful attention to detail is what brings this model to life. Although I plan to create a far more basic muddy base, these are some things that I will attempt to achieve as I paint my model. If I have one-tenth the success of Matthew, I will consider it a job well done. Thanks again for sharing, Matthew. Keep up the good work.
+
+*Frank is an attorney and family man currently based out of Las Vegas. He's a long time gaming enthusiast with a tabletop interest in most dungeon crawlers and map strategy games. If it has dice and minis, it probably has his attention.*

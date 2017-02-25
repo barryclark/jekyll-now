@@ -1,19 +1,12 @@
 ---
-title: Paint Tutorial - Imperial Assault AT-ST - Part 2
-date: 2017-02-13 00:00:00 Z
-categories:
-- tutorials
-tags:
-- games
-- miniatures
-- tutorial
-- imperial assault
-- fantasy flight games
 layout: post
-description: Part 2 of Frank Grip's tutorial on painting an Imperial Assault AT-ST.
+title: "Paint Tutorial - Imperial Assault AT-ST - Part 2"
+description: "Part 2 of Frank Grip's tutorial on painting an Imperial Assault AT-ST."
+category: tutorials
 featured: atstpart2.jpg
-amazonterm: imperial assault
-author: frankg
+amazonterm: "imperial assault"
+tags: [games, miniatures, tutorial, imperial assault, fantasy flight games]
+author: Frank Grip
 ---
 
 **Previous Posts in Series:** [Part 1](http://pawnsperspective.com/Imperial-Assault-AT-ST-Paint-Tutorial-Part-1/) - [Part 1.5](http://pawnsperspective.com/Imperial-Assault-AT-ST-Paint-Tutorial-Part-1-5/)
@@ -43,3 +36,5 @@ And there you have it. The AT-ST was relatively simple to paint and I am pretty 
 ![MHD-19](/images/atstpaint/2-5.jpg)
 
 Next up, I’ll tackle some of the organics. . . maybe the Wampa or the Rancor? Until next time.
+
+*Frank is an attorney and family man currently based out of Las Vegas. He's a long time gaming enthusiast with a tabletop interest in most dungeon crawlers and map strategy games. If it has dice and minis, it probably has his attention.*

@@ -1,19 +1,12 @@
 ---
-title: Eight New Safari Toys Include an Amazing Behemoth
-date: 2016-09-15 00:00:00 Z
-categories:
-- toys
-tags:
-- toys
-- safari toys
-- behemoth
-- mythical realms
 layout: post
-description: Safari puts out some great toys, but their new Behemoth is an impressive
-  sight.
+title: Eight New Safari Toys Include an Amazing Behemoth
+description: Safari puts out some great toys, but their new Behemoth is an impressive sight.
+category: toys
 featured: behemoth.jpg
-amazonterm: Safari Toys ltd
-author: robk
+amazonterm: "Safari Toys ltd"
+tags: [toys, safari toys, behemoth, mythical realms]
+author: Rob Kalajian
 ---
 
 Safari Toys has announced [eight new toys](https://www.safariltd.com/new-dragon-animal-dinosaur-toys/?mc_cid=086c062ed3&mc_eid=1308119b49) that are now available for purchase. One of those stood out to me immediately.

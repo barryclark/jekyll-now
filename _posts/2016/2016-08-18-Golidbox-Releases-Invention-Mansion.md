@@ -1,18 +1,12 @@
 ---
-title: Goldieblox Releases Invention Mansion
-date: 2016-08-18 00:00:00 Z
-categories:
-- toys
-tags:
-- toys
-- goldieblox
-- invention mansion
-- stem
 layout: post
+title: Goldieblox Releases Invention Mansion
 description: Goldieblox releases its take on the dollhouse, the Invention Mansion.
+category: toys
 featured: inventionmansion.jpg
 amazonterm: Goldieblox
-author: robk
+tags: [toys, goldieblox, invention mansion, stem]
+author: Rob Kalajian
 ---
 
 We're huge fans of [Goldieblox](http://www.goldieblox.com) in our house. For those who don't know, Goldieblox puts out STEM-related products focused at girls in the form of building and invention sets. We've got a few sets ranging from a simple zipline to a zoetrope animation studio. Everything they do has been thought of from the ground up. Building manuals are written in the form of stories, or as build diaries written by the various Goldieblox characters. Pieces are sturdy and colorful, never straying far from anything but their functional use.

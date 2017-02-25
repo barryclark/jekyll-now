@@ -1,18 +1,11 @@
 ---
-title: Discovering Tak - Part 4
-date: 2016-07-28 00:00:00 Z
-categories:
-- games
-tags:
-- games
-- tak
-- cheapass games
-- a wise man's fear
-- patrick rothfuss
 layout: post
+title: Discovering Tak - Part 4
 description: Continuing my Tak posts, I'm checking out Tak boards.
+category: games
 featured: takboard.jpg
-author: robk
+tags: [games, tak, cheapass games, a wise man's fear, patrick rothfuss]
+author: Rob Kalajian
 ---
 
 One of the greatest things about Tak is the open nature of the game. Cheapass Games provides the [rules](http://cheapass.com/node/215) online, along with piece dimensions. People all over have been making their own Tak sets, and some of them are just awe inspiring. I've started keeping a [Pinterest Board](https://www.pinterest.com/rkalajian/tak/) with sets I like, but I figured I'd spotlight a few here.

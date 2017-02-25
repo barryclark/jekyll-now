@@ -1,16 +1,11 @@
 ---
-title: "#RPGaDay 2016 - Day 7"
-date: 2016-08-07 00:00:00 Z
-categories:
-- games
-tags:
-- games
-- rpgs
-- rpgaday
 layout: post
-description: 'What aspect of RPGs has had the most effect on you? Day 7 of #RPGaDay.'
+title: "#RPGaDay 2016 - Day 7"
+description: "What aspect of RPGs has had the most effect on you? Day 7 of #RPGaDay."
+category: games
 featured: rpgaday.png
-author: robk
+tags: [games, rpgs, rpgaday]
+author: Rob Kalajian
 ---
 
 **What aspect of RPGs has had the most effect on you?**

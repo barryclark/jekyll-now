@@ -1,16 +1,11 @@
 ---
-title: "#RPGaDay 2016 - Day 5"
-date: 2016-08-05 00:00:00 Z
-categories:
-- games
-tags:
-- games
-- rpgs
-- rpgaday
 layout: post
-description: 'What story does your group tell about your character? Day 5 of #RPGaDay.'
+title: "#RPGaDay 2016 - Day 5"
+description: "What story does your group tell about your character? Day 5 of #RPGaDay."
+category: games
 featured: rpgaday.png
-author: robk
+tags: [games, rpgs, rpgaday]
+author: Rob Kalajian
 ---
 
 **What story does your group tell about your character?**

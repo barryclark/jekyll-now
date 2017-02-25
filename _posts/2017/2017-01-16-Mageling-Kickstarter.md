@@ -1,18 +1,11 @@
 ---
-title: Mageling Kickstarter
-date: 2017-01-16 00:00:00 Z
-categories:
-- kickstarter
-tags:
-- kickstarter
-- games
-- mageling
-- familiar games
 layout: post
-description: A deckbuilder with no shuffling or sorting? That's what Mageling plans
-  to deliver.
+title: "Mageling Kickstarter"
+description: "A deckbuilder with no shuffling or sorting? That's what Mageling plans to deliver."
+category: kickstarter
 featured: mageling.png
-author: robk
+tags: [kickstarter, games, mageling, familiar games]
+author: Rob Kalajian
 ---
 
 <iframe style="float:right; margin-left:10px;" src="https://www.kickstarter.com/projects/familiargames/mageling-0/widget/card.html?v=2" width="220" height="420" frameborder="0" scrolling="no"></iframe>

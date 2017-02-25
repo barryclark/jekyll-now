@@ -1,19 +1,12 @@
 ---
-title: Paint Tutorial - Imperial Assault AT-ST - Part 1
-date: 2017-02-06 00:00:00 Z
-categories:
-- tutorials
-tags:
-- games
-- miniatures
-- tutorial
-- imperial assault
-- fantasy flight games
 layout: post
-description: Part 1 of Frank Grip's tutorial on painting an Imperial Assault AT-ST.
+title: "Paint Tutorial - Imperial Assault AT-ST - Part 1"
+description: "Part 1 of Frank Grip's tutorial on painting an Imperial Assault AT-ST."
+category: tutorials
 featured: atstpart1.png
-amazonterm: imperial assault
-author: frankg
+amazonterm: "imperial assault"
+tags: [games, miniatures, tutorial, imperial assault, fantasy flight games]
+author: Frank Grip
 ---
 
 With the recent release of [Jabba’s Realm](http://amzn.to/2lfAjKH) box set expansion for Imperial Assault and a few exciting add-ons coming down the pike, like the Jawa Scavenger Villian Pack (YES!), Hera Syndulla and C1-10P Ally Pack, and BT-1 and 0-0-0 Villain Pack, doing a painting guide for the AT-ST seemed like a good idea. I am an amateur painter, but every now and then I have some success.
@@ -33,3 +26,5 @@ Before assembly, inspect each component and locate the imperfections. I like to 
 It is important to note that not all blemishes need to be eliminated. Use your best judgment and remember, it is not a science. The model that I am using has some imperfections on the cabin piece. I am going to roll with it. In the end, it will make for some nice battle scarring. Once you are satisfied, go ahead and assemble the model. As for the base, at this point, you can attach it or not. For this model, I will attach the base to the legs later on in the process. I often find it awkward and difficult to paint bases. But, that might be just a personal problem. If you want the base attached, go for it. Once you are assembled and glued, you are ready to go.
 
 Next post, we will prime the model and get painting.
+
+*Frank is an attorney and family man currently based out of Las Vegas. He's a long time gaming enthusiast with a tabletop interest in most dungeon crawlers and map strategy games. If it has dice and minis, it probably has his attention.*

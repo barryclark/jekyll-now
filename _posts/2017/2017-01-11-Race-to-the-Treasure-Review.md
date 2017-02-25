@@ -1,19 +1,12 @@
 ---
-title: Review - Race to the Treasure!
-date: 2017-01-11 00:00:00 Z
-categories:
-- review
-tags:
-- review
-- games
-- race to the treasure
-- peaceable kingdom
 layout: post
-description: Peaceable Kingdom's line of cooperative games rarely fails to impress.
-  Race to the Treasure! continues this pattern.
+title: "Review - Race to the Treasure!"
+description: "Peaceable Kingdom's line of cooperative games rarely fails to impress. Race to the Treasure! continues this pattern."
+category: review
 featured: racetreasure.png
-amazonterm: peaceable kingdom
-author: robk
+amazonterm: "peaceable kingdom"
+tags: [review, games, race to the treasure, peaceable kingdom]
+author: Rob Kalajian
 ---
 
 ![Race to the Treasure!](/images/featured/racetreasure.png){: .float-right}

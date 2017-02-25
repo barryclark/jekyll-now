@@ -1,22 +1,12 @@
 ---
-title: Unboxing Arena of the Planeswalkers - Shadows Over Innistrad
-date: 2016-07-29 00:00:00 Z
-categories:
-- unboxing
-tags:
-- games
-- unboxing
-- magic the gathering
-- arena of the planeswalkers
-- hasbro
-- wizards of the coast
-- shadows over innistrad
 layout: post
-description: Shadows over Innistrad is a new base set for Arena of the Planeswalkers.
-  Let's see what's inside!
+title: Unboxing Arena of the Planeswalkers - Shadows Over Innistrad
+description: Shadows over Innistrad is a new base set for Arena of the Planeswalkers. Let's see what's inside!
+category: unboxing
 featured: aopsoi.jpg
-amazonterm: Arena of the Planeswalkers
-author: robk
+amazonterm: "Arena of the Planeswalkers"
+tags: [games, unboxing, magic the gathering, arena of the planeswalkers, hasbro, wizards of the coast, shadows over innistrad]
+author: Rob Kalajian
 ---
 
 There's a lot of excitement in our house today as we just received our copy of Magic the Gathering Arena of the Planeswalkers: Shadows of Innistrad. It's a new base game, so it can be played without the original boxed set. The Battle for Zendikar expansion is fully compatible.

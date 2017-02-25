@@ -1,18 +1,11 @@
 ---
-title: Unboxing Wrath of Dragons
-date: 2016-07-05 00:00:00 Z
-categories:
-- unboxing
-tags:
-- games
-- unboxing
-- wrath of dragons
-- catalyst game labs
 layout: post
-description: Wrath of Dragons is an excellent Resource Destruction game from Catalyst
-  Game Labs. Let's unbox it and see what's inside.
+title: Unboxing Wrath of Dragons
+description: Wrath of Dragons is an excellent Resource Destruction game from Catalyst Game Labs. Let's unbox it and see what's inside.
+category: unboxing
 featured: wrathofdragons.jpg
-author: robk
+tags: [games, unboxing, wrath of dragons, catalyst game labs]
+author: Rob Kalajian
 ---
 
 I first played [Wrath of Dragons](http://www.catalystgamelabs.com/casual-games/wrath-of-dragons/) at PAX East this year. The giant fire-breathing dragon kind of caught my eye while at the [Catalyst Game Labs](http://www.catalystgamelabs.com) booth, and I just had to request a demo.

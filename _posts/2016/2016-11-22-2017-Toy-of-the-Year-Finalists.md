@@ -1,19 +1,11 @@
 ---
-title: 2017 Toy of the Year Award Finalists Unveiled by Toy Industry Association
-date: 2016-11-22 00:00:00 Z
-categories:
-- news
-tags:
-- news
-- toys
-- games
-- toty
-- toy of the year
 layout: post
-description: Consumers invited to vote for their favorites at ToyAwards.org - now
-  until January 15, 2017
+title: "2017 Toy of the Year Award Finalists Unveiled by Toy Industry Association"
+description: "Consumers invited to vote for their favorites at ToyAwards.org - now until January 15, 2017"
+category: news
 featured: TOTY17Logo.jpg
-author: robk
+tags: [news, toys, games, toty, toy of the year]
+author: Rob Kalajian
 ---
 
 Yesterday the Toy Industry Association announced 100 finalists for the prestigious 2017 Toy of the Year (TOTY) Awards. Between now and January 15, 2017, consumers can visit [www.ToyAwards.org](www.ToyAwards.org) to vote for their favorite toy picks in each of the 14 categories – including new categories for 2017, like Action Figure of the Year, Doll of the Year, Rookie of the Year, and Vehicle of the Year. The TOTY winners will be announced in February.

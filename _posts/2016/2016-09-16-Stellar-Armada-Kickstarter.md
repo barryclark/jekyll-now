@@ -1,17 +1,11 @@
 ---
-title: Stellar Armada - $1 Board Game
-date: 2016-09-16 00:00:00 Z
-categories:
-- kickstarter
-tags:
-- games
-- kickstarter
-- stellar armada
 layout: post
-description: A full game for a buck? Stellar Armanda looks like it's got the goods
-  for not a lot of cash
+title: "Stellar Armada - $1 Board Game"
+description: "A full game for a buck? Stellar Armanda looks like it's got the goods for not a lot of cash"
+category: kickstarter
 featured: stellararmada.png
-author: robk
+tags: [games, kickstarter, stellar armada]
+author: Rob Kalajian
 ---
 
 <iframe style="float:right;margin-left:10px;" frameborder="0" height="420" scrolling="no" src="https://www.kickstarter.com/projects/423304770/stellar-armada-1-board-game/widget/card.html?v=2" width="220"></iframe>

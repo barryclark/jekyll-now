@@ -1,19 +1,11 @@
 ---
-title: Discovering Tak
-date: 2016-06-07 00:00:00 Z
-categories:
-- games
-tags:
-- games
-- tak
-- cheapass games
-- a wise man's fear
-- patrick rothfuss
 layout: post
-description: Cheapass games wrapped up a wildly successful Kickstarter to bring Tak
-  to life. I decided to 3D print my own set.
+title: Discovering Tak
+description: Cheapass games wrapped up a wildly successful Kickstarter to bring Tak to life. I decided to 3D print my own set.
+category: games
 featured: tak.jpg
-author: robk
+tags: [games, tak, cheapass games, a wise man's fear, patrick rothfuss]
+author: Rob Kalajian
 ---
 
 Cheapass games wrapped up a [wildly successful](https://www.kickstarter.com/projects/cheapassgames/tak-a-beautiful-game) Kickstarter to bring Tak to life. For those unfamiliar, Tak is a fictional game in Patrick Rothfuss' novel [A Wise Man's Fear](http://www.patrickrothfuss.com/content/books.asp). Though the mechanics of the game are never laid out in the story, James Ernest set it upon himself to bring the abstract game to life.

@@ -1,18 +1,11 @@
 ---
-title: Review - Pixel Glory
-date: 2016-08-26 00:00:00 Z
-categories:
-- review
-tags:
-- games
-- review
-- pixel glory
-- zafty games
 layout: post
-description: Pixel Glory is all about beefing up your 8-bit wizard and killing some
-  monsters.
+title: "Review - Pixel Glory"
+description: "Pixel Glory is all about beefing up your 8-bit wizard and killing some monsters."
+category: review
 featured: pixelglory.png
-author: robk
+tags: [games, review, pixel glory, zafty games]
+author: Rob Kalajian
 ---
 
 <img src="/images/pixelglory/pixelglory.png" alt="Pixel Glory" width="300" class="float-right" />

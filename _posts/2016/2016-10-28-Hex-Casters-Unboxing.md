@@ -1,19 +1,12 @@
 ---
-title: Unboxing Hex Casters
-date: 2016-10-28 00:00:00 Z
-categories:
-- unboxing
-tags:
-- games
-- unboxing
-- hex casters
-- hasbro
 layout: post
-description: Hex Casters is one of the first games funded by Hasbro through Indiegogo.
-  Let's look inside.
+title: Unboxing Hex Casters
+description: "Hex Casters is one of the first games funded by Hasbro through Indiegogo. Let's look inside."
+category: unboxing
 featured: hexcasters.jpg
-amazonterm: hex casters
-author: robk
+amazonterm: "hex casters"
+tags: [games, unboxing, hex casters, hasbro]
+author: Rob Kalajian
 ---
 
 Hex Casters is one of the first games released by Hasbro that was funded through Indiegogo. It's a party game for 3-6 players where players are trying to hex each other and protect themselves from other players. Hexes are pretty crazy, as you can see in the cards below.

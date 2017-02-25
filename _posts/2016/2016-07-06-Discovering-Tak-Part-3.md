@@ -1,18 +1,11 @@
 ---
-title: Discovering Tak - Part 3
-date: 2016-07-06 00:00:00 Z
-categories:
-- games
-tags:
-- games
-- tak
-- cheapass games
-- a wise man's fear
-- patrick rothfuss
 layout: post
+title: Discovering Tak - Part 3
 description: Continuing my Tak posts, I'm checking out Tak bots.
+category: games
 featured: playtak.jpg
-author: robk
+tags: [games, tak, cheapass games, a wise man's fear, patrick rothfuss]
+author: Rob Kalajian
 ---
 
 Continuing my earlier [Tak](http://pawnsperspective.com/Discovering-Tak/) [posts](http://pawnsperspective.com/Discovering-Tak-Part-2/), I figured I'd look into some Tak bots. Sometimes it's nice to practice against an AI, and i've played with 3 pretty good ones.

@@ -1,17 +1,11 @@
 ---
-title: Review - 4 the Birds
-date: 2016-08-15 00:00:00 Z
-categories:
-- review
-tags:
-- games
-- review
-- 4 the birds
-- breaking games
 layout: post
-description: 4 the Birds is a four-in-a-row game with modern mechanics and great bits.
+title: "Review - 4 the Birds"
+description: "4 the Birds is a four-in-a-row game with modern mechanics and great bits."
+category: review
 featured: 4thebirds.png
-author: robk
+tags: [games, review, 4 the birds, breaking games]
+author: Rob Kalajian
 ---
 
 <img src="/images/4thebirds/4thebirds.jpg" alt="4 the Birds" class="float-right" />
