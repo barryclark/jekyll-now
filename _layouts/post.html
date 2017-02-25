@@ -25,6 +25,8 @@ amzn_assoc_linkid = "e8bcf19004d5d57047646f8bcbaa9a21";
     {{ content }}
   </div>
 
+  {% include author.html %}
+
   <div class="date">
     Written on {{ page.date | date: "%B %e, %Y" }} {% if page.category %}in <a href="/category/#{{ page.category | slugify }}">{{ page.category }}</a> {% endif %} <br/>
     Tags:
@@ -33,7 +35,7 @@ amzn_assoc_linkid = "e8bcf19004d5d57047646f8bcbaa9a21";
     {% endfor %}
   </div>
 
-  {% include author.html %}
+
 
   {% include disqus.html %}
 </article>
