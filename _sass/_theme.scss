@@ -132,6 +132,12 @@ ul.rs{
     margin-top: 2px;
 }
 
+.rs a.about{
+    font-family: akularegular;
+    font-size: 20px;
+    width: 80px;
+}
+
 /// Posts
 #main article.post{
     background: #000000;
@@ -164,6 +170,9 @@ ul.rs{
     a:hover h1.title{
         margin-top: 110px;
         font-size: 4.9rem;
+        @include mobile-small{
+            margin-top: none;
+        }
     }
 }
 #main article.post a{
@@ -187,7 +196,7 @@ ul.rs{
     font-size:4.2rem;
     transition: all ease-in  0.2s;
     @include mobile-small{
-        margin-top: 70px;
+//        margin-top: 70px;
     }
 }
 #main article.post a:hover .desc {
@@ -548,9 +557,9 @@ header.single-header .desc{
     z-index: 3;
     color: #fff;
     text-shadow: 0px 1px 0px #000;
-    margin-top: 10px;
+    margin-top: 25px;
     @include mobile-small{
-        margin-top: 15px;
+        margin-top: 20px;
 
     }
 }
@@ -560,10 +569,14 @@ header.single-header a.home{
     z-index: 4;
     top: 10px;
     text-decoration: none;
-    font-family:akularegular;
-    font-size: 10px;
+    font-size: 35px;
+    height: 35px;
+    @include mobile-small{
+        font-size: 25px;
+        height: 25px;
+    }
 }
-header.single-header a.home span.icon{}
+
 
 /* SINGLE POST (all this comes from my previous blog, keep DRY) */
 
