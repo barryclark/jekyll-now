@@ -19,6 +19,7 @@ Beef cost too much for your excellent fair burgers? Look at all that "fresh" mea
 
 Graveyard Keeper drops this year for PC and Xbox One. It'll be on the PAX East floor, too, so I'm hoping to get a good look at it while I'm there.
 
-![Body Throw](/images/graveyardkeeper/body_throw_river.gif) ![Church Upgrades](/images/graveyardkeeper/church_upgrades.gif)
-
-![Rain](/images/graveyardkeeper/rain.gif) ![Torch](/images/graveyardkeeper/torch_run.gif)
+![Body Throw](/images/graveyardkeeper/body_throw_river.gif){:. center}
+![Church Upgrades](/images/graveyardkeeper/church_upgrades.gif){:. center}
+![Rain](/images/graveyardkeeper/rain.gif){:. center}
+ ![Torch](/images/graveyardkeeper/torch_run.gif){:. center}
