@@ -323,9 +323,9 @@ Week 1
     <td>having created all of your principal sprites.
 collects all of my resources.
 Make a significant start on your game.</td>
-    <td>make all sprites have there own code..
-
-</td>
+    <td>Make all sprites have there own code.
+Make a playable game
+Have easy to understand controls</td>
   </tr>
 </table>
 
@@ -479,19 +479,19 @@ It’s a playable, fun, functional game</td>
     <td>Beginning of Lesson: What have you done so far? What point of the work are you at?</td>
   </tr>
   <tr>
-    <td></td>
+    <td>So far I have a working, but not complete game, I am working towards a complete, fun game.</td>
   </tr>
   <tr>
     <td>Activity:  What are you going to be doing this lesson? </td>
   </tr>
   <tr>
-    <td></td>
+    <td>This lesson I am going to be testing two other people's games and writing detailed evaluations of them.</td>
   </tr>
   <tr>
     <td>End of Lesson: What point have you reached at the end of the lesson? Did you meet your goal? </td>
   </tr>
   <tr>
-    <td></td>
+    <td>I met my goal which was to write a precise evaluation of my thoughts on my own game after two other people have tested it.</td>
   </tr>
 </table>
 
@@ -503,13 +503,13 @@ It’s a playable, fun, functional game</td>
     <td>What went well: How did I learn? What helped me learn today? </td>
   </tr>
   <tr>
-    <td></td>
+    <td>I worked well and had no problems working on my game or testing other people's games.</td>
   </tr>
   <tr>
     <td>Even better if…: What could I do that would be even better? Improvements? </td>
   </tr>
   <tr>
-    <td></td>
+    <td>People have told me that my evaluations for other people's games could have been clearer.</td>
   </tr>
 </table>
 
@@ -527,9 +527,18 @@ What do you think of your game so far? What do other people think?
     <td>Improvements</td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>This is a reasonable game and very addictive because the bat follows you and it is fun.</td>
+    <td>You could add more sprites and make the game more intriguing and make it easier and maybe add more levels. </td>
+    <td>Add more sprites and make it more challenging.
+Originality- 1
+Creativity- 3 
+Backgrounds-1 
+Sprites- 2
+Scripts 3
+Purpose 2
+User friendly 3
+Score c+
+</td>
   </tr>
 </table>
 
@@ -543,9 +552,10 @@ What do you think of your game so far? What do other people think?
     <td>Improvements</td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>It is a good game that is fun for young kids to play.</td>
+    <td>The game is not that interesting so you could add more sprites and more logic.</td>
+    <td>Make the game more interesting next time and make a logic for the game as I personally do not think there is one.
+13=D</td>
   </tr>
 </table>
 
@@ -559,9 +569,9 @@ What do you think of your game so far? What do other people think?
     <td>Improvements</td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>The game is fun, not too difficult nor too hard.</td>
+    <td>There are no instructions and people have found a way to just not lose at all.</td>
+    <td>Make sure there is not a way of winning every time and write some instructions.</td>
   </tr>
 </table>
 
@@ -574,16 +584,16 @@ Now that you have this to work from, fill in below the ACTIONS that you are goin
     <td>Intended outcome</td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
+    <td>Make the bat as fast as the cat as opposed to a lot slower.</td>
+    <td>Make the game the game harder.</td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
+    <td>When the bat respawns away from the cat make the bat respawn at different places every time.</td>
+    <td>Make the game less predictable.</td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
+    <td>Add a set of instructions. </td>
+    <td>Allow people playing my game to know how to play the game.</td>
   </tr>
   <tr>
     <td></td>
@@ -607,7 +617,7 @@ Week 5: Improving your game
     <td>What are you going to work on today?</td>
   </tr>
   <tr>
-    <td></td>
+    <td>Today I am going to add instructions because most people have done that and I haven't and it allows the player to know how to play the game from the start instead of having to figure it out.</td>
   </tr>
 </table>
 
@@ -620,10 +630,11 @@ Week 5: Improving your game
     <td>Mine?</td>
   </tr>
   <tr>
-    <td>Enter the given criteria
-Have a working game by the end of this week’s homework
+    <td>
+Act on the criticism of my game given by the two people who tested my game last week.
 </td>
     <td>
+Have a complete set of instructions.
 </td>
   </tr>
 </table>
