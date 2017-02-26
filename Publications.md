@@ -10,7 +10,8 @@ published: true
 
 # Publications
 
-<img style="float:left;margin-right:20px" src="https://raw.githubusercontent.com/gwding/gwding.github.io/master/images/jian2016lens.jpg" width="80" height="80"> Yifan Jian, Sujin Lee, Myeong Jin Ju, Morgan Heisler, _Weiguang Ding_, Robert J. Zawadzki, Stefano Bonora and Marinko V. Sarunic, **Lens-based wavefront sensorless adaptive optics swept source OCT**, Scientific reports (2016). [journal webpage](http://www.nature.com/articles/srep27620){:target="_blank"}, [pdf](http://www.readcube.com/articles/10.1038/srep27620){:target="_blank"}
+<img style="float:left;margin-right:20px" src="https://raw.githubusercontent.com/gwding/gwding.github.io/master/images/jian2016lens.jpg" width="80" height="80"> LGUENSAT Redouane, TANDEO Pierre, AILLIOT Pierre, FABLET Ronan, CHAPRON Bertrand
+**Using archived datasets for missing data interpolation in ocean remote sensing observation series**. OCEANS 2016 - Shanghai : MTS/IEEE international conference, IEEE/MTS, 10-13 april 2016, Shanghai, China, 2016, pp. 1-6. [journal webpage](http://ieeexplore.ieee.org/document/7485433/){:target="_blank"}, [pdf](https://portail.telecom-bretagne.eu/publi/public/fic_download.jsp?id=65287){:target="_blank"}
 
 
 
