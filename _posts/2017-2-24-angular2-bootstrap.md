@@ -1,4 +1,4 @@
-Use bootstrap in angular2 project
+### Use bootstrap in angular2 project
 
 The most conveninent way to use bootstrap in your angular2 proejct is to use Bootstrap CDN
 
