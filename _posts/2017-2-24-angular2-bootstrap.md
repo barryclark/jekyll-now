@@ -1,4 +1,4 @@
-#### Use bootstrap in angular2 cli project
+# Use bootstrap in angular2 cli project
 
 ### The first option
 The most conveninent way to use bootstrap in your angular2 cli project is to use Bootstrap CDN.
