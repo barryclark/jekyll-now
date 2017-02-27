@@ -71,6 +71,6 @@ Is Villages of Valeria for you? I'd love to say it is, but of everyone has their
 
 [Villages of Valeria at Daily Magic Games](https://www.dailymagicgames.com/villages-of-valeria/)\\
 [Villages of Valeria at BGG](https://boardgamegeek.com/boardgame/180040/villages-valeria)\\
-[Villages of Valeria Rulebook](https://static1.squarespace.com/static/5581b5c7e4b0d41de90745e4/t/5834d48929687ff9ecd9b069/1479925531664/Villages-of-Valeria-Rulebook)
-[Villages of Valeria Card and Rules Clarifications](https://static1.squarespace.com/static/5581b5c7e4b0d41de90745e4/t/587e76b1e4fcb5853917b2f1/1484682950594/RulesAndCardClarifications_01162017.pdf)
+[Villages of Valeria Rulebook](https://static1.squarespace.com/static/5581b5c7e4b0d41de90745e4/t/5834d48929687ff9ecd9b069/1479925531664/Villages-of-Valeria-Rulebook)\\
+[Villages of Valeria Card and Rules Clarifications](https://static1.squarespace.com/static/5581b5c7e4b0d41de90745e4/t/587e76b1e4fcb5853917b2f1/1484682950594/RulesAndCardClarifications_01162017.pdf)\\
 [Buy Villages of Valeria](http://amzn.to/2lZT4WH)
