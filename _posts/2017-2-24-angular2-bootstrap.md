@@ -26,4 +26,4 @@ Open angular-cli.json file, update styles declaration.
 
 Give it a try: 
 
-<button id="btnSubmit" type="button" style="width:130px;" class="btn btn-default">submit</button>
+<button id="btnSubmit" type="button" style="width:130px;" class="btn btn-default">
