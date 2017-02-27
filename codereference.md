@@ -11,6 +11,12 @@ Things that are now obvious kept for posterity's sake
 
 ### <font color="red">Linux Command Line</font>
 
+##### Blast a FASTA against another FASTA
+
+     makeblastdb -in uniprot-proteome%3AUP000000763.fasta -dbtype prot -out uniprot-proteome%3AUP000000763.fasta.db
+     blastp -num_threads 2 -evalue 1e-6 -use_sw_tback -outfmt 6 -query msu.rice.pep -db uniprot-proteome%3AUP000000763.fasta.db > result
+
+
 ##### Run a script on multiple files in a directory 
 
     for file in *2col; do echo $file; done
