@@ -7,6 +7,9 @@ Go to [Bootstrap](http://getbootstrap.com/) official website, in "Getting starte
 
 ... ... But if you just want to use bootstrap css, then just copy the css link. I personally only used bootstrap css in my projects.
 
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
 ### The second option
 Install it via npm([Node Package Manager](https://www.npmjs.com/get-npm)), make it available locally in your node_modules folder, so you can use it even if you don't have internet connection.
 
@@ -24,6 +27,4 @@ Open angular-cli.json file, update styles declaration.
   "../node_modules/bootstrap/dist/css/bootstrap.min.css"
 ]
 
-Give it a try: 
-
-<button id="btnSubmit" type="button" style="width:130px;" class="btn btn-default">
+You're all set, it's time to give it a try. 
