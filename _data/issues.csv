@@ -1,5 +1,16 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2619,210363537,2017-02-27 09:36:48,2017-02-27 00:42:07,Dono Forno da incasso,,,"[""Accettato"", ""Donazioni"", ""Form""]",,,"{""cosa"": ""Dono Forno da incasso"", ""data"": ""27/02/2017"", ""descrizione"": ""Vorrei donare forno da incasso ignis funzionante e in buono stato a persone bisognose o ad associazioni che aiutano la gente terremotata. Un dono fatto con cuore e disposto a consegnarlo personalmente a chi ne ha bisogno. Giuseppe. Contattatemi sulla mia mail: giusnbc@yahoo.it"", ""email"": ""giusnbc@yahoo.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3208747145""}","<pre><yamldata>tel: '3208747145'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2620,210365056,2017-02-27 14:43:35,2017-02-27 01:02:44,Offro attività di volontariato per aiutare famiglie terremotate o associazioni,,,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Form""]",,,"{""cosa"": ""Volontariato saltuario"", ""data"": ""27/02/2017"", ""descrizione"": ""Vorrei partecipare ad attivit\u00e0 di volontariato per aiutare famiglie bisognose o associazioni che si mobilitano ad aiuti per la gente colpita dal sisma. Aiutare la gente con cuore e con azioni di aiuto umanitario sono le mie basi nelle attivit\u00e0 di volontariato. Disposto anche a raggiungere il luogo con la mia auto. Giuseppe. Contattatemi sulla mail: giusnbc@yahoo.it"", ""email"": ""giusnbc@yahoo.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3208747145""}","<pre><yamldata>tel: '3208747145'
+email: giusnbc@yahoo.it
+cosa: 'Volontariato saltuario'
+descrizione: 'Vorrei partecipare ad attività di volontariato per aiutare famiglie bisognose o associazioni che si mobilitano ad aiuti per la gente colpita dal sisma. Aiutare la gente con cuore e con azioni di aiuto umanitario sono le mie basi nelle attività di volontariato. Disposto anche a raggiungere il luogo con la mia auto. Giuseppe. Contattatemi sulla mail: giusnbc@yahoo.it'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 27/02/2017
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2619,210363537,2017-02-27 14:42:16,2017-02-27 00:42:07,Dono forno da incasso,,,"[""Accettato"", ""Donazioni"", ""Form""]",,,"{""cosa"": ""Dono Forno da incasso"", ""data"": ""27/02/2017"", ""descrizione"": ""Vorrei donare forno da incasso ignis funzionante e in buono stato a persone bisognose o ad associazioni che aiutano la gente terremotata. Un dono fatto con cuore e disposto a consegnarlo personalmente a chi ne ha bisogno. Giuseppe. Contattatemi sulla mia mail: giusnbc@yahoo.it"", ""email"": ""giusnbc@yahoo.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3208747145""}","<pre><yamldata>tel: '3208747145'
 email: giusnbc@yahoo.it
 cosa: 'Dono Forno da incasso'
 descrizione: 'Vorrei donare forno da incasso ignis funzionante e in buono stato a persone bisognose o ad associazioni che aiutano la gente terremotata. Un dono fatto con cuore e disposto a consegnarlo personalmente a chi ne ha bisogno. Giuseppe. Contattatemi sulla mia mail: giusnbc@yahoo.it'
