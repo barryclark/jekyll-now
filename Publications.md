@@ -4,8 +4,9 @@ permalink: /publications/
 published: true
 ---
 
-[Google Scholar Profile](https://scholar.google.fr/citations?user=DuiyaQoAAAAJ&hl=en){:target="_blank"}
-[Researchgate](https://www.researchgate.net/profile/Redouane_Lguensat)
+> [Google Scholar Profile](https://scholar.google.fr/citations?user=DuiyaQoAAAAJ&hl=en){:target="_blank"}
+
+> [Researchgate](https://www.researchgate.net/profile/Redouane_Lguensat)
 
 
 # Publications (still updating..)
