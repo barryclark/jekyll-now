@@ -1,4 +1,4 @@
-# Use bootstrap in angular2 cli project
+Use bootstrap in angular2 cli project
 
 ### The first option
 The most conveninent way to use bootstrap in your angular2 cli project is to use Bootstrap CDN.
@@ -23,3 +23,7 @@ Open angular-cli.json file, update styles declaration.
 "styles": [
   "../node_modules/bootstrap/dist/css/bootstrap.min.css"
 ]
+
+Give it a try: 
+
+<button id="btnSubmit" type="button" style="width:130px;" class="btn btn-default">submit</button>
