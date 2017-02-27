@@ -9,7 +9,7 @@ tags:
 - steve jackson games
 layout: post
 description: Batman the Animated Series Dice Game is a light filler with Animated sensibilities.
-amazonterm: Batman: The Animated Series Dice Game
+amazonterm: "Batman: The Animated Series Dice Game"
 featured: batmantasdice.jpg
 author: robk
 ---
