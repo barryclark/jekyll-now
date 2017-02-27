@@ -1,4 +1,6 @@
-Use bootstrap in angular2 cli project
+>**Bootstrap** is the most popular HTML, CSS, and JS framework for developing responsive, mobile first projects on the web. CSS is my favorate one, I'd like to use it in my angular2 cli projects.
+
+## How to use Bootstrap in a Angular2 cli project
 
 ### The first option
 The most conveninent way to use bootstrap in your angular2 cli project is to use Bootstrap CDN.
@@ -7,7 +9,7 @@ Go to [Bootstrap](http://getbootstrap.com/) official website, in "Getting starte
 
 ... ... But if you just want to use bootstrap css, then just copy the css link. I personally only used bootstrap css in my projects.
 
-<!-- Latest compiled and minified CSS -->
+><!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
 ### The second option
