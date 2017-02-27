@@ -59,7 +59,7 @@ Villages of Valeria is mostly cards and those of high quality. The artwork on th
 
 <h2>Perspective</h2>
 
-My 3 oldest kids and I *loved* Villages of Valeria. The combination of managing resources, choosing what action to take during a round, choosing if you're going to take a *Follow* actions during another player's turn, and choosing when to snag the right adventure just felt so perfectly balanced and streamlined. Never one during play did anything feel the least big clunky or out of place.
+My 3 oldest kids and I *loved* Villages of Valeria. The combination of managing resources, choosing what action to take during a round, choosing if you're going to take a *Follow* actions during another player's turn, and choosing when to snag the right adventure just felt so perfectly balanced and streamlined. Never once during play did anything feel the least big clunky or out of place.
 
 Sometimes a game just hits all the right buttons. Between the size of the game, the colorful artwork, simple rules, and excellent gameplay, Villages of Valeria is one of those games that I feel will be played by my family for years to come. With the sheer amount of games coming through the door, it's rare for a game to really strike such a cord with us that I can say with certainty that it's one that will stand the test of time.
 
