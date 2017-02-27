@@ -134,8 +134,13 @@ ul.rs{
 
 .rs a.about{
     font-family: akularegular;
-    font-size: 20px;
+    font-size: 2rem;
     width: 80px;
+}
+.rs a.about:hover{
+    color: $pink;
+    font-size: 2rem;
+    
 }
 
 /// Posts
@@ -576,7 +581,9 @@ header.single-header a.home{
         height: 25px;
     }
 }
-
+header.single-header a.home:hover{
+    color: $pink;
+}
 
 /* SINGLE POST (all this comes from my previous blog, keep DRY) */
 
