@@ -30,7 +30,7 @@ It's probably a good time to mention that Buildings can be built or flipped upsi
 The first player takes the Active Player token and takes one of the following actions, with the other players having the option of taking the Follow Action.
 
 * **HARVEST:** Draw 3 Cards.\\
-Follow: Draw 1 Card.
+**Follow:** Draw 1 Card.
 
 * **DEVELOP:** Discard 1 card to add a Card to your Castle as a Resource. \\
 **Follow:** You may discard 2 cards to add a Card to your Castle as a Resource.
