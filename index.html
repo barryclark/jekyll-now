@@ -3,7 +3,9 @@ layout: default
 ---
 
 <div class="posts">
-  {% for post in {{ site.posts | sort: 'date', 'last' }} %}
+  {% assign post_list = site.posts %}
+  {{ post_list | sort }}
+  {% for post in post_list %}
     <article class="post">
 
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
