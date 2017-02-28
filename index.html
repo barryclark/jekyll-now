@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div class="posts">
-  {%regroup site.posts by post.date as post_list %}
+  {% regroup site.posts by post.date as post_list %}
   {% for post in post_list %}
     <article class="post">
 
