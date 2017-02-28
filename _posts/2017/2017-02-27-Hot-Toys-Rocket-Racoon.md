@@ -5,7 +5,7 @@ category: toys
 tags:
 - toys
 - guardians of the galaxy
-- rocket racoon
+- rocket raccoon
 - hot toys
 layout: post
 description: Much bigger guns for a small raccoon. Hot Toys Guardians of the Galaxy Vol. 2 Rocket Raccoon looks amazing.
