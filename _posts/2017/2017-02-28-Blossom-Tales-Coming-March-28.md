@@ -21,4 +21,4 @@ Collect unique weapons, spells, and more during your journey to take down powerf
 
 Castle Pixel describes Blossom Tales as "A delightful mix of 'Zelda' and 'Princess Bride'."
 
-If all this sounds as awesome to you as it does to me, keep an eye on the game's [Steam page](http://store.steampowered.com/app/446810).
+If all this sounds as awesome to you as it does to me, keep an eye on the game's [Steam page](http://store.steampowered.com/app/446810). 
