@@ -7,7 +7,6 @@ categories: [java, padroes, desing, comportamental]
 
 Existem padrões além dos famosos já mostrados pelo GOF (Gang of Four) e um desses é o padrão Null Object. Esse padrão é um bom exemplo de utilização de orientação a objetos e deve ser parte do "canivete suíço" de todo desenvolvedor que utiliza linguagens que podem ter referência nula.
 
-
 > "O maior erro que você pode cometer, é o de ficar o tempo todo com medo de cometer algum."
 >
 > -- _Elbert Hubbard_
