@@ -3,8 +3,7 @@ layout: default
 ---
 
 <div class="posts">
-  {% regroup site.posts by post.date as post_list %}
-  {% for post in post_list %}
+  {% for post in {{ site.posts | sort: 'date' }} %}
     <article class="post">
 
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
