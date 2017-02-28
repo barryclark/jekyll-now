@@ -1,6 +1,6 @@
 ---
-title: Blossom Tales: The Sleeping King Coming March 28th
-date: 2017-02-28 14:57:00 Z
+title: "Blossom Tales: The Sleeping King Coming March 28th"
+date: 2017-02-28 15:11:00 Z
 category: video games
 tags:
 - video games
