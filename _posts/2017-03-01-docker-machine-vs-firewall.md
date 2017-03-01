@@ -1,13 +1,14 @@
 ---
 layout: post
 title: Docker-Machine vs Firewall
-subtitle:
+subtitle: A short diary of our investigation of a docker-machine issue.
 category: howto
 tags: [docker, security]
 author: doru_mihai
 author_email: doru.mihai@haufe-lexware.com
 header-img: "images/bg-post.jpg"
 ---
+
 
 Docker-Machine has helped us a lot with automaed provisioning of infrastructure in the cloud and automated Docker Engine installation.
 Naturally, we had grown to rely on it and to take it for granted.
@@ -104,6 +105,6 @@ And so, after exhausting all ideas, we cried for help to our colleagues that man
 ## The Source
 The problem in the end was that our firewall rules were updated/patched and an IPS Pattern matched our automated deployment attempts with an SSH Brute Force Login and that was reported by docker-machine as an error while executing that small shell script.
 
-![Firewall Rule](/images/docker-machine-firewall/firewall-ssh.PNG)
+![Firewall Rule](/images/docker-machine-firewall/firewall-ssh.png)
 
 So, I hope that this might help others that will face this or other simmilar issues and also give a bit more insight into how all those gophers behind docker-machine work.
