@@ -15,10 +15,16 @@
 
 html {
   font-size: 100%;
+	//Freja
+background-image: url(images/katrinebjerg.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+
 }
 
 body {
-	background: $white;
+	//background: $white;
   font: 18px/1.4 $helvetica;
   color: $darkGray;
 }
