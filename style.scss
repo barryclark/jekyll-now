@@ -39,7 +39,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: $helvetica;
 	//Brødtekst
-  color: #DCFFEF;
+  color: $white;
   font-weight: bold;
 
   line-height: 1.7;
@@ -55,7 +55,7 @@ h1 {
 	//Headers
   font-size: 30px;
   a {
-    color: #dadbdf;
+    color: #DCFFEF;
   }
 }
 
@@ -83,7 +83,7 @@ a {
 	cursor: pointer;
 	//Hover over links
   &:hover, &:active {
-    color: #FF2100;
+    color: #DB2600;
   }
 }
 
