@@ -1,4 +1,20 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2651,211048418,2017-03-01 11:32:32,2017-03-01 11:05:47,Cercasi automobile per terremotato di #Amatrice,,,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""Automobile"", ""data"": ""01/03/2017"", ""descrizione"": ""Ciao a tutti, mi chiamo Giancarlo Gabrieli e sono di Amatrice. Al momento risiedo a San Benedetto, all'hotel Relax. Ho perso l'auto durante il terremoto e sono alla ricerca di un mezzo che possa sostituirla. Ovviamente mi rendo disponibile a sostenere le spese per il passaggio di propriet\u00e0. Grazie a tutti quelli che mi vorranno aiutare."", ""email"": ""guscentroascolto@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3481604224""}","<pre><yamldata>tel: '3481604224'
+email: guscentroascolto@gmail.com
+cosa: Automobile
+descrizione: 'Ciao a tutti, mi chiamo Giancarlo Gabrieli e sono di Amatrice. Al momento risiedo a San Benedetto, all''hotel Relax. Ho perso l''auto durante il terremoto e sono alla ricerca di un mezzo che possa sostituirla. Ovviamente mi rendo disponibile a sostenere le spese per il passaggio di proprietà. Grazie a tutti quelli che mi vorranno aiutare.'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 01/03/2017
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2650,211038971,2017-03-01 11:33:16,2017-03-01 10:28:29,Finanziamenti da CDP per lavoratori autonomi delle zone del sisma,,,"[""Accettato"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""01/03/2017"", ""descrizione"": ""560 milioni di euro a sostegno dei territori colpiti dagli eventi sismici del 2016, grazie a un nuovo Plafond deliberato da CDP e dedicato ai titolari di reddito d\u2019impresa, di lavoro autonomo e di attivit\u00e0 agricola delle zone colpite dal Terremoto del Centro Italia."", ""link"": ""https://bartolomeigiuliano.blog/2017/03/01/da-cdp-560-milioni-di-euro-per-imprese-anche-agricole-e-lavoratori-autonomi-delle-zone-colpite-dal-terremoto-del-centro-italia/"", ""titolo"": ""Finanziamenti da CDP per lavoratori autonomi delle zone colpite dal terremoto""}","<pre><yamldata>titolo: 'Finanziamenti da CDP per lavoratori autonomi delle zone colpite dal terremoto'
+descrizione: '560 milioni di euro a sostegno dei territori colpiti dagli eventi sismici del 2016, grazie a un nuovo Plafond deliberato da CDP e dedicato ai titolari di reddito d’impresa, di lavoro autonomo e di attività agricola delle zone colpite dal Terremoto del Centro Italia.'
+link: 'https://bartolomeigiuliano.blog/2017/03/01/da-cdp-560-milioni-di-euro-per-imprese-anche-agricole-e-lavoratori-autonomi-delle-zone-colpite-dal-terremoto-del-centro-italia/'
+data: 01/03/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2648,211028661,2017-03-01 11:29:08,2017-03-01 09:48:32,Corso di formazione per la tutela e la salvaguardia dei Beni Culturali #Perugia,43.1119613,12.3890104,"[""Accettato"", ""Bollettino"", ""Eventi"", ""Form""]",,,"{""data"": ""01/03/2017"", ""data_evento"": ""16/03/2017"", ""descrizione"": ""Intesa tra il Dipartimento di Lettere e Proteggere Insieme prevede lo svolgimento di un corso di formazione per volontari di Protezione Civile per la tutela e la salvaguardia dei Beni Culturali. Il corso, riservato agli studenti iscritti ai corsi di laurea in Beni culturali e in Archeologia e Storia dell'arte, si terr\u00e0 nei giorni 16 e 17 marzo 2017 presso il Dipartimento di Lettere; orari e aule saranno comunicati successivamente."", ""indirizzo"": ""Piazza IV Novembre, San Marco, Perugia, PG, Umbria, 06100, Italia"", ""lat"": ""43.1119613"", ""link"": ""http://www.lettere.unipg.it/23-generale/avvisi/379-emergenza-terremoto-corso-di-formazione-per-volontari-di-protezione-civile-per-la-tutela-e-la-salvaguardia-dei-beni-culturali"", ""lon"": ""12.3890104"", ""ora_evento"": """", ""promotore"": ""Associazione Proteggere Insieme Onlus / LARES ITALIA-Unione Nazionale Laureati Esperti in Protezione Civile"", ""titolo_evento"": ""Corso di formazione per volontari di Protezione Civile""}","<pre><yamldata>titolo_evento: 'Corso di formazione per volontari di Protezione Civile'
 data_evento: 16/03/2017
 ora_evento: ''
@@ -17705,18 +17721,6 @@ email: ''
 data: 13/09/2016
 </yamldata></pre>
 ",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/181,176756059,2016-09-13 22:06:14,2016-09-13 21:34:01,"MUTANDE, CALZINI, REGGISENI e MAGLIETTE/CANOTTIERE INTIME.",,,"[""Accettato"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""MUTANDE, CALZINI, REGGISENI e MAGLIETTE/CANOTTIERE INTIME."", ""data"": ""13/09/2016"", ""descrizione"": ""Richiesta dal Campo protezione civile ad Amatrice. Il tutto di varie taglie, soprattutto medio grandi per uomini, donne e bambini di ambo i sessi. Ovviamente l'intimo va rigorosamente consegnato nuovo per una questione di igiene. \u00c8 urgente."", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""https://www.facebook.com/daniela.tassinari.3/posts/10210515585996963?pnref=story"", ""lon"": """", ""tel"": """"}","<pre><yamldata>tel: ''
-email: ''
-cosa: 'MUTANDE, CALZINI, REGGISENI e MAGLIETTE/CANOTTIERE INTIME.'
-descrizione: 'Richiesta dal Campo protezione civile ad Amatrice. Il tutto di varie taglie, soprattutto medio grandi per uomini, donne e bambini di ambo i sessi. Ovviamente l''intimo va rigorosamente consegnato nuovo per una questione di igiene. È urgente.'
-indirizzo: ''
-lat: ''
-lon: ''
-link: 'https://www.facebook.com/daniela.tassinari.3/posts/10210515585996963?pnref=story'
-immagine: ''
-data: 13/09/2016
-</yamldata></pre>
-",closed
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/181,176756059,2016-09-13 22:06:14,2016-09-13 21:34:01,"MUTANDE, CALZINI, REGGISENI e MAGLIETTE/CANOTTIERE INTIME.",,,"[""Accettato"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""MUTANDE, CALZINI, REGGISENI e MAGLIETTE/CANOTTIERE INTIME."", ""data"": ""13/09/2016"", ""descrizione"": ""Richiesta dal Campo protezione civile ad Amatrice. Il tutto di varie taglie, soprattutto medio grandi per uomini, donne e bambini di ambo i sessi. Ovviamente l'intimo va rigorosamente consegnato nuovo per una questione di igiene. \u00c8 urgente."", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""https://www.facebook.com/daniela.tassinari.3/posts/10210515585996963?pnref=story"", ""lon"": """", ""tel"": """"}","<pre><yamldata>tel: ''
 email: ''
 cosa: 'MUTANDE, CALZINI, REGGISENI e MAGLIETTE/CANOTTIERE INTIME.'
