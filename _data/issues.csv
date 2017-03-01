@@ -1,4 +1,14 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2657,211127721,2017-03-01 16:45:33,2017-03-01 16:08:11,Offresi gratuitamente tavernetta in #Trentino,,,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""01/03/2017"", ""descrizione"": ""Offresi gratuitamente tavernetta ( monolocale con bagno) per 2-3 persone In Trentino - Val di Fassa - Soraga- per un periodo di relax e pace."", ""email"": ""claudio.crepaz@hotmail.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3351259869""}","<pre><yamldata>tel: '3351259869'
+email: claudio.crepaz@hotmail.it
+descrizione: 'Offresi gratuitamente tavernetta ( monolocale con bagno) per 2-3 persone In Trentino - Val di Fassa - Soraga- per un periodo di relax e pace.'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 01/03/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2655,211119003,2017-03-01 15:50:53,2017-03-01 15:41:37,"""Benvenuti al Centro"", incontro a Macerata per un turismo sostenibile",,,"[""Accettato"", ""Eventi"", ""Form""]",,,"{""data"": ""01/03/2017"", ""data_evento"": ""04/03/2017"", ""descrizione"": ""Presso l'Istituto Matteo Ricci di Macerata il 4 marzo incontro dedicato allo sviluppo e alla promozione di un turismo ecosostenibile nelle zone colpite dal terremoto."", ""indirizzo"": """", ""lat"": """", ""link"": ""https://www.facebook.com/ciclo.stile.mc/photos/gm.1780168115644198/712230638957679/?type=3&theater"", ""lon"": """", ""ora_evento"": ""10.30- 13.00"", ""promotore"": ""IIS Matteo Ricci Macerata, Indirizzo Turismo e Associazione Ciclo Stile"", ""titolo_evento"": ""Benvenuti al Centro""}","<pre><yamldata>titolo_evento: 'Benvenuti al Centro'
 data_evento: 04/03/2017
 ora_evento: '10.30- 13.00'
@@ -2439,17 +2449,6 @@ lat: '42.405283'
 lon: '12.8683073'
 link: 'https://www.facebook.com/loco.motiva.rieti/photos/a.1447215475579385.1073741830.1446532378981028/1660466334254297/?type=3&theater'
 immagine: 'http://i.imgur.com/owSPhm4.jpg'
-data: 25/01/2017
-</yamldata></pre>",closed
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2274,203099019,2017-01-29 14:55:21,2017-01-25 13:10:37,Servono con urgenza volontari a #Acquasanta (Ap) per spalare neve da oggi a venerdì 27 gennaio,,,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Sisma Gennaio 2017""]",Milestone(number=53),,"{""cosa"": ""Richiesta volontari urgente"", ""data"": ""25/01/2017"", ""descrizione"": ""L'Associazione Mam Beyond Borders cerca volontari per aiutare a spalare la neve nella zona di Acquasanta (AP) da oggi a venerd\u00ec, con possibilit\u00e0 di alloggio. Solo automuniti e con catene. Contattateci sulla nostra pagina Facebook: https://www.facebook.com/MAMbeyondborder/?fref=ts"", ""email"": ""nirchi.v@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""https://www.facebook.com/MAMbeyondborder/?fref=ts"", ""lon"": """", ""tel"": """"}","<pre><yamldata>tel: ''
-email: nirchi.v@gmail.com
-cosa: 'Richiesta volontari urgente'
-descrizione: 'L''Associazione Mam Beyond Borders cerca volontari per aiutare a spalare la neve nella zona di Acquasanta (AP) da oggi a venerdì, con possibilità di alloggio. Solo automuniti e con catene. Contattateci sulla nostra pagina Facebook: https://www.facebook.com/MAMbeyondborder/?fref=ts'
-indirizzo: ''
-lat: ''
-lon: ''
-link: 'https://www.facebook.com/MAMbeyondborder/?fref=ts'
-immagine: ''
 data: 25/01/2017
 </yamldata></pre>",closed
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2274,203099019,2017-01-29 14:55:21,2017-01-25 13:10:37,Servono con urgenza volontari a #Acquasanta (Ap) per spalare neve da oggi a venerdì 27 gennaio,,,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Sisma Gennaio 2017""]",Milestone(number=53),,"{""cosa"": ""Richiesta volontari urgente"", ""data"": ""25/01/2017"", ""descrizione"": ""L'Associazione Mam Beyond Borders cerca volontari per aiutare a spalare la neve nella zona di Acquasanta (AP) da oggi a venerd\u00ec, con possibilit\u00e0 di alloggio. Solo automuniti e con catene. Contattateci sulla nostra pagina Facebook: https://www.facebook.com/MAMbeyondborder/?fref=ts"", ""email"": ""nirchi.v@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""https://www.facebook.com/MAMbeyondborder/?fref=ts"", ""lon"": """", ""tel"": """"}","<pre><yamldata>tel: ''
