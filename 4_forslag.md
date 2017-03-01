@@ -12,9 +12,10 @@ Hvis du har forslag til aktiviteter, som den nye tutorforening skal lave eller i
   <input type='hidden' name='redirect_to' value='http://www.it-tutor.dk/tak' />
   <!-- all your input fields here.... -->
   Din Email
-  <input type='text' name="email" placeholder="Din email, så vi kan følge op" /> <br />
+  <input type='text' name="email" placeholder="Din email" /> <br />
   Overskrift
   <input type="text" name="overskrift" placeholder="Overskrift"/> <br />
+  <br />
   <textarea style='width: 650px; height: 200px;' rows="20" cols="50" type='textarea'  placeholder="Dit forslag" name='message' ></textarea>
   <input type='submit' value='Indsend forslag' />
 </form>
