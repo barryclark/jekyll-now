@@ -1,7 +1,7 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2657,211127721,2017-03-01 16:45:33,2017-03-01 16:08:11,Offresi gratuitamente tavernetta in #Trentino,,,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""01/03/2017"", ""descrizione"": ""Offresi gratuitamente tavernetta ( monolocale con bagno) per 2-3 persone In Trentino - Val di Fassa - Soraga- per un periodo di relax e pace."", ""email"": ""claudio.crepaz@hotmail.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3351259869""}","<pre><yamldata>tel: '3351259869'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2657,211127721,2017-03-01 21:54:14,2017-03-01 16:08:11,Offresi gratuitamente monolocale in #Trentino,,,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""01/03/2017"", ""descrizione"": ""Offresi gratuitamente tavernetta (monolocale con bagno) per 2-3 persone In Trentino - Val di Fassa - Soraga- per un periodo di relax e pace."", ""email"": ""claudio.crepaz@hotmail.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3351259869""}","<pre><yamldata>tel: '3351259869'
 email: claudio.crepaz@hotmail.it
-descrizione: 'Offresi gratuitamente tavernetta ( monolocale con bagno) per 2-3 persone In Trentino - Val di Fassa - Soraga- per un periodo di relax e pace.'
+descrizione: 'Offresi gratuitamente tavernetta (monolocale con bagno) per 2-3 persone In Trentino - Val di Fassa - Soraga- per un periodo di relax e pace.'
 indirizzo: ''
 lat: ''
 lon: ''
