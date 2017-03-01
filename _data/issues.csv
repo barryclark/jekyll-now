@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2652,211094581,2017-03-01 14:49:22,2017-03-01 14:19:43,Raccolta fondi di Fai-Fondo Ambiente Italiano per #ArquatadelTronto,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": ""Appello Terremoto Arquata 2016"", ""chi"": ""FAI - Fondo Ambiente Italiano"", ""data"": ""01/03/2017"", ""descrizione"": ""Il FAI si mobilita per Arquata del Tronto e partecipa al dramma della popolazione colpita dal terremoto con il restauro dell'Oratorio della Madonna del sole, che vuole essere un piccolo passo per il recupero dell\u2019identit\u00e0 perduta del borgo certo di interpretare il sentire commossi di tutti gli Italiani. Servono pi\u00f9 di 300.000 euro."", ""email"": """", ""iban"": ""IT29J0335901600100000017752"", ""intestazione"": """", ""link"": ""http://www.fondoambiente.it/landing/faiperilterremoto/"", ""postale"": """"}","<pre><yamldata>chi: 'FAI - Fondo Ambiente Italiano'
+descrizione: 'Il FAI si mobilita per Arquata del Tronto e partecipa al dramma della popolazione colpita dal terremoto con il restauro dell''Oratorio della Madonna del sole, che vuole essere un piccolo passo per il recupero dell’identità perduta del borgo certo di interpretare il sentire commossi di tutti gli Italiani. Servono più di 300.000 euro.'
+intestazione: ''
+iban: IT29J0335901600100000017752
+bic: ''
+postale: ''
+causale: 'Appello Terremoto Arquata 2016'
+link: 'http://www.fondoambiente.it/landing/faiperilterremoto/'
+email: ''
+data: 01/03/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2651,211048418,2017-03-01 11:32:32,2017-03-01 11:05:47,Cercasi automobile per terremotato di #Amatrice,,,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""Automobile"", ""data"": ""01/03/2017"", ""descrizione"": ""Ciao a tutti, mi chiamo Giancarlo Gabrieli e sono di Amatrice. Al momento risiedo a San Benedetto, all'hotel Relax. Ho perso l'auto durante il terremoto e sono alla ricerca di un mezzo che possa sostituirla. Ovviamente mi rendo disponibile a sostenere le spese per il passaggio di propriet\u00e0. Grazie a tutti quelli che mi vorranno aiutare."", ""email"": ""guscentroascolto@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3481604224""}","<pre><yamldata>tel: '3481604224'
 email: guscentroascolto@gmail.com
 cosa: Automobile
@@ -753,17 +764,6 @@ descrizione: 'APPELLO: la nuova associazione Protezione Civile Isola Emergenze, 
 indirizzo: 'SS491, Isola del Gran Sasso d''Italia, TE, Abruzzo, 64045, Italia'
 lat: '42.5030579'
 lon: '13.6595164'
-link: ''
-immagine: ''
-data: 20/02/2017
-</yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2540,208832790,2017-02-20 10:14:53,2017-02-20 10:01:08,Capi di abbigliamento,43.1119613,12.3890104,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Form""]",,,"{""cosa"": ""Capi di abbigliamento"", ""data"": ""20/02/2017"", ""descrizione"": ""Dono capi di abbigliamento da uomo in ottimo stato: calzini, camicie e felpe (taglia M), pantaloni (taglia 48). Contattatemi per qualsiasi ulteriore informazione, Andrea 3288040289"", ""email"": """", ""immagine"": """", ""indirizzo"": ""Piazza IV Novembre, San Marco, Perugia, PG, Umbria, 06100, Italia"", ""lat"": ""43.1119613"", ""link"": """", ""lon"": ""12.3890104"", ""tel"": ""3288040289""}","<pre><yamldata>tel: '3288040289'
-email: ''
-cosa: 'Capi di abbigliamento'
-descrizione: 'Dono capi di abbigliamento da uomo in ottimo stato: calzini, camicie e felpe (taglia M), pantaloni (taglia 48). Contattatemi per qualsiasi ulteriore informazione, Andrea 3288040289'
-indirizzo: 'Piazza IV Novembre, San Marco, Perugia, PG, Umbria, 06100, Italia'
-lat: '43.1119613'
-lon: '12.3890104'
 link: ''
 immagine: ''
 data: 20/02/2017
@@ -11239,17 +11239,6 @@ descrizione: '#Terremoto: 15 mila persone assistite da #ProtezioneCivile ++ #ter
 link: 'https://goo.gl/Y1eK4X'
 data: 31/10/2016
 </yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/976,186173492,2016-10-31 13:43:24,2016-10-30 23:30:50,Ho un piano di casa disponibile tra Trento e Rovereto,,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Ottobre""]",,,"{""data"": ""30/10/2016"", ""descrizione"": ""Ho un piano di casa non utilizzato, due stanze (una matrimoniale e una pi\u00f9 piccola, singola) con bagno, a Besenello, in Trentino, fondovalle tra Trento e Rovereto. Non posso permettermi di ospitare \""gratis\"", sono affittuario e ho parecchie spese, chiedo solo le spese vive (contributo gas e luce)."", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""328/1361612""}","<pre><yamldata>tel: 328/1361612
-email: ''
-descrizione: 'Ho un piano di casa non utilizzato, due stanze (una matrimoniale e una più piccola, singola) con bagno, a Besenello, in Trentino, fondovalle tra Trento e Rovereto. Non posso permettermi di ospitare ""gratis"", sono affittuario e ho parecchie spese, chiedo solo le spese vive (contributo gas e luce).'
-indirizzo: ''
-lat: ''
-lon: ''
-link: ''
-immagine: ''
-data: 30/10/2016
-</yamldata></pre>
-",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/975,186170439,2016-10-31 13:46:09,2016-10-30 22:45:04,Offro miniappartamento a Bra (Cuneo),,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Ottobre""]",,,"{""data"": ""30/10/2016"", ""descrizione"": ""metto a disposizione un piccolo alloggio a Bra (Cn). 1 camera da letto, un bagno e una zona cucina-living con un divano letto matrimoniale."", ""email"": ""cinziaskaffidi@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""335 8333588""}","<pre><yamldata>tel: '335 8333588'
 email: cinziaskaffidi@gmail.com
 descrizione: 'metto a disposizione un piccolo alloggio a Bra (Cn). 1 camera da letto, un bagno e una zona cucina-living con un divano letto matrimoniale.'
