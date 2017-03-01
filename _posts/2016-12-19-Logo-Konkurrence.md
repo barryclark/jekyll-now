@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Logo Konkurrence
+title: Logokonkurrence
 ---
 
 Hvis I endnu ikke har set det, har IT's tutorforening, IT-Tutor, oprettet en Facebookside [IT-Tutor](https://www.facebook.com/ITTutorforening). 
