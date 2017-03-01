@@ -1,4 +1,9 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2654,211118399,2017-03-01 15:42:29,2017-03-01 15:39:42,Prorogata al 30 giugno esenzione ticket per cittadini abruzzesi residenti nel cratere,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""01/03/2017"", ""descrizione"": ""La giunta regionale, su proposta dell\u2019assessore alla programmazione sanitaria Silvio Paolucci, ha approvato la delibera che estende fino al prossimo 30 giugno l\u2019esenzione dal pagamento dei ticket sanitari per i cittadini abruzzesi residenti nei centri del cratere sismico. La proroga riguarda non solo i centri in cui l\u2019esenzione era gi\u00e0 in vigore dal settembre scorso (Montereale, Capitignano, Campotosto, Valle Castellana, Rocca Santa Maria), ma anche quelli ricompresi successivamente nel cratere (Teramo, Cortino, Crognaleto, Montorio al Vomano, Campli, Castelli, Civitella del Tronto, Torricella Sicura e Tossicia). L\u2019esenzione pu\u00f2 essere richiesta in tutte le farmacie convenzionate, e riguarda sia la partecipazione degli assistiti alla spesa farmaceutica, sia anche l\u2019eventuale quota dovuta sui medicinali equivalenti che non si adeguano al prezzo di riferimento regionale. Sulla base di accordi con le Regioni Marche e Umbria, all\u2019agevolazione possono accedere anche i residenti in queste regioni e temporaneamente domiciliati in Abruzzo. In questo caso, per\u00f2, i termini per usufruire dell\u2019esenzione sono fissati rispettivamente al 30 aprile e al 31 marzo prossimi."", ""link"": ""http://www.6aprile.it/featured/2017/03/01/terremoto-prorogata-al-30-giugno-esenzione-ticket-in-comuni-cratere-sismico.html"", ""titolo"": ""Prorogata al 30 giugno esenzione ticket per cittadini abruzzesi residenti nel cratere""}","<pre><yamldata>titolo: 'Prorogata al 30 giugno esenzione ticket per cittadini abruzzesi residenti nel cratere'
+descrizione: 'La giunta regionale, su proposta dell’assessore alla programmazione sanitaria Silvio Paolucci, ha approvato la delibera che estende fino al prossimo 30 giugno l’esenzione dal pagamento dei ticket sanitari per i cittadini abruzzesi residenti nei centri del cratere sismico. La proroga riguarda non solo i centri in cui l’esenzione era già in vigore dal settembre scorso (Montereale, Capitignano, Campotosto, Valle Castellana, Rocca Santa Maria), ma anche quelli ricompresi successivamente nel cratere (Teramo, Cortino, Crognaleto, Montorio al Vomano, Campli, Castelli, Civitella del Tronto, Torricella Sicura e Tossicia). L’esenzione può essere richiesta in tutte le farmacie convenzionate, e riguarda sia la partecipazione degli assistiti alla spesa farmaceutica, sia anche l’eventuale quota dovuta sui medicinali equivalenti che non si adeguano al prezzo di riferimento regionale. Sulla base di accordi con le Regioni Marche e Umbria, all’agevolazione possono accedere anche i residenti in queste regioni e temporaneamente domiciliati in Abruzzo. In questo caso, però, i termini per usufruire dell’esenzione sono fissati rispettivamente al 30 aprile e al 31 marzo prossimi.'
+link: 'http://www.6aprile.it/featured/2017/03/01/terremoto-prorogata-al-30-giugno-esenzione-ticket-in-comuni-cratere-sismico.html'
+data: 01/03/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2652,211094581,2017-03-01 15:17:55,2017-03-01 14:19:43,Raccolta fondi di Fai-Fondo Ambiente Italiano per #ArquatadelTronto,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": ""Appello Terremoto Arquata 2016"", ""chi"": ""FAI - Fondo Ambiente Italiano"", ""data"": ""01/03/2017"", ""descrizione"": ""Il FAI si mobilita per Arquata del Tronto e partecipa al dramma della popolazione colpita dal terremoto con il restauro dell'Oratorio della Madonna del sole, che vuole essere un piccolo passo per il recupero dell\u2019identit\u00e0 perduta del borgo certo di interpretare il sentire commossi di tutti gli Italiani. Servono pi\u00f9 di 300.000 euro."", ""email"": """", ""iban"": ""IT29J0335901600100000017752"", ""intestazione"": """", ""link"": ""http://www.fondoambiente.it/landing/faiperilterremoto/"", ""postale"": """"}","<pre><yamldata>chi: 'FAI - Fondo Ambiente Italiano'
 descrizione: 'Il FAI si mobilita per Arquata del Tronto e partecipa al dramma della popolazione colpita dal terremoto con il restauro dell''Oratorio della Madonna del sole, che vuole essere un piccolo passo per il recupero dell’identità perduta del borgo certo di interpretare il sentire commossi di tutti gli Italiani. Servono più di 300.000 euro.'
 intestazione: ''
@@ -17338,18 +17343,6 @@ bic: ''
 postale: ''
 causale: 'Emergenza sisma centro Italia'
 link: 'http://www.regione.veneto.it/web/guest/dettaglio-giunta-news?_spp_detailId=3049515'
-email: ''
-data: 13/09/2016
-</yamldata></pre>
-",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/216,176774807,2016-09-13 23:26:04,2016-09-13 23:16:19,Diocesi di Novara,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": ""Colletta terremoto centro Italia"", ""chi"": ""Diocesi di Novara"", ""data"": ""13/09/2016"", ""descrizione"": """", ""email"": """", ""iban"": ""IT28E 05034 10100 000000009788"", ""intestazione"": """", ""link"": """", ""postale"": """"}","<pre><yamldata>chi: 'Diocesi di Novara'
-descrizione: ''
-intestazione: ''
-iban: 'IT28E 05034 10100 000000009788'
-bic: ''
-postale: ''
-causale: 'Colletta terremoto centro Italia'
-link: ''
 email: ''
 data: 13/09/2016
 </yamldata></pre>
