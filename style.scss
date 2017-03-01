@@ -38,7 +38,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $helvetica;
-  color: $#d2e1dd;
+  color: #d2e1dd;
   font-weight: bold;
 
   line-height: 1.7;
@@ -75,11 +75,11 @@ p {
 }
 
 a {
-  color: $#699;
+  color: #699;
   text-decoration: none;
 	cursor: pointer;
   &:hover, &:active {
-    color: $#699;
+    color: #699;
   }
 }
 
