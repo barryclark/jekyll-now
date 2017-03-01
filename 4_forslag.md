@@ -17,7 +17,7 @@ Hvis du har forslag til aktiviteter, som den nye tutorforening skal lave eller i
   <input type="text" name="overskrift" placeholder="Overskrift"/> <br />
   <br />
   <textarea style='width: 650px; height: 200px;' rows="20" cols="50" type='textarea'  placeholder="Dit forslag" name='message' >
-  <br />
   </textarea>
+  <br />
   <input type='submit' value='Indsend forslag' />
 </form>
