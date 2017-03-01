@@ -20,10 +20,10 @@ You may remember quite some time ago I backed [Fallen Angel](http://pawnsperspec
 ![Fallen Angel Box Back]({{ site.url }}/images/fallenangel/back.jpg)
 ![Fallen Angel Rules]({{ site.url }}/images/fallenangel/rules.jpg)
 ![Fallen Angel Reference]({{ site.url }}/images/fallenangel/reference.jpg)
-![Fallen Angel Board]({{ site.url }}/images/fallenangel/board1.jpg)
-![Fallen Angel Board]({{ site.url }}/images/fallenangel/board2.jpg)
+![Fallen Angel Board]({{ site.url }}/images/fallenangel/board1.jpg){: .center}
+![Fallen Angel Board]({{ site.url }}/images/fallenangel/board2.jpg){: .center}
 ![Fallen Angel Dice Tower]({{ site.url }}/images/fallenangel/dicetower1.jpg)
-![Fallen Angel Dice Tower]({{ site.url }}/images/fallenangel/dicetower2.jpg)
+![Fallen Angel Dice Tower]({{ site.url }}/images/fallenangel/dicetower2.jpg){: .center}
 ![Fallen Angel Bags]({{ site.url }}/images/fallenangel/bags.jpg)
 ![Fallen Angel Tokens]({{ site.url }}/images/fallenangel/tokens.jpg)
 ![Fallen Angel Pieces]({{ site.url }}/images/fallenangel/pieces.jpg)
