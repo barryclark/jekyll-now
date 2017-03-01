@@ -15,7 +15,7 @@
 
 html {
   font-size: 100%;
-	//Freja
+	//Background image
 background-image: url(images/katrinebjerg.png);
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -38,7 +38,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $helvetica;
-	//Brødtekst
+	//Textcolor
   color: $white;
   font-weight: bold;
 
@@ -166,7 +166,7 @@ img {
 
 .masthead {
   padding: 20px 0;
-  border-bottom: 1px solid $lightGray;
+  border-bottom: 1px solid $darkGray;
   text-align: center;
 
   @include mobile {
