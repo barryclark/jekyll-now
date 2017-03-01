@@ -9,7 +9,7 @@ Ansøgningsfristen for at søge om at blive tutor er i starten af april. Den spe
 
 En uge inden ansøgningsfristen afholdes der et infomøde på Katrinebjerg. 
 
-** Hvis du vil være sikker på ikke at gå glip af vigtige datoer, kan du tilmelde dig vores nyhedsbrev med tutordeadlines nederst på siden. **
+Hvis du vil være sikker på ikke at gå glip af vigtige datoer, kan du tilmelde dig vores nyhedsbrev med tutordeadlines nederst på siden.
 
 ## Om at være tutor 
 Når man ansøger om at blive tutor forventes det, at man kan deltage i de informationsmøder, der ligger i foråret samt rusdagene. For at man som tutor har mulighed for at fokusere på at give sit rushold den bedste start på universitetet, er der på disse møder indlagt tid til, at man kan få planlagt aktiviteter. Der vil ligeledes blive afholdt sociale arrangementer for tutorerne som det forventes, at man deltager i, så tutorholdet kan lære hinanden bedre at kende.
