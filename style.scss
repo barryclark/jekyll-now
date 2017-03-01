@@ -16,7 +16,7 @@
 html {
   font-size: 100%;
 	//Background image
-background-image: url(images/katrinebjerg_2.png);
+background-image: url(images/katrinebjerg_3.png);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -39,7 +39,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: $helvetica;
 	//Textcolor
-  color: $white;
+  color: $darkGrey;
   font-weight: bold;
 
   line-height: 1.7;
@@ -55,7 +55,7 @@ h1 {
 	//Headers
   font-size: 30px;
   a {
-    color: #546c80;
+    color: #699;
   }
 }
 
@@ -69,7 +69,7 @@ h3 {
 
 h4 {
   font-size: 18px;
-  color: $white;
+  color: $darkGrey;
 }
 
 p {
@@ -78,7 +78,7 @@ p {
 
 a {
 	//Link color
-  color: $white;
+  color: $black;
   text-decoration: none;
 	cursor: pointer;
 	//Hover over links
@@ -296,10 +296,10 @@ nav {
 	//Footer
   margin-top: 50px;
 	//Line above and below
-  border-top: 1px solid #151b20;
-  border-bottom: 1px solid #151b20;
+  border-top: 1px solid $white;
+  border-bottom: 1px solid $white;
 	//Color of background
-  background-color: #151b20;
+  background-color: #d0d2d5;
 }
 
 footer {
