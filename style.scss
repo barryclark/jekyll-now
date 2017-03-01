@@ -197,7 +197,7 @@ img {
   margin: 0;
   color: $darkGray;
   cursor: pointer;
-  font-family: $helveticaNeue;
+  font-family: $futura;
   font-weight: 300;
   font-size: 28px;
   letter-spacing: 1px;
@@ -220,7 +220,7 @@ nav {
   margin-left: auto;
   margin-right: auto;
   position: relative;
-  font-family: $helveticaNeue;
+  font-family: $futura;
   font-size: 18px;
 
   @include mobile {
