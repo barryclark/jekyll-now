@@ -26,3 +26,30 @@ Institut for Datalogi <br />
 ### Kontakt Os
 
 [kontakt@it-tutor.dk](kontakt@it-tutor.dk)
+
+### 2016/2017 bestyrelsen består af: 
+Bestyrelsen består af 3 IT-studerende, formand, næstformand og kasser. 
+*Disse tager også del i styregruppen, som står for den praktiske afvikling af rusdagene. Styregruppen består af i alt 6 studerende, som står for kontakten med fakultetet, planlægningen af rusdagsprogrammet samt udvælgelsen af tutorer.*
+
+#### Formand
+**Daniel Graungaard** 
+[formand@it-tutor.dk](mailto:formand@it-tutor.dk)
+
+#### Næstformand
+**Marie-Louise Sørensen** 
+[ml@it-tutor.dk](mailto:ml@it-tutor.dk)
+
+#### Kasserer 
+**Karl-Emil Kjær Bilstrup** 
+[kasserer@it-tutor.dk](mailto:kasserer@it-tutor.dk)
+
+<br />
+
+**Ninna Hoffmann (Sponsoransvarlig)** 
+[ninna@it-tutor.dk](mailto:ninna@it-tutor.dk)
+
+**Freja Sneibjerg Ebsen (Rusdagsansvarlig)** 
+[freja@it-tutor.dk](mailto:freja@it-tutor.dk)
+
+**Magnus Høholt (Altmuligmand)** 
+[magnus@it-tutor.dk](mailto:magnus@it-tutor.dk)
