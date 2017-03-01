@@ -16,7 +16,7 @@
 html {
   font-size: 100%;
 	//Background image
-background-image: url(images/katrinebjerg.png);
+background-image: url(images/katrinebjerg_2.png);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -133,7 +133,7 @@ img {
 // Specify the color of the selection
 ::-moz-selection {
   color: $black;
-  background: $lightGray;
+  background: $darkGray;
 }
 ::selection {
   color: $black;
