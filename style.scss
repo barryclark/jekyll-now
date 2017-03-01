@@ -55,7 +55,7 @@ h1 {
 	//Headers
   font-size: 30px;
   a {
-    color: #8FD8B6;
+    color: #e1d7d2;
   }
 }
 
@@ -77,10 +77,11 @@ p {
 }
 
 a {
-	//Hover over links
+	//Link color
   color: $white;
   text-decoration: none;
 	cursor: pointer;
+	//Hover over links
   &:hover, &:active {
     color: #FF2100;
   }
