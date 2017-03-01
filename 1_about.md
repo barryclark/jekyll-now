@@ -47,7 +47,7 @@ Kasserer <br />
 
 Ninna Hoffmann <br />
 Sponsoransvarlig <br />
-[ninna@it-tutor.dk](mailto:sponsor@it-tutor.dk)
+[sponsor@it-tutor.dk](mailto:sponsor@it-tutor.dk)
 
 Freja Sneibjerg Ebsen <br /> 
 Rusdagsansvarlig <br />
