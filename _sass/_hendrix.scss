@@ -26,8 +26,8 @@ header {
 .navbar {
 	width: 24%;
 	padding: 1%;
-    background-color: whitesmoke;
-    border-radius: 25px;
+    /*background-color: whitesmoke;
+    border-radius: 25px;*/
 }
 
 .posts, .navbar {
@@ -316,7 +316,7 @@ canvas {
 	background: transparent linear-gradient(135deg, rgb(217, 89, 40) 0%, rgb(250, 156, 56) 47%, rgb(217, 89, 40) 100%) repeat scroll 0% 0%;
 }
 
-article, #see-also, .my-amazon-ad {
+article, #see-also, .my-amazon-ad, .navbar {
 	border: 1px solid rgb(221, 221, 221);
 	box-shadow: 5px 5px 0px 0px rgb(241, 241, 241);
 	padding: 0 1em 0 1em;
