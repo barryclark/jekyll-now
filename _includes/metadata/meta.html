@@ -6,6 +6,7 @@
 
 <link rel="canonical" href="{{ site.url }}{% unless page.url == "/index.html" %}{{ page.url }}{% endunless %}"  itemprop="url"/>
 <link rel="alternate" href="{{ site.url }}{% unless page.url == "/index.html" %}{{ page.url }}{% endunless %}" hreflang="en-us" />
+<link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ site.url }}/feed.xml" />
 
 <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | xml_escape }}{% else %}{{ site.description }}{% endif %}" />
 
