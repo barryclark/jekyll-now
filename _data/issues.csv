@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2666,211337499,2017-03-02 09:50:40,2017-03-02 09:39:56,Incontro pubblico TERRE IN MOTO - 09/03 #Amandola,,,"[""Accettato"", ""Bollettino"", ""Eventi"", ""Form""]",,,"{""data"": ""02/03/2017"", ""data_evento"": ""09/03/2017"", ""descrizione"": ""A pi\u00f9 di sei mesi dalle prime scosse faremo il punto della situazione sulle problematiche legate al sisma, anche alla luce del presidio effettuato in regione il 22 febbraio, e sulle prossime attivit\u00e0 della rete.pin l'incontro si svolger\u00e0 presso : Osteria Del Lago C.da S. Stefano, 14, 62020 Monte San Martino"", ""indirizzo"": """", ""lat"": """", ""link"": ""https://www.facebook.com/events/1795607664097384/"", ""lon"": """", ""ora_evento"": ""21:00"", ""promotore"": ""TERRE IN MOTO MARCHE"", ""titolo_evento"": ""TERRE IN MOTO""}","<pre><yamldata>titolo_evento: 'TERRE IN MOTO'
+data_evento: 09/03/2017
+ora_evento: '21:00'
+promotore: 'TERRE IN MOTO MARCHE'
+descrizione: 'A più di sei mesi dalle prime scosse faremo il punto della situazione sulle problematiche legate al sisma, anche alla luce del presidio effettuato in regione il 22 febbraio, e sulle prossime attività della rete.pin l''incontro si svolgerà presso : Osteria Del Lago C.da S. Stefano, 14, 62020 Monte San Martino'
+indirizzo: ''
+lat: ''
+lon: ''
+link: 'https://www.facebook.com/events/1795607664097384/'
+data: 02/03/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2663,211329316,2017-03-02 09:19:56,2017-03-02 09:05:58,"Progetto ""DEDICAMELA"": dona le tue parole!",,,"[""Accettato"", ""Bollettino"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""CONSORZIO MELINDA S.C.A. con sede in Italia a Cles (TN)"", ""data"": ""02/03/2017"", ""descrizione"": ""Dedicamela \u00e8 un progetto ideato per non dimenticare le popolazioni colpite dal terremoto e aiutarle a ritornare a una vita normale. Per riuscirci, abbiamo bisogno di te. Scrivi una tua personale dedica per il Centro Italia e condividila sui social. Per ogni frase che riceveremo, doneremo 1 euro agli operatori ortofrutticoli* in difficolt\u00e0 del Centro Italia. Inoltre la tua frase verr\u00e0 stampata sulle nostre cassette di frutta che saranno distribuite in tutti i principali negozi d\u2019Italia. Dona ora le tue parole."", ""email"": ""melinda@melinda.it"", ""iban"": """", ""intestazione"": """", ""link"": ""http://dedicamela.com/"", ""postale"": """"}","<pre><yamldata>chi: 'CONSORZIO MELINDA S.C.A. con sede in Italia a Cles (TN)'
 descrizione: 'Dedicamela è un progetto ideato per non dimenticare le popolazioni colpite dal terremoto e aiutarle a ritornare a una vita normale. Per riuscirci, abbiamo bisogno di te. Scrivi una tua personale dedica per il Centro Italia e condividila sui social. Per ogni frase che riceveremo, doneremo 1 euro agli operatori ortofrutticoli* in difficoltà del Centro Italia. Inoltre la tua frase verrà stampata sulle nostre cassette di frutta che saranno distribuite in tutti i principali negozi d’Italia. Dona ora le tue parole.'
 intestazione: ''
@@ -6583,16 +6594,6 @@ descrizione: 'L’Amministrazione comunale di Rieti comunica che in seguito alle
 link: 'http://www.comune.rieti.it/article/17/01/emergenza-terremoto-scuole-chiuse-rieti-fino-al-21-gennaio-compreso'
 data: 18/01/2017
 </yamldata></pre>",closed
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1639,201646939,2017-01-18 19:07:43,2017-01-18 17:55:01,offresi casa in campagna per 6-8 persone ad Alberobello (Ba),,,"[""Accettato"", ""Alloggi"", ""Bollettino"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""18/01/2017"", ""descrizione"": ""Mettiamo a disposizione casa in campagna ad Alberobello (BA) con n. 6/8 posti letto"", ""email"": ""rt.pcl@virgilio.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": """"}","<pre><yamldata>tel: ''
-email: rt.pcl@virgilio.it
-descrizione: 'Mettiamo a disposizione casa in campagna ad Alberobello (BA) con n. 6/8 posti letto'
-indirizzo: ''
-lat: ''
-lon: ''
-link: ''
-immagine: ''
-data: 18/01/2017
-</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1639,201646939,2017-01-18 19:07:43,2017-01-18 17:55:01,offresi casa in campagna per 6-8 persone ad Alberobello (Ba),,,"[""Accettato"", ""Alloggi"", ""Bollettino"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""18/01/2017"", ""descrizione"": ""Mettiamo a disposizione casa in campagna ad Alberobello (BA) con n. 6/8 posti letto"", ""email"": ""rt.pcl@virgilio.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": """"}","<pre><yamldata>tel: ''
 email: rt.pcl@virgilio.it
 descrizione: 'Mettiamo a disposizione casa in campagna ad Alberobello (BA) con n. 6/8 posti letto'
