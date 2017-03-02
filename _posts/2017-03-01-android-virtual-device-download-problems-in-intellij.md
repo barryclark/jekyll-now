@@ -10,7 +10,7 @@ I've been wanting to play around making Android apps for awhile now. Though diff
 > Failed to read or create install properties file.
 
 ![This is the window where the error appeared.](/images/android-error.jpg)
-*This is the window where the error appeared. I failed to screen the actual error, however.*
+*This is the window where the error appeared. I failed to screenshot the actual error, however.*
 
 Apparently, I had an old install of Android Studio and the Android SDK on my computer. It was probably overkill, but I uninstalled Android Studio and deleted every Android folder I could find (there was one in C:\Program Files, one in C:\Program Files (x86), and one in C:\Users\me\AppData\Local), then reinstalled Android Studio.
 

@@ -33,7 +33,7 @@ header {
 .posts, .navbar {
 	display: inline-block;
 	vertical-align: top;
-	
+
 	@include mobile {
 		display: block;
 		width: 100%;
@@ -45,14 +45,14 @@ nav {
     margin-top: 23px; // @TODO: Vertically middle align
     font-family: $helveticaNeue;
     font-size: 18px;
-    
+
     @include mobile {
         float: none;
         margin-top: 9px;
         display: block;
         font-size: 16px;
     }
-    
+
     a {
         margin-left: 10px;
         margin-right: 10px;
@@ -60,7 +60,7 @@ nav {
         text-align: center;
         font-weight: 300;
         letter-spacing: 1px;
-	    
+
         @include mobile {
             margin: 0 10px;
             color: $blue;
@@ -85,14 +85,17 @@ figure img {
 figcaption {
     text-align: center;
     font-size: 80%;
-    
+
     a {
         color: #333;
     }
 }
 
 img + em {
-    font-size: 0.7em;	
+    font-size: 0.7em;
+	text-align: center;
+	display: block;
+	margin-top: 1em;
 }
 
 .fourOhFour {
@@ -141,8 +144,8 @@ table {
 	border: 1px solid #000000;
 }
 
-table tr:nth-child(odd) { 
-	background-color: #e5e5e5; 
+table tr:nth-child(odd) {
+	background-color: #e5e5e5;
 }
 
 table tr:nth-child(even) {
@@ -179,7 +182,7 @@ table tr th {
 
 h2.post-header {
 	font-size: 30px;
- 
+
  	a {
     		color: inherit;
   	}
@@ -187,7 +190,7 @@ h2.post-header {
 
 .post-header {
 	@include mobile {
-		text-align: center;	
+		text-align: center;
 	}
 }
 
@@ -196,7 +199,7 @@ h2.post-header {
 	font-size: 0.8em;
 	float: none;
 	margin: 0px;
-	
+
 	a, strong {
 	        margin-left: 7px;
 	        margin-right: 7px;
@@ -205,13 +208,13 @@ h2.post-header {
 
 .social_post {
 	margin-right: 9px;
-	top: 9px; 
+	top: 9px;
 	position: relative;
 	display: initial;
 }
 
 .facebook-post {
-	text-align: center;	
+	text-align: center;
 }
 
 .two-column {
@@ -249,7 +252,7 @@ canvas {
 
 .float-right {
 	float: right;
-	
+
 	@include mobile {
 		float: none;
 	}
@@ -257,7 +260,7 @@ canvas {
 
 .float-left {
 	float: left;
-	
+
 	@include mobile {
 		float: none;
 	}
@@ -266,7 +269,7 @@ canvas {
 .eighty-width {
 	width: 80%;
 	width: calc(100% - 140px);
-	
+
 	@include mobile {
 		width: 100%;
 	}
@@ -295,7 +298,7 @@ canvas {
 
 .inline-div {
 	display: inline-block;
-  
+
 	@include mobile {
 		display: block;
 	}
