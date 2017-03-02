@@ -10,7 +10,7 @@ header-img: "images/bg-post.jpg"
 ---
 
 
-Docker-Machine has helped us a lot with automaed provisioning of infrastructure in the cloud and automated Docker Engine installation.
+Docker-Machine has helped us a lot with automated provisioning of infrastructure in the cloud and automated Docker Engine installation.
 Naturally, we had grown to rely on it and to take it for granted.
 
 So when it starts failing out of the blue....it's bad.
