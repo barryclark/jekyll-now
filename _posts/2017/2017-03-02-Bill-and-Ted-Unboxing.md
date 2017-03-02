@@ -9,6 +9,7 @@ tags:
 - steve jackson games
 layout: post
 description: Be excellent to each other in Steve Jackon's Bill & Ted's Excellent Board Game. Let's see what's inside!
+amazonterm: steve jackson games
 featured: billandted.jpg
 author: robk
 ---
