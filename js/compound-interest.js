@@ -28,14 +28,14 @@ $(document).ready(function() {
   
   for(var p = 1; p <= period * years; p++) {
     balance.push(previous);
-    interest.push(previous * rate / period);
+    interest.push(Math.round(100 * previous * rate / period) / 100);
     deposits.push(invest);
     if(p % period == 0) {
       time.push((p / period).toString());
     } else {
       time.push(' ');    
     }
-    previous = previous + previous * rate / period + invest;
+    previous = Math.round(100 * (previous + previous * rate / period + invest)) / 100;
   }
   
   c3.generate({
