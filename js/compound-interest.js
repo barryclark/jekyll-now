@@ -33,13 +33,15 @@ $(document).ready(function() {
   
   c3.generate({
     bindto: '#interest-chart',
+    x : 'time',
     data: {
         columns: [time, balance, interest, deposits],
         type: 'bar',
     	groups: [['balance', 'interest', 'deposit']]
     },
     axis: {
-    	x: {label: {text: 'time', position: 'outer-center'}},
+    	x: {type: 'category',
+	    label: {text: 'time', position: 'outer-center'}},
     	y: {label: {text: 'money', position: 'outer-middle'}}
     }
   });
