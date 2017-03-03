@@ -18,36 +18,26 @@ $(document).ready(function() {
   var balance = ['balance', start];
   var interest = ['interest', 0];
   var deposits = ['deposit', 0];
-  var time = ['time','0'];
   
   var previous = start;
   
   for(var p = 0; p <= period * years; p++) {
     balance.push(previous);
     interest.push(previous * rate / period);
-    deposits.push(invest);
-	  
-    if(p % period == 0) {
-       time.push((p / period).toString());
-    } else {
-       time.push('');
-    }
-    
+    deposits.push(invest);    
     previous = previous + previous * rate / period + invest;
   }
   
   c3.generate({
     bindto: '#interest-chart',
-    x : 'time',
     data: {
-        columns: [time, balance, interest, deposits],
+        columns: [balance, interest, deposits],
         type: 'bar',
     	groups: [['balance', 'interest', 'deposit']],
 	order: null
     },
     axis: {
-    	x: {type: 'category',
-	    label: {text: 'time', position: 'outer-center'}},
+    	x: {label: {text: 'time', position: 'outer-center'}},
     	y: {label: {text: 'money', position: 'outer-middle'}}
     }
   });
