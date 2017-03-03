@@ -19,6 +19,7 @@ For fun, I created this [compound interest](https://en.wikipedia.org/wiki/Compou
 
 [Check out the source here.](https://github.com/hendrixjoseph/hendrixjoseph.github.io/blob/master/js/compound-interest.js)
 
+<div id="final-amount"></div>
 <div id="interest-chart" style="width: 100%; height: 300px;"></div>
 
 <style>
