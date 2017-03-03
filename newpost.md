@@ -13,7 +13,13 @@ permalink: /newpost/
 <div id="interest-chart" style="width: 100%; height: 300px;"></div>
 
 <style>
-.calc-label, .calc-label + input { width: 200px; }
+.calc-label {
+  display: inline-block;
+  width: 175px;
+}
+.calc-label + input {
+  width: 100px 
+}
 </style>
 
 <form>
