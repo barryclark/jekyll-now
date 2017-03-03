@@ -18,11 +18,11 @@ $(document).ready(function() {
   var balance = ['balance', start];
   var interest = ['interest', 0];
   var deposits = ['deposit', 0];
-  var time = ['0'];
+  var time = ['start'];
   
   var previous = start;
   
-  for(var p = 1; p < period * years; p++) {
+  for(var p = 1; p <= period * years; p++) {
     balance.push(previous);
     interest.push(previous * rate / period);
     deposits.push(invest);
