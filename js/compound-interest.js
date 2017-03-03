@@ -18,13 +18,15 @@ $(document).ready(function() {
   var balance = ['balance', start];
   var interest = ['interest', 0];
   var deposits = ['deposit', 0];
+  var time = ['0'];
   
   var previous = start;
   
   for(var p = 0; p <= period * years; p++) {
     balance.push(previous);
     interest.push(previous * rate / period);
-    deposits.push(invest);    
+    deposits.push(invest);
+    time.push(p.toString());
     previous = previous + previous * rate / period + invest;
   }
   
@@ -37,7 +39,8 @@ $(document).ready(function() {
 	order: null
     },
     axis: {
-    	x: {label: {text: 'time', position: 'outer-center'}},
+    	x: {categories: time,
+		label: {text: 'time', position: 'outer-center'}},
     	y: {label: {text: 'money', position: 'outer-middle'}}
     }
   });
