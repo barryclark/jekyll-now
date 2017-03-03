@@ -26,7 +26,7 @@ $(document).ready(function() {
     balance.push(previous);
     interest.push(previous * rate / period);
     deposits.push(invest);
-    time.push(p.toString());
+    time.push((p / period).toString());
     previous = previous + previous * rate / period + invest;
   }
   
