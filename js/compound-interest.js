@@ -17,7 +17,7 @@ $(document).ready(function() {
   
   var balance = ['balance', start];
   var interest = ['interest', 0];
-  var deposits = ['deposit', invest];
+  var deposits = ['deposit', 0];
   
   var previous = start;
   
@@ -35,6 +35,10 @@ $(document).ready(function() {
         columns: [balance, interest, deposits],
         type: 'bar',
     	groups: [['balance', 'interest', 'deposit']]
+    },
+    axis: {
+    	x: {label: {text: 'time', position: 'outer-center'}},
+    	y: {label: {text: 'money', position: 'outer-middle'}}
     }
   });
 });
