@@ -17,11 +17,11 @@ $(document).ready(function() {
   
   var balance = ['balance', start];
   var interest = ['interest', 0];
-  var deposits = ['deposits', invest];
+  var deposits = ['deposit', invest];
   
   var previous = start;
   
-  for(var year = 0; year <= years; year++) {
+  for(var p = 0; p <= period * years; p++) {
     balance.push(previous);
     interest.push(previous * rate / period);
     deposits.push(invest);
@@ -33,7 +33,8 @@ $(document).ready(function() {
     bindto: '#interest-chart',
     data: {
         columns: [balance, interest, deposits],
-        type: 'bar'
+        type: 'bar',
+    	groups: [['balance', 'interest', 'deposit']]
     }
   });
 });
