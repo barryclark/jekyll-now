@@ -29,7 +29,7 @@ Such beautiful dice **made of metal**! I immediately wrote them asking if they'd
 [SkullSplitter Warlock Tome with Smoke and Fire Metal Dice Tin](/images/skullsplitter/box.jpg)
 [SkullSplitter Warlock Tome with Smoke and Fire Metal Dice Tin Back](/images/skullsplitter/back.jpg)
 [SkullSplitter Warlock Tome with Smoke and Fire Metal Dice Tin Inside](/images/skullsplitter/open.jpg)
-d[SkullSplitter Warlock Tome with Smoke and Fire Metal Dice](/images/skullsplitter/ice.jpg)
+[SkullSplitter Warlock Tome with Smoke and Fire Metal Dice](/images/skullsplitter/dice.jpg)
 
 *Let us hope that I don’t decide to hoard them for myself. Ha, I jest, human! I will send them on to you, as you have been given my word. I can only imagine your anticipation.*
 
