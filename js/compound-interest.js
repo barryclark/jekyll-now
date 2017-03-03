@@ -27,7 +27,7 @@ $(document).ready(function() {
     interest.push(previous * rate / period);
     deposits.push(invest);
 	  
-    if(p % period = 0) {
+    if(p % period == 0) {
        time.push((p / period).toString());
     } else {
        time.push('');
