@@ -28,10 +28,10 @@ I uploaded my source code in [Github](https://github.com/poqw/portfolio).
 In the project, I used web hosting service by [pythonanywhere](pythonanywhere.com). 
 If you create an account and launch a site as first on that site, you can get free web hosting service for 5 months.
 And also, [pythonanywhere](pythonanywhere.com) provides web console. The console can save its status when you leave the site.
-This my first use of web hosting service too, but I think this hosting service is good for beginners like me.
+This is my first use of web hosting service too, but I think this hosting service is good for beginners like me.
 
 In my Web site, you can see the timeline table about projects I've done. And the table was created by [TimelineJS](https://timeline.knightlab.com/). I think it is very confortable of using and applying it.
-With my fisrt project with django, this is a graet experiance of me.
+With my fisrt project in django, this is a great experiance of me.
 
 ## Result
 
