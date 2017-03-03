@@ -26,7 +26,12 @@ $(document).ready(function() {
     balance.push(previous);
     interest.push(previous * rate / period);
     deposits.push(invest);
-    time.push((p / period).toString());
+	  
+    if(p % period = 0) {
+       time.push((p / period).toString());
+    } else {
+       time.push('');
+    }
     
     previous = previous + previous * rate / period + invest;
   }
@@ -37,7 +42,8 @@ $(document).ready(function() {
     data: {
         columns: [time, balance, interest, deposits],
         type: 'bar',
-    	groups: [['balance', 'interest', 'deposit']]
+    	groups: [['balance', 'interest', 'deposit']],
+	order: null
     },
     axis: {
     	x: {type: 'category',
