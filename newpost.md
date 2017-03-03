@@ -11,3 +11,12 @@ permalink: /newpost/
 ---
 
 <div id="interest-chart" style="width: 100%; height: 300px;"></div>
+
+<form>
+<input type="number" name="start" step="0.01" value="100" min="0" required>
+<input type="number" name="rate" value="1" min="0" max="100" required>
+<input type="number" name="period" value="12" min="0" max="365" required>
+<input type="number" name="invest" step="0.01" value="10" min="0" required>
+<input type="number" name="years" step="1" value="2" min="1" max="50" required>
+<input type="submit">
+</form>
