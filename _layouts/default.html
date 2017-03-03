@@ -58,9 +58,9 @@
 		{% if mathjax %}<script type="text/x-mathjax-config">
 	    	MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
 	  	</script>
-	  	<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>{% endif %}
+	  	<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>{% endif %}
 
-		{% if jquery %}<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>{% endif %}
+		{% if jquery %}<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>{% endif %}
 		{% for javascript in javascripts %}{% unless javascript == blank %}<script async src="{{ javascript }}"></script>{% endunless %}{% endfor %}
 		{% for javascript in deferedjavascripts %}{% unless javascript == blank %}<script defer src="{{ javascript }}"></script>{% endunless %}{% endfor %}
 		
