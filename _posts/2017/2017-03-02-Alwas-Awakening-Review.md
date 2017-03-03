@@ -1,5 +1,5 @@
 ---
-title: 'Review - Alwa's Awakening
+title: 'Review - Alwa's Awakening'
 date: 2017-03-02 20:15:00 Z
 category: review
 tags:
