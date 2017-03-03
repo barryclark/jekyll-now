@@ -28,5 +28,5 @@ permalink: /newpost/
 <div><span class="calc-label">Period (times a year)</span><input type="number" name="period" value="12" min="0" max="365" required></div>
 <div><span class="calc-label">Periodic deposits</span><input type="number" name="invest" step="0.01" value="10" min="0" required></div>
 <div><span class="calc-label">Years</span><input type="number" name="years" step="1" value="2" min="1" max="50" required></div>
-<div><span class="calc-label" /><input type="submit"></div>
+<div><span class="calc-label"></span><input type="submit"></div>
 </form>
