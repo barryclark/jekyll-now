@@ -19,10 +19,13 @@ For fun, I created this [compound interest](https://en.wikipedia.org/wiki/Compou
 
 [Check out the source here.](https://github.com/hendrixjoseph/hendrixjoseph.github.io/blob/master/js/compound-interest.js)
 
-<div id="final-amount"></div>
+<h2 id="final-amount"></h2>
 <div id="interest-chart" style="width: 100%; height: 300px;"></div>
 
 <style>
+#final-amount {
+  text-align: center;
+}
 form {
   margin: 0 auto;
   width: 275px;
@@ -34,7 +37,6 @@ form span {
 form input {
   width: 100px 
 }
-
 </style>
 
 <form>
