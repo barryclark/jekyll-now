@@ -22,7 +22,7 @@ $(document).ready(function() {
   
   var previous = start;
   
-  for(var p = 1; p <= period * years; p++) {
+  for(var p = 1; p < period * years; p++) {
     balance.push(previous);
     interest.push(previous * rate / period);
     deposits.push(invest);
@@ -39,7 +39,7 @@ $(document).ready(function() {
 	order: null
     },
     axis: {
-    	x: {categories: time,
+    	x: {type: 'category', categories: time,
 		label: {text: 'time', position: 'outer-center'}},
     	y: {label: {text: 'money', position: 'outer-middle'}}
     }
