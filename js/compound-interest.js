@@ -8,11 +8,11 @@ $(document).ready(function() {
 	if(hasKey('start') && hasKey('rate') && hasKey('period') && hasKey('invest')) {
 		
 	} else {
-		start = 10000;
+		start = 100;
     rate = 0.01;
     period = 12;
-    invest = 100;
-    years = 10;
+    invest = 10;
+    years = 2;
 	}
   
   var balance = ['balance', start];
