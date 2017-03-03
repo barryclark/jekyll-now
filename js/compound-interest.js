@@ -22,7 +22,7 @@ $(document).ready(function() {
   
   var previous = start;
   
-  for(var p = 0; p <= period * years; p++) {
+  for(var p = 1; p <= period * years; p++) {
     balance.push(previous);
     interest.push(previous * rate / period);
     deposits.push(invest);
