@@ -10,7 +10,7 @@ tags:
 - moop's monster mashup
 layout: post
 description: More Munchkin is never a bad thing as far as my kids are concerned. Moop's Monster Mashup give them just that, in a zany way.
-featured: moop.png
+featured: moop.jpg
 author: robk
 ---
 
