@@ -37,6 +37,8 @@ $(document).ready(function() {
     }
     previous = Math.round(100 * (previous + previous * rate / period + invest)) / 100;
   }
+	
+  $("#final-amount").text("Start: " + start + " End: " + previous);
   
   c3.generate({
     bindto: '#interest-chart',
