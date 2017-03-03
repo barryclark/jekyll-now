@@ -11,9 +11,11 @@ image: /images/covers/2017-03-03-compound-interest-calculator-and-chart.png
 
 For fun, I created this [compound interest](https://en.wikipedia.org/wiki/Compound_interest) calculator with a chart. Just enter your values in the form below the chart, hit submit, and it will display your results.
 
-Caveats:
+**Caveats:**
 * Rounds to the nearest penny using [Math.round(num * 100) / 100](http://stackoverflow.com/a/11832950/6323312)
 * Period is a number from 1 (yearly) to 365 (daily). Use 12 for monthly, 52 for weekly.
+
+**Quick story:** I used to think that if you had a savings account at 10%, you got 10% interest everytime it was calculated. Therefore it made sense to me that interest compounded daily would make 365 times that calculated once a year. As it turns out, interest compounded daily would get 1/365th the annual interest daily, and monthly would get 1/12th the annual interest monthly.
 
 [Check out the source here.](https://github.com/hendrixjoseph/hendrixjoseph.github.io/blob/master/js/compound-interest.js)
 
