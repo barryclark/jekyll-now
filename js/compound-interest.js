@@ -5,15 +5,19 @@ $(document).ready(function() {
   var invest;
   var years;
 
-	if(hasKey('start') && hasKey('rate') && hasKey('period') && hasKey('invest')) {
-		
-	} else {
-		start = 100;
+  if(hasKey('start') && hasKey('rate') && hasKey('period') && hasKey('invest') && hasKey('years')) {
+    start = parseFloat(getValueOfFirstKey('start'));
+    rate = parseFloat(getValueOfFirstKey('rate')) / 100;
+    period = parseFloat(getValueOfFirstKey('period'));
+    invest = parseFloat(getValueOfFirstKey('invest'));
+    years = parseInt(getValueOfFirstKey('years'));
+  } else {
+    start = 100;
     rate = 0.01;
     period = 12;
     invest = 10;
     years = 2;
-	}
+  }
   
   var balance = ['balance', start];
   var interest = ['interest', 0];
@@ -44,7 +48,7 @@ $(document).ready(function() {
     },
     axis: {
     	x: {type: 'category', categories: time,
-		label: {text: 'time', position: 'outer-center'}},
+	    label: {text: 'year', position: 'outer-center'}},
     	y: {label: {text: 'money', position: 'outer-middle'}}
     }
   });
