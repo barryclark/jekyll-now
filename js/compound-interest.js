@@ -18,6 +18,7 @@ $(document).ready(function() {
   var balance = ['balance', start];
   var interest = ['interest', 0];
   var deposits = ['deposit', 0];
+  var time = ['time','0'];
   
   var previous = start;
   
@@ -25,6 +26,7 @@ $(document).ready(function() {
     balance.push(previous);
     interest.push(previous * rate / period);
     deposits.push(invest);
+    time.push((p / period).toString());
     
     previous = previous + previous * rate / period + invest;
   }
@@ -32,7 +34,7 @@ $(document).ready(function() {
   c3.generate({
     bindto: '#interest-chart',
     data: {
-        columns: [balance, interest, deposits],
+        columns: [time, balance, interest, deposits],
         type: 'bar',
     	groups: [['balance', 'interest', 'deposit']]
     },
