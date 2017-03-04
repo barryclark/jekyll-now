@@ -447,10 +447,21 @@ footer {
   }
 }
 
-//Ad Stuff
+//Game Box
 
-.amzn-native-search-bar {
-  display: none;
+#gameinfocontainer {
+
+  #gameimage {
+    padding-left:10px;
+    padding-right:20px;
+    margin-right:20px;
+    float: left;
+    border-right: 1px solid grey;
+  }
+  
+  #gameinfo {
+    float:left;
+  }
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
