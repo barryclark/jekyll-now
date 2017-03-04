@@ -24,8 +24,6 @@ author: robk
 
 **BGG:** [OGRE](https://boardgamegeek.com/boardgame/5206/ogre)
 
----
-
 <h2>Prelude</h2>
 
 The last time I played OGRE was *years* ago on a paper board with thin, cardboard counters. I drooled over the [Designer's Edition](http://www.sjgames.com/ogre/products/ogredesigner/img/ogre_rulebook.pdf) when it came out, but there was no way I could afford it, or find a place to store it! I did end up eventually buying the [Pocket Edition](http://www.sjgames.com/ogre/products/pocketogre/), a faithful reproduction of the original, a few years back but it ended up getting lost somewhere on my shelves.
