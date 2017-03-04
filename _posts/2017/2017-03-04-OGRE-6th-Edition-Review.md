@@ -14,7 +14,6 @@ author: robk
 ---
 
 ![OGRE](/images/ogre/cover.png){: .float-right}
-<h2>OGRE 6th Edition</h2>
 **Designer:** Steve Jackson\\
 **Publisher:** [Steve Jackson Games](http://www.sjgames.com/ogre/products/ogre6e)\\
 **Year:** 2017\\
@@ -24,6 +23,8 @@ author: robk
 **Ages:** 10+
 
 **BGG:** [OGRE](https://boardgamegeek.com/boardgame/5206/ogre)
+
+---
 
 <h2>Prelude</h2>
 
