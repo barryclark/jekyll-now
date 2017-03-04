@@ -447,23 +447,6 @@ footer {
   }
 }
 
-//Game Box
-
-#gameinfocontainer {
-
-  #gameimage {
-    padding-left:10px;
-    padding-right:20px;
-    margin-right:20px;
-    float: left;
-    border-right: 1px solid grey;
-  }
-  
-  #gameinfo {
-    float:left;
-  }
-}
-
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "_highlights";

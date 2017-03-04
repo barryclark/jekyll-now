@@ -9,7 +9,7 @@ tags:
 - steve jackson games
 layout: post
 description: A classic in a modern, more easily managed, size. OGRE 6th will bring you back.
-featured: ogre6th.jpg
+featured: ogre6th.png
 author: robk
 ---
 
