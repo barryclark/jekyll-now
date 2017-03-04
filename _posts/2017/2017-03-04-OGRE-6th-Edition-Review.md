@@ -13,23 +13,17 @@ featured: ogre6th.jpg
 author: robk
 ---
 
-<div id="gameinfocontainer">
-  <div id="gameimage">
-    ![OGRE](/images/ogre/cover.png)
-  </div>
-  <div id="gameinfo">
-    <h2>OGRE 6th Edition</h2>
-    **Designer:** Steve Jackson\\
-    **Publisher:** [Steve Jackson Games](http://www.sjgames.com/ogre/products/ogre6e)\\
-    **Year:** 2017\\
-    **MSRP:** [$49.95](http://amzn.to/2mYwj2m)\\
-    **Players:** 1-3\\
-    **Play Time:** 45 min\\
-    **Ages:** 10+
+![OGRE](/images/ogre/cover.png){: .float-right}
+<h2>OGRE 6th Edition</h2>
+**Designer:** Steve Jackson\\
+**Publisher:** [Steve Jackson Games](http://www.sjgames.com/ogre/products/ogre6e)\\
+**Year:** 2017\\
+**MSRP:** [$49.95](http://amzn.to/2mYwj2m)\\
+**Players:** 1-3\\
+**Play Time:** 45 min\\
+**Ages:** 10+
 
-    **BGG:** [OGRE](https://boardgamegeek.com/boardgame/5206/ogre)
-  </div>
-</div>
+**BGG:** [OGRE](https://boardgamegeek.com/boardgame/5206/ogre)
 
 <h2>Prelude</h2>
 
@@ -55,7 +49,7 @@ Where OGRE 6th really shines is the OGREs, themselves. These are 3D cardboard mo
 
 Normally I don't talk much about the boxes games come in, but OGRE's box is a lesson in utility. It contains compartments for the fully assembled OGREs, as well as extra compartments for dice, terrain, units, and expansion material. The board fits in snugly over this to keep everything in its place without spilling out when you turn the box sideways. Thanks, SJG!
 
-![3D Pieces](images/ogre/3d.jpg)
+![3D Pieces](/images/ogre/3d.jpg)
 *Such wonderful cardboard of death*{: .center}
 
 <h2>Perspective</h2>
