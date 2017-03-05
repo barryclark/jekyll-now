@@ -13,7 +13,7 @@ hipchatにない返信ボタンをつくったり、quoteコマンドを1ボタ�
 
 # モノ
 
-https://github.com/taross-f/HipchatButtons
+[https://github.com/taross-f/HipchatButtons](https://github.com/taross-f/HipchatButtons)
 
 # ソース
 
