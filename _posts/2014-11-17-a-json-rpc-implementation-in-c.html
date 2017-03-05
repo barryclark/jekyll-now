@@ -1,0 +1,26 @@
+---
+layout: post
+title: A json-rpc implementation in C++
+date: 2014-11-17 13:15:41.000000000 -08:00
+type: post
+published: true
+status: publish
+categories:
+- Programming
+tags: []
+meta:
+  _publicize_pending: '1'
+  _edit_last: '53481042'
+  geo_public: '0'
+author:
+  login: allenbo
+  email: linjianfengqrh@gmail.com
+  display_name: allenbo
+  first_name: ''
+  last_name: ''
+---
+<p>Recently I developed an rpc library in C++ based on json formatted communication. The code is on <a href="https://github.com/allenbo/json-rpc">github</a>.</p>
+<p>This implementation is just another toy project I did due to boring engineer life at bay area and it doesn't guarantee any stability for your significant and serious work. But if you happen to be interested in rpc protocol and wonder how it works, you may want to check it out and play with it.</p>
+<p>My json-rpc will need you to write an spec file, in json format, to generate a stub file, which needs you to fill up the functions, or shall we call it services, and then compile to binary. You need to specify the name of your service, the serializable classes and the services. After you finish the spec file, you could use that little program under bin/ to generate the stub file. You can find more details on github.</p>
+<p>Then the only thing you need to do is fill up those functions you want the server to support. Please notice the rpc implementation itself doesn't protect your functions in multiply threaded mode. If there is some critical area you need to protect, you have to do that on your own in generated service class.</p>
+<p>Anyway, have fun with json-rpc.</p>

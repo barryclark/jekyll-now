@@ -1,0 +1,167 @@
+---
+layout: post
+title: 'DistNet introducation: A powerful and scalable CNN'
+date: 2014-02-21 17:24:50.000000000 -08:00
+type: post
+published: true
+status: publish
+categories:
+- Programming
+tags: []
+meta:
+  _edit_last: '53481042'
+  _publicize_pending: '1'
+author:
+  login: allenbo
+  email: linjianfengqrh@gmail.com
+  display_name: allenbo
+  first_name: ''
+  last_name: ''
+---
+<h2><strong><span style="line-height:1.5em;">Introduction</span></strong></h2>
+<p dir="ltr">The project, Yury and me were being doing for last semester is a distributed convolutional neural network (DCNN).</p>
+<p dir="ltr">We always use a regular convolutional neural network to detect objects in images, since the convolutional layers in the network would reserve the local features of the image and the detection of images are heavily relied on the those features. I will use a paragraph to explain the way that the convolutional layers work and bring the context to this.</p>
+<p dir="ltr">A convolutional layer, not like a fully connected layer, is locally connected to the input. For fully connected layer, the computation model would be like this:</p>
+<p dir="ltr"><img alt="" src="{{ site.baseurl }}/assets/5xL_IBdBzIsnXcPF-TZySRo-hzr2S2pLx6Oal2WcqTOKL1nCXDI7b9JdmqHFR8eqzEXxyhS1VfaIefXEjWMSh4eao6hiCrfmof1s9FYYNnKvxsADKp3IDReBqw" width="254px;" height="227px;" /></p>
+<p dir="ltr">We can see the the input are fully connected to the hidden layer, and each value of input will activate the neuron of hidden layer and affect the output of the hidden layer, which is specifically the input of the output layer. However the convolutional layer, doing convolution operation while being activated, use another computation model like this:</p>
+<p dir="ltr"><img alt="" src="{{ site.baseurl }}/assets/nPaP1NNgZ33Rza5TC2Woik4FQQ2lWEb0yhXgdA05eyPguLNYUj8YVEe12GTDutbwbwF8uPFj38R50RKfyW3SOwue6WiG2QHvItVOb5BrdzJmlc73kzGgZPXR_w" width="300px;" height="150px;" /></p>
+<p dir="ltr">Only part of the input will activate the neuron of the convolutional layer, and the computation operation is simply a sum of the output of activating patch.<!--more--></p>
+<p dir="ltr">So people, who are doing the image recognition, are truly using the convolutional neural network and trying to improve the accuracy of the model. However, there are some practical limitation of the research that most people are doing. The bigger the model is, theoretically, the better the result will be. Along with the growth of the model, we need more time and GPU memory to train the model. At some case, however, model is too big to fit on single GPU memory ( lot of GPUs now have 6GB memory space). Since the input and output and gradient for each layer is getting too large when the model is becoming bigger and bigger, we need some distributed convolutional neural network to, not only reduce the size of memory requirement on each GPU, but accelerate the training procedure. And that is what we are doing for the final project.</p>
+<h2><strong>Prerequirement</strong></h2>
+<p dir="ltr"><strong>[Cuda]</strong>: NVIDIA GPU programming toolkits</p>
+<p dir="ltr"><strong>[PyCuda]</strong>: a python interface for cuda programming</p>
+<p dir="ltr"><strong>[NumPy]</strong>: a python numeric computation library</p>
+<p dir="ltr"><strong>[CudaConv]</strong>: a very efficient implementation of convolution operation on GPU</p>
+<p dir="ltr"><strong>[OpenMPI]</strong>: a message passing library that follow MPI standard</p>
+<p dir="ltr">The cuda API is provided by NVIDIA, giving us a c interface to program with GPU. pycuda is a python wrap of cuda, providing several predefined function to do the heavily used operations. However, pycuda doesn’t fulfill every requirement we need, so we have to do extend the pycuda library to support some critical operations. I will talk about that later. NumPy is a famous numeric python library, we hardly use it in the project. And CudaConv is an efficient implementation of convolution-based operations for GPU platform, developed by Alex Krizhevsky.</p>
+<p dir="ltr">Since we have a very good cuda kernel library, we don’t have to recreate the wheel and simple accommodate my modification and functionality we want the distributed model have with the original one.  Another trivial thing we have to do is extending PyCuda library for our use. PyCuda library is designed generally for every GPU-based task and is not quite comprehensive for this project. We use the class GPUArray out of PyCuda and extend a lot of operations and functionalities, like creating a brand-new GPUArray while copying noncontiguous memory.</p>
+<h2><strong>Implementation</strong></h2>
+<p dir="ltr">In order to develop a fast distributed network, there are two basic problems that we have to solve. One is developing a highly optimized GPU kernel for all major computational operations and thanks to Alex we had one already.  So the only problem left is developing a scheme to distribute the computations and managing the communication between multiple GPUs.</p>
+<p dir="ltr">Given Alex’s implementation, we are able to build a single GPU system to train neural networks and that’s one of the features of distnet. Even capable of working on multiple GPUs, distnet still can use one GPU to train a network if you currently don’t have more than one GPU.</p>
+<h3>How to distribute the model</h3>
+<p dir="ltr">The way we distribute the computation is aiming at reducing the communication overhead. There are several ways we can use to distribute the model. They are batch-based data parallelism, image-based data parallelism and model parallelism. Since we are using image-based data parallelism in the distnet, I will briefly reference the other two parallelism and the disadvantages of them.</p>
+<p dir="ltr"><em>Batch-based data parallelism</em></p>
+<p dir="ltr">This approach distributes the computation by reducing the batch size of single GPU. Due to heavy communication overhead, in order to get a acceptable speedup, we have to use stochastic SGD to train the model. Since the model doesn’t synchronize every batch, we can expect an equivalent model to the nonparalleled one.</p>
+<p dir="ltr"><em>Model parallelism</em></p>
+<p dir="ltr">This approach splits the filters across multiple GPUs in order to distribute the computation. That’s when the first convolution layer has 96 filters, it dispatches the first 48 filters at GPU 0 and another 48 filters at GPU 1, if we happen to have two. Since the input of second convolution layer, which is the output of the first convolution layer, has to be the complete copy of the 96 filters, we have to communicate across GPUs every layer. Again, the communication overhead is unacceptable.</p>
+<p dir="ltr"><em>Image-based data parallelism</em></p>
+<p dir="ltr">The way we are using in distnet is image-based data parallelism, which is cutting the image into squares and storing the portion locally on each GPU when dispatching the computation. Since the convolutional operation is computed locally, every GPU doesn’t have to acquire too much data from other GPU, which ensures a limited and acceptable communication overhead. The partition looks like this.</p>
+<p dir="ltr"><img alt="" src="{{ site.baseurl }}/assets/kwHpmkx4Y7Eu0dq0CldTKtspYCI20_c_vcmi3cB3g9q5pmG9jdcR4TiVUuOSe5C4Taf8fRZTL11i9c7L1z71M7TlxH8xYw4rR9kemV1gKuPY62KiD00dT4AGgg" width="339px;" height="243px;" /></p>
+<p dir="ltr">The figure shows the way we partition the image. Assume we have 4 GPUs, the image is partitioned into 4 pieces in square and stored on those GPUs. Each GPU is responsible for the computation of it’s partition and performs independently. But all together 4 GPUs will work on the same and complete minibatch.</p>
+<p dir="ltr">Since the input(image) is partitioned into 4 pieces, the output of this layer, basically convolutional layer, will be partitioned into 4 pieces, just like input. Things would be easy if GPUs don’t have to communicate with each other while computing, however, even though, most of the output need the input only stored locally, the boundary output would require data from other GPUs. As figure above shows, the red patch in The figure shows the way we partition the image. Assume we have 4 GPUs, the image is partitioned into 4 pieces in square and stored on those GPUs. Each GPU is responsible for the computation of it’s partition and performs independently. But all together 4 GPUs will work on the same and complete minibatch.</p>
+<p>Since the input(image) is partitioned into 4 pieces, the output of this layer, basically convolutional layer, will be partitioned into 4 pieces, just like input. Things would be easy if GPUs don’t have to communicate with each other while computing, however, even though most of the output need the input only stored locally, the boundary output would require data from other GPUs. As figure above shows, the red patch on the bigger cube (input) indicates the communication.</p>
+<p dir="ltr">Communication is nontrivial. The amount of data needed from different GPUs vary from GPUs and layers. In order to keep track of the entire arrangement of input (an instance of distributed array), we reserve some metadata in every dist-array on each GPUs. Since we build the communication on the top of MPI library, we will see the same instance in different processor represent the same input and output with different metadata. The metadata we use in dist-array is an object area. This object will claim the ownership of some area of the dist-array. And of course, the combination of all area objects of the same dist-array instance will be the entire area of the instance.</p>
+<p dir="ltr">Since we have the area metadata, we could use a hash table to map GPU to area of the dist-array and make it identical at each instance. When we read some region across server GPUs, we could easily know which GPUs we should go to and which part of data stored at corresponding GPU we should fetch.</p>
+<p dir="ltr">For example, we partition a 2d 10 x 10 array to 4 GPUs illustrated by the figure.</p>
+<p dir="ltr">After that, the metadata on each GPU would be ( inclusive)</p>
+<div dir="ltr">
+<table>
+<col width="*" />
+<col width="*" />
+<tbody>
+<tr>
+<td>
+<p dir="ltr">GPU_ID</p>
+</td>
+<td>
+<p dir="ltr">Area</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">0</p>
+</td>
+<td>
+<p dir="ltr">from(0, 0) to (4, 4)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">1</p>
+</td>
+<td>
+<p dir="ltr">from(0, 5) to (4, 9)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">2</p>
+</td>
+<td>
+<p dir="ltr">from(5, 0) to (9, 4)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">3</p>
+</td>
+<td>
+<p dir="ltr">from(5, 5) to (9, 9)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p dir="ltr">When we fetch a region from (0, 0) to (6, 6), we could easily iterate the key-value pair in this hashtable find out that we could get data in the area from(0, 0) to(4, 4) locally. Meanwhile we have to talk to GPU1 to get data in the area from (0, 5) to (4, 6). The requests would be (inclusive)</p>
+<div dir="ltr">
+<table>
+<col width="*" />
+<col width="*" />
+<tbody>
+<tr>
+<td>
+<p dir="ltr">GPU_ID</p>
+</td>
+<td>
+<p dir="ltr">Area</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">0</p>
+</td>
+<td>
+<p dir="ltr">from(0, 0) to (4,4) ( locally)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">1</p>
+</td>
+<td>
+<p dir="ltr">from(0, 5) to (4, 6)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">2</p>
+</td>
+<td>
+<p dir="ltr">from(5, 0) to (6, 4)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">3</p>
+</td>
+<td>
+<p dir="ltr">from(5, 5) to (6, 6)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p dir="ltr">Every time we perform a read operation we will have to communicate with other potential GPUs twice. One is to exchange the metadata and the other is to send and receive the real data.</p>
+<p dir="ltr">Now given a region we know how to fetch the complete data locally and remotely, we still have to figure out which region we want to read at each operation. Sometimes the width and height of the complete input are not even, we can’t divide evenly into squares.  There are some tricks in partitioning, however, the basic idea is push the extra point to the last tile of the squares. Based on this refinement, when we are trying to figure out the area of data for corresponding GPU, we not only calculate with parameters of input, but double check with parameters of output. That’s, after get a potential region with filter size, padding, stride, image size, we check if the output of this region is exactly the same one. If it not, we do some fine-tuning.</p>
+<p dir="ltr">Since there are overlappings in read operations, when we write back to that region, we have to reduce server pieces of data to the overlapping region. The is automatically dealt with by the dist-array instance.</p>
+<p dir="ltr">In order to provide a uniformed interface of array operations, we redefine the array interfaces in the original convolutional neural  network and accommodate the dist-array with the same interface.</p>
+<h3><strong>refinement</strong></h3>
+<p dir="ltr">In practice, we find some refinements extremely helpful to improve the overall performance.</p>
+<p dir="ltr"><em>Memory Cache</em></p>
+<p dir="ltr">The underlying library we use to send data is OpenMPI. MPI is a message passing standard that is well designed for sharing data across hosts. OpenMPI can satisfy most needs, however, it doesn’t support strided buffer when sending messages. The buffer we are trying to send out has to be contiguous and the buffer we prepare to receive the data has to be contiguous. When we are reading a region that covers all GPUs, the other GPUs have to copy the noncontiguous buffer that we need and activate MPI library to send out.  We have to prepare some buffers to receive those data and assemble them together to get a contiguous buffer as the input of the computation.</p>
+<p dir="ltr">This unexpected overhead takes way many time than we thought to copy data, create a new instance and write back to the dist-array. As we looked deep into this overhead, we found that as long as we know the shape of incoming buffers and outsending buffers at the first place, we can create other buffers as a cache inside the dist-array and never have to recreate them. After we improve the strided copy function, we save some time.</p>
+<p dir="ltr"><em>Shared Memory</em></p>
+<p dir="ltr">Although the cached memory helps, it’s tradeoff between memory space and runtime. We waste a bulk of memory space to do that. Those cached memory doesn't consume too many space when the model is not to big. However, with the model size growing up dramatically, we have to bring the unsettled problem into list.</p>
+<p dir="ltr">In order to remain high speed of data passing over GPUs, we have to use cache. This is the rule we have to follow. Fortunately those caches are redundant over the time. When first convolutional layer are passing data across GPUs, second layer doesn't have to hold the cache and are allow to free the memory. So we create a shared buffer to hold the shared memory and reduce the usage of GPU memory. It reduce 50% of memory in dist-array.</p>
+<h2><strong>Conclusion</strong></h2>
+<p dir="ltr">We test DistNet in several settings and are thrilled to claim that DistNet accelerate the training procedure by a magnitude with multiple GPUs. The model we are using is Alex’s model in the paper ImageNet Classiﬁcation with Deep Convolutional Neural Networks.</p>

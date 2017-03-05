@@ -1,0 +1,93 @@
+---
+layout: post
+title: Yield expression in C language
+date: 2014-02-14 04:25:31.000000000 -08:00
+type: post
+published: true
+status: publish
+categories:
+- Programming
+- Python
+tags: []
+meta:
+  _edit_last: '53481042'
+  _publicize_pending: '1'
+author:
+  login: allenbo
+  email: linjianfengqrh@gmail.com
+  display_name: allenbo
+  first_name: ''
+  last_name: ''
+---
+<p style="font-size:16px;font-family:Arial;line-height:2em;">Yield expression in Python language provides a powerful interface that can avoiding memory consuming list allocation and save amount of time when executing. That's an interesting feature that C language just doesn't have. Normally anyone who learned a little C language would like to have this neat and wonderful feature to be added to c language. I tried with some macros to imitate the syntax and cover the semantic. It looks like pretty similar to the original Python source code and does provide sort of Python yield semantics.</p>
+<p><!--more--></p>
+<p style="font-size:16px;font-family:Arial;line-height:2em;">This is a typical Python yield function. With this function, we could get a generator generating a list starting from 0 up to 9.</p>
+<p>[code language="python"]<br />
+def test(x):<br />
+  a = 0<br />
+  while a &lt; x:<br />
+    yield a<br />
+    a += 1</p>
+<p>y = test(10) # y is a generator<br />
+[/code]</p>
+<p style="font-size:16px;font-family:Arial;line-height:2em;">With a Python generator, we should be able to use every function that iterator supports.</p>
+<p style="font-size:16px;font-family:Arial;line-height:2em;">Here is some tricks. We want to preserve the internal state of the function after we exit and return off it. Sounds familiar? That's right, a global variable is capable of doing that. A static local variable is better. For the above code snippet, we have to make variable a as a static variable. Beside. we need to pin a pointer to the statement after the yield a, and that's where we will start after we reenter the function. Also, we want the C code to look as close to the Python one as possible. So this is the code that I tailored for this purpose.</p>
+<p>[code language="c"]<br />
+int test(int x) {<br />
+  static int a = 0;<br />
+  static int flag = 0;</p>
+<p>  switch (flag) {<br />
+    case 0:<br />
+      while ( a &lt; x ) {<br />
+        flag = 1;<br />
+        return a;<br />
+    case 1:<br />
+        flag = 0;<br />
+        a += 1;<br />
+      }<br />
+  }<br />
+}<br />
+[/code]</p>
+<p style="font-size:16px;font-family:Arial;line-height:2em;">Well, for now, it doesn't look close. But I abstracted some necessary but distracted codes to user-defined syntax and made some macros to separate the codes.</p>
+<p>[code language="c"]<br />
+#define BEGIN_YIELD static int flag = 0; \<br />
+                    switch (flag) { \<br />
+                       case 0:</p>
+<p>#define YIELD(x) flag = 1; \<br />
+                 return (x); \<br />
+              case 1: \<br />
+                 flag = 0;</p>
+<p>#define END_YIELD } \<br />
+              return -1;<br />
+[/code]</p>
+<p style="font-size:16px;font-family:Arial;line-height:2em;">Now, if we merge everything together and that's how the final version looks like.</p>
+<p>[code language="c"]<br />
+int test(int x) {<br />
+  static int a = 0;<br />
+  BEGIN_YIELD<br />
+  while ( a &lt; x) {<br />
+    YIELD(a)<br />
+    a += 1;<br />
+  }<br />
+  END_YIELD<br />
+}<br />
+[/code]</p>
+<p style="font-size:16px;font-family:Arial;line-height:2em;">You can see, comparing the corresponding Python code snippet, the only syntax overhead is I add a BEGIN_YIELD after the variable definition and an END_YIELD before the end of the function. The other lines of codes , are same syntax in two different languages. This test function will mimic the behavior of yield function and generate a list of integers.</p>
+<p>[code language="c"]<br />
+int main() {<br />
+  printf(&quot;%d&quot;, test(10));<br />
+  printf(&quot;%d&quot;, test(10));<br />
+  printf(&quot;%d&quot;, test(10));<br />
+  printf(&quot;%d&quot;, test(10));<br />
+}<br />
+[/code]</p>
+<p style="font-size:16px;font-family:Arial;line-height:2em;">You will see a "0123" as output.</p>
+<p style="font-size:16px;font-family:Arial;line-height:2em;">Even though the code snippet I wrote above could "act" like a yield expression, they are actually worlds apart. In Python code, we could do something like this.</p>
+<p>[code language="python"]<br />
+y = test(10)<br />
+z = test(2)<br />
+print y.next() # print out 0<br />
+print z.next() # print out 0<br />
+[/code]</p>
+<p style="font-size:16px;font-family:Arial;line-height:2em;">However the C code can not. The reason why they are different is in Python test function, variable a is not a global one so it belongs to the runtime stack. In C code, a is a variable that attached to this function, not stack. There is no way C language would create another stack with a different value a. Python, on the other hand, powered by a user-defined frame management, could preserve, technically every frame after it finishes the function invocation.</p>
+<p style="font-size:16px;font-family:Arial;line-height:2em;">I should post another blog, explaining how Python manage the runtime frames, cause it's really a long story.</p>

@@ -1,0 +1,40 @@
+---
+layout: post
+title: One way to imitate glog stream style logging
+date: 2014-11-17 20:58:00.000000000 -08:00
+type: post
+published: true
+status: publish
+categories:
+- C++
+- Programming
+tags: []
+meta:
+  _edit_last: '53481042'
+  geo_public: '0'
+  _publicize_pending: '1'
+author:
+  login: allenbo
+  email: linjianfengqrh@gmail.com
+  display_name: allenbo
+  first_name: ''
+  last_name: ''
+---
+<p>Google is big fan of open source community and constantly produces tons of fantastic tools to the community. I always wonder how those tools work to maintain such an elaborate and also elegant user interface. One little tool that I constantly come across is glog. And Today I dove a little deeper into the source code to figure out the design of this logging service. Glog is , however, a big thorough logging service and support versatile functionality, I couldn't find the time to dissect the entire source code. So following some wise but vague point that I got from the source code, I happened to be able to imitate the interface of glog.</p>
+<p>&nbsp;</p>
+<p>Here are some usages of glog that will put everything into context before we go to design. In debug mode of your program, the default output severity of logger, is INFO. Each severity higher that INFO will be printed out the the terminal. Glog makes logger act like a C++ stream class and makes it super easy to use.</p>
+<p>&nbsp;</p>
+<p>// General log</p>
+<p>LOG(INFO) &lt;&lt; "This is a info message" ;</p>
+<p>// Conditional log</p>
+<p>LOG_IF(INFO, 2 &lt; 3) &lt;&lt; "This a conditional message that definitely will be printed out ";</p>
+<p>LOG_EVERY_N(INFO, 10) &lt;&lt; "This is a message that will be printed out every " &lt;&lt; 10 &lt;&lt; " times";</p>
+<p>LOG_FIRST_N(INFO, 4) &lt;&lt; "This is a message that will be printed out at first " &lt;&lt; 4 &lt;&lt; " times";</p>
+<p>&nbsp;</p>
+<p>The syntax is pretty simple, yet the feature is pretty strong. Now it would be the right time to see how to make this work.</p>
+<p>&nbsp;</p>
+<p>To support C++ stream style logging, each LOG macro has to yield a object. It will die after this line of code since there is no reference after. Such behavior will help us to organize the information after LOG. We need a but inside the object, each time we "&lt;&lt;" a piece of information into object, we cache them up. When the object dies, we print out the entire buffer we cached. If the severity is FATAL, we terminate the program. Now it become pretty clear and simple to implement such object, isn't it.</p>
+<p>&nbsp;</p>
+<p>Now assume we have this implementation done, we could only do the normal logging. How the conditional logging works. How about it. Well turns out it's actually pretty intuitive. When the expression given to  condition logging is false, we don't want to print out anything. So we don't have to cache anything. So we need a fake logger, it act like other logger, but instead of print out the message when it dies, it simple dies.</p>
+<p>&nbsp;</p>
+<p>Well now everything should become clear and you should be able to write your own little program to mimic stream in your logger. And here is how I did it. <a href="https://github.com/allenbo/common/blob/master/include/common/loggingv2.hpp">Code</a> <a href="https://github.com/allenbo/common/blob/master/test/test_loggingv2.cpp">Test</a></p>

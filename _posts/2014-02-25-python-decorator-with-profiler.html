@@ -1,0 +1,172 @@
+---
+layout: post
+title: Python Decorator with Profiler
+date: 2014-02-25 10:36:34.000000000 -08:00
+type: post
+published: true
+status: publish
+categories:
+- Programming
+- Python
+tags: []
+meta:
+  _edit_last: '53481042'
+  _publicize_pending: '1'
+author:
+  login: allenbo
+  email: linjianfengqrh@gmail.com
+  display_name: allenbo
+  first_name: ''
+  last_name: ''
+---
+<p>In Python language, profiler is a good way to get a  overall estimation of efficiency of each program block. Basically, the programming block that profiler could exam is function in Python. And I have to say, the way we use profiler is extremely easy and intuitive. All we have to do is enable the profiler at right place and dump_stats at right time. Although almost all profiling tools that Python could use will never give me a perfect analysis of Python script, I find myself heavily rely on that.</p>
+<p><!--more--></p>
+<p>Another feature that I am very fond of is the decorator. Decorator makes my scripts more compact and brisk. We could imitate the decorator in C++ language see how Python abstracts the syntax of such useful feature.</p>
+<p>[code language="python"]<br />
+def indicator(fn):<br />
+  def _fn(*args, **kw):<br />
+    print &quot;call function&quot;<br />
+    rst = fn(args, kw)<br />
+    print &quot;end call&quot;<br />
+    return rst<br />
+  return _fn<br />
+[/code]</p>
+<p>This is a code snippet that shows the syntax of decorator of Python. Now I try to mimic the behavior using C++.</p>
+<p>[code language="c"]<br />
+template&lt;typename Ret, typename... types&gt;<br />
+class Decorator {<br />
+  public:<br />
+    Decorator(function&lt;Ret (types...)&gt; func_) {<br />
+      func = func_;<br />
+    }<br />
+    Ret operator() (types... args) {<br />
+      std::cout &lt;&lt; &quot;call function&quot; &lt;&lt; endl;<br />
+      Ret rst = func(args...);<br />
+      std::cout &lt;&lt; &quot;end call&quot; &lt;&lt; endl;<br />
+      return rst;<br />
+    }<br />
+  private:<br />
+    function&lt;Ret(types...)&gt; func;<br />
+};</p>
+<p>int add(int a, int b) {<br />
+  return a + b;<br />
+}</p>
+<p>Decorato&lt;int, int, int&gt; add_d(add);<br />
+int rst = add_d(1, 2);<br />
+[/code]</p>
+<p>Now we could use class Decorator to act as indicator function in Python snippet. However, this is not a very strict imitation, as we all know, the syntax and semantic are both way far away from Python ones. The idea is to justify the compactness of Python decorator.</p>
+<p>Problem comes out when I try to combine these two useful feature together and try to find the bottleneck of my script. Well, before we get to the problem, I would like to reiterate some important concepts in Python.</p>
+<p>We know everything in Python is object, so function and code associated with the function, themselves are objects. We could write a function to see the members of the object.</p>
+<p>[code language="python"]<br />
+def test():return 0<br />
+dir(test)</p>
+<p># we get<br />
+['__call__',<br />
+ '__class__',<br />
+ '__closure__',<br />
+ '__code__',<br />
+ '__defaults__',<br />
+ '__delattr__',<br />
+ '__dict__',<br />
+ '__doc__',<br />
+ '__format__',<br />
+ '__get__',<br />
+ '__getattribute__',<br />
+ '__globals__',<br />
+ '__hash__',<br />
+ '__init__',<br />
+ '__module__',<br />
+ '__name__',<br />
+ '__new__',<br />
+ '__reduce__',<br />
+ '__reduce_ex__',<br />
+ '__repr__',<br />
+ '__setattr__',<br />
+ '__sizeof__',<br />
+ '__str__',<br />
+ '__subclasshook__',<br />
+ 'func_closure',<br />
+ 'func_code',<br />
+ 'func_defaults',<br />
+ 'func_dict',<br />
+ 'func_doc',<br />
+ 'func_globals',<br />
+ 'func_name'<br />
+[/code]</p>
+<p>Two items in the list matter for this post. They are func_name and func_code. For function test, func_name is "test" obviously. And func_code is the code object of return 0. The members of code object is also easy to get.</p>
+<p>[code language="python"]<br />
+dir(test.func_code)</p>
+<p>['__class__',<br />
+ '__cmp__',<br />
+ '__delattr__',<br />
+ '__doc__',<br />
+ '__eq__',<br />
+ '__format__',<br />
+ '__ge__',<br />
+ '__getattribute__',<br />
+ '__gt__',<br />
+ '__hash__',<br />
+ '__init__',<br />
+ '__le__',<br />
+ '__lt__',<br />
+ '__ne__',<br />
+ '__new__',<br />
+ '__reduce__',<br />
+ '__reduce_ex__',<br />
+ '__repr__',<br />
+ '__setattr__',<br />
+ '__sizeof__',<br />
+ '__str__',<br />
+ '__subclasshook__',<br />
+ 'co_argcount',<br />
+ 'co_cellvars',<br />
+ 'co_code',<br />
+ 'co_consts',<br />
+ 'co_filename',<br />
+ 'co_firstlineno',<br />
+ 'co_flags',<br />
+ 'co_freevars',<br />
+ 'co_lnotab',<br />
+ 'co_name',<br />
+ 'co_names',<br />
+ 'co_nlocals',<br />
+ 'co_stacksize',<br />
+ 'co_varnames']<br />
+[/code]</p>
+<p>As you can see, there is a co_name in the list and value of co_name is "test" too. Also the co_name is an readonly attribute, I can't change it. Some interesting things happen when Python interpreter compiles the code, but I don<br />
+'t want to distract at this post. You could read Python source code to get that. The thing is, cProfiler doesn't group the function statistic based on the func_name, which is a mutable attribute, it thinks functions with same co_name should be grouped as one.</p>
+<p>In that case, we can't change the func_name before we return the decorator in order to inform cProfiler, like</p>
+<p>[code language="python"]<br />
+def indicator(fn):<br />
+  def _fn(*args, **kw):<br />
+    print &quot;call function&quot;<br />
+    rst = fn(args, kw)<br />
+    print &quot;end call&quot;<br />
+    return rst<br />
+  _fn.func_name = fn.func_name<br />
+  return _fn<br />
+[/code]</p>
+<p>Although we could get a name unmodified function, the co_name of _fn is still "_fn". cProfiler will make every line link to the same function, that is _fn.</p>
+<p>I confronted this problem with the help of Russell Power, one of my friend. It turns out, there is an ugly way to solve this. Since we can't change the behavior of cProfiler, neither can we change the co_name, how about we make a new function and set co_name at the first place.</p>
+<p>[code language="python"]<br />
+from types import FunctionType, CodeType</p>
+<p>def make_copy(f, name):<br />
+  func_code = f.func_code<br />
+  new_code  = CodeType(<br />
+            func_code.co_argcount, func_code.co_nlocals, func_code.co_stacksize,<br />
+            func_code.co_flags, func_code.co_code, func_code.co_consts,<br />
+            func_code.co_names, func_code.co_varnames, func_code.co_filename,<br />
+            name, func_code.co_firstlineno, func_code.co_lnotab,<br />
+            func_code.co_freevars, func_code.co_cellvars)<br />
+  wrapper = FunctionType(<br />
+            new_code, f.func_globals, name, f.func_defaults,<br />
+            f.func_closure)<br />
+  return wrapper</p>
+<p>def indicator(fn):<br />
+  def _fn(*args, **kw):<br />
+    print &quot;call function&quot;<br />
+    rst = fn(arg, kw)<br />
+    print &quot;end call&quot;<br />
+    return rst<br />
+  return make_copy(_fn, fn.func_name)<br />
+[/code]</p>
