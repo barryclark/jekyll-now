@@ -422,7 +422,7 @@ Kod içerisinde açıklamalar mevcut ancak şunlara değinelim.
 writeToMQ methodunda önce SESSION_TRANSACTED olacak şekilde bir Queue session aldık daha sonra MessageProducer ile sender oluşturup bir text mesaj gönderdik. Mesaj tipi text, stream veya obje olabilir.
 
 Gönderilen mesaj şöyle;
-{% highlight xml %}
+{% highlight xml lineos %}
 <?xml version="1.0" encoding="UTF-8"?>
 <Ticket captureDate="09 Dec 2016 11:18:12" recordTemplateCode="501">
 	<TicketDate>2016-12-19 14:53:00.000</TicketDate>
