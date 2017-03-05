@@ -1,6 +1,6 @@
 C#6.0でget-only propertyがありますね。
 
-[get-only property](http://ufcpp.net/study/csharp/oo_property.html#get-only)
+(http://ufcpp.net/study/csharp/oo_property.html#get-only)
 
 immutableなクラスをお手軽に作れる!
 ただし僕個人としてはプロパティはprop/propgのスニペットで入力派だったのに、get-onlyのsnippetデフォルトでついてこなくて悔しい!
