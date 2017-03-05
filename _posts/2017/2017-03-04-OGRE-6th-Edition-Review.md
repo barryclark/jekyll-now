@@ -21,7 +21,7 @@ author: robk
 **Players:** 1-3\\
 **Play Time:** 45 min\\
 **Ages:** 10+
-
+**Rules Available Online:** [Kind of](http://www.sjgames.com/ogre/products/ogredesigner/img/ogre_rulebook.pdf)
 **BGG:** [OGRE](https://boardgamegeek.com/boardgame/5206/ogre)
 
 <h2>Prelude</h2>
