@@ -20,8 +20,8 @@ author: robk
 **MSRP:** [$19.99](http://amzn.to/2mq05jw)\\
 **Players:** 2-4\\
 **Play Time:** 20 min\\
-**Ages:** 7+
-**Rules Available Online:** [Yes](http://www.peaceablekingdom.com/docs/default-source/Game-Instructions/gmc20_molerats.pdf?sfvrsn=0)
+**Ages:** 7+\\
+**Rules Available Online:** [Yes](http://www.peaceablekingdom.com/docs/default-source/Game-Instructions/gmc20_molerats.pdf?sfvrsn=0)\\
 **BGG:** [Mole Rats in Space](https://boardgamegeek.com/boardgame/213882/mole-rats-space)
 
 <h2>Prelude</h2>
