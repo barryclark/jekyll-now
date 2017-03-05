@@ -13,7 +13,7 @@ featured: tbiam.jpg
 author: robk
 ---
 
-![This Belongs in a Museum](/images/tbiam/cover.png){: .float-right}
+![This Belongs in a Museum](/images/tbiam/cover.jpg){: .float-right}
 **Designer:** Uncredited\\
 **Publisher:** [Rather Dashing Games](http://www.ratherdashinggames.com/this-belongs-in-a-museum)\\
 **Year:** 2017\\
