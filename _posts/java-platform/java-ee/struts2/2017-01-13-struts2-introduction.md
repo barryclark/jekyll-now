@@ -24,7 +24,7 @@ Struts2'nin temel avantajları şunlardır;
 
 #### Strut2 Starter Project
 Struts2'ye giriş yapacağımız örneğe geçelim. Öncelikle Struts2 de dosya/dizin yapısı nasıldır ona bakalım;
-```
+{% highlight java %}
 project(web-app)
 │   
 │    
@@ -45,7 +45,7 @@ project(web-app)
 │    │─── jsp page
 │
 └───Static resources    
-```
+{% endhighlight %}
 
 Struts2 de Controller kısımları pure Pojo class'larından oluşmaktadır. Bunları action olarak isimlendireceğiz. Action tanımı, Annotation based yada xml conf based olmak üzere 2 şekilde yapabiliriz. XML conf seçecek olursak config dosyasının WEB-INF\classes dizini altında olması gerekmektedir. Development anında ..\src dizini altında ben bulunduruyorum, deployment assembly olarak src dizini WEB-INF\classes altında taşındığı için bir problem oluşmuyor.
 
@@ -67,7 +67,7 @@ Bir tane action oluşturalım;
 
 com.caysever.action paketi altında oluşturacağız. HelloWordAction;
 
-``` java
+{% highlight java linenos %}
 package com.caysever.action;
 
 public class HelloWordAction {
@@ -88,12 +88,12 @@ public class HelloWordAction {
     }
 }
 
-```
+{% endhighlight %}
 
 HelloWord class içerisinde message adlı bir field ve execute adlı bir method bulunmakta. Yapacağımız config ile execute methodunu action olarak tanımlaycağız.
 Config'e bakalım;
 
-``` xml
+{% highlight xml lineos %}
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE struts PUBLIC
    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
@@ -108,7 +108,7 @@ Config'e bakalım;
 
 </struts>
 
-```
+{% endhighlight %}
 
 Detaylarına daha sonra değineceğiz, root elementimiz **struts** olacaktır. Altında package ile action tanımı yapıyoruz. Action'a bir name, handle edileceği bir class ve result tanımı yaptık. Execute methodu içerisinde **retuern "success";** ifadesi burada **result** ile belirlenen view'lara map edilir. Execute action'dan **success** dönülürse istek **hello.jsp** forward edilecektir.
 
@@ -116,7 +116,7 @@ Detaylarına daha sonra değineceğiz, root elementimiz **struts** olacaktır. A
 
 index.jsp dosyamıza bakalım;
 
-``` html
+{% highlight html lineos %}
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 <%@ taglib prefix="s" uri="/struts-tags"%>
@@ -147,11 +147,11 @@ index.jsp dosyamıza bakalım;
 
 </body>
 </html>
-```
+{% endhighlight %}
 
 Form'u **hello** action'a gönderiyoruz. HelloWordAction ise mesaja birşeyler ekleyip hello.jsp sayfasına iletiyor. **hello.jsp** dosyamıza bakalım;
 
-``` html
+{% highlight html lineos %}
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 <%@ taglib prefix="s" uri="/struts-tags"%>
@@ -167,10 +167,10 @@ Form'u **hello** action'a gönderiyoruz. HelloWordAction ise mesaja birşeyler e
 
 </body>
 </html>
-```
+{% endhighlight %}
 Struts intercept tanımı yaparak gelen url isteklerini dinlemesini sağlaycağız. Bu sayede Struts, gelen isteğin hangi actiona yönlendirileceğine karar verecektir. Bunun için web.xml dosyamıza aşağıdaki tanımı ekleyelim;
 
-``` xml
+{% highlight xml lineos %}
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
   <display-name>Struts2Starter</display-name>
@@ -190,15 +190,15 @@ Struts intercept tanımı yaparak gelen url isteklerini dinlemesini sağlaycağ�
     <url-pattern>/*</url-pattern>
   </filter-mapping>
 </web-app>
-```
+{% endhighlight %}
 Struts'a **com.caysever.action** paketi altında aramasını söylüyoruz.
 
 Run edelim;
 Deployment assembly;
-![index page](/images/java-platform/java-ee/struts2/struts2-index.jsp.png)
+![index page](/images/java-platform/java-ee/struts2/struts2-index.png)
 
 Submit edelim;
-![hello page](/images/java-platform/java-ee/struts2/struts2-hello.jsp.png)
+![hello page](/images/java-platform/java-ee/struts2/struts2-hello.png)
 
 Request lifecyle içerisindeki adımalara bakalım;
 1. User, request'i başlatır.

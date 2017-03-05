@@ -1,0 +1,13 @@
+# Site navigation links
+
+- title: Posts
+  url: /
+
+- title: Hal-i Cünunum
+  url: /self/
+
+- title: About
+  url: /about/
+  
+- title: Search
+  url: /search/

@@ -17,7 +17,7 @@ Bugün kısaca Spring&JMS entegrasonunu ActvieMQ kullanarak yapmaya çalışaca�
 
 **pom.xml**;
 
-``` xml
+{% highlight xml linenos %}
 
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
@@ -78,7 +78,7 @@ Bugün kısaca Spring&JMS entegrasonunu ActvieMQ kullanarak yapmaya çalışaca�
 	</build>
 
 </project>
-```
+{% endhighlight %}
 
 ActiveMQ'yu default ayarlar ile çalıştıralım.
 ![activemq start](/images/java-platform/java-ee/jms/activemq_start.png)
@@ -86,7 +86,7 @@ ActiveMQ'yu default ayarlar ile çalıştıralım.
 Spring bean definition'lara bakalım;
 **appContext.xml**;
 
-``` xml
+{% highlight xml linenos %}
 
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -131,15 +131,15 @@ Spring bean definition'lara bakalım;
 
 </beans>
 
-```
+{% endhighlight %}
 
-``` properties
+{% highlight properties linenos %} 
 jms.connection.factory.name=org.apache.activemq.ActiveMQConnectionFactory
 jms.connection.broker.url=tcp://localhost:61616
 jms.destination.factory.name=org.apache.activemq.command.ActiveMQQueue
 jms.output.queue.name=jms/caysever.shop.1.1.Shopping
 jms.reply.queue.name=jms/caysever.shop.1.1.ShoppingR
-```
+{% endhighlight %}
 
 **jmsMessageTemplate**, Spring tarafından yönetilen ve elinde ConnectionFactory barındıran objedir. JMS üzerinde kullanılabilecek birkaç properties'e de bean definition'da yer verdik.
 
@@ -155,7 +155,7 @@ Properties dosyamız içerisinde pure JMS çalışırken kullandığımız yakla
 
 **jmsSender**;
 
-``` java
+{% highlight java linenos %}
 package com.caysever.jms;
 
 import javax.jms.Destination;
@@ -198,7 +198,7 @@ public class MessageSender {
 
 }
 
-```
+{% endhighlight %}
 
 Bean injection methodları yanında sendMessage methodumuz ile JMSTemplate üzerinden outputQueue'ya mesaj gönderiyoruz.
 
@@ -207,7 +207,7 @@ Bean injection methodları yanında sendMessage methodumuz ile JMSTemplate üzer
 
 **jmsReceiver**;
 
-``` java
+{% highlight java linenos %}
 package com.caysever.jms;
 
 import javax.jms.Destination;
@@ -246,13 +246,13 @@ public class MessageReceiver {
 		}
 	}
 }
-```
+{% endhighlight %}
 
 Yine bean injection methodları dışında receiveMessage methodumuz ile queue'daki mesajı almayı amaçlıyoruz.
 
 Test edelim;
 
-``` java
+{% highlight java linenos %}
 package com.caysever.springjms;
 
 import org.junit.Before;
@@ -295,7 +295,7 @@ public class JMSTemplateTest {
 	}
 
 }
-```
+{% endhighlight %}
 
 Before class ile app Context'i oluşturup jms sender ve receiver için bean alıyoruz.
 

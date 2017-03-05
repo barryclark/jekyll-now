@@ -39,7 +39,7 @@ Tomcat'i HTTPS olarak ayağa kaldırmak için Connector tanımı yapacağız. To
 Default olarak gelen Tomcat admin port ve AJP ile birlikte SSL olarak tanımladığımız 8443 portundan bir Connector ayağa kalkacaktır. Bu tanımlamlar tomcat base directory içerisinde bulunan conf dizinindeki server.xml içerisinde yapılır.
 
 server.xml içerisindeki Service içerisinde aşağıdaki Connector tanımını ekliyoruz;
-```xml
+{% highlight xml linenos %}
 
 <?xml version="1.0" encoding="UTF-8"?>
     <Server port="8005" shutdown="SHUTDOWN">
@@ -124,14 +124,17 @@ at /docs/config/service.html -->
 </Engine>
 </Service>
 </Server>
-```
+{% endhighlight %}
+
 Connector tanımımız şu şekilde;
-```xml
+
+{% highlight xml linenos %}
 <!-- Tomcat with SSL -->
 <Connector SSLEnabled="true" clientAuth="false" keystoreFile="/home/wora/wora.keystore"
 keystorePass="caysever" maxThreads="150" port="8443" protocol="HTTP/1.1"
 scheme="https" secure="true" sslProtocol="TLS"/>
-```
+{% endhighlight %}
+
 Burada keystore dosyasınını, sifre olarak "caysever", port, protocol, scheme(https) gibi bilgileri giriyoruz. Tomcati restart ettikten sonra HTTPS olarak HTTP + SSL olarak çalışabiliyor olacağız.
 
 Herhangi bir uygulama deploy edip HTTPS olarak gidelim;

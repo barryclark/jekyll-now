@@ -18,7 +18,7 @@ Sorun: Aynı username/password ile farklı tarayıcı/ortam üzerinden login olm
 
 **UserSessionManager.java**
 
-{% highlight java %}
+{% highlight java linenos %}
 
 import java.util.concurrent.ConcurrentHashMap;
 import javax.servlet.http.HttpSession;
@@ -77,7 +77,7 @@ Basit bir Java classı yukarıdaki. Singleton pattern'ı barındırıyor, userna
 UserManager'ı efektik olarak kullanabilmek için bir listener ve bir filter kullanacağız.
 
 <strong>LifeCycleListener.java</strong>
-```java
+{% highlight java linenos %}
 
 import javax.servlet.ServletContext;
 import javax.servlet.ServletContextEvent;
@@ -115,14 +115,14 @@ public class Startup implements ServletContextListener {
   }
 
 }
-```
+{% endhighlight %}
 
 Listener ile birlikte context'imize user session manager ekliyoruz.
 
 Şimdi ise bir filter tanımı yapacagız, pattern'ı /* şeklinde tüm url'leri kapsayacak şekilde ayarlayacağız.
 
 <strong>LoginFilter.java</strong>
-```java
+{% highlight java linenos %}
 
 import javax.servlet.Filter;
 import javax.servlet.FilterChain;
@@ -191,7 +191,7 @@ Logger logger = Logger.getLogger(LoginFilter.class);
 
   }
 }
-```
+{% endhighlight %}
 
 Filter'ımızda /* tüm url'leri handle ediyoruz. Eğer kullanıcı login oldu ise User Principial null gelmeyecektir artık. Login olan kullanıcının adını alarak ilk önce session manager'ımızda böyle bir user var mı diye bakıyoruz. Var ise old session invalide ediliyor. Yok ise username-session olarak session manager'a eklemiş oluyoruz. Son olarak da isteği filter.doFilter(req, res) ile gittiği url'e gönderiyoruz.
 

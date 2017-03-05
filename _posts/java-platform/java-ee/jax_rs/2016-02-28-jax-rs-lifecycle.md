@@ -6,7 +6,6 @@ summary: Merhaba arkadaslar, bu yazımızda bir restful kaynağının yaşam dö
 image: images/java-platform/java-ee/jaxrs/bejug-jaxrs-event.jpg
 ---
 
-
 Merhaba arkadaslar, bu yazımızda bir restful kaynağının yaşam döngüsünden bahsediyor olacağız.
 
 Öncelikle hatırlamak gerekirse Jax-RS servisi sağlayan class'ımızın normal bir Java class'dan farklı olmadıgını, bazı annotationlarla özelleştirip servis sunabilecek hale getirdigimizi hatırlayalım.
@@ -36,7 +35,7 @@ Dikkat ederseniz post ve put için aynı url path bulunuyor. Restful, hangi meth
 
 <span style="color: #808000;">com.wora.rest.PersonService</span>
 
-```java
+{% highlight java linenos %}
 
 package com.wora.rest;
 import java.util.Properties;
@@ -90,11 +89,11 @@ public void init(Properties appProps) throws Exception {
 }
 
 }
-```
+{% endhighlight %}
 
 **web.xml**
 
-``` xml
+{% highlight xml lineos %}
 
 <web-app id="WebApp_ID" version="2.4"
 xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -127,10 +126,10 @@ http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
 
 </web-app>
 
-```
+{% endhighlight %}
 <span style="color: #808000;">com.wora.servlet.ContextListener.</span>
 
-``` java
+{% highlight java linenos %}
 package com.wora.servlet;
 
 import java.io.File;
@@ -180,11 +179,11 @@ try {
 }
 
 }
-```
+{% endhighlight %}
 
 <span style="color: #808000;">com.wora.facade.ServiceFacade</span>
 
-```java
+{% highlight java linenos %}
 package com.wora.facade;
 
 import java.util.Properties;
@@ -233,10 +232,10 @@ public class ServiceFacade {
     return personDao.savePerson(person);
   }
 }
-```
+{% endhighlight %}
 
 <span style="color: #808000;">com.wora.dao.person.IPersonDao</span>
-```java
+{% highlight java linenos %}
 
 package com.wora.dao.person;
 
@@ -250,12 +249,12 @@ public abstract boolean updatePerson(Person person) throws Exception;
 public abstract boolean deletePerson(long personId) throws Exception;
 public abstract boolean savePerson(Person person) throws Exception;
 }
-```
+{% endhighlight %}
 İmplementasyonuna bakalım;
 
 <span style="color: #808000;">com.wora.dao.person.PersonDaoImp</span>
 
-```java
+{% highlight java linenos %}
 
 package com.wora.dao.person;
 
@@ -292,13 +291,13 @@ return false;
 }
 
 }
-```
+{% endhighlight %}
 
 Göreceginiz üzere implementasyon var ama içi boş, doldurmadım :)
 
 <span style="color: #808000;">com.wora.db</span>
 
-```java
+{% highlight java linenos %}
 
 package com.wora.db;
 
@@ -361,7 +360,7 @@ try{
 }
 
 }
-```
+{% endhighlight %}
 
 **Not : Yazı sonunda proje'ye erişebileceğiniz link yer alacaktır.**
 
@@ -379,23 +378,23 @@ try{
 * Resource, garbace collector için uygun hale getirilir.
 
 Defualt olarak Request Scope ama okunaklı olması ve hatırda kalması adına belirtmek isterseniz class'ın başına @RequestScoped annotation'unu koymalısınız. Şöyle ki;
-``` java
+{% highlight java linenos %}
 @Path("/person/api")
 @RequestScoped
 public class PersonService implements IPersonDao{
 .....
 }
-```
+{% endhighlight %}
 Request scope bazı durumlarda tercih edilmez, nedeni de performans düşüklüğü ve memory kullanımı'dır. Her request için rest resource oluşturulur, istek karşılanır ve gb için uygun hale getirilir ancak gb ne zaman çalışır bilinmez :)
 
 Request scope yerine Singleton olarak resource'u değiştirebiliriz. Bu bize bir jax-rs applicationumuz var ise ilgili rest resource için tek instance olmasını sağlayacaktır. Bunun için rest class'ımızıa @Singleton annotationu koymamız ve Application'un bir instance'ı olması gerekmektedir. Şöyle ki;
-```java
+{% highlight java linenos %}
 @Path("/person/api")
 @Singleton
 public class PersonService extends Application implements IPersonDao{
 .....
 }
-```
+{% endhighlight %}
 Düşük kullanıcı sayısı ve network trafiğinde request scope ihtiyacınızı karşılacayaktır. Ancak kaynak kullanımında artış ve performans'da düşüş istemiyorsanız singleton olarak rest servisinizi dışarıya açabilirsiniz.
 
 İlgili proje'ye şuradan erişebilirsiniz : [RestfulTutorial](https://www.dropbox.com/s/eu3wt6duww0uwmz/RestfulTutorial.rar?dl=0)
