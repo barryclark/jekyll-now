@@ -25,7 +25,7 @@ Bir önceki yazımda kullanmış olduğum IO handler sınıfını olduğu gibi k
 
 **MinaClient.java**
 
-```java
+{% highlight java linenos %}
 package com.caysever.mina.tutorial.client;
 
 import java.net.InetSocketAddress;
@@ -106,10 +106,10 @@ public class MinaClient {
     }
   }
 }
-```
+{% endhighlight %}
 
 Kod içerisinde gerekli yerlere yorumlar yazdım, yapı basit çünkü default protocol ile ilerliyoruz.  IoHandler, bir önceki yazımızdaki handler idi. Tekrar yer verelim;
-```java
+{% highlight java linenos %}
 package com.caysever.mina.tutorial;
 
 import org.apache.mina.core.service.IoHandlerAdapter;
@@ -164,10 +164,11 @@ public class TimeServerHandler extends IoHandlerAdapter {
   }
 
 }
-```
+{% endhighlight %}
 
 Test classımıza bakalım;
-```java
+
+{% highlight java linenos %}
 package com.caysever.mina.tutorial.client;
 
 import java.util.Date;
@@ -194,7 +195,7 @@ public class ClientTest {
     }
   }
 }
-```
+{% endhighlight %}
 
 Client'ımız servera bağlandıktan sonra 1 sn aralıklarla mesaj göndermekte. Örneği çalıştırabilmek için server socketin ayakta olması gerekmektedir. Bu nedenle bir önceki yazımda vermis oldugum uygulamayı çalıştırmış olmanız ve 5003 portunda gelen istekleri kabul ettiğini biliyor olmanız gerekmektedir. Yada yazının sonundaki projenin son halini indirip önce server kısmını çalıştırıp daha sonra client tarafını çalıştırırsanız yine çalışacaktır.
 

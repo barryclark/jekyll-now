@@ -40,7 +40,7 @@ Ve ek olarak örnek açısından Servlet'imizde Remote Host ve Port numarasını
 
 * Önce **MyServlet** Sınıfımıza bir bakalım ;
 
-``` java
+{% highlight java linenos %}
 package _03_MyServlet;
 
 import javax.servlet.ServletException;
@@ -79,24 +79,24 @@ public class MyServlet extends HttpServlet {
 
   }
 }
-```
+{% endhighlight %}
 
 Yukarıdaki işlemelere bakalım biraz ;
 
 * Öncelikle sınıf tanımlamamızdan görebileceğiniz gibi sınıfımız bir **Servlet** sınıfıdır ;
 
-``` java
+{% highlight java linenos %}
 public class MyServlet extends HttpServlet
-```
+{% endhighlight %}
 
 Hatırlayacagınız gibi Servlet'ler aslında bir Java sınıfından farksız degildir.
 
 * doGet methodu ile **Http** methodlarında Get methodunu karşılıyor sınıfımız. Ek olarak ; Eğer bir form'da method tipi belirtilmez ise default olarak get methodu seçilir.
 
-``` java
+{% highlight java linenos %}
 protected void doGet(final HttpServletRequest request,final  HttpServletResponse response)
         throws ServletException, IOException {
-```
+{% endhighlight %}
 
 **doGet()** methodunun **HttpServletRequest** ve** HttpServletResponse** tipinde parametreler aldığına dikkat edelim. Bu iki obje ile işlemlerimizi gerçekleştiricez. Request ve response nesneleri sayesinde istek ve cevap'ları rahatlıkla elde edebiliyoruz .Daha sonradan detaylıca deginicez.
 
@@ -104,24 +104,24 @@ protected void doGet(final HttpServletRequest request,final  HttpServletResponse
 
 * Burdaki kod satırı ile de response'den akışa veri yazmak için bir PrintWriter nesnesi alıyoruz.
 
-``` java
+{% highlight java linenos %}
 final PrintWriter pw = response.getWriter();//Get printwriter from response
-```
+{% endhighlight %}
 
 PrintWriter akışa yani cevap olarak response'ye text yazmamızı sağlıyor.
 
 * Daha sonra remote host ve remote port'u alıp printwriter ile yazıyoruz ;
 
-``` java
+{% highlight java linenos %}
 pw.println("Remote Host : "+request.getRemoteHost());//Get Remote
 pw.println("Port number : "+request.getRemotePort());//Get Port
-```
+{% endhighlight %}
 
 * Önemli bir noktaya geldik şuan arkadaslar ; Servlet sınıfıızı yazdıktan sonra yapacagımız ilk işlem bu servlet'mizi **web.xml**'e kaydetmek olacaktır. Servlet Contaıner web.xml'e bakarak servlet'leri ve diper configure yada param özelliklerini okur.Eğer servlet'imizi web.xml'e kaydetmezsek 404 hatası alırız : ) . Biz kaydedelim :)
 
 * **Web.xml** ;
 
-``` xml
+{% highlight xml linenos %}
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -136,7 +136,7 @@ pw.println("Port number : "+request.getRemotePort());//Get Port
     <url-pattern>/MyFirstServlet</url-pattern>
 </servlet-mapping>
 </web-app>
-```
+{% endhighlight %}
 
 * **web-app** etiketi içerisinde olacak yazacaklarımız . Bir servlet **web.xml'** de nasıl tanımlanır adım adım bakalım ;
 * **servlet** tag'ı ile Servlet'e bir ad verilir. Ve bu Servlet'e karşılık gelen Servlet sınıfı verilir. Tam paket adı verilmeli.

@@ -75,7 +75,7 @@ Properties file'da aşağıdaki tanımları yapalım;
 * jms.connection.password -> **""**
 
 
-{% highlight java %}
+{% highlight java linenos %}
 package com.caysever.jms.adaptors;
 
 import java.net.InetAddress;
@@ -444,7 +444,7 @@ Dikkat edilecek iki nokta var;
 
 Kodu asenkron olacak şekilde refactor edelim.
 
-{% highlight java %}
+{% highlight java linenos %}
 package com.caysever.jms.adaptors;
 
 import java.net.InetAddress;

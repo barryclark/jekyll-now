@@ -27,14 +27,13 @@ Mina, temelinde bir server ve client objesi oluşturulduktan sonra filter ile lo
 ### NIO
 Mina'nın NIO API ile haberlerşme yaptığından bahsettik. NIO, Java 1.4 ile gelen non-blocking IO yönetim yapısını içermektedir. NIO yanısıra BIO olarak bilinen yada Blocking-IO ise socket üzerinde herhangi bir read/write yada herhangi bir işlemde bloklar ve diğer operasyonlar bunun bitmesini bekler. Bu nedenle NIO, event mantığı ile çalışarak bloklama yapmaz ve ilgilendiği event oluştuğunda devreye girer. NIO, BIO'ya göre daha fazla connection'a destek verebilir ve daha da hızlıdır.
 
-&nbsp;
 
 Mina Example
 
 Öncelikle simple bir örnek ile soket programlama girelim. Yapacağımız işlem bir soket acceptor oluşturmak ve herhangi bir port'a bind etmek. Socketimiz üzerinde de iki filter tanımı yapacağız. Öncelikle Mina için gerekli jar dosyalarını indirelim ve classpath'e ekleyelim. Bunun için [şurayı](https://mina.apache.org/mina-project/userguide/ch1-getting-started/first-steps.html) kullanabilirsiniz.
 
 Öncelikle NioSocketAcceptor oluşturalım. Socket Acceptor, cliet'lardan gelecek isteklere hizmet verecek kısımdır;
-```java
+{% highlight java linenos %}
 package com.caysever.mina.tutorial;
 
 import java.net.InetSocketAddress;
@@ -81,32 +80,32 @@ try {
 }
 
 }
-```
+{% endhighlight %}
 
 Yukarda örnek bir Socket Acceptor bulunmakta ve 5003 portundan çalışmaktadır. Acceptor üzerinde iki adet filter tanımlanmıştır. Bunlardan biri socket ile ilgili olan işlemlerin default console yazdırılması için "logger" filter ve Protocol olarak text codec olan TextLineCodecFactory kullanmaktayız.  Buraya kadar olan kısmı aşağıdaki kod blogu yapmaktadır.
-```java
+{% highlight java linenos %}
 // Create the acceptor
 IoAcceptor acceptor = new NioSocketAcceptor();
 
 // Add two filters : a logger and a codec
 acceptor.getFilterChain().addLast("logger", new LoggingFilter());
 acceptor.getFilterChain().addLast("codec", new ProtocolCodecFilter(new TextLineCodecFactory(Charset.forName("UTF-8"))));
-```
+{% endhighlight %}
 
 Daha sonra uygulamamızın business logic kısmıs olan IO handler'ı set ediyoruz. TimeServerHandler classımız IoHandlerAdapter sınıfı extend eden ve socket üzerinde session açılması/kapanması, mesaj alınması/gönderilmesi gibi durumları handle eden logic class'dır.
-```java
+{% highlight java linenos %}
 // Attach the business logic to the server
 acceptor.setHandler(new TimeServerHandler());
-```
+{% endhighlight %}
 
 Daha sonra acceptor üzerinde buffer size ve idle(boşta) zamanı için ayarlamalar yapıyoruz. En son ise acceptor  5003 portuna bind ediliyor ve 5003 portuna gelecek olan bağlantıları dinlemeye geçiyor.
-```java
+{% highlight java linenos %}
 // And bind!
 acceptor.bind(new InetSocketAddress(PORT));
-```
+{% endhighlight %}
 
 Business logic olan TimeServerHandler sınıfımıza bakalım;
-```java
+{% highlight java linenos %}
 package com.caysever.mina.tutorial;
 
 import org.apache.mina.core.service.IoHandlerAdapter;
@@ -163,7 +162,7 @@ System.out.println("\nSession opened. Session ID:" + session.getId() + " - Local
 }
 
 }
-```
+{% endhighlight %}
 
 Business logic sınıfımızda bazı eventların oluşması durumunda console ekranına bazı bilgiler yazmaktayız.  Main classımızı çalıştıralım ve telnet ile portumuza erişmeye çalışalım;
 

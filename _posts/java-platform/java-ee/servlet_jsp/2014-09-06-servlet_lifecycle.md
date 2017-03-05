@@ -29,19 +29,19 @@ Bir Servlet'in yasam döngüsü 5 adımdan ibarettir ;
 
 * Sıradaki adım da ise **init()** methodu cagrılır.**init()** methodu **Servlet'i** ilk kullanıma hazırlar. Bu method servlet yaşam döngüsü içerisinde sadece bir defa çağrılır. **init()** methodu tamamlandıgında Servlet'imiz artık istekleri karsılamaya hazıdır.
 
-```java
+{% highlight java linenos %}
 public void init(ServletConfig config) throws ServletException
-```
+{% endhighlight %}
 
 * **service()** methodu ile beraber Servlet istekleri işler. **service()** methodu gelen **HTTP** methodu tipine göre Servletimizde buluna **doXXX()** methodunu çağırır. Unutmayalım ki her bir istek aynı servlet üzerinde farklı thread'larda çalışır. **service()** methodu iki obje barındırır. Bunlar ; **request** ve **response** objeleridir. Bu objeler ilgili **doXXX()** methoduna çağrılırken parametre olarak  yollanır.
-```java
+{% highlight java linenos %}
 public void service(ServletRequest request, ServletResponse response)   
   throws ServletException, IOException
-```
+{% endhighlight %}
 * Son olarak **destroy()** methodu ile Servlet'imiz ölür :) . Servlet'in kullandıgı kaynaklar serbest bıraklılır . Bu methodunda servlet yaşam döngüsünde sadece birkez çağrıldıgını unutmayalım.
-```java
+{% highlight java linenos %}
 public void destroy()
-```
+{% endhighlight %}
 #### Destroy methodu ile ilgili Trick ;
 * **destroy()** methodu şu durumlarda çağrılır ;
   * **Contaıner** yada **applicaton** kapandıgında.

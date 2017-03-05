@@ -16,7 +16,7 @@ Action/Controller request'i işler ve eğer gerekli ise view'a işaret ederek vi
 
 Hemen örnek bir action yazalım;
 
-``` java
+{% highlight java linenos %}
 package com.caysever.action;
 
 public class CounterAction {
@@ -49,11 +49,11 @@ public class CounterAction {
 	     return incrementOrDecrement;
     }
 }
-```
+{% endhighlight %}
 
 CounterAction class'ı request handling yapabilen bir class aslında. Dikkat ederseniz herhangi bir servlet extends etme söz konusu değil veya bir implemente etme söz konusu değil. CounterAction içerisinde **execute** adlı özel bir method bulunuyor. Bu method, request'in handling edileceği kısımdır. Default isimlendirmedir, eğer özel olarak belirtilmedi ise request bu method içerisinde işlenecek demektir. JSP sayfası oluşturup çalıştıralım sonra ise detayına inelim;
 
-``` html
+{% highlight html linenos %}
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 <%@ taglib prefix="s" uri="/struts-tags"%>
@@ -84,7 +84,8 @@ CounterAction class'ı request handling yapabilen bir class aslında. Dikkat ede
 
 </body>
 </html>
-```
+{% endhighlight %}
+
 Çıktıyı gösterelim;
 
 ![struts2-action_1](/images/java-platform/java-ee/struts2/struts2-action_1.png)
@@ -110,7 +111,7 @@ Burada action oluşturulma mantığı şöyledir;
 
 View'dan action'a ve action'dan view'a geçerken data bindingden strtus sorumludur. Örneğimizde int count ve boolean incrementOrDecrement değişkenlerini kullandık. Bu değişkenlerin setter-getter'lerinin olmaması data bindigi engeller. Data bindinin oldukça başarılı olduğunu söyleyebilirim. Şimdi yukarıdaki kodları şöyle değiştirelim;
 
-``` java
+{% highlight java linenos %}
 package com.caysever.action;
 
 import com.caysever.model.CounterBean;
@@ -137,9 +138,9 @@ public class CounterAction {
 
 }
 
-```
+{% endhighlight %}
 
-``` html
+{% highlight html lineos %} 
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 <%@ taglib prefix="s" uri="/struts-tags"%>
@@ -170,7 +171,7 @@ public class CounterAction {
 
 </body>
 </html>
-```
+{% endhighlight %}
 
 CounterAction içerisine CounterBean ekledik, count ve incrementOrDecrement degiskenlerini sarmalamaktadır. View içerisinde de action class içerisindeki tanımla aynı olmak şartı ile **counter.count** şeklinde kullanabiliriz.
 
@@ -185,7 +186,7 @@ Yukarıda ifade ettiğim gibi her HTTP request'i için yeni bir Action oluşturu
 
 Configuration dosyasındaki action tanımına bakalım;
 
-``` xml
+{% highlight xml lineos %}
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE struts PUBLIC
    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
@@ -202,7 +203,7 @@ Configuration dosyasındaki action tanımına bakalım;
 	</package>
 
 </struts>
-```
+{% endhighlight %}
 **package** etiketleri arasına action tanımlarını yapabiliriz. Action'ları **action** ile ifade ediyoruz. Buradaki attribute'lara bakalım;
 * **name** : Action için url tanımıdır.
 * **class** : Action class'ını ifade eder.
@@ -211,7 +212,7 @@ Configuration dosyasındaki action tanımına bakalım;
 
 **package** etiketine farklı bir attribute ekleyelim. Bu attr namespace olacaktır.
 
-``` xml
+{% highlight xml lineos %}
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE struts PUBLIC
    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
@@ -228,7 +229,7 @@ Configuration dosyasındaki action tanımına bakalım;
   </package>
 
 </struts>
-```
+{% endhighlight %}
 **namespace** attribute'u, action'ları sınıflandırmaya yarar. Url üzerinde grouplama işlemi için yapılır. Örneğin kullanıcı ile ilgili olan işlemlerde package namespace'i **user** yapabiliriz. Yukarda **custom** yapmayı tercih ettik. Bu ifadeden sonra action mapping'de url'in başına **custom** gelmeli. Örn: hostname:port/contextName/**custom**/**actionName** şeklinde olacaktır.
 
 ### Action wildcard mapping
@@ -236,7 +237,7 @@ Bazı durumlarda mappingi dinamik olarak üretmek isteyebilir yada daha az confi
 
 Mappingimiz şöyle olsun;
 
-``` xml
+{% highlight xml lineos %}
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE struts PUBLIC
    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
@@ -269,10 +270,10 @@ Mappingimiz şöyle olsun;
     </package>
 
 </struts>
-```
+{% endhighlight %}
 Gördüğünüz gibi 4 işlem için ayrı ayrı mapping yaptık. Aynı action class içerisindeki farklı methodlara yönlendiriliyorlar. CalculatorAction şöyle;
 
-``` java
+{% highlight java linenos %}
 package com.caysever.action;
 
 import com.caysever.model.CalculatorBean;
@@ -308,11 +309,11 @@ public class CalculatorAction {
 	return calculator;
     }
 }
-```
+{% endhighlight %}
 
 CalculatorBean ise;
 
-``` java
+{% highlight java linenos %}
 package com.caysever.model;
 
 public class CalculatorBean {
@@ -339,7 +340,7 @@ public class CalculatorBean {
         this.result = result;
     }
 }
-```
+{% endhighlight %}
 
 Url'den şunları deneyelim;
 
@@ -350,7 +351,7 @@ Url'den şunları deneyelim;
 
 Bir sorun yok ama biz daha akıllı yapalım şu işi dedik. Mappingleri wildcard ile yapalım şimdi;
 
-``` xml
+{% highlight xml lineos %}
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE struts PUBLIC
    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
@@ -371,11 +372,11 @@ Bir sorun yok ama biz daha akıllı yapalım şu işi dedik. Mappingleri wildcar
 
 </struts>
 
-```
+{% endhighlight %}
 
 Action class'ında birşey değiştirmemize gerek yok. Yukarıdaki url'leri tekrar çağırdığımızda çalışabildiğini göreceğiz. Widlcardı birçok yerde de kullanabiliriz. Class resolve etmesinde yada result resolve etmesinde de kullanabiliriz. Tek class oldugu için class resolve göstermeyelim, result resolve gösterelim;
 
-``` xml
+{% highlight xml lineos %}
 
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE struts PUBLIC
@@ -397,12 +398,12 @@ Action class'ında birşey değiştirmemize gerek yok. Yukarıdaki url'leri tekr
 
 </struts>
 
-```
+{% endhighlight %}
 
 4 adet jsp sayfası oluşturalım;
 **addResult.jsp**
 
-``` html
+{% highlight html lineos %}
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 <%@ taglib prefix="s" uri="/struts-tags"%>
@@ -424,11 +425,11 @@ Action class'ında birşey değiştirmemize gerek yok. Yukarıdaki url'leri tekr
 
 </body>
 </html>
-```
+{% endhighlight %}
 
 **substractResult.jsp**
 
-``` html
+{% highlight html lineos %}
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 <%@ taglib prefix="s" uri="/struts-tags"%>
@@ -450,11 +451,11 @@ Action class'ında birşey değiştirmemize gerek yok. Yukarıdaki url'leri tekr
 
 </body>
 </html>
-```
+{% endhighlight %}
 
 **divideResult.jsp**
 
-``` html
+{% highlight html lineos %}
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 <%@ taglib prefix="s" uri="/struts-tags"%>
@@ -476,11 +477,11 @@ Action class'ında birşey değiştirmemize gerek yok. Yukarıdaki url'leri tekr
 
 </body>
 </html>
-```
+{% endhighlight %}
 
 **multiplyResult.jsp**
 
-``` html
+{% highlight html lineos %}
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 <%@ taglib prefix="s" uri="/struts-tags"%>
@@ -502,7 +503,7 @@ Action class'ında birşey değiştirmemize gerek yok. Yukarıdaki url'leri tekr
 
 </body>
 </html>
-```
+{% endhighlight %}
 
 Yapılan matematiksel işleme göre ilgili sayfayı kendisi bulacaktır;
 ![struts2-action-resultwidlcard2](/images/java-platform/java-ee/struts2/struts2-action-resultwidlcard2.png)

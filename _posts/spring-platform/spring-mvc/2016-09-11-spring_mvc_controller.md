@@ -6,8 +6,8 @@ summary: Merhaba arkadaslar, bu yazımızda Spring MVC'deki Controller'a bakaca�
 image: /images/spring-platform/spring-mvc/spring_mvc_controller_image.png
 ---
 
-
 Merhaba arkadaslar, bu yazımızda Spring MVC'deki Controller'a bakacağız.
+
 ### Controller
 MVC mimarisinde önemli bir role sahiptir. MVC bir yaklaşım olduğu için kendisini MVC olarak nitelendiren teknolojiler/frameworkler vs implementasyonunu farklı yapabilirler. Şuana kadar Struts MVC, Servlet&JSP MVC, Spring MVC, Play MVC, Backbone gibi MVC mimarileri ile çalışma fırsatı buldum. Model-View-Controller tanımlarının kesin bir şekilde birbirinden ayrıldığı, mimarinin anlaşılması en kolay olanı sanırım Play MVC'dir. Gerçi Play'de ek olarak bir de Router var ama en temiz MVC diyebilirim. Mesela Backbone'da bir Controller yoktur, collection bu görevi üstlenmiştir.
 
@@ -17,7 +17,7 @@ Controller'ın amacı, model ile view arasında ki iletişimdir en temelde. Clie
 
 Bir önceki örneğimizdeki Controller'ı kullanalım;
 
-``` java
+{% highlight java linenos %}
 package com.wora.controller;
 
 import org.springframework.stereotype.Controller;
@@ -32,7 +32,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
   }
 
 }
-```
+{% endhighlight %}
 
 BaseController normal bir Java class'dır. Spring Controller olabilmesi için @Controller ile işaretlenmesi yeterlidir. @Controller annotation'u class level'dır, method level de kullanılamaz.
 
@@ -49,15 +49,15 @@ method signature olarak access modifiers olarak <strong>public</strong> return 
 Spring Controller methodunun 3 önemli kısmı vardır;
 
 * Request Map : URL/Request mapping yapar. HTTP methodunu belirler. URL mapping'de regex validasyon kullanabilir. Consumes, Produces tiplerini belirleyebilir. URL template belirleyebilir, örn : /api/{username}/products gibi. RequestMapping'de multiple url verebilirisiniz;
-``` java
+{% highlight java linenos %}
 @RequestMapping("/","home","index")
-```
+{% endhighlight %}
 
 * Parameters : Tüm parametre tiplerini alabilir. View'dan model'i parametre olarak alabilir. RequestParam, MatrixParam gibi parametreleri alabilir. Current request Locale bilgisini alabilir, Request input stream'ı ve/veya Response output stream'ı parametre olarak alabilir. Servlet request/response objelerini alabilir, currently authenticated user'ı principial olarak alabilir.
 * Return : Return type olarak ModelAndView, Model, String, void, ResponseBody gibi return type belirlenebilir. Dönüş tipine göre Spring ya view'ı bulup model ile render eder yada direk olarak response'a yazar. Void ile ResponseBody çok benzerdir. ResponseBody ise http response'ın body kısmına yazılır, void olursa response output stream'e yazılır.
 
 Örnek bir Controller üzerinden devam edelim;
-``` java
+{% highlight java linenos %}
 package com.kahveciefendi.sales.controller;
 
 import java.math.BigDecimal;
@@ -135,12 +135,12 @@ public class SalesController {
   }
 
 }
-```
+{% endhighlight %}
 
 Sales controller'ımız toplam 3 controller methoda sahip. Methodlar parametre olarak Model, RequestParam gibi parametreler alıyor. Return type olarak view name verdik. View name verdiğimizde template resolver tanımı olarak InternalResourceViewResolver kullanmalıyız. Bu resolver jsp,html gibi sayfaları prefix ve suffix gibi propertieslerle map eder ve controllerın işaret ettiği view name ile ilişklilendirilir. Genel de bu kullanılır zaten.
 
 Farklı bir Controller'a bakalım;
-``` java
+{% highlight java linenos %}
 package com.kahveciefendi.sales.controller;
 
 import java.security.Principal;
@@ -179,11 +179,11 @@ public class AuthanticationController {
   }
 
 }
-```
+{% endhighlight %}
 
 Parametre olarak user principal aldık. Auth olan biri yoksa exception atıyoruz. Spring üzerinde Exception handling konusuna deginecegim daha sonra ancak ufak da olsa exception handling'i nasıl yaptıgımıza bakalım;
 
-``` java
+{% highlight java linenos %}
 package com.kahveciefendi.sales.controller;
 
 import javax.servlet.http.HttpServletRequest;
@@ -215,7 +215,7 @@ public class ExceptionHandlingController {
   }
 
 }
-```
+{% endhighlight %}
 
 * ControllerAdvice ile global exception handling yapıyoruz ve return olarak hata detayını bind ettigimiz modelView'ı vererek /error sayfasını işaret ediyoruz.
 

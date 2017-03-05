@@ -8,7 +8,9 @@ image: images/spring-platform/spring-aop/Spring-AOP-–-Introduction.png
 
 
 Merhaba arkadaslar, bugün AOP paradigmasına giriş yapacağız. Klasik ilk yazılarımda olduğu gibi, nedir ne dedildir niçin kullanacağız gibi konulara değineceğim.
+
 ### AOP (Aspect Oriented Programming)
+
 İlk olarak bir programlama dili değildir. Aspect'in kelime anlamı endişe/çehre/cephe/ilgi gibi anlamları vardır. AOP'u tek başına ifade etmese de çoğu durumda işe yarayacaktır.
 
 AOP, ilgi odaklı programlama. Proje, modül, class vb birimler de ilgilerin ayrılması, sorumlulukların belirlenmesi, single responsibility principle gibi kavramlar AOP terminolojisinde oldukça yaygındır.

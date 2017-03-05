@@ -1,26 +1,11 @@
 ---
-layout: default
+layout: page
+title: Latest Posts
+search_omit: true
 ---
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
-      <div class="media">
-        {% if post.image %}
-        <div align="center">
-            <a style="color: #808000;" href="{{ site.baseurl }}{{ post.url }}"><img class="media-object" src="{{ post.image }}" /></a>
-        </div>
-        {% endif %}
-
-        <div class="media-body">
-          <div align="center">
-            <h4 class="media-heading"><a style="color: #808000;" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h4>
-          </div>
-          <p>
-            {{ post.summary }}..<a style="color: #808000;" href="{{ site.baseurl }}{{ post.url }}">Read More</a>
-          </p>
-        </div>
-      </div>
-    </article>
- {% endfor %}
-</div>
+<ul class="post-list">
+{% for post in site.posts limit:100 %}
+  <li><article><a href="{{ site.url }}{{ post.url }}">{{ post.title }} <span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time></span>{% if post.summary %} <span class="excerpt">{{ post.summary | remove: '\[ ... \]' | remove: '\( ... \)' | markdownify | strip_html | strip_newlines | escape_once }}</span>{% endif %}</a></article></li>
+{% endfor %}
+</ul>
