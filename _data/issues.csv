@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2675,212048470,2017-03-06 08:00:06,2017-03-06 07:59:43,"Cercasi aiuto nel trasporto di libri, giochi e strumenti musicali per ludoteca a #Montefortino",42.9430952,13.3448312,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""Cercasi aiuto nel trasporto di libri, giochi e strumenti musicali per ludoteca a #Montefortino"", ""data"": ""06/03/2017"", ""descrizione"": ""L'associazione Libra cerca aiuto per Montefortino (Fermo), uno dei paesi colpiti dal terremoto. Qui Libra sta allestendo una ludo-biblioteca e chiede aiuto per portare libri, giochi, strumenti musicali e altro ancora da Riano (Roma) a Montefortino. C'\u00e8 bisogno di 2 auto grandi o 1 furgoncino. Partenza prevista nella settimana 13-19 marzo. Contatto Monica Maggi."", ""email"": ""mailtomaggi.monica@gmail.com"", ""immagine"": """", ""indirizzo"": ""Via A. Petetta, Montefortino, FM, Marche, 63858, Italia"", ""lat"": ""42.9430952"", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1855451181389131/"", ""lon"": ""13.3448312"", ""tel"": ""3664008466""}","<pre><yamldata>tel: '3664008466'
+email: mailtomaggi.monica@gmail.com
+cosa: 'Cercasi aiuto nel trasporto di libri, giochi e strumenti musicali per ludoteca a #Montefortino'
+descrizione: 'L''associazione Libra cerca aiuto per Montefortino (Fermo), uno dei paesi colpiti dal terremoto. Qui Libra sta allestendo una ludo-biblioteca e chiede aiuto per portare libri, giochi, strumenti musicali e altro ancora da Riano (Roma) a Montefortino. C''è bisogno di 2 auto grandi o 1 furgoncino. Partenza prevista nella settimana 13-19 marzo. Contatto Monica Maggi.'
+indirizzo: 'Via A. Petetta, Montefortino, FM, Marche, 63858, Italia'
+lat: '42.9430952'
+lon: '13.3448312'
+link: 'https://www.facebook.com/groups/1758670357733881/permalink/1855451181389131/'
+immagine: ''
+data: 06/03/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2674,211949086,2017-03-05 20:59:16,2017-03-05 12:20:22,"Dono asciugatrice 5 kg, nuova mai usata #Perugia",43.07785,12.4287594,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Form""]",,http://i.imgur.com/soHLoA2.jpg,"{""cosa"": ""asciugatrice 5 kg"", ""data"": ""05/03/2017"", ""descrizione"": ""Dono asciugatrice Ardo AS 965 anno 2004. Nuova mai usata. Dimensioni 60x60x85 cm, 5 kg di carico, apertura frontale."", ""email"": ""estersereni@gmail.com"", ""immagine"": ""http://i.imgur.com/soHLoA2.jpg"", ""indirizzo"": ""Strada del Piano, Balanzano, Perugia, PG, UMB, 06135, Italia"", ""lat"": ""43.07785"", ""link"": """", ""lon"": ""12.4287594"", ""tel"": ""3472570075""}","<pre><yamldata>tel: '3472570075'
 email: estersereni@gmail.com
 cosa: 'asciugatrice 5 kg'
