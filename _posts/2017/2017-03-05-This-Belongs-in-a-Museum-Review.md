@@ -14,7 +14,7 @@ author: robk
 ---
 
 ![This Belongs in a Museum](/images/tbiam/cover.jpg){: .float-right}
-**Designer:** Uncredited\\
+**Designer:** Mike Richie\\
 **Publisher:** [Rather Dashing Games](http://www.ratherdashinggames.com/this-belongs-in-a-museum)\\
 **Year:** 2017\\
 **MSRP:** [$24.99](https://kalmbachhobbystore.com/product/game/704002)\\
