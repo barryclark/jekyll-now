@@ -1,10 +1,11 @@
 ---
-layout: page
+layout: post
 title: Eigen-vesting II. Optimize Your Portfolio With Optimization
 tags:
-- Python
-- Mathematics
+- Math
 - Finance
+- Theory
+- Practical
 summary: Part Two in a Series on How Math Fits in Modern Portfolio Theory
 ---
 

@@ -1,10 +1,11 @@
 ---
-layout: page
+layout: post
 title: Eigen-vesting I. Linear Algebra Can Help You Choose Your Stock Portfolio
 tags:
-- Python
-- Mathematics
+- Math
 - Finance
+- Theory
+- Practical
 summary: A Series on How Math Fits in Modern Portfolio Theory
 ---
 

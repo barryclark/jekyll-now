@@ -3,59 +3,59 @@ layout: page
 title: Archive
 ---
 
-Popular tags: <a href="#mathematics">Mathematics</a>, <a href="#machinelearning">Machine Learning</a>, <a href="#python">Python</a>
+
+<!---
+ Code from https://nildeala.fr/2015/02/10/jekyll-pro-tip-awesome-archive-page.html
+-->
+<style>
+.catbloc:not(:target) {
+    display: none;
+}
+</style>
+
+<nav>
+    <a href="#allposts">All</a>
+    {% for tag in site.tags %}
+        <a href="#{{ tag | first | remove:' ' }}"><strong>{{ tag | first }}</strong></a>{% if forloop.last %}.{% else %},{% endif %}
+    {% endfor %}
+</nav>
+
+<div class="catbloc" id="allposts">
+    <h2>All posts</h2>
+        <ul>
+            {% for post in site.posts %}
+                <li>
+                <time>{{ post.date | date: "%-d %B %Y" }}</time>
+                    <a href="{{ post.url }}">
+                    {{ post.title }}
+                    </a>
+                </li>
+            {% endfor %}
+        </ul>
+</div>
 
 
-## Reverse Chronological
-
-{% for post in site.posts %}
-  * {{ post.date | date_to_string }} &raquo; [ {{ post.title }} ]({{ post.url }})
+<div>
+{% for tag in site.tags %}
+    <div class="catbloc" id="{{ tag | first | remove:' ' }}">
+        <h2>{{ tag | first }}</h2>
+        
+        <ul>
+           {% for posts in tag %}
+             {% for post in posts %}
+               {% if post.url %}
+                 <li>
+                     <time>{{ post.date | date: "%-d %B %Y" }}</time>
+                   <a href="{{ post.url }}">
+                     {{ post.title }}
+                   </a>
+                 </li>
+               {% endif %}
+             {% endfor %}
+           {% endfor %}
+        </ul>
+    </div>
 {% endfor %}
+</div>
 
-
-## Mathematics
-
-
-<a name="mathematics"></a>
-
-{% for post in site.posts %}
-  {% for tag in post.tags %}
-    {% if tag == "Mathematics" %}
-  * {{ post.date | date_to_string }} &raquo; [ {{ post.title }} ]({{ site.baseurl }}{{ post.url }})
-
-     {{ post.summary }}
-    {% break %}
-    {% endif %}
-  {% endfor %}
-{% endfor %}
-
-## Machine Learning 
-
-<a name="machinelearning"></a>
-
-{% for post in site.posts %}
-  {% for tag in post.tags %}
-    {% if tag == "Machine Learning" %}
-  * {{ post.date | date_to_string }} &raquo; [ {{ post.title }} ]({{ site.baseurl }}{{ post.url }})
-
-     {{ post.summary }}
-    {% break %}
-    {% endif %}
-  {% endfor %}
-{% endfor %}
-
-## Python
-
-
-<a name="python"></a>
-
-{% for post in site.posts %}
-  {% for tag in post.tags %}
-    {% if tag == "Python" %}
-  * {{ post.date | date_to_string }} &raquo; [ {{ post.title }} ]({{ site.baseurl }}{{ post.url }})
-
-     {{ post.summary }}
-    {% break %}
-    {% endif %}
-  {% endfor %}
-{% endfor %}
+  {% include disqus.html %}

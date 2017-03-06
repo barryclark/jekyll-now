@@ -1,9 +1,9 @@
 ---
-layout: page
+layout: post
 title: Build Your Own Event-Based Backtester in Python
 tags:
-- Python
 - Finance
+- Practical
 summary: Use multiprocessing to speed up your backtesting!
 ---
 

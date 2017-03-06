@@ -1,9 +1,9 @@
 ---
-layout: page
+layout: post
 title: Why Blurring an Image is Similar to Warming Your Coffee
 tags:
-- Mathematics
-- Python
+- Math
+- Theory
 summary: Showing the connection between the heat equation and the Gaussian blur.
 ---
 

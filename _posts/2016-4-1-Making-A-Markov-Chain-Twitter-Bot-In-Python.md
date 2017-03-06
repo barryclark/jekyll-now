@@ -1,9 +1,11 @@
 ---
-layout: page
+layout: post
 title: Making a Markov Chain Twitter Bot in Python
 tags:
-- Mathematics
-- Python
+- Math
+- Statistics
+- Theory
+- Practical
 summary: For those of you who want to spam their followers with gibberish.
 ---
 

@@ -1,9 +1,9 @@
 ---
-layout: page
+layout: post
 title: Detect Communities in Your Steam Friends List with the Steam Web API and Graph Theory
 tags:
-- Mathematics
-- Python
+- Data
+- Practical
 summary: Using discrete math to analyze your Steam friends.
 ---
 

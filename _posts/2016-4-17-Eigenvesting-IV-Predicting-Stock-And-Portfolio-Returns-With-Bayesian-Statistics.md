@@ -1,10 +1,11 @@
 ---
-layout: page
+layout: post
 title: Eigen-vesting IV. Predicting Stock and Portfolio Returns With Bayesian Methods
 tags:
-- Mathematics
+- Math
 - Finance
-- Python
+- Theory
+- Statistics
 summary: Part four in a Series on How Math Fits in Modern Portfolio Theory
 ---
 

@@ -1,9 +1,10 @@
 ---
-layout: page
+layout: post
 title: How to Use Math to Win at Fantasy Football With a Lineup Optimizer
 tags:
-- Mathematics
+- Math
 - Sports
+- Practical
 summary: All the math in the world won't guarantee a win, but it could help.
 ---
 

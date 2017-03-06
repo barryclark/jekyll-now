@@ -1,8 +1,8 @@
 ---
-layout: page
+layout: post
 title: Blogging with iPython using Jekyll
 tags:
-- Python
+- Blog
 summary: Converting code to blogs with iPython.
 ---
 

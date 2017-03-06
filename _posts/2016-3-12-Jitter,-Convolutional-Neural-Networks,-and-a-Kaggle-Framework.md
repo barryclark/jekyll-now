@@ -1,8 +1,9 @@
 ---
-layout: page
+layout: post
 title: Jitter, Convolutional Neural Networks, and a Kaggle Framework
 tags:
 - Machine Learning
+- Practical
 summary: A recipe for approaching Kaggle competitions.
 ---
 

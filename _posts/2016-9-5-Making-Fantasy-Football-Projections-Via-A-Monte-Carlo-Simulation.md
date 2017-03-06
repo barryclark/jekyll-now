@@ -1,8 +1,11 @@
 ---
-layout: page
+layout: post
 title: Making Fantasy Football Projections Via A Monte Carlo Simulation
 tags:
-- Python
+- Statistics
+- Math
+- Sports
+- Practical
 summary: How to make fantasy football projections with historic data and Monte Carlo techniques.
 ---
 
