@@ -26,7 +26,7 @@ author: robk
 
 <h2>Prelude</h2>
 
-I'm not familiar with Rather Dashing Games' Drawn & Quartered series of tile-laying games of which [Pirates, Ninjas, Robots, & Zombies](http://amzn.to/2mqGlfA) and [Graveyards, Ghosts & Haunted Houses](http://amzn.to/2mUlhvI) are part of.  This Belongs in a Museum is the 3rd game in the series and can be integrated with the previous two. It has players taking the roles of competing archeologists trying to gain the most renown while avoiding mummies and finding ancient relics.
+I'm not familiar with Rather Dashing Games' Drawn & Quartered series of tile-laying games of which [Pirates, Ninjas, Robots, & Zombies](http://amzn.to/2mqGlfA) and [Graveyards, Ghosts & Haunted Houses](http://amzn.to/2mUlhvI) are part of.  This Belongs in a Museum is the 3rd game in the series and shares similar mechanics with the previous two. It has players taking the roles of competing archeologists trying to gain the most renown while avoiding mummies and finding ancient relics.
 
 Put on your fedora, grab your whip, and be ready to spout some famous one-liners...
 
@@ -60,6 +60,6 @@ I played This Belongs in a Museum with my 3 oldest kids. It was hit or miss when
 
 While it's not the deepest game in the world it certainly packs a lot of game into a small package with a fairly short playing time. With easy-to-learn rules, multiple ways to score points, and multiple ways to block other players from doing the game, it's a great value.
 
-I'm eager to snag the other two games in the Drawn & Quartered series to see how each plays on its own and how they integrate with each other.
+I'm eager to snag the other two games in the Drawn & Quartered series to see how each plays on its own.
 
 *A copy of This Belongs in a Museum was provided free for review by Rather Dashing Games.*
