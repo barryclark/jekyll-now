@@ -9,7 +9,7 @@ tags:
 - imperial assault
 - accessories
 layout: post
-description: This Belongs in a Museum is a quick and easy game about archaeology in the form of connected colored areas.
+description: These trays fit perfectly into your original game boxes and largely eliminate your organizational and storage worries.
 featured: feldherrassault.jpg
 author: frankg
 ---
