@@ -23,7 +23,7 @@ permalink: /people/
 ## Yuan Zhao
 ![Yuan Zhao](/images/Yuan.jpg){: .profile-photo }
 
-* PhD student, [Department of Applied Mathematics and Statistics](http://www.stonybrook.edu/commcms/ams2/)
+* Postdoctoral Associate, [Department of Neurobiology and Behavior (NBB)](https://medicine.stonybrookmedicine.edu/neurobiology), Stony Brook University (2016-current)
 
 ## Jon Beck
 
