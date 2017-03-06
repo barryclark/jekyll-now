@@ -647,19 +647,19 @@ Have a complete set of instructions.
     <td>Beginning of Lesson: What have you done so far? What point of the work are you at?</td>
   </tr>
   <tr>
-    <td></td>
+    <td>So far I have made a game with no instructions and it is quite easy.</td>
   </tr>
   <tr>
     <td>Activity:  What are you going to be doing this lesson? </td>
   </tr>
   <tr>
-    <td></td>
+    <td>I am going to add instructions to my game and make it harder by making the bat faster.</td>
   </tr>
   <tr>
     <td>End of Lesson: What point have you reached at the end of the lesson? Did you meet your goal? </td>
   </tr>
   <tr>
-    <td></td>
+    <td>I have successfully added clear instructions and made the bat faster. I am happy with my work this lesson.</td>
   </tr>
 </table>
 
@@ -671,13 +671,13 @@ Have a complete set of instructions.
     <td>What went well: How did I learn? What helped me learn today? </td>
   </tr>
   <tr>
-    <td></td>
+    <td>I learned by just doing what I needed to do and avoiding distractions. (Kind of).</td>
   </tr>
   <tr>
     <td>Even better if…: What could I do that would be even better? Improvements? </td>
   </tr>
   <tr>
-    <td></td>
+    <td>If I didn't get involved with Vincent and Jaspar’s business and just worked on my own game.</td>
   </tr>
 </table>
 
@@ -702,11 +702,10 @@ Week 6
     <td>Mine?</td>
   </tr>
   <tr>
-    <td>Enter the given criteria
+    <td>
 Complete your game
 </td>
-    <td>Enter your own Criteria
-</td>
+    <td>Complete teacher's objective</td>
   </tr>
 </table>
 
