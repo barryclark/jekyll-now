@@ -3,12 +3,12 @@
 
 # 修正点
 
-1. Topの記事一覧で日付出てほしかったので、下の方に追加。合わせて日付の書式も日本っぽく? YYYY/MM/DDに変更
+1. Topの記事一覧で日付出てほしかったので、下の方に追加。合わせて日付の書式も日本っぽく? YYYY.MM.DDに変更
 
 
 ```index.html
       <div class="date">
-          {{ post.date | date: "Posted on %B %e, %Y" }}
+          {{ post.date | date: "Posted on %Y.%m.%d" }}
       </div>
 
 ```
