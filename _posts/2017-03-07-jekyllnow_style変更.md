@@ -8,7 +8,7 @@
 
 ```
       <div class="date">
-          {{ post.date | date: "Posted on %Y.%m.%d" }}
+          \{{ post.date | date: "Posted on %Y.%m.%d" \}}
       </div>
 
 ```
@@ -31,7 +31,7 @@
 
 ```
    <div class="date">
-      {{ page.date | date: "Posted on %Y.%m.%d" }}
+      \{{ page.date | date: "Posted on %Y.%m.%d" \}}
    </div>
 
 ```
