@@ -32,7 +32,7 @@ featured: 10x10Chal.png
 author: robk
 ---
 
-February is over. It's now time to check how well I'm doing in my [10x10 Board Game Challenge](http://pawnsperspective.com/10x10-Board-Game-Challenge/). I've played a lot of games this month. I've gotten a few more plays in, but not as much as I hoped
+February is over. It's now time to check how well I'm doing in my [10x10 Board Game Challenge](http://pawnsperspective.com/10x10-Board-Game-Challenge/). I've played a lot of games this month...but not I've only gotten a few more plays in from my list.
 \\
 \\
 \\
