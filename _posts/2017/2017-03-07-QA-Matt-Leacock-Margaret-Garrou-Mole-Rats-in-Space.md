@@ -15,7 +15,7 @@ featured: matt-margaret.jpg
 author: robk
 ---
 
-I recently had a chance to review Peaceable Kingdom's new game, Mole Rats in Space. The game was designed by Matt Leacock and is a bit of a departure from Peaceable's usual fare. Matt Leacock and Margaret Garrou from Peaceable Kingdom were kind enough to answer some of my questions regarding the game. Before we get into things I just want to say thanks to Matt and Margaret for taking the time to answer my questions!
+I recently had a chance to review Peaceable Kingdom's new game, [Mole Rats in Space](http://pawnsperspective.com/Mole-Rats-in-Space-Review/). The game was designed by Matt Leacock and is a bit of a departure from Peaceable's usual fare. Matt Leacock and Margaret Garrou from Peaceable Kingdom were kind enough to answer some of my questions regarding the game. Before we get into things I just want to say thanks to Matt and Margaret for taking the time to answer my questions!
 
 <h2>Margaret Garrou</h2>
 *Games Product Development Manager*, Peaceable Kingdom
