@@ -13,7 +13,7 @@ featured: doubledragoniv.png
 author: robk
 ---
 
-![Double Dragon IV](/images/featured/doubledragoniv.png){: .float-right}
+![Double Dragon IV](/images/doubledragon/cover.jpg){: .float-right}
 **Developer:** [Arc System Works](http://www.arcsystemworks.jp/dd4/)\\
 **Publisher:** [Arc System Works](http://www.arcsystemworks.jp/dd4/)\\
 **Director:** Yoshihisa Kishimoto\\
