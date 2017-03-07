@@ -24,7 +24,7 @@ app.controller('appController', ['$scope', '$http', function($scope, $http) {
     var pie = new d3pie("pieChart", {
       "header": {
         "title": {
-          "text": "Temps de parole",
+          "text": "Temps de parole du 1er Février 2017 au 26 Février 2017",
           "fontSize": 24,
           "font": "open sans"
         },
