@@ -20,7 +20,7 @@ If you don’t have access to a large, high-quality dataset, your options includ
 Synthetic datasets can be created from unsupervised crawling/scraping or random/pattern-based/database-dump content generation. Synthetic data is quite useful for regularization and for bootstrapping a learning loop, but ultimately can't beat real data in terms of quality results.
 
 ### Cleaning existing datasets
-Using tools such as [Open Refine](http://openrefine.org/) and [https://www.trifacta.com/products/wrangler/](Data Wrangler) can help refine your dataset and make it higher quality, but doing is repetitive and very challenging work that can consume most of a data scientist’s time! The bigger the dataset, the bigger the pain in cleaning it.
+Using tools such as [Open Refine](http://openrefine.org/) and [Data Wrangler](https://www.trifacta.com/products/wrangler/) can help refine your dataset and make it higher quality, but doing is repetitive and very challenging work that can consume most of a data scientist’s time! The bigger the dataset, the bigger the pain in cleaning it.
 
 ### Using annotation services
 Annotation services, such as Mechanical Turk, CrowdFlower and Mighty AI (Spare 5) can outsource the drudgery from cleaning datasets, but have their own issues and limitations that require time to set up properly.
