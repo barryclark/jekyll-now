@@ -43,7 +43,7 @@ app.controller('appController', ['$scope', '$http', function($scope, $http) {
         "location": "bottom-left"
       },
       "size": {
-        "canvasWidth": 590,
+        "canvasWidth":900,
         "pieOuterRadius": "90%"
       },
       "data": data,
