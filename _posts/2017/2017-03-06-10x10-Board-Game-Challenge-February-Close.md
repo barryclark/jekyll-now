@@ -72,4 +72,3 @@ I was able to get a game of Hero Realms in with my oldest son one night when he 
 \\
 \\
 \\
-\\
