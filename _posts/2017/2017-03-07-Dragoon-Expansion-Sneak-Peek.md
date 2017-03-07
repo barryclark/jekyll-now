@@ -9,7 +9,6 @@ tags:
 - lay waste games
 layout: post
 description: Lay Waste Games is Kickstarting a Dragoon expansion soon. Here's a peek at what's inside!
-amazonterm: steve jackson games
 featured: dragoonexpsneak.jpg
 author: robk
 ---
