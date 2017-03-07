@@ -12,11 +12,12 @@ Perhaps the most concrete example of this, is that of the ever increasing number
 their own secret management systems using tooling like Vault to store their business secrets, with their info-sec teams then moving
 more towards of a role of supporting the implementation of secured by design principles; rather than being the driving force behind it.
 
-I believe that this cultural shift is due to nothing more than their being software available now that simply wasn't five years ago
-previously if you wanted to store your secrets, where you might once have had to go and ask the IT procurement department for budget to buy a HSM, and then
-spend three months integrating that into your workflow, now; with the rise of containerisation, and with the more widespread adoption of
-cloud services, there needed to be new software to solve problems that people were encountering.  The problems haven't changed, we have
-just started to see them faster, and think about them more as a result of that.
+A really good example of this is that more and more development teams are starting to implement secret management into their workflows, but not as a result of the info sec teams pushing forward, instead as a result of the tooling being available to help them do this programatically.  The result now being that info sec teams are moving to a role of supporting the overall defence in depth, rather than having to lead the charge in adoption of secret management best practice.
+
+Previously, if you wanted to store your secrets, you would have had to go and ask the IT procurement department for budget to buy a HSM, and spend three months integrating that into your workflow to see the benefits. Now, with the rise of containerisation, and with the widespread adoption of
+cloud services, people have been writing software to bring more low-cost automation to these workflows. 
+
+The problems haven't changed, we have just started to see them faster, and realise the impact of them sooner as a result.
 
 ## Software with secrets in mind
 
