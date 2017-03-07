@@ -15,6 +15,17 @@ featured: matt-margaret.jpg
 author: robk
 ---
 
+![Mole Rats in Space](/images/moleratsinspace/cover.png){: .float-right}
+**Designer:** Matt Leacock\\
+**Publisher:** [Peaceable Kingdom](http://www.peaceablekingdom.com/product-detail/mole-rats-in-space)\\
+**Year:** 2017\\
+**MSRP:** [$19.99](http://amzn.to/2mq05jw)\\
+**Players:** 2-4\\
+**Play Time:** 20 min\\
+**Ages:** 7+\\
+**Rules Available Online:** [Yes](http://www.peaceablekingdom.com/docs/default-source/Game-Instructions/gmc20_molerats.pdf?sfvrsn=0)\\
+**BGG:** [Mole Rats in Space](https://boardgamegeek.com/boardgame/213882/mole-rats-space)
+
 I recently had a chance to review Peaceable Kingdom's new game, [Mole Rats in Space](http://pawnsperspective.com/Mole-Rats-in-Space-Review/). The game was designed by Matt Leacock and is a bit of a departure from Peaceable's usual fare. Matt Leacock and Margaret Garrou from Peaceable Kingdom were kind enough to answer some of my questions regarding the game. Before we get into things I just want to say thanks to Matt and Margaret for taking the time to answer my questions!
 
 <h2>Margaret Garrou</h2>
