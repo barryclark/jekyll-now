@@ -574,6 +574,14 @@
   location_gr: Θεσσαλονίκη, Τρίκαλα, Καλαμπάκα, Αλμυρός
   location_en: Thessaloniki, Trikala, Kalambaka, Almyros
 
+- company_gr: Win2
+  company_en: Win2
+  url: https://www.win2.gr
+  category_gr: Τεχνικό γραφείο - Πολιτικοί Μηχανικοί
+  category_en: Civil Engineers
+  location_gr: Πανόραμα, Μακεδονία, Ελλάδα
+  location_en: Πανόραμα, Μακεδονία, Ελλάδα
+
 - company_gr: Πανεπιστήμιο Λευκωσίας
   company_en: University of Nicosia
   url: http://www.unic.ac.cy
