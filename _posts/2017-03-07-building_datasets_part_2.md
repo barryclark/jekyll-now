@@ -10,6 +10,8 @@ The most important consideration for quality is the relevance of the dataset. Yo
 
 For example, in [this video](https://www.youtube.com/watch?v=mN6MrzL1i78), Pinterest Chief Scientist Jure Leskovec describes the lessons he learned by training systems using data 'slightly' different from real-world production data.
 
+![https://www.youtube.com/watch?v=mN6MrzL1i78](../images/data_distribution.png "When real-world data has a different distribution than training dataset")
+
 Pinterest created a powerful 'Interest Classifier' by isolating and labelling a subset of 'pins' (this is Pinterest, remember) for some popular areas of interest. Once deployed in production, however, it never really generalized as promised, since the real-world data had a different distribution than their artificial training dataset.
 
 If you don’t have access to a large, high-quality dataset, your options include:
