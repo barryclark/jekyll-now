@@ -20,7 +20,7 @@ If you don’t have access to a large, high-quality dataset, your options includ
 Synthetic datasets can be created from unsupervised crawling/scraping or random/pattern-based/database-dump content generation. Synthetic data is quite useful for regularization and for bootstrapping a learning loop, but ultimately can't beat real data in terms of quality results.
 
 ### Cleaning existing datasets
-Using tools such as [Open Refine](http://openrefine.org/) and [Data Wrangler](https://www.trifacta.com/products/wrangler/) can help refine your dataset and make it higher quality, but doing is repetitive and very challenging work that can consume most of a data scientist’s time! The bigger the dataset, the bigger the pain in cleaning it.
+Using tools such as [Open Refine](http://openrefine.org/) and [Data Wrangler](https://www.trifacta.com/products/wrangler/) can help refine your dataset and make it higher quality, but doing is repetitive and very challenging work that can consume most of a data scientist’s time! The bigger the dataset, the bigger the headache involved in cleaning it.
 
 ### Using annotation services
 Annotation services, such as Mechanical Turk, CrowdFlower and Mighty AI (Spare 5) can outsource the drudgery from cleaning datasets, but have their own issues and limitations that require time to set up properly.
@@ -34,7 +34,7 @@ Test moving data into the system skeleton early. This will help understand the p
 #### Rule #8: Know the freshness requirements of your system.
 Real-time systems are exponentially more costly and difficult to build. How real-time must your data be? How quickly is it changing? Think about it: categorizing news, sports or politics can be built using old content, and will probably work well with new data. But predicting movements of the stock market requires up-to-the millisecond information.
 
-Drop real-time constraint on your dataset if you can.
+Drop the real-time constraint from your dataset if you can.
 
 #### Rule #30: The importance of weight-sampled data, don’t arbitrarily drop it!
 In the academic world, the term 'Independent and identically distributed' (iid) is used. Using a dataset that reflects the real world is fundamental.
@@ -42,15 +42,14 @@ In the academic world, the term 'Independent and identically distributed' (iid) 
 #### Rule #32: Re-use code in your training pipeline and your serving pipeline.
 The tricks, heuristics and manipulation performed on the training data set must make sense in production. Small changes to data might significantly diminish accuracy.
 
-#### Rule #33: If you produce a model based on the data until January 5th, test the model on
-the data from January 6th and after.
+#### Rule #33: If you produce a model based on the data until January 5th, test the model on the data from January 6th and after.
 If you are going to predict the future, validate your algorithm on future data as well.
 
 #### Rule #34: In binary classification for filtering (such as spam detection or determining interesting e-mails), make small, short-term sacrifices in performance to ensure you get very clean data.
 It is so tempting to build retroaction loops based only on low-confidence or erroneous guesses made by an algorithm. This introduces severe bias, however, and will degrade performance instead of increasing it in the long term. It is better to ask for retroaction on both low- and high-confidence / validated true positive guesses.
 
 #### Rule #42: Don’t expect diversity, personalization, or relevance to be as correlated with popularity as you think they are.
-It is very tempting to use readily available data (e.g., weblog, transaction log or click log) as a proxy to learn something else. In practice, is often fails. 
+It is also very tempting to use readily available data (e.g., weblog, transaction log or click log) as a proxy to learn something else. In practice, is often fails. 
 
 In summary, size and quality are the yin and yang for training data sets. Size without quality will produce reliable, yet potentially inaccurate results, while having only a small amount of quality data brings generalization into question. 
 
