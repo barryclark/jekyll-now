@@ -8,9 +8,9 @@ author: flock3
 
 There has been a cultural shift in recent years around who is responsible for implementing security.
 
-Perhaps the most concrete example of this, is that of the ever increasing number of development teams, implementing 
+Perhaps the most concrete example of this, is the ever increasing number of development teams, implementing 
 their own secret management systems using tooling like Vault to store their business secrets, with their info-sec teams then moving
-more towards of a role of supporting the implementation of secured by design principles; rather than being the driving force behind it.
+more towards of a role of supporting the implementation of secured-by-design principles; rather than being the driving force behind it.
 
 A really good example of this is that more and more development teams are starting to implement secret management into their workflows, but not as a result of the info sec teams pushing forward, instead as a result of the tooling being available to help them do this programatically.  The result now being that info sec teams are moving to a role of supporting the overall defence in depth, rather than having to lead the charge in adoption of secret management best practice.
 
@@ -23,7 +23,7 @@ The problems haven't changed, we have just started to see them faster, and reali
 
 To give a concrete example of this kind of realisation in mind, one of the teams I most recently worked with had re-platformed their stack
 from tin in their data centers to using cloud providers (Amazon in their case), and at the time of re-platforming, they moved to containers in
-their application.  One of the concerns they had, was that they were using a public cloud provider to store their docker images. So if they
+their application. One of the concerns they had, was that they were using a public cloud provider to store their docker images. So if they
 did what they always had, and stored their secrets in the source code, and had that source code and config switched it into place, then their 
 production database credentials would have been available in their image, if the cloud provider was then ever compromised, then they could 
 have a much more serious breach on their hands, than that which access to the source would normally give an attacker.
@@ -36,7 +36,7 @@ Now when the team is developing the software and they have a new secret to store
 or any other easy solution, because storing it in the Vault that lives in the environment, is not that much more complicated.
 
 Implementing some security can seen exceptionally daunting, especially with a new piece of technology that is otherwise unknown, and it must be said
-that Vault does not to much to ease people into the process of understanding what it does, but (in my opinion) much more importantly; how it does it.
+that Vault does not do much to ease people into the process of understanding what it does, but (in my opinion) much more importantly; how it does it.
 
 ## How they authenticate and authorize
 
@@ -81,21 +81,21 @@ The basic workflow of using Rancher as a source of truth can be broken down like
 
 ## Problems they came across
 
-* The first and most obvious problem is that they had to write their own software, their software lives in scope, and has to be in an exceptionally privilved positiont to be able to make ault authentication tokens that have many policies applied.  This means that a compromise of this intermediary layer, is a compromise of all environment secrets
-* You have to figure out how to store your root vault keys. When a vault server comes online, it has to be un-sealed so it can access secrets, which means you must find a way to store something more secret than your secrets: the root secret.
-* Vault makes the assumption that the Vault server lives in a safe place, so it does not do huge amounts to protect the master key in memory, or do much else to stop itself being subjected to an attack, you therefore need to plan in your infra where your Vault server will live
+* The first and most obvious problem is that they had to write their own software; their software lives in scope, and has to be in an exceptionally privileged position to be able to make Vault authentication tokens that have many policies applied. This means that a compromise of this intermediary layer, is a compromise of all environment secrets.
+* You must figure out how to store your root vault keys. When a vault server comes online, it has to be un-sealed so it can access secrets, which means you must find a way to store something more secret than your secrets: the root secret.
+* Vault makes the assumption that the Vault server lives in a safe place, so it does not do huge amounts to protect the master key in memory, or do much else to stop itself being subjected to an attack. Therefore you need to plan in your infra where your Vault server will live.
 
 
 
 ## Why I believe you should ignore all of the above problems
 
-Implementing Vault into your team, into their mindsets and then into your stack is really not a simple task, it is not a "one click" solution to all of your security concerns
-and it is by no means a silver bullet of increased security.  What using secret storage solutions like Vault really does well, is help to change the mindset of how some developers
+Implementing Vault into your team, into their mindsets and then into your stack is really not a simple task. It is not a "one click" solution to all of your security concerns
+and it is by no means a silver bullet of increased security.  What using a secret storage solution like Vault really does well, is help to change the mindset of how some developers
 in your team might think about security, and responsibility for security. 
 
-I recognise that this article has been very much based around "perfect" environments, cloud hosted, immutable infrastructure, every neck-bearded hipster term going, and I am certain that most people reading this, don't run in that kind of environment.  That doesn't mean however, that you should be put off using Vault.
+I recognise that this article has been very much based around "perfect" environments, cloud hosted, immutable infrastructure, every neck-bearded hipster term going, and I am certain that most people reading this, don't run in that kind of environment.  That doesn't mean that you should be put off using Vault.
 
-Vault is not more complex on a physically based environment, if anything it is quite a bit easier, Vault really does not like being an ephemeral service, so treating it as such in a docker container, causes you some headaches you were not originally expecting.
+Vault is no more complex on a physically based environment, if anything it is quite a bit easier. Vault really does not like being an ephemeral service, so treating it as such in a docker container, causes you some headaches you were not originally expecting.
 
 
 ## Conclusion
