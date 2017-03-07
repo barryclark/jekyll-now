@@ -35,9 +35,6 @@ work to truly integrate Vault into their workflow.
 Now when the team is developing the software and they have a new secret to store, there is very little temptation just to store it in the source
 or any other easy solution, because storing it in the Vault that lives in the environment, is not that much more complicated.
 
-Implementing some security can seen exceptionally daunting, especially with a new piece of technology that is otherwise unknown, and it must be said
-that Vault does not do much to ease people into the process of understanding what it does, but (in my opinion) much more importantly; how it does it.
-
 ## How they authenticate and authorize
 
 One of the big problems with any system that manages any aspect of security, is authentication and authorization. Vault has a number of paradidms 
@@ -100,7 +97,7 @@ Vault is no more complex on a physically based environment, if anything it is qu
 
 ## Conclusion
 
-Take half a day of your time, do a POC of vault in your environment, and really see how it could help you better manage your secrets.  Vault is a big (and fairly scary) jump, but it is not insurmountable, it's got good community support, and the documentation is very much up to scratch.  So fly! And may your secrets forever be secure.
+Take half a day of your time, do a POC of Vault or another secret manager in your environment, and really see how it could help you better manage your secrets.  Vault is a big (and fairly scary) jump, but it is not insurmountable, it's got good community support, and the documentation is very much up to scratch.  So fly! And may your secrets forever be secure.
 
 
 ## Reference
