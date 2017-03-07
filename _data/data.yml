@@ -508,7 +508,7 @@
   category_gr: Ιδιωτικό ΚΤΕΟ
   category_en: Car roadworthiness certification
   location_gr: Ιστιαία, Εύβοια, Ελλάδα
-  location_en: Istiaia, Evia, Greece    
+  location_en: Istiaia, Evia, Greece
 
 - company_gr: Φακές Εγκλουβής
   company_en: Englouvi's Lentils
@@ -516,7 +516,7 @@
   category_gr: Παραγωγός φακής
   category_en: Lentil farmer
   location_gr: Εγκλουβή, Λευκάδα, Ελλάδα
-  location_en: Englouvi, Lefkada, Greece   
+  location_en: Englouvi, Lefkada, Greece
   
 - company_gr: Chronostore
   company_en: Chronostore
@@ -524,7 +524,7 @@
   category_gr: Κατάστημα ρολογιών
   category_en: Wrist watch store
   location_gr: Κέρκυρα, Ελλάδα
-  location_en: Corfu, Greece      
+  location_en: Corfu, Greece
 
 - company_gr: Here Comes The Paint TShirt Printing
   company_en: Here Comes The Paint TShirt Printing
@@ -532,7 +532,47 @@
   category_gr: Εκτυπώσεις TShirts
   category_en: TShirt Printing
   location_gr: Αττική, Ελλάδα
-  location_en: Attica, Greece    
+  location_en: Attica, Greece
+  
+- company_gr: Cardia Cafe
+  company_en: Cardia Cafe
+  url: http://cardia.cafe
+  category_gr: Καφέ
+  category_en: Coffee shop
+  location_gr: Αθήνα, Αττική, Ελλάδα
+  location_en: Athens, Attica, Greece
+
+- company_gr: Alexandros Hair Salon
+  company_en: Alexandros Hair Salon
+  url: http://alexandroshairsalon.gr
+  category_gr: Κομμωτήριο
+  category_en: Hair salon
+  location_gr: Αθήνα, Αττική, Ελλάδα
+  location_en: Athens, Attica, Greece
+
+- company_gr: Oranje Beach Bar
+  company_en: Oranje Beach Bar
+  url: http://www.oranjebus.com
+  category_gr: Beach Bar
+  category_en: Beach Bar
+  location_gr: Αλμυρός, Μαγνησία, Ελλάδα
+  location_en: Almyros, Magnisia, Greece
+
+- company_gr: Fitness Tempo
+  company_en: Fitness Tempo
+  url: https://www.facebook.com/fitnesstempo
+  category_gr: Γυμναστήριο
+  category_en: Gym
+  location_gr: Τρίκαλα, Θεσσαλία, Ελλάδα
+  location_en: Trikala, Thessaly, Greece
+
+- company_gr: Διαμερίσματα
+  company_en: Apartments
+  url: https://www.airbnb.com/s?host_id=720099
+  category_gr: Διαμερίσματα προς βραχυχρόνια ενοικίαση. Επικοινωνία με gale5ole@gmail.com
+  category_en: Short term lets. Contact gale5ole@gmail.com
+  location_gr: Θεσσαλονίκη, Τρίκαλα, Καλαμπάκα, Αλμυρός
+  location_en: Thessaloniki, Trikala, Kalambaka, Almyros
 
 - company_gr: Πανεπιστήμιο Λευκωσίας
   company_en: University of Nicosia
