@@ -45,7 +45,9 @@ I recently had a chance to review Peaceable Kingdom's new game, Mole Rats in Spa
 
 *Peaceable Kingdom was looking to reach a slightly older game player than most of our current games, which range from ages 2-6 years. Mole Rats in Space seemed to have the right amount of complexity to keep gamer kids engaged and because it’s a cooperative game, appeal to non-gamer kids who can help each other if the game feels difficult. The rules are definitely longer and more complex than Peaceable Kingdom’s other games, but we feel confident that families who enjoy our cooperative games will love the challenge!*
 
+
 ---
+
 
 <img src="/images/interviews/matt-leacock.jpg" width="300" class="float-right" alt="Matt Leacock" style="margin-left: 15px;"/>
 <h2>Matt Leacock<h2>
