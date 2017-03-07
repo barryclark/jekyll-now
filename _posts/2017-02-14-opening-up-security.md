@@ -6,22 +6,22 @@ author: flock3
 
 ## Overview
 
-There has been a cultural shift in recent years around who is reposible for implementing security.
+There has been a cultural shift in recent years around who is responsible for implementing security.
 
 Perhaps the most concrete example of this, is that of the ever increasing number of development teams, implementing 
 their own secret management systems using tooling like Vault to store their business secrets, with their info-sec teams then moving
-more towards of a role of supporing the implementation of secured by design principles; rather than being the driving force behind it.
+more towards of a role of supporting the implementation of secured by design principles; rather than being the driving force behind it.
 
-I belive that this cultural shift is due to nothing more than their being software available now that simply wasn't five years ago
-previously if you wanted to store your secrets, you might go and ask the IT procurement department for budget to buy a HSM, and then
-spend three months integrating that into your workflow, but with the rise of containerisation, and with the more widespread adoption of
-cloud services, there needed to be new software to solve problems that people were encountering.  The problems havent changed, we have
+I believe that this cultural shift is due to nothing more than their being software available now that simply wasn't five years ago
+previously if you wanted to store your secrets, where you might once have had to go and ask the IT procurement department for budget to buy a HSM, and then
+spend three months integrating that into your workflow, now; with the rise of containerisation, and with the more widespread adoption of
+cloud services, there needed to be new software to solve problems that people were encountering.  The problems haven't changed, we have
 just started to see them faster, and think about them more as a result of that.
 
 ## Software with secrets in mind
 
-To give a concrete example of this kind of realisation in mind, one of the teams I most recently worked with had replatformed their stack
-from tin in their data centers to using cloud providers (Amazon in their case), and at the time of replatforming, they moved to containerising
+To give a concrete example of this kind of realisation in mind, one of the teams I most recently worked with had re-platformed their stack
+from tin in their data centers to using cloud providers (Amazon in their case), and at the time of re-platforming, they moved to containers in
 their application.  One of the concerns they had, was that they were using a public cloud provider to store their docker images. So if they
 did what they always had, and stored their secrets in the source code, and had that source code and config switched it into place, then their 
 production database credentials would have been available in their image, if the cloud provider was then ever compromised, then they could 
@@ -50,10 +50,10 @@ as a source of truth for deciding if something can authenticate, and then what r
 * EC2 instance calls the Amazon Metadata API 
 * EC2 instance retrieves the PKCS signed metadata from the Amazon Metadata API
 * * (That metadata takes the form of the servers instance id, any tags it has assigned to it, and various other pieces of information)
-* EC2 instance sends that signed metadata to Vault server along with a NONCE (3)
+* EC2 instance sends that signed metadata to Vault server along with a NONCE (1)
 * Vault validates the signing of that data against Amazon's public key 
 * Vault calls Amazon's API to confirm the identity of the instance, and to find out what roles it can have
-* Vault generates a cubbyhole token (4) and returns it to the EC2 instance
+* Vault generates a cubbyhole token (2) and returns it to the EC2 instance
 
 For an authentication and authorization system, the above is actually quite simple and (dare I say it) fairly elegant, but it wasn't a good solution for the 
 team, because as you might have guessed (when it passed a nonce); it's only good for one authentication attempt.
@@ -80,21 +80,29 @@ The basic workflow of using Rancher as a source of truth can be broken down like
 
 ## Problems they came across
 
-* The first and most obvious problem is that they had to write their own software, their software lives in scope, and has to be in an exceptionally privilved positiont
-to be able to make vault authentication tokens that have many policies applied.  This means that a compromise of this intermediary layer, is a compromise of all 
-environment secrets
+* The first and most obvious problem is that they had to write their own software, their software lives in scope, and has to be in an exceptionally privilved positiont to be able to make ault authentication tokens that have many policies applied.  This means that a compromise of this intermediary layer, is a compromise of all environment secrets
+* You have to figure out how to store your root vault keys. When a vault server comes online, it has to be un-sealed so it can access secrets, which means you must find a way to store something more secret than your secrets: the root secret.
+* Vault makes the assumption that the Vault server lives in a safe place, so it does not do huge amounts to protect the master key in memory, or do much else to stop itself being subjected to an attack, you therefore need to plan in your infra where your Vault server will live
 
 
 
+## Why I believe you should ignore all of the above problems
+
+Implementing Vault into your team, into their mindsets and then into your stack is really not a simple task, it is not a "one click" solution to all of your security concerns
+and it is by no means a silver bullet of increased security.  What using secret storage solutions like Vault really does well, is help to change the mindset of how some developers
+in your team might think about security, and responsibility for security. 
+
+I recognise that this article has been very much based around "perfect" environments, cloud hosted, immutable infrastructure, every neck-bearded hipster term going, and I am certain that most people reading this, don't run in that kind of environment.  That doesn't mean however, that you should be put off using Vault.
+
+Vault is not more complex on a physically based environment, if anything it is quite a bit easier, Vault really does not like being an ephemeral service, so treating it as such in a docker container, causes you some headaches you were not originally expecting.
 
 
+## Conclusion
 
-
-
+Take half a day of your time, do a POC of vault in your environment, and really see how it could help you better manage your secrets.  Vault is a big (and fairly scary) jump, but it is not insurmountable, it's got good community support, and the documentation is very much up to scratch.  So fly! And may your secrets forever be secure.
 
 
 ## Reference
 
-* (1) NID - Network Intrusion Detection
-* (2) HID - Host Intrusion Detection
-
+* (1) [NONCE](https://en.wikipedia.org/wiki/Cryptographic_nonce) - A single use token that is automatically generated.  Vault breaks this paradigm however by re-using the NONCE on subsequent requests, which makes it less of a NONCE and more of a general token
+* (2) [Cubbyhole Tokens](https://www.vaultproject.io/docs/concepts/response-wrapping.html) - Vault has an excellent mechanism for secure token delivery.  It will give you a token that you can use exactly once, you use that token to get your much longer lived token out of the Vault.  This means that the mechanism that you use to deliver the token to the client does not have to be perfectly secret, because if the client tries to use that single use token after an attacker has already gone in and retrieved the longer lived token, you can flash warning lights all day to say that your environment might have been compromised.
