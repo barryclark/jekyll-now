@@ -1,3 +1,8 @@
+---
+layout: post
+title: Angular2 Windows Authentication (Web api)
+---
+
 # Angular2 Windows Authentication (Web api)
 
 ### Description
