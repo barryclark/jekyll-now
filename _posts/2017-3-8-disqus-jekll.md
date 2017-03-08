@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Create a blog with Jekyll and host it with github pages
+title: Add Comments for Jekyll with Disqus
 date: 2017-3-8 17:03:33
 ---
 
@@ -36,7 +36,6 @@ This post is to domenstrate how to add disqus into jekyII. I have done it recent
 	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 </div>
 {% endif %}
-
 ```
 Now you are all set, you should be able to see the same comments block as mine. 
 
