@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2690,212801728,2017-03-08 17:28:30,2017-03-08 17:28:09,A Colle d'#Arquata e S. Giorgio di #Cascia servono fieno per mucche e mangime per conigli,42.7284709,13.3101503,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""A Colle d'#Arquata e S. Giorgio di #Cascia servono fieno per mucche e mangime per conigli"", ""data"": ""08/03/2017"", ""descrizione"": ""L'associazione Libra chiede aiuto per alcuni allevatori di Colle d' Arquata che hanno bisogno di fieno per le loro mucche e di S.Giorgio di Cascia dove c'\u00e8 necessit\u00e0 di granturco e mangime per conigli."", ""email"": ""maggi.monica@gmail.com"", ""immagine"": """", ""indirizzo"": ""Strada Provinciale 20 Colle, Arquata del Tronto, AP, Marche, Italia"", ""lat"": ""42.7284709"", ""link"": ""https://twitter.com/libra2puntozero/status/839450222405255169"", ""lon"": ""13.3101503"", ""tel"": ""3664008466""}","<pre><yamldata>tel: '3664008466'
+email: maggi.monica@gmail.com
+cosa: 'A Colle d''#Arquata e S. Giorgio di #Cascia servono fieno per mucche e mangime per conigli'
+descrizione: 'L''associazione Libra chiede aiuto per alcuni allevatori di Colle d'' Arquata che hanno bisogno di fieno per le loro mucche e di S.Giorgio di Cascia dove c''è necessità di granturco e mangime per conigli.'
+indirizzo: 'Strada Provinciale 20 Colle, Arquata del Tronto, AP, Marche, Italia'
+lat: '42.7284709'
+lon: '13.3101503'
+link: 'https://twitter.com/libra2puntozero/status/839450222405255169'
+immagine: ''
+data: 08/03/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2689,212486796,2017-03-07 18:29:39,2017-03-07 16:33:38,Nuove aperture della #zonarossa #Norcia,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""07/03/2017"", ""descrizione"": ""Nuove aperture della zonarossa. Piazza Vittorio Veneto, e tratti di Via dei Priori, Via Colombo e Via Anicia."", ""link"": ""https://www.facebook.com/ComuneNorcia/photos/a.530545117051128.1073741829.527183190720654/1035212869917681/?type=3&theater"", ""titolo"": ""Nuove aperture della #zonarossa #Norcia""}","<pre><yamldata>titolo: 'Nuove aperture della #zonarossa #Norcia'
 descrizione: 'Nuove aperture della zonarossa. Piazza Vittorio Veneto, e tratti di Via dei Priori, Via Colombo e Via Anicia.'
 link: 'https://www.facebook.com/ComuneNorcia/photos/a.530545117051128.1073741829.527183190720654/1035212869917681/?type=3&theater'
