@@ -170,14 +170,14 @@ title: Πως αγοράζουμε, πουλάμε, ξοδεύουμε και δ
 
 Μπορείτε να χρησιμοποιήσετε κάποια από αυτές τις υπηρεσίες:
 
-- [Cashila](https://www.cashila.com)
+- <strike>[Cashila](https://www.cashila.com)</strike>
 - [Bitwala](https://bitwa.la)
 
 ### <a name="sepatobitcoin"></a> Πως μπορώ να δεχτώ έμβασμα σε τράπεζα της Ευρωζώνης και να μετατρέψω τα Ευρώ σε Bitcoin;
 
 Μπορείτε να χρησιμοποιήσετε:
 
-- [Cashila](https://www.cashila.com)
+- <strike>[Cashila](https://www.cashila.com)</strike>
 
 ### <a name="promote"></a>  Πως θα διαφημίσω ότι δέχομαι Bitcoin ως τρόπο πληρωμής;
 
@@ -185,7 +185,7 @@ title: Πως αγοράζουμε, πουλάμε, ξοδεύουμε και δ
 - Προσθέστε κάποια σχετική [εικόνα](https://en.bitcoin.it/wiki/Promotional_graphics) (π.χ. Bitcoin Accepted Here) στο κατάστημά σας και στην ιστοσελίδα σας.
 - Στείλε μας email (αναγράφεται στο τέλος της σελίδας) ώστε να σας προσθέσουμε στη σελίδα αυτή. Ή κάνετε ένα Pull Request στο GitHub!
 
-Τελευταία ενημέρωση: 2017-03-07
+Τελευταία ενημέρωση: 2017-03-08
 
 <!-- <div class="posts">
   {% for post in site.posts %}
