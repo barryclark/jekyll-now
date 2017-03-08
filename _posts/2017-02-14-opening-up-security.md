@@ -37,7 +37,7 @@ or any other easy solution, because storing it in the Vault that lives in the en
 
 ## How they authenticate and authorize
 
-One of the big problems with any system that manages any aspect of security, is authentication and authorization. Vault has a number of paradidms 
+One of the big problems with any system that manages any aspect of security, is authentication and authorization. Vault has a number of paradigms 
 that they have implemented, that help you to solve these problems.
 
 ### EC2 Based authentication with Vault
