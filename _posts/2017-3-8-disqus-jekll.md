@@ -21,6 +21,7 @@ This post is to domenstrate how to add disqus into jekyII. I have done it recent
         huangzhenhong
 ```
 - Go to folder _includes and edit disqus.html, make sure following script is there.
+
 ```
 {% if site.disqus %}
 <div class="comments">
@@ -37,6 +38,7 @@ This post is to domenstrate how to add disqus into jekyII. I have done it recent
 </div>
 {% endif %}
 ```
+
 Now you are all set, you should be able to see the same comments block as mine. 
 
 **Note: please don't directly use my shortname in your website**
