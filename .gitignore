@@ -8,3 +8,7 @@ Gemfile.lock
 node_modules
 package.json
 _posts/.Ulysses-Group.plist
+
+README.md
+
+style.scss
