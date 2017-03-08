@@ -116,9 +116,7 @@ ul.rs{
     }
 }
 .rs li a:hover{
-    font-size: 1.5rem;
     transition: all ease-in 0.3s;
-    margin-top: 2px;
 }
 .rs a.icons-about{
     font-size: 2.5rem;
@@ -127,11 +125,20 @@ ul.rs{
 }
 .rs a.icons-about:hover{
     color: rgb(41, 173, 235);
-    font-size: 2.3rem;
     transition: all ease-in 0.3s;
-    margin-top: 2px;
 }
-
+.rs a.icons-twitter:hover{
+    color:$tw;
+}
+.rs a.icons-instagram:hover{
+    color:$ig;
+}
+.rs a.icons-behance:hover{
+    color:$be;
+}
+.rs a.icons-linkedin:hover{
+    color:$ln;
+}
 .rs a.about{
     font-family: akularegular;
     font-size: 2rem;
@@ -220,7 +227,7 @@ ul.rs{
     top: 0px;
 }
 .gradient:before{
-    background: url(../images/coolpattern.png) repeat;
+    background: url(../images/coolpattern80.png) repeat;
     content: " ";
     width: 100%;
     height: 100%;
@@ -228,7 +235,7 @@ ul.rs{
     opacity: .5;
 }
 .cover{
-    background: url(../images/coolpattern.png) repeat;
+    background: url(../images/coolpattern80.png) repeat;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -332,6 +339,7 @@ article.post a img.feat{
         background: url(../images/fakephoto.png);
         background-size: cover;
         background-position-y: center;
+        height: 100%;
         @include mobile-small{
             height: 90%;
             flex-direction: column-reverse;
@@ -352,9 +360,12 @@ article.post a img.feat{
     ul.rs{
         position: relative;
         order:3;
-        flex-grow:1;
+        margin-bottom: 1.0em!important;
         @include mobile-small{
             width: 100%;
+        }
+        .li{
+            flex-grow: 1;
         }
     }
 }
@@ -412,7 +423,7 @@ article.post a img.feat{
 // single-project
 
 .single-project{
-    background: linear-gradient(45deg, rgba(252,30,134,0.50) 0%, rgba(41,173,235,0.50) 100%), url(../images/coolpattern.png) repeat;
+    background: linear-gradient(45deg, rgba(252,30,134,0.50) 0%, rgba(41,173,235,0.50) 100%), url(../images/coolpattern80.png) repeat;
     background-attachment: fixed;
     display: flex;
     .gradient{
@@ -755,12 +766,6 @@ header.single-header a.home:hover{
     display: block;
     margin: auto;
     
-}
-
-#single-post .twitter-tweet{
-    margin-left:auto;
-    margin-right: auto;
-    margin-bottom:20px!important;
 }
 
 
