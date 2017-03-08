@@ -14,7 +14,7 @@ more towards of a role of supporting the implementation of secured-by-design pri
 
 A really good example of this is that more and more development teams are starting to implement secret management into their workflows, but not as a result of the info sec teams pushing forward, instead as a result of the tooling being available to help them do this programatically.  The result now being that info sec teams are moving to a role of supporting the overall defence in depth, rather than having to lead the charge in adoption of secret management best practice.
 
-Previously, if you wanted to store your secrets, you would have had to go and ask the IT procurement department for budget to buy a HSM, and spend three months integrating that into your workflow to see the benefits. Now, with the rise of containerisation, and with the widespread adoption of
+Previously, if you wanted to store your secrets, you would have had to go and ask the IT procurement department for budget to buy a HSM(1), and spend three months integrating that into your workflow to see the benefits. Now, with the rise of containerisation, and with the widespread adoption of
 cloud services, people have been writing software to bring more low-cost automation to these workflows. 
 
 The problems haven't changed, we have just started to see them faster, and realise the impact of them sooner as a result.
@@ -48,10 +48,10 @@ as a source of truth for deciding if something can authenticate, and then what r
 * EC2 instance calls the Amazon Metadata API 
 * EC2 instance retrieves the PKCS signed metadata from the Amazon Metadata API
 * * (That metadata takes the form of the servers instance id, any tags it has assigned to it, and various other pieces of information)
-* EC2 instance sends that signed metadata to Vault server along with a NONCE (1)
+* EC2 instance sends that signed metadata to Vault server along with a NONCE (2)
 * Vault validates the signing of that data against Amazon's public key 
 * Vault calls Amazon's API to confirm the identity of the instance, and to find out what roles it can have
-* Vault generates a cubbyhole token (2) and returns it to the EC2 instance
+* Vault generates a cubbyhole token (3) and returns it to the EC2 instance
 
 For an authentication and authorization system, the above is actually quite simple and (dare I say it) fairly elegant, but it wasn't a good solution for the 
 team, because as you might have guessed (when it passed a nonce); it's only good for one authentication attempt.
@@ -102,5 +102,6 @@ Take half a day of your time, do a POC of Vault or another secret manager in you
 
 ## Reference
 
-* (1) [NONCE](https://en.wikipedia.org/wiki/Cryptographic_nonce) - A single use token that is automatically generated.  Vault breaks this paradigm however by re-using the NONCE on subsequent requests, which makes it less of a NONCE and more of a general token
-* (2) [Cubbyhole Tokens](https://www.vaultproject.io/docs/concepts/response-wrapping.html) - Vault has an excellent mechanism for secure token delivery.  It will give you a token that you can use exactly once, you use that token to get your much longer lived token out of the Vault.  This means that the mechanism that you use to deliver the token to the client does not have to be perfectly secret, because if the client tries to use that single use token after an attacker has already gone in and retrieved the longer lived token, you can flash warning lights all day to say that your environment might have been compromised.
+* (1) HSM - A "Hardware Security Module" a physical device designed to locally and securely encrypt data
+* (2) [NONCE](https://en.wikipedia.org/wiki/Cryptographic_nonce) - A single use token that is automatically generated.  Vault breaks this paradigm however by re-using the NONCE on subsequent requests, which makes it less of a NONCE and more of a general token
+* (3) [Cubbyhole Tokens](https://www.vaultproject.io/docs/concepts/response-wrapping.html) - Vault has an excellent mechanism for secure token delivery.  It will give you a token that you can use exactly once, you use that token to get your much longer lived token out of the Vault.  This means that the mechanism that you use to deliver the token to the client does not have to be perfectly secret, because if the client tries to use that single use token after an attacker has already gone in and retrieved the longer lived token, you can flash warning lights all day to say that your environment might have been compromised.
