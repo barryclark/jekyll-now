@@ -6,7 +6,7 @@
 name: Bring Your Own Shovel
 
 # Short bio or description (displayed in the header)
-description: If you're coming here to dig, at least come prepared
+description: If you're coming here to dig at least come prepared
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
@@ -18,7 +18,7 @@ avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/je
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email:
+  email: leigh@madsky.co.uk
   facebook:
   flickr:
   github: barryclark/jekyll-now
