@@ -1,9 +1,8 @@
 ---
 layout: post
-title: Angular2 Windows Authentication (Web api)
+title: "Angular2 Windows Authentication (Web api)"
 ---
 
-## Description
 Windows Authentication is required for intranet web sites, I have been working for a manufacturing company for 4 years, we have domain account/ Active Directory for security checkup in each sites. So if we need to develop a Angular2 application which can be used all over the domain, then we need to think about the security very seriously, this is just a small demo with very limit functions.
 
 ## ASP.NET Web Api
