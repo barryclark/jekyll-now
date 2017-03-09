@@ -15,17 +15,6 @@ featured: legionherorealms.jpg
 author: robk
 ---
 
-![This Belongs in a Museum](/images/tbiam/cover.jpg){: .float-right}
-**Designer:** Mike Richie\\
-**Publisher:** [Rather Dashing Games](http://www.ratherdashinggames.com/this-belongs-in-a-museum)\\
-**Year:** 2017\\
-**MSRP:** [$24.99](https://kalmbachhobbystore.com/product/game/704002)\\
-**Players:** 2-4\\
-**Play Time:** 20-30 min\\
-**Ages:** 10+\\
-**Rules Available Online:** [Yes](http://media.wix.com/ugd/8b63b7_2e6aed984c6145f78cdf8676ba2515d3.pdf)\\
-**BGG:** Pending
-
 What's got 240 card sleeves, 4 dividers, 1 Captain Koska promo card, and can fit up to 500 of your fully-sleeved Hero Realms cards?
 
 Let me show you.
