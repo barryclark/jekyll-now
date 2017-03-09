@@ -15,7 +15,7 @@ featured: dragoonexpansion.jpg
 author: robk
 ---
 
-![Dragoon](/images/dragoon/cover.jpg){: .float-right}
+![Dragoon](/images/dragoon/cover.png){: .float-right}
 **Designers:**  Jake Given, Zach Given, Jonathan Ritter-Roderick \\
 **Publisher:** [Lay Waste Games](http://www.laywastegames.com/)\\
 **Year:** 2015 (2017 expansion)\\
