@@ -60,7 +60,7 @@ Along with equipment the Rogue also has the ability to steal gold from villages/
 
 Rogues are also a bit fragile when it comes to fighting dragons and barbarians. They automatically lose all combat if their Poison Dagger is not equipped. To help balance things out a Rogue can only be brought into combat by landing on another player or another player landing on them.
 
-Want more details on the expansion rules? You can find them [here](https://www.dropbox.com/s/jv36dw5moa5prj1/Dragoon_instructions_012317.pdf?dl=0 (still a work in progress).
+Want more details on the expansion rules? You can find them [here](https://www.dropbox.com/s/jv36dw5moa5prj1/Dragoon_instructions_012317.pdf?dl=0) (still a work in progress).
 
 <h2>Pieces</h2>
 
