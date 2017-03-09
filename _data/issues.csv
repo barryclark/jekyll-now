@@ -1,4 +1,14 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2701,213111319,2017-03-09 21:19:08,2017-03-09 17:36:13,Offro laboratorio con destinazione artigianale (con forno a legna) #Camerino,43.1004829,13.0696382,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Form""]",,,"{""data"": ""09/03/2017"", ""descrizione"": ""Offro Laboratorio con destinazione artigianale alimentare da affittare circa 70 mq con bagno e antibagno. All'interno presente un forno a legna gi\u00e0 usato per pane e dolci."", ""email"": ""sergio.cintioli@gmail.com"", ""immagine"": """", ""indirizzo"": ""SP167, Camerino, MC, Marche, 62032, Italia"", ""lat"": ""43.1004829"", ""link"": """", ""lon"": ""13.0696382"", ""tel"": ""3356614439""}","<pre><yamldata>tel: '3356614439'
+email: sergio.cintioli@gmail.com
+descrizione: 'Offro Laboratorio con destinazione artigianale alimentare da affittare circa 70 mq con bagno e antibagno. All''interno presente un forno a legna già usato per pane e dolci.'
+indirizzo: 'SP167, Camerino, MC, Marche, 62032, Italia'
+lat: '43.1004829'
+lon: '13.0696382'
+link: ''
+immagine: ''
+data: 09/03/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2700,213068216,2017-03-09 15:45:07,2017-03-09 15:18:43,Ctg Vallesina di Jesi,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Ctg Vallesina di Jesi"", ""data"": ""09/03/2017"", ""descrizione"": ""Centro Turistico Giovanile Vallesina di Jesi che ha deciso di dare il via ad una raccolta fondi da devolvere al progetto di ristrutturazione e riapertura del cinema teatro San Paolo di San Severino Marche, danneggiato dal sisma."", ""email"": """", ""iban"": ""IT 02 M 06055 21205 00000000 22161"", ""intestazione"": ""Ctg Pro cinema San Paolo"", ""link"": ""http://www.comune.sanseverinomarche.mc.it/comunicati-cms/terremoto-una-valigia-piena-di-speranza-per-ricostruire-il-cineteatro-san-paolo-si-muove-il-ctg-della-vallesina/"", ""postale"": """"}","<pre><yamldata>chi: 'Ctg Vallesina di Jesi'
 descrizione: 'Centro Turistico Giovanile Vallesina di Jesi che ha deciso di dare il via ad una raccolta fondi da devolvere al progetto di ristrutturazione e riapertura del cinema teatro San Paolo di San Severino Marche, danneggiato dal sisma.'
 intestazione: 'Ctg Pro cinema San Paolo'
