@@ -12,10 +12,15 @@ permalink: /t-shirts/
 ul {
 	list-style: none;
 }
+
+li {
+	display: inline-block;
+	margin: 1em;
+}
 </style>
 
 <ul>
-{% for tee in site.data.teespring %}
+{% for tee in site.data.tshirts %}
 <li><a href="{{ tee.link }}">
 <figure>
 <img src="{{ tee.image }}" alt="{{ tee.title }}" />
