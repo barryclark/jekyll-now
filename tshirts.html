@@ -31,7 +31,9 @@ figure img:hover {
 <img itemprop="image" src="{{ tee.image }}" alt="{{ tee.title }}" />
 <figcaption>
 <div itemprop="name">{{ tee.title }}</div>
-<span itemprop="offers" itemscope itemtype="http://schema.org/Offer"><div itemprop="price">$15.99</div></span>
+<div><span itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+<span itemprop="priceCurrency" content="USD">$</span><span itemprop="price">15.99</span>
+</span></div>
 </figcaption>
 </figure>
 </a></li>
