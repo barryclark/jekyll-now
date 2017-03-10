@@ -1,0 +1,16 @@
+---
+layout: page
+title: T-Shirt Shop
+permalink: /t-shirts/
+---
+
+<ul>
+{% for tee in site.data.teespring %}
+<li><a href="{{ tee.link }}">
+<figure>
+<img src="{{ tee.image }}" alt="{{ tee.title }}" />
+<figcaption>{{ tee.title }}</figcaption>
+</figure>
+</a></li>
+{% endfor %}
+</ul>
