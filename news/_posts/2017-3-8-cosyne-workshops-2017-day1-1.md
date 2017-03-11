@@ -3,12 +3,14 @@ layout: post
 title: COSYNE Workshops, Day 1 Part 1
 category: news
 ---
-Written by David Hocker
+Workshop Speakers:
 - *Gordon Berman*
 - *Adam Calhoun*
 - *Mark Schnitzer*
 
 ----
+(Written by David Hocker)
+
 The before first day of COSYNE workshops we arrived yesterday with an ominous “There’s a huge snowstorm coming tomorrow. HUGE!” which didn’t fail to deliver:
 
 <p style = "text-align: center;"> 
@@ -30,7 +32,7 @@ So with the prophecy of the storm now validated, and the recent news of my frien
 
 ----
 
-Since this is my first time at COSYNE, I had no idea what to expect in terms of the conference, but the climate here is outstanding. There is so much stimulating work being done, and the workshop component allows you to dive into more of the topics more tailored to your own personal tastes and interests. My problem has been just like a kid in a candy shop, though: I want to see all of it! I decided to focus the morning primarily on the session chaired by Adam Calhoun at Princeton, and listened to some great talks about automating the analysis of characterizing animal behavior form experiments. *Gordon Berman* gave a great talk entitled “Predictability and hierarchy in animal behavior,”  where he followed up on a traditional mode of conceptualizing behaviors from [Karl Lashley](http://psychology.fas.harvard.edu/people/karl-lashley), such that individual actions can lead to a hierarchy of other behaviors that are more relevant from an evolutionary standpoint. One of the other ways to start getting at this hierarchy of behaviors though is how both Gordon and Adam conceptualized their hierarchy, which is terms of timescales of behavior. Basically, short timescale actions like a fly moving in one direction or the other may be part of a longer timescale behavior such as pursuit or investigating a mate. Using that hierarchy idea as a backdrop, Gordon discussed his code to categorize behaviors using a clustering method in a totally automated fashion.  plug for his code: [github.com/gordonberman](http://github.com/gordonberman)
+Since this is my first time at COSYNE, I had no idea what to expect in terms of the conference, but the climate here is outstanding. There is so much stimulating work being done, and the workshop component allows you to dive into more of the topics more tailored to your own personal tastes and interests. My problem has been just like a kid in a candy shop, though: I want to see all of it! I decided to focus the morning primarily on the session for [automoated tools for high dimensional neuro-behavioral analysis](http://www.cosyne.org/c/index.php?title=Workshops2017_01_02) organized by Adam Calhoun, Talmo Pereira, Scott Linderman, John Cunningham, and Liam Paninski. I heard some great talks about automating the analysis of characterizing animal behavior form experiments, beginning with *Gordon Berman* giving a great talk entitled “Predictability and hierarchy in animal behavior.”  Here he followed up on a traditional mode of conceptualizing behaviors from [Karl Lashley](http://psychology.fas.harvard.edu/people/karl-lashley), such that individual actions can lead to a hierarchy of other behaviors that are more relevant from an evolutionary standpoint. One of the other ways to start getting at this hierarchy of behaviors though is how both Gordon and Adam Calhoun conceptualized their hierarchy, which is terms of timescales of behavior. Basically, short timescale actions like a fly moving in one direction or the other may be part of a longer timescale behavior such as pursuit or investigating a mate. Using that hierarchy idea as a backdrop, Gordon discussed his code to categorize behaviors using a clustering method in a totally automated fashion. Plug for his code: [github.com/gordonberman](http://github.com/gordonberman)
 
 <p style = "text-align: center;"> 
 <img src="/images/flymap_gordon.png" width="400">
