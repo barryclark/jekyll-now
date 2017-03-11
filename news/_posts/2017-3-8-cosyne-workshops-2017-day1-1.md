@@ -11,7 +11,7 @@ Workshop Speakers:
 ----
 (Written by David Hocker)
 
-The before first day of COSYNE workshops we arrived yesterday with an ominous “There’s a huge snowstorm coming tomorrow. HUGE!” which didn’t fail to deliver:
+Before the first day of COSYNE workshops we arrived with an ominous “There’s a huge snowstorm coming tomorrow. HUGE!” which didn’t fail to deliver:
 
 <p style = "text-align: center;"> 
 <img src="/images/snowbird.JPG" width="400">
