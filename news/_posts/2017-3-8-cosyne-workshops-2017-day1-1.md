@@ -21,7 +21,7 @@ The view from our hotel room on the first night
 </p>
 
 <p style = "text-align: center;"> 
-<img src="/images/snowtree.JPG" width="400">
+<img src="/images/snowtree.jpg" width="400">
 </p>
 <p style = "text-align: center;"> 
 and the aftermath of the storm
