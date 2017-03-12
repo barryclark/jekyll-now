@@ -19,7 +19,7 @@ Privateer Press has released its March collection. You can find the full release
 PIP Code: 1023 \\
 Price: $34.99 \\
 Cover Type: Soft Cover \\
-Hardcover Available: Yes \\
+Hardcover Available: Yes
 
 [PIP 31122 Captain Allison Jakes (Jakes II) - Cygnar Warcaster](http://privateerpress.com/warmachine/gallery/cygnar/warcasters/captain-allison-jakes)\\
 Base Size: 30mm \\
@@ -28,7 +28,7 @@ Price: $15.99\\
 Model Materials: Metal \\
 Model Count: 1 \\
 Packaging: Blister \\
-Release Date: March 08, 2017 \\
+Release Date: March 08, 2017 
 
 [PIP 31123 Brickhouse - Cygnar Heavy Warjack](http://privateerpress.com/warmachine/gallery/cygnar/warjacks/brickhouse)\\
 Base Size: 50mm \\
