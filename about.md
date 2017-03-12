@@ -19,7 +19,7 @@ permalink: /about/
 ### More Information ### 
 
 
- I am currently studying html5, css, bootstrap, react, jquery, jquery-ajax, jsp, spring!!
+ I am currently studying html5, css, bootstrap, react, jquery, jquery-ajax, jsp, spring!! <br/>
  I Studied Google-Firebase.
 
 ### Contact me ###
