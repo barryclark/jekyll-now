@@ -23,7 +23,7 @@ Hardcover Available: Yes \\
 
 [PIP 31122 Captain Allison Jakes (Jakes II) - Cygnar Warcaster](http://privateerpress.com/warmachine/gallery/cygnar/warcasters/captain-allison-jakes)\\
 Base Size: 30mm \\
-PIP Code: 31122 \\
+PIP Code: 31122 \\ 
 Price: $15.99\\
 Model Materials: Metal \\
 Model Count: 1 \\
