@@ -9,7 +9,6 @@ layout: default
     {{ content }}
   </div>
   
-    <div class="category">
  {% assign category = site.my_categories | where: "slug", post.category %}
   {% assign category = category[0] %}
   {% if category %}
@@ -27,7 +26,6 @@ layout: default
       {% endif %}
     {% endfor %}
   {% endif %}
-      </div>
   
   <div class="date">
     Written on {{ page.date | date: "%B %e, %Y" }}
