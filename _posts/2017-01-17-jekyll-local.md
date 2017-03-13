@@ -1,6 +1,7 @@
 ---
 layout: post
 title: jekyllで作成したページをローカルでプレビューする
+categories: ['env development']
 ---
 
 UbuntuでGithub Pagesに公開するjekyllで作成したサイトをローカルで確認できるようになることが目標。

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: ブログ開始
+categories: ['雑談']
 ---
 
 ブログというか雑記帳としてGitHub Pagesを使っていくことにする。<br>

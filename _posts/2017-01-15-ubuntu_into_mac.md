@@ -1,6 +1,7 @@
 ---
 layout: post
 title: iMacのNVIDIA GPUをデュアルブートしたUbuntu16.04のnvidia-dockerで使う
+categories: ['env development']
 ---
 
 マシンは iMac(27-inch, Late 2013) でプロセッサは以下。<br>

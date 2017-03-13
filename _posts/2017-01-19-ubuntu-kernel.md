@@ -1,6 +1,7 @@
 ---
 layout: post
 title: ubuntuでlinux kernelのversionを固定する
+categories: ['env development']
 ---
 
 Ubuntu 16.04 LTSでlinux kernelのversionを固定する。<br>
