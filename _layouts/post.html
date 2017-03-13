@@ -8,7 +8,16 @@ layout: default
   <div class="entry">
     {{ content }}
   </div>
-
+  
+    <div class="category">
+{% assign category = site.my_categories | where: "slug", post.category %}
+{% assign category = category[0] %}
+{% if category %}
+    {% capture category_content %}<a class="label" href="{{ category.url }}">{{ category.name }}</a>{% endcapture %}
+{% endif %}
+      <p id="post-meta">{{ category_content }}</p>
+      </div>
+  
   <div class="date">
     Written on {{ page.date | date: "%B %e, %Y" }}
   </div>
