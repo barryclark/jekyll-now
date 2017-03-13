@@ -2,7 +2,7 @@
 layout: post
 title: You're up and running!
 published: true
-category: general
+categories: general
 tags: [job, arbeit]
 ---
 
@@ -13,7 +13,3 @@ Next you can update your site name, avatar and other options using the _config.y
 The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
 
 GRREATFFF
-
-{% for post in site.tags.job %}
- <li><span>{{ post.date | date_to_string }}</span> &nbsp; <a href="{{ post.url }}">{{ post.title }}</a></li>
-{% endfor %}

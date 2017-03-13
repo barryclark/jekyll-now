@@ -1,4 +1,0 @@
----
-slug: general
-name: General
----
