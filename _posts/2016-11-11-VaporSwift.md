@@ -3,7 +3,7 @@ layout: post
 title: Introduction to Server-Side Swift with Vapor
 ---
 
-Recently I started to explore Server Side Swift. With Swift v3.0 it has been noticable activity with new Heroku Build packs and emerging new platforms. That all make sense to a programmer, write server side and client in same langauge & tools, makes development easier without context switching. 
+Recently I started to explore Server Side Swift and this is my first article on this topic. With Swift v3.0 it has been noticable activity with new Heroku Build packs and emerging new platforms. That all make sense to a programmer, write server side and client in same langauge & tools, makes development easier without context switching. 
 
 Recent [study](http://www.sciencedirect.com/science/article/pii/S0093934X14001266) indicates that human brain experiences extra stress switching natural languages as it does when we switch programming langauge. Good example of this are live interpreters we see at international conferences, that work is so intence that single person only can do it for 15min at a time, then another takes over on rotation. Personally exerianced this effect while living in Japan and be in discussions among friends speacking single language English, Japanese or Russian. After swithcing and interpreting this friendly conversation for 30min it turned out to be exhausting work. 
 
