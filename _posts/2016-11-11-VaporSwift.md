@@ -2,6 +2,7 @@
 layout: post
 title: Introduction to Server-Side Swift with Vapor
 ---
+![Vapor]({{ site.baseurl }}/images/vapor/vapor-droplet.png) ![Swift]({{ site.baseurl }}/images/vapor/swift.png)
 
 Recently I started to explore Server Side Swift and this is my first article on this topic. With Swift v3.0 it has been noticable activity with new Heroku Build packs and emerging new platforms. That all make sense to a programmer, write server side and client in same langauge & tools, makes development easier without context switching. 
 
@@ -26,7 +27,13 @@ drop.get("hello") { request in
 }
 drop.run()
 ```
-Compile and run this code
+But typing code is overrated let Vapor template do the work for us. Execute thsi command on your terminal
+
+```
+vapor new Hello
+``` 
+
+This will generate a starting biolerplate code for our server. Compile and run this code
 
 ```
 vapor build
