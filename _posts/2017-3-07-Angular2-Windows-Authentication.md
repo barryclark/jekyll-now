@@ -109,7 +109,7 @@ Add the orgins which will access your WEB API, for example: http://localhost
    ``` 
 ### Deploy WebApi to IIS 7
 
-> The deployment procedure should be very simple, I will not list the procedures here.
+> The deployment procedure should be very simple, I will not list the procedures here. [host-aspnetcore-webapi-in-iis](https://huangzhenhong.github.io/host-aspnetcore-webapi-in-iis/)
 
 **Notice:** Make sure "Windows Authentication" is enabled and "Anonymous Authentication" is disabled. This is to ensure all requests are using windows authentication. 
 
