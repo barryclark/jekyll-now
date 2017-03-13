@@ -10,4 +10,4 @@ His research interests include signal and image processing, data-driven methods,
 # Safety Confirmation Information for Redouane Lguensat
 (inspired from the great Shinichi Mochizuki)
 
-> 25 Feb 2017, Brest, France, I'm doing fine.
+> 13 Mar 2017, Brest, France, I'm doing fine.
