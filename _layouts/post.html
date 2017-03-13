@@ -12,47 +12,44 @@ layout: default
 
 
 
-  <div class="date">
-  <br />
-  <br />
-    <center>{% include share-page.html %}</center>
-    Veröffentlicht am {{ page.date | date: "%d.%m.%Y" }}
-  <!--</div>-->
 
-<!-- <div style="font-size: 12px;"> -->
-  <br />Ähnliche Artikel:
-  {% for post in site.tags.job %} -
-  <a href="{{ post.url }}">{{ post.title }}</a>
+  <div class="date">
+    <center>{% include share-page.html %}</center>
+
+
+
+  Ähnliche Artikel:
+  {% assign hasSimilar = '' %}
+  {% for post in site.related_posts %}
+      {% assign postHasSimilar = false %}
+      {% for tag in post.tags %}
+          {% for thisTag in page.tags %}
+              {% if postHasSimilar == false and hasSimilar.size < 6 and post != page and tag == thisTag %}
+                  {% if hasSimilar.size == 0 %}
+                  {% endif %}
+                      <a href="{{ site.url }}{{ post.url }}">{{ post.title }}
+                      {% if post.series %}
+                          (Series: {{ post.series }})
+                      {% endif %}
+                    </a> -
+                  {% capture hasSimilar %}{{ hasSimilar }}*{% endcapture %}
+                  {% assign postHasSimilar = true %}
+              {% endif %}
+          {% endfor %}
+      {% endfor %}
   {% endfor %}
-<!--
-  {% comment %}
-  =======================
-  The purpose of this snippet is to list all the tags you have in your site.
-  =======================
-  {% endcomment %}
-  {% for tag in tags %}
-  	<a href="#{{ categories | slugify }}"> {{ categories }} </a>
-  {% endfor %} -->
+  {% if hasSimilar.size > 0 %}
+  {% endif %}
+
+  <br />
+  Veröffentlicht am {{ page.date | date: "%d.%m.%Y" }}
 </div>
 
-
-  <!-- Kategorien anzeigen
-  <div class="post-categories">
-    {% if post %}
-      {% assign categories = post.categories %}
-    {% else %}
-      {% assign categories = page.categories %}
-    {% endif %}
-    {% for category in categories %}
-    <a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}</a>
-    {% unless forloop.last %}&nbsp;{% endunless %}
-    {% endfor %}
-  </div>
-
--->
-
-
-
+<center>
+<script type="text/javascript"><!--
+amazon_ad_tag = "aufdruckfancy-21"; amazon_ad_width = "728"; amazon_ad_height = "90"; amazon_ad_link_target = "new"; amazon_ad_categories = "acfen";//--></script>
+<script type="text/javascript" src="http://ir-de.amazon-adsystem.com/s/ads.js"></script></center>
+<br />
 
 
 

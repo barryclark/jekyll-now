@@ -6,7 +6,7 @@
 name: aufdruckfancy
 
 # Short bio or description (displayed in the header)
-description: 
+description:
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
@@ -15,13 +15,20 @@ avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/je
 # Flags below are optional
 #
 
+
+
+#pagination -> http://www.sigmainfy.com/blog/how-to-add-jekyll-pagination-next-previous-post-link.html
+paginate: 4
+paginate_path: "/blog/page:num/"
+
+
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
   email: marvin@6uhrmittag.de
   facebook:
   flickr:
-  github: 
+  github:
   instagram:
   linkedin: marvinheimbrodt
   pinterest:
@@ -52,7 +59,7 @@ baseurl: ""
 #
 # !! You don't need to change any of the configuration flags below !!
 #
--markdown: redcarpet		
+-markdown: redcarpet
 -highlighter: pygments
 
 permalink: /:title/
