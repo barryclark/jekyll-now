@@ -60,6 +60,15 @@ permalink: /:title/
 # The release of Jekyll Now that you're using
 version: v1.2.0
 
+#Kategorie und Tags hinzufügen
+collections:
+  my_categories:
+    output: true
+    permalink: /blog/category/:name/
+  my_tags:
+    output: true
+    permalink: /blog/tag/:name/
+
 # Set the Sass partials directory, as we're using @imports
 sass:
   style: :expanded # You might prefer to minify using :compressed
