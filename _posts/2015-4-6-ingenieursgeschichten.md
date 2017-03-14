@@ -3,7 +3,7 @@ layout: post
 title: Der Ingenieur ist der Gearschte. Aber immer der Held. Am Ende.
 published: true
 categories: [arbeit]
-tags: [job, arbeit, elektro, ingenieur]
+tags: [jobgedanke, elektronik]
 ---
 
 Was vor zwei Wochen ein einfaches „Natürlich löte ich dir mal eben die Platinen.“ war, wurde zu einer meiner lehrreichsten Lektionen.

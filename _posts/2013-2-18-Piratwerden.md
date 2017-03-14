@@ -3,7 +3,7 @@ layout: post
 title: Heute wollte ich Pirat werden, aber
 published: true
 categories: general
-tags: [piraten, politik]
+tags: [politik]
 ---
 
 Die Piraten haben viele Probleme, aber bei Parteien geht es um die grundsätzlichen [Ziele](http://wiki.piratenpartei.de/Ziele "Ziele"). Ich finde, dass unsere Zeit gerade vieles von dem braucht, was die Piraten repräsentieren.

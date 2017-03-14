@@ -1,24 +1,14 @@
 ---
-layout: page
-permalink: /categories/
-title: Categories
+layout: default
+title: Tags
+permalink: /tags/
 ---
 
+<div class="home">
+	<h1 class="page-heading">All tags</h1>
 
-<div id="archives">
-{% for category in site.categories %}
-  <div class="archive-group">
-    {% capture tag_name %}{{ tag | first }}{% endcapture %}
-    <div id="#{{ tag_name | slugize }}"></div>
-    <p></p>
-
-    <h3 class="category-head">{{ tag_name }}</h3>
-    <a name="{{ tag_name | slugize }}"></a>
-    {% for post in site.tags[tag_name] %}
-    <article class="archive-item">
-      <h4><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></h4>
-    </article>
-    {% endfor %}
-  </div>
-{% endfor %}
+	<p class="post-meta" style="text-align: justify;">
+	{% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
+	{% assign tags = site_tags | split:',' | sort %}
+	</p>
 </div>

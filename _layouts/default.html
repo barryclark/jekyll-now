@@ -67,7 +67,32 @@
 </div>
 
 -->
+
+<!-- NAVIGATION -->
+
     <div id="main" role="main" class="container">
+
+      <div id="navigation">
+      <h1></h1>
+      {% assign tags = site.tags | sort %}
+      {% for tag in tags %}
+       <span class="site-tag">
+          <li><a href="/tags/{{ tag | first | slugify }}/" style="">
+              <!--
+              <a href="/tag/{{ tag | first | slugify }}/"
+                  style="font-size: {{ tag | last | size  |  times: 4 | plus: 80  }}%">
+              -->
+                  {{ tag[0] | replace:'-', ' ' }}
+                  <!-- ANZAHL ({{ tag | last | size }}) -->
+          </a>
+        </li>
+      </span>
+      {% endfor %}
+      </div>
+<!-- NAVIGATION ENDE -->
+
+
+
       {{ content }}
     </div>
 
