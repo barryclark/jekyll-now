@@ -10,7 +10,7 @@ tags:
 - imperial assault
 layout: post
 description: I wanted to take a moment to spotlight the print work of InspiredCraftwork, a custom print shop out of Daly City, California, owned and operated by Derick Hui.
-featured:
+featured: InspiredCraftwork.jpg
 author: frankg
 ---
 
