@@ -1,7 +1,7 @@
 ---
 layout: post
 title: You're up and running!
-published: true
+published: false
 categories: general
 tags: [notiz]
 ---
