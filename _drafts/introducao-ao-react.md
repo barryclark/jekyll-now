@@ -604,7 +604,7 @@ Salvando a lista de notícias localmente
 
 A nossa implementação está quase pronta! Para finalizar, vamos salvar a lista de notícias no ```localStorage```. Dessa forma não perdemos nossas alterações quando fechamos o navegador.
 
-<pre><code class="hljs javascript">
+``` jsx
 class Feed extends Component {
   constructor(props) {
     super(props);
@@ -647,6 +647,6 @@ class Feed extends Component {
     )
   }
 }
-</code></pre>
+```
 
 Modificamos apenas a inicialização do ```state``` e o método ```handleNewPost```.
