@@ -1,10 +1,5 @@
 # Node js + Android health Care App
-## Producer Introduce 
-### name :  Dongjoonlee 
-### nation : south korea
-### date of birth : 1993.04.06
-### univ : gachon university
-### email : ehdwns46@naver.com
+# github : https://github.com/leedongjoon121/android_health_app
 <br/><br/>
 ##  기능 : 로그인 & 회원가입, 운동 리스트 제공, 운동 일정표 관리, 음악 재생,  헬스장 위치 제공(GoogleMap)
 ## 유의사항 : Node 서버를 실행 시킨 상태에서 구동이 가능함, (추후 개선 예정)
