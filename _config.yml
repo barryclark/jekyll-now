@@ -13,7 +13,7 @@ avatar: https://zns2101.github.io/images/logo1.png
 
 # Background image 
 image:
-  background: background.jpg
+  background: https://zns2101.github.io/images/background.jpg
 
 #
 # Flags below are optional
