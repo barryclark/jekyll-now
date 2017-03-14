@@ -1,5 +1,5 @@
 ---
-title: Unboxing Meduris: Call of the Gods
+title: "Unboxing Meduris: Call of the Gods"
 date: 2017-03-14 15:30:00 Z
 category: unboxing
 tags:
