@@ -11,6 +11,7 @@
     <meta property="og:description" content="{{ site.description }}" />
     {% endif %}
     <meta name="author" content="{{ site.name }}" />
+    <meta name="keywords" content="{{ page.tags | join: ', ' | escape }}"/>
 
     {% if page.title %}
     <meta property="og:title" content="{{ page.title }}" />

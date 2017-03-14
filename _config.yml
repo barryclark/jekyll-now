@@ -3,10 +3,10 @@
 #
 
 # Name of your site (displayed in the header)
-name: Your Name
+name: aufdruckfancy
 
 # Short bio or description (displayed in the header)
-description: Web Developer from Somewhere
+description:
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
@@ -15,18 +15,25 @@ avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/je
 # Flags below are optional
 #
 
+
+
+#pagination -> http://www.sigmainfy.com/blog/how-to-add-jekyll-pagination-next-previous-post-link.html
+paginate: 4
+paginate_path: "/blog/page:num/"
+
+
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email:
-  facebook:
+  email: marvin@6uhrmittag.de
+  facebook: aufdruckfancy
   flickr:
-  github: barryclark/jekyll-now
+  github:
   instagram:
-  linkedin:
+  linkedin: marvinheimbrodt
   pinterest:
-  rss: # just type anything here for a working RSS icon
-  twitter: jekyllrb
+  rss: rss# just type anything here for a working RSS icon
+  twitter: 6uhrmittag
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
@@ -34,14 +41,14 @@ footer-links:
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 # You can find your shortname on the Settings page of your Disqus account
-disqus:
+disqus: aufdruckfancy
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-google_analytics:
+google_analytics: UA-93690276-1
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
-url:
+url: http://aufdruckfancy.de
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
@@ -52,21 +59,13 @@ baseurl: ""
 #
 # !! You don't need to change any of the configuration flags below !!
 #
+-markdown: redcarpet
+-highlighter: pygments
 
 permalink: /:title/
 
 # The release of Jekyll Now that you're using
 version: v1.2.0
-
-# Jekyll 3 now only supports Kramdown for Markdown
-kramdown:
-  # Use GitHub flavored markdown, including triple backtick fenced code blocks
-  input: GFM
-  # Jekyll 3 and GitHub Pages now only support rouge for syntax highlighting
-  syntax_highlighter: rouge
-  syntax_highlighter_opts:
-    # Use existing pygments syntax highlighting css
-    css_class: 'highlight'
 
 # Set the Sass partials directory, as we're using @imports
 sass:

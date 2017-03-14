@@ -1,0 +1,14 @@
+---
+layout: default
+title: Tags
+permalink: /tags/
+---
+
+<div class="home">
+	<h1 class="page-heading">All tags</h1>
+
+	<p class="post-meta" style="text-align: justify;">
+	{% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
+	{% assign tags = site_tags | split:',' | sort %}
+	</p>
+</div>

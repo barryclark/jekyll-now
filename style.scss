@@ -151,7 +151,7 @@ img {
 //
 
 .wrapper-masthead {
-  margin-bottom: 50px;
+  margin-bottom: -20px;
 }
 
 .masthead {
@@ -196,8 +196,9 @@ img {
   cursor: pointer;
   font-family: $helveticaNeue;
   font-weight: 300;
-  font-size: 28px;
+  font-size: 40px;
   letter-spacing: 1px;
+  font-weight: bold;
 }
 
 .site-description {
@@ -273,9 +274,9 @@ nav {
 
 .wrapper-footer {
   margin-top: 50px;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  background-color: $lightGray;
+  border-top: 1px solid #f7f7f7;
+  border-bottom: 1px solid #f7f7f7;
+  background-color: #f7f7f7;
 }
 
 footer {
@@ -287,3 +288,52 @@ footer {
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
 @import "svg-icons";
+
+
+
+
+
+//Sharebuttons
+ul.share-buttons{
+  list-style: none;
+  padding: 0;
+}
+
+ul.share-buttons li{
+  display: inline;
+}
+
+ul.share-buttons .sr-only {
+  position: absolute;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+//to center images
+.center-image
+{
+    margin: 0 auto;
+    display: block;
+}
+
+
+
+//navigation
+/*NAVIGATION*/
+#navigation{
+z-index:1;
+padding-top: 4%;
+padding-right: 10px;
+margin-left: -190px;
+height: 100%;
+float: left;
+position: absolute;
+width: 180px;
+background-color: transparent;
+list-style-type: none;
+}

@@ -19,22 +19,80 @@
     <div class="wrapper-masthead">
       <div class="container">
         <header class="masthead clearfix">
+          <!-- AVATAR ausblenden
           <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
-
+          -->
           <div class="site-info">
             <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
             <p class="site-description">{{ site.description }}</p>
           </div>
 
-          <nav>
-            <a href="{{ site.baseurl }}/">Blog</a>
-            <a href="{{ site.baseurl }}/about">About</a>
-          </nav>
+          <!--<nav>
+
+            <!-- unnötig <a href="{{ site.baseurl }}/">Blog</a>
+
+          </nav>-->
         </header>
       </div>
     </div>
+<!--
+<div style="padding-top: 100px;
+    padding-right: 10px;
+    margin-left: 10px; width:20%; float:left">
+
+  Kategorien anzeigen
+    <div class="post-categories">
+      {% if post %}
+        {% assign categories = post.categories %}
+      {% else %}
+        {% assign categories = page.categories %}
+      {% endif %}
+      {% for category in categories %}
+      <a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}</a>
+      {% unless forloop.last %}&nbsp;{% endunless %}
+      {% endfor %}
+    </div>
+
+    <div class="post-categories">
+      {% if post %}
+        {% assign tags = post.tags %}
+      {% else %}
+        {% assign tags = page.tags %}
+      {% endif %}
+      {% for category in categories %}
+      <a href="{{site.baseurl}}/tags/#{{tags|slugize}}">{{tags}}</a>
+      {% unless forloop.last %}&nbsp;{% endunless %}
+      {% endfor %}
+    </div>
+</div>
+
+-->
+
+<!-- NAVIGATION -->
 
     <div id="main" role="main" class="container">
+
+      <div id="navigation">
+      <h1></h1>
+      {% assign tags = site.tags | sort %}
+      {% for tag in tags %}
+       <span class="site-tag">
+          <li><a href="/tags/{{ tag | first | slugify }}/" style="">
+              <!--
+              <a href="/tag/{{ tag | first | slugify }}/"
+                  style="font-size: {{ tag | last | size  |  times: 4 | plus: 80  }}%">
+              -->
+                  {{ tag[0] | replace:'-', ' ' }}
+                  <!-- ANZAHL ({{ tag | last | size }}) -->
+          </a>
+        </li>
+      </span>
+      {% endfor %}
+      </div>
+<!-- NAVIGATION ENDE -->
+
+
+
       {{ content }}
     </div>
 
@@ -42,10 +100,22 @@
       <div class="container">
         <footer class="footer">
           {% include svg-icons.html %}
+
+          <!-- Liste mit allen Artikeln
+          Alle Artikel
+          {% for post in site.posts %}
+          <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+          {% endfor %}
+           -->
+
+              <br />
+                <a href="{{ site.baseurl }}/about">about</a>
+
         </footer>
       </div>
     </div>
 
     {% include analytics.html %}
+
   </body>
 </html>

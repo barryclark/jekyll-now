@@ -2,17 +2,74 @@
 layout: default
 ---
 
+
+
+<!-- Pagination-->
 <div class="posts">
+
+    {% for post in paginator.posts %}
+    <article class="post">
+        <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+
+          <div class="entry">
+              {{ post.content}}
+
+                  <a style="padding-bottom: 0.5em;font-size: 15px;"href="{{ site.baseurl }}{{ post.url }}" class="read-more">KOMMENTIEREN!</a>
+    </article>
+
+    {% endfor %}
+  </div>
+
+  {% if paginator.total_pages > 1 %}
+  <center>
+  <br />
+  <br />
+
+    <div class="pagination">
+    {% if paginator.previous_page %}
+      <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&#8619; neuer</a>
+    {% else %}
+      <span>&#8619; neuer</span>
+    {% endif %}
+
+    {% for page in (1..paginator.total_pages) %}
+      {% if page == paginator.page %}
+        <em>{{ page }}</em>
+      {% elsif page == 1 %}
+        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+      {% else %}
+        <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+      {% endif %}
+    {% endfor %}
+
+
+
+    {% if paginator.next_page %}
+      <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">älter &#8620;</a>
+    {% else %}
+      <span>älter &#8620;</span>
+    {% endif %}
+  </div>
+  {% endif %}
+</center>
+
+<!--
+
   {% for post in site.posts %}
     <article class="post">
 
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
 
       <div class="entry">
-        {{ post.excerpt }}
+        {{ post.content }}
       </div>
-
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+      <br />
+      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">KOMMENTIEREN!</a>
     </article>
   {% endfor %}
-</div>
+
+
+
+
+
+</div>-->
