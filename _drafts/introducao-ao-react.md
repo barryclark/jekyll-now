@@ -23,16 +23,17 @@ A maneira mais fácil de criar um projeto React é utilizando o [create-react-ap
 
 Vamos criar o projeto:
 
-{% highlight bash %}
+``` bash
 $ npm install -g create-react-app
 $ create-react-app news-feed
-{% endhighlight %}
+```
 
 Feito isso já podemos entrar na pasta e iniciar nosso servidor:
-{% highlight bash %}
+
+``` bash
 $ cd news-feed/
 $ npm start
-{% endhighlight %}
+```
 
 Pronto! Nosso servidor já está disponível em [http://localhost:3000](http://localhost:3000) (ou em outra porta se a porta 3000 já estiver em uso).
 
@@ -41,11 +42,7 @@ Componentes React
 
 O ```create-react-app``` criou um componente raíz chamado ```App```. Vamos aproveitar para introduzir alguns conceitos de React. Dê uma rápida olhada no código abaixo:
 
-{% highlight console %}
-src/App.js
-{% endhighlight %}
-
-{% highlight typescript linenos %}
+``` jsx
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
@@ -67,7 +64,7 @@ class App extends Component {
 }
 
 export default App;
-{% endhighlight %}
+```
 
 Algumas coisas que podemos observar logo de cara:
 
@@ -86,7 +83,7 @@ Poderíamos ter escrito esse mesmo código usando somente javascript. E na verda
 
 Nosso código ficaria assim:
 
-{% highlight typescript linenos %}
+``` jsx
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
@@ -110,19 +107,19 @@ class App extends Component {
 }
 
 export default App;
-{% endhighlight %}
+```
 
 Antes de começar nossa implementação, só um pouquinho mais de teoria. Veja a assinatura do método ```createElement```:
 
-{% highlight typescript %}
+``` jsx
 React.createElement(type, [props], [...children])
-{% endhighlight %}
+```
 
 Logo, na seguinte chamada:
 
-{% highlight typescript %}
+``` jsx
 React.createElement('img', {src: logo, className: 'App-logo', alt: 'logo'})
-{% endhighlight %}
+```
 
 - ```img``` é o tipo do elemento. Para cada elemento HTML existe uma componente React correspondente.
 - ```{src: logo, className: 'App-logo', alt: 'logo'}``` são as ```props``` desse componente. Podemos pensar nas ```props``` como argumentos de uma função. E podemos pensar nos components React como funções, que recebem ```props``` e retornam um elemento React.
@@ -133,7 +130,7 @@ Implementando o primeiro componente
 
 Como estamos fazendo um feed de notícias, nada melhor do que começar implementando este componente. A implementação fica bem simples:
 
-{% highlight typescript %}
+``` jsx
 class Feed extends Component {
   render() {
     return (
@@ -145,11 +142,11 @@ class Feed extends Component {
     )
   }
 }
-{% endhighlight %}
+```
 
 Vamos exibir o nosso ```Feed``` no ```render()``` do componente raíz ```App```:
 
-{% highlight typescript %}
+``` jsx
 class App extends Component {
   render() {
     return (
@@ -159,14 +156,14 @@ class App extends Component {
     );
   }
 }
-{% endhighlight %}
+```
 
 Extraindo o componente ```Post```
 ---------------------------------
 
 Como você já deve ter percebido, é possível extrair um componente ```Post``` de dentro do componente ```Feed```. Essa é uma das principais ideias do React, ir compondo um componente grande a partir de vários componentes pequenos:
 
-{% highlight typescript %}
+``` jsx
 class Feed extends Component {
   render() {
     return (
@@ -177,11 +174,11 @@ class Feed extends Component {
     )
   }
 }
-{% endhighlight %}
+```
 
 Veja que adicionamos um pouco mais de dinamismo aqui. Passamos o texto de cada post através de uma ```prop``` do nosso componente ```Post``` que se chama ```content```. A implementação do componente ```Post``` fica assim:
 
-{% highlight typescript %}
+``` jsx
 class Post extends Component {
   render() {
     return (
@@ -191,7 +188,7 @@ class Post extends Component {
     )
   }
 }
-{% endhighlight %}
+```
 
 Perceba que acessamos as props de um componente com a chamada ```this.props``` entre colchetes.
 
@@ -204,7 +201,7 @@ Para isso vamos utilizar o ```state```. Ao contrário do caráter imutável das 
 
 Inicializamos o ```state``` no construtor de nossa classe, assim:
 
-{% highlight typescript %}
+``` jsx
 class Feed extends Component {
   constructor(props) {
     super(props);
@@ -223,7 +220,7 @@ class Feed extends Component {
     )
   }
 }
-{% endhighlight %}
+```
 
 No método ```render``` mapeamos cada objeto de nossa lista para um elemento ```Post``` e então deixamos essa lista de componentes na constante ```posts```.
 
@@ -242,7 +239,7 @@ Esse método também será responsável por incrementar a nossa lista de notíci
 
 Nossa versão inicial do componente ```PostForm``` fica assim:
 
-{% highlight typescript linenos %}
+``` jsx
 class PostForm extends Component {
   constructor(props) {
     super(props);
@@ -265,7 +262,7 @@ class PostForm extends Component {
     )
   }
 }
-{% endhighlight %}
+```
 
 Vamos entender agora alguns pontos dessa implementação.
 
@@ -298,7 +295,7 @@ O truque aqui é implementar em ```Feed``` um método que saiba como adicionar u
 
 Fica mais fácil de entender vendo o código: Então vamos lá!:
 
-{% highlight typescript %}
+``` jsx
 class Feed extends Component {
   constructor(props) {
     super(props);
@@ -329,7 +326,7 @@ class Feed extends Component {
     )
   }
 }
-{% endhighlight %}
+```
 
 Eis o que modificamos aqui:
 
@@ -347,7 +344,7 @@ Com a chamada ao ```setState()```,  o React sabe que o estado do componente mudo
 
 Para concluir a comunicação entre os componentes só precisamos usar a ```prop``` que foi passada pelo ```Feed``` para o ```PostForm```:
 
-{% highlight typescript linenos %}
+``` jsx
 class PostForm extends Component {
   constructor(props) {
     super(props);
@@ -371,7 +368,7 @@ class PostForm extends Component {
     )
   }
 }
-{% endhighlight %}
+```
 
 Lembre-se que no componente ```Feed``` criamos um ```PostForm``` passando o método o ```handleNewPost``` através da ```prop``` nomeada de ```onSubmit```.
 
@@ -384,13 +381,13 @@ Cada notícia de nosso feed pertence a uma categoria.
 
 Vamos começar com uma lista pré-determinada de categorias: Mundo, Negócios, Tecnologia e Esportes. Então criamos uma contante para representar esses valores:
 
-{% highlight typescript %}
+``` jsx
 const categories = ['World', 'Business', 'Tech', 'Sport'];
-{% endhighlight %}
+```
 
 E então atualizamos o componente ```Feed``` adicionando a propriedade ```category``` a lista inicial de notícias em nosso ```state```:
 
-{% highlight typescript linenos %}
+``` jsx
 class Feed extends Component {
   constructor(props) {
     super(props);
@@ -421,11 +418,11 @@ class Feed extends Component {
     )
   }
 }
-{% endhighlight %}
+```
 
 No componente ```Post``` exibimos a categoria:
 
-{% highlight typescript linenos %}
+``` jsx
 class Post extends Component {
   render() {
     return (
@@ -436,11 +433,11 @@ class Post extends Component {
     )
   }
 }
-{% endhighlight %}
+```
 
 E no componente ```PostForm``` fazemos duas mudanças: adicionamos um campo para a categoria e atualizamos o método ```handleSubmit``` para enviar a categoria selecionada:
 
-{% highlight typescript linenos %}
+``` jsx
 class PostForm extends Component {
   constructor(props) {
     super(props);
@@ -479,7 +476,7 @@ class PostForm extends Component {
     )
   }
 }
-{% endhighlight %}
+```
 
 Filtrando notícias
 ------------------
@@ -492,7 +489,7 @@ Em qualquer cenário um pouco mais complexo é recomendável utilizar um control
 
 Criaremos um novo componente para implementar nosso filtro. Segue a implementação do componente ```Filter```:
 
-{% highlight typescript linenos %}
+``` jsx
 class Filter extends Component {
   constructor(props) {
     super(props);
@@ -527,7 +524,7 @@ class Filter extends Component {
     )
   }
 }
-{% endhighlight %}
+```
 
 Observe que a maneira como o React lidar com eventos é bem semelhante de como estamos acostumados em HTML. Somente precisamos informar qual método deve ser chamado quando o evento é disparado.
 
@@ -553,7 +550,7 @@ As mudanças que faremos serão as seguintes:
 
 Segue a implementação:
 
-{% highlight typescript linenos %}
+``` jsx
 class Feed extends Component {
   constructor(props) {
     super(props);
@@ -597,7 +594,7 @@ class Feed extends Component {
     )
   }
 }
-{% endhighlight %}
+```
 
 Salvando a lista de notícias localmente
 ---------------------------------------
