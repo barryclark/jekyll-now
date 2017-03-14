@@ -1,10 +1,7 @@
 ---
 layout: post
-title: Hello World
+title: 첫 설치
 ---
 
-GitHub test pages.
-
-'''java
-String str = "Hello World";
-System.out.println(str);
+http://thdev.net/65
+글을 참조하여 설치 및 작성.
