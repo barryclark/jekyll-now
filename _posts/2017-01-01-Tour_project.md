@@ -1,7 +1,15 @@
 # JSP & JDBC_Mysql Web Project
+<br/>
+## Producer Introduce 
+### name :  Dongjoonlee 
+### nation : south korea
+### date of birth : 1993.04.06
+### univ : gachon university
+### email : ehdwns46@naver.com
+<br/>
+# github : https://github.com/leedongjoon121/JSP_JDBC-Mysql_Tour_Web
 # 주제 : 관광 웹 프로젝트
 # 주요기능 
-# github : https://github.com/leedongjoon121/JSP_JDBC-Mysql_Tour_Web
 ## 1. 회원가입
 <br/>
 ### ![사진](https://github.com/leedongjoon121/JSP_Tour_Web/blob/master/Introduce_project/project_img/%ED%9A%8C%EC%9B%90%EA%B0%80%EC%9E%85.JPG?raw=true)
