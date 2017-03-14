@@ -1,12 +1,5 @@
 # Html5 Canvas 를 이용한 Image Pixel Manipulation Project
-## Producer Introduce 
-### name :  Dongjoonlee 
-### nation : south korea
-### date of birth : 1993.04.06
-### univ : gachon university
-### email : ehdwns46@naver.com
-### day of production : 2016.07.15~ 2016.08.30
-### Supervisor : Heohyeon of Hancom inc. , DaHyunkim of Hancom inc. 
+# github : https://github.com/leedongjoon121/ImageFilter
 <br/><br/>
 # Image Pixel Manipulation기반 비트맵 알고리즘으로써 Dongjoon.js 구현
 ### ![사진](https://github.com/leedongjoon121/ImageFilter/blob/master/total/img_data/dongjoon_js.JPG?raw=true)
