@@ -13,7 +13,7 @@ featured: meduris.jpg
 author: robk
 ---
 
-When I think of HABA I think of yellow-boxed, family friendly games. Games that are easy to learn, play in minutes, and that tend to cater to a younger audience.  Meduris turned that idea on its head. Here's a more traditional Euro-style game for an older audience that takes over an hour to play.
+When I think of HABA I think of yellow-boxed, family friendly games. Games that are easy to learn, play in minutes, and that tend to cater to a younger audience.  [Meduris](http://www.habausa.com/meduris-the-call-of-the-gods.html ) turned that idea on its head. Here's a more traditional Euro-style game for an older audience that takes over an hour to play.
 
 I'm excited!
 
