@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Heute wollte ich pirat werden, aber
+title: Heute wollte ich Pirat werden, aber
 published: true
 categories: general
 tags: [piraten, politik]
