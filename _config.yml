@@ -2,6 +2,7 @@
 # This file contains configuration flags to customize your site
 #
 
+title : DongJoon Blog
 # Name of your site (displayed in the header)
 name: Lee Dong Joon
 
