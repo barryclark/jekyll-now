@@ -4,7 +4,7 @@ title: Privacy Policy
 permalink: /privacy/
 ---
 
-*Revised November 2, 2016.*
+*Revised March 15, 2017.*
 
 ## Google Analytics
 
@@ -21,10 +21,6 @@ If you wish to know more or even opt out, view [Google's privacy policy](http://
 I run Google Adsense mainly to know how to use Adsense. This is the single ad banner you may see on the top of the page. My goal is to only ever have at most the single ad banner. Again, for more details, view [Google's privacy policy](http://www.google.com/intl/en/policies/privacy/).
 
 I have [remarketing](https://support.google.com/analytics/answer/2611268) enabled, which is when the ad is about something you've viewed recently.
-
-### VigLink
-
-Similary I use VigLink, which may cause various links to be affiliate links. If you want more information about this, or even to opt out, view [VigLink's privacy policy](http://www.viglink.com/legal/disclosures/users?vgtag=badge).
 
 ## Social Media
 
