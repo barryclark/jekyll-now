@@ -1231,6 +1231,17 @@ link: 'https://www.associazionenoicisiamo.org/'
 email: associazionenoicisiamo2017@gmail.com
 data: 20/02/2017
 </yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2564,208998061,2017-02-20 22:45:50,2017-02-20 22:44:45,Raccolta fondi associazione NOI CI SIAMO,,,"[""Accettato"", ""Facebook"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Raccolta fondi associazione NOI CI SIAMO"", ""data"": ""20/02/2017"", ""descrizione"": ""Raccolta fondi dell'ASSOCIAZIONE NOI CI SIAMO, nata a Civitanova Marche per portare aiuti concreti alle popolazioni colpite dal sisma. Donazioni tramite PayPal e conto corrente bancario."", ""email"": ""associazionenoicisiamo2017@gmail.com"", ""iban"": ""IT 02 E 02008 68874 000104607642"", ""intestazione"": """", ""link"": ""https://www.associazionenoicisiamo.org/"", ""postale"": """"}","<pre><yamldata>chi: 'Raccolta fondi associazione NOI CI SIAMO'
+descrizione: 'Raccolta fondi dell''ASSOCIAZIONE NOI CI SIAMO, nata a Civitanova Marche per portare aiuti concreti alle popolazioni colpite dal sisma. Donazioni tramite PayPal e conto corrente bancario.'
+intestazione: ''
+iban: 'IT 02 E 02008 68874 000104607642'
+bic: ''
+postale: ''
+causale: ''
+link: 'https://www.associazionenoicisiamo.org/'
+email: associazionenoicisiamo2017@gmail.com
+data: 20/02/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2560,208966937,2017-03-01 15:03:43,2017-02-20 19:40:48,Cercasi trasporto 200 sedie e 100 banchi da Portogruaro a scuole di #Montefortino e #Montemonaco,,,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Facebook""]",,,"{""cosa"": ""trasporto PORTOGRUARO-MARCHE (MONTEFORTINO)"", ""data"": ""20/02/2017"", ""descrizione"": ""Cerchiamo trasporto per 200 sedie e 100 banchi scolastici da Portogruaro (Venezia) a Montefortino (Fermo). Verranno collocati nelle scuole di Montefortino e Montemonaco. Grazie"", ""email"": ""maggi.monica@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3664008466""}","<pre><yamldata>tel: '3664008466'
 email: maggi.monica@gmail.com
 cosa: 'trasporto PORTOGRUARO-MARCHE (MONTEFORTINO)'
