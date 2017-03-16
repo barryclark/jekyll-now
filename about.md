@@ -44,8 +44,18 @@ Storage: 250GB SSD
 
 **Gaming Laptop:**
 
-Lenovo Y510P
-(Stats coming soon)
+Lenovo Y510P\\
+Processor: 4th Gen Intel® Core™ i7-4700MQ (2.4GHz 1600MHz 6MB)\\
+Memory: 8GB PC3-12800 DDR3L SDRAM 1600 MHz\\
+Graphics: NVIDIA® GeForce® GT755M 2GB\\
+Storage: 1TB (5400 RPM) + 8GB Hybrid Drive
+
+**Console Gaming**
+
+Nintendo Wii-U\\
+Nintendo 3DS The Legend Of Zelda 25th Anniversary Limited Edition\\
+PS4 Slim 500GB
+
 
 ### Contact me
 
