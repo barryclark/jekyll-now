@@ -8,12 +8,12 @@ tags:
 - warlock's tower
 layout: post
 description: Warlock's Tower is an amazing trip back to the Gameboy era of gaming.
-featured: wizardstower.png
+featured: warlockstower.jpg
 author: robk
 ---
 
 
-![Warlock's Tower](/images/featured/wizardstower.png){: .float-right}
+![Warlock's Tower](/images/wizardstower/cover.jpg){: .float-right}
 **Developer:** [Midipixel](http://midipixel.com/warlockstower/)\\
 **Publisher:** [Whippering](http://www.whippering.com/)\\
 **Year:** 2017\\
