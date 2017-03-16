@@ -17,11 +17,11 @@ author: frankg
 
 Shown here are two examples of some items offered by 3D Central. The first is a [3D-Printed Life Counter](https://www.etsy.com/listing/227411403/life-counter-3d-printed-custom-colors?ga_search_query=counter&ref=shop_items_search_3). This counter is customizable by color, allowing the purchaser to select both the dial and stand colors separately. This counter is great to have on your table to keep score, count rounds, hit points, or anything else. The counter sells for $15 and was originally designed by [CarryTheWhat](https://www.thingiverse.com/CarryTheWhat/about) and is available for download on thingiverse.com.
 
-![3D Central Life Counter](/images/3Dcentral/3DCentral1.jpg)
+![3D Central Life Counter](/images/3DCentral/3DCentral1.jpg)
 
 The second item shown is a [D20 Dice Box](https://www.etsy.com/listing/155738254/die-of-holding-d20-dice-box-storage-box?ga_search_query=dice+box&ref=shop_items_search_1). 3D Central sells this box for $17. You can purchase it through 3D Central’s online store or through their shop on Etsy.com. The box itself is approximately 3” wide. The inside compartment measures approximately 2” x 2”. The box pictured below is shown next to a $1 coin for size comparison. This open-source model was also designed by CarryTheWhat and is available for download [here](http://www.thingiverse.com/thing:624031). This box is great to hold tokens, rings, or anything that you’d like. It has a magnetized swiveling lid, so it shuts tightly without the worry that it will open unexpectedly.
 
-![3D Central d20 Dice Box](/images/3Dcentral/3DCentral2.jpg)
+![3D Central d20 Dice Box](/images/3DCentral/3DCentral2.jpg)
 
 If you ever find yourself browsing online for gaming supplies (or in Richmond, Virginia) check these guys out, it is worth a look.
 
