@@ -7,7 +7,7 @@ tags:
 - games
 - warlock's tower
 layout: post
-description: DPH Studioz has created a fast and light card game in KhromaZones.
+description: Warlock's Tower is an amazing trip back to the Gameboy era of gaming.
 featured: wizardstower.png
 author: robk
 ---
