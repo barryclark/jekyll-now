@@ -33,7 +33,7 @@ I wanted to stick around for Karel Svoboda’s talk, but I made the mistake of m
 
 ---
 
-My last talk of the conference was a surprising little reminder of my own thesis work in quantum control, dealing with the robustness of a system to changing under a certain type of control signal. The work presented here by *Maneesh Sahani* resolved a standing, and rather confusing result in optogenetic stimulation of motor cortex in monkeys. Namely, that it doesn’t  have any effect on behavior at all! The main solution was to consider models that could contain a latent variable structure with a “nullspace”  in which the optogenetic stimulation lives. In order to arrive at this kind of latent structure, Maneesh's group explicitly included some terms in their loss function that would enforce some nullspace directions in the latent space.
+My last talk of the conference was a surprising little reminder of my own thesis work in quantum control, dealing with the robustness of a system to changing under a certain type of control signal. The work presented here by *Maneesh Sahani* resolved a standing and rather confusing result in optogenetic stimulation of motor cortex in monkeys. Namely, that it doesn’t  have any effect on behavior at all! The main solution was to consider models that could contain a latent variable structure with a “nullspace”  in which the optogenetic stimulation lives. In order to arrive at this kind of latent structure, Maneesh's group explicitly included some terms in their loss function that would enforce some nullspace directions in the latent space.
 
 ----
 
