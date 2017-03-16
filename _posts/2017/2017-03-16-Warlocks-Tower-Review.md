@@ -17,7 +17,7 @@ author: robk
 **Developer:** [Midipixel](http://midipixel.com/warlockstower/)\\
 **Publisher:** [Whippering](http://www.whippering.com/)\\
 **Year:** 2017\\
-**Platform:** [Steam](http://store.steampowered.com/app/530370/), [iOS](https://itunes.apple.com/us/app/warlocks-tower/id1111603555), [Google Play](https://play.google.com/store/apps/details?id=com.midipixel.warlockstower)
+**Platform:** [Steam](http://store.steampowered.com/app/530370/), [iOS](https://itunes.apple.com/us/app/warlocks-tower/id1111603555), [Google Play](https://play.google.com/store/apps/details?id=com.midipixel.warlockstower)\\
 **MSRP:** $9.99 (Steam) / $1.99 (Mobile)
 
 <h2>Prelude</h2>
