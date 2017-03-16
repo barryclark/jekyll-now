@@ -1,6 +1,6 @@
 ---
-title: Battle Princess Madelyn Set to Come Out of Greenlight
-date: 2017-02-22 00:00:00 Z
+title: Battle Princess Madelyn Kickstarter
+date: 2017-03-16 10:00:00 Z
 category: kickstarter
 tags:
 - video games
