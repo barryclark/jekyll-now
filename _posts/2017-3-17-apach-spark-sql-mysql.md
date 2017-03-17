@@ -4,7 +4,7 @@ title: apache spark와 mysql 연동 하기
 ---
 
 1. pom.xml에 depencendy 추가
-'''xml
+{% highlight xml %}
 	<!-- Spark core -->
 	<dependency>
 		<groupId>org.apache.spark</groupId>
@@ -23,7 +23,7 @@ title: apache spark와 mysql 연동 하기
 		<artifactId>mysql-connector-java</artifactId>
 		<version>5.1.37</version>
 	</dependency>
-'''
+{% endhighlight %}
 
 
 2. SimpleDataApp.java 생성
