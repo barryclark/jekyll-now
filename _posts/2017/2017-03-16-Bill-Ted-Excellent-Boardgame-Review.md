@@ -44,7 +44,7 @@ Once everyone has taken their turn new cards are drawn to the players' hands and
 
 Play continues until the deck of cards runs out. The player with the most historical figures at the end of the game wins.
 
-<h2>Pieces</h2>
+![Bill & Ted Pieces](/images/billted/billtedcollage.jpg){: .float-right}<h2>Pieces</h2>
 
 Everything, with the exception of the cards, in Bill & Ted's Excellent Boardgame is made from sturdy cardboard. There are plastic stands to make the bad guys and phone booths stand up, and they're pretty standard fare. What really brings the game up a notch is the artwork by Len Peralta which manages to capture the Bill & Ted feel with a humorous comic look. All of your favorite Bill & Ted characters are brought to life in a familiar way without having to resort to cheesy movie stills.
 
