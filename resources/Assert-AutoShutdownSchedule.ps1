@@ -110,12 +110,12 @@ function AssertVirtualMachinePowerState
     # Get VM depending on type
     if($VirtualMachine.ResourceType -eq "Microsoft.ClassicCompute/virtualMachines")
     {
-        $classicVM = $ClassicVMList | where Name -eq $VirtualMachine.Name
+        $classicVM = $ClassicVMList | where ResourceId -eq $VirtualMachine.ResourceId
         AssertClassicVirtualMachinePowerState -VirtualMachine $classicVM -DesiredState $DesiredState -Simulate $Simulate
     }
     elseif($VirtualMachine.ResourceType -eq "Microsoft.Compute/virtualMachines")
     {
-        $resourceManagerVM = $ResourceManagerVMList | where Name -eq $VirtualMachine.Name
+        $resourceManagerVM = $ResourceManagerVMList | where ResourceId -eq $VirtualMachine.ResourceId
         AssertResourceManagerVirtualMachinePowerState -VirtualMachine $resourceManagerVM -DesiredState $DesiredState -Simulate $Simulate
     }
     else
