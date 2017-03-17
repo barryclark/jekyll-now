@@ -1,5 +1,5 @@
 ---
-title: 'Review - KhromaZones'
+title: "Review - Bill & Ted's Excellent Boardgame"
 date: 2017-03-16 21:00:00 Z
 category: review
 tags:
@@ -9,7 +9,7 @@ tags:
 - steve jackson games
 layout: post
 description: DPH Studioz has created a fast and light card game in KhromaZones.
-featured: khromazones.jpg
+featured: billandted.jpg
 author: robk
 ---
 
