@@ -13,7 +13,7 @@ featured: billandted.jpg
 author: robk
 ---
 
-![Stratos](/images/billted/cover.jpg){: .float-right}
+![Bill & Ted's Excellent Board Game](/images/billted/cover.jpg){: .float-right}
 **Designers:**  Sam Mitschke, Randy Scheunemann \\
 **Publisher:** [Steve Jackson Games](http://www.sjgames.com/billandted/)\\
 **Year:** 2016\\
@@ -33,7 +33,7 @@ Bill & Ted need to collect famous people throughout time to pass their history t
 Always remember to be excellent to each other . . . and PARTY ON, DUDES!
 
 <h2>Play</h2>
-
+[Bill & Ted Pieces](/images/billted/billtedcollage.jpg){: .float-right}
 The goal of Bill & Ted's Excellent Boardgame is to gather more historical figures than any other player before time, the deck of cards, runs out. There's also baddies on the board that can knock your collected figures out of your phone booth!
 
 At that start of the game, each pile of historical figure piles will be placed randomly at certain locations on the board with the princesses in the middle. Both the knight and cowboy are placed in their respective places on board. Depending on the number of players, the phone booths are placed with their arrows facing the center of the board. Facing is important in the game, so always make sure your arrow is pointed in the right direction! After the initial hand of cards is drawn for each player the game begins.
@@ -45,7 +45,7 @@ Once everyone has taken their turn new cards are drawn to the players' hands and
 Play continues until the deck of cards runs out. The player with the most historical figures at the end of the game wins.
 
 <h2>Pieces</h2>
-![Bill & Ted Pieces](/images/billted/billtedcollage.jpg){: .float-right}
+!
 Everything, with the exception of the cards, in Bill & Ted's Excellent Boardgame is made from sturdy cardboard. There are plastic stands to make the bad guys and phone booths stand up, and they're pretty standard fare. What really brings the game up a notch is the artwork by Len Peralta which manages to capture the Bill & Ted feel with a humorous comic look. All of your favorite Bill & Ted characters are brought to life in a familiar way without having to resort to cheesy movie stills.
 
 <h2>Perspective</h2>

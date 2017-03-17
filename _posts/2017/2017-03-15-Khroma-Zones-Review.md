@@ -13,7 +13,7 @@ featured: khromazones.jpg
 author: robk
 ---
 
-![Stratos](/images/khromazones/cover.jpg){: .float-right}
+![KhromaZones](/images/khromazones/cover.jpg){: .float-right}
 **Designers:**  Darrin Horbal \\
 **Publisher:** [DPH Studioz](http://dphstudioz.com/khromazones.html)\\
 **Year:** 2017\\
