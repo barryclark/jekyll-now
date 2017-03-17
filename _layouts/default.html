@@ -68,5 +68,12 @@
 
     {% include analytics.html %}
     <script src="{{ "/js/prism.js" | prepend: site.baseurl }}"></script>
+    <script type="text/javascript">
+      Prism.hooks.add('before-sanity-check', function (env) {
+        if (!env.language == "markup" && !env.element.className.includes("unescaped")) {
+          return;
+        }
+      })
+    </script>
   </body>
 </html>

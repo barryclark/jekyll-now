@@ -42,7 +42,29 @@ Componentes React
 
 O ```create-react-app``` criou um componente raíz chamado ```App```. Vamos aproveitar para introduzir alguns conceitos de React. Dê uma rápida olhada no código abaixo:
 
-``` jsx
+<pre class="line-numbers "><code class="language-jsx">
+import React, { Component } from 'react';
+import logo from './logo.svg';
+import './App.css';
+
+class App extends Component {
+  render() {
+    return (
+      &lt;div className="App"&gt;
+        &lt;div className="App-header"&gt;
+          &lt;img src={logo} className="App-logo" alt="logo" /&gt;
+          &lt;h2&gt;Welcome to React&lt;/h2&gt;
+        &lt;/div&gt;
+        &lt;p className="App-intro"&gt;
+          To get started, edit &lt;code&gt;src/App.js&lt;/code&gt; and save to reload.
+        &lt;/p&gt;
+      &lt;/div&gt;
+    );
+  }
+}
+
+export default App;
+<!-- 
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
@@ -64,7 +86,8 @@ class App extends Component {
 }
 
 export default App;
-```
+-->
+</code></pre>
 
 Algumas coisas que podemos observar logo de cara:
 
@@ -75,9 +98,9 @@ Algumas coisas que podemos observar logo de cara:
 JSX
 ---
 
-O ```JSX``` é uma sintaxe que o React utiliza para descrever seus componentes. O ```JSX``` é uma extensão ao javascript, mas no estilo ```XML```. Para cada elemento HTML há um componente React correspondente.
+O ```JSX``` é uma sintaxe que o React utiliza para descrever seus componentes. No código do componente ```App``` observamos que a tag JSX ```div``` é na verdade um componente do React que representa a tag ```div``` do HTML. Devido a essa semelhança, às vezes nos confundimos e achamos que "tem HTML dentro do javascript".
 
-Por exemplo, no código do componente ```App``` observamos que a tag JSX ```div``` é na verdade um componente do React que representa a tag ```div``` do HTML. Devido a essa semelhança, às vezes nos confundimos e achamos que "tem HTML dentro do javascript".
+O ```JSX``` é uma extensão ao javascript, mas no estilo ```XML```. Como veremos a seguir, para cada elemento HTML há um componente do React correspondente, pronto para ser usado.
 
 Poderíamos ter escrito esse mesmo código usando somente javascript. E na verdade é isso que o ```Babel``` faz, ele converte os elementos ```JSX``` em chamadas ```React.createElement()```.
 
@@ -130,23 +153,46 @@ Implementando o primeiro componente
 
 Como estamos fazendo um feed de notícias, nada melhor do que começar implementando este componente. A implementação fica bem simples:
 
-``` jsx
+<pre class="line-numbers" data-start="14"><code class="language-jsx">
 class Feed extends Component {
   render() {
     return (
-      <div className="feed">
-        <div className="post">
-          <span>This is my first post!</span>
-        </div>
-      </div>
+      &lt;div className="feed"&gt;
+        &lt;div className="post"&gt;
+          &lt;span&gt;This is my first post!&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
     )
   }
 }
-```
+<!--
+class Feed extends Component {
+  render() {
+    return (
+      &lt;div className="feed"&gt;
+        &lt;div className="post"&gt;
+          &lt;span&gt;This is my first post!&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    )
+  }
+}
+-->
+</code></pre>
 
 Vamos exibir o nosso ```Feed``` no ```render()``` do componente raíz ```App```:
 
-``` jsx
+<pre class="line-numbers" data-start="4" data-line="5"><code class="language-jsx">
+class App extends Component {
+  render() {
+    return (
+      &lt;div className="App"&gt;
+        &lt;Feed /&gt;
+      &lt;/div&gt;
+    );
+  }
+}
+<!--
 class App extends Component {
   render() {
     return (
@@ -156,14 +202,26 @@ class App extends Component {
     );
   }
 }
-```
+-->
+</code></pre>
 
 Extraindo o componente ```Post```
 ---------------------------------
 
 Como você já deve ter percebido, é possível extrair um componente ```Post``` de dentro do componente ```Feed```. Essa é uma das principais ideias do React, ir compondo um componente grande a partir de vários componentes pequenos:
 
-``` jsx
+<pre class="line-numbers" data-start="14" data-line="5-6"><code class="language-jsx">
+class Feed extends Component {
+  render() {
+    return (
+      &lt;div className="feed"&gt;
+        &lt;Post content="This is my first post!" /&gt;
+        &lt;Post content="This is my second post!" /&gt;
+      &lt;/div&gt;
+    )
+  }
+}
+<!--
 class Feed extends Component {
   render() {
     return (
@@ -174,21 +232,33 @@ class Feed extends Component {
     )
   }
 }
-```
+-->
+</code></pre>
 
 Veja que adicionamos um pouco mais de dinamismo aqui. Passamos o texto de cada post através de uma ```prop``` do nosso componente ```Post``` que se chama ```content```. A implementação do componente ```Post``` fica assim:
 
-``` jsx
+<pre class="line-numbers" data-start="25" data-line="5"><code class="language-jsx">
 class Post extends Component {
   render() {
     return (
-      <div className="post">
-        <span>{this.props.content}</span>
-      </div>
+      &lt;div className="post"&gt;
+        &lt;span&gt;{this.props.content}&lt;/span&gt;
+      &lt;/div&gt;
     )
   }
 }
-```
+<!--
+class Post extends Component {
+  render() {
+    return (
+      &lt;div className="post"&gt;
+        &lt;span&gt;{this.props.content}&lt;/span&gt;
+      &lt;/div&gt;
+    )
+  }
+}
+-->
+</code></pre>
 
 Perceba que acessamos as props de um componente com a chamada ```this.props``` entre colchetes.
 
@@ -197,22 +267,47 @@ Utilizando o ```state```
 
 Ao invés de criar na mão um componente ```Post``` para cada notícia, vamos criar uma lista de notícias e depois exibir via javascript um componente para cada elemento dessa lista.
 
-Para isso vamos utilizar o ```state```. Ao contrário do caráter imutável das ```props```, o ```state``` é mutável. Como queremos que essa lista de notícias cresça com o tempo, faz todo sentido amarzenar essa lista no ```state``` do nosso componente ```Feed```.
+Para isso vamos utilizar o ```state```. Ao contrário do caráter imutável das ```props```, o ```state``` é mutável. Como queremos que essa lista de notícias cresça com o tempo, faz todo sentido amazenar essa lista no ```state``` do nosso componente ```Feed```.
 
 Inicializamos o ```state``` no construtor de nossa classe, assim:
 
-``` jsx
+<pre class="line-numbers" data-start="14" data-line="2-9,12-14, 17"><code class="language-jsx">
 class Feed extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      posts: ['This is my first post!', 'This is my second post!']
+      posts: [
+        {content: 'This is my first post!'},
+        {content: 'This is my second post!'}
+      ]
     }
   }
   render() {
-    const posts = this.state.posts.map(function(content) {
-      return <Post content={content} />
-    });
+    const posts = this.state.posts.map((post, index) =&gt;
+      &lt;Post key={index} value={post} /&gt;
+    );
+    return (
+      &lt;div className="feed"&gt;
+        {posts}
+      &lt;/div&gt;
+    )
+  }
+}
+<!--
+class Feed extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      posts: [
+        {content: 'This is my first post!'},
+        {content: 'This is my second post!'}
+      ]
+    }
+  }
+  render() {
+    const posts = this.state.posts.map((post, index) =>
+      <Post key={index} value={post} />
+    );
     return (
       <div className="feed">
         {posts}
@@ -220,7 +315,8 @@ class Feed extends Component {
     )
   }
 }
-```
+-->
+</code></pre>
 
 No método ```render``` mapeamos cada objeto de nossa lista para um elemento ```Post``` e então deixamos essa lista de componentes na constante ```posts```.
 
@@ -239,7 +335,7 @@ Esse método também será responsável por incrementar a nossa lista de notíci
 
 Nossa versão inicial do componente ```PostForm``` fica assim:
 
-``` jsx
+<pre class="line-numbers" data-start="56" data-line="4,15"><code class="language-jsx">
 class PostForm extends Component {
   constructor(props) {
     super(props);
@@ -253,99 +349,19 @@ class PostForm extends Component {
 
   render() {
     return (
-      <div className="post-form">
-        <form onSubmit={this.handleSubmit}>
-          <input type="text" ref={(input) => this.content = input} />
-          <button>Submit</button>
-        </form>
-      </div>
+      &lt;div className="post-form"&gt;
+        &lt;form onSubmit={this.handleSubmit}&gt;
+          &lt;label&gt;
+            Content:
+            &lt;input type="text" ref={(input) =&gt; this.content = input} /&gt;
+          &lt;/label&gt;
+          &lt;button className="button"&gt;Submit&lt;/button&gt;
+        &lt;/form&gt;
+      &lt;/div&gt;
     )
   }
 }
-```
-
-Vamos entender agora alguns pontos dessa implementação.
-
-Como estamos utilizando classes ES6 para implementar nossos componentes, precisamos de um passo a mais para declarar nossos métodos.
-
-Na linha 4 fazemos um ```bind``` de nosso método ```handleSumbit``` para deixar esse método visível a partir de ```this```.
-
-Na linha 16 temos nosso ```input```. No React existem dois tipos de inputs.
-
-Controlled inputs x Uncontrolled inputs
----------------------------------------
-
-* Controlled inputs: mais React way, pois o valor do input é mantido no estado de um componente React;
-* Uncontrolled inputs: mais simples que os controlled inputs. O valor é mantido no próprio DOM.
-
-Nesse exemplo usamos um ***uncontrolled input***. Os uncontrolled inputs são uma boa para formulários bem simples, como o nosso.
-
-Como em nosso uncontrolled input o valor do campo fica contido no próprio DOM, precisamos de uma maneira para capturar o valor desse input. Essa é uma ótima oportunidade para utilizar uma ```ref``` do React.
-
-No código ```ref={(input) => this.content = input}``` da linha 16, tornamos o nosso input disponível em ```this``` a partir do atributo ```content```. 
-
-No ```handleSumbit``` fazemos uso de ```this.content``` para acessar nosso uncontrolled input. A única coisa que fazemos em ```handleSubmit``` por enquanto é limpar o valor de nosso input e cancelar o comportamento padrão do navegador.
-
-Precisamos agora de uma maneira de enviar o valor do input para o componente ```Feed```.
-
-Comunicação entre componentes
------------------------------
-
-O truque aqui é implementar em ```Feed``` um método que saiba como adicionar uma notícia na lista e depois passar esse método para o componente ```PostForm``` através de uma ```prop```!
-
-Fica mais fácil de entender vendo o código: Então vamos lá!:
-
-``` jsx
-class Feed extends Component {
-  constructor(props) {
-    super(props);
-    this.handleNewPost = this.handleNewPost.bind(this);
-    this.state = {
-      posts: [
-        {content: 'This is my first post!'},
-        {content: 'This is my second post!'}
-      ]
-    }
-  }
-
-  handleNewPost(post) {
-    this.setState({
-      posts: this.state.posts.concat([post])
-    });
-  }
-
-  render() {
-    const posts = this.state.posts.map(function(post, index) {
-      return <Post key={index} content={post.content} />
-    });
-    return (
-      <div className="feed">
-        {posts}
-        <PostForm onSubmit={this.handleNewPost} />
-      </div>
-    )
-  }
-}
-```
-
-Eis o que modificamos aqui:
-
-* Implementamos o método ```handleNewPost``` (e o deixamos visível para ```this``` com o ```bind``` da linha 4);
-* Exibimos o componente ```PostForm``` na linha ;
-* E passamos o método ```handleNewPost``` para o componente ```PostForm``` através de uma ```prop``` chamada ```onSubmit```.
-
-A grande sacada foi passar o método através da ```prop```!
-
-A implementação de ```handleNewPost``` requer uma atenção especial.
-
-No React toda atualização de estado deve ser feita utilizando o método ```setState```. Não modifique o ```state``` diretamente!
-
-Com a chamada ao ```setState()```,  o React sabe que o estado do componente mudou, e que é hora de chamar ```render()``` novamente para refletir essas mudanças visualmente. Dessa mandeira temos nosso feed atualizado.
-
-Para concluir a comunicação entre os componentes só precisamos usar a ```prop``` que foi passada pelo ```Feed``` para o ```PostForm```:
-
-``` jsx
-class PostForm extends Component {
+<!-- class PostForm extends Component {
   constructor(props) {
     super(props);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -361,14 +377,182 @@ class PostForm extends Component {
     return (
       <div className="post-form">
         <form onSubmit={this.handleSubmit}>
-          <input type="text" ref={(input) => this.content = input} />
-          <button>Submit</button>
+          <label>
+            Content:
+            <input type="text" ref={(input) => this.content = input} />
+          </label>
+          <button className="button">Submit</button>
         </form>
       </div>
     )
   }
+} -->
+</code></pre>
+
+Vamos entender agora alguns pontos dessa implementação.
+
+Como estamos utilizando classes ES6 para implementar nossos componentes, precisamos de um passo a mais para declarar nossos métodos.
+
+Na linha 58 fazemos um ```bind``` de nosso método ```handleSumbit``` para deixar esse método visível a partir de ```this```.
+
+Na linha 70 temos nosso ```input```. No React existem dois tipos de inputs.
+
+<h3>Controlled inputs x Uncontrolled inputs</h3>
+
+* Controlled inputs: mais React way, pois o valor do input é mantido no estado de um componente React;
+* Uncontrolled inputs: mais simples que os controlled inputs. O valor é mantido no próprio DOM.
+
+Nesse exemplo usamos um **uncontrolled input**. Os uncontrolled inputs são uma boa para formulários bem simples, como o nosso.
+
+Como em nosso uncontrolled input o valor do campo fica contido no próprio DOM, precisamos de uma maneira para capturar o valor desse input. Essa é uma ótima oportunidade para utilizar uma ```ref``` do React.
+
+No código ```ref={(input) => this.content = input}``` da linha 70, tornamos o nosso input disponível em ```this``` a partir do atributo ```content```. 
+
+No ```handleSumbit``` fazemos uso de ```this.content``` para acessar nosso uncontrolled input. A única coisa que fazemos em ```handleSubmit``` por enquanto é limpar o valor de nosso input e cancelar o comportamento padrão do navegador.
+
+Precisamos agora de uma maneira de enviar o valor do input para o componente ```Feed```.
+
+<h3>Comunicação entre componentes</h3>
+
+O truque aqui é implementar em ```Feed``` um método que saiba como adicionar uma notícia na lista e depois passar esse método para o componente ```PostForm``` através de uma ```prop```!
+
+Fica mais fácil de entender vendo o código: Então vamos lá!:
+
+<pre class="line-numbers" data-start="14" data-line="11,14-18,26"><code class="language-jsx">
+class Feed extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      posts: [
+        {content: 'This is my first post!'},
+        {content: 'This is my second post!'}
+      ]
+    }
+
+    this.handleNewPost = this.handleNewPost.bind(this);
+  }
+
+  handleNewPost(post) {
+    this.setState({
+      posts: this.state.posts.concat([post])
+    });
+  }
+
+  render() {
+    const posts = this.state.posts.map((post, index) =&gt;
+      &lt;Post key={index} value={post} /&gt;
+    );
+    return (
+      &lt;div className="feed"&gt;
+        {posts}
+        &lt;PostForm onSubmit={this.handleNewPost} /&gt;
+      &lt;/div&gt;
+    )
+  }
 }
-```
+<!-- class Feed extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      posts: [
+        {content: 'This is my first post!'},
+        {content: 'This is my second post!'}
+      ]
+    }
+
+    this.handleNewPost = this.handleNewPost.bind(this);
+  }
+
+  handleNewPost(post) {
+    this.setState({
+      posts: this.state.posts.concat([post])
+    });
+  }
+
+  render() {
+    const posts = this.state.posts.map((post, index) =>
+      <Post key={index} value={post} />
+    );
+    return (
+      <div className="feed">
+        {posts}
+        <PostForm onSubmit={this.handleNewPost} />
+      </div>
+    )
+  }
+} -->
+</code></pre>
+
+Eis o que modificamos aqui:
+
+* Implementamos o método ```handleNewPost``` (e o deixamos visível para ```this``` com o ```bind``` da linha 17);
+* Exibimos o componente ```PostForm``` na linha ;
+* E passamos o método ```handleNewPost``` para o componente ```PostForm``` através de uma ```prop``` chamada ```onSubmit```.
+
+A grande sacada foi passar o método através da ```prop```!
+
+A implementação de ```handleNewPost``` requer uma atenção especial.
+
+No React toda atualização de estado deve ser feita utilizando o método ```setState```. Não modifique o ```state``` diretamente!
+
+Com a chamada ao ```setState()```,  o React sabe que o estado do componente mudou, e que é hora de chamar ```render()``` novamente para refletir essas mudanças visualmente. Dessa mandeira temos nosso feed atualizado.
+
+Para concluir a comunicação entre os componentes só precisamos usar a ```prop``` que foi passada pelo ```Feed``` para o ```PostForm```:
+
+<pre class="line-numbers" data-start="55" data-line="8"><code class="language-jsx">
+class PostForm extends Component {
+  constructor(props) {
+    super(props);
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  handleSubmit(event) {
+    this.props.onSubmit({content: this.content.value})
+    this.content.value = '';
+    event.preventDefault();
+  }
+
+  render() {
+    return (
+      &lt;div className="post-form"&gt;
+        &lt;form onSubmit={this.handleSubmit}&gt;
+          &lt;label&gt;
+            Content:
+            &lt;input type="text" ref={(input) =&gt; this.content = input} /&gt;
+          &lt;/label&gt;
+          &lt;button className="button"&gt;Submit&lt;/button&gt;
+        &lt;/form&gt;
+      &lt;/div&gt;
+    )
+  }
+}
+<!-- class PostForm extends Component {
+  constructor(props) {
+    super(props);
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  handleSubmit(event) {
+    this.props.onSubmit({content: this.content.value})
+    this.content.value = '';
+    event.preventDefault();
+  }
+
+  render() {
+    return (
+      <div className="post-form">
+        <form onSubmit={this.handleSubmit}>
+          <label>
+            Content:
+            <input type="text" ref={(input) => this.content = input} />
+          </label>
+          <button className="button">Submit</button>
+        </form>
+      </div>
+    )
+  }
+} -->
+</code></pre>
 
 Lembre-se que no componente ```Feed``` criamos um ```PostForm``` passando o método o ```handleNewPost``` através da ```prop``` nomeada de ```onSubmit```.
 
@@ -379,66 +563,102 @@ Adicionando categorias às notícias
 
 Cada notícia de nosso feed pertence a uma categoria.
 
-Vamos começar com uma lista pré-determinada de categorias: Mundo, Negócios, Tecnologia e Esportes. Então criamos uma contante para representar esses valores:
+Vamos começar com uma lista pré-determinada de categorias: Mundo, Negócios, Tecnologia e Esportes. Então criamos uma constante para representar esses valores:
 
-``` jsx
+<pre class="line-numbers" data-start="4" data-line=""><code class="language-jsx">
 const categories = ['World', 'Business', 'Tech', 'Sport'];
-```
+</code></pre>
 
 E então atualizamos o componente ```Feed``` adicionando a propriedade ```category``` a lista inicial de notícias em nosso ```state```:
 
-``` jsx
+<pre class="line-numbers" data-start="14" data-line="6-7"><code class="language-jsx">
 class Feed extends Component {
   constructor(props) {
     super(props);
-    this.handleNewPost = this.handleNewPost.bind(this);
     this.state = {
       posts: [
         {category: categories[0], content: 'This is my first post!'},
         {category: categories[1], content: 'This is my second post!'}
       ]
     }
-  }
-
-  handleNewPost(post) {
-    this.setState({
-      posts: this.state.posts.concat([post])
-    });
-  }
-
-  render() {
-    const posts = this.state.posts.map(function(post, index) {
-      return <Post key={index} value={post} />
-    });
-    return (
-      <div className="feed">
-        {posts}
-        <PostForm onSubmit={this.handleNewPost} />
-      </div>
-    )
-  }
-}
-```
+<!-- class Feed extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      posts: [
+        {category: categories[0], content: 'This is my first post!'},
+        {category: categories[1], content: 'This is my second post!'}
+      ]
+    } -->
+</code></pre>
 
 No componente ```Post``` exibimos a categoria:
 
-``` jsx
+<pre class="line-numbers" data-start="48" data-line="5"><code class="language-jsx">
 class Post extends Component {
   render() {
     return (
-      <div className="post">
-        <h5>{this.props.value.category}</h5>
-        <span>{this.props.value.content}</span>
-      </div>
+      &lt;div className="post"&gt;
+        &lt;span className="label"&gt;{this.props.value.category}&lt;/span&gt;
+        &lt;span className="content"&gt;{this.props.value.content}&lt;/span&gt;
+      &lt;/div&gt;
     )
   }
 }
-```
+<!-- class Post extends Component {
+  render() {
+    return (
+      <div className="post">
+        <span className="label">{this.props.value.category}</span>
+        <span className="content">{this.props.value.content}</span>
+      </div>
+    )
+  }
+} -->
+</code></pre>
 
 E no componente ```PostForm``` fazemos duas mudanças: adicionamos um campo para a categoria e atualizamos o método ```handleSubmit``` para enviar a categoria selecionada:
 
-``` jsx
+<pre class="line-numbers" data-start="59" data-line="9,12,21-28"><code class="language-jsx">
 class PostForm extends Component {
+  constructor(props) {
+    super(props);
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  handleSubmit(event) {
+    this.props.onSubmit({
+      category: this.category.value,
+      content: this.content.value
+    });
+    this.category.value = categories[0];
+    this.content.value = '';
+    event.preventDefault();
+  }
+
+  render() {
+    return (
+      &lt;div className="post-form"&gt;
+        &lt;form onSubmit={this.handleSubmit}&gt;
+          &lt;label&gt;
+            Category:
+            &lt;select ref={(input) =&gt; this.category = input}&gt;
+              {categories.map((category, index) =&gt;
+                &lt;option key={category} value={category}&gt;{category}&lt;/option&gt;
+              )}
+            &lt;/select&gt;
+          &lt;/label&gt;
+          &lt;label&gt;
+            Content:
+            &lt;input type="text" ref={(input) =&gt; this.content = input} /&gt;
+          &lt;/label&gt;
+          &lt;button className="button"&gt;Submit&lt;/button&gt;
+        &lt;/form&gt;
+      &lt;/div&gt;
+    )
+  }
+}
+<!-- class PostForm extends Component {
   constructor(props) {
     super(props);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -461,22 +681,22 @@ class PostForm extends Component {
           <label>
             Category:
             <select ref={(input) => this.category = input}>
-              {categories.map(function(category, index) {
-                return <option value={category}>{category}</option>
-              })}
+              {categories.map((category, index) =>
+                <option key={category} value={category}>{category}</option>
+              )}
             </select>
           </label>
           <label>
             Content:
             <input type="text" ref={(input) => this.content = input} />
           </label>
-          <button>Submit</button>
+          <button className="button">Submit</button>
         </form>
       </div>
     )
   }
-}
-```
+} -->
+</code></pre>
 
 Filtrando notícias
 ------------------
@@ -485,11 +705,15 @@ As notícias devem ser filtradas por categoria ou por conteúdo. Para filtrar po
 
 Vamos então adicionar um campo de texto no topo do ```Feed``` para implementar nosso filtro. Diferentemente do campo de texto utilizado em ```PostForm```, vamos utilizar aqui um **Controlled Input**.
 
+<h3>Controlled Input</h3>
+
 Em qualquer cenário um pouco mais complexo é recomendável utilizar um controlled input. Como você já sabe, os controlled inputs armazenam o valor do campo no ```state```, como um componente React qualquer faria.
 
-Criaremos um novo componente para implementar nosso filtro. Segue a implementação do componente ```Filter```:
+A implementação de um controlled input segue esse roteiro: criamos um método ```handleChange``` que atualiza o valor do input no ```state``` a cada mudança no campo, como definido em ```onChange={this.handleChange}```.
 
-``` jsx
+Segue a versão inicial do componente ```Filter```:
+
+<pre class="line-numbers" data-start="113" data-line=""><code class="language-jsx">
 class Filter extends Component {
   constructor(props) {
     super(props);
@@ -506,7 +730,37 @@ class Filter extends Component {
   handleKeyUp(event) {
     if (event.key === 'Enter') {
       this.props.onFilter(this.state.value);
-    } else if (this.state.value === '') {
+    }
+  }
+
+  render() {
+    return (
+      &lt;div&gt;
+        &lt;label&gt;
+          &lt;input type="search" value={this.state.value}
+                               onChange={this.handleChange}
+                               onKeyUp={this.handleKeyUp}
+                               placeholder="Filter by category or content..." /&gt;
+        &lt;/label&gt;
+      &lt;/div&gt;
+    )
+  }
+}
+<!-- class Filter extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {value: ''};
+
+    this.handleChange = this.handleChange.bind(this);
+    this.handleKeyUp = this.handleKeyUp.bind(this);
+  }
+
+  handleChange(event) {
+    this.setState({value: event.target.value});
+  }
+
+  handleKeyUp(event) {
+    if (event.key === 'Enter') {
       this.props.onFilter(this.state.value);
     }
   }
@@ -523,21 +777,76 @@ class Filter extends Component {
       </div>
     )
   }
-}
-```
+} -->
+</code></pre>
 
-Observe que a maneira como o React lidar com eventos é bem semelhante de como estamos acostumados em HTML. Somente precisamos informar qual método deve ser chamado quando o evento é disparado.
+Observe que a maneira de como o React lida com eventos é bem semelhante de como estamos acostumados em HTML. Somente precisamos informar qual método deve ser chamado quando o evento é disparado.
 
-A implementação de um controlled input segue esse roteiro: criamos um método ```handleChange``` que atualiza o valor do input no ```state``` a cada mudança no campo, como definido em ```onChange={this.handleChange}```.
+O evento ```onChange``` é disparado apenas quando o usuário tira o foco do campo de texto. Seria mais interessante aplicar ou limpar o filtro sem tirar o foco do campo de texto.
 
-O evento ```onChange``` é disparado apenas quando o usuário tira o foco do campo de texto. Como queremos que o usuário aplique o filtro ao apertar Enter, implementamos também o método ```handleKeyUp```, que é chamado a cada vez que o usuário preciona uma tecla. Consulte a documentação do React para ver a lista completa de eventos suportados.
+Como queremos que o usuário aplique o filtro ao apertar Enter, implementamos também o método ```handleKeyUp```, que é chamado a cada vez que o usuário preciona uma tecla.
 
-O método ```handleKeyUp``` faz duas coisas:
+Queremos que o ```handleKeyUp``` faça duas coisas:
 
-- Atualiza o ```state``` com o valor atual do campo ao apertar Enter;
-- Atualiza o ```state``` com o valor atual do campo ao apertar qualquer tecla e o valor atual do campo é vazio.
+- Aplicar o filtro com o valor atual do campo de texto ao apertar Enter;
+- Limpar o filtro quando o usuário deletar todos os caracteres do campo de texto.
 
-O segundo ponto serve para limpar o filtro. O usuário limpa o valor do campo pressionando *delete* ou *backspace*, e quando o valor do campo fica vazio o ```state``` é atualizado para ficar vazio também (sem a necessidade de precionar Enter).
+Nosso componente ```Filter``` fica assim:
+
+<pre class="line-numbers" data-start="113" data-line="12-14"><code class="language-jsx">
+class Filter extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {value: ''};
+
+    this.handleChange = this.handleChange.bind(this);
+    this.handleKeyUp = this.handleKeyUp.bind(this);
+  }
+
+  handleChange(event) {
+    this.setState({value: event.target.value});
+    if (event.target.value === '') {
+      this.props.onFilter('');
+    }
+  }
+<!-- class Filter extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {value: ''};
+
+    this.handleChange = this.handleChange.bind(this);
+    this.handleKeyUp = this.handleKeyUp.bind(this);
+  }
+
+  handleChange(event) {
+    this.setState({value: event.target.value});
+    if (event.target.value === '') {
+      this.props.onFilter('');
+    }
+  }
+
+  handleKeyUp(event) {
+    if (event.key === 'Enter') {
+      this.props.onFilter(this.state.value);
+    }
+  }
+
+  render() {
+    return (
+      <div>
+        <label>
+          <input type="search" value={this.state.value}
+                               onChange={this.handleChange}
+                               onKeyUp={this.handleKeyUp}
+                               placeholder="Filter by category or content..." />
+        </label>
+      </div>
+    )
+  }
+} -->
+</code></pre>
+
+<h3>Utilizando o componente <code>Filter</code></h3>
 
 Agora vamos usar o componente ```Filter``` em nosso ```Feed```.
 
@@ -550,7 +859,7 @@ As mudanças que faremos serão as seguintes:
 
 Segue a implementação:
 
-``` jsx
+<pre class="line-numbers" data-start="51" data-line="9,35-37,41"><code class="language-jsx">
 class Feed extends Component {
   constructor(props) {
     super(props);
@@ -574,7 +883,56 @@ class Feed extends Component {
 
   handleFilter(filter) {
     this.setState({
-      filteredPosts: this.state.posts.filter((post) => post.category.toUpperCase() === filter.toUpperCase() || post.content.includes(filter))
+      filteredPosts: this.state.posts.filter((post) =&gt;
+        post.category.toUpperCase() === filter.toUpperCase() ||
+          post.content.includes(filter)
+      )
+    });
+  }
+
+  render() {
+    const posts = this.state.posts.map((post, index) =&gt;
+      &lt;Post key={index} value={post} /&gt;
+    );
+    const filteredPosts = this.state.filteredPosts.map((post, index) =&gt;
+      &lt;Post key={index} value={post} /&gt;
+    );
+    return (
+      &lt;div className="feed"&gt;
+        &lt;Filter onFilter={this.handleFilter} /&gt;
+        {filteredPosts.length &gt; 0 ? filteredPosts : posts}
+        &lt;PostForm onSubmit={this.handleNewPost} /&gt;
+      &lt;/div&gt;
+    )
+  }
+}
+<!-- class Feed extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      posts: [
+        {category: categories[0], content: 'This is my first post!'},
+        {category: categories[1], content: 'This is my second post!'}
+      ],
+      filteredPosts: []
+    }
+
+    this.handleNewPost = this.handleNewPost.bind(this);
+    this.handleFilter = this.handleFilter.bind(this);
+  }
+
+  handleNewPost(post) {
+    this.setState({
+      posts: this.state.posts.concat([post])
+    });
+  }
+
+  handleFilter(filter) {
+    this.setState({
+      filteredPosts: this.state.posts.filter((post) =>
+        post.category.toUpperCase() === filter.toUpperCase() ||
+          post.content.includes(filter)
+      )
     });
   }
 
@@ -593,15 +951,15 @@ class Feed extends Component {
       </div>
     )
   }
-}
-```
+} -->
+</code></pre>
 
 Salvando a lista de notícias localmente
 ---------------------------------------
 
 A nossa implementação está quase pronta! Para finalizar, vamos salvar a lista de notícias no ```localStorage```. Dessa forma não perdemos nossas alterações quando fechamos o navegador.
 
-``` jsx
+<pre class="line-numbers" data-start="16" data-line="5,14-16"><code class="language-jsx">
 class Feed extends Component {
   constructor(props) {
     super(props);
@@ -615,35 +973,29 @@ class Feed extends Component {
   }
 
   handleNewPost(post) {
-    var posts = this.state.posts.concat([post])
+    var posts = this.state.posts.concat([post]);
+    this.setState({posts: posts});
+    localStorage.setItem('posts', JSON.stringify(posts));
+  }
+<!-- class Feed extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      posts: JSON.parse(localStorage.getItem('posts')) || [],
+      filteredPosts: []
+    }
+
+    this.handleNewPost = this.handleNewPost.bind(this);
+    this.handleFilter = this.handleFilter.bind(this);
+  }
+
+  handleNewPost(post) {
+    var posts = this.state.posts.concat([post]);
     this.setState({
       posts: posts
     });
     localStorage.setItem('posts', JSON.stringify(posts));
-  }
-
-  handleFilter(filter) {
-    this.setState({
-      filteredPosts: this.state.posts.filter((post) => post.category.toUpperCase() === filter.toUpperCase() || post.content.includes(filter))
-    });
-  }
-
-  render() {
-    const posts = this.state.posts.map((post, index) =>
-      <Post key={index} value={post} />
-    );
-    const filteredPosts = this.state.filteredPosts.map((post, index) =>
-      <Post key={index} value={post} />
-    );
-    return (
-      <div className="feed">
-        <Filter onFilter={this.handleFilter} />
-        {filteredPosts.length > 0 ? filteredPosts : posts}
-        <PostForm onSubmit={this.handleNewPost} />
-      </div>
-    )
-  }
-}
-```
+  } -->
+</code></pre>
 
 Modificamos apenas a inicialização do ```state``` e o método ```handleNewPost```.
