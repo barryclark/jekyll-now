@@ -62,4 +62,4 @@ The best part? The game is presented in a way where I had no trouble getting my 
 
 I guess it's time they saw the movie!
 
-*Bill & Ted's Excellent Boardgame was provided free for review by Steve Jackson Games.
+*Bill & Ted's Excellent Boardgame was provided free for review by Steve Jackson Games.*
