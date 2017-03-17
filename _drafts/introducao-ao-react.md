@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Como fazer um feed de notícias em React.js
-ref: first
+ref: react_1
 lang: pt
 ---
 
