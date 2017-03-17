@@ -27,6 +27,7 @@ title: apache spark와 mysql 연동 하기
 
 
 2. SimpleDataApp.java 생성
+
 {% highlight java %}
 package org.dongchimi.spark;
 
