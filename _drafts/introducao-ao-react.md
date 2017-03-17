@@ -146,7 +146,7 @@ React.createElement('img', {src: logo, className: 'App-logo', alt: 'logo'})
 
 - ```img``` é o tipo do elemento. Para cada elemento HTML existe uma componente React correspondente.
 - ```{src: logo, className: 'App-logo', alt: 'logo'}``` são as ```props``` desse componente. Podemos pensar nas ```props``` como argumentos de uma função. E podemos pensar nos components React como funções, que recebem ```props``` e retornam um elemento React.
-- Observe que os componentes React que representam tags HTML, como no exemplo acima, costumam usar props com os mesmos nomes dos atributos HTML. Com exceção de ```className```, que foi utilizado ao invés de ```class``` por esta ser uma palavra reservada do javascript.
+- Observe que os componentes React que representam tags HTML, como no exemplo acima, costumam usar ```props``` com os mesmos nomes dos atributos HTML. Com exceção de ```className```, que foi utilizado ao invés de ```class``` por esta ser uma palavra reservada do javascript.
 
 Implementando o primeiro componente
 -----------------------------------
@@ -205,6 +205,8 @@ class App extends Component {
 -->
 </code></pre>
 
+[Ver no CodePen](https://codepen.io/lutchobandeira/pen/EWbvVP){:target="_blank"}
+
 Extraindo o componente ```Post```
 ---------------------------------
 
@@ -260,7 +262,7 @@ class Post extends Component {
 -->
 </code></pre>
 
-Perceba que acessamos as props de um componente com a chamada ```this.props``` entre colchetes.
+[Ver no CodePen](https://codepen.io/lutchobandeira/pen/aJVyNN){:target="_blank"}
 
 Utilizando o ```state```
 ------------------------
@@ -318,6 +320,8 @@ class Feed extends Component {
 -->
 </code></pre>
 
+[Ver no CodePen](https://codepen.io/lutchobandeira/pen/JWOyKb){:target="_blank"}
+
 No método ```render``` mapeamos cada objeto de nossa lista para um elemento ```Post``` e então deixamos essa lista de componentes na constante ```posts```.
 
 Exibimos essa lista de componentes ```Post``` como filhos do componente raíz de ```Feed```.
@@ -331,7 +335,7 @@ Vamos criar agora o componente ```PostForm```. Este componente exibirá um formu
 
 Vamos criar também nosso primeiro método. Até agora só implementamos o ```render()``` de cada componente. Esse método se chamará ```handleSubmit()```, e como o nome indica, ele será chamado quando o usuário submeter o formulário.
 
-Esse método também será responsável por incrementar a nossa lista de notícias. Como nossa lista de notícias está armazenada no ```state``` do componente ```Feed```, teremos que implementar essa comunicação entre os componentes.
+Esse método também será responsável por incrementar a nossa lista de notícias. Como nossa lista de notícias está armazenada no ```state``` de outro componente, o componente pai ```Feed```, teremos que implementar essa comunicação entre os componentes.
 
 Nossa versão inicial do componente ```PostForm``` fica assim:
 
@@ -393,9 +397,9 @@ Vamos entender agora alguns pontos dessa implementação.
 
 Como estamos utilizando classes ES6 para implementar nossos componentes, precisamos de um passo a mais para declarar nossos métodos.
 
-Na linha 58 fazemos um ```bind``` de nosso método ```handleSumbit``` para deixar esse método visível a partir de ```this```.
+Na linha 59 fazemos um ```bind``` de nosso método ```handleSumbit``` para deixar esse método visível a partir de ```this```.
 
-Na linha 70 temos nosso ```input```. No React existem dois tipos de inputs.
+Na linha 73 temos nosso ```input```. No React existem dois tipos de inputs.
 
 <h3>Controlled inputs x Uncontrolled inputs</h3>
 
@@ -406,7 +410,7 @@ Nesse exemplo usamos um **uncontrolled input**. Os uncontrolled inputs são uma 
 
 Como em nosso uncontrolled input o valor do campo fica contido no próprio DOM, precisamos de uma maneira para capturar o valor desse input. Essa é uma ótima oportunidade para utilizar uma ```ref``` do React.
 
-No código ```ref={(input) => this.content = input}``` da linha 70, tornamos o nosso input disponível em ```this``` a partir do atributo ```content```. 
+No código ```ref={(input) => this.content = input}``` da linha 73, tornamos o nosso input disponível em ```this``` a partir do atributo ```content```. 
 
 No ```handleSumbit``` fazemos uso de ```this.content``` para acessar nosso uncontrolled input. A única coisa que fazemos em ```handleSubmit``` por enquanto é limpar o valor de nosso input e cancelar o comportamento padrão do navegador.
 
@@ -416,9 +420,9 @@ Precisamos agora de uma maneira de enviar o valor do input para o componente ```
 
 O truque aqui é implementar em ```Feed``` um método que saiba como adicionar uma notícia na lista e depois passar esse método para o componente ```PostForm``` através de uma ```prop```!
 
-Fica mais fácil de entender vendo o código: Então vamos lá!:
+Fica mais fácil de entender vendo o código, então vamos lá:
 
-<pre class="line-numbers" data-start="14" data-line="11,14-18,26"><code class="language-jsx">
+<pre class="line-numbers" data-start="14" data-line="11,14-18,27"><code class="language-jsx">
 class Feed extends Component {
   constructor(props) {
     super(props);
@@ -485,15 +489,15 @@ class Feed extends Component {
 
 Eis o que modificamos aqui:
 
-* Implementamos o método ```handleNewPost``` (e o deixamos visível para ```this``` com o ```bind``` da linha 17);
-* Exibimos o componente ```PostForm``` na linha ;
-* E passamos o método ```handleNewPost``` para o componente ```PostForm``` através de uma ```prop``` chamada ```onSubmit```.
+* Implementamos o método ```handleNewPost``` (e o deixamos visível para ```this``` com o ```bind``` da linha 24);
+* Exibimos o componente ```PostForm``` na linha 40;
+* E passamos o método ```handleNewPost``` para o componente ```PostForm``` através de uma ```prop``` chamada ```onSubmit```, na linha 40.
 
 A grande sacada foi passar o método através da ```prop```!
 
 A implementação de ```handleNewPost``` requer uma atenção especial.
 
-No React toda atualização de estado deve ser feita utilizando o método ```setState```. Não modifique o ```state``` diretamente!
+No React toda atualização de estado deve ser feita utilizando o método ```setState()```. O método ```setState()``` recebe um hash com os atributos que devem ser atualizados. **Nunca modifique o ```state``` diretamente!**
 
 Com a chamada ao ```setState()```,  o React sabe que o estado do componente mudou, e que é hora de chamar ```render()``` novamente para refletir essas mudanças visualmente. Dessa mandeira temos nosso feed atualizado.
 
@@ -554,7 +558,9 @@ class PostForm extends Component {
 } -->
 </code></pre>
 
-Lembre-se que no componente ```Feed``` criamos um ```PostForm``` passando o método o ```handleNewPost``` através da ```prop``` nomeada de ```onSubmit```.
+[Ver no CodePen](https://codepen.io/lutchobandeira/pen/GWOvjx){:target="_blank"}
+
+Lembre-se que no componente ```Feed``` criamos um ```PostForm``` passando o método ```handleNewPost()``` através da ```prop``` nomeada de ```onSubmit```.
 
 Ficou simples agora nos comunicarmos com o componente ```Feed``` a partir de ```PostForm```. Tudo que precisamos fazer é chamar ```this.props.onSubmit({content: this.content.value})```.
 
@@ -698,6 +704,8 @@ class PostForm extends Component {
 } -->
 </code></pre>
 
+[Ver no CodePen](https://codepen.io/lutchobandeira/pen/mWqMmx){:target="_blank"}
+
 Filtrando notícias
 ------------------
 
@@ -782,70 +790,6 @@ class Filter extends Component {
 
 Observe que a maneira de como o React lida com eventos é bem semelhante de como estamos acostumados em HTML. Somente precisamos informar qual método deve ser chamado quando o evento é disparado.
 
-O evento ```onChange``` é disparado apenas quando o usuário tira o foco do campo de texto. Seria mais interessante aplicar ou limpar o filtro sem tirar o foco do campo de texto.
-
-Como queremos que o usuário aplique o filtro ao apertar Enter, implementamos também o método ```handleKeyUp```, que é chamado a cada vez que o usuário preciona uma tecla.
-
-Queremos que o ```handleKeyUp``` faça duas coisas:
-
-- Aplicar o filtro com o valor atual do campo de texto ao apertar Enter;
-- Limpar o filtro quando o usuário deletar todos os caracteres do campo de texto.
-
-Nosso componente ```Filter``` fica assim:
-
-<pre class="line-numbers" data-start="113" data-line="12-14"><code class="language-jsx">
-class Filter extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {value: ''};
-
-    this.handleChange = this.handleChange.bind(this);
-    this.handleKeyUp = this.handleKeyUp.bind(this);
-  }
-
-  handleChange(event) {
-    this.setState({value: event.target.value});
-    if (event.target.value === '') {
-      this.props.onFilter('');
-    }
-  }
-<!-- class Filter extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {value: ''};
-
-    this.handleChange = this.handleChange.bind(this);
-    this.handleKeyUp = this.handleKeyUp.bind(this);
-  }
-
-  handleChange(event) {
-    this.setState({value: event.target.value});
-    if (event.target.value === '') {
-      this.props.onFilter('');
-    }
-  }
-
-  handleKeyUp(event) {
-    if (event.key === 'Enter') {
-      this.props.onFilter(this.state.value);
-    }
-  }
-
-  render() {
-    return (
-      <div>
-        <label>
-          <input type="search" value={this.state.value}
-                               onChange={this.handleChange}
-                               onKeyUp={this.handleKeyUp}
-                               placeholder="Filter by category or content..." />
-        </label>
-      </div>
-    )
-  }
-} -->
-</code></pre>
-
 <h3>Utilizando o componente <code>Filter</code></h3>
 
 Agora vamos usar o componente ```Filter``` em nosso ```Feed```.
@@ -853,13 +797,13 @@ Agora vamos usar o componente ```Filter``` em nosso ```Feed```.
 As mudanças que faremos serão as seguintes:
 
 - No ```state```, além de ```posts``` teremos ```filteredPosts```.
-- No método ```render```, exibiremos ```posts``` somente de ```filteredPosts``` estiver vazia. Caso contrário, mostratemos ```filteredPosts```.
+- No método ```render```, exibiremos ```posts``` somente se ```filteredPosts``` estiver vazia. Caso contrário, mostratemos ```filteredPosts```.
 - A lógica de filtrar os posts baseado no valor digitado pelo usuário em ```Filter``` será implementada no método ```handleFilter```.
 - A comunicação entre os componentes ```Feed``` e ```Filter``` seguirá a mesma estratégia utilizada anteriormente. Passaremos o método ```handleFilter``` como uma ```prop``` de ```Filter```.
 
 Segue a implementação:
 
-<pre class="line-numbers" data-start="51" data-line="9,35-37,41"><code class="language-jsx">
+<pre class="line-numbers" data-start="51" data-line="9,22-29,35-37,41"><code class="language-jsx">
 class Feed extends Component {
   constructor(props) {
     super(props);
@@ -954,6 +898,34 @@ class Feed extends Component {
 } -->
 </code></pre>
 
+[Ver no CodePen](https://codepen.io/lutchobandeira/pen/mWqMmx){:target="_blank"}
+
+<h3>Limpando o filtro</h3>
+
+Uma maneira de remover o filtro sem tirar o foco do campo de texto é simplesmente limpar o campo.
+
+Para implementar essa estratégia, chamamos ```onFilter``` quando o valor do campo é vazio em ```handleChange```:
+
+<pre class="line-numbers" data-start="113" data-line="12-14"><code class="language-jsx">
+class Filter extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {value: ''};
+
+    this.handleChange = this.handleChange.bind(this);
+    this.handleKeyUp = this.handleKeyUp.bind(this);
+  }
+
+  handleChange(event) {
+    this.setState({value: event.target.value});
+    if (event.target.value === '') {
+      this.props.onFilter('');
+    }
+  }
+</code></pre>
+
+[Ver no CodePen](https://codepen.io/lutchobandeira/pen/LWOjjL){:target="_blank"}
+
 Salvando a lista de notícias localmente
 ---------------------------------------
 
@@ -998,4 +970,13 @@ class Feed extends Component {
   } -->
 </code></pre>
 
+[Ver no CodePen](https://codepen.io/lutchobandeira/pen/JWOyON){:target="_blank"}
+
 Modificamos apenas a inicialização do ```state``` e o método ```handleNewPost```.
+
+Próximos passos
+---------------
+
+Nosso feed de notícias ainda não é muito útil. Ele somente mostra notícias criadas pelo próprio usuário. Para deixá-lo realmente interessante, temos que implementar o lado do servidor.
+
+E é isso o que faremos no próximo post do blog. Criaremos uma aplicação em Ruby on Rails que se comunicará com nosso feed de notícias. Aguarde!
