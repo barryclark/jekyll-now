@@ -56,7 +56,7 @@ Accept: application/json
 [
   {
     "id": 42,
-    "name": "HG2G - Don\'t Panic",
+    "name": "HG2G - Don't Panic",
     "url": "/v1/article/42"
   },
   {
@@ -93,7 +93,7 @@ Using these errors, especially for success can avoid you having to use an envelo
   "articles": [
     {
       "id": 42,
-      "name": "HG2G - Don\'t Panic",
+      "name": "HG2G - Don't Panic",
       "url": "/v1/article/42"
     }
     ...
