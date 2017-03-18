@@ -46,12 +46,12 @@ To submit a new post to the front page just add a new .md file to the _posts dir
 
 Make sure to add the header found below to the .md file of all posts in order to display them on the front page.
 
-```
----
+
+```bash
 layout: post
 title: Ny Forening!
----
 ```
+
 
 
 ##Lokal Setup
@@ -75,7 +75,26 @@ gem install jekyll-gist
 
 ```
 
-###Windows and OSX
+###Windows
+Follow this guide on how to install Ruby and Jekyll: [https://jekyllrb.com/docs/windows/].
+
+Not tested but much easier: Instead of installing **Chocolatey**, you can just install ruby from
+[https://rubyinstaller.org/].
+
+Be aware of the SSL error that is mentioned in the guide with a solution.
+
+After the installation run the following commands:
+
+```cmd
+gem install jekyll bundler
+gem install jekyll-sitemap
+gem install pygments.rb
+gem install jekyll-paginate
+gem install jekyll-gist
+gem install jekyll-feed
+```
+
+###OSX
 **?**
 
 
