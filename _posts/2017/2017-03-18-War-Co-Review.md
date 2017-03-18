@@ -13,7 +13,7 @@ featured: warco.jpg
 author: robk
 ---
 
-![War Co.](/images/warco/decks.jpg){: .float-right}
+![War Co.](/images/warco/decks.jpg){: .float-right} 
 **Designers:**  Brandon Rollins \\
 **Publisher:** [Pangea Games](http://pangeagamescompany.com)\\
 **Year:** 2017\\
