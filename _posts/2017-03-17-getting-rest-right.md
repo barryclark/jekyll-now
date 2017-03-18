@@ -4,7 +4,7 @@ title: Getting REST right
 author: jake_hall
 ---
 
-It seems everyone is building a REST API these days - this is great! There are some great public examples of how to do it right ([Stripe.com](http://www.stripe.com) - I'm looking at you!). Don't get me wrong, it's not easy, but there are a few key things you can do to make it easy for your consumers of the API.
+It seems everyone is building a REST API these days - this is great! It's not easy, but there are a few key things you can do to make it easy for your consumers of your API.
 
 ## URLs represent a resource
 
@@ -25,14 +25,16 @@ Most agree that you should stick to one or the other across the whole of your AP
 
 Verbs should not show up in your API URLs - if possible. _"But what about `/search`?"_ I hear you cry.
 
-Well if search is specific to an account then maybe having something like `/article?q=search+term` may be more appropriate to limit the results of the article list. This article, is more of what you would call, guidelines than actual rules.
+Well if search is specific to an account then maybe having something like `/article?q=search+term` may be more appropriate to limit the results of the article list. Alternatively if you do have global search endpoint, then it's probably appropriate to go for the `/search` endpoint.
 
 ## Versioning
 
-Think about versioning your API from the public first release. Unless your API is internal only and only being consumed by your own team can you probably get away with no versioning. There are a couple of different ways you can go about this.
+Think about versioning your API from the public first release, unless your API is internal only and being consumed only by your own team can you probably get away with no versioning. 
+
+There are a couple of different ways you can go about this.
 
 1. In URL versioning (http://api.example.com/v1/article/43)
-   - Probably the most popular, but unfortunately semi-breaks the "URL should represent a resource" principal
+   - Probably the most popular, but unfortunately semi-breaks the "URLs represent a resource" principal
 2. Custom header (X-API-Version: v1)
    - Developers have to learn a new header just to use your API.
 3. Accept header (Accept: application/vnd.article-v1+json)
@@ -53,23 +55,25 @@ Accept: application/json
 
 [
   {
-    'id': 42,
-    'name': 'HG2G - Don\'t Panic',
-    'url': '/v1/article/42'
+    "id": 42,
+    "name": "HG2G - Don\'t Panic",
+    "url": "/v1/article/42"
   },
   {
-    'id': 256,
-    'name': 'Two to the Eight',
-    'url': '/v1/article/256'
+    "id": 256,
+    "name": "Two to the Eight",
+    "url": "/v1/article/256"
   }
 ]
 ```
 
-The url property of the article object allows the consumer to know how view the detail of the article object without having to look at your documentation (you did ~~write~~ generate documentation right?). If you're using Postman, you can just click on the link and it will take you straight to the next resource!
+The url property of the article object allows the consumer to know how view the detail of the article object, without having to look at your documentation (you did ~~write~~ generate documentation right?). If you're using Postman, you can just click on the link and it will take you straight to the next resource!
 
 ## SSL Everywhere
 
 With the invent of Let's Encrypt, there is no longer any excuse not to secure your API endpoint.
+
+If you've got HTTPS enabled, and you receive a request to HTTP - just throw an error such as `400 Bad Request {"error": "HTTPS Required"}` rather than redirecting to HTTPS.
 
 ## Errors and HTTP status codes
 
@@ -88,9 +92,9 @@ Using these errors, especially for success can avoid you having to use an envelo
   "status_msg": "OK",
   "articles": [
     {
-      'id': 42,
-      'name': 'HG2G - Don\'t Panic',
-      'url': '/v1/article/42'
+      "id": 42,
+      "name": "HG2G - Don\'t Panic",
+      "url": "/v1/article/42"
     }
     ...
   ]
