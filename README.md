@@ -56,7 +56,8 @@ title: Ny Forening!
 
 ##Lokal Setup
 
-If you want to get the page to run locally to in order to test changes before going live it can be done easily. A guide can be found ind the [docs](https://jekyllrb.com/docs/installation/)
+If you want to get the page to run locally to in order to test changes before going live it can be done easily. A guide
+can be found ind the [docs](https://jekyllrb.com/docs/installation/)
 
 For reference (primarily my own) a list of the commands done in order to set the enviroment up can be found below. 
 
@@ -72,13 +73,12 @@ gem install jekyll-sitemap
 gem install pygments.rb
 gem install jekyll-paginate
 gem install jekyll-gist
-
 ```
 
 ###Windows
 Follow this guide on how to install Ruby and Jekyll: [https://jekyllrb.com/docs/windows/].
 
-Not tested but much easier: Instead of installing **Chocolatey**, you can just install ruby from
+Not tested but much easier: Instead of installing **Chocolatey** as in the guide, you can just install ruby from
 [https://rubyinstaller.org/].
 
 Be aware of the SSL error that is mentioned in the guide with a solution.
@@ -94,9 +94,27 @@ gem install jekyll-gist
 gem install jekyll-feed
 ```
 
-###OSX
-**?**
+###macOS (Not tested)
+Instructions can be found at this page [https://jekyllrb.com/docs/installation/].
+follow the steps up to and including **Install with RubyGems**. It's not necessary to install NodeJS or Python.
 
+After the installation run the following commands:
+
+```bash
+apt-get install ruby
+apt-get install ruby-dev
+gem install jekyll bundler
+gem install jekyll-sitemap
+gem install pygments.rb
+gem install jekyll-paginate
+gem install jekyll-gist
+```
+If it is not working (see *Run and test*) include:
+
+```bash
+
+gem install jekyll-feed
+```
 
 ##Run and test
 
