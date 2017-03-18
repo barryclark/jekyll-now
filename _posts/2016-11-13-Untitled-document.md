@@ -9,9 +9,9 @@ published: true
 <table>
   <tr>
     <td>Title</td>
-    <td>MY FIRST BLOGGING LESSON</td>
+    <td>Conversation about the media</td>
     <td></td>
-    <td>7/11/16</td>
+    <td>13/03/17</td>
   </tr>
 </table>
 
@@ -19,7 +19,7 @@ published: true
 <table>
   <tr>
     <td>Starting point:</td>
-    <td>Changing the colours of my blog on github.</td>
+    <td>Introduction to new topic</td>
   </tr>
   <tr>
     <td>Target for this lesson?</td>
@@ -28,7 +28,7 @@ published: true
   <tr>
     <td>Did I reach my target?
 (add details to "Lesson Review")</td>
-    <td>Yes or no plus why!</td>
+    <td></td>
   </tr>
 </table>
 
@@ -41,20 +41,22 @@ published: true
     <td>How did I learn? What strategies were effective?</td>
   </tr>
   <tr>
-    <td>I am a visual learner therefore I learnt through seeing what Mr Keen showed us on the board with the coding, what to do, what not to do etcetera. My dad is a specialist in IT so I thought I would be good at it but it turns out I am quite hopeless with only a set of instructions because as I said I am a visual learner so I need to see what to do and I find that a lot more helpful. For me being told what to do and shown how to do it is the most useful and effective method of teaching me to do something. (I'm not a teacher and don’t wish to tell a teacher how to teach but these are my views).</td>
+    <td>We just spoke this lesson so the only effective way of learning was simply listening.</td>
   </tr>
   <tr>
     <td>What limited my learning? Which habits do I need to work on?</td>
   </tr>
   <tr>
-    <td>I have a habit of forgetting what to do, I do not know why but I am very forgetful so whilst I learn through seeing I can often forget what to do but I don’t like to accept defeat so I have a habit of  pretending to know what I’m doing and end up doing things I shouldn’t be and getting everything wrong. I need to work on not daydreaming and staring off into space and concentrate on the task set as well as remembering what I need to do and how to do it, it’s really not that hard I just need to be aware of the fact I’m likely to forget something and work towards stopping it. </td>
+    <td>Nothing limited my learning in this lesson.</td>
   </tr>
   <tr>
     <td>What will I change for next time? How will I improve my learning?</td>
   </tr>
   <tr>
-    <td>In the future I need to listen a bit more and remember exactly what I’m doing. Focus is also something I really need to work on as I can often find myself behind on a task I know how to do or should have already done. I also need to stop laughing and joking in class and get my work done, I tend to joke around in class not because I’m disrespectful or don’t care for the subject but because I enjoy making people laugh and have people find me entertaining which is a serious problem I should leave for the playground.</td>
+    <td>I wouldn't change anything.</td>
   </tr>
 </table>
 
+
+What Mr Keen discussed with us was about the media, and he spoke about how we shouldn't believe everything told to us and simple ways to filter the truth from the lies, a good example is the 'Winx club’, it’s a internet club for kids that is about believing in fairies (innocent enough), but to get closer to the fairies (or something along those lines) you should go to the kitchen at night, turn on the gas, make a wish and light a match. Impressionable 6 year olds will most likely do this but if they just thought about it for a second it doesn’t take a genius to figure out it is a stupid idea. Several people have died and been injured by this because obviously they get seriously burned, if they simply didn’t believe everything they’re told it wouldn’t be such a big issue. 
 
