@@ -8,12 +8,12 @@ tags:
 - war co
 - pangea games company
 layout: post
-description: War Co. is an expandable card game with a simple objective: be the last person standing.
+description: "War Co. is an expandable card game with a simple objective: be the last person standing."
 featured: warco.jpg
 author: robk
 ---
 
-![War Co.](/images/warco/decks.jpg){: .float-right} 
+![War Co.](/images/warco/decks.jpg){: .float-right}
 **Designers:**  Brandon Rollins \\
 **Publisher:** [Pangea Games](http://pangeagamescompany.com)\\
 **Year:** 2017\\
