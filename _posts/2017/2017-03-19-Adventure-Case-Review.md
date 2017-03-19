@@ -14,7 +14,7 @@ featured: adventurecase.jpg
 author: robk
 ---
 
-![Dog Might Logo](/images/dogmight/logo.jpg)A few weeks ago [Dog Might](http://www.dogmight.com/about) shot me over one of their amazing-looking [Adventure Cases](http://www.dogmight.com/adventurecase) over to take a look at. These cases are ultra-customizable and meant to provide an elegant, and functional, storage solution for tabletop gamers. Ease case is is custom made for each customer, who can choose from multiple kinds of wood, felt/suede linings, cover designs, and even accessories like interior lights or metal emblems.
+![Dog Might Logo](/images/dogmight/logo.jpg){: .float-right}A few weeks ago [Dog Might](http://www.dogmight.com/about) shot me over one of their amazing-looking [Adventure Cases](http://www.dogmight.com/adventurecase) over to take a look at. These cases are ultra-customizable and meant to provide an elegant, and functional, storage solution for tabletop gamers. Ease case is is custom made for each customer, who can choose from multiple kinds of wood, felt/suede linings, cover designs, and even accessories like interior lights or metal emblems.
 
 The case I received is a beautiful dark wood, with black felt and a crouching dragon on the lid. Let's get to the pictures before we get to the actual review.
 
