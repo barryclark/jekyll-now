@@ -1,8 +1,9 @@
 ---
-layout: page
+layout: post
 title: Connect The Dots. Least Squares, Linear Regression, and Bayesian Regression
 tags:
-- Mathematics
+- Math
+- Theory
 summary: Sometimes it helps to draw a line or two.
 ---
 

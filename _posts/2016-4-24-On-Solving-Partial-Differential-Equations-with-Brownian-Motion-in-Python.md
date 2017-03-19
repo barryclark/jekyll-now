@@ -1,9 +1,9 @@
 ---
-layout: page
+layout: post
 title: On Solving Partial Differential Equations with Brownian Motion in Python
 tags:
-- Mathematics
-- Python
+- Math
+- Theory
 summary: When random walks solve deterministic equations
 ---
 

@@ -1,8 +1,9 @@
 ---
-layout: page
+layout: post
 title: Parsing HTML Tables in Python with BeautifulSoup and pandas
 tags:
-- Python
+- Data
+- Practical
 summary: How to use BeautifulSoup and pandas to grab data from the web.
 ---
 

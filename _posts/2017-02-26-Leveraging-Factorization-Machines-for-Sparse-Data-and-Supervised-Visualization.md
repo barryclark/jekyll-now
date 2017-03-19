@@ -1,9 +1,10 @@
 ---
-layout: page
+layout: post
 title: Leveraging Factorization Machines for Wide Sparse Data and Supervised Visualization
 tags:
-- Python
+- Math
 - Machine Learning
+- Theory
 summary: A nonlinear model and visualization approach great for sparse data.
 ---
 

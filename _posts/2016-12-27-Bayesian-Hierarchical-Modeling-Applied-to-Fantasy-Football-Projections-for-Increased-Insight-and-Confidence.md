@@ -1,9 +1,11 @@
 ---
-layout: page
+layout: post
 title: Bayesian Hierarchical Modeling Applied to Fantasy Football Projections for Increased Insight and Confidence
 tags:
-- Python
 - Statistics
+- Math
+- Sports
+- Practical
 summary: How to make fantasy football projections better with Bayesian techniques.
 ---
 

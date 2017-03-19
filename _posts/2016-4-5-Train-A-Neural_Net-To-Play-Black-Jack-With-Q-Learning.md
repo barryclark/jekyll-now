@@ -1,9 +1,11 @@
 ---
-layout: page
+layout: post
 title: Train a Neural Network to Play Black Jack with Q Learning
 tags:
 - Machine Learning
-- Python
+- Practical
+- Theory
+- Math
 summary: It turns out the traditional "stay at 15" is almost the best strategy.
 ---
 

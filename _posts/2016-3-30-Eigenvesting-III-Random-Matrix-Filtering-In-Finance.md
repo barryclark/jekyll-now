@@ -1,10 +1,11 @@
 ---
-layout: page
+layout: post
 title: Eigen-vesting III. Random Matrix Filtering in Finance
 tags:
-- Mathematics
+- Math
 - Finance
-- Python
+- Theory
+- Practical
 summary: Part three in a Series on How Math Fits in Modern Portfolio Theory
 ---
 

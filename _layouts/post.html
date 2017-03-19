@@ -2,6 +2,8 @@
 layout: default
 ---
 
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
 <article class="post">
   <h1>{{ page.title }}</h1>
 
@@ -13,5 +15,45 @@ layout: default
     Written on {{ page.date | date: "%B %e, %Y" }}
   </div>
 
+<!---
+The following code is shamelessly taken from
+https://blog.webjeda.com/jekyll-related-posts/-->
+
+<div class="relatedPosts">
+
+<h4>You May Also Enjoy</h4> 
+
+{% assign maxRelated = 4 %}
+{% assign minCommonTags =  2 %}
+{% assign maxRelatedCounter = 0 %}
+
+  {% for post in site.posts %}
+
+    {% assign sameTagCount = 0 %}
+    {% assign commonTags = '' %}
+
+    {% for tag in post.tags %}
+      {% if post.url != page.url %}
+        {% if page.tags contains tag %}
+          {% assign sameTagCount = sameTagCount | plus: 1 %}
+          {% capture tagmarkup %} <span class="label label-default">{{ tag }}</span> {% endcapture %}
+          {% assign commonTags = commonTags | append: tagmarkup %}
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+
+    {% if sameTagCount >= minCommonTags %}
+      <div>
+      <h5><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}{{ commonTags }}</a></h5>
+      </div>
+      {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
+      {% if maxRelatedCounter >= maxRelated %}
+        {% break %}
+      {% endif %}
+    {% endif %}
+
+  {% endfor %}
+
+</div>
   {% include disqus.html %}
 </article>

@@ -1,9 +1,11 @@
 ---
-layout: page
+layout: post
 title: Don't Solve-- Simulate! Markov Chain Monte Carlo Methods with PyMC3.
 tags:
-- Python
-- Mathematics
+- Statistics
+- Math
+- Practical
+- Theory
 summary: A lightning tour of PyMC3 and Bayesian inference to solve (somtimes frustrating or impossible) pen and paper problems.
 ---
 
