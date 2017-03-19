@@ -32,10 +32,10 @@ My last talk before the lunch break was a bit of a change-up. I went to check ou
 ---
 Mid-day activity break: snowshoeing with Yuan. I still managed to get sunburnt, under the cover of trees, with SPF 50 on... that's how pale I am...
 <p style = "text-align: center;"> 
-<img src="/images/yuan_david_snowshoe_compressed.JPG" width="400">
+<img src="/images/yuan_david_snowshoe_compressed.jpg" width="400">
 </p>
 <p style = "text-align: center;"> 
-<img src="/images/yuan_snowshoe_compressed.JPG" width="400">
+<img src="/images/yuan_snowshoe_compressed.jpg" width="400">
 </p>
 
 
