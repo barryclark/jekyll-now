@@ -6,13 +6,13 @@ author: flock3
 
 ## Overview
 
-There has been a cultural shift in recent years around who is responsible for implementing security.
+I believe that there has been a cultural shift in recent years around who is responsible for implementing security within a business.
 
-Perhaps the most concrete example of this, is the ever increasing number of development teams, implementing 
-their own secret management systems using tooling like Vault to store their business secrets, with their info-sec teams then moving
-more towards of a role of supporting the implementation of secured-by-design principles; rather than being the driving force behind it.
 
 A really good example of this is that more and more development teams are starting to implement secret management into their workflows, but not as a result of the info sec teams pushing forward, instead as a result of the tooling being available to help them do this programatically.  The result now being that info sec teams are moving to a role of supporting the overall defence in depth, rather than having to lead the charge in adoption of secret management best practice.
+
+Perhaps the most concrete example of this, is the ever increasing number of development teams implementing 
+their own secret management systems using new tools like Vault (from Hashicorp) to store their business secrets. This has lead to a bit of a shift in the role of their info-sec teams, who have begun to move more towards of a role of supporting the implementation of secured-by-design principles; rather than being the driving force behind it.
 
 Previously, if you wanted to store your secrets, you would have had to go and ask the IT procurement department for budget to buy a HSM(1), and spend three months integrating that into your workflow to see the benefits. Now, with the rise of containerisation, and with the widespread adoption of
 cloud services, people have been writing software to bring more low-cost automation to these workflows. 
@@ -22,8 +22,10 @@ The problems haven't changed, we have just started to see them faster, and reali
 ## Software with secrets in mind
 
 To give a concrete example of this kind of realisation in mind, one of the teams I most recently worked with had re-platformed their stack
-from tin in their data centers to using cloud providers (Amazon in their case), and at the time of re-platforming, they moved to containers in
-their application. One of the concerns they had, was that they were using a public cloud provider to store their docker images. So if they
+from tin in their data centers; to using cloud providers (Amazon in their case), and at the time of re-platforming, they moved to containers in
+their application. 
+
+One of the concerns they had, was that they were using a public cloud provider to store their docker images. So if they
 did what they always had, and stored their secrets in the source code, and had that source code and config switched it into place, then their 
 production database credentials would have been available in their image, if the cloud provider was then ever compromised, then they could 
 have a much more serious breach on their hands, than that which access to the source would normally give an attacker.
@@ -86,14 +88,11 @@ The basic workflow of using Rancher as a source of truth can be broken down like
 
 ## Why I believe you should ignore all of the above problems
 
-Implementing Vault into your team, into their mindsets and then into your stack is really not a simple task. It is not a "one click" solution to all of your security concerns
-and it is by no means a silver bullet of increased security.  What using a secret storage solution like Vault really does well, is help to change the mindset of how some developers
-in your team might think about security, and responsibility for security. 
+Implementing Vault into your team, into their mindsets and then into your stack is really not a simple task. It is not a "one click" solution to all of your security concerns, and it is by no means a silver bullet of increased security.  What using a secret storage solution like Vault really does well, is help to change the mindset of how some developers in your team might think about security, and responsibility for security. 
 
 I recognise that this article has been very much based around "perfect" environments, cloud hosted, immutable infrastructure, every neck-bearded hipster term going, and I am certain that most people reading this, don't run in that kind of environment.  That doesn't mean that you should be put off using Vault.
 
-Vault is no more complex on a physically based environment, if anything it is quite a bit easier. Vault really does not like being an ephemeral service, so treating it as such in a docker container, causes you some headaches you were not originally expecting.
-
+Vault (and other tools like it) can solve real business problems effectively, and very inexpensively, but they require some up-front inevestment of time to understand how they work, and from that, how you should integrate them into your workflows.
 
 ## Conclusion
 
