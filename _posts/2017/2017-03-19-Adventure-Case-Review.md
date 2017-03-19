@@ -18,11 +18,11 @@ author: robk
 
 The case I received is a beautiful dark wood, with black felt and a crouching dragon on the lid. Let's get to the pictures before we get to the actual review.
 
-![Adventure Case](/images/adventurecase/ac1.jpg)
-![Adventure Case](/images/adventurecase/ac2.jpg)
-![Adventure Case](/images/adventurecase/ac3.jpg)
-![Adventure Case](/images/adventurecase/ac4.jpg)
-![Adventure Case](/images/adventurecase/ac5.jpg)
+![Adventure Case](/images/dogmight/ac1.jpg)
+![Adventure Case](/images/dogmight/ac2.jpg)
+![Adventure Case](/images/dogmight/ac3.jpg)
+![Adventure Case](/images/dogmight/ac4.jpg)
+![Adventure Case](/images/dogmight/ac5.jpg)
 
 As you can see the case is pretty amazing, with plenty of space to store dice, cards, writing utensils, and just about anything else a player might need for a day. The main compartment can even be used as a dice tray and the lid can be propped up to keep die rolls secret for a GM.
 
