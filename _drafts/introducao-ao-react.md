@@ -9,17 +9,17 @@ Este é o início de uma série de posts sobre React.js. O objetivo é contruir 
 
 Para quem está iniciando em React pode parecer complicado o número de tecnologias e ferramentas disponíveis. Então vamos deixar as coisas bem simples aqui para facilitar o aprendizado.
 
-Vamos construir a aplicação passo a passo e vamos introduzindo alguns conceitos teóricos do React no momento mais oportuno.
+Vamos construir a aplicação passo a passo e vamos introduzindo alguns conceitos teóricos do React no momento mais oportuno. Caso você queria o código-fonte da aplicação, ele está disponível neste [repositório do GitHub](https://github.com/lutchobandeira/news-feed-react).
 
 Criando o projeto React.js
 --------------------------
 
 A maneira mais fácil de criar um projeto React é utilizando o [create-react-app](https://github.com/facebookincubator/create-react-app). O ```create-react-app``` traz tudo que precisamos para nosso projecto React:
 
-- **webpack** - um module bundler que trabalha muito bem com o npm. Ele também inclui um web server e um file watcher.
-- **Babel** - um compilador javascript que oferece suporte a última versão do javascript mesmo que os browsers ainda não ofereçam.
-- **Autoprefixer** - um plugin que adiciona os prefixos de CSS dos browsers automaticamante.
-- **ESLint** - uma ferramenta que analisa o código e aponta eventuais problemas.
+- [webpack](https://webpack.github.io/) - um module bundler que trabalha muito bem com o npm. Ele também inclui um web server e um file watcher.
+- [Babel](https://babeljs.io/) - um compilador javascript que oferece suporte a última versão do javascript mesmo que os browsers ainda não ofereçam.
+- [Autoprefixer](https://autoprefixer.github.io/) - um plugin que adiciona os prefixos de CSS dos browsers automaticamante.
+- [ESLint](http://eslint.org/) - uma ferramenta que analisa o código e aponta eventuais problemas.
 
 Vamos criar o projeto:
 
@@ -332,6 +332,11 @@ Exibimos essa lista de componentes ```Post``` como filhos do componente raíz de
 
 > Note que o método ```render``` deve retornar um elemento React. Logo precisamos de um componente ```div``` envolvendo nossa lista de posts.
 
+Leitura extra:
+
+* [React Docs sobre Estado e Ciclo de Vida](https://facebook.github.io/react/docs/state-and-lifecycle.html).
+* [Documentação sobre Arrow Functions (operador ```=>```)](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Functions/Arrow_functions).
+
 Formulário para criar novas notícias
 ------------------------------------
 
@@ -402,23 +407,23 @@ Como estamos utilizando classes ES6 para implementar nossos componentes, precisa
 
 Na linha 59 fazemos um ```bind``` de nosso método ```handleSumbit``` para deixar esse método visível a partir de ```this```.
 
-Na linha 72 temos nosso ```input```. No React existem dois tipos de inputs.
+Na linha 72 temos nosso ```input```. No React podemos implementar campos de formulário de duas maneiras: **controlled components** e **uncontrolled components**.
 
-<h3>Controlled inputs x Uncontrolled inputs</h3>
+<h3>Controlled components x Uncontrolled components</h3>
 
-* Controlled inputs: mais React way, pois o valor do input é mantido no estado de um componente React;
-* Uncontrolled inputs: mais simples que os controlled inputs. O valor é mantido no próprio DOM.
+* Controlled components: mais React way, pois o valor do campo é mantido no ```state``` de um componente React;
+* Uncontrolled components: mais simples que os controlled components. O valor é mantido no próprio DOM.
 
-Nesse exemplo usamos um **uncontrolled input**. Os uncontrolled inputs são recomendados para formulários mais simples, como o formulário de nosso exemplo.
+Nesse exemplo usamos um **uncontrolled component**. Os uncontrolled components são recomendados para formulários mais simples, como o formulário de nosso exemplo.
 
-<h3>Implementação de um uncontrolled input</h3>
+<h3>Implementação de um uncontrolled component</h3>
 
-Como em nosso uncontrolled input o valor do campo fica contido no próprio DOM, precisamos de uma maneira para capturar o valor desse input. Essa é uma ótima oportunidade para utilizar uma ```ref``` do React.
+Como em nosso uncontrolled component o valor do campo fica contido no próprio DOM, precisamos de uma maneira para capturar o valor desse input. Essa é uma ótima oportunidade para utilizar uma ```ref``` do React.
 
 Fazemos duas mudanças no código abaixo:
 
-* No código ```ref={(input) => this.content = input}```, na linha 73, tornamos o nosso input disponível em ```this``` a partir do atributo ```content```. 
-* No ```handleSumbit``` fazemos uso de ```this.content``` para acessar nosso uncontrolled input. A única coisa que fazemos em ```handleSubmit``` por enquanto é limpar o valor de nosso input.
+* No código ```ref={(input) => this.content = input}```, na linha 73, tornamos o nosso campo de text disponível em ```this``` a partir do atributo ```content```. 
+* No ```handleSumbit``` fazemos uso de ```this.content``` para acessar nosso uncontrolled component. A única coisa que fazemos em ```handleSubmit``` por enquanto é limpar o valor de nosso campo de text.
 
 <pre class="line-numbers" data-start="56" data-line="8,18"><code class="language-jsx">
 class PostForm extends Component {
@@ -473,6 +478,11 @@ class PostForm extends Component {
   }
 } -->
 </code></pre>
+
+Leitura extra: 
+
+* [React Docs sobre Uncontrolled Components](https://facebook.github.io/react/docs/uncontrolled-components.html).
+* [React Docs sobre Refs](https://facebook.github.io/react/docs/refs-and-the-dom.html).
 
 Comunicação entre componentes
 -----------------------------
@@ -558,13 +568,35 @@ Eis o que modificamos aqui:
 
 A grande sacada foi passar o método através da ```prop```.
 
+Leitura Extra:
+
+* [React Docs sobre Passar Estado](https://facebook.github.io/react/docs/lifting-state-up.html).
+
 <h3>Atualizando o <code>state</code></h3>
 
 A implementação de ```handleNewPost``` requer uma atenção especial: no React toda atualização de estado deve ser feita utilizando o método ```setState()```. O método ```setState()``` recebe um hash com os atributos que devem ser atualizados.
 
 Para ficar claro: **Nunca modifique o ```state``` diretamente!**
 
-Com a chamada ao ```setState()```,  o React sabe que o estado do componente mudou, e que é hora de chamar ```render()``` novamente para refletir essas mudanças visualmente. Dessa mandeira temos nosso feed atualizado.
+Com a chamada ao ```setState()```,  o React sabe que o estado do componente mudou, e que é hora de chamar ```render()``` novamente para refletir essas mudanças visualmente.
+
+<h3>Reconciliação: Como o React Atualiza o DOM</h3>
+
+Recaptulando: quando o usuário escreve uma nova notícia em ```PostForm``` e submete o formulário, o método ```handleSubmit``` de ```PostForm``` é chamado. O método ```handleSubmit```, por sua vez, chama o método ```handleNewPost``` de ```Feed``` através da ```prop``` ```onSubmit``` de ```PostForm```.
+
+Em ```handleNewPost``` uma atualização de estado é feita. Nesse momento o React chama o método ```render``` de ```Feed``` para mostrar o feed de notícias atualizado na tela.
+
+O React, porém, não "recarrega" todo o feed de notícias quando apenas uma notícia é adicionada. Operações que manipulam o DOM são custosas. Então, para melhorar a performance, o React mantém internamente uma representação interna da UI, conhecida como "Virtual DOM".
+
+Quando o ```state``` de ```Feed``` é atualizado e o método ```render``` é chamado novamente, o React compara a árvore de nós atual com a nova árvore de nós no Virtual DOM através de um algoritimo de comparação, ou algoritmo de  "Diffing".
+
+Para o nosso exemplo, o algoritmo de comparação do React percebe que não é necessário recriar todo o ```Feed```, somente é preciso adicionar um ```Post``` no DOM real.
+
+Esse processo é chamado de **Reconciliação**.
+
+Leitura extra:
+
+* [React Docs sobre Reconciliação](https://facebook.github.io/react/docs/reconciliation.html)
 
 <h3>Chamando um método através de uma <code>prop</code></h3>
 
@@ -759,7 +791,7 @@ Filtrando notícias
 
 As notícias devem ser filtradas por categoria ou por conteúdo. Vamos então adicionar um campo de texto no topo do ```Feed``` para implementar nosso filtro.
 
-Diferentemente do campo de texto utilizado em ```PostForm```, vamos utilizar aqui um **Controlled Input**. Esse controlled input seré implementado no componente ```Filter```.
+Diferentemente do campo de texto utilizado em ```PostForm```, vamos utilizar aqui um **Controlled Component**. Esse controlled input será implementado no componente ```Filter```.
 
 Antes de criar o componente ```Filter```, vamos implementar a lógica de filtrar notícias em ```Feed```.
 
@@ -869,13 +901,17 @@ class Feed extends Component {
 } -->
 </code></pre>
 
-<h3>Implementação de um controlled input: o componente <code>Filter</code></h3>
+Leitura extra:
 
-Em qualquer cenário um pouco mais complexo é recomendável utilizar um controlled input. Como você já sabe, os controlled inputs armazenam o valor do campo no ```state```, como um componente React qualquer faria.
+* [React Docs sobre renderização condicional](https://facebook.github.io/react/docs/conditional-rendering.html)
 
-A implementação de um controlled input segue esse roteiro: criamos um método ```handleChange``` que atualiza o valor do input no ```state``` a cada mudança no campo, como definido em ```onChange={this.handleChange}```.
+<h3>Implementação de um controlled component: o componente <code>Filter</code></h3>
 
-Para aplicar o filtro o usuário deve entrar com o nome de uma categoria ou com um trecho de conteúdo e apertar Enter. Então implementamos também o método  ```handleKeyUp```.
+Em qualquer cenário um pouco mais complexo é recomendável utilizar um controlled component. Como você já sabe, os controlled components armazenam o valor do campo no ```state```, como um componente React qualquer faria.
+
+A implementação de um controlled component segue esse roteiro: criamos um método ```handleChange``` que atualiza o valor do input no ```state``` a cada mudança no campo, como definido em ```onChange={this.handleChange}```.
+
+Para aplicar o filtro, o usuário deve entrar com o nome de uma categoria ou com um trecho de conteúdo e apertar Enter. Então implementamos também o método  ```handleKeyUp```.
 
 Segue a versão inicial do componente ```Filter```:
 
@@ -947,6 +983,11 @@ class Filter extends Component {
 </code></pre>
 
 [Ver no CodePen](https://codepen.io/lutchobandeira/pen/mWqMmx){:target="_blank"}
+
+Leitura extra:
+
+* [React Docs sobre Formulários e Controlled Components](https://facebook.github.io/react/docs/forms.html)
+* [React Docs sobre Manipulação de Eventos](https://facebook.github.io/react/docs/handling-events.html)
 
 <h3>Limpando o filtro</h3>
 
