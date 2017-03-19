@@ -15,6 +15,7 @@ CSV_VITTIME='https://docs.google.com/spreadsheets/d/1WL5BuoKQRM560VNctYOeDeineLe
 CSV_PRESS='https://docs.google.com/spreadsheets/d/1WL5BuoKQRM560VNctYOeDeineLeBwP7vtFlwltasASM/pub?gid=1534569987&single=true&output=csv'
 CSV_STORIE='https://docs.google.com/spreadsheets/d/e/2PACX-1vRfNyClIl9C7yvUJP7UAhoh9Al_pPKQeP5aKZ4lrnAjWtsWANelYI5qJOnJHBm2y1uj-Eqcx5Glc_Wl/pub?gid=512745056&single=true&output=csv'
 CSV_LINKS='https://docs.google.com/spreadsheets/d/e/2PACX-1vRfNyClIl9C7yvUJP7UAhoh9Al_pPKQeP5aKZ4lrnAjWtsWANelYI5qJOnJHBm2y1uj-Eqcx5Glc_Wl/pub?gid=2022353516&single=true&output=csv'
+CSV_COMUNI='https://docs.google.com/spreadsheets/d/1cDw6doPl-WTn9KgNNyxwm92gKLnemMyrE1iCjCE5Cds/pub?gid=812837042&single=true&output=csv'
 #MD_vittime='http://blog.spaziogis.it/static/projs/terremotocentroitalia/vittime.md'
 
 wget -O _data/contatti.csv $CSV_CONTATTI
@@ -28,6 +29,7 @@ wget -O _data/vittime.csv $CSV_VITTIME
 wget -O _data/press.csv $CSV_PRESS
 wget -O _data/storie.csv $CSV_STORIE
 wget -O _data/links.csv $CSV_LINKS
+wget -O _data/comuni.csv $CSV_COMUNI 
 
 
 #wget -O vittime.md $MD_vittime
