@@ -4,12 +4,16 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+TARO FURUYA
 
-### More Information
+六本木一丁目のソシャゲ会社で働いているエンジニア
 
-A place to include any other types of information that you'd like to include about yourself.
+興味がある→C# / Unity / ASP.NET / ProjectManagement / Golang / MachineLearning
+
+### Qiita
+http://qiita.com/t_furuya
+
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[taro.furuya+dev@gmail.com](mailto:taro.furuya+dev@gmail.com)

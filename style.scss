@@ -118,6 +118,11 @@ img {
 .date {
   font-style: italic;
   color: $gray;
+  float: right;
+  font-family: $helveticaNeue;
+  font-size: 18px;
+  font-weight: 300;
+
 }
 
 // Specify the color of the selection
