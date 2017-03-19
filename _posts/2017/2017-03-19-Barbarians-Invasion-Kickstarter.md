@@ -21,6 +21,6 @@ However, Barbarians is not the same old tired Eurogame that we have seen crowdin
 
 ![Barbarians](/images/barbarians/model.jpg)
 ![Barbarians](/images/barbarians/prototype.jpg)
-![Barbarians](/images/barbarians/design.jpg)
+![Barbarians](/images/barbarians/design.png)
 
 Zizzi explains that in Barbarians, the greatest Warchief won’t be the one focused solely on war, but the one able to manage all aspects of growing and leading a clan. And, although Tabula Games appears to be keeping many of the game details close to its chest, from the concept art, miniature sculpts, and game-test photos, Barbarians seems like it will be worth the wait. Zizzi and Tabula Games have a great track record of producing fun games. I will be looking forward to the announcement of the Kickstarter kick-off and getting my hands on a copy.
