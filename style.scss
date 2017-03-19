@@ -15,24 +15,31 @@
 
 html {
   font-size: 100%;
+	//Background image
+background-image: url(images/katrinebjerg_3.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+
 }
 
 body {
-	background: $white;
+	//background: $white;
   font: 18px/1.4 $helvetica;
-  color: $darkGray;
+  color: $black;
 }
 
 .container {
-  margin: 0 auto;
-  max-width: 740px;
+  margin: 10px auto;
+  max-width: 850px;
   padding: 0 10px;
   width: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $helveticaNeue;
-  color: $darkerGray;
+  font-family: $helvetica;
+	//Textcolor
+  color: $black;
   font-weight: bold;
 
   line-height: 1.7;
@@ -45,23 +52,28 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
+	//Headers
   font-size: 30px;
-  a {
-    color: inherit;
-  }
+color: #597480;
+	a{
+		color: #597480;
+	}
+
 }
 
 h2 {
   font-size: 24px;
+	color: #597480;
 }
 
 h3 {
   font-size: 20px;
+	color: #597480;
 }
 
 h4 {
   font-size: 18px;
-  color: $gray;
+  color: #597480;
 }
 
 p {
@@ -69,11 +81,13 @@ p {
 }
 
 a {
-  color: $blue;
+	//Link color
+  color: $black;
   text-decoration: none;
 	cursor: pointer;
+	//Hover over links
   &:hover, &:active {
-    color: $blue;
+    color: #DB2600;
   }
 }
 
@@ -108,6 +122,7 @@ strong, b {
 
 img {
   max-width: 100%;
+	max-height: 50%;
 }
 
 // Fixes images in popup boxes from Google Translate
@@ -117,17 +132,17 @@ img {
 
 .date {
   font-style: italic;
-  color: $gray;
+  color: $white;
 }
 
 // Specify the color of the selection
 ::-moz-selection {
   color: $black;
-  background: $lightGray;
+  background: #c69;
 }
 ::selection {
   color: $black;
-  background: $lightGray;
+  background: #c69;
 }
 
 // Nicolas Gallagher's micro clearfix hack
@@ -156,7 +171,8 @@ img {
 
 .masthead {
   padding: 20px 0;
-  border-bottom: 1px solid $lightGray;
+  border-bottom: 1px solid $darkGray;
+  text-align: center;
 
   @include mobile {
     text-align: center;
@@ -164,20 +180,22 @@ img {
 }
 
 .site-avatar {
-  float: left;
-  width: 70px;
-  height: 70px;
-  margin-right: 15px;
+  max-width: 850px;
+  max-height: 85px;
+  margin-left: auto;
+  margin-right: auto;
 
   @include mobile {
     float: none;
     display: block;
     margin: 0 auto;
+
   }
 
-  img {
+  /**img {
     border-radius: 5px;
-  }
+  }**/
+
 }
 
 .site-info {
@@ -192,9 +210,9 @@ img {
 
 .site-name {
   margin: 0;
-  color: $darkGray;
+  color: $white;
   cursor: pointer;
-  font-family: $helveticaNeue;
+  font-family: $helvetica;
   font-weight: 300;
   font-size: 28px;
   letter-spacing: 1px;
@@ -202,7 +220,7 @@ img {
 
 .site-description {
   margin: -5px 0 0 0;
-  color: $gray;
+  color: $white;
   font-size: 16px;
 
   @include mobile {
@@ -211,9 +229,13 @@ img {
 }
 
 nav {
-  float: right;
+  display: inline-block;
+  text-align: center;
   margin-top: 23px; // @TODO: Vertically middle align
-  font-family: $helveticaNeue;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  font-family: $helvetica;
   font-size: 18px;
 
   @include mobile {
@@ -224,7 +246,9 @@ nav {
   }
 
   a {
-    margin-left: 20px;
+    margin-left: 10px;
+    margin-right: 10px;    
+    text-align: center;
     color: $darkGray;
     text-align: right;
     font-weight: 300;
@@ -243,7 +267,7 @@ nav {
 
 .posts > .post {
   padding-bottom: 2em;
-  border-bottom: 1px solid $lightGray;
+  border-bottom: 1px solid $darkGray;
 }
 
 .posts > .post:last-child {
@@ -271,17 +295,84 @@ nav {
   }
 }
 
+
 .wrapper-footer {
+	
+	//Footer
   margin-top: 50px;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  background-color: $lightGray;
+	//Line above and below
+  border-top: 1px solid $white;
+  border-bottom: 1px solid $white;
+	//Color of background
+  background-color: #d0d2d5;
 }
 
 footer {
   padding: 20px 0;
   text-align: center;
 }
+
+
+
+
+/* Mailchimp setup */
+
+#mc_embed_signup {
+  background: #fff; 
+  clear: left; 
+  font: 14px Helvetica,Arial,sans-serif; 
+}
+
+
+
+/* MailChimp Form Embed Code - Classic - 12/17/2015 v10.7 */
+#mc_embed_signup form {display:block; position:relative; text-align:left; padding:10px 0 10px 3%}
+#mc_embed_signup h2 {font-weight:bold; padding:0; margin:15px 0; font-size:1.4em;}
+#mc_embed_signup input {border: 1px solid #ABB0B2; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px;}
+#mc_embed_signup input[type=checkbox]{-webkit-appearance:checkbox;}
+#mc_embed_signup input[type=radio]{-webkit-appearance:radio;}
+#mc_embed_signup input:focus {border-color:#333;}
+#mc_embed_signup .button {clear:both; background-color: #aaa; border: 0 none; border-radius:4px; transition: all 0.23s ease-in-out 0s; color: #FFFFFF; cursor: pointer; display: inline-block; font-size:15px; font-weight: normal; height: 32px; line-height: 32px; margin: 0 5px 10px 0; padding: 0 22px; text-align: center; text-decoration: none; vertical-align: top; white-space: nowrap; width: auto;}
+#mc_embed_signup .button:hover {background-color:#777;}
+#mc_embed_signup .small-meta {font-size: 11px;}
+#mc_embed_signup .nowrap {white-space:nowrap;}
+
+#mc_embed_signup .mc-field-group {clear:left; position:relative; width:96%; padding-bottom:3%; min-height:50px;}
+#mc_embed_signup .size1of2 {clear:none; float:left; display:inline-block; width:46%; margin-right:4%;}
+* html #mc_embed_signup .size1of2 {margin-right:2%; /* Fix for IE6 double margins. */}
+#mc_embed_signup .mc-field-group label {display:block; margin-bottom:3px;}
+#mc_embed_signup .mc-field-group input {display:block; width:100%; padding:8px 0; text-indent:2%;}
+#mc_embed_signup .mc-field-group select {display:inline-block; width:99%; padding:5px 0; margin-bottom:2px;}
+
+#mc_embed_signup .datefield, #mc_embed_signup .phonefield-us{padding:5px 0;}
+#mc_embed_signup .datefield input, #mc_embed_signup .phonefield-us input{display:inline; width:60px; margin:0 2px; letter-spacing:1px; text-align:center; padding:5px 0 2px 0;}
+#mc_embed_signup .phonefield-us .phonearea input, #mc_embed_signup .phonefield-us .phonedetail1 input{width:40px;}
+#mc_embed_signup .datefield .monthfield input, #mc_embed_signup .datefield .dayfield input{width:30px;}
+#mc_embed_signup .datefield label, #mc_embed_signup .phonefield-us label{display:none;}
+
+#mc_embed_signup .indicates-required {text-align:right; font-size:11px; margin-right:4%;}
+#mc_embed_signup .asterisk {color:#e85c41; font-size:150%; font-weight:normal; position:relative; top:5px;}     
+#mc_embed_signup .clear {clear:both;}
+
+#mc_embed_signup .mc-field-group.input-group ul {margin:0; padding:5px 0; list-style:none;}
+#mc_embed_signup .mc-field-group.input-group ul li {display:block; padding:3px 0; margin:0;}
+#mc_embed_signup .mc-field-group.input-group label {display:inline;}
+#mc_embed_signup .mc-field-group.input-group input {display:inline; width:auto; border:none;}
+
+#mc_embed_signup div#mce-responses {float:left; top:-1.4em; padding:0em .5em 0em .5em; overflow:hidden; width:90%; margin: 0 5%; clear: both;}
+#mc_embed_signup div.response {margin:1em 0; padding:1em .5em .5em 0; font-weight:bold; float:left; top:-1.5em; z-index:1; width:80%;}
+#mc_embed_signup #mce-error-response {display:none;}
+#mc_embed_signup #mce-success-response {color:#529214; display:none;}
+#mc_embed_signup label.error {display:block; float:none; width:auto; margin-left:1.05em; text-align:left; padding:.5em 0;}
+
+#mc-embedded-subscribe {clear:both; width:auto; display:block; margin:1em 0 1em 5%;}
+#mc_embed_signup #num-subscribers {font-size:1.1em;}
+#mc_embed_signup #num-subscribers span {padding:.5em; border:1px solid #ccc; margin-right:.5em; font-weight:bold;}
+
+#mc_embed_signup #mc-embedded-subscribe-form div.mce_inline_error {display:inline-block; margin:2px 0 1em 0; padding:5px 10px; background-color:rgba(255,255,255,0.85); -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; font-size:14px; font-weight:normal; z-index:1; color:#e85c41;}
+#mc_embed_signup #mc-embedded-subscribe-form input.mce_inline_error {border:2px solid #e85c41;}
+
+
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
