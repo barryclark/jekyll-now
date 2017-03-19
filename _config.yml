@@ -56,7 +56,7 @@ google_analytics:
 
 # Pagination
 paginate: 2
-paginate_path: "/page:num/"
+paginate_path: posts/page:num/
 
 permalink: /:title/
 
