@@ -1,3 +1,11 @@
+---
+navigation:
+ - text: Blog
+   url: /
+ - text: About
+   url: /about/
+---
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -18,23 +26,32 @@
   <body>
     <div class="wrapper-masthead">
       <div class="container">
-        <header class="masthead clearfix">
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
-
-          <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-            <p class="site-description">{{ site.description }}</p>
-          </div>
-
+        <header class="clearfix">
           <nav>
-            <a href="{{ site.baseurl }}/">Blog</a>
-            <a href="{{ site.baseurl }}/about">About</a>
+            <div class="navigation">
+              {% assign url = page.url|remove:'index.html' %}
+              {% for link in layout.navigation %}
+                  <a href="{{link.url}}" {% if url == link.url %}class="active"{% endif %} title="{{link.title}}">{{link.text}}</a>
+              {% endfor %}
+            </div>
+
+            <div class="site-info">
+              <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
+              <p class="site-description">{{ site.description }}</p>
+            </div>
+
+            <div class="header-links">
+              <a href="https://github.com/{{ site.footer-links.github }}" target="_blank"><img src="/images/github-white.svg" /></a>
+            </div>
+
           </nav>
+
         </header>
       </div>
     </div>
 
     <div id="main" role="main" class="container">
+
       {{ content }}
     </div>
 
