@@ -3,7 +3,9 @@ layout: post
 title: Opening up security
 author: flock3
 ---
+
 I believe that there has been a cultural shift in recent years around who is responsible for implementing security within a business, and that development teams are becomming more involved in the implementation of security practice, and thereby becoming leaders in it.
+
 ----
 ***
 
