@@ -1,4 +1,30 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2759,215541957,2017-03-20 21:34:03,2017-03-20 20:15:50,Commerciante di #Muccia cerca container o modulo per riprendere l'attività ,,,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""container o modulo"", ""data"": ""20/03/2017"", ""descrizione"": ""Sono un piccolo commerciante di materiale elettrico, cerco un modulo/container per proseguire la mia attivit\u00e0 a Muccia. Grazie"", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3383062025 Paolo Carboni""}","<pre><yamldata>tel: '3383062025 Paolo Carboni'
+email: ''
+cosa: 'container o modulo'
+descrizione: 'Sono un piccolo commerciante di materiale elettrico, cerco un modulo/container per proseguire la mia attività a Muccia. Grazie'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 20/03/2017
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2758,215536962,2017-03-20 21:32:27,2017-03-20 19:56:28,Fondata a #Norcia l'associazione NorciAgorà,,,"[""Accettato"", ""Bollettino"", ""Contatti"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""20/03/2017"", ""descrizione"": ""\u00c8 stata fondata a Norcia \u013eAssociazione ricreativa e culturale senza fini di lucro NorciAgor\u00e0. Maggiori info sulla pagina Facebook @NorciAgora."", ""link"": ""https://www.facebook.com/NorciAgora/"", ""titolo"": ""Fondata \u013eAssociazione NorciAgor\u00e0""}","<pre><yamldata>titolo: 'Fondata ľAssociazione NorciAgorà'
+descrizione: 'È stata fondata a Norcia ľAssociazione ricreativa e culturale senza fini di lucro NorciAgorà. Maggiori info sulla pagina Facebook @NorciAgora.'
+link: 'https://www.facebook.com/NorciAgora/'
+data: 20/03/2017
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2757,215515358,2017-03-20 21:31:31,2017-03-20 18:33:48,Offresi appartamento in casa colonica tra Macerata e Corridonia,,,"[""Accettato"", ""Alloggi"", ""Bollettino"", ""Form""]",,,"{""data"": ""20/03/2017"", ""descrizione"": ""Ho un appartamento disponibile al primo piano di una casa colonica. Zona fra Macerata e Corridonia. Pu\u00f2 andare bene per persone sopra i 50 anni e se automunite..Non va bene se ci sono bambini, vicino ci sono un fiume e un lago e possono essere pericolosi. Possibilit\u00e0 di ospitare anche cane o gatto."", ""email"": ""roberta.bianconi@yahoo.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3393953939""}","<pre><yamldata>tel: '3393953939'
+email: roberta.bianconi@yahoo.it
+descrizione: 'Ho un appartamento disponibile al primo piano di una casa colonica. Zona fra Macerata e Corridonia. Può andare bene per persone sopra i 50 anni e se automunite..Non va bene se ci sono bambini, vicino ci sono un fiume e un lago e possono essere pericolosi. Possibilità di ospitare anche cane o gatto.'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 20/03/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2756,215487247,2017-03-20 16:59:43,2017-03-20 16:59:20,Cercasi camion gru per trasporto roulotte #AcquasantaTerme,42.769944,13.410185,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Facebook"", ""Form""]",,,"{""cosa"": ""Cercasi camion gru per trasporto roulotte #AcquasantaTerme"", ""data"": ""20/03/2017"", ""descrizione"": ""Cerco disponibilit\u00e0 di camion gru per portare una roulotte da Stienta (Rovigo) ad Acquasanta Terme (Ascoli P.) da dare a una famiglia di allevatori che hanno perso la casa. Il trasporto sarebbe da farsi sabato prossimo 25 marzo. Possiamo rimborsare autostrada e carburante."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Strada Statale 4 Via Salaria, Acquasanta Terme, AP, Marche, 63095, Italia"", ""lat"": ""42.769944"", ""link"": ""https://www.facebook.com/paolo.campagnoli3/posts/10155005638418950"", ""lon"": ""13.410185"", ""tel"": """"}","<pre><yamldata>tel: ''
 email: ''
 cosa: 'Cercasi camion gru per trasporto roulotte #AcquasantaTerme'
@@ -17323,18 +17349,6 @@ email: ''
 data: 14/09/2016
 </yamldata></pre>
 ",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/280,176859116,2016-09-23 21:21:49,2016-09-14 09:31:13,La Montecarlo,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""La Montecarlo"", ""data"": ""14/09/2016"", ""descrizione"": ""Il 19 settembre dodici artisti italiani vi serviranno, a partire dalle ore 19 presso la pizzeria La Montecarlo , un piatto di amatriciana e una bibita a scelta , al prezzo di \u20ac 15. L'incasso della serata sar\u00e0 interamente devoluto, a sostegno dei terremotati, all'associazione \""Vico Badio\"" di Fonte del Campo di Accumoli, epicentro del sisma del 24 agosto. NON SI PRENOTA, l'evento sar\u00e0 organizzato come \""sagra\"", con il solo fine di raccogliere fondi e aiutare le persone colpite dal sisma. La Montecarlo I, Vicolo Savelli, 12, 00186 Roma"", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1765529567047960/"", ""postale"": """"}","<pre><yamldata>chi: 'La Montecarlo'
-descrizione: 'Il 19 settembre dodici artisti italiani vi serviranno, a partire dalle ore 19 presso la pizzeria La Montecarlo , un piatto di amatriciana e una bibita a scelta , al prezzo di € 15. L''incasso della serata sarà interamente devoluto, a sostegno dei terremotati, all''associazione ""Vico Badio"" di Fonte del Campo di Accumoli, epicentro del sisma del 24 agosto. NON SI PRENOTA, l''evento sarà organizzato come ""sagra"", con il solo fine di raccogliere fondi e aiutare le persone colpite dal sisma. La Montecarlo I, Vicolo Savelli, 12, 00186 Roma'
-intestazione: ''
-iban: ''
-bic: ''
-postale: ''
-causale: ''
-link: 'https://www.facebook.com/groups/1758670357733881/permalink/1765529567047960/'
-email: ''
-data: 14/09/2016
-</yamldata></pre>
-",closed
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/280,176859116,2016-09-23 21:21:49,2016-09-14 09:31:13,La Montecarlo,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""La Montecarlo"", ""data"": ""14/09/2016"", ""descrizione"": ""Il 19 settembre dodici artisti italiani vi serviranno, a partire dalle ore 19 presso la pizzeria La Montecarlo , un piatto di amatriciana e una bibita a scelta , al prezzo di \u20ac 15. L'incasso della serata sar\u00e0 interamente devoluto, a sostegno dei terremotati, all'associazione \""Vico Badio\"" di Fonte del Campo di Accumoli, epicentro del sisma del 24 agosto. NON SI PRENOTA, l'evento sar\u00e0 organizzato come \""sagra\"", con il solo fine di raccogliere fondi e aiutare le persone colpite dal sisma. La Montecarlo I, Vicolo Savelli, 12, 00186 Roma"", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1765529567047960/"", ""postale"": """"}","<pre><yamldata>chi: 'La Montecarlo'
 descrizione: 'Il 19 settembre dodici artisti italiani vi serviranno, a partire dalle ore 19 presso la pizzeria La Montecarlo , un piatto di amatriciana e una bibita a scelta , al prezzo di € 15. L''incasso della serata sarà interamente devoluto, a sostegno dei terremotati, all''associazione ""Vico Badio"" di Fonte del Campo di Accumoli, epicentro del sisma del 24 agosto. NON SI PRENOTA, l''evento sarà organizzato come ""sagra"", con il solo fine di raccogliere fondi e aiutare le persone colpite dal sisma. La Montecarlo I, Vicolo Savelli, 12, 00186 Roma'
 intestazione: ''
