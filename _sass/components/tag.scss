@@ -3,7 +3,12 @@
 }
 
 .tags-header {
-  margin: 2rem 0;
+  background: $blue;
+  display: inline-block;
+  padding: 1rem;
+  color: white;
+  box-shadow: 1px 1px 1px $gray;
+  margin-bottom: 2rem;
 }
 
 .tag-list {
