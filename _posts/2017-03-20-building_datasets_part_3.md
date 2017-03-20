@@ -6,7 +6,7 @@ author: David Nadeau
 
 In the [first of these posts](http://blog.innodatalabs.com/building_datasets_part_1/), we covered the now conventional wisdom that having a bigger dataset is better for training machine learning algorithms. In the [second of the series](http://blog.innodatalabs.com/building_datasets_part_2/), we've detailed a few rulesto create quality datasets. Now, let's review how to get started with building datasets.
 
-This slide from [@NathanBenaich](https://twitter.com/NathanBenaich) perfectly summarizes the options you have: 
+ [This slide](https://docs.google.com/presentation/d/11Ki7j7oTxI8Y9pZxyrxk3m3dTdjz4t1ir4QRCWnY7-g/edit#slide=id.g1d25704031_0_210) from [@NathanBenaich](https://twitter.com/NathanBenaich) perfectly summarizes the options you have: 
 
 ![https://docs.google.com/presentation/d/11Ki7j7oTxI8Y9pZxyrxk3m3dTdjz4t1ir4QRCWnY7-g/edit#slide=id.g1d25704031_0_210](../images/cold-start-data-problem.png "How to get started with building datasets")
 
