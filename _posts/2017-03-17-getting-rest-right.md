@@ -34,7 +34,7 @@ Unless your API is for internal use only, and will only be used by your team, yo
 There are a couple of different ways you can go about this.
 
 1. In URL versioning (http://api.example.com/v1/article/43)
-   - Probably the most popular, but unfortunately semi-breaks the "URLs represent a resource" principal
+   - Probably the most popular, but unfortunately semi-breaks the "URLs represent a resource" principle
 2. Custom header (X-API-Version: v1)
    - Developers have to learn a new header just to use your API.
 3. Accept header (Accept: application/vnd.article-v1+json)
@@ -71,7 +71,7 @@ The url property of the article object allows the consumer to know how view the 
 
 ## SSL Everywhere
 
-With the invent of Let's Encrypt, there is no longer any excuse not to secure your API endpoint.
+With the invention of Let's Encrypt, there is no longer any excuse not to secure your API endpoint.
 
 If you've got HTTPS enabled, and you receive a request to HTTP - just throw an error such as `400 Bad Request {"error": "HTTPS Required"}` rather than redirecting to HTTPS.
 
