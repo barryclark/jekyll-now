@@ -50,6 +50,12 @@ authors:
     web: https://ivorcaldwell.org
     web_short_name: ivorcaldwell.org
     linkedin: ivor-caldwell-95930a6
+  flock3:
+    display_name: Thomas Gray
+    email: thomas.gray@infinityworks.com
+    web: https://flock3.com
+    web_short_name: flock3.com
+    linkedin: flock2
   jake_hall:
     display_name: Jake Hall
     email: jake.hall@infinityworks.com
@@ -57,6 +63,7 @@ authors:
     web_short_name: infinityworks.com
     gravatar: 050b8bed1e0d616a97ee14afd55ad078
     linkedin: halljakea
+    
 #
 # Flags below are optional
 #
