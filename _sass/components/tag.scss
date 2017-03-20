@@ -1,0 +1,29 @@
+.tags {
+  padding-left: 0;
+}
+
+.tags-header {
+  margin: 2rem 0;
+}
+
+.tag-list {
+  margin: 1rem;
+}
+
+.tag {
+  list-style-type: none;
+  display: inline-block;
+  background-color: $light-gray;
+  border-radius: 3px;
+  padding: 1px 15px;
+
+  a {
+    text-decoration: none;
+    color: $gray;
+  }
+
+  &:hover {
+    cursor: pointer;
+    background-color: darken($light-gray, 5%)
+  }
+}

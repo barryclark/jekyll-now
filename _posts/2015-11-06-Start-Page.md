@@ -3,6 +3,8 @@ layout: post
 title: Private and Powerful Search Results
 header: '/images/tech/startpage.png'
 header-text: false
+category: Tech
+tags: [tools, learn]
 ---
 
 There's usually a pretty big tradeoff when choosing between our search results accuracy and privacy. I've recently come across a new favourite solution.

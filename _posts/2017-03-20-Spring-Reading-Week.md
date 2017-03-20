@@ -3,6 +3,8 @@ layout: post
 title: Reading Week Ski Trip
 header: '/images/trips/ski.jpg'
 header-text-color: 'light'
+category: Trip
+tags: [trip]
 ---
 
 Some friends and I went skiing at Mont Tremblant in Quebec this past spring reading week.

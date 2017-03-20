@@ -3,6 +3,8 @@ layout: post
 title: California for the Winter
 header: '/images/california/trip.jpg'
 header-text-color: 'light'
+category: Tech
+tags: [trip, california]
 ---
 
 After 4 months in Palo Alto for work I have compiled some of my favorite photos from my stay there. Most weekends my roommates and I would check out some of the features of the area and each week I would use one of the images from that trip as my phone wallpaper.

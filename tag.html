@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+<div class='container'>
+  <h1 class='tags-header'>Tags</h1>
+  {% for tag in site.tags %}
+  {% assign t = tag | first %}
+  {% assign posts = tag | last %}
+  <h3>{{ t }}</h3>
+  <ul class='tag-list'>
+    {% for post in posts %}
+    {% if post.tags contains t %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+      <span class="date"> - {{ post.date | date: "%B %-d, %Y"  }}</span>
+    </li>
+    {% endif %}
+    {% endfor %}
+  </ul>
+  {% endfor %}
+</div>

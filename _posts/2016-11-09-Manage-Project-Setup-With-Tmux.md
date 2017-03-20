@@ -3,6 +3,8 @@ layout: post
 title: Manage Project Setup with Tmux
 header: '/images/tech/tmux.png'
 header-text-color: 'light'
+category: Tech,
+tags: [tools, learn]
 ---
 
 I recently joined a team working developing a JavaScript web app and like the beginning of all projects, I had to ramp up on how to run the application locally.
