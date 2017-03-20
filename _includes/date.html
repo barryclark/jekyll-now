@@ -1,0 +1,7 @@
+{% if page.lang == 'en' %}
+  {{ page.date | date: "%m/%d/%Y" }}
+{% endif %}
+
+{% if page.lang == 'pt' %}
+  {{ page.date | date: "%d/%m/%Y" }}
+{% endif %}

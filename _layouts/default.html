@@ -12,6 +12,8 @@
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
 
+    <link rel="stylesheet" href="{{ "/css/prism.css" | prepend: site.baseurl }}">
+
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
   </head>
 
@@ -19,18 +21,36 @@
     <div class="wrapper-masthead">
       <div class="container">
         <header class="masthead clearfix">
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
+          <a href="{{ site.baseurl }}/{{ site.index[page.lang] }}" class="site-avatar"><img src="{{ site.avatar }}" /></a>
 
           <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
+            <h1 class="site-name"><a href="{{ site.baseurl }}/{{ site.index[page.lang] }}">{{ site.name }}</a></h1>
             <p class="site-description">{{ site.description }}</p>
           </div>
 
           <nav>
-            <a href="{{ site.baseurl }}/">Blog</a>
-            <a href="{{ site.baseurl }}/about">About</a>
+            <a href="{{ site.baseurl }}/{{ site.index[page.lang] }}">{{ site.t[page.lang].home }}</a>
+            <a href="{{ site.baseurl }}/about">{{ site.t[page.lang].about }}</a>
+
           </nav>
         </header>
+        <div class="wrapper" id="language-selector" style="text-align: right; line-height: 2em">
+          <p class="lead">
+            {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
+            {% for post in posts %}
+              <a href="{{ post.url | prepend: site.baseurl }}" class="{{ post.lang }}">
+                <span class="flag-icon flag-icon-{{ site.t[post.lang].flag }} {% if post.lang == page.lang %}active{% endif %}"></span>
+              </a>
+            {% endfor %}
+
+            {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
+            {% for p in pages %}
+            <a href="{{ p.url | prepend: site.baseurl }}" class="{{ p.lang }}">
+              <span class="flag-icon flag-icon-{{ site.t[p.lang].flag }} {% if p.lang == page.lang %}active{% endif %}"></span>
+            </a>
+            {% endfor %}
+          </p>
+        </div>
       </div>
     </div>
 
@@ -47,5 +67,13 @@
     </div>
 
     {% include analytics.html %}
+    <script src="{{ "/js/prism.js" | prepend: site.baseurl }}"></script>
+    <script type="text/javascript">
+      Prism.hooks.add('before-sanity-check', function (env) {
+        if (!env.language == "markup" && !env.element.className.includes("unescaped")) {
+          return;
+        }
+      })
+    </script>
   </body>
 </html>

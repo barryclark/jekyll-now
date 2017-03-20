@@ -10,7 +10,7 @@ layout: default
   </div>
 
   <div class="date">
-    Written on {{ page.date | date: "%B %e, %Y" }}
+    {{ site.t[page.lang].written_on }} {% include date.html date=page.date %}
   </div>
 
   {% include disqus.html %}

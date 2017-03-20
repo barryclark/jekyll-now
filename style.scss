@@ -8,6 +8,8 @@
 @import "reset";
 @import "variables";
 // Syntax highlighting @import is at the bottom of this file
+@import "base";
+@import "flag-icon";
 
 /**************/
 /* BASE RULES */
@@ -18,9 +20,11 @@ html {
 }
 
 body {
-	background: $white;
-  font: 18px/1.4 $helvetica;
+  background: $white;
+  font: 18px/1.4 $system-fonts;
   color: $darkGray;
+  line-height: 1.8;
+  font-weight: 300;
 }
 
 .container {
@@ -31,9 +35,9 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $helveticaNeue;
-  color: $darkerGray;
-  font-weight: bold;
+  font-family: $system-fonts;
+  color: $red;
+  font-weight: 300;
 
   line-height: 1.7;
   margin: 1em 0 15px;
@@ -69,11 +73,11 @@ p {
 }
 
 a {
-  color: $blue;
+  color: $red;
   text-decoration: none;
-	cursor: pointer;
+  cursor: pointer;
   &:hover, &:active {
-    color: $blue;
+    color: $red;
   }
 }
 
@@ -102,8 +106,8 @@ em, i {
   font-style: italic;
 }
 
-strong, b {
-  font-weight: bold;
+a, strong, b, dt {
+  font-weight: 500;
 }
 
 img {
@@ -194,7 +198,7 @@ img {
   margin: 0;
   color: $darkGray;
   cursor: pointer;
-  font-family: $helveticaNeue;
+  font-family: $system-fonts;
   font-weight: 300;
   font-size: 28px;
   letter-spacing: 1px;
@@ -213,7 +217,7 @@ img {
 nav {
   float: right;
   margin-top: 23px; // @TODO: Vertically middle align
-  font-family: $helveticaNeue;
+  font-family: $system-fonts;
   font-size: 18px;
 
   @include mobile {
@@ -232,7 +236,7 @@ nav {
 
     @include mobile {
       margin: 0 10px;
-      color: $blue;
+      color: $red;
     }
   }
 }
