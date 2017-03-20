@@ -1,46 +1,49 @@
 ---
 layout: post
-title: Como fazer um feed de notícias em React.js
+title: How to implement a news feed in React.js - Part 1
 ref: react_1
-lang: pt
+lang: en
 ---
 
-Este é o início de uma série de posts sobre React.js. O objetivo é contruir um feed de notícias com atualizações em tempo real. Além do front-end, vamos implementar também um back-end em Rails. Este primeiro post é uma introdução ao React.js. Então mesmo que você não seja um programador Rails, este post pode ser útil pra você!
+This is the beginning of a post series about React.js. The goal is to build a news feed with real-time updates. In addition to the front-end, we will also implement a back-end in Rails. This first post is an introduction to React.js. So even if you are not a Rails programmer, this post might be useful to you!
 
-Para quem está iniciando em React pode parecer complicado o número de tecnologias e ferramentas disponíveis. Então vamos deixar as coisas bem simples aqui para facilitar o aprendizado.
+For those getting started in React, the number of technologies and tools available may seem complicated. So let's make it very simple here to make the learning process easier.
 
-Vamos construir a aplicação passo a passo e vamos introduzindo alguns conceitos teóricos do React no momento mais oportuno. Caso você queria o código-fonte da aplicação, ele está disponível neste [repositório do GitHub](https://github.com/lutchobandeira/news-feed-react).
+Let's build the application step by step and introduce some theoretical concepts of React at the most opportune moment. If you want the application source code, it's available in this [GitHub repository](https://github.com/lutchobandeira/news-feed-react).
 
-Criando o projeto React.js
---------------------------
+Creating the React.js Project
+-----------------------------
 
-A maneira mais fácil de criar um projeto React é utilizando o [create-react-app](https://github.com/facebookincubator/create-react-app). O ```create-react-app``` traz tudo que precisamos para nosso projecto React:
+The easiest way to create a React project is by using the [create-react-app](https://github.com/facebookincubator/create-react-app) . It brings everything we need to our React project:
 
-- [webpack](https://webpack.github.io/) - um module bundler que trabalha muito bem com o npm. Ele também inclui um web server e um file watcher.
-- [Babel](https://babeljs.io/) - um compilador javascript que oferece suporte a última versão do javascript mesmo que os browsers ainda não ofereçam.
-- [Autoprefixer](https://autoprefixer.github.io/) - um plugin que adiciona os prefixos de CSS dos browsers automaticamante.
-- [ESLint](http://eslint.org/) - uma ferramenta que analisa o código e aponta eventuais problemas.
+- [webpack](https://webpack.github.io/) - a module bundler that works very well with npm. It also includes a web server and a file watcher.
+- [Babel](https://babeljs.io/) - a javascript compiler that offers support for the latest version of javascript even when browsers do not support it yet.
 
-Vamos criar o projeto:
+- [Autoprefixer](https://autoprefixer.github.io/) - a plugin that adds CSS vendor prefixes automatically.
+
+- [ESLint](http://eslint.org/) - a tool that analyzes code and points out any problems.
+
+Let's create the project:
 
 ``` bash
 $ npm install -g create-react-app
 $ create-react-app news-feed
 ```
 
-Feito isso já podemos entrar na pasta e iniciar nosso servidor:
+Once we are done we can enter the folder and start our server:
 
 ``` bash
 $ cd news-feed/
 $ npm start
 ```
 
-Pronto! Nosso servidor já está disponível em [http://localhost:3000](http://localhost:3000) (ou em outra porta se a porta 3000 já estiver em uso).
+Done! Our server is available at [http://localhost:3000](http://localhost:3000) (or on another port if port 3000 is already in use).
 
-Componentes React
------------------
 
-O ```create-react-app``` criou um componente raíz chamado ```App```. Vamos aproveitar para introduzir alguns conceitos de React. Dê uma rápida olhada no código abaixo:
+React Components
+----------------
+
+The ```create-react-app``` created a root component named ```App```. We are going to use the opporunity to introduce some concepts of React. Take a quick look at the code below:
 
 <pre class="line-numbers "><code class="language-jsx">
 import React, { Component } from 'react';
@@ -89,24 +92,24 @@ export default App;
 -->
 </code></pre>
 
-Algumas coisas que podemos observar logo de cara:
+Some things we can observe right away:
 
-- Todo componente React herda de ```Component```;
-- O método ```render()``` é implementado;
-- Há uma sintaxe parecida com HTML dentro do método ```render()```. Esse é o JSX, veremos a seguir.
+- Every React component inherits from ```Component```;
+- The ```render``` method is implemented;
+- There is a HTML-like syntax within the ```render``` method. This is JSX, we'll see next.
 
 JSX
 ---
 
-O ```JSX``` é uma sintaxe que o React utiliza para descrever seus componentes. No código do componente ```App``` observamos que a tag JSX ```div``` é na verdade um componente do React que representa a tag ```div``` do HTML. Devido a essa semelhança, às vezes nos confundimos e achamos que "tem HTML dentro do javascript".
+```JSX``` is a syntax that React uses to describe its components. In the code of the component ```App``` we note that JSX tag ```div``` is actually a React component that represents the HTML tag ```div```. Because of this similarity, we sometimes get confused and think that "there is HTML inside javascript".
 
-O ```JSX``` é uma extensão ao javascript, mas no estilo ```XML```. Como veremos a seguir, para cada elemento HTML há um componente do React correspondente, pronto para ser usado.
+```JSX``` is an extension of javascript, but in XML-style. As we will see next, for each HTML element there is a corresponding React component, ready to be used.
 
-Podemos pensar no ```JSX``` como uma sintaxe intermediária que será convertida em javascript, assim como SASS é uma sintaxe intermediária para CSS.
+We can think of ```JSX``` as an intermediate syntax that will be converted to javascript, just as SASS is an intermediate syntax for CSS.
 
-O que de fato converte o JSX em javascript é o [Babel](https://babeljs.io/]){:target="_blank"}, o compilador javascript incluso no ```create-react-app```.
+What actually converts JSX into javascript is [Babel](https://babeljs.io/]), the javascript compiler included at ```create-react-app```.
 
-O mesmo código acima convertido para javascript ficaria assim:
+The same code converted to javascript would look like this:
 
 ``` jsx
 import React, { Component } from 'react';
@@ -134,26 +137,26 @@ class App extends Component {
 export default App;
 ```
 
-Antes de começar nossa implementação, só um pouquinho mais de teoria. Veja a assinatura do método ```createElement```:
+Before we begin our implementation, just a little more theory. See the signature of the method ```createElement```:
 
 ``` jsx
 React.createElement(type, [props], [...children])
 ```
 
-Logo, na seguinte chamada:
+Then, on the following call:
 
 ``` jsx
 React.createElement('img', {src: logo, className: 'App-logo', alt: 'logo'})
 ```
 
-- ```img``` é o tipo do elemento. Para cada elemento HTML existe uma componente React correspondente.
-- ```{src: logo, className: 'App-logo', alt: 'logo'}``` são as ```props``` desse componente. Podemos pensar nas ```props``` como argumentos de uma função. E podemos pensar nos components React como funções, que recebem ```props``` e retornam um elemento React.
-- Observe que os componentes React que representam tags HTML, como no exemplo acima, costumam usar ```props``` com os mesmos nomes dos atributos HTML. Com exceção de ```className```, que foi utilizado ao invés de ```class``` por esta ser uma palavra reservada do javascript.
+- ```img``` is the element type. For each HTML element there is a corresponding React component.
+- ```{src: logo, className: 'App-logo', alt: 'logo'}``` are the ```props``` of that component. We can think of ```props``` as the arguments of a function. And we can think of React components as functions, which receive ```props``` and return a React element.
+- Note that React components that represent HTML tags, as in the example above, often use ```props``` matching HTML attribute names. Except ```className```, which was used instead of ```class``` because this is a javascript key word.
 
-Implementando o primeiro componente
------------------------------------
+Implementing the first component
+--------------------------------
 
-Como estamos fazendo um feed de notícias, nada melhor do que começar implementando este componente. A implementação fica bem simples:
+Since we are building a news feed, nothing better than starting to implement this component. The implementation is very simple:
 
 <pre class="line-numbers" data-start="14"><code class="language-jsx">
 class Feed extends Component {
@@ -182,7 +185,7 @@ class Feed extends Component {
 -->
 </code></pre>
 
-Vamos exibir o nosso ```Feed``` no ```render()``` do componente raíz ```App```:
+Let's display our ```Feed``` at the ```render``` of the root component ```App```:
 
 <pre class="line-numbers" data-start="4" data-line="5"><code class="language-jsx">
 class App extends Component {
@@ -207,12 +210,12 @@ class App extends Component {
 -->
 </code></pre>
 
-[Ver no CodePen](https://codepen.io/lutchobandeira/pen/EWbvVP){:target="_blank"}
+[Try on CodePen](https://codepen.io/lutchobandeira/pen/EWbvVP){:target="_blank"}
 
-Extraindo o componente ```Post```
----------------------------------
+Extracting the component ```Post```
+-----------------------------------
 
-Como você já deve ter percebido, é possível extrair um componente ```Post``` de dentro do componente ```Feed```. Essa é uma das principais ideias do React, ir compondo um componente grande a partir de vários componentes pequenos:
+As you may have guessed, you can extract a component ```Post``` from within the component ```Feed```. This is one of the main ideas of React, to compose a large component from several small components:
 
 <pre class="line-numbers" data-start="14" data-line="5-6"><code class="language-jsx">
 class Feed extends Component {
@@ -239,7 +242,7 @@ class Feed extends Component {
 -->
 </code></pre>
 
-Veja que adicionamos um pouco mais de dinamismo aqui. Passamos o texto de cada post através de uma ```prop``` do nosso componente ```Post``` que se chama ```content```. A implementação do componente ```Post``` fica assim:
+See that we added a little more dynamism here. We pass the text of each post through a ```prop``` of our component ```Post``` called ```content```. The implementation of the component ```Post``` looks like this:
 
 <pre class="line-numbers" data-start="25" data-line="5"><code class="language-jsx">
 class Post extends Component {
@@ -264,18 +267,18 @@ class Post extends Component {
 -->
 </code></pre>
 
-[Ver no CodePen](https://codepen.io/lutchobandeira/pen/aJVyNN){:target="_blank"}
+[Try on CodePen](https://codepen.io/lutchobandeira/pen/aJVyNN){:target="_blank"}
 
-Utilizando o ```state```
-------------------------
+Using the ```state```
+---------------------
 
-Ao invés de criar na mão um componente ```Post``` para cada notícia, vamos criar uma lista de notícias e depois exibir via javascript um componente para cada elemento dessa lista.
+Instead of creating a component ```Post``` for each news item, let's create a news list and then display via javascript a component for each element in that list.
 
-<h3>Diferença entre <code>state</code> e <code>props</code></h3>
+<h3>Difference between <code>state</code> and <code>props</code></h3>
 
-Para isso vamos utilizar o ```state```. Ao contrário do caráter imutável das ```props```, o ```state``` é mutável. Como queremos que essa lista de notícias cresça com o tempo, faz todo sentido amazenar essa lista no ```state``` do nosso componente ```Feed```.
+We will use the ```state``` for this. Unlike the immutable way of ```props```, the ```state``` is changeable. Since we want this list of news to grow over time, it makes sense to store this list in the ```state``` of our component ```Feed```.
 
-Inicializamos o ```state``` no construtor de nossa classe, assim:
+We initialize the ```state``` in the constructor of our class, like this:
 
 <pre class="line-numbers" data-start="14" data-line="2-9,12-14, 17"><code class="language-jsx">
 class Feed extends Component {
@@ -324,29 +327,29 @@ class Feed extends Component {
 -->
 </code></pre>
 
-[Ver no CodePen](https://codepen.io/lutchobandeira/pen/JWOyKb){:target="_blank"}
+[Try on CodePen](https://codepen.io/lutchobandeira/pen/JWOyKb){:target="_blank"}
 
-No método ```render``` mapeamos cada objeto de nossa lista para um elemento ```Post``` e então deixamos essa lista de componentes na constante ```posts```.
+In the method ```render``` we map each object in our list to an element ```Post``` and then we assign that list of components to the constant ```posts```.
 
-Exibimos essa lista de componentes ```Post``` como filhos do componente raíz de ```Feed```.
+We display this list of components ```Post``` as children of ```Feed```'s root component.
 
-> Note que o método ```render``` deve retornar um elemento React. Logo precisamos de um componente ```div``` envolvendo nossa lista de posts.
+> Note that method ```render``` must return a React element. Therefore we need a component ```div``` involving our list of posts.
 
-Leitura extra:
+Extra Reading:
 
-* [React Docs sobre Estado e Ciclo de Vida](https://facebook.github.io/react/docs/state-and-lifecycle.html).
-* [Documentação sobre Arrow Functions (operador ```=>```)](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Functions/Arrow_functions).
+* [React Docs about State and Lifecycle](https://facebook.github.io/react/docs/state-and-lifecycle.html).
+* [Docs about Arrow Functions (operator ```=>```)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions).
 
-Formulário para criar novas notícias
-------------------------------------
+Form to create news
+-------------------
 
-Vamos criar agora o componente ```PostForm```. Este componente exibirá um formulário para criar uma nova notícia.
+Let's create the component ```PostForm```. This component will display a form to create news.
 
-Vamos criar também nosso primeiro método. Até agora só implementamos o ```render()``` de cada componente. Esse método se chamará ```handleSubmit()```, e como o nome indica, ele será chamado quando o usuário submeter o formulário.
+Let's also create our first method. So far we have only implemented the ```render``` of each component. This method will be named ```handleSubmit```, and as the name implies, it will be called when the user submits the form.
 
-Nossa versão inicial do componente ```PostForm``` apenas conecta o método ```handleSubmit``` ao evento de ```onSubmit``` do formulário.
+Our initial version of the component ```PostForm``` just connects the method ```handleSubmit``` to the form's event ```onSubmit```.
 
-O método ```handleSubmit``` ainda precisa de uma maneira de pegar o valor do campo de texto e de uma maneira e enviar esse dado para o componente ```Feed```:
+The method ```handleSubmit``` still needs a way to get the text field's value and a way to send that data to the component ```Feed```:
 
 <pre class="line-numbers" data-start="56" data-line="4,7-9, 14"><code class="language-jsx">
 class PostForm extends Component {
@@ -401,29 +404,30 @@ class PostForm extends Component {
 } -->
 </code></pre>
 
-Vamos entender agora alguns pontos dessa implementação.
+Let's understand some points of this implementation.
 
-Como estamos utilizando classes ES6 para implementar nossos componentes, precisamos de um passo a mais para declarar nossos métodos.
+Since we are using ES6 classes to implement our components, we need one additional step to declare our methods.
 
-Na linha 59 fazemos um ```bind``` de nosso método ```handleSumbit``` para deixar esse método visível a partir de ```this```.
+At line 59 we ```bind``` our method ```handleSumbit``` to make it visible from ```this```.
 
-Na linha 72 temos nosso ```input```. No React podemos implementar campos de formulário de duas maneiras: **controlled components** e **uncontrolled components**.
+At line 72 we have our ```input```. In React we can implement form fields in two ways: **controlled components** and **uncontrolled components**.
 
-<h3>Controlled components x Uncontrolled components</h3>
+<h3>Controlled components vs Uncontrolled components</h3>
 
-* Controlled components: mais React way, pois o valor do campo é mantido no ```state``` de um componente React;
-* Uncontrolled components: mais simples que os controlled components. O valor é mantido no próprio DOM.
+* Controlled components: more React-way, because field's value is held in the ```state``` of a React component;
+* Uncontrolled components: simpler than the controlled components. The value is held in the DOM itself.
 
-Nesse exemplo usamos um **uncontrolled component**. Os uncontrolled components são recomendados para formulários mais simples, como o formulário de nosso exemplo.
+In this example we use an **uncontrolled component**. Uncontrolled components are recommended for simple forms, such as the form of our example.
 
-<h3>Implementação de um uncontrolled component</h3>
+<h3>Implementing an uncontrolled component</h3>
 
-Como em nosso uncontrolled component o valor do campo fica contido no próprio DOM, precisamos de uma maneira para capturar o valor desse input. Essa é uma ótima oportunidade para utilizar uma ```ref``` do React.
+As in our uncontrolled component the field value is held in the DOM itself, we need a way to capture the value of that input. This is a great opportunity to use a ```ref``` from React.
 
-Fazemos duas mudanças no código abaixo:
+We make two changes to the code below:
 
-* No código ```ref={(input) => this.content = input}```, na linha 73, tornamos o nosso campo de text disponível em ```this``` a partir do atributo ```content```. 
-* No ```handleSumbit``` fazemos uso de ```this.content``` para acessar nosso uncontrolled component. A única coisa que fazemos em ```handleSubmit``` por enquanto é limpar o valor de nosso campo de text.
+* In the code ```ref={(input) => this.content = input}```, at line 73, we make our text field available in ```this``` through the attribute ```content```.
+* In ```handleSumbit``` we use ```this.content``` to access our uncontrolled component. The only thing we do in ```handleSubmit``` for now is clear the value of our text field.
+
 
 <pre class="line-numbers" data-start="56" data-line="8,18"><code class="language-jsx">
 class PostForm extends Component {
@@ -479,21 +483,21 @@ class PostForm extends Component {
 } -->
 </code></pre>
 
-Leitura extra: 
+Extra reading: 
 
-* [React Docs sobre Uncontrolled Components](https://facebook.github.io/react/docs/uncontrolled-components.html).
-* [React Docs sobre Refs](https://facebook.github.io/react/docs/refs-and-the-dom.html).
+* [React Docs about Uncontrolled Components](https://facebook.github.io/react/docs/uncontrolled-components.html).
+* [React Docs about Refs](https://facebook.github.io/react/docs/refs-and-the-dom.html).
 
-Comunicação entre componentes
------------------------------
+Communication between components
+--------------------------------
 
-Precisamos agora de uma maneira de enviar os valores submetidos pelo formulário de ```PostForm``` para o componente ```Feed```.
+We need a way to send the values ​​submitted by ```PostForm```'s form to the component ```Feed```.
 
-<h3>Utilizando <code>prop</code> para passar um método para outro componente</h3>
+<h3>Using a <code>prop</code> to pass a method to another component</h3>
 
-O truque aqui é implementar em ```Feed``` um método que saiba como adicionar uma notícia na lista e depois passar esse método para o componente ```PostForm``` através de uma ```prop```.
+The trick here is to implement in ```Feed``` a method that knows how to add a news item in the list and then pass that method to the component ```PostForm``` through a ```prop```.
 
-Fica mais fácil de entender vendo o código, então vamos lá:
+It's easier to understand by seeing the code, so here we go:
 
 <pre class="line-numbers" data-start="14" data-line="11,14-18,27"><code class="language-jsx">
 class Feed extends Component {
@@ -560,47 +564,47 @@ class Feed extends Component {
 } -->
 </code></pre>
 
-Eis o que modificamos aqui:
+Here's what we changed:
 
-* Implementamos o método ```handleNewPost``` (e o deixamos visível para ```this``` com o ```bind``` da linha 24);
-* Exibimos o componente ```PostForm``` na linha 40;
-* E passamos o método ```handleNewPost``` para o componente ```PostForm``` através de uma ```prop``` chamada ```onSubmit```, na linha 40.
+* We implemented the method ```handleNewPost``` (and made it visible to ```this``` with the ```bind``` of line 24);
+* We displayed the component ```PostForm``` in line 40;
+* And we passed the method ```handleNewPost``` to the component ```PostForm``` through a ```prop``` named ```onSubmit```, at line 40.
 
-A grande sacada foi passar o método através da ```prop```.
+The big trick was to pass the method through a ```prop```.
 
-Leitura Extra:
+Extra reading:
 
-* [React Docs sobre Passar Estado](https://facebook.github.io/react/docs/lifting-state-up.html).
+* [React Docs about Lifting the State up](https://facebook.github.io/react/docs/lifting-state-up.html).
 
-<h3>Atualizando o <code>state</code></h3>
+<h3>Updating <code>state</code></h3>
 
-A implementação de ```handleNewPost``` requer uma atenção especial: no React toda atualização de estado deve ser feita utilizando o método ```setState()```. O método ```setState()``` recebe um hash com os atributos que devem ser atualizados.
+The implementation of ```handleNewPost``` requires a special attention: in React every state update must be done using the method ```setState```. The method ```setState``` receives a hash with the attributes that should be updated.
 
-Para ficar claro: **Nunca modifique o ```state``` diretamente!**
+To be clear: **Never change ```state``` directly!**
 
-Com a chamada ao ```setState()```,  o React sabe que o estado do componente mudou, e que é hora de chamar ```render()``` novamente para refletir essas mudanças visualmente.
+With the call to ```setState```, React knows that component's state has changed, and that it's time to call ```render``` again to reflect these changes visually.
 
-<h3>Reconciliação: Como o React Atualiza o DOM</h3>
+<h3>Reconciliation: How React Updates the DOM</h3>
 
-Recaptulando: quando o usuário escreve uma nova notícia em ```PostForm``` e submete o formulário, o método ```handleSubmit``` de ```PostForm``` é chamado. O método ```handleSubmit```, por sua vez, chama o método ```handleNewPost``` de ```Feed``` através da ```prop``` ```onSubmit``` de ```PostForm```.
+Recapping: when the user writes a news in ```PostForm``` and submits it, the method ```handleSubmit``` of ```PostForm``` is called. The method ```handleSubmit```, in turn, calls the method ```handleNewPost``` of ```Feed``` through the prop ```onSubmit``` of the ```PostForm```.
 
-Em ```handleNewPost``` uma atualização de estado é feita. Nesse momento o React chama o método ```render``` de ```Feed``` para mostrar o feed de notícias atualizado na tela.
+In ```handleNewPost``` a state update is done. At that moment React calls the ```Feed```'s method ```render``` in order to show the news feed updated on the screen.
 
-O React, porém, não "recarrega" todo o feed de notícias quando apenas uma notícia é adicionada. Operações que manipulam o DOM são custosas. Então, para melhorar a performance, o React mantém internamente uma representação interna da UI, conhecida como "Virtual DOM".
+React, however, does not "reload" the entire news feed when only one news item is added. Operations that manipulate the DOM are expensive. So to improve performance, React keeps an internal representation of the UI, known as "Virtual DOM".
 
-Quando o ```state``` de ```Feed``` é atualizado e o método ```render``` é chamado novamente, o React compara a árvore de nós atual com a nova árvore de nós no Virtual DOM através de um algoritimo de comparação, ou algoritmo de  "Diffing".
+When ```Feed```'s ```state``` is updated and method ```render``` is called again, React compares the current node tree with the new node tree in the Virtual DOM through a diffing algorithm.
 
-Para o nosso exemplo, o algoritmo de comparação do React percebe que não é necessário recriar todo o ```Feed```, somente é preciso adicionar um ```Post``` no DOM real.
+For our example, the React diffing algorithm realizes that it's not necessary to recreate the whole ```Feed```, just one ```Post``` element must be added in the actual DOM.
 
-Esse processo é chamado de **Reconciliação**.
+This process is called **Reconciliation**.
 
-Leitura extra:
+Extra reading:
 
-* [React Docs sobre Reconciliação](https://facebook.github.io/react/docs/reconciliation.html)
+* [React Docs about Reconciliation](https://facebook.github.io/react/docs/reconciliation.html)
 
-<h3>Chamando um método através de uma <code>prop</code></h3>
+<h3>Calling a method through a <code>prop</code></h3>
 
-Para concluir a comunicação entre os componentes só precisamos usar a ```prop``` que foi passada pelo ```Feed``` para o ```PostForm```:
+To complete the communication between the components we only need to use the ```prop``` passed by ```Feed``` to ```PostForm```:
 
 <pre class="line-numbers" data-start="55" data-line="8"><code class="language-jsx">
 class PostForm extends Component {
@@ -642,20 +646,20 @@ class PostForm extends Component {
 } -->
 </code></pre>
 
-[Ver no CodePen](https://codepen.io/lutchobandeira/pen/GWOvjx){:target="_blank"}
+[Try on CodePen](https://codepen.io/lutchobandeira/pen/GWOvjx){:target="_blank"}
 
-Adicionando categorias às notícias
-----------------------------------
+Adding Categories to News
+-------------------------
 
-Cada notícia de nosso feed pertence a uma categoria.
+Every news in our feed belongs to a category.
 
-Vamos começar com uma lista pré-determinada de categorias: Mundo, Negócios, Tecnologia e Esportes. Então criamos uma constante para representar esses valores:
+Let's start with a pre-determined list of categories: World, Business, Tech, and Sport. We create then a constant to represent these values:
 
 <pre class="line-numbers" data-start="4" data-line=""><code class="language-jsx">
 const categories = ['World', 'Business', 'Tech', 'Sport'];
 </code></pre>
 
-E então atualizamos o componente ```Feed``` adicionando a propriedade ```category``` a lista inicial de notícias em nosso ```state```:
+And then we update the component ```Feed``` by adding the property ```category``` to the initial list of news in our ```state```:
 
 <pre class="line-numbers" data-start="14" data-line="6-7"><code class="language-jsx">
 class Feed extends Component {
@@ -678,7 +682,7 @@ class Feed extends Component {
     } -->
 </code></pre>
 
-No componente ```Post``` exibimos a categoria:
+In the component ```Post``` we display the category:
 
 <pre class="line-numbers" data-start="48" data-line="5"><code class="language-jsx">
 class Post extends Component {
@@ -703,7 +707,7 @@ class Post extends Component {
 } -->
 </code></pre>
 
-E no componente ```PostForm``` fazemos duas mudanças: adicionamos um campo para a categoria e atualizamos o método ```handleSubmit``` para enviar a categoria selecionada:
+And in the component ```PostForm``` we make two changes: we add a field to the category and update the method ```handleSubmit``` to send the selected category:
 
 <pre class="line-numbers" data-start="59" data-line="9,12,21-28"><code class="language-jsx">
 class PostForm extends Component {
@@ -784,27 +788,27 @@ class PostForm extends Component {
 } -->
 </code></pre>
 
-[Ver no CodePen](https://codepen.io/lutchobandeira/pen/mWqMmx){:target="_blank"}
+[Try on CodePen](https://codepen.io/lutchobandeira/pen/mWqMmx){:target="_blank"}
 
-Filtrando notícias
-------------------
+Filtering news
+--------------
 
-As notícias devem ser filtradas por categoria ou por conteúdo. Vamos então adicionar um campo de texto no topo do ```Feed``` para implementar nosso filtro.
+News should be filtered by category or by content. Let's then add a text field at the top of ```Feed``` to implement our filter.
 
-Diferentemente do campo de texto utilizado em ```PostForm```, vamos utilizar aqui um **Controlled Component**. Esse controlled input será implementado no componente ```Filter```.
+Unlike the text field used in ```PostForm```, we will use a **Controlled Component** here. This controlled input will be implemented in the component ```Filter```.
 
-Antes de criar o componente ```Filter```, vamos implementar a lógica de filtrar notícias em ```Feed```.
+Before creating the component ```Filter```, let's implement the logic of filtering news in ```Feed```.
 
-<h3>Lógica de filtrar notícias</h3>
+<h3>Logic of filtering news</h3>
 
-Faremos as seguintes mudanças:
+We will make the following changes:
 
-- Adicionamos ```filteredPosts``` ao ```state```.
-- No método ```render```, exibiremos a lista completa ```posts``` somente se a lista ```filteredPosts``` estiver vazia. Caso contrário, mostraremos ```filteredPosts```.
-- A lógica de filtrar os posts baseado no valor digitado pelo usuário em ```Filter``` será implementada no método ```handleFilter```.
-- A comunicação entre os componentes ```Feed``` e ```Filter``` seguirá a mesma estratégia utilizada anteriormente. Passaremos o método ```handleFilter``` como uma ```prop``` de ```Filter```.
+- Add ```filteredPosts``` to ```state```.
+- In the method ```render```, we will display the ```posts``` complete list only if the list ```filteredPosts``` is empty. Otherwise, we will display ```filteredPosts```.
+- The logic of filtering the posts based on the value entered by the user in ```Filter``` will be implemented in the method ```handleFilter```.
+- The communication between the components ```Feed``` and ```Filter``` will follow the same strategy used previously. We will pass the method ```handleFilter``` as a ```prop``` of ```Filter```.
 
-Segue a implementação:
+The implementation is following:
 
 <pre class="line-numbers" data-start="51" data-line="9,22-29,35-37,41"><code class="language-jsx">
 class Feed extends Component {
@@ -901,19 +905,20 @@ class Feed extends Component {
 } -->
 </code></pre>
 
-Leitura extra:
+Extra reading:
 
-* [React Docs sobre renderização condicional](https://facebook.github.io/react/docs/conditional-rendering.html)
+* [React Docs about Conditional Rendering](https://facebook.github.io/react/docs/conditional-rendering.html)
 
-<h3>Implementação de um controlled component: o componente <code>Filter</code></h3>
+<h3>Implementation of a controlled component: the component <code>Filter</code></h3>
 
-Em qualquer cenário um pouco mais complexo é recomendável utilizar um controlled component. Como você já sabe, os controlled components armazenam o valor do campo no ```state```, como um componente React qualquer faria.
+In any scenario a little more complex it's recommended to use a controlled component. As you already know, controlled components store the value of the field in ```state```, as any React component would do.
 
-A implementação de um controlled component segue esse roteiro: criamos um método ```handleChange``` que atualiza o valor do input no ```state``` a cada mudança no campo, como definido em ```onChange={this.handleChange}```.
+The implementation of a controlled component follows this roadmap: we create a method ```handleChange``` that updates the value of the input at ```state``` on every change in the field, as defined in  ```onChange={this.handleChange}```.
 
-Para aplicar o filtro, o usuário deve entrar com o nome de uma categoria ou com um trecho de conteúdo e apertar Enter. Então implementamos também o método  ```handleKeyUp```.
+In order to apply the filter, the user must enter the name of a category or a piece of content and press Enter. Then we also implemented the method ```handleKeyUp```.
 
-Segue a versão inicial do componente ```Filter```:
+
+The initial version of the component ```Filter``` is following:
 
 <pre class="line-numbers" data-start="113" data-line=""><code class="language-jsx">
 class Filter extends Component {
@@ -982,18 +987,18 @@ class Filter extends Component {
 } -->
 </code></pre>
 
-[Ver no CodePen](https://codepen.io/lutchobandeira/pen/mWqMmx){:target="_blank"}
+[Try on CodePen](https://codepen.io/lutchobandeira/pen/mWqMmx){:target="_blank"}
 
-Leitura extra:
+Extra reading:
 
-* [React Docs sobre Formulários e Controlled Components](https://facebook.github.io/react/docs/forms.html)
-* [React Docs sobre Manipulação de Eventos](https://facebook.github.io/react/docs/handling-events.html)
+* [React Docs about Forms and Controlled Components](https://facebook.github.io/react/docs/forms.html)
+* [React Docs about Handling Events](https://facebook.github.io/react/docs/handling-events.html)
 
-<h3>Limpando o filtro</h3>
+<h3>Removing the filter</h3>
 
-Queremos limpar o filtro aplicado anteriormente ao deixar o campo de texto vazio (precionando ```delete``` para apagar todos os caracteres, por exemplo).
+We want to clear the previously applied filter by leaving the text field empty (pressing ```delete``` to erase all characters, for example).
 
-Para implementar essa estratégia, chamamos ```onFilter``` quando o valor do campo é vazio em ```handleChange```:
+To implement this strategy, we call ```onFilter``` when the value of the field is empty at ```handleChange```:
 
 <pre class="line-numbers" data-start="113" data-line="12-14"><code class="language-jsx">
 class Filter extends Component {
@@ -1013,14 +1018,14 @@ class Filter extends Component {
   }
 </code></pre>
 
-[Ver no CodePen](https://codepen.io/lutchobandeira/pen/LWOjjL){:target="_blank"}
+[Try on CodePen](https://codepen.io/lutchobandeira/pen/LWOjjL){:target="_blank"}
 
-Salvando a lista de notícias localmente
----------------------------------------
+Saving the news list locally
+----------------------------
 
-A nossa implementação está quase pronta! Para finalizar, vamos salvar a lista de notícias no ```localStorage```. Dessa forma não perdemos nossas alterações quando fechamos o navegador.
+Our implementation is almost done! To finish it, let's save the news list on ```localStorage```. That way we do not lose our changes when closing the browser.
 
-Modificamos apenas a inicialização do ```state``` e o método ```handleNewPost```:
+We have modified only the ```state``` initialization and the method ```handleNewPost```:
 
 <pre class="line-numbers" data-start="16" data-line="5,14-16"><code class="language-jsx">
 class Feed extends Component {
@@ -1063,9 +1068,10 @@ class Feed extends Component {
 
 [Ver no CodePen](https://codepen.io/lutchobandeira/pen/JWOyON){:target="_blank"}
 
-Próximos passos
----------------
+Next steps
+----------
 
-Nosso feed de notícias ainda não é muito útil. Ele somente mostra notícias criadas pelo próprio usuário. Para deixá-lo realmente interessante, temos que implementar o lado do servidor.
+Our news feed is still not very useful. It only shows news created by the user. To make it really interesting, we have to implement the server side.
 
-E é isso o que faremos no próximo post do blog. Criaremos uma aplicação em Ruby on Rails que se comunicará com nosso feed de notícias. Aguarde!
+And that's what we'll do in the next blog post. We'll create an application in Ruby on Rails that will communicate with our news feed. Wait for it!
+
