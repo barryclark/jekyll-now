@@ -13,7 +13,7 @@ I'm a Front-end web developer from Nottingham. Advocate of standards, simplicity
 ## What I do
 I'm experienced with all stages of web project delivery from specification, UX reviews, digital prototyping to responsive front-end builds and Javascript functionality.
 
-Working with: HTML, CSS/SASS, Javascript, jQuery, PHP, npm, NodeJS and command line tools.
+Working with: HTML, CSS/SASS, Object Oriented Javascript, jQuery, PHP, npm, NodeJS and command line tools.
 
 Passionate about the front-end and usability, I also have experience working with a Microsoft stack including Visual Studio and C# MVC environments, particularly Umbraco. I have been fortunate enough to work with talented colleagues, building solutions for clients as Post Office, Royal Mail, Pizza Hut and Argos.
 
