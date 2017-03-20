@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Sharing in Knowledge Oragnisations
+title: Sharing in Knowledge Organisations
 tags: teams, presentations, knowledge, teams
 category: work
 img: 01/art-of-code.jpg

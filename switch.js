@@ -1,7 +1,0 @@
-jQuery(document).ready(function($) {  
- 
-
- });
-
-
- 
