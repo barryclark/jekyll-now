@@ -29,7 +29,7 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 740px;
+  max-width: 960px;
   padding: 0 10px;
   width: 100%;
   flex: 1;
@@ -74,11 +74,11 @@ p {
 }
 
 a {
-  color: $blue;
+  color: #ff9100;
   text-decoration: none;
 	cursor: pointer;
   &:hover, &:active {
-    color: #616161;
+    color: $lightGray;
   }
 }
 
@@ -127,12 +127,10 @@ img {
 
 // Specify the color of the selection
 ::-moz-selection {
-  color: $black;
-  background: $lightGray;
+  background: $accentOrange;
 }
 ::selection {
-  color: $black;
-  background: $lightGray;
+  background: $accentOrange;
 }
 
 // Nicolas Gallagher's micro clearfix hack
@@ -145,6 +143,11 @@ img {
 
 .clearfix:after {
     clear: both;
+}
+
+.divider {
+  height: 1px;
+  background-color: $lightGray;
 }
 
 /*********************/
@@ -299,12 +302,18 @@ nav {
 
 .posts > .post {
   padding-bottom: 2em;
-  border-bottom: 1px solid $lightGray;
+  border: 4px solid $lightGray;
+  background-color: $gray;
+  padding: 15px;
+}
+
+.posts >.post > h1 {
+  margin: 0;
+  font-weight: normal;
 }
 
 .posts > .post:last-child {
   padding-bottom: 1em;
-  border-bottom: none;
 }
 
 .post {
@@ -317,6 +326,10 @@ nav {
     font-style: italic;
   }
 
+  .entry {
+    font-size: 16px;
+  }
+
   .comments {
     margin-top: 10px;
   }
@@ -324,6 +337,9 @@ nav {
   .read-more {
     text-transform: uppercase;
     font-size: 15px;
+    color: $white;
+    background-color: $accentOrange;
+    padding: 10px;
   }
 }
 
