@@ -23,16 +23,16 @@ layout: default
         {{ page.date | date: '%B %e, %Y' }}
       </div>
     {% endif %}
-    {% if page.tags.size > 0 %}
-      <ul class='tags'>
-        {% for tag in page.tags %}
-          <li class='tag'>
-            <a href="/tag">{{ tag }}</a>
-          </li>
-        {% endfor %}
-      </ul>
-    {% endif %}
     {{ content }}
+    {% if page.tags.size > 0 %}
+    <ul class='tags'>
+      {% for tag in page.tags %}
+      <li class='tag'>
+        <a href="/tag">{{ tag }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+    {% endif %}
     {% include disqus.html %}
   </div>
 </article>
