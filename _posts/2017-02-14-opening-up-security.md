@@ -4,10 +4,14 @@ title: Opening up security
 author: flock3
 ---
 
+I believe that there has been a cultural shift in recent years around who is responsible for implementing security within a business, and that development teams are becomming more involved in the implementation of security practice, and thereby becoming leaders in it.
+
+----
+***
+
 ## Overview
 
-I believe that there has been a cultural shift in recent years around who is responsible for implementing security within a business.
-
+I believe that there has been a cultural shift in recent years around who is responsible for implementing security within a business, and that development teams are becomming more involved in the implementation of security practice, and thereby becoming leaders in it.
 
 A really good example of this is that more and more development teams are starting to implement secret management into their workflows, but not as a result of the info sec teams pushing forward, instead as a result of the tooling being available to help them do this programatically.  The result now being that info sec teams are moving to a role of supporting the overall defence in depth, rather than having to lead the charge in adoption of secret management best practice.
 
