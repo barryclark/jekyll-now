@@ -7,7 +7,7 @@ layout: default
   {% for tag in site.tags %}
   {% assign t = tag | first %}
   {% assign posts = tag | last %}
-  <h3>{{ t }}</h3>
+  <h3 id="{{ t }}">{{ t }}</h3>
   <ul class='tag-list'>
     {% for post in posts %}
     {% if post.tags contains t %}
