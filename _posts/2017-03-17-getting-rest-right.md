@@ -29,7 +29,7 @@ Well if search is specific to an account then maybe having something like `/arti
 
 ## Versioning
 
-Think about versioning your API from the public first release, unless your API is internal only and being consumed only by your own team can you probably get away with no versioning. 
+Unless your API is for internal use only, and will only be used by your team, you should version your API from the first public release.
 
 There are a couple of different ways you can go about this.
 
