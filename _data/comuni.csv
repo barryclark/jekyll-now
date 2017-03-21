@@ -1,4 +1,4 @@
-ID,Comune,Provincia,Paese,Coordinate,Latitude,Longitude,Data Catalogazione del Sisma,Popolazione prima del sisma,url,fonte
+id,comune,provincia,paese,coordinate,lat,lon,data_sisma,popolazione_prima_del_sisma,url,fonte
 1,Campotosto,AQ,ITALIA,"42.558839,13.367987",42.558839,13.367987,24/08/2016,,,
 2,Capitignano,AQ,ITALIA,"42.5203198,13.3010677",42.52592605,13.29562866,24/08/2016,,,
 3,Montereale,AQ,ITALIA,"42.5250955,13.2440724",42.521837,13.247585,24/08/2016,,,
