@@ -1,4 +1,26 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2785,215737006,2017-03-21 13:23:00,2017-03-21 13:20:32,Consiglio provinciale straordinario #Rieti,42.526336,13.098082,"[""Accettato"", ""Bollettino"", ""Eventi"", ""Facebook"", ""Form""]",,,"{""data"": ""21/03/2017"", ""data_evento"": ""21/03/2017"", ""descrizione"": ""Un consiglio provinciale straordinario si terr\u00e0, a partire dalle 15, presso la sede provvisoria del Comune di Posta, a pochi chilometri da Amatrice e Accumoli. La seduta del consiglio, fanno sapere i proponenti, \u201csar\u00e0 dedicata ad ascoltare le istanze delle comunit\u00e0 reatine colpite dal sisma della scorsa estate e per fare un punto sulle attivit\u00e0 svolte sinora e le criticit\u00e0 riscontrate\u201d. \u201cAbbiamo raccolto con piacere la sollecitazionedel consigliere Cossu \u2013 afferma in una nota il il presidentedella Provincia di Rieti Giuseppe Rinaldi \u2013 di svolgere unconsiglio provinciale nelle zone colpite dal sisma. Questainiziativa servir\u00e0 ad avere un quadro della situazione e sar\u00e0anche l\u2019occasione per illustrare le azioni e le attivit\u00e0 che laProvincia sta portando avanti di concerto con gli altri entiall\u2019interno del Comitato permanente per la Ricostruzionepost-sisma che \u2013 conclude Rinaldi \u2013 si riunisce a cadenzeregolari presso l\u2019Ufficio per la Ricostruzione della RegioneLazio\u201d."", ""indirizzo"": ""Strada Statale 471 di Leonessa, Posta, RI, LAZ, Italia"", ""lat"": ""42.526336"", ""link"": ""http://it.euronews.com/2017/03/20/terremoto-domani-consiglio-rieti"", ""lon"": ""13.098082"", ""ora_evento"": ""15:00"", ""promotore"": ""Comune di Posta"", ""titolo_evento"": ""Consiglio provincialestraordinario""}","<pre><yamldata>titolo_evento: 'Consiglio provincialestraordinario'
+data_evento: 21/03/2017
+ora_evento: '15:00'
+promotore: 'Comune di Posta'
+descrizione: 'Un consiglio provinciale straordinario si terrà, a partire dalle 15, presso la sede provvisoria del Comune di Posta, a pochi chilometri da Amatrice e Accumoli. La seduta del consiglio, fanno sapere i proponenti, “sarà dedicata ad ascoltare le istanze delle comunità reatine colpite dal sisma della scorsa estate e per fare un punto sulle attività svolte sinora e le criticità riscontrate”. “Abbiamo raccolto con piacere la sollecitazionedel consigliere Cossu – afferma in una nota il il presidentedella Provincia di Rieti Giuseppe Rinaldi – di svolgere unconsiglio provinciale nelle zone colpite dal sisma. Questainiziativa servirà ad avere un quadro della situazione e saràanche l’occasione per illustrare le azioni e le attività che laProvincia sta portando avanti di concerto con gli altri entiall’interno del Comitato permanente per la Ricostruzionepost-sisma che – conclude Rinaldi – si riunisce a cadenzeregolari presso l’Ufficio per la Ricostruzione della RegioneLazio”.'
+indirizzo: 'Strada Statale 471 di Leonessa, Posta, RI, LAZ, Italia'
+lat: '42.526336'
+lon: '13.098082'
+link: 'http://it.euronews.com/2017/03/20/terremoto-domani-consiglio-rieti'
+data: 21/03/2017
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2784,215735923,2017-03-21 13:20:29,2017-03-21 13:16:40,Cercasi verniciatore con pistola a spruzzo #SanSeverinoMarche,43.2290211,13.1779663,"[""Accettato"", ""Bollettino"", ""Facebook"", ""Form"", ""Offro lavoro""]",,,"{""cosa"": ""verniciatore con pistola a spruzzo"", ""data"": ""21/03/2017"", ""descrizione"": ""falegnameria cerca un verniciatore con pistola a spruzzo con esperienza nel ruolo (almeno 2 anni). Sede di lavoro: San Severino Marche. Rif.: 9259"", ""email"": ""citdomandaofferta@provincia.mc.it"", ""indirizzo"": ""Piazza del Popolo, San Severino Marche, MC, Marche, Italia"", ""lat"": ""43.2290211"", ""link"": ""https://www.facebook.com/matelicagiovani/posts/1054177344688807"", ""lon"": ""13.1779663"", ""nom"": ""Servizio Mediazione - Centro per l\u2019Impiego e la Formazione di Tolentino (MC)"", ""tel"": ""0733/955425-409""}","<pre><yamldata>nom: 'Servizio Mediazione - Centro per l’Impiego e la Formazione di Tolentino (MC)'
+tel: 0733/955425-409
+email: citdomandaofferta@provincia.mc.it
+cosa: 'verniciatore con pistola a spruzzo'
+descrizione: 'falegnameria cerca un verniciatore con pistola a spruzzo con esperienza nel ruolo (almeno 2 anni). Sede di lavoro: San Severino Marche. Rif.: 9259'
+indirizzo: 'Piazza del Popolo, San Severino Marche, MC, Marche, Italia'
+lat: '43.2290211'
+lon: '13.1779663'
+link: 'https://www.facebook.com/matelicagiovani/posts/1054177344688807'
+data: 21/03/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2783,215733568,2017-03-21 13:19:40,2017-03-21 13:07:54,Evento: La sicurezza degli edifici pubblici e privati e la corretta gestione delle emergenze #Sant'Ippolito,43.6857149,12.8716888,"[""Accettato"", ""Bollettino"", ""Eventi"", ""Form""]",,,"{""data"": ""21/03/2017"", ""data_evento"": ""01/01/1970"", ""descrizione"": ""Gioved\u00ec 23 marzo 2017 alle 21.00, presso la BiblioS Biblioteca Comunale di Sant\u2019Ippolito \u00e8 in programma un incontro tecnico dal titolo \u201cConoscere il terremoto \u2013 La sicurezza degli edifici pubblici e privati e la corretta gestione delle emergenze\u201d. L\u2019incontro \u00e8 organizzato dall\u2019Amministrazione Comunale di Sant\u2019Ippolito, in collaborazione con Associazione Eco-Fatto e Gruppo Protezione Civile Sant\u2019Ippolito. Si tratta di argomenti di grande importanza e di scottante attualit\u00e0. L\u2019incontro nasce dall\u2019idea che il nostro vivere sulla terra deve essere sempre ispirato dal rispetto e dalla conoscenza dei problemi. Le calamit\u00e0 naturali, quindi, non vanno considerate fatalit\u00e0 ma eventi possibili dei quali occorre conoscere e comprendere cause e conseguenze. Solo cos\u00ec \u00e8 possibile attivarsi per poter adottare tutte le precauzioni e poi trovare soluzioni in maniera solidale e con spirito costruttivo."", ""indirizzo"": ""Via Raffaello, Sant'Ippolito, PU, Marche, Italia"", ""lat"": ""43.6857149"", ""link"": ""http://www.oltrefano.it/attualita/sant-ippolito/conoscere-terremoto-la-sicurezza-degli-edifici-pubblici-privati-la-corretta-gestione-delle-emergenze-incontro-santippolito.html"", ""lon"": ""12.8716888"", ""ora_evento"": ""21:00"", ""promotore"": ""Amministrazione Comunale di Sant\u2019Ippolito, Associazione Eco-Fatto e Gruppo Protezione Civile Sant\u2019Ippolito"", ""titolo_evento"": ""Conoscere il terremoto \u2013 La sicurezza degli edifici pubblici e privati e la corretta gestione delle emergenze #Sant'Ippolito""}","<pre><yamldata>titolo_evento: 'Conoscere il terremoto – La sicurezza degli edifici pubblici e privati e la corretta gestione delle emergenze #Sant''Ippolito'
 data_evento: 01/01/1970
 ora_evento: '21:00'
@@ -73,6 +95,17 @@ descrizione: 'azienda settore GDO cerca una commessa di vendita con età compres
 indirizzo: 'Piazza Filippo Corridoni, Corridonia, MC, Marken, 62014, Italien'
 lat: '43.2484575'
 lon: '13.509212'
+link: 'https://www.facebook.com/matelicagiovani/posts/1054177344688807'
+data: 21/03/2017
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2775,215704023,2017-03-21 13:24:54,2017-03-21 11:18:02,"Cercasi addetti alla calzera, pressatura fondi, sfibratura, scatolatura, finissaggio #Montegranaro (FM)",43.2325226,13.6315802,"[""Accettato"", ""Bollettino"", ""Facebook"", ""Form"", ""Offro lavoro""]",,,"{""cosa"": ""addetti alla calzera, pressatura fondi, sfibratura, scatolatura, finissaggio"", ""data"": ""21/03/2017"", ""descrizione"": ""azienda settore calzature cerca addetti alla calzera, pressatura fondi, sfibratura, scatolatura, finissaggio con esperienza nei ruoli. Sede di lavoro: #Montegranaro. Rif.: 9274"", ""email"": ""citdomandaofferta@provincia.mc.it"", ""indirizzo"": ""Strada Provinciale SP30 Fermana, Montegranaro, FM, Marken, 63812, Italien"", ""lat"": ""43.2325226"", ""link"": ""https://www.facebook.com/matelicagiovani/posts/1054177344688807"", ""lon"": ""13.6315802"", ""nom"": ""Servizio Mediazione - Centro per l\u2019Impiego e la Formazione di Tolentino (MC)"", ""tel"": ""0733/955425-409""}","<pre><yamldata>nom: 'Servizio Mediazione - Centro per l’Impiego e la Formazione di Tolentino (MC)'
+tel: 0733/955425-409
+email: citdomandaofferta@provincia.mc.it
+cosa: 'addetti alla calzera, pressatura fondi, sfibratura, scatolatura, finissaggio'
+descrizione: 'azienda settore calzature cerca addetti alla calzera, pressatura fondi, sfibratura, scatolatura, finissaggio con esperienza nei ruoli. Sede di lavoro: #Montegranaro. Rif.: 9274'
+indirizzo: 'Strada Provinciale SP30 Fermana, Montegranaro, FM, Marken, 63812, Italien'
+lat: '43.2325226'
+lon: '13.6315802'
 link: 'https://www.facebook.com/matelicagiovani/posts/1054177344688807'
 data: 21/03/2017
 </yamldata></pre>",open
@@ -4277,17 +4310,6 @@ descrizione: 'offro appartamento con 2 camere per 4 persone bagno e cucina.'
 indirizzo: 'Via Beato Lorenzino, Piazzette, Marostica, VI, Veneto, 36063, Italia'
 lat: '45.7500944'
 lon: '11.6595216'
-link: ''
-immagine: ''
-data: 21/01/2017
-</yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2148,202314183,2017-01-23 09:42:23,2017-01-21 12:55:56,Terreno per pascolo e stanza per allevatori a Bassano del Grappa,45.774378002810884,11.700868606567381,"[""Accettato"", ""Bollettino"", ""Form"", ""Ospitalita animali"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""Offro Pascolo"", ""data"": ""21/01/2017"", ""descrizione"": ""Offro terreno per il pascolo e eventuale stanza per pastori. Abbiamo gi\u00e0 tre capre ma molto socievoli"", ""email"": ""aeighenes1@gmail.com"", ""immagine"": """", ""indirizzo"": ""Via Pascolara, San Giorgio, Bassano del Grappa, VI, Veneto, 36061, Italia"", ""lat"": ""45.774378002810884"", ""link"": """", ""lon"": ""11.700868606567381"", ""tel"": ""346 8555 368""}","<pre><yamldata>tel: '346 8555 368'
-email: aeighenes1@gmail.com
-cosa: 'Offro Pascolo'
-descrizione: 'Offro terreno per il pascolo e eventuale stanza per pastori. Abbiamo già tre capre ma molto socievoli'
-indirizzo: 'Via Pascolara, San Giorgio, Bassano del Grappa, VI, Veneto, 36061, Italia'
-lat: '45.774378002810884'
-lon: '11.700868606567381'
 link: ''
 immagine: ''
 data: 21/01/2017
