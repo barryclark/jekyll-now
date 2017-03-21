@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2815,215771798,2017-03-21 15:15:04,2017-03-21 15:07:14,Cena a sostegno delle imprenditrici dell’area montana danneggiate dal terremoto #IsolaDelGranSasso,42.5030579,13.6595164,"[""Accettato"", ""Eventi"", ""Facebook"", ""Form""]",,,"{""data"": ""21/03/2017"", ""data_evento"": ""01/01/1970"", ""descrizione"": ""Una cena a sostegno delle imprenditrici dell\u2019area montana danneggiate dal terremoto e dagli eventi calamitosi che si susseguiti nei primi mesi del 2017. A promuoverla la Commissione provinciale per le pari opportunit\u00e0 in collaborazione con la Consigliera di parit\u00e0, Anna Pompilii e la Protezione Civile-Volontari CIVES Teramo, associazione, quest\u2019ultima, che ha attivamente partecipato alla gestione dell\u2019emergenza. La cena si svolger\u00e0 a Isola del Gran Sasso, uno dei comuni montani che ha avuto pi\u00f9 danni, recentemente ricompreso nell\u2019area del cratere, al ristorante \u201cPina\u201d venerd\u00ec 24 marzo a partire dalle ore 20.30. Nel corso della serata \u00e8 prevista la testimonianza di tre donne imprenditrici: Linda Montauti, Gran Sasso 3, di Pietracamela; Fulvia Di Bernardo, \u201cI salumieri di Castel Castagna\u201d; Emanuela Ripani, Azienda Ovicola di Montorio al Vomano."", ""indirizzo"": ""SS491, Isola del Gran Sasso d'Italia, TE, ABR, 64045, Italia"", ""lat"": ""42.5030579"", ""link"": ""http://www.provincia.teramo.it/sala-stampa/una-cena-a-sostegno-delle-imprenditrici-della-montagna-teramana-danneggiate-da-neve-e-terremoto-venerdi-prossimo-a-isola-del-gran-sasso"", ""lon"": ""13.6595164"", ""ora_evento"": ""20.30"", ""promotore"": ""Commissione provinciale per le pari opportunit\u00e0 in collaborazione con la Consigliera di parit\u00e0, Anna Pompilii  e la Protezione Civile-Volontari CIVES Teramo"", ""titolo_evento"": ""Donna sei roccia #IsolaDelGranSasso""}","<pre><yamldata>titolo_evento: 'Donna sei roccia #IsolaDelGranSasso'
+data_evento: 01/01/1970
+ora_evento: '20.30'
+promotore: 'Commissione provinciale per le pari opportunità in collaborazione con la Consigliera di parità, Anna Pompilii  e la Protezione Civile-Volontari CIVES Teramo'
+descrizione: 'Una cena a sostegno delle imprenditrici dell’area montana danneggiate dal terremoto e dagli eventi calamitosi che si susseguiti nei primi mesi del 2017. A promuoverla la Commissione provinciale per le pari opportunità in collaborazione con la Consigliera di parità, Anna Pompilii e la Protezione Civile-Volontari CIVES Teramo, associazione, quest’ultima, che ha attivamente partecipato alla gestione dell’emergenza. La cena si svolgerà a Isola del Gran Sasso, uno dei comuni montani che ha avuto più danni, recentemente ricompreso nell’area del cratere, al ristorante “Pina” venerdì 24 marzo a partire dalle ore 20.30. Nel corso della serata è prevista la testimonianza di tre donne imprenditrici: Linda Montauti, Gran Sasso 3, di Pietracamela; Fulvia Di Bernardo, “I salumieri di Castel Castagna”; Emanuela Ripani, Azienda Ovicola di Montorio al Vomano.'
+indirizzo: 'SS491, Isola del Gran Sasso d''Italia, TE, ABR, 64045, Italia'
+lat: '42.5030579'
+lon: '13.6595164'
+link: 'http://www.provincia.teramo.it/sala-stampa/una-cena-a-sostegno-delle-imprenditrici-della-montagna-teramana-danneggiate-da-neve-e-terremoto-venerdi-prossimo-a-isola-del-gran-sasso'
+data: 21/03/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2785,215737006,2017-03-21 13:23:00,2017-03-21 13:20:32,Consiglio provinciale straordinario #Rieti,42.526336,13.098082,"[""Accettato"", ""Bollettino"", ""Eventi"", ""Facebook"", ""Form""]",,,"{""data"": ""21/03/2017"", ""data_evento"": ""21/03/2017"", ""descrizione"": ""Un consiglio provinciale straordinario si terr\u00e0, a partire dalle 15, presso la sede provvisoria del Comune di Posta, a pochi chilometri da Amatrice e Accumoli. La seduta del consiglio, fanno sapere i proponenti, \u201csar\u00e0 dedicata ad ascoltare le istanze delle comunit\u00e0 reatine colpite dal sisma della scorsa estate e per fare un punto sulle attivit\u00e0 svolte sinora e le criticit\u00e0 riscontrate\u201d. \u201cAbbiamo raccolto con piacere la sollecitazionedel consigliere Cossu \u2013 afferma in una nota il il presidentedella Provincia di Rieti Giuseppe Rinaldi \u2013 di svolgere unconsiglio provinciale nelle zone colpite dal sisma. Questainiziativa servir\u00e0 ad avere un quadro della situazione e sar\u00e0anche l\u2019occasione per illustrare le azioni e le attivit\u00e0 che laProvincia sta portando avanti di concerto con gli altri entiall\u2019interno del Comitato permanente per la Ricostruzionepost-sisma che \u2013 conclude Rinaldi \u2013 si riunisce a cadenzeregolari presso l\u2019Ufficio per la Ricostruzione della RegioneLazio\u201d."", ""indirizzo"": ""Strada Statale 471 di Leonessa, Posta, RI, LAZ, Italia"", ""lat"": ""42.526336"", ""link"": ""http://it.euronews.com/2017/03/20/terremoto-domani-consiglio-rieti"", ""lon"": ""13.098082"", ""ora_evento"": ""15:00"", ""promotore"": ""Comune di Posta"", ""titolo_evento"": ""Consiglio provincialestraordinario""}","<pre><yamldata>titolo_evento: 'Consiglio provincialestraordinario'
 data_evento: 21/03/2017
 ora_evento: '15:00'
@@ -117,6 +128,17 @@ descrizione: 'azienda settore commercio cerca un autista consegnatario esperto i
 indirizzo: 'Piazza del Popolo, San Severino Marche, MC, Marken, Italien'
 lat: '43.2290211'
 lon: '13.1779663'
+link: 'https://www.facebook.com/matelicagiovani/posts/1054177344688807'
+data: 21/03/2017
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2769,215701230,2017-03-21 15:10:48,2017-03-21 11:07:08,Cercasi elettricista #Matelica (MC),43.2566101,13.00892,"[""Accettato"", ""Bollettino"", ""Facebook"", ""Form"", ""Offro lavoro""]",,,"{""cosa"": ""elettricista"", ""data"": ""21/03/2017"", ""descrizione"": ""Azienda settore automazione industriale cerca: un elettricista esperto in particolare nei cablaggi elettrici per automazione industriale (Rif.: 9291). sede di lavoro: zona Matelica."", ""email"": ""citdomandaofferta@provincia.mc.it"", ""indirizzo"": ""Corso Vittorio Emanuele, Matelica, MC, Marken, 62024, Italien"", ""lat"": ""43.2566101"", ""link"": ""https://www.facebook.com/matelicagiovani/posts/1054177344688807"", ""lon"": ""13.00892"", ""nom"": ""Servizio Mediazione - Centro per l\u2019Impiego e la Formazione di Tolentino (MC)"", ""tel"": ""0733/955425-409""}","<pre><yamldata>nom: 'Servizio Mediazione - Centro per l’Impiego e la Formazione di Tolentino (MC)'
+tel: 0733/955425-409
+email: citdomandaofferta@provincia.mc.it
+cosa: elettricista
+descrizione: 'Azienda settore automazione industriale cerca: un elettricista esperto in particolare nei cablaggi elettrici per automazione industriale (Rif.: 9291). sede di lavoro: zona Matelica.'
+indirizzo: 'Corso Vittorio Emanuele, Matelica, MC, Marken, 62024, Italien'
+lat: '43.2566101'
+lon: '13.00892'
 link: 'https://www.facebook.com/matelicagiovani/posts/1054177344688807'
 data: 21/03/2017
 </yamldata></pre>",open
@@ -6687,17 +6709,6 @@ descrizione: 'Offro una camera matrimoniale in abitazione privata, comoda per 2 
 indirizzo: 'San Lorenzo, Via Gracco del Secco, Località Le Mosse, Faule, Colle di Val d''Elsa, SI, Tuscany, 53034, Italia'
 lat: '43.4215075541024'
 lon: '11.112713813781738'
-link: ''
-immagine: ''
-data: 19/01/2017
-</yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1828,201854012,2017-01-23 09:46:45,2017-01-19 12:56:14,Offro stallo animali domestici e alloggio padroni #Canossa,44.5383549,10.4157866,"[""Accettato"", ""Alloggi"", ""Form"", ""Ospitalita animali"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""Offro stallo animali domestici"", ""data"": ""19/01/2017"", ""descrizione"": ""A Trinit\u00e0 di Canossa (Reggio Emilia) offro stallo a cani, gatti, furetti, conigli, cavie o qualsiasi altro animale previo accordi. Abito in campagna. Offro anche alloggio ai proprietari che non vogliono separarsi dai loro animali, ho due posti letto + una culla/lettino."", ""email"": ""elena_lasagni@virgilio.it"", ""immagine"": """", ""indirizzo"": ""SP79, Canossa, RE, EMR, 42026, Italia"", ""lat"": ""44.5383549"", ""link"": """", ""lon"": ""10.4157866"", ""tel"": ""3389919241""}","<pre><yamldata>tel: '3389919241'
-email: elena_lasagni@virgilio.it
-cosa: 'Offro stallo animali domestici'
-descrizione: 'A Trinità di Canossa (Reggio Emilia) offro stallo a cani, gatti, furetti, conigli, cavie o qualsiasi altro animale previo accordi. Abito in campagna. Offro anche alloggio ai proprietari che non vogliono separarsi dai loro animali, ho due posti letto + una culla/lettino.'
-indirizzo: 'SP79, Canossa, RE, EMR, 42026, Italia'
-lat: '44.5383549'
-lon: '10.4157866'
 link: ''
 immagine: ''
 data: 19/01/2017
