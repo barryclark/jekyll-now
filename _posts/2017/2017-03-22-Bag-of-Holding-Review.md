@@ -21,8 +21,10 @@ This is a feat the older Bag of Holding would have had a bit of a problem with. 
 
 The size isn't the only feature of the Bag of Holding that got an upgrade. The bottom corners of the bag are now reinforced with leather. A welcome nicety since my last bag has several holes down there from wear and tear. The zippers are a bit more rugged with stronger keys. The bag zips up nicely with a satisfying feeling. The clasps for the front flap and back pocket have been replaced with magnetic closures, each of which stays secure when you're toting the bag around.
 
-There's soem visual upgrades, too. The d20 and Bag of Holding logo on the front of the bag are now pressed into leather, while the lining of the bag's inside now have a geeky print containting swords, sheilds, gemstones, potions, and d20s.
+There's soem visual upgrades, too. The d20 and Bag of Holding logo on the front of the bag are now pressed into leather, while the lining of the bag's inside now have a geeky print containing swords, shields, gemstones, potions, and d20s.
 
-It's pretty safe to say I love this bag. I mean, I loved the old Bag of Holding, but the new one fixes some of the gripes I had with my aging satchel. Will I throw out my beat up, old Bag of Holding? Never. I'll fix it up the best I can and will continue to treasure it. Will I replace it with this new version for my everday carry? *Hell, yes*. The new Bag of Holding is everything I look for in a bag and feels like it's built to last.
+It's pretty safe to say I love this bag. I mean, I loved the old Bag of Holding, but the new one fixes some of the gripes I had with my aging satchel. Will I throw out my beat up, old Bag of Holding? Never. I'll fix it up the best I can and will continue to treasure it. Will I replace it with this new version for my everyday carry? *Hell, yes*. The new Bag of Holding is everything I look for in a bag and feels like it's built to last.
+
+Want one? You should. You can [snag one](http://www.thinkgeek.com/product/aaa5/?itm=290438454228_product_type_accessories_product_type_backpacks_%26_messenger_bags&rkgid=3189411456&cpg=ogpla&source=google_none&adpos=1o1&creative=185033526455&device=c&matchtype=&network=g&gclid=CjwKEAjwwcjGBRDj-P7TwcinyBkSJADymblTK6-w85sDduhYj9aDS8ojIrWVcicsSj4YC9b-CiU3URoCnUzw_wcB) over a ThinkGeek for $49.99.
 
 *A Bag of Holding was provided for free by ThinkGeek for review.*
