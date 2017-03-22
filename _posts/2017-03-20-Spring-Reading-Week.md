@@ -25,7 +25,7 @@ that at the end of a day of skiing all we wanted to do was collapse into some co
 The directions to the homely cottage took us along some winding roads
 flanked by high snowbanks on either side. We were glad we made it there before it got dark, out of concern for icy conditions and getting lost in the dark.
 
-We made a point to get an early start the following morning in order to get a lot of quality ski time in and avoid the long lines. The first day things there were some
+We made a point to get an early start the following morning in order to get a lot of quality ski time in and avoid the long lines. The first day there were some
 flurries throughout the day and vision was considerably reduced at the top of the mountain.
 
 This was the day where I found out I had never become very good at skiing, and I quickly abandoned the idea of sticking with my friends who were all much more experienced. I
@@ -43,4 +43,4 @@ By the third day we were all very tired and sore but we got out early and put in
 
 I think I fell the most of the entire trip in the last half hour when we down the hills together following the best route back to the van.
 
-I had a great time and am definitely still a bad skier.
+Had a great time overall and would gladly go skiing again.
