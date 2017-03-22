@@ -23,7 +23,7 @@ that at the end of a day of skiing all we wanted to do was collapse into some co
 ![fulfillment](/images/trips/cabin.jpg)
 
 The directions to the homely cottage took us along some winding roads
-flanked by high snowbanks on either side. We were glad we made it there before it got dark, out of concern for icy conditions and getting lost in the dark.
+flanked by high snowbanks. We were glad we made it there before it got dark, out of concern for icy conditions and getting lost in the middle of nowhere.
 
 We made a point to get an early start the following morning in order to get a lot of quality ski time in and avoid the long lines. The first day there were some
 flurries throughout the day and vision was considerably reduced at the top of the mountain.
