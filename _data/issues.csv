@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2825,216170687,2017-03-22 22:13:58,2017-03-22 18:46:25,Il Casale di #Cascia: negozio di prodotti tipici distrutto dal sisma riapre online,,,"[""Accettato"", ""acquisto solidale"", ""Bollettino"", ""Form""]",,,{},"<pre><yamldata>tel: '3494501631 - 337639867'
+email: info@ilcasaledicascia.it
+cosa: 'Negozio Cascia - vendita prodotti online'
+descrizione: 'Buonasera, volevo segnalare Il Casale di Cascia. Mio padre Carlo e la sua compagna Ganna sono due commercianti della Valnerina e hanno un negozio di prodotti tipici nel centro di Cascia. Purtroppo in questo momento l'attività è chiusa a causa del sisma. Ora l''unico canale per poter vendere i prodotti che un tempo venivano venduti nella bottega di Cascia è internet. Il sito è stato fatto velocemente ma vi assicuro che il servizio è ottimo e i prodotti eccellenti. Hanno bisogno di ripartire per pagare affitto, mutuo, spese... http://www.ilcasaledicascia.it/shop/ Grazie.'
+indirizzo: 'Cascia, PG, Umbria, 06043, Italia'
+lat: '42.7170082'
+lon: '13.0135022'
+link: 'http://www.ilcasaledicascia.it/shop/ '
+immagine: ''
+data: 22/03/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2824,216038929,2017-03-22 13:07:03,2017-03-22 12:02:04,Vissana Salumi riparte! #Visso,,,"[""Accettato"", ""acquisto solidale"", ""Bollettino"", ""Facebook""]",,,"{""data"": ""22/03/2017"", ""descrizione"": ""La produzione si Vissana Salumi \u00e8 ripartita! Ora si possono acquistare on-line i nostri prodotti e averli direttamente a casa dai 3 ai 5 giorni lavorativi. Si pu\u00f2 pagare comodamente con paypal e carta di credito. www.vissanasalumi.it"", ""link"": ""https://www.facebook.com/vissanasalumi/"", ""titolo"": ""Vissana Salumi riparte! #Visso""}","<pre><yamldata>titolo: 'Vissana Salumi riparte! #Visso'
 descrizione: 'La produzione si Vissana Salumi è ripartita! Ora si possono acquistare on-line i nostri prodotti e averli direttamente a casa dai 3 ai 5 giorni lavorativi. Si può pagare comodamente con paypal e carta di credito. www.vissanasalumi.it'
 link: 'https://www.facebook.com/vissanasalumi/'
@@ -15,10 +26,10 @@ lon: '13.00892'
 link: 'https://www.facebook.com/matelicagiovani/photos/a.686774021429143.1073741828.547021562071057/1054925671280641/?type=3&theater'
 data: 22/03/2017
 </yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2822,216026356,2017-03-22 11:21:45,2017-03-22 11:10:02,Cercasi casa mobile su ruote #Visso,,,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""Casa mobile su ruote a Visso"", ""data"": ""22/03/2017"", ""descrizione"": ""Cerco urgentemente casa mobile su ruote, 5 posti letto, per la mia famiglia a Visso, da poter collocare in giardino . Le casette tardano ad arrivare, case in affitto non si trovano se non nel raggio di 60/70 km. Vogliamo tornare a casa ma la nostra \u00e8 gravemente lesionata, sar\u00e0 per noi motivo di gioia anche solo sistemarci in giardino. Grazie di cuore a chi vorr\u00e0 aiutarci in questo momento cos\u00ec difficile."", ""email"": ""silviavagni@vodafone.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3479119735""}","<pre><yamldata>tel: '3479119735'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2822,216026356,2017-03-22 22:14:39,2017-03-22 11:10:02,Cercasi casa mobile su ruote #Visso,,,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""Casa mobile su ruote a Visso"", ""data"": ""22/03/2017"", ""descrizione"": ""Cerco urgentemente casa mobile su ruote, 5 posti letto, per la mia famiglia a Visso, da poter collocare in giardino. Le casette tardano ad arrivare, case in affitto non si trovano se non nel raggio di 60/70 km. Vogliamo tornare a casa ma la nostra \u00e8 gravemente lesionata, sar\u00e0 per noi motivo di gioia anche solo sistemarci in giardino. Grazie di cuore a chi vorr\u00e0 aiutarci in questo momento cos\u00ec difficile."", ""email"": ""silviavagni@vodafone.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3479119735""}","<pre><yamldata>tel: '3479119735'
 email: silviavagni@vodafone.it
 cosa: 'Casa mobile su ruote a Visso'
-descrizione: 'Cerco urgentemente casa mobile su ruote, 5 posti letto, per la mia famiglia a Visso, da poter collocare in giardino . Le casette tardano ad arrivare, case in affitto non si trovano se non nel raggio di 60/70 km. Vogliamo tornare a casa ma la nostra è gravemente lesionata, sarà per noi motivo di gioia anche solo sistemarci in giardino. Grazie di cuore a chi vorrà aiutarci in questo momento così difficile.'
+descrizione: 'Cerco urgentemente casa mobile su ruote, 5 posti letto, per la mia famiglia a Visso, da poter collocare in giardino. Le casette tardano ad arrivare, case in affitto non si trovano se non nel raggio di 60/70 km. Vogliamo tornare a casa ma la nostra è gravemente lesionata, sarà per noi motivo di gioia anche solo sistemarci in giardino. Grazie di cuore a chi vorrà aiutarci in questo momento così difficile.'
 indirizzo: ''
 lat: ''
 lon: ''
