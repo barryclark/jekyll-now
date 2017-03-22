@@ -25,20 +25,22 @@ Most agree that you should stick to one or the other across the whole of your AP
 
 Verbs should not show up in your API URLs - if possible. _"But what about `/search`?"_ I hear you cry.
 
-Well if search is specific to an account then maybe having something like `/article?q=search+term` may be more appropriate to limit the results of the article list. Alternatively if you do have global search endpoint, then it's probably appropriate to go for the `/search` endpoint.
+Well if search is specific to an account then maybe having something like `/article?q=search+term` may be more appropriate to limit the results of the article list. Alternatively if you do have a global search endpoint, then it's probably appropriate to go for the `/search` endpoint.
 
 ## Versioning
 
-Unless your API is for internal use only, and will only be used by your team, you should version your API from the first public release.
+Unless your API is for internal use only, and will only be used by your team, you should version your API from the first public release. For internal APIs you could use Consumer Driven Contracts as an alternative. A good framework for this is [Pact](https://docs.pact.io/). 
 
-There are a couple of different ways you can go about this.
+It's worth considering your audience when thinking about versioning e.g. is it going to be available to everyone, a large set of consumers, a very small set, or just internally. There are a couple of different ways you can go about implementing it:
 
 1. In URL versioning (http://api.example.com/v1/article/43)
-   - Probably the most popular, but unfortunately semi-breaks the "URLs represent a resource" principle
+   - Probably the most popular, but unfortunately semi-breaks the "URLs represent a resource" principle.
 2. Custom header (X-API-Version: v1)
    - Developers have to learn a new header just to use your API.
 3. Accept header (Accept: application/vnd.article-v1+json)
    - Developers can't explore your API just using a browser.
+
+With the final two options, you can just default to the latest version if it's not provided - which can be risky for your consumers.
 
 There's no easy answer, but I usually go for the compromise of in URL versioning for easy exploration of the API in combination with...
 
@@ -67,13 +69,13 @@ Accept: application/json
 ]
 ```
 
-The url property of the article object allows the consumer to know how view the detail of the article object, without having to look at your documentation (you did ~~write~~ generate documentation right?). If you're using Postman, you can just click on the link and it will take you straight to the next resource!
+The url property of the article object allows the consumer to know how view the detail of the article object, without having to look at your documentation (you did ~~write~~ generate documentation right?). If you're using [Postman](https://www.getpostman.com/), you can just click on the link and it will take you straight to the next resource!
 
-## SSL Everywhere
+## TLS Everywhere
 
-With the invention of Let's Encrypt, there is no longer any excuse not to secure your API endpoint.
+With the invention of [Let's Encrypt](https://letsencrypt.org/), there is no longer any excuse not to secure your API endpoint.
 
-If you've got HTTPS enabled, and you receive a request to HTTP - just throw an error such as `400 Bad Request {"error": "HTTPS Required"}` rather than redirecting to HTTPS.
+If you've got HTTPS enabled, and you receive a request to HTTP - just throw an error such as `400 Bad Request {"error": "HTTPS Required"}` rather than redirecting to HTTPS. This saves processing the redirect, forces the consumer to get URL right in their implementation, and prevents future accidental sending of potential sensitive API keys etc over in the plain.
 
 ## Errors and HTTP status codes
 
@@ -105,9 +107,9 @@ Using these errors, especially for success can avoid you having to use an envelo
 
 I'm talking about both types of caching, server side and client side. 
 
-The server should tell the client if they need to get new data. You can use `Last-Modified` or `Etags` headers for this.
+The server should tell the client if they need to get new data. You can use `Last-Modified` or `Etags` headers for this. There's also a new `Cache-Control: Immutable` header that might be useful. See [Mozilla's blog](https://hacks.mozilla.org/2017/01/using-immutable-caching-to-speed-up-the-web/) for more info.
 
-Also the server should keep a cache on the data from the datastore, especially if it's immutable or you when the data expires. This will keep response times snappy and consumers happy!
+Also the server could keep a cache of the data from the datastore, especially if it's immutable or you know when the data expires. This will keep response times snappy and consumers happy!
 
 ## Other stuff
 
@@ -116,5 +118,5 @@ These are things I haven't touched on in this article as it's getting pretty lon
 * Authentication/authorization (statelessly)
 * Rate limiting
 * Using PUT/POST/PATCH/DELETE for create/update/partial update/delete
-* Pagination (and the different ways)
+* Pagination - [read more about how](http://adduco.digital/archive/restful-api-pagination/)
 * Compression (gzip & pretty printing)
