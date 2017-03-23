@@ -579,7 +579,7 @@ header.single-header .desc{
 
     }
 }
-header.single-header a.home{
+header a.home{
     color: #fff;
     position: absolute;
     z-index: 4;
@@ -587,12 +587,14 @@ header.single-header a.home{
     text-decoration: none;
     font-size: 35px;
     height: 35px;
+    width:100%;
+    text-align: center;
     @include mobile-small{
         font-size: 25px;
         height: 25px;
     }
 }
-header.single-header a.home:hover{
+header a.home:hover{
     color: $pink;
 }
 
@@ -611,6 +613,7 @@ header.single-header a.home:hover{
     }
     .scream {
         height: 100%;
+        width:100%;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -622,6 +625,8 @@ header.single-header a.home:hover{
             z-index: 4;
             margin-bottom: 0px;
             font-family: merriweather;
+            padding-left: 10px;
+            padding-right:10px;
             @include mobile-small{
                 text-align: center;
             }
