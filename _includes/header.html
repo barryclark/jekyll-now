@@ -1,20 +1,22 @@
+<div class="header-container">
 <header class="clearfix">
-  <div style="overflow: auto;">
-    <a href="{{ site.baseurl }}/" class="site-avatar">
-      <img src="https://avatars.githubusercontent.com/u/12754677?v=3" alt="Joe's GitHub Profile Picture" />
-    </a>
+<div style="overflow: auto;">
+<a href="{{ site.baseurl }}/" class="site-avatar">
+<img src="https://avatars.githubusercontent.com/u/12754677?v=3" alt="Joe's GitHub Profile Picture" />
+</a>
 
-    <div class="site-info">
-      <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-      <p class="site-description">{{ site.description }}</p>
-    </div>
+<div class="site-info">
+<h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
+<p class="site-description">{{ site.description }}</p>
+</div>
 
-    <nav>
-      {% for navlink in site.navlinks %}<a href="{{ navlink.url }}">{{ navlink.text }}</a>{% unless forloop.last %}|{% endunless %}{% endfor %}
-    </nav>
-  </div>
-  <div>
+<nav>
+{% for navlink in site.navlinks %}<a href="{{ navlink.url }}">{{ navlink.text }}</a>{% unless forloop.last %}|{% endunless %}{% endfor %}
+</nav>
+</div>
+<div>
 {% include google/search.html %}
-  </div>
+</div>
 </header>
 {% include google/adsense.html %}
+</div>
