@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Fixing my Samsung Galaxy S5 Power Button
-tags: [money]
+tags: [technology]
 keywords: [samsung galaxy, galaxy s5, samsung galaxy s5, samsung galaxy s5 power button, samsung galaxy s5 stopped working, samsung galaxy s5 power button not working, samsung galaxy s5 power button fix, fix samsung galaxy s5 power button]
 image: /images/covers/2017-02-21-fixing-my-samsung-galaxy-s5-power-button.png
 ---
