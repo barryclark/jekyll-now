@@ -32,6 +32,8 @@ Dungeon Time is a real-time, cooperative game of gathering treasure without brea
 
 <h2>Play</h2>
 
+![Dungeon Time](/images/dungeontime/banner.jpg){: .center}
+
 First, the backpack is placed in the middle of all the players and the reward tokens are put off to the side. Then the mission deck is put together based off the scenario the players are going to attempt and shuffled. Take 2 and set them aside. Then the item cards are shuffled. Draw off the number of item cards for the number of players (noted in the rules), shuffle them with the 2 mission cards that were set aside, and deal the cards out to each player. Now the remaining item deck and mission cards are shuffled together to create a draw pile. Once everyone is ready, the sand timer is flipped and the 5 minute game of Dungeon Time is on its way!
 
 Dungeon Time is played in two phases: the Story Phase and the Resolution Phase. The Story Phase is the meat of the game and is the portion played in real time. Here players will play items from their hands to try and complete missions. Cards are played face up to the center of the backpack. If a player thinks the right items are in the story deck to complete a mission they can place a mission card onto the deck. Play is simultaneous and players always draw back up to the hand limit after cards are played.
