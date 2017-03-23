@@ -10,7 +10,7 @@ In the [first of these posts](http://blog.innodatalabs.com/building_datasets_par
 
 ![https://docs.google.com/presentation/d/11Ki7j7oTxI8Y9pZxyrxk3m3dTdjz4t1ir4QRCWnY7-g/edit#slide=id.g1d25704031_0_210](../images/cold-start-data-problem.png "How to get started with building datasets")
 
-Adding crowdsourcing companies, such as Crowdflower, Spare5/MightyAI and Mechanical Turk provides a comprehensive picture of the market.
+Adding a crowdsourcing tab to the above image, and a list of those types of companies, such as Crowdflower, Spare5/MightyAI and Mechanical Turk, would really provide a comprehensive picture of the process and options available.
 
 Let's narrow down all the potential [data acquisition strategies](https://medium.com/@muellerfreitag/10-data-acquisition-strategies-for-startups-47166580ee48#.rsab3pb64) available and highlight some of the well- and lesser-known public datasets. 
 
