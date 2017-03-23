@@ -1,5 +1,5 @@
 ---
-title: "Pax East 2017 - Divinity: Original Sin 2"
+title: "PAX East 2017 - Divinity: Original Sin 2"
 date: 2017-03-21 20:00:00 Z
 category: video games
 tags:

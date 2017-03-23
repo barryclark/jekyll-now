@@ -1,5 +1,5 @@
 ---
-title: "Pax East 2017 - Lost Castle"
+title: "PAX East 2017 - Lost Castle"
 date: 2017-03-23 14:39:00 Z
 category: video games
 tags:
