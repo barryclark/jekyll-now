@@ -3,7 +3,7 @@ layout: post
 title: Square Cash Review
 tags: [technology, money]
 keywords: [square cash, send money]
-image: /images/covers/2017-02-21-fixing-my-samsung-galaxy-s5-power-button.png
+image: /images/square-cash/square-cash-main.png
 ---
 
 Square Cash is a mobile app that allows you to send money to anyone, instantly. Owned by Square, Inc., it's essentially a competitor to PayPal and Venmo. You may have used a Square terminal at some small businesses.
