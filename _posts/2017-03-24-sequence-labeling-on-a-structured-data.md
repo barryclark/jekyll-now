@@ -35,7 +35,7 @@ In XML text is mixed with structural information. Example input may look like th
 ```
 <doc>
   <chapter id="1" name="Chapitre XIV">
-     <p align="left" indent="1em">La cinquième planète était très curieuse.</p>
+     <p align="left" indent="1em">La cinquième planète était <i>très curieuse</i>.</p>
   </chapter>
 </doc>
 ```
@@ -50,18 +50,79 @@ How to deal with it? Here are the options:
    features. I will talk more about this below.
 
 ### Transform approach
+Here we forget that tere was any structure in the input document, and we extract text only and tokenize it:
+```
+La 
+cinquième 
+planète 
+était 
+très 
+curieuse.
+```
 Advantage: pretty easy to create a training dataset and use standard methods of tokenization and ML.
 
 Disadvantage: looses information about structure, that may be important for prediction.
 
 ### Pretend approach
+Lets take the text of XML document and tokenize it:
+```
+<
+doc
+>
+<
+chapter 
+id
+="
+1
+"
+name
+="
+Chapitre
+XIV
+">
+<
+p
+align
+="
+left
+"
+indent
+="
+1em
+">
+La 
+cinquième 
+planète 
+était 
+<
+i
+>
+très 
+curieuse
+</
+i
+>.
+</
+p
+>
+</
+chapter
+>
+</
+doc
+>
+```
+Puff. A lot of noise we get from XML markup.
+
 Advantagse: easy to implement - no change required in the tooling.
 
-Disadvantage: input is very ambiguous. There are many equivalent ways to serialize the same XML document. For example:
+Disadvantage: input is very ambiguous. There are many equivalent ways to serialize the same XML document. 
+
+Consider that this one:
 ```
 <doc>
-  <chapter name="Chapitre XIV" id="1" >
-    <p indent="1em" align="left">La cinqui&#232;me plan&#232;te &#233;tait tr&#232;s curieuse.</p>
+  <chapter name="Chapitre XIV" id="1">
+    <p indent="1em" align="left">La cinqui&#232;me plan&#232;te &#233;tait <i>tr&#232;s curieuse</i>.</p>
   </chapter>
 </doc>
 ```
@@ -76,6 +137,17 @@ In short, this approach can not be expected to generalize well across all XML se
 Well, we did not yet define this approach, did we? Lets for now state that
 1. we want to work with parsed XML tree as our input object, and
 2. somehow cast this to a standard NLP sequence labeling task
+
+One way of doing this would be to tokenize only CDATA portion of the XML, and treat tags and tag attributes as features
+```
+La             B-doc  B-chapter  O
+cinquième      I-doc  I-chapter  O
+planète        I-doc  I-chapter  O
+était          I-doc  I-chapter  O
+très           I-doc  I-chapter  B-i
+curieuse       I-doc  I-chapter  I-i
+.              I-doc  I-chapter  O
+```
 
 ## Sequence labeling under the hood
 Again, sequence labeling takes a sequence of tokens as its input, and outputs a sequence of labels, assigned to each token.
