@@ -10,7 +10,7 @@ tags:
 - noio
 layout: post
 description: "Kingdom is a minimal city management game with striking visuals and no hand-holding."
-featured: pax2017kingdom.jpg
+featured: pax2017kingdom.png
 author: robk
 ---
 
