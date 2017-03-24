@@ -31,13 +31,23 @@ much more common. What are the implications of structured input?
 First, let us narrow the inputs to XML documents. HTML sources can be folded into the same class, obviously. But we
 are ignoring other structured type of sources: RTF, LaTeX, SGML, etc. Let us concentrate on XML.
 
-In XML text is mixed with structural information. How to deal with it? Here are the options:
+In XML text is mixed with structural information. Example input may look like this:
+```
+<doc>
+  <chapter id="1" name="Chapitre XIV">
+     <p align="left" indent="1em">La cinquième planète était très curieuse.</p>
+  </chapter>
+</doc>
+```
+
+How to deal with it? Here are the options:
 
 1. *Transform* to plain text. By stripping out XML tags one is left with the text-only content and this can be
    used for ML.
 2. *Pretend* XML is text. Just use ML algorithms on full serialized XML text, hoping that machine will learn to use
    (or ignore) XML tags.
-3. Incorporate *Structure* into learning. I will talk more about this below.
+3. Incorporate *Structure* into learning. Use CDATA text of the the XML document for tokenization, and use structure tags as
+   features. I will talk more about this below.
 
 ### Transform approach
 Advantage: pretty easy to create a training dataset and use standard methods of tokenization and ML.
@@ -50,25 +60,17 @@ Advantagse: easy to implement - no change required in the tooling.
 Disadvantage: input is very ambiguous. There are many equivalent ways to serialize the same XML document. For example:
 ```
 <doc>
-   <chapter id="2" name="War and Piece">
-      <p align="left" indent="1em">Introducing tokenization...</p>
-   </chapter>
+  <chapter name="Chapitre XIV" id="1" >
+    <p indent="1em" align="left">La cinqui&#232;me plan&#232;te &#233;tait tr&#232;s curieuse.</p>
+  </chapter>
 </doc>
 ```
-and
-```
-<doc>
-   <chapter name="War and Piece" id="2">
-      <p indent="1em" align="left" >Introducing tokenization...</p>
-   </chapter>
-</doc>
-```
-are different serializations of the same XML document.
+is the **same** XML document as before, just a different serialized form of it.
 
 We can hope that given a lot of data system can eventually learn that order of attributes does not matter and that
-`&apos;` represents the same symbol as `'`. But it is obviously a huge and artificial complication.
+`cinqui&#232;me` represents the same word as `cinquième`. But it is obviously a huge and artificial complication.
 
-In short, this approach can not be expected to generalize well across all XML serialization methods.
+In short, this approach can not be expected to generalize well across all XML serialized forms.
 
 ### Structure approach
 Well, we did not yet define this approach, did we? Lets for now state that
