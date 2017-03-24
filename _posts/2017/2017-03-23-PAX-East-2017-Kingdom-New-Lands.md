@@ -25,7 +25,7 @@ I've barely scratched the surface of what content New Lands has to offer. So far
 Kingdom: New Lands is available on just about every platform except my toaster. Here's the complete list:
 
 [Steam](http://store.steampowered.com/app/496300)\\
-[App Store[(https://itunes.apple.com/us/app/kingdom-new-lands/id1134727800?mt=12)\\
+[App Store](https://itunes.apple.com/us/app/kingdom-new-lands/id1134727800?mt=12)\\
 [GoG](https://www.gog.com/game/kingdom_new_lands)\\
 [Humble Bundle](https://www.humblebundle.com/store/kingdom-new-lands)\\
 [Green Man Gaming](https://www.greenmangaming.com/games/kingdom-new-lands/)\\
