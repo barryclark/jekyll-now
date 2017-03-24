@@ -87,6 +87,9 @@ gsub counts the number of substitutions made, as a proxy for number of matches. 
 ##### Delete the first line of a file 
 
      sed -i '1d' file.txt
+     
+##### Create a backup while doing inplace sed
+     sed -i.bak '1d' file.txt
 
 ### <font color="red">Bash script</font>
 
@@ -135,9 +138,17 @@ Esc Vj:le 4
 
 In Visual mode, each additional j selects another line
 
+
 ##### Delete a block of text
 in normal mode, type ma at beginning of block and d'a at end of block. 
 "mark a" then "delete to a"
+
+##### Show lines in vim
+    set nu
+##### Show hidden characters   
+     set list
+
+
 ##### Visual mode things
 esc v gets into visual mode
 
