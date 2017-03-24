@@ -14,7 +14,7 @@ featured: pax2017kingdom.png
 author: robk
 ---
 
-![Kingdom: New Lands](/images/kingdom/banner.jpg)
+![Kingdom: New Lands](/images/kingdom/banner.png)
 
 [Raw Fury](http://rawfury.com) had a lot going on in their booth during PAX East. Sadly I didn't have much time to look around and see everything that was going on there. I did, however, follow up with them after the show to see what was going on and what they had to offer. While they have a bunch of awesome looking new games, the one that really caught my eye was [Kingdom: New Lands](http://www.kingdomthegame.com) from Noio and Licorice.
 
