@@ -213,9 +213,11 @@ First, lets define the text content of an XML document. Text content is the text
 Each XML tag has its start and end offset into the text content. In other words, each XML tag defines an interval on the text content.
 If we take all XML tags and look at all intervals induced by these tags, we will get a set of well-nested intervals. Given any two
 intervals, only following is possible:
+
 1. one interval is completely inside the other
 2. intervals have zero intersection
 3. intervals are identical
+
 What can not possibly happen is when two intervals partially overlap. This is because it is not an arbitrary set of intervals, but
 the set induced by a tree XML structure.
 
@@ -235,3 +237,10 @@ decoding into the same number of sub-streams. Each stream represents the choice 
 is "base" for a Viterbi decoding, then label transition from B or I to (O, B) is not allowed until the end of this interval.
 Additionally, if Viterbi decoding starts a label at this exact token, then we add a normal decoding that must end at or before 
 the end of the smallest of these intervals.
+
+To formalize this further. If a token does not start/end any XML tag interval, we do standard Viterbi decoding to find the
+most probable labeling. But if token starts an XML interval, then at this point we need to weight several alternative decodings:
+
+1. O-label or B-label and constraint that label will end at or before the end of the interval (inner thread)
+2. B-label or I-label and constraint that label will end at or after the end of the interval (outer thread)
+
