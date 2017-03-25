@@ -27,6 +27,8 @@ navbar-links:
   Offerte:
     - Risorse: "risorse-disponibili/"
     - Alloggi: "alloggi/"
+    - Cerco Lavoro: "cerco_lavoro/"
+    - Offro Lavoro: "offro_lavoro/"
     - Ospitalità animali: "ospitalita_animali/"
   Raccolte:
     - Raccolte Fondi: "fondi/"
