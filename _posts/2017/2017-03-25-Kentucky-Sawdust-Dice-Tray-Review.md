@@ -8,7 +8,7 @@ tags:
 - accessories
 - kentucky sawdust
 layout: post
-description: Lately, I have been seeking out quality sources for good 3D prints. In my search, I stumbled upon 3DPrinterSpencer.
+description: Thomas Elmore of Kentucky Sawdust was generous enough to send over two woodwork dice trays for review..
 featured: kentuckysawdust.jpg
 author: frankg
 ---
