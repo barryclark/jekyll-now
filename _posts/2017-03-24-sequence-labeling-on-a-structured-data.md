@@ -3,7 +3,7 @@ published: false
 ---
 # Sequence Labeling on a Structured Data
 
-Sequence labeling is one of the classic ML task, that includes well-studied problems of Part-of-Speech (POS) tagging,
+Sequence labeling is one of the classic ML tasks, that include well-studied problems of Part-of-Speech (POS) tagging,
 Named Entity Recognition (NER), and more. Here I want to discuss two related topics: **tokenization**, and satisfying
 constrains imposed by the **structure** of input document. These two pieces are independent, but I still want to
 talk about both here, under the umbrella of generic sequence labeling.
@@ -148,6 +148,28 @@ très           I-doc  I-chapter  B-i
 curieuse       I-doc  I-chapter  I-i
 .              I-doc  I-chapter  O
 ```
+Somehow this approach feels better than both previous ones. We do not tokenize control information (tags), and we do preserve
+the control information in the form of token features.
+
+#### XML tags may interfere with tokenization
+One assumption silently embedded in the token/feature sketch above is that we can unambiguously assign XML tag to a token. This is
+not trivial requirement. Consider this XML fragment:
+```
+and they lived <i>happily ev</i>er after
+```
+This is somewhat contrieved, but still. Note that `<i>` tag covers only half of the word `ever`. What should we do?
+
+Practical solution is to change tokenization such that it is always consistent with XML tagging.
+The rule is: XML start and end tags induce token break:
+```
+and       O
+they      O
+lived     O
+happily   O
+ev        O
+er        B-i
+after     O
+```
 
 ## Sequence labeling under the hood
 Again, sequence labeling takes a sequence of tokens as its input, and outputs a sequence of labels, assigned to each token.
@@ -164,3 +186,52 @@ system is not so sure.
 Net conclusion to be taken from this section is that classical sequence labeling takes a list of tokens, and returns a list 
 of logits arrays (one array for each input token). These logits values can be used to get label and confidence estimation.
 
+## Decoding problem
+It is easy to use `argmax` method on logits to get the current label for a given token. Yet the result may not be sensical.
+There are two problems:
+
+1. IOB encoding implied constraints. In IOB label encoding scheme there are natural constrains: `I` label must be preceded by
+   `B` or `I`. Sequence of `O I` does not make sense, as one can not get *inside* label without first *beginning* the label.
+2. XML structure constraints. XML tags must be well-formed (correctly nested). The result of tagging is addition of XML annotation
+   tag. We should make sure that adding annotation tag still preserves well-formedness of the XML tree. Technically, one can invent
+   an alternative way of annotationg text spans in XML document, without using XML annotation tag. One solution could be to use
+   XML processing instructions to add annotations. But in practice XML annotations are way more convenient (and XML tooling is
+   much more mature for tags), that we almost always use tags and must obey correct nesting.
+
+Both these problems move us into the domain of *constrained label decoding*. Among all possible label assignments we must pick
+the one that minimises the total loss *given the structural constrains*.
+
+The problem of IOB constraints can be addressed by applying Viterbi-style decoding with the transition matrix that defines the
+constraint.
+
+The problem of satisfying XML structure constraint is not yet well understood. But we can re-formulate it in the terms of
+interval nesting problem.
+
+### XML tree as a set of nested intervals
+First, lets define the text content of an XML document. Text content is the text we get after removing all XML tags.
+
+Each XML tag has its start and end offset into the text content. In other words, each XML tag defines an interval on the text content.
+If we take all XML tags and look at all intervals induced by these tags, we will get a set of well-nested intervals. Given any two
+intervals, only following is possible:
+1. one interval is completely inside the other
+2. intervals have zero intersection
+3. intervals are identical
+What can not possibly happen is when two intervals partially overlap. This is because it is not an arbitrary set of intervals, but
+the set induced by a tree XML structure.
+
+And if we have a set of intervals that obeys properties 1-3 above, we can build a set of valid XML trees out of it! This is
+somewhat ambiguous (because if intervals have the same span, we can choose any order of tag nesting in the tree), but it is
+possible.
+
+Now we have a simple way to check if suggested annotation can be put into original XML tree as a tag or not. We just need to check
+that the new interval that this annotation is proposing does not break rules 1-3 above wrt any other interval already present in the
+tree.
+
+Putting it all together: once we have logits for every token in XML tree, we should run Viterbi algorithm that suppresses
+impossible IOB decodings and, additionally, check for the interval to be admissible.
+
+As we decode labels, we check for the interval start/end. If some intervals starts at the current token, we split Viterbi
+decoding into the same number of sub-streams. Each stream represents the choice of this interval as its "base". If an interval
+is "base" for a Viterbi decoding, then label transition from B or I to (O, B) is not allowed until the end of this interval.
+Additionally, if Viterbi decoding starts a label at this exact token, then we add a normal decoding that must end at or before 
+the end of the smallest of these intervals.
