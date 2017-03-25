@@ -28,7 +28,7 @@ It wasn't that long ago that I had [posted about](http://pawnsperspective.com/Bl
 
 The game, admittedly, as a bit of the Princess Bride in it as well as Zelda. The tale is told by a grandfather to his two grandkids. This provides an interesting, if underused, mechanic to the game.
 
-![Grandpa](/images/blossomtales/grandpa.jpg)
+![Grandpa](/images/blossomtales/grandpa.png)
 
 <h2>Play</h2>
 
@@ -40,7 +40,7 @@ One cool thing to note is that while similar actions-RPGs limit items such as ar
 
 While Blossom Knight has its own artistic direction it still borrows heavily from the look and feel of A Link to the Past. Everything from the bombs, pots and even the walls look like they could have been pulled from the SNES classic. This isn't a bad thing at all, mind you. It's all very intentional and well executed.
 
-![Blacksmith](/images/blossomtales/blacksmith.jpg)
+![Blacksmith](/images/blossomtales/blacksmith.png)
 
 <h2>Perspective</h2>
 
