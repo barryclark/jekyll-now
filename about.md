@@ -1,14 +1,16 @@
 ---
 layout: page
-title: About
+title: About Me
 ---
 
-Some information about you!
+Hi, I am Rishi.
+
+I am an entrepreneurial and data-driven product manager. When building products, my aim is to always solve for the user, and leveraging technology to build scalable solutions.
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself. 
+I am an ardent believer of technology’s inherent power to influence human behavior and actions. As a Product Manager, I get to use my long-standing love of tech to create products for everyday humans. Combining user research, data-driven design and a healthy dose of interactive prototyping, I aim to create intuitive interfaces and solve the right problems for the right customers. 
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[Email](mailto:hello@rishiathanikar.com)
