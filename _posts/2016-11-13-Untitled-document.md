@@ -11,7 +11,7 @@ published: true
     <td>Title</td>
     <td>Conversation about the media</td>
     <td></td>
-    <td>13/03/17</td>
+    <td>20/03/17</td>
   </tr>
 </table>
 
@@ -19,16 +19,16 @@ published: true
 <table>
   <tr>
     <td>Starting point:</td>
-    <td>Introduction to new topic</td>
+    <td>Speaking about institutionalized sexism and racism </td>
   </tr>
   <tr>
     <td>Target for this lesson?</td>
-    <td></td>
+    <td>Understand how to identify what advertisers and the media do to get the consumer to buy their product</td>
   </tr>
   <tr>
     <td>Did I reach my target?
 (add details to "Lesson Review")</td>
-    <td></td>
+    <td>Yes, I understood what we were learning and now am a lot more aware.</td>
   </tr>
 </table>
 
@@ -58,5 +58,5 @@ published: true
 </table>
 
 
-What Mr Keen discussed with us was about the media, and he spoke about how we shouldn't believe everything told to us and simple ways to filter the truth from the lies, a good example is the 'Winx club’, it’s a internet club for kids that is about believing in fairies (innocent enough), but to get closer to the fairies (or something along those lines) you should go to the kitchen at night, turn on the gas, make a wish and light a match. Impressionable 6 year olds will most likely do this but if they just thought about it for a second it doesn’t take a genius to figure out it is a stupid idea. Several people have died and been injured by this because obviously they get seriously burned, if they simply didn’t believe everything they’re told it wouldn’t be such a big issue. 
+I found this lesson really interesting and one of the things we looked at was photoshop and how people (especially woman, a case of institutionalized sexism) want to look perfect and on beauty magazines almost all photos of ripped men or fit women are photoshopped but people strive to look like that not knowing they are buying into the trap of doing anything to look like that image they don't know is computer generated and will do anything to get there, advertisers are clever and use the fact that the consumer will do anything to look good to their advantage. We also discussed how if an advert was stereotypical or racist towards blacks or asians, everyone would notice and shame it, rightly so, but when they do it towards gingers or Americans no-one takes notice of it and this is institutionalized racism that goes over everyone’s head.
 
