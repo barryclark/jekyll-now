@@ -5,8 +5,7 @@ published: false
 
 Sequence labeling is one of the classic ML tasks, that include well-studied problems of Part-of-Speech (POS) tagging,
 Named Entity Recognition (NER), and more. Here I want to discuss two related topics: **tokenization**, and satisfying
-constrains imposed by the **structure** of input document. These two pieces are independent, but I still want to
-talk about both here, under the umbrella of generic sequence labeling.
+constrains imposed by the **structure** of input document.
 
 ## Tokenization
 In sequence labeling our object is ... a sequence (surprise!). But the sequence of what? It is common in Natural 
@@ -20,7 +19,7 @@ Choice of tokenization scheme can me important, and technically should be consid
 and parameter tuning search. 
 
 But here is the current wisdom:
-* all tokenization schemes should work good if you have enough data, and if it matches the problem
+* all tokenization schemes should work good if you have enough data, and if tokenization is not too weird
 * there was some success in token-less learning as well - check out the [work of Andrej Karpathy](http://karpathy.github.io/2015/05/21/rnn-effectiveness/) on the subject
 
 ## Structured documents
@@ -133,6 +132,11 @@ We can hope that given a lot of data system can eventually learn that order of a
 
 In short, this approach can not be expected to generalize well across all XML serialized forms.
 
+Another disadvantage is that text tokens are mixed with structure tokens. Here structure tokens separate text tokens, making it harder
+for the machine (think LSTM) to connect the meaning of two text tokens when thay are separated with structure tokens. Just adding some
+purely presentational attribute to XML tag (e.g. `tooltip="look here"`) adds more tokens and moves information contained in text tokens
+on each side of it further apart!
+
 ### Structure approach
 Well, we did not yet define this approach, did we? Lets for now state that
 1. we want to work with parsed XML tree as our input object, and
@@ -152,8 +156,8 @@ Somehow this approach feels better than both previous ones. We do not tokenize c
 the control information in the form of token features.
 
 #### XML tags may interfere with tokenization
-One assumption silently embedded in the token/feature sketch above is that we can unambiguously assign XML tag to a token. This is
-not trivial requirement. Consider this XML fragment:
+One assumption silently embedded in the token/feature sketch above is that we can unambiguously assign XML tag content to a token. 
+This is not a trivial requirement. Consider this XML fragment:
 ```
 and they lived <i>happily ev</i>er after
 ```
@@ -170,6 +174,8 @@ ev        O
 er        B-i
 after     O
 ```
+We are essentially assuming that input document has XML tagging that is sensical with respect to the text content. It is just
+an assumption.
 
 ## Sequence labeling under the hood
 Again, sequence labeling takes a sequence of tokens as its input, and outputs a sequence of labels, assigned to each token.
@@ -232,13 +238,22 @@ tree.
 ### Data-dependant transition matrix
 When doing Viterbi decoding we can use transition matrix that depends on the token index. If in a given sequence we have `T` tokens
 `token[t]`, where `t` is in range `0`-`T-1`, then we have `T+1` transitions: one transition from padding to the first token,
-followed by `T-1` token-to-token transitions, and one last transition from the last token to the trailing padding. For exach of these
+followed by `T-1` token-to-token transitions, and one last transition from the last token to the trailing padding. For each of these
 `T+1` transitions we can have a different matrix that specifies allowed and forbidden moves (based on the structure of current
 XML document).
 
 ### Depth of intervals
 Since XML-induced intervals are nicely nested, we can define a depth value for each of them. The top-level XML tag and its interval
-will have depth 0. Immediate children of top-level interval will have depth 1, and so on.
+will have depth 0. Immediate children of top-level interval will have depth 1, and so on. Consider:
+```
+<doc>Hello, <i>beatiful</i> world!</doc>
+```
+Intervals look like this:
+```
+ Hello, beautiful world!
+ [---------------------] doc  depth=0
+        [-------]        i    depth=1
+```
 
 When we add an annotation to the existing XML tree, we are adding it as some concrete depth. If the depth of the current XML document
 if `L`, then after adding our annotation, depth will either be the same, or will increase by 1 (depending on where annotation is
@@ -253,7 +268,7 @@ depths - no need to look at all intervals at all depths.
 To adjust labeling algorithm to structured data, let us replace `IOB` set of labels with the new set:
 
 * `O` - means no tagging here
-* `I_k`, 'B_k` for `k` in `0...L`
+* `I_k`, `B_k` for `k` in `0...L`
 
 Label `B_k` starts tag at depth `k`. Label `I_k` continues tag at depth `k`.
 
@@ -274,4 +289,4 @@ the best decoding that is consistent with the XML markup.
 
 ## Future research
 In the scheme sketched above, training is done in a classic sequence labeling fashion. But decoding was augmented to obey structural constraints. A more proncipled approach would be to use structural decoding constrains during the training too.
-For that we can modify loss function such that it only considers decodings thatare conssitent with document structure.
+For that we can modify loss function such that it only considers decodings that are conssitent with document structure.
