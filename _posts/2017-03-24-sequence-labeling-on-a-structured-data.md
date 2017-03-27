@@ -204,8 +204,8 @@ the one that minimises the total loss *given the structural constrains*.
 The problem of IOB constraints can be addressed by applying Viterbi-style decoding with the transition matrix that defines the
 constraint.
 
-The problem of satisfying XML structure constraint is not yet well understood. But we can re-formulate it in the terms of
-interval nesting problem.
+The problem of satisfying XML structure constraint is just a bit more complicated. To understand it better, 
+let usre-formulate it in the terms of interval nesting problem.
 
 ### XML tree as a set of nested intervals
 First, lets define the text content of an XML document. Text content is the text we get after removing all XML tags.
@@ -229,18 +229,49 @@ Now we have a simple way to check if suggested annotation can be put into origin
 that the new interval that this annotation is proposing does not break rules 1-3 above wrt any other interval already present in the
 tree.
 
-Putting it all together: once we have logits for every token in XML tree, we should run Viterbi algorithm that suppresses
-impossible IOB decodings and, additionally, check for the interval to be admissible.
+### Data-dependant transition matrix
+When doing Viterbi decoding we can use transition matrix that depends on the token index. If in a given sequence we have `T` tokens
+`token[t]`, where `t` is in range `0`-`T-1`, then we have `T+1` transitions: one transition from padding to the first token,
+followed by `T-1` token-to-token transitions, and one last transition from the last token to the trailing padding. For exach of these
+`T+1` transitions we can have a different matrix that specifies allowed and forbidden moves (based on the structure of current
+XML document).
 
-As we decode labels, we check for the interval start/end. If some intervals starts at the current token, we split Viterbi
-decoding into the same number of sub-streams. Each stream represents the choice of this interval as its "base". If an interval
-is "base" for a Viterbi decoding, then label transition from B or I to (O, B) is not allowed until the end of this interval.
-Additionally, if Viterbi decoding starts a label at this exact token, then we add a normal decoding that must end at or before 
-the end of the smallest of these intervals.
+### Depth of intervals
+Since XML-induced intervals are nicely nested, we can define a depth value for each of them. The top-level XML tag and its interval
+will have depth 0. Immediate children of top-level interval will have depth 1, and so on.
 
-To formalize this further. If a token does not start/end any XML tag interval, we do standard Viterbi decoding to find the
-most probable labeling. But if token starts an XML interval, then at this point we need to weight several alternative decodings:
+When we add an annotation to the existing XML tree, we are adding it as some concrete depth. If the depth of the current XML document
+if `L`, then after adding our annotation, depth will either be the same, or will increase by 1 (depending on where annotation is
+added). Thus, adding an annotation interval consists of the following decisions:
+* choose depth at which interval is added, between 0 and `L+1`
+* choose the start and end token of the interval
 
-1. O-label or B-label and constraint that label will end at or before the end of the interval (inner thread)
-2. B-label or I-label and constraint that label will end at or after the end of the interval (outer thread)
+Once depth is chosen, we can easily check that new interval we are adding is well formed by just looking at two neighboring 
+depths - no need to look at all intervals at all depths.
 
+### Depth-expanded IOB labels
+To adjust labeling algorithm to structured data, let us replace `IOB` set of labels with the new set:
+
+* `O` - means no tagging here
+* `I_k`, 'B_k` for `k` in `0...L`
+
+Label `B_k` starts tag at depth `k`. Label `I_k` continues tag at depth `k`.
+
+Note that these are artificial labels used only for structure-constrained decoding. We still have just three logits: I, O and B.
+We expand logits values when feeding into Viterbi by copying the predicted logits value from `I` to `I_k`, and from `B` to `B_k`.
+By this we are just saying that sequence labeling gives us the logits for I/O/B, but since we want to apply structure constraint
+and effectively explore all possible depth labels, we clone these logits to every depth.
+
+The last step we need is to note that it is possible to define transition matrix for every token index such that:
+1. all allowed transitions will yield a well-formed intervals
+2. all possible well-formed intervals are allowed by the transition matrix.
+
+## Putting it all together
+We do tokenization in a way that is consistent with XML structure, and capture XML tags as features.
+
+When predicting, we use document structure to build transition matrix (for every token position), then run Viterbi to obtain
+the best decoding that is consistent with the XML markup.
+
+## Future research
+In the scheme sketched above, training is done in a classic sequence labeling fashion. But decoding was augmented to obey structural constraints. A more proncipled approach would be to use structural decoding constrains during the training too.
+For that we can modify loss function such that it only considers decodings thatare conssitent with document structure.
