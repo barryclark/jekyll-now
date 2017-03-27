@@ -256,7 +256,7 @@ Intervals look like this:
 ```
 
 When we add an annotation to the existing XML tree, we are adding it as some concrete depth. If the depth of the current XML document
-if `L`, then after adding our annotation, depth will either be the same, or will increase by 1 (depending on where annotation is
+is `L`, then after adding our annotation, depth will either be the same, or will increase by 1 (depending on where annotation is
 added). Thus, adding an annotation interval consists of the following decisions:
 * choose depth at which interval is added, between 0 and `L+1`
 * choose the start and end token of the interval
