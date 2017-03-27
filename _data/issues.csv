@@ -14251,10 +14251,10 @@ link: 'http://www.regione.lazio.it/rl_main/?vw=newsdettaglio&id=3607'
 data: 03/10/2016
 </yamldata></pre>
 ",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/742,180692278,2016-10-03 17:03:28,2016-10-03 17:01:52,RicostruiAmo #Saletta - Raccolta fondi del comitato civico,,,"[""Accettato"", ""Bollettino"", ""Raccolte Fondi"", ""Twitter""]",,,"{""bic"": """", ""causale"": ""Donazioni progetti Saletta"", ""chi"": ""RicostruiAmo Saletta"", ""data"": ""03/10/2016"", ""descrizione"": ""Raccolta fondi del comitato civico RicostruiAmo Saletta, fondato lo scorso 14 settembre da un gruppo di abitanti di Saletta, frazione di Amatrice, colpita dal terremoto."", ""email"": """", ""iban"": ""IT 62 H 0542803215000000001983"", ""intestazione"": ""Comitato RicostruiAmo Saletta"", ""link"": ""http://www.ricostruiamosaletta.org"", ""postale"": """"}","<pre><yamldata>chi: 'RicostruiAmo Saletta'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/742,180692278,2017-03-27 15:44:49,2016-10-03 17:01:52,RicostruiAmo #Saletta - Raccolta fondi del comitato civico,,,"[""Accettato"", ""Bollettino"", ""Raccolte Fondi"", ""Twitter""]",,,"{""bic"": """", ""causale"": ""Donazioni progetti Saletta"", ""chi"": ""RicostruiAmo Saletta"", ""data"": ""03/10/2016"", ""descrizione"": ""Raccolta fondi del comitato civico RicostruiAmo Saletta, fondato lo scorso 14 settembre da un gruppo di abitanti di Saletta, frazione di Amatrice, colpita dal terremoto."", ""email"": """", ""iban"": ""IT39E0311103230000000001983"", ""intestazione"": ""Comitato RicostruiAmo Saletta"", ""link"": ""http://www.ricostruiamosaletta.org"", ""postale"": """"}","<pre><yamldata>chi: 'RicostruiAmo Saletta'
 descrizione: 'Raccolta fondi del comitato civico RicostruiAmo Saletta, fondato lo scorso 14 settembre da un gruppo di abitanti di Saletta, frazione di Amatrice, colpita dal terremoto.'
 intestazione: 'Comitato RicostruiAmo Saletta'
-iban: 'IT 62 H 0542803215000000001983'
+iban: 'IT39E0311103230000000001983'
 bic: ''
 postale: ''
 causale: 'Donazioni progetti Saletta'
