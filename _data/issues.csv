@@ -15313,6 +15313,18 @@ email: ''
 data: 19/09/2016
 </yamldata></pre>
 ",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/598,177799880,2016-09-19 19:31:42,2016-09-19 14:27:39,"Uisp Rieti - Crowdfunding ""Siamo con voi""",,,"[""Accettato"", ""Bollettino"", ""Form"", ""Raccolte Fondi"", ""Twitter""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Uisp Rieti - Crowdfunding \""Siamo con voi\"""", ""data"": ""19/09/2016"", ""descrizione"": ""UISP Rieti, insieme a RCS, Running Motivator e il magazine Correre, promuove la campagna di crowdfunding \""Siamo con voi\"" per realizzare nelle aree colpite dal sisma iniziative a carattere sociale e sportivo, dall'adeguamento alla realizzazione di impianti per lo svolgimento di attivit\u00e0 sportive o ricreative, oltre che per lo sviluppo di progetti necessari a favorire l\u2019aggregazione sociale, soprattutto di giovani e anziani."", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""https://www.retedeldono.it/it/siamoconvoi"", ""postale"": """"}","<pre><yamldata>chi: 'Uisp Rieti - Crowdfunding ""Siamo con voi""'
+descrizione: 'UISP Rieti, insieme a RCS, Running Motivator e il magazine Correre, promuove la campagna di crowdfunding ""Siamo con voi"" per realizzare nelle aree colpite dal sisma iniziative a carattere sociale e sportivo, dall''adeguamento alla realizzazione di impianti per lo svolgimento di attività sportive o ricreative, oltre che per lo sviluppo di progetti necessari a favorire l’aggregazione sociale, soprattutto di giovani e anziani.'
+intestazione: ''
+iban: ''
+bic: ''
+postale: ''
+causale: ''
+link: 'https://www.retedeldono.it/it/siamoconvoi'
+email: ''
+data: 19/09/2016
+</yamldata></pre>
+",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/597,177759088,2016-10-01 18:41:05,2016-09-19 11:18:15,"""Agenda Terremoto : priorità e fasi"" documento del sindacato Cgil, consegnato al Governo il 13 settembre 2016",,,"[""Accettato"", ""Bollettino"", ""Facebook"", ""Notizie Utili"", ""pubblicare in archive.org""]",,,"{""data"": ""19/09/2016"", ""descrizione"": ""Nota sul terremoto che la Cgil ha consegnato al Governo nell'incontro di marted\u00ec 13 con il Commissario Errani e il Capo della Protezione Civile Curcio."", ""link"": ""http://www.cgil.it/admin_nv47t8g34/wp-content/uploads/2016/08/NotaCgiln1Terremoto.pdf"", ""titolo"": ""\""Agenda Terremoto : priorit\u00e0 e fasi\"" documento del sindacato Ggil, consegnato al Governo il 13 settembre 2016""}","<pre><yamldata>titolo: '""Agenda Terremoto : priorità e fasi"" documento del sindacato Ggil, consegnato al Governo il 13 settembre 2016'
 descrizione: 'Nota sul terremoto che la Cgil ha consegnato al Governo nell''incontro di martedì 13 con il Commissario Errani e il Capo della Protezione Civile Curcio.'
 link: 'http://www.cgil.it/admin_nv47t8g34/wp-content/uploads/2016/08/NotaCgiln1Terremoto.pdf'
