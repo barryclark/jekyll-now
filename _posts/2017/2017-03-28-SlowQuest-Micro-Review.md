@@ -18,9 +18,9 @@ author: robk
 
 The first book, in what Brodie hopes will be a series of books, is called The Goblin Guard. It's a 35-page pick-your-path mini-adventure where you're an adventurer searching for treasure in a dungeon. The only interaction here is an angry, little goblin.
 
-![The Goblin Guard](/images/slowquest/thegoblinguard.jpg)
-
 This first SlowQuest book is short, even going back and choosing all the available paths. It's also a fairly simple read. There's not a lot of text as the zine's dimensions are pretty small. This by no means diminishes what The Goblin Guard is, a beautiful hand-made product with a ton of charm.
+
+![The Goblin Guard](/images/slowquest/thegoblinguard.jpg)
 
 Is it worth the $5.51 it costs? That all depends on what you're looking for. If you're looking for an in-depth choose-your-own-adventure style book then this isn't the product for you. If you like cool hand-made things and are looking for little humorous adventure with some cute illustrations then this would be a wonderful little zine to keep on your desk at work or on a coffee table.
 
