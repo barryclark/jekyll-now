@@ -21,4 +21,4 @@ deployment:
   development:
     branch: master # Should be develop or something like that
     commands: 
-      - aws s3 sync ./build/ s3://engineering2.infinityworks.com/ --delete --exclude "circle.yml" 
+      - aws s3 sync ./build/ s3://${S3_ENGINEERING_BUCKET}/ --delete --exclude "circle.yml" 
