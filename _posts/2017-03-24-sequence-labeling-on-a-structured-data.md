@@ -4,11 +4,13 @@ published: false
 # Sequence Labeling on a Structured Data
 
 Sequence labeling is one of the classic ML tasks, that include well-studied problems of Part-of-Speech (POS) tagging,
-Named Entity Recognition (NER), and more. Here I want to discuss two related topics: **tokenization**, and satisfying
-constrains imposed by the **structure** of input document.
+Named Entity Recognition (NER), Address parsing, and more. Here I want to discuss two related topics: **tokenization**, and satisfying
+constrains imposed by the **structure** of input document. 
+
+Throughout this blog, data is represented in the [IOB format](https://en.wikipedia.org/wiki/Inside_Outside_Beginning).
 
 ## Tokenization
-In sequence labeling our object is ... a sequence (surprise!). But the sequence of what? It is common in Natural 
+In sequence labeling our input object is ... a sequence (surprise!). But the sequence of what? It is common in Natural 
 Language Processing to convert input text to a sequence of **tokens**. Here token is understood to be a word.
 Intuitively this is logical and reasonable. However, when diving into implementation details, there are many questions
 to answer on order to define word boundary. Basic tokenization scheme would be to split text on every whitespace (blank,
@@ -16,11 +18,15 @@ TAB, newline). A more sophisticated one will also split on punctuation. Then we 
 numbers and text that mixes numbers and letters. Thus, there are several popular tokenization schemes out there.
 
 Choice of tokenization scheme can me important, and technically should be considered as part of general feature selection
-and parameter tuning search. 
+and parameter tuning search. The same applies to word capitalization information that must be kept as a feature on top of tokens (if 
+we decide to lowercase tokens).
 
 But here is the current wisdom:
 * all tokenization schemes should work good if you have enough data, and if tokenization is not too weird
-* there was some success in token-less learning as well - check out the [work of Andrej Karpathy](http://karpathy.github.io/2015/05/21/rnn-effectiveness/) on the subject
+* there was some success in token-less learning as well - check out the [work of Andrej Karpathy](http://karpathy.github.io/2015/05/21/rnn-effectiveness/) on the subject. He uses **character** as a token and proves
+  that LSTM can learn long-range structure, inclusing balanced paranthesis, (almost) balanced XML tags and (almost)
+  parseable LaTeX and C++ sources. Unfortunately character-level models are still somewhat sub-par in terms of performance
+  comparing to word-level tokened representations. So we have to work with word tokens for now.
 
 ## Structured documents
 
@@ -49,7 +55,7 @@ How to deal with it? Here are the options:
    features. I will talk more about this below.
 
 ### Transform approach
-Here we forget that tere was any structure in the input document, and we extract text only and tokenize it:
+Here we forget that there was any structure in the input document, and we extract text only and tokenize it:
 ```
 La 
 cinquième 
@@ -58,7 +64,7 @@ planète
 très 
 curieuse.
 ```
-Advantage: pretty easy to create a training dataset and use standard methods of tokenization and ML.
+Advantage: pretty easy to create a training dataset and use standard methods of tokenization and ML. Also, in order to cope with implicit word and sentence boundaries, one may need to inject spaces and new lines in the text.
 
 Disadvantage: looses information about structure, that may be important for prediction.
 
@@ -128,7 +134,9 @@ Consider that this one:
 is the **same** XML document as before, just a different serialized form of it.
 
 We can hope that given a lot of data system can eventually learn that order of attributes does not matter and that
-`cinqui&#232;me` represents the same word as `cinquième`. But it is obviously a huge and artificial complication.
+`cinqui&#232;me` represents the same word as `cinquième`. Alternatively, we may want to normalize the serialized text
+by parsing and serializing with standard settings, but then we are changing the user-supplied input and
+can not easily transfer annotations back to the original input. It is obviously a huge and artificial complication.
 
 In short, this approach can not be expected to generalize well across all XML serialized forms.
 
@@ -136,6 +144,9 @@ Another disadvantage is that text tokens are mixed with structure tokens. Here s
 for the machine (think LSTM) to connect the meaning of two text tokens when thay are separated with structure tokens. Just adding some
 purely presentational attribute to XML tag (e.g. `tooltip="look here"`) adds more tokens and moves information contained in text tokens
 on each side of it further apart!
+
+Yet another problem with this approach is the inserting XML tags into the serialized XML text does not take into account
+XML structure and will sometimes generate invalid XML documents.
 
 ### Structure approach
 Well, we did not yet define this approach, did we? Lets for now state that
@@ -204,14 +215,14 @@ There are two problems:
    XML processing instructions to add annotations. But in practice XML annotations are way more convenient (and XML tooling is
    much more mature for tags), that we almost always use tags and must obey correct nesting.
 
-Both these problems move us into the domain of *constrained label decoding*. Among all possible label assignments we must pick
-the one that minimises the total loss *given the structural constrains*.
+Both these problems move us into the domain of [*constrained label decoding*](http://www.cs.toronto.edu/~graves/phd.pdf). 
+Among all possible label assignments we must pick the one that minimises the total loss *given the structural constrains*.
 
-The problem of IOB constraints can be addressed by applying Viterbi-style decoding with the transition matrix that defines the
-constraint.
+The problem of IOB constraints can be addressed by applying [Viterbi-style decoding](https://en.wikipedia.org/wiki/Viterbi_algorithm)
+with the transition matrix that defines the constraint (and identity emission matrix).
 
 The problem of satisfying XML structure constraint is just a bit more complicated. To understand it better, 
-let usre-formulate it in the terms of interval nesting problem.
+let's re-formulate it in terms of interval nesting problem.
 
 ### XML tree as a set of nested intervals
 First, lets define the text content of an XML document. Text content is the text we get after removing all XML tags.
@@ -227,9 +238,11 @@ intervals, only following is possible:
 What can not possibly happen is when two intervals partially overlap. This is because it is not an arbitrary set of intervals, but
 the set induced by a tree XML structure.
 
-And if we have a set of intervals that obeys properties 1-3 above, we can build a set of valid XML trees out of it! This is
+And, conversly, if we have a set of intervals that obeys properties 1-3 above, we can build a set of valid XML trees out of it! This is
 somewhat ambiguous (because if intervals have the same span, we can choose any order of tag nesting in the tree), but it is
-possible.
+possible. To elaborate a bit: if in this set there are two intervals A and B that have exactly the same span, then we can build 
+xml chunk like this: `<A><B>blah</B></A>` or like this: `<B><A>blah</A></B>` and tree construction becomes ambiguous. This can be
+solved in practice by declaring that intervals are sorted by the start offset and that order of intervals matters.
 
 Now we have a simple way to check if suggested annotation can be put into original XML tree as a tag or not. We just need to check
 that the new interval that this annotation is proposing does not break rules 1-3 above wrt any other interval already present in the
@@ -246,7 +259,7 @@ XML document).
 Since XML-induced intervals are nicely nested, we can define a depth value for each of them. The top-level XML tag and its interval
 will have depth 0. Immediate children of top-level interval will have depth 1, and so on. Consider:
 ```
-<doc>Hello, <i>beatiful</i> world!</doc>
+<doc>Hello, <i>beautiful</i> world!</doc>
 ```
 Intervals look like this:
 ```
