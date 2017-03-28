@@ -120,6 +120,12 @@ img {
   color: $gray;
 }
 
+.author {
+  font-style: italic;
+  font-size: 90%;
+  margin-bottom: 2em;
+}
+
 // Specify the color of the selection
 ::-moz-selection {
   color: $black;
