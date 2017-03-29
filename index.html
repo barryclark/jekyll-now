@@ -25,7 +25,7 @@ layout: default
 	  {% else %}{% assign author = site.authors["default"] %}{% endif %}
       <div class="small-author">
         <span class="name">{{author.display_name}}</span>
-        {% if author.gravatar %}<img src="http://www.gravatar.com/avatar/{{ author.gravatar }}?s=28">
+        {% if author.gravatar %}<img src="https://www.gravatar.com/avatar/{{ author.gravatar }}?s=28">
         {% elsif author.avatar %}<img height="25" src="{{ author.avatar }}">
         {% else %}<img height="25" src="{{ site.avatar }}">{% endif %}
       </div>
