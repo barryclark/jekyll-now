@@ -3,14 +3,68 @@
 #
 
 # Name of your site (displayed in the header)
-name: Your Name
+name: Infinity Works
 
 # Short bio or description (displayed in the header)
-description: Web Developer from Somewhere
+description: Engineering Blog
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
+avatar: /images/infinityworks.png
 
+authors:
+  default:
+    display_name: Infinity Works
+    avatar: /images/infinityworks.png
+    web: https://www.infinityworks.com
+    web_short_name: infinityworks.com
+    twitter: InfinityWorks 
+    github: infinityworksltd
+  james_hall:
+    display_name: James Hall
+    gravatar: 2f474625a223a9a376f69a54ba76c066
+    email: james.hall@infinityworks.com
+    web: https://www.thatsmejames.wordpress.com
+    web_short_name: thatsmejames.wordpress.com
+    linkedin: jameshall93
+    twitter: thatsmejamesh
+    github: jam-pot
+  ed_marshall:
+    display_name: Ed Marshall
+    gravatar: d9498b999415a2c54293061acc24637e
+    email: ed.marshall@infinityworks.com
+    web: https://www.infinityworks.com
+    web_short_name: infinityworks.com
+    linkedin: edward-marshall-9567b28
+    twitter: rucknar
+    github: rucknar
+  paul_lucas:
+    display_name: Paul Lucas
+    gravatar: d789a807efdb806b46174a57e7f5a78d
+    email: paul.lucas@infinityworks.com
+    web: https://www.infinityworks.com
+    web_short_name: infinityworks.com
+    linkedin: paul-lucas-3209203
+  ivor_caldwell:
+    display_name: Ivor Caldwell
+    email: ivor.caldwell@infinityworks.com
+    web: https://ivorcaldwell.org
+    web_short_name: ivorcaldwell.org
+    linkedin: ivor-caldwell-95930a6
+  flock3:
+    display_name: Thomas Gray
+    email: thomas.gray@infinityworks.com
+    gravatar: fe56378d73353f065bffb040dbbf4214
+    web: https://flock3.com
+    web_short_name: flock3.com
+    linkedin: flock2
+  jake_hall:
+    display_name: Jake Hall
+    email: jake.hall@infinityworks.com
+    web: https://www.infinityworks.com
+    web_short_name: infinityworks.com
+    gravatar: 050b8bed1e0d616a97ee14afd55ad078
+    linkedin: halljakea
+    
 #
 # Flags below are optional
 #
@@ -21,12 +75,12 @@ footer-links:
   email:
   facebook:
   flickr:
-  github: barryclark/jekyll-now
+  github: infinityworksltd
   instagram:
   linkedin:
   pinterest:
   rss: # just type anything here for a working RSS icon
-  twitter: jekyllrb
+  twitter: InfinityWorks 
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
@@ -37,17 +91,17 @@ footer-links:
 disqus:
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-google_analytics:
+google_analytics: UA-83439332-1
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
-url:
+url: http://engineering.infinityworks.com
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
 # and NOT your User repository (http://yourusername.github.io)
 # then add in the baseurl here, like this: "/repository-name"
-baseurl: ""
+# baseurl: "http://engineering.infinityworks.com/"
 
 #
 # !! You don't need to change any of the configuration flags below !!
