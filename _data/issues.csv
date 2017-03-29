@@ -1,7 +1,18 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2853,217838459,2017-03-29 10:55:40,2017-03-29 10:55:16,Chiusura temporanea di alcuni uffici comunali per loro trasferimento in moduli prefabbricati #Amatrice,,,"[""Accettato"", ""Bollettino"", ""Facebook"", ""Notizie Utili""]",,,"{""data"": ""29/03/2017"", ""descrizione"": ""A partire dal giorno 27 Marzo, al fine di effettuare lavori all\u2019interno dell\u2019attuale struttura comunale, nonch\u00e9 disporre le necessarie attivit\u00e0 per il trasferimento di alcuni uffici nel vicino modulo prefabbricato donato dalla Societ\u00e0 MetroC, alcuni uffici rimarranno chiusi al pubblico."", ""link"": ""http://www.comune.amatrice.rieti.it/avviso-pubblico-2/"", ""titolo"": ""Chiusura temporanea di alcuni uffici comunali per loro trasferimento in moduli prefabbricati #Amatrice""}","<pre><yamldata>titolo: 'Chiusura temporanea di alcuni uffici comunali per loro trasferimento in moduli prefabbricati #Amatrice'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2853,217838459,2017-03-29 15:37:25,2017-03-29 10:55:16,Chiusura temporanea di alcuni uffici comunali per trasferimento in moduli prefabbricati #Amatrice,,,"[""Accettato"", ""Bollettino"", ""Facebook"", ""Notizie Utili""]",,,"{""data"": ""29/03/2017"", ""descrizione"": ""A partire dal giorno 27 Marzo, al fine di effettuare lavori all\u2019interno dell\u2019attuale struttura comunale, nonch\u00e9 disporre le necessarie attivit\u00e0 per il trasferimento di alcuni uffici nel vicino modulo prefabbricato donato dalla Societ\u00e0 MetroC, alcuni uffici rimarranno chiusi al pubblico."", ""link"": ""http://www.comune.amatrice.rieti.it/avviso-pubblico-2/"", ""titolo"": ""Chiusura temporanea di alcuni uffici comunali per loro trasferimento in moduli prefabbricati #Amatrice""}","<pre><yamldata>titolo: 'Chiusura temporanea di alcuni uffici comunali per loro trasferimento in moduli prefabbricati #Amatrice'
 descrizione: 'A partire dal giorno 27 Marzo, al fine di effettuare lavori all’interno dell’attuale struttura comunale, nonché disporre le necessarie attività per il trasferimento di alcuni uffici nel vicino modulo prefabbricato donato dalla Società MetroC, alcuni uffici rimarranno chiusi al pubblico.'
 link: 'http://www.comune.amatrice.rieti.it/avviso-pubblico-2/'
+data: 29/03/2017
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2852,217838064,2017-03-29 15:37:09,2017-03-29 10:53:40,Dono attrezzatura varia per bimbi,,,"[""Accettato"", ""Bambini"", ""Bollettino"", ""Donazioni"", ""Form""]",,,"{""cosa"": ""dono attrezzatura varia per bimbi"", ""data"": ""29/03/2017"", ""descrizione"": ""Dispongo di varie attrezzature per bimbi in ottime condizioni tra cui culla in legno - culla da capeggio - box - sediolone - tiralatte - scalda bottiglina - marsupio - vari giocattoli. Usate dai miei figli ma in ottime condizioni. Invio foto 3920744527"", ""email"": ""stef.picc@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3920744527""}","<pre><yamldata>tel: '3920744527'
+email: stef.picc@gmail.com
+cosa: 'dono attrezzatura varia per bimbi'
+descrizione: 'Dispongo di varie attrezzature per bimbi in ottime condizioni tra cui culla in legno - culla da capeggio - box - sediolone - tiralatte - scalda bottiglina - marsupio - vari giocattoli. Usate dai miei figli ma in ottime condizioni. Invio foto 3920744527'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
 data: 29/03/2017
 </yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2851,217554603,2017-03-28 21:48:36,2017-03-28 13:11:11,Esenzioni sanitarie prorogate al 30 Settembre per chi risiede nei comuni marchigiani colpiti dal sisma,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""28/03/2017"", ""descrizione"": ""Sono state prorogate al 30 Settembre 2017 le esenzioni in sanit\u00e0 per tutti i cittadini residenti nei Comuni marchigiani colpiti dal sisma. Il termine iniziale del 30 Aprile \u00e8 stato prorogato di 5 mesi per sostenere chi effettivamente ha subito dei danni, ossia tutti coloro che hanno una casa dichiarata inagibile o che hanno fatto richiesta di un sopralluogo. Tutti gli interessati, dunque, entro la fine di aprile dovranno rivolgersi agli sportelli dedicati dell'Area Vasta di competenza per provvedere al rilascio dell'autocertificazione che contenga la dichiarazione di inagibilit\u00e0 o l'avvenuta richiesta di verifica di agibilit\u00e0. Agli stessi sar\u00e0 consegnato un tesserino di esenzione."", ""link"": ""http://www.picenotime.it/articoli/22653.html"", ""titolo"": ""Terremoto, anche nell'#Ascolano esenzioni sanitarie prorogate fino al 30 Settembre""}","<pre><yamldata>titolo: 'Terremoto, anche nell''#Ascolano esenzioni sanitarie prorogate fino al 30 Settembre'
@@ -18204,18 +18215,6 @@ bic: ''
 postale: ''
 causale: ''
 link: 'https://www.facebook.com/events/1795723097317338/'
-email: ''
-data: 14/09/2016
-</yamldata></pre>
-",closed
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/276,176858446,2016-10-01 16:19:24,2016-09-14 09:28:12,RicostriAMO-ILLICA - Cena 1 Ottobre,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""RicostriAMO-ILLICA"", ""data"": ""14/09/2016"", ""descrizione"": ""RicostruiAMO-ILLICA. Cena per la raccolta di fondi a favore dell'Associazione Culturale Illica. Sabato 1 ottobre dalle ore 21, Nuoto Belle Arti, Lgt. Thaon de Revel, 3 a Roma."", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""https://www.facebook.com/events/288196621573034/"", ""postale"": """"}","<pre><yamldata>chi: RicostriAMO-ILLICA
-descrizione: 'RicostruiAMO-ILLICA. Cena per la raccolta di fondi a favore dell''Associazione Culturale Illica. Sabato 1 ottobre dalle ore 21, Nuoto Belle Arti, Lgt. Thaon de Revel, 3 a Roma.'
-intestazione: ''
-iban: ''
-bic: ''
-postale: ''
-causale: ''
-link: 'https://www.facebook.com/events/288196621573034/'
 email: ''
 data: 14/09/2016
 </yamldata></pre>
