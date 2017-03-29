@@ -6,13 +6,29 @@ layout: default
   {% for post in site.posts %}
     <article class="post">
 
+      {% if post.external_url %}
+      <h1><a href="{{ site.baseurl }}{{ post.external_url }}">{{ post.title }}</a></h1>
+      {% else %}
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
+      {% endif %}
       <div class="entry">
         {{ post.excerpt }}
       </div>
 
+      {% if post.external_url %}
+      <a href="{{ site.baseurl }}{{ post.external_url }}" class="read-more">Read More</a>
+      {% else %}
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+      {% endif %}
+
+      {% if post.author %}{% assign author = site.authors[post.author] %}
+	  {% else %}{% assign author = site.authors["default"] %}{% endif %}
+      <div class="small-author">
+        <span class="name">{{author.display_name}}</span>
+        {% if author.gravatar %}<img src="https://www.gravatar.com/avatar/{{ author.gravatar }}?s=28">
+        {% elsif author.avatar %}<img height="25" src="{{ author.avatar }}">
+        {% else %}<img height="25" src="{{ site.avatar }}">{% endif %}
+      </div>
     </article>
   {% endfor %}
 </div>

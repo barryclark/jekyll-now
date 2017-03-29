@@ -1,0 +1,19 @@
+{% if page.author %}{% assign author = site.authors[page.author] %}
+{% else %}{% assign author = site.authors["default"] %}
+{% endif %}
+<div class="author">
+  <div class="author-img">
+  {% if author.gravatar %}<img src="http://www.gravatar.com/avatar/{{ author.gravatar }}?s=90">
+  {% elsif author.avatar %}<img height="90" src="{{ author.avatar }}">
+  {% else %}<img height="90" src="{{ site.avatar }}">{% endif %}
+  </div>
+  <div class="author-detail">
+    <div class="name">{{ author.display_name }}</div>
+    {% if author.web %}<div><a href="{{ author.web }}">{{ author.web_short_name }}</a></div>
+    {% else %}<div><a href="https://www.infinityworks.com">infinityworks.com</a></div>{% endif %}
+    {% if author.github %}<a href="https://www.github.com/{{ author.github }}"><i class="svg-icon github"></i></a>{% endif %}
+    {% if author.twitter %}<a href="https://www.twitter.com/{{ author.twitter }}"><i class="svg-icon twitter"></i></a>{% endif %}
+    {% if author.linkedin %}<a href="https://uk.linkedin.com/in/{{ author.linkedin }}"><i class="svg-icon linkedin"></i></a>{% endif %}
+    <i class="svg-icon"></i>
+  </div>
+</div>

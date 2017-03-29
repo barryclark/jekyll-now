@@ -1,17 +1,25 @@
 ---
 layout: default
 ---
+{% if page.image %}
+<div class="feature-image" style="background-image: url(../images/feature_images/{{ page.image }});"></div>
+{% endif %}
 
 <article class="post">
+
   <h1>{{ page.title }}</h1>
 
   <div class="entry">
     {{ content }}
   </div>
 
+  {% include share.html %}
+
   <div class="date">
-    Written on {{ page.date | date: "%B %e, %Y" }}
+    Written on {{ page.date | date: "%B %e, %Y" }} by: 
   </div>
+  
+  {% include author.html %}
 
   {% include disqus.html %}
 </article>
