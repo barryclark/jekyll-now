@@ -51,7 +51,7 @@ Since this is a prototype there's not much I can go on here except the art direc
 
 <h2>Perspective</h2>
 
-I was a bit blown away by Cytosis, mostly because I was kind of expecting something completely different that the game I played. Cytosis is more than just a worker placement games. It's an *extremely good* worker placement game. Between the different ways to score during the game, the goal mechanic, and the event deck, there's plenty of paths to victory. The board has just enough worker spaces to make sure there's always options but holds back just enough so that strategic areas can be blocked off my cunning players.
+I was a bit blown away by Cytosis, mostly because I was kind of expecting something completely different that the game I played. Cytosis is more than just a worker placement game. It's an *extremely good* worker placement game. Between the different ways to score during the game, the goal mechanic, and the event deck, there's plenty of paths to victory. The board has just enough worker spaces to make sure there's always options but holds back just enough so that strategic areas can be blocked off my cunning players.
 
 What surprised me the most about Cytosis is how accessible the game is. Not only was I able to teach my 7-year-old son to play, but he was able to hold his own and almost pull out a victory in our first game. His defining moment was claiming the "First Player" space even though he already had the card, just so the rest of us playing couldn't take that advantage away from him.
 
