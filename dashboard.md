@@ -284,14 +284,6 @@ ext-js:
 </body>
 {% endraw %}
 
-<script>
-function urldecode(str) {
-   return decodeURIComponent((str+'').replace(/\+/g, '%20'));
-}
-
-var issues=urldecode("{{ site.data.issuesjson | jsonify | cgi_escape  }}");
-</script>
-
 </html>
 
 

@@ -153,6 +153,9 @@ defaults:
 # Use tags pages (not recommended if you are deploying via GitHub pages, only set to true if deploying locally with ruby)
 link-tags: false
 
+include:
+  - _data
+
 # Exclude these files from production site
 exclude:
   - Gemfile
