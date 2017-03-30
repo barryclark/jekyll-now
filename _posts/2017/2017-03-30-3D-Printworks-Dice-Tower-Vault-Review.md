@@ -12,7 +12,7 @@ description: For those of us that don’t want to shell out the big bucks for a 
 featured: 3dprintworks.jpg
 author: frankg
 ---
-
+ 
 For those of us that don’t want to shell out the big bucks for a 3D printer, there are some quality “go-between” printing operations out there. One of those is [3D Printworks](https://www.etsy.com/shop/3dPrintworksShop#about). Owned by [Barbara Thorndyke](https://www.etsy.com/people/barbarathorndyke1) and based out of Springfield, Missouri, 3D Printworks offers a number of gaming items. Thorndyke’s operation is characterized by an approachable small-town flavor with a specialty in attention to detail. This small, two-printer operation works with freelance designers or pulls designs from Thingiverse. This means that 3D Printworks offers a collection of both unique and common market items.
 
 3D Printwork was kind enough to share two examples of their work with me: a [Travel-Size Dice Tower](https://www.etsy.com/listing/476787874/3d-printed-dice-tower-easy-travel-size?ref=shop_home_active_11) and a [Magnetic Dice Vault](https://www.etsy.com/listing/491595089/3d-printed-magnetic-dice-vault-more?ref=shop_home_active_7).
