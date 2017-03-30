@@ -285,12 +285,11 @@ ext-js:
 {% endraw %}
 
 <script>
-var issues=[
-{% for item in site.data.issuesjson %}
- {{item | jsonify | escape }}
-,
-{% endfor %}
-];
+function urldecode(str) {
+   return decodeURIComponent((str+'').replace(/\+/g, '%20'));
+}
+
+var issues=urldecode("{{ site.data.issuesjson | jsonify | cgi_escape  }}");
 </script>
 
 </html>
