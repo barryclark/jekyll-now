@@ -28,7 +28,7 @@ Some Code samples an explanations are specific for our environment, which uses t
 ## Configure and roll out Telegraf
 Assuming that Rancher, some docker hosts, an InfluxDB and Grafana is already in place and setup, we can start configuring telegraf and rolling it out on our docker hosts.
 [Telegraf](https://docs.influxdata.com/telegraf/v1.2/) is responsible for collecting real time data.
-###Create an adjusted telegraf container
+### Create an adjusted telegraf container
 First create a docker file for telegraf
 ```docker
 # telegraf docker file
@@ -70,13 +70,13 @@ exec telegraf
 
 ```
 The default config file of telegraf requires the following changes
-####agent section
+#### agent section
 ```
 [agent] 
   ## Override default hostname, if empty use os.Hostname()
   hostname = "$INFLUX_TELEGRAF_HOST"
 ```
-####output section
+#### output section
 ```
 [[outputs.influxdb]]
   ## The full HTTP or UDP endpoint URL for your InfluxDB instance.
@@ -98,7 +98,7 @@ The default config file of telegraf requires the following changes
   username = "$INFLUXDB_USER"
   password = "$INFLUXDB_PASSWORD"
  ````
-####inputs section
+#### inputs section
 The inputs.docker section must be activated and should look like
 ```conf
 # # Read metrics about docker containers
@@ -119,9 +119,9 @@ The inputs.docker section must be activated and should look like
    total = false
    ```
    
-###Roll it out on every docker host
+### Roll it out on every docker host
 Once your telegraf container is build and ready to deploy, you need to run it on every docker host in your environment.
-####This is sample compose file:
+#### This is sample compose file:
 ```yml
 version: '2'
 services:
@@ -152,7 +152,7 @@ Replace the parameters to fit your environment.
 The rancher specific labels make sure, that the telegraf container is running on every host. 
 If you add additional host to the rancher environment, a telegraf container will be started on the newly added host and you will receive data of the new host instantly.
 
-##Create some nice dashboards
+## Create some nice dashboards
 Now! Open grafana and add some panels to visualize your data.
 A lot of new measurements should be available in the query editor of grafana. Measurements from containers starting with docker_ and basic metrics from the hosts themselves like cpu, disk, etc..
 
@@ -170,12 +170,12 @@ Combined with one of the field values, you can drill down to a single container 
 
 ![field](/images/monitoring-docker-environment/field.png)
  
-###Sample dashboard
+### Sample dashboard
 This is one of our dashboards create using data collected with the configuration described above.
 
 ![dashboard](/images/monitoring-docker-environment/dashboard.png)
 
-###Automatically add new hosts
+### Automatically add new hosts
 In a docker environment hosts are added or removed over time. 
 You can add an additional query for each new host to be shown on the dashboard by cloning a previous one.
 This would make a lot of work to keep your dashboards up to date over time.
