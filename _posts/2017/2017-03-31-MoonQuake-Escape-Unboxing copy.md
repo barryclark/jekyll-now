@@ -15,6 +15,8 @@ author: robk
 
 I've been eagerly awaiting a copy of MoonQuake Escape since I first saw the game at PAX East last year. The combination of colorful art, awesome board mechanic, and bluffing had me instantly hooked. At PAX East this year designer Jeff Johnston was able to send me home with a copy, and I was super excited to break it out an put it all togehter.
 
+Everything looks even better than the first prototype I saw and moves smooth as butter. I've already gotten in one play of the basic rules and should be getting an advanced play in soon. Review to come.
+
 Here's the pics!
 
 ![MoonQuake Escape Box](/images/moonquake/box.jpg)
