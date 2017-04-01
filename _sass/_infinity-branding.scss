@@ -1,0 +1,67 @@
+
+
+.site-footer {
+	background-color: #333f48;
+}
+
+.site-header {
+	background-color: #333f48;
+	width: 100%;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	transition: all ease .3s;
+
+	@include mobile {
+	    text-align: center;
+	}
+
+	h1 {
+		opacity: 1;
+		transition: opacity ease .3s;
+		width: 334px;
+		margin: 0 auto 0px;
+		height: 50px;
+		text-indent: -9999px;
+		background-position: center top;
+		background-repeat: no-repeat;
+		background-color: transparent;
+		background-image: url(/images/site-logo-white.svg);
+		background-size: 334px 50px;
+	}
+
+	.site-description{
+		color: #ccc;
+	}
+}
+
+@font-face {
+	font-family: "Avenir LT W01_55 Roman1475520";
+	src: url(/fonts/57bf7902-79ee-4b31-a327-1bbf59a3d155.eot?#iefix);
+	src: url(/fonts/57bf7902-79ee-4b31-a327-1bbf59a3d155.eot?#iefix) format("eot"), url(/fonts/b290e775-e0f9-4980-914b-a4c32a5e3e36.woff2) format("woff2"), url(/fonts/4b978f72-bb48-46c3-909a-2a8cd2f8819c.woff) format("woff"), url(/fonts/9bdf0737-f98c-477a-9365-ffc41b9d1285.ttf) format("truetype"), url(/fonts/15281d0d-e3c2-46e1-94db-cb681e00bfaa.svg#15281d0d-e3c2-46e1-94db-cb681e00bfaa) format("svg")
+}
+
+nav {
+ 
+  a {
+	color: $white;
+	font-family: "Avenir LT W01_55 Roman1475520", Arial, Helvetica, sans-serif;
+
+	@include mobile {
+	  margin: 0 10px;
+	  color: $blue;
+	}
+  }
+}
+
+body, h1, h2, h3, h4, h5, h6 {
+	font-family: "Avenir LT W01_55 Roman1475520", Arial, Helvetica, sans-serif;
+	font-style: normal;
+}
+
+h1, h2{
+	color: $iwGreen;
+}
+
+h3{
+	color: $iwRedOrange;
+}
