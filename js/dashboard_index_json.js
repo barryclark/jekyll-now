@@ -53,10 +53,10 @@ $(function() {
 	//
 	// ..........................................................
 
-	var mytest = Data.object("Segnalazioni",{"source":issues,"type":"json"}).import(function(mydata){
+	// var mytest = Data.object("Segnalazioni",{"source":issues,"type":"json"}).import(function(mydata){
 
-	//var szUrl = "https://raw.githubusercontent.com/emergenzeHack/terremotocentro/master/_data/issues.csv";
-	//var myfeed = Data.feed("Segnalazioni",{"source":szUrl,"type":"csv"}).load(function(mydata){
+	var szUrl = "http://terremotocentroitalia.info/_data/issuesjson.json";
+	var myfeed = Data.feed("Segnalazioni",{"source":szUrl,"type":"json"}).load(function(mydata){
 
 		// json -> 2 dimensional table 
 		// take the isue object and create the columns we know from the CSV 
