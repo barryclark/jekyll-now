@@ -32,9 +32,9 @@ $(function() {
 		var txt = $(element).attr("data-path");
 		if (txt) {
 			var textA = txt.split("::");
-			var x = {}; 
-			x.type = textA[0]; 
-			x.table = textA[1]; 
+			var x = {};
+			x.type = textA[0];
+			x.table = textA[1];
 			x.column = textA[2].split('[')[0];
 			x.selection = textA[2].split('[')[1]?(textA[2].split('[')[1].split(']')[0]):"";
 			return x;
@@ -55,35 +55,35 @@ $(function() {
 
 	// var mytest = Data.object("Segnalazioni",{"source":issues,"type":"json"}).import(function(mydata){
 
-	var szUrl = "./_data/issuesjson.json";
+	var szUrl = "../_data/issuesjson.json";
 	var myfeed = Data.feed("Segnalazioni",{"source":szUrl,"type":"json"}).load(function(mydata){
 
-		// json -> 2 dimensional table 
-		// take the isue object and create the columns we know from the CSV 
+		// json -> 2 dimensional table
+		// take the isue object and create the columns we know from the CSV
 
 		mydata.addColumn({'source':'issue','destination':'created_at'},function(value){
 							return value['created_at'].replace("T"," ").split("+")[0];
-							} 
+							}
 						);
 		mydata.addColumn({'source':'issue','destination':'title'},function(value){
 							return value['title'];
-							} 
+							}
 						);
 		mydata.addColumn({'source':'issue','destination':'url'},function(value){
 							return value['url'];
-							} 
+							}
 						);
 		mydata.addColumn({'source':'issue','destination':'labels'},function(value){
 							return JSON.stringify(value['labels']);
-							} 
+							}
 						);
 		mydata.addColumn({'source':'issue','destination':'lat'},function(value){
 							return value['lat'];
-							} 
+							}
 						);
 		mydata.addColumn({'source':'issue','destination':'lon'},function(value){
 							return value['lon'];
-							} 
+							}
 						);
 
 		$("#loading").hide();
@@ -114,19 +114,19 @@ $(function() {
 
 
 		// create new columns 'date' and 'hour' from one timestamp column
-		// we need them to create pivot tables 
+		// we need them to create pivot tables
 		// ---------------------------------------------------------------
 		mydata.addColumn({'source':'created_at','destination':'date'},
 								   function(value){
 										var d = new Date(__normalizeTime(value));
 										return( String(d.getDate()) + "." + String(d.getMonth()+1) + "." + String(d.getFullYear()) );
-										} 
+										}
 									);
 		mydata.addColumn({'source':'created_at','destination':'hour'},
 								   function(value){
 										var d = new Date(__normalizeTime(value));
 										return( d.getHours() );
-										} 
+										}
 									);
 
 		// ..........................................................
@@ -150,7 +150,7 @@ $(function() {
 
 						var daysA = pivot.column("Total").values() || pivot.column("Total");
 						var dateA = pivot.column("created_at").values() || pivot.column("created_at");
-			
+
 						// get last 7 and 14 days timestamp
 						var d = new Date();
 						d = new Date(d.getFullYear(),d.getMonth(),d.getDate());
@@ -179,7 +179,7 @@ $(function() {
 						// make reduced data tabel by selection
 						var sdata = mydata.select(dataPath.selection);
 						var records = sdata.table.records;
-						
+
 						if ( records ){
 
 							// make pivot from this
@@ -224,8 +224,8 @@ $(function() {
 		// ..........................................................
 
 		var pivot = mydata.pivot({ "lead":	'date',
-								   "keep":  ['created_at'],	
-								   "cols":	'state' 
+								   "keep":  ['created_at'],
+								   "cols":	'state'
 								});
 
 		// invert data table (make last record the first)
@@ -237,17 +237,17 @@ $(function() {
 		var set1  = pivot.column("Total").values() || pivot.column("Total");
 		var set2  = pivot.column("closed").values() || pivot.column("closed");
 		var label = pivot.column("date").values() || pivot.column("date");
-		
+
 		if (0){
 			var sum = 0;
 			for ( i=0; i<set1.length; i++ ){
 				set1[i] += sum;
-				sum = set1[i];			
+				sum = set1[i];
 			}
 			sum = 0;
 			for ( i=0; i<set2.length; i++ ){
 				set2[i] += sum;
-				sum = set2[i];			
+				sum = set2[i];
 			}
 		}
 
@@ -322,4 +322,3 @@ $(function() {
 
 	});
 });
-
