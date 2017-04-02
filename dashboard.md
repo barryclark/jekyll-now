@@ -35,8 +35,8 @@ ext-js:
 
 <!-- sum and trend cards
 -->
-<h1>Segnalazioni
-<span style="font-size:0.5em;margin-bottom:0.5em;margin-left:0.2em">totale e ultimi 7 giorni</span></h1>
+<h1>Segnalazioni ricevute
+<span style="font-size:0.5em;margin-bottom:0.5em;margin-left:0.2em">in totale e negli ultimi 7 giorni</span></h1>
 
 <div class="row">
 
@@ -44,7 +44,7 @@ ext-js:
 <a href="">
 <div class="card yellow summary-inline">
 <div class="card-body">
-<i class="icon fa fa-flag fa-4x"></i> <span style="font-size:1.2em">Tutti </span>
+<i class="icon fa fa-flag fa-4x"></i> <span style="font-size:1.2em">Tutte </span>
 <div class="content">
 <div class="title data-dynamic" data-path="data::segnalazioni::records">--</div>
 <div class="sub-title data-dynamic">ultimi&nbsp;7&nbsp;giorni</div>
@@ -59,7 +59,7 @@ ext-js:
 <a href="">
 <div class="card blue summary-inline">
 <div class="card-body">
-<i class="icon fa fa-map-marker fa-4x"></i> <span style="font-size:1.2em">Georeferenziati</span>
+<i class="icon fa fa-map-marker fa-4x"></i> <span style="font-size:1.2em">Georeferenziate</span>
 <div class="content">
 <div class="title data-dynamic" data-path="data::segnalazioni::records[WHERE lat BETWEEN 1 AND 100]">--</div>
 <div class="sub-title data-dynamic">ultimi&nbsp;7&nbsp;giorni</div>
@@ -74,7 +74,7 @@ ext-js:
 <a href="">
 <div class="card green summary-inline">
 <div class="card-body">
-<i class="icon fa fa-check fa-4x"></i> <span style="font-size:1.2em">Closed </span>
+<i class="icon fa fa-check fa-4x"></i> <span style="font-size:1.2em">Chiuse </span>
 <div class="content">
 <div class="title data-dynamic" data-path="data::segnalazioni::records[WHERE state is closed]">--</div>
 <div class="sub-title data-dynamic">ultimi&nbsp;7&nbsp;giorni</div>
@@ -156,7 +156,7 @@ ext-js:
 <a href="">
 <div class="card summary-inline">
 <div class="card-body">
-<i class="icon fa fa-file-text-o fa-4x"></i> <span style="font-size:1.2em">Form </span>
+<i class="icon fa fa-file-text-o fa-4x"></i> <span style="font-size:1.2em">da Web </span>
 <div class="content">
 <div class="title data-dynamic" data-path="data::segnalazioni::records[WHERE labels like Form]">--</div>
 <div class="sub-title data-dynamic">ultimi&nbsp;7&nbsp;giorni</div>
@@ -171,7 +171,7 @@ ext-js:
 <a href="">
 <div class="card summary-inline">
 <div class="card-body">
-<i class="icon fa fa-facebook fa-4x"></i> <span style="font-size:1.2em">Facebook </span>
+<i class="icon fa fa-facebook fa-4x"></i> <span style="font-size:1.2em">da Facebook </span>
 <div class="content">
 <div class="title data-dynamic" data-path="data::segnalazioni::records[WHERE labels like Facebook]">--</div>
 <div class="sub-title data-dynamic">ultimi&nbsp;7&nbsp;giorni</div>
@@ -186,7 +186,7 @@ ext-js:
 <a href="">
 <div class="card summary-inline">
 <div class="card-body">
-<i class="icon fa fa-twitter fa-4x"></i> <span style="font-size:1.2em">Twitter </span>
+<i class="icon fa fa-twitter fa-4x"></i> <span style="font-size:1.2em">da Twitter </span>
 <div class="content">
 <div class="title data-dynamic" data-path="data::segnalazioni::records[WHERE labels like Twitter]">--</div>
 <div class="sub-title data-dynamic">ultimi&nbsp;7&nbsp;giorni</div>
@@ -201,7 +201,7 @@ ext-js:
 <a href="">
 <div class="card summary-inline">
 <div class="card-body">
-<i class="icon fa fa-paper-plane-o fa-4x"></i> <span style="font-size:1.2em">Telegram </span>
+<i class="icon fa fa-paper-plane-o fa-4x"></i> <span style="font-size:1.2em">da Telegram </span>
 <div class="content">
 <div class="title data-dynamic" data-path="data::segnalazioni::records[WHERE labels like Telegram]">--</div>
 <div class="sub-title data-dynamic">ultimi&nbsp;7&nbsp;giorni</div>
@@ -220,7 +220,7 @@ ext-js:
 -->
 
 <h1 id="curves"><br>
-<span style="font-size:0.5em;margin-bottom:0.5em;margin-left:0.2em">Sequenza temporale delle segnalazioni aggregate per giorno</span></h1>
+<span style="font-size:0.5em;margin-bottom:0.5em;margin-left:0.2em">Sequenza delle segnalazioni aggregate per giorno</span></h1>
 
 
 <div class="row">
@@ -261,7 +261,7 @@ ext-js:
 <div class="card card-success">
 <div class="card-header">
 <div class="card-title">
-<div class="title"><i class="fa fa-comments-o"></i> Ultimi segnalazioni</div>
+<div class="title"><i class="fa fa-comments-o"></i> Ultime segnalazioni</div>
 </div>
 <div class="clear-both"></div>
 </div>
@@ -269,7 +269,7 @@ ext-js:
 <ul class="message-list" >
 <a href="" id="message-load-more">
 <li class="text-center load-more">
-<i class="fa fa-refresh"></i> load more..
+<i class="fa fa-refresh"></i> load more...
 </li>
 </a>
 </ul>
