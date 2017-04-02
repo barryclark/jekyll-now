@@ -4,7 +4,7 @@ title: Dashboard
 permalink: /dashboard/
 js:
         - //js/dashboard_index_json.js
-ext-js: 
+ext-js:
         - //cdn.rawgit.com/mholt/PapaParse/master/papaparse.min.js
         - //cdn.rawgit.com/gjrichter/data.js/master/data.js
         - //cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.bundle.min.js
@@ -31,11 +31,11 @@ ext-js:
 <div class="container-fluid flat-blue">
 <div class="side-body padding-top">
 
-<div id="loading"><br>caricamento dati ...</div>	
+<div id="loading"><br>caricamento dati ...</div>
 
 <!-- sum and trend cards
--->	
-<h1>Segnalazioni				
+-->
+<h1>Segnalazioni
 <span style="font-size:0.5em;margin-bottom:0.5em;margin-left:0.2em">totale e ultimi 7 giorni</span></h1>
 
 <div class="row">
@@ -217,7 +217,7 @@ ext-js:
 </div>
 
 <!-- day by day curves
--->	
+-->
 
 <h1 id="curves"><br>
 <span style="font-size:0.5em;margin-bottom:0.5em;margin-left:0.2em">Sequenza temporale delle segnalazioni aggregate per giorno</span></h1>
@@ -283,8 +283,5 @@ ext-js:
 
 </body>
 {% endraw %}
-
-</html>
-
 
 [credits](http://terremotocentroitalia.info/about/)
