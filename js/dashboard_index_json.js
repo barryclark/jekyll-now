@@ -55,7 +55,7 @@ $(function() {
 
 	// var mytest = Data.object("Segnalazioni",{"source":issues,"type":"json"}).import(function(mydata){
 
-	var szUrl = "http://terremotocentroitalia.info/_data/issuesjson.json";
+	var szUrl = "./_data/issuesjson.json";
 	var myfeed = Data.feed("Segnalazioni",{"source":szUrl,"type":"json"}).load(function(mydata){
 
 		// json -> 2 dimensional table 
