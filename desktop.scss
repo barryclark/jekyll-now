@@ -1,0 +1,18 @@
+---
+---
+
+.site-info {
+  left: auto;
+}
+
+
+
+/***********/
+/* Helpers */
+/***********/
+
+@media (min-width: 960px) {
+  .hide-on-desktop {
+    display: none;
+  }
+}

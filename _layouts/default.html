@@ -20,18 +20,17 @@ navigation:
     <![endif]-->
 
 
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/main.css" />
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/desktop.css" media="(min-width: 960px)"/>
 
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+    <script src="{{ site.baseurl }}/js/utils.js"></script>
+
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
-
-    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
   </head>
 
   <body>
-    <div class="wrapper-masthead">
-      <div class="container">
-        <header class="clearfix">
-          <nav>
+        <header>
+          <nav class="hide-on-mobile">
             <div class="navigation">
               {% assign url = page.url|remove:'index.html' %}
               {% for link in layout.navigation %}
@@ -45,27 +44,41 @@ navigation:
             </div>
 
             <div class="header-links">
+              <a href="https://codepen.io/fracturedloop" target="_blank"><img src="/images/codepen.svg" /></a>
               <a href="https://github.com/{{ site.footer-links.github }}" target="_blank"><img src="/images/github-white.svg" /></a>
             </div>
 
           </nav>
 
+          <nav class="hide-on-desktop mobile-nav">
+              <a href="{{ site.baseurl }}/" class="mobile-logo"></a>
+              <div id="mobile-nav-btn"></div>
+
+          </nav>
+
+          <div class="mobile-nav-container">
+            {% assign url = page.url|remove:'index.html' %}
+            {% for link in layout.navigation %}
+                <a href="{{link.url}}" {% if url == link.url %}class="active"{% endif %} title="{{link.title}}">{{link.text}}</a>
+            {% endfor %}
+
+            <div class="social-links">
+              <a href="https://codepen.io/fracturedloop" id="codepen-link" target="_blank">
+              <a href="https://github.com/{{ site.footer-links.github }}" id="github-link" target="_blank"></a>
+            </div>
+          </div>
+
         </header>
-      </div>
-    </div>
 
     <div id="main" role="main" class="container">
       {{ content }}
     </div>
 
-    <div class="wrapper-footer">
-      <div class="container">
-        <footer class="footer">
-          {% include svg-icons.html %}
-        </footer>
-      </div>
-    </div>
+    <!-- <footer class="footer">
+      {% include svg-icons.html %}
+    </footer> -->
 
     {% include analytics.html %}
+    <script src="{{ site.baseurl }}/js/main.js"></script>
   </body>
 </html>

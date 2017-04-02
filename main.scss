@@ -13,26 +13,19 @@
 /* BASE RULES */
 /**************/
 
-html {
-  font-size: 100%;
-  height: 100%;
-}
-
 body {
 	background: $darkerGray;
   font: 18px/1.4 $helvetica;
   color: $white;
   margin-top: 75px;
   display: flex;
-  flex-direction: column;
 }
 
 .container {
-  margin: 0 auto;
+  margin: 15px auto;
   max-width: 960px;
   padding: 0 10px;
   width: 100%;
-  flex: 1;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -74,9 +67,11 @@ p {
 }
 
 a {
-  color: #ff9100;
+  color: $lightAccentOrange;
   text-decoration: none;
 	cursor: pointer;
+  transition-duration: 0.2s;
+
   &:hover, &:active {
     color: $lightGray;
   }
@@ -133,18 +128,6 @@ img {
   background: $accentOrange;
 }
 
-// Nicolas Gallagher's micro clearfix hack
-// http://nicolasgallagher.com/micro-clearfix-hack/
-.clearfix:before,
-.clearfix:after {
-    content: " ";
-    display: table;
-}
-
-.clearfix:after {
-    clear: both;
-}
-
 .divider {
   height: 1px;
   background-color: $lightGray;
@@ -153,22 +136,6 @@ img {
 /*********************/
 /* LAYOUT / SECTIONS */
 /*********************/
-
-//
-// .masthead
-//
-
-.wrapper-masthead {
-  margin-bottom: 50px;
-}
-
-.masthead {
-  border-bottom: 1px solid $lightGray;
-
-  @include mobile {
-    text-align: center;
-  }
-}
 
 .site-avatar {
   float: right;
@@ -189,7 +156,8 @@ img {
 }
 
 .site-info {
-  margin-top: -15px;
+  position: absolute;
+  left: 0;
   text-align: center;
 
   @include mobile {
@@ -215,7 +183,7 @@ img {
   font-size: 12px;
 
   @include mobile {
-    margin: 3px 0;
+    margin: -3px 0 0 -50px;
   }
 }
 
@@ -233,9 +201,6 @@ nav {
   background-color: $darkGray;
 
   @include mobile {
-    float: none;
-    margin-top: 9px;
-    display: block;
     font-size: 16px;
   }
 
@@ -245,11 +210,7 @@ nav {
     font-weight: 500;
     letter-spacing: 1px;
     transition-duration: 0.2s;
-
-    @include mobile {
-      margin: 0 10px;
-      color: $blue;
-    }
+    height: 100%;
   }
 
   .navigation {
@@ -280,6 +241,7 @@ nav {
     position: absolute;
     right: 0;
     height: 75px;
+    display: flex;
 
     a {
       width: 75px;
@@ -296,15 +258,102 @@ nav {
   }
 }
 
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  transition-duration: 0.3s;
+
+  .mobile-logo {
+    position: absolute;
+    left: 0;
+    width: 75px;
+    height: 75px;
+    padding: 15px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-image: url(../images/jnlogo-white2.png);
+  }
+
+  #mobile-nav-btn {
+    position: absolute;
+    right: 0;
+    width: 75px;
+    height: 75px;
+    padding: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-image: url(../images/mobile-nav.svg);
+  }
+}
+
+.mobile-nav-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #424242;
+  transform: translatey(-100%);
+  transition-duration: 0.3s;
+  padding: 0 0 75px 0;
+
+  a {
+    display: flex;
+    background-color: #212121;
+    margin: 5px 0;
+    height: 75px;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 150%;
+    font-weight: 300;
+  }
+}
+
+.social-links {
+  position: absolute;
+  right: 0;
+  bottom: 75px;
+  left: 50%;
+  background-color: #212121;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  a {
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50px;
+    display: inline-block;
+    margin: 15px;
+    height: 50px;
+  }
+
+  #github-link {
+    background-image: url(/images/github-white.svg);
+  }
+
+  #codepen-link {
+    background-image: url(/images/codepen.svg);
+  }
+}
+
 //
 // .main
 //
 
 .posts > .post {
   padding-bottom: 2em;
-  border: 4px solid $lightGray;
-  background-color: $gray;
+  border: 4px solid $gray;
+  background-color: $darkGray;
   padding: 15px;
+  margin: 10px 0;
 }
 
 .posts >.post > h1 {
@@ -340,21 +389,39 @@ nav {
     color: $white;
     background-color: $accentOrange;
     padding: 10px;
-  }
-}
+    transition-timing-function: ease-out;
 
-.wrapper-footer {
-  margin-top: 50px;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  background-color: $lightGray;
-  display: none;
+    &:hover {
+      border-radius: 10px;
+    }
+
+    &:active {
+      background-color: $lightAccentOrange;
+    }
+  }
 }
 
 footer {
   padding: 20px 0;
   text-align: center;
 }
+
+/*********************/
+/*      Helpers      */
+/*********************/
+
+.no-scroll {
+  overflow: hidden;
+}
+
+
+@media (max-width: 640px) {
+  .hide-on-mobile {
+    display: none;
+  }
+}
+
+
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
