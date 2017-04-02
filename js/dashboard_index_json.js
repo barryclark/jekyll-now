@@ -277,7 +277,7 @@ $(function() {
 		labels: label,
 		datasets: [
 		  {
-			label: "Total",
+			label: "segnalazioni totali",
 			backgroundColor: "rgba(188, 188, 188,0.2)",
 			borderColor: "#9C9C9C",
 			pointDot: false,
@@ -287,7 +287,7 @@ $(function() {
 			pointHighlightStroke: "#9C9C9C",
 			data: set1
 		  }, {
-			label: "closed",
+			label: "segnalazioni chiuse",
 			backgroundColor: "rgba(26, 188, 156,0.2)",
 			borderColor: "#1ABC9C",
 			pointDot: false,
