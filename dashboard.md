@@ -61,7 +61,7 @@ ext-js:
 <div class="card-body">
 <i class="icon fa fa-map-marker fa-4x"></i> <span style="font-size:1.2em">Georeferenziati</span>
 <div class="content">
-<div class="title data-dynamic" data-path="data::segnalazioni::records[WHERE lat = *]">--</div>
+<div class="title data-dynamic" data-path="data::segnalazioni::records[WHERE lat BETWEEN 1 AND 100]">--</div>
 <div class="sub-title data-dynamic">ultimi&nbsp;7&nbsp;giorni</div>
 </div>
 <div class="clear-both"></div>
@@ -76,7 +76,7 @@ ext-js:
 <div class="card-body">
 <i class="icon fa fa-check fa-4x"></i> <span style="font-size:1.2em">Closed </span>
 <div class="content">
-<div class="title data-dynamic" data-path="data::segnalazioni::records[WHERE state = closed]">--</div>
+<div class="title data-dynamic" data-path="data::segnalazioni::records[WHERE state is closed]">--</div>
 <div class="sub-title data-dynamic">ultimi&nbsp;7&nbsp;giorni</div>
 </div>
 <div class="clear-both"></div>
@@ -224,7 +224,7 @@ ext-js:
 
 
 <div class="row">
-<div class="col-md-9 col-sm-12">
+<div class="col-lg-9 col-md-12 col-sm-12">
 <div class="card">
 <div class="card">
 <canvas id="jumbotron-bar-chart" class="chart"></canvas>
@@ -257,7 +257,7 @@ ext-js:
 </div>
 </div>
 -->
-<div class="col-md-6 col-xs-12">
+<div class="col-lg-6 col-md-12 col-xs-12">
 <div class="card card-success">
 <div class="card-header">
 <div class="card-title">
