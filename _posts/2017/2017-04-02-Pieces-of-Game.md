@@ -15,7 +15,7 @@ If you are looking for replacement game components or for those of you out there
 
 ![Pieces of Game 1](/images/piecesofgame/piecesofgame1.jpg)
 
-Shown here are a few examples of his work. The first is a [3D-printed castle](https://www.etsy.com/listing/234413488/3d-printed-castle-6-towers-6-walls-and-2?ref=shop_home_active_3) for use with [Castle Panic(http://firesidegames.com/games/castle-panic/)]. For $13.50, you get six towers, six walls, and two fortifications in the color of your choice. The towers have stairs, an archer's window, and are curved in the front (making the tower round instead of a hexagon). The walls have small turrets on the ends for added flare.
+Shown here are a few examples of his work. The first is a [3D-printed castle](https://www.etsy.com/listing/234413488/3d-printed-castle-6-towers-6-walls-and-2?ref=shop_home_active_3) for use with [Castle Panic](http://firesidegames.com/games/castle-panic/)]. For $13.50, you get six towers, six walls, and two fortifications in the color of your choice. The towers have stairs, an archer's window, and are curved in the front (making the tower round instead of a hexagon). The walls have small turrets on the ends for added flare.
 
 Pieces of Game also prints a set of doors, terminals, and crates for Imperial Assault. Searching for ways to spice up my Imperial Assault board is actually how I stumbled upon their shop initially. The set sells for $20 and contains eight crates, eight terminals and eight doors (four open and four closed). It is one of the cheaper 3D token sets on the market, which is a plus if you aren’t looking to splurge.
 
