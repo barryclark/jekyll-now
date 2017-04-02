@@ -12782,6 +12782,16 @@ link: ''
 immagine: ''
 data: 31/10/2016
 </yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/981,186246471,2016-10-31 15:16:32,2016-10-31 10:08:47,Offro camera matrimoniale a Briosco (MB),45.7230251,9.2520767,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Ottobre""]",,,"{""data"": ""31/10/2016"", ""descrizione"": ""Vivo solo in una casa indipendente con tre camere da letto. Metto a disposizione una camera matrimoniale per il periodo invernale a persone autonome, perch\u00e8 ci sono le scale."", ""email"": ""an.ma.colombo@alice.it"", ""immagine"": """", ""indirizzo"": ""Via Galileo Galilei, Briosco, Monza e della Brianza, Lombardia, 20836, Italia"", ""lat"": ""45.7230251"", ""link"": """", ""lon"": ""9.2520767"", ""tel"": ""3475469312""}","<pre><yamldata>tel: '3475469312'
+email: an.ma.colombo@alice.it
+descrizione: 'Vivo solo in una casa indipendente con tre camere da letto. Metto a disposizione una camera matrimoniale per il periodo invernale a persone autonome, perchè ci sono le scale.'
+indirizzo: 'Via Galileo Galilei, Briosco, Monza e della Brianza, Lombardia, 20836, Italia'
+lat: '45.7230251'
+lon: '9.2520767'
+link: ''
+immagine: ''
+data: 31/10/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/980,186244861,2016-10-31 13:39:33,2016-10-31 10:00:35,[Foto] Sospensione attività tribunale di #Rieti,42.39999,12.858058,"[""Accettato"", ""Notizie Utili"", ""Sisma Ottobre"", ""Telegram""]",,http://i.imgur.com/iNAo5f3.jpg,"{""data"": ""31/10/2016"", ""descrizione"": ""Sospensione attivit\u00e0 tribunale di Rieti"", ""immagine"": ""http://i.imgur.com/iNAo5f3.jpg"", ""lat"": ""42.39999"", ""lon"": ""12.858058"", ""telegram_user"": """"}","<pre><yamldata>telegram_user: ''
 descrizione: 'Sospensione attività tribunale di Rieti'
 immagine: 'http://i.imgur.com/iNAo5f3.jpg'
