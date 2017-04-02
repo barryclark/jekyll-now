@@ -48,7 +48,7 @@ Slime-San's has an interesting look with its high-contract pixel graphics. Combi
 
 You can tell everything in Slime-San has been carefully thought out and designed. Levels are clever, challenging, and pure addicting to play through. While the difficulty ramped up pretty quickly I found myself pushing harder, playing longer, and enjoying myself the entire time.
 
-Slime-San plays tight, looks amazing, sounds great, and is filled with a great sense of humor. The game has 100 levels, tons of secrets, and some mini-games that are pretty much entire games in their own right.
+Slime-San plays tight, looks amazing, sounds great, and is filled with a great sense of humor. The game has 100 levels, tons of secrets, unlockable characters, and some mini-games that are pretty much entire games in their own right.
 
 The game is currently on Steam, with PS4 and Xbox One versions coming out soon.
 
