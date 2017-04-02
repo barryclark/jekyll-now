@@ -1,4 +1,9 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2868,218768278,2017-04-02 14:40:40,2017-04-02 14:34:11,Finanziamenti agevolati per la Ricostruzione: elenco delle banche,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili"", ""Ricostruzione Privata""]",,,"{""data"": ""02/04/2017"", ""descrizione"": ""L\u2019Associazione bancaria italiana rende noto sul proprio sito internet l\u2019elenco delle banche aderenti alla Convenzione ABI-Cdp \u201cPlafond sisma centro Italia\u201d, che potranno erogare i finanziamenti agevolati per la ricostruzione dei territori colpiti dagli eventi sismici che da agosto hanno interessato Abruzzo, Lazio, Marche e Umbria in attuazione del decreto legge 189/2016."", ""link"": ""https://www.abi.it/Pagine/news/Banche_ricostruzione.aspx"", ""titolo"": ""Finanziamenti agevolati per la Ricostruzione: elenco delle banche""}","<pre><yamldata>titolo: 'Finanziamenti agevolati per la Ricostruzione: elenco delle banche'
+descrizione: 'L’Associazione bancaria italiana rende noto sul proprio sito internet l’elenco delle banche aderenti alla Convenzione ABI-Cdp “Plafond sisma centro Italia”, che potranno erogare i finanziamenti agevolati per la ricostruzione dei territori colpiti dagli eventi sismici che da agosto hanno interessato Abruzzo, Lazio, Marche e Umbria in attuazione del decreto legge 189/2016.'
+link: 'https://www.abi.it/Pagine/news/Banche_ricostruzione.aspx'
+data: 02/04/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2867,218696187,2017-04-02 14:36:05,2017-04-01 13:34:02,Azienda agricola di #Preci cerca materiale per recinzione,,,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""Cercasi materiale per recinzione"", ""data"": ""01/04/2017"", ""descrizione"": ""Salve, siamo una piccola azienda artigianale di Preci, per rilandare la propria azienda, ha pensato di allevare dei maiali allo stato brado, quindi ha bisognocchi di pali in ferro e rete elletrosaldata , chiunque volesse aiutare mi contatti grazie"", ""email"": ""Massimilianoalesi24@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3664719176""}","<pre><yamldata>tel: '3664719176'
 email: Massimilianoalesi24@gmail.com
 cosa: 'Cercasi materiale per recinzione'
@@ -7268,17 +7273,6 @@ link: 'https://www.facebook.com/A2O.AltraAnconaOra/posts/962126430555097'
 immagine: ''
 data: 19/01/2017
 </yamldata></pre>",closed
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1876,201873629,2017-01-26 22:05:39,2017-01-19 14:22:38,Servono puntelli da cantiere a #Montefiore (AP),43.0518954,13.7527903,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Facebook"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""Puntelli da cantiere per #Montefiore (AP)"", ""data"": ""19/01/2017"", ""descrizione"": ""Sabato 21/1, insieme ai ragazzi della campagna \u00abIl bio che non trema\u00bb, una squadra di attivisti delle associazioni A2O-Altra Ancona Ora, ORA - Organizzazione ragazzi per Ancona e spazio Heval raggiunger\u00e0 con un fuoristrada l'azienda Marchese Marino di Montefiore per aiutare gli allevatori a liberare la zona dalla neve e provare a mettere in sicurezza quello che non \u00e8 crollato. Ci occorrono PUNTELLI DA CANTIERE da portare sul posto. Chiunque pu\u00f2 donarceli non esiti a contattarci."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Strada Provinciale 10 Campofilone, Montefiore dell'Aso, AP, Marche, 63010, Italia"", ""lat"": ""43.0518954"", ""link"": ""https://www.facebook.com/A2O.AltraAnconaOra/posts/962126430555097"", ""lon"": ""13.7527903"", ""tel"": """"}","<pre><yamldata>tel: ''
-email: ''
-cosa: 'Puntelli da cantiere per #Montefiore (AP)'
-descrizione: 'Sabato 21/1, insieme ai ragazzi della campagna «Il bio che non trema», una squadra di attivisti delle associazioni A2O-Altra Ancona Ora, ORA - Organizzazione ragazzi per Ancona e spazio Heval raggiungerà con un fuoristrada l''azienda Marchese Marino di Montefiore per aiutare gli allevatori a liberare la zona dalla neve e provare a mettere in sicurezza quello che non è crollato. Ci occorrono PUNTELLI DA CANTIERE da portare sul posto. Chiunque può donarceli non esiti a contattarci.'
-indirizzo: 'Strada Provinciale 10 Campofilone, Montefiore dell''Aso, AP, Marche, 63010, Italia'
-lat: '43.0518954'
-lon: '13.7527903'
-link: 'https://www.facebook.com/A2O.AltraAnconaOra/posts/962126430555097'
-immagine: ''
-data: 19/01/2017
-</yamldata></pre>",closed
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1869,201872875,2017-01-19 14:29:29,2017-01-19 14:19:49,Offro 3 posti letti con bagno in provincia di Torino,,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""19/01/2017"", ""descrizione"": ""Offro 3 posti letti con bagno privato a Cavagli\u00e0 (Biella) e un intero alloggio da 5 posti letto a Fenestrelle (Torino)"", ""email"": ""rossonemo@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3281656338""}","<pre><yamldata>tel: '3281656338'
 email: rossonemo@gmail.com
 descrizione: 'Offro 3 posti letti con bagno privato a Cavaglià (Biella) e un intero alloggio da 5 posti letto a Fenestrelle (Torino)'
@@ -11490,6 +11484,17 @@ descrizione: 'Si cerca a tolentino un telone per coprire un tetto di circa 60mq'
 indirizzo: ''
 lat: ''
 lon: ''
+link: ''
+immagine: ''
+data: 08/11/2016
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1176,188100971,2016-11-22 10:28:45,2016-11-08 20:55:47,Cercasi urgentemente lavatrice a #Varoni (#Amatrice),42.5980591,13.2305149,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Pubblicare su FB""]",,,"{""cosa"": ""Lavatrice a #Scai"", ""data"": ""08/11/2016"", ""descrizione"": ""Serve urgentemente una lavatrice a Varoni (Amatrice). Contattare Carlo o Rosaria."", ""email"": """", ""immagine"": """", ""indirizzo"": ""SP19, Amatrice, RI, Lazio, Italia"", ""lat"": ""42.5980591"", ""link"": """", ""lon"": ""13.2305149"", ""tel"": ""3338275919 - 3348847807""}","<pre><yamldata>tel: '3338275919 - 3348847807'
+email: ''
+cosa: 'Lavatrice a #Scai'
+descrizione: 'Serve urgentemente una lavatrice a Varoni (Amatrice). Contattare Carlo o Rosaria.'
+indirizzo: 'SP19, Amatrice, RI, Lazio, Italia'
+lat: '42.5980591'
+lon: '13.2305149'
 link: ''
 immagine: ''
 data: 08/11/2016
