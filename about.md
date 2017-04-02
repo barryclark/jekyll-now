@@ -37,7 +37,7 @@ Un grazie sentito a :
 - Lo staff di [ActionAid Italia](https://www.actionaid.it/) per il supporto, la gestione delle informazioni web, la produzione di contenuti e il dominio.
 - [Emergenza24](http://www.emergenza24.org) per il supporto sul web
 - [Openstreetmap Italia](https://openstreetmap.it/) per il lavoro di mappatura nelle zone del terremoto
-- [Andrea Borruso](https://twitter.com/aborruso); [Nino Galante](https://twitter.com/picomiles); [Maurizio de Magnis](https://twitter.com/olistik); [Sabas](https://twitter.com/__sabas);[Alberto Cottica](https://twitter.com/alberto_cottica); [Piersoft](https://twitter.com/piersoft?lang=it) [Andrea Nelson Mauro](https://twitter.com/nelsonmau) per il loro contributo da civic hackers
+- [Andrea Borruso](https://twitter.com/aborruso); [Nino Galante](https://twitter.com/picomiles); [Maurizio de Magnis](https://twitter.com/olistik); [Sabas](https://twitter.com/__sabas);[Alberto Cottica](https://twitter.com/alberto_cottica); [Piersoft](https://twitter.com/piersoft?lang=it) [Andrea Nelson Mauro](https://twitter.com/nelsonmau), [Guenter Richter](https://twitter.com/grichter) per il loro contributo da civic hackers
 - [Francesco Pinzauti](https://twitter.com/pinzauti7);[Timothy Redaelli](https://twitter.com/drizztbsd);[Vincenzo Tilotta](https://twitter.com/SprayLinux) per il loro contributo nello sviluppo software
 -  L'associazione [OnData](http://ondata.it/)
 - [Rosy Battaglia](https://twitter.com/rosybattaglia), [Donata Columbro](https://twitter.com/dontyna), [Marieva Favoino](https://twitter.com/marievafavoino), [Cristina Galasso](https://twitter.com/cristigalas), [Fabio Manfrin](https://twitter.com/FManfri), [Gloria Schiavi](https://twitter.com/gloria_schiavi) per la gestione della comunicazione
@@ -52,7 +52,7 @@ Un grazie sentito a :
 .....
 (i ringraziamenti sono in progress ogni giorno....Non avertene a male se non compari ancora, grazie lo stesso!)
 
-### Credit per la Mappa
+### Altri crediti
 
 - [Maptune](https://github.com/gjrichter/maptune)
 - [Mapstraction](http://mapstraction.com)
@@ -60,6 +60,8 @@ Un grazie sentito a :
 - [Mapicons](http://mapicons.nicolasmollet.com)
 - [Bootstrap](http://getbootstrap.com/)
 - [Glyphicons](http://glyphicons.com)
+- [Jekyll](https://jekyllrb.com/)
+- [Github](http://www.github.com)
 
 ### Contatti
 - [Mail](mailto:terremotocentroita@gmail.com): per segnalare informazioni utili;
