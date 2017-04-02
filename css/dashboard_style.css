@@ -148,6 +148,7 @@ a:hover {
   overflow: hidden;
   position: relative; }
   .card .card-body {
+    white-space: nowrap;
     padding: 25px; }
     .card .card-body .sub-title {
       font-size: 1.2em;
