@@ -196,5 +196,3 @@ Now when you view the analysis of your workout, you should see your heart rate a
 
 ![Strava Screenshot]({{ site.baseurl }}/images/strava-screenshot-hr.png)
 
-:heart:
-
