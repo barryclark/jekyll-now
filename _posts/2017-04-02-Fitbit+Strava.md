@@ -16,19 +16,22 @@ So, the workflow looks something like this:
 <table markdown="0" style="border: 0px">
 	<tbody>
 		<tr>
-			<td align="right">Record ride in Strava app →</td>
-			<td align="right">Download GPX</td>
-			<td align="left">⤵</td>
+			<td align="right" valign="middle">Record ride in Strava app</td>
+			<td valign="middle">→</td>
+			<td align="right"valign="middle" >Download GPX</td>
+			<td align="left" valign="bottom">⤵</td>
 		</tr>
 		<tr>
-			<td colspan="2"></td>
-			<td>Match GPX and heart rate timestamps</td>
-			<td>→ Export new GPX file</td>
-			<td>→ Upload to Strava</td>
+			<td colspan="3"></td>
+			<td valign="middle">Match GPX and heart rate timestamps</td>
+			<td valign="middle">→</td>
+			<td valign="middle">Export new GPX file</td>
+			<td valign="middle">→</td>
+			<td valign="middle">Upload to Strava</td>
 		</tr>
 		<tr>
-			<td colspan="2"  align="right">Download heart rate data from Fitbit</td>
-			<td align="left">⤴</td>
+			<td colspan="3" align="right" valign="middle">>Download heart rate data from Fitbit</td>
+			<td align="left" valign="top">>⤴</td>
 		</tr>
 	</tbody>
 </table>
