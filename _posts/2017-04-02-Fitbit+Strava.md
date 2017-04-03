@@ -21,13 +21,13 @@ So, the workflow looks something like this:
 			<td align="left">⤵</td>
 		</tr>
 		<tr>
-			<td colspan=2></td>
+			<td colspan="2"></td>
 			<td>Match GPX and heart rate timestamps</td>
 			<td>→ Export new GPX file</td>
 			<td>→ Upload to Strava</td>
 		</tr>
 		<tr>
-			<td colspan=2  align="right">Download heart rate data from Fitbit</td>
+			<td colspan="2"  align="right">Download heart rate data from Fitbit</td>
 			<td align="left">⤴</td>
 		</tr>
 	</tbody>
