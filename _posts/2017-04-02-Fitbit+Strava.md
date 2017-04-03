@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Fitbit + Strava
+title: "Fitbit :heart: Strava"
 ---
 
 I've had a Fitbit Charge HR for 18 months.This model has the usual watch/pedometer features, but adds a heartrate monitor. Despite my first unit breaking within the first year (which Fitbit happily replaced, for free I might add) I've been rather pleased with it. With one exception; you can't do anything useful with the heartrate data.
