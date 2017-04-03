@@ -18,7 +18,7 @@ So, the workflow looks something like this:
 		<tr>
 			<td align="right" valign="middle">Record ride in Strava app</td>
 			<td valign="middle">→</td>
-			<td align="right"valign="middle" >Download GPX</td>
+			<td align="right" valign="middle">Download GPX</td>
 			<td align="left" valign="bottom">⤵</td>
 		</tr>
 		<tr>
@@ -31,7 +31,7 @@ So, the workflow looks something like this:
 		</tr>
 		<tr>
 			<td colspan="3" align="right" valign="middle">>Download heart rate data from Fitbit</td>
-			<td align="left" valign="top">>⤴</td>
+			<td align="left" valign="top">⤴</td>
 		</tr>
 	</tbody>
 </table>
