@@ -95,7 +95,7 @@ with open('hr.json', 'w') as file:
     file.write(json.dumps(hr))
 ```
 
-And there you have it! A file with today's heart rate stats and datapoints every ~5 seconds. (If you want another day or a specific time range [thats posible too](http://python-fitbit.readthedocs.io/en/latest/#fitbit.Fitbit.intraday_time_series).)
+And there you have it! A file with today's heart rate stats and datapoints every ~5 seconds. (If you want another day or a specific time range [that's posible too](http://python-fitbit.readthedocs.io/en/latest/#fitbit.Fitbit.intraday_time_series).)
 
 
 ## Matching GPX and Heart Rate Data
