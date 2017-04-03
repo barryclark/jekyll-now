@@ -199,11 +199,15 @@ Now when you view the analysis of your workout, you should see your heart rate a
 
 ## Conclusion
 
-To pull all that together, heres a complete script which takes in a GPX file, grabs heart rate data from Fitbit, and spits a GPX back out. Make sure to fill in your Client ID and Secret. I have this file sitting alongside `python-fitbit-master` which I've renamed `python_fitbit` as python modules can't have hyphens in their names.
+To pull all that together, heres a complete script which takes in a GPX file, grabs heart rate data from Fitbit, and spits a GPX back out. Make sure to fill in your Client ID and Secret. I have this file sitting alongside `python-fitbit-master` which I've renamed `python_fitbit` as python modules can't have hyphens in their names. Call it with your input and output GPX files  as arguments (it will erase the existing output file without warning).
 
 ```python
-ride_file = 'Afternoon_Ride.gpx'
-output_file = 'Afternoon_Ride_HR.gpx'
+# Takes arguments for ride_file and output_file from the command line
+
+import sys
+
+ride_file = sys.argv[1]
+output_file = sys.argv[2]
 
 # Module for Fitbit API (from https://github.com/orcasgit/python-fitbit)
 import python_fitbit.gather_keys_oauth2 as oauth
