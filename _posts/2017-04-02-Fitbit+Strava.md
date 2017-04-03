@@ -69,11 +69,11 @@ The `trkpt` elements contain the timestamped GPS coordinates and elevation. Stra
 
 ## Downloading heart rate data from Fitbit
 
-Getting basic data from the Fitbit API is easy - no authentication required. But for heart rate time series authentication is required. This means we need to register an app with [dev.fitbit.com](https://dev.fitbit.com/apps/new).
+Getting basic data from the Fitbit API is easy - no authentication required. But for heart rate time series authentication *is* required. This means we need to register an app with [dev.fitbit.com](https://dev.fitbit.com/apps/new).
 
 Registering an app is fairly straight-forward. The important parts are to set the 'OAuth 2.0 Application Type' to 'Personal', and the 'Callback URL' to 'http://127.0.0.1:8080'. You'll then be given your 'Client ID' and 'Client Secret' you'll need these to access your data.
 
-To download the data, I used (python-fitbit)[https://github.com/orcasgit/python-fitbit]. Download the zip and install the requirements as described on the project page. The [docs](http://python-fitbit.readthedocs.io/en/latest/) suggest that the easiest way to authenticate is using the bundled `./gather_keys_oauth2.py`. Call it like this:
+To download the data, I used (python-fitbit)[https://github.com/orcasgit/python-fitbit]. Download the zip and install the requirements as described on the project page. The [docs](http://python-fitbit.readthedocs.io/en/latest/) suggest that the easiest way to authenticate is using the bundled `./gather_keys_oauth2.py`. `cd` to your `python-fitbit-master` directory and call it like this:
 ```
 python ./gather_keys_oauth2.py <Client ID> <Client Secret>
 ```
@@ -85,7 +85,7 @@ access_token = ***
 expires_at = ***
 ```
 
-Now we have everything we need to download the data! `cd` to your `python-fitbit-master` directory and fire up `python`.
+Now we have everything we need to download the data! Run `python` from your terminal and try this:
 ```python
 import fitbit, json
 client = fitbit.Fitbit(client_id, client_secret, access_token, refresh_token, expires_at)
