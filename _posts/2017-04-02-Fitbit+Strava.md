@@ -30,7 +30,7 @@ So, the workflow looks something like this:
 			<td valign="middle">Upload to Strava</td>
 		</tr>
 		<tr>
-			<td colspan="3" align="right" valign="middle">>Download heart rate data from Fitbit</td>
+			<td colspan="3" align="right" valign="middle">Download heart rate data from Fitbit</td>
 			<td align="left" valign="top">⤴</td>
 		</tr>
 	</tbody>
