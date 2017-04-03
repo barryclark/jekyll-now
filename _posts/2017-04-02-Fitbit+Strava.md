@@ -197,3 +197,105 @@ Now when you view the analysis of your workout, you should see your heart rate a
 
 ![Strava Screenshot]({{ site.baseurl }}/images/strava-screenshot-hr.png)
 
+## Conclusion
+
+To pull all that together, heres a complete script which takes in a GPX file, grabs heart rate data from Fitbit, and spits a GPX back out. Make sure to fill in your Client ID and Secret. I have this file sitting alongside `python-fitbit-master` which I've renamed `python_fitbit` as python modules can't have hyphens in their names.
+
+```python
+ride_file = 'Afternoon_Ride.gpx'
+output_file = 'Afternoon_Ride_HR.gpx'
+
+# Module for Fitbit API (from https://github.com/orcasgit/python-fitbit)
+import python_fitbit.gather_keys_oauth2 as oauth
+import python_fitbit.fitbit as fitbit
+
+# Module for XML parsing
+import xmltodict as xml
+
+# Modules to help with handling dates, times and timezones
+import iso8601, datetime, tzlocal
+
+# Secret stuff! 
+client_id = *****
+client_secret = *****
+
+# Get the keys
+server = oauth.OAuth2Server(client_id, client_secret)
+server.browser_authorize()
+profile = server.fitbit.user_profile_get()
+
+print('You are authorized to access data for the user: {}'.format(
+      profile['user']['fullName']))
+
+# Store the keys
+refresh_token = server.fitbit.client.session.token['refresh_token']
+access_token = server.fitbit.client.session.token['access_token']
+expires_at = server.fitbit.client.session.token['expires_at']
+
+print 'refresh_token: ' + refresh_token
+print 'access_token:  ' + access_token
+print 'expires_at:    ' + str(expires_at)
+
+tz = tzlocal.get_localzone()
+
+# Load GPX data
+ride = xml.parse(open(ride_file))
+rd_data = ride['gpx']['trk']['trkseg']['trkpt']
+
+rd_start = iso8601.parse_date(rd_data[0]['time']).astimezone(tz)
+rd_end = iso8601.parse_date(rd_data[-1]['time']).astimezone(tz)
+
+# Download the heart rate data over the correct range
+client = fitbit.Fitbit(client_id, client_secret, access_token, refresh_token, expires_at)
+hr = client.intraday_time_series('activities/heart', detail_level='1sec', 
+									base_date=str(rd_start.date()), 
+									start_time=str(rd_start.time()), 
+									end_time=str(rd_end.time()))
+
+# Find the data points we'll need to iterate over
+hr_data = hr['activities-heart-intraday']['dataset']
+
+# Convert Fitbit times into datetime with correct timezone
+def hr_datetime(date, time, tz):
+	dt = str(date) + 'T' + str(time)
+	t = datetime.datetime.strptime(dt, '%Y-%m-%dT%H:%M:%S')
+	t = tz.localize(t)
+	print str(t)
+	return t
+
+# Initialise our variables
+hr_i = 0
+hr_last_value = hr_data[hr_i]['value']
+hr_last_time = hr_datetime(rd_start.date(), hr_data[hr_i]['time'], tz)
+
+# Iterate over each GPX trkpt
+for rd_i, point in enumerate(rd_data):
+	print str(point['@lat']) + ' ' + str(point['@lon'])
+	t = iso8601.parse_date(point['time'])
+	print 'coord ' + str(t)
+	
+	# Find the closest heart rate data point after the coordinate timestamp
+	while hr_last_time < t:
+		hr_i += 1
+		# The last coordinate is probably after the last heart rate point
+		if hr_i >= len(hr_data):
+			print 'Exceeded the length of hr_data'
+			hr_last_time = t
+			break
+			
+		hr_last_value = hr_data[hr_i]['value']
+		hr_last_time = hr_datetime(rd_start.date(), hr_data[hr_i]['time'], tz)
+	
+	print 'heart ' + str(hr_last_time)
+	print hr_last_value
+	
+	# Format the heart rate into the correct structure for GPX
+	ext = {'extensions': {'heartrate': hr_last_value}}
+	point.update(ext)
+	
+	print ''
+
+# Export the data to GPX
+with open(output_file, 'w') as output:
+	output.write(xml.unparse(ride, pretty=True))
+```
