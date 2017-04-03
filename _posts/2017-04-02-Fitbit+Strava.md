@@ -13,7 +13,7 @@ And so, the challenge is to get the heartrate data out of Fitbit. Fitbit's API a
 
 So, the workflow looks something like this:
 
-<table border=0 markdown=0>
+<table markdown="0" border="0">
 	<tbody>
 		<tr>
 			<td align="right">Record ride in Strava app →</td>
