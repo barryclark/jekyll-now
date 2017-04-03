@@ -73,7 +73,7 @@ a {
   transition-duration: 0.2s;
 
   &:hover, &:active {
-    color: $lightGray;
+    color: $lightAccentOrange;
   }
 }
 
@@ -227,7 +227,7 @@ nav {
 
 
       &:hover {
-        color: $lightGray;
+        color: $lightAccentOrange;
         background-color: $darkerGray;
       }
     }
