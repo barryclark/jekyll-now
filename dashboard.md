@@ -40,11 +40,11 @@ ext-js:
 
 <div class="row">
 
-<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
 <a href="">
 <div class="card yellow summary-inline">
 <div class="card-body">
-<i class="icon fa fa-flag fa-4x"></i> <span style="font-size:1.2em">Tutte </span>
+<span style="font-size:1.2em">Tutte </span><br><i class="icon fa fa-flag fa-4x"></i> 
 <div class="content">
 <div class="title data-dynamic" data-path="data::segnalazioni::records">--</div>
 <div class="sub-title data-dynamic">ultimi&nbsp;7&nbsp;giorni</div>
@@ -55,11 +55,11 @@ ext-js:
 </a>
 </div>
 
-<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
 <a href="">
 <div class="card blue summary-inline">
 <div class="card-body">
-<i class="icon fa fa-map-marker fa-4x"></i> <span style="font-size:1.2em">Georeferenziate</span>
+<span style="font-size:1.2em">Georeferenziate</span><br><i class="icon fa fa-map-marker fa-4x"></i> 
 <div class="content">
 <div class="title data-dynamic" data-path="data::segnalazioni::records[WHERE lat BETWEEN 1 AND 100]">--</div>
 <div class="sub-title data-dynamic">ultimi&nbsp;7&nbsp;giorni</div>
@@ -70,11 +70,11 @@ ext-js:
 </a>
 </div>
 
-<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
 <a href="">
 <div class="card green summary-inline">
 <div class="card-body">
-<i class="icon fa fa-check fa-4x"></i> <span style="font-size:1.2em">Chiuse </span>
+<span style="font-size:1.2em">Chiuse </span><br><i class="icon fa fa-check fa-4x"></i> 
 <div class="content">
 <div class="title data-dynamic" data-path="data::segnalazioni::records[WHERE state is closed]">--</div>
 <div class="sub-title data-dynamic">ultimi&nbsp;7&nbsp;giorni</div>
@@ -88,11 +88,11 @@ ext-js:
 
 <div class="row">
 
-<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
 <a href="">
 <div class="card dark summary-inline">
 <div class="card-body">
-<i class="icon fa fa-child fa-4x"></i> <span style="font-size:1.2em">Fabbisogni </span>
+<span style="font-size:1.2em">Fabbisogni </span><br><i class="icon fa fa-child fa-4x"></i> 
 <div class="content">
 <div class="title data-dynamic" data-path="data::segnalazioni::records[WHERE labels like Fabbisogni]">--</div>
 <div class="sub-title data-dynamic">ultimi&nbsp;7&nbsp;giorni</div>
@@ -103,11 +103,11 @@ ext-js:
 </a>
 </div>
 
-<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
 <a href="">
 <div class="card dark summary-inline">
 <div class="card-body">
-<i class="icon fa fa-home fa-4x"></i> <span style="font-size:1.2em">Alloggi </span>
+<span style="font-size:1.2em">Alloggi </span><br><i class="icon fa fa-home fa-4x"></i> 
 <div class="content">
 <div class="title data-dynamic" data-path="data::segnalazioni::records[WHERE labels like Alloggi]">--</div>
 <div class="sub-title data-dynamic">ultimi&nbsp;7&nbsp;giorni</div>
@@ -118,11 +118,11 @@ ext-js:
 </a>
 </div>
 
-<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
 <a href="">
 <div class="card dark summary-inline">
 <div class="card-body">
-<i class="icon fa fa-heart-o fa-4x"></i> <span style="font-size:1.2em">Donazioni </span>
+<span style="font-size:1.2em">Donazioni </span><br><i class="icon fa fa-heart-o fa-4x"></i> 
 <div class="content">
 <div class="title data-dynamic" data-path="data::segnalazioni::records[WHERE labels like Donazioni]">--</div>
 <div class="sub-title data-dynamic">ultimi&nbsp;7&nbsp;giorni</div>
@@ -133,11 +133,11 @@ ext-js:
 </a>
 </div>
 
-<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
 <a href="">
 <div class="card dark summary-inline">
 <div class="card-body">
-<i class="icon fa fa-user fa-4x"></i> <span style="font-size:1.2em">Contatti </span>
+<span style="font-size:1.2em">Contatti </span><br><i class="icon fa fa-user fa-4x"></i> 
 <div class="content">
 <div class="title data-dynamic" data-path="data::segnalazioni::records[WHERE labels like Contatti]">--</div>
 <div class="sub-title data-dynamic">ultimi&nbsp;7&nbsp;giorni</div>
@@ -152,11 +152,11 @@ ext-js:
 
 <div class="row">
 
-<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
 <a href="">
 <div class="card summary-inline">
 <div class="card-body">
-<i class="icon fa fa-file-text-o fa-4x"></i> <span style="font-size:1.2em">da Web </span>
+<span style="font-size:1.2em">da Web </span><br><i class="icon fa fa-file-text-o fa-4x"></i> 
 <div class="content">
 <div class="title data-dynamic" data-path="data::segnalazioni::records[WHERE labels like Form]">--</div>
 <div class="sub-title data-dynamic">ultimi&nbsp;7&nbsp;giorni</div>
@@ -167,11 +167,11 @@ ext-js:
 </a>
 </div>
 
-<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
 <a href="">
 <div class="card summary-inline">
 <div class="card-body">
-<i class="icon fa fa-facebook fa-4x"></i> <span style="font-size:1.2em">da Facebook </span>
+<span style="font-size:1.2em">da Facebook </span><br><i class="icon fa fa-facebook fa-4x"></i> 
 <div class="content">
 <div class="title data-dynamic" data-path="data::segnalazioni::records[WHERE labels like Facebook]">--</div>
 <div class="sub-title data-dynamic">ultimi&nbsp;7&nbsp;giorni</div>
@@ -182,11 +182,11 @@ ext-js:
 </a>
 </div>
 
-<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
 <a href="">
 <div class="card summary-inline">
 <div class="card-body">
-<i class="icon fa fa-twitter fa-4x"></i> <span style="font-size:1.2em">da Twitter </span>
+<span style="font-size:1.2em">da Twitter </span><br><i class="icon fa fa-twitter fa-4x"></i> 
 <div class="content">
 <div class="title data-dynamic" data-path="data::segnalazioni::records[WHERE labels like Twitter]">--</div>
 <div class="sub-title data-dynamic">ultimi&nbsp;7&nbsp;giorni</div>
@@ -197,11 +197,11 @@ ext-js:
 </a>
 </div>
 
-<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
 <a href="">
 <div class="card summary-inline">
 <div class="card-body">
-<i class="icon fa fa-paper-plane-o fa-4x"></i> <span style="font-size:1.2em">da Telegram </span>
+<span style="font-size:1.2em">da Telegram </span><br><i class="icon fa fa-paper-plane-o fa-4x"></i> 
 <div class="content">
 <div class="title data-dynamic" data-path="data::segnalazioni::records[WHERE labels like Telegram]">--</div>
 <div class="sub-title data-dynamic">ultimi&nbsp;7&nbsp;giorni</div>
