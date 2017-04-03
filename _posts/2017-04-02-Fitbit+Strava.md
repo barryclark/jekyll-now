@@ -133,12 +133,11 @@ tz = tzlocal.get_localzone()
 # Convert Fitbit times into datetime with correct timezone
 def hr_datetime(date, time, tz):
 	dt = date + 'T' + time
-	t = iso8601.parse_date(dt)
-	return tz.localize(datetime.datetime.combine(t.date(), t.time()))
-
+	t = datetime.datetime.strptime(dt, '%Y-%m-%dT%H:%M:%S')
+	t = tz.localize(t)
+	print str(t)
+	return t
 ```
-
-This will probably break if the timezone has changed between recording the heart rate, and processing it, but it should do for now.
 
 Now to match up the heart rate to the route:
 ```python
