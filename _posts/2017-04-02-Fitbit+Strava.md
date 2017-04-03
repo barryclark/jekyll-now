@@ -13,6 +13,8 @@ And so, the challenge is to get the heartrate data out of Fitbit. Fitbit's API a
 
 So, the workflow looks something like this:
 
+123
+
 <div markdown="0">
 <table border=0>
 	<tbody>
@@ -23,7 +25,7 @@ So, the workflow looks something like this:
 		</tr>
 		<tr>
 			<td colspan=2></td>
-			<td>Match gpx & heart rate timestamps</td>
+			<td>Match GPX and heart rate timestamps</td>
 			<td>→ Export new GPX file</td>
 			<td>→ Upload to Strava</td>
 		</tr>
