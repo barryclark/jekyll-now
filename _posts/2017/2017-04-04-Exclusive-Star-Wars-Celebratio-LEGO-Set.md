@@ -1,5 +1,5 @@
 ---
-title: "Star Wars Celebration 2017 Gets and Exclusive LEGO Set"
+title: "Star Wars Celebration 2017 Gets an Exclusive LEGO Set"
 date: 2017-04-04 11:30:00 Z
 category: toys
 tags:
