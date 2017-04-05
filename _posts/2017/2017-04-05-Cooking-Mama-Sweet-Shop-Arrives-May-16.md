@@ -9,7 +9,7 @@ tags:
 - office create
 layout: post
 description: "The Final Course of the Cooking Mama Series on Nintendo 3DS to be its Sweetest. Sweet Shop arrives May 16."
-featured: sweetshop.jpg
+featured: sweetshop.png
 author: robk
 ---
 
