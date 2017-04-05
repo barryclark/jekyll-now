@@ -1,3 +1,8 @@
+---
+layout: post
+title: markdown
+---
+
 ### 入门markdown————
 #### markdown是非常简单的标记语言，每一个博主都应该掌握的语言，写出体验更好的文章
 
