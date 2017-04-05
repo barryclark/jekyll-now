@@ -1,4 +1,20 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2876,219250186,2017-04-05 12:30:01,2017-04-04 13:27:32,Ricostruzione post sisma: ad #Acquasanta il sindaco incontra le ditte edili ed artigiane,42.769944,13.410185,"[""Accettato"", ""Bollettino"", ""Eventi"", ""Form"", ""Ricostruzione Pubblica""]",,,"{""data"": ""04/04/2017"", ""data_evento"": ""04/10/2017"", ""descrizione"": ""Invitiamo tutte le ditte edili ed artigiane locali a partecipare all'incontro programmato per luned\u00ec 10 Aprile c.a. alle ore 17:00, presso la tensostruttura di Parco Rio, alla presenza del Sindaco Sante Stangoni e dell'Assessore Alessandro Cortellesi per discutere le prospettive future legate alla ricostruzione post sisma. Vi chiediamo gentilmente di pubblicizzare l'incontro e avvisare tutti gli interessati."", ""indirizzo"": ""Strada Statale 4 Via Salaria, Acquasanta Terme, AP, Marche, 63095, Italia"", ""lat"": ""42.769944"", ""link"": ""https://www.facebook.com/paginaufficialedelcomunediacquasantaterme/posts/1338553412904760"", ""lon"": ""13.410185"", ""ora_evento"": ""17:00"", ""promotore"": ""Comune di Acquasanta Terme"", ""titolo_evento"": ""Incontro ditte edili ed artigiane locali  #Acquasanta""}","<pre><yamldata>titolo_evento: 'Incontro ditte edili ed artigiane locali  #Acquasanta'
+data_evento: 04/10/2017
+ora_evento: '17:00'
+promotore: 'Comune di Acquasanta Terme'
+descrizione: 'Invitiamo tutte le ditte edili ed artigiane locali a partecipare all''incontro programmato per lunedì 10 Aprile c.a. alle ore 17:00, presso la tensostruttura di Parco Rio, alla presenza del Sindaco Sante Stangoni e dell''Assessore Alessandro Cortellesi per discutere le prospettive future legate alla ricostruzione post sisma. Vi chiediamo gentilmente di pubblicizzare l''incontro e avvisare tutti gli interessati.'
+indirizzo: 'Strada Statale 4 Via Salaria, Acquasanta Terme, AP, Marche, 63095, Italia'
+lat: '42.769944'
+lon: '13.410185'
+link: 'https://www.facebook.com/paginaufficialedelcomunediacquasantaterme/posts/1338553412904760'
+data: 04/04/2017
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2875,219248234,2017-04-05 12:27:52,2017-04-04 13:20:58,Commissario straordinario alla Ricostruzione - Vademecum pagamenti,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili"", ""Ricostruzione Privata"", ""Ricostruzione Pubblica""]",,,{},"<pre><yamldata>titolo: 'Ricostruzione - Vademecum pagamenti'
+descrizione: 'Documento operativo pubblicato dal Commissario straordinario alla Ricostruzione sulle procedure di Istruttoria, Controlli e Pagamenti. In particolare la guida è dedicata agli aspetti essenziali dei procedimenti volti alla assegnazione dei contributo per la ricostruzione di abitazioni ed attività produttive per Professionisti, Comuni, Uffici Speciali Regionali ed Istituti di Credito.
+link: 'https://www.facebook.com/groups/359950687401038/1431200453609384/'
+data: 04/04/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2874,219247024,2017-04-05 12:23:56,2017-04-04 13:16:42,Home Care Premium 2017: proroga dei termini per i comuni terremotati,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""04/04/2017"", ""descrizione"": ""In vista della situazione di precariet\u00e0 logistica dei soggetti residenti nei comuni colpiti da eventi sismici, di cui al decreto-legge 17 ottobre 2016, n. 189 (pubblicato sulla Gazzetta Ufficiale 18 ottobre 2016, n. 244), per tali soggetti, di cui all'allegato 1, il termine di presentazione della domanda, di cui all'art. 7, comma 5 del bando Home Care Premium assistenza domiciliare 2017, \u00e8 differito alle ore 12 del 6 Aprile 2017."", ""link"": ""https://www.facebook.com/photo.php?fbid=10208958964159523&set=gm.1183619248427854&type=3&theater"", ""titolo"": ""Home Care Premium 2017: proroga dei termini per i comuni terremotati""}","<pre><yamldata>titolo: 'Home Care Premium 2017: proroga dei termini per i comuni terremotati'
 descrizione: 'In vista della situazione di precarietà logistica dei soggetti residenti nei comuni colpiti da eventi sismici, di cui al decreto-legge 17 ottobre 2016, n. 189 (pubblicato sulla Gazzetta Ufficiale 18 ottobre 2016, n. 244), per tali soggetti, di cui all''allegato 1, il termine di presentazione della domanda, di cui all''art. 7, comma 5 del bando Home Care Premium assistenza domiciliare 2017, è differito alle ore 12 del 6 Aprile 2017.'
 link: 'https://www.facebook.com/photo.php?fbid=10208958964159523&set=gm.1183619248427854&type=3&theater'
@@ -16745,6 +16761,12 @@ data: 15/09/2016
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/457,177187750,2016-10-01 18:26:37,2016-09-15 14:10:31,"Niente tasse universitarie in atenei laziali (Sapienza, Tor Vergata, Roma3, Tuscia Viterbo)",,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""15/09/2016"", ""descrizione"": ""Niente tasse universitarie in atenei laziali (Sapienza, Tor Vergata, Roma3, Tuscia Viterbo)"", ""link"": ""https://twitter.com/RegioneLazio/status/771287310537199616"", ""titolo"": ""Niente tasse universitarie in atenei laziali (Sapienza, Tor Vergata, Roma3, Tuscia Viterbo)""}","<pre><yamldata>titolo: 'Niente tasse universitarie in atenei laziali (Sapienza, Tor Vergata, Roma3, Tuscia Viterbo)'
 descrizione: 'Niente tasse universitarie in atenei laziali (Sapienza, Tor Vergata, Roma3, Tuscia Viterbo)'
 link: 'https://twitter.com/RegioneLazio/status/771287310537199616'
+data: 15/09/2016
+</yamldata></pre>
+",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/456,177187381,2016-10-01 16:36:35,2016-09-15 14:09:01,Esonero tasse universitarie da Università Telematica San Raffaele Roma,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""15/09/2016"", ""descrizione"": ""Esonero tasse universitarie da Universit\u00e0 Telematica San Raffaele Roma"", ""link"": ""http://www.unisanraffaele.gov.it/universita/terremoto-universita-telematica-san-raffaele-roma-esonera-dal-pagamento-delle-tasse-universitarie-gli-studenti-delle-zone-colpite.html"", ""titolo"": ""Esonero tasse universitarie da Universit\u00e0 Telematica San Raffaele Roma""}","<pre><yamldata>titolo: 'Esonero tasse universitarie da Università Telematica San Raffaele Roma'
+descrizione: 'Esonero tasse universitarie da Università Telematica San Raffaele Roma'
+link: 'http://www.unisanraffaele.gov.it/universita/terremoto-universita-telematica-san-raffaele-roma-esonera-dal-pagamento-delle-tasse-universitarie-gli-studenti-delle-zone-colpite.html'
 data: 15/09/2016
 </yamldata></pre>
 ",open
