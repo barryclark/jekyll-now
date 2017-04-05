@@ -9,7 +9,7 @@ tags:
 - planetarium
 layout: post
 description: "Planetarium is a beautiful new game from Game Salute. Let's check it out!"
-featured: moonquake.jpg
+featured: planetarium.jpg
 author: robk
 ---
 
