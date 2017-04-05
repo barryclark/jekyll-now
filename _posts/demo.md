@@ -1,0 +1,7 @@
+---
+layout: post
+title: demo
+comments: true
+# other options
+---
+#this is 评论demo
