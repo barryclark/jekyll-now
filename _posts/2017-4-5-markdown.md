@@ -2,7 +2,7 @@
 layout: post
 title: markdown
 comments: true
-# other 
+# other options
 ---
 
 ### 入门markdown————
