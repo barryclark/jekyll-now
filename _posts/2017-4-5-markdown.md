@@ -1,6 +1,7 @@
 ---
 layout: post
 title: markdown
+comments: ture
 ---
 
 ### 入门markdown————
