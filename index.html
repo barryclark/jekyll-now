@@ -19,7 +19,7 @@ comments: true
     {% endfor %}
   </ul>
     
-  <div class="posts">
+<div class="posts">
   {% for post in site.posts %}
     <article class="post">
 
@@ -32,11 +32,12 @@ comments: true
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
     </article>
   {% endfor %}
+  <h5>反馈</h5>
 </div>
   
     {% if page.comments %}
     <div id="disqus_thread"></div>
-    <h5>反馈</h5>
+    
 <script>
 
 /**
