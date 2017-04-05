@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 技术的舒适区
+comments: true
+# other options
 ---
 
 ## 走出技术的舒适区，拥抱底层，感受计算机的魅力
