@@ -12,4 +12,4 @@ A place to include any other types of information that you'd like to include abo
 
 ### Contact me
 
-[dongqiceo@outlook.com](mailto:email@domain.com)
+[dongqiceo@outlook.com](mailto:dongqiceo@outlook.com)
