@@ -6,7 +6,7 @@ tags:
 - toys
 - mezco
 - batman
-- mini me-zitz
+- mini mezitz
 layout: post
 description: "Mezco presents the 1989 Batmobile in Mez-Itz form. Perfectly scaled for the 2inch 1989 Batman as portrayed by Michael Keaton, it features a removable roof so Batman can fit comfortably inside."
 featured: mezcobatmobile.jpg
