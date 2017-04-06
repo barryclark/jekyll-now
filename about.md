@@ -4,11 +4,10 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+热爱编程，喜欢互联网开发，目前专注WEB开发，对计算机底层有一定研究，让我们一起打开计算机的黑匣子
 
 ### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
+正在目前学习阶段，会不断更新博客，记录成长点滴，欢迎关注
 
 ### Contact me
 
