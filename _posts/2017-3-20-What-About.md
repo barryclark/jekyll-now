@@ -8,5 +8,3 @@ So I guess here is where I put what the purpose of my blog is about... The prima
 An alternate function of this site/blog is to get my work out there. The theme and design will probably change quite a bit as I play around with things or find a better way of doing things. Think of this site as a sandbox... and I'm the toddler (Scary thought, I know).
 
 Basically, expect to find typos and posts about things that I find useful, interesting, cool, or otherwise notable. I'm not aiming for perfection, but an efficient means to communicate my thoughts.
-
-Thanks for reading and have a great day!

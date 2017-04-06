@@ -1,17 +1,14 @@
 
 .highlight {
-  background-color: #efefef;
+  background-color: #212121;
   padding: 7px 7px 7px 10px;
-  border: 1px solid #ddd;
-  -moz-box-shadow: 3px 3px rgba(0,0,0,0.1);
-  -webkit-box-shadow: 3px 3px rgba(0,0,0,0.1);
-  box-shadow: 3px 3px rgba(0,0,0,0.1);
+  border: 1px solid $darkGray;
   margin: 20px 0 20px 0;
   overflow: scroll;
 }
 
 code {
-  font-family:'Bitstream Vera Sans Mono','Courier', monospace;
+  font-family: 'Monaco', 'Bitstream Vera Sans Mono','Courier', monospace;
 }
 
 .highlight .c { color: #586E75 } /* Comment */

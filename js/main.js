@@ -16,11 +16,11 @@ navBtn.addEventListener('click', function() {
   }
 });
 
-
-window.onscroll = function() {
-  if (document.body.scrollTop > 25) {
-    navBar.style.transform = 'translateY(-100%)';
-  } else {
-    navBar.style.transform = 'translateY(0)';
-  }
-};
+//
+// window.onscroll = function() {
+//   if (document.body.scrollTop > 25) {
+//     navBar.style.top = '-100%';
+//   } else {
+//     navBar.style.top = '0';
+//   }
+// };

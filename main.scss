@@ -17,14 +17,12 @@ body {
 	background: $darkerGray;
   font: 18px/1.4 $helvetica;
   color: $white;
-  margin-top: 75px;
-  display: flex;
+  margin-top: 40px;
+  padding: 10px;
 }
 
 .container {
-  margin: 15px auto;
   max-width: 960px;
-  padding: 0 10px;
   width: 100%;
 }
 
@@ -195,7 +193,7 @@ nav {
   left: 0;
   font-family: $helveticaNeue;
   font-size: 18px;
-  height: 75px;
+  height: 50px;
   align-items: center;
   justify-content: center;
   background-color: $darkGray;
@@ -216,7 +214,6 @@ nav {
   .navigation {
     position: absolute;
     left: 0;
-    height: 75px;
 
     a {
       width: 120px;
@@ -269,9 +266,9 @@ nav {
   .mobile-logo {
     position: absolute;
     left: 0;
-    width: 75px;
-    height: 75px;
-    padding: 15px;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
     background-size: contain;
     background-repeat: no-repeat;
     background-origin: content-box;
@@ -281,9 +278,9 @@ nav {
   #mobile-nav-btn {
     position: absolute;
     right: 0;
-    width: 75px;
-    height: 75px;
-    padding: 20px;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
     background-size: contain;
     background-repeat: no-repeat;
     background-origin: content-box;
@@ -318,7 +315,7 @@ nav {
 .social-links {
   position: absolute;
   right: 0;
-  bottom: 75px;
+  bottom: 50px;
   left: 50%;
   background-color: #212121;
   height: 75px;
@@ -413,7 +410,6 @@ footer {
 .no-scroll {
   overflow: hidden;
 }
-
 
 @media (max-width: 640px) {
   .hide-on-mobile {
