@@ -1,4 +1,9 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2886,220150836,2017-04-07 16:07:34,2017-04-07 08:52:17,Bonus di 2mila euro per i commercianti di #Acquasanta,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""07/04/2017"", ""descrizione"": ""Duemila euro una tantum agli esercizi commerciali e agli artigiani di Acquasanta Terme che con il terremoto hanno visto azzerare o quasi i propri incassi e rischiano di chiudere per mancanza di clienti. Per accedere al contributo, commercianti e artigiani dovranno dimostrare di aver subito un calo di fatturato pari ad almeno il 40% nel periodo che va dal 24 agosto al 28 febbraio scorsi, paragonato allo stesso periodo degli anni precedenti."", ""link"": ""http://www.ansa.it/marche/notizie/2017/04/06/ad-acquasanta-bonus-per-commercianti_035f29a9-5ceb-4df7-8e31-0685f52d0206.html"", ""titolo"": ""Bonus per i Commercianti #Acquasanta""}","<pre><yamldata>titolo: 'Bonus per i Commercianti #Acquasanta'
+descrizione: 'Duemila euro una tantum agli esercizi commerciali e agli artigiani di Acquasanta Terme che con il terremoto hanno visto azzerare o quasi i propri incassi e rischiano di chiudere per mancanza di clienti. Per accedere al contributo, commercianti e artigiani dovranno dimostrare di aver subito un calo di fatturato pari ad almeno il 40% nel periodo che va dal 24 agosto al 28 febbraio scorsi, paragonato allo stesso periodo degli anni precedenti.'
+link: 'http://www.ansa.it/marche/notizie/2017/04/06/ad-acquasanta-bonus-per-commercianti_035f29a9-5ceb-4df7-8e31-0685f52d0206.html'
+data: 07/04/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2885,220149332,2017-04-07 08:53:53,2017-04-07 08:45:54,Ad #Amatrice sabato 8 aprile presentazione Guida pratica per i diritti dei cittadini colpiti dal terremoto,,,"[""Accettato"", ""Bollettino"", ""Eventi"", ""Form""]",,,"{""data"": ""07/04/2017"", ""data_evento"": ""08/04/2017"", ""descrizione"": ""L'intera giornata, promossa da Altergo-Legal service, si svolger\u00e0 presso lo spazio solidale di San Cipriano di Amatrice e sar\u00e0 all'insegna dell'informazione e della partecipazione. Programma: - Ore 11 presentazione del VADEMECUM \""OISSA\"" SUL TERREMOTO CENTRO-ITALIA; un manuale in cui si cerca di spiegare, in parole semplici, la disciplina riguardante le diverse fasi degli interventi. - Seguir\u00e0 Pranzo Solidale - Ore 16 si continua con la proiezione di \""NON TREMARE. Storia di un Campo Solidale\""."", ""indirizzo"": """", ""lat"": """", ""link"": ""https://www.facebook.com/events/610906975774171/"", ""lon"": """", ""ora_evento"": ""11:00"", ""promotore"": ""Altergo - Legal service"", ""titolo_evento"": ""Presentazione di una guida pratica per i diritti dei cittadini colpiti dal terremoto #Amatrice""}","<pre><yamldata>titolo_evento: 'Presentazione di una guida pratica per i diritti dei cittadini colpiti dal terremoto #Amatrice'
 data_evento: 08/04/2017
 ora_evento: '11:00'
@@ -10,7 +15,7 @@ lon: ''
 link: 'https://www.facebook.com/events/610906975774171/'
 data: 07/04/2017
 </yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2884,220141898,2017-04-07 15:07:38,2017-04-07 08:12:24,Cercasi sistemazione per 70 capre destinate al macello per chiusura attività,,,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Facebook""]",,,"{""cosa"": ""Cercasi sistemazione 70 capre destinate al macello"", ""data"": ""07/04/2017"", ""descrizione"": ""Stiamo cercando di trovare casa a circa 70 capre destinate al macello per la chiusura dell'azienda in cui si trovano. Cerchiamo anche privati che possano ospitare questi animali compilando un apposito modulo di affido. Il termine \u00e8 il 10 aprile. Contattare via facebook Anna Galastri o Alessandro Mosso, in alternativa telefonare a Animalisti Onlus al numero 3806323851."", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3806323851""}","<pre><yamldata>tel: '3806323851'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2884,220141898,2017-04-07 16:06:16,2017-04-07 08:12:24,Cercasi sistemazione per 70 capre destinate al macello per chiusura attività,,,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Facebook""]",,,"{""cosa"": ""Cercasi sistemazione 70 capre destinate al macello"", ""data"": ""07/04/2017"", ""descrizione"": ""Stiamo cercando di trovare casa a circa 70 capre destinate al macello per la chiusura dell'azienda in cui si trovano. Cerchiamo anche privati che possano ospitare questi animali compilando un apposito modulo di affido. Il termine \u00e8 il 10 aprile. Contattare via facebook Anna Galastri o Alessandro Mosso, in alternativa telefonare a Animalisti Onlus al numero 3806323851."", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3806323851""}","<pre><yamldata>tel: '3806323851'
 email: ''
 cosa: 'Cercasi sistemazione 70 capre destinate al macello'
 descrizione: 'Stiamo cercando di trovare casa a circa 70 capre destinate al macello per la chiusura dell''azienda in cui si trovano. Cerchiamo anche privati che possano ospitare questi animali compilando un apposito modulo di affido. Il termine è il 10 aprile. Contattare via facebook Anna Galastri o Alessandro Mosso, in alternativa telefonare a Animalisti Onlus al numero 3806323851.'
@@ -20,7 +25,7 @@ lon: ''
 link: ''
 immagine: ''
 data: 07/04/2017
-</yamldata></pre>",open
+</yamldata></pre>",closed
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2883,220138289,2017-04-07 08:13:04,2017-04-07 07:53:58,Canzoni fatte a mano - Claudio Bondioli e la Comitiva Carillon in concerto per #Amatrice,,,"[""Accettato"", ""Eventi"", ""Facebook""]",,,"{""data"": ""07/04/2017"", ""data_evento"": ""07/04/2017"", ""descrizione"": ""Venerd\u00ec sera 7 aprile a Chieri, concerto con ingresso a offerta libera per dare una mano alla ricostruzione della scuola elementare di Amatrice. Il concerto si terr\u00e0 alle ore 21.00 in Sala Conceria, in via della Conceria 2 (in pieno centro, vicino a piazza Dante)"", ""indirizzo"": """", ""lat"": """", ""link"": ""https://www.facebook.com/photo.php?fbid=10210040195054946&set=a.1209421149190.2031962.1038549260&type=3&theater"", ""lon"": """", ""ora_evento"": ""21:00"", ""promotore"": ""Citt\u00e0 di Chieri in collaborazione con la Banca del tempo di Chieri"", ""titolo_evento"": ""Canzoni fatte a mano - Claudio Bondioli e la Comitiva Carillon in concerto per #Amatrice""}","<pre><yamldata>titolo_evento: 'Canzoni fatte a mano - Claudio Bondioli e la Comitiva Carillon in concerto per #Amatrice'
 data_evento: 07/04/2017
 ora_evento: '21:00'
@@ -8390,6 +8395,11 @@ lat: ''
 lon: ''
 link: 'https://www.facebook.com/pg/AssociazioneCulturaleIllica/about/?ref=page_internal'
 immagine: ''
+data: 18/01/2017
+</yamldata></pre>",closed
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1625,201609420,2017-01-26 22:01:37,2017-01-18 15:42:20,"A #ColliPerilli, frazione #Amatrice, serve urgentemente una turbina per la neve",,,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Sisma Gennaio 2017"", ""Twitter""]",,,"{""data"": ""18/01/2017"", ""descrizione"": ""L'azienda agricola Aureli di Colli Petrilli, Amatrice, lancia un appello per recuperare una turbina che permetta loro di liberarsi dalla neve e raggiungere i loro animali perch\u00e8 temono che il capanno in cui sono ricoverati possa essere crollato. Tel. 338 468 0596."", ""link"": ""https://www.facebook.com/Azienda-Agricola-Bio-Aureli-Antonio-e-Capanna-Paola-1670113093223886/#"", ""titolo"": ""A #ColliPerilli, frazione #Amatrice, serve urgentemente una turbina per la neve""}","<pre><yamldata>titolo: 'A #ColliPerilli, frazione #Amatrice, serve urgentemente una turbina per la neve'
+descrizione: 'L''azienda agricola Aureli di Colli Petrilli, Amatrice, lancia un appello per recuperare una turbina che permetta loro di liberarsi dalla neve e raggiungere i loro animali perchè temono che il capanno in cui sono ricoverati possa essere crollato. Tel. 338 468 0596.'
+link: 'https://www.facebook.com/Azienda-Agricola-Bio-Aureli-Antonio-e-Capanna-Paola-1670113093223886/#'
 data: 18/01/2017
 </yamldata></pre>",closed
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1625,201609420,2017-01-26 22:01:37,2017-01-18 15:42:20,"A #ColliPerilli, frazione #Amatrice, serve urgentemente una turbina per la neve",,,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Sisma Gennaio 2017"", ""Twitter""]",,,"{""data"": ""18/01/2017"", ""descrizione"": ""L'azienda agricola Aureli di Colli Petrilli, Amatrice, lancia un appello per recuperare una turbina che permetta loro di liberarsi dalla neve e raggiungere i loro animali perch\u00e8 temono che il capanno in cui sono ricoverati possa essere crollato. Tel. 338 468 0596."", ""link"": ""https://www.facebook.com/Azienda-Agricola-Bio-Aureli-Antonio-e-Capanna-Paola-1670113093223886/#"", ""titolo"": ""A #ColliPerilli, frazione #Amatrice, serve urgentemente una turbina per la neve""}","<pre><yamldata>titolo: 'A #ColliPerilli, frazione #Amatrice, serve urgentemente una turbina per la neve'
@@ -18788,6 +18798,18 @@ bic: ''
 postale: ''
 causale: 'Sisma centro Italia - il Friuli Venezia Giulia non dimentica'
 link: ''
+email: ''
+data: 14/09/2016
+</yamldata></pre>
+",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/247,176850766,2016-10-01 16:21:22,2016-09-14 08:52:31,AMAtriciana solidale - mappa dei ristoranti aderenti,,,"[""Accettato"", ""Form"", ""Notizie Utili"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""AMAtriciana solidale - mappa"", ""data"": ""14/09/2016"", ""descrizione"": ""La mappa di tutti i ristoranti che aderiscono all'iniziativa \""AMAtriciana\"", per aiutare le popolazioni colpite dal terremoto, devolvendo 2 euro per ogni piatto di pasta"", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""http://bit.ly/2bM1Nqs"", ""postale"": """"}","<pre><yamldata>chi: 'AMAtriciana solidale - mappa'
+descrizione: 'La mappa di tutti i ristoranti che aderiscono all''iniziativa ""AMAtriciana"", per aiutare le popolazioni colpite dal terremoto, devolvendo 2 euro per ogni piatto di pasta'
+intestazione: ''
+iban: ''
+bic: ''
+postale: ''
+causale: ''
+link: 'http://bit.ly/2bM1Nqs'
 email: ''
 data: 14/09/2016
 </yamldata></pre>
