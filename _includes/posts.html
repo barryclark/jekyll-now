@@ -13,10 +13,8 @@
 <hr />
 <div class="sample entry{% if post.twitter_post %} twitter-post{% endif %}{% if post.facebook_post %} facebook-post{% endif %}">
 {% if post.facebook_post %}{% include facebook_post.html facebook_post=post.facebook_post %}
-{% else %}{% unless post.twitter_post %}{% if post.image %}<a href="{{ post.url }}">
-<img src="{% if post.thumbnail %}{{ post.image | replace_first: 'images','images/thumbnails' }}{% else %}{{ post.image }}{% endif %}" class="thumbnail" alt="{{ post.title | xml_escape }}" />
-</a>{% endif %}{% endunless %}{{ post.excerpt }}
-{% endif %}
+{% elsif post.image %}{% unless post.twitter_post %}<a href="{{ post.url }}"><img src="{% if post.thumbnail %}{{ post.image | replace_first: 'images','images/thumbnails' }}{% else %}{{ post.image }}{% endif %}" class="thumbnail" alt="{{ post.title | xml_escape }}" /></a>{% endunless %}
+{{ post.excerpt }}{% endif %}
 </div>     
 </article>
 {% endfor %}
