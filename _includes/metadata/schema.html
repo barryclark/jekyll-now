@@ -12,4 +12,3 @@
 
 {% for tag in page.tags %}<meta itemprop="keywords" content="{{ tag | replace:'_',' ' }}" />{% endfor %}
 {% for keyword in page.keywords %}<meta itemprop="keywords" content="{{ keyword }}" />{% endfor %}
-{% unless page.tags or page.keywords %}{% for tag in site.tags %}<meta itemprop="keywords" content="{{ tag[0] }}" />{% endfor %}{% endunless %}
