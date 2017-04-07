@@ -58,7 +58,7 @@ I just got it this month, so I didn't get any rewards this year. I have $252.28 
 
 The link below should lead to an application page. Again, it's a referral link.
 
-> [Earn $150 cash back with Chase Freedom&reg;](https://applynow.chase.com/FlexAppWeb/renderApp.do?SPID=FMM3&CELL=63HB&MSC=1538443475) #sponsored
+> [Earn $150 cash back with Chase Freedom&reg;](https://applynow.chase.com/FlexAppWeb/renderApp.do?SPID=FNS7&CELL=63HB&MSC=1538443475) #sponsored
 
 ## Checking Bonuses
 
