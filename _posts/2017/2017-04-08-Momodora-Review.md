@@ -29,6 +29,9 @@ Momodora: Reverie Under the Moonlight is the 4th game in the Momodora series tha
 
 Momodora is a 2D Metroidvania, which means players have a semi-open map that can gradually be explored more and more when new abilities are found or certain bosses defeated. Players take the role of a priestess named Kaho who is trying to solve the mystery of a curse that is spreading over the land. Armed only with a leaf (melee attack) and a bow (ranged attack) you must make your way through each area to defeat increasingly difficult bosses.
 
+![Momodora Screens](/images/momodora/lubella.png)
+*Lubella, a rather large boss and featured character in much of the game's art*{: .center}
+
 While the main style of play is similar to many other games of this genre, the combat and difficulty fall a bit in line with Dark Souls. Kaho can roll to dodge enemies, or get behind them, and has a health bar that depletes *very* quickly with only a few hits. Similar to Dark Souls' Estus Flask, Kaho has flowers that can restore her heath. These restore at each save point.
 
 <h2>Pixels</h2>
@@ -38,9 +41,6 @@ Reverie Under the Moonlight combines a despair-inducing world with bouncy and cu
 ![Mood](/images/momodora/mood.jpg){: .float-right}It's this oppressive mood that is shining star of Reverie Under the Moonlight. A mood that is presented through the environment and conversations with NPCs. One of my favorite examples of mood-building takes place in the screenshot to the right. As you walk through this room you find a terrified woman sobbing and asking for help. Later, when you return to the room she's gone. In her place is a blood stain on the floor. It's these dark, sometimes disturbing, touches that really draw you into the world Momodora.
 
 Through a combination of audio, visuals, and subtle storytelling, Momodora has the complete package when it comes to presentation.
-
-![Momodora Screens](/images/momodora/lubella.png)
-*Lubella, a rather large boss and featured character in much of the game's art*{: .center}
 
 <h2>Perspective</h2>
 
