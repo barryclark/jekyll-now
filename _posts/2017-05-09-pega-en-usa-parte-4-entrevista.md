@@ -21,7 +21,7 @@ tags:
   - visa
 ---
 
-Al fin llegamos al tercer post relacionado con conseguir trabajo en el extranjero.
+Al fin llegamos al tercer post relacionado con trabajar en el extranjero.
 
 En esta oportunidad quiero compartir algunos tips para conseguir una entrevista, la preparacion y en difinitiva que esperar antes, durantes y despues de 
 la entrevista.
