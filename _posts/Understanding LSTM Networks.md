@@ -1,7 +1,4 @@
 ---
-published: false
----
----
 layout: post
 title: 理解LSTM网络!
 ---
