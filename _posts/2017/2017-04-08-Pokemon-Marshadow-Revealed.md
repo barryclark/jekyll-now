@@ -18,3 +18,5 @@ A new Mythical Pokémon has been discovered in Pokémon Sun and Pokémon Moon: M
 Marshadow cannot be encountered in normal gameplay.
 
 More details are on the way soon, including how you can get this Pokémon in your game.
+
+I wish I had more for you, but that's it for now!
