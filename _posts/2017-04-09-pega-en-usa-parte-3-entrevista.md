@@ -1,12 +1,12 @@
 ---
 published: false
-id: 100217
+id: 090417
 title: 'Cómo conseguir una pega en USA - Parte 3: Conseguir una entrevista'
-date: 2017-02-10T00:00:00+00:00
+date: 2017-04-09T00:00:00+00:00
 author: ovalenzuela
 layout: post
-guid: http://ovalenzuela.com/?p=100217
-permalink: /2017/02/pega-en-usa-parte-3-entrevista.html
+guid: http://ovalenzuela.com/?p=090417
+permalink: /2017/04/pega-en-usa-parte-3-entrevista.html
 categories:
   - General
   - Noticias Destacadas
