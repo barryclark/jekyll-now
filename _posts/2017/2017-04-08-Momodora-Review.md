@@ -14,7 +14,7 @@ featured: momodora4.png
 author: robk
 ---
 
-![Momodora](/images/momodora/cover.png){: .float-right}
+![Momodora](/images/momodora/cover.jpg){: .float-right}
 **Developer:** [Bombservice](http://bombservice.com)\\
 **Publisher:** [Playism](http://playism-games.com)\\
 **Year:** 2016\\
