@@ -15,6 +15,8 @@ author: robk
 
 Anachrony had a wildly successful Kickstarter campaign and is finally available for retail sale. The game comes in a huge box weighing in at a total of 10 pounds, all cardboard. While you can purchase minis for the game separately, I've jut got the base set. It hasn't hit the table yet, but I'm really hoping to get it there soon!
 
+As a side note, this is the first time I'm trying taking pictures on my Alpha Table. There was a bit of a reflection on the surface in some pictures, so I don't know how well it will work out for future photos.
+
 With that, let's dig in and see what comes inside this monster of a game!
 
 ![Anachrony Box](/images/anachrony/box.jpg)
