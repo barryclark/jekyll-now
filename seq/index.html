@@ -12,15 +12,27 @@ body {
   font-family: sans-serif;
 }
 
+h1{
+  font-size: 20px;
+  padding: 0px;
+  margin: 0px;
+  margin-bottom: 5px;
+}
+
+input{
+  font-family: monospace;  
+}
+
 .unitslot {
-  padding: 3px;
+  padding: 5px;
   background-color: silver;
   border: 1px solid;
   border-color: black;
-  margin: 1px;
+  margin-right: 5px;
+  margin-bottom: 5px;
   display: block;
   width: 8em;
-  height: 1.5em;
+  height: 3em;
   font-size: 12px;
   text-align: center;
   overflow: hidden;
@@ -35,7 +47,18 @@ body {
 #units {
   display: inline-block;
   float: left;
+  width: 9em;
+  margin-top: 1em;
+  background-color: #ddd;
+}
+
+#semesters {
+  margin-top: 1em;
+}
+
+#codeblock {
   padding: 0.5em;
+  background-color: #dddddd;
 }
 
 .selected {
@@ -51,8 +74,10 @@ body {
   border: 1px solid;
   padding: 2px;
   margin: 2px;
+  width: 130px;
   text-align: center;
   display: inline-block;
+  font-size: 0.75em;
 }
 
 .spec {
@@ -67,24 +92,28 @@ body {
   background-color: lightblue;
 }
 
-#semesters {
-  display: inline-block;
-  width: 60em;
-}
-
 .sem{
-  display: inline-block;
+    display: inline-block;
+    margin-left: 1em;
 }
 
 .applied{
   display: none !important;
 }
+
   
   </style>
   
 </head>
 <body>
-    <div id="units">
+    <div id="codeblock">
+      <h1>
+      Unit Sequence Designer
+      </h1>
+      Code: <input size="24" id="code" value="ZZZZZZZZZZZZZZZZZZZZZZZZ"><button id="applyCode">apply</button>
+    </div>
+    
+        <div id="units">
         <ul id="SpecList">
             <li class="spec" data-seq=1 id="s1">S1</li>
             <li class="spec" data-seq=2 id="s2">S2</li>
@@ -117,50 +146,48 @@ body {
             <li class="core" data-seq=7 id="c7">C7</li>
             <li class="core" data-seq=8 id="c8">C8</li>
         </ul>
+        &nbsp;
     </div>
     
     <div id="semesters">
-        <div class="sem" id="s1">
+        <div class="sem" id="sem1">
             <div class="unitslot empty" id="s1_1">&nbsp;</div>
             <div class="unitslot empty" id="s1_2">&nbsp;</div>
             <div class="unitslot empty" id="s1_3">&nbsp;</div>
             <div class="unitslot empty" id="s1_4">&nbsp;</div>
         </div>
-        <div class="sem" id="s2">
+        <div class="sem" id="sem2">
             <div class="unitslot empty" id="s2_1">&nbsp;</div>
             <div class="unitslot empty" id="s2_2">&nbsp;</div>
             <div class="unitslot empty" id="s2_3">&nbsp;</div>
             <div class="unitslot empty" id="s2_4">&nbsp;</div>
         </div>
-        <div class="sem" id="s3">
+        <div class="sem" id="sem3">
             <div class="unitslot empty" id="s3_1">&nbsp;</div>
             <div class="unitslot empty" id="s3_2">&nbsp;</div>
             <div class="unitslot empty" id="s3_3">&nbsp;</div>
             <div class="unitslot empty" id="s3_4">&nbsp;</div>
         </div>
-        <div class="sem" id="s4">
+        <div class="sem" id="sem4">
             <div class="unitslot empty" id="s4_1">&nbsp;</div>
             <div class="unitslot empty" id="s4_2">&nbsp;</div>
             <div class="unitslot empty" id="s4_3">&nbsp;</div>
             <div class="unitslot empty" id="s4_4">&nbsp;</div>
         </div>
-        <div class="sem" id="s5">
+        <div class="sem" id="sem5">
             <div class="unitslot empty" id="s5_1">&nbsp;</div>
             <div class="unitslot empty" id="s5_2">&nbsp;</div>
             <div class="unitslot empty" id="s5_3">&nbsp;</div>
             <div class="unitslot empty" id="s5_4">&nbsp;</div>
         </div>
-        <div class="sem" id="s6">
+        <div class="sem" id="sem6">
             <div class="unitslot empty" id="s6_1">&nbsp;</div>
             <div class="unitslot empty" id="s6_2">&nbsp;</div>
             <div class="unitslot empty" id="s6_3">&nbsp;</div>
             <div class="unitslot empty" id="s6_4">&nbsp;</div>
         </div>
     </div>
-    <input length="24" id="code"><button id="applyCode">apply</button>
-    
-    </button>
-    
+
     <script>
     
 
