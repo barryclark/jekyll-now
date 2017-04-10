@@ -10,6 +10,7 @@
   <style>
 body {
   font-family: sans-serif;
+  background-color: #eee;
 }
 
 h1{
@@ -21,6 +22,17 @@ h1{
 
 input{
   font-family: monospace;  
+}
+
+.semhead{
+  font-weight: bold;
+  text-align: center;
+  padding: 5px;
+  width: 8em;
+  font-size: 12px;
+  border: 1px solid;
+  background-color: #ddd;
+  margin-bottom: 5px;
 }
 
 .unitslot {
@@ -50,6 +62,7 @@ input{
   width: 9em;
   margin-top: 1em;
   background-color: #ddd;
+  padding: 5px;
 }
 
 #semesters {
@@ -101,7 +114,6 @@ input{
   display: none !important;
 }
 
-  
   </style>
   
 </head>
@@ -114,6 +126,7 @@ input{
     </div>
     
         <div id="units">
+        <strong>Units</strong>
         <ul id="SpecList">
             <li class="spec" data-seq=1 id="s1">S1</li>
             <li class="spec" data-seq=2 id="s2">S2</li>
@@ -151,36 +164,42 @@ input{
     
     <div id="semesters">
         <div class="sem" id="sem1">
+            <div class="semhead">Year 1 Sem 1</div>
             <div class="unitslot empty" id="s1_1">&nbsp;</div>
             <div class="unitslot empty" id="s1_2">&nbsp;</div>
             <div class="unitslot empty" id="s1_3">&nbsp;</div>
             <div class="unitslot empty" id="s1_4">&nbsp;</div>
         </div>
         <div class="sem" id="sem2">
+            <div class="semhead">Year 1 Sem 2</div>
             <div class="unitslot empty" id="s2_1">&nbsp;</div>
             <div class="unitslot empty" id="s2_2">&nbsp;</div>
             <div class="unitslot empty" id="s2_3">&nbsp;</div>
             <div class="unitslot empty" id="s2_4">&nbsp;</div>
         </div>
         <div class="sem" id="sem3">
+            <div class="semhead">Year 2 Sem 1</div>
             <div class="unitslot empty" id="s3_1">&nbsp;</div>
             <div class="unitslot empty" id="s3_2">&nbsp;</div>
             <div class="unitslot empty" id="s3_3">&nbsp;</div>
             <div class="unitslot empty" id="s3_4">&nbsp;</div>
         </div>
         <div class="sem" id="sem4">
+            <div class="semhead">Year 2 Sem 2</div>
             <div class="unitslot empty" id="s4_1">&nbsp;</div>
             <div class="unitslot empty" id="s4_2">&nbsp;</div>
             <div class="unitslot empty" id="s4_3">&nbsp;</div>
             <div class="unitslot empty" id="s4_4">&nbsp;</div>
         </div>
         <div class="sem" id="sem5">
+            <div class="semhead">Year 3 Sem 1</div>
             <div class="unitslot empty" id="s5_1">&nbsp;</div>
             <div class="unitslot empty" id="s5_2">&nbsp;</div>
             <div class="unitslot empty" id="s5_3">&nbsp;</div>
             <div class="unitslot empty" id="s5_4">&nbsp;</div>
         </div>
         <div class="sem" id="sem6">
+            <div class="semhead">Year 3 Sem 2</div>
             <div class="unitslot empty" id="s6_1">&nbsp;</div>
             <div class="unitslot empty" id="s6_2">&nbsp;</div>
             <div class="unitslot empty" id="s6_3">&nbsp;</div>
@@ -189,7 +208,6 @@ input{
     </div>
 
     <script>
-    
 
 $(document).ready( function(){
 	var id;
