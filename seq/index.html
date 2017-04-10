@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Unit Sequencing Tool</title>
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  
+  <style>
+body {
+  font-family: sans-serif;
+}
+
+.unitslot {
+  padding: 3px;
+  background-color: silver;
+  border: 1px solid;
+  border-color: black;
+  margin: 1px;
+  display: block;
+  width: 8em;
+  height: 1.5em;
+  font-size: 12px;
+  text-align: center;
+  overflow: hidden;
+}
+
+#units ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+#units {
+  display: inline-block;
+  float: left;
+  padding: 0.5em;
+}
+
+.selected {
+  border: 3px solid !important;
+}
+
+.highlighted {
+  border-color: green !important;
+  background-color: #AADDAA !important;
+}
+
+#units li {
+  border: 1px solid;
+  padding: 2px;
+  margin: 2px;
+  text-align: center;
+  display: inline-block;
+}
+
+.spec {
+  background-color: lightyellow;
+}
+
+.breadth {
+  background-color: lightgreen
+}
+
+.core {
+  background-color: lightblue;
+}
+
+#semesters {
+  display: inline-block;
+  width: 60em;
+}
+
+.sem{
+  display: inline-block;
+}
+
+.applied{
+  display: none !important;
+}
+  
+  </style>
+  
+</head>
+<body>
+    <div id="units">
+        <ul id="SpecList">
+            <li class="spec" data-seq=1 id="s1">S1</li>
+            <li class="spec" data-seq=2 id="s2">S2</li>
+            <li class="spec" data-seq=3 id="s3">S3</li>
+            <li class="spec" data-seq=4 id="s4">S4</li>
+            <li class="spec" data-seq=5 id="s5">S5</li>
+            <li class="spec" data-seq=6 id="s6">S6</li>
+            <li class="spec" data-seq=7 id="s7">S7</li>
+            <li class="spec" data-seq=8 id="s8">S8</li>
+        </ul>
+
+        <ul id="BreadthList">
+            <li class="breadth" data-seq=1 id="b1">B1</li>
+            <li class="breadth" data-seq=2 id="b2">B2</li>
+            <li class="breadth" data-seq=3 id="b3">B3</li>
+            <li class="breadth" data-seq=4 id="b4">B4</li>
+            <li class="breadth" data-seq=5 id="b5">B5</li>
+            <li class="breadth" data-seq=6 id="b6">B6</li>
+            <li class="breadth" data-seq=7 id="b7">B7</li>
+            <li class="breadth" data-seq=8 id="b8">B8</li>
+        </ul>
+
+        <ul id="CoreList">
+            <li class="core" data-seq=1 id="c1">C1</li>
+            <li class="core" data-seq=2 id="c2">C2</li>
+            <li class="core" data-seq=3 id="c3">C3</li>
+            <li class="core" data-seq=4 id="c4">C4</li>
+            <li class="core" data-seq=5 id="c5">C5</li>
+            <li class="core" data-seq=6 id="c6">C6</li>
+            <li class="core" data-seq=7 id="c7">C7</li>
+            <li class="core" data-seq=8 id="c8">C8</li>
+        </ul>
+    </div>
+    
+    <div id="semesters">
+        <div class="sem" id="s1">
+            <div class="unitslot empty" id="s1_1">&nbsp;</div>
+            <div class="unitslot empty" id="s1_2">&nbsp;</div>
+            <div class="unitslot empty" id="s1_3">&nbsp;</div>
+            <div class="unitslot empty" id="s1_4">&nbsp;</div>
+        </div>
+        <div class="sem" id="s2">
+            <div class="unitslot empty" id="s2_1">&nbsp;</div>
+            <div class="unitslot empty" id="s2_2">&nbsp;</div>
+            <div class="unitslot empty" id="s2_3">&nbsp;</div>
+            <div class="unitslot empty" id="s2_4">&nbsp;</div>
+        </div>
+        <div class="sem" id="s3">
+            <div class="unitslot empty" id="s3_1">&nbsp;</div>
+            <div class="unitslot empty" id="s3_2">&nbsp;</div>
+            <div class="unitslot empty" id="s3_3">&nbsp;</div>
+            <div class="unitslot empty" id="s3_4">&nbsp;</div>
+        </div>
+        <div class="sem" id="s4">
+            <div class="unitslot empty" id="s4_1">&nbsp;</div>
+            <div class="unitslot empty" id="s4_2">&nbsp;</div>
+            <div class="unitslot empty" id="s4_3">&nbsp;</div>
+            <div class="unitslot empty" id="s4_4">&nbsp;</div>
+        </div>
+        <div class="sem" id="s5">
+            <div class="unitslot empty" id="s5_1">&nbsp;</div>
+            <div class="unitslot empty" id="s5_2">&nbsp;</div>
+            <div class="unitslot empty" id="s5_3">&nbsp;</div>
+            <div class="unitslot empty" id="s5_4">&nbsp;</div>
+        </div>
+        <div class="sem" id="s6">
+            <div class="unitslot empty" id="s6_1">&nbsp;</div>
+            <div class="unitslot empty" id="s6_2">&nbsp;</div>
+            <div class="unitslot empty" id="s6_3">&nbsp;</div>
+            <div class="unitslot empty" id="s6_4">&nbsp;</div>
+        </div>
+    </div>
+    <input length="24" id="code"><button id="applyCode">apply</button>
+    
+    </button>
+    
+    <script>
+    
+
+$(document).ready( function(){
+	var id;
+  for( id in unitnames ) {
+  	$("#" + id).text( unitnames[id] );
+  }
+});
+
+$("#units li").click( function() {
+	$(".selected").removeClass( "selected" );
+	$(this).addClass( "selected" );	
+  
+  $(".highlighted").removeClass( "highlighted");
+  highlightPossibleCells( this );
+});
+
+$(".unitslot").click( function(){
+	var s = $(".selected");
+  if ( s.length == 0 ) {
+  	// nothing selected: clear cell?
+    if ($(this).hasClass("empty")) return;
+    // clear it
+    clearCell( this );
+    return;
+  }
+  
+  if ( !$(this).hasClass( "highlighted") ) return; // selected cell is not highlighted
+
+  // if we get here the cell is OK to be populated
+  setCell(this, s);
+  $("#code").val(gridToCode());
+  $(".highlighted").removeClass("highlighted");
+});
+
+$("#applyCode").click( function() {
+	codeToGrid( $("#code").val() );
+});
+
+function clearCell( cell ) {
+    var id = "#" + $(cell).data("unitid");
+    $(id).removeClass( "applied" );
+    $(cell).removeClass("spec breadth core");
+    $(cell).attr("data-unitid", "none");
+    $(cell).addClass( "empty" );
+    $(cell).html("&nbsp;");
+}
+
+function highlightPossibleCells( unit ) {
+	$(".sem").each(function(semester) {
+		if ( $(unit).data("seq")%2 == (semester+1)%2 || $(unit).hasClass("core")) {	// even/odd sems, except core
+      		var numCore = $(this).children(".core").length;
+      		var numSpec = $(this).children(".spec").length;
+      		var numBred = $(this).children(".breadth").length;
+      		if(  ($(unit).hasClass("core") && numCore < 2) ||
+      	   	($(unit).hasClass("spec") && numSpec < 2) ||
+            ($(unit).hasClass("breadth") && numBred < 2)) {     
+            	if ( hasPreReqs( unit, semester+1 ) ) { 
+					$(this).children().each(function(n) {
+						var highlight = true;
+						if ( !$(this).hasClass("empty") ) highlight = false; // don't highlight occupied cells
+						if ( highlight ) $(this).addClass( "highlighted" );
+					}); // end each
+        		}
+      		} // end max 2 check
+    	} // end if even/odd
+	});  // end each
+} // end function
+
+// if I click a unit with seq 3 or greater:
+	// if we have not placed (seq - 2) yet it can't go anywhere
+	// if we have placed (seq - 2):
+	//	it can only be placed in same semester as seq - 2 or later
+
+function hasPreReqs( unit, semester ) {
+	var unitseq = $(unit).data("seq");
+	if ( unitseq == 1 || unitseq == 2 ) return true;	// units 1 and 2 always have pre-reqs
+	
+	var prereq = unitseq-2;
+	if ( $(unit).hasClass("core") ) prefix = "c";
+	if ( $(unit).hasClass("breadth") ) prefix = "b";
+	if ( $(unit).hasClass("spec") ) prefix = "s";
+	
+  if ( prefix == "c" ) return true;	// don't implement core unit pre-reqs yet
+  
+	var prId = prefix + prereq;	// eg: s3
+	
+	// does a cell exist that has the data-unitid value matching prId
+	var prCell = $("[data-unitid=" + prId + "]");
+	
+	// no cells found
+	if ( prCell.length == 0 ) return false;
+	
+	prSemester = +prCell.attr("id").substring(2,1);  
+	// found in this semester -> return true
+	if ( prSemester == semester ) return true;
+	
+	// found in an earlier semester -> return false;
+	if ( prSemester > semester ) return false;
+	
+	return true;
+}	
+
+function setCell( cell, unit ) {
+  $(cell).text($(unit).text());
+  if ($(unit).hasClass("core")) $(cell).addClass("core");
+  if ($(unit).hasClass("breadth")) $(cell).addClass("breadth");
+  if ($(unit).hasClass("spec")) $(cell).addClass("spec");
+  $(cell).removeClass( "empty" );
+  $(unit).addClass( "applied" );
+  $(unit).removeClass( "selected" );
+  $(cell).attr("data-unitid", $(unit).attr("id"));
+}
+
+function gridToCode() {
+	var code = "ZZZZZZZZZZZZZZZZZZZZZZZZ"; // QIAERJBCSUKGTVLHWDMOXFNP
+	$(".unitslot").each( function(n) {
+  	if ( !$(this).hasClass( "empty") ) {
+  		var id = $(this).attr("id");
+      var semester = +id.substring(2,1);
+      var slot = +id.substring(3,4);
+      var offset = (semester - 1) * 4 + slot;
+      var unitid = $(this).attr("data-unitid");
+      var type = -1;
+      if ( unitid.substring(0,1) == "c" ) type = 0;
+      if ( unitid.substring(0,1) == "b" ) type = 1;
+      if ( unitid.substring(0,1) == "s" ) type = 2;
+      var seq = +unitid.substring(1,2);
+      var letter = String.fromCharCode(65 + type * 8 + (seq-1));
+      code = replaceAt( code, offset-1, letter );
+  	}
+  });
+  return code;
+}
+
+function codeToGrid( code ) {
+	// reverse the above, construct a grid
+  // use setcell to set them
+  var cells = $(".unitslot");
+  cells.each( function(n){
+  	var semester = +$(this).attr("id").substring(2,1);
+    var seq = +$(this).attr("id").substring(3,4);
+    console.log( n + ": " + semester + "_" + seq );
+  	var offset = (semester - 1) * 4 + (seq - 1);
+    var letter = code[offset];
+    console.log( "[" + offset + "] " + letter)
+    if ( letter == "Z" ) {
+    	clearCell( this );
+    } else {
+      var index = letter.charCodeAt(0) - 65;
+      var targettype = Math.floor(index / 8);
+      var targetseq = index % 8 + 1;
+      if ( targettype == 0 ) type = "c";
+      if ( targettype == 1 ) type = "b";
+      if ( targettype == 2 ) type = "s";
+      var unit = $("#" + type + targetseq);
+      console.log( "#" + type + targetseq );
+      setCell( this, unit );
+    }
+  });
+}
+
+function replaceAt(s, index, replacement) {
+    return s.substr(0, index) + replacement + s.substr(index + replacement.length);
+}
+
+
+
+var unitnames = {
+	s1:"Specialisation 1",
+  s2:"Specialisation 2",
+  s3:"Specialisation 3",
+  s4:"Specialisation 4",
+  s5:"Specialisation 5",
+  s6:"Specialisation 6",
+  s7:"Specialisation 7",
+  s8:"Specialisation 8",
+  b1:"Breadth 1",
+  b2:"Breadth 2",
+  b3:"Breadth 3",
+  b4:"Breadth 4",
+  b5:"Breadth 5",
+  b6:"Breadth 6",
+  b7:"Breadth 7",
+  b8:"Breadth 8",
+  c1:"Core 1",
+  c2:"Core 2",
+  c3:"Core 3",
+  c4:"Core 4",
+  c5:"PP 1",
+  c6:"PP 2",
+  c7:"WIL 1",
+  c8:"WIL 2"
+};
+    </script>
+</body>
+</html>
