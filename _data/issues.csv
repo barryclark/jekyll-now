@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2909,221000914,2017-04-11 16:13:11,2017-04-11 16:01:09,Terremotocup #Monteprandone,42.9199386,13.8348165,"[""Accettato"", ""Eventi"", ""Form""]",,,"{""data"": ""11/04/2017"", ""data_evento"": ""01/01/1970"", ""descrizione"": ""Tutti in campo per giocare la stessa partita."", ""indirizzo"": ""Strada Provinciale 54 Monteprandone, Monteprandone, AP, Marche, 63077, Italia"", ""lat"": ""42.9199386"", ""link"": ""https://www.facebook.com/photo.php?fbid=10155296722127728&set=gm.1875683032699279&type=3&theater"", ""lon"": ""13.8348165"", ""ora_evento"": ""15:00"", ""promotore"": ""Comune di Monteprandone"", ""titolo_evento"": ""Terremotocup""}","<pre><yamldata>titolo_evento: Terremotocup
+data_evento: 01/01/1970
+ora_evento: '15:00'
+promotore: 'Comune di Monteprandone'
+descrizione: 'Tutti in campo per giocare la stessa partita.'
+indirizzo: 'Strada Provinciale 54 Monteprandone, Monteprandone, AP, Marche, 63077, Italia'
+lat: '42.9199386'
+lon: '13.8348165'
+link: 'https://www.facebook.com/photo.php?fbid=10155296722127728&set=gm.1875683032699279&type=3&theater'
+data: 11/04/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2907,220958242,2017-04-11 14:04:04,2017-04-11 13:49:35,"Ordinanza ricostruzione, aumentano i contributi: la nuova bozza",,,"[""Accettato"", ""Facebook"", ""Notizie Utili""]",,,"{""data"": ""11/04/2017"", ""descrizione"": ""Aumentano i rimborsi dello Stato per la riparazione o la ricostruzione delle case colpite dal terremoto. Rispetto alla vecchia bozza, il nuovo testo dell'ordinanza sulla ricostruzione pesante, non ancora definitivo e all'esame della Corte dei Conti, prevede costi parametrici, e quindi tetti massimi di rimborso, generalmente pi\u00f9 alti, in alcuni casi in modo sensibile. Forse non siamo ancora ai livelli riconosciuti per il terremoto dell'Emilia del 2012, ma il Commissario Errani, che aveva promesso ai sindaci un ritocco consistente dei parametri, sembra essere stato di parola."", ""link"": ""https://sibilla-online.com/2017/04/ordinanza-ricostruzione-aumentano-i-contributi-la-nuova-bozza/"", ""titolo"": ""Ordinanza ricostruzione, aumentano i contributi: la nuova bozza""}","<pre><yamldata>titolo: 'Ordinanza ricostruzione, aumentano i contributi: la nuova bozza'
 descrizione: 'Aumentano i rimborsi dello Stato per la riparazione o la ricostruzione delle case colpite dal terremoto. Rispetto alla vecchia bozza, il nuovo testo dell''ordinanza sulla ricostruzione pesante, non ancora definitivo e all''esame della Corte dei Conti, prevede costi parametrici, e quindi tetti massimi di rimborso, generalmente più alti, in alcuni casi in modo sensibile. Forse non siamo ancora ai livelli riconosciuti per il terremoto dell''Emilia del 2012, ma il Commissario Errani, che aveva promesso ai sindaci un ritocco consistente dei parametri, sembra essere stato di parola.'
 link: 'https://sibilla-online.com/2017/04/ordinanza-ricostruzione-aumentano-i-contributi-la-nuova-bozza/'
