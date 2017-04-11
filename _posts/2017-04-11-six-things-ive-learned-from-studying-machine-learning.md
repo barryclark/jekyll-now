@@ -3,6 +3,7 @@ layout: post
 title: Six Things I've Learned from Studying Machine Learning
 tags: [technology]
 keywords: [machine learning, artificial intelligence, neural networks, life]
+excerpt: Machine learning. Artificial intelligence. Neural networks. It’s all exciting stuff, and I’ve been studying it for my master’s degree. But outside of the classroom, outside of computers, what has it taught me about life?
 ---
 
 [Machine learning](https://en.wikipedia.org/wiki/Machine_learning). [Artificial intelligence](https://en.wikipedia.org/wiki/Artificial_intelligence). [Neural networks](https://en.wikipedia.org/wiki/Artificial_neural_network). It's all exciting stuff, and I've been studying it for [my master's degree](http://hendrixjoseph.github.io/four-things-i'm-excited-for-in-2017/#graduating). But outside of the classroom, outside of computers, what has it taught me about life?
