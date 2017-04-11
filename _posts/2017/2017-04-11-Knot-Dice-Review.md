@@ -13,7 +13,7 @@ featured: knotdice.jpg
 author: frankg
 ---
 
-![Knot Dice](/images/brassempire/cover.jpg){: .float-right}
+![Knot Dice](/images/knotdice/cover.jpg){: .float-right}
 **Designers:**  Matthew O'Malley \\
 **Publisher:** [Black Oak Games](https://www.blackoakgames.com/collections/knot-dice)\\
 **Year:** 2016\\
