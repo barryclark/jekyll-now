@@ -17,7 +17,7 @@ author: frankg
 **Designers:**  Matthew O'Malley \\
 **Publisher:** [Black Oak Games](https://www.blackoakgames.com/collections/knot-dice)\\
 **Year:** 2016\\
-**MSRP:** $29.95/$57.95\\
+**MSRP:** [$29.95](https://www.blackoakgames.com/collections/knot-dice/products/knot-dice)/[$57.95](https://www.blackoakgames.com/collections/knot-dice/products/knot-dice-deluxe)\\
 **Players:** 1-4\\
 **Play Time:** 10-20 Min\\
 **Ages:** 5+\\
