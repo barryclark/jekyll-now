@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2905,220947148,2017-04-11 13:34:56,2017-04-11 13:13:11,In Moto Per Norcia,42.7927706,13.0930812,"[""Accettato"", ""Eventi"", ""Facebook""]",,,"{""data"": ""11/04/2017"", ""data_evento"": ""01/01/1970"", ""descrizione"": ""Verranno raccolte donazioni convertite poi in buoni spesa per il gruppo \""Norcia Sisma 2016 di Emanuele Battilocchi\"" attivo nell'aiuto delle popolazioni terremotate."", ""indirizzo"": ""Piazza San Benedetto, Casa Coletti, Norcia, PG, UMB, 06046, Italia"", ""lat"": ""42.7927706"", ""link"": ""https://www.facebook.com/photo.php?fbid=10212289007804289&set=a.1766091036019.99767.1351448556&type=3&theater"", ""lon"": ""13.0930812"", ""ora_evento"": ""10:00"", ""promotore"": ""Norcia Sisma 2016 di Emanuele Battilocchi"", ""titolo_evento"": ""In Moto Per Norcia""}","<pre><yamldata>titolo_evento: 'In Moto Per Norcia'
+data_evento: 01/01/1970
+ora_evento: '10:00'
+promotore: 'Norcia Sisma 2016 di Emanuele Battilocchi'
+descrizione: 'Verranno raccolte donazioni convertite poi in buoni spesa per il gruppo ""Norcia Sisma 2016 di Emanuele Battilocchi"" attivo nell''aiuto delle popolazioni terremotate.'
+indirizzo: 'Piazza San Benedetto, Casa Coletti, Norcia, PG, UMB, 06046, Italia'
+lat: '42.7927706'
+lon: '13.0930812'
+link: 'https://www.facebook.com/photo.php?fbid=10212289007804289&set=a.1766091036019.99767.1351448556&type=3&theater'
+data: 11/04/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2904,220942207,2017-04-11 13:27:49,2017-04-11 12:55:35,Si riduce ancora zona rossa #Norcia,,,"[""Accettato"", ""Bollettino"", ""Facebook"", ""Notizie Utili""]",,,"{""data"": ""11/04/2017"", ""descrizione"": ""Un'altra porzione di piazza San Benedetto di Norcia liberata dal vincolo della \""zona rossa\"" imposta dal sisma del 30 ottobre scorso. Il sindaco Nicola Alemanno ha firmato una nuova ordinanza con la quale assottiglia ulteriormente il divieto di transito a persone e mezzi all'interno del centro storico."", ""link"": ""http://www.ansa.it/umbria/notizie/2017/04/10/sismasi-riduce-ancora-zona-rossa-norcia_057d0c6c-d65e-4489-b7a8-5cd9eedcd997.html"", ""titolo"": ""Sisma,si riduce ancora zona rossa #Norcia""}","<pre><yamldata>titolo: 'Sisma,si riduce ancora zona rossa #Norcia'
 descrizione: 'Un''altra porzione di piazza San Benedetto di Norcia liberata dal vincolo della ""zona rossa"" imposta dal sisma del 30 ottobre scorso. Il sindaco Nicola Alemanno ha firmato una nuova ordinanza con la quale assottiglia ulteriormente il divieto di transito a persone e mezzi all''interno del centro storico.'
 link: 'http://www.ansa.it/umbria/notizie/2017/04/10/sismasi-riduce-ancora-zona-rossa-norcia_057d0c6c-d65e-4489-b7a8-5cd9eedcd997.html'
