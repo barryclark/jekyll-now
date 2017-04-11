@@ -32,7 +32,7 @@ Unboxing the game reveals several game components: 36 dice, 8 wooden tokens, 1 c
 
 ![Knot Dice 2](/images/knotdice/knotdice2.png)
 
-We began by selecting a game from the book that could be played with two people called “Know so Fast.” The goal of the game is to collect the most dice by forming closed knots faster than your opponents. After a few rounds we began to get the hang of it. The game book is very straightforward and easy to read and comprehend. The rules are simplified and explained using a number of color diagrams. You can also find videos explaining 12 of the games’ rules on [Black Oak Games YouTube Channel](https://www.youtube.com/playlist?list=PLVcGGWlOhEQw_O9fSetm2nqlhFa9D4Kfb). Although, it felt repetitive at times, the game was fast-paced and short lived—a nice quality, which helped to keep our interest. 
+We began by selecting a game from the book that could be played with two people called “Knot so Fast.” The goal of the game is to collect the most dice by forming closed knots faster than your opponents. After a few rounds we began to get the hang of it. The game book is very straightforward and easy to read and comprehend. The rules are simplified and explained using a number of color diagrams. You can also find videos explaining 12 of the games’ rules on [Black Oak Games YouTube Channel](https://www.youtube.com/playlist?list=PLVcGGWlOhEQw_O9fSetm2nqlhFa9D4Kfb). Although, it felt repetitive at times, the game was fast-paced and short lived—a nice quality, which helped to keep our interest. 
 
 ![Knot Dice 3](/images/knotdice/knotdice3.png)
 
