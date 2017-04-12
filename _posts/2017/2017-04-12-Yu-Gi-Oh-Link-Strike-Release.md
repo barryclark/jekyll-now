@@ -22,4 +22,4 @@ With Link Monsters you can also control different monsters summoned from your Ex
 
 **Starter Deck: Link Strike** comes with 3 new, all-foil Link Monsters to add to your Extra Deck, plus a full Main Deck and a new Game Mat showing the new Extra Monster Zones. This set also introduces a brand-new Type of monster to join Dragons, Warriors, Spellcasters, and all the rest. Inspired by networking machinery, this new Type of monster takes today’s digital technology and turns it into Dueling technology!
 
-**Starter Deck: Link Strike** contains 43 cards: 38 Common Cards, 2 Ultra Rare Cards, 3 Super Rare Cards, 1 Beginner’s Guide, and 1 updated Game Mat with new Extra Monster Zones.
+**Starter Deck: Link Strike** contains 43 cards: 38 Common Cards, 2 Ultra Rare Cards, 3 Super Rare Cards, 1 Beginner’s Guide, and 1 updated Game Mat with new Extra Monster Zones. It will hit store shelves on July 21st, 2017.
