@@ -13,11 +13,16 @@ $darkGray: #333;
 $gray: #666;
 $lightGray: #eee;
 $white: #fff;
+$mpgreen: #8ac303;
+$mpblue: #123456;
+$mpyellow: #cccc00;
 
 // Font stacks
 $helvetica: Helvetica, Arial, sans-serif;
 $helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $georgia: Georgia, serif;
+$mptitlefont: Amatic SC;
+$mpmainfont: Tenor Sans, sans-serif;
 
 // Mobile breakpoints
 @mixin mobile {
