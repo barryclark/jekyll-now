@@ -7,7 +7,7 @@ tags:
 - interviews
 - kickstarter
 layout: post
-description: "Catch the next wave of Yu-Gi-Oh! TRADING CARD GAME monsters with Starter Deck: Link Strike"
+description: "I heard about the RPG Jelly Plush Kickstarter via an email announcement with an offer to do an interview."
 featured: rpgjelly.jpg
 author: robk
 ---
