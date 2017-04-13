@@ -12,15 +12,13 @@ featured: rpgjelly.jpg
 author: robk
 ---
 
-<iframe style="float:right;margin-left:10px;" src="https://www.kickstarter.com/projects/1701549395/rpg-jelly-plush-kickstarter/widget/card.html?v=2" width="220" height="420" frameborder="0" scrolling="no"></iframe>I heard about the RPG Jelly Plush Kickstarter via an email announcement with an offer to do an interview, etc.. Loving a) plush toys, b) RPGs, and c) jellyfish, I figured "why the hell not?" What followed was a series of email with Alaina Prana, The Floof Queen, who designed and currently hand-makes these awesome jellies.
+![Alaina](/images/rpgjelly/alainaprana.jpg){: .float-right}I heard about the [RPG Jelly Plush Kickstarter](https://www.kickstarter.com/projects/1701549395/rpg-jelly-plush-kickstarter) via an email announcement with an offer to do an interview, etc.. Loving a) plush toys, b) RPGs, and c) jellyfish, I figured "why the hell not?" What followed was a series of email with Alaina Prana, The Floof Queen, who designed and currently hand-makes these awesome jellies.
 
 **What inspired your RPG Jellyfish plushies? How did they come to be?**
 
 *At first, I was inspired by the anime Princess Jellyfish to make the first batch of plush jellies. The original pattern I designed was my own take on one of the characters from that show. I loved making the character so much that I decided to branch out and create some of my own from that original design. They are SUPER fun to design and I love making them!*
 
 *The idea of applying RPG elements to them wasn't hard to come up with, since I grew up on those things - as a result, the Warrior types are some of my favorites, since that's what I tend to play the most. The designs come from fantasy stereotypes, classic RPG classes, and bad puns.*
-
-![Alaina](/images/rpgjelly/alainaprana.jpg){: .float-right}
 
 **You mentioned these are hand-made. About how long does each take to produce?**
 
@@ -44,7 +42,7 @@ author: robk
 
 *Future plushies? Well I would really like to expand to a few other more complex sea creature designs based on the same themes - some of my ideas include Devil Squids, 'Orc'a Whales, and Dragon Turtles! I'd like to keep some jellies though, I would love to see the Witch Jelly be a manufactured product someday!*
 
-![Convention Jelly](/images/rpgjelly/convention.jpg)**What's your upcoming con schedule look like? Where can people go to see the jellies up close and personal?**
+![Convention Jelly](/images/rpgjelly/convention.jpg){: .float-right}**What's your upcoming con schedule look like? Where can people go to see the jellies up close and personal?**
 
 *I do conventions all year round, as many as I'm physically able, though I tend to stick to places close to home for travel cost reasons. I'm based in Ohio, and we put up our convention schedule regularly on our website, tumblr, and Facebook. This year we have UBcon, Anime Park, OMG!con, Indy Pop Con, Glass City Con, Anime Iowa, and Kentokyocon confirmed so far!*
 
