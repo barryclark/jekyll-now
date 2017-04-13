@@ -70,13 +70,13 @@ Si realmente quieres el empleo, entonces prepárate, gánate el puesto, no vayas
 
 En general, cada empresa es algo diferente, sin embargo, el proceso es bastante similar:
 
-# Verifican tu CV para ver si tienes el perfil de lo que buscan. De ser así, te contactan pidiendo que envíes nuevamente tu CV (suena raro, pero es por un tema
+* Verifican tu CV para ver si tienes el perfil de lo que buscan. De ser así, te contactan pidiendo que envíes nuevamente tu CV (suena raro, pero es por un tema
 legal).
-# Tu respondes, y ellos arman una llamada telefónica. Esta llamada es para darte orientación respecto al proceso, y preguntar cosas básicas sobre tu CV. Es para
+* Tu respondes, y ellos arman una llamada telefónica. Esta llamada es para darte orientación respecto al proceso, y preguntar cosas básicas sobre tu CV. Es para
 validar que si dices: soy ingeniero en software, durante la llamada expliques que materias estudiaste cuando te preparabas como ingeniero. Si dices, "soy desarrollador
 de software" te querrán preguntar detalles, tales como en que tecnología, que tipo de apps, para que empresa, que parte del software desarrollaste, etc.
-# Si logran validar todo lo que tu dijiste que fueras, te invitaran a una entrevista técnica.
-# La primera entrevista, puede ser de una llamada con preguntas como: que algoritmo usarías para XX situación, o que tecnología usarías para XX. En ocasiones, también
+* Si logran validar todo lo que tu dijiste que fueras, te invitaran a una entrevista técnica.
+* La primera entrevista, puede ser de una llamada con preguntas como: que algoritmo usarías para XX situación, o que tecnología usarías para XX. En ocasiones, también
 compartirán contigo un ejercicio de desarrollo online, donde el entrevistador podrá ver como desarrollas. El objetivo de este ejercicio, no es ver si te equivocas o
 no, tampoco es ver si eres un "UberCracker", lo que ellos buscan es saber cómo piensas, si eres capaz de resolver problemas lógicos y cómo. Por tanto, es importante,
 siempre explicar al entrevistador que estas intentando hacer.
