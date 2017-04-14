@@ -1,24 +1,18 @@
 ---
 published: false
-id: 090417
-title: 'Cómo conseguir una pega en USA - Parte 3: Conseguir una entrevista'
-date: 2017-04-09T00:00:00+00:00
+id: 150417
+title: 'Hasta siempre GNUCHILE'
+date: 2017-04-15T00:00:00+00:00
 author: ovalenzuela
 layout: post
 guid: http://ovalenzuela.com/?p=090417
-permalink: /2017/04/pega-en-usa-parte-3-entrevista.html
+permalink: /2017/04/hasta-siempre-gnuchile.html
 categories:
   - General
-  - Noticias Destacadas
   - Opinión
 tags:
-  - amazon
-  - google
-  - linkedin
-  - profesional
-  - trabajo
-  - usa
-  - visa
+  - gnuchile
+  - fsf
 ---
 
 Al fin llegamos al tercer post relacionado con trabajar en el extranjero. En esta oportunidad quiero compartir algunos tips para conseguir una entrevista.
