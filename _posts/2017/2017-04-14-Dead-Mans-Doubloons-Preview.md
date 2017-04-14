@@ -53,6 +53,8 @@ I can't really comment much on the physical components of the game since this wa
 
 The final game will have plastic pirate ships, and even translucent ghost ships, as well as wooden meeples with the captain's images printed onto them. There'll be metal coins, tarot-sized cards, and all sorts of high production value Thundergryph Games has made themselves well known for.
 
+![Concept](/images/deadmansdoubloons/pieces.png)
+
 <h2>Perspective</h2>
 
 I was a huge fan of Dead Man's Doubloons since the first time I played. It's fast, even with a full compliment of players, fun, and so full of pirate theme that you'll be grabbing booty (heh) and talking like a pirate within a few short turns into the game. The changes I've seen from when I played in July and the latest prototype streamline the game while providing players with meaningful choices, all while keeping the game into that 1-hour sweet spot.
