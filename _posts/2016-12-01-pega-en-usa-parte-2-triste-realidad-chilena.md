@@ -77,7 +77,7 @@ Realmente puedo entender aquellas personas que confían 100% en sus capacidades 
 </p>
 
 <li style="text-align: justify;">
-  Parte 3: Cómo conseguir una entrevista
+  <a href="/2017/04/pega-en-usa-parte-3-entrevista.html">Parte 3: Cómo conseguir una entrevista</a>
 </li>
 <li style="text-align: justify;">
   Parte 4: Lo que debes hacer antes, durante y después de una entrevista.

@@ -23,7 +23,7 @@ tags:
 
 Al fin llegamos al tercer post relacionado con trabajar en el extranjero. En esta oportunidad quiero compartir algunos tips para conseguir una entrevista.
 
-## Como conseguir una entrevista
+## Cómo conseguir una entrevista
 
 En mi experiencia, existen varias formas para conseguir una entrevista en una empresa grande, aunque creo que la forma más común es gracias a un conocido
 que puede pasar tu CV y recomendarte. Sé que quizás a muchos les dará un poco de lata intentarlo de esta forma, pero para ser honesto y dejarte tranquilo,
@@ -37,9 +37,9 @@ decir:
 
 * Sintetizar el contenido, destacando logros cuantificables.
 * Ser explícito en lo que has hecho, la metodología (software, tecnología, entrenamiento, técnicas, etc) que usaste para realizar el trabajo.
-* Cuantas personas, clientes, o como la empresa y tu equipo se vio beneficiado por tu trabajo.
+* Cuántas personas, clientes, o como la empresa y tu equipo se vio beneficiado por tu trabajo.
 * Elimina trabajos que no tienen relación con el tipo de trabajo que estás buscando.
-* Usa skills, como tags, de forma que sea simple y efectivo durante la búsqueda. A nadie la interesa si sabes usar Excel, pero seguro alguien buscara Java
+* Usa skills, como tags, de forma que sea simple y efectivo durante la búsqueda. A nadie le interesa si sabes usar Excel, pero seguro alguien buscara Java
 dentro de las Skills que tienes.
 
 
@@ -59,7 +59,7 @@ He visto muchos casos de súper gurús que llegan a la entrevista sin preparaci�
 no leyeron o investigaron al respecto, no leyeron ni siquiera un artículo sobre la empresa a la que desean postular y en definitiva esperan ser elegidos por
 "la buena onda".
 
-Como todo en la vida, tener éxito en una entrevista técnica del nivel de Google, Microsoft, Amazon, etc. requiere practica y preparación. No llegar sonriendo el
+Como todo en la vida, tener éxito en una entrevista técnica del nivel de Google, Microsoft, Amazon, etc. requiere práctica y preparación. No llegar sonriendo el
 día de la entrevista. Ósea, si realmente quieres el trabajo, lo mínimo que deberías hacer es investigar sobre la empresa, su cultura, misión, visión, estrategia,
 productos, servicios, noticias recientes y además estudiar su tecnología (puedes obtener esta información del mismo aviso de empleo o de otros avisos similares).
 
@@ -70,26 +70,26 @@ Si realmente quieres el empleo, entonces prepárate, gánate el puesto, no vayas
 
 En general, cada empresa es algo diferente, sin embargo, el proceso es bastante similar:
 
-* Verifican tu CV para ver si tienes el perfil de lo que buscan. De ser así, te contactan pidiendo que envíes nuevamente tu CV (suena raro, pero es por un tema
+* Verifica tu CV para ver si tienes el perfil de lo que buscan. De ser así, te contactan pidiendo que envíes nuevamente tu CV (suena raro, pero es por un tema
 legal).
 * Tu respondes, y ellos arman una llamada telefónica. Esta llamada es para darte orientación respecto al proceso, y preguntar cosas básicas sobre tu CV. Es para
-validar que si dices: soy ingeniero en software, durante la llamada expliques que materias estudiaste cuando te preparabas como ingeniero. Si dices, "soy desarrollador
-de software" te querrán preguntar detalles, tales como en que tecnología, que tipo de apps, para que empresa, que parte del software desarrollaste, etc.
+validar que si dices: soy ingeniero en software, durante la llamada expliques qué materias estudiaste cuando te preparabas como ingeniero. Si dices, "soy desarrollador
+de software" te querrán preguntar detalles, tales como en qué tecnología, qué tipo de apps, para que empresa, que parte del software desarrollaste, etc.
 * Si logran validar todo lo que tu dijiste que fueras, te invitaran a una entrevista técnica.
-* La primera entrevista, puede ser de una llamada con preguntas como: que algoritmo usarías para XX situación, o que tecnología usarías para XX. En ocasiones, también
-compartirán contigo un ejercicio de desarrollo online, donde el entrevistador podrá ver como desarrollas. El objetivo de este ejercicio, no es ver si te equivocas o
+* La primera entrevista, puede ser de una llamada con preguntas como: qué algoritmo usarías para XX situación, o que tecnología usarías para XX. En ocasiones, también
+compartirán contigo un ejercicio de desarrollo online, donde el entrevistador podrá ver cómo desarrollas. El objetivo de este ejercicio, no es ver si te equivocas o
 no, tampoco es ver si eres un "UberCracker", lo que ellos buscan es saber cómo piensas, si eres capaz de resolver problemas lógicos y cómo. Por tanto, es importante,
-siempre explicar al entrevistador que estas intentando hacer.
+siempre explicar al entrevistador que estás intentando hacer.
 * Si pasas la entrevista inicial, te invitaran a una entrevista presencial. El proceso será similar al anterior, pero los problemas algo más complejos, por lo que
 es vital que estudies.
 * Finalmente, recibirás una carta oferta con los detalles del paquete (bonos, acciones, servicios, sueldo, etc.) y bueno, ahí comienza la cumbia.
 
-Este es una descripción sencilla e inicial, en mi próximo post publicare detalles.
+Este es una descripción sencilla e inicial, en mi próximo post publicaré detalles.
 
 
 ### Practica tu spanglish
 
-Si, las entrevistas son en inglés. No, no hay excepciones. Aunque muchas veces no necesitaras tener un inglés fluido a nivel nativo, tu nivel de inglés debe permitirte
+Si, las entrevistas son en inglés. No, no hay excepciones. Aunque muchas veces no necesitarás tener un inglés fluido a nivel nativo, tu nivel de inglés debe permitirte
 entender instrucciones, realizar comentarios, entender la documentación y ser capaz de explicar un modelo de arquitectura de sistemas en forma básica.
 
 Por lo que, si no te sientes al nivel, entonces práctica, estudia y prepárate.
@@ -103,17 +103,17 @@ desarrollo orientado a objetos. Sin embargo, hay un libro en particular que DEBE
 
 Quieres seguir leyendo el post? vamos entonces que seguro te mereces el trabajo.
 
-El libro mencionado es una excelente herramienta que no solo te ensenara cómo funciona el proceso, también te dará los tips necesarios para que te vaya bien en
+El libro mencionado es una excelente herramienta que no solo te enseñará cómo funciona el proceso, también te dará los tips necesarios para que te vaya bien en
 la entrevista. El libro cubre cosas tales como: vestimenta recomendada para entrevista, que cosas preguntar para parecer inteligente, que puedes esperar del proceso,
 etc.
 
-### Averigua de que trata el puesto
+### Averigua de qué trata el puesto
 
 Antes de responder al reclutador sobre cuál es tu pretensión de renta, o hacer preguntas tontas sobre el trabajo, busca alguna referencia. Una excelente fuente de datos
-es el sitio web Glassdoor.com, donde podrás encontrar toda la información relevante al cargo que estas postulando, por ejemplo: "SDE Salary Amazon".
+es el sitio web Glassdoor.com, donde podrás encontrar toda la información relevante al cargo que estás postulando, por ejemplo: "SDE Salary Amazon".
 
-Si no entiendes bien como describen el sueldo, fíjate bien en el tema de package/vs salary. El sueldo o salary es el pago mensual, que normalmente lo presentan por
-un monto anual, en ocasiones esto puede ser alto o bajo, pero ten claro que la mayoria de las empresas ofrecen otros montos adicionales al sueldo que en su conjunto
+Si no entiendes bien cómo describen el sueldo, fíjate bien en el tema de package/vs salary. El sueldo o salary es el pago mensual, que normalmente lo presentan por
+un monto anual, en ocasiones esto puede ser alto o bajo, pero ten claro que la mayoría de las empresas ofrecen otros montos adicionales al sueldo que en su conjunto
 le llaman paquete. Un paquete típico por ejemplo podría ser:
 
 * Sueldo: Entre 120K anuales
@@ -131,4 +131,10 @@ desde servicios de traslado en avión/barco para tus cosas hasta abogados dedica
 
 ## Próximamente
 
-* Parte 4: Lo que debes hacer antes, durante y después de una entrevista.
+* Parte 4: Lo que debes hacer antes, durante y después de una entrevista:
+Expondré algo más de detalle respecto a qué libros leer, cómo prepararte para la entrevista técnica y que hacer durante la misma. No te pierdas mi próximo post.
+
+## Anteriores
+
+* <a href="/2016/03/pega-en-usa-parte-1-curriculum.html">Parte 1: El curriculum</a>
+* <a href="/2016/12/pega-en-usa-parte-2-triste-realidad-chilena.html">Parte 2: La triste realidad chilena</a>
