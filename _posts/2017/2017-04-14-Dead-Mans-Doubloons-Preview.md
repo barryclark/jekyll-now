@@ -1,6 +1,6 @@
 ---
 title: Preview - Dead Man's Doubloons
-date: 2017-04-14T07:00:00.000Z
+date: {}
 category: preview
 tags:
   - kickstarter
@@ -19,7 +19,7 @@ published: true
 banner: dmd.png
 ---
 
-![Cytosis](/images/deadmansdoubloons/cover.jpg){: .float-right}
+![Dead Man's Doubloons](/images/deadmansdoubloons/cover.jpg){: .float-right}
 **Designers:**  Jason Miceli \\
 **Publisher:** [Thundergryph Games](https://gotgeniusgames.com)\\
 **Year:** 2017\\
