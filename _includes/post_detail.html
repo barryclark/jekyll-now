@@ -5,5 +5,5 @@
 </h1>
 <div class="eyebrow">{{ post.date | date: "%d %b %Y" }} {% if post.category %} in <a href="/category/#{{ post.category | slugify }}">{{ post.category }}</a> {% endif %} by <em><a href="{{ author.apage }}">{{ author.display_name }}</a></em></div>
 <div class="entry-content"><a href="{{ site.baseurl }}{{ post.url }}" class="small-link"><img src="/images/banners/featured.jpg"/></a><br/><br/>
-<a href="{{ site.baseurl }}{{ post.url }}" class="small-link">Read details</a><br/><br/></div>
+<a href="{{ site.baseurl }}{{ post.url }}" class="small-link">Read more</a><br/><br/></div>
 {% endif %}
