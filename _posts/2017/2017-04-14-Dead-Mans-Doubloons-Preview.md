@@ -28,7 +28,7 @@ author: robk
 
 
 <h2>Prelude</h2>
-<iframe style="float:right;margin-left:10px;src="https://www.kickstarter.com/projects/gonab/dead-mans-doubloons/widget/card.html?v=2" width="220" height="420" frameborder="0" scrolling="no"></iframe>
+<iframe style="float:right;margin-left:10px;" src="https://www.kickstarter.com/projects/gonab/dead-mans-doubloons/widget/card.html?v=2" width="220" height="420" frameborder="0" scrolling="no"></iframe>
 
 Dead Man's Doubloons has been on my radar for quite some time now. I played a [very early prototype](http://pawnsperspective.com/Dead-Mans-Doubloons-Tabletop-Simulator/) over Tabletop Simulator with the game's designer, Jason Miceli, back in July of last year. I've followed its progress landing a publisher, Thundergryph Games, and have been eagerly awaiting both it's announcement and Kickstarter launch. Well, that time has come and Jason invited me over to give the latest version of the game a shot. A lot has changed since my last play and it's all for the better.
 
