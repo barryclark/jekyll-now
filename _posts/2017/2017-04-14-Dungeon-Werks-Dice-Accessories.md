@@ -1,6 +1,6 @@
 ---
 title: Dungeon Werks Dice Accessories
-date: 2017-04-14T14:30:00.000Z
+date: 2017-04-14 14:30:00 Z
 category: review
 tags:
   - review
