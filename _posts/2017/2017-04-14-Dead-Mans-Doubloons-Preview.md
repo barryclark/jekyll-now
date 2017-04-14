@@ -10,7 +10,7 @@ tags:
 - thundergryph games
 - geek fever games
 layout: post
-description: "Cytosis is board game taking place inside a human cell. Players compete to build enzymes, hormones and receptors and fend off attacking Viruses."
+description: "Dead Man's Doubloons will have you talking like a pirate after just a few turns. Time to grab the booty and run."
 featured: dmd.png
 author: robk
 ---
