@@ -1,6 +1,6 @@
 ---
 title: Preview - Dead Man's Doubloons
-date: {}
+date: 2017-04-14T07:30:00.000Z
 category: preview
 tags:
   - kickstarter
