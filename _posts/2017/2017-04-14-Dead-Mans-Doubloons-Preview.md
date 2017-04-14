@@ -1,18 +1,22 @@
 ---
-title: "Preview - Dead Man's Doubloons"
-date: 2017-04-14 7:00:00 Z
+title: Preview - Dead Man's Doubloons
+date: 2017-04-14T07:00:00.000Z
 category: preview
 tags:
-- kickstarter
-- preview
-- games
-- dead mans doubloons
-- thundergryph games
-- geek fever games
+  - kickstarter
+  - preview
+  - games
+  - dead mans doubloons
+  - thundergryph games
+  - geek fever games
 layout: post
-description: "Dead Man's Doubloons will have you talking like a pirate after just a few turns. Time to grab the booty and run."
+description: >-
+  Dead Man's Doubloons will have you talking like a pirate after just a few
+  turns. Time to grab the booty and run.
 featured: dmd.png
 author: robk
+published: true
+banner: dmd.png
 ---
 
 ![Cytosis](/images/deadmansdoubloons/cover.jpg){: .float-right}
