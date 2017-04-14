@@ -1,6 +1,7 @@
 ---
 published: true
-date: {}
+title: Dungeon Werks Dice Accessories
+date: 2017-04-14T14:30:00.000Z
 category: review
 tags:
   - review
@@ -13,7 +14,6 @@ description: >-
   dice trays, I decided to check out Dungeon Werks.
 featured: dungeonwerks.jpg
 author: frankg
-title: Dungeon Werks Dice Accessories
 ---
 
 
