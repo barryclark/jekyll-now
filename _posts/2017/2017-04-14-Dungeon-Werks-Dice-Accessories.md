@@ -1,6 +1,6 @@
 ---
 published: true
-date: 2017-04-14T14:30:00.000Z
+date: {}
 category: review
 tags:
   - review
@@ -22,7 +22,7 @@ In the same vein of [my recent post](http://pawnsperspective.com/Kentucky-Sawdus
 * [Red Oak Dice Tower with choice of suede or foam liner](https://www.etsy.com/listing/109438161/red-oak-dice-tower-with-choice-of-suede?ref=shop_home_active_4)
 * [Suede Leather Collapsible Dice Tray](https://www.etsy.com/listing/488745625/suede-leather-collapsible-dice-tray?ref=shop_home_feat_1)
 
-![Dungeon Werks Tray](/images/dungeonwerks/dw1.jpg)
+![Dungeon Werks Tray](/images/dungeonwerks/dw1.jpg) 
 
 The tray and tower are constructed from smooth red oak and high-density foam. The tray’s sides are 1.5" high and are sanded to a smooth finish. The tray is shipped unstained. Dungeon Werks offers 25 different foam color options to customize your tray. Additionally, the tray has foam feet to protect your furniture. The tray sells for $19.75. I threw a few dice around during a late-night game of Imperial Assault and they glided smoothly across the tray surface, settling nicely with little bounce that might result in a lost die.
 
