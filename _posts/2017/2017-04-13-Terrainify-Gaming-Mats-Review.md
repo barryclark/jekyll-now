@@ -1,16 +1,18 @@
 ---
-title: "Review - Terrainify Gaming Mats"
-date: 2017-04-13 20:00:00 Z
+title: Review - Terrainify Gaming Mats
+date: 2017-04-13T20:00:00.000Z
 category: review
 tags:
-- games
-- review
-- accessories
-- terrainify
+  - games
+  - review
+  - accessories
+  - terrainify
 layout: post
-description: "I have been on the hunt for a solid game mat. Terrainify delivered."
+description: I have been on the hunt for a solid game mat. Terrainify delivered.
 featured: terrainify.jpg
 author: frankg
+published: true
+banner: dmd.png
 ---
 
 I have been on the hunt for a solid game mat. Placing delicate cardboard game tiles directly on your kitchen table inevitably leads to scratching. [John Casiello](https://www.etsy.com/people/johncasiello1337) of [Terrainify](https://www.etsy.com/shop/Terrainify) was generous enough to send over a few mats for me to check out. Terrainify makes a number of game mats in various sizes and patterns and also has a great line of matching “scatter terrain.” The terrain is highly detailed and looks excellent, but comes with a weighty price tag. However, Terrainify’s game mats are on the more affordable side, compared with other game mats on the market.
