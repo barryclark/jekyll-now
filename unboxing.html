@@ -1,8 +1,10 @@
 ---
 title: Unboxings
 layout: listing
-description: What's inside the packaging of all these great games and toys? Let's
-  find out together!
+description: >-
+  What's inside the packaging of all these great games and toys? Let's find out
+  together!
+published: true
 ---
 
 <h1>Unboxings</h1>
@@ -20,10 +22,10 @@ description: What's inside the packaging of all these great games and toys? Let'
 
         <div class="entry">
           {% if post.featured %}
-            <a href="{{ site.baseurl }}{{ post.url }}" class="small-link">Read details</a>
+            <a href="{{ site.baseurl }}{{ post.url }}" class="small-link">Read more</a>
           {% else %}
             <p>  {{ post.content | strip_html| truncatewords:20}}</p>
-            <a href="{{ site.baseurl }}{{ post.url }}" class="small-link">Read details</a>
+            <a href="{{ site.baseurl }}{{ post.url }}" class="small-link">Read more</a>
           {% endif %}
         </div>
       </article>
