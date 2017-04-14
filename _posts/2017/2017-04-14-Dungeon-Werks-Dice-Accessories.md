@@ -13,6 +13,7 @@ description: >-
   dice trays, I decided to check out Dungeon Werks.
 featured: dungeonwerks.jpg
 author: frankg
+title: Dungeon Werks Dice Accessories
 ---
 
 
