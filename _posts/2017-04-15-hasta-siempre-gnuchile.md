@@ -1,11 +1,11 @@
 ---
-published: false
+published: true
 id: 150417
 title: 'Hasta siempre GNUCHILE'
 date: 2017-04-15T00:00:00+00:00
 author: ovalenzuela
 layout: post
-guid: http://ovalenzuela.com/?p=090417
+guid: http://ovalenzuela.com/?p=150417
 permalink: /2017/04/hasta-siempre-gnuchile.html
 categories:
   - General
