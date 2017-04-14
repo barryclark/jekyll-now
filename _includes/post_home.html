@@ -9,10 +9,10 @@
 
       <div class="entry">
         {% if post.featured %}
-          <a href="{{ site.baseurl }}{{ post.url }}" class="small-link">Read details</a>
+          <a href="{{ site.baseurl }}{{ post.url }}" class="small-link">Read more</a>
         {% else %}
           <p>  {{ post.content | strip_html| truncatewords:20}}</p>
-          <a href="{{ site.baseurl }}{{ post.url }}" class="small-link">Read details</a>
+          <a href="{{ site.baseurl }}{{ post.url }}" class="small-link">Read more</a>
         {% endif %}
       </div>
     </article>
