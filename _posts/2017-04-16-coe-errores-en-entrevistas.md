@@ -24,7 +24,8 @@ Al fin llegamos al tercer post relacionado con trabajar en el extranjero. En est
 * Durante un proceso de entrevista, a un candidato ya casi al final y a punto de ser contratado, le toca la entrevista final con su posible manager, que es más que todo una formalidad. 
 En este caso era una Senior Software Developer Manager, con más de 10 años de experiencia. El postulante va y le pregunta durante la entrevista: "Y tu, siendo mujer, como es que has llegado a tener este puesto tan importante?"... claramente no fue contratado =)
 
-* Un postulante desarrolla en Java todo el dia y durante toda la semana, ha desarrollado en java por los últimos 5 años y tiene un nivel de conocimientos altísimo. Llega a la entrevista técnica, le piden desarrollar el método de la burbuja y le dan 30 minutos para hacerlo… decide hacerlo en C para que se vea mas cool =)
+* Un postulante desarrolla en Java todo el dia y durante toda la semana, ha desarrollado en java por los últimos 5 años y tiene un nivel de conocimientos altísimo en Java.
+Llega a una entrevista técnica, le piden desarrollar el método de la burbuja y le dan 30 minutos para hacerlo… decide hacerlo en C que no domina, solo para que el entrevistador piense que el es mas cool =)
 
 * Un candidato a SDM con amplia experiencia en desarrollo y diseño de software, casi completa el proceso y en la última entrevista, se pone a discutir con el entrevistador sobre la venida del señor jesucristo…
 
