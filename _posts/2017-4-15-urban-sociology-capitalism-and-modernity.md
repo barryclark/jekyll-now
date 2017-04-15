@@ -1,10 +1,7 @@
 ---
 layout: post
-title: Hello World
+title: 자본주의 도시와 근대성 - 마이크 새비지, 알랜 와드 / 김왕배, 박세훈 옮김
 ---
-
-자본주의 도시와 근대성 - 마이크 새비지, 알랜 와드 지음 / 김왕배, 박세훈 옮김
-============================================================
 
 [책 페이지](http://www.kyobobook.co.kr/product/detailViewKor.laf?ejkGb=KOR&mallGb=KOR&barcode=9788946045828&orderClick=LAG&Kc=)
 
