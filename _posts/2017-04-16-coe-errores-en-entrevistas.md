@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 id: 160417
 title: 'COE - Errores en Entrevistas'
 date: 2017-04-16T00:00:00+00:00
@@ -15,7 +15,8 @@ tags:
   - trabajo
 ---
 
-Al fin llegamos al tercer post relacionado con trabajar en el extranjero. En esta oportunidad quiero compartir algunos tips para conseguir una entrevista.
+Mientras he intentado ayudar a candidatos a conseguir trabajo en varias empresas, he visto y encontrado de todo. Por lo que usare este post para ir escribiendo las historias dignas de recordar. Si 
+te interesa participar, puedes enviarme un PR por GitHub.
 
 <center>
 	<img src="/images/picard.gif">
