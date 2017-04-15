@@ -15,7 +15,7 @@ author: robk
 published: true
 ---
 
-![MoonQuake Escape](/images/moonquake/cover.jpg){: .float-right}
+![MoonQuake Escape](/images/moonquake/cover.png){: .float-right}
 **Designers:**  Jeff Johnston \\
 **Publisher:** [Breaking Games](https://breakinggames.com/products/moonquake-escape)\\
 **Year:** 2010\\
