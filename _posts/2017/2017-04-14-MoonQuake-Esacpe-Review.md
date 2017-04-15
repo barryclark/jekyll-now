@@ -57,7 +57,7 @@ Of course this was the most brief overview of the basic rules. There's also adva
 
 <h2>Pieces</h2>
 
-![MoonQuake Setup](/images/moonquake/boardsetup.jpg){: .float-right}The main gimmick of MoonQuake Escape calls for a pretty detailed board setup. The board is made of several cardboard rings and bases to that each level can spin as needed. The plastic arm also connects to the lower base for the moon spinner. It's really impressive once completely set up.
+![MoonQuake Setup](/images/moonquake/pic2829125_md.jpg){: .float-right}The main gimmick of MoonQuake Escape calls for a pretty detailed board setup. The board is made of several cardboard rings and bases to that each level can spin as needed. The plastic arm also connects to the lower base for the moon spinner. It's really impressive once completely set up.
 
 Unfortunately, the main disc holder's placement hex wasn't attached to my copy. Thankfully designer Jeff Johnston told me how to fix it, and a little extra strength glue fixed the issue. Jeff assured me that future copies of the game will fix this issue. Currently, my board is working like a charm, so no complaints here.
 
