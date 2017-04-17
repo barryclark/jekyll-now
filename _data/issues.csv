@@ -4084,7 +4084,7 @@ link: ''
 immagine: ''
 data: 30/01/2017
 </yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2328,203899753,2017-01-29 21:59:22,2017-01-29 21:58:08,"A #Saletta, fraz. #Amatrice, serve una lavatrice (anche usata)",42.6713248,13.2720634,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Sisma Ottobre"", ""Twitter""]",,,"{""cosa"": ""A #Saletta, frazione di #Amatric, serve una lavatrice (anche usata)"", ""data"": ""29/01/2017"", ""descrizione"": ""Serve con urgenza una lavatrice anche usata ma funzionante a Saletta. Grazie. Monica Maggi"", ""email"": ""maggi.monica@gmail.com"", ""immagine"": """", ""indirizzo"": ""SP20, Pedivilla, Amatrice, RI, LAZ, 02011, Italia"", ""lat"": ""42.6713248"", ""link"": ""https://twitter.com/libra2puntozero/status/825800680380194817"", ""lon"": ""13.2720634"", ""tel"": """"}","<pre><yamldata>tel: ''
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2328,203899753,2017-04-17 22:42:48,2017-01-29 21:58:08,"A #Saletta, fraz. #Amatrice, serve una lavatrice (anche usata)",42.6713248,13.2720634,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Sisma Ottobre"", ""Twitter""]",,,"{""cosa"": ""A #Saletta, frazione di #Amatric, serve una lavatrice (anche usata)"", ""data"": ""29/01/2017"", ""descrizione"": ""Serve con urgenza una lavatrice anche usata ma funzionante a Saletta. Grazie. Monica Maggi"", ""email"": ""maggi.monica@gmail.com"", ""immagine"": """", ""indirizzo"": ""SP20, Pedivilla, Amatrice, RI, LAZ, 02011, Italia"", ""lat"": ""42.6713248"", ""link"": ""https://twitter.com/libra2puntozero/status/825800680380194817"", ""lon"": ""13.2720634"", ""tel"": """"}","<pre><yamldata>tel: ''
 email: maggi.monica@gmail.com
 cosa: 'A #Saletta, frazione di #Amatric, serve una lavatrice (anche usata)'
 descrizione: 'Serve con urgenza una lavatrice anche usata ma funzionante a Saletta. Grazie. Monica Maggi'
@@ -4094,7 +4094,7 @@ lon: '13.2720634'
 link: 'https://twitter.com/libra2puntozero/status/825800680380194817'
 immagine: ''
 data: 29/01/2017
-</yamldata></pre>",open
+</yamldata></pre>",closed
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2327,203897931,2017-01-29 21:54:56,2017-01-29 21:29:28,Offriamo alloggio in villetta in provincia di Bergamo,45.879525,9.989516,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""29/01/2017"", ""descrizione"": ""Offriamo alloggio in villetta a schiera composta da 3 locali bagno e piccola cucina (eventualmente box), Songavazzo (Bg)."", ""email"": ""grossi.claudio@gmail.com"", ""immagine"": """", ""indirizzo"": ""Via San Bartolomeo, Songavazzo, Bergamo, Lombardia, 24023, Italia"", ""lat"": ""45.879525"", ""link"": """", ""lon"": ""9.989516"", ""tel"": ""02 90003487   338 411 72 40""}","<pre><yamldata>tel: '02 90003487   338 411 72 40'
 email: grossi.claudio@gmail.com
 descrizione: 'Offriamo alloggio in villetta a schiera composta da 3 locali bagno e piccola cucina (eventualmente box), Songavazzo (Bg).'
