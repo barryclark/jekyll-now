@@ -2,16 +2,187 @@
 layout: default
 ---
 
-<article class="post">
-  <h1>{{ page.title }}</h1>
+{% if page.minutes %}
+  {% assign minutes = page.minutes %}
+{% else %}
+  {% assign minutes = content | number_of_words | divided_by: 180 %}
+  {% if minutes == 0 %}{% assign minutes = 1 %}{% endif %}
+{% endif %}
 
-  <div class="entry">
-    {{ content }}
+<div class="container-fluid single">
+  <div class="row">
+
+    <div itemscope itemtype="http://schema.org/Article" class="col-md-12 article">
+      {% if site.data.thumbnail[page.thumbnail] %}
+      <div class="thumb">
+        <img itemprop="image" src="{{ site.data.thumbnail[page.thumbnail] }}" alt="Thumbnail: {{ page.thumbnail }}" />
+      </div>
+      {% elsif page.thumbnail %}
+      <div class="thumb">
+        <i class="fa fa-{{ page.thumbnail }} fa-4x"></i>
+      </div>
+      {% endif %}
+
+      <h1 class="header" itemprop="name">{{ page.title }}</h1>
+
+      <div class="author">
+        <small><i>
+          {% if page.author %}
+          by
+          <span itemprop="author">
+            {% if site.google_plus_link %}
+              <a rel="author" href="{{ site.google_plus_link }}">
+            {% endif %}
+            <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+              <span itemprop="name">{{ page.author }}</span>
+            </span>
+            {% if site.google_plus_link %}
+              </a>
+            {% endif %}
+          </span>
+          {% endif %}
+          on <span itemprop="datePublished" content="2014-08-28">{{ page.date | date: "%B %-d, %Y" }}</span>
+          {% if page.categories != empty %} under {% for category in page.categories limit:1 %}{{ category }}{% endfor %}{% endif %}
+        </i></small>
+      </div>
+
+      <div class="read-time">
+        <small>
+          Чтение на {{ minutes }} мин.
+        </small>
+      </div>
+
+      <div class="content-panel content">
+
+        {% if page.series %}
+          This post is part of the series '{{ page.series }}':
+          <ol class="series">
+          {% for apost in site.posts reversed %}
+            {% if page.series == apost.series %}
+              <li>
+                {% if page.title == apost.title %}
+                  {% assign nextpost = true %}
+                  {{ apost.title }}
+                {% else %}
+                  {% if nextpost == true %}
+                    {% assign seriesnext = apost %}
+                  {% endif %}
+                  {% assign nextpost = false %}
+                  <a href="{{ apost.url }}">{{ apost.title }}</a>
+                {% endif %}
+              </li>
+            {% endif %}
+          {% endfor %}
+          </ol>
+        {% endif %}
+
+        <span itemprop="articleBody">{{ content }}</span>
+
+        {% if page.series %}
+          {% if seriesnext %}
+            <i>Продолжение <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+:</i> <a href="{{ seriesnext.url }}">{{ seriesnext.title }}</a>
+          {% endif %}
+        {% endif %}
+
+        {% if site.addthis_id %}
+        <div class="share">
+          <!-- Go to www.addthis.com/dashboard to customize your tools -->
+          <div class="addthis_sharing_toolbox"></div>
+        </div>
+        {% endif %}
+
+        {% if page.tags and page.tags.size > 0 %}
+        <div class="tags">
+          <small>
+          <i class="fa fa-tags"></i>
+            {{ page.tags | join: ', ' }}
+          </small>
+        </div>
+        {% endif %}
+
+      </div>
+
+      {% if site.twitter_username and site.disqus_account %}
+      <div class="content-panel feedback">
+        Я <i class="fa fa-heart"></i> обратную связь<br />
+        Так что пиште мне в твиттер <a href="http://www.twitter.com/{{ site.twitter_username }}">@{{ site.twitter_username }}</a> или оставьте коммент ниже!
+      </div>
+      {% elsif site.twitter_username %}
+      <div class="content-panel feedback">
+        Я <i class="fa fa-heart"></i> обратную связь.<br />
+        Так что пиште мне, что вы думаете по теме в твиттер <a href="http://www.twitter.com/{{ site.twitter_username }}">@{{ site.twitter_username }}</a>!
+      </div>
+      {% elsif site.disqus_account %}
+      <div class="content-panel feedback">
+        Я <i class="fa fa-heart"></i> обратную связь.<br />
+        Так что пиште мне, что вы думаете по теме в комментариях ниже!
+      </div>
+      {% endif %}
+
+      {% if site.disqus_account %}
+      <div class="content-panel comments">
+        <div id="disqus_thread">
+          <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+          <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        </div>
+      </div>
+      {% endif %}
+
+      {% if site.related_posts.length > 0 %}
+      <div class="content-panel related clearfix">
+        {% for post in site.related_posts limit:1 %}
+        <div class="related-header">
+          <a href="{{ site.baseurl }}{{ post.url }}">Read More</a>
+        </div>
+          <div class="title">
+            <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+          </div>
+          <div class="excerpt">
+             {% if post.summary %}
+              {{ post.summary | strip_html | truncatewords:30 }}
+             {% else %}
+              {{ post.excerpt | strip_html | truncatewords:30 }}
+             {% endif %}
+            <a href="{{ site.baseurl }}{{ post.url }}">Continue Reading</a>
+          </div>
+        {% endfor %}
+        <hr />
+        <div class="previous previous-next">
+          {% if page.previous %}
+          <p>
+            <a href="{{ site.baseurl }}{{ page.previous.url }}">{{ page.previous.title }}</a>
+          </p>
+          <p class="date">Published {{ page.previous.date | date: "%B %-d, %Y" }}</p>
+          {% endif %}
+        </div>
+        <div class="next previous-next">
+          {% if page.next %}
+          <p>
+            <a href="{{ site.baseurl }}{{ page.next.url }}">{{ page.next.title }}</a>
+          </p>
+          <p class="date">Published {{ page.next.date | date: "%B %-d, %Y" }}</p>
+          {% endif %}
+        </div>
+      </div>
+      {% endif %}
+
+    </div>
+
   </div>
 
-  <div class="date">
-    Written on {{ page.date | date: "%B %e, %Y" }}
-  </div>
+</div>
 
-  {% include disqus.html %}
-</article>
+{% if site.disqus_account %}
+<script type="text/javascript">
+/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+function disqus_config() { this.experiment.enable_scroll_container = true; }
+var disqus_shortname = "{{ site.disqus_account }}"; // required: replace example with your forum shortname
+/* * * DON'T EDIT BELOW THIS LINE * * */
+(function() {
+  var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+{% endif %}

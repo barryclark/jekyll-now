@@ -1,0 +1,48 @@
+---
+layout: default
+title: 404
+permalink: /404.html
+---
+
+<div class="container-fluid index error">
+  <div class="row">
+
+    <div class="col-md-12 content-panel articles">
+      <h1 class="header author-header">404</h1>
+
+      <div class="error-text">
+        Извини, но этой страницы не существует.
+      </div>
+
+      <div class="error-text">
+        <a href="{{ site.baseurl }}/">Главная</a> |
+        <a href="{{ site.baseurl }}/posts/">Все посты</a> |
+        <a href="{{ site.baseurl }}/search/">Поиск</a>
+      </div>
+
+      {% include social_links.html %}
+
+    </div>
+
+  </div>
+
+  <div class="content-panel related">
+    {% for post in site.posts limit:1 %}
+      <div class="related-header">
+        <a href="{{ site.baseurl }}{{ post.url }}">Похожие статьи</a>
+      </div>
+      <div class="title">
+        <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+      </div>
+      <div class="excerpt">
+         {% if post.summary %}
+          {{ post.summary | strip_html | truncatewords:30 }}
+         {% else %}
+          {{ post.excerpt | strip_html | truncatewords:30 }}
+         {% endif %}
+        <a href="{{ site.baseurl }}{{ post.url }}">Читать далее</a>
+      </div>
+    {% endfor %}
+  </div>
+
+</div>
