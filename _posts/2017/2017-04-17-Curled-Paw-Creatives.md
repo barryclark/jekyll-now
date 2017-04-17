@@ -20,19 +20,19 @@ published: true
 
 Based out of Birmingham, Alabama, [Curled Paw Creatives](https://www.etsy.com/shop/CurledPawCreatives?ref=l2-shopheader-name) makes a number of high-quality acrylic tokens for Star Wars: Destiny and Star Wars: X-Wing. Andrew Nuckols and Hollie Baker oversee this graphic design studio specializing in creating custom canvas wraps and original design. All tokens are professionally laser cut in house and all of the artwork is original. Shown here are a few examples of their work. 
 
-![Curled Paw Creatives Tokens](/images/curledpawcreative/cpc1.png)
+![Curled Paw Creatives Tokens](/images/curledpawcreatives/cpc1.png)
 
 The [Acrylic Shield Tokens](https://www.etsy.com/listing/286850227/acrylic-shield-tokens?ref=shop_home_active_5) set for Star Wars: X-Wing comes in sets of 5 or 10 ($3.50 or $7.00). The tokens are printed on light-blue transparent acrylic.
 
-![Curled Paw Creatives Tokens](/images/curledpawcreative/cpc2.png)
+![Curled Paw Creatives Tokens](/images/curledpawcreatives/cpc2.png)
 
 The [Acrylic Large Shield Token](https://www.etsy.com/listing/496163329/acrylic-large-shield-set?ref=shop_home_active_5) set is printed on the same light-blue transparent acrylic and comes in sets of 5 or 10 ($4.00 or $8.00). Alternatively, Curled Paw Creatives offers a [Split Shield](https://www.etsy.com/listing/480704470/acrylic-split-shield-set?ga_search_query=resource&ref=shop_items_search_5) Set. This set comes with 3 sets of transparent Light-blue tokens (9 tokens total). Each section of the shield can be removed to represent falling or gaining of shields to add some thematic play to your game. Just be careful no to misplace these small pieces. 
 
-![Curled Paw Creatives Tokens](/images/curledpawcreative/cpc3.png)
+![Curled Paw Creatives Tokens](/images/curledpawcreatives/cpc3.png)
 
 The Star Wars: Destiny [Acrylic Resource Token Set](https://www.etsy.com/listing/494200331/acrylic-resource-token-set?ga_search_query=resource&ref=shop_items_search_2) comes in sets of 6 or 12 ($4.00 or $8.00) and is printed on either transparent dark red or yellow acrylic. These tokens can also be used in Star Wars: Imperial Assault as a substitute for your crate tokens. The tokens are highly detailed and beautiful. Curled Paw Creatives ships all of their acrylic items with the protective backing on to keep the tokens protected during shipment. You can see an example of this in the image showing the yellow and red resource token sets. This gives you the option to customize your product in any color you desire. Just peel the backing off with your fingernail or toothpick (don’t worry, it won't scratch the acrylic).
 
-![Curled Paw Creatives Tokens](/images/curledpawcreative/cpc4.png)
+![Curled Paw Creatives Tokens](/images/curledpawcreatives/cpc4.png)
 
 The [Acrylic Damage Counter Set](https://www.etsy.com/listing/494199755/acrylic-damage-counter-set?ga_search_query=resource&ref=shop_items_search_1) includes: 
 
@@ -42,7 +42,7 @@ The [Acrylic Damage Counter Set](https://www.etsy.com/listing/494199755/acrylic-
 
 These tokens are great for Star Wars: Destiny or any other game that counts hit points or damage. 
 
-![Curled Paw Creatives Tokens](/images/curledpawcreative/cpc5.png)
+![Curled Paw Creatives Tokens](/images/curledpawcreatives/cpc5.png)
 
 They also make an Acrylic Token Set for Star Wars: The Card Game. This set includes:
 
