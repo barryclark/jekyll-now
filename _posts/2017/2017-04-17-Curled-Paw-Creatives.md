@@ -13,7 +13,7 @@ tags:
   - star wars the card game
 layout: post
 description: "Based out of Birmingham, Alabama, Curled Paw Creatives makes a number of high-quality acrylic tokens for Star Wars: Destiny and Star Wars: X-Wing"
-featured: curledpawcreatives.jpg
+featured: curledpawcreatives.jpeg
 author: frankg
 published: true
 ---
