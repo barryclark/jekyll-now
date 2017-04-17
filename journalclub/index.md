@@ -30,11 +30,13 @@ Journal club meetings currently take place on Wednesdays at 12:00 pm in seminar 
 - March 15: no journal club, Spring break!
 - March 22: Luca Mazzucato
 - March 29: Yuan Zhao
-- April 5: Jin Wang
+- April 5: Jin Wang (rescheduled)
 - April 12: Giancarlo La Camera 
-- April 19: Naz Gulce
+- April 19: Andrea Giovannucci (invited speaker, Simons Foundation)
 - April 26: Memming Park
 - May 3: Phillip Kang
+- May 10: Jin Wang
+- May 17: Naz Gulce
 
 
 
