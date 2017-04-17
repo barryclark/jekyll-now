@@ -1,0 +1,154 @@
+---
+layout: post
+title: "Meta-analysis with prescient power analysis: Comment on DataColada"
+date: March 25, 2017
+tags: [meta-analysis]
+---
+
+```{r}
+
+set.seed(20170326)
+
+# parameters, following DataColada
+studies <- 500
+mean_effect <- 0.6
+sd_effect <- 0.15
+mean_expected <- mean_effect
+sd_expected <- sd_effect
+corr_expected <- 0.6
+alpha <- .05
+power <- .80
+
+# simulate true effects
+delta_i <- rnorm(studies, mean = mean_effect, sd = sd_effect)
+
+# simulate expected minimum detectable effects
+beta <- corr_expected * sd_expected / sd_effect
+sigma <- sd_expected * sqrt(1 - corr_expected^2)
+e_i <- rnorm(studies, mean = 0, sd = sigma)
+MDES_i <- mean_expected + beta * (delta_i - mean_effect) + e_i
+
+# determine total sample size per study
+min_sample_size <- function(d, power, alpha) {
+  n_per <- power.t.test(delta = d, power = power, sig.level = alpha)$n
+  2 * ceiling(n_per)
+}
+
+N_i <- sapply(MDES_i, min_sample_size, power = power, alpha = alpha)
+
+# simulate standardized mean difference estimates (Hedges' g's)
+J <- 1 - 3 / (4 * N_i - 9)
+g_i <- J * 2 / sqrt(N_i) * 
+  rnorm(n = studies, mean = delta_i * sqrt(N_i) / 2) / 
+  sqrt(rchisq(n = studies, df = N_i - 2) / (N_i - 2))
+Vg_i <- J^2 * (4 / N_i + g_i^2 / (N_i - 2))
+```
+
+```{r}
+library(metafor)
+RE_meta <- rma(yi = g_i, vi = Vg_i, method = "HE")
+(tf <- trimfill(RE_meta))
+```
+```{r}
+RE_meta
+FE_meta <- rma(yi = g_i, vi = Vg_i, method = "FE")
+robust(FE_meta, cluster = 1:length(g_i))
+```
+
+```{r}
+library(sandwich)
+library(lmtest)
+PET <- lm(g_i ~ sqrt(Vg_i), weights = 1 / Vg_i) 
+coeftest(PET, vcov = vcovHC)
+PEESE <- lm(g_i ~ Vg_i, weights = 1 / Vg_i)
+coeftest(PEESE, vcov = vcovHC)
+```
+```{r}
+EQ_meta <- lm(g_i ~ 1)
+coeftest(EQ_meta, vcov = vcovHC)
+```
+
+```{r}
+MDES_cent <- MDES_i - mean(MDES_i)
+(RE_adj <- rma(g_i ~ MDES_cent, vi = Vg_i, method = "HE"))
+FE_adj <- rma(g_i ~ MDES_cent, vi = Vg_i, method = "FE")
+robust(FE_adj, cluster = 1:length(g_i))
+```
+
+```{r}
+# determine total sample size per study
+min_sample_size <- function(d, power, alpha) {
+  n_per <- power.t.test(delta = d, power = power, sig.level = alpha)$n
+  2 * ceiling(n_per)
+}
+  
+r_SMD <- function(studies, mean_effect, sd_effect, 
+                  mean_expected = mean_effect, sd_expected = sd_effect, 
+                  corr_expected = 0.6, alpha = .05, power = .80) {
+  delta_i <- rnorm(studies, mean = mean_effect, sd = sd_effect)
+
+  # simulate expected minimum detectable effects
+  beta <- corr_expected * sd_expected / sd_effect
+  sigma <- sd_expected * sqrt(1 - corr_expected^2)
+  e_i <- rnorm(studies, mean = 0, sd = sigma)
+  MDES_i <- mean_expected + beta * (delta_i - mean_effect) + e_i
+  
+  N_i <- sapply(MDES_i, min_sample_size, power = power, alpha = alpha)
+  
+  # simulate standardized mean difference estimates (Hedges' g's)
+  J <- 1 - 3 / (4 * N_i - 9)
+  g_i <- J * 2 / sqrt(N_i) * 
+    rnorm(n = studies, mean = delta_i * sqrt(N_i) / 2) / 
+    sqrt(rchisq(n = studies, df = N_i - 2) / (N_i - 2))
+  Vg_i <- J^2 * (4 / N_i + g_i^2 / (N_i - 2))
+
+  data.frame(MDES = MDES_i, N = N_i, g = g_i, Vg = Vg_i)
+}
+
+estimate_effects <- function(dat) {
+  require(metafor)
+  RE_meta <- rma(yi = g, vi = Vg, data = dat, method = "HE")
+  tf <- trimfill(RE_meta)
+  FE_meta <- rma(yi = g, vi = Vg, data = dat, method = "FE")
+  EQ_meta <- lm(g ~ 1, data = dat)
+  PET <- lm(g ~ sqrt(Vg), data = dat, weights = 1 / Vg) 
+  PEESE <- lm(g ~ Vg, data = dat, weights = 1 / Vg)
+  dat$MDES_cent <- with(dat, MDES - mean(MDES))
+  RE_adj <- rma(g ~ MDES_cent, vi = 4 / N, data = dat, method = "HE")
+  FE_adj <- rma(g ~ MDES_cent, vi = 4 / N, data = dat, method = "FE")
+  
+  data.frame(
+    trim_fill = tf$b,
+    RE_meta = RE_meta$b,
+    FE_meta = FE_meta$b,
+    PET = coef(PET)[[1]],
+    PEESE = coef(PEESE)[[1]],
+    RE_adj = RE_adj$b[[1]],
+    FE_adj = FE_adj$b[[1]],
+    EQ_meta = coef(EQ_meta)
+  )
+}
+
+library(tidyr)
+library(dplyr)
+library(pander)
+
+system.time(
+  sim_results <- 
+    replicate(2000, {
+        dat <- r_SMD(studies = 50, mean_effect = 0.6, sd_effect = 0.15)
+        estimate_effects(dat)
+    }, simplify = FALSE) %>%
+      bind_rows() %>%
+      gather("estimator","est") %>%
+      mutate(estimator = factor(estimator, levels = unique(estimator))) %>%
+      group_by(estimator) %>%
+      summarise(
+        bias = mean(est) - 0.6,
+        rmse = sqrt(mean((est - 0.6)^2))
+      )
+) 
+
+pander(sim_results)
+```
+
