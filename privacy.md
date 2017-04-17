@@ -4,7 +4,7 @@ title: Privacy Policy
 permalink: /privacy/
 ---
 
-*Revised March 15, 2017.*
+*Revised April 17, 2017.*
 
 ## Google Analytics
 
@@ -21,6 +21,10 @@ If you wish to know more or even opt out, view [Google's privacy policy](http://
 I run Google Adsense mainly to know how to use Adsense. This is the single ad banner you may see on the top of the page. My goal is to only ever have at most the single ad banner. Again, for more details, view [Google's privacy policy](http://www.google.com/intl/en/policies/privacy/).
 
 I have [remarketing](https://support.google.com/analytics/answer/2611268) enabled, which is when the ad is about something you've viewed recently.
+
+### Amazon Affiliate
+
+This site participates in the [Amazon Services LLC Associates Program](https://affiliate-program.amazon.com/help/operating/agreement), an affiliate advertising program designed to provide a means for this site to earn fees by linking to Amazon.com and affiliated sites.
 
 ## Social Media
 
