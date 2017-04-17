@@ -3,7 +3,7 @@ layout: default
 ---
 
 <article class="post">
-  <h2>{{ page.title }}</h2>
+  <h2>{{ page.title }}</h2> {{ page.date | date: "%B %e, %Y" }}
   
   <div class="date">
     Written on {{ page.date | date: "%B %e, %Y" }}
