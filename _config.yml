@@ -1,86 +1,41 @@
-#
-# This file contains configuration flags to customize your site
-#
-
-# Name of your site (displayed in the header)
-name: Klimov
-
-# Short bio or description (displayed in the header)
-description: Develope klimovproject.ru
-
-# URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://avatars0.githubusercontent.com/u/26464618?v=3&s=460
-
-#
-# Flags below are optional
-#
-
-# Includes an icon in the footer for each username you enter
-footer-links:
-  dribbble:
-  email:
-  facebook:
-  flickr:
-  github: barryclark/jekyll-now
-  instagram:
-  linkedin:
-  pinterest:
-  rss: # just type anything here for a working RSS icon
-  twitter: jekyllrb
-  stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
-  youtube: # channel/<your_long_string> or user/<user-name>
-  googleplus: # anything in your profile username that comes after plus.google.com/
-
-
-# Enter your Disqus shortname (not your username) to enable commenting on posts
-# You can find your shortname on the Settings page of your Disqus account
-disqus:
-
-# Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-google_analytics:
-
-# Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
-# Used for Sitemap.xml and your RSS feed
-url:
-
-# If you're hosting your site at a Project repository on GitHub pages
-# (http://yourusername.github.io/repository-name)
-# and NOT your User repository (http://yourusername.github.io)
-# then add in the baseurl here, like this: "/repository-name"
+# Site settings
+title: "Klimov-Project"
+email: site.projector@gmail.com
+description: "Первый официальный проект любого вебмастера - это его собственный сайт "
 baseurl: ""
+url: "klimovproject.ru"
+title_description: "Мой /dev блог, как хороший пример статического сайта <br/> 
+на простом и быстром Jekyll. Здесь собраны мои мысли на разные темы, 
+идеи и заметки о моих разработках, а так же могое другое.<br/>
+Сборник ссылок на меня <i class=\"fa fa-arrow-circle-down\" aria-hidden=\"true\"></i>"
+title_image: "/images/logo-klimov.jpg"
+google_analytics: ""
+disqus_account: 
+github_repository: https://github.com/jacobtomlinson/
+addthis_id: 
+post_limit: 5
 
-#
-# !! You don't need to change any of the configuration flags below !!
-#
+# Social usernames/URLs
+twitter_username: KlimovRV
+github_username:  klimov-rv
+instagram_username: klimov.rv
+reddit_username: 
+linkedin_link: https://www.linkedin.com/in/%D1%80%D0%BE%D0%BC%D0%B0%D0%BD-%D0%BA%D0%BB%D0%B8%D0%BC%D0%BE%D0%B2-4598a9121/
+google_plus_link: https://plus.google.com/113740816105565942618
+stackoverflow_link: http://stackexchange.com/users/10611498/%d0%a0%d0%be%d0%bc%d0%b0%d0%bd-%d0%9a%d0%bb%d0%b8%d0%bc%d0%be%d0%b2
+xing_link:
+facebook_link: https://www.facebook.com/profile.php?id=100012300218634
 
-permalink: /:title/
+# Footer
+footer_left: "Сделано с <i class=\"fa fa-heart\"></i> на <a href=\"https://jekyllrb.com/\">Jekyll</a>"
+footer_right: "&lt; <a href=\"https://github.com/klimov-rv/klimov-rv.github.io\">Github</a> &nbsp;<i class=\"fa fa-github-alt\"></i> /&gt;"
 
-# The release of Jekyll Now that you're using
-version: v1.2.0
+# Build settings
+markdown: kramdown
 
-# Jekyll 3 now only supports Kramdown for Markdown
 kramdown:
-  # Use GitHub flavored markdown, including triple backtick fenced code blocks
   input: GFM
-  # Jekyll 3 and GitHub Pages now only support rouge for syntax highlighting
   syntax_highlighter: rouge
-  syntax_highlighter_opts:
-    # Use existing pygments syntax highlighting css
-    css_class: 'highlight'
 
-# Set the Sass partials directory, as we're using @imports
-sass:
-  style: :expanded # You might prefer to minify using :compressed
-
-# Use the following plug-ins
-gems:
-  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
-  - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
-
-# Exclude these files from your production _site
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - LICENSE
-  - README.md
-  - CNAME
+permalink: pretty
+exclude: [vendor]
