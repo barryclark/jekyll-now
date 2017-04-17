@@ -34,4 +34,4 @@ The comment section underneath most of the posts is Facebook's comment plugin. T
 
 ### Share
 
-Each post currently has five share links: Facebook, Twitter, LinkedIn, Reddit, and StumbleUpon. Sharing a post requires an account with the associated service as well as adherence to their privacy policies.
+Each post currently has five share links: Facebook, Twitter, LinkedIn, Google+, Reddit, and StumbleUpon. Sharing a post requires an account with the associated service as well as adherence to their privacy policies.
