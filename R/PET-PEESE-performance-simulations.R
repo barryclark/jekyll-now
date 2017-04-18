@@ -116,22 +116,13 @@ runSim <- function(reps,
     summarise_all(funs(M = mean, V = var))
 }
 
-runSim(reps = 100, 
-       studies = 100, mean_effect = 0.4, sd_effect = 0.1, 
-       n_min = 12, n_max = 50, na = 1, nb = 1, 
-       p_thresholds = .05, p_RR = 0) %>%
-  gather("stat","val") %>%
-  separate(stat, c("estimator","stat"), sep = -2) %>%
-  spread(stat, val) %>%
-  mutate(RMSE = sqrt((M - mean_effect)^2 + V))
-
 source_obj <- ls()
 
 #--------------------------------------------------------
 # Simulation conditions from http://datacolada.org/59
 #--------------------------------------------------------
 
-set.seed(20170416)
+set.seed(20170417)
 
 design_factors <- list(studies = 100,
                        mean_effect = seq(0,1,0.1), 
@@ -146,8 +137,8 @@ lengths(design_factors)
 prod(lengths(design_factors))
 
 params <- expand.grid(design_factors)
-params <- filter(params, na == 1 | nb == 1)
-params$reps <- 10
+params <- subset(params, na == 1 | nb == 1)
+params$reps <- 1000
 params$seed <- round(runif(1) * 2^30) + 1:nrow(params)
 nrow(params)
 head(params)
@@ -187,10 +178,12 @@ save(params, results, session_info, run_date, file = "files/PET-PEESE Simulation
 #--------------------------------------------------------
 library(stringr)
 library(tidyr)
+library(dplyr)
 library(ggplot2)
 
-results_long <- 
-  results %>% 
+load("files/PET-PEESE Simulation Results.Rdata")
+results <- 
+  results %>%
   select(-reps, -seed) %>%
   mutate(
     study_dist = ifelse(na == nb, "Uniform", ifelse(na > nb, "More small", "More large")),
@@ -206,7 +199,6 @@ results_long <-
     RMSE = sqrt((M - mean_effect)^2 + V)
   )
 
-
 bias_plot <- function(dat) {
   ggplot(dat, aes(mean_effect, M, color = estimator, shape = estimator)) + 
     geom_point() + geom_line() + 
@@ -215,41 +207,41 @@ bias_plot <- function(dat) {
     theme_light()
 }
 
-selected_estimators <- c("FE-meta","PEESE","PET","SPEESE","SPET")
+selected_estimators <- c("FE-meta","RE-meta","PEESE","PET","SPEESE","SPET")
 
 # maximum study size of 50, no publication bias
 
-results_long %>%
+results %>%
   filter(p_RR == 1, n_max == 50, estimator %in% selected_estimators) %>%
   bias_plot()
 
 # maximum study size of 120, no publication bias
 
-results_long %>%
-  filter(p_RR == 1, n_max == 120) %>%
+results %>%
+  filter(p_RR == 1, n_max == 120, estimator %in% selected_estimators) %>%
   bias_plot()
 
 
 # maximum study size of 50, with intermediate publication bias
 
-results_long %>%
-  filter(p_RR == 0.2, n_max == 50) %>%
+results %>%
+  filter(p_RR == 0.2, n_max == 50, estimator %in% selected_estimators) %>%
   bias_plot()
 
 # maximum study size of 120, with intermediate publication bias
 
-results_long %>%
-  filter(p_RR == 0.2, n_max == 120) %>%
+results %>%
+  filter(p_RR == 0.2, n_max == 120, estimator %in% selected_estimators) %>%
   bias_plot()
 
 # maximum study size of 50, with strong publication bias
 
-results_long %>%
-  filter(p_RR == 0, n_max == 50) %>%
+results %>%
+  filter(p_RR == 0, n_max == 50, estimator %in% selected_estimators) %>%
   bias_plot()
 
 # maximum study size of 120, with strong publication bias
 
-results_long %>%
-  filter(p_RR == 0, n_max == 120) %>%
+results %>%
+  filter(p_RR == 0, n_max == 120, estimator %in% selected_estimators) %>%
   bias_plot()
