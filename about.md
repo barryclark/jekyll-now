@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Об авторе
-image: profile.png
+image: /images/profile.png
 permalink: /about/
 ---
 
