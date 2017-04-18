@@ -9,7 +9,7 @@ tags:
 - alpha table
 - firmer terra
 layout: post
-description: "I heard about the RPG Jelly Plush Kickstarter via an email announcement with an offer to do an interview."
+description: "Joe Rybinski of Firmer Terra, LLC answers some questions about the ALPHA Table."
 featured: alphatable.jpg
 author: robk
 ---
