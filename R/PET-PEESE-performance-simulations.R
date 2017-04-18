@@ -186,8 +186,10 @@ results <-
   results %>%
   select(-reps, -seed) %>%
   mutate(
-    study_dist = ifelse(na == nb, "Uniform", ifelse(na > nb, "More small", "More large")),
-    study_dist = factor(study_dist, levels = c("More small","Uniform","More large"))
+    study_dist = ifelse(na == nb, "Uniform distribution of studies", 
+                        ifelse(na > nb, "More small studies", "More large studies")),
+    study_dist = factor(study_dist, 
+                        levels = c("More small studies","Uniform distribution of studies","More large studies"))
   ) %>%
   unnest() %>%
   gather("estimator","val", ends_with("_M"), ends_with("_V")) %>%
@@ -207,6 +209,13 @@ bias_plot <- function(dat) {
     theme_light()
 }
 
+RMSE_plot <- function(dat) {
+  ggplot(dat, aes(mean_effect, RMSE, color = estimator, shape = estimator)) + 
+    geom_point() + geom_line() + 
+    facet_grid(sd_effect ~ study_dist, scales = "free_y") + 
+    theme_light()
+}
+
 selected_estimators <- c("FE-meta","RE-meta","PEESE","PET","SPEESE","SPET")
 
 # maximum study size of 50, no publication bias
@@ -214,12 +223,18 @@ selected_estimators <- c("FE-meta","RE-meta","PEESE","PET","SPEESE","SPET")
 results %>%
   filter(p_RR == 1, n_max == 50, estimator %in% selected_estimators) %>%
   bias_plot()
+results %>%
+  filter(p_RR == 1, n_max == 50, estimator %in% selected_estimators) %>%
+  RMSE_plot()
 
 # maximum study size of 120, no publication bias
 
 results %>%
   filter(p_RR == 1, n_max == 120, estimator %in% selected_estimators) %>%
   bias_plot()
+results %>%
+  filter(p_RR == 1, n_max == 120, estimator %in% selected_estimators) %>%
+  RMSE_plot()
 
 
 # maximum study size of 50, with intermediate publication bias
@@ -227,21 +242,33 @@ results %>%
 results %>%
   filter(p_RR == 0.2, n_max == 50, estimator %in% selected_estimators) %>%
   bias_plot()
+results %>%
+  filter(p_RR == 0.2, n_max == 50, estimator %in% selected_estimators) %>%
+  RMSE_plot()
 
 # maximum study size of 120, with intermediate publication bias
 
 results %>%
   filter(p_RR == 0.2, n_max == 120, estimator %in% selected_estimators) %>%
   bias_plot()
+results %>%
+  filter(p_RR == 0.2, n_max == 120, estimator %in% selected_estimators) %>%
+  RMSE_plot()
 
 # maximum study size of 50, with strong publication bias
 
 results %>%
   filter(p_RR == 0, n_max == 50, estimator %in% selected_estimators) %>%
   bias_plot()
+results %>%
+  filter(p_RR == 0, n_max == 50, estimator %in% selected_estimators) %>%
+  RMSE_plot()
 
 # maximum study size of 120, with strong publication bias
 
 results %>%
   filter(p_RR == 0, n_max == 120, estimator %in% selected_estimators) %>%
   bias_plot()
+results %>%
+  filter(p_RR == 0, n_max == 120, estimator %in% selected_estimators) %>%
+  RMSE_plot()
