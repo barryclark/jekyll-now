@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Keeping our Azure Cloud Tidy
+title: Keeping our Azure Cloud Tidy - Part 1
 subtitle:
 category: howto
 tags: [cloud, devops]
