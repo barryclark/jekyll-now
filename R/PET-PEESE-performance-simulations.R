@@ -1,3 +1,15 @@
+#--------------------------------------------
+# required packages
+# install.packages("metafor")
+# install.packages("purrr")
+# install.packages("dplyr")
+# install.packages("stringr")
+# install.packages("tidyr")
+# install.packages("ggplot2")
+# devtools::install_github("hadley/multidplyr")
+# devtools::install_github("jepusto/Pusto")
+#--------------------------------------------
+
 rm(list=ls())
 
 #--------------------------------------------
@@ -20,10 +32,10 @@ r_SMD <- function(studies, mean_effect, sd_effect, n_min, n_max, na, nb, p_thres
     
     # simulate t-statistics and p-values
     t_i <- rnorm(n = studies, mean = delta_i * sqrt(n_i / 2)) / sqrt(rchisq(n = studies, df = df) / df)
-    p_i <- 2 * pt(abs(t_i), df = df, lower.tail = FALSE)
+    p_i <- 2 * pt(t_i, df = df, lower.tail = FALSE)
     
     # effect censoring based on p-values
-    p_observed <- c(1, p_RR)[cut(p_i, c(0, p_thresholds, 1), labels = FALSE)]
+    p_observed <- c(1, p_RR)[cut(p_i, c(0, p_thresholds, 2), labels = FALSE)]
     observed <- runif(studies) < p_observed
     
     # put it all together
@@ -44,7 +56,6 @@ dat <- r_SMD(studies = 50, mean_effect = 0.4, sd_effect = 0.1,
              n_min = 12, n_max = 50, na = 1, nb = 1, 
              p_thresholds = .05, p_RR = .1)
 
-PET <- lm(g ~ sd, data = dat, weights = 1 / Vg) 
 
 #--------------------------------------------
 # estimate overall average effects
@@ -64,16 +75,20 @@ estimate_effects <- function(dat) {
   FE_meta <- rma(yi = g, vi = Vg, data = dat, method = "FE")
   PET <- lm(g ~ sd, data = dat, weights = 1 / Vg) 
   PEESE <- lm(g ~ Vg, data = dat, weights = 1 / Vg)
+  PET_test <- coef(PET)[[2]] / sqrt(diag(summary(PET)$cov.unscaled)[[2]]) > qnorm(0.975)
   SPET <- lm(g ~ sda, data = dat, weights = 1 / Va) 
   SPEESE <- lm(g ~ Va, data = dat, weights = 1 / Va)
+  SPET_test <- coef(SPET)[[2]] / sqrt(diag(summary(SPET)$cov.unscaled)[[2]]) > qnorm(0.975)
   
   data.frame(
     RE_meta = RE_meta$b,
     FE_meta = FE_meta$b,
     PET = coef(PET)[[1]],
     PEESE = coef(PEESE)[[1]],
+    PET_PEESE = ifelse(PET_test, coef(PEESE)[[1]], coef(PET)[[1]]),
     SPET = coef(SPET)[[1]],
-    SPEESE = coef(SPEESE)[[1]]
+    SPEESE = coef(SPEESE)[[1]],
+    SPET_SPEESE = ifelse(SPET_test, coef(SPEESE)[[1]], coef(SPET)[[1]])
   )
 }
 
@@ -98,8 +113,17 @@ runSim <- function(reps,
     estimate_effects()
   }) %>%
   bind_rows() %>%
-    summarise_all(mean)
+    summarise_all(funs(M = mean, V = var))
 }
+
+runSim(reps = 100, 
+       studies = 100, mean_effect = 0.4, sd_effect = 0.1, 
+       n_min = 12, n_max = 50, na = 1, nb = 1, 
+       p_thresholds = .05, p_RR = 0) %>%
+  gather("stat","val") %>%
+  separate(stat, c("estimator","stat"), sep = -2) %>%
+  spread(stat, val) %>%
+  mutate(RMSE = sqrt((M - mean_effect)^2 + V))
 
 source_obj <- ls()
 
@@ -116,13 +140,14 @@ design_factors <- list(studies = 100,
                        n_max = c(50, 120),
                        na = c(1, 3),
                        nb = c(1, 3),
-                       p_RR = c(1L, 0L))
+                       p_RR = c(1, 0.2, 0))
+
 lengths(design_factors)
 prod(lengths(design_factors))
 
 params <- expand.grid(design_factors)
 params <- filter(params, na == 1 | nb == 1)
-params$reps <- 200
+params$reps <- 10
 params$seed <- round(runif(1) * 2^30) + 1:nrow(params)
 nrow(params)
 head(params)
@@ -160,6 +185,7 @@ save(params, results, session_info, run_date, file = "files/PET-PEESE Simulation
 #--------------------------------------------------------
 # Graphs
 #--------------------------------------------------------
+library(stringr)
 library(tidyr)
 library(ggplot2)
 
@@ -171,45 +197,59 @@ results_long <-
     study_dist = factor(study_dist, levels = c("More small","Uniform","More large"))
   ) %>%
   unnest() %>%
-  gather("estimator","expectation", RE_meta:SPEESE)
+  gather("estimator","val", ends_with("_M"), ends_with("_V")) %>%
+  separate(estimator, c("estimator","stat"), sep = -2) %>%
+  spread(stat, val) %>%
+  mutate(
+    estimator = str_replace(str_sub(estimator, 1, -2), "_","-"),
+    estimator = factor(estimator, levels = c("FE-meta","RE-meta","PET","PEESE","PET-PEESE","SPET","SPEESE","SPET-SPEESE")),
+    RMSE = sqrt((M - mean_effect)^2 + V)
+  )
 
 
-# maximum study size of 50, no publication bias
-
-results_long %>%
-  filter(p_RR == 1, n_max == 50, na == 1 | nb == 1) %>%
-  ggplot(aes(mean_effect, expectation, color = estimator, shape = estimator)) + 
+bias_plot <- function(dat) {
+  ggplot(dat, aes(mean_effect, M, color = estimator, shape = estimator)) + 
     geom_point() + geom_line() + 
     geom_abline(slope = 1, intercept = 0) + 
     facet_grid(sd_effect ~ study_dist) + 
     theme_light()
+}
+
+selected_estimators <- c("FE-meta","PEESE","PET","SPEESE","SPET")
+
+# maximum study size of 50, no publication bias
+
+results_long %>%
+  filter(p_RR == 1, n_max == 50, estimator %in% selected_estimators) %>%
+  bias_plot()
 
 # maximum study size of 120, no publication bias
 
 results_long %>%
-  filter(p_RR == 1, n_max == 120, na == 1 | nb == 1) %>%
-  ggplot(aes(mean_effect, expectation, color = estimator, shape = estimator)) + 
-  geom_point() + geom_line() + 
-  geom_abline(slope = 1, intercept = 0) + 
-  facet_grid(sd_effect ~ study_dist) + 
-  theme_light()
+  filter(p_RR == 1, n_max == 120) %>%
+  bias_plot()
 
-# maximum study size of 50, with publication bias
+
+# maximum study size of 50, with intermediate publication bias
 
 results_long %>%
-  filter(p_RR < 1, n_max == 50, na == 1 | nb == 1) %>%
-  ggplot(aes(mean_effect, expectation, color = estimator, shape = estimator)) + 
-  geom_point() + geom_line() + 
-  geom_abline(slope = 1, intercept = 0) + 
-  facet_grid(sd_effect ~ study_dist) + 
-  theme_light()
+  filter(p_RR == 0.2, n_max == 50) %>%
+  bias_plot()
 
-# maximum study size of 120, no publication bias
+# maximum study size of 120, with intermediate publication bias
 
 results_long %>%
-  filter(p_RR < 1, n_max == 120, na == 1 | nb == 1) %>%
-  ggplot(aes(mean_effect, expectation, color = estimator, shape = estimator)) + 
-  geom_point() + geom_line() + 
-  geom_abline(slope = 1, intercept = 0) + 
-  facet_grid(sd_effect ~ study_dist) + 
-  theme_light()
+  filter(p_RR == 0.2, n_max == 120) %>%
+  bias_plot()
+
+# maximum study size of 50, with strong publication bias
+
+results_long %>%
+  filter(p_RR == 0, n_max == 50) %>%
+  bias_plot()
+
+# maximum study size of 120, with strong publication bias
+
+results_long %>%
+  filter(p_RR == 0, n_max == 120) %>%
+  bias_plot()
