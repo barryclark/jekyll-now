@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2939,222825296,2017-04-19 18:17:33,2017-04-19 18:16:42,Cena di beneficenza #PortoSantElpidio,43.2567435,13.7607867,"[""Accettato"", ""Eventi"", ""Form""]",,,"{""data"": ""19/04/2017"", ""data_evento"": ""05/03/2017"", ""descrizione"": ""Cena di beneficenza a favore di attivit\u00e0 bisognose di risollevarsi dopo il sisma presso l'istituto alberghiero \""Carlo Urbani\"" - via Legnano, 17, Porto Sant'Elpidio (FM). A partire dalle h 19.00. Costo 25 \u20ac."", ""indirizzo"": ""Via Faleria, Porto Sant'Elpidio, FM, Marche, 63018, Italia"", ""lat"": ""43.2567435"", ""link"": ""https://www.facebook.com/photo.php?fbid=10212281053437256&set=gm.1880443928889856&type=3&theater"", ""lon"": ""13.7607867"", ""ora_evento"": ""19:00"", ""promotore"": ""Lions Club Civitanova Marche Cluana e Comitato \""Vita di Paese\"""", ""titolo_evento"": ""Cena di beneficenza #PortoSantElpidio""}","<pre><yamldata>titolo_evento: 'Cena di beneficenza #PortoSantElpidio'
+data_evento: 05/03/2017
+ora_evento: '19:00'
+promotore: 'Lions Club Civitanova Marche Cluana e Comitato ""Vita di Paese""'
+descrizione: 'Cena di beneficenza a favore di attività bisognose di risollevarsi dopo il sisma presso l''istituto alberghiero ""Carlo Urbani"" - via Legnano, 17, Porto Sant''Elpidio (FM). A partire dalle h 19.00. Costo 25 €.'
+indirizzo: 'Via Faleria, Porto Sant''Elpidio, FM, Marche, 63018, Italia'
+lat: '43.2567435'
+lon: '13.7607867'
+link: 'https://www.facebook.com/photo.php?fbid=10212281053437256&set=gm.1880443928889856&type=3&theater'
+data: 19/04/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2938,222690272,2017-04-19 17:16:54,2017-04-19 10:22:52,Cercasi due cameriere piani a Cattolica,43.9639933,12.7441515,"[""Accettato"", ""Bollettino"", ""Form"", ""Offro lavoro""]",,,"{""cosa"": ""cameriera piani"", ""data"": ""19/04/2017"", ""descrizione"": ""Due alberghi di Cattolica (RN) cercano due cameriere dei piani per stagione 2017 periodo Maggio/Settembre. Vitto alloggio sono compresi. Con esperienza lavorativa nel settore."", ""email"": ""daniele.cerri@libero.it"", ""indirizzo"": ""Via Don Giovanni Minzoni, Cattolica, RN, Emilia-Romagna, Italia"", ""lat"": ""43.9639933"", ""link"": """", ""lon"": ""12.7441515"", ""nom"": ""alberghi"", ""tel"": ""3332666518""}","<pre><yamldata>nom: alberghi
 tel: '3332666518'
 email: daniele.cerri@libero.it
