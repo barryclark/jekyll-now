@@ -32,10 +32,11 @@ r_SMD <- function(studies, mean_effect, sd_effect, n_min, n_max, na, nb, p_thres
     
     # simulate t-statistics and p-values
     t_i <- rnorm(n = studies, mean = delta_i * sqrt(n_i / 2)) / sqrt(rchisq(n = studies, df = df) / df)
-    p_i <- 2 * pt(t_i, df = df, lower.tail = FALSE)
+    p_pseudo <- 2 * pt(t_i, df = df, lower.tail = FALSE)
+    p_i <- 2 * pt(abs(t_i), df = df, lower.tail = FALSE)
     
     # effect censoring based on p-values
-    p_observed <- c(1, p_RR)[cut(p_i, c(0, p_thresholds, 2), labels = FALSE)]
+    p_observed <- c(1, p_RR)[cut(p_pseudo, c(0, p_thresholds, 2), labels = FALSE)]
     observed <- runif(studies) < p_observed
     
     # put it all together
@@ -303,3 +304,37 @@ results %>%
 results %>%
   filter(studies == 100, p_RR == 0, n_max == 120, estimator %in% selected_estimators) %>%
   RMSE_plot()
+
+-------------------------------------------
+# expectation of SMD given n
+-------------------------------------------
+  
+library(purrr)
+library(tidyr)
+library(dplyr)
+library(ggplot2)
+
+SMD_means <- 
+  list(studies = 1000,
+       mean_effect = seq(0,1,0.2), 
+       sd_effect = c(0, 0.1, 0.2, 0.3),
+       n_min = 10:100,
+       p_RR = c(1, 0.2, 0)) %>%
+  cross_d() %>%
+  mutate(
+    n_max = n_min,
+    na = 1,
+    nb = 1
+  ) %>%
+  invoke_rows(.d = ., .f = r_SMD, .to = "SMD") %>%
+  unnest() %>%
+  group_by(mean_effect, sd_effect, n_min, p_RR) %>%
+  summarise(E_SMD = mean(g))
+
+ggplot(SMD_means, aes(2 / n_min, E_SMD, color = factor(mean_effect))) +
+  geom_smooth(method = "loess", se = FALSE) + 
+  geom_hline(aes(yintercept = mean_effect, color = factor(mean_effect)), linetype = "dotted") + 
+  expand_limits(x = 0) + 
+  facet_grid(p_RR ~ sd_effect, labeller = "label_both") + 
+  theme_light() + 
+  labs(x = "2 / n", y = "E(SMD)", color = "true mean effect")
