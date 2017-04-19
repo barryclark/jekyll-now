@@ -30,6 +30,10 @@ body {
   width: 100%;
 }
 
+* {
+  tab-size: 4;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: $helveticaNeue;
   color: $darkerGray;
@@ -69,11 +73,11 @@ p {
 }
 
 a {
-  color: $blue;
+  color: $gray;
   text-decoration: none;
 	cursor: pointer;
   &:hover, &:active {
-    color: $blue;
+    color: $darkRed;
   }
 }
 
@@ -108,6 +112,22 @@ strong, b {
 
 img {
   max-width: 100%;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table, th {
+    border: 1px solid black;
+}
+
+th {
+    font-weight: bold;
+}
+
+th, td {
+    padding: 10px;
 }
 
 // Fixes images in popup boxes from Google Translate
@@ -165,7 +185,7 @@ img {
 
 .site-avatar {
   float: left;
-  width: 70px;
+  width: 105px;
   height: 70px;
   margin-right: 15px;
 
@@ -194,8 +214,18 @@ img {
   margin: 0;
   color: $darkGray;
   cursor: pointer;
-  font-family: $helveticaNeue;
-  font-weight: 300;
+  font-family: Courier;
+  font-weight: bold;
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+
+.red {
+  margin: 0;
+  color: $darkRed;
+  cursor: pointer;
+  font-family: Courier;
+  font-weight: bold;
   font-size: 28px;
   letter-spacing: 1px;
 }
@@ -232,7 +262,7 @@ nav {
 
     @include mobile {
       margin: 0 10px;
-      color: $blue;
+      color: $darkRed;
     }
   }
 }
