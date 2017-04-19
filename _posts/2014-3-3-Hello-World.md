@@ -3,8 +3,25 @@ layout: post
 title: You're up and running!
 ---
 
-Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
+Paragraphs are separated by a blank line.
 
-![_config.yml]({{ site.baseurl }}/images/config.png)
+2nd paragraph. *Italic*, **bold**, and `monospace`. Itemized lists
+look like:
 
-The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
+  * this one
+  * that one
+  * the other one
+
+Note that --- not considering the asterisk --- the actual text
+content starts at 4-columns in.
+
+> Block quotes are
+> written like so.
+>
+> They can span multiple paragraphs,
+> if you like.
+
+Use 3 dashes for an em-dash. Use 2 dashes for ranges (ex., "it's all
+in chapters 12--14"). Three dots ... will be converted to an ellipsis.
+Unicode is supported. ☺
+
