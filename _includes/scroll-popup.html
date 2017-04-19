@@ -44,9 +44,17 @@
 <script>
 var scrolled = 0;
 
+var cookie = document.cookie;
+var cookieName = "scrolled=";
+
+if(cookie.indexOf(cookieName) == 0) {
+  alert(c.substring(cookieName.length, cookie.length));
+}
+
 $(document).ready(function(){
   $(window).scroll(function(){
-    scrolled = scrolled + 1;
+    scrolled = scrolled + 1;    
+    document.cookie = cookieName + scrolled + ";path=/;"; 
     
     if(scrolled == 35) {
       $("#scroll-popup,#scroll-modal").fadeIn("slow");
