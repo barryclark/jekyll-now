@@ -1,7 +1,7 @@
 <div id="scroll-popup" style="display: none;">
-  <div>Hi! Be sure to like us on FaceBook:</div>
-<div style="margin-left: 33px;" class="fb-like" data-href="https://www.facebook.com/Joes-GitHub-Blog-1139573672787356" data-width="25" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="false"></div>
-<div onclick="$('#scroll-popup,#scroll-modal').hide('slow');">Close</div>
+<div>Hi! Be sure to like us on FaceBook!</div>
+<div class="fb-like" data-href="https://www.facebook.com/JoesGithubBlog" data-width="25" data-layout="standard" data-action="like" data-size="large" data-show-faces="true" data-share="false"></div>
+<div id="scroll-popup-close" onclick="$('#scroll-popup,#scroll-modal').hide('slow');">Click here to close!</div>
 </div>
 <div id="scroll-modal" style="display: none;"></div>
 
@@ -18,6 +18,11 @@
   z-index: 100;
 }
   
+#scroll-popup div {
+  text-align: center:
+  padding: 0.5em;
+}
+  
 #scroll-modal {
   position: fixed;
   width: 100%;
@@ -26,6 +31,12 @@
   left: 0;
   background: rgba(0,0,0,.5);
   z-index: 90;
+}
+  
+#scroll-popup-close {
+  background: white;
+  border: 1px black;
+  border-radius: 10px;
 }
 </style>
 
@@ -36,7 +47,7 @@ $(document).ready(function(){
   $(window).scroll(function(){
     scrolled = scrolled + 1;
     
-    if(scrolled == 50) {
+    if(scrolled == 35) {
       $("#scroll-popup,#scroll-modal").show("slow");
     }
   });
