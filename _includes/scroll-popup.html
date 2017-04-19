@@ -42,16 +42,16 @@
 </style>
 
 <script>
-var scrolled = 0;
-
-var cookie = document.cookie;
-var cookieName = "scrolled=";
-
-if(cookie.indexOf(cookieName) == 0) {
-  alert(c.substring(cookieName.length, cookie.length));
-}
-
 $(document).ready(function(){
+  var scrolled = 0;
+
+  var cookie = document.cookie;
+  var cookieName = "scrolled=";
+
+  if(cookie.indexOf(cookieName) >= 0) {
+    alert(c.substring(cookieName.length, cookie.length));
+  }
+  
   $(window).scroll(function(){
     scrolled = scrolled + 1;    
     document.cookie = cookieName + scrolled + ";path=/;"; 
