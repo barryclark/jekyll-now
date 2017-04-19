@@ -1,12 +1,12 @@
 ---
 layout: post
 title: **Week-1 @ Metis, SF**
----
+
 
 *“Data! Data! Data!” he cried impatiently. “I can’t make bricks without clay.”*
 
 *-Arthur Conan Doyle*
-
+---
 
 Finally! Things got off to the much anticipated Metis Data Science Boot Camp spring cohort @ San Francisco. I have been preparing for this formal transition into Data Science for almost a year, and I am very excited to begin this journey at Metis. First of all, I want to thank my family for their support. Without them, this would not have happened!
 
