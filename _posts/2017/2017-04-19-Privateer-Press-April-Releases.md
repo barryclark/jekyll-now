@@ -1,6 +1,6 @@
 ---
 title: "Privateer Press' April Releases"
-date: 2017-04-18T10:00:00.000Z
+date: 2017-04-19T15:00:00.000Z
 category: news
 tags:
   - games
