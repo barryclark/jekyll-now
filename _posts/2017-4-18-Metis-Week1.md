@@ -5,13 +5,19 @@ title: **Week-1 @ Metis, SF**
 
 *“Data! Data! Data!” he cried impatiently. “I can’t make bricks without clay.”*
 
-*-Arthur Conan Doyle*
+*Arthur Conan Doyle*
 ---
 
-Finally! Things got off to the much anticipated Metis Data Science Boot Camp spring cohort @ San Francisco. I have been preparing for this formal transition into Data Science for almost a year, and I am very excited to begin this journey at Metis. First of all, I want to thank my family for their support. Without them, this would not have happened!
+Finally! Things got off to the much anticipated Metis Data Science Boot Camp @ San Francisco. I have been preparing for my formal transition into Data Science for almost a year, so naturally, very excited to begin this journey at Metis. First of all, I want to thank my family for their support. Without them, this would not have happened!
 
-On the first day, met members of our cohort. Our cohort is very diverse, but all with the true passion for analytics. The pace of the first few days was moderately intense. It was intentional, to build and maintain a healthy momentum, I think. So, to keep up the pace, I had to invest a few hours at home reading class lectures and reviewing tools like python, Git/Github, Bash/Unix shell, Pandas etc. Wish I had invested more time on Pandas earlier!
+On the first day, met awesome members of our cohort. What a  diverse team! People with all kinds of background, all share the true passion for analytics. The pace of the first few days was moderately intense. It was intentional, to build and maintain a healthy momentum, I think. So, to keep up the pace, I had to invest a few hours at home reading class lectures and reviewing tools like python, Git/Github, Bash/Unix shell, Pandas etc. Wish I had invested more time on Pandas earlier!
 
-Few observations - Pair programming and teamwork are woven into the fabric of the program. It is amazing how fast you can learn when you are in a collaborative environment with very like-minded colleagues. Our first team project was “Project Benson”, based on MTA Turnstile data. It’s so incredible that within just a few days, we pulled together an awesome presentation on how NyUber, a hypothetical startup in the transportation segment, could leverage MTA Turnstile data to identify transit hotspots and deploy taxi drivers based on hotspots. It was just a beginning, but very promising!     
+Few observations -- Pair programming and teamwork are woven into the fabric of the program. It is amazing how fast one can learn in a collaborative environment with very like-minded colleagues. Our first team project was “Project Benson”, based on New York Subway MTA Turnstile data. It’s so incredible that within four days, we pulled together an awesome presentation on how "NyUber", a hypothetical startup in the transportation segment, could leverage MTA Turnstile data to identify transit hotspots, and deploy its taxi drivers strategically on those hotspots. Exciting idea, ofcouse it was just a beginning, but very promising!     
 
 Overall, the first impression of the program is awesome! Very passionate faculty members, great support from TAs, and amazingly supportive cohort. Thank you, Metis for this opportunity!
+
+Stay tuned. I will be back next Sunday!
+
+Best!
+
+Sathish
