@@ -52,9 +52,9 @@ r_SMD <- function(studies, mean_effect, sd_effect, n_min, n_max, na, nb, p_thres
   return(dat)
 }
 
-dat <- r_SMD(studies = 50, mean_effect = 0.4, sd_effect = 0.1, 
+dat <- r_SMD(studies = 50, mean_effect = 0.4, sd_effect = 0.2, 
              n_min = 12, n_max = 50, na = 1, nb = 1, 
-             p_thresholds = .05, p_RR = .1)
+             p_thresholds = .05, p_RR = 1)
 
 
 #--------------------------------------------
@@ -64,15 +64,17 @@ dat <- r_SMD(studies = 50, mean_effect = 0.4, sd_effect = 0.1,
 # PET (SPET) and PEESE (SPEESE)
 #--------------------------------------------
 
-estimate_effects <- function(dat) {
+estimate_effects <- function(dat, studies = nrow(dat)) {
   require(metafor)
   
   dat$sd <- sqrt(dat$Vg)
   dat$Va <- 2 / dat$n
   dat$sda <- sqrt(dat$Va)
+  dat$Top <- 1:studies %in% order(dat$n)[studies - 0:9]
   
   RE_meta <- rma(yi = g, vi = Vg, data = dat, method = "HE")
   FE_meta <- rma(yi = g, vi = Vg, data = dat, method = "FE")
+  Top10 <- rma(yi = g, vi = Vg, data = subset(dat, Top), method = "FE")
   PET <- lm(g ~ sd, data = dat, weights = 1 / Vg) 
   PEESE <- lm(g ~ Vg, data = dat, weights = 1 / Vg)
   PET_test <- coef(PET)[[2]] / sqrt(diag(summary(PET)$cov.unscaled)[[2]]) > qnorm(0.975)
@@ -83,6 +85,7 @@ estimate_effects <- function(dat) {
   data.frame(
     RE_meta = RE_meta$b,
     FE_meta = FE_meta$b,
+    Top_10 = Top10$b,
     PET = coef(PET)[[1]],
     PEESE = coef(PEESE)[[1]],
     PET_PEESE = ifelse(PET_test, coef(PEESE)[[1]], coef(PET)[[1]]),
@@ -124,9 +127,9 @@ source_obj <- ls()
 
 set.seed(20170417)
 
-design_factors <- list(studies = 100,
+design_factors <- list(studies = c(50, 100),
                        mean_effect = seq(0,1,0.1), 
-                       sd_effect = c(0, 0.1, 0.2),
+                       sd_effect = c(0, 0.1, 0.2, 0.3),
                        n_min = 12,
                        n_max = c(50, 120),
                        na = c(1, 3),
@@ -182,6 +185,7 @@ library(dplyr)
 library(ggplot2)
 
 load("files/PET-PEESE Simulation Results.Rdata")
+
 results <- 
   results %>%
   select(-reps, -seed) %>%
@@ -197,9 +201,11 @@ results <-
   spread(stat, val) %>%
   mutate(
     estimator = str_replace(str_sub(estimator, 1, -2), "_","-"),
-    estimator = factor(estimator, levels = c("FE-meta","RE-meta","PET","PEESE","PET-PEESE","SPET","SPEESE","SPET-SPEESE")),
+    estimator = factor(estimator, levels = c("FE-meta","RE-meta","Top-10","PET","PEESE","PET-PEESE","SPET","SPEESE","SPET-SPEESE")),
     RMSE = sqrt((M - mean_effect)^2 + V)
   )
+
+table(results$estimator)
 
 bias_plot <- function(dat) {
   ggplot(dat, aes(mean_effect, M, color = estimator, shape = estimator)) + 
@@ -216,59 +222,84 @@ RMSE_plot <- function(dat) {
     theme_light()
 }
 
-selected_estimators <- c("FE-meta","RE-meta","PEESE","PET","SPEESE","SPET")
+selected_estimators <- c("FE-meta","Top-10","PET-PEESE","SPEESE","SPET","SPET-SPEESE")
+
+#-------------------------------
+# Expectation plots
+#-------------------------------
 
 # maximum study size of 50, no publication bias
 
 results %>%
-  filter(p_RR == 1, n_max == 50, estimator %in% selected_estimators) %>%
+  filter(studies == 100, p_RR == 1, n_max == 50, estimator %in% selected_estimators) %>%
   bias_plot()
+
+# maximum study size of 120, no publication bias
+
 results %>%
-  filter(p_RR == 1, n_max == 50, estimator %in% selected_estimators) %>%
+  filter(studies == 100, p_RR == 1, n_max == 120, estimator %in% selected_estimators) %>%
+  bias_plot()
+
+# maximum study size of 50, with intermediate publication bias
+
+results %>%
+  filter(studies == 100, p_RR == 0.2, n_max == 50, estimator %in% selected_estimators) %>%
+  bias_plot()
+
+# maximum study size of 120, with intermediate publication bias
+
+results %>%
+  filter(studies == 100, p_RR == 0.2, n_max == 120, estimator %in% selected_estimators) %>%
+  bias_plot()
+
+# maximum study size of 50, with strong publication bias
+
+results %>%
+  filter(studies == 100, p_RR == 0, n_max == 50, estimator %in% selected_estimators) %>%
+  bias_plot()
+
+# maximum study size of 120, with strong publication bias
+
+results %>%
+  filter(studies == 100, p_RR == 0, n_max == 120, estimator %in% selected_estimators) %>%
+  bias_plot()
+
+#-------------------------------
+# RMSE plots
+#-------------------------------
+
+# maximum study size of 50, no publication bias
+
+results %>%
+  filter(studies == 100, p_RR == 1, n_max == 50, estimator %in% selected_estimators) %>%
   RMSE_plot()
 
 # maximum study size of 120, no publication bias
 
 results %>%
-  filter(p_RR == 1, n_max == 120, estimator %in% selected_estimators) %>%
-  bias_plot()
-results %>%
-  filter(p_RR == 1, n_max == 120, estimator %in% selected_estimators) %>%
+  filter(studies == 100, p_RR == 1, n_max == 120, estimator %in% selected_estimators) %>%
   RMSE_plot()
-
 
 # maximum study size of 50, with intermediate publication bias
 
 results %>%
-  filter(p_RR == 0.2, n_max == 50, estimator %in% selected_estimators) %>%
-  bias_plot()
-results %>%
-  filter(p_RR == 0.2, n_max == 50, estimator %in% selected_estimators) %>%
+  filter(studies == 100, p_RR == 0.2, n_max == 50, estimator %in% selected_estimators) %>%
   RMSE_plot()
 
 # maximum study size of 120, with intermediate publication bias
 
 results %>%
-  filter(p_RR == 0.2, n_max == 120, estimator %in% selected_estimators) %>%
-  bias_plot()
-results %>%
-  filter(p_RR == 0.2, n_max == 120, estimator %in% selected_estimators) %>%
+  filter(studies == 100, p_RR == 0.2, n_max == 120, estimator %in% selected_estimators) %>%
   RMSE_plot()
 
 # maximum study size of 50, with strong publication bias
 
 results %>%
-  filter(p_RR == 0, n_max == 50, estimator %in% selected_estimators) %>%
-  bias_plot()
-results %>%
-  filter(p_RR == 0, n_max == 50, estimator %in% selected_estimators) %>%
+  filter(studies == 100, p_RR == 0, n_max == 50, estimator %in% selected_estimators) %>%
   RMSE_plot()
 
 # maximum study size of 120, with strong publication bias
 
 results %>%
-  filter(p_RR == 0, n_max == 120, estimator %in% selected_estimators) %>%
-  bias_plot()
-results %>%
-  filter(p_RR == 0, n_max == 120, estimator %in% selected_estimators) %>%
+  filter(studies == 100, p_RR == 0, n_max == 120, estimator %in% selected_estimators) %>%
   RMSE_plot()
