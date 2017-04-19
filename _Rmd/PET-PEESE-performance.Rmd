@@ -1,10 +1,12 @@
 ---
 layout: post
-title: "PET-PEESE"
-date: April 15, 2017
+title: "Use sample size for PET-PEESE of d's, maybe?"
+date: April 18, 2017
 tags: [meta-analysis]
 ---
 
-```{r}
-```
+Publication bias---and more generally, outcome reporting biases---are now recognized as a critical threat to the validity of findings from research syntheses. In the areas with which I am most familiar (education and psychology), it has become more or less a requirement for research synthesis projects to conduct analyses to detect the presence of systematic outcome reporting biases, and even to try and correct for its distorting effects on average effect size estimates. Widely known analytic techniques for doing so include rank-correlation tests, the Trim-and-Fill technique proposed by [Duval and Tweedie](https://dx.doi.org/10.2307/2669529), and [Egger regression](https://dx.doi.org/10.1136/bmj.315.7109.629) (in its [many variants](https://dx.doi.org/10.1186/1471-2288-9-2)). Another class of methods involve selection models (or weight function models), as proposed by [Hedges and Vevea](https://dx.doi.org/10.1007/BF02294384) and [Vevea and Woods](https://dx.doi.org/10.1037/1082-989X.10.4.428), among others. As far as I can tell, these are well known among methodologists but very seldom applied due to their complexity and lack of ready-to-use software (though [an R package](https://CRAN.R-project.org/package=weightr) is available as of recently).  Further, more recent proposals include the PET-PEESE technique introduced by [Stanley and Doucouliagos](https://dx.doi.org/10.1002/jrsm.1095); Simonsohn, Nelson, and Simmon's [p-curve technique](https://dx.doi.org/10.1177/1745691614553988); [p-uniform](http://dx.doi.org/10.1037/met0000025), and others. The list of techniques grows by the day.
 
+Among these methods, Egger regression, PET, and PEESE are quite appealing---superficially, at least---due to their simplicity. These methods each involve estimating a fairly simple meta-regression model, using as the covariate the sampling variance of the effect size or some transformation thereof. PET uses the standard error of the effect size as the regressor; PEESE uses the sampling variance (i.e., the squared standard error); PET-PEESE involves first testing whether the slope of the PET regression is statistically significant, using PEESE if it is or PET otherwise. The intercept from one of these regressions is the average effect size estimate from a study with zero sampling variance, and is used as a "bias-corrected" estimator of the population average effect. These methods are also appealing due to their extensibility. Because they are just meta-regressions, it is also quite easy to build more elaborate models on top of them, such as by controlling for further covariates, using robust variance estimation to account for dependencies among effect size estimates, etc.
+
+In [a recent blog post](http://datacolada.org/59), Uri Simonsohn 
