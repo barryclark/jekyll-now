@@ -1,6 +1,6 @@
 ---
 layout: post
-title: You're up and running!
+title: this is a test for the website I hope it works
 ---
 
 Paragraphs are separated by a blank line.
