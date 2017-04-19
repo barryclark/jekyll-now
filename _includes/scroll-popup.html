@@ -1,15 +1,31 @@
 <div id="scroll-popup" style="display: none;">
-Hi! <span onclick="$('#scroll-popup').hide('slow');">Close</span>
+  <div>Hi! Be sure to like us on FaceBook:</div>
+<div style="margin-left: 33px;" class="fb-like" data-href="https://www.facebook.com/Joes-GitHub-Blog-1139573672787356" data-width="25" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="false"></div>
+<div onclick="$('#scroll-popup,#scroll-modal').hide('slow');">Close</div>
 </div>
+<div id="scroll-modal" style="display: none;"></div>
 
 <style>
 #scroll-popup {
   position: fixed;
-  top: 10px;
-  left: 10px;
+  top: 50%;
+  left: 50%;
   height: 300px;
   width: 300px;
-  background: red;
+  margin: -150px 0 0 -150px;
+  background: whitesmoke;
+  padding: 1em;
+  z-index: 100;
+}
+  
+#scroll-modal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,.5);
+  z-index: 100;
 }
 </style>
 
@@ -21,7 +37,7 @@ $(document).ready(function(){
     scrolled = scrolled + 1;
     
     if(scrolled == 50) {
-      $("#scroll-popup").show("slow");
+      $("#scroll-popup,#scroll-modal").show("slow");
     }
   });
 });
