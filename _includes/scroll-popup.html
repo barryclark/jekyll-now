@@ -1,0 +1,28 @@
+<div id="scroll-popup" style="display: none;">
+Hi! <span onclick="$('#scroll-popup').hide('slow');">Close</span>
+</div>
+
+<style>
+#scroll-popup {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  height: 300px;
+  width: 300px;
+  background: red;
+}
+</style>
+
+<script>
+var scrolled = 0;
+
+$(document).ready(function(){
+  $(window).scroll(function(){
+    scrolled = scrolled + 1;
+    
+    if(scrolled == 50) {
+      $("#scroll-popup").show("slow");
+    }
+  });
+});
+</script>
