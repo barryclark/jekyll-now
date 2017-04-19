@@ -60,7 +60,7 @@
 	  	</script>
 	  	<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>{% endif %}
 
-		{% if jquery %}<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>{% endif %}
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		{% for javascript in javascripts %}{% unless javascript == blank %}<script src="{{ javascript }}"></script>{% endunless %}{% endfor %}
 		{% for javascript in deferedjavascripts %}{% unless javascript == blank %}<script defer src="{{ javascript }}"></script>{% endunless %}{% endfor %}
 		
