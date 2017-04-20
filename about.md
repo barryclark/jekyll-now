@@ -2,14 +2,13 @@
 layout: page
 title: About
 permalink: /about/
+published: true
 ---
 
-Some information about you!
+Hi! I'm Can Ngo-Cong, Software Engineer at Freelancer. I'm fascinated with building a great applications that solve real, humnan problems.
+### Technologies
 
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[ngocongccan@gmail.com](mailto:ngocongcan@gmail.com)
