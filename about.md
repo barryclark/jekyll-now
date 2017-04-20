@@ -45,6 +45,7 @@ Hi! I'm Can Ngo-Cong, Software Engineer at Freelancer. I'm fascinated with build
 * PhpStorm
 * Visual Studio Code
 
+### Professional History
 
 ### Contact me
 
