@@ -53,9 +53,9 @@ r_SMD <- function(studies, mean_effect, sd_effect, n_min, n_max, na, nb, p_thres
   return(dat)
 }
 
-dat <- r_SMD(studies = 50, mean_effect = 0.4, sd_effect = 0.2, 
+dat <- r_SMD(studies = 100, mean_effect = 0.4, sd_effect = 0.2, 
              n_min = 12, n_max = 50, na = 1, nb = 1, 
-             p_thresholds = .05, p_RR = 1)
+             p_thresholds = .05, p_RR = 0)
 
 
 #--------------------------------------------
@@ -78,10 +78,12 @@ estimate_effects <- function(dat, studies = nrow(dat)) {
   Top10 <- rma(yi = g, vi = Vg, data = subset(dat, Top), method = "FE")
   PET <- lm(g ~ sd, data = dat, weights = 1 / Vg) 
   PEESE <- lm(g ~ Vg, data = dat, weights = 1 / Vg)
-  PET_test <- coef(PET)[[2]] / sqrt(diag(summary(PET)$cov.unscaled)[[2]]) > qnorm(0.975)
+  PET_test <- coef(PET)[[1]] / sqrt(diag(summary(PET)$cov.unscaled)[[1]]) > qnorm(0.975)
   SPET <- lm(g ~ sda, data = dat, weights = 1 / Va) 
   SPEESE <- lm(g ~ Va, data = dat, weights = 1 / Va)
-  SPET_test <- coef(SPET)[[2]] / sqrt(diag(summary(SPET)$cov.unscaled)[[2]]) > qnorm(0.975)
+  SPET_test <- coef(SPET)[[1]] / sqrt(diag(summary(SPET)$cov.unscaled)[[1]]) > qnorm(0.975)
+  RSS_SPET <- with(SPET, sum(weights * residuals^2))
+  RSS_SPEESE <- with(SPEESE, sum(weights * residuals^2))
   
   data.frame(
     RE_meta = RE_meta$b,
@@ -92,7 +94,8 @@ estimate_effects <- function(dat, studies = nrow(dat)) {
     PET_PEESE = ifelse(PET_test, coef(PEESE)[[1]], coef(PET)[[1]]),
     SPET = coef(SPET)[[1]],
     SPEESE = coef(SPEESE)[[1]],
-    SPET_SPEESE = ifelse(SPET_test, coef(SPEESE)[[1]], coef(SPET)[[1]])
+    SPET_SPEESE = ifelse(SPET_test, coef(SPEESE)[[1]], coef(SPET)[[1]]),
+    BF_ROTSS = ifelse(RSS_SPET < RSS_SPEESE, coef(SPET)[[1]], coef(SPEESE)[[1]])
   )
 }
 
@@ -130,7 +133,7 @@ set.seed(20170417)
 
 design_factors <- list(studies = c(50, 100),
                        mean_effect = seq(0,1,0.1), 
-                       sd_effect = c(0, 0.1, 0.2, 0.3),
+                       sd_effect = c(0, 0.1, 0.2, 0.4),
                        n_min = 12,
                        n_max = c(50, 120),
                        na = c(1, 3),
