@@ -379,11 +379,30 @@ ex. ENS0000001ENS0000002 -> ENS0000001 ENS0000002
         cbPalette <- c("#999999", "#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2", "#D55E00", "#CC79A7")
         # grey, orange, blue, forest green, banana yellow, navy blue, red, purplypink
         #http://www.cookbook-r.com/Graphs/Colors_(ggplot2)/
+        
+##### My R color palette
+     palette <- c("#FF0000","#0072B2","#E69F00","#009E24", "#979797","#5530AA", "#111111")
+     #Red, Blue, Orange,Green, Grey, Purple,Black
+
+##### Sort a vector by another vector function
+    sort_func <- function(x){ 
+            y <- c("A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "T", "U", "V", "W", "X", "Y", "Z", "R", "S") 
+      z <- unlist(strsplit(x, ""))
+      return(paste(z[order(match(z, y))], collapse=""))
+    }
+
+     #sort_func("ZRACB") outputs "ABCZR"
+    
+     #Apply to a column
+     df %>% 
+           rowwise %>% 
+           mutate(sortedCode = sort_func(Code))
+    
 
 ##### Get r.squared from a linear regression
         a <- summary(lm(a ~ b), data =d)
         a$r.squared
-##### Make r variables on the fly, and assign them values
+##### Make r variables on the fly, and assign them values (very rare to do)
 
         ct <- 1
         assign(paste("value.", ct, sep=""), 5)
