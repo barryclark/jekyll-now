@@ -7,7 +7,9 @@ published: true
 
 Hi! I'm Can Ngo-Cong, Software Engineer at Freelancer. I'm fascinated with building the great applications that solve real, human problems.
 
-### Technical skills
+***
+
+## Technical skills
 
 #### Languages
 
@@ -52,9 +54,13 @@ Hi! I'm Can Ngo-Cong, Software Engineer at Freelancer. I'm fascinated with build
 * PhpStorm
 * Visual Studio Code
 
-### Professional History
+***
 
-### Contact me
+## Professional History
+
+***
+
+## Contact me
 
 * [ngocongcan@gmail.com](mailto:ngocongcan@gmail.com)
 * [Skype : thnhanit](skype:<thnhanit>?call)
