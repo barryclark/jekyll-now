@@ -6,9 +6,11 @@ published: true
 ---
 
 Hi! I'm Can Ngo-Cong, Software Engineer at Freelancer. I'm fascinated with building a great applications that solve real, humnan problems.
+
 ### Technical skills
 
 #### Languages
+
 * Objective-C
 * Swift
 * PHP
@@ -19,10 +21,12 @@ Hi! I'm Can Ngo-Cong, Software Engineer at Freelancer. I'm fascinated with build
 * Ionic
 
 #### Methodologies
+
 * UML
 * Design patterns
 
 #### Middleware
+
 * Apache
 
 #### O/S
@@ -31,16 +35,19 @@ Hi! I'm Can Ngo-Cong, Software Engineer at Freelancer. I'm fascinated with build
 * Window
 
 #### Databases
+
 * MySQL
 * NoSQL
 * SQLite
 
 #### Networking
+
 * TCP/IP
 * UDP
 * HTTP
 
 #### Tools
+
 * Xcode
 * PhpStorm
 * Visual Studio Code
