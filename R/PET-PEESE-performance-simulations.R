@@ -123,7 +123,7 @@ runSim <- function(reps,
 source_obj <- ls()
 
 #--------------------------------------------------------
-# Simulation conditions from http://datacolada.org/59
+# Simulation conditions based on http://datacolada.org/59
 #--------------------------------------------------------
 
 set.seed(20170417)
