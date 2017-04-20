@@ -6,9 +6,49 @@ published: true
 ---
 
 Hi! I'm Can Ngo-Cong, Software Engineer at Freelancer. I'm fascinated with building a great applications that solve real, humnan problems.
-### Technologies
+### Technical skills
+
+#### Languages
+* Objective-C
+* Swift
+* PHP
+
+#### APIs
+
+* iOS
+* Ionic
+
+#### Methodologies
+* UML
+* Design patterns
+
+#### Middleware
+* Apache
+
+#### O/S
+* Mac
+* Ubuntu
+* Window
+
+#### Databases
+* MySQL
+* NoSQL
+* SQLite
+
+#### Networking
+* TCP/IP
+* UDP
+* HTTP
+
+#### Tools
+* Xcode
+* PhpStorm
+* Visual Studio Code
 
 
 ### Contact me
 
-[ngocongccan@gmail.com](mailto:ngocongcan@gmail.com)
+* [ngocongcan@gmail.com](mailto:ngocongcan@gmail.com)
+* [Skype : thnhanit](skype:<thnhanit>?call)
+
+
