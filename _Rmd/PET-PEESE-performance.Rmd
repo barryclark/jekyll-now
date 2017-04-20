@@ -1,12 +1,88 @@
 ---
 layout: post
-title: "Use sample size for PET-PEESE of d's, maybe?"
+title: "You wanna PEESE of d's?"
 date: April 18, 2017
 tags: [meta-analysis]
 ---
 
-Publication bias---and more generally, outcome reporting biases---are now recognized as a critical threat to the validity of findings from research syntheses. In the areas with which I am most familiar (education and psychology), it has become more or less a requirement for research synthesis projects to conduct analyses to detect the presence of systematic outcome reporting biases, and even to try and correct for its distorting effects on average effect size estimates. Widely known analytic techniques for doing so include rank-correlation tests, the Trim-and-Fill technique proposed by [Duval and Tweedie](https://dx.doi.org/10.2307/2669529), and [Egger regression](https://dx.doi.org/10.1136/bmj.315.7109.629) (in its [many variants](https://dx.doi.org/10.1186/1471-2288-9-2)). Another class of methods involve selection models (or weight function models), as proposed by [Hedges and Vevea](https://dx.doi.org/10.1007/BF02294384) and [Vevea and Woods](https://dx.doi.org/10.1037/1082-989X.10.4.428), among others. As far as I can tell, these are well known among methodologists but very seldom applied due to their complexity and lack of ready-to-use software (though [an R package](https://CRAN.R-project.org/package=weightr) is available as of recently).  Further, more recent proposals include the PET-PEESE technique introduced by [Stanley and Doucouliagos](https://dx.doi.org/10.1002/jrsm.1095); Simonsohn, Nelson, and Simmon's [p-curve technique](https://dx.doi.org/10.1177/1745691614553988); [p-uniform](http://dx.doi.org/10.1037/met0000025), and others. The list of techniques grows by the day.
+Publication bias---and more generally, outcome reporting biases---are now recognized as a critical threat to the validity of findings from research syntheses. In the areas with which I am most familiar (education and psychology), it has become more or less a requirement for research synthesis projects to conduct analyses to detect the presence of systematic outcome reporting biases, and even to try and correct for its distorting effects on average effect size estimates. Widely known analytic techniques for doing so include rank-correlation tests, the Trim-and-Fill technique proposed by [Duval and Tweedie](https://dx.doi.org/10.2307/2669529), and [Egger regression](https://dx.doi.org/10.1136/bmj.315.7109.629) (in its [many variants](https://dx.doi.org/10.1186/1471-2288-9-2)). Another class of methods involve selection models (or weight function models), as proposed by [Hedges and Vevea](https://dx.doi.org/10.1007/BF02294384) and [Vevea and Woods](https://dx.doi.org/10.1037/1082-989X.10.4.428), among others. As far as I can tell, these are well known among methodologists but very seldom applied due to their complexity and lack of ready-to-use software (though [an R package](https://CRAN.R-project.org/package=weightr) has recently become available).  More recent proposals include the PET-PEESE technique introduced by [Stanley and Doucouliagos](https://dx.doi.org/10.1002/jrsm.1095); Simonsohn, Nelson, and Simmon's [p-curve technique](https://dx.doi.org/10.1177/1745691614553988); [p-uniform](http://dx.doi.org/10.1037/met0000025), and others. The list of techniques grows by the day.
 
-Among these methods, Egger regression, PET, and PEESE are quite appealing---superficially, at least---due to their simplicity. These methods each involve estimating a fairly simple meta-regression model, using as the covariate the sampling variance of the effect size or some transformation thereof. PET uses the standard error of the effect size as the regressor; PEESE uses the sampling variance (i.e., the squared standard error); PET-PEESE involves first testing whether the slope of the PET regression is statistically significant, using PEESE if it is or PET otherwise. The intercept from one of these regressions is the average effect size estimate from a study with zero sampling variance, and is used as a "bias-corrected" estimator of the population average effect. These methods are also appealing due to their extensibility. Because they are just meta-regressions, it is also quite easy to build more elaborate models on top of them, such as by controlling for further covariates, using robust variance estimation to account for dependencies among effect size estimates, etc.
+Among these methods, Egger regression, PET, and PEESE are superficially quite appealing due to their simplicity. These methods each involve estimating a fairly simple meta-regression model, using as the covariate the sampling variance of the effect size or some transformation thereof. PET uses the standard error of the effect size as the regressor; PEESE uses the sampling variance (i.e., the squared standard error); PET-PEESE involves first testing whether the PET estimate is statistically significant, using PEESE if it is or PET otherwise. The intercept from one of these regressions is the average effect size estimate from a study with zero sampling variance and is used as a "bias-corrected" estimator of the population average effect. These methods are also appealing due to their extensibility. Because they are just meta-regressions, it is comparatively easy to build more elaborate models on top of them, such as by controlling for further covariates, using robust variance estimation to account for dependencies among effect size estimates, etc.
 
-In [a recent blog post](http://datacolada.org/59), Uri Simonsohn 
+In [a recent blog post](http://datacolada.org/59), Uri Simonsohn reports some simulations demonstrating that the PET-PEESE estimator can have large biases under certain conditions, _even in the absence of publication bias_. The simulations are based on standardized mean differences from two-group experiments and involve a distribution of sample sizes that includes many small studies, as might be found in certain areas of psychology. On the basis of these performance assessments, he argues that this purported cure is actually worse than the disease---that PET-PEESE should _not_ be used in meta-analyses of psychological research because it performs to poorly to be trusted. In [a response to Uri's post](http://datacolada.org/wp-content/uploads/2017/04/Response-by-Joe-Hilgard-to-Colada-59.pdf), [Joe Hilgard](http://crystalprisonzone.blogspot.com/) suggests that some simple modifications to the method can improve its performance. Specifically, Joe suggests using a function of sample size as the covariate (in place of the standard error or sampling variance of $d$), and also using PET or PEESE as stand-alone estimators, rather than using them contingent on a significance test. 
+
+In this post, I follow up Joe's suggestions while replicating and expanding upon Uri's simulations, to try and provide a fuller picture of the relative performance of these estimators. In brief, the simulations show that:
+
+* In the absence of publication bias, the sample-size variants of PET and PEESE are __exactly unbiased__. 
+* However, these adjusted estimators still have a cost, being less precise than conventional fixed-effect or random-effects estimators. 
+* In the presence of varying degrees of publication bias, the sample-size variant of PEESE does better than PET-PEESE as it is usually applied. But it's still not great. 
+
+# Why use sample size?
+
+# Simulation model
+
+# Results
+
+```{r setup, include = FALSE}
+library(knitr)
+opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+```
+
+
+```{r cleaning}
+library(stringr)
+library(tidyr)
+library(dplyr)
+library(ggplot2)
+library(trelliscopejs)
+
+load("../files/PET-PEESE Simulation Results.Rdata")
+
+results <- 
+  results %>%
+  select(-reps, -seed) %>%
+  mutate(
+    study_dist = ifelse(na == nb, "Uniform distribution of studies", 
+                        ifelse(na > nb, "More small studies", "More large studies")),
+    study_dist = factor(study_dist, 
+                        levels = c("More small studies","Uniform distribution of studies","More large studies"))
+  ) %>%
+  unnest() %>%
+  gather("estimator","val", ends_with("_M"), ends_with("_V")) %>%
+  separate(estimator, c("estimator","stat"), sep = -2) %>%
+  spread(stat, val) %>%
+  mutate(
+    estimator = str_replace(str_sub(estimator, 1, -2), "_","-"),
+    estimator = factor(estimator, levels = c("FE-meta","RE-meta","Top-10","PET","PEESE","PET-PEESE","SPET","SPEESE","SPET-SPEESE")),
+    RMSE = sqrt((M - mean_effect)^2 + V)
+  )
+
+
+bias_plot <- function(dat) {
+  ggplot(dat, aes(mean_effect, M, color = estimator, shape = estimator)) + 
+    geom_point() + geom_line() + 
+    geom_abline(slope = 1, intercept = 0) + 
+    facet_grid(p_RR ~ sd_effect) + 
+    theme_light()
+}
+
+selected_estimators <- c("FE-meta","Top-10","PET-PEESE","SPEESE","SPET","SPET-SPEESE")
+
+results %>%
+  filter(study_dist == "Uniform distribution of studies", 
+         studies == 100, n_max == 50,
+         estimator %in% selected_estimators) %>%
+  bias_plot()
+
+plot_dat <- 
+  results %>%
+  select(-n_min, -na, -nb, -V) %>%
+  rename(maximum_n = n_max) %>%
+  filter(estimator %in% selected_estimators) %>%
+  group_by(study_dist, studies, maximum_n) %>%
+  summarise(panel = panel(bias_plot(.)))
+
+plot_dat %>%
+  trelliscope(name = "Estimator expectation", nrow = 1, ncol = 1, self_contained = TRUE)
+```
+
