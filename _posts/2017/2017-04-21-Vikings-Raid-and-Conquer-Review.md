@@ -9,7 +9,7 @@ tags:
   - vikings raid and conquer
 layout: post
 description: >-
-  The prison planet Zartaclaton has become unstable. Time for a MoonQuake Escape!
+  Fans of Vikings will find Raid & Conquer to be a fun and competent deck builder;
 featured: vikings.jpg
 author: robk
 published: true
