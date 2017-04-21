@@ -18,7 +18,7 @@ published: true
 ![MoonQuake Escape](/images/moonquake/cover.png){: .float-right}
 **Designers:**  Jeff Johnston \\
 **Publisher:** [Breaking Games](https://breakinggames.com/products/moonquake-escape)\\
-**Year:** 2010\\
+**Year:** 2016\\
 **MSRP:** [$50](https://breakinggames.com/products/moonquake-escape)\\
 **Players:** 2-6\\
 **Play Time:** 45-60 Min\\
