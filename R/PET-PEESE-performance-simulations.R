@@ -68,11 +68,14 @@ dat <- r_SMD(studies = 100, mean_effect = 0.4, sd_effect = 0.2,
 estimate_effects <- function(dat, studies = nrow(dat)) {
   require(metafor)
   
-  dat$sd <- sqrt(dat$Vg)
-  dat$Va <- 2 / dat$n
-  dat$sda <- sqrt(dat$Va)
-  dat$Top <- 1:studies %in% order(dat$n)[studies - 0:9]
-  
+  dat <- dat[order(dat$n, decreasing = TRUE),]
+  dat <- within(dat, {
+    sd <- sqrt(Vg)
+    Va <- 2 / n
+    sda <- sqrt(Va)
+    Top <- c(rep(TRUE, 10), rep(FALSE, studies - 10))
+  })
+    
   RE_meta <- rma(yi = g, vi = Vg, data = dat, method = "HE")
   FE_meta <- rma(yi = g, vi = Vg, data = dat, method = "FE")
   Top10 <- rma(yi = g, vi = Vg, data = subset(dat, Top), method = "FE")
@@ -84,6 +87,7 @@ estimate_effects <- function(dat, studies = nrow(dat)) {
   SPET_test <- coef(SPET)[[1]] / sqrt(diag(summary(SPET)$cov.unscaled)[[1]]) > qnorm(0.975)
   RSS_SPET <- with(SPET, sum(weights * residuals^2))
   RSS_SPEESE <- with(SPEESE, sum(weights * residuals^2))
+  
   
   data.frame(
     RE_meta = RE_meta$b,
@@ -145,7 +149,7 @@ prod(lengths(design_factors))
 
 params <- expand.grid(design_factors)
 params <- subset(params, na == 1 | nb == 1)
-params$reps <- 1000
+params$reps <- 2000
 params$seed <- round(runif(1) * 2^30) + 1:nrow(params)
 nrow(params)
 head(params)
@@ -205,7 +209,7 @@ results <-
   spread(stat, val) %>%
   mutate(
     estimator = str_replace(str_sub(estimator, 1, -2), "_","-"),
-    estimator = factor(estimator, levels = c("FE-meta","RE-meta","Top-10","PET","PEESE","PET-PEESE","SPET","SPEESE","SPET-SPEESE")),
+    estimator = factor(estimator, levels = c("FE-meta","RE-meta","Top-10","PET","PEESE","PET-PEESE","SPET","SPEESE","SPET-SPEESE","BF-ROTSS")),
     RMSE = sqrt((M - mean_effect)^2 + V)
   )
 
@@ -226,7 +230,7 @@ RMSE_plot <- function(dat) {
     theme_light()
 }
 
-selected_estimators <- c("FE-meta","Top-10","PET-PEESE","SPEESE","SPET","SPET-SPEESE")
+selected_estimators <- c("FE-meta","Top-10","PEESE","PET-PEESE","SPEESE","SPET-SPEESE")
 
 #-------------------------------
 # Expectation plots
