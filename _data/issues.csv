@@ -19981,6 +19981,18 @@ email: ''
 data: 13/09/2016
 </yamldata></pre>
 ",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/173,176749451,2016-09-13 21:05:53,2016-09-13 21:05:11,Associazione Enea Grilli,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": ""Sisma Centro Italia"", ""chi"": ""Associazione Enea Grilli"", ""data"": ""13/09/2016"", ""descrizione"": """", ""email"": """", ""iban"": ""IT74H 05387 66850 000002064231"", ""intestazione"": """", ""link"": ""http://www.associazioneeneagrilli.org/index.php/news"", ""postale"": """"}","<pre><yamldata>chi: 'Associazione Enea Grilli'
+descrizione: ''
+intestazione: ''
+iban: 'IT74H 05387 66850 000002064231'
+bic: ''
+postale: ''
+causale: 'Sisma Centro Italia'
+link: 'http://www.associazioneeneagrilli.org/index.php/news'
+email: ''
+data: 13/09/2016
+</yamldata></pre>
+",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/172,176741481,2016-09-23 21:25:55,2016-09-13 20:30:03,Caritas - Cei,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Caritas - Cei"", ""data"": ""13/09/2016"", ""descrizione"": ""Domenica 18 settembre colletta nazionale in tutte le parrocchie d'Italia per sostenere la ricostruzione nelle zone colpite dal sisma."", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""http://www.caritasitaliana.it/pls/caritasitaliana/V3_S2EW_CONSULTAZIONE.mostra_pagina?id_pagina=6558"", ""postale"": """"}","<pre><yamldata>chi: 'Caritas - Cei'
 descrizione: 'Domenica 18 settembre colletta nazionale in tutte le parrocchie d''Italia per sostenere la ricostruzione nelle zone colpite dal sisma.'
 intestazione: ''
