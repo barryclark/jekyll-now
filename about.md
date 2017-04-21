@@ -13,46 +13,50 @@ Hi! I'm Can Ngo-Cong, Software Engineer at Freelancer. I'm fascinated with build
 
 #### Languages
 
-* Objective-C
-* Swift
-* PHP
+* Objective-C (4+ years)
+* Swift (2+ years)
+* PHP (2+ years)
+* Javascript (2+ years)
+* HTML, CSS (2+ years)
 
-#### APIs
+#### Frameworks, Platforms & APIs 
 
-* iOS
-* Ionic
+* iOS, Android
+* Ionic 2,3
+* Symfony, Laravel, Yii, Codeignter
+* VueJS, AngularJS
+* RESTful
 
-#### Methodologies
+#### Working tools
 
-* UML
-* Design patterns
-
-#### Middleware
-
-* Apache
-
-#### O/S
-* Mac
-* Ubuntu
-* Window
+* Skype
+* Slack
+* Trello
+* Jira
+* Redmine
+* Toggl
+* Invisionapp
+* Dropbox
 
 #### Databases
 
 * MySQL
 * NoSQL
 * SQLite
-
-#### Networking
-
-* TCP/IP
-* UDP
-* HTTP
+* Firebase
 
 #### Tools
 
 * Xcode
 * PhpStorm
 * Visual Studio Code
+* Atom
+
+#### Git & Hosting service for source code
+
+* Github
+* Bitbucket
+* Gitlab
 
 ***
 
@@ -64,5 +68,4 @@ Hi! I'm Can Ngo-Cong, Software Engineer at Freelancer. I'm fascinated with build
 
 * [ngocongcan@gmail.com](mailto:ngocongcan@gmail.com)
 * [Skype : thnhanit](skype:<thnhanit>?call)
-
 
