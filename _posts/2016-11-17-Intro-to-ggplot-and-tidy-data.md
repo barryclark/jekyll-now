@@ -522,10 +522,10 @@ pairs_plt</code></pre>
 <pre class="r"><code># Picking genes that have are really high pearson correlations between rate and expression in at least one conditions
 
 yeast %&gt;% 
-  group_by(gene, nutrient) %&gt;% 
+  group\_by(gene, nutrient) %&gt;% 
   dplyr::summarise(Pearson = cor(as.numeric(rate),expression)) %&gt;% 
   filter (Pearson &lt; -0.99) %&gt;% 
-  tail(50) -&gt; negcor_genes
+  tail(50) -&gt; negcor\_genes
 
 print(negcor_genes)</code></pre>
 <pre><code>## Source: local data frame [50 x 3]
@@ -589,11 +589,11 @@ negplt_box </code></pre>
 </ul>
 <h3>Don't use standard error of the mean to hide variation</h3>
 <pre class="r"><code># Don't make plots like this
-negplt_mean&lt;- ggplot(data=negcor , aes(x=rate, y=expression)) +
+negplt\_mean&lt;- ggplot(data=negcor , aes(x=rate, y=expression)) +
      geom_bar(stat=&quot;summary&quot;, fun.y=&quot;mean&quot;) +
-     stat_summary(fun.data = mean_se, geom = &quot;errorbar&quot;) +
+     stat\_summary(fun.data = mean_se, geom = &quot;errorbar&quot;) +
      theme(axis.text.x=element_text(angle=45, vjust =1, hjust = 1)) +
-     scale_color_manual(values=palette) +
+     scale\_color\_manual(values=palette) +
      annotate (&quot;text&quot;, x = 0.2, y=0.8, label=&quot;NO&quot;, color=&quot;red&quot;, size=15)
 
 negplt_mean</code></pre>
