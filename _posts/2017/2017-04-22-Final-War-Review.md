@@ -32,7 +32,7 @@ I first saw Final War at PAX East this year and it was unlike any other CCG I ha
 
 <h2>Play</h2>
 
-![Final War Factions](/images/finalwar/factions.jpg){: .float-right}The Onslaught Starter Set comes with 3 different Warlords to head players' decks. The 3 Warlords represent 3 different factions: Good, Neutral, and Evil. Unlike other CCGs where players are in direct conflict, Final War has players building their army while competing with cards in a Fate Deck. The game proceeds this way until the Final War card is played and the players' armies clash to determine the victor.
+![Final War Factions](/images/finalwar/factions.png){: .float-right}The Onslaught Starter Set comes with 3 different Warlords to head players' decks. The 3 Warlords represent 3 different factions: Good, Neutral, and Evil. Unlike other CCGs where players are in direct conflict, Final War has players building their army while competing with cards in a Fate Deck. The game proceeds this way until the Final War card is played and the players' armies clash to determine the victor.
 
 Units in Final War are placed in spaces on the board. Once the board is filled no more units can be placed. There's places for your Warlord, regular units, Heroes, and fortifications. Heroes and Warlords can also hold items, while Spells are cast and spent.
 
