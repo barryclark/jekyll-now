@@ -1,6 +1,8 @@
 #--------------------------------------------
 # required packages
 # install.packages("metafor")
+# install.packages("sandwich")
+# install.packages("lmtest")
 # install.packages("purrr")
 # install.packages("dplyr")
 # install.packages("stringr")
@@ -53,7 +55,8 @@ r_SMD <- function(studies, mean_effect, sd_effect, n_min, n_max, na, nb, p_thres
   return(dat)
 }
 
-dat <- r_SMD(studies = 100, mean_effect = 0.4, sd_effect = 0.2, 
+studies <- 100
+dat <- r_SMD(studies = studies, mean_effect = 0.4, sd_effect = 0.2, 
              n_min = 12, n_max = 50, na = 1, nb = 1, 
              p_thresholds = .05, p_RR = 0)
 
@@ -64,15 +67,30 @@ dat <- r_SMD(studies = 100, mean_effect = 0.4, sd_effect = 0.2,
 # PET, PEESE, and modified versions of 
 # PET (SPET) and PEESE (SPEESE)
 #--------------------------------------------
+formula <- "g ~ Vg"
+wt <- 1 / dat$Vg
+
+MA_test <- function(formula, dat, wt, lincom = NULL) {
+  wt <- eval(substitute(wt), dat)
+  lm_fit <- lm(as.formula(formula), weights = wt, data = dat)
+  vcr <- vcovHC(lm_fit, type = "HC2")
+  res <- coeftest(lm_fit, vcr)
+  
+}
+
+MA_test("g ~ 1", dat = dat, wt = 1 / Vg)$coefficients
+summary(lm(g ~ 1, data = dat, weights = 1/Vg))$coefficients
 
 estimate_effects <- function(dat, studies = nrow(dat)) {
-  require(metafor)
-  
-  dat$sd <- sqrt(dat$Vg)
-  dat$Va <- 2 / dat$n
-  dat$sda <- sqrt(dat$Va)
-  dat$Top <- 1:studies %in% order(dat$n)[studies - 0:9]
-  
+  require(sandwich)
+  require(lmtest)
+  dat <- within(dat, {
+    sd <- sqrt(Vg)
+    Va <- 2 / n
+    sda <- sqrt(Va)
+    Top <- (1:studies) %in% (order(dat$n, decreasing = TRUE)[1:10])
+  })
+    
   RE_meta <- rma(yi = g, vi = Vg, data = dat, method = "HE")
   FE_meta <- rma(yi = g, vi = Vg, data = dat, method = "FE")
   Top10 <- rma(yi = g, vi = Vg, data = subset(dat, Top), method = "FE")
@@ -84,6 +102,7 @@ estimate_effects <- function(dat, studies = nrow(dat)) {
   SPET_test <- coef(SPET)[[1]] / sqrt(diag(summary(SPET)$cov.unscaled)[[1]]) > qnorm(0.975)
   RSS_SPET <- with(SPET, sum(weights * residuals^2))
   RSS_SPEESE <- with(SPEESE, sum(weights * residuals^2))
+  
   
   data.frame(
     RE_meta = RE_meta$b,
@@ -126,7 +145,7 @@ runSim <- function(reps,
 source_obj <- ls()
 
 #--------------------------------------------------------
-# Simulation conditions from http://datacolada.org/59
+# Simulation conditions based on http://datacolada.org/59
 #--------------------------------------------------------
 
 set.seed(20170417)
@@ -145,7 +164,7 @@ prod(lengths(design_factors))
 
 params <- expand.grid(design_factors)
 params <- subset(params, na == 1 | nb == 1)
-params$reps <- 1000
+params$reps <- 2000
 params$seed <- round(runif(1) * 2^30) + 1:nrow(params)
 nrow(params)
 head(params)
@@ -195,7 +214,7 @@ results <-
   select(-reps, -seed) %>%
   mutate(
     study_dist = ifelse(na == nb, "Uniform distribution of studies", 
-                        ifelse(na > nb, "More small studies", "More large studies")),
+                        ifelse(na > nb, "More large studies", "More small studies")),
     study_dist = factor(study_dist, 
                         levels = c("More small studies","Uniform distribution of studies","More large studies"))
   ) %>%
@@ -205,7 +224,7 @@ results <-
   spread(stat, val) %>%
   mutate(
     estimator = str_replace(str_sub(estimator, 1, -2), "_","-"),
-    estimator = factor(estimator, levels = c("FE-meta","RE-meta","Top-10","PET","PEESE","PET-PEESE","SPET","SPEESE","SPET-SPEESE")),
+    estimator = factor(estimator, levels = c("FE-meta","RE-meta","Top-10","PET","PEESE","PET-PEESE","SPET","SPEESE","SPET-SPEESE","BF-ROTSS")),
     RMSE = sqrt((M - mean_effect)^2 + V)
   )
 
@@ -226,7 +245,7 @@ RMSE_plot <- function(dat) {
     theme_light()
 }
 
-selected_estimators <- c("FE-meta","Top-10","PET-PEESE","SPEESE","SPET","SPET-SPEESE")
+selected_estimators <- c("FE-meta","Top-10","PEESE","PET-PEESE","SPEESE","SPET-SPEESE")
 
 #-------------------------------
 # Expectation plots
