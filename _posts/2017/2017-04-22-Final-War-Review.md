@@ -9,7 +9,7 @@ tags:
   - games lab pty
 layout: post
 description: >-
-  Fans of Vikings will find Raid & Conquer to be a fun and competent deck builder;
+  Final War is an interesting take on CCGs with an impressive Starter Box.
 featured: finalwar.jpg
 author: robk
 published: true
