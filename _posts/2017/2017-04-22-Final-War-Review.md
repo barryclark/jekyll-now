@@ -15,7 +15,7 @@ author: robk
 published: true
 ---
 
-![Final War](/images/finalway/cover.png){: .float-right}
+![Final War](/images/finalwar/cover.png){: .float-right}
 **Designers:**  N/A \\
 **Publisher:** [Games Lab](https://www.finalwar.com)\\
 **Year:** 2016\\
