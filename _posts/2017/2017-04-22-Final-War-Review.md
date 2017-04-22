@@ -10,7 +10,7 @@ tags:
 layout: post
 description: >-
   Fans of Vikings will find Raid & Conquer to be a fun and competent deck builder;
-featured: finalway.jpg
+featured: finalwar.jpg
 author: robk
 published: true
 ---
