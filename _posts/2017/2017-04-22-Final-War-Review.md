@@ -30,7 +30,7 @@ published: true
 
 I first saw Final War at PAX East this year and it was unlike any other CCG I have ever played. The Onslaught Starter Set contains everything you need to play including a board, tokens, and over 200 cards. Games Lab Pty assured me that the game was balanced in a way that a player could get maximum enjoyment out of the Starter Set without having to purchase any other cards.
 
-<h2>Play</h2>
+<h2>Play</h2> 
 
 ![Final War Factions](/images/finalwar/factions.png){: .float-right}The Onslaught Starter Set comes with 3 different Warlords to head players' decks. The 3 Warlords represent 3 different factions: Good, Neutral, and Evil. Unlike other CCGs where players are in direct conflict, Final War has players building their army while competing with cards in a Fate Deck. The game proceeds this way until the Final War card is played and the players' armies clash to determine the victor.
 
