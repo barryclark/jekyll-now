@@ -10,7 +10,7 @@
 
 
 
-<meta name="date" content="2017-04-18" />
+<meta name="date" content="2017-04-23" />
 
 <title>You wanna PEESE of d’s?</title>
 
@@ -117,12 +117,12 @@ $(document).ready(function () {
 
 
 <h1 class="title toc-ignore">You wanna PEESE of d’s?</h1>
-<h4 class="date"><em>April 18, 2017</em></h4>
+<h4 class="date"><em>April 23, 2017</em></h4>
 
 </div>
 
 
-<p>Publication bias—and more generally, outcome reporting bias—is now recognized as a critical threat to the validity of findings from research syntheses. In the areas with which I am most familiar (education and psychology), it has become more or less a requirement for research synthesis projects to conduct analyses to detect the presence of systematic outcome reporting biases. Some analyses go further by trying correct for its distorting effects on average effect size estimates. Widely known analytic techniques for doing so include rank-correlation tests, the Trim-and-Fill technique proposed by <a href="https://dx.doi.org/10.2307/2669529">Duval and Tweedie</a>, and <a href="https://dx.doi.org/10.1136/bmj.315.7109.629">Egger regression</a> (in its <a href="https://dx.doi.org/10.1186/1471-2288-9-2">many variants</a>). Another class of methods involves selection models (or weight function models), as proposed by <a href="https://dx.doi.org/10.1007/BF02294384">Hedges and Vevea</a>, <a href="https://dx.doi.org/10.1037/1082-989X.10.4.428">Vevea and Woods</a>, and others. As far as I can tell, these are well known among methodologists but very seldom applied due to their complexity and lack of ready-to-use software (though <a href="https://CRAN.R-project.org/package=weightr">an R package</a> has recently become available). More recent proposals include the PET-PEESE technique introduced by <a href="https://dx.doi.org/10.1002/jrsm.1095">Stanley and Doucouliagos</a>; Simonsohn, Nelson, and Simmon’s <a href="https://dx.doi.org/10.1177/1745691614553988">p-curve technique</a>; Van Assen, Van Aert, and Wichert’s <a href="http://dx.doi.org/10.1037/met0000025">p-uniform</a>, and others. The list of techniques grows by the day.</p>
+<p>Publication bias—and more generally, outcome reporting bias—is now recognized as a critical threat to the validity of findings from research syntheses. In the areas with which I am most familiar (education and psychology), it has become more or less a requirement for research synthesis projects to conduct analyses to detect the presence of systematic outcome reporting biases. Some analyses go further by trying correct for its distorting effects on average effect size estimates. Widely known analytic techniques for doing so include Begg and Mazumdar’s <a href="https://dx.doi.org/10.2307/2533446">rank-correlation test</a>, the Trim-and-Fill technique proposed by <a href="https://dx.doi.org/10.2307/2669529">Duval and Tweedie</a>, and <a href="https://dx.doi.org/10.1136/bmj.315.7109.629">Egger regression</a> (in its <a href="https://dx.doi.org/10.1186/1471-2288-9-2">many variants</a>). Another class of methods involves selection models (or weight function models), as proposed by <a href="https://dx.doi.org/10.1007/BF02294384">Hedges and Vevea</a>, <a href="https://dx.doi.org/10.1037/1082-989X.10.4.428">Vevea and Woods</a>, and others. As far as I can tell, these are well known among methodologists but very seldom applied due to their complexity and lack of ready-to-use software (though <a href="https://CRAN.R-project.org/package=weightr">an R package</a> has recently become available). More recent proposals include the PET-PEESE technique introduced by <a href="https://dx.doi.org/10.1002/jrsm.1095">Stanley and Doucouliagos</a>; Simonsohn, Nelson, and Simmon’s <a href="https://dx.doi.org/10.1177/1745691614553988">p-curve technique</a>; Van Assen, Van Aert, and Wichert’s <a href="http://dx.doi.org/10.1037/met0000025">p-uniform</a>, and others. The list of techniques grows by the day.</p>
 <p>Among these methods, Egger regression, PET, and PEESE are superficially quite appealing due to their simplicity. These methods each involve estimating a fairly simple meta-regression model, using as the covariate the sampling variance of the effect size or some transformation thereof. PET uses the standard error of the effect size as the regressor; PEESE uses the sampling variance (i.e., the squared standard error); PET-PEESE involves first testing whether the PET estimate is statistically significant, using PEESE if it is or PET otherwise. The intercept from one of these regressions is the average effect size estimate from a study with zero sampling variance; the estimated intercept is used as a “bias-corrected” estimator of the population average effect. These methods are also appealing due to their extensibility. Because they are just meta-regressions, it is comparatively easy to extend them to meta-regression models that control for further covariates, to robust variance estimation to account for dependencies among effect size estimates, etc.</p>
 <p>In <a href="http://datacolada.org/59">a recent blog post</a>, Uri Simonsohn reports some simulation evidence indicating that the PET-PEESE estimator can have large biases under certain conditions, <em>even in the absence of publication bias</em>. The simulations are based on standardized mean differences from two-group experiments and involve simulating collections of studies that include many with small sample sizes, as might be found in certain areas of psychology. On the basis of these performance assessments, he argues that this purported cure is actually worse than the disease—that PET-PEESE should <em>not</em> be used in meta-analyses of psychological research because it performs to poorly to be trusted. In <a href="http://datacolada.org/wp-content/uploads/2017/04/Response-by-Joe-Hilgard-to-Colada-59.pdf">a response to Uri’s post</a>, <a href="http://crystalprisonzone.blogspot.com/">Joe Hilgard</a> suggests that some simple modifications to the method can improve its performance. Specifically, Joe suggests using a function of sample size as the covariate (in place of the standard error or sampling variance of <span class="math inline">\(d\)</span>), and also using PET or PEESE as stand-alone estimators, rather than using them contingent on a significance test.</p>
 <p>In this post, I follow up Joe’s suggestions while replicating and expanding upon Uri’s simulations, to try and provide a fuller picture of the relative performance of these estimators. In brief, the simulations show that:</p>
@@ -164,7 +164,18 @@ t = d / \sqrt{\frac{n_0 + n_1}{n_0 n_1}}.
 <li><span class="math inline">\(\pi = 0.2\)</span> corresponds to intermediate publication bias (some but not non-significant effects are observed); and</li>
 <li><span class="math inline">\(\pi = 0.0\)</span> corresponds to very strong publication bias (only statistically significant effects are observed).</li>
 </ul></li>
-<li>Each meta-analysis includes a total of <span class="math inline">\(k\)</span> observed studies, with <span class="math inline">\(k = 50\)</span> or <span class="math inline">\(k = 100\)</span>. Note that in scenarios with publication bias, more (sometimes many more) than <span class="math inline">\(k\)</span> studies are generated in order to get <span class="math inline">\(k\)</span> observed effects.</li>
+<li>Each meta-analysis includes a total of <span class="math inline">\(k = 100\)</span> observed studies. Note that in scenarios with publication bias, more (sometimes many more) than 100 studies are generated in order to get 100 observed effects.</li>
+</ul>
+<p>For each simulated dataset, I calculated the following:</p>
+<ul>
+<li>the usual fixed-effect meta-analytic average (I skipped random effects for simplicity);</li>
+<li>the usual fixed-effect average, but based only on the 10 largest studies (I call this the “Top-10” estimator in the results);</li>
+<li>the PET estimator (including intercept and slope);</li>
+<li>the PEESE estimator (including intercept and slope);</li>
+<li>PET-PEESE, which is equal to the PEESE intercept if <span class="math inline">\(H_0: \beta_0 \leq 0\)</span> is significant at the 10% level, and is otherwise equal to the PET intercept (this definition follows <a href="https://dx.doi.org/10.1177/1948550617693062">Stanley, 2017</a>);</li>
+<li>the modified PET estimator, which I’ll call “SPET” for “sample-size PET” (suggestions for better names welcome);</li>
+<li>the modified PEESE estimator, which I’ll call “SPEESE”; and</li>
+<li>SPET-SPEESE, which follows the same conditional logic as PET-PEESE but uses the modified estimators.</li>
 </ul>
 <p>The R code for all this <a href="https://jepusto.github.io/R/PET-PEESE-performance-simulations.R">lives here</a>.</p>
 </div>

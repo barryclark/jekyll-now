@@ -1,8 +1,6 @@
 #--------------------------------------------
 # required packages
-# install.packages("metafor")
 # install.packages("sandwich")
-# install.packages("lmtest")
 # install.packages("purrr")
 # install.packages("dplyr")
 # install.packages("stringr")
@@ -67,23 +65,24 @@ dat <- r_SMD(studies = studies, mean_effect = 0.4, sd_effect = 0.2,
 # PET, PEESE, and modified versions of 
 # PET (SPET) and PEESE (SPEESE)
 #--------------------------------------------
-formula <- "g ~ Vg"
-wt <- 1 / dat$Vg
 
-MA_test <- function(formula, dat, wt, lincom = NULL) {
+MA_test <- function(formula, dat, wt, estimator) {
   wt <- eval(substitute(wt), dat)
   lm_fit <- lm(as.formula(formula), weights = wt, data = dat)
+  est <- coef(lm_fit)
   vcr <- vcovHC(lm_fit, type = "HC2")
-  res <- coeftest(lm_fit, vcr)
-  
+  se <- sqrt(diag(vcr))
+  data.frame(
+    estimator = estimator,
+    coef = names(est),
+    est = as.numeric(est),
+    se = se,
+    p_val = pnorm(est / se, lower.tail = FALSE)
+  )
 }
-
-MA_test("g ~ 1", dat = dat, wt = 1 / Vg)$coefficients
-summary(lm(g ~ 1, data = dat, weights = 1/Vg))$coefficients
 
 estimate_effects <- function(dat, studies = nrow(dat)) {
   require(sandwich)
-  require(lmtest)
   dat <- within(dat, {
     sd <- sqrt(Vg)
     Va <- 2 / n
@@ -91,31 +90,20 @@ estimate_effects <- function(dat, studies = nrow(dat)) {
     Top <- (1:studies) %in% (order(dat$n, decreasing = TRUE)[1:10])
   })
     
-  RE_meta <- rma(yi = g, vi = Vg, data = dat, method = "HE")
-  FE_meta <- rma(yi = g, vi = Vg, data = dat, method = "FE")
-  Top10 <- rma(yi = g, vi = Vg, data = subset(dat, Top), method = "FE")
-  PET <- lm(g ~ sd, data = dat, weights = 1 / Vg) 
-  PEESE <- lm(g ~ Vg, data = dat, weights = 1 / Vg)
-  PET_test <- coef(PET)[[1]] / sqrt(diag(summary(PET)$cov.unscaled)[[1]]) > qnorm(0.975)
-  SPET <- lm(g ~ sda, data = dat, weights = 1 / Va) 
-  SPEESE <- lm(g ~ Va, data = dat, weights = 1 / Va)
-  SPET_test <- coef(SPET)[[1]] / sqrt(diag(summary(SPET)$cov.unscaled)[[1]]) > qnorm(0.975)
-  RSS_SPET <- with(SPET, sum(weights * residuals^2))
-  RSS_SPEESE <- with(SPEESE, sum(weights * residuals^2))
+  FE_meta <- MA_test("g ~ 1", dat = dat, wt = 1 / Vg, "FE-meta")
+  Top_10 <- MA_test("g ~ 1", dat = subset(dat, Top), wt = 1 / Vg, "Top-10")
   
+  PET <- MA_test("g ~ sd", dat = dat, wt = 1 / Vg, "PET") 
+  PEESE <- MA_test("g ~ Vg", dat = dat, wt = 1 / Vg, "PEESE")
+  PET_PEESE <- if (PET$p_val[1] < .10) PEESE[1,] else PET[1,]
+  PET_PEESE$estimator <- "PET-PEESE"
   
-  data.frame(
-    RE_meta = RE_meta$b,
-    FE_meta = FE_meta$b,
-    Top_10 = Top10$b,
-    PET = coef(PET)[[1]],
-    PEESE = coef(PEESE)[[1]],
-    PET_PEESE = ifelse(PET_test, coef(PEESE)[[1]], coef(PET)[[1]]),
-    SPET = coef(SPET)[[1]],
-    SPEESE = coef(SPEESE)[[1]],
-    SPET_SPEESE = ifelse(SPET_test, coef(SPEESE)[[1]], coef(SPET)[[1]]),
-    BF_ROTSS = ifelse(RSS_SPET < RSS_SPEESE, coef(SPET)[[1]], coef(SPEESE)[[1]])
-  )
+  SPET <- MA_test("g ~ sda", dat = dat, wt = 1 / Va, "SPET") 
+  SPEESE <- MA_test("g ~ Va", dat = dat, wt = 1 / Va, "SPEESE")
+  SPET_SPEESE <- if (SPET$p_val[1] < .10) SPEESE[1,] else SPET[1,]
+  SPET_SPEESE$estimator <- "SPET-SPEESE"
+  
+  rbind(FE_meta, Top_10, PET, PEESE, PET_PEESE, SPET, SPEESE, SPET_SPEESE)
 }
 
 estimate_effects(dat)
@@ -127,7 +115,7 @@ estimate_effects(dat)
 runSim <- function(reps, 
                    studies, mean_effect, sd_effect, 
                    n_min, n_max, na, nb, 
-                   p_thresholds = .05, p_RR = .1,
+                   p_thresholds = .05, p_RR = 1,
                    seed = NULL, ...) {
   require(purrr)
   require(dplyr)
@@ -139,8 +127,17 @@ runSim <- function(reps,
     estimate_effects()
   }) %>%
   bind_rows() %>%
-    summarise_all(funs(M = mean, V = var))
+    group_by(estimator, coef) %>% 
+    summarise(
+      est_M = mean(est),
+      est_V = var(est),
+      reject_025 = mean(p_val < .025),
+      reject_050 = mean(p_val < .050)
+    )
 }
+
+runSim(reps = 100, studies = 100, mean_effect = 0.0, sd_effect = 0.2, 
+       n_min = 12, n_max = 120, na = 1, nb = 1, p_thresholds = .05, p_RR = 1)
 
 source_obj <- ls()
 
@@ -150,8 +147,8 @@ source_obj <- ls()
 
 set.seed(20170417)
 
-design_factors <- list(studies = c(50, 100),
-                       mean_effect = seq(0,1,0.1), 
+design_factors <- list(studies = 100,
+                       mean_effect = seq(0, 1, 0.1), 
                        sd_effect = c(0, 0.1, 0.2, 0.4),
                        n_min = 12,
                        n_max = c(50, 120),
@@ -164,7 +161,7 @@ prod(lengths(design_factors))
 
 params <- expand.grid(design_factors)
 params <- subset(params, na == 1 | nb == 1)
-params$reps <- 2000
+params$reps <- 20
 params$seed <- round(runif(1) * 2^30) + 1:nrow(params)
 nrow(params)
 head(params)
@@ -211,21 +208,16 @@ load("files/PET-PEESE Simulation Results.Rdata")
 
 results <- 
   results %>%
-  select(-reps, -seed) %>%
   mutate(
     study_dist = ifelse(na == nb, "Uniform distribution of studies", 
                         ifelse(na > nb, "More large studies", "More small studies")),
     study_dist = factor(study_dist, 
                         levels = c("More small studies","Uniform distribution of studies","More large studies"))
   ) %>%
+  select(-reps, -seed, -studies, -na, -nb, -n_min) %>%
   unnest() %>%
-  gather("estimator","val", ends_with("_M"), ends_with("_V")) %>%
-  separate(estimator, c("estimator","stat"), sep = -2) %>%
-  spread(stat, val) %>%
   mutate(
-    estimator = str_replace(str_sub(estimator, 1, -2), "_","-"),
-    estimator = factor(estimator, levels = c("FE-meta","RE-meta","Top-10","PET","PEESE","PET-PEESE","SPET","SPEESE","SPET-SPEESE","BF-ROTSS")),
-    RMSE = sqrt((M - mean_effect)^2 + V)
+    RMSE = sqrt((est_M - mean_effect)^2 + est_V)
   )
 
 table(results$estimator)
@@ -245,7 +237,7 @@ RMSE_plot <- function(dat) {
     theme_light()
 }
 
-selected_estimators <- c("FE-meta","Top-10","PEESE","PET-PEESE","SPEESE","SPET-SPEESE")
+selected_estimators <- c("FE-meta","Top-10","PEESE","SPET","SPEESE","SPET-SPEESE")
 
 #-------------------------------
 # Expectation plots
@@ -327,36 +319,3 @@ results %>%
   filter(studies == 100, p_RR == 0, n_max == 120, estimator %in% selected_estimators) %>%
   RMSE_plot()
 
--------------------------------------------
-# expectation of SMD given n
--------------------------------------------
-  
-library(purrr)
-library(tidyr)
-library(dplyr)
-library(ggplot2)
-
-SMD_means <- 
-  list(studies = 1000,
-       mean_effect = seq(0,1,0.2), 
-       sd_effect = c(0, 0.1, 0.2, 0.3),
-       n_min = 10:100,
-       p_RR = c(1, 0.2, 0)) %>%
-  cross_d() %>%
-  mutate(
-    n_max = n_min,
-    na = 1,
-    nb = 1
-  ) %>%
-  invoke_rows(.d = ., .f = r_SMD, .to = "SMD") %>%
-  unnest() %>%
-  group_by(mean_effect, sd_effect, n_min, p_RR) %>%
-  summarise(E_SMD = mean(g))
-
-ggplot(SMD_means, aes(2 / n_min, E_SMD, color = factor(mean_effect))) +
-  geom_smooth(method = "loess", se = FALSE) + 
-  geom_hline(aes(yintercept = mean_effect, color = factor(mean_effect)), linetype = "dotted") + 
-  expand_limits(x = 0) + 
-  facet_grid(p_RR ~ sd_effect, labeller = "label_both") + 
-  theme_light() + 
-  labs(x = "2 / n", y = "E(SMD)", color = "true mean effect")
