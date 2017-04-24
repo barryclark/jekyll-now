@@ -1,6 +1,6 @@
 ---
 title: "Review - Rose Gaming Accessories Dice Trays"
-date: 2017-04-23 15:45:00 Z
+date: 2017-04-24 14:00:00 Z
 category: review
 tags:
   - review
