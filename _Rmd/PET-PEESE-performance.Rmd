@@ -44,6 +44,17 @@ This second problem with regression tests for publication bias has been recogniz
 
 # Simulation model
 
+```{r setup, include = FALSE}
+library(knitr)
+opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(stringr)
+library(tidyr)
+library(dplyr)
+library(ggplot2)
+library(trelliscopejs)
+
+load("../files/PET-PEESE Simulation Results.Rdata")
+```
 The simulations are based on the following data-generating model, which closely follows [the structure that Uri used](http://datacolada.org/59):
 
 * Per-cell sample size is generated as $n = 12 + B (n_{max} - 12)$, where $B \sim Beta(\alpha, \beta)$ and $n_{max}$ is the maximum observed sample size. We take $n_{max} = 50$ or 120$ and look at three sample size distributions:
@@ -69,62 +80,29 @@ For each simulated dataset, I calculated the following:
 * the modified PEESE estimator, which I'll call "SPEESE"; and 
 * SPET-SPEESE, which follows the same conditional logic as PET-PEESE but uses the modified estimators.
 
-The R code for all this [lives here](https://jepusto.github.io/R/PET-PEESE-performance-simulations.R).
+Simulation results are summarized across `r unique(params$reps)` replications. The R code for all this [lives here](https://jepusto.github.io/R/PET-PEESE-performance-simulations.R).
 
 # Results
 
-```{r setup, include = FALSE}
-library(knitr)
-opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
-```
-
-
 ```{r cleaning}
-library(stringr)
-library(tidyr)
-library(dplyr)
-library(ggplot2)
-library(trelliscopejs)
-
-load("../files/PET-PEESE Simulation Results.Rdata")
 
 results <- 
   results %>%
-  select(-reps, -seed) %>%
   mutate(
     study_dist = ifelse(na == nb, "Uniform distribution of studies", 
                         ifelse(na > nb, "More large studies", "More small studies")),
     study_dist = factor(study_dist, 
                         levels = c("More small studies","Uniform distribution of studies","More large studies"))
   ) %>%
+  select(-reps, -seed, -studies, -na, -nb, -n_min) %>%
   unnest() %>%
-  gather("estimator","val", ends_with("_M"), ends_with("_V")) %>%
-  separate(estimator, c("estimator","stat"), sep = -2) %>%
-  spread(stat, val) %>%
   mutate(
-    estimator = str_replace(str_sub(estimator, 1, -2), "_","-"),
-    estimator = factor(estimator, levels = c("FE-meta","RE-meta","Top-10","PET","PEESE","PET-PEESE","SPET","SPEESE","SPET-SPEESE")),
-    RMSE = sqrt((M - mean_effect)^2 + V)
+    RMSE = sqrt((est_M - mean_effect)^2 + est_V)
   )
 
-
-bias_plot <- function(dat) {
-  ggplot(dat, aes(mean_effect, M, color = estimator, shape = estimator)) + 
-    geom_point() + geom_line() + 
-    geom_abline(slope = 1, intercept = 0) + 
-    facet_grid(p_RR ~ sd_effect) + 
-    theme_light()
-}
-
-selected_estimators <- c("FE-meta","Top-10","PET-PEESE","SPEESE","SPET","SPET-SPEESE")
-
-results %>%
-  filter(study_dist == "Uniform distribution of studies", 
-         studies == 100, n_max == 50,
-         estimator %in% selected_estimators) %>%
-  bias_plot()
-
 ```
+
+### False-positive rates for publication bias detection
 
 ```{r, eval=FALSE}
 
@@ -139,4 +117,10 @@ plot_dat <-
 plot_dat %>%
   trelliscope(name = "Estimator expectation", nrow = 1, ncol = 1, self_contained = TRUE)
 ```
+
+### Bias of bias-corrected estimators
+
+### Accuracy of bias-corrected estimators
+
+# Further thoughts and caveats
 
