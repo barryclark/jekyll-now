@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 ## Implementing Social Login in Ionic 2
 
