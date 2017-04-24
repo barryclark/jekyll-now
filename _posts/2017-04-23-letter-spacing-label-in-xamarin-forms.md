@@ -2,6 +2,7 @@
 layout: post
 title: Letter Spacing label in Xamarin Forms
 tags: [xamarin, android, ios, xamarin-ios, xamarin-android, xamarin-forms]
+comments: true
 ---
 
 One of the limitations of the `Label` control in Xamarin Forms is that it's missing a letter spacing property. On one of our most recent Forms projects we needed to specify differing letter spacing on some labels so I've put together a few code samples to save you time on how to do this in your iOS and Android renderers.
