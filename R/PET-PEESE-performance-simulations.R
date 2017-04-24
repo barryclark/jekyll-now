@@ -161,7 +161,7 @@ prod(lengths(design_factors))
 
 params <- expand.grid(design_factors)
 params <- subset(params, na == 1 | nb == 1)
-params$reps <- 20
+params$reps <- 5000
 params$seed <- round(runif(1) * 2^30) + 1:nrow(params)
 nrow(params)
 head(params)
@@ -175,7 +175,7 @@ library(dplyr)
 library(multidplyr)
 library(Pusto)
 
-cluster <- start_parallel(source_obj = source_obj, packages = "purrr")
+cluster <- start_parallel(cores = 4, source_obj = source_obj, packages = "purrr")
 
 system.time(
   results <- 
@@ -222,6 +222,34 @@ results <-
 
 table(results$estimator)
 
+#-------------------------------
+# Type-I error plots
+#-------------------------------
+
+results %>% 
+  filter(coef != "(Intercept)", p_RR == 1, estimator %in% c("PET","PEESE")) %>%
+  ggplot(aes(mean_effect, reject_025, linetype = estimator, color = factor(n_max))) + 
+    geom_point() + geom_line() + 
+    geom_hline(yintercept = .025, linetype = "dashed") + 
+    facet_grid(sd_effect ~ study_dist, scale = "free_y") + 
+    expand_limits(y = 0) + 
+    theme_light() + 
+    theme(legend.position = "bottom")
+
+results %>% 
+  filter(coef != "(Intercept)", p_RR == 1, estimator %in% c("SPET","SPEESE")) %>%
+  ggplot(aes(mean_effect, reject_025, linetype = estimator, color = factor(n_max))) + 
+  geom_point() + geom_line() + 
+  geom_hline(yintercept = .025, linetype = "dashed") + 
+  facet_grid(sd_effect ~ study_dist, scale = "free_y") + 
+  expand_limits(y = 0) + 
+  theme_light() + 
+  theme(legend.position = "bottom")
+
+#-------------------------------
+# Expectation plots
+#-------------------------------
+
 bias_plot <- function(dat) {
   ggplot(dat, aes(mean_effect, M, color = estimator, shape = estimator)) + 
     geom_point() + geom_line() + 
@@ -230,18 +258,7 @@ bias_plot <- function(dat) {
     theme_light()
 }
 
-RMSE_plot <- function(dat) {
-  ggplot(dat, aes(mean_effect, RMSE, color = estimator, shape = estimator)) + 
-    geom_point() + geom_line() + 
-    facet_grid(sd_effect ~ study_dist, scales = "free_y") + 
-    theme_light()
-}
-
 selected_estimators <- c("FE-meta","Top-10","PEESE","SPET","SPEESE","SPET-SPEESE")
-
-#-------------------------------
-# Expectation plots
-#-------------------------------
 
 # maximum study size of 50, no publication bias
 
@@ -282,6 +299,16 @@ results %>%
 #-------------------------------
 # RMSE plots
 #-------------------------------
+
+RMSE_plot <- function(dat) {
+  ggplot(dat, aes(mean_effect, RMSE, color = estimator, shape = estimator)) + 
+    geom_point() + geom_line() + 
+    facet_grid(sd_effect ~ study_dist, scales = "free_y") + 
+    theme_light()
+}
+
+selected_estimators <- c("FE-meta","Top-10","PEESE","SPET","SPEESE","SPET-SPEESE")
+
 
 # maximum study size of 50, no publication bias
 
