@@ -193,7 +193,7 @@ system.time(
 session_info <- sessionInfo()
 run_date <- date()
 
-save(params, results, session_info, run_date, file = "files/PET-PEESE Simulation Results.Rdata")
+save(params, results, session_info, run_date, file = "files/PET-PEESE-Simulation-Results.Rdata")
 
 
 #--------------------------------------------------------
@@ -219,32 +219,6 @@ results <-
   mutate(
     RMSE = sqrt((est_M - mean_effect)^2 + est_V)
   )
-
-table(results$estimator)
-
-#-------------------------------
-# Type-I error plots
-#-------------------------------
-
-results %>% 
-  filter(coef != "(Intercept)", p_RR == 1, estimator %in% c("PET","PEESE")) %>%
-  ggplot(aes(mean_effect, reject_025, linetype = estimator, color = factor(n_max))) + 
-    geom_point() + geom_line() + 
-    geom_hline(yintercept = .025, linetype = "dashed") + 
-    facet_grid(sd_effect ~ study_dist, scale = "free_y") + 
-    expand_limits(y = 0) + 
-    theme_light() + 
-    theme(legend.position = "bottom")
-
-results %>% 
-  filter(coef != "(Intercept)", p_RR == 1, estimator %in% c("SPET","SPEESE")) %>%
-  ggplot(aes(mean_effect, reject_025, linetype = estimator, color = factor(n_max))) + 
-  geom_point() + geom_line() + 
-  geom_hline(yintercept = .025, linetype = "dashed") + 
-  facet_grid(sd_effect ~ study_dist, scale = "free_y") + 
-  expand_limits(y = 0) + 
-  theme_light() + 
-  theme(legend.position = "bottom")
 
 #-------------------------------
 # Expectation plots
