@@ -45,6 +45,7 @@ This second problem with regression tests for publication bias has been recogniz
 # Simulation model
 
 ```{r setup, include = FALSE}
+
 library(knitr)
 opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
 library(stringr)
@@ -53,8 +54,10 @@ library(dplyr)
 library(ggplot2)
 library(trelliscopejs)
 
-load("../files/PET-PEESE Simulation Results.Rdata")
+load("../files/PET-PEESE-Simulation-Results.Rdata")
+
 ```
+
 The simulations are based on the following data-generating model, which closely follows [the structure that Uri used](http://datacolada.org/59):
 
 * Per-cell sample size is generated as $n = 12 + B (n_{max} - 12)$, where $B \sim Beta(\alpha, \beta)$ and $n_{max}$ is the maximum observed sample size. We take $n_{max} = 50$ or 120$ and look at three sample size distributions:
@@ -80,7 +83,7 @@ For each simulated dataset, I calculated the following:
 * the modified PEESE estimator, which I'll call "SPEESE"; and 
 * SPET-SPEESE, which follows the same conditional logic as PET-PEESE but uses the modified estimators.
 
-Simulation results are summarized across `r unique(params$reps)` replications. The R code for all this [lives here](https://jepusto.github.io/R/PET-PEESE-performance-simulations.R).
+Simulation results are summarized across `r unique(params$reps)` replications. The R code for all this [lives here]({{ site.url}}/R/PET-PEESE-performance-simulations.R). Complete numerical results [live here]({{ site.url}}/files/PET-PEESE-Simulation-Results.Rdata)
 
 # Results
 
@@ -89,10 +92,12 @@ Simulation results are summarized across `r unique(params$reps)` replications. T
 results <- 
   results %>%
   mutate(
-    study_dist = ifelse(na == nb, "Uniform distribution of studies", 
+    study_dist = ifelse(na == nb, "Uniform distribution of sample sizes", 
                         ifelse(na > nb, "More large studies", "More small studies")),
     study_dist = factor(study_dist, 
-                        levels = c("More small studies","Uniform distribution of studies","More large studies"))
+                        levels = c("More small studies","Uniform distribution of sample sizes","More large studies")),
+    heterogeneity = paste("Between-study SD:", sd_effect),
+    selection_level = factor(p_RR, levels = c(1, 0.2, 0), labels = c("No publication bias", "Intermediate publication bias", "Strong publication bias"))
   ) %>%
   select(-reps, -seed, -studies, -na, -nb, -n_min) %>%
   unnest() %>%
@@ -104,23 +109,111 @@ results <-
 
 ### False-positive rates for publication bias detection
 
-```{r, eval=FALSE}
+```{r rejection_rates}
 
-plot_dat <- 
-  results %>%
-  select(-n_min, -na, -nb, -V) %>%
-  rename(maximum_n = n_max) %>%
-  filter(estimator %in% selected_estimators) %>%
-  group_by(study_dist, studies, maximum_n) %>%
-  summarise(panel = panel(bias_plot(.)))
+Type_I_error_rates <- 
+  results %>% 
+  filter(coef != "(Intercept)", p_RR == 1) %>%
+  select(-coef, -p_RR, -est_M, -est_V, -RMSE) %>%
+  gather("rate","reject", starts_with("reject")) %>%
+  mutate(rate = as.numeric(str_sub(rate,-3,-1)) / 1000)
 
-plot_dat %>%
-  trelliscope(name = "Estimator expectation", nrow = 1, ncol = 1, self_contained = TRUE)
+rejection_rate_plot <- function(dat) {
+  rate <- unique(dat$rate)
+  ggplot(dat, aes(mean_effect, reject, linetype = estimator, color = factor(n_max))) + 
+    geom_point() + geom_line() + 
+    geom_hline(yintercept = rate, linetype = "dashed") + 
+    facet_grid(heterogeneity ~ study_dist, scale = "free_y") + 
+    coord_cartesian(ylim = c(0, 0.3)) + 
+    theme_light() + 
+    theme(legend.position = "bottom") + 
+    labs(linetype = "", color = "Maximum n", x = "Mean effect size", y = "Rejection rate")
+}
 ```
+
+First, let's consider the performance of PET and PEESE as tests for detecting publication bias. Here, a statistically significant estimate for the coefficient on the SE (for PET) or sampling variance (for PEESE) is taken as evidence of small-sample bias. For that logic to hold, the tests should maintain the nominal error rates in the absence of publication bias. 
+
+The figure below depicts the Type-I error rates of the PET and PEESE tests when $\pi = 1$ (so no publication bias at all), for a one-sided test of $H_0: \beta_1 \leq 0$ at the nominal level of $\alpha = .05$. Rejection rates are plotted for varying true mean effects, levels of heterogeneity, and sample size distributions. Separate colors are used for maximum sample sizes of 50 or 120.
+
+```{r, PET-PEESE-rejection-rates, fig.width = 8, fig.height = 8}
+
+Type_I_error_rates %>%
+  filter(estimator %in% c("PET","PEESE"), rate == .050) %>%
+  rejection_rate_plot()
+
+```
+
+Both tests are horribly mis-calibrated, tending to reject the null hypothesis far more often than they should. This happens because there is actually a non-zero correlation between $d$ and $V$, even in the absence of publication bias. Thus, it does not follow that rejecting $H_0: \beta_1 \leq 0$ implies rejection of the hypothesis that there is no publication bias. (Sorry, that's at least a triple negative!)
+
+Here's the same graph, but using the SPET and SPEESE estimators:
+
+```{r, SPET-SPEESE-rejection-rates, fig.width = 8, fig.height = 8}
+
+Type_I_error_rates %>%
+  filter(estimator %in% c("SPET","SPEESE"), rate == .050) %>%
+  rejection_rate_plot()
+
+```
+
+Both tests maintain the correct Type-I error rate. (Any variation in rejection rates is just Monte Carlo error.) Thus, it seems pretty clear that if we want to test for small-sample bias, SPET or SPEESE should be used rather than PET or PEESE.
 
 ### Bias of bias-corrected estimators
 
+Now let's consider the performance of these methods as estimators of the population mean effect. [Uri's analysis](http://datacolada.org/59) focused on the bias of the estimators, meaning the difference between the average value of the estimator (across repeated samples) and the true parameter. The plot below depicts the expected level of PET, PEESE, and PET-PEESE as a function of the true mean effect, using the uniform distribution of studies and a maximum sample size of $n = 50$: 
+
+```{r bias-of-PET-PEESE, fig.width = 8, fig.height = 8}
+
+estimator_performance <- 
+  results %>%
+  filter(coef == "(Intercept)") %>%
+  select(-coef, -reject_025, -reject_050) %>%
+  rename(maximum_n = n_max)
+  
+bias_plot <- function(dat) {
+  ggplot(dat, aes(mean_effect, est_M, color = estimator, shape = estimator)) + 
+    geom_point() + geom_line() + 
+    geom_abline(slope = 1, intercept = 0) + 
+    facet_grid(heterogeneity ~ selection_level) + 
+    theme_light() + 
+    theme(legend.position = "bottom") + 
+    labs(color = "", shape = "", x = "Mean effect size", y = "Expected value of estimator")
+}
+
+estimator_performance %>%
+  filter(study_dist == "Uniform distribution of sample sizes", 
+         maximum_n == 50, 
+         estimator %in% c("PET","PEESE","PET-PEESE")) %>%
+  bias_plot()
+```
+
+All three of these estimators are pretty bad in terms of bias. In the absence of publication bias, they consistently _under_-estimate the true mean effect. With intermediate or strong publication bias, PET and PET-PEESE have a consistent downward bias. As an unconditional estimator, PEESE tends to have a potisive bias when the true effect is small, but this decreases and becomes negative as the true effect increases. For all three estimators, bias increase as the degree of heterogeneity increases.
+
+Here is how these estimators compare to the modified SPET, SPEESE, and SPET-SPEESE estimators, as well as to the usual fixed-effect average with no correction for publication bias:
+
+```{r bias-of-SPET-SPEESE, fig.width = 8, fig.height = 8}
+
+estimator_performance %>%
+  filter(study_dist == "Uniform distribution of sample sizes", 
+         maximum_n == 50, 
+         estimator %in% c("FE-meta","PEESE","PET-PEESE","SPET","SPEESE","SPET-SPEESE")) %>%
+  bias_plot()
+
+# plot_dat <-
+#   estimator_performance %>%
+#   filter(estimator %in% c("FE-meta","PEESE","PET-PEESE","SPET","SPEESE","SPET-SPEESE")) %>%
+#   group_by(study_dist, maximum_n) %>%
+#   summarize(panel = panel(bias_plot(dat = .)))
+# 
+# plot_dat %>%
+#   trelliscope(name = "Estimator expectation", nrow = 1, ncol = 1, self_contained = TRUE)
+
+```
+
 ### Accuracy of bias-corrected estimators
+
+```{r}
+
+```
 
 # Further thoughts and caveats
 
