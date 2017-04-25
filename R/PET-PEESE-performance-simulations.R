@@ -16,7 +16,7 @@ rm(list=ls())
 # simulate standardized mean differences
 #--------------------------------------------
 
-r_SMD <- function(studies, mean_effect, sd_effect, n_min, n_max, na, nb, p_thresholds = .05, p_RR = .1) {
+r_SMD <- function(studies, mean_effect, sd_effect, n_min, n_max, na, nb, p_thresholds = .025, p_RR = .1) {
   
   n_diff <- n_max - n_min
   
@@ -32,16 +32,16 @@ r_SMD <- function(studies, mean_effect, sd_effect, n_min, n_max, na, nb, p_thres
     
     # simulate t-statistics and p-values
     t_i <- rnorm(n = studies, mean = delta_i * sqrt(n_i / 2)) / sqrt(rchisq(n = studies, df = df) / df)
-    p_pseudo <- 2 * pt(t_i, df = df, lower.tail = FALSE)
-    p_i <- 2 * pt(abs(t_i), df = df, lower.tail = FALSE)
+    p_onesided <- pt(t_i, df = df, lower.tail = FALSE)
+    p_twosided <- 2 * pt(abs(t_i), df = df, lower.tail = FALSE)
     
     # effect censoring based on p-values
-    p_observed <- c(1, p_RR)[cut(p_pseudo, c(0, p_thresholds, 2), labels = FALSE)]
+    p_observed <- c(1, p_RR)[cut(p_onesided, c(0, p_thresholds, 1), labels = FALSE)]
     observed <- runif(studies) < p_observed
     
     # put it all together
     if (nrow(dat) + sum(observed) > studies) observed <- which(observed)[1:(studies - nrow(dat))]
-    new_dat <- data.frame(n = n_i[observed], t = t_i[observed], p = p_i[observed])
+    new_dat <- data.frame(n = n_i[observed], t = t_i[observed], p = p_twosided[observed])
     dat <- rbind(dat, new_dat)
   }
   
@@ -56,7 +56,7 @@ r_SMD <- function(studies, mean_effect, sd_effect, n_min, n_max, na, nb, p_thres
 studies <- 100
 dat <- r_SMD(studies = studies, mean_effect = 0.4, sd_effect = 0.2, 
              n_min = 12, n_max = 50, na = 1, nb = 1, 
-             p_thresholds = .05, p_RR = 0)
+             p_thresholds = .025, p_RR = 0)
 
 
 #--------------------------------------------
@@ -137,7 +137,7 @@ runSim <- function(reps,
 }
 
 runSim(reps = 100, studies = 100, mean_effect = 0.0, sd_effect = 0.2, 
-       n_min = 12, n_max = 120, na = 1, nb = 1, p_thresholds = .05, p_RR = 1)
+       n_min = 12, n_max = 120, na = 1, nb = 1, p_thresholds = .025, p_RR = 1)
 
 source_obj <- ls()
 
@@ -161,7 +161,7 @@ prod(lengths(design_factors))
 
 params <- expand.grid(design_factors)
 params <- subset(params, na == 1 | nb == 1)
-params$reps <- 5000
+params$reps <- 4000
 params$seed <- round(runif(1) * 2^30) + 1:nrow(params)
 nrow(params)
 head(params)
@@ -175,7 +175,7 @@ library(dplyr)
 library(multidplyr)
 library(Pusto)
 
-cluster <- start_parallel(cores = 4, source_obj = source_obj, packages = "purrr")
+cluster <- start_parallel(source_obj = source_obj, packages = "purrr")
 
 system.time(
   results <- 
