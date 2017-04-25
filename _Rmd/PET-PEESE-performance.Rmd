@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "You wanna PEESE of d's?"
-date: April 23, 2017
+date: April 25, 2017
 tags: [meta-analysis]
 ---
 
@@ -13,7 +13,9 @@ In [a recent blog post](http://datacolada.org/59), Uri Simonsohn reports some si
 
 In this post, I follow up Joe's suggestions while replicating and expanding upon Uri's simulations, to try and provide a fuller picture of the relative performance of these estimators. In brief, the simulations show that:
 
-* In the absence of publication bias, the sample-size variants of PET and PEESE are __*exactly unbiased*__.
+* Tests for small-sample bias that use PET or PEESE can have wildly incorrect type-I error rates in the absence of publication bias. Don't use them.
+* The sample-size variants of PET and PEESE __do__ maintain the correct type-I error rates in the absence of publication bias. 
+* The sample-size variants of PET and PEESE are __*exactly unbiased*__ in the absence of publication bias.
 * However, these adjusted estimators still have a cost, being less precise than conventional fixed-effect or random-effects estimators. 
 * In the presence of varying degrees of publication bias, the sample-size variant of PEESE does better than PET-PEESE as it is usually applied. But it's still not great. 
 
@@ -155,7 +157,7 @@ Type_I_error_rates %>%
 
 ```
 
-Both tests maintain the correct Type-I error rate. (Any variation in rejection rates is just Monte Carlo error.) Thus, it seems pretty clear that if we want to test for small-sample bias, SPET or SPEESE should be used rather than PET or PEESE.
+Yes, this may be the world's most boring graph, but it does make clear that both the SPET and SPEESE tests maintain the correct Type-I error rate. (Any variation in rejection rates is just Monte Carlo error.) Thus, it seems pretty clear that if we want to test for small-sample bias, SPET or SPEESE should be used rather than PET or PEESE.
 
 ### Bias of bias-corrected estimators
 
