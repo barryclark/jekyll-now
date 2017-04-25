@@ -26,7 +26,7 @@ The coins come in four denominations:
 * Bronze 20-coin (25mm diameter, about a US quarter), boasting a D20, of course
 * Gold 100-coin (30mm diameter, larger than a US half dollar), depicting a table set out with a board game
 
-They can be purchased a few different way:
+They can be purchased a few different ways:
 
 * $39.99 - [51 Coin Set](http://campaigncoins.com/tabletop-coin-set-51/) (25 Copper, 15 Silver, 10 Bronze, 1 Gold)
 * $4.50 - [5 Copper](http://campaigncoins.com/tabletop-1-coin-5/)
