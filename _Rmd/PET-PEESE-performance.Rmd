@@ -22,22 +22,29 @@ In this post, I follow up Joe's suggestions while replicating and expanding upon
 # Why use sample size?
 
 To see why it makes sense to use a function of sample size as the covariate for PET-PEESE analyses, rather than using the standard error of the effect size estimate, let's look at the formulas. Say that we have a standardized mean difference estimate from a two-group design (without covariates) with sample sizes $n_0$ and $n_1$:
+
 $$
 d = \frac{\bar{y}_1 - \bar{y}_0}{s_p},
 $$
+
 where $\bar{y}_0$ and $\bar{y}_1$ are the sample means within each group and $s_p^2$ is the pooled sample variance. Following convention, we'll assume that the outcomes are normally distributed within each group, and the groups have common variance. The exact sampling variance of $d$ is a rather complicated formula, but one which can be approximated reasonably well as
+
 $$
 \text{Var}(d) \approx \frac{n_0 + n_1}{n_0 n_1} + \frac{\delta^2}{2(n_0 + n_1)},
 $$
+
 where $\delta$ is the _true_ standardized mean difference parameter. This formula is a delta-method approximation. The first term captures the variance of the numerator of $d$, so it gets at how precisely the _unstandardized_ difference in means is estimated. The second term captures the variance of the denominator of $d$, so it gets at how precisely the _scale_ of the outcome is estimated. The second term also involves the unknown parameter $\delta$, which must be estimated in practice. The conventional formula for the estimated sampling variance of $d$ substitutes $d$ in place of $\delta$:
+
 $$
 V = \frac{n_0 + n_1}{n_0 n_1} + \frac{d^2}{2(n_0 + n_1)}.
 $$
 
 In PET-PEESE analysis, $V$ or its square root is used as a covariate in a regression of the effect sizes, as a means of adjusting for publication bias. There are two odd things about this. First, publication bias is about the statistical significance of the group differences, but statistical significance __*does not depend on the scale of the outcome*__. The test of the null hypothesis of no differences between groups is __*not*__ based on $d / \sqrt{V}$. Instead, it is a function of the $t$ statistic:
+
 $$
 t = d / \sqrt{\frac{n_0 + n_1}{n_0 n_1}}.
 $$
+
 Consequently, it makes sense to use __*only the first term of $V$*__ as a covariate for purposes of detecting publication biases. 
 
 The second odd thing is that $V$ is generally going to be correlated with $d$ because we have to use $d$ to calculate $V$. As [Joe explained in his response to Uri](http://datacolada.org/wp-content/uploads/2017/04/Response-by-Joe-Hilgard-to-Colada-59.pdf), this means that there will be a non-zero correlation between $d$ and $V$ (or between $d$ and $\sqrt{V}$) except in some very specific cases, even in the absence of any publication bias. Pretty funky. 
@@ -55,7 +62,7 @@ library(tidyr)
 library(dplyr)
 library(ggplot2)
 
-load("files/PET-PEESE-Simulation-Results.Rdata")
+load("../files/PET-PEESE-Simulation-Results.Rdata")
 
 ```
 
@@ -82,7 +89,6 @@ For each simulated dataset, I calculated the following:
 * PET-PEESE, which is equal to the PEESE intercept if $H_0: \beta_0 \leq 0$ is significant at the 10% level, and is otherwise equal to the PET intercept (this definition follows [Stanley, 2017](https://dx.doi.org/10.1177/1948550617693062));
 * the modified PET estimator, which I'll call "SPET" for "sample-size PET" (suggestions for better names welcome);
 * the modified PEESE estimator, which I'll call "SPEESE"; and 
-* SPET-SPEESE, which follows the same conditional logic as PET-PEESE but uses the modified estimators.
 
 Simulation results are summarized across `r unique(params$reps)` replications. The R code for all this [lives here]({{ site.url}}/R/PET-PEESE-performance-simulations.R). Complete numerical results [live here]({{ site.url}}/files/PET-PEESE-Simulation-Results.Rdata)
 
@@ -171,7 +177,7 @@ estimator_performance <-
   rename(maximum_n = n_max)
   
 bias_plot <- function(dat) {
-  title <- paste0(unique(dat$study_dist), ", maximum sample size of ", unique(dat$maximum_n))
+  subtitle <- paste0(unique(dat$study_dist), ", maximum sample size of ", unique(dat$maximum_n))
   ggplot(dat, aes(mean_effect, est_M, color = estimator, shape = estimator)) + 
     geom_point() + geom_line() + 
     geom_abline(slope = 1, intercept = 0) + 
@@ -180,7 +186,8 @@ bias_plot <- function(dat) {
     theme_light() + 
     theme(legend.position = "bottom") + 
     labs(
-      title = title, 
+      title = "Expected value of effect size estimators",
+      subtitle = subtitle,
       color = "", shape = "", 
       x = "Mean effect size", y = "Expected value of estimator"
     )
@@ -242,7 +249,7 @@ estimator_performance %>%
 
 In the left column, we see that SPET, SPEESE, and SPET-SPEESE are all exactly unbiased in the absence of selective publication (and so is regular old fixed effect meta-analysis, of course). In the middle and right columns, studies are selected based partially or fully on statistical significance, and things get messy. At small or moderate levels of between-study heterogeneity, PEESE, SPEESE, and SPET-SPEESE have pretty similar biases when the true mean effect is small, but SPEESE and SPET-SPEESE perform better as the true mean effect increases in size. (This makes sense because the bias induced by the correlation between $d$ and $V$ will be larger when the true effect sizes are larger.) However, if we compare PEESE versus SPEESE, there's not a consistent winner. For small true mean effects, PEESE actually has smaller biases than SPEESE. This seems to me to be nothing but a fortuitous accident, in that the bias induced by the correlation between $d$ and $V$ just happens to work in the right direction.  
 
-These trends seem to largely hold for the other sample size distributions I examined too. You can see for yourself here:
+These trends seem to largely hold for the other sample size distributions I examined too, although the biases of PEESE and PET-PEESE aren't as severe when the maximum sample size is larger. You can see for yourself here:
 
 * [Uniform distribution of studies, maximum sample size of 120]({{site.url}}/figure/2017-04-25-PET-PEESE-performance/more-bias-of-SPET-SPEESE-1.png)
 * [More small studies, maximum sample size of 50]({{site.url}}/figure/2017-04-25-PET-PEESE-performance/more-bias-of-SPET-SPEESE-2.png)
@@ -252,13 +259,23 @@ These trends seem to largely hold for the other sample size distributions I exam
 
 ### Accuracy of bias-corrected estimators
 
-```{r}
+```{r RMSE-plots, fig.width = 8, fig.height = 8}
+
 RMSE_plot <- function(dat) {
+  subtitle <- paste0(unique(dat$study_dist), ", maximum sample size of ", unique(dat$maximum_n))
   ggplot(dat, aes(mean_effect, RMSE, color = estimator, shape = estimator)) + 
     geom_point() + geom_line() + 
-    facet_grid(heterogeneity ~ study_dist, scales = "free_y") + 
-    theme_light()
+    facet_grid(heterogeneity ~ selection_level, scales = "free_y") + 
+    theme_light() + 
+    theme(legend.position = "bottom") + 
+    labs(
+      title = "Root mean squared error of effect size estimators",
+      subtitle = subtitle,
+      color = "", shape = "", 
+      x = "Mean effect size", y = "RMSE"
+    )
 }
+
 ```
 
 # Further thoughts and caveats
