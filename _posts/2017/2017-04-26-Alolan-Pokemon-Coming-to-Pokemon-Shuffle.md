@@ -9,7 +9,7 @@ tags:
 layout: post
 description: >-
   New Alola-themed stages and new Pokémon that hail from the Alola region are now available in Pokémon Shuffle.
-featured: pokemonshuffle.png
+featured: pokemonshuffle.jpg
 author: robk
 published: true
 ---
