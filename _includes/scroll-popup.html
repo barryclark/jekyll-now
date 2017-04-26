@@ -1,0 +1,66 @@
+<div id="scroll-popup" style="display: none;">
+<div>Hi! Be sure to like us on FaceBook!</div>
+<div class="fb-like" data-href="https://www.facebook.com/JoesGithubBlog" data-width="25" data-layout="standard" data-action="like" data-size="large" data-show-faces="true" data-share="false"></div>
+<div id="scroll-popup-close" onclick="$('#scroll-popup,#scroll-modal').fadeOut('slow');">Click here to close!</div>
+</div>
+<div id="scroll-modal" style="display: none;"></div>
+
+<style>
+#scroll-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  height: 230px;
+  width: 300px;
+  margin: -115px 0 0 -150px;
+  background: whitesmoke;
+  padding: 1em;
+  z-index: 100;
+}
+  
+#scroll-popup div {
+  text-align: center;
+  padding: 0.5em;
+}
+  
+#scroll-modal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,.5);
+  z-index: 90;
+}
+  
+#scroll-popup-close {
+  background: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+</style>
+
+<script>
+$(document).ready(function(){
+  var scrolled = 0;
+
+  var cookie = document.cookie.split('; ');
+  var cookieName = "scrolled=";
+
+  for(var i = 0; i < cookie.length; i++) {
+    if(cookie[i].indexOf(cookieName) >= 0) {
+      scrolled = parseInt(cookie[i].substring(cookieName.length, cookie[i].length));
+    }
+  }
+  
+  $(window).scroll(function(){
+    scrolled = scrolled + 1;    
+    document.cookie = cookieName + scrolled + ";path=/;"; 
+    
+    if(scrolled == 35) {
+      $("#scroll-popup,#scroll-modal").fadeIn("slow");
+    }
+  });
+});
+</script>
