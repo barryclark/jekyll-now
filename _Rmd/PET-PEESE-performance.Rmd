@@ -265,6 +265,7 @@ RMSE_plot <- function(dat) {
   subtitle <- paste0(unique(dat$study_dist), ", maximum sample size of ", unique(dat$maximum_n))
   ggplot(dat, aes(mean_effect, RMSE, color = estimator, shape = estimator)) + 
     geom_point() + geom_line() + 
+    coord_cartesian(ylim = c(0, 0.4)) + 
     facet_grid(heterogeneity ~ selection_level, scales = "free_y") + 
     theme_light() + 
     theme(legend.position = "bottom") + 
@@ -276,7 +277,55 @@ RMSE_plot <- function(dat) {
     )
 }
 
+estimator_performance %>%
+  filter(study_dist == "Uniform distribution of sample sizes", 
+         maximum_n == 50, 
+         estimator %in% c("FE-meta","PEESE","PET-PEESE","SPET","SPEESE","SPET-SPEESE")) %>%
+  RMSE_plot()
+
 ```
+
+```{r more-RMSE-plots, fig.width = 8, fig.height = 8, fig.show = "hide"}
+estimator_performance %>%
+  filter(study_dist == "Uniform distribution of sample sizes", 
+         maximum_n == 120, 
+         estimator %in% c("FE-meta","PEESE","PET-PEESE","SPET","SPEESE","SPET-SPEESE")) %>%
+  RMSE_plot()
+
+estimator_performance %>%
+  filter(study_dist == "More small studies", 
+         maximum_n == 50, 
+         estimator %in% c("FE-meta","PEESE","PET-PEESE","SPET","SPEESE","SPET-SPEESE")) %>%
+  RMSE_plot()
+
+estimator_performance %>%
+  filter(study_dist == "More small studies", 
+         maximum_n == 120, 
+         estimator %in% c("FE-meta","PEESE","PET-PEESE","SPET","SPEESE","SPET-SPEESE")) %>%
+  RMSE_plot()
+
+estimator_performance %>%
+  filter(study_dist == "More large studies", 
+         maximum_n == 50, 
+         estimator %in% c("FE-meta","PEESE","PET-PEESE","SPET","SPEESE","SPET-SPEESE")) %>%
+  RMSE_plot()
+
+estimator_performance %>%
+  filter(study_dist == "More large studies", 
+         maximum_n == 120, 
+         estimator %in% c("FE-meta","PEESE","PET-PEESE","SPET","SPEESE","SPET-SPEESE")) %>%
+  RMSE_plot()
+
+
+```
+
+You can see for yourself here:
+
+* [Uniform distribution of studies, maximum sample size of 120]({{site.url}}/figure/2017-04-25-PET-PEESE-performance/more-RMSE-plots-1.png)
+* [More small studies, maximum sample size of 50]({{site.url}}/figure/2017-04-25-PET-PEESE-performance/more-RMSE-plots-2.png)
+* [More small studies, maximum sample size of 120]({{site.url}}/figure/2017-04-25-PET-PEESE-performance/more-RMSE-plots-3.png)
+* [More large studies, maximum sample size of 50]({{site.url}}/figure/2017-04-25-PET-PEESE-performance/more-RMSE-plots-4.png)
+* [More large studies, maximum sample size of 120]({{site.url}}/figure/2017-04-25-PET-PEESE-performance/more-RMSE-plots-5.png)
 
 # Further thoughts and caveats
 
