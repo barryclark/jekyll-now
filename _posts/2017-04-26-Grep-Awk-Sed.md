@@ -1,3 +1,8 @@
+---
+layout: post
+title: You're up and running!
+---
+
 ## 常用的统计语法
 
 ## 获取来源统计
