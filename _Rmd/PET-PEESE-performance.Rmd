@@ -54,9 +54,8 @@ library(stringr)
 library(tidyr)
 library(dplyr)
 library(ggplot2)
-library(trelliscopejs)
 
-load("../files/PET-PEESE-Simulation-Results.Rdata")
+load("files/PET-PEESE-Simulation-Results.Rdata")
 
 ```
 
@@ -172,13 +171,19 @@ estimator_performance <-
   rename(maximum_n = n_max)
   
 bias_plot <- function(dat) {
+  title <- paste0(unique(dat$study_dist), ", maximum sample size of ", unique(dat$maximum_n))
   ggplot(dat, aes(mean_effect, est_M, color = estimator, shape = estimator)) + 
     geom_point() + geom_line() + 
     geom_abline(slope = 1, intercept = 0) + 
+    coord_cartesian(ylim = c(0, 1)) + 
     facet_grid(heterogeneity ~ selection_level) + 
     theme_light() + 
     theme(legend.position = "bottom") + 
-    labs(color = "", shape = "", x = "Mean effect size", y = "Expected value of estimator")
+    labs(
+      title = title, 
+      color = "", shape = "", 
+      x = "Mean effect size", y = "Expected value of estimator"
+    )
 }
 
 estimator_performance %>%
@@ -200,21 +205,60 @@ estimator_performance %>%
          estimator %in% c("FE-meta","PEESE","PET-PEESE","SPET","SPEESE","SPET-SPEESE")) %>%
   bias_plot()
 
-# plot_dat <-
-#   estimator_performance %>%
-#   filter(estimator %in% c("FE-meta","PEESE","PET-PEESE","SPET","SPEESE","SPET-SPEESE")) %>%
-#   group_by(study_dist, maximum_n) %>%
-#   summarize(panel = panel(bias_plot(dat = .)))
-# 
-# plot_dat %>%
-#   trelliscope(name = "Estimator expectation", nrow = 1, ncol = 1, self_contained = TRUE)
+```
+```{r more-bias-of-SPET-SPEESE, fig.width = 8, fig.height = 8, fig.show = "hide"}
+
+estimator_performance %>%
+  filter(study_dist == "Uniform distribution of sample sizes", 
+         maximum_n == 120, 
+         estimator %in% c("FE-meta","PEESE","PET-PEESE","SPET","SPEESE","SPET-SPEESE")) %>%
+  bias_plot()
+
+estimator_performance %>%
+  filter(study_dist == "More small studies", 
+         maximum_n == 50, 
+         estimator %in% c("FE-meta","PEESE","PET-PEESE","SPET","SPEESE","SPET-SPEESE")) %>%
+  bias_plot()
+
+estimator_performance %>%
+  filter(study_dist == "More small studies", 
+         maximum_n == 120, 
+         estimator %in% c("FE-meta","PEESE","PET-PEESE","SPET","SPEESE","SPET-SPEESE")) %>%
+  bias_plot()
+
+estimator_performance %>%
+  filter(study_dist == "More large studies", 
+         maximum_n == 50, 
+         estimator %in% c("FE-meta","PEESE","PET-PEESE","SPET","SPEESE","SPET-SPEESE")) %>%
+  bias_plot()
+
+estimator_performance %>%
+  filter(study_dist == "More large studies", 
+         maximum_n == 120, 
+         estimator %in% c("FE-meta","PEESE","PET-PEESE","SPET","SPEESE","SPET-SPEESE")) %>%
+  bias_plot()
 
 ```
+
+In the left column, we see that SPET, SPEESE, and SPET-SPEESE are all exactly unbiased in the absence of selective publication (and so is regular old fixed effect meta-analysis, of course). In the middle and right columns, studies are selected based partially or fully on statistical significance, and things get messy. At small or moderate levels of between-study heterogeneity, PEESE, SPEESE, and SPET-SPEESE have pretty similar biases when the true mean effect is small, but SPEESE and SPET-SPEESE perform better as the true mean effect increases in size. (This makes sense because the bias induced by the correlation between $d$ and $V$ will be larger when the true effect sizes are larger.) However, if we compare PEESE versus SPEESE, there's not a consistent winner. For small true mean effects, PEESE actually has smaller biases than SPEESE. This seems to me to be nothing but a fortuitous accident, in that the bias induced by the correlation between $d$ and $V$ just happens to work in the right direction.  
+
+These trends seem to largely hold for the other sample size distributions I examined too. You can see for yourself here:
+
+* [Uniform distribution of studies, maximum sample size of 120]({{site.url}}/figure/2017-04-25-PET-PEESE-performance/more-bias-of-SPET-SPEESE-1.png)
+* [More small studies, maximum sample size of 50]({{site.url}}/figure/2017-04-25-PET-PEESE-performance/more-bias-of-SPET-SPEESE-2.png)
+* [More small studies, maximum sample size of 120]({{site.url}}/figure/2017-04-25-PET-PEESE-performance/more-bias-of-SPET-SPEESE-3.png)
+* [More large studies, maximum sample size of 50]({{site.url}}/figure/2017-04-25-PET-PEESE-performance/more-bias-of-SPET-SPEESE-4.png)
+* [More large studies, maximum sample size of 120]({{site.url}}/figure/2017-04-25-PET-PEESE-performance/more-bias-of-SPET-SPEESE-5.png)
 
 ### Accuracy of bias-corrected estimators
 
 ```{r}
-
+RMSE_plot <- function(dat) {
+  ggplot(dat, aes(mean_effect, RMSE, color = estimator, shape = estimator)) + 
+    geom_point() + geom_line() + 
+    facet_grid(heterogeneity ~ study_dist, scales = "free_y") + 
+    theme_light()
+}
 ```
 
 # Further thoughts and caveats
