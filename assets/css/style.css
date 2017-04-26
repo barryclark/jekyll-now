@@ -20,10 +20,10 @@ h1{
 h2{
 	font-weight:bold;
 	font-size:20px;
-	/*font-family:'Georgia', Times, Times New Roman, serif;*/
+	font-family:'Georgia', Times, Times New Roman, serif;
 }
 
-#wrapper, #footer {
+#wrapper {
 	width: 960px;
 	margin: 0 auto;
 
@@ -76,7 +76,7 @@ h2{
     padding-right: 20px
 }
 
-#portfolio {
+#portfolio, #contact {
 	float:left;
 	width:500px;
 	height:550px;
@@ -84,6 +84,10 @@ h2{
 	margin-top:115px;
 	padding-left: 20px;
     padding-right: 20px
+}
+
+.inputs {
+	margin-bottom:20px;
 }
 
 .examples {
@@ -107,10 +111,7 @@ h2{
 
 footer {
 	clear:both;
-	overflow:auto;
-	position:fixed;
-	bottom:0px;
-	left:195px;
+	width:100%;
 	padding: 25px;
 	text-align: center;
 	background: #666666;
