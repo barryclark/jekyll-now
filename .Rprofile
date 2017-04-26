@@ -38,9 +38,9 @@ r2jekyll <- function(filename, dpi = 192) {
   unlink("{{site.url}}", recursive=T)
 }
 
-r2jekyll("PET-PEESE-performance")
-
-knitr::purl("_Rmd/PET-PEESE-performance.Rmd", output = "R/PET-PEESE-performance-graphs.R")
+# r2jekyll("PET-PEESE-performance")
+# knitr::purl("_Rmd/PET-PEESE-performance.Rmd", output = "R/PET-PEESE-performance-graphs.R")
+# r2jekyll("using-log-response-ratios")
 # r2jekyll("IES-2016-PI-meeting")
 # r2jekyll("scdhlm-tutorial")
 # r2jekyll("Bug-in-nlme-with-fixed-sigma")

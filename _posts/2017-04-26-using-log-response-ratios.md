@@ -1,0 +1,9 @@
+---
+layout: post
+title: "New working paper: Using log response ratios for meta-analyzing SCDs with behavioral outcomes"
+date: April 26, 2017
+tags: [single-case-research, effect-sizes]
+permalink: using-log-response-ratios
+---
+
+One of the papers that came out of my dissertation work ([Pustejovsky, 2014]({{site.url}}/files/Measurement-comparable-ES.pdf)) introduced an effect size metric called the __log response ratio__ (or LRR) for use in meta-analysis of single-case research---particularly for single-case studies that measure behavioral outcomes through systematic direct observation. The original paper was pretty technical since it focused mostly on a formal measurement model for behavioral observation data. I've just completed a tutorial paper that demonstrates how to use the LRR for meta-analyzing single-case studies with behavioral outcomes. In this paper, I've tried to present the methods in as accessible a manner as I could muster, to provide a sort of "user's guide" for researchers wanting to apply the LRR for their own work. You can find the [working paper](https://osf.io/4fe6u/) and [supplementary materials](https://osf.io/c3fe9/) (including data and replication code) on the Open Science Framework. I would welcome your feedback and questions about this work!
