@@ -43,6 +43,9 @@ footer {
 	border-top: 5px solid #4aaaa5;
 	color: #D3D3D3;
 }
+.header {
+	padding: 45px 0 30px
+}
 #wrapper {
 	width: 960px;
 	margin: 0 auto;
@@ -80,25 +83,28 @@ hr.side{
 	margin-bottom:20px;
 }
 #aboutLink{
-	margin-top: 20px;
+	margin-top: 30px;
+	margin-right: 20px;
     border-right: 1px solid gray;
-	width:100px;
+	width:50px;
 	height:20px;
 	float:right;
 }
 
 #portfolioLink{
-	margin-top: 20px;
+	margin-top: 30px;
+	margin-right: 20px;
     border-right: 1px solid gray;
-	width:100px;
+	width:65px;
 	height:20px;
 	float:right;
 }
 
 #contactLink{
-	margin-top: 20px;
+	margin-top: 30px;
+	margin-right: 200px;
     border-right: 1px solid gray;
-	width:100px;
+	width:65px;
 	height:20px;
 	float:right;
 }
@@ -106,23 +112,21 @@ hr.side{
 #about {
 	float:left;
 	width:650px;
-	height:400px;
+	height:430px;
 	background: white;
 	margin-top:115px;
+	margin-bottom:30px;
 	padding: 0 20px;
 	line-height: 1.5;
 }
 
-#aboutHeader{
-	margin:20px 0;
-}
-
 #portfolio{
 	float:left;
-	width:500px;
-	height:550px;
+	width:650px;
+	height:850px;
 	background: white;
 	margin-top:115px;
+	margin-bottom:30px;
 	padding-left: 20px;
     padding-right: 20px
 }
@@ -133,12 +137,9 @@ hr.side{
 	height:600px;
 	background: white;
 	margin-top:115px;
+	margin-bottom:30px;
 	padding-left: 20px;
     padding-right: 20px
-}
-
-#contactHeader{
-	padding: 45px 0 30px;
 }
 
 .inputs {
@@ -156,9 +157,9 @@ hr.side{
 
 #connect {
 	margin-top:115px;
-	width:260px;
+	width:270px;
 	height:190px;
-	padding:30px;
+	padding:20px;
 	background:white;
 	float:right;
 	text-align:center;
@@ -171,4 +172,3 @@ hr.side{
 	color:white;
 	font-size:18px;
 }
-
