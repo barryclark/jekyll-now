@@ -8,7 +8,7 @@ author: raulfiru
 author_email: raul.firu@haufe-lexware.com
 header-img: "images/bg-post.jpg"
 ---
-Last month i visited Kubecon Europe - or the Cloud Native Con as it is properly named. Checked out some great talks (in some way to small rooms) and met with cool people. Out of those were the guys from Microsoft (i know MS as a k8s conf - wow).
+Last month I visited Kubecon Europe - or the Cloud Native Con as it is properly named. Checked out some great talks (in some way to small rooms) and met with cool people. Out of those were the guys from Microsoft (i know MS as a k8s conf - wow).
 
 My issue for some time was the fact that ACS (Azure Container Service) was not available for Azure Germany, or Azure.de as we call it for simplicity.
 
@@ -20,15 +20,15 @@ What to do?
 
 We learned that [ACS engine](https://github.com/Azure/acs-engine) should work and that should create the Azure.de templates we need to start, but after giving it a try it didn't look like it.
 
-Now, back to kubecon, i met with @colemickens and we went though my problems with ACS and azure.de
+Now, back to kubecon, I met with @colemickens and we went though my problems with ACS and azure.de
 
 We found a workaround and here it is:
 
 1. follow the steps from [here](https://github.com/Azure/acs-engine/blob/master/docs/kubernetes.md)
 
-Make sure you add gemanycentral for exmaple as location at step 4
+Make sure you add gemanycentral for example as location at step 4
 
-And make sure you edit the azuredeploy.parameters.json after step 5 and before 6 and change the unbtu immage number to: **16.04.201701130** (for some reazon Azure uses different images of Ubuntu 16.04 for different clouds)
+And make sure you edit the azuredeploy.parameters.json after step 5 and before 6 and change the unbtu image number to: **16.04.201701130** (for some reason Azure uses different images of Ubuntu 16.04 for different clouds)
 2. ssh to the master node with the generated key from step 2 above (you will need to do this manually or you from pipelines unfortunately)
 3. run all kubectl commands like this
 
@@ -36,7 +36,7 @@ And make sure you edit the azuredeploy.parameters.json after step 5 and before 6
 kubectl -s http://localhost:8080
 ```
 
-Since then i am happy to say that all those issues have been solved (by a now pending pull request from @wangtt03) and here is how you can use it:
+Since then I am happy to say that all those issues have been solved (by a now pending pull request from @wangtt03) and here is how you can use it:
 
 1. get the pull request somewhere
 ```
@@ -55,6 +55,6 @@ Until it's merged to master you'll need to copy the contents of the branch to **
 
 Enjoy!
 
-I'm sure in a few days everything will be merged to master and i'll have to update this blogpost with a much simpler version, AKA: just follow the how-to. But if you want o try until then, here is why.
+I'm sure in a few days everything will be merged to master and I'll have to update this blogpost with a much simpler version, AKA: just follow the how-to. But if you want o try until then, here is why.
 
-Also, i am happy to have met Cole and the guys from MS - that made kubecon even more worth while.
+Also, I am happy to have met Cole and the guys from MS - that made kubecon even more worth while.
