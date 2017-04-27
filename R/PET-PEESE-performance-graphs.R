@@ -7,7 +7,7 @@ library(tidyr)
 library(dplyr)
 library(ggplot2)
 
-load("files/PET-PEESE-Simulation-Results.Rdata")
+load("../files/PET-PEESE-Simulation-Results.Rdata")
 
 
 ## ----cleaning------------------------------------------------------------
@@ -33,7 +33,7 @@ results <-
 
 Type_I_error_rates <- 
   results %>% 
-  filter(coef != "(Intercept)", p_RR == 1) %>%
+  filter(p_RR == 1, coef != "(Intercept)") %>%
   select(-coef, -p_RR, -est_M, -est_V, -RMSE) %>%
   gather("rate","reject", starts_with("reject")) %>%
   mutate(rate = as.numeric(str_sub(rate,-3,-1)) / 1000)
@@ -49,6 +49,7 @@ rejection_rate_plot <- function(dat) {
     theme(legend.position = "bottom") + 
     labs(linetype = "", color = "Maximum n", x = "Mean effect size", y = "Rejection rate")
 }
+
 
 ## ---- PET-PEESE-rejection-rates, fig.width = 8, fig.height = 8-----------
 
@@ -73,7 +74,7 @@ estimator_performance <-
   rename(maximum_n = n_max)
   
 bias_plot <- function(dat) {
-  title <- paste0(unique(dat$study_dist), ", maximum sample size of ", unique(dat$maximum_n))
+  subtitle <- paste0(unique(dat$study_dist), ", maximum sample size of ", unique(dat$maximum_n))
   ggplot(dat, aes(mean_effect, est_M, color = estimator, shape = estimator)) + 
     geom_point() + geom_line() + 
     geom_abline(slope = 1, intercept = 0) + 
@@ -82,7 +83,8 @@ bias_plot <- function(dat) {
     theme_light() + 
     theme(legend.position = "bottom") + 
     labs(
-      title = title, 
+      title = "Expected value of effect size estimators",
+      subtitle = subtitle,
       color = "", shape = "", 
       x = "Mean effect size", y = "Expected value of estimator"
     )
@@ -136,11 +138,62 @@ estimator_performance %>%
   bias_plot()
 
 
-## ------------------------------------------------------------------------
-RMSE_plot <- function(dat) {
+## ----RMSE-plots, fig.width = 8, fig.height = 8---------------------------
+
+RMSE_plot <- function(dat, ylim) {
+  subtitle <- paste0(unique(dat$study_dist), ", maximum sample size of ", unique(dat$maximum_n))
   ggplot(dat, aes(mean_effect, RMSE, color = estimator, shape = estimator)) + 
     geom_point() + geom_line() + 
-    facet_grid(heterogeneity ~ study_dist, scales = "free_y") + 
-    theme_light()
+    coord_cartesian(ylim = ylim) + 
+    facet_grid(heterogeneity ~ selection_level, scales = "free_y") + 
+    theme_light() + 
+    theme(legend.position = "bottom") + 
+    labs(
+      title = "Root mean squared error of effect size estimators",
+      subtitle = subtitle,
+      color = "", shape = "", 
+      x = "Mean effect size", y = "RMSE"
+    )
 }
+
+estimator_performance %>%
+  filter(study_dist == "Uniform distribution of sample sizes", 
+         maximum_n == 50, 
+         estimator %in% c("FE-meta","PEESE","PET-PEESE","SPET","SPEESE","SPET-SPEESE")) %>%
+  RMSE_plot(ylim = c(0, 0.4))
+
+
+## ----more-RMSE-plots, fig.width = 8, fig.height = 8, fig.show = "hide"----
+
+estimator_performance %>%
+  filter(study_dist == "Uniform distribution of sample sizes", 
+         maximum_n == 120, 
+         estimator %in% c("FE-meta","PEESE","PET-PEESE","SPET","SPEESE","SPET-SPEESE")) %>%
+  RMSE_plot(ylim = c(0, 0.3))
+
+estimator_performance %>%
+  filter(study_dist == "More small studies", 
+         maximum_n == 50, 
+         estimator %in% c("FE-meta","PEESE","PET-PEESE","SPET","SPEESE","SPET-SPEESE")) %>%
+  RMSE_plot(ylim = c(0, 0.4))
+
+estimator_performance %>%
+  filter(study_dist == "More small studies", 
+         maximum_n == 120, 
+         estimator %in% c("FE-meta","PEESE","PET-PEESE","SPET","SPEESE","SPET-SPEESE")) %>%
+  RMSE_plot(ylim = c(0, 0.3))
+
+estimator_performance %>%
+  filter(study_dist == "More large studies", 
+         maximum_n == 50, 
+         estimator %in% c("FE-meta","PEESE","PET-PEESE","SPET","SPEESE","SPET-SPEESE")) %>%
+  RMSE_plot(ylim = c(0, 0.4))
+
+estimator_performance %>%
+  filter(study_dist == "More large studies", 
+         maximum_n == 120, 
+         estimator %in% c("FE-meta","PEESE","PET-PEESE","SPET","SPEESE","SPET-SPEESE")) %>%
+  RMSE_plot(ylim = c(0, 0.3))
+
+
 
