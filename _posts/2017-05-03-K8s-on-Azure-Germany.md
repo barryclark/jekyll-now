@@ -57,4 +57,4 @@ Enjoy!
 
 I'm sure in a few days everything will be merged to master and i'll have to update this blogpost with a much simpler version, AKA: just follow the how-to. But if you want o try until then, here is why.
 
-Also, i am happy to have met Cole and the guys from MS - that made kubecon even more worth wile.
+Also, i am happy to have met Cole and the guys from MS - that made kubecon even more worth while.
