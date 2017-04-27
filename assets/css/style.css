@@ -7,22 +7,42 @@ body {
 	color: #777777;
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
-
-h1, h2{
+h1, h2, h3{
 	color: #4aaaa5;
-}
-
-h1{
-	font-size:18px;
-	font-weight:bold;
-}
-
-h2{
-	font-weight:bold;
-	font-size:20px;
 	font-family:'Georgia', Times, Times New Roman, serif;
+	font-weight:bold;
+}
+h1{
+	font-size:30px;
+}
+h2{
+	font-size:30px;	
+}
+h3{
+	font-size:22px;
+}
+hr{
+	margin-top:0;
+	margin-bottom:25px;
+	border:1.5px solid #cccccc;
+}
+input {
+	padding:5px;
+	width:100%;
 }
 
+textarea {
+	width:100%;
+}
+footer {
+	clear:both;
+	width:100%;
+	padding: 25px;
+	text-align: center;
+	background: #666666;
+	border: 5px solid #4aaaa5;
+	color: #D3D3D3;
+}
 #wrapper {
 	width: 960px;
 	margin: 0 auto;
@@ -49,6 +69,15 @@ h2{
 	font-family: 'Georgia', Times, Times New Roman, serif;
 }
 
+hr.side{
+	margin-top:0;
+	margin-bottom:25px;
+	border:1px solid #f4f5f6;
+}
+
+#connectHead{
+	margin-bottom:20px;
+}
 #aboutLink{
 	padding:20px;
 	width:100px;
@@ -76,7 +105,7 @@ h2{
     padding-right: 20px
 }
 
-#portfolio, #contact {
+#portfolio{
 	float:left;
 	width:500px;
 	height:550px;
@@ -84,6 +113,20 @@ h2{
 	margin-top:115px;
 	padding-left: 20px;
     padding-right: 20px
+}
+
+#contact{
+	float:left;
+	width:650px;
+	height:600px;
+	background: white;
+	margin-top:115px;
+	padding-left: 20px;
+    padding-right: 20px
+}
+
+#contactHeader{
+	padding: 45px 0 30px;
 }
 
 .inputs {
@@ -101,20 +144,19 @@ h2{
 
 #connect {
 	margin-top:115px;
-	width:270px;
-	height:150px;
+	width:260px;
+	height:190px;
 	padding:30px;
 	background:white;
 	float:right;
 	text-align:center;
 }
 
-footer {
-	clear:both;
-	width:100%;
-	padding: 25px;
-	text-align: center;
-	background: #666666;
-	border: 5px solid #4aaaa5;
-	color: #D3D3D3;
+#submit {
+	background:#00aba0;
+	width:100px;
+	height:40px;
+	color:white;
+	font-size:18px;
 }
+
