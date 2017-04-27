@@ -40,7 +40,7 @@ footer {
 	padding: 25px;
 	text-align: center;
 	background: #666666;
-	border: 5px solid #4aaaa5;
+	border-top: 5px solid #4aaaa5;
 	color: #D3D3D3;
 }
 #wrapper {
@@ -54,13 +54,14 @@ footer {
 	background:white;
 	position:fixed;
 	top:0;
-	border: 2px solid #cccccc;
+	border-bottom: 2px solid #cccccc;
 }
 
 #name {
 	background: #00aba0;
 	color: white;
 	padding: 30px;
+	margin-left:192px;
 	width: 215px;
 	float:left;
 	font-size: 25px;
@@ -79,30 +80,41 @@ hr.side{
 	margin-bottom:20px;
 }
 #aboutLink{
-	padding:20px;
+	margin-top: 20px;
+    border-right: 1px solid gray;
 	width:100px;
+	height:20px;
 	float:right;
 }
 
 #portfolioLink{
-	padding:20px;
+	margin-top: 20px;
+    border-right: 1px solid gray;
 	width:100px;
+	height:20px;
 	float:right;
 }
 
 #contactLink{
-	padding:20px;
+	margin-top: 20px;
+    border-right: 1px solid gray;
 	width:100px;
+	height:20px;
 	float:right;
 }
 
 #about {
 	float:left;
 	width:650px;
+	height:400px;
 	background: white;
 	margin-top:115px;
-	padding-left: 20px;
-    padding-right: 20px
+	padding: 0 20px;
+	line-height: 1.5;
+}
+
+#aboutHeader{
+	margin:20px 0;
 }
 
 #portfolio{
