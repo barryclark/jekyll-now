@@ -1,7 +1,9 @@
 ---
 published: true
 ---
-## How To Use PouchDB + SQLite For Local Storage In Ionic 2
+
+PouchDB is an open-source JavaScript database inspired by Apache CouchDB that is designed to run well within the browser.PouchDB is also a JavaScript implementation of CouchDB. Its goal is to emulate the CouchDB API with near-perfect fidelity, while running in the browser or in Node.js.
+
 
 1. [PouchDB ](https://pouchdb.com/)
 2. [SQLite](https://www.sqlite.org/)
