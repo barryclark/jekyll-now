@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 ## How To Use PouchDB + SQLite For Local Storage In Ionic 2
 
@@ -20,6 +20,4 @@ It enables applications to store data locally while offline, then synchronize it
 
 SQLite is an in-process library that implements a self-contained, serverless, zero-configuration, transactional SQL database engine. The code for SQLite is in the public domain and is thus free for use for any purpose, commercial or private. SQLite is the most widely deployed database in the world with more applications than we can count, including several high-profile projects.
 
-### Set up the project 
-
-
+### Set up the project
