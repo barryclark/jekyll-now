@@ -6,7 +6,28 @@ published: true
 
 Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
 
-![_config.yml]({{ site.baseurl }}/images/config.png)
+Code Block Below:
+
+    using Android.App;
+    using Android.Widget;
+    using Android.OS;
+
+    namespace HelloWorldAndroid
+    {
+    [Activity(Label = "HelloWorldAndroid", MainLauncher = true, Icon = "@drawable/icon")]
+    public class MainActivity : Activity
+    {
+        protected override void OnCreate(Bundle bundle)
+        {
+            base.OnCreate(bundle);
+
+            // Set our view from the "main" layout resource
+            // SetContentView (Resource.Layout.Main);
+        }
+    }
+    }
+
+
 
 ![_config.yml]({{ site.baseurl }}/images/test.jpg)
 
