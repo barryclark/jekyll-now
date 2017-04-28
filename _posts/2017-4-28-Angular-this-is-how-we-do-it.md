@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Angular, This is how we do it 
+title: Angular, Realistic Hello World 
 ---
  
 If you are new to Angular but familiar with AngularJS, then this is for you.
