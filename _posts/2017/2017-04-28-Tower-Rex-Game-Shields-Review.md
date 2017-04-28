@@ -1,6 +1,6 @@
 ---
 title: "Review - Tower Rex Game Shields"
-date: 2017-04-24 14:00:00 Z
+date: 2017-04-28 14:15:00 Z
 category: review
 tags:
   - review
