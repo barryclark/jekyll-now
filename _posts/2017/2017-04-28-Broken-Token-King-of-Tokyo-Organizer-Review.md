@@ -1,5 +1,5 @@
 ---
-title: "Micro Review - The Broken Token King of Tokyo Organizer"
+title: "Review - The Broken Token King of Tokyo Organizer"
 date: 2017-04-28 16:15:00 Z
 category: review
 tags:
