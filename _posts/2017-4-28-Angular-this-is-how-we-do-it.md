@@ -47,7 +47,7 @@ ng g module home --routing
 
 ![Home Module Create]({{ site.baseurl }}/images/AngularThisIs/home-module-create.png)
 
-## add our home module to app module
+### add our home module to app module
 we will need to tell our module about our newley created home module.
 So lets import our home module. 
 
@@ -63,6 +63,22 @@ imports: [
   HomeModule,
 ]
 ```
+
+### Create Home Component
+
+Our home module is kinda lonely, so why don't we create a home component.
+The home component will be a child of Home Module. So Navigate to your Home Module and create a Home Component. I will be using the CLI to do so.
+
+```
+ng g component home
+```
+
+Since the Angular CLI is our friend we do not have to import our newly created home component into our home module. The Angular CLI takes care of that as you can see if you open our home.moudule.ts file.
+
+![Home Component Create]({{ site.baseurl }}/images/AngularThisIs/home-component-create.png)
+
+## Routing
+
 
 
 
