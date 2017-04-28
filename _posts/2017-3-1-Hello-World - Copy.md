@@ -1,10 +1,13 @@
 ---
 layout: post
-title: How to set up a highly scalable website for less than 12 dollars
+title: How to develop Android apps using Xamarin for Windows
 published: true
 ---
 
-Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
+*Step 1: Go to Xamarin Windows
+*Step 2: Enable Hyper-V
+*Step 3: Download & install Visual Studio Emulator For Android
+*Step 4: Go to Visual Studio ->New Solution->Android->MainActivity
 
 Code Block Below:
 
