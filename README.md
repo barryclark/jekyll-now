@@ -1,2 +1,1 @@
-# sternj20.github.io
-Homepage of Jesse Stern 
+https://sternj20.github.io

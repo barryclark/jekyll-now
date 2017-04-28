@@ -26,6 +26,11 @@ hr{
 	margin-bottom:25px;
 	border:1.5px solid #cccccc;
 }
+hr.side{
+	margin-top:0;
+	margin-bottom:25px;
+	border:1px solid #f4f5f6;
+}
 input {
 	padding:5px;
 	width:100%;
@@ -46,12 +51,31 @@ footer {
 .header {
 	padding: 45px 0 30px
 }
+.inputs {
+	margin-bottom:20px;
+}
+.examples {
+	float:left;
+	margin-left: 30px;
+    margin-right: 20px;
+}
+.exampleNames{
+	position: relative;
+    bottom: 64px;
+    height: 50px;
+    width: 100%;
+    background: #00aba0;
+    text-align: center;
+    padding-top: 15px;
+    color: white;
+    font-size: 20px;
+    font-family:'Georgia', Times, Times New Roman, serif;
+}
 #wrapper {
 	width: 960px;
 	margin: 0 auto;
 
 }
-
 #navbar {
 	width:100%;
 	background:white;
@@ -59,7 +83,6 @@ footer {
 	top:0;
 	border-bottom: 2px solid #cccccc;
 }
-
 #name {
 	background: #00aba0;
 	color: white;
@@ -72,13 +95,6 @@ footer {
 	text-align: center;
 	font-family: 'Georgia', Times, Times New Roman, serif;
 }
-
-hr.side{
-	margin-top:0;
-	margin-bottom:25px;
-	border:1px solid #f4f5f6;
-}
-
 #connectHead{
 	margin-bottom:20px;
 }
@@ -90,7 +106,6 @@ hr.side{
 	height:20px;
 	float:right;
 }
-
 #portfolioLink{
 	margin-top: 30px;
 	margin-right: 20px;
@@ -99,7 +114,6 @@ hr.side{
 	height:20px;
 	float:right;
 }
-
 #contactLink{
 	margin-top: 30px;
 	margin-right: 200px;
@@ -119,7 +133,6 @@ hr.side{
 	padding: 0 20px;
 	line-height: 1.5;
 }
-
 #portfolio{
 	float:left;
 	width:650px;
@@ -130,7 +143,6 @@ hr.side{
 	padding-left: 20px;
     padding-right: 20px
 }
-
 #contact{
 	float:left;
 	width:650px;
@@ -141,20 +153,10 @@ hr.side{
 	padding-left: 20px;
     padding-right: 20px
 }
-
-.inputs {
-	margin-bottom:20px;
-}
-
-.examples {
-	float:left;
-	margin:20px;
-}
 #myimg {
 	float:left;
 	margin-right:30px;
 }
-
 #connect {
 	margin-top:115px;
 	width:270px;
@@ -164,7 +166,6 @@ hr.side{
 	float:right;
 	text-align:center;
 }
-
 #submit {
 	background:#00aba0;
 	width:100px;
