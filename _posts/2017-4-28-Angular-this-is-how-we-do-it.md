@@ -55,7 +55,7 @@ So lets import our home module.
 import { HomeModule } from './home/home.module';
 ```
 
-Then you will want to add it to the list of imports in @NgModule
+Then you will want to add it to the list of imports in @NgModule delcartion of the App Module
 
 ```javascript
 imports: [
