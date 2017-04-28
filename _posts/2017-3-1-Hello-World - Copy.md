@@ -4,10 +4,10 @@ title: How to develop Android apps using Xamarin for Windows
 published: true
 ---
 
-*Step 1: Go to Xamarin Windows
-*Step 2: Enable Hyper-V
-*Step 3: Download & install Visual Studio Emulator For Android
-*Step 4: Go to Visual Studio ->New Solution->Android->MainActivity
+* Step 1: Go to Xamarin Windows
+* Step 2: Enable Hyper-V
+* Step 3: Download & install Visual Studio Emulator For Android
+* Step 4: Go to Visual Studio ->New Solution->Android->MainActivity
 
 Code Block Below:
 
@@ -30,6 +30,7 @@ Code Block Below:
     }
     }
 
+https://youtu.be/Xved3siRZ0s
 
 
 ![_config.yml]({{ site.baseurl }}/images/test.jpg)
