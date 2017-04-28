@@ -4,7 +4,7 @@ _site
 .jekyll-metadata
 .bundle
 *.swo
-*.swp
+*.md.swp
 .sass-cache
 Gemfile
 Gemfile.lock
