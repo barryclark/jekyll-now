@@ -3,6 +3,8 @@ _site
 .jekyll
 .jekyll-metadata
 .bundle
+.swo
+.swp
 .sass-cache
 Gemfile
 Gemfile.lock
