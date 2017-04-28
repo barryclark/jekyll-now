@@ -3,5 +3,18 @@
     title: You're up and running! ## 在这里输入你的日志标题，如“我是谁？”
 ---
 
-Hello World!
-my name is hewenqi,i am comming.
+Jekyll本身是基于Ruby，它实际上也可以看成是一种模板引擎liquid的扩展。jekyll对liquid的主要扩展在于两点：
+
+内建专用于博客网站的对象，可以在模板中引用这些对象：page、site等
+对liquid进行了扩展，方便构建博客网站
+类似其他的模板引擎一样，标记是模板引擎解析的关键，liquid设计了如下两种标记：
+
+{{ }}：此标记表征的是将其中的变量转化成文本
+{% %}：此标记用于包含控制流关键字，比如：{% if %}、{% for x in xx %}
+Jekyll主要帮我建立一个快速建立页面的模板，用上述的编程语言实现.md的自动加载在页面。Jeckyll需要Ruby的环境，安装步骤如下：
+
+Ruby的安装
+RubyDevKit的安装
+Rubygems的安装
+Jekyll的安装
+注：本文所用环境为windows64位，以下所有内容均在此环境下执行
