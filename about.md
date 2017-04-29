@@ -11,7 +11,7 @@ I currently work as a Senior Software Engineer in [Dragon IT & Communication Ltd
 
 * Full Stack 
 
-I mostly develop enterprise applications using Asp.NET MVC, WebAPI ,SQL Server,MongoDB,Microsoft Azure as back end Tools  and Angular/JS/Jquery/HTML/CSS/Bootstrap for Front End Development. I use Xamarin for mobile apps development. 
+I mostly develop enterprise applications using Asp.NET MVC, WebAPI ,SQL Server,MongoDB,Microsoft Azure as back end Tools  and Angular/JS/Jquery/HTML/CSS/Bootstrap for Front End Development. I use Xamarin for Android & Iphone apps development. 
 
 I have substantial experience in physical database design and analyzing and optimizing sql queries for high scalabity and performance.
 
