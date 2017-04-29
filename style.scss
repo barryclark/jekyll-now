@@ -18,9 +18,16 @@ html {
 }
 
 body {
-	background: $white;
-  font: 18px/1.4 $helvetica;
-  color: $darkGray;
+	background: $white;	
+        font: 18px/1.4 $helvetica;
+        color: $darkGray;
+	    letter-spacing: 0.01em;
+	/*
+	color:#222222;
+	background-color:#FDFDFD;
+	font-family: 'Source Sans Pro',sans-serif;
+    letter-spacing: 0.01em;*/
+	
 }
 
 .container {
