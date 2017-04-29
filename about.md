@@ -3,7 +3,7 @@ layout: page
 title: About
 permalink: /about/
 ---
-I am Microsoft certified software developer,based in Dhaka,Bangladesh, specialized in developing high performing,scalable,secure,SEO friendly web and mobile applications. I have more than 8 years of software development experience in developing applications in Microsoft Asp.NET track.
+I am Microsoft certified software developer,based in Dhaka,Bangladesh, specialized in developing high performing,scalable,secure,SEO friendly web and mobile applications. I have more than 8 years of software development experience in Microsoft Asp.NET track.
 
 ### More Information
 I currently work as a Senior Software Engineer in [Dragon IT & Communication Ltd](http://www.ditcl-dragonbd.com)
