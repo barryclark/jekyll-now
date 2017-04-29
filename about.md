@@ -3,13 +3,13 @@ layout: page
 title: About
 permalink: /about/
 ---
-
-Some information about you!
+I am Microsoft certified software developer,based in Dhaka,Bangladesh, specialized in developing high performing,scalable,secure,SEO friendly web and mobile applications. I have more than 8 years of software development experience in developing applications in Microsoft Asp.NET track.
 
 ### More Information
+I currently work as a Senior Software Engineer in [Dragon IT & Communication Ltd](http://www.ditcl-dragonbd.com)
 
-A place to include any other types of information that you'd like to include about yourself.
+I mostly develop enterprise applications using Asp.NET MVC, WebAPI ,SQL Server as back end Tools  and Angular/Javascript/Jquery for Front End Development. I use Xamarin for mobile apps development. I am currently learning python(django) for increasing productivity. I have experience in developing application in PHP as well.  
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[ankured182@gmail.com](mailto:ankured182@gmail.com)
