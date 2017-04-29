@@ -40,6 +40,25 @@ Now you can start on page.html. We've already got a good header, so let's focus 
 There are other ways to input user data, such as the &lt;input> tag. This is usually for smaller inputs. For multi-line inputs, you want to use &lt;textarea>
 
 
+We'll add an extra div
+
+
+<div class="container">
+
+  <div class="row">
+    <form role="form" method='POST' action='#'>
+      <textarea class="form-control" id="user-text" name="contents" placeholder="Enter your text here"></textarea>
+      <button type="button" id="analyze-button" class="btn btn-default">Go!</button>
+    </form>
+  </div>
+
+  <script src="/static/js/index.js"></script>
+
+  <div class="container">
+
+
+
+
 By convention, HTML commands are from the browser's point of view. Thus a GET command is the browser getting data from the webpage and a POST command is the browser (i.e. the Internet user) posting data. If it were from the website's point of view it might be called PROVIDE and RECEIVE.
 
 

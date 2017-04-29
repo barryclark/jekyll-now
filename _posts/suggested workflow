@@ -1,0 +1,13 @@
+suggested workflow:
+
+make first changes on /index local version
+
+send changes to /index on website via pythonanywhere folder
+
+make changes to /home local version
+-copy over index.html to main_page.html, then change the javascript it calls back to main_page
+-copy over index.js to main_page.js
+-copy text_analysis2 to text_analysis, don't forget to delete the extra two
+-in flask_app: change (results, verbs) = analyze_text2(text) to (results, verbs) = analyze_text(text) (get rid of the 2)
+
+send changes to /home on website
