@@ -1,7 +1,7 @@
 % Encoding: UTF-8
 
 @InProceedings{Zhao2017b,
-  author    = {Yuan Zhao and Il Memming Park},
+  author    = {Yuan Zhao and Jacob Yates and Il Memming Park},
   title     = {Low-dimensional state-space trajectory of choice at the population level in area {MT}},
   booktitle = {Computational and Systems Neuroscience ({COSYNE})},
   year      = {2017},
@@ -26,25 +26,13 @@
   volume               = {29},
   number               = {5},
   month                = may,
-  note                 = {(to appear)},
-  abstract             = {A small number of common factors often explain most of the interdependence
-	among simultaneously recorded neurons, a signature of underlying
-	low-dimensional dynamics. We posit that simple neural coding and
-	computation manifest as low-dimensional nonlinear dynamics implemented
-	redundantly within a large population of neurons. Recovering the
-	latent dynamics from observations can offer a deeper understanding
-	of neural computation. We improve upon previously-proposed methods
-	for recovering latent dynamics, which assume either an inappropriate
-	observation model or linear dynamics. We propose a practical and
-	efficient inference method for a generative model with explicit point
-	process observations and an assumption of smooth nonlinear dynamics.
-	We validate our method on both simulated data and population recording
-	from primary visual cortex.},
+  abstract             = {When governed by underlying low-dimensional dynamics, the interdependence of simultaneously recorded populations of neurons can be explained by a small number of shared factors, or a low-dimensional trajectory. Recovering these latent trajectories, particularly from single-trial population recordings, may help us understand the dynamics that drive neural computation. However, due to the biophysical constraints and noise in the spike trains, inferring trajectories from data is a challenging statistical problem in general. Here, we propose a practical and efficient inference method, the variational latent gaussian process (vLGP). The vLGP combines a generative model with a history-dependent point process observation, together with a smoothness prior on the latent trajectories. The vLGP improves on earlier methods for recovering latent trajectories, which assume either observation models inappropriate for point processes or linear dynamics. We compare and validate vLGP on both simulated data sets and population recordings from the primary visual cortex. In the V1 data set, we find that vLGP achieves substantially higher performance than previous methods for predicting omitted spike trains, as well as capturing both the toroidal topology of visual stimuli space and the noise correlation. These results show that vLGP is a robust method with the potential to reveal hidden neural dynamics from large-scale neural recordings.},
   archiveprefix        = {arXiv},
   citeulike-article-id = {14025142},
   citeulike-linkout-0  = {http://arxiv.org/abs/1604.03053},
   citeulike-linkout-1  = {http://arxiv.org/pdf/1604.03053},
   day                  = {22},
+  doi                  = {10.1162/NECO_a_00953},
   eprint               = {1604.03053},
   keywords             = {bayesian, computational-neuroscience, gaussian-process, glm, latent-dynamics, latent-variable, spike-train, statistical-neuroscience, statistics, torus, variational-bayes},
   posted-at            = {2016-04-30 16:02:05},
