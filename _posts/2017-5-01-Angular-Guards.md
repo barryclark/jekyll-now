@@ -11,29 +11,32 @@ We will use the `CanActivate()` guard to redirect unauthorized users trying to a
 The guard we are going to create will be a general purpose guard that checks if the user is logged in.
 
 ### Basic guard
+create a file called `my-guard.service.ts`
+or use the CLI `ng g guard my-guard`
+
 ```javascript
 import { Injectable } from '@angular/core';
 import { CanActivate } from '@angular/router';
 
 @Injectable()
-  export class AuthGuard implements CanActivate {
+  export class MyGuard implements CanActivate {
     canActivate() {
-      console.log('AuthGuard#canActivate called');
+      console.log('MyGuard#canActivate called');
       return true;
     }
   }
 ```
 This guard will just output a log to the console when a route it is told to protect is activating. The `return true` is what allows the route to be activated.
 
-### add our guard to a route
+### Add our guard to a route
 ```javascript
-import { AuthGuard } from '../auth-guard.service';
+import { MyGuard } from '../my-guard.service';
 
 const adminRoutes: Routes = [
   {
     path: 'admin',
     component: AdminComponent,
-    canActivate: [AuthGuard],
+    canActivate: [MyGuard],
     children: [
       {
         path: '',
@@ -58,4 +61,3 @@ const adminRoutes: Routes = [
 export class AdminRoutingModule {}
 ```
 Now our Admin routes are protected by our guard.
-
