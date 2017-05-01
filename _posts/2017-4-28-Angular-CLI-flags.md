@@ -1,3 +1,6 @@
+There are a lot of flags avilable for the Angular CLI. But good luck finding out what they are.
+So I have compiled a list of all of them.
+
 - `--dry-run`: boolean, default false, perform dry-run so no changes are written to filesystem
 - `--verbose`: boolean, default false
 - `--link-cli`: boolean, default false, automatically link the @angular/cli package (more info)
