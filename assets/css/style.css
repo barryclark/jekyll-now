@@ -7,6 +7,16 @@ body {
 	color: #777777;
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
+
+/* general */
+
+.container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  clear: both;
+}
+
 h1, h2, h3{
 	color: #4aaaa5;
 	font-family:'Georgia', Times, Times New Roman, serif;
@@ -26,10 +36,81 @@ hr{
 	margin-bottom:25px;
 	border:1.5px solid #cccccc;
 }
+
+/* header */
+
+.header {
+	padding: 45px 0 30px
+}
+#navbar {
+	width:100%;
+	background:white;
+	position:fixed;
+	top:0;
+	border-bottom: 2px solid #cccccc;
+}
+#name {
+  float: left;
+  width: 250px;
+  height: 90px;
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 90px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  background: #4aaaa5;
+}
+nav {
+	float:right;
+	margin-top:20px;
+}
+
+nav a {
+  display: inline-block;
+  padding-left: 15px;
+  margin-left: 15px;
+  line-height: 18px;
+  color: #999;
+  text-decoration: none;
+  border-left: 1px solid #efefef;
+}
+
+nav a:first-child {
+  border-left: 0 none;
+}
+
+/* sidebar */
 hr.side{
 	margin-top:0;
 	margin-bottom:25px;
 	border:1px solid #f4f5f6;
+}
+
+.icons {
+  width: 50px;
+  height: 50px;
+  margin-top: 8px;
+  margin-right: 5px;
+}
+
+.icons:last-child {
+  margin-right: 0;
+}
+
+#sidebar {
+	
+	width:270px;
+	height:190px;
+	padding:20px;
+	background:white;
+	float:right;
+	text-align:center;
+	padding-bottom: 20px;
+ 	margin-bottom: 15px;
+  	line-height: 22px;
+  	border-bottom: 2px solid #eee;
 }
 input {
 	padding:5px;
@@ -39,21 +120,42 @@ input {
 textarea {
 	width:100%;
 }
-footer {
-	clear:both;
-	width:100%;
-	padding: 25px;
-	text-align: center;
-	background: #666666;
-	border-top: 5px solid #4aaaa5;
-	color: #D3D3D3;
+
+/* main */
+
+#main-container {
+  padding-top: 130px;
 }
-.header {
-	padding: 45px 0 30px
+
+.main-section {
+  float: left;
+  width: 100%;
+  max-width: 650px;
+  padding: 30px;
+  margin: 0 0 40px;
+  background: #fff;
+  border: 1px solid #ddd;
 }
+
+#myimg {
+	float:left;
+	margin-right:30px;
+}
+
+/* contact page */
+
 .inputs {
 	margin-bottom:20px;
 }
+#submit {
+	background:#00aba0;
+	width:100px;
+	height:40px;
+	color:white;
+	font-size:18px;
+}
+
+/*portfolio page */
 .examples {
 	float:left;
 	margin-left: 30px;
@@ -71,105 +173,17 @@ footer {
     font-size: 20px;
     font-family:'Georgia', Times, Times New Roman, serif;
 }
-#wrapper {
-	width: 960px;
-	margin: 0 auto;
 
-}
-#navbar {
+/* footer */
+footer {
+	clear:both;
 	width:100%;
-	background:white;
-	position:fixed;
-	top:0;
-	border-bottom: 2px solid #cccccc;
-}
-#name {
-	background: #00aba0;
-	color: white;
-	padding: 30px;
-	margin-left:192px;
-	width: 215px;
-	float:left;
-	font-size: 25px;
-	font-weight: bold;
+	padding: 25px;
 	text-align: center;
-	font-family: 'Georgia', Times, Times New Roman, serif;
-}
-#connectHead{
-	margin-bottom:20px;
-}
-#aboutLink{
-	margin-top: 30px;
-	margin-right: 20px;
-    border-right: 1px solid gray;
-	width:50px;
-	height:20px;
-	float:right;
-}
-#portfolioLink{
-	margin-top: 30px;
-	margin-right: 20px;
-    border-right: 1px solid gray;
-	width:65px;
-	height:20px;
-	float:right;
-}
-#contactLink{
-	margin-top: 30px;
-	margin-right: 200px;
-    border-right: 1px solid gray;
-	width:65px;
-	height:20px;
-	float:right;
+	background: #666666;
+	border-top: 5px solid #4aaaa5;
+	color: #D3D3D3;
 }
 
-#about {
-	float:left;
-	width:650px;
-	height:430px;
-	background: white;
-	margin-top:115px;
-	margin-bottom:30px;
-	padding: 0 20px;
-	line-height: 1.5;
-}
-#portfolio{
-	float:left;
-	width:650px;
-	height:850px;
-	background: white;
-	margin-top:115px;
-	margin-bottom:30px;
-	padding-left: 20px;
-    padding-right: 20px
-}
-#contact{
-	float:left;
-	width:650px;
-	height:600px;
-	background: white;
-	margin-top:115px;
-	margin-bottom:30px;
-	padding-left: 20px;
-    padding-right: 20px
-}
-#myimg {
-	float:left;
-	margin-right:30px;
-}
-#connect {
-	margin-top:115px;
-	width:270px;
-	height:190px;
-	padding:20px;
-	background:white;
-	float:right;
-	text-align:center;
-}
-#submit {
-	background:#00aba0;
-	width:100px;
-	height:40px;
-	color:white;
-	font-size:18px;
-}
+
+
