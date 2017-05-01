@@ -14,7 +14,6 @@ author: robk
 published: true
 ---
 
-
 ![Wicked Apples](/images/wickedapples/cover.png){: .float-right}
 **Designers:**  Robert Fowler\\
 **Publisher:** [Almost a Game](http://almostagame.com/)\\
