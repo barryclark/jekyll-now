@@ -4,6 +4,9 @@ title: Presentations
 permalink: /presentations/
 ---
 
+* [Heteroskedasticity-robust tests in linear regression: A review and evaluation of small-sample corrections]({{ site.url }}/files/AERA-2017-HC-t-tests.html). Presentation at the American Educational Research Association annual convention, April 30, 2017 in San Antonio, TX.
+* [Using response ratios for meta-analyzing single-case designs with behavioral outcomes]({{ site.url}}/files/AERA-2017-poster-Using-response-ratios.pdf). Poster presented at the American Educational Research Association annual convention, April 28, 2017 in San Antonio, TX. 
+* [A nonlinear intervention analysis model for treatment reversal single-case designs]({{ site.url }}/files/AERA-2017-poster-intervention-analysis-model.pdf). Poster (with Daniel M. Swan) presented at the American Educational Research Association annual convention, April 28, 2017 in San Antonio, TX. 
 * [Small sample corrections for use of cluster-robust standard errors in the analysis of school-based experiments]({{ site.url}}/files/CRVE-SREE-20170302.pdf). Presentation at the Society for Research on Educational Effectiveness Conference, March 2, 2017 in Washington, D.C.
 * [Effect sizes for single-case research]({{ site.url}}/files/Single-case-methods-IES-PI-meeting-2016.pdf). Presentation at Institute of Education Sciences 2016 Principal Investigators Meeting, December 19, 2016 in Washington, DC.
 * [Small-sample methods for cluster-robust variance estimation and hypothesis testing in fixed effects models]({{ site.url}}/files/CRVE-JSM-20160731.pdf). Presentation at the Joint Statistical Meetings, July 31, 2016 in Chicago, IL.
