@@ -37,7 +37,7 @@ It's *wicked*.
 
 Wicked Apples is extremely easy to pick up and play. Each player first takes a bucket at random and places it face down in front of them. Once every player has one they're revealed and each player takes a Wicked Apple card that corresponds with their color bucket. The random distribution of buckets is important because the numbers on the buckets determine who goes first.
 
-![Wicked Apples](/images/wickedapples/wicket.jpg){: .float-right}Once everyone has a Wicked Apple and bucket the rest of the cards are shuffled and everyone gets 3 from the deck. Players may look at their cards, then must place them, along with their Wicked Apple, face down in front of their bucket. They may not look at them again. Now the game can start. The player with the lowest numbered bucket starts the game.
+![Wicked Apples](/images/wickedapples/wicked.jpg){: .float-right}Once everyone has a Wicked Apple and bucket the rest of the cards are shuffled and everyone gets 3 from the deck. Players may look at their cards, then must place them, along with their Wicked Apple, face down in front of their bucket. They may not look at them again. Now the game can start. The player with the lowest numbered bucket starts the game.
 
 There are two phases in Wicked Apples. The first has players taking turns either sliding one of their face-down apples in front of another player or peeking at one of another player's face-down cards. Once everyone has done this each player will choose one of their cards to "eat". To eat an apple a face down card is chosen and flipped over. It's effect, if it has one, is immediately resolved. Once an apple is eaten it's placed in the player's bucket, changing the number that determines who goes first next round.
 
