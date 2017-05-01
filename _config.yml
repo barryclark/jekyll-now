@@ -23,9 +23,9 @@ footer-links:
   flickr:
   github: israelem
   instagram:
-  linkedin: https://www.linkedin.com/in/israelem
+  linkedin: israelem
   pinterest:
-  rss: http://israelem.github.iof/eed.xml
+  rss: feed.xml
   twitter: israelem
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
