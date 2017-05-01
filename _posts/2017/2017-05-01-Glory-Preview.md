@@ -9,7 +9,7 @@ tags:
   - glory
   - slightly twisted games
 layout: post
-description: "Tower Rex Game Shields are really cool. The whole set only costs $22."
+description: "Glory is a competitive card game for 2-4 players."
 featured: glory.png
 author: frankg
 published: true
