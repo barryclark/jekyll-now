@@ -2,7 +2,7 @@
 layout: post
 title: My Top 10 Tweets For April 2017
 tags: [twitter]
-keywords: []
+keywords: [tweets, top tweets, twitter]
 ---
 
 These are the top ten tweets I made (not retweets) based on [Twitter's analytics page](https://analytics.twitter.com/).
