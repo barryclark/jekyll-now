@@ -6,9 +6,9 @@ title: HTTP autentizace
 Jak použít HTTP autentizaci pro jednoduchou ochranu webu heslem?
 
 # K čemu to slouží
-HTTP autentizace slouží k základnímu omezení přístupu uživatelů na část webu. Je to mechanismus HTTP vrstvy a spoléhá na standardní HTTP hlavičky, se kterými umí pracovat všechny moderní prohlížeče. 
+HTTP autentizace slouží k základnímu omezení přístupu uživatelů na část webu. Pomocí HTTP hlaviček, se kterými standardně pracují všechny moderní prohlížeče, se umí uživatele zeptat na login a heslo a ty předat na server. 
 
-Mezi nevýhody se řadí nulové zabezpečení přenosu hesla (alespoň při použití metody Basic). Měl by se tedy používat výhradně v kombinaci s HTTPS. 
+Mezi nevýhody se řadí špatné zabezpečení přenosu hesla. Tuto metodu tedy používej výhradně v kombinaci s HTTPS. 
 
 # Příklad pro PHP
 Nejlépe k ilustraci použití v PHP poslouží komentovaný příklad: 
@@ -73,7 +73,7 @@ K tomuto způsobu použití najdeš víc na [webu apache.org](https://httpd.apac
 ## Server
 Server by měl při neautorizaci vrátit status `HTTP 401 Unauthorized` a `WWW-Authenticate` pole. 
 
-**Odhlášení** se nedá řešit nijak přímo. Serveru stačí poslat hlavičku se statusem 401. Klient většinou záměrně pošle nový requerst se špatnými přihlašovacími údaji. 
+**Odhlášení** se nedá řešit nijak přímo. Serveru stačí poslat hlavičku se statusem 401. Klient většinou záměrně pošle nový request se špatnými přihlašovacími údaji. 
 
 ## Klient
 Klient, který se chce autentizovat, použije `Authorization` pole, kam pomocí Base64 zakóduje své jméno a heslo (více podrobností v odkazech dole). Může se použít s jakoukoli metodou, nejen `GET`. 
@@ -81,9 +81,12 @@ Klient, který se chce autentizovat, použije `Authorization` pole, kam pomocí 
 Jsou tři druhy autentizačních **mechanizmů**: 
  - **Basic** - údaje se posílají nešifrovaně zakódované do Base64 (používat pouze přes HTTPS), 
  - **Digest** - heslo se zde posílá zahashované pomocí MD5 (takže stále radši používat přes HTTPS), 
- - **NTLM** - zde se používá zabezpečený přenos dat, ale funguje pouze při HTTP/1.1 a nemusí správně prostupovat nekterými proxy servery. 
+ - **NTLM** - zde se používá zabezpečený přenos dat, ale funguje pouze při HTTP/1.1 a nemusí správně prostupovat některými proxy servery. 
 
-Jméno a heslo se daly zakódovat i do URL přidáním `jmeno:heslo@` před cílovou stránku. Tento způsob je ale už označený jako `deprecated` (překonaný), takže už by se neměl používat. Některé prohlížeče, jako například Chromium, už ho ani nepodporují. 
+Jméno a heslo se daly zakódovat i do URL přidáním `jmeno:heslo@` před cílovou stránku. Tento způsob je ale označený jako `deprecated` (překonaný), takže by se neměl používat. Některé prohlížeče, jako například Chromium, už ho ani nepodporují. 
 
 # Další čtení
-Více si můžeš o tématu anglicky přečíst na [blogu Narayana Prustyho](http://qnimate.com/understanding-http-authentication-in-depth/), nebo tradičně zhuštěně na [aglické Wikipedii](https://en.wikipedia.org/wiki/Basic_access_authentication). 
+Více si můžeš o tématu anglicky přečíst na [blogu Narayana Prustyho](http://qnimate.com/understanding-http-authentication-in-depth/), nebo tradičně zhuštěně na [anglické Wikipedii](https://en.wikipedia.org/wiki/Basic_access_authentication ). 
+
+# Too Long, Didn't Read?
+HTTP autentizace je jednoduchý způsob, jak omezit přístup do části webu. Dá se použít v PHP nebo přímo přes server (viz příklady výše). 
