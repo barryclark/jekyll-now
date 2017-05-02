@@ -1,15 +1,12 @@
 ---
 layout: page
-title: About
+title: Sobre mí
 permalink: /about/
 ---
 
-Some information about you!
+Soy ingeniero en Informática y actualemnte profesor de ciclo formativo en dicha rama. El motivo de hacer este blog fue simplemente por curiosidad y como no para aprender.
 
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
-
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+Además de en Github me puedes encontrar en los siguiente enlaces:
+* **Twitter:** [@israelem](http://twitter.com/israelem)
+* **Linkedin:** [Israel Rodríguez](https://www.linkedin.com/in/israelem)
+* **Wordpress:** [Eclosión liberal](https://eclosionliberal.wordpress.com/)
