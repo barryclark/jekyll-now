@@ -20450,6 +20450,18 @@ email: ''
 data: 13/09/2016
 </yamldata></pre>
 ",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/160,176718573,2016-09-13 18:50:54,2016-09-13 18:45:16,CAI,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": ""IL CAI PER IL SISMA DELL\u2019ITALIA CENTRALE (LAZIO, MARCHE E UMBRIA)"", ""chi"": ""CAI"", ""data"": ""13/09/2016"", ""descrizione"": ""Attivato il c/c presso \""Banca Popolare di Sondrio \u2013 Agenzia Milano 21\"""", ""email"": """", ""iban"": ""IT06 D056 9601 6200 0001 0373 X15"", ""intestazione"": """", ""link"": """", ""postale"": """"}","<pre><yamldata>chi: CAI
+descrizione: 'Attivato il c/c presso ""Banca Popolare di Sondrio – Agenzia Milano 21""'
+intestazione: ''
+iban: 'IT06 D056 9601 6200 0001 0373 X15'
+bic: ''
+postale: ''
+causale: 'IL CAI PER IL SISMA DELL’ITALIA CENTRALE (LAZIO, MARCHE E UMBRIA)'
+link: ''
+email: ''
+data: 13/09/2016
+</yamldata></pre>
+",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/159,176716445,2016-09-13 18:51:17,2016-09-13 18:37:18,Protezione Civile,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": ""PASCITMMROM"", ""causale"": ""Emergenza Terremoto Centro Italia"", ""chi"": ""Protezione Civile"", ""data"": ""13/09/2016"", ""descrizione"": ""Tramite SMS o chiamata al 45500 (2\u20ac) o tramite il c/c aperto presso \""Monte dei Paschi di Siena - Filiale di Roma Via del Corso 232\"""", ""email"": """", ""iban"": ""IT 44 P 01030 03200 000006366341"", ""intestazione"": ""PRES.CONS.MINISTRI DIP.PROT.CIVILE - VIA ULPIANO 11 - 00193 - ROMA RM"", ""link"": ""http://www.protezionecivile.gov.it/jcms/it/donazioni_denaro_sisma_2016.wp"", ""postale"": """"}","<pre><yamldata>chi: 'Protezione Civile'
 descrizione: 'Tramite SMS o chiamata al 45500 (2€) o tramite il c/c aperto presso ""Monte dei Paschi di Siena - Filiale di Roma Via del Corso 232""'
 intestazione: 'PRES.CONS.MINISTRI DIP.PROT.CIVILE - VIA ULPIANO 11 - 00193 - ROMA RM'
