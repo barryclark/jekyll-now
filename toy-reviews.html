@@ -1,14 +1,14 @@
 ---
 title: Toy Reviews
 layout: listing
-permalink: /reviews/tabletop
+permalink: /reviews/toys
 description: >-
   Reviews for toys
 published: true
 ---
 
 <h1>Toy Reviews</h1>
-
+<a href="/reviews/tabletop">Tabletop</a> | <a href="/reviews/digital">Digital</a> | <a href="/reviews/toys">Toys</a>
 <div class="posts clearfix">
   {% for post in site.posts %}
     {% if post.category contains 'review' and post.tags contains 'toys' %}
