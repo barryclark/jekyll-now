@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/3020,226025528,2017-05-03 22:00:48,2017-05-03 15:29:05,Mam beyond borders cerca volontari per aiutare nella ricostruzione post sisma,,,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form""]",,http://i.imgur.com/OtSYZGB.jpg,"{""cosa"": ""Cercasi Volontari"", ""data"": ""03/05/2017"", ""descrizione"": ""Mam beyond borders Onlus cerca volontari di ambo i sessi, automuniti, che vogliano intraprendere l' esperienza di aiutare concretamente le persone e gli animali colpiti dal sisma nel Centro Italia. Richiesta massima seriet\u00e0 e capacit\u00e0 di adattamento. Le mansioni sono: ricostruzione, smistamento e distribuzione degli aiuti alle famiglie. Contattare l'associazione sulla pagina Facebook."", ""email"": ""nirchi.v@gmail.com"", ""immagine"": ""http://i.imgur.com/OtSYZGB.jpg"", ""indirizzo"": """", ""lat"": """", ""link"": ""https://www.facebook.com/MAMbeyondborder/?fref=ts"", ""lon"": """", ""tel"": """"}","<pre><yamldata>tel: ''
+email: nirchi.v@gmail.com
+cosa: 'Cercasi Volontari'
+descrizione: 'Mam beyond borders Onlus cerca volontari di ambo i sessi, automuniti, che vogliano intraprendere l'' esperienza di aiutare concretamente le persone e gli animali colpiti dal sisma nel Centro Italia. Richiesta massima serietà e capacità di adattamento. Le mansioni sono: ricostruzione, smistamento e distribuzione degli aiuti alle famiglie. Contattare l''associazione sulla pagina Facebook.'
+indirizzo: ''
+lat: ''
+lon: ''
+link: 'https://www.facebook.com/MAMbeyondborder/?fref=ts'
+immagine: 'http://i.imgur.com/OtSYZGB.jpg'
+data: 03/05/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/3019,226020873,2017-05-03 21:58:36,2017-05-03 15:14:41,Ricostruire con MAM - Raccolta fondi per gli allevatori e le popolazioni colpite dal sisma,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": ""Ricostruire con MAM"", ""chi"": ""Ricostruire con MAM - CF 92177970347"", ""data"": ""03/05/2017"", ""descrizione"": ""\""Mam beyond borders ONLUS\"", attiva sul territorio del centro Italia dallo scorso Settembre, raccoglie fondi per aiutare nella ricostruzione di stalle, acquisto di fieno per gli animali e aiuti concreti alle popolazioni colpite dal sisma. Chiunque volesse vedere l' operato dell' associazione pu\u00f2 visitare la pagina Facebook, mentre per aiutarci potete mandare una donazione o partecipare attivamente come volontari."", ""email"": ""nirchi.v@gmail.com"", ""iban"": ""IT34C0335901600100000103294"", ""intestazione"": ""Mam beyond borders - CF 92177970347 - Sede legale: via Campo Bo 46, Parma"", ""link"": ""https://www.facebook.com/MAMbeyondborder/?fref=ts"", ""postale"": ""43123""}","<pre><yamldata>chi: 'Ricostruire con MAM - CF 92177970347'
 descrizione: '""Mam beyond borders ONLUS"", attiva sul territorio del centro Italia dallo scorso Settembre, raccoglie fondi per aiutare nella ricostruzione di stalle, acquisto di fieno per gli animali e aiuti concreti alle popolazioni colpite dal sisma. Chiunque volesse vedere l'' operato dell'' associazione può visitare la pagina Facebook, mentre per aiutarci potete mandare una donazione o partecipare attivamente come volontari.'
 intestazione: 'Mam beyond borders - CF 92177970347 - Sede legale: via Campo Bo 46, Parma'
@@ -7772,16 +7783,6 @@ descrizione: 'Offriamo alloggio per 2 persone. Abbiamo 2 posti letto in casa nos
 indirizzo: 'Via Provinciale, Castrolibero, CS, Calabria, Italia'
 lat: '39.308093'
 lon: '16.194392'
-link: ''
-immagine: ''
-data: 19/01/2017
-</yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1943,201963655,2017-01-19 21:12:52,2017-01-19 20:14:18,Metto a disposizione di una famiglia rustico a Mentana (Rm),,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""19/01/2017"", ""descrizione"": ""Metto a disposizione di un nucleo familiare di 4/5 persone rustico in Mentana (RM) con 5 posti letto bagno privato acqua luce riscaldamento e quanto utile"", ""email"": ""katia.sant@libero.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": """"}","<pre><yamldata>tel: ''
-email: katia.sant@libero.it
-descrizione: 'Metto a disposizione di un nucleo familiare di 4/5 persone rustico in Mentana (RM) con 5 posti letto bagno privato acqua luce riscaldamento e quanto utile'
-indirizzo: ''
-lat: ''
-lon: ''
 link: ''
 immagine: ''
 data: 19/01/2017
