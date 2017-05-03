@@ -1,6 +1,6 @@
 ---
 layout: post
-title: **Week-2,3 @ Metis, SF**
+title: **Weeks 2 and 3 @ Metis, SF**
 
 ** Effectiveness can be learned. 
 ** Effectiveness must be learned.
