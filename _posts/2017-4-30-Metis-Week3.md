@@ -1,6 +1,6 @@
 --- 
 layout: post 
-title: **Week 2 & 3 @ Metis, SF**
+title: Week 2 & 3 @ Metis, SF
 ---
 
 
