@@ -26,7 +26,7 @@ We found a workaround, and here it is:
 
 1. Follow the steps from [here](https://github.com/Azure/acs-engine/blob/master/docs/kubernetes.md)
 
-Make sure you add germanycentral for example as location at step 4
+Make sure you add `germanycentral` for example as location at step 4
 
 And make sure you edit the `azuredeploy.parameters.json` after step 5 and before 6 and change the Ubuntu image number to: **16.04.201701130** (for some reason Azure uses different images of Ubuntu 16.04 for different clouds)
 2. ssh to the master node with the generated key from step 2 above (you will need to do this manually or you from pipelines unfortunately)
