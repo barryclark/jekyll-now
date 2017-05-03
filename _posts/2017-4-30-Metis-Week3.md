@@ -2,8 +2,8 @@
 layout: post
 title: **Weeks 2 and 3 @ Metis, SF**
 
-** Effectiveness can be learned. 
-** Effectiveness must be learned.
+* Effectiveness can be learned. * 
+* Effectiveness must be learned. *
 
 *     Peter F. Drucker
 ---
