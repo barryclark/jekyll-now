@@ -1,9 +1,9 @@
 ---
-title: Reviews
+title: Tabletop Reviews
 layout: listing
+permalink: /reviews/tabletop
 description: >-
-  Review of tabletop games, video games, toys, and anything else I find
-  interesting.
+  Reviews for board games, card games, miniatures, and tabletop accessories
 published: true
 ---
 
@@ -14,7 +14,7 @@ published: true
 </p>
 <div class="posts clearfix">
   {% for post in site.posts %}
-    {% if post.category contains 'review' %}
+    {% if post.category contains 'review' and post.tag contains 'games' %}
       <article class="post">
         <div class="eyebrow">{{ post.date | date: "%d %b %Y" }} {% if post.category %} in <a href="/category/#{{ post.category | slugify }}">{{ post.category }}</a> {% endif %}</div>
         {% if post.featured %}
