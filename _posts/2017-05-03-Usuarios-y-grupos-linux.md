@@ -25,6 +25,8 @@ sudo userdel usuario_prueba
 ```
 # Grupos:
 
-Lo primero que debemos saber es a qué grupos pertenece un usuario, para ello hemos de utilizar el comando **groups**.
+Lo primero que debemos saber es a qué grupos pertenece un usuario, para ello hemos de utilizar el comando **groups**, de la siguiente forma groups usuarios.
+
+
 
 
