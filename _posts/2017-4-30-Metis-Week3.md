@@ -1,13 +1,12 @@
---- 
-layout: post 
-title: **Week 2 & 3 @ Metis, SF**
 ---
+layout: post
+title: **Week-2,3 @ Metis, SF**
 
+** Effectiveness can be learned. 
+** Effectiveness must be learned.
 
-##Effectiveness can be learned. 
-##Effectiveness must be learned.
-
-###-- Peter F. Drucker 
+*     Peter F. Drucker
+---
 
 Key words of week 2 & 3 are "effective" and "execution."
 
@@ -52,7 +51,6 @@ they all seems valid, and require effective feature selection and
 execution using the right model.
 
 It’s a great journey so far, and we are headed in the right direction!
-
 
 Stay tuned. I will be back next week...
 
