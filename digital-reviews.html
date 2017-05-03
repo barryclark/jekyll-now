@@ -11,7 +11,7 @@ published: true
 
 <div class="posts clearfix">
   {% for post in site.posts %}
-    {% if post.category contains 'review' and post.tag contains 'video games' %}
+    {% if post.category contains 'review' and post.tags contains 'video games' %}
       <article class="post">
         <div class="eyebrow">{{ post.date | date: "%d %b %Y" }} {% if post.category %} in <a href="/category/#{{ post.category | slugify }}">{{ post.category }}</a> {% endif %}</div>
         {% if post.featured %}
