@@ -23,7 +23,7 @@ See [research page](research) for details.
 
 ### Location
 
-We are located on the 5th floor of Life Sceinces Building (Room 531) at [Stony Brook University, New York](http://www.stonybrook.edu/sb/directions.shtml).
+We are located on the 5th floor of Life Sciences Building (Room 531) at [Stony Brook University, New York](http://www.stonybrook.edu/sb/directions.shtml).
 
 ### Contact us
 
