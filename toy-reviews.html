@@ -1,19 +1,17 @@
 ---
-title: Reviews
+title: Toy Reviews
 layout: listing
+permalink: /reviews/tabletop
 description: >-
-  Review of tabletop games, video games, toys, and anything else I find
-  interesting.
+  Reviews for toys
 published: true
 ---
 
-<h1>All Reviews</h1>
-<p>
-  Here at A Pawn's Perspective we love to review stuff! Tabletop games, video games, toys, accessories, you name it. Here's a list of everything we've reviewed to date.
-</p>
+<h1>Toy Reviews</h1>
+
 <div class="posts clearfix">
   {% for post in site.posts %}
-    {% if post.category contains 'review' %}
+    {% if post.category contains 'review' and post.tag contains 'toys' %}
       <article class="post">
         <div class="eyebrow">{{ post.date | date: "%d %b %Y" }} {% if post.category %} in <a href="/category/#{{ post.category | slugify }}">{{ post.category }}</a> {% endif %}</div>
         {% if post.featured %}
