@@ -7,4 +7,24 @@ Si bien es cierto que hoy en día la gestión de usuarios y grupos en linux se p
 
 # Usuarios:
 * **Creación de usuarios:** useradd
-  * **-
+  * **-m, --create-home:** crea el directorio personal del usuario.
+  * **-G, --groups GRUPOS :** lista de grupos suplementarios de la nueva cuenta.
+  * **-p, --password CONTRASEÑA:** contraseña cifrada de la nueva cuenta.
+  
+  Ejemplo: 
+  ``` bash
+  sudo useradd usuario_prueba -p entra -g users -m
+  ```
+ * **Eliminación de usuarios:** userdel
+   * **-f, --force:** forzar la eliminación de los ficheros.
+   * **-r, --remove:** elimina el directorio personal y el buzón de correo.
+   
+Ejemplo:
+``` bash
+sudo userdel usuario_prueba
+```
+# Grupos:
+
+Lo primero que debemos saber es a qué grupos pertenece un usuario, para ello hemos de utilizar el comando **groups**.
+
+
