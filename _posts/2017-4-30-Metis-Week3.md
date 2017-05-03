@@ -1,4 +1,7 @@
---- layout: post title: **Week 2 & 3 @ Metis, SF**
+--- 
+layout: post 
+title: **Week 2 & 3 @ Metis, SF**
+---
 
 
 ##Effectiveness can be learned. 
