@@ -44,7 +44,7 @@ google_analytics:
 url: "http://www.opendatadelaware.com"
 
 # This url is used to direct to our events page...Which actually exists now. Hooray!
-eventsurl: "http://www.opendatadelaware.com/events.html"
+eventsurl: "https://www.meetup.com/Open-Data-Delaware/"
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
