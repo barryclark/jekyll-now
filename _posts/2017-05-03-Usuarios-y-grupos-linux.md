@@ -19,14 +19,37 @@ Si bien es cierto que hoy en día la gestión de usuarios y grupos en linux se p
    * **-f, --force:** forzar la eliminación de los ficheros.
    * **-r, --remove:** elimina el directorio personal y el buzón de correo.
    
-Ejemplo:
-``` bash
-sudo userdel usuario_prueba
-```
+  Ejemplo:
+  ``` bash
+  sudo userdel usuario_prueba
+  ```
 # Grupos:
 
 Lo primero que debemos saber es a qué grupos pertenece un usuario, para ello hemos de utilizar el comando **groups**, de la siguiente forma groups usuarios.
 
+* **Creación de grupos:** groupadd
 
+  Ejemplo:
+  ```bash
+  sudo groupadd grupo_prueba
+  ```
+  
+* **Eliminación de grupo:** groupdel
 
+  Ejemplo:
+  ``` bash
+  sudo groupdel grupo_prueba
+  ```
+* **Añadir usuario a un grupo:** adduser
+  
+  Ejemplo:
+  ```bash
+  sudo adduser usuario_prueba grupo_prueba
+  ```
+  
+* **Quitar usuario de un grupo:** deluser
 
+  Ejemplo:
+  ``` bash
+  sudo deluser usuario_prueba grupo_prueba
+  ```
