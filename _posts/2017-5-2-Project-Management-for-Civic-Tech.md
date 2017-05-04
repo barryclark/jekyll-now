@@ -4,7 +4,7 @@ layout: post
 title: The Seven Easy Steps of Project Management for Civic Tech
 ---
 
-One of the _best_ parts of a civic tech project is seeing a community of people come together to successfully solve a problem.  On the other hand, one of the _worst_ parts of a civic tech project is wrangling that community of people in order to successfully a problem.
+One of the _best_ parts of a civic tech project is seeing a community of people come together to successfully solve a problem.  On the other hand, one of the _worst_ parts of a civic tech project is wrangling that community of people in order to successfully solve a problem.
 
 I’m sure that many people in the civic tech community can relate to this.  An amazing idea for a project comes together, but _actually_ completing the project a is a bit more of a challenge. It’s basically a rite of passage for anyone starting out in the civic tech world.  One of the best ways to solve this problem is through strong project management.
 
