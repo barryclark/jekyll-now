@@ -10,7 +10,25 @@ layout: default
   </div>
 
   <div class="date">
-    Written on {{ page.date | date: "%B %e, %Y" }}
+    Publicado el 
+    <!-- Whitespace added for readability -->
+{% assign m = page.date | date: "%-m" %}
+{{ page.date | date: "%-d de" }}
+{% case m %}
+  {% when '1' %}enero
+  {% when '2' %}febrero
+  {% when '3' %}marzo
+  {% when '4' %}abril
+  {% when '5' %}mayo
+  {% when '6' %}junio
+  {% when '7' %}julio
+  {% when '8' %}agosto
+  {% when '9' %}septiembre
+  {% when '10' %}octubre
+  {% when '11' %}noviembre
+  {% when '12' %}diciembre
+{% endcase %}
+{{ page.date | date: "de %Y" }}
   </div>
 
   {% include disqus.html %}
