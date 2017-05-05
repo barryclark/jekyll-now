@@ -8,7 +8,7 @@ tags:
   - accessories
   - doug out crafts
 layout: post
-description: "Recently, Carl Cox of Manic Leather sent over a few deck boxes for review."
+description: "Doug Wilson of Doug Out Crafts, specializes in creating unique handmade dice."
 featured: dougoutcrafts.jpg
 author: frankg
 published: true
