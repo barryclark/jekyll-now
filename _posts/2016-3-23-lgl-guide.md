@@ -32,7 +32,7 @@ use lib 'home/claire/lgl.1.D3/perls/';
 Also change line 42 to the location of the lgl binary.
 ```
 #For example
-my $LGLDIR = '/home/claire/Programs/lgl.1.D3/bin';
+my $LGLDIR = '/home/claire/lgl.1.D3/bin';
 ```
 
 ##### Input format (.ncol)
@@ -239,7 +239,7 @@ Any type of pairwise data can be quickly formatted for LGL for a quick visual di
 
 ##### Errors I've run across
 
-This error means line 82 in lgl.1.d3/bin/lgl.pl pointing to the perl directory is a location that doesn't exist
+This error means line 82 in lgl.1.d3/bin/lgl.pl that points to the perl directory is a location that doesn't exist
 ```
 cmcwhite@claire:~/Programs/lgl.1.D3$ ./bin/lgl.pl -c conf_file
 Can't locate ParseConfigFile.pm in @INC (you may need to install the ParseConfigFile module) (@INC contains: /home/clare/Programs/lgl.1.D3/perls/ /etc/perl /usr/local/lib/perl/5.18.2 /usr/local/share/perl/5.18.2 /usr/lib/perl5 /usr/share/perl5 /usr/lib/perl/5.18 /usr/share/perl/5.18 /usr/local/lib/site_perl .) at ./bin/lgl.pl line 82.
