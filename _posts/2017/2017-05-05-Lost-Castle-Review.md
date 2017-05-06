@@ -9,7 +9,7 @@ tags:
 - another indie
 - hunter studio
 layout: post
-description: "Mad Fellows and Reverb Triple XP team up to to create an amazing musical, twin-stick experience with Aaero."
+description: "Fight through hoards of cute enemies, die, and repeat in Lost Castle."
 featured: lostcastle.jpg
 author: robk
 ---
