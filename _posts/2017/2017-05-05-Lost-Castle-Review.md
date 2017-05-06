@@ -18,7 +18,7 @@ author: robk
 **Developer:** Hunter Studio\\
 **Publisher:** [Another Indie](http://anotherindie.com/game/lost-castle/)\\
 **Year:** 2016\\
-**Platform:** [Steam](http://store.steampowered.com/app/434650/Lost_Castle/)
+**Platform:** [Steam](http://store.steampowered.com/app/434650/Lost_Castle/)\\
 **MSRP:** [$9.99](http://store.steampowered.com/app/434650/Lost_Castle/)
 
 <h2>Prelude</h2>
