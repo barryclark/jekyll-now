@@ -9,7 +9,7 @@ tags:
   - wingo
 layout: post
 description: "Mothership is a simple game to learn, players take turns moving ships, attacking other players, capturing planets, and managing their economy."
-featured: mothership.png
+featured: mothership.jpg
 author: frankg
 published: true
 ---
