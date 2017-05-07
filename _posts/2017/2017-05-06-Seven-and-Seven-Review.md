@@ -18,7 +18,7 @@ published: true
 **Designers:**  Cory Goff\\
 **Publisher:** [Times Infinity LLC](http://www.timesinfinitygames.com)\\
 **Year:** 2016\\
-**MSRP:** [$17.99](http://www.timesinfinitygames.com)\\
+**MSRP:** [$20](http://www.timesinfinitygames.com)\\
 **Players:** 2-5\\
 **Play Time:** 15-20 minutes\\
 **Ages:** 13+\\
