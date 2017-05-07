@@ -35,10 +35,10 @@ else:
 
 
 abstract = bibdict['abstract'] if 'abstract' in bibdict else ''
-url = bibdict['link'] if 'url' in bibdict else ''
+url = bibdict['link'] if 'link' in bibdict else ''
 volume = bibdict['volume'] if 'volume' in bibdict else ''
 pages = bibdict['pages'] if 'pages' in bibdict else ''
-
+number = bibdict['number'] if 'number' in bibdict else ''
 
 with open('_posts/post_template.md') as tempfile:
 	text = tempfile.read()
@@ -63,6 +63,10 @@ text = text.replace('#ISSUE',volume);
 text = text.replace('#PAGE',pages);
 #abstract
 text = text.replace('#ABSTRACT',abstract);
+#author
+text = text.replace('#AUTHOR',authors);
+#issue number
+text = text.replace('#NUMBER',number);
 
 f = open(writefile,'w')
 f.write(text)

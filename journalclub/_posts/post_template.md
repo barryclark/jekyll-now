@@ -5,7 +5,7 @@ category: journalclub
 olddate: #DATE
 ---
 
-* [Paper](#URL) #AURTHOR. #TITLE, #JOURNAL, #VOLUME,#ISSUE, #PAGE (#YEAR)
+* [Paper](#URL) #AUTHOR. #TITLE, #JOURNAL, #VOLUME(#NUMBER), #PAGE (#YEAR)
 
 * Abstract
 
