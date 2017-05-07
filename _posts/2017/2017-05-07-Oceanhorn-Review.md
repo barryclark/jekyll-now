@@ -13,7 +13,7 @@ featured: oceanhorn.png
 author: robk
 ---
 
-![Oceanhorn](/images/oceanhorn/cover.jpg){: .float-right}
+![Oceanhorn](/images/oceanhorn/cover.png){: .float-right}
 **Developer:** [Cornfox & Bros.](http://www.cornfox.com)\\
 **Publisher:** [Cornfox & Bros.](http://www.cornfox.com)\\
 **Year:** 2015\\
