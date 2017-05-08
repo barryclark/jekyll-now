@@ -8,7 +8,7 @@ You’re working on your civic tech project.  You’ve nailed a [killer idea](ht
 
 There’s a lot of really great definitions out there of what this phrase actually means, but I find the easiest--and often most accurate--can be summed up into one item:
 
-> ## Post-It Notes. 
+## Post-It Notes. 
 
 
 And hundreds of them. Content Strategy is part of the core planning of how to make an idea a project, and a project successful.  It’s like the Google Maps of the project world.  But what does that mean, what are the steps? 
