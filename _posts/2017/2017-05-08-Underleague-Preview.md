@@ -40,7 +40,7 @@ You can check out the full rules [here](https://static1.squarespace.com/static/5
 
 I can't really comment on the the components of the game since what I received was a *very* basic prototype. From what I've seen on the Kickstarter page, the artwork looks amazing. I'll have to hold off judgment here until I received a finished product.
 
-![Underleague Cards](/images/underleague/cards/jpg){: .center}
+![Underleague Cards](/images/underleague/cards.jpg){: .center}
 *The final artwork in the game is absolutely amazing*{: .center}
 
 <h2>Perspective</h2>
