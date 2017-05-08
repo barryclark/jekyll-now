@@ -8,7 +8,7 @@ tags:
   - underleague
   - cogwright games
 layout: post
-description: "Almost a Game slips us a wicked surprise with Wicked Apples, a micro game of bluffing and memory."
+description: "Battle vicious monsters against each other in underground pit fights in Underleague."
 featured: underleague.jpg                                                                                                                                                                                             
 author: robk
 published: true
