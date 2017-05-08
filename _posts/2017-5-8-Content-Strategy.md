@@ -1,7 +1,7 @@
 ---
 author: Aiyani Martin
 layout: post
-title: Content Strategy: As Easy as a Trip to the Aquarium
+title: Content Strategy- As Easy as a Trip to the Aquarium
 ---
 
 You’re working on your civic tech project.  You’ve nailed a [killer idea](http://www.opendatadelaware.com/blog/Workshop-01/) and your [project management](http://www.opendatadelaware.com/blog/Project-Management-for-Civic-Tech/) is solid.  If you want to make sure you’re successful, you need to also make sure that you have an equally solid _Content Strategy Plan_.
