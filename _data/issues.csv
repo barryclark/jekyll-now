@@ -1,4 +1,9 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/3052,227389571,2017-05-09 20:36:35,2017-05-09 14:40:07,#Norcia: messa in sicurezza la facciata di Santa Maria Argentea,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""09/05/2017"", ""descrizione"": ""\""La facciata di Santa Maria Argentea di Norcia \u00e8 totalmente in sicurezza e stiamo completando il consolidamento del muro di sinistra della chiesa. Questo permetter\u00e0 di riaprire via Zara. Un passo decisivo che consentir\u00e0 a delle famiglie di rientrare in un palazzo mai dichiarato inagibile e di collegare Porta Ascolana con piazza San Benedetto e quindi con Porta Romana\"": lo ha annunciato, all'ANSA, Maria Mercalli, soprintendente alle Belle arti dell'Umbria."", ""link"": ""http://www.meteoweb.eu/2017/05/terremoto-norcia-messa-in-sicurezza-la-facciata-di-santa-maria-argentea/899101/"", ""titolo"": ""#Norcia: messa in sicurezza la facciata di Santa Maria Argentea""}","<pre><yamldata>titolo: '#Norcia: messa in sicurezza la facciata di Santa Maria Argentea'
+descrizione: '""La facciata di Santa Maria Argentea di Norcia è totalmente in sicurezza e stiamo completando il consolidamento del muro di sinistra della chiesa. Questo permetterà di riaprire via Zara. Un passo decisivo che consentirà a delle famiglie di rientrare in un palazzo mai dichiarato inagibile e di collegare Porta Ascolana con piazza San Benedetto e quindi con Porta Romana"": lo ha annunciato, all''ANSA, Maria Mercalli, soprintendente alle Belle arti dell''Umbria.'
+link: 'http://www.meteoweb.eu/2017/05/terremoto-norcia-messa-in-sicurezza-la-facciata-di-santa-maria-argentea/899101/'
+data: 09/05/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/3051,227381634,2017-05-09 14:29:49,2017-05-09 14:15:22,Cercasi 1.298 volontari per #serviziocivile nelle 4 regioni terremotate. Scadenza 15/5,,,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""Cercasi 1.298 volontari per #serviziocivile nelle 4 regioni colpite dal sisma. Scadenza bando 15 maggio"", ""data"": ""09/05/2017"", ""descrizione"": ""On line il bando per la selezione di n. 1.298 volontari da avviare nei progetti di servizio civile nazionale che si realizzeranno nelle aree terremotate del centro Italia interessate dagli eventi sismici dell\u2019anno 2016. I volontari selezionati saranno cos\u00ec distribuiti: 163 nella Regione Abruzzo, 279 nella Regione Lazio, 616 nella Regione Marche, 240 nella Regione Umbria. Scadenza delle domande: 15 maggio 2017 (ore 14.00). Al link tutte le informazioni e i moduli necessari per presentare la domanda."", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""http://www.serviziocivile.gov.it/menusx/bandi/selezione-volontari/bandovolsismacentroitalia_2017/"", ""lon"": """", ""tel"": """"}","<pre><yamldata>tel: ''
 email: ''
 cosa: 'Cercasi 1.298 volontari per #serviziocivile nelle 4 regioni colpite dal sisma. Scadenza bando 15 maggio'
@@ -3105,6 +3110,17 @@ indirizzo: 'SR2, Campagnano di Roma, RM, Lazio, 00063, Italia'
 lat: '42.1101087'
 lon: '12.3636369'
 link: 'https://www.facebook.com/events/297164300699237/'
+data: 24/02/2017
+</yamldata></pre>",closed
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2604,210050551,2017-03-18 15:39:41,2017-02-24 13:39:50,Cercasi roulotte #Arquata,,,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""Richiesta di aiuto. Un aiuto per il #popolo dei terremotati"", ""data"": ""24/02/2017"", ""descrizione"": ""Alessandra, terremotata di Arquata, chiede aiuto per una roulotte per lei e sua madre: \u201cnon possiamo permetterci di pagare un affitto\u201d commenta e ringrazia anticipatamente quanti potranno darle una mano a risolvere questo loro grave problema. Per avere il numero diretto contattateci sul nostro cellulare 3472869633 grazie"", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1850769768523939/?comment_id=1850841928516723&notif_t=group_comment_mention&notif_id=1487942809612470"", ""lon"": """", ""tel"": ""3472869633""}","<pre><yamldata>tel: '3472869633'
+email: ''
+cosa: 'Richiesta di aiuto. Un aiuto per il #popolo dei terremotati'
+descrizione: 'Alessandra, terremotata di Arquata, chiede aiuto per una roulotte per lei e sua madre: “non possiamo permetterci di pagare un affitto” commenta e ringrazia anticipatamente quanti potranno darle una mano a risolvere questo loro grave problema. Per avere il numero diretto contattateci sul nostro cellulare 3472869633 grazie'
+indirizzo: ''
+lat: ''
+lon: ''
+link: 'https://www.facebook.com/groups/1758670357733881/permalink/1850769768523939/?comment_id=1850841928516723&notif_t=group_comment_mention&notif_id=1487942809612470'
+immagine: ''
 data: 24/02/2017
 </yamldata></pre>",closed
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2604,210050551,2017-03-18 15:39:41,2017-02-24 13:39:50,Cercasi roulotte #Arquata,,,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""Richiesta di aiuto. Un aiuto per il #popolo dei terremotati"", ""data"": ""24/02/2017"", ""descrizione"": ""Alessandra, terremotata di Arquata, chiede aiuto per una roulotte per lei e sua madre: \u201cnon possiamo permetterci di pagare un affitto\u201d commenta e ringrazia anticipatamente quanti potranno darle una mano a risolvere questo loro grave problema. Per avere il numero diretto contattateci sul nostro cellulare 3472869633 grazie"", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1850769768523939/?comment_id=1850841928516723&notif_t=group_comment_mention&notif_id=1487942809612470"", ""lon"": """", ""tel"": ""3472869633""}","<pre><yamldata>tel: '3472869633'
@@ -17551,18 +17567,6 @@ indirizzo: 'SP20, Casale Zocchi, Amatrice, RI, Lazio, Italy'
 lat: '42.623096787629635'
 lon: '13.319077491760254'
 link: ''
-immagine: ''
-data: 29/08/2016
-</yamldata></pre>
-",closed
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/489,177433223,2016-09-23 22:42:28,2016-09-16 14:01:52,Materiali,42.6292226468363,13.289036750793457,"[""Accettato"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""> Scai (Amatrice, 80 pp): reti e materassi; > Verrico (Montereale, 30 pp): reti e materassi; > frazioni di Montereale (in foto): acqua, perch\u00e9 l\u2019ordinanza del divieto dell\u2019utilizzo di acqua potabile \u00e8 ancora attiva; > Capricchia (Amatrice, 20 pp): legno per chiudere le strutture pre-esistenti della pro loco; > Pescara del Tronto (Arquata del Tronto, ca. 100 pp): ferri, lana, uncinetto, riviste; > Campo Scossa Solidale (SR577, Amatrice): pentolame misura grande, fornelli; > Campo tra Colle e Spelonga (Arquata del Tronto): televisione per anziani.\"""", ""data"": ""29/08/2016"", ""descrizione"": ""MATERIALE DA REPERIRE: Il punto di raccolta, esclusivamente per questo tipo di materiale,\u00e8 presso l\u2019Asilo Occupato in viale Duca degli Abruzzi, L\u2019Aquila"", ""email"": ""info.3e32@gmail.com"", ""immagine"": """", ""indirizzo"": ""Barbiere Giuseppe, Via Roma, Casale Zocchi, Amatrice, RI, Lazio, Italy"", ""lat"": ""42.6292226468363"", ""link"": ""http://www.3e32.org/?p=8993"", ""lon"": ""13.289036750793457"", ""tel"": """"}","<pre><yamldata>tel: ''
-email: info.3e32@gmail.com
-cosa: '> Scai (Amatrice, 80 pp): reti e materassi; > Verrico (Montereale, 30 pp): reti e materassi; > frazioni di Montereale (in foto): acqua, perché l’ordinanza del divieto dell’utilizzo di acqua potabile è ancora attiva; > Capricchia (Amatrice, 20 pp): legno per chiudere le strutture pre-esistenti della pro loco; > Pescara del Tronto (Arquata del Tronto, ca. 100 pp): ferri, lana, uncinetto, riviste; > Campo Scossa Solidale (SR577, Amatrice): pentolame misura grande, fornelli; > Campo tra Colle e Spelonga (Arquata del Tronto): televisione per anziani.""'
-descrizione: 'MATERIALE DA REPERIRE: Il punto di raccolta, esclusivamente per questo tipo di materiale,è presso l’Asilo Occupato in viale Duca degli Abruzzi, L’Aquila'
-indirizzo: 'Barbiere Giuseppe, Via Roma, Casale Zocchi, Amatrice, RI, Lazio, Italy'
-lat: '42.6292226468363'
-lon: '13.289036750793457'
-link: 'http://www.3e32.org/?p=8993'
 immagine: ''
 data: 29/08/2016
 </yamldata></pre>
