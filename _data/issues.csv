@@ -1,4 +1,48 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/3047,227364300,2017-05-09 14:22:34,2017-05-09 13:19:48,ILLUMINAMATRICE,42.6292367,13.2891755,"[""Accettato"", ""Eventi"", ""Form""]",,,"{""data"": ""09/05/2017"", ""data_evento"": ""08/12/2017"", ""descrizione"": ""Per non spegnere i riflettori-ARTISTI&MUSICA PER AMATRICE-Concerti,video,laboratori,performance,proposte.Per guardare,capire,immaginare,riprogettare.In collaborazione con l'associazione AMATRICE 2.0-A cura di Antonino Barresi."", ""indirizzo"": ""Piazza Cacciatori del Tevere, Casalene, Amatrice, RI, LAZ, 02012, Italia"", ""lat"": ""42.6292367"", ""link"": ""https://www.facebook.com/villaggioloscoiattolo/posts/816628258487977"", ""lon"": ""13.2891755"", ""ora_evento"": """", ""promotore"": ""l'associazione AMATRICE 2.0"", ""titolo_evento"": ""ILLUMINAMATRICE""}","<pre><yamldata>titolo_evento: ILLUMINAMATRICE
+data_evento: 08/12/2017
+ora_evento: ''
+promotore: 'l''associazione AMATRICE 2.0'
+descrizione: 'Per non spegnere i riflettori-ARTISTI&MUSICA PER AMATRICE-Concerti,video,laboratori,performance,proposte.Per guardare,capire,immaginare,riprogettare.In collaborazione con l''associazione AMATRICE 2.0-A cura di Antonino Barresi.'
+indirizzo: 'Piazza Cacciatori del Tevere, Casalene, Amatrice, RI, LAZ, 02012, Italia'
+lat: '42.6292367'
+lon: '13.2891755'
+link: 'https://www.facebook.com/villaggioloscoiattolo/posts/816628258487977'
+data: 09/05/2017
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/3043,227362838,2017-05-09 14:21:25,2017-05-09 13:14:33,SCENA APERTA. Rassegna di teatro per Amatrice,42.6292367,13.2891755,"[""Accettato"", ""Eventi"", ""Form""]",,,"{""data"": ""09/05/2017"", ""data_evento"": ""01/01/1970"", ""descrizione"": ""Dal Palco al Cuore- -Rassegna di Teatro-a cura di Alessandro Loi."", ""indirizzo"": ""Piazza Cacciatori del Tevere, Casalene, Amatrice, RI, LAZ, 02012, Italia"", ""lat"": ""42.6292367"", ""link"": ""https://www.facebook.com/villaggioloscoiattolo/posts/816628258487977"", ""lon"": ""13.2891755"", ""ora_evento"": """", ""promotore"": ""Alessandro Loi"", ""titolo_evento"": ""SCENA APERTA""}","<pre><yamldata>titolo_evento: 'SCENA APERTA'
+data_evento: 01/01/1970
+ora_evento: ''
+promotore: 'Alessandro Loi'
+descrizione: 'Dal Palco al Cuore- -Rassegna di Teatro-a cura di Alessandro Loi.'
+indirizzo: 'Piazza Cacciatori del Tevere, Casalene, Amatrice, RI, LAZ, 02012, Italia'
+lat: '42.6292367'
+lon: '13.2891755'
+link: 'https://www.facebook.com/villaggioloscoiattolo/posts/816628258487977'
+data: 09/05/2017
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/3042,227360537,2017-05-09 14:20:45,2017-05-09 13:06:51,AMATRICE IN CINEMA,42.6292367,13.2891755,"[""Accettato"", ""Eventi"", ""Form""]",,,"{""data"": ""09/05/2017"", ""data_evento"": ""01/01/1970"", ""descrizione"": ""Prima Rassegna di docufilm con proiezioni e dibattiti.A cura di Massimo Saccares."", ""indirizzo"": ""Piazza Cacciatori del Tevere, Casalene, Amatrice, RI, LAZ, 02012, Italia"", ""lat"": ""42.6292367"", ""link"": ""https://www.facebook.com/villaggioloscoiattolo/posts/816628258487977"", ""lon"": ""13.2891755"", ""ora_evento"": """", ""promotore"": ""Massimo Saccares"", ""titolo_evento"": ""AMATRICE IN CINEMA""}","<pre><yamldata>titolo_evento: 'AMATRICE IN CINEMA'
+data_evento: 01/01/1970
+ora_evento: ''
+promotore: 'Massimo Saccares'
+descrizione: 'Prima Rassegna di docufilm con proiezioni e dibattiti.A cura di Massimo Saccares.'
+indirizzo: 'Piazza Cacciatori del Tevere, Casalene, Amatrice, RI, LAZ, 02012, Italia'
+lat: '42.6292367'
+lon: '13.2891755'
+link: 'https://www.facebook.com/villaggioloscoiattolo/posts/816628258487977'
+data: 09/05/2017
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/3041,227360037,2017-05-09 14:20:35,2017-05-09 13:05:08,CUM GRANO SALIS. Meeting di arte contemporanea per ricostruire Amatrice,42.6292367,13.2891755,"[""Accettato"", ""Eventi"", ""Form""]",,,"{""data"": ""09/05/2017"", ""data_evento"": ""06/10/2017"", ""descrizione"": ""Meeting di Arte Contemporanea con la partecipazione di gallerie,artisti,curatori,collezionisti e le cartiere di Fabriano.L'evento ha lo scopo di raccogliere fondi ed opere per ricostituire il centro culturale.A cura dell'Associazione Arte Picena."", ""indirizzo"": ""Piazza Cacciatori del Tevere, Casalene, Amatrice, RI, LAZ, 02012, Italia"", ""lat"": ""42.6292367"", ""link"": ""https://www.facebook.com/villaggioloscoiattolo/posts/816628258487977"", ""lon"": ""13.2891755"", ""ora_evento"": """", ""promotore"": ""Associazione Arte Picena"", ""titolo_evento"": ""CUM GRANO SALIS""}","<pre><yamldata>titolo_evento: 'CUM GRANO SALIS'
+data_evento: 06/10/2017
+ora_evento: ''
+promotore: 'Associazione Arte Picena'
+descrizione: 'Meeting di Arte Contemporanea con la partecipazione di gallerie,artisti,curatori,collezionisti e le cartiere di Fabriano.L''evento ha lo scopo di raccogliere fondi ed opere per ricostituire il centro culturale.A cura dell''Associazione Arte Picena.'
+indirizzo: 'Piazza Cacciatori del Tevere, Casalene, Amatrice, RI, LAZ, 02012, Italia'
+lat: '42.6292367'
+lon: '13.2891755'
+link: 'https://www.facebook.com/villaggioloscoiattolo/posts/816628258487977'
+data: 09/05/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/3040,227357254,2017-05-09 14:19:15,2017-05-09 12:56:25,A Rieti ForMaggio 2017 per le aziende agricole colpite dal sisma,42.4016906,12.8629993,"[""Accettato"", ""Eventi"", ""Form""]",,,"{""data"": ""09/05/2017"", ""data_evento"": ""05/12/2017"", ""descrizione"": ""La quinta edizione di ForMaggio 2017 avr\u00e0 uno spazio dedicato alle aziende agricole del Centro Italia colpite dal sisma."", ""indirizzo"": ""Via Pellicceria, Centro storico, Borgo, Rieti, RI, LAZ, 02100, Italia"", ""lat"": ""42.4016906"", ""link"": ""https://www.facebook.com/eventirieti/photos/a.876239125723414.1073741828.824772234203437/1684096788270973/?type=3&theater"", ""lon"": ""12.8629993"", ""ora_evento"": """", ""promotore"": ""Associazione Culturale GI.GA.GI"", ""titolo_evento"": ""ForMaggio""}","<pre><yamldata>titolo_evento: ForMaggio
 data_evento: 05/12/2017
 ora_evento: ''
@@ -4338,6 +4382,17 @@ link: ''
 immagine: ''
 data: 06/02/2017
 </yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2401,205531320,2017-02-06 21:15:00,2017-02-06 09:44:07,Offresi vestiario invernale,,,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Form""]",,,"{""cosa"": ""Raccolta vestiario invernale"", ""data"": ""06/02/2017"", ""descrizione"": ""Guanti, maglioni, giacche di varie taglie, cappelli: gruppo di amiche nel Lazio ha raccolto vestiario invernale e vorrebbe darlo a chi ne necessita."", ""email"": ""puritana@hotmail.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3284152219""}","<pre><yamldata>tel: '3284152219'
+email: puritana@hotmail.it
+cosa: 'Raccolta vestiario invernale'
+descrizione: 'Guanti, maglioni, giacche di varie taglie, cappelli: gruppo di amiche nel Lazio ha raccolto vestiario invernale e vorrebbe darlo a chi ne necessita.'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 06/02/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2400,205521098,2017-02-06 21:13:39,2017-02-06 08:54:42,Agriturismo in provincia di Brescia offre appartamenti gratuiti fino a maggio,,,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""06/02/2017"", ""descrizione"": ""Buongiorno, ho avuto il Vostro riferimento tramite il Trio Medusa e Vi segnalo con grande piacere questa opportunit\u00e0. L'Agriturismo Villa Gradoni in Franciacorta (Brescia) (www.villafranciacorta.it) mette a disposizione 20 appartamenti, gratuitamente, da oggi e fino a maggio, per le famiglie cos\u00ec duramente colpite dal terremoto e dagli eventi atmosferici degli ultimi mesi, credo sia un'ottima opportunit\u00e0 per concedere loro qualche giono di svago, anche psicologico in una struttura accogliente che potrete vedere sul sito. Si tratta di 10 bilocali (per 4 persone) e 10 trilocali (per 6 persone) completamente arredati e corredati: per l'utilizzo \u00e8 richiesto solo un preavviso di un paio di giorni per l'accensione del riscaldamento. Resto a disposizione per qualsiasi ulteriore chiarimento e/o informazione. Cordiali saluti. Augusta Bianchetti"", ""email"": ""augusta.casa@libero.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""http://www.villafranciacorta.it"", ""lon"": """", ""tel"": ""3497895696""}","<pre><yamldata>tel: '3497895696'
 email: augusta.casa@libero.it
 descrizione: 'Buongiorno, ho avuto il Vostro riferimento tramite il Trio Medusa e Vi segnalo con grande piacere questa opportunità. L''Agriturismo Villa Gradoni in Franciacorta (Brescia) (www.villafranciacorta.it) mette a disposizione 20 appartamenti, gratuitamente, da oggi e fino a maggio, per le famiglie così duramente colpite dal terremoto e dagli eventi atmosferici degli ultimi mesi, credo sia un''ottima opportunità per concedere loro qualche giono di svago, anche psicologico in una struttura accogliente che potrete vedere sul sito. Si tratta di 10 bilocali (per 4 persone) e 10 trilocali (per 6 persone) completamente arredati e corredati: per l''utilizzo è richiesto solo un preavviso di un paio di giorni per l''accensione del riscaldamento. Resto a disposizione per qualsiasi ulteriore chiarimento e/o informazione. Cordiali saluti. Augusta Bianchetti'
@@ -5337,16 +5392,6 @@ link: ''
 immagine: ''
 data: 24/01/2017
 </yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2245,202688678,2017-01-24 07:15:52,2017-01-24 00:10:38,"Offriamo ospitalità a terremotati, anche con cane o altro animale",44.900542,8.2068876,"[""Accettato"", ""Alloggi"", ""Form"", ""Ospitalita animali"", ""Sisma Gennaio 2017""]",,,"{""data"": ""24/01/2017"", ""descrizione"": ""Offriamo ospitalit\u00e0 a terremotati che si trovano in condizioni disperate almeno fino a quando non passa il freddo. Abbiamo anche un cortile dove potrebbe stare qualche cane o altro animale"", ""email"": """", ""immagine"": """", ""indirizzo"": ""Piazza Vittorio Alfieri, Asti, AT, Piemonte, 14100, Italia"", ""lat"": ""44.900542"", ""link"": """", ""lon"": ""8.2068876"", ""tel"": ""349552757""}","<pre><yamldata>tel: '349552757'
-email: ''
-descrizione: 'Offriamo ospitalità a terremotati che si trovano in condizioni disperate almeno fino a quando non passa il freddo. Abbiamo anche un cortile dove potrebbe stare qualche cane o altro animale'
-indirizzo: 'Piazza Vittorio Alfieri, Asti, AT, Piemonte, 14100, Italia'
-lat: '44.900542'
-lon: '8.2068876'
-link: ''
-immagine: ''
-data: 24/01/2017
-</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2244,202678202,2017-01-29 14:57:14,2017-01-23 23:09:16,"Roma, 28 gennaio - Raccolta beni di prima necessità",41.8935085,12.4825526,"[""Accettato"", ""Fabbisogni"", ""Facebook"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""Roma, 28 gennaio - Raccolta beni di prima necessit\u00e0"", ""data"": ""23/01/2017"", ""descrizione"": ""Sabato 28/01 - ROMA. Per la seconda spedizione organizzeremo dei punti di raccolta viveri e beni di prima necessit\u00e0 per le zone dei terremotati che verranno trasportare dalla MMA AUTOSERVIZI il 29/01. Ore: 10-16 supermercato cts via Cassia 340. Ore 10-12 Giada Spuntarelli. Ore 12-14 Allegra Dollfus DV. Ore 14-16 Lilli Giorgi. Ore 10-16 parrucchiere AIT via Cortina d'ampezzo 333 Sabrina Schiavello. Ore 14-16 garage MMA via Mazzano romano 27 Alessio Campoli, Gianluca Bellatreccia. Ore 11-14 Stallo VIA bafile 1 Federica Gregori."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Cordonata, Municipio Roma I, Roma, RM, LAZ, 00186, Italia"", ""lat"": ""41.8935085"", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1833267906940792/"", ""lon"": ""12.4825526"", ""tel"": """"}","<pre><yamldata>tel: ''
 email: ''
 cosa: 'Roma, 28 gennaio - Raccolta beni di prima necessità'
@@ -5917,6 +5962,17 @@ link: 'http://www.ilrestodelcarlino.it/macerata/cronaca/terremoto-oggi-allevator
 immagine: ''
 data: 21/01/2017
 </yamldata></pre>",closed
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2173,202330786,2017-02-04 14:18:13,2017-01-21 18:11:57,**URGENTE** Civitella isolata senza elettricità nè telefoni,42.7725608,13.665180439868,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Facebook"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""**URGENTE** Civitella isolata senza elettricit\u00e0 n\u00e8 telefoni"", ""data"": ""21/01/2017"", ""descrizione"": ""Nel comprensorio di Civitella del Tronto \u00e8 caduta tantissima neve con accumuli fino a DUE METRI. E' totalmente assente la corrente elettrica da 5 giorni, non ci sono riscaldamenti, acqua e le linee telefoniche fisse. I cellulari vanno a singhiozzo quando \u00e8 possibile ricaricarli altrove. La situazione igienico-sanitaria \u00e8 al collasso. E' indispensabile l'intervento di mezzi idonei per la rimozione della neve. Moltissime frazioni sono ancora isolate. Per aiuti contattare il sindaco Cristina Di Pietro 3286827420"", ""email"": """", ""immagine"": """", ""indirizzo"": ""Viale della Battaglia di Bosco Martese, Civitella del Tronto, TE, Abruzzo, 64016, Italy"", ""lat"": ""42.7725608"", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1832212263713023/?match=dGVycmVtb3RvY2VudHJvaXRhbGlhLGNpdml0ZWxsYQ%3D%3D"", ""lon"": ""13.665180439868"", ""tel"": ""Sindaco Cristina Di Pietro 3286827420""}","<pre><yamldata>tel: 'Sindaco Cristina Di Pietro 3286827420'
+email: ''
+cosa: '**URGENTE** Civitella isolata senza elettricità nè telefoni'
+descrizione: 'Nel comprensorio di Civitella del Tronto è caduta tantissima neve con accumuli fino a DUE METRI. E'' totalmente assente la corrente elettrica da 5 giorni, non ci sono riscaldamenti, acqua e le linee telefoniche fisse. I cellulari vanno a singhiozzo quando è possibile ricaricarli altrove. La situazione igienico-sanitaria è al collasso. E'' indispensabile l''intervento di mezzi idonei per la rimozione della neve. Moltissime frazioni sono ancora isolate. Per aiuti contattare il sindaco Cristina Di Pietro 3286827420'
+indirizzo: 'Viale della Battaglia di Bosco Martese, Civitella del Tronto, TE, Abruzzo, 64016, Italy'
+lat: '42.7725608'
+lon: '13.665180439868'
+link: 'https://www.facebook.com/groups/1758670357733881/permalink/1832212263713023/?match=dGVycmVtb3RvY2VudHJvaXRhbGlhLGNpdml0ZWxsYQ%3D%3D'
+immagine: ''
+data: 21/01/2017
+</yamldata></pre>",closed
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2171,202329676,2017-01-21 19:31:56,2017-01-21 17:52:40,Hotel a Ortisei (Tn) offre soggiorni gratuiti ai terremotati,46.5904618,11.6845571547486,"[""Accettato"", ""Alloggi"", ""Bollettino"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""21/01/2017"", ""descrizione"": ""Offresi soggiorni in hotel a Ortisei, Trentino. Hotel Luna Mondschein**** di Ortisei offre soggiorni gratis per i terremotati di Amatrice e le zone colpite dal terremoto in gravi difficolt\u00e1. Strada Purger 81, Ortisei Richieste a info@hotel-luna.com"", ""email"": ""info@hotel-luna.com"", ""immagine"": """", ""indirizzo"": ""Streda Cuca, Ortisei, Salto-Sciliar, South Tyrol, Trentino-Alto Adige/S\u00fcdtirol, 39046, Italy"", ""lat"": ""46.5904618"", ""link"": ""https://www.facebook.com/pg/HotelLunaMondschein/about/?ref=page_internal"", ""lon"": ""11.6845571547486"", ""tel"": ""0471 796214""}","<pre><yamldata>tel: '0471 796214'
 email: info@hotel-luna.com
 descrizione: 'Offresi soggiorni in hotel a Ortisei, Trentino. Hotel Luna Mondschein**** di Ortisei offre soggiorni gratis per i terremotati di Amatrice e le zone colpite dal terremoto in gravi difficoltá. Strada Purger 81, Ortisei Richieste a info@hotel-luna.com'
@@ -6195,16 +6251,6 @@ indirizzo: 'Strada del Vivaro, Rocca di Papa, RM, LAZ, Italia'
 lat: '41.7454282'
 lon: '12.7805838'
 link: 'https://www.facebook.com/centroequestreranieridicampello/posts/381831005513478'
-immagine: ''
-data: 21/01/2017
-</yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2137,202308617,2017-01-21 11:08:57,2017-01-21 10:53:01,"Offresi alloggio per famiglia, terreno e stalla a Ponzano Romano",42.2577967,12.5716266,"[""Accettato"", ""Alloggi"", ""Bollettino"", ""Form"", ""Ospitalita animali"", ""Sisma Gennaio 2017""]",,,"{""data"": ""21/01/2017"", ""descrizione"": ""A Ponzano Romano (Rm) posso ospitare famiglia di quattro persone mettendo a disposizione due camere, ognuna con letto matrimoniale e bagno indipendente. Possibilit\u00e0 di utilizzare stalla in grado di ospitare max cinque ovini ( oltre ai miei) in terreno di 2 ettari completamente recintato in regime di fondo chiuso."", ""email"": ""dr.pepperesci@tiscali.it"", ""immagine"": """", ""indirizzo"": ""Autostrada del Sole, Ponzano Romano, RM, Lazio, Italia"", ""lat"": ""42.2577967"", ""link"": """", ""lon"": ""12.5716266"", ""tel"": ""3202169802 - 0765338244""}","<pre><yamldata>tel: '3202169802 - 0765338244'
-email: dr.pepperesci@tiscali.it
-descrizione: 'A Ponzano Romano (Rm) posso ospitare famiglia di quattro persone mettendo a disposizione due camere, ognuna con letto matrimoniale e bagno indipendente. Possibilità di utilizzare stalla in grado di ospitare max cinque ovini ( oltre ai miei) in terreno di 2 ettari completamente recintato in regime di fondo chiuso.'
-indirizzo: 'Autostrada del Sole, Ponzano Romano, RM, Lazio, Italia'
-lat: '42.2577967'
-lon: '12.5716266'
-link: ''
 immagine: ''
 data: 21/01/2017
 </yamldata></pre>",open
@@ -7708,16 +7754,6 @@ descrizione: 'Offro alloggio per stallo in maneggio, paddock per cavalli e o asi
 indirizzo: 'Via Pietra a Padule, La Casetta, Massarosa, LU, Tuscany, 55050, Italia'
 lat: '43.8367688'
 lon: '10.3585443'
-link: ''
-immagine: ''
-data: 19/01/2017
-</yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1969,201992068,2017-01-19 22:21:25,2017-01-19 22:18:12,Condividiamo volentieri la nostra casa in provincia di Trento,46.0603525,11.2405019,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""19/01/2017"", ""descrizione"": ""Condividiamo volentieri la nostra casa con una famiglia! Siamo in Provincia di Trento"", ""email"": ""serenaserina@yahoo.it"", ""immagine"": """", ""indirizzo"": ""Piazza del Municipio, Pergine Valsugana, Comunit\u00e0 Alta Valsugana e Bersntol, TN, Trentino-Alto Adige/S\u00fcdtirol, 38057, Italy"", ""lat"": ""46.0603525"", ""link"": """", ""lon"": ""11.2405019"", ""tel"": ""3207736493""}","<pre><yamldata>tel: '3207736493'
-email: serenaserina@yahoo.it
-descrizione: 'Condividiamo volentieri la nostra casa con una famiglia! Siamo in Provincia di Trento'
-indirizzo: 'Piazza del Municipio, Pergine Valsugana, Comunità Alta Valsugana e Bersntol, TN, Trentino-Alto Adige/Südtirol, 38057, Italy'
-lat: '46.0603525'
-lon: '11.2405019'
 link: ''
 immagine: ''
 data: 19/01/2017
@@ -14801,12 +14837,6 @@ link: 'https://www.facebook.com/events/513899795484942/'
 data: 25/10/2016
 </yamldata></pre>
 ",closed
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/839,185163085,2016-11-25 23:29:32,2016-10-25 16:08:52,AMATRICE REGENERATION: a Passignano sul Trasimeno incontri di formazione e coprogettazione,,,"[""Accettato"", ""Form"", ""Notizie Utili""]",Milestone(number=27),,"{""data"": ""25/10/2016"", ""descrizione"": ""18-19-20 Novembre 2016 - Panta Rei - Passignano sul Trasimeno (PG) 3 giorni di formazione in metodologie e strumenti per interventi di sostegno psico-sociale e cura del territorio. Metodologie e strumenti: Teatro dell\u2019oppresso / teatro sociale. Prendersi cura di persone, edifici e territorio. Formazione esperienziale. L\u2019incontro \u00e8 residenziale, sar\u00e0 possibile pernottare presso il Centro Panta Rei. Contributo: 60\u20ac/persona per la formazione + 100\u20ac per vitto e alloggio. 20 posti gratuiti per chi proviene da Amatrice e altri Comuni colpiti dal sisma. 21-22 Novembre 2016 - Panta Rei - Passignano sul Trasimeno (PG) 2 giorni di co-progettazione - Incontro in Open Space - Con quali progetti possiamo sostenere le comunit\u00e0 locali nel territorio colpito dal sisma? - Metodologie e strumenti: Gestione di gruppi / Open Space Technology Formazione esperienziale. L\u2019incontro \u00e8 residenziale, sar\u00e0 possibile pernottare presso il centro Panta Rei. Contributo: 40\u20ac/persona per la formazione + 50\u20ac per vitto e alloggio. 20 posti gratuiti per chi proviene da Amatrice e altri Comuni colpiti dal sisma. I costi proposti servono a coprire il lavoro dei formatori, l\u2019organizzazione dell\u2019evento e le spese, non vogliono essere una barriera alla partecipazione, se avete esigenze diverse contattateci. Come partecipare: \u00e8 possibile iscriversi a uno o entrambi i moduli. Comunicate il vostro interesse sul modulo di iscrizione online goo.gl/forms/A0eiz1AfGUwS54V83 o contattandoci direttamente Modulo di iscrizione: goo.gl/forms/A0eiz1AfGUwS54V83"", ""link"": ""https://www.facebook.com/events/513899795484942/"", ""titolo"": ""AMATRICE REGENERATION: FORMAZIONE E COPROGETTAZIONE""}","<pre><yamldata>titolo: 'AMATRICE REGENERATION: FORMAZIONE E COPROGETTAZIONE'
-descrizione: '18-19-20 Novembre 2016 - Panta Rei - Passignano sul Trasimeno (PG) 3 giorni di formazione in metodologie e strumenti per interventi di sostegno psico-sociale e cura del territorio. Metodologie e strumenti: Teatro dell’oppresso / teatro sociale. Prendersi cura di persone, edifici e territorio. Formazione esperienziale. L’incontro è residenziale, sarà possibile pernottare presso il Centro Panta Rei. Contributo: 60€/persona per la formazione + 100€ per vitto e alloggio. 20 posti gratuiti per chi proviene da Amatrice e altri Comuni colpiti dal sisma. 21-22 Novembre 2016 - Panta Rei - Passignano sul Trasimeno (PG) 2 giorni di co-progettazione - Incontro in Open Space - Con quali progetti possiamo sostenere le comunità locali nel territorio colpito dal sisma? - Metodologie e strumenti: Gestione di gruppi / Open Space Technology Formazione esperienziale. L’incontro è residenziale, sarà possibile pernottare presso il centro Panta Rei. Contributo: 40€/persona per la formazione + 50€ per vitto e alloggio. 20 posti gratuiti per chi proviene da Amatrice e altri Comuni colpiti dal sisma. I costi proposti servono a coprire il lavoro dei formatori, l’organizzazione dell’evento e le spese, non vogliono essere una barriera alla partecipazione, se avete esigenze diverse contattateci. Come partecipare: è possibile iscriversi a uno o entrambi i moduli. Comunicate il vostro interesse sul modulo di iscrizione online goo.gl/forms/A0eiz1AfGUwS54V83 o contattandoci direttamente Modulo di iscrizione: goo.gl/forms/A0eiz1AfGUwS54V83'
-link: 'https://www.facebook.com/events/513899795484942/'
-data: 25/10/2016
-</yamldata></pre>
-",closed
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/838,184904784,2016-10-24 17:31:13,2016-10-24 17:30:49,"Terremoto, donano quasi 3 italiani su 4. L'indagine di Coldiretti a due mesi dal sisma",,,"[""Accettato"", ""Bollettino"", ""Notizie Utili"", ""Twitter""]",,,"{""data"": ""24/10/2016"", ""descrizione"": ""Nei due mesi trascorsi dal terremoto in Centro Italia, quasi tre italiani su quattro (74%) hanno partecipato ad iniziative di solidariet\u00e0. \u00c8 quanto emerge da una analisi Coldiretti/Ix\u00e8. Ben il 42% degli italiani ha effettuato donazioni con SMS o su conto corrente, il 19% tramite associazioni e ben il 13% mangiando l\u2019amatriciana nei luoghi che hanno aderito all\u2019iniziativa di sostegno che si \u00e8 estesa anche all\u2019estero."", ""link"": ""http://www.corrierenazionale.it/2016/10/24/terremoto-donazioni-italiani/"", ""titolo"": ""Terremoto, donano quasi 3 italiani su 4. L'indagine di Coldiretti a due mesi dal sisma""}","<pre><yamldata>titolo: 'Terremoto, donano quasi 3 italiani su 4. L''indagine di Coldiretti a due mesi dal sisma'
 descrizione: 'Nei due mesi trascorsi dal terremoto in Centro Italia, quasi tre italiani su quattro (74%) hanno partecipato ad iniziative di solidarietà. È quanto emerge da una analisi Coldiretti/Ixè. Ben il 42% degli italiani ha effettuato donazioni con SMS o su conto corrente, il 19% tramite associazioni e ben il 13% mangiando l’amatriciana nei luoghi che hanno aderito all’iniziativa di sostegno che si è estesa anche all’estero.'
 link: 'http://www.corrierenazionale.it/2016/10/24/terremoto-donazioni-italiani/'
@@ -19908,18 +19938,6 @@ indirizzo: ''
 lat: 42.63289
 lon: 13.28937
 link: 'https://www.facebook.com/terremotocentroitalia/posts/1365045246858821'
-immagine: ''
-data: 14/09/2016
-</yamldata></pre>
-",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/231,176837511,2016-09-20 13:46:52,2016-09-14 07:44:17,"Associazione Toponomastica femminile, IC Mar dei Caraibi di Ostia e Società Gedshop",41.73055,12.30268,"[""Accettato"", ""Donazioni"", ""Form""]",,,"{""cosa"": ""Associazione Toponomastica femminile, IC Mar dei Caraibi di Ostia e Soc. Gedshop"", ""data"": ""14/09/2016"", ""descrizione"": ""Offerta di materiale didattico e borse per studenti e alunni scuole di Accumoli e Amatrice."", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": ""41.73055"", ""link"": ""https://www.facebook.com/mpercolini/posts/10208058376356845?pnref=story"", ""lon"": ""12.30268"", ""tel"": """"}","<pre><yamldata>tel: ''
-email: ''
-cosa: 'Associazione Toponomastica femminile, IC Mar dei Caraibi di Ostia e Soc. Gedshop'
-descrizione: 'Offerta di materiale didattico e borse per studenti e alunni scuole di Accumoli e Amatrice.'
-indirizzo: ''
-lat: '41.73055'
-lon: '12.30268'
-link: 'https://www.facebook.com/mpercolini/posts/10208058376356845?pnref=story'
 immagine: ''
 data: 14/09/2016
 </yamldata></pre>
