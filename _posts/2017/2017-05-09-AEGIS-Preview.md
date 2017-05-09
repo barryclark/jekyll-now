@@ -6,7 +6,6 @@ tags:
   - preview
   - games
   - aegis
-  - greenbrier games
   - zephyr workshop
 layout: post
 description: "Combinging robots battle it out in A.E.G.I.S., now on Kickstarter."
@@ -16,8 +15,8 @@ published: true
 ---
 
 <iframe style="float:right" src="https://www.kickstarter.com/projects/24259463/aegis-super-combining-robot-tactics/widget/card.html?v=2" width="220" height="420" frameborder="0" scrolling="no"></iframe>
-**Designers:**  Jesse Clark, Sarah Como, Breeze Grigas, Ryan Richford, Tom Wozencraft  \\
-**Publisher:** [Greenbrier Games](http://www.greenbriergames.com/main/)\\
+**Designers:**  Jesse Clark, Sarah Como, Breeze Grigas, Ryan Richford, Zach Kettell\\
+**Publisher:** [Zephyr Workshop](http://zephyrworkshop.com)\\
 **Year:** 2017\\
 **Minimum Pledge:** [$49](https://www.kickstarter.com/projects/24259463/aegis-super-combining-robot-tactics)\\
 **Players:** 2-4\\
@@ -30,7 +29,7 @@ published: true
 
 Do combat robots excite you? How about robots that *combine*? How about robots that combine in *multiple ways*? A.E.G.I.S. has you covered on all fronts. Command a squad of five robots of varying classes, Assault, Evasive, Guard, Intel, and Support, to crush your foes. Combine 2 or more robots to create powerful robots with the best of their combined classes for even more battlefield advantage.
 
-Greenbrier Games and Zephyr Workshop have launched A.E.G.I.S.: Combining Robot Strategy Game on Kickstarter for a price that won't cost an arm and a leg, but will let you combine robots to form them.
+Zephyr Workshop have launched A.E.G.I.S.: Combining Robot Strategy Game on Kickstarter for a price that won't cost an arm and a leg, but will let you combine robots to form them.
 
 <h2>Play</h2>
 
@@ -52,7 +51,7 @@ While the copy of A.E.G.I.S. I received was a prototype, much of the final artwo
 
 I first had the opportunity to play A.E.G.I.S. around three years ago when they first starting creating prototypes. I enjoyed the game then, and was sad to see it never got the release it deserved. Then Zephyr Workshop teamed up with Greenbrier Games, drastically overhauled the art and mechanics, and really put the pedal to the metal hyping the game and getting it ready for Kickstarter. Unfortunately, the original campaign didn't fund due to several factors like a high price point, confusing entry (multiple starter sets), and lack of essential materials (no AEGIS-Class robots in starter sets).
 
-The latest campaign fixes all those issues with a single, clear product, tons of content, and a much friendly price point of around $50. Everything needed for 4 players to enjoy the game is included:
+The latest campaign, now indie again, fixes all those issues with a single, clear product, tons of content, and a much friendly price point of around $50. Everything needed for 4 players to enjoy the game is included:
 
 * 40 Robots (cards/standees)
 * 12 Terrain Tiles
