@@ -29,7 +29,7 @@ published: true
 
 Do combat robots excite you? How about robots that *combine*? How about robots that combine in *multiple ways*? A.E.G.I.S. has you covered on all fronts. Command a squad of five robots of varying classes, Assault, Evasive, Guard, Intel, and Support, to crush your foes. Combine 2 or more robots to create powerful robots with the best of their combined classes for even more battlefield advantage.
 
-Zephyr Workshop have launched A.E.G.I.S.: Combining Robot Strategy Game on Kickstarter for a price that won't cost an arm and a leg, but will let you combine robots to form them.
+Zephyr Workshop has just launched A.E.G.I.S.: Combining Robot Strategy Game on Kickstarter for a price that won't cost an arm and a leg, but will let you combine robots to form them.
 
 <h2>Play</h2>
 
