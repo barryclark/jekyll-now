@@ -9,7 +9,7 @@ tags:
   - cassie’s curiosities
 layout: post
 description: "Cassie is based out of Watertown, New York and specializes in a number of handmade gaming and cosplay items."
-featured: cassie.jpg
+featured: cassie.png
 author: frankg
 published: true
 ---
