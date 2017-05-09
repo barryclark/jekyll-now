@@ -1,4 +1,35 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/3040,227357254,2017-05-09 14:19:15,2017-05-09 12:56:25,A Rieti ForMaggio 2017 per le aziende agricole colpite dal sisma,42.4016906,12.8629993,"[""Accettato"", ""Eventi"", ""Form""]",,,"{""data"": ""09/05/2017"", ""data_evento"": ""05/12/2017"", ""descrizione"": ""La quinta edizione di ForMaggio 2017 avr\u00e0 uno spazio dedicato alle aziende agricole del Centro Italia colpite dal sisma."", ""indirizzo"": ""Via Pellicceria, Centro storico, Borgo, Rieti, RI, LAZ, 02100, Italia"", ""lat"": ""42.4016906"", ""link"": ""https://www.facebook.com/eventirieti/photos/a.876239125723414.1073741828.824772234203437/1684096788270973/?type=3&theater"", ""lon"": ""12.8629993"", ""ora_evento"": """", ""promotore"": ""Associazione Culturale GI.GA.GI"", ""titolo_evento"": ""ForMaggio""}","<pre><yamldata>titolo_evento: ForMaggio
+data_evento: 05/12/2017
+ora_evento: ''
+promotore: 'Associazione Culturale GI.GA.GI'
+descrizione: 'La quinta edizione di ForMaggio 2017 avrà uno spazio dedicato alle aziende agricole del Centro Italia colpite dal sisma.'
+indirizzo: 'Via Pellicceria, Centro storico, Borgo, Rieti, RI, LAZ, 02100, Italia'
+lat: '42.4016906'
+lon: '12.8629993'
+link: 'https://www.facebook.com/eventirieti/photos/a.876239125723414.1073741828.824772234203437/1684096788270973/?type=3&theater'
+data: 09/05/2017
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/3039,227355661,2017-05-09 14:18:23,2017-05-09 12:51:11,"#Norcia, fissato per il 15 maggio il termine per la richiesta Sae",,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""09/05/2017"", ""descrizione"": ""Si avvia a conclusione l\u2019individuazione delle aree per le Soluzioni Abitative d\u2019 Emergenza a Norcia. A tal proposito si fanno sempre pi\u00f9 serrate le scadenze ed il Comune, dovendo procedere alla chiusura del dimensionamento delle aree per la posa in opera delle SAE, pone il termine ultimo del 15 maggio p.v. per la presentazione delle richieste per le stesse. La richiesta di SAE pu\u00f2 essere fatta allegando la scheda AeDes, a seguito della scheda Fast."", ""link"": ""http://www.umbriadomani.it/umbria-in-pillole/norcia-fissato-per-il-15-maggio-il-termine-per-la-richiesta-sae-144553/"", ""titolo"": ""#Norcia, fissato per il 15 maggio il termine per la richiesta Sae""}","<pre><yamldata>titolo: '#Norcia, fissato per il 15 maggio il termine per la richiesta Sae'
+descrizione: 'Si avvia a conclusione l’individuazione delle aree per le Soluzioni Abitative d’ Emergenza a Norcia. A tal proposito si fanno sempre più serrate le scadenze ed il Comune, dovendo procedere alla chiusura del dimensionamento delle aree per la posa in opera delle SAE, pone il termine ultimo del 15 maggio p.v. per la presentazione delle richieste per le stesse. La richiesta di SAE può essere fatta allegando la scheda AeDes, a seguito della scheda Fast.'
+link: 'http://www.umbriadomani.it/umbria-in-pillole/norcia-fissato-per-il-15-maggio-il-termine-per-la-richiesta-sae-144553/'
+data: 09/05/2017
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/3038,227353391,2017-05-09 14:17:58,2017-05-09 12:43:35,Indennità INPS sospensione attività lavorativa anche per il sisma di gennaio 2017,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""09/05/2017"", ""descrizione"": ""L\u2019INPS con circolare n. 83 del 4 maggio 2017, e con riferimento alla Convenzione (*) tra il Ministro del Lavoro e delle politiche sociali di concerto con il Ministro dell\u2019economia e delle finanze ed i Governatori delle Regioni Abruzzo, Lazio, Marche ed Umbria del 23 gennaio 2017, precisa che i lavoratori dipendenti ed autonomi possono usufruire della indennit\u00e0 INPS per la sospensione dell\u2019attivit\u00e0 lavorativa anche per gli eventi sismici verificatisi a Gennaio 2017 (e non solo per quelli di agosto ed ottobre 2016)."", ""link"": ""https://bartolomeigiuliano.blog/2017/05/08/terremoto-indennita-inps-sospensione-attivita-lavorativa-anche-per-il-sisma-di-gennaio-2017/"", ""titolo"": ""Terremoto: indennit\u00e0 INPS sospensione attivit\u00e0 lavorativa anche per il sisma di gennaio 2017.""}","<pre><yamldata>titolo: 'Terremoto: indennità INPS sospensione attività lavorativa anche per il sisma di gennaio 2017.'
+descrizione: 'L’INPS con circolare n. 83 del 4 maggio 2017, e con riferimento alla Convenzione (*) tra il Ministro del Lavoro e delle politiche sociali di concerto con il Ministro dell’economia e delle finanze ed i Governatori delle Regioni Abruzzo, Lazio, Marche ed Umbria del 23 gennaio 2017, precisa che i lavoratori dipendenti ed autonomi possono usufruire della indennità INPS per la sospensione dell’attività lavorativa anche per gli eventi sismici verificatisi a Gennaio 2017 (e non solo per quelli di agosto ed ottobre 2016).'
+link: 'https://bartolomeigiuliano.blog/2017/05/08/terremoto-indennita-inps-sospensione-attivita-lavorativa-anche-per-il-sisma-di-gennaio-2017/'
+data: 09/05/2017
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/3037,227352834,2017-05-09 14:16:32,2017-05-09 12:41:47,Area di crisi Val Vibrata - Valle del Tronto Piceno: in uscita il bando Regione #Marche ed Invitalia,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili""]",,,{},"<pre><yamldata>titolo: 'Area di crisi Val Vibrata - Valle del Tronto Piceno: in uscita il bando Regione #Marche ed Invitalia'
+descrizione: 'Il Ministero dello Sviluppo Economico (MISE) ha convocato a Roma, per martedì 9 maggio 2017 alle 10.30, il tavolo nazionale di coordinamento per approvare il “Progetto di riconversione e riqualificazione industriale dell’area di crisi industriale complessa di Val Vibrata – Valle del Tronto Piceno” (PRRI).'
+link: 'http://www.fideas.it/news/area-crisi-val-vibrata-valle-del-tronto-piceno-uscita-bando-regione-marche-ed-invitalia/'
+data: 09/05/2017
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/3036,227351040,2017-05-09 14:16:03,2017-05-09 12:35:30,"Rinascita, il 9 maggio taglio del nastro per la nuova Materna di #Norcia",,,"[""Accettato"", ""Eventi"", ""Form""]",,,"{""data"": ""09/05/2017"", ""descrizione"": ""Grazie all'impegno della Fondazione Francesca Rava, a soli quattro mesi dall\u2019inizio del lavori, Norcia potr\u00e0 a tutti gli effetti beneficiare del nuovo complesso scolastico. In arrivo anche due scuole per Cascia"", ""link"": ""http://www.lanotiziaquotidiana.it/umbria/2017/05/05/rinascita-il-9-maggio-taglio-del-nastro-per-la-nuova-materna-di-norcia/"", ""titolo"": ""Rinascita, il 9 maggio taglio del nastro per la nuova Materna di #Norcia""}","<pre><yamldata>titolo: 'Rinascita, il 9 maggio taglio del nastro per la nuova Materna di #Norcia'
+descrizione: 'Grazie all''impegno della Fondazione Francesca Rava, a soli quattro mesi dall’inizio del lavori, Norcia potrà a tutti gli effetti beneficiare del nuovo complesso scolastico. In arrivo anche due scuole per Cascia'
+link: 'http://www.lanotiziaquotidiana.it/umbria/2017/05/05/rinascita-il-9-maggio-taglio-del-nastro-per-la-nuova-materna-di-norcia/'
+data: 09/05/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/3035,227271850,2017-05-09 07:16:19,2017-05-09 07:16:01,Bando Fondazione Cassa di Risparmio #AscoliPiceno per segnalare le priorità post terremoto,,,"[""Accettato"", ""Form"", ""Notizie Utili"", ""Ricostruzione Pubblica""]",,,"{""data"": ""09/05/2017"", ""descrizione"": ""La Fondazione Cassa di Risparmio di Ascoli Piceno sta lavorando alla difficile identificazione degli interventi pi\u00f9 adeguati a contrastare le gravi conseguenze del terremoto che, dal 24 agosto 2016, a pi\u00f9 riprese, ha violentemente colpito le comunit\u00e0 del centro Italia. In un contesto ancora alquanto indistinto, la Fondazione intende innanzi tutto giungere ad una visione unitaria delle priorit\u00e0 di interesse collettivo e delle risorse in campo, al fine di impiegare nel miglior modo possibile i sei milioni di Euro previsti nel Piano pluriennale 2017 \u2013 2019 per il capitolo \u201cTerremoto\u201d. A questo scopo, la Fondazione apre un canale diretto con la comunit\u00e0 per la segnalazione di priorit\u00e0 di interesse collettivo e suggerimenti da parte di chiunque intenda dare il proprio contributo. Per farlo, \u00e8 sufficiente connettersi \u2013 a partire dalle ore 12.00 dell\u201911 aprile e fino al 31 maggio 2017 \u2013 al sito www.pianopluriennale.it, inserire nome, cognome e indirizzo di posta elettronica e compilare l\u2019apposito campo. La Fondazione invita enti, organizzazioni, singoli cittadini a presentare le proprie idee."", ""link"": ""http://www.fondazionecarisap.it/segnala-alla-fondazione-una-priorita-di-interesse-collettivo/"", ""titolo"": ""Bando Fondazione Cassa di Risparmio #AscoliPiceno per segnalare le priorit\u00e0 post terremoto""}","<pre><yamldata>titolo: 'Bando Fondazione Cassa di Risparmio #AscoliPiceno per segnalare le priorità post terremoto'
 descrizione: 'La Fondazione Cassa di Risparmio di Ascoli Piceno sta lavorando alla difficile identificazione degli interventi più adeguati a contrastare le gravi conseguenze del terremoto che, dal 24 agosto 2016, a più riprese, ha violentemente colpito le comunità del centro Italia. In un contesto ancora alquanto indistinto, la Fondazione intende innanzi tutto giungere ad una visione unitaria delle priorità di interesse collettivo e delle risorse in campo, al fine di impiegare nel miglior modo possibile i sei milioni di Euro previsti nel Piano pluriennale 2017 – 2019 per il capitolo “Terremoto”. A questo scopo, la Fondazione apre un canale diretto con la comunità per la segnalazione di priorità di interesse collettivo e suggerimenti da parte di chiunque intenda dare il proprio contributo. Per farlo, è sufficiente connettersi – a partire dalle ore 12.00 dell’11 aprile e fino al 31 maggio 2017 – al sito www.pianopluriennale.it, inserire nome, cognome e indirizzo di posta elettronica e compilare l’apposito campo. La Fondazione invita enti, organizzazioni, singoli cittadini a presentare le proprie idee.'
 link: 'http://www.fondazionecarisap.it/segnala-alla-fondazione-una-priorita-di-interesse-collettivo/'
@@ -5306,6 +5337,16 @@ link: ''
 immagine: ''
 data: 24/01/2017
 </yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2245,202688678,2017-01-24 07:15:52,2017-01-24 00:10:38,"Offriamo ospitalità a terremotati, anche con cane o altro animale",44.900542,8.2068876,"[""Accettato"", ""Alloggi"", ""Form"", ""Ospitalita animali"", ""Sisma Gennaio 2017""]",,,"{""data"": ""24/01/2017"", ""descrizione"": ""Offriamo ospitalit\u00e0 a terremotati che si trovano in condizioni disperate almeno fino a quando non passa il freddo. Abbiamo anche un cortile dove potrebbe stare qualche cane o altro animale"", ""email"": """", ""immagine"": """", ""indirizzo"": ""Piazza Vittorio Alfieri, Asti, AT, Piemonte, 14100, Italia"", ""lat"": ""44.900542"", ""link"": """", ""lon"": ""8.2068876"", ""tel"": ""349552757""}","<pre><yamldata>tel: '349552757'
+email: ''
+descrizione: 'Offriamo ospitalità a terremotati che si trovano in condizioni disperate almeno fino a quando non passa il freddo. Abbiamo anche un cortile dove potrebbe stare qualche cane o altro animale'
+indirizzo: 'Piazza Vittorio Alfieri, Asti, AT, Piemonte, 14100, Italia'
+lat: '44.900542'
+lon: '8.2068876'
+link: ''
+immagine: ''
+data: 24/01/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2244,202678202,2017-01-29 14:57:14,2017-01-23 23:09:16,"Roma, 28 gennaio - Raccolta beni di prima necessità",41.8935085,12.4825526,"[""Accettato"", ""Fabbisogni"", ""Facebook"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""Roma, 28 gennaio - Raccolta beni di prima necessit\u00e0"", ""data"": ""23/01/2017"", ""descrizione"": ""Sabato 28/01 - ROMA. Per la seconda spedizione organizzeremo dei punti di raccolta viveri e beni di prima necessit\u00e0 per le zone dei terremotati che verranno trasportare dalla MMA AUTOSERVIZI il 29/01. Ore: 10-16 supermercato cts via Cassia 340. Ore 10-12 Giada Spuntarelli. Ore 12-14 Allegra Dollfus DV. Ore 14-16 Lilli Giorgi. Ore 10-16 parrucchiere AIT via Cortina d'ampezzo 333 Sabrina Schiavello. Ore 14-16 garage MMA via Mazzano romano 27 Alessio Campoli, Gianluca Bellatreccia. Ore 11-14 Stallo VIA bafile 1 Federica Gregori."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Cordonata, Municipio Roma I, Roma, RM, LAZ, 00186, Italia"", ""lat"": ""41.8935085"", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1833267906940792/"", ""lon"": ""12.4825526"", ""tel"": """"}","<pre><yamldata>tel: ''
 email: ''
 cosa: 'Roma, 28 gennaio - Raccolta beni di prima necessità'
@@ -5876,17 +5917,6 @@ link: 'http://www.ilrestodelcarlino.it/macerata/cronaca/terremoto-oggi-allevator
 immagine: ''
 data: 21/01/2017
 </yamldata></pre>",closed
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2173,202330786,2017-02-04 14:18:13,2017-01-21 18:11:57,**URGENTE** Civitella isolata senza elettricità nè telefoni,42.7725608,13.665180439868,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Facebook"", ""Sisma Gennaio 2017""]",,,"{""cosa"": ""**URGENTE** Civitella isolata senza elettricit\u00e0 n\u00e8 telefoni"", ""data"": ""21/01/2017"", ""descrizione"": ""Nel comprensorio di Civitella del Tronto \u00e8 caduta tantissima neve con accumuli fino a DUE METRI. E' totalmente assente la corrente elettrica da 5 giorni, non ci sono riscaldamenti, acqua e le linee telefoniche fisse. I cellulari vanno a singhiozzo quando \u00e8 possibile ricaricarli altrove. La situazione igienico-sanitaria \u00e8 al collasso. E' indispensabile l'intervento di mezzi idonei per la rimozione della neve. Moltissime frazioni sono ancora isolate. Per aiuti contattare il sindaco Cristina Di Pietro 3286827420"", ""email"": """", ""immagine"": """", ""indirizzo"": ""Viale della Battaglia di Bosco Martese, Civitella del Tronto, TE, Abruzzo, 64016, Italy"", ""lat"": ""42.7725608"", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1832212263713023/?match=dGVycmVtb3RvY2VudHJvaXRhbGlhLGNpdml0ZWxsYQ%3D%3D"", ""lon"": ""13.665180439868"", ""tel"": ""Sindaco Cristina Di Pietro 3286827420""}","<pre><yamldata>tel: 'Sindaco Cristina Di Pietro 3286827420'
-email: ''
-cosa: '**URGENTE** Civitella isolata senza elettricità nè telefoni'
-descrizione: 'Nel comprensorio di Civitella del Tronto è caduta tantissima neve con accumuli fino a DUE METRI. E'' totalmente assente la corrente elettrica da 5 giorni, non ci sono riscaldamenti, acqua e le linee telefoniche fisse. I cellulari vanno a singhiozzo quando è possibile ricaricarli altrove. La situazione igienico-sanitaria è al collasso. E'' indispensabile l''intervento di mezzi idonei per la rimozione della neve. Moltissime frazioni sono ancora isolate. Per aiuti contattare il sindaco Cristina Di Pietro 3286827420'
-indirizzo: 'Viale della Battaglia di Bosco Martese, Civitella del Tronto, TE, Abruzzo, 64016, Italy'
-lat: '42.7725608'
-lon: '13.665180439868'
-link: 'https://www.facebook.com/groups/1758670357733881/permalink/1832212263713023/?match=dGVycmVtb3RvY2VudHJvaXRhbGlhLGNpdml0ZWxsYQ%3D%3D'
-immagine: ''
-data: 21/01/2017
-</yamldata></pre>",closed
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2171,202329676,2017-01-21 19:31:56,2017-01-21 17:52:40,Hotel a Ortisei (Tn) offre soggiorni gratuiti ai terremotati,46.5904618,11.6845571547486,"[""Accettato"", ""Alloggi"", ""Bollettino"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""21/01/2017"", ""descrizione"": ""Offresi soggiorni in hotel a Ortisei, Trentino. Hotel Luna Mondschein**** di Ortisei offre soggiorni gratis per i terremotati di Amatrice e le zone colpite dal terremoto in gravi difficolt\u00e1. Strada Purger 81, Ortisei Richieste a info@hotel-luna.com"", ""email"": ""info@hotel-luna.com"", ""immagine"": """", ""indirizzo"": ""Streda Cuca, Ortisei, Salto-Sciliar, South Tyrol, Trentino-Alto Adige/S\u00fcdtirol, 39046, Italy"", ""lat"": ""46.5904618"", ""link"": ""https://www.facebook.com/pg/HotelLunaMondschein/about/?ref=page_internal"", ""lon"": ""11.6845571547486"", ""tel"": ""0471 796214""}","<pre><yamldata>tel: '0471 796214'
 email: info@hotel-luna.com
 descrizione: 'Offresi soggiorni in hotel a Ortisei, Trentino. Hotel Luna Mondschein**** di Ortisei offre soggiorni gratis per i terremotati di Amatrice e le zone colpite dal terremoto in gravi difficoltá. Strada Purger 81, Ortisei Richieste a info@hotel-luna.com'
@@ -6165,6 +6195,16 @@ indirizzo: 'Strada del Vivaro, Rocca di Papa, RM, LAZ, Italia'
 lat: '41.7454282'
 lon: '12.7805838'
 link: 'https://www.facebook.com/centroequestreranieridicampello/posts/381831005513478'
+immagine: ''
+data: 21/01/2017
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2137,202308617,2017-01-21 11:08:57,2017-01-21 10:53:01,"Offresi alloggio per famiglia, terreno e stalla a Ponzano Romano",42.2577967,12.5716266,"[""Accettato"", ""Alloggi"", ""Bollettino"", ""Form"", ""Ospitalita animali"", ""Sisma Gennaio 2017""]",,,"{""data"": ""21/01/2017"", ""descrizione"": ""A Ponzano Romano (Rm) posso ospitare famiglia di quattro persone mettendo a disposizione due camere, ognuna con letto matrimoniale e bagno indipendente. Possibilit\u00e0 di utilizzare stalla in grado di ospitare max cinque ovini ( oltre ai miei) in terreno di 2 ettari completamente recintato in regime di fondo chiuso."", ""email"": ""dr.pepperesci@tiscali.it"", ""immagine"": """", ""indirizzo"": ""Autostrada del Sole, Ponzano Romano, RM, Lazio, Italia"", ""lat"": ""42.2577967"", ""link"": """", ""lon"": ""12.5716266"", ""tel"": ""3202169802 - 0765338244""}","<pre><yamldata>tel: '3202169802 - 0765338244'
+email: dr.pepperesci@tiscali.it
+descrizione: 'A Ponzano Romano (Rm) posso ospitare famiglia di quattro persone mettendo a disposizione due camere, ognuna con letto matrimoniale e bagno indipendente. Possibilità di utilizzare stalla in grado di ospitare max cinque ovini ( oltre ai miei) in terreno di 2 ettari completamente recintato in regime di fondo chiuso.'
+indirizzo: 'Autostrada del Sole, Ponzano Romano, RM, Lazio, Italia'
+lat: '42.2577967'
+lon: '12.5716266'
+link: ''
 immagine: ''
 data: 21/01/2017
 </yamldata></pre>",open
@@ -7668,6 +7708,16 @@ descrizione: 'Offro alloggio per stallo in maneggio, paddock per cavalli e o asi
 indirizzo: 'Via Pietra a Padule, La Casetta, Massarosa, LU, Tuscany, 55050, Italia'
 lat: '43.8367688'
 lon: '10.3585443'
+link: ''
+immagine: ''
+data: 19/01/2017
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1969,201992068,2017-01-19 22:21:25,2017-01-19 22:18:12,Condividiamo volentieri la nostra casa in provincia di Trento,46.0603525,11.2405019,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Gennaio 2017""]",,,"{""data"": ""19/01/2017"", ""descrizione"": ""Condividiamo volentieri la nostra casa con una famiglia! Siamo in Provincia di Trento"", ""email"": ""serenaserina@yahoo.it"", ""immagine"": """", ""indirizzo"": ""Piazza del Municipio, Pergine Valsugana, Comunit\u00e0 Alta Valsugana e Bersntol, TN, Trentino-Alto Adige/S\u00fcdtirol, 38057, Italy"", ""lat"": ""46.0603525"", ""link"": """", ""lon"": ""11.2405019"", ""tel"": ""3207736493""}","<pre><yamldata>tel: '3207736493'
+email: serenaserina@yahoo.it
+descrizione: 'Condividiamo volentieri la nostra casa con una famiglia! Siamo in Provincia di Trento'
+indirizzo: 'Piazza del Municipio, Pergine Valsugana, Comunità Alta Valsugana e Bersntol, TN, Trentino-Alto Adige/Südtirol, 38057, Italy'
+lat: '46.0603525'
+lon: '11.2405019'
 link: ''
 immagine: ''
 data: 19/01/2017
@@ -11762,17 +11812,6 @@ link: 'https://www.facebook.com/groups/1758670357733881/permalink/17999416469400
 immagine: ''
 data: 15/11/2016
 </yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1277,189511941,2016-11-30 23:06:37,2016-11-15 21:29:56,Servizio di supporto psicologico gratuito nelle aree colpite dal sisma,,,"[""Accettato"", ""Bambini"", ""Bollettino"", ""Donazioni"", ""Facebook"", ""Notizie Utili"", ""Sisma Ottobre""]",,,"{""cosa"": ""Servizio di supporto psicologico gratuito nelle aree colpite dal sisma"", ""data"": ""15/11/2016"", ""descrizione"": ""Direttamente coinvolti dalle gravi conseguenze del sisma, i collaboratori del Centro di psicologia di Macerata, per dare un contributo alla collettivit\u00e0, attraverso le loro specifiche professionalit\u00e0, mettono a disposizione un servizio volontario di supporto psicologico alle persone che vivono una condizione di continuo disagio e difficolt\u00e0 nello svolgimento di attivit\u00e0 quotidiane. Il servizio \u00e8 gratuito, si svolge nella sede in via B. Gigli, 14, su appuntamento. Per adulti, chiamare il 3351590156; Per bambini o adolescenti il 3479365685, o scrivere al centropsicologiamacerata@gmail.com. Si prega di favorire la diffusione nelle aree maggiormente colpite o a persone in difficolt\u00e0, grazie!!"", ""email"": ""centropsicologiamacerata@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1799941646940085/"", ""lon"": """", ""tel"": """"}","<pre><yamldata>tel: ''
-email: centropsicologiamacerata@gmail.com
-cosa: 'Servizio di supporto psicologico gratuito nelle aree colpite dal sisma'
-descrizione: 'Direttamente coinvolti dalle gravi conseguenze del sisma, i collaboratori del Centro di psicologia di Macerata, per dare un contributo alla collettività, attraverso le loro specifiche professionalità, mettono a disposizione un servizio volontario di supporto psicologico alle persone che vivono una condizione di continuo disagio e difficoltà nello svolgimento di attività quotidiane. Il servizio è gratuito, si svolge nella sede in via B. Gigli, 14, su appuntamento. Per adulti, chiamare il 3351590156; Per bambini o adolescenti il 3479365685, o scrivere al centropsicologiamacerata@gmail.com. Si prega di favorire la diffusione nelle aree maggiormente colpite o a persone in difficoltà, grazie!!'
-indirizzo: ''
-lat: ''
-lon: ''
-link: 'https://www.facebook.com/groups/1758670357733881/permalink/1799941646940085/'
-immagine: ''
-data: 15/11/2016
-</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1275,189396871,2016-11-15 14:52:16,2016-11-15 13:51:11,L'associazione Io non crollo cerca furgone o 4x4 a #Camerino e dintorni,43.1357641,13.0683092,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Sisma Ottobre""]",,,"{""cosa"": ""Mezzo 4x4 #Camerino"", ""data"": ""15/11/2016"", ""descrizione"": ""L'ass. iononcrollo sta cercando un furgone o un mezzo 4x4 funzionante per poter rifornire con generi di prima necessit\u00e0 i comuni e le frazioni colpite dal sisma."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Piazza Cavour, Camerino, MC, Marche, 62032, Italia"", ""lat"": ""43.1357641"", ""link"": """", ""lon"": ""13.0683092"", ""tel"": ""334 5751368""}","<pre><yamldata>tel: '334 5751368'
 email: ''
 cosa: 'Mezzo 4x4 #Camerino'
@@ -14762,6 +14801,12 @@ link: 'https://www.facebook.com/events/513899795484942/'
 data: 25/10/2016
 </yamldata></pre>
 ",closed
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/839,185163085,2016-11-25 23:29:32,2016-10-25 16:08:52,AMATRICE REGENERATION: a Passignano sul Trasimeno incontri di formazione e coprogettazione,,,"[""Accettato"", ""Form"", ""Notizie Utili""]",Milestone(number=27),,"{""data"": ""25/10/2016"", ""descrizione"": ""18-19-20 Novembre 2016 - Panta Rei - Passignano sul Trasimeno (PG) 3 giorni di formazione in metodologie e strumenti per interventi di sostegno psico-sociale e cura del territorio. Metodologie e strumenti: Teatro dell\u2019oppresso / teatro sociale. Prendersi cura di persone, edifici e territorio. Formazione esperienziale. L\u2019incontro \u00e8 residenziale, sar\u00e0 possibile pernottare presso il Centro Panta Rei. Contributo: 60\u20ac/persona per la formazione + 100\u20ac per vitto e alloggio. 20 posti gratuiti per chi proviene da Amatrice e altri Comuni colpiti dal sisma. 21-22 Novembre 2016 - Panta Rei - Passignano sul Trasimeno (PG) 2 giorni di co-progettazione - Incontro in Open Space - Con quali progetti possiamo sostenere le comunit\u00e0 locali nel territorio colpito dal sisma? - Metodologie e strumenti: Gestione di gruppi / Open Space Technology Formazione esperienziale. L\u2019incontro \u00e8 residenziale, sar\u00e0 possibile pernottare presso il centro Panta Rei. Contributo: 40\u20ac/persona per la formazione + 50\u20ac per vitto e alloggio. 20 posti gratuiti per chi proviene da Amatrice e altri Comuni colpiti dal sisma. I costi proposti servono a coprire il lavoro dei formatori, l\u2019organizzazione dell\u2019evento e le spese, non vogliono essere una barriera alla partecipazione, se avete esigenze diverse contattateci. Come partecipare: \u00e8 possibile iscriversi a uno o entrambi i moduli. Comunicate il vostro interesse sul modulo di iscrizione online goo.gl/forms/A0eiz1AfGUwS54V83 o contattandoci direttamente Modulo di iscrizione: goo.gl/forms/A0eiz1AfGUwS54V83"", ""link"": ""https://www.facebook.com/events/513899795484942/"", ""titolo"": ""AMATRICE REGENERATION: FORMAZIONE E COPROGETTAZIONE""}","<pre><yamldata>titolo: 'AMATRICE REGENERATION: FORMAZIONE E COPROGETTAZIONE'
+descrizione: '18-19-20 Novembre 2016 - Panta Rei - Passignano sul Trasimeno (PG) 3 giorni di formazione in metodologie e strumenti per interventi di sostegno psico-sociale e cura del territorio. Metodologie e strumenti: Teatro dell’oppresso / teatro sociale. Prendersi cura di persone, edifici e territorio. Formazione esperienziale. L’incontro è residenziale, sarà possibile pernottare presso il Centro Panta Rei. Contributo: 60€/persona per la formazione + 100€ per vitto e alloggio. 20 posti gratuiti per chi proviene da Amatrice e altri Comuni colpiti dal sisma. 21-22 Novembre 2016 - Panta Rei - Passignano sul Trasimeno (PG) 2 giorni di co-progettazione - Incontro in Open Space - Con quali progetti possiamo sostenere le comunità locali nel territorio colpito dal sisma? - Metodologie e strumenti: Gestione di gruppi / Open Space Technology Formazione esperienziale. L’incontro è residenziale, sarà possibile pernottare presso il centro Panta Rei. Contributo: 40€/persona per la formazione + 50€ per vitto e alloggio. 20 posti gratuiti per chi proviene da Amatrice e altri Comuni colpiti dal sisma. I costi proposti servono a coprire il lavoro dei formatori, l’organizzazione dell’evento e le spese, non vogliono essere una barriera alla partecipazione, se avete esigenze diverse contattateci. Come partecipare: è possibile iscriversi a uno o entrambi i moduli. Comunicate il vostro interesse sul modulo di iscrizione online goo.gl/forms/A0eiz1AfGUwS54V83 o contattandoci direttamente Modulo di iscrizione: goo.gl/forms/A0eiz1AfGUwS54V83'
+link: 'https://www.facebook.com/events/513899795484942/'
+data: 25/10/2016
+</yamldata></pre>
+",closed
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/838,184904784,2016-10-24 17:31:13,2016-10-24 17:30:49,"Terremoto, donano quasi 3 italiani su 4. L'indagine di Coldiretti a due mesi dal sisma",,,"[""Accettato"", ""Bollettino"", ""Notizie Utili"", ""Twitter""]",,,"{""data"": ""24/10/2016"", ""descrizione"": ""Nei due mesi trascorsi dal terremoto in Centro Italia, quasi tre italiani su quattro (74%) hanno partecipato ad iniziative di solidariet\u00e0. \u00c8 quanto emerge da una analisi Coldiretti/Ix\u00e8. Ben il 42% degli italiani ha effettuato donazioni con SMS o su conto corrente, il 19% tramite associazioni e ben il 13% mangiando l\u2019amatriciana nei luoghi che hanno aderito all\u2019iniziativa di sostegno che si \u00e8 estesa anche all\u2019estero."", ""link"": ""http://www.corrierenazionale.it/2016/10/24/terremoto-donazioni-italiani/"", ""titolo"": ""Terremoto, donano quasi 3 italiani su 4. L'indagine di Coldiretti a due mesi dal sisma""}","<pre><yamldata>titolo: 'Terremoto, donano quasi 3 italiani su 4. L''indagine di Coldiretti a due mesi dal sisma'
 descrizione: 'Nei due mesi trascorsi dal terremoto in Centro Italia, quasi tre italiani su quattro (74%) hanno partecipato ad iniziative di solidarietà. È quanto emerge da una analisi Coldiretti/Ixè. Ben il 42% degli italiani ha effettuato donazioni con SMS o su conto corrente, il 19% tramite associazioni e ben il 13% mangiando l’amatriciana nei luoghi che hanno aderito all’iniziativa di sostegno che si è estesa anche all’estero.'
 link: 'http://www.corrierenazionale.it/2016/10/24/terremoto-donazioni-italiani/'
@@ -17596,18 +17641,6 @@ immagine: ''
 data: 15/09/2016
 </yamldata></pre>
 ",closed
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/476,177297104,2016-09-23 22:20:17,2016-09-15 21:41:15,"Arquata e Pescara del Tronto: grazie a Uic, occhiali e visite oculistiche gratuite",42.76214,13.29655,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Form""]",,,"{""cosa"": ""Occhiali e visite oculistiche gratis"", ""data"": ""15/09/2016"", ""descrizione"": ""Gli oculisti di Uic saranno il 19 settembre (e se necessario anche nei giorni successivi) a Arquata e Pescara del Tronto per visitare e donare occhiali da vista a chi li ha persi nel sisma."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Arquata del Tronto, AP, Marche, Italia"", ""lat"": ""42.76214"", ""link"": ""http://www.cityrumors.it/speciale-terremoto/308939-terremoto-occhiali-gratis-li-persi-uic-ipovedenti-laquila.html"", ""lon"": ""13.29655"", ""tel"": """"}","<pre><yamldata>tel: ''
-email: ''
-cosa: 'Occhiali e visite oculistiche gratis'
-descrizione: 'Gli oculisti di Uic saranno il 19 settembre (e se necessario anche nei giorni successivi) a Arquata e Pescara del Tronto per visitare e donare occhiali da vista a chi li ha persi nel sisma.'
-indirizzo: 'Arquata del Tronto, AP, Marche, Italia'
-lat: '42.76214'
-lon: '13.29655'
-link: 'http://www.cityrumors.it/speciale-terremoto/308939-terremoto-occhiali-gratis-li-persi-uic-ipovedenti-laquila.html'
-immagine: ''
-data: 15/09/2016
-</yamldata></pre>
-",closed
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/475,177292774,2016-10-01 18:21:38,2016-09-15 21:19:13,Luoghi del Cuore FAI: SI POSSONO VOTARE ANCHE IL BORGO DI AMATRICE O LA CHIESA DI ACCUMOLI,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""15/09/2016"", ""descrizione"": ""E\u2019 iniziata sul sito della FAI (Fondo Ambiente Italiano) l\u2019ottava votazione per eleggere i \u201cLuoghi del Cuore\u201d. Per la provincia di Rieti sono state inserite 20 nomination, tra queste c\u2019\u00e8 anche il borgo storico di Amatrice. Si possono trovare anche: l\u2019ex comprensorio CRI Fara in Sabina, oppure la chiesa di S.Maria di Sesto di Cittaducale, la chiesa di S. Giorgio \u2013 Terracino ad Accumoli o Caprignano a Casperia. Ognuno pu\u00f2 aggiungere nelle nomination il luogo che preferisce. Le segnalazioni si possono effettuare entro il 30 novembre 2016. Per votare \u00e8 semplice, basta entrare nel sito FAI e cliccare sul luogo al quale si vuole dare la propria preferenza. Alla chiusura della votazione verr\u00e0 stilata una classifica. In particolare FAI e Banca Intesa San Paolo interverranno in favore dei primi tre luoghi maggiormente segnalati secondo la classifica ufficiale pubblicata sul sito www.iluoghidelcuore.it sulla base di specifici progetti di azione, che dovranno essere presentati al FAI entro giugno 2017 e subordinati all\u2019approvazione della Fondazione. I contributi che potranno essere erogati solo a enti o associazioni , non a persone fisiche, saranno cos\u00ec suddivisi: \u2013 50.000 euro primo classificato -40.000 euro secondo classificato \u2013 30.000 euro terzo classificato Verranno altres\u00ec previsti contributi economici aggiuntivi indipendentemente dalla posizione in classifica. Inoltre il \u201cluogo del cuore\u201d che risulter\u00e0 maggiormente votato nelle filiali Intesa San Paolo, purch\u00e8 abbia ricevuto una soglia minima di 1.500 segnalazioni, ricever\u00e0 un contributo di 5.000 euro indipendentemente dalla sua posizione finale, da destinare ad un progetto subordinato all\u2019approvazione del FAI, entro un anno dall\u2019annuncio dei risultati del censimento."", ""link"": ""http://iluoghidelcuore.it/luoghi/amatrice/borgo-storico-di-amatrice-/88754"", ""titolo"": ""Luoghi del Cuore FAI: SI POSSONO VOTARE ANCHE IL BORGO DI AMATRICE O LA CHIESA DI ACCUMOLI""}","<pre><yamldata>titolo: 'Luoghi del Cuore FAI: SI POSSONO VOTARE ANCHE IL BORGO DI AMATRICE O LA CHIESA DI ACCUMOLI'
 descrizione: 'E’ iniziata sul sito della FAI (Fondo Ambiente Italiano) l’ottava votazione per eleggere i “Luoghi del Cuore”. Per la provincia di Rieti sono state inserite 20 nomination, tra queste c’è anche il borgo storico di Amatrice. 
 Si possono trovare anche: l’ex comprensorio CRI Fara in Sabina, oppure la chiesa di S.Maria di Sesto di Cittaducale, la chiesa di S. Giorgio – Terracino ad Accumoli o Caprignano a Casperia. 
@@ -18011,6 +18044,12 @@ link: 'http://gusitalia.it/emergenza-terremoto-centro-italia/'
 data: 15/09/2016
 </yamldata></pre>
 ",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/406,177155819,2017-01-02 18:21:05,2016-09-15 11:49:18,Univpm - Facoltà Ingegneria Civile e Ambientale,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""15/09/2016"", ""descrizione"": ""Rettore Sauro Longhi comunica che Universit\u00e0 Politecnica delle Marche mette a disposizione Ingegneri e Architetti per le zone colpite dal sisma."", ""link"": """", ""titolo"": ""Univpm - Facolt\u00e0 Ingegneria Civile e Ambientale""}","<pre><yamldata>titolo: 'Univpm - Facoltà Ingegneria Civile e Ambientale'
+descrizione: 'Rettore Sauro Longhi comunica che Università Politecnica delle Marche mette a disposizione Ingegneri e Architetti per le zone colpite dal sisma.'
+link: ''
+data: 15/09/2016
+</yamldata></pre>
+",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/405,177153907,2016-09-20 14:20:09,2016-09-15 11:38:21,Per noi autistici,,,"[""Accettato"", ""Contatti"", ""Donazioni"", ""Form""]",,,"{""data"": ""15/09/2016"", ""descrizione"": ""La redazione \u00e8 a disposizione per raccogliere segnalazioni di situazioni particolari relative a persone autistiche con possibilit\u00e0 di intervento."", ""email"": ""redazione@pernoiautistici.it"", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""nome"": ""Per noi autistici"", ""tel"": """"}","<pre><yamldata>nome: 'Per noi autistici'
 tel: ''
 email: redazione@pernoiautistici.it
@@ -18334,18 +18373,6 @@ descrizione: 'dal 26 settembre, dalle 11,00 e nei giorni seguenti a partire dall
 - coperte. 
 
 Casetta Rossa via Giovanni Battista Magnaghi, 14'
-intestazione: ''
-iban: ''
-bic: ''
-postale: ''
-causale: ''
-link: ''
-email: ''
-data: 15/09/2016
-</yamldata></pre>
-",closed
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/376,177126922,2016-09-15 09:15:36,2016-09-15 09:15:25,Comune di Pineto,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Comune di Pineto"", ""data"": ""15/09/2016"", ""descrizione"": ""Il Comune di Pineto, in collaborazione con gli operatori della rete del sociale, con la Caritas, il PROS e con alcuni cittadini che si sono resi disponibili, ha organizzato un punto di raccolta dei beni di prima necessit\u00e0 in favore delle zone terremotate. Sono richiesti: - latte in polvere per bambini - prodotti per celiaci(prodotti senza glutine) - coperte - prodotti per l'igiene personale Il punto di raccolta sar\u00e0 attivo dal 25 agosto al 28 agosto nei seguenti orari: 10.00-13.00 17.00-20.00. Per eventuali necessit\u00e0 \u00e8 possibile contattare, negli orari di apertura, la dott.ssa Serena Bellante 3485126750. Locali dell'oratorio della chiesa di Sant'Agnese, ingresso lato piazza della libert\u00e0"", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": """", ""postale"": """"}","<pre><yamldata>chi: 'Comune di Pineto'
-descrizione: 'Il Comune di Pineto, in collaborazione con gli operatori della rete del sociale, con la Caritas, il PROS e con alcuni cittadini che si sono resi disponibili, ha organizzato un punto di raccolta dei beni di prima necessità in favore delle zone terremotate. Sono richiesti: - latte in polvere per bambini - prodotti per celiaci(prodotti senza glutine) - coperte - prodotti per l''igiene personale Il punto di raccolta sarà attivo dal 25 agosto al 28 agosto nei seguenti orari: 10.00-13.00 17.00-20.00. Per eventuali necessità è possibile contattare, negli orari di apertura, la dott.ssa Serena Bellante 3485126750. Locali dell''oratorio della chiesa di Sant''Agnese, ingresso lato piazza della libertà'
 intestazione: ''
 iban: ''
 bic: ''
@@ -19881,6 +19908,18 @@ indirizzo: ''
 lat: 42.63289
 lon: 13.28937
 link: 'https://www.facebook.com/terremotocentroitalia/posts/1365045246858821'
+immagine: ''
+data: 14/09/2016
+</yamldata></pre>
+",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/231,176837511,2016-09-20 13:46:52,2016-09-14 07:44:17,"Associazione Toponomastica femminile, IC Mar dei Caraibi di Ostia e Società Gedshop",41.73055,12.30268,"[""Accettato"", ""Donazioni"", ""Form""]",,,"{""cosa"": ""Associazione Toponomastica femminile, IC Mar dei Caraibi di Ostia e Soc. Gedshop"", ""data"": ""14/09/2016"", ""descrizione"": ""Offerta di materiale didattico e borse per studenti e alunni scuole di Accumoli e Amatrice."", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": ""41.73055"", ""link"": ""https://www.facebook.com/mpercolini/posts/10208058376356845?pnref=story"", ""lon"": ""12.30268"", ""tel"": """"}","<pre><yamldata>tel: ''
+email: ''
+cosa: 'Associazione Toponomastica femminile, IC Mar dei Caraibi di Ostia e Soc. Gedshop'
+descrizione: 'Offerta di materiale didattico e borse per studenti e alunni scuole di Accumoli e Amatrice.'
+indirizzo: ''
+lat: '41.73055'
+lon: '12.30268'
+link: 'https://www.facebook.com/mpercolini/posts/10208058376356845?pnref=story'
 immagine: ''
 data: 14/09/2016
 </yamldata></pre>
