@@ -34,33 +34,35 @@ S interfaces umí dobře pracovat IDE. Standardně nabízí možnosti jako "vytv
 Zkusím interface ukázat na našem příkladu s logikou na blackjack. Nejdřív ukázka hotového kódu: 
 
 ```php
-namespace blackJack
+<?php
 
-public class Deck {
+namespace blackJack;
+
+class Deck {
 	private $deckOfCards = [];
 	private $suits = ["H", "D", "S", "C",];
 	private $values = ["2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A",];
-
-	public function __construct {
-		this.makeNewDeck();
+	
+	public function __construct() {
+		$this->makeNewDeck();
 	}
-
-	public makeNewDeck() {
-		$deckOfCards = [];
-		foreach ($suits as $suits) {
-			foreach ($values as $value) {
-				$deckOfCards[] = ($suit . $value);
+	
+	public function makeNewDeck() {
+		$this->deckOfCards = [];
+		foreach ($this->suits as $suit) {
+			foreach ($this->values as $value) {
+				$this->deckOfCards[] = ($suit.$value);
 			}
 		}
-		this.shuffle();
+		$this->shuffle();
 	}
-
-	public shuffle() {
-        shuffle(&$deckOfCards);
+	
+	public function shuffle() {
+		shuffle($deckOfCards);
 	}
-
-	public drawCard() {
-        return array_shift($deckOfCards);
+	
+	public function drawCard() {
+		return array_shift($deckOfCards);
 	}
 }
 ```
@@ -68,14 +70,16 @@ public class Deck {
 a ukázka interface pro tuto třídu: 
 
 ```php
-namespace blackJack
+<?php
 
-public interface Deck {
-	public makeNewDeck();
+namespace blackJack;
 
-	public shuffle();
-
-	public drawCard();
+interface Deck {
+	public function makeNewDeck();
+	
+	public function shuffle();
+	
+	public function drawCard();
 }
 ```
 
@@ -89,7 +93,9 @@ Interfaces neumožňují nic přími implementovat, takže pokud potřebuješ po
 Velký důvod, proč používat interface než abstraktní třídy je ten, že PHP neumožňuje vícenásobně dědit, ale implementace více interfaces je povolená. Můžeme tedy napsat něco jako: 
 
 ```php
-class Deck implemenets pokerDeck, blackjakcDeck, solitareDeck {
+<?php
+
+class Deck implements pokerDeck, blackjakcDeck, solitareDeck {
     // ...
 }
 ```
