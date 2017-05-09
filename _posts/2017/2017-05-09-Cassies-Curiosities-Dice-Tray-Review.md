@@ -20,7 +20,7 @@ This week, [Cassie](https://www.facebook.com/cassiescuriosities) of [Cassie’s 
 
 Shown here are two trays: stained-wood with purple foam and swirl-green dice and white with blue foam and translucent-purple dice. Each tray is handmade: cut, sanded, stained or painted, and finished. The wood trays are lightweight and smooth to the touch. And with some really wild foam options like sparkle pink, orange leopard, or blue zebra patterns, the possibilities are endless.  
 
-I am always impressed with professional presentation of product, and this is no exception. The trays arrived packaged professionally, with a wonderful handwritten note, making these trays a perfect gift option for any gamer. Additionally, Cassie was generous enough to include a 15% off coupon code for our readers! Just enter “**PAWN15**” during checkout. How cool! These dice trays are truly one-of-a-kind, check them out!
+I am always impressed with professional presentation of product, and this is no exception. The trays arrived packaged professionally, with a wonderful handwritten note, making these trays a perfect gift option for any gamer. Additionally, Cassie was generous enough to include a *15% off coupon code for our readers*! Just enter “**PAWN15**” during checkout. How cool! These dice trays are truly one-of-a-kind, check them out!
 
 
 
