@@ -1,6 +1,6 @@
 ---
 title: "Cassie’s Curiosities Dice Trays"
-date: 2017-05-09 6:00:00 Z
+date: 2017-05-09 16:00:00 Z
 category: review
 tags:
   - review
