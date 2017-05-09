@@ -1,4 +1,42 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/3051,227381634,2017-05-09 14:29:49,2017-05-09 14:15:22,Cercasi 1.298 volontari per #serviziocivile nelle 4 regioni terremotate. Scadenza 15/5,,,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""Cercasi 1.298 volontari per #serviziocivile nelle 4 regioni colpite dal sisma. Scadenza bando 15 maggio"", ""data"": ""09/05/2017"", ""descrizione"": ""On line il bando per la selezione di n. 1.298 volontari da avviare nei progetti di servizio civile nazionale che si realizzeranno nelle aree terremotate del centro Italia interessate dagli eventi sismici dell\u2019anno 2016. I volontari selezionati saranno cos\u00ec distribuiti: 163 nella Regione Abruzzo, 279 nella Regione Lazio, 616 nella Regione Marche, 240 nella Regione Umbria. Scadenza delle domande: 15 maggio 2017 (ore 14.00). Al link tutte le informazioni e i moduli necessari per presentare la domanda."", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""http://www.serviziocivile.gov.it/menusx/bandi/selezione-volontari/bandovolsismacentroitalia_2017/"", ""lon"": """", ""tel"": """"}","<pre><yamldata>tel: ''
+email: ''
+cosa: 'Cercasi 1.298 volontari per #serviziocivile nelle 4 regioni colpite dal sisma. Scadenza bando 15 maggio'
+descrizione: 'On line il bando per la selezione di n. 1.298 volontari da avviare nei progetti di servizio civile nazionale che si realizzeranno nelle aree terremotate del centro Italia interessate dagli eventi sismici dell’anno 2016. I volontari selezionati saranno così distribuiti: 163 nella Regione Abruzzo, 279 nella Regione Lazio, 616 nella Regione Marche, 240 nella Regione Umbria. Scadenza delle domande: 15 maggio 2017 (ore 14.00). Al link tutte le informazioni e i moduli necessari per presentare la domanda.'
+indirizzo: ''
+lat: ''
+lon: ''
+link: 'http://www.serviziocivile.gov.it/menusx/bandi/selezione-volontari/bandovolsismacentroitalia_2017/'
+immagine: ''
+data: 09/05/2017
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/3050,227379795,2017-05-09 14:28:06,2017-05-09 14:09:30,Storia e attualità del rischio sismico nell'Appennino Centrale,42.3868338,12.9483413,"[""Accettato"", ""Eventi"", ""Form""]",,,"{""data"": ""09/05/2017"", ""data_evento"": ""05/12/2017"", ""descrizione"": ""Il Festival delle Valli Salto Turano Velino (Rieti) 2017, mirato a promuovere gli itinerari di lunga percorrenza (a piedi, in bici, a cavallo) in Centro Italia, hanno scelto di tenere a Cittaducale l\u2019evento di chiusura del Festival: un Convegno storico \u2013 culturale per riflettere sul grande comune problema dell\u2019Appennino Centrale, la sismicit\u00e0."", ""indirizzo"": ""Corso Mazzini, Nucleo Industriale di Rieti, Cittaducale, RI, LAZ, Italia"", ""lat"": ""42.3868338"", ""link"": ""http://www.rietilife.com/2017/05/08/cittaducale-storia-attualita-del-rischio-sismico-ne-parla-un-convegno/"", ""lon"": ""12.9483413"", ""ora_evento"": ""15:30"", ""promotore"": ""Festival delle Valli Salto Turano Velino (Rieti) 2017"", ""titolo_evento"": ""Storia e attualit\u00e0 del rischio sismico nell'Appennino Centrale""}","<pre><yamldata>titolo_evento: 'Storia e attualità del rischio sismico nell''Appennino Centrale'
+data_evento: 05/12/2017
+ora_evento: '15:30'
+promotore: 'Festival delle Valli Salto Turano Velino (Rieti) 2017'
+descrizione: 'Il Festival delle Valli Salto Turano Velino (Rieti) 2017, mirato a promuovere gli itinerari di lunga percorrenza (a piedi, in bici, a cavallo) in Centro Italia, hanno scelto di tenere a Cittaducale l’evento di chiusura del Festival: un Convegno storico – culturale per riflettere sul grande comune problema dell’Appennino Centrale, la sismicità.'
+indirizzo: 'Corso Mazzini, Nucleo Industriale di Rieti, Cittaducale, RI, LAZ, Italia'
+lat: '42.3868338'
+lon: '12.9483413'
+link: 'http://www.rietilife.com/2017/05/08/cittaducale-storia-attualita-del-rischio-sismico-ne-parla-un-convegno/'
+data: 09/05/2017
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/3049,227366715,2017-05-09 14:27:28,2017-05-09 13:27:58,A #Roccafluvione sab. 13/5 Sportello Legale gratuito per cittadini colpiti dal sisma,42.859947,13.476785,"[""Accettato"", ""Bollettino"", ""Eventi"", ""Form""]",,,"{""data"": ""09/05/2017"", ""data_evento"": ""01/01/1970"", ""descrizione"": ""Alterego sar\u00e0 presente nella mattinata del 13-5-2017 per dare assistenza legale gratuitamente a tutti i cittadini vittime degli eventi sismici che hanno colpito il Centro Italia. L'appuntamento \u00e8 nel comune di Roccafluvione."", ""indirizzo"": ""Strada Provinciale 237 Ex SS78 Picena, Monestino, Roccafluvione, AP, Marche, 63091, Italia"", ""lat"": ""42.859947"", ""link"": ""https://www.facebook.com/events/313753255724861/"", ""lon"": ""13.476785"", ""ora_evento"": ""11:00"", ""promotore"": ""Alterego - Legal Service"", ""titolo_evento"": ""Sportello Legale #Roccafluvione""}","<pre><yamldata>titolo_evento: 'Sportello Legale #Roccafluvione'
+data_evento: 01/01/1970
+ora_evento: '11:00'
+promotore: 'Alterego - Legal Service'
+descrizione: 'Alterego sarà presente nella mattinata del 13-5-2017 per dare assistenza legale gratuitamente a tutti i cittadini vittime degli eventi sismici che hanno colpito il Centro Italia. L''appuntamento è nel comune di Roccafluvione.'
+indirizzo: 'Strada Provinciale 237 Ex SS78 Picena, Monestino, Roccafluvione, AP, Marche, 63091, Italia'
+lat: '42.859947'
+lon: '13.476785'
+link: 'https://www.facebook.com/events/313753255724861/'
+data: 09/05/2017
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/3048,227365114,2017-05-09 14:25:32,2017-05-09 13:22:34,"Schede AeDES: requisiti dei tecnici, compensi e tempistiche. Vademecum",,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""09/05/2017"", ""descrizione"": ""Mini-vademecum per orientarsi tra i provvedimenti"", ""link"": ""https://www.professionearchitetto.it/news/notizie/23525/Schede-AeDES-requisiti-dei-tecnici-compensi-e-tempistiche-Mini-vademecum-per-orientarsi-tra-i-provvedimenti"", ""titolo"": ""Schede AeDES: requisiti dei tecnici, compensi e tempistiche.""}","<pre><yamldata>titolo: 'Schede AeDES: requisiti dei tecnici, compensi e tempistiche.'
+descrizione: 'Mini-vademecum per orientarsi tra i provvedimenti'
+link: 'https://www.professionearchitetto.it/news/notizie/23525/Schede-AeDES-requisiti-dei-tecnici-compensi-e-tempistiche-Mini-vademecum-per-orientarsi-tra-i-provvedimenti'
+data: 09/05/2017
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/3047,227364300,2017-05-09 14:22:34,2017-05-09 13:19:48,ILLUMINAMATRICE,42.6292367,13.2891755,"[""Accettato"", ""Eventi"", ""Form""]",,,"{""data"": ""09/05/2017"", ""data_evento"": ""08/12/2017"", ""descrizione"": ""Per non spegnere i riflettori-ARTISTI&MUSICA PER AMATRICE-Concerti,video,laboratori,performance,proposte.Per guardare,capire,immaginare,riprogettare.In collaborazione con l'associazione AMATRICE 2.0-A cura di Antonino Barresi."", ""indirizzo"": ""Piazza Cacciatori del Tevere, Casalene, Amatrice, RI, LAZ, 02012, Italia"", ""lat"": ""42.6292367"", ""link"": ""https://www.facebook.com/villaggioloscoiattolo/posts/816628258487977"", ""lon"": ""13.2891755"", ""ora_evento"": """", ""promotore"": ""l'associazione AMATRICE 2.0"", ""titolo_evento"": ""ILLUMINAMATRICE""}","<pre><yamldata>titolo_evento: ILLUMINAMATRICE
 data_evento: 08/12/2017
 ora_evento: ''
@@ -4364,17 +4402,6 @@ data: 06/02/2017
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2402,205570778,2017-02-07 08:15:33,2017-02-06 12:35:06,Associazione offre alloggi gratuiti a Monza ,,,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""06/02/2017"", ""descrizione"": ""Alcuni membri della nostra associazione mettono a disposizione alloggio per famiglie jn zona Monza gratuitamente. Per info: presidente@salvagenteitalia.org"", ""email"": ""presidente@salvagenteitalia.org"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3440691479""}","<pre><yamldata>tel: '3440691479'
 email: presidente@salvagenteitalia.org
 descrizione: 'Alcuni membri della nostra associazione mettono a disposizione alloggio per famiglie jn zona Monza gratuitamente. Per info: presidente@salvagenteitalia.org'
-indirizzo: ''
-lat: ''
-lon: ''
-link: ''
-immagine: ''
-data: 06/02/2017
-</yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/2401,205531320,2017-02-06 21:15:00,2017-02-06 09:44:07,Offresi vestiario invernale,,,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Form""]",,,"{""cosa"": ""Raccolta vestiario invernale"", ""data"": ""06/02/2017"", ""descrizione"": ""Guanti, maglioni, giacche di varie taglie, cappelli: gruppo di amiche nel Lazio ha raccolto vestiario invernale e vorrebbe darlo a chi ne necessita."", ""email"": ""puritana@hotmail.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3284152219""}","<pre><yamldata>tel: '3284152219'
-email: puritana@hotmail.it
-cosa: 'Raccolta vestiario invernale'
-descrizione: 'Guanti, maglioni, giacche di varie taglie, cappelli: gruppo di amiche nel Lazio ha raccolto vestiario invernale e vorrebbe darlo a chi ne necessita.'
 indirizzo: ''
 lat: ''
 lon: ''
