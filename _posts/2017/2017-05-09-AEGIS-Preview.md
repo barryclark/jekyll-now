@@ -46,7 +46,7 @@ For the full rules, see [here](http://zephyrworkshop.com/rulebook/AEGIS_Rulebook
 
 While the copy of A.E.G.I.S. I received was a prototype, much of the final artwork was provided. I can't comment on the quality of the components, but the actual graphic design of the game is looking great. Every robot has its own look and feel, while the combined robots look as amazing as you'd expect them to. The game is bright and colorful, making each class of robot easy to distinguish from the others. That, combined with (pun intended) a detailed, yet approachable, overall art style makes A.E.G.I.S. stand out with it's own style.
 
-![AEGIS Pieces](/images/aegis/aegisstuff.png)
+![AEGIS Pieces](/images/aegis/aegisstuff.png){: .center}
 
 <h2>Perspective</h2>
 
