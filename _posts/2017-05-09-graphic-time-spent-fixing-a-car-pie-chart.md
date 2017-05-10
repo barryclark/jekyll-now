@@ -5,7 +5,7 @@ tags: [humor]
 keywords: [graphic, pie chart, car, mechanic, time spent]
 javascripts: [/js/d3.min.js, /js/c3.min.js]
 csses: [/css/c3.css]
-image: /images/covers/graphic-time-spent-fixing-a-car-pie-chart.png
+image: /images/covers/2017-05-09-graphic-time-spent-fixing-a-car-pie-chart.png
 ---
 
 This is just a quick pie chart illustrating the time spent when ever I am working on either my car or friend and family's car.
