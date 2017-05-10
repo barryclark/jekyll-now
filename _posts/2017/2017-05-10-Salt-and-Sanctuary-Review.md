@@ -8,7 +8,7 @@ tags:
   - ska studios
   - salt and sanctuary
 layout: post
-description: "Pox Nora finally comes to the PS4 at the end of May"
+description: "Salt & Sanctuary captures the feeling of Castlevania and Dark Souls in a wonderfully grim title."
 featured: saltandsanctuary.jpg                                                             
 author: robk
 published: true
