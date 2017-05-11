@@ -22,7 +22,7 @@ There's multiple ways to get entries into the giveway.
 
 * Comment on this post! It's super easy.
 * Visit [A Pawn's Perspective](http://facebook.com/pawnsperspective.com) and give it a Like. Already like the page? You've already got an entry!
-* Comment on the following Facebook post. Share it for an extra entry!<br/><iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpawnsperspective%2Fposts%2F466451667028785&width=500" width="500" height="521" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+* Comment on [this Facebook post](https://www.facebook.com/pawnsperspective/posts/466451667028785). Share it for an extra entry!
 * Become a [Patron](https://www.patreon.com/pawnsperspective) of A Pawn's Perspective. Different levels give you a different amount of automatic entries into every giveaway I run!
 
 
