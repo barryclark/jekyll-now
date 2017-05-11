@@ -27,7 +27,7 @@ On s'intéressera ici principalement au **code source**.
 Les langages informatiques laissent une grande place à la **créativité du développeur.**
 En commençant par le nommage des différentes entités manipulées, par l'architecture des composants ou encore par les algorithmes utilisés.      
 
-Laissé bien souvent à lui-même, et comprenant correctement le code qu'il est en train de produire, le développeur parviens ainsi à écrire un code 
+Laissé bien souvent à lui-même, et comprenant correctement le code qu'il est en train de produire, le développeur parvient ainsi à écrire un code 
 qui compile et qui parfois répond à un besoin métier exprimé par le client/sponsor. Dans un soucis permanent de rentabilité le développeur 
      se concentrera bien plus sur sa vélocité à produire des évolutions et à la résolution des nombreux bugs qui apparaissent dans son application.  
  
@@ -36,7 +36,7 @@ qui compile et qui parfois répond à un besoin métier exprimé par le client/s
  Au fur et à mesure des changements, les évolutions fonctionnelles se font de plus en plus douloureuses,
   et les bugs (de plus en plus courants) se font de plus en plus tenaces à corriger.
   
-  Cette douleur que vous avez très probablement déjà ressenti est un symptôme d'un code source qui : 
+  Cette douleur que vous avez très probablement déjà ressentie est un symptôme d'un code source qui : 
   
   - est dur à comprendre
   - est dur à faire évoluer
@@ -59,7 +59,7 @@ Mais avant tout, c'est l'**intention** derrière le clean code qui est différen
 Du code propre, c'est du code qui a été développé pour être maintenu. 
 Les développeurs qui l'ont écrit **ont fait cet effort**. Ainsi où que vous regardiez,
 il est clairement visible que le nommage a été réfléchi, le design a été retravaillé, et le code relu.    
-Bref, ce code est le résultat du labeur d'un professionnel qui a le soucis du travail bien fait.
+Bref, ce code est le résultat du labeur d'un professionnel qui a le souci du travail bien fait.
 
 C'est donc un code en lequel on peut avoir confiance. Et qu'on peut faire évoluer en toute sérénité.
  
