@@ -25,6 +25,8 @@ There's multiple ways to get entries into the giveway.
 * Comment on [this Facebook post](https://www.facebook.com/pawnsperspective/posts/466451667028785). Share it for an extra entry!
 * Become a [Patron](https://www.patreon.com/pawnsperspective) of A Pawn's Perspective. Different levels give you a different amount of automatic entries into every giveaway I run!
 
+The giveaway will run until **May 31st**, then a winner will be chosen.
+
 
 
 
