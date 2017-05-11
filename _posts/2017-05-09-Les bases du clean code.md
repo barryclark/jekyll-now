@@ -3,7 +3,7 @@ layout: post
 title: "Introduction au Clean Code"
 description: "Qu'est-ce que le clean code ?"
 category: 
-tags: []
+tags: [Clean Code]
 ---
 
 Allez on commence une série d'articles sur le clean code.
@@ -54,9 +54,6 @@ Le clean code, c'est le code qui est au contraire :
 
 C'est tout ? Oui c'est tout.
 
-J'ai même envie d'hasarder que cette définition est universelle dans le milieu des experts de la qualité de code. En tout cas,
-elle est universellement acceptée par les auteurs de ce blog.
-
 Mais avant tout, c'est l'**intention** derrière le clean code qui est différente.
 
 Du code propre, c'est du code qui a été développé pour être maintenu. 
@@ -81,7 +78,7 @@ by someone who cared deeply about the **craft**.
 ## Ça a l'air sympa, mais tout ça ne me dit pas comment faire du clean code.
 
 
-il est important de garder en tête l'objectif unique du clean code : 
+Il est important de garder en tête l'objectif unique du clean code : 
      
  Produire et maintenir un code qui ne plante pas, ni maintenant, ni demain.
 
