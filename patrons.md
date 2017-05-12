@@ -10,4 +10,4 @@ These awesome people have:
 
 ### Patrons
 
-Thomas Deeny ([Denagh Design](http://denaghdesign.com/))
+Thomas Deeny
