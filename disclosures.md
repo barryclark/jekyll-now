@@ -13,4 +13,8 @@ If I find a serious vulnerability, I first disclose it in private to the organis
 * If I've had no response, or a 'will not fix' response, I will wait at least 60 days before publicly disclosing.
 
 
+Past Disclosures:
+* [Careercake.com](https://www.e2e-assure.com/blog/security-disclosure-to-careercake/)
+* [EE](https://www.e2e-assure.com/blog/Security-Issues-with-the-My-EE-App/)
+* [Lawson Chase](https://blog.georgesale.co.uk/disclosure-to-lawson-chase/)
 
