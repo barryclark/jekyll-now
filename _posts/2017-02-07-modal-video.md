@@ -4,7 +4,7 @@ date: '2017-02-07 00:00:00'
 layout: post
 comments: true
 ---
-![_config.yml]({{ site.baseurl }}/images/ModalVideo.svg)
+![Modal Video]({{ site.baseurl }}/images/ModalVideo.svg)
 
 有人做了一個專門用來處理 Modal Video 的 jQuery Plugin ： [modal-video.js](https://appleple.github.io/modal-video/ "modal-video.js - jQuery Modal Video Plugin made with love by appleple")
 
