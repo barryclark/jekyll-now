@@ -16,7 +16,7 @@ published: true
 
 Privateer Press’ May releases are rolling in and they sent a few over for us to check out. Privateer Press rarely disappoints, and May is no exception. The quality of these minis is outstanding. As usual, looks like Privateer Press will be releasing some unique additions.
 
-[May Releases](/images/privateer/may1.png)
+![May Releases](/images/privateer/may1.png)
 
 Faith alone is insufficient to protect the faithful. Thus, the Devout was built to guard the Protectorate’s leaders from heretics and engraved with holy inscriptions to protect its controller from accursed magic. The Dervish, on the other hand, is a divinely inspired weapon that uses its chassis’ unparalleled reflexes wholly for offense. The Purifier, crafted as a literal interpretation of wrathful scripture, has a singular drive to eradicate unbelief through the cleansing fires of the Creator.
 
@@ -33,7 +33,7 @@ Packaging: Box\\
 Release Date: May 24, 2017\\ 
 Release Date Status: Actual 
 
-[May Releases](/images/privateer/may2.png)
+![May Releases](/images/privateer/may2.png)
 
 Chiron is one of the greatest basilisks ever broken to the skorne lash, and his subjugation attests to Beast Master Xekaar’s perfection of the art of physical conditioning through pain. The beast’s physical might is matched only by the power of his destructive gaze. Entire ranks of foes wither to dust as Chiron sweeps his cold eyes across them, and enemy warbeasts tear apart their own flesh in agony at his barest glance. 
 
