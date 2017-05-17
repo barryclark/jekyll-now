@@ -1,0 +1,242 @@
+---
+layout: post
+title: "Trim-and-Fill of d statistics"
+date: May 17, 2017
+tags: [meta-analysis]
+---
+
+# Simulation model
+
+```{r setup, include = FALSE}
+
+library(knitr)
+opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(stringr)
+library(tidyr)
+library(dplyr)
+library(ggplot2)
+
+load("../files/Trim-and-Fill-Simulation-Results.Rdata")
+
+```
+
+
+# Results
+
+```{r cleaning}
+
+results <- 
+  results %>%
+  mutate(
+    study_dist = ifelse(na == nb, "Uniform distribution of sample sizes", 
+                        ifelse(na > nb, "More large studies", "More small studies")),
+    study_dist = factor(study_dist, 
+                        levels = c("More small studies","Uniform distribution of sample sizes","More large studies")),
+    heterogeneity = paste("Between-study SD:", sd_effect),
+    selection_level = factor(p_RR, levels = c(1, 0.2, 0), labels = c("No publication bias", "Intermediate publication bias", "Strong publication bias"))
+  ) %>%
+  select(-reps, -seed, -studies, -na, -nb, -n_min) %>%
+  unnest() %>%
+  mutate(
+    RMSE = sqrt((est_M - mean_effect)^2 + est_V)
+  )
+
+```
+
+### False-positive rates for publication bias detection
+
+```{r rejection_rates}
+
+Type_I_error_rates <- 
+  results %>% 
+  filter(p_RR == 1, !is.na(reject_nomissing_050)) %>%
+  select(-p_RR, -est_M, -est_V, -RMSE, -k0_M, -k0_V) %>%
+  gather("rate","reject", starts_with("reject")) %>%
+  mutate(
+    rate = as.numeric(str_sub(rate,-3,-1)) / 1000,
+    estimator = factor(paste0(estimator, V), levels = c("BMse","BMsa","R0se","R0sa"), 
+                       labels = c("rank test - SE","rank test - 2 / n","Trim & Fill - SE", "Trim & Fill - 2 / n"))
+  )
+
+rejection_rate_plot <- function(dat) {
+  rate <- unique(dat$rate)
+  ggplot(dat, aes(mean_effect, reject, linetype = estimator, color = factor(n_max))) + 
+    geom_point() + geom_line() + 
+    geom_hline(yintercept = rate, linetype = "dashed") + 
+    facet_grid(heterogeneity ~ study_dist, scale = "free_y") + 
+    coord_cartesian(ylim = c(0, 0.3)) + 
+    theme_light() + 
+    theme(legend.position = "bottom") + 
+    labs(linetype = "", color = "Maximum n", x = "Mean effect size", y = "Rejection rate")
+}
+
+```
+
+
+```{r, TF-BM-rejection-rates, fig.width = 8, fig.height = 8}
+
+Type_I_error_rates %>%
+  filter(V == "se", rate == .050) %>%
+  rejection_rate_plot()
+
+```
+
+```{r, modified-TF-BM-rejection-rates, fig.width = 8, fig.height = 8}
+
+Type_I_error_rates %>%
+  filter(V == "sa", rate == .050) %>%
+  rejection_rate_plot()
+
+```
+
+
+### Bias of bias-corrected estimators
+
+Now let's consider the performance of these methods as estimators of the population mean effect. [Uri's analysis](http://datacolada.org/59) focused on the bias of the estimators, meaning the difference between the average value of the estimator (across repeated samples) and the true parameter. The plot below depicts the expected level of PET, PEESE, and PET-PEESE as a function of the true mean effect, using the uniform distribution of studies and a maximum sample size of $n = 50$: 
+
+```{r bias-of-PET-PEESE, fig.width = 8, fig.height = 8}
+
+estimator_performance <- 
+  results %>%
+  filter(!is.na(est_M)) %>%
+  select(-reject_nomissing_025, -reject_nomissing_050, -k0_M, -k0_V) %>%
+  rename(maximum_n = n_max) %>%
+  mutate(
+    covariate = factor(V, levels = c("se","sa"), labels = c("SE", "2 / n")),
+    estimator = paste(estimator, covariate, sep = " - ")
+  )
+  
+bias_plot <- function(dat) {
+  subtitle <- paste0(unique(dat$study_dist), ", maximum sample size of ", unique(dat$maximum_n))
+  ggplot(dat, aes(mean_effect, est_M, color = estimator, shape = estimator)) + 
+    geom_point() + geom_line() + 
+    geom_abline(slope = 1, intercept = 0) + 
+    coord_cartesian(ylim = c(0, 1)) + 
+    facet_grid(heterogeneity ~ selection_level) + 
+    theme_light() + 
+    theme(legend.position = "bottom") + 
+    labs(
+      title = "Expected value of effect size estimators",
+      subtitle = subtitle,
+      color = "", shape = "", 
+      x = "Mean effect size", y = "Expected value of estimator"
+    )
+}
+
+estimator_performance %>%
+  filter(study_dist == "Uniform distribution of sample sizes", 
+         maximum_n == 50, 
+         V == "se") %>%
+  bias_plot()
+```
+
+```{r bias-of-modified-TF, fig.width = 8, fig.height = 8}
+
+estimator_performance %>%
+  filter(study_dist == "Uniform distribution of sample sizes", 
+         maximum_n == 50) %>%
+  bias_plot()
+
+```
+
+```{r more-bias-of-modified-TF, fig.width = 8, fig.height = 8, fig.show = "hide"}
+
+estimator_performance %>%
+  filter(study_dist == "Uniform distribution of sample sizes", 
+         maximum_n == 120) %>%
+  bias_plot()
+
+estimator_performance %>%
+  filter(study_dist == "More small studies", 
+         maximum_n == 50) %>%
+  bias_plot()
+
+estimator_performance %>%
+  filter(study_dist == "More small studies", 
+         maximum_n == 120) %>%
+  bias_plot()
+
+estimator_performance %>%
+  filter(study_dist == "More large studies", 
+         maximum_n == 50) %>%
+  bias_plot()
+
+estimator_performance %>%
+  filter(study_dist == "More large studies", 
+         maximum_n == 120) %>%
+  bias_plot()
+
+```
+
+### Accuracy of bias-corrected estimators
+
+```{r RMSE-plots, fig.width = 8, fig.height = 8}
+
+RMSE_plot <- function(dat, ylim) {
+  subtitle <- paste0(unique(dat$study_dist), ", maximum sample size of ", unique(dat$maximum_n))
+  ggplot(dat, aes(mean_effect, RMSE, color = estimator, shape = estimator)) + 
+    geom_point() + geom_line() + 
+    coord_cartesian(ylim = ylim) + 
+    facet_grid(heterogeneity ~ selection_level, scales = "free_y") + 
+    theme_light() + 
+    theme(legend.position = "bottom") + 
+    labs(
+      title = "Root mean squared error of effect size estimators",
+      subtitle = subtitle,
+      color = "", shape = "", 
+      x = "Mean effect size", y = "RMSE"
+    )
+}
+
+estimator_performance %>%
+  filter(study_dist == "Uniform distribution of sample sizes", 
+         maximum_n == 50) %>%
+  RMSE_plot(ylim = c(0, 0.3))
+
+```
+
+Starting in the left column where there's no selective publication, we can see that the normal fixed-effect average has the smallest RMSE (and so is most accurate). The next most accurate is SPEESE, which uniformly beats out PEESE, PET-PEESE, SPET, and SPET-SPEESE. It's worth noting, though, that there is a fairly large penalty for using SPEESE when it is unnecessary: even with a quite large sample of 100 studies, SPEESE still has twice the RMSE of the FE estimator. 
+
+The middle column shows these estimators' RMSE when there is an intermediate degree of selective publication. Because of the "fortuitous accident" of how the correlation between $d$ and $V$ affects the PEESE estimator, it is more accurate than SPEESE for small values of the true mean effect. Its advantage is larger when heterogeneity is larger, and heterogeneity also affects the point (i.e., what true mean effect) at which SPEESE catches up with PEESE. Then at larger true mean effects, the accuracy of SPEESE continues to improve while the accuracy of PEESE degrades. It is also interesting to note that at this intermediate degree of selective publication, none of the other bias-correction estimators (PET-PEESE, SPET, SPET-SPEESE) compete with PEESE and SPEESE. 
+
+Finally, the right column plots RMSE when there's strong selective publication, so only statistically significant effects appear. Just as in the middle column, PEESE edges out SPEESE for smaller values of the true mean effect. For very small true effects, both of these estimators are edged out by PET-PEESE and SPET-SPEESE. This only holds over a very small range for the true mean effect though, and for true effects above that range these conditional estimators perform poorly---consistently worse than just using PEESE or SPEESE. 
+
+```{r more-RMSE-plots, fig.width = 8, fig.height = 8, fig.show = "hide"}
+
+estimator_performance %>%
+  filter(study_dist == "Uniform distribution of sample sizes", 
+         maximum_n == 120) %>%
+  RMSE_plot(ylim = c(0, 0.3))
+
+estimator_performance %>%
+  filter(study_dist == "More small studies", 
+         maximum_n == 50) %>%
+  RMSE_plot(ylim = c(0, 0.4))
+
+estimator_performance %>%
+  filter(study_dist == "More small studies", 
+         maximum_n == 120) %>%
+  RMSE_plot(ylim = c(0, 0.3))
+
+estimator_performance %>%
+  filter(study_dist == "More large studies", 
+         maximum_n == 50) %>%
+  RMSE_plot(ylim = c(0, 0.4))
+
+estimator_performance %>%
+  filter(study_dist == "More large studies", 
+         maximum_n == 120) %>%
+  RMSE_plot(ylim = c(0, 0.3))
+
+
+```
+
+Here are charts for the other sample size distributions:
+
+* [Uniform distribution of studies, maximum sample size of 120]({{site.url}}/figure/2017-04-27-PET-PEESE-performance/more-RMSE-plots-1.png)
+* [More small studies, maximum sample size of 50]({{site.url}}/figure/2017-04-27-PET-PEESE-performance/more-RMSE-plots-2.png)
+* [More small studies, maximum sample size of 120]({{site.url}}/figure/2017-04-27-PET-PEESE-performance/more-RMSE-plots-3.png)
+* [More large studies, maximum sample size of 50]({{site.url}}/figure/2017-04-27-PET-PEESE-performance/more-RMSE-plots-4.png)
+* [More large studies, maximum sample size of 120]({{site.url}}/figure/2017-04-27-PET-PEESE-performance/more-RMSE-plots-5.png)
+
+# Comparison to regression adjustments
