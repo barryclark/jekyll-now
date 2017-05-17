@@ -1,5 +1,5 @@
 ---
-title: "Privateer Press' April Releases"
+title: "Privateer Press' May Releases"
 date: 2017-05-16T09:00:00.000Z
 category: news
 tags:
