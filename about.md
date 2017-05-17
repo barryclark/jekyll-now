@@ -6,9 +6,13 @@ permalink: /about/
 
 Spire Digital is a community of geeks in Chesterfield
 
-### More Information
+### Come to our Meetups
 
-A place to include any other types of information that you'd like to include about yourself.
+<https://www.meetup.com/Spire-Digital-Technology-in-Chesterfield/>
+
+### Join us on slack
+
+<http://spiredigitalslack.herokuapp.com>
 
 ### Contact Us
 
