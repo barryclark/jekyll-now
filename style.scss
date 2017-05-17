@@ -18,9 +18,9 @@ html {
 }
 
 body {
-	background: $mpblue;
+	background: $white;
   font: 18px/1.4 $mpmainfont;
-  color: $mpgreen;
+  color: $mpgrey;
 }
 
 .container {
@@ -32,7 +32,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $mptitlefont;
-  color: $mpgreen;
+  color: $mpheadinggrey;
   font-weight: bold;
 
   line-height: 1.7;
@@ -61,7 +61,7 @@ h3 {
 
 h4 {
   font-size: 18px;
-  color: $mpyellow;
+  color: $mpblue;
 }
 
 p {
@@ -69,11 +69,11 @@ p {
 }
 
 a {
-  color: $mpyellow;
+  color: $mpblue;
   text-decoration: none;
 	cursor: pointer;
   &:hover, &:active {
-    color: $mpyellow;
+    color: $mpblue;
   }
 }
 
@@ -122,11 +122,11 @@ img {
 
 // Specify the color of the selection
 ::-moz-selection {
-  color: $mpyellow;
+  color: $mpblue;
   background: $lightGray;
 }
 ::selection {
-  color: $mpyellow;
+  color: $mpblue;
   background: $lightGray;
 }
 
@@ -192,7 +192,7 @@ img {
 
 .site-name {
   margin: 0;
-  color: $mpgreen;
+  color: $mpheadinggrey;
   cursor: pointer;
   font-family: $mptitlefont;
   font-weight: 600;
@@ -202,7 +202,7 @@ img {
 
 .site-description {
   margin: -5px 0 0 0;
-  color: $mpyellow;
+  color: $mpblue;
   font-size: 18px;
   font-family: $mpmainfont;
   font-weight: 400;
@@ -228,14 +228,14 @@ nav {
 
   a {
     margin-left: 20px;
-    color: $mpyellow;
+    color: $mpblue;
     text-align: right;
     font-weight: 300;
     letter-spacing: 1px;
 
     @include mobile {
       margin: 0 10px;
-      color: $mpyellow;
+      color: $mpblue;
     }
   }
 }
@@ -278,7 +278,7 @@ nav {
   margin-top: 20px;
   border-top: 3px solid $mpyellow;
   border-bottom: 0px solid $mpyellow;
-  background-color: $mpblue;
+  background-color: $mpgreen;
 }
 
 footer {
