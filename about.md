@@ -4,12 +4,12 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+This is a blog of Harry Yang. There will be reading notes of Harry on this blog.
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+Harry Yang works in Sociology Department in Kyungnam Univ.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[flyinghendrix@gmail.com](mailto:flyinghendrix@gmail.com)
