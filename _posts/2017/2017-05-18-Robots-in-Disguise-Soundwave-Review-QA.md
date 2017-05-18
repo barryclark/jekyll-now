@@ -22,7 +22,7 @@ Soundwave looks powerful. This alone made me put him in my cart. His robot mode 
 
 ![Soundwave Standing](/images/rid/Standing.png){: .center}
 
-In general, this version of Soundwave has more in common with G1 Soundwave than the last decade of cartoons. He’s blue and grey in the same spots, has red bands around the wrists, a yellow outline around his chest plate, and if you look close you even see designs on his waist that much up with G1’s cassette playback control buttons.
+In general, this version of Soundwave has more in common with G1 Soundwave than the last decade of cartoons. He’s blue and grey in the same spots, has red bands around the wrists, a yellow outline around his chest plate, and if you look close you even see designs on his waist that match up with G1’s cassette playback control buttons.
 
 ![Soundwave G1](/images/rid/SW_G1.png){: .center}
 
@@ -49,7 +49,7 @@ First, his torso locks into place by lowering the shoulder joint. Internally, sm
 
 ![Soundwave Arm Issue](/images/rid/SW_arm_issue.png){: .center}
 
-The other issue in his arms is that the friction pegs that lock his upper arms into place don’t have any corresponding holes, or anything, to clutch. If you try to bend his arms it his elbows, that upper arm is going to come out of place. So, you need to hold him by the upper and lower arm to pose, meaning I can’t naturally aim his hand during the course of place.
+The other issue in his arms is that the friction pegs that lock his upper arms into place don’t have any corresponding holes, or anything, to clutch. If you try to bend his arms at his elbows, that upper arm is going to come out of place. So, you need to hold him by the upper and lower arm to pose, meaning I can’t naturally aim his hand during the course of play.
 
 <h2>Overall</h2>
 
