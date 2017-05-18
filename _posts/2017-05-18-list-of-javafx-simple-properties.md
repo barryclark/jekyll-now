@@ -3,6 +3,7 @@ layout: post
 title: List of JavaFX Simple Properties
 tags: [java]
 keywords: [list of javafx simple properties, javafx,simplebooleanproperty,simpledoubleproperty,simplefloatproperty,simpleintegerproperty,simplelistproperty,simplelongproperty,simplemapproperty,simpleobjectproperty,simplesetproperty,simplestringproperty,simpledateproperty,simpleimageproperty]
+image: /images/Java_logo.jpg
 ---
 
 I've been playing around with JavaFX (the desktop/windows application interface for Java) recently and was trying to find a list of the different "`Simple...Property`" to use in [`TableColumn`](https://docs.oracle.com/javase/8/javafx/api/javafx/scene/control/TableColumn.html)'s [`setCellValueFactory()`](https://docs.oracle.com/javase/8/javafx/api/javafx/scene/control/TableColumn.html#cellValueFactoryProperty) method.
