@@ -7,7 +7,7 @@ tags:
   - spells of genesis
   - everdreamsoft
 layout: post
-description: "Privateer Press’ May Warmachine/Hordes releases are here and they sent over a few items for us to check out."
+description: "Spells of Genesis provides an interesting blockchain-based card economy. What does that mean?"
 featured: spellsofgenesis.png
 author: robk
 published: true

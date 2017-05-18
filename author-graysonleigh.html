@@ -1,0 +1,36 @@
+---
+title: Grayson Leigh - Author Page
+layout: listing
+description: A Pawn's Perspective Author Page for Frank Grip
+---
+
+{% assign author = site.authors["graysonl"] %}
+<img src="/images/graysonl.png" alt="Grayson Leigh" width="150" style="border: 1px solid #4682b4;float: right;margin-bottom: 10px;margin-left: 10px;padding: 5px;"/>
+<h1>Frank Grip - Author Page</h1>
+<p>
+  Grayson is a dude. He didn't provide me with a bio so I'm just filling in some space so this area isn't empty. -Rob
+</p>
+{% if author.email %}<a href="mailto:{{ author.email }}"><i class="svg-icon email"></i></a>{% endif %}
+<br/><br/>
+<div class="posts clearfix">
+  {% for post in site.posts %}
+    {% if post.author contains 'greysonl' %}
+      <article class="post">
+        <div class="eyebrow">{{ post.date | date: "%d %b %Y" }} {% if post.category %} in <a href="/category/#{{ post.category | slugify }}">{{ post.category }}</a> {% endif %}</div>
+        {% if post.featured %}
+          <a href="{{ site.baseurl }}{{ post.url }}"><img src="/images/featured/{{ post.featured }}"/></a>
+        {% endif %}
+        <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+
+        <div class="entry">
+          {% if post.featured %}
+            <a href="{{ site.baseurl }}{{ post.url }}" class="small-link">Read details</a>
+          {% else %}
+            <p>  {{ post.content | strip_html| truncatewords:20}}</p>
+            <a href="{{ site.baseurl }}{{ post.url }}" class="small-link">Read details</a>
+          {% endif %}
+        </div>
+      </article>
+    {% endif %}
+  {% endfor %}
+</div>
