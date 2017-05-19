@@ -5,6 +5,10 @@ date: May 17, 2017
 tags: [meta-analysis]
 ---
 
+In a [previous post]({{ site.url }}/PET-PEESE-performance), I examined the performance of the regression-based tests and adjustments for funnel-plot asymmetry (including Egger's test and the PET, PEESE, and PET-PEESE estimators) when based on standardized mean difference estimates (i.e., d statistics) from simple two-group designs. These methods are commonly interpretted as tests of publication bias (although there can be many other reasons for asymmetric funnel plots besides selective outcome reporting).  I demonstrated that the tests that use the usual standard error estimate can have wildly incorrect Type-I error rates, tending to find evidence of funnel plot asymmetry even in the absence of selective outcome reporting, simply due to the fact that $d$ is correlated with its standard error. Regression-based tests that use a slightly modified covariate, based on sample size alone, maintain the correct Type-I error rate in the absence of publication bias. 
+
+Although these regression-based tests 
+
 # Simulation model
 
 ```{r setup, include = FALSE}
