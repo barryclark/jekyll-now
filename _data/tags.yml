@@ -39,3 +39,6 @@
 
 - slug: automation
   name: Automation
+
+- slug: serverless
+  name: Serverless
