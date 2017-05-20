@@ -5,7 +5,7 @@ subtitle: 줌인터넷 포털본부 포털개발팀 팀문화 공유 및 개선�
 author: 김시은
 category: zuminternet
 nickname: sieunkim
-tag: [zuminternet]
+tag: [zuminternet,agile]
 ---
 
 
