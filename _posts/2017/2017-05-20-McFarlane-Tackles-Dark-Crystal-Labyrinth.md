@@ -15,7 +15,7 @@ author: robk
 published: true
 ---
 
-![Jareth](/images/mcfarlane/Jareth-slugged-2.jpg)McFarlane Toys and The Jim Henson Company have teamed up to create a line of figures from Henson's Labyrinth and The Dark Crystal. The first figure to be released will be a [7-inch figure of Labyrinth’s Jareth The Goblin King](https://mcfarlane.com/toys/jareth/), followed by Jen and Kira from The Dark Crystal. Each figure will have McFarlane's trademark detail and will be fully articulated. They'll come in a windowed display case and will have movie-branded bases for those who want to take them out of the box.
+![Jareth](/images/mcfarlane/Jareth-slugged-2.jpg){: .float-right}McFarlane Toys and The Jim Henson Company have teamed up to create a line of figures from Henson's Labyrinth and The Dark Crystal. The first figure to be released will be a [7-inch figure of Labyrinth’s Jareth The Goblin King](https://mcfarlane.com/toys/jareth/), followed by Jen and Kira from The Dark Crystal. Each figure will have McFarlane's trademark detail and will be fully articulated. They'll come in a windowed display case and will have movie-branded bases for those who want to take them out of the box.
 
  “Jim Henson was one of the most visually creative minds, and these incredible movies are just the tip of the iceberg,” said Todd McFarlane, Owner and CEO of McFarlane Toys. “We pride ourselves on our creativity and attention to detail, and to be able to make figures of these iconic characters is something pretty special.”
 
