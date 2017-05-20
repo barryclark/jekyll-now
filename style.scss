@@ -18,14 +18,14 @@ html {
 }
 
 body {
-	background: $white;
+  background: $white;
   font: 18px/1.4 $helvetica;
   color: $darkGray;
 }
 
 .container {
   margin: 0 auto;
-  max-width: 740px;
+  max-width: 940px;
   padding: 0 10px;
   width: 100%;
 }
@@ -165,8 +165,8 @@ img {
 
 .site-avatar {
   float: left;
-  width: 70px;
-  height: 70px;
+  width: 150px;
+  height: 150px;
   margin-right: 15px;
 
   @include mobile {
@@ -283,6 +283,25 @@ footer {
   text-align: center;
 }
 
+#header-description {
+  float: left;
+  margin-top: 20px;
+}
+
+#header-icons {
+  float: right;
+  margin: 0px;
+}
+
+.entry > td, th {
+  padding: 5px 15px;
+}
+
+.main-container {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 20px;
+  margin-bottom: 50px;
+}
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";

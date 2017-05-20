@@ -7,6 +7,14 @@ layout: default
   <h1>{{ page.title }}</h1>
 
   <div class="entry">
+    <style type="text/css" scoped>
+    thead {
+      display: none;
+    }
+    td, th {
+      padding: 5px 15px;
+    }
+    </style>
     {{ content }}
   </div>
 </article>

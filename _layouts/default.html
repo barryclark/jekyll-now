@@ -9,8 +9,16 @@
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.css">
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+    <!-- Semantic UI script for accordion functions -->
+    <!--<script src="https://cdn.jsdelivr.net/semantic-ui/2.2.6/semantic.min.js"></script>-->
+    <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.6/components/accordion.min.js"></script>
 
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
   </head>
@@ -20,19 +28,37 @@
       <div class="container">
         <header class="masthead clearfix">
           <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
-
-          <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-            <p class="site-description">{{ site.description }}</p>
+          
+          <div>
+            <div class="site-info">
+              <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
+              <p class="site-description">{{ site.description }}</p>
+            </div>
+            <nav>
+              <a href="{{ site.baseurl }}/">Home</a>
+              <a href="{{ site.baseurl }}/blog">Blog</a>
+            </nav>
+          </div>
+          
+          <div>
+            <p id="header-description">I'm a maker, programmer and 3rd year Electrical and Electronic Engineering student at Imperial College London. 
+              Particular interests of late include Machine Learning, Computer Vision and Robotics. 
+              However, I'm generally enthusiastic about all making / programming / electronics-related topics 
+              (with a particular soft spot for projects at the intersection of art and technology),
+              so do get in touch if you'd like to collaborate on a project or chat about any of my existing work!
+              <br>
+              <br>
+              Contact me at <a href="mailto:chanjunshern@gmail.com">chanjunshern@gmail.com</a>!
+            </p>
+            <footer class="footer" id="header-icons">
+              {% include svg-icons.html %}
+            </footer>
           </div>
 
-          <nav>
-            <a href="{{ site.baseurl }}/">Blog</a>
-            <a href="{{ site.baseurl }}/about">About</a>
-          </nav>
         </header>
       </div>
     </div>
+
 
     <div id="main" role="main" class="container">
       {{ content }}
