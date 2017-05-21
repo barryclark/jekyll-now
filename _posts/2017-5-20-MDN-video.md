@@ -17,6 +17,8 @@ There are several reasons why videos are a terrible way to present technical doc
 
 It's worth keeping these problems in mind, even when you are making videos, so you can try to alleviate some of them.
 
+<!--more-->
+
 Video is most useful when you are describing some piece of workflow. It's especially appropriate when the workflow is multi-step ("do this, then do that, then this will happen"), crosses over multiple applications or windows, and includes GUI interaction (now click on the button near the top-left, that looks a bit like a duck").
 
 This kind of thing can be painful to describe in words, and hard for a reader to translate the words into the GUI interactions, but a video can provide a direct and concise guide:
