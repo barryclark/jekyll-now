@@ -4,12 +4,12 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+This site written by Nishiki.
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+Please DM to Twitter@nkiib.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+Please DM to Twitter@nkiib
