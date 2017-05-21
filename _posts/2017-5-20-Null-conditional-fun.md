@@ -1,6 +1,8 @@
 ---
 layout: post
 title: C#: Null conditional operator keeps it tight
+image: forkintheroad.jpg
+description: The other day I ran into a usage of the null conditional operator (added in C# 6) that made me realize that we can get our terseness on in some additional situations.
 ---
 
 ![Image of fork in the road]({{ site.baseurl }}/images/forkintheroad.jpg)
