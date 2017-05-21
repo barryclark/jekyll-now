@@ -12,8 +12,8 @@ The other day I ran into a usage of the [null conditional operator](https://docs
 
 ```
 var thing = someParameter != null && someProperty.subProperty != null && someSubProperty.subPropCollection != null
-  ? new List<string>() 
-  : someParameter.subProperty.subPropCollection;
+  ? someParameter.subProperty.subPropCollection
+  : new List<string>();
 ```
 
 We can just do it like this:
