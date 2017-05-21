@@ -5,8 +5,6 @@ tags: [xamarin, android, ios, xamarin-ios, xamarin-android, xamarin-forms]
 comments: true
 ---
 
-## Multi-line text truncation in Xamarin Forms
-
 Truncate the label by add `LineBreakMode = TailTruncation` makes it one line.
 
 But on a specific label we wanted to show more text to the end user and even than add an ellipsis if needed. So in other words we would love to be able to tell the label control how many lines it should at least try to display.
