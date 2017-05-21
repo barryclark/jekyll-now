@@ -1,0 +1,122 @@
+
+<html><head>
+<meta name="format-detection" content="telephone=no">
+<meta charset="utf-8">
+		<title>素数検索ツール TlooksSosu</title>
+		<script language="JavaScript">
+			<!--// メモリ消費を抑えた篩法もどきによる素数表の作成
+			
+			function Calloc(lSize)
+			{
+				this.length=lSize;
+				for (var i=0;i<lSize;i++) this[i]=0;
+			}
+			
+			function Prime(lMinPrime,lMaxPrime)
+			{
+				var dtStart=new Date();
+				if (lMaxPrime<2) return false;
+				var lBase=3;
+				for (var lSize=1;(lBase+lSize*2-2)*(lBase+lSize*2-2)<lMaxPrime;lSize<<=1) ;
+					// 篩法では上限の平方根までの素因数を調べればよい
+				var plTable=new Calloc(lSize);
+					// 配列 plTable[lSize] は素数の値の保存と篩法を実行するための
+                    
+					// 環状バッファで、plTable[(lIndex+l)%lSize] (l>0) が正の時は
+					// lBase+(lIndex+l)*2 の素因数、負の時は一時保存の素数を表わす
+				document.writeln(lSize," elements allocated.<P>");
+				var lPrimeDisp=0,lPrimePi=1;
+				if (2>=lMinPrime)
+				{
+					document.writeln(2);
+					lPrimeDisp++;
+				}
+				var lIndex=0;
+				while (lBase+(lIndex<<1)<=lMaxPrime)
+				{
+					var lPrime=plTable[lIndex];
+					if (lPrime<=0)
+					{	// 新しい素数を発見
+						var l=lBase+(lIndex<<1);
+						lPrimePi++;
+						if (l>=lMinPrime)
+						{
+							document.writeln(l);
+							lPrimeDisp++;
+						}
+						if (lBase==3) plTable[lIndex]=lPrime=l;
+							// 最初の一巡だけ新しい素数を登録するが、負数が
+							// 居ない事がわかっているので安心して置ける
+							// lPrime>0 なので次の if 文も実行される
+					}
+					if (lPrime)
+					{	// 次の倍数を探す
+						for (;;)
+						{	// plTable[lIndex] の素数を次に動かす
+							lPrime=plTable[lIndex];
+							plTable[lIndex]=0; // とりあえず元の場所を空ける
+							var lOffset;
+							if (lPrime>0) lOffset=lPrime;
+							else
+							{	// 負の時は真の素因数ではないので位置の補正が必要
+								lPrime=-lPrime;
+								lOffset=lBase+(lIndex<<1)+lPrime;
+								lOffset-=(lOffset%lPrime);
+								if (!(lOffset&1)) lOffset+=lPrime;
+								lOffset=((lOffset-lBase-(lIndex<<1))>>1);
+							}
+							var lTable=1; // 正でないといけない
+							for (;lOffset<=lSize;lOffset+=lPrime)
+							{
+								var lIndexNew=((lIndex+lOffset)&(lSize-1));
+								lTable=plTable[lIndexNew];
+								if (lTable>0) continue; // 既に素因数があるので次を探す
+								plTable[lIndexNew]=lPrime; // 空いてる倍数に素因数を登録
+								break;
+							}
+							if (lTable<0)
+							{
+								plTable[lIndex]=lTable; // 先客と入れ替える
+								continue; // 先客の負数についても同じ処理を行う
+							}
+							if (lTable) plTable[lIndex]=-lPrime; // 効率の為に元の位置に負数を登録
+							break;
+						}
+					}
+					if (++lIndex==lSize) lIndex=0,lBase+=(lSize<<1);
+				}
+				var dtEnd=new Date();
+				document.writeln("<P>",lPrimeDisp," primes, π(",lMaxPrime,") = ",lPrimePi,",");
+				document.write(dtEnd.getTime()-dtStart.getTime()," msec.<HR>");
+				document.write("もう一度計算したい時は、リロードしてください。<P>");
+				
+				document.close();
+				return false; // Submitしない
+			}
+			//-->
+		</script>
+                                
+	</head>
+	
+                                <body>
+		<h1>
+			素数検索ツール TlooksSosu
+		</h1>
+		下の入力欄に数値を入力してみてください。一つの数値を確かめたい場合、一つのフォームを数値以外の物を記入してください。<p>
+		</p><form onsubmit="return Prime(parseInt(minprime.value),parseInt(maxprime.value))">
+			<input type="text" name="minprime" value="2">以上
+			<input type="text" name="maxprime" value="1000">以下の素数表を作成します。
+			<input type="submit" value=" Start ">
+		</form>
+		<hr>
+		<script language="JavaScript">
+			<!--
+			document.forms[0].minprime.select();
+			document.forms[0].maxprime.select();
+			document.forms[0].maxprime.focus();
+			//--><B>どうやらこのブラウザはJavaScriptには対応していないようです。</B><P>
+		</script>
+		
+	
+
+</body></html>
