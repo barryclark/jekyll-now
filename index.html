@@ -16,6 +16,8 @@ layout: default
     </article>
   {% endfor %}
   
+  Older posts
+  
   {% for post in site.posts limit:5 %}
     <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
   {% endfor %}
