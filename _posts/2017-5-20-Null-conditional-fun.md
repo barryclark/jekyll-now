@@ -8,7 +8,7 @@ description: The other day I ran into a usage of the null conditional operator (
 
 ![Image of fork in the road]({{ site.baseurl }}/images/forkintheroad.jpg)
 
-The other day I ran into a usage of the null conditional operator (added in C# 6) that made me realize that we can get our terseness on in some additional situations. <!--more-->Instead of having to do a thing like this to ensure no nulls:
+The other day I ran into a usage of the [null conditional operator](https://docs.microsoft.com/en-us/dotnet/articles/csharp/language-reference/operators/null-conditional-operators) (added in C# 6) that made me realize that we can get our terseness on in some additional situations. <!--more-->Instead of having to do a thing like this to ensure no nulls:
 
 ```
 var thing = someParameter != null && someProperty.subProperty != null && someSubProperty.subPropCollection != null
