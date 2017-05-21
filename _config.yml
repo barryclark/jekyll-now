@@ -11,6 +11,8 @@ description: I can't hear you, I'm using a scrambler
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
 
+excerpt_separator: <!--more--> 
+
 #
 # Flags below are optional
 #
