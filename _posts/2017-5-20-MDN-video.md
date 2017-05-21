@@ -33,7 +33,7 @@ Videos for MDN should be:
 
 * **silent**: audio makes videos much more engaging, but they are much more time-consuming to make. Also, having to explain what you're doing makes the videos much longer.
 
-To explain something more complex, use a blend of short videos and screenshots, interspersed with text. The text can help reinforce the points made in the video, and the user can rely on the text or the video as they choose: https://developer.mozilla.org/en-US/docs/Tools/Page_Inspector/How_to/Work_with_animations#Animation_inspector.
+To explain something more complex, use a blend of short videos and screenshots, interspersed with text. The text can help reinforce the points made in the video, and the user can rely on the text or the video as they choose, like this: [Working with the Animation Inspector](https://developer.mozilla.org/en-US/docs/Tools/Page_Inspector/How_to/Work_with_animations#Animation_inspector).
 
 ## Technical requirements
 
