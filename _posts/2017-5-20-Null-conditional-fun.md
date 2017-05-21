@@ -1,6 +1,6 @@
 ---
 layout: post
-title: C#: Null conditional tightens it up
+title: C#: Null conditional operator keeps it tight
 ---
 
 ![Image of fork in the road]({{ site.baseurl }}/images/forkintheroad.jpg)
