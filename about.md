@@ -4,12 +4,6 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+I'm a software engineer living in Oregon with my wonderful family, always trying to improve my skills and knowledge. I love podcasts, board games, having algorithms decide what music I should listen to, and beer.
 
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
-
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+Contact me on twitter [@faabergr](http://twitter.com/faabergr).
