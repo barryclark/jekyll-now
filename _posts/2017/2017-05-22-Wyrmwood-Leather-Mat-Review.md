@@ -23,7 +23,7 @@ The mat is stone-oiled Water Buffalo leather and comes standard with Wyrmwood's 
 
 Even though the mat comes rolled up, it's still a bit stiff when it arrives. It takes a bit of breaking in to soften it up and have it lay flat on the table. You can do this by rolling it up on opposite sides, or use the included leather conditioner to treat it and speed the process up a bit. I used the rolling method with mine for a few days and it really makes a fantastic difference. It's now softer and lays perfectly flat every time it's unrolled.
 
-[!Wyrmwood Gaming Playmat](/images/wyrmwood/mat.jpg)
+![Wyrmwood Gaming Playmat](/images/wyrmwood/mat.jpg)
 
 This is a playmat that's meant to last a lifetime, though it may require a bit of love and care for it to do so. Over time, like any leather product, the playmat will begin to show some wear. Now some people, myself included treasure this look. If you're not one of those people you can use leather conditioner to remove surface imperfections and keep the mat looking like it just came out of the box.
 
