@@ -74,4 +74,4 @@ Finally, embed the video in the page using the [EmbedYouTube](https://github.com
 
 ## What about GIFs?
 
-![](images/mummy-crow.gif)
+![](../images/mummy-crow.gif)
