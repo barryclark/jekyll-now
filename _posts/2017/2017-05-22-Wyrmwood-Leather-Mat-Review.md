@@ -8,7 +8,7 @@ tags:
   - accessories
   - wyrmwood gaming
 layout: post
-description: "Wyrmwood consistantly delivers quality accessories. Their leather playmat is no exception."
+description: "Wyrmwood consistently delivers quality accessories. Their leather playmat is no exception."
 featured: wyrmwoodmat.jpg
 author: robk
 published: true
