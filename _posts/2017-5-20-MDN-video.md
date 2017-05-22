@@ -3,8 +3,6 @@ layout: post
 title: An opinionated guide to making videos for MDN
 ---
 
-## When and what sorts of videos are appropriate?
-
 There are several reasons why videos are a terrible way to present technical documentation.
 
 * video is linear. People don't read online documentation in a linear fashion, starting at the start and reading through to the end. [They scan](http://www.sensible.com/chapter.html). Video is really hard to scan - it forces the user to consume the content start-to-finish.
