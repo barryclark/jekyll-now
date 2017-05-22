@@ -55,7 +55,7 @@ Remember to pause for a second or two at the end, to show the result of the flow
 
 ## Post-production
 
-You'll be able to highlight key moments in post-production. There are a couple of pieces here:
+You'll be able to highlight key moments in post-production. A highlight can consist of a couple of things, which you'll often combine:
 
 * zoom in on parts of the screen
 * fade the background.
