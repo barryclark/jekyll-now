@@ -71,3 +71,7 @@ Log into the [mozhacks](https://www.youtube.com/user/mozhacks/videos) Youtube ch
 ## Embed
 
 Finally, embed the video in the page using the [EmbedYouTube](https://github.com/mozilla/kumascript/blob/master/macros/EmbedYouTube.ejs) macro.
+
+## What about GIFs?
+
+![](images/mummy-crow.gif)
