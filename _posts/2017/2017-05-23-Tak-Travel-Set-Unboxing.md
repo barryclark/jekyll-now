@@ -23,13 +23,3 @@ Anyway, here's some shots of what the set looks like.
 ![Tak Cloth Board](/images/tak/travelclothboard.jpg)
 ![Tak Pieces](/images/tak/travelpieces.jpg)
 ![Tak Pieces](/images/tak/travelpieces2.jpg)
-
-
-
-
-
-
-
-
-
-
