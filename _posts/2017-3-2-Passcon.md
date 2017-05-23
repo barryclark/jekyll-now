@@ -11,7 +11,7 @@ asset_credit:
 ---
 
 ## Summary
-My First javascript project with AngularJS v.1
+This is my First javascript project with AngularJS v.1 and calculate how long it will take to crack by brute force attack.
 
 ## Environment
 + AngularJS v.1
