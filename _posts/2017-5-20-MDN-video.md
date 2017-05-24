@@ -60,6 +60,8 @@ You'll be able to highlight key moments in post-production. A highlight can cons
 
 Highlight key moments of the workflow, especially where the detail is hard to see: clicking on a particular icon or entering a particular URL, for example. Aim for the highlight to last for 1-2 seconds. It's a good idea to add a short transition (200-300 milliseconds) at the starts and ends of the highlights.
 
+Here's a [tutorial on adding highlights in Screenflow](https://photography.tutsplus.com/tutorials/how-to-add-custom-callouts-to-screencast-videos-in-screenflow--cms-27122).
+
 Use some restraint here: don't make the video a constant procession of zooming in and out, people will get seasick.
 
 You'll also be able to crop the video to the desired aspect.
