@@ -5,12 +5,37 @@ date: May 17, 2017
 tags: [meta-analysis]
 ---
 
-In a [previous post]({{ site.url }}/PET-PEESE-performance), I examined the performance of the regression-based tests and adjustments for funnel-plot asymmetry (including Egger's test and the PET, PEESE, and PET-PEESE estimators) when based on standardized mean difference estimates (i.e., d statistics) from simple two-group designs. These methods are commonly interpretted as tests of publication bias (although there can be many other reasons for asymmetric funnel plots besides selective outcome reporting).  I demonstrated that the tests that use the usual standard error estimate can have wildly incorrect Type-I error rates, tending to find evidence of funnel plot asymmetry even in the absence of selective outcome reporting, simply due to the fact that $d$ is correlated with its standard error. Regression-based tests that use a slightly modified covariate, based on sample size alone, maintain the correct Type-I error rate in the absence of publication bias. 
+In a [previous post]({{ site.url }}/PET-PEESE-performance), I examined the performance of the regression-based tests and adjustments for funnel-plot asymmetry (including Egger's test and the PET, PEESE, and PET-PEESE estimators) when based on standardized mean difference estimates from simple two-group designs. These methods are commonly interpretted as tests of publication bias (although there can be many other reasons for asymmetric funnel plots besides selective outcome reporting).  I demonstrated that the tests that use the usual standard error estimate can have wildly incorrect Type-I error rates, tending to find evidence of funnel plot asymmetry even in the absence of selective outcome reporting, simply due to the fact that $d$ is correlated with its standard error. Regression-based tests that use a slightly modified covariate, based on sample size alone, maintain the correct Type-I error rate in the absence of publication bias. 
 
-In addition to these regression-based tests, other another popular technique for examining funnel plot asymmetry is the Trim-and-Fill procedure proposed by [Duval and Tweedie (2000)](https://dx.doi.org/10.2307/2669529). There's also  [Begg and Mazumdar's (1994)](https://dx.doi.org/10.2307/2533446) rank-correlation test. Both of these methods are premised on the assumption that the effect size index is independent of its standard error, and so it might be expected that they won't work right with $d$ statistics, at least as typically implemented. In this post, I provide some simulation evidence that this is indeed the case. In short:
+In addition to these regression-based tests, another popular technique for examining funnel plot asymmetry is the Trim-and-Fill procedure proposed by [Duval and Tweedie (2000)](https://dx.doi.org/10.2307/2669529). There's also  [Begg and Mazumdar's (1994)](https://dx.doi.org/10.2307/2533446) rank-correlation test. Both of these methods are premised on the assumption that effect size estimates are independent of their standard errors. Thus, it might be expected that they won't work right with $d$ statistics, at least as typically implemented. In this post, I provide some simulation evidence that this is indeed the case. In short:
 
 * Trim-and-Fill and rank correlation tests for funnel-plot assymetry have incorrect Type-I error when based on the usual standard error estimator of $d$
 * Modifying the tests to use a function of sample size alone leads to tests that maintain correct type-I error rates in the absence of asymmetry induced by publication bias.
+
+# Methods
+
+For these simulations, I used the exact same data-generating model as in [my previous post]({{ site.url }}/PET-PEESE-performance), which in turn closely followed a model that Uri Simonsohn examined in [this blog post on PET-PEESE](http://datacolada.org/59). The factors involved were:
+
+* the maximum sample size (50 or 120)
+* the distribution of sample sizes (more small studies, uniform, or more large studies)
+* the mean true effect (varied from 0 to 1 in steps of 0.1)
+* the standard deviation of true effects (0.0, 0.1, 0.2, or 0.4)
+* the degree of selective publication (none, moderate, or extreme)
+
+Selective publication was induced by reducing the probability of observing effect estimates that were not statistically significant at the .025 level, based on a one-tailed test (equivalent to censoring effects that were not in the hypothesized direction and significant at the .05 level for a two-tailed test). As in the previous simulations, I looked at a rather large sample size of $k = 100$ observed studies. 
+
+For each simulated meta-sample, I calculated p-values for each of the following tests:
+
+* Begg and Mazumdar's rank correlation test, using $d$ and its standard error;
+* Begg and Mazumdar's rank correlation test, but using $\sqrt{2 / n}$ in place of the standard error of $d$; 
+* the Trim-and-Fill test ($R_0$ variant), in which the null hypothesis is that there are no unobserved studies, again using $d$ and its standard error; and
+* the same Trim-and-Fill test, but using $\sqrt{2 / n}$ in place of the standard error of $d$.
+
+In addition to these tests, I also calculated several versions of the Trim-and-Fill estimator for the population mean effect:
+
+* the $R_0$ and $L_0$ variants of Trim-and-Fill, each based on $d$ and its standard error
+* the $R_0$ and $L_0$ variants, but using $\sqrt{2 / n}$ in place of the standard error of $d$.
+
 
 
 ```{r setup, include = FALSE}
