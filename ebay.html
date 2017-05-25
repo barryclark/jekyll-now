@@ -23,8 +23,13 @@ $(document).ready(function(){
 					var title = $(this).find(".lvtitle a").text();
 					var image = $(this).find("img").attr("src");
 					var url = $(this).find(".lvtitle a").attr("href");
-					var price = $(this).find(".lvprice.prc span").text().replace(/Trending.*/,"");
+					var price = $(this).find(".lvprice.prc span").text().replace(/\s|Trending.*/g,"");
 					
+					var entry = "<a href=" + rover + url + "</a>"
+					     + "<div><h3>" + title + "</h3>" + price
+						 + "<img src='" + image + "' /></div></a>";
+
+					$("#ebay").append(entry);
 					console.log(this);
 				});
 			}
