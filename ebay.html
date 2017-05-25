@@ -19,8 +19,14 @@ $(document).ready(function(){
 				var list = $(ebay).find("#ListViewInner");
 				$("#ebay").html($(list).html());
 				
-				
-				console.log(data);
+				$(items).each(function(){
+					var title = $(this).find(".lvtitle a").text();
+					var image = $(this).find("img");
+					var url = $(this).find(".lvtitle a");
+					var price = $(this).find(".lvprice.prc span").text();
+					
+					console.log(this);
+				});
 			}
 	);
 });
