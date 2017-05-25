@@ -16,13 +16,11 @@ $(document).ready(function(){
 			function(data){
 				var ebay = jQuery.parseHTML(data.contents);
 				var items = $(ebay).find("#ListViewInner > li");
-				var list = $(ebay).find("#ListViewInner");
-				$("#ebay").html($(list).html());
 				
 				$(items).each(function(){
 					var title = $(this).find(".lvtitle a").text();
-					var image = $(this).find("img");
-					var url = $(this).find(".lvtitle a");
+					var image = $(this).find("img").attr("src");
+					var url = $(this).find(".lvtitle a").attr("href");
 					var price = $(this).find(".lvprice.prc span").text();
 					
 					console.log(this);
