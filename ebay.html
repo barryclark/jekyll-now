@@ -16,6 +16,10 @@ $(document).ready(function(){
 			function(data){
 				var ebay = jQuery.parseHTML(data.contents);
 				var items = $(ebay).find("#ListViewInner > li");
+				var list = $(ebay).find("#ListViewInner");
+				$("#ebay").html($(list).html());
+				
+				
 				console.log(data);
 			}
 	);
