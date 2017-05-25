@@ -7,7 +7,24 @@ jquery: true
 excerpt: Stuff I'm selling on eBay.
 ---
 
-<div id="ebay"></div>
+<style>
+.page h1, h2 {
+	text-align: center;
+}
+ul {
+	list-style: none;
+	text-align: center;
+}
+li {
+	display: inline-block;
+	margin: 1em;
+}
+figure img:hover {
+	opacity: 0.8;
+}
+</style>
+
+<ul id="ebay"></ul>
 
 <script>
 $(document).ready(function(){
@@ -23,14 +40,17 @@ $(document).ready(function(){
 					var title = $(this).find(".lvtitle a").text();
 					var image = $(this).find("img").attr("src");
 					var url = $(this).find(".lvtitle a").attr("href");
-					var price = $(this).find(".lvprice.prc span").text().replace(/\s|Trending.*/g,"");
+					var price = $(this).find(".lvprice.prc span").text().replace(/\s|\$|Trending.*/g,"");
 					
-					var entry = "<a href=" + rover + url + "</a>"
-					     + "<div><h3>" + title + "</h3>" + price
-						 + "<img src='" + image + "' /></div></a>";
-
+					var entry = '<li itemscope itemtype="http://schema.org/Product">'
+					 + '<a itemprop="url" href="' + rover + url + '"><figure>'
+					 + '<img itemprop="image" src="' + image + '" alt="' + title + '" />';
+					 + '<figcaption><div itemprop="name">' + title + '</div>'
+					 + '<div><span itemprop="offers" itemscope itemtype="http://schema.org/Offer">'
+					 + '<span itemprop="priceCurrency" content="USD">$</span><span itemprop="price">
+					 + price + '</span></span></div></figcaption></figure></a></li>';
+					
 					$("#ebay").append(entry);
-					console.log(this);
 				});
 			}
 	);
