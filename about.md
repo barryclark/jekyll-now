@@ -4,12 +4,8 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+I am a software developer working in Javascript Frameworks(React, Angular JS, jQuery), Python, Node.js and Java. I have developed web-sites and web-apps for e-commerce, banking, edu-tech, and media companies.
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
-
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+I actively contribute on Github. Apart from web-development, I am currently pursuing courses in Artificial Intelligence and Machine Learning on Coursera and Fast.ai. When I am not coding, I enjoy reading, travelling, cooking and shopping.
