@@ -9,7 +9,7 @@ tags:
 layout: post
 description: "The Pokémon Company International launched Magikarp Jump, a brand new Pokémon mobile game where players train their Magikarp to soar as high as possible."
 featured: karpjump.png
-author: rob
+author: robk
 published: true
 ---
 
