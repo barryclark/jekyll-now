@@ -1,6 +1,6 @@
 ---
 title: "Magikarp Jump Now Available on Mobile"
-date: 2017-05-23 13:30:00 Z
+date: 2017-05-25 09:30:00 Z
 category: video games
 tags:
   - video games
