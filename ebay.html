@@ -11,9 +11,13 @@ excerpt: Stuff I'm selling on eBay.
 
 <script>
 $(document).ready(function(){
-	$.get("http://www.ebay.com/sch/yknowitsjoe/m.html",function(data,status,xhr) {
-		console.log("hello");
-	}
-	,"jsonp")
+	$.ajax({
+	  url: "http://www.ebay.com/sch/yknowitsjoe/m.html",
+	  dataType: "jsonp",
+	  success: function (data) {
+		console.log(data)
+		alert(data);
+	  }
+	});
 });
 </script>
