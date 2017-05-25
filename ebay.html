@@ -12,6 +12,8 @@ excerpt: Stuff I'm selling on eBay.
 <script>
 $(document).ready(function(){
 
+	var rover = "https://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_id=114&ipn=icep&toolid=20004&campid=5337996799&mpre="
+
 	$.getJSON('http://anyorigin.com/go?url=http://www.ebay.com/sch/yknowitsjoe/m.html&callback=?',
 			function(data){
 				var ebay = jQuery.parseHTML(data.contents);
@@ -21,7 +23,7 @@ $(document).ready(function(){
 					var title = $(this).find(".lvtitle a").text();
 					var image = $(this).find("img").attr("src");
 					var url = $(this).find(".lvtitle a").attr("href");
-					var price = $(this).find(".lvprice.prc span").text();
+					var price = $(this).find(".lvprice.prc span").text().replace(/Trending.*/,"");
 					
 					console.log(this);
 				});
