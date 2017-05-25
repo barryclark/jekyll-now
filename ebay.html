@@ -14,8 +14,8 @@ $(document).ready(function(){
 
 	$.getJSON('http://anyorigin.com/go?url=http://www.ebay.com/sch/yknowitsjoe/m.html&callback=?',
 			function(data){
+				var ebay = jQuery.parseHTML(data.contents);
 				console.log(data);
-				alert(data);
 			}
 	);
 });
