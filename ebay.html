@@ -12,12 +12,10 @@ excerpt: Stuff I'm selling on eBay.
 <script>
 $(document).ready(function(){
 
-	$.ajax({
-		url:'http://anyorigin.com/go?url=http://www.ebay.com/sch/yknowitsjoe/m.html',
-			type:'GET',
-			success: function(data){
-			   		console.log(data)
-					alert(data);
+	$.getJSON({'http://anyorigin.com/go?url=http://www.ebay.com/sch/yknowitsjoe/m.html&callback=?',
+			function(data){
+				console.log(data)
+				alert(data);
 			}
 	});
 });
