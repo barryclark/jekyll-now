@@ -1,0 +1,19 @@
+---
+layout: page
+title: My eBay Stuff
+permalink: /ebay/
+image: /images/covers/t-shirt-shop.png
+jquery: true
+excerpt: Stuff I'm selling on eBay.
+---
+
+<div id="ebay"></div>
+
+<script>
+$(document).ready(function(){
+	$.get("http://www.ebay.com/sch/yknowitsjoe/m.html",function(data,status,xhr) {
+		console.log("hello");
+	}
+	,"html")
+}
+</script>
