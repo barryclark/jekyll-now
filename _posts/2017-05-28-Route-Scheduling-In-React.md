@@ -13,5 +13,5 @@ We use *Google Maps API's Autocomplete* for suggesting the possible places of tr
 
 Each suggested route initially highlights the stations on which the user has to switch lines. On clicking a route, the detailed view is displayed for the clicked route. The detailed view displays a breakdown of the lines a user would have to travel for covering a given route.
 
-<p data-height="575" data-theme-id="dark" data-slug-hash="BRVwNv" data-default-tab="result" data-user="ali008" data-embed-version="2" data-pen-title="BRVwNv" class="codepen"> See the Pen <a href="https://codepen.io/ali008/pen/BRVwNv/"> BRVwNv </a> by MIR ALI ( <a href="https://codepen.io/ali008"> @ali008 </a>) on <a href="https://codepen.io"> CodePen </a>. </p>
-<script src="https://production-assets.codepen.io/assets/embed/ei.js"> </script>
+<p data-height="713" data-theme-id="dark" data-slug-hash="BRVwNv" data-default-tab="result" data-user="ali008" data-embed-version="2" data-pen-title="BRVwNv" class="codepen"> See the Pen <a href="https://codepen.io/ali008/pen/BRVwNv/"> BRVwNv </a> by MIR ALI (<a href="https://codepen.io/ali008">@ali008</a>) on <a href="https://codepen.io"> CodePen </a> . </p>
+<script src="https://production-assets.codepen.io/assets/embed/ei.js"> </script> 
