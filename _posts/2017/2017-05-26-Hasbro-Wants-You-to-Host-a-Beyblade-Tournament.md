@@ -7,7 +7,7 @@ tags:
   - beyblade
   - hasbro
 layout: post
-description: "The first Ys game in 8 years will soon be headed west."
+description: "Host your own Beyblade Burst tournament at home!"
 featured: hasbroburst.png
 author: robk
 published: true
