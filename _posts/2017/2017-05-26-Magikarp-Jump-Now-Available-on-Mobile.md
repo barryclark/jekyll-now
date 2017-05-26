@@ -1,5 +1,5 @@
 ---
-title: "Ys VII: Lacrimosa of DANA Comes to the US in September"
+title: "Ys VIII: Lacrimosa of DANA Comes to the US in September"
 date: 2017-05-26 11:00:00 Z
 category: video games
 tags:
