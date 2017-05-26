@@ -1,6 +1,6 @@
 ---
 layout: post
-title: URL Comparison in JS
+title: URI Comparison in JS
 ---
 
 We write a function checkURIs(uri1, uri2) that can check if 2 URIs are equivalent. The function should return true if match, and false otherwise.
