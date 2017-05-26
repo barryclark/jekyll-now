@@ -144,11 +144,7 @@ title: Πως αγοράζουμε, πουλάμε, ξοδεύουμε και δ
 
 ### <a name="prepaidcard"></a> Μπορώ να φορτίζω μια χρεωστική κάρτα σε Ευρώ με Bitcoin;
 
-Μπορείτε να βγάλετε μια επαναφορτιζόμενη προπληρωμένη χρεωστική κάρτα σε Ευρώ από:
-
-- [Wirex](https://wirexapp.com)
-- [Bitwala](https://www.bitwala.io)
-- [Xapo](https://xapo.com) (η κάρτα είναι σε Δολάρια Αμερικής)
+Μπορείτε να βγάλετε μια επαναφορτιζόμενη προπληρωμένη χρεωστική κάρτα σε Ευρώ. Ένας κατάλογος με τέτοιες κάρτες είναι [εδώ](https://www.cryptocompare.com/wallets/#/cards).
 
 Μπορείτε να χρησιμοποιείτε τις κάρτες αυτές για αγορές και αναλήψεις μετρητών στην Ελλάδα και στο εξωτερικό.
 
@@ -207,7 +203,7 @@ title: Πως αγοράζουμε, πουλάμε, ξοδεύουμε και δ
 - Μερικές γνωστές απάτες που έχουν εμφανιστεί στην Ελλάδα: [OneCoin/OneLife](https://en.wikipedia.org/wiki/OneCoin), S-coin/Coinspace. Μπορείτε να διαβάσετε περισσότερα στα Ελληνικά στο [Scamcoin Detector](http://scamdetectorgr.blogspot.gr/).
 - Μερικά άρθρα που περιγράφουν απάτες με κρυπτονομίσματα: [https://blog.xapo.com/beware-of-extraordinary-claims/](https://blog.xapo.com/beware-of-extraordinary-claims/), [http://www.badbitcoin.org/tips/](http://www.badbitcoin.org/tips/), [https://www.weusecoins.com/bitcoin-scams-how-stay-safe/](https://www.weusecoins.com/bitcoin-scams-how-stay-safe/), [https://www.coingecko.com/buzz/complete-guide-to-bitcoin-scams](https://www.coingecko.com/buzz/complete-guide-to-bitcoin-scams). Βίντεο που περιγράφει πως δουλεύουν τα πυραμιδικά σχήματα Πόνζι: [https://www.youtube.com/watch?v=VXRkfqw67GE](https://www.youtube.com/watch?v=VXRkfqw67GE).
 
-Τελευταία ενημέρωση: 2017-05-05
+Τελευταία ενημέρωση: 2017-05-26
 
 <!-- <div class="posts">
   {% for post in site.posts %}
