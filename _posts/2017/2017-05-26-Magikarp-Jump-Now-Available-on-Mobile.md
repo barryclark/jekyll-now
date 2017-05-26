@@ -8,7 +8,7 @@ tags:
   - nis america
 layout: post
 description: "The Pokémon Company International launched Magikarp Jump, a brand new Pokémon mobile game where players train their Magikarp to soar as high as possible."
-featured: ysviii.png
+featured: ysviii.jpg
 author: robk
 published: true
 ---
