@@ -1,4 +1,4 @@
-### Setting up jekyll on Mac OS X
+## Setting up jekyll on Mac OS X
 
 If you happen to have Mac OS X device, it is a lot simpler to test your additions using the `jekyll` command line directly; you don't have to set up github pages, and you can still verify everything is fine.
 
@@ -30,7 +30,7 @@ $ export http_proxy=http://10.12.1.236:8083
 $ export https_proxy=https://10.12.1.236:8083
 ```
 
-### Setting up jekyll on Windows
+## Setting up jekyll on Windows
 
 The short version of this is: It's complicated, and not actually advisable.
 
@@ -38,7 +38,7 @@ The most promising path to doing this is most probably to set up a Linux VM and 
 
 But you can try this:
 
-### Setting up jekyll using docker
+## Setting up jekyll using docker
 
 **Note**: This will work both on Windows and Mac OS X, in case you do not want to "pollute" your local machine with ruby packages.
 
@@ -71,7 +71,7 @@ $ docker run --rm --label=jekyll --volume=$(pwd):/src/jekyll \
 
 Jekyll will then be served from [localhost](http://localhost:4000), just like from Linux.
 
-### Setting up jekyll using Kitematic
+## Setting up jekyll using Kitematic
 
 If you are working with Kitematic (which has fewer proxy issues behind company firewalls than the Quickstart terminal), follow these steps:
 
