@@ -87,3 +87,5 @@ exclude:
     - LICENSE
     - README.md
     - CNAME
+    - install.md
+    
