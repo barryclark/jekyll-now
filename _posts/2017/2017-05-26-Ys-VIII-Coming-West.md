@@ -7,7 +7,7 @@ tags:
   - ys
   - nis america
 layout: post
-description: "The Pokémon Company International launched Magikarp Jump, a brand new Pokémon mobile game where players train their Magikarp to soar as high as possible."
+description: "The first Ys game in 8 years will soon be headed west."
 featured: ysviii.jpg
 author: robk
 published: true
