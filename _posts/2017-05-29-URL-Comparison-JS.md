@@ -61,7 +61,7 @@ URI search strings may have encoded components, and needed to be decoded before 
  
  The detailed solution is outlined in this pen. 
  
- <p data-height="1100" data-theme-id="dark" data-slug-hash="PmgmYL" data-default-tab="result" data-user="ali008" data-embed-version="2" data-pen-title="URL Comparison in JS" class="codepen"> See the Pen <a href="https://codepen.io/ali008/pen/PmgmYL/"> URL Comparison in JS </a> by MIR ALI (<a href="https://codepen.io/ali008">@ali008</a>) on <a href="https://codepen.io"> CodePen </a>. </p>
+ <p data-height="1100" data-theme-id="dark" data-slug-hash="PmgmYL" data-default-tab="js" data-user="ali008" data-embed-version="2" data-pen-title="URL Comparison in JS" class="codepen"> See the Pen <a href="https://codepen.io/ali008/pen/PmgmYL/"> URL Comparison in JS </a> by MIR ALI (<a href="https://codepen.io/ali008">@ali008</a>) on <a href="https://codepen.io"> CodePen </a>. </p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"> </script>
 
 Please comment if you have any suggestions/improvements for my solution.
