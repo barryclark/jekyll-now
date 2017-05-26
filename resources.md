@@ -4,6 +4,9 @@ title: Resources
 permalink: /resources/
 ---
 
+### [Github Repository](https://github.com/Haufe-Lexware)
+Our Github repository is the main staging ground for our Open Source contributions.
+
 ### [API Style Guide](https://github.com/Haufe-Lexware/api-style-guide/blob/master/readme.md)
 A List of rules, best practices, resources and our way of creating REST APIs in the Haufe Group. The style guide addresses API Designers, mostly developers and architects, who want to design an API.
 
