@@ -13,6 +13,7 @@ If you want to find out more about using `github-pages` for blogging or want to 
 * [Jekyll documentation, i.e. how to include images](http://jekyllrb.com/docs/posts/)
 * [Github pages powered by Jekyll](https://github.com/jekyll/jekyll/wiki/sites)
 * Liquid Documentation [here](https://docs.shopify.com/themes/liquid-documentation/basics) and [here](https://github.com/Shopify/liquid/wiki/Liquid-for-Designers)
+* For running the blog locally [here](install.md)
 
 Please note to set the proxy if you are working from within the Haufe Intranet
 
