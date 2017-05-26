@@ -12,7 +12,7 @@ layout: post
 description: "The Deer God is absolutely beautiful, but the buck stops there."
 featured: thedeergod.jpg                                                             
 author: robk
-published: false
+published: true
 ---
 
 ![The Deer God](/images/thedeergod/cover.jpg){: .float-right}
