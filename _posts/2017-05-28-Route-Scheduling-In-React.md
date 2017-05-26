@@ -3,8 +3,6 @@ layout: post
 title: Route Scheduling in React!
 ---
 
-## Introduction
-
 A couple of weeks ago, I was working on building a route-planner for the Singapore MRT.
 The application was to be built in **React.JS**. Since it was a small application, using *Flux* or *Redux* would have been an overkill.
 
