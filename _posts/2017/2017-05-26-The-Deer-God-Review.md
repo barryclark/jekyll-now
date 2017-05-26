@@ -10,7 +10,7 @@ tags:
   - crescent moon games
 layout: post
 description: "The Deer God is absolutely beautiful, but the buck stops there."
-featured: thedeergod.jpg                                                             
+featured: thedeargod.jpg                                                        
 author: robk
 published: true
 ---
