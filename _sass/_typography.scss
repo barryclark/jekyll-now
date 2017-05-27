@@ -1,0 +1,383 @@
+/* Post Typography */
+
+/*--------------
+  Body
+  -------------- */
+
+body {
+  font: $base-font;
+  font-size: $base-font-size;
+  font-weight: 400;
+  color: $text-color;
+  background-color: $background-color;
+  -webkit-font-smoothing: antialiased;
+  word-break: keep-all;
+
+  @media (max-width: 38rem){
+    font-size: $mobile-font-size;
+    font-weight: 300;
+    word-break: keep-all;
+  }
+}
+
+/*--------------
+  Link
+  -------------- */
+a {
+  color: $link-color;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+}
+
+
+/*--------------
+  Header
+  -------------- */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+}
+
+h1 {
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+  font-size: 2.25em;
+  line-height: 1.2em;
+  border-bottom: 1px solid #eee;
+}
+
+h2 {
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+  font-size: 1.75em;
+  line-height: 1.225em;
+  border-bottom: 1px solid #eee;
+}
+
+h3 { 
+  font-size: 1.5em; 
+  line-height: 1.43em;
+}
+
+h4 { 
+  font-size: 1.25em;
+}
+
+h5 { 
+  font-size: 1em; 
+}
+
+h6 { 
+  font-size: 1em;
+  color: $oc-gray-6; 
+}
+
+/*--------------
+  Body Text
+  -------------- */
+
+p {
+  color: $text-color;
+  margin: 0 0 1rem;
+  line-height: 1.7em;
+}
+
+/*--------------
+  Lists
+  -------------- */
+
+//  Reset list
+ol, 
+ul,
+dl {
+  margin: 0 0 1em;
+  padding: 0;
+  list-style: none;
+  list-style-image: none;
+}
+
+//  Positioning Bullets
+ol, 
+ul {
+  > li {
+    &:before {
+      position: absolute;
+      width: $li-bullets-width;
+      margin-left: -$li-bullets-width;
+      display: inline-block;
+      box-sizing: border-box;
+      text-align: right;
+    }
+  }
+}
+
+// Restyle <ul>
+ul {
+  > li:before {
+    content: "\2022";
+    padding-right: $ul-bullets-right-space;
+    font-family: $ul-bullets-font;
+    font-size: $ul-bullets-font-size;
+    line-height: $ul-bullets-font-line-height;
+  }
+}
+
+// Restyle <ol>
+ol {
+  counter-reset: section;
+
+  > li:before {
+    counter-increment: section;
+    content: counter(section) ".";
+    padding-right: $ol-bullets-right-space;
+    font-family: $ol-bullets-font;
+    font-size: $ol-bullets-font-size;
+    line-height: $ol-bullets-font-line-height;
+  }
+}
+
+//  Refine Spacing
+ol, 
+ul {
+  > li {
+    margin: 0 auto $li-bottom-space $li-bullets-width;
+    line-height: $li-line-height;
+    
+    > ol,
+    > ul {
+      margin-top: $li-bottom-space;
+    }
+  }
+}
+
+li {
+  > ol,
+  > ul {
+    > li {
+      font-size: ($li-child-size-ratio * 1em);
+      margin: 0 auto ($li-bottom-space * $li-child-size-ratio) ($li-bullets-width * $li-child-size-ratio);
+    }
+  }
+}
+
+dt {
+  float: left;
+  width: $dt-width;
+  overflow: auto;
+  clear: left;
+  text-align: right;
+  white-space: nowrap;
+  font-weight: bold;
+  margin-bottom: $li-bottom-space;
+
+  @media (max-width: 38rem){
+    width: 120px;
+  }
+}
+
+dd {
+  margin-left: $dd-position;
+  margin-bottom: $li-bottom-space;
+
+  @media (max-width: 38rem){
+    margin-left: 140px;
+  }
+}
+
+/*--------------
+  
+  -------------- */
+
+hr {
+  border: 0;
+  border-top: 1px solid $divider-color;
+  margin: 1.5rem auto;
+}
+
+strong {
+  color: #333;
+  font-weight: 600;
+}
+
+abbr {
+  font-size: 85%;
+  font-weight: bold;
+  color: #555;
+  text-transform: uppercase;
+}
+
+abbr[title] {
+  cursor: help;
+  border-bottom: 1px dotted #e5e5e5;
+}
+
+blockquote {
+  padding: 0 0 0 1.4rem;
+  margin: 0 2rem 1rem 0;
+  color: $oc-gray-6;
+  border-left: .3rem solid $oc-gray-3;
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+/*--------------
+  Footnote
+  -------------- */
+
+a.footnote {
+  &,
+  .post p &,
+  .post ol &,
+  .post ul & {
+    margin: 0 3px;
+    padding: 2px 6px 2px;
+    font-size: $base-font-size-sm;
+    text-align: center;
+    -webkit-text-stroke: 0.25px;
+    border: 1px solid $divider-color;
+    border-radius: 2px;
+    -webkit-transition: 0.2s ease-out all;
+    text-decoration: none;
+
+    &:hover {
+      background: $background-over-color;
+    }
+  }
+}
+.footnotes {
+  margin: 4rem 0;
+  padding: 2rem 1em;
+  border-top: 1px solid $divider-color;
+  font-size: $base-font-size-sm;
+}
+
+/*--------------
+  Code Snippet
+  -------------- */
+
+code,
+pre {
+  font-family: $code-font;
+}
+
+code {
+  padding: .25em .5em;
+  font-size: 85%;
+  color: $code-color;
+  background-color: $code-background-color;
+  border-radius: 3px;
+}
+
+pre {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  padding: .5rem;
+  font-size: .8rem;
+  line-height: 1.4;
+  white-space: pre;
+  white-space: pre-wrap;
+  word-break: break-all;
+  // word-wrap: break-word;
+  background-color: $code-background-color;
+}
+
+pre code {
+  padding: 0;
+  font-size: 100%;
+  color: inherit;
+  background-color: transparent;
+}
+
+.highlight {
+  margin-bottom: 1rem;
+  border-radius: 4px;
+}
+
+.highlight pre {
+  margin-bottom: 0;
+}
+
+/*--------------
+  gist
+  -------------- */
+
+.gist .gist-file {
+  font-family: $code-gist-font;
+}
+
+.gist .markdown-body {
+  padding: 15px;
+}
+
+.gist pre {
+  padding: 0;
+  background-color: transparent;
+}
+
+.gist .gist-file .gist-data {
+  font-size: .8rem !important;
+  line-height: 1.4;
+}
+
+.gist code {
+  padding: 0;
+  color: inherit;
+  background-color: transparent;
+  border-radius: 0;
+}
+
+/*--------------
+  Image
+  -------------- */
+
+img {
+  display: block;
+  max-width: 100%;
+  margin: 0 0 1rem;
+  border-radius: 5px;
+}
+
+/*--------------
+  Table
+  -------------- */
+
+table {
+  margin-bottom: 1rem;
+  width: 100%;
+  border: 1px solid $table-border-color;
+  border-collapse: collapse;
+}
+
+td,
+th {
+  padding: .25rem .5rem;
+  border: 1px solid $table-border-color;
+}
+
+tbody tr:nth-child(odd) td,
+tbody tr:nth-child(odd) th {
+  background-color: $table-background-color;
+}
+
+/*--------------
+  Alignment
+  -------------- */
+
+.center {
+  text-align: center;
+
+  &-image {
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+.right {
+  text-align: right
+}

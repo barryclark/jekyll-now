@@ -1,0 +1,376 @@
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-family: $base-font;
+  font-size: $base-font-size;
+  line-height: 1.6;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.content-container {
+  max-width: 48rem;
+  padding: 5rem 1rem;
+  margin-left:  auto;
+  margin-right: auto;
+
+  @media (max-width: 48rem){
+    padding: 2rem 1.3rem;
+  }
+}
+
+
+/*--------------
+  Header
+  -------------- */
+.header {
+  padding: 2%;
+  margin-bottom: 1.5em;
+
+  &-title {
+    margin: 0.3em 0;
+    font-size: 2.25em;
+    line-height: 1.2em;
+    font-weight: 600;
+
+    a {
+      color: $base-color;
+      &:hover,
+      &:focus {
+        text-decoration: none;
+      }
+    }
+
+    span {
+      color: $oc-gray-5;
+    }
+
+  }
+
+  &-nav {
+    a {
+      color: $oc-gray-7;
+      text-transform: lowercase;
+      -webkit-transition: all .2s ease;
+         -moz-transition: all .2s ease;
+              transition: all .2s ease;
+      margin-right: .3rem;
+
+      &:hover,
+      &:focus {
+        color: $oc-gray-7;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.header-small {
+  text-align: left;
+  margin-bottom: .75rem;
+  font-size: .75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+
+  a {
+    color: $base-color;
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+  }
+}
+
+/*--------------
+  Page
+  -------------- */
+
+.page {
+  &-title {
+    margin-top: 0;
+    margin-bottom: 2rem;
+    font-size: 2.25em;
+    line-height: 1.2em;
+    font-weight: 600;
+  }
+}
+
+
+/*--------------
+  Post
+  -------------- */
+.post {
+
+  &-title {
+    margin-top: 0rem;
+    margin-bottom: 0.3rem;
+    font-size: 2.25em;
+    line-height: 1.2em;
+    font-weight: 600;
+  }
+
+  &-date {
+    margin-bottom: .5rem;
+    color: $oc-gray-8;
+    font-size: .75rem;
+    text-transform: uppercase;
+  }
+
+   &-tag {
+    margin-bottom: 1.5rem;
+
+    ul {
+      li:before {
+        content: ""
+      }
+
+      li {
+        margin: 0;
+        font-size: .75rem;
+        font-weight: 300;
+        display: inline;
+        list-style-type: none;
+        text-transform: lowercase;
+
+        a {
+          display: inline-block;
+          margin: 4px;
+          margin-left: 0px;
+          color: $oc-white;
+          background-color: $oc-gray-6;
+          text-decoration: none;
+          border-radius: 3px;
+
+          span {
+            float: left;
+            padding: .5px 5px;
+          }
+        }
+
+        a:hover {
+          background-color: $oc-gray-7;
+        }
+
+        a:visited {
+          background-color: $oc-white;
+        }
+      }
+    }
+  }
+
+  &-disqus {
+    margin-top: 4rem;
+  }
+
+}
+
+/*--------------
+  Post list
+  -------------- */
+
+.list {
+  &-post {
+    padding: 4% 2%;
+    
+    &:hover {
+      background-color: $background-over-color;
+      border-color: transparent;
+      border-radius: 10px;
+    }
+
+    a {
+      color: $base-color;
+
+      &:hover,
+      &:focus {
+        text-decoration: none;
+      }
+    }
+
+    &-title {
+      margin-bottom: .3rem;
+      font-size : 1.8rem;
+      font-weight: 600;
+    }
+
+    &-date {
+      color: $base-lighten-color;
+      font-size: .8rem;
+      text-transform: uppercase;
+    }
+
+    &-desc {
+      color: $base-color;
+      margin-bottom: .25rem;
+      font-size :1rem;
+    }
+  }
+
+  &-pagination {
+    margin-top: 4rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    // text-transform: lowercase;
+
+    &-previous {
+      float: left;
+      padding-left: 2%;
+      a {
+        color: $oc-gray-6;
+
+        &:hover,
+        &:focus {
+          color: $oc-gray-7;
+          text-decoration: none;
+        }
+      }
+    }
+
+    &-next {
+      float: right;
+      padding-right: 2%;
+      a {
+        color: $oc-gray-6;
+
+        &:hover {
+          color: $oc-gray-7;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+
+/*--------------
+  Tags
+  -------------- */
+.tag {
+  &-index {
+    ul {
+      li:before {
+        content: ""
+      }
+
+      li {
+        margin: 0;
+        font-size: 0.8rem;
+        display: inline;
+        list-style-type: none;
+        text-transform: lowercase;
+
+        a {
+          display: inline-block;
+          margin: 4px;
+          margin-left: 0px;
+          color: $oc-white;
+          background-color: $oc-gray-6;
+          text-decoration: none;
+          border-radius: 3px;
+
+          span {
+            float: left;
+            padding: .5px 5px;
+          }
+
+          .count {
+            background-color: $oc-gray-7;
+            border-radius: 0 3px 3px 0;
+          }
+        }
+
+        a:hover {
+          background-color: $oc-gray-7;
+        }
+      }
+    }
+  }
+
+  &-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-transform: lowercase;
+    padding: 1rem 0;
+  }
+
+  &-post {
+    a {
+      color: $base-color;
+
+      &:hover,
+      &:focus {
+        text-decoration: none;
+      }
+    }
+
+    &:hover {
+      color: $base-color;
+      text-decoration: none;
+      background-color: $background-over-color;
+      border-color: transparent;
+      }
+  }
+}
+
+/*--------------
+  Archive
+  -------------- */
+.archive {
+  &-list {
+    &-post {
+      padding: 0.1rem;
+
+      &:hover {
+          background-color: $background-over-color;
+          border-color: transparent;
+      }
+
+      a {
+        color: $base-color;
+
+        &:hover,
+        &:focus {
+          text-decoration: none;
+        }
+      }
+
+      &-title {
+        font-size : 1.2rem;
+        font-weight: 400;
+      }
+
+      &-date {
+        color: $base-lighten-color;
+        font-size: .75rem;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+
+/*--------------
+  Footer
+  -------------- */
+.footer {
+  text-align: center;
+  font-size: .75rem;
+
+  &-link {
+    margin: .2rem;
+
+    a {
+      color: $base-color;
+      margin: 4px;
+    }
+  }
+}
