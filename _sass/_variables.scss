@@ -1,27 +1,57 @@
+/* SCSS Variables */
 
-//
-// VARIABLES
-//
+/*--------------
+  Font
+  -------------- */
+$base-font: 'Spoqa Han Sans', 'Source Sans Pro', Apple SD Gothic Neo, Nanum Barun Gothic, Nanum Gothic, Verdana, Arial, Dotum, sans-serif;
+$code-font: Menlo, 'Ubuntu Mono', Monaco, 'Spoqa Han Sans', monospace;
+$code-gist-font: Menlo, 'Ubuntu Mono', Monaco, 'Spoqa Han Sans', monospace;
 
-// Colors
-$blue: #4183C4;
+$base-font-size: 18px;
+$base-font-size-sm: 14px;
 
-// Grays
-$black: #000;
-$darkerGray: #222;
-$darkGray: #333;
-$gray: #666;
-$lightGray: #eee;
-$white: #fff;
+$mobile-font-size: 16px;
 
-// Font stacks
-$helvetica: Helvetica, Arial, sans-serif;
-$helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$georgia: Georgia, serif;
 
-// Mobile breakpoints
-@mixin mobile {
-  @media screen and (max-width: 640px) {
-    @content;
-  }
-}
+/*--------------
+  Color
+  -------------- */
+$base-color: $oc-gray-8;
+$base-lighten-color: $oc-gray-6;
+
+$background-color: $oc-white;
+$background-over-color: $oc-gray-1;
+
+$text-color: $oc-gray-8;
+$link-color: $oc-blue-8;
+$code-color: $oc-indigo-9;
+$code-background-color: $oc-gray-1;
+$table-border-color: $oc-gray-2;
+$table-background-color: $oc-gray-1;
+
+$divider-color: $oc-gray-1;
+
+
+/*--------------
+  List
+  -------------- */
+
+$li-bottom-space: 0.8em;
+$li-bullets-width: 1.7em;
+$li-line-height: 1.55;
+
+$ul-bullets-font: inherit;
+$ul-bullets-font-size: 1.2em;
+$ul-bullets-font-line-height: 1.2;
+$ul-bullets-right-space: 0.65em;
+
+$ol-bullets-font: inherit;
+$ol-bullets-font-size: 1em;
+$ol-bullets-font-line-height: inherit;
+$ol-bullets-right-space: 0.65em;
+
+$li-child-size-ratio: 0.95;
+
+$dt-width: 180px;
+$dt-dd-space: 20px;
+$dd-position: $dt-width+$dt-dd-space
