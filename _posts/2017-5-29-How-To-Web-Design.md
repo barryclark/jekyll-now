@@ -11,10 +11,10 @@ For some of us, when we are building out the backbone of our ideas, the last thi
 These are only a few of the questions we need to learn to ask ourselves **before** we start writing any code.  Here's a few pointers to keep in mind:
  
 ### A good website, at minimum, should be:
-*Responsive
-*Accessible
-*Fun (Remember to be human!)
-*Easy to understand
+* Responsive
+* Accessible
+* Fun (Remember to be human!)
+* Easy to understand
  
 ### Plan your content
  
@@ -50,9 +50,9 @@ Templates can be free or paid, amazing or horrible.  Think of it like base theme
  
 But again, important to note: templates exist because another person built them first.  Take great care in researching the fine print of any design template before you assume it's free or available to use.  Many require attributes and licensing that you'll have to discuss with the provider. Here's a few popular template companies:
  
-*[Bootstrap Templates](https://startbootstrap.com/template-categories/all/)
-*[Pixelarity](https://pixelarity.com/)
-*[Wix](http://www.wix.com/website/templates)
+* [Bootstrap Templates](https://startbootstrap.com/template-categories/all/)
+* [Pixelarity](https://pixelarity.com/)
+* [Wix](http://www.wix.com/website/templates)
  
 ## Where to host your webpage?
  
@@ -64,8 +64,8 @@ Both GitHub, WordPress, and many other hosting companies allow you to use your o
  
 If you do chose to go with WordPress for hosting, however, you'll want these two links with very funny names:
  
-1.[Poopy Life](http://poopy.life/) (allows you to create a free sandbox WordPress template to mess around with for a few days)
-2.[Pootle](https://wordpress.org/plugins/pootle-page-builder/) (A drag and drop template maker; great for those with an eye for design, but maybe not the coding experience.)
+1. [Poopy Life](http://poopy.life/) (allows you to create a free sandbox WordPress template to mess around with for a few days)
+2. [Pootle](https://wordpress.org/plugins/pootle-page-builder/) (A drag and drop template maker; great for those with an eye for design, but maybe not the coding experience.)
  
 And that is all you need to launch your project into the very impressive world of digital design.  Many of these suggestions are for web design, but you'll notice that there is an incredible amount of support available for making your site functional on all screens and devices.  
  
