@@ -74,6 +74,7 @@ sass:
 gems:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
   - jekyll-feed
+  - jekyll-paginate
 
 # Exclude these files from your production _site
 exclude:
