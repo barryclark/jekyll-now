@@ -9,7 +9,7 @@ tags:
   - blowfish studios
   - crescent moon games
 layout: post
-description: "The Deer God is absolutely beautiful, but the buck stops there."
+description: "Embers of Mirrim stars slow then picks itself up, yet still isn't worth the expensive price tag."
 featured: embersofmirrim.png                                                      
 author: robk
 published: true
