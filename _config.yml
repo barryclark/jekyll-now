@@ -11,8 +11,6 @@ description: Pai, analista e desenvolvedor de software.
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://raw.githubusercontent.com/ivanqueiroz/ivanqueiroz.github.io/master/images/avatar.jpg
 
-paginate: 5
-
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
@@ -74,7 +72,6 @@ sass:
 gems:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
   - jekyll-feed
-  - jekyll-paginate
 
 # Exclude these files from your production _site
 exclude:
