@@ -22,7 +22,7 @@ Four Elements is currently finishing up a successful Kickstarter run with only a
 
 <h2>Play</h2>
 
-Four Elements doesn't come with a sheet of instructions, just a few pointers etched into its wooden box. The game's goal is simple: knock the opponents' Lord piece off the table or out of bounce. This is done by flicking your Elements.
+Four Elements doesn't come with a sheet of instructions, just a few pointers etched into its wooden box (Deluxe Version). The game's goal is simple: knock the opponents' Lord piece off the table or out of bounce. This is done by flicking your Elements.
 
 Setting up the game is only limited by your imagination. You place your Lord, Elements, and Barriers on the table in any manner you see if. You can arrange, stack, and stand your pieces any way you'd like. Once every player is set up the game progresses with everyone taking turns flicking pieces until there's only one player left with a Lord on the table.
 
@@ -36,6 +36,6 @@ The acrylic pieces are beautiful, with each element contain different shapes and
 
 <h2>Perspective</h2>
 
-With a simple ruleset, great pieces, and a ton of different ways to setup the game and surfaces to play on, Four Elements is an excellent game for those who love dexterity games. For around $15 you can't beat the value you get in the box.
+With a simple ruleset, great pieces, and a ton of different ways to setup the game and surfaces to play on, Four Elements is an excellent game for those who love dexterity games. For around $15 you can't beat the value you get in the box. I should mention that the $15 version doesn't come with the hand-crafted wooden box like I received. If you're looking for that version it's going to cost you around $102. To check out all the pledge levels head on over to the [Kickstarter page](https://www.kickstarter.com/projects/robertmurelli/four-elements-physical-gaming).
 
 *A prototype of Four Elements was provided free for preview by Robert Murelli*
