@@ -1,6 +1,6 @@
 ---
 title: "Wicked Manticore Dice Towers"
-date: 2017-05-28 14:00:00 Z
+date: 2017-05-29 14:00:00 Z
 category: review
 tags:
   - review
