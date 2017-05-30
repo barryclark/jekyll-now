@@ -9,12 +9,12 @@ footer-links:
   flickr:
   github:
   instagram: thinkontheclock
-  linkedin: matt-macintyre-90197921
+  linkedin:
   pinterest:
   rss:
   twitter: thinkontheclock
   stackoverflow:
-  youtube: /channel/UCdWl8kMCclumeoHdHY4IUYA
+  youtube:
   googleplus:
 disqus:
 
@@ -50,3 +50,5 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+
+plugins_dir: _plugins

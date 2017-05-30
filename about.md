@@ -10,15 +10,9 @@ I've been writing code in some capacity or another for nearly half of my life,  
 
 ### What I do
 
-In modern terms, I'm a front-end developer.
+I'm a front-end developer. Currently I make websites and solve problems full-time at [VERB Interactive](http://verbinteractive.com).
 
-Primarily, my strengths are HTML, CSS, jQuery and custom Wordpress theme development, including responsive and adaptive layouts. I design and write when I have the time, too, so seeing a website through from start to finish isn't unfamiliar territory.
-
-If you're interested in working with me independently, and would like some hand-picked examples that I think may interest you and illustrate how I might be able to contribute to your project, please feel free to send me an [email](mailto:matt@thinkontheclock.com), or visit my [professional site](http://thinkontheclock.com) for more information.
-
-Over the years I've worked on a large number of projects, both personal and professional. If you'd like to look at a good chunk of the sites I've worked on in a professional capacity (mostly WordPress, static sites templated with PHP, web design, and content architecture), please take a look [here](http://highlandmultimedia.com/portfolio/).
-
-I also helped start and am the front-end developer [here](http://rentgorilla.ca).
+VERB keeps me pretty busy, but if you're interested in working with me independently and would like some hand-picked examples that I think may interest you and illustrate how I might be able to contribute to your project, please feel free to send me an [email](mailto:matt@thinkontheclock.com), or visit my [professional site](http://thinkontheclock.com) for more information.
 
 ### Current favourites
 
