@@ -20,7 +20,7 @@ This is my First javascript project with AngularJS v.1 and calculate how long it
 2015.6.1 ~ 2015.10.30
 
 ## Main Text
-Post test
+The program analyzes the possible combinations of password cracks caused by brute force attacks, divides them into computer operation speeds, obtains the time it takes to attack, and dynamically prints them. 
 
 ## Result
 ![PASSCON]({{ site.url }}/images/Passcon.PNG)
