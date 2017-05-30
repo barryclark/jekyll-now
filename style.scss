@@ -56,7 +56,7 @@ body {
 }
 
 .sidebar {
-  padding-left: 2em;
+  padding-left: 4em;
   flex-grow: 1;
 
   h1, h2 {
@@ -364,7 +364,7 @@ nav {
     flex-direction: column;
   }
 }
-.posts > .post {
+.posts > .post, .page {
   padding-bottom: 2em;
 
   h1 {

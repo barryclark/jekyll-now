@@ -10,9 +10,8 @@ I've been writing code in some capacity or another for nearly half of my life,  
 
 ### What I do
 
-I'm a front-end developer. Currently I make websites and solve problems full-time at [VERB Interactive](http://verbinteractive.com).
-
-VERB keeps me pretty busy, but if you're interested in working with me independently and would like some hand-picked examples that I think may interest you and illustrate how I might be able to contribute to your project, please feel free to send me an [email](mailto:matt@thinkontheclock.com), or visit my [professional site](http://thinkontheclock.com) for more information.
+Currently I make websites and solve problems full-time at **[VERB Interactive](http://verbinteractive.com)**.
+They keep me pretty busy, but if you're interested in working with me independently and would like some hand-picked examples that I think may interest you and illustrate how I might be able to contribute to your project, please feel free to send me an [email](mailto:matt@thinkontheclock.com), or visit my [professional site](http://thinkontheclock.com) for more information.
 
 ### Current favourites
 
