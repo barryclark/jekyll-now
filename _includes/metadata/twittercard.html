@@ -1,7 +1,7 @@
 <!-- twitter cards from twittercard.html -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@JoesGitHubBlog">
-<meta name="twitter:title" content="{% if page.title %}{{ page.title | xml_escape }}{% else %}{{ site.name }}{% endif %}">
+<meta name="twitter:title" content="{% if page.layout == 'tag' %}Check out the latest {{ page.title | xml_escape }} posts on {{ site.name }}{% elsif page.title %}{{ page.title | xml_escape }}{% else %}{{ site.name }}{% endif %}">
 <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | xml_escape }}{% else %}{{ site.description }}{% endif %}">
 <meta name="twitter:creator" content="@JoesGitHubBlog">
 <meta name="twitter:image:src" content="{{ site.url }}{% if page.image %}{{ page.image }}{% else %}/images/covers/index-cover.png{% endif %}">
