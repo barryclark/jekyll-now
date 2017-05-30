@@ -72,4 +72,3 @@ And that is all you need to launch your project into the very impressive world o
 A little bit of practice throughout the week, and you'll be completely prepared to be an asset on your team for content and design come this Friday, June 2nd at 6:30pm for the official start of the hackathon!  
  
 _Not familiar with the hackathon, who can compete, or what's in it for the winners? Check out the [Open Data Challenge website](http://opendatachallenge.com/) for the full details and follow [here](https://open-data-delaware.ticketleap.com/open-data-challenge-hackathon/) for registration rules and award details!  Can't wait to see everyone there!  There's a place for everyone at the big event: coders, designers, concerned citizens, and anyone interested in helping our local Delaware community grow!_
- 
