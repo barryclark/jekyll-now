@@ -9,7 +9,25 @@ Looking at new words is a fascinating perspective into culture and cultural chan
 Abrahamic - Of or relating to any of the faiths traditionally held to descend from the biblical patriarch Abraham, especially Judaism, Christianity, and Islam.
 
 
+
+
+
+
+
+lots of space here...
+
+
+
+
+
+
+
 air rage - Abusive or violent behavior exhibited by airline passengers, often as a manifestation of impatience or stress.
+
+
+
+---------------------------------------------------------------
+
 
 
 amuse-bouche - A complimentary, bite-sized portion of food served before a meal or between courses in a restaurant.
