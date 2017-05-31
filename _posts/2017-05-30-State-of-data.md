@@ -1,7 +1,7 @@
 ---
 layout: post
 title: State of Data - Strata 2017 perspective
-subtitle: Couple of impressions from Starta Data 2017 in London 
+subtitle: Impressions from Strata Data 2017 in London 
 category: conferences
 tags: [data]
 author: jerzy_kott
