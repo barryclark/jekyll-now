@@ -53,7 +53,7 @@ There are multiple elements of create-react-app integrated in our app and I will
 - Using [loadash](https://lodash.com/) for better performance when working with arrays
 - More on create-react-app [readme page]( https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md)
 
- ### UI with React and [Redux](http://redux.js.org/)
+### UI with React and [Redux](http://redux.js.org/)
 
 Now moving on to creating the UI and display the data in it using React and Redux.
 
