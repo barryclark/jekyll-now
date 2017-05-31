@@ -76,26 +76,23 @@ very rich on conceptual level.
 Data lake was mentioned in many presentations as an obvious part of data infrastructure, but only 2 presentations were 
 dedicated directly to this topic:
 
-Organizing the data lake Mark Madsen (Third Nature) - this presentation was very interesting one. It shows the concept from 
+* [Organizing the data lake Mark Madsen (Third Nature)](https://conferences.oreilly.com/strata/strata-eu/public/schedule/detail/57779) - this presentation was very interesting one. It shows the concept from 
 unusual perspective and touches a lot of other areas of data and architecture as well. Not very technical but very rich on 
 conceptual level. 
 
-Building a modern data architecture for scale Ben Sharma (Zaloni) - despite of name - mostly dedicated to data lake concept 
+* [Building a modern data architecture for scale Ben Sharma (Zaloni)](https://conferences.oreilly.com/strata/strata-eu/public/schedule/detail/57770) - despite of name - mostly dedicated to data lake concept 
 but rather on the high level.
 
-My impression was that data lake is a “business as usual” topic - similar to having HDFS as a storage - and being obvious and
-not anything new anymore. It is not anymore considered as a “all-in-one” solution but rather as a foundation broader data 
-architecture. 
+My impression was that data lake is a “business as usual” topic - similar to having HDFS as a storage - and being obvious and not anything new anymore. It is not anymore considered as a “all-in-one” solution but rather as a foundation broader data architecture. 
 
 ![strata3](/images/strata-2017/strata3.png)
 
 
 
 ## Interesting real-life implementation cases:
-Interesting implementation cases:
 
-Fast data at ING: Utilizing Kafka, Spark, Flink, and Cassandra for data science and streaming analytics Bas Geerdink
-(ING) - a really interesting example of real life implementation of fast data concept using latest big data tools and 
+* [Fast data at ING: Utilizing Kafka, Spark, Flink, and Cassandra for data science and streaming analytics Bas Geerdink
+(ING)](https://conferences.oreilly.com/strata/strata-eu/public/schedule/detail/57477) - an interesting example of real life implementation of fast data concept using latest big data tools and 
 covering areas of recommendation, machine learning, actionable analytics etc. Unfortunately presenter did not share his 
 presentation - I have only couple of pictures.
 
@@ -104,7 +101,7 @@ presentation - I have only couple of pictures.
 
  
 ## Machine Learning
-Spark machine-learning pipelines: The good, the bad, and the ugly Vincent Van Steenbergen (w00t data)
+* [Spark machine-learning pipelines: The good, the bad, and the ugly Vincent Van Steenbergen (w00t data)](https://conferences.oreilly.com/strata/strata-eu/public/schedule/detail/57391)
 
 
 
@@ -124,7 +121,7 @@ Spark (batch)
 * Many presenters stated that big data technology maturity is still on low level across the market, with knowledge gap, lack
 of experienced resources and ever changing technology and its complexity being major obstacles.
 * New concept of fast data - use case define how fast you want to go with data and what toolset and architecture you need - 
-good read here (https://info.lightbend.com/rs/558-NCX-702/images/COLL-ebook-Fast-Data-Architectures-for-Streaming-Applications-Lightbend.pdf)
+good read [here](https://info.lightbend.com/rs/558-NCX-702/images/COLL-ebook-Fast-Data-Architectures-for-Streaming-Applications-Lightbend.pdf)
 
 ![strata3](/images/strata-2017/strata4.png)
 
