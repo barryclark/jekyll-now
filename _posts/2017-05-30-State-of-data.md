@@ -86,6 +86,8 @@ My impression was that data lake is a “business as usual” topic - similar to
 not anything new anymore. It is not anymore considered as a “all-in-one” solution but rather as a foundation broader data 
 architecture. 
 
+![strata3](/images/strata-2017/strata3.png)
+
 
 
 ## Interesting real-life implementation cases:
