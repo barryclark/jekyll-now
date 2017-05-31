@@ -32,7 +32,7 @@ Your favorite aunt has just given you $200. What do you do? Start a metal band, 
 Metalfest will be hitting Kickstarter soon and is currently up on [Prefundia](http://prefundia.com/projects/view/metalfest-the-tables-of-merch/6942/).
 
 <h2>Play</h2>
-
+![Metalfest Singer](/images/metalfest/singer.png){: .float-right}
 At its heart, Metalfest is a card drafting game. Each round you'll be drafting band members and gimmicks to try and put together a group that'll attract the right crowds to buy your merch and build up your fanbase. There's different crowds, each with their likes and quirks. Cater to the crowd well over 3 rounds and you'll bring in the most cash and win the game
 
 Most cards in Metalfest do double duty. Unused Band Members and Gimmicks are used for Merch value, while Fans both supply a fanbase and have a max capacity for buying your wares. This means there's very little waste, allowing you to tailor your turns to best maximize your income and popularity.
@@ -44,7 +44,8 @@ It's a tough balance making sure you put together a solid band, attract the righ
 At the end of the game you add up all the Merch you've sold, fans you've earned, and Band Members you've recruited to see who's the overall victor.
 
 <h2>Pieces</h2>
-![Metalfest Singer](/images/metalfest/singer.png){: .float-right}Being a prototype, it's hard to judge Metalfest on its components. So far the artwork is looking excellent, and certainly fits the theme of the game well. Iconography is clear and the overall layout of the cards makes it very easy to see what each does at a quick glance.
+
+Being a prototype, it's hard to judge Metalfest on its components. So far the artwork is looking excellent, and certainly fits the theme of the game well. Iconography is clear and the overall layout of the cards makes it very easy to see what each does at a quick glance.
 
 Only time will tell what the final product will end up looking like. There's not much to go on so far, as the Kickstarter hasn't even launched yet.
 
