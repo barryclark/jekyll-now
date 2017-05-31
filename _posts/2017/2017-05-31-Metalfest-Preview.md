@@ -44,7 +44,7 @@ It's a tough balance making sure you put together a solid band, attract the righ
 At the end of the game you add up all the Merch you've sold, fans you've earned, and Band Members you've recruited to see who's the overall victor.
 
 <h2>Pieces</h2>
-![Metalfest Singer](/images/metalfest/singer.jpg){: .float-right}Being a prototype, it's hard to judge Metalfest on its components. So far the artwork is looking excellent, and certainly fits the theme of the game well. Iconography is clear and the overall layout of the cards makes it very easy to see what each does at a quick glance.
+![Metalfest Singer](/images/metalfest/singer.png){: .float-right}Being a prototype, it's hard to judge Metalfest on its components. So far the artwork is looking excellent, and certainly fits the theme of the game well. Iconography is clear and the overall layout of the cards makes it very easy to see what each does at a quick glance.
 
 Only time will tell what the final product will end up looking like. There's not much to go on so far, as the Kickstarter hasn't even launched yet.
 
