@@ -55,6 +55,8 @@ It is over 200 slides presentation, going sometimes very deep into details but r
 
 What is interesting, this architecture pattern was visible in many other independent presentations I have seen on Strata.
 
+![strata](/images/strata-2017/Screen Shot 2017-05-29 at 17.20.53.png)
+
 Other interesting sessions in this area were:
 
 Architecting a data platform John Akred (Silicon Valley Data Science), Stephen O'Sullivan (Silicon Valley Data Science) - 
