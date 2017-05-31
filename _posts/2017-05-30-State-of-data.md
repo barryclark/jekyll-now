@@ -99,7 +99,7 @@ covering areas of recommendation, machine learning, actionable analytics etc. Un
 presentation - I have only couple of pictures.
 
 
-![strata3](/images/strata-2017/strata5.png)
+![strata3](/images/strata-2017/strata5.jpg)
 
  
 ## Machine Learning
