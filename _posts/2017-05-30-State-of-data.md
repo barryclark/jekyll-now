@@ -2,7 +2,7 @@
 layout: post
 title: State of Data - Strata 2017 perspective
 subtitle: Impressions from Strata Data 2017 in London 
-category: conferences
+category: conference
 tags: [data]
 author: jerzy_kott
 author_email: jerzy.kott@haufe-lexware.com
