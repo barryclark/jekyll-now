@@ -15,7 +15,7 @@ author: robk
 published: true
 ---
 
-![Wicked Apples](/images/adayatthebeach/cover.png){: .float-right}
+![A Day at the Beach](/images/adayatthebeach/cover.png){: .float-right}
 **Designers:** Todd Meierhans\\
 **Publisher:** [Standard Games](http://www.standardgames.com)\\
 **Year:** 2013\\
