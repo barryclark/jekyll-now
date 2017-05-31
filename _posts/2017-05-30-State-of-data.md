@@ -98,6 +98,9 @@ Fast data at ING: Utilizing Kafka, Spark, Flink, and Cassandra for data science 
 covering areas of recommendation, machine learning, actionable analytics etc. Unfortunately presenter did not share his 
 presentation - I have only couple of pictures.
 
+
+![strata3](/images/strata-2017/strata5.png)
+
  
 ## Machine Learning
 Spark machine-learning pipelines: The good, the bad, and the ugly Vincent Van Steenbergen (w00t data)
