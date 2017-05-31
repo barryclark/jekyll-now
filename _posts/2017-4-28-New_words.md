@@ -37,24 +37,24 @@ crowdsourcing - A method of outsourcing work over the internet or similar networ
 Disneyfication - 1. The establishment or alteration of business activity to conform with the goals or image of a corporation, especially in the elimination of controversial, sensitive, or potentially offensive activities or material.
 2. The presentation of historical or cultural material in an expurgated or distorted fashion in an effort to appeal to a large number of tourists or consumers.
 
-dispensationalism - 
+*dispensationalism - 
 A doctrine prevalent in some forms of Protestant Christianity that divides history into distinct periods, each marked by a different dispensation or relationship between God and humanity. Dispensationalism further holds that Christian believers will be transported to heaven without warning and that soon thereafter there will be a period of tribulation, followed by the Second Coming.
 
-dream catcher - A handicraft item consisting of a circular frame strung with loose webbing worked into a pattern around a central hole and often decorated with feathers and beads, used in certain Native American traditions as a charm to separate good forces or influences from bad ones.
+*dream catcher - A handicraft item consisting of a circular frame strung with loose webbing worked into a pattern around a central hole and often decorated with feathers and beads, used in certain Native American traditions as a charm to separate good forces or influences from bad ones.
 
-earbud - A small headphone that fits inside the ear against the outer opening of the ear canal.
+*earbud - A small headphone that fits inside the ear against the outer opening of the ear canal.
 
-emo - Rock music characterized by confessional lyrics about emotional topics.
+*emo - Rock music characterized by confessional lyrics about emotional topics.
 
-encephalization - Increase in the ratio of brain mass to body mass during the evolution of a species or other taxonomic group. Higher degrees of encephalization are generally correlated with higher degrees of intelligence.
+..*encephalization - Increase in the ratio of brain mass to body mass during the evolution of a species or other taxonomic group. Higher degrees of encephalization are generally correlated with higher degrees of intelligence.
 
-farklempt - Unable to speak because of emotion; choked up.
+.*farklempt - Unable to speak because of emotion; choked up.
 
-fashionista - One who designs, models, or markets high-fashion clothing or who is an ardent follower or consumer of the latest clothing fashions.
+.*fashionista - One who designs, models, or markets high-fashion clothing or who is an ardent follower or consumer of the latest clothing fashions.
 
 fast-twich????
 
-Goldilocks zone - The region in a stellar system where the surface temperatures of planets can sustain liquid water and therefore hold the highest probability for the existence of life. Also called habitable zone.
+.**Goldilocks zone - The region in a stellar system where the surface temperatures of planets can sustain liquid water and therefore hold the highest probability for the existence of life. Also called habitable zone.
 
 grayscale - 1. A series of shades ranging from pure white to pure black, used in displaying monochromatic images.
 2. An image displayed using such a series of shades.
