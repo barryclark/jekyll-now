@@ -21,7 +21,7 @@ so my impressions will focus on these topics as well.
 ![strata](/images/strata-2017/IMG_0811.jpg)
 
 
-# TL;DR
+## TL;DR
 Streaming is most fancy thing in data engineering , batch is an embarrassing past and no one wants to talk about it. 
 The same applies to classical Hadoop/MapReduce as a processing engine - Spark ate it already. 
 New post-Hadoop tools like Apache Kudu, Beam or Flink are emerging.  
@@ -29,7 +29,7 @@ Machine Learning, Deep Learning, AI and supporting technologies are most trendin
 Data lakes are considered an obvious part of an infrastructure. 
 Kafka is a everywhere, Flume is nearly dead. 
 
-# Data Architecture
+## Data Architecture
 The best two sessions, during this year Strata, for anyone interested in data architecture.
 
 * [Architecting a next-generation data platform Jonathan Seidman (Cloudera), Mark Grover (Cloudera), Ted Malaska (Blizzard)](https://conferences.oreilly.com/strata/strata-eu/public/schedule/detail/57652)
@@ -96,8 +96,9 @@ My impression was that data lake is a “business as usual” topic - similar to
 covering areas of recommendation, machine learning, actionable analytics etc. Unfortunately presenter did not share his 
 presentation - I have only couple of pictures.
 
-
 ![strata3](/images/strata-2017/strata5.jpg)
+
+* [Hadoop as a service: How to build and operate an enterprise data lake supporting operational and streaming analytics Phillip Radley](https://conferences.oreilly.com/strata/strata-eu/public/schedule/detail/57589) - an exxample of succesful data lake implementation.
 
  
 ## Machine Learning
