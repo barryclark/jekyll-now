@@ -102,7 +102,7 @@ presentation - I have only couple of pictures.
 ## Machine Learning
 Spark machine-learning pipelines: The good, the bad, and the ugly Vincent Van Steenbergen (w00t data)
 
-![dashboard](/images/monitoring-docker-environment/dashboard.png)
+
 
 ## Trends:
 * Streaming is recommended way of moving data and Kafka is a default tool for this task.
@@ -121,6 +121,8 @@ Spark (batch)
 of experienced resources and ever changing technology and its complexity being major obstacles.
 * New concept of fast data - use case define how fast you want to go with data and what toolset and architecture you need - 
 good read here (https://info.lightbend.com/rs/558-NCX-702/images/COLL-ebook-Fast-Data-Architectures-for-Streaming-Applications-Lightbend.pdf)
+
+![strata3](/images/strata-2017/strata3.png)
 
 ## New technologies worth to follow:
 Apache Kudu
