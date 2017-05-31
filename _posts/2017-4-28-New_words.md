@@ -3,27 +3,37 @@ layout: post
 title: New words in 5th edition of American Heritage Dictionary
 ---
 
+Looking at new words is a fascinating perspective into culture and cultural changes. From Steven Pinker's The Sense of Style comes a list of all the new words added to the 5th edition of the American Heritage Dictionary, where he sits on the usage panel. I have reproduced the list provided the definitions below.
+
 
 Abrahamic - Of or relating to any of the faiths traditionally held to descend from the biblical patriarch Abraham, especially Judaism, Christianity, and Islam.
 
+
 air rage - Abusive or violent behavior exhibited by airline passengers, often as a manifestation of impatience or stress.
+
 
 amuse-bouche - A complimentary, bite-sized portion of food served before a meal or between courses in a restaurant.
 
+
 backward-compatible - Compatible with earlier systems or elements of earlier systems: a new release of an operating system that is backward-compatible with earlier versions.
 
+
 brain freeze - A headache resulting from the rapid consumption of cold food or beverages.
-
+***
 butterfly effect - A phenomenon in which a small perturbation in the initial condition of a system results in large changes in later conditions. Such phenomena are common in complex dynamical systems and are studied in chaos theory.
-
+---
 carbon footprint - The amount of carbon-containing greenhouse gases released into the environment by an activity, process, individual, or group, expressed usually as the equivalent in kilograms of carbon dioxide.
-
+___
 camel toe - The outline of the labia majora that sometimes is apparent in tight or formfitting clothing worn by females.
+
+***
 
 community policing - A police strategy for fostering trust in a community in the effort to enhance crime prevention, in which officers hold regular meetings with community organizations and patrol on foot or on bikes to develop personal relationships with community members.
 
+***
 crowdsourcing - A method of outsourcing work over the internet or similar network by appealing to people to contribute to the project independently or as a collaboration.
 
+***
 Disneyfication - 1. The establishment or alteration of business activity to conform with the goals or image of a corporation, especially in the elimination of controversial, sensitive, or potentially offensive activities or material.
 2. The presentation of historical or cultural material in an expurgated or distorted fashion in an effort to appeal to a large number of tourists or consumers.
 
