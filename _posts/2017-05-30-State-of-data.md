@@ -32,7 +32,7 @@ Kafka is a everywhere, Flume is nearly dead.
 ## Data Architecture
 The best two sessions, during this year Strata, for anyone interested in data architecture.
 
-Architecting a next-generation data platform Jonathan Seidman (Cloudera), Mark Grover (Cloudera), Ted Malaska (Blizzard)
+[Architecting a next-generation data platform Jonathan Seidman (Cloudera), Mark Grover (Cloudera), Ted Malaska (Blizzard)](https://conferences.oreilly.com/strata/strata-eu/public/schedule/detail/57652)
 
 Ask me anything: Hadoop application architectures Mark Grover (Cloudera), Jonathan Seidman (Cloudera), Ted Malaska (Blizzard)
 
