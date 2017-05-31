@@ -13,7 +13,7 @@ header-img: "images/bg-post-clover.jpg"
 
 I had a presentation last week at [ITCamp](https://itcamp.ro) about Serverless single page apps and you can find the slides on [SlideShare](https://www.slideshare.net/melaniadanciu/serverless-single-page-apps-with-react-and-redux-at-itcamp-2017). ITCamp is a very interesting conference with 40+ speakers, 40+ sessions and 500+ attendees. It had a lot of interesting topics with very curious attendees. My presentation was about my journey into building a Serverless project with no servers to manage for backend and frontend. 
 
-It all started with a prototype in .Net Core witch showed us the main components of our app. And yes, .Net Core, because I am a .Net developer under cover :). I love C# and the powerful .Net framework but going back to our app…
+It all started with a prototype in .Net Core which showed us the main components of our app. And yes, .Net Core, because I am a .Net developer under cover :). I love C# and the powerful .Net framework but going back to our app…
 
 Here are some challenges:
 - The app manages different types of data created by the user and has a relatively strong relation between entities.
@@ -22,13 +22,13 @@ Here are some challenges:
 - The development should be easy, modern and fast
 
 There are hundreds of solutions for this problem and I picked one which I will try to present to you in the next lines.
-And to add one more challenge I was asked what does it mean to use Lambda for this project. And when I say Lambda, is not the Lambda from .Net is AWS Lambda Functions.
+And to add one more challenge I was asked what does it mean to use Lambda for this project. And when I say Lambda, it's not the Lambda from .Net, it's AWS Lambda Functions.
 
 Having also this last thing and having some knowledge about micro-services, SOA and static websites I decided to go all Serverless. There are a lot of books on this topic, a lot of articles and hundreds of pages of documentation on Amazon docs about their offer. The backend is done using Lambda Functions and I already wrote about them in [my last blogpost](http://dev.haufe.io/Serverless_with_AWS_at_DevTalks/). 
  
 ### And now the Static Website
 
-First challenge: the Frontend - making it a Static Website. In a nutshell this means I should  be able to have the entire website deployed as HTML pages with some JavaScript files and CSS files, and all the data needed should be requested using AJAX calls with no server rendering whatsoever.
+First challenge: the Frontend - making it a Static Website. In a nutshell this means I should be able to have the entire website deployed as HTML pages with some JavaScript files and CSS files, and all the data needed should be requested using AJAX calls with no server rendering whatsoever.
 Again the question is what to use for data binding, templating, and all of that:
 1. Plain old JavaScript(or new JavaScript) with HTML. I think this might be a solution when the UI is no so dynamic and the user interaction is not so big
 2. Angular: I used Angular 1 in a previous project and the beauty of having two way bing is cool but also comes with strange bugs and not easy unit tests
