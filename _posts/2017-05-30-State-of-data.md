@@ -17,7 +17,7 @@ or you fall to sleep during long marketing pitch. I was lucky this time and scor
 
 As I am mainly interested in big data architecture and data engineering, most sessions I attended were related to this area,
 so my impressions will focus on these topics as well.
-
+![strata](/images/strata-2017/IMG_0811.jpg)
 
 
 ## TL;DR
