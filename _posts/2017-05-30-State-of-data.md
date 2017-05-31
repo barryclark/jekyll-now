@@ -55,7 +55,7 @@ It is over 200 slides presentation, going sometimes very deep into details but r
 
 What is interesting, this architecture pattern was visible in many other independent presentations I have seen on Strata.
 
-![strata1](/images/strata-2017/Screen Shot 2017-05-29 at 17.20.53.png)
+![strata2](/images/strata-2017/strata2.png)
 
 Other interesting sessions in this area were:
 
