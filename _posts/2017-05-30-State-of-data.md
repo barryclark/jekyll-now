@@ -34,7 +34,7 @@ The best two sessions, during this year Strata, for anyone interested in data ar
 
 [Architecting a next-generation data platform Jonathan Seidman (Cloudera), Mark Grover (Cloudera), Ted Malaska (Blizzard)](https://conferences.oreilly.com/strata/strata-eu/public/schedule/detail/57652)
 
-Ask me anything: Hadoop application architectures Mark Grover (Cloudera), Jonathan Seidman (Cloudera), Ted Malaska (Blizzard)
+[Ask me anything: Hadoop application architectures Mark Grover (Cloudera), Jonathan Seidman (Cloudera), Ted Malaska (Blizzard)](https://conferences.oreilly.com/strata/strata-eu/public/schedule/detail/61323)
 
 
 Both sessions were hosted by authors of my favourite Hadoop book: [“Hadoop Application Architectures: Designing Real-World 
