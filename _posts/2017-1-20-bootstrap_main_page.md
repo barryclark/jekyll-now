@@ -245,3 +245,13 @@ Here's the dropdown menu to choose which type of writing we're doing:
 
 
 We used Bootstrap to add a bit of style so our page isn’t completely hideous. Then we added a form with a text input box for users to enter a URL into. Additionally, we utilized a Jinja for loop to iterate through a list of errors, displaying each one.
+
+
+
+#######
+
+Note that if you use:
+
+<div class="col-md-8 column-left">
+
+it means 
