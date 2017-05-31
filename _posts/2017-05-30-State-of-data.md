@@ -133,7 +133,7 @@ good read [here](https://info.lightbend.com/rs/558-NCX-702/images/COLL-ebook-Fas
 
 ## Resources
 I have copies of all presentations shared during Strata Data London 2017. I will drop them in some shared place and will update this 
-post late.
+post later.
 
 ## Final word
 
