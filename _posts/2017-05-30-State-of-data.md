@@ -32,9 +32,9 @@ Kafka is a everywhere, Flume is nearly dead.
 ## Data Architecture
 The best two sessions, during this year Strata, for anyone interested in data architecture.
 
-[Architecting a next-generation data platform Jonathan Seidman (Cloudera), Mark Grover (Cloudera), Ted Malaska (Blizzard)](https://conferences.oreilly.com/strata/strata-eu/public/schedule/detail/57652)
+* [Architecting a next-generation data platform Jonathan Seidman (Cloudera), Mark Grover (Cloudera), Ted Malaska (Blizzard)](https://conferences.oreilly.com/strata/strata-eu/public/schedule/detail/57652)
 
-[Ask me anything: Hadoop application architectures Mark Grover (Cloudera), Jonathan Seidman (Cloudera), Ted Malaska (Blizzard)](https://conferences.oreilly.com/strata/strata-eu/public/schedule/detail/61323)
+* [Ask me anything: Hadoop application architectures Mark Grover (Cloudera), Jonathan Seidman (Cloudera), Ted Malaska (Blizzard)](https://conferences.oreilly.com/strata/strata-eu/public/schedule/detail/61323)
 
 
 Both sessions were hosted by authors of my favourite Hadoop book: [“Hadoop Application Architectures: Designing Real-World 
@@ -42,8 +42,8 @@ Big Data Applications”](http://shop.oreilly.com/product/0636920033196.do). I r
 interested in Hadoop/big data architecture patterns. 
 
 Just two notes: 
-1. Studying [“Hadoop: The Definite Guide”](http://shop.oreilly.com/product/0636920033448.do) before helps, 
-2. The book, published in 2015, is already partially outdated and new revision, as authors told me, is already in 
+* Studying [“Hadoop: The Definite Guide”](http://shop.oreilly.com/product/0636920033448.do) before helps, 
+* The book, published in 2015, is already partially outdated and new revision, as authors told me, is already in 
 writing(what only shows how quickly data landscape is changing). 
 
 That was most detailed, technical oriented presentation I have seen on this year Strata. 
