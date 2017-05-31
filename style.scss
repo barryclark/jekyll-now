@@ -366,7 +366,7 @@ nav {
     flex-direction: column;
   }
 }
-.posts > .post, .page {
+.posts > .post, .page, .content > .post {
   padding-bottom: 2em;
 
   h1 {
@@ -460,9 +460,9 @@ nav {
     font-family:$mono;
   }
   .instagram-media {
-      width:45%!important;
-      float:left!important;
-      margin-right:2%!important;
+      // width:45%!important;
+      // float:left!important;
+      // margin-right:2%!important;
   }
   img.alignLeft {
     float:left;
