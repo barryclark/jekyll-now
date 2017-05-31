@@ -21,11 +21,11 @@ so my impressions will focus on these topics as well.
 
 
 ## TL;DR
-Streaming is most fancy thing in data engineering , batch is embarrassing past and no one wants to talk about it. 
+Streaming is most fancy thing in data engineering , batch is an embarrassing past and no one wants to talk about it. 
 The same applies to classical Hadoop/MapReduce as a processing engine - Spark ate it already. 
 New post-Hadoop tools like Apache Kudu, Beam or Flink are emerging.  
 Machine Learning, Deep Learning, AI and supporting technologies are most trending topics. 
-Data lakes are considered an obvious part of infrastructure. 
+Data lakes are considered an obvious part of an infrastructure. 
 Kafka is a everywhere, Flume is nearly dead. 
 
 ## Data Architecture
@@ -36,8 +36,8 @@ Architecting a next-generation data platform Jonathan Seidman (Cloudera), Mark G
 Ask me anything: Hadoop application architectures Mark Grover (Cloudera), Jonathan Seidman (Cloudera), Ted Malaska (Blizzard)
 
 
-Both sessions were hosted by authors of my favourite Hadoop book: “Hadoop Application Architectures: Designing Real-World 
-Big Data Applications” - (http://shop.oreilly.com/product/0636920033196.do). I recommend this book wholeheartedly to anyone 
+Both sessions were hosted by authors of my favourite Hadoop book: [“Hadoop Application Architectures: Designing Real-World 
+Big Data Applications”](http://shop.oreilly.com/product/0636920033196.do). I recommend this book wholeheartedly to anyone 
 interested in Hadoop/big data architecture patterns. 
 
 Just two notes: 
