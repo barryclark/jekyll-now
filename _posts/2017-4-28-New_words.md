@@ -1,21 +1,17 @@
 ---
 layout: post
-title: New words in 5th edition of American Heritage Dictionary
+title: New words in 5th edition of the American Heritage Dictionary
 ---
 
 Looking at words as they officially enter into a language is a fascinating perspective into culture. New words provide insight into where the national consciousness is and in what direction it is moving. Some words are new and will be unfamiliar to most, while others have been said hundreds of times and are just now officially entering the dictionary. Many demonstrate new scientific or technological concepts that were never before possible or significant, such as zettabyte, nanobot and carbon footprint. Others are familiar and surprising only in that they were not already in the dictionary, such as dream catcher and Abrahamic.
 
 From Steven Pinker's The Sense of Style comes a list of all the new words added to the 5th edition of the American Heritage Dictionary, where he sits on the usage panel. I have reproduced the list and provided the definitions below.
 
-
 Abrahamic - Of or relating to any of the faiths traditionally held to descend from the biblical patriarch Abraham, especially Judaism, Christianity, and Islam.
-
 
 air rage - Abusive or violent behavior exhibited by airline passengers, often as a manifestation of impatience or stress.
 
-
 amuse-bouche - A complimentary, bite-sized portion of food served before a meal or between courses in a restaurant.
-
 
 backward-compatible - Compatible with earlier systems or elements of earlier systems: a new release of an operating system that is backward-compatible with earlier versions.
 
