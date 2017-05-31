@@ -60,16 +60,16 @@ What is interesting, this architecture pattern was visible in many other indepen
 
 Other interesting sessions in this area were:
 
-Architecting a data platform John Akred (Silicon Valley Data Science), Stephen O'Sullivan (Silicon Valley Data Science) - 
-a bit too high level but good as an introduction.
+* [Architecting a data platform John Akred (Silicon Valley Data Science), Stephen O'Sullivan (Silicon Valley Data Science)](https://conferences.oreilly.com/strata/strata-eu/public/schedule/detail/56674) - 
+a bit too high level but good as an introduction. Presentation available on request.
 
-Creating real-time, data-centric applications with Impala and Kudu Marcel Kornacker (Cloudera) - introduction to Kudu.
+* [Creating real-time, data-centric applications with Impala and Kudu Marcel Kornacker (Cloudera)](https://conferences.oreilly.com/strata/strata-eu/public/schedule/detail/57544) - introduction to Apache Kudu.
 
-Organizing the data lake Mark Madsen (Third Nature) - this presentation was very interesting one. Despite of the title it is 
+* [Organizing the data lake Mark Madsen (Third Nature)](https://conferences.oreilly.com/strata/strata-eu/public/schedule/detail/57779) - this presentation was very interesting one. Despite of the title it is 
 not really focused on data lake but touches a lot of other areas of data and architecture as well. Not very technical but 
 very rich on conceptual level. 
 
-Presto: Distributed SQL done faster Wojciech Biela (Teradata), Łukasz Osipiuk (Teradata) - introduction to Presto.
+* [Presto: Distributed SQL done faster Wojciech Biela (Teradata), Łukasz Osipiuk (Teradata)](https://conferences.oreilly.com/strata/strata-eu/public/schedule/detail/57614) - introduction to Presto.
 
 
 ## Data Lake
