@@ -126,9 +126,9 @@ good read [here](https://info.lightbend.com/rs/558-NCX-702/images/COLL-ebook-Fas
 ![strata3](/images/strata-2017/strata4.png)
 
 ## New technologies worth to follow:
-Apache Kudu
-Apache Flink
-Apache Beam
+* [Apache Kudu](https://kudu.apache.org)
+* [Apache Flink](https://flink.apache.org)
+* [Apache Beam](https://beam.apache.org)
 
 ## Resources
 I have copies of all presentations shared during Strata Data London 2017. I will drop them in some shared place and will update this 
