@@ -17,6 +17,7 @@ or you fall to sleep during long marketing pitch. I was lucky this time and scor
 
 As I am mainly interested in big data architecture and data engineering, most sessions I attended were related to this area,
 so my impressions will focus on these topics as well.
+
 ![strata](/images/strata-2017/IMG_0811.jpg)
 
 
@@ -41,7 +42,7 @@ Big Data Applications”](http://shop.oreilly.com/product/0636920033196.do). I r
 interested in Hadoop/big data architecture patterns. 
 
 Just two notes: 
-1. Studying “Hadoop: The Definite Guide” before helps(http://shop.oreilly.com/product/0636920033448.do), 
+1. Studying [“Hadoop: The Definite Guide”](http://shop.oreilly.com/product/0636920033448.do) before helps, 
 2. The book, published in 2015, is already partially outdated and new revision, as authors told me, is already in 
 writing(what only shows how quickly data landscape is changing). 
 
