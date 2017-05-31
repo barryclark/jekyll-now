@@ -42,3 +42,6 @@
 
 - slug: serverless
   name: Serverless
+  
+- slug: data
+  name: Data
