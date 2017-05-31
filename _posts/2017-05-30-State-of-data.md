@@ -122,7 +122,7 @@ of experienced resources and ever changing technology and its complexity being m
 * New concept of fast data - use case define how fast you want to go with data and what toolset and architecture you need - 
 good read here (https://info.lightbend.com/rs/558-NCX-702/images/COLL-ebook-Fast-Data-Architectures-for-Streaming-Applications-Lightbend.pdf)
 
-![strata3](/images/strata-2017/strata3.png)
+![strata3](/images/strata-2017/strata4.png)
 
 ## New technologies worth to follow:
 Apache Kudu
