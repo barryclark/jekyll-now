@@ -9,61 +9,25 @@ First, you need to specify your doctype. If you don't specify this, web browsers
 
 ```
 
-<!DOCTYPE html>```
+<!DOCTYPE html>
+
+```
 
 Now you want to declare that this doc is html and set a default language:
 
-``` html
+```
 <html lang="en">
 ```
 
 
-We're going to use two different templates for each page. There will be a base.html and a main_page.html for each page. The base will contain everything we want spread across all pages, such as a navigation bar.
-
-Now we're going to make the head section. HTML documents often contain both a head and a body.
-
-First thing you want in the head is the title:
-
-```
-<head>
-  <title>StyleStudio</title>
-```
-
-The default character set for HTML5 is UTF-8, so it isn't necesarry to specify it, but we'll do it just for clarity:
-```
-    <meta charset="utf-8">
-```
-Then we need a viewport element. The viewport tag tells the browser how the webpage should be rendered. It helps adjust the webpage to optimize for the user's device.
-
-```
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-```
-
-Then we'll add bootstrap. Bootstrap is a free (and open source) web framework for front-ends. It is equally fast and responsive to both mobile and desktop users.
-
-```
-  <link href="/static/bootstrap/css/bootstrap.min.css" rel="stylesheet">```
-
-Now we need to point to our css stylesheet. We'll make a stylesheet for each html layout and give them the same name for the sake of convenience. After that we'll point it to jquery and bootstraps javascript code.
-  ```
-
-  <link href="/static/css/base.css" rel="stylesheet">
-  <script type="text/javascript" src="/static/jquery/jquery-1.10.2.min.js"></script>
-  <script type="text/javascript" src="/static/bootstrap/js/bootstrap.min.js"></script>
-  {% block javascript %}{% endblock %}
-```
-
-
-
-
+We're going to use two different templates for each page. There will be a base.html and a page.html for each page. The base will contain everything we want spread across all pages, such as a navigation bar.
 
 We will need a navigation bar. Using navbar-inverse makes it dark, which looks nice. Again, we'll use container-fluid to fill the screen.
 
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">StyleStudio</a>
+      <a class="navbar-brand" href="#">Sappho</a>
     </div>
     <ul class="nav navbar-nav">
       <li class="active"><a href="#">Home</a></li>
@@ -85,7 +49,7 @@ After you add some closing markers to close the body and html document, you're b
 <!DOCTYPE html>
 <html>
 <head>
-  <title>StyleStudio</title>
+  <title>Sappho</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
@@ -96,7 +60,7 @@ After you add some closing markers to close the body and html document, you're b
   <nav class="navbar navbar-inverse">
     <div class="container-fluid">
       <div class="navbar-header">
-        <a class="navbar-brand" href="#">StyleStudio</a>
+        <a class="navbar-brand" href="#">Sappho</a>
       </div>
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">Home</a></li>
