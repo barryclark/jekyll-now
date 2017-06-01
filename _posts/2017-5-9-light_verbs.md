@@ -3,24 +3,29 @@ layout: post
 title: How many light verbs is too many?
 ---
 
-# First, what are light verbs and why don't we want them?
+## First, what are light verbs and why don't we want them?
 Light verbs are verbs that contain very little information on their own. Verbs such as "to be", "to have", and "to do" are some of the most common light verbs. We often want to avoid them, or at least avoid overusing them. Light verbs can create nominalizations (see the nominalization blog post for more).
 
-Jesperson (1965) first coined the term light verb to refer to verbs which, though they may have a fuller semantic usage in other contexts, can be used in combination with some other element, typically a noun or verb, where their contribution to the meaning of the whole construction is reduced in some way. [from the internet]
+Otto Jesperson first coined the term **light verb** in *A Modern English Grammar on Historical Principles* to refer to verbs which, though they may have a fuller semantic usage in other contexts, can be used in combination with some other element, typically a noun or verb, where their contribution to the meaning of the whole construction is reduced in some way. [from the internet]
 
+## What are all the light verbs?
 
-# What are all the light verbs?
-
-There's no official list, but I would include any form of the follow verbs: *to make*, *to be*, *to do*, *to have*
-
+There's no official list, but I would include any form of the follow verbs:  *to do*, *to have*, *to make*, *to be*, *to take*, *to begin*, *to get*, *to go*, *to give*, *to put*, *to feel*, *to begin*.
 
 How bad are they? Fortunately, it's OK to have quite a few light verbs in your writing. A good way to see this is to look to the classics. For example,
 
+![alt text](https://raw.githubusercontent.com/jss367/jss367.github.io/master/images/light_verbs.png)
+
 In Frankenstein, 42.45%% of the 14170 verbs are weak.
+
 In Great Expectations, 54.91%% of the 36901 verbs are weak.
+
 In A Tale of Two Cities, 50.78%% of the 25171 verbs are weak.
+
 In Pride and Prejudice, 56.14%% of the 24419 verbs are weak.
+
 In Alice's Adventures in Wonderland, 52.51%% of the 6104 verbs are weak.
+
 In Oliver Twist, 47.95%% of the 30576 verbs are weak.
 
 
