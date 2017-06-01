@@ -14,7 +14,7 @@ published: true
 ---
 
 <h2>Prelude</h2>
-![Kingdoms of Erden Cover](/images/kingdomoferden/cover.jpg)
+![Kingdoms of Erden Cover](/images/kingdomsoferden/cover.jpg)
 Kingdoms of Erden: King of the Mountain is a fantasy card game currently gearing up for its [Kickstarter campaign](https://www.kickstarter.com/projects/1835206317/616005693?token=11fb844c). It's a simple and portable game that can be learned in around 2 minutes and plays in as little as 15 minutes.
 
 <h2>Play</h2>
