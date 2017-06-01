@@ -6,6 +6,7 @@ tags:
   - preview
   - games
   - kingdoms of erden
+  - kickstarter
 layout: post
 description: "Kingdoms of Erden: King of the Mountain is a fantasy card game for 2-4 players. Players age 10+ . 15-45 minutes to play."
 featured: kingdomsoferden.jpg                                                                         
