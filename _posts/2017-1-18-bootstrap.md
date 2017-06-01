@@ -59,6 +59,7 @@ Now we need to point to our css stylesheet. We'll make a stylesheet for each htm
 
 
 We will need a navigation bar. Using navbar-inverse makes it dark, which looks nice. Again, we'll use container-fluid to fill the screen.
+```
 
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
@@ -76,7 +77,7 @@ We will need a navigation bar. Using navbar-inverse makes it dark, which looks n
   </div>
 </nav>
 
-
+```
 
 After you add some closing markers to close the body and html document, you're base.html should look like this:
 
