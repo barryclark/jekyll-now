@@ -16,6 +16,8 @@ published: true
 
 ![Stir-Fry Eighteen](/images/stirfry/stirfry.jpg)
 
+**UPDATE:** *A winner has been chosen! Congrats to Rick May! Your copy will go out soon!*
+
 Want to win a copy of Yanaguana's [Stir-Fry Eighteen](http://www.yanaguanagames.com/stir-fry-18-gallery/), the game micro-game of delicious noodle dishes? Here's your opportunity!
 
 There's multiple ways to get entries into the giveway.
@@ -26,10 +28,3 @@ There's multiple ways to get entries into the giveway.
 * Become a [Patron](https://www.patreon.com/pawnsperspective) of A Pawn's Perspective. Different levels give you a different amount of automatic entries into every giveaway I run!
 
 The giveaway will run until **May 31st**, then a winner will be chosen.
-
-
-
-
-
-
-
