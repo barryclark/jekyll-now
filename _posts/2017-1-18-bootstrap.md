@@ -9,12 +9,15 @@ First, you need to specify your doctype. If you don't specify this, web browsers
 
 ```
 
-<!DOCTYPE html>```
+<!DOCTYPE html>
+```
 
 Now you want to declare that this doc is html and set a default language:
 
 ``` html
+
 <html lang="en">
+
 ```
 
 
@@ -25,13 +28,17 @@ Now we're going to make the head section. HTML documents often contain both a he
 First thing you want in the head is the title:
 
 ```
+
 <head>
   <title>StyleStudio</title>
+
 ```
 
 The default character set for HTML5 is UTF-8, so it isn't necesarry to specify it, but we'll do it just for clarity:
+
 ```
-    <meta charset="utf-8">
+  <meta charset="utf-8">
+
 ```
 Then we need a viewport element. The viewport tag tells the browser how the webpage should be rendered. It helps adjust the webpage to optimize for the user's device.
 
