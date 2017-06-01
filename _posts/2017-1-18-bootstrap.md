@@ -48,14 +48,6 @@ Then we'll add bootstrap. Bootstrap is a free (and open source) web framework fo
 Now we need to point to our css stylesheet. We'll make a stylesheet for each html layout and give them the same name for the sake of convenience. After that we'll point it to jquery and bootstraps javascript code.
 
 
-```
-  <link href="/static/css/base.css" rel="stylesheet">
-  <script type="text/javascript" src="/static/jquery/jquery-1.10.2.min.js"></script>
-  <script type="text/javascript" src="/static/bootstrap/js/bootstrap.min.js"></script>
-  {% block javascript %}{% endblock %}
-```
-
-
 
 
 
