@@ -7,11 +7,11 @@ This article goes over how to use bootstrap to make a nice homepage. This will b
 
 First, you need to specify your doctype. If you don't specify this, web browsers will load your page in something called "Quirks mode". It has something to do with how IE used to render pages but now isn't common. To do this, enter:
 
-`&lt;!DOCTYPE html>`
+```<!DOCTYPE html>```
 
 Now you want to declare that this doc is html and set a default language:
 
-`<html lang="en">`
+```<html lang="en">```
 
 
 We're going to use two different templates for each page. There will be a base.html and a page.html for each page. The base will contain everything we want spread across all pages, such as a navigation bar.
