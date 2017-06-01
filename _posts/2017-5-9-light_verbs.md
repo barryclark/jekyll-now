@@ -3,19 +3,18 @@ layout: post
 title: How many light verbs is too many?
 ---
 
-First, what are light verbs and why don't we want them? Light verbs are verbs that contain very little information on their own. Verbs such as "to be", "to have", and "to do" are some of the most common light verbs. We often want to avoid them, or at least avoid overusing them. Light verbs can create nominalizations (see the nominalization blog post for more).
-
+# First, what are light verbs and why don't we want them?
+Light verbs are verbs that contain very little information on their own. Verbs such as "to be", "to have", and "to do" are some of the most common light verbs. We often want to avoid them, or at least avoid overusing them. Light verbs can create nominalizations (see the nominalization blog post for more).
 
 Jesperson (1965) first coined the term light verb to refer to verbs which, though they may have a fuller semantic usage in other contexts, can be used in combination with some other element, typically a noun or verb, where their contribution to the meaning of the whole construction is reduced in some way. [from the internet]
 
 
-What are all the light verbs?
+# What are all the light verbs?
 
-There's no official list, but here is mine: make, be, do, have
+There's no official list, but I would include any form of the follow verbs: *to make*, *to be*, *to do*, *to have*
 
 
-
-How bad are they? Fortunately, it's OK to have quite a few light verbs in your writing. I good way to see this is to look to the classics. For example,
+How bad are they? Fortunately, it's OK to have quite a few light verbs in your writing. A good way to see this is to look to the classics. For example,
 
 In Frankenstein, 42.45%% of the 14170 verbs are weak.
 In Great Expectations, 54.91%% of the 36901 verbs are weak.

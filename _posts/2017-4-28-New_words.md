@@ -92,79 +92,76 @@ From Steven Pinker's *The Sense of Style: The Thinking Person's Guide to Writing
 
 * **neuroethics** - The branch of bioethics that deals with the ethical implications of prescribing psychotropic drugs, such as antidepressants or amphetamines, that alter thought, mood, or behavior, and of techniques that image the brain to reveal information about motive or intent.
 
-** nonperforming - 1. Performing poorly or unsatisfactorily: nonperforming schools. 2. Failing to produce income: a bank with many nonperforming loans.
+* **nonperforming** - 1. Performing poorly or unsatisfactorily: nonperforming schools. 2. Failing to produce income: a bank with many nonperforming loans.
 
-*** off the grid = Without being connected to utility systems, such as those providing electricity and piped water: "a five-day retreat from the doldrums of daily life at a 400-acre homestead, off the grid and blissfully in the middle of nowhere" (Rachel Levin).
+* **off the grid** - Without being connected to utility systems, such as those providing electricity and piped water: "a five-day retreat from the doldrums of daily life at a 400-acre homestead, off the grid and blissfully in the middle of nowhere" (Rachel Levin).
 
 * **Onesies** - A trademark for a brand of one-piece garments for infants. This trademark, often styled without a final s and in lowercase, sometimes occurs in print with the meaning "a one-piece infant's garment."
 
-* overdiagnosis - Diagnosis of a disease or medical condition more frequently than it is actually present.
+* **overdiagnosis** - Diagnosis of a disease or medical condition more frequently than it is actually present.
 
-* parkour - A sport or athletic activity in which the participant seeks to move quickly and fluidly through an area, often an urban locale, by surmounting obstacles such as walls and railings and leaping across open spaces, as in a stairwell or between buildings.
+* **parkour** - A sport or athletic activity in which the participant seeks to move quickly and fluidly through an area, often an urban locale, by surmounting obstacles such as walls and railings and leaping across open spaces, as in a stairwell or between buildings.
 
-* patriline - A line of descent traced through the paternal side of a family.
+* **patriline** - A line of descent traced through the paternal side of a family.
 
-* phish - To request confidential information over the internet or by telephone under false pretenses in order to fraudulently obtain credit card numbers, passwords, or other personal data.
+* **phish** - To request confidential information over the internet or by telephone under false pretenses in order to fraudulently obtain credit card numbers, passwords, or other personal data.
 
-* quantum entanglement - The physical condition of two more particles or physical systems being in quantum states each of which may only be described by reference to the others, especially when the particles or systems are separated in space.
+* **quantum entanglement** - The physical condition of two more particles or physical systems being in quantum states each of which may only be described by reference to the others, especially when the particles or systems are separated in space.
 
-* queer theory - A school of cultural and literary criticism, influenced by poststructuralist thought, that questions and subverts common assumptions about sexuality and gender identity.
+* **queer theory** - A school of cultural and literary criticism, influenced by poststructuralist thought, that questions and subverts common assumptions about sexuality and gender identity.
 
-* quilling - The art or craft of making decorative designs out of thin strips of rolled paper.
+* **quilling** - The art or craft of making decorative designs out of thin strips of rolled paper.
 
-* race-bait - To arouse the prejudice or fears of one racial group regarding another, especially as a political tactic.
+* **race-bait** - To arouse the prejudice or fears of one racial group regarding another, especially as a political tactic.
 
-* recursive - 1. Of or relating to a repeating process whose output at each stage is applied as input in the succeeding stage. 2. Mathematics Of or relating to a sequential formula or function in which the first term or first set of terms is given, but in which subsequent terms are defined in relation to preceding terms. 3. Computers Of or relating to an algorithm or procedure which refers to itself in its definition or calls itself in its execution. 4. Linguistics Relating to or characterized by recursion.
+* **recursive** - 1. Of or relating to a repeating process whose output at each stage is applied as input in the succeeding stage. 2. Mathematics Of or relating to a sequential formula or function in which the first term or first set of terms is given, but in which subsequent terms are defined in relation to preceding terms. 3. Computers Of or relating to an algorithm or procedure which refers to itself in its definition or calls itself in its execution. 4. Linguistics Relating to or characterized by recursion.
 
-* rope-a-dope - 1. Relating to or being a strategy in boxing in which one fighter covers up and often leans back against the ropes to allow the opponent to become exhausted by throwing punches so that the opponent cannot defend effectively late in the fight and is thus defeated.
-2. Relating to or being a strategy in which one behaves passively or with little aggression until an opportune moment arises for successful action.
+* **rope-a-dope** - 1. Relating to or being a strategy in boxing in which one fighter covers up and often leans back against the ropes to allow the opponent to become exhausted by throwing punches so that the opponent cannot defend effectively late in the fight and is thus defeated. 2. Relating to or being a strategy in which one behaves passively or with little aggression until an opportune moment arises for successful action.
 
-* scattergram - A graph showing data for two or more variables as coordinates in a Cartesian system of two or more axes, often appearing as scattered or clustered dots. Also called scatter diagram, scatterplot.
+* **scattergram** - A graph showing data for two or more variables as coordinates in a Cartesian system of two or more axes, often appearing as scattered or clustered dots. Also called scatter diagram, scatterplot.
 
-* semifreddo - Any of various partially frozen desserts with a mousselike consistency, made with eggs, cream, sugar, flavorings, and often other ingredients.
+* **semifreddo** - Any of various partially frozen desserts with a mousselike consistency, made with eggs, cream, sugar, flavorings, and often other ingredients.
 
-* sexting - The digital transmission of sexually explicit messages or images, especially photographs or videos of oneself, usually by cell phone.
+* **sexting** - The digital transmission of sexually explicit messages or images, especially photographs or videos of oneself, usually by cell phone.
 
-* tag-team - 1. To wrestle as a member of a tag team.
-2. To work together at an activity by taking turns.
+* **tag-team** - 1. To wrestle as a member of a tag team. 2. To work together at an activity by taking turns.
 
+* **time-suck** - Something that requires an inordinate amount of time and is usually unproductive or unsuccessful.
 
-* time-suck - Something that requires an inordinate amount of time and is usually unproductive or unsuccessful.
+* **tranche** - 1. A portion of a total, especially of a block of assets such as cash or securities: the riskiest tranche of the bond offering; money delivered in two tranches. 2. A cut or slice of meat: a tranche of sirloin.
 
-* tranche - 1. A portion of a total, especially of a block of assets such as cash or securities: the riskiest tranche of the bond offering; money delivered in two tranches. 2. A cut or slice of meat: a tranche of sirloin.
+* **ubuntu** - A philosophical doctrine or approach to life that emphasizes social unity and generosity of spirit.
 
-* ubuntu - A philosophical doctrine or approach to life that emphasizes social unity and generosity of spirit.
+* **unfunny** - Not funny: "a desperately unfunny gangster spoof" (Roger Ebert).
 
-* unfunny - Not funny: "a desperately unfunny gangster spoof" (Roger Ebert).
+* **universal Turing machine** - A Turing machine that can do the work of any possible Turing machine and is thus powerful enough to perform any calculation, given enough time and memory. Also called universal computer, universal machine.
 
-* universal Turing machine - A Turing machine that can do the work of any possible Turing machine and is thus powerful enough to perform any calculation, given enough time and memory. Also called universal computer, universal machine.
+* **vacuum energy** - Background energy in a vacuum associated with vacuum fluctuations.
 
-* vacuum energy - Background energy in a vacuum associated with vacuum fluctuations.
+* **velociraptor** - A small carnivorous theropod dinosaur of the genus Velociraptor of the Cretaceous Period, having sickle-shaped talons, a long flat snout with sharp teeth, and feathers on the forelimbs.
 
-* velociraptor - A small carnivorous theropod dinosaur of the genus Velociraptor of the Cretaceous Period, having sickle-shaped talons, a long flat snout with sharp teeth, and feathers on the forelimbs.
+* **vocal percussion** - Any of various musical techniques in which sounds resembling a percussion instrument are produced in the vocal tract.
 
-* vocal percussion - Any of various musical techniques in which sounds resembling a percussion instrument are produced in the vocal tract.
+* **waterboard** - 1. Sports Any of various boards, such as a kiteboard or wakeboard, used in waterboarding. 2. A board to which a person is attached when being subjected to waterboarding. [These are the definitions given although I don't think they reflect the usage that is generally meant.]
 
-* waterboard - 1. Sports Any of various boards, such as a kiteboard or wakeboard, used in waterboarding. 2. A board to which a person is attached when being subjected to waterboarding. [These are the definitions given although I don't think they reflect the usage that is generally meant.]
+* **webmistress** - A woman whose occupation is designing, developing, marketing, or maintaining websites. 
 
-* webmistress - A woman whose occupation is designing, developing, marketing, or maintaining websites. 
+* **wetware** - The human central nervous system considered as a computing device or part of a computing device.
 
-* wetware - The human central nervous system considered as a computing device or part of a computing device.
+* **Xanax** - A trademark for the drug alprazolam.
 
-* Xanax - A trademark for the drug alprazolam.
+* **xenoestrogen** - Any of various chemical compounds, especially those present in manufactured items or in agrochemical or industrial waste, that imitate natural estrogens and thus disrupt the normal endocrine system.
 
-* xenoestrogen - Any of various chemical compounds, especially those present in manufactured items or in agrochemical or industrial waste, that imitate natural estrogens and thus disrupt the normal endocrine system.
+* **x-ray fish** - A small freshwater fish (Pristella maxillarus) native to South America and often kept in home aquariums, having an almost transparent body with a black stripe on the dorsal fin. Also called x-ray tetra.
 
-* x-ray fish - A small freshwater fish (Pristella maxillarus) native to South America and often kept in home aquariums, having an almost transparent body with a black stripe on the dorsal fin. Also called x-ray tetra.
+* **yadda yadda yadda** - And so forth; et cetera.
 
-* yadda yadda yadda - And so forth; et cetera.
+* **yellow dog** - 1. A mean or contemptible person or thing. 2. A staunchly loyal member of the Democratic Party who consistently supports other Democrats.
 
-* yellow dog - 1. A mean or contemptible person or thing. 2. A staunchly loyal member of the Democratic Party who consistently supports other Democrats.
+* **yutz** - A foolish, annoying, or socially inept person.
 
-* yutz - A foolish, annoying, or socially inept person.
+* **Zelig** - 1. One who unconsciously mimics the traits or appearances of those with whom he or she associates. 2. One having a ubiquitous, often inconspicuous presence: "[He] is a sort of Zelig of modern politics, popping up and blending in at momentous occasions" (Alessandra Stanley).
 
-* Zelig - 1. One who unconsciously mimics the traits or appearances of those with whom he or she associates. 2. One having a ubiquitous, often inconspicuous presence: "[He] is a sort of Zelig of modern politics, popping up and blending in at momentous occasions" (Alessandra Stanley).
+* **zettabyte** - 1. A unit of computer memory or data storage capacity equal to 1,024 exabytes (270 bytes). 2. One sextillion (1021) bytes.
 
-* zettabyte - 1. A unit of computer memory or data storage capacity equal to 1,024 exabytes (270 bytes). 2. One sextillion (1021) bytes.
-
-* zipline - A transportation system or piece of recreation equipment consisting of a cable stretched between points of different elevations, a pulley, and a harness or bar for attaching a rider, who moves by gravity.
+* **zipline** - A transportation system or piece of recreation equipment consisting of a cable stretched between points of different elevations, a pulley, and a harness or bar for attaching a rider, who moves by gravity.
