@@ -7,11 +7,17 @@ This article goes over how to use bootstrap to make a nice homepage. This will b
 
 First, you need to specify your doctype. If you don't specify this, web browsers will load your page in something called "Quirks mode". It has something to do with how IE used to render pages but now isn't common. To do this, enter:
 
-```<!DOCTYPE html>```
+```
+
+<!DOCTYPE html>
+
+```
 
 Now you want to declare that this doc is html and set a default language:
 
-```<html lang="en">```
+```
+<html lang="en">
+```
 
 
 We're going to use two different templates for each page. There will be a base.html and a page.html for each page. The base will contain everything we want spread across all pages, such as a navigation bar.
@@ -78,6 +84,6 @@ After you add some closing markers to close the body and html document, you're b
 
 ```
 
-The next thing you want to do with you base.html file is include a place for the templates you extend from here. Just create a container and specify that you want any additional content (such as page.html) to go there. We want to put everything in a container. I don't think you can include the black content, endblock part as code. Github doesn't seem to like that. After the nav section, you'll need some curly braces around: % block content %
+The next thing you want to do with your base.html file is include a place for the templates you extend from here. Just create a container and specify that you want any additional content (such as page.html) to go there. We want to put everything in a container. I don't think you can include the black content, endblock part as code. Github doesn't seem to like that. After the nav section, you'll need some curly braces around: % block content %
   
 And then some around: % endblock %
