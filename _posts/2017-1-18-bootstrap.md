@@ -17,7 +17,6 @@ Now you want to declare that this doc is html and set a default language:
 ``` html
 
 <html lang="en">
-
 ```
 
 
@@ -27,7 +26,7 @@ Now we're going to make the head section. HTML documents often contain both a he
 
 First thing you want in the head is the title:
 
-```
+``` html
 
 <head>
   <title>StyleStudio</title>
@@ -36,21 +35,22 @@ First thing you want in the head is the title:
 
 The default character set for HTML5 is UTF-8, so it isn't necesarry to specify it, but we'll do it just for clarity:
 
-```
+``` html
   <meta charset="utf-8">
-
 ```
 Then we need a viewport element. The viewport tag tells the browser how the webpage should be rendered. It helps adjust the webpage to optimize for the user's device.
 
 ```
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 ```
 
 Then we'll add bootstrap. Bootstrap is a free (and open source) web framework for front-ends. It is equally fast and responsive to both mobile and desktop users.
 
 ```
-  <link href="/static/bootstrap/css/bootstrap.min.css" rel="stylesheet">```
+
+  <link href="/static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+```
 
 Now we need to point to our css stylesheet. We'll make a stylesheet for each html layout and give them the same name for the sake of convenience. After that we'll point it to jquery and bootstraps javascript code.
 
