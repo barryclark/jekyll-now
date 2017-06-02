@@ -20,7 +20,7 @@ Of course there's a lot in here that's just gone way, way wrong.
 
 I may have to pick up Megatron and Nitro for sure.
 
-<blockquote class="imgur-embed-pub" lang="en" data-id="a/iHKVe"><a href="//imgur.com/iHKVe">TF 5 Deluxe Class</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>{: .center}
+<div style="margin: 0 auto;text-align:center;"><blockquote class="imgur-embed-pub" lang="en" data-id="a/iHKVe"><a href="//imgur.com/iHKVe">TF 5 Deluxe Class</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script></div>
 
 **TRANSFORMERS: THE LAST KNIGHT PREMIER EDITION DELUXE CLASS COGMAN Figure**\\
 (Ages 8 years & up/Approx. Retail Price: $19.99/Available: Summer 2017)
@@ -37,7 +37,7 @@ The TRANSFORMERS: THE LAST KNIGHT PREMIER EDITION DELUXE figures are the perfect
 
 Rally alongside the bravest bots in the universe when the Autobots Unite. Autobots Unite figures feature the greatest Autobot heroes from TRANSFORMERS: The Last Knight movie. This TRANSFORMERS PREMIER EDITION DELUXE HOT ROD figure is articulated with eye-catching detail.  In the explosive TRANSFOMERS: THE LAST KNIGHT movie, the greatest AUTOBOT heroes unite to protect the freedom of all sentient beings. AUTOBOT HOT ROD doesn’t look back at the battles he’s won, only the feats yet to come. The brash warrior charges full force into a DECEPTICON firefight, eager to encounter his next chance to be a hero and inspire his fellow comrades to join the fight.  This 5.5-inch-scale, movie inspired AUTOBOT HOT ROD converts to Lamborghini Centenario vehicle mode in 14 steps.  Available exclusively at Walmart.
 
-<blockquote class="imgur-embed-pub" lang="en" data-id="a/2zyKj"><a href="//imgur.com/2zyKj">TF5 Premier Class</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>{: .center}
+<div style="margin: 0 auto;text-align:center;"><blockquote class="imgur-embed-pub" lang="en" data-id="a/2zyKj"><a href="//imgur.com/2zyKj">TF5 Premier Class</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>{: .center}</div>
  
 
 **TRANSFORMERS: THE LAST KNIGHT PREMIER EDITION LEADER CLASS DRAGONSTORM Figure**\\
