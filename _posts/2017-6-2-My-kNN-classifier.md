@@ -15,6 +15,7 @@ The first step is to revise k-NN. I found this [lecture notes](http://www.indian
 4. gather the categories of those neighbors
 5. determine the category based on majority votes
 
+<!--more-->
 
 I want to base my new classifier on the codes provided in the video.
 
