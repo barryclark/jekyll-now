@@ -9,7 +9,7 @@ tags:
   - odds and endings
   -
 layout: post
-description: "Put together the most epic metal band with just $200 from your favorite aunt in Metalfest."
+description: "Norsaga: Odds and Ending takes an already great game and makes it better."
 featured: norsagaoe.png                                                                         
 author: robk
 published: true
