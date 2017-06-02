@@ -49,6 +49,4 @@ Overall Kingdoms of Erden: King of the Mountain is a simple, yet entertaining ca
 
 That being said, Kingdoms of Erden is a light and quick filler that's playable up to 4 players in a reasonable amount of time. While the game comes with a 10+ age rating, it's certainly playable with younger kids.
 
-
-
 *A prototype copy of Kingdoms of Erden was provided free for preview.*
