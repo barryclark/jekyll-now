@@ -1,5 +1,5 @@
 ---
-title: "Hasbro Wants You to Host a Beyblade Burst Tournament"
+title: "Hasbro Reveals Transformers: The Last Knight Figures"
 date: 2017-06-02 14:30:00 Z
 category: toys
 tags:
