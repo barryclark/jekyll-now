@@ -346,31 +346,17 @@ def to_percent(y, position):
 ```
 
 
-      File "<ipython-input-24-dbcdd021fd72>", line 4
-        plt.xticks([50%])
-                       ^
-    SyntaxError: invalid syntax
-    
-
 
 
 ```python
-df_norm.plot.barh(stacked=True);
+fig, ax = plt.subplots()
+fig.set_size_inches(12,12)
+matplotlib.rcParams.update({'font.size': 18})
 
-fig = plt.figure()
-ax = plt.subplot(111)
+df_norm.plot.barh(stacked=True, ax=ax);
 
-# Create the formatter using the function to_percent. This multiplies all the
-# default labels by 100, making them all percentages
-formatter = FuncFormatter(to_percent)
-
-plt.title("Parts of speech used in famous texts")
-
-fig.set_size_inches(3,3)
-
-ax.legend(loc='upper center')
-# Set the formatter
-plt.gca().xaxis.set_major_formatter(formatter)
+ax.set_title("Parts of speech usage in famous novels")
+#ax.legend(loc='upper left')
 
 # Shrink current axis by 20%
 box = ax.get_position()
