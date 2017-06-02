@@ -1,6 +1,6 @@
 ---
 title: "Hasbro Wants You to Host a Beyblade Burst Tournament"
-date: 2017-05-26 16:30:00 Z
+date: 2017-06-02 14:30:00 Z
 category: toys
 tags:
   - toys
