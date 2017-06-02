@@ -26,21 +26,15 @@ Now you can start on page.html. We've already got a good header, so let's focus 
     </form>
   </div>
 
-  <div class="row">
-    <form action="." method="POST">
-      <textarea class="form-control" name="contents" placeholder="Enter your feature requests here!"></textarea>
-      <input type="submit" value="Send request">
-    </form>
-  </div>
+
 </div>
 
 </body>
 ```
 
-There are other ways to input user data, such as the &lt;input> tag. This is usually for smaller inputs. For multi-line inputs, you want to use &lt;textarea>
+There are other ways to input user data, such as the ` <input> ` or `<input>` or &lt;input> tag. This is usually for smaller inputs. For multi-line inputs, we're going to use &lt;textarea>
 
 
-We'll add an extra div
 
 
 <div class="container">
