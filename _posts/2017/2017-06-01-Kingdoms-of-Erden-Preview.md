@@ -14,8 +14,12 @@ author: robk
 published: true
 ---
 
+
+<iframe  style="float:right;" src="https://www.kickstarter.com/projects/1835206317/kingdoms-of-erden-king-of-the-mountain/widget/card.html?v=2" width="220" height="420" frameborder="0" scrolling="no"></iframe>
+**UPDATE:** *The Kickstarter has launched!*
+
 <h2>Prelude</h2>
-![Kingdoms of Erden Cover](/images/kingdomsorerden/cover.jpg){: .float-right}
+
 Kingdoms of Erden: King of the Mountain is a fantasy card game currently gearing up for its [Kickstarter campaign](https://www.kickstarter.com/projects/1835206317/616005693?token=11fb844c). It's a simple and portable game that can be learned in around 2 minutes and plays in as little as 15 minutes.
 
 <h2>Play</h2>
@@ -36,10 +40,12 @@ Once a card is played the player three cards are drawn from the deck and keeps o
 The cards in Kingdoms of Erden are a thick, glossy stock. They feel *really* nice. The artwork is pretty standard medieval fantasy with each faction having its own distinct visual design. I can't really comment on much more since this is a prototype, but the way things are looking now the game components should be top notch.
 
 <h2>Perspective</h2>
-
+![Kingdoms of Erden Cover](/images/kingdomsorerden/cover.jpg){: .float-right}
 Overall Kingdoms of Erden: King of the Mountain is a simple, yet entertaining card game. It's small footprint and simple ruleset makes it very accessible and portable. The two paths to victory help provide enough variety in players' turns to keep the game interesting, without feeling like there are no meaningful choices to make.
 
-My only concern with the game is its $15 pledge level to get a print copy of the game without a box. $20 if you want a box with the game. While the game is enjoyable, a $10 tag seems a bit more reasonable for a boxed game with 36 cards.
+~~My only concern with the game is its $15 pledge level to get a print copy of the game without a box. $20 if you want a box with the game. While the game is enjoyable, a $10 tag seems a bit more reasonable for a boxed game with 36 cards.~~
+
+**UPDATE** *I've been informed that the Kickstarter campaign has been updated. You can now get Kingdoms of Erden, and all stretch goals, for $10. At this price point you'd be crazy to pass it up.*
 
 That being said, Kingdoms of Erden is a light and quick filler that's playable up to 4 players in a reasonable amount of time. While the game comes with a 10+ age rating, it's certainly playable with younger kids.
 
