@@ -46,19 +46,19 @@ class ScrappyKNN():
 First of all, instead of `closest()`, we want to write a new method called `k_closest()`. This method will have 2 attributes, `row` and `k`, where `row` is the test value and `k` is the number of nearest neighbors we are looking at. This will give us flexibility in determining `k`.
 
 ```python
-    def k_closest(self, row, k):
-        pass
+def k_closest(self, row, k):
+    pass
 ```
 
 ### 2. Calculate the distances between the new input and all training data
 We will use the same method to calculate the euclidean distance as in the example. The difference is we don’t have to find the best distance as we will sort all the values and find the top `k` values later.
 
 ```python
-    def k_closest(self, row, k):
-        neighbor_dist = []
-        for i in self.X_train:
-            dist = euc(row, i)
-            neighbor_dist.append(dist)  # compute the distance from all neighbors
+def k_closest(self, row, k):
+    neighbor_dist = []
+    for i in self.X_train:
+        dist = euc(row, i)
+        neighbor_dist.append(dist)  # compute the distance from all neighbors
 ```
 
 ### 3. Sort the distance and determine k nearest neighbors based on the k-th minimum distance
