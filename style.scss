@@ -30,6 +30,21 @@ body {
   width: 100%;
 }
 
+div.outer {
+    width: 300px; /* some width amount needed */
+    margin: 0 auto; 
+    overflow: visible;
+}
+div.inner {
+    position:relative;
+    float: right; /* this was added and display removed */
+    right: 50%;
+}
+div.inner img {
+    position: relative; 
+    right:-50%; /* this was changed from "left" in original */
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: $helveticaNeue;
   color: $darkerGray;
