@@ -9,7 +9,7 @@ tags:
   - meromorph games
 layout: post
 description: "Want a copy of Norsaga? Enter here!"
-featured: norsaga.jpg
+featured: norsaga.png
 author: robk
 published: true
 ---
