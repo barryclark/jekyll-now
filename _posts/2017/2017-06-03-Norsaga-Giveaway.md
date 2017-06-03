@@ -16,7 +16,7 @@ published: true
 
 ![Stir-Fry Eighteen](/images/norsaga/banner.png)
 
-Read my [preview of Meromorph Games' Norsaga: Odds & Endings](http://pawnsperspective.com/Norsaga-Odds-and-Endings-Preview/)? Want to win a copy of the base game, [Norsaga](http://www.meromorphgames.com/norsaga/)? Nows your chance!
+Read my [preview of Meromorph Games' Norsaga: Odds & Endings](http://pawnsperspective.com/Norsaga-Odds-and-Endings-Preview/)? Want to win a copy of the base game, [Norsaga](http://www.meromorphgames.com/norsaga/)? Now's your chance!
 
 There's multiple ways to get entries into the giveaway.
 
