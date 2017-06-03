@@ -44,7 +44,7 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 1000px;
+  max-width: 1400px;
   padding: 0 30px;
   width: 100%;
 }
@@ -60,7 +60,7 @@ body {
 
 .sidebar {
   padding-left: 2em;
-  max-width: 34%;
+  min-width: 34%;
   flex-grow: 1;
   width: 306px;
 
@@ -546,7 +546,7 @@ footer {
       display: block;
       font-family: $sans;
       color: white;
-      padding: 8px;
+      padding: 20px;
       font-size: 10px;
       width: 100%;
       text-shadow: 0 0 5px $pink;
@@ -570,6 +570,7 @@ footer {
   a {
     float: left;
     width: 50%;
+    padding: 15px;
     color:white;
     font-family: $titleb;
     text-shadow: 0 0 5px $pink;
@@ -577,20 +578,18 @@ footer {
 
   .bx-next {
     text-align: right;
-    padding-right: 10px;
     background: -moz-linear-gradient(left, rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 100%);
     background: -webkit-linear-gradient(left, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
     background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=1 );
     font-size:0;
     &:after {
-      font-size: 14px;
+      font-size: 18px;
       content: '>';
     }
   }
 
   .bx-prev {
-    padding-left: 10px;
     background: -moz-linear-gradient(left, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%);
     background: -webkit-linear-gradient(left, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
     background: linear-gradient(to right, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
@@ -598,7 +597,7 @@ footer {
     font-size: 0;
 
     &:before {
-      font-size: 14px;
+      font-size: 18px;
       content: '<';
     }
   }
