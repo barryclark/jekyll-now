@@ -4,7 +4,6 @@ layout: default
 
 <article class="post">
 
-  {% include share-page.html %}
 
   <h1>{{ page.title }}</h1>
 
@@ -18,7 +17,12 @@ layout: default
     Written on {{ page.date | date: "%B %e, %Y" }}
   </div>
 
-  {% include share-page.html %}
+  <div class="share">
+    {% include share-page.html %}
+  </div>
 
-  {% include disqus.html %}
+  <div>
+    {% include disqus.html %}
+  </div>
+
 </article>

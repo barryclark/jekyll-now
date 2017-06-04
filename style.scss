@@ -118,7 +118,15 @@ img {
 .date {
   font-style: italic;
   color: $gray;
+  margin-bottom: 10px;
 }
+
+.share {
+  margin: 0px;
+  margin-bottom: 10px;
+  border: 0px;
+}
+
 
 // Specify the color of the selection
 ::-moz-selection {
