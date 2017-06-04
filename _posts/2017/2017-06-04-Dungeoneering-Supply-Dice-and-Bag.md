@@ -1,6 +1,6 @@
 ---
 title: "Dungeoneering Supply Dice & Bag"
-date: 2017-06-05 12:00:00 Z
+date: 2017-06-04 12:00:00 Z
 category: review
 tags:
   - review
