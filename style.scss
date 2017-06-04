@@ -271,28 +271,6 @@ nav {
   }
 }
 
-
-
-.share-page {
-    text-align: center;
-    background: $white;
-    color: $darkerGray;
-    padding: 8px 15px;
-    border-radius: 5px;
-
-    a {
-        font-weight: 700;
-        color: #fff;
-        margin-left: 10px;
-
-        &:hover {
-            border-bottom: 1px dashed #fff;
-        }
-    }
-}
-
-
-
 .wrapper-footer {
   margin-top: 50px;
   border-top: 1px solid #ddd;
