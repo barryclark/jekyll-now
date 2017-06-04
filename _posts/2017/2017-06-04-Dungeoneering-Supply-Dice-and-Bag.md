@@ -8,7 +8,7 @@ tags:
   - accessories
   - dungeoneering supply
 layout: post
-description: "TekCreations specializes in crafting gaming accessories out of medium-density fibreboard. "
+description: "Based out of Greensboro, North Carolina, Dungeoneering Supply offers a number of unique gaming supplies such as handmade dice bags and polyhedral dice sets. "
 featured: dungeoneeringsupply.jpg
 author: frankg
 published: true
@@ -22,7 +22,7 @@ Shown here is an ultra-soft [crocheted drawstring dice bag](https://www.etsy.com
 
 ![Dungeoneering Supply Dice](/images/dungeoneeringsupply/dsdice.jpg)
 
-Dungeoneering Supply also carries a number of interestingly-colored dice sets, such as Turquois, [Dwarven Gray](https://www.etsy.com/listing/492298388/dwarven-gray-polyhedral-dice-set?ref=shop_home_active_9), [White Marble](https://www.etsy.com/listing/517664625/white-marble-polyhedral-dice-set?ref=shop_home_active_2), and [Marbled Purple](https://www.etsy.com/listing/522254813/marbled-purple-polyhedral-dice-set?ref=shop_home_active_6). These dice sets are made from pearly resin and sport painted lettering. They are truly unique and sell for $9.99. Although, sometimes you can catch a deal and pick up a dice set for free when you buy a dice bag. 
+Dungeoneering Supply also carries a number of interestingly-colored dice sets, such as Turquois, [Dwarven Gray](https://www.etsy.com/listing/492298388/dwarven-gray-polyhedral-dice-set?ref=shop_home_active_9), [White Marble](https://www.etsy.com/listing/517664625/white-marble-polyhedral-dice-set?ref=shop_home_active_2), and [Marbled Purple](https://www.etsy.com/listing/522254813/marbled-purple-polyhedral-dice-set?ref=shop_home_active_6). These dice sets are made from pearly resin and sport painted lettering. They are truly unique and sell for $9.99. Although, sometimes you can catch a deal and pick up a dice set for free when you buy a dice bag.
 
 If you are looking for some unique handmade gaming supplies for a distinctive gift idea or for your own game table, Dungeoneering Supply is definitely worth a look.
 
