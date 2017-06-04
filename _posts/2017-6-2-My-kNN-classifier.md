@@ -94,6 +94,10 @@ def k_closest(self, row, k):
 ### 5. Determine the category based on majority votes
 I was stumbled a bit while looking for the best way to simulating this majority voting system. As I studied a lot of Statistics, a simple way to find the most frequently occur element in the list is to by finding the mode. Numpy has a method for that.
 
+![Screenshot from Scipy docs]({{ site.url }}/assets/KNN-1.png)
+
+Please note that if there is a tie between the most frequently occur elements, `stats.mode()` will pick up one with the smallest value. This would be a drawback for our classifier.
+
 ```python
 from scipy import stats
 def k_closest(self, row, k):
