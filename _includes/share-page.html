@@ -2,9 +2,10 @@
 
 <div id="share-page">
 
-	<h4>Share this:</h4>
-
 	<div class="share-buttons">
+
+		<h4>Share this:</h4>
+
         <!-- Facebook -->
 	    <a  href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ site.baseurl }}{{ page.url }}"
 	        onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
@@ -73,11 +74,7 @@
     text-align: center;
 }
 
-/* Title */
-#share-page h4 {
-    margin-bottom: 10px;
-    font-weight: 500;
-}
+
 
 /* All buttons */
 .share-buttons {
@@ -94,6 +91,12 @@
 .share-button:hover {
     opacity: 1;
     color: #ffffff;
+}
+
+/* Title */
+.share-page h4 {
+    margin-bottom: 10px;
+    font-weight: 500;
 }
 
 /* Facebook button */
