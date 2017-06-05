@@ -10,4 +10,4 @@ These awesome people have:
 
 ### Patrons
 
-Thomas Deeny
+Jeff Johnston
