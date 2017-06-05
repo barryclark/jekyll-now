@@ -8,7 +8,7 @@ tags:
   - night clan
   - gamephilia
 layout: post
-description: "Kingdoms of Erden: King of the Mountain is a fantasy card game for 2-4 players. Players age 10+ . 15-45 minutes to play."
+description: "Previously released by Domina Games, Night Clan is a light-weight area-control card game with some amazing art and a quick play time."
 featured: nightclan.png                                                                         
 author: robk
 published: true
