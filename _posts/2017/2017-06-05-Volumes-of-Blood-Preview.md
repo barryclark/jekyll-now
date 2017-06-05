@@ -8,7 +8,7 @@ tags:
   - volumes of blood
   - mythmaker games
 layout: post
-description: "Previously released by Domina Games, Night Clan is a light-weight area-control card game with some amazing art and a quick play time."
+description: "Mythmaker Games and Blood Moon Pictures’ Kickstarter for Volumes of Blood: Body Count launches August 11, 2017"
 featured: vob.jpg                                                                         
 author: robk
 published: true
