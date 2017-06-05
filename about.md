@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+I am Alan Marin, Computer Science Student and future Software Developer. Feel Free to contact me through my email at any time.
 
 ### More Information
 
@@ -12,4 +12,4 @@ A place to include any other types of information that you'd like to include abo
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[alanmarin1996@gmail.com](mailto:alanmarin1996@gmail.com)
