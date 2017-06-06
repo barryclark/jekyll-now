@@ -66,6 +66,7 @@ title: Πως αγοράζουμε, πουλάμε, ξοδεύουμε και δ
 - <strike>Στο ανταλλακτήριο www.btcgreece.com που δέχεται εμβάσματα σε Ελληνικό τραπεζικό λογαριασμό.</strike>
 - Από κάποιον ιδιώτη στην Ελλάδα που θα τον εντοπίσετε στο [Localbitcoins](https://localbitcoins.com/) ή στο [BuyBitcoin.gr](https://www.facebook.com/BuyBitcoin.gr). Με αυτούς μπορείτε να ανταλλάξετε Ευρώ με όποιον τρόπο θέλετε π.χ. χέρι-με-χέρι, Paypal, Western Union, Πειραιώς Λεφτά Στο Λεπτό, τραπεζική μεταφορά κλπ.
 - Από το ανταλλακτήριο [BitcoinsGreece](https://bitcoinsgreece.com/) με κατάθεση μετρητών στα μηχανήματα EasyPay της Τράπεζας Πειραιώς ή με κατάθεση/έμβασμα σε λογαριασμούς της Τράπεζας Πειραιώς και της Eurobank. Δέχονται επίσης κατάθεση σε τράπεζα της Γερμανίας.
+- Από το ανταλλακτήριο [BCash](https://bcash.gr/) με κατάθεση σε Ελληνική τράπεζα μέχρι €5000 την ημέρα με προμήθεια 9%.
 - Από το ανταλλακτήριο [Chip-Chap](https://chip-chap.com/) με κατάθεση μετρητών στα μηχανήματα EasyPay της Τράπεζας Πειραιώς ή με κατάθεση/έμβασμα σε λογαριασμό της Τράπεζας Πειραιώς. Χρεώνει 5% πάνω στην ισοτιμία του ανταλλακτηρίου [Kraken](https://www.kraken.com) τη στιγμή της αγοράς Bitcoin, η οποία είναι μερικές ώρες αφού τα χρήματα πιστωθούν στον λογαριασμό της Πειραιώς. Μερικές οδηγίες:
 
     Χρησιμοποιούμε την εφαρμογή Chip-Chap σε Android ή επισκεπτόμαστε τη σελίδα [https://web.chip-chap.com](https://web.chip-chap.com/) και επιλέγουμε EasyPay. Αυτή τη στιγμή η εφαρμογή σε κινητά iOS δεν υποστηρίζει το EasyPay. Εναλλακτικά μπορούμε να χρησιμοποιήσουμε την ίδια υπηρεσία μέσω του [https://trade.holytransaction.com](https://trade.holytransaction.com).
@@ -203,7 +204,7 @@ title: Πως αγοράζουμε, πουλάμε, ξοδεύουμε και δ
 - Μερικές γνωστές απάτες που έχουν εμφανιστεί στην Ελλάδα: [OneCoin/OneLife](https://en.wikipedia.org/wiki/OneCoin), S-coin/Coinspace. Μπορείτε να διαβάσετε περισσότερα στα Ελληνικά στο [Scamcoin Detector](http://scamdetectorgr.blogspot.gr/).
 - Μερικά άρθρα που περιγράφουν απάτες με κρυπτονομίσματα: [https://blog.xapo.com/beware-of-extraordinary-claims/](https://blog.xapo.com/beware-of-extraordinary-claims/), [http://www.badbitcoin.org/tips/](http://www.badbitcoin.org/tips/), [https://www.weusecoins.com/bitcoin-scams-how-stay-safe/](https://www.weusecoins.com/bitcoin-scams-how-stay-safe/), [https://www.coingecko.com/buzz/complete-guide-to-bitcoin-scams](https://www.coingecko.com/buzz/complete-guide-to-bitcoin-scams). Βίντεο που περιγράφει πως δουλεύουν τα πυραμιδικά σχήματα Πόνζι: [https://www.youtube.com/watch?v=VXRkfqw67GE](https://www.youtube.com/watch?v=VXRkfqw67GE).
 
-Τελευταία ενημέρωση: 2017-05-26
+Τελευταία ενημέρωση: 2017-06-06
 
 <!-- <div class="posts">
   {% for post in site.posts %}

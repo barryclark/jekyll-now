@@ -37,6 +37,7 @@ Come to one of our meetups in [Athens](http://www.meetup.com/BlockchainGreece-0/
 - <strike>At the [BTCGreece](https://www.btcgreece.com) exchange that accepts transfers at their Greek bank accounts.</strike>
 - From a private Bitcoin trader you can find on [Localbitcoins](https://localbitcoins.com/) or at [BuyBitcoin.gr](https://www.facebook.com/BuyBitcoin.gr). You can exchange Euros with them using any method you want, e.g. in person, via Paypal, Western Union, Piraeus Bank Instant Cash (Lefta Sto Lepto), bank transfer etc.
 - From the [BitcoinsGreece](https://bitcoinsgreece.com/) Bitcoin exchange that accepts cash at the EasyPay Piraeus Bank machines or via a deposit at their Piraeus Bank and Eurobank accounts. They also accept deposits at a German bank.
+- From the [BCash](https://bcash.gr/) Bitcoin exchange via deposit at a Greek bank. They sell up to €5000 of Bitcoin per person per day and charge a 9% fee.
 - From the [Chip-Chap](https://chip-chap.com/) Bitcoin exchange that accepts cash at the EasyPay Piraeus Bank machines or via a deposit at their Piraeus Bank account. They charge 5% over the [Kraken](https://www.kraken.com) exchange rate at the time of purchase, that can be a few hours after your deposit. Here are some sample instructions:
 
 	Use use the Chip-Chap Android app or we visit [https://web.chip-chap.com](https://web.chip-chap.com/) and select EasyPay. At this time the iOS app does not support EasyPay. Alternatively we can access the same service via [https://trade.holytransaction.com](https://trade.holytransaction.com).
@@ -69,7 +70,7 @@ Come to one of our meetups in [Athens](http://www.meetup.com/BlockchainGreece-0/
 
 	![](/images/Page 8.png)
 
-Last update: 2017-04-30
+Last update: 2017-06-06
 
 <!-- <div class="posts">
   {% for post in site.posts %}
