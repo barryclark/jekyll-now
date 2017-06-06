@@ -10,7 +10,7 @@ The most basic is the following:
 # Open the file
 f = open('file.txt', 'r')
 ```
-The 'r' means that the file is being opened as read-only. The other options are 'w' for write only, 'a' for append only, and 'r+' for both reading and writing. If you use 'r+', you could accidentially write over your file, so it is best to use 'r' unless you specifically want to edit the file.
+The 'r' means that the file is being opened as read-only. The other options are ```'w'``` for write only, 'a' for append only, and 'r+' for both reading and writing. If you use 'r+', you could accidentially write over your file, so it is best to use 'r' unless you specifically want to edit the file.
 
 From there, you can read the file with:
 ```python
@@ -52,7 +52,7 @@ finally:
     f.close()
 ```
 
-However, there's an easier way to do this, and that's using the 'with' command. This is the simple and safe way to open a file.
+However, there's an easier way to do this, and that's using the 'with' command. This is the **simple and safe way to open a file**:
 
 ```python
 # Use a with statement
@@ -62,4 +62,4 @@ with open('file.txt') as f:
 
 	# Do other things with the file
 ```
-Whenever the with statement ends, the file will be properly closed.
+Whenever the 'with' statement ends, the file will be properly closed.
