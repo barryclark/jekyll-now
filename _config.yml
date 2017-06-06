@@ -18,14 +18,14 @@ avatar: https://avatars3.githubusercontent.com/u/26049124?v=3&u=add584d14724d0c6
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email:
+  email: jmattisdev@gmail.com
   facebook:
   flickr:
   github: jrm1715
   instagram:
   linkedin:
   pinterest:
-  rss: # just type anything here for a working RSS icon
+  rss: RSS
   twitter: jmattis87
   stackoverflow: /users/8076085/jason-mattis
   youtube: # channel/<your_long_string> or user/<user-name>
@@ -34,14 +34,14 @@ footer-links:
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 # You can find your shortname on the Settings page of your Disqus account
-disqus:
+disqus: https-jrm1715-github-io
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-google_analytics:
+google_analytics: UA-100566100-1
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
-url:
+url: https://jrm1715.github.io
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
