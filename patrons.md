@@ -10,4 +10,5 @@ These awesome people have:
 
 ### Patrons
 
+Gonzalo Aguirre Bisi\\
 Jeff Johnston
