@@ -25,7 +25,7 @@ The first item is Pokémon's first foray onto the Nintendo Switch with Pokkén T
 
 Next up is Pokémon Ultra Sun and Pokémon Ultra Moon. New forms of both Solgaleo and Lunala were shown, but no additional info on them was given. Pokémon Ultra Sun and Pokémon Ultra Moon are described as "powered up" new editions of the titled with new additions to the story and new features. Worldwide release will be November 17, 2017, with more information coming later in the year.
 
-![Pokemon Gold and Silver](/images/pokemon/goldsilver.png){: float-right}
+![Pokemon Gold and Silver](/images/pokemon/goldsilver.png){: .float-right}
 Last, but certainly not least, will be the release Pokémon Gold & Silver on the Nintedo Virtual Console. Similar to Red, Blue, and Yellow, the games will be presented in their original forms with the added ability to trade over wireless and connect to the Pokémon Bank. Both titles will be available on September 22, 2017.
 
 
