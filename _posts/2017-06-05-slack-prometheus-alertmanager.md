@@ -8,12 +8,12 @@ image: phone.jpg
 
 A simple guide, taking a look at how we can enhance the quality of the alert notifications we recieve from Alertmanager in our Slack channels. The changes we run through allow us to enrich the quality of the information in our alerts, allowing us to make better decisions up-front when responding to an event.
 
-Alertmanager is the go-to method of alert handling, routing and delivery for Prometheus. It's a fantastic yet simple tool that allows us to customise how we handle the alerting aspects of our monitoring systems. The process of installing and configuring alertmanager is already well [documented](https://www.robustperception.io/using-slack-with-the-alertmanager/).
+Alertmanager is the go-to method of alert handling, routing and delivery for Prometheus. It's a fantastic yet simple tool that allows us to customise how we handle the alerting aspects of our monitoring systems. The process of installing and configuring Alertmanager is already well [documented](https://www.robustperception.io/using-slack-with-the-alertmanager/).
 
-Based on the same powerful PromQL that prometheus uses, it's easy to see why it's a popular choice. This article hopes to offer a simple guide to getting more value out of Alertmanager when used to drive notifications, in our case into Slack.
+Based on the same powerful PromQL that Prometheus uses, it's easy to see why it's a popular choice. This article hopes to offer a simple guide to getting more value out of Alertmanager when used to drive notifications, in our case into Slack.
 
 # But Why?
-By design, the default alertmanager template for Slack is deliberatley brief. This has been done on the expectation that it serves as a notification with just enough details for the engineer to then investigate. Though I understand the thinking, having additional context to an alert and making them more usable can help recievers assess the alert and make better decisions, faster. 
+By design, the default Alertmanager template for Slack is deliberatley brief. This has been done on the expectation that it serves as a notification with just enough details for the engineer to then investigate. Though I understand the thinking, having additional context to an alert and making them more usable can help recievers assess the alert and make better decisions, faster. 
 
 Lets dig deeper...
 
@@ -40,10 +40,10 @@ Slack will deliberatly collapse messages over five lines long, this is useful to
 
 Let's have a look in more detail; 
 
-* **Summary**, here we can see a clear concise summary of the issue, this is far more readable than the formatting of the actual alert name in prometheus allows.
+* **Summary**, here we can see a clear concise summary of the issue, this is far more readable than the formatting of the actual alert name in Prometheus allows.
 * **Description**, allows us to detail more relevant information.
 * **Severity**, a user defined field that allows us to perform some basic classification of alerts and can be used to inform notification preferences.
-* **Graph**, a link to the relevant query using the prometheus graph interface, this usually requires some additional config that's detailed futher down.
+* **Graph**, a link to the relevant query using the Prometheus graph interface, this usually requires some additional config that's detailed futher down.
 * **Runbook**, this one is actually more useful than I first appreciated. This field allows you to specify the URL of a runbook that's associated to an alert. For example; a disk usage alert on a database server could link through to a runbook on how to safely clear it down. This can be super useful to ensuring smooth and predictable responses to common issues from on-call teams.
 * **Details**, in this section we range through additional fields that are present to ensure we are representing all the essential info.
 
@@ -83,7 +83,7 @@ ALERT ElasticacheCPUUtilisation
 
 The 'graph' link provides us with a direct link to the Prometheus graph view for that query. The issue however is that it's likely to guess that URL wrong. When behind a proxy or running the container as an image, this value needs setting to something your clients browser can resolve.
 
-To do this, define the following flag to prometheus and restart the Prometheus server: 
+To do this, define the following flag to Prometheus and restart the Prometheus server: 
 ```
 -web.external-url=http://externally-available-url:9090/
 ```
