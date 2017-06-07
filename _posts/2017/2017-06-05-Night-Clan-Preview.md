@@ -14,7 +14,7 @@ author: robk
 published: true
 ---
 
-![Night Clan](/images/featured/nightclan.png){: .float-right}
+<iframe style="float:right;" src="https://www.kickstarter.com/projects/1575902960/night-clan/widget/card.html?v=2" width="220" height="420" frameborder="0" scrolling="no"></iframe>
 **Designers:** Yukinori Ohashi \\
 **Publisher:** [Gamephilia](http://www.gamephilia.net/night-clan/)\\
 **Year:** 2017\\
@@ -25,7 +25,7 @@ published: true
 **Rules Available Online:** [Yes](https://drive.google.com/file/d/0B4EuZUv5vvB-UzVfS1pPODJJblU/view)\\
 **BGG:** [Night Clan](https://boardgamegeek.com/boardgame/168549/night-clan)
 
-<iframe style="float:right;" src="https://www.kickstarter.com/projects/1575902960/night-clan/widget/card.html?v=2" width="220" height="420" frameborder="0" scrolling="no"></iframe>Gamephilia has launched Night Clan on Kickstater. Previously released by Domina Games, the Yukinori Ohashi game is a light-weight area-control card game with some amazing art and a quick play time.
+Gamephilia has launched Night Clan on Kickstater. Previously released by Domina Games, the Yukinori Ohashi game is a light-weight area-control card game with some amazing art and a quick play time.
 
 At the start of the game a number of location cards are placed down on the table dicated by the number of players. These are the areas that you'll play cards down to on your turn. Each player is given an identical deck of 13 cards containing a Troll, Misteltoe, Night Watch cards, Daughters, and Riches. An initial hand of 3 cards is drawn and play begins.
 
