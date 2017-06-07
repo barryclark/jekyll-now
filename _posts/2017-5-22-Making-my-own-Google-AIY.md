@@ -6,6 +6,8 @@ Here is the list as captured on [Google AIY Projects](https://aiyprojects.withgo
 
 ![Screenshot from Google AIY](/assets/AIY.png)
 
+<!--excerpt-->
+
 I thought to myself, I can make it without the plastic standoffs, the speaker, replacing the push button with some other forms of input, I have some wires, the cardboard box, the lamp, I have still have loads of switch, I don’t need lamp holder if I don’t have a lamp. I basically don’t need 10 out of 12 items included in the kit. The most essential items which are not listed are the Raspberry Pi 3 and a SD card which I have.
 
 The 2 items I was unsure about it the Voice HAT accessory board and the Voice HAT microphone board. I set out to resarch on what they are used for. Or…here is another thought, from what I have so far, I think all I’m missing is some form of microphone for input. I found this article about using the webcam microphone as voice input. I think I’ll head on this direction first. I want to make my own Alexa which converses with me using a webcam and speakers. I also found this read which is exactly what I’m trying to do
