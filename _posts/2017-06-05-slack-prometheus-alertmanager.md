@@ -12,7 +12,7 @@ Alertmanager is the go-to method of alert handling, routing and delivery for Pro
 
 Based on the same powerful PromQL that Prometheus uses, it's easy to see why it's a popular choice. This article hopes to offer a simple guide to getting more value out of Alertmanager when used to drive notifications, in our case into Slack.
 
-# But Why?
+# What's wrong with the default notifications?
 By design, the default Alertmanager template for Slack is deliberately brief. This has been done on the expectation that it serves as a notification with just enough details for the engineer to then investigate. Though I understand the thinking, having additional context to an alert and making them more usable can help recievers assess the alert and make better decisions, faster. 
 
 Lets dig deeper...
@@ -28,7 +28,7 @@ One of the problems with the above is the alert name in Prometheus can often be 
 
 Unless you setup the above yourself personally, it doesn't give a lot away to the receiver. If it's 02:00 and you've been called out due to a systems failure, this can add additional delays whilst you dial-in to get at that contextual information that Prometheus holds.
 
-# Another Way
+# Adding more context
 
 Below is a screenshot from Alertmanager, configured in this case to provide the team with a richer level of information:
 
@@ -47,10 +47,10 @@ Let's have a look in more detail;
 * **Runbook**, this one is actually more useful than I first appreciated. This field allows you to specify the URL of a runbook that's associated to an alert. For example; a disk usage alert on a database server could link through to a runbook on how to safely clear it down. This can be super useful to ensuring smooth and predictable responses to common issues from on-call teams.
 * **Details**, in this section we range through additional fields that are present to ensure we are representing all the essential info.
 
-# How to customise
+# How to customise your alerting
 If the detail shown above looks like it would add value for yourself and your teams, below are the steps we followed to achieve this.
 
-## Step 1 - Alert Rules
+## Step 1 - Updating your Alert Rules
 The alert notification is only as useful as the data you feed it, first up let's look at how we can define our alert rules to ensure we can enrich our alert messages. 
 
 Standard rules tend to look something like this: 
