@@ -110,7 +110,7 @@ title: Πως αγοράζουμε, πουλάμε, ξοδεύουμε και δ
 - Δεν μπορεί να σας εμποδίσει κάποιος να στείλετε Bitcoin οπουδήποτε στον κόσμο.
 - Μπορείτε να στείλετε υποδιαίρεση του Bitcoin.
 - Δεν μπορεί κάποιος να κατασχέσει/κουρέψει τα Bitcoin σας χωρίς την άδειά σας.
-- Κάθε μεταφορά Bitcoin κοστίζει σήμερα €0,10 ανεξάρτητα από τον αριθμό Bitcoin που στέλνετε.
+- Κάθε μεταφορά Bitcoin κοστίζει σήμερα €1 ανεξάρτητα από τον αριθμό Bitcoin που στέλνετε.
 - Δεν χρειάζετε να δώσετε τα στοιχεία σας σε κανέναν για να φτιάξετε ένα πορτοφόλι Bitcoin.
 - Για να λάβετε ή να στείλετε μια πληρωμή Bitcoin δεν χρειάζεται να μοιραστείτε τα προσωπικά σας στοιχεία.
 - Μια συναλλαγή Bitcoin συνήθως ολοκληρώνεται μέσα σε 10 λεπτά.
@@ -151,7 +151,7 @@ title: Πως αγοράζουμε, πουλάμε, ξοδεύουμε και δ
 
 ### <a name="fees"></a> Τι έξοδα έχει μια πληρωμή σε Bitcoin;
 
-Για τον παραλήπτη, τίποτα, εκτός αν κάνει χρήση κάποιου πάροχου πληρωμών. Στον αποστολέα κοστίζει περίπου €0,10 (10 λεπτά του Ευρώ) ανεξαρτήτως του ποσού.
+Για τον παραλήπτη, τίποτα, εκτός αν κάνει χρήση κάποιου πάροχου πληρωμών. Στον αποστολέα κοστίζει περίπου €1 ανεξαρτήτως του ποσού.
 
 ### <a name="reversal"></a> Μπορεί ο πληρωτής να ακυρώσει την πληρωμή που έκανε με Bitcoin;
 
@@ -204,7 +204,7 @@ title: Πως αγοράζουμε, πουλάμε, ξοδεύουμε και δ
 - Μερικές γνωστές απάτες που έχουν εμφανιστεί στην Ελλάδα: [OneCoin/OneLife](https://en.wikipedia.org/wiki/OneCoin), S-coin/Coinspace. Μπορείτε να διαβάσετε περισσότερα στα Ελληνικά στο [Scamcoin Detector](http://scamdetectorgr.blogspot.gr/).
 - Μερικά άρθρα που περιγράφουν απάτες με κρυπτονομίσματα: [https://blog.xapo.com/beware-of-extraordinary-claims/](https://blog.xapo.com/beware-of-extraordinary-claims/), [http://www.badbitcoin.org/tips/](http://www.badbitcoin.org/tips/), [https://www.weusecoins.com/bitcoin-scams-how-stay-safe/](https://www.weusecoins.com/bitcoin-scams-how-stay-safe/), [https://www.coingecko.com/buzz/complete-guide-to-bitcoin-scams](https://www.coingecko.com/buzz/complete-guide-to-bitcoin-scams). Βίντεο που περιγράφει πως δουλεύουν τα πυραμιδικά σχήματα Πόνζι: [https://www.youtube.com/watch?v=VXRkfqw67GE](https://www.youtube.com/watch?v=VXRkfqw67GE).
 
-Τελευταία ενημέρωση: 2017-06-06
+Τελευταία ενημέρωση: 2017-06-07
 
 <!-- <div class="posts">
   {% for post in site.posts %}
