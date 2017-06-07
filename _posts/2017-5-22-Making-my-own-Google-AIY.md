@@ -1,3 +1,10 @@
+---
+layout: post
+comments: true
+title: Making my own Google AIY Kit
+---
+
+
 Google recently released the AIY kit in conjuntion with the MagPi magazine. I got an email telling me about this kit 3 days after its release. I regretted instantly for not keeping a closer eye on updates in the makers' realm. I have since subscribed to the MagPi magazine in the hope that I won’t miss out any cool stuff for the next 12 months.
 
 This morning, I spent an hour looking for a way to get this AIY Kit. I could have gone outside and search for it in the bookstores but it’s Sunday and it’s early. I searched all over the Internet to find somewhere that still has this kit in stock and doesn’t cost £20+. I gave up by my second glass of chocolate oat milk and started looking at the components that make up this kit.
