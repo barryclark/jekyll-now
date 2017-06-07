@@ -6,11 +6,17 @@
 }
 
 .share {
-	padding-left: 0.5em;
+	padding: 0 0.5em;
+	width: 2.5em;
+	text-align: center;
 }
 
 .share:hover {
-	transform: scale(1.1);
+	width: 100%;
+}
+
+.full-name {
+	display: none;	
 }
 
 a:hover {
