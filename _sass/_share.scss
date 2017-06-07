@@ -3,16 +3,28 @@
 	left: 10px;
 	white-space: nowrap;
 	overflow: visible;
+	
+	@include mobile {
+		position: initial;
+	}
 }
 
 .share {
 	padding: 0 0.5em;
 	width: 2.5em;
 	text-align: center;
+	
+	@include mobile {
+		display: inline-block;
+	}
 }
 
 .share:hover {
 	width: 100%;
+	
+	@include mobile {
+		width: initial;
+	}
 }
 
 .full-name {
