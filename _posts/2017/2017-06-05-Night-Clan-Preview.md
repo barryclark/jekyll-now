@@ -25,7 +25,7 @@ published: true
 **Rules Available Online:** [Yes](https://drive.google.com/file/d/0B4EuZUv5vvB-UzVfS1pPODJJblU/view)\\
 **BGG:** [Night Clan](https://boardgamegeek.com/boardgame/168549/night-clan)
 
-Gamephilia launches Night Clan on Kickstater tomorrow. Previously released by Domina Games, the Yukinori Ohashi game is a light-weight area-control card game with some amazing art and a quick play time.
+<iframe style="float:right;" src="https://www.kickstarter.com/projects/1575902960/night-clan/widget/card.html?v=2" width="220" height="420" frameborder="0" scrolling="no"></iframe>Gamephilia has launched Night Clan on Kickstater. Previously released by Domina Games, the Yukinori Ohashi game is a light-weight area-control card game with some amazing art and a quick play time.
 
 At the start of the game a number of location cards are placed down on the table dicated by the number of players. These are the areas that you'll play cards down to on your turn. Each player is given an identical deck of 13 cards containing a Troll, Misteltoe, Night Watch cards, Daughters, and Riches. An initial hand of 3 cards is drawn and play begins.
 
@@ -44,7 +44,7 @@ Scoring is simple:
 
 Night Clan is a quick, simple to learn, and elegant area-control game that's makes a lot happen with a limited variety of cards. The artwork is moody, yet strikingly beautiful. There's no word on what the pledge levels will be yet, so I can't comment much on the price. As my copy is a prototype I also can't comment on the quality of the game any further than its artwork.
 
-Once the Kickstarter goes live I'll update this post to reflect cost, stretch goals, and whatever other new information pops up.
+A copy of Night Clan will run you around a $14 pledge. For that price it shouldn't be passed up.
 
 *A prototype copy of Night Clan was provided free for preview by Gamphilia*
 
