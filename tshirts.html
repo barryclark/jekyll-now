@@ -30,7 +30,7 @@ figure img:hover {
 {% for tee in site.data.tshirts %}
 <li itemscope itemtype="http://schema.org/Product"><a itemprop="url" href="{{ tee.link }}">
 <figure>
-<img itemprop="image" src="{{ tee.image }}" alt="{{ tee.title }}" />
+<img itemprop="image" src="http://hendrixjoseph.github.io/images/tshirts/{{ tee.image }}" alt="{{ tee.title }}" />
 <figcaption>
 <div itemprop="name">{{ tee.title }}</div>
 <div><span itemprop="offers" itemscope itemtype="http://schema.org/Offer">
