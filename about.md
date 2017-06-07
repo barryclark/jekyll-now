@@ -24,3 +24,7 @@ I can’t think of anything else now. Let me know about you then. Drop me and em
 ### Contact me
 
 [lbhtran@gmail.com](mailto:lbhtran@gmail.com)
+
+### Recruit me
+
+I'm currently living in Birmingham, United Kingdom. Wherever you are, if you think I'm worthy for a job, [here is my CV](https://lbhtran.github.io/myCV)
