@@ -1,12 +1,11 @@
 .share-block {
-	width: 100%;
+	position: fixed;
+	left: 10px;
 	white-space: nowrap;
 	overflow: visible;
 }
 
 .share {
-	display: inline-block;
-	width: 16%;
 	padding-left: 0.5em;
 }
 
@@ -14,8 +13,14 @@
 	transform: scale(1.1);
 }
 
-.share .count {
-	padding-left: 0.5em;
+a:hover {
+	.fa {
+		display: none;	
+	}
+	
+	.full-name {
+		display: inherit;
+	}
 }
 
 .share.facebook {
