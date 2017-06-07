@@ -6,14 +6,14 @@ image: phone.jpg
 ---
 
 
-A simple guide, taking a look at how we can enhance the quality of the alert notifications we recieve from Alertmanager in our Slack channels. The changes we run through allow us to enrich the quality of the information in our alerts, allowing us to make better decisions up-front when responding to an event.
+A simple guide, taking a look at how we can enhance the quality of the alert notifications we receive from Alertmanager in our Slack channels. The changes we run through allow us to enrich the quality of the information in our alerts, allowing us to make better decisions up-front when responding to an event.
 
 Alertmanager is the go-to method of alert handling, routing and delivery for Prometheus. It's a fantastic yet simple tool that allows us to customise how we handle the alerting aspects of our monitoring systems. The process of installing and configuring Alertmanager is already well [documented](https://www.robustperception.io/using-slack-with-the-alertmanager/).
 
 Based on the same powerful PromQL that Prometheus uses, it's easy to see why it's a popular choice. This article hopes to offer a simple guide to getting more value out of Alertmanager when used to drive notifications, in our case into Slack.
 
 # But Why?
-By design, the default Alertmanager template for Slack is deliberatley brief. This has been done on the expectation that it serves as a notification with just enough details for the engineer to then investigate. Though I understand the thinking, having additional context to an alert and making them more usable can help recievers assess the alert and make better decisions, faster. 
+By design, the default Alertmanager template for Slack is deliberately brief. This has been done on the expectation that it serves as a notification with just enough details for the engineer to then investigate. Though I understand the thinking, having additional context to an alert and making them more usable can help recievers assess the alert and make better decisions, faster. 
 
 Lets dig deeper...
 
@@ -26,7 +26,7 @@ As you can see, in it's default guise, the detail provided is fairly limited, we
 
 One of the problems with the above is the alert name in Prometheus can often be shorthand and not at all clear, also, we have no context as to the values involved that have triggered the alarm. 
 
-Unless you setup the above yourself personally, it doesn't give a lot away to the reciever. If it's 02:00 and you've been called out due to a systems failure, this can add additional delays whilst you dial-in to get at that contextual information that Prometheus holds.
+Unless you setup the above yourself personally, it doesn't give a lot away to the receiver. If it's 02:00 and you've been called out due to a systems failure, this can add additional delays whilst you dial-in to get at that contextual information that Prometheus holds.
 
 # Another Way
 
@@ -34,7 +34,7 @@ Below is a screenshot from Alertmanager, configured in this case to provide the 
 
 ![Alert]({{ site.baseurl }}/images/alert.png "Alert")
 
-Slack will deliberatly collapse messages over five lines long, this is useful to avoid creating noise in a channel. Here's the alert when a user expands the message in Slack using the 'show more' option:
+Slack will deliberately collapse messages over five lines long, this is useful to avoid creating noise in a channel. Here's the alert when a user expands the message in Slack using the 'show more' option:
 
 ![AlertExpanded]({{ site.baseurl }}/images/alert_expanded.png "AlertExpanded")
 
@@ -43,7 +43,7 @@ Let's have a look in more detail;
 * **Summary**, here we can see a clear concise summary of the issue, this is far more readable than the formatting of the actual alert name in Prometheus allows.
 * **Description**, allows us to detail more relevant information.
 * **Severity**, a user defined field that allows us to perform some basic classification of alerts and can be used to inform notification preferences.
-* **Graph**, a link to the relevant query using the Prometheus graph interface, this usually requires some additional config that's detailed futher down.
+* **Graph**, a link to the relevant query using the Prometheus graph interface, this usually requires some additional config that's detailed further down.
 * **Runbook**, this one is actually more useful than I first appreciated. This field allows you to specify the URL of a runbook that's associated to an alert. For example; a disk usage alert on a database server could link through to a runbook on how to safely clear it down. This can be super useful to ensuring smooth and predictable responses to common issues from on-call teams.
 * **Details**, in this section we range through additional fields that are present to ensure we are representing all the essential info.
 
@@ -113,7 +113,7 @@ receivers:
 ```
 {% endraw %}
 
-Of note, this has been tailored for our environment, we group our alerts by the 'alertname', so we can reieve multiple alerts of the same type in a single message. 
+Of note, this has been tailored for our environment, we group our alerts by the 'alertname', so we can receive multiple alerts of the same type in a single message. 
 Here we set the title to something abstract, we then range through the alerts in the `text` field. 
 
 # Summary
