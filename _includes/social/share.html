@@ -16,67 +16,41 @@
 {% capture id %}{{ page_id | remove: '/' | replace: '_', '-' | strip }}{% endcapture %}
 {% capture text %}{% if include.text %}{{ include.text }}{% elsif page.title %}{{ page.title }}{% endif %}{% endcapture %}
 
-<script>
-$( document ).ready(function() {
-	social.facebook.process("{{ url }}", function(count) {
-		$("#{{ id }} .facebook .count").append(intToString(count.share_count));
-	});
-	
-	social.reddit.process("hendrixjoseph.github.io", function(result) {
-		var c = result.find("{{ url }}");
-		
-		if(typeof c !== "undefined") {		
-			$("#{{ id }} .reddit .count").append(intToString(c.score));
-		}
-	});
-	
-	social.linkedin.process("{{ url }}", function(result) {
-		$("#{{ id }} .linkedin .count").append(intToString(result.count));
-	});
-});
-</script>
-
 <div id="{{ id }}" class="share-block">
 <a href="https://www.facebook.com/dialog/share?app_id={{ site.fb-app-id }}&display=page&href={{ url }}" target="_blank">
 	<div class="share facebook">
-		<i class="fa fa-facebook mobile-only" aria-hidden="true"></i>
-		<span class="mobile-hide">facebook</span>
-		<span class="count"></span>
+		<i class="fa fa-facebook" aria-hidden="true"></i>
+		<span class="mobile-hide full-name">facebook</span>
 	</div>
 </a>
 <a href="https://twitter.com/intent/tweet?url={{ url }}&via={{ site.footer-links.twitter }}{% if text %}&text={{ text | url_encode }}{% endif %}" target="_blank">
 	<div class="share twitter">
-		<i class="fa fa-twitter mobile-only" aria-hidden="true"></i>
-		<span class="mobile-hide">twitter</span>
-		<span class="count"></span>
+		<i class="fa fa-twitter" aria-hidden="true"></i>
+		<span class="mobile-hide full-name">twitter</span>
 	</div>
 </a>
 <a href="https://www.linkedin.com/shareArticle?url={{ url }}&source={{ site.name | uri_escape }}" target="_blank">
 	<div class="share linkedin">
-		<i class="fa fa-linkedin mobile-only" aria-hidden="true"></i>
-		<span class="mobile-hide">linkedin</span>
-		<span class="count"></span>
+		<i class="fa fa-linkedin" aria-hidden="true"></i>
+		<span class="mobile-hide full-name">linkedin</span>
 	</div>
 </a>
 <a href="https://plus.google.com/share?url={{ url }}" target="_blank">
 	<div class="share googleplus">
-		<i class="fa fa-google-plus mobile-only" aria-hidden="true"></i>
-		<span class="mobile-hide">google+</span>
-		<span class="count"></span>
+		<i class="fa fa-google-plus" aria-hidden="true"></i>
+		<span class="mobile-hide full-name">google+</span>
 	</div>
 </a>
 <a href="http://www.reddit.com/submit?url={{ url }}" target="_blank">
 	<div class="share reddit">
-		<i class="fa fa-reddit-alien mobile-only" aria-hidden="true"></i>
-		<span class="mobile-hide">reddit</span>
-		<span class="count"></span>
+		<i class="fa fa-reddit-alien" aria-hidden="true"></i>
+		<span class="mobile-hide full-name">reddit</span>
 	</div>
 </a>
 <a href="http://www.stumbleupon.com/likecontent?url={{ url }}" target="_blank">
 	<div class="share stumbleupon">
-		<i class="fa fa-stumbleupon mobile-only" aria-hidden="true"></i>
-		<span class="mobile-hide">stumbleupon</span>
-		<span class="count"></span>
+		<i class="fa fa-stumbleupon" aria-hidden="true"></i>
+		<span class="mobile-hide full-name">stumbleupon</span>
 	</div>
 </a>
 </div>
