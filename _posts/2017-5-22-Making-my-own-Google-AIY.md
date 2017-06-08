@@ -31,7 +31,7 @@ I’m having some doubt with the suggested SDFormatter app as it’s taking a ve
 
 Now it’s time to install NOOBS. More waiting.
 
-![Screenshot from NOOBS installation](/assets/install-OS.jpg)
+![Screenshot from NOOBS installation](/assets/Install-OS.jpg)
 
 I went out for lunch and a few drinks, but now I’m back. Here are what I’ve done so far:
  - I have set up the Raspberry Pi 3 with the newest installation of NOOBS
