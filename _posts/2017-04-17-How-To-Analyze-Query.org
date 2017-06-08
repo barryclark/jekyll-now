@@ -1,0 +1,41 @@
+* SQL 문제 어떻게 접근해야할까?
+** 문제 해결의 일반적인 접근 방법
+*** 문제 인식
+*** 원인 분석
+*** 해결 방법 모색
+*** 해결 방법 평가
+*** 방법 선택 및 적용
+*** 테스트
+*** 적용
+* SQL 플랜 읽어보자.
+** EXPLAIN 사용방법
+** PLAN 결과 해석하기
+* SQL 튜닝은 어떻게 이루어질까?
+** 인덱스의 활용
+** DB 전용 힌트(Hint)의 사용
+** SQL 변형 (Transformation)
+
+SET A = SELECT A
+
+SET B = SELECT B
+
+A - B 
+
+SELECT A MINUS SELECT B = 0
+
+SELECT B MINUS SELECT A = 0
+
+SELECT A WHERE 
+(colA, colB, ... colZ) 
+not in (SELECT B)
+
+like TDD.... Unit test 
+
+** 업무 요건의 변경
+   --> Consultant Domain Knowledge 
+       Negotiation
+
+* SQL 플랜과 실제 수행 어떻게 다른걸까?
+** SQL 플랜을 DB는 어떻게 만들까?
+** SQL의 실제 수행결과를 측정할 수는 없을까?
+* 결론
