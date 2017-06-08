@@ -21,7 +21,7 @@ The 2 items I was unsure about it the Voice HAT accessory board and the Voice HA
 
 But first of all, I have to set up my SD card. It’s time to install NOOBS.
 
-Head to https://www.raspberrypi.org/downloads/noobs/ to download the latest install.
+Head to [NOOBS](https://www.raspberrypi.org/downloads/noobs/) to download the latest install.
 
 To create an installation of NOOBS on SD Card on a Mac, I’m following this [guide](https://computers.tutsplus.com/tutorials/how-to-install-noobs-on-a-raspberry-pi-with-a-mac--mac-57831)
 
