@@ -8,6 +8,11 @@ I am a last-year PhD student in Université Pierre et Marie Curie -- UPMC (Paris
     
 I have knowledge from various domains, among which mathematics, probability, statistics, machine learning, computer science and finance. I am currently looking for a *research* and/or *developer* job.
 
-- **Email**: zhengwj[dot]soul[arrowbase]gmail.com -- not accessable when I am in China (usually during the Christmas)
-- **Email**: wenjie[dot]zheng[arrowbase]upmc.fr -- not permanent
-- **Github**: [https://github.com/WenjieZ](https://github.com/WenjieZ")
+- **Email**: zhengwj [dot] soul [arrowbase] gmail [dot] com -- not accessable when I am in China (usually during the Christmas)
+- **Email**: wenjie [dot] zheng [arrowbase] upmc [dot] fr -- not permanent
+- **Github**: [https://github.com/WenjieZ](https://github.com/WenjieZ)
+
+### Papers
+- [Toward a Better Understanding of Leaderboard](http://arxiv.org/abs/1510.03349)
+- [Matrix Factorization Method for Decentralized Recommender Systems](https://arxiv.org/abs/1604.08420)
+- [Two Differentially Private Rating Collection Mechanisms for Recommender Systems](https://arxiv.org/abs/1604.08402)
