@@ -19,3 +19,7 @@ I have knowledge from various domains, among which mathematics, probability, sta
 
 ## Software
 - [Breakout](software/breakout.zip) -- a simple game on Windows, written in C++.
+- [From 2048 to ABCD](https://github.com/WenjieZ/From_2048_To_ABCD) -- a 2048-like game, open-source, written in C++.
+- [Multithreading of C++ 11](https://github.com/WenjieZ/multithreading)-- a document testing C++11 multithreading technology.
+- [Park](https://github.com/WenjieZ/Park) -- a Python package of PySpark offline testing environment.
+- [Vocabulary Memory](software/Vocabulary_Memory.xls) -- an Excel file helping you memorize vocabulary. You can also customize it to memorize other things. Should enable the macro.
