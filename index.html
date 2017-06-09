@@ -2,17 +2,166 @@
 layout: default
 ---
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+<html><head>
+<meta name="format-detection" content="telephone=no">
+<meta charset="utf-8">
+<link rel="stylesheet" href="sample.css" type="text/css">
+		<title>素数検索ツール TlooksSosu</title>
+		<script language="JavaScript">
+			<!--
+			
+			function Calloc(lSize)
+			{
+				this.length=lSize;
+				for (var i=0;i<lSize;i++) this[i]=0;
+			}
+			
+			function Prime(lMinPrime,lMaxPrime)
+			{
+				var dtStart=new Date();
+				if (lMaxPrime<2) return false;
+				var lBase=3;
+				for (var lSize=1;(lBase+lSize*2-2)*(lBase+lSize*2-2)<lMaxPrime;lSize<<=1) ;
+					
+				var plTable=new Calloc(lSize);
+					
+				document.writeln(lSize," elements allocated.<P>");
+				var lPrimeDisp=0,lPrimePi=1;
+				if (2>=lMinPrime)
+				{
+					document.writeln(2);
+					lPrimeDisp++;
+				}
+				var lIndex=0;
+				while (lBase+(lIndex<<1)<=lMaxPrime)
+				{
+					var lPrime=plTable[lIndex];
+					if (lPrime<=0)
+					{	
+						var l=lBase+(lIndex<<1);
+						lPrimePi++;
+						if (l>=lMinPrime)
+						{
+							document.writeln(l);
+							lPrimeDisp++;
+						}
+						if (lBase==3) plTable[lIndex]=lPrime=l;
+					
+					}
+					if (lPrime)
+					{	
+						for (;;)
+						{	
+							lPrime=plTable[lIndex];
+							plTable[lIndex]=0; 
+							var lOffset;
+							if (lPrime>0) lOffset=lPrime;
+							else
+							{	
+								lPrime=-lPrime;
+								lOffset=lBase+(lIndex<<1)+lPrime;
+								lOffset-=(lOffset%lPrime);
+								if (!(lOffset&1)) lOffset+=lPrime;
+								lOffset=((lOffset-lBase-(lIndex<<1))>>1);
+							}
+							var lTable=1; // 正のみ
+							for (;lOffset<=lSize;lOffset+=lPrime)
+							{
+								var lIndexNew=((lIndex+lOffset)&(lSize-1));
+								lTable=plTable[lIndexNew];
+								if (lTable>0) continue; 
+								plTable[lIndexNew]=lPrime; 
+								break;
+							}
+							if (lTable<0)
+							{
+								plTable[lIndex]=lTable; 
+								continue; 
+							}
+							if (lTable) plTable[lIndex]=-lPrime; 
+							break;
+						}
+					}
+					if (++lIndex==lSize) lIndex=0,lBase+=(lSize<<1);
+				}
+				var dtEnd=new Date();
+				
+                
+			
+                	document.write(dtEnd.getTime()-dtStart.getTime()," <HR>");
+                
+				document.write("再度計算する場合、このページを再読み込みするとすることができます。<P>");
+				
+				document.close();
+				return false; // Submitしない
+			}
+			//-->
+		</script>
+                
+<style type="text/css">
 
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
+p {
+font-size: 100%;
+font-weight: bold;
+}
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
-</div>
+p.example1 { font-family: "ＭＳ Ｐ明朝","ＭＳ 明朝",serif; }
+p.example2 { font-family: "ＭＳ Ｐゴシック","ＭＳ ゴシック",sans-serif; }
+
+</style>
+                
+                                
+             <style type="text/css">
+<!--
+p { background: url("img/sbgi06.gif") no-repeat 50% 50% fixed }
+TABLE { background: #ffffff url("img/sbgi05.gif") no-repeat }
+-->
+</style> 
+<style type="text/css"> 
+ header {
+  margin: 5%;
+  background-color: silver;
+}
+p {
+  color: white;
+}
+</style>                
+	</head>
+	
+       <body style="background-color: #048">
+		<h1 class="example2" style="background-color: #199">
+			素数検索ツール TlooksSosu
+		</h1>
+                
+		<p style="background-color: #199">下の入力欄に数値を入力してみてください。一つの数値を確かめたい場合、一つのフォームを数値以外の物を記入してください。数値が大きいほど端末へダイレクトアタックします。</p><p>
+		</p><form style="background-color: #192" onsubmit="return Prime(parseInt(minprime.value),parseInt(maxprime.value))">
+			<input type="text" name="minprime" value="2">以上
+			<input type="text" name="maxprime" value="1000">以下の素数表を作成します。
+			<input type="submit" value=" Start ">
+		</form>
+		<hr>
+		<script language="JavaScript">
+			<!--
+			document.forms[0].minprime.select();
+			document.forms[0].maxprime.select();
+			document.forms[0].maxprime.focus();
+			//--><B>どうやらこのブラウザはJavaScriptには対応していないようです。推奨環境:Safari6以降 Chrome51以降 もしくは、お使いのブラウザのJavaScriptを許可してください。</B><P>
+		</script>
+		
+        <p style="background-color: #999">
+        
+                <small style="background-color: #999">
+        バグ報告等は<a href="https://twitter.com/nkiib"><button>Twitter@nkiib</button></a>まで
+        
+        </small>
+        
+        
+        <br>
+        </p>
+<small><small>©2017 ︎Tlooks ©︎2017 Nishiki</small></small>
+            
+            <p style="background-color: #000"><small><small><small>Powered by Nishikiout
+</body></html>
+
+       
