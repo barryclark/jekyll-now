@@ -14,7 +14,7 @@ author: robk
 published: true
 ---
 
-<iframe style="float: right;" src="https://www.kickstarter.com/projects/5toclose/snapdice-worlds-first-magnetic-dice-rolling-tray/widget/card.html?v=2" width="220" height="420" frameborder="0" scrolling="no"></iframe>
+<iframe style="float: right; margin-left: 10px;" src="https://www.kickstarter.com/projects/5toclose/snapdice-worlds-first-magnetic-dice-rolling-tray/widget/card.html?v=2" width="220" height="420" frameborder="0" scrolling="no"></iframe>
 A new Kickstarter campaign has been launched for Snap Dice, a set of metal dice and a hardwood tray with a rare earth magnet strip at the back. Unlike most dice trays, this one only has 3 sides allowing you to throw dice easily into it. The metal dice tumble then snap onto the magnetic strip at the back of the tray, locking in your roll.
 
 Each die is steel and perfectly balanced within .001mm of center and nickel plated. The tray itself comes in 8 different hardwoods of varying cost: Hickory, Jatoba, Paduck, Wendge, Bubinga, Purple Heart, Zebrawood, and Quilted Maple. Costs range from $129 to $249. Of course, there are varying degrees of customization on the trays and dice. You can get regular or polyhedral dice, tray inlays, dovetailed joints, etc...
