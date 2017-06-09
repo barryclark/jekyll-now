@@ -2,17 +2,49 @@
 layout: default
 ---
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
+<main class="content" role="main">
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+  <header class="blog-header">
+      <h1 class="blog-title">{{ site.title }}</h1>
+      <h2 class="blog-description">{{ site.description }}</h2>
+  </header>
 
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
+  <div class="cf frame">
+    {% for post in paginator.posts %}
+      <article class="post" itemscope itemtype="http://schema.org/BlogPosting" role="article">
+        <div class="article-item">
+          <header class="post-header">
+            <h2 class="post-title" itemprop="name"><a href="{{ site.baseurl }}{{ post.url }}" itemprop="url">{{ post.title }}</a></h2>
+          </header>
+          <section class="post-excerpt" itemprop="description">
+            <p>{{ post.excerpt | strip_html | truncatewords: 50 }}</p>
+          </section>
+          <div class="post-meta">
+            <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_long_string }}</time>
+          </div>
+        </div>
+      </article>
+    {% endfor %}
+  </div>
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
-</div>
+  <nav class="pagination" role="navigation">
+    {% if paginator.next_page %}
+      <a class="newer-posts" href="{{ site.baseurl }}/page{{paginator.next_page}}">&larr; Older posts</a>
+    {% else %}
+      <a class="newer-posts disabled">&larr; Older posts</a>
+    {% endif %}
+    <span class="page-number">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
+    {% if paginator.previous_page %}
+      {% if paginator.page == 2 %}
+        <a class="older-posts" href="{{ site.baseurl }}/">Newer posts &rarr;</a>
+      {% else %}
+        <a class="older-posts" href="{{ site.baseurl }}/page{{paginator.previous_page}}">Newer posts &rarr;</a>
+      {% endif %}
+    {% else %}
+      <a class="older-posts disabled">Newer posts &rarr;</a>
+    {% endif %}
+  </nav>
+
+</main>
+
+{% include footer.html %}
