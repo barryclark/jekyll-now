@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Το πρώτο ποστ έστω και αργοπορημένα
+title: First post coming soon...
 ---
 
-Είμαι ο Γιώργος Θεοφάνους, προγραμματιστής στο επάγγελμα και αυτή την στιγμή εργάζομαι στην [Auto Trader] (http://www.autotrader.co.uk) που έχει έδρα το Μάντσεστερ του Ηνωμένου Βασιλείου.
+Upcoming post on Hexagonal architecture using gradle
 
 ![_config.yml]({{ site.baseurl }}/images/config.png)
 
