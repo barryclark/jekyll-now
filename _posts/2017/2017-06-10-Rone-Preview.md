@@ -10,7 +10,7 @@ tags:
   - greiferisto
   - rexhry
 layout: post
-description: "Norsaga: Odds and Ending takes an already great game and makes it better."
+description: "Štěpán Štefaník has launched his Kickstarter for the 2nd edition of Rone – the post-apocalyptic strategy card game for 2 to 4 players. "
 featured: norsagaoe.png                                                                         
 author: robk
 published: true
