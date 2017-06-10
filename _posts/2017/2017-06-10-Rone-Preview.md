@@ -16,7 +16,7 @@ author: robk
 published: true
 ---
 
-![Rone](/images/featured/rone.png){: .float-right}
+<iframe style="float:right;margin-left:10px;" src="https://www.kickstarter.com/projects/bonjour/rone-2nd-edition-rone-new-forces-expansion-relaunc/widget/card.html?v=2" width="220" height="420" frameborder="0" scrolling="no"></iframe>
 **Designers:** Štěpán Štefaník\\
 **Publisher:** [GREIFERISTO](https://boardgamegeek.com/boardgamepublisher/35143/greiferisto), [REXhry](https://boardgamegeek.com/boardgamepublisher/21053/rexhry)\\
 **Year:** 2017\\
@@ -27,7 +27,6 @@ published: true
 **Rules Available Online:** [Yes](https://www.youtube.com/watch?v=fcEoat4I6-o)\\
 **BGG:** [Rone](https://boardgamegeek.com/boardgame/188225/rone)
 
-<iframe style="float:right;margin-left:10px;" src="https://www.kickstarter.com/projects/bonjour/rone-2nd-edition-rone-new-forces-expansion-relaunc/widget/card.html?v=2" width="220" height="420" frameborder="0" scrolling="no"></iframe>
 Štěpán Štefaník has launched his Kickstarter for the 2nd edition of Rone – the post-apocalyptic strategy card game for 2 to 4 players. This Kickstarter includes not only the 2nd edition of the core game, but also the re-launch of the New Forces expansion deck. In anticipation of the launch, we were lucky enough to get our hands on a review copy of the core game and Rone: Awakening, Rone’s first expansion deck. First, let’s take a look at what is included:
 
 ![Rone](/images/rone/rone1.jpg)
