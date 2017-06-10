@@ -9,7 +9,7 @@ tags:
   - inroad toys
 layout: post
 description: "PlayTape roads are only limited to your imagination."
-featured: playtape.png                                                        
+featured: playtape.jpg                                                        
 author: robk
 published: true
 ---
