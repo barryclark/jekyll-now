@@ -7,7 +7,7 @@ tags:
   - games
   - petting Zoo
 layout: post
-description: "A Day the the Beach is a simple card game that deceptively good."
+description: "Petting Zoo provides many options to optimize your zoo to rake in the cash."
 featured: pettingzoo.jpg
 author: robk
 published: true
