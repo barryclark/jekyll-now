@@ -4,12 +4,12 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+I'm a software engineer, primarily working with Java. I am a massive advocate of clean code, TDD and monitoring. 
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+Some personal information for whoever is interested. I was born in London, grew up in a small island called Cyprus when my love for software engineering started to become apparent and then moved to Manchester and studied Software Engineering. I worked in Manchester for a while and then moved to London and my current job.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[georgetheofanous@hotmail.com](mailto:georgetheofanous@hotmail.com)
