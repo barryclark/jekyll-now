@@ -13,7 +13,7 @@ author: robk
 published: true
 ---
 
-![Petting Zoo](/images/pettingzoo/cover.png){: .float-right}
+![Petting Zoo](/images/pettingzoo/cover.jpg){: .float-right}
 **Designers:** William Burke (II)\\
 **Publisher:** Self Published\\
 **Year:** 2019\\
