@@ -12,7 +12,7 @@ tags:
 layout: post
 description: "Štěpán Štefaník has launched his Kickstarter for the 2nd edition of Rone – the post-apocalyptic strategy card game for 2 to 4 players. "
 featured: norsagaoe.png                                                                         
-author: robk
+author: frankg
 published: true
 ---
 
