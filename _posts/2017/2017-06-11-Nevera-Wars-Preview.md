@@ -39,7 +39,7 @@ Minions can also be upgraded during play by summoning more powerful Minions that
 Play continues until one player has defeated and taken whatever set number of Minions that is required is met.
 
 <h2>Pieces</h2>
-![Shadow](/images/neverawars/shadow.jpg)
+![Shadow](/images/neverawars/shadow.jpg){: .float-right}
 The copy of Nevera Wars I received was a very early prototype that came in two plain white deck boxes. That being said, the cards were pretty high quality.
 
 What I can comment on is the amazing artwork in the game. It's dark, brooding, and hauntingly morbid without being gory of violent. The layout of the cards can use a bit of work. They're very text heavy, but need to be so since every Minion carries a slew of abilities printed directly on their card. I couldn't comment on a fix, but I can say it's a bit overwhelming to look at a card, especially as a new player.
