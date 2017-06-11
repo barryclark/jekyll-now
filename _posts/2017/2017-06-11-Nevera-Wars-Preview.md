@@ -8,7 +8,7 @@ tags:
   - nevera Wars
   - tiger crab studios
 layout: post
-description: ""
+description: "Summon hideous Minions and do battle in Nevera Wars."
 featured: neverawars.jpg                                                                         
 author: robk
 published: true
