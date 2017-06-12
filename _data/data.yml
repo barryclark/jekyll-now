@@ -62,6 +62,14 @@
   location_gr: Αθήνα, Αττική, Ελλάδα
   location_en: Athens, Attica, Greece
 
+- company_gr: Tic Tac
+  company_en: Tic Tac
+  url: https://tictac.gr
+  category_gr: Ανάκτηση δεδομένων
+  category_en: Data recovery
+  location_gr: Ελληνικό, Αττική, Ελλάδα
+  location_en: Elliniko, Attica, Greece
+
 - company_gr: Biofire
   company_en: Biofire
   url: http://www.biofire.gr
@@ -86,6 +94,14 @@
   location_gr: Αθήνα, Αττική, Ελλάδα
   location_en: Athens, Attica, Greece
 
+- company_gr: Priona Resort
+  company_en: Priona Resort
+  url: https://priona.gr/
+  category_gr: Ενοικίαση δωματίων
+  category_en: Rooms to rent
+  location_gr: Σκοτίνα Πιερία, Ελλάδα
+  location_en: Skotina, Pieria, Greece
+
 - company_gr: Βίλα Πέργολα
   company_en: Villa Pergola
   url: https://coinmap.org/venue/8336
@@ -109,6 +125,14 @@
   category_en: Leather sandals worthshop
   location_gr: Ρόδος, Ελλάδα
   location_en: Rhodes, Greece
+
+- company_gr: PetWorkz
+  company_en: PetWorkz
+  url: https://coinmap.org/venue/10012
+  category_gr: Κατάστημα για κατοικίδια ζώα
+  category_en: Pet shop
+  location_gr: Βούλα, Αττική, Ελλάδα
+  location_en: Voula, Attica, Greece
 
 - company_gr: Anik Snacks
   company_en: Anik Snacks
