@@ -3,6 +3,7 @@ layout: post
 title: Is a Time Series Correlated with its Future Self?
 tags: [technology]
 keywords: [time series, time series analysis, correlated, correlation, correlation coefficient]
+image: /images/sports-almanac.jpg
 ---
 
 I've recently been studying time series analysis and was curious as to whether a time series is correlated with its future self (or past self, as the case may be). This thought came about when studying stock market prediction: the best predictor for the stock market would be a crystal ball that told you the future values.
