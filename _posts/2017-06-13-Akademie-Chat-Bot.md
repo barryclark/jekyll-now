@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Haufe-Akademie Chat Bot
-subtitle:
+title: Building our first Chatbot
+subtitle: Coding our way to the Haufe-Akademy thanks to a Hackathon
 category: product
 tags: [chatbot]
 author: george_ganea
