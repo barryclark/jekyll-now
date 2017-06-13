@@ -3,7 +3,7 @@ layout: post
 title: Building our first Chatbot
 subtitle: Coding our way to the Haufe-Akademy thanks to a Hackathon
 category: product
-tags: [chatbot]
+tags: [bots]
 author: george_ganea
 author_email: george.ganea@haufe-lexware.com
 header-img: "images/bg-post.jpg"
