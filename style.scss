@@ -34,7 +34,8 @@ html {
 }
 
 body {
-	background: black;
+	// background: black;
+	background: #0f0f0f;
   // background-position: center;
   // background-size: cover;
   font: 18px/1.4 $sans;
@@ -44,7 +45,7 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 1400px;
+  max-width: 1800px;
   padding: 0 30px;
   width: 100%;
 }
@@ -458,9 +459,9 @@ nav {
     }
   }
   pre {
-    color:$blue;
+    // color:$blue;
     padding:1em;
-    font-family:$mono;
+    font-family:$sans;
   }
   img.alignLeft {
     float:left;
@@ -602,5 +603,5 @@ footer {
     }
   }
 }
-// @import "highlights";
+@import "highlights";
 @import "svg-icons";
