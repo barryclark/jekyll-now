@@ -36,7 +36,7 @@ Ops-wise, everything is hooked up in a continuous delivery pipeline, from commit
 
 The Bot Framework SDK allows for an easy setup of a connection to a luis.ai app. This application is both build and run from it’s web interface. No actual programming is required. To make it work, one needs to define the intents and entities that should be detected. An intent is basically the verb/action of the sentence the user typed in, while an entity is a piece of information related to the intent. To train Luis, we input as many “utterances” (chatbot jargon for sentence) as we can think of - the more the better. This has to be done for each supported intent. In our case, we only had to support “search” and “ask for a human”. As entities, we have “course type”, “topic”, “datetime” and “location”.
 
-Once the intent was detected as “search”, we simply used the entities as parameters for the Azure Search Service. Well, technically it was not that simple because of the beauty of the german language and because German Luis likes to split up composed words. But this is a story for another time. Let’s stay on task here.
+Once the intent was detected as “search”, we simply used the entities as parameters for the Azure Search Service. Well, technically it was not that simple because of the beauty of the german language and because German Luis likes to split up composed words. But this is a story for another time...
 
 # Presentation
 
