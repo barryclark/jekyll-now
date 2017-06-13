@@ -2,8 +2,8 @@
 # This file contains configuration flags to customize your site
 #
 
-# Your site 
-title: 
+# Your site
+title:
 header-img: images/pexels-photo-113338_800.jpeg
 email: your-email@yourdomain.com
 copyright_name: Haufe-Lexware GmbH &amp; Co.KG
@@ -44,7 +44,8 @@ google_analytics: UA-70047300-1
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
-url: http://dev.haufe.com
+# url: http://dev.haufe.com
+url: https://georgeganea.github.io/georgeganea/
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
@@ -88,4 +89,3 @@ exclude:
     - README.md
     - CNAME
     - install.md
-    
