@@ -8,13 +8,13 @@ author: george_ganea
 author_email: george.ganea@haufe-lexware.com
 header-img: "images/bg-post.jpg"
 ---
-#Idea
+# Idea
 
 It all started at a Haufe Group wide hackathon organised in the Timisoara R&D Center. Business would come up with ideas and tech would implement them. One of the ideas was to build a chat bot for the Haufe-Akademie designed to help customers find trainings easier.
 
 Users should be able to log in the Haufe-Akademie website, open up a chat window, input phrases like “Show me seminars on management in July in Berlin” and get results. We were also given a spreadsheet with over 3000 courses, trainings and seminars.
 
-#Tech stack
+# Tech stack
 
 The requirements seem clear enough. Let’s break them down. We need a chat window, a way to understand the german language and a way to query the spreadsheet. Easy! Well… sort of.
 
@@ -24,7 +24,7 @@ After a few hours of searching, we decided to go with the Microsoft stack (https
 
 The “data” part of the problem was solved by exporting the spreadsheet into a csv file, uploading it into an Azure Blob storage and indexing it into an Azure Search Service. After that, it was all a mater of putting it all together. Oh, almost forgot - because we used the bot framework, we also got the web UI for free (not very customisable though) as an iframe that we could just embed into our website.
 
-#Design
+# Design
 
 Our architecture looks something like the diagram below. We have the bot framework app that provides “channels” to talk to our bot through. One of these channels being the iframe that we can embed in our website.
 
@@ -38,6 +38,6 @@ The SDK allows for an easy setup of a connection to a luis.ai app. This applicat
 
 Once the intent was detected as “search”, we simply used the entities as parameters for the Azure Search Service. Well, technically it was not that simple because of the beauty of the german language and because German Luis likes to split up composed words. But this is a story for another time. Let’s stay on task here.
 
-#Presentation
+# Presentation
 
 In order to have full control over the content we show we decided to not use the message/card layouts built into the bot framework in favor of another young Microsoft project, adaptivecards.io. This allowed us to fully customize the look and feel of the content we give back to the customer with little effort.
