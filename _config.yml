@@ -2,8 +2,8 @@
 # This file contains configuration flags to customize your site
 #
 
-# Your site 
-title: 
+# Your site
+title:
 header-img: images/pexels-photo-113338_800.jpeg
 email: your-email@yourdomain.com
 copyright_name: Haufe-Lexware GmbH &amp; Co.KG
@@ -88,4 +88,3 @@ exclude:
     - README.md
     - CNAME
     - install.md
-    

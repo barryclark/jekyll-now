@@ -57,7 +57,7 @@ tora_onaca:
     name: Teodora Onaca
     email: teodora.onaca@haufe-lexware.com
     github: toraonaca
-    twitter: toraonaca    
+    twitter: toraonaca
 eric_schmieder:
     name:  Eric Schmieder
     email: eric.schmieder@haufe-lexware.com
@@ -85,7 +85,7 @@ filip_fiat:
 daniel_bryant:
     name: Daniel Bryant
     email: daniel.bryant@opencredo.com
-    github: danielbryantuk 
+    github: danielbryantuk
     twitter: danielbryantuk
 markus_wehrle:
     name: Markus Wehrle
@@ -108,4 +108,9 @@ jerzy_kott:
     name: Jerzy Kott
     email: jerzy.kott@haufe-lexware.com
     github: kottj
-    linkedin: jerzykot  
+    linkedin: jerzykot
+george_ganea:
+    name: George Ganea
+    email: george.ganea@haufe-lexware.com
+    github: georgeganea
+    linkedin: georgeganea
