@@ -28,7 +28,7 @@ The “data” part of the problem was solved by exporting the spreadsheet into 
 
 Our architecture looks something like the diagram below. We have the bot framework app that provides “channels” to talk to our bot through. One of these channels being the iframe that we can embed in our website.
 
-![Architecture]({{ site.url }}/images/architecture.png)
+![Architecture]({{ site.url }}/images/akachatbot/architecture.png)
 
 The framework app is configurable with the url (the endpoint has to be https!) of the actual bot server. This is either a node.js or a C# application written against the Bot Framework  SDK. We used node.js and deployed the application as a docker container on an Azure VM. We plan on migrating the container to the Azure Container Service.
 
