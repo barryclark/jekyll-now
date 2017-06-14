@@ -8,7 +8,7 @@ tags:
   - metal dawn
   - everything epic
 layout: post
-description: "Geek Chic closes their doors with an apology to customers."
+description: "Metal Dawn brings the 80's action with a fight against machines in Washington DC."
 featured: metaldawn.jpg                                                    
 author: robk
 published: true
