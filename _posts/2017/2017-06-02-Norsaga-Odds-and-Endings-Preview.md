@@ -41,4 +41,4 @@ If you're a Norsaga fan, as I am, I can't recommend backing this expansion enoug
 
 You won't be sorry you did.
 
-*A prototype copy of Noreaga: Odds and Endings was provided free for preview by Meromorph Games.*
+*A prototype copy of Norsaga: Odds and Endings was provided free for preview by Meromorph Games.*
