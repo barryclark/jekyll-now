@@ -1,7 +1,7 @@
 ---
 title: "New Pokémon Games on the Way"
 date: 2017-06-06 12:30:00 Z
-category: preview
+category: video games
 tags:
   - video games
   - pokemon
