@@ -218,7 +218,7 @@ strong, b {
 }
 
 img {
-  max-width: 100%;
+  // max-width: 100%;
 }
 
 // Fixes images in popup boxes from Google Translate
@@ -527,19 +527,17 @@ footer {
 }
 
 #instafeed {
-  max-width:100%;
-  a {
-    min-width: 100%;
+  // max-width:100%;
+
+  a.slide {
     display: block;
+    width: 100%;
+    height: auto;
+
     img {
       width: 100%;
       height: auto;
     }
-  }
-  a {
-    display: block;
-    width: 100%;
-    height: auto;
 
     span {
       position: absolute;

@@ -19,7 +19,8 @@ jQuery(window).on('load', function() {
   $('#instafeed').bxSlider({
     minSlides: 1,
     maxSlides: 1,
-    mode: 'vertical',
+    mode: 'horizontal',
+    preventDefaultSwipeY: false,
     slideMargin: 0,
     pager: false,
     infiniteLoop: false
