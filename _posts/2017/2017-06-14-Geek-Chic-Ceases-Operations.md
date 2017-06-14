@@ -18,7 +18,7 @@ published: true
 
 ![Geek Chic Apology](/images/geekchic/chic.jpg){: .center}
 
-There have been no details given at this point, but rumor is this may have to do with their acquisition of Crash Games and some undocumented debt that went along with that deal. There have been a few wilder rumors dealing with that that I won't report here since I can't seem to get any solid facts.
+There have been no details given at this point, but the rumormill has been working over time. Once I have some hard facts I'll update this post.
 
 There's also been no word on the what's going to happen with any orders already in process, deposits made, etc...
 
