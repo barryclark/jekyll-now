@@ -8,7 +8,7 @@ tags:
   - accessories
   - geek chic
 layout: post
-description: "Geek Chic closes theirs doors with an apology to customers."
+description: "Geek Chic closes their doors with an apology to customers."
 featured: geekchicclose.jpg                                                    
 author: robk
 published: true
