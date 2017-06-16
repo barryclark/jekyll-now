@@ -1,15 +1,15 @@
 ---
-layout: page
 title: About
-permalink: /about/
+layout: page
+permalink: "/about/"
 ---
 
-Some information about you!
+Jas is a designer based in Taipei‎, Taiwan.
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+Graphic design, Responsive Web design, Mobile UI design.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[jaschyo@gmail.com](mailto:email@domain.com)
