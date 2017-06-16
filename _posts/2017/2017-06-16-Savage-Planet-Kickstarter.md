@@ -21,4 +21,4 @@ Savage Planet has each player taking control of a city-state in the world of gam
 
 Anyway! The game looks pretty awesome, boasting multiple paths to victory, unique mechanics, and highly interactive rounds. If you're looking to actually take a peek you can download a [print-and-play](https://www.dropbox.com/s/8ph4f4s9hdntzhy/SP_FOF_PNP.zip?dl=0) version of the game to give it a shot before you pledge.
 
-Savage Planet is already funded and working through their stretch goals. A $30 pledge will get you the game and all the unlocked goals once the campaign ends. It's the only pledge level, so it's nice and easy.
+Savage Planet is already funded and working through their stretch goals. A $30 pledge will get you the game and all the unlocked goals once the campaign ends. It's the only pledge level, so it's nice and easy. 
