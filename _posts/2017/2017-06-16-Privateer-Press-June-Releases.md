@@ -17,8 +17,8 @@ published: true
 
 With the arrival of Privateer Press’ June releases, the Retribution of Scyrah gets a big boost. Take a look:
 
-![WARMACHINE: Retribution of Scyrah Softcover](/images/privateerpress/ppjune1.png)
-![WARMACHINE: Retribution of Scyrah Softcover](/images/privateerpress/ppjune2.png){: .center}
+![WARMACHINE: Retribution of Scyrah Softcover](/images/privateer/ppjune1.png)
+![WARMACHINE: Retribution of Scyrah Softcover](/images/privateer/ppjune2.png){: .center}
 
 As usual, bright, big, vivid color literature details the stat specifics for the command. Shown here is the [PIP 1086 Forces of WARMACHINE: Retribution of Scyrah Softcover](http://privateerpress.com/warmachine/books/retribution-of-scyrah-command). This book ($34.99) features: 
 
@@ -28,13 +28,13 @@ As usual, bright, big, vivid color literature details the stat specifics for the
 * A painting guide full of tips and inspiration to help you create an army as individual as you are.
 * Three new theme forces that allow you to create specialized Retribution armies with specific benefits.
 
-![Ryssovass Defenders - Retribution of Scyrah Unit](/images/privateerpress/ppjune3.png){: .center}
+![Ryssovass Defenders - Retribution of Scyrah Unit](/images/privateer/ppjune3.png){: .center}
 
 *The Nyss ryssovass were once proud defenders of the winding mountain passes of the Shard Spires. Having lost their sense of purpose after so many of their order were corrupted by Everblight, the remaining ryssovass relocated to Ios alongside their fellow refugees, where their frozen god is protected. They do not hesitate to join the Retribution of Scyrah in battle, seeing this as part of their sacred responsibility.*
 
 The [PIP 35079 Ryssovass Defenders - Retribution of Scyrah Unit (plastic)](http://privateerpress.com/warmachine/gallery/retribution-of-scyrah/units/ryssovass-defenders) is really exciting. Set to release on June 28, 2017, this kit ($54.99) includes 10 30mm base, detailed plastic models—an uncommon release for Privateer Press. The Ryssovass Defenders boast Tough and Weapon Master alongside a moderate 10/16 point cost. When led to battle by Aelyth Vyr (PIP 35086), these grim Nyss swordsmen become the bane of enemy cavalry, gaining Hard. The Ryssovass pair great with warcasters like Dawnlord Vyros (PIP 35001) and Thyron, Sword of Truth (PIP 35064).
 
-![Hemera - Retribution of Scyrah Character Warjack](/images/privateerpress/ppjune4.png){: .center}
+![Hemera - Retribution of Scyrah Character Warjack](/images/privateer/ppjune4.png){: .center}
 
 *Designed for Issyria’s exclusive use and fitted with experimental technology that includes a cutting-edge arc node, Hemera magnifies the warcaster’s arcane abilities. The myrmidon wades into the thick of combat to take Issyria’s place, allowing her to guide the flow of combat more effectively without putting herself in harm’s way.*
 
