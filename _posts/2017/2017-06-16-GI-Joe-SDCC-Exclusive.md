@@ -9,7 +9,7 @@ tags:
   - gi joe
 layout: post
 description: "Hasbro just revealed one of their biggest San Diego Comic-Con 2017 exclusive products—the G.I. Joe Cobra Missile Command Headquarters!"
-featured: gijoesdcc17.jpgx
+featured: gijoesdcc17.jpg
 author: robk
 published: true
 ---
