@@ -8,7 +8,7 @@ tags:
   - savage planet
   - imp house
 layout: post
-description: "Metal Dawn brings the 80's action with a fight against machines in Washington DC."
+description: "Savage Plane is an 80's fantasy art wrapped around a semi-cooperative card game. It looks awesome."
 featured: savageplanet.jpg                                                    
 author: robk
 published: true
