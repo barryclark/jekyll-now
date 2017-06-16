@@ -1,9 +1,10 @@
 ---
 title: "Privateer Press' June Releases"
 date: 2017-06-16T10:30:00.000Z
-category: news
+category: games
 tags:
   - games
+  - news
   - privateer press
   - warmachine
 layout: post
