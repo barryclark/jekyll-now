@@ -1,10 +1,14 @@
 ---
 layout: post
-title: You're up and running!
+title: Learnig at Thinkfuls Web Development Bootcamp!
 ---
 
-Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
 
-![_config.yml]({{ site.baseurl }}/images/config.png)
+I have decided to level up my skilld and attend Thinkfuls Web Development Bootcamp. I thought it would be a good to start a blog about what I am learning. So I found this articel by Barry Clark 
+[Build A Blog with Jekyll & Github Pages](https://www.smashingmagazine.com/2014/08/build-blog-jekyll-github-pages/)
 
-The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
+![_config.yml]({{ site.baseurl }}/images/workingImac.jpg)
+
+I am excited about my first week at Thinkful, even though I have had experience with HTML & CSS mostly using Bootstrap & tools like Pinegrow and the Duda platform. I soon realized how important it is to fully understand, semantic html, layout and positioning and acessability. I am very excited to learn more about css as the possibilities are endless in what you can create. I am very curious what you think? Please get in touch.
+
+Mike Haslam
