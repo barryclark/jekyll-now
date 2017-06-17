@@ -1,9 +1,10 @@
 ---
 title: "Privateer Press' April Releases"
 date: 2017-04-19T15:00:00.000Z
-category: news
+category: games
 tags:
   - games
+  - news
   - privateer press
   - warmachine
 layout: post

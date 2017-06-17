@@ -1,7 +1,7 @@
 ---
 title: "Review - Robots in Disguise Soundwave"
 date: 2017-05-18T15:30:00.000Z
-category: reviews
+category: review
 tags:
   - toys
   - transformers
