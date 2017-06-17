@@ -26,9 +26,6 @@ It will fail if there's anything in the repo, even an insignificant README.md fi
 
 
 
-
-
-
 Send changes to the master branch of your remote repository:	
 `git commit -m "my changes`
 
@@ -70,7 +67,7 @@ For Flask, the WSGI app is usually invoked as app = Flask(__name__) somewhere. L
 
 Here is what your final WSGI file should look like. jss367_pythonanywhere_com_wsgi.py:
 
-import sys
+`import sys
 #
 ## The "/home/jss367" below specifies your home
 ## directory -- the rest should be the directory you uploaded your Flask
@@ -81,18 +78,17 @@ import sys
 path = '/home/jss367/pythonanywhere'
 if path not in sys.path:
     sys.path.append(path)
-#
-## After you uncomment the line below, the yellow triangle on the left
-## side in our in-browser editor shows a warning saying:
-##     'application' imported but unused.
-## You can ignore this error. The line is necessary, and the variable
-## is used externally.
-from flask_app import app as application
+
+from flask_app import app as application`
 
 
 Other useful commands:
 `git log`
+
+# git diff
+
 `git diff`
+
 There are different ways to use git diff.
 1. Show changes you haven't commited yet: `git diff [filename]`
 2. Show changes you already commited (but haven't sync'd): `git diff --cached [filename]`
