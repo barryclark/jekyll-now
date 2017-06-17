@@ -3,10 +3,18 @@ layout: default
 ---
 
 <article class="post">
-  <h1>{{ page.title }}</h1>
+	<h1>{{ page.title }}</h1>
 
-  <div class="entry">
-    {{ content }}
-  </div>
+	<div class="entry">
+		{{ content }}
+	</div>
+
+	{% for tag in page.tags %}
+	<a class="ui tiny label post-tag"
+	href="{{ site.baseurl }}/index?tag={{ tag | replace: " ", "-" }}">
+	{{ tag }}
+	<div class="detail"> {{ site.tags[tag].size }} </div>
+</a>
+{% endfor %}
 
 </article>
