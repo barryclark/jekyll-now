@@ -72,7 +72,8 @@ For Flask, the WSGI app is usually invoked as app = Flask(__name__) somewhere. L
 
 Here is what your final WSGI file should look like. jss367_pythonanywhere_com_wsgi.py:
 
-```import sys
+```python
+import sys
 #
 ## The "/home/jss367" below specifies your home
 ## directory -- the rest should be the directory you uploaded your Flask
