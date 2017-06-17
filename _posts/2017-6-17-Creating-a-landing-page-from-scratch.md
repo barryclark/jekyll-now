@@ -14,7 +14,7 @@ In version 1  I used floats and positioning managed to get it done, but I was an
 
 I found with Flexbox it’s a lot less CSS to write, and you get a lot more responsiveness right out of the box. This site only has only 1 media Query for the nav only. [Here is my project live](https://mikehaslam-thinkful-projects.github.io/myLandingPage/) also if you want to checkout the code  I have a [repository on Github](https://github.com/MikeHaslam-Thinkful-projects/myLandingPage) it still needs a lot of work, if you have any ideas let me know. Or you would like to work on this project let me know?
 
-For version 2 I would like to implement React and breaks elements down into small reusable  components, so that is my next challenge with this project.
+For version 2 I would like to implement React and break elements down into small reusable  components, so that is my next challenge with this project.
 
 Mike Haslam
 Student of Web Development
