@@ -7,7 +7,7 @@ tags:
   - review
   - season after fall
 layout: post
-description: "Reunite a poor slugcat with its lost family in a cruel, rain-flooded world."
+description: "Solve the mysteries of the forest as a spirit imbued Fox who can change the Seasons."
 featured: seasonsafterfall.jpg                                                        
 author: robk
 published: true
