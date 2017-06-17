@@ -2,4 +2,6 @@
 layout: post
 title: Creating a landing page from scratch.
 ---
-Body
+![_config.yml]({{ site.baseurl }}/images/landing.jpg)
+
+
