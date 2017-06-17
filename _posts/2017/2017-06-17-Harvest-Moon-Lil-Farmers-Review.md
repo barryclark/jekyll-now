@@ -9,7 +9,7 @@ tags:
   - rising star games
   - daredevil development
 layout: post
-description: "Solve the mysteries of the forest as a spirit imbued Fox who can change the Seasons."
+description: "Preschoolers can manage their own farm in Harvest Moon Lil' Farmers."
 featured: harvestmoonlilfarmers.jpg                                                   
 author: robk
 published: true
