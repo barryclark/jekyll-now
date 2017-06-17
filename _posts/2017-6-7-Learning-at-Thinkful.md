@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Learnig at Thinkfuls Web Development Bootcamp!
+title: Learning at Thinkfuls Web Development Bootcamp!
 ---
 
 
