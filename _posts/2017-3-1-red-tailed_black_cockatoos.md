@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Red-tail Black Cockatoos (with pictures!)
+tags: ["wildlife", "photography"]
 ---
 
 
