@@ -5,6 +5,8 @@ title: Pythonanywhere and git
 
 Here are the tools to get your info from pythonanywhere to your github account.
 
+## Starting a new project
+
 Go to Github (https://github.com/)
 
 Click on "New repository" on the right
@@ -23,10 +25,10 @@ You may have to enter your Github username and password if you haven't already.
 
 It will fail if there's anything in the repo, even an insignificant README.md file. If it does you will need to pull first. Pull by: `git pull origin master`. This will probably force you to merge, which will then open up the evil that is vim. vim is awful so I recommend trying to exit it ASAP. Some combination of the escape key and q might do the trick. Before you freeze everything you should Google it.
 
+# Other useful commands
 
+## Send changes to the master branch of your remote repository:	
 
-
-Send changes to the master branch of your remote repository:	
 `git commit -m "my changes`
 
 `git push origin master`
@@ -36,12 +38,15 @@ Hit "`q`" to exit the git log
 then, to get them back to your pythonanywhere app, use `git pull origin master`
 
 
-If you make changes you want to delete (i.e. return to previous commit): git checkout -- flask_app.py. Or, if you want to revert everything: ``git checkout .`
+## If you make changes you want to delete (i.e. return to previous commit): 
+
+`git checkout -- flask_app.py`
+
+Or, if you want to revert everything: `git checkout .`
 
 
 
-
-If you add a new file:
+## If you add a new file:
 
 `git add .`
 
@@ -67,7 +72,7 @@ For Flask, the WSGI app is usually invoked as app = Flask(__name__) somewhere. L
 
 Here is what your final WSGI file should look like. jss367_pythonanywhere_com_wsgi.py:
 
-`import sys
+```import sys
 #
 ## The "/home/jss367" below specifies your home
 ## directory -- the rest should be the directory you uploaded your Flask
@@ -79,7 +84,8 @@ path = '/home/jss367/pythonanywhere'
 if path not in sys.path:
     sys.path.append(path)
 
-from flask_app import app as application`
+from flask_app import app as application
+```
 
 
 Other useful commands:
