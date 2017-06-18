@@ -4,7 +4,7 @@ title: Learning at Thinkfuls Web Development Bootcamp!
 ---
 
 
-I have decided to level up my skilld and attend Thinkful's Web Development Bootcamp. I thought it would be a good to start a blog about what I am learning. So I found this article by Barry Clark. Something I learned in creating this jekyll blog is I wanted to add an icon and link for my codepen acount. So I look at files genterated from the fork, turns out there is no svg icon for codepen, so to make this work I went on codepens site and downloaded the logo icon they provided then had to resize and convert to svg and in _includes/svg-icons.html had to create a link with  I believe is liquid syntax. It took awhile but it was agreat win when I pulled it off.
+I have decided to level up my skills and attend Thinkful's Web Development Bootcamp. I thought it would be a good to start a blog about what I am learning. So I found this article by Barry Clark. Something I learned in creating this jekyll blog is I wanted to add an icon and link for my codepen acount. So I look at files genterated from the fork, turns out there is no svg icon for codepen, so to make this work I went on codepens site and downloaded the logo icon they provided then had to resize and convert to svg and in _includes/svg-icons.html had to create a link with  I believe is liquid syntax. It took awhile but it was agreat win when I pulled it off.
 [Build A Blog with Jekyll & Github Pages](https://www.smashingmagazine.com/2014/08/build-blog-jekyll-github-pages/)
 
 ![_config.yml]({{ site.baseurl }}/images/workingImac.jpg)
