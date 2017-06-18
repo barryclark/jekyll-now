@@ -1,6 +1,6 @@
 ---
 title: "The Adventure Guild Polyhedral Dice Box"
-date: 2017-06-18T119:00:00.000Z
+date: 2017-06-18T19:00:00.000Z
 category: games
 tags:
   - games
