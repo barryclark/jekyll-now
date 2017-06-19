@@ -41,19 +41,23 @@ published: true
     <td>How did I learn? What strategies were effective? </td>
   </tr>
   <tr>
-    <td>I went to a music lesson in the middle of the lesson so I missed a lot but my strategies for assessing everyone else's project was to give helpful feedback (not it was great or it was rubbish) and assess it like I’d assess my own so whether it was my best friend’s or worst enemy’s mark it the same.</td>
+    <td>There was no real strategy for learning this lesson as we didn't actually 'learn’ anything but we wrote feedback for everyone else’s identity map.</td>
   </tr>
   <tr>
     <td>What limited my learning? Which habits do I need to work on? </td>
   </tr>
   <tr>
-    <td>Nothing limited my learning in this lesson.</td>
+    <td>The only thing that limited my learning was the fact that I missed a huge chunk of the </td>
   </tr>
   <tr>
     <td>What will I change for next time? How will I improve my learning?</td>
   </tr>
   <tr>
-    <td>Next time I need to work quicker but apart from that there is nothing I need to work on based on that lesson.</td>
+    <td>There’s nothing I’d change for this lesson.
+
+
+
+</td>
   </tr>
 </table>
 
