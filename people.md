@@ -35,14 +35,14 @@ permalink: /people/
 
 * Postdoctoral researcher, [Department of Neurobiology and Behavior (NBB)](https://medicine.stonybrookmedicine.edu/neurobiology), Stony Brook University (2016-current)
 
-## Future lab member
-![Cartoon MRI head](/images/MRI_brain_outline_memming.png){: .profile-photo }
-
 ## Isabel Siergiej
 ![Isabel Siergiej](/images/Isabel.jpg){: .profile-photo }
 
 * Cornell University
 * IACS REU, Summer 2017
+
+## Future lab member
+![Cartoon MRI head](/images/MRI_brain_outline_memming.png){: .profile-photo }
 
 * This could be you!
 * We are [hiring]({% post_url 2015-4-21-Hiring %})!!
