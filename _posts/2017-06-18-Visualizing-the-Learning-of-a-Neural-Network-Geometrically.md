@@ -212,7 +212,7 @@ HTML(anim.to_html5_video())
 
 As you can see, with only two dimensional transformations (bends, rotations and scaling), the neural network cannot fully separate the two classes.
 
-# 3d Linear Transformations
+## 3d Linear Transformations
 
 Now, let's enable the model to move the space in three dimensions:
 
@@ -239,7 +239,7 @@ HTML(anim2.to_html5_video())
 
 It's clear that the model easily can surmise a useful projection to 2d space to separate the classes.
 
-# 4d Geometric Transformations
+## 4d Geometric Transformations
 
 When we beging to add dimensions, the projections to the 2d plan can become more exotic as seen below.
 
