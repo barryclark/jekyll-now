@@ -11,6 +11,8 @@ header-img: "images/bg-post-clover.jpg"
 
 **IMPORTANT NOTE**: This blog post was written with the state of Kubernetes Support in Azure as of end of December 2016. If you're reading this significantly later, things will most probably have changed.
 
+**Update June 2016**: There is an update available to this blog post: [State of Kubernetes on Azure - Part II](/state-of-kubernetes-on-azure-part-ii/)
+
 #### Table of Contents
 
 * [Azure Container Services](#acs)
