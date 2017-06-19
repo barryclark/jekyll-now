@@ -13,10 +13,9 @@
   {% endif %}
 {% endcapture %}
 {% capture url %}{{ page_url  | strip_newlines | strip | uri_escape }}{% endcapture %}
-{% capture id %}{{ page_id | remove: '/' | replace: '_', '-' | strip }}{% endcapture %}
 {% capture text %}{% if include.text %}{{ include.text }}{% elsif page.title %}{{ page.title }}{% endif %}{% endcapture %}
 
-<div id="{{ id }}" class="share-block">
+<div class="share-block">
 <a href="https://www.facebook.com/dialog/share?app_id={{ site.fb-app-id }}&display=page&href={{ url }}" target="_blank">
 	<div class="share facebook">
 		<i class="fa fa-facebook" aria-hidden="true"></i>
