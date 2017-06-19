@@ -1,5 +1,5 @@
 ---
-title: Github template
+title: Identity map feedback
 layout: post
 author: ian.evans
 permalink: /github-template/
@@ -9,9 +9,9 @@ published: true
 <table>
   <tr>
     <td>Title</td>
-    <td>Scratch maze game</td>
+    <td>Identity map feedback</td>
     <td></td>
-    <td>5/12/16</td>
+    <td>13/6/17</td>
   </tr>
 </table>
 
@@ -19,16 +19,16 @@ published: true
 <table>
   <tr>
     <td>Starting point:</td>
-    <td></td>
+    <td>Receive feedback from peers about my identity map.</td>
   </tr>
   <tr>
     <td>Target for this lesson?</td>
-    <td>To make the game more refined by adding more code.</td>
+    <td>To get balanced and helpful feedback about my work.</td>
   </tr>
   <tr>
     <td>Did I reach my target? 
 (add details to "Lesson Review")</td>
-    <td>Yes, because I listened more, focused more, did what I was told and didn't mess about.</td>
+    <td>Yes because I got some very constructive and positive feedback.</td>
   </tr>
 </table>
 
@@ -41,19 +41,19 @@ published: true
     <td>How did I learn? What strategies were effective? </td>
   </tr>
   <tr>
-    <td>As said in the previous blog, I found it helpful to do what I was told as it was told to me as opposed to try to remember what I was told after being told it. A strategy that I found effective was using my common sense more to figure out what I need to do next before having to be told it therefore giving me more time to make corrections or think about what I need to do.</td>
+    <td>I went to a music lesson in the middle of the lesson so I missed a lot but my strategies for assessing everyone else's project was to give helpful feedback (not it was great or it was rubbish) and assess it like I’d assess my own so whether it was my best friend’s or worst enemy’s mark it the same.</td>
   </tr>
   <tr>
     <td>What limited my learning? Which habits do I need to work on? </td>
   </tr>
   <tr>
-    <td>The factor that limited my learning was my lack of Scratch knowledge before hand causing me to struggle to know the cause and effect of doing different things on Scratch. There are a lot less things to work on than in previous lessons as I made a point to improve this week and that seemed to have worked.</td>
+    <td>Nothing limited my learning in this lesson.</td>
   </tr>
   <tr>
     <td>What will I change for next time? How will I improve my learning?</td>
   </tr>
   <tr>
-    <td>Next time (though I did this a lot better than last week) I still need to avoid distractions and do things quicker next time. I did this a lot better this week but it is still a big point to work on. </td>
+    <td>Next time I need to work quicker but apart from that there is nothing I need to work on based on that lesson.</td>
   </tr>
 </table>
 
