@@ -38,7 +38,7 @@ I could explain the game in more detail, but HABA has the perfect video that exp
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/cyxrUr2q-18' frameborder='0' allowfullscreen></iframe></div>
 
 <h2>Pieces</h2>
-![Tower](/images/haba/tower.jpg){: .float-right}
+![Tower](/images/rhinohero/tower.jpg){: .float-right}
 HABA always uses the utmost care when designing their games. Rhino Hero follows suit with a familiar, sturdy yellow box, thick cards, and a wonderful wooden Super Rhino. The coolest bits in the box are the wall cards which can be folded in half so they can be stacked easily.
 
 Rhino Hero should certainly stand up to family play.
