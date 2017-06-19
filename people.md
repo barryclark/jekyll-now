@@ -38,6 +38,12 @@ permalink: /people/
 ## Future lab member
 ![Cartoon MRI head](/images/MRI_brain_outline_memming.png){: .profile-photo }
 
+## Isabel Siergiej
+![Isabel Siergiej](/images/Isabel.jpg){: .profile-photo }
+
+* Cornell University
+* IACS REU, Summer 2017
+
 * This could be you!
 * We are [hiring]({% post_url 2015-4-21-Hiring %})!!
 
