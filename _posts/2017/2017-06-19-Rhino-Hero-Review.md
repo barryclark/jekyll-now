@@ -8,7 +8,7 @@ tags:
   - haba
   - rhino hero
 layout: post
-description: "Memory meets War (in a good way) in CardLords' BattleGoats."
+description: "Super Rhino is the largest superhero around. Help him construct a tower that can support him!"
 featured: rhinohero.jpg                                                                     
 author: robk
 published: true
