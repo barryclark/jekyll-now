@@ -8,7 +8,7 @@ tags:
   - pokemon
   - burning shadows
 layout: post
-description: "Super Rhino is the largest superhero around. Help him construct a tower that can support him!"
+description: "The third expansion in the latest Pokémon Trading Card Game series, Sun & Moon, Burning Shadows, launches on August 4th."
 featured: burningshadows.jpg                                                                     
 author: robk
 published: true
