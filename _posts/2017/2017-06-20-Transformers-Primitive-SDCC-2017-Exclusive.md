@@ -17,7 +17,7 @@ published: true
 
 Today Hasbro revealed their exclusive Transformers SDCC 2017 item, Transformers Primitive Optimus Prime. The figure, designed in conjunction with Primitive Skateboarding' legendary skateboarder, Paul Rodriguez, will be available for sale for $49.99 at booth #3329 at Comic-Con International in San Diego.
 
-Check out this...interesting...flavor text from the press released:
+Check out this...interesting...flavor text from the press release:
 
 *Before OPTIMUS PRIME was blasting DECEPTICONS in battle, he was greasing the wheels of his skateboard with fellow skater, SHREDDICUS MAXIMUS. Shredding rad gnar on the boardwalks of the Senti Rust Pier, they up their street cred while nailing down their signature trick, the Null-Ray-Ray, annihilating the competition into mere grime… Now get ready for the gnarliest TRANSFORMERS stunt of the 21st century…*
 
