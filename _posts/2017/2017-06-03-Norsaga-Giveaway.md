@@ -16,7 +16,7 @@ published: true
 
 ![Norsaga](/images/norsaga/banner.png)
 
-**UPDATE:** *A winner has been chosen! A total of 283 valid entries into the contest were made and Roger Yu (with a total of 2 entires) is the winner!*
+**UPDATE:** *A winner has been chosen! A total of 383 valid entries into the contest were made and Roger Yu (with a total of 2 entires) is the winner!*
 
 Read my [preview of Meromorph Games' Norsaga: Odds & Endings](http://pawnsperspective.com/Norsaga-Odds-and-Endings-Preview/)? Want to win a copy of the base game, [Norsaga](http://www.meromorphgames.com/norsaga/), along with the Into the Myths expansion and the Gen Con 2016 promos? Now's your chance!
 
