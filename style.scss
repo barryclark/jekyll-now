@@ -463,6 +463,10 @@ nav {
     padding:1em;
     font-family:$sans;
   }
+  img {
+    max-width: 100%;
+    margin: 0 1em 0 0;
+  }
   img.alignLeft {
     float:left;
     max-width:30%;
