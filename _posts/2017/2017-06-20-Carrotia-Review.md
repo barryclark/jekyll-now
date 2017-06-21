@@ -47,7 +47,7 @@ After all 3 Quests are completed the game is won if more than 20 carrots were co
 
 Everything is Carrotia is thick and sturdy. Quest cards are similar in quality to standard playing cards, though square, while tiles are the same dimensions and are a chunky cardboard. The bird and carrot tokens are a similar cardboard as the tiles, just not as thick. All the dice included in the game are wooden with enough heft as to not feel cheap. The included rabbit meeple is large and pretty impressive.
 
-![Carrotia Pieces](/images/carrotia/pieces.jpg){: .float-right}
+![Carrotia Pieces](/images/carrotia/pieces.jpg){: .center}
 
 The cover art on the box is excellent, with a very fantasy feel to it. Unfortunately, the character art on the character cards falls a bit flat. It's a bit darker, grittier, and not up to par with what's presented on the outside of the box.
 
