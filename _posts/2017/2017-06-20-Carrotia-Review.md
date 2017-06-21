@@ -57,7 +57,7 @@ I almost gave up on Carrotia the first two times I tried to play the game with m
 
 I was.
 
-Turns out the version of the rules that came in our box are well known for being pretty terrible, and a ]newer set of rules](https://boardgamegeek.com/filepage/129974/english-rules) that are much clearer were written for the game. With the new rules in hand, we were able to get through the game easily.
+Turns out the version of the rules that came in our box are well known for being pretty terrible, and a [newer set of rules](https://boardgamegeek.com/filepage/129974/english-rules) that are much clearer were written for the game. With the new rules in hand, we were able to get through the game easily.
 
 Carrotia is very light but works well for younger players. The concept of building a maze to fit a quest card takes a bit of getting used to, especially during Quest 1 when you only have 30 seconds to do so. After a bit of play, it feels a bit more natural and things get a bit easier. The random movement of the birds tends to liven things up when you really nail a maze and think you're in the clear, which kind of self-balances the game a bit.
 
