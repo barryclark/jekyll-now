@@ -4,7 +4,12 @@ $(function(){
     $(this).parent('p').next('p').children('.footNote').toggleClass('active');
     $(this).toggleClass('active');
   });
+
+  $('.read-more').hover(function(){
+    $('i.fa-plus', this).toggleClass('fa-spin');
+  });
 });
+
 var feed = new Instafeed({
   get: 'user',
   resolution: 'standard_resolution',
