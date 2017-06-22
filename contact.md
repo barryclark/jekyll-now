@@ -1,4 +1,9 @@
-## Contact
+---
+layout: page
+title: Contact
+permalink: /contact/
+published: true
+---
 
 <form action="//formspree.io/email@domain.com" method="POST">
     <fieldset>
