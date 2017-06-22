@@ -35,9 +35,9 @@ Unearth is Brotherwise Games latest game, and it's beautiful.
 
 <h2>Play</h2>
 
-The goal of Unearth is to have the most points at the end of the game. Players compete to claim Ruins with using their dice and build Wonders with stones they excavate from those ruins. Points are scored by having multiple Ruins of the game color, sets of Ruins of each color, and bulding Wonders.
+![Ruins](/images/unearth/ruins.png){: .float-right}The goal of Unearth is to have the most points at the end of the game. Players compete to claim Ruins with using their dice and build Wonders with stones they excavate from those ruins. Points are scored by having multiple Ruins of the game color, sets of Ruins of each color, and bulding Wonders.
 
-![Ruins](/images/unearth/ruins.png){: .float-right}At the start of the game, 5 random Ruins are laid out with a number of stones placed on them (dictated by the card) as well as a set number of Named Wonders equal to the number of players plus 2. There are also generic Lesser and Greater Wonder tile stacks. 5 Ruin cards are taken from the top of the deck and placed back in the box, and a random End of Era card is placed at the bottom of the Ruin deck.
+At the start of the game, 5 random Ruins are laid out with a number of stones placed on them (dictated by the card) as well as a set number of Named Wonders equal to the number of players plus 2. There are also generic Lesser and Greater Wonder tile stacks. 5 Ruin cards are taken from the top of the deck and placed back in the box, and a random End of Era card is placed at the bottom of the Ruin deck.
 
 Each player is then given a set of dice (1d8, 3d6, and 1d4), a random Ruin that they keep secret, and 2 Delver cards. The rest of the Delver cards are placed face down to form a draw deck. Players then roll to see who goes first.
 
