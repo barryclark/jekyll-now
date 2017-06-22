@@ -5,7 +5,7 @@ permalink: /contact/
 published: true
 ---
 
-<form action="//formspree.io/admin@domain.com" method="POST">
+<form action="//formspree.io/example@domain.com" method="POST">
     <fieldset>
         <label for="name">Your name</label><br>
         <input type="text" name="name" placeholder="Name" required>
