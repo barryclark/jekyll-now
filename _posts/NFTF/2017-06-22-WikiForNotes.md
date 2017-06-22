@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Zim Wiki for note taking
-category: NTFT
+category: NFTF
 ---
 Why take notes? For many people notes are essential part of learning, and it is always good to have a backup of information while your on the go.
 
