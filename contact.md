@@ -5,14 +5,14 @@ permalink: /contact/
 published: true
 ---
 
-<form action="//formspree.io/email@domain.com" method="POST">
+<form action="//formspree.io/admin@domain.com" method="POST">
     <fieldset>
         <label for="name">Your name</label><br>
         <input type="text" name="name" placeholder="Name" required>
     </fieldset>
     <fieldset>
         <label for="_replyto">Your email</label><br>
-        <input type="email" name="_replyto" placeholder="example@domain.com" required>
+        <input type="email" name="_replyto" placeholder="exampleadmin@domain.com" required>
     </fieldset>
     <fieldset>
         <label for="message">Your message</label><br>
