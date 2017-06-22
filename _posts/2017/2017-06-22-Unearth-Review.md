@@ -35,9 +35,9 @@ Unearth is Brotherwise Games latest game, and it's beautiful.
 
 <h2>Play</h2>
 
-![Ruins](/images/unearth/ruins.png){: .float-right}The goal of Unearth is to have the most points at the end of the game. Players compete to claim Ruins with using their dice and build Wonders with stones they excavate from those ruins. Points are scored by having multiple Ruins of the game color, sets of Ruins of each color, and bulding Wonders.
+The goal of Unearth is to have the most points at the end of the game. Players compete to claim Ruins with using their dice and build Wonders with stones they excavate from those ruins. Points are scored by having multiple Ruins of the game color, sets of Ruins of each color, and bulding Wonders.
 
-At the start of the game, 5 random Ruins are laid out with a number of stones placed on them (dictated by the card) as well as a set number of Named Wonders equal to the number of players plus 2. There are also generic Lesser and Greater Wonder tile stacks. 5 Ruin cards are taken from the top of the deck and placed back in the box, and a random End of Era card is placed at the bottom of the Ruin deck.
+![Ruins](/images/unearth/ruins.png){: .float-right}At the start of the game, 5 random Ruins are laid out with a number of stones placed on them (dictated by the card) as well as a set number of Named Wonders equal to the number of players plus 2. There are also generic Lesser and Greater Wonder tile stacks. 5 Ruin cards are taken from the top of the deck and placed back in the box, and a random End of Era card is placed at the bottom of the Ruin deck.
 
 Each player is then given a set of dice (1d8, 3d6, and 1d4), a random Ruin that they keep secret, and 2 Delver cards. The rest of the Delver cards are placed face down to form a draw deck. Players then roll to see who goes first.
 
@@ -46,9 +46,9 @@ Each player's turn has two phases:
 * Delver Phase - Play any amount of Delver cards from their hand.
 * Roll Phare - Choose a die from their pool, choose a Ruin to roll for, roll the die and place it on the chosen Ruin.
 
-If a die roll is 1, 2, or 3 the player takes stone is taken from the Ruin and places it on the table in front of them. If the total value of all dice on a Ruin meet or exceed the number in the upper left-hand corner the Ruin has been uncovered, and the player who has the highest single value on a die takes the Ruin. Any remaining stones are placed in the bag and a new Ruin is placed on the table. Any other players that had dice on the Ruin can take as many Delver cards from the draw pile as they had dice on the Ruin.
+![Stones](/images/unearth/stones.png){: .float-left}If a die roll is 1, 2, or 3 the player takes stone is taken from the Ruin and places it on the table in front of them. If the total value of all dice on a Ruin meet or exceed the number in the upper left-hand corner the Ruin has been uncovered, and the player who has the highest single value on a die takes the Ruin. Any remaining stones are placed in the bag and a new Ruin is placed on the table. Any other players that had dice on the Ruin can take as many Delver cards from the draw pile as they had dice on the Ruin.
 
-![Ruins](/images/unearth/stones.png){: .float-left}Wonders can be built by a player when they form a ring of stones in front of them. A Greater Wonder can be built by creating a ring of same color stones. A Lesser Wonder can be built by creating a ring with any combination of colors. A Named Wonder can be claimed by building a ring meeting the criteria laid out on the Named Wonder's card.
+Wonders can be built by a player when they form a ring of stones in front of them. A Greater Wonder can be built by creating a ring of same color stones. A Lesser Wonder can be built by creating a ring with any combination of colors. A Named Wonder can be claimed by building a ring meeting the criteria laid out on the Named Wonder's card.
 
 Play continues until all Ruins are claimed. Scores are then calculated and the player with the highest score wins. For more information on scoring, and all the extra details of playing Unearth, check out the [full rulebook](http://www.brotherwisegames.com/wp-content/uploads/2017/03/Unearth-Web-Rulebook.pdf).
 
