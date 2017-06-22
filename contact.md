@@ -5,7 +5,7 @@ permalink: /contact/
 published: true
 ---
 
-<form action="//formspree.io/example@domain.com" method="POST">
+<form action="//formspree.io/admin@taylorjhawkins.com" method="POST">
     <fieldset>
         <label for="name">Your name</label><br>
         <input type="text" name="name" placeholder="Name" required>
@@ -19,7 +19,7 @@ published: true
         <textarea name="message" rows="1" placeholder="Message" required></textarea>
     </fieldset>
     <input class="hidden" type="text" name="_gotcha" style="display:none">
-    <input class="hidden" type="hidden" name="_subject" value="Message via http://domain.com">
+    <input class="hidden" type="hidden" name="_subject" value="Message via http://www.taylorjhawkins.com">
 
     <input class="button submit" type="submit" value="Send">
 </form>
