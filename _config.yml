@@ -1,7 +1,7 @@
 #
 # This file contains configuration flags to customize your site
 #
-
+theme: tactile
 # Name of your site (displayed in the header)
 name: Taylor J Hawkins
 
