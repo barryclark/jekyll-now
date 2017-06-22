@@ -12,7 +12,7 @@ published: true
     </fieldset>
     <fieldset>
         <label for="_replyto">Your email</label><br>
-        <input type="email" name="_replyto" placeholder="exampleadmin@domain.com" required>
+        <input type="email" name="_replyto" placeholder="example@domain.com" required>
     </fieldset>
     <fieldset>
         <label for="message">Your message</label><br>
