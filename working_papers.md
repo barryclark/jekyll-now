@@ -14,5 +14,5 @@ permalink: /working_papers/
 * Pustejovsky, J.E. (2017). Using response ratios for meta-analyzing single-case designs with behavioral outcomes.
     * [[pdf (Apr, 2017)](https://osf.io/4fe6u/)] [[Supplementary materials](https://osf.io/c3fe9/)]
 * Pustejovsky, J.E. (2016). Procedural sensitivities of effect sizes for single-case designs with behavioral outcome measures.
-    * [[pdf (Oct, 2016)](https://osf.io/pxn24/)] [[Supplementary materials](https://osf.io/hkzsm/)] [[Source code](https://osf.io/j4gvt/)] [[Interactive graphics](https://jepusto.shinyapps.io/SCD-effect-size-sensitivities/)]
+    * [[pdf (May, 2017)](https://osf.io/pxn24/)] [[Supplementary materials](https://osf.io/hkzsm/)] [[Source code](https://osf.io/j4gvt/)] [[Interactive graphics](https://jepusto.shinyapps.io/SCD-effect-size-sensitivities/)]
     * [[pdf (Nov, 2015)]({{ site.url }}/files/Pustejovsky-2015-Nov-Non-overlap-measures.pdf)] [[Supplementary materials]({{ site.url }}/files/Pustejovsky-2015-Nov-Non-overlap-measures-Supplementary-materials.pdf)]
