@@ -11,8 +11,7 @@ published: true
         <input type="text" name="name" placeholder="Name" required>
     </fieldset>
     <fieldset>
-        <label for="_replyto">Your email</label><br>
-        <input type="email" name="_replyto" placeholder="example@domain.com" required>
+        <label for="_replyto">Your email</label><br> <input type="email" name="_replyto" placeholder="example@domain.com" required>
     </fieldset>
     <fieldset>
         <label for="message">Your message</label><br>
@@ -20,6 +19,5 @@ published: true
     </fieldset>
     <input class="hidden" type="text" name="_gotcha" style="display:none">
     <input class="hidden" type="hidden" name="_subject" value="Message via http://www.taylorjhawkins.com">
-
     <input class="button submit" type="submit" value="Send">
 </form>
