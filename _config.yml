@@ -49,6 +49,9 @@ url: http://hernanikua.github.io
 # then add in the baseurl here, like this: "/repository-name"
 baseurl: ""
 
+# Separador de Read more
+excerpt_separator: <!–break–>
+
 #
 # !! You don't need to change any of the configuration flags below !!
 #
