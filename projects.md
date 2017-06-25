@@ -1,4 +1,4 @@
 ---
 layout: page
-permalink: /about/
+permalink: /projects/
 ---
