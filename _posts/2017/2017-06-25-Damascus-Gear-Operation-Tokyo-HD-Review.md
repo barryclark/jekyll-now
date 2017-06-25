@@ -9,7 +9,7 @@ tags:
   - arc system works
   - aplus co
 layout: post
-description: "Unearth is a beautiful game with tight, interactive gameplay."
+description: "Damascus Gear: Operation Tokyo HD is a solid, though forgettable, mech game."
 featured: damascusgear.jpg                                                          
 author: robk
 published: true
