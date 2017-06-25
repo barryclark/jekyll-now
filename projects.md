@@ -1,2 +1,4 @@
+---
 layout: page
 permalink: /about/
+---
