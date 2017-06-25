@@ -1,15 +1,11 @@
 ---
 layout: page
-title: About
+title: Sobre mí
 permalink: /about/
 ---
 
-Some information about you!
+Me dedico profesionalmente al desarrollo frontend desde el año 2000. Principalmente trabajaba con HTML, CSS y Actionscript. Cuando Flash dejó de ser una tecnología válida para el desarrollo de aplicaciones empecé a programar en Javascript y últimamente estoy interesado en Angular y Nativescript.
 
-### More Information
+### Si quieres contactar conmigo
 
-A place to include any other types of information that you'd like to include about yourself.
-
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+[hernanikua@tutanota.com](mailto:hernanikua@tutanota.com)
