@@ -27,7 +27,7 @@ The motivation to do such a thing comes from a branch of mathematics called Topo
 
 ![Mmmm Donut](../images/nnlearn/Mug_and_Torus_morph.gif)
 
-Continuous functions induce topologies (i.e. geometric structure of some kind) on their output. With a typical activation function, a neural network is a continuous map and so it "induces" structure on its output. In lay terms, that means that the network won't "tear" or "glue together" the input space. Each mini-batch update will alter the neural network slightly and the visualization of these changes over time will create a "continuous deformation" from the starting induced topology on the output to the final output. That means we will see the neural network bending and conforming the input space to try to separate the classes.
+Continuous functions induce topologies (i.e. geometric structure of some kind) on their output. With a typical activation function, a neural network is a continuous map and so it "induces" structure on its output. In lay terms, that means that the network won't "tear" or "glue together" the input space. Each mini-batch update will alter the neural network slightly and the visualization of these changes over time will create a "continuous deformation" from the starting induced topology on the output to the final output. That means we will see the neural network bending and conforming the input space to try to separate the classes. Said another way, your input space is akin to the dough mentioned above, only with blue and red dots on it representing the classes. If the neural network can deform the dough continuously so that the classes are ultimately separable by a line (on the dough), then training was successful. So that's how notions from Topology relate to the training a neural network: the training process can be seen as generating a useful "continuous deformation" of the input space (under the image of the n-th layer).
 
 ### Geometric Tranformations of Hidden Layers
 
@@ -50,7 +50,7 @@ The decision boundary is the visual representation of the threshold where the mo
 Let's write the equation. Define $$x,y\in\mathbb{R}$$ to be the first and second component of the output of the 2-hidden unit layer. Then, let $$a,b,c\in\mathbb{R}$$ be the weights and bias of the last hidden layer. Then, the set of points in the $$(x,y)$$-plane for the decision line is:
     $$\{ (x,y)\ | \ \text{sigmoid}(ax+by+x)=.5   \}.$$
     
-The strategy for doing this is to choose points of $$x$$ and then calculate $y$ from the equation with $$x$$ fixed. By plotting this set, we can visualize the decision boundary, and therefore visualize the training process. Indeed, if the line is able to completely separate the input points into classes, then we have a perfect classifier.
+The strategy for doing this is to choose points of $$x$$ and then calculate $$y$$ from the equation with $$x$$ fixed. By plotting this set, we can visualize the decision boundary, and therefore visualize the training process. Indeed, if the line is able to completely separate the input points into classes, then we have a perfect classifier.
 
 
 # Classification Problem
