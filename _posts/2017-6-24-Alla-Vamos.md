@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ¡Allá vamos!
-categories : [Presentación]
+category: Presentación
 ---
 
 Aquí empiezo mi blog dedicado al desarrollo Frontend. Además de HTML, CSS y Javascript, trataré de aportar mi granito de arena en tecnologías como angular y nativescript.
