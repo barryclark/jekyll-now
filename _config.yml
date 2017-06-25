@@ -50,7 +50,7 @@ url: http://hernanikua.github.io
 baseurl: ""
 
 # Separador de Read more
-excerpt_separator: <!–break–>
+excerpt_separator: <!--more-->
 
 #
 # !! You don't need to change any of the configuration flags below !!
