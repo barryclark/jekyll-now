@@ -1,0 +1,2 @@
+layout: page
+permalink: /about/
