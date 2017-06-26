@@ -1,0 +1,1 @@
+*Occasionally I may include affiliate links, which means I may get a commision if you purchase something via that link. Check out my [privacy policy](http://hendrixjoseph.github.io/privacy/) for more info.*
