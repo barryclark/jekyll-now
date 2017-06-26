@@ -1,6 +1,6 @@
 ---
 title: "Nintendo Announces SNES Classic"
-date: 2017-06-26 13:30:00 Z
+date: 2017-06-26 14:00:00 Z
 category: video games
 tags:
   - video games
@@ -9,7 +9,7 @@ tags:
   - snes
 layout: post
 description: "Hot on the heels of the NES Mini is the SNES Classic. Do Want."
-featured: snesclassic.jpg  
+featured: snesclassic.jpg                                                       
 author: robk
 published: true
 ---
