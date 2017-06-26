@@ -1,7 +1,7 @@
 ---
 title: "Nintendo Announces SNES Classic"
 date: 2017-06-26 13:30:00 Z
-category: review
+category: video games
 tags:
   - video games
   - news
