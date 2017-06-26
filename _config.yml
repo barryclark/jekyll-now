@@ -5,6 +5,9 @@
 # Name of your site (displayed in the header)
 name: Your Name
 
+# Name to be used for creating the LD-JSON structured data. Useful when the name of the blog is different from the name of the author.
+author: Your name 
+
 # Short bio or description (displayed in the header)
 description: Web Developer from Somewhere
 
