@@ -57,9 +57,6 @@ collections:
   my_categories:
     output: true
     permalink: /blog/category/:name/
-  my_tags:
-    output: true
-    permalink: /blog/tag/:name/
 
 #
 # !! You don't need to change any of the configuration flags below !!
