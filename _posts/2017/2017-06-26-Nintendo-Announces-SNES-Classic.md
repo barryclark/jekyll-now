@@ -40,6 +40,6 @@ Today Nintendo announced the upcoming arrival of the SNES Classic Edition, anoth
 * Super Punch-Out!! 
 * Yoshi’s Island
 
-Notice Star Fox 2 on there? Yup. It's a sequel that was never released. There's been a few unfinished versions of the game floating around as ROMS, but this is the first time it's getting an official release. Of course you first need to get your hands on a SNES Classic.
+Notice Star Fox 2 on there? Yup. It's a sequel that was never released. There have been a few unfinished versions of the game floating around as ROMS, but this is the first time it's getting an official release. Of course, you first need to get your hands on a SNES Classic.
 
 Nintendo had tons of supply issues with the NES Mini, driving aftermarket sales prices to insane amounts due to people not being able to find the system in stores. Let's hope Nintendo has learned from their past mistake and makes plenty of SNES Classics available to go around.
