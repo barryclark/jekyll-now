@@ -21,12 +21,6 @@ body {
   	background: $white;
   font: 18px/1.4 $helvetica;
   color: $darkGray;
-  
-  
-   height: 100%;
-    margin: 0;
-    padding: 0;
-  
 }
 
 .container {
@@ -159,11 +153,6 @@ img {
 .wrapper-masthead {
   margin-bottom: 50px;
   background-color: $blue;
-  
-  
-  min-height: 100%;
-    padding: 0 0 100px;
-    position: relative;
 }
 
 .masthead {
@@ -294,12 +283,6 @@ nav {
 footer {
   padding: 20px 0;
   text-align: center;
-  
-   bottom: 0;
-    height: 100px;
-    left: 0;
-    position: absolute;
-    width: 100%;
   
 }
 
