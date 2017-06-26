@@ -15,7 +15,7 @@ published: true
 ---
 
 
-<iframe style="float:right;" src="https://www.kickstarter.com/projects/1835206317/kingdoms-of-erden-king-of-the-mountain-0/widget/card.html?v=2" width="220" height="420" frameborder="0" scrolling="no"></iframe>
+<iframe style="float:right;" src="https://www.kickstarter.com/projects/1835206317/kingdoms-of-erden-king-of-the-mountain-1/widget/card.html?v=2" width="220" height="420" frameborder="0" scrolling="no"></iframe>
 **UPDATE:** *The Kickstarter has relaunched!*
 
 <h2>Prelude</h2>
