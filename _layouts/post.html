@@ -19,6 +19,8 @@ javascripts: [/js/social.js, /js/seealso.js]
     </nav>
   </div>
   <hr />
+  
+  {% include affiliate-disclosure.md %}
 
   <div itemprop="articleBody" class="entry{% if page.twitter_post %} twitter-post{% endif %}{% if page.facebook_post %} facebook-post{% endif %}">
     {{ content }}
