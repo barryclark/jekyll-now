@@ -16,7 +16,7 @@ published: true
 
 ![SNES Classic](/images/nintedo/snesclassic.jpg)
 
-Today Nintendo announced the upcoming arrival of the SNES Classic Edition, another mini console, that will be released on 9/29. MSRP for this baby will be $80, and it comes with the system, 2 controllers, HDMI cable, USB charging cable with AC adapter, and 21 built-in games. What games are included? Here's the list:
+Today Nintendo announced the upcoming arrival of the SNES Classic Edition, another mini console, that will be released on 9/29. MSRP for this baby will be $80, and it comes with the system, 2 controllers, HDMI cable, USB charging cable with AC adapter, and 21 built-in games. What games are included? Here's the list: 
 
 * Contra III: The Alien Wars
 * Donkey Kong Country
