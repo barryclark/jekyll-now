@@ -49,9 +49,6 @@ url: http://hernanikua.github.io
 # then add in the baseurl here, like this: "/repository-name"
 baseurl: ""
 
-# Separador de Read more
-excerpt_separator: "\n\n\n"
-
 # Categorias y tags
 collections:
   my_categories:
@@ -60,6 +57,11 @@ collections:
   my_tags:
     output: true
     permalink: /tag/:name/
+
+# Separador de Read more
+excerpt_separator: "\n\n\n"
+
+
 
 #
 # !! You don't need to change any of the configuration flags below !!
