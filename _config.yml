@@ -56,7 +56,10 @@ excerpt_separator: "\n\n\n"
 collections:
   my_categories:
     output: true
-    permalink: /blog/category/:name/
+    permalink: /category/:name/
+  my_tags:
+    output: true
+    permalink: /tag/:name/
 
 #
 # !! You don't need to change any of the configuration flags below !!
