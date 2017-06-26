@@ -1,8 +1,8 @@
 ---
 layout: post
 title: ¡Allá vamos!
-category: Web
-tags: [web, html]
+category: general
+tags: [general]
 ---
 
 Aquí empiezo mi blog dedicado al desarrollo Frontend. Además de HTML, CSS y Javascript, trataré de aportar mi granito de arena en tecnologías como angular y nativescript.
