@@ -9,7 +9,7 @@ author_email: martin.danielsson@haufe-lexware.com
 header-img: "images/new/Exportiert_56.jpg"
 ---
 
-A while ago I wrote a post on [the state of Kubernetes on Azure](http://dev.haufe.com/state-of-kubernetes-on-azure/), and I promised an update after a while. Oh well, this post is not going to be that update, but it has still to do with Kubernetes, and Azure's commitment to making it a great developer experience to use.
+A while ago I wrote a post on [the state of Kubernetes on Azure](/state-of-kubernetes-on-azure/), and I promised an update after a while. Oh well, this post is not going to be that update, but it has still to do with Kubernetes, and Azure's commitment to making it a great developer experience to use.
 
 Meanwhile, we're live with first applications on Kubernetes, running on Azure. The experience has been very good, and we have have been able to proceed at a good speed, automating our way through our code base, knowing that we now can provision everything from the Kubernetes cluster itself, DNS entries, SSL certificates (using `kube-lego` and Let's Encrypt) and the applications, completely via Jenkins pipelines.
 

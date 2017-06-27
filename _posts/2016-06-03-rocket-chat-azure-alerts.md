@@ -9,7 +9,7 @@ author_email: doru.mihai@haufe-lexware.com
 header-img: "images/new/Exportiert_22.jpg"
 ---
 
-As you probably [already know](http://dev.haufe.com/irc-chatops/), within Haufe we have decided to switch to Rocket.chat from Slack.
+As you probably [already know](/irc-chatops/), within Haufe we have decided to switch to Rocket.chat from Slack.
 
 One of the things we had grown accustomed to with Slack were it's variuous built in integrations. And Rocket lacks in that department but it does have support for generic [Webhook Integrations](https://rocket.chat/docs/administrator-guides/integrations/), and there are guides and how-to's for the usual integrations you might need/want.
 

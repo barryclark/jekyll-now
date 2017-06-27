@@ -24,7 +24,7 @@ Here are some challenges:
 There are hundreds of solutions for this problem and I picked one which I will try to present to you in the next lines.
 And to add one more challenge I was asked what does it mean to use Lambda for this project. And when I say Lambda, it's not the Lambda from .Net, it's AWS Lambda Functions.
 
-Having also this last thing and having some knowledge about micro-services, SOA and static websites I decided to go all Serverless. There are a lot of books on this topic, a lot of articles and hundreds of pages of documentation on Amazon docs about their offer. The backend is done using Lambda Functions and I already wrote about them in [my last blogpost](http://dev.haufe.io/Serverless_with_AWS_at_DevTalks/). 
+Having also this last thing and having some knowledge about micro-services, SOA and static websites I decided to go all Serverless. There are a lot of books on this topic, a lot of articles and hundreds of pages of documentation on Amazon docs about their offer. The backend is done using Lambda Functions and I already wrote about them in [my last blogpost](/Serverless_with_AWS_at_DevTalks/). 
  
 ### And now the Static Website
 

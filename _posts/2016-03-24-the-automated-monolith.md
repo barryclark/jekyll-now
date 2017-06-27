@@ -47,7 +47,7 @@ Main components we used:
 The flow:
 
 {:.center}
-[![go.cd Flow]( /images/automated-monolith/automated_monolith_flow.jpg)](http://dev.haufe.com/images/automated-monolith/automated_monolith_flow.jpg){:style="margin:auto"}
+[![go.cd Flow]( /images/automated-monolith/automated_monolith_flow.jpg)](/images/automated-monolith/automated_monolith_flow.jpg){:style="margin:auto"}
 
  Let's first have a quick look on how go.cd works:  
 Within go.cd you model your worklows using pipelines. Those pipelines contain stages which you use to run jobs which themselves contain tasks. Stages will run in order and if one fails, the pipeline will stop. Jobs will run in parallel, go.cd is taking care of that. 

@@ -67,5 +67,5 @@ You can use this script to look for any other tag names. You just need to change
 > **How do I download the report?** 
 > To download the table content you just need to install "Azure Storage Explorer" from the link [here]. Enter the Access Key and the Storage Account name which you get from the portal and connect to it and then see the table under the Tables. 
 
-[Keeping our Azure Cloud Tidy - Part 1]: <http://dev.haufe.com/Automatic-Shutdown-and-Start-VMs/>
-[here]: <http://storageexplorer.com/>
+* [Keeping our Azure Cloud Tidy - Part 1](/Automatic-Shutdown-and-Start-VMs/)
+* [Storage Explorer](http://storageexplorer.com)

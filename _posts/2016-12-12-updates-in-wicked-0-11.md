@@ -89,6 +89,6 @@ You can find more and more [detailed information in the documentation](https://g
 
 ### Oh, and one more thing
 
-We also implemented the promised support for the OAuth 2.0 Authorization Code Grant since the [last blog post](http://dev.haufe.com/wicked-0-10-0-released/) (actually in 0.10.1). Just for the sake of completeness.
+We also implemented the promised support for the OAuth 2.0 Authorization Code Grant since the [last blog post](http:///wicked-0-10-0-released/) (actually in 0.10.1). Just for the sake of completeness.
 
 If you have any questions or suggestions regarding wicked, please [file an issue on GitHub](https://github.com/Haufe-Lexware/wicked.haufe.io/issues/new). Hearing what you think and what kinds of scenarios you are trying to implement using wicked is super exciting!
