@@ -11,4 +11,5 @@ These awesome people have:
 ### Patrons
 
 Gonzalo Aguirre Bisi\\
+Thomas Deeny\\
 Jeff Johnston
