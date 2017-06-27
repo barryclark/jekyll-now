@@ -2,11 +2,11 @@
 layout: post
 title: Using HALBuilder with german characters
 subtitle: How to make sure that umlauts are properly displayed
-category: Howto
-tags: [api]
+category: dev
+tags: [howto, devops]
 author: Filip Fiat
 author_email: filip.fiat@haufe-lexware.com
-header-img: "images/bg-post.jpg"
+header-img: "images/new/Exportiert_31.jpg"
 ---
 
 Just to set the scene on this post, a couple of definitions and links, before I present a solution to a very annoying problem when dealing with "umlauts":

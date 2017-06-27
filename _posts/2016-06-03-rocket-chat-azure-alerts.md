@@ -2,11 +2,11 @@
 layout: post
 title: Rocket.Chat Integrations
 subtitle: How to integrate social media and other information streams into your Rocket.Chat instance via Webhooks
-category: howto
-tags: [automation, devops]
+category: dev
+tags: [howto, automation, devops]
 author: doru_mihai
 author_email: doru.mihai@haufe-lexware.com
-header-img: "images/bg-post.jpg"
+header-img: "images/new/Exportiert_22.jpg"
 ---
 
 As you probably [already know](http://dev.haufe.com/irc-chatops/), within Haufe we have decided to switch to Rocket.chat from Slack.

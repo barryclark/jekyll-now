@@ -2,11 +2,11 @@
 layout: post
 title: Secure Internet Access to an On-Premise API
 subtitle: Connect an ASP.NET identity to an on-premise API login identity, then relay all requests through the Azure Service Bus
-category: howto
-tags: [cloud]
+category: dev
+tags: [howto, cloud, development, api]
 author: Robert Fitch
 author_email: robert.fitch@haufe-lexware.com
-header-img: "images/bg-post.jpg"
+header-img: "images/new/Exportiert_37.jpg"
 ---
 
 This article shows you how to use the Microsoft Azure Service Bus to relay requests to an on-premise API through the internet in a secure manner.

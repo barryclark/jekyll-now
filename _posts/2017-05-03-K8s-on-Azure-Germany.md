@@ -2,11 +2,11 @@
 layout: post
 title: Installing Kubernetes using ACS Engine in Azure Germany
 subtitle:
-category: howto
-tags: [cloud, Kubernetes]
-author: raulfiru
+category: dev
+tags: [howto, cloud, Kubernetes]
+author: Raul Firu
 author_email: raul.firu@haufe-lexware.com
-header-img: "images/bg-post.jpg"
+header-img: "images/new/Exportiert_13.jpg"
 ---
 Last month I visited KubeCon Europe - or the Cloud Native Con as it is properly named. Checked out some great talks (in some way too small rooms) and met with cool people. Out of those were the guys from Microsoft (I know - MS at a k8s conf - wow).
 

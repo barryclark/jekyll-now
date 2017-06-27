@@ -2,11 +2,11 @@
 layout: post
 title: Creating an acs-engine runtime docker image
 subtitle: How to enable using acs-engine in build pipelines
-category: howto
-tags: [open-source, devops, automation, cloud]
-author: martin_danielsson
+category: dev
+tags: [howto, open-source, devops, automation, cloud]
+author: Martin Danielsson
 author_email: martin.danielsson@haufe-lexware.com 
-header-img: "images/bg-post-clover.jpg"
+header-img: "images/new/Exportiert_56.jpg"
 ---
 
 A while ago I wrote a post on [the state of Kubernetes on Azure](http://dev.haufe.com/state-of-kubernetes-on-azure/), and I promised an update after a while. Oh well, this post is not going to be that update, but it has still to do with Kubernetes, and Azure's commitment to making it a great developer experience to use.

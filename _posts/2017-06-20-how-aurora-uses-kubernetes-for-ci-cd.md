@@ -2,11 +2,11 @@
 layout: post
 title: How the Aurora team manages their Kubernetes deployments
 subtitle: Immutable Infrastructure and CI/CD with Jenkins, Docker and Kubernetes
-category: general
-tags: [cloud, microservice, devops, docker]
-author: martin_danielsson
+category: dev
+tags: [general, cloud, microservice, devops, docker]
+author: Martin Danielsson
 author_email: martin.danielsson@haufe-lexware.com
-header-img: "images/bg-post-clover.jpg"
+header-img: "images/new/Exportiert_38.jpg"
 ---
 
 In this blog post, I would like to shed some light upon how we leverage Azure ACS, and more specifically the Kubernetes cluster deployments it offers, to run short-lived clusters for production use at the Aurora team at Haufe:

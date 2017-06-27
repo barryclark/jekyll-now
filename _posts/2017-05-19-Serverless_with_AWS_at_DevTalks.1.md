@@ -2,11 +2,11 @@
 layout: post
 title: Serverless with AWS at DevTalks
 subtitle: How the new world is looking with Cloud Native Apps and Serverless Mindset
-category: conference
-tags: [culture, serverless, cloud]
-author: melania_andrisan
+category: dev
+tags: [conference, culture, serverless, cloud]
+author: Melania Andrisan
 author_email: melania.andrisan@haufe-lexware.com 
-header-img: "images/bg-post-clover.jpg"
+header-img: "images/new/Exportiert_18.jpg"
 ---
 
 On Wednesday this week I presented about serverless at [DevTalks](http://www.devtalks.ro/), and I just published the slides on [SlideShare](https://www.slideshare.net/melaniadanciu/new-serverless-world-cloud-native-apps). 

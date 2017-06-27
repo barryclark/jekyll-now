@@ -2,11 +2,11 @@
 layout: post
 title: Providing Secure File Storage through Azure API Management
 subtitle: Shared Access Signatures with Azure Storage
-category: howto
-tags: [security, cloud, api]
-author: martin_danielsson
+category: dev
+tags: [howto, security, cloud, api]
+author: Martin Danielsson
 author_email: martin.danielsson@haufe-lexware.com
-header-img: "images/bg-post.jpg"
+header-img: "images/new/Exportiert_54.jpg"
 ---
 
 Continuing our API journey, we're currently designing an API for one of our most valuable assets: Our content, such as law texts and commentaries. Let's call this project the "Content Hub". The API will eventually consist of different sub-APIs: content search, retrieval and ingestion ("upload"). This blog post will shed some light on how we will support bulk ingestion (uploading) of documents into our content hub using Azure out of the box technology: [Azure Storage SAS - Shared Access Signatures](https://azure.microsoft.com/en-us/documentation/articles/storage-dotnet-shared-access-signature-part-1/).

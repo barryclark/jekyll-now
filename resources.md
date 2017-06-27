@@ -1,14 +1,16 @@
 ---
 layout: page
+exclude_from_nav: true
 title: Resources
+navigation_weight: 6
 permalink: /resources/
 ---
 
 ### [Github Repository](https://github.com/Haufe-Lexware)
-Our Github repository is the main staging ground for our Open Source contributions.
+Our [Github Repository](https://github.com/Haufe-Lexware) is the main staging ground for our Open Source contributions.
 
 ### [API Style Guide](https://haufe-lexware.gitbooks.io/haufe-api-styleguide/content/)
-A List of rules, best practices, resources and our way of creating REST APIs in the Haufe Group. The style guide addresses API Designers, mostly developers and architects, who want to design an API.
+A List of rules, best practices, resources and our way of creating REST APIs in the Haufe Group. The [style guide](https://haufe-lexware.gitbooks.io/haufe-api-styleguide/content/) addresses API Designers, mostly developers and architects, who want to design an API.
 
 ### [Docker Style Guide](https://haufe-lexware.gitbooks.io/haufe-group-docker-book-startup-guide/content/)
 A gitbook representing mandantory requirements, recommended best practices and informational resources for using Docker in official (public or internal) Haufe Group products, services or solutions. ([Github Repo](https://github.com/Haufe-Lexware/docker-style-guide)).

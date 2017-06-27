@@ -2,11 +2,11 @@
 layout: post
 title: CQRS, Eventsourcing and DDD
 subtitle: Notes from Greg Young's CQRS course
-category: conference
-tags: [microservice]
-author: frederik_michel
+category: dev
+tags: [conference, microservice]
+author: Frederik Michel
 author_email: frederik.michel@haufe-lexware.com
-header-img: "images/bg-post.jpg"
+header-img: "images/new/Exportiert_18.jpg"
 ---
 
 In these notes I would like to share my thoughts about the course I took together with Rainer Michel and Raul-Andrei Firu in London about the [above mentioned topics](http://lmgtfy.com/?q=greg+young+cqrs). In this three days last November Greg Young explained with many practical examples of his career the benefits especially of CQRS and how this is related to things like Event Sourcing which is a way of reaching eventual consistency.

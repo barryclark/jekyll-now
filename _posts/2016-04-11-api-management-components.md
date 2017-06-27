@@ -2,11 +2,11 @@
 layout: post
 title: API Management Components
 subtitle: What's inside that API Management box?
-category: general
-tags: [cloud, api]
-author: martin_danielsson
+category: dev
+tags: [general, cloud, api]
+author: Martin Danielsson
 author_email: martin.danielsson@haufe-lexware.com
-header-img: "images/bg-post-api.jpg"
+header-img: "images/new/Exportiert_50.jpg"
 ---
 
 ### Introduction

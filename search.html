@@ -1,0 +1,35 @@
+---
+layout: page
+title: Search
+description:
+search_omit: true
+---  
+  <!-- Search form -->
+  <form method="get" action="/search" data-search-form>
+    <input class="search-box" type="search" name="q" id="q" placeholder="Enter a search term" data-search-input />
+    <input class="search-button" type="submit" value="Search" />
+  </form>
+
+  <!-- Search results placeholder -->
+  <p data-search-found class="search-result-counter">
+    <span data-search-found-count></span> Result(s) found for &ldquo;<span data-search-found-term></span>&rdquo;.
+  </p>
+  <div data-search-results></div>
+
+  <!-- Search result template -->
+  <script type="text/x-template" id="search-result">
+    <div class="post-preview">
+      <a href="##Url##">
+          <h2 class="post-title">##Title##</h2>
+          <h3 class="post-subtitle">##Subtitle##</h3>
+      </a>
+      <p class="post-meta">Posted by ##Author## on ##Date##</p>
+      <hr>
+    </div>
+  </script>
+
+  <!-- jQuery - Must appear after template -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+  <!-- Search script - Must appear after template -->
+  <script src="/js/search.js"></script>

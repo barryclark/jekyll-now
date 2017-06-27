@@ -2,11 +2,11 @@
 layout: post
 title: Keeping our Azure Cloud Tidy - Part 1
 subtitle:
-category: howto
-tags: [cloud, devops]
-author: esmaeil_sarabadani
+category: dev
+tags: [howot, cloud, devops]
+author: Esmaeil Sarabadani
 author_email: esmaeil.sarabadani@haufe-lexware.com
-header-img: "images/bg-post.jpg"
+header-img: "images/new/Exportiert_43.jpg"
 ---
 
 Are you a developer on Azure? Have a lot of virtual machines running on your Azure development environment? Are you tired of shutting them down manually one by one once you are done with your work in the evenings? This blog post is for you... Use this guide to automate the shutdown and start of your VMs at specific times and save your company hundreds and thousands of dollars...

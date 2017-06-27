@@ -2,11 +2,11 @@
 layout: post
 title: The Automated Monolith
 subtitle: Build, Deploy and Testing using Docker, Docker Compose, Docker Machine, go.cd and Azure
-category: howto
-tags: [devops]
-author: marco_seifried
+category: dev
+tags: [howto, devops, deveopment]
+author: Marco Seifried
 author_email: marco.seifried@haufe-lexware.com
-header-img: "images/bg-post.alt.jpg"
+header-img: "images/new/Exportiert_42.jpg"
 ---
 
 Let's be honest, systems age and while we try hard not to accumulate technical depth, sometimes you realize it's time for a bigger change. In this case, we looked at a Haufe owned platform providing services like user-, licence- and subscription management for internal and external customers. Written in Java, based on various open source components, somewhat automated, fairly monolithic.  

@@ -3,11 +3,11 @@
 layout: post
 title: Summer Internship @Haufe
 subtitle: An experience that greatly helped me to improve myself
-category: general
-tags: [culture, docker]
+category: dev
+tags: [general, culture, docker]
 author: Bogdan Bledea
 author_email: bogdan.b19c@gmail.com
-header-img: "images/summerInternships1.jpg"
+header-img: "images/new/Exportiert_17.jpg"
 ---
 
 I'm Bledea Bogdan and together with Patricia Atieyeh, both second year students at Polytechnic University of Timisoara, we built a feedback box app for Haufe-Lexware.

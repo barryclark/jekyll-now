@@ -2,11 +2,11 @@
 layout: post
 title: Securing Backend Services behind Azure API Management
 subtitle: Different approaches to securing API implementations
-category: howto
-tags: [security, cloud, api]
-author: martin_danielsson
+category: dev
+tags: [howto, security, cloud, api]
+author: Martin Danielsson
 author_email: martin.danielsson@haufe-lexware.com
-header-img: "images/bg-post.jpg"
+header-img: "images/new/Exportiert_58.jpg"
 ---
 
 We are currently planning our first round of published APIs, and in the course of this process, we obviously had to ask ourselves how we can secure our backend services which we will surface using [Azure API Management](https://azure.microsoft.com/en-us/services/api-management/). This may sound like a trivial problem, but it turns out it actually isn't. This blog post will show the different options you have (or don't) using Azure API Management as a front end to your APIs.

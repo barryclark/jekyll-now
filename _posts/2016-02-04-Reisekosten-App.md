@@ -2,11 +2,11 @@
 layout: post
 title: Extending On-Premise Products With Mobile Apps - Part 1
 subtitle: Modernizing on-premise application using Azure Service Bus Relay
-category: general
-tags: [mobile, cloud]
+category: dev
+tags: [general, mobile, cloud, development]
 author: Robert Fitch
 author_email: robert.fitch@haufe-lexware.com
-header-img: "images/bg-post.jpg"
+header-img: "images/new/Exportiert_39.jpg"
 ---
 
 ### What is this about?

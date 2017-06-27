@@ -2,11 +2,11 @@
 layout: post
 title: State of Data - Strata 2017 perspective
 subtitle: Impressions from Strata Data 2017 in London 
-category: conference
-tags: [data]
-author: jerzy_kott
+category: dev
+tags: [conference, data]
+author: Jerzy Kott
 author_email: jerzy.kott@haufe-lexware.com
-header-img: "images/bg-post.jpg"
+header-img: "images/new/Exportiert_11.jpg"
 ---
 
 The Strata Data conference is an major event related to latest trends in data area. I have attended this year Strata in London

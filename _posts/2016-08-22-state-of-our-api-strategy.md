@@ -2,12 +2,11 @@
 layout: post
 title: The state of our API Strategy
 subtitle: From a response to a sales call by an API Management vendor.
-category: api
-tags: [api, cto]
-author: holger_reinhardt
+category: dev
+tags: [api, cto, development]
+author: Holger Reinhardt
 author_email: holger.reinhardt@haufe-lexware.com 
-header-img: "images/bg-post.jpg"
-
+header-img: "images/new/Exportiert_51.jpg"
 ---
 
 This is a (slightly adapted) version of a response to a sales enquiry of an API Management vendor. We had contacted them a year ago but the sales lead back then felt that our focus on 'just enough API management' was too narrow and not addressing the larger needs (and bigger deal) of the 'Digital Transformation' of the Haufe Group.

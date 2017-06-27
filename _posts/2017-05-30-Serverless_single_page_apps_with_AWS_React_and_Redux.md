@@ -2,11 +2,11 @@
 layout: post
 title: Building a serverless web app
 subtitle: Serverless single page apps with AWS, React and Redux
-category: conference
-tags: [culture, serverless, cloud]
-author: melania_andrisan
+category: dev
+tags: [conference, culture, serverless, cloud]
+author: Melania Andrisan
 author_email: melania.andrisan@haufe-lexware.com 
-header-img: "images/bg-post-clover.jpg"
+header-img: "images/new/Exportiert_18.jpg"
 ---
 
 ### Background story

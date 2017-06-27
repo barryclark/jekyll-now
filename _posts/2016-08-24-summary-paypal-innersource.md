@@ -2,12 +2,11 @@
 layout: post
 title: Summary of PayPal InnerSource Summit, 2016
 subtitle: Summary of the PayPal InnerSource Summit in London.
-category: conference
-tags: [devops, culture, open-source]
-author: holger_reinhardt
+category: dev
+tags: [conference, devops, culture, open-source]
+author: Holger Reinhardt
 author_email: holger.reinhardt@haufe-lexware.com 
-header-img: "images/bg-post.jpg"
-
+header-img: "images/new/Exportiert_18.jpg"
 ---
 
 From April 21st to 22nd, 2016 we were fortunate to attend the [PayPal Inner Source Summit](http://paypal.github.io/InnerSourceCommons/events/) in London. 

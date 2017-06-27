@@ -2,11 +2,11 @@
 layout: post
 title: Keeping our Azure Cloud Tidy - Part 2
 subtitle:
-category: howto
-tags: [cloud, devops]
-author: esmaeil_sarabadani
+category: dev
+tags: [howto, cloud, devops]
+author: Esmaeil Sarabadani
 author_email: esmaeil.sarabadani@haufe-lexware.com
-header-img: "images/bg-post.jpg"
+header-img: "images/new/Exportiert_44.jpg"
 ---
 
 For those who have read my first blog post "[Keeping our Azure Cloud Tidy - Part 1]", this is a part 2 which is going to be as useful in keeping your environment tidy. If this is your first time here, you might want to have a look at the part 1 too, but even without reading it, I hope you find this article useful. 

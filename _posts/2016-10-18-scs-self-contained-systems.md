@@ -2,11 +2,11 @@
 layout: post
 title: SCS - Self-Contained Systems
 subtitle: Thoughts about Self-Contained Systems architecture pattern  
-category: api
-tags: [cto, microservice]
-author: rainer_zehnle
+category: dev
+tags: [api, microservice, devops]
+author: Rainer Zehnle
 author_email: rainer.zehnle@haufe-lexware.com 
-header-img: "images/bg-post-clover.jpg"
+header-img: "images/new/Exportiert_57.jpg"
 ---
 
 In September 2016 I attended the [Software Architecture Summit 2016](http://software-architecture-summit.de/) in Berlin.

@@ -3,35 +3,52 @@
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header page-scroll">
+	<a href="/"><div class="nav-logo logo-negative"></div></a>
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="{{ site.baseurl }}/">{{ site.title }}</a>
-        </div>
+            </button>        
+	    </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-                <li>
-                    <a href="{{ site.baseurl }}/">Blog</a>
-                </li>
+		{% assign navigation_pages = site.pages | sort: 'navigation_weight' %}
                 {% for page in site.pages %}
+		{% unless page.exclude_from_nav %}
                 {% if page.title %}
                 <!-- suppress all category and tag meta pages -->
-                {% if page.url contains '/meta/' %}
-                {% else %}
+				{% if page.url contains '/meta/' %}
+					{% else %}
 				{% if page.url contains '404' %}
-                {% else %}
+					{% else %}
+				{% if page.navigation_weight %}
                 <li>
                     <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
                 </li>
                 {% endif %}
                 {% endif %}
+		{% endif %}
                 {% endif %}
+		{% endunless %}
                 {% endfor %}
+		<li>
+		    <a href="/about/" title="About">
+		        About
+	   	    </a>
+		</li>
+        <li>
+            <a href="/resources/" title="Resources">
+                Resources
+            </a>
+        </li>
+		<li>
+		    <a href="/search/" title="Search">
+		        <i class="fa fa-fw fa-search"></i>
+	   	    </a>
+	        </li>
             </ul>
         </div>
         <!-- /.navbar-collapse -->

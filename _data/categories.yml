@@ -1,17 +1,5 @@
-- slug: general
-  name: General
-
-- slug: conference
-  name: Conference
-
-- slug: howto
-  name: Howto
-
-- slug: api
-  name: API
-
-- slug: product
-  name: Product
-
-- slug: opinion
-  name: Opinion
+- slug: dev
+  name: Dev
+  
+- slug: design
+  name: Design

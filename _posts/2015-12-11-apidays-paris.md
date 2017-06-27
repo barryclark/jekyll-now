@@ -2,11 +2,11 @@
 layout: post
 title: APIdays Paris - From Philosophy to Technology and back again
 subtitle: A biased report from APIdays Global in Paris
-category: conference
-tags: [api]
-author: martin_danielsson
+category: dev
+tags: [conference, api, development]
+author: Martin Danielsson
 author_email: martin.danielsson@haufe-lexware.com 
-header-img: "images/bg-post.jpg"
+header-img: "images/new/Exportiert_18.jpg"
 ---
 
 Having just recently come home again from the [APIdays](http://www.apidays.io) conference in Paris (Dec 8-9th 2015), memories are still quite fresh. It was a crowded event, the first day hosting a whopping 800 API enthusiasts, ranging from the geekiest of the geeks to a fair amount of suited business people, showing that talking about APIs is no longer something just the most avantgardist of companies, the most high tech of the tech companies, spend their time with. *Au contraire* (we were in Paris after all), APIs are mainstream, and they contribute to the advancing of collaboration and automatization of the (digital) world as such.

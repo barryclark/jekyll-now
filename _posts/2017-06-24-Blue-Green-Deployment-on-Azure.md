@@ -2,11 +2,11 @@
 layout: post
 title: Blue-Green Deployment on Azure with Zero Downtime
 subtitle:
-category: howto
-tags: [cloud, devops]
-author: esmaeil_sarabadani
+category: dev
+tags: [howto, cloud, devops]
+author: Esmaeil Sarabadani
 author_email: esmaeil.sarabadani@haufe-lexware.com
-header-img: "images/bg-post.jpg"
+header-img: "images/new/Exportiert_38.jpg"
 ---
 
 ### What is Blue-Green deployment?

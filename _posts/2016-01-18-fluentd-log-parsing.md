@@ -2,11 +2,11 @@
 layout: post
 title: Better Log Parsing with Fluentd
 subtitle: Description of a couple of approaches to designing your fluentd configuration.
-category: howto
-tags: [devops, logging]
-author: doru_mihai
+category: dev
+tags: [howto, devops, logging]
+author: Doru Mihai
 author_email: doru.mihai@haufe-lexware.com
-header-img: "images/bg-post.jpg"
+header-img: "images/new/Exportiert_33.jpg"
 ---
 
 When you will start to deploy your log shippers to more and more systems you will encounter the issue of adapting your solution to be able to parse whatever log format and source each system is using. Luckily, fluentd has a lot of plugins and you can approach a problem of parsing a log file in different ways.

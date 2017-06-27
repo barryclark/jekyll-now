@@ -2,11 +2,11 @@
 layout: post
 title: Updates in wicked 0.11.0
 subtitle: Enabling alternative deployment orchestrations
-category: api
+category: dev
 tags: [cloud, api, open-source]
-author: martin_danielsson
+author: Martin Danielsson
 author_email: martin.danielsson@haufe-lexware.com
-header-img: "images/bg-post-api.jpg"
+header-img: "images/new/Exportiert_2.jpg"
 ---
 
 ### Introduction
