@@ -4,7 +4,7 @@ title: State of Kubernetes on Azure - Part II
 subtitle: Assessment of the Azure Container Service regarding Kubernetes support
 category: dev
 tags: [general, cloud, microservice, devops, docker]
-author: martin_danielsson
+author: Martin Danielsson
 author_email: martin.danielsson@haufe-lexware.com
 header-img: "images/new/Exportiert_43.jpg"
 ---

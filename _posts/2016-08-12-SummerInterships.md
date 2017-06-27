@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 layout: post
 title: Summer Internship @Haufe
@@ -53,4 +52,3 @@ The development process was a little bit tricky for us, and, furthermore, it was
 As you can see, this feedback box app has an user login&registration form, but, we restricted the account creation to the company email domain, haufe-lexware.com. After the user logs in, he can post and reply to the other feedbacks.
 
 And when I say it was tricky, I mean, the support on the internet for docker and meteor was so poor. I've had a lot of bugs, the meteor pack for docker it wasn't at least official, and the problems we encountered, was already posted on the internet, with a lot of troubleshooting, but, nothing for our case.
->>>>>>> haufe/master
