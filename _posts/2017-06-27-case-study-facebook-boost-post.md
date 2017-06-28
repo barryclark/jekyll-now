@@ -10,7 +10,9 @@ I've run a few Facebook ads before, never spending more than a couple bucks and 
 
 ### The Boosted Post
 
+<div>
 <div class="fb-post" data-href="https://www.facebook.com/JoesGithubBlog/posts/1347255428685845"></div>
+</div>
 
 Keep in mind the product I'm advertising is [one](http://amzn.to/2rgQRsA) of [my Merch by Amazon shirts](http://hendrixjoseph.github.io/t-shirts/). These shirts are currently available only in the United States, so someone from outside the US is unlikely to actually buy my product.
 
