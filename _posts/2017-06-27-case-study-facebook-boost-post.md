@@ -16,7 +16,7 @@ Keep in mind the product I'm advertising is [one](http://amzn.to/2rgQRsA) of [my
 
 ### The Audience
 
-![Facebook Boost Audience](/images/facebook-boost-results/facebook-boost-target.png "")
+![Facebook Boost Audience](/images/facebook-boost-results/facebook-boost-target.png "Facebook Boost Audience")
 
 Since my product is an HTML parody t-shirt, selecting HTML, web design, and t-shirts seemed natural. I also selected "online shopping" because - although my audience probably can't buy my shirt - my shirt is for sale online.
 
