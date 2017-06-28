@@ -10,7 +10,7 @@ I've run a few Facebook ads before, never spending more than a couple bucks and 
 
 ### The Boosted Post
 
-<div>
+<div style="text-align: center;">
 <div class="fb-post" data-href="https://www.facebook.com/JoesGithubBlog/posts/1347255428685845"></div>
 </div>
 
