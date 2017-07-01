@@ -54,10 +54,10 @@ Download the YAMon installer script from the link above, expand the zip file, an
 
 ####Launch WinSCP and configure with the following:
 - **Set the File protocol to SCP**
-2. **Set Host name to your Router's Local IP Address**
-3. **Set Port number to 22**
-4. **Set User name to root**
-5. **Set Password to your Router's login password**
+* **Set Host name to your Router's Local IP Address**
+* **Set Port number to 22**
+* **Set User name to root**
+* **Set Password to your Router's login password**
 ![DD-WRT-7]({{taylorjhawkins.com}}/images/dd-wrt-7.PNG)
 
 ####Login and navigate to the opt folder, then copy "install.sh" to your router.
@@ -66,7 +66,7 @@ Download the YAMon installer script from the link above, expand the zip file, an
 
 ####At the prompt run the following commands:
 - **\`chmod 775 /opt/install.sh\`**
-2. **\`/opt/install.sh\`**
+* **\`/opt/install.sh\`**
 ![DD-WRT-8]({{taylorjhawkins.com}}/images/dd-wrt-8.PNG)
 
 ####Follow the on-screen instructions to configure YAMon.
