@@ -71,4 +71,4 @@ Download the YAMon installer script from the link above, expand the zip file, an
 
 #### Follow the on-screen instructions to configure YAMon.
 For default settings press enter at every prompt. 
-Once configured you can access YAMon at **http://<router_ip>/user/index.html**
+Once configured you can access YAMon at **http://\<router_ip\>/user/index.html**
