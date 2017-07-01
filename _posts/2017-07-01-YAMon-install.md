@@ -29,7 +29,7 @@ Login to your router and navigate to the Services tab and the USB sub-tab.
 * **USB Storage Support**
 * **Automatic Drive Mount**
 
-![DD-WRT-1]({{taylorjhawkins.com}}//images/dd-wrt-1.png)
+![DD-WRT-1]({{taylorjhawkins.com}}/images/dd-wrt-1.png)
 
 ####Save, Apply Settings, and Reboot the router:
 ![DD-WRT-4]({{taylorjhawkins.com}}/images/dd-wrt-4.PNG)
