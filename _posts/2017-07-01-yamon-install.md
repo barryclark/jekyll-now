@@ -1,6 +1,5 @@
 ---
 published: true
-layout: post
 ---
 ## Installing YAMon on DD-WRT
 
