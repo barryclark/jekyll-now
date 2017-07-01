@@ -29,25 +29,25 @@ Login to your router and navigate to the Services tab and the USB sub-tab.
 2. **USB Storage Support**
 3. **Automatic Drive Mount**
 
-![DD-WRT-1]({{site.baseurl}}//images/dd-wrt-1.png)
+![DD-WRT-1]({{taylorjhawkins.com}}/images/dd-wrt-1.png)
 
 ####Save, Apply Settings, and Reboot the router:
-![DD-WRT-4]({{site.baseurl}}///images/dd-wrt-4.PNG)
+![DD-WRT-4]({{taylorjhawkins.com}}/images/dd-wrt-4.PNG)
 
 ####Find the UUID for the USB Drive attached to the router:
-![DD-WRT-3]({{site.baseurl}}///images/dd-wrt-3.png)
+![DD-WRT-3]({{taylorjhawkins.com}}/images/dd-wrt-3.png)
 
 ####Copy the UUID for the USB Drive into the "Mount this Partition to /opt" field:
-![DD-WRT-2]({{site.baseurl}}///images/dd-wrt-2.png)
+![DD-WRT-2]({{taylorjhawkins.com}}/images/dd-wrt-2.png)
 
 ####Save, Apply Settings, and Reboot the router:
-![DD-WRT-4]({{site.baseurl}}///images/dd-wrt-4.PNG)
+![DD-WRT-4]({{taylorjhawkins.com}}/images/dd-wrt-4.PNG)
 
 ####Verify that USB Drive is Mounted to /opt
-![DD-WRT-6]({{site.baseurl}}///images/dd-wrt-6.PNG)
+![DD-WRT-6]({{taylorjhawkins.com}}/images/dd-wrt-6.PNG)
 
 ####Navigate to Services tab and the Services sub-tab, then enable SSHd.
-![DD-WRT-5]({{site.baseurl}}///images/dd-wrt-5.PNG)
+![DD-WRT-5]({{taylorjhawkins.com}}/images/dd-wrt-5.PNG)
 
 ###Install YAMon
 Download the YAMon installer script from the link above, expand the zip file, and copy "install.sh" to a local directory. 
@@ -58,7 +58,7 @@ Download the YAMon installer script from the link above, expand the zip file, an
 3. **Set Port number to 22**
 4. **Set User name to root**
 5. **Set Password to your Router's login password**
-![DD-WRT-7]({{site.baseurl}}///images/dd-wrt-7.PNG)
+![DD-WRT-7]({{taylorjhawkins.com}}/images/dd-wrt-7.PNG)
 
 ####Login and navigate to the opt folder, then copy "install.sh" to your router.
 
@@ -67,7 +67,7 @@ Download the YAMon installer script from the link above, expand the zip file, an
 ####At the prompt run the following commands:
 - **\`chmod 775 /opt/install.sh\`**
 2. **\`/opt/install.sh\`**
-![DD-WRT-8]({{site.baseurl}}///images/dd-wrt-8.PNG)
+![DD-WRT-8]({{taylorjhawkins.com}}/images/dd-wrt-8.PNG)
 
 ####Follow the on-screen instructions to configure YAMon.
 For default settings press enter at every prompt. 
