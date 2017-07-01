@@ -27,9 +27,9 @@ Login to your router and navigate to the Services tab and the USB sub-tab.
 ####Ensure the following services are enabled:
 - **Core USB Support**
 2. **USB Storage Support**
-3. **Automatic Drive Mount**
+3. **Automatic Drive Mount**[test](/images/dd-wrt-1.png)[test](taylorjhawkins.com/images/dd-wrt-1.png)
 
-![DD-WRT-1]({{taylorjhawkins.com}}/images/dd-wrt-1.png)
+![DD-WRT-1]({{site.baseurl}}//images/dd-wrt-1.png)
 
 ####Save, Apply Settings, and Reboot the router:
 ![DD-WRT-4]({{taylorjhawkins.com}}/images/dd-wrt-4.PNG)
@@ -72,4 +72,3 @@ Download the YAMon installer script from the link above, expand the zip file, an
 ####Follow the on-screen instructions to configure YAMon.
 For default settings press enter at every prompt. 
 Once configured you can access YAMon at **http://<router_ip>/user/index.html**
-
