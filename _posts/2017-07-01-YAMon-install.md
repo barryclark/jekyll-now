@@ -26,8 +26,8 @@ Login to your router and navigate to the Services tab and the USB sub-tab.
 
 ####Ensure the following services are enabled:
 - **Core USB Support**
-2. **USB Storage Support**
-3. **Automatic Drive Mount**
+* **USB Storage Support**
+* **Automatic Drive Mount**
 
 ![DD-WRT-1]({{taylorjhawkins.com}}//images/dd-wrt-1.png)
 
