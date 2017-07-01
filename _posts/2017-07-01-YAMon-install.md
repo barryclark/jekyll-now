@@ -12,7 +12,7 @@ This guide assumes you are configuring from a Windows system, so if you are usin
 **Things you will need**:
 - **Router running DD-WRT**
 * **USB Drive**
-* [Installer Script for YAMon v3.3.0](http://usage-monitoring.com/current/YAMon3/install%20(3.3.0%29.zip)
+* [Installer Script for YAMon v3.3.0](http://usage-monitoring.com/current/YAMon3/install%20(3.3.0).zip)
 * [WinSCP](https://winscp.net/eng/download.php)
 * [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) **For Windows Users**
 
