@@ -22,6 +22,17 @@ Once your USB Drive is formatted as ext 4, connect it to your router.
 
 Login to your router and navigate to the Services tab and the USB sub-tab. 
 
-![]({{site.baseurl}}//images/dd-wrt-1.png)
+####Ensure the following services are enabled:
+- **Core USB Support**
+2. **USB Storage Support**
+3. **Automatic Drive Mount**
+
+![DD-WRT-1]({{site.baseurl}}//images/dd-wrt-1.png)
+
+####Find the UUID for the USB Drive attached to the router:
+![DD-WRT-2]({{site.baseurl}}///images/dd-wrt-3.png)
+
+####Copy the UUID for the USB Drive into the "Mount this Partition to /opt" field:
+![DD-WRT-2]({{site.baseurl}}///images/dd-wrt-2.png)
 
 
