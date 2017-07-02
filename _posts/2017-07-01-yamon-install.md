@@ -15,7 +15,7 @@ This guide assumes you are configuring from a Windows system, so if you are usin
 * **USB Drive**
 * [Installer Script for YAMon v3.3.0](http://usage-monitoring.com/current/YAMon3/install%20(3.3.0).zip)
 * [WinSCP](https://winscp.net/eng/download.php)
-* [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) **For Windows Users**
+* [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) 
 
 ### Prepare USB Drive
 Your USB Drive needs to be formatted as ext4. There are several ways to do this, if you aren't familiar with this process. Ideally, you're using a \*nix system and can use **GParted**. Alternatively, you can make a [GParted Live USB](http://gparted.org/download.php), or if you absolutely must use Windows, [MiniTool Partition Wizard](https://www.partitionwizard.com/download.html).
