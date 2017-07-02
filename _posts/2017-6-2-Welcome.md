@@ -9,4 +9,4 @@ I founded the [Cloud Native London meetup](https://www.meetup.com/Cloud-Native-L
 
 I spent five years at Google working on backend teams across Google Maps, living in London and New York. I hold a Masters in Computer Science from the University of Cambridge, King's College.
 
-This blog is primarily but not exclusively technical/developer oriented, and you can get in touch via Twitter and LinkedIn.
+This blog is primarily but not exclusively technical and developer oriented, and you can get in touch via [Twitter](https://twitter.com/oicheryl) and [LinkedIn](https://www.linkedin.com/in/cheryljhung/).
