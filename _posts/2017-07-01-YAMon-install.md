@@ -32,21 +32,27 @@ Login to your router and navigate to the Services tab and the USB sub-tab.
 ![DD-WRT-1]({{taylorjhawkins.com}}/images/dd-wrt-1.png)
 
 #### Save, Apply Settings, and Reboot the router:
+
 ![DD-WRT-4]({{taylorjhawkins.com}}/images/dd-wrt-4.PNG)
 
 #### Find the UUID for the USB Drive attached to the router:
+
 ![DD-WRT-3]({{taylorjhawkins.com}}/images/dd-wrt-3.png)
 
 #### Copy the UUID for the USB Drive into the "Mount this Partition to /opt" field:
+
 ![DD-WRT-2]({{taylorjhawkins.com}}/images/dd-wrt-2.png)
 
 #### Save, Apply Settings, and Reboot the router:
+
 ![DD-WRT-4]({{taylorjhawkins.com}}/images/dd-wrt-4.PNG)
 
 #### Verify that USB Drive is Mounted to /opt
+
 ![DD-WRT-6]({{taylorjhawkins.com}}/images/dd-wrt-6.PNG)
 
 #### Navigate to Services tab and the Services sub-tab, then enable SSHd.
+
 ![DD-WRT-5]({{taylorjhawkins.com}}/images/dd-wrt-5.PNG)
 
 ### Install YAMon
@@ -67,6 +73,8 @@ Download the YAMon installer script from the link above, expand the zip file, an
 #### At the prompt run the following commands:
 - **\`chmod 775 /opt/install.sh\`**
 * **\`/opt/install.sh\`**
+
+
 ![DD-WRT-8]({{taylorjhawkins.com}}/images/dd-wrt-8.PNG)
 
 #### Follow the on-screen instructions to configure YAMon.
