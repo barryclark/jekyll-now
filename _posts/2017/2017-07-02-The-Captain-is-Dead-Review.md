@@ -8,7 +8,7 @@ tags:
   - aeg
   - the captain is dead
 layout: post
-description: "Heroes & Tricks is colorful and full of character, but fell a bit flat."
+description: "The Captain is Dead, and you'll most likely be too in this excellent cooperative game."
 featured: thecaptainisdead.jpg                                                        
 author: robk
 published: true
