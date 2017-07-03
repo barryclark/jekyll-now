@@ -1,7 +1,7 @@
 ---
 title: "Hazelnut Bastille Public Demo Released"
 date: 2017-05-31 15:45:00 Z
-category: preview
+category: video games
 tags:
   - video games
   - hazelnut bastille
