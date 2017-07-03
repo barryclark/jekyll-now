@@ -23,7 +23,7 @@ The set Elderwood sent me to take a look at is made with cherry and maple, with 
 
 ![Elderwood Academy Scroll & Codex Bag](/images/elderwood/ewsc1.jpg)
 
-The beauty of the Scroll & Codex is how the products are made to word together. The Scroll can be disassembled, rolled up, and placed into the Codex for each storage. The Codex's cap is held on with rare earth magnets to keep everything safely inside until use.
+The beauty of the Scroll & Codex is how the products are made to work together. The Scroll can be disassembled, rolled up, and placed into the Codex for each storage. The Codex's cap is held on with rare earth magnets to keep everything safely inside until use.
 
 ![Elderwood Academy Scroll & Codex Bag](/images/elderwood/ewsc2.jpg)
 ![Elderwood Academy Scroll & Codex Bag](/images/elderwood/ewsc3.jpg)
