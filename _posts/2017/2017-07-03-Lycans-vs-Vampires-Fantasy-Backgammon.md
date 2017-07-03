@@ -18,7 +18,7 @@ author: robk
 
 I hate to admit it, but I only learned how to actually play Backgammon a handful of years ago. Before then I just saw the came as something that came along for the ride with every chessboard I've ever owned. Once I finally learned how to play I realized how much of an awesome classic it really is.
 
-Color me surprised today when I see an email come through from Brain Conceptual Entertainment about their new Kickstarter launching soon, Lycans vs Vampires Fantasy Backgammon. Lycans vs Vampires is luxury Backgammon set that's just oozing with theme. Here's the stats on the thing:
+Color me surprised today when I see an email come through from Brain Conceptual Entertainment about their new Kickstarter launching soon, [Lycans vs Vampires Fantasy Backgammon](http://www.brainconceptual.com/backgammon). Lycans vs Vampires is luxury Backgammon set that's just oozing with theme. Here are the stats on the thing:
 
 
 * A wooden backgammon board, covered with printed artwork
@@ -34,6 +34,6 @@ Color me surprised today when I see an email come through from Brain Conceptual 
 * Bag to carry the backgammon board set.
 * Weighs 3,500 grams (almost 8 pounds!)
 
-The set should be hiting Kickstarter this month. No word on pricing yet.
+The set should be hitting Kickstarter this month. No word on pricing yet.
 
-The mockups for this beast look increadible. It's a set I'd really love to own.
+The mockups for this beast look incredible. It's a set I'd really love to own.
