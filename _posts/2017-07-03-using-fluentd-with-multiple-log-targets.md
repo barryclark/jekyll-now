@@ -3,7 +3,7 @@ layout: post
 title: Using fluentd with multiple log targets
 subtitle: Forward log messages to multiple (Azure) targets with FluentD
 category: dev
-tags: [general, cloud, azure, logging, devops, docker]
+tags: [general, cloud, devops, docker]
 author: Rainer Zehnle
 author_email: rainer.zehnle@haufe-lexware.com
 header-img: "images/new/Exportiert_56.jpg"
