@@ -1,6 +1,6 @@
 ---
 title: "Review - Elderwood Academy Scroll & Codex"
-date: 2017-07-01 19:30:00 Z
+date: 2017-07-03 13:45:00 Z
 category: review
 tags:
   - review
