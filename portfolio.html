@@ -2,80 +2,115 @@
 <html>
 <head>
 	<title>
-		My Portfolio
+		Jesse Stern
 	</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+
 </head>
 <body>
+
 	<!-- navbar -->
-	<header id="navbar">
-		<div class ="container">
-			<a href ="index.html" id ="name">Jesse Stern</a>
-			<nav>
-				<a href="contact.html">Contact</a>
-				<a href="portfolio.html">Portfolio</a>
-				<a href ="index.html">About</a>
-			</nav>
+	<nav class="navbar navbar-default ">
+		<div class="container">
+			
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="index.html">Jesse Stern</a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="index.html">About Me</a></li>
+					<li><a href="portfolio.html">Portfolio</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+			
 		</div>
-	</header>
+	</nav>
+
 
 	<!-- portfolio section -->
-	<div id ="main-container" class="container">
-		<section class ="main-section">
-			<h1>Portfolio</h1>
-			<hr>
-			<div class = "examples">
-				<img src ="http://placehold.it/200x150">
-				<div class = "exampleNames">
-					Example 1 
+	<div class ="container">
+		<div class="row">
+			<div class="col-md-8 content">
+				<div class="page-header">
+					<h1>Portfolio</h1>
 				</div>
-			</div>
-			<div class = "examples">
-				<img src ="http://placehold.it/200x150">
-				<div class = "exampleNames">
-					Example 2
-				</div>
-			</div>
-			<div class = "examples">
-				<img src ="http://placehold.it/200x150">
-				<div class = "exampleNames">
-					Example 3
-				</div>
-			</div>
-			<div class = "examples">
-				<img src ="http://placehold.it/200x150">
-				<div class = "exampleNames">
-					Example 4 
-				</div>
-			</div>
-			<div class = "examples">
-				<img src ="http://placehold.it/200x150">
-				<div class = "exampleNames">
-					Example 5
-				</div>
-			</div>
-		</section>
+				<div class="row">
+					<div class="col-md-4 col-md-offset-1 examples">
+						<img class = "img-responsive" src ="http://placehold.it/300x250">
+						<div class = "exampleNames">
+							Example 1 
+						</div>
+					</div>
+					<div class="col-md-4 col-md-offset-1 examples">
+						<img class = "img-responsive" src ="http://placehold.it/300x250">
+						<div class = "exampleNames">
+							Example 2
+						</div>
+					</div>
+					<div class="col-md-4 col-md-offset-1 examples">
+						<img class = "img-responsive" src ="http://placehold.it/300x250">
+						<div class = "exampleNames">
+							Example 3
+						</div>
+					</div>
+					<div class="col-md-4 col-md-offset-1 examples">
+						<img class = "img-responsive" src ="http://placehold.it/300x250">
+						<div class = "exampleNames">
+							Example 4
+						</div>
+					</div>
+					<div class="col-md-4 col-md-offset-1 examples">
+						<img class = "img-responsive" src ="http://placehold.it/300x250">
+						<div class = "exampleNames">
+							Example 5
+						</div>
+					</div>
+				</div> <!-- row -->
+			</div> <!-- col md8 -->
 
-		<!-- sidebar -->
-		<aside id="sidebar">
-			<div id="connect">
-				<h3>Connect With Me</h3>
 
-				<hr class="side">
-
-				<div id="images">
-					<a href ="https://github.com/sternj20" target="_blank"><img class ="icons" src="assets/images/github.jpg"></a>
-					<a href ="https://www.linkedin.com/in/jesse-stern-07027630/" target="_blank"><img class = "icons" src="assets/images/linkedin.png"></a>
-					<a href ="https://twitter.com/jessesternmusic" target="_blank"><img class = "icons" src="assets/images/twitter.png"></a>
-					<a href ="https://stackoverflow.com/users/7561041/sternj20" target="_blank"><img class="icons" src ="assets/images/so-icon.png"></a>
+			<!-- sidebar -->
+			<div class="col-md-3 col-md-offset-1 content">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3>Connect with me
+						</h3>
+					</div>
+					<div class="panel-body">
+						<a href ="https://github.com/sternj20" target="_blank"><img class ="icons" src="assets/images/github.jpg"></a>
+						<a href ="https://www.linkedin.com/in/jesse-stern-07027630/" target="_blank"><img class = "icons" src="assets/images/linkedin.png"></a>
+						<a href ="https://twitter.com/jessesternmusic" target="_blank"><img class = "icons" src="assets/images/twitter.png"></a>
+						<a href ="https://stackoverflow.com/users/7561041/sternj20" target="_blank"><img class="icons" src ="assets/images/so-icon.png"></a>
+					</div>
 				</div>
 			</div>
-		</aside>
-	</div>
+		</div> <!-- container -->
 
-		<footer id="footer">
-			&copy; Copyright 2017 Jesse Stern
-		</footer>
+		<div class = "navbar navbar-default navbar-fixed-bottom">
+			<div class ="container">
+				<p class = "navbar-text">&copy; Copyright 2017 Jesse Stern</p>
+			</div>
+		</div>
+
+		<!-- bootstrap javascript -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	</body>
-	</html>
+	</html

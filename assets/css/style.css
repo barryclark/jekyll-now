@@ -1,25 +1,18 @@
-* {
-	box-sizing: border-box;
-}
-
-body {
+body{
 	background-image: url("../images/seigaiha.png");
 	color: #777777;
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-	line-height:25px;
+	line-height: 25px;
+	margin-bottom:100px;
 }
 
-/* general */
-
-.container {
-  width: 100%;
-  max-width: 960px;
-  margin: 0 auto;
-  clear: both;
+/*general*/
+.content, .panel-default>.panel-heading, .navbar{
+	background:#fff;
 }
-
 h1, h2, h3{
 	color: #4aaaa5;
+	margin-bottom:25px;
 	font-family:'Georgia', Times, Times New Roman, serif;
 	font-weight:bold;
 }
@@ -30,138 +23,47 @@ h2{
 	font-size:30px;	
 }
 h3{
-	font-size:22px;
-}
-hr{
-	margin-top:0;
-	margin-bottom:25px;
-	border:1.5px solid #cccccc;
+	font-size:20px;
 }
 
-/* header */
-
-.header {
-	padding: 45px 0 30px
-}
-#navbar {
-	width:100%;
-	background:white;
-	position:fixed;
-	top:0;
+/*navbar*/
+.navbar-brand, .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand{
+	background: #4aaaa5;
+	color: #fff;
+	font-family: Georgia, Times, "Times New Roman", serif;
+	font-size: 30px;
+	font-weight: 700;
+	padding:45px;
 	border-bottom: 2px solid #cccccc;
 }
-#name {
-  float: left;
-  width: 250px;
-  height: 90px;
-  font-family: Georgia, Times, "Times New Roman", serif;
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 90px;
-  color: #fff;
-  text-align: center;
-  text-decoration: none;
-  background: #4aaaa5;
+.navbar-default .navbar-nav>li{
+	margin-top:35px;
 }
-nav {
-	float:right;
-	margin-top:20px;
+.navbar-default .navbar-nav>li>a{
+	padding: 0 8px;
+	margin-right:10px;
+	border-left: 1px solid #efefef;
 }
-
-nav a {
-  display: inline-block;
-  padding-left: 15px;
-  margin-left: 15px;
-  line-height: 18px;
-  color: #999;
-  text-decoration: none;
-  border-left: 1px solid #efefef;
-}
-
-nav a:first-child {
+.navbar-default.navbar-nav>li>a: first-child {
   border-left: 0 none;
 }
-
-/* sidebar */
-hr.side{
-	margin-top:0;
-	margin-bottom:25px;
-	border:1px solid #f4f5f6;
-}
-
-.icons {
-  width: 50px;
-  height: 50px;
-  margin-top: 8px;
-  margin-right: 5px;
-}
-
-.icons:last-child {
-  margin-right: 0;
-}
-
-#sidebar {
-	
-	width:270px;
-	height:190px;
-	padding:20px;
-	background:white;
-	float:right;
-	text-align:center;
-	padding-bottom: 20px;
- 	margin-bottom: 15px;
-  	line-height: 22px;
-  	border-bottom: 2px solid #eee;
-}
-input {
-	padding:5px;
-	width:100%;
-}
-
-textarea {
-	width:100%;
-}
-
-/* main */
-
-#main-container {
-  padding-top: 130px;
-}
-
-.main-section {
-  float: left;
-  width: 100%;
-  max-width: 650px;
-  padding: 30px;
-  margin: 0 0 40px;
-  background: #fff;
-  border: 1px solid #ddd;
-}
-
-#myimg {
+/*about me*/
+.thumbnail{
 	float:left;
-	margin-right:30px;
+	margin-right:20px;
+	padding:0px;
+}
+.content{
+	position:static;
+	border: 1px solid #ddd
 }
 
-/* contact page */
-
-.inputs {
-	margin-bottom:20px;
-}
-#submit {
-	background:#00aba0;
-	width:100px;
-	height:40px;
-	color:white;
-	font-size:18px;
+/*portfolio*/
+.examples{
+	position:relative;
+	display:inline-block;
 }
 
-/*portfolio page */
-.examples {
-	float:left;
-	margin-left: 30px;
-    margin-right: 20px;
-}
 .exampleNames{
 	position: relative;
     bottom: 64px;
@@ -175,16 +77,34 @@ textarea {
     font-family:'Georgia', Times, Times New Roman, serif;
 }
 
-/* footer */
-footer {
-	clear:both;
-	width:100%;
-	padding: 25px;
+/*sidebar*/
+.panel{
+	border:0px;
+	text-align:center;
+}
+.icons{
+	width:40px;
+	height:40px;
+}
+
+/*footer*/
+.navbar-fixed-bottom{
+	padding: 10px;
 	text-align: center;
 	background: #666666;
 	border-top: 5px solid #4aaaa5;
+
+	
+}
+.navbar-default .navbar-text{
+	font-size:16px;
+	width:100%;
+	text-align:center;
 	color: #D3D3D3;
 }
 
-
-
+@media only screen and (max-width:640px){
+	.navbar-fixed-bottom{
+		position:static; 
+	}
+}

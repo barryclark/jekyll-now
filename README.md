@@ -1,1 +1,1 @@
-https://sternj20.github.io
+https://sternj20.github.io/Bootstrap-Portfolio/
