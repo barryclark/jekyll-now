@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Cloud Native London
+title: Cloud Native London July - Welcome slides
 ---
 
 <object data="http://www.oicheryl.com/resources/Cloud-Native-London-July-with-notes.pdf" type="application/pdf" width="700px" height="700px">
