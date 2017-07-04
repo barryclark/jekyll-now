@@ -1,0 +1,9 @@
+---
+layout: facebook_post
+title: Never forget July 4, 1996
+tags: [facebook, humor]
+keywords: [transgendered bath]
+facebook_post: https://www.facebook.com/JoesGithubBlog/photos/a.1360314327379955.1073741828.1139573672787356/1360314280713293/?type=3
+excerpt: Never forget July 4, 1996
+image: /images/facebook/2017-07-04-never-forget-july-4-1996.png
+---
