@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Michael Hausenblas and Ben Hall at Cloud Native London
+title: Writeup of the Cloud Native London July event
 ---
 
 ![Michael Hausenblas, Cheryl Hung and Ben Hall]({{site.baseurl}}/images/IMG_20170704_185045.jpg)
