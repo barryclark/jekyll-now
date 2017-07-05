@@ -11,7 +11,7 @@ There was great positive feedback about:
 
 * My opening intro on why I founded the group and the four topics I want to hear about ([slides available here]({{site.baseurl}}/Cloud-Native-London-July-2017)).
 * Michael's discussion on the philosophy of Cloud Native.
-* Ben's lightning demos on how Kubernetes, Istio, Prometheus and more.
+* Ben's lightning demos on how to work with Kubernetes, Istio, Prometheus and more.
 * The sliders, pastries and sandwiches. Since I'm choosing the food, I get to pick interesting food!
 
 Thanks to our sponsors, StorageOS, Sainsbury's, the CNCF and Tecknuovo. Looking forward to [the next event in August](https://www.meetup.com/Cloud-Native-London/events/240108222/) already!
