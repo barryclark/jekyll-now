@@ -16,6 +16,6 @@ There was great positive feedback about:
 
 Thanks to our sponsors, StorageOS, Sainsbury's, the CNCF and Tecknuovo, plus all the work that happened in the background to make it happen - reception, food prep and delivery, the AV crew, name tags, serving staff, cleaners.
 
-Looking forward to [the next event in August](https://www.meetup.com/Cloud-Native-London/events/240108222/) already!
+Looking forward to [the next event in August](https://www.meetup.com/Cloud-Native-London/events/240108222/)!
 
 ![Cloud Native London]({{site.baseurl}}/images/Cloud Native London July.png)
