@@ -9,7 +9,7 @@ The first Cloud Native London meetup went smoothly, with myself as host, [Michae
 
 There was great positive feedback about:
 
-* My intro on why I founded the group and the four topics I want to hear about ([slides available here]({{site.baseurl}}/Cloud-Native-London-July-2017)).
+* My intro on [why I founded the group and the four topics I want to hear about]({{site.baseurl}}/Cloud-Native-London-July-2017).
 * "What does Cloud Native mean (to you?)" - Michael's discussion on the philosophy of Cloud Native.
 * "The challenges of becoming cloud-native" - Ben's lightning demos on how to work with Kubernetes, Istio, Prometheus and more.
 * The sliders, pastries and sandwiches. I enjoy interesting food, so it was never going to be just pizza!
