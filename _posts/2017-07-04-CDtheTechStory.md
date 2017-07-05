@@ -1,6 +1,6 @@
 ---
 layout: post
-title: CD Pipelining the HG Tech Story
+title: Let's pipeline the tech story too
 subtitle: 
 category: dev
 tags: [general, culture]
