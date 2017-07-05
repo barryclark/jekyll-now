@@ -34,3 +34,8 @@ So what I took away from the social media training is that we have gotten good a
 ## Showing is (almost) as important as doing
 To quote Bob Fitch, who helped put together the first set of “Haufe Employee Guidelines” and who just left company last week after 20+ years of being a developer, technical project manager and software architect, “We want to belong to the best”. And, in my not-so-humble opinion, to be the best you not only have to be able implement the best tech, you also have to show people that you are implementing it. When people start coming to you for help, that’s when you are the best. So keep blogging and say what you think, because it’s important not just to do it: [You also have to let them know what you did](https://en.wikipedia.org/wiki/If_a_tree_falls_in_a_forest "If a tree falls in the woods...").
 
+ 
+photo title: owen river
+photographer: Dustin Blakely
+source: https://goo.gl/YRTs3C
+license: CC BY 2.0
