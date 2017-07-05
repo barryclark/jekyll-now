@@ -23,12 +23,12 @@ It really helps that our C-Suite is now giving us all the impulse to “go out a
 
 Technology is absolutely part of “the product” and being able to get all the information we need to craft the technical product by getting all the people together in one place will yield better results than just siloing-up into tech-centric tribes. Growing the network as well as growing our knowledge to understand and work with folks, who have diverse skill sets, different domain terminologies, and who solve problems based on their discipline, is critical to finding new, effective ways to work together.
 
-## Chances to experiment with new kinds of networks
+## Experimenting with new kinds of networks
 Very cool is that there are going to be some chances to experiment with this kind networking in the near future. It looks like the flavor of the (next) months going to be [Digital Transformation](https://youtu.be/ystdF6jN7hc "DT - a definition"), and we want to take on this topic by holding events and workshops that foster general understanding of what digital transformation means to Haufe Group. 
 
 We also want to keep publishing open source and open doc projects and showcasing tech at these events, so don’t worry, we’re still going to be doing hard-core tech whether it's microservices, container orchestration, machine learning and data science, or serverless computing. But, we also want to show other people why the technical product is more important than ever for the business and that digital transformation is an integral part of the overall transformation going on at Haufe Group. And, since "digital" is part of the product that we offer to customers, DT also shapes the overall transformation. 
 
-## CD the tech story
+## Tech story CD pipeline
 So what I took away from the social media training is that we have gotten good at telling our story, that we can be still get better and that more people from other places besides Freiburg must add to this story. If you take a look, it’s obvious that [the colleagues in Timisoara really understand all the implications of digital transformation](https://youtu.be/rvUdHwlFhKA "Containerizing our Service Platform! Transforming how we work in teams!!"). Software is being created in Barcelona based on the results of using Rythmix at our customers. And, Berlin, St. Gallen, Hannover and at all the Haufe Group offices for that matter, have lots of good tech stories to share. We can definitely profit from putting more stories out there and making it second nature because the more information we make available the more people can use this information for themselves or [evolve it into something completely new](https://books.google.ch/books?id=RiDNndpF-YIC&pg=PA95&dq=earful+of+jaw&source=gbs_toc_r&cad=3 "Almost anything can happen.").
 
 ## Showing is (almost) as important as doing
