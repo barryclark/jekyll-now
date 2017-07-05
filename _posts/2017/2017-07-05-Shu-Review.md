@@ -34,7 +34,7 @@ Shu is a 2.5D platformer where you run, jump, and glide your way through each le
 
 In the game's 5 lands (each containing 3 levels), Shu will find two of his friends that were scattered by the Storm. Each of these friends will give Shu additional abilities to help him traverse the levels in that world. One friend makes flower platforms bloom. Other lets Shu skim across the water for a short time. Even another allows Shu to smash through certain terrain. At the end of every land, the two friends found are whisked away to whatever safety awaits them, leaving Shu alone again.
 
-![Storm](/images/shu/storm.jpg)The last, and most terrifying, aspect of the game is the Storm. At the end of each land, the Storm will catch up to Shu, grinning its terrifying grin while quickly making its way towards the Shu's little party. These parts of gameplay are frantically placed, where one wrong move or slip up will find Shu gobbled up by the Storm and having to restart at the last checkpoint. You're only safe once you reach a Sanctuary and finish the level.
+![Storm](/images/shu/storm.png)(: .float-right}The last, and most terrifying, aspect of the game is the Storm. At the end of each land, the Storm will catch up to Shu, grinning its terrifying grin while quickly making its way towards the Shu's little party. These parts of gameplay are frantically placed, where one wrong move or slip up will find Shu gobbled up by the Storm and having to restart at the last checkpoint. You're only safe once you reach a Sanctuary and finish the level.
 
 As an added bonus to the game, a free DLC titled Caverns of the Nightjars was released this year that contains 6 more levels. The PS4/Vita also received an exclusive trophy area called The Refuge.
 
