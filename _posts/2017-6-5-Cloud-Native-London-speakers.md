@@ -15,3 +15,5 @@ There was great positive feedback about:
 * The sliders, pastries and sandwiches. Since I'm choosing the food, I get to pick interesting food!
 
 Thanks to our sponsors, StorageOS, Sainsbury's, the CNCF and Tecknuovo. Looking forward to [the next event in August](https://www.meetup.com/Cloud-Native-London/events/240108222/) already!
+
+![Cloud Native London]({{site.baseurl}}/images/Cloud Native London July.png)
