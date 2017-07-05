@@ -14,7 +14,7 @@ There was great positive feedback about:
 * "The challenges of becoming cloud-native" - Ben's lightning demos on how to work with Kubernetes, Istio, Prometheus and more.
 * The sliders, pastries and sandwiches. I enjoy interesting food, so it was never going to be just pizza!
 
-Thanks to our sponsors, StorageOS, Sainsbury's, the CNCF and Tecknuovo, plus all the work that happened in the background to make it happen - reception, food prep and delivery, the AV crew, name tags, serving staff, cleaners.
+Thanks to our sponsors, StorageOS, Sainsbury's, the CNCF and Tecknuovo, plus all the work that happened in the background to make it happen - reception, food prep and delivery, the AV crew, name tags, serving staff and cleaners.
 
 Looking forward to [the next event in August](https://www.meetup.com/Cloud-Native-London/events/240108222/)!
 
