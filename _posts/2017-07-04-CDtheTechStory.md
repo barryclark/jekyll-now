@@ -1,6 +1,6 @@
 ---
 layout: post
-title: CD the Tech Story
+title: CD Pipelining the HG Tech Story
 subtitle: 
 category: dev
 tags: [general, culture]
