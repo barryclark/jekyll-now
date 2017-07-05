@@ -10,9 +10,9 @@ I founded the Cloud Native London meetup, the official Cloud Native Computing Fo
 
 ## More information
 
-I spent five years at Google working on backend teams across Google Maps, living in London and New York.
+I spent five years at Google writing C++ on teams across Google Maps, and living in London and New York.
 
-I hold a Masters in Computer Science from the University of Cambridge, King’s College. 
+I hold a Masters in Computer Science from the University of Cambridge, King’s College. My final year dissertation is available here: [Gesture controlled robotics using the Vicon motion capture system](https://github.com/oicheryl/cambridge/blob/master/documentation/dissertation/cjh84.pdf)
 
 ### Contact me
 
