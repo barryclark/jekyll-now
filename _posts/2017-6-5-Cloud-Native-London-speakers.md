@@ -5,7 +5,7 @@ title: Michael Hausenblas and Ben Hall at Cloud Native London
 
 ![Michael Hausenblas, Cheryl Hung and Ben Hall]({{site.baseurl}}/images/IMG_20170704_185045.jpg)
 
-The first Cloud Native London meetup went smoothly, with myself as host, [Michael Hausenblas](https://twitter.com/mhausenblas) and [Ben Hall](https://twitter.com/Ben_Hall).
+The inaugural Cloud Native London meetup went smoothly, with myself as host and [Michael Hausenblas](https://twitter.com/mhausenblas) and [Ben Hall](https://twitter.com/Ben_Hall) speaking.
 
 There was great positive feedback about:
 
