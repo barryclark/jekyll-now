@@ -2,11 +2,11 @@
 layout: post
 title: Monitoring a docker environment using TICK stack
 subtitle: Get live metrics of your running containers and docker hosts in a rancher environment
-category: howto
-tags: [docker]
-author: markus_wehrle
+category: dev
+tags: [howto, docker]
+author: Markus Wehrle
 author_email: markus.wehrle@haufe-lexware.com
-header-img: "images/bg-post.jpg"
+header-img: "images/new/Exportiert_51.jpg"
 ---
 
 ## Requirements for monitoring

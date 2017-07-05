@@ -2,11 +2,11 @@
 layout: post
 title: Build an Eloqua Action Service and make it Open-Source  
 subtitle:
-category: general
-tags: [cto, open-source, culture]
-author: melania_andrisan
+category: dev
+tags: [general, open-source, culture]
+author: Melania Andrisan
 author_email: melania.andrisan@haufe-lexware.com
-header-img: "images/bg-post.alt.jpg"
+header-img: "images/new/Exportiert_7.jpg"
 ---
 
 [Here is our Open Source][github] project on Github after some digging into Eloqua documentation and building some docker files. Take a couple of minutes and read the entire story. 

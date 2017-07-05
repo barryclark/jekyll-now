@@ -1,0 +1,57 @@
+---
+layout: null
+---
+{% assign first = true %}
+[
+{% for collection in site.collections %}
+    {% for item in collection %}
+        {% for item in site.[item.label] %}
+            {% if item.title != null and item.title != empty %}
+            {% unless first %},{% endunless %}{
+                "title": {{item.title | jsonify}},
+                "content": {{item.content | markdownify | strip_html | jsonify}},
+                "link": "{{ site.baseurl }}{{ item.url }}",
+                "date": "{{ item.date }}",
+                "excerpt": "{{ item.snippet }}",
+                "search_omit": "{{ item.search_omit }}",
+                "author": "{{ item.author }}",
+                "subtitle": "{{ item.subtitle }}"
+            }
+            {% assign first = false %}
+            {% endif %}
+        {% endfor %}
+    {% endfor %}
+{% endfor %}
+
+{% for post in site.posts %}
+    {% if post.title != null and post.title != empty %}
+    {% unless first %},{% endunless %}{
+        "title": {{post.title | jsonify}},
+        "content": {{post.content | markdownify | strip_html | jsonify}},
+        "link": "{{ site.baseurl }}{{ post.url }}",
+        "date": "{{ post.date | date: "%B %-d, %Y" }}",
+        "excerpt": "{{ post.snippet }}",
+        "search_omit": "{{ post.search_omit }}",
+        "author": "{{ post.author }}",
+        "subtitle": "{{ post.subtitle }}"
+    }
+    {% assign first = false %}
+    {% endif %}
+{% endfor %}
+
+{% for page in site.pages %}
+    {% if page.title != null and page.title != empty %}
+    {% unless first %},{% endunless %}{
+        "title": {{page.title | jsonify}},
+        "content": {{page.content | strip_html | jsonify}},
+        "link": "{{ site.baseurl }}{{ page.url | replace: 'index.html', '' }}",
+        "date": {{ page.date | jsonify }},
+        "excerpt": {{ page.description | jsonify }},
+        "search_omit": "{{ page.search_omit }}",
+        "author": "{{ page.author }}",
+        "subtitle": "{{ page.subtitle }}"
+    }
+    {% assign first = false %}
+    {% endif %}
+{% endfor %}
+]

@@ -2,14 +2,16 @@
 layout: post
 title: State of Kubernetes on Azure
 subtitle: Assessment of the Azure Container Service regarding Kubernetes support
-category: general
-tags: [cloud, microservice, devops, docker]
-author: martin_danielsson
+category: dev
+tags: [general, cloud, microservice, devops, docker]
+author: Martin Danielsson
 author_email: martin.danielsson@haufe-lexware.com
-header-img: "images/bg-post-clover.jpg"
+header-img: "images/new/Exportiert_57.jpg"
 ---
 
 **IMPORTANT NOTE**: This blog post was written with the state of Kubernetes Support in Azure as of end of December 2016. If you're reading this significantly later, things will most probably have changed.
+
+**Update June 2016**: There is an update available to this blog post: [State of Kubernetes on Azure - Part II](/state-of-kubernetes-on-azure-part-ii/)
 
 #### Table of Contents
 

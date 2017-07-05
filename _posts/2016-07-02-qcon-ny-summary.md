@@ -2,12 +2,13 @@
 layout: post
 title: Summary of QCon New York, 2016
 subtitle: Impressions, links and summaries of QCon New York
-category: conference
-tags: [qcon, culture, devops, microservices]
-author: holger_reinhardt
+category: dev
+tags: [conference, culture, devops, microservices]
+author: Holger Reinhardt
 author_email: holger.reinhardt@haufe-lexware.com 
-header-img: "images/bg-post.jpg"
+header-img: "images/new/Exportiert_18.jpg"
 ---
+
 Here is a quick summary of my highlights of QCon New York from June 13th to June 15th, 2016. The following are the notes from sessions I attended. To make it easy to pick the most interesting ones, I grouped them according to topics. Slides from other presentations can be downloaded directly from the [QCon Schedule](https://qconnewyork.com/ny2016/schedule/tabular) 
 
 ##### Culture

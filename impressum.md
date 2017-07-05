@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Impressum
+exclude_from_nav: true
+navigation_weight: 5
 permalink: /impressum/
 ---
 

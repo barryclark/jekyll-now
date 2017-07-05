@@ -2,11 +2,11 @@
 layout: post
 title: Introducing wicked.haufe.io
 subtitle: Why we wrote our own Open Source API Management Stack based on Mashape Kong and node.js.
-category: api
-tags: [cto, open-source, api, devops]
-author: martin_danielsson
+category: dev
+tags: [open-source, api, devops, development]
+author: Martin Danielsson
 author_email: martin.danielsson@haufe-lexware.com 
-header-img: "images/bg-post-clover.jpg"
+header-img: "images/new/Exportiert_2.jpg"
 ---
 
 As you will have noticed over the last year or so, we are currently working on making our company composable and flexible, and a main building block of that strategy are APIs as enablers. Tightly connected to APIs are the questions on how to document, promote and publish the APIs using suitable means, such as API Portals.

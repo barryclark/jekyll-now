@@ -1,0 +1,34 @@
+---
+layout: page
+title: Design
+description: "Stories from the Design Office"
+search_omit: true
+navigation_weight: 3
+permalink: /design/
+---
+
+{% for post in site.categories.design %}
+<div class="post-preview">
+    <a href="{{ post.url }}">
+        <h2 class="post-title">            {{ post.title }}
+        </h2>
+        {% if post.subtitle %}
+        <h3 class="post-subtitle">
+            {{ post.subtitle }}
+        </h3>
+        {% endif %}
+    </a>
+    {% if post.author %}
+      {% assign author = site.data.authors[post.author] %}
+      {% if author %}
+        {% assign author_name = author.name %}
+      {% else %}
+        {% assign author_name = post.author %}
+      {% endif %}
+    {% else %}
+      {% assign author_name = site.title %}
+    {% endif %}
+    <p class="post-meta">Posted by {{ author_name }} on {{ post.date | date: "%B %-d, %Y" }}</p>
+</div>
+<hr>
+{% endfor %}

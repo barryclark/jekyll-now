@@ -2,11 +2,11 @@
 layout: post
 title: The Automated Monolith
 subtitle: Build, Deploy and Testing using Docker, Docker Compose, Docker Machine, go.cd and Azure
-category: howto
-tags: [devops]
-author: marco_seifried
+category: dev
+tags: [howto, devops, deveopment]
+author: Marco Seifried
 author_email: marco.seifried@haufe-lexware.com
-header-img: "images/bg-post.alt.jpg"
+header-img: "images/new/Exportiert_42.jpg"
 ---
 
 Let's be honest, systems age and while we try hard not to accumulate technical depth, sometimes you realize it's time for a bigger change. In this case, we looked at a Haufe owned platform providing services like user-, licence- and subscription management for internal and external customers. Written in Java, based on various open source components, somewhat automated, fairly monolithic.  
@@ -47,7 +47,7 @@ Main components we used:
 The flow:
 
 {:.center}
-[![go.cd Flow]( /images/automated-monolith/automated_monolith_flow.jpg)](http://dev.haufe.com/images/automated-monolith/automated_monolith_flow.jpg){:style="margin:auto"}
+[![go.cd Flow]( /images/automated-monolith/automated_monolith_flow.jpg)](/images/automated-monolith/automated_monolith_flow.jpg){:style="margin:auto"}
 
  Let's first have a quick look on how go.cd works:  
 Within go.cd you model your worklows using pipelines. Those pipelines contain stages which you use to run jobs which themselves contain tasks. Stages will run in order and if one fails, the pipeline will stop. Jobs will run in parallel, go.cd is taking care of that. 

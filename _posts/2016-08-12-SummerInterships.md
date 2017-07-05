@@ -1,13 +1,12 @@
-<<<<<<< HEAD
 ---
 layout: post
 title: Summer Internship @Haufe
 subtitle: An experience that greatly helped me to improve myself
-category: general
-tags: [culture, docker]
+category: dev
+tags: [general, culture, docker]
 author: Bogdan Bledea
 author_email: bogdan.b19c@gmail.com
-header-img: "images/summerInternships1.jpg"
+header-img: "images/new/Exportiert_17.jpg"
 ---
 
 I'm Bledea Bogdan and together with Patricia Atieyeh, both second year students at Polytechnic University of Timisoara, we built a feedback box app for Haufe-Lexware.
@@ -53,4 +52,3 @@ The development process was a little bit tricky for us, and, furthermore, it was
 As you can see, this feedback box app has an user login&registration form, but, we restricted the account creation to the company email domain, haufe-lexware.com. After the user logs in, he can post and reply to the other feedbacks.
 
 And when I say it was tricky, I mean, the support on the internet for docker and meteor was so poor. I've had a lot of bugs, the meteor pack for docker it wasn't at least official, and the problems we encountered, was already posted on the internet, with a lot of troubleshooting, but, nothing for our case.
->>>>>>> haufe/master

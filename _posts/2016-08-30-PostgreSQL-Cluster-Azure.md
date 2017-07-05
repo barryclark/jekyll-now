@@ -2,11 +2,11 @@
 layout: post
 title: Building a Highly-Available PostgreSQL Cluster on Azure 
 subtitle:
-category: howto
-tags: [cloud, automation]
-author: esmaeil_sarabadani
+category: dev
+tags: [howto, cloud, automation]
+author: Esmaeil Sarabadani
 author_email: esmaeil.sarabadani@haufe-lexware.com
-header-img: "images/bg-post.jpg"
+header-img: "images/new/Exportiert_46.jpg"
 ---
 
 The possibility to create a PostgreSQL cluster on your Azure subscription is now only few clicks away. The use of PostgreSQL database (a.k.a the most advanced open-source database) has increased in different software development projects in Haufe and setting it up in a cluster on Azure in an easy and convenient way (preferably as-a-Service) was always a wish for developers. 

@@ -3,10 +3,10 @@ layout: post
 title: Set up PostgreSQL on Azure
 subtitle: One script away from a PostgreSQL running into an Ubuntu powered VM running on Azure
 category: Howto
-tags: [cloud]
+tags: [howto, cloud]
 author: Filip Fiat
 author_email: filip.fiat@haufe-lexware.com
-header-img: "images/bg-post.jpg"
+header-img: "images/new/Exportiert_38.jpg"
 ---
 
 These days on can find tons of tutorials and recipes on how to install a PostgreSQL server on Azure. 

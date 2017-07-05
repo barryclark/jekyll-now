@@ -2,11 +2,11 @@
 layout: post
 title: Azure Active Directory and Authentication the Cloud Way
 subtitle:
-category: howto
-tags: [cloud, automation]
-author: esmaeil_sarabadani
+category: dev
+tags: [howto, cloud, automation]
+author: Esmaeil Sarabadani
 author_email: esmaeil.sarabadani@haufe-lexware.com
-header-img: "images/bg-post.jpg"
+header-img: "images/new/Exportiert_13.jpg"
 ---
 
 Authenticating our users securely to our applications at Haufe has always been an important thing for us and these days with more and more cloud-based apps it is essential to be able to provide an authentication method in the cloud as a service. That is exactly where Azure Active Directory comes in to play.

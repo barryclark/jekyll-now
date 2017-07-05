@@ -2,11 +2,11 @@
 layout: post
 title: Docker-Machine vs Firewall
 subtitle: A short diary of our investigation of a docker-machine issue.
-category: howto
-tags: [docker, security]
-author: doru_mihai
+category: dev
+tags: [howto, docker, security]
+author: Doru Mihai
 author_email: doru.mihai@haufe-lexware.com
-header-img: "images/bg-post.jpg"
+header-img: "images/new/Exportiert_51.jpg"
 ---
 
 

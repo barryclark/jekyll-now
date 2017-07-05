@@ -2,11 +2,11 @@
 layout: post
 title: A node.js Primer for us Old School Developers
 subtitle: Things in node.js that caught me on the wrong foot when I saw them the first time
-category: general
-tags: [cto, open-source, culture]
-author: martin_danielsson
+category: dev
+tags: [general, open-source, culture]
+author: Martin Danielsson
 author_email: martin.danielsson@haufe-lexware.com 
-header-img: "images/bg-post.jpg"
+header-img: "images/new/Exportiert_33.jpg"
 ---
 
 For long years, I developed almost exclusively for the Windows platform. We're talking desktop applications, a mix of C, C++ and later on C#, mixed with COM and .NET interoperability. Throw in MFC and WinForms, and you know approximately what I am talking about. Additionally, I have been fiddling with many other frameworks and languages, but the above were until now my area of expertise. 

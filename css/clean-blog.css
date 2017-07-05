@@ -4,14 +4,53 @@
  * Licensed under Apache 2.0 (https://github.com/IronSummitMedia/startbootstrap/blob/gh-pages/LICENSE)
  */
 
+@font-face {
+    font-family: 'HaufeMerriwether';
+    src: url('../fonts/haufemerriweather-webfonts/haufemerriweather.eot'), 
+	 url('../fonts/haufemerriweather-webfonts/haufemerriweather.ttf'),
+	 url('../fonts/haufemerriweather-webfonts/haufemerriweather.woff'), 
+	 url('../fonts/haufemerriweather-webfonts/haufemerriweather.woff2'); 
+}
+@font-face {
+    font-family: 'HaufeMerriwetherLight';
+    src: url('../fonts/haufemerriweather-webfonts/haufemerriweatherlight.eot'),  
+	 url('../fonts/haufemerriweather-webfonts/haufemerriweatherlight.ttf'), 
+	 url('../fonts/haufemerriweather-webfonts/haufemerriweatherlight.woff'), 
+	 url('../fonts/haufemerriweather-webfonts/haufemerriweatherlight.woff2'); 
+}
+@font-face {
+    font-family: 'HaufeMerriwetherBold';
+    src: url('../fonts/haufemerriweather-webfonts/haufemerriweather-bold.eot'),  
+	 url('../fonts/haufemerriweather-webfonts/haufemerriweather-bold.ttf'), 
+	 url('../fonts/haufemerriweather-webfonts/haufemerriweather-bold.woff'), 
+	 url('../fonts/haufemerriweather-webfonts/haufemerriweather-bold.woff2'); 
+}
+@font-face {
+    font-family: 'HaufeMerriwetherSans';
+    src: url('../fonts/haufemerriweather-webfonts/haufemerriweathersans.eot'),  
+	 url('../fonts/haufemerriweather-webfonts/haufemerriweathersans.ttf'), 
+	 url('../fonts/haufemerriweather-webfonts/haufemerriweathersans.woff'), 
+	 url('../fonts/haufemerriweather-webfonts/haufemerriweathersans.woff2');
+}	
+@font-face {
+    font-family: 'HaufeMerriwetherSansLt';
+    src: url('../fonts/haufemerriweather-webfonts/haufemerriweathersanslt.eot'),  
+	 url('../fonts/haufemerriweather-webfonts/haufemerriweathersanslt.ttf'), 
+	 url('../fonts/haufemerriweather-webfonts/haufemerriweathersanslt.woff'), 
+	 url('../fonts/haufemerriweather-webfonts/haufemerriweathersanslt.woff2'); 
+}
 body {
-  font-family: 'Lora', 'Times New Roman', serif;
-  font-size: 20px;
+  font-family: "HaufeMerriweatherLight",Georgia,"Times New Roman",Times,serif;
+  font-size: 18px;
+  line-height: 1.65;
   color: #404040;
 }
 p {
-  line-height: 1.5;
+  line-height: 1.65;
   margin: 30px 0;
+}
+p, li {
+  font-weight: 300;
 }
 p a,
 li a {
@@ -23,15 +62,16 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'HaufeMerriwetherSans';
   font-weight: 800;
 }
 a {
-  color: #404040;
+  /* color: #404040; */
+  color: #33332E;
 }
 a:hover,
 a:focus {
-  color: #0085a1;
+    color: #005DA5;
 }
 a img:hover,
 a img:focus {
@@ -48,14 +88,14 @@ hr.small {
   border-color: white;
 }
 .navbar-custom {
-  background: transparent;
+  background-color: transparent;
   border: none;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 3;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'HaufeMerriwetherSans';
 }
 .navbar-custom .navbar-brand {
   font-weight: 800;
@@ -67,25 +107,21 @@ hr.small {
   font-weight: 800;
   letter-spacing: 1px;
 }
-
 .navbar-default .navbar-toggle {
   border: none;
 }
-
 .navbar-default .navbar-toggle .icon-bar {
     background-color: #fff;
     height: 3px;
 }
-
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
   background: #fff;
   border: none;
 }
-
 @media only screen and (min-width: 768px) {
-  .navbar-custom {
-    background: transparent;
-    border-bottom: 1px solid transparent;
+  .navbar-custom {   
+     background-color: transparent;
+     border-bottom: 1px solid transparent;
   }
   .navbar-custom .navbar-brand {
     color: white;
@@ -93,7 +129,7 @@ hr.small {
   }
   .navbar-custom .navbar-brand:hover,
   .navbar-custom .navbar-brand:focus {
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.8);     
   }
   .navbar-custom .nav li a {
     color: white;
@@ -101,9 +137,9 @@ hr.small {
   }
   .navbar-custom .nav li a:hover,
   .navbar-custom .nav li a:focus {
-    color: rgba(255, 255, 255, 0.8);
-  }
-  
+   /* color: rgba(255, 255, 255, 0.8); */
+   color: #6D86A6;
+  }  
   .navbar-default .navbar-collapse, .navbar-default .navbar-form {
     background: transparent;
   }
@@ -144,7 +180,8 @@ hr.small {
   }
   .navbar-custom.is-fixed .nav li a:hover,
   .navbar-custom.is-fixed .nav li a:focus {
-    color: #0085a1;
+  /* color: #0085a1; */
+   color: #005DA5;	  
   }
   .navbar-custom.is-visible {
     /* if the user changes the scrolling direction, we show the header */
@@ -173,6 +210,7 @@ hr.small {
 .intro-header .post-heading {
   padding: 100px 0 50px;
   color: white;
+  text-shadow: 1px 1px 10px rgba(48, 48, 48, .2);
 }
 @media only screen and (min-width: 768px) {
   .intro-header .site-heading,
@@ -195,7 +233,7 @@ hr.small {
   font-size: 24px;
   line-height: 1.1;
   display: block;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'HaufeMerriwetherSansLt';
   font-weight: 300;
   margin: 10px 0 0;
 }
@@ -220,7 +258,7 @@ hr.small {
 @media only screen and (min-width: 1000px) {
   .intro-header .site-heading h1,
   .intro-header .page-heading h1 {
-    font-size: 80px;
+    font-size: 65px;
   }
 }
 .intro-header .post-heading h1 {
@@ -232,13 +270,13 @@ hr.small {
   display: block;
 }
 .intro-header .post-heading .subheading {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'HaufeMerriwetherSans';
   font-size: 24px;
   margin: 10px 0 30px;
   font-weight: 600;
 }
 .intro-header .post-heading .meta {
-  font-family: 'Lora', 'Times New Roman', serif;
+  font-family: 'HaufeMerriwether';
   font-style: italic;
   font-weight: 300;
   font-size: 20px;
@@ -260,7 +298,7 @@ hr.small {
 .post-preview > a:hover,
 .post-preview > a:focus {
   text-decoration: none;
-  color: #0085a1;
+  color:#005DA5;
 }
 .post-preview > a > .post-title {
   font-size: 30px;
@@ -273,7 +311,8 @@ hr.small {
   margin-bottom: 10px;
 }
 .post-preview > .post-meta {
-  color: #808080;
+ /* color: #808080; */
+  color: #999994;
   font-size: 18px;
   font-style: italic;
   margin-top: 0;
@@ -373,7 +412,7 @@ form .row:first-child .floating-label-form-group {
   border-top: 1px solid #eeeeee;
 }
 .btn {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'HaufeMerriwetherSans';
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 800;
@@ -387,8 +426,10 @@ form .row:first-child .floating-label-form-group {
 }
 .btn-default:hover,
 .btn-default:focus {
-  background-color: #0085a1;
-  border: 1px solid #0085a1;
+  /* background-color: #0085a1; 
+  border: 1px solid #0085a1; */
+  background-color: #005DA5;
+  border: 1px solid #005DA5;
   color: white;
 }
 .pager {
@@ -396,7 +437,7 @@ form .row:first-child .floating-label-form-group {
 }
 .pager li > a,
 .pager li > span {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'HaufeMerriwetherSans';
   text-transform: uppercase;
   text-decoration: none;
   font-size: 14px;
@@ -416,8 +457,8 @@ form .row:first-child .floating-label-form-group {
 .pager li > a:hover,
 .pager li > a:focus {
   color: white;
-  background-color: #0085a1;
-  border: 1px solid #0085a1;
+  background-color: #005DA5;
+  border: 1px solid #005DA5;
 }
 .pager .disabled > a,
 .pager .disabled > a:hover,
@@ -447,4 +488,234 @@ img::-moz-selection {
 }
 body {
   webkit-tap-highlight-color: #0085a1;
+}
+#footerImg {
+    width: 250px;
+    margin: auto;
+    margin-top: 40px;
+    cursor: pointer;
+}
+.footer-links {
+  font-family: 'HaufeMerriwetherSansLt';
+  font-weight: 300;
+  text-align: center;
+  margin: 30px;
+}	
+.table-hover > tbody > tr:hover {
+  background-color: #F7F7F4;
+}
+code {
+    padding: 2px 4px;
+    font-size: 90%;
+    color: #c7254e;
+    background-color: #E9E9E5;
+    border-radius: 4px;
+}
+#imgFocus {
+  cursor: pointer;
+}
+.nav-logo {
+  width: 220px;
+  height: 20px;
+  margin-top: 22px;
+  margin-left: 10px;
+  float: left;
+}
+@media only screen and (max-width: 650px) {
+  .nav-logo {
+     margin: 0px 15px;
+   }
+}
+@media only screen and (max-width: 768px) {
+  .nav-logo {
+     margin: 16px 15px;
+   }
+}
+.logo-negative { 
+  background-image: url("../images/HaufeGroup_Logo_RGB_neg.png");
+  background-size: 220px;
+  background-repeat: no-repeat;
+}
+.logo-positive {
+  background-image: url("../images/HaufeGroup_Logo_RGB_pos.png");
+  background-size: 220px;
+  background-repeat: no-repeat;
+} 
+/*Google Search Bar */
+#searchBar {
+       font-size: 80%;
+       padding: 0.43em 0 0.57em;
+
+       #search {
+         float: right;
+
+         #searchString {
+           width: 283px;
+           border: none;
+           box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2) inset;
+           padding: 0.3em 0.6em;
+           background-color: #f6f5ea;
+           margin-right: 0;
+         }
+
+         #searchButton {
+           paddign: 0.3em 0.6em;
+           background-color: #0B5485;
+           border: 1px solid #f6f5ea;
+           margin-left: 0;
+           color: $white;
+           -webkit-appearance: none;
+           border-radius: 0;
+         }
+
+         #archives {
+           line-height: 2;
+           float: left;
+           color: $black;
+           text-wrap: avoid;
+         }
+       }
+     }
+/* Tag List */
+ul.tag-box li {
+    display: inline-block;
+    list-style: none;
+    list-style-image: none;
+    margin-bottom: 7px;
+}
+ul.tag-box li a {
+    background: #e6e6e6;
+    padding: 4px 8px;
+    border-radius: 3px;
+    color: #F76B48;
+}
+ul.tag-box li span.size {
+    font-weight: 300;
+}
+
+.search-box {
+  font-family: 'HaufeMerriwetherSans';
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  width:60%;
+  padding: 15px 5px;
+  border: 1px solid #ddd;
+}
+
+.search-button {
+  font-family: 'HaufeMerriwetherSans';
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  padding: 15px 30px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 0;
+}
+
+input:hover[type="submit"] {
+  color: white;
+  background-color: #005DA5;
+  border: 1px solid #005DA5;
+}
+
+@media only screen and (min-width: 768px) {
+   .search-box {
+	width:80%;   
+    }
+}
+
+.search-result-counter {
+  font-family: 'HaufeMerriwetherSans';
+  font-size: 14px;
+  font-weight: 300;
+}
+
+/* Scroll Back to top */
+#return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #33332E;
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top:hover {
+    background: #005DA5;
+}
+#return-to-top:hover i {
+    color: #fff;
+    top: 5px;
+}
+
+.infinite-spinner {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  background-color: #333;
+  margin: 60px auto;
+  
+  -webkit-animation: scaleout 1.0s infinite ease-in-out;
+  animation: scaleout 1.0s infinite ease-in-out;
+}
+
+.button-group{
+  margin-bottom: 30px;
+}
+
+a.button {
+  font-family: 'HaufeMerriwetherSans';
+  cursor: pointer;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  padding: 15px 30px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 0;
+  line-height: 4;
+}
+
+a.button.focus,
+a.button.hover {
+  color: white;
+  background-color: #005DA5;
+  border: 1px solid #005DA5;
+}
+
+a.button.active {
+  color: white;
+  background-color: #005DA5;
+  border: 1px solid #005DA5;
 }

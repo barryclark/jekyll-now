@@ -2,11 +2,11 @@
 layout: post
 title: Microservices day wrap up
 subtitle:
-category: conference
-tags: [culture, microservice, api]
-author: scott_speights
+category: dev
+tags: [conference, culture, microservice, api]
+author: Scott Speights
 author_email: scott.speights@haufe-lexware.com
-header-img: "images/bg-post-api.jpg"
+header-img: "images/new/Exportiert_18.jpg"
 ---
 
 ### A start with  microservices

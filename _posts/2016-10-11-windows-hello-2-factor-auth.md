@@ -2,11 +2,11 @@
 layout: post
 title: Two factor authentication with Windows Hello and Google Authenticator 
 subtitle: Exploring new ways to make customer login more secure
-category: howto, product
-tags: [Security, Mobile, Open Source, API]
-author: daniel_wehrle
+category: dev
+tags: [howto, security, mobile, open-source, api]
+author: Daniel Wehrle
 author_email: daniel.wehrle@haufe-lexware.com
-header-img: "images/bg-post.alt.jpg"
+header-img: "images/new/Exportiert_40.jpg"
 ---
 
 Currently all of our Lexware "on-premise" products work, using the well-known user/password login authentication. But, in the last couple of years, new techniques for authentication have become available, and we tested some of these technologies - Windows Hello and Google Athtenticator - to make proposals for alternative authentication and authorization technologies for Lexware products - especially for our "on premise" products.

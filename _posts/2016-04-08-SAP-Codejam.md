@@ -2,12 +2,13 @@
 layout: post
 title: SAP CodeJam on May 12th, 2016
 subtitle: Calling all SAP ABAP Developer in Freiburg area
-category: general
-tags: [culture]
-author: holger_reinhardt
+category: dev
+tags: [general, culture, development]
+author: Holger Reinhardt
 author_email: holger.reinhardt@haufe-lexware.com 
-header-img: "images/bg-post.jpg"
+header-img: "images/new/Exportiert_25.jpg"
 ---
+
 Am Donnerstag, dem 12. Mai 2016, ist es wieder soweit: Wir werden bei uns im Haus eine weitere SAP CodeJam durchführen. 
 Das Thema: ABAP in Eclipse.
  

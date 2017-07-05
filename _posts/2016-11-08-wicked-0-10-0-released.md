@@ -2,11 +2,11 @@
 layout: post
 title: wicked.haufe.io 0.10.0 released
 subtitle: Release Notes and Hints
-category: api
-tags: [api, open-source]
-author: martin_danielsson
+category: dev
+tags: [cloud, api, open-source]
+author: Martin Danielsson
 author_email: martin.danielsson@haufe-lexware.com
-header-img: "images/bg-post-api.jpg"
+header-img: "images/new/Exportiert_2.jpg"
 ---
 
 ### Introduction
