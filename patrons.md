@@ -12,4 +12,5 @@ These awesome people have:
 
 Gonzalo Aguirre Bisi\\
 Thomas Deeny\\
-Jeff Johnston
+Jeff Johnston\\
+Ronald Ramirez
