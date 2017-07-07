@@ -8,7 +8,7 @@ tags:
   - overwatch
   - blizzard
 layout: post
-description: "Doomfist, the much-anticipated villain, is finall coming to Overwatch"
+description: "Doomfist, the much-anticipated villain, is finally coming to Overwatch"
 featured: doomfist.jpg                                                        
 author: robk
 published: true
