@@ -28,7 +28,7 @@ I've also bought $132.80 in supplies (packaging tape, printer ink, mailers, etc)
 
 Plus, of course, the things I sold weren't free. What I've sold cost me $354.55, and I have another $299.67 of unsold inventory.
 
-And, sadly, I've $124.34 in returns. Most were legit (product didn't work, such as printer ink was dried out), but I've had two cases of buyer's remorse.
+And, sadly, I've had $124.34 in returns. Most were legit (product didn't work, such as printer ink was dried out), but I've had two cases of buyer's remorse.
 
 If you add the numbers up, I've about broken even. For tax purposes, since I can't deduct unsold merchandise, I've made about $300.
 
