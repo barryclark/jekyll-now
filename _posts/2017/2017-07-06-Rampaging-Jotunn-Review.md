@@ -14,7 +14,7 @@ author: robk
 published: true
 ---
 
-![The Captain is Dead](/images/jotunn/cover.jpg){: .float-right}
+![Rampaging Jotunn](/images/jotunn/cover.jpg){: .float-right}
 **Designers:**  Matthias Bonnici, David Simpson \\
 **Publisher:** [Lost Cog](https://www.lostcog.com)\\
 **Year:** 2016\\
