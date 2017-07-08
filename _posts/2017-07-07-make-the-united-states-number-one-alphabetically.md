@@ -2,7 +2,7 @@
 layout: post
 title: Make the United States Number One (Alphabetically)
 tags: [humor, politics]
-keywords: [Alphabetically, United States, United States of america, america, us, clickhole, the onion, satire]
+keywords: [alphabetically, united states, united states of america, america, us, clickhole, the onion, satire]
 image: /images/covers/2017-07-07-make-the-united-states-number-one-alphabetically.png
 ---
 
