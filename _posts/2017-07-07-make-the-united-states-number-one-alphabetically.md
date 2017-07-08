@@ -10,7 +10,7 @@ Inspired by the Clickhole/Onion article "[Embarrassing: The U.S. Is Ranked 182nd
 
 ### Finding the List of Countries
 
-The article states that the list of countries is 195 countries. The [US Department of State](https://www.state.gov/misc/list/) lists 203 different countries (204 if you count East Timor and Timor-Leste separately). What's really infuriating about this list is that **it doesn't even contain the United States**.
+The article states that the list of countries is 195 countries. The [US Department of State](https://www.state.gov/misc/list/) lists 203 different countries (204 if you count East Timor and Timor-Leste separately). What's really infuriating about this list is that *it doesn't even contain the United States*.
 
 Next to the source of all knowledge. No, not Google - Wikipedia. Wikipedia lists [193 "member states" of the United Nations](https://en.wikipedia.org/wiki/Member_states_of_the_United_Nations), of which the United States is 185 alphabetically:
 
