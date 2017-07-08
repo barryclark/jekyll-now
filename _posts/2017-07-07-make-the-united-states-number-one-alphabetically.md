@@ -2,7 +2,7 @@
 layout: post
 title: Make the United States Number One (Alphabetically)
 tags: [humor, politics]
-keywords: [facebook post, facebook boost post, boost post, boosted post, merch by amazon, t-shirt, shirt]
+keywords: [Alphabetically, United States, United States of america, america, us, clickhole, the onion, satire]
 image: /images/covers/2017-07-07-make-the-united-states-number-one-alphabetically.png
 ---
 
@@ -37,7 +37,7 @@ position | country
 59 | Ethiopia
 60 | Fiji
 
-However, with the advent of Freedom Fries https://en.wikipedia.org/wiki/Freedom_fries, some people might not be too keen on using the French language to name the country.
+However, with the advent of [Freedom Fries](https://en.wikipedia.org/wiki/Freedom_fries), some people might not be too keen on using the French language to name the country.
 
 ### Repositioning Words
 
