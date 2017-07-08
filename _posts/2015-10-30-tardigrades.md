@@ -14,7 +14,7 @@ In the break room one day, Ophelia and I realized that water bears resemble livi
 Following some white board sketching with Angela and Anna and a few clay models, I decided to 3D print a plastic positive mold, and then use it to make a silicone candy mold. Using openSCAD, I made 10 water bears in the style of a gummy bears, seated in a tray to contain the silicone goo. 
 
 ![Thingiverse preview](/images/waterbearthing.png)
-<br>*[Link](http://www.thingiverse.com/thing:1096026) to model on Thingiverse*
+<br>*[Link](http://www.thingiverse.com/thing:1096026) to model on Thingiverse with walls or [Link](https://www.thingiverse.com/thing:1095977) without walls*
 
 After the MakerBot printed first a too small mold and then a just right sized mold, I mixed up some food grade silicone, and left it to set in the molds overnight.  
 
