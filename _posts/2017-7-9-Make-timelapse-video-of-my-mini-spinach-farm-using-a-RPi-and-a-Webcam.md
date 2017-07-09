@@ -33,6 +33,8 @@ I used a Logitech USB webcam so not much technical knowledge is required. As lon
 
 I have tried several options to take videos and stream them online. I have decided that for now, while waiting for my seeds to germinate, I’ll just leave the RPi there to take 4 photos every hour and make a timelapse out of it.
 
+I followed the guide in [this post](https://github.com/raspberrypilearning/webcam-timelapse-setup/blob/master/worksheet.md) if you want some reference.
+
 #### 0. Disable Desktop GUI to save energy
 For details, you can read [this post](http://ask.xmodulo.com/disable-desktop-gui-raspberry-pi.html)
 
@@ -45,9 +47,6 @@ sudo raspi-config
 Choose `Boot Options` >> `Desktop / CLI` >> `Console Autologin Text console, automatically logged in as ‘pi’ user`
 
 This works for me as I can ssh into the RPi after boot.
-
-
-I followed the guide in [this post](https://github.com/raspberrypilearning/webcam-timelapse-setup/blob/master/worksheet.md).
 
 #### 1. Install fswebcam
 
