@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-title: Make timelapse video of my mini spinach farm using a RPi and a Webcam
+title: Making timelapse video of my mini spinach farm using a RPi and a Webcam
 ---
 
 
