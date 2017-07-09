@@ -4,12 +4,8 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
-
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
+Hi there! My name is Anastasia Mizumskaya. I’m a software engineer and what I most enjoy is developing for iOS and Android (Xamarin). I’m based in Dnepr, Ukraine. I graduated from Oles Honchar Dnipropetrovsk National University in 2017 with a Master of Science in Computer System and Networks.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[ana.mizumskaya@gmail.com](mailto:ana.mizumskaya@gmail.com)
