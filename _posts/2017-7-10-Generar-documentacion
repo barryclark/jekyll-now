@@ -9,3 +9,7 @@ La generación de documentación facilita el desarrollo de los proyectos a lo la
 
 
 Si trabajamos con Atom podemos utilizar dos librerías para automatizar la generación de documentación. Instalamos en el editor el paquete "[Docblockr](https://atom.io/packages/docblockr)", que facilita comentar propiedades y métodos de nuestras clases. Por otro lado necesitamos "[Typedoc](http://typedoc.org/)" para generar la documentación, en formato HTML, a partir de los comentarios incluídos mediante "Docblockr".
+
+{% highlight ts %}
+
+{% endhighlight %}
