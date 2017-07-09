@@ -14,6 +14,7 @@ So:
 * Download the image. Make sure the file extension is `.9.png`, not `.png`.  By naming your image file `name.9.png`, Android will recognize the `9.png` format and use the black guides to scale and fill your bitmaps.
 
 Your image will be look like this:
+
 ![screenshot](/images/Shadow4android/shadow_card.9.png "screenshot")
 
 As you can see, you have guides on each side of your image. The TOP and LEFT guides are for scaling your image (i.e. 9-slice), while the RIGHT and BOTTOM guides define the fill area. The black guide lines are cut-off/removed from your image - they won't show in the app. 
