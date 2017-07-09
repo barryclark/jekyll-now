@@ -1,6 +1,6 @@
 ---
 title: "Connecticon 2017 - Rocky Mountain Dragons"
-date: 2017-07-08 22:30:00 Z
+date: 2017-07-09 17:15:00 Z
 category: toys
 tags:
   - toys
