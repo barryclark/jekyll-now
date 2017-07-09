@@ -19,7 +19,7 @@ Here we go!
 
 End result to begin with
 
-![View of the farm](/assets/20170709-farmview.jpg) ![The almighty Lego Camera Crane](/assets/20170709-legocrane.jpg)
+|![View of the farm](/assets/20170709-farmview.jpg)|![The almighty Lego Camera Crane](/assets/20170709-legocrane.jpg)|
 
 I don’t want to make a mega post so I have written several posts to cover all aspects. This is the technology one which is about how I set up RPi3 to take photos for timelapse. There will be another one on how I made my mini spinach farm. The design for the Lego Camera Crane will not have step-by-step guide until I finish the timelapse and able to unassemble the crane.
 
