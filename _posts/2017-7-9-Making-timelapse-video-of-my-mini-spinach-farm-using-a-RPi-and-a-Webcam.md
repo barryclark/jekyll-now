@@ -80,7 +80,7 @@ fswebcam -r 1280x720 --no-banner /home/pi/camera/$DATE.jpg
 In order to have the bash script executable, we must change the file permision
 
 ```bash
-sudo +x camera.sh
+sudo chmod +x camera.sh
 ```
 
 #### 4. Create a folder for all the photos
