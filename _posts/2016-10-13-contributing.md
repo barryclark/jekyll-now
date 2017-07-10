@@ -37,8 +37,8 @@ Personally, I've spent a lot of time working with metrics recently, we decided u
 We're off to a good start, but it's time to get our hands dirty to get at the information we need. Neither Github nor Docker Hub have native Prometheus support, there also wasn't an option we could find within the community.
 We set out to create some tools for us and others to use, should they find them useful... (yay opensource!) 
 
-* Github Exporter ([Docker Hub](https://hub.docker.com/r/infinityworks/github-exporter/), [GitHub](https://github.com/infinityworksltd/github-exporter))
-* Docker Hub Exporter ([Docker Hub](https://hub.docker.com/r/infinityworks/docker-hub-exporter/), [GitHub](https://github.com/infinityworksltd/docker-hub-exporter))
+* Github Exporter ([Docker Hub](https://hub.docker.com/r/infinityworks/github-exporter/), [GitHub](https://github.com/infinityworks/github-exporter))
+* Docker Hub Exporter ([Docker Hub](https://hub.docker.com/r/infinityworks/docker-hub-exporter/), [GitHub](https://github.com/infinityworks/docker-hub-exporter))
 
 Whilst simple, the above two exporters helps us capture the metrics from the APIs and present them for scraping by the prometheus server. We can use these metrics to measure our contribution back to the community.
 
@@ -71,7 +71,7 @@ Secondly, we have an overview of our DockerHub activity, click [here]({{ site.ba
 
 This is very much a first step in the direction of what we hope can be achieved. We would like to complement the data gathered with richer metrics, from more sources. How many Slack messages did we exchange today? How many cups of coffee did the team last month? The list is endless, but we've made a start. And of course, it's all open-source. We encourage you to get involved and improve upon what's there so far.
 
-The exporters are linked above, the config used to deploy this and the exported Grafana dashboard are available [here](https://github.com/infinityworksltd/infin-eye)
+The exporters are linked above, the config used to deploy this and the exported Grafana dashboard are available [here](https://github.com/infinityworks/infin-eye)
 
 We didn't want to over-complicate this, so kept the hosting as simple as possible. We've put the configuration of our services into a docker-cloud.yml file that can be passed up to docker cloud either through the GUI or via the CLI.
 From there, it deploys onto (in this case Digital Ocean) a number of containers across a small docker swarm cluster. 

@@ -120,5 +120,5 @@ Here we set the title to something abstract, we then range through the alerts in
 
 The above simple changes certainly provide value for us, hopefully they help others looking to customise their alerts too. Good examples of PromQL and alert rules can be hard to come by, they exist but are somewhat hard to find. 
 
-To that end, we've created a repo to help share some of these examples [here](https://github.com/infinityworksltd/Guide_Rancher_Monitoring). 
+To that end, we've created a repo to help share some of these examples [here](https://github.com/infinityworks/Guide_Rancher_Monitoring). 
 It would be super cool if people could add their own handy tips/rules/alerts to the growing list! 
