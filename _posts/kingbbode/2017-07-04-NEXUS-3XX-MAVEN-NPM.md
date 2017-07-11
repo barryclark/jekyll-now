@@ -1,11 +1,11 @@
 ---
-layout:     post
-title:      Nexus 3.X - Maven, NPM 저장소로 이용하기
-author:     kingbbode
-tags:       web ci repository
-subtitle:   Nexus에서 Maven 저장소, NPM 저장소를 구성하고 사용하는 내용을 정리
-category:  posts
-outlink: 0
+layout: post
+title: Nexus 3.X - Maven, NPM 저장소로 이용하기
+subtitle: Nexus에서 Maven 저장소, NPM 저장소를 구성하고 사용하는 내용을 정리
+category: zuminternet
+author: 권용근
+nickname: kingbbode
+tag: [ci, repository, maven, npm]
 ---
 
 **대부분의 Nexus 관련 글이 2.x.x 버전을 기준으로 작성되어 있어 3.x.x 기준으로 간단히 정리를 해보려고 합니다.**
