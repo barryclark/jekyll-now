@@ -22,4 +22,4 @@ The Battles Expanison Pack adds 16 NFC Battle Cards and a Legendary Dragon. It a
 
 The More Beasts Expansion Pack adds a flamingo, chameleon, and angler fish. Each of these new creatures are a bit weirder shape than usual and can be be used to create over 100 new hybrids in the game.
 
-You can get both expansions with a pledge of $49 (retail will be $79.) The Kickstarer is already funded, so get your pledges in now to take advantage of the savings!
+You can get both expansions with a pledge of $49 (retail will be $79.) The Kickstarer is already funded, so [get your pledges in](https://www.kickstarter.com/projects/sensibleobject/beasts-of-balance-new-edition-and-battles-expansio#) now to take advantage of the savings!
