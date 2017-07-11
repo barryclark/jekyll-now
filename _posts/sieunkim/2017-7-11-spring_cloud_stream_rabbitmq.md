@@ -853,7 +853,7 @@ Spring Cloud Stream 1.2.0.RELEASE 를 적용하기 위해서는 스프링 부트
 
 
 
-#### 5.2 [장애대응-1]ShutDownlistener 연동
+#### 5.2 [장애대응-1]ShutDown listener 연동
 
 RabbitMQ 의 장애 또는 강제 커넥션 종료로 인한 셧다운 발생 시 서비스 대응 작업이 필요했습니다. 
 CachingConnectionFactory 소스를 보면 아래 소스처럼 셧다운이 발생하면 로그만 남기도록 되어있습니다.
