@@ -650,7 +650,7 @@ public class listener {
 ```
 
 1.0.3 버전에 대한 상세한 레퍼런스는 아래 링크에서 참고 가능합니다.  
-[http://docs.spring.io/spring-cloud-stream/docs/1.0.3.RELEASE/reference/htmlsingle/index.html](http://docs.spring.io/spring-cloud-stream/docs/1.0.3.RELEASE/reference/htmlsingle/index.html){: target="_blank" }
+[레퍼런스링크](http://docs.spring.io/spring-cloud-stream/docs/1.0.3.RELEASE/reference/htmlsingle/index.html){: target="_blank" }
 
 혹시라도 제가 소스를 잘못 봤거나 했다면 꼭 말씀부탁드리겠습니다ㅠㅠ 제가 잘 몰라서 멍청하게 헤매고 있을 가능성도 있습니다.
 
@@ -870,7 +870,7 @@ public void shutdownCompleted(ShutdownSignalException cause) {
 }
 ```
 
-CachingConnectionFactory 를 생성해주는 RabbitAutoConfiguration 클래스를 확인해보면 아래와 같이 @ConditionalOnMissingBean(ConnectionFactory.class) 로 되어있습니다.
+CachingConnectionFactory 를 생성해주는 RabbitAutoConfiguration 클래스를 확인해보면 아래와 같이 @ConditionalOnMissingBean (ConnectionFactory.class) 로 되어있습니다.
 
 ```java
 org.springframework.boot.autoconfigure.amqp.RabbitAutoConfiguration
