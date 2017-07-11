@@ -423,9 +423,9 @@ connection.addShutdownListener(new ShutdownListener() {
 
 
 
-#### 4.2 Spring Framework RabbitMQ(org.springframework.amqp)
+#### 4.2 Spring Framework RabbitMQ
 
-Spring Cloud Stream 이 나오기 전에, 대부분은 스프링 환경의 플랫폼에서는 해당 라이브러리로 RabbitMQ 연동을 구축하였을 것입니다. 
+Spring Cloud Stream 이 나오기 전에, 대부분은 스프링 환경의 플랫폼에서는 해당 라이브러리(org.springframework.amqp)로 RabbitMQ 연동을 구축하였을 것입니다. 
 실제로 사내 서비스에서도 해당 방법으로 연동하였습니다.
 
 
