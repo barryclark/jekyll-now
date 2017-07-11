@@ -659,7 +659,10 @@ http://docs.spring.io/spring-cloud-stream/docs/1.0.3.RELEASE/reference/htmlsingl
 
 
 자 그래서 저는 1.0.3 버전은 실서비스에 적용하기에는 애매하다 라는 결론을 내렸습니다.
-익스체인지 타입도 지정못하고, 라우팅키도 설정도 제한적이라면 차라리 Spring Cloud Stream 안쓰고 4.2 Spring Framework RabbitMQ(org.springframework.amqp)로 구현하는게 낫겠다는 판단을 내렸습니다.
+익스체인지 타입도 지정못하고, 라우팅키도 설정도 제한적이라면 차라리 Spring Cloud Stream 안쓰고 
+4.2 Spring Framework RabbitMQ(org.springframework.amqp)로 구현하는게 낫겠다는 생각도 했지만 일단 상위 버전을 검토해보기로 했습니다.
+
+참고로 밑에 작성하겠지만 `1.2.0.RELEASE` 버전은 서비스에 적용하기에 괜찮다는 결론을 내렸습니다.
 
 
 #### 4.4 Spring Cloud Stream Binder Rabbit 1.2.0 RELEASE 소스 분석
