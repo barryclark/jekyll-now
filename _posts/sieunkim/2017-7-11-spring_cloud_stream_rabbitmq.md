@@ -650,8 +650,7 @@ public class listener {
 ```
 
 1.0.3 버전에 대한 상세한 레퍼런스는 아래 링크에서 참고 가능합니다.  
-http://docs.spring.io/spring-cloud-stream/docs/1.0.3.RELEASE/reference/htmlsingle/index.html
-
+[http://docs.spring.io/spring-cloud-stream/docs/1.0.3.RELEASE/reference/htmlsingle/index.html](http://docs.spring.io/spring-cloud-stream/docs/1.0.3.RELEASE/reference/htmlsingle/index.html){: target="_blank" }
 
 혹시라도 제가 소스를 잘못 봤거나 했다면 꼭 말씀부탁드리겠습니다ㅠㅠ 제가 잘 몰라서 멍청하게 헤매고 있을 가능성도 있습니다.
 
