@@ -356,9 +356,9 @@ RabbitMQ 에 대해서 간략하게 검토해봤습니다.
 - Spring Cloud Stream RabbitMQ binder 1.2.0
 
 
-#### 4.1 RabbitMQ Java client library(com.rabbitmq.client)
+#### 4.1 RabbitMQ Java client library
 
-
+com.rabbitmq.client 입니다.
 기본적인 연동 프로세스는 ConnectionFactory --> Connection --> Channel 생성의 순서입니다.
 
 - ConnectionFactory : 
