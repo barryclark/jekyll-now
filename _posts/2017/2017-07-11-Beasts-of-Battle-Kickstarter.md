@@ -1,6 +1,6 @@
 ---
 title: "Kickstarter - Beasts of Battle"
-date: 2017-07-10T15:30:00.000Z
+date: 2017-07-11T11:15:00.000Z
 category: kickstarter
 tags:
   - kickstarter
