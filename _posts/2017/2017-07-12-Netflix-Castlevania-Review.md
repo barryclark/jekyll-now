@@ -1,6 +1,6 @@
 ---
 title: "Review - Netflix Original Castlevania (Mostly Spoiler Free)"
-date: 2017-07-11T11:15:00.000Z
+date: 2017-07-12T09:45:00.000Z
 category: review
 tags:
   - review
