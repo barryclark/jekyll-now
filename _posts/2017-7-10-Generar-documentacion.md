@@ -61,4 +61,8 @@ _typedoc --experimentalDecorators --target "es5" --module "commonjs" --ignoreCom
 
 ## Compodoc
 
-A diferencia de Typedoc, que documenta Typescript, [Compodoc](https://github.com/compodoc/compodoc) se ha diseñado para documentar Angular. 
+A diferencia de Typedoc, que documenta Typescript, [Compodoc](https://github.com/compodoc/compodoc) se ha diseñado para documentar Angular.
+
+Lo instalaremos con el comando **npm install -g @compodoc/compodoc**
+
+
