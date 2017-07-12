@@ -2,6 +2,12 @@
 layout: default
 ---
 
+{% assign category = site.my_categories | where: "slug", post.category %}
+{% assign category = category[0] %}
+{% if category %}
+    {% capture category_content %}<a class="label" href="{{ category.url }}">{{ category.name }}</a>{% endcapture %}
+{% endif %}
+
 <article class="post">
   <h1>{{ page.title }}</h1>
 
@@ -12,6 +18,8 @@ layout: default
   <div class="date">
     Written on {{ page.date | date: "%B %e, %Y" }}
   </div>
+  
+  <div id="post-meta">{{ category_content }}</div>
 
   {% include disqus.html %}
 </article>
