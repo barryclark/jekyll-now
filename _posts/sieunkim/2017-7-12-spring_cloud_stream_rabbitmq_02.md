@@ -1,7 +1,7 @@
 ---
 layout: post
-title: SPRING CLOUD STREAM, MQ 도입 사례 - 2.구현
-subtitle: SPRING CLOUD STREAM, MQ 도입 사례 - 2.구현
+title: SPRING CLOUD STREAM, MQ 도입 사례 -2
+subtitle: SPRING CLOUD STREAM, MQ 도입 사례 -2
 author: 김시은
 category: zuminternet
 nickname: sieunkim
@@ -9,10 +9,10 @@ tag: [spring,cloud,rabbitmq,microservices]
 ---
 
 
+지난 번 글에 이어서 실제 연동 과정 입니다.
 
-지난 번 글에 이어서 작성하는 실제 연동 과정 입니다.
 
-전체 글의 목차입니다. 지난번에는 도입배경,관련연구,RabbitMQ 따라잡기 라는 주제로 설명하였습니다.
+전체 글의 목차입니다. 
 
 1. 도입 배경
 2. 관련 연구
@@ -21,8 +21,10 @@ tag: [spring,cloud,rabbitmq,microservices]
 5. 추가 작업
 6. 정리
 
+지난 글에는 도입배경, 관련연구, RabbitMQ에 대해서 설명하였습니다.  
+[SPRING CLOUD STREAM, MQ 도입 사례 - 1.기본개념](https://zumdev.github.io/spring_cloud_stream_rabbitmq_01/)
 
-
+이번 글에서는 Spring Cloud Stream, Rabbit 연동하기 및 추가 작업에 대해서 공유합니다.
 
 
 # 4. RabbitMQ 연동하기
