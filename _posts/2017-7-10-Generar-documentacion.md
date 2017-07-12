@@ -12,7 +12,7 @@ Si trabajamos con **Atom** podemos utilizar dos librerías para automatizar la g
 
 **Dockblockr** lo instalaremos desde la pantalla "Settings" (Ctrl + ,) de **Atom**.
 
-Para utilizar **Typedoc** necesitamos tener instalado [Node.js](https://nodejs.org "Node.js"). A continuación lo podremos instalar mediante el comando **npm install -g typedoc**.
+Para utilizar **Typedoc** necesitamos tener instalado [Node.js](https://nodejs.org "Node.js"). A continuación lo podremos instalar mediante el comando **$ npm install -g typedoc**.
 
 ## Trabajo con Dockblockr
 
@@ -55,14 +55,32 @@ Si el puntero lo colocamos justo encima de la declaración de una variable, el b
 
 ## Generar la documentación con Typedoc
 
-Para generar la documentación tendremos que ejecutar un comando en un terminal, incluyendo el directorio del cual queremos extraer los comentarios del código (src) y el directorio en el cual se va a generar la documentación html (doc).
+Para generar la documentación podemos hacerlo ejecutando un comando en un terminal abierto en el directorio del proyecto. Incluiremos el directorio del cual queremos extraer los comentarios del código (src) y el directorio en el cual se va a generar la documentación html (doc).
 
-_typedoc --experimentalDecorators --target "es5" --module "commonjs" --ignoreCompilerErrors  --out doc/ src/_
+**$ typedoc --experimentalDecorators --target "es5" --module "commonjs" --ignoreCompilerErrors  --out doc/ src/**
+
+También podemos instalarlo localmente con $ **npm install --save-dev typedoc**
 
 ## Compodoc
 
-A diferencia de Typedoc, que documenta Typescript, [Compodoc](https://github.com/compodoc/compodoc) se ha diseñado para documentar Angular.
+A diferencia de **Typedoc**, que documenta Typescript, [Compodoc](https://github.com/compodoc/compodoc) se ha diseñado para documentar Angular.
 
-Lo instalaremos con el comando **npm install -g @compodoc/compodoc**
+Lo más cómodo es instalarlo localmente con el comando **$ npm install --save-dev compodoc**
 
 
+A continuación incluimos las siguientes líneas en los scripts de **package.json**:
+
+_"scripts": {
+    ...
+    "docs": "node_modules/.bin/compodoc -p src/tsconfig.json -d docs",
+    "serve-docs": "node_modules/.bin/compodoc -s -d docs"
+    ...
+  }_
+  
+El primer script generará la documentación en el directorio **docs** al ejecutar **$ npm run docs**
+
+El segundo script servirá la documentación en **localhos:8080** al ejecutar **$ npm run serve-docs**
+
+El resultado es bastante impresionante:
+
+![Compodoc]({{site.baseurl}}/images/compodoc.gif)
