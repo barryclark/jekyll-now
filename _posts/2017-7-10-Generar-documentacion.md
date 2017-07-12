@@ -58,3 +58,7 @@ Si el puntero lo colocamos justo encima de la declaración de una variable, el b
 Para generar la documentación tendremos que ejecutar un comando en un terminal, incluyendo el directorio del cual queremos extraer los comentarios del código (src) y el directorio en el cual se va a generar la documentación html (doc).
 
 _typedoc --experimentalDecorators --target "es5" --module "commonjs" --ignoreCompilerErrors  --out doc/ src/_
+
+## Compodoc
+
+A diferencia de Typedoc, que documenta Typescript, [Compodoc](https://github.com/compodoc/compodoc) se ha diseñado para documentar Angular. 
