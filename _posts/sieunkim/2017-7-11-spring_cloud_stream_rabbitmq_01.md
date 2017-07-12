@@ -348,6 +348,6 @@ RabbitMQ 에 대해서 간략하게 검토해봤습니다.
 #### 정리
 
 여기까지 기본적인 개념 정리 및 검토 진행하였습니다. 
-다음 글에서는 실제로 연동 과정을 정리해보겠습니다. 
+다음 글에서는 실제로 연동 과정을 정리해보겠습니다.   
 [SPRING CLOUD STREAM, MQ 도입 사례 - 2.구현](https://zumdev.github.io/spring_cloud_stream_rabbitmq_02/)
 
