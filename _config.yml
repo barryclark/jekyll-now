@@ -10,7 +10,8 @@ theme: jekyll-theme-minimal
 name: Emeric Hunter 
 
 # Title
-title: Emeric Hunter
+<!-- title: The Geek, the Bat and the...-->
+title : Have You Tried Turning It Off And On Again ?
 
 # Short bio or description (displayed in the header)
 description: DBA and developer on Postgres, MongoDB and MySQL.
