@@ -4,12 +4,13 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+PostgreSQL, MySQL and MongoDB DBA.
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+Working with Loxodata
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+Use link at bottom of page.
+<!-- [email@domain.com](mailto:email@domain.com) -->
