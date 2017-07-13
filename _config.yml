@@ -2,7 +2,9 @@
 # This file contains configuration flags to customize your site
 #
 
-theme: jekyll-theme-dinky
+# THEMES
+# theme: jekyll-theme-dinky
+theme: jekyll-theme-minimal
 
 # Name of your site (displayed in the header)
 name: Emeric Hunter 
