@@ -7,6 +7,9 @@ theme: jekyll-theme-dinky
 # Name of your site (displayed in the header)
 name: Emeric Hunter 
 
+# Title
+title: Emeric Hunter
+
 # Short bio or description (displayed in the header)
 description: DBA and developer on Postgres, MongoDB and MySQL.
 
