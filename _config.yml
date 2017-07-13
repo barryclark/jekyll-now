@@ -3,9 +3,9 @@
 #
 
 # THEMES
-# theme: jekyll-theme-dinky
+theme: jekyll-theme-dinky
 # theme: jekyll-theme-minimal
-theme: jekyll-theme-hyde
+# theme: jekyll-theme-hyde
 
 # Name of your site (displayed in the header)
 name: Emeric Hunter 
