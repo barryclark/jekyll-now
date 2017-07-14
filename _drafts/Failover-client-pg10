@@ -1,1 +1,24 @@
+---
+layout : post
+Title: Test of PostgreSQL's client failover
+Draft: true
+---
 
+
+Today I bring you a test and some measurments of PostgreSQL 10 client replication.
+
+So some time ago i came across this new feature everyone was so excited about. 
+At first I didn't realize the implications. 
+But then I was doing some testing for failover database.
+I request sent by many clients.
+So i started to check out different options.
+
+Stolon was out of the way because of containers.
+So was patroni.
+although both seemed to work fine, none was what I was looking  for.
+Of course pacemaker/corosync was considered but failover to a different site was an issue.
+
+Last option was REPMGR.
+So it took some time to figure things out.
+Eventually, all this good work came to fruition.
+My 4 nodes cluster was working alright, eventhough betwork failures were badly handled.
