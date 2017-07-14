@@ -9,7 +9,7 @@ tags:
   - behaviour interactive
   - starbreeze studios
 layout: post
-description: "Deathstate is a frantic, Rogue-like, bullet-hell, single stick shooter game of Lovecraftian horrors."
+description: "Dead by Daylight is a multiplayer horror game with an even scarier community."
 featured: deadbydaylight.jpg                                                        
 author: robk
 published: true
