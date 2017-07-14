@@ -21,4 +21,7 @@ Of course pacemaker/corosync was considered but failover to a different site was
 Last option was REPMGR.
 So it took some time to figure things out.
 Eventually, all this good work came to fruition.
-My 4 nodes cluster was working alright, eventhough betwork failures were badly handled.
+My 4 nodes cluster was working alright, eventhough network failures were badly handled.
+Well I know this tool is only supposed to work on database  failure but still.
+
+I was strfgking with how to measure failover time when a colleague of mine reminded me of thhis new feature from PostgreSQL libpq. 
