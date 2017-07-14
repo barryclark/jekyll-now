@@ -6,6 +6,7 @@ tags:
   - video games
   - pokemon
   - the pokemon company
+  - news
 layout: post
 description: "Shiny Tapu Koko now available in Pokémon Sun and Pokémon Moon!"
 featured: tapukoko.jpg
