@@ -19,7 +19,7 @@ published: true
 **Developer:**  [Behaviour Interactive](http://www.bhvr.com)	\\
 **Publisher:** [Starbreeze Studios](https://www.starbreeze.com)\\
 **Year:** 2016\\
-**Platform:** [PS4](https://store.playstation.com/#!/cid=UP3509-CUSA08444_00-DEADBYDAYLIGHT00?smcid=pdc:us-en:pdc-games-detail-dead-by-daylight-ps4:leadproductinfo-buy-download:dead-by-daylight:up3509-cusa08444_00-deadbydaylight00:emcid_null), (Xbox One)[https://www.microsoft.com/en-us/store/p/dead-by-daylight-special-edition/c0n22p73qz60] [Steam](http://store.steampowered.com/app/381210/Dead_by_Daylight/)\\
+**Platform:** [PS4](https://store.playstation.com/#!/cid=UP3509-CUSA08444_00-DEADBYDAYLIGHT00?smcid=pdc:us-en:pdc-games-detail-dead-by-daylight-ps4:leadproductinfo-buy-download:dead-by-daylight:up3509-cusa08444_00-deadbydaylight00:emcid_null), [Xbox One](https://www.microsoft.com/en-us/store/p/dead-by-daylight-special-edition/c0n22p73qz60) [Steam](http://store.steampowered.com/app/381210/Dead_by_Daylight/)\\
 **MSRP:** $29.99
 
 <h2>Prelude</h2>
