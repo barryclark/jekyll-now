@@ -8,7 +8,7 @@ author_email: raluvlad@yahoo.com
 header-img: "images/new/Exportiert_27.jpg"
 ---
 
-My name is Raluca Vlad and I am a rising senior at "Grigore Moisil" High School in Timisoara. For the past 4 weeks, I have been doing a summer work experience at Haufe Lexware. Now, after everything was said and done, I have to admit that it was one of the most challenging activities I have ever embarked on.      
+My name is Raluca Vlad and I am a rising senior at "Grigore Moisil" High School in Timisoara. For the past 4 weeks, I have been doing a summer work experience at Haufe Lexware Timisoara. Now, after everything was said and done, I have to admit that it was one of the most challenging activities I have ever embarked on.      
 
 When I first got there, it took me only a few seconds to realize that I would not make much use of my background knowledge of c++ learned in the Computer Science classes at school. Therefore, as I had no idea of any other programming language, I started my 4 weeks by going through a substantial amount of online tutorials.  
 
