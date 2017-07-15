@@ -1,6 +1,6 @@
 ---
 title: "Review - Children of the Zodiarcs"
-date: 2017-07-15 14:00:00 Z
+date: 2017-07-17 10:00:00 Z
 category: review
 tags:
   - review
@@ -12,7 +12,7 @@ layout: post
 description: "Children of the Zodiarcs is an excellent, tactical RPG with deck building and dice crafting mechanics."
 featured: zodiarcs.jpg                                                        
 author: robk
-published: true
+published: false
 ---
 
 ![Deathstate](/images/childrenofthezodiarcs/cover.png){: .float-right}
