@@ -67,7 +67,6 @@ A diferencia de **Typedoc**, que documenta Typescript, [Compodoc](https://github
 
 Lo más cómodo es instalarlo localmente con el comando **$ npm install --save-dev compodoc**
 
-
 A continuación incluimos las siguientes líneas en los scripts de **package.json**:
 
 _"scripts": {
