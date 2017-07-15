@@ -18,7 +18,7 @@ published: true
 **Designers:**  Eduardo Baraf, Steve Finn, Keith Matejka \\
 **Publisher:** [Pencil First Games](http://www.pencilfirstgames.com/herbaceous/)\\
 **Year:** 2017\\
-**MSRP:** [$24.99](https://www.lostcog.com/shop/rampaging-jotunn-1)\\
+**MSRP:** $24.99\\
 **Players:** 1-4\\
 **Play Time:** 15-20 minutes\\
 **Ages:** 8+\\
