@@ -17,7 +17,7 @@ The details are written in these previous post
 
 Here is the gif, enjoy!
 
-![View of the farm in GIF](http://i.imgur.com/hw7FzxI.gifv)
+![View of the farm in GIF](http://i.imgur.com/hw7FzxI.gif)
 
 <!--excerpt-->
 
