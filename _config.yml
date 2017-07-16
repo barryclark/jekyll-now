@@ -9,7 +9,8 @@ name: A L T
 description: I am Alex Le Tran
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
+avatar: /assets/spidey2-avatar.png
+extra-logo: /assets/spidey2-extra.png
 
 #
 # Flags below are optional
@@ -48,6 +49,8 @@ url: http://lbhtran.github.io
 # and NOT your User repository (http://yourusername.github.io)
 # then add in the baseurl here, like this: "/repository-name"
 baseurl: ""
+
+extra-fun: https://youtu.be/DC6gB79GDzc
 
 #
 # !! You don't need to change any of the configuration flags below !!
@@ -88,3 +91,6 @@ exclude:
 theme: jekyll-theme-cayman
 
 excerpt_separator: "<!--excerpt-->"
+
+# specifies how many items should be displayed per page:
+paginate: 5
