@@ -1,3 +1,10 @@
+---
+layout: post
+comments: true
+title: Camera setting and photo taking schedule to get the best result
+---
+
+
 I left the camera turned on to take photos for a full and was so excited to see the results the next evening. The next evening, I came home to … disappointment. Here are some photos I found that night:
 
 |![Bad photo](/assets/20170716-bad1.jpg)|![...and another bad photo](/assets/20170716-bad2.jpg)|
@@ -9,6 +16,8 @@ As you can see, the photo quality was terrible. I kept getting photos with diffe
 DATE=$(date +"%Y-%m-%d_%H%M")
 fswebcam -D 2 -S 20 --set brightness=30% --set contrast=0%  -F 10 -r  640x480 --no-banner /home/pi/camera/$DATE.jpg
 ```
+
+<!--excerpt-->
 
 `fswebcam`: After the camera is called,
 `-D 2`: I set it to delay for 2 seconds, this can be thought of as warming up time.
