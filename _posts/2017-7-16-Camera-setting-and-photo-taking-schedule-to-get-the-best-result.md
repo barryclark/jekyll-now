@@ -20,16 +20,23 @@ fswebcam -D 2 -S 20 --set brightness=30% --set contrast=0%  -F 10 -r  640x480 --
 <!--excerpt-->
 
 `fswebcam`: After the camera is called,
+
 `-D 2`: I set it to delay for 2 seconds, this can be thought of as warming up time.
+
 `-S 20`: then, I skip the next 20 frames, just so the camera is used to the exposure and brightness of the scene
+
 `--set brightness=30%`: my room can be a bit dark at time so I raise the brightness slightly
+
 `--set contrast=0%`: I was testing with other values here but in the end, I decided to keep it as default. I would suggest to play around with Åthis value as it does improve the colours and exposure of the images.
+
 `-F 10`: I then finally take a photo, I choose to take it in 10 frames, which gives some interesting effect with the cars moving outside my window.
 
 `-r  640x480`: I originally set the resolution to 1080x960 but I don’t think the photos need to be that big. 640x480 is also a nice size when it comes to making little gif.
+
 `--no-banner`: I use this option to clear out any banner the camera app automatically overlays on the final images.
 
 Here is the camera settings for reference.
+
 
 | Available Controls | Current Value | Range |
 | -------- | ------- | ----- |
@@ -46,6 +53,7 @@ Here is the camera settings for reference.
 | Pan (Absolute) | 0 (50%) | -201600 - 201600 |
 | Tilt (Absolute) | 0 (50%) | -201600 - 201600 |
 | Zoom, Absolute | 0 | 0 - 10 |
+
 Adjusting resolution from 384x288 to 352x288.
 
 For more details, please read: [Ubuntu manual for fswebcam](http://manpages.ubuntu.com/manpages/xenial/man1/fswebcam.1.html)
