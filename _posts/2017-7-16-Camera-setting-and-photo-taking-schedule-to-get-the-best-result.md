@@ -62,5 +62,9 @@ I tested making the gif from the photos so far. They are pretty great. However, 
 
 ```bash
 sudo crontab -e
+```
+
+Change the line to
+```bash
 */15 5-20 * * * /home/pi/camera.sh 2>&1
 ```
