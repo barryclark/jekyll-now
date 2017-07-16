@@ -12,10 +12,10 @@ layout: post
 description: "Hasbro and Nintendo's Monopoly Gamer streamlines a classic."
 featured: monopolygamerreview.jpg                                                        
 author: robk
-published: false
+published: true
 ---
 
-![Herbaceous](/images/monopolygamer/cover.jpg){: .float-right}
+![Monopoly Gamer](/images/monopolygamer/cover.jpg){: .float-right}
 **Designers:**  N/A \\
 **Publisher:** [Hasbro](https://www.hasbro.com)\\
 **Year:** 2017\\
