@@ -74,7 +74,7 @@ DATE=$(date +"%Y-%m-%d_%H%M")
 fswebcam -D 2 -S 20 --set brightness=30% --set contrast=0%  -F 10 -r  640x480 --no-banner --no-underlay --no-overlay /home/pi/camera/$DATE.jpg
 ```
 
-Note: I have changed the camera setting to improve photo quality, please see [this post]() for more details.
+Note: I have changed the camera setting to improve photo quality, please see [this post](https://lbhtran.github.io/Camera-setting-and-photo-taking-schedule-to-get-the-best-result/) for more details.
 
 `Ctrl+X` to exit, `Y` and `Enter` to save.
 
