@@ -38,7 +38,7 @@ fswebcam -D 2 -S 20 --set brightness=30% --set contrast=0%  -F 10 -r  640x480 --
 Here is the camera settings for reference.
 
 
-| Available Controls | Current Value | Range |
+| **Available Controls** | **Current Value** | **Range** |
 | -------- | ------- | ----- |
 | Brightness | 97 (29%) | 30 - 255 |
 | Contrast | 0 | 0 - 10 |
