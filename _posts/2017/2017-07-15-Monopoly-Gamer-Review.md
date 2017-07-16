@@ -24,7 +24,7 @@ published: true
 **Play Time:** 45-60 minutes\\
 **Ages:** 8+\\
 **Rules Available Online:** No\\
-**BGG:** [Herbaceous](https://boardgamegeek.com/boardgame/230408/monopoly-gamer)
+**BGG:** [Monopoly Gamer](https://boardgamegeek.com/boardgame/230408/monopoly-gamer)
 
 <h2>Prelude</h2>
 
