@@ -71,8 +71,10 @@ Copy the following script into the new file
 
 DATE=$(date +"%Y-%m-%d_%H%M")
 
-fswebcam -r 1280x720 --no-banner /home/pi/camera/$DATE.jpg
+fswebcam -D 2 -S 20 --set brightness=30% --set contrast=0%  -F 10 -r  640x480 --no-banner --no-underlay --no-overlay /home/pi/camera/$DATE.jpg
 ```
+
+Note: I have changed the camera setting to improve photo quality, please see [this post]() for more details.
 
 `Ctrl+X` to exit, `Y` and `Enter` to save.
 
