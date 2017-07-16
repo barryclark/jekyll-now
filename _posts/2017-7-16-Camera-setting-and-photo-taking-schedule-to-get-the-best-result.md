@@ -5,7 +5,7 @@ title: Camera setting and photo taking schedule to get the best result
 ---
 
 
-I left the camera turned on to take photos for a full and was so excited to see the results the next evening. The next evening, I came home to … disappointment. Here are some photos I found that night:
+I left the camera turned on to take photos for a full day and was so excited to see the results the next evening. The next evening, I came home to … disappointment. Here are some photos I found that night:
 
 |![Bad photo](/assets/20170716-bad1.jpg)|![...and another bad photo](/assets/20170716-bad2.jpg)|
 
