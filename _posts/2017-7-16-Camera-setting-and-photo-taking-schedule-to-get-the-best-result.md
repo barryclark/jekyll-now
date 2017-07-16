@@ -27,7 +27,7 @@ fswebcam -D 2 -S 20 --set brightness=30% --set contrast=0%  -F 10 -r  640x480 --
 
 `--set brightness=30%`: my room can be a bit dark at time so I raise the brightness slightly
 
-`--set contrast=0%`: I was testing with other values here but in the end, I decided to keep it as default. I would suggest to play around with Åthis value as it does improve the colours and exposure of the images.
+`--set contrast=0%`: I was testing with other values here but in the end, I decided to keep it as default. I would suggest to play around with this value as it does improve the colours and exposure of the images.
 
 `-F 10`: I then finally take a photo, I choose to take it in 10 frames, which gives some interesting effect with the cars moving outside my window.
 
