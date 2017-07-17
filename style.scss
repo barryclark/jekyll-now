@@ -180,8 +180,8 @@ img {
   margin-right: 0px;
 
   @include mobile {
-    float: none;
-    display: left;
+    float: left;
+    display: block;
     margin: 0 auto;
   }
 
@@ -197,8 +197,8 @@ img {
   margin-right: 15px;
 
   @include mobile {
-    float: none;
-    display: left;
+    float: left;
+    display: block;
     margin: 0 auto;
   }
 
@@ -211,8 +211,8 @@ img {
   float: left;
 
   @include mobile {
-    float: none;
-    display: left;
+    float: left;
+    display: block;
     margin: 0 auto;
   }
 }
