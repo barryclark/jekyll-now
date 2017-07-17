@@ -175,8 +175,8 @@ img {
 
 .site-avatar {
   float: left;
-  // width: auto;
   height: 70px;
+  width: auto;
   margin-right: 0px;
 
   @include mobile {
@@ -192,8 +192,8 @@ img {
 
 .site-extra-fun {
   float: left;
-  // width: auto;
   height: 70px;
+  width: auto;
   margin-right: 15px;
 
   @include mobile {
