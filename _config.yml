@@ -20,8 +20,8 @@ extra-logo: http://lbhtran.github.io/assets/spidey2-extra.png
 footer-links:
   dribbble:
   email:
-  facebook:
-  flickr: lbhtran
+  facebook: KunTran
+  flickr:
   github: lbhtran
   instagram:
   linkedin: alex-le-tran
@@ -38,7 +38,7 @@ footer-links:
 disqus: lbhtran-github-io-now
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-google_analytics:
+google_analytics: UA-102748014-1
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
