@@ -181,12 +181,12 @@ img {
 
   @include mobile {
     float: none;
-    display: block;
+    display: left;
     margin: 0 auto;
   }
 
   img {
-    border-radius: 5px;
+    border-radius: 0px;
   }
 }
 
@@ -198,12 +198,12 @@ img {
 
   @include mobile {
     float: none;
-    display: block;
+    display: left;
     margin: 0 auto;
   }
 
   img {
-    border-radius: 5px;
+    border-radius: 0px;
   }
 }
 
@@ -212,7 +212,7 @@ img {
 
   @include mobile {
     float: none;
-    display: block;
+    display: left;
     margin: 0 auto;
   }
 }
