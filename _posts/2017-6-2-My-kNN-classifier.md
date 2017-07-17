@@ -131,3 +131,4 @@ Now we can run the classifier and evaluate the fit by looking at accuracy score
 
 It gives me 97% accuracy for `k = 5` which sounds about right.
 
+Please see [ml-pipeline.py](https://github.com/lbhtran/python/blob/master/Machine%20Learning/ml-pipeline.py) for the full codes.
