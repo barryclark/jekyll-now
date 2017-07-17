@@ -12,10 +12,10 @@ layout: post
 description: "Children of the Zodiarcs is an excellent, tactical RPG with deck building and dice crafting mechanics."
 featured: zodiarcs.jpg                                                        
 author: robk
-published: false
+published: true
 ---
 
-![Deathstate](/images/childrenofthezodiarcs/cover.png){: .float-right}
+![Children of the Zodiarcs](/images/childrenofthezodiarcs/cover.png){: .float-right}
 **Developer:**  [Cardboard Utopia](http://www.cardboard-utopia.com/children-of-zodiarcs/)	\\
 **Publisher:** [Square Enix](http://na.square-enix.com/us/home)\\
 **Year:** 2017\\
