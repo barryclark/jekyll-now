@@ -1,6 +1,8 @@
 ### Practing Javascript by Building A Quiz App
 
-[Yosemite Quiz App](https://mikehaslam-thinkful-projects.github.io/quiz-app/)
+![_config.yml]({{ site.baseurl }}/images/quizApp.png)
+
+[Yosemite Quiz App live here](https://mikehaslam-thinkful-projects.github.io/quiz-app/)
 
 In this Thinkful project I was given The User experience requirements, and Technical requirements. So I got to put the skills I learned in crafting Semantic HTML and following accessibility best practices.
 
