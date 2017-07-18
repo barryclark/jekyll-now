@@ -1,4 +1,4 @@
-
+#
 # This file contains configuration flags to customize your site
 #
 
@@ -21,6 +21,8 @@ footer-links:
   github: alex-slover
   instagram: alex.has.pix
   twitter: sloverlord
+
+theme: jekyll-theme-slate
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
