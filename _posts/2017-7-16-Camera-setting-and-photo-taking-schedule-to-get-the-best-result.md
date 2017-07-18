@@ -68,3 +68,7 @@ Change the line to
 ```bash
 */15 5-20 * * * /home/pi/camera.sh 2>&1
 ```
+
+The result...
+
+![Good quality one](20170716-good.jpg)

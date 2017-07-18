@@ -86,13 +86,13 @@ def k_closest(self, row, k):
         dist = euc(row, i)
         neighbor_dist.append(dist)  # compute the distance from all neighbors
     ndist = np.array(neighbor_dist) # convert the list of distance into an array
-    knn = ndist.argsort()[:k]  # find the index of the 3 closest values
+    knn = ndist.argsort()[:k]  # find the index of the k closest values
     for j in knn:
         knn_label.append(self.y_train[j])  # categorising
 ```
 
 ### 5. Determine the category based on majority votes
-I was stumbled a bit while looking for the best way to simulating this majority voting system. As I studied a lot of Statistics, a simple way to find the most frequently occur element in the list is to by finding the mode. Numpy has a method for that.
+I was stumbled a bit while looking for the best way to simulating this majority voting system. As I studied a lot of Statistics, a simple way to find the most frequently occur element in the list is by finding the mode. Numpy has a method for that.
 
 ![Screenshot from Scipy docs](/assets/KNN-1.png)
 
@@ -107,7 +107,7 @@ def k_closest(self, row, k):
         dist = euc(row, i)
         neighbor_dist.append(dist)  # compute the distance from all neighbors
     ndist = np.array(neighbor_dist) # convert the list of distance into an array
-    knn = ndist.argsort()[:k]  # find the index of the 3 closest values
+    knn = ndist.argsort()[:k]  # find the index of the k closest values
     for j in knn:
         knn_label.append(self.y_train[j])  # categorising
     pred = stats.mode(knn_label)[0][0]  # finding the most frequently occured values
