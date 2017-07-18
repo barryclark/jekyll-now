@@ -3,9 +3,6 @@ layout: post
 title: What learned by building a Quiz App!
 ---
 
-
-### Practing Javascript by Building A Quiz App
-
 ![_config.yml]({{ site.baseurl }}/images/quizApp.png)
 
 [Yosemite Quiz App live here](https://mikehaslam-thinkful-projects.github.io/quiz-app/)
