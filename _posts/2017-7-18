@@ -1,3 +1,9 @@
+---
+layout: post
+title: What learned from creating a Quiz App!
+---
+
+
 ### Practing Javascript by Building A Quiz App
 
 ![_config.yml]({{ site.baseurl }}/images/quizApp.png)
@@ -23,3 +29,5 @@ Thanks for having a look.
 
 Mike Haslam 
 Student of Web and Mobile Development
+
+
