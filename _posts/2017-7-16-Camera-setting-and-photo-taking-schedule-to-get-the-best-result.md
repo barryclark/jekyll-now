@@ -71,4 +71,4 @@ Change the line to
 
 The result...
 
-![Good quality one](20170716-good.jpg)
+![Good quality one](/assets/20170716-good.jpg)
