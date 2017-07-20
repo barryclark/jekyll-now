@@ -34,9 +34,9 @@ This time you're not vying for the affection of a princess. This time you're fig
 
 <h2>Play</h2>
 
-The basics of Lovecraft Letter are simple. At the start of the game, each player is given a card. On each player's turn, they must draw a card and discard a card, resolving the text on the discarded card. Play continues until all players are knocked out except one.
+![Mi-Go](/images/lovecraftletter/mi-go.png){: .float-right}The basics of Lovecraft Letter are simple. At the start of the game, each player is given a card. On each player's turn, they must draw a card and discard a card, resolving the text on the discarded card. Play continues until all players are knocked out except one.
 
-![Mi-Go](/images/lovecraftletter/mi-go.png){: .float-right}Different cards have different effects. Some knock players out of the game immediately if played. Some protect a player from other players targeting them until their next turn. Some have you compare hands with other players for varying results. It's up to the players to best use the abilities to be the last one standing.
+Different cards have different effects. Some knock players out of the game immediately if played. Some protect a player from other players targeting them until their next turn. Some have you compare hands with other players for varying results. It's up to the players to best use the abilities to be the last one standing.
 
 Some cards, however, also have green text on them. If discarded they go in front of the player to indicate the player has gone insane. The card's normal text is resolved. The real change comes during the player's next turn. Before they draw their card, they must pass a Sanity Check by flipping over as many cards from the deck as they have insanity cards discarded in front of them. If any card with green text turns up, they're knocked out. If not, they play their turn as normal, using green text on cards when available.
 
