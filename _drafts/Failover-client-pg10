@@ -1,7 +1,8 @@
 ---
-layout : post
+layout: post
 Title: Test of PostgreSQL's client failover
 Draft: true
+published: true
 ---
 
 
@@ -22,6 +23,82 @@ Last option was REPMGR.
 So it took some time to figure things out.
 Eventually, all this good work came to fruition.
 My 4 nodes cluster was working alright, eventhough network failures were badly handled.
-Well I know this tool is only supposed to work on database  failure but still.
+Well I know this tool is only supposed to work on database failure but still.
 
-I was strfgking with how to measure failover time when a colleague of mine reminded me of thhis new feature from PostgreSQL libpq. 
+I was struggling with how to measure failover time when a colleague of mine reminded me of this new feature from PostgreSQL libpq.
+
+So here is the link to the setup I used. https://github.com/emerichunter/monitoring_replication
+Every step is explained in the README.
+
+I made this to know how much data could be lost.
+
+** add repmgr.conf content** 
+
+Here I am going to provide you with some measures.
+
+First failover on the standby when Wal FS is filled up.
+
+~~~~
+
+log node 2 (standby failover)
+[2017-07-13 10:29:25] [ERROR] connection to database failed: could not connect to server: Connection refused
+        Is the server running on host "PCYYYPF6" (10.200.222.45) and accepting
+        TCP/IP connections on port 5432?
+
+[2017-07-13 10:29:25] [ERROR] unable to connect to upstream node: could not connect to server: Connection refused
+        Is the server running on host "PCYYYPF6" (10.200.222.45) and accepting
+        TCP/IP connections on port 5432?
+
+[2017-07-13 10:29:25] [ERROR] connection to database failed: could not connect to server: Connection refused
+        Is the server running on host "PCYYYPF6" (10.200.222.45) and accepting
+        TCP/IP connections on port 5432?
+
+[2017-07-13 10:29:25] [WARNING] connection to master has been lost, trying to recover... 15 seconds before failover decision
+[2017-07-13 10:29:30] [WARNING] connection to master has been lost, trying to recover... 10 seconds before failover decision
+[2017-07-13 10:29:35] [WARNING] connection to master has been lost, trying to recover... 5 seconds before failover decision
+[2017-07-13 10:29:40] [ERROR] unable to reconnect to master (timeout 5 seconds)...
+[2017-07-13 10:29:45] [NOTICE] this node is the best candidate to be the new master, promoting...
+[2017-07-13 10:29:46] [NOTICE] Redirecting logging output to '/var/log/repmgr/repmgr-9.6.log'
+[2017-07-13 10:29:46] [ERROR] connection to database failed: could not connect to server: Connection refused
+        Is the server running on host "PCYYYPF6" (10.200.222.45) and accepting
+        TCP/IP connections on port 5432?
+
+[2017-07-13 10:29:46] [ERROR] connection to database failed: could not connect to server: Connection refused
+        Is the server running on host "PCYYYPFE" (10.200.222.99) and accepting
+        TCP/IP connections on port 5432?
+
+[2017-07-13 10:29:46] [NOTICE] promoting standby
+[2017-07-13 10:29:46] [NOTICE] promoting server using '/usr/pgsql-9.6/bin/pg_ctl -D /appli/postgres/test_repmgr/9.6/data promote'
+[2017-07-13 10:29:48] [NOTICE] STANDBY PROMOTE successful
+
+~~~~
+
+
+And then the time measurement of writes failover. (extract) ** faire un tableau **
+
+~~~~
+pk	    time
+
+5876	2017-07-13 10:29:24.221169+02
+5877	2017-07-13 10:29:24.277367+02
+5878	2017-07-13 10:29:24.330156+02
+5879	2017-07-13 10:29:24.38804+02
+5880	2017-07-13 10:29:24.441046+02
+5881	2017-07-13 10:29:24.493518+02
+5882	2017-07-13 10:29:24.545547+02
+5883	2017-07-13 10:29:24.597415+02
+5884	2017-07-13 10:29:24.649334+02
+5885	2017-07-13 10:29:24.701244+02
+5886	2017-07-13 10:29:24.753549+02
+5911	2017-07-13 10:29:46.685232+02
+5912	2017-07-13 10:29:46.832526+02
+5913	2017-07-13 10:29:46.88604+02
+5914	2017-07-13 10:29:46.939793+02
+5915	2017-07-13 10:29:46.997917+02
+5916	2017-07-13 10:29:47.053968+02
+5917	2017-07-13 10:29:47.108371+02
+
+~~~~
+
+
+
