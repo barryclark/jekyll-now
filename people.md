@@ -41,6 +41,12 @@ permalink: /people/
 * Cornell University
 * IACS REU, Summer 2017
 
+## Kathleen Esfahany
+![Kathleen Esfahany](/images/kathleen.jpg){: .profile-photo }
+
+* Ward Melville High School
+* Simons Summer Research Program (2017 summer)
+
 ## Future lab member
 ![Cartoon MRI head](/images/MRI_brain_outline_memming.png){: .profile-photo }
 
