@@ -1,7 +1,7 @@
 ---
 title: "Yonder: The Cloud Catcher Chronicles Launches July 18th"
 date: 2017-06-30 10:00:00 Z
-category: vido games
+category: video games
 tags:
 - video games
 - yonder
