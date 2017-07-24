@@ -1,0 +1,35 @@
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{{ page.title }}</title>
+
+	<link rel="shortcut icon" href="{{ '/styles/images/favicon.jpg' | prepend: site.baseurl }}">
+	<link rel="icon" href="{{ '/styles/images/favicon.jpg' | prepend: site.baseurl }}">
+
+	<link rel="stylesheet" href="{{ '/styles/css/index.css' | prepend: site.baseurl }}">
+	<link rel="stylesheet" href="{{ '/styles/css/fontawesome/css/font-awesome.min.css' | prepend: site.baseurl }}">
+	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl }}">
+	<link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ '/feed.xml' | prepend: site.baseurl }}">
+	
+	<meta name="description" content="{{site.meta_description}}">
+
+	<script src="{{ '/styles/js/jquery.min.js' | prepend: site.baseurl }}"></script>
+	<!--[if lt IE 9]>
+    	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  	<![endif]-->
+  	<script>
+		var _hmt = _hmt || [];
+		(function() {
+		  var hm = document.createElement("script");
+		  hm.src = "//hm.baidu.com/hm.js?94be4b0f9fc5d94cc0d0415ea6761ae9";
+		  var s = document.getElementsByTagName("script")[0]; 
+		  s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
+  	<style type="text/css">
+	  	.docs-content{
+	  		margin-bottom: 10px;
+	  	}
+  	</style>
+</head>

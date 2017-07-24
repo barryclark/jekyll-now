@@ -1,0 +1,14 @@
+{% if site.FB.comments.provider and page.comments != false %}
+
+{% case site.FB.comments.provider %}
+{% when "disqus" %}
+  {% include LessOrMore/comments-providers/disqus %}
+{% when "facebook" %}
+  {% include LessOrMore/comments-providers/facebook %}
+{% when "duoshuo" %}
+  {% include LessOrMore/comments-providers/duoshuo %}
+{% when "custom" %}
+  {% include custom/comments %}
+{% endcase %}
+
+{% endif %}
