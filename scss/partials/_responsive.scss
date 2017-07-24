@@ -1,0 +1,15 @@
+// Responsive
+
+@media only screen and (max-width: 767px) {
+    .intro { 
+	    img{
+	        display: block;
+	        margin-left: auto;
+	        margin-right: auto;
+	    }
+    }
+
+	footer {
+		text-align: center;
+	}
+}

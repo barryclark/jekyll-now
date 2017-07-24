@@ -1,0 +1,147 @@
+/*
+ *  Draco HTML Template by @flamekaizar - http://afnizar.com
+ *  License: Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)
+ */
+
+@import "partials/variables.scss";
+@import "partials/mixins.scss";
+@import "partials/base.scss";
+@import "partials/responsive.scss";
+@import "vendors/typed.scss";
+
+// Navigation
+.main-nav {
+	background: lighten($secondary, 65%);
+	padding-top: 23px;
+	nav {
+		ul li {
+			a {
+				color: lighten($secondary, 35%);
+			}
+			&.active a{
+				color: lighten($primary, 10%);
+			}	
+		}
+	}
+}
+
+.section {
+	&.second{
+		margin-bottom: 90px;
+	}	
+	.container {
+		position: relative;
+		&:after {
+			position: absolute;
+		    content: url(../img/separator.png);
+		    left: 20px;
+		}
+		h1 {
+			text-transform: uppercase;
+			margin-bottom: 30px;
+			position: relative;
+		}
+	}
+}
+
+.intro {
+	padding: 95px 0px 70px 0px;
+	overflow-x: hidden;
+	
+	img {
+		width: 81px;
+		height: 81px;
+		border-radius: 99px;
+	}
+
+	.wrap {
+		margin: 30px 0px;
+	}
+
+	h1 {
+		&:before {
+			position: absolute;
+			left: -220px;
+			top: -150px;
+			font-size: 270px;
+			z-index: -1;
+			color: lighten($secondary, 65%);
+		}
+		span {
+			font-size: 47px;
+		}
+	}
+}
+
+.work {
+	.work-list {
+		margin-left: 0px;
+
+		li {
+			list-style: none;
+			font-size: em(15);
+			color: lighten($primary, 35%);
+			a {
+				padding-bottom: 5px;
+				font-size: em(19);
+				font-weight: 700;
+				text-decoration: none;
+				border-bottom: 1px solid lighten($primary, 50%);
+				&:hover {
+					border-bottom: 1px solid $primary;
+				}
+			}
+		}
+	}
+}
+
+.award {
+	.award-list {
+		margin-left: 0px;
+		li {
+			&:first-child {
+				font-size: em(15);
+				color: lighten($primary, 35%);
+			}
+		}
+	}
+}
+
+.skills {
+	.skill-list {
+		margin-left: 0px;
+		li {
+			&:first-child {
+				font-size: em(15);
+				color: lighten($primary, 35%);
+			}
+		}
+	}
+}
+
+.quote {
+	background: url(../img/bg.jpg);
+	padding: 20px 0px;
+	margin-top: 120px;
+
+	h1 {
+		margin: 100px 0px;
+		padding: 40px 20px;
+		border: 5px solid #fff;
+		color: #fff;
+	}
+} 
+
+footer {
+	padding: 50px 0px 0px 0px;
+	.social {
+		li {
+			display: inline;
+			margin-left: 20px;
+			a {
+				font-size: em(20);
+				color: lighten($primary, 40%)
+			}
+		}
+	}
+}

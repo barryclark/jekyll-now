@@ -1,0 +1,27 @@
+// Base
+
+h1, h2, h3, h4, h5, h6 { 
+	font-family:  $playfair;
+	color: $primary; 
+}
+
+a, p, li { 
+	font-family: $lato; 
+	color: $secondary;
+	font-size: em(16);
+	line-height: em(28);
+}
+
+a {
+	&:hover {
+		text-decoration: none!important;
+		color: $primary!important;
+		@include transition(all, 0.2s, ease-in-out);
+	}
+}
+
+.container {
+    margin: auto;
+    max-width: 662px;
+    padding: 0 20px;
+}
