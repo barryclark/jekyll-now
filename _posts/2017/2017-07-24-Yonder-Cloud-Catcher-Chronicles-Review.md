@@ -41,7 +41,7 @@ Yonder is a beautiful game, filled with lush environments, bright colors, and li
 
 It also has Groffles, one of the cutest in-game animals I've ever seen. Seriously.
 
-![Screens](/images/yonder/screens.jpg)
+![Screens](/images/yonder/screens.png)
 
 One of the most impressive visuals in Yonder is the night sky. Sometimes while you're exploring you'll find constellation stones. Each one you find will cause that constellation to flare up in brilliant blues in the night sky. Find them all and you'll be playing under an amazing glowing sky that makes you wish it's always night.
 
