@@ -20,7 +20,7 @@ published: true
 **Designers:**  Peter C. Hayward \\
 **Publisher:** [Jellybean Games](http://www.jellybean-games.com/ninjitsu/)\\
 **Year:** 2017\\
-**Minimum Pledge:** N/A (yet)\\
+**Minimum Pledge:** [$9](https://www.kickstarter.com/projects/peterchayward/ninjitsu-the-ninja-card-game-for-all-ages)\\
 **Players:** 2-5\\
 **Play Time:** 5-10 minutes\\
 **Ages:** 8+\\
