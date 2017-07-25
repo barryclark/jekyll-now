@@ -1,4 +1,4 @@
-{% for post in site.categories.video-games limit 4 %}
+{% for post in site.categories.video-games limit:4 %}
   <article class="post">
     <div class="eyebrow">{{ post.date | date: "%d %b %Y" }} {% if post.category %} in <a href="/category/#{{ post.category | slugify }}">{{ post.category }}</a> {% endif %}</div>
     {% if post.featured %}
