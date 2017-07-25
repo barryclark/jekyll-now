@@ -35,6 +35,11 @@ permalink: /people/
 
 * Postdoctoral researcher, [Department of Neurobiology and Behavior (NBB)](https://medicine.stonybrookmedicine.edu/neurobiology), Stony Brook University (2016-current)
 
+## Logan Becker
+![Logan Becker](/images/LoganBe2.jpg){: .profile-photo }
+
+* Masters Student, Department of Neurobiology and Behavior, Stony Brook University
+
 ## Isabel Siergiej
 ![Isabel Siergiej](/images/Isabel.jpg){: .profile-photo }
 
