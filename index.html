@@ -2,33 +2,16 @@
 layout: home
 ---
 
-<div id="latestgames">
-  <h3>Latest Tabletop</h3>
-  {% include games_detail.html %}
-</div>
-
-<div id="latestvideogames">
-  <h3>Latest Digital</h3>
-  {% include videogames_detail.html %}
-</div>
-
-<div id="latesttoys">
-  <h3>Latest Toys</h3>
-  {% include toys_detail.html %}
-</div>
-
-<div class="clear"></div>
-
-<!-- <div class="posts clearfix">
+<div class="posts clearfix">
   {% if page.url contains "page" %}
     {% include postminorpage_detail.html %}
   {% else %}
     {% include postminor_detail.html %}
   {% endif %}
-</div> -->
+</div>
 
 <!-- Pagination links -->
-<!-- <br/><br/>
+<br/><br/>
 <div class="pagination" style="text-align:center;">
   {% if paginator.previous_page %}
     <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
@@ -42,7 +25,6 @@ layout: home
     <span class="next ">Next</span>
   {% endif %}
 </div>
--->
 <br/>
 <div id="insta">
   <br/>

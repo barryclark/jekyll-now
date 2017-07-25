@@ -113,7 +113,7 @@ h1 {
 
 #home .post {
   width: 220px;
-  //float: left;
+  float: left;
   vertical-align: top;
   margin: 0 20px 0 0;
   height: 360px;
@@ -452,10 +452,6 @@ footer {
     font-size: 12px;
     margin-right: 50px;
   }
-}
-
-#latestgames, #latestvideogames {
-  float:left;
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
