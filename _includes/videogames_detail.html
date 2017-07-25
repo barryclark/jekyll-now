@@ -1,0 +1,18 @@
+{% for post in site.categories.video-games limit 4 %}
+  <article class="post">
+    <div class="eyebrow">{{ post.date | date: "%d %b %Y" }} {% if post.category %} in <a href="/category/#{{ post.category | slugify }}">{{ post.category }}</a> {% endif %}</div>
+    {% if post.featured %}
+      <a href="{{ site.baseurl }}{{ post.url }}"><img src="/images/featured/{{ post.featured }}"/></a>
+    {% endif %}
+    <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+
+    <div class="entry">
+      {% if post.featured %}
+        <a href="{{ site.baseurl }}{{ post.url }}" class="small-link">Read more</a>
+      {% else %}
+        <p>  {{ post.content | strip_html| truncatewords:20}}</p>
+        <a href="{{ site.baseurl }}{{ post.url }}" class="small-link">Read more</a>
+      {% endif %}
+    </div>
+  </article>
+{% endfor %}
