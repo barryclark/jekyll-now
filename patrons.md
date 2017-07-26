@@ -13,4 +13,5 @@ These awesome people have:
 Gonzalo Aguirre Bisi\\
 Thomas Deeny\\
 Jeff Johnston\\
-Ronald Ramirez
+Ronald Ramirez\\
+Brian Foley
