@@ -20,6 +20,6 @@ Ok, now I have this small application which is able to find all the plugs and de
 
 And in this way, I have my plug info in my DB and frm there I can take it when every I need to, I can make reports or notifications or nice graphs. 
 
-![Architecture Overview](/images/tplink/architecture overview.png)
+![Architecture Overview](/images/tplinkArchitectureOverview.png)
 
 Hope this helps you, till next time! 
