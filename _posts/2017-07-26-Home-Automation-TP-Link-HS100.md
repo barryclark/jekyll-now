@@ -8,9 +8,9 @@ author_email: melania.andrisan@haufe-lexware.com
 header-img: "images/new/Exportiert_18.jpg"
 ---
 
-A couple of weeks ago I got a plug, the TP-Link HS 100, from Holger to play with it and see what data can we use from it and if there is an use case we can integrate it in. 
+A couple of weeks ago I got a plug, the TP-Link HS 100, from [Holger](https://github.com/hlgr360) to play with it and see what data can we use from it and if there is an use case we can integrate it in. 
 
-In case you are wondering what this plug does or how you can make use of it in your home you can have a look at their [website](http://www.tp-link.com/us/products/details/HS100.html). And if you decided to give it a try and masure your energy consumption with it you can configure it like [this](http://www.tp-link.com/us/faq-946.html) using the Kasa app from the Apple AppStore or Google Play 
+In case you are wondering what this plug does or how you can make use of it in your home you can have a look at their [website](http://www.tp-link.com/us/products/details/HS100.html). And if you decided to give it a try and masure your energy consumption with it you can configure it like [this](http://www.tp-link.com/us/faq-946.html) using the Kasa app from the Apple AppStore or Google Play. 
 
 Once you passed the normal user phase and want to take the power in your hands and create your own app being it to start the plug, to stop it or read the consumption elsewhere then their app, then you need to use an API. Unfortunatelly there is no API officially, but unofficialy you can use the one from [George Vassilis](https://blog.georgovassilis.com/2016/05/07/controlling-the-tp-link-hs100-wi-fi-smart-plug/) which you can find on [GITHUB](https://github.com/arhea/tplink-hs100). They even created a [docker container](https://hub.docker.com/r/arhea/tplink-hs100-hub/) to discover the plugs from your home and the docker container has this [API](https://github.com/arhea/tplink-hs100) deployed on it.
 
