@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Home Automation with TP-Link HS 100 plug
-subtitle: TP-Link, Raspberry PI and Amazon Lambda
+subtitle: IoT, Raspberry PI and Amazon Lambda
 category: dev
 tags: [serverless, cloud]
 author: Melania Andrisan
