@@ -13,4 +13,4 @@ RUN gem install jekyll jekyll-sitemap pygments.rb redcarpet
 ADD . /app
 
 # Start server
-CMD ["jekyll","serve"]
+CMD ["jekyll","serve", "--host", "0.0.0.0"]
