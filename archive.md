@@ -29,6 +29,7 @@ title: Archive
                     <a href="{{ post.url }}">
                     {{ post.title }}
                     </a>
+                    <br>{{ post.summary  }}
                 </li>
             {% endfor %}
         </ul>
@@ -49,6 +50,7 @@ title: Archive
                    <a href="{{ post.url }}">
                      {{ post.title }}
                    </a>
+                   <br>{{ post.summary  }}
                  </li>
                {% endif %}
              {% endfor %}

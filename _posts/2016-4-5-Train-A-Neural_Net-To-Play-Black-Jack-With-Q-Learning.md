@@ -5,7 +5,7 @@ tags:
 - Machine Learning
 - Practical
 - Theory
-- Math
+- Reinforcement Learning
 summary: It turns out the traditional "stay at 15" is almost the best strategy.
 ---
 

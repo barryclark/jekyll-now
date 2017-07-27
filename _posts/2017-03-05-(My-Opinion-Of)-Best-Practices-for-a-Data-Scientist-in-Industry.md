@@ -5,7 +5,7 @@ tags:
 - Data
 - Machine Learning
 - Practical
-summary: A nonlinear model and visualization approach great for sparse data.
+summary: Giving unsolicited advice to upcoming Data Scientists.
 ---
 
 Most things you need to know when you start as a data science can be found online these days. Besides containing my own opinions, this post also aims to detail some important points that are either not always spelled out in detail or are glossed over. I also include practical advice to avoid typical mistakes a new data scientist can make. Of course, it's going to be tailored more towards python users (as I am one too), but that doesn't mean there's nothing there for other users.

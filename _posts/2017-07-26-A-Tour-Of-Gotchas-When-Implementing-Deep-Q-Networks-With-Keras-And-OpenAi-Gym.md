@@ -4,6 +4,7 @@ title: A Tour of Gotchas When Implementing Deep Q Networks with Keras and OpenAi
 tags:
 - Machine Learning
 - Reinforcement Learning
+- Practical
 summary: Exploring gotchas associated with coding your own DQN implementation based on Google DeepMind's Nature paper.
 ---
 
