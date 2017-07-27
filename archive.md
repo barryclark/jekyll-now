@@ -6,6 +6,7 @@ title: Archive
 
 <!---
  Code from https://nildeala.fr/2015/02/10/jekyll-pro-tip-awesome-archive-page.html
+ and more stolen from http://chris.house/blog/building-a-simple-archive-page-with-jekyll/
 -->
 <style>
 .catbloc:not(:target) {
@@ -22,18 +23,21 @@ title: Archive
 
 <div class="catbloc" id="allposts">
     <h2>All posts</h2>
-        <ul>
-            {% for post in site.posts %}
-                <li>
-                <time>{{ post.date | date: "%-d %B %Y" }}</time>
-                    <a href="{{ post.url }}">
-                    {{ post.title }}
-                    </a>
-                    <br>{{ post.summary  }}
-                </li>
-            {% endfor %}
-        </ul>
+        <table style="border-spacing: 5px;">
+         {% for post in site.posts %}
+             {% assign currentDate = post.date | date: "%Y" %}
+             {% if currentDate != myDate %}
+                 {% unless forloop.first %}</ul>{% endunless %}
+                 <h1>{{ currentDate }}</h1>
+                 <ul>
+                 {% assign myDate = currentDate %}
+             {% endif %}
+             <li><span>{{ post.date | date: "%B %-d, %Y" }}</span> - <a href="{{ post.url }}"> {{ post.title }}</a></li>
+             {% if forloop.last %}</ul>{% endif %}
+       {% endfor %}
+        </table>
 </div>
+
 
 
 <div>
@@ -46,11 +50,7 @@ title: Archive
              {% for post in posts %}
                {% if post.url %}
                  <li>
-                     <time>{{ post.date | date: "%-d %B %Y" }}</time>
-                   <a href="{{ post.url }}">
-                     {{ post.title }}
-                   </a>
-                   <br>{{ post.summary  }}
+                     <time>{{ post.date | date: "%-d %B %Y" }}</time> - <a href="{{ post.url }}">{{ post.title }}</a>, {{ post.summary }}
                  </li>
                {% endif %}
              {% endfor %}
