@@ -16,7 +16,7 @@ First, a brief look on the differences:
 
 ![Angular VS React](/images/angular-vs-react/AngularVSReact.png)
  
-**Definition**
+### **Definition**
 
 Let’s start with the begining. What is React? And what is Angular?
 
@@ -28,7 +28,7 @@ So **Angular** is a framework with lot of things already built in, like [HttpCli
 
 **React** is a Javascript library, that can be used either to create new applications, either to integrate it with an existing application. React is based on small and reusable components, that manage their own state, then compose them to make complex UIs.  Even if React is not that complex as Angular, with many stuffs built in, there are a lot of libraries that can be added to have routers([react-redux](https://reacttraining.com/react-router/)) and HTTP requests([axios](https://github.com/mzabriskie/axios)), and a lot more others.
 
-**Templating**
+### **Templating**
 
 So first, let’s see how a component looks in React and in Angular, with a Hello World example.
 
@@ -100,7 +100,7 @@ Lifecycle Hooks – both Angular an React components have lifecycle hooks that c
 
 ![Component lifecycle](/images/angular-vs-react/AngularVSReact_component_lifecycle.png)
   
-**Binding**
+### **Binding**
 
 A big difference between React and Angular is that React has unidirectional flow, and Angular is 2 way data binding.  This means that in React all data is going only from parent to children, and the data is send as „props”. In Angular, the data is binded in both ways. 
 
@@ -108,22 +108,29 @@ Take the following example of 2 way data binding from Angular. The input value w
  
 ![Angular databinding](/images/angular-vs-react/Angular_databinding.png)
 
+The same example it will look like this in React:
+
+![React binding](/images/angular-vs-react/React_binding.png)
+
+The input value will take the name value, but in order to keep the name value in sync when the user types, the onChange callback has to be implemented. The callback is triggered when the input value changes and there you can update the name value.
+
 As this 2 way data binding it make it easier to update the application model, it it’s harder to debug the application then in React.
 
-**DOM - Virtual DOM VS Regular DOM**
+
+### **DOM - Virtual DOM VS Regular DOM**
 
 React is using virtual DOM when is updating the application. We can think of Virtual DOM as React’s local and simplified copy of the HTML DOM. When some component receives new props or the internal state of the component change, React checks the differences between the previuos state of the Virtual DOM and the new one, and then updates the real DOM only with the  modified nodes. More about this process called [Reconciliation](https://facebook.github.io/react/docs/reconciliation.html).
 
 Angular update mechanism is using Zones.js which is a library that patch browser APIs with a lot more functionality, so they can trigger change detection in Angular. Mechanisms that support change detection are: browser events (click, mouseover, keyup, etc), setTimeout() and setInterval(), and Ajax requests. Each Angular component has an associated change detector, which is created at application startup time. When the change detection is triggered, for each expression used in the component template, it will compare the current and the previous value. If they are different the DOM is updated. Long story [here](http://blog.angular-university.io/how-does-angular-2-change-detection-really-work/).
 
-**Application logic and state**
+### **Application logic and state**
 
 And where is kept the application logic and state of the application? Because we don’t want to combine the view with the model.
 Well, Angular is providing Services for the application logic. Yet services are fundamental to an Angular application, there is no definition for them. A Service is a class with a specific purpose. Angular does not enforce you to use services for application logic, but does help you to make the services available to components through [dependency injection](https://angular.io/guide/architecture#dependency-injection).
 
 React has no built in implementation for managing the state, but there are multiple implementation for these, the most common are [Flux](https://facebook.github.io/flux/) and [Redux](http://redux.js.org/). Redux evolves the idea from Flux and is a predictable state container for JavaScript apps. The main principle from Redux is that all the application model has a single source of truth, the Redux store which is a Javascript object tree.
 
-Tip: Redux make it easier to implement browser history with the back button. You just set the store state with the previous state, and then the whole application is updated.
+**Tip**: Redux make it easier to implement browser history with the back button. You just set the store state with the previous state, and then the whole application is updated.
 
 Both thechnologies provide tools that you can use to create a starter project:
 -	React: [create-react-app](http://github.com/facebookincubator/create-react-app)
