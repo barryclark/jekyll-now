@@ -19,8 +19,11 @@ First, a brief look on the differences:
 **Definition**
 
 Let’s start with the begining. What is React? And what is Angular?
+
 **React**:  „A Javascript library for building user interfaces” 
+
 **Angular**: „A framework for building client applications in HTML and either JavaScript or a language like TypeScript that compiles to JavaScript.” 
+
 So **Angular** is a framework with lot of things already built in, like [HttpClient](https://angular.io/guide/http#httpclient) to make HTTP requests, [Routing and Navigation](https://angular.io/guide/router#routing--navigation),  [Animations](https://angular.io/guide/animations) and others. It is based on modules which are boxing components and services.
 
 **React** is a Javascript library, that can be used either to create new applications, either to integrate it with an existing application. React is based on small and reusable components, that manage their own state, then compose them to make complex UIs.  Even if React is not that complex as Angular, with many stuffs built in, there are a lot of libraries that can be added to have routers([react-redux](https://reacttraining.com/react-router/)) and HTTP requests([axios](https://github.com/mzabriskie/axios)), and a lot more others.
@@ -70,7 +73,9 @@ hello-world.component.html
 
 
 But how React components work? „All React components must act like pure functions with respect to their props.” Basically a React component receives inputs as props and returns the results with the render() function. It is pretty flexible to write a React component, it can be written as a function or as a class, you can use JSX for the returned component view, or a Javascript object. A React component written as a class has more features, like local state and lifecycle hooks.
+
 React recommends JSX to describe how the UI should look. JSX is a Javascript extension, it looks very simmilar to HTML, but you can embed any Javascript expression by wrapping it in curly braces. More on JSX [here](https://facebook.github.io/react/docs/introducing-jsx.html).
+
 To use the component you just import it in the file where you want to use it, and add it as an HTML tag. React send all the attributes as props to HelloWorld component.
 ```html
 <HelloWorld name="Haufe-Lexware"/>
@@ -98,6 +103,7 @@ Lifecycle Hooks – both Angular an React components have lifecycle hooks that c
 **Binding**
 
 A big difference between React and Angular is that React has unidirectional flow, and Angular is 2 way data binding.  This means that in React all data is going only from parent to children, and the data is send as „props”. In Angular, the data is binded in both ways. 
+
 Take the following example, the input value will take the name value, but if the user types in the input the name property will be updated with the new input value. More on [data binding](https://angular.io/guide/architecture#data-binding) 
  
 ![Angular databinding](/images/angular-vs-react/Angular_databinding.png)
@@ -122,7 +128,9 @@ Tip: Redux make it easier to implement browser history with the back button. You
 Both thechnologies provide tools that you can use to create a starter project:
 -	React: [create-react-app](http://github.com/facebookincubator/create-react-app)
 -	Angular: [Angular CLI](https://cli.angular.io/)
+
 Create-react-app and Angular CLI are preconfigured with Webpack to package your application, and support ES6.
+
 And for both of them you can use special Dev Tools to debug your application from the browser:
 -	React: [React Dev Tools](https://facebook.github.io/react/blog/2015/09/02/new-react-developer-tools.html)
 -	Angular: [Augury](https://augury.angular.io/)
