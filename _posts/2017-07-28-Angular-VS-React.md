@@ -6,7 +6,7 @@ category: dev
 tags: [frontend, development]
 author: Bianca Gauca
 author_email: bianca-vasilica.haufe@haufe-lexware.com 
-header-img: "images/new/Exportiert_18.jpg"
+header-img: "images/angular-vs-react/AngularVSReact-header.png"
 ---
 
 
