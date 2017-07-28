@@ -20,11 +20,13 @@ First, a brief look on the differences:
 
 Let’s start with the begining. What is React? And what is Angular?
 
-**React**:  „A Javascript library for building user interfaces” 
+**React**:  „A Javascript library for building user interfaces” ([React official documentation](https://facebook.github.io/react/))
 
-**Angular**: „A framework for building client applications in HTML and either JavaScript or a language like TypeScript that compiles to JavaScript.” 
+**Angular**: „A framework for building client applications in HTML and either JavaScript or a language like TypeScript that compiles to JavaScript.” ([Angular official documentation](https://angular.io/guide/architecture#architecture-overview))
 
-So **Angular** is a framework with lot of things already built in, like [HttpClient](https://angular.io/guide/http#httpclient) to make HTTP requests, [Routing and Navigation](https://angular.io/guide/router#routing--navigation),  [Animations](https://angular.io/guide/animations) and others. It is based on modules which are boxing components and services.
+So **Angular** is a framework with lot of things already built in, like [HttpClient](https://angular.io/guide/http#httpclient) to make HTTP requests, [Routing and Navigation](https://angular.io/guide/router#routing--navigation),  [Animations](https://angular.io/guide/animations) and others. It is based on modules which are boxing components and services. 
+
+**Tip**: There is no restriction to use Typescript with Angular, you can also use Javascript. But Typescript is the most popular language for Angular, because the most resourses and examples are written with Typescript. For Typescript there is also an [Angular CLI](https://cli.angular.io/) which make it easier to start an Angular application.
 
 **React** is a Javascript library, that can be used either to create new applications, either to integrate it with an existing application. React is based on small and reusable components, that manage their own state, then compose them to make complex UIs.  Even if React is not that complex as Angular, with many stuffs built in, there are a lot of libraries that can be added to have routers([react-redux](https://reacttraining.com/react-router/)) and HTTP requests([axios](https://github.com/mzabriskie/axios)), and a lot more others.
 
