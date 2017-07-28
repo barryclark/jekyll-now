@@ -84,7 +84,7 @@ More info about how to write a React component [here](https://facebook.github.io
 
 **Tip**: In React, all components should start with a capital letter. Like this React can make the difference between a React component and a normal HTML tag.
 
-Angular components are more structured. Ussualy they have an HTML file wich is the view, a TypeScript file for controlling the template and an CSS file for the styling. Basically the TypeScript file has a simple Javascript class, decorated with the @Component decorator. Component decorator receives an object with the configuration for the new component, like: selector (the tag that will be used to add the component), templateUrl (the html template used by the component), stylesUrls (the style that should be used for the component) and providers (this should be a list with services that are used by the component).
+Angular components are more structured. Usually they have an HTML file which is the view, a TypeScript file for controlling the template and an CSS file for the styling. Basically the TypeScript file has a simple Javascript class, decorated with the @Component decorator. Component decorator receives an object with the configuration for the new component, like: selector (the tag that will be used to add the component), templateUrl (the html template used by the component), stylesUrls (the style that should be used for the component) and providers (this should be a list with services that are used by the component).
 The selector is used to render the component:
 
 ```html
@@ -104,7 +104,7 @@ Lifecycle Hooks – both Angular an React components have lifecycle hooks that c
 
 A big difference between React and Angular is that React has unidirectional flow, and Angular is 2 way data binding.  This means that in React all data is going only from parent to children, and the data is send as „props”. In Angular, the data is binded in both ways. 
 
-Take the following example, the input value will take the name value, but if the user types in the input the name property will be updated with the new input value. More on [data binding](https://angular.io/guide/architecture#data-binding) 
+Take the following example of 2 way data binding from Angular. The input value will take the name value, but if the user types in the input, the name property will be updated with the new input value. More on [data binding](https://angular.io/guide/architecture#data-binding).
  
 ![Angular databinding](/images/angular-vs-react/Angular_databinding.png)
 
@@ -114,12 +114,12 @@ As this 2 way data binding it make it easier to update the application model, it
 
 React is using virtual DOM when is updating the application. We can think of Virtual DOM as React’s local and simplified copy of the HTML DOM. When some component receives new props or the internal state of the component change, React checks the differences between the previuos state of the Virtual DOM and the new one, and then updates the real DOM only with the  modified nodes. More about this process called [Reconciliation](https://facebook.github.io/react/docs/reconciliation.html).
 
-Angular update mechanism is using Zones.js which is a library that patch browser APIs with a lot more functionality, so they can trigger change detection in Angular. Mechansims that support change detection are: browser events (click, mouseover, keyup, etc), setTimeout() and setInterval(), and Ajax requests. Each Angular component has an associated change detector, which is created at application startup time. When the change detection is triggered, for each expression used in the component template, it will compare the current and the previous value. If they are different the DOM is updated. Long story [here](http://blog.angular-university.io/how-does-angular-2-change-detection-really-work/)
+Angular update mechanism is using Zones.js which is a library that patch browser APIs with a lot more functionality, so they can trigger change detection in Angular. Mechanisms that support change detection are: browser events (click, mouseover, keyup, etc), setTimeout() and setInterval(), and Ajax requests. Each Angular component has an associated change detector, which is created at application startup time. When the change detection is triggered, for each expression used in the component template, it will compare the current and the previous value. If they are different the DOM is updated. Long story [here](http://blog.angular-university.io/how-does-angular-2-change-detection-really-work/).
 
 **Application logic and state**
 
 And where is kept the application logic and state of the application? Because we don’t want to combine the view with the model.
-Well, Angular is providing Services for the application logic. Yet services are fundamental to an Angular application, there is no definition for them. A Service is a class with a specific purpose. Angular does not enforce you to use services for application logic, but does help you to make the services available to components through [dependency injection](https://angular.io/guide/architecture#dependency-injection)
+Well, Angular is providing Services for the application logic. Yet services are fundamental to an Angular application, there is no definition for them. A Service is a class with a specific purpose. Angular does not enforce you to use services for application logic, but does help you to make the services available to components through [dependency injection](https://angular.io/guide/architecture#dependency-injection).
 
 React has no built in implementation for managing the state, but there are multiple implementation for these, the most common are [Flux](https://facebook.github.io/flux/) and [Redux](http://redux.js.org/). Redux evolves the idea from Flux and is a predictable state container for JavaScript apps. The main principle from Redux is that all the application model has a single source of truth, the Redux store which is a Javascript object tree.
 
