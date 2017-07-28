@@ -5,7 +5,7 @@ subtitle: Tips and Tricks
 category: dev
 tags: [frontend, development]
 author: Bianca Gauca
-author_email: bianca-vasilica.haufe@haufe-lexware.com 
+author_email: bianca-vasilica.gauca@haufe-lexware.com
 header-img: "images/angular-vs-react/AngularVSReact-header.png"
 ---
 
