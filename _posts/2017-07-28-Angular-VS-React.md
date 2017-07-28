@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Angular VS React
-subtitle: Tips and Tricks
+title: Angular vs. React - A comparison
+subtitle: Similarities and differences between React and Angular 
 category: dev
 tags: [frontend, development]
 author: Bianca Gauca
