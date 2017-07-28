@@ -114,7 +114,7 @@ The same example it will look like this in React:
 
 The input value will take the name value, but in order to keep the name value in sync when the user types, the onChange callback has to be implemented. The callback is triggered when the input value changes and there you can update the name value.
 
-As this 2 way data binding it make it easier to update the application model, it it’s harder to debug the application then in React.
+As this 2 way data binding it makes it easier to update the application model, it it’s harder to debug the application then in React.
 
 
 ### **DOM - Virtual DOM VS Regular DOM**
