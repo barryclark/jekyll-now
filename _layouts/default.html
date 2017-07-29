@@ -16,35 +16,38 @@
   </head>
 
   <body>
-    <div class="wrapper-masthead">
-      <div class="container">
-        <header class="masthead clearfix">
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
-
-          <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-            <p class="site-description">{{ site.description }}</p>
+    <header>
+      <div class="container--fluid masthead">
+        <div class="row row--flexCols row--alignCenter">
+          <div class="col sm-col site-info">
+            <div>
+              <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
+              <p class="site-description">{{ site.description }}</p>
+            </div>
           </div>
+          <div class="col sm-col site-nav">
+            <nav>
+              <a href="{{ site.baseurl }}/">Blog</a>
+              <a href="{{ site.baseurl }}/about">About</a>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
 
-          <nav>
-            <a href="{{ site.baseurl }}/">Blog</a>
-            <a href="{{ site.baseurl }}/about">About</a>
-          </nav>
-        </header>
+    <div class="container" role="main">
+      <div class="row content">
+        {{ content }}
       </div>
     </div>
 
-    <div id="main" role="main" class="container">
-      {{ content }}
-    </div>
-
-    <div class="wrapper-footer">
-      <div class="container">
-        <footer class="footer">
+    <footer class="footer">
+      <div class="container--fluid">
+        <div class="row row--center">
           {% include svg-icons.html %}
-        </footer>
+        </div>
       </div>
-    </div>
+    </footer>
 
     {% include analytics.html %}
   </body>

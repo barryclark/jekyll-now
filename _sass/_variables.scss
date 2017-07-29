@@ -17,11 +17,48 @@ $white: #fff;
 // Font stacks
 $helvetica: Helvetica, Arial, sans-serif;
 $helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$titilliumWeb: "Titillium Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $georgia: Georgia, serif;
 
+// screen sizes
+$sm-width: 48rem;
+$md-width: 62rem;
+$lg-width: 75rem;
+
 // Mobile breakpoints
+@mixin sm-screen {
+  @media only screen and (min-width: $sm-width) {
+    @content;
+  }
+}
+
+@mixin md-screen {
+  @media only screen and (min-width: $md-width) {
+    @content;
+  }
+}
+
+@mixin lg-screen {
+  @media only screen and (min-width: $lg-width) {
+    @content;
+  }
+}
+
 @mixin mobile {
-  @media screen and (max-width: 640px) {
+  @media screen and (max-width: $sm-width) {
+    @content;
+  }
+}
+
+// BEM
+@mixin element($element) {
+  &__#{$element} {
+    @content;
+  }
+}
+
+@mixin modifier($modifier) {
+  &--#{$modifier} {
     @content;
   }
 }
