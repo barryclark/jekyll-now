@@ -2,7 +2,7 @@
 
 .row {
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   margin: 0;
   padding: 0;
 }
@@ -69,14 +69,15 @@
     flex: 0 0 auto;
   }
 
-  &--1of2 { width: 50%!important; }
-  &--1of3 { width: 33.33333%!important; }
-  &--1of4 { width: 25%!important; }
-  &--2of3 { width: 66.6667%!important; }
+  &--1of2 { width: 50% }
+  &--1of3 { width: 33.33333% }
+  &--1of4 { width: 25% }
+  &--2of3 { width: 66.6667% }
 }
 
 @include sm-screen {
   .sm-col {
+    flex: 0 0 auto;
 
     &--1of2,
     &--1of3,
@@ -85,15 +86,17 @@
       flex: 0 0 auto;
     }
 
-    &--1of2 { width: 50%!important; }
-    &--1of3 { width: 33.33333%!important; }
-    &--1of4 { width: 25%!important; }
-    &--2of3 { width: 66.6667%!important; }
+    &--1of2 { width: 50% }
+    &--1of3 { width: 33.33333% }
+    &--1of4 { width: 25% }
+    &--2of3 { width: 66.6667% }
   }
 }
 
 @include md-screen {
   .md-col {
+    flex: 0 0 auto;
+
     &--1of2,
     &--1of3,
     &--1of4,
@@ -101,15 +104,17 @@
       flex: 0 0 auto;
     }
 
-    &--1of2 { width: 50%!important; }
-    &--1of3 { width: 33.33333%!important; }
-    &--1of4 { width: 25%!important; }
-    &--2of3 { width: 66.6667%!important; }
+    &--1of2 { width: 50% }
+    &--1of3 { width: 33.33333% }
+    &--1of4 { width: 25% }
+    &--2of3 { width: 66.6667% }
   }
 }
 
 @include lg-screen {
   .lg-col {
+    flex: 0 0 auto;
+
     &--1of2,
     &--1of3,
     &--1of4,
@@ -117,9 +122,9 @@
       flex: 0 0 auto;
     }
 
-    &--1of2 { width: 50%!important; }
-    &--1of3 { width: 33.33333%!important; }
-    &--1of4 { width: 25%!important; }
-    &--2of3 { width: 66.6667%!important; }
+    &--1of2 { width: 50% }
+    &--1of3 { width: 33.33333% }
+    &--1of4 { width: 25% }
+    &--2of3 { width: 66.6667% }
   }
 }
