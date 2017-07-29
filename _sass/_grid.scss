@@ -1,0 +1,125 @@
+// Based on https://github.com/philipwalton/solved-by-flexbox
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.row--flexCols {
+  > .col { display: flex; }
+}
+
+.row {
+  &--start { justify-content: flex-start }
+  &--end { justify-content: flex-end }
+  &--center { justify-content: center }
+  &--between { justify-content: space-between }
+  &--around { justify-content: space-around }
+  &--alignTop { align-items: flex-start }
+  &--alignBottom { align-items: flex-end }
+  &--alignCenter { align-items: center }
+
+  &--gutters {
+    margin: -1rem 0 1rem -1rem;
+    > .col { padding: 1rem 0 0 1rem }
+  }
+}
+
+@include sm-screen {
+  .sm-row {
+    &--gutters {
+      margin: -1rem 0 1rem -1rem;
+      > .col { padding: 1rem 0 0 1rem; }
+    }
+  }
+}
+
+@include md-screen {
+  .md-row {
+    &--gutters {
+      margin: -1rem 0 1rem -1rem;
+      > .col { padding: 1rem 0 0 1rem; }
+    }
+  }
+}
+
+@include lg-screen {
+  .lg-row {
+    &--gutters {
+      margin: -1rem 0 1rem -1rem;
+      > .col { padding: 1rem 0 0 1rem; }
+    }
+  }
+}
+
+.col {
+  flex: 1 1 100%;
+
+  &--top { align-self: flex-start; }
+  &--bottom { align-self: flex-end; }
+  &--center { align-self: center; }
+  &--autoSize { flex: none; }
+
+  &--1of2,
+  &--1of3,
+  &--1of4,
+  &--2of3 {
+    flex: 0 0 auto;
+  }
+
+  &--1of2 { width: 50%!important; }
+  &--1of3 { width: 33.33333%!important; }
+  &--1of4 { width: 25%!important; }
+  &--2of3 { width: 66.6667%!important; }
+}
+
+@include sm-screen {
+  .sm-col {
+
+    &--1of2,
+    &--1of3,
+    &--1of4,
+    &--2of3 {
+      flex: 0 0 auto;
+    }
+
+    &--1of2 { width: 50%!important; }
+    &--1of3 { width: 33.33333%!important; }
+    &--1of4 { width: 25%!important; }
+    &--2of3 { width: 66.6667%!important; }
+  }
+}
+
+@include md-screen {
+  .md-col {
+    &--1of2,
+    &--1of3,
+    &--1of4,
+    &--2of3 {
+      flex: 0 0 auto;
+    }
+
+    &--1of2 { width: 50%!important; }
+    &--1of3 { width: 33.33333%!important; }
+    &--1of4 { width: 25%!important; }
+    &--2of3 { width: 66.6667%!important; }
+  }
+}
+
+@include lg-screen {
+  .lg-col {
+    &--1of2,
+    &--1of3,
+    &--1of4,
+    &--2of3 {
+      flex: 0 0 auto;
+    }
+
+    &--1of2 { width: 50%!important; }
+    &--1of3 { width: 33.33333%!important; }
+    &--1of4 { width: 25%!important; }
+    &--2of3 { width: 66.6667%!important; }
+  }
+}
