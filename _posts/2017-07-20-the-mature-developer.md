@@ -44,6 +44,6 @@ _From, Ego is the Enemy, Ryan Holiday_
 
 Development is challenging, often fragmented and problematic, but is a unique job in that we face problems *every day* to which we don’t yet know the answer, and often need to learn something new just to approach the problem. We should remember though that as long as we’re coming up against these technical challenges, it means we’re growing, strengthening our grit. It’s simultaneously painful and rewarding, but we quickly learn that to not burn out, we have to able to tough-out that frustration more than most people, trust ourselves and our team, but always know that it’s ok to ask for help.
 
-The always entertaining [@MPJME](https://twitter.com/@MPJME) did a (great video)[https://www.youtube.com/watch?v=DwQ7psiU23I] on this condition of bearing perpetual frustration, grit, and problem-solving which is definitely worth your time.
+The always entertaining [@MPJME](https://twitter.com/@MPJME) did a [great video](https://www.youtube.com/watch?v=DwQ7psiU23I) on this condition of bearing perpetual frustration, grit, and problem-solving which is definitely worth your time.
 
 A healthy team are open about what they don’t know, and cultivate trust to seek answers together. To be mature is to become adept at ‘leaning in’ slowly to new problems rather than just expecting ourselves to know all the answers up front; and that is - it has to be - fine for us to operate as healthy developers.  
