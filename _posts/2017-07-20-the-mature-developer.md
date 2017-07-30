@@ -34,7 +34,7 @@ _[@PBeekums](https://twitter.com/PBeekums)_
 [On being a Senior](http://www.kitchensoap.com/2012/10/25/on-being-a-senior-engineer/)  
 _John Allspaw_
 
-This is a much more sustainable aspiration for web devs, especially those looking to be effective leads. Of course Maturity isn't a title given to who’s been anywhere the longest, but an attitude that any self-motivated software team will benefit from encouraging in all members. 
+This is a much more sustainable aspiration for web devs, especially those looking to be effective leads. Of course Maturity isn't a just formality given to who’s been anywhere the longest, but an attitude that any self-motivated software team will benefit from encouraging in all members. 
 We can encourage this space within teams; that implicit trust to seek feedback from colleagues, learn in safety, and admit to not knowing things - because our goals are bigger than us.  
 
 > “As our island of knowledge grows, so does our shore of ignorance.”  
