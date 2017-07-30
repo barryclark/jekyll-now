@@ -19,9 +19,9 @@ On approaching a project, we seek to understand the problem being solved itself,
 
 With developer Maturity comes a stoic understanding of how seldom this is an easy or accurate process, especially in ‘waterfall’. Capturing the real extent of what’s needed and the best of everyone’s knowledge of the solutions available to arrive at a time estimation is hard. And that’s ok.
 
-Thinking we can [learn all the things](https://dev.to/pbeekums/you-cant-learn-everything) is an endless, uphill exercise in burnout and this unicorn-like peak knowledge is a battle we’ll of course never win. We can never expect to have all the information, in any pursuit. In web development, like philosophy we're only ever approaching truth.  
+Thinking we can [learn all the things](https://dev.to/pbeekums/you-cant-learn-everything) is an endless, uphill exercise in burnout and this unicorn-like peak knowledge is a battle we’ll of course never win. We can never expect to have all the information; a full map of the problem in any pursuit. In web development, like philosophy we're only ever approaching truth.  
 
-Yet we must execute, and the mature developer recognises uncertainty not as an aberration, but something to shore up against with responsibile estimating and communication. We’re then free to learn safely, remain sane, thrive, within the reality of our environment. We can look to focus on core principles in our primary responsibility, and look to gain a little bit of insight from those around us to shore us up:
+Yet we must execute, and the mature developer recognises uncertainty not as an aberration, but something to plan for with responsibile estimating and communication. We’re then free to learn safely, remain sane, thrive, within the reality of our environment, and able to say No if it's responsible to do so. We can look to focus on core principles in our primary responsibility, and look to gain a little bit of insight from those around us to shore us up:  
 
 > The thing that makes learning about so many topics feasible is that you don’t actually need to be a master of everything to get context.  
 [You can't Learn Everything - Dev.to](https://dev.to/pbeekums/you-cant-learn-everything)  
@@ -30,15 +30,12 @@ _[@PBeekums](https://twitter.com/PBeekums)_
 
 <hr />
   
-
-Our job is characterised by operating on a daily basis with a patchy map of the problem and technical solutions, and so we’ve learned to trust ourselves despite this, always knowing we may encounter some condition previously obscured from us, and handling for that with estimates and honest communication; it’s our responsibility to say No, and to be honest at all times.
-
 > “Senior engineers don’t know everything. They’re not perfect in their technical knowledge, and they’re OK with that.”  
 [On being a Senior](http://www.kitchensoap.com/2012/10/25/on-being-a-senior-engineer/)  
 _John Allspaw_
 
 This is a much more sustainable aspiration for web devs, especially those looking to be effective leads. Of course Maturity isn't a title given to who’s been anywhere the longest, but an attitude that any self-motivated software team will benefit from encouraging in all members. 
-The best organisations allow their people this space; that implicit trust to seek feedback from colleagues, and admit to not knowing things.
+We can encourage this space within teams; that implicit trust to seek feedback from colleagues, learn in safety, and admit to not knowing things - because our goals are bigger than us.  
 
 > “As our island of knowledge grows, so does our shore of ignorance.”  
 _John Wheeler, Physicist_  
