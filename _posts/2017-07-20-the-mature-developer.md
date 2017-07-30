@@ -8,14 +8,15 @@ img: presentation-prep.jpg
 
 **Something of a suppressed notion in web development, is the possibility that we as individuals might not know answers, even amidst a sense of unknown when approaching a project’s requirements. The expectation we feel to each other in a team to live up to this ideal and the pressure that can put us under has got me thinking about this topic.**
 
-While we can try to intuit based on experience, and announce right away the the best solution with a reassuring intonation, we later come to understand to what narrow an awareness of the landscape our own experience confines us, and how it can delude us into believing we have all the information; the full extent of the task and what remains obscured from us.
+Earlier in my career as a Dev, I always imagined I’d reach some plateau where I’d come to ‘just know’ ahead of estimation, exactly how something would be built and all the considerations that might impact the project - *knowing* the right solution, like others seemed to, and instinctively describe it with a reassuring intonation.
 
-Earlier in my career as a Dev, I always imagined I’d reach some plateau where I’d come to ‘just know’ ahead of estimation, exactly how something would be built and all the considerations that might impact the project - *knowing* the right solution, like others seemed to, and instinctively describe it with a reassuring intonation. On constant re-evaluation, continually trying to reach this imagined point in a career isn't sustainable; in fact we may find ourselves chasing a mirage. I much prefer instead the idea of developer Maturity.
+We later come to understand to what narrow an awareness of the landscape our own experience confines us, and how it can have us believe we have all the information; the full extent of the task and what remains obscured from us. nstead of trying to become Sages; I much prefer instead the idea of developer Maturity.
 
-Throughout our career, as we look to solve more unique problems of for clients, or even [‘wicked problems’](https://en.wikipedia.org/wiki/Wicked_problem) internally, we come up pretty quickly to capacity on what we can reasonably expect ourselves to know about in web development, while still maintaining enough awareness of all the caveats and other considerations which impact what we’re doing.
+Throughout our career, as we look to solve more unique problems of for clients, or even [‘wicked problems’](https://en.wikipedia.org/wiki/Wicked_problem), our sphere of understanding of what we can reasonably know about in Development quickly comes to capacity, while still maintaining enough awareness of all the caveats and other considerations which impact what we’re doing on the front or back-end.
 
+<hr />
 
-On approaching a project, we seek to understand the problem being solved itself, and bring to bear our most *recent* understanding of what is available to us to form a solution based on our best estimation. 
+On approaching a project, we seek to understand the real problem being solved itself, and bring to bear our most *recent* understanding of what is available to us to form a solution based on our best intuition.
 
 With developer Maturity comes a stoic understanding of how seldom this is an easy or accurate process, especially in ‘waterfall’. Capturing the real extent of what’s needed and the best of everyone’s knowledge of the solutions available to arrive at a time estimation is hard. And that’s ok.
 
