@@ -14,6 +14,8 @@ Earlier in my career as a Dev, I always imagined I’d reach some plateau where 
 
 Throughout our career, as we look to solve more unique problems of for clients, or even [‘wicked problems’](https://en.wikipedia.org/wiki/Wicked_problem) internally, we come up pretty quickly to capacity on what we can reasonably expect ourselves to know about in web development, while still maintaining enough awareness of all the caveats and other considerations which impact what we’re doing.
 
+<hr />
+
 On approaching a project, we seek to understand the problem being solved itself, and bring to bear our most *recent* understanding of what is available to us to form a solution based on our best estimation. 
 
 With developer Maturity comes a stoic understanding of how seldom this is an easy or accurate process, especially in ‘waterfall’. Capturing the real extent of what’s needed and the best of everyone’s knowledge of the solutions available to arrive at a time estimation is hard. And that’s ok.
@@ -26,7 +28,7 @@ Yet we must execute, and the mature developer recognises uncertainty not as an a
 [You can't Learn Everything - Dev.to](https://dev.to/pbeekums/you-cant-learn-everything)  
 _[@PBeekums](https://twitter.com/PBeekums)_
 
---  
+<hr />
 
 Our job is characterised by operating on a daily basis with a patchy map of the problem and technical solutions, and so we’ve learned to trust ourselves despite this, always knowing we may encounter some condition previously obscured from us, and handling for that with estimates and honest communication; it’s our responsibility to say No, and to be honest at all times.
 
@@ -34,7 +36,7 @@ Our job is characterised by operating on a daily basis with a patchy map of the 
 [On being a Senior](http://www.kitchensoap.com/2012/10/25/on-being-a-senior-engineer/)  
 _John Allspaw_
 
-This is a much more sustainable aspiration for web devs, especially those looking to be effective Seniors and Leads. Of course Maturity isn't a title given to who’s been anywhere the longest, but an attitude that any self-motivated software team will benefit from encouraging in all members. 
+This is a much more sustainable aspiration for web devs, especially those looking to be effective leads. Of course Maturity isn't a title given to who’s been anywhere the longest, but an attitude that any self-motivated software team will benefit from encouraging in all members. 
 The best organisations allow their people this space; that implicit trust to seek feedback from colleagues, and admit to not knowing things.
 
 > “As our island of knowledge grows, so does our shore of ignorance.”  
@@ -45,4 +47,4 @@ Development is challenging, often fragmented and problematic, but is a unique jo
 
 The always entertaining [@MPJME](https://twitter.com/@MPJME) did a great video on this condition of bearing perpetual frustration, grit, and problem-solving which is definitely worth your time.
 
-A healthy team are open about what they don’t know, and cultivate trust to seek answers together. To be mature is to become adept at ‘leaning in’ slowly to new problems rather than just expecting ourselves to know all the answers up front; and that is - it has to be - fine for us to operate as healthy developers.
+A healthy team are open about what they don’t know, and cultivate trust to seek answers together. To be mature is to become adept at ‘leaning in’ slowly to new problems rather than just expecting ourselves to know all the answers up front; and that is - it has to be - fine for us to operate as healthy developers.  
