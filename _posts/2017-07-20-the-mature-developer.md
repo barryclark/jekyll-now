@@ -14,7 +14,6 @@ Earlier in my career as a Dev, I always imagined I’d reach some plateau where 
 
 Throughout our career, as we look to solve more unique problems of for clients, or even [‘wicked problems’](https://en.wikipedia.org/wiki/Wicked_problem) internally, we come up pretty quickly to capacity on what we can reasonably expect ourselves to know about in web development, while still maintaining enough awareness of all the caveats and other considerations which impact what we’re doing.
 
-<hr />
 
 On approaching a project, we seek to understand the problem being solved itself, and bring to bear our most *recent* understanding of what is available to us to form a solution based on our best estimation. 
 
@@ -27,9 +26,11 @@ Yet we must execute, and the mature developer recognises uncertainty not as an a
 > The thing that makes learning about so many topics feasible is that you don’t actually need to be a master of everything to get context.  
 [You can't Learn Everything - Dev.to](https://dev.to/pbeekums/you-cant-learn-everything)  
 _[@PBeekums](https://twitter.com/PBeekums)_
+  
 
 <hr />
-
+  
+  
 Our job is characterised by operating on a daily basis with a patchy map of the problem and technical solutions, and so we’ve learned to trust ourselves despite this, always knowing we may encounter some condition previously obscured from us, and handling for that with estimates and honest communication; it’s our responsibility to say No, and to be honest at all times.
 
 > “Senior engineers don’t know everything. They’re not perfect in their technical knowledge, and they’re OK with that.”  
