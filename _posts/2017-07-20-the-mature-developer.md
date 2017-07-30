@@ -10,9 +10,11 @@ img: presentation-prep.jpg
 
 Earlier in my career as a Dev, I always imagined I’d reach some plateau where I’d come to ‘just know’ ahead of estimation, exactly how something would be built and all the considerations that might impact the project - *knowing* the right solution, like others seemed to, and instinctively describe it with a reassuring intonation.
 
-We later come to understand to what narrow an awareness of the landscape our own experience confines us, and how it can have us believe we have all the information; the full extent of the task and what remains obscured from us. nstead of trying to become Sages; I much prefer instead the idea of developer Maturity.
+I've later come to understand to what narrow an awareness of the landscape our own experience confines us, and how it can have us believe we have all the information; the full extent of the task and what remains obscured from us.  
 
-Throughout our career, as we look to solve more unique problems of for clients, or even [‘wicked problems’](https://en.wikipedia.org/wiki/Wicked_problem), our sphere of understanding of what we can reasonably know about in Development quickly comes to capacity, while still maintaining enough awareness of all the caveats and other considerations which impact what we’re doing on the front or back-end.
+As we look to solve more unique problems for clients[**¹**](#ref1), our sphere of understanding of what we can reasonably know about in Development quickly comes to capacity, while still maintaining enough awareness of all the other considerations across from us.  
+
+Instead of the sisyphean[**²**](#ref2) task of becoming all-knowing; I much prefer instead the more 'Stoic' idea of developer Maturity.
 
 <hr />
 
@@ -48,3 +50,8 @@ Development is challenging, often fragmented and problematic, but is a unique jo
 The always entertaining [@MPJME](https://twitter.com/@MPJME) did a [great video](https://www.youtube.com/watch?v=DwQ7psiU23I) on this condition of bearing perpetual frustration, grit, and problem-solving which is definitely worth your time.
 
 A healthy team are open about what they don’t know, and cultivate trust to seek answers together. To be mature is to become adept at ‘leaning in’ slowly to new problems rather than just expecting ourselves to know all the answers up front; and that is - it has to be - fine for us to operate as healthy developers.  
+
+<span style="font-size: 12px;">
+[1] See also, <a name="ref1" href="https://en.wikipedia.org/wiki/Wicked_problem">Wicked Problems</a> when trying to solving hard problems internally  
+[2] <a name="ref2" href="http://www.sparknotes.com/philosophy/sisyphus/section11.rhtml">The Myth of Sisyphus</a>  
+</span>
