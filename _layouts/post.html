@@ -5,43 +5,43 @@ layout: default
 <article class="post">
 
 
-  <!--<h1>{{ page.title }}</h1>-->
+  <h1><a href="{{ post.url }}">{{ page.title }}</a></h1>
 
 
-  <!--<div class="entry">-->
-    <!--{{ content }}-->
-  <!--</div>-->
-
-    <!-- This loops through the paginated posts -->
-  {% for post in paginated.posts %}
-    <h1><a href="{{ post.url }}">{{ page.title }}</a></h1>
-    <p class="author">
-      <span class="date">Written on {{ page.date | date: "%B %e, %Y" }}</span>
-    </p>
-    <div class="entry">
-      {{ content }}
-    </div>
-  {% endfor %}
-
-  <!-- Pagination links -->
-  <div class="pagination">
-    {% if paginator.previous_page %}
-      <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
-    {% else %}
-      <span class="previous">Previous</span>
-    {% endif %}
-    <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
-    {% if paginator.next_page %}
-      <a href="{{ paginator.next_page_path }}" class="next">Next</a>
-    {% else %}
-      <span class="next ">Next</span>
-    {% endif %}
+  <div class="entry">
+    {{ content }}
   </div>
 
+    <!--&lt;!&ndash; This loops through the paginated posts &ndash;&gt;-->
+  <!--{% for post in paginated.posts %}-->
+    <!--<h1><a href="{{ post.url }}">{{ page.title }}</a></h1>-->
+    <!--<p class="author">-->
+      <!--<span class="date">Written on {{ page.date | date: "%B %e, %Y" }}</span>-->
+    <!--</p>-->
+    <!--<div class="content">-->
+      <!--{{ content }}-->
+    <!--</div>-->
+  <!--{% endfor %}-->
 
-  <!--<div class="date">-->
-    <!--Written on {{ page.date | date: "%B %e, %Y" }}-->
+  <!--&lt;!&ndash; Pagination links &ndash;&gt;-->
+  <!--<div class="pagination">-->
+    <!--{% if paginator.previous_page %}-->
+      <!--<a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>-->
+    <!--{% else %}-->
+      <!--<span class="previous">Previous</span>-->
+    <!--{% endif %}-->
+    <!--<span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>-->
+    <!--{% if paginator.next_page %}-->
+      <!--<a href="{{ paginator.next_page_path }}" class="next">Next</a>-->
+    <!--{% else %}-->
+      <!--<span class="next ">Next</span>-->
+    <!--{% endif %}-->
   <!--</div>-->
+
+
+  <div class="date">
+    Written on {{ page.date | date: "%B %e, %Y" }}
+  </div>
 
   <div class="share">
     {% include share-page.html %}
