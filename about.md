@@ -8,7 +8,7 @@ pic: martin-dm.jpg
 
 I'm a Front-end web developer from Nottingham. Advocate of standards, simplicity, and performance.
 
-[martinonotts@gmail.com](mailto:martinonotts@gmail.com)
+[hello@martindm.uk](mailto:hello@martindm.uk)
 
 ## What I do
 I'm experienced with all stages of web project delivery from specification, UX reviews, digital prototyping to responsive front-end builds and Javascript functionality.
@@ -26,4 +26,4 @@ Visual Studio, AWS, Wordpress, NodeJS, Gulp, Sourcetree, Wordpress, Umbraco and 
 When not code mongering I'm usually [running around somewhere](https://www.strava.com/athletes/2986152/), [shredding the trails on my bike](https://www.instagram.com/martino_notts/), or doing Krav Maga. I love an open, communicative environment and making new connections with great designers and developers. Lover of philosophy and constant personal and technical development - we're forever students!
 
 ### Contact me
-[martinonotts@gmail.com](mailto:martinonotts@gmail.com)
+[hello@martindm.uk](mailto:hello@martindm.uk)
