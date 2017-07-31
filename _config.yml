@@ -94,3 +94,4 @@ excerpt_separator: "<!--excerpt-->"
 
 # specifies how many items should be displayed per page:
 paginate: 5
+paginate_path: "/blog/page:num/"
