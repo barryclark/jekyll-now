@@ -6,7 +6,7 @@ category: work
 img: presentation-prep.jpg
 ---
 
-**Something of a suppressed notion in web development, is the possibility that we as individuals might not know answers, even amidst a sense of unknown when approaching a project’s requirements. The expectation we feel to each other in a team to live up to this ideal and the pressure that can put us under has got me thinking about this topic.**
+**Something of a suppressed admission in web development, is the possibility that we as individuals might not know answers. The expectation we feel to ourselves and each other in a team to live up to this ideal and the pressure that can put us under has got me thinking about this topic.**
 
 Earlier in my career as a Dev, I always imagined I’d reach some plateau where I’d come to ‘just know’ ahead of estimation, exactly how something would be built and all the considerations that might impact the project - *knowing* the right solution, like others seemed to, and instinctively describe it with a reassuring intonation.
 
