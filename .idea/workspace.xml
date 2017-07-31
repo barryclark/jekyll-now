@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0b0fa166-d985-44f4-98c6-e26ae844b95c" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_posts/2017-07-30-The-pots-plant-pots.md" afterPath="" />
+    <list default="true" id="0b0fa166-d985-44f4-98c6-e26ae844b95c" name="Default" comment="new post again">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/2017-7-30-the-pots-plant-pots.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,7 +19,7 @@
         <entry file="file://$PROJECT_DIR$/_layouts/post.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="330">
-              <caret line="25" column="8" lean-forward="true" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
+              <caret line="25" column="8" lean-forward="false" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
               <folding>
                 <marker date="1501498919000" expanded="true" signature="150:210" ph="..." />
                 <marker date="1501498919000" expanded="true" signature="233:276" ph="..." />
@@ -38,12 +39,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="285">
-              <caret line="19" column="6" lean-forward="true" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
+              <caret line="19" column="6" lean-forward="false" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2017-7-30-the-pots-plant-pots.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_posts/2017-7-30-the-pots-plant-pots.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="199">
+                <caret line="17" column="41" lean-forward="true" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
+                <folding />
+              </first_editor>
+              <second_editor>
+                <js_state />
+              </second_editor>
             </state>
           </provider>
         </entry>
@@ -93,6 +109,7 @@
         <option value="$PROJECT_DIR$/_config.yml" />
         <option value="$PROJECT_DIR$/_layouts/post.html" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/_posts/2017-7-30-the-pots-plant-pots" />
       </list>
     </option>
   </component>
@@ -647,7 +664,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fixed the CV link, again" />
     <MESSAGE value="fix NOOBS download link" />
     <MESSAGE value="fix 2nd photo" />
     <MESSAGE value="new post 2017-07-09, I'm building a farm, of spinach" />
@@ -672,7 +688,8 @@
     <MESSAGE value="New post 2017-07-30" />
     <MESSAGE value="New post 2017-07-30&#10;Edit 1: photo URLs" />
     <MESSAGE value="Edit index.html for pagination" />
-    <option name="LAST_COMMIT_MESSAGE" value="Edit index.html for pagination" />
+    <MESSAGE value="new post again" />
+    <option name="LAST_COMMIT_MESSAGE" value="new post again" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1116,7 +1133,7 @@
     <entry file="file://$PROJECT_DIR$/_layouts/post.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
-          <caret line="25" column="8" lean-forward="true" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
+          <caret line="25" column="8" lean-forward="false" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
           <folding>
             <marker date="1501498919000" expanded="true" signature="150:210" ph="..." />
             <marker date="1501498919000" expanded="true" signature="233:276" ph="..." />
@@ -1136,8 +1153,21 @@
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
-          <caret line="19" column="6" lean-forward="true" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
+          <caret line="19" column="6" lean-forward="false" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2017-7-30-the-pots-plant-pots.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="199">
+            <caret line="17" column="41" lean-forward="true" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
+            <folding />
+          </first_editor>
+          <second_editor>
+            <js_state />
+          </second_editor>
         </state>
       </provider>
     </entry>
