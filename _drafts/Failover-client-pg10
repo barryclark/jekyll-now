@@ -25,10 +25,14 @@ Well I know this tool is only supposed to work on database failure but still.
 
 I was planning on how to measure failover time when a colleague of mine reminded me of this new feature from PostgreSQL libpq.
 
-So here is the link to the setup I used for measurement . https://github.com/emerichunter/monitoring_replication
+## Measuring write loss over time
+
+So here is the link to the setup I used for measurement [monitoring_replication](https://github.com/emerichunter/monitoring_replication).
 Every step is explained in the README.
 
 I made this to know how much writes could be lost.
+
+Here is a selected extract of repmgr.conf.
 
 ~~~~
 cluster=test_repmgr
@@ -46,21 +50,15 @@ pg_bindir=/usr/pgsql-9.6/bin/
 master_response_timeout=5
 reconnect_attempts=3
 reconnect_interval=5
-                    # defines the action to take in the event of upstream failure
-                    #
-                    # 'automatic': repmgrd will automatically attempt to promote the
-                    #    node or follow the new upstream node
-                    # 'manual': repmgrd will take no action and the mode will require
-                    #    manual attention to reattach it to replication
-                    # a value of zero or less prevents the node being promoted to primary
-                    # (default: 100)
 retry_promote_interval_secs=10
 
 ~~~~
 
-Here I am going to provide you with some measures.
+So we are expecting 5 + 3*5 =20 seconds of downtime.
 
-First failover on the standby when Wal FS is filled up. Here is an extract of the log file. Notice the timestamp.
+## Let's fill the WAL FS
+
+First failover on the standby when Wal FS is filled up. Here is an extract of the log file. Notice the timestamp. 21 seconds for the standby to be promoted.
 
 ~~~~
 
@@ -98,7 +96,7 @@ log node 2 (standby failover)
 ~~~~
 
 
-And then the time measurement of writes failover. (extract) ** faire un tableau **
+And then the time measurement of writes loss during client failover to the newly elected master. (extract)
 
 ~~~~
 |pk	  |  time                           |
@@ -113,8 +111,8 @@ And then the time measurement of writes failover. (extract) ** faire un tableau 
 |5883 |	2017-07-13 10:29:24.597415+02   |
 |5884 |	2017-07-13 10:29:24.649334+02   |
 |5885 |	2017-07-13 10:29:24.701244+02   |
-|5886 |	2017-07-13 10:29:24.753549+02   |
-|5911 |	2017-07-13 10:29:46.685232+02   |
+|**5886** |	**2017-07-13 10:29:24.753549+02**   |
+|**5911** |	**2017-07-13 10:29:46.685232+02**   |
 |5912 |	2017-07-13 10:29:46.832526+02   |
 |5913 |	2017-07-13 10:29:46.88604+02    |
 |5914 |	2017-07-13 10:29:46.939793+02   |
@@ -124,8 +122,18 @@ And then the time measurement of writes failover. (extract) ** faire un tableau 
 
 ~~~~
 
+We get writes back on the new master after losing around 21 seconds. 25 INSERTS are missing.
 
-Here is the configuration repmgr.conf 
+## Conclusion 
+
+It works. It awesome. It's PostgreSQL. 
+
+I'm partial. Of course. 
+
+
+## Some  more info for transparency 
+
+Here is the full configuration repmgr.conf 
 
 
 ~~~~
