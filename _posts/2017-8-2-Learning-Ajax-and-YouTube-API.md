@@ -9,7 +9,7 @@ title:Learning Ajax and YouTube API.
 
 
 
-##Thinkful Tube
+##Thinkful Tube Project
 In this Thankful challenge what first appears to
 be something you could just do on youTube.
 As it turns out it was  great learning experience,
