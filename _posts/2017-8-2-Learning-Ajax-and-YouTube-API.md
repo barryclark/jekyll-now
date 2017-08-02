@@ -51,9 +51,9 @@ What has been accomplished up to this point is meeting the basic requirements of
 
 For the Optional Advanced functionality Requirements. 
 
-
 I must admit I struggled a bit on these at first. The way I got through this is first I read Youtube api documentation,
-And also looked at other peoples examples. And I reached out to my mentor at Thinkful. He did not give me all the answers but led me in the right direction so I could understand better myself. I think what confused me the most was trying to read code from documentation and other examples witch was a bit old and write in my own style using more ES6  and smaller functions, and  only using jQuery that is needed for Dom manipulation, in an effort to avoid spaghetti code. Side note very much looking forward to React and Redux in the future!
+And also looked at other peoples examples. And I reached out to my mentor at Thinkful. He did not give me all the answers but led me in the right direction so I could understand better myself. I think what confused me the most was trying to read code from documentation and other examples witch was a bit old and write in my own style using more ES6  and smaller functions, and  only using jQuery that is needed for Dom manipulation, in an effort to avoid spaghetti code. Side note very much looking forward to React and Redux!
+
 
 
 
