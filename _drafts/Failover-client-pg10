@@ -10,33 +10,57 @@ Today I bring you a test and some measurments of PostgreSQL 10 client replicatio
 
 So some time ago i came across this new feature everyone was so excited about. 
 At first I didn't realize the implications. 
-But then I was doing some testing for failover database.
-I request sent by many clients.
-So i started to check out different options.
+But then I was doing some testing for automated failover.
+Numerous clienst sent requests to me, so i started to check out the options available.
 
-Stolon was out of the way because of containers.
-So was patroni.
-although both seemed to work fine, none was what I was looking  for.
-Of course pacemaker/corosync was considered but failover to a different site was an issue.
+A quick test with Stolon soon ruled it out : not compatible with my home made deployment tool and so was Patroni.
+Although both seemed to work fine, none was what I was looking  for.
+Of course pacemaker/corosync was considered but failover to a different site was an issue. 
 
 Last option was REPMGR.
 So it took some time to figure things out.
 Eventually, all this good work came to fruition.
-My 4 nodes cluster was working alright, eventhough network failures were badly handled.
+My 3 nodes cluster (+ a witness) was working alright, eventhough network failures were badly handled.
 Well I know this tool is only supposed to work on database failure but still.
 
-I was struggling with how to measure failover time when a colleague of mine reminded me of this new feature from PostgreSQL libpq.
+I was planning on how to measure failover time when a colleague of mine reminded me of this new feature from PostgreSQL libpq.
 
-So here is the link to the setup I used. https://github.com/emerichunter/monitoring_replication
+So here is the link to the setup I used for measurement . https://github.com/emerichunter/monitoring_replication
 Every step is explained in the README.
 
-I made this to know how much data could be lost.
+I made this to know how much writes could be lost.
 
-** add repmgr.conf content** 
+~~~~
+cluster=test_repmgr
+node=4
+node_name=node4
+conninfo='port=5432 host=PCYYYPFG user=repmgr dbname=repmgr'
+failover=automatic
+promote_command='repmgr standby promote -f /etc/repmgr.conf --log-to-file'
+follow_command='repmgr standby follow -f /etc/repmgr.conf --log-to-file'
+                 # the server's hostname or another identifier unambiguously
+                 # associated with the server to avoid confusion
+logfile='/var/log/repmgr/repmgr-9.6.log'
+pg_bindir=/usr/pgsql-9.6/bin/
+
+master_response_timeout=5
+reconnect_attempts=3
+reconnect_interval=5
+                    # defines the action to take in the event of upstream failure
+                    #
+                    # 'automatic': repmgrd will automatically attempt to promote the
+                    #    node or follow the new upstream node
+                    # 'manual': repmgrd will take no action and the mode will require
+                    #    manual attention to reattach it to replication
+                    # a value of zero or less prevents the node being promoted to primary
+                    # (default: 100)
+retry_promote_interval_secs=10
+
+~~~~
 
 Here I am going to provide you with some measures.
 
-First failover on the standby when Wal FS is filled up.
+First failover on the standby when Wal FS is filled up. Here is an extract of the log file. Notice the timestamp.
 
 ~~~~
 
@@ -77,26 +101,26 @@ log node 2 (standby failover)
 And then the time measurement of writes failover. (extract) ** faire un tableau **
 
 ~~~~
-pk	    time
-
-5876	2017-07-13 10:29:24.221169+02
-5877	2017-07-13 10:29:24.277367+02
-5878	2017-07-13 10:29:24.330156+02
-5879	2017-07-13 10:29:24.38804+02
-5880	2017-07-13 10:29:24.441046+02
-5881	2017-07-13 10:29:24.493518+02
-5882	2017-07-13 10:29:24.545547+02
-5883	2017-07-13 10:29:24.597415+02
-5884	2017-07-13 10:29:24.649334+02
-5885	2017-07-13 10:29:24.701244+02
-5886	2017-07-13 10:29:24.753549+02
-5911	2017-07-13 10:29:46.685232+02
-5912	2017-07-13 10:29:46.832526+02
-5913	2017-07-13 10:29:46.88604+02
-5914	2017-07-13 10:29:46.939793+02
-5915	2017-07-13 10:29:46.997917+02
-5916	2017-07-13 10:29:47.053968+02
-5917	2017-07-13 10:29:47.108371+02
+|pk	  |  time                           |
+|-----|:-------------------------------:|
+|5876 |	2017-07-13 10:29:24.221169+02   |
+|5877 |	2017-07-13 10:29:24.277367+02   |
+|5878 |	2017-07-13 10:29:24.330156+02   |
+|5879 |	2017-07-13 10:29:24.38804+02    |
+|5880 |	2017-07-13 10:29:24.441046+02   |
+|5881 |	2017-07-13 10:29:24.493518+02   |
+|5882 |	2017-07-13 10:29:24.545547+02   |
+|5883 |	2017-07-13 10:29:24.597415+02   |
+|5884 |	2017-07-13 10:29:24.649334+02   |
+|5885 |	2017-07-13 10:29:24.701244+02   |
+|5886 |	2017-07-13 10:29:24.753549+02   |
+|5911 |	2017-07-13 10:29:46.685232+02   |
+|5912 |	2017-07-13 10:29:46.832526+02   |
+|5913 |	2017-07-13 10:29:46.88604+02    |
+|5914 |	2017-07-13 10:29:46.939793+02   |
+|5915 |	2017-07-13 10:29:46.997917+02   |
+|5916 |	2017-07-13 10:29:47.053968+02   |
+|5917 |	2017-07-13 10:29:47.108371+02   |
 
 ~~~~
 
@@ -332,6 +356,3 @@ retry_promote_interval_secs=10
 
 
 ~~~~
-
-
-
