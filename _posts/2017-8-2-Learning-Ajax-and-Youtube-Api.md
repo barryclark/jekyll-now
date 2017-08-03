@@ -9,7 +9,7 @@ title: Learning Ajax and Youtube Api
 
 [Thinkful Tube App live here](https://mikehaslam-thinkful-projects.github.io/thinkful-tube/)
 
-#Thinkful Tube
+# Thinkful Tube
 
 In this Thinkful challenge what first appears to
 be something you could just do on youTube.
@@ -17,13 +17,13 @@ As it turns out it was  great learning experience,
 about how to use jQuery & AJAX  to get Data from
 an API. 
 
-###The requirements of the challenge are:
+### The requirements of the challenge are:
 
 1. Accept a user search term 
 2. Get JSON from the YouTube API based user search term
 3. Display the thumbnail image of the returned videos
 
-###Optional Advanced functionality Requirements 
+### Optional Advanced functionality Requirements 
 
 1. Make the images clickable, leading the user to the YouTube video, on YouTube.
 2. Make the images clickable, playing them in a lightbox.
@@ -45,6 +45,7 @@ Also call getVideoSelected function and closeLightBox function.
 
 In renderResults function we remove thee hidden class on more buttons so they will display in the UI now. Then we save a template string containing the url and video id of each individual video returned from the api call to a variable. Then return a template string that contains a div that has an image thumbnail of video and is wrapped in a anchor tag with url to video also another anchor link the title of channel and url to got to that channel when clicked.
 What has been accomplished up to this point is meeting the basic requirements of challenge and 1 optional functionality  :
+
 1) Accept a user search term. 
 2) Get JSON from the YouTube API based user search term.
 3) Display the thumbnail image of the returned videos.
