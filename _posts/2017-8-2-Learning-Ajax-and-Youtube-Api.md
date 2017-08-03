@@ -21,7 +21,7 @@ an API.
 ### The requirements of the challenge are:
 
 1. Accept a user search term 
-2. Get JSON from the YouTube API based user search term
+2. Get JSON from the YouTube API based on user search term
 3. Display the thumbnail image of the returned videos
 
 ### Optional Advanced functionality Requirements 
