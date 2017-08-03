@@ -45,12 +45,14 @@ Also call getVideoSelected function and closeLightBox function.
 
 In renderResults function we remove thee hidden class on more buttons so they will display in the UI now. Then we save a template string containing the url and video id of each individual video returned from the api call to a variable. Then return a template string that contains a div that has an image thumbnail of video and is wrapped in a anchor tag with url to video also another anchor link the title of channel and url to got to that channel when clicked.
 
-### What has been accomplished up to this point is meeting the basic requirements of challenge and 1 optional functionality
+### What has been accomplished up to this point is meeting the basic requirements of challenge and 3 optional functionality
 
 1) Accept a user search term. 
 2) Get JSON from the YouTube API based user search term.
 3) Display the thumbnail image of the returned videos.
 4) Show a link for more from the channel that each video came from
+5) Make the images clickable, leading the user to the YouTube video, on YouTube.
+6) Make the images clickable, playing them in a lightbox.
 
 For the Optional Advanced functionality Requirements. 
 
