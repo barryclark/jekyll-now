@@ -2,13 +2,13 @@
 layout: post
 title: Learning Ajax and Youtube Api
 ---
+![_config.yml]({{ site.baseurl }}/images/tube.png)
+
+[![Thinkful Tube](https://mikehaslam-thinkful-projects.github.io/images/tube.png)](https://mikehaslam-thinkful-projects.github.io/thinkful-tube/)
 
 
-[![Image Alt Text](https://mikehaslam-thinkful-projects.github.io/thinkful-tube/)]([_config.yml]({{ site.baseurl }})
 
 
-
-[Thinkful Tube App live here](https://mikehaslam-thinkful-projects.github.io/thinkful-tube/)
 
 # Thinkful Tube
 
