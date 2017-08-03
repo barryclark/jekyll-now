@@ -8,3 +8,5 @@ title: "Persistent Storage in Docker - Which solution and why?" (Microservices m
         This browser does not support PDFs. Please download the PDF to view it: <a href="http://www.oicheryl.com/resources/Persistent Storage in Docker.pdf">Download PDF</a>.</p>
     </embed>
 </object>
+
+For more info on the eight principles of cloud native storage, check out [this blog post](https://storageos.com/storageos-vision-cloud-native-storage-todays-modern/).
