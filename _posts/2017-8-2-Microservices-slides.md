@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Persistent Storage in Docker - Which solution and why?" (Microservices meetup)
+title: "Persistent Storage in Docker - Which solution and why?" - Microservices meetup
 ---
 
 <object data="http://www.oicheryl.com/resources/Persistent Storage in Docker.pdf" type="application/pdf" width="700px" height="700px">
