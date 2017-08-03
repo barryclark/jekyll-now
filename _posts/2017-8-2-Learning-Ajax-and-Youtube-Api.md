@@ -35,6 +35,7 @@ So to first get started on this project I first made a quick sketch of what the 
 
 Next I created the directory structure for the project And initialized a git repository, then I started on the HTML to get the input from user and a place to display the data returned. At his point I wanted to practice using Flex Box so I used it for the positioning  of what I had so far, also used some basic css styles.
 Now it was time to start writing some javascript.  Using a combination of ES6  and jQuery and trying to write small reusable functions to avoid spaghetti code.  
+
 In app.js I got my document ready by creating jQuery object  for my function searchBtnListener
 
 All the id’s and classes and URL’s to be selected are saved to constants at top of app.js for easy access.
