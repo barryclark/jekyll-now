@@ -47,12 +47,12 @@ In renderResults function we remove thee hidden class on more buttons so they wi
 
 ### What has been accomplished up to this point is meeting the basic requirements of challenge and 3 optional functionality
 
-1) Accept a user search term. 
-2) Get JSON from the YouTube API based user search term.
-3) Display the thumbnail image of the returned videos.
-4) Show a link for more from the channel that each video came from
-5) Make the images clickable, leading the user to the YouTube video, on YouTube.
-6) Make the images clickable, playing them in a lightbox.
+1. Accept a user search term. 
+2. Get JSON from the YouTube API based user search term.
+3. Display the thumbnail image of the returned videos.
+4. Show a link for more from the channel that each video came from
+5. Make the images clickable, leading the user to the YouTube video, on YouTube.
+6. Make the images clickable, playing them in a lightbox.
 
 For the Optional Advanced functionality Requirements. 
 
