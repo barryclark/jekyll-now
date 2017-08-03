@@ -3,7 +3,8 @@ layout: post
 title: Learning Ajax and Youtube Api
 ---
 
-![_config.yml]({{ site.baseurl }}/images/tube.png)
+
+[![Image Alt Text](https://mikehaslam-thinkful-projects.github.io/thinkful-tube/)]([_config.yml]({{ site.baseurl }})
 
 
 
