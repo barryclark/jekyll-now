@@ -1,9 +1,9 @@
 ---
 layout: post
-title: 
+title: Learning Ajax and Youtube Api
 ---
 
-![_config.yml]({{ site.baseurl }}/images/quizApp.png)
+![_config.yml]({{ site.baseurl }}/images/tube.png)
 
 Thinkful Tube
 In this Thankful challenge what first appears to
