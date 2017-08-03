@@ -14,7 +14,7 @@ title: Learning Ajax and Youtube Api
 In this Thankful challenge what first appears to
 be something you could just do on youTube.
 As it turns out it was  great learning experience,
-about how to use jQuery & AJAX  and get Data from
+about how to use jQuery & AJAX  to get Data from
 an API. 
 
 The requirements of the challenge are:
