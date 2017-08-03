@@ -11,7 +11,7 @@ title: Learning Ajax and Youtube Api
 
 ## Thinkful Tube
 
-In this Thankful challenge what first appears to
+In this Thinkful challenge what first appears to
 be something you could just do on youTube.
 As it turns out it was  great learning experience,
 about how to use jQuery & AJAX  to get Data from
