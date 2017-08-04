@@ -4,9 +4,13 @@ title: FireFly Tube Amplifier
 ---
 ## Building a FireFly Tube Amplifier
 
-I recently built a FireFly Tube Amplifier based off of [Doug Hammond's original design](http://ax84.com/index.php/oldprojects.html?project_id=firefly "FireFly AX84"). 
+I recently built a FireFly Tube Amplifier based off of [Doug Hammond's original design](http://ax84.com/index.php/oldprojects.html?project_id=firefly). 
 
-I'd like to document the process I followed, the tools required, and the issues I ran into.
+I'd like to briefly document the process followed, the tools required, and the issues I ran into.
+
+**_Warning: This project can be potentially fatal, use at your own risk!_** 
+
+
 
 **Tools Needed**
 - **Soldering Station**
