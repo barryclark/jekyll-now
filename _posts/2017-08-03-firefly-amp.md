@@ -1,4 +1,4 @@
 ---
 published: false
-title: Firefly Amp
+title: Firefly Tube Amp
 ---
