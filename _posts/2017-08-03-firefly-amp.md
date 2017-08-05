@@ -38,7 +38,14 @@ http://ronsound.com/index.php?main_page=product_info&cPath=129&products_id=882
 http://vintageusaguitars.com/misc/Firefly%20PCB%20Guide%208.pdf
 https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=41C1F88452
 
-
+![FireFly-1]({{taylorjhawkins.com}}/images/firefly-1.jpg)
+![FireFly-2]({{taylorjhawkins.com}}/images/firefly-2.jpg)
+![FireFly-3]({{taylorjhawkins.com}}/images/firefly-3.jpg)
+![FireFly-4]({{taylorjhawkins.com}}/images/firefly-4.jpg)
+![FireFly-5]({{taylorjhawkins.com}}/images/firefly-5.jpg)
+![FireFly-6]({{taylorjhawkins.com}}/images/firefly-6.jpg)
+![FireFly-7]({{taylorjhawkins.com}}/images/firefly-7.jpg)
+![FireFly-8]({{taylorjhawkins.com}}/images/firefly-8.jpg)
 
 Line Number	Mouser Part Number
 Customer Part Number
