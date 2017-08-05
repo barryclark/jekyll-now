@@ -39,10 +39,11 @@ Due to the nature of the electronic component industry, I've provided several li
 Please take heed of the information provided on the RonSound Revision 8 PCB page regarding the chassis, transformers, tubes, sockets, etc.
 
 * **[RonSound Revision 8 PCB](http://ronsound.com/index.php?main_page=product_info&cPath=129&products_id=882)**
-* **[John Calhoun's FireFly Build Guide and Bill of Materials (BOM Page 11)](http://vintageusaguitars.com/misc/Firefly%20PCB%20Guide%208.pdf)**
+* **[John Calhoun's FireFly PCB Assembly Guide and Bill of Materials (BOM Page 11)](http://vintageusaguitars.com/misc/Firefly%20PCB%20Guide%208.pdf)**
 * **[Mouser Parts List](https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=41C1F88452)**
 
-
+### Build Process
+For my build I followed John Calhoun's FireFly PCB Assembly Guide, which is overall a very useful document. However, I did run into a few snags while following his document, which I'd like to mention.
 
 
 ![FireFly-1]({{taylorjhawkins.com}}/images/firefly-1.jpg)
