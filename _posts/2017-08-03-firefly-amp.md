@@ -33,7 +33,7 @@ Tool recommendations are a blend of quality and affordability. While Greenlee to
 * **[Deburring Tool](https://www.amazon.com/gp/product/B00004T828/ref=oh_aui_detailpage_o06_s00?ie=UTF8&psc=1)**
 * **Aluminum Files**
 
-**Components Needed**
+### Components Needed
 Due to the nature of the electronic component industry, I've provided several links to various bill of materials for this project. Please take your time to ensure that the parts ordered meet the required specifications. John Calhoun's Bill of Materials is a good starting place for component specifications, although keep in mind that some components may need to be substituted, and components may need to be sourced from other vendors.
 
 Please take heed of the information provided on the RonSound Revision 8 PCB page regarding the chassis, transformers, tubes, sockets, etc.
