@@ -16,8 +16,10 @@ I'd like to briefly document the process followed, the tools required, and the i
 - **[Soldering Station](https://www.amazon.com/Weller-WES51-Analog-Soldering-Station/dp/B000BRC2XU/ref=sr_1_1?ie=UTF8&qid=1501897991&sr=8-1&keywords=wes+51)**
 * **[Solder](https://www.amazon.com/gp/product/B0149K4JTY/ref=oh_aui_detailpage_o02_s00?ie=UTF8&psc=1)**
 * **Screwdriver**
-* **Drill**
+* **[Drill](https://www.amazon.com/Milwaukee-2606-22CT-M18-Drill-Driver/dp/B00GLEWR96)**
 * **[Unibit \#1](https://www.amazon.com/Irwin-Tools-Unibit-Step-Drill-10231/dp/B00004THYX/ref=pd_sim_469_1?_encoding=UTF8&psc=1&refRID=NXY6AMAEYY2HTC4JVQ1X)**
+* **[Unibit \#4](https://www.amazon.com/Irwin-Industrial-Tools-10234CB-Unibit/dp/B00126J1PG/ref=sr_1_1?ie=UTF8&qid=1501898470&sr=8-1&keywords=Irwin+10234CB)**
+* **[Cutting Fluid](https://www.amazon.com/Forney-20857-Magic-Industrial-Cutting/dp/B003X3ZKXI/ref=pd_bxgy_469_2?_encoding=UTF8&psc=1&refRID=WGCA7P8PYG9MGM152KFX)**
 
 
 http://ronsound.com/index.php?main_page=product_info&cPath=129&products_id=882
