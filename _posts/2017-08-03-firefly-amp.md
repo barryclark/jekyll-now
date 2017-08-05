@@ -78,7 +78,7 @@ In step 21 of Calhoun's guide there is a diagram of the output jack being wired 
 
 ### Chassis Assembly
 
-
+My experience with cutting the chassis was rife with mistakes, so I will document the issues I encountered, what I learned, and recommendations for the future. I intend to eventually cut a new chassis and migrate the amplifer.
 
 
 ![FireFly-1]({{taylorjhawkins.com}}/images/firefly-1.jpg)
