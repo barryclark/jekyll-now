@@ -45,6 +45,12 @@ Please take heed of the information provided on the RonSound Revision 8 PCB page
 ### Build Process
 For my build I followed John Calhoun's FireFly PCB Assembly Guide, which is overall a very useful document. However, I did run into a few snags while following his document, which I'd like to mention.
 
+#### Hammond 269EX Power Transformer
+
+Please read the manufacturer's notes for your components, as the current production of the Hammond 269EX Power Transformer has different colored wires than is documented in Calhoun's Guide. In Step 19 of Calhoun's Guide, he states "start with the black wires from the power transformer." 
+
+However, the current production has (1) black wire, (1) grey wire, and (1) white wire. This is important to note, because if power is connected to both the black and grey wires, instantaneous destruction of the transformer will result. With the current production of the Hammond 269EX Power Transformer, the White and Gray wires should be used for 115 VAC Input and the White and Black wires should be used for 125 VAC Input. Tape the unused wire. 
+
 
 ![FireFly-1]({{taylorjhawkins.com}}/images/firefly-1.jpg)
 ![FireFly-2]({{taylorjhawkins.com}}/images/firefly-2.jpg)
