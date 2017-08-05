@@ -22,6 +22,7 @@ Tool recommendations are a blend of quality and affordability. While Greenlee to
 * **[Rosin Flux Pen](https://www.amazon.com/gp/product/B008OC3VMU/ref=oh_aui_detailpage_o03_s00?ie=UTF8&psc=1)**
 * **[Hookup Wire](https://www.amazon.com/gp/product/B01180QKJ0/ref=oh_aui_detailpage_o08_s00?ie=UTF8&psc=1)**
 * **Screwdriver**
+* **Multimeter**
 
 **Tools and Supplies Needed for Amplifier Chassis**
 * **[Drill](https://www.amazon.com/Milwaukee-2606-22CT-M18-Drill-Driver/dp/B00GLEWR96)**
@@ -58,6 +59,18 @@ However, the current production has (1) black wire, (1) grey wire, and (1) white
 **DO NOT** assume that by "black wires" Calhoun means the black **AND** grey wires.
 
 This is important to note, because if power is connected to **BOTH** the black **AND** grey wires, instantaneous destruction of the transformer will result. With the current production of the Hammond 269EX Power Transformer, the White and Gray wires should be used for 115 VAC Input and the White and Black wires should be used for 125 VAC Input. Tape the unused wire. 
+
+#### Power Switch 
+
+In steps 19 and 20 of Calhoun's guide, the Power Switch is wired into the amplifier circuit. 
+
+The switch recommended i nthe BOM is a Double Pole Double Throw (DPDT) Switch. This switch has two input terminals and four output terminals, which makes it an ON/ON switch. However, Calhoun's document wires the DPDT switch so that one set of output terminals is used for the input, which prevents live current being present on the unused terminals when the switch is in the OFF state. 
+
+The terminals on the DPDT switch I purchased were all numbered, just as in Calhoun's document. However, if the particular switch I purchased is wired accordingly, then the ON/OFF states will be inverted on the amplifier.
+
+Additionally, when my amplifier was assembled and power was turned on the internal connection between terminal 1 and terminal 2 failed after about 10 seconds. This required a multimeter in order to perform continuity testing of the circuit to identify the failed component. After identifying that it was in fact the switch, I was able to desolder the input leads from terminals 1 and 4, and then proceed to resolder them to terminals 3 and 6. 
+
+This corrected the ON/OFF inversion issue, as well as resolving the issue with the switches internal failure.
 
 
 
