@@ -6,7 +6,9 @@ title: FireFly Tube Amplifier
 
 I recently built a FireFly Tube Amplifier based off of [Doug Hammond's original design](http://ax84.com/index.php/oldprojects.html?project_id=firefly). 
 
-I'd like to briefly document the process followed, the tools required, and the issues I ran into.
+I'd like to briefly document the process followed, the tools required, and the issues I ran into. Tool recommendations are a blend of quality and affordability. 
+
+(As nice as Greenlee tools are, the cost can be hard to stomach.)
 
 **_Warning: This project can be potentially fatal, use at your own risk!_** 
 
@@ -16,15 +18,20 @@ I'd like to briefly document the process followed, the tools required, and the i
 - **[Soldering Station](https://www.amazon.com/Weller-WES51-Analog-Soldering-Station/dp/B000BRC2XU/ref=sr_1_1?ie=UTF8&qid=1501897991&sr=8-1&keywords=wes+51)**
 * **[Solder](https://www.amazon.com/gp/product/B0149K4JTY/ref=oh_aui_detailpage_o02_s00?ie=UTF8&psc=1)**
 * **Screwdriver**
+* **[Vise](https://www.amazon.com/gp/product/B000B61D22/ref=oh_aui_detailpage_o04_s00?ie=UTF8&psc=1)**
+* **[Desoldering Pump](https://www.amazon.com/gp/product/B00L2HRW92/ref=oh_aui_detailpage_o05_s00?ie=UTF8&psc=1)**
+* **[Rosin Flux Pen](https://www.amazon.com/gp/product/B008OC3VMU/ref=oh_aui_detailpage_o03_s00?ie=UTF8&psc=1)**
 
 **Tools and Supplies Needed for Amplifier Chassis**
 * **[Drill](https://www.amazon.com/Milwaukee-2606-22CT-M18-Drill-Driver/dp/B00GLEWR96)**
+* **[Drill Bit Set](https://www.amazon.com/dp/B004GIO0F8?tag=mcaveman-20)**
 * **[Unibit \#1](https://www.amazon.com/Irwin-Tools-Unibit-Step-Drill-10231/dp/B00004THYX/ref=pd_sim_469_1?_encoding=UTF8&psc=1&refRID=NXY6AMAEYY2HTC4JVQ1X)**
 * **[Unibit \#4](https://www.amazon.com/Irwin-Industrial-Tools-10234CB-Unibit/dp/B00126J1PG/ref=sr_1_1?ie=UTF8&qid=1501898470&sr=8-1&keywords=Irwin+10234CB)**
 * **[Cutting Fluid](https://www.amazon.com/Forney-20857-Magic-Industrial-Cutting/dp/B003X3ZKXI/ref=pd_bxgy_469_2?_encoding=UTF8&psc=1&refRID=WGCA7P8PYG9MGM152KFX)**
 * **[Nibbler](https://www.amazon.com/ProsKit-900-215-Nibbler/dp/B000BN60XW/ref=sr_1_2?s=hi&ie=UTF8&qid=1501901209&sr=1-2&keywords=Nibbling+Tool)**
 * **[Automatic Center Punch](https://www.amazon.com/TEKTON-6580-Automatic-Center-Punch/dp/B0037UUO60/ref=sr_1_9?s=hi&ie=UTF8&qid=1501901209&sr=1-9&keywords=Nibbling+Tool)**
-
+* **[Knockout Punch Kit](https://www.harborfreight.com/knockout-punch-kit-10-pc-60575.html)**
+* **[Deburring Tool](https://www.amazon.com/gp/product/B00004T828/ref=oh_aui_detailpage_o06_s00?ie=UTF8&psc=1)**
 
 http://ronsound.com/index.php?main_page=product_info&cPath=129&products_id=882
 http://vintageusaguitars.com/misc/Firefly%20PCB%20Guide%208.pdf
