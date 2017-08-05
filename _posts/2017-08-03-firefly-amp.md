@@ -1,6 +1,6 @@
 ---
 published: false
-title: FireFly Tube Amplifier
+title: FireFly Tube Amplifier Part 1
 ---
 ## Building a FireFly Tube Amplifier
 
@@ -42,8 +42,10 @@ Please take heed of the information provided on the RonSound Revision 8 PCB page
 * **[John Calhoun's FireFly PCB Assembly Guide and Bill of Materials (BOM Page 11)](http://vintageusaguitars.com/misc/Firefly%20PCB%20Guide%208.pdf)**
 * **[Mouser Parts List](https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=41C1F88452)**
 
+Additionally, you may want to purchase some nuts and washers in order to mount the transformers to the chassis. 
+
 ### Build Process
-For my build I followed John Calhoun's FireFly PCB Assembly Guide, which is overall a very useful document. However, I did run into a few snags while following his document, which I'd like to mention.
+For my build I followed John Calhoun's FireFly PCB Assembly Guide, which is overall a very useful document. However, I did run into a few snags, which I'd like to mention.
 
 #### Hammond 269EX Power Transformer
 
