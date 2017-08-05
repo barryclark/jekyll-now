@@ -18,6 +18,7 @@ permalink: /eventi/
 {% assign filteredissues = site.data.issuesjson | where: "state","open" %}
 {% for member in filteredissues %}
 {% if member.issue.labels contains "Eventi" %}
+
 <div class="panel-body">
 <a href="/issues/{{ member.number }}" class="list-group-item">
 {% if member.issue.data.data_evento != blank %}
