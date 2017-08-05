@@ -6,13 +6,11 @@ title: FireFly Tube Amplifier
 
 I recently built a FireFly Tube Amplifier based off of [Doug Hammond's original design](http://ax84.com/index.php/oldprojects.html?project_id=firefly). 
 
-I'd like to briefly document the process followed, the tools required, and the issues I ran into. Tool recommendations are a blend of quality and affordability. 
+I'd like to briefly document the process followed, the tools required, and the issues I ran into. 
 
-(As nice as Greenlee tools are, the cost can be hard to stomach.)
+**_Disclaimer: This project can be potentially fatal, proceed at your own risk!_** 
 
-**_Warning: This project can be potentially fatal, use at your own risk!_** 
-
-
+Tool recommendations are a blend of quality and affordability. While Greenlee tools are quite nice, their cost can be hard to stomach.
 
 **Tools and Supplies Needed for Amplifier Assembly**
 - **[Soldering Station](https://www.amazon.com/Weller-WES51-Analog-Soldering-Station/dp/B000BRC2XU/ref=sr_1_1?ie=UTF8&qid=1501897991&sr=8-1&keywords=wes+51)**
@@ -20,6 +18,7 @@ I'd like to briefly document the process followed, the tools required, and the i
 * **[Vise](https://www.amazon.com/gp/product/B000B61D22/ref=oh_aui_detailpage_o04_s00?ie=UTF8&psc=1)**
 * **[Desoldering Pump](https://www.amazon.com/gp/product/B00L2HRW92/ref=oh_aui_detailpage_o05_s00?ie=UTF8&psc=1)**
 * **[Rosin Flux Pen](https://www.amazon.com/gp/product/B008OC3VMU/ref=oh_aui_detailpage_o03_s00?ie=UTF8&psc=1)**
+* **[Hookup Wire](https://www.amazon.com/gp/product/B01180QKJ0/ref=oh_aui_detailpage_o08_s00?ie=UTF8&psc=1)**
 * **Screwdriver**
 
 **Tools and Supplies Needed for Amplifier Chassis**
@@ -34,9 +33,15 @@ I'd like to briefly document the process followed, the tools required, and the i
 * **[Deburring Tool](https://www.amazon.com/gp/product/B00004T828/ref=oh_aui_detailpage_o06_s00?ie=UTF8&psc=1)**
 * **Aluminum Files**
 
-http://ronsound.com/index.php?main_page=product_info&cPath=129&products_id=882
-http://vintageusaguitars.com/misc/Firefly%20PCB%20Guide%208.pdf
-https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=41C1F88452
+**Components Needed**
+Due to the nature of the electronic component industry, I've provided several links to various bill of materials for this project. Please take your time to ensure that the parts ordered meet the required specifications. John Calhoun's Bill of Materials is a good starting place for component specifications, although keep in mind that some components may need to be substituted, and components may need to be sourced from other vendors.
+
+* **[Revision 8 PCB](http://ronsound.com/index.php?main_page=product_info&cPath=129&products_id=882)**
+* **[John Calhoun's FireFly Build Guide and Bill of Materials (BOM Page 11)](http://vintageusaguitars.com/misc/Firefly%20PCB%20Guide%208.pdf)**
+* **[Mouser Parts List](https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=41C1F88452)**
+
+
+
 
 ![FireFly-1]({{taylorjhawkins.com}}/images/firefly-1.jpg)
 ![FireFly-2]({{taylorjhawkins.com}}/images/firefly-2.jpg)
