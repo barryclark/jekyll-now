@@ -32,6 +32,7 @@ I'd like to briefly document the process followed, the tools required, and the i
 * **[Automatic Center Punch](https://www.amazon.com/TEKTON-6580-Automatic-Center-Punch/dp/B0037UUO60/ref=sr_1_9?s=hi&ie=UTF8&qid=1501901209&sr=1-9&keywords=Nibbling+Tool)**
 * **[Knockout Punch Kit](https://www.harborfreight.com/knockout-punch-kit-10-pc-60575.html)**
 * **[Deburring Tool](https://www.amazon.com/gp/product/B00004T828/ref=oh_aui_detailpage_o06_s00?ie=UTF8&psc=1)**
+* **Aluminum Files**
 
 http://ronsound.com/index.php?main_page=product_info&cPath=129&products_id=882
 http://vintageusaguitars.com/misc/Firefly%20PCB%20Guide%208.pdf
