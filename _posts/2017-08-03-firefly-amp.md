@@ -72,6 +72,12 @@ Additionally, when my amplifier was assembled and power was turned on the intern
 
 This corrected the ON/OFF inversion issue, as well as resolving the issue with the switches internal failure.
 
+#### Output Jack
+
+In step 21 of Calhoun's guide there is a diagram of the output jack being wired to the output transformer. This image is slightly confusing due to how the image appears to be suggesting the wiring should look. I would recommend disregarding the image, and paying close attention to the textual details. Additionally, please review the manufacturer's notes for your output jack to ensure your understanding of how the component should be wired. 
+
+### Chassis Assembly
+
 
 
 
