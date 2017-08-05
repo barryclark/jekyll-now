@@ -6,6 +6,8 @@ title: FireFly Tube Amplifier Part 1
 
 I recently built a FireFly Tube Amplifier based off of [Doug Hammond's original design](http://ax84.com/index.php/oldprojects.html?project_id=firefly). 
 
+This will be a multi-part series, as I intend to build an enclosure for the amplifier, as well as a speaker cabinet sometime in the near future. 
+
 I'd like to briefly document the process followed, the tools required, and the issues I ran into. 
 
 **_Disclaimer: This project can be potentially fatal, proceed at your own risk!_** 
