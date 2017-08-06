@@ -21,7 +21,7 @@ My spinach farm has been doing alright so far. Since the beginning, I always wan
 
 <!--excerpt-->
 
-Courtesy to Tinkercad for amazing circuit board modelling and Evernote for wonder image annotation.
+Courtesy to Tinkercad for amazing circuit board modelling and Evernote for wonderful image annotation.
 
 There isn’t a readily modelled image for the relay module so I need to improvise here. However, this is pretty much how it was wired. I used 2 breadboards for the real life model but this wiring can be achieved with no breadboards at all.
 
