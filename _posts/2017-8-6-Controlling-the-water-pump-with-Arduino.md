@@ -19,6 +19,8 @@ My spinach farm has been doing alright so far. Since the beginning, I always wan
 
 ![Model circuit for how the Arduino, the relay module and the water pump are connected](https://i.imgur.com/YK0pB6R.png)
 
+<!--excerpt-->
+
 Courtesy to Tinkercad for amazing circuit board modelling and Evernote for wonder image annotation.
 
 There isn’t a readily modelled image for the relay module so I need to improvise here. However, this is pretty much how it was wired. I used 2 breadboards for the real life model but this wiring can be achieved with no breadboards at all.
