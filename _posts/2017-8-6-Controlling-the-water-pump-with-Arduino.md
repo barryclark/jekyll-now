@@ -59,7 +59,7 @@ void loop() {
 }
 ```
 
-The water pump should run and you can try adding other types of control such as push buttons or IR remote control. If you want, you can also replay the Arduino UNO R3 with a Raspberry Pi. You can write a Python script instead and the possibilities are endless.
+The water pump should run and you can try adding other types of control such as push buttons or IR remote control. If you want, you can also replace the Arduino UNO R3 with a Raspberry Pi. You can write a Python script instead and the possibilities are endless.
 
 **Next step:** Put everything together and design the plant pot with the watering system.
 
