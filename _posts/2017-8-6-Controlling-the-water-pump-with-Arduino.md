@@ -19,6 +19,8 @@ My spinach farm has been doing alright so far. Since the beginning, I always wan
 
 ![Model circuit for how the Arduino, the relay module and the water pump are connected](https://i.imgur.com/YK0pB6R.png)
 
+<!--excerpt-->
+
 Courtesy to Tinkercad for amazing circuit board modelling and Evernote for wonder image annotation.
 
 There isn’t a readily modelled image for the relay module so I need to improvise here. However, this is pretty much how it was wired. I used 2 breadboards for the real life model but this wiring can be achieved with no breadboards at all.
@@ -60,6 +62,11 @@ void loop() {
 The water pump should run and you can try adding other types of control such as push buttons or IR remote control. If you want, you can also replay the Arduino UNO R3 with a Raspberry Pi. You can write a Python script instead and the possibilities are endless.
 
 **Next step:** Put everything together and design the plant pot with the watering system.
+
+**Bonus:** Video of the water pump with push buttons to control ON/OFF
+
+[![Video of the water pump with push buttons to control ON/OFF](https://i.imgur.com/IoMAQDF.png)](https://www.youtube.com/watch?v=Zz6ISKUt1Ac)
+
 
 
 
