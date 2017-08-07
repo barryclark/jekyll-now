@@ -10,7 +10,7 @@ I was wrong.
 
 I went through the configs of the device, got into a little trouble and for the first time ever decided to call the ISP for a little help.
 
-We went through the steps, things weren't working out, and the tech support person asked if they could reset it to its default status. Curious, I said sure! I was curious because I had altered the administrative username and password, and set the firewall settings to the highest possible settings. Suddenly the AP restarted and it was back to its freshly installed default settings! 
+We went through the steps, things weren't working out, and the tech support person asked if they could reset it to its default status. Curious, I said sure! I was curious because I had altered the administrative username and password, and set the firewall settings to the highest possible settings. Suddenly the AP restarted and it was back to its freshly installed default settings!
 
 Stunned, I asked how they did that. They said they couldn't answer that by policy. Well.. Challenge Accepted!
 

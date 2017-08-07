@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-A once career sysadmin, turned QA guy on a security product, who wants to take the next step in the great big complex #InfoSec world.  
+A once career systems administrator, turned QA guy on a security product, who wants to take the next step in the great big complex InfoSec world.
 
 ### More Information
 
