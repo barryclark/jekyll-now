@@ -1,3 +1,8 @@
+---
+coloana1 : linia1
+coloana2 : linia2
+---
+
 1. WHAT IS AN AUTOMATED SOFTWARE TESTING?
 Software Test automation uses specialized tools for the execution of tests and comparison of the actual results against the expected result. 
 Testing tools are used to perform regression tests and to automate data set up generation, product installation, GUI interactions, defect logging.
