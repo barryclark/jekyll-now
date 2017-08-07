@@ -1,9 +1,3 @@
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
-
 1. WHAT IS AN AUTOMATED SOFTWARE TESTING?
 Software Test automation uses specialized tools for the execution of tests and comparison of the actual results against the expected result. 
 Testing tools are used to perform regression tests and to automate data set up generation, product installation, GUI interactions, defect logging.
@@ -185,6 +179,32 @@ non-functional testing	functional testing	functional testing	functional testing	
 TESTNG, XUNIT	REST ASSURED, SOAPUI,  POSTMAN, FRISBY	JUNIT, SELENIUM	SELENIUM	JMETER, LOADRUNNER	BURP INTRUDER, OWASP ZAP
 
 
+| Unit Tests                  | API Tests                             | Integration Tests                       | 
+| --------------------------- | ------------------------------------- | --------------------------------------- |      
+| owned by development        | owned by test                         | owned by test, development              | 
+| limited in scope            | broader in scope                      | tests the whole system working together | 
+| fine grained                | fine grained                          | coarse grained                          |             
+| mocked dependencies         | mocked and real dependencies          | real dependencies                       |
+| stable                      | stable                                | can be brittle                          |
+| "Does it work by itself'    | "does it play well with others"       | "does the system work"                  |
+| usually run before check-in | pre-check-in suites                   | usually run after check-in to CI branch |
+| run fast                    | run fast                              | can run slow                            |
+| white box testing           | white box testing                     | black box testing                       |
+|non-functional testing       | functional testing                    | functional testing                      |
+| TESTNG, XUNIT               | REST ASSURED, SOAPUI, POSTMAN, FRISBY | JUNIT, SELENIUM                         |
+
+
+| GUI egression tests)                        | Performance Tests                           | Security tests                   | 
+| ------------------------------------------- | ------------------------------------------- | -------------------------------- |      
+| owned by test                               | owned by development, test, customer        | owned by a separate team         | | maximum scope-catch many problems           | limited in scope                            | limited in scope                 | 
+| complex business workflows                  | large system load                           | security indicators              |             
+| real deies, real database                   | real dependencies, real database            | real dependencies, real database | | brittle (require more rework)               | stable                                      | can be brittle                   |
+| "are the system's functionalities affected" | "does the system perform as expected"       | "is the system secure"           |
+| run after check-in to CI/release branch     | run on release build and relevant hardware  | run against real environment     | 
+| run slow                                    | run speed affected by load and resources    | run fast                         |
+| black box testing                           | white box testing                           | black box testing                |
+| functional testing                          | non-functional testing                      | non-functional testing           |
+| SELENIUM                                    | JMETER, LOADRUNNER                          | BURP INTRUDER, OWASP ZAP         |               
 
 References:
 -	http://www.blackwasp.co.uk/
