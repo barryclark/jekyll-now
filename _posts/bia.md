@@ -7,15 +7,15 @@ Testing tools are used to perform regression tests and to automate data set up g
 
 There are some misconceptions about test automation:
 
-Misconception #1. Automation is here to replace manual testers.
+**_Misconception #1._** Automation is here to replace manual testers.
 Test automation is for helping the testers to make testing faster and in a more reliable manner. It can’t replace humans.
 Automation testing is used to quickly test most of the repeated, long and boring tests and save time and energy to focus and test new and important functionality.
 
-Misconception #2. Everything under the sun can be automated
+**_Misconception #2._** Everything under the sun can be automated
 If you try to automate 100% of your test cases, maybe you will be able to do so, but if that you could do, then our first point becomes false. Actually the point is, you cannot automate 100% of your test cases. There will always be some scenarios which we will miss. There will always be bugs that come only when the application will be used by clients. Also, there are always scenarios which are difficult to automate and are easier to do manually.
 So, we should automate those scenarios which are important and take a lot of time to do manually.
 
-Misconception #3. Automation only involves recording and playback. 
+**_Misconception #3._** Automation only involves recording and playback. 
 This misconception is actually created by false advertisements from different automation tool vendors. They say you just record and playback your steps and your test cases will be automated, which is a big lie!
 Automation is everything but recording and playback. Pure automation engineers normally don’t use recording and playback feature at all. Recording and playback are generally used to get an idea how the tool is generating script for our steps. Once you get to know the scripting language, you’ll always use it to create automated tests
 
@@ -48,15 +48,15 @@ When speaking of automation, we can refer to 5 types of automated tests
 
 #### 2.1 - Unit Tests
 
-What is Unit Testing?
+**What is Unit Testing?**
 •	is the process of validating the correctness of a small section of code. The code may be a method within a class, or entire group of components that are isolated from all or most of their dependencies. 
 •	is usually performed by programmers
 •	the code – is usually held in a separate project that contains a suite of tests for the target software.
  
-The goal of unit testing 
+**The goal of unit testing** 
 •	to demonstrate that each individual part of a larger software development project works as intended.
 
-Benefits of using Unit tests
+**Benefits of using Unit tests**
 •	unit tests find problems early in the development cycle. 
 •	unit testing increases confidence that your code is behaving correctly. 
 •	an automated unit test suite watches over your code in two dimensions: time and space. 
@@ -68,17 +68,17 @@ o	in space dimension - unit tests written for other features guarantee that your
 •	it assists greatly with regression testing, as each time a change to the software is made, all previous unit tests can be executed, ensuring that no new bugs have been introduced.
 •	Usually, unit tests are fast.
 
-Limitations
+**Limitations**
 •	There are some things that are difficult or time-consuming to unit test. One example is the user interface of your software. There are design patterns that minimize the amount of functionality in the user interface (UI) layer, allowing the code to exist separately from the graphical elements and making that code testable. This leaves a very thin layer of UI components that require an alternative testing approach.
 
 #### 2.2 - Web Service / API Tests
 
-What is an API?
+**What is an API?**
 •	an Application Programming Interface (API) makes it possible for software to talk to other software applications.
 •	An API needs to be tested like all the other software applications. Usually we test the functionality, compliance and security issues. In web applications, we can test the Request and Response of our application that whether they are secure and encrypted or not.
 •	is one of the areas highly recommended for automation testing, in DevOps world, agile development and continuous delivery cycles.
 
-Common kinds of API testing:
+**Common kinds of API testing:**
 •	Functionality testing — the API technically works.
 •	Usability testing — the API is easy to work with.
 •	Reliability testing — the API can be consistently connected to and lead to consistent results.
@@ -88,21 +88,21 @@ Common kinds of API testing:
 •	Proficiency testing — the API increases what developers are able to do.
 •	API documentation testing — also called discovery testing, the API documentation easily guides the user.
 
-Benefits of API testing:
+**Benefits of API testing:**
 •	Access to application without user interface – in this way testers will detect and recognize the errors early, instead of them becoming larger issues during GUI testing.
 •	Protection from malicious code and breakage - API test requires specific conditions and inputs, which protects the application from malicious code and breakage. 
 •	Time Efficiency vs. functional and validation testing - API testing is far way faster than functional GUI testing.. 
 •	Cost Effective / Reduces Testing Cost - API test automation requires less code than GUI automated tests. They provide faster test results and better test coverage. 
 •	Technology Independent - In an API test, the data is interchanged using XML or JSON and compromised of HTTP requests and responses. These all are technology independent and used for development. 
 
-Limitations
+**Limitations**
 •	No Encryption
 •	Increasing Tooling needs
 •	Straightforward reason for failing API is not known like it is for GUI 
 
 #### 2.3 - Integration tests
 
-What is Integration testing?
+**What is Integration testing?**
 •	is a software development process which program units are combined and tested as groups in multiple ways. In this context, a unit is defined as the smallest testable part of an application. 
 •	can expose problems with the interfaces among program components before trouble occurs in real-world program execution. 
 •	takes smaller units of unit testing and tests their behavior as the whole.
@@ -113,7 +113,7 @@ There are two major ways of carrying out an integration test:
  In a comprehensive software development environment, bottom-up testing is usually done first, followed by top-down testing..
 Automated integration testing offers development teams the time to continue working on a product's development while being tested. Also, it is possible to run tests repeatedly and quickly, assuring that even small defects will be identified early enough for an effective fix.
 
-Benefits of the Integration Testing
+**Benefits of the Integration Testing**
 •	testing starts at the very early stages of development and bugs are caught earlier rather than late in the cycle.
 •	confidence in the development cycle is high.
 •	easy to integrate with daily builds and easy to test in development environment
@@ -124,7 +124,8 @@ Benefits of the Integration Testing
 •	the application is tested in order to verify that it meets the standards set by the client as well as reassuring the development team that assumptions which were made during unit testing are correct.
 •	integration testing doesn’t need to wait for all modules of a system being implemented. It can begin as soon as the relevant modules are available.
 •	integration testing checks if the software modules work in unity.
-Limitations
+
+**Limitations**
 •	fault localization is difficult.
 •	since all modules are tested at once, high risk critical modules are not isolated and tested on priority. Peripheral modules which deal with user interfaces are also not isolated and tested on priority.
 
@@ -135,7 +136,7 @@ The most popular GUI testing tools are QTP (Now called UFT), Selenium WebDriver,
 GUI testing assures that an application is implemented according to the specifications and it has the proper functionality of the user interface. 
 In addition to functionality, GUI testing evaluates design elements such as layout, colors, fonts, font sizes, labels, text boxes, text formatting, captions, buttons, lists, icons, links and content. GUI testing processes can be either manual or automatic.
 
-Benefits of automated GUI testing
+**Benefits of automated GUI testing**
 •	Finding regression errors.
 •	Test suite can be scheduled to run at any time
 •	Detecting differences in behavior between platforms, i.e., Mac/Java versions, different web browsers, different operating systems.
@@ -144,11 +145,11 @@ Benefits of automated GUI testing
 #### 2.5 - Security Tests
 
 From an automation point of view, security tests can be categorized as follows:
-•	Functional Security Tests - tests are focusing on security features such as authentication and logout, and testing that they work as expected.
-•	Specific non-functional tests against known weaknesses - includes testing known weaknesses and miss-configurations such as lack of the HttpOnly flag on session cookies, or use of known weak SSL suites and ciphers.
-•	Security scanning of the application and infrastructure -even manually driven penetration tests usually kick off with an automated scan using vulnerability scanning tools like Nessus, Burp and OWASP ZAP. Nessus tests an IP address and all exposed ports for known weaknesses. It also includes a “web” scanning component that will test HTTP services for similar known weaknesses, but the scanning at the web tier is extremely superficial. 
+•	**Functional Security Tests** - tests are focusing on security features such as authentication and logout, and testing that they work as expected.
+•	**Specific non-functional tests against known weaknesses** - includes testing known weaknesses and miss-configurations such as lack of the HttpOnly flag on session cookies, or use of known weak SSL suites and ciphers.
+•	**Security scanning of the application and infrastructure** -even manually driven penetration tests usually kick off with an automated scan using vulnerability scanning tools like Nessus, Burp and OWASP ZAP. Nessus tests an IP address and all exposed ports for known weaknesses. It also includes a “web” scanning component that will test HTTP services for similar known weaknesses, but the scanning at the web tier is extremely superficial. 
 Burp Intruder (Commercial) and OWASP ZAP (Open Source) are focused on the web tier and are true application scanners in that they inspect and test at the HTTP layer by injecting attack data into parameters and evaluating the application’s response. They can provide in-depth security scanning if they’re used correctly. 
-•	Security testing application logic.
+•	**Security testing application logic**
 Automated tools can only go so far in detecting security flaws. To identify flaws in the logic of the application requires an  IT professional 
 It requires ingenuity and experience to find, but once the attack is defined they too can be recorded as automated tests and become a part of the security regression tests.
 When to run the tests
@@ -156,13 +157,13 @@ Since they’re automated, the cost of running the tests is very low, so natural
 
 #### 2.6 - Performance Tests
 
-What is Performance testing?
+**What is Performance testing?**
 •	It is a type of non-functional testing.
 •	Performance testing should determine how fast some aspect of a system performs under a particular workload or if the system really meets the corresponding performance criteria.
 •	Is used for comparison between two systems to find which performs better. Or it can measure what part of the system or workload causes the system to underperform.
 •	This process can involve quantitative tests done in a lab, such as measuring the response time or the number of MIPS (millions of instructions per second) at which a system functions.
 
-Benefits of performance testing:
+**Benefits of performance testing:**
 •	Improve user experience on sites and web apps
 •	Gather metrics useful for tuning the system
 •	Identify bottlenecks such as database configuration
@@ -172,22 +173,6 @@ Benefits of performance testing:
 Performance testing tools are used on the system level testing, and they check how the system is impacted when reaching high limits. Load testing checks how the system reacts on its expected number of transactions. A volume testing checks how the system can reacts to a large amount of data, (many fields in a record, many records in a file, etc). A stress testing exceeds the normal expected the normal usage of the system (to see what would happen outside its design expectations), with respect to load or volume. 
 The purpose of the performance testing is to measure characteristics, such as response times, throughput or the mean time between failures (for reliability testing). This can be done in different ways depending on the tool, such as different user profiles, different types of activity, timing delays and other parameters. Adequately replicating the end-user environments or user profiles is usually key to realistic results.
 If the performance is not up to the expected standard, then some analysis needs to be performed to see where the problem is and to know what can be done to improve the performance.
-
-Unit Tests	API Tests	Integration Tests	GUI Tests (regression tests)	Performance Tests	Security tests
-owned by development	owned by test	owned by test, development	owned by test	owned by development, test, customer	owned by a separate team
-limited in scope	broader in scope	tests the whole system working together	maximum scope - can catch many problems	limited in scope	limited in scope
-fine grained	fine grained	coarse grained	complex business workflows	large system load	security indicators
-mocked dependencies	mocked and real dependencies	real dependencies	real dependencies, real database	real dependencies, real database	real dependencies, real database
-stable	stable	can be brittle	brittle (require more rework)	stable	can be brittle
-"Does it work by itself'	"does it play well with others"	"does the system work"	"are the functionalities of the system affected	"does the system perform as expected"	"is the system secure"
-usually run before check-in	pre-check-in suites	usually run after check-in to CI branch	usually run after check-in to CI/release branch	"usually run on release build 
-and relevant hardware"	run against real environment
-run fast	run fast	can run slow	run slow	"run speed affected by desired load 
-and available resources"	run fast
-white box testing	white box testing	black box testing	black box testing	white /black box testing	black box testing
-non-functional testing	functional testing	functional testing	functional testing	non-functional testing	non-functional testing
-TESTNG, XUNIT	REST ASSURED, SOAPUI,  POSTMAN, FRISBY	JUNIT, SELENIUM	SELENIUM	JMETER, LOADRUNNER	BURP INTRUDER, OWASP ZAP
-
 
 | Unit Tests                  | API Tests                             | Integration Tests                       | 
 | --------------------------- | ------------------------------------- | --------------------------------------- |      
