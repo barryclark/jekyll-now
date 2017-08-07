@@ -1,6 +1,6 @@
 ---
 layout: post
-title: It all started with wanting to go DIY.. 
+title: Actiontec - It all started with wanting to go DIY.. 
 ---
 Being the I.T. person in the household, I usually can't let something be attached to the home network without knowing what it is, what it does and how much control I have over it.
 

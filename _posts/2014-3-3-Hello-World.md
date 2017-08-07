@@ -1,6 +1,6 @@
 ---
 layout: post
-title: It all started with wanting to go DIY.. 
+title: The obligatory Hello World post.
 ---
 
-Jekyll-now hello world.. neat. 
+Jekyll-now hello world.. neat.
