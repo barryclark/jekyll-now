@@ -1,8 +1,9 @@
-1. WHAT IS AN AUTOMATED SOFTWARE TESTING?
+## 1. WHAT IS AN AUTOMATED SOFTWARE TESTING?
+
 Software Test automation uses specialized tools for the execution of tests and comparison of the actual results against the expected result. 
 Testing tools are used to perform regression tests and to automate data set up generation, product installation, GUI interactions, defect logging.
 
-1.1	- Some Misconceptions about Automation Testing
+#### 1.1	- Some Misconceptions about Automation Testing
 
 There are some misconceptions about test automation:
 
@@ -18,7 +19,7 @@ Misconception #3. Automation only involves recording and playback.
 This misconception is actually created by false advertisements from different automation tool vendors. They say you just record and playback your steps and your test cases will be automated, which is a big lie!
 Automation is everything but recording and playback. Pure automation engineers normally don’t use recording and playback feature at all. Recording and playback are generally used to get an idea how the tool is generating script for our steps. Once you get to know the scripting language, you’ll always use it to create automated tests
 
-1.2 - Why Automated Testing?
+#### 1.2 - Why Automated Testing?
 
 Manual testing should not be replaced by automation, but it is complemented by it. Like manual, automation also needs a strategy with proper planning, monitoring & control. If implemented correctly, automation can become an asset to the team, project and ultimately to the organization.
 
@@ -31,7 +32,9 @@ There are many advantages of automation and here are few important to mention:
 •	Used when the number of iterations of the test case executions are not known.
 
 There is only one way to increase the effectiveness, efficiency and coverage of testing – using automation. It will take less time and improves accuracy as repetitive tasks via manual approach can be prone to human errors and can be time consuming.
-1.3 – Manual to automated testing – what are the process challenges?
+
+#### 1.3 – Manual to automated testing – what are the process challenges?
+
 Below, you can find the points which are a challenge, when trying to automate a test suite. 
 •	Management Support: Every test team is unique and has an exclusive need for automation. We cannot develop a fix standard, but we can tailor a standard which will suite our need.  But for this, automation needs to have a strong support from management and development team.
 •	Which tests to automate: Automating 100% application is almost impossible. It requires proper planning and monitoring and of course; time. There should be available a strategy to automate, taking into consideration all the possible test scenarios. The strategy can be based on multiple factors like complex business logics, areas which are of more interest to clients, risk prone areas etc.
@@ -39,9 +42,12 @@ Below, you can find the points which are a challenge, when trying to automate a 
 •	Knowledge of the team: When starting with automation, we intend to learn the programming language or scripting language. Learning the language will definitely help but more emphasis should be on building and developing logic. The entire team should be responsible for automation. This will help not only to enhance the skills of the team members, but also to keep them motivated.
 •	Reporting: Every tool has a standard to report the test results. Reporting the test results also requires coordination and maintenance which adds to the cost.
 
-2. TYPES OF AUTOMATED TESTS
+## 2. TYPES OF AUTOMATED TESTS
+
 When speaking of automation, we can refer to 5 types of automated tests
-2.1 - Unit Tests
+
+#### 2.1 - Unit Tests
+
 What is Unit Testing?
 •	is the process of validating the correctness of a small section of code. The code may be a method within a class, or entire group of components that are isolated from all or most of their dependencies. 
 •	is usually performed by programmers
@@ -49,8 +55,6 @@ What is Unit Testing?
  
 The goal of unit testing 
 •	to demonstrate that each individual part of a larger software development project works as intended.
-
-
 
 Benefits of using Unit tests
 •	unit tests find problems early in the development cycle. 
@@ -63,11 +67,12 @@ o	in space dimension - unit tests written for other features guarantee that your
 •	an automated unit test suite reduces the need for manual testing. By running the unit tests automatically, QA team can concentrate discovering the hard-to-find bugs while the unit tests do most of the mundane testing.
 •	it assists greatly with regression testing, as each time a change to the software is made, all previous unit tests can be executed, ensuring that no new bugs have been introduced.
 •	Usually, unit tests are fast.
-.
 
 Limitations
 •	There are some things that are difficult or time-consuming to unit test. One example is the user interface of your software. There are design patterns that minimize the amount of functionality in the user interface (UI) layer, allowing the code to exist separately from the graphical elements and making that code testable. This leaves a very thin layer of UI components that require an alternative testing approach.
-2.2 - Web Service / API Tests
+
+#### 2.2 - Web Service / API Tests
+
 What is an API?
 •	an Application Programming Interface (API) makes it possible for software to talk to other software applications.
 •	An API needs to be tested like all the other software applications. Usually we test the functionality, compliance and security issues. In web applications, we can test the Request and Response of our application that whether they are secure and encrypted or not.
@@ -83,8 +88,6 @@ Common kinds of API testing:
 •	Proficiency testing — the API increases what developers are able to do.
 •	API documentation testing — also called discovery testing, the API documentation easily guides the user.
 
-
-
 Benefits of API testing:
 •	Access to application without user interface – in this way testers will detect and recognize the errors early, instead of them becoming larger issues during GUI testing.
 •	Protection from malicious code and breakage - API test requires specific conditions and inputs, which protects the application from malicious code and breakage. 
@@ -96,7 +99,9 @@ Limitations
 •	No Encryption
 •	Increasing Tooling needs
 •	Straightforward reason for failing API is not known like it is for GUI 
-2.3 - Integration tests
+
+#### 2.3 - Integration tests
+
 What is Integration testing?
 •	is a software development process which program units are combined and tested as groups in multiple ways. In this context, a unit is defined as the smallest testable part of an application. 
 •	can expose problems with the interfaces among program components before trouble occurs in real-world program execution. 
@@ -122,7 +127,9 @@ Benefits of the Integration Testing
 Limitations
 •	fault localization is difficult.
 •	since all modules are tested at once, high risk critical modules are not isolated and tested on priority. Peripheral modules which deal with user interfaces are also not isolated and tested on priority.
-2.4 - GUI Tests
+
+#### 2.4 - GUI Tests
+
 GUI’s are always highly affected by changes, and the testing subject is the user interface of an application. Thus they are also considered the toughest form of automated testing type. GUI testing is closest to what users will do with the application. So, these tests are benefic in finding bugs early and it can be used in many scenarios such as regression testing.
 The most popular GUI testing tools are QTP (Now called UFT), Selenium WebDriver, Test Complete and Microsoft Coded UI (which is a part of Visual Studio ultimate and premium editions).
 GUI testing assures that an application is implemented according to the specifications and it has the proper functionality of the user interface. 
@@ -133,7 +140,9 @@ Benefits of automated GUI testing
 •	Test suite can be scheduled to run at any time
 •	Detecting differences in behavior between platforms, i.e., Mac/Java versions, different web browsers, different operating systems.
 •	Simulation of User Environment - GUI testing is one of the most time consuming and redundant procedures as the tester has to deploy the same methods in mock user environments and check for issues in the responsiveness of the GUI. With automated testing, this process becomes easy and time-saving
-2.5 - Security Tests
+
+#### 2.5 - Security Tests
+
 From an automation point of view, security tests can be categorized as follows:
 •	Functional Security Tests - tests are focusing on security features such as authentication and logout, and testing that they work as expected.
 •	Specific non-functional tests against known weaknesses - includes testing known weaknesses and miss-configurations such as lack of the HttpOnly flag on session cookies, or use of known weak SSL suites and ciphers.
@@ -145,7 +154,8 @@ It requires ingenuity and experience to find, but once the attack is defined the
 When to run the tests
 Since they’re automated, the cost of running the tests is very low, so naturally we’d want to fail fast and run them as early as possible. But security issues are typically found at the component level and are difficult to test at the unit/class level. So testing at the application tier should be done on a running application. In other words, at the same time as automated acceptance tests.
 
-2.6 - Performance Tests
+#### 2.6 - Performance Tests
+
 What is Performance testing?
 •	It is a type of non-functional testing.
 •	Performance testing should determine how fast some aspect of a system performs under a particular workload or if the system really meets the corresponding performance criteria.
