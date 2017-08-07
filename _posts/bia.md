@@ -1,7 +1,8 @@
----
-coloana1 : linia1, linia2
-coloana2 : linia1, linia2
----
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
 
 1. WHAT IS AN AUTOMATED SOFTWARE TESTING?
 Software Test automation uses specialized tools for the execution of tests and comparison of the actual results against the expected result. 
