@@ -4,12 +4,12 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+A once career sysadmin, turned QA guy on a security product, who wants to take the next step in the great big complex #InfoSec world.  
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+What more do you want from me you animals?!
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+Twitter is pretty good as a start.
