@@ -1,6 +1,6 @@
 ---
-coloana1 : linia1
-coloana2 : linia2
+coloana1 : linia1, linia2
+coloana2 : linia1, linia2
 ---
 
 1. WHAT IS AN AUTOMATED SOFTWARE TESTING?
