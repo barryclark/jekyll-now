@@ -1,13 +1,8 @@
----
-layout: post
-title: Serverless with AWS at DevTalks
-subtitle: How the new world is looking with Cloud Native Apps and Serverless Mindset
-category: dev
-tags: [conference, culture, serverless, cloud]
-author: Melania Andrisan
-author_email: melania.andrisan@haufe-lexware.com 
-header-img: "images/new/Exportiert_18.jpg"
----
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
 
 1. WHAT IS AN AUTOMATED SOFTWARE TESTING?
 Software Test automation uses specialized tools for the execution of tests and comparison of the actual results against the expected result. 
