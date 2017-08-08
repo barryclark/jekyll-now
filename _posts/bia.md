@@ -196,7 +196,6 @@ For a clear overview of all from above, you can find below a comparison table be
 |non-functional testing       | functional testing                    | functional testing                      |
 | TESTNG, XUNIT               | REST ASSURED, SOAPUI, POSTMAN, FRISBY | JUNIT, SELENIUM                         |
 
-
 | GUI egression tests)                        | Performance Tests                           | Security tests                   | 
 | ------------------------------------------- | ------------------------------------------- | -------------------------------- |      
 | owned by test                               | owned by development, test, customer        | owned by a separate team         | | maximum scope-catch many problems           | limited in scope                            | limited in scope                 | 
@@ -209,7 +208,7 @@ For a clear overview of all from above, you can find below a comparison table be
 | functional testing                          | non-functional testing                      | non-functional testing           |
 | SELENIUM                                    | JMETER, LOADRUNNER                          | BURP INTRUDER, OWASP ZAP         |               
 
-References:
+**References**
 -	http://www.blackwasp.co.uk/
 -	https://www.codeproject.com/Articles/5404/The-benefits-of-automated-unit-testing
 -	http://istqbexamcertification.com/
