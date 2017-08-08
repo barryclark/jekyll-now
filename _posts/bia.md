@@ -1,6 +1,7 @@
 ## 1. WHAT IS AN AUTOMATED SOFTWARE TESTING?
 
-Software Test automation uses specialized tools for the execution of tests and comparison of the actual results against the expected result. 
+Software Test automation uses specialized tools for the execution of tests and comparison of the actual results against the expected result.
+
 Testing tools are used to perform regression tests and to automate data set up generation, product installation, GUI interactions, defect logging.
 
 #### 1.1	- Some Misconceptions about Automation Testing
@@ -108,7 +109,9 @@ When speaking of automation, we can refer to 5 types of automated tests
 There are two major ways of carrying out an integration test:
 +	bottom-up method - begins with unit testing, followed by tests of progressively higher-level combinations of units called modules or builds.
 +	top-down method - the highest-level modules are tested first and progressively lower-level modules are tested after that.
- In a comprehensive software development environment, bottom-up testing is usually done first, followed by top-down testing..
+
+In a comprehensive software development environment, bottom-up testing is usually done first, followed by top-down testing.
+
 Automated integration testing offers development teams the time to continue working on a product's development while being tested. Also, it is possible to run tests repeatedly and quickly, assuring that even small defects will be identified early enough for an effective fix.
 
 **Benefits of the Integration Testing**
