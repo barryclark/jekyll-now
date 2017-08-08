@@ -168,8 +168,10 @@ Since they’re automated, the cost of running the tests is very low, so natural
 +	Determine if a new release is ready for production
 +	Provide reporting to business stakeholders regarding performance against expectations
 
-Performance testing tools are used on the system level testing, and they check how the system is impacted when reaching high limits. Load testing checks how the system reacts on its expected number of transactions. A volume testing checks how the system can reacts to a large amount of data, (many fields in a record, many records in a file, etc). A stress testing exceeds the normal expected the normal usage of the system (to see what would happen outside its design expectations), with respect to load or volume. 
+Performance testing tools are used on the system level testing, and they check how the system is impacted when reaching high limits. Load testing checks how the system reacts on its expected number of transactions. A volume testing checks how the system can reacts to a large amount of data, (many fields in a record, many records in a file, etc). A stress testing exceeds the normal expected the normal usage of the system (to see what would happen outside its design expectations), with respect to load or volume.
+
 The purpose of the performance testing is to measure characteristics, such as response times, throughput or the mean time between failures (for reliability testing). This can be done in different ways depending on the tool, such as different user profiles, different types of activity, timing delays and other parameters. Adequately replicating the end-user environments or user profiles is usually key to realistic results.
+
 If the performance is not up to the expected standard, then some analysis needs to be performed to see where the problem is and to know what can be done to improve the performance.
 
 For a clear overview of all from above, you can find below a comparison table between the pointed automate tests:
