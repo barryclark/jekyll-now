@@ -76,7 +76,7 @@ When speaking of automation, we can refer to 5 types of automated tests
 +	An API needs to be tested like all the other software applications. Usually we test the functionality, compliance and security issues. In web applications, we can test the Request and Response of our application that whether they are secure and encrypted or not.
 +	is one of the areas highly recommended for automation testing, in DevOps world, agile development and continuous delivery cycles.
 
-**Common kinds of API testing:**
+**Common kinds of API testing**
 +	Functionality testing — the API technically works.
 +	Usability testing — the API is easy to work with.
 +	Reliability testing — the API can be consistently connected to and lead to consistent results.
@@ -86,7 +86,7 @@ When speaking of automation, we can refer to 5 types of automated tests
 +	Proficiency testing — the API increases what developers are able to do.
 +	API documentation testing — also called discovery testing, the API documentation easily guides the user.
 
-**Benefits of API testing:**
+**Benefits of API testing**
 +	Access to application without user interface – in this way testers will detect and recognize the errors early, instead of them becoming larger issues during GUI testing.
 +	Protection from malicious code and breakage - API test requires specific conditions and inputs, which protects the application from malicious code and breakage. 
 +	Time Efficiency vs. functional and validation testing - API testing is far way faster than functional GUI testing.. 
@@ -161,7 +161,7 @@ Since they’re automated, the cost of running the tests is very low, so natural
 +	Is used for comparison between two systems to find which performs better. Or it can measure what part of the system or workload causes the system to underperform.
 +	This process can involve quantitative tests done in a lab, such as measuring the response time or the number of MIPS (millions of instructions per second) at which a system functions.
 
-**Benefits of performance testing:**
+**Benefits of performance testing**
 +	Improve user experience on sites and web apps
 +	Gather metrics useful for tuning the system
 +	Identify bottlenecks such as database configuration
@@ -171,6 +171,8 @@ Since they’re automated, the cost of running the tests is very low, so natural
 Performance testing tools are used on the system level testing, and they check how the system is impacted when reaching high limits. Load testing checks how the system reacts on its expected number of transactions. A volume testing checks how the system can reacts to a large amount of data, (many fields in a record, many records in a file, etc). A stress testing exceeds the normal expected the normal usage of the system (to see what would happen outside its design expectations), with respect to load or volume. 
 The purpose of the performance testing is to measure characteristics, such as response times, throughput or the mean time between failures (for reliability testing). This can be done in different ways depending on the tool, such as different user profiles, different types of activity, timing delays and other parameters. Adequately replicating the end-user environments or user profiles is usually key to realistic results.
 If the performance is not up to the expected standard, then some analysis needs to be performed to see where the problem is and to know what can be done to improve the performance.
+
+For a clear overview of all from above, you can find below a comparison table between the pointed automate tests:
 
 | Unit Tests                  | API Tests                             | Integration Tests                       | 
 | --------------------------- | ------------------------------------- | --------------------------------------- |      
