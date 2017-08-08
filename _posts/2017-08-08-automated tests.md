@@ -1,3 +1,11 @@
+layout: post
+title: Automated tests
+category: dev
+tags: [automation]
+author: Bianca Carabas
+author_email: bianca-cristina.carabas@haufe-lexware.com
+
+
 ## 1. WHAT IS AN AUTOMATED SOFTWARE TESTING?
 
 Software Test automation uses specialized tools for the execution of tests and comparison of the actual results against the expected result.
