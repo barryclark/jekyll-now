@@ -1,0 +1,4 @@
+node_modules
+coverage
+integration/public/bundle.js
+example/*.svg

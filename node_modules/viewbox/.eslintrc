@@ -1,0 +1,41 @@
+{
+  "rules": {
+    "indent": [2, 2, {"SwitchCase": 1}],
+    "quotes": [2, "single", "avoid-escape"],
+    "linebreak-style": [2, "unix"],
+    "semi": [2, "never"],
+    "eqeqeq": [2, "allow-null"],
+    "no-extend-native": 2,
+    "curly": [2, "all"],
+    "strict": [2, "global"],
+    "space-before-function-paren": [2, "never"],
+    "space-unary-ops": [2, {"words": true, "nonwords": false}],
+    "space-infix-ops": [2, {"int32Hint": false}],
+    "keyword-spacing": 2,
+    "spaced-comment": [2, "always", { "exceptions": ["-", "+"] }],
+    "no-inline-comments": 2,
+    "func-style": [2, "expression"],
+    "callback-return": [2, ["done", "next"]],
+    "no-path-concat": 2,
+    "no-use-before-define": 2,
+    "array-bracket-spacing": [2, "never"],
+    "object-curly-spacing": [2, "never"],
+    "key-spacing": [2, {"beforeColon": false, "afterColon": true}],
+    "comma-spacing": [2, {"before": false, "after": true}],
+    "brace-style": [2, "stroustrup", {"allowSingleLine": true}],
+    "handle-callback-err": [2, "^(e|err|error)$" ],
+    "one-var": [2, "never"],
+    "one-var-declaration-per-line": [2, "always"],
+    "newline-after-var": 2,
+    "newline-before-return": 2,
+    "no-else-return": 2,
+    "no-unexpected-multiline": 2,
+    "eol-last": 2
+  },
+  "env": {
+    "node": true,
+    "browser": true,
+    "mocha": true
+  },
+  "extends": "eslint:recommended"
+}

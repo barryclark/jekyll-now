@@ -1,0 +1,12 @@
+ui: mocha-bdd
+browsers:
+  - name: chrome
+    version: -1..latest
+  - name: safari
+    version: -1..latest
+  - name: firefox
+    version: -1..latest
+  - name: ie
+    version: -1..latest
+  - name: microsoftedge
+    version: latest

@@ -1,0 +1,32 @@
+{
+  "name": "emilypmendez.github.io",
+  "version": "1.0.2",
+  "description": "Software Design and Development Portfolio",
+  "main": "index.html",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "devicon": "^2.0.0",
+    "git": "^0.1.5",
+    "normalize.less": "^1.0.0",
+    "viewbox": "^1.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emilypmendez/emilypmendez.github.io.git"
+  },
+  "keywords": [
+    "portfolio",
+    "react",
+    "javascript"
+  ],
+  "author": "Emily Mendez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/emilypmendez/emilypmendez.github.io/issues"
+  },
+  "homepage": "https://github.com/emilypmendez/emilypmendez.github.io#readme"
+}
