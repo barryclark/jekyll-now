@@ -1,0 +1,195 @@
+
+html, body {
+  font-family: 'Ubuntu', sans-serif;
+  padding-top: 20px;
+  background-color: #2c3e50;
+  background-image: url(../media/mac_bg.jpg);
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100% !important;
+  text-align: center;
+  overflow-y: scroll;
+  overflow-x: hidden !important;
+}
+
+#nav div.col-xs-2 { /* topbar, above navigation links */
+  padding: 45px;
+}
+
+
+#nav a {
+  text-align: center;
+  color: #F2F2F2;
+  font-size: 1.1em;
+}
+
+
+#summary {
+  color: #F2F2F2;
+  padding-top: 2em;
+  padding-bottom: 5em;
+}
+
+hr {
+  width: 50%;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+}
+
+div .about-text p { /* about text */
+  text-align: left;
+  padding: 0 2.5em;
+  width: 60%;
+  color: #000;
+  font-size: 1.25em;
+  float: left;
+}
+
+#profile { /* mobile profile picture */
+  border-radius: 100%;
+  border: solid #2c3e50 5px;
+  width: 60%;
+  margin-bottom: 5%;
+  display: none;
+}
+
+#profile2 { /* large screen profile picture */
+  border-radius: 100%;
+  border: solid #2c3e50 5px;
+  display: inline;
+}
+
+h3 {
+  color: #232323;
+  margin-top: 0;
+}
+
+.heading {
+  padding-top: 2em;
+  padding-bottom: 1em;
+}
+
+#about {
+  background: #F2F2F2;
+  width: 100%;
+}
+
+#projects {
+  background: #F2F2F2;
+}
+
+#bottom, footer {
+  background: #2c3e50;
+  color: #F2F2F2;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+/* currently not in use
+#talent .heading, #learning .heading {
+  font-color: #F2F2F2;
+} */
+
+ul#scroll-line, div#learning ul {
+    padding-bottom: 2em;
+    display: inline;
+    color: #F2F2F2;
+    list-style: none;
+    list-style-type: none;
+  }
+
+/* skills - below about text */
+div#talent ul#scroll-line.list-inline li, div#learning ul.list-inline li{
+    font-size: 5em;
+    margin: 0 0.35em;
+    padding: 1.5px;
+    display: inline;
+  }
+
+#get-in-touch .heading {
+  padding-top: 1em;
+  color: #F2F2F2;
+}
+
+
+#contact-icons {
+  padding-bottom: 2em;
+  font-size: 1.5em;
+  color: #F2F2F2;
+
+  } #contact-icons .icon {
+  fill: #F2F2F2;
+  display: inline;
+  margin: 0 .5em;
+  height: 4em;
+  width: 4em;
+}
+
+.container{
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+
+} .container.project-container {
+  margin: 0 auto !important;
+  width: 90% !important;
+}
+
+#mail-link a{
+  color: #F2F2F2;
+}
+
+@media screen
+  and (min-device-width: 1200px)
+  and (max-device-width: 1600px) {
+    .container {
+      width: 100%
+    }
+    .thumbnail img{
+      min-height: 300px;
+      width: 100%;
+      position: relative;
+    }
+  }
+
+/*mobile*/
+@media screen
+  and (min-device-width: 320px)
+  and (max-device-width: 768px)
+  and (-webkit-min-device-pixel-ratio: 1)
+  and (orientation: portrait) {
+    div .about-text p {
+      padding: 0 1.8em;
+      text-align: left;
+      padding: 0 3em;
+      width: 100%;
+    }
+    #profile {
+      display: inline;
+    }
+    #profile2 {
+      display: none;
+    }
+    #summary {
+      color: #F2F2F2;
+      padding-top: .2em;
+      padding-bottom: 2em;
+    }
+    .container {
+      width: 100%
+    }
+    #contact-icons .icon {
+      fill: #F2F2F2;
+      display: inline;
+      margin: 0 .5em;
+      height: 3em;
+      width: 3em;
+    }
+    hr {
+      width: 50%;
+      height: 2px;
+    }
+}
