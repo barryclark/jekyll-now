@@ -2,9 +2,7 @@
 layout: post
 title: Actiontec - Fuzzing input, overflowing buffers
 ---
-
-Placeholder
-
+An outline to expand on... when not sleepy.
 Found the firmware/build image from google dorks. 
 
 Built a firmware image from source, found gdb-server, used radare2 on the httpd daemon
