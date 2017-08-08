@@ -1,9 +1,12 @@
+---
 layout: post
 title: Automated tests
 category: dev
 tags: [automation]
 author: Bianca Carabas
 author_email: bianca-cristina.carabas@haufe-lexware.com
+---
+
 
 
 ## 1. WHAT IS AN AUTOMATED SOFTWARE TESTING?
