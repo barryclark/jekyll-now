@@ -130,8 +130,11 @@ Automated integration testing offers development teams the time to continue work
 #### 2.4 - GUI Tests
 
 GUI’s are always highly affected by changes, and the testing subject is the user interface of an application. Thus they are also considered the toughest form of automated testing type. GUI testing is closest to what users will do with the application. So, these tests are benefic in finding bugs early and it can be used in many scenarios such as regression testing.
+
 The most popular GUI testing tools are QTP (Now called UFT), Selenium WebDriver, Test Complete and Microsoft Coded UI (which is a part of Visual Studio ultimate and premium editions).
+
 GUI testing assures that an application is implemented according to the specifications and it has the proper functionality of the user interface. 
+
 In addition to functionality, GUI testing evaluates design elements such as layout, colors, fonts, font sizes, labels, text boxes, text formatting, captions, buttons, lists, icons, links and content. GUI testing processes can be either manual or automatic.
 
 **Benefits of automated GUI testing**
