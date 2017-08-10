@@ -38,6 +38,7 @@ r2jekyll <- function(filename, dpi = 192) {
   unlink("{{site.url}}", recursive=T)
 }
 
+# r2jekyll("imputing-covariance-matrices-for-multi-variate-meta-analysis")
 # r2jekyll("Siren-song-of-significance")
 # r2jekyll("PET-PEESE-performance")
 # knitr::purl("_Rmd/PET-PEESE-performance.Rmd", output = "R/PET-PEESE-performance-graphs.R")

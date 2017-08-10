@@ -84,7 +84,8 @@ all.equal(dat_scramble$vi, diag(V_mat))
 
 ```{r}
 library(dplyr)
-data(SATcoaching, package = "clubSandwich")
+library(clubSandwich)
+data(SATcoaching)
 
 mean_hrs_ln <- 
   SATcoaching %>% 
@@ -144,10 +145,17 @@ The results of fitting this model using restricted maximum likelihood with metaf
 
 ## Robust variance estimation.
 
-Now, experienced meta-analysts might point out that a further, alternative analytic strategy to the one described above would be to use robust variance estimation methods (RVE; [Hedges, Tipton, & Johnson](https://dx.doi.org/10.1002/jrsm.5)). However, RVE is not so much an alternative strategy as it is a complementary technique, which can be used in combination with any of the models estimated above. Robust standard errors and hypothesis tests can readily be obtained with the `clubSandwich` package. Here's how to do it for the random effects meta-regression model:
+Now, experienced meta-analysts might point out that a further, alternative analytic strategy to the one described above would be to use robust variance estimation methods (RVE; [Hedges, Tipton, & Johnson](https://dx.doi.org/10.1002/jrsm.5)). However, RVE is not so much an alternative strategy as it is a complementary technique, which can be used in combination with any of the models estimated above. Robust standard errors and hypothesis tests can readily be obtained with the [clubSandwich package](https://cran.r-project.org/package=clubSandwich). Here's how to do it for the random effects meta-regression model:
 
 ```{r}
 library(clubSandwich)
 coef_test(MVRE_hrs, vcov = "CR2")
 ```
 
+RVE is also available in the  [robumeta R package](https://CRAN.R-project.org/package=robumeta), but there are several differences between the implementation there and the method I've demonstrated here. From the user's perspective, an advantage of robumeta is that it does all of the covariance imputation calculations "under the hood," whereas with metafor the calculations need to be done prior to fitting the model. Beyond this, differences include:
+
+* robumeta uses a specific random effects structure that can't be controlled by the user, whereas metafor can be used to estimate a variety of different random effects structures;
+* robumeta uses a moment estimator for the between-study variance, whereas metafor provides FML or REML estimation;
+* robumeta uses semi-efficient, diagonal weights when fitting the meta-regression, whereas metafor uses weights that are fully efficient (exactly inverse-variance) under the working model. 
+
+The advantages and disadvantages of these two approaches involve some subtleties that I'll get into in a future post. 
