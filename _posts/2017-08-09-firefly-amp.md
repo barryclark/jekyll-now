@@ -44,7 +44,7 @@ Due to the nature of the electronic component industry, I've provided several li
 Please take heed of the information provided on the RonSound Revision 8 PCB page regarding the chassis, transformers, tubes, sockets, etc.
 
 * **[RonSound Revision 8 PCB](http://ronsound.com/index.php?main_page=product_info&cPath=129&products_id=882)**
-* **[John Calhoun's FireFly PCB Assembly Guide and Bill of Materials (BOM Page 11)](http://vintageusaguitars.com/misc/Firefly%20PCB%20Guide%208.pdf)**
+* **[John Calhoun's FireFly PCB Assembly Guide and Bill of Materials](http://vintageusaguitars.com/misc/Firefly%20PCB%20Guide%208.pdf)**
 * **[Mouser Parts List](https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=41C1F88452)**
 
 Additionally, you may want to purchase some nuts and washers in order to mount the transformers to the chassis. 
