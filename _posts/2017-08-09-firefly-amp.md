@@ -4,8 +4,10 @@ title: FireFly Tube Amplifier Part 1
 ---
 ## Building a FireFly Tube Amplifier
 
-I recently built a FireFly Tube Amplifier based off of [Doug Hammond's original design](http://ax84.com/index.php/oldprojects.html?project_id=firefly). 
+I recently built a FireFly Tube Amplifier based off of [Doug Hammond's original design](http://ax84.com/index.php/oldprojects.html?project_id=firefly).
+
 ![FireFly-2]({{taylorjhawkins.com}}/images/firefly-2.jpg)
+
 This will be a multi-part series, as I intend to build an enclosure for the amplifier, as well as a speaker cabinet sometime in the near future. 
 
 I'd like to briefly document the process followed, the tools required, and the issues I ran into. 
@@ -87,6 +89,7 @@ Towards the end of Calhoun's document there are two Chassis Drilling Templates, 
 #### Improper Tools
 
 Many of the issues I encountered cutting the chassis had to do with the lack of proper tools for the job. I made do with dull drill bits and a pair of dikes. This resulted in ugly, but functional holes. 
+
 ![FireFly-1]({{taylorjhawkins.com}}/images/firefly-1.jpg)
 
 #### Improper Process
