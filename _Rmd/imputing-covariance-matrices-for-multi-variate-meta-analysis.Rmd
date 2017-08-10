@@ -9,28 +9,15 @@ In many systematic reviews, it is common for eligible studies to contribute effe
 
 Several solutions to this conundrum have been proposed in the meta-analysis methodology literature. One possible strategy is to just impute a correlation based on subject-matter knowledge (or at least feigned expertise), and assume that this correlation is constant across studies. This analysis could be supplemented with sensitivity analyses to examine the extent to which the parameter estimates and inferences are sensitive to alternative assumptions about the inter-correlation of effects within studies. A related strategy, described by [Wei and Higgins (2013)](https://dx.doi.org/10.1002/sim.5679), is to meta-analyze any available correlation estimates and then use the results to impute correlations for any studies with missing correlations. 
 
-Both of these approaches require the meta-analyst to calculate block-diagonal sampling covariance matrices for the effect size estimates, which can be a bit unwieldy. I often use the impute-the-correlation strategy in my meta-analysis work and have written a helper function to compute covariance matrices, given known sampling variances and imputed correlations for each study. In this post, I'll explain the function and demonstrate how to use it for conducting meta-analysis of correlated effect size estimates. 
+Both of these approaches require the meta-analyst to calculate block-diagonal sampling covariance matrices for the effect size estimates, which can be a bit unwieldy. I often use the impute-the-correlation strategy in my meta-analysis work and have written a helper function to compute covariance matrices, given known sampling variances and imputed correlations for each study. In the interest of not repeating myself, I've added the function to the latest version of my clubSandwich package. In this post, I'll explain the function and demonstrate how to use it for conducting meta-analysis of correlated effect size estimates. 
 
 ## An R function for block-diagonal covariance matrices
 
 Here is the function: 
 
 ```{r}
-
-impute_covariance_matrix <- function(vi, cluster, r, return_list = identical(as.factor(cluster), sort(as.factor(cluster)))) {
-
-  vi_list <- split(vi, cluster)
-  r_list <- rep_len(r, length(vi_list))
-  vcov_list <- Map(function(V, rho) (rho + diag(1 - rho, nrow = length(V))) * tcrossprod(sqrt(V)), V = vi_list, rho = r_list)
-
-  if (return_list) {
-    return(vcov_list)
-  } else {
-    vcov_mat <- metafor::bldiag(vcov_list)
-    cluster_index <- order(order(cluster))
-    return(vcov_mat[cluster_index, cluster_index])
-  }
-}
+library(clubSandwich)
+impute_covariance_matrix
 
 ```
 
@@ -84,7 +71,6 @@ all.equal(dat_scramble$vi, diag(V_mat))
 
 ```{r}
 library(dplyr, warn.conflicts=FALSE)
-library(clubSandwich)
 data(SATcoaching)
 
 # calculate the mean of log of coaching hours

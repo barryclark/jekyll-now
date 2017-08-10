@@ -10,7 +10,7 @@ In many systematic reviews, it is common for eligible studies to contribute effe
 
 Several solutions to this conundrum have been proposed in the meta-analysis methodology literature. One possible strategy is to just impute a correlation based on subject-matter knowledge (or at least feigned expertise), and assume that this correlation is constant across studies. This analysis could be supplemented with sensitivity analyses to examine the extent to which the parameter estimates and inferences are sensitive to alternative assumptions about the inter-correlation of effects within studies. A related strategy, described by [Wei and Higgins (2013)](https://dx.doi.org/10.1002/sim.5679), is to meta-analyze any available correlation estimates and then use the results to impute correlations for any studies with missing correlations. 
 
-Both of these approaches require the meta-analyst to calculate block-diagonal sampling covariance matrices for the effect size estimates, which can be a bit unwieldy. I often use the impute-the-correlation strategy in my meta-analysis work and have written a helper function to compute covariance matrices, given known sampling variances and imputed correlations for each study. In this post, I'll explain the function and demonstrate how to use it for conducting meta-analysis of correlated effect size estimates. 
+Both of these approaches require the meta-analyst to calculate block-diagonal sampling covariance matrices for the effect size estimates, which can be a bit unwieldy. I often use the impute-the-correlation strategy in my meta-analysis work and have written a helper function to compute covariance matrices, given known sampling variances and imputed correlations for each study. In the interest of not repeating myself, I've added the function to the latest version of my clubSandwich package. In this post, I'll explain the function and demonstrate how to use it for conducting meta-analysis of correlated effect size estimates. 
 
 ## An R function for block-diagonal covariance matrices
 
@@ -18,20 +18,30 @@ Here is the function:
 
 
 {% highlight r %}
-impute_covariance_matrix <- function(vi, cluster, r, return_list = identical(as.factor(cluster), sort(as.factor(cluster)))) {
+library(clubSandwich)
+impute_covariance_matrix
+{% endhighlight %}
 
-  vi_list <- split(vi, cluster)
-  r_list <- rep_len(r, length(vi_list))
-  vcov_list <- Map(function(V, rho) (rho + diag(1 - rho, nrow = length(V))) * tcrossprod(sqrt(V)), V = vi_list, rho = r_list)
 
-  if (return_list) {
-    return(vcov_list)
-  } else {
-    vcov_mat <- metafor::bldiag(vcov_list)
-    cluster_index <- order(order(cluster))
-    return(vcov_mat[cluster_index, cluster_index])
-  }
-}
+
+{% highlight text %}
+## function (vi, cluster, r, return_list = identical(as.factor(cluster), 
+##     sort(as.factor(cluster)))) 
+## {
+##     vi_list <- split(vi, cluster)
+##     r_list <- rep_len(r, length(vi_list))
+##     vcov_list <- Map(function(V, rho) (rho + diag(1 - rho, nrow = length(V))) * 
+##         tcrossprod(sqrt(V)), V = vi_list, rho = r_list)
+##     if (return_list) {
+##         return(vcov_list)
+##     }
+##     else {
+##         vcov_mat <- metafor::bldiag(vcov_list)
+##         cluster_index <- order(order(cluster))
+##         return(vcov_mat[cluster_index, cluster_index])
+##     }
+## }
+## <environment: namespace:clubSandwich>
 {% endhighlight %}
 
 The function takes three required arguments: 
@@ -53,15 +63,15 @@ dat
 
 {% highlight text %}
 ##   study         yi vi
-## 1     A -1.1472015  4
-## 2     A -1.3883116  5
-## 3     B -0.3927139  6
-## 4     B  0.9303416  7
-## 5     B  0.2426224  8
-## 6     C -0.3683757  9
-## 7     C -1.0513308 10
-## 8     C -0.1072977 11
-## 9     C -1.2500106 12
+## 1     A  1.5684473  4
+## 2     A -0.7277218  5
+## 3     B -0.4700095  6
+## 4     B -1.1516367  7
+## 5     B -1.2375938  8
+## 6     C -0.7903151  9
+## 7     C  0.7269549 10
+## 8     C  0.1689559 11
+## 9     C  1.5180190 12
 {% endhighlight %}
 
 I'll assume that effect size estimates from a given study are correlated at 0.7:
@@ -153,15 +163,15 @@ dat_scramble
 
 {% highlight text %}
 ##   study         yi vi
-## 7     C -1.0513308 10
-## 8     C -0.1072977 11
-## 4     B  0.9303416  7
-## 5     B  0.2426224  8
-## 6     C -0.3683757  9
-## 1     A -1.1472015  4
-## 2     A -1.3883116  5
-## 9     C -1.2500106 12
-## 3     B -0.3927139  6
+## 3     B -0.4700095  6
+## 8     C  0.1689559 11
+## 4     B -1.1516367  7
+## 1     A  1.5684473  4
+## 9     C  1.5180190 12
+## 5     B -1.2375938  8
+## 7     C  0.7269549 10
+## 6     C -0.7903151  9
+## 2     A -0.7277218  5
 {% endhighlight %}
 
 
@@ -174,16 +184,16 @@ V_mat
 
 
 {% highlight text %}
-##         [,1]   [,2]  [,3]  [,4]  [,5] [,6] [,7]   [,8]  [,9]
-##  [1,] 10.000  7.342 0.000 0.000 6.641 0.00 0.00  7.668 0.000
-##  [2,]  7.342 11.000 0.000 0.000 6.965 0.00 0.00  8.042 0.000
-##  [3,]  0.000  0.000 7.000 5.238 0.000 0.00 0.00  0.000 4.537
-##  [4,]  0.000  0.000 5.238 8.000 0.000 0.00 0.00  0.000 4.850
-##  [5,]  6.641  6.965 0.000 0.000 9.000 0.00 0.00  7.275 0.000
-##  [6,]  0.000  0.000 0.000 0.000 0.000 4.00 3.13  0.000 0.000
-##  [7,]  0.000  0.000 0.000 0.000 0.000 3.13 5.00  0.000 0.000
-##  [8,]  7.668  8.042 0.000 0.000 7.275 0.00 0.00 12.000 0.000
-##  [9,]  0.000  0.000 4.537 4.850 0.000 0.00 0.00  0.000 6.000
+##        [,1]   [,2]  [,3] [,4]   [,5]  [,6]   [,7]  [,8] [,9]
+##  [1,] 6.000  0.000 4.537 0.00  0.000 4.850  0.000 0.000 0.00
+##  [2,] 0.000 11.000 0.000 0.00  8.042 0.000  7.342 6.965 0.00
+##  [3,] 4.537  0.000 7.000 0.00  0.000 5.238  0.000 0.000 0.00
+##  [4,] 0.000  0.000 0.000 4.00  0.000 0.000  0.000 0.000 3.13
+##  [5,] 0.000  8.042 0.000 0.00 12.000 0.000  7.668 7.275 0.00
+##  [6,] 4.850  0.000 5.238 0.00  0.000 8.000  0.000 0.000 0.00
+##  [7,] 0.000  7.342 0.000 0.00  7.668 0.000 10.000 6.641 0.00
+##  [8,] 0.000  6.965 0.000 0.00  7.275 0.000  6.641 9.000 0.00
+##  [9,] 0.000  0.000 0.000 3.13  0.000 0.000  0.000 0.000 5.00
 {% endhighlight %}
 
 To see that this is correct, check that the diagonal entries of `V_mat` are the same as `vi`:
@@ -205,7 +215,6 @@ all.equal(dat_scramble$vi, diag(V_mat))
 
 {% highlight r %}
 library(dplyr, warn.conflicts=FALSE)
-library(clubSandwich)
 data(SATcoaching)
 
 # calculate the mean of log of coaching hours
@@ -268,7 +277,18 @@ This can then be fed into `metafor` to estimate a fixed effect or random effects
 
 {% highlight r %}
 library(metafor, quietly = TRUE)
+{% endhighlight %}
 
+
+
+{% highlight text %}
+## Loading 'metafor' package (version 1.9-9). For an overview 
+## and introduction to the package please type: help(metafor).
+{% endhighlight %}
+
+
+
+{% highlight r %}
 # bivariate fixed effect meta-analysis
 MVFE_null <- rma.mv(d ~ 0 + test, V = V_list, data = SATcoaching)
 MVFE_null
