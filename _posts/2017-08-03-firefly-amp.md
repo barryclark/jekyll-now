@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 title: FireFly Tube Amplifier Part 1
 ---
 ## Building a FireFly Tube Amplifier
