@@ -5,7 +5,7 @@ title: FireFly Tube Amplifier Part 1
 ## Building a FireFly Tube Amplifier
 
 I recently built a FireFly Tube Amplifier based off of [Doug Hammond's original design](http://ax84.com/index.php/oldprojects.html?project_id=firefly). 
-
+![FireFly-2]({{taylorjhawkins.com}}/images/firefly-2.jpg)
 This will be a multi-part series, as I intend to build an enclosure for the amplifier, as well as a speaker cabinet sometime in the near future. 
 
 I'd like to briefly document the process followed, the tools required, and the issues I ran into. 
@@ -64,13 +64,13 @@ This is important to note, because if power is connected to **BOTH** the black *
 
 In steps 19 and 20 of Calhoun's guide, the Power Switch is wired into the amplifier circuit. 
 
-The switch recommended i nthe BOM is a Double Pole Double Throw (DPDT) Switch. This switch has two input terminals and four output terminals, which makes it an ON/ON switch. However, Calhoun's document wires the DPDT switch so that one set of output terminals is used for the input, which prevents live current being present on the unused terminals when the switch is in the OFF state. 
+The switch recommended in the BOM is a Double Pole Double Throw (DPDT) Switch. This switch has two input terminals and four output terminals, which makes it an ON/ON switch. However, Calhoun's document wires the DPDT switch so that one set of output terminals is used for the input, which prevents live current being routed to the unused terminals when the switch is in the OFF state. 
 
-The terminals on the DPDT switch I purchased were all numbered, just as in Calhoun's document. However, if the particular switch I purchased is wired accordingly, then the ON/OFF states will be inverted on the amplifier.
+The terminals on the DPDT switch I purchased were all numbered, just as in Calhoun's document. However, if the particular switch I purchased is wired according to the document, then the ON/OFF states will be inverted on the amplifier.
 
 Additionally, when my amplifier was assembled and power was turned on the internal connection between terminal 1 and terminal 2 failed after about 10 seconds. This required a multimeter in order to perform continuity testing of the circuit to identify the failed component. After identifying that it was in fact the switch, I was able to desolder the input leads from terminals 1 and 4, and then proceed to resolder them to terminals 3 and 6. 
 
-This corrected the ON/OFF inversion issue, as well as resolving the issue with the switches internal failure.
+This corrected the ON/OFF inversion issue, as well as resolving the issue with the switch's internal failure.
 
 #### Output Jack
 
@@ -80,12 +80,15 @@ In step 21 of Calhoun's guide there is a diagram of the output jack being wired 
 
 My experience with cutting the chassis was rife with mistakes, so I will document the issues I encountered, what I learned, and recommendations for the future. I intend to eventually cut a new chassis and migrate the amplifer.
 
+#### Calhoun's Drilling Templates
 
+Towards the end of Calhoun's document there are two Chassis Drilling Templates, of which I used the first designed for a 10"x6"x2" chassis. While this might be obvious, this template does not have an IEC Outlet hole included, although the IEC outlet in the second template may be able to be used. However, appropriate measurements should be taken prior to cutting. Additionally, if affixing the template to the chassis directly, use glue and not tape. 
+
+#### Improper Tools
+
+Many of the issues I encountered cutting the chassis had to do with the lack of proper tools for the job. I made do with dull drill bits and a pair of dikes. This resulted in ugly, but functional holes. 
 ![FireFly-1]({{taylorjhawkins.com}}/images/firefly-1.jpg)
-![FireFly-2]({{taylorjhawkins.com}}/images/firefly-2.jpg)
-![FireFly-3]({{taylorjhawkins.com}}/images/firefly-3.jpg)
-![FireFly-4]({{taylorjhawkins.com}}/images/firefly-4.jpg)
-![FireFly-5]({{taylorjhawkins.com}}/images/firefly-5.jpg)
-![FireFly-6]({{taylorjhawkins.com}}/images/firefly-6.jpg)
-![FireFly-7]({{taylorjhawkins.com}}/images/firefly-7.jpg)
-![FireFly-8]({{taylorjhawkins.com}}/images/firefly-8.jpg)
+
+#### Improper Process
+
+When I cut and drilled the chassis, I had taped the template to the chassis. This was problematic due to the tape moving around while drilling, which resulted in holes that were not in the correct space. It has since been recommended to me that the template be transferred to cardboard and then to acrylic prior to transferring to the aluminum chassis. I also didn't use a center punch or sequential drilling techniques (unibit) to slowly gauge the drill holes. For the IEC Outlet, I drilled holes and then used a pair of dikes to cut between the holes. Rather than the dikes, this could be done with the nibbler for a better result.
