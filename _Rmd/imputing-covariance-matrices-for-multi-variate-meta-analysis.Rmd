@@ -5,15 +5,15 @@ date: August 10, 2017
 tags: [meta-analysis, sandwiches, R, programming]
 ---
 
-In many systematic reviews, it is quite common that eligible studies contribute effect size estimates from not just one, but _multiple_ relevant outcome measures, for a common sample of participants. If those outcomes are inter-correlated, then [so too will be the effect size estimates]({{ site.url }}/Correlations-between-SMDs). However, to actually _estimate_ the degree of correlation, you would need the sample correlation among the outcomes---information that is woefully uncommon for primary studies to report (and best of luck to you if you try to follow up with author queries!). Thus, the meta-analyst is often left in a situation where the sampling _variances_ of the effect size estimates can be reasonably well approximated, but the sampling _covariances_ are unknown for some or all studies. 
+In many systematic reviews, it is common for eligible studies to contribute effect size estimates from not just one, but _multiple_ relevant outcome measures, for a common sample of participants. If those outcomes are orrelated, then [so too will be the effect size estimates]({{ site.url }}/Correlations-between-SMDs). To estimate the degree of correlation, you would need the sample correlation among the outcomes---information that is woefully uncommon for primary studies to report (and best of luck to you if you try to follow up with author queries). Thus, the meta-analyst is often left in a situation where the sampling _variances_ of the effect size estimates can be reasonably well approximated, but the sampling _covariances_ are unknown for some or all studies. 
 
-Several solutions to this conundrum have been proposed in the meta-analysis methodology literature. One possible strategy is to just __impute__ a correlation based on subject-matter knowledge (or at least feigned expertise), and assume that this correlation is constant across studies. This analysis could be supplemented with sensitivity analyses to examine the extent to which the parameter estimates and inferences are sensitive to alternative assumptions about the inter-correlation of effects within studies. A related strategy, described by [Wei and Higgins (2013)](https://dx.doi.org/10.1002/sim.5679) is to meta-analyze any available correlation estimates and then use the results to impute correlations for any studies with missing correlations. 
+Several solutions to this conundrum have been proposed in the meta-analysis methodology literature. One possible strategy is to just impute a correlation based on subject-matter knowledge (or at least feigned expertise), and assume that this correlation is constant across studies. This analysis could be supplemented with sensitivity analyses to examine the extent to which the parameter estimates and inferences are sensitive to alternative assumptions about the inter-correlation of effects within studies. A related strategy, described by [Wei and Higgins (2013)](https://dx.doi.org/10.1002/sim.5679), is to meta-analyze any available correlation estimates and then use the results to impute correlations for any studies with missing correlations. 
 
 Both of these approaches require the meta-analyst to calculate block-diagonal sampling covariance matrices for the effect size estimates, which can be a bit unwieldy. I often use the impute-the-correlation strategy in my meta-analysis work and have written a helper function to compute covariance matrices, given known sampling variances and imputed correlations for each study. In this post, I'll explain the function and demonstrate how to use it for conducting meta-analysis of correlated effect size estimates. 
 
 ## An R function for block-diagonal covariance matrices
 
-Here's the function: 
+Here is the function: 
 
 ```{r}
 
@@ -40,7 +40,7 @@ The function takes three required arguments:
 * `cluster` is a vector identifying the study from which effect size estimates are drawn. Effects with the same value of `cluster` will be treated as correlated.
 * `r` is the assumed value(s) of the correlation between effect size estimates from each study. Note that `r` can also be a vector with separate values for each study. 
 
-Here's a simple example to illustrate how the function works. Say that there are just three studies, contributing 2, 3, and 4 effects, respectively. I'll just make up some values for the effect sizes and variances:
+Here is a simple example to demonstrate how the function works. Say that there are just three studies, contributing 2, 3, and 4 effects, respectively. I'll just make up some values for the effect sizes and variances:
 ```{r}
 dat <- data.frame(study = rep(LETTERS[1:3], 2:4), 
                   yi = rnorm(9), 
@@ -48,7 +48,7 @@ dat <- data.frame(study = rep(LETTERS[1:3], 2:4),
 dat
 ```
 
-I'll assume that effect size estimates from a given study are correlated at 0.7. Here's the result:
+I'll assume that effect size estimates from a given study are correlated at 0.7:
 ```{r}
 V_list <- impute_covariance_matrix(vi = dat$vi, cluster = dat$study, r = 0.7)
 V_list
@@ -63,7 +63,7 @@ cov2cor(V_list$C)
 ```
 As requested, effects are assumed to be equi-correlated with r = 0.7.
 
-If the data are sorted in order of the cluster id's, then the list of matrices returned by `impute_covariance_matrix()` can be fed directly into the `rma.mv` function in metafor (as I demonstrate below). However, if the data are not sorted by `cluster`, then feeding in the list of matrices will not work correctly. Instead, the full $N \times N$ variance-covariance matrix (where $N$ is the total number of effect size estimates) will need to be calculated so that the rows and columns appear in the correct order. To address this, the function includes an optional argument, `return_list`, which determines whether to output a list of matrices (one matrix per study/cluster) or a single matrix corresponding to the full variance-covariance matrix across all studies. By default, `return_list` tests for whether the `cluster` argument is sorted and returns the appropriate form. The argument can also be set by the user, if for example the user wants to have the list of matrices even though the clusters are not in order. 
+If the data are sorted in order of the cluster IDs, then the list of matrices returned by `impute_covariance_matrix()` can be fed directly into the `rma.mv` function in metafor (as I demonstrate below). However, if the data are not sorted by `cluster`, then feeding in the list of matrices will not work correctly. Instead, the full $N \times N$ variance-covariance matrix (where $N$ is the total number of effect size estimates) will need to be calculated so that the rows and columns appear in the correct order. To address this possibility, the function includes an optional argument, `return_list`, which determines whether to output a list of matrices (one matrix per study/cluster) or a single matrix corresponding to the full variance-covariance matrix across all studies. By default, `return_list` tests for whether the `cluster` argument is sorted and returns the appropriate form. The argument can also be set directly by the user. 
 
 Here's what happens if we feed in the data in a different order:
 ```{r}
@@ -83,26 +83,25 @@ all.equal(dat_scramble$vi, diag(V_mat))
 [Kalaian and Raudenbush (1996)](https://dx.doi.org/10.1037/1082-989X.1.3.227) introduced a multi-variate random effects model, which can be used to perform a joint meta-analysis of studies that contribute effect sizes on distinct, related outcome constructs. They demonstrate the model using data from a synthesis on the effects of SAT coaching, where many studies reported effects on both the math and verbal portions of the SAT. The data are available in the `clubSandwich` package:
 
 ```{r}
-library(dplyr)
+library(dplyr, warn.conflicts=FALSE)
 library(clubSandwich)
 data(SATcoaching)
 
+# calculate the mean of log of coaching hours
 mean_hrs_ln <- 
   SATcoaching %>% 
   group_by(study) %>%
   summarise(hrs_ln = mean(log(hrs))) %>%
   summarise(hrs_ln = mean(hrs_ln, na.rm = TRUE))
 
+# clean variables, sort by study ID
 SATcoaching <- 
   SATcoaching %>%
-  # clean variables
   mutate(
     study = as.factor(study),
     hrs_ln = log(hrs) - mean_hrs_ln$hrs_ln
   ) %>%
-  # sort by study ID
   arrange(study, test)
-
 
 SATcoaching %>%
   select(study, year, test, d, V, hrs_ln) %>%
@@ -111,13 +110,15 @@ SATcoaching %>%
 
 The correlation betwen math and verbal test scores are not available, but it seems reasonable to use a correlation of r = 0.66, as reported in the SAT technical information. To synthesize these effects, I'll first compute the required variance-covariances:
 ```{r}
-V_list <- with(SATcoaching, impute_covariance_matrix(vi = V, cluster = study, r = 0.66))
+V_list <- impute_covariance_matrix(vi = SATcoaching$V, 
+                                   cluster = SATcoaching$study, 
+                                   r = 0.66)
 ```
 
 This can then be fed into `metafor` to estimate a fixed effect or random effects meta-analysis or meta-regression models:
 
 ```{r}
-library(metafor)
+library(metafor, quietly = TRUE)
 
 # bivariate fixed effect meta-analysis
 MVFE_null <- rma.mv(d ~ 0 + test, V = V_list, data = SATcoaching)
@@ -141,11 +142,11 @@ MVRE_hrs
 
 ```
 
-The results of fitting this model using restricted maximum likelihood with metafor are actually a bit different from the estimates reported in the original paper, potentially because Kalaian and Raudenbush use a Cholesky decomposition of the sampling covariances, which alters the interpretation of the random effects variance components. The metafor fit is also a bit goofy because the correlation between the random effects for math and verbal scores is very close to -1, although evidently it is not uncommon to obtain such degenerate correlations. 
+The results of fitting this model using restricted maximum likelihood with metafor are actually a bit different from the estimates reported in the original paper, potentially because Kalaian and Raudenbush use a Cholesky decomposition of the sampling covariances, which alters the interpretation of the random effects variance components. The metafor fit is also a bit goofy because the correlation between the random effects for math and verbal scores is very close to -1, although evidently it is not uncommon to obtain such degenerate estimates of the random effects structure. 
 
 ## Robust variance estimation.
 
-Now, experienced meta-analysts might point out that a further, alternative analytic strategy to the one described above would be to use robust variance estimation methods (RVE; [Hedges, Tipton, & Johnson](https://dx.doi.org/10.1002/jrsm.5)). However, RVE is not so much an alternative strategy as it is a complementary technique, which can be used in combination with any of the models estimated above. Robust standard errors and hypothesis tests can readily be obtained with the [clubSandwich package](https://cran.r-project.org/package=clubSandwich). Here's how to do it for the random effects meta-regression model:
+Experienced meta-analysts will no doubt point out that a further, alternative analytic strategy to the one described above would be to use robust variance estimation methods (RVE; [Hedges, Tipton, & Johnson](https://dx.doi.org/10.1002/jrsm.5)). However, RVE is not so much an alternative strategy as it is a complementary technique, which can be used in combination with any of the models estimated above. Robust standard errors and hypothesis tests can readily be obtained with the [clubSandwich package](https://cran.r-project.org/package=clubSandwich). Here's how to do it for the random effects meta-regression model:
 
 ```{r}
 library(clubSandwich)

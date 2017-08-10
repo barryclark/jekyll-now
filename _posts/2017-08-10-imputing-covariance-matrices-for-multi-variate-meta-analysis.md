@@ -6,15 +6,15 @@ tags: [meta-analysis, sandwiches, R, programming]
 permalink: imputing-covariance-matrices-for-multi-variate-meta-analysis
 ---
 
-In many systematic reviews, it is quite common that eligible studies contribute effect size estimates from not just one, but _multiple_ relevant outcome measures, for a common sample of participants. If those outcomes are inter-correlated, then [so too will be the effect size estimates]({{ site.url }}/Correlations-between-SMDs). However, to actually _estimate_ the degree of correlation, you would need the sample correlation among the outcomes---information that is woefully uncommon for primary studies to report (and best of luck to you if you try to follow up with author queries!). Thus, the meta-analyst is often left in a situation where the sampling _variances_ of the effect size estimates can be reasonably well approximated, but the sampling _covariances_ are unknown for some or all studies. 
+In many systematic reviews, it is common for eligible studies to contribute effect size estimates from not just one, but _multiple_ relevant outcome measures, for a common sample of participants. If those outcomes are orrelated, then [so too will be the effect size estimates]({{ site.url }}/Correlations-between-SMDs). To estimate the degree of correlation, you would need the sample correlation among the outcomes---information that is woefully uncommon for primary studies to report (and best of luck to you if you try to follow up with author queries). Thus, the meta-analyst is often left in a situation where the sampling _variances_ of the effect size estimates can be reasonably well approximated, but the sampling _covariances_ are unknown for some or all studies. 
 
-Several solutions to this conundrum have been proposed in the meta-analysis methodology literature. One possible strategy is to just __impute__ a correlation based on subject-matter knowledge (or at least feigned expertise), and assume that this correlation is constant across studies. This analysis could be supplemented with sensitivity analyses to examine the extent to which the parameter estimates and inferences are sensitive to alternative assumptions about the inter-correlation of effects within studies. A related strategy, described by [Wei and Higgins (2013)](https://dx.doi.org/10.1002/sim.5679) is to meta-analyze any available correlation estimates and then use the results to impute correlations for any studies with missing correlations. 
+Several solutions to this conundrum have been proposed in the meta-analysis methodology literature. One possible strategy is to just impute a correlation based on subject-matter knowledge (or at least feigned expertise), and assume that this correlation is constant across studies. This analysis could be supplemented with sensitivity analyses to examine the extent to which the parameter estimates and inferences are sensitive to alternative assumptions about the inter-correlation of effects within studies. A related strategy, described by [Wei and Higgins (2013)](https://dx.doi.org/10.1002/sim.5679), is to meta-analyze any available correlation estimates and then use the results to impute correlations for any studies with missing correlations. 
 
 Both of these approaches require the meta-analyst to calculate block-diagonal sampling covariance matrices for the effect size estimates, which can be a bit unwieldy. I often use the impute-the-correlation strategy in my meta-analysis work and have written a helper function to compute covariance matrices, given known sampling variances and imputed correlations for each study. In this post, I'll explain the function and demonstrate how to use it for conducting meta-analysis of correlated effect size estimates. 
 
 ## An R function for block-diagonal covariance matrices
 
-Here's the function: 
+Here is the function: 
 
 
 {% highlight r %}
@@ -40,7 +40,7 @@ The function takes three required arguments:
 * `cluster` is a vector identifying the study from which effect size estimates are drawn. Effects with the same value of `cluster` will be treated as correlated.
 * `r` is the assumed value(s) of the correlation between effect size estimates from each study. Note that `r` can also be a vector with separate values for each study. 
 
-Here's a simple example to illustrate how the function works. Say that there are just three studies, contributing 2, 3, and 4 effects, respectively. I'll just make up some values for the effect sizes and variances:
+Here is a simple example to demonstrate how the function works. Say that there are just three studies, contributing 2, 3, and 4 effects, respectively. I'll just make up some values for the effect sizes and variances:
 
 {% highlight r %}
 dat <- data.frame(study = rep(LETTERS[1:3], 2:4), 
@@ -52,19 +52,19 @@ dat
 
 
 {% highlight text %}
-##   study          yi vi
-## 1     A -0.71239146  4
-## 2     A -0.93634763  5
-## 3     B -0.01740619  6
-## 4     B -1.38422005  7
-## 5     B -0.66732573  8
-## 6     C -0.88973301  9
-## 7     C  0.52235191 10
-## 8     C  0.03424688 11
-## 9     C  0.27213249 12
+##   study         yi vi
+## 1     A -1.1472015  4
+## 2     A -1.3883116  5
+## 3     B -0.3927139  6
+## 4     B  0.9303416  7
+## 5     B  0.2426224  8
+## 6     C -0.3683757  9
+## 7     C -1.0513308 10
+## 8     C -0.1072977 11
+## 9     C -1.2500106 12
 {% endhighlight %}
 
-I'll assume that effect size estimates from a given study are correlated at 0.7. Here's the result:
+I'll assume that effect size estimates from a given study are correlated at 0.7:
 
 {% highlight r %}
 V_list <- impute_covariance_matrix(vi = dat$vi, cluster = dat$study, r = 0.7)
@@ -140,7 +140,7 @@ cov2cor(V_list$C)
 {% endhighlight %}
 As requested, effects are assumed to be equi-correlated with r = 0.7.
 
-If the data are sorted in order of the cluster id's, then the list of matrices returned by `impute_covariance_matrix()` can be fed directly into the `rma.mv` function in metafor (as I demonstrate below). However, if the data are not sorted by `cluster`, then feeding in the list of matrices will not work correctly. Instead, the full $$N \times N$$ variance-covariance matrix (where $$N$$ is the total number of effect size estimates) will need to be calculated so that the rows and columns appear in the correct order. To address this, the function includes an optional argument, `return_list`, which determines whether to output a list of matrices (one matrix per study/cluster) or a single matrix corresponding to the full variance-covariance matrix across all studies. By default, `return_list` tests for whether the `cluster` argument is sorted and returns the appropriate form. The argument can also be set by the user, if for example the user wants to have the list of matrices even though the clusters are not in order. 
+If the data are sorted in order of the cluster IDs, then the list of matrices returned by `impute_covariance_matrix()` can be fed directly into the `rma.mv` function in metafor (as I demonstrate below). However, if the data are not sorted by `cluster`, then feeding in the list of matrices will not work correctly. Instead, the full $$N \times N$$ variance-covariance matrix (where $$N$$ is the total number of effect size estimates) will need to be calculated so that the rows and columns appear in the correct order. To address this possibility, the function includes an optional argument, `return_list`, which determines whether to output a list of matrices (one matrix per study/cluster) or a single matrix corresponding to the full variance-covariance matrix across all studies. By default, `return_list` tests for whether the `cluster` argument is sorted and returns the appropriate form. The argument can also be set directly by the user. 
 
 Here's what happens if we feed in the data in a different order:
 
@@ -152,16 +152,16 @@ dat_scramble
 
 
 {% highlight text %}
-##   study          yi vi
-## 1     A -0.71239146  4
-## 8     C  0.03424688 11
-## 7     C  0.52235191 10
-## 4     B -1.38422005  7
-## 2     A -0.93634763  5
-## 5     B -0.66732573  8
-## 9     C  0.27213249 12
-## 6     C -0.88973301  9
-## 3     B -0.01740619  6
+##   study         yi vi
+## 7     C -1.0513308 10
+## 8     C -0.1072977 11
+## 4     B  0.9303416  7
+## 5     B  0.2426224  8
+## 6     C -0.3683757  9
+## 1     A -1.1472015  4
+## 2     A -1.3883116  5
+## 9     C -1.2500106 12
+## 3     B -0.3927139  6
 {% endhighlight %}
 
 
@@ -174,16 +174,16 @@ V_mat
 
 
 {% highlight text %}
-##       [,1]   [,2]   [,3]  [,4] [,5]  [,6]   [,7]  [,8]  [,9]
-##  [1,] 4.00  0.000  0.000 0.000 3.13 0.000  0.000 0.000 0.000
-##  [2,] 0.00 11.000  7.342 0.000 0.00 0.000  8.042 6.965 0.000
-##  [3,] 0.00  7.342 10.000 0.000 0.00 0.000  7.668 6.641 0.000
-##  [4,] 0.00  0.000  0.000 7.000 0.00 5.238  0.000 0.000 4.537
-##  [5,] 3.13  0.000  0.000 0.000 5.00 0.000  0.000 0.000 0.000
-##  [6,] 0.00  0.000  0.000 5.238 0.00 8.000  0.000 0.000 4.850
-##  [7,] 0.00  8.042  7.668 0.000 0.00 0.000 12.000 7.275 0.000
-##  [8,] 0.00  6.965  6.641 0.000 0.00 0.000  7.275 9.000 0.000
-##  [9,] 0.00  0.000  0.000 4.537 0.00 4.850  0.000 0.000 6.000
+##         [,1]   [,2]  [,3]  [,4]  [,5] [,6] [,7]   [,8]  [,9]
+##  [1,] 10.000  7.342 0.000 0.000 6.641 0.00 0.00  7.668 0.000
+##  [2,]  7.342 11.000 0.000 0.000 6.965 0.00 0.00  8.042 0.000
+##  [3,]  0.000  0.000 7.000 5.238 0.000 0.00 0.00  0.000 4.537
+##  [4,]  0.000  0.000 5.238 8.000 0.000 0.00 0.00  0.000 4.850
+##  [5,]  6.641  6.965 0.000 0.000 9.000 0.00 0.00  7.275 0.000
+##  [6,]  0.000  0.000 0.000 0.000 0.000 4.00 3.13  0.000 0.000
+##  [7,]  0.000  0.000 0.000 0.000 0.000 3.13 5.00  0.000 0.000
+##  [8,]  7.668  8.042 0.000 0.000 7.275 0.00 0.00 12.000 0.000
+##  [9,]  0.000  0.000 4.537 4.850 0.000 0.00 0.00  0.000 6.000
 {% endhighlight %}
 
 To see that this is correct, check that the diagonal entries of `V_mat` are the same as `vi`:
@@ -204,62 +204,25 @@ all.equal(dat_scramble$vi, diag(V_mat))
 
 
 {% highlight r %}
-library(dplyr)
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## 
-## Attaching package: 'dplyr'
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## The following objects are masked from 'package:lubridate':
-## 
-##     intersect, setdiff, union
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## The following objects are masked from 'package:stats':
-## 
-##     filter, lag
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## The following objects are masked from 'package:base':
-## 
-##     intersect, setdiff, setequal, union
-{% endhighlight %}
-
-
-
-{% highlight r %}
+library(dplyr, warn.conflicts=FALSE)
 library(clubSandwich)
 data(SATcoaching)
 
+# calculate the mean of log of coaching hours
 mean_hrs_ln <- 
   SATcoaching %>% 
   group_by(study) %>%
   summarise(hrs_ln = mean(log(hrs))) %>%
   summarise(hrs_ln = mean(hrs_ln, na.rm = TRUE))
 
+# clean variables, sort by study ID
 SATcoaching <- 
   SATcoaching %>%
-  # clean variables
   mutate(
     study = as.factor(study),
     hrs_ln = log(hrs) - mean_hrs_ln$hrs_ln
   ) %>%
-  # sort by study ID
   arrange(study, test)
-
 
 SATcoaching %>%
   select(study, year, test, d, V, hrs_ln) %>%
@@ -295,32 +258,17 @@ SATcoaching %>%
 The correlation betwen math and verbal test scores are not available, but it seems reasonable to use a correlation of r = 0.66, as reported in the SAT technical information. To synthesize these effects, I'll first compute the required variance-covariances:
 
 {% highlight r %}
-V_list <- with(SATcoaching, impute_covariance_matrix(vi = V, cluster = study, r = 0.66))
+V_list <- impute_covariance_matrix(vi = SATcoaching$V, 
+                                   cluster = SATcoaching$study, 
+                                   r = 0.66)
 {% endhighlight %}
 
 This can then be fed into `metafor` to estimate a fixed effect or random effects meta-analysis or meta-regression models:
 
 
 {% highlight r %}
-library(metafor)
-{% endhighlight %}
+library(metafor, quietly = TRUE)
 
-
-
-{% highlight text %}
-## Loading required package: Matrix
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## Loading 'metafor' package (version 1.9-9). For an overview 
-## and introduction to the package please type: help(metafor).
-{% endhighlight %}
-
-
-
-{% highlight r %}
 # bivariate fixed effect meta-analysis
 MVFE_null <- rma.mv(d ~ 0 + test, V = V_list, data = SATcoaching)
 MVFE_null
@@ -500,11 +448,11 @@ MVRE_hrs
 ## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 {% endhighlight %}
 
-The results of fitting this model using restricted maximum likelihood with metafor are actually a bit different from the estimates reported in the original paper, potentially because Kalaian and Raudenbush use a Cholesky decomposition of the sampling covariances, which alters the interpretation of the random effects variance components. The metafor fit is also a bit goofy because the correlation between the random effects for math and verbal scores is very close to -1, although evidently it is not uncommon to obtain such degenerate correlations. 
+The results of fitting this model using restricted maximum likelihood with metafor are actually a bit different from the estimates reported in the original paper, potentially because Kalaian and Raudenbush use a Cholesky decomposition of the sampling covariances, which alters the interpretation of the random effects variance components. The metafor fit is also a bit goofy because the correlation between the random effects for math and verbal scores is very close to -1, although evidently it is not uncommon to obtain such degenerate estimates of the random effects structure. 
 
 ## Robust variance estimation.
 
-Now, experienced meta-analysts might point out that a further, alternative analytic strategy to the one described above would be to use robust variance estimation methods (RVE; [Hedges, Tipton, & Johnson](https://dx.doi.org/10.1002/jrsm.5)). However, RVE is not so much an alternative strategy as it is a complementary technique, which can be used in combination with any of the models estimated above. Robust standard errors and hypothesis tests can readily be obtained with the [clubSandwich package](https://cran.r-project.org/package=clubSandwich). Here's how to do it for the random effects meta-regression model:
+Experienced meta-analysts will no doubt point out that a further, alternative analytic strategy to the one described above would be to use robust variance estimation methods (RVE; [Hedges, Tipton, & Johnson](https://dx.doi.org/10.1002/jrsm.5)). However, RVE is not so much an alternative strategy as it is a complementary technique, which can be used in combination with any of the models estimated above. Robust standard errors and hypothesis tests can readily be obtained with the [clubSandwich package](https://cran.r-project.org/package=clubSandwich). Here's how to do it for the random effects meta-regression model:
 
 
 {% highlight r %}
