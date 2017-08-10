@@ -47,22 +47,15 @@ But you can try this:
 
 ### Setting up jekyll using docker
 
-**Note**: This will work both on Windows and Mac OS X, in case you do not want to "pollute" your local machine with ruby packages.
+**Note**: This will work on Windows, Mac OS X or Linux, in case you do not want to "pollute" your local machine with ruby packages.
 
 If you have a working `docker` setup on your machine, you can use the prepackaged docker image by the jekyll team to try out the blog generation using that image.
 
-Pull the `jekyll/jekyll:pages` image to get something which behaves almost exactly (or really close to) the github pages generation engine:
-
-```sh
-$ docker pull jekyll/jekyll:pages
-```
-
-Inside the docker Quickstart terminal, `cd` into your `Haufe-Lexware.github.io` fork containing your changes, and then issue the following command:
+The `jekyll/jekyll:pages` image will get you something which behaves almost exactly (or really close to) the github pages generation engine. Inside the docker Quickstart terminal, `cd` into your `Haufe-Lexware.github.io` fork containing your changes, and then issue the following command:
 
 ```sh
 $ docker run --rm --label=jekyll --volume=$(pwd):/srv/jekyll \
-  -it -p $(docker-machine ip `docker-machine active`):4000:4000 \
-    jekyll/jekyll:pages
+  -it -p 4000:4000 jekyll/jekyll:pages jekyll serve --watch
 ```
 
 If everything works out, the jekyll server will serve the blog preview on `http://<ip of your docker machine>:4000`. More information on running jekyll inside docker can be found here: [github.com/jekyll/docker](https://github.com/jekyll/docker).
@@ -73,7 +66,7 @@ Using docker for Mac and Windows beta, the command looks a little simpler, as `d
 
 ```sh
 $ docker run --rm --label=jekyll --volume=$(pwd):/src/jekyll \
-   -it -p 4000:4000 jekyll/jekyll:pages
+   -it -p 4000:4000 jekyll/jekyll:pages jekyll serve --watch
 ```
 
 Jekyll will then be served from [localhost](http://localhost:4000), just like from Linux.
