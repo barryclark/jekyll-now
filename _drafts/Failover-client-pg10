@@ -38,7 +38,7 @@ Here is a selected extract of repmgr.conf.
 cluster=test_repmgr
 node=4
 node_name=node4
-conninfo='port=5432 host=PCYYYPFG user=repmgr dbname=repmgr'
+conninfo='port=5432 host=server2 user=repmgr dbname=repmgr'
 failover=automatic
 promote_command='repmgr standby promote -f /etc/repmgr.conf --log-to-file'
 follow_command='repmgr standby follow -f /etc/repmgr.conf --log-to-file'
@@ -64,15 +64,15 @@ First failover on the standby when Wal FS is filled up. Here is an extract of th
 
 log node 2 (standby failover)
 [2017-07-13 10:29:25] [ERROR] connection to database failed: could not connect to server: Connection refused
-        Is the server running on host "PCYYYPF6" (10.200.222.45) and accepting
+        Is the server running on host "server1" (172.33.1.45) and accepting
         TCP/IP connections on port 5432?
 
 [2017-07-13 10:29:25] [ERROR] unable to connect to upstream node: could not connect to server: Connection refused
-        Is the server running on host "PCYYYPF6" (10.200.222.45) and accepting
+        Is the server running on host "server1" (172.33.1..45) and accepting
         TCP/IP connections on port 5432?
 
 [2017-07-13 10:29:25] [ERROR] connection to database failed: could not connect to server: Connection refused
-        Is the server running on host "PCYYYPF6" (10.200.222.45) and accepting
+        Is the server running on host "server1" (172.33.1..45) and accepting
         TCP/IP connections on port 5432?
 
 [2017-07-13 10:29:25] [WARNING] connection to master has been lost, trying to recover... 15 seconds before failover decision
@@ -82,11 +82,11 @@ log node 2 (standby failover)
 [2017-07-13 10:29:45] [NOTICE] this node is the best candidate to be the new master, promoting...
 [2017-07-13 10:29:46] [NOTICE] Redirecting logging output to '/var/log/repmgr/repmgr-9.6.log'
 [2017-07-13 10:29:46] [ERROR] connection to database failed: could not connect to server: Connection refused
-        Is the server running on host "PCYYYPF6" (10.200.222.45) and accepting
+        Is the server running on host "server1" (172.33.1.45) and accepting
         TCP/IP connections on port 5432?
 
 [2017-07-13 10:29:46] [ERROR] connection to database failed: could not connect to server: Connection refused
-        Is the server running on host "PCYYYPFE" (10.200.222.99) and accepting
+        Is the server running on host "server2" (1172.33.1.99) and accepting
         TCP/IP connections on port 5432?
 
 [2017-07-13 10:29:46] [NOTICE] promoting standby
