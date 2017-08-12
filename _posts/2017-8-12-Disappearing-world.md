@@ -3,7 +3,7 @@ layout: post
 title: My favourite travel tech stories
 ---
 
-by Kim Nobay
+Kim Nobay (Tourtuss Co-founder)
 
 I like to read old books, including books about travel. The following may not be directly about tech, but they are all have an interesting historical technology perspective.
 
