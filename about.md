@@ -1,12 +1,8 @@
 ---
 layout: page
-title: About
+title: 
 permalink: /about/
 ---
-
-Some information about you!
-
-### 
 
 Experienced iOS Developer. Beginner React and Javascript Developer.
 

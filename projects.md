@@ -4,12 +4,15 @@ title: Projects
 permalink: /projects/
 ---
 
-Some information about you!
+### Tap
 
-### More Information
+I made an app to help me track the combos I learn in Tap dancing class.
+Check it out [here](https://itunes.apple.com/ca/app/tap-record-your-tap-dances/id1257400993?ls=1&mt=8)! 
 
-A place to include any other types of information that you'd like to include about yourself.
 
-### Contact me
+## Flower Recognition with Machine Learning
+I built an app to help me learn about Machine Learning and Tensorflow.
 
-[alexstroulger@gmail.com](mailto:alexstroulger@gmail.com)
+## Slackbot
+In progress!!
+
