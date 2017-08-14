@@ -10,3 +10,9 @@ There are many different ways to count sentences offered in tutorials. Today we'
 And some seem to get every sentence right, so I'm comfortable calling this the "right" way.
 
 The fancy term for this is sentence boundary disambiguation (and there's a Wiki article you should check out)
+
+
+You don't want to end a sentence with U.S.
+
+sentences = nltk.sent_tokenize(text)
+
