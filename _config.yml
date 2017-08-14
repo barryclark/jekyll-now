@@ -7,7 +7,7 @@ relative_permalinks: false
 # Setup
 title:               James E. Pustejovsky
 tagline:             'University of Texas at Austin'
-description:         Meta-analysis and statistics
+description:         'Meta-analysis and statistics'
 url:                 http://jepusto.github.io
 baseurl:             'http://jepusto.github.io'
 paginate:            10
