@@ -1,0 +1,38 @@
+{
+  "title": "Scrolling Nav",
+  "name": "startbootstrap-scrolling-nav",
+  "version": "4.0.0-alpha",
+  "description": "A smooth scrolling navigation HTML template built with Bootstrap",
+  "keywords": [
+    "css",
+    "sass",
+    "html",
+    "responsive",
+    "theme",
+    "template"
+  ],
+  "homepage": "http://startbootstrap.com/template-overviews/scrolling-nav",
+  "bugs": {
+    "url": "https://github.com/BlackrockDigital/startbootstrap-scrolling-nav/issues",
+    "email": "feedback@startbootstrap.com"
+  },
+  "license": "MIT",
+  "author": "Start Bootstrap",
+  "contributors": [
+    "David Miller (http://davidmiller.io/)"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BlackrockDigital/startbootstrap-scrolling-nav.git"
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0-beta",
+    "jquery": "^3.2.1",
+    "jquery.easing": "^1.4.1",
+    "popper.js": "^1.11.1"
+  },
+  "devDependencies": {
+    "browser-sync": "2.18.13",
+    "gulp": "^3.9.1"
+  }
+}
