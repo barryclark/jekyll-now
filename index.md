@@ -59,8 +59,9 @@ title: Πως αγοράζουμε, πουλάμε, ξοδεύουμε και δ
 
 ### <a name="buybitcoin"></a>Πώς μπορώ να αγοράσω Bitcoin από την Ελλάδα;
 
-- Στο Bitcoin ATM της [BitcoinsGreece](https://bitcoinsgreece.com/) στο βιβλιοπωλείο Ορίζοντες, Θηβαίου Ιωάννου 20, Αχαρνές 13671, Αττική. Χρεώνει 7% πάνω στην ισοτιμία του ανταλλακτηρίου [Kraken](https://www.kraken.com).
-- Στο Bitcoin ATM της [BCash](https://bcash.gr/) στην Δημητρακοπούλου 84, Αθήνα, κοντά στο Μετρό Συγγρού-Φιξ. Δείτε το [βίντεο](https://youtu.be/9bT2XI2YQ-Y) που δείχνει πως αγοράζετε Bitcoin από τη συσκευή αυτή. Χρεώνει 7% πάνω στην ισοτιμία του ανταλλακτηρίου [Kraken](https://www.kraken.com).
+- Στο Bitcoin ATM της [BitcoinsGreece](https://bitcoinsgreece.com/) στο βιβλιοπωλείο Ορίζοντες, Θηβαίου Ιωάννου 20, Αχαρνές 13671, Αττική. Μόνο για αγορά Bitcoin. Χρεώνει 7% πάνω στην ισοτιμία του ανταλλακτηρίου [Kraken](https://www.kraken.com).
+- Στο Bitcoin ATM της [BCash](https://bcash.gr/) στην Δημητρακοπούλου 84, Αθήνα, κοντά στο Μετρό Συγγρού-Φιξ, για αγορά και πώληση Bitcoin. Επίσης στην Καλοκαιρινού 64, στο Ηράκλειο Κρήτης, μόνο για αγορά Bitcoin. Στο βενζινάδικο της Aegean στη Λεωφόρο Θηβών 197 & Κρήνης, Αθήνα 18233 για αγορά Bitcoin μέσω κουπονιού. Δείτε το [βίντεο](https://youtu.be/9bT2XI2YQ-Y) που δείχνει πως αγοράζετε Bitcoin από το ATM. Χρεώνει 7% πάνω στην ισοτιμία του ανταλλακτηρίου [Kraken](https://www.kraken.com).
+- Στο Bitcoin ATM της [GroupBTC Greece](https://www.groupbtc.gr/el) στην Κώστα Βάρναλη 2-4, Εμπορικό Κέντρο Ερμείον 3, Πλατεία Δούρου Χαλάνδρι 15233. Χρεώνει 6% πάνω στην ισοτιμία του ανταλλακτηρίου [Coinbase](https://www.coinbase.com/) για αγορά και πώληση Bitcoin.
 - Σε οποιοδήποτε ανταλλακτήριο Bitcoin διεθνώς, μέσω τραπεζικού εμβάσματος. Αυτήν τη στιγμή (Οκτώβριος 2016) επιτρέπεται έμβασμα στο εξωτερικό μέχρι €1000 το μήνα χωρίς δικαιολογητικά. Αυτή η μέθοδος έχει και τα χαμηλότερα κόστη, εφόσον το έμβασμα γίνει με τη μέθοδο SEPA (ενδεικτικό κόστος μεταφοράς: €1). Παραδείγματα ανταλλακτηρίων που δέχονται εμβάσματα με SEPA είναι [Kraken](https://www.kraken.com), [Coinbase](https://www.coinbase.com/) και [BitStamp](https://www.bitstamp.net).
 - Σε ανταλλακτήρια που δέχονται πιστωτικές ή χρεωστικές κάρτες. Ένα ανταλλακτήριο που δέχεται Ελληνικές κάρτες είναι το [Coinbase](https://www.coinbase.com/) και χρεώνει 3,99%. Κάποιες Ελληνικές τράπεζες δεν επιτρέπουν τη χρήση των καρτών τους σε κάποια ανταλλακτήρια.
 - <strike>Στο ανταλλακτήριο www.btcgreece.com που δέχεται εμβάσματα σε Ελληνικό τραπεζικό λογαριασμό.</strike>
@@ -204,7 +205,7 @@ title: Πως αγοράζουμε, πουλάμε, ξοδεύουμε και δ
 - Μερικές γνωστές απάτες που έχουν εμφανιστεί στην Ελλάδα: [OneCoin/OneLife](https://en.wikipedia.org/wiki/OneCoin), S-coin/Coinspace. Μπορείτε να διαβάσετε περισσότερα στα Ελληνικά στο [Scamcoin Detector](http://scamdetectorgr.blogspot.gr/).
 - Μερικά άρθρα που περιγράφουν απάτες με κρυπτονομίσματα: [https://blog.xapo.com/beware-of-extraordinary-claims/](https://blog.xapo.com/beware-of-extraordinary-claims/), [http://www.badbitcoin.org/tips/](http://www.badbitcoin.org/tips/), [https://www.weusecoins.com/bitcoin-scams-how-stay-safe/](https://www.weusecoins.com/bitcoin-scams-how-stay-safe/), [https://www.coingecko.com/buzz/complete-guide-to-bitcoin-scams](https://www.coingecko.com/buzz/complete-guide-to-bitcoin-scams). Βίντεο που περιγράφει πως δουλεύουν τα πυραμιδικά σχήματα Πόνζι: [https://www.youtube.com/watch?v=VXRkfqw67GE](https://www.youtube.com/watch?v=VXRkfqw67GE).
 
-Τελευταία ενημέρωση: 2017-06-12
+Τελευταία ενημέρωση: 2017-08-15
 
 <!-- <div class="posts">
   {% for post in site.posts %}
