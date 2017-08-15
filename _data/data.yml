@@ -30,14 +30,6 @@
   location_gr: Αθήνα, Αττική, Ελλάδα
   location_en: Athens, Attica, Greece
 
-- company_gr: GourmetGR
-  company_en: GourmetGR
-  url: http://www.gourmetgr.com
-  category_gr: Καφές, σοκολάτα, τσάι και άλλα τρόφιμα
-  category_en: Coffee, chocolate, tea and other Greek foods
-  location_gr: Αθήνα, Αττική, Ελλάδα
-  location_en: Athens, Attica, Greece
-
 - company_gr: Ταβέρνα Άγγελος
   company_en: Aggelos Tavern
   url: https://www.facebook.com/tavernagelos
@@ -262,14 +254,6 @@
   location_gr: Ίλιον, Αττική, Ελλάδα
   location_en: Ilion, Attica, Greece
   
-- company_gr: Νοικοκυρέματα
-  company_en: Noikokyremata
-  url: https://www.facebook.com/noikokyrematathes
-  category_gr: Κατάστημα Δώρων
-  category_en: Gift Shop
-  location_gr: Θεσσαλονίκη, Μακεδονία, Ελλάδα
-  location_en: Thessaloniki, Macedonia, Greece
-
 - company_gr: Pharmacy128
   company_en: Pharmacy128
   url: http://www.pharmacy128.gr/
@@ -317,14 +301,6 @@
   category_en: Physiotherapy center
   location_gr: Θεσσαλονίκη, Μακεδονία, Ελλάδα
   location_en: Thessaloniki, Macedonia, Greece
-
-- company_gr: Οδοντογλυφίδα
-  company_en: Odontoglyfida
-  url: https://www.facebook.com/Odontoglyfida/
-  category_gr: Ταχυφαγείο
-  category_en: Greek fast food
-  location_gr: Θεσσαλονίκη, Μακεδονία, Ελλάδα
-  location_en: Thessaloniki, Macedonia, Greece
   
 - company_gr: SOFTWeb
   company_en: SOFTWeb
@@ -333,14 +309,6 @@
   category_en: Internet and mobile app services
   location_gr: Θεσσαλονίκη, Μακεδονία, Ελλάδα
   location_en: Thessaloniki, Macedonia, Greece  
-
-- company_gr: Kopa3ka
-  company_en: Kopa3ka
-  url: http://www.kopa3ka.com/
-  category_gr: Αρχιτεκτονική Τοπίου
-  category_en: Landscape Architecture
-  location_gr: Δράμα, Ελλάδα
-  location_en: Drama, Greece
  
 - company_gr: ΕΛΤΑ Πρακτορείο Παγκρατίου
   company_en: ELTA shop at Pagkrati
@@ -438,14 +406,6 @@
   location_gr: Ιωάννινα, Ελλάδα
   location_en: Ioannina, Greece
 
-- company_gr: Break Away
-  company_en: Break Away
-  url: http://www.breakaway.gr
-  category_gr: Δωμάτια απόδρασης
-  category_en: Escape rooms
-  location_gr: Ιωάννινα, Ελλάδα
-  location_en: Ioannina, Greece
-
 - company_gr: WebToner
   company_en: WebToner
   url: http://web-toner.gr/
@@ -454,14 +414,6 @@
   location_gr: Ασπρόπυργος, Αττική, Ελλάδα
   location_en: Aspropyrgos, Attica, Greece
   
-- company_gr: Extravagant coiffure
-  company_en: Extravagant coiffure
-  url: http://www.extravagant.gr
-  category_gr: Κομμωτήριο. <a href="https://www.youtube.com/watch?v=QTRE9zMgS70">Βίντεο καταστηματάρχη για το Bitcoin</a>
-  category_en: Coiffure
-  location_gr: Νέα Ερυθραία, Αττική, Ελλάδα
-  location_en: Nea Erythrea, Attica, Greece
-
 - company_gr: OK Anytime Market Αγίας Παρασκευής
   company_en: OK Anytime Market Agia Paraskevi
   url: https://coinmap.org/venue/7702
@@ -472,7 +424,7 @@
 
 - company_gr: Lennon Eco-gastrobar
   company_en: Lennon Eco-gastrobar
-  url: http://www.lennon.gr
+  url: https://www.facebook.com/LennonEcoGastrobar/
   category_gr: Καφετέρια
   category_en: Cafe
   location_gr: Πάτρα, Ελλάδα
