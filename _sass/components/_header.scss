@@ -1,21 +1,43 @@
-.site-info {
-  float: left;
-  @include mobile {
-    float: none;
-    display: block;
-    margin: 0 auto;
+.header-wrapper {
+  background-color: $white;
+  &:after {
+    content: '';
+    width: 100%;
+    height: 660px;
+    z-index: -1000;
+    background: #000;
+    transform-origin: left bottom;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transform: skew(0deg, -15deg);
+    -moz-transform: skew(0deg, -15deg);
+    -ms-transform: skew(0deg, -15deg);
+    -o-transform: skew(0deg, -15deg);
+    transform: skew(0deg, -15deg);
   }
-  .site-name {
-    margin: 0;
-    font-size: 1.75rem;
-    letter-spacing: 1.75px;
-  }
-  .site-description {
-    margin: -3px 0 0 0;
-    font-size: 0.75rem;
-    font-weight: 300;
-    @include mobile {
-      margin: 3px 0;
+  header {
+    padding: 1rem 0;
+    .site-info {
+      float: left;
+      @include mobile {
+        float: none;
+        display: block;
+        margin: 0 auto;
+      }
+      .site-name {
+        margin: 0;
+        font-size: 1.75rem;
+        letter-spacing: 1.75px;
+      }
+      .site-description {
+        margin: -3px 0 0 0;
+        font-size: 0.75rem;
+        font-weight: 300;
+        @include mobile {
+          margin: 3px 0;
+        }
+      }
     }
   }
 }
