@@ -1,23 +1,7 @@
 .header-wrapper {
-  background-color: $white;
-  &:after {
-    content: '';
-    width: 100%;
-    height: 660px;
-    z-index: -1000;
-    background: #000;
-    transform-origin: left bottom;
-    position: absolute;
-    top: 0;
-    left: 0;
-    -webkit-transform: skew(0deg, -15deg);
-    -moz-transform: skew(0deg, -15deg);
-    -ms-transform: skew(0deg, -15deg);
-    -o-transform: skew(0deg, -15deg);
-    transform: skew(0deg, -15deg);
-  }
+  box-shadow: 0 5px 20px -5px rgba(51,51,51,0.25);
   header {
-    padding: 1rem 0;
+    padding: 1rem 0 1.25rem 0;
     .site-info {
       float: left;
       @include mobile {
