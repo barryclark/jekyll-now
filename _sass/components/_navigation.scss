@@ -2,22 +2,17 @@ nav {
   float: right;
   margin-top: 23px; // @TODO: Vertically middle align
   font-family: $helveticaNeue;
-  font-size: 18px;
-
   @include mobile {
     float: none;
     margin-top: 9px;
     display: block;
     font-size: 16px;
   }
-
   a {
     display: inline-block;
     font-size: 0.75rem;
     text-transform: uppercase;
     margin-left: 20px;
-    color: $darkGray;
-    text-align: right;
     font-weight: 500;
     letter-spacing: 1.5px;
     &:hover{
@@ -29,7 +24,7 @@ nav {
     &:after {
       display:block;
       content: '';
-      border-bottom: solid 1px $darkGray;  
+      border-bottom: solid 3px $black;  
       margin-top: 0.125rem;
       transform: scaleX(0);  
       transition: transform 250ms ease-in-out;
