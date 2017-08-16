@@ -5,19 +5,19 @@
     .site-info {
       float: left;
       @include mobile {
-        float: none;
         display: block;
+        float: none;
         margin: 0 auto;
       }
-      .site-name {
-        margin: 0;
+      h1 {
         font-size: 1.75rem;
         letter-spacing: 1.75px;
+        margin: 0;
       }
-      .site-description {
-        margin: -3px 0 0 0;
+      p {
         font-size: 0.75rem;
         font-weight: 300;
+        margin: -3px 0 0 0;
         @include mobile {
           margin: 3px 0;
         }
