@@ -1,0 +1,33 @@
+.site-info {
+  float: left;
+
+  @include mobile {
+    float: none;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.site-name {
+  margin: 0;
+  color: $darkGray;
+  cursor: pointer;
+  font-family: $helveticaNeue;
+  font-weight: 800;
+  font-size: 1.75rem;
+  letter-spacing: 1.75px;
+  text-transform: lowercase;
+}
+
+.site-description {
+  margin: -3px 0 0 0;
+  color: $gray;
+  font-size: 0.75rem;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  font-style: italic;
+
+  @include mobile {
+    margin: 3px 0;
+  }
+}
