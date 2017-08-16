@@ -20,7 +20,9 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: 30px;
   a {
-    color: inherit;
+    background: linear-gradient(to right, rgb(211, 131, 18), rgb(168, 50, 121));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 }
 
