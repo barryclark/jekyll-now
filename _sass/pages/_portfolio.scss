@@ -1,0 +1,17 @@
+.portfolio-list {
+	list-style-type: none;
+	padding: 0;
+}
+
+@media(min-width: 40em) {
+	.portfolio-list {
+		li {
+			display: inline-block;
+			width: 48%;
+			vertical-align: top;
+		}
+		a:nth-child(odd) li {
+			margin-right: 3%;
+		}
+	}
+}

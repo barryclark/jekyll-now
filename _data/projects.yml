@@ -1,0 +1,34 @@
+- name: Sass Restructure
+  description: Planned and broke up Industry Dive's large SASS file into partials
+  image: gradiant-image.png
+  external_url: http://www.utilitydive.com/
+
+- name: The Dov Charney Story
+  description: Designed and built the webpage
+  image: gradiant-image.png
+  external_url: http://www.retaildive.com/news/dov-charney-american-apparel-rise-fall-comeback/445631/
+
+- name: Publication Site Design & Implementation
+  description: Assist with product redesign and implementation of publication sites
+  image: gradiant-image.png
+  external_url: http://www.utilitydive.com/
+
+- name: 50 States of Construction
+  description: Created and implemented map for Construction Dive's story series
+  image: gradiant-image.png
+  external_url: http://www.constructiondive.com/topic/50-states-construction/
+
+- name: The State of the Shipping Industry
+  description: Created data visualizations with design teammember
+  image: gradiant-image.png
+  external_url: http://www.supplychaindive.com/news/ocean-shipping-industry-consolidation-charts-2017/447936/
+
+- name: The Hanjin Meltdown
+  description: Created and implemented timeline for Supply Chain Dive
+  image: gradiant-image.png
+  external_url: http://www.supplychaindive.com/news/hanjin-timeline-bankruptcy-shipping-effects/430694/
+
+- name: A Divided Rail
+  description: Designed and implemented code for microsite to house special reporting project
+  image: gradiant-image.png
+  external_url: http://cnsmaryland.org/interactives/spring-2016/purple-line-update/index.html

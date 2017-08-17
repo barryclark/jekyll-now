@@ -1,0 +1,19 @@
+.card {
+	box-shadow: 0 20px 20px rgba(0,0,0,.08);
+	height: 380px;
+	margin-bottom: 2.75rem;
+	img {
+		height: 200px;
+		width: 100%;
+	}
+	.card-copy {
+		padding: 1rem;
+		h2 {
+			line-height: 1.4;
+			margin-top: 0.25rem;
+		}
+		p {
+			line-height: 1.4;
+		}
+	} 
+}
