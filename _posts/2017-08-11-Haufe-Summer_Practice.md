@@ -3,7 +3,7 @@ layout: post
 title: Haufe Summer Practice 2017
 subtitle: First steps into the real IT World
 category: dev
-tags: [general, culture, react, alexa]
+tags: [general, culture, mobile, bots]
 author: Nechitelea Robert, Chiriac Alex, Zaharie Robert
 author_email: ncrobertpal@gmail.com
 header-img: "images/HaufeSummerPractice/5-Coding-Challenges-to-Help-You-Train-Your-Brain.jpg"
