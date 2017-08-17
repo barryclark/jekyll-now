@@ -62,7 +62,7 @@ Inside the docker Quickstart terminal, `cd` into your `Haufe-Lexware.github.io` 
 ```sh
 $ docker run --rm --label=jekyll --volume=$(pwd):/srv/jekyll \
   -it -p $(docker-machine ip `docker-machine active`):4000:4000 \
-    jekyll/jekyll:pages
+    jekyll/jekyll:pages jekyll serve --watch
 ```
 
 If everything works out, the jekyll server will serve the blog preview on `http://<ip of your docker machine>:4000`. More information on running jekyll inside docker can be found here: [github.com/jekyll/docker](https://github.com/jekyll/docker).
@@ -72,8 +72,8 @@ If everything works out, the jekyll server will serve the blog preview on `http:
 Using docker for Mac and Windows beta, the command looks a little simpler, as `docker-machine` is not involved:
 
 ```sh
-$ docker run --rm --label=jekyll --volume=$(pwd):/src/jekyll \
-   -it -p 4000:4000 jekyll/jekyll:pages
+$ docker run --rm --label=jekyll --volume=$(pwd):/srv/jekyll \
+   -it -p 4000:4000 jekyll/jekyll:pages jekyll serve --watch
 ```
 
 Jekyll will then be served from [localhost](http://localhost:4000), just like from Linux.
@@ -105,7 +105,7 @@ In this environment, you cannot use the mapping variables $(pwd) or $(docker-mac
 
 Now enter the following to compile the project and start the web server:
 
-`> docker run --rm --label=jekyll --volume=/c/Users/<username>/Documents/GitHub/Haufe-Lexware.github.io:/srv/jekyll -it -p 192.168.99.100:4000:4000 jekyll/jekyll:pages` 
+`> docker run --rm --label=jekyll --volume=/c/Users/<username>/Documents/GitHub/Haufe-Lexware.github.io:/srv/jekyll -it -p 192.168.99.100:4000:4000 jekyll/jekyll:pages jekyll serve --watch` 
 
 (replacing the path and ip with your values)
 
