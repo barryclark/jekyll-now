@@ -1,6 +1,18 @@
 .portfolio-list {
 	list-style-type: none;
 	padding: 0;
+	//temporary
+	.placeholder-image {
+		background: linear-gradient(to right, #d38312, #a83279);
+		height: 200px;
+	}
+	.card {
+		&:hover {
+			.placeholder-image {
+				background: linear-gradient(to right, #a83279, #d38312);
+			}
+		}
+	}
 }
 
 @media(min-width: 40em) {
