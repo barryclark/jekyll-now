@@ -17,8 +17,8 @@ application that shows the availability of Haufe’s meeting rooms based on Outl
 The Haufe Meeting App is an mobile application which displays meetings information such as : meeting room availability, meeting duration(start and end time), organizer, 
 all of this in an easy to use format.The user can switch between the current rooms at any time and also check the schedule on other days.
 
-![Screenshot of the Main Menu] images\HaufeSummerPractice\20747801_1379739378762563_1204295863_o.png
-![Screenshot of the Timeline] images\HaufeSummerPractice\20707381_1379739358762565_748158599_o.png
+![Screenshot of the Main Menu] images/HaufeSummerPractice/20747801_1379739378762563_1204295863_o.png
+![Screenshot of the Timeline] images/HaufeSummerPractice/20707381_1379739358762565_748158599_o.png
 
 During these 4 weeks we learned a lot and went through many challenging problems, which we managed to solve successfully.When we first got here we didn’t have much experience
 in using Javascript frameworks(such as Node or React-Native).We spent the first week installing and configuring the necessary libraries and dependencies and then went on to 
