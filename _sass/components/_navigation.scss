@@ -1,0 +1,37 @@
+nav {
+  float: right;
+  margin-top: 23px; 
+  @include mobile {
+    float: none;
+    margin-top: 9px;
+    display: block;
+    font-size: 16px;
+  }
+  a {
+    display: inline-block;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    margin-left: 20px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    &:hover{
+      &:after {
+        transform: scaleX(1);
+      }
+    }
+    &:after {
+      display:block;
+      content: '';
+      background: linear-gradient(to right, rgb(211, 131, 18), rgb(168, 50, 121));
+      height: 5px;
+      width: auto;
+      margin-top: 0.125rem;
+      transform: scaleX(0);  
+      transition: transform 250ms ease-in-out;
+    }
+    @include mobile {
+      margin: 0 10px;
+    }
+  }
+}
+

@@ -1,0 +1,92 @@
+html {
+  font-size: 100%;
+}
+body {
+  font-size: 18px/1.4;
+  font-family: $helveticaNeue;
+  color: $black;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: $helveticaNeue;
+  color: $black;
+  font-weight: bold;
+  line-height: 1.7;
+  margin: 1em 0 15px;
+  padding: 0;
+  @include mobile {
+    line-height: 1.4;
+  }
+}
+
+h1 {
+  font-size: 30px;
+  a {
+    background: linear-gradient(to right, rgb(211, 131, 18), rgb(168, 50, 121));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+p {
+  margin: 15px 0;
+}
+
+a {
+  color: $black;
+  text-decoration: none;
+	cursor: pointer;
+  &:hover, &:active {
+    color: $gray;
+  }
+}
+
+ul, ol {
+  margin: 15px 0;
+  padding-left: 30px;
+}
+
+ul {
+  list-style-type: disc;
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+ol ul, ul ol, ul ul, ol ol {
+  margin: 0;
+}
+
+/*ul ul, ol ul {
+  list-style-type: circle;
+}
+
+em, i {
+  font-style: italic;
+}
+
+strong, b {
+  font-weight: bold;
+}*/
+
+// Specify the color of the selection
+::-moz-selection {
+  color: $black;
+  background: $lightGray;
+}
+::selection {
+  color: $black;
+  background: $lightGray;
+}

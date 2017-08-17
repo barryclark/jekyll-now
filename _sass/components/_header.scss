@@ -1,0 +1,27 @@
+.header-wrapper {
+  box-shadow: 0 5px 20px -5px rgba(51,51,51,0.25);
+  header {
+    padding: 1rem 0 1.25rem 0;
+    .site-info {
+      float: left;
+      @include mobile {
+        display: block;
+        float: none;
+        margin: 0 auto;
+      }
+      h1 {
+        font-size: 1.75rem;
+        letter-spacing: 1.75px;
+        margin: 0;
+      }
+      p {
+        font-size: 0.75rem;
+        font-weight: 300;
+        margin: -3px 0 0 0;
+        @include mobile {
+          margin: 3px 0;
+        }
+      }
+    }
+  }
+}

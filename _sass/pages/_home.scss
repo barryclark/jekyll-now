@@ -1,0 +1,26 @@
+.home {
+	margin-top: 5.5rem;
+	img {
+		display: inline-block; 
+		width: 200px;
+	}
+	h2 {
+		display: inline-block;
+	    font-size: 4rem;
+	    line-height: 1.1;
+	    margin: 0 0 0 3rem;
+	    vertical-align: top;
+	    width: 400px;
+	}
+	.text-gradient {
+		background: linear-gradient(to right, #d38312, #a83279);
+	    -webkit-background-clip: text;
+	    -webkit-text-fill-color: transparent;
+	}
+	p {
+		font-size: 1.25rem;
+	    font-weight: 300;
+		margin: 3.25rem 0 6rem 0;
+	    line-height: 1.6;
+	}
+}
