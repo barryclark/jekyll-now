@@ -9,7 +9,7 @@ author_email: ncrobertpal@gmail.com
 header-img: "images/HaufeSummerPractice/5-Coding-Challenges-to-Help-You-Train-Your-Brain.jpg"
 ---
 
-# Nechitelea Robert&Chiriac Alex.Mobile applicatin with React-Native
+# Nechitelea Robert & Chiriac Alex: Mobile applicatin with React-Native
 
 Hello, my name is Nechitelea Robert and together with my colleagues Chiriac Alex(students at the West University of Timisoara) and Dragutoiu Alexandru we developed a mobile 
 application that shows the availability of Haufe’s meeting rooms based on Outlook Calendar scheduling as part of our summer practice.
@@ -17,8 +17,8 @@ application that shows the availability of Haufe’s meeting rooms based on Outl
 The Haufe Meeting App is an mobile application which displays meetings information such as : meeting room availability, meeting duration(start and end time), organizer, 
 all of this in an easy to use format.The user can switch between the current rooms at any time and also check the schedule on other days.
 
-![Screenshot of the Main Menu] images/HaufeSummerPractice/20747801_1379739378762563_1204295863_o.png
-![Screenshot of the Timeline] images/HaufeSummerPractice/20707381_1379739358762565_748158599_o.png
+![Screenshot of the Main Menu](/images/HaufeSummerPractice/20747801_1379739378762563_1204295863_o.png)
+![Screenshot of the Timeline](/images/HaufeSummerPractice/20707381_1379739358762565_748158599_o.png)
 
 During these 4 weeks we learned a lot and went through many challenging problems, which we managed to solve successfully.When we first got here we didn’t have much experience
 in using Javascript frameworks(such as Node or React-Native).We spent the first week installing and configuring the necessary libraries and dependencies and then went on to 
@@ -42,7 +42,7 @@ This experience opened a new perspective for us as we learned a great deal on ho
 and how to manage our time, all of which will help us in the near future.
 In the end, it was an amazing experience for us.We are grateful for all the help that we received and we want to thank everyone for giving us this riveting opportunity.
 
-# Zaharie Robert.Building an Alexa skill for news selection.
+# Zaharie Robert: Building an Alexa skill for news selection.
 
 My name is Zaharie Robert and I am a student at Politehnica University of Timisoara. During these 4 weeks, I developed an Alexa skill that can search for news about a given
 subject.
