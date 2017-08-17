@@ -6,7 +6,7 @@ category: dev
 tags: [general, culture, react, alexa]
 author: Nechitelea Robert, Chiriac Alex, Zaharie Robert
 author_email: ncrobertpal@gmail.com
-header-img: "images\HaufeSummerPractice\5-Coding-Challenges-to-Help-You-Train-Your-Brain.jpg
+header-img: "images/HaufeSummerPractice/5-Coding-Challenges-to-Help-You-Train-Your-Brain.jpg"
 ---
 
 # Nechitelea Robert&Chiriac Alex.Mobile applicatin with React-Native
