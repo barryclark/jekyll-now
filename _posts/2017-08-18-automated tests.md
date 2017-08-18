@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Automated tests
+title: A primer on automated testing
 category: dev
 tags: [automation]
 author: Bianca Carabas
