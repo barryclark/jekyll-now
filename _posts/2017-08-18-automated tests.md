@@ -195,10 +195,10 @@ If the performance is not up to the expected standard, then some analysis needs 
 
 For a clear overview of all from above, you can find below a comparison table between the pointed automate tests:
 
-| Unit Tests                  | API Tests                             | Integration Tests                       | 
+| Unit Tests                  | API Tests                             | Integration Tests                       |
 | --------------------------- | ------------------------------------- | --------------------------------------- |      
-| owned by development        | owned by test                         | owned by test, development              | 
-| limited in scope            | broader in scope                      | tests the whole system working together | 
+| owned by development        | owned by test                         | owned by test, development              |
+| limited in scope            | broader in scope                      | tests the whole system working together |
 | fine grained                | fine grained                          | coarse grained                          |             
 | mocked dependencies         | mocked and real dependencies          | real dependencies                       |
 | stable                      | stable                                | can be brittle                          |
@@ -209,13 +209,15 @@ For a clear overview of all from above, you can find below a comparison table be
 |non-functional testing       | functional testing                    | functional testing                      |
 | TESTNG, XUNIT               | REST ASSURED, SOAPUI, POSTMAN, FRISBY | JUNIT, SELENIUM                         |
 
-| GUI egression tests)                        | Performance Tests                           | Security tests                   | 
+| GUI egression tests)                        | Performance Tests                           | Security tests                   |
 | ------------------------------------------- | ------------------------------------------- | -------------------------------- |      
-| owned by test                               | owned by development, test, customer        | owned by a separate team         | | maximum scope-catch many problems           | limited in scope                            | limited in scope                 | 
+| owned by test                               | owned by development, test, customer        | owned by a separate team         |
+| maximum scope-catch many problems           | limited in scope                            | limited in scope                 |
 | complex business workflows                  | large system load                           | security indicators              |             
-| real deies, real database                   | real dependencies, real database            | real dependencies, real database | | brittle (require more rework)               | stable                                      | can be brittle                   |
+| real dependencies, real database            | real dependencies, real database            | real dependencies, real database |
+| brittle (require more rework)               | stable                                      | can be brittle                   |
 | "are the system's functionalities affected" | "does the system perform as expected"       | "is the system secure"           |
-| run after check-in to CI/release branch     | run on release build and relevant hardware  | run against real environment     | 
+| run after check-in to CI/release branch     | run on release build and relevant hardware  | run against real environment     |
 | run slow                                    | run speed affected by load and resources    | run fast                         |
 | black box testing                           | white box testing                           | black box testing                |
 | functional testing                          | non-functional testing                      | non-functional testing           |
