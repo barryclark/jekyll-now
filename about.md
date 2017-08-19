@@ -1,15 +1,11 @@
 ---
 layout: page
-title: About
+title: 
 permalink: /about/
 ---
 
-Some information about you!
-
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
+Experienced iOS Developer. Beginner React and Javascript Developer.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[alexstroulger@gmail.com](mailto:alexstroulger@gmail.com)
