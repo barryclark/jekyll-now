@@ -8,7 +8,8 @@
     <!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans|Encode+Sans|PT+Sans" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/plugins/foundation/foundation.min.css" />
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
 
@@ -16,9 +17,9 @@
   </head>
 
   <body>
-    <div class="wrapper-masthead">
-      <div class="container">
-        <header class="masthead clearfix">
+    <div class="grid-container">
+      <div class="grid-x grid-padding-x grid-padding-y">
+        <header class="large-12 cell">
           <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
 
           <div class="site-info">
@@ -28,13 +29,13 @@
 
           <nav>
             <a href="{{ site.baseurl }}/">Blog</a>
-            <a href="{{ site.baseurl }}/about">About</a>
+            <!--a href="{{ site.baseurl }}/about">About</a-->
           </nav>
         </header>
       </div>
     </div>
-
-    <div id="main" role="main" class="container">
+    <hr/>
+    <div id="main" role="main" class="grid-container grid-padding-y">
       {{ content }}
     </div>
 
@@ -47,5 +48,7 @@
     </div>
 
     {% include analytics.html %}
+    <script type="text/javascript" source="{{ site.baseurl }}/plugins/jquery/jquery.js">
+    <script type="text/javascript" source="{{ site.baseurl }}/plugins/foundation/foundation.min.js">
   </body>
 </html>
