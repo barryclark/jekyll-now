@@ -242,7 +242,11 @@ nav {
       margin-right: auto;
     }
   }
+  .post-sep {
+    border-bottom: 1px solid #eee;
+  }
 }
+
 .posts > .post {
   padding-bottom: 2em;
   border-bottom: 1px solid $lightGray;
@@ -254,6 +258,7 @@ nav {
 }
 
 .post {
+  img {width: 100%;}
   blockquote {
     margin: 1.8em .8em;
     border-left: 2px solid $gray;

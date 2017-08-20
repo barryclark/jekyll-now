@@ -5,24 +5,26 @@ layout: default
 <div class="posts">
   {% for post in site.posts %}
     <div class="grid-x grid-padding-y">
-          <div class="large-3 medium-3 cell">
-            <div class="post-img">
-              <img src="{{ post.image }}" alt="">
-            </div>
-          </div>
-          <div class="large-9 medium-9 cell">
-            <article class="post">
-              <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+      <div class="large-3 medium-3 cell">
+        <div class="post-img">
+          <img src="{{ post.image }}" alt="">
+        </div>
+      </div>
+      <div class="large-9 medium-9 cell">
+        <article class="post">
+          <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
 
-              <div class="entry">
-                {{ post.excerpt }}
-              </div>
-              <div>
-                <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-              </div>
-            </article>
+          <div class="entry">
+            {{ post.excerpt }}
           </div>
-
+          <div>
+            <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+          </div>
+        </article>
+      </div>
     </div>
+    {% if forloop.index!=forloop.length %}
+    <hr class="post-sep">
+    {% endif %}
   {% endfor %}
 </div>
