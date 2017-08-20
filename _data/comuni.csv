@@ -33,27 +33,27 @@ id,comune,provincia,paese,coordinate,lat,lon,data_sisma,popolazione_prima_del_si
 32,Rotella,AP,ITALIA,"42.9541727,13.5593592",42.9541727,13.5593592,24/08/2016,906,http://www.comunerotella.net/hh/index.php,https://www.poste.it/files/1476460664562/Elenco-comuni-colpiti_Allegato-1-e-2.pdf
 33,Venarotta,AP,ITALIA,"42.882947,13.492285",42.882947,13.492285,24/08/2016,2270,http://www.comune.venarotta.ap.it/,https://www.poste.it/files/1476460664562/Elenco-comuni-colpiti_Allegato-1-e-2.pdf
 34,Acquacanina,MC,ITALIA,"43.0298075,13.1750621",43.0298075,13.1750621,24/08/2016,121,http://www.comune.acquacanina.mc.it/,https://www.poste.it/files/1476460664562/Elenco-comuni-colpiti_Allegato-1-e-2.pdf
-35,Bolognola,MC,ITALIA,"42.994904,13.2263425",42.994904,13.2263425,24/08/2016,,,https://www.poste.it/files/1476460664562/Elenco-comuni-colpiti_Allegato-1-e-2.pdf
-36,Castelsantangelo sul Nera,MC,ITALIA,"42.8944925,13.1539297",42.8944925,13.1539297,24/08/2016,,,https://www.poste.it/files/1476460664562/Elenco-comuni-colpiti_Allegato-1-e-2.pdf
-37,Cessapalombo,MC,ITALIA,"43.1087889,13.2580261",43.1087889,13.2580261,24/08/2016,,,https://www.poste.it/files/1476460664562/Elenco-comuni-colpiti_Allegato-1-e-2.pdf
-38,Fiastra,MC,ITALIA,"43.0361407,13.1554547",43.0361407,13.1554547,24/08/2016,,,https://www.poste.it/files/1476460664562/Elenco-comuni-colpiti_Allegato-1-e-2.pdf
-39,Fiordimonte,MC,ITALIA,"43.037312,13.0891303",43.037312,13.0891303,24/08/2016,,,https://www.poste.it/files/1476460664562/Elenco-comuni-colpiti_Allegato-1-e-2.pdf
-40,Gualdo,MC,ITALIA,"43.066828,13.3410165",43.066828,13.3410165,24/08/2016,,,https://www.poste.it/files/1476460664562/Elenco-comuni-colpiti_Allegato-1-e-2.pdf
-41,Penna San Giovanni,MC,ITALIA,"43.0569146,13.4254525",43.0569146,13.4254525,24/08/2016,,,https://www.poste.it/files/1476460664562/Elenco-comuni-colpiti_Allegato-1-e-2.pdf
-42,Pievebovigliana,MC,ITALIA,"43.0620542,13.083766",43.0620542,13.083766,24/08/2016,,,https://www.poste.it/files/1476460664562/Elenco-comuni-colpiti_Allegato-1-e-2.pdf
-43,Pieve Torina,MC,ITALIA,"43.0432872,13.0489107",43.0432872,13.0489107,24/08/2016,,,https://www.poste.it/files/1476460664562/Elenco-comuni-colpiti_Allegato-1-e-2.pdf
-44,San Ginesio,MC,ITALIA,"43.1084806,13.3187335",43.1084806,13.3187335,24/08/2016,,,https://www.poste.it/files/1476460664562/Elenco-comuni-colpiti_Allegato-1-e-2.pdf
-45,Sant’Angelo in Pontano,MC,ITALIA,"43.0986445,13.3967561",43.0986445,13.3967561,24/08/2016,,,https://www.poste.it/files/1476460664562/Elenco-comuni-colpiti_Allegato-1-e-2.pdf
-46,Sarnano,MC,ITALIA,"43.0353798,13.2983099",43.0353798,13.2983099,24/08/2016,,,https://www.poste.it/files/1476460664562/Elenco-comuni-colpiti_Allegato-1-e-2.pdf
-47,Ussita,MC,ITALIA,"42.9437596,13.137908",42.9437596,13.137908,24/08/2016,,,https://www.poste.it/files/1476460664562/Elenco-comuni-colpiti_Allegato-1-e-2.pdf
-48,Visso,MC,ITALIA,"42.9312321,13.087449",42.9312321,13.087449,24/08/2016,,,https://www.poste.it/files/1476460664562/Elenco-comuni-colpiti_Allegato-1-e-2.pdf
-49,Arrone,TR,ITALIA,"42.583433,12.7698649",42.583433,12.7698649,24/08/2016,,,https://www.poste.it/files/1476460664562/Elenco-comuni-colpiti_Allegato-1-e-2.pdf
-50,Cascia,PG,ITALIA,"42.7170082,13.0135022",42.7170082,13.0135022,24/08/2016,,,https://www.poste.it/files/1476460664562/Elenco-comuni-colpiti_Allegato-1-e-2.pdf
-51,Cerreto di Spoleto,PG,ITALIA,"42.8210425,12.9176291",42.8210425,12.9176291,24/08/2016,,,https://www.poste.it/files/1476460664562/Elenco-comuni-colpiti_Allegato-1-e-2.pdf
-52,Ferentillo,TR,ITALIA,"42.6207678,12.7887263",42.6207678,12.7887263,24/08/2016,,,https://www.poste.it/files/1476460664562/Elenco-comuni-colpiti_Allegato-1-e-2.pdf
-53,Montefranco,TR,ITALIA,"42.5977353,12.7652595",42.5977353,12.7652595,24/08/2016,,,https://www.poste.it/files/1476460664562/Elenco-comuni-colpiti_Allegato-1-e-2.pdf
-54,Monteleone di Spoleto,PG,ITALIA,"42.6512172,12.9514791",42.6512172,12.9514791,24/08/2016,,,https://www.poste.it/files/1476460664562/Elenco-comuni-colpiti_Allegato-1-e-2.pdf
-55,Norcia,PG,ITALIA,"42.7927706,13.0930812",42.7927706,13.0930812,24/08/2016,,,https://www.poste.it/files/1476460664562/Elenco-comuni-colpiti_Allegato-1-e-2.pdf
+35,Bolognola,MC,ITALIA,"42.994904,13.2263425",42.994904,13.2263425,24/08/2016,142,http://www.comune.bolognola.mc.it/,https://www.poste.it/files/1476460664562/Elenco-comuni-colpiti_Allegato-1-e-2.pdf
+36,Castelsantangelo sul Nera,MC,ITALIA,"42.8944925,13.1539297",42.8944925,13.1539297,24/08/2016,370,http://www.comune.castelsantangelosulnera.mc.it/,https://www.poste.it/files/1476460664562/Elenco-comuni-colpiti_Allegato-1-e-2.pdf
+37,Cessapalombo,MC,ITALIA,"43.1087889,13.2580261",43.1087889,13.2580261,24/08/2016,585,http://www.comune.cessapalombo.mc.it/,https://www.poste.it/files/1476460664562/Elenco-comuni-colpiti_Allegato-1-e-2.pdf
+38,Fiastra,MC,ITALIA,"43.0361407,13.1554547",43.0361407,13.1554547,24/08/2016,680,http://www.comune.fiastra.mc.it/,https://www.poste.it/files/1476460664562/Elenco-comuni-colpiti_Allegato-1-e-2.pdf
+39,Fiordimonte,MC,ITALIA,"43.037312,13.0891303",43.037312,13.0891303,24/08/2016,202,http://www.comune.fiordimonte.mc.it/,https://www.poste.it/files/1476460664562/Elenco-comuni-colpiti_Allegato-1-e-2.pdf
+40,Gualdo,MC,ITALIA,"43.066828,13.3410165",43.066828,13.3410165,24/08/2016,920,http://www.comune.gualdo.mc.it/,https://www.poste.it/files/1476460664562/Elenco-comuni-colpiti_Allegato-1-e-2.pdf
+41,Penna San Giovanni,MC,ITALIA,"43.0569146,13.4254525",43.0569146,13.4254525,24/08/2016,1302,http://www.comune.pennasangiovanni.mc.it/,https://www.poste.it/files/1476460664562/Elenco-comuni-colpiti_Allegato-1-e-2.pdf
+42,Pievebovigliana,MC,ITALIA,"43.0620542,13.083766",43.0620542,13.083766,24/08/2016,866,http://www.comune.pievebovigliana.mc.it/,https://www.poste.it/files/1476460664562/Elenco-comuni-colpiti_Allegato-1-e-2.pdf
+43,Pieve Torina,MC,ITALIA,"43.0432872,13.0489107",43.0432872,13.0489107,24/08/2016,1379,http://www.comune.pievetorina.mc.it/,https://www.poste.it/files/1476460664562/Elenco-comuni-colpiti_Allegato-1-e-2.pdf
+44,San Ginesio,MC,ITALIA,"43.1084806,13.3187335",43.1084806,13.3187335,24/08/2016,3799,http://www.comune.sanginesio.mc.it/,https://www.poste.it/files/1476460664562/Elenco-comuni-colpiti_Allegato-1-e-2.pdf
+45,Sant’Angelo in Pontano,MC,ITALIA,"43.0986445,13.3967561",43.0986445,13.3967561,24/08/2016,1496,http://www.comune.santangeloinpontano.mc.it/,https://www.poste.it/files/1476460664562/Elenco-comuni-colpiti_Allegato-1-e-2.pdf
+46,Sarnano,MC,ITALIA,"43.0353798,13.2983099",43.0353798,13.2983099,24/08/2016,3375,http://www.comune.sarnano.mc.it/,https://www.poste.it/files/1476460664562/Elenco-comuni-colpiti_Allegato-1-e-2.pdf
+47,Ussita,MC,ITALIA,"42.9437596,13.137908",42.9437596,13.137908,24/08/2016,426,http://www.comune.ussita.mc.it/,https://www.poste.it/files/1476460664562/Elenco-comuni-colpiti_Allegato-1-e-2.pdf
+48,Visso,MC,ITALIA,"42.9312321,13.087449",42.9312321,13.087449,24/08/2016,1177,http://www.comune.visso.mc.it/,https://www.poste.it/files/1476460664562/Elenco-comuni-colpiti_Allegato-1-e-2.pdf
+49,Arrone,TR,ITALIA,"42.583433,12.7698649",42.583433,12.7698649,24/08/2016,2763,http://www.comune.arrone.terni.it/,https://www.poste.it/files/1476460664562/Elenco-comuni-colpiti_Allegato-1-e-2.pdf
+50,Cascia,PG,ITALIA,"42.7170082,13.0135022",42.7170082,13.0135022,24/08/2016,3217,http://www.comune.cascia.pg.it/,https://www.poste.it/files/1476460664562/Elenco-comuni-colpiti_Allegato-1-e-2.pdf
+51,Cerreto di Spoleto,PG,ITALIA,"42.8210425,12.9176291",42.8210425,12.9176291,24/08/2016,1075,https://comune.cerretodispoleto.pg.it/,https://www.poste.it/files/1476460664562/Elenco-comuni-colpiti_Allegato-1-e-2.pdf
+52,Ferentillo,TR,ITALIA,"42.6207678,12.7887263",42.6207678,12.7887263,24/08/2016,1913,http://www.comune.ferentillo.tr.it/,https://www.poste.it/files/1476460664562/Elenco-comuni-colpiti_Allegato-1-e-2.pdf
+53,Montefranco,TR,ITALIA,"42.5977353,12.7652595",42.5977353,12.7652595,24/08/2016,1276,http://www.comune.montefranco.tr.it/hh/index.php,https://www.poste.it/files/1476460664562/Elenco-comuni-colpiti_Allegato-1-e-2.pdf
+54,Monteleone di Spoleto,PG,ITALIA,"42.6512172,12.9514791",42.6512172,12.9514791,24/08/2016,599,http://www.comune.monteleonedispoleto.pg.it/hh/index.php,https://www.poste.it/files/1476460664562/Elenco-comuni-colpiti_Allegato-1-e-2.pdf
+55,Norcia,PG,ITALIA,"42.7927706,13.0930812",42.7927706,13.0930812,24/08/2016,4957,http://www.comune.norcia.pg.it/,https://www.poste.it/files/1476460664562/Elenco-comuni-colpiti_Allegato-1-e-2.pdf
 56,Poggiodomo,PG,ITALIA,"42.711239,12.933876",42.711239,12.933876,24/08/2016,,,https://www.poste.it/files/1476460664562/Elenco-comuni-colpiti_Allegato-1-e-2.pdf
 57,Polino,TR,ITALIA,"42.5848236,12.8428018",42.5848236,12.8428018,24/08/2016,,,https://www.poste.it/files/1476460664562/Elenco-comuni-colpiti_Allegato-1-e-2.pdf
 58,Preci,PG,ITALIA,"42.87848895,13.03908211",42.87848895,13.03908211,24/08/2016,,,https://www.poste.it/files/1476460664562/Elenco-comuni-colpiti_Allegato-1-e-2.pdf
