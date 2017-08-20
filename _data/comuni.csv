@@ -1,16 +1,16 @@
 id,comune,provincia,paese,coordinate,lat,lon,data_sisma,popolazione_prima_del_sisma,url,fonte
-1,Campotosto,AQ,ITALIA,"42.558839,13.367987",42.558839,13.367987,24/08/2016,683,http://www.comune.campotosto.aq.it/,
-2,Capitignano,AQ,ITALIA,"42.5203198,13.3010677",42.52592605,13.29562866,24/08/2016,665,http://www.comune.capitignano.aq.it/,
-3,Montereale,AQ,ITALIA,"42.5250955,13.2440724",42.521837,13.247585,24/08/2016,2930,http://www.comune.montereale.it/hh/index.php,
-4,Rocca Santa Maria,TE,ITALIA,"42.6863128,13.5281707",42.6863128,13.5281707,24/08/2016,698,,
-5,Valle Castellana,TE,ITALIA,"42.7361764,13.4970995",42.736144,13.497088,24/08/2016,,,
-6,Cortino,TE,ITALIA,"42.6223968,13.5088146",42.6223968,13.5088146,24/08/2016,,,
-7,Crognaleto,TE,ITALIA,"42.587941,13.48959",42.587941,13.48959,24/08/2016,,,
-8,Montorio al Vomano,TE,ITALIA,"42.583142,13.638293",42.583142,13.638293,24/08/2016,,,
-9,Accumoli,RI,ITALIA,"42.694141,13.247683",42.694141,13.247683,24/08/2016,,,
-10,Amatrice,RI,ITALIA,"42.6292367,13.2891755",42.6292367,13.2891755,24/08/2016,,,
-11,Antrodoco,RI,ITALIA,"42.416134,13.078683",42.416134,13.078683,24/08/2016,,,
-12,Borbona,RI,ITALIA,"42.512536,13.135983",42.512536,13.135983,24/08/2016,,,
+1,Campotosto,AQ,ITALIA,"42.558839,13.367987",42.558839,13.367987,24/08/2016,683,http://www.comune.campotosto.aq.it/,https://www.poste.it/files/1476460664562/Elenco-comuni-colpiti_Allegato-1-e-2.pdf
+2,Capitignano,AQ,ITALIA,"42.5203198,13.3010677",42.52592605,13.29562866,24/08/2016,665,http://www.comune.capitignano.aq.it/,https://www.poste.it/files/1476460664562/Elenco-comuni-colpiti_Allegato-1-e-2.pdf
+3,Montereale,AQ,ITALIA,"42.5250955,13.2440724",42.521837,13.247585,24/08/2016,2930,http://www.comune.montereale.it/hh/index.php,https://www.poste.it/files/1476460664562/Elenco-comuni-colpiti_Allegato-1-e-2.pdf
+4,Rocca Santa Maria,TE,ITALIA,"42.6863128,13.5281707",42.6863128,13.5281707,24/08/2016,698,http://www.roccasm.it/,https://www.poste.it/files/1476460664562/Elenco-comuni-colpiti_Allegato-1-e-2.pdf
+5,Valle Castellana,TE,ITALIA,"42.7361764,13.4970995",42.736144,13.497088,24/08/2016,1278,http://www.comune.vallecastellana.te.it/,https://www.poste.it/files/1476460664562/Elenco-comuni-colpiti_Allegato-1-e-2.pdf
+6,Cortino,TE,ITALIA,"42.6223968,13.5088146",42.6223968,13.5088146,24/08/2016,709,http://www.comunedicortino.gov.it/,https://www.poste.it/files/1476460664562/Elenco-comuni-colpiti_Allegato-1-e-2.pdf
+7,Crognaleto,TE,ITALIA,"42.587941,13.48959",42.587941,13.48959,24/08/2016,1549,http://www.comune.crognaleto.te.it/,https://www.poste.it/files/1476460664562/Elenco-comuni-colpiti_Allegato-1-e-2.pdf
+8,Montorio al Vomano,TE,ITALIA,"42.583142,13.638293",42.583142,13.638293,24/08/2016,8048,http://www.comune.montorio.te.it/,https://www.poste.it/files/1476460664562/Elenco-comuni-colpiti_Allegato-1-e-2.pdf
+9,Accumoli,RI,ITALIA,"42.694141,13.247683",42.694141,13.247683,24/08/2016,667,http://www.comune.accumoli.ri.it/,https://www.poste.it/files/1476460664562/Elenco-comuni-colpiti_Allegato-1-e-2.pdf
+10,Amatrice,RI,ITALIA,"42.6292367,13.2891755",42.6292367,13.2891755,24/08/2016,2657,http://www.comune.amatrice.rieti.it/,https://www.poste.it/files/1476460664562/Elenco-comuni-colpiti_Allegato-1-e-2.pdf
+11,Antrodoco,RI,ITALIA,"42.416134,13.078683",42.416134,13.078683,24/08/2016,2845,http://www.halleyweb.com/c057003/hh/index.php,https://www.poste.it/files/1476460664562/Elenco-comuni-colpiti_Allegato-1-e-2.pdf
+12,Borbona,RI,ITALIA,"42.512536,13.135983",42.512536,13.135983,24/08/2016,725,http://www.comune.borbona.rieti.it/,
 13,Borgo Velino,RI,ITALIA,"42.406033,13.059283",42.406033,13.059283,24/08/2016,,,
 14,Castel Sant’Angelo,RI,ITALIA,"42.3938693,13.0234552",42.3938693,13.0234552,24/08/2016,,,
 15,Cittareale,RI,ITALIA,"42.6182543,13.1596844",42.6182543,13.1596844,24/08/2016,,,
