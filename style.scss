@@ -182,8 +182,8 @@ img {
   margin: 0;
   color: $darkGray;
   cursor: pointer;
-  font-family: $helveticaNeue;
-  font-weight: 300;
+  font-family: $encodesans;
+  font-weight: 400;
   font-size: 28px;
   letter-spacing: 1px;
 }
@@ -191,7 +191,7 @@ img {
 .site-description {
   margin: -5px 0 0 0;
   color: $gray;
-  font-size: 16px;
+  font-size: 20px;
 
   @include mobile {
     margin: 3px 0;
@@ -201,8 +201,8 @@ img {
 nav {
   float: right;
   margin-top: 23px; // @TODO: Vertically middle align
-  font-family: $helveticaNeue;
-  font-size: 16px;
+  font-family: $encodesans;
+  font-size: 20px;
 
   @include mobile {
     float: none;
