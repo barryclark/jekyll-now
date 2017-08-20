@@ -71,19 +71,19 @@ id,comune,provincia,paese,coordinate,lat,lon,data_sisma,popolazione_prima_del_si
 69,Fiordimonte,MC,ITALIA,"43.037312,13.0891303",43.037312,13.0891303,30/10/2016,214,http://www.comune.fiordimonte.mc.it/ ,
 70,Fiuminata,MC,ITALIA,"43.18745,12.932168",43.18745,12.932168,30/10/2016,1604,http://www.comune.fiuminata.mc.it/,http://www.ansa.it/marche/notizie/2016/10/27/20-i-comuni-marche-colpiti-dal-sisma_8ac2d1e7-c271-45a3-bffc-231d4dc80f50.html
 71,Matelica,MC,ITALIA,"43.2566101,13.00892",43.2566101,13.00892,30/10/2016,9981,http://www.comune.matelica.mc.it/,http://www.ansa.it/marche/notizie/2016/10/27/20-i-comuni-marche-colpiti-dal-sisma_8ac2d1e7-c271-45a3-bffc-231d4dc80f50.html
-72,Monte Cavallo,MC,ITALIA,,42.9944324,13.0010217,30/10/2016,171,http://www.comune.montecavallo.mc.it/,http://www.ansa.it/marche/notizie/2016/10/27/20-i-comuni-marche-colpiti-dal-sisma_8ac2d1e7-c271-45a3-bffc-231d4dc80f50.html
-73,Muccia,MC,ITALIA,,43.081248,13.043672,30/10/2016,907,http://www.comune.muccia.mc.it/,http://www.ansa.it/marche/notizie/2016/10/27/20-i-comuni-marche-colpiti-dal-sisma_8ac2d1e7-c271-45a3-bffc-231d4dc80f50.html
-74,Pievebovigliana,MC,ITALIA,,43.062054,13.083766,30/10/2016,879,http://www.comune.pievebovigliana.mc.it/,http://www.ansa.it/marche/notizie/2016/10/27/20-i-comuni-marche-colpiti-dal-sisma_8ac2d1e7-c271-45a3-bffc-231d4dc80f50.html
-75,Pievetorina,MC,ITALIA,,43.043834,13.046239,30/10/2016,1501,http://www.comune.pievetorina.mc.it/,http://www.ansa.it/marche/notizie/2016/10/27/20-i-comuni-marche-colpiti-dal-sisma_8ac2d1e7-c271-45a3-bffc-231d4dc80f50.html
-76,Pioraco,MC,ITALIA,,43.17905,12.98567,30/10/2016,1231,http://www.comune.pioraco.mc.it/,http://www.ansa.it/marche/notizie/2016/10/27/20-i-comuni-marche-colpiti-dal-sisma_8ac2d1e7-c271-45a3-bffc-231d4dc80f50.html
-77,San Severino Marche,MC,ITALIA,,43.2290211,13.1779663,30/10/2016,12726,http://www.comune.sanseverinomarche.mc.it/,http://www.ansa.it/marche/notizie/2016/10/27/20-i-comuni-marche-colpiti-dal-sisma_8ac2d1e7-c271-45a3-bffc-231d4dc80f50.html
-78,Sefro,MC,ITALIA,,43.146549,12.948469,30/10/2016,433,http://www.comune.sefro.mc.it/,http://www.ansa.it/marche/notizie/2016/10/27/20-i-comuni-marche-colpiti-dal-sisma_8ac2d1e7-c271-45a3-bffc-231d4dc80f50.html
-79,Serrapetrona,MC,ITALIA,,43.17743,13.189752,30/10/2016,1008,http://www.comune.serrapetrona.mc.it/,http://www.ansa.it/marche/notizie/2016/10/27/20-i-comuni-marche-colpiti-dal-sisma_8ac2d1e7-c271-45a3-bffc-231d4dc80f50.html
-80,Tolentino,MC,ITALIA,,43.2087546,13.2844096,30/10/2016,20069,http://www.comune.tolentino.mc.it/,http://www.ansa.it/marche/notizie/2016/10/27/20-i-comuni-marche-colpiti-dal-sisma_8ac2d1e7-c271-45a3-bffc-231d4dc80f50.html
-81,Treia,MC,ITALIA,,43.310556,13.311475,30/10/2016,9403,http://www.comune.treia.mc.it/,http://www.ansa.it/marche/notizie/2016/10/27/20-i-comuni-marche-colpiti-dal-sisma_8ac2d1e7-c271-45a3-bffc-231d4dc80f50.html
-82,Ussita,MC,ITALIA,,42.944028,13.138409,30/10/2016,426,http://www.comune.ussita.mc.it/,http://www.ansa.it/marche/notizie/2016/10/27/20-i-comuni-marche-colpiti-dal-sisma_8ac2d1e7-c271-45a3-bffc-231d4dc80f50.html
-83,Visso,MC,ITALIA,,42.9312321,13.087449,30/10/2016,1177,http://www.comune.visso.mc.it/,http://www.ansa.it/marche/notizie/2016/10/27/20-i-comuni-marche-colpiti-dal-sisma_8ac2d1e7-c271-45a3-bffc-231d4dc80f50.html
-84,Cascia,PG,ITALIA,,42.7170082,13.0135022,30/10/2016,3257,http://www.comune.cascia.pg.it/,
+72,Monte Cavallo,MC,ITALIA,"42.9944324,13.0010217",42.9944324,13.0010217,30/10/2016,171,http://www.comune.montecavallo.mc.it/,http://www.ansa.it/marche/notizie/2016/10/27/20-i-comuni-marche-colpiti-dal-sisma_8ac2d1e7-c271-45a3-bffc-231d4dc80f50.html
+73,Muccia,MC,ITALIA,"43.0817007,13.0429675",43.0817007,13.0429675,30/10/2016,907,http://www.comune.muccia.mc.it/,http://www.ansa.it/marche/notizie/2016/10/27/20-i-comuni-marche-colpiti-dal-sisma_8ac2d1e7-c271-45a3-bffc-231d4dc80f50.html
+74,Pievebovigliana,MC,ITALIA,"43.0620542,13.083766",43.0620542,13.083766,30/10/2016,879,http://www.comune.pievebovigliana.mc.it/,http://www.ansa.it/marche/notizie/2016/10/27/20-i-comuni-marche-colpiti-dal-sisma_8ac2d1e7-c271-45a3-bffc-231d4dc80f50.html
+75,Pievetorina,MC,ITALIA,"43.0432342,13.047835405439",43.0432342,13.04783541,30/10/2016,1501,http://www.comune.pievetorina.mc.it/,http://www.ansa.it/marche/notizie/2016/10/27/20-i-comuni-marche-colpiti-dal-sisma_8ac2d1e7-c271-45a3-bffc-231d4dc80f50.html
+76,Pioraco,MC,ITALIA,"43.17905,12.98567",43.17905,12.98567,30/10/2016,1231,http://www.comune.pioraco.mc.it/,http://www.ansa.it/marche/notizie/2016/10/27/20-i-comuni-marche-colpiti-dal-sisma_8ac2d1e7-c271-45a3-bffc-231d4dc80f50.html
+77,San Severino Marche,MC,ITALIA,"43.2290211,13.1779663",43.2290211,13.1779663,30/10/2016,12726,http://www.comune.sanseverinomarche.mc.it/,http://www.ansa.it/marche/notizie/2016/10/27/20-i-comuni-marche-colpiti-dal-sisma_8ac2d1e7-c271-45a3-bffc-231d4dc80f50.html
+78,Sefro,MC,ITALIA,"43.1472457,12.9486299",43.1472457,12.9484699,30/10/2016,433,http://www.comune.sefro.mc.it/,http://www.ansa.it/marche/notizie/2016/10/27/20-i-comuni-marche-colpiti-dal-sisma_8ac2d1e7-c271-45a3-bffc-231d4dc80f50.html
+79,Serrapetrona,MC,ITALIA,"43.1774304,13.1897524",43.1774304,13.1897524,30/10/2016,1008,http://www.comune.serrapetrona.mc.it/,http://www.ansa.it/marche/notizie/2016/10/27/20-i-comuni-marche-colpiti-dal-sisma_8ac2d1e7-c271-45a3-bffc-231d4dc80f50.html
+80,Tolentino,MC,ITALIA,"43.2087546,13.2844096",43.2087546,13.2844096,30/10/2016,20069,http://www.comune.tolentino.mc.it/,http://www.ansa.it/marche/notizie/2016/10/27/20-i-comuni-marche-colpiti-dal-sisma_8ac2d1e7-c271-45a3-bffc-231d4dc80f50.html
+81,Treia,MC,ITALIA,"43.310556,13.311475",43.310556,13.311475,30/10/2016,9403,http://www.comune.treia.mc.it/,http://www.ansa.it/marche/notizie/2016/10/27/20-i-comuni-marche-colpiti-dal-sisma_8ac2d1e7-c271-45a3-bffc-231d4dc80f50.html
+82,Ussita,MC,ITALIA,"42.9437596,13.137908",42.9437596,13.13840908,30/10/2016,426,http://www.comune.ussita.mc.it/,http://www.ansa.it/marche/notizie/2016/10/27/20-i-comuni-marche-colpiti-dal-sisma_8ac2d1e7-c271-45a3-bffc-231d4dc80f50.html
+83,Visso,MC,ITALIA,"42.9312321,13.087449",42.9312321,13.087449,30/10/2016,1177,http://www.comune.visso.mc.it/,http://www.ansa.it/marche/notizie/2016/10/27/20-i-comuni-marche-colpiti-dal-sisma_8ac2d1e7-c271-45a3-bffc-231d4dc80f50.html
+84,Cascia,PG,ITALIA,"42.7170082,13.0135022",42.7170082,13.0135022,30/10/2016,3257,http://www.comune.cascia.pg.it/,
 85,Cerreto Di Spoleto,PG,ITALIA,"42.8210425,12.9176291",42.8210425,12.9176291,30/10/2016,1093,http://comune.cerretodispoleto.pg.it/,
 86,Monteleone Di Spoleto ,PG,ITALIA,"42.6512172,12.9514791",42.6512172,12.9514791,30/10/2016,636,http://www.comune.monteleonedispoleto.pg.it,
 87,Norcia ,PG,ITALIA,"42.7927706,13.0930812",42.7927706,13.0930812,30/10/2016,4957,http://www.comune.norcia.pg.it/,
@@ -92,7 +92,7 @@ id,comune,provincia,paese,coordinate,lat,lon,data_sisma,popolazione_prima_del_si
 90,Sant’anatolia Di Narco ,PG,ITALIA,"42.7337577,12.8355862",42.7337577,12.8355862,30/10/2016,563,http://www.comunesantanatolia.it/,
 91,Sellano ,PG,ITALIA,"42.8884087,12.9263286",42.8884087,12.9263286,30/10/2016,1151,http://www.comune.sellano.pg.it/,
 92,Vallo Di Nera ,PG,ITALIA,"42.7546212,12.8637598",42.7546212,12.8637598,30/10/2016,370,http://www.comune.vallodinera.pg.it/,
-93,Barete,AQ,ITALIA,,42.4503849,13.2795318,18/01/2017,700,http://www.comune.barete.aq.it/,
+93,Barete,AQ,ITALIA,"42.4485252,13.2820226",42.4485252,13.2820226,18/01/2017,700,http://www.comune.barete.aq.it/,
 94,Cagnano Amiterno,AQ,ITALIA,,42.4572301,13.2086442,18/01/2017,1302,http://comune.cagnanoamiterno.aq.it/,
 95,Pizzoli,AQ,ITALIA,,42.4572301,13.2086442,18/01/2017,3300,http://www.comune.pizzoli.aq.it/,
 96,Farindola,PE,ITALIA,,42.4572301,13.2086442,18/01/2017,1694,http://www.comune.farindola.pe.gov.it/,
