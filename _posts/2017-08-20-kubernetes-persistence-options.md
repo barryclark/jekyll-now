@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Kubernetes persistence options
+title: Kubernetes persistence options [updated]
 subtitle: Spoilt for choice
 category: dev
 tags: [devops, cloud, development]
@@ -18,7 +18,6 @@ Our criteria are
 * High-Availability
 * Fast cloning / replication for Continous Integration and Deployment
 * Acceptable recovery plan
-
 
 
 ## Kubernetes volume organisation
@@ -114,7 +113,7 @@ First of all, glusterfs is highly customizable in terms of data storage - it can
 
 [![glusterfs replicated volumes](/images/kubernetes-persistence-options/glusterfs-replicated-volume.png)](http://gluster.readthedocs.io/en/latest/Quick-Start-Guide/Architecture/)
 
-When trying this approach, I ran into different problems - luckily, [Sergey Nuzhdin](http://blog.lwolf.org/post/how-i-deployed-glusterfs-cluster-to-kubernetes/) tried this approach as well and found solutions for most of the problems. The easy ones were missing packages on the node-system, which still seem to be required for glusterfs to work even when running in containers. Dynamically provisioning persistent volumes (PVs) and -claims (PVCs) worked as advertised, but automatic deletion of the volumes of deleted containers did - and still does - not, despite setting appropriate values for the [Reclaim Policy](https://kubernetes.io/docs/concepts/storage/persistent-volumes/#reclaim-policy-1).
+When trying this approach, I ran into different problems - luckily, [Sergey Nuzhdin](http://blog.lwolf.org/post/how-i-deployed-glusterfs-cluster-to-kubernetes/) tried this approach as well and found solutions for most of the problems. The easy ones were missing packages on the node-system, which still seem to be required for glusterfs to work even when running in containers. Dynamically provisioning persistent volumes (PVs) and -claims (PVCs) worked as advertised, ~~but automatic deletion of the volumes of deleted containers did - and still does - not, despite setting appropriate values for the [Reclaim Policy](https://kubernetes.io/docs/concepts/storage/persistent-volumes/#reclaim-policy-1).~~ **Update (2017-08-20):** The issue with automatic deletion was [resolved](https://github.com/kubernetes/kubernetes/pull/44035) in a bugfix release.
 
 In general, after setup of the containers, kubernetes is informed of the IP-address of the heketi REST API in form of a [storage class](https://kubernetes.io/docs/concepts/storage/persistent-volumes/#glusterfs) - using the usual kube-dns-resolver and simply setting the endpoint to `heketi.svc` or something similar does not work due to an [unresolved issue](https://github.com/kubernetes/kubernetes/issues/42306) in kubernetes. Heketi then performs the necessary glusterfs-operations like setting up an [initial node topology](https://github.com/heketi/heketi/wiki/Setting-up-the-topology), creating glusterfs volumes and instructing kubernetes to use these as bound PVCs.
 
