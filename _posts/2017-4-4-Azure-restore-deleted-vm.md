@@ -15,11 +15,11 @@ So here is how to restore a deleted VM:
 **1. Find the correct disk image that stored your VM image, copy the VHD Uri**
 
   - Check on all your storage account to find the correct disk image for your VM. This could be a bit tricky if you have a lot of VMs since the name may not be descriptive the first time you created.
-  ![](/images/2017/03/storage-acc.png)
-  ![](/images/2017/03/storage-acc-2.png)
+  ![](/images/azure/storage-acc.png)
+  ![](/images/azure/storage-acc-2.png)
   - Find the correct vhd by looking at the name and modified time. Then copy the VHD url for later use
-  ![](/images/2017/03/storage-acc-3.png)
-  ![](/images/2017/03/storage-acc-4.png)
+  ![](/images/azure/storage-acc-3.png)
+  ![](/images/azure/storage-acc-4.png)
 
 **2. Next use the template to create VM from the VHD image.**   
 Depend on whether you want to create a new VNET or not, you can choose between [this template](https://github.com/Azure/azure-quickstart-templates/tree/master/201-vm-specialized-vhd-existing-vnet) and [this other template](https://github.com/Azure/azure-quickstart-templates/tree/master/201-vm-specialized-vhd).  
