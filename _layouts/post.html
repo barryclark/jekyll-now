@@ -10,8 +10,9 @@ layout: default
   </div>
 
   <div class="date">
-    Написано {{ page.date | localize: "%e %B %Y" }}
+    Написано {% include date.html date=page.date %}
   </div>
-
-  {% include disqus.html %}
+     {% if page.comments %}
+     <div id="disqus_thread"></div>
+     {% endif %}
 </article>

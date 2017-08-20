@@ -11,7 +11,7 @@ layout: default
   </div>
 
   <div class="date">
-    Написано {{ page.date | date: "%B %e, %Y" }}
+    Написано {% include date.html date=page.date %}
   </div>
 
   <div class="comments">
