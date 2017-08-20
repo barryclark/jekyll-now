@@ -89,6 +89,9 @@
 // .highlight .il { color: #2AA198 } /* Literal.Number.Integer.Long */
 code {
   font-family: $consolas;
+  background: #eee;
+  padding: 0px 5px;
+  border-radius: 5px;
 }
 .highlight,
 .highlighter-rouge {
@@ -96,6 +99,10 @@ code {
     background-color: #272822;
     color: #f8f8f2;
     padding: 20px 25px;
+    code {
+      background: transparent;
+      border-radius: 0px;
+    }
   }
   .c {
     color: #75715e;

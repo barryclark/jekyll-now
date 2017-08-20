@@ -4,28 +4,25 @@ layout: default
 
 <div class="posts">
   {% for post in site.posts %}
-    {% assign mod = forloop.index | modulo: 2 %}
-    {% if mod == 1 %}
     <div class="grid-x grid-padding-y">
-    {% endif %}
-        <div class="large-6 medium-6 small-12 cell">
-          <div class="">
+          <div class="large-3 medium-3 cell">
+            <div class="post-img">
+              <img src="{{ post.image }}" alt="">
+            </div>
+          </div>
+          <div class="large-9 medium-9 cell">
             <article class="post">
               <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
 
               <div class="entry">
-                <div class="post-img">
-                  <img src="{{ post.image }}" alt="">
-                </div>
                 {{ post.excerpt }}
               </div>
-
-              <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+              <div>
+                <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+              </div>
             </article>
           </div>
-        </div>
-    {% if mod == 0 or mod == forloop.length %}
+
     </div>
-    {% endif %}
   {% endfor %}
 </div>
