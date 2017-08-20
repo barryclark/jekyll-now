@@ -15,24 +15,24 @@ id,comune,provincia,paese,coordinate,lat,lon,data_sisma,popolazione_prima_del_si
 14,Castel Sant’Angelo,RI,ITALIA,"42.3938693,13.0234552",42.3938693,13.0234552,24/08/2016,1282,http://www.halleyweb.com/c057015/hh/index.php,https://www.poste.it/files/1476460664562/Elenco-comuni-colpiti_Allegato-1-e-2.pdf
 15,Cittareale,RI,ITALIA,"42.6182543,13.1596844",42.6182543,13.1596844,24/08/2016,482,http://www.comune.cittareale.ri.gov.it/,https://www.poste.it/files/1476460664562/Elenco-comuni-colpiti_Allegato-1-e-2.pdf
 16,Leonessa,RI,ITALIA,"42.56315,12.9638499",42.56315,12.9638499,24/08/2016,2734,http://www.comunedileonessa.eu/,https://www.poste.it/files/1476460664562/Elenco-comuni-colpiti_Allegato-1-e-2.pdf
-17,Micigliano,RI,ITALIA,"42.4513391,13.0547279",42.4513391,13.0547279,24/08/2016,,,https://www.poste.it/files/1476460664562/Elenco-comuni-colpiti_Allegato-1-e-2.pdf
-18,Posta,RI,ITALIA,"42.526336,13.098082",42.526336,13.098082,24/08/2016,,,https://www.poste.it/files/1476460664562/Elenco-comuni-colpiti_Allegato-1-e-2.pdf
-19,Amandola,FM,ITALIA,"42.979965,13.3560847",42.979965,13.3560847,24/08/2016,,,https://www.poste.it/files/1476460664562/Elenco-comuni-colpiti_Allegato-1-e-2.pdf
-20,Acquasanta Terme,AP,ITALIA,"42.769944,13.410185",42.769944,13.410185,24/08/2016,,,https://www.poste.it/files/1476460664562/Elenco-comuni-colpiti_Allegato-1-e-2.pdf
-21,Arquata del Tronto,AP,ITALIA,"42.7723609,13.2965826",42.7723609,13.2965826,24/08/2016,,,https://www.poste.it/files/1476460664562/Elenco-comuni-colpiti_Allegato-1-e-2.pdf
-22,Comunanza,AP,ITALIA,"42.9568523,13.4128721",42.9568523,13.4128721,24/08/2016,,,https://www.poste.it/files/1476460664562/Elenco-comuni-colpiti_Allegato-1-e-2.pdf
-23,Cossignano,AP,ITALIA,"42.984251,13.689988",42.984251,13.689988,24/08/2016,,,https://www.poste.it/files/1476460664562/Elenco-comuni-colpiti_Allegato-1-e-2.pdf
-24,Force,AP,ITALIA,"42.960949,13.487684",42.960949,13.487684,24/08/2016,,,https://www.poste.it/files/1476460664562/Elenco-comuni-colpiti_Allegato-1-e-2.pdf
-25,Montalto delle Marche,AP,ITALIA,"42.989851,13.609186",42.989851,13.609186,24/08/2016,,,https://www.poste.it/files/1476460664562/Elenco-comuni-colpiti_Allegato-1-e-2.pdf
-26,Montedinove,AP,ITALIA,"42.97155,13.588486",42.97155,13.588486,24/08/2016,,,https://www.poste.it/files/1476460664562/Elenco-comuni-colpiti_Allegato-1-e-2.pdf
-27,Montefortino,FM,ITALIA,"42.9430952,13.3448312",42.9430952,13.3448312,24/08/2016,,,https://www.poste.it/files/1476460664562/Elenco-comuni-colpiti_Allegato-1-e-2.pdf
-28,Montegallo,AP,ITALIA,"42.8473894,13.3434963",42.8473894,13.3434963,24/08/2016,,,https://www.poste.it/files/1476460664562/Elenco-comuni-colpiti_Allegato-1-e-2.pdf
-29,Montemonaco,AP,ITALIA,"42.8991551,13.3268587",42.8991551,13.3268587,24/08/2016,,,https://www.poste.it/files/1476460664562/Elenco-comuni-colpiti_Allegato-1-e-2.pdf
-30,Palmiano,AP,ITALIA,"42.8993528,13.4583597",42.8993528,13.4583597,24/08/2016,,,https://www.poste.it/files/1476460664562/Elenco-comuni-colpiti_Allegato-1-e-2.pdf
-31,Roccafluvione,AP,ITALIA,"42.859947,13.476785",42.859947,13.476785,24/08/2016,,,https://www.poste.it/files/1476460664562/Elenco-comuni-colpiti_Allegato-1-e-2.pdf
-32,Rotella,AP,ITALIA,"42.9541727,13.5593592",42.9541727,13.5593592,24/08/2016,,,https://www.poste.it/files/1476460664562/Elenco-comuni-colpiti_Allegato-1-e-2.pdf
-33,Venarotta,AP,ITALIA,"42.882947,13.492285",42.882947,13.492285,24/08/2016,,,https://www.poste.it/files/1476460664562/Elenco-comuni-colpiti_Allegato-1-e-2.pdf
-34,Acquacanina,MC,ITALIA,"43.0298075,13.1750621",43.0298075,13.1750621,24/08/2016,,,https://www.poste.it/files/1476460664562/Elenco-comuni-colpiti_Allegato-1-e-2.pdf
+17,Micigliano,RI,ITALIA,"42.4513391,13.0547279",42.4513391,13.0547279,24/08/2016,140,http://www.comune.micigliano.ri.it/hh/index.php,https://www.poste.it/files/1476460664562/Elenco-comuni-colpiti_Allegato-1-e-2.pdf
+18,Posta,RI,ITALIA,"42.526336,13.098082",42.526336,13.098082,24/08/2016,824,http://www.comunediposta.it/,https://www.poste.it/files/1476460664562/Elenco-comuni-colpiti_Allegato-1-e-2.pdf
+19,Amandola,FM,ITALIA,"42.979965,13.3560847",42.979965,13.3560847,24/08/2016,3969,http://www.comune.amandola.fm.it/hh/index.php,https://www.poste.it/files/1476460664562/Elenco-comuni-colpiti_Allegato-1-e-2.pdf
+20,Acquasanta Terme,AP,ITALIA,"42.769944,13.410185",42.769944,13.410185,24/08/2016,3346,http://www.comune.acquasantaterme.ap.it/hh/index.php,https://www.poste.it/files/1476460664562/Elenco-comuni-colpiti_Allegato-1-e-2.pdf
+21,Arquata del Tronto,AP,ITALIA,"42.7723609,13.2965826",42.7723609,13.2965826,24/08/2016,1481,http://www.halleyegov.it/c044006/hh/index.php,https://www.poste.it/files/1476460664562/Elenco-comuni-colpiti_Allegato-1-e-2.pdf
+22,Comunanza,AP,ITALIA,"42.9568523,13.4128721",42.9568523,13.4128721,24/08/2016,3100,http://www.comune.comunanza.ap.it/hh/index.php,https://www.poste.it/files/1476460664562/Elenco-comuni-colpiti_Allegato-1-e-2.pdf
+23,Cossignano,AP,ITALIA,"42.984251,13.689988",42.984251,13.689988,24/08/2016,1036,http://comune.cossignano.ap.it/hh/index.php,https://www.poste.it/files/1476460664562/Elenco-comuni-colpiti_Allegato-1-e-2.pdf
+24,Force,AP,ITALIA,"42.960949,13.487684",42.960949,13.487684,24/08/2016,1602,www.comune.force.ap.it/,https://www.poste.it/files/1476460664562/Elenco-comuni-colpiti_Allegato-1-e-2.pdf
+25,Montalto delle Marche,AP,ITALIA,"42.989851,13.609186",42.989851,13.609186,24/08/2016,2345,http://www.comune.montaltodellemarche.ap.it/hh/index.php,https://www.poste.it/files/1476460664562/Elenco-comuni-colpiti_Allegato-1-e-2.pdf
+26,Montedinove,AP,ITALIA,"42.97155,13.588486",42.97155,13.588486,24/08/2016,567,http://www.comune.montedinove.ap.it/,https://www.poste.it/files/1476460664562/Elenco-comuni-colpiti_Allegato-1-e-2.pdf
+27,Montefortino,FM,ITALIA,"42.9430952,13.3448312",42.9430952,13.3448312,24/08/2016,1303,http://halleyweb.com/c044037/hh/index.php,https://www.poste.it/files/1476460664562/Elenco-comuni-colpiti_Allegato-1-e-2.pdf
+28,Montegallo,AP,ITALIA,"42.8473894,13.3434963",42.8473894,13.3434963,24/08/2016,622,http://www.comune.montegallo.ap.it/,https://www.poste.it/files/1476460664562/Elenco-comuni-colpiti_Allegato-1-e-2.pdf
+29,Montemonaco,AP,ITALIA,"42.8991551,13.3268587",42.8991551,13.3268587,24/08/2016,684,http://www.comunemontemonaco.it/,https://www.poste.it/files/1476460664562/Elenco-comuni-colpiti_Allegato-1-e-2.pdf
+30,Palmiano,AP,ITALIA,"42.8993528,13.4583597",42.8993528,13.4583597,24/08/2016,196,http://www.tecuting2.it/c044056/hh/index.php,https://www.poste.it/files/1476460664562/Elenco-comuni-colpiti_Allegato-1-e-2.pdf
+31,Roccafluvione,AP,ITALIA,"42.859947,13.476785",42.859947,13.476785,24/08/2016,2195,http://www.halleyweb.com/c044064/hh/index.php,https://www.poste.it/files/1476460664562/Elenco-comuni-colpiti_Allegato-1-e-2.pdf
+32,Rotella,AP,ITALIA,"42.9541727,13.5593592",42.9541727,13.5593592,24/08/2016,906,http://www.comunerotella.net/hh/index.php,https://www.poste.it/files/1476460664562/Elenco-comuni-colpiti_Allegato-1-e-2.pdf
+33,Venarotta,AP,ITALIA,"42.882947,13.492285",42.882947,13.492285,24/08/2016,2270,http://www.comune.venarotta.ap.it/,https://www.poste.it/files/1476460664562/Elenco-comuni-colpiti_Allegato-1-e-2.pdf
+34,Acquacanina,MC,ITALIA,"43.0298075,13.1750621",43.0298075,13.1750621,24/08/2016,121,http://www.comune.acquacanina.mc.it/,https://www.poste.it/files/1476460664562/Elenco-comuni-colpiti_Allegato-1-e-2.pdf
 35,Bolognola,MC,ITALIA,"42.994904,13.2263425",42.994904,13.2263425,24/08/2016,,,https://www.poste.it/files/1476460664562/Elenco-comuni-colpiti_Allegato-1-e-2.pdf
 36,Castelsantangelo sul Nera,MC,ITALIA,"42.8944925,13.1539297",42.8944925,13.1539297,24/08/2016,,,https://www.poste.it/files/1476460664562/Elenco-comuni-colpiti_Allegato-1-e-2.pdf
 37,Cessapalombo,MC,ITALIA,"43.1087889,13.2580261",43.1087889,13.2580261,24/08/2016,,,https://www.poste.it/files/1476460664562/Elenco-comuni-colpiti_Allegato-1-e-2.pdf
