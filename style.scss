@@ -19,15 +19,15 @@ html {
 
 body {
 	background: $white;
-  font: 16px/1.4 $ptsans;
-  color: $darkGray;
+  font: 18px/1.4 $ptsans;
+  color: $darkerGray;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $ptsans;
-  color: $darkerGray;
+  font-family: $droidsans;
+  color: $black;
   font-weight: bold;
-
+  margin: 20px 0 5px 0;
   line-height: 1.7;
   padding: 0;
 
@@ -53,19 +53,19 @@ h3 {
 
 h4 {
   font-size: 18px;
-  color: $gray;
 }
 
 p {
-  margin: 15px 0;
+  margin: 5px 0 15px 0;
+  line-height: 1.6;
 }
 
 a {
-  color: $blue;
+  color: $cyan;
   text-decoration: none;
 	cursor: pointer;
   &:hover, &:active {
-    color: $blue;
+    color: lighten($cyan, 5%);
   }
 }
 
@@ -163,12 +163,6 @@ img {
   height: 70px;
   margin-right: 15px;
 
-  @include mobile {
-    float: none;
-    display: block;
-    margin: 0 auto;
-  }
-
   img {
     border-radius: 5px;
   }
@@ -239,6 +233,15 @@ nav {
 }
 .callout {
   border-radius: 5px;
+}
+.posts {
+  .post-img {
+    padding: 20px;
+    img {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
 }
 .posts > .post {
   padding-bottom: 2em;

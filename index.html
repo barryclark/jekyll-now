@@ -4,16 +4,19 @@ layout: default
 
 <div class="posts">
   {% for post in site.posts %}
-    {% assign mod = forloop.index | modulo: 3 %}
+    {% assign mod = forloop.index | modulo: 2 %}
     {% if mod == 1 %}
     <div class="grid-x grid-padding-y">
     {% endif %}
-        <div class="large-4 medium-4 small-12 cell">
+        <div class="large-6 medium-6 small-12 cell">
           <div class="">
             <article class="post">
               <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
 
               <div class="entry">
+                <div class="post-img">
+                  <img src="{{ post.image }}" alt="">
+                </div>
                 {{ post.excerpt }}
               </div>
 
@@ -21,7 +24,7 @@ layout: default
             </article>
           </div>
         </div>
-    {% if mod == 3 or mod == forloop.length %}
+    {% if mod == 0 or mod == forloop.length %}
     </div>
     {% endif %}
   {% endfor %}
