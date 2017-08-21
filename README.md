@@ -5,7 +5,7 @@ Pull Requests from our design, development and operations teams of [Haufe.Group]
 The short version of it is to fork this repo your own account and then clone it locally and add your changes. You can easily run Jekyll locally using docker. Simply `cd` into your `Haufe-Lexware.github.io` fork containing your changes, and then issue the following command:
 
 ```sh
-$ docker run --rm --label=jekyll --volume=$(pwd):/srv/jekyll   -it -p 4000:4000 jekyll/jekyll:pages jekyll serve
+$ docker run --rm --label=jekyll --volume=$(pwd):/srv/jekyll -it -p 4000:4000 jekyll/jekyll:pages jekyll serve
 ```
 
 If everything works out, the jekyll server will serve the blog preview on `http://127.0.0.1:4000`. Once you verified that your changes render without error, you can submit a pull request against out blog repo.
