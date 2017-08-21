@@ -5,4 +5,6 @@ _site
 .sass-cache
 node_modules
 package.json
+Gemfile.lock
+Gemfile
 /.vs
