@@ -1,7 +1,7 @@
 ---
 layout: post
 title: We are live or How to start a developer blog
-subtitle: The 'Hello World' Post
+subtitle: Why culture is my most important focus as CTO
 category: dev
 tags: [development, general, culture]
 author: Holger Reinhardt
