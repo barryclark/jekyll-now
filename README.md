@@ -2,15 +2,13 @@
 
 Pull Requests from our design, development and operations teams of [Haufe.Group](http://www.haufe-lexware.com) and its subsidiaries are greatly appreciated. If you've never contributed to an open source project before we are more than happy to walk you through how to create a pull request. 
 
-The short version of it is to fork this repo into (a) a repo of your own account under (b) the name `[your_account_name].github.io`. Upon your first commit the blog should be published at `http://[your_account_name].github.io` (you might need to change the ```CNAME``` file to match your - please make sure to exclude those changes from your subsequent pull request). Now you should be able to add your changes and test them live. When you are finished, create a pull request with your changes and submit it against our blog repo. You can find possible eror messages in the ```settings``` tab of your repo.
-
-Alternatively - or if you run into build failure - we highly recommend running Jekyll locally using docker. Simply `cd` into your `Haufe-Lexware.github.io` fork containing your changes, and then issue the following command:
+The short version of it is to fork this repo your own account and then clone it locally and add your changes. You can easily run Jekyll locally using docker. Simply `cd` into your `Haufe-Lexware.github.io` fork containing your changes, and then issue the following command:
 
 ```sh
 $ docker run --rm --label=jekyll --volume=$(pwd):/srv/jekyll   -it -p 4000:4000 jekyll/jekyll:pages jekyll serve
 ```
 
-If everything works out, the jekyll server will serve the blog preview on `http://127.0.0.1:4000`.
+If everything works out, the jekyll server will serve the blog preview on `http://127.0.0.1:4000`. Once you verified that your changes render without error, you can submit a pull request against out blog repo.
 
 Please note to set the proxy if you are working from within the Haufe Intranet
 
