@@ -9,3 +9,5 @@ Source: https://github.com/jupyter/nbconvert
 
 *Usage:* `jupyter nbconvert --to html mynotebook.ipynb`
 jupyter nbconvert --to html '"Getting text from Project Gutenberg.ipynb"
+
+Note that nbconverter changes the format on the page it's on (like this blog), so I dont' use it here.
