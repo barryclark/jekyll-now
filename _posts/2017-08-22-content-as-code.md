@@ -3,7 +3,7 @@ layout: post
 title: Treating our Content as Code
 subtitle: What DevOps and CI/CD can teach us about content publishing.
 category: dev
-tags: [content, concept, cto]
+tags: [content, concepts, cto]
 author: Holger Reinhardt
 author_email: holger.reinhardt@haufe-lexware.com 
 header-img: "images/bg-post.alt.jpg"

@@ -1,41 +1,62 @@
+- slug: api
+  name: API
+  
+- slug: automation
+  name: Automation
+
+- slug: bots
+  name: Bots
+  
+- slug: cloud
+  name: Cloud
+
+- slug: concepts
+  name: Concepts
+
+- slug: conference
+  name: Conference
+
+- slug: content
+  name: Content
+
+- slug: cto
+  name: CTO
+
+- slug: culture
+  name: Culture
+
+- slug: custdev
+  name: Customer Development
+
+- slug: data
+  name: Data
+
+- slug: design
+  name: Design
+  
+- slug: development
+  name: Development
+
+- slug: devops
+  name: Devops
+
+- slug: docker
+  name: Docker
+
+- slug: frontend
+  name: Frontend
+
 - slug: general
   name: General
 
 - slug: howto
   name: HowTo
 
-- slug: conference
-  name: Conference
-
-- slug: readinglist
-  name: Reading List
-
-- slug: culture
-  name: Culture
-
-- slug: api
-  name: API
+- slug: ideas
+  name: Ideation
   
-- slug: cloud
-  name: Cloud
-
-- slug: devops
-  name: Devops
-
-- slug: serverless
-  name: Serverless
-
-- slug: data
-  name: Data
-
-- slug: bots
-  name: Bots
-  
-- slug: development
-  name: Development
-
-- slug: docker
-  name: Docker
+- slug: logging
+  name: Logging
 
 - slug: microservice
   name: Microservice
@@ -46,35 +67,18 @@
 - slug: open-source
   name: Open Source
 
-- slug: security
-  name: Security
-
-- slug: frontend
-  name: Frontend
-
-- slug: automation
-  name: Automation
-
-- slug: design
-  name: Design
-  
-- slug: ux
-  name: UX
-  
-- slug: concepts
-  name: Concepts
-  
-- slug: disruptive
-  name: Disruptive
-  
 - slug: patterns
   name: Patterns
   
-- slug: ideas
-  name: Ideation
-  
-- slug: interaction
-  name: Interaction
+- slug: readinglist
+  name: Reading List
 
-- slug: content
-  name: Content
+- slug: security
+  name: Security
+
+- slug: serverless
+  name: Serverless
+
+- slug: ux
+  name: UX
+  
