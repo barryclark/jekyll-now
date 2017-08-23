@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How many light verbs is too many?
+title: How many light verbs are too many?
 ---
 
 ## What are light verbs?

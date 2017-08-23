@@ -47,8 +47,8 @@ Let's put it in the function:
 ```python
 text = gutenberg(book[0], book[1], book[2])
 ```
-
-```output
+Depending on whether you already have the text or not, you may get this output:
+```
 File already exists
 Extracting text from file
 ```
@@ -63,6 +63,7 @@ Now we've broken it into tokens. Let's take a look at what we've got.
 ```python
 print(tokens[:45])
 ```
+Here's the resulting output:
 ```
 ['My', 'father', '’', 's', 'family', 'name', 'being', 'Pirrip', ',', 'and', 'my', 'Christian', 'name', 'Philip', ',', 'my', 'infant', 'tongue', 'could', 'make', 'of', 'both', 'names', 'nothing', 'longer', 'or', 'more', 'explicit', 'than', 'Pip', '.', 'So', ',', 'I', 'called', 'myself', 'Pip', ',', 'and', 'came', 'to', 'be', 'called', 'Pip', '.']
 ```
