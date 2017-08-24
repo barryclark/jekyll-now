@@ -3,30 +3,38 @@ layout: post
 title: My favorite things to do with Jupyter Notebooks
 ---
 
-**Easily convert from Jupyter Notebook to HTML using nbconvert**
+One of the many great things about Jupyter Notebooks is the ability to add extensions.
 
-Source: https://github.com/jupyter/nbconvert
-
-*Usage:* `jupyter nbconvert --to html mynotebook.ipynb`
-jupyter nbconvert --to html '"Getting text from Project Gutenberg.ipynb"
-
-Note that nbconverter changes the format on the page it's on (like this blog), so I dont' use it here.
-
-
-2to3 converter:
-
-http://jupyter-contrib-nbextensions.readthedocs.io/en/latest/nbextensions/code_prettify/README_2to3.html
-
-To install notebook etensions
-
+The easiest way to add Jupyter Notebook extensions is through nbextensions. You can install it using conda-forge:
+```python
+conda install -c conda-forge jupyter_contrib_nbextensions
+```
+You can also use:
+```
 pip install jupyter_contrib_nbextensions
+```
 
 Then do:
 
 jupyter contrib nbextension install --user
 
-pip install autopep8
-
-
 Then go tot the Nbextensions tab and enable it from there
+
+
+
+*Here are some of my favorite Jupyter Notebook extensions:*
+
+**2to3 converter**:
+-Converts Python 2 to Python 3 in a single click
+
+http://jupyter-contrib-nbextensions.readthedocs.io/en/latest/nbextensions/code_prettify/README_2to3.html
+
+To install notebook etensions
+
+
+**autopep8**
+-Formats your code based on the PEP8 guide in a single click
+- After you enable this, you'll still need to pip install it: ```pip install autopep8```
+
+
 

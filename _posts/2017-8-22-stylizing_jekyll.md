@@ -3,8 +3,25 @@ layout: post
 title: Stylizing Jekyll
 ---
 
-**Double asterisks**
+*Single asterisk*
+
+**Double asterisk**
+
+***Triple asterisk***
 
 Use a grave accent for `code`
 
-*Single asterisk*
+```
+Triple grave accent for code
+```
+
+<b>Main idea</b>
+-Sub idea
+
+```html
+<b>Main idea</b>
+-Sub idea
+```
+
+-Dash no space
+- Dash with a space
