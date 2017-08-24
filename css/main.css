@@ -1,0 +1,182 @@
+body {
+  overflow: visible;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 8px;
+  padding-left: 0px;
+}
+.main-template {
+  padding-top: 60px;
+  padding-left: 5px;
+  padding-right: 5px;
+  text-align: left;
+}
+
+div.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 0px;
+  margin-right: 0px;
+  width: auto;
+}
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.navbar-wrapper .navbar .container {
+  width: auto;
+}
+
+@media (min-width: 768px) {
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+  .main-template {
+    padding-top: 90px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: left;
+  }
+  div.container {
+    padding-left: 15px;
+    padding-right: 50px;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: auto;
+  }
+}
+
+
+
+/*Fix Bootstrap and jumping to Anchors*/
+h1, h2, h3, h4, h5, h6  {
+  margin-top:10px;
+}
+
+/* center images */
+img {
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+/* IPython notebook stuff */
+div#notebook {
+  overflow: visible;
+  border-top: none;
+}
+
+@media print {
+  div.cell {
+    display: block;
+    page-break-inside: avoid;
+  } 
+  div.output_wrapper { 
+    display: block;
+    page-break-inside: avoid; 
+  }
+  div.output { 
+    display: block;
+    page-break-inside: avoid; 
+  }
+}
+
+/* Make code blocks scrollable */
+div.highlight > pre {
+  overflow: auto;
+  word-wrap: normal;
+  white-space: pre;
+}
+div.output_text > pre {
+  overflow: auto;
+  word-wrap: normal;
+  white-space: pre;
+}
+
+/* Hide anchor links unless you hover over the title */
+.anchor-link {
+    display: none;
+}
+*:hover > .anchor-link {
+    display: inline;
+}
+
+/* Social media buttons */
+ul.share-buttons{
+  list-style: none;
+  padding: 0;
+}
+
+ul.share-buttons li{
+  display: inline;
+}
+span.share-buttons {
+  position: absolute;
+  right: 0;
+  margin-right: 10%;
+}
+
+/* MathJax stuff */
+.MathJax_Display {
+  padding: 8px 0px;
+}
+
+/* Collapsable input */
+div.collapsed {
+  height: 2em;
+  overflow: hidden;
+}
+
+.collapse_expand_button {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    cursor: pointer;
+}
+
+
+/* index list */
+/* Center align the text within the three columns below the carousel */
+.post_preview .col-lg-4 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.post_preview h2 {
+  font-weight: normal;
+}
+.post_preview .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}

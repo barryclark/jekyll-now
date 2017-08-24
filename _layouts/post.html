@@ -1,20 +1,20 @@
----
-layout: default
----
+{% include header.html %}
 
-<article class="post">
-	<h1>{{ page.title }}</h1>
+<div class="container">
 
-	<div class="entry">
-		{{ content }}
-	</div>
+  <div class="main-template">
+    {{ content }}
+  </div>
 
-	{% for tag in page.tags %}
-	<a class="ui tiny label post-tag"
-	href="{{ site.baseurl }}/index?tag={{ tag | replace: " ", "-" }}">
-	{{ tag }}
-	<div class="detail"> {{ site.tags[tag].size }} </div>
-</a>
-{% endfor %}
+</div><!-- /.container -->
 
-</article>
+<div class="container">
+
+  <div class="main-template">
+  <hr>
+    {% include post_social_media.html %}
+  </div>
+
+</div><!-- /.container -->
+
+{% include footer.html %}
