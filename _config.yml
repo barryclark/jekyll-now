@@ -84,3 +84,93 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+
+
+# Where things are
+############################################################
+source: . # Set by Github
+# This is where the generated site will be placed once Jekyll is done transforming it.
+destination: ./_site
+plugins: ./_plugins
+# This folder is for the main templates your content will be inserted into. You can have different layouts for different pages or page sections.
+layouts: ./_layouts
+data_source: ./_data
+collections: null
+
+# Handling Reading
+############################################################
+# Safe: Disable custom plugins, and ignore symbolic links.
+safe: true # Set by Githyb
+include: [".htaccess"]
+exclude: [notebooks]
+keep_files: [".git", ".svn"]
+encoding: "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+
+# Filtering Content
+############################################################
+show_drafts: null
+limit_posts: 0
+future: true
+unpublished: false
+
+# Plugins
+############################################################
+whitelist: []
+gems: [github-pages]
+
+# Conversion
+############################################################
+markdown: kramdown
+highlighter: rouge # Set by Github
+# LSI: produce an index for related posts.
+lsi: false # Set by Github
+excerpt_separator: "\n\n"
+
+
+# Serving
+############################################################
+detach: false
+port: 4000
+host: 127.0.0.1
+# Uncomment if you are planning to run the blog in a subdirectory
+# Note - if you enable this, and attempt to view your site locally you have to use the baseurl in your local path.
+# Serve the website from the given base URL
+# Example, you must use http://localhost:4000/path/to/blog
+#baseurl: /path/to/blog
+baseurl: "" # does not include hostname
+
+
+# Outputting
+############################################################
+permalink: /posts/:title/
+paginate_path: /page:num
+# Set the time zone for site generation.
+timezone: Europe/Brussels
+
+quiet: false
+defaults: []
+
+# Markdown Processors
+############################################################
+rdiscount:
+  extensions: []
+
+redcarpet:
+  extensions: []
+
+kramdown:
+  auto_ids:       true
+  footnote_nr:    1
+  entity_output:  as_char
+  toc_levels:     1..6
+  smart_quotes:   lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
+  coderay:
+    coderay_wrap:              div
+    coderay_line_numbers:      inline
+    coderay_line_number_start: 1
+    coderay_tab_width:         4
+    coderay_bold_every:        10
+    coderay_css:               style
