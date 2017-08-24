@@ -3,11 +3,19 @@ layout: post
 title: Stylizing Jekyll
 ---
 
-*Single asterisk*
+Jekyll uses Markdown for formating, so all the Markdown commands work in Jekyll.
 
-**Double asterisk**
+# Emphasis
 
-***Triple asterisk***
+*Single asterisk for italics*
+
+**Double asterisk for bold**
+
+***Triple asterisk for bold and italics***
+
+# Headers
+
+The largest header is a single `#`. For subsequently smaller headers, add another `#`
 
 Use a grave accent for `code`
 
@@ -15,13 +23,9 @@ Use a grave accent for `code`
 Triple grave accent for code
 ```
 
-<b>Main idea</b>
--Sub idea
+You can also use HTML tags. `<b>Bold with HTML</b>` gives you:
 
-```html
-<b>Main idea</b>
--Sub idea
-```
+<b>Bold with HTML</b>
 
--Dash no space
-- Dash with a space
+# Lists
+- Dash with a space for an unordered list
