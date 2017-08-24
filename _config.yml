@@ -1,86 +1,107 @@
-#
-# This file contains configuration flags to customize your site
-#
+# Use Github pages Jekyll configuration
+# Launch Github pages Jekyll with:
+# bundle exec jekyll serve
 
-# Name of your site (displayed in the header)
-name: jss367
+# General blog information
+############################################################
+# Name of your blog (this will show up at the top of your page and in the RSS feed)
+name: Peter's Notes
+# Short description (goes below the title; it will also be used in the RSS feed)
+description: Aggregation of notes and code samples.
+# Your name, as you want it to appear underneath each post and in the footer
+author: Peter
+# Your email if you want it to be linked on the contact page
+author_email: peter.roelants@gmail.com
+# The URL of your actual domain. This will be used to make absolute links in the RSS feed.
+url: http://peterroelants.github.io
+twitter_username: PeterRoelants
+github_username:  peterroelants
 
-# Short bio or description (displayed in the header)
-description: Data Scientist
+# Where things are
+############################################################
+source: . # Set by Github
+# This is where the generated site will be placed once Jekyll is done transforming it.
+destination: ./_site
+plugins: ./_plugins
+# This folder is for the main templates your content will be inserted into. You can have different layouts for different pages or page sections.
+layouts: ./_layouts
+data_source: ./_data
+collections: null
 
-# URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://raw.githubusercontent.com/jss367/jekyll-now/master/images/jekyll-logo.png
+# Handling Reading
+############################################################
+# Safe: Disable custom plugins, and ignore symbolic links.
+safe: true # Set by Githyb
+include: [".htaccess"]
+exclude: [notebooks]
+keep_files: [".git", ".svn"]
+encoding: "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
-#
-# Flags below are optional
-#
+# Filtering Content
+############################################################
+show_drafts: null
+limit_posts: 0
+future: true
+unpublished: false
 
-# Includes an icon in the footer for each username you enter
-footer-links:
-  dribbble:
-  email:
-  facebook:
-  flickr:
-  github: jss367
-  instagram:
-  linkedin:
-  pinterest:
-  rss: # just type anything here for a working RSS icon
-  twitter: 
-  stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
-  youtube: # channel/<your_long_string> or user/<user-name>
-  googleplus: # anything in your profile username that comes after plus.google.com/
+# Plugins
+############################################################
+whitelist: []
+gems: [github-pages]
+
+# Conversion
+############################################################
+markdown: kramdown
+highlighter: rouge # Set by Github
+# LSI: produce an index for related posts.
+lsi: false # Set by Github
+excerpt_separator: "\n\n"
 
 
-# Enter your Disqus shortname (not your username) to enable commenting on posts
-# You can find your shortname on the Settings page of your Disqus account
-disqus:
+# Serving
+############################################################
+detach: false
+port: 4000
+host: 127.0.0.1
+# Uncomment if you are planning to run the blog in a subdirectory
+# Note - if you enable this, and attempt to view your site locally you have to use the baseurl in your local path.
+# Serve the website from the given base URL
+# Example, you must use http://localhost:4000/path/to/blog
+#baseurl: /path/to/blog
+baseurl: "" # does not include hostname
 
-# Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-google_analytics: UA-100441463-1
 
-# Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
-# Used for Sitemap.xml and your RSS feed
-url: https://jss367.github.io/
+# Outputting
+############################################################
+permalink: /posts/:title/
+paginate_path: /page:num
+# Set the time zone for site generation.
+timezone: Europe/Brussels
 
-# If you're hosting your site at a Project repository on GitHub pages
-# (http://yourusername.github.io/repository-name)
-# and NOT your User repository (http://yourusername.github.io)
-# then add in the baseurl here, like this: "/repository-name"
-baseurl: ""
+quiet: false
+defaults: []
 
-#
-# !! You don't need to change any of the configuration flags below !!
-#
+# Markdown Processors
+############################################################
+rdiscount:
+  extensions: []
 
-permalink: /:title/
+redcarpet:
+  extensions: []
 
-# The release of Jekyll Now that you're using
-version: v1.2.0
-
-# Jekyll 3 now only supports Kramdown for Markdown
 kramdown:
-  # Use GitHub flavored markdown, including triple backtick fenced code blocks
-  input: GFM
-  # Jekyll 3 and GitHub Pages now only support rouge for syntax highlighting
-  syntax_highlighter: rouge
-  syntax_highlighter_opts:
-    # Use existing pygments syntax highlighting css
-    css_class: 'highlight'
+  auto_ids:       true
+  footnote_nr:    1
+  entity_output:  as_char
+  toc_levels:     1..6
+  smart_quotes:   lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
 
-# Set the Sass partials directory, as we're using @imports
-sass:
-  style: :expanded # You might prefer to minify using :compressed
-
-# Use the following plug-ins
-gems:
-  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
-  - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
-
-# Exclude these files from your production _site
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - LICENSE
-  - README.md
-  - CNAME
+  coderay:
+    coderay_wrap:              div
+    coderay_line_numbers:      inline
+    coderay_line_number_start: 1
+    coderay_tab_width:         4
+    coderay_bold_every:        10
+    coderay_css:               style
