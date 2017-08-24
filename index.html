@@ -1,41 +1,38 @@
 ---
-layout: index_layout
-title: Overview blogposts
+layout: default
 ---
 
-<div class="main-template">
-	<div class="container post_preview">
-	<h1>{{ page.title }}</h1>
+<div class="posts">
+	{% for post in site.posts %}
 
-	<div class="row">
+	{% capture tags %}
 
-		<div class="col-md-4">
-			<a href="https://medium.com/onfido-tech/machine-learning-101-be2e0a86c96a">
-			<img class="img-circle" src="/images/simple_model.png" alt="simple model" width="140" height="140">
-			</a>
-			<h2>Machine Learning 101</h2>
-			<p>Introduction to machine learning. Gives a brief description of what machine learning is and how models can be trained by optimising parameters. This tutorial is written for Onfido.</p>
-			<p><a class="btn btn-default" href="https://medium.com/onfido-tech/machine-learning-101-be2e0a86c96a" role="button">Machine Learning 101 »</a></p>
-		</div><!-- /.col-lg-4 -->
+	{% for tag in post.tags%}
+	{{ tag | replace: " ", "-"}}
+	{% endfor %}
 
-    <div class="col-md-4">
-      <a href="{% post_url 2015-06-10-neural_network_implementation_part01 %}">
-      <img class="img-circle" src="/images/ANN_preview.png" alt="ANN image" width="140" height="140">
-      </a>
-      <h2>How to implement a neural network</h2>
-      <p>5 (+2) parts tutorial on how to implement a simple neural network model. The tutorial starts with a simple model and builds up to a handwritten digit classifier. The math is explained along the way together with Python code examples. You can download the different parts and run them yourself with IPython notebook.</p>
-      <p><a class="btn btn-default" href="{% post_url 2015-06-10-neural_network_implementation_part01 %}" role="button">Learn to implement a neural net »</a></p>
-    </div><!-- /.col-lg-4 -->
+	{% endcapture %}
 
-    <div class="col-md-4">
-      <a href="{% post_url 2015-09-27-rnn_implementation_part01 %}">
-      <img class="img-circle" src="/images/RNN_preview.png" alt="RNN image" width="140" height="140">
-      </a>
-      <h2>How to implement a recurrent neural network</h2>
-      <p>2 part tutorial on how to implement a recurrent neural network. The tutorial explains the basics of backpropagation through time and discusses some of the difficulties of training recurrent networks. You can download the different parts and run them yourself with IPython notebook.</p>
-      <p><a class="btn btn-default" href="{% post_url 2015-09-27-rnn_implementation_part01 %}" role="button">Learn to implement a RNN »</a></p>
-    </div><!-- /.col-lg-4 -->
+	<article class="post {{ tags | truncatewords: post.tags.size | replace: '...', ''}}">
 
-  </div>
-  </div>
+		<h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+
+		<div class="entry">
+			{{ post.excerpt }}
+		</div>
+
+		<a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+	</article>
+	{% endfor %}
 </div>
+
+
+{% for tag in site.tags %}
+<a class="ui tiny label post-tag {{ tag[0] | replace: " ", "-" }}"
+href="{{ site.baseurl }}/index?tag={{ tag[0] | replace: " ", "-" }}">
+{{ tag[0] }}
+<div class="detail"> {{ tag[1].size }} </div>
+</a>
+{% endfor %}
+
+<script src="{{ site.baseurl }}/js/tag_filters.js"></script>
