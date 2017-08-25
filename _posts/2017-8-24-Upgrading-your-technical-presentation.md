@@ -8,7 +8,7 @@ description: You have to give a technical presentation. Don't panic, just follow
 
 ![Image of umbrellas at Glacial Gardens]({{ site.baseurl }}/images/umbrellas.jpg)
 
-I am not a veteran presenter on technical topics. I haven't spoken at Meetups, conventions, or Toastmasters. I have however given the occasional technical presentation at work, as well as watched quite a few online and at technology-related gatherings. This post will not raise your next technical presentation to the level of a Steve Jobs keynote, but I hope to help you clear the low bar often set by programmers finding themselves tasked with preparing some words and slides to be delivered in front of a group of people. My advice to you, novice presenter:
+I am not a veteran presenter on technical topics. I haven't spoken at Meetups, conventions, or Toastmasters. I have however given the occasional technical presentation at work, as well as watched quite a few online and at technology-related gatherings. This post will not raise your next technical presentation to the level of a Steve Jobs keynote, but I hope to help you clear the low bar often set by programmers finding themselves tasked with preparing some words and slides to be delivered in front of a group of people.<!--more--> My advice to you, novice presenter:
 
 1. *Have a purpose:* Be able to summarize your reason for presenting on the topic in a sentence. "I want to teach my team about New JavaScript Framework X". "I want to teach a new way to deploy web applications". After you've done some practice run-throughs of your presentation, evaluate whether you're meeting that goal.
 
