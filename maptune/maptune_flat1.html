@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- **********************************************************************
+
+maptune_flat1.html
+
+$Comment: maptune application with reactive bootstrap based layout and 2 panes, map and list
+$Source :maptune_flat1.html,v $
+
+$InitialAuthor: guenter richter $
+$InitialDate: 2016/10/20 $
+$Author: guenter richter $
+$Id:maptune_flat1.html 1 2016-10-20 00:00:00Z Guenter Richter $
+
+licensed under CC-BY
+$Log:maptune_flat1.htmls,v $
+
+********************************************************************** -->
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<title>Mappa</title>
+
+	<!-- Bootstrap core CSS -->
+	<link href="assets/css/bootstrap.css" rel="stylesheet">
+
+	<!-- Custom styles for this template -->
+	<link href="assets/css/main.css" rel="stylesheet">
+
+	<!-- map api styles -->
+	<link rel="stylesheet" href="js/leaflet-0.7.7/leaflet.css" />
+
+	<style rel="stylesheet">
+		body {
+			font-family: Roboto, arial, sans-serif;
+			font-weight: 300;
+			font-size: 16px;
+			color: #555;
+			-webkit-font-smoothing: antialiased;
+			-webkit-overflow-scrolling: touch;
+		}
+
+		.leaflet-container label {
+			font-family: 'Lato', sans-serif;
+			font-weight: 300;
+			font-size: 13px;
+			color: #555;
+			line-height: 1em;
+			margin: 0;
+			padding: 0;
+		}
+
+		.leaflet-container a.leaflet-popup-close-button {
+			position: absolute;
+			top: 0;
+			right: 0;
+			margin-top: 8px;
+			margin-right: 5px;
+			text-align: center;
+			width: 20px;
+			height: 23px;
+			font: 20px/14px Tahoma, Verdana, sans-serif;
+			color: #c3c3c3;
+			text-decoration: none;
+			font-weight: bold;
+			background: transparent;
+		}
+
+		code {
+			text-align: left;
+			color: #000;
+			background: #eee;
+			font-size: 0.9em;
+			white-space: pre;
+			display: block;
+			padding: 8px;
+			border: 1px dashed #ccc;
+			margin-bottom: 15px;
+			overflow: hidden;
+		}
+
+		#map-pane {
+		}
+
+		#sidebar-content {
+			overflow: hidden;
+		}
+
+		#view-icon {
+			-webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 1px 4px 0;
+			box-shadow: rgba(0, 0, 0, 0.3) 0 1px 4px 0;
+			background-color: white;
+			border-radius: 20px;
+			border: solid 2px white;
+			border-right-width: 34px;
+			border-style: dashed;
+			color:#e8e8e8;
+		}
+
+		#fullscreen-button {
+			position:absolute;
+			top:15px;
+			left:15px;
+		}
+
+		.textshadow {
+			-webkit-text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+			text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+		}
+
+		.shadow {
+			-webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 1px 4px 0;
+			box-shadow: rgba(0, 0, 0, 0.3) 0 1px 4px 0;
+		}
+
+		.navbar-default {
+			color: #FFeeee;
+			background-color: #eeeeee;
+		}
+		.navbar-default .navbar-nav > li > a:hover,
+		.navbar-default .navbar-nav > li > a:focus {
+			color: #eeeeee;
+			background-color: transparent;
+		}
+
+		.filter-fixed-top {
+			position: fixed;
+			right: 0;
+			left: 0;
+			top:4em;
+			z-index: 1031;
+		}
+
+		.navbar-toggle {
+			display:none;
+		}
+
+	</style>
+
+	<link href="assets/css/bootstrap-datetimepicker.css" rel="stylesheet">
+
+	<link media="screen" href="css/anyfeedmap.css" rel="stylesheet" type="text/css" />
+	<link media="screen" href="css/anyfeedmap_custom.css" rel="stylesheet" type="text/css" />
+	<link media="print" href="css/anyfeedmap_print.css" rel="stylesheet" type="text/css" />
+
+	<link media="screen" href="css/messagebox.css" rel="stylesheet" type="text/css" />
+	<link media="screen" href="css/layerlist.css" rel="stylesheet" type="text/css" />
+	<link media="screen" href="css/date.css" rel="stylesheet" type="text/css" />
+
+	<!--[if lte IE 8]>
+		<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5/leaflet.ie.css" />
+	<![endif]-->
+
+	<!-- scripts -->
+
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-1238050-9', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
+
+</head>
+
+<body>
+
+	<!-- Fixed navbar -->
+
+	<div class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+				<a id="header-filter-switch" class="navbar-brand" href="javascript:maptune.jsapi.toggleFilter();" style="color:#bbb"> filter <span class="glyphicon glyphicon-filter" aria-hidden="true" style="font-size:0.9em"></span></a>
+				<span style="margin:auto;text-align:middle">
+				<a id="header-list-button" class="navbar-brand" href="javascript:maptune.jsapi.forceList();" style="color:#bbb;display:none;">list <span class="glyphicon glyphicon-list" aria-hidden="true" style="font-size:0.9em"></span></a>
+				<a id="header-map-button" class="navbar-brand" href="javascript:maptune.jsapi.forceMap();" style="color:#bbb;display:none;">map <span class="glyphicon glyphicon-map-marker" aria-hidden="true" style="font-size:0.9em"></span></a>
+				</span>
+				<a id="header-plus-button" class="navbar-brand" href="javascript:maptune.selectFeedDialog('show');" style="color:#444;display:none;float:right"> <span class="glyphicon glyphicon-plus-sign" aria-hidden="true" style="font-size:1.1em"></span></a>
+			</div>
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav navbar-right scrollclass">
+					<li><a href="javascript:maptune.selectFeedDialog('show')"><span class="glyphicon glyphicon-plus-sign textshadow" style="font-size:2.0em;line-height:0.5em;vertical-align:-10px"></span></a></li>
+				</ul>
+				<div id="filter-navbar" class="input-group input-group-lg pull-left" style="margin-right:0.3em;z-index:999;display:none">
+					<form id="IndicatorFilterFormH" role="form" action="javascript:maptune.jsapi.search();" name="IndicatorFilterForm">
+						<input id="query" class="form-control form-control-lg " placeholder="filter" title="define filter" onkeyup="javascript:maptune.jsapi.search();"
+						/>
+					</form>
+					<div class="input-group-btn">
+						<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu" id="filter-preset-1">
+							<li><a href="javascript:maptune.jsapi.setSearchFilter('')">tutto</a></li>
+						</ul>
+					</div>
+					<!-- /btn-group -->
+				</div>
+				<!-- /input-group -->
+			</div>
+			<!--/.nav-collapse -->
+		</div>
+	</div>
+
+
+	<!-- space for a second menu line -->
+
+	<div id="headerwrap2" style="display:inline">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<div style="height:50px">&nbsp;</div>
+				</div>
+				<!-- /col-lg-6 -->
+			</div>
+			<!-- /row -->
+		</div>
+		<!-- /container -->
+	</div>
+	<!-- /headerwrap -->
+
+
+	<!-- filter and time buttons -->
+
+	<div id="headerwrap3" style="display:none" class="filter-fixed-top">
+		<div class="container">
+			<div id="headerwrap3-row" class="row">
+				<div class="col-lg-10">
+					<div style="width:25%;min-width:200px">
+						<div class="input-group input-group-lg pull-left" style="margin-right:0.3em;z-index:999">
+							<form id="IndicatorFilterForm" role="form" action="javascript:maptune.jsapi.search();" name="IndicatorFilterForm">
+								<input id="query" class="form-control form-control-lg " placeholder="filter" title="define filter" onkeyup="javascript:maptune.jsapi.search();"
+								/>
+							</form>
+							<div class="input-group-btn">
+								<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></button>
+								<ul class="dropdown-menu dropdown-menu-right" role="menu" id="filter-preset-2">
+									<li><a href="javascript:maptune.jsapi.setSearchFilter('')">clear</a></li>
+								</ul>
+							</div>
+							<!-- /btn-group -->
+						</div>
+					</div>
+					<!-- /input-group -->
+					<div id="timelapbuttons" data-toggle="buttons" style="visibility:hidden;float:left;margin-right:0.2em;pointer-events:all;z-index:999">
+						<label class="btn btn-lg btn-custom active" id="time-today" onclick="javascript:maptune.jsapi.setTimeScope('today')">
+						<input type="radio" name="options" id="today" autocomplete="off"  checked>oggi
+						</label>
+						<label class="btn btn-lg btn-custom" id="time-today+7" onclick="javascript:maptune.jsapi.setTimeScope('today+7')">
+						<input type="radio" name="options" id="today+7" autocomplete="off" >+7
+						</label>
+						<label class="btn btn-lg btn-custom" id="time-month" onclick="javascript:maptune.jsapi.setTimeScope('month')">
+						<input type="radio" name="options" id="month" autocomplete="off" >mese
+						</label>
+						<label class="btn btn-lg btn-custom" id="time-all" onclick="javascript:maptune.jsapi.setTimeScope('all')">
+						<input type="radio" name="options" id="all" autocomplete="off" >tutto
+						</label>
+					</div>
+					<div id="timelapbuttons-date" class="btn-group btn-group-lg" style="visibility:hidden;float:left;pointer-events:all;z-index:998">
+						<label class='btn btn-default btn-lg' id='datetimepicker1'>
+							<input type='text' class="form-control" style="display:none" />
+							<span><span class="glyphicon glyphicon-calendar"></span>
+							</span>
+						</label>
+						<label class="btn btn-default btn-lg" title="time -" onclick="javascript:maptune.timeline.moveTimeWindow(-1);" style="z-index:998">-</label>
+						<label class="btn btn-default btn-lg" title="time +" onclick="javascript:maptune.timeline.moveTimeWindow(1);" style="z-index:998">+</label>
+						<label class="btn btn-default btn-lg" id="showtimelinedate" style="z-index:999">
+					</div>
+				</div><!-- /col-lg-6 -->
+
+			</div><!-- /row -->
+		</div><!-- /container -->
+	</div><!-- /headerwrap -->
+
+
+	<!-- placeholder - visible at loading  -->
+
+	<div id="dynamic-placeholder" >
+		<div class="container">
+			<div class="row centered">
+				<div class="col-lg-12 " style="position:relative;margin-top:50%">
+					loading ...
+				</div>
+			</div><!-- /row -->
+		</div><!-- /container -->
+	</div><!-- /placeholder -->
+
+
+	<!-- dynamic content = map and item list   -->
+
+	<div id="dynamic-content-clip" style="overflow:auto">
+
+		<div id="dynamic-content" style="display:none;flow:left<">
+
+			<div class="container">
+				<div class="row">
+
+					<div id="sidebar-pane" role="tabpanel" class="col-lg-6 col-md-6 col-sm-5 col-xs-12" >
+
+					  <!-- Tab panes -->
+					  <div id="sidebar-content" class="tab-content" >
+						<div role="tabpanel" class="tab-pane active" id="itemlist-pane" >
+							<div id="itemlist" style="height:600px;overflow:auto" >
+							</div>
+						</div>
+						<div role="tabpanel" class="tab-pane" id="dialog-pane" >
+							<div id="layer" style="height:600px;overflow:auto;background:#fff">
+								(empty)
+							</div>
+						</div>
+						<div role="tabpanel" class="tab-pane" id="load-dialog">
+						...
+						</div>
+						<div role="tabpanel" class="tab-pane" id="settings">
+						...
+						</div>
+					  </div>
+
+					</div>
+
+					<div id="map-pane" class="col-lg-6 col-md-6 col-sm-7 col-xs-12" style="margin:0;padding:0" >
+
+						<div id="map-content" >
+						</div>
+
+						<div id="fullscreen-button" style="display:inline">
+							<a title="show collection" onclick="javascript:maptune.jsapi.setView('map');" style="font-size:2em;z-index:999"><span id="view-icon" class="glyphicon glyphicon-circle-arrow-left" aria-hidden="true"></span></a>
+						</div>
+
+						<div id="post_content" class="post_content" style="position:absolute;left:15px;top:10px;width:100px;display:none;" >
+							<div id="showdate" class="post_date" >
+								<span class="dateinfo">date</span>
+								<span class="day">01</span><br />
+								<span class="month">JAN</span><br />
+								<span class="year">2004</span>
+							</div>
+						</div>
+
+						<div style="display:none">
+						  <!-- Nav tabs -->
+						  <ul id="map-nav" class="nav nav-pills nav-pills-xs nav-stacked " role="tablist" style="">
+							<li role="presentation" class="active">
+								<a id="list-pill" href="#itemlist-pane" aria-controls="itemlist-pane" role="tab" data-toggle="tab" onclick="javascript:__setMap($(this));"><span class="glyphicon glyphicon-list" aria-hidden="true"></span></a>
+							</li>
+							<li id="addlayer-pill" role="presentation">
+								<a id="add-pill" href="#dialog-pane" aria-controls="dialog-pane" role="tab" data-toggle="tab" onclick="javascript:			maptune.jsapi.forceList();"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							</li>
+							<li id="collection-pill" role="presentation">
+								<a id="star-pill" href="#itemlist-pane" aria-controls="itemlist-pane" role="tab" data-toggle="tab" title="show collection"  onclick="javascript:__setCollection($(this));" style="z-index:999"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></a>
+							</li>
+							<li id="reset-pill" role="presentation">
+								<a title="show collection" onclick="javascript:maptune.jsapi.reset();" style="z-index:999"><span class="glyphicon glyphicon-repeat" aria-hidden="true"></span></a>
+							</li>
+							<li id="fullscreen-pill" role="presentation">
+								<a title="show collection" onclick="javascript:maptune.jsapi.setView('map');" style="z-index:999"><span id="view-icon" class="glyphicon glyphicon-resize-full" aria-hidden="true"></span></a>
+							</li>
+							<li id="globe-pill" role="presentation">
+								<a title="show collection" onclick="javascript:maptune.jsapi.zoomToLayer();" style="z-index:999"><span id="view-icon" class="glyphicon glyphicon-globe" aria-hidden="true"></span></a>
+							</li>
+						  </ul>
+						</div>
+
+					</div>
+
+				</div><!-- /row -->
+
+			</div><!-- /container -->
+
+		</div>
+	</div>
+
+	<!-- info/help -->
+
+	<!--=========================================================================
+		popups and helper
+	<!--========================================================================= -->
+
+	<div id="dialog" style="font-size:14px;line-height:14px;background-color:white;vertical-align:-20%;letter-spacing:9px;" >
+	</div>
+
+
+    <!-- core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+	<!-- Map -->
+	<script src="js/leaflet-0.7.7/leaflet.js"></script>
+	<script src="js/maptune/maptune.Mapstraction.js" type="text/javascript" > </script>
+	<script src="js/mxn-2.0.18/mxn.js?(leaflet)" type="text/javascript" charset="utf-8" ></script>
+	<!-- -->
+
+	<!-- Fonts from Google Fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,900' rel='stylesheet' type='text/css'>
+
+	<script src="assets/js/jquery-1.10.2.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.easing.min.js"></script>
+
+	<!-- ui -->
+    <script src = "js/jquery/plugins/jquery.getUrlParam.js"></script>
+    <script src = "js/jquery/plugins/jquery.csv.js"></script>
+    <script src = "js/jquery/plugins/papaparse.js"></script>
+
+	<script src="js/maptune/tools/messagebox.js" type="text/javascript"></script>
+
+    <script src="assets/js/moment.min.js"></script>
+    <script src="assets/js/bootstrap-datetimepicker.min.js"></script>
+
+	<!-- MAPtune -->
+	<script src="js/maptune/maptune.api.js" type="text/javascript"></script>
+	<script src="js/maptune/maptune.up.js" type="text/javascript"></script>
+	<script src="js/maptune/maptune.feed.js?()" type="text/javascript"></script>
+
+	<!-- maptune -->
+	<script src="js/maptune.js" type="text/javascript"></script>
+	<script src="js/maptune_map_ext.js" type="text/javascript"></script>
+
+	<!-- marker clusterer ->
+	<script src="js/maptune/tools/marker-clusterer.js" type="text/javascript"></script>
+	-->
+
+	<!-- marker declutter -->
+	<script src="js/maptune/tools/marker-declutter.js" type="text/javascript"></script>
+	<!-- -->
+
+
+	<script type="text/javascript" charset="utf-8">
+
+	maptune = maptune || {};
+	maptune.flags = maptune.flags || {};
+	maptune.jsapi = maptune.jsapi || {};
+
+	// ---------------------------------------------------------------------------------------
+	// infuse HTML snippets
+	// ---------------------------------------------------------------------------------------
+
+	infuseHTML = function(szElement,szUrl,szDiv){
+
+		szStoryRoot = "";
+
+		if ( typeof($("#"+szElement)[0]) == "undefined" ){
+			return;
+		}
+		$("#"+szElement).load(szUrl+' #'+ szDiv , function(response, status, xhr) {
+			  if (status == "error") {
+				var msg = "Sorry but there was an error: ";
+				$("#story").html(msg + xhr.status + "<br><br> '" +szStoryRoot+szUrl+ "'<br><br> " + xhr.statusText);
+			  }
+			});
+	};
+
+
+	// ---------------------------------------------------------------------------------------
+	// define default marker style for layers
+	// ---------------------------------------------------------------------------------------
+
+	var MapParam = {
+		"all" :
+			{
+			"smallInfoClipDescription" : "500",
+			"smallInfoKeepImage" : "true"
+			},
+		"default":
+			{
+			"thumbnailRoot" : "resources/images/tn/",
+			"markerImageRoot" : "resources/icons/map-icons-collection/numeric/orange",
+			"markerImageType" : "png"
+			}
+		,
+		"layerdialog":
+			{
+			"href" : "./layer.html"
+			}
+		,
+		"layertab":
+			{
+			"href" : "./layer.html"
+			}
+		,
+		"layer":
+			{
+			"href" : "./layer.html"
+			}
+	};
+
+	var normalPageWidth = 1024;
+	var normalPageHeight = 650;
+	var normalSidebarWidth = 380;
+
+	var defaultLayerDialog = "./layer.html";
+	var defaultconfigFile = "./config.js";
+
+	$(document).ready(function() {
+
+		_TRACE("on document ready --->");
+
+		// read config file from url and go --->
+		// =====================================
+		var configFile = $(document).getUrlParam('config')||$(document).getUrlParam('param');
+		maptune.jsapi.loadConfig(configFile);
+		// =====================================
+
+		// correct open layers attribution position
+		$("div.olControlAttribution").css("bottom","0.5em");
+
+		// attach ajax error to error node
+		// needed for $.get error messages ( before jQuery 1.5 )
+		$("#error-message").ajaxError(function(event, request, settings,thrownError){
+			$("#error").css("visibility","visible");
+			if ( thrownError && thrownError.message ){
+				alert(thrownError.message);
+			}
+			$(this).html("Error loading " + settings.url + "");
+			setTimeout("$(\"#error\").css(\"visibility\",\"hidden\");$(\"#error-message\").html(\"\");",1000);
+			});
+
+		// CUSTOM SCROLL SCRIPT FUNCTION FOR NAVBAR
+		$(function () {
+			$('.scrollclass a').bind('click', function (event) { //just pass scrollclass in design and start scrolling
+				var $anchor = $(this);
+				$('html, body').stop().animate({
+					scrollTop: $($anchor.attr('href')).offset().top-50
+				}, 1000, 'easeInOutQuad');
+				event.preventDefault();
+			});
+		});
+
+		 // limit mousewheel to the target element
+		 // do not bubble wheelmouse events to parent elements, if scroll limits reached
+		 // based on a stackoverflow post by Troy Alford (http://stackoverflow.com/questions/5802467/prevent-scrolling-of-parent-element)
+		$(function () {
+			$( "#itemlist" ).bind("mousewheel", function(event) {
+				var $this = $(this),
+					scrollTop = this.scrollTop,
+					scrollHeight = this.scrollHeight,
+					height = $this.height(),
+					delta = (event.type == 'DOMMouseScroll' ?
+						event.originalEvent.detail * -40 :
+						event.originalEvent.wheelDelta),
+					up = delta > 0;
+
+				var prevent = function() {
+					event.stopPropagation();
+					event.preventDefault();
+					event.returnValue = false;
+					return false;
+				}
+
+				if (!up && (-delta > (scrollHeight - height - scrollTop))) {
+					// Scrolling down, but this will take us past the bottom.
+					$this.scrollTop(scrollHeight);
+					return prevent();
+				} else if (up && (delta > scrollTop)) {
+					// Scrolling up, but this will take us past the top.
+					$this.scrollTop(0);
+					return prevent();
+				}
+				// don't bubble anyway !
+				event.stopPropagation();
+
+    		});
+		});
+
+		// activate datetime picker
+		$(function () {
+			$('#datetimepicker1').datetimepicker();
+            $("#datetimepicker1").on("dp.change",function (e) {
+				var d = new Date($('#datetimepicker1').data("DateTimePicker").getDate());
+				maptune.timeline.setTimeWindow("today",1,d.getTime());
+				$('#datetimepicker1').data("DateTimePicker").hide();
+			});
+		});
+
+
+	});
+
+	// ---------------------------------------------------------------------------------------
+	// load the configuration 
+	// and start the maptune app
+	// ---------------------------------------------------------------------------------------
+
+	/**
+	 * load config file and start application
+	 * defines the maptue application
+	 * @param configFile config lile name
+	 * @type void
+	 */
+	maptune.jsapi.loadConfig = function(configFile){
+
+		maptune.jsapi.reset();
+
+		maptune.message("loading",true);
+
+		$.get(configFile?configFile:defaultconfigFile,
+			function(data){
+				maptune.message("loading",false);
+
+				// compatible with old param.js;
+				if ( typeof(MapParam) == "object" ){
+					maptune.jsapi.mapParam = MapParam;
+				}
+				if ( !MapParam.layerdialog ){
+					MapParam.layerdialog = {"href":defaultLayerDialog};
+				}
+				if ( MapParam.defaultmap ){
+					maptune.jsapi.addDataAndZoomTo(MapParam.defaultmap.data);
+				}
+				if ( MapParam.layertab && MapParam.layertab.href ){
+					infuseHTML('layer',MapParam.layertab.href,'layertab');
+				}
+				if ( MapParam.filter ){
+					var szFilter = "";
+					for ( f in MapParam.filter ){
+					  szFilter += "<li><a href='javascript:maptune.jsapi.setSearchFilter(\""+(MapParam.filter[f].replace(/\'/g,"&#x27;"))+"\")'>"+f+"</a></li>"
+					}
+					szFilter += "<li><a href=\"javascript:maptune.jsapi.setSearchFilter('')\">clear</a></li>"
+					$("#filter-preset-1").html(szFilter);
+					$("#filter-preset-2").html(szFilter);
+				}
+
+				// ---------------------------------------------------------------------------------------
+				// create the application !!!
+				// ---------------------------------------------------------------------------------------
+
+				var mapUp = new maptune.jsapi.MapUp("map-content","itemlist","legend","directions-result","leaflet");
+
+				// make list style buttons fixed on to of the list
+				mapUp.fScrollFixListHeader = true;
+
+				// initial time filter
+				document.getElementById("all").checked = true;
+
+				// make reactive layout - completes bootstrap reactive layout
+				maptune.jsapi.resizeApplication();
+				maptune.jsapi.resizeApplication();
+
+			}).error(function() {
+
+				// no specific configurationn found
+				// make default setup and open feed dialog
+
+				maptune.message("loading",false);
+				maptune.infoMessage("<h3 style='text-align:center'>no specific configuration</h3>",1000);
+
+				if ( typeof(MapParam) == "object" ){
+					maptune.jsapi.mapParam = MapParam;
+				}
+				if ( MapParam.layertab && MapParam.layertab.href ){
+					infuseHTML('layer',MapParam.layertab.href,'layertab');
+				}
+
+				var mapUp = new maptune.jsapi.MapUp("map-content","itemlist","legend","directions-result","leaflet");
+				// make list style buttons fixed on to of the list
+				mapUp.fScrollFixListHeader = true;
+
+				// initial time filter
+				document.getElementById("all").checked = true;
+
+				// make reactive layout - completes bootstrap reactive layout
+				maptune.jsapi.resizeApplication();
+
+				// open feeds dialog to select a ayer for the map
+				maptune.selectFeedDialog("show");
+		});
+	};
+
+	// ---------------------------------------------------------------------------------------
+	//
+	// size and manage the application canvas
+	//
+	// ---------------------------------------------------------------------------------------
+
+	var __actualView = null;
+	var __actualForce = null;
+
+	// ==================================================
+	// make all reactive adaptions to classes and styles
+	// - recognize landscape/portrait window size
+	// - recognize screen size
+	// - choose optimal list/map pane configuration
+	// ==================================================
+
+	/**
+	 * maptune.jsapi.resizeApplication
+	 * @type void
+	 */
+	maptune.jsapi.resizeApplication = function(){
+
+		// remove placeholder and show it all ( only important on initialization )
+		// -----------------------------------------------------------------------
+		$("#dynamic-placeholder").hide();
+		$("#dynamic-content").show();
+
+		$("#fullscreen-button").hide();
+		$("#header-list-button").hide();
+		$("#header-map-button").hide();
+
+		// get screen dimensions
+		// -----------------------------------------------------------------------
+		var width = $(window).innerWidth();
+		var height = $(window).innerHeight();
+
+		var top = $("#dynamic-content-clip").position().top;
+		var marginTop = parseInt($("#dynamic-content-clip").css("margin-top"));
+
+		var bottom = 10;
+
+		if ( $("#dynamic-content").height() > $("#dynamic-content-clip").height() ){
+
+			maptune.flags.screenOrientation = "portrait";
+			bottom = 0;
+			$("#map-pane").removeClass("shadow");
+			$("#sidebar-content").removeClass("shadow");
+
+		}else{
+
+			maptune.flags.screenOrientation = "landscape";
+			bottom = 20;	
+			$("#map-pane").addClass("shadow");
+			$("#sidebar-content").addClass("shadow");
+		}
+
+		// size page elements
+		// -----------------------------------------------------------------------
+
+		$("#dynamic-content-clip").height(height-top-marginTop);
+
+		$("#map-content").height(height-top-marginTop-bottom);
+
+		$("#dialog-pane").height(height-top-marginTop-bottom);	
+		$("#itemlist").height(height-top-marginTop-bottom);
+		$("#layer").height(height-top-marginTop-bottom);	
+
+		// fullscreen button
+		// -----------------------------------------------------------------------
+		if ( (width > 768) ){
+
+			// big nav-bar icons
+			//
+			$(".btn-sm").removeClass("btn-sm").addClass("btn-lg");
+			$(".btn-group-sm").removeClass("btn-group-sm").addClass("btn-group-lg");
+			$(".input-group-sm").removeClass("input-group-sm").addClass("input-group-lg");
+			$(".form-control-xs").removeClass("form-control-xs").addClass("form-control-lg");
+			$("#timelapbuttons-date").removeClass("btn-group-sm").addClass("btn-group-lg");
+
+			$("#fullscreen-button").show();
+		    $("#header-list-button").hide();
+		    $("#header-map-button").hide();
+			$("#header-plus-button").hide();
+
+		}else{
+
+			// small nav-bar icons
+
+			$(".btn-lg").removeClass("btn-lg").addClass("btn-sm");
+			$(".btn-group-lg").removeClass("btn-group-lg").addClass("btn-group-sm");
+			$(".input-group-lg").removeClass("input-group-lg").addClass("input-group-sm");
+			$(".form-control-lg").removeClass("form-control-lg").addClass("form-control-xs");
+			$("#timelapbuttons-date").removeClass("btn-group-lg").addClass("btn-group-sm");
+
+			$("#fullscreen-button").hide();
+			$("#header-map-button").show();
+			$("#header-plus-button").show();
+		}
+
+		// trigger map api to adapt to the new width and height !!
+		// -------------------------------------------------------
+		maptune.jsapi.checkResize();
+
+
+	};
+
+	/**
+	 * setView
+	 * sets the maptune canvas to: map (fullscreen), list or both
+	 * @param szView "map" or "list" or "both"
+	 * @type void
+	 */
+	maptune.jsapi.setView = function(szView){
+
+		if ( szView == __actualView ){
+			szView = "";
+		}
+		__actualView = szView;
+
+		// make fullscreen map
+		if ( szView == "map" ){
+			$("#map-pane").css("width","100%");
+			$("#sidebar-pane").css("width","0%");
+			$("#sidebar-content").hide();
+
+			$("#view-icon").removeClass("glyphicon-circle-arrow-left");
+			$("#view-icon").addClass("glyphicon-circle-arrow-right");
+			maptune.jsapi.checkResize();
+		// if not map, only both
+		}else{
+			$("#map-pane").css("width","");
+			$("#sidebar-pane").css("width","");
+			$("#sidebar-content").show();
+
+			$("#view-icon").addClass("glyphicon-circle-arrow-left");
+			$("#view-icon").removeClass("glyphicon-circle-arrow-righ");
+			maptune.jsapi.checkResize();
+		}
+	};
+
+	/**
+	 * forceMap
+	 * in reactive design, make shure the map is visible
+	 * @type void
+	 */
+	maptune.jsapi.forceMap = function(){
+
+		if (maptune.flags.screenOrientation == "portrait"){
+
+			$('#dynamic-content-clip').stop().animate({
+			 scrollTop: $("#map-content").offset().top - $("#sidebar-content").offset().top
+			}, 250, 'easeInOutQuad');
+			$("#header-list-button").show();
+			$("#header-map-button").hide();
+			//$("#listheader").hide();
+		}
+		maptune.jsapi.__actualForce = maptune.jsapi.forceMap;
+	};
+
+	/**
+	 * forceList
+	 * in reactive design, make shure the list view is visible
+	 * @type void
+	 */
+	maptune.jsapi.forceList = function(){
+
+		if (maptune.flags.screenOrientation == "portrait"){
+
+			$('#dynamic-content-clip').stop().animate({
+				scrollTop: $("#sidebar-content").offset().top - $("#dynamic-content-clip").offset().top
+			}, 250, 'easeInOutQuad');
+
+			$("#header-list-button").hide();
+			$("#header-map-button").show();
+			//$("#listheader").show();
+		}
+		maptune.jsapi.__actualForce = maptune.jsapi.forceList;
+	};
+
+	/**
+	 * popupFullDescription
+	 * redefine function (orig.def. in maptune.api.js) to show the items description
+	 * @type void
+	 */
+	maptune.jsapi.popupFullDescription = function() {
+	   this.redraw();
+	   // if portrait mode, scroll to list
+	   if (	$("#map-pane").attr("class") == "col-sx-10" ){
+			maptune.jsapi.__actualForce();
+	   }
+	};
+
+	// ==================================================
+	// show/hide filter
+	// ==================================================
+
+	/**
+	 * toggleFilter
+	 * show/hide the textual/temporal filter bar
+	 * @param flag if set, show the fiter bar
+	 * @type void
+	 */
+
+	var __fInToggleFilter = false
+
+	maptune.jsapi.toggleFilter = function(flag){
+
+		if (__fInToggleFilter){
+			return;
+		}
+
+		if ( ($("#headerwrap3").css("display") == "none") || flag ){
+
+			$("#headerwrap3").show();
+			$("#headerwrap3").css("background-color","white");
+			$("#headerwrap3").css("margin-top","-1em");
+			$("#headerwrap3").css("padding","0.5em 0 0.5em 0");
+
+			$("#header-filter-switch").css("color","#444");
+
+			// fixed filter -> create space
+			if ($(".filter-fixed-top").length){
+				$("#dynamic-content-clip").css("margin-top",$("#headerwrap3").height()+8);
+			}else{
+				$("#dynamic-content-clip").css("margin-top","0");
+			}
+		}else{
+			$("#headerwrap3").hide();
+			$("#header-filter-switch").css("color","#bbb");
+			$("#dynamic-content-clip").css("margin-top","2px");
+		}
+
+		__fInToggleFilter = true;
+		maptune.jsapi.resizeApplication();
+		__fInToggleFilter = false;
+
+		maptune.jsapi.__actualForce();
+	};
+
+	/**
+	 * refreshFilter
+	 * repeat show/hide filterbar, to manage page size after window resized
+	 * @type void
+	 */
+
+	maptune.jsapi.refreshFilter = function(){
+		if ( !($("#headerwrap3").css("display") == "none") ){
+			maptune.jsapi.toggleFilter(true);
+		}
+	};
+
+
+	// ==================================================
+	// event handler
+	// ==================================================
+
+	/**
+	 * onChangeTimeWindow
+	 * called by maptune if time window has changed
+	 * user may apply his code
+	 * @param szFlag timescope like "month","today" ...
+	 * @param nDays time extension in days
+	 * @type void
+	 */
+	maptune.jsapi.onChangeTimeWindow = function(szFlag,nDays){
+		$('#time-'+szFlag).button('toggle');
+		// make sure, time buttons ar visible
+		maptune.jsapi.toggleFilter(true);
+	};
+
+	/**
+	 * onWindowResize
+	 * called by maptune if application window size changed
+	 * @type void
+	 */
+	maptune.jsapi.onWindowResize = function(){
+		maptune.jsapi.resizeApplication();
+	};
+
+	// ==================================================
+	// collection dataset
+	// - show/hide collection items
+	// ==================================================
+
+	/**
+	 * __switchCollection
+	 * show or hide collection layer
+	 * @type void
+	 */
+	__switchCollection = function(){
+		var success = maptune.jsapi.toggleLayerType('Collection');
+		$("#header-collection-switch").css("color",success?"white":"#cc0000");
+		$("#header-collection-switch").css("font-weight",success?"bold":"normal");
+		if ( success ){
+			$("#star-pill").click();
+		}else{
+			$("#list-pill").click();
+		}
+	};
+
+	/**
+	 * __setCollection
+	 * show the collection layer
+	 * @type void
+	 */
+	__setCollection = function(){
+		maptune.jsapi.setLayerType('Collection');
+		$("#header-collection-switch").css("color","white");
+		$("#header-collection-switch").css("font-weight","normal");
+	};
+
+	/**
+	 * __setMap
+	 * hide collection layer
+	 * @type void
+	 */
+	__setMap = function(){
+		maptune.jsapi.setLayerType('Map');
+		$("#header-collection-switch").css("color","#cc0000");
+		$("#header-collection-switch").css("font-weight","normal");
+	};
+
+	// ==================================================
+	// select new feed dialog
+	// ==================================================
+
+	/**
+	 * selectFeedDialog
+	 * show or hide the select feed dialog (to add layer to maptune)
+	 * @param szFlag timescope like "month","today" ...
+	 * @type void
+	 */
+	maptune.selectFeedDialog = function(szFlag){
+		if ( szFlag == "show" ){
+			$("#add-pill").click();
+			maptune.jsapi.forceList();
+		}else{
+			$("#list-pill").click();
+		}
+	}
+
+	</script>
+
+  </body>
+</html>

@@ -1,0 +1,188 @@
+/*** general styling */
+.ui-page.ui-body-c{
+background-color:rgb(255,255,255);
+background-size:content;
+background-repeat:no-repeat;
+
+.ui-icon.ui-icon-arrow-r {
+background-color:rgb(136, 111, 110);
+}
+.ui-icon.ui-icon-arrow-l {
+background-color:rgb(136, 111, 110);
+}
+.ui-corner-all, 
+.ui-corner-top,
+.ui-corner-bottom,
+.ui-corner-tl,
+.ui-corner-tr,
+.ui-corner-bl,
+.ui-header .ui-btn-corner-all,
+.ui-listview-filter .ui-btn-corner-all,
+#restau_infos .ui-btn-corner-all,
+#contact_buttons .ui-btn-corner-all,
+#notation .ui-btn-corner-all{
+border-radius:0.2em;
+}
+
+.ui-btn-active {
+background: #654644; /* Old browsers */
+background: -moz-linear-gradient(top,  #654644 0%, #331c1b 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#654644), color-stop(100%,#331c1b)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #654644 0%,#331c1b 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #654644 0%,#331c1b 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #654644 0%,#331c1b 100%); /* IE10+ */
+background: linear-gradient(top,  #654644 0%,#331c1b 100%); /* W3C */
+color:#fff !important;
+}
+.ui-content .choice_list  .ui-btn-active .ui-link-inherit,
+.ui-btn-down-c a.ui-link-inherit,
+#home .ui-btn-down-c a.ui-link-inherit{
+color:#fff !important;
+}
+
+img.ui-li-thumb {
+max-width: 100px;
+height: auto; width: auto;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+.ui-grid-a .ui-block-a, .ui-grid-a .ui-block-b {
+    width: 48%;
+    padding:1%;
+}
+
+.ui-btn-up-c {
+border: 0px solid #CCC;
+border-right: 1px solid #ccc;
+padding-top: 3px;
+padding-right: 10px;
+padding-left: 10px;
+-webkit-tap-highlight-color: rgba(0,255,255, 0.3);
+}
+
+
+/* title bar */
+.ui-header.ui-bar-a{
+background:url(images/header_bg.png);
+}
+.ui-header .ui-title {
+text-indent:-9999px;
+font-size:0px;
+background:url(images/header_logo.png) no-repeat 69% 5px ;
+height:33px;
+padding:5px 0 5px 50px;
+margin:0px;
+}
+
+.ui-header  .ui-btn-up-a  {
+background:rgba(255, 255, 255, 0.1);
+box-shadow:none;
+}
+.ui-header  .ui-btn-hover-a {
+background:rgba(0, 0, 0, 0.3);
+box-shadow:none;
+}
+
+.ui-bar-b {
+border: 1px solid #456f9a;
+background: #5e87b0;
+color: #f00;
+font-weight: bold;
+text-shadow: 0 1px 1px #3e6790;
+background-image: none;
+}
+
+
+/*** home **/
+
+.choice_list h1{
+margin-top:30px;
+font-size:18px;
+color:rgb(65, 38, 37);
+font-weight:normal;
+font-style:italic;
+padding:5px 0 6px 50px;
+background:url(images/pagination.png) no-repeat;
+}
+
+#home .choice_list h1{
+background-position: 6px -14px;
+padding-top:25px;
+padding-left:99px;
+}
+#home .choice_list  h3{
+padding-top:10px;
+color:rgb(63, 41, 39);
+}
+#home .choice_list .ui-btn-active  a.ui-link-inherit h3{
+color:#fff;
+}
+.choice_list  img{
+padding:10px;
+}
+
+/** transform links into buttons **/
+
+.tel-link{
+	padding-right:12px;
+	border:#080 solid 0px;
+	-moz-box-shadow: 0px 1px 4px /*{global-box-shadow-size}*/ 			rgba(0,0,0,.3) /*{global-box-shadow-color}*/;
+	-webkit-box-shadow: 0px 1px 4px /*{global-box-shadow-size}*/ 		rgba(0,0,0,.3) /*{global-box-shadow-color}*/;
+	box-shadow: 0px 1px 4px /*{global-box-shadow-size}*/ 				rgba(0,0,0,.3) /*{global-box-shadow-color}*/;
+	color:darkgreen;
+	background: #f4f4f4 url(../resources/images/phone.png) 95% 45% no-repeat; background-size: 20px 18px;
+	-webkit-tap-highlight-color:rgba(0,0,0,0)}
+}
+.mail-link{
+	padding-right:20px;
+	border:#080 solid 0px;
+	-moz-box-shadow: 0px 1px 4px /*{global-box-shadow-size}*/ 			rgba(0,0,0,.3) /*{global-box-shadow-color}*/;
+	-webkit-box-shadow: 0px 1px 4px /*{global-box-shadow-size}*/ 		rgba(0,0,0,.3) /*{global-box-shadow-color}*/;
+	box-shadow: 0px 1px 4px /*{global-box-shadow-size}*/ 				rgba(0,0,0,.3) /*{global-box-shadow-color}*/;
+	color:darkgreen;
+	background: #f4f4f4 url(../resources/images/mail_light.png) 95% 50% no-repeat; background-size: 20px 18px;
+	-webkit-tap-highlight-color:rgba(0,0,0,0)}
+}
+.dir-link{
+	padding-right:23px;
+	border:#080 solid 0px;
+	-moz-box-shadow: 0px 1px 4px /*{global-box-shadow-size}*/ 			rgba(0,0,0,.3) /*{global-box-shadow-color}*/;
+	-webkit-box-shadow: 0px 1px 4px /*{global-box-shadow-size}*/ 		rgba(0,0,0,.3) /*{global-box-shadow-color}*/;
+	box-shadow: 0px 1px 4px /*{global-box-shadow-size}*/ 				rgba(0,0,0,.3) /*{global-box-shadow-color}*/;
+	color:darkblue;
+	background: #f4f4f4 url(../resources/images/directions4b.png) 97% 50% no-repeat; background-size: 32px 32px;
+	-webkit-tap-highlight-color:rgba(0,0,0,0)}
+}
+.map-link{
+	padding-right:5px;
+	border:#080 solid 0px;
+	-moz-box-shadow: 0px 1px 4px /*{global-box-shadow-size}*/ 			rgba(0,0,0,.3) /*{global-box-shadow-color}*/;
+	-webkit-box-shadow: 0px 1px 4px /*{global-box-shadow-size}*/ 		rgba(0,0,0,.3) /*{global-box-shadow-color}*/;
+	box-shadow: 0px 1px 4px /*{global-box-shadow-size}*/ 				rgba(0,0,0,.3) /*{global-box-shadow-color}*/;
+	color:#666;
+	background: #f4f4f4 url(../resources/images/72-pin.png) 80% 50% no-repeat; background-size: 8px 16px;
+	-webkit-tap-highlight-color:rgba(0,0,0,0)}
+}
+.www-link{
+	padding-right:15px;
+	border:#080 solid 0px;
+	-moz-box-shadow: 0px 1px 4px /*{global-box-shadow-size}*/ 			rgba(0,0,0,.3) /*{global-box-shadow-color}*/;
+	-webkit-box-shadow: 0px 1px 4px /*{global-box-shadow-size}*/ 		rgba(0,0,0,.3) /*{global-box-shadow-color}*/;
+	box-shadow: 0px 1px 4px /*{global-box-shadow-size}*/ 				rgba(0,0,0,.3) /*{global-box-shadow-color}*/;
+	color:darkgreen;
+	background: #f4f4f4 url(../resources/images/earth.png) 95% 50% no-repeat; background-size: 20px 18px;
+	-webkit-tap-highlight-color:rgba(0,0,0,0)}
+}
+.button-link{
+	margin-left:-5px;
+	padding:5px;
+	-moz-box-shadow: 0px 1px 4px /*{global-box-shadow-size}*/ 			rgba(0,0,0,.3) /*{global-box-shadow-color}*/;
+	-webkit-box-shadow: 0px 1px 4px /*{global-box-shadow-size}*/ 		rgba(0,0,0,.3) /*{global-box-shadow-color}*/;
+	box-shadow: 0px 1px 4px /*{global-box-shadow-size}*/ 				rgba(0,0,0,.3) /*{global-box-shadow-color}*/;
+	border-radius:0.5em;
+	text-decoration:none;
+	color:#0088FF;
+	background: #f4f4f4;
+	-webkit-tap-highlight-color:rgba(0,0,0,0)}
+}

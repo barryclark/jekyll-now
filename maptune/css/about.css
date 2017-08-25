@@ -1,0 +1,19 @@
+﻿/*
+ * -----------------------------------
+ * iXMaps about pageb style sheet
+ * -----------------------------------
+ */
+
+code {
+	text-align:left;
+	color: #000;
+	font-size: 0.9em;
+	white-space: pre;
+	display: block;
+	padding: 8px;
+	border: 1px dashed #ccc;
+	margin-bottom: 15px;
+	overflow: hidden;
+}
+
+

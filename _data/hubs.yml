@@ -1,0 +1,5 @@
+- area: "ABRUZZO"
+  etichetta: "emergenzaAbruzzo"
+  node001:
+      nome: "Provincia di Teramo"
+      link: "https://enketo.ona.io/x/#YBjh"

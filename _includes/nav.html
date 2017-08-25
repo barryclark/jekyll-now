@@ -1,0 +1,49 @@
+<nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header" itemscope itemtype="http://schema.org/Organization">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      {% if site.avatar and (layout.show-avatar or page.show-avatar) %}
+      <div class="avatar-container visible-lg visible-md">
+        <div class="avatar-img-border">
+          <a itemprop="url" href="http://terremotocentroitalia.info">
+            <img itemprop="logo" class="avatar-img" src="{{ site.avatar | prepend: site.baseurl | replace: '//', '/' }}" alt="{{ site.title }}" />
+        </a>
+        </div>
+      </div>
+      {% endif %}
+      <!-- brand -->
+      <a class="navbar-brand hidden-xs hidden-sm hidden-md" href="http://terremotocentroitalia.info"><span itemprop="name">{{ site.title }}</span></a>
+      <!-- brand mobile -->
+      <a class="navbar-brand navbar-brand-mobile hidden-lg" href="http://terremotocentroitalia.info"><span itemprop="name">{{ site.title }}</span></a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <ul class="nav navbar-nav navbar-right">
+      {% for link in site.navbar-links %}
+        {% if link[1].first %}
+          <li itemprop="name" class="navlinks-container">
+            <a class="navlinks-parent" href="javascript:void(0)">{{ link[0] }}</a>
+            <div class="navlinks-children">
+              {% for childlink in link[1] %}
+                {% for linkparts in childlink %}
+                  {% include navbarlink.html link=linkparts %}
+                {% endfor %}
+              {% endfor %}
+            </div>
+          </li>
+        {% else %}
+          <li>
+            {% include navbarlink.html link=link %}
+          </li>
+        {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+
+  </div>
+</nav>
