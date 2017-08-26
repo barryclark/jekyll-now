@@ -150,6 +150,14 @@
   location_gr: Θεσσαλονίκη, Μακεδονία, Ελλάδα
   location_en: Thessaloniki, Macedonia, Greece
 
+- company_gr: E64.gr
+  company_en: E64.gr
+  url: http://e64.gr
+  category_gr: Κατασκευή ιστοσελίδων
+  category_en: Web development
+  location_gr: Θεσσαλονίκη, Μακεδονία, Ελλάδα
+  location_en: Thessaloniki, Macedonia, Greece
+
 - company_gr: Papaki.gr
   company_en: Papaki.gr
   url: https://www.papaki.gr
@@ -427,6 +435,14 @@
   url: https://www.facebook.com/LennonEcoGastrobar/
   category_gr: Καφετέρια
   category_en: Cafe
+  location_gr: Πάτρα, Ελλάδα
+  location_en: Patras, Greece
+
+- company_gr: Pytheas Group
+  company_en: Pytheas Group
+  url: http://www.pytheasgroup.gr
+  category_gr: Αμμοβολές
+  category_en: Sand blasting specialists
   location_gr: Πάτρα, Ελλάδα
   location_en: Patras, Greece
 
