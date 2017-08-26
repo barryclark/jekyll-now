@@ -240,7 +240,7 @@ nav {
     }
   }
   .post-sep {
-    border-bottom: 1px solid #ff9494;
+    border-bottom: 1px solid #fbefe2;
   }
 }
 
@@ -284,6 +284,7 @@ nav {
   .read-more {
     text-transform: uppercase;
     font-size: 15px;
+    color: lighten(red, 15%)
   }
 }
 
