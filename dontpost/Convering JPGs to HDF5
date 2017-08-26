@@ -1,0 +1,25 @@
+Convering JPGs to HDF5
+
+download fuel
+
+You will need to install Visual C++ Build Tools 2015
+
+http://landinghub.visualstudio.com/visual-cpp-build-tools
+
+
+
+
+
+
+Then  Install 7-ZIP
+
+
+Click Add to archive...
+
+Change Archive format to tar
+
+Click OK to save as inputdir.tar
+
+
+Do the same process again, although use archive format gzip
+

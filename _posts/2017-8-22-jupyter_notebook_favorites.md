@@ -37,4 +37,8 @@ To install notebook etensions
 - After you enable this, you'll still need to pip install it: ```pip install autopep8```
 
 
+**LaTeX**
 
+Jupyter Notebooks use MathJax to render LaTeX in Markdown. To add LaTeX, simply surround your statement with `$$`:
+
+$$c = \sqrt{a^2 + b^2}$$
