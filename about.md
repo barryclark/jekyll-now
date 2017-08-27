@@ -3,13 +3,8 @@ layout: page
 title: About
 permalink: /about/
 ---
-
-Some information about you!
-
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
+I am full stack developer who is still learning something new every day.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[frankschmidt902@gmail.com](mailto:email@domain.com)
