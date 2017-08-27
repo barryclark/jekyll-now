@@ -4,12 +4,13 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+### Moi en 7 mots et 2 chiffres 
 
-### More Information
+Développeur de 28 ans récemment déménagé à Bordeaux.
 
-A place to include any other types of information that you'd like to include about yourself.
 
-### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+
+### Contact 
+
+[fabien.lamarque+blog@gmail.com](mailto:fabien.lamarque+blog@gmail.com)
