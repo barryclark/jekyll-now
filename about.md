@@ -4,12 +4,6 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+I'm a developer from Minneapolis, MN. I work at the University of Minnesota on applications and systems related to student success.
 
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
-
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+I'm using this blog as a way to share what I'm learning. I'm interested in improving my skills as a developer, type theory, security, markets and music.
