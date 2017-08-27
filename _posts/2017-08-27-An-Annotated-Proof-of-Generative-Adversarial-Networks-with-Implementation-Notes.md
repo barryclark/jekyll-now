@@ -1,6 +1,6 @@
 ---
 layout: post
-title: An Annotated Proof Generative Adversarial Networks with Implementation Notes
+title: An Annotated Proof of Generative Adversarial Networks with Implementation Notes
 tags:
 - Machine Learning
 - Theory
