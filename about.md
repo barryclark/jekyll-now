@@ -6,7 +6,7 @@ published: true
 ---
 
 <img align="right" src="https://michaelwooley.github.io/images/wooley_pic.jpg" style="width: 150px;" hspace="20">
-Hello! I am an economics graduate student currently searching for positions in industry. My current interests are in deep learning, numerical problems, and programming (broadly conceived). However, I am always up for learning about something new. As an economist I worked on problems in macroeconomics and public economics.
+Hello! My name is Michael Wooley. I am an economics graduate student currently searching for positions in industry. My current interests are in deep learning, numerical problems, and programming (broadly conceived). However, I am always up for learning about something new. As an economist I worked on problems in macroeconomics and public economics.
 
 Below you will find some links to my papers and projects. Please feel free to reach out to learn more.
 
