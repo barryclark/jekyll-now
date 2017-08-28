@@ -3,7 +3,7 @@ layout: post
 title: Google Summer of Code 2017 Final Evaluation
 ---
 
-# About Myself *About Me*
+# About Me
 Here is some information about me. If you already know me, you can skip this part. But if you don't, here it is!
 
 My name is Quan Nguyen. I'm currently a fourth year student. I'm in the process of doing my final project and after that I'll be thrown out of my school :((.
@@ -23,7 +23,7 @@ Speaking of Mozilla, I've been a Firefox user for a very long time, maybe since 
 ## Boost Session Restore Performance
 
 My project during this years' Summer of Code is is _Boost Session Restore Performance_. Session Restore is a feature that allows users to be able to pick
- up their work at any time without worrying about that their session - browsing history, browser tabs and windows, etc - may get lost. Many users find this feature very useful and use it often. However, the feature, even though useful and optimized, has its problems and and is sometimes the cause of bad user experience, like slow browser startup, UI freezes, etc. My main goal for this project is to get rid of these problems as much as possible and make session restores smooth and perform better in general. You can checkout my proposal [here]().
+ up their work at any time without worrying about that their session - browsing history, browser tabs and windows, etc - may get lost. Many users find this feature very useful and use it often. However, the feature, even though useful and optimized, has its problems and and is sometimes the cause of bad user experience, like slow browser startup, UI freezes, etc. My main goal for this project is to get rid of these problems as much as possible and make session restores smooth and perform better in general. You can checkout my proposal [here](https://storage.googleapis.com/summerofcode-prod.appspot.com/gsoc/core_project/doc/5785823254413312_1491142698_GSOC2017-FirefoxProposal.pdf?Expires=1503992222&GoogleAccessId=summerofcode-prod%40appspot.gserviceaccount.com&Signature=g6txlicRsxLjd9Ads8PQcW%2B9U%2FHCqU0kTR8WL6omjSVTS%2BOo7sQ3XCD2%2Fnyd2tWFH%2FPveDu2WyWrkRWvI%2B3RBtG4fdh3qgUcJwZsHcu%2BDypJFJ%2FbG%2B2ZAgwUORni0EYv%2FVfbZLPpLmtaw5qcr0BuekeHGKmwxTCP8SRdn1rLhiMM6%2BS6swFfhLNuKf8gZbr%2FPCNHKcooSXEmiVMUekDZWH7tyv9C8pL%2BJW3oSHIIvMwNBg2dEEoDA3ZXNNBKe3turvCSK%2B2S%2BZ48GZMEBthDQ07fEHLShevVnfD9Gn1zkLIaDspu6EfVEqxknCULFESL4s6zUBHWd0ZqcII2rmW97A%3D%3D).
 
 My mentors are [Mike de Boer](mailto:mdeboer@mozilla.com) and [Dão Gottwald](mailto:dgottwald@mozilla.com). Both of them are Mozilla senior engineers and and live in The Netherlands and Germany, respectively. Mike has been working for the organization for more than 5 years. He is in charge of many important parts of Firefox like Find Toolbar, Menus, etc. and of course, Session (Re)Store. Dão has been working at Mozilla for over 12 years on many components, like Tabbed Browser, Themes, Location Bar, etc. Both of them are great mentors and taught me many things during the program.
 
