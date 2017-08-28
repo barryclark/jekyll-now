@@ -6,7 +6,7 @@ permalink: /about/
 
 [_[CV]_](files/wooley_resume_8_9_17.pdf) [_[GitHub]_](https://github.com/michaelwooley) [_[LinkedIn]_](https://www.linkedin.com/in/michael-wooley/) [_[Email]_](mailto:wm.wooley@gmail.com)
 
-<img align="right" src="Images/wooley_pic.jpg" style="width: 150px;" hspace="20">
+<img align="right" src="images/wooley_pic.jpg" style="width: 150px;" hspace="20">
 Hello! I am an economics graduate student currently searching for positions in industry. My current interests are in deep learning, numerical problems, and programming (broadly conceived). However, I am always up for learning about something new. As an economist I worked on problems in macroeconomics and public economics.
 
 Below you will find some links to my papers and projects. Please feel free to reach out to learn more.
