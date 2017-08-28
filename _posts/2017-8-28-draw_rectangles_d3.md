@@ -9,7 +9,7 @@ My goal in this post will be rather modest: we're going to make a web page using
 
 At the end of this, we're going to have something like this:
 
-<script async src="//jsfiddle.net/wmwooley/39abzhus/embed/result/"></script>
+<script async src="//jsfiddle.net/wmwooley/39abzhus/embed/result/?bodyColor=white&menuColor=white&fontColor=black"></script>
 
 _Note:_ I'm going to do the "jsfiddle" version of the code, which means that I'm going to skip over some of the setup involved in linking stylesheets and javascript to the main HTML file and the like. It should all run in jsfiddle, however.
 
