@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Making bounding boxes with d3.js
+comments: true
 ---
 
 This post kicks off a series in which I will be creating a UI for ...
