@@ -3,13 +3,13 @@
 #
 
 # Name of your site (displayed in the header)
-name: Michael Wooley
+name: Things I'm Thinking About Right Now
 
 # Short bio or description (displayed in the header)
-description: Working in Data Analysis, Programming, and Economics
+description: Michael Wooley
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: images/wooley_pic.jpg
+avatar: michaelwooley.github.io/images/wooley_pic.jpg
 
 #
 # Flags below are optional
@@ -34,10 +34,10 @@ footer-links:
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 # You can find your shortname on the Settings page of your Disqus account
-disqus:
+disqus: mw_github
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-google_analytics:
+google_analytics: UA-105579679-1
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
