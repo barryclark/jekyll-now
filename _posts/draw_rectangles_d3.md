@@ -1,4 +1,7 @@
-# Baby Steps 1: Making bounding boxes with `d3.js`
+---
+layout: post
+title: Baby Steps 1: Making bounding boxes with `d3.js`
+---
 
 This post kicks off a series in which I will be creating a UI for ...
 
