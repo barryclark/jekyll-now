@@ -21,7 +21,6 @@ Before getting into the main javascript we need to set up some HTML and styling.
 <body>
 </body>
 ```
-<script src="https://gist.github.com/michaelwooley/714e93578907ba1ee06da4bfa35101f2#file-draw_rectangles_d3_html-html"></script>
 
 The CSS part is sort of optional but it never hurts to look good. We're going to be drawing rectangles so we'll create a class called `rect` for styling these elements:
 
