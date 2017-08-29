@@ -118,5 +118,5 @@ GSOC has been a great journey into the open source world. It allows students to 
 
 For me, I'll still contribute to Firefox and finish what I started. And I'm eager to contribute to other open source projects. I'm sure there will be more fun and challenges waiting for me in open source world.
 
-**EDIT**: Thanks Mike for taking a look at the blog post and correcting my mistakes. You really are a great guy!!!!
+**PS**: Thanks Mike for taking a look at the blog post and correcting my mistakes!!!!
 
