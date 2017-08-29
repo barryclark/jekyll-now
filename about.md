@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-I'm python web developer mainly working on flask, javascript(angularjs, reactjs with redux) and html!
+I'm just a developer mainly working on tornado, flask, javascript(angularjs, reactjs with redux) and html!
 
 
 ### Contact me
