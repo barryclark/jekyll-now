@@ -1,8 +1,9 @@
-
+---
 layout: post
 title: La ricostruzione dei volontari
 categories: storie
 crosseverything_to_medium: false
+---
 
 
 [Tutti insieme a Rovereto e Sant’Antonio – Onlus](http://www.insieme.mo.it/) è un’associazione del modenese, nata per fare sistema tra associazioni impegnate nella raccolta fondi post-terremoto dell’Emilia del 2012. Dallo scorso autunno questa esperienza è al servizio del progetto [Insieme per ricostruire](http://www.insiemexricostruire.it/), un tavolo di associazioni, enti, sponsor, professionalità che beneficia del prezioso aiuto di artigiani ed enti trentini, che si è messo a disposizione delle popolazioni del Centro Italia appenninico colpite dai terremoti del 2016.
