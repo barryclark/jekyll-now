@@ -19,6 +19,3 @@ Past Vulnerability Disclosures:
 * [EE](https://www.e2e-assure.com/blog/Security-Issues-with-the-My-EE-App/)
 * [Lawson Chase](https://blog.georgesale.co.uk/disclosure-to-lawson-chase/)
 
-Past Vulnerability Disclosures (did not fix):
-* [Astbury Marsden](https://blog.georgesale.co.uk/disclosure-to-astbury-marsden)
-
