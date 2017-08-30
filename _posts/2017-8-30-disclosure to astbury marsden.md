@@ -5,7 +5,7 @@ title: Security Disclosure (did not fix) - Astbury Marsden
 
 Earlier this year, I was approached by a recruiter from another specialist IT, Corporate Risk, and Cyber Security recruitment company - *Astbury Marsden*. I wasn't interested in a job (I'm very happy where I am!) but out of habit, checked their website - only to find a security issue!
 
-Unfortunately, Astbury Marsden wasn't using a secure connection on their website - exposing personally identifiable information (*user names, emails, cover letters, CVs, telephone numbers, and passwords*) on insecure networks.
+Unfortunately, Astbury Marsden wasn't using a secure connection on it's website - exposing personally identifiable information (*user names, emails, cover letters, CVs, telephone numbers, and passwords*) on insecure networks.
 
 As of this post going live, they *still haven't fixed this, despite an initial acknowledgement of the issue and repeated contact*.
 
