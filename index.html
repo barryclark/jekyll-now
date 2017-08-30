@@ -4,7 +4,8 @@
 <head>
 
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -12,7 +13,7 @@
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"/>
     <link href="assets/css/style.css" rel="stylesheet">
 
 </head>
@@ -42,6 +43,7 @@
 
     <header class="bg-primary text-white">
         <div class="container text-center">
+            <img src = "./assets/images/myimg.jpg" class = "headshotPic">
             <h1>Jesse Stern</h1>
             <p class="lead">Web Developer</p>
         </div>
@@ -52,77 +54,118 @@
             <div class="row">
                 <div class="col-lg-8 mx-auto">
                   <h2>Hi, I'm Jesse!</h2>
-                    <p class="lead">My name is Jesse Stern. I am really excited about learning web development. I come from a music background and have been playing and studying music for over ten years. I moved to Marin County, California from Oregon about 3 years ago to study Classical Indian Music at the Ali Akbar College of Music in San Rafael.
+                  <p class="lead">My name is Jesse Stern. I am really excited about learning web development. I come from a music background and have been playing and studying music for over ten years. I moved to Marin County, California from Oregon about 3 years ago to study Classical Indian Music at the Ali Akbar College of Music in San Rafael.
 
                     I love to learn new things and I am loving learning how to code! Sometimes I try to be a vegan, and do healthy things like yoga and running. You might also catch me binging on pretzels and watching Netflix until I turn into a zombie. I think this class is a productive use of my time.
-                    </ul>
-                </div>
+                </ul>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section id="portfolio" class="bg-light">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 mx-auto">
-                    <h2>Portfolio</h2>
-                    <p class="lead">My name is Jesse Stern. I am really excited about learning web development. I come from a music background and have been playing and studying music for over ten years. I moved to Marin County, California from Oregon about 3 years ago to study Classical Indian Music at the Ali Akbar College of Music in San Rafael.
-
-                    I love to learn new things and I am loving learning how to code! Sometimes I try to be a vegan, and do healthy things like yoga and running. You might also catch me binging on pretzels and watching Netflix until I turn into a zombie. I think this class is a productive use of my time.
-                </div>
-            </div>
-        </div>
-    </section>
+<section id="portfolio" class="bg-light">
+    <div class="container">
+        <h1>Portfolio</h1>
+        <div class="row">
+            <div class="col-md-6 portfolioImg">
+              <div class="col-md-6 portfolioTitle">My Raag Book
+              </div>
+              <img src = "http://placehold.it/200x200">
+          </div>
+          <div class="col-md-6 portfolioImg">
+             <a href="https://sternj20.github.io/foodtrucker/" target="_blank">
+             <div class="col-md-6 portfolioTitle">SF Food Trucker
+             </div>
+             <img src = "http://placehold.it/200x200">
+             </a>
+         </div>
+         <div class="col-md-6 portfolioImg">
+            <a href="https://sternj20.github.io/Hangman-Game/" target="_blank">
+             <div class="col-md-6 portfolioTitle">Hangman Game
+             </div>
+             <img src = "http://placehold.it/200x200">
+             </a>
+         </div>
+         <div class="col-md-6 portfolioImg">
+         <div class="col-md-6 portfolioTitle">New Project
+           </div>
+           <img src = "http://placehold.it/200x200">
+       </div>
+       <div class="col-md-6 portfolioImg">
+          <div class="col-md-6 portfolioTitle">New Project
+          </div>
+          <img src = "http://placehold.it/200x200">
+      </div>
+      <div class="col-md-6 portfolioImg">
+          <div class="col-md-6 portfolioTitle">New Project
+          </div>
+          <img src = "http://placehold.it/200x200">
+      </div>
+  </div>
+</div>
+</section>
 
 <!-- contact section -->
-    <section id="contact" class = "bg-light">
+<section id="contact" class = "bg-light">
     <div class ="container">
         <div class="row">
             <div class="col-md-8 content">
-                          <div class="page-header">
-                    <h1>Contact me</h1>
+              <div class="page-header">
+                <h1>Contact me</h1>
+            </div>
+            <form>
+                <div class="form-group">
+                    <label for="exampleName">Name</label>
+                    <input type="name" class="form-control" id="exampleName" placeholder="John Smith">
                 </div>
-                <form>
-                    <div class="form-group">
-                        <label for="exampleName">Name</label>
-                        <input type="name" class="form-control" id="exampleName" placeholder="John Smith">
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">Email address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="example@gmail.com">
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleTextarea">Message</label>
-                        <textarea class="form-control" id="exampleTextarea" rows="9"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                    </form>
-                </div> <!-- col md8 -->
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="example@gmail.com">
                 </div>
+                <div class="form-group">
+                    <label for="exampleTextarea">Message</label>
+                    <textarea class="form-control" id="exampleTextarea" rows="9"></textarea>
                 </div>
-    </section>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div> <!-- col md8 -->
+    </div>
+</div>
+</section>
 
-    <!-- Footer -->
-    <footer class="py-5 bg-dark">
-        <div class="container">
-            <p class="m-0 text-center text-white">Copyright &copy; Jesse Stern 2017</p>
-            <a href ="https://github.com/sternj20" target="_blank"><img class ="icons" src="assets/images/github.jpg"></a>
-            <a href ="https://www.linkedin.com/in/jesse-stern-07027630/" target="_blank"><img class = "icons" src="assets/images/linkedin.png"></a>
-            <a href ="https://twitter.com/jessesternmusic" target="_blank"><img class = "icons" src="assets/images/twitter.png"></a>
-            <a href ="https://stackoverflow.com/users/7561041/sternj20" target="_blank"><img class="icons" src ="assets/images/so-icon.png"></a>
+<!-- Footer -->
+<footer class="py-5 bg-dark">
+    <div class="container">
+        <div class = "row">
+            <div class = "col-md-12 icons">
+                <p class="m-0 text-center text-white">Copyright &copy; Jesse Stern 2017</p>
+            </div>
         </div>
-        <!-- /.container -->
-    </footer>
+        <div class="container text-center">
+            <a href="https://github.com/sternj20"><i class="fa fa-github fa-3x"></i></a>
+            <a href="https://twitter.com/jessesternmusic"><i class="fa fa-twitter fa-3x"></i></a>
+            <a href="https://www.linkedin.com/in/jesse-stern/"><i class=" fa fa-linkedin fa-3x"></i></a>
+            <a href="https://stackoverflow.com/users/7561041/sternj20"><i class=" fa fa-stack-overflow fa-3x"></i></a>
+        </div>
+    </div>
+</div>
+<!-- /.container
+</footer>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src ="assets/js/popper/popper.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-    <!-- Custom JavaScript for this theme -->
-    <script src="assets/js/scrolling-nav.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet"/>
+<footer class="footer">
+
+</footer>
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src ="assets/js/popper/popper.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+<!-- Custom JavaScript for this theme -->
+<script src="assets/js/scrolling-nav.js"></script>
 
 </body>
 
