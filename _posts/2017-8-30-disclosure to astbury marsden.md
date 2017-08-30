@@ -28,10 +28,13 @@ Affected Pages:
 
 
 Images:
-({{site.baseurl}}/images/2017-8-31 disclosure to astbury marsden/login.jpg)
-({{site.baseurl}}/images/2017-8-31 disclosure to astbury marsden/enquiry.jpg)
-({{site.baseurl}}/images/2017-8-31 disclosure to astbury marsden/register.jpg)
-({{site.baseurl}}/images/2017-8-31 disclosure to astbury marsden/forgotten.jpg)
+* ![Login page]({{site.baseurl}}/images/2017-8-31 disclosure to astbury marsden/login.jpg)
+
+* ![Enquiry page]({{site.baseurl}}/images/2017-8-31 disclosure to astbury marsden/enquiry.jpg)
+
+* ![Register page]({{site.baseurl}}/images/2017-8-31 disclosure to astbury marsden/register.jpg)
+
+* ![Forgotten password page]({{site.baseurl}}/images/2017-8-31 disclosure to astbury marsden/forgotten.jpg)
 
 
 
