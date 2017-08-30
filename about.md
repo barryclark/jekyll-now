@@ -10,7 +10,7 @@ Hello! My name is Michael Wooley. I am an economics graduate student currently s
 
 Below you will find some links to my papers and projects. Please feel free to reach out to learn more.
 
-Here is my [cv](../files/wooley_resume_8_9_17.pdf).
+Here is my [cv](../files/wooley_resume.pdf).
 
 ## Projects
 
@@ -34,6 +34,6 @@ Here is my [cv](../files/wooley_resume_8_9_17.pdf).
 
 One thing that I've found is that many people have widely divergent ideas of what constitutes a good resume or cv. In the hopes of making it easy to find the right information fast, I am posting three versions of my resume/cv:
 
-1. [Business (Longer)](files/wooley_resume_8_9_17.pdf)
+1. [Business (Longer)](files/wooley_resume.pdf)
 2. [Business/"Data Scientist" (Shorter)](files/wooley_resume_short_8_9_17.pdf)
 3. [Acadmic CV](files/wooley_cv.pdf)
