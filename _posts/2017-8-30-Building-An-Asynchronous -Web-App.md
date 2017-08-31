@@ -7,7 +7,7 @@ title: Building An Asynchronous Web App.
 [ Thailand Explorer Live Site](https://mikehaslam-thinkful-projects.github.io/thailand-explorer/)
 
 
-# Explore random destinations in Thailand.
+## Explore random destinations in Thailand.
 
 In this Thinkful capstone project, I had many challenges and learned, quite a bit about reading documentation . 
 
