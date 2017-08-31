@@ -14,7 +14,8 @@ In this Thinkful capstone project, I had many challenges and learned, quite a bi
 [Github Repository](https://github.com/MikeHaslam-Thinkful-projects/thailand-explorer)
 
 
-The requirements for this project, were to choose an API,  get data from API and display it to the user in the UI. 
+The requirements for this project, were to choose an API,  get data from API and display it to the user in the UI.
+Also the app should be responsive and fully functional on tablets, mobile and desktop. And shound have good style.
 
 I choose to get data from the WikiVoyage API witch is part of the  [MediaWiki API](https://www.mediawiki.org/wiki/API:Main_page) Some challenges, I had with this API is I found the documentation hard to understand at first, also the position of the data changes often.
 
