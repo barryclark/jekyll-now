@@ -1,0 +1,8 @@
+<head>
+    <meta charset="UTF-8">
+    <title>{% if page.title %}{{page.title}} - {{site.title}}{% else %}{{site.title}}{% endif %}</title>  
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,700" rel="stylesheet">
+    <link rel="stylesheet" href={{ "/css/main.css" | prepend: site.baseurl }}>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% seo %}
+</head>

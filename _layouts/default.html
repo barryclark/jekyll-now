@@ -1,51 +1,43 @@
+---
+layout: compress
+---
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+<html lang="en">
+{% include head.html %}
+<body>
+<header>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
-    {% include meta.html %}
+  {% include menu-links.html %}
+</div>
 
-    <!--[if lt IE 9]>
-      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+<!-- Use any element to open the sidenav -->
+<span id="slid" onclick="openNav()"><i class="fa fa-align-left" aria-hidden="true"></i></span>
+<a href="{{site.baseurl}}/"><h1 class="header-title">{{site.title}}<i class="fa fa-sun-o" aria-hidden="true"></i> </h1></a>
+<h2 class="header-tagline">Son of the Sun</h2>
+</header>
+<div id="main">
 
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
-    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
 
-    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
-  </head>
 
-  <body>
-    <div class="wrapper-masthead">
-      <div class="container">
-        <header class="masthead clearfix">
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
 
-          <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-            <p class="site-description">{{ site.description }}</p>
-          </div>
+{{content}}
 
-          <nav>
-            <a href="{{ site.baseurl }}/">Blog</a>
-            <a href="{{ site.baseurl }}/about">About</a>
-          </nav>
-        </header>
-      </div>
-    </div>
 
-    <div id="main" role="main" class="container">
-      {{ content }}
-    </div>
 
-    <div class="wrapper-footer">
-      <div class="container">
-        <footer class="footer">
-          {% include svg-icons.html %}
-        </footer>
-      </div>
-    </div>
+{% include footer.html %}
 
-    {% include analytics.html %}
-  </body>
+</div>
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";    
+}
+</script>
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet" type="text/css"> 
+{% include analytics.html %}
+</body>
 </html>

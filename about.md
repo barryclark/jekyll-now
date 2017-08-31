@@ -1,10 +1,10 @@
 ---
 layout: page
-title: About
+title: Eunjung
 permalink: /about/
 ---
 
-Some information about you!
+
 
 ### More Information
 
@@ -12,4 +12,4 @@ A place to include any other types of information that you'd like to include abo
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[sirupe@nate.com](mailto:sirupe@nate.com)
