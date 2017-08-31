@@ -4,22 +4,22 @@ title: Building An Asynchronous Web App.
 ---
 ![_config.yml]({{ site.baseurl }}/images/landing1.jpg)
 
-Live site https://mikehaslam-thinkful-projects.github.io/thailand-explorer/
+[Live site](https://mikehaslam-thinkful-projects.github.io/thailand-explorer/)
 
 
 ## Thailand Explorer is a  web application to explore random destinations in Thailand.
 
 In this Thinkful capstone project, I had many challenges and learned, quite a bit about reading documentation . 
 
-[Github Repository]( https://github.com/MikeHaslam-Thinkful-projects/thailand-explorer)
+[Github Repository](https://github.com/MikeHaslam-Thinkful-projects/thailand-explorer)
 
 
 The requirements for this project, were to choose an API,  get data from API and display it to the user in the UI. 
 
-I choose to get data from the WikiVoyage API witch is part of the  [MediaWiki API]( https://www.mediawiki.org/wiki/API:Main_page) Some challenges, I had with this API is I found the documentation hard to understand at first, also the position of the data changes often.
+I choose to get data from the WikiVoyage API witch is part of the  [MediaWiki API](https://www.mediawiki.org/wiki/API:Main_page) Some challenges, I had with this API is I found the documentation hard to understand at first, also the position of the data changes often.
 
-Another API  I used in this project is the [Google Maps API]( https://developers.google.com/maps/) I found the documentation for this API more easier to understand  than WikiMedia but still challenging . Also to help use Google Maps and my jQuery implementation  I choose to use
-A jQuery plugin from [Maplace.js]( http://maplacejs.com/)  Maplace was very helpful in working with Google Maps, but once again the documentation was challenging , but by searching issues on repository and by broad searching I was able to figure out what I need to do.
+Another API  I used in this project is the [Google Maps API](https://developers.google.com/maps/) I found the documentation for this API more easier to understand  than WikiMedia but still challenging . Also to help use Google Maps and my jQuery implementation  I choose to use
+A jQuery plugin from [Maplace.js](http://maplacejs.com/)  Maplace was very helpful in working with Google Maps, but once again the documentation was challenging , but by searching issues on repository and by broad searching I was able to figure out what I need to do.
 
 ## Technology used
 
