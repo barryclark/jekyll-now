@@ -2,12 +2,12 @@
 layout: post
 title: Building An Asynchronous Web App.
 ---
-![_config.yml]({{ site.baseurl }}/images/landing1.jpg)
+![_config.yml]({{ site.baseurl }}/images/landing1.png)
 
 [ Thailand Explorer Live Site](https://mikehaslam-thinkful-projects.github.io/thailand-explorer/)
 
 
-## Thailand Explorer a web application to explore random destinations in Thailand.
+## Thailand Explorer come explore random destinations in Thailand.
 
 In this Thinkful capstone project, I had many challenges and learned, quite a bit about reading documentation . 
 
