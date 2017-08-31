@@ -1,9 +1,21 @@
 ---
 layout: post
-title: You're up and running!
+title: Welcome to Tappd.net!
 ---
 
-Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
+And so it begins...
+
+When I think about what I care about the most .. that's easy. It's my family, my friends, and my community. 
+I care about our health, our well-being, our safety, and our ability to live fulfilling lives. 
+
+If you’re like me, you try to provide access to the healthiest food for your family
+You care about your family’s health and safety.  
+
+### But what about the water they drink in your home, in schools, public centers, restaurants, and at work? 
+
+We just don’t know!
+
+### Let's find out together! 
 
 ![_config.yml]({{ site.baseurl }}/images/config.png)
 
