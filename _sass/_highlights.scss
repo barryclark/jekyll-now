@@ -10,8 +10,11 @@
   overflow: scroll;
 }
 
-code {
-  font-family:'Bitstream Vera Sans Mono','Courier', monospace;
+code.highlighter-rouge {
+  border: 1px solid #c0c0c0;
+  padding: 3px;
+  background-color: #f0f0f0;
+  font-size: 16px;
 }
 
 .highlight .c { color: #586E75 } /* Comment */
@@ -19,7 +22,7 @@ code {
 .highlight .g { color: #93A1A1 } /* Generic */
 .highlight .k { color: #859900 } /* Keyword */
 .highlight .l { color: #93A1A1 } /* Literal */
-.highlight .n { color: #93A1A1 } /* Name */
+.highlight .n { color: #00e } /* Name */
 .highlight .o { color: #859900 } /* Operator */
 .highlight .x { color: #CB4B16 } /* Other */
 .highlight .p { color: #93A1A1 } /* Punctuation */
