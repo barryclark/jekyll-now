@@ -214,6 +214,11 @@ ex. ENS0000001ENS0000002 -> ENS0000001 ENS0000002
         import os
         currentwd = os.getcwd()
         
+##### Install pandas on TACC
+
+     git clone the github repository
+     python setup.py build_ext --inplace --force --user
+     
 ##### Make a python package
  
      Use skeleton of flupan
