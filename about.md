@@ -4,12 +4,24 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+ Name: dongjoonlee  
+ 
+ age : 25 
+ 
+ 
+ univ : gachon univ(south korea) 
+ 
+ 
+ email : ehdwns46@naver.com 
+ 
+ 
+ 
+### More Information ### 
 
-### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+ I am currently studying html5, css, bootstrap, react, jquery, jquery-ajax, jsp, spring!! <br/>
+ I Studied Google-Firebase.
 
-### Contact me
+### Contact me ###
 
-[email@domain.com](mailto:email@domain.com)
+ [ehdwns46@naver.com](mailto:ehdwns46@naver.com)
