@@ -24,7 +24,7 @@ A jQuery plugin from [Maplace.js](http://maplacejs.com/)  Maplace was very helpf
 
 ## Technology used
 
-### Thailand Explorer was written with jQuery, ECMASCRIPT 6, HTML5, CSS3 ARIA.
+### Thailand Explorer was written with jQuery, ECMASCRIPT 6, HTML5, CSS3, ARIA.
 
 I used ARIA atandards to make the app more accessible to people with disabilities.
 
