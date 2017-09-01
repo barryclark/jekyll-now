@@ -24,7 +24,9 @@ A jQuery plugin from [Maplace.js](http://maplacejs.com/)  Maplace was very helpf
 
 ## Technology used
 
-### Thailand Explorer was written with jQuery, ECMASCRIPT 6, HTML5, CSS3.
+### Thailand Explorer was written with jQuery, ECMASCRIPT 6, HTML5, CSS3 ARIA.
+
+I used ARIA atandards to make the app more accessible to people with disabilities.
 
 In this application I choose  to model the data. The application uses ajax get get the locations from a JSON file. Then another ajax call to get the images and description data from wikivoyage which is part of the Media Wiki API. the data is then processed and injected into the DOM dynamically with Javascript.
 
