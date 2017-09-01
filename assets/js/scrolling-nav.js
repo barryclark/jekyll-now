@@ -1,29 +1,35 @@
-(function($) {
-    "use strict"; // Start of use strict
+$(document).ready(function() {
+    //scrollspy
+    //smooth scrolling
+    $("#toTop").hide();
 
-    // Smooth scrolling using jQuery easing
-    $('a[href*="#"]:not([href="#"])').click(function() {
-        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-            var target = $(this.hash);
-            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-            if (target.length) {
-                $('html, body').animate({
-                    scrollTop: (target.offset().top - 54)
-                }, 1000, "easeInOutExpo");
-                return false;
-            }
-        }
-    });
+            // fade in & out
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 400) {
+                    $('#toTop').fadeIn();
+                } else {
+                    $('#toTop').fadeOut();
+                }
+            });
+            $('a[href*=#]').each(function() {
+                if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+                    && location.hostname == this.hostname
+                    && this.hash.replace(/#/,'') ) {
+                  var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
+              var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
+              if ($target) {
+                 var targetOffset = $target.offset().top;
+                 $(this).click(function() {
+                   $('html, body').animate({scrollTop: targetOffset}, 400);
+                   return false;
+               });
+             }
+         }
+     });
 
-    // Activate scrollspy to add active class to navbar items on scroll
+    // Activate scrollspy
     $('body').scrollspy({
-        target: '#mainNav',
+        target: '.navbar',
         offset: 54
     });
-
-    // Closes responsive menu when a link is clicked
-    $('.navbar-collapse>ul>li>a').click(function() {
-        $('.navbar-collapse').collapse('hide');
-    });
-
-})(jQuery); // End of use strict
+});
