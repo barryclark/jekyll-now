@@ -1,0 +1,9 @@
+---
+layout: post
+title: Digital Humanities Text Criticism
+author: tbusch15
+---
+
+Digital Humanities can point both to a founder and to a moment of creation. The founding moment of creation for Roberto Busa was the radically transformation, reordered, disassembled and reassembled version of one of the world's most influential philosophies. 
+
+The term Digital Humanities appears so specific, but is still so vague that it is hard to understand. From a literacy stand point, to it can be to run a text analysis, studying the text itself. However this leads to a criticism that is so mechanical, how is it really a though-out of processed analysis. An algorithmic criticism is the manipulation of a literary text, and is just that: a manipulation. As defined my merriam-webster, "manipulate: to move or control (something; to use or change (numbers, information,etc.)" so this analysis is changing the text for its own purpose. This is often for searching purpose, but is still used for the subjective act of critical interpretation, rare as it is this create limitations to the text almost depriving it of its purpose. Yet maybe that is what Digital Humanities is when it comes to literacy analysis. Not the actual meaning of the text but the composition. As Roseanne Potter hoped that the corsseover of digital literacy would create a "Criticism 'stuffed with humanistic values'" it seemed that never happened as there was no "'scientific methods' of algorithmic manipulation might need to establish comfort with the humanities." We just analyse everything to its most basic form disregarding the humanities of it as a whole. Literacy analysis is more involved now with what types of words are being used and the meaning of them that way rather then what they are actually meaning. So where does this leave humanities as a whole in the digital world?  

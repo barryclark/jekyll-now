@@ -1,0 +1,133 @@
+LINK TO MY TUMBLR POST WITH DATA ANALYSIS:
+https://qualitythroughequality.tumblr.com/post/154194259117/star-wars-and-racial-representation
+
+
+
+Source Code:
+
+import re #FOR EPISODE 2 and 4
+
+def create_upper_list(textfile):
+    char_dict = {}
+    
+    #creating an empty list to read character dialogue into
+    dialogue = [] 
+   
+    #opens my textfile (the scripts) as read only
+    with open(textfile, 'r') as textfile:
+        #specifies what lines are dialogue lines (they are spaced differently than the other lines, only adds those to dialogue)
+        for line in textfile:
+            if "                         " in line:
+                dialogue.append(line)
+    #turns the lines of dialogue into a list of words
+    word_list = '\n'.join(dialogue)
+   
+    #strips new-line characters from the script
+    word_list = [w.strip() for w in word_list.split()]
+    #print(word_list)
+
+    #if a remove_word is in the current string, delete the string
+    for rw in remove_words:
+        for word in word_list:
+            if rw in word:
+                word_list.remove(word)
+
+    #iterates through each word in the list of words
+    for word in word_list:
+        #print(word)
+        #characters are always uppercase, this distinguishes who the characters are
+        if word.isupper() and word is not "I" and word is not "A":
+            char = word
+            if char in char_dict:
+                #if the character is already in our dictionary, then we set them as the current character
+                #all the words following are their lines
+                current_char = char
+            #if the character is not already in the dictionary, then it is a character we haven't seen before, add an entry
+            else:
+                #this strips away the spaces that appeared before the character name
+                char = char.strip()
+               
+                #adds the character to the dictionary and sets their word count to zero
+                char_dict[char] = 0
+                #sets the characteras the current character
+                current_char = char
+        #if the word is not uppercase, then it is a character's lines and should be added to whoever was set as the character last
+        else:
+            char_dict[current_char] += 1
+            #add to the current word in the dictionary
+
+
+    print(char_dict)
+    
+OUTPUT: Episode 4
+{'REBEL': 0, 'FIXER': 44, 'CAMIE': 12, 'BASE': 0, 'CONTROL': 0, 'BEN': 997, 'CASS': 36, 'RED': 0, 'LUKE': 2437, 'HAN': 1776, 
+'THREEPIO': 1473, "LEADER'S": 0, 'HUMAN': 30, 'PILOT': 4, 'XP-38': 7, 'CHIEF': 5, 'DEATH': 0, 'TARKIN': 415, 'TECHNICIAN': 8, 
+'I?': 7, 'VADER': 492, 'NINE': 6, "LUKE'S": 0, 'JABBA': 191, 'TWO': 9, 'WILLARD': 25, 'MASSASSI': 0, '...I': 16, 'OWEN': 300, 
+'PORKINS': 4, 'VOICE': 261, "NINE'S": 0, "TEN'S": 0, 'BARTENDER': 22, 'TAGGE': 80, 'ASTRO-OFFICER': 15, 'DODONNA': 187, 
+'OFFICER': 238, 'STAR': 0, 'TEN': 39, 'WEDGE': 99, 'WOMAN': 7, 'THE': 0, 'DEAK': 4, "MAN'S": 0, 'CREATURE': 3, 'LEIA': 602, 
+'CAPTAIN': 14, 'SECOND': 0, 'GREEDO': 103, 'FIVE': 44, 'COMMANDER': 29, 'WINGMAN': 2, 'AUNT': 0, 'I,': 32, 'TROOPER': 178, 'READ': 0, 
+'IMPERIAL': 0, "HAN'S": 0, 'ELEVEN': 6, 'END': 0, 'BERU': 76, 'FIRST': 0, 'LEADER': 355, "BEN'S": 0, 'GANTRY': 0, 'MOTTI': 90, 
+'GOLD': 0, 'BIGGS': 527, '"I': 7, 'R2': 152, 'SEVEN': 7, 'INTERCOM': 0, "WINGMAN'S": 0}
+
+OUTPUT: Episode 2
+{'TAUN': 0, 'WESSEL': 26, "I'M": 5, 'BAIL': 0, 'AMBASSADOR': 0, 'MAY': 10, 'PALPATINE': 577, 'THREEPIO': 2, 'DEXTER': 0, 'MAS': 0, 
+'CHILDREN': 12, 'A': 97, 'ORN': 0, 'JOCASTA': 0, 'ASK': 0, 'WE': 139, 'OWEN': 60, 'DORME': 20, 'PADME': 2351, 'AMIDALA': 26, 
+'AAK': 66, 'POGGLE': 42, 'NU': 329, 'FOOD': 0, 'MACE-WINDU': 12, 'WINDU': 374, 'LAMA': 0, 'JANGO': 54, 'SIDIOUS': 15, 'CAPTAIN': 13, 
+'RYOO': 2, 'DAR': 0, 'BAGWA': 18, 'JARJAR': 300, 'BERU': 1, 'DARTH': 0, 'GUNRAY': 34, 'WATTO': 139, 'SUN': 0, 'OBI-WAM': 5, 'POOJA': 5, 
+'RUWEE': 79, 'JOVAL': 0, 'SIO': 0, 'SENATOR': 0, 'TAA': 33, 'AMEDDA': 95, 'CORDÃ‰': 7, '(O.S.)': 10, 'NUTE': 0, 'JOBAL': 80, 
+'C-3PO': 324, 'DOOKU': 635, 'DROID': 0, 'WAC': 7, 'ANAKIN': 2090, 'CLIEGG': 136, 'CLONE': 0, 'SOLA': 79, 'CAPTYPHO': 81, 'QUEEN': 0, 
+'FETT': 62, 'PK-4': 69, '(V.O.)': 50, 'KI-ADI-MUNDI': 26, '...I': 7, 'SHMI': 39, 'SERVER': 7, 'FREE': 0, 'OBI-WAN': 1451, 'YODA': 352, 
+'HERMIONE': 4, 'JAMILLIA': 139, 'PLO': 0, 'PAMDE': 6, 'BIBBLE': 96, 'ZAM': 6, 'DARSANA': 17, 'BOBA': 4, 'CHILD': 0, 'MACE': 28, 
+'SLEAZEBAGGANO': 5, 'ORGANA': 89, 'SU': 330, 'ELAN': 17, 'KOON': 8, 'RIT': 38, 'I...': 7, 'COUNT': 0, 'JACK': 8, 'JEDI': 0, 
+'JETTSTER': 151}
+
+    import re #
+def episode_7_ta(textfile):
+    char_dict = {}
+    #these words are not characters or lines, they are used for scene set up, must be removed
+    #remove_words = ['INT.', 'EXT.']
+    
+    #creating an empty list to read character dialogue into
+    dialogue = [] 
+   
+    #opens my textfile (the scripts) as read only
+    with open(textfile, 'r') as textfile:
+        word_list = '\n'.join(textfile)
+ 
+    #strips spaces from words and splits the string into an actual list of words
+    word_list = [w.strip() for w in word_list.split()]
+
+    #iterates through each word in the list of words
+    for word in word_list:
+       
+        #characters are always uppercase, this distinguishes who the characters are
+        if word.isupper() and word is not "I" and word is not "A":
+            char = word
+            if char in char_dict:
+                #if the character is already in our dictionary, then we set them as the current character
+                #all the words following are their lines
+                current_char = char
+            #if the character is not already in the dictionary, then it is a character we haven't seen before, add an entry
+            else:
+                #adds the character to the dictionary and sets their word count to zero
+                char_dict[char] = 0
+                #sets the characteras the current character
+                current_char = char
+        #if the word is not uppercase, then it is a character's lines and should be added to whoever was set as the character last
+        else:
+            #word = word.split()
+            char_dict[current_char] += 1
+            #add to the current word in the dictionary
+    print(char_dict)
+    
+ OUTPUT: Episode 7
+ {'TAUN': 0, 'WESSEL': 26, "I'M": 5, 'BAIL': 0, 'AMBASSADOR': 0, 'MAY': 10, 'PALPATINE': 577, 'THREEPIO': 2, 'DEXTER': 0, 'MAS': 0, 
+ 'CHILDREN': 12, 'A': 97, 'ORN': 0, 'JOCASTA': 0, 'ASK': 0, 'WE': 139, 'OWEN': 60, 'DORME': 20, 'PADME': 2351, 'AMIDALA': 26, 'AAK': 66, 
+ 'POGGLE': 42, 'NU': 329, 'FOOD': 0, 'MACE-WINDU': 12, 'WINDU': 374, 'LAMA': 0, 'JANGO': 54, 'SIDIOUS': 15, 'CAPTAIN': 13, 'RYOO': 2, 
+ 'DAR': 0, 'BAGWA': 18, 'JARJAR': 300, 'BERU': 1, 'DARTH': 0, 'GUNRAY': 34, 'WATTO': 139, 'SUN': 0, 'OBI-WAM': 5, 'POOJA': 5, 
+ 'RUWEE': 79, 'JOVAL': 0, 'SIO': 0, 'SENATOR': 0, 'TAA': 33, 'AMEDDA': 95, 'CORDÃ‰': 7, '(O.S.)': 10, 'NUTE': 0, 'JOBAL': 80, 
+ 'C-3PO': 324, 'DOOKU': 635, 'DROID': 0, 'WAC': 7, 'ANAKIN': 2090, 'CLIEGG': 136, 'CLONE': 0, 'SOLA': 79, 'CAPTYPHO': 81, 'QUEEN': 0, 
+ 'FETT': 62, 'PK-4': 69, '(V.O.)': 50, 'KI-ADI-MUNDI': 26, '...I': 7, 'SHMI': 39, 'SERVER': 7, 'FREE': 0, 'OBI-WAN': 1451, 'YODA': 352, 
+ 'HERMIONE': 4, 'JAMILLIA': 139, 'PLO': 0, 'PAMDE': 6, 'BIBBLE': 96, 'ZAM': 6, 'DARSANA': 17, 'BOBA': 4, 'CHILD': 0, 'MACE': 28, 
+ 'SLEAZEBAGGANO': 5, 'ORGANA': 89, 'SU': 330, 'ELAN': 17, 'KOON': 8, 'RIT': 38, 'I...': 7, 'COUNT': 0, 'JACK': 8, 'JEDI': 0, 
+ 'JETTSTER': 151}

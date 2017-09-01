@@ -4,12 +4,25 @@ layout: default
 
 <div class="posts">
   {% for post in site.posts %}
+
     <article class="post">
 
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
 
+      {% if post.author %}
+        {% for name in post.author %}
+          {% assign author = site.data.authors[name] %}
+            {% if author.name %}
+              {% if forloop.first == true %}<span class="post-list-author-name">by {% endif %}
+              {{ author.name }}
+              {% if forloop.last != true %} and {% else %}</span>{% endif %}
+            {% endif %}
+        {% endfor %}
+
+      {% endif %}
+
       <div class="entry">
-        {{ post.excerpt }}
+        {{ post.excerpt | truncate:500 }}
       </div>
 
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
