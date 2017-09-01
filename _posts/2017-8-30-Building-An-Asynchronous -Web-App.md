@@ -2,7 +2,7 @@
 layout: post
 title: Building An Asynchronous Web App.
 ---
-![_config.yml]({{ site.baseurl }}/images/landing1.png)
+![_config.yml]({{ site.baseurl }}/images/landingPage.png)
 
 [ Thailand Explorer Live Site](https://mikehaslam-thinkful-projects.github.io/thailand-explorer/)
 
