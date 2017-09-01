@@ -2,14 +2,15 @@
 layout: page
 title: About
 permalink: /about/
+published: true
 ---
 
-Some information about you!
+useR, RUNner, DPer, HUSTer
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+待补充
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[jie_ping@foxmail.com](mailto:jie_ping@foxmail.com)
