@@ -28,7 +28,7 @@ A jQuery plugin from [Maplace.js](http://maplacejs.com/)  Maplace was very helpf
 
 I used ARIA atandards to make the app more accessible to people with disabilities.
 
-In this application I choose  to model the data. The application uses ajax get get the locations from a JSON file. Then another ajax call to get the images and description data from wikivoyage which is part of the Media Wiki API. the data is then processed and injected into the DOM dynamically with Javascript.
+In this application I choose  to model the data. The application uses ajax to get the locations from a JSON file. Then another ajax call to get the images and description data from wikivoyage which is part of the Media Wiki API. the data is then processed and injected into the DOM dynamically with Javascript.
 
 I tried to code in a style similar how a React application would be coded, looking forward to using redux to manage state.
 
