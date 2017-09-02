@@ -29,3 +29,14 @@ function loadSiriStopRealtime(marker,stopid){
 	}
 }
 ````
+This function makes a request to `http://www.dundeetravelinfo.com/ajax_loadsiristopmonitoringrequest.asp?stopid=X` where `X` is the stop ID of the bus stop. It outputs [raw HTML](http://www.dundeetravelinfo.com/ajax_loadsiristopmonitoringrequest.asp?stopid=6400PT1691) which is then loaded into the map on Dundee's Travel Info website, but we could scrape this and create an API from this. 
+
+This presents a bottleneck however, what are stop IDs?
+
+You can perform an empty search on the map and it returns 20 bus stops, from there you can manually work out what the stop IDs are by clicking through them but there around 80 stops in Dundee's City Center *alone*, never mind the surrounding neighborhoods.
+
+Luckily there is a very neat way around this. If you are not familiar with [data.gov.uk](https://data.gov.uk/) it is the UK Government's central repository for data which it has opened up. It is an absolute treasure trove of useful information. There is one dataset we are interested in for this project, specifically for finding our stop IDs. [The Department of Transport have a system called NaPTAN](https://data.gov.uk/dataset/naptan), which stands for National Public Transport Access Nodes, which contains data not just about buses but all methods of public transport.
+
+The dataset is available in a few formats, I picked CSV for its ease. I was able to filter by the parent locality name, this presents the 1024 bus stops of Dundee. There is a lot of really useful information here such as stop names, geographic data and even the name of the local area. However the one column we are interested in here is the *ATOCCode*, which is our stop ID from before.
+
+Now that we have a list of stop IDs, we can poll the webpage and scrape the data.
