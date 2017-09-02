@@ -21,12 +21,12 @@ footer-links:
   email:jg.melg@gmail.com
   facebook:https://www.facebook.com/GekneS
   flickr:
-  github: https://github.com/geknes
-  instagram: https://www.instagram.com/jorgmel/
+  github:https://github.com/geknes
+  instagram:https://www.instagram.com/jorgmel/
   linkedin:
-  pinterest: https://www.pinterest.ie/jorge2777/
+  pinterest:https://www.pinterest.ie/jorge2777/
   rss: # just type anything here for a working RSS icon
-  twitter: https://twitter.com/GekneS
+  twitter:https://twitter.com/GekneS
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
