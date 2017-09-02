@@ -19,14 +19,14 @@ avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/je
 footer-links:
   dribbble:
   email: "jg.melg@gmail.com"
-  facebook: "https://www.facebook.com/GekneS"
+  facebook: "GekneS"
   flickr:
-  github: "https://github.com/geknes"
-  instagram: "https://www.instagram.com/jorgmel/"
+  github: "geknes"
+  instagram: "jorgmel"
   linkedin:
-  pinterest: "https://www.pinterest.ie/jorge2777/"
+  pinterest: "jorge2777"
   rss: # just type anything here for a working RSS icon
-  twitter: "https://twitter.com/GekneS"
+  twitter: "GekneS"
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
