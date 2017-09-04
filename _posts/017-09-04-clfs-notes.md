@@ -19,3 +19,6 @@ required setting export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/mnt/clfs/cross-tools/l
 
 ### section GCC 64 bit
 no issues compiling, but left LD_LIBRARY_PATH set the same as in the previous section.
+
+### cross GCC 5.16 section
+need to separate commands into two lines AR=ar etc. and ../config need to be two separate commands
