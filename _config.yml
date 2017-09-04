@@ -21,7 +21,9 @@ description: Un progetto per informare sugli eventi sismici che hanno colpito il
 # --- Navigation bar options --- #
 # List of links in the navigation bar
 navbar-links:
-  Segnala: "segnala/"
+  Segnala: 
+    - Segnalazioni terremoto: "segnala/"
+    - Segnala dati: "dataset/"
   Richieste:
     - Fabbisogni: "fabbisogni/"
     - Cerco Lavoro: "cerco_lavoro/"
