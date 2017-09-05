@@ -71,6 +71,7 @@
 		<link rel="stylesheet" type="text/css" href="/style.css" />
 		<link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
 		<link href="/favicon.ico?" rel="shortcut icon" type="image/x-icon" />
+		{% include google/analytics.html %}
 	</head>
 	{% if layout.isPost %}<body itemscope itemtype="http://schema.org/BlogPosting">{% elsif page.url == "/index.html" or page.url contains "/tags/" or page.url contains "/page" %}<body itemscope itemtype="http://schema.org/Blog">{% else %}<body>{% endif %}
 {% include metadata/schema.html %}  
@@ -85,7 +86,6 @@
 </div>
 	
 {% include scroll-popup.html %}
-{% include google/analytics.html %}
 <script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=9f3e6fd9-f23f-4f8d-9b39-937fb11c51cb"></script>
 </body>
 </html>
