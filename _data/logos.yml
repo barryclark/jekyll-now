@@ -38,6 +38,10 @@
   logo: /img/icone/segnala2-tci.png
   map: false
   link: segnala
+- name: DATI
+  logo: /img/icone/segnala2-tci.png
+  map: false
+  link: dataset/  
 - name: ALLOGGI
   logo: /img/icone/alloggi2-tci.png
   map: false
