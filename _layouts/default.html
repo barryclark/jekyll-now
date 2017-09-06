@@ -1,7 +1,17 @@
+---
+navigation:
+ - text: Blog
+   url: /
+ - text: About
+   url: /about/
+---
+
 <!DOCTYPE html>
 <html>
   <head>
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+
+    {% include favicons.html %}
 
     {% include meta.html %}
 
@@ -9,43 +19,66 @@
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
-    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
 
-    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/main.css" />
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/desktop.css" media="(min-width: 960px)"/>
+
+    <script src="{{ site.baseurl }}/js/utils.js"></script>
+
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
   </head>
 
   <body>
-    <div class="wrapper-masthead">
-      <div class="container">
-        <header class="masthead clearfix">
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
+        <header>
+          <nav class="hide-on-mobile">
+            <div class="navigation">
+              {% assign url = page.url|remove:'index.html' %}
+              {% for link in layout.navigation %}
+                  <a href="{{link.url}}" {% if url == link.url %}class="active"{% endif %} title="{{link.title}}">{{link.text}}</a>
+              {% endfor %}
+            </div>
 
-          <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-            <p class="site-description">{{ site.description }}</p>
+            <div class="site-info">
+              <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
+              <p class="site-description">{{ site.description }}</p>
+            </div>
+
+            <div class="header-links">
+              <a href="https://codepen.io/fracturedloop" target="_blank"><img src="/images/codepen.svg" /></a>
+              <a href="https://github.com/{{ site.footer-links.github }}" target="_blank"><img src="/images/github-white.svg" /></a>
+            </div>
+
+          </nav>
+
+          <nav class="hide-on-desktop mobile-nav">
+              <a href="{{ site.baseurl }}/" class="mobile-logo"></a>
+              <div id="mobile-nav-btn"></div>
+
+          </nav>
+
+          <div class="mobile-nav-container">
+            {% assign url = page.url|remove:'index.html' %}
+            {% for link in layout.navigation %}
+                <a href="{{link.url}}" {% if url == link.url %}class="active"{% endif %} title="{{link.title}}">{{link.text}}</a>
+            {% endfor %}
+
+            <div class="social-links">
+              <a href="https://codepen.io/fracturedloop" id="codepen-link" target="_blank">
+              <a href="https://github.com/{{ site.footer-links.github }}" id="github-link" target="_blank"></a>
+            </div>
           </div>
 
-          <nav>
-            <a href="{{ site.baseurl }}/">Blog</a>
-            <a href="{{ site.baseurl }}/about">About</a>
-          </nav>
         </header>
-      </div>
-    </div>
 
     <div id="main" role="main" class="container">
       {{ content }}
     </div>
 
-    <div class="wrapper-footer">
-      <div class="container">
-        <footer class="footer">
-          {% include svg-icons.html %}
-        </footer>
-      </div>
-    </div>
+    <!-- <footer class="footer">
+      {% include svg-icons.html %}
+    </footer> -->
 
     {% include analytics.html %}
+    <script src="{{ site.baseurl }}/js/main.js"></script>
   </body>
 </html>

@@ -1,0 +1,425 @@
+---
+---
+
+//
+// IMPORTS
+//
+
+@import "reset";
+@import "variables";
+// Syntax highlighting @import is at the bottom of this file
+
+/**************/
+/* BASE RULES */
+/**************/
+
+body {
+	background: $darkerGray;
+  font: 18px/1.4 $helvetica;
+  color: $white;
+  margin-top: 40px;
+  padding: 10px;
+}
+
+.container {
+  max-width: 960px;
+  width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $helveticaNeue;
+  color: $white;
+  font-weight: bold;
+
+  line-height: 1.7;
+  margin: 1em 0 15px;
+  padding: 0;
+
+  @include mobile {
+    line-height: 1.4;
+  }
+}
+
+h1 {
+  font-size: 30px;
+  a {
+    color: inherit;
+  }
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 18px;
+  color: $lighterGray;
+}
+
+p {
+  margin: 15px 0;
+}
+
+a {
+  color: $lightAccentOrange;
+  text-decoration: none;
+	cursor: pointer;
+  transition-duration: 0.2s;
+
+  &:hover, &:active {
+    color: $lightAccentOrange;
+  }
+}
+
+ul, ol {
+  margin: 15px 0;
+  padding-left: 30px;
+}
+
+ul {
+  list-style-type: disc;
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+ol ul, ul ol, ul ul, ol ol {
+  margin: 0;
+}
+
+ul ul, ol ul {
+  list-style-type: circle;
+}
+
+em, i {
+  font-style: italic;
+}
+
+strong, b {
+  font-weight: bold;
+}
+
+img {
+  max-width: 100%;
+}
+
+// Fixes images in popup boxes from Google Translate
+.gmnoprint img {
+  max-width: none;
+}
+
+.date {
+  font-style: italic;
+  color: $lightGray;
+}
+
+// Specify the color of the selection
+::-moz-selection {
+  background: $accentOrange;
+}
+::selection {
+  background: $accentOrange;
+}
+
+.divider {
+  height: 1px;
+  background-color: $lightGray;
+}
+
+/*********************/
+/* LAYOUT / SECTIONS */
+/*********************/
+
+.site-avatar {
+  float: right;
+  width: 70px;
+  height: 70px;
+  margin-right: 15px;
+  text-align: center;
+  @include mobile {
+    float: none;
+    display: block;
+    margin: 0 auto;
+  }
+
+  img {
+    // border-radius: 5px;
+    max-height: 100%;
+  }
+}
+
+.site-info {
+  position: absolute;
+  left: 0;
+  text-align: center;
+
+  @include mobile {
+    float: none;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.site-name {
+  margin: 0;
+  color: $white;
+  cursor: pointer;
+  font-family: $helveticaNeue;
+  font-weight: 300;
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+
+.site-description {
+  margin: -10px 0 0 0;
+  color: $lighterGray;
+  font-size: 12px;
+
+  @include mobile {
+    margin: -3px 0 0 -50px;
+  }
+}
+
+nav {
+  display: flex;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  font-family: $helveticaNeue;
+  font-size: 18px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  background-color: $darkGray;
+
+  @include mobile {
+    font-size: 16px;
+  }
+
+  a {
+    color: $white;
+    display: flex;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition-duration: 0.2s;
+    height: 100%;
+  }
+
+  .navigation {
+    position: absolute;
+    left: 0;
+
+    a {
+      width: 120px;
+      align-items: center;
+      justify-content: center;
+      float: left;
+      height: 75px;
+
+
+      &:hover {
+        color: $lightAccentOrange;
+        background-color: $darkerGray;
+      }
+    }
+
+    a.active {
+      background-color: $darkerGray;
+    }
+  }
+
+  .header-links {
+    position: absolute;
+    right: 0;
+    height: 75px;
+    display: flex;
+
+    a {
+      width: 75px;
+      &:hover {
+        color: $white;
+        background-color: $darkerGray;
+      }
+
+      img {
+        padding: 20px;
+        height: 75px;
+      }
+    }
+  }
+}
+
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  transition-duration: 0.3s;
+
+  .mobile-logo {
+    position: absolute;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-image: url(../images/jnlogo-white2.png);
+  }
+
+  #mobile-nav-btn {
+    position: absolute;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-image: url(../images/mobile-nav.svg);
+  }
+}
+
+.mobile-nav-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #424242;
+  transform: translatey(-100%);
+  transition-duration: 0.3s;
+  padding: 0 0 75px 0;
+
+  a {
+    display: flex;
+    background-color: #212121;
+    margin: 5px 0;
+    height: 75px;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 150%;
+    font-weight: 300;
+  }
+}
+
+.social-links {
+  position: absolute;
+  right: 0;
+  bottom: 50px;
+  left: 50%;
+  background-color: #212121;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  a {
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50px;
+    display: inline-block;
+    margin: 15px;
+    height: 50px;
+  }
+
+  #github-link {
+    background-image: url(/images/github-white.svg);
+  }
+
+  #codepen-link {
+    background-image: url(/images/codepen.svg);
+  }
+}
+
+//
+// .main
+//
+
+.posts > .post {
+  padding-bottom: 2em;
+  border: 4px solid $gray;
+  background-color: $darkGray;
+  padding: 15px;
+  margin: 10px 0;
+}
+
+.posts >.post > h1 {
+  margin: 0;
+  font-weight: normal;
+}
+
+.posts > .post:last-child {
+  padding-bottom: 1em;
+}
+
+.post {
+  blockquote {
+    margin: 1.8em .8em;
+    border-left: 2px solid $gray;
+    padding: 0.1em 1em;
+    color: $gray;
+    font-size: 22px;
+    font-style: italic;
+  }
+
+  .entry {
+    font-size: 16px;
+  }
+
+  .comments {
+    margin-top: 10px;
+  }
+
+  .read-more {
+    text-transform: uppercase;
+    font-size: 15px;
+    color: $white;
+    background-color: $accentOrange;
+    padding: 10px;
+    transition-timing-function: ease-out;
+
+    &:hover {
+      border-radius: 10px;
+    }
+
+    &:active {
+      background-color: $lightAccentOrange;
+    }
+  }
+}
+
+footer {
+  padding: 20px 0;
+  text-align: center;
+}
+
+/*********************/
+/*      Helpers      */
+/*********************/
+
+.no-scroll {
+  overflow: hidden;
+}
+
+@media (max-width: 640px) {
+  .hide-on-mobile {
+    display: none;
+  }
+}
+
+
+
+// Settled on moving the import of syntax highlighting to the bottom of the CSS
+// ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
+@import "highlights";
+@import "svg-icons";

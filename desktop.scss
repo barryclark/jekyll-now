@@ -1,0 +1,28 @@
+---
+---
+
+.site-info {
+  left: auto;
+}
+
+body {
+  margin-top: 65px;
+}
+
+nav {
+  height: 75px;
+}
+
+#main {
+  margin: auto;
+}
+
+/***********/
+/* Helpers */
+/***********/
+
+@media (min-width: 960px) {
+  .hide-on-desktop {
+    display: none;
+  }
+}
