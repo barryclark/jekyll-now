@@ -3,13 +3,13 @@
 #
 
 # Name of your site (displayed in the header)
-name: Your Name
+name: Deniz Atmaca
 
 # Short bio or description (displayed in the header)
-description: Web Developer from Somewhere
+description: Sıradan bir mühendis
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
+avatar: https://raw.githubusercontent.com/denizen/deniz/master/images/deniz1.png
 
 #
 # Flags below are optional
@@ -18,26 +18,26 @@ avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/je
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email:
-  facebook:
-  flickr:
-  github: barryclark/jekyll-now
-  instagram:
-  linkedin:
+  email: atmacadeniz@gmail.com
+  facebook: atmacadeniz
+  flickr: denizatm
+  github: denizen
+  instagram: darklback
+  linkedin: deniz-atmaca-784b0923/
   pinterest:
-  rss: # just type anything here for a working RSS icon
-  twitter: jekyllrb
+  rss: RSS # just type anything here for a working RSS icon
+  twitter: darkblack
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
-  googleplus: # anything in your profile username that comes after plus.google.com/
+  googleplus: 104890476485106844872 # anything in your profile username that comes after plus.google.com/
 
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 # You can find your shortname on the Settings page of your Disqus account
-disqus:
+disqus: atmaca
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-google_analytics:
+google_analytics: UA-12205195-1
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
@@ -47,7 +47,7 @@ url:
 # (http://yourusername.github.io/repository-name)
 # and NOT your User repository (http://yourusername.github.io)
 # then add in the baseurl here, like this: "/repository-name"
-baseurl: ""
+baseurl: "/deniz"
 
 #
 # !! You don't need to change any of the configuration flags below !!
@@ -84,3 +84,5 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+
+theme: jekyll-theme-architect
