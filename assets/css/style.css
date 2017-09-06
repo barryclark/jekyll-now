@@ -1,7 +1,12 @@
 .headshotPic{
-  width:200px;
-  height:200px;
-  border-radius: 50%;
+	width:200px;
+	height:200px;
+	border-radius: 50%;
+}
+
+.landingText{
+	position:relative;
+	top:100px;
 }
 
 body{
@@ -17,6 +22,7 @@ body{
 .content, .panel-default>.panel-heading, .navbar{
 	background:#fff;
 }
+
 h1, h2, h3{
 	color: #4aaaa5;
 	margin-bottom:25px;
@@ -33,12 +39,14 @@ h3{
 	font-size:20px;
 }
 
-
+.content{
+	margin:30px 0;
+}
 
 /*footer*/
 
 .fa{
-  margin-left:20px;
+	margin-left:20px;
 }
 .navbar-fixed-bottom{
 	padding: 10px;
@@ -55,22 +63,22 @@ h3{
 }
 
 header .container {
-  padding-top: 100px;
-  padding-bottom: 50px;
+	padding-top: 100px;
+	padding-bottom: 250px;
 }
 
 .navbar-custom {
-  background: #2C3E50;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
-  font-weight: 700;
-  border: none;
+	background: #2C3E50;
+	font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-transform: uppercase;
+	font-weight: 700;
+	border: none;
 }
 
 .portfolioImg{
-  margin-top:20px;
+	margin-top:20px;
 }
 
 .portfolioTitle{
-  position:absolute;
+	position:absolute;
 }
