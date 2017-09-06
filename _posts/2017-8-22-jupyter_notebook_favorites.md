@@ -42,3 +42,20 @@ To install notebook etensions
 Jupyter Notebooks use MathJax to render LaTeX in Markdown. To add LaTeX, simply surround your statement with `$$`:
 
 $$c = \sqrt{a^2 + b^2}$$
+
+** nbconvert **
+
+Convert Jupyter Notebooks to various formats, including HTML, LaTeX, PDF, and Markdown
+
+jupyter nbconvert --to html mynotebook.ipynb
+
+This is especially useful when paired with this batch file:
+
+```batch
+@echo off
+title quick notebooks
+cd C:\Users\HMISYS\Google Drive\JupyterNotebooks\Blog
+REM This allows for files that have a space in their name
+for /f "usebackq delims=|" %%f in (`dir /b "C:\Users\HMISYS\Google Drive\JupyterNotebooks\Blog\*.ipynb"`) do jupyter nbconvert --to html "%%f"
+pause
+```
