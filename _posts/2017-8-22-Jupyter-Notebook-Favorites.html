@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
-<title>2017-8-22-jupyter_notebook_favorites</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>2017-8-22-Jupyter-Notebook-Favorites</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 <style type="text/css">
@@ -11801,11 +11801,24 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><em>Here are some of my favorite Jupyter Notebook extensions:</em></p>
-<p><strong>2to3 converter</strong>:
--Converts Python 2 to Python 3 in a single click</p>
+<h1 id="Jupyter-Notebook-extensions">Jupyter Notebook extensions<a class="anchor-link" href="#Jupyter-Notebook-extensions">&#182;</a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="2to3-converter">2to3 converter<a class="anchor-link" href="#2to3-converter">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Converts Python 2 to Python 3 in a single click</p>
 <p><a href="http://jupyter-contrib-nbextensions.readthedocs.io/en/latest/nbextensions/code_prettify/README_2to3.html">http://jupyter-contrib-nbextensions.readthedocs.io/en/latest/nbextensions/code_prettify/README_2to3.html</a></p>
-<p>To install notebook etensions</p>
 
 </div>
 </div>
@@ -11827,7 +11840,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="LaTeX">LaTeX<a class="anchor-link" href="#LaTeX">&#182;</a></h2><p>Jupyter Notebooks use MathJax to render LaTeX in Markdown. To add LaTeX, simply surround your statement with <code>$$</code>:</p>
+<h1 id="Printing-LaTeX">Printing LaTeX<a class="anchor-link" href="#Printing-LaTeX">&#182;</a></h1><p>Jupyter Notebooks use MathJax to render LaTeX in Markdown. To add LaTeX, simply surround your statement with <code>$$</code>:</p>
 $$c = \sqrt{a^2 + b^2}$$
 </div>
 </div>
@@ -11851,6 +11864,32 @@ $$
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Do a single <code>$</code> to print the formula on the left and double $$ to print in the center</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="nbconvert">nbconvert<a class="anchor-link" href="#nbconvert">&#182;</a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Convert Jupyter Notebooks to various formats, including HTML, LaTeX, PDF, and Markdown</p>
+<p>jupyter nbconvert --to html mynotebook.ipynb</p>
+<p>This is especially useful when paired with this batch file:</p>
+<div class="highlight"><pre><span></span><span class="p">@</span><span class="k">echo</span> off
+<span class="k">title</span> quick notebooks
+<span class="k">cd</span> C:\Users\HMISYS\Google Drive\JupyterNotebooks\Blog
+<span class="c1">REM This allows for files that have a space in their name</span>
+<span class="k">for</span> <span class="k">/f</span> <span class="s2">&quot;usebackq delims=|&quot;</span> <span class="se">%%</span>f <span class="k">in</span> <span class="p">(</span><span class="sb">`dir /b &quot;C:\Users\HMISYS\Google Drive\JupyterNotebooks\Blog\*.ipynb&quot;`</span><span class="p">)</span> <span class="k">do</span> jupyter nbconvert --to html <span class="s2">&quot;</span><span class="se">%%</span><span class="s2">f&quot;</span>
+<span class="k">pause</span>
+</pre></div>
 
 </div>
 </div>
