@@ -24,3 +24,8 @@ no issues compiling, but left LD_LIBRARY_PATH set the same as in the previous se
 need to separate commands into two lines AR=ar etc. and ../config need to be two separate commands
 
 no issues, LD_LIBRARY_PATH still set
+
+### ch 7 Shadow
+typo in book; erratta
+this echo "#define ENABLE_SUBUIDS 1" >> config.h should be this echo 
+"#define ENABLE_SUBIDS 1" >> config.h
