@@ -32,3 +32,7 @@ this echo "#define ENABLE_SUBUIDS 1" >> config.h should be this echo
 
 ### Issue with Boot Method
 Boot Method is not well documented and is missing the temporary grub configuration from previous versions of the book. reverting to chroot method.
+
+### 10.7. Glibc-2.19 32 Bit Libraries
+libio/tst-ftell-partial-wide.out fails because it needs a locale that has not yet been generated. 
+This is from the LFS book, it is missing in the CLFS book.
