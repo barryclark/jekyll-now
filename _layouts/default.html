@@ -72,6 +72,7 @@
 		<link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
 		<link href="/favicon.ico?" rel="shortcut icon" type="image/x-icon" />
 		{% include google/analytics.html %}
+		{% include facebook/pixel.html %}
 	</head>
 	{% if layout.isPost %}<body itemscope itemtype="http://schema.org/BlogPosting">{% elsif page.url == "/index.html" or page.url contains "/tags/" or page.url contains "/page" %}<body itemscope itemtype="http://schema.org/Blog">{% else %}<body>{% endif %}
 {% include metadata/schema.html %}  
