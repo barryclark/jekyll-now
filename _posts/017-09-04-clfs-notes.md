@@ -36,3 +36,6 @@ Boot Method is not well documented and is missing the temporary grub configurati
 ### 10.7. Glibc-2.19 32 Bit Libraries
 libio/tst-ftell-partial-wide.out fails because it needs a locale that has not yet been generated. 
 This is from the LFS book, it is missing in the CLFS book.
+
+### 10.11 gmp 6.0.0
+seems that the flag code LDFLAGS etc needs to entered as individual commands, blows up otherwise?
