@@ -39,3 +39,6 @@ This is from the LFS book, it is missing in the CLFS book.
 
 ### 10.11 gmp 6.0.0
 seems that the flag code LDFLAGS etc needs to entered as individual commands, blows up otherwise?
+
+### 10.24
+sed -i -e '/test-bison/d' tests/Makefile.in is needed to prevent failures from bison test checks, because bison isn't installed yet.
