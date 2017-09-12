@@ -6,6 +6,7 @@ permalink: /teaching/
 
 ### Causal Inference
 
+* [2017 (Fall) Syllabus]({{ site.url }}/files/syllabi/EDP-381C-10705-Causal-inference-2017F.pdf)
 * [2014 (Fall) Syllabus]({{ site.url }}/files/syllabi/EDP-384-25-Causal-inference-2014F-syllabus.pdf)
 
 ### Data Analysis, Simulation, and Programming in R
