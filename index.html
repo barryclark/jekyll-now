@@ -18,7 +18,10 @@ layout: default
 		<h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
 
 		<div class="entry">
-			{{ post.excerpt | strip_html | truncatewords: 50}}
+		{% if post.excerpt %}
+    		{{ post.excerpt | strip_html | truncatewords: 50}}
+		{% endif %}
+			<!-- {{ post.excerpt | strip_html | truncatewords: 50}} -->
 			<!-- {{ post.content | strip_html | truncatewords: 50 }} -->
 		</div>
 
