@@ -1,4 +1,0 @@
----
-slug: github
-name: GitHub
----

@@ -1,4 +1,0 @@
----
-slug: python
-name: Python
----

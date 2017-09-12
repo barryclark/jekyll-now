@@ -1,4 +1,0 @@
----
-slug: django
-name: Django
----

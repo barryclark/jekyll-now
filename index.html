@@ -29,14 +29,3 @@ layout: default
 	</article>
 	{% endfor %}
 </div>
-
-
-{% for tag in site.tags %}
-<a class="ui tiny label post-tag {{ tag[0] | replace: " ", "-" }}"
-href="{{ site.baseurl }}/index?tag={{ tag[0] | replace: " ", "-" }}">
-{{ tag[0] }}
-<div class="detail"> {{ tag[1].size }} </div>
-</a>
-{% endfor %}
-
-<script src="{{ site.baseurl }}/js/tag_filters.js"></script>

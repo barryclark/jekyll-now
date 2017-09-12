@@ -1,4 +1,0 @@
----
-slug: cookies
-name: Cookies
----

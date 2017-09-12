@@ -9,12 +9,4 @@ layout: default
 		{{ content }}
 	</div>
 
-	{% for tag in page.tags %}
-	<a class="ui tiny label post-tag"
-	href="{{ site.baseurl }}/index?tag={{ tag | replace: " ", "-" }}">
-	{{ tag }}
-	<div class="detail"> {{ site.tags[tag].size }} </div>
-</a>
-{% endfor %}
-
 </article>

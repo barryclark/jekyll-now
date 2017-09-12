@@ -1,4 +1,0 @@
----
-slug: icons
-name: Icons
----
