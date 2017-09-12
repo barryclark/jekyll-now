@@ -3,7 +3,7 @@
 #
 
 # Name of your site (displayed in the header)
-name: Jakob_Sky
+name: JakobLiao
 
 # Short bio or description (displayed in the header)
 description: Software Engineer from China
@@ -22,11 +22,11 @@ footer-links:
   facebook: jakobliao
   flickr:
   github: dongqiceo
-  instagram:
+  instagram:jakobqi
   linkedin: 嘉祺-廖-10399911b
   pinterest:
   rss: # just type anything here for a working RSS icon
-  twitter: 
+  twitter: dongqiceo
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
