@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Bootstrap basehtml on Pythonanywhere
+category: general
+tags: [github, github-pages]
 ---
 
 This article goes over how to use bootstrap to make a nice homepage. This will be a two part post. The first part will focus on making a base.html file that can be extended

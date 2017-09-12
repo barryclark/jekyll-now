@@ -1,0 +1,4 @@
+---
+slug: django
+name: Django
+---

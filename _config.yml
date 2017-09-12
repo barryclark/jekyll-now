@@ -49,6 +49,15 @@ url: https://jss367.github.io/
 # then add in the baseurl here, like this: "/repository-name"
 baseurl: ""
 
+# Where things are
+collections:
+  my_categories:
+    output: true
+    permalink: /blog/category/:name/
+  my_tags:
+    output: true
+    permalink: /blog/tag/:name/
+
 #
 # !! You don't need to change any of the configuration flags below !!
 #
@@ -76,6 +85,7 @@ sass:
 gems:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
+  - jekyll-paginate
 
 # Exclude these files from your production _site
 exclude:
