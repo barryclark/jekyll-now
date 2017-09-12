@@ -2,34 +2,19 @@
 layout: default
 ---
 
-{% assign post = page %}
-{% capture post_subtitle %}<time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%b. %d, %Y' }}</time>{% endcapture %}
+<article class="post">
+	<h1>{{ page.title }}</h1>
 
-{% include title_header.html title=post.title subtitle=post_subtitle %}
+	<div class="entry">
+		{{ content }}
+	</div>
 
+	{% for tag in page.tags %}
+	<a class="ui tiny label post-tag"
+	href="{{ site.baseurl }}/index?tag={{ tag | replace: " ", "-" }}">
+	{{ tag }}
+	<div class="detail"> {{ site.tags[tag].size }} </div>
+</a>
+{% endfor %}
 
-<div class="m-t-3 text-justify">
-  {{ content }}
-
-  {% assign category = site.my_categories | where: "slug", post.category %}
-  {% assign category = category[0] %}
-  {% if category %}
-    {% capture category_content %}<a class="label" href="{{ category.url }}" style="background-color:{{ category.color }}">{{ category.name }}</a>{% endcapture %}
-  {% endif %}
-
-  {% if post.tags.size > 0 %}
-    {% capture tags_content %} with <span class="icon-price-tag{% if post.tags.size > 1 %}s{% endif %}"></span>: {% endcapture %}
-    {% for post_tag in post.tags %}
-      {% assign tag = site.my_tags | where: "slug", post_tag %}
-      {% if tag %}
-        {% assign tag = tag[0] %}
-        {% capture tags_content_temp %}{{ tags_content }}<a href="{{ tag.url }}">{{ tag.name }}</a>{% if forloop.last == false %}, {% endif %}{% endcapture %}
-        {% assign tags_content = tags_content_temp %}
-      {% endif %}
-    {% endfor %}
-  {% endif %}
-
-  <p class="m-t-3 text-muted font-italic">
-    <small>Posted{% if category_content %} in </small>{{ category_content }}<small>{% endif %}{{ tags_content }}</small>
-  </p>
-</div>
+</article>
