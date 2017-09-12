@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Stylizing Jekyll
+tags: blog
 ---
 
 Jekyll uses Markdown for formating, so all the Markdown commands work in Jekyll.
