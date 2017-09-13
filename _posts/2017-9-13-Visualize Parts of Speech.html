@@ -11782,11 +11782,10 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[46]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#import re</span>
-<span class="kn">from</span> <span class="nn">urllib</span> <span class="k">import</span> <span class="n">request</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">urllib</span> <span class="k">import</span> <span class="n">request</span>
 <span class="kn">import</span> <span class="nn">nltk</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 </pre></div>
@@ -11798,7 +11797,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[48]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Now let&#39;s grab some text from Great Expectations</span>
@@ -11814,10 +11813,10 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[43]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">raw</span><span class="p">[:</span><span class="mi">1200</span><span class="p">])</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">raw</span><span class="p">[:</span><span class="mi">200</span><span class="p">])</span>
 </pre></div>
 
 </div>
@@ -11840,103 +11839,7 @@ div#notebook {
 
 This eBook is for the use of anyone anywhere at no cost and with
 
-almost no restrictions whatsoever.  You may copy it, give it away or
-
-re-use it under the terms of the Project Gutenberg License included
-
-with this eBook or online at www.gutenberg.org
-
-
-
-
-
-Title: Great Expectations
-
-
-
-Author: Charles Dickens
-
-
-
-Posting Date: August 20, 2008 [EBook #1400]
-
-Release Date: July, 1998
-
-Last Updated: September 25, 2016
-
-
-
-Language: English
-
-
-
-Character set encoding: UTF-8
-
-
-
-*** START OF THIS PROJECT GUTENBERG EBOOK GREAT EXPECTATIONS ***
-
-
-
-
-
-
-
-
-
-Produced by An Anonymous Volunteer
-
-
-
-
-
-
-
-
-
-
-
-GREAT EXPECTATIONS
-
-
-
-[1867 Edition]
-
-
-
-by Charles Dickens
-
-
-
-
-
-[Project Gutenberg Editor’s Note: There is also another version of
-
-this work etext98/grexp10.txt scanned from a different edition]
-
-
-
-
-
-
-
-
-
-Chapter I
-
-
-
-My father’s family name being Pirrip, and my Christian name Philip, my
-
-infant tongue could make of both names nothing longer or more explicit
-
-than Pip. So, I called myself Pip, and came to be called Pip.
-
-
-
-I give Pirrip as my father’s family name, on the authority of his
-
-tombstone and my sister,--Mrs. Joe Gar
+almost no restrictions whatsoever.  You may copy it, give it
 </pre>
 </div>
 </div>
@@ -11949,20 +11852,17 @@ tombstone and my sister,--Mrs. Joe Gar
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The raw text begins and ends with a preamble from Project Gutenberg that we don't want to include in our analysis, so we'll remove it</p>
+<p>The raw text begins and ends with a preamble from Project Gutenberg that we don't want to include in our analysis, so we'll remove it. It also ends with some extra text which we won't include either.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[45]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">text</span> <span class="o">=</span> <span class="n">raw</span><span class="p">[</span><span class="mi">886</span><span class="p">:</span><span class="o">-</span><span class="mi">19150</span><span class="p">]</span> <span class="c1"># Jumping to where it actually starts</span>
-<span class="c1"># Let&#39;s clean out all the annoying line markings</span>
-<span class="c1">#text = text.replace(&#39;\r&#39;, &#39;&#39;)</span>
-<span class="c1">#text = text.replace(&#39;\n&#39;, &#39; &#39;)</span>
 <span class="c1"># Print the beginning to test</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">text</span><span class="p">[:</span><span class="mi">205</span><span class="p">])</span>
 </pre></div>
@@ -11998,14 +11898,14 @@ than Pip. So, I called myself Pip, and came to be called Pip.
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Now we'll use the Natural Langauge Toolkit (NLTK) to split the text into tokens for further analysis.</p>
+<p>That looks good. Now we'll use the Natural Langauge Toolkit (NLTK) to split the text into tokens for further analysis.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[47]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">tokens</span> <span class="o">=</span> <span class="n">nltk</span><span class="o">.</span><span class="n">word_tokenize</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
@@ -12018,7 +11918,7 @@ than Pip. So, I called myself Pip, and came to be called Pip.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[49]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">tokens</span><span class="p">[:</span><span class="mi">20</span><span class="p">])</span>
@@ -12051,23 +11951,14 @@ than Pip. So, I called myself Pip, and came to be called Pip.
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The tokens contain both punctuation and words. We'll want to separate the words out so we can analyze them. To do this, we'll create a mapping from the words to the tokens.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Now let's tag all the words with their parts of speech. NLTK has a part of speech tagger built in.</p>
+<p>Now let's tag all the tokens with their parts of speech. NLTK has a part of speech tagger built in.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[53]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Now we have to tag all the words</span>
@@ -12081,7 +11972,7 @@ than Pip. So, I called myself Pip, and came to be called Pip.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[56]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">tagged</span><span class="p">[:</span><span class="mi">20</span><span class="p">])</span>
@@ -12114,15 +12005,14 @@ than Pip. So, I called myself Pip, and came to be called Pip.
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>To see what the various tags mean, you can run nltk.help.upenn_tagset()
-Now that each word is tagged we can combine all the nouns into one list, verbs into another, etc.</p>
+<p>To see what the various tags mean, you can run <code>nltk.help.upenn_tagset()</code>. Now that each word is tagged we can combine all the nouns into one list, verbs into another, etc.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[59]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Note that IN can be either a preposition or a conjunction, for now we&#39;re going to list it with the prepositions</span>
@@ -12199,7 +12089,7 @@ Now that each word is tagged we can combine all the nouns into one list, verbs i
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[60]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># From the Part of Speech notebook:</span>
@@ -12228,7 +12118,7 @@ Now that each word is tagged we can combine all the nouns into one list, verbs i
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[61]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pos_plotter</span><span class="p">(</span><span class="n">parts_of_speech</span><span class="p">)</span>
