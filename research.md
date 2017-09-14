@@ -18,7 +18,7 @@ How is information represented in the *noisy* spatio-temporal pattern of neural 
 
 How can we verify a dynamic model of how the brain works?
 If we can build a feedback control system that can manipulate internal states, it will strongly support the dynamic model.
-Furthermore, robust feedback control can benefit treatment of many neurological diseases, for example, through deep brain stimulation.
+Furthermore, robust feedback control of neural states can benefit treatment of many neurological diseases such as epilepsy, Parkinson's, and coma.
 
 ## Machine learning, Statistics, and Signal Processing
 
