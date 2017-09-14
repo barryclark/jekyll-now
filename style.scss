@@ -165,7 +165,8 @@ img {
 
 .site-avatar {
   float: left;
-  max-height: 64px;
+  width: 119px;
+  height: 70px;
   margin-right: 15px;
 
   @include mobile {
