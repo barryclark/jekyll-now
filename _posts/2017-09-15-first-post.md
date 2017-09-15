@@ -130,7 +130,7 @@ So, we flip the kernel before we convolve. This is how he get the output feature
 
 ### PS
 
-I feel this is enough for one post. I'll continue CNNs in my next post where I'll write about Batch Normalization, max pooling etc. I'll save the forward propagation and backward pass for later. This can be overwhelming which is why I added the comments section. Please feel free to ask any questions that you have or to point out mistakes that I have made.
+I feel this is enough for one post. I'll continue CNNs in my next post where I'll write about Batch Normalization, max pooling etc. I'll save the forward propagation and backward pass for later. This can be overwhelming which is why I added the comments section. Please feel free to ask any questions that you have or to point out mistakes that I might have made.
 
 
 Written by [Siddhartha Rao Kamalakara](https://srk97.github.io) for activeAI.
