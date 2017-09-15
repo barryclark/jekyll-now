@@ -71,7 +71,7 @@ Come to one of our meetups in [Athens](http://www.meetup.com/BlockchainGreece-0/
 
 	![](/images/Page 8.png)
 
-Last update: 2017-08-26
+Last update: 2017-09-15
 
 <!-- <div class="posts">
   {% for post in site.posts %}

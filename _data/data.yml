@@ -54,6 +54,30 @@
   location_gr: Αθήνα, Αττική, Ελλάδα
   location_en: Athens, Attica, Greece
 
+- company_gr: Omega Gaming Center
+  company_en: Omega Gaming Center
+  url: http://www.ogamingcenter.com
+  category_gr: Ηλεκτρονικά παιχνίδια
+  category_en: Gaming center
+  location_gr: Άλιμος, Αττική, Ελλάδα
+  location_en: Alimos, Attica, Greece
+
+- company_gr: daskaloi.gr
+  company_en: daskaloi.gr
+  url: https://daskaloi.gr
+  category_gr: Εύρεση δασκάλων
+  category_en: Education masketplace
+  location_gr: Αθήνα, Αττική, Ελλάδα
+  location_en: Athens, Attica, Greece
+  
+- company_gr: Γιαμπουράνης και Γιαμπουράνης
+  company_en: Yampouranis and Yampouranis
+  url: http://coinmap.org/venue/10174
+  category_gr: Δικηγόροι
+  category_en: Lawyers
+  location_gr: Αθήνα, Αττική, Ελλάδα
+  location_en: Athens, Attica, Greece  
+
 - company_gr: Tic Tac
   company_en: Tic Tac
   url: https://tictac.gr
@@ -85,6 +109,14 @@
   category_en: Women's clothes
   location_gr: Αθήνα, Αττική, Ελλάδα
   location_en: Athens, Attica, Greece
+  
+- company_gr: Μικροβιολογικό Ιατρείο Πέγκλης Ευάγγελος
+  company_en: Clinical laboratory Pegklis Evangelos
+  url: http://www.μικροβιολογικο.gr/
+  category_gr: Μικροβιολογικό Ιατρείο
+  category_en: Clinical laboratory
+  location_gr: Καλύβια Θορικού, Αττική, Ελλάδα
+  location_en: Kalyvia Thorikou, Attica, Greece
 
 - company_gr: Priona Resort
   company_en: Priona Resort
@@ -171,6 +203,22 @@
   url: https://easy.gr
   category_gr: Τηλεφωνία, Internet domains και φιλοξενία ιστοσελίδων
   category_en: Telephony, Web hosting and domain provider
+  location_gr: Αθήνα, Αττική, Ελλάδα
+  location_en: Athens, Attica, Greece
+
+- company_gr: Digitech4all.eu
+  company_en: Digitech4all.eu
+  url: http://www.digitech4all.eu
+  category_gr: Κατάστημα υπολογιστών και κινητών
+  category_en: Computer and cellphone shop
+  location_gr: Αθήνα, Αττική, Ελλάδα
+  location_en: Athens, Attica, Greece
+
+- company_gr: Skytech
+  company_en: Skytech
+  url: http://www.skytechshop.gr
+  category_gr: Κατάστημα υπολογιστών
+  category_en: Computer shop
   location_gr: Αθήνα, Αττική, Ελλάδα
   location_en: Athens, Attica, Greece
 
@@ -341,6 +389,14 @@
   category_en: Restaurant
   location_gr: Αγία Μαρίνα, Χανιά, Κρήτη, Ηράκλειο, Ελλάδα
   location_en: Agia Marina, Chania, Crete, Greece
+
+- company_gr: KAOL Energy Solutions
+  company_en: KAOL Energy Solutions
+  url: http://www.kaolenergy.com/
+  category_gr: Ενεργειακά συστήματα
+  category_en: Energy systems
+  location_gr: Ζάκυνθος, Ελλάδα
+  location_en: Zante, Greece
 
 - company_gr: Φαρμακείο Κιμιωνή
   company_en: Kimioni Pharmacy
