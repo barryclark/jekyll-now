@@ -20,7 +20,7 @@ CNNs work amazingly well with grid-like data i.e Images(2D grids), Time series d
 
 ## Intuition
 
-This is the intuition that I formed when I was first introduced to CNNs. This is not technically sound, but it does the job of making you understand why CNNs work. Imagine that you are in a dark room and you've been given a torch :snake: . You've been told that there's text on the wall that you're supposed to read. Since the area covered by the light is limited, you start from corner of the wall and stride through it. With this, you get an idea of what's on the wall and you relate the present view to the words that you've seen in the past to form sentences. This is in the most abstract way, how a CNN works.
+This is the intuition that I formed when I was first introduced to CNNs. This is not technically sound, but it does the job of making you understand why CNNs work. Imagine that you are in a dark room and you've been given a torch [:snake:](https://pytorch.org) . You've been told that there's text on the wall that you're supposed to read. Since the area covered by the light is limited, you start from corner of the wall and stride through it. With this, you get an idea of what's on the wall and you relate the present view to the words that you've seen in the past to form sentences. This is in the most abstract way, how a CNN works.
 
 In a CNN, we have "filters" or "kernels" which is just a matrix of numbers. These filters stride through the image while performing operations on it. The output **feature maps** from the convolutions is a lower dimensional representation of the image that describes the input data well.
 
