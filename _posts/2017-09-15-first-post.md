@@ -142,3 +142,11 @@ Hey, I deserve to promote myself a bit  :stuck_out_tongue_winking_eye:
 
 Also, there's an easter egg in the post. Try to find it :smile:
 
+### References
+
+- Deep Learning by Ian Goodfellow, Yoshua Bengio, Aaron Courville
+
+- [Visualization source](https://github.com/vdumoulin/conv_arithmetic)
+
+
+
