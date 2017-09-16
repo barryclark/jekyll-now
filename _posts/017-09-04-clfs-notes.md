@@ -42,3 +42,7 @@ seems that the flag code LDFLAGS etc needs to entered as individual commands, bl
 
 ### 10.24
 sed -i -e '/test-bison/d' tests/Makefile.in is needed to prevent failures from bison test checks, because bison isn't installed yet.
+
+### 10.41
+
+after make NON_ROOT_USERNAME=nobody check-root one test fails, mount point a/b already traversed circular directory structure, appears to not be an issue, obscure
