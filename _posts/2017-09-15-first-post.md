@@ -125,7 +125,7 @@ $$
         \end{matrix}
 $$
 
-So, we flip the kernel before we convolve. This is how he get the output feature maps.
+So, we flip the kernel before we convolve. This is how we get the output feature maps.
 
 
 ### PS
