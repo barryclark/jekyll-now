@@ -8,13 +8,13 @@ name: activeAI
 # Short bio or description (displayed in the header)
 description: MIT Manipal's AI research community.
 
+theme: jekyll-theme-hydeout
+
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://raw.githubusercontent.com/active-ai/active-ai.github.io/master/images/active.jpg
 #
 # Flags below are optional
 #
-
-theme: hacker
 
 # Includes an icon in the footer for each username you enter
 footer-links:
