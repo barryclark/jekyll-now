@@ -26,7 +26,7 @@ layout: default
     {{ content }}
     <nav class="pagination">
       <a href="{{ page.postUrl }}{% unless page.page == 2 %}page{{ page.page | minus: 1 }}{% endunless %}">Previous</a>
-      <a href="{{ page.postUrl }}page{{ page.page | plus: 1 }}">Next</a>
+      {% unless page.page == page.pages %}<a href="{{ page.postUrl }}page{{ page.page | plus: 1 }}">Next</a>{% endunless %}
     </nav>
   </div>
   
