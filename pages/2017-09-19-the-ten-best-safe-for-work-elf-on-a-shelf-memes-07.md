@@ -2,7 +2,7 @@
 layout: post_pages
 title: Furby on a Kirby
 permalink: /the-ten-best-safe-for-work-elf-on-a-shelf-memes/page7/
-postUrl: /i-m-selling-t-shirts-on-amazon-now/
+postUrl: /the-ten-best-safe-for-work-elf-on-a-shelf-memes/
 page: 7
 pages: 10
 ---
