@@ -5,12 +5,9 @@ layout: default
 {% for post in site.posts %}{% if post.url == page.postUrl %}
 {{ post.url }}
 
-{% include facebook/view-content.html %}
 <article class="post">
   <h1 itemprop="headline" class="post-header">{% if post.facebook_post %}<i class="svg-icon facebook social_post"></i>{% elsif post.linkedin_post %}<i class="svg-icon linkedin social_post"></i>{% elsif post.tags contains 'family tree' %}<img src="/images/Family-Tree-icon-40.png" class="social_post" />{% elsif post.tags contains 'html5' %}<img src="/images/HTML5_Logo.svg" class="social_post" style="width: 40px; height: 40px;" />{% endif %}{{ post.title }}</h1>
   
-  {% include social/share.html %} 
-
   <hr />
   <div>
     <span itemprop="datePublished" content="{{ post.date | date: "%Y-%m-%d" }}" class="date">{{ post.date | date: "%B %e, %Y" }}</span>
@@ -26,15 +23,11 @@ layout: default
   <div itemprop="articleBody" class="entry{% if post.twitter_post %} twitter-post{% endif %}{% if post.facebook_post %} facebook-post{% endif %}">
     {{ content }}
   </div>
-
-  {% include social/comments.html %} 
   
 </article>
 
 <div class="my-amazon-ad">
   <script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&storeId=hendrixjoseph-20&adInstanceId=aea89b6a-ed7e-42a8-a49d-808769b988c9"></script>
 </div>
-
-{% include seealso.html %} 
 
 {% endif %}{% endfor %}
