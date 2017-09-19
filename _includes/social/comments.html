@@ -1,1 +1,1 @@
-{% unless page.facebook_post or page.linkedin_post %}<div class="fb-comments" data-href="{{ site.url }}{{ page.url }}" data-width="100%" data-numposts="5"></div>{% endunless %}
+{% unless page.facebook_post or page.linkedin_post %}<div class="fb-comments" data-href="{{ site.url }}{% if include.url %}{{ include.url }}{% else %}{{ page.url }}{% endif %}" data-width="100%" data-numposts="5"></div>{% endunless %}
