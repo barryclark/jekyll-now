@@ -29,7 +29,7 @@ javascripts: [/js/social.js, /js/seealso.js]
 
   <div itemprop="articleBody" class="entry{% if page.twitter_post %} twitter-post{% endif %}{% if page.facebook_post %} facebook-post{% endif %}">
     {{ content }}
-    <nav class="pagination"><a href="{{ page.url }}page2">Next</a></nav>
+    <nav class="pagination" style="font-size: 2em;"><a href="{{ page.url }}page2">Next</a></nav>
   </div>
 
   {% include social/comments.html %} 
