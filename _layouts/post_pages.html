@@ -24,7 +24,7 @@ layout: default
 
   <div itemprop="articleBody" class="entry{% if post.twitter_post %} twitter-post{% endif %}{% if post.facebook_post %} facebook-post{% endif %}">
     {{ content }}
-    <nav class="pagination">
+    <nav class="pagination" style="font-size: 2em;">
       <a href="{{ page.postUrl }}{% unless page.page == 2 %}page{{ page.page | minus: 1 }}{% endunless %}">Previous</a>
       {% unless page.page == page.pages %}<a href="{{ page.postUrl }}page{{ page.page | plus: 1 }}">Next</a>{% endunless %}
     </nav>
