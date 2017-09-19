@@ -2,7 +2,9 @@
 layout: default
 ---
 
-<a href="{{ page.postUrl }}">Page 1</a>{% for page in (2..page.pages) %}<a href="{{ page.postUrl }}page{{ page }}">Page {{ page }}</a>{% endfor %}
+<nav class="pagination">
+<a href="{{ page.postUrl }}">Page 1</a>{% for pageNumber in (2..page.pages) %}<a href="{{ page.postUrl }}page{{ pageNumber }}">Page {{ pageNumber }}</a>{% endfor %}
+</nav>
 
 {% for post in site.posts %}{% if post.url == page.postUrl %}
 <article class="post">
