@@ -2,9 +2,9 @@
 layout: default
 ---
 
-{% for post in site.posts %}{% if post.url == page.postUrl %}
-{{ post.url }}
+<a href="{{ page.postUrl }}">Page 1</a>{% for page in (2..page.pages) %}<a href="{{ page.postUrl }}page{{ page }}">Page {{ page }}</a>{% endfor %}
 
+{% for post in site.posts %}{% if post.url == page.postUrl %}
 <article class="post">
   <h1 itemprop="headline" class="post-header">{% if post.facebook_post %}<i class="svg-icon facebook social_post"></i>{% elsif post.linkedin_post %}<i class="svg-icon linkedin social_post"></i>{% elsif post.tags contains 'family tree' %}<img src="/images/Family-Tree-icon-40.png" class="social_post" />{% elsif post.tags contains 'html5' %}<img src="/images/HTML5_Logo.svg" class="social_post" style="width: 40px; height: 40px;" />{% endif %}{{ post.title }}</h1>
   
