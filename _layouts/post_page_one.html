@@ -1,0 +1,42 @@
+---
+layout: default
+isPost: true
+jquery: true
+javascripts: [/js/social.js, /js/seealso.js]
+---
+
+<nav class="pagination">
+<a href="{{ page.url }}">Page 1</a>{% for pageNumber in (2..page.pages) %}<a href="{{ page.url }}page{{ pageNumber }}">Page {{ pageNumber }}</a>{% endfor %}
+</nav>
+
+{% include facebook/view-content.html %}
+<article class="post">
+  <h1 itemprop="headline" class="post-header">{% if page.facebook_post %}<i class="svg-icon facebook social_post"></i>{% elsif page.linkedin_post %}<i class="svg-icon linkedin social_post"></i>{% elsif page.tags contains 'family tree' %}<img src="/images/Family-Tree-icon-40.png" class="social_post" />{% elsif page.tags contains 'html5' %}<img src="/images/HTML5_Logo.svg" class="social_post" style="width: 40px; height: 40px;" />{% endif %}{{ page.title }}</h1>
+  
+  {% include social/share.html %} 
+
+  <hr />
+  <div>
+    <span itemprop="datePublished" content="{{ page.date | date: "%Y-%m-%d" }}" class="date">{{ page.date | date: "%B %e, %Y" }}</span>
+    <meta itemprop="dateModified" content="{% if post.updated %}{{ post.updated }}{% else %}{{ post.date | date: "%Y-%m-%d" }}{% endif %}" />
+    <nav class="tags">
+      {% assign tags = page.tags | sort %}{% for tag in tags %}<a href="/tags/{{ tag | replace:' ','_' }}/">{{ tag }}</a>{% unless forloop.last %}|{% endunless %}{% endfor %}
+    </nav>
+  </div>
+  <hr />
+  
+  {% include affiliate-disclosure.html %}
+
+  <div itemprop="articleBody" class="entry{% if page.twitter_post %} twitter-post{% endif %}{% if page.facebook_post %} facebook-post{% endif %}">
+    {{ content }}
+  </div>
+
+  {% include social/comments.html %} 
+  
+</article>
+
+<div class="my-amazon-ad">
+  <script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&storeId=hendrixjoseph-20&adInstanceId=aea89b6a-ed7e-42a8-a49d-808769b988c9"></script>
+</div>
+
+{% include seealso.html %} 
