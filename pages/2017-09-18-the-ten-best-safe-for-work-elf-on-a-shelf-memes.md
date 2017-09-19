@@ -1,5 +1,5 @@
 ---
-layout: post-pages
+layout: post_pages
 title: About
 customUrl: the-ten-best-safe-for-work-elf-on-a-shelf-memes
 page: 2
