@@ -2,7 +2,7 @@
 layout: post_pages
 title: Wizzard on a Blizzard
 permalink: /the-ten-best-safe-for-work-elf-on-a-shelf-memes/page10/
-postUrl: /i-m-selling-t-shirts-on-amazon-now/
+postUrl: /the-ten-best-safe-for-work-elf-on-a-shelf-memes/
 page: 10
 pages: 10
 ---
