@@ -2,7 +2,7 @@
 layout: post_pages
 title: Peach on a Beach
 permalink: /the-ten-best-safe-for-work-elf-on-a-shelf-memes/page6/
-postUrl: /i-m-selling-t-shirts-on-amazon-now/
+postUrl: /the-ten-best-safe-for-work-elf-on-a-shelf-memes/
 page: 6
 pages: 10
 ---
