@@ -2,4 +2,4 @@
 layout: default
 ---
 
-{{ site.posts }}
+{% for post in site.posts %}{{ post.url }}<br />{% endfor %}
