@@ -2,4 +2,9 @@
 layout: default
 ---
 
-{% for post in site.posts %}{{ post.url }}<br />{% endfor %}
+{% for post in site.posts %}{% if post.url == page.postUrl %}
+{{ post.url }}
+
+{{ content }}
+
+{% endif %}{% endfor %}
