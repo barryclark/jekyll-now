@@ -4,12 +4,8 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+My name is August Warren and I commit to the master branch more that I probably should.
 
-### More Information
+### Contact?
 
-A place to include any other types of information that you'd like to include about yourself.
-
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+[augustjwarren@gmail.com](mailto:augustjwarren@gmail.com)
