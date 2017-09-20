@@ -50,5 +50,6 @@ I recently started to learn ASP.NET Core WebAPI, the very basic skill is to have
 
 ### Enable Windows Authentication
 
-Make sure you disabled the anonymous Authentication when you want to use Windows Authentication
+Note: Make sure you disabled the anonymous Authentication when you want to use Windows Authentication
+
     ![host-apppool](https://huangzhenhong.github.io/images/webapi/iis-windowsAuth.png)
