@@ -1,93 +1,163 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>
-		Jesse Stern
-	</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+<html lang="en">
 
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Jesse Stern - Web Developer</title>
+  <!-- Latest compiled and minified CSS & JS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <script src="//code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"/>
+  <link href="assets/css/style.css" rel="stylesheet">
 
 </head>
-<body>
 
-	<!-- navbar -->
-	<nav class="navbar navbar-default ">
-		<div class="container">
-			
-			<!-- Brand and toggle get grouped for better mobile display -->
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="index.html">Jesse Stern</a>
-			</div>
+<body id="page-top" data-spy="scroll" data-target=".navbar">
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#headshot">Jesse Stern</a>
+      </div>
 
-			<!-- Collect the nav links, forms, and other content for toggling -->
-			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#portfolio">Portfolio</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div>
+  </nav>
 
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="index.html">About Me</a></li>
-					<li><a href="portfolio.html">Portfolio</a></li>
-					<li><a href="contact.html">Contact</a></li>
-				</ul>
-			</div><!-- /.navbar-collapse -->
-			
-		</div>
-	</nav>
+  <header class="bg-primary text-white">
+    <div id ="about" class="container text-center">
+      <div class = "landingText">
+        <img src = "./assets/images/myimg.jpg" class = "headshotPic">
+        <h2>Hi, I'm Jesse!</h2>
+        <p class="lead"><em>I am a developer that has a passion for building new and exciting products using JavaScript and the MERN stack. I love solving problems and working in small groups, skills that I gained along with patience and discipline during many years of studying and playing music.</em>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <section class="bg-light">
+    <div id="portfolio" class="container">
+      <h1>Portfolio</h1>
+      <div class="row">
+        <div class="col-md-6">
+          <figure class="gallery-item">
+            <a href="https://sternj20.github.io/ragabook/" target="_blank">
+              <img src = "assets/images/projects/raagbook92217.png" class="portfolioImg img-responsive">
+              <figcaption class="img-title">
+                <h5>An app to notate Indian Classical Music compositions</h5>
+              </figcaption>
+            </a>
+          </figure>
+        </div>
+
+        <div class="col-md-6">
+          <figure class="gallery-item">
+            <a href="https://sternj20.github.io/foodtrucker" target="_blank">
+              <img src = "assets/images/projects/foodtrucker.jpg" class="portfolioImg img-responsive">
+              <figcaption class="img-title">
+                <h5>Locates food trucks that are currently open in San Francisco</h5>
+              </figcaption>
+            </a>
+          </figure>
+        </div>
+
+        <div class="col-md-6">
+          <figure class="gallery-item">
+            <a href="https://sternj20.github.io/foodtrucker" target="_blank">
+              <img src = "assets/images/projects/hangman.jpg" class="portfolioImg img-responsive">
+              <figcaption class="img-title">
+                <h5>Classic hangman game with a jazzy twist</h5>
+              </figcaption>
+            </a>
+          </figure>
+        </div>
+
+        <div class="col-md-6">
+          <figure class="gallery-item">
+            <a href="https://nprscrape.herokuapp.com/" target="_blank">
+              <img src = "assets/images/projects/nprscraper.jpg" class="portfolioImg img-responsive">
+              <figcaption class="img-title">
+                <h5>App that scrapes news from NPR, can save and comment on articles</h5>
+              </figcaption>
+            </a>
+          </figure>
+        </div>
+      </section>
+
+      <!-- contact section -->
+      <section class = "bg-light">
+        <div id="contact" class ="container">
+          <div class="row">
+            <div class="col-md-12 content">
+              <div class="page-header">
+                <h1>Contact me</h1>
+              </div>
+              <form>
+                <div class="form-group">
+                  <label for="exampleName">Name</label>
+                  <input type="name" class="form-control" id="exampleName" placeholder="John Smith">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="example@gmail.com">
+                </div>
+                <div class="form-group">
+                  <label for="exampleTextarea">Message</label>
+                  <textarea class="form-control" id="exampleTextarea" rows="9"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div> <!-- col md8 -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="py-5 bg-dark">
+        <div class="container">
+          <div class = "row">
+            <div class = "col-md-12 icons">
+              <p class="m-0 text-center text-white">Copyright &copy; Jesse Stern 2017</p>
+            </div>
+          </div>
+          <div class="container text-center">
+            <a href="https://github.com/sternj20"><i class="fa fa-github fa-3x"></i></a>
+            <a href="https://twitter.com/jessesternmusic"><i class="fa fa-twitter fa-3x"></i></a>
+            <a href="https://www.linkedin.com/in/jesse-stern/"><i class=" fa fa-linkedin fa-3x"></i></a>
+            <a href="https://stackoverflow.com/users/7561041/sternj20"><i class=" fa fa-stack-overflow fa-3x"></i></a>
+          </div>
+        </div>
+      </div>
 
 
-	<!-- about me section -->
-	<div class ="container">
-		<div class="row">
-			<div class="col-md-8 content">
-				<div class="page-header">
-					<h1>About me</h1>
-				</div>
-				<div class="row">
-					<div class="col-md-3">
-						<img src="assets/images/myimg.jpg" class="thumbnail" width="150px" height="150px">
-					</div>
-					<div class="col-md-9 "><p>My name is Jesse Stern. I am really excited about learning web development. I come from a music background and have been playing and studying music for over ten years. I moved to Marin County, California from Oregon about 3 years ago to study Classical Indian Music at the Ali Akbar College of Music in San Rafael.</p>
+      <script src="assets/js/scrolling-nav.js"></script>
 
-					</p>I love to learn new things and I am loving learning how to code! Sometimes I try to be a vegan, and do healthy things like yoga and running. You might also catch me binging on pretzels and watching Netflix until I turn into a zombie. I think this class is a productive use of my time.</p>
-				</div> <!-- col md9 -->
-			</div> <!-- row -->
-		</div> <!-- col md8 -->
+    </body>
 
-
-		<!-- sidebar -->
-		<div class="col-md-3 col-md-offset-1 content">
-			<div class="panel panel-default">
-				<div class="panel-heading">
-					<h3>Connect with me
-					</h3>
-				</div>
-				<div class="panel-body">
-					<a href ="https://github.com/sternj20" target="_blank"><img class ="icons" src="assets/images/github.jpg"></a>
-					<a href ="https://www.linkedin.com/in/jesse-stern-07027630/" target="_blank"><img class = "icons" src="assets/images/linkedin.png"></a>
-					<a href ="https://twitter.com/jessesternmusic" target="_blank"><img class = "icons" src="assets/images/twitter.png"></a>
-					<a href ="https://stackoverflow.com/users/7561041/sternj20" target="_blank"><img class="icons" src ="assets/images/so-icon.png"></a>
-				</div>
-			</div>
-		</div>
-	</div> <!-- container -->
-
-	<div class = "navbar navbar-default navbar-fixed-bottom">
-		<div class ="container">
-			<p class = "navbar-text">&copy; Copyright 2017 Jesse Stern</p>
-		</div>
-	</div>
-
-	<!-- bootstrap javascript -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
-
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-</body>
-</html
+    </html>

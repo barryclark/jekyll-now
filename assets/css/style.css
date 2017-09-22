@@ -1,4 +1,16 @@
+.headshotPic{
+	width:200px;
+	height:200px;
+	border-radius: 50%;
+}
+
+.landingText{
+	position:relative;
+	top:100px;
+}
+
 body{
+	position:relative;
 	background-image: url("../images/seigaiha.png");
 	color: #777777;
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
@@ -10,6 +22,7 @@ body{
 .content, .panel-default>.panel-heading, .navbar{
 	background:#fff;
 }
+
 h1, h2, h3{
 	color: #4aaaa5;
 	margin-bottom:25px;
@@ -26,75 +39,21 @@ h3{
 	font-size:20px;
 }
 
-/*navbar*/
-.navbar-brand, .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand{
-	background: #4aaaa5;
-	color: #fff;
-	font-family: Georgia, Times, "Times New Roman", serif;
-	font-size: 30px;
-	font-weight: 700;
-	padding:45px;
-	border-bottom: 2px solid #cccccc;
-}
-.navbar-default .navbar-nav>li{
-	margin-top:35px;
-}
-.navbar-default .navbar-nav>li>a{
-	padding: 0 8px;
-	margin-right:10px;
-	border-left: 1px solid #efefef;
-}
-.navbar-default.navbar-nav>li>a: first-child {
-  border-left: 0 none;
-}
-/*about me*/
-.thumbnail{
-	float:left;
-	margin-right:20px;
-	padding:0px;
-}
 .content{
-	position:static;
-	border: 1px solid #ddd
-}
-
-/*portfolio*/
-.examples{
-	position:relative;
-	display:inline-block;
-}
-
-.exampleNames{
-	position: relative;
-    bottom: 64px;
-    height: 50px;
-    width: 100%;
-    background: #00aba0;
-    text-align: center;
-    padding-top: 15px;
-    color: white;
-    font-size: 20px;
-    font-family:'Georgia', Times, Times New Roman, serif;
-}
-
-/*sidebar*/
-.panel{
-	border:0px;
-	text-align:center;
-}
-.icons{
-	width:40px;
-	height:40px;
+	margin:30px 0;
 }
 
 /*footer*/
+
+.fa{
+	margin-left:20px;
+}
 .navbar-fixed-bottom{
 	padding: 10px;
 	text-align: center;
 	background: #666666;
 	border-top: 5px solid #4aaaa5;
 
-	
 }
 .navbar-default .navbar-text{
 	font-size:16px;
@@ -103,8 +62,73 @@ h3{
 	color: #D3D3D3;
 }
 
-@media only screen and (max-width:640px){
-	.navbar-fixed-bottom{
-		position:static; 
-	}
+header .container {
+	padding-top: 100px;
+	padding-bottom: 250px;
 }
+
+.navbar-custom {
+	background: #2C3E50;
+	font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-transform: uppercase;
+	font-weight: 700;
+	border: none;
+}
+
+.portfolioImg{
+	width:100%;
+	height:300px;
+	margin-top:50px;
+}
+
+.portfolioTitle{
+	position:absolute;
+}
+
+/* Uncomment everything commented to CSS for the hide/show */
+
+.gallery {
+    width: 25em;
+    margin: 2em auto;
+}
+
+.gallery-item {
+    height: auto;
+    float: left;
+    margin-bottom: 2em;
+    position: relative;
+}
+
+    .gallery-item:first-child {
+        margin-right: 2.762430939%;
+    }
+
+.gallery-item img {
+    width: 100%;
+}
+
+.gallery-item:hover .img-title {
+    /*opacity: 1;*/
+}
+
+.img-title {
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    padding-top:10px;
+    height: 25%;
+    width: 100%;
+    text-align: center;
+    /*opacity: 0;*/
+    display: none; /* comment this out for CSS hover */
+    background-color: #333;
+    /*transition: all 0.5s ease;*/
+}
+
+    .img-title h5 {
+        position: absolute;
+        color: #fff;
+        top: 33%;
+        width: 100%;
+        text-align: center;
+    }
