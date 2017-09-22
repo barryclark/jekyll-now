@@ -2,11 +2,17 @@
 layout: default
 ---
 
+<div class="posts">
+  {% for post in site.posts %}
+    <article class="post">
 
-{% for post in site.posts %}
-<h3 class="title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
-<span class="label label-theme">{{ post.date | date: "%b %-d, %Y" }}</span>
-{% endfor %}
-</ul>
+      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+      <span style="color:#5cbf2a;font-size:80%">{{ post.date | date: "%B %e, %Y" }}</span>
 
-<p class="rss-subscribe"><i class="fa fa-external-link"></i> subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+      <div class="entry">
+        {{ post.excerpt }}
+      </div>
+<a href="{{ site.baseurl }}{{ post.url }}" class="myButton">Read More</a>
+    </article>
+  {% endfor %}
+</div>
