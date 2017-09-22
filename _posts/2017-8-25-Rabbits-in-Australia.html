@@ -11775,14 +11775,24 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Australia tried to used the deadly myxomatosis virus to control the invasive rabbit population. This notebook examines what happened and how immunity can grow in a population.</p>
+<p>The history of rabbits in Australia provides an interesting and cautionary tale. Rabbits were first introduced into Australia by the first European settlement in 1788 - the penal colony in Botany Bay. The early settlers brought five rabbits with them to Australia. They were allowed to breed and kept for food but never released into the wild. More rabbits subsequently arrived as settlements dotted the Australian landscape. They spread around Tasmania (then known as Van Diemen’s Land) but they were mostly controlled in the mainland and didn’t spread into the wild.
+The settlers were able to keep the rabbit population in captivity and under control for over half a century, until one thing happened - they got bored. They wanted to hunt rabbits like they did in England and so, in 1859, they released 24 rabbits into the wild. From there the population grew, like, well, rabbits.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Rabbits have a gestation period of about four weeks, and each new litter of rabbits contains four baby bunnies. So if it takes two rabbits four weeks to make four baby rabbits, that’s a growth rate of about .5 rabbits per week for each rabbit. However, rabbits take about 17 weeks to reach sexual maturity and in the wild live only around one year, so they're only breeding about a third of their lives. We'll make their grow rate .333 to account for the period when they are sexually immature. Still, that’s an incredible growth rate and with the vastness of the Australian open landscape in front of them, the population grew.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="prompt input_prompt">In&nbsp;[53]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -11794,27 +11804,24 @@ div#notebook {
 </div>
 
 </div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
 <div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#start with just a few rabbits; initial was 24?</span>
-<span class="n">max_population</span> <span class="o">=</span> <span class="mi">600000000</span> <span class="c1">#six hundred million in reality; this is known as the carrying capacity</span>
-</pre></div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Here’s a simulation of what the rabbit population would have looked like after a year.</p>
 
 </div>
 </div>
 </div>
-
-</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[55]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Two rabbits can make four rabbits every 4 weeks. Thus the growth rate is 4babys /2parents /4weeks = .5</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Rabbit facts</span>
+<span class="c1"># Two rabbits can make four rabbits every 4 weeks. Thus the growth rate is 4babys /2parents /4weeks = .5</span>
 <span class="n">growth_rate</span> <span class="o">=</span> <span class="o">.</span><span class="mi">5</span> <span class="c1">#increases by 20% each generation # this is the growth rate per week</span>
+<span class="n">time_to_sexual_maturity</span> <span class="o">=</span> <span class="mi">17</span> <span class="c1">#weeks</span>
 </pre></div>
 
 </div>
@@ -11826,32 +11833,58 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Now we'll encode some basic facts about rabbits and myxomatosis. We'll also throw in some assumptions as well. 
-Facts:
-Rabbits die within two weeks of contracting myxomatosis.
-Rabbits reach sexual maturity after 17 weeks.</p>
-<p>Assumptions:
-Rabbits are close enough to 10 other rabbits each day to spread the infection.
-A rabbit exposed to a rabbit with myxomatosis has a 20% chance of contracting the virus.</p>
+<p>Australia tried to used the deadly myxomatosis virus to control the invasive rabbit population. This notebook examines what happened and how immunity can grow in a population. To do this, we'll build a function for population growth.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The standard way is to combine all the factors of life and death into one term called the growth factor, then say that they change in population over time is equal to the population times the growth factor:</p>
+$$dP/dt = P*r$$<p>which we can integrate to give us the standard equation for exponential growth:</p>
+$$P(t) = P_oe^{rt}$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>However, this doesn't allow us enough precision. For example, rabbits don't reach sexual maturity until 17 weeks - how do we factor that in? We could find the average amount of their lifespan that rabbits spend as sexually mature and factor that into the growth rate, but we'll need more precision that</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>One important component that is missing is the carrying capacity - how many rabbits can there be until the land cannot hold them all? We'll use the following equation to factor that in:
+sexually mature population at time 0
+$$P_t =P_m * r_{grow} * (1 - P_{tot}/K)$$</p>
+<ul>
+<li>$P_t$ - population this week</li>
+<li>$r_{grow}$ - growth rate</li>
+<li>$P_m$ - sexually mature population from previous week</li>
+<li>$P_{tot}$ - total population from the previous week</li>
+<li>$K$ - carrying capacity</li>
+</ul>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[56]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Rabbit facts</span>
-<span class="c1">#</span>
-<span class="n">myxo_time_to_death</span> <span class="o">=</span> <span class="mi">2</span> <span class="c1">#weeks</span>
-<span class="n">time_to_sexual_maturity</span> <span class="o">=</span> <span class="mi">17</span> <span class="c1">#weeks</span>
-<span class="c1">#from internet: rabbits are receptive to mating about 14 of every 16 days</span>
-<span class="n">connections_per_day</span> <span class="o">=</span> <span class="mi">10</span> <span class="c1">#include those that are close enough to be bit by same mosquito</span>
-<span class="n">chance_of_being_infected</span> <span class="o">=</span> <span class="o">.</span><span class="mi">2</span>
-<span class="n">week_myxo_released</span> <span class="o">=</span> <span class="mi">520</span>
-<span class="n">num_myxo_released</span> <span class="o">=</span> <span class="mi">5000</span>
-<span class="c1">#where is length of live factored in?</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">population_growth</span><span class="p">(</span><span class="n">sex_mature_pop</span><span class="p">,</span> <span class="n">total_pop</span><span class="p">,</span> <span class="n">growth_rate</span> <span class="o">=.</span><span class="mi">5</span><span class="p">,</span> <span class="n">carrying_capacity</span><span class="o">=</span><span class="mi">600000000</span><span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    Yields the number of new members of a population (not the new total)</span>
+<span class="sd">    &#39;&#39;&#39;</span>
+    <span class="k">return</span> <span class="nb">round</span><span class="p">(</span><span class="n">sex_mature_pop</span> <span class="o">*</span> <span class="n">growth_rate</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="p">(</span><span class="n">total_pop</span><span class="o">/</span><span class="n">carrying_capacity</span><span class="p">)))</span>
 </pre></div>
 
 </div>
@@ -11861,17 +11894,11 @@ A rabbit exposed to a rabbit with myxomatosis has a 20% chance of contracting th
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[57]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">spread_myxo</span><span class="p">(</span><span class="n">infected</span><span class="p">,</span> <span class="n">resistant</span><span class="p">,</span> <span class="n">total</span><span class="p">):</span> <span class="c1">#infected is the number of infected rabbits, total is the total population</span>
-    <span class="n">susceptible</span> <span class="o">=</span> <span class="n">total</span> <span class="o">-</span> <span class="n">resistant</span> <span class="o">-</span> <span class="n">infected</span>
-    <span class="n">susceptible_percentage</span> <span class="o">=</span> <span class="n">susceptible</span> <span class="o">/</span> <span class="n">total</span>
-    <span class="c1">#print(susceptible_percentage)</span>
-    <span class="n">new_infections</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="n">infected</span> <span class="o">*</span> <span class="n">connections_per_day</span> <span class="o">*</span> <span class="n">chance_of_being_infected</span> <span class="o">*</span> <span class="n">susceptible_percentage</span><span class="p">)</span>
-    <span class="c1">#print(&quot;infected: {}&quot;.format(infected))</span>
-    <span class="c1">#print(&quot;susceptible: {}&quot;.format(susceptible))</span>
-    <span class="k">return</span> <span class="n">new_infections</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># But 24 rabbits started at a variety of ages!</span>
+<span class="c1"># Create inital population as uniform distribution between 0 and 52 weeks?</span>
 </pre></div>
 
 </div>
@@ -11881,14 +11908,29 @@ A rabbit exposed to a rabbit with myxomatosis has a 20% chance of contracting th
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[58]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&#39;&#39;&#39;#Determine if myxo resistance is spread by one or both parents!!</span>
-<span class="sd">def births(population, myxo_resistance):</span>
-<span class="sd">    births = round(population * growth_rate)</span>
-<span class="sd">    new_myxo_resistance = round(births * (myxo_resistance/population)) #births times to fraction of population that is resistant</span>
-<span class="sd">    return (births, new_myxo_resistance)&#39;&#39;&#39;</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Let&#39;s see what happens with unrestricted rabbit population growth</span>
+<span class="n">num_iterations</span> <span class="o">=</span> <span class="mi">52</span> <span class="c1"># weeks</span>
+<span class="n">rabbit_population</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">num_iterations</span><span class="p">)</span>
+<span class="n">rabbit_population</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">24</span>
+
+<span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">num_iterations</span><span class="p">):</span>
+    
+    <span class="k">if</span> <span class="n">x</span><span class="o">&lt;</span><span class="mi">17</span><span class="p">:</span> <span class="c1">#If it&#39;s under 17 weeks then the only sexually mature rabbits are the 24 that started</span>
+        <span class="n">new_pop</span> <span class="o">=</span> <span class="n">population_growth</span><span class="p">(</span><span class="mi">24</span><span class="p">,</span> <span class="n">rabbit_population</span><span class="p">[</span><span class="n">x</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">new_pop</span> <span class="o">=</span> <span class="n">population_growth</span><span class="p">(</span><span class="n">rabbit_population</span><span class="p">[</span><span class="n">x</span><span class="o">-</span><span class="n">time_to_sexual_maturity</span><span class="p">],</span> <span class="n">rabbit_population</span><span class="p">[</span><span class="n">x</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+    <span class="n">rabbit_population</span><span class="p">[</span><span class="n">x</span><span class="p">]</span> <span class="o">=</span> <span class="n">rabbit_population</span><span class="p">[</span><span class="n">x</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">new_pop</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">num_iterations</span><span class="p">)</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">fill_between</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">rabbit_population</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;g&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&quot;Rabbit growth in Australia&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;Weeks after first rabbits introduced&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;Number of rabbits&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 
 </div>
@@ -11901,13 +11943,233 @@ A rabbit exposed to a rabbit with myxomatosis has a 20% chance of contracting th
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[6]:</div>
+<div class="prompt"></div>
 
 
 
 
-<div class="output_text output_subarea output_execute_result">
-<pre>&#39;#Determine if myxo resistance is spread by one or both parents!!\ndef births(population, myxo_resistance):\n    births = round(population * growth_rate)\n    new_myxo_resistance = round(births * (myxo_resistance/population)) #births times to fraction of population that is resistant\n    return (births, new_myxo_resistance)&#39;</pre>
+<div class="output_png output_subarea ">
+<img src="data:image/png;base64,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
+"
+>
 </div>
 
 </div>
@@ -11915,80 +12177,323 @@ A rabbit exposed to a rabbit with myxomatosis has a 20% chance of contracting th
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>7000 rabbits. That’s a lot, but it’s manageable. But herein lies the problem with exponential growth. If you start with 24 rabbits, you’ll have around 7000 within a year. But after another year you have:</p>
+
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[59]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Pure population growth</span>
-<span class="k">def</span> <span class="nf">pop_grow</span><span class="p">(</span><span class="n">population</span><span class="p">,</span> <span class="n">sex_mature_pop</span><span class="p">):</span> <span class="c1"># this is from one week to the next #this should be population sexually mature</span>
-    <span class="n">new</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="n">growth_rate</span><span class="o">*</span><span class="n">sex_mature_pop</span><span class="o">*</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">population</span><span class="o">/</span><span class="n">max_population</span><span class="p">))</span>
-    <span class="c1">#print(new)</span>
-    <span class="k">return</span> <span class="n">new</span> 
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Let&#39;s see how long it takes to reach a saturation point.</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Let&#39;s see what would happen if the population grew without the disease</span>
-<span class="n">num_iterations</span> <span class="o">=</span> <span class="mi">208</span> <span class="c1"># weeks</span>
-<span class="n">rabbit_population</span><span class="p">,</span> <span class="n">infected</span><span class="p">,</span> <span class="n">myxomatosis_resistant</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">num_iterations</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">num_iterations</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">num_iterations</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Let&#39;s run the simulation for two years</span>
+<span class="n">num_iterations</span> <span class="o">=</span> <span class="mi">104</span> <span class="c1"># weeks</span>
+<span class="n">rabbit_population</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">num_iterations</span><span class="p">)</span>
 <span class="n">rabbit_population</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">24</span>
+
 <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">num_iterations</span><span class="p">):</span>
     
     <span class="k">if</span> <span class="n">x</span><span class="o">&lt;</span><span class="mi">17</span><span class="p">:</span> <span class="c1">#If it&#39;s under 17 weeks then the only sexually mature rabbits are the 24 that started</span>
-        <span class="n">pop</span> <span class="o">=</span> <span class="n">pop_grow</span><span class="p">(</span><span class="n">rabbit_population</span><span class="p">[</span><span class="n">x</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="mi">24</span><span class="p">)</span>
+        <span class="n">new_pop</span> <span class="o">=</span> <span class="n">population_growth</span><span class="p">(</span><span class="mi">24</span><span class="p">,</span> <span class="n">rabbit_population</span><span class="p">[</span><span class="n">x</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
     <span class="k">else</span><span class="p">:</span>
-        <span class="n">pop</span> <span class="o">=</span> <span class="n">pop_grow</span><span class="p">(</span><span class="n">rabbit_population</span><span class="p">[</span><span class="n">x</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">rabbit_population</span><span class="p">[</span><span class="n">x</span><span class="o">-</span><span class="n">time_to_sexual_maturity</span><span class="p">])</span>
-    <span class="n">rabbit_population</span><span class="p">[</span><span class="n">x</span><span class="p">]</span> <span class="o">=</span> <span class="n">rabbit_population</span><span class="p">[</span><span class="n">x</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">pop</span>
+        <span class="n">new_pop</span> <span class="o">=</span> <span class="n">population_growth</span><span class="p">(</span><span class="n">rabbit_population</span><span class="p">[</span><span class="n">x</span><span class="o">-</span><span class="n">time_to_sexual_maturity</span><span class="p">],</span> <span class="n">rabbit_population</span><span class="p">[</span><span class="n">x</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+    <span class="n">rabbit_population</span><span class="p">[</span><span class="n">x</span><span class="p">]</span> <span class="o">=</span> <span class="n">rabbit_population</span><span class="p">[</span><span class="n">x</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">new_pop</span>
 
+<span class="n">current_week</span> <span class="o">+=</span> <span class="n">num_iterations</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">num_iterations</span><span class="p">)</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">fill_between</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">rabbit_population</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;g&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&quot;Rabbit growth in Australia&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;Weeks after first rabbits introduced&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;Number of rabbits&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+
+<div class="output_png output_subarea ">
+<img src="data:image/png;base64,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
+"
+>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Over a million rabbits! It’s a classic example of unintended consequences. And given the size of Australia, the limit to the number of rabbits is huge. Based on population estimates, the maximum population for rabbits in a huge country like Australia is around 600 million (remember, the human population is only 24 million). Based on the exponential growth of rabbits, they would go from 24 to 600 million in only four years. Due to the additional time it would take to spread proportionally throughout the country, it probably took a bit longer than that. Either way, it was the fastest spread ever recorded of any mammal anywhere in the world. After the population hits 600 million they (roughly) reach the carrying capacity of Australia.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[60]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Let&#39;s run the simulation for two years</span>
+<span class="n">num_iterations</span> <span class="o">=</span> <span class="mi">208</span> <span class="c1"># weeks</span>
+<span class="n">rabbit_population</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">num_iterations</span><span class="p">)</span>
+<span class="n">rabbit_population</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">24</span>
+
+<span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">num_iterations</span><span class="p">):</span>
+    
+    <span class="k">if</span> <span class="n">x</span><span class="o">&lt;</span><span class="mi">17</span><span class="p">:</span> <span class="c1">#If it&#39;s under 17 weeks then the only sexually mature rabbits are the 24 that started</span>
+        <span class="n">new_pop</span> <span class="o">=</span> <span class="n">population_growth</span><span class="p">(</span><span class="mi">24</span><span class="p">,</span> <span class="n">rabbit_population</span><span class="p">[</span><span class="n">x</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">new_pop</span> <span class="o">=</span> <span class="n">population_growth</span><span class="p">(</span><span class="n">rabbit_population</span><span class="p">[</span><span class="n">x</span><span class="o">-</span><span class="n">time_to_sexual_maturity</span><span class="p">],</span> <span class="n">rabbit_population</span><span class="p">[</span><span class="n">x</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+    <span class="n">rabbit_population</span><span class="p">[</span><span class="n">x</span><span class="p">]</span> <span class="o">=</span> <span class="n">rabbit_population</span><span class="p">[</span><span class="n">x</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">new_pop</span>
+
+<span class="n">current_week</span> <span class="o">+=</span> <span class="n">num_iterations</span>
 <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">num_iterations</span><span class="p">)</span>
 <span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">fill_between</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">rabbit_population</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;g&#39;</span><span class="p">)</span>
@@ -12202,14 +12707,24 @@ M7Ma4YRvZlYjnPDNzGqEE76ZWY1wwjczqxH/H7x+5JNjzvDlAAAAAElFTkSuQmCC
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Obviously, 600 million additional animals competing with native wildlife for food and water has a devastating impact. The vast amount of plant life they consume not only decimates the native plant life, but that in turn causes erosion, which leads to nutrient-poor soil, thus increasing the damage. It wasn’t long before the Australian government determined that rabbits were causing significant economic damage. In 1887 the government of New South Wales started soliciting methods for removing them.</p>
+<p>The most obvious method - hunt them, isn’t actually very effective. There were efforts to shoot, trap, and poison them. The efforts were expensive, but ultimately had little impact against the robust rabbit population. To get an idea of the futility, imagine launching a tremendous rabbit hunting, trapping, and poisoning campaign that is so incredible effective that it causes the death of 50 million rabbits in a single week. But the moment that expensive campaign is stopped, which would come eventually, the population just regrows. Here’s a simulation of 50 million rabbits being killed in week 240. As you can see, only ten weeks later the population is back at the levels it started at.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[61]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Now let&#39;s try to kill fifty million off and see what would happen</span>
 <span class="n">num_iterations</span> <span class="o">=</span> <span class="mi">250</span> <span class="c1"># weeks</span>
-<span class="n">rabbit_population</span><span class="p">,</span> <span class="n">infected</span><span class="p">,</span> <span class="n">myxomatosis_resistant</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">num_iterations</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">num_iterations</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">num_iterations</span><span class="p">)</span>
+<span class="n">rabbit_population</span><span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">num_iterations</span><span class="p">)</span>
 <span class="n">percent_resistant</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">num_iterations</span><span class="p">)</span>
 <span class="n">rabbit_population</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">24</span>
 <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">num_iterations</span><span class="p">):</span>
@@ -12440,356 +12955,71 @@ l4D/k7SIJNfMIrm/9D3g2nQ7s0mq7KwM3FummVmNcJWOmVmNcMI3M6sRTvhmZjXCCd/MrEY44ZuZ
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>But in the 1950’s, after decades and decades of ineffective techniques, the Australian Government tried something different - biological warfare. Viruses can be incredibly effective at population control. After the rabbits are infected, the infected rabbits are the ones finding new victims, and all of the rest of the work is done. The trouble is, how can you find a virus that’s safe to release in the wild but will not wreak havoc on the ecosystem?</p>
+<p>The myxoma virus seemed like a perfect candidate. Although the myxoma virus infects several mammals, from rabbits and mice to humans, it can only replicate in the cells of rabbits. Without the ability to replicate in the cells, as in the case of humans, it doesn’t cause any damage. On top of that, myxoma virus spreads easily and kills rabbits within two weeks.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Now we'll encode some basic facts about rabbits and myxomatosis. We'll also throw in some assumptions as well. 
+Facts:
+Rabbits die within two weeks of contracting myxomatosis.
+Rabbits reach sexual maturity after 17 weeks.</p>
+<p>Assumptions:
+Rabbits are close enough to 10 other rabbits each day to spread the infection.
+A rabbit exposed to a rabbit with myxomatosis has a 20% chance of contracting the virus.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[62]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#This one starts at week zero. The one below it starts with a full population</span>
-<span class="c1">#Let&#39;s see what would happen if the population grew with the disease but without the resistance</span>
-<span class="n">num_iterations</span> <span class="o">=</span> <span class="mi">600</span> <span class="c1"># weeks</span>
-<span class="n">rabbit_population</span><span class="p">,</span> <span class="n">infected</span><span class="p">,</span> <span class="n">myxomatosis_resistant</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">num_iterations</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">num_iterations</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">num_iterations</span><span class="p">)</span>
-<span class="n">percent_resistant</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">num_iterations</span><span class="p">)</span>
-<span class="n">rabbit_population</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">24</span>
-<span class="n">infected</span><span class="p">[</span><span class="n">week_myxo_released</span><span class="p">]</span> <span class="o">=</span> <span class="n">num_myxo_released</span>
-<span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">num_iterations</span><span class="p">):</span>
-    <span class="k">if</span> <span class="n">x</span><span class="o">&lt;</span><span class="mi">17</span><span class="p">:</span> <span class="c1">#If it&#39;s under 17 weeks then the only sexually mature rabbits are the 24 that started</span>
-        <span class="n">pop</span> <span class="o">=</span> <span class="n">pop_grow</span><span class="p">(</span><span class="n">rabbit_population</span><span class="p">[</span><span class="n">x</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="mi">24</span><span class="p">)</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="n">pop</span> <span class="o">=</span> <span class="n">pop_grow</span><span class="p">(</span><span class="n">rabbit_population</span><span class="p">[</span><span class="n">x</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">rabbit_population</span><span class="p">[</span><span class="n">x</span><span class="o">-</span><span class="n">time_to_sexual_maturity</span><span class="p">])</span>
-    <span class="c1">#print(x)</span>
-    <span class="c1">#print(rabbit_population[x-1])</span>
-    <span class="k">if</span> <span class="n">rabbit_population</span><span class="p">[</span><span class="n">x</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Rabbits have been removed&quot;</span><span class="p">)</span>
-        <span class="k">break</span>
-    <span class="k">if</span> <span class="n">x</span><span class="o">&gt;</span><span class="n">week_myxo_released</span><span class="p">:</span> <span class="c1">#If we&#39;re past the time myxo was first released</span>
-        <span class="n">infected</span><span class="p">[</span><span class="n">x</span><span class="p">]</span> <span class="o">=</span> <span class="n">spread_myxo</span><span class="p">(</span><span class="n">infected</span><span class="p">[</span><span class="n">x</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="mi">0</span><span class="p">,</span> <span class="n">rabbit_population</span><span class="p">[</span><span class="n">x</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span> <span class="c1">#0 rabbits are resistant</span>
-    <span class="n">dead_from_myxo</span> <span class="o">=</span> <span class="n">infected</span><span class="p">[</span><span class="n">x</span><span class="o">-</span><span class="n">myxo_time_to_death</span><span class="p">]</span>
-    <span class="n">rabbit_population</span><span class="p">[</span><span class="n">x</span><span class="p">]</span> <span class="o">=</span> <span class="n">rabbit_population</span><span class="p">[</span><span class="n">x</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">pop</span> <span class="o">-</span> <span class="n">dead_from_myxo</span>
-    <span class="k">if</span> <span class="n">rabbit_population</span><span class="p">[</span><span class="n">x</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
-        <span class="n">rabbit_population</span><span class="p">[</span><span class="n">x</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
-    <span class="k">if</span> <span class="n">infected</span><span class="p">[</span><span class="n">x</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
-        <span class="n">infected</span><span class="p">[</span><span class="n">x</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
-
-<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">num_iterations</span><span class="p">)</span>
-<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">fill_between</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">rabbit_population</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;g&#39;</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">fill_between</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">infected</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;r&#39;</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&quot;Rabbit growth in Australia&quot;</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;Weeks after first rabbits introduced&quot;</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;Number of rabbits&quot;</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">((</span><span class="s2">&quot;Total rabbits&quot;</span><span class="p">,</span> <span class="s2">&quot;Infected rabbits&quot;</span><span class="p">),</span> <span class="n">loc</span><span class="o">=</span><span class="s1">&#39;upper left&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">myxo_time_to_death</span> <span class="o">=</span> <span class="mi">2</span> <span class="c1">#weeks</span>
+<span class="c1"># Rabbit assumptions and guesses</span>
+<span class="c1">#from internet: rabbits are receptive to mating about 14 of every 16 days</span>
+<span class="n">connections_per_day</span> <span class="o">=</span> <span class="mi">10</span> <span class="c1">#include those that are close enough to be bit by same mosquito</span>
+<span class="n">chance_of_being_infected</span> <span class="o">=</span> <span class="o">.</span><span class="mi">2</span>
+<span class="n">week_myxo_released</span> <span class="o">=</span> <span class="mi">520</span>
+<span class="n">num_myxo_released</span> <span class="o">=</span> <span class="mi">5000</span>
+<span class="c1">#where is length of life factored in?</span>
 </pre></div>
 
 </div>
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Rabbits have been removed
-</pre>
 </div>
-</div>
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-
-
-<div class="output_png output_subarea ">
-<img src="data:image/png;base64,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
-z372MyZNmsSkSZP47W9/C8C1117LBx98wLRp07j22mupr6/n+OOPZ8aMGUyZMoXHH3+8x2OuWrWK
-Qw89lPPPP5/DDjuMzZs3c9lllzFz5kwOO+wwfvSjH3XY/+abb2by5MkceeSRrFmzJrn9qaee4vDD
-D+fAAw/kySefBOCZZ57hzDPPZPXq1dx55538/Oc/Z9q0aSxYsID777+fSZMmMXXqVI477riM2h+N
-RVlZt5KYxtIme2PyUXOkmeufu57WaHAmFGSth6+qVSKyQUQOUtUPcAuVvJ+t18ulhQsXct9997Fo
-0SKi0SizZs1izpw53HLLLaxatSr5qSASifDII48wbNgwqqurmT17NqeddlqPx16xYgX33nsvM2fO
-BOCWW25h5MiRRKNRjjvuOObOncuhhx4KwMiRI3nvvfe46667+MY3vsEjjzwCwIYNG1i0aBErV67k
-E5/4BKtWrUoef//99+fSSy9l9OjRXHXVVQBccsklvPDCC4wdOzbjYaZNjZss0Zui8Hrl68yZMMfv
-MHIi21fafg24T0TexS3I/JMsv15OvPLKK3z2s5+loqKCoUOHcuaZZ/Lyyy/vtJ+qcu211zJlyhRO
-PPFENmzYQG1tbY/H3n///ZPJHmDevHnMmDGDGTNmsHz5ct5/v/0989xz3brW559/PgsWLEhu/9zn
-PkcoFOKggw5in332YeXKlT2+5uzZs7nooou48847icfTJ/F4PE5tcy2KraVgCltLpIWX1+/8v1us
-sjotU1WXADPT7lik7r33Xnbs2MFbb71FaWkp48aNSzsfffDgwcnbK1eu5NZbb+WNN95g+PDhXHDB
-BR2e3910x87b002LvOOOO1i4cCGPP/44M2bM4O2332bEiBHd7r+jbUePxzOmUETiERZsWJB+xyJh
-tXT64JhjjuHhhx+mpaWFxsZGHn30UY455hiGDh1KQ0NDcr8dO3aw++67U1payr///W82btzYq9ep
-r69n6NChDBs2jM2bN/PUU091ePyBBx4A3KeA2bNnJ7c/9NBDqCr/+c9/2LBhAwcccECH53WOc82a
-NRx11FHceOONjBgxIm2cW1u22nCOKRrrdqzzO4ScyfvSCp2NHTy236dl9tasWbM499xzOeKIIwC4
-4oormDx5MgCHH344kydP5tRTT+Ub3/gGn/70p5k8eTKzZs3aKfGmM2PGDA499FAOPvhg9t133w5J
-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
-"
->
-</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[63]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">spread_myxo</span><span class="p">(</span><span class="n">infected</span><span class="p">,</span> <span class="n">resistant</span><span class="p">,</span> <span class="n">total</span><span class="p">):</span> <span class="c1">#infected is the number of infected rabbits, total is the total population</span>
+    <span class="n">susceptible</span> <span class="o">=</span> <span class="n">total</span> <span class="o">-</span> <span class="n">resistant</span> <span class="o">-</span> <span class="n">infected</span>
+    <span class="n">susceptible_percentage</span> <span class="o">=</span> <span class="n">susceptible</span> <span class="o">/</span> <span class="n">total</span>
+    <span class="n">new_infections</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="n">infected</span> <span class="o">*</span> <span class="n">connections_per_day</span> <span class="o">*</span> <span class="n">chance_of_being_infected</span> <span class="o">*</span> <span class="n">susceptible_percentage</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">new_infections</span>
+</pre></div>
 
 </div>
-
 </div>
 </div>
 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[65]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Now let&#39;s start the population at 600000000 and introduce the disease</span>
@@ -13186,9 +13416,19 @@ YII=
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>After some initial trials, the technique was approved and released into the rabbit population. The rabbit population, which started at 600 million, dropped to 500 million. Then 400, 300, 200 million. The disease continued to spread and kill more and more rabbits. The population hit 100 million. But the problem is, in any large population, there’s likely to be some members that, through chance genetic mutation, have a natural resistance. This is true for nearly all diseases. Some people were naturally immune to the Black Death that killed half of all Europeans in the 14th century. Even HIV has a rival in people born with a mutation known as Delta32.</p>
+<p>As the population of rabbits without the resistance died off, those with it swelled. Although the virus has a large impact initially, it ultimately left Australia with a large population of mutant, disease-resistant rabbits.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[66]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#pop growth with no disease - use this to tell the number of new rabbits, which includes births and death from overpopulation</span>
@@ -13532,569 +13772,14 @@ N8aYNPH/ARkOIOzJM2g8AAAAAElFTkSuQmCC
 </div>
 
 </div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
 <div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Now try to make it so you start with a full population, like the simulation above.</span>
-<span class="n">num_iterations</span> <span class="o">=</span> <span class="mi">80</span>
-<span class="n">rabbit_population</span><span class="p">,</span> <span class="n">infected</span><span class="p">,</span> <span class="n">myxomatosis_resistant</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">num_iterations</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">num_iterations</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">num_iterations</span><span class="p">)</span>
-<span class="n">percent_resistant</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">num_iterations</span><span class="p">)</span>
-<span class="n">rabbit_population</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">600000000</span>
-<span class="n">relative_week_myxo_released</span> <span class="o">=</span> <span class="mi">2</span>
-<span class="n">myxomatosis_resistant</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="n">rabbit_population</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">/</span> <span class="mi">10</span><span class="p">)</span>
-<span class="n">infected</span><span class="p">[</span><span class="n">relative_week_myxo_released</span><span class="p">]</span> <span class="o">=</span> <span class="n">num_myxo_released</span>
-<span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">num_iterations</span><span class="p">):</span>
-    <span class="k">if</span> <span class="n">x</span><span class="o">&lt;</span><span class="mi">17</span><span class="p">:</span> <span class="c1">#If it&#39;s under 17 weeks then the only sexually mature rabbits are the 24 that started</span>
-        <span class="n">pop</span> <span class="o">=</span> <span class="n">pop_grow</span><span class="p">(</span><span class="n">rabbit_population</span><span class="p">[</span><span class="n">x</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="mi">24</span><span class="p">)</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="n">pop</span> <span class="o">=</span> <span class="n">pop_grow</span><span class="p">(</span><span class="n">rabbit_population</span><span class="p">[</span><span class="n">x</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">rabbit_population</span><span class="p">[</span><span class="n">x</span><span class="o">-</span><span class="n">time_to_sexual_maturity</span><span class="p">])</span>
-    <span class="k">if</span> <span class="n">rabbit_population</span><span class="p">[</span><span class="n">x</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Rabbits have been removed&quot;</span><span class="p">)</span>
-        <span class="k">break</span>
-    <span class="k">if</span> <span class="n">x</span><span class="o">&gt;</span><span class="n">week_myxo_released</span><span class="p">:</span>
-        <span class="n">infected</span><span class="p">[</span><span class="n">x</span><span class="p">]</span> <span class="o">=</span> <span class="n">spread_myxo</span><span class="p">(</span><span class="n">infected</span><span class="p">[</span><span class="n">x</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">myxomatosis_resistant</span><span class="p">[</span><span class="n">x</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">rabbit_population</span><span class="p">[</span><span class="n">x</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
-    <span class="n">rabbit_population</span><span class="p">[</span><span class="n">x</span><span class="p">]</span> <span class="o">=</span> <span class="n">rabbit_population</span><span class="p">[</span><span class="n">x</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">pop</span> <span class="o">-</span> <span class="n">infected</span><span class="p">[</span><span class="n">x</span><span class="o">-</span><span class="n">myxo_time_to_death</span><span class="p">]</span>
-    <span class="n">myxomatosis_resistant</span><span class="p">[</span><span class="n">x</span><span class="p">]</span> <span class="o">=</span> <span class="n">myxomatosis_resistant</span><span class="p">[</span><span class="n">x</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="p">(</span><span class="n">pop</span><span class="o">*</span><span class="n">percent_resistant</span><span class="p">[</span><span class="n">x</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
-    <span class="n">percent_resistant</span><span class="p">[</span><span class="n">x</span><span class="p">]</span> <span class="o">=</span> <span class="n">myxomatosis_resistant</span><span class="p">[</span><span class="n">x</span><span class="p">]</span><span class="o">/</span><span class="n">rabbit_population</span><span class="p">[</span><span class="n">x</span><span class="p">]</span>
-
-<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">num_iterations</span><span class="p">)</span>
-<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">fill_between</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">rabbit_population</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;g&#39;</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">fill_between</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">infected</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;r&#39;</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">fill_between</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">myxomatosis_resistant</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;b&#39;</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">fill_between</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">infected</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;r&#39;</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&quot;Rabbit growth in Australia&quot;</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;Weeks after first rabbits introduced&quot;</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;Number of rabbits&quot;</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">((</span><span class="s2">&quot;Total rabbits&quot;</span><span class="p">,</span> <span class="s2">&quot;Infected rabbits&quot;</span><span class="p">,</span> <span class="s2">&quot;Resistant rabbits&quot;</span><span class="p">),</span> <span class="n">loc</span><span class="o">=</span><span class="s1">&#39;upper left&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-</pre></div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>And that's where we are today.</p>
 
 </div>
 </div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-
-
-<div class="output_png output_subarea ">
-<img src="data:image/png;base64,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
-1m51lAAAAABJRU5ErkJggg==
-"
->
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Now let&#39;s start the population at 600000000 and introduce the disease</span>
-<span class="n">num_iterations</span> <span class="o">=</span> <span class="mi">80</span> <span class="c1"># weeks</span>
-<span class="n">rabbit_population</span><span class="p">,</span> <span class="n">infected</span><span class="p">,</span> <span class="n">myxomatosis_resistant</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">num_iterations</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">num_iterations</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">num_iterations</span><span class="p">)</span>
-<span class="n">percent_resistant</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">num_iterations</span><span class="p">)</span>
-<span class="n">rabbit_population</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">600000000</span>
-<span class="n">relative_week_myxo_released</span> <span class="o">=</span> <span class="mi">2</span>
-<span class="n">infected</span><span class="p">[</span><span class="n">relative_week_myxo_released</span><span class="p">]</span> <span class="o">=</span> <span class="n">num_myxo_released</span>
-<span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">num_iterations</span><span class="p">):</span>
-    <span class="n">pop</span> <span class="o">=</span> <span class="n">pop_grow</span><span class="p">(</span><span class="n">rabbit_population</span><span class="p">[</span><span class="n">x</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">rabbit_population</span><span class="p">[</span><span class="n">x</span><span class="o">-</span><span class="n">time_to_sexual_maturity</span><span class="p">])</span>
-    <span class="k">if</span> <span class="n">rabbit_population</span><span class="p">[</span><span class="n">x</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Rabbits have been removed&quot;</span><span class="p">)</span>
-        <span class="k">break</span>
-    <span class="k">if</span> <span class="n">x</span><span class="o">&gt;</span><span class="n">week_myxo_released</span><span class="p">:</span>
-        <span class="n">infected</span><span class="p">[</span><span class="n">x</span><span class="p">]</span> <span class="o">=</span> <span class="n">spread_myxo</span><span class="p">(</span><span class="n">infected</span><span class="p">[</span><span class="n">x</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">myxomatosis_resistant</span><span class="p">[</span><span class="n">x</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">rabbit_population</span><span class="p">[</span><span class="n">x</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
-    <span class="n">dead_from_myxo</span> <span class="o">=</span> <span class="n">infected</span><span class="p">[</span><span class="n">x</span><span class="o">-</span><span class="n">myxo_time_to_death</span><span class="p">]</span>
-    <span class="n">rabbit_population</span><span class="p">[</span><span class="n">x</span><span class="p">]</span> <span class="o">=</span> <span class="n">rabbit_population</span><span class="p">[</span><span class="n">x</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">pop</span> <span class="o">-</span> <span class="n">dead_from_myxo</span>
-    <span class="n">myxomatosis_resistant</span><span class="p">[</span><span class="n">x</span><span class="p">]</span> <span class="o">=</span> <span class="n">myxomatosis_resistant</span><span class="p">[</span><span class="n">x</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="p">(</span><span class="n">pop</span><span class="o">*</span><span class="n">percent_resistant</span><span class="p">[</span><span class="n">x</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
-    <span class="n">percent_resistant</span><span class="p">[</span><span class="n">x</span><span class="p">]</span> <span class="o">=</span> <span class="n">myxomatosis_resistant</span><span class="p">[</span><span class="n">x</span><span class="p">]</span><span class="o">/</span><span class="n">rabbit_population</span><span class="p">[</span><span class="n">x</span><span class="p">]</span>
-    <span class="n">percent_resistant</span><span class="p">[</span><span class="n">x</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
-
-    <span class="k">if</span> <span class="n">rabbit_population</span><span class="p">[</span><span class="n">x</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
-        <span class="n">rabbit_population</span><span class="p">[</span><span class="n">x</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
-    <span class="k">if</span> <span class="n">infected</span><span class="p">[</span><span class="n">x</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
-        <span class="n">infected</span><span class="p">[</span><span class="n">x</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
-
-<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">num_iterations</span><span class="p">)</span>
-<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">fill_between</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">rabbit_population</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;g&#39;</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">fill_between</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">infected</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;r&#39;</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">fill_between</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">myxomatosis_resistant</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;b&#39;</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">fill_between</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">infected</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;r&#39;</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&quot;Rabbit growth in Australia&quot;</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;Weeks after first rabbits introduced&quot;</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;Number of rabbits&quot;</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">((</span><span class="s2">&quot;Total rabbits&quot;</span><span class="p">,</span> <span class="s2">&quot;Infected rabbits&quot;</span><span class="p">,</span> <span class="s2">&quot;Resistant rabbits&quot;</span><span class="p">),</span> <span class="n">loc</span><span class="o">=</span><span class="s1">&#39;upper left&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-
-
-<div class="output_png output_subarea ">
-<img src="data:image/png;base64,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
-"
->
-</div>
-
-</div>
-
-</div>
-</div>
-
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">

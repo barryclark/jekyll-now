@@ -14,7 +14,7 @@ Light verbs may contain meaning, or sometimes even a little meaning, so they sho
 
 ## What are all the light verbs?
 
-There's no official list, but I include any form of the follow verbs:  *to do*, *to have*, *to make*, *to be*, *to take*, *to begin*, *to get*, *to go*, *to give*, *to put*, *to feel*, *to begin*.
+There's no official list, but I include any form of the following verbs:  *to do*, *to have*, *to make*, *to be*, *to take*, *to begin*, *to get*, *to go*, *to give*, *to put*, *to feel*, *to begin*.
 
 ## How bad are they?
 
