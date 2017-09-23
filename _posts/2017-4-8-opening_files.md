@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Opening a file in Python
+title: Opening files in Python
 ---
 
-Python offers several different methods to opening a file, but are all options equally good?
+Python offers several different methods for opening files, but are all options equally good? What's the best method for the generic case of opening a file?
 
 The most basic is the following:
 ```python

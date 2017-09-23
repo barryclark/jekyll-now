@@ -22,13 +22,13 @@ The largest header is a single `#`. For subsequently smaller headers, add anothe
 
 # Emphasis
 
-`
+```
 *Single asterisk for italics*
 
 **Double asterisk for bold**
 
 ***Triple asterisk for bold and italics***
-`
+```
 
 *Single asterisk for italics*
 
@@ -38,11 +38,13 @@ The largest header is a single `#`. For subsequently smaller headers, add anothe
 
 # Code
 
-Use a grave accent "\`" for `code` (it's to the left of 1 on your keyboard)
+Use a grave accent " \` " for `code` (it's to the left of 1 on your keyboard)
 
 ```
 Triple grave accent for code
 ```
+
+# HTML tags
 
 You can also use HTML tags. `<b>Bold with HTML</b>` gives you:
 
@@ -74,11 +76,11 @@ later and the raw code won't look out of order
 # Links
 
 ```
-[this blog](https://jss367.github.io/)
+[This Blog](https://jss367.github.io/)
 ```
 
-[this blog](https://jss367.github.io/)
+[This Blog](https://jss367.github.io/)
 
 # Images
 
-![title](images/image.jpg "text for mouse scroll over")
+`![title](images/image.jpg "text for mouse scroll over")`
