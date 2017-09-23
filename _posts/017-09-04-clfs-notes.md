@@ -5,8 +5,8 @@ title: CLFS Notes
 ## Cross Linux From Scratch Notes
 This post documents some of the issues I encountered while working through the **Cross-Compiled Linux From Scratch - Version 3.0.0-SYSVINIT-x86_64-Multilib Book**.
 
-### Section NCURSES Ch 5
-needed to add CPPFLAGS="-P" to the ./configure command
+### Section 5.5. Ncurses-5.9
+Needed to add **CPPFLAGS="-P"** prior to the **./configure** command.
 
 ### Section MPFR 3.1.2 Ch 5
 make sure to separate ldflags and ./configure as two commands
