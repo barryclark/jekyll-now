@@ -40,6 +40,5 @@ Note: **libio/tst-ftell-partial-wide.out** fails, because it needs a locale that
 ### 10.24. Flex-2.5.39 64 Bit
 The command **sed -i -e '/test-bison/d' tests/Makefile.in** is needed to prevent failures from bison test checks, because bison isn't installed yet.
 
-### 10.41
-
-after make NON_ROOT_USERNAME=nobody check-root one test fails, mount point a/b already traversed circular directory structure, appears to not be an issue, obscure
+### Unable to Install Perl
+I spent two weeks of my free time trying to get Perl to compile, but no matter what I tried it didn't like my Zlib libraries. I received various errors, so I'm moving to the CLFS development book and my next post regarding CLFS will refer to the development book.
