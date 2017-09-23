@@ -10,11 +10,11 @@ Jekyll uses Markdown for formating, so all the Markdown commands work in Jekyll.
 
 The largest header is a single `#`. For subsequently smaller headers, add another `#`
 
-`
+```
 # Main header
 ## Secondary header
 ### Tertiary header...
-`
+```
 
 # Main header
 ## Secondary header
@@ -34,7 +34,9 @@ The largest header is a single `#`. For subsequently smaller headers, add anothe
 
 ***Triple asterisk for bold and italics***
 
-Use a grave accent \` /` for `code`
+# Code
+
+Use a grave accent "\`" for `code` (it's to the left of 1 on your keyboard)
 
 ```
 Triple grave accent for code
