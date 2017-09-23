@@ -10,8 +10,6 @@ O modelo relacional de banco de dados é provavelmente o mais utilizado pelas ap
 >
 > -- _Arthur Conan Doyle_
 
-<!-- more -->
-
 # História
 
 A teoria dos grafos surgiu pela primeira vez em 1736 por Leonhard Euler para resolver um problema chamado de as 7 pontes de Königsberg (atual Kaliningrado). Seis delas interligavam duas ilhas às margens do Rio Pregel e uma que fazia a ligação entre as duas ilhas. O problema consistia na seguinte questão: como seria possível fazer um passeio a pé pela cidade de forma a se passar uma única vez por cada uma das sete pontes e retornar ao ponto de partida?
