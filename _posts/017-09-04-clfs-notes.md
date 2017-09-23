@@ -20,13 +20,10 @@ Required setting **export LD_LIBRARY_PATH=$LD_LIBRARY_PATH/mnt/clfs/cross-tools/
 ### Section 5.15. Glibc-2.19 64bit
 Required setting **export LD_LIBRARY_PATH=$LD_LIBRARY_PATH/mnt/clfs/cross-tools/lib** from  section **5.13**, but needed to remove the **:**.
 
-### section GCC 64 bit
-no issues compiling, but left LD_LIBRARY_PATH set the same as in the previous section.
+### Section 5.16. GCC-4.8.3 - Final
+Needed to separate **AR=ar** and **../gcc-4.8.3/configure** as two separate commands.
 
-### cross GCC 5.16 section
-need to separate commands into two lines AR=ar etc. and ../config need to be two separate commands
-
-no issues, LD_LIBRARY_PATH still set
+**LD_LIBRARY_PATH** still set.
 
 ### ch 7 Shadow
 typo in book; erratta
