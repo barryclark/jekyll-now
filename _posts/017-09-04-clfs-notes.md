@@ -10,13 +10,15 @@ Needed to add **CPPFLAGS="-P"** prior to the **./configure** command.
 
 ### Section 5.8. MPFR-3.1.2
 Needed to separate **LDFLAGS=** and **./configure** as two separate commands
-make sure to separate ldflags and ./configure as two commands
 
-### Sectiong GCC 32 Bit
-had issue with clfs book setting up a gcc compile improperly, which required this command export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/mnt/clfs/cross-tools/lib
+### Section 5.13. Cross GCC-4.8.3 - Static
+Needed this command before running configure: **export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/mnt/clfs/cross-tools/lib**
 
-### Section Glibc 32bit (also 64 bit?)
-required setting export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/mnt/clfs/cross-tools/lib but then removing the : for some reason
+### Section 5.14. Glibc-2.19 32bit
+Required setting **export LD_LIBRARY_PATH=$LD_LIBRARY_PATH/mnt/clfs/cross-tools/lib** from  section **5.13**, but needed to remove the **:**.
+
+### Section 5.15. Glibc-2.19 64bit
+Required setting **export LD_LIBRARY_PATH=$LD_LIBRARY_PATH/mnt/clfs/cross-tools/lib** from  section **5.13**, but needed to remove the **:**.
 
 ### section GCC 64 bit
 no issues compiling, but left LD_LIBRARY_PATH set the same as in the previous section.
