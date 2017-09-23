@@ -11791,10 +11791,10 @@ div#notebook {
 
 <pre><code>pip install jupyter_contrib_nbextensions</code></pre>
 <p>Then:</p>
-<ul>
-<li>jupyter contrib nbextension install --user</li>
-<li>Then go to the Nbextensions tab and enable it from there</li>
-</ul>
+<ol>
+<li>Enter: jupyter contrib nbextension install --user</li>
+<li>Go to the Nbextensions tab and enable it from there</li>
+</ol>
 
 </div>
 </div>
@@ -11829,11 +11829,15 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>autopep8</strong>
--Formats your code based on the PEP8 guide in a single click</p>
-<ul>
-<li>After you enable this, you'll still need to pip install it: <code>pip install autopep8</code></li>
-</ul>
+<h2 id="Autopep8">Autopep8<a class="anchor-link" href="#Autopep8">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Formats your code based on the PEP8 guide in a single click</p>
 
 </div>
 </div>
@@ -11842,8 +11846,8 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Printing-LaTeX">Printing LaTeX<a class="anchor-link" href="#Printing-LaTeX">&#182;</a></h1><p>Jupyter Notebooks use MathJax to render LaTeX in Markdown. To add LaTeX, simply surround your statement with <code>$$</code>:</p>
-$$c = \sqrt{a^2 + b^2}$$
+<p>Install with <code>pip install autopep8</code>, then enable it</p>
+
 </div>
 </div>
 </div>
@@ -11851,21 +11855,24 @@ $$c = \sqrt{a^2 + b^2}$$
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Maxwell's-Equations">Maxwell's Equations<a class="anchor-link" href="#Maxwell's-Equations">&#182;</a></h3>$$
+<h1 id="Printing-LaTeX">Printing LaTeX<a class="anchor-link" href="#Printing-LaTeX">&#182;</a></h1><p>Jupyter Notebooks use MathJax to render LaTeX in Markdown. To add LaTeX, simply surround your statement with <code>$</code>:</p>
+<p>$c = \sqrt{a^2 + b^2}$</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>If you want to center your formula, surround it with <code>$$</code>:
+$$
 \begin{align}
 \nabla \times \vec{\mathbf{B}} -\, \frac1c\, \frac{\partial\vec{\mathbf{E}}}{\partial t} &amp; = \frac{4\pi}{c}\vec{\mathbf{j}} \\   \nabla \cdot \vec{\mathbf{E}} &amp; = 4 \pi \rho \\
 \nabla \times \vec{\mathbf{E}}\, +\, \frac1c\, \frac{\partial\vec{\mathbf{B}}}{\partial t} &amp; = \vec{\mathbf{0}} \\
 \nabla \cdot \vec{\mathbf{B}} &amp; = 0
 \end{align}
-$$
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Do a single <code>$</code> to print the formula on the left and double $$ to print in the center</p>
+$$</p>
 
 </div>
 </div>
@@ -11883,31 +11890,11 @@ $$
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Convert Jupyter Notebooks to various formats, including HTML, LaTeX, PDF, and Markdown</p>
-<p>jupyter nbconvert --to html mynotebook.ipynb</p>
-<p>This is especially useful when paired with this batch file:</p>
-<div class="highlight"><pre><span></span><span class="p">@</span><span class="k">echo</span> off
-<span class="k">title</span> quick notebooks
-<span class="k">cd</span> C:\Users\HMISYS\Google Drive\JupyterNotebooks\Blog
-<span class="c1">REM This allows for files that have a space in their name</span>
-<span class="k">for</span> <span class="k">/f</span> <span class="s2">&quot;usebackq delims=|&quot;</span> <span class="se">%%</span>f <span class="k">in</span> <span class="p">(</span><span class="sb">`dir /b &quot;C:\Users\HMISYS\Google Drive\JupyterNotebooks\Blog\*.ipynb&quot;`</span><span class="p">)</span> <span class="k">do</span> jupyter nbconvert --to html <span class="s2">&quot;</span><span class="se">%%</span><span class="s2">f&quot;</span>
-<span class="k">pause</span>
-</pre></div>
+<p><code>jupyter nbconvert --to html mynotebook.ipynb</code></p>
+<p>See how I use it here in <a href="https://jss367.github.io/jupyter-notebooks-in-blog/">this post</a>.</p>
 
 </div>
 </div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-
-</div>
-</div>
-</div>
-
 </div>
     </div>
   </div>
