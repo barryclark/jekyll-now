@@ -11782,11 +11782,12 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[26]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">urllib</span> <span class="k">import</span> <span class="n">request</span>
 <span class="kn">import</span> <span class="nn">nltk</span>
+<span class="kn">import</span> <span class="nn">os</span>
 </pre></div>
 
 </div>
@@ -11822,14 +11823,25 @@ div#notebook {
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Now that we have the text, let's tokenize it. Then we can extract the words.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[54]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Now let&#39;s find the tokens</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Find the tokens</span>
 <span class="n">tokens</span> <span class="o">=</span> <span class="n">nltk</span><span class="o">.</span><span class="n">word_tokenize</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">tokens</span><span class="p">[:</span><span class="mi">50</span><span class="p">])</span>
+<span class="n">tagged</span> <span class="o">=</span> <span class="n">nltk</span><span class="o">.</span><span class="n">pos_tag</span><span class="p">(</span><span class="n">tokens</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">tagged</span><span class="p">[:</span><span class="mi">50</span><span class="p">])</span>
 </pre></div>
 
 </div>
@@ -11847,6 +11859,7 @@ div#notebook {
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>[&#39;Call&#39;, &#39;me&#39;, &#39;Ishmael&#39;, &#39;.&#39;, &#39;Some&#39;, &#39;years&#39;, &#39;ago—never&#39;, &#39;mind&#39;, &#39;how&#39;, &#39;long&#39;, &#39;precisely—having&#39;, &#39;little&#39;, &#39;or&#39;, &#39;no&#39;, &#39;money&#39;, &#39;in&#39;, &#39;my&#39;, &#39;purse&#39;, &#39;,&#39;, &#39;and&#39;, &#39;nothing&#39;, &#39;particular&#39;, &#39;to&#39;, &#39;interest&#39;, &#39;me&#39;, &#39;on&#39;, &#39;shore&#39;, &#39;,&#39;, &#39;I&#39;, &#39;thought&#39;, &#39;I&#39;, &#39;would&#39;, &#39;sail&#39;, &#39;about&#39;, &#39;a&#39;, &#39;little&#39;, &#39;and&#39;, &#39;see&#39;, &#39;the&#39;, &#39;watery&#39;, &#39;part&#39;, &#39;of&#39;, &#39;the&#39;, &#39;world&#39;, &#39;.&#39;, &#39;It&#39;, &#39;is&#39;, &#39;a&#39;, &#39;way&#39;, &#39;I&#39;]
+[(&#39;Call&#39;, &#39;VB&#39;), (&#39;me&#39;, &#39;PRP&#39;), (&#39;Ishmael&#39;, &#39;NNP&#39;), (&#39;.&#39;, &#39;.&#39;), (&#39;Some&#39;, &#39;DT&#39;), (&#39;years&#39;, &#39;NNS&#39;), (&#39;ago—never&#39;, &#39;RB&#39;), (&#39;mind&#39;, &#39;VB&#39;), (&#39;how&#39;, &#39;WRB&#39;), (&#39;long&#39;, &#39;JJ&#39;), (&#39;precisely—having&#39;, &#39;JJ&#39;), (&#39;little&#39;, &#39;JJ&#39;), (&#39;or&#39;, &#39;CC&#39;), (&#39;no&#39;, &#39;DT&#39;), (&#39;money&#39;, &#39;NN&#39;), (&#39;in&#39;, &#39;IN&#39;), (&#39;my&#39;, &#39;PRP$&#39;), (&#39;purse&#39;, &#39;NN&#39;), (&#39;,&#39;, &#39;,&#39;), (&#39;and&#39;, &#39;CC&#39;), (&#39;nothing&#39;, &#39;NN&#39;), (&#39;particular&#39;, &#39;JJ&#39;), (&#39;to&#39;, &#39;TO&#39;), (&#39;interest&#39;, &#39;NN&#39;), (&#39;me&#39;, &#39;PRP&#39;), (&#39;on&#39;, &#39;IN&#39;), (&#39;shore&#39;, &#39;NN&#39;), (&#39;,&#39;, &#39;,&#39;), (&#39;I&#39;, &#39;PRP&#39;), (&#39;thought&#39;, &#39;VBD&#39;), (&#39;I&#39;, &#39;PRP&#39;), (&#39;would&#39;, &#39;MD&#39;), (&#39;sail&#39;, &#39;VB&#39;), (&#39;about&#39;, &#39;IN&#39;), (&#39;a&#39;, &#39;DT&#39;), (&#39;little&#39;, &#39;JJ&#39;), (&#39;and&#39;, &#39;CC&#39;), (&#39;see&#39;, &#39;VB&#39;), (&#39;the&#39;, &#39;DT&#39;), (&#39;watery&#39;, &#39;JJ&#39;), (&#39;part&#39;, &#39;NN&#39;), (&#39;of&#39;, &#39;IN&#39;), (&#39;the&#39;, &#39;DT&#39;), (&#39;world&#39;, &#39;NN&#39;), (&#39;.&#39;, &#39;.&#39;), (&#39;It&#39;, &#39;PRP&#39;), (&#39;is&#39;, &#39;VBZ&#39;), (&#39;a&#39;, &#39;DT&#39;), (&#39;way&#39;, &#39;NN&#39;), (&#39;I&#39;, &#39;PRP&#39;)]
 </pre>
 </div>
 </div>
@@ -11855,19 +11868,27 @@ div#notebook {
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Then we have to extract the words. We'll ignore punctuation for now. We'll make two lists - one with all the words in it and the other with the position of the words.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[55]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Then we have to extract the words. We&#39;ll ignore punctuation for now</span>
-<span class="n">words</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="n">word2token_map</span> <span class="o">=</span> <span class="p">[]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">words</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">word_locations</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="k">for</span> <span class="n">idx</span><span class="p">,</span> <span class="n">token</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">tokens</span><span class="p">):</span>
     <span class="c1"># Use &quot;isalnum&quot; to check if character is alphanumberic (decimal or letter, aka not punctuation)</span>
     <span class="k">if</span> <span class="n">token</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">isalnum</span><span class="p">()</span> <span class="ow">or</span> <span class="p">(</span><span class="n">token</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">&quot;&#39;m&quot;</span><span class="p">,</span> <span class="s2">&quot;&#39;re&quot;</span><span class="p">,</span> <span class="s2">&quot;&#39;ve&quot;</span><span class="p">,</span> <span class="s2">&quot;&#39;d&quot;</span><span class="p">,</span> <span class="s2">&quot;&#39;ll&quot;</span><span class="p">]):</span>
         <span class="n">words</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">token</span><span class="o">.</span><span class="n">lower</span><span class="p">())</span>
-        <span class="n">word2token_map</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">idx</span><span class="p">)</span>
+        <span class="n">word_locations</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">idx</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -11875,9 +11896,18 @@ div#notebook {
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>I have a text file of all the words that I consider to be light verbs. Let's open it and look at it.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[56]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Let&#39;s grab our list of all the light verbs</span>
@@ -11912,7 +11942,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[57]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># But you should be comparing stems, so find the stems for all these first</span>
@@ -11932,7 +11962,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[58]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Now let&#39;s create a stemmer</span>
@@ -11951,15 +11981,11 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[59]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># OK, now let&#39;s put all the stems inside the data dictionary</span>
-<span class="n">data</span> <span class="o">=</span> <span class="p">{}</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="p">{}</span>
 <span class="n">stems</span> <span class="o">=</span> <span class="p">[</span><span class="n">stem_better</span><span class="p">(</span><span class="n">word</span><span class="p">)</span> <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">words</span><span class="p">]</span>
-<span class="n">data</span><span class="p">[</span><span class="s1">&#39;stems&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="kc">None</span><span class="p">]</span> <span class="o">*</span> <span class="nb">len</span><span class="p">(</span><span class="n">tokens</span><span class="p">)</span>
-<span class="k">for</span> <span class="n">idx</span><span class="p">,</span> <span class="n">stem</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">stems</span><span class="p">):</span>
-    <span class="n">data</span><span class="p">[</span><span class="s1">&#39;stems&#39;</span><span class="p">][</span><span class="n">word2token_map</span><span class="p">[</span><span class="n">idx</span><span class="p">]]</span> <span class="o">=</span> <span class="n">stem</span>
 </pre></div>
 
 </div>
@@ -11969,27 +11995,14 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[60]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#light_verbs</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[61]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Now let&#39;s enumerate through the word tokens and find the light verbs</span>
 <span class="n">light</span> <span class="o">=</span> <span class="p">[</span><span class="kc">None</span><span class="p">]</span> <span class="o">*</span> <span class="nb">len</span><span class="p">(</span><span class="n">tokens</span><span class="p">)</span>
 <span class="n">verb_pos</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;VB&#39;</span><span class="p">,</span> <span class="s1">&#39;VBD&#39;</span><span class="p">,</span> <span class="s1">&#39;VBG&#39;</span><span class="p">,</span> <span class="s1">&#39;VBN&#39;</span><span class="p">,</span> <span class="s1">&#39;VBP&#39;</span><span class="p">,</span> <span class="s1">&#39;VBZ&#39;</span><span class="p">]</span>
-<span class="k">for</span> <span class="n">idx_word</span><span class="p">,</span> <span class="n">word</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">words</span><span class="p">):</span>
-    <span class="n">idx</span> <span class="o">=</span> <span class="n">word2token_map</span><span class="p">[</span><span class="n">idx_word</span><span class="p">]</span>
+<span class="k">for</span> <span class="n">idx_word</span><span class="p">,</span> <span class="n">word</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">stems</span><span class="p">):</span>
+    <span class="n">idx</span> <span class="o">=</span> <span class="n">word_locations</span><span class="p">[</span><span class="n">idx_word</span><span class="p">]</span>
     <span class="c1">#print(tagged[idx][1])</span>
     <span class="n">light</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">tagged</span><span class="p">[</span><span class="n">idx</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="ow">in</span> <span class="n">verb_pos</span><span class="p">)</span> <span class="ow">and</span> <span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;stems&#39;</span><span class="p">][</span><span class="n">idx</span><span class="p">]</span> <span class="ow">in</span> <span class="n">light_verbs</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">light</span><span class="p">[:</span><span class="mi">100</span><span class="p">])</span>
@@ -12020,7 +12033,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[62]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Now let&#39;s print all the light verbs</span>
@@ -12058,7 +12071,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[63]:</div>
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Next: find and print the entire sentence</span>
@@ -12072,7 +12085,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[64]:</div>
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># We&#39;ll make a function out of the last step</span>
@@ -12081,7 +12094,7 @@ div#notebook {
     <span class="n">light</span> <span class="o">=</span> <span class="p">[</span><span class="kc">None</span><span class="p">]</span> <span class="o">*</span> <span class="nb">len</span><span class="p">(</span><span class="n">tokens</span><span class="p">)</span>
     <span class="n">verb_pos</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;VB&#39;</span><span class="p">,</span> <span class="s1">&#39;VBD&#39;</span><span class="p">,</span> <span class="s1">&#39;VBG&#39;</span><span class="p">,</span> <span class="s1">&#39;VBN&#39;</span><span class="p">,</span> <span class="s1">&#39;VBP&#39;</span><span class="p">,</span> <span class="s1">&#39;VBZ&#39;</span><span class="p">]</span>
     <span class="k">for</span> <span class="n">idx_word</span><span class="p">,</span> <span class="n">word</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">words</span><span class="p">):</span>
-        <span class="n">idx</span> <span class="o">=</span> <span class="n">word2token_map</span><span class="p">[</span><span class="n">idx_word</span><span class="p">]</span>
+        <span class="n">idx</span> <span class="o">=</span> <span class="n">word_locations</span><span class="p">[</span><span class="n">idx_word</span><span class="p">]</span>
         <span class="c1">#print(tagged[idx][1])</span>
         <span class="n">light</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">tagged</span><span class="p">[</span><span class="n">idx</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="ow">in</span> <span class="n">verb_pos</span><span class="p">)</span><span class="c1"># and (data[&#39;stems&#39;][idx] in light_verbs)</span>
     <span class="k">return</span> <span class="n">light</span>
@@ -12094,7 +12107,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[65]:</div>
+<div class="prompt input_prompt">In&nbsp;[24]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">light_verbs</span> <span class="o">=</span> <span class="n">find_light_verbs</span><span class="p">(</span><span class="n">tokens</span><span class="p">,</span> <span class="n">words</span><span class="p">)</span>
@@ -12107,7 +12120,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[66]:</div>
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Let&#39;s delete all the None values</span>
@@ -12136,79 +12149,6 @@ That is 13.11% of words in this text
 </div>
 </div>
 
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[68]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Now let&#39;s do the same for Moby Dick</span>
-<span class="n">url</span> <span class="o">=</span> <span class="s1">&#39;http://www.gutenberg.org/files/2701/2701-0.txt&#39;</span>
-<span class="n">beginning</span> <span class="o">=</span> <span class="mi">28876</span>
-
-<span class="n">response</span> <span class="o">=</span> <span class="n">request</span><span class="o">.</span><span class="n">urlopen</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
-<span class="n">raw</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;utf8&#39;</span><span class="p">)</span>
-<span class="c1"># Here is some text we&#39;ll start with</span>
-<span class="n">text</span> <span class="o">=</span> <span class="n">raw</span><span class="p">[</span><span class="n">beginning</span><span class="p">:]</span> <span class="c1"># Jump to the beginning</span>
-
-<span class="c1"># First we have to tokenize</span>
-<span class="n">tokens</span> <span class="o">=</span> <span class="n">tokinze_text</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
-<span class="c1"># Then we have to extract the words. We&#39;ll ignore punctuation for now</span>
-<span class="n">words</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="n">word2token_map</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="k">for</span> <span class="n">idx</span><span class="p">,</span> <span class="n">token</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">tokens</span><span class="p">):</span>
-    <span class="c1"># Use &quot;isalnum&quot; to check if character is alphanumberic (decimal or letter, aka not punctuation)</span>
-    <span class="k">if</span> <span class="n">token</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">isalnum</span><span class="p">()</span> <span class="ow">or</span> <span class="p">(</span><span class="n">token</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">&quot;&#39;m&quot;</span><span class="p">,</span> <span class="s2">&quot;&#39;re&quot;</span><span class="p">,</span> <span class="s2">&quot;&#39;ve&quot;</span><span class="p">,</span> <span class="s2">&quot;&#39;d&quot;</span><span class="p">,</span> <span class="s2">&quot;&#39;ll&quot;</span><span class="p">]):</span>
-        <span class="n">words</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">token</span><span class="o">.</span><span class="n">lower</span><span class="p">())</span>
-        <span class="n">word2token_map</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">idx</span><span class="p">)</span>
-
-<span class="c1"># Now we have to tag all the words</span>
-<span class="n">tagged</span> <span class="o">=</span> <span class="n">mytagger</span><span class="p">(</span><span class="n">tokens</span><span class="p">)</span>  
-
-<span class="n">light_verbs</span> <span class="o">=</span> <span class="n">find_light_verbs</span><span class="p">(</span><span class="n">tokens</span><span class="p">,</span> <span class="n">words</span><span class="p">)</span>
-
-<span class="n">cleaned</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">light_verbs</span> <span class="k">if</span> <span class="n">x</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;There are </span><span class="si">{}</span><span class="s2"> light verbs in this text&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">sum</span><span class="p">(</span><span class="n">cleaned</span><span class="p">)))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;That is </span><span class="si">{:.2%}</span><span class="s2"> of words in this text&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">sum</span><span class="p">(</span><span class="n">cleaned</span><span class="p">)</span><span class="o">/</span><span class="nb">len</span><span class="p">(</span><span class="n">light_verbs</span><span class="p">)))</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>There are 33245 light verbs in this text
-That is 13.11% of words in this text
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[36]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Should this be out off all words or just verbs? I think verbs</span>
-<span class="c1"># OK, so let&#39;s look at how many are words. We should also do a part of speech break down</span>
-</pre></div>
-
-</div>
 </div>
 </div>
 

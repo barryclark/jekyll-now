@@ -11771,35 +11771,22 @@ div#notebook {
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
 
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
 <div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">urllib</span> <span class="k">import</span> <span class="n">request</span>
-<span class="kn">import</span> <span class="nn">nltk</span>
-</pre></div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>This is a list of the most commonly used features in Python's Numpy library. Numpy is a highly optimized library perfect for linear algebra, such as vector and matrix operations.</p>
 
 </div>
 </div>
-</div>
-
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># We&#39;ll make a function out of the last step</span>
-<span class="k">def</span> <span class="nf">find_light_verbs</span><span class="p">(</span><span class="n">tokens</span><span class="p">,</span> <span class="n">words</span><span class="p">):</span>
-    <span class="c1"># Let&#39;s enumerate through the word tokens and find the light verbs</span>
-    <span class="n">light</span> <span class="o">=</span> <span class="p">[</span><span class="kc">None</span><span class="p">]</span> <span class="o">*</span> <span class="nb">len</span><span class="p">(</span><span class="n">tokens</span><span class="p">)</span>
-    <span class="n">verb_pos</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;VB&#39;</span><span class="p">,</span> <span class="s1">&#39;VBD&#39;</span><span class="p">,</span> <span class="s1">&#39;VBG&#39;</span><span class="p">,</span> <span class="s1">&#39;VBN&#39;</span><span class="p">,</span> <span class="s1">&#39;VBP&#39;</span><span class="p">,</span> <span class="s1">&#39;VBZ&#39;</span><span class="p">]</span>
-    <span class="k">for</span> <span class="n">idx_word</span><span class="p">,</span> <span class="n">word</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">words</span><span class="p">):</span>
-        <span class="n">idx</span> <span class="o">=</span> <span class="n">word2token_map</span><span class="p">[</span><span class="n">idx_word</span><span class="p">]</span>
-        <span class="c1">#print(tagged[idx][1])</span>
-        <span class="n">light</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">tagged</span><span class="p">[</span><span class="n">idx</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="ow">in</span> <span class="n">verb_pos</span><span class="p">)</span><span class="c1"># and (data[&#39;stems&#39;][idx] in light_verbs)</span>
-    <span class="k">return</span> <span class="n">light</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># All cells assume that numpy has already been imported as follows</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 </pre></div>
 
 </div>
@@ -11809,37 +11796,163 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Now let&#39;s do the same for Moby Dick</span>
-<span class="n">url</span> <span class="o">=</span> <span class="s1">&#39;http://www.gutenberg.org/files/2701/2701-0.txt&#39;</span>
-<span class="n">beginning</span> <span class="o">=</span> <span class="mi">28876</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Finding the mean</span>
 
-<span class="n">response</span> <span class="o">=</span> <span class="n">request</span><span class="o">.</span><span class="n">urlopen</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
-<span class="n">raw</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;utf8&#39;</span><span class="p">)</span>
-<span class="c1"># Here is some text we&#39;ll start with</span>
-<span class="n">text</span> <span class="o">=</span> <span class="n">raw</span><span class="p">[</span><span class="n">beginning</span><span class="p">:]</span> <span class="c1"># Jump to the beginning</span>
+<span class="n">num</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">]</span>
+<span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
+</pre></div>
 
-<span class="c1"># First we have to tokenize</span>
-<span class="n">tokens</span> <span class="o">=</span> <span class="n">nltk</span><span class="o">.</span><span class="n">word_tokenize</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
-<span class="c1"># Then we have to extract the words. We&#39;ll ignore punctuation for now</span>
-<span class="n">words</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="n">word2token_map</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="k">for</span> <span class="n">idx</span><span class="p">,</span> <span class="n">token</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">tokens</span><span class="p">):</span>
-    <span class="c1"># Use &quot;isalnum&quot; to check if character is alphanumberic (decimal or letter, aka not punctuation)</span>
-    <span class="k">if</span> <span class="n">token</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">isalnum</span><span class="p">()</span> <span class="ow">or</span> <span class="p">(</span><span class="n">token</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">&quot;&#39;m&quot;</span><span class="p">,</span> <span class="s2">&quot;&#39;re&quot;</span><span class="p">,</span> <span class="s2">&quot;&#39;ve&quot;</span><span class="p">,</span> <span class="s2">&quot;&#39;d&quot;</span><span class="p">,</span> <span class="s2">&quot;&#39;ll&quot;</span><span class="p">]):</span>
-        <span class="n">words</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">token</span><span class="o">.</span><span class="n">lower</span><span class="p">())</span>
-        <span class="n">word2token_map</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">idx</span><span class="p">)</span>
+</div>
+</div>
+</div>
 
-<span class="c1"># Now we have to tag all the words</span>
-<span class="n">tagged</span> <span class="o">=</span> <span class="n">nltk</span><span class="o">.</span><span class="n">pos_tag</span><span class="p">(</span><span class="n">tokens</span><span class="p">)</span>   
+<div class="output_wrapper">
+<div class="output">
 
-<span class="n">light_verbs</span> <span class="o">=</span> <span class="n">find_light_verbs</span><span class="p">(</span><span class="n">tokens</span><span class="p">,</span> <span class="n">words</span><span class="p">)</span>
 
-<span class="n">cleaned</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">light_verbs</span> <span class="k">if</span> <span class="n">x</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;There are </span><span class="si">{}</span><span class="s2"> light verbs in this text&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">sum</span><span class="p">(</span><span class="n">cleaned</span><span class="p">)))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;That is </span><span class="si">{:.2%}</span><span class="s2"> of words in this text&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">sum</span><span class="p">(</span><span class="n">cleaned</span><span class="p">)</span><span class="o">/</span><span class="nb">len</span><span class="p">(</span><span class="n">light_verbs</span><span class="p">)))</span>
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[6]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>3.0</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># And standard deviation</span>
+<span class="n">np</span><span class="o">.</span><span class="n">std</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[7]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>1.4142135623730951</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Numpy-arrays">Numpy arrays<a class="anchor-link" href="#Numpy-arrays">&#182;</a></h2><p>Numpy arrays are the primary object class of Numpy. They are similar to lists in Python but require that every element of the array be the same type, like an int or a float.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Forcing data type</span>
+<span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">21</span><span class="p">]],</span> <span class="nb">float</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[9]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>array([[  1.,   1.,   2.,   3.],
+       [  5.,   8.,  13.,  21.]])</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Numpy arrays are indexed like Python lists: [beggining(inclusive):end(exclusive):step]</span>
+<span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+<span class="n">a</span><span class="p">[</span><span class="mi">3</span><span class="p">:</span><span class="mi">7</span><span class="p">:</span><span class="mi">2</span><span class="p">]</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[10]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>array([3, 5])</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Matrices can be sliced in rows or columns</span>
+
+<span class="n">matrix</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">]])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">matrix</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="p">:])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">matrix</span><span class="p">[:,</span> <span class="mi">2</span><span class="p">])</span>
 </pre></div>
 
 </div>
@@ -11856,12 +11969,88 @@ div#notebook {
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>There are 33245 light verbs in this text
-That is 13.11% of words in this text
+<pre>[4 5 6]
+[3 6]
 </pre>
 </div>
 </div>
 
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Remember that * is element-wise multiplication, not matrix multiplication</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># For matrix multiplication, use np.dot(a,b)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Sometimes you end up with single-dimensional entries in an array</span>
+<span class="c1"># Use squeeze to remove them</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[[</span><span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mi">2</span><span class="p">]]])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">squeeze</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>(1, 3, 1)
+(3,)
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># To transpose matricies, np.transpose(mat) is the same as mat.T</span>
+<span class="c1"># From docs - Same as self.transpose(), except that self is returned if self.ndim &lt; 2.</span>
+</pre></div>
+
+</div>
 </div>
 </div>
 
