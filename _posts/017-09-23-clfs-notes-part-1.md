@@ -1,6 +1,6 @@
 ---
-published: false
-title: CLFS Notes
+published: true
+title: CLFS Notes Part 1
 ---
 ## Cross Linux From Scratch Notes - Part 1
 This post documents some of the issues I encountered while working through the **Cross-Compiled Linux From Scratch - Version 3.0.0-SYSVINIT-x86_64-Multilib Book**. For my host OS I used **Slackware 14.2**
