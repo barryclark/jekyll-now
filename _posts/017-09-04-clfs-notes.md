@@ -3,12 +3,13 @@ published: false
 title: CLFS Notes
 ---
 ## Cross Linux From Scratch Notes - Part 1
-This post documents some of the issues I encountered while working through the **Cross-Compiled Linux From Scratch - Version 3.0.0-SYSVINIT-x86_64-Multilib Book**.
+This post documents some of the issues I encountered while working through the **Cross-Compiled Linux From Scratch - Version 3.0.0-SYSVINIT-x86_64-Multilib Book**. For my host OS I used **Slackware 14.2**
 
 ### Section 5.5. Ncurses-5.9
 Needed to add **CPPFLAGS="-P"** prior to the **./configure** command.
 
-### Section MPFR 3.1.2 Ch 5
+### Section 5.8. MPFR-3.1.2
+Needed to separate **LDFLAGS=** and **./configure** as two separate commands
 make sure to separate ldflags and ./configure as two commands
 
 ### Sectiong GCC 32 Bit
