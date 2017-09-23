@@ -3,7 +3,7 @@ published: false
 title: CLFS Notes
 ---
 ## Cross Linux From Scratch Notes
-This post documents some of the issues I encountered while working through the Cross-Compiled Linux From Scratch - Version 3.0.0-SYSVINIT-x86_64-Multilib Book.
+This post documents some of the issues I encountered while working through the **Cross-Compiled Linux From Scratch - Version 3.0.0-SYSVINIT-x86_64-Multilib Book**.
 
 ### Section NCURSES Ch 5
 needed to add CPPFLAGS="-P" to the ./configure command
