@@ -34,11 +34,11 @@ The boot method is not well documented and is missing the temporary grub configu
 ### 10.7. Glibc-2.19 32 Bit Libraries
 Note: **libio/tst-ftell-partial-wide.out** fails, because it needs a locale that has not yet been generated. This note is from the LFS book, but it is missing in the CLFS book.
 
-### 10.11 gmp 6.0.0
-seems that the flag code LDFLAGS etc needs to entered as individual commands, blows up otherwise?
+### 10.11. GMP-6.0.0 32 Bit Libraries
+**LDFLAGS=** needs to be entered as separate command from **./configure**.
 
-### 10.24
-sed -i -e '/test-bison/d' tests/Makefile.in is needed to prevent failures from bison test checks, because bison isn't installed yet.
+### 10.24. Flex-2.5.39 64 Bit
+The command **sed -i -e '/test-bison/d' tests/Makefile.in** is needed to prevent failures from bison test checks, because bison isn't installed yet.
 
 ### 10.41
 
