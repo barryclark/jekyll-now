@@ -11775,14 +11775,14 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>In this notebook we're going to explore parts of speech usage in Great Expectations by Charles Dickens. Then we're going to look at the verbs and identify which ones are light.</p>
+<p>Do good writers use fewer adverbs than poor writers? Is it possible to improve ones writing by looking at the relative distribution of different parts of speech (POS)? I was curious about this and wanted to investigate. The first step towards determining this is to find out what a "normal" POS distribution is. To do that, we'll explore parts of speech usage in Great Expectations by Charles Dickens.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">urllib</span> <span class="k">import</span> <span class="n">request</span>
@@ -11795,9 +11795,18 @@ div#notebook {
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>We'll use the technique described in the post on <a href="https://jss367.github.io/Getting-text-from-Project-Gutenberg/">Getting text from Project Gutenberg</a> to gather the text of Great Expectations.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Now let&#39;s grab some text from Great Expectations</span>
@@ -11813,7 +11822,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">raw</span><span class="p">[:</span><span class="mi">200</span><span class="p">])</span>
@@ -11859,7 +11868,7 @@ almost no restrictions whatsoever.  You may copy it, give it
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">text</span> <span class="o">=</span> <span class="n">raw</span><span class="p">[</span><span class="mi">886</span><span class="p">:</span><span class="o">-</span><span class="mi">19150</span><span class="p">]</span> <span class="c1"># Jumping to where it actually starts</span>
@@ -11905,7 +11914,7 @@ than Pip. So, I called myself Pip, and came to be called Pip.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">tokens</span> <span class="o">=</span> <span class="n">nltk</span><span class="o">.</span><span class="n">word_tokenize</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
@@ -11918,7 +11927,7 @@ than Pip. So, I called myself Pip, and came to be called Pip.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">tokens</span><span class="p">[:</span><span class="mi">20</span><span class="p">])</span>
@@ -11958,7 +11967,7 @@ than Pip. So, I called myself Pip, and came to be called Pip.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Now we have to tag all the words</span>
@@ -11972,7 +11981,7 @@ than Pip. So, I called myself Pip, and came to be called Pip.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">tagged</span><span class="p">[:</span><span class="mi">20</span><span class="p">])</span>
@@ -12012,7 +12021,7 @@ than Pip. So, I called myself Pip, and came to be called Pip.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Note that IN can be either a preposition or a conjunction, for now we&#39;re going to list it with the prepositions</span>
@@ -12089,7 +12098,7 @@ than Pip. So, I called myself Pip, and came to be called Pip.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># From the Part of Speech notebook:</span>
@@ -12432,16 +12441,7 @@ RK5CYII=
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Now that we've worked through one example, we'll build a more formalized method of exploring other texts in <a href="https://jss367.github.io/Light-verbs-2/">Part 2</a></p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>This analysis is continued in <a href="https://jss367.github.io/Visualize-Parts-of-Speech-2/">Visualize Parts of Speech 2</a></p>
+<p>Now that we've worked through one example, we'll build a more formalized method of exploring other texts in <a href="https://jss367.github.io/Light-verbs-2/">Part 2</a>. We'll also explore ways to compare across texts.</p>
 
 </div>
 </div>
