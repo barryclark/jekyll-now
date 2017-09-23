@@ -25,17 +25,14 @@ Needed to separate **AR=ar** and **../gcc-4.8.3/configure** as two separate comm
 
 **LD_LIBRARY_PATH** still set.
 
-### ch 7 Shadow
-typo in book; erratta
-this echo "#define ENABLE_SUBUIDS 1" >> config.h should be this echo 
-"#define ENABLE_SUBIDS 1" >> config.h
+### Section 7.6. Shadow-4.2.1
+This **echo "#define ENABLE_SUBUIDS 1" >> config.h** should be this **echo "#define ENABLE_SUBIDS 1" >> config.h**.
 
 ### Issue with Boot Method
-Boot Method is not well documented and is missing the temporary grub configuration from previous versions of the book. reverting to chroot method.
+The boot method is not well documented and is missing the temporary grub configuration from previous versions of the book; Reverting to Chroot method.
 
 ### 10.7. Glibc-2.19 32 Bit Libraries
-libio/tst-ftell-partial-wide.out fails because it needs a locale that has not yet been generated. 
-This is from the LFS book, it is missing in the CLFS book.
+Note: **libio/tst-ftell-partial-wide.out** fails, because it needs a locale that has not yet been generated. This note is from the LFS book, but it is missing in the CLFS book.
 
 ### 10.11 gmp 6.0.0
 seems that the flag code LDFLAGS etc needs to entered as individual commands, blows up otherwise?
