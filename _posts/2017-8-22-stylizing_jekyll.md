@@ -6,7 +6,27 @@ tags: blog
 
 Jekyll uses Markdown for formating, so all the Markdown commands work in Jekyll.
 
-# Emphasis
+# Headers
+
+The largest header is a single `#`. For subsequently smaller headers, add another `#`
+
+`
+# Main header
+## Secondary header
+### Tertiary header...
+`
+
+# Main header
+## Secondary header
+### Tertiary header...
+
+`
+*Single asterisk for italics*
+
+**Double asterisk for bold**
+
+***Triple asterisk for bold and italics***
+`
 
 *Single asterisk for italics*
 
@@ -14,11 +34,7 @@ Jekyll uses Markdown for formating, so all the Markdown commands work in Jekyll.
 
 ***Triple asterisk for bold and italics***
 
-# Headers
-
-The largest header is a single `#`. For subsequently smaller headers, add another `#`
-
-Use a grave accent for `code`
+Use a grave accent \` /` for `code`
 
 ```
 Triple grave accent for code
