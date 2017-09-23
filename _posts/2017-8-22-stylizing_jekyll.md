@@ -20,6 +20,8 @@ The largest header is a single `#`. For subsequently smaller headers, add anothe
 ## Secondary header
 ### Tertiary header...
 
+# Emphasis
+
 `
 *Single asterisk for italics*
 
@@ -47,4 +49,17 @@ You can also use HTML tags. `<b>Bold with HTML</b>` gives you:
 <b>Bold with HTML</b>
 
 # Lists
+
 - Dash with a space for an unordered list
+
+1. Do this
+1. Then do this
+1. And finally this
+
+# Links
+
+```
+[this blog](https://jss367.github.io/)
+```
+
+[this blog](https://jss367.github.io/)
