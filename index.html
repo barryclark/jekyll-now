@@ -13,6 +13,7 @@
   <!-- Latest compiled and minified CSS & JS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <script src="//code.jquery.com/jquery.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"/>
   <link href="assets/css/style.css" rel="stylesheet">
@@ -30,17 +31,17 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#headshot">Jesse Stern</a>
+        <a class="navbar-brand" href="#landing">Jesse Stern</a>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse navbar-ex1-collapse">
         <ul class="nav navbar-nav navbar-right">
           <li>
-            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="#portfolio">Projects</a>
           </li>
           <li>
-            <a class="nav-link" href="#portfolio">Portfolio</a>
+            <a class="nav-link" href="#about">About</a>
           </li>
           <li>
             <a class="nav-link" href="#contact">Contact</a>
@@ -51,64 +52,75 @@
   </nav>
 
   <header class="bg-primary text-white">
-    <div id ="about" class="container text-center">
-      <div class = "landingText">
-        <img src = "./assets/images/myimg.jpg" class = "headshotPic">
-        <h2>Hi, I'm Jesse!</h2>
-        <p class="lead"><em>I am a developer that has a passion for building new and exciting products using JavaScript and the MERN stack. I love solving problems and working in small groups, skills that I gained along with patience and discipline during many years of studying and playing music.</em>
-        </ul>
+    <div id ="landing" class="container text-center landingHead">
+      <div class="landingText">
+       <div class="typed_wrap">
+        <div class="typedText">
+          Hi! My Name is Jesse, I like to <span class="typed"></span>
+        </div>
       </div>
     </div>
-  </header>
+  </div>
+</div>
+</header>
 
-  <section class="bg-light">
-    <div id="portfolio" class="container">
-      <h1>Portfolio</h1>
-      <div class="row">
-        <div class="col-md-6">
-          <figure class="gallery-item">
-            <a href="https://sternj20.github.io/ragabook/" target="_blank">
-              <img src = "assets/images/projects/raagbook92217.png" class="portfolioImg img-responsive">
-              <figcaption class="img-title">
-                <h5>An app to notate Indian Classical Music compositions</h5>
-              </figcaption>
-            </a>
-          </figure>
-        </div>
 
-        <div class="col-md-6">
-          <figure class="gallery-item">
-            <a href="https://sternj20.github.io/foodtrucker" target="_blank">
-              <img src = "assets/images/projects/foodtrucker.jpg" class="portfolioImg img-responsive">
-              <figcaption class="img-title">
-                <h5>Locates food trucks that are currently open in San Francisco</h5>
-              </figcaption>
-            </a>
-          </figure>
-        </div>
+<section class="bg-light">
+  <div id="portfolio" class="container">
+    <h1>Projects</h1>
+    <div class="row">
+      <div class="col-md-6">
+        <figure class="gallery-item">
+          <a href="https://sternj20.github.io/ragabook/" target="_blank">
+            <img src = "assets/images/projects/raagbook92217.png" class="portfolioImg img-responsive">
+            <figcaption class="img-title">
+              <h5>An app to notate Indian Classical Music compositions</h5>
+            </figcaption>
+          </a>
+        </figure>
+      </div>
 
-        <div class="col-md-6">
-          <figure class="gallery-item">
-            <a href="https://sternj20.github.io/foodtrucker" target="_blank">
-              <img src = "assets/images/projects/hangman.jpg" class="portfolioImg img-responsive">
-              <figcaption class="img-title">
-                <h5>Classic hangman game with a jazzy twist</h5>
-              </figcaption>
-            </a>
-          </figure>
-        </div>
+      <div class="col-md-6">
+        <figure class="gallery-item">
+          <a href="https://sternj20.github.io/foodtrucker" target="_blank">
+            <img src = "assets/images/projects/foodtrucker.jpg" class="portfolioImg img-responsive">
+            <figcaption class="img-title">
+              <h5>Locates food trucks that are currently open in San Francisco</h5>
+            </figcaption>
+          </a>
+        </figure>
+      </div>
 
-        <div class="col-md-6">
-          <figure class="gallery-item">
-            <a href="https://nprscrape.herokuapp.com/" target="_blank">
-              <img src = "assets/images/projects/nprscraper.jpg" class="portfolioImg img-responsive">
-              <figcaption class="img-title">
-                <h5>App that scrapes news from NPR, can save and comment on articles</h5>
-              </figcaption>
-            </a>
-          </figure>
+      <div class="col-md-6">
+        <figure class="gallery-item">
+          <a href="https://sternj20.github.io/foodtrucker" target="_blank">
+            <img src = "assets/images/projects/hangman.jpg" class="portfolioImg img-responsive">
+            <figcaption class="img-title">
+              <h5>Classic hangman game with a jazzy twist</h5>
+            </figcaption>
+          </a>
+        </figure>
+      </div>
+
+      <div class="col-md-6">
+        <figure class="gallery-item">
+          <a href="https://nprscrape.herokuapp.com/" target="_blank">
+            <img src = "assets/images/projects/nprscraper.jpg" class="portfolioImg img-responsive">
+            <figcaption class="img-title">
+              <h5>App that scrapes news from NPR, can save and comment on articles</h5>
+            </figcaption>
+          </a>
+        </figure>
+      </div>
+    </section>
+
+    <header class="bg-primary text-white">
+      <div id ="about" class="container text-center">
+        <img src = "./assets/images/myimg.jpg" class = "headshotPic">
+        <p class="lead"><em>I am a developer that has a passion for building new and exciting products using JavaScript and the MERN stack. I love solving problems and working in small groups, skills that I gained along with patience and discipline during many years of studying and playing music.</em>
+
         </div>
-      </section>
+      </header>
 
       <!-- contact section -->
       <section class = "bg-light">
@@ -155,9 +167,8 @@
         </div>
       </div>
 
-
       <script src="assets/js/scrolling-nav.js"></script>
-
+      <script type="assets/js/typeheader.js"></script>
     </body>
 
     </html>
