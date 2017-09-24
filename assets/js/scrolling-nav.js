@@ -5,7 +5,7 @@ $(document).ready(function() {
         // Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
         stringsElement: null,
         // typing speed
-        typeSpeed: 50,
+        typeSpeed: 100,
         // time before typing starts
         startDelay: 1200,
         // backspacing speed
@@ -15,7 +15,7 @@ $(document).ready(function() {
         // loop
         loop: true,
         // false = infinite
-        loopCount: 5,
+        loopCount: 3,
         // show cursor
         showCursor: false,
         // character for cursor
