@@ -230,3 +230,10 @@ header .container {
 .contactHead{
 	color:black;
 }
+
+
+@media only screen and (max-width: 500px) {
+    .typed_wrap {
+       width:100%;
+    }
+}
