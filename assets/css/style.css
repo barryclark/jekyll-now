@@ -41,19 +41,25 @@ body{
 }
 
 h1, h2, h3{
-	color: #4aaaa5;
+	color: #dfd6ca;
+	text-align:center;
 	margin-bottom:25px;
-	font-family:'Georgia', Times, Times New Roman, serif;
+	font-family: 'Open Sans', sans-serif;
 	font-weight:bold;
 }
 h1{
-	font-size:30px;
+	text-align:center;
+	font-size:40px;
+	letter-spacing: 5px;
 }
 h2{
 	font-size:30px;	
 }
 h3{
 	font-size:20px;
+}
+hr{
+	color:gray;
 }
 
 .content{
@@ -160,10 +166,14 @@ header .container {
 	font-size:20px;
 }
 .typed_wrap {
+	font-family: 'Open Sans', sans-serif;
+
 	display: block;
-	width: 80%;
+	width: 60%;
 	height: auto;
 	padding: 30px;
+	border: 4px solid #ecf0f1;
+	background-color:black;
 	/*centers it in the .banner*/
 	position: absolute;
 	top: 50%;
@@ -212,4 +222,11 @@ header .container {
 
 .lead{
 	margin-top:30px;
+}
+
+.content{
+	padding-bottom:30px;
+}
+.contactHead{
+	color:black;
 }
