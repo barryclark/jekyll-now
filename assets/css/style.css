@@ -1,3 +1,13 @@
+.landingHead{
+	opacity:30;
+	background-color:black;
+	background-image: url("https://images.pexels.com/photos/85105/pexels-photo-85105.jpeg?w=940&h=650&auto=compress&cs=tinysrgb");
+	background-size:100%;
+	width:100%;
+	height:650px;
+	opacity: .8
+}
+
 .headshotPic{
 	width:200px;
 	height:200px;
@@ -5,14 +15,21 @@
 }
 
 .landingText{
+	width:95%;
+	margin: 0 auto;
+	background-color: #6d6d6d;
 	position:relative;
-	top:100px;
+	top:240px;
 }
 
+.aboutMe{
+	font-size:25px;
+	line-height:1.5;
+	font-style:italic;
+}
 body{
 	position:relative;
-	background-image: url("../images/seigaiha.png");
-	color: #777777;
+	background: #34495e;
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 	line-height: 25px;
 	margin-bottom:100px;
@@ -63,8 +80,7 @@ h3{
 }
 
 header .container {
-	padding-top: 100px;
-	padding-bottom: 250px;
+	padding:100px;
 }
 
 .navbar-custom {
@@ -88,47 +104,112 @@ header .container {
 /* Uncomment everything commented to CSS for the hide/show */
 
 .gallery {
-    width: 25em;
-    margin: 2em auto;
+	width: 25em;
+	margin: 2em auto;
 }
 
 .gallery-item {
-    height: auto;
-    float: left;
-    margin-bottom: 2em;
-    position: relative;
+	height: auto;
+	float: left;
+	margin-bottom: 2em;
+	position: relative;
 }
 
-    .gallery-item:first-child {
-        margin-right: 2.762430939%;
-    }
+.gallery-item:first-child {
+	margin-right: 2.762430939%;
+}
 
 .gallery-item img {
-    width: 100%;
+	width: 100%;
 }
 
 .gallery-item:hover .img-title {
-    /*opacity: 1;*/
+	/*opacity: 1;*/
 }
 
 .img-title {
-    position: absolute;
-    bottom: 0;
-    margin: 0;
-    padding-top:10px;
-    height: 25%;
-    width: 100%;
-    text-align: center;
-    /*opacity: 0;*/
-    display: none; /* comment this out for CSS hover */
-    background-color: #333;
-    /*transition: all 0.5s ease;*/
+	position: absolute;
+	bottom: 0;
+	margin: 0;
+	padding-top:10px;
+	height: 25%;
+	width: 100%;
+	text-align: center;
+	/*opacity: 0;*/
+	display: none; /* comment this out for CSS hover */
+	background-color: #333;
+	/*transition: all 0.5s ease;*/
 }
 
-    .img-title h5 {
-        position: absolute;
-        color: #fff;
-        top: 33%;
-        width: 100%;
-        text-align: center;
-    }
+.img-title h5 {
+	position: absolute;
+	color: #fff;
+	top: 33%;
+	width: 100%;
+	text-align: center;
+}
+
+
+.banner {
+	display: block;
+	min-height: 200px;
+	width: 100%;
+	position: relative;
+}
+.typedText{
+	font-size:20px;
+}
+.typed_wrap {
+	display: block;
+	width: 80%;
+	height: auto;
+	padding: 30px;
+	/*centers it in the .banner*/
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	-moz-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+}
+
+.typed_wrap h1 {
+	display: inline;
+}
+
+/*Add custom cursor so it auto inherits font styles*/
+.typed::after {
+	content: '|';
+	display: inline;
+	-webkit-animation: blink 0.7s infinite;
+	-moz-animation: blink 0.7s infinite;
+	animation: blink 0.7s infinite;
+}
+
+/*Removes cursor that comes with typed.js*/
+.typed-cursor{
+	opacity: 0;
+	display: none;
+}
+/*Custom cursor animation*/
+@keyframes blink{
+	0% { opacity:1; }
+	50% { opacity:0; }
+	100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+	0% { opacity:1; }
+	50% { opacity:0; }
+	100% { opacity:1; }
+}
+@-moz-keyframes blink{
+	0% { opacity:1; }
+	50% { opacity:0; }
+	100% { opacity:1; }
+}
+
+.lead{
+	margin-top:30px;
+}
