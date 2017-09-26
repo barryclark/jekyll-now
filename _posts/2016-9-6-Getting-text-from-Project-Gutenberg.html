@@ -11775,49 +11775,21 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Let's make a function to gather text from Project Gutenberg. We'll first check if the text is already stored locally then, if not, download it from Project Gutenberg and store it locally.</p>
+<p>Project Gutenberg is an effort to make digital copies of books available to everyone. They have books that are now in the public domain, which means that the copyright has expired from them. Because of this, their collection is mainly comprised of older texts, and they have over 50,000 books in total.</p>
+<p>This notebook demonstrates how to extract the text from Project Gutenberg. This is particularly useful for doing additional analysis such as Natural Language Processing (NLP).</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
 <span class="kn">from</span> <span class="nn">urllib</span> <span class="k">import</span> <span class="n">request</span>
 <span class="kn">import</span> <span class="nn">nltk</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">gutenberg</span><span class="p">(</span><span class="n">title</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="n">start</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">end</span><span class="o">=-</span><span class="mi">1</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;This function takes the book title, the url, and, optionally, the start and end positions&quot;&quot;&quot;</span>
-    <span class="c1">#First check if the file is stored locally</span>
-    <span class="n">fname</span> <span class="o">=</span> <span class="s1">&#39;corpora/canon_texts/&#39;</span> <span class="o">+</span> <span class="n">title</span>
-    <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isfile</span><span class="p">(</span><span class="n">fname</span><span class="p">)</span> <span class="ow">and</span> <span class="n">os</span><span class="o">.</span><span class="n">stat</span><span class="p">(</span><span class="n">fname</span><span class="p">)</span><span class="o">.</span><span class="n">st_size</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;File already exists&quot;</span><span class="p">)</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Extracting text from file&quot;</span><span class="p">)</span>
-        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">fname</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
-            <span class="n">raw</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{title}</span><span class="s2"> does not already exist. Grabbing from Project Gutenberg&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="n">title</span><span class="p">))</span>
-        <span class="n">response</span> <span class="o">=</span> <span class="n">request</span><span class="o">.</span><span class="n">urlopen</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
-        <span class="n">raw</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;utf-8-sig&#39;</span><span class="p">)</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Now let&#39;s save it&quot;</span><span class="p">)</span>
-        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">fname</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">outfile</span><span class="p">:</span>
-            <span class="n">outfile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">raw</span><span class="p">)</span>
-    <span class="n">raw_</span> <span class="o">=</span> <span class="n">raw</span><span class="p">[</span><span class="n">start</span><span class="p">:</span><span class="n">end</span><span class="p">]</span>
-    <span class="k">return</span> <span class="n">raw_</span>
+<span class="kn">import</span> <span class="nn">re</span>
 </pre></div>
 
 </div>
@@ -11829,7 +11801,162 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Let's test this out with Great Expectations</p>
+<p>We'll use the urllib.request module to access the Project Gutenberg website. This does all the work behind going out, grabbing the webpage, and returning it it us. We will also save a copy offline so that we don't have to query their website each time. This will speed up the process significantly. Let's try this out with Great Expectations by Charles Dickens. We'll provide the title, the URL to find it, and a folder to store it in. The program will do the rest.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">title</span> <span class="o">=</span> <span class="s1">&#39;Ulysses&#39;</span>
+<span class="n">author</span> <span class="o">=</span> <span class="s1">&#39;James Joyce&#39;</span>
+<span class="n">url</span> <span class="o">=</span> <span class="s1">&#39;https://www.gutenberg.org/files/4300/4300-0.txt&#39;</span>
+<span class="n">path</span> <span class="o">=</span> <span class="s1">&#39;corpora/canon_texts/&#39;</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Check if the file is stored locally</span>
+<span class="n">filename</span> <span class="o">=</span> <span class="s1">&#39;corpora/canon_texts/&#39;</span> <span class="o">+</span> <span class="n">title</span>
+<span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isfile</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span> <span class="ow">and</span> <span class="n">os</span><span class="o">.</span><span class="n">stat</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span><span class="o">.</span><span class="n">st_size</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{title}</span><span class="s2"> file already exists&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="n">title</span><span class="p">))</span>
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+            <span class="n">raw</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{title}</span><span class="s2"> file does not already exist. Grabbing from Project Gutenberg&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="n">title</span><span class="p">))</span>
+    <span class="n">response</span> <span class="o">=</span> <span class="n">request</span><span class="o">.</span><span class="n">urlopen</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+    <span class="n">raw</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;utf-8-sig&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Saving </span><span class="si">{title}</span><span class="s2"> file&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="n">title</span><span class="p">))</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">outfile</span><span class="p">:</span>
+        <span class="n">outfile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">raw</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Ulysses file already exists
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>We grabbed the text, now let's take a look at it.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">raw</span><span class="p">[:</span><span class="mi">1000</span><span class="p">]</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[4]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&#39;\n\nThe Project Gutenberg EBook of Ulysses, by James Joyce\n\n\n\nThis eBook is for the use of anyone anywhere at no cost and with almost\n\nno restrictions whatsoever. You may copy it, give it away or re-use\n\nit under the terms of the Project Gutenberg License included with this\n\neBook or online at www.gutenberg.org\n\n\n\n\n\nTitle: Ulysses\n\n\n\nAuthor: James Joyce\n\n\n\nRelease Date: August 1, 2008 [EBook #4300]\n\nLast Updated: August 17, 2017\n\n\n\nLanguage: English\n\n\n\nCharacter set encoding: UTF-8\n\n\n\n*** START OF THIS PROJECT GUTENBERG EBOOK ULYSSES ***\n\n\n\n\n\n\n\n\n\nProduced by Col Choat, and David Widger.\n\n\n\n\n\n\n\n\n\n\n\nUlysses\n\n\n\nby James Joyce\n\n\n\n\n\n\n\n\n\n— I —\n\n\n\n\n\n\n\n\n\n[ 1 ]\n\n\n\nStately, plump Buck Mulligan came from the stairhead, bearing a bowl of\n\nlather on which a mirror and a razor lay crossed. A yellow dressinggown,\n\nungirdled, was sustained gently behind him on the mild morning air. He\n\nheld the bowl aloft and intoned:\n\n\n\n—Introibo ad altare Dei.\n\n\n\nHalted, he peered down the dark winding stairs and call&#39;</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">raw</span><span class="p">[</span><span class="o">-</span><span class="mi">1000</span><span class="p">:]</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[5]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&#39;n 5. General Information About Project Gutenberg-tm electronic\n\nworks.\n\n\n\nProfessor Michael S. Hart is the originator of the Project Gutenberg-tm\n\nconcept of a library of electronic works that could be freely shared\n\nwith anyone. For thirty years, he produced and distributed Project\n\nGutenberg-tm eBooks with only a loose network of volunteer support.\n\n\n\n\n\nProject Gutenberg-tm eBooks are often created from several printed\n\neditions, all of which are confirmed as Public Domain in the U.S. unless\n\na copyright notice is included. Thus, we do not necessarily keep eBooks\n\nin compliance with any particular paper edition.\n\n\n\n\n\nMost people start at our Web site which has the main PG search facility:\n\n\n\n     http://www.gutenberg.org\n\n\n\nThis Web site includes information about Project Gutenberg-tm, including\n\nhow to make donations to the Project Gutenberg Literary Archive\n\nFoundation, how to help produce our new eBooks, and how to subscribe to\n\nour email newsletter to hear about new eBooks.\n\n\n\n\n\n&#39;</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>It contains both a preamble and postamble from Project Gutenberg. This will get in the way if we want to do any NLP with it (e.g. every book will contain the word "Gutenberg" multiple times, making it look like a common word). We will need to automatically find and skip them.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>From looking at several books on their website, it looks like they most contain <code>***START OF THIS PROJECT GUTENBERG EBOOK [TITLE]***</code>. However, some say "<strong>THE</strong> PROJECT GUTENBERG" instead of "<strong>THIS</strong> PROJECT GUTENBERG". Then there's usually a part where they say "Produced by..." or "E-text prepared by...". After this they usually say the title of the book one more time and usually but not every time, say the author's name. There's also a lot of variation in white space usage, so we'll have to account for that.
+So our strategy will be to find the <code>***START OF THIS PROJECT GUTENBERG EBOOK [TITLE]***</code> section, then find the next usage of the title following that. If there's an author's name afterwards we'll use it. If not, we'll just go from the title.
+All the books appear to end with <code>end of this project gutenberg ebook</code>, but the capitalization varies. To account for this, we'll convert all the text to lowercase when we search for the end string.</p>
 
 </div>
 </div>
@@ -11839,7 +11966,166 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">book</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;Great Expectations&#39;</span><span class="p">,</span> <span class="s1">&#39;http://www.gutenberg.org/files/1400/1400-0.txt&#39;</span><span class="p">,</span> <span class="mi">885</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">start_regex</span> <span class="o">=</span> <span class="s1">&#39;\*\*\*\s?START OF TH(IS|E) PROJECT GUTENBERG EBOOK.*\*\*\*&#39;</span>
+<span class="n">draft_start_position</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">start_regex</span><span class="p">,</span> <span class="n">raw</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">draft_start_position</span><span class="o">.</span><span class="n">end</span><span class="p">())</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>541
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Now we've got the position of the end of the <code>***START OF THIS PROJECT GUTENBERG EBOOK [TITLE]***</code> section. Let's find the next instance of the title</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">start_regex</span> <span class="o">=</span> <span class="s1">&#39;\*\*\*\s?START OF TH(IS|E) PROJECT GUTENBERG EBOOK.*\*\*\*&#39;</span>
+<span class="n">draft_start_position</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">start_regex</span><span class="p">,</span> <span class="n">raw</span><span class="p">)</span>
+<span class="n">begining</span> <span class="o">=</span> <span class="n">draft_start_position</span><span class="o">.</span><span class="n">end</span><span class="p">()</span>
+
+<span class="k">if</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">title</span><span class="o">.</span><span class="n">lower</span><span class="p">(),</span> <span class="n">raw</span><span class="p">[</span><span class="n">draft_start_position</span><span class="o">.</span><span class="n">end</span><span class="p">():]</span><span class="o">.</span><span class="n">lower</span><span class="p">()):</span>
+    <span class="n">title_position</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">title</span><span class="o">.</span><span class="n">lower</span><span class="p">(),</span> <span class="n">raw</span><span class="p">[</span><span class="n">draft_start_position</span><span class="o">.</span><span class="n">end</span><span class="p">():]</span><span class="o">.</span><span class="n">lower</span><span class="p">())</span>
+    <span class="n">begining</span> <span class="o">+=</span> <span class="n">title_position</span><span class="o">.</span><span class="n">end</span><span class="p">()</span>
+    <span class="c1"># If the title is present, check for the author&#39;s name as well</span>
+    <span class="k">if</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">author</span><span class="o">.</span><span class="n">lower</span><span class="p">(),</span> <span class="n">raw</span><span class="p">[</span><span class="n">draft_start_position</span><span class="o">.</span><span class="n">end</span><span class="p">()</span> <span class="o">+</span> <span class="n">title_position</span><span class="o">.</span><span class="n">end</span><span class="p">():]</span><span class="o">.</span><span class="n">lower</span><span class="p">()):</span>
+        <span class="n">author_position</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">author</span><span class="o">.</span><span class="n">lower</span><span class="p">(),</span> <span class="n">raw</span><span class="p">[</span><span class="n">draft_start_position</span><span class="o">.</span><span class="n">end</span><span class="p">()</span> <span class="o">+</span> <span class="n">title_position</span><span class="o">.</span><span class="n">end</span><span class="p">():]</span><span class="o">.</span><span class="n">lower</span><span class="p">())</span>
+        <span class="n">begining</span> <span class="o">+=</span> <span class="n">author_position</span><span class="o">.</span><span class="n">end</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">begining</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>628
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>We found the beginning, now let's find the end.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">end_regex</span> <span class="o">=</span> <span class="s1">&#39;end of th(is|e) project gutenberg ebook&#39;</span>
+<span class="n">end_position</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">end_regex</span><span class="p">,</span> <span class="n">raw</span><span class="o">.</span><span class="n">lower</span><span class="p">())</span>
+<span class="n">end_position</span><span class="o">.</span><span class="n">start</span><span class="p">()</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[8]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>1547809</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Now we'll grab the raw text from the end of the title to the beginning of the postamble.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">text</span> <span class="o">=</span> <span class="n">raw</span><span class="p">[</span><span class="n">begining</span><span class="p">:</span><span class="n">end_position</span><span class="o">.</span><span class="n">start</span><span class="p">()]</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Now the text is ready for NLP. Let's tokenize it just to see.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">tokens</span> <span class="o">=</span> <span class="n">nltk</span><span class="o">.</span><span class="n">word_tokenize</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -11852,7 +12138,7 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">text</span> <span class="o">=</span> <span class="n">gutenberg</span><span class="p">(</span><span class="n">book</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">book</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">book</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">tokens</span><span class="p">[:</span><span class="mi">50</span><span class="p">])</span>
 </pre></div>
 
 </div>
@@ -11869,53 +12155,7 @@ div#notebook {
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Great Expectations does not already exist. Grabbing from project Gutenberg
-Now let&#39;s save it
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Now we can tokenize it with nltk</span>
-<span class="n">tokens</span> <span class="o">=</span> <span class="n">nltk</span><span class="o">.</span><span class="n">word_tokenize</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">tokens</span><span class="p">[:</span><span class="mi">45</span><span class="p">])</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>[&#39;My&#39;, &#39;father&#39;, &#39;’&#39;, &#39;s&#39;, &#39;family&#39;, &#39;name&#39;, &#39;being&#39;, &#39;Pirrip&#39;, &#39;,&#39;, &#39;and&#39;, &#39;my&#39;, &#39;Christian&#39;, &#39;name&#39;, &#39;Philip&#39;, &#39;,&#39;, &#39;my&#39;, &#39;infant&#39;, &#39;tongue&#39;, &#39;could&#39;, &#39;make&#39;, &#39;of&#39;, &#39;both&#39;, &#39;names&#39;, &#39;nothing&#39;, &#39;longer&#39;, &#39;or&#39;, &#39;more&#39;, &#39;explicit&#39;, &#39;than&#39;, &#39;Pip&#39;, &#39;.&#39;, &#39;So&#39;, &#39;,&#39;, &#39;I&#39;, &#39;called&#39;, &#39;myself&#39;, &#39;Pip&#39;, &#39;,&#39;, &#39;and&#39;, &#39;came&#39;, &#39;to&#39;, &#39;be&#39;, &#39;called&#39;, &#39;Pip&#39;, &#39;.&#39;]
+<pre>[&#39;—&#39;, &#39;I&#39;, &#39;—&#39;, &#39;[&#39;, &#39;1&#39;, &#39;]&#39;, &#39;Stately&#39;, &#39;,&#39;, &#39;plump&#39;, &#39;Buck&#39;, &#39;Mulligan&#39;, &#39;came&#39;, &#39;from&#39;, &#39;the&#39;, &#39;stairhead&#39;, &#39;,&#39;, &#39;bearing&#39;, &#39;a&#39;, &#39;bowl&#39;, &#39;of&#39;, &#39;lather&#39;, &#39;on&#39;, &#39;which&#39;, &#39;a&#39;, &#39;mirror&#39;, &#39;and&#39;, &#39;a&#39;, &#39;razor&#39;, &#39;lay&#39;, &#39;crossed&#39;, &#39;.&#39;, &#39;A&#39;, &#39;yellow&#39;, &#39;dressinggown&#39;, &#39;,&#39;, &#39;ungirdled&#39;, &#39;,&#39;, &#39;was&#39;, &#39;sustained&#39;, &#39;gently&#39;, &#39;behind&#39;, &#39;him&#39;, &#39;on&#39;, &#39;the&#39;, &#39;mild&#39;, &#39;morning&#39;, &#39;air&#39;, &#39;.&#39;, &#39;He&#39;, &#39;held&#39;]
 </pre>
 </div>
 </div>
@@ -11928,20 +12168,184 @@ Now let&#39;s save it
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>We now have a function to either download texts or load them from memory.</p>
+<p>It worked in this case, but we should try it in many cases. To make it easier to use repeatedly, let's make a function out of this.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">text_from_gutenberg</span><span class="p">(</span><span class="n">title</span><span class="p">,</span> <span class="n">author</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="n">path</span> <span class="o">=</span> <span class="s1">&#39;corpora/canon_texts/&#39;</span><span class="p">,</span> <span class="n">return_raw</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">return_tokens</span> <span class="o">=</span> <span class="kc">False</span><span class="p">):</span>
+    <span class="c1"># Convert inputs to lowercase</span>
+    <span class="n">title</span> <span class="o">=</span> <span class="n">title</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+    <span class="n">author</span> <span class="o">=</span> <span class="n">title</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+   
+    <span class="c1"># Check if the file is stored locally</span>
+    <span class="n">filename</span> <span class="o">=</span> <span class="s1">&#39;corpora/canon_texts/&#39;</span> <span class="o">+</span> <span class="n">title</span>
+    <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isfile</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span> <span class="ow">and</span> <span class="n">os</span><span class="o">.</span><span class="n">stat</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span><span class="o">.</span><span class="n">st_size</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{title}</span><span class="s2"> file already exists&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="n">title</span><span class="p">))</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span>
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+            <span class="n">raw</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{title}</span><span class="s2"> file does not already exist. Grabbing from Project Gutenberg&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="n">title</span><span class="p">))</span>
+        <span class="n">response</span> <span class="o">=</span> <span class="n">request</span><span class="o">.</span><span class="n">urlopen</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+        <span class="n">raw</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;utf-8-sig&#39;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Saving </span><span class="si">{title}</span><span class="s2"> file&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="n">title</span><span class="p">))</span>
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">outfile</span><span class="p">:</span>
+            <span class="n">outfile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">raw</span><span class="p">)</span>
+            
+    <span class="k">if</span> <span class="n">return_raw</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">raw</span>
+    
+    <span class="c1"># Option to return tokens</span>
+    <span class="k">if</span> <span class="n">return_tokens</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">nltk</span><span class="o">.</span><span class="n">word_tokenize</span><span class="p">(</span><span class="n">find_text</span><span class="p">(</span><span class="n">raw</span><span class="p">))</span>
+    
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">find_beginning_and_end</span><span class="p">(</span><span class="n">raw</span><span class="p">)</span>
 </pre></div>
 
 </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>We'll make another function that finds the beginning and end of the text and extracts it to remove the Project Gutenberg preamble and postamble.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">find_beginning_and_end</span><span class="p">(</span><span class="n">raw</span><span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    This function serves to find the text within the raw data provided by Project Gutenberg</span>
+<span class="sd">    &#39;&#39;&#39;</span>
+    
+    <span class="n">start_regex</span> <span class="o">=</span> <span class="s1">&#39;\*\*\*\s?START OF TH(IS|E) PROJECT GUTENBERG EBOOK.*\*\*\*&#39;</span>
+    <span class="n">draft_start_position</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">start_regex</span><span class="p">,</span> <span class="n">raw</span><span class="p">)</span>
+    <span class="n">begining</span> <span class="o">=</span> <span class="n">draft_start_position</span><span class="o">.</span><span class="n">end</span><span class="p">()</span>
+
+    <span class="k">if</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">title</span><span class="o">.</span><span class="n">lower</span><span class="p">(),</span> <span class="n">raw</span><span class="p">[</span><span class="n">draft_start_position</span><span class="o">.</span><span class="n">end</span><span class="p">():]</span><span class="o">.</span><span class="n">lower</span><span class="p">()):</span>
+        <span class="n">title_position</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">title</span><span class="o">.</span><span class="n">lower</span><span class="p">(),</span> <span class="n">raw</span><span class="p">[</span><span class="n">draft_start_position</span><span class="o">.</span><span class="n">end</span><span class="p">():]</span><span class="o">.</span><span class="n">lower</span><span class="p">())</span>
+        <span class="n">begining</span> <span class="o">+=</span> <span class="n">title_position</span><span class="o">.</span><span class="n">end</span><span class="p">()</span>
+        <span class="c1"># If the title is present, check for the author&#39;s name as well</span>
+        <span class="k">if</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">author</span><span class="o">.</span><span class="n">lower</span><span class="p">(),</span> <span class="n">raw</span><span class="p">[</span><span class="n">draft_start_position</span><span class="o">.</span><span class="n">end</span><span class="p">()</span> <span class="o">+</span> <span class="n">title_position</span><span class="o">.</span><span class="n">end</span><span class="p">():]</span><span class="o">.</span><span class="n">lower</span><span class="p">()):</span>
+            <span class="n">author_position</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">author</span><span class="o">.</span><span class="n">lower</span><span class="p">(),</span> <span class="n">raw</span><span class="p">[</span><span class="n">draft_start_position</span><span class="o">.</span><span class="n">end</span><span class="p">()</span> <span class="o">+</span> <span class="n">title_position</span><span class="o">.</span><span class="n">end</span><span class="p">():]</span><span class="o">.</span><span class="n">lower</span><span class="p">())</span>
+            <span class="n">begining</span> <span class="o">+=</span> <span class="n">author_position</span><span class="o">.</span><span class="n">end</span><span class="p">()</span>
+    
+    <span class="n">end_regex</span> <span class="o">=</span> <span class="s1">&#39;end of th(is|e) project gutenberg ebook&#39;</span>
+    <span class="n">end_position</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">end_regex</span><span class="p">,</span> <span class="n">raw</span><span class="o">.</span><span class="n">lower</span><span class="p">())</span>
+
+    <span class="n">text</span> <span class="o">=</span> <span class="n">raw</span><span class="p">[</span><span class="n">begining</span><span class="p">:</span><span class="n">end_position</span><span class="o">.</span><span class="n">start</span><span class="p">()]</span>
+    
+    <span class="k">return</span> <span class="n">text</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">title</span> <span class="o">=</span> <span class="s1">&#39;Wuthering Heights&#39;</span>
+<span class="n">author</span> <span class="o">=</span> <span class="s1">&#39;Emily Bronte&#39;</span>
+<span class="n">url</span> <span class="o">=</span> <span class="s1">&#39;http://www.gutenberg.org/cache/epub/768/pg768.txt&#39;</span>
+<span class="n">path</span> <span class="o">=</span> <span class="s1">&#39;corpora/canon_texts/&#39;</span>
+<span class="n">heights_text</span> <span class="o">=</span> <span class="n">text_from_gutenberg</span><span class="p">(</span><span class="n">title</span><span class="p">,</span> <span class="n">author</span><span class="p">,</span> <span class="n">url</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">heights_text</span><span class="p">[:</span><span class="mi">200</span><span class="p">])</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>wuthering heights file already exists
+corpora/canon_texts/wuthering heights
+
+
+
+
+
+
+CHAPTER I
+
+
+
+
+
+1801.--I have just returned from a visit to my landlord--the solitary
+
+neighbour that I shall be troubled with.  This is certainly a beautiful
+
+country!  In all England, I do not 
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">title</span> <span class="o">=</span> <span class="s1">&#39;Pride and Prejudice&#39;</span>
+<span class="n">author</span> <span class="o">=</span> <span class="s1">&#39;Jane Austen&#39;</span>
+<span class="n">url</span> <span class="o">=</span> <span class="s1">&#39;https://www.gutenberg.org/files/1342/1342-0.txt&#39;</span>
+<span class="n">pride</span> <span class="o">=</span> <span class="n">text_from_gutenberg</span><span class="p">(</span><span class="n">title</span><span class="p">,</span> <span class="n">author</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="n">return_tokens</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">pride</span><span class="p">[:</span><span class="mi">50</span><span class="p">])</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>pride and prejudice file already exists
+corpora/canon_texts/pride and prejudice
+[&#39;Chapter&#39;, &#39;1&#39;, &#39;It&#39;, &#39;is&#39;, &#39;a&#39;, &#39;truth&#39;, &#39;universally&#39;, &#39;acknowledged&#39;, &#39;,&#39;, &#39;that&#39;, &#39;a&#39;, &#39;single&#39;, &#39;man&#39;, &#39;in&#39;, &#39;possession&#39;, &#39;of&#39;, &#39;a&#39;, &#39;good&#39;, &#39;fortune&#39;, &#39;,&#39;, &#39;must&#39;, &#39;be&#39;, &#39;in&#39;, &#39;want&#39;, &#39;of&#39;, &#39;a&#39;, &#39;wife&#39;, &#39;.&#39;, &#39;However&#39;, &#39;little&#39;, &#39;known&#39;, &#39;the&#39;, &#39;feelings&#39;, &#39;or&#39;, &#39;views&#39;, &#39;of&#39;, &#39;such&#39;, &#39;a&#39;, &#39;man&#39;, &#39;may&#39;, &#39;be&#39;, &#39;on&#39;, &#39;his&#39;, &#39;first&#39;, &#39;entering&#39;, &#39;a&#39;, &#39;neighbourhood&#39;, &#39;,&#39;, &#39;this&#39;, &#39;truth&#39;]
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
