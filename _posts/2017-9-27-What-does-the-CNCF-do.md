@@ -1,6 +1,6 @@
 ---
 layout: post
-title: What does the CNCF actually do - CloudNative conference
+title: What does the CNCF actually do - CloudNative conference 2017-09-27
 ---
 
 <object data="http://www.oicheryl.com/resources/what-does-the-CNCF-actually-do.pdf" type="application/pdf" width="700px" height="700px">
