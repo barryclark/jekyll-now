@@ -11,6 +11,9 @@ description: Petroleum Engineer in Making
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://avatars2.githubusercontent.com/u/17883951?v=4&s=400&u=6b3163babfb1f9918dbe7f89c1af8b98eb3e7be0
 
+# To have read more option
+excerpt_separator: ""
+
 #
 # Flags below are optional
 #
