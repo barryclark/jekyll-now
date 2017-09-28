@@ -112,9 +112,10 @@ After you add some closing markers to close the body and html document, you're b
             </div>
         </div>
     </nav>
-<!--     <div class="container">
+    <div class="container">
         {% block content %}
         {% endblock %}
+<<<<<<< HEAD
     </div> -->
 =======
   <nav class="navbar navbar-inverse">
@@ -137,6 +138,9 @@ After you add some closing markers to close the body and html document, you're b
   Enter the block content and endblock here
 </div> -->
 >>>>>>> parent of e2badc4... bootstrap post update
+=======
+    </div>
+>>>>>>> parent of d5e9a5e... commented out the block content
 
 </body>
 
@@ -145,6 +149,6 @@ After you add some closing markers to close the body and html document, you're b
 
 ```
 
-The next thing you want to do with your base.html file is include a place for the templates you extend from here. Just create a container and specify that you want any additional content (such as page.html) to go there. We want to put everything in a container. I don't think you can include the block content, endblock part as code. Github doesn't seem to like that. After the nav section, you'll need some curly braces around: % block content %
+The next thing you want to do with your base.html file is include a place for the templates you extend from here. Just create a container and specify that you want any additional content (such as page.html) to go there. We want to put everything in a container. I don't think you can include the black content, endblock part as code. Github doesn't seem to like that. After the nav section, you'll need some curly braces around: % block content %
   
 And then some around: % endblock %
