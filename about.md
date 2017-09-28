@@ -21,7 +21,7 @@ I’m seeking for a research or internship opportunity where I can apply myself 
   * Personal: [thegirishjoshi@gmail.com](mailto:thegirishjoshi@gmail.com)
 
 ### Correspondence Address
-* Room E-311, *   
-* Hostel Block, *  
-* RGIPT Amethi-229304, *   
-* Uttar Pradesh, India *  
+*Room E-311,*   
+*Hostel Block,*  
+*RGIPT Amethi-229304,*   
+*Uttar Pradesh, India*  
