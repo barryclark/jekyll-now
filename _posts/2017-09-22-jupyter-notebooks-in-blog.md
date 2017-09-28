@@ -6,7 +6,7 @@ title: Preparing Jupyter Notebooks for Blog
 
 How can I convert my Jupyter Notebooks to [Jekyll](https://jekyllrb.com/)-ready blog posts in a single click? How do I streamline that process so that I can quickly fix typos, better explain topics, or add new ideas without the hassle? I decided to write a simple batch script that allows me to edit posts in Jupyter Notebooks and then post them as HTMLs. This is built for someone running Windows and using [Github Pages](https://pages.github.com/), which is what I use to host this blog.
 
-First, you have to make sure your Jupyter Notebook posts follow the file naming convention for Jekyll blogs posts. They have to start with a date code in the YYYY-MM-DD format, followed by the post name. For example, `2016-1-1-my-first-post.ipynb` would work. The script we'll use also allows for notebooks with a space in their name, so `2016-1-1-my first post.ipynb` would work too.
+First, you have to make sure your Jupyter Notebook posts follow the file naming convention for Jekyll blogs posts. They have to start with a date code in the YYYY-MM-DD format, followed by the post name. For example, `2016-01-01-my-first-post.ipynb` would work. The script we'll use also allows for notebooks with a space in their name, so `2016-01-01-my first post.ipynb` would work too.
 
 The bulk of the work is done by [nbconvert](https://github.com/jupyter/nbconvert). Nbconvert is a great open source tool for converting Jupyter Notebooks to various formats, incluing HTML, LaTeX, Markdown, and even PDF. Jekyll uses [kramdown](https://kramdown.gettalong.org/) to convert Markdown, so you could convert the post to either HTML or Markdown. I prefer HTML and that's what we'll do here.
 
