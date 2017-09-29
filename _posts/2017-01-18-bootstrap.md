@@ -74,7 +74,7 @@ At the top we'll want a navigation bar. Using navbar-inverse makes it dark, whic
 The final part is to include a section where each individual webpage's template goes. We can create a container to put all of that content into:
 ``` html
     <div class="container">
-        \{% block content %\}
-        \{% endblock %\}
+        % block content %
+        % endblock %\
     </div>
 ```
