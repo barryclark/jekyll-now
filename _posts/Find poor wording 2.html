@@ -11775,19 +11775,18 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>How many <a href="https://jss367.github.io/light_verbs/">light verbs</a> are too many? Do they make writing dry or choppy? How common are light verbs in famous texts? We'll try to answer this by looking at light verb use on Moby Dick by Herman Melville.</p>
+<p>Let's start by gathering some text</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">urllib</span> <span class="k">import</span> <span class="n">request</span>
-<span class="kn">import</span> <span class="nn">nltk</span>
-<span class="kn">import</span> <span class="nn">os</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">nltk</span>
+<span class="kn">import</span> <span class="nn">re</span>
 </pre></div>
 
 </div>
@@ -11795,27 +11794,58 @@ div#notebook {
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>We'll gather the text using the methods described in <a href="https://jss367.github.io/Getting-text-from-Project-Gutenberg/">this post</a>. We'll use Moby Dick as an example.</p>
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">text</span> <span class="o">=</span> <span class="s2">&quot;Call me Ishmael and helped institutionalize the interference via distortion and had applicability . Some years ago- never mind how long precisely- having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world. It is a way I have of driving off the spleen and regulating the circulation. Whenever I find myself growing grim about the mouth; whenever it is a damp, drizzly November in my soul; whenever I find myself involuntarily pausing before coffin warehouses, and bringing up the rear of every funeral I meet; and especially whenever my hypos get such an upper hand of me, that it requires a strong moral principle to prevent me from deliberately stepping into the street, and methodically knocking people&#39;s hats off- then, I account it high time to get to sea as soon as I can. He helped to make the cake.&quot;</span>
+</pre></div>
 
 </div>
 </div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">text</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[3]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&#34;Call me Ishmael and helped institutionalize the interference via distortion and had applicability . Some years ago- never mind how long precisely- having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world. It is a way I have of driving off the spleen and regulating the circulation. Whenever I find myself growing grim about the mouth; whenever it is a damp, drizzly November in my soul; whenever I find myself involuntarily pausing before coffin warehouses, and bringing up the rear of every funeral I meet; and especially whenever my hypos get such an upper hand of me, that it requires a strong moral principle to prevent me from deliberately stepping into the street, and methodically knocking people&#39;s hats off- then, I account it high time to get to sea as soon as I can. He helped to make the cake.&#34;</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">url</span> <span class="o">=</span> <span class="s1">&#39;http://www.gutenberg.org/files/2701/2701-0.txt&#39;</span>
-<span class="n">beginning</span> <span class="o">=</span> <span class="mi">28876</span> <span class="c1"># where the actual text starts</span>
-
-<span class="n">response</span> <span class="o">=</span> <span class="n">request</span><span class="o">.</span><span class="n">urlopen</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
-<span class="n">raw</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;utf8&#39;</span><span class="p">)</span>
-<span class="c1"># Here is some text we&#39;ll start with</span>
-<span class="n">text</span> <span class="o">=</span> <span class="n">raw</span><span class="p">[</span><span class="n">beginning</span><span class="p">:]</span> <span class="c1"># Jump to the beginning</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Let&#39;s sentencise the text</span>
 </pre></div>
 
 </div>
@@ -11823,25 +11853,13 @@ div#notebook {
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Now that we have the text, let's tokenize it. Then we can extract the words.</p>
-
-</div>
-</div>
-</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Find the tokens</span>
-<span class="n">tokens</span> <span class="o">=</span> <span class="n">nltk</span><span class="o">.</span><span class="n">word_tokenize</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">tokens</span><span class="p">[:</span><span class="mi">50</span><span class="p">])</span>
-<span class="n">tagged</span> <span class="o">=</span> <span class="n">nltk</span><span class="o">.</span><span class="n">pos_tag</span><span class="p">(</span><span class="n">tokens</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">tagged</span><span class="p">[:</span><span class="mi">50</span><span class="p">])</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">tokenizer</span> <span class="o">=</span> <span class="n">nltk</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s1">&#39;tokenizers/punkt/english.pickle&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">-----</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">tokenizer</span><span class="o">.</span><span class="n">tokenize</span><span class="p">(</span><span class="n">text</span><span class="p">)))</span>
 </pre></div>
 
 </div>
@@ -11858,8 +11876,15 @@ div#notebook {
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[&#39;Call&#39;, &#39;me&#39;, &#39;Ishmael&#39;, &#39;.&#39;, &#39;Some&#39;, &#39;years&#39;, &#39;ago—never&#39;, &#39;mind&#39;, &#39;how&#39;, &#39;long&#39;, &#39;precisely—having&#39;, &#39;little&#39;, &#39;or&#39;, &#39;no&#39;, &#39;money&#39;, &#39;in&#39;, &#39;my&#39;, &#39;purse&#39;, &#39;,&#39;, &#39;and&#39;, &#39;nothing&#39;, &#39;particular&#39;, &#39;to&#39;, &#39;interest&#39;, &#39;me&#39;, &#39;on&#39;, &#39;shore&#39;, &#39;,&#39;, &#39;I&#39;, &#39;thought&#39;, &#39;I&#39;, &#39;would&#39;, &#39;sail&#39;, &#39;about&#39;, &#39;a&#39;, &#39;little&#39;, &#39;and&#39;, &#39;see&#39;, &#39;the&#39;, &#39;watery&#39;, &#39;part&#39;, &#39;of&#39;, &#39;the&#39;, &#39;world&#39;, &#39;.&#39;, &#39;It&#39;, &#39;is&#39;, &#39;a&#39;, &#39;way&#39;, &#39;I&#39;]
-[(&#39;Call&#39;, &#39;VB&#39;), (&#39;me&#39;, &#39;PRP&#39;), (&#39;Ishmael&#39;, &#39;NNP&#39;), (&#39;.&#39;, &#39;.&#39;), (&#39;Some&#39;, &#39;DT&#39;), (&#39;years&#39;, &#39;NNS&#39;), (&#39;ago—never&#39;, &#39;RB&#39;), (&#39;mind&#39;, &#39;VB&#39;), (&#39;how&#39;, &#39;WRB&#39;), (&#39;long&#39;, &#39;JJ&#39;), (&#39;precisely—having&#39;, &#39;JJ&#39;), (&#39;little&#39;, &#39;JJ&#39;), (&#39;or&#39;, &#39;CC&#39;), (&#39;no&#39;, &#39;DT&#39;), (&#39;money&#39;, &#39;NN&#39;), (&#39;in&#39;, &#39;IN&#39;), (&#39;my&#39;, &#39;PRP$&#39;), (&#39;purse&#39;, &#39;NN&#39;), (&#39;,&#39;, &#39;,&#39;), (&#39;and&#39;, &#39;CC&#39;), (&#39;nothing&#39;, &#39;NN&#39;), (&#39;particular&#39;, &#39;JJ&#39;), (&#39;to&#39;, &#39;TO&#39;), (&#39;interest&#39;, &#39;NN&#39;), (&#39;me&#39;, &#39;PRP&#39;), (&#39;on&#39;, &#39;IN&#39;), (&#39;shore&#39;, &#39;NN&#39;), (&#39;,&#39;, &#39;,&#39;), (&#39;I&#39;, &#39;PRP&#39;), (&#39;thought&#39;, &#39;VBD&#39;), (&#39;I&#39;, &#39;PRP&#39;), (&#39;would&#39;, &#39;MD&#39;), (&#39;sail&#39;, &#39;VB&#39;), (&#39;about&#39;, &#39;IN&#39;), (&#39;a&#39;, &#39;DT&#39;), (&#39;little&#39;, &#39;JJ&#39;), (&#39;and&#39;, &#39;CC&#39;), (&#39;see&#39;, &#39;VB&#39;), (&#39;the&#39;, &#39;DT&#39;), (&#39;watery&#39;, &#39;JJ&#39;), (&#39;part&#39;, &#39;NN&#39;), (&#39;of&#39;, &#39;IN&#39;), (&#39;the&#39;, &#39;DT&#39;), (&#39;world&#39;, &#39;NN&#39;), (&#39;.&#39;, &#39;.&#39;), (&#39;It&#39;, &#39;PRP&#39;), (&#39;is&#39;, &#39;VBZ&#39;), (&#39;a&#39;, &#39;DT&#39;), (&#39;way&#39;, &#39;NN&#39;), (&#39;I&#39;, &#39;PRP&#39;)]
+<pre>Call me Ishmael and helped institutionalize the interference via distortion and had applicability .
+-----
+Some years ago- never mind how long precisely- having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world.
+-----
+It is a way I have of driving off the spleen and regulating the circulation.
+-----
+Whenever I find myself growing grim about the mouth; whenever it is a damp, drizzly November in my soul; whenever I find myself involuntarily pausing before coffin warehouses, and bringing up the rear of every funeral I meet; and especially whenever my hypos get such an upper hand of me, that it requires a strong moral principle to prevent me from deliberately stepping into the street, and methodically knocking people&#39;s hats off- then, I account it high time to get to sea as soon as I can.
+-----
+He helped to make the cake.
 </pre>
 </div>
 </div>
@@ -11868,27 +11893,12 @@ div#notebook {
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Then we have to extract the words. We'll ignore punctuation for now. We'll make two lists - one with all the words in it and the other with the position of the words.</p>
-
-</div>
-</div>
-</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">words</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="n">word_locations</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="k">for</span> <span class="n">idx</span><span class="p">,</span> <span class="n">token</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">tokens</span><span class="p">):</span>
-    <span class="c1"># Use &quot;isalnum&quot; to check if character is alphanumberic (decimal or letter, aka not punctuation)</span>
-    <span class="k">if</span> <span class="n">token</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">isalnum</span><span class="p">()</span> <span class="ow">or</span> <span class="p">(</span><span class="n">token</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">&quot;&#39;m&quot;</span><span class="p">,</span> <span class="s2">&quot;&#39;re&quot;</span><span class="p">,</span> <span class="s2">&quot;&#39;ve&quot;</span><span class="p">,</span> <span class="s2">&quot;&#39;d&quot;</span><span class="p">,</span> <span class="s2">&quot;&#39;ll&quot;</span><span class="p">]):</span>
-        <span class="n">words</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">token</span><span class="o">.</span><span class="n">lower</span><span class="p">())</span>
-        <span class="n">word_locations</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">idx</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">sents</span> <span class="o">=</span> <span class="n">tokenizer</span><span class="o">.</span><span class="n">tokenize</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -11896,18 +11906,325 @@ div#notebook {
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>I have a text file of all the words that I consider to be light verbs. Let's open it and look at it.</p>
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">sents</span>
+</pre></div>
 
 </div>
 </div>
 </div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[9]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[&#39;Call me Ishmael and helped institutionalize the interference via distortion and had applicability .&#39;,
+ &#39;Some years ago- never mind how long precisely- having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world.&#39;,
+ &#39;It is a way I have of driving off the spleen and regulating the circulation.&#39;,
+ &#34;Whenever I find myself growing grim about the mouth; whenever it is a damp, drizzly November in my soul; whenever I find myself involuntarily pausing before coffin warehouses, and bringing up the rear of every funeral I meet; and especially whenever my hypos get such an upper hand of me, that it requires a strong moral principle to prevent me from deliberately stepping into the street, and methodically knocking people&#39;s hats off- then, I account it high time to get to sea as soon as I can.&#34;,
+ &#39;He helped to make the cake.&#39;]</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">sents</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[10]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&#39;Call me Ishmael and helped institutionalize the interference via distortion and had applicability .&#39;</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">find_weak_wording</span><span class="p">(</span><span class="n">sents</span><span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39;This function takes sentences and looks for ones with both nominalization and a light verb.</span>
+<span class="sd">    If both are found that sentence is return</span>
+<span class="sd">    The things that can be found are: nominalizations, light verbs, and filler words</span>
+
+<span class="sd">    We&#39;re also passing data were, but we&#39;re not going to add to it in the function. We are</span>
+<span class="sd">    going to use number_of_characters and parts_of_speech</span>
+
+<span class="sd">    #Can I use nominalization_re.search here?</span>
+<span class="sd">    &#39;&#39;&#39;</span>
+    <span class="n">nominalization_re</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="s1">&#39;(?:ion|ions|ism|isms|ty|ties|ment|ments|ness|nesses|ance|ances|ence|ences)$&#39;</span><span class="p">)</span>
+
+    <span class="n">verb_pos</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;VB&#39;</span><span class="p">,</span> <span class="s1">&#39;VBD&#39;</span><span class="p">,</span> <span class="s1">&#39;VBG&#39;</span><span class="p">,</span> <span class="s1">&#39;VBN&#39;</span><span class="p">,</span> <span class="s1">&#39;VBP&#39;</span><span class="p">,</span> <span class="s1">&#39;VBZ&#39;</span><span class="p">]</span>
+    <span class="c1"># Now let&#39;s enumerate over words</span>
+    <span class="k">for</span> <span class="n">idx</span><span class="p">,</span> <span class="n">sentence</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">sents</span><span class="p">):</span>
+        
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">sents</span><span class="p">)):</span>
+    <span class="n">find_weak_wording</span><span class="p">(</span><span class="n">sents</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-intense-fg ansi-bold">---------------------------------------------------------------------------</span>
+<span class="ansi-red-intense-fg ansi-bold">NameError</span>                                 Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">&lt;ipython-input-14-d679048b04c0&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span><span class="ansi-blue-intense-fg ansi-bold">()</span>
+<span class="ansi-green-fg">      1</span> <span class="ansi-green-intense-fg ansi-bold">for</span> i <span class="ansi-green-intense-fg ansi-bold">in</span> range<span class="ansi-yellow-intense-fg ansi-bold">(</span>len<span class="ansi-yellow-intense-fg ansi-bold">(</span>sents<span class="ansi-yellow-intense-fg ansi-bold">)</span><span class="ansi-yellow-intense-fg ansi-bold">)</span><span class="ansi-yellow-intense-fg ansi-bold">:</span>
+<span class="ansi-green-intense-fg ansi-bold">----&gt; 2</span><span class="ansi-yellow-intense-fg ansi-bold">     </span>find_weak_wording<span class="ansi-yellow-intense-fg ansi-bold">(</span>sents<span class="ansi-yellow-intense-fg ansi-bold">)</span>
+
+<span class="ansi-green-intense-fg ansi-bold">&lt;ipython-input-11-d15abac25370&gt;</span> in <span class="ansi-cyan-fg">find_weak_wording</span><span class="ansi-blue-intense-fg ansi-bold">(sents)</span>
+<span class="ansi-green-fg">     10</span>     &#39;&#39;&#39;
+<span class="ansi-green-fg">     11</span>     nominalization_re <span class="ansi-yellow-intense-fg ansi-bold">=</span> re<span class="ansi-yellow-intense-fg ansi-bold">.</span>compile<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-blue-intense-fg ansi-bold">&#39;(?:ion|ions|ism|isms|ty|ties|ment|ments|ness|nesses|ance|ances|ence|ences)$&#39;</span><span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-intense-fg ansi-bold">---&gt; 12</span><span class="ansi-yellow-intense-fg ansi-bold">     </span>nominalizations <span class="ansi-yellow-intense-fg ansi-bold">=</span> <span class="ansi-yellow-intense-fg ansi-bold">[</span><span class="ansi-green-intense-fg ansi-bold">None</span><span class="ansi-yellow-intense-fg ansi-bold">]</span> <span class="ansi-yellow-intense-fg ansi-bold">*</span> num_tokens
+<span class="ansi-green-fg">     13</span>     light_verbs <span class="ansi-yellow-intense-fg ansi-bold">=</span> <span class="ansi-yellow-intense-fg ansi-bold">[</span><span class="ansi-green-intense-fg ansi-bold">None</span><span class="ansi-yellow-intense-fg ansi-bold">]</span> <span class="ansi-yellow-intense-fg ansi-bold">*</span> num_tokens
+<span class="ansi-green-fg">     14</span>     filler_words <span class="ansi-yellow-intense-fg ansi-bold">=</span> <span class="ansi-yellow-intense-fg ansi-bold">[</span><span class="ansi-green-intense-fg ansi-bold">None</span><span class="ansi-yellow-intense-fg ansi-bold">]</span> <span class="ansi-yellow-intense-fg ansi-bold">*</span> num_tokens
+
+<span class="ansi-red-intense-fg ansi-bold">NameError</span>: name &#39;num_tokens&#39; is not defined</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">idx</span><span class="p">,</span> <span class="n">sentence</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">sents</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">idx</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">sentence</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>0
+Call me Ishmael and helped institutionalize the interference via distortion and had applicability .
+1
+Some years ago- never mind how long precisely- having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world.
+2
+It is a way I have of driving off the spleen and regulating the circulation.
+3
+Whenever I find myself growing grim about the mouth; whenever it is a damp, drizzly November in my soul; whenever I find myself involuntarily pausing before coffin warehouses, and bringing up the rear of every funeral I meet; and especially whenever my hypos get such an upper hand of me, that it requires a strong moral principle to prevent me from deliberately stepping into the street, and methodically knocking people&#39;s hats off- then, I account it high time to get to sea as soon as I can.
+4
+He helped to make the cake.
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="p">(</span><span class="n">results</span><span class="p">[</span><span class="s1">&#39;number_of_characters&#39;</span><span class="p">][</span><span class="n">idx</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">7</span><span class="p">)</span> <span class="ow">and</span> <span class="p">(</span><span class="n">results</span><span class="p">[</span><span class="s1">&#39;parts_of_speech&#39;</span><span class="p">][</span><span class="n">idx</span><span class="p">]</span> <span class="o">!=</span> <span class="s1">&#39;NNP&#39;</span><span class="p">)</span> \
+                               <span class="ow">and</span> <span class="p">(</span><span class="n">nominalization_re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">word</span><span class="p">)</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-intense-fg ansi-bold">---------------------------------------------------------------------------</span>
+<span class="ansi-red-intense-fg ansi-bold">NameError</span>                                 Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">&lt;ipython-input-18-370f622f0016&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span><span class="ansi-blue-intense-fg ansi-bold">()</span>
+<span class="ansi-green-intense-fg ansi-bold">----&gt; 1</span><span class="ansi-yellow-intense-fg ansi-bold"> </span><span class="ansi-yellow-intense-fg ansi-bold">(</span>results<span class="ansi-yellow-intense-fg ansi-bold">[</span><span class="ansi-blue-intense-fg ansi-bold">&#39;number_of_characters&#39;</span><span class="ansi-yellow-intense-fg ansi-bold">]</span><span class="ansi-yellow-intense-fg ansi-bold">[</span>idx<span class="ansi-yellow-intense-fg ansi-bold">]</span> <span class="ansi-yellow-intense-fg ansi-bold">&gt;</span> <span class="ansi-cyan-intense-fg ansi-bold">7</span><span class="ansi-yellow-intense-fg ansi-bold">)</span> <span class="ansi-green-intense-fg ansi-bold">and</span> <span class="ansi-yellow-intense-fg ansi-bold">(</span>results<span class="ansi-yellow-intense-fg ansi-bold">[</span><span class="ansi-blue-intense-fg ansi-bold">&#39;parts_of_speech&#39;</span><span class="ansi-yellow-intense-fg ansi-bold">]</span><span class="ansi-yellow-intense-fg ansi-bold">[</span>idx<span class="ansi-yellow-intense-fg ansi-bold">]</span> <span class="ansi-yellow-intense-fg ansi-bold">!=</span> <span class="ansi-blue-intense-fg ansi-bold">&#39;NNP&#39;</span><span class="ansi-yellow-intense-fg ansi-bold">)</span>                                <span class="ansi-green-intense-fg ansi-bold">and</span> <span class="ansi-yellow-intense-fg ansi-bold">(</span>nominalization_re<span class="ansi-yellow-intense-fg ansi-bold">.</span>search<span class="ansi-yellow-intense-fg ansi-bold">(</span>word<span class="ansi-yellow-intense-fg ansi-bold">)</span> <span class="ansi-green-intense-fg ansi-bold">is</span> <span class="ansi-green-intense-fg ansi-bold">not</span> <span class="ansi-green-intense-fg ansi-bold">None</span><span class="ansi-yellow-intense-fg ansi-bold">)</span>
+
+<span class="ansi-red-intense-fg ansi-bold">NameError</span>: name &#39;results&#39; is not defined</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[24]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">nominalization_re</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="s1">&#39;(?:ion|ions|ism|isms|ize|ty|ties|ment|ments|ness|nesses|ance|ances|ence|ences)$&#39;</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">nominalization_re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="s1">&#39;institutionalize&#39;</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[25]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&lt;_sre.SRE_Match object; span=(13, 16), match=&#39;ize&#39;&gt;</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[29]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">word</span> <span class="o">=</span> <span class="s1">&#39;corporateness&#39;</span>
+<span class="c1"># First check for nominalization</span>
+<span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">word</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">7</span> <span class="ow">and</span> <span class="n">nominalization_re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">word</span><span class="p">):</span> <span class="c1"># and check that it&#39;s not a proper noun</span>
+    <span class="c1"># Now check for light verbs</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;now check for light verbs&quot;</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>now check for light verbs
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[32]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Let&#39;s grab our list of all the light verbs</span>
@@ -11942,38 +12259,10 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># But you should be comparing stems, so find the stems for all these first</span>
-<span class="c1"># Before we do any stemming, let&#39;s make a list of all the irregular word stems</span>
-<span class="c1">#with open(os.path.join(os.path.dirname(os.getcwd()), &#39;StyleStudio/corpora/irregular-stems&#39;)) as f:</span>
-<span class="n">stem_file</span> <span class="o">=</span> <span class="s1">&#39;corpora/irregular-stems&#39;</span>
-<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">stem_file</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
-    <span class="n">dict_irregular_stems_lines</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">splitlines</span><span class="p">()</span>
-    <span class="n">dict_irregular_stems_draft</span> <span class="o">=</span> <span class="p">[</span><span class="n">line</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="p">)</span> <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">dict_irregular_stems_lines</span><span class="p">]</span>
-    <span class="n">dict_irregular_stems</span> <span class="o">=</span> <span class="p">{}</span>
-    <span class="k">for</span> <span class="n">stem_old</span><span class="p">,</span> <span class="n">stem_new</span> <span class="ow">in</span> <span class="n">dict_irregular_stems_draft</span><span class="p">:</span>
-        <span class="n">dict_irregular_stems</span><span class="p">[</span><span class="n">stem_old</span><span class="p">]</span> <span class="o">=</span> <span class="n">stem_new</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Now let&#39;s create a stemmer</span>
-<span class="n">stemmer</span> <span class="o">=</span> <span class="n">nltk</span><span class="o">.</span><span class="n">PorterStemmer</span><span class="p">()</span>
-<span class="k">def</span> <span class="nf">stem_better</span><span class="p">(</span><span class="n">word</span><span class="p">):</span>
-    <span class="n">stem</span> <span class="o">=</span> <span class="n">stemmer</span><span class="o">.</span><span class="n">stem</span><span class="p">(</span><span class="n">word</span><span class="o">.</span><span class="n">lower</span><span class="p">())</span>
-    <span class="k">if</span> <span class="n">stem</span> <span class="ow">in</span> <span class="n">dict_irregular_stems</span><span class="p">:</span>
-        <span class="n">stem</span> <span class="o">=</span> <span class="n">dict_irregular_stems</span><span class="p">[</span><span class="n">stem</span><span class="p">]</span>
-    <span class="k">return</span> <span class="n">stem</span>
+<div class=" highlight hl-ipython3"><pre><span></span> 
 </pre></div>
 
 </div>
@@ -11986,8 +12275,7 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="p">{}</span>
-<span class="n">stems</span> <span class="o">=</span> <span class="p">[</span><span class="n">stem_better</span><span class="p">(</span><span class="n">word</span><span class="p">)</span> <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">words</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span> 
 </pre></div>
 
 </div>
@@ -11997,17 +12285,50 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Now let&#39;s enumerate through the word tokens and find the light verbs</span>
-<span class="n">light</span> <span class="o">=</span> <span class="p">[</span><span class="kc">None</span><span class="p">]</span> <span class="o">*</span> <span class="nb">len</span><span class="p">(</span><span class="n">tokens</span><span class="p">)</span>
-<span class="n">verb_pos</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;VB&#39;</span><span class="p">,</span> <span class="s1">&#39;VBD&#39;</span><span class="p">,</span> <span class="s1">&#39;VBG&#39;</span><span class="p">,</span> <span class="s1">&#39;VBN&#39;</span><span class="p">,</span> <span class="s1">&#39;VBP&#39;</span><span class="p">,</span> <span class="s1">&#39;VBZ&#39;</span><span class="p">]</span>
-<span class="k">for</span> <span class="n">idx_word</span><span class="p">,</span> <span class="n">word</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">stems</span><span class="p">):</span>
-    <span class="n">idx</span> <span class="o">=</span> <span class="n">word_locations</span><span class="p">[</span><span class="n">idx_word</span><span class="p">]</span>
-    <span class="c1">#print(tagged[idx][1])</span>
-    <span class="n">light</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">tagged</span><span class="p">[</span><span class="n">idx</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="ow">in</span> <span class="n">verb_pos</span><span class="p">)</span> <span class="ow">and</span> <span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;stems&#39;</span><span class="p">][</span><span class="n">idx</span><span class="p">]</span> <span class="ow">in</span> <span class="n">light_verbs</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">light</span><span class="p">[:</span><span class="mi">100</span><span class="p">])</span>
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[30]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span>        <span class="n">light_verbs</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">results</span><span class="p">[</span><span class="s1">&#39;parts_of_speech&#39;</span><span class="p">][</span><span class="n">idx</span><span class="p">][:</span><span class="mi">2</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="ow">in</span> <span class="n">verb_pos</span><span class="p">)</span> <span class="ow">and</span> <span class="p">(</span>
+            <span class="n">results</span><span class="p">[</span><span class="s1">&#39;stems&#39;</span><span class="p">][</span><span class="n">idx</span><span class="p">]</span> <span class="ow">in</span> <span class="n">dict_light_verbs</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -12023,131 +12344,15 @@ div#notebook {
 <div class="prompt"></div>
 
 
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>[False, False, False, None, False, False, False, False, False, False, False, False, False, False, False, False, False, False, None, False, False, False, False, False, False, False, False, None, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, None, False, True, False, False, False, True, False, False, False, False, False, False, False, False, False, None, False, False, False, False, False, False, False, False, False, None, False, False, True, False, False, None, False, False, False, False, False, None, False, False, False, False, False, False, False, False, False, None, False, False, False, False, False, False, False]
-</pre>
-</div>
-</div>
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-intense-fg ansi-bold">---------------------------------------------------------------------------</span>
+<span class="ansi-red-intense-fg ansi-bold">NameError</span>                                 Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">&lt;ipython-input-30-e9dac8c06228&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span><span class="ansi-blue-intense-fg ansi-bold">()</span>
+<span class="ansi-green-intense-fg ansi-bold">----&gt; 1</span><span class="ansi-yellow-intense-fg ansi-bold"> light_verbs[idx] = (results[&#39;parts_of_speech&#39;][idx][:2][1] in verb_pos) and (
+</span><span class="ansi-green-fg">      2</span>     results[&#39;stems&#39;][idx] in dict_light_verbs)
 
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[21]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Now let&#39;s print all the light verbs</span>
-<span class="kn">from</span> <span class="nn">itertools</span> <span class="k">import</span> <span class="n">compress</span>
-<span class="n">light_verbs_in_text</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">compress</span><span class="p">(</span><span class="n">tokens</span><span class="p">,</span> <span class="n">light</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">light_verbs_in_text</span><span class="p">[:</span><span class="mi">100</span><span class="p">])</span>
-<span class="c1"># Now let&#39;s look where they are in the text</span>
-<span class="n">light_verbs_posi</span> <span class="o">=</span> <span class="p">[</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">light</span><span class="p">)</span> <span class="k">if</span> <span class="n">x</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">light_verbs_posi</span><span class="p">[:</span><span class="mi">100</span><span class="p">])</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>[&#39;is&#39;, &#39;have&#39;, &#39;is&#39;, &#39;get&#39;, &#39;get&#39;, &#39;is&#39;, &#39;take&#39;, &#39;is&#39;, &#39;is&#39;, &#39;take&#39;, &#39;is&#39;, &#39;is&#39;, &#39;were&#39;, &#39;Go&#39;, &#39;do&#39;, &#39;get&#39;, &#39;are&#39;, &#39;is&#39;, &#39;Are&#39;, &#39;gone&#39;, &#39;do&#39;, &#39;get&#39;, &#39;does&#39;, &#39;are&#39;, &#39;Take&#39;, &#39;is&#39;, &#39;be&#39;, &#39;be&#39;, &#39;be&#39;, &#39;be&#39;, &#39;are&#39;, &#39;is&#39;, &#39;is&#39;, &#39;were&#39;, &#39;goes&#39;, &#39;were&#39;, &#39;were&#39;, &#39;Go&#39;, &#39;is&#39;, &#39;is&#39;, &#39;did&#39;, &#39;is&#39;, &#39;go&#39;, &#39;did&#39;, &#39;feel&#39;, &#39;were&#39;, &#39;did&#39;, &#39;did&#39;, &#39;give&#39;, &#39;is&#39;, &#39;was&#39;, &#39;is&#39;, &#39;is&#39;, &#39;am&#39;, &#39;going&#39;, &#39;begin&#39;, &#39;begin&#39;, &#39;be&#39;, &#39;do&#39;, &#39;have&#39;, &#39;go&#39;, &#39;go&#39;, &#39;have&#39;, &#39;is&#39;, &#39;have&#39;, &#39;get&#39;, &#39;go&#39;, &#39;am&#39;, &#39;do&#39;, &#39;go&#39;, &#39;is&#39;, &#39;do&#39;, &#39;take&#39;, &#39;taking&#39;, &#39;going&#39;, &#39;is&#39;, &#39;being&#39;, &#39;is&#39;, &#39;is&#39;, &#39;go&#39;, &#39;go&#39;, &#39;make&#39;, &#39;is&#39;, &#39;putting&#39;, &#39;have&#39;, &#39;been&#39;, &#39;making&#39;, &#39;is&#39;, &#39;get&#39;, &#39;does&#39;, &#39;Do&#39;, &#39;have&#39;, &#39;is&#39;, &#39;is&#39;, &#39;is&#39;, &#39;is&#39;, &#39;be&#39;, &#39;go&#39;, &#39;make&#39;, &#39;is&#39;]
-[46, 50, 73, 109, 149, 159, 180, 186, 224, 254, 261, 269, 284, 308, 326, 384, 393, 419, 422, 426, 429, 484, 535, 558, 570, 601, 612, 641, 650, 667, 684, 691, 722, 747, 767, 820, 829, 838, 857, 864, 891, 932, 953, 966, 969, 983, 992, 1002, 1005, 1020, 1057, 1075, 1087, 1101, 1106, 1111, 1120, 1122, 1130, 1134, 1140, 1149, 1156, 1163, 1169, 1177, 1199, 1208, 1214, 1217, 1268, 1275, 1277, 1283, 1301, 1309, 1317, 1347, 1370, 1407, 1412, 1446, 1470, 1515, 1523, 1524, 1532, 1544, 1601, 1611, 1630, 1689, 1696, 1703, 1724, 1731, 1747, 1754, 1763, 1798]
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[22]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Next: find and print the entire sentence</span>
-<span class="c1"># Then: Compare to other famous authors, make a cool graph</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[23]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># We&#39;ll make a function out of the last step</span>
-<span class="k">def</span> <span class="nf">find_light_verbs</span><span class="p">(</span><span class="n">tokens</span><span class="p">,</span> <span class="n">words</span><span class="p">):</span>
-    <span class="c1"># Let&#39;s enumerate through the word tokens and find the light verbs</span>
-    <span class="n">light</span> <span class="o">=</span> <span class="p">[</span><span class="kc">None</span><span class="p">]</span> <span class="o">*</span> <span class="nb">len</span><span class="p">(</span><span class="n">tokens</span><span class="p">)</span>
-    <span class="n">verb_pos</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;VB&#39;</span><span class="p">,</span> <span class="s1">&#39;VBD&#39;</span><span class="p">,</span> <span class="s1">&#39;VBG&#39;</span><span class="p">,</span> <span class="s1">&#39;VBN&#39;</span><span class="p">,</span> <span class="s1">&#39;VBP&#39;</span><span class="p">,</span> <span class="s1">&#39;VBZ&#39;</span><span class="p">]</span>
-    <span class="k">for</span> <span class="n">idx_word</span><span class="p">,</span> <span class="n">word</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">words</span><span class="p">):</span>
-        <span class="n">idx</span> <span class="o">=</span> <span class="n">word_locations</span><span class="p">[</span><span class="n">idx_word</span><span class="p">]</span>
-        <span class="c1">#print(tagged[idx][1])</span>
-        <span class="n">light</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">tagged</span><span class="p">[</span><span class="n">idx</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="ow">in</span> <span class="n">verb_pos</span><span class="p">)</span><span class="c1"># and (data[&#39;stems&#39;][idx] in light_verbs)</span>
-    <span class="k">return</span> <span class="n">light</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[24]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">light_verbs</span> <span class="o">=</span> <span class="n">find_light_verbs</span><span class="p">(</span><span class="n">tokens</span><span class="p">,</span> <span class="n">words</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[25]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Let&#39;s delete all the None values</span>
-<span class="n">cleaned</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">light_verbs</span> <span class="k">if</span> <span class="n">x</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;There are </span><span class="si">{}</span><span class="s2"> light verbs in this text&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">sum</span><span class="p">(</span><span class="n">cleaned</span><span class="p">)))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;That is </span><span class="si">{:.2%}</span><span class="s2"> of words in this text&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">sum</span><span class="p">(</span><span class="n">cleaned</span><span class="p">)</span><span class="o">/</span><span class="nb">len</span><span class="p">(</span><span class="n">light_verbs</span><span class="p">)))</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>There are 33245 light verbs in this text
-That is 13.11% of words in this text
-</pre>
+<span class="ansi-red-intense-fg ansi-bold">NameError</span>: name &#39;results&#39; is not defined</pre>
 </div>
 </div>
 
