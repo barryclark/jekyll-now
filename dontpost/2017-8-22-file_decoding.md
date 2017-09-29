@@ -136,3 +136,12 @@ This will only give you the first 1000 characters
 
 To read a single line:
 f.readline()
+
+
+
+
+
+
+
+
+There are still some texts, like Moby Dick and The Great Gatsby, that I'm still having file encoding errors with. Also: To the lighthouse by Virginia Woolf

@@ -3,13 +3,10 @@ layout: post
 title: Bootstrap main_page.html on Pythonanywhere
 ---
 
+This post is going to start where the [previous post](https://jss367.github.io/bootstrap/) left off. We've created base.html but now we need to create a main_page.html to replicate https://sappho.pythonanywhere.com/. We've already got a good header, so let's focus on the body. Let's look at the code:
 
 
-Now you can start on page.html. We've already got a good header, so let's focus on the body. Let's look at the code:
-
-
-
-```
+``` html
 <body>
   <div class="container">
 

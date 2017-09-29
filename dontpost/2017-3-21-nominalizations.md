@@ -7,7 +7,7 @@ Let's talk about nominalization. First, what is it? Nominalization refers to the
 
 "We expanded into a new business sector" becomes "We make an expansion into a new business sector"
 
- Instead of a verb driving the sentence forward, you have a boring verb (make) and a large noun.
+Instead of a verb driving the sentence forward, you have a boring verb (make) and a large noun. The simple verb and large noun weigh the sentence down so the reader has to pause over that poriton. 
 
 
 We can do the same with adjectives: "She is honest" becomes "She has honesty." Again, this makes a simple sentence more complex.
@@ -24,8 +24,8 @@ With all that out of the way, let's talk about how to identify nominalization in
 
 
 
-Sometimes nominalization isn't a bad thing. For example, sometimes the nominalized noun will be more familiar to people, such as "" consultant?
+Sometimes nominalization isn't a bad thing. For example, sometimes the nominalized noun will be more familiar to people, such as "consultant" ?
 
-
+And there are times when you do want a pause in a sentence, especially at the end. In these cases, it is perfectly acceptable to leave nominalizations in.
 
 

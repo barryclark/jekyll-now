@@ -4,7 +4,7 @@ title: Creating base.html for a website
 category: general
 ---
 
-This article goes over how to use bootstrap to make a nice homepage. We're going to use two different templates for each page. There will be a base.html the contains everything we want spread across all pages, such as a navigation bar. Then each page will have its own, unique, templates for the specific page, such as main_page.html. This post will focus on making a base.html file that can be extended to every subsequent page.
+This article shows how to make a homepage in HTML. We're going to recreate the site https://sappho.pythonanywhere.com/. We're going to use two different templates for each page. There will be a base.html the contains everything we want spread across all pages, such as a navigation bar. Then each page will have its own, unique, templates for the specific page, such as main_page.html. This post will demonstrate how to create a base.html file that can be extended to every subsequent page.
 
 First, we'll need to specify the doctype. If it's not specified, web browsers will load your page in something called "Quirks mode". It has something to do with how IE used to render pages but now isn't common. To do this, enter:
 
@@ -81,4 +81,4 @@ The final part is to include a section where each individual webpage's template 
 
 Note that `% block content %` and `% endblock %` will each need to be enclosed in curly brackets {}, but are not in the code above to allow the page to build properly.
 
-And that's everything needed to build a base.html template for a website.
+And that's everything needed to build a base.html template for a website. Go to [this post](https://jss367.github.io/bootstrap_main_page/) to see how to make the main page.
