@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Bootstrap basehtml on Pythonanywhere
+title: Creating base.html for a website
 category: general
 ---
 
@@ -75,6 +75,10 @@ The final part is to include a section where each individual webpage's template 
 ``` html
     <div class="container">
         % block content %
-        % endblock %\
+        % endblock %
     </div>
 ```
+
+Note that `% block content %` and `% endblock %` will each need to be enclosed in curly brackets {}, but are not in the code above to allow the page to build properly.
+
+And that's everything needed to build a base.html template for a website.
