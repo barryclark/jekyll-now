@@ -1,0 +1,124 @@
+---
+layout: post
+title: Pooling clubSandwich results across multiple imputations
+date: September 29, 2017
+tags: [sandwiches, R]
+---
+
+A colleague recently asked me about how to apply cluster-robust hypothesis tests and confidence intervals, as calculated with the [clubSandwich package](https://CRAN.R-project.org/package=clubSandwich), when dealing with multiply imputed datasets. In this post, I'll share the solution I suggested.
+
+Standard methods (i.e., Rubin's rules) for pooling estimates from multiple imputed datasets are premised on the assumption that the full-data estimates are approximately normally distributed. However, this might not be reasonable when working with test statistics based on cluster-robust variance estimators, which can be imprecise when the number of clusters is small or the design matrix of predictors is unbalanced in certain ways. [Barnard and Rubin (1999)](https://doi.org/10.1093/biomet/86.4.948) proposed a small-sample correction for tests and confidence intervals based on multiple imputed datasets, and I will implement their technique using the output of `clubSandwich`, with multiple imputations generated using the [`mice` package](https://cran.r-project.org/package=mice). 
+
+### Setup
+
+To begin, let me create missingness in a dataset containing multiple clusters of observations:
+
+```{r, message = FALSE}
+library(mlmRev)
+library(mice)
+library(dplyr)
+
+data(bdf)
+
+bdf <- bdf %>%
+  select(schoolNR, IQ.verb, IQ.perf, sex, ses, langPRET, aritPRET, aritPOST) %>%
+  mutate(
+    schoolNR = factor(schoolNR),
+    sex = as.numeric(sex)
+    ) %>%
+  filter(as.numeric(schoolNR) <= 30) %>%
+  droplevels()
+
+bdf_missing <- 
+  bdf %>% 
+  select(-schoolNR) %>%
+  ampute(run = TRUE)
+
+bdf_missing <- 
+  bdf_missing$amp %>%
+  mutate(schoolNR = bdf$schoolNR)
+
+summary(bdf_missing)
+```
+
+Now I'll use `mice` to create 10 multiply imputed datasets:
+
+```{r}
+Impute_bdf <- mice(bdf_missing, m=10, meth="norm.nob", seed=24)
+```
+
+Suppose that the goal of our analysis is to estimate the coefficients of the following regression model:
+
+$$
+\text{aritPOST}_{ij} = \beta_0 + \beta_1 \text{aritPRET}_{ij}
+$$
+
+```{r}
+library(clubSandwich)
+# impute missing values
+
+Impute_bdf <- mice(bdf_subset, m=10, meth="norm.nob", seed=24)
+
+
+# fit and pool results based on homoskedastic variance-covariance estimates
+
+models_fragile <- with(data = Impute_bdf, lm(aritPOST ~ aritPOST + langPRET + sex + ses + IQ.perf + IQ.verb))
+
+models_fragile %>%
+  pool() %>%
+  summary()
+
+
+# fit results with clubSandwich standard errors
+
+models_robust <- with(data=Impute_bdf, 
+                      lm(langPOST ~ langPRET + Minority + sex + IQ.perf + IQ.verb) %>% 
+                        coef_test(cluster=bdf_subset$schoolNR, vcov="CR2", test="Satterthwaite")
+                      ) 
+
+
+# pool results with clubSandwich standard errors
+
+models_robust$analyses %>%
+  
+  # add coefficient names as a column
+  lapply(function(x) {
+    x$coef <- row.names(x)
+    x
+  }) %>%
+  bind_rows() %>%
+  as.data.frame() %>%
+  
+  # summarize by coefficient
+  group_by(coef) %>%
+  summarise(
+    m = n(),
+    V_betw = var(beta),
+    est = mean(beta),
+    V_com = mean(SE^2),
+    df_com = mean(df)
+  ) %>%
+  
+  mutate(
+    
+    # calculate intermediate quantities to get df
+    V_total = V_com + (1 + 1 / m) * V_betw,
+    fmi = (1 + 1 / m) * V_betw / V_total,
+    df_m = (m - 1) / fmi^2,
+    lambda = (df_com + 1) / (df_com + 3),
+    df_obs = lambda * df_com * (1 - fmi),
+    df = 1 / (1 / df_m + 1 / df_obs),
+    
+    # calculate summary quantities for output
+    se = sqrt(V_total),
+    t = est / se,
+    p_val = 2 * pt(abs(t), df = df, lower.tail = FALSE),
+    crit = qt(0.975, df = df),
+    lo95 = est - se * crit,
+    hi95 = est + se * crit
+  ) %>%
+  select(coef, est, t, df_com, df, p_val, lo95, hi95, fmi)
+
+# note I left df_com (average of the complete data degrees of freedom) in there for comparison purposes
+```
+
