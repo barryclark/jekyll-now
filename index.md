@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About
-permalink: /about/
+permalink: /
 ---
 
 I’m an audacious Petroleum Engineering junior at Rajiv Gandhi Institute of Petroleum Technology, getting ready to fuel a better world.
