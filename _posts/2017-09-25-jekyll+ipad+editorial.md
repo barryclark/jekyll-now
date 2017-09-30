@@ -50,7 +50,7 @@ Test test test test test test.
 <figcaption>
 Escribe escribe escribe
 </figcaption>
-</figure
+</figure>
 
 
 
