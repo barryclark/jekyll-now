@@ -4,7 +4,7 @@ title: About
 permalink: /
 ---
 
-I’m an audacious Petroleum Engineering junior at Rajiv Gandhi Institute of Petroleum Technology, getting ready to fuel a better world.
+I’m an audacious Petroleum Engineering junior at [Rajiv Gandhi Institute of Petroleum Technology](http://rgipt.ac.in/), getting ready to fuel a better world.
 
 Energy and Technology inspired me since childhood. I dreamt of harnessing perpetual energy until I studied thermodynamics. And once I dreamt of making a game-changing search engine. For me, the most gratifying aspect of technology is problem solving. It provides a medium to turn ideas into execution. 
 
