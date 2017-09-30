@@ -10,6 +10,7 @@ layout: default
     <article class="post">
 
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+      <div class="byline">by {% if post.authorUrl %}<a href="{{ post.authorUrl }}">{% endif %}{% if post.author %}{{ post.author }}{% else %}Admin{% endif %}{% if post.authorUrl %}</a>{% endif %}</div>
 
       <div class="entry">
         {{ post.excerpt }}
