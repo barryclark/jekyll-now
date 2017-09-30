@@ -6,9 +6,9 @@ permalink: /
 
 I’m an audacious Petroleum Engineering junior at [Rajiv Gandhi Institute of Petroleum Technology](http://rgipt.ac.in/), getting ready to fuel a better world.
 
-Energy and Technology inspired me since childhood. I dreamt of harnessing perpetual energy until I studied thermodynamics. And once I dreamt of making a game-changing search engine. For me, the most gratifying aspect of technology is problem solving. It provides a medium to turn ideas into execution. 
+Energy and Technology inspired me since childhood. I dreamt of harnessing perpetual energy until I studied thermodynamics. And once I dreamt of making a [game-changing]({{ site.baseurl }}/assets/WikiWheel.pdf) search engine. For me, the most gratifying aspect of technology is problem solving. It provides a medium to turn ideas into execution. 
 
-My current interests include Reservoir Engineering and Data Analytics. I have taken a keen interest in learning about Reservoir Simulation and Machine Learning.
+My current interests include *Reservoir Engineering* and *Data Analytics*. I have taken a keen interest in learning about Reservoir Simulation and Machine Learning.
 
 I spent my last summer building internet enabled circuits, making a Quadcopter fly and experimenting with vast variety of electronic sensor. Goal was to automate trivial things and explore its potential with regards to Oil & Gas Industry.
 
