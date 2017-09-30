@@ -11817,18 +11817,19 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">Book</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
-    <span class="n">all_books</span> <span class="o">=</span> <span class="p">[]</span>
-    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">title</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="n">start</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">end</span><span class="o">=-</span><span class="mi">1</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">title</span><span class="p">,</span> <span class="n">author</span><span class="p">,</span> <span class="n">url</span><span class="p">):</span>
         <span class="c1"># start is the location of where the book actually begins in the text file (skips headers, publisher info, etc.)</span>
         <span class="c1"># Let&#39;s create an end text so we can just grab a small amount for testing</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">title</span> <span class="o">=</span> <span class="n">title</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">author</span> <span class="o">=</span> <span class="n">author</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">url</span> <span class="o">=</span> <span class="n">url</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">start</span> <span class="o">=</span> <span class="n">start</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">end</span> <span class="o">=</span> <span class="n">end</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">full_raw_</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">start_</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">end_</span> <span class="o">=</span> <span class="kc">None</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">raw_</span> <span class="o">=</span> <span class="kc">None</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">tokens_</span> <span class="o">=</span> <span class="kc">None</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">pos_</span> <span class="o">=</span> <span class="kc">None</span>
@@ -11836,24 +11837,53 @@ div#notebook {
     <span class="k">def</span> <span class="nf">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">title</span>
 
+    
     <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">raw</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">raw_</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">full_raw</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">full_raw_</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
             <span class="c1">#First check if the file is stored locally</span>
             <span class="n">fname</span> <span class="o">=</span> <span class="s1">&#39;corpora/canon_texts/&#39;</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">title</span>
             <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isfile</span><span class="p">(</span><span class="n">fname</span><span class="p">):</span>
                 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{title}</span><span class="s2"> file already exists&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">title</span><span class="p">))</span>
                 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Extracting text from file&quot;</span><span class="p">)</span>
                 <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">fname</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
-                    <span class="n">raw</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+                    <span class="n">full_raw</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
             <span class="k">else</span><span class="p">:</span>
                 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{title}</span><span class="s2"> does not already exist. Grabbing from project Gutenberg&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">title</span><span class="p">))</span>
                 <span class="n">response</span> <span class="o">=</span> <span class="n">request</span><span class="o">.</span><span class="n">urlopen</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">url</span><span class="p">)</span>
-                <span class="n">raw</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;utf-8-sig&#39;</span><span class="p">)</span>
+                <span class="n">full_raw</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;utf-8-sig&#39;</span><span class="p">)</span>
                 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Now let&#39;s save it&quot;</span><span class="p">)</span>
                 <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">fname</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">outfile</span><span class="p">:</span>
-                    <span class="n">outfile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">raw</span><span class="p">)</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">raw_</span> <span class="o">=</span> <span class="n">raw</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">start</span><span class="p">:</span><span class="bp">self</span><span class="o">.</span><span class="n">end</span><span class="p">]</span>
+                    <span class="n">outfile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">full_raw</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">full_raw_</span> <span class="o">=</span> <span class="n">full_raw</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">full_raw_</span>
+    
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">start</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">start_</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">start_regex</span> <span class="o">=</span> <span class="s1">&#39;\*\*\*\s?START OF TH(IS|E) PROJECT GUTENBERG EBOOK.*\*\*\*&#39;</span>
+            <span class="n">draft_start_position</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">start_regex</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">full_raw</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">start_</span> <span class="o">=</span> <span class="n">draft_start_position</span><span class="o">.</span><span class="n">end</span><span class="p">()</span>
+
+            <span class="k">if</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">title</span><span class="o">.</span><span class="n">lower</span><span class="p">(),</span> <span class="bp">self</span><span class="o">.</span><span class="n">full_raw</span><span class="p">[</span><span class="n">draft_start_position</span><span class="o">.</span><span class="n">end</span><span class="p">():]</span><span class="o">.</span><span class="n">lower</span><span class="p">()):</span>
+                <span class="n">title_position</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">title</span><span class="o">.</span><span class="n">lower</span><span class="p">(),</span> <span class="bp">self</span><span class="o">.</span><span class="n">full_raw</span><span class="p">[</span><span class="n">draft_start_position</span><span class="o">.</span><span class="n">end</span><span class="p">():]</span><span class="o">.</span><span class="n">lower</span><span class="p">())</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">start_</span> <span class="o">+=</span> <span class="n">title_position</span><span class="o">.</span><span class="n">end</span><span class="p">()</span>
+                <span class="c1"># If the title is present, check for the author&#39;s name as well</span>
+                <span class="k">if</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">author</span><span class="o">.</span><span class="n">lower</span><span class="p">(),</span> <span class="bp">self</span><span class="o">.</span><span class="n">full_raw</span><span class="p">[</span><span class="n">draft_start_position</span><span class="o">.</span><span class="n">end</span><span class="p">()</span> <span class="o">+</span> <span class="n">title_position</span><span class="o">.</span><span class="n">end</span><span class="p">():]</span><span class="o">.</span><span class="n">lower</span><span class="p">()):</span>
+                    <span class="n">author_position</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">author</span><span class="o">.</span><span class="n">lower</span><span class="p">(),</span> <span class="bp">self</span><span class="o">.</span><span class="n">full_raw</span><span class="p">[</span><span class="n">draft_start_position</span><span class="o">.</span><span class="n">end</span><span class="p">()</span> <span class="o">+</span> <span class="n">title_position</span><span class="o">.</span><span class="n">end</span><span class="p">():]</span><span class="o">.</span><span class="n">lower</span><span class="p">())</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">start_</span> <span class="o">+=</span> <span class="n">author_position</span><span class="o">.</span><span class="n">end</span><span class="p">()</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">start_</span>
+    
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">end</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">end_regex</span> <span class="o">=</span> <span class="s1">&#39;end of th(is|e) project gutenberg ebook&#39;</span>
+        <span class="n">end_position</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">end_regex</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">full_raw</span><span class="o">.</span><span class="n">lower</span><span class="p">())</span>
+        <span class="n">end_position</span><span class="o">.</span><span class="n">start</span><span class="p">()</span>
+    
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">raw</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">raw_</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">raw_</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">full_raw</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">start</span><span class="p">:</span><span class="bp">self</span><span class="o">.</span><span class="n">end</span><span class="p">]</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">raw_</span>
     
     <span class="nd">@property</span>
