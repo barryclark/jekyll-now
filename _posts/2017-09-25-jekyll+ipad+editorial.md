@@ -7,7 +7,7 @@ image:
     feature: https://i.imgur.com/z4cwciH.jpg
 ---
 
-## posteando como un campion
+## Posteando como un campion
 
 Desde que me compre el *ipad Pro* que he tratado de a poco mudar todos mis hábitos a la pequeña pantalla con lapicito. en este momento estoy testeando si, gracias a editorial y sus workflows, lo he logrado.
 
