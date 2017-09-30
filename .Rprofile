@@ -38,6 +38,7 @@ r2jekyll <- function(filename, dpi = 192) {
   unlink("{{site.url}}", recursive=T)
 }
 
+# r2jekyll("MI-with-clubSandwich")
 # r2jekyll("imputing-covariance-matrices-for-multi-variate-meta-analysis")
 # r2jekyll("Siren-song-of-significance")
 # r2jekyll("PET-PEESE-performance")
