@@ -55,6 +55,7 @@ Suppose that the goal of our analysis is to estimate the coefficients of the fol
 $$
 \text{aritPOST}_{ij} = \beta_0 + \beta_1 \text{aritPRET}_{ij} + \beta_2 \text{langPRET}_{ij} + \beta_3 \text{sex}_{ij} + \beta_4 \text{SES}_{ij} + e_{ij},
 $$
+
 where $i$ indexes students and $j$ indexes schools, and where we allow for the possibility that errors from the same cluster are correlated in an unspecified way. With complete data, we could estimate the model by ordinary least squares and then use `clubSandwich` to get standard errors that are robust to within-cluster dependence and heteroskedasticity. The code for this is as follows:
 
 ```{r}
@@ -88,30 +89,43 @@ So we need a way to pool results based on the cluster-robust variance estimators
 [Barnard and Rubin (1999)](https://doi.org/10.1093/biomet/86.4.948) proposed a small-sample correction for tests and confidence intervals based on multiple imputed datasets that seems to work in this context. Rather than using large-sample normal approximations for inference, they derive an approximate degrees-of-freedom that combines uncertainty in the standard errors calculated from each imputed dataset with between-imputation uncertainty. The method is as follows. 
 
 Suppose that we have $m$ imputed datasets. Let $\hat\beta_{(j)}$ be the estimated regression coefficient from imputed dataset $j$, with (in this case cluster-robust) sampling variance estimate $V_{(j)}$. Further, let $\eta_{(j)}$ be the degrees of freedom corresponding to $V_{(j)}$. To combine these estimates, calculate the averages across multiply imputed datasets:
+
 $$
 \bar\beta = \frac{1}{m}\sum_{j=1}^m \hat\beta_{(j)}, \qquad \bar{V} = \frac{1}{m}\sum_{j=1}^m V_{(j)}, \qquad \bar\eta = \frac{1}{m}\sum_{j=1}^m \eta_{(j)}.
 $$
+
 Also calculate the between-imputation variance 
+
 $$
 B = \frac{1}{m - 1} \sum_{j=1}^m \left(\hat\beta_{(j)} - \bar\beta\right)^2
 $$
+
 And then combine the between- and within- variance estimates using Rubin's rules:
+
 $$
 V_{total} = \bar{V} + \frac{m + 1}{m} B.
 $$
+
 The degrees of freedom associated with $V_{total}$ modify the estimated complete-data degrees of freedom $\bar\eta$ using quantities that depend on the fraction of missing information in a coefficient. The fraction of missing information is given by
+
 $$
 \hat\gamma_m = \frac{(m+1)B}{m V_{total}}
 $$
+
 The degrees of freedom are then given by
+
 $$
 \nu_{total} = \left(\frac{1}{\nu_m} + \frac{1}{\nu_{obs}}\right)^{-1},
 $$
+
 where
+
 $$
 \nu_m = \frac{(m - 1)}{\hat\gamma_m^2}, \quad \text{and} \quad \nu_{obs} = \frac{\bar\eta (\bar\eta + 1) (1 - \hat\gamma)}{\bar\eta + 3}.
 $$
-Hypothesis tests and confidence intervals are then based on the approximation
+
+Hypothesis tests and confidence intervals are based on the approximation
+
 $$
 \frac{\bar\beta - \beta_0}{\sqrt{V_{total}}} \ \stackrel{\cdot}{\sim} \ t(\nu_{total})
 $$
