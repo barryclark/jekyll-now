@@ -45,22 +45,22 @@ summary(bdf_missing)
 
 
 {% highlight text %}
-##     IQ.verb         IQ.perf            sex             ses      
-##  Min.   : 4.00   Min.   : 5.333   Min.   :1.000   Min.   :10.0  
-##  1st Qu.:10.50   1st Qu.: 9.333   1st Qu.:1.000   1st Qu.:20.0  
-##  Median :11.50   Median :10.667   Median :1.000   Median :27.0  
-##  Mean   :11.69   Mean   :10.770   Mean   :1.476   Mean   :28.2  
-##  3rd Qu.:13.00   3rd Qu.:12.333   3rd Qu.:2.000   3rd Qu.:37.0  
-##  Max.   :18.00   Max.   :16.667   Max.   :2.000   Max.   :50.0  
-##  NA's   :35      NA's   :35       NA's   :37      NA's   :51    
+##     IQ.verb         IQ.perf            sex             ses       
+##  Min.   : 4.00   Min.   : 5.333   Min.   :1.000   Min.   :10.00  
+##  1st Qu.:10.50   1st Qu.: 9.000   1st Qu.:1.000   1st Qu.:20.00  
+##  Median :11.50   Median :10.667   Median :1.000   Median :28.00  
+##  Mean   :11.66   Mean   :10.722   Mean   :1.477   Mean   :28.59  
+##  3rd Qu.:13.00   3rd Qu.:12.333   3rd Qu.:2.000   3rd Qu.:37.00  
+##  Max.   :18.00   Max.   :16.667   Max.   :2.000   Max.   :50.00  
+##  NA's   :35      NA's   :48       NA's   :39      NA's   :38     
 ##     langPRET        aritPRET        aritPOST        schoolNR  
 ##  Min.   :15.00   Min.   : 1.00   Min.   : 2.00   40     : 35  
 ##  1st Qu.:29.00   1st Qu.: 9.00   1st Qu.:12.00   54     : 31  
 ##  Median :34.00   Median :11.00   Median :18.00   55     : 30  
-##  Mean   :33.73   Mean   :11.62   Mean   :17.65   38     : 28  
+##  Mean   :33.81   Mean   :11.53   Mean   :17.72   38     : 28  
 ##  3rd Qu.:39.00   3rd Qu.:14.00   3rd Qu.:23.00   1      : 25  
 ##  Max.   :48.00   Max.   :20.00   Max.   :30.00   18     : 24  
-##  NA's   :50      NA's   :31      NA's   :27      (Other):354
+##  NA's   :43      NA's   :35      NA's   :28      (Other):354
 {% endhighlight %}
 
 Now I'll use `mice` to create 10 multiply imputed datasets:
@@ -116,17 +116,17 @@ with(data = Impute_bdf,
 
 {% highlight text %}
 ##                est    se      t       df Pr(>|t|)  lo 95  hi 95 nmis   fmi
-## (Intercept) -1.885 1.201 -1.569  251.072    0.118 -4.252  0.481   NA 0.196
-## aritPRET     0.980 0.072 13.689 1199.844    0.000  0.839  1.120   31 0.088
-## langPRET     0.266 0.038  7.066  858.993    0.000  0.192  0.339   50 0.104
-## sex         -1.097 0.469 -2.340   97.049    0.021 -2.027 -0.167   37 0.318
-## ses          0.027 0.020  1.314  861.432    0.189 -0.013  0.066   51 0.104
+## (Intercept) -1.741 1.160 -1.501  541.293    0.134 -4.020  0.538   NA 0.132
+## aritPRET     0.978 0.069 14.138 1536.294    0.000  0.843  1.114   35 0.078
+## langPRET     0.286 0.037  7.711  731.140    0.000  0.213  0.359   43 0.113
+## sex         -1.320 0.492 -2.682   64.984    0.009 -2.302 -0.337   39 0.391
+## ses          0.014 0.020  0.688  597.891    0.492 -0.026  0.054   38 0.126
 ##             lambda
-## (Intercept)  0.189
-## aritPRET     0.087
-## langPRET     0.102
-## sex          0.305
-## ses          0.102
+## (Intercept)  0.129
+## aritPRET     0.077
+## langPRET     0.111
+## sex          0.372
+## ses          0.123
 {% endhighlight %}
 
 However, this approach ignores the possibility of correlation in the errors of units in the same cluster, which is clearly a concern in this dataset:
@@ -264,13 +264,13 @@ robust_pooled %>%
 
 {% highlight text %}
 ## # A tibble: 5 x 9
-##          coef    est    se      t     df p_val   lo95  hi95 gamma
-##         <chr>  <dbl> <dbl>  <dbl>  <dbl> <dbl>  <dbl> <dbl> <dbl>
-## 1 (Intercept) -1.885 1.353 -1.393 17.271 0.181 -4.737 0.966 0.149
-## 2    aritPRET  0.980 0.088 11.085 20.047 0.000  0.795 1.164 0.057
-## 3    langPRET  0.266 0.033  7.997 18.502 0.000  0.196 0.335 0.131
-## 4         ses  0.027 0.029  0.928 17.676 0.366 -0.034 0.087 0.051
-## 5         sex -1.097 0.534 -2.056 15.041 0.058 -2.234 0.040 0.235
+##          coef    est    se      t     df p_val   lo95   hi95 gamma
+##         <chr>  <dbl> <dbl>  <dbl>  <dbl> <dbl>  <dbl>  <dbl> <dbl>
+## 1 (Intercept) -1.741 1.460 -1.193 19.176 0.248 -4.795  1.312 0.081
+## 2    aritPRET  0.978 0.093 10.540 20.122 0.000  0.785  1.172 0.043
+## 3    langPRET  0.286 0.037  7.807 19.451 0.000  0.209  0.362 0.114
+## 4         ses  0.014 0.027  0.514 17.440 0.614 -0.043  0.071 0.068
+## 5         sex -1.320 0.518 -2.550 12.218 0.025 -2.445 -0.194 0.336
 {% endhighlight %}
 
 
@@ -289,11 +289,11 @@ robust_pooled %>%
 ## # A tibble: 5 x 4
 ##          coef    df   df_m eta_bar
 ##         <chr> <dbl>  <dbl>   <dbl>
-## 1 (Intercept)  17.3  404.0    23.0
-## 2    aritPRET  20.0 2791.0    23.2
-## 3    langPRET  18.5  523.7    23.8
-## 4         ses  17.7 3457.2    20.5
-## 5         sex  15.0  162.9    23.4
+## 1 (Intercept)  19.2 1357.0    22.9
+## 2    aritPRET  20.1 4973.5    22.9
+## 3    langPRET  19.5  695.7    24.4
+## 4         ses  17.4 1918.5    20.6
+## 5         sex  12.2   79.6    23.5
 {% endhighlight %}
 
 Here, `eta_bar` is the average of the complete data degrees of freedom, and it can be seen that the total degrees of freedom are somewhat less than the average complete-data degrees of freedom. This is by construction. Further `df_m` is the conventional degrees of freedom used in multiple-imputation, which assume that the complete-data estimates are normally distributed, and in this example they are way far off. 
@@ -302,4 +302,4 @@ Here, `eta_bar` is the average of the complete data degrees of freedom, and it c
 
 How well does this method perform in practice? I'm not entirely sure---I'm just trusting that Barnard and Rubin's approximation is sound and would work in this setting (I mean, they're smart people!). Are there other, better approaches? Totally possible. I have done zero literature review beyond the Barnard and Rubin paper. In any case, exploring the performance of this method (and any other alternatives) seems like it would make for a very nice student project. 
 
-There's also the issue of how to do tests of multi-dimensional constraints (i.e., F-tests). The `clubSandwich` implements Wald-type tests for multi-dimensional constraints, using a small-sample correction that we developed ([Tipton & Pustejovsky, 2015](http://journals.sagepub.com/doi/abs/10.3102/1076998615606099); [Pustejovsky & Tipton, 2016](http://www.tandfonline.com/doi/full/10.1080/07350015.2016.1247004)). But it would take some further thought to figure out how to handle multiply imputed data with this type of test... 
+There's also the issue of how to do tests of multi-dimensional constraints (i.e., F-tests). The `clubSandwich` package implements Wald-type tests for multi-dimensional constraints, using a small-sample correction that we developed ([Tipton & Pustejovsky, 2015](http://journals.sagepub.com/doi/abs/10.3102/1076998615606099); [Pustejovsky & Tipton, 2016](http://www.tandfonline.com/doi/full/10.1080/07350015.2016.1247004)). But it would take some further thought to figure out how to handle multiply imputed data with this type of test... 
