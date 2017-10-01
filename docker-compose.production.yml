@@ -1,0 +1,33 @@
+version: '3'
+services:
+  app:
+    image: danreynolds/blog:$DEPLOY_TAG
+    ports:
+      - 4000
+    volumes:
+      - ./.env:/app/.env
+      - logs:/app/log/
+    environment:
+      - ENV_KEY=$ENV_KEY
+      - DEPLOY_TAG=$DEPLOY_TAG
+    env_file:
+      - .env
+  nginx:
+    image: nginx
+    depends_on:
+        - app
+    ports:
+      - 80
+    networks:
+      default:
+      nginx_default:
+        aliases:
+          - BLOG
+    volumes:
+      - logs:/etc/nginx/log/
+      - ./nginx.upstream.conf:/etc/nginx/conf.d/default.conf
+volumes:
+  logs:
+networks:
+  nginx_default:
+    external: true
