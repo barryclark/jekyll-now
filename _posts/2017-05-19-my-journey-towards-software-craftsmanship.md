@@ -8,7 +8,7 @@ canonical:
     name: Codurance website
     href: https://codurance.com/2017/05/19/my-first-year-at-codurance/
 image:
-   src: /assets/img/custom/blog/my-journey-towards-software-craftsmanship/the-way.jpg
+   src: /assets/img/custom/blog/my-journey-towards-software-craftsmanship/the-way.jpeg
 tags:
 - apprenticeship
 - craftsmanship
@@ -60,7 +60,7 @@ There was a lot of work to do in my case.
 My mentor and I agreed on a strategy for learning; with test driven development as the main goal.
 We did set up a work plan for each week, and reviewed my progress weekly. The usual workload was roughly as: TDD katas in C# every week, in javascript every other week; reading a number of chapters of various books every week, studying a cloud design pattern and when possible implementing it; one blog post every two weeks (I did not always made this one); do a lightning talk every fortnight at the Codurance catch ups. 
 
-{% img /assets/img/custom/blog/my-first-year-at-codurance/a_typical_work_week.png "" %}
+{% img /assets/img/custom/blog/my-first-year-at-codurance/a-typical-week-work.png "" %}
 
 Each week, after his day of work at the client, Alex would come to the Codurance office and spend an evening of about 3 hours or more and sit with me, reviewing my learnings asking questions, answering mines, and pair programming with me.
 <br/>
