@@ -84,3 +84,10 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+  
+plugins:
+   - jekyll-gist
+   - jekyll-coffeescript
+   - jekyll-assets
+   - another-jekyll-plugin
+ # This will require each of these plugins automatically.
