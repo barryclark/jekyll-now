@@ -2,6 +2,7 @@
 layout: page
 title: About
 permalink: /about/
+permalink: /portfolio/
 published: true
 ---
 
@@ -19,7 +20,7 @@ Hi! I'm Can Ngo-Cong, Software Engineer at Freelancer. I'm fascinated with build
 * Javascript (2+ years)
 * HTML, CSS (2+ years)
 
-#### Frameworks, Platforms & APIs 
+#### Frameworks, Platforms & APIs
 
 * iOS, Android
 * Ionic 2,3
@@ -68,4 +69,3 @@ Hi! I'm Can Ngo-Cong, Software Engineer at Freelancer. I'm fascinated with build
 
 * [ngocongcan@gmail.com](mailto:ngocongcan@gmail.com)
 * [Skype : thnhanit](skype:<thnhanit>?call)
-
