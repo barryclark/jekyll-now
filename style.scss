@@ -115,6 +115,11 @@ img {
   max-width: none;
 }
 
+.byline {
+  margin-top: -1.2em;
+  color: $gray;
+}
+
 .date {
   font-style: italic;
   color: $gray;
@@ -165,7 +170,7 @@ img {
 
 .site-avatar {
   float: left;
-  width: 70px;
+  width: 119px;
   height: 70px;
   margin-right: 15px;
 

@@ -2,11 +2,15 @@
 layout: default
 ---
 
+<h1>Welcome to the Fort Wayne Linux Users Group!</h1>
+<p>We meet monthly and quarterly to discuss and learn about the Linux family of operating systems and other free-and-open source software. <a href="/about">Learn more about us here.</a></p>
+
 <div class="posts">
   {% for post in site.posts %}
     <article class="post">
 
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+      <div class="byline">by {% if post.authorUrl %}<a href="{{ post.authorUrl }}">{% endif %}{% if post.author %}{{ post.author }}{% else %}Admin{% endif %}{% if post.authorUrl %}</a>{% endif %}</div>
 
       <div class="entry">
         {{ post.excerpt }}
