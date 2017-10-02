@@ -47,20 +47,20 @@ summary(bdf_missing)
 {% highlight text %}
 ##     IQ.verb         IQ.perf            sex             ses       
 ##  Min.   : 4.00   Min.   : 5.333   Min.   :1.000   Min.   :10.00  
-##  1st Qu.:10.50   1st Qu.: 9.000   1st Qu.:1.000   1st Qu.:20.00  
+##  1st Qu.:10.50   1st Qu.: 9.333   1st Qu.:1.000   1st Qu.:20.00  
 ##  Median :11.50   Median :10.667   Median :1.000   Median :28.00  
-##  Mean   :11.66   Mean   :10.722   Mean   :1.477   Mean   :28.59  
-##  3rd Qu.:13.00   3rd Qu.:12.333   3rd Qu.:2.000   3rd Qu.:37.00  
+##  Mean   :11.68   Mean   :10.741   Mean   :1.473   Mean   :28.81  
+##  3rd Qu.:13.00   3rd Qu.:12.333   3rd Qu.:2.000   3rd Qu.:38.00  
 ##  Max.   :18.00   Max.   :16.667   Max.   :2.000   Max.   :50.00  
-##  NA's   :35      NA's   :48       NA's   :39      NA's   :38     
+##  NA's   :31      NA's   :34       NA's   :36      NA's   :36     
 ##     langPRET        aritPRET        aritPOST        schoolNR  
 ##  Min.   :15.00   Min.   : 1.00   Min.   : 2.00   40     : 35  
 ##  1st Qu.:29.00   1st Qu.: 9.00   1st Qu.:12.00   54     : 31  
 ##  Median :34.00   Median :11.00   Median :18.00   55     : 30  
-##  Mean   :33.81   Mean   :11.53   Mean   :17.72   38     : 28  
+##  Mean   :33.72   Mean   :11.54   Mean   :17.75   38     : 28  
 ##  3rd Qu.:39.00   3rd Qu.:14.00   3rd Qu.:23.00   1      : 25  
 ##  Max.   :48.00   Max.   :20.00   Max.   :30.00   18     : 24  
-##  NA's   :43      NA's   :35      NA's   :28      (Other):354
+##  NA's   :48      NA's   :36      NA's   :21      (Other):354
 {% endhighlight %}
 
 Now I'll use `mice` to create 10 multiply imputed datasets:
@@ -116,17 +116,17 @@ with(data = Impute_bdf,
 
 {% highlight text %}
 ##                est    se      t       df Pr(>|t|)  lo 95  hi 95 nmis   fmi
-## (Intercept) -1.741 1.160 -1.501  541.293    0.134 -4.020  0.538   NA 0.132
-## aritPRET     0.978 0.069 14.138 1536.294    0.000  0.843  1.114   35 0.078
-## langPRET     0.286 0.037  7.711  731.140    0.000  0.213  0.359   43 0.113
-## sex         -1.320 0.492 -2.682   64.984    0.009 -2.302 -0.337   39 0.391
-## ses          0.014 0.020  0.688  597.891    0.492 -0.026  0.054   38 0.126
+## (Intercept) -2.003 1.118 -1.791 1529.588    0.073 -4.197  0.191   NA 0.078
+## aritPRET     1.003 0.067 15.045 3508.483    0.000  0.873  1.134   36 0.051
+## langPRET     0.290 0.035  8.217 4142.874    0.000  0.221  0.359   48 0.047
+## sex         -1.524 0.402 -3.794  984.127    0.000 -2.313 -0.736   36 0.097
+## ses          0.021 0.019  1.097 2269.299    0.273 -0.016  0.058   36 0.064
 ##             lambda
-## (Intercept)  0.129
-## aritPRET     0.077
-## langPRET     0.111
-## sex          0.372
-## ses          0.123
+## (Intercept)  0.077
+## aritPRET     0.051
+## langPRET     0.047
+## sex          0.096
+## ses          0.063
 {% endhighlight %}
 
 However, this approach ignores the possibility of correlation in the errors of units in the same cluster, which is clearly a concern in this dataset:
@@ -199,14 +199,6 @@ Here is how to carry out these calculations using the results of `clubSandwich::
 
 {% highlight r %}
 # fit results with clubSandwich standard errors
-vcov.robust <- function(object, ...) object$vcov
-
-robustify <- function(x) {
-  V_mat <- vcovCR(x, cluster = bdf$schoolNR, type = "CR2")
-  x$vcov <- V_mat
-  class(x) <- c("robust", class(x))
-  return(x)
-}
 
 models_robust <- with(data = Impute_bdf, 
                       lm(aritPOST ~ aritPRET + langPRET + sex + ses) %>% 
@@ -266,11 +258,11 @@ robust_pooled %>%
 ## # A tibble: 5 x 9
 ##          coef    est    se      t     df p_val   lo95   hi95 gamma
 ##         <chr>  <dbl> <dbl>  <dbl>  <dbl> <dbl>  <dbl>  <dbl> <dbl>
-## 1 (Intercept) -1.741 1.460 -1.193 19.176 0.248 -4.795  1.312 0.081
-## 2    aritPRET  0.978 0.093 10.540 20.122 0.000  0.785  1.172 0.043
-## 3    langPRET  0.286 0.037  7.807 19.451 0.000  0.209  0.362 0.114
-## 4         ses  0.014 0.027  0.514 17.440 0.614 -0.043  0.071 0.068
-## 5         sex -1.320 0.518 -2.550 12.218 0.025 -2.445 -0.194 0.336
+## 1 (Intercept) -2.003 1.317 -1.521 19.946 0.144 -4.752  0.745 0.055
+## 2    aritPRET  1.003 0.085 11.808 20.772 0.000  0.827  1.180 0.031
+## 3    langPRET  0.290 0.031  9.316 20.764 0.000  0.225  0.354 0.060
+## 4         ses  0.021 0.027  0.785 18.202 0.443 -0.035  0.077 0.032
+## 5         sex -1.524 0.430 -3.546 19.554 0.002 -2.423 -0.626 0.084
 {% endhighlight %}
 
 
@@ -289,11 +281,11 @@ robust_pooled %>%
 ## # A tibble: 5 x 4
 ##          coef    df   df_m eta_bar
 ##         <chr> <dbl>  <dbl>   <dbl>
-## 1 (Intercept)  19.2 1357.0    22.9
-## 2    aritPRET  20.1 4973.5    22.9
-## 3    langPRET  19.5  695.7    24.4
-## 4         ses  17.4 1918.5    20.6
-## 5         sex  12.2   79.6    23.5
+## 1 (Intercept)  19.9 2943.5    23.0
+## 2    aritPRET  20.8 9247.5    23.3
+## 3    langPRET  20.8 2506.7    24.1
+## 4         ses  18.2 8646.7    20.6
+## 5         sex  19.6 1289.8    23.4
 {% endhighlight %}
 
 Here, `eta_bar` is the average of the complete data degrees of freedom, and it can be seen that the total degrees of freedom are somewhat less than the average complete-data degrees of freedom. This is by construction. Further `df_m` is the conventional degrees of freedom used in multiple-imputation, which assume that the complete-data estimates are normally distributed, and in this example they are way far off. 

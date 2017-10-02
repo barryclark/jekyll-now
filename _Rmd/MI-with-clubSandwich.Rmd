@@ -137,14 +137,6 @@ Here is how to carry out these calculations using the results of `clubSandwich::
 ```{r}
 
 # fit results with clubSandwich standard errors
-vcov.robust <- function(object, ...) object$vcov
-
-robustify <- function(x) {
-  V_mat <- vcovCR(x, cluster = bdf$schoolNR, type = "CR2")
-  x$vcov <- V_mat
-  class(x) <- c("robust", class(x))
-  return(x)
-}
 
 models_robust <- with(data = Impute_bdf, 
                       lm(aritPOST ~ aritPRET + langPRET + sex + ses) %>% 
@@ -200,6 +192,16 @@ robust_pooled %>%
 
 ```{r, include = FALSE}
 # check against internal calculations from pool()
+
+vcov.robust <- function(object, ...) object$vcov
+
+robustify <- function(x) {
+  V_mat <- vcovCR(x, cluster = bdf$schoolNR, type = "CR2")
+  x$vcov <- V_mat
+  class(x) <- c("robust", class(x))
+  return(x)
+}
+
 with(data = Impute_bdf,
      lm(aritPOST ~ aritPRET + langPRET + sex + ses) %>% 
      robustify()
