@@ -1,0 +1,30 @@
+---
+layout: main
+title: Portfolio
+---
+
+<main id="portfolio">
+	<h1 class="page-header">Portfolio</h1>
+	<section>
+		<div id="portfolio-gallery">
+			{% for project in site.projects %}
+			<div class="container">
+				<div class="aspect-ratio-keeper"> </div>
+				<div class="content">
+					<a href="{{ site.baseurl }}{{ project.url }}">
+						<span class="link-spanner"></span>
+						<div class="image-container">
+							<div class="image-vertical-align-box" >
+								<img class="inner" src="{{ site.baseurl }}/{{ site.image_path }}/{{ project.image }}">
+							</div>
+						</div>
+						<div class="inner-text">
+							<h2>{{ project.title }}</h2>
+						</div>
+					</a>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+	</section>
+</main>
