@@ -11,6 +11,14 @@ description: Mobile, Hybird & Web developer at freelancer
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://avatars0.githubusercontent.com/u/5197966?v=3&s=460
 
+
+
+# Collection definitions and settings
+collections:
+  projects:
+    output: true
+permalink: /projects/:path/
+
 #
 # Flags below are optional
 #
@@ -26,7 +34,7 @@ footer-links:
   linkedin: can-ngo-cong-530733a9
   pinterest:
   rss: # just type anything here for a working RSS icon
-  twitter: 
+  twitter:
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
