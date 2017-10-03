@@ -18,25 +18,22 @@ Journal club meetings currently take place on Wednesdays at 12:00 pm in seminar 
 
 **Join the club** by emailing [David Hocker](mailto:david.hocker@stonybrook.edu?subject=computational journal club)!
 
-# 2017 Spring Schedule
+# 2017 Fall Schedule
 
-- January 18: David Hocker
-- January 25: Tankut Can
-- February 1: Adrián Soto Cambres
-- February 8: Jonathan Rawski
-- February 15: Arthur Zhao
-- February 22,29:  no journal club, Cosyne meeting
-- March 8: Logan Becker
-- March 15: no journal club, Spring break!
-- March 22: Luca Mazzucato
-- March 29: Yuan Zhao
-- April 5: Jin Wang (rescheduled)
-- April 12: Giancarlo La Camera 
-- April 19: Andrea Giovannucci (invited speaker, Simons Foundation)
-- April 26: Memming Park
-- May 3: Phillip Kang
-- May 10: Jin Wang
-- May 17: Naz Gulce
+- September 20: David Hocker
+- September 27: Piotr Sokol
+- October 4: Phillip Kang
+- October 11: Yuan Zhao (time change, TBA)
+- October 18: Logan Becker
+- October 25: Memming Park
+- November 1: Elliot Crooks
+- November 8: Giancarlo La Camera
+- November 15: (TBA)
+- November 22:  No meeting- Thanksgiving
+- November 29: (TBA)
+- December 6: (TBA)
+- December 13: (TBA)
+- December 20: (TBA)
 
 
 
