@@ -26,4 +26,3 @@ The Glenfield 30A is a budger version of the classic Marlin 336. The Glenfield i
 **M1 Garand**
 
 The M1 Garand is an American classic. Made famous for being the issued rifle to the US GI's in WWII. The Garand is fed via 8 round en-bloc clips. When the last round is fired the clip is ejected with a very well known "ping" sound. Shooting this gun is extremely fun, and feels like shooting history.
-
