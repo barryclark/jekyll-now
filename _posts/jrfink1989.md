@@ -17,8 +17,8 @@ We plan on getting a Golden Retriever once we move in together.
 
 # Some Fun Facts
 
-I have two brothers and a sister. 
-I love reading historical fiction novels
-Two of my favorite authors are Bernard Cornwell and Conn Iggulden
-I am an avid fan of The Office and Game of Thrones
-I like the Cowboys and the Texas Rangers
+-I have two brothers and a sister. 
+-I love reading historical fiction novels.
+-Two of my favorite authors are Bernard Cornwell and Conn Iggulden.
+-I am an avid fan of The Office and Game of Thrones.
+-I like the Cowboys and the Texas Rangers.
