@@ -14,4 +14,9 @@ In my post I will briefly discuss some of my favorite firearms that I own. My to
 - Glenfield 30A
 - M1 Garand 
 
+**CZ75 BD**
 
+The CZ75 is a full sized 9mm made in the Czech Republic that was originally designed in 1975. Mine is a "BD" model which means it is equipped with a decoker rather than a safety. Capacity is excellent at 16+1 with 17, and 18 round magazines available.  I have put a couple thousand rounds through mine with no issues to date. This is my favorite handgun by far.
+
+
+**Glenfield 30A**  
