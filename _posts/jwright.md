@@ -23,4 +23,6 @@ The CZ75 is a full sized 9mm made in the Czech Republic that was originally desi
 
 The Glenfield 30A is a budger version of the classic Marlin 336. The Glenfield is a 30-30, side ejecting lever action rifle. The magazine tube holds 6 rounds for a capacity of 6+1. This rifle is one of my favorites because lever guns are a blast to shoot. 
 
+**M1 Garand**
 
+The M1 Garand is an American classic. Made famous for being the issued rifle to the US GI's in WWII. The Garand is fed via 8 round en-bloc clips. When the last round is fired the clip is ejected with a very well known "ping" sound. Shooting this gun is extremely fun, and feels like shooting history.
