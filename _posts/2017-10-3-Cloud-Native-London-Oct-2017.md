@@ -9,9 +9,9 @@ October's Cloud Native London meetup was another resounding success, with pizza 
 
 Unfortunately James Stewart had to pull out due to illness, but he will be back at a future meetup. Instead I gave an extended welcome to the principles behind Cloud Native and why the group exists, since the group has grown to 750 members in a mere five months. Those slides are available here:
 
-<object data="http://www.oicheryl.com/resources/CloudNativeLondonSep.pdf" type="application/pdf" width="700px" height="700px">
-    <embed src="http://www.oicheryl.com/resources/CloudNativeLondonSep.pdf">
-        This browser does not support PDFs. Please download the PDF to view it: <a href="http://www.oicheryl.com/resources/CloudNativeLondonSep.pdf">Download PDF</a>.</p>
+<object data="http://www.oicheryl.com/resources/CloudNativeLondonOct.pdf" type="application/pdf" width="700px" height="700px">
+    <embed src="http://www.oicheryl.com/resources/CloudNativeLondonOct.pdf">
+        This browser does not support PDFs. Please download the PDF to view it: <a href="http://www.oicheryl.com/resources/CloudNativeLondonOct.pdf">Download PDF</a>.</p>
     </embed>
 </object>
 
