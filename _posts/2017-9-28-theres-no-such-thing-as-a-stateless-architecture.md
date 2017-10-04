@@ -1,6 +1,6 @@
 ---
 layout: post
-title: There's no such thing as a "stateless" architecture - ContainerSched conference 2017-09-28
+title: "[Slides] [Aug 2017] There's no such thing as a "stateless" architecture - ContainerSched conference"
 ---
 
 <object data="http://www.oicheryl.com/resources/theres-no-such-thing-as-a-stateless-architecture.pdf" type="application/pdf" width="700px" height="700px">
@@ -8,3 +8,5 @@ title: There's no such thing as a "stateless" architecture - ContainerSched conf
         This browser does not support PDFs. Please download the PDF to view it: <a href="http://www.oicheryl.com/resources/theres-no-such-thing-as-a-stateless-architecture">Download PDF</a>.
     </embed>
 </object>
+
+Slides from my talk on 28 Sep 2017.
