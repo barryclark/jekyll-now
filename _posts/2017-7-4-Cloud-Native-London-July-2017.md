@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Slides] [July 2017] Cloud Native London July - Welcome"
+title: "[Slides] [Jul 2017] Cloud Native London July - Welcome"
 ---
 
 <object data="http://www.oicheryl.com/resources/Cloud-Native-London-July-with-notes.pdf" type="application/pdf" width="700px" height="700px">
@@ -9,4 +9,4 @@ title: "[Slides] [July 2017] Cloud Native London July - Welcome"
     </embed>
 </object>
 
-Slides from my meetup welcome on 4 September 2017.
+Slides from my meetup welcome on 4 July 2017.
