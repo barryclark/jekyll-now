@@ -6,7 +6,7 @@ category: dev
 tags: [cloud, devops, development]
 author: Daniel Tiron
 author_email: mihai.tiron@haufe-lexware.com 
-header-img: "images/new/Exportiert_16.jpg" - POZA
+header-img: "images/new/Exportiert_26.jpg"
 ---
 
 In this article, I will explain how to create an AMI from scratch starting from an .iso you want, using your favorite OS.
