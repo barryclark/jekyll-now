@@ -16,4 +16,4 @@ I hold a Masters in Computer Science from the University of Cambridge (King’s 
 
 ### Contact me
 
-Get in touch with me on Twitter at [@oicheryl](https://twitter.com/oicheryl).
+[Tweet me @oicheryl](https://twitter.com/oicheryl) for speaking engagements, work opportunities, new projects etc.
