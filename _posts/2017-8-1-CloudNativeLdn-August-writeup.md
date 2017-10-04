@@ -1,6 +1,6 @@
 ---
 layout: post
-title: containerd, K8s internals and Keel at Cloud Native London August
+title: [Photos] containerd, K8s internals and Keel at Cloud Native London August
 ---
 
 ![Karolis Rusenas, James Munnelly, Steven Thwaites, Cheryl Hung]({{site.baseurl}}/images/CloudNativeLondonAugust.jpg)
