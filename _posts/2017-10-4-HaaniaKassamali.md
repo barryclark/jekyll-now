@@ -5,3 +5,5 @@ Howdy! My name is Haania and I am a senior (whoop) technology management major f
 I love Aggie football, tex-mex and margs, and dogs. 
 
 ![_kyle.yml]({{ site.baseurl }}/images/kyle.png)
+![_taco.yml]({{ site.baseurl }}/images/taco.png)
+![_brodie.yml]({{ site.baseurl }}/images/brodie.png)
