@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [Slides] [Sep 2017] What does the CNCF actually do - CloudNative conference 
+title: "[Slides] [Sep 2017] What does the CNCF actually do - CloudNative conference"
 ---
 
 <object data="http://www.oicheryl.com/resources/what-does-the-CNCF-actually-do.pdf" type="application/pdf" width="700px" height="700px">
