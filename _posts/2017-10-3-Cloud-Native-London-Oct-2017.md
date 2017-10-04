@@ -15,12 +15,12 @@ Unfortunately James Stewart had to pull out due to illness, but he will be back 
     </embed>
 </object>
 
-![Dario Simonetti]({{site.baseurl}}/images/CNLOct-2.jpg)
-
 Our first speaker, Dario Simonetti, explained the different benefits that linkerd brought to their infrastructure at Attest, and the difference between data plane components like linkerd vs control plane components like Istio.
 
-![Irina Bednova]({{site.baseurl}}/images/CNLOct-1.jpg)
+![Dario Simonetti]({{site.baseurl}}/images/CNLOct-2.jpg)
 
 Irina Bednova leads the payments team at Monzo. She took the stage to explain their "modern banking" strategy. Their microservices-based architecture is built with Go, using Cassandra as the data store, and runs on Docker, Kubernetes and AWS.
+
+![Irina Bednova]({{site.baseurl}}/images/CNLOct-1.jpg)
 
 Thanks to all our speakers, sponsors, catering and the events and AV team. [See you in November!](https://www.meetup.com/Cloud-Native-London/events/240151506/)
