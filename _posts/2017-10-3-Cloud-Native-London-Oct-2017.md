@@ -5,7 +5,7 @@ title: "[Photos] [Slides] [Oct 2017] Monzo and linkerd at Cloud Native London Oc
 
 ![Dario Simonetti, Cheryl Hung and Irina Bednova]({{site.baseurl}}/images/CNLOct-0.jpg)
 
-October's [https://www.meetup.com/Cloud-Native-London/events/240108227](Cloud Native London meetup) was another resounding success, with pizza and beers and 100 developers, devops and techies attending.
+October's [Cloud Native London meetup](https://www.meetup.com/Cloud-Native-London/events/240108227) was another resounding success, with pizza and beers and 100 developers, devops and techies attending.
 
 Unfortunately James Stewart had to pull out due to illness, but he will be back at a future meetup. Instead I gave an extended welcome to the principles behind Cloud Native and why the group exists, since the group has grown to 750 members in a mere five months. Those slides are available here:
 
