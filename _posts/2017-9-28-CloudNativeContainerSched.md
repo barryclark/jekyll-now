@@ -19,11 +19,11 @@ My talks were extremely well received, even if my demo was a little hairy; half 
 
 The sponsor booth was busy too, with lots of people asking about the expected performance that StorageOS would provide for them.
 
-![Cheryl Hung]({{site.baseurl}}/images/37099610950_cbc7c0f47a_z.jpg)
-
 ![Cheryl Hung]({{site.baseurl}}/images/DK6ExEgW0AMlTuw.jpg)
 
-All in all, an excellent awareness raising event for StorageOS, and a great event for me as a speaker.
+![Cheryl Hung]({{site.baseurl}}/images/37099610950_cbc7c0f47a_z.jpg)
+
+All in all, an excellent awareness raising event for StorageOS, and a great event for me as a speaker. If you would like to get in touch with me about speaking opportunities, tweet me at [https://twitter.com/oicheryl](@oicheryl).
 
 ![Cheryl Hung]({{site.baseurl}}/images/37318526162_a8220cafe4_z.jpg)
 
