@@ -7,7 +7,7 @@ title: "[Photos] [Slides] [Oct 2017] Monzo and linkerd at Cloud Native London Oc
 
 October's Cloud Native London meetup was another resounding success, with pizza and beers and around 100 attendees.
 
-Unfortunately due to illness James Stewart had to pull out, but he will be speaking at a future meetup instead. I gave an extended welcome to the principles behind Cloud Native and why the group exists, since the group has grown to 750 members in a mere five months. Those slides are available here:
+Unfortunately James Stewart had to pull out due to illness, but he will be back at a future meetup. Instead I gave an extended welcome to the principles behind Cloud Native and why the group exists, since the group has grown to 750 members in a mere five months. Those slides are available here:
 
 <object data="http://www.oicheryl.com/resources/CloudNativeLondonSep.pdf" type="application/pdf" width="700px" height="700px">
     <embed src="http://www.oicheryl.com/resources/CloudNativeLondonSep.pdf">
