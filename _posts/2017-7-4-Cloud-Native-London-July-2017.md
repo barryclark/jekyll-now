@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Slides] Cloud Native London July - Welcome"
+title: "[Slides] [July 2017] Cloud Native London July - Welcome"
 ---
 
 <object data="http://www.oicheryl.com/resources/Cloud-Native-London-July-with-notes.pdf" type="application/pdf" width="700px" height="700px">
@@ -8,3 +8,5 @@ title: "[Slides] Cloud Native London July - Welcome"
         This browser does not support PDFs. Please download the PDF to view it: <a href="http://www.oicheryl.com/resources/Cloud-Native-London-July-with-notes.pdf">Download PDF</a>.</p>
     </embed>
 </object>
+
+Slides from my meetup welcome on 4 September 2017.
