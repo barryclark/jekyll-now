@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Slides] [Aug 2017] There's no such thing as a 'stateless' architecture - ContainerSched conference"
+title: "[Slides] [Sep 2017] There's no such thing as a 'stateless' architecture - ContainerSched conference"
 ---
 
 <object data="http://www.oicheryl.com/resources/theres-no-such-thing-as-a-stateless-architecture.pdf" type="application/pdf" width="700px" height="700px">
