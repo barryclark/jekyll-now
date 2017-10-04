@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Photos] Sliders and speakers at Cloud Native London July"
+title: "[Photos] [Jul 2017] Sliders and speakers at Cloud Native London July"
 ---
 
 ![Michael Hausenblas, Cheryl Hung and Ben Hall]({{site.baseurl}}/images/IMG_20170704_185045.jpg)
