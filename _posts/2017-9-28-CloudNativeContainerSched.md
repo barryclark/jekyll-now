@@ -5,7 +5,7 @@ title: "[Photos] [Sep 2017] Presenting at CloudNative and ContainerSched confere
 
 ![Cheryl Hung]({{site.baseurl}}/images/37318524542_29c1f0d543_z.jpg)
 
-I presented at two separate conferences in September in London, CloudNative and ContainerSched. Even though they were theoretically two separate conferences, they ran over three contiguous days and I spoke at and sponsored both, so it felt like one conference.
+I presented at two separate conferences in September in London, CloudNative and ContainerSched. Even though they are two separate conferences, they ran over three contiguous days, cover similar topics and I spoke at and sponsored both, so it felt like one conference.
 
 ![Cheryl Hung]({{site.baseurl}}/images/37092189720_d333715b33_z.jpg)
 
