@@ -5,7 +5,7 @@ title: "[Video] [Slides] [Sep 2017] Eight principles of Cloud Native Storage - C
 
 <iframe src="https://player.vimeo.com/video/235727293" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-Video from my talk at the CloudNative conference in London on "Eight principles for Cloud Native Storage". My slides are available here:
+I gave a talk at the CloudNative conference in London on "Eight principles for Cloud Native Storage" on 27 September, 2017. My slides are available here:
 
 <object data="http://www.oicheryl.com/resources/Eight-principles-for-Cloud-Native-Storage.pdf" type="application/pdf" width="700px" height="700px">
     <embed src="http://www.oicheryl.com/resources/Eight-principles-for-Cloud-Native-Storage.pdf">
