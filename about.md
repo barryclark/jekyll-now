@@ -7,11 +7,11 @@ permalink: /about/
 We have added a little about ourselves on the next tab.
 
 ### Members
-Dulce G
-Haania Kassamali
-Rick Medina
-Grant Elford
-Turker Ayar
+Dulce G,
+Haania Kassamali,
+Rick Medina,
+Grant Elford,
+Turker Ayar,
 Lioncel Lin
 
 ### Contact me
