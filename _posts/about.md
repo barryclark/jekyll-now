@@ -1,7 +1,7 @@
 ---
 ---Info About me
 
-This is a little info about me. I was born and raised in Houston, TX. with one older brother. I play paintball on the weekends, and
+This is a little info about me. I was born and raised in Houston, TX with one older brother. I play paintball on the weekends, and
 ride my motorcycle most places during the week.
 -Grant Elford
 
