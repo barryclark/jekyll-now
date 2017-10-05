@@ -1,7 +1,4 @@
 ---
-layout: page
-title: About
-permalink: /about/
 ---
 
 Grant Elford
@@ -10,8 +7,8 @@ My hobbies include playing paintball and riding my motorcycle.
 
 
 ### More Information
-https://github.com/GrantElf/tcmg476-group1.github.io/blob/master/images/motorcycle.jpg?raw=true
-https://github.com/GrantElf/tcmg476-group1.github.io/blob/master/images/Paintball.png?raw=true
+[motorcycle](https://github.com/GrantElf/tcmg476-group1.github.io/blob/master/images/motorcycle.jpg?raw=true)
+[Paintball](https://github.com/GrantElf/tcmg476-group1.github.io/blob/master/images/Paintball.png?raw=true)
 
 
 ### Contact me
