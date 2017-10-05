@@ -4,12 +4,16 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+We have added a little about ourselves on the next tab.
 
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
+### Members
+Dulce G
+Haania Kassamali
+Rick Medina
+Grant Elford
+Turker Ayar
+Lioncel Lin
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[Group 1](mailto:email@domain.com)
