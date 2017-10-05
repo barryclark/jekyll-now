@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Slides] [Sep 2017] There's no such thing as a 'stateless' architecture - ContainerSched conference"
+title: "[Video] [Slides] [Sep 2017] There's no such thing as a 'stateless' architecture - ContainerSched conference"
 ---
 
 <iframe src="https://player.vimeo.com/video/235942976" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
