@@ -4,6 +4,7 @@ title: Turker Ayar!
 ---
 
 Howdy all,
+
 I just got my Aggie Ring and I am supper exicted about that!
 It is so shiny and majestic. 
 Sadly, though I would have to say good by to my precious soon because it is way too big..
