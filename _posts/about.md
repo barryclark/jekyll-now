@@ -11,6 +11,8 @@ My hobbies include playing paintball and riding my motorcycle.
 
 ### More Information
 https://github.com/GrantElf/tcmg476-group1.github.io/blob/master/images/motorcycle.jpg?raw=true
+https://github.com/GrantElf/tcmg476-group1.github.io/blob/master/images/Paintball.png?raw=true
+
 
 ### Contact me
 
