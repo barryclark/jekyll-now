@@ -14,6 +14,6 @@ Grant Elford,
 Turker Ayar,
 Lioncel Lin
 
-### Contact me
+### Contact us
 
 [Group 1](mailto:email@domain.com)
