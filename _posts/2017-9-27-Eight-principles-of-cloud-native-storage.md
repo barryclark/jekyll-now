@@ -1,7 +1,9 @@
 ---
 layout: post
-title: "[Slides] [Sep 2017] Eight principles of Cloud Native Storage - CloudNative conference"
+title: "[Video] [Slides] [Sep 2017] Eight principles of Cloud Native Storage - CloudNative conference"
 ---
+
+<iframe src="https://player.vimeo.com/video/235727293" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 <object data="http://www.oicheryl.com/resources/Eight-principles-for-Cloud-Native-Storage.pdf" type="application/pdf" width="700px" height="700px">
     <embed src="http://www.oicheryl.com/resources/Eight-principles-for-Cloud-Native-Storage.pdf">
@@ -9,4 +11,4 @@ title: "[Slides] [Sep 2017] Eight principles of Cloud Native Storage - CloudNati
     </embed>
 </object>
 
-Video from my talk at the CloudNative conference in London on "Eight principles for Cloud Native Storage".
+Slides and video from my talk at the CloudNative conference in London on "Eight principles for Cloud Native Storage".
