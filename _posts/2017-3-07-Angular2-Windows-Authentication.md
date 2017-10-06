@@ -20,17 +20,15 @@ Create a ASP.NET WebApi project with **Windows Authentication** checked, this wi
       "sslPort": 0
     }
   }
-
 ```
 ##### web.config
-
+```
     <aspNetCore processPath="%LAUNCHER_PATH%" 
                 arguments="%LAUNCHER_ARGS%" 
                 stdoutLogEnabled="false" 
                 stdoutLogFile=".\logs\stdout" 
                 forwardWindowsAuthToken="true" />
-                
-
+```             
 ### Enabling Cross-Origin Request(CORS)
 
 >Browser security provents a web page from making AJAX requests to another momain. This restriction is called the same-origin policy, and provents a malicious site from reading sensitive data from another site. 
@@ -40,12 +38,11 @@ Create a ASP.NET WebApi project with **Windows Authentication** checked, this wi
 [Read more](https://docs.microsoft.com/en-us/aspnet/core/security/cors)
 
 ###### Add CORS package to your project
-
 > you can use NuGet Manger to install it or run npm install
-
 > reference it in your startup.cs file
->> using Microsoft.AspNetCore.Cors;
-
+```
+using Microsoft.AspNetCore.Cors;
+```
 Add the orgins which will access your WEB API, for example: http://localhost
 ```
         // This method gets called by the runtime. Use this method to add services to the container
