@@ -11,7 +11,7 @@ Luckily for us, and our audience, the organizers made sure that we received a th
 
 I promised myself that if I would make it to the finals, I would start a blog to communicate my research and ideas to a wider audience. Last Monday the competition ended. Though I did not make it to the top three, the other seven finalist and myself gave it all to show that being a scientist is the coolest job in the world! In the last month, I had the incredible opportunity to grow as a communicator. Could there be a better first blog post than sharing some of the things I learned at the media school?
 
-Below are the seven most important points I will remember from the my education as a science communicator.
+Below are the seven most important points I will remember from the my education as a science communicator. For the more visually inclined people, you can view some of my sketchnotes of the media school [here](https://drive.google.com/file/d/0B-WzNfc6RqhaQVRFZkhEOWlnejA/view?usp=sharing). 
 
 ## Good elevator pitch
 
@@ -49,9 +49,9 @@ One tip is to make use of a 3D object to show during your presentation. Do you s
 
 > 'Storytelling is the most powerful way to put ideas into the world today' ~ Robert McKee
 
-Scientists like to talk about *facts*, journalists like to tell a *story*. Facts push information in and is about knowledge. A story draws people in and is about remembering and understanding.
+Scientists like to talk about *facts*, journalists like to tell a *story*. Facts push information out and is about knowledge. A story draws people in and is about remembering and understanding.
 
-When you convey your research, try to structure your talk as a story. This can be your story, how you struggled in the lab to get to your results. It can also be the story of the objects of your research: tell the tale of the bacteria in your gut, how they struggle to survive and how they will rebel to you if you keep them unhappy.
+When you convey your research, try to structure your talk as a story. This can be your story, how you struggled in the lab to get to your results. It can also be the story of the objects of your research: tell the tale of the bacteria in your gut, how they struggle to survive and how they will rebel to you if you keep them unhappy by eating junk food.
 
 My research is about developing machine learning methods to learn from pairwise data - about as far from a story as you can imagine. To explain my research, I told the tale of a zookeeper who received a new animal and does not know what to feed it.
 
