@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Automate Amazon Machine Images(AMI’s) with Packer
-subtitle: 
+subtitle: How to create an AMI from scratch with your favorite OS
 category: dev
 tags: [cloud, devops, development]
 author: Daniel Tiron
