@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Seven things I learned in the PhD Cup media school
+title: Seven things I learned during the PhD Cup media school
 ---
 
 Whether you like it or not, a large part of a scientist job is about communicating. You have to pitch your ideas to collaborators, outline your plans to get grants, educate your students and report your findings to the scientific community. It is hence a good investment to spend a bit of your precious time honing your soft skills.
@@ -9,7 +9,7 @@ Last month I participated at the [Flemish PhD Cup](http://www.vlaamsephdcup.be/)
 
 Luckily for us, and our audience, the organizers made sure that we received a thorough preparation. The sixteen selected candidates, postdocs from fields as diverse as microbiology, law, language, history and robotics, received an intensive four-day media training. During the first two days, we learned how to write popular science articles and how to give good presentations. In the next two days, we went to the Flemish Radio and Television (VRT) to learn how to tell a story, be interviewed, interact with a camera and how to get the best out of our voice.
 
-I promised myself that if I would make it to the finals, I would start a blog to communicate my research and ideas to a wider audience. Last Monday the competition ended. Though I did not make it to the top three, the other seven finalist and myself gave it all to show that being a scientist is the coolest job in the world! In the last month, I had the incredible opportunity to grow as a communicator. Is there be a better first blog post than sharing some of the things I learned at the media school?
+I promised myself that if I would make it to the finals, I would start a blog to communicate my research and ideas to a wider audience. Last Monday the competition ended. Though I did not make it to the top three, the other seven finalist and myself gave it all to show that being a scientist is the coolest job in the world! In the last month, I had the incredible opportunity to grow as a communicator. Could there be a better first blog post than sharing some of the things I learned at the media school?
 
 Below are the seven most important points I will remember from the my education as a science communicator.
 
@@ -43,7 +43,7 @@ Science communication is in a way an indirect way of communicating. There is not
 
 A sure way to engage your audience is to engage them. Make them laugh, make them cry, make them think! Use their imagination to provoke a reaction. If you have the time, ask them something or let them do something. Your audience is already sitting there listing for an hour and will have to remain there for quite a while longer. Keep them entertained!
 
-One tip is to make use of a 3D object to show during your presentation. Do you study the bacterial community at the roots of strawberry plants? Bring a plant and show then the roots, as one of my competitors has done. If I see you doing something, I can imagine doing it myself.
+One tip is to make use of a 3D object to show during your presentation. Do you study the bacterial community at the roots of strawberry plants? Bring a plant and show them the roots, as one of my competitors has done. If I see you doing something, I can imagine doing it myself.
 
 ## Tell a story!
 
