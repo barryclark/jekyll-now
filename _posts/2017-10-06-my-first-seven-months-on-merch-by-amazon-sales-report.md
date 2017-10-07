@@ -12,6 +12,8 @@ However, my sales since July have really taken off. In September alone I made ar
 
 I don't intend to go into any analysis of these charts - I just had fun making them in Excel. If you want to see some of my designs, check out [the t-shirt section](http://hendrixjoseph.github.io/t-shirts/) of my blog.
 
+<style>h3 { text-align: center; }</style>
+
 ### Sales and Revenue by Gender
 
 ![Gender Sales Pie](\images\merch\gender-sales-pie.png)
