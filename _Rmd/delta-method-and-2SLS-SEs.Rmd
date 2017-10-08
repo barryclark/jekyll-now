@@ -53,11 +53,13 @@ V^{\alpha_1} &= \left(\mathbf{\ddot{z}}'\mathbf{\ddot{z}}\right)^{-1}\left(\sum_
 V^{\alpha_1\beta_1} &= \left(\mathbf{\ddot{z}}'\mathbf{\ddot{z}}\right)^{-1}\left(\sum_{i=1}^n \ddot{z}_i^2 \ddot{u}_i \ddot{v}_i\right) \left(\mathbf{\ddot{z}}'\mathbf{\ddot{z}}\right)^{-1},
 \end{aligned}
 $$
+
 where $\ddot{v}_i$ and $\ddot{u}_i$ are the residuals from the regressions of $\mathbf{\ddot{y}}$ on $\mathbf{\ddot{z}}$ and $\mathbf{\ddot{t}}$ on $\mathbf{\ddot{z}}$, respectively. Combining all these terms, the delta-method variance estimator is then 
 
 $$
 V^{\delta_1} = \frac{1}{\hat\alpha_1^2}\left(\mathbf{\ddot{z}}'\mathbf{\ddot{z}}\right)^{-1}\left[\sum_{i=1}^n \ddot{z}_i^2\left(\ddot{v}_i^2 + \hat\delta_1^2 \ddot{u}_i^2 - 2 \hat\delta_1\ddot{u}_i \ddot{v}_i\right)\right] \left(\mathbf{\ddot{z}}'\mathbf{\ddot{z}}\right)^{-1}.
 $$
+
 Remember this formula because we'll return to it shortly.
 
 Now consider the 2SLS estimator. To calculate this, we begin by taking the fitted values from the regression of $\mathbf{\ddot{t}}$ on $\mathbf{\ddot{z}}$:
@@ -72,17 +74,18 @@ $$
 \hat\delta_1 = \left(\mathbf{\tilde{t}}'\mathbf{\tilde{t}}\right)^{-1} \mathbf{\tilde{t}}' \mathbf{\ddot{y}}.
 $$
 
-The HC0 variance estimator of the 2SLS estimator is then 
+The HC0 variance estimator corresponding to the 2SLS estimator is 
 
 $$
 V^{2SLS} = \left(\mathbf{\tilde{t}}'\mathbf{\tilde{t}}\right)^{-1} \left(\sum_{i=1}^n \tilde{t}_i^2 \tilde{e}_i^2 \right) \left(\mathbf{\tilde{t}}'\mathbf{\tilde{t}}\right)^{-1},
 $$
 
-where $\tilde{e}_i = \ddot{y}_i - \ddot{t}_i \hat\delta_1$. Note that these residuals are calculated based on $\ddot{t}_i$, the _full_ treatment variable, not the fitted values. The full treatment variable can be expressed as $\ddot{t}_i = \tilde{t}_i + \ddot{u}_i$, by which it follows that 
+where $\tilde{e}_i = \ddot{y}_i - \ddot{t}_i \hat\delta_1$. Note that these residuals are calculated based on $\ddot{t}_i$, the _full_ treatment variable, not the fitted values $\tilde{t}_i$. The full treatment variable can be expressed as $\ddot{t}_i = \tilde{t}_i + \ddot{u}_i$, by which it follows that 
 
 $$
 \tilde{e}_i = \ddot{y}_i - \tilde{t}_i \hat\delta_1 - \ddot{u}_i \hat\delta_1.
 $$
+
 But $\tilde{t}_i \hat\delta_1 = \ddot{z}_i \hat\alpha_1 \hat\delta_1 = \ddot{z}_i \hat\beta_1$, and so 
 
 $$
