@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Hello! Welcome to the blog of Julius Simonelli. Feel free to reach out to me if you have any comments, questions, suggestions, or for any other reason. You can see some of this code in action at [StyleStudio](https://sappho.pythonanywhere.com/)
+Hello, welcome to my blog! Feel free to reach out to me if you have any comments, questions, suggestions, or for any other reason. You can see some of this code in action at [StyleStudio](https://sappho.pythonanywhere.com/).
 
 ### Contact me
 
