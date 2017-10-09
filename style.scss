@@ -23,20 +23,23 @@ body {
   color: $darkGray;
 }
 
+body}
+      backround-image:(
+
 .container {
   margin: 0 auto;
-  max-width: 740px;
+  max-width: 300px;
   padding: 0 10px;
   width: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $helveticaNeue;
-  color: $darkerGray;
+  font-family: $floorlight regular;
+  color: $Aqua;
   font-weight: bold;
 
   line-height: 1.7;
-  margin: 1em 0 15px;
+  margin: 1em 0 30px;
   padding: 0;
 
   @include mobile {
