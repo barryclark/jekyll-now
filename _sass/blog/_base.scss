@@ -1,0 +1,30 @@
+/**
+ * Wrapper
+ */
+.wrapper {
+  max-width: -webkit-calc(#{$navbar-width} - (#{$spacing-unit} * 2));
+  max-width:         calc(#{$navbar-width} - (#{$spacing-unit} * 2));
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: $spacing-unit;
+  padding-left: $spacing-unit;
+  @extend %clearfix;
+
+  @include media-query($on-laptop) {
+    max-width: -webkit-calc(#{$navbar-width} - (#{$spacing-unit}));
+    max-width:         calc(#{$navbar-width} - (#{$spacing-unit}));
+    padding-right: $spacing-unit / 2;
+    padding-left: $spacing-unit / 2;
+  }
+}
+
+
+
+/**
+ * Clearfix
+ */
+%clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}

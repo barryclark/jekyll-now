@@ -1,0 +1,140 @@
+<!-- Update your html tag to include the itemscope and itemtype attributes. -->
+<html itemscope itemtype="http://schema.org/Article">
+
+{% if page.title %}
+ {% assign page_title = page.title | escape %}
+{% else %}
+ {% assign page_title = site.title | escape %}
+{% endif %}
+
+
+{% if page.author or page.facebook.publisher %}
+  {% assign page_author = page.author | default: nil | escape %}
+  {% assign facebook_publisher = page.facebook.publisher | default: nil | escape %}
+  {% assign twitter_creator = page.twitter.username | default: site.twitter.site | default: nil | escape %}
+  {% assign facebook_authors = page.facebook.authors | default: nil | escape %}
+{% else %}
+  {% assign page_author = site.author | default: nil | escape %}
+  {% assign facebook_publisher = site.facebook.publisher | default: nil | escape %}
+  {% assign twitter_creator = site.twitter.username | default: nil | escape %}
+  {% assign facebook_authors = site.facebook.authors | default: nil | escape %}
+{% endif %}
+
+{% assign page_description = page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 152 | escape %}
+
+{%if page.image %}
+  {% assign page_image = site.url | append: site.baseurl | append: page.image %}
+{%else if site.image %}
+  {% assign page_image = site.url | append: site.baseurl | append: site.image %}
+{%endif %}
+
+{% assign canonical_url = page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url %}
+
+<!-- Place this data between the <head> tags of your website -->
+{%if page_author %}
+  <meta name="author" content="{{ page_author }}">
+{%endif %}
+<meta name="description" content="{{ page_description }}" />
+{%if page.tags.length > 0 %}
+  <meta name="keywords" itemprop="tags" content="{{ page.tags | join: ', ' | escape }}"/>
+{%endif %}
+{%if page.keywords %}
+  <meta name="keywords" itemprop="keywords" content="{{ page.keywords | escape  }}">
+{%endif %}
+{%if page.categories.length > 0 %}
+  <meta name="keywords" itemprop="categories" content="{{ page.categories | join: ', ' | escape  }}">
+{%endif %}
+{%if page.category %}
+  <meta name="keywords" itemprop="category" content="{{ category | escape  }}">
+{%endif %}
+
+<!-- Schema.org markup for Google+ -->
+<meta itemprop="name" content="{{ page_title }}">
+<meta itemprop="description" content="{{ page_description }}">
+{%if page_image %}
+  <meta itemprop="image" content="{{ page_image }}">
+{%endif %}
+
+<!-- Twitter Card data -->
+<meta name="twitter:card" content="summary_large_image">
+
+{%if site.twitter.site %}
+  <meta name="twitter:site" content="@{{ site.twitter.site }}">
+{%endif %}
+
+<meta name="twitter:title" content="{{ page_title }}">
+<meta name="twitter:description" content="{{ page_description }}">
+
+{%if twitter_creator %}
+  <meta name="twitter:creator" content="@{{ twitter_creator }}">
+{%endif %}
+
+<!-- Twitter summary card with large image must be at least 280x150px -->
+{%if page_image %}
+  <meta name="twitter:image:src" content="{{ page_image }}">
+  <meta property="twitter:image" content="{{ page_image }}">
+{%endif %}
+<meta property="twitter:url" content="{{ canonical_url }}">
+
+<!-- Open Graph data -->
+<meta property="og:title" content="{{ page_title }}" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="{{ canonical_url }}" />
+{%if page_image %}
+  <meta property="og:image" content="{{ page_image }}" />
+{%endif %}
+<meta property="og:description" content="{{ page_description }}" />
+<meta property="og:site_name" content="{{ site.title }}" />
+{%if page.date %}
+  <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}" />
+{%endif %}
+{%if page.modified_date %}
+  <meta property="article:modified_time" content="{{ page.modified_date | date_to_xmlschema }}" />
+{%endif %}
+
+{%if site.facebook.admins %}
+  {% for admin in site.facebook.admins %}
+    <meta property="fb:admins" content="{{ admin }}" />
+  {% endfor %}
+{%endif %}
+
+{%if site.facebook.app_id %}
+  <meta property="fb:app_id" content="{{ site.facebook.app_id }}">
+{%endif %}
+
+{%if site.facebook.profile_id %}
+  <meta property="fb:profile_id" content="{{ site.facebook.profile_id }}">
+{%endif %}
+
+{%if facebook_publisher %}
+  <meta property="article:publisher" content="https://www.facebook.com/{{ facebook_publisher }}">
+{%endif %}
+{%if facebook_authors %}
+  {% for author in facebook_authors %}
+    <meta property="article:author" content="https://www.facebook.com/{{ author }}">
+  {% endfor %}
+{%endif %}
+
+
+{%if page.tags %}
+  {% for tag in page.tags %}
+    <meta property="article:tag" content="{{ tag | escape }}">
+  {% endfor %}
+{%endif %}
+
+{%if page.keywords %}
+  {% assign keywordsList = page.keywords | split:', ' %}
+  {% for keyword in keywordsList %}
+    <meta property="article:tag" content="{{ keyword | escape }}">
+  {% endfor %}
+{%endif %}
+
+{%if page.categories %}
+  {% for category in page.categories %}
+    <meta property="article:tag" content="{{ category | escape }}">
+  {% endfor %}
+{%endif %}
+
+{%if page.category %}
+  <meta property="article:tag" content="{{ category | escape }}">
+{%endif %}
