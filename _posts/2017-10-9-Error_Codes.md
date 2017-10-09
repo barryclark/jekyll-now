@@ -16,9 +16,11 @@ Common Errors that are present in proxy system.Please look for the numeric code 
 #### Occurs    
 When we visit a link that is broken or the server is not working properly.
 #### Solution   
-First , check the link is it the correct link that you are visiting.
-Second,Check if the person has logged in the system .  
-Third, Check if the problem is occuring in all the system. If occurs contact company officials.   
+First , check the link is it the correct link that you are visiting.  
+
+Second,check if the person has logged in the system .  
+
+Third, check if the problem is occuring in all the system. If occurs contact company officials.   
 
 ### 302 - Temporarily Moved   
 #### Occurs 
