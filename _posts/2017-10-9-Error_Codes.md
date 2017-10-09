@@ -9,29 +9,34 @@ Common Errors that are present in proxy system.Please look for the numeric code 
 ### 403 - Forbidden Error
 
 #### Occurs - When two people are connected with the same proxy to the server.
-#### Solution - Change the proxy ,preferably change them to their personal proxy.
+#### Solution 
+ Change the proxy ,preferably change them to their personal proxy.
 
 ### 404 - Not Found
 #### Occurs - When we visit a link that is broken or the server is not working properly.
-#### Solution - First , check the link is it the correct link that you are visiting.
+#### Solution 
+ First , check the link is it the correct link that you are visiting.
 Second,Check if the person has logged in the system .
 Third, Check if the problem is occuring in all the system. If occurs contact company officials
 
 ### 302 - Temporarily Moved
 #### Occurs - When we are using a proxy for which the allowed data limit is over.(4 GB)
-#### Solution First,Try switching to a TPO proxy.
+#### Solution 
+First,Try switching to a TPO proxy.
 Second,Tell the person to use any other proxy which is available to him.
 Third,Give the proxy which you have.
 
 
 ### 502 - Bad Gateway 
 #### Occurs - Due to problem in network path between the user and network
-#### Solution - Try switching the browser ,ensure that the person is using an updated software.
+#### Solution 
+Try switching the browser ,ensure that the person is using an updated software.
 If occurs in all the systems contact,the company or Senior TPR.
 
 ### 401 - Not Authorized
 #### Occurs - When the person has not correctly logged in the system.
-#### Solution - Repeat  the login process again . If problem doesn’t resolve contact the Senior TPR or the company official 
+#### Solution 
+ Repeat  the login process again . If problem doesn’t resolve contact the Senior TPR or the company official 
 
 
 ## Other error
