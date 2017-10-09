@@ -4,13 +4,13 @@ title: Preparing Jupyter Notebooks for Blog
 ---
 
 
-How can I convert my Jupyter Notebooks to [Jekyll](https://jekyllrb.com/)-ready blog posts in a single click? How do I streamline that process so that I can quickly fix typos, better explain topics, or add new ideas without the hassle? I decided to write a simple batch script that allows me to edit posts in Jupyter Notebooks and then post them as HTMLs. This is built for someone running Windows and using [Github Pages](https://pages.github.com/), which is what I use to host this blog.
+How can I convert my Jupyter Notebooks to [Jekyll](https://jekyllrb.com/)-ready blog posts in a single click? How do I streamline that process so that I can quickly fix typos, better explain topics, or add new ideas without the hassle of manually converting the notebooks to something more Jekyll-friendly? To answer this, I decided to write a simple batch script that allows me to edit posts in Jupyter Notebooks and then post them as HTMLs. This is built for Windows and using [Github Pages](https://pages.github.com/), which is what I use to host this blog.
 
-First, you have to make sure your Jupyter Notebook posts follow the file naming convention for Jekyll blogs posts. They have to start with a date code in the YYYY-MM-DD format, followed by the post name. For example, `2016-01-01-my-first-post.ipynb` would work. The script we'll use also allows for notebooks with a space in their name, so `2016-01-01-my first post.ipynb` would work too.
+For anyone else interested in this method, the first thing you have to do is to make sure your Jupyter Notebook posts follow the file naming convention for Jekyll blogs posts. They have to start with a date code in the YYYY-MM-DD format, followed by the post name. For example, `2016-01-01-my-first-post.ipynb` would work. The script we'll use also allows for notebooks with a space in their name, so `2016-01-01-my first post.ipynb` would work too.
 
 The bulk of the work is done by [nbconvert](https://github.com/jupyter/nbconvert). Nbconvert is a great open source tool for converting Jupyter Notebooks to various formats, incluing HTML, LaTeX, Markdown, and even PDF. Jekyll uses [kramdown](https://kramdown.gettalong.org/) to convert Markdown, so you could convert the post to either HTML or Markdown. I prefer HTML and that's what we'll do here.
 
-The next step is to write a batch script that goes to the folder holding your posts and run nbconvert. Then we initiate a Python script for the final touches. I wanted to include the beginning excerpt from each post on the main page. Jekyll does this well for Markdown files, but not for the HTMLs that are created by nbconvert. It prints the date code and the title at the beginning of the blog excerpt, which is not what we want. That's where the Python script comes in - it  opens up every HTML file and removes the title section before saving it in your posts folder. Alright, now for the code. Here's the batch script:
+The next step is to write a batch script that goes to the folder holding your posts and runs nbconvert. Then it initiates a Python script for the final touches. I wanted to include the beginning excerpt from each post on the main page. Jekyll does this well for Markdown files, but not for the HTMLs that are created by nbconvert. It prints the date code and the title at the beginning of the blog excerpt, which does not look good on the main page of the blog. That's where the Python script comes in - it  opens up every HTML file and removes the title section before saving it in the posts folder. Alright, now for the code. Here's the batch script:
 
 
 ```batch
@@ -63,7 +63,7 @@ for file in items_in_path:
                 print("File {} is having a problem".format(file))
 ```
 
-We can run the batch script from the command line, but let's take automation one step further and make a desktop icon to run this. Here's how you do that:
+The batch script can be run from the command line, but let's take automation one step further and make a desktop icon to run this. Here's how to do that:
 
 1. Open the start menu and type "cmd"
 2. Right-click on cmd.exe (the Command Prompt) and select Pin to Taskbar
