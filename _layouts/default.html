@@ -1,51 +1,136 @@
 <!DOCTYPE html>
-<html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
   <head>
-    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 
-    {% include meta.html %}
+    <!-- Non social metatags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="theme-color" content="#157878">
 
-    <!--[if lt IE 9]>
-      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    {% if page.title %}
+      {% assign page-title = page.title | escape %}
+    {% else %}
+      {% assign page-title = site.title | escape %}
+    {% endif %}
 
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
-    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+    <title>{{ page-title }}</title>
 
-    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+    {% if site.gems contains "jekyll-seo-tag" %}
+      <!-- jekyll-seo-tag -->
+    {% else %}
+      {% include social-metatags.html %}
+    {% endif %}
+
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+
+    {% if site.gems contains "jekyll-feed" %}
+      <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
+    {% endif %}
+
+    <link rel="shortcut icon" href="{{ site.url }}/favicon.ico">
+    <meta name="robots" content="noarchive">
+
+    <!-- <link rel="alternate" media="only screen and (max-width: 640px)" href="">
+    <link rel="alternate" media="handheld" href=""> -->
+
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
   </head>
-
   <body>
-    <div class="wrapper-masthead">
-      <div class="container">
-        <header class="masthead clearfix">
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
 
-          <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-            <p class="site-description">{{ site.description }}</p>
-          </div>
+    {% include site-header.html %}
 
-          <nav>
-            <a href="{{ site.baseurl }}/">Blog</a>
-            <a href="{{ site.baseurl }}/about">About</a>
-          </nav>
-        </header>
-      </div>
-    </div>
+    {% if page.layout == 'home' %}
+      {% assign page-tagline = site.description | default: site.github.project_tagline | escape %}
+    {% endif %}
+    {% if page.layout == 'page' %}
+      {% assign page-tagline = page.tagline | escape %}
+    {% endif %}
+    {% if page.layout == 'post' %}
+      {% assign page-tagline = page.tagline | escape  %}
+    {% endif %}
 
-    <div id="main" role="main" class="container">
+    <section class="page-header">
+      <h1 class="project-name">{{ page-title }}</h1>
+      <h2 class="project-tagline">{{ page-tagline }}</h2>
+      {% if page.layout == 'home' and site.github.is_project_page %}
+          <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
+        {% if site.show_downloads %}
+          <a href="{{ site.github.zip_url }}" class="btn">Download .zip</a>
+          <a href="{{ site.github.tar_url }}" class="btn">Download .tar.gz</a>
+        {% endif %}
+      {% endif %}
+      <!-- Post tagline -->
+      {% if page.layout == 'post' %}
+        <h2 class="project-date">
+        <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+          {% assign date_format = site.cayman-blog.date_format | default: "%b %-d, %Y" %}
+          {{ page.date | date: date_format }}
+        </time>
+        {% assign page_author = page.author | default: site.author | default: nil | escape %}
+        {% if page_author %}
+          • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page_author }}</span></span>
+        {% endif %}
+        </h2>
+      {% endif %}
+      <!-- End: Post tagline -->
+    </section>
+
+    <section class="main-content">
+
       {{ content }}
-    </div>
 
-    <div class="wrapper-footer">
-      <div class="container">
-        <footer class="footer">
-          {% include svg-icons.html %}
-        </footer>
-      </div>
-    </div>
+      <footer class="site-footer">
+        <!-- SVG icons from https://iconmonstr.com -->
 
-    {% include analytics.html %}
+        <!-- Github icon -->
+        <span class="my-span-icon">
+          <a href="{{ site.github.owner_url }}" aria-label="{{ site.github.owner_name }}'s GitHub" title="{{ site.github.owner_name }}'s GitHub">
+            <svg class="my-svg-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          </a>
+        </span>
+
+        <!-- Twitter icon -->
+        <span class="my-span-icon">
+          <a href="https://twitter.com/{{ site.twitter.username }}" aria-label="{{ site.github.owner_name }}'s Twitter" title="{{ site.github.owner_name }}'s Twitter">
+            <svg class="my-svg-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.066 9.645c.183 4.04-2.83 8.544-8.164 8.544-1.622 0-3.131-.476-4.402-1.291 1.524.18 3.045-.244 4.252-1.189-1.256-.023-2.317-.854-2.684-1.995.451.086.895.061 1.298-.049-1.381-.278-2.335-1.522-2.304-2.853.388.215.83.344 1.301.359-1.279-.855-1.641-2.544-.889-3.835 1.416 1.738 3.533 2.881 5.92 3.001-.419-1.796.944-3.527 2.799-3.527.825 0 1.572.349 2.096.907.654-.128 1.27-.368 1.824-.697-.215.671-.67 1.233-1.263 1.589.581-.07 1.135-.224 1.649-.453-.384.578-.87 1.084-1.433 1.489z"/></svg>
+          </a>
+        </span>
+
+        <!-- RSS icon -->
+        {% if site.gems contains "jekyll-feed" %}
+          <span class="my-span-icon">
+            <a href="{{ "/feed.xml" | relative_url }}" aria-label="RSS feed" title="{{ site.github.owner_name }}'s RSS feed">
+              <svg class="my-svg-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-3.374 17c-.897 0-1.626-.727-1.626-1.624s.729-1.624 1.626-1.624 1.626.727 1.626 1.624-.729 1.624-1.626 1.624zm3.885 0c-.03-3.022-2.485-5.474-5.511-5.504v-2.406c4.361.03 7.889 3.555 7.92 7.91h-2.409zm4.081 0c-.016-5.297-4.303-9.571-9.592-9.594v-2.406c6.623.023 11.985 5.384 12 12h-2.408z"/></svg>
+            </a>
+          </span>
+        {% endif %}
+        <!-- Contact icon -->
+        <!-- {% assign about_page = site.pages | where: "path", "about.md" | first %}
+        {% if about_page.title %}
+          <span class="my-span-icon">
+            <a href="{{ about_page.url | relative_url }}" aria-label="Contact" title="Contact {{ site.github.owner_name }}">
+              <svg class="my-svg-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .02c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.99 6.98l-6.99 5.666-6.991-5.666h13.981zm.01 10h-14v-8.505l7 5.673 7-5.672v8.504z"/></svg>
+            </a>
+          </span>
+        {% endif %}
+
+      </footer>
+    </section>
+
+    {% if site.google_analytics %}
+      <script type="text/javascript">
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', '{{ site.google_analytics }}', 'auto');
+        ga('send', 'pageview');
+      </script>
+    {% endif %}
   </body>
 </html>
