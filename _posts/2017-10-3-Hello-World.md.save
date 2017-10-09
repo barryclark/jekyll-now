@@ -9,7 +9,7 @@ This is my first blog on my technical interests.I am interested in the field of 
 So stay tuned for some cool and interesting  stuff ahead.
 
 One of my favourite quote
->Those who dare to fail miserably achieve greatly - John F Kennedy
+Those who dare to fail miserably achieve greatly - John F Kennedy
 
 
 We will meet soon :) 
