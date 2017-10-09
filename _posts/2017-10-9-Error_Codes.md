@@ -8,9 +8,10 @@ title:  Common Errors that occur in proxy
 Common Errors that are present in proxy system.Please look for the numeric code that is visible on the page being visited.
 ### 403 - Forbidden Error
 
-#### Occurs - When two people are connected with the same proxy to the server.
+#### Occurs 
+When two people are connected with the same proxy to the server.
 #### Solution 
- Change the proxy ,preferably change them to their personal proxy.
+ Change the proxy ,preferably change it to the personal proxy.
 
 ### 404 - Not Found
 #### Occurs    
