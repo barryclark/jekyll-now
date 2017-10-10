@@ -2,24 +2,17 @@
 layout: default
 ---
 
-<div class="home-posts">
-	<h4 class="opensanstitle uppercased filled soft-yellow">Properes dates</h4>
-	<div class="universe dates underline-hover">
+<div class="posts">
   {% for post in site.posts %}
-    <article class="home-post">
+    <article class="post">
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ page.title }}</a></h1>
+      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
 
-      <div class="home-entry">
+      <div class="entry">
         {{ post.excerpt }}
       </div>
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="home-read-more">Read More</a>
+      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
     </article>
-	</div>
   {% endfor %}
 </div>
-
-<section class="universe filled white section-blank">
-{% include /partials/suscribe.html %}
-</section>
