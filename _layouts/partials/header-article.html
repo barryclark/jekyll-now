@@ -1,13 +1,10 @@
 		<header class="header-article flat black" style="background-image: url('{{ page.thumb.url }}');">
 			<div class="fluid-content">
-				<h1 class="filled white amatic">{{ page.title }}</h1>
-				<h3>{% if page.info %}
-						<span class="lead">{{ page.info }} </span>
-					{% endif %}
-				</h3>		
+				<h1 class="filled white amatic">{{ site.title }}</h1>
+				<h3><span class="lead">{{ site.description }} </span></h3>		
 			</div><!-- /.content -->
 	<div>
-		{% include 'partials/navigation/previous-page.html' %}
-		{% include 'partials/navigation/next-page.html' %}
+		{% include partials/navigation/previous-page.html %}
+		{% include partials/navigation/next-page.html %}
 	</div>
 		</header>
