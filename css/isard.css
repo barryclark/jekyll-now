@@ -21,11 +21,6 @@ h2 { font-family:'Open Sans Condensed', sans-serif, Helvetica, Arial; font-size:
 .img {width:100%;padding:none;margin:none;height:100%;}
 .layout {}
 #footer {}
-h1 {font-family:'CinzelDecorative-Bold', Helvetica, Arial; font-size:6.0em;line-height:2.1; margin-bottom:0px;
-}
-h3 {font-family:'CinzelDecorative-Bold', Helvetica, Arial;
-	font-size:1.6em; margin-top:0.4em;margin-bottom:2.0em;
-}
 .content .lead {font-family:'Open Sans Condensed', sans-serif, Helvetica, Arial;}
 a {text-transform:uppercase;font-family:'Open Sans Condensed', sans-serif, Helvetica, Arial;}
 
@@ -226,6 +221,11 @@ font-family: 'Permanent Marker', cursive;}
 font-family: 'Six Caps', sans-serif;
 }
 
+h1 {font-family:'CinzelDecorative-Bold', Helvetica, Arial; font-size:6.0em;line-height:2.1; margin-bottom:0px;
+}
+h3 {font-family:'CinzelDecorative-Bold', Helvetica, Arial;
+	font-size:1.6em; margin-top:0.4em;margin-bottom:2.0em;
+}
 @media (max-width: 1920px) {
 }
 @media (max-width: 1600px) {
