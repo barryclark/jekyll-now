@@ -15,6 +15,31 @@ header {
 h1, h2 { font-family:'Open Sans Condensed', sans-serif, Helvetica, Arial; font-size:6.5em; 
 }
 .uppercased  {text-transform: uppercase;}
+.page {
+	text-align:center;
+}
+.img {width:100%;padding:none;margin:none;height:100%;}
+.layout {}
+#footer {}
+h1 {font-family:'CinzelDecorative-Bold', Helvetica, Arial; font-size:6.0em;line-height:2.1; margin-bottom:0px;
+}
+h3 {font-family:'CinzelDecorative-Bold', Helvetica, Arial;
+	font-size:1.6em; margin-top:0.4em;margin-bottom:2.0em;
+}
+.content .lead {font-family:'Open Sans Condensed', sans-serif, Helvetica, Arial;}
+a {text-transform:uppercase;font-family:'Open Sans Condensed', sans-serif, Helvetica, Arial;}
+
+.button-centered .squared {width:12%;}
+a.button:hover, a.button:focus {background-color:#fafafa !important;color:#555 !important;}
+.foot {opacity:0.8;font-size:1.2em;}
+.header-cover {	padding:12% 0 0;height: 55em;
+	background-position: top center;
+	background-attachment: fixed;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	border:none;}
+.dates a{font-family: 'Six Caps', sans-serif;font-size:2.3em;line-height:0.6em;letter-spacing: 0.08em;
+}
 nav {font-family:'Open Sans Condensed', sans-serif, Helvetica, Arial;height:5.8em;padding:0.7%;	z-index: 1000;}
 .covers {margin:none; padding:none;width:100%;height:100%;}
 .full-cover {
