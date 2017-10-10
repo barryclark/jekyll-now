@@ -1,77 +1,18 @@
-<!DOCTYPE html>
-<html lang="{{ page.site_language }}">
-	<head>
-		<!-- meta -->
-		<meta charset="utf-8">
-		<title>{{ page.title }}</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta http-equiv="Content-Language" content="en-us"/>
-		<meta name="distribution" content="global"/>
-		<meta name="keys" content="Isard Miralles, art, contact, paint, design, web, sound technic, music, Badalona, Barcelona, Isard, web personal"/>
-		<meta name="description" content="{{ page.description }}">
-		<meta name="author" content="{{ page.author }}">
-		<!-- Metadata: GeoTags -->
-		<meta name="geo.region" content="ES-CT" />
-		<meta name="geo.placename" content="Barcelona" />
-		<meta name="geo.position" content="41.385064;2.173403" />
-		<meta name="ICBM" content="41.385064, 2.173403" />
-		
-		<!-- Screen styles -->
-		<link href="{{ page.root_path }}/hipertextos/css/isard.css" rel="stylesheet" media="screen">
-		<link href="{{ page.root_path }}/hipertextos/css/styles.min.css" rel="stylesheet" media="screen">
-		<link href="{{ page.root_path }}/hipertextos/css/anime.css" rel="stylesheet" media="screen">
-		{% include 'partials/assets/css.html' %}
-		<!-- Print styles -->
-		<link href="{{ page.root_path }}/hipertextos/css/print.css" rel="stylesheet" media="print">
-		<!--[if lt IE 9]><script src="http://isardmiralles.com/hipertextos/js/html5shiv.js"></script><![endif]-->
-		<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Open+Sans+Condensed:300|Oswald|Permanent+Marker|Six+Caps|Yanone+Kaffeesatz" rel="stylesheet">
-		<!-- If JS disabled -->
-		<noscript><link href="{{ page.root_path }}/hipertextos/css/noscript.css" rel="stylesheet" media="screen"></noscript>
-		<!-- Site Feed -->
-		<link rel="alternate" type="application/rss+xml" title="rss" href="http://isardmiralles.com/?/feed/" />
-		<!-- Page Icons -->
-			<link rel="shortcut icon" href="http://isardmiralles.com/hipertextos/ics/favicon.ico">
-			<link rel="apple-touch-icon" sizes="57x57" href="http://isardmiralles.com/hipertextos/ics/apple-touch-icon-57x57.png">
-			<link rel="apple-touch-icon" sizes="114x114" href="http://isardmiralles.com/hipertextos/ics/apple-touch-icon-114x114.png">
-			<link rel="apple-touch-icon" sizes="72x72" href="http://isardmiralles.com/hipertextos/ics/apple-touch-icon-72x72.png">
-			<link rel="apple-touch-icon" sizes="144x144" href="http://isardmiralles.com/hipertextos/ics/apple-touch-icon-144x144.png">
-			<link rel="apple-touch-icon" sizes="60x60" href="http://isardmiralles.com/hipertextos/ics/apple-touch-icon-60x60.png">
-			<link rel="apple-touch-icon" sizes="120x120" href="http://isardmiralles.com/hipertextos/ics/apple-touch-icon-120x120.png">
-			<link rel="apple-touch-icon" sizes="76x76" href="http://isardmiralles.com/hipertextos/ics/apple-touch-icon-76x76.png">
-			<link rel="apple-touch-icon" sizes="152x152" href="http://isardmiralles.com/hipertextos/ics/apple-touch-icon-152x152.png">
-			<link rel="icon" type="image/png" href="http://isardmiralles.com/hipertextos/ics/favicon-196x196.png" sizes="196x196">
-			<link rel="icon" type="image/png" href="http://isardmiralles.com/hipertextos/ics/favicon-160x160.png" sizes="160x160">
-			<link rel="icon" type="image/png" href="http://isardmiralles.com/hipertextos/ics/favicon-96x96.png" sizes="96x96">
-			<link rel="icon" type="image/png" href="http://isardmiralles.com/hipertextos/ics/favicon-16x16.png" sizes="16x16">
-			<link rel="icon" type="image/png" href="http://isardmiralles.com/hipertextos/ics/favicon-32x32.png" sizes="32x32">
-	</head>
-	<body>
-  	{% include 'partials/navigation/nav.html' %}
+---
+layout: default
+---
 
-	<!-- Page content -->
-	<div class="page" id="page">
-		<header class="header-cover flat black" style="background-image: url('{{ page.thumb.url }}');">
-		{% include 'partials/head.html' %}
-		</header>
-		<main id="content" class="flat hard-grey">
-			<div class="content">
-				{% include 'partials/navigation/covers.html' %}		
-			</div><!-- /.content -->
-			<section class="universe filled white section-blank">
-			{% include 'partials/suscribe.html' %}
-			</section>
-		</main>
-	</div><!-- /#page -->
-		{% include 'partials/footer.html' %}
-   
-    <!-- Scripts
-    ================================================== -->
-    <script src="{{ page.root_path }}/hipertextos/js/jquery.js" type="text/javascript"></script>
-    <script src="{{ page.root_path }}/hipertextos/js/anime.js" type="text/javascript"></script>
-    <script src="{{ page.root_path }}/hipertextos/js/scripts.min.js" type="text/javascript"></script>
-    <script src="{{ page.root_path }}/hipertextos/js/icons.js" type="text/javascript"></script>
-	{% include 'partials/assets/js.html' %}
-	{% include 'partials/assets/analytics.html' %}
-  </body>
-</html>
-							
+<div class="posts">
+  {% for post in site.posts %}
+    <article class="post">
+
+      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+
+      <div class="entry">
+        {{ post.excerpt }}
+      </div>
+
+      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+    </article>
+  {% endfor %}
+</div>
