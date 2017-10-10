@@ -20,26 +20,17 @@
 
   <body>
     {% include partials/navigation/nav.html %}
-		<header class="header-fine flat white" style="background-image: url('{{ page.thumb.url }}');">
-			<div class="s content">
-				<h3 class="filled black"><small>{{ page.title }}</small></h3>
-				<p class="lead l filled black uppercased">
-					{% if page.info %}
-						<span>{{ page.info }} </span>
-					{% endif %}
-				</p>
-			</div><!-- /.content -->
-					<hr>
-		</header>
-		<main id="content" role="main" class="layout">
-			<div id="columns" class="cell-8 pushed-2">
-      		{{ content }}
-			</div><!-- /.content -->
-			<hr>
-			<section class="universe filled grey section-blank">
-			{% include partials/suscribe.html %}
-			</section>
-		</main>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="header-cover flat black" style="background-image: url('{{ site.baseurl }}/img/about.jpg');">
+
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      {{ content }}
+    </div>
 
     <div class="svg-icons">
           {% include svg-icons.html %}
