@@ -1,17 +1,13 @@
 <div class="layout content">
 	<h4 class="opensanstitle uppercased filled soft-yellow">Properes dates</h4>
 	<div class="universe dates underline-hover">
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
-</div>
+		<hr class="lines black">
+		<a href="{{ page.url1 }}">{{ page.date1 }}</a>
+		<hr class="lines black">
+		<a href="{{ page.url2 }}">{{ page.date2 }}</a>
+		<hr class="lines black">
+		<a href="{{ page.url3 }}">{{ page.date3 }}</a>
+		<hr class="lines black">
 	</div>
 	<hr>
 </div>
