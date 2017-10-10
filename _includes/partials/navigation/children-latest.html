@@ -1,0 +1,22 @@
+				<div class="col-3 filled red">
+				{% for child in page.root %}
+				  {% if child.children %}
+				  	<h3 class="universe din-moveFromTopFade">{{ child.title }}</h3>
+				  	<p class="lead universe">Last publication on {{ page.updated | date("M d, Y") }}</p>
+					{% for child in slice(child.children, 0, 3) %}
+					  <div class="cell universe">
+						{% if child.thumb %}
+						<div class="level-20 level-blocked din-scaleUp">
+							<a href="{{ child.url }}" title="{{ child.title }}"><img src="{{ child.thumb.url }}" alt="{{ child.title }}"></a>
+						</div>
+						{% endif %}
+						<h4 class="din-scaleUpCenter delay-300"><a href="{{ child.url }}" title="{{ child.title }}">{{ child.title }}</a></h4> 
+					  </div>
+					{% endfor %}
+				  {% endif %}
+				  <hr>
+				  <div class="button-centered din-scaleUpDown">
+				  	<a class="button round flat soft-red symbol-add" href="{{ child.url }}" title="{{ child.title }}">More {{ child.title }}</a>
+				  </div>
+				{% endfor %}
+				</div>

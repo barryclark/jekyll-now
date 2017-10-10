@@ -1,0 +1,17 @@
+				<ul class="list-square">
+					<li><a href="{{ page.root_path }}" title="Home">Home</a></li>
+				{% for child in page.root %}
+					{% if child.children %}
+				  	<li class=""><a href="{{ child.url }}" title="{{ child.title }}">{{ child.title }}</a>
+						{% if child.children %}
+						<ul>
+							{% for child in child.children %}
+							<li class=""><a href="{{ child.url }}" title="{{ child.title }}">{{ child.title }}</a></li> 
+							{% endfor %}
+						</ul>
+					 	{% endif %}
+					 </li>
+				  	{% endif %}
+				{% endfor %}
+					<li><a href="{{ page.root_path }}/pages/about/" title="About">About</a></li>
+				</ul>
