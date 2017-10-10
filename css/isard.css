@@ -12,7 +12,7 @@ text-align: justify;
 header {
 	text-align:center;
 }
-h1, h2 { font-family:'Open Sans Condensed', sans-serif, Helvetica, Arial; font-size:6.5em; 
+h2 { font-family:'Open Sans Condensed', sans-serif, Helvetica, Arial; font-size:6.5em; 
 }
 .uppercased  {text-transform: uppercase;}
 .page {
