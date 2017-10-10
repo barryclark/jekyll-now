@@ -1,0 +1,219 @@
+/* Image Filters */
+
+.blur-nonhover, 
+.brightness-nonhover, 
+.brightless-nonhover, 
+.contrast-nonhover, 
+.grayscale-nonhover, 
+.huerotate-nonhover, 
+.invert-nonhover,
+.reflect-nonhover,
+.saturate-nonhover, 
+.antisaturate-nonhover, 
+.sepia-nonhover,
+.blur-onhover, 
+.brightness-onhover, 
+.brightless-onhover, 
+.contrast-onhover, 
+.grayscale-onhover, 
+.huerotate-onhover, 
+.invert-onhover, 
+.saturate-onhover, 
+.antisaturate-onhover, 
+.sepia-onhover,
+.blur-nonhover:hover, 
+.brightness-nonhover:hover, 
+.brightless-nonhover:hover, 
+.contrast-nonhover:hover, 
+.grayscale-nonhover:hover, 
+.huerotate-nonhover, 
+.invert-nonhover:hover,
+.reflect-nonhover:hover,
+.saturate-nonhover:hover, 
+.antisaturate-nonhover:hover, 
+.sepia-nonhover:hover,
+.blur-onhover:hover, 
+.brightness-onhover:hover, 
+.brightless-onhover:hover, 
+.contrast-onhover:hover, 
+.grayscale-onhover:hover, 
+.huerotate-onhover:hover, 
+.invert-onhover:hover,
+.reflect-onhover:hover,
+.saturate-onhover:hover, 
+.antisaturate-onhover:hover, 
+.sepia-onhover:hover {
+	/*Transition*/
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+}
+.blur,
+.blur-nonhover,
+.blur-onhover:hover {
+	/*Blur*/
+	filter:blur(2px);
+	-webkit-filter:blur(2px);
+	-moz-filter:blur(2px);
+	-ms-filter:blur(2px);
+	-o-filter:blur(2px);
+ }
+.brightness,
+.brightness-nonhover,
+.brightness-onhover:hover {
+	/*Hue Brightness*/
+	filter:brightness(2);
+	-webkit-filter:brightness(2);
+	-moz-filter:brightness(2);
+	-ms-filter:brightness(2);
+	-o-filter:brightness(2);
+ }
+.brightless,
+.brightless-nonhover,
+.brightless-onhover:hover {
+	/*Hue Brightness*/
+	filter:brightness(0.5);
+	-webkit-filter:brightness(0.5);
+	-moz-filter:brightness(0.5);
+	-ms-filter:brightness(0.5);
+	-o-filter:brightness(0.5);
+ }
+.contrast, 
+.contrast-nonhover, 
+.contrast-onhover:hover {
+	/*Hue Contrast*/
+	filter:contrast(2);
+	-webkit-filter:contrast(2);
+	-moz-filter:contrast(2);
+	-ms-filter:contrast(2);
+	-o-filter:contrast(2);
+ }
+.grayscale, 
+.grayscale-nonhover, 
+.grayscale-onhover:hover {
+	/*Grayscale*/
+	filter:grayscale(1);
+	-webkit-filter:grayscale(1);
+	-moz-filter:grayscale(1);
+	-ms-filter:grayscale(1);
+	-o-filter:grayscale(1);
+ }
+.huerotate, 
+.huerotate-nonhover, 
+.huerotate-onhover:hover {
+	/*Hue Rotate*/
+	filter:hue-rotate(180deg);
+	-webkit-filter:hue-rotate(180deg);
+	-moz-filter:hue-rotate(180deg);
+	-ms-filter:hue-rotate(180deg);
+	-o-filter:hue-rotate(180deg);
+ }
+.invert, 
+.invert-nonhover, 
+.invert-onhover:hover {
+	/*Invert*/
+	filter:invert(1);
+	-webkit-filter:invert(1);
+	-moz-filter:invert(1);
+	-ms-filter:invert(1);
+	-o-filter:invert(1);
+ }
+.reflect,
+.reflect-nonhover,
+.reflect-onhover:hover {
+    -webkit-box-reflect: below 0 -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(40%, transparent), to(rgba(255, 255, 255, 0.4)));
+}
+.saturate, 
+.saturate-nonhover, 
+.saturate-onhover:hover {
+	/*Saturate*/
+	filter:saturate(4);
+	-webkit-filter:saturate(4);
+	-moz-filter:saturate(4);
+	-ms-filter:saturate(4);
+	-o-filter:saturate(4);
+}
+.antisaturate, 
+.antisaturate-nonhover, 
+.antisaturate-onhover:hover {
+	/*Saturate*/
+	filter:saturate(.25);
+	-webkit-filter:saturate(.25);
+	-moz-filter:saturate(.25);
+	-ms-filter:saturate(.25);
+	-o-filter:saturate(.25);
+}
+.sepia, 
+.sepia-nonhover, 
+.sepia-onhover:hover {
+	/*Sepia*/
+	filter:sepia(1);
+	-webkit-filter:sepia(1);
+	-moz-filter:sepia(1);
+	-ms-filter:sepia(1);
+	-o-filter:sepia(1);
+}
+.original, 
+.blur-nonhover:hover, 
+.brightness-nonhover:hover, 
+.brightless-nonhover:hover, 
+.contrast-nonhover:hover, 
+.grayscale-nonhover:hover, 
+.huerotate-nonhover:hover, 
+.invert-nonhover:hover, 
+.reflect-nonhover:hover, 
+.saturate-nonhover:hover, 
+.sepia-nonhover:hover,
+.antisaturate-nonhover:hover {
+	/*Blur*/
+	filter:blur(0px);
+	-webkit-filter:blur(0px);
+	-moz-filter:blur(0px);
+	-ms-filter:blur(0px);
+	-o-filter:blur(0px);
+  	/*Grayscale*/
+	filter:grayscale(0);
+	-webkit-filter:grayscale(0);
+	-moz-filter:grayscale(0);
+	-ms-filter:grayscale(0);
+	-o-filter:grayscale(0);
+	/*Hue Brightness*/
+	filter:brightness(0);
+	-webkit-filter:brightness(0);
+	-moz-filter:brightness(0);
+	-ms-filter:brightness(0);
+	-o-filter:brightness(0);
+  	/*Hue Contrast*/
+	filter:contrast(0);
+	-webkit-filter:contrast(0);
+	-moz-filter:contrast(0);
+	-ms-filter:contrast(0);
+	-o-filter:contrast(0);
+  	/*Hue Rotate*/
+	filter:hue-rotate(0deg);
+	-webkit-filter:hue-rotate(0deg);
+	-moz-filter:hue-rotate(0deg);
+	-ms-filter:hue-rotate(0deg);
+	-o-filter:hue-rotate(0deg);
+	/*Invert*/
+	filter:invert(0);
+	-webkit-filter:invert(0);
+	-moz-filter:invert(0);
+	-ms-filter:invert(0);
+	-o-filter:invert(0);
+	/*Saturate*/
+	filter:saturate(0);
+	-webkit-filter:saturate(0);
+	-moz-filter:saturate(0);
+	-ms-filter:saturate(0);
+	-o-filter:saturate(0);
+	/*Sepia*/
+	filter:sepia(0);
+	-webkit-filter:sepia(0);
+	-moz-filter:sepia(0);
+	-ms-filter:sepia(0);
+	-o-filter:sepia(0);
+    -webkit-box-reflect: below 0 -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(100%, transparent), to(rgba(255, 255, 255, 0.0)));
+    }
