@@ -1,0 +1,8 @@
+<ul id="navigation" class="list-block">
+  {% for child in page.root %}
+    <li>
+      <a href="{{ child.url }}" title="{{ child.title }}">{{ child.title }}</a>
+      {% include 'partials/navigation/children.html' with { 'page' : child } %}
+    </li>
+  {% endfor %}
+</ul>

@@ -1,0 +1,13 @@
+{% for mp3 in page.mp3 %}
+<h6 class="title">"{{ mp3.name }}"</h6>
+<div class="audio">
+  <object>
+    <param name="kioskmode" value="true">
+    <param name="src" value="{{ mp3.url }}">
+    <param name="autoplay" value="false">
+    <param name="controller" value="true">
+    <embed height="50" src="@url" type="video/quicktime" width="200" controller="true" autoplay="false" kioskmode="true">
+  </object>
+</div>
+<p class="s"><a href="{{ mp3.url }}" class="symbol-musicnote" download="{{ mp3.name }}.mp3" title="Download file">{{ mp3.url }}</a></p>
+{% endfor %}
