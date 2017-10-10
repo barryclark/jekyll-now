@@ -20,22 +20,25 @@
 
   <body>
     {% include partials/navigation/nav.html %}
-    <div class="wrapper-masthead">
-      <div class="container">
+	<!-- Page content -->
+	<div class="page" id="page">
         <header class="header-cover flat black" style="background-image: url('{{ site.baseurl }}/img/thumb.jpg');">
-
+		{% include partials/head.html %}
         </header>
-      </div>
-    </div>
-
-    <div id="main" role="main" class="container">
-      {{ content }}
+    <div id="main" role="main"  class="flat hard-grey">
+			<div class="content">
+				{% include partials/navigation/covers.html %}		
+			</div><!-- /.content -->
+			<section class="universe filled white section-blank">
+			{% include partials/suscribe.html %}
+			</section>
     </div>
 
     <div class="svg-icons">
           {% include svg-icons.html %}
     </div>
 	<hr>
+	</div>
     {% include partials/footer.html %}
 
     <!-- Scripts
