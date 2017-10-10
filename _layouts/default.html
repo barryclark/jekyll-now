@@ -22,9 +22,14 @@
 
   <body>
     {% include nav.html %}
-	<!-- Page content -->
-	<div class="page" id="page">
-    {% include partials/navigation/head.html %}
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="header-cover flat black" style="background-image: url('{{ site.baseurl }}/index/thumb.jpg');">
+
+        </header>
+      </div>
+    </div>
+
     <div id="main" role="main" class="container">
       {{ content }}
     </div>
