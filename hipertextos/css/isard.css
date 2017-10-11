@@ -11,11 +11,11 @@ text-align: justify;
 header {
 	text-align:center;
 }
-h1 {font-family:'CinzelDecorative-Bold', Helvetica, Arial;}
-h2 {font-family: 'Six Caps', sans-serif;}
-h3 {font-family: 'Yanone Kaffeesatz', sans-serif;}
-h4 {font-family: 'Amatic SC', cursive; }
-h5 {font-family: 'Six Caps', sans-serif;}
+h1 {font-family:'Cinzel+Decorative', Helvetica, Arial;font-weight:bold;}
+h2 {font-family: 'Six+Caps', sans-serif;}
+h3 {font-family: 'Yanone+Kaffeesatz', sans-serif;}
+h4 {font-family: 'Amatic+SC', cursive; }
+h5 {font-family: 'Six+Caps', sans-serif;}
 h6 {font-family: 'Oswald', sans-serif;}
 
 /* TIPOS */
@@ -194,7 +194,7 @@ a {text-decoration:none!important;}
 	
 /* TIPOS */
 .cinzel {
-font-family:'CinzelDecorative-Bold', Helvetica, Arial;}
+font-family:'Cinzel Decorative', Helvetica, Arial;font-weight:bold;}
 .opensans {
 font-family: 'Open Sans Condensed', sans-serif;}
 .opensanstitle {
