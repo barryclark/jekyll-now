@@ -21,15 +21,15 @@ site_musics: <b>Maria Baeta</b> - veu<br><b>Pep Cabrero</b> - Saxo<br><b>Juanje 
 
 # Includes an icon in the footer for each username you enter
 footer-links:
-  dribbble: xxx
+  dribbble:
   email: oldsteambcn@gmail.com
   facebook: oldsteambcn
-  flickr: xxx
+  flickr:
   github: isardmt/oldsteam
   instagram: oldsteambcn
-  linkedin: xxx
-  pinterest: xxx
-  rss: xxx
+  linkedin:
+  pinterest:
+  rss: # just type anything here for a working RSS icon
   twitter: oldsteambcn
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: oldsteambcn/<oldsteambcn>
