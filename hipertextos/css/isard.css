@@ -11,7 +11,7 @@ text-align: justify;
 header {
 	text-align:center;
 }
-.bigger {font-size:2.3em !important;}
+.bigger h1{font-size:2.3em;}
 h1 {font-family:'Cinzel Decorative', Helvetica, Arial;}
 h2 {font-family: 'Six Caps', sans-serif;letter-spacing: 0.12em;}
 h3 {font-family:'Open Sans Condensed', sans-serif, Helvetica, Arial;letter-spacing: 0.06em;}
