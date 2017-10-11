@@ -12,8 +12,8 @@ header {
 	text-align:center;
 }
 h1 {font-family:'Cinzel Decorative', Helvetica, Arial;font-style:bold;}
-h2 {font-family: 'Six Caps', sans-serif;}
-h3 {font-family:'Open Sans Condensed', sans-serif, Helvetica, Arial; font-size:2.0em;letter-spacing: 0.06em;}
+h2 {font-family: 'Six Caps', sans-serif;letter-spacing: 0.12em;}
+h3 {font-family:'Open Sans Condensed', sans-serif, Helvetica, Arial;letter-spacing: 0.06em;}
 h4 {font-family: 'Amatic SC', cursive; }
 h5 {font-family: 'Six Caps', sans-serif;}
 h6 {font-family: 'Oswald', sans-serif;}
