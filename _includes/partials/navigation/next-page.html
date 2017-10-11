@@ -1,0 +1,10 @@
+{% for sibling in page.next_sibling %}
+					{% for child in page.next_sibling %}
+						{% if child.thumb %}
+					<div class="sibling-content next-sib anm-moveFromRight delay-300">
+  <a href="{{ sibling.url }}" title="Artículo Siguiente: {{ sibling.title }}" class="txt-sibling next"> Siguiente</a>
+						<a href="{{ sibling.url }}" title="{{ sibling.title }}"><img class="img-sibling" src="{{ sibling.thumb.url }}" alt="{{ sibling.title }}"></a>
+					</div>
+						{% endif %}
+					{% endfor %}
+{% endfor %}

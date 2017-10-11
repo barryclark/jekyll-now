@@ -1,0 +1,5 @@
+<ul class="rtf">
+{% for rtf in page.rtf %}
+  <li><a href="{{ rtf.url }}" title="Download {{ rtf.name }}" class="icon icon-file">{{ rtf.name }}</a></li>
+{% endfor %}
+</ul>

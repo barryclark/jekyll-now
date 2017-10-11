@@ -1,0 +1,5 @@
+<div class="pdf">
+{% for pdf in page.pdf %}
+  <button class="filled white"><a href="{{ pdf.url }}" title="Download {{ pdf.name }}" class="icon icon-attachment"> {{ pdf.name }}</a></button><br>
+{% endfor %}
+</div>

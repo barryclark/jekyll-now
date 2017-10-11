@@ -1,0 +1,5 @@
+<ul class="doc">
+{% for doc in page.doc %}
+  <li><a href="{{ doc.url }}" title="Download {{ doc.name }}" class="icon icon-file">{{ doc.name }}</a></li>
+{% endfor %}
+</ul>
