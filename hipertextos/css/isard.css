@@ -13,7 +13,7 @@ header {
 }
 h1 {font-family:'Cinzel Decorative', Helvetica, Arial;font-style:bold;}
 h2 {font-family: 'Six Caps', sans-serif;}
-h3 {font-family:'HelveticaNeue+Light', Helvetica, Arial;}
+h3 {font-family:'Open Sans Condensed', sans-serif, Helvetica, Arial; font-size:2.0em;letter-spacing: 0.06em;}
 h4 {font-family: 'Amatic SC', cursive; }
 h5 {font-family: 'Six Caps', sans-serif;}
 h6 {font-family: 'Oswald', sans-serif;}
@@ -80,7 +80,6 @@ nav .navlink {margin:0 8px 0 8px;min-width:6.5em;}
 .bio p {color:#fff !important;}
 #footer nav {border:none;}
 nav a:hover {color:#aaa;}
-.suscribe h3 {font-family:'Open Sans Condensed', sans-serif, Helvetica, Arial; font-size:2.0em;letter-spacing: 0.06em;}
 .home  {font-family:'Cinzel Decorative', Helvetica, Arial !important;font-style:bold;font-size:1.9em;letter-spacing: .01em !important;}
 .sibling-content div{border-radius: .5em;position:absolute;}
 .moreinfo {margin:0;padding:0;}
