@@ -1,6 +1,5 @@
-.page {
-	text-align:center;
-}
+.page {text-align:center;}
+h1 {font-size:2.3em;}
 .img {width:100%;padding:none;margin:none;height:100%;}
 .layout {}
 #footer {}

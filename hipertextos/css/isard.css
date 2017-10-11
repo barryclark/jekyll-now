@@ -11,7 +11,7 @@ text-align: justify;
 header {
 	text-align:center;
 }
-h1 {font-family:'CinzelDecorative-Bold', Helvetica, Arial;font-style:bold;}
+h1 {font-family:'CinzelDecorative-Bold', Helvetica, Arial;}
 h2 {font-family: 'Six Caps', sans-serif;letter-spacing: 0.12em;}
 h3 {font-family:'Open Sans Condensed', sans-serif, Helvetica, Arial;letter-spacing: 0.06em;}
 h4 {font-family: 'Amatic SC', cursive; }
@@ -168,7 +168,7 @@ a {text-decoration:none!important;}
 	
 /* TIPOS */
 .cinzel {
-font-family:'Cinzel Decorative', Helvetica, Arial;font-style:bold;}
+font-family:'CinzelDecorative-Bold', Helvetica, Arial;}
 .opensans {
 font-family: 'Open Sans Condensed', sans-serif;}
 .opensanstitle {
