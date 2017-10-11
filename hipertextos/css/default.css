@@ -4,14 +4,11 @@
 .img {width:100%;padding:none;margin:none;height:100%;}
 .layout {}
 #footer {}
-h1 {font-family:'CinzelDecorative-Bold', Helvetica, Arial; font-size:6.0em;line-height:2.1; margin-bottom:0px;
+h1 {font-family:'Cinzel Decorative', bold; Helvetica, Arial; font-size:6.0em;line-height:2.1; margin-bottom:0px;
 }
-h3 {font-family:'CinzelDecorative-Bold', Helvetica, Arial;
+h3 {font-family:'Cinzel Decorative', bold; Helvetica, Arial;
 	font-size:1.6em; margin-top:0.4em;margin-bottom:2.0em;
 }
-.content .lead {font-family:'Open Sans Condensed', sans-serif, Helvetica, Arial;}
-a {text-transform:uppercase;font-family:'Open Sans Condensed', sans-serif, Helvetica, Arial;}
-
 .button-centered .squared {width:12%;}
 a.button:hover, a.button:focus {background-color:#fafafa !important;color:#555 !important;}
 .foot {opacity:0.8;font-size:1.2em;}

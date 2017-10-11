@@ -11,7 +11,7 @@ text-align: justify;
 header {
 	text-align:center;
 }
-h1 {font-family:'CinzelDecorative-Bold', Helvetica, Arial;font-style:bold;}
+h1 {font-family:'Cinzel Decorative', bold; Helvetica, Arial;}
 h2 {font-family: 'Six Caps', sans-serif;}
 h3 {font-family: 'Yanone Kaffeesatz', sans-serif;}
 h4 {font-family: 'Amatic SC', cursive; }
@@ -72,7 +72,7 @@ nav .navlink {margin:0 8px 0 8px;min-width:6.5em;}
 .sticky {  position: -webkit-sticky; position: sticky; top: 0;}
 .nav-sticky { letter-spacing: .16em; position: -webkit-sticky; position: sticky;top: 0;font-size:1.0em;border-bottom:1px solid #222!important;}
 .repertori {line-height:1.2em;}
-.repertori .year {font-family:'Permanent Marker', Helvetica, Arial;}
+.repertori .year {font-family:'Oswald', Helvetica, Arial;}
 .repertori .song {font-family:'Amatic SC', sans-serif, Helvetica, Arial;text-align:right;}
 .repertori .autor {font-family:'Amatic SC', sans-serif, Helvetica, Arial;text-align:left;}
 .bio {line-height:1.7em;font-family:'Oswald', sans-serif, Helvetica, Arial; font-size:1.5em;}
@@ -81,7 +81,7 @@ nav .navlink {margin:0 8px 0 8px;min-width:6.5em;}
 #footer nav {border:none;}
 nav a:hover {color:#aaa;}
 .suscribe h3 {font-family:'Open Sans Condensed', sans-serif, Helvetica, Arial; font-size:2.0em;letter-spacing: 0.06em;}
-.home  {font-family:'CinzelDecorative-Bold', Helvetica, Arial !important;font-style:bold;font-size:1.9em;letter-spacing: .01em !important;}
+.home  {font-family:'Cinzel Decorative', bold; Helvetica, Arial !important;font-style:bold;font-size:1.9em;letter-spacing: .01em !important;}
 .sibling-content div{border-radius: .5em;position:absolute;}
 .moreinfo {margin:0;padding:0;}
 .prev-sib {float:left;}
@@ -96,10 +96,11 @@ next.img-sibling {float:right;}
 .article-thumb {margin-bottom:0px!important;padding-bottom:0px!important;}
 h4.article-title, .article-title .icon {margin-top:0px!important;padding-top:0px!important;}
 .section-blank {border:none !important;}
-.margin-left {padding-left:1%;}
 #viewer {margin:6%!important;}
-.price h3{background:#ea6666 !important;}
-.topsec {text-align:left;}
+
+.content .lead {font-family:'Open Sans Condensed', sans-serif, Helvetica, Arial;}
+a {text-transform:uppercase;font-family:'Open Sans Condensed', sans-serif, Helvetica, Arial;}
+
 .round {border-radius:5.0em;padding:2% 5% 2% 5%;}
 .underline-hover a{text-decoration:none;}
 .underline-hover a:hover {text-decoration: underline !important;color:#eee;}
@@ -174,7 +175,7 @@ a {text-decoration:none!important;}
 	
 /* TIPOS */
 .cinzel {
-font-family:'CinzelDecorative-Bold', Helvetica, Arial;font-style:bold;}
+font-family:'Cinzel Decorative', bold; Helvetica, Arial;font-style:bold;}
 .opensans {
 font-family: 'Open Sans Condensed', sans-serif;}
 .opensanstitle {
@@ -186,8 +187,6 @@ font-family: 'Oswald', sans-serif;}
 font-family: 'Yanone Kaffeesatz', sans-serif;}
 .amatic {
 font-family: 'Amatic SC', cursive;}
-.permanent {
-font-family: 'Permanent Marker', cursive;}
 .sixcaps {
 font-family: 'Six Caps', sans-serif;
 }
