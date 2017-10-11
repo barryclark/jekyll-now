@@ -2,6 +2,8 @@
 layout: default
 ---
 
+	{% include partials/head.html %}
+    <div id="content" class="flat hard-grey">
     <div id="main" role="main"  class="flat hard-grey">
 			<div class="content">
 				{% include partials/navigation/covers.html %}		
@@ -9,4 +11,8 @@ layout: default
 			<section class="universe filled white section-blank">
 			{% include partials/suscribe.html %}
 			</section>
+    </div>
+      <hr>
+    <div class="svg-icons">
+          {% include svg-icons.html %}
     </div>
