@@ -4,12 +4,12 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+We're UCLA's premiere artificial intelligence and machine learning group. We teach machine learning (along with the latest frameworks such as Tensorflow), build cool things together, and read research papers and books. We also seek to engage with the broader AI community both in LA and beyond.
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+Stuff we've done in the past, officers, etc.
 
-### Contact me
+### Contact
 
-[email@domain.com](mailto:email@domain.com)
+Get in touch with [ACM](http://uclaacm.com)
