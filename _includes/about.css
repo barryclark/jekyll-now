@@ -1,0 +1,39 @@
+.age {font-family: 'Open Sans Condensed', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Yanone Kaffeesatz', sans-serif;
+font-family: 'Amatic SC', cursive;
+font-family: 'Permanent Marker', cursive;
+font-family: 'Six Caps', sans-serif;
+}
+.header-cover {padding:6px 0 0;}
+.header-up {padding:1px 0 0;height:2em;}
+header, footer {border:none;}
+h1, h2 {font-family:'CinzelDecorative-Bold', Helvetica, Arial; font-size:5.5em;
+}
+h3 {font-family:'Open Sans Condensed', sans-serif, Helvetica, Arial; font-size:2.0em;letter-spacing: 0.06em;
+}
+.musics h4{font-size:1.5em;letter-spacing: 0.1em;line-height:1.5em;}
+h5 {font-family:'Six Caps', sans-serif, Helvetica, Arial !important;font-size:1.5em!important;padding-top:0;margin-top:0;letter-spacing: 0.1em;
+}
+.slide-wrapper {overflow:none;min-height:25em;}
+@media (max-width: 1366px) {
+	.full-cover {padding:0 0 0;}
+	h1 {font-size:1.8em;line-height:1.2em;}
+	h4 {font-size:1.4em;line-height:1.1em;}
+	h6 {font-size:1.0em;line-height:1.0em;}
+}
+@media (max-width: 800px) {
+}
+@media (max-width: 767px) {
+	.full-cover {padding:5px 0 0;}
+	h1 {font-size:1.6em;line-height:1.0em;}
+	h4 {font-size:1.2em;line-height:1.0em;}
+	h6 {font-size:0.9em;line-height:0.6em;}
+	#footer {line-height:1.8em;}
+}
+@media (max-width: 550px) {
+	.full-cover {padding:36px 0 0;}
+	h2 {font-size:18px!important;line-height:1.0em;}
+	h3 {font-size:1.2em;line-height:1.0em;}
+}
+
