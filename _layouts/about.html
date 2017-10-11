@@ -27,6 +27,17 @@
 		<main id="content" class="universe">
 		{{ content }}
 
+							<hr class="filled black">					
+					<section class="universe filled white section-blank">
+						<div class="musics">
+					<h3 class="filled soft-yellow uppercased">Formació</h3>
+						{% if site.site_musics %}
+						<h4>{{ site.site_musics }}</h4>
+						{% endif %}
+						</div>
+					</section>
+							<hr class="filled black">
+							
 					<section class="universe filled white section-blank">
 					{% include partials/suscribe.html %}
 					</section>

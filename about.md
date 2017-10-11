@@ -5,7 +5,6 @@ permalink: /about/
 
 ---
 
-### BIO
 ##### Old Steam: "Vell Vapor" dels trens que van expandir el blues, el swing i el jazz per tot EEUU.
 #### Quintet de música retro-americana. 
 Un elegant repás cronològic a l'essència i origen de la música popular des dels anys 20 fins a l'actualitat.<br>
@@ -13,7 +12,6 @@ Clàssics del swing més autèntic, joies del jazz més íntim i composicions pe
 Formació original a quartet desde 2010.
 
  
-Some information about you!
 
 ### More Information
 
