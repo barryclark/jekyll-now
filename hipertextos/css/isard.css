@@ -11,32 +11,12 @@ text-align: justify;
 header {
 	text-align:center;
 }
-h1 {font-family:'Cinzel+Decorative', Helvetica, Arial;font-weight:bold;}
-h2 {font-family: 'Six+Caps', sans-serif;}
-h3 {font-family: 'Yanone+Kaffeesatz', sans-serif;}
-h4 {font-family: 'Amatic+SC', cursive; }
-h5 {font-family: 'Six+Caps', sans-serif;}
+h1 {font-family:'Cinzel Decorative', Helvetica, Arial;font-weight:bold;}
+h2 {font-family: 'Six Caps', sans-serif;}
+h3 {font-family: 'Yanone Kaffeesatz', sans-serif;}
+h4 {font-family: 'Amatic SC', cursive; }
+h5 {font-family: 'Six Caps', sans-serif;}
 h6 {font-family: 'Oswald', sans-serif;}
-
-/* TIPOS */
-.cinzel {
-}
-.opensans {
-font-family: 'Open Sans Condensed', sans-serif;}
-.opensanstitle {
-font-family: 'Open Sans Condensed', sans-serif;
-font-size:2.0em;letter-spacing: 0.06em;}
-.oswald {
-font-family: 'Oswald', sans-serif;}
-.yanone {
-font-family: 'Yanone Kaffeesatz', sans-serif;}
-.amatic {
-font-family: 'Amatic SC', cursive;}
-.permanent {
-font-family: 'Permanent Marker', cursive;}
-.sixcaps {
-font-family: 'Six Caps', sans-serif;
-}
 
 .uppercased  {text-transform: uppercase;}
 nav {height:5.8em;padding:0.7%;	z-index: 1000;}
