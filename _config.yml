@@ -21,19 +21,19 @@ site_musics: <b>Maria Baeta</b> - veu<br><b>Pep Cabrero</b> - Saxo<br><b>Juanje 
 
 # Includes an icon in the footer for each username you enter
 footer-links:
-  dribbble:
+  dribbble: xxx
   email: oldsteambcn@gmail.com
   facebook: oldsteambcn
-  flickr:
+  flickr: xxx
   github: barryclark/jekyll-now
   instagram: oldsteambcn
-  linkedin:
-  pinterest:
-  rss: # just type anything here for a working RSS icon
+  linkedin: xxx
+  pinterest: xxx
+  rss: xxx
   twitter: oldsteambcn
-  stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
+  stackoverflow: xxx
   youtube: oldsteambcn/<oldsteambcn>
-  googleplus: # anything in your profile username that comes after plus.google.com/
+  googleplus: xxxx
 
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
