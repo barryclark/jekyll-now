@@ -25,15 +25,15 @@ footer-links:
   email: oldsteambcn@gmail.com
   facebook: oldsteambcn
   flickr: xxx
-  github: barryclark/jekyll-now
+  github: isardmt/oldsteam
   instagram: oldsteambcn
   linkedin: xxx
   pinterest: xxx
   rss: xxx
   twitter: oldsteambcn
-  stackoverflow: xxx
+  stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: oldsteambcn/<oldsteambcn>
-  googleplus: xxxx
+  googleplus: # anything in your profile username that comes after plus.google.com/
 
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
