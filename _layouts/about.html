@@ -28,25 +28,6 @@
 		<section class="section-blank">
 		{{ content }}
 		</section>
-
-						<h3 class="filled soft-yellow uppercased">{{ page.title }}</h3>
-						<h6>Podeu posar-vos en contacte amb nosaltres a través del correu, trucant-nos o vía Whatsapp o Telegram</h6>
-						<div class=" biobuttons">
-						{% if page.org_email %}
-							<button class="lines soft squared underline-hover">
-							<a href="mailto:{{ page.org_email }}" title="{{ page.org_email }}">{{ page.org_email }}</a></button>
-						{% endif %}
-						{% if page.org_phone %}
-							<button class="lines soft squared underline-hover"> 
-							<a href="tel:{{ page.org_phone }}" title="Phone me">{{ page.org_phone }}</a></button>
-						{% endif %}
-						{% if page.vcard %}
-							<button class="lines soft squared underline-hover"> 
-							{% for vcard in page.vcard %}
-								<a href="{{ vcard.url }}" title="Download my vCard" download="{{ page.site_author }}.vcard">Desar Contacte vCard</a></button>
-							{% endfor %}
-						{% endif %}
-						</div>
 						<hr>
 			<div class="content">
 						<h6>O bé a través de les Xarxes</h6>
