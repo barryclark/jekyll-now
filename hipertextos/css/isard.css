@@ -7,7 +7,6 @@ text-align: justify;
  hyphens:none;
 /* otros valores: auto & none */
  word-wrap:none;
- font-family:'Open Sans Condensed', sans-serif, Helvetica, Arial;
  }
 header {
 	text-align:center;
@@ -77,7 +76,7 @@ nav .navlink {margin:0 8px 0 8px;min-width:6.5em;}
 #footer nav {border:none;}
 nav a:hover {color:#aaa;}
 .suscribe h3 {font-family:'Open Sans Condensed', sans-serif, Helvetica, Arial; font-size:2.0em;letter-spacing: 0.06em;}
-.home  {font-family:'CinzelDecorative-Bold', Helvetica, Arial;font-size:1.9em;letter-spacing: .01em !important;}
+.home  {font-family:'CinzelDecorative-Bold', Helvetica, Arial !important;font-size:1.9em;letter-spacing: .01em !important;}
 .sibling-content div{border-radius: .5em;position:absolute;}
 .moreinfo {margin:0;padding:0;}
 .prev-sib {float:left;}
@@ -88,7 +87,6 @@ prev.img-sibling {float:left;}
 next.txt-sibling {}
 next.img-sibling {float:right;}
 .medias {letter-spacing: .1em;}
-.pdf .icon {}
 .biobuttons a{line-height:1.2em;font-family:'Open Sans Condensed', sans-serif, Helvetica, Arial; font-size:1.8em;}
 .article-thumb {margin-bottom:0px!important;padding-bottom:0px!important;}
 h4.article-title, .article-title .icon {margin-top:0px!important;padding-top:0px!important;}
