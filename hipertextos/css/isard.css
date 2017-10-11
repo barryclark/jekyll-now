@@ -11,7 +11,7 @@ text-align: justify;
 header {
 	text-align:center;
 }
-h1 {font-family:'Cinzel Decorative', Helvetica, Arial;font-style:bold;}
+h1 {font-family:'CinzelDecorative-Bold', Helvetica, Arial;font-style:bold;}
 h2 {font-family: 'Six Caps', sans-serif;letter-spacing: 0.12em;}
 h3 {font-family:'Open Sans Condensed', sans-serif, Helvetica, Arial;letter-spacing: 0.06em;}
 h4 {font-family: 'Amatic SC', cursive; }
@@ -74,7 +74,7 @@ nav .navlink {margin:0 8px 0 8px;min-width:6.5em;}
 .bio p {color:#fff !important;}
 #footer nav {border:none;}
 nav a:hover {color:#aaa;}
-.home  {font-family:'Cinzel Decorative', Helvetica, Arial !important;font-style:bold;font-size:1.9em;letter-spacing: .01em !important;}
+.home  {font-family:'CinzelDecorative-Bold', Helvetica, Arial !important;font-size:1.9em;letter-spacing: .01em !important;}
 .sibling-content div{border-radius: .5em;position:absolute;}
 .moreinfo {margin:0;padding:0;}
 .prev-sib {float:left;}
