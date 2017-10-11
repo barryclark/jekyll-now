@@ -13,6 +13,17 @@ permalink: /about/
 
  
 
+### Contacte
+###### Podeu posar-vos en contacte amb nosaltres a través del correu, trucant-nos o vía Whatsapp o Telegram
+<div class=" biobuttons">
+<button class="lines soft squared underline-hover">
+<a href="mailto:oldsteambcn@gmail.com" title="Envia'ns un correu">oldsteambcn@gmail.com</a></button>
+<button class="lines soft squared underline-hover"> 
+<a href="tel:+34 658973617" title="Truca'ns">658973617</a></button>
+<button class="lines soft squared underline-hover"> 
+<a href="xxx/vcard" title="Desar my vCard" download="oldsteam.vcard">Desar Contacte vCard</a></button>
+</div>
+
 ### More Information
 
 A place to include any other types of information that you'd like to include about yourself.
