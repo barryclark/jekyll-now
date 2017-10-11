@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+
+    {% include meta.html %}
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/css/isard.css" />
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/css/styles.min.css" />
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/css/anime.css" />
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cinzel+Decorative+Bold|Amatic+SC|Open+Sans+Condensed:300|Oswald|Permanent+Marker|Six+Caps|Yanone+Kaffeesatz" />
+  </head>
+
+  <body>
+	{% include partials/navigation/nav-about.html %}
+	<!-- Page content -->
+	<div class="page full-cover flat black" id="page" style="background-image: url('{{ site.baseurl }}/img/about.jpg');">
+		<header class="header-up">
+						<h3 class="filled soft-yellow uppercased">BIO</h3>
+		</header>
+		<main id="content">
+			<div class="content text-left">
+				<div class="cell-10 pushed-1">
+					<section class="filled soft-grey section-blank universe">
+							<div class="layout slide-wrapper filled white anm-fadeIn delay-100">
+								<section class="bio prose slide-page section-blank">{{ page.contingut }}</section>
+								<section class="bio prose slide-page section-blank">{{ page.contenido }}</section>
+								<section class="bio prose slide-page section-blank">{{ page.content }}</section>
+							<hr>
+							<button class="button filled white squared slide-trigger anm-scaleUp delay-600" slide-in="rotateCubeRightIn" slide-out="rotateCubeRightOut">
+							CAT | ESP | ENG</button>	
+							</div>
+							<hr class="filled black">
+						<h3 class="filled soft-yellow uppercased">{{ page.title }}</h3>
+						<h6>Podeu posar-vos en contacte amb nosaltres a través del correu, trucant-nos o vía Whatsapp o Telegram</h6>
+						<div class=" biobuttons">
+						{% if site.email %}
+							<button class="lines soft squared underline-hover">
+							<a href="mailto:{{ site.email }}" title="{{ page.org_email }}">{{ site.email }}</a></button>
+						{% endif %}
+						{% if site.phone %}
+							<button class="lines soft squared underline-hover"> 
+							<a href="tel:{{ site.phone }}" title="Phone me">{{ site.phone }}</a></button>
+						{% endif %}
+						{% if site.vcard %}
+							<button class="lines soft squared underline-hover"> 
+							{% for vcard in site.vcard %}
+								<a href="{{ vcard.url }}" title="Download my vCard" download="{{ site.site_author }}.vcard">Desar Contacte vCard</a></button>
+							{% endfor %}
+						{% endif %}
+						</div>
+						<hr>
+			<div class="content">
+						<h6>O bé a través de les Xarxes</h6>
+				<div id="deep-buttons" class="button-centered s filled white">
+					{% if site.facebook %}
+					  <a href="http://www.facebook.com/{{ site.facebook }}" class="button-icon icon-facebook flat soft-blue squared" title="Facebook profile"></a>
+					{% endif %}
+					{% if site.twitter %}
+					  <a href="http://www.twitter.com/{{ site.twitter }}" class="button-icon icon-twitter flat soft-turquoise squared" title="Twitter profile"></a>
+					{% endif %}
+					{% if site.tumblr %}
+					  <a href="http://{{ site.tumblr }}.tumblr.com/" class="button-icon icon-tumblr flat soft-blue squared" title="Tumblr profile"></a>
+					{% endif %}
+					{% if site.googleplus %}
+					  <a href="http://www.googleplus.com/{{ site.googleplus }}" class="button-icon icon-google-plus flat soft-red squared" title="Google plus profile"></a>
+					{% endif %}
+					{% if site.flickr %}
+					  <a href="http://www.flickr.com/photos/{{ site.flickr }}" class="button-icon icon-flickr circled flat soft-amber squared" title="Flickr profile"></a>
+					{% endif %}
+					{% if site.picasa %}
+					  <a href="http://www.facebook.com/{{ site.picasa }}" class="button-icon icon-picasa flat soft-blue squared" title="Picasa profile"></a>
+					{% endif %}
+					{% if site.instagram %}
+					  <a href="http://www.instagram.com/{{ site.instagram }}" class="button-icon icon-instagram flat soft-violet squared" title="Instagram profile"></a>
+					{% endif %}
+					{% if site.youtube %}
+					  <a href="http://www.youtube.com/user/{{ site.youtube }}" class="button-icon icon-youtube flat soft-red squared" title="Youtube profile"></a>
+					{% endif %}
+					{% if page.vimeo_id %}
+					  <a href="http://www.vimeo.com/{{ page.vimeo }}" class="button-icon icon-vimeo flat soft-asphalt squared" title="Vimeo profile"></a>
+					{% endif %}
+				</div>
+			</div>
+					</section>
+							<hr class="filled black">					
+					<section class="medias universe filled white section-blank">
+					<h3 class="filled soft-yellow uppercased">Prensa</h3>
+					<h4>{% include partials/assets/media.html %}</h4>				
+					</section>
+							<hr>
+							<hr class="filled black">					
+					<section class="universe filled white section-blank">
+					<h3 class="filled soft-yellow uppercased">Repertori</h3>
+					{{ page.repertori }}
+					</section>
+							<hr>
+							<hr class="filled black">					
+					<section class="universe filled white section-blank">
+						<div class="musics">
+					<h3 class="filled soft-yellow uppercased">Formació</h3>
+						{% if page.site_musics %}
+						<h4>{{ page.site_musics }}</h4>
+						{% endif %}
+						</div>
+					</section>
+							<hr class="filled black">
+				</div>
+							<hr>					
+			</div>
+					<section class="universe filled white section-blank">
+					{% include partials/suscribe.html %}
+					</section>
+							<hr class="filled black">					
+		</main>
+		{% include partials/footerslim.html %}
+	</div><!-- /#page -->
+
+    <!-- Scripts
+    ================================================== -->
+    <script src="{{ site.baseurl }}/hipertextos/js/jquery.js" type="text/javascript"></script>
+    <script src="{{ site.baseurl }}/hipertextos/js/anime.js" type="text/javascript"></script>
+    <script src="{{ site.baseurl }}/hipertextos/js/scripts.min.js" type="text/javascript"></script>
+    <script src="{{ site.baseurl }}/hipertextos/js/icons.js" type="text/javascript"></script>
+    {% include analytics.html %}
+  </body>
+</html>
