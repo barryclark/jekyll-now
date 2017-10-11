@@ -2,31 +2,16 @@
 layout: about
 title: About
 permalink: /about/
-contingut: |
- <div class="universe">
- <h5>Old Steam: "Vell Vapor" dels trens que van expandir el blues, el swing i el jazz per tot EEUU.</h5>
- Quintet de música retro-americana.<br>
+---
+ ### BIO
+ ##### Old Steam: "Vell Vapor" dels trens que van expandir el blues, el swing i el jazz per tot EEUU.
+ #### Quintet de música retro-americana. 
  Un elegant repás cronològic a l'essència i origen de la música popular des dels anys 20 fins a l'actualitat.<br>
  Clàssics del swing més autèntic, joies del jazz més íntim i composicions per a cine.<br>
- Formació original a quartet desde 2010.<br> 
- </div>
-contenido: |
- <div class="universe">
- <h5>Old Steam: "Vell Vapor" dels trens que van expandir el blues, el swing i el jazz per tot EEUU.</h5>
- Quintet de música retro-americana.<br>
- Un elegant repás cronològic a l'essència i origen de la música popular des dels anys 20 fins a l'actualitat.<br>
- Clàssics del swing més autèntic, joies del jazz més íntim i composicions per a cine.<br>
- Formació original a quartet desde 2010.<br> 
- </div>
-content: |
- <div class="universe">
- <h5>Old Steam: "Vell Vapor" dels trens que van expandir el blues, el swing i el jazz per tot EEUU.</h5>
- Quintet de música retro-americana.<br>
- Un elegant repás cronològic a l'essència i origen de la música popular des dels anys 20 fins a l'actualitat.<br>
- Clàssics del swing més autèntic, joies del jazz més íntim i composicions per a cine.<br>
- Formació original a quartet desde 2010.<br> 
- </div>
-repertori: |
+ Formació original a quartet desde 2010.
+ 
+ ---
+ 
  <div class="repertori layout">
  <h3><div class="song thumb-5">Dark Eyes</div><div class="year thumb-2">1920</div><div class="autor thumb-5">Adalgiso Ferraris</div></h3>
  <h3><div class="song thumb-5">Blue Skies</div><div class="year thumb-2">1926</div><div class="autor thumb-5">Irving Berlin</div></h3>
@@ -59,9 +44,9 @@ repertori: |
  <h3><div class="song thumb-5">Bad Romance</div><div class="year thumb-2">2009</div><div class="autor thumb-5">Lady Gaga</div></h3>
  <h3><div class="song thumb-5">Sinister Swing</div><div class="year thumb-2">2010</div><div class="autor thumb-5">Maria Baeta & Pep Cabrero</div></h3>
  </div>
- 
----
 
+ ***
+ 
 Some information about you!
 
 ### More Information
