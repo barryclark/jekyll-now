@@ -14,7 +14,7 @@
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/css/anime.css" />
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/css/about.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cinzel+Decorative+Bold|Amatic+SC|Open+Sans+Condensed:300|Oswald|Permanent+Marker|Six+Caps|Yanone+Kaffeesatz" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=CinzelDecorative+Bold|Amatic+SC|Open+Sans+Condensed:300|Oswald|Permanent+Marker|Six+Caps|Yanone+Kaffeesatz" />
   </head>
 
   <body>
@@ -40,20 +40,12 @@
 						<h3 class="filled soft-yellow uppercased">{{ page.title }}</h3>
 						<h6>Podeu posar-vos en contacte amb nosaltres a través del correu, trucant-nos o vía Whatsapp o Telegram</h6>
 						<div class=" biobuttons">
-						{% if site.email %}
 							<button class="lines soft squared underline-hover">
 							<a href="mailto:{{ site.email }}" title="{{ page.org_email }}">{{ site.email }}</a></button>
-						{% endif %}
-						{% if site.phone %}
 							<button class="lines soft squared underline-hover"> 
 							<a href="tel:{{ site.phone }}" title="Phone me">{{ site.phone }}</a></button>
-						{% endif %}
-						{% if site.vcard %}
 							<button class="lines soft squared underline-hover"> 
-							{% for vcard in site.vcard %}
 								<a href="{{ vcard.url }}" title="Download my vCard" download="{{ site.site_author }}.vcard">Desar Contacte vCard</a></button>
-							{% endfor %}
-						{% endif %}
 						</div>
 						<hr>
 			<div class="content">
