@@ -1,14 +1,7 @@
-.age {font-family: 'Open Sans Condensed', sans-serif;
-font-family: 'Oswald', sans-serif;
-font-family: 'Yanone Kaffeesatz', sans-serif;
-font-family: 'Amatic SC', cursive;
-font-family: 'Permanent Marker', cursive;
-font-family: 'Six Caps', sans-serif;
-}
 .header-cover {padding:6px 0 0;}
 .header-up {padding:1px 0 0;height:2em;}
 header, footer {border:none;}
-h1, h2 {font-family:'CinzelDecorative-Bold', Helvetica, Arial; font-size:5.5em;
+h1 {font-family:'CinzelDecorative-Bold', Helvetica, Arial !important;
 }
 h3 {font-family:'Open Sans Condensed', sans-serif, Helvetica, Arial; font-size:2.0em;letter-spacing: 0.06em;
 }

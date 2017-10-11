@@ -12,10 +12,9 @@ text-align: justify;
 header {
 	text-align:center;
 }
-h1, h2 { font-family:'Open Sans Condensed', sans-serif, Helvetica, Arial; font-size:6.5em; 
-}
+h1, h2 { }
 .uppercased  {text-transform: uppercase;}
-nav {font-family:'Open Sans Condensed', sans-serif, Helvetica, Arial;height:5.8em;padding:0.7%;	z-index: 1000;}
+nav {height:5.8em;padding:0.7%;	z-index: 1000;}
 .covers {margin:none; padding:none;width:100%;height:100%;}
 .full-cover {
 	background-position: top center;
@@ -62,18 +61,7 @@ nav {font-family:'Open Sans Condensed', sans-serif, Helvetica, Arial;height:5.8e
 	border:none;
 	z-index: 100;
 }
-_.article-max {height:21em !important;height:auto;}
-.anunci {background:rgba(250,250,250,0.23);}
 .softly {border:thin solid #fff;opacity:0.1;}
-p.article-date {font-family:'HelveticaNeue-Light', Helvetica, Arial;}
-.nav-inline {
-margin-top:6px;:0;line-height:1.2em;
-font-size:2.3em;
-text-align: left!important;
-position:absolute;z-index:200;
-color:#ccc;
-}
-.nav-inline:first-child {padding-left:2.0em;}
 nav {background:transparent;text-align:center!important;}
 nav .navlink, nav .home {text-transform: uppercase;}
 nav .navlink {margin:0 8px 0 8px;min-width:6.5em;}
