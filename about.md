@@ -15,13 +15,9 @@ permalink: /about/
 
 ### Contacte
 ###### Podeu posar-vos en contacte amb nosaltres a través del correu, trucant-nos o vía Whatsapp o Telegram
-<div class=" biobuttons">
-<button class="lines soft squared underline-hover">
-<a href="mailto:oldsteambcn@gmail.com" title="Envia'ns un correu">oldsteambcn@gmail.com</a></button>
-<button class="lines soft squared underline-hover"> 
-<a href="tel:+34 658973617" title="Truca'ns">658973617</a></button>
-<button class="lines soft squared underline-hover"> 
-<a href="xxx/vcard" title="Desar my vCard" download="oldsteam.vcard">Desar Contacte vCard</a></button>
+<div class=" biobuttons"><button class="lines soft squared underline-hover">[oldsteambcn@gmail.com](mailto:oldsteambcn@gmail.com "Envia'ns un correu")</button>
+<button class="lines soft squared underline-hover">[658973617](tel:+34 658973617 "Truca'ns")</button>
+<button class="lines soft squared underline-hover">[Desar Contacte vCard](xxx/vcard "Desar my vCard")</button>
 </div>
 
 ### More Information
