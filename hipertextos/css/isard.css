@@ -11,7 +11,13 @@ text-align: justify;
 header {
 	text-align:center;
 }
-h1, h2 { }
+h1 { }
+h2 { }
+h3 { }
+h4 { }
+h5 { }
+h6 { }
+
 .uppercased  {text-transform: uppercase;}
 nav {height:5.8em;padding:0.7%;	z-index: 1000;}
 .covers {margin:none; padding:none;width:100%;height:100%;}
@@ -60,7 +66,6 @@ nav {height:5.8em;padding:0.7%;	z-index: 1000;}
 	border:none;
 	z-index: 100;
 }
-.softly {border:thin solid #fff;opacity:0.1;}
 nav {background:transparent;text-align:center!important;}
 nav .navlink, nav .home {text-transform: uppercase;}
 nav .navlink {margin:0 8px 0 8px;min-width:6.5em;}
