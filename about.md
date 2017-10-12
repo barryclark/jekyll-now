@@ -39,10 +39,38 @@ permalink: /about/
 {% if site.footer-links.youtube %}<a href="https://youtube.com/{{ site.footer-links.youtube }}"><i class="button-icon icon-youtube flat soft-red squared"></i></a>{% endif %}
 {% if site.footer-links.googleplus %}<a href="https://plus.google.com/{{ site.footer-links.googleplus }}"><i class="button-icon icon-google-plus flat soft-red squared"></i></a>{% endif %}
 	</div>
-</div>
+</div>strong
 
----
+<hr class="filled black">
 
 ### Repertori
-<h4><strong>TITLE</strong> <em>YEAR</em> <b>AUTHOR</b></h4>
-### **TITLE** _YEAR_ **AUTHOR**
+### **Dark Eyes** _1920_ **Adalgiso Ferraris**
+### **Blue Skies** _1926_ **Irving Berlin**
+### **Puttin' on the Ritz** _1927_ **Irving Berlin**
+### **On the sunny side of the street** _1930_ **Jimmy McHugh y Dorothy Fields**
+### **Waiting for you** _1930_ **Mariano Rajoy**
+### **I need a sugar in my bowl** _1931_ **Bessie Smith**
+### **All of me** _1931_ **Gerald Marks y Seymour Simons**
+### **Bei Mir Bist du Schön** _1932_ **Jacob Jacobs y Sholom Secunda**
+### **Cheek to cheek** _1935_ **Irving Berlin**
+### **Sing sing sing** _1936_ **Louis Prima / Benny Goodman**
+### **At Last** _1941_ **Etta James**
+### **El Padrino** _1942_ **Nino Rota**
+### **Bella Ciao** _1943_ **Desconocido**
+### **Why Don't You Do Right?** _1945_ **Joseph "Kansas Joe" McCoy**
+### **Put the blame on mame** _1946_ **Allan Roberts y Doris Fisher**
+### **I just want to make love with u** _1950_ **Muddy Waters**
+### **Flying to the moon** _1954_ **Bart Howard**
+### **Mr Sandman** _1954_ **Pat Ballard**
+### **Moliendo café** _1958_ **José Manzo Perroni**
+### **Love me right** _1959_ **LaVern Baker**
+### **Hit the road Jack** _1961_ **Ray Charles**
+### **Crazy** _1962_ **Willie Nelson**
+### **Danke Schoen** _1962_ **Bert Kaempfert**
+### **Moondance** _1970_ **Van Morrison**
+### **Miss Celie's Blues** _1985_ **Quincy Jones y Rod Temperton**
+### **Nah Neh Nah** _1990_ **Vaya Con Dios**
+### **Goodnight Moon** _1999_ **Shivaree**
+### **You know I'm Good** _2006_ **Amy Winehouse**
+### **Bad Romance** _2009_ **Lady Gaga**
+### **Sinister Swing** _2010_ **Maria Baeta & Pep Cabrero**
