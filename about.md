@@ -14,11 +14,12 @@ Currently, I've been working as an assistant professor in Sociology Department i
 ### 관심사 Interested in...
 
 에스노그라피, 사회이론, 산업정책, 데이터과학, 엔지니어
+
 Ethnography, Social Theory, Industrial Policy, Data Science and Engineers
 
-### Contact me
+### Contact me on
 
-[flyinghendrix@gmail.com](mailto:flyinghendrix@gmail.com)
+[e-mail](mailto:flyinghendrix@gmail.com)
 
 [linkedin](https://www.linkedin.com/in/harryseunghoon)
 
