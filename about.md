@@ -19,5 +19,7 @@ Ethnography, Social Theory, Industrial Policy, Data Science and Engineers
 ### Contact me
 
 [flyinghendrix@gmail.com](mailto:flyinghendrix@gmail.com)
+
 [linkedin](https://www.linkedin.com/in/harryseunghoon)
+
 [facebook](https://www.facebook.com/seunghoon.yang)
