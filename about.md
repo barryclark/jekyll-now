@@ -21,3 +21,7 @@ permalink: /about/
 <button class="lines soft squared underline-hover"> 
 <a href="xxx/vcard" title="Desar my vCard" download="oldsteam.vcard">Desar Contacte vCard</a></button>
 </div>
+
+### Repertori
+<h4><strong>TITLE</strong> <em>YEAR</em> <b>AUTHOR</b></h4>
+### **TITLE** _YEAR_ **AUTHOR**
