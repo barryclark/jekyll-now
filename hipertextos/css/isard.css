@@ -19,6 +19,9 @@ h4 {font-family: 'Amatic SC', cursive; }
 h5 {font-family: 'Six Caps', sans-serif;}
 h6 {font-family: 'Oswald', sans-serif;}
 
+.content .lead {font-family: 'Abel', Helvetica, Arial;}
+a {text-transform:uppercase;font-family: 'Abel', Helvetica, Arial;}
+
 .uppercased  {text-transform: uppercase;}
 nav {height:5.8em;padding:0.7%;	z-index: 1000;}
 nav {background:transparent;text-align:center!important;}
@@ -26,6 +29,8 @@ nav .navlink, nav .home {text-transform: uppercase;}
 nav .navlink {margin:0 8px 0 8px;min-width:6.5em;}
 .sticky {  position: -webkit-sticky; position: sticky; top: 0;}
 .nav-sticky { letter-spacing: .16em; position: -webkit-sticky; position: sticky;top: 0;font-size:1.0em;border-bottom:1px solid #222!important;}
+nav a:hover {color:#aaa;}
+.home  {font-family:'Cinzel Decorative', Helvetica, Arial !important;font-size:1.9em;letter-spacing: .01em !important;}
 
 .covers {margin:none; padding:none;width:100%;height:100%;}
 .full-cover {
@@ -74,8 +79,6 @@ nav .navlink {margin:0 8px 0 8px;min-width:6.5em;}
 .suscribe {font-family:'Oswald', sans-serif, Helvetica, Arial;}
 .bio p {color:#fff !important;}
 #footer nav {border:none;}
-nav a:hover {color:#aaa;}
-.home  {font-family:'Cinzel Decorative', Helvetica, Arial !important;font-size:1.9em;letter-spacing: .01em !important;}
 .sibling-content div{border-radius: .5em;position:absolute;}
 .moreinfo {margin:0;padding:0;}
 .prev-sib {float:left;}
@@ -91,9 +94,6 @@ next.img-sibling {float:right;}
 h4.article-title, .article-title .icon {margin-top:0px!important;padding-top:0px!important;}
 .section-blank {border:none !important;}
 #viewer {margin:6%!important;}
-
-.content .lead {font-family:'Open Sans Condensed', sans-serif, Helvetica, Arial;}
-a {text-transform:uppercase;font-family:'Open Sans Condensed', sans-serif, Helvetica, Arial;}
 
 .round {border-radius:5.0em;padding:2% 5% 2% 5%;}
 .underline-hover a{text-decoration:none;}
