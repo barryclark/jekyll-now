@@ -39,7 +39,7 @@ permalink: /about/
 {% if site.footer-links.youtube %}<a href="https://youtube.com/{{ site.footer-links.youtube }}"><i class="button-icon icon-youtube flat soft-red squared"></i></a>{% endif %}
 {% if site.footer-links.googleplus %}<a href="https://plus.google.com/{{ site.footer-links.googleplus }}"><i class="button-icon icon-google-plus flat soft-red squared"></i></a>{% endif %}
 	</div>
-</div>strong
+</div>
 
 <hr class="filled black">
 
