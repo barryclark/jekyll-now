@@ -26,11 +26,12 @@ a {text-transform:uppercase;font-family: 'Abel', Helvetica, Arial;}
 nav {height:5.8em;padding:0.7%;	z-index: 1000;}
 nav {background:transparent;text-align:center!important;}
 nav .navlink, nav .home {text-transform: uppercase;}
-nav .navlink {margin:0 8px 0 8px;min-width:6.5em;}
+nav .navlink {margin:0 8px 0 8px;min-width:6.0em;}
 .sticky {  position: -webkit-sticky; position: sticky; top: 0;}
-.nav-sticky { letter-spacing: .16em; position: -webkit-sticky; position: sticky;top: 0;font-size:1.0em;border-bottom:1px solid #222!important;}
+.nav-sticky { letter-spacing: .12em; position: -webkit-sticky; position: sticky;top: 0;font-size:1.0em;border-bottom:1px solid #222!important;}
 nav a:hover {color:#aaa;}
-.home  {font-family:'Cinzel Decorative', Helvetica, Arial !important;font-size:1.9em;letter-spacing: .01em !important;}
+.home  {font-family:'Cinzel Decorative', Helvetica, Arial !important;font-size:2.1em;line-height:0.2em;letter-spacing: .001em !important;}
+.navlink a {font-family: 'Abel', Helvetica, Arial;letter-spacing: 0.06em;}
 
 .covers {margin:none; padding:none;width:100%;height:100%;}
 .full-cover {
@@ -75,7 +76,7 @@ nav a:hover {color:#aaa;}
 .repertori .year {font-family:'Oswald', Helvetica, Arial;}
 .repertori .song {font-family:'Amatic SC', sans-serif, Helvetica, Arial;text-align:right;}
 .repertori .autor {font-family:'Amatic SC', sans-serif, Helvetica, Arial;text-align:left;}
-.bio {line-height:1.7em;font-family:'Oswald', sans-serif, Helvetica, Arial; font-size:1.5em;}
+.bio {line-height:1.7em;font-family:'Voltaire', Helvetica, Arial; font-size:1.5em;}
 .suscribe {font-family:'Oswald', sans-serif, Helvetica, Arial;}
 .bio p {color:#fff !important;}
 #footer nav {border:none;}
