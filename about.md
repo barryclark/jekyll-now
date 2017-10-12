@@ -43,7 +43,6 @@ permalink: /about/
 
 ---
 
-
 ### Repertori
 <h4><strong>TITLE</strong> <em>YEAR</em> <b>AUTHOR</b></h4>
 ### **TITLE** _YEAR_ **AUTHOR**
