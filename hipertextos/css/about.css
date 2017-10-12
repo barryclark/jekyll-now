@@ -2,7 +2,7 @@
 .header-up {padding:1px 0 0;height:2em;}
 header, footer {border:none;}
 h1 {}
-h3 {}
+h3 em {color:#fafafa;padding:0 6px 0 6px;}
 .musics h4{}
 h5 {padding-top:0;margin-top:0;letter-spacing: 0.1em;
 }

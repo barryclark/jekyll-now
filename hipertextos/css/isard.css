@@ -76,10 +76,6 @@ nav a:hover {color:#aaa;}
 	border:none;
 	z-index: 100;
 }
-.repertori {line-height:1.2em;font-family:'Voltaire', sans-serif, Helvetica, Arial;}
-.repertori .year {}
-.repertori .song {text-align:right;}
-.repertori .autor {text-align:left;}
 .bio {line-height:1.7em;font-family:'Voltaire', Helvetica, Arial; font-size:1.5em;}
 .suscribe {font-family:'Oswald', sans-serif, Helvetica, Arial;}
 .bio p {color:#fff !important;}
