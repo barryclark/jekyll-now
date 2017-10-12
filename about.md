@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-This is a blog of Harry Yang. There will be reading notes of Harry on this blog.
+**양승훈(Harry Yang)**의 독서노트와 서평, 기고한 포스트 등을 모아놓는 블로그입니다.
 
 ### More Information
 
