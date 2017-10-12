@@ -40,6 +40,7 @@ permalink: /about/
 {% if site.footer-links.googleplus %}<a href="https://plus.google.com/{{ site.footer-links.googleplus }}"><i class="button-icon icon-google-plus flat soft-red squared"></i></a>{% endif %}
 	</div>
 </div>
+
 ---
 
 
