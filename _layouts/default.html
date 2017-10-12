@@ -1,23 +1,36 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+<html lang="en-us">
 
-    {% include meta.html %}
-
-    <!--[if lt IE 9]>
-      <script src='http://html5shiv.googlecode.com/svn/trunk/html5.js'></script>
-    <![endif]-->
-
-    <link rel='stylesheet' type='text/css' href='{{ site.baseurl }}/style.css' />
-    <link href='https://fonts.googleapis.com/css?family=Montserrat|Playfair+Display' rel='stylesheet'>
-    <link rel='stylesheet' href='//cdn.jsdelivr.net/font-hack/2.013/css/hack.min.css'>
-    <link rel='alternate' type='application/rss+xml' title='{{ site.name }} - {{ site.description }}' href='{{ site.baseurl }}/feed.xml' />
-  </head>
+  {% include head.html %}
 
   <body>
-    <section class='content'>
+
+    {% include sidebar.html %}
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
       {{ content }}
-    </section>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+    <script>
+      (function(document) {
+        var toggle = document.querySelector('.sidebar-toggle');
+        var sidebar = document.querySelector('#sidebar');
+        var checkbox = document.querySelector('#sidebar-checkbox');
+
+        document.addEventListener('click', function(e) {
+          var target = e.target;
+
+          if(!checkbox.checked ||
+             sidebar.contains(target) ||
+             (target === checkbox || target === toggle)) return;
+
+          checkbox.checked = false;
+        }, false);
+      })(document);
+    </script>
   </body>
 </html>

@@ -47,7 +47,7 @@ In this post, for example, my default layout centers content within a container 
 <div class='container'>
   <header>
     <div class='site-info'>
-      <h1><a href='{{ site.baseurl }}/'>{{ site.name }}</a></h1>
+      <h1><a href='{{ site.baseurl }}'>{{ site.name }}</a></h1>
       <p>Software is hard</p>
     </div>
   </header>

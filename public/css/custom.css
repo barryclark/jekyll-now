@@ -1,0 +1,30 @@
+.post-header {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  height: 32rem;
+  padding-top: 3rem;
+
+  @media screen and (max-width: $mobile) {
+    height: 20rem;
+  }
+}
+
+.post-header.light, .post-header .post-title {
+  color: white !important;
+}
+
+.post-excerpt {
+  margin: 0.6rem 0;
+}
+
+.post-excerpt img {
+  height: 14rem;
+  object-fit: cover;
+  width: 100%;
+}
+
+.post {
+  text-decoration: none !important;
+}

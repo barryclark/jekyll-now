@@ -7,7 +7,7 @@ WORKDIR /app
 
 # Install all needed gems
 RUN gem install bundler sshkit rake
-RUN gem install jekyll jekyll-sitemap pygments.rb redcarpet
+RUN gem install jekyll jekyll-sitemap pygments.rb redcarpet jekyll-paginate
 
 # Copy the current directory contents into the container at /app
 ADD . /app

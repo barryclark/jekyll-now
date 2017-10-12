@@ -2,37 +2,19 @@
 layout: default
 ---
 
-<article class='post'>
-  <div
-    style='background-image: url({{ site.baseurl }}{{ page.header }})'
-    class='post-header {{ page.header-text-color }}'>
-    <div class='container'>
-      {% if page.header-text %}
-        <h1 class='post-title'>{{ page.title }}</h1>
-        <div class='date'>
-          {{ page.date | date: '%B %e, %Y' }}
-        </div>
-      {% endif %}
-    </div>
-  </div>
-
-  <div class='container entry'>
-    {% if page.header-text == false %}
+<div
+  style='background-image: url({{ site.baseurl }}{{ page.header }})'
+  class='post-header {{ page.header-text-color }}'>
+  <div class='container'>
+    {% if page.header-text %}
       <h1 class='post-title'>{{ page.title }}</h1>
       <div class='date'>
         {{ page.date | date: '%B %e, %Y' }}
       </div>
     {% endif %}
-    {{ content }}
-    {% if page.tags.size > 0 %}
-    <ul class='tags'>
-      {% for tag in page.tags %}
-      <li class='tag'>
-        <a href="/tag#{{ tag }}">{{ tag }}</a>
-      </li>
-      {% endfor %}
-    </ul>
-    {% endif %}
-    {% include disqus.html %}
   </div>
-</article>
+</div>
+
+<div class="container content">
+  {{ content | remove_first:page.excerpt }}
+</div>
