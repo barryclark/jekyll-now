@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 조선업 관련 논문 독서노트
+title: 조선업 관련 논문 - 1) 노동자 문화 관련
 ---
 
 ### 신원철. 2005. "1960~1970년대 기계산업 노동자의 여가 및 소비생활, 그리고 노동자 정체성"  경제와사회 통권 제68호. ###
@@ -61,6 +61,10 @@ title: 조선업 관련 논문 독서노트
 
 과장급 이상 - 피아노 바이올린 등 예능 교육
 
+
+
+
+
 #### Reference ####
 
 구해근. 2002. 한국 노동계급의 형성. 창비
@@ -78,3 +82,4 @@ title: 조선업 관련 논문 독서노트
 황익주. 1997. 공장 노동자들의 여가생활: 경기도 성남지역 노동자들의 사례 연구. 문옥표 편. 한국인의 소비와 여가생활. 한국정신문화연구원
 
 Warde, Alan. 1992. "Notes on the Relationship between Production and Consumption" in Burrows, Roger and Catherine Marsh(eds.).
+
