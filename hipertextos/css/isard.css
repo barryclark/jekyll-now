@@ -15,7 +15,7 @@ header {
 h1 {font-family: 'Cinzel Decorative', Helvetica, Arial;}
 h2 {font-family: 'Voltaire', sans-serif;letter-spacing: 0.12em;}
 h3 {font-family: 'Abel', Helvetica, Arial;letter-spacing: 0.06em;}
-h4 {font-family: 'Amatic SC', cursive; }
+h4 {font-family: 'Voltaire', sans-serif; }
 h5 {font-family: 'Six Caps', sans-serif;}
 h6 {font-family: 'Oswald', sans-serif;}
 
@@ -73,9 +73,9 @@ nav a:hover {color:#aaa;}
 	z-index: 100;
 }
 .repertori {line-height:1.2em;}
-.repertori .year {font-family:'Oswald', Helvetica, Arial;}
-.repertori .song {font-family:'Amatic SC', sans-serif, Helvetica, Arial;text-align:right;}
-.repertori .autor {font-family:'Amatic SC', sans-serif, Helvetica, Arial;text-align:left;}
+.repertori .year {font-family:'Abel', Helvetica, Arial;}
+.repertori .song {font-family:'Voltaire', sans-serif, Helvetica, Arial;text-align:right;}
+.repertori .autor {font-family:'Voltaire', sans-serif, Helvetica, Arial;text-align:left;}
 .bio {line-height:1.7em;font-family:'Voltaire', Helvetica, Arial; font-size:1.5em;}
 .suscribe {font-family:'Oswald', sans-serif, Helvetica, Arial;}
 .bio p {color:#fff !important;}
@@ -171,17 +171,8 @@ a {text-decoration:none!important;}
 /* TIPOS */
 .cinzel {
 font-family:'Cinzel Decorative', Helvetica, Arial;}
-.opensans {
-font-family: 'Open Sans Condensed', sans-serif;}
-.opensanstitle {
-font-family: 'Open Sans Condensed', sans-serif;
-font-size:2.0em;letter-spacing: 0.06em;}
 .oswald {
 font-family: 'Oswald', sans-serif;}
-.yanone {
-font-family: 'Yanone Kaffeesatz', sans-serif;}
-.amatic {
-font-family: 'Amatic SC', cursive;}
 .sixcaps {
 font-family: 'Six Caps', sans-serif;
 }
