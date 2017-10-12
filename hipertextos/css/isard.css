@@ -12,9 +12,9 @@ header {
 	text-align:center;
 }
 .bigger h1{font-size:2.3em;}
-h1 {font-family:'Cinzel Decorative', Helvetica, Arial;}
+h1 {font-family: 'Cinzel Decorative', Helvetica, Arial;}
 h2 {font-family: 'Voltaire', sans-serif;letter-spacing: 0.12em;}
-h3 {font-family:'Abel', sans-serif, Helvetica, Arial;letter-spacing: 0.06em;}
+h3 {font-family: 'Abel', Helvetica, Arial;letter-spacing: 0.06em;}
 h4 {font-family: 'Amatic SC', cursive; }
 h5 {font-family: 'Six Caps', sans-serif;}
 h6 {font-family: 'Oswald', sans-serif;}
