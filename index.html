@@ -133,20 +133,21 @@
               <div class="page-header">
                 <h1 class="contactHead">Contact me</h1>
               </div>
-              <form>
+              <form action="https://formspree.io/jessesternmusic@gmail.com"
+      method="POST">
                 <div class="form-group">
                   <label for="exampleName">Name</label>
-                  <input type="name" class="form-control" id="exampleName" placeholder="John Smith">
+                  <input name ="name" type="name" class="form-control" id="exampleName" placeholder="John Smith" required>
                 </div>
                 <div class="form-group">
                   <label for="exampleInputEmail1">Email address</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="example@gmail.com">
+                  <input name ="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="example@gmail.com" required>
                 </div>
                 <div class="form-group">
                   <label for="exampleTextarea">Message</label>
-                  <textarea class="form-control" id="exampleTextarea" rows="9"></textarea>
+                  <textarea name ="message" class="form-control" id="exampleTextarea" rows="9" required ></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                  <input type="submit" value="Send" />
               </form>
             </div> <!-- col md8 -->
           </div>
