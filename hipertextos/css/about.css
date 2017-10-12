@@ -2,7 +2,8 @@
 .header-up {padding:1px 0 0;height:2em;}
 header, footer {border:none;}
 h1 {}
-h3 em {color:#fafafa;padding:0 6px 0 6px;font-size:0.95em;line-height:0.8em;letter-spacing: 0.01em;}
+h3 em {color:#fafafa;padding:0 6px 0 6px;letter-spacing: 0.05em;}
+h3 strong {letter-spacing: 0.05em;}
 .musics h4{}
 h5 {padding-top:0;margin-top:0;letter-spacing: 0.1em;
 }
