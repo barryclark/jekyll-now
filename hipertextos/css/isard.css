@@ -19,6 +19,9 @@ h4 {font-family: 'Voltaire', sans-serif; }
 h5 {font-family: 'Six Caps', sans-serif;}
 h6 {font-family: 'Oswald', sans-serif;}
 
+h3 {background:transparent !important;stroke:transparent !important;text-transform:uppercase;
+color:#fe9;background-color:#fe9;border-color:#fe9;fill:#fe9;stroke:#fe9;}
+
 .content .lead {font-family: 'Abel', Helvetica, Arial;}
 a {text-transform:uppercase;font-family: 'Abel', Helvetica, Arial;}
 .foot h4 {font-family:'Cinzel Decorative', Helvetica, Arial !important;}
@@ -79,8 +82,6 @@ nav a:hover {color:#aaa;}
 .repertori .autor {text-align:left;}
 .bio {line-height:1.7em;font-family:'Voltaire', Helvetica, Arial; font-size:1.5em;}
 .suscribe {font-family:'Oswald', sans-serif, Helvetica, Arial;}
-h3 {background:transparent !important;stroke:transparent !important;text-transform:uppercase;
-color:#fe9;background-color:#fe9;border-color:#fe9;fill:#fe9;stroke:#fe9;}
 .bio p {color:#fff !important;}
 #footer nav {border:none;}
 .sibling-content div{border-radius: .5em;position:absolute;}

@@ -21,7 +21,3 @@ permalink: /about/
 <button class="lines soft squared underline-hover"> 
 <a href="xxx/vcard" title="Desar my vCard" download="oldsteam.vcard">Desar Contacte vCard</a></button>
 </div>
-
-## Contact me
-
-[email@domain.com](mailto:email@domain.com)
