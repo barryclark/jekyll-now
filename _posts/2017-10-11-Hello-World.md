@@ -5,9 +5,6 @@ title: Major Project Idea's
 
 ![_config.yml]({{ site.baseurl }}/images/config.png)
 
-Major Project Idea's
-====
-
 Three ideas:
 ----
 1.	A Web application for care assistants to fill out information on a clients that friends and family can access
