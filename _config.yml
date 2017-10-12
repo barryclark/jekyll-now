@@ -32,46 +32,7 @@ footer-links:
   twitter: oldsteambcn
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: oldsteambcn/<oldsteambcn>
-  googleplus: # anything in your profile username that comes after plus.google.com/
-
-# Music Set List
-music_set:
-  s1: Dark Eyes
-  y1: 1920
-  a1: Adalgiso Ferraris
-  s2: Blue Skies
-  y2: 1926
-  a2: Irving Berlin
-  s3:
-  y3:
-  a3:
-  s4:
-  y4:
-  a4:
-  s5:
-  y5:
-  a5:
-  s6:
-  y6:
-  a6:
-  s7:
-  y7:
-  a7:
-  s8:
-  y8:
-  a8:
-  s9:
-  y9:
-  a9:
-  s10:
-  y10:
-  a10:
-
-
-
-
-  
-  
+  googleplus: # anything in your profile username that comes after plus.google.com/  
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 # You can find your shortname on the Settings page of your Disqus account
@@ -125,3 +86,9 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+
+defaults:
+  - scope:
+      path: "assets/img"
+    values:
+      image: true

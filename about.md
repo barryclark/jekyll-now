@@ -17,7 +17,8 @@ permalink: /about/
 <button class="lines soft squared underline-hover">
 <a href="mailto:oldsteambcn@gmail.com" title="Envia'ns un correu">oldsteambcn@gmail.com</a></button>
 <button class="lines soft squared underline-hover"> 
-<a href="tel:+34 658973617" title="Truca'ns">658973617</a></button>
+<a href="tel:+34 658973617" title="Truca'ns">Trucar al 658973617</a></button>
+<br>
 <button class="lines soft squared underline-hover"> 
 <a href="xxx/vcard" title="Desar my vCard" download="oldsteam.vcard">Desar Contacte vCard</a></button>
 </div>
