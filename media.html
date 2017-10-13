@@ -15,11 +15,11 @@ permalink: /media/
 <div id="main" role="main"  class="layout">
 	<div id="columns" class="cell-8 pushed-2">
 		<div id="viewer" class="listed">
+{% assign image_files = site.static_files | where: "image", true %}
 			<article class="">					
     			<h5 class="article-title thin">Cartells</h5>
     			<hr>
     			<div class="mosaic-imagens">
-{% assign image_files = site.static_files | where: "image", true %}
 {% for image in image_files %}
   <figure class="imagens">
     <a href="{{ site.baseurl }}/assets/img/cartells/{{ image.name }}"><img class="button-icon flat white squared" src="{{ site.baseurl }}/assets/img/cartells/{{ image.name }}" alt="{{ image.basename }}"></a>
@@ -28,7 +28,18 @@ permalink: /media/
 				<hr>
 		    	</div>
 			</article>
-
+			<article class="">					
+    			<h5 class="article-title thin">Fotografíes</h5>
+    			<hr>
+    			<div class="mosaic-imagens">		
+{% for image in image_files %}
+  <figure class="imagens">
+    <a href="{{ site.baseurl }}/assets/img/fotos/{{ image.name }}"><img class="button-icon flat white squared" src="{{ site.baseurl }}/assets/img/fotos/{{ image.name }}" alt="{{ image.basename }}"></a>
+  </figure>
+{% endfor %}
+				<hr>
+		    	</div>
+			</article>
 		</div><!-- /#viewer -->
 	</div>
 </div>
