@@ -20,7 +20,7 @@ permalink: /media/
     			<h5 class="article-title thin">Cartells</h5>
     			<hr>
     			<div class="mosaic-imagens">
-{% for image in image_files %}
+{% for /assets/img/image in image_files %}
   <figure class="imagens">
     <a href="{{ site.baseurl }}/assets/img/{{ image.name }}"><img class="button-icon flat white squared" src="{{ site.baseurl }}/assets/img/{{ image.name }}" alt="{{ image.basename }}"></a>
   </figure>
@@ -31,7 +31,7 @@ permalink: /media/
     			<h5 class="article-title thin">Fotografíes</h5>
     			<hr>
     			<div class="mosaic-imagens">		
-{% for image in image_files %}
+{% for /assets/img/fotos/image in image_files %}
   <figure class="imagens">
     <a href="{{ site.baseurl }}/assets/img/fotos/{{ image.name }}"><img class="button-icon flat white squared" src="{{ site.baseurl }}/assets/img/fotos/{{ image.name }}" alt="{{ image.basename }}"></a>
   </figure>
