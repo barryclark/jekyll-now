@@ -20,10 +20,10 @@ permalink: /media/
     			<h5 class="article-title ">Cartells</h5>
     			<hr>
     			<div class="mosaic-imagens">
-  {% for res in site.static_files%} 
-  {% si res.path contiene 'fotos'%}
+  {% for image in site.static_files%} 
+  {% si image.path contiene 'fotos'%}
   <figure class="imagens">
-    <a href="{{ res.path | prepend: site.baseurl }}"><img class="button-icon flat white squared" src="{{ res.path | prepend: site.baseurl }}" alt="{{ image.basename }}">{{res.path |  eliminar: '/ resources /'}}</a>
+    <a href="{{ image.path | prepend: site.baseurl }}"><img class="button-icon flat white squared" src="{{ image.path | prepend: site.baseurl }}" alt="{{ image.basename }}">{{res.path |  eliminar: '/ resources /'}}</a>
   </figure>
   {% terminara si %} 
   {% endfor%}	
