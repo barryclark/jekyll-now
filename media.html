@@ -9,9 +9,9 @@ permalink: /media/
 	<div id="columns" class="cell-8 pushed-2">
     	<div class="mosaic-imagens"> 	
     {% assign image_files = site.static_files | where: "image", true %}
-{% for image in image_files %}
+{% for image in static_files %}
   <figure class="imagens">
-    {% include site.static_files %}
+    <img class="button-icon flat white squared" src="{{ site.baseurl }}/{{ file.path }}" alt="{{ file.title }}">
   </figure>
 {% endfor %}
     	</div>
