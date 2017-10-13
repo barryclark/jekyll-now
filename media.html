@@ -10,22 +10,22 @@ permalink: /media/
 		<div id="viewer" class="listed">
 {% assign image_files = site.static_files | where: "image", true %}
 			<article class="article-max">					
-    			<h5 class="article-title thin">Cartells</h5>
+    			<h5 class="article-title thin">Fotografíes</h5>
     			<div class="mosaic-imagens">
 {% for image in image_files %}
   <figure class="imagens">
-    <a href="{{ site.baseurl }}/assets/cartells/{{ image.name }}"><img class="button-icon flat white squared" src="{{ site.baseurl }}/assets/cartells/{{ image.name }}" alt="{{ file.basename }}"></a>
+    <a href="{{ site.baseurl }}/assets/cartells/{{ image.name }}"><img class="button-icon flat white squared" src="{{ site.baseurl }}/assets/fotos/{{ image.name }}" alt="{{ file.basename }}"></a>
   </figure>
 {% endfor %}	
 				<hr>
 		    	</div>
 			</article>
 			<article class="article-max">					
-    			<h5 class="article-title thin">Fotografíes</h5>
+    			<h5 class="article-title thin">Cartells</h5>
     			<div class="mosaic-imagens">		
 {% for image in image_files %}
   <figure class="imagens">
-    <a href="{{ site.baseurl }}/assets/cartells/{{ image.name }}"><img class="button-icon flat white squared" src="{{ site.baseurl }}/assets/fotos/{{ image.name }}" alt="{{ file.basename }}"></a>
+    <a href="{{ site.baseurl }}/assets/cartells/{{ image.name }}"><img class="button-icon flat white squared" src="{{ site.baseurl }}/assets/cartells/{{ image.name }}" alt="{{ file.basename }}"></a>
   </figure>
 {% endfor %}
 				<hr>
