@@ -23,7 +23,7 @@ h3 {background:transparent !important;stroke:transparent !important;text-transfo
 color:#fe9;background-color:#fe9;border-color:#fe9;fill:#fe9;stroke:#fe9;}
 
 .content .lead {font-family: 'Abel', Helvetica, Arial;}
-a {text-transform:uppercase;font-family: 'Abel', Helvetica, Arial;}
+a {text-transform:uppercase;font-family: 'Abel', Helvetica, Arial;text-decoration:none!important;}
 .foot h4 {font-family:'Cinzel Decorative', Helvetica, Arial !important;}
 .uppercased  {text-transform: uppercase;}
 
@@ -104,7 +104,6 @@ h4.article-title, .article-title .icon {margin-top:0px!important;padding-top:0px
 .foot-post {
 	margin:0;padding:0;border:none;
 	font-size:0.9em;}
-a {text-decoration:none!important;}
 .views {
 	text-align:center;
 	background:#eee !important;
