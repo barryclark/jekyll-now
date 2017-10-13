@@ -11,7 +11,7 @@ permalink: /media/
     {% assign image_files = site.static_files | where: "image", true %}
 {% for image in image_files %}
   <figure class="imagens">
-	{{ myimage.path }}
+    {% include site.static_files %}
   </figure>
 {% endfor %}
     	</div>
