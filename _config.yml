@@ -89,6 +89,8 @@ exclude:
 
 defaults:
   - scope:
-      path: "assets/img"
+      path: "assets/cartells"
+  - scope:
+      path: "assets/fotos"
     values:
       image: true
