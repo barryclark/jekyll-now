@@ -98,6 +98,7 @@ h5.article-title {font-family: 'Six Caps', sans-serif;}
 .section-blank {border:none !important;}
 #viewer {margin:6%!important;}
 
+.youtube {margin-bottom:0px;}
 .round {border-radius:5.0em;padding:2% 5% 2% 5%;}
 .underline-hover a{text-decoration:none;}
 .underline-hover a:hover {text-decoration: underline !important;color:#eee;}
