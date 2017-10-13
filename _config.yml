@@ -90,6 +90,6 @@ exclude:
 # Defaults
 defaults:
   - scope:
-      path: "assets_dir"
+      path: "assets"
     values:
       image: true
