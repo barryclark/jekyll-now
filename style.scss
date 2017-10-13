@@ -20,7 +20,7 @@ html {
 body {
 	background:https://kottke.org/plus/misc/images/nov-sunset.jpg ;
   font: 18px/1.4 $helvetica;
-  color: $darkgray;
+  color: rgb(140, 140, 140);
 }
 
 .container {
@@ -28,6 +28,7 @@ body {
   max-width: 740px;
   padding: 0 10px;
   width: 100%;
+  background: rgb(140, 140, 140,0.9);
 }
 
 h1, h2, h3, h4, h5, h6 {
