@@ -1,0 +1,14 @@
+---
+layout: default
+title: Media
+permalink: /media/
+---
+
+  	{% include partials/navigation/nav-section.html %}
+<div id="main" role="main"  class="layout">
+	<div id="columns" class="cell-8 pushed-2">
+    	<div class="mosaic-imagens">
+	{%   assign   image_files   =   site . static_files   |   where :   "image" ,   true   %} {%   for   myimage   in   image_files   %} {{   myimage . path   }} {%   endfor   %}
+    	</div>
+	</div>
+</div>
