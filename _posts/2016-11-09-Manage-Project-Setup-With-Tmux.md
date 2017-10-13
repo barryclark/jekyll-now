@@ -11,13 +11,15 @@ I recently joined a team working developing a JavaScript web app and like the be
 
 <!--halt-->
 
+# Terminal Management
+
 This natural step in the development process can be eased by services like Vagrant that can install all the required dependencies and create a standard environment that will minimize the classic *it works on my machine* problems that you run into with setting up an environment.
 
 We were using vagrant, but there were still a number of things to run in the command line before I could get going and I'm sure many web developers can relate. I had to do `npm run dev` locally for fast hot reloading of assets, ssh into vagrant to run the server also using npm, as well as start some required services on the vm, tail some log files and set up a db console for convenience.
 
 I initially wrote down these steps which was fine, since I rarely restart my computer it isn't too much of a hassle to re-run everything and then tab between my different terminals.
 
-## Using Tmux Effectively
+# Using Tmux Effectively
 
 I had used tmux for basic things in the past, mostly just to split screen my terminal and run both a server and git side-by-side. If you have not used it before, it has a pretty straightforward terminal multiplexing strategy:
 
@@ -25,14 +27,14 @@ Each instance of tmux is called a session. Sessions have windows that are essent
 
 You can do a lot with tmux but I typically only use a small set of core commands to manage my sessions:
 
-### CLI Commands:
+# CLI Commands:
 
 * `tmux`: Start tmux, bare minimum to know
 * `tmux ls`: List all running tmux sessions
 * `tmux a -t [name || number]`: Attach to a running session by its number or given name
 * `tmux kill-session -t [name || number]`: Stop the session by number or name
 
-### Prefixed commands:
+# Prefixed commands:
 
 * `?`: List all commands and their keybindings
 * `:`: Open the tmux command line to enter any command
@@ -47,7 +49,7 @@ You can do a lot with tmux but I typically only use a small set of core commands
 * `s`: Open menu to switch sessions
 * `d`: Detach from the current session
 
-## Managing a Project
+# Managing a Project
 
 These core features make it pretty easy to get the layout of logs, consoles, and servers that I need to setup for my application, but I still have to set all of this up every time I reboot.
 
@@ -114,7 +116,7 @@ for evaluating dynamic values that can be environment variables, or a key value 
 This is a great feature for sharing configurations between developers, and that was the next step
 for making our project's terminal management really simple.
 
-## Sharing Configurations
+# Sharing Configurations
 
 This configuration file is awesome for getting developers going on a project. In a docker or vagrant world
 setting up your system could theoretically be as simple as `vagrant up` followed by

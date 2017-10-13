@@ -8,8 +8,8 @@ permalink:           pretty
 plugins: ['jekyll-paginate']
 
 # Setup
-title:               Lanyon
-tagline:             'A Jekyll theme'
+title:               My Blog
+tagline:             'Dan Reynolds'
 description:         'A reserved <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that places the utmost gravity on content with a hidden drawer. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
 url:                 http://lanyon.getpoole.com
 baseurl:             ''
@@ -18,16 +18,16 @@ paginate_path: "page:num"
 
 # About/contact
 author:
-  name:              Mark Otto
-  url:               https://twitter.com/mdo
-  email:             markdotto@gmail.com
+  name:              Dan Reynolds
+  description:       I'm Dan, a Software Engineer in San Francisco at NerdWallet.
+  email:             me@danreynolds.ca
+  github:            https://github.com/danreynolds
+
 
 # Custom vars
 version:             1.0.0
 
 excerpt_separator: <!--halt-->
-name: Dan Reynolds
-description: Software Developer and Computer Science Student at UW.
 
 defaults:
   -

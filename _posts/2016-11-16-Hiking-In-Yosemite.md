@@ -12,6 +12,8 @@ of the park in the Fall.
 
 <!--halt-->
 
+# Going Hiking
+
 I had been to the park once before in the summer and I really appreciated going there
 in the crisp autumn weather. We tried to cover as much ground as we could in the valley
 ranging from strenuous hikes up steep, climbing trails to riverside walks throughout the

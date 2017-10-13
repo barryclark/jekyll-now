@@ -2,7 +2,17 @@
 layout: default
 ---
 
-<div class="page">
+<div class="masthead">
+  <div class="container">
+    <h3 class="masthead-title">
+      <a href="{{ site.baseurl }}/" title="Home">{{ site.title }}</a>
+      <small>{{ site.tagline }}</small>
+    </h3>
+  </div>
+</div>
+
+
+<div class="page container">
   <h1 class="page-title">{{ page.title }}</h1>
   {{ content }}
 </div>

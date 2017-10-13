@@ -1,7 +1,7 @@
 version: '3'
 services:
   app:
-    image: danreynolds/blog:$DEPLOY_TAG
+    image: danreynolds/danreynolds.ca:$DEPLOY_TAG
     ports:
       - 4000
     volumes:

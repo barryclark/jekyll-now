@@ -4,15 +4,22 @@
   background-position: center;
   background-attachment: fixed;
   height: 32rem;
-  padding-top: 3rem;
+  padding-top: 3.5rem;
+}
 
-  @media screen and (max-width: $mobile) {
+@media screen and (max-width: 768px) {
+  .post-header {
     height: 20rem;
   }
 }
 
-.post-header.light, .post-header .post-title {
+.post-header.light, .post-header .post-title, .date {
   color: white !important;
+}
+
+.post-header .container {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 0.5rem 1rem;
 }
 
 .post-excerpt {
@@ -25,6 +32,44 @@
   width: 100%;
 }
 
-.post {
+.post-excerpt p {
+  color: #313131;
+}
+
+.posts a {
   text-decoration: none !important;
+}
+
+.post:hover h1, .post:hover p {
+  color: #268bd2;
+}
+
+.container h1 {
+  margin: 2rem 0;
+}
+
+.post-header h1 {
+  margin: 0.6rem 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Fjalla One', sans-serif;
+}
+
+html {
+  font-family: 'Playfair Display', serif;
+}
+
+.sidebar-item.title {
+  color: white;
+  padding: 1.5rem 1.5rem 0 1.5rem;
+}
+
+.sidebar-item.title h1 {
+  margin: 0;
+  color: white;
+}
+
+.container.content p:first-child {
+  display: none;
 }

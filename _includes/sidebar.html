@@ -4,12 +4,15 @@
 
 <!-- Toggleable sidebar -->
 <div class="sidebar" id="sidebar">
+  <div class="sidebar-item title">
+    <h1>Hello!</h1>
+  </div>
   <div class="sidebar-item">
-    <p>{{ site.description }}</p>
+    <p>{{ site.author.description }}</p>
   </div>
 
   <nav class="sidebar-nav">
-    <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}/">Home</a>
+    <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}/">Blog</a>
 
     {% comment %}
       The code below dynamically generates a sidebar nav of pages with
@@ -24,15 +27,18 @@
         {% endif %}
       {% endif %}
     {% endfor %}
-
-    <a class="sidebar-nav-item" href="{{ site.github.repo }}/archive/v{{ site.version }}.zip">Download</a>
-    <a class="sidebar-nav-item" href="{{ site.github.repo }}">GitHub project</a>
-    <span class="sidebar-nav-item">Currently v{{ site.version }}</span>
+    <a
+      class="sidebar-nav-item"
+      href={{'mailto:'}}{{site.author.email}}
+    >
+      Contact
+    </a>
+    <a
+      target='_blank'
+      class="sidebar-nav-item"
+      href="https://github.com/danreynolds"
+    >
+      GitHub
+    </a>
   </nav>
-
-  <div class="sidebar-item">
-    <p>
-      &copy; {{ site.time | date: '%Y' }}. All rights reserved.
-    </p>
-  </div>
 </div>

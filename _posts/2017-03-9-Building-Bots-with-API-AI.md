@@ -12,7 +12,7 @@ API.AI.
 
 <!--halt-->
 
-## What is API.AI?
+# What is API.AI?
 
 API.AI is a platform for building conversational bots. The company was
 bought by Google in 2016 and it is the recommended way to build apps for Google Assistant,
@@ -39,7 +39,7 @@ assistant, Foodguy, as an example wherever needed.
 In part 2 of this guide, I'll show you how to build a server
 that takes requests from API.AI and generates your bot's response.
 
-## Building your Bot
+# Building your Bot
 
 API.AI, in my opinion, is an **awesome** front-end for your bot. It allows you to design
 conversations in a clean visual interface, which I think is largely a positive experience.
@@ -52,7 +52,7 @@ Once that's done, you will see a number of options in their menu:
 
 Each of these are an important part of building your bot so I'll talk about each of them.
 
-## Intents
+# Intents
 
 Intents map what your user says to an action you want your bot to perform. For Foodguy,
 I want to make a recommendation intent that provides users with restaurant recommendations
@@ -84,7 +84,7 @@ Instead, scroll down further to the fulfillment section and select the *Use webh
 That's basically all you need to do to create your first intent. If you need your own custom entities like the cuisines I want to define
 for my recommendation intent, head over to the entities page listed in the menu from earlier.
 
-## Entities
+# Entities
 
 Entities are the pieces of data that API.AI extracts from the expressions you define in your intents. For Foodguy, I need a custom cuisines entity so that I can determine the types of restaurants people want.
 
@@ -96,7 +96,7 @@ While I have made a fairly large list of cuisines here, it is unreasonable to li
 
 For example, If I have an expression like "I want Thai food", then if I allow automated expansion, a similar expression like "I want Indian food" will pick up the cuisine entity with a value of "Indian" even if only "Thai" is listed as an option for my custom cuisines.
 
-## Domains
+# Domains
 
 In order to make conversational applications, your bot should respond to more than just the limited queries you define in your intents and API.AI tries to help you with this by including commonly needed domains.
 
@@ -106,7 +106,7 @@ Domains include topics like weather, news, small talk and others. I currently us
 
 It has never been a core component of my application's functionality but it can make the important initial and final exchanges between my bot and the user a bit more human.
 
-## Training
+# Training
 
 Intents allow you to specify the ways that users will likely query your bot to perform certain actions, such as asking for a restaurant. Unlike a web interface, the way that users interact with your application cannot be as rigid.
 
@@ -126,7 +126,7 @@ Once I am finished making necessary changes to the entities and intent for the e
 
 The bot is now more able to handle a wider range of user expressions and with regular training it can quickly become versatile to a wide range of user requests.
 
-## Integrations
+# Integrations
 
 Once you have designed your bot's core functionality you will want to expose it to users. The simplest way to make it available online is to publish it on API.AI by going to the integrations section and selecting the publish button.
 
@@ -158,7 +158,7 @@ I will go into greater detail on creating responses for API.AI requests from a J
 
 API.AI's integrations are the reason my simple food assistant is now available on Slack, Facebook, and Google Actions. It's a powerful feature that makes it incredibly convenient for users to access your bot on familiar platforms.
 
-## Fulfillment
+# Fulfillment
 
 The only step left to complete your bot is to specify the webhook endpoint you will be using to respond to requests. This is specified in the URL field under the fulfillment page.
 
@@ -166,6 +166,6 @@ The only step left to complete your bot is to specify the webhook endpoint you w
 
 All requests from API.AI are sent as POST requests to this single endpoint with a body that indicates the specific action it is triggering. I generally like to modify these requests when they arrive at my server so that I can route them to different endpoints and I have an example of doing this and other tips in part 2 of this guide for building a JSON server to power your API.AI bot.
 
-## Wrap Up
+# Wrap Up
 
 Overall I've really appreciated using API.AI to design my bots and encourage people to give it a try on the strengths of its language processing, integration support and clean interface for structuring complex conversations.
