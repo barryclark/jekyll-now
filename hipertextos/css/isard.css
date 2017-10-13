@@ -27,7 +27,7 @@ a {text-transform:uppercase;font-family: 'Abel', Helvetica, Arial;}
 .foot h4 {font-family:'Cinzel Decorative', Helvetica, Arial !important;}
 .uppercased  {text-transform: uppercase;}
 
-nav a {font-family: 'Oswald', Helvetica, Arial !important;letter-spacing: 0.12em;}
+nav a {font-family: 'Oswald', Helvetica, Arial !important;letter-spacing: 0.18em;}
 nav {height:5.8em;padding:0.7%;	z-index: 1000;}
 nav {background:transparent;text-align:center!important;}
 nav .navlink, nav .home {text-transform: uppercase;}
