@@ -93,7 +93,7 @@ next.img-sibling {float:right;}
 .medias {letter-spacing: .1em;}
 .biobuttons a{line-height:1.2em;font-size:1.8em;}
 .article-thumb {margin-bottom:0px!important;padding-bottom:0px!important;}
-h5.article-title, .article-title .icon {margin-top:0px!important;padding-top:0px!important;}
+h3.article-title, .article-title .icon {margin-top:0px!important;padding-top:0px!important;}
 h5.article-title {font-family: 'Six Caps', sans-serif;}
 .section-blank {border:none !important;}
 #viewer {margin:6%!important;}
