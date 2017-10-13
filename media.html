@@ -11,7 +11,7 @@ permalink: /media/
     {% assign image_files = site.static_files | where: "image", true %}
   <figure class="imagens">
 {% for myimage in image_files %}
-  {{ myimage.jpg }}
+  {{ myimage.file }}
 {% endfor %}
   </figure>
     	</div>
