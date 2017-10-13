@@ -22,7 +22,7 @@ permalink: /media/
 {% assign image_files = site.static_files | where: "image", true %}
 {% for image in image_files %}
   <figure class="imagens">
-    <a href="{{ site.baseurl }}/assets/cartells/{{ file.name }}"><img class="button-icon flat white squared" src="{{ site.baseurl }}/assets/cartells/{{ file.name }}" alt="{{ image.basename }}"></a>
+    <a href="{{ site.baseurl }}/assets/cartells/{{ image.name }}"><img class="button-icon flat white squared" src="{{ site.baseurl }}/assets/cartells/{{ image.name }}" alt="{{ image.basename }}"></a>
   </figure>
 {% endfor %}	
 				<hr>
