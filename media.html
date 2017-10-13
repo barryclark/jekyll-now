@@ -6,7 +6,7 @@ permalink: /media/
 
   	{% include partials/navigation/nav-section.html %}
 <header class="flat black">
-<div class="thumb-4 pushed-4">
+<div class="cell-6 pushed-3">
 	<div class="youtube"><object><iframe width="560" height="315" src="https://www.youtube.com/embed/oevn35Mrxzk" frameborder="0" allowfullscreen></iframe></object></div>
 </div>
 	<hr>
@@ -14,7 +14,7 @@ permalink: /media/
 <div id="main" role="main"  class="layout">
 	<div id="columns" class="cell-8 pushed-2">
 		<div id="viewer" class="listed">
-			<article class="article-max">					
+			<article class="">					
     			<h5 class="article-title thin">Cartells</h5>
     			<div class="mosaic-imagens">
 {% assign image_files = site.static_files | where: "image", true %}
@@ -26,7 +26,7 @@ permalink: /media/
 				<hr>
 		    	</div>
 			</article>
-			<article class="article-max">					
+			<article class="">					
     			<h5 class="article-title thin">Fotografíes</h5>
     			<div class="mosaic-imagens">		
 {% assign image_files = site.static_files | where: "image", true %}
