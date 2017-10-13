@@ -17,14 +17,16 @@ permalink: /media/
 		<div id="viewer" class="listed">
 {% assign image_files = site.static_files | where: "image", true %}
 			<article class="">					
-    			<h5 class="article-title thin">Cartells</h5>
+    			<h5 class="article-title ">Cartells</h5>
     			<hr>
     			<div class="mosaic-imagens">
-{% for image in image_files %}
+  {% for res in site.static_files%} 
+  {% si res.path contiene 'fotos'%}
   <figure class="imagens">
-    <a href="{{ site.baseurl }}/assets/img/{{ image.name }}"><img class="button-icon flat white squared" src="{{ site.baseurl }}/assets/img/{{ image.name }}" alt="{{ image.basename }}"></a>
+    <a href="{{ res.path | prepend: site.baseurl }}"><img class="button-icon flat white squared" src="{{ res.path | prepend: site.baseurl }}" alt="{{ image.basename }}">{{res.path |  eliminar: '/ resources /'}}</a>
   </figure>
-{% endfor %}	
+  {% terminara si %} 
+  {% endfor%}	
 		    	</div>
 			</article>
 			<article class="">					
