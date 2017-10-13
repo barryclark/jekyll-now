@@ -10,8 +10,8 @@ permalink: /media/
     	<div class="mosaic-imagens"> 	
     {% assign image_files = site.static_files | where: "image", true %}
   <figure class="imagens">
-{% for myimage in image_files %}
-  {{ myimage.extname }}
+{% for image in image_files %}
+  {{ image.path }}
 {% endfor %}
   </figure>
     	</div>
