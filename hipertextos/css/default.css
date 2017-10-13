@@ -14,6 +14,8 @@ a.button:hover, a.button:focus {background-color:#fafafa !important;color:#555 !
 	border:none;}
 .dates a{font-family: 'Six Caps', sans-serif;font-size:2.3em;line-height:0.6em;letter-spacing: 0.08em;
 }
+.section-title {border-top: thin solid #111;border-bottom: thin solid #222;}
+
 @media (max-width: 1366px) {
 }
 @media (max-width: 800px) {
