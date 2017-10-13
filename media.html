@@ -6,6 +6,7 @@ permalink: /media/
 
   	{% include partials/navigation/nav-section.html %}
 <header class="flat black">
+	<h3>Media</h3>
 <div class="cell-6 pushed-3">
 	<div class="youtube"><object><iframe width="560" height="315" src="https://www.youtube.com/embed/oevn35Mrxzk" frameborder="0" allowfullscreen></iframe></object></div>
 </div>
@@ -15,7 +16,7 @@ permalink: /media/
 	<div id="columns" class="cell-8 pushed-2">
 		<div id="viewer" class="listed">
 			<article class="">					
-    			<h5 class="article-title thin">Cartells</h5>
+    			<h3 class="article-title thin">Cartells</h3>
     			<div class="mosaic-imagens">
 {% assign image_files = site.static_files | where: "image", true %}
 {% for image in image_files %}
@@ -27,9 +28,8 @@ permalink: /media/
 		    	</div>
 			</article>
 			<article class="">					
-    			<h5 class="article-title thin">Fotografíes</h5>
+    			<h3 class="article-title thin">Fotografíes</h3>
     			<div class="mosaic-imagens">		
-{% assign image_files = site.static_files | where: "image", true %}
 {% for image in image_files %}
   <figure class="imagens">
     <a href="{{ site.baseurl }}/assets/cartells/{{ image.name }}"><img class="button-icon flat white squared" src="{{ site.baseurl }}/assets/fotos/{{ image.name }}" alt="{{ file.basename }}"></a>
