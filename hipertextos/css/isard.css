@@ -21,7 +21,7 @@ h6 {font-family: 'Oswald', sans-serif;}
 
 h3 {background:transparent !important;stroke:transparent !important;text-transform:uppercase;
 color:#fe9;background-color:#fe9;border-color:#fe9;fill:#fe9;stroke:#fe9;}
-.absolute {position:absolute;text-align:center;}
+.absolute {position:absolute;text-align:center;width:100%;}
 
 .content .lead {font-family: 'Abel', Helvetica, Arial;}
 a {text-transform:uppercase;font-family: 'Abel', Helvetica, Arial;text-decoration:none!important;}
