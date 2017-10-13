@@ -13,6 +13,8 @@
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/css/isard.css" />
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/css/anime.css" />
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/css/default.css" />
+	<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/css/jquery.lightbox-0.5.css" />
+
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cinzel+Decorative:900|Abel|Voltaire|Oswald:200,300|Six+Caps" />
   </head>
@@ -31,6 +33,18 @@
     <script src="{{ site.baseurl }}/hipertextos/js/anime.js" type="text/javascript"></script>
     <script src="{{ site.baseurl }}/hipertextos/js/scripts.min.js" type="text/javascript"></script>
     <script src="{{ site.baseurl }}/hipertextos/js/icons.js" type="text/javascript"></script>
+    <script src="{{ site.baseurl }}/hipertextos/js/lightbox.js" type="text/javascript"></script>
+	<script>
+	function showLightbox() {
+    document.getElementById('over').style.display='block';
+    document.getElementById('fade').style.display='block';
+}
+function hideLightbox() {
+    document.getElementById('over').style.display='none';
+    document.getElementById('fade').style.display='none';
+}
+	</script>
+    <script src="{{ site.baseurl }}/hipertextos/js/views.js" type="text/javascript"></script>
     {% include analytics.html %}
   </body>
 </html>
