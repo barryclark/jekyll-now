@@ -14,7 +14,7 @@
 /**************/
 
 html {
-  font-size: 100%;
+  font-size: 70%;
 }
 
 body {
@@ -49,16 +49,16 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: 30px;
   a {
-    color: inherit;
+    color: aqua;
   }
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 30px;
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 30px;
 }
 
 h4 {
@@ -67,21 +67,21 @@ h4 {
 }
 
 p {
-  margin: 15px 0;
+  margin: 30px 0;
 }
 
 a {
-  color: $blue;
+  color: $green;
   text-decoration: none;
 	cursor: pointer;
   &:hover, &:active {
-    color: $blue;
+    color: $purple;
   }
 }
 
 ul, ol {
   margin: 15px 0;
-  padding-left: 30px;
+  padding-left: 25px;
 }
 
 ul {
@@ -101,7 +101,7 @@ ul ul, ol ul {
 }
 
 em, i {
-  font-style: italic;
+  font-style: bold;
 }
 
 strong, b {
@@ -109,7 +109,7 @@ strong, b {
 }
 
 img {
-  max-width: 100%;
+  max-width: 70%;
 }
 
 // Fixes images in popup boxes from Google Translate
