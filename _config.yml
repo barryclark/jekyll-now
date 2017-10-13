@@ -87,8 +87,9 @@ exclude:
   - README.md
   - CNAME
 
+# Defaults
 defaults:
   - scope:
-      path: "assets/"
+      path: "assets"
     values:
       image: true
