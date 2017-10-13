@@ -89,7 +89,7 @@ exclude:
 
 defaults:
   - scope:
-      path: ""
+      path: "_assets"
     values:
       image: true
 
