@@ -89,6 +89,6 @@ exclude:
 
 defaults:
   - scope:
-      path: "galeria/cartells"
+      path: "assets/cartells"
     values:
       image: true
