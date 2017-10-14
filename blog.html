@@ -7,6 +7,7 @@ layout: default
 	<div class="posts">
   	{% for post in site.posts %}
     	<article class="post cell-10 pushed-1">
+    	
     	{% if post.day %}
     	<div class="ical-front filled red thin thumb-2">
     	<h4 class="day">{{ post.day }}</h4>
@@ -14,7 +15,15 @@ layout: default
 		</div>
 		<h2 class="thumb-8"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
     	{% endif %}
+    	
     	{% if post.post %}
+    	<div class="ical-front filled soft-grey thin thumb-2">
+    	<h4 class="day icon-star"></h4>
+		<h4 class="month">News</h4>
+		</div>
+		<h2 class="thumb-8"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+    	{% endif %}
+    	{% if post.base %}
       	<h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
     	{% endif %}
 
