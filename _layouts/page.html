@@ -3,6 +3,12 @@ layout: default
 ---
 
 <article class="page">
+  	{% for post-date in site.posts %}
+	<div class="ical filled red thin universe">
+		<h1>{{ page.day }}</h1>
+		<h2>{{ page.month }}</h2>
+	</div>
+  	{% endfor %}
 
   <h2>{{ page.title }}</h2>
 
