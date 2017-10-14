@@ -4,7 +4,12 @@ layout: default
 
   	{% include partials/navigation/nav-section.html %}
 <article class="post">
-<div class="filled red thumb-3 post-date">{{ page.day }}<br>{{ page.month }}</div><h2 class="thumb-9">{{ page.title }}</h2>
+	<div class="filled red thin">
+		<h2>{{ page.day }}</h2>
+		<h3>{{ page.month }}</h3>
+	</div>
+	<hr>
+	<h2>{{ page.title }}</h2>
 
   <div class="entry">
     {{ content }}
