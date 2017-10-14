@@ -1,6 +1,7 @@
 ---
 layout: post-date
 title: Palau Sant Jordi
+category: Date
 day: 25
 month: Desembre
 ---

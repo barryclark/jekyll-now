@@ -5,16 +5,32 @@ layout: default
   	{% include partials/navigation/nav-section.html %}
 <main id="main" role="main"  class="filled hard-grey">
 	<div class="posts">
-  	{% for post in site.posts %}
+{% for post in site.categories[page.date] %}
     	<article class="post cell-8 pushed-2">
-      	<h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+      	<h2><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></h2>
+		<div class="ical filled red thin universe">
+		<h1>{{ page.day }}</h1>
+		<h2>{{ page.month }}</h2>
+		</div>
+		<hr>
+      	<div class="entry">
+        {{ post.excerpt }}
+      	</div>
+
+      	<a href="{{ post.url | absolute_url }}" class="read-more">Read More</a>
+    	</article>
+{% endfor %}
+{% for post in site.categories[page.post] %}
+    	<article class="post cell-8 pushed-2">
+      	<h2><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></h2>
 
       	<div class="entry">
         {{ post.excerpt }}
       	</div>
 
-      	<a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+      	<a href="{{ post.url | absolute_url }}" class="read-more">Read More</a>
     	</article>
-  	{% endfor %}
+{% endfor %}
+
 	</div>
 </main>
