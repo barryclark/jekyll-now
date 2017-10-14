@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Altres coses
+title: Altres coses guays
 category: post
 ---
 
