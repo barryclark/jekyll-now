@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Altres coses guays
-category: post
+post: default
 ---
 
 Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
