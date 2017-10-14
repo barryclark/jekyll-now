@@ -25,7 +25,6 @@ color:#fe9;background-color:#fe9;border-color:#fe9;fill:#fe9;stroke:#fe9;}
 
 .content .lead {font-family: 'Abel', Helvetica, Arial;}
 a {text-transform:uppercase;font-family: 'Abel', Helvetica, Arial;text-decoration:none!important;}
-.foot h4 {font-family:'Cinzel Decorative', Helvetica, Arial !important;}
 .uppercased  {text-transform: uppercase;}
 
 nav a {font-family: 'Oswald', Helvetica, Arial !important;letter-spacing: 0.18em;}
@@ -232,6 +231,7 @@ a.footlink:hover, a.footlink:active {
 }
 .round {border-radius:5.0em;padding:2% 5% 2% 5%;}
 #footer a, #footer p {border:none;font-family: 'Oswald', sans-serif!important;letter-spacing: 0.05em;font-size:0.9em;}
+#footer h4 a{font-family:'Cinzel Decorative', Helvetica, Arial !important;text-transform: revert;}
 #footer {border:none;}
 #footer .foot {margin-top:0px;}
 #footer a {text-decoration:none !important;border:none;font-weight:bold;}
