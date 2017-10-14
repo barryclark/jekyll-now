@@ -15,24 +15,44 @@ permalink: /media/
 <div id="main" role="main"  class="layout">
 	<div id="columns" class="cell-8 pushed-2">
 		<div id="viewer" class="listed">
-{% assign image_files = site.static_files | where: "image", true %}
 			<article class="">					
     			<h5 class="article-title ">Cartells</h5>
     			<hr>
     			<div class="mosaic-imagens">
-  {% for image in site.static_files%} 
-  {% si image.path contiene 'fotos'%}
   <figure class="imagens">
-    <a href="{{ image.path | prepend: site.baseurl }}"><img class="button-icon flat white squared" src="{{ image.path | prepend: site.baseurl }}" alt="{{ image.basename }}">{{res.path |  eliminar: '/ resources /'}}</a>
+    <a href="{{ site.baseurl }}/assets/img/cartells/image1.jpg"><img class="button-icon flat white squared" src="{{ site.baseurl }}/assets/img/cartells/image1.jpg" alt="{{ image.basename }}">{{res.path |  eliminar: '/ resources /'}}</a>
   </figure>
-  {% terminara si %} 
-  {% endfor%}	
+  <figure class="imagens">
+    <a href="{{ site.baseurl }}/assets/img/cartells/image2.jpg"><img class="button-icon flat white squared" src="{{ site.baseurl }}/assets/img/cartells/image2.jpg" alt="{{ image.basename }}">{{res.path |  eliminar: '/ resources /'}}</a>
+  </figure>
+  <figure class="imagens">
+    <a href="{{ site.baseurl }}/assets/img/cartells/image3.jpg"><img class="button-icon flat white squared" src="{{ site.baseurl }}/assets/img/cartells/image3.jpg" alt="{{ image.basename }}">{{res.path |  eliminar: '/ resources /'}}</a>
+  </figure>
+  <figure class="imagens">
+    <a href="{{ site.baseurl }}/assets/img/cartells/image4.jpg"><img class="button-icon flat white squared" src="{{ site.baseurl }}/assets/img/cartells/image4.jpg" alt="{{ image.basename }}">{{res.path |  eliminar: '/ resources /'}}</a>
+  </figure>
+  <figure class="imagens">
+    <a href="{{ site.baseurl }}/assets/img/cartells/image5.jpg"><img class="button-icon flat white squared" src="{{ site.baseurl }}/assets/img/cartells/image5.jpg" alt="{{ image.basename }}">{{res.path |  eliminar: '/ resources /'}}</a>
+  </figure>
+  <figure class="imagens">
+    <a href="{{ site.baseurl }}/assets/img/cartells/image6.jpg"><img class="button-icon flat white squared" src="{{ site.baseurl }}/assets/img/cartells/image6.jpg" alt="{{ image.basename }}">{{res.path |  eliminar: '/ resources /'}}</a>
+  </figure>
+  <figure class="imagens">
+    <a href="{{ site.baseurl }}/assets/img/cartells/image7.jpg"><img class="button-icon flat white squared" src="{{ site.baseurl }}/assets/img/cartells/image7.jpg" alt="{{ image.basename }}">{{res.path |  eliminar: '/ resources /'}}</a>
+  </figure>
+  <figure class="imagens">
+    <a href="{{ site.baseurl }}/assets/img/cartells/image8.jpg"><img class="button-icon flat white squared" src="{{ site.baseurl }}/assets/img/cartells/image8.jpg" alt="{{ image.basename }}">{{res.path |  eliminar: '/ resources /'}}</a>
+  </figure>
+  <figure class="imagens">
+    <a href="{{ site.baseurl }}/assets/img/cartells/image9.jpg"><img class="button-icon flat white squared" src="{{ site.baseurl }}/assets/img/cartells/image9.jpg" alt="{{ image.basename }}">{{res.path |  eliminar: '/ resources /'}}</a>
+  </figure>
 		    	</div>
 			</article>
 			<article class="">					
     			<h5 class="article-title thin">Fotografíes</h5>
     			<hr>
     			<div class="mosaic-imagens">		
+{% assign image_files = site.static_files | where: "image", true %}
 {% for image in image_files %}
   <figure class="imagens">
     <a href="{{ site.baseurl }}/assets/img/fotos/{{ image.name }}"><img class="button-icon flat white squared" src="{{ site.baseurl }}/assets/img/fotos/{{ image.name }}" alt="{{ image.basename }}"></a>
