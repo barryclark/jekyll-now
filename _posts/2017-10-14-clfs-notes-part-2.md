@@ -1,3 +1,7 @@
+---
+published: false
+---
+---
 published: false
 title: CLFS Notes Part 2
 ---
