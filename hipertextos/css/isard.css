@@ -99,6 +99,7 @@ h1.article-title {font-family: 'Six Caps', sans-serif;}
 #viewer {margin:6%!important;}
 
 .youtube {margin-bottom:-36px;z-index:10000;}
+.ical {font-family:'Oswald', sans-serif, Helvetica, Arial;}
 .round {border-radius:5.0em;padding:2% 5% 2% 5%;}
 .underline-hover a{text-decoration:none;}
 .underline-hover a:hover {text-decoration: underline !important;color:#eee;}
