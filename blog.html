@@ -18,14 +18,19 @@ layout: default
     	
     	{% if post.post %}
     	<div class="ical-front filled soft-grey thin thumb-2">
-    	<h4 class="day icon icon-star"></h4>
+    	<h4 class="day icon icon-bullhorn"></h4>
 		<h4 class="month">News</h4>
 		</div>
 		<h2 class="thumb-8"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
     	{% endif %}
-    	{% if post.base %}
-      	<h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+    	{% if post.video %}
+    	<div class="ical-front filled soft-red thin thumb-2">
+    	<h4 class="day icon icon-youtube"></h4>
+		<h4 class="month">Video</h4>
+		</div>
+		<h2 class="thumb-8"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
     	{% endif %}
+
 
       	<div class="entry thumb-12">
         {{ post.excerpt }}
