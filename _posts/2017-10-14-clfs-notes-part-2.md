@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 title: CLFS Notes Part 2
 ---
 ## Cross Linux From Scratch Notes - Part 2
