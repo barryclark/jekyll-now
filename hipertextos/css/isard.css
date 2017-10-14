@@ -231,6 +231,7 @@ a.footlink:hover, a.footlink:active {
 	color:#fff;
 }
 .round {border-radius:5.0em;padding:2% 5% 2% 5%;}
+#footer a, #footer p {border:none;font-family: 'Oswald', sans-serif!important;letter-spacing: 0.05em;font-size:0.9em;}
 #footer {border:none;}
 #footer .foot {margin-top:0px;}
 #footer a {text-decoration:none !important;border:none;font-weight:bold;}
