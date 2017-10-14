@@ -8,11 +8,11 @@ layout: default
   	{% for post in site.posts %}
     	<article class="post cell-8 pushed-2">
     	{% if post.day %}
-		<h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
-    	<div class="ical filled red thin">
+    	<div class="ical-front filled red thin">
     	<h4 class="day">{{ post.day }}</h4>
 		<h4 class="month">{{ post.month }}</h4>
 		</div>
+		<h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
     	{% endif %}
     	{% if post.post %}
       	<h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
