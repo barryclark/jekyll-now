@@ -7,13 +7,6 @@ layout: default
 	<div class="posts">
   	{% for post in site.posts %}
     	<article class="post cell-8 pushed-2">
-		{% if site.page.day %}
-		<div class="ical filled red thin universe">
-			<h1>{{ page.day }}</h1>
-			<h2>{{ page.month }}</h2>
-		</div>
-		<hr>
-		{% endif %}
       	<h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
 
       	<div class="entry">
