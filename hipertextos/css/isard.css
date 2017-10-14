@@ -101,7 +101,7 @@ h1.article-title {font-family: 'Six Caps', sans-serif;}
 .youtube {margin-bottom:-36px;z-index:10000;}
 
 article.post {border-top:thin solid #f1f1f1;border-bottom:thin solid #ddd;border-left:none;border-right:none;}
-.post-title {color:#ff0000;}
+.post-title {letter-spacing: .001em;text-transform: uppercase;font-size:4.8em;}
 .ical h1, .ical h2 {margin:0.4em;font-family:'Oswald', sans-serif, Helvetica, Arial;}
 .ical h1 {line-height:0.5em;font-size:6.9em;}
 .ical h2 {line-height:0.9em;letter-spacing: 0.01em;}
