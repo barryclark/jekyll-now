@@ -12,44 +12,31 @@
  * @example Visit http://leandrovieira.com/projects/jquery/lightbox/ for more informations about this jQuery plugin
  */
 #jquery-overlay {
-	position: fixed;
+	position: absolute;
 	top: 0;
 	left: 0;
-	z-index: 90;
+	z-index: 502;
 	width: 100%;
-	height: auto;
-	margin:0px !important;
-	padding:0px !important;
+	height: 500px;
 }
 #jquery-lightbox {
-	position: fixed;
-	display: inline;
-	display: inline-block;
-	top: 6em !important;
+	position: absolute;
+	top: 0;
 	left: 0;
 	width: 100%;
-	z-index: 100;
+	z-index: 502;
 	text-align: center;
 	line-height: 0;
-	margin:0px !important;
-	padding:0px !important;
 }
-#jquery-lightbox a img { top:0;border: none;margin:0px;padding:0px; }
+#jquery-lightbox a img { border: none; }
 #lightbox-container-image-box {
-	clear: both;	overflow:hidden;
-	display: block;
+	position: relative;
+	background-color: #fff;
+	width: 250px;
+	height: 250px;
 	margin: 0 auto;
-	position: relative;
-	width: auto;
-	min-width: 50%;
-	max-width: 88%;
-	height: 100%;
-	min-height: 50%;
-	max-height:100%;
-	position: relative;
-	background-color: #000;
 }
-#lightbox-container-image { padding: 0 0 0 0; margin:0 0 0 0;}
+#lightbox-container-image { padding: 10px; }
 #lightbox-loading {
 	position: absolute;
 	top: 40%;
@@ -65,40 +52,43 @@
 	left: 0;
 	height: 100%;
 	width: 100%;
-	z-index: 10;
+	z-index: 10000;
+	box-shadow: 0 2px 5px #666666;
 }
-#lightbox-container-image-box > #lightbox-nav { left: 0;top:0; }
+#lightbox-container-image-box > #lightbox-nav { left: 0; }
 #lightbox-nav a { outline: none;}
 #lightbox-nav-btnPrev, #lightbox-nav-btnNext {
 	width: 49%;
 	height: 100%;
 	zoom: 1;
 	display: block;
+	/*top: 25px important!;*/
 }
 #lightbox-nav-btnPrev { 
 	left: 0; 
 	float: left;
+	top: 25px important!;
 }
 #lightbox-nav-btnNext { 
 	right: 0; 
 	float: right;
+	top: 25px important!;
 }
 #lightbox-container-image-data-box {
-	font: 15px HelveticaNeue-UltraLight', Helvetica, Arial;
-	background-color: #000;
+	font: 10px Verdana, Helvetica, sans-serif;
+	background-color: #fff;
 	margin: 0 auto;
-	border-top:1px solid #666;
-	line-height: 1.2em;
-	overflow: none;
-	height:20px;
-	padding: 0 0 0 0;
+	line-height: 1.4em;
+	overflow: auto;
+	width: 100%;
+	padding: 0 10px 0;
 }
 #lightbox-container-image-data {
 	padding: 0 10px; 
-	color: #777; 
+	color: #666; 
 }
 #lightbox-container-image-data #lightbox-image-details { 
-	max-width: 100%; 
+	width: 70%; 
 	float: left; 
 	text-align: left; 
 }	
@@ -106,11 +96,10 @@
 #lightbox-image-details-currentNumber {
 	display: block; 
 	clear: left; 
+	padding-bottom: 1.0em;	
 }			
 #lightbox-secNav-btnClose {
-	width: 66px; 
+	width: 28px; 
 	float: right;
-	bottom:5px;
-	margin:0;
-	padding:0;
+	padding-bottom: 0.7em;	
 }
