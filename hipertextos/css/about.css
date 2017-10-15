@@ -6,18 +6,17 @@ h4 em {color:#fafafa;padding:0 6px 0 6px;font-size:0.95em;line-height:0.8em;lett
 h4 strong {background:transparent !important;stroke:transparent !important;text-transform:uppercase;
 color:#fe9;background-color:#fe9;border-color:#fe9;fill:#fe9;stroke:#fe9;}
 h2 a {	background:transparent !important;stroke:transparent !important;
-	border: thin solid #aaaaaa;
+	border: thin solid #999;
 	border: thin solid rgba(0,0,0,.25);
 	color:#999;background-color:#999;border-color:#999;fill:#999;stroke:#999;
-	border-radius: .0em;
+	border-radius: .09em !important;
 	color: #999;
 	cursor: pointer;
 	display: inline;
-	display: inline-block;
-	font-size: 1em;
-	margin: .05em 0;
+	font-size: 0.95em;
+	margin: .01em 0;
 	overflow: visible;
-	padding: .5em;
+	padding: .25em;
 	text-align: center;
 	vertical-align: middle;}
 h5 {padding-top:0;margin-top:0;letter-spacing: 0.1em;
