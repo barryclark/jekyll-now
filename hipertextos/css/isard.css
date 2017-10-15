@@ -224,6 +224,8 @@ font-family: 'Six Caps', sans-serif;
 	.header-cover {max-height:42em;padding:0;margin:0;}
 	.repertori  {font-size:0.65em;}
 	h6 {line-height:1.2em !important;font-size:1.0em !important;}
+	h1 {line-height:1.2em !important;font-size:3.2em !important;}
+    h2 {line-height:1.2em !important;font-size:1.5em !important;}
 }
 @media (max-width: 767px) {
 	.nav-sticky a {
@@ -234,11 +236,12 @@ font-family: 'Six Caps', sans-serif;
 	nav {height:3.2em;}
 	nav .navlink {margin:0 5px 0 5px;font-size: .40em;}
 	.home {font-size: .9em;}
-	.header-cover {max-height:32em;}
+	.header-cover {max-height:30em;}
 	.repertori  {font-size:0.55em;}
 	.bio {line-height:1.32em; font-size:1.1em;}
 }
 @media (max-width: 512px) {
+	.header-cover {max-height:26em;}
 }
 @media (max-width: 450px) {
 	.next, .prev {display:none;visibility:hidden;}
