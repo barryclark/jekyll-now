@@ -1,6 +1,6 @@
 ---
 layout: post-date
-title: Palau Sant Jordi
+title: Palau Sant Jordi a tope
 day: 25
 month: Desembre
 ---
