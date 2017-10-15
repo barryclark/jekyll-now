@@ -1,9 +1,10 @@
 <div class="share-page l">
-<select class="l">
-	<option value="-1"><h4 class="filled soft-grey"><span class="icon icon-share2 l"></span></h4></option>
-	<option value="1"><a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via={{ site.twitter_username }}&related={{ site.twitter_username }}" rel="nofollow" target="_blank" title="Compartir a Twitter"><span class="icon icon-twitter"></span></a></option>
-	<option value="2"><a href="https://facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Compartir a Facebook"><span class="icon icon-facebook"></span></a></option>
-	<option value="3"><a href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Compartir a Google+"><span class="icon icon-google-plus"></span></a></option>
-</select>
-<hr>
+<div class="collapser">
+	<a href="#"><h4 class="filled soft-grey"><span class="icon icon-share2"></span></h4></a>
+	<ul class="collapsed dropmenu">
+		<li><a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via={{ site.twitter_username }}&related={{ site.twitter_username }}" rel="nofollow" target="_blank" title="Compartir a Twitter"><span class="icon icon-twitter"></span></a></li>
+		<li><a href="https://facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Compartir a Facebook"><span class="icon icon-facebook"></span></a></li>
+		<li><a href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Compartir a Google+"><span class="icon icon-google-plus"></span></a></li>
+	</ul>
+</div>
 </div>
