@@ -31,7 +31,7 @@
 #jquery-lightbox a img { border: none; }
 #lightbox-container-image-box {
 	position: relative;
-	background-color: #fff;
+	background-color: #000;
 	width: 250px;
 	height: 250px;
 	margin: 0 auto;
@@ -72,7 +72,7 @@
 }
 #lightbox-container-image-data-box {
 	font: 10px Verdana, Helvetica, sans-serif;
-	background-color: #fff;
+	background-color: #000;
 	margin: 0 auto;
 	line-height: 1.4em;
 	overflow: auto;
