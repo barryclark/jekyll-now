@@ -18,4 +18,11 @@ layout: default
   <div class="date">
     Publicat el {{ page.date | date: "%B %e, %Y" }}
   </div>
+<section class="filled grey section-blank">
+	<h2>Comentaris</h2>
+  <div class="cell-8 pushed-2">
+  {% include disqus.html %}
+  </div>
+  <hr>
+</section>
 </article>
