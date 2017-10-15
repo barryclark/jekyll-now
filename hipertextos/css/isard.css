@@ -188,16 +188,7 @@ font-family: 'Oswald', sans-serif;}
 font-family: 'Six Caps', sans-serif;
 }
 
-/* G Translate render */
-.goog-te-gadget-simple {
-    background-color: #000 !important;
-    border: 1px solid #aaa !important;
-}
-.goog-te-gadget-simple a {color:#aaa !important;}
 
-.goog-te-gadget-icon {
-    display:none;
-}
 
 @media (max-width: 1920px) {
 }
