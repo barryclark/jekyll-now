@@ -7,7 +7,6 @@ layout: default
 	<div class="posts">
   	{% for post in site.posts %}
     	<article class="post cell-10 pushed-1">
-    	
     	{% if post.day %}
     	<div class="ical-front filled red thin thumb-2">
     	<h4 class="day">{{ post.day }}</h4>
@@ -31,7 +30,7 @@ layout: default
 		<h2 class="thumb-8"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
     	{% endif %}
 
-
+		{% include shares.html %}
       	<div class="entry thumb-12">
         {{ post.excerpt }}
       	<a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Llegir Més</a>
