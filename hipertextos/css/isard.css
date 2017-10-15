@@ -188,6 +188,9 @@ font-family: 'Oswald', sans-serif;}
 font-family: 'Six Caps', sans-serif;
 }
 
+.share-front {
+
+}
 .share-page {
     text-align: center;
     background: $secondary-color;
