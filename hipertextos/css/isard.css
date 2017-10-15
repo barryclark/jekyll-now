@@ -97,7 +97,7 @@ h1.article-title {font-family: 'Six Caps', sans-serif;}
 .section-blank {border:none !important;}
 #viewer {margin:6%!important;}
 
-.youtube {margin-bottom:-36px;z-index:10000;}
+.youtube {margin-bottom:-36px;z-index:1000000;}
 
 article.post {border-top:thin solid #f1f1f1;border-bottom:thin solid #ddd;border-left:none;border-right:none;}
 .post-title {letter-spacing: .001em;text-transform: uppercase;font-size:4.8em;}
@@ -108,6 +108,8 @@ article.post {border-top:thin solid #f1f1f1;border-bottom:thin solid #ddd;border
 .ical-front h4 {font-family:'Oswald', sans-serif, Helvetica, Arial;line-height:0.1em;font-size:2.9em;margin:0.7em;}
 .ical-front .month {line-height:0.1em;font-size:0.95em;letter-spacing: 0.06em;}
 
+.collapsed {background:#fafafa;}
+.collapsed a:hover {background:#555;}
 .round {border-radius:5.0em;padding:2% 5% 2% 5%;}
 .underline-hover a{text-decoration:none;}
 .underline-hover a:hover {text-decoration: underline !important;color:#eee;}
