@@ -94,8 +94,3 @@ defaults:
       path: "assets/fotos"
     values:
       image: true
-  -
-    scope:
-      path: "assets/cartells"
-    values:
-      image: true
