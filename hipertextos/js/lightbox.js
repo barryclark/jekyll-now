@@ -23,15 +23,15 @@
 		settings = jQuery.extend({
 			// Configuration related to overlay
 			overlayBgColor: 		'#000',		// (string) Background color to overlay; inform a hexadecimal value like: #RRGGBB. Where RR, GG, and BB are the hexadecimal values for the red, green, and blue values of the color.
-			overlayOpacity:			0.95,		// (integer) Opacity value to overlay; inform: 0.X. Where X are number from 0 to 9
+			overlayOpacity:			0.92,		// (integer) Opacity value to overlay; inform: 0.X. Where X are number from 0 to 9
 			// Configuration related to navigation
 			fixedNavigation:		Boolean,		// (boolean) Boolean that informs if the navigation (next and prev button) will be fixed or not in the interface.
 			// Configuration related to images
-			imageLoading:			'http://isardmiralles.com/hipertextos/ui/lightbox-ico-loading.gif',		// (string) Path and the name of the loading icon
-			imageBtnPrev:			'http://isardmiralles.com/hipertextos/ui/lightbox-btn-prev.gif',			// (string) Path and the name of the prev button image
-			imageBtnNext:			'http://isardmiralles.com/hipertextos/ui/lightbox-btn-next.gif',			// (string) Path and the name of the next button image
-			imageBtnClose:			'http://isardmiralles.com/hipertextos/ui/lightbox-btn-close.gif',		// (string) Path and the name of the close btn
-			imageBlank:				'http://isardmiralles.com/hipertextos/ui/lightbox-blank.gif',			// (string) Path and the name of a blank image (one pixel)
+			imageLoading:			'hipertextos/ui/lightbox-ico-loading.gif',		// (string) Path and the name of the loading icon
+			imageBtnPrev:			'hipertextos/ui/lightbox-btn-prev.gif',			// (string) Path and the name of the prev button image
+			imageBtnNext:			'hipertextos/ui/lightbox-btn-next.gif',			// (string) Path and the name of the next button image
+			imageBtnClose:			'hipertextos/ui/lightbox-btn-close.gif',		// (string) Path and the name of the close btn
+			imageBlank:				'hipertextos/ui/lightbox-blank.gif',			// (string) Path and the name of a blank image (one pixel)
 			// Configuration related to container image box
 			containerBorderSize:	0,			// (integer) If you adjust the padding in the CSS for the container, #lightbox-container-image-box, you will need to update this value
 			containerResizeSpeed:	400,		// (integer) Specify the resize duration of container image. These number are miliseconds. 400 is default.
