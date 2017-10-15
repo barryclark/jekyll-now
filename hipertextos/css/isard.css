@@ -97,7 +97,7 @@ h1.article-title {font-family: 'Six Caps', sans-serif;}
 .section-blank {border:none !important;}
 #viewer {margin:6%!important;}
 
-.youtube {margin-bottom:-36px;}
+.youtube {margin-bottom:-36px;z-index:1000 !important;}
 
 article.post {border-top:thin solid #f1f1f1;border-bottom:thin solid #ddd;border-left:none;border-right:none;}
 .post-title {letter-spacing: .001em;text-transform: uppercase;font-size:4.8em;}
