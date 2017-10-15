@@ -15,7 +15,7 @@
 	position: fixed;
 	top: 0;
 	left: 0;
-	z-index: 50;
+	z-index: 90;
 	width: 100%;
 	height: auto;
 	margin:0px !important;
@@ -28,7 +28,7 @@
 	top: 6em !important;
 	left: 0;
 	width: 100%;
-	z-index: 90;
+	z-index: 100;
 	text-align: center;
 	line-height: 0;
 	margin:0px !important;
