@@ -46,8 +46,8 @@ permalink: /about/
 
 ### Prensa
 
-## [Biografia]({{ site.baseurl }}/hipertextos/pdf/biografia.pdf)
-## [Rider Tecnic]({{ site.baseurl }}/hipertextos/pdf/rider_tecnic.pdf)
+[Biografia]({{ site.baseurl }}/hipertextos/pdf/biografia.pdf)
+[Rider Tecnic]({{ site.baseurl }}/hipertextos/pdf/rider_tecnic.pdf)
 
 <hr class="filled black">
 
