@@ -190,10 +190,19 @@ font-family: 'Six Caps', sans-serif;
 
 /* G Translate render */
 .goog-te-gadget-simple {
-    background-color: #000 !important;
-    border: 1px solid #aaa !important;
+    background-color: transparent;
+    border-left: 1px solid #d5d5d5;
+    border-top: 1px solid #9b9b9b;
+    border-bottom: 1px solid #e8e8e8;
+    border-right: 1px solid #d5d5d5;
+    font-size: 10pt;
+    display: inline-block;
+    padding-top: 1px;
+    padding-bottom: 2px;
+    cursor: pointer;
+    zoom: 1;
+    * display: inline
 }
-.goog-te-gadget-simple a {color:#aaa !important;}
 
 .goog-te-gadget-icon {
     display:none;
