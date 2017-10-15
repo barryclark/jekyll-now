@@ -199,6 +199,31 @@ font-family: 'Six Caps', sans-serif;
     display:none;
 }
 
+
+.goog-te-menu {
+    background-color: #ffffff;
+    text-decoration: none;
+    border: 2px solid #aaa;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: absolute;
+    left: 0;
+    top: 0
+}
+
+.goog-te-balloon-frame {
+    background-color: #ffffff;
+    border: 1px solid #ff0000;
+    -moz-box-shadow: 0 0 0 0 #999999;
+    -webkit-box-shadow: 0 0 0 0 #999999;
+    box-shadow: 0 0 0 0 #999999;
+    -moz-border-radius: 8px;
+    border-radius: 8px
+}
+
+
+
+
 @media (max-width: 1920px) {
 }
 @media (max-width: 1600px) {
