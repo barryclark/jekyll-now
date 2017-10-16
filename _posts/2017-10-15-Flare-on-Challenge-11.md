@@ -24,7 +24,7 @@ The VM output the index it was on along with the execution instruction, and if i
 
 From reversing I knew a few useful things that helped me out. I knew that when it writes output to the screen it sets index 16 to 1, and when it reads it sets index 12 to 1. I made two logs of the execution of the VM on similar input.
 
-I used logs from input s and t and opened 010 editor to find the difference of the two logs. 
+I used logs from input s and t and opened 010 editor to find the difference of the two logs. The dark gray is when the text matches, and the light gray is when that line only partially matches. 
 ![_config.yml]({{ site.baseurl }}/images/flare-on_challenge_11/log%20s%20and%20t.png)
 
 This showed me where the execution of the VM differed based on the input, but I still had trouble finding what I needed. So then I used 010 to find all references to "16 = 1 ", which told me where in the logs the VM was about to output data. 
@@ -34,6 +34,7 @@ I then searched for "12 = 1 " and found where it reads user input.
 ![_config.yml]({{ site.baseurl }}/images/flare-on_challenge_11/read%20locations.png)
 
 Searching for the the ascii code of s (115), showed me where the VM referenced the char I had input. 
+
 ![_config.yml]({{ site.baseurl }}/images/flare-on_challenge_11/users%20input.png)
 
 There was a gap in the code between where the user inputs string, and where the error message is output. So this was the area I should focus my search to. Following the difference of the two files showed me that after the user's input is read it loops until the doing something until the loop index is equal to the char that was read in.
@@ -44,16 +45,17 @@ This caused the difference in instructions executed that I saw earlier. I compar
     14948 = 220810 - 220927 (-117) (log_s.txt)
 
 The number being subtracted is different, but 220810 is the same. This indicated that it might be part of the encoded string. I search for it in the binary and found data that resembled it. 
+
 ![_config.yml]({{ site.baseurl }}/images/flare-on_challenge_11/encoded.png)
 
-So I then started searching through the trace to see how the number being checked is built. This resulted in a few interesting things. The first reference to 224767 is "13580 = 220926 - -1 (220927)". I decided to then find references to the index 13580, to see where the first reference is so I can then see how the number is built.
+So I then started searching through the trace to see how the number being checked is built. This resulted in a few interesting things. The first reference to 224767 is `13580 = 220926 - -1 (220927)`. I decided to then find references to the index 13580, to see where the first reference is so I can then see how the number is built.
 ![_config.yml]({{ site.baseurl }}/images/flare-on_challenge_11/index%2013580.png)
 
-Turns out that this index is referenced in the gap we saw earlier. A good indicator we are on the right track. After going through the trace I find the algorithm is ((code(char) * 15) * 128 + 127). 
+Turns out that this index is referenced in the gap we saw earlier. A good indicator we are on the right track. After going through the trace I find the algorithm is `((code(char) * 15) * 128 + 127)`. 
 
-Trying to solve for 224767, though is impossible, so there must be something missing. I then run the VM for input st and look for references to 2208010. I see 13580 = 220810 - -1 (220811). Which is different than what we had for just input s. Looking at the difference it is 116, which happens to be the ascii code for t. To make sure this was the last bit, I used input stt and the same number was there. 
+Trying to solve for 224767, though is impossible, so there must be something missing. I then run the VM for input st and look for references to 2208010. I see `13580 = 220810 - -1 (220811)`. Which is different than what we had for just input s. Looking at the difference it is 116, which happens to be the ascii code for t. To make sure this was the last bit, I used input stt and the same number was there. 
 
-This means that the flag is broken up into sections of 2 chars and encoded as ((code(char_1) * 15) * 128 + 127) + char_2. 
+This means that the flag is broken up into sections of 2 chars and encoded as `((code(char_1) * 15) * 128 + 127) + char_2`. 
 Using this knowledge I wrote a short program in c++ to decode each encoded char pair, one thing to note is the last letter is encoded as ((code(char_1) * 15) * 128 + 127), since there is no char afterwards. 
 
     int _tmain(int argc, _TCHAR* argv[]) {
