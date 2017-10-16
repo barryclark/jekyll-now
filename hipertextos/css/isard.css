@@ -115,11 +115,7 @@ article.post {border-top:thin solid #f1f1f1;border-bottom:thin solid #ddd;border
     h2 {line-height:1.2em !important;font-size:1.5em !important;}
 }
 @media (max-width: 767px) {
-	.nav-sticky a {
-		display: inline;
-		display: inline-block;
-		width: auto;
-	}
+	.nav-sticky a {display: inline;display: inline-block;width: auto;}
 	nav {height:3.2em;}
 	nav .navlink {margin:0 5px 0 5px;font-size: .40em;}
 	.home {font-size: .9em;}
@@ -130,11 +126,17 @@ article.post {border-top:thin solid #f1f1f1;border-bottom:thin solid #ddd;border
 	nav .navlink {margin:0 7px 0 7px !important;min-width:5.0em !important;}
 }
 @media (max-width: 512px) {
-	.header-cover {max-height:26em;}
-    .mosaic-imagens {	-webkit-column-count: 2;-moz-column-count: 2;column-count: 2;}
-	nav .navlink {margin:0 !important;padding:12px 3px;min-width:3.0em !important;letter-spacing: .18em !important;}
+    .header-cover {max-height: 26em;}
+    .mosaic-imagens {-webkit-column-count: 2;-moz-column-count: 2;column-count: 2;}
+    nav .navlink {margin: 0 2px 0 2px !important;min-width: 3.0em !important;letter-spacing: .28em !important;}
 }
-@media (max-width: 450px) {
+@media (max-width: 414px) {
+	nav .navlink {margin:0 !important;min-width:1.0em !important;}
+}
+@media (max-width: 375px) {
+	nav .navlink {margin:0 !important;padding:14px 3px;min-width:1.0em !important;letter-spacing: .23em !important;}
+}
+@media (max-width: 320px) {
 	nav .navlink {margin:0 !important;padding:14px 1px;min-width:1.0em !important;letter-spacing: .15em !important;}
 }
 
