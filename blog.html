@@ -8,24 +8,24 @@ layout: default
   	{% for post in site.posts %}
     	<article class="post">
     	{% if post.day %}
-    	<div class="ical-front filled red thin thumb-1">
+    	<section class="ical-front filled red thin thumb-1">
     	<h4 class="day">{{ post.day }}</h4>
 		<h4 class="month">{{ post.month }}</h4>
-		</div>
+		</section>
     	{% endif %}
 
     	{% if post.post %}
-    	<div class="ical-front filled soft-grey thin thumb-1">
+    	<section class="ical-front filled soft-grey thin thumb-1">
     	<h4 class="day icon icon-bullhorn"></h4>
 		<h4 class="month">News</h4>
-		</div>
+		</section>
     	{% endif %}
 
     	{% if post.video %}
-    	<div class="ical-front filled soft-grey thin thumb-1">
+    	<section class="ical-front filled soft-grey thin thumb-1">
     	<h4 class="day icon icon-youtube"></h4>
 		<h4 class="month">Video</h4>
-		</div>
+		</section>
     	{% endif %}
 		
       	<section class="thumb-10">
