@@ -74,7 +74,6 @@ article.post {border-top:thin solid #f1f1f1;border-bottom:thin solid #ddd;border
 .underlined-hover a{text-decoration:none;border:none;}
 .underlined-hover a:hover {text-decoration: underline !important;border:1px solid #eee;}
 #footer nav {border:none;}
-.foot-post {margin:0;padding:0;border:none;font-size:0.8em;}
 .views {text-align:center;background:#eee !important;border-top:thin solid #eee;}
 .views span.icon {font-size:2.0em;display:block;}
 
