@@ -3,36 +3,36 @@ layout: default
 ---
 
   	{% include partials/navigation/nav-section.html %}
-<main id="main" role="main"  class="filled hard-grey">
-	<div class="content posts">
+<main id="main" role="main"  class="content filled hard-grey">
+	<div class="posts layout">
   	{% for post in site.posts %}
-    	<article class="post layout">
+    	<article class="post">
     	{% if post.day %}
-    	<section class="ical-front filled red thin thumb-1">
+    	<div class="ical-front filled red thin thumb-1">
     	<h4 class="day">{{ post.day }}</h4>
 		<h4 class="month">{{ post.month }}</h4>
-		</section>
+		</div>
     	{% endif %}
 
     	{% if post.post %}
-    	<section class="ical-front filled soft-grey thin thumb-1">
+    	<div class="ical-front filled soft-grey thin thumb-1">
     	<h4 class="day icon icon-bullhorn"></h4>
 		<h4 class="month">News</h4>
-		</section>
+		</div>
     	{% endif %}
 
     	{% if post.video %}
-    	<section class="ical-front filled soft-grey thin thumb-1">
+    	<div class="ical-front filled soft-grey thin thumb-1">
     	<h4 class="day icon icon-youtube"></h4>
 		<h4 class="month">Video</h4>
-		</section>
+		</div>
     	{% endif %}
 		
-      	<section class="thumb-10">
+      	<div class="thumb-10">
 		<h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
         {{ post.excerpt }}
       	<a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Llegir Més</a>
-      	</section>
+      	</div>
     	</article>
 <hr>
   	{% endfor %}
