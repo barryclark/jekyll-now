@@ -4,9 +4,9 @@ layout: default
 
   	{% include partials/navigation/nav-section.html %}
 <main id="main" role="main"  class="filled hard-grey">
-	<div class="posts">
+	<div class="content posts">
   	{% for post in site.posts %}
-    	<article class="post cell-10 pushed-1">
+    	<article class="post">
     	{% if post.day %}
     	<section class="ical-front filled red thin thumb-1">
     	<h4 class="day">{{ post.day }}</h4>
@@ -28,7 +28,7 @@ layout: default
 		</section>
     	{% endif %}
 		
-      	<section class="thumb-8 pushed-1">
+      	<section class="thumb-10">
 		<h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
         {{ post.excerpt }}
       	<a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Llegir Més</a>
