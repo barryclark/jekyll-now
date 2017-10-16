@@ -1,16 +1,8 @@
-body {
-text-align: justify;
--moz-hyphens:none;
- -ms-hyphens:none;
- -webkit-hyphens:none;
- -o-hyphens:none;
- hyphens:none;
+body {text-align: justify;-moz-hyphens:none;-ms-hyphens:none;-webkit-hyphens:none;-o-hyphens:none;hyphens:none;
 /* otros valores: auto & none */
- word-wrap:none;
- }
-header {
-	text-align:center;
-}
+ word-wrap:none;}
+header {text-align:center;}
+
 .bigger h1{font-size:2.3em;}
 h1 {font-family: 'Cinzel Decorative', Helvetica, Arial;}
 h2 {font-family: 'Voltaire', Helvetica, Arial;letter-spacing: 0.12em;}
@@ -38,48 +30,15 @@ nav a:hover {color:#aaa;}
 .home  {font-family:'Cinzel Decorative', Helvetica, Arial !important;font-size:2.1em;line-height:0.2em;letter-spacing: .001em !important;}
 
 .covers {margin:none; padding:none;width:100%;height:100%;}
-.full-cover {
-	background-position: top center;
-	background-attachment: fixed;
-	background-size: 100%;
-	background-repeat: no-repeat;
-	border:none;
-}
-.header-up {
-	background-position: top center;
-	background-attachment: fixed;
-	background-size: 100%;
-	background-repeat: no-repeat;
-	border:none;
-}
-.header-fine {
-	background-position: top center;
-	background-attachment: fixed;
-	background-size: 100%;
-	background-repeat: no-repeat;
-	border:none;
-	height: 12em!important;padding:1px 0 0;
-	box-shadow:inset 1px -6px 16px rgba(0,0,0,.06);
-}
-.header-article {
-	padding-top: 5em;height: 25em;
-	background-position: top center;
-	background-attachment: fixed;
-	background-size: 100%;
-	background-repeat: no-repeat;
-	border:none;
-}
-.fiximg {
-	position: fixed;
-	background-size: 100%;
-	background-repeat: no-repeat;
-	border:none;
-	z-index: 100;
-}
+.full-cover {background-position: top center;background-attachment: fixed;background-size: 100%;background-repeat: no-repeat;border:none;}
+.header-up {background-position: top center;background-attachment: fixed;background-size: 100%;background-repeat: no-repeat;border:none;}
+.header-fine {background-position: top center;background-attachment: fixed;background-size: 100%;background-repeat: no-repeat;border:none;height: 12em!important;padding:1px 0 0;box-shadow:inset 1px -6px 16px rgba(0,0,0,.06);}
+.header-article {padding-top: 5em;height: 25em;background-position: top center;background-attachment: fixed;background-size: 100%;background-repeat: no-repeat;border:none;}
+.fiximg {position: fixed;background-size: 100%;background-repeat: no-repeat;border:none;z-index: 100;}
+
 .bio {line-height:1.7em;font-family:'Voltaire', Helvetica, Arial; font-size:1.5em;}
 .suscribe {font-family:'Oswald', sans-serif, Helvetica, Arial;}
 .bio p {color:#fff !important;}
-#footer nav {border:none;}
 .sibling-content div{border-radius: .5em;position:absolute;}
 .moreinfo {margin:0;padding:0;}
 .prev-sib {float:left;}
@@ -98,7 +57,6 @@ h1.article-title {font-family: 'Six Caps', sans-serif;}
 #viewer {margin:6%!important;}
 
 .youtube {margin-bottom:-36px;}
-
 article.post {border-top:thin solid #f1f1f1;border-bottom:thin solid #ddd;border-left:none;border-right:none;}
 .post-title {letter-spacing: .001em;text-transform: uppercase;font-size:4.8em;}
 .ical h1, .ical h2 {margin:0.4em;font-family:'Oswald', sans-serif, Helvetica, Arial;}
@@ -115,78 +73,31 @@ article.post {border-top:thin solid #f1f1f1;border-bottom:thin solid #ddd;border
 .underline-hover a:hover {text-decoration: underline !important;color:#eee;}
 .underlined-hover a{text-decoration:none;border:none;}
 .underlined-hover a:hover {text-decoration: underline !important;border:1px solid #eee;}
-.foot-post {
-	margin:0;padding:0;border:none;
-	font-size:0.9em;}
-.views {
-	text-align:center;
-	background:#eee !important;
-	border-top:thin solid #eee;
-}
+#footer nav {border:none;}
+.foot-post {margin:0;padding:0;border:none;font-size:0.8em;}
+.views {text-align:center;background:#eee !important;border-top:thin solid #eee;}
 .views span.icon {font-size:2.0em;display:block;}
-.overr:hover{color:#a46dbb;
-}
-.over a {text-decoration:none!important;}
-
-.corpus {}
-.corpus img{max-width:50%;height:auto;padding-right:1%;}
 
 .mosaic-imagens {	-webkit-column-count: 4;-moz-column-count: 4;column-count: 4;}
 .imagens img {margin-top: 0;margin-bottom:2px;}
 
 /* Listed */ 
-
 .mosaic-imagens {	font-size:2px;	}
-.listed article { 
-	padding-top:0.2em;
-	overflow: hidden;width: auto;
-    display: block;
-    display: inline-block;
-    margin: 0.01em;padding: 0;
-    -webkit-column-break-inside: avoid;-moz-column-break-inside:avoid;-moz-page-break-inside:avoid;page-break-inside: avoid;
-	
-}
+.listed article { overflow: hidden;width: auto;display: block;display: inline-block;margin: 0.01em;padding: 0;	padding-bottom:1.2em;-webkit-column-break-inside: avoid;-moz-column-break-inside:avoid;-moz-page-break-inside:avoid;page-break-inside: avoid;}
+.listed .article-title { 	font-size:2.3em;line-height:2.3em;margin: 0 0 0 0.01em;letter-spacing: .3em;text-transform: uppercase;}
+.listed .article-date {font-size: .75em;margin: 0 0 0 1em;color:#555;}
 
-.listed .article-title { 	font-size:3.6em;line-height:3.2em;
-	margin: 0 0 0 0.01em;letter-spacing: .3em;
-	text-transform: uppercase;
-}
-.listed .article-date {
-	font-size: .75em;
-	margin: 0 0 0 1em;
-	color:#555;
-}
-/* END */
-	
 /* TIPOS */
-.cinzel {
-font-family:'Cinzel Decorative', Helvetica, Arial;}
-.oswald {
-font-family: 'Oswald', sans-serif;}
-.sixcaps {
-font-family: 'Six Caps', sans-serif;
-}
+.cinzel {font-family:'Cinzel Decorative', Helvetica, Arial;}
+.oswald {font-family: 'Oswald', sans-serif;}
+.sixcaps {font-family: 'Six Caps', sans-serif;}
 
-.share-page {
-    text-align: center;
-    background: transparent;
-    padding: 0.2em 15px;
-    border-radius: 5px;
-    margin: 1.5 * $spacing-unit 0;
-
-    a {
-        font-weight: 700;
-        color: #fff;
-        margin-left: 1px;
-
-        &:hover {
-            border-bottom: 1px dashed #fff;
-        }
+.share-page {text-align: center;background: transparent;padding: 0.2em 15px;border-radius: 5px;margin: 1.5 * $spacing-unit 0;
+    a { font-weight: 700;color: #fff;margin-left: 1px;
+        &:hover {border-bottom: 1px dashed #fff;}
     }
 }
 
-@media (max-width: 1920px) {
-}
 @media (max-width: 1600px) {
 	.bio {line-height:1.4em; font-size:1.3em;}
 }
