@@ -5,7 +5,6 @@ permalink: /media/
 ---
 
   	{% include partials/navigation/nav-section.html %}
-{% lightbox images/appfoundry.png --thumb="images/appfoundry-thumb.png" --data="appfoundry_image_set" --title="The AppFoundry Logo" --alt="This is our logo" --img-style="max-width:80%;" --class="imatge" %}
 <header class="header-video flat black layout">
 <div class="cell-6 pushed-3">
 	<div class="youtube"><iframe width="560" height="315" src="https://www.youtube.com/embed/oevn35Mrxzk" frameborder="0" allowfullscreen></iframe></div>
@@ -20,31 +19,31 @@ permalink: /media/
     			<hr>
     			<div class="mosaic-imagens">
   <figure class="imagens">
-    <a href="{{ site.baseurl }}/assets/cartells/image1.jpg"><img class="imatge flat white squared" src="{{ site.baseurl }}/assets/cartells/image1.jpg" alt="{{ image.basename }}"></a>
+    <a href="{{ site.baseurl }}/assets/cartells/image1.jpg" data-lightbox="roadtrip"><img class="flat white squared" src="{{ site.baseurl }}/assets/cartells/image1.jpg" alt="{{ image.basename }}"></a>
   </figure>
   <figure class="imagens">
-    <a href="{{ site.baseurl }}/assets/cartells/image2.jpg"><img class="imatge flat white squared" src="{{ site.baseurl }}/assets/cartells/image2.jpg" alt="{{ image.basename }}"></a>
+    <a href="{{ site.baseurl }}/assets/cartells/image2.jpg" data-lightbox="roadtrip"><img class="flat white squared" src="{{ site.baseurl }}/assets/cartells/image2.jpg" alt="{{ image.basename }}"></a>
   </figure>
   <figure class="imagens">
-    <a href="{{ site.baseurl }}/assets/cartells/image3.jpg"><img class="imatge flat white squared" src="{{ site.baseurl }}/assets/cartells/image3.jpg" alt="{{ image.basename }}"></a>
+    <a href="{{ site.baseurl }}/assets/cartells/image3.jpg" data-lightbox="roadtrip"><img class="flat white squared" src="{{ site.baseurl }}/assets/cartells/image3.jpg" alt="{{ image.basename }}"></a>
   </figure>
   <figure class="imagens">
-    <a href="{{ site.baseurl }}/assets/cartells/image4.jpg"><img class="imatge flat white squared" src="{{ site.baseurl }}/assets/cartells/image4.jpg" alt="{{ image.basename }}"></a>
+    <a href="{{ site.baseurl }}/assets/cartells/image4.jpg" data-lightbox="roadtrip"><img class="flat white squared" src="{{ site.baseurl }}/assets/cartells/image4.jpg" alt="{{ image.basename }}"></a>
   </figure>
   <figure class="imagens">
-    <a href="{{ site.baseurl }}/assets/cartells/image5.jpg"><img class="imatge flat white squared" src="{{ site.baseurl }}/assets/cartells/image5.jpg" alt="{{ image.basename }}"></a>
+    <a href="{{ site.baseurl }}/assets/cartells/image5.jpg" data-lightbox="roadtrip"><img class="flat white squared" src="{{ site.baseurl }}/assets/cartells/image5.jpg" alt="{{ image.basename }}"></a>
   </figure>
   <figure class="imagens">
-    <a href="{{ site.baseurl }}/assets/cartells/image6.jpg"><img class="imatge flat white squared" src="{{ site.baseurl }}/assets/cartells/image6.jpg" alt="{{ image.basename }}"></a>
+    <a href="{{ site.baseurl }}/assets/cartells/image6.jpg" data-lightbox="roadtrip"><img class="flat white squared" src="{{ site.baseurl }}/assets/cartells/image6.jpg" alt="{{ image.basename }}"></a>
   </figure>
   <figure class="imagens">
-    <a href="{{ site.baseurl }}/assets/cartells/image7.jpg"><img class="imatge flat white squared" src="{{ site.baseurl }}/assets/cartells/image7.jpg" alt="{{ image.basename }}"></a>
+    <a href="{{ site.baseurl }}/assets/cartells/image7.jpg" data-lightbox="roadtrip"><img class="flat white squared" src="{{ site.baseurl }}/assets/cartells/image7.jpg" alt="{{ image.basename }}"></a>
   </figure>
   <figure class="imagens">
-    <a href="{{ site.baseurl }}/assets/cartells/image8.jpg"><img class="imatge flat white squared" src="{{ site.baseurl }}/assets/cartells/image8.jpg" alt="{{ image.basename }}"></a>
+    <a href="{{ site.baseurl }}/assets/cartells/image8.jpg" data-lightbox="roadtrip"><img class="flat white squared" src="{{ site.baseurl }}/assets/cartells/image8.jpg" alt="{{ image.basename }}"></a>
   </figure>
   <figure class="imagens">
-    <a href="{{ site.baseurl }}/assets/cartells/image9.jpg"><img class="imatge flat white squared" src="{{ site.baseurl }}/assets/cartells/image9.jpg" alt="{{ image.basename }}"></a>
+    <a href="{{ site.baseurl }}/assets/cartells/image9.jpg" data-lightbox="roadtrip"><img class="flat white squared" src="{{ site.baseurl }}/assets/cartells/image9.jpg" alt="{{ image.basename }}"></a>
   </figure>
 		    	</div>
 			</article>
@@ -55,7 +54,7 @@ permalink: /media/
 {% assign image_files = site.static_files | where: "image", true %}
 {% for image in image_files %}
   <figure class="imagens">
-    <a href="{{ site.baseurl }}/assets/fotos/{{ image.name }}"><img class="imatge flat white squared" src="{{ site.baseurl }}/assets/fotos/{{ image.name }}" alt="{{ image.basename }}"></a>
+    <a href="{{ site.baseurl }}/assets/fotos/{{ image.name }}" data-lightbox="roadtrip"><img class="flat white squared" src="{{ site.baseurl }}/assets/fotos/{{ image.name }}" alt="{{ image.basename }}"></a>
   </figure>
 {% endfor %}
 		    	</div>
