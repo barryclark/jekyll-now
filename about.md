@@ -15,9 +15,9 @@ telf:
 ### Contacte
 ###### Podeu posar-vos en contacte amb nosaltres a través del correu, trucant-nos o vía Whatsapp o Telegram
 
-## [oldsteambcn@gmail.com](mailto:oldsteambcn@gmail.com)
-## [Trucar al 658973617](tel:+34 658973617)
-## [Desar Contacte vCard]({{ site.baseurl }}/xxx/vcard)
+### [oldsteambcn@gmail.com](mailto:oldsteambcn@gmail.com)
+### [Trucar al 658973617](tel:+34 658973617)
+### [Desar Contacte vCard]({{ site.baseurl }}/xxx/vcard)
 
 <hr>
 <div class="content">
