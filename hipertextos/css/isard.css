@@ -119,7 +119,7 @@ article.post {border-top:thin solid #f1f1f1;border-bottom:thin solid #ddd;border
 @media (max-width: 767px) {
 	.nav-sticky a {display: inline;display: inline-block;width: auto;}
 	nav {height:3.2em;}
-	nav .navlink {margin:0 5px 0 5px;font-size: .40em;}
+	nav .navlink {margin:0 5px 0 5px;font-size: .60em;}
 	.home {font-size: .9em;}
 	.header-cover {max-height:30em;}
 	.repertori  {font-size:0.55em;}
