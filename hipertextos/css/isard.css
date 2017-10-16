@@ -131,11 +131,9 @@ article.post {border-top:thin solid #f1f1f1;border-bottom:thin solid #ddd;border
 @media (max-width: 512px) {
 	.header-cover {max-height:26em;}
     .mosaic-imagens {	-webkit-column-count: 2;-moz-column-count: 2;column-count: 2;}
+	nav .navlink {margin:0 5px 0 5px;min-width:5.0em;}
 }
 @media (max-width: 450px) {
-	.next, .prev {display:none;visibility:hidden;}
-	.thin {font-weight: bold!important;}
-	.soft-nav {font-size: 7px;}
 }
 
 a.footlink:hover, a.footlink:active {
