@@ -30,7 +30,7 @@ h5 {padding-top:0;margin-top:0;letter-spacing: 0.1em;
 	.full-cover {padding:0 0 0;}
 }
 @media (max-width: 800px) {
-    h5 {font-size:0.69em;margin-bottom:6.9% !important;}
+    h5 {font-size:0.69em;margin-bottom:6.9% !important;letter-spacing: 0.02em;}
 	h5 em { min-width:100%;display:block;font-size:0.75em;margin:0.69em !important;}
     h5 :first-child {font-size:2.0em;}
 }
