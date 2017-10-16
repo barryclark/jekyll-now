@@ -30,9 +30,9 @@ h6 a {
 	display: inline;
 	display: inline-block;
 	font-size: 1.6em;
-	margin: .5em 0;
+	margin: .01em 0;
 	overflow: visible;
-	padding: 1.1em;min-width:21%;
+	padding: 1.1em;
 	text-align: center;
 	vertical-align: middle;    
 }
