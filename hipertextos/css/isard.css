@@ -127,13 +127,15 @@ article.post {border-top:thin solid #f1f1f1;border-bottom:thin solid #ddd;border
 	.repertori  {font-size:0.55em;}
 	.bio {line-height:1.32em; font-size:1.1em;}
     .mosaic-imagens {	-webkit-column-count: 3;-moz-column-count: 3;column-count: 3;}
+	nav .navlink {margin:0 7px 0 7px !important;min-width:5.0em !important;}
 }
 @media (max-width: 512px) {
 	.header-cover {max-height:26em;}
     .mosaic-imagens {	-webkit-column-count: 2;-moz-column-count: 2;column-count: 2;}
-	nav .navlink {margin:0 5px 0 5px;min-width:5.0em;}
+	nav .navlink {margin:0 5px 0 5px !important;min-width:5.0em !important;}
 }
 @media (max-width: 450px) {
+
 }
 
 a.footlink:hover, a.footlink:active {
