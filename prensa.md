@@ -1,9 +1,11 @@
 ---
-layout: default
+layout: about
 title: Prensa
 permalink: /prensa/
 
 ---
+
+{% include partials/navigation/nav-about.html %}
 
 ## Old Steam: "Vell Vapor" dels trens que van expandir el blues, el swing i el jazz per tot EEUU.
 #### Quintet de música retro-americana. 
