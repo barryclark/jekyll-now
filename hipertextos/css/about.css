@@ -23,6 +23,9 @@ h2 a {	background:transparent !important;stroke:transparent !important;
 	vertical-align: middle;}
 h5 {padding-top:0;margin-top:0;letter-spacing: 0.1em;
 }
+.biobuttons a{line-height:1.2em;font-size:1.8em;}
+.bio {line-height:1.7em;font-family:'Voltaire', Helvetica, Arial; font-size:1.5em;}
+.bio p {color:#fff !important;}
 .section-blank h2{
   font-family: 'Six Caps', sans-serif!important;  
 }

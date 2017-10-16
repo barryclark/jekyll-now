@@ -36,20 +36,8 @@ nav a:hover {color:#aaa;}
 .header-article {padding-top: 5em;height: 25em;background-position: top center;background-attachment: fixed;background-size: 100%;background-repeat: no-repeat;border:none;}
 .fiximg {position: fixed;background-size: 100%;background-repeat: no-repeat;border:none;z-index: 100;}
 
-.bio {line-height:1.7em;font-family:'Voltaire', Helvetica, Arial; font-size:1.5em;}
 .suscribe {font-family:'Oswald', sans-serif, Helvetica, Arial;}
-.bio p {color:#fff !important;}
-.sibling-content div{border-radius: .5em;position:absolute;}
-.moreinfo {margin:0;padding:0;}
-.prev-sib {float:left;}
-.next-sib {float:right;}
-.img-sibling {width:92px;	height: auto;border-radius:0 0 .25em .25em;}
-.txt-sibling {color:#666 !important;display:block;background:#fafafa;border-radius:.25em .25em 0 0;}
-prev.img-sibling {float:left;}
-next.txt-sibling {}
-next.img-sibling {float:right;}
 .medias {letter-spacing: .1em;}
-.biobuttons a{line-height:1.2em;font-size:1.8em;}
 .article-thumb {margin-bottom:0px!important;padding-bottom:0px!important;}
 h5.article-title, .article-title .icon {margin-top:0px!important;padding-top:0px!important;}
 h1.article-title {font-family: 'Six Caps', sans-serif;}
