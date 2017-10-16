@@ -24,7 +24,7 @@ Journal club meetings currently take place on Wednesdays at 12:00 pm in seminar 
 - September 27: Piotr Sokol
 - October 4: Phillip Kang
 - October 11: Yuan Zhao (time change, TBA)
-- October 18: (TBA)
+- October 18: David Hocker
 - October 25: Memming Park
 - November 1: Elliot Crooks
 - November 8: Giancarlo La Camera
