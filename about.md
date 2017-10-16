@@ -17,8 +17,6 @@ telf:
 
 ###### [oldsteambcn@gmail.com](mailto:oldsteambcn@gmail.com)
 ###### [Trucar al 658973617](tel:+34 658973617)
-###### [Desar Contacte vCard]({{ site.baseurl }}/xxx/vcard)
-
 <hr>
 <div class="content">
 	<h6>O bé a través de les Xarxes</h6>
