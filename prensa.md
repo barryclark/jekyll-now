@@ -1,5 +1,5 @@
 ---
-layout: about
+layout: default
 title: Prensa
 permalink: /prensa/
 
