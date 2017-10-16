@@ -4,12 +4,10 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+I served in the Airforce for fours and half years, and am now in the Air National Guard. I graduated from University of Washington - Tacoma Dec 2016 with my Masters in Computer Science. 
 
-### More Information
+### Interests
+Reverse Engineering
+Programming
+Computer Security
 
-A place to include any other types of information that you'd like to include about yourself.
-
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
