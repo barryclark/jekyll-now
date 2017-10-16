@@ -23,7 +23,19 @@ h2 a {	background:transparent !important;stroke:transparent !important;
 	vertical-align: middle;}
 h5 {padding-top:0;margin-top:0;letter-spacing: 0.1em;
 }
-.biobuttons a{line-height:1.2em;font-size:1.8em;}
+h6 a {
+	border: thin solid #fafafa;
+	color: #fafafa;
+	cursor: pointer;
+	display: inline;
+	display: inline-block;
+	font-size: 1.6em;
+	margin: .5em 0;
+	overflow: visible;
+	padding: 1.1em;min-width:21%;
+	text-align: center;
+	vertical-align: middle;    
+}
 .bio {line-height:1.7em;font-family:'Voltaire', Helvetica, Arial; font-size:1.5em;}
 .bio p {color:#fff !important;}
 .section-blank h2{
