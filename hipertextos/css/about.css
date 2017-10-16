@@ -2,8 +2,8 @@
 .header-up {padding:1px 0 0;height:2em;}
 header, footer {border:none;}
 h1 {}
-h4 em {color:#fafafa;padding:0 6px 0 6px;font-size:0.95em;line-height:0.8em;letter-spacing: 0.01em;}
-h4 strong {background:transparent !important;stroke:transparent !important;text-transform:uppercase;
+h5 em {color:#fafafa;padding:0 6px 0 6px;letter-spacing: 0.01em;}
+h5 strong {background:transparent !important;stroke:transparent !important;text-transform:uppercase;
 color:#fe9;background-color:#fe9;border-color:#fe9;fill:#fe9;stroke:#fe9;}
 h2 a {	background:transparent !important;stroke:transparent !important;
 	border: thin solid #999;
