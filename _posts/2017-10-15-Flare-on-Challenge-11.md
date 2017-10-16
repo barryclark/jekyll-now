@@ -58,7 +58,7 @@ Trying to solve for 224767, though is impossible, so there must be something mis
 This means that the flag is broken up into sections of 2 chars and encoded as `((code(char_1) * 15) * 128 + 127) + char_2`. 
 Using this knowledge I wrote a short program in c++ to decode each encoded char pair, one thing to note is the last letter is encoded as ((code(char_1) * 15) * 128 + 127), since there is no char afterwards. 
 
-    c++
+```c++
     int _tmain(int argc, _TCHAR* argv[]) {
      int encoded[20] = { 0x35e8a, 0x2df13, 0x2f58e, 0x2c89e, 0x3391b, 0x2c88d, 0x2f59b, 0x36d9c, 0x36616,
        0x340a0, 0x2d79b, 0x36d9c, 0x36616, 0x340a0, 0x2d79b, 0x2c89e, 0x2df0c, 0x36d8d, 0x2ee0a, 0x331ff };
@@ -73,6 +73,7 @@ Using this knowledge I wrote a short program in c++ to decode each encoded char 
       }
       system("pause");
       return 0;
-    }
+     }
+```     
 
 This finally resulted in the flag subleq_and_reductio_ad_absurdum, which you then add the @flare-on.com to for the final key. 
