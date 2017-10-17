@@ -493,7 +493,7 @@ print("average house price: {}".format(avg_houseprice * 1000))
 ```
 
 
-![png](Intro%20to%20TF%20and%20Linear%20Regression_files/Intro%20to%20TF%20and%20Linear%20Regression_45_0.png)
+![png](https://raw.githubusercontent.com/uclaacmai/uclaacmai.github.io/master/linreg-img/Intro%20to%20TF%20and%20Linear%20Regression_45_0.png)
 
 
     average absolute difference: 4408.327848032901
