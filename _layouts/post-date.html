@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+  	{% include partials/navigation/nav-section.html %}
+<article class="post">
+	<div class="ical filled red thin universe">
+		<h1>{{ page.day }}</h1>
+		<h2>{{ page.month }}</h2>
+	</div>
+	<hr>
+	<h2 class="post-title">{{ page.title }}</h2>
+
+  <div class="entry">
+    {{ content }}
+  </div>
+
+  <div class="date filled soft-grey">
+    <h6>Publicat el {{ page.date | date: "%e %B , %Y" }}</h6>
+    <hr>
+  </div>
+  <hr class="lines grey">
+<section class="filled grey section-blank">
+	<h2>Comentaris</h2>
+  <div class="cell-8 pushed-2">
+  {% include disqus.html %}
+  </div>
+  <hr>
+</section>
+</article>

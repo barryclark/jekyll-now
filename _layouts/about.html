@@ -1,12 +1,57 @@
----
-layout: blog
----
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 
-<article class="page">
+    {% include meta.html %}
 
-  <h1>{{ page.title }}</h1>
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 
-  <div class="entry">
-    {{ content }}
-  </div>
-</article>
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/css/styles.min.css" />
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/css/isard.css" />
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/css/anime.css" />
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/css/about.css" />
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cinzel+Decorative:900|Abel|Voltaire|Oswald:200,300|Six+Caps" />
+  </head>
+
+  <body>
+	{% include partials/navigation/nav-about.html %}
+	<!-- Page content -->
+	<div class="page full-cover flat black" id="page" style="background-image: url('{{ site.baseurl }}/img/about.jpg');">
+		<header class="header-up">
+						<h3>BIO</h3>
+		</header>
+		<main id="content" class="universe">
+		<section class="section-blank">
+		{{ content }}
+		</section>			
+							<hr class="filled black">					
+					<section class="universe filled white section-blank">
+						<div class="musics">
+						<h3>Formació</h3>
+						{% if site.site_musics %}
+						<h4>{{ site.site_musics }}</h4>
+						{% endif %}
+						</div>
+					</section>
+							<hr class="filled black">
+							
+					<section class="universe filled white section-blank">
+					{% include partials/suscribe.html %}
+					</section>
+		</main>
+		{% include partials/footerslim.html %}
+	</div><!-- /#page -->
+
+    <!-- Scripts
+    ================================================== -->
+    <script src="{{ site.baseurl }}/hipertextos/js/jquery.js" type="text/javascript"></script>
+    <script src="{{ site.baseurl }}/hipertextos/js/anime.js" type="text/javascript"></script>
+    <script src="{{ site.baseurl }}/hipertextos/js/scripts.min.js" type="text/javascript"></script>
+    <script src="{{ site.baseurl }}/hipertextos/js/icons.js" type="text/javascript"></script>
+    {% include analytics.html %}
+  </body>
+</html>

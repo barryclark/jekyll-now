@@ -1,18 +1,18 @@
 ---
 layout: default
 ---
-
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
-
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
-
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
-</div>
+    {% include partials/navigation/nav.html %}
+	{% include partials/head.html %}
+    <div id="content" role="main" class="flat hard-grey">
+			<div class="cell-6 pushed-3">
+				{% include partials/navigation/covers.html %}		
+			</div><!-- /.content -->
+			<hr>
+			<div class="universe filled white section-blank">
+			{% include partials/suscribe.html %}
+			</div>
+    </div>
+    <div class="universe flat black s">
+    <hr>
+          {% include svg-icons.html %}
+    </div>

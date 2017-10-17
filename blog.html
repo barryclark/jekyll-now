@@ -1,0 +1,48 @@
+---
+layout: default
+---
+
+  	{% include partials/navigation/nav-section.html %}
+<main id="main" role="main"  class="content filled hard-grey">
+	<div class="posts layout">
+  	{% for post in site.posts %}
+    	<article class="post">
+    	{% if post.day %}
+    	<section class="ical-front filled red thin thumb-1">
+    	<h4 class="day">{{ post.day }}</h4>
+		<h4 class="month">{{ post.month }}</h4>
+		</section>
+    	{% endif %}
+
+    	{% if post.post %}
+    	<section class="ical-front filled soft-grey thin thumb-1">
+    	<h4 class="day icon icon-bullhorn"></h4>
+		<h4 class="month">Notícies</h4>
+		</section>
+    	{% endif %}
+
+    	{% if post.video %}
+    	<section class="ical-front filled soft-grey thin thumb-1">
+    	<h4 class="day icon icon-youtube"></h4>
+		<h4 class="month">Videos</h4>
+		</section>
+    	{% endif %}
+		
+      	<section class="post-content thumb-10">
+		<h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+        {{ post.excerpt }}
+      	<a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Llegir Més</a>
+      	</section>
+    	</article>
+<hr>
+  	{% endfor %}
+	</div>
+</main>
+	<div class="universe flat grey">
+	<hr>
+	{% include partials/suscribe.html %}
+	</div>
+	<div class="universe flat black s">
+	<hr>
+    {% include svg-icons.html %}
+	</div>

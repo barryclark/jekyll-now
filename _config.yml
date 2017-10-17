@@ -6,7 +6,7 @@
 name: Old Steam
 
 # Short bio or description (displayed in the header)
-description: Quintet de Swing & Blues de Barcelona
+description: Quintet de Swing, Jazz i Blues de Barcelona
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
@@ -15,29 +15,31 @@ avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/je
 # Flags below are optional
 #
 
+# Musics and instrument
+site_musics: <b>Maria Baeta</b> - veu<br><b>Pep Cabrero</b> - Saxo<br><b>Juanje Sánchez</b> - Guitarra<br><b>José Borjas</b> - Contrabaix<br><b>Isard Miralles</b> - Bateria<br>
+
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
   email: oldsteambcn@gmail.com
   facebook: oldsteambcn
   flickr:
-  github: isardmt
-  instagram:
+  github: isardmt/oldsteam
+  instagram: oldsteambcn
   linkedin:
   pinterest:
-  rss: # just type anything here for a working RSS icon
+  rss: rss
   twitter: oldsteambcn
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
-  youtube: oldsteam/<oldsteam>
-  googleplus: # anything in your profile username that comes after plus.google.com/
-
+  youtube: oldsteambcn/<oldsteambcn>
+  googleplus: # anything in your profile username that comes after plus.google.com/  
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 # You can find your shortname on the Settings page of your Disqus account
-disqus:
+disqus: oldsteam
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-google_analytics:
+google_analytics: UA-108094705-1
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
@@ -84,3 +86,11 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+
+# Defaults
+defaults:
+  -
+    scope:
+      path: "assets/fotos"
+    values:
+      image: true
