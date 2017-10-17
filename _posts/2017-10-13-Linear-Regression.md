@@ -501,7 +501,7 @@ print("average house price: {}".format(avg_houseprice * 1000))
 
 Our model seems to do okay with lower and averaged price houses, but appears to do terribly with higher-priced houses. Think about why this may be. It's always important to consider the data that you used to train your model. In particular, it might be likely that our dataset didn't have many examples of highly priced houses, so our model may have not learned how to predict prices for them. What's cool about data science and machine learning is that we can easily test this theory. 
 
-All of the prices in the dataset are between 0 and 50 (in thousands of dollars). We can count up how many examples we have for houses between 0 and $$10, 000, between $$10,000 and $$20,000, and so on. This will let us examine if there are any imbalances with respect to the house prices. 
+All of the prices in the dataset are between 0 and 50 (in thousands of dollars). We can count up how many examples we have for houses between 0 and 10, 000, between 10,000 and 20,000, and so on. This will let us examine if there are any imbalances with respect to the house prices. 
 
 
 ```python
