@@ -10,5 +10,4 @@ Ahora me encuentro realizando el Ciclo de Grado Superior de Desarrollo de Aplica
 
 La idea de este blog surge a partir de las clases sobre GitHub que he recibido en la asignatura de Implantación de Servicios Web.
 
-#### Contacta conmigo:
-[migueloped@gmail.com](mailto:migueloped@gmail.com)
+#### Contacta conmigo: [migueloped@gmail.com](mailto:migueloped@gmail.com)
