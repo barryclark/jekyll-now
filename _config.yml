@@ -3,7 +3,7 @@
 #
 
 # Name of your site (displayed in the header)
-name: Isard Miralles
+name: Old Steam
 
 # Short bio or description (displayed in the header)
 description: Quintet de Swing, Jazz i Blues de Barcelona
@@ -21,17 +21,17 @@ site_musics: <b>Maria Baeta</b> - veu<br><b>Pep Cabrero</b> - Saxo<br><b>Juanje 
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email: isardmt@gmail.com
-  facebook: festetropical
+  email: oldsteambcn@gmail.com
+  facebook: oldsteambcn
   flickr:
-  github: isardmt/isardmt
-  instagram: isardmt
+  github: isardmt/oldsteam
+  instagram: oldsteambcn
   linkedin:
   pinterest:
   rss: rss
-  twitter: isardmt
+  twitter: oldsteambcn
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
-  youtube: isardmt/<isardmt>
+  youtube: oldsteambcn/<oldsteambcn>
   googleplus: # anything in your profile username that comes after plus.google.com/  
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
@@ -39,7 +39,7 @@ footer-links:
 disqus: oldsteam
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-google_analytics: 
+google_analytics: UA-108094705-1
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
