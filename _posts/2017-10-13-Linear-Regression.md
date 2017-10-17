@@ -6,6 +6,7 @@ mathjax: True
 
 ![Tensorflow](https://avatars2.githubusercontent.com/u/15658638?s=400&v=4)
 
+These are our notes and code for the Tensorflow Linear Regression workshop given at UCLA on Friday, 10/13/17. You can also view the PowerPoint slides [here](https://docs.google.com/presentation/d/1x_e00Dl-NHav2h_fOytKqF8D25jZu1my2lrj_KeWMB0/).
 ### Tensorflow Basics 
 
 Tensorflow is a graph-based numerical computation library. Complex mathematical operations are described in a graph-like data structure, where nodes in the graph represent the mathematical operations, and connections between nodes represent the flow of data from operation to operation. In Tensorflow, these data are held as **tensor** objects, which is just a generalization of a matrix. 
