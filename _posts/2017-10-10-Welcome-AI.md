@@ -3,6 +3,7 @@ layout: post
 title: Welcome to AI at UCLA!
 ---
 
+![logo](https://raw.githubusercontent.com/uclaacmai/uclaacmai.github.io/master/images/ailogo.png)
 Welcome to our website! We are the premiere artificial intelligence and machine learning group here at UCLA, and we're a committee under the umbrella organization, [UCLA ACM](http://uclaacm.com).
 
 We hosted our general meeting to kick off the Fall 2017 quarter on October 6th. You can view the meeting's slides [here](https://www.slideshare.net/secret/oH8ECVNQx6H2Qo0).
