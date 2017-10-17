@@ -8,4 +8,4 @@ We're UCLA's premiere artificial intelligence and machine learning group. We [te
 
 ### Contact
 
-Get in touch with [ACM](http://uclaacm.com)
+Get in touch with [ACM](http://uclaacm.com).
