@@ -6,18 +6,18 @@ header {text-align:center;}
 .bigger h1{}
 .absolute {position:absolute;text-align:center;width:100%;}
 
-a {text-transform:uppercase;font-family: 'Voltaire', Helvetica, Arial;text-decoration:none!important;}
+a {font-family: 'Voltaire', Helvetica, Arial;text-decoration:none!important;}
 .uppercased  {text-transform: uppercase;}
 
-nav a {font-family: 'HelveticaNeue-Light', Helvetica, Arial !important;letter-spacing: 0.18em;}
-nav {height:5.8em;padding:0.7%;	z-index: 100;}
+nav a {letter-spacing: 0.2em;}
+nav {padding:2px;	z-index: 100;}
 nav {background:transparent;text-align:center!important;}
 nav .navlink, nav .home {text-transform: uppercase;}
-nav .navlink {margin:0 8px 0 8px;min-width:6.0em;}
+nav .navlink {margin:0 1px 0 1px;min-width:6.0em;}
 .sticky {  position: -webkit-sticky; position: sticky; top: 0;}
-.nav-sticky { letter-spacing: .12em; position: -webkit-sticky; position: sticky;top: 0;font-size:1.0em;border-bottom:1px solid #222!important;}
+.nav-sticky { letter-spacing: .02em; position: -webkit-sticky; position: sticky;top: 0;font-size:1.0em;}
 nav a:hover {color:#aaa;}
-.home  {font-family: 'Voltaire', Helvetica, Arial !important;font-size:2.1em;line-height:0.2em;letter-spacing: .001em !important;}
+.home  {font-size:1.4em;line-height:0.9em;letter-spacing: .01em !important;}
 
 .covers {margin:none; padding:none;width:100%;height:100%;}
 .full-cover {background-position: top center;background-attachment: fixed;background-size: 100%;background-repeat: no-repeat;border:none;}
