@@ -77,8 +77,8 @@ article.post {border-top:thin solid #f1f1f1;border-bottom:thin solid #ddd;border
 
 .anm-index {
     -webkit-animation-name: hello; /* Chrome, Safari, Opera */
-    -webkit-animation-duration: 6s; /* Chrome, Safari, Opera */
-	animation-duration: 6s;
+    -webkit-animation-duration: 21s; /* Chrome, Safari, Opera */
+	animation-duration: 21s;
 	animation-iteration-count: infinite;
     animation-name: hello;
 	animation-direction: alternate;
