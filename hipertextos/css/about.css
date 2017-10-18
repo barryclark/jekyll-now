@@ -39,7 +39,7 @@ h6 a {
 .bio {line-height:1.7em;font-family:'Voltaire', Helvetica, Arial; font-size:1.5em;}
 .bio p {color:#fff !important;}
 .section-blank h2{
-  font-family: 'Six Caps', sans-serif!important;  
+  font-family: 'Voltaire', Helvetica, Arial !important;  
 }
 @media (max-width: 1366px) {
 	.full-cover {padding:0 0 0;}

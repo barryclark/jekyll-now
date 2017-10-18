@@ -3,23 +3,13 @@ body {text-align: justify;-moz-hyphens:none;-ms-hyphens:none;-webkit-hyphens:non
  word-wrap:none;}
 header {text-align:center;}
 
-.bigger h1{font-size:2.3em;}
-h1 {font-family: 'Cinzel Decorative', Helvetica, Arial;}
-h2 {font-family: 'Voltaire', Helvetica, Arial;letter-spacing: 0.12em;}
-h3 {font-family: 'Voltaire', Helvetica, Arial;letter-spacing: 0.08em;}
-h4 {font-family: 'Abel', Helvetica, Arial; }
-h5 {font-family: 'Six Caps', sans-serif;}
-h6 {font-family: 'Oswald', sans-serif;}
-
-h3 {background:transparent !important;stroke:transparent !important;text-transform:uppercase;
-color:#fe9;background-color:#fe9;border-color:#fe9;fill:#fe9;stroke:#fe9;}
+.bigger h1{}
 .absolute {position:absolute;text-align:center;width:100%;}
 
-.content .lead {font-family: 'Abel', Helvetica, Arial;}
-a {text-transform:uppercase;font-family: 'Abel', Helvetica, Arial;text-decoration:none!important;}
+a {text-transform:uppercase;font-family: 'Voltaire', Helvetica, Arial;text-decoration:none!important;}
 .uppercased  {text-transform: uppercase;}
 
-nav a {font-family: 'Oswald', Helvetica, Arial !important;letter-spacing: 0.18em;}
+nav a {font-family: 'HelveticaNeue-Light', Helvetica, Arial !important;letter-spacing: 0.18em;}
 nav {height:5.8em;padding:0.7%;	z-index: 100;}
 nav {background:transparent;text-align:center!important;}
 nav .navlink, nav .home {text-transform: uppercase;}
@@ -27,7 +17,7 @@ nav .navlink {margin:0 8px 0 8px;min-width:6.0em;}
 .sticky {  position: -webkit-sticky; position: sticky; top: 0;}
 .nav-sticky { letter-spacing: .12em; position: -webkit-sticky; position: sticky;top: 0;font-size:1.0em;border-bottom:1px solid #222!important;}
 nav a:hover {color:#aaa;}
-.home  {font-family:'Cinzel Decorative', Helvetica, Arial !important;font-size:2.1em;line-height:0.2em;letter-spacing: .001em !important;}
+.home  {font-family: 'Voltaire', Helvetica, Arial !important;font-size:2.1em;line-height:0.2em;letter-spacing: .001em !important;}
 
 .covers {margin:none; padding:none;width:100%;height:100%;}
 .full-cover {background-position: top center;background-attachment: fixed;background-size: 100%;background-repeat: no-repeat;border:none;}
@@ -36,11 +26,10 @@ nav a:hover {color:#aaa;}
 .header-article {padding-top: 5em;height: 25em;background-position: top center;background-attachment: fixed;background-size: 100%;background-repeat: no-repeat;border:none;}
 .fiximg {position: fixed;background-size: 100%;background-repeat: no-repeat;border:none;z-index: 100;}
 
-.suscribe {font-family:'Oswald', sans-serif, Helvetica, Arial;}
 .medias {letter-spacing: .1em;}
 .article-thumb {margin-bottom:0px!important;padding-bottom:0px!important;}
 h5.article-title, .article-title .icon {margin-top:0px!important;padding-top:0px!important;}
-h1.article-title {font-family: 'Six Caps', sans-serif;}
+h1.article-title {font-family: 'Voltaire', Helvetica, Arial;}
 .section-blank {border:none !important;}
 #viewer {margin:6%!important;}
 
@@ -77,9 +66,8 @@ article.post {border-top:thin solid #f1f1f1;border-bottom:thin solid #ddd;border
 .listed .article-date {font-size: .75em;margin: 0 0 0 1em;color:#555;}
 
 /* TIPOS */
-.cinzel {font-family:'Cinzel Decorative', Helvetica, Arial;}
+.voltaire {font-family: 'Voltaire', Helvetica, Arial;}
 .oswald {font-family: 'Oswald', sans-serif;}
-.sixcaps {font-family: 'Six Caps', sans-serif;}
 
 .share-page {text-align: center;background: transparent;padding: 0.2em 15px;border-radius: 5px;margin: 1.5 * $spacing-unit 0;
     a { font-weight: 700;color: #fff;margin-left: 1px;
@@ -156,7 +144,7 @@ a.footlink:hover, a.footlink:active {
 }
 .round {border-radius:5.0em;padding:2% 5% 2% 5%;}
 #footer a, #footer p {border:none;font-family: 'Oswald', sans-serif!important;letter-spacing: 0.05em;font-size:0.8em;}
-#footer h4 a{font-family:'Cinzel Decorative', Helvetica, Arial !important;text-transform: revert;}
+#footer h4 a{font-family: 'Voltaire', Helvetica, Arial !important;text-transform: revert;}
 #footer {border:none;}
 #footer .foot {margin-top:0px;}
 #footer a {text-decoration:none !important;border:none;font-weight:bold;}
