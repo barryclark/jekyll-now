@@ -24,7 +24,7 @@ nav a:hover {color:#aaa;}
 .header-up {background-position: top center;background-attachment: fixed;background-size: 100%;background-repeat: no-repeat;border:none;}
 .header-fine {background-position: top center;background-attachment: fixed;background-size: 100%;background-repeat: no-repeat;border:none;height: 12em!important;padding:1px 0 0;box-shadow:inset 1px -6px 16px rgba(0,0,0,.06);}
 .header-article {padding-top: 5em;height: 25em;background-position: top center;background-attachment: fixed;background-size: 100%;background-repeat: no-repeat;border:none;}
-.fiximg {position: fixed;background-size: 100%;background-repeat: no-repeat;border:none;z-index: 100;}
+.fiximg {background-size: 100%;background-repeat: no-repeat;border:none;z-index: 100;}
 
 .medias {letter-spacing: .1em;}
 .article-thumb {margin-bottom:0px!important;padding-bottom:0px!important;}
