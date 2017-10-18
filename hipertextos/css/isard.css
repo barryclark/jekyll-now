@@ -75,6 +75,27 @@ article.post {border-top:thin solid #f1f1f1;border-bottom:thin solid #ddd;border
     }
 }
 
+.anm-index {
+    -webkit-animation-name: hello; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+    animation-name: hello;
+    animation-duration: 4s;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes hello {
+    from {background-color: white;}
+    to {background-color: red;}
+}
+
+/* Standard syntax */
+@keyframes hello {
+    from {background-color: white;}
+    to {background-color: red;}
+}
+</style>
+
+
 @media (max-width: 1600px) {
 	.bio {line-height:1.4em; font-size:1.3em;}
 }
