@@ -10,14 +10,14 @@ a {text-decoration:none!important;}
 .uppercased  {text-transform: uppercase;}
 
 nav a {letter-spacing: 0.14em;font-family: 'HelveticaNeue-UltraLight', Helvetica, Arial;}
-nav {padding:1px;	z-index: 100;}
+nav {padding:1px;	z-index: 100;vertical-align: center middle !important;}
 nav {background:transparent;text-align:center!important;}
 nav .navlink, nav .home {}
-nav .navlink {margin:0 3px 0 3px;min-width:5.0em;}
+nav .navlink {margin: 0 6px;line-height:1.2em;}
 .sticky {  position: -webkit-sticky; position: sticky; top: 0;}
 .nav-sticky { letter-spacing: .02em; position: -webkit-sticky; position: sticky;top: 0;font-size:0.9em;}
 nav a:hover {color:#aaa;}
-.home  {font-family: 'Voltaire', Helvetica, Arial;font-size:1.5em;line-height:0.5em;letter-spacing: .02em !important;text-transform: uppercase;}
+.home  {font-family: 'Voltaire', Helvetica, Arial;font-size:1.6em;line-height:0.1em;letter-spacing: .02em !important;text-transform: uppercase;}
 
 .covers {margin:none; padding:none;width:100%;height:100%;}
 .full-cover {background-position: top center;background-attachment: fixed;background-size: 100%;background-repeat: no-repeat;border:none;}
