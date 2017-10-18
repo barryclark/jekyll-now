@@ -75,31 +75,6 @@ article.post {border-top:thin solid #f1f1f1;border-bottom:thin solid #ddd;border
     }
 }
 
-.anm-index {
-    -webkit-animation-name: hello; /* Chrome, Safari, Opera */
-    -webkit-animation-duration: 21s; /* Chrome, Safari, Opera */
-	animation-duration: 21s;
-	animation-iteration-count: infinite;
-    animation-name: hello;
-	animation-direction: alternate;
-}
-
-/* Chrome, Safari, Opera */
-@-webkit-keyframes hello {
-    from {background-color: white;	background-image: -webkit-linear-gradient(0deg, transparent 50%, rgba(0,0,0,.2) 50%);
-	background-image: -moz-linear-gradient(90deg, transparent 50%, rgba(0,0,0,.2) 50%);
-	background-image: -o-linear-gradient(0deg, transparent 50%, rgba(0,0,0,.2) 50%);
-	background-image: linear-gradient(90deg, transparent 50%, rgba(0,0,0,.2) 50%);
-	background-size: .5em .5em;}
-    to {background-color: red;}
-}
-
-/* Standard syntax */
-@keyframes hello {
-    from {background-color: white;}
-    to {background-color: red;}
-}
-
 @media (max-width: 1600px) {
 	.bio {line-height:1.4em; font-size:1.3em;}
 }
