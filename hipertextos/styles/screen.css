@@ -1,5 +1,5 @@
-/* soviet-screen.css */
-/* by Circulus Ruber */
+/* BarcelonaCSS */
+/* by Acozar/Miralles */
 
 /* ------------------------------------------------------------ Resets */
 
@@ -17,11 +17,11 @@
 *:target,
 *:focus {
 	/*Transition*/ 
-	-webkit-transition: all .25s ease;
-	-moz-transition: all .25s ease;
-	-ms-transition: all .25s ease;
-	-o-transition: all .25s ease;
-	transition: all .25s ease;
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-ms-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	transition: all .5s ease;
 }
 ::-moz-selection {
 	background-color: #dd0000;
@@ -168,6 +168,36 @@ h6 u:after {
 	position: absolute;
 	left: 0; right: 0;
 	width: 99%;
+}
+@media (max-width: 767px) {
+	h1 {
+		font-size: 2em;
+	}
+	h2 {
+		font-size: 1.8em;
+	}
+	h3 {
+		font-size: 1.6em;
+	}
+	h4 {
+		font-size: 1.4em;
+	}
+	h5 {
+		font-size: 1.2em;
+	}
+	h6 {
+		font-size: 1em;
+	}
+	h1, 
+	h2, 
+	h3 {
+		line-height: var(--headline-size);
+	}
+	h4,
+	h5,
+	h6 {
+		line-height: var(--line-size);
+	}
 }
 
 /* Breaks */
@@ -692,7 +722,8 @@ strong em button {
 nav {
 	background-color: ;
 	border-bottom: var(--border-size) solid currentColor;
-	display: block;line-height: var(--line-size);
+	display: block;
+	line-height: var(--line-size);
 	margin-bottom: -var(--indent-size);
 	position: relative;
 }
@@ -734,7 +765,8 @@ nav label img, nav label svg {
 }
 article footer + nav,
 aside footer + nav,
-section footer + nav {
+section footer + nav,
+dialog > nav {
 	border-top: var(--border-size) solid currentColor;
 	border-bottom: var(--border-size) solid transparent;
 	padding: var(--font-size);
@@ -749,10 +781,17 @@ nav form {
 	text-align: right;
 	top: var(--indent-size);
 	right: 0;
-	width: 20em;
+	width: 8em;
+	z-index: 2;
+}
+nav li form {
+	position: relative;
+	text-align: left;
+	width: 100%;
 }
 nav form input,
 nav form input:focus {
+	background-color: var(--color-white);
 	border-radius: var(--font-size);
 	position: relative;
 	text-align: center;
@@ -761,7 +800,7 @@ nav form input[type=text] {
 	width: 5em;
 }
 nav form input[type=text]:focus {
-	background-color: var(--color-translucentwhite);
+	background-color: var(--color-white);
 	color: var(--color-black);
 	width: 100%;
 	z-index: 9;
@@ -840,6 +879,9 @@ article, aside {
 	width: 100%;
 	max-width: var(--page-size);
 }
+dialog header,
+dialog > div,
+dialog footer,
 article header,
 article > div,
 article footer,
@@ -849,10 +891,13 @@ aside footer,
 section header,
 section > div,
 section footer {
-	padding-left: var(--base-size);
-	padding-right: var(--base-size);
+	padding-left: var(--quarter-size);
+	padding-right: var(--quarter-size);
 }
-
+#page-footer {
+	background-color: var(--color-black);
+	color: var(--color-white);
+}
 
 /* ------------------------------------------------------------ Media */
 
@@ -937,7 +982,7 @@ figure div {
 	padding-top: 0;
 	height: 0;
 	overflow: hidden;
-	z-index: 100;
+	z-index: 5;
 }
 figure div iframe {
 	position: absolute;
@@ -1008,41 +1053,85 @@ nav label:hover {
 	border: var(--border-size) solid currentColor;
 }
 
-/* Dark theme */
+/* Soft theme */
 
-#theme:checked ~ #page,
-#theme:checked ~ #site-nav,
-#theme:checked ~ #page-nav {
-	background-color: #111;
-	color: var(--color-grey);	
+#theme-soft:checked ~ #page,
+#theme-soft:checked ~ #site-nav,
+#theme-soft:checked ~ #page-nav {
+	background-color: var(--color-soft);
+	color: var(--color-softtext);	
 }
-#theme:checked ~ #page a {
-	color: var(--color-blue);	
+#theme-soft:checked ~ #page a {
+	color: var(--color-softblue);	
 }
-#theme:checked ~ #page a:visited,
-#theme:checked ~ #page em a:visited {
+#theme-soft:checked ~ #page em a,
+#theme-soft:checked ~ #page em label,
+#theme-soft:checked ~ #page em button {
+	background-color: var(--color-softstarred);
+	color: var(--color-softtext);	
+}
+#theme-soft:checked ~ #page a:visited,
+#theme-soft:checked ~ #page em a:visited {
 	color: var(--color-orange);
 }
-#theme:checked ~ #page a:visited svg {
+#theme-soft:checked ~ #page a:visited svg {
 	fill: var(--color-red);
 }
-#theme:checked ~ #page nav label:hover,
-#theme:checked ~ #page a:hover,
-#theme:checked ~ #page a:visited:hover {
+#theme-soft:checked ~ #page nav label:hover,
+#theme-soft:checked ~ #page a:hover,
+#theme-soft:checked ~ #page a:visited:hover {
 	color: var(--color-blue);
 }
-#theme:checked ~ #page a:hover svg {
+#theme-soft:checked ~ #page a:hover svg {
 	fill: var(--color-blue);
 }
-#theme:checked ~ #page a:active,
-#theme:checked ~ #page a:visited:active {
+#theme-soft:checked ~ #page a:active,
+#theme-soft:checked ~ #page a:visited:active {
 	color: var(--color-violet);
 }
-#theme:checked ~ #page a:visited:active svg {
+#theme-soft:checked ~ #page a:visited:active svg {
 	fill: var(--color-violet);
 }
-#theme:checked ~ #page nav a:hover,
-#theme:checked ~ #page nav label:hover {
+#theme-soft:checked ~ #page nav a:hover,
+#theme-soft:checked ~ #page nav label:hover {
+	background-color: var(--color-translucentwhite);
+}
+
+/* Dark theme */
+
+#theme-dark:checked ~ #page,
+#theme-dark:checked ~ #site-nav,
+#theme-dark:checked ~ #page-nav {
+	background-color: var(--color-hardgrey);
+	color: var(--color-white);	
+}
+#theme-dark:checked ~ #page a {
+	color: var(--color-white);	
+}
+#theme-dark:checked ~ #page a:visited,
+#theme-dark:checked ~ #page em a:visited {
+	color: var(--color-orange);
+}
+#theme-dark:checked ~ #page a:visited svg {
+	fill: var(--color-red);
+}
+#theme-dark:checked ~ #page nav label:hover,
+#theme-dark:checked ~ #page a:hover,
+#theme-dark:checked ~ #page a:visited:hover {
+	color: var(--color-blue);
+}
+#theme-dark:checked ~ #page a:hover svg {
+	fill: var(--color-blue);
+}
+#theme-dark:checked ~ #page a:active,
+#theme-dark:checked ~ #page a:visited:active {
+	color: var(--color-violet);
+}
+#theme-dark:checked ~ #page a:visited:active svg {
+	fill: var(--color-violet);
+}
+#theme-dark:checked ~ #page nav a:hover,
+#theme-dark:checked ~ #page nav label:hover {
 	background-color: var(--color-translucentwhite);
 }
 
@@ -1061,15 +1150,13 @@ nav label {
 	background-color: var(--color-background);
 }
 
-/* Vertical grid */
-
+/* Vertical grid 
 #page {
 	background-image: linear-gradient(to bottom, cyan 0, rgba(255, 255, 255, 0) 1px);
 	background-repeat: repeat-y;
 	background-size: 100% var(--grid-size);
 }
-
-
+*/
 
 /* root */
 
@@ -1083,18 +1170,25 @@ nav label {
 	--linepadded-size: 30px;
 	--line-size: 32px;
 	--headline-size: 64px;
-	--page-size: 1080px;
+	--page-size: 1200px;
 	
 	--color-white: rgba(255,255,255,1);
 	--color-yellow: rgba(244,192,21,1);
 	--color-orange: rgba(244,82,15,1);
 	--color-red: rgba(221,0,0,1);
 	--color-violet: rgba(115,44,147,1);
+	--color-softblue: rgba(100,100,255,1);
 	--color-blue: rgba(50,122,174,1);
 	--color-turquoise: rgba(0,175,139,1);
 	--color-green: rgba(50,164,89,1);
-	--color-grey: rgba(200,200,200,1);
+	--color-softgrey: rgba(220,220,220,1);
+	--color-grey: rgba(150,150,150,1);
+	--color-hardgrey: rgba(90,90,90,1);
 	--color-black: rgba(0,0,0,1);
+	
+	--color-soft: rgba(247,246,255,1);
+	--color-softtext: rgba(89,81,147,1);
+	--color-softstarred: rgba(214,208,255,1);
 	
 	--color-translucentblack: rgba(0,0,0,.5);
 	--color-translucentwhite: rgba(255,255,255,.5);
