@@ -75,7 +75,19 @@ article.post {border-top:thin solid #f1f1f1;border-bottom:thin solid #ddd;border
     }
 }
 
-# Index Animation
+.anm-index { 
+  -moz-animation-duration: 6s;
+  -webkit-animation-duration: 6s;
+  animation-duration: 6s;
+  -moz-animation-name: anm-index;
+  -webkit-animation-name: anm-index;
+  animation-name: anm-index;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -moz-animation-direction: alternate;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;}
 
 @keyframes anm-index {
     from {
