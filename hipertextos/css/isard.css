@@ -93,8 +93,6 @@ article.post {border-top:thin solid #f1f1f1;border-bottom:thin solid #ddd;border
     from {background-color: white;}
     to {background-color: red;}
 }
-</style>
-
 
 @media (max-width: 1600px) {
 	.bio {line-height:1.4em; font-size:1.3em;}
