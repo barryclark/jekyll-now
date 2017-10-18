@@ -1,0 +1,145 @@
+/* soviet-print.css */
+/* by Circulus Ruber */
+
+
+@page {
+  size: A4 portrait;
+  margin: 2cm;
+}
+@page {
+  @bottom-right { 
+    border-top: .25pt solid #666;
+    content: counter(page);
+  }
+  @bottom-left {
+    content:  string(doctitle);
+  }
+}
+* {
+	background: transparent;
+	color: #000;
+	display: inline;
+	font-size: 16pt; 
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
+	line-height: 26pt;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	word-break: break-word;
+}
+body {
+	background: white;
+	color: #000;
+	font-size: 16pt; 
+	font-family: Baskerville, "Baskerville Old Face", "Goudy Old Style", Garamond, Georgia, ‘Times New Roman’, serif; 
+	line-height: 26pt;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p,
+pre,
+blockquote,
+cite,
+article,
+section,
+aside,
+div {
+	border: none;
+	display: block;
+	margin: 10pt;
+	width: auto;
+	page-break-after: avoid;
+}
+h1,
+h2,
+h3 {
+	line-height: 52pt;
+}
+h1 { font-size: 68pt; }
+h2 { font-size: 52pt; }
+h3 { font-size: 42pt; }
+h4 { font-size: 26pt; }
+h5 { font-size: 20pt; }
+h6 { font-size: 16pt; }
+p { font-size: 16pt; }
+h1 em,
+h2 em,
+h3 em,
+h4 em,
+h5 em,
+h6 em {
+	border-bottom: 1pt solid black;
+	display: block;
+	width: 100%;
+}
+a, a:link, a:visited {
+	color: #aa0000;
+	display: inline;
+	font-weight: bold;
+	margin: 0 10pt;
+	text-decoration: underline; 
+}
+a:after { 
+	content: " (" attr(href) ") ";
+	font-size: 10pt
+}
+img, figure, svg {
+	display: block;
+	margin: 2.6pt auto;
+	width: 15%;
+    page-break-before: auto;
+    page-break-after: auto;
+    page-break-inside: avoid;
+}
+button,
+dialog,
+embed,
+form,
+iframe,
+input,
+nav,
+progress,
+script,
+style,
+[hidden] {
+	display: none;
+}
+div[hidden] {
+	display: block;
+}
+pre {
+	border: 1px solid #ddd;
+	font-size: 10pt;
+	padding: 2%;
+}
+pre, code {
+	font-family: monospace;
+}
+pre *, code, code *, cite, small, strong,
+i, em, span {
+	border: none;
+	display: inline;
+	word-break:break-word;
+}
+table,
+thead,
+tbody,
+tfoot,
+tr { 
+	display: block;
+	font-size: 8pt;
+	width: 100%;
+}
+thead {
+	border-bottom: thin solid black;
+
+}
+th,
+td {
+	padding: 5pt;
+}
