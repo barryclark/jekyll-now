@@ -6,13 +6,62 @@ title: Reversing Covfefe.exe, Flare-on Challenge 11
 
 Reversing the binary of 11 was easy, but it wasn't meant to be hard. The difficult part was reversing the VM code that the binary runs. When implementing the VM I made a mistake in the code that caused me problems trying to sort out. When it checks the index at each loop I had "index < end", when it should have been "index <= end". This caused it to end prematurely. 
 
-I needed a little help on this challenge and was given two approaches other people used. One was to output logs for the execution of the VM, which I was on the way to do. The other was to use a side channel attack to get the key. I was told the approach taken by Pierre Bourdon to attack [Simple from PlaidCTF 2012](https://blog.lse.epita.fr/articles/9-plaidctf-2012-simple-writeup.html "Simple from Plaidctf 2012") could be adapted here. I was not able to get it to work because the number of instructions executed is determined by the user input, and did not know enough of how the code worked to adapt it correctly. 
+I needed a little help on this challenge and was given two approaches other people used. One was to output logs for the execution of the VM, which I was on the way to do. The other was to use a side channel attack to get the key. I was told the approach taken by Pierre Bourdon to attack [Simple from PlaidCTF 2012](https://blog.lse.epita.fr/articles/9-plaidctf-2012-simple-writeup.html "Simple from Plaidctf 2012") could be adapted here. I decided to try the side channel attack, since it seemed like an interesting way to get the key. Below is the count of instructions when trying the input 0 - z. 
 
-Since, I was not successful with that avenue I decided to study the execution of the VM, and see if I can learn what it does. In this approach I rewrote the VM in C++ and added in code to output its execution into logs I could study. 
+![_config.yml]({{ site.baseurl }}/images/flare-on_challenge_11/count_instructions.png)
 
-*How vm worked and code*
+As the ascii code increased, so did the number of instructions. This was different that the expected output, from reading about Pierre Bourdon's attack. I did not know enough of how the code worked to adapt it correctly. I decided to instead study the execution of the VM, and see if I can learn what it does. In this approach I rewrote the VM in C++ and added in code to output its execution into logs I could study. 
 
-The VM output the index it was on along with the execution instruction, and if it jumped. So it ended up looking like: 
+###How the VM worked###
+When the program is executed it calls a function and passes the address to the VM code, the start index, and the end index. It then checks to ensure the start index is before the end index and starts the executation loop. 
+
+![_config.yml]({{ site.baseurl }}/images/flare-on_challenge_11/beginning_of_loop.png)
+
+On each loop the VM calls a function to execute the current instruction, which is made up of 3 ints. The index is multipled by 4, since an int is 4 bytes. Four and eight are added so that those indexes are pointing to the next two ints respectively. 
+
+After the executation the VM would then jump or go to the next instruction, depending on the result of the executed instruction. 
+
+![_config.yml]({{ site.baseurl }}/images/flare-on_challenge_11/read_write.png)
+
+The VM would then check if index 16 == 1, if so then it would output the byte in index 8. Next, index 12 was checked and if it was 1 a byte was read and stored in index 4. This let me know the VM used index 4, 8, 12, and 16 as different registers. I could then watch these to learn more about what the VM code was doing. 
+
+```c++
+run(*VM_code, end_index, start_index) { // mockup code
+    index = start_index; 
+    while (index + 3 <= end_index) {
+        if (execute(VM_code, VM_code[index], VM_code[index+1], VM_code[index+2])) {
+            if (VM_code[index+3] == 0xFFFFFFFF) {
+                return;
+            }
+            index = VM_code[index+3];
+        } else {
+            index += 3;
+        }
+        if (VM_code[16] == 1) {
+            printf("%c", VM_code[8]);
+            VM_code[16] = 0;
+            VM_code[8] = 0;
+        }
+        if (VM_code[12] == 1) {
+            scanf("%c", &VM_code[4]);
+            VM_code[12] = 0;
+        }
+    }
+}
+```
+
+![_config.yml]({{ site.baseurl }}/images/flare-on_challenge_11/execute_instruction.png)
+
+The VM only had one executation which was VM_code[int_2] = VM_code[int_2] - VM_code[int_1]. VM_code[int_3] is checked to see if it not zero. VM_code[int_2] is then check if not greater than 0, if this is true then the executation function returns true. This in turn triggers the VM to jump to address VM_code[int_3]. 
+
+```c++
+execute(VM_code, instruction_1, instruction_2, instruction_3) { // mockup code
+    VM_code[instruction_2] = VM_code[instruction_2] - VM_code[instruction_1];
+    return (instruction_3 != 0 && !(VM_code[instruction_2] > 0));
+}
+```
+
+I added a print statement to print the current index, current instruction, and if it jumped. I was then able to use this output to trace the executation of the VM code and determine what it was doing. Below is an example of the logs from the execution of my code. 
 
     ...
     1139
@@ -21,6 +70,8 @@ The VM output the index it was on along with the execution instruction, and if i
     4716 = 0 - 0 (0)
     1146
     ...
+
+###Tracing the logs###
 
 From reversing I knew a few useful things that helped me out. I knew that when it writes output to the screen it sets index 16 to 1, and when it reads it sets index 12 to 1. I made two logs of the execution of the VM on similar input.
 
@@ -48,6 +99,8 @@ The number being subtracted is different, but 220810 is the same. This indicated
 
 ![_config.yml]({{ site.baseurl }}/images/flare-on_challenge_11/encoded.png)
 
+
+###finding the encoded flag###
 So I then started searching through the trace to see how the number being checked is built. This resulted in a few interesting things. The first reference to 224767 is `13580 = 220926 - -1 (220927)`. I decided to then find references to the index 13580, to see where the first reference is so I can then see how the number is built.
 ![_config.yml]({{ site.baseurl }}/images/flare-on_challenge_11/index%2013580.png)
 
