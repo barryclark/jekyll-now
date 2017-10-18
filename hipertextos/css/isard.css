@@ -86,7 +86,11 @@ article.post {border-top:thin solid #f1f1f1;border-bottom:thin solid #ddd;border
 
 /* Chrome, Safari, Opera */
 @-webkit-keyframes hello {
-    from {background-color: white;}
+    from {background-color: white;	background-image: -webkit-linear-gradient(0deg, transparent 50%, rgba(0,0,0,.2) 50%);
+	background-image: -moz-linear-gradient(90deg, transparent 50%, rgba(0,0,0,.2) 50%);
+	background-image: -o-linear-gradient(0deg, transparent 50%, rgba(0,0,0,.2) 50%);
+	background-image: linear-gradient(90deg, transparent 50%, rgba(0,0,0,.2) 50%);
+	background-size: .5em .5em;}
     to {background-color: red;}
 }
 
