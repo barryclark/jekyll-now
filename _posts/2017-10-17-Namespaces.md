@@ -3,15 +3,15 @@ layout: post
 title: Namespaces
 ---
 
-Namepsaces dělí začínajícího programátora od mírné pokročilého. Co to vše obnáší?
+Namepsaces dělí začínajícího programátora od mírné pokročilého. Co vše to obnáší?
 
 # Přiblížení jmenných prostorů
 
-Namespaces, česky jmenné prstory, v podstatě fungují jako jakési imaginární složky pro kód. Do nich patří jednotlivé třídy. Jestli progarmuješ v Javě nebo v C#, budou ti důvěrně známé, protože v PHP se používají velmi podobně. Namespaces přibyly v verzi 5.3 a byla to jedna s nejdůležitějších změn v této verzi.
+Namespaces, česky jmenné prstory, v podstatě fungují jako jakési imaginární složky pro kód. Do nich patří jednotlivé třídy. Jestli programuješ v Javě nebo v C#, budou ti důvěrně známé, protože v PHP se používají velmi podobně. Namespaces přibyly ve verzi 5.3 a byla to jedna z nejdůležitějších změn v této verzi.
 
 Výhody použití namespaces jsou stejné jako při používání složek pro soubory v normálním systému - najednou nemusíš mít hromadu souborů na jedné hromadě, ale je možné je mít roztřídené do logických složek. Pro tři soubory v projektu to asi nemá význam, pro tři sta tříd už je to velmi zajímavé.
 
-V různých namespaces lze používat stejně pojmenované třídy i funkce, stejně jako je možné mít stejné soubory v počítači v různých složkách. Tuto vlastnost oceníš zejména když začneš používat cizí kód - najednou můžeš přestat řešit, že si někdo pojmenovat funkci stejně jako ty, což se klidně může stát a není to nutně chyba. Pro provoz aplikace to ovšem býtá fatální. 
+V různých namespaces lze používat stejně pojmenované třídy i funkce, stejně jako je možné mít stejné soubory v počítači v různých složkách. Tuto vlastnost oceníš zejména když začneš používat cizí kód - najednou můžeš přestat řešit, že si někdo pojmenoval funkci stejně jako ty, což se klidně může stát a není to nutně chyba. Pro provoz aplikace to ovšem bývá fatální. 
 
 Namespaces jsou v PHP hierarchické, můžeš je tedy vnořovat navzájem do sebe.
 
@@ -19,7 +19,7 @@ S namespaces úzce pracují standardy PSR-0 (zastaralý) a [PSR-4](http://jakpsa
 
 # Použití
 
-Namespace musí být definované na vrchu PHP souboru, takže například jako
+Namespace musí být definovaný na vrchu PHP souboru, takže například jako
 
 ```php
 <?php
@@ -87,7 +87,7 @@ namespace ApplicationOne();
 
 ## Volání
 
-Když voláš třídu nebo funkci z namespace, při jejím použití musíš předstadit správný namespace se zpětným lomítkem. Příklad volání pro minulý kód:
+Když voláš třídu nebo funkci z namespace, při jejím použití musíš předsadit správný namespace se zpětným lomítkem. Příklad volání pro minulý kód:
 
 ```php
 <?php
