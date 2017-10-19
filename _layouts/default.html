@@ -16,6 +16,12 @@
   </head>
 
   <body>
+
+		<!-- Theme inputs (invisibles) -->		
+		<input type="radio" id="theme-light" name="theme" aria-hidden="true" hidden>
+		<input type="radio" id="theme-soft" name="theme" aria-hidden="true" hidden>
+		<input type="radio" id="theme-dark" name="theme" aria-hidden="true" hidden> 
+		
 	<!-- Page content -->
 	<div class="page" id="page">
       {{ content }}
@@ -25,7 +31,6 @@
     <!-- Scripts
     ================================================== -->
   	<script src="{{ site.baseurl }}/hipertextos/js/jquery.js"></script>
-    <script src="{{ site.baseurl }}/hipertextos/js/anime.js" type="text/javascript"></script>
     <script src="{{ site.baseurl }}/hipertextos/js/scripts.min.js" type="text/javascript"></script>
     <script src="{{ site.baseurl }}/hipertextos/js/icons.js" type="text/javascript"></script>
     {% include analytics.html %}
