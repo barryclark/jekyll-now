@@ -77,7 +77,7 @@ article.post {border-top:thin solid #f1f1f1;border-bottom:thin solid #ddd;border
 
 /* Home ANIME */
 
-header .header-cover {
+.header-cover {
 	width: 100wh;
 	height: 90vh;
 	color: #fff;
