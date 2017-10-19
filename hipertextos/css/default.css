@@ -1,23 +1,27 @@
-.page {text-align:center;}
-.img {width:100%;padding:none;margin:none;height:100%;}
-.layout {}
-#footer {}
-.button-centered .squared {width:12%;}
-a.button:hover, a.button:focus {background-color:#fafafa !important;color:#555 !important;}
-.foot {opacity:0.8;font-size:1.2em;}
-.header-cover {	padding:12% 0 0;height: 55em;
-	background-position: top center;
-	background-attachment: fixed;
-	background-size: 100%;
-	background-repeat: no-repeat;
-	border:none;}
+/* Home ANIME */
 
-@media (max-width: 1366px) {
+body {
+	width: 100wh;
+	height: 90vh;
+	color: #fff;
+	background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+	background-size: 400% 400%;
+	-webkit-animation: gradient 21s ease infinite;
+	-moz-animation: gradient 21s ease infinite;
+	animation: gradient 21s ease infinite;
 }
-@media (max-width: 800px) {
+@-webkit-keyframes gradient {
+	0% { background-position: 0% 50%}
+	50% {background-position: 100% 50%}
+	100% {background-position: 0% 50%}
 }
-@media (max-width: 767px) {
+@-moz-keyframes gradient {
+	0% {background-position: 0% 50%}
+	50% {background-position: 100% 50%}
+	100% {background-position: 0% 50%}
 }
-@media (max-width: 550px) {
-
+@keyframes gradient {
+	0% {background-position: 0% 50%}
+	50% {background-position: 100% 50%}
+	100% {background-position: 0% 50%}
 }
