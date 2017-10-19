@@ -3,12 +3,12 @@
 body {
 	width: 100wh;
 	height: 90vh;
-	color: #fff;
-	background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
-	background-size: 400% 400%;
-	-webkit-animation: gradient 21s ease infinite;
-	-moz-animation: gradient 21s ease infinite;
-	animation: gradient 21s ease infinite;
+	color: #EA6666;
+	background: linear-gradient(45deg, #F5AB35, #EA6666, #7895B5, #408EBE);
+	background-size: 300% 300%;
+	-webkit-animation: gradient 32s ease infinite;
+	-moz-animation: gradient 32s ease infinite;
+	animation: gradient 32s ease infinite;
 }
 @-webkit-keyframes gradient {
 	0% { background-position: 0% 50%}
