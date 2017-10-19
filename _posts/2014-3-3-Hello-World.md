@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: postSinPublicar
 title: You're up and running!
 ---
 
