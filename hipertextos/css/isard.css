@@ -9,13 +9,13 @@ header {text-align:center;}
 a {text-decoration:none!important;}
 .uppercased  {text-transform: uppercase;}
 
-nav a {letter-spacing: 0.02em;font-family: 'HelveticaNeue-Light', Helvetica, Arial;vertical-align: middle !important;}
+nav a {font-family: 'HelveticaNeue', Helvetica, Arial;vertical-align: middle !important;}
 nav {	z-index: 100;}
 nav {background:transparent;text-align:center!important;}
 nav .navlink, nav .home {}
 nav .navlink {margin: 0 6px;line-height:1.2em;}
 .sticky {  position: -webkit-sticky; position: sticky; top: 0;}
-.nav-sticky { letter-spacing: .02em; position: -webkit-sticky; position: sticky;top: 0;font-size:0.9em;}
+.nav-sticky { letter-spacing: .02em; position: -webkit-sticky; position: sticky;top: 0;font-size:0.96em;}
 nav a:hover {color:#aaa;}
 .home  {font-family: 'Voltaire', Helvetica, Arial;font-size:1.62em;line-height:0.2em;letter-spacing: .001em !important;text-transform: uppercase;}
 
