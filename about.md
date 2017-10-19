@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Acerca de mí
-permalink: /about/
+title: Acerca de mí...
+permalink: /Acerca de mí.../
 ---
 
 Hace mucho tiempo que empecé en este mundo de la Informática (antes de que empezaran a verse las primeras versiones de Windows). Desde entonces me ha apasionado la Programación, aunque no me he dedicado profesionalmente, siempre he estado aprediendo nuevos lenguajes. Incluso he olvidado ya algunos de ellos.
