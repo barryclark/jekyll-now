@@ -4,6 +4,20 @@ title: Selected Publications
 permalink: /publications/
 ---
 
+### Single-case research and behavioral observation
+
+* Barton, E. E., Pustejovsky, J. E., Maggin, D. M., & Reichow, B. (2017). [A meta-analysis of technology-aided instruction and intervention for students with ASD.](http://dx.doi.org/10.1177/0741932517729508) _Remedial and Special Education_. In Press.
+* Maggin, D. M., Pustejovsky, J. E., & Johnson, A. H. (2017). A meta-analysis of school-based group contingency interventions for students with challenging behavior: An update. _Remedial and Special Education_. In Press. [Preprint](https://osf.io/hvuw5/). [Supporting materials](https://osf.io/8ygts/)
+* Common, E. A., Lane, K. L., Pustejovsky, J. E., Johnson, A. H., & Johl, L. E. (2017). [Functional assessment-based interventions for students with or at-risk for high incidence disabilities: Field-testing single-case synthesis methods](http://dx.doi.org/10.1177/0741932517693320). _Remedial and Special Education_. In Press.
+* Pustejovsky, J. E., & Ferron, J. M. (2017). Research synthesis and meta-analysis of single-case designs. In J. M. Kauffman, D. P. Hallahan, & P. C. Pullen (Eds.), _Handbook of Special Education, 2nd Edition_. New York, NY: Routledge. 
+* Maggin, D. M., Lane, K. L., & Pustejovsky, J. E. (2017). Introduction to the special issue on single-case systematic reviews and meta-analysis. _Remedial and Special Education_. In Press.
+* Pustejovsky, J. E. & Swan, D. (2015). [Four methods for analyzing partial interval recording data, with application to single-case research](http://doi.org/10.1080/00273171.2015.1014879). _Multivariate Behavioral Research, 50_(3), 365-380. [Preprint]({{ site.url }}/files/4-PIR-methods-MBR.pdf). [Supporting materials]({{ site.url }}/files/4-PIR-Methods-Appendix.pdf).
+* Pustejovsky, J. E. & Runyon, C. (2014). Alternating renewal process models for behavioral observation: Simulation methods and validity implications. _Behavioral Disorders, 39_(4), 211-227. [Postprint]({{ site.url }}/files/Pustejovsky-Runyon-2015.pdf). Software available in the [ARPobservation package]({{site.url}}/software).
+* Pustejovsky, J. E. (2014). [Measurement-comparable effect sizes for single-case studies of free-operant behavior.](http://doi.org/10.1037/met0000019) _Psychological Methods, 20_(3), 342-359. [Postprint]({{ site.url }}/files/Measurement-comparable-ES.pdf). [Supporting materials]({{ site.url }}/files/Measuerment-comparable-ES-Appendix.pdf).
+* Pustejovsky, J. E., Hedges, L. V., & Shadish, W. R. (2014). [Design-comparable effect sizes in multiple baseline designs: A general modeling framework.](http://doi.org/10.3102/1076998614547577) _Journal of Educational and Behavioral Statistics, 39_(5), 368-393. [Postprint]({{ site.url }}/files/Effect-sizes-in-multiple-baseline-designs-JEBS.pdf). [Supporting materials]({{ site.url }}/files/Effect-sizes-in-multiple-baseline-designs-Simulation-results.pdf). Software available in the [scdhlm package]({{site.url}}/software).
+* Hedges, L. V, Pustejovsky, J. E., & Shadish, W. R. (2013). [A standardized mean difference effect size for multiple baseline designs.](http://doi.org/10.1002/jrsm.1086) _Research Synthesis Methods, 4_(4), 324-341. Software available in the [scdhlm package]({{site.url}}/software).
+* Hedges, L. V, Pustejovsky, J. E., & Shadish, W. R. (2012). [A standardized mean difference effect size for single case designs.](http://doi.org/10.1002/jrsm.1052) _Research Synthesis Methods, 3_, 224–239. Software available in the [scdhlm package]({{site.url}}/software).
+
 ### Robust variance estimation
 
 * Pustejovsky, J. E. & Tipton, E. (2016). [Small sample methods for cluster-robust variance estimation and hypothesis testing in fixed effects models](http://doi.org/10.1080/07350015.2016.1247004). _Journal of Business and Economic Statistics_. In Press. 
@@ -15,22 +29,9 @@ permalink: /publications/
 
 ### Meta-analysis applications 
 
-* Maggin, D. M., Pustejovsky, J. E., & Johnson, A. H. (2017). A meta-analysis of school-based group contingency interventions for students with challenging behavior: An update. _Remedial and Special Education_. In Press. [Preprint](https://osf.io/hvuw5/). [Supporting materials](https://osf.io/8ygts/)
-* Common, E. A., Lane, K. L., Pustejovsky, J. E., Johnson, A. H., & Johl, L. E. (2017). [Functional assessment-based interventions for students with or at-risk for high incidence disabilities: Field-testing single-case synthesis methods](http://dx.doi.org/10.1177/0741932517693320). _Remedial and Special Education_. In Press.
 * Jim, H. S., Pustejovsky, J. E., Park, C. L., Danhauer, S. C., Sherman, A. C., Fitchett, G., Merluzzi, T. V., Munoz, A. R., George, L., Snyder, M. A., & Salsman, J. A. (2015). [Religion, spirituality, and physical health in cancer patients: A meta-analysis.](http://doi.org/10.1002/cncr.29353) _Cancer, 121_(21), 3760-3768. 
 * Salsman, J. M., Pustejovsky, J. E., Jim, H. S., Munoz, A. R., Merluzzi, T. V., George, L., Park, C. L., Danhauer, S. C., Sherman, A. C., Snyder, M. A., & Fitchett, G. (2015). [A meta-analytic approach to examine the relationship between religion/spirituality and mental health in cancer.](http://doi.org/10.1002/cncr.29350) _Cancer, 121_(21), 3769-3778.
 * Sherman, A. C., Merluzzi, T. V., Pustejovsky, J. E., Park, C. L., George, L., Fitchett, G., Jim, H. S., Munoz, A. R., Danhauer, S. C., Snyder, M. A., & Salsman, J. M. (2015). [A meta-analytic review of religious or spiritual involvement and social health among cancer patients.](http://doi.org/10.1002/cncr.29352) _Cancer, 121_(21), 3779-3788.
-
-### Single-case research and behavioral observation
-
-* Pustejovsky, J. E., & Ferron, J. M. (2017). Research synthesis and meta-analysis of single-case designs. In J. M. Kauffman, D. P. Hallahan, & P. C. Pullen (Eds.), _Handbook of Special Education, 2nd Edition_. New York, NY: Routledge. 
-* Maggin, D. M., Lane, K. L., & Pustejovsky, J. E. (2017). Introduction to the special issue on single-case systematic reviews and meta-analysis. _Remedial and Special Education_. In Press.
-* Pustejovsky, J. E. & Swan, D. (2015). [Four methods for analyzing partial interval recording data, with application to single-case research](http://doi.org/10.1080/00273171.2015.1014879). _Multivariate Behavioral Research, 50_(3), 365-380. [Preprint]({{ site.url }}/files/4-PIR-methods-MBR.pdf). [Supporting materials]({{ site.url }}/files/4-PIR-Methods-Appendix.pdf).
-* Pustejovsky, J. E. & Runyon, C. (2014). Alternating renewal process models for behavioral observation: Simulation methods and validity implications. _Behavioral Disorders, 39_(4), 211-227. [Postprint]({{ site.url }}/files/Pustejovsky-Runyon-2015.pdf). Software available in the [ARPobservation package]({{site.url}}/software).
-* Pustejovsky, J. E. (2014). [Measurement-comparable effect sizes for single-case studies of free-operant behavior.](http://doi.org/10.1037/met0000019) _Psychological Methods, 20_(3), 342-359. [Postprint]({{ site.url }}/files/Measurement-comparable-ES.pdf). [Supporting materials]({{ site.url }}/files/Measuerment-comparable-ES-Appendix.pdf).
-* Pustejovsky, J. E., Hedges, L. V., & Shadish, W. R. (2014). [Design-comparable effect sizes in multiple baseline designs: A general modeling framework.](http://doi.org/10.3102/1076998614547577) _Journal of Educational and Behavioral Statistics, 39_(5), 368-393. [Postprint]({{ site.url }}/files/Effect-sizes-in-multiple-baseline-designs-JEBS.pdf). [Supporting materials]({{ site.url }}/files/Effect-sizes-in-multiple-baseline-designs-Simulation-results.pdf). Software available in the [scdhlm package]({{site.url}}/software).
-* Hedges, L. V, Pustejovsky, J. E., & Shadish, W. R. (2013). [A standardized mean difference effect size for multiple baseline designs.](http://doi.org/10.1002/jrsm.1086) _Research Synthesis Methods, 4_(4), 324-341. Software available in the [scdhlm package]({{site.url}}/software).
-* Hedges, L. V, Pustejovsky, J. E., & Shadish, W. R. (2012). [A standardized mean difference effect size for single case designs.](http://doi.org/10.1002/jrsm.1052) _Research Synthesis Methods, 3_, 224–239. Software available in the [scdhlm package]({{site.url}}/software).
 
 ### Other
 
