@@ -5,4 +5,5 @@
 
 .cover {height:42em;}
 nav a {	font-weight: normal;}
+nav a b {text-transform: uppercase;}
 nav {text-align: center;}
