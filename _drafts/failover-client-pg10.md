@@ -33,31 +33,41 @@ Elle est suffisamment importante pour que je détaille de manière pratique son 
 <!-- ### Quelle solution de HA ? -->
 
 At the time, I was going through different automated failover solutions.
-Indeed, I have been 
-Je cherche actuellement une solution de bascule automatique.
-En effet, les demandes pour de la haute disponibilité avec une bascule automatique en cas de panne sont plus en plus demandées chez mon client actuel.
+Indeed, I have been increasingly receiving demands for an automatic failover solution.
+<!--Je cherche actuellement une solution de bascule automatique.
+En effet, les demandes pour de la haute disponibilité avec une bascule automatique en cas de panne sont plus en plus demandées chez mon client actuel.-->
 
-Un test rapide me permit d'éliminer Stolon.
+A quick test made me put aside Stolon.
+Patroni as well was disqualified. 
+Eventhough the 2 solutions seem to work pretty well, they were just not what I was looking for : they do not allow to be embedded inside the home made tool used by my client.
+The issue was the context and nothing else here.
+<!--Un test rapide me permit d'éliminer Stolon. -->
 <!-- SAS&nbsp;: Test de quoi ? -->
-De même, Patroni pris rapidement le chemin des disqualifiés.
+<!-- De même, Patroni pris rapidement le chemin des disqualifiés.
 Bien que les 2 solutions semblent fonctionner assez bien, elles n'étaient tout simplement pas ce que je recherchais&nbsp;: 
 elles ne permettent pas d'être embarquées dans notre solution interne de déploiement chez le client.
-C'est donc ce contexte spécifique qui me force ici à mettre de côté ces solutions.
+C'est donc ce contexte spécifique qui me force ici à mettre de côté ces solutions. -->
 <!-- SAS&nbsp;: Il faut être plus précis. On peut toujours penser que les solutions ne sont pas bonnes,
   alors que c'est peut-être le contexte le problème -->
 
-Evidemment, Pacemaker/Corosync était en lice mais le failover sur un autre site était en cause&nbsp;: les options du cluster linux disponibles chez le client ne nous permettent pas de reprendre l'activité en basculant sur notre site de secours.
+Obviouslty, Pacemaker/Corosync was considered but failover to a different site was the matter : the options made available to us the cluster linux were not allowing us to restart activity to our safety site. 
+Moreover, managment of this ressource would have been given to AdminSys department and therefore outside of our jurisdiction.
+<!--Evidemment, Pacemaker/Corosync était en lice mais le failover sur un autre site était en cause&nbsp;: les options du cluster linux disponibles chez le client ne nous permettent pas de reprendre l'activité en basculant sur notre site de secours. -->
 <!-- SAS&nbsp;: Pas compris -->
-De plus la gestion serait alors dédiée à la partie adminsys, donc en dehors de notre périmètre.
+<!--De plus la gestion serait alors dédiée à la partie adminsys, donc en dehors de notre périmètre.-->
 
-Dernière option évidente&nbsp;: `REPMGR`.
+Last obvious solution at the time : `REPMGR`.
+<!--Dernière option évidente&nbsp;: `REPMGR`. -->
 
-Il me fallut un certains temps pour l'installer et arriver à la partie failover.
+It took me some time to install and get to the failover part.
+Finally, I managed to set up a 3 node cluster (+1 witness), eventhough network failures were badly handled.
+I know that `REPMGR` is managing database replication on top of automatic failover but still, this is not something that can be cast aside and have no repercutions.
+<!--Il me fallut un certains temps pour l'installer et arriver à la partie failover.
 Finalement, j'avais ma configuration à 3 noeuds (+ 1 witness), même si les incidents réseaux étaient mal gérés.
-Je sais que `REPMGR` n'est qu'une bascule de base de données, mais dans le choix d'une solution de haute disponibilité, c'est un aspect non négligeable.
+Je sais que `REPMGR` n'est qu'une bascule de base de données, mais dans le choix d'une solution de haute disponibilité, c'est un aspect non négligeable.-->
 
-
-Pour info voici un extrait de repmgr.conf.
+So this is part of repmgr.conf
+<!--Pour info voici un extrait de repmgr.conf.-->
 
 ~~~
 cluster=test_repmgr
@@ -79,7 +89,8 @@ retry_promote_interval_secs=10
 
 ~~~
 
-Ce qui est donc attendu est 5 + 3*5 = 20 secondes de downtime environ pour la base de données.
+We expect roughly 5 + 3*5 = 20 secondes of downtime for the database.
+<!--Ce qui est donc attendu est 5 + 3*5 = 20 secondes de downtime environ pour la base de données.-->
 
 
 
