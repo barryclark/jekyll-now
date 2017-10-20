@@ -1,6 +1,5 @@
         <header  id="page-header" class="cover" style="background-image: url('{{ site.baseurl }}/img/thumb.jpg');">
 			<div>
-				<h1>{{ site.name }}</h1>
-				{% if site.description %}<h3><small>{{ site.description }}</small></h3>{% endif %}
+				<h1>{{ site.name }}<br class="shown-phone"><small>{% if site.description %}{{ site.description }}{% endif %}</small></h1>
 			</div>
 		</header>
