@@ -3,8 +3,8 @@ layout: default
 ---
 
   	{% include partials/navigation/nav-section.html %}
-<main id="main" role="main"  class="content filled hard-grey">
-	<div class="posts layout">
+<main id="page-main" role="main">
+	<div id="layout">
   	{% for post in site.posts %}
     	<article class="post">
     	{% if post.day %}
@@ -34,15 +34,12 @@ layout: default
       	<a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Llegir Més</a>
       	</section>
     	</article>
-<hr>
   	{% endfor %}
 	</div>
-</main>
-	<div class="universe flat grey">
-	<hr>
+	<section>
 	{% include partials/suscribe.html %}
-	</div>
-	<div class="universe flat black s">
-	<hr>
+	</section>
+	<section>
     {% include svg-icons.html %}
-	</div>
+	</section>
+</main>
