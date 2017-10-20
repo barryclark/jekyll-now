@@ -57,57 +57,57 @@ At last, create a initial set which is going to be used as a baseline.
 A **set** is a series of tests.
 For a given configuration of pgbench-tools and of the cluster, the tools lauches a benchmark.
 That way, everything can be categorised.
-Le mot **Scale** qui peut se traduire littéralement par échelle.
-On y fait parfois référence avec le terme "scaling factor" (facteur d'échelle).
-Il correspond à un coefficient multiplicateur sur la taille de la base de données `pgbench`.
 
-Les transactions par seconde seront abrégées par **tps**.
+**Scale** refers to the size of the database, you can see sometimes "scaling factor" in replacement.
+It is a factor that multiplies the default size of pgbench database.
 
-La valeur appelée **client** est le nombre d'accès concurrents à l'instance créés par l'outil pour simuler le nombre de clients.
+Transactions per second are abreviated by **tps**.
 
-La **latence** est le temps que met le client à rendre la main après l'envoi de la transaction.
+The value of **client** is the number of concurrent access to the database.
 
-Le tripyptique **avg_latency**, **max_latency**, **90%<**&nbsp;: respectivement latence moyenne, latence maximale et la valeur de latence du 9e décile.
-Ils décrivent la répartition de la latence.
+**Latency** is the time the client takes finish transaction and give back permission to send another query.
 
-## Démarrage rapide
+The three values **avg_latency**, **max_latency**, **90%<**&nbsp;: are respectively average latency, maximum latency, and latency of 90th percentile. 
+They describe distribution of latency.
 
-Les scripts importants pour bien démarrer sont&nbsp;:
+## Quick start
+
+The important scripts are&nbsp;:
 
 * **newset**&nbsp;:
-	* `./newset` donne la liste des sets qui ont été créés&nbsp;;
-	* `./newset 'nom_du_test'` ajoute un nouveau set à la liste.
-* **runset**&nbsp;: `./runset` lance la série de tests&nbsp;;
-* **config**&nbsp;: donne la configuration à utiliser pour les tests, il est éditable via votre outil préféré (vim, nano, emacs)&nbsp;:
-   * contient notamment les paramètres de connexion à l'instance&nbsp;;
-   * la base utilisée pour le banc de test (par défaut `pgbench`)&nbsp;;
-   * la base utilisée pour entreposer les résultats (par défaut `results`)&nbsp;;
-   * le type de test (script) à effectuer (voir plus bas pour le détail). Et le répertoire dans lequel il se trouve (standard&nbsp;: 8.4 à 9.5 ou hors standard&nbsp;: 8.3 ou 9.6)&nbsp;;
-   * les échelles de données (par défaut&nbsp;: 1, 10, 100, 1000)&nbsp;;
-   * le nombre de fois qu'il faut reproduire les tests (par défaut 3)&nbsp;;
-   * ainsi que le disque à monitorer pour collecter les statistiques système (par défaut `sda`).
-* **webreport**&nbsp;: `./webreport` génère un rapport `index.html` avec des graphiques GNUplot. Il se lance automatiquement à la fin de la série de tests.
+	* `./newset` gives a list of all the set created&nbsp;;
+	* `./newset 'nom_du_test'` adds another set to the list.
+* **runset**&nbsp;: `./runset` lauches the tests&nbsp;;
+* **config**&nbsp;: is the file that contains the necessary informations for the tests. You can edit this with your favourite tool (vim, nano, emacs)&nbsp;:
+   * contains the connection string&nbsp;;
+   * database for the bench (default value is `pgbench`)&nbsp;;
+   * database used to store the results (default value is `results`)&nbsp;;
+   * type of test (script of bench) to launch (details are given further). And directory in which it remains (standard&nbsp;: 8.4 à 9.5 or out the standard&nbsp;: 8.3 ou 9.6)&nbsp;;
+   * scales (défaut&nbsp;: 1, 10, 100, 1000)&nbsp;;
+   * number of times test are performed (défaut 3)&nbsp;;
+   * and the device to monitore for OS statistics (défaut `sda`).
+* **webreport**&nbsp;: `./webreport` generates a report `index.html` with GNUplot graphics. It lauches automatically at the end of a set. You can launch it manually if the set you are in is not currently finished and you cannot wait.
 
-## Le rapport
+## The report
 
-Il comporte une partie vue générale&nbsp;:
+The is fisrt a part with a general view&nbsp;:
 
-   * un graphique avec deux courbes indiquant les tps et la taille de la base en fonction de l'échelle (attention, c'est la **valeur moyenne de tous les tests** qui est utilisée)&nbsp;;
-   * un graphique avec une seule courbe indiquant les tps en fonction des clients. (Attention, c'est la **valeur moyenne de tous les tests** qui est utilisée)&nbsp;;
-   * un graphique en 3D avec également la moyenne des résultats permettant de représenter les tps par client et facteur d'échelle&nbsp;;
-   * un graphique comparatif des tests avec une courbe par test sur un même graphique représentant l'évolution des tps en fonction du facteur d'échelle et les tps en fonction du nombre de clients.
-
-Vous trouverez ci-dessous deux exemples de graphiques produits&nbsp;:
+   * a graph with 2 curves showing tps and size of database depending on scale (carefull this is  **the average value on all the tests**)&nbsp;;
+   * a graph with 1 curve showing tps depending on amount of clients (**average**)&nbsp;;
+   * a 3D graph, showing tps, client and scale&nbsp;;
+   * a comparison graph with 1 curve for each set on the same showing tps depending on scaling factor and tps depending on client number.
+   
+Here are some examples of 2 graphs&nbsp;:
 ![Exemple de tps vs Taille BDD et Facteur d'échelle](/images/post/pgbench-tools-2017/graph1_exple.png)
 
 ![Exemple de graph en 3d](/images/post/pgbench-tools-2017/graph-3d-pgb-tools.png)
 
-Ensuite pour chaque test, un résultat plus détaillé est produit comportant&nbsp;:
+The second part is for each set a more detailled result&nbsp;:
 
-   * un premier graphique tps par taille de base et facteur d'échelle (sur les données réelles et non plus sur les moyennes) puis un second avec l'évolution des **tps** en fonction du nombre de clients&nbsp;;
-   * deux tableaux "résumé" (summary) un par facteur d'échelle et un par nombre de clients (`set`, `scale`, `tps`, `avg_latency`, `90%\<`, `max_latency`)&nbsp;;
-   * un tableau "résumé" (summary) par nombre de clients, échelle et taux limite (`set`, `scale`, `clients`, `rate_limit`, `tps`, `avg_latency`, `90%\<`, `max_latency`)&nbsp;;
-   * un tableau détaillé avec les valeurs significatives pour chaque test (`set`, `test`, `scale`, `clients`, `rate_limit`, `tps`, `max_latency`, `chkpts`, `buf_check`, `buf_clean`, `buf_backend`, `buf_alloc`, `max_clean`, `backend_sync`, `max_dirty`, `wal_written`, `cleanup`).
+   * a first graph tps/db size and scale on the average of each test of each set then a second showing **tps**/client in the same manner&nbsp;;
+   * 2 tables summing up the set&nbsp;: one by scaling factore and the other by client (showing `set`, `scale`, `tps`, `avg_latency`, `90%\<`, `max_latency`)&nbsp;;
+   * a summary table by clients, scale and rate limit (`set`, `scale`, `clients`, `rate_limit`, `tps`, `avg_latency`, `90%\<`, `max_latency`)&nbsp;;
+   * a detailed table with relevant values for each test (`set`, `test`, `scale`, `clients`, `rate_limit`, `tps`, `max_latency`, `chkpts`, `buf_check`, `buf_clean`, `buf_backend`, `buf_alloc`, `max_clean`, `backend_sync`, `max_dirty`, `wal_written`, `cleanup`).
 
 
 ![exemple tableau pour le set 9](/images/post/pgbench-tools-2017/tableau-moyennes-p-echelle.png)
