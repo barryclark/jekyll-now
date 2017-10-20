@@ -732,7 +732,6 @@ nav label {
 	border: var(--one-pixel) solid transparent;
 	display:inline;
 	display: inline-block;
-	font-weight: bold;
 	padding: var(--fifteen-pixel);
 	text-decoration: none;
 }
