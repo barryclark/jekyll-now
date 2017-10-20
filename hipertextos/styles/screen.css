@@ -40,8 +40,8 @@ body {
 	background-color: var(--color-white);
 	color: var(--color-black);
 	font-family: var(--font-default);
-	font-size: var(--font-size);
-	line-height: var(--line-size);
+	font-size: var(--twenty-pixel);
+	line-height: var(--thirtytwo-pixel);
 	-webkit-hyphens: auto;
 	-moz-hyphens: auto;
 	hyphens: auto;
@@ -105,17 +105,17 @@ h3,
 h4, 
 h5, 
 h6 {
-	border: var(--border-size) solid transparent;
+	border: var(--one-pixel) solid transparent;
 	font-weight: bold;
-	line-height: var(--headline-size);
-	margin: 0 0 var(--linepadded-size);
+	line-height: var(--sixtyfour-pixel);
+	margin: 0 0 var(--thirty-pixel);
 	padding: 0;
 	text-rendering: optimizeLegibility;
 }
 h4,
 h5,
 h6 {
-	line-height: var(--line-size);
+	line-height: var(--thirtytwo-pixel);
 }
 h1 {
 	font-size: 3em;
@@ -162,7 +162,7 @@ h3 u:after,
 h4 u:after,
 h5 u:after,
 h6 u:after {
-	border: var(--base-size) solid currentColor;
+	border: var(--four-pixel) solid currentColor;
 	content: ' ';
 	display: block;
 	position: absolute;
@@ -191,12 +191,12 @@ h6 u:after {
 	h1, 
 	h2, 
 	h3 {
-		line-height: var(--headline-size);
+		line-height: var(--sixtyfour-pixel);
 	}
 	h4,
 	h5,
 	h6 {
-		line-height: var(--line-size);
+		line-height: var(--thirtytwo-pixel);
 	}
 }
 
@@ -204,13 +204,13 @@ h6 u:after {
 
 hr, 
 br {
-	border: var(--border-size) solid transparent;
-	height: var(--line-size);
+	border: var(--one-pixel) solid transparent;
+	height: var(--thirtytwo-pixel);
 }
 hr {
 	clear: both;
 	display: block;
-	margin-bottom: var(--linepadded-size);
+	margin-bottom: var(--thirty-pixel);
 }
 
 /* Paragraphs & text */
@@ -228,12 +228,12 @@ b {
 }
 blockquote, cite {
 	font-weight: 200;
-	letter-spacing: var(--border-size);
+	letter-spacing: var(--one-pixel);
 }
 blockquote {
 	border-left: .5em solid currentColor;
-	margin: var(--line-size) 0;
-	padding: var(--line-size);
+	margin: var(--thirtytwo-pixel) 0;
+	padding: var(--thirtytwo-pixel);
 }
 cite {
 	clear: both;
@@ -254,21 +254,21 @@ i {
 }
 kbd {
 	background-color: transparent;
-	border: var(--border-size) solid currentColor;
-	border-radius: var(--base-size);
+	border: var(--one-pixel) solid currentColor;
+	border-radius: var(--four-pixel);
 	display: inline;
 	padding: .15em .25em;
 }
 mark {
 	background: inherit;
-	border: var(--border-size) solid currentColor;
+	border: var(--one-pixel) solid currentColor;
 	font-weight: bold;
 }
 p,
 pre,
 code {
-	font-size: var(--font-size);
-	line-height: var(--line-size);
+	font-size: var(--twenty-pixel);
+	line-height: var(--thirtytwo-pixel);
 }
 code, 
 pre {
@@ -276,19 +276,19 @@ pre {
 }
 pre {
 	background: var(--color-translucentwhite);
-	border: var(--border-size) solid currentColor;
-	padding: 0 var(--base-size);
+	border: var(--one-pixel) solid currentColor;
+	padding: 0 var(--four-pixel);
 	word-break: break-all;
 	word-wrap: break-word;
 	white-space: pre;
 	white-space: pre-wrap;
 }
 q {
-	letter-spacing: var(--border-size);
+	letter-spacing: var(--one-pixel);
 }
 small {
-	font-size: var(--indent-size);
-	line-height: var(--line-size);
+	font-size: var(--fifteen-pixel);
+	line-height: var(--thirtytwo-pixel);
 }
 strong {
 	color: inherit;
@@ -308,7 +308,7 @@ u {
 	text-decoration: underline;
 }
 time {
-	letter-spacing: var(--border-size);
+	letter-spacing: var(--one-pixel);
 }
 
 /* ------------------------------------------------------------ Lists */
@@ -316,14 +316,14 @@ time {
 /* Default lists */
 
 ol, ul {
-	border: var(--border-size) solid transparent;
-	line-height: var(--line-size);
-	margin: 0 0 var(--linepadded-size);
+	border: var(--one-pixel) solid transparent;
+	line-height: var(--thirtytwo-pixel);
+	margin: 0 0 var(--thirty-pixel);
 }
 li {
 	list-style: disc;
 	list-style-position: inside;
-	padding-left: var(--indent-size);
+	padding-left: var(--fifteen-pixel);
 }
 ol li {
 	list-style-type: decimal;
@@ -332,17 +332,17 @@ ol li {
 /* Definition lists */
 
 dt {
-	border: var(--border-size) solid transparent;
+	border: var(--one-pixel) solid transparent;
 	font-weight: bold;
 }
 dd {
-	border: var(--border-size) solid transparent;
+	border: var(--one-pixel) solid transparent;
 }
 
 /* Summary & details */
 
 summary {
-	border: var(--border-size) solid transparent;
+	border: var(--one-pixel) solid transparent;
 	font-weight: bold;
 }
 summary:focus {
@@ -370,8 +370,8 @@ select,
 textarea,
 [contenteditable="true"] {
 	background-color: transparent;
-	font-size: var(--font-size);
-	line-height: var(--line-size);
+	font-size: var(--twenty-pixel);
+	line-height: var(--thirtytwo-pixel);
 	position: relative;
 }
 button,
@@ -384,11 +384,11 @@ textarea {
 
 input,
 select {
-	height: var(--line-size);
-	padding: 0 var(--grid-size);
+	height: var(--thirtytwo-pixel);
+	padding: 0 var(--sixteen-pixel);
 }
 input:invalid {
-	border: var(--border-size) solid currentColor;
+	border: var(--one-pixel) solid currentColor;
 	color: var(--color-black);
 }
 input[type=radio] {
@@ -415,15 +415,15 @@ form {
 fieldset,
 label {
 	background: transparent;
-	padding: 0 var(--base-size);
+	padding: 0 var(--four-pixel);
 }
 
 /* Indicators */
 
 progress, meter {
-	border: var(--border-size) solid currentColor;
-	height: var(--line-size);
-	margin: var(--linepadded-size) 0;
+	border: var(--one-pixel) solid currentColor;
+	height: var(--thirtytwo-pixel);
+	margin: var(--thirty-pixel) 0;
 	width: 100%;
 }
 progress::-webkit-progress-bar,
@@ -447,12 +447,12 @@ meter::-moz-meter-bar {
 
 select {
 	background-color: transparent;
-	border: var(--border-size) solid currentColor;
+	border: var(--one-pixel) solid currentColor;
 	-webkit-appearance: none;
 	-moz-appearance: none;
 }
 select:after {
-	border: var(--border-size) solid currentColor;
+	border: var(--one-pixel) solid currentColor;
 	color: inherit;
 	content: "+";
 	font-weight: bold;
@@ -463,10 +463,10 @@ select:after {
 option {}
 optgroup {}
 textarea {
-	border: var(--border-size) solid currentColor;
+	border: var(--one-pixel) solid currentColor;
 	cursor: text;
 	overflow: auto;
-	padding: 0 var(--grid-size);
+	padding: 0 var(--sixteen-pixel);
 	width: 100%;
 }
 
@@ -475,7 +475,7 @@ textarea {
 input:focus,
 textarea:focus,
 [contenteditable="true"]:focus {
-	border-radius: var(--base-size);
+	border-radius: var(--four-pixel);
 	box-shadow: inset 0 0 0.25em rgba(0,0,255,0.1), 0 0 .15em var(--color-blue);
 	color: inherit;
 	outline: 0;
@@ -483,19 +483,19 @@ textarea:focus,
 [contenteditable="true"]:focus:before {
 	content:'\270E';
 	font-family: var(--font-default);
-	font-size: var(--line-size);
+	font-size: var(--thirtytwo-pixel);
 	position: absolute;
-	top: 0; right: calc(-1*var(--headline-size));
+	top: 0; right: calc(-1*var(--sixtyfour-pixel));
 }
 
 /* Input and emphatic info */
 
 input + em {
 	background: var(--color-translucentblack);
-	border: var(--border-size) solid currentColor;
+	border: var(--one-pixel) solid currentColor;
 	color: var(--color-white);
-	margin-left: -var(--border-size);
-	padding: calc(3 * var(--border-size)) var(--grid-size);
+	margin-left: -var(--one-pixel);
+	padding: calc(3 * var(--one-pixel)) var(--sixteen-pixel);
 }
 
 /* strong input, radio & checkbox */
@@ -511,23 +511,23 @@ strong input[type=radio] + label:before {
 	cursor: pointer;
 	display: block; 
 	float: left;
-	font-size: var(--line-size);
+	font-size: var(--thirtytwo-pixel);
 	font-weight: bold;
-	height: var(--linepadded-size);
+	height: var(--thirty-pixel);
 	margin: 0 1em 0 0;
-	width: var(--linepadded-size);
+	width: var(--thirty-pixel);
 }
 strong input {
-	border-bottom: var(--border-size) solid currentColor;
+	border-bottom: var(--one-pixel) solid currentColor;
 	color: inherit;
 	display: block;
-	padding: var(--line-size);
+	padding: var(--thirtytwo-pixel);
 	width: 100%;
 }
 strong input + label {
 	display: block;
 	font-weight: bold;
-	padding: var(--line-size) 0;
+	padding: var(--thirtytwo-pixel) 0;
 }
 strong [type=checkbox] + label, 
 strong [type=radio] + label {
@@ -555,7 +555,7 @@ strong input[type=radio]:checked + label:before {
 	content: '\2713';
 }
 strong select {
-	height: var(--headline-size);
+	height: var(--sixtyfour-pixel);
 	width: 100%;
 }
 
@@ -563,30 +563,30 @@ strong select {
 
 [data-mode=switcher] [type=checkbox] + label,
 [data-mode=switcher] [type=checkbox] + label span {
-	border: var(--border-size) solid currentColor;
-	border-radius: var(--line-size);
+	border: var(--one-pixel) solid currentColor;
+	border-radius: var(--thirtytwo-pixel);
 	cursor: pointer;
 	display: block;
 	float: left;
-	height: var(--line-size);
+	height: var(--thirtytwo-pixel);
 	margin-right: 1em;
 	padding: 0;
-	width: var(--headline-size);
+	width: var(--sixtyfour-pixel);
 }
 [data-mode=switcher] [type=checkbox] + label {
 	background-color: #ddd;
 }
 [data-mode=switcher] [type=checkbox] + label span {
 	background-color: white;
-	height: var(--line-size);
-	width: var(--line-size);
+	height: var(--thirtytwo-pixel);
+	width: var(--thirtytwo-pixel);
 }
 [data-mode=switcher] [type=checkbox]:checked + label {
 	background-color: var(--color-green);
 	color: var(--color-green);
 }
 [data-mode=switcher] [type=checkbox]:checked + label span {
-	margin-left: var(--line-size);
+	margin-left: var(--thirtytwo-pixel);
 }
 
 
@@ -609,10 +609,10 @@ td {
 }
 table {
 	background-color: transparent;
-	border: var(--border-size) solid currentColor;
+	border: var(--one-pixel) solid currentColor;
 	border-spacing: 0;
-	line-height: var(--headline-size);
-	margin: var(--quarter-size) 0;
+	line-height: var(--sixtyfour-pixel);
+	margin: var(--seven-pixel) 0;
 	width: 100%;
 }
 tbody {}
@@ -624,8 +624,8 @@ tfoot {
 	background-color: var(--color-translucentwhite);
 }
 td, th {
-	border-bottom: var(--border-size) solid currentColor;
-	padding: 0 var(--indent-size);
+	border-bottom: var(--one-pixel) solid currentColor;
+	padding: 0 var(--fifteen-pixel);
 }
 th { 
 	background: var(--color-translucentwhite);
@@ -642,13 +642,13 @@ em label,
 em button,
 em div a {
 	background: var(--color-translucentwhite);
-	border: var(--border-size) solid currentColor;
+	border: var(--one-pixel) solid currentColor;
 	cursor: pointer;
 	display: inline;
 	display: inline-block;
-	font-size: var(--font-size);
-	line-height: var(--line-size);
-	padding: var(--grid-size);
+	font-size: var(--twenty-pixel);
+	line-height: var(--thirtytwo-pixel);
+	padding: var(--sixteen-pixel);
 	text-align: center;
 	text-decoration: none;
 	vertical-align: middle;
@@ -656,15 +656,15 @@ em div a {
 em small a,
 em small button,
 em small label {
-	height: var(--headline-size);
-	font-size: var(--font-size);
+	height: var(--sixtyfour-pixel);
+	font-size: var(--twenty-pixel);
 	font-style: normal;
-	line-height: var(--line-size);
-	padding: var(--indent-size);
+	line-height: var(--thirtytwo-pixel);
+	padding: var(--fifteen-pixel);
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;	
-	width: var(--headline-size);
+	width: var(--sixtyfour-pixel);
 	text-align: center;
 }
 u em a,
@@ -710,8 +710,8 @@ strong em button {
 	border-radius: 0;
 	float: left;
 	margin: 0;
-	margin-left: -var(--border-size);
-	margin-top: -var(--border-size);
+	margin-left: -var(--one-pixel);
+	margin-top: -var(--one-pixel);
 	position: relative;
 }
 
@@ -721,19 +721,19 @@ strong em button {
 
 nav {
 	background-color: ;
-	border-bottom: var(--border-size) solid currentColor;
+	border-bottom: var(--one-pixel) solid currentColor;
 	display: block;
-	line-height: var(--line-size);
-	margin-bottom: -var(--indent-size);
+	line-height: var(--thirtytwo-pixel);
+	margin-bottom: -var(--fifteen-pixel);
 	position: relative;
 }
 nav a,
 nav label {
-	border: var(--border-size) solid transparent;
+	border: var(--one-pixel) solid transparent;
 	display:inline;
 	display: inline-block;
 	font-weight: bold;
-	padding: var(--indent-size);
+	padding: var(--fifteen-pixel);
 	text-decoration: none;
 }
 article > nav a,
@@ -747,8 +747,8 @@ nav label:hover {
 	text-decoration: underline;
 }
 nav ul {
-	border: var(--border-size) solid transparent;
-	padding: 0 0 var(--indent-size);
+	border: var(--one-pixel) solid transparent;
+	padding: 0 0 var(--fifteen-pixel);
 }
 nav li {
 	list-style: none;
@@ -759,17 +759,17 @@ nav li label {
 }
 nav a img, nav a svg,
 nav label img, nav label svg {
-	height: var(--font-size);
-	margin: 0 var(--indent-size);
-	width: var(--font-size);
+	height: var(--twenty-pixel);
+	margin: 0 var(--fifteen-pixel);
+	width: var(--twenty-pixel);
 }
 article footer + nav,
 aside footer + nav,
 section footer + nav,
 dialog > nav {
-	border-top: var(--border-size) solid currentColor;
-	border-bottom: var(--border-size) solid transparent;
-	padding: var(--font-size);
+	border-top: var(--one-pixel) solid currentColor;
+	border-bottom: var(--one-pixel) solid transparent;
+	padding: var(--twenty-pixel);
 	text-align: right;
 }
 
@@ -779,7 +779,7 @@ nav form {
 	display: block;
 	position: absolute;
 	text-align: right;
-	top: var(--indent-size);
+	top: var(--fifteen-pixel);
 	right: 0;
 	width: 8em;
 	z-index: 2;
@@ -792,7 +792,7 @@ nav li form {
 nav form input,
 nav form input:focus {
 	background-color: var(--color-white);
-	border-radius: var(--font-size);
+	border-radius: var(--twenty-pixel);
 	position: relative;
 	text-align: center;
 }
@@ -807,12 +807,13 @@ nav form input[type=text]:focus {
 }
 nav form input[type=submit] {
 	background: var(--color-white);
-	border: calc(2*var(--border-size)) solid currentColor;
+	border: var(--two-pixel) solid currentColor;
 	color: var(--color-grey);
 	display: none;
-	height: calc(var(--line-size) + 5px); 	
+	height: var(--fourtytwo-pixel); 	
+	line-height: var(--thirtytwo-pixel); 	
 	margin-left: -2.25em;
-	padding: 0 var(--indent-size);
+	padding: 0 var(--fifteen-pixel);
 	z-index: 10;
 }
 nav form input:focus ~ input[type=submit] {
@@ -831,10 +832,13 @@ nav label {
 	nav form {
 		display: block;
 		position: relative;
-		margin-bottom: var(--line-size);
+		margin-bottom: var(--thirtytwo-pixel);
 		text-align: center;
 		top: 0;
 		width: 100%;
+	}
+	nav form input[type=text]:focus {
+		width: 80%;
 	}
 	footer nav a {
 		display: inline-block;
@@ -852,19 +856,19 @@ article > div,
 aside > div,
 dialog > div,
 section > div {
-	border: var(--border-size) solid transparent;
+	border: var(--one-pixel) solid transparent;
 	clear: both;
-	padding: var(--linepadded-size) 0 var(--indent-size);
+	padding: var(--thirty-pixel) 0 var(--fifteen-pixel);
 	position: relative;
 }
 header {
-	border-bottom: var(--border-size) solid currentColor;
+	border-bottom: var(--one-pixel) solid currentColor;
 }
 footer {
-	border-top: var(--border-size) solid currentColor;
+	border-top: var(--one-pixel) solid currentColor;
 }
 article, aside {
-	border: var(--border-size) solid currentColor;
+	border: var(--one-pixel) solid currentColor;
 }
 #site-header > div,
 #page-header > div,
@@ -874,7 +878,7 @@ article, aside {
 #page-section > div,
 #page-footer > div {
 	margin: 0 auto;
-	padding: 0 var(--grid-size);
+	padding: 0 var(--sixteen-pixel);
 	position: relative;
 	width: 100%;
 	max-width: var(--page-size);
@@ -891,8 +895,8 @@ aside footer,
 section header,
 section > div,
 section footer {
-	padding-left: var(--quarter-size);
-	padding-right: var(--quarter-size);
+	padding-left: var(--seven-pixel);
+	padding-right: var(--seven-pixel);
 }
 #page-footer {
 	background-color: var(--color-black);
@@ -913,9 +917,9 @@ img, svg {
 }
 nav a img,
 nav a svg {
-	height: var(--line-size);
+	height: var(--thirtytwo-pixel);
 	margin: -.5em 0;
-	width: var(--line-size);
+	width: var(--thirtytwo-pixel);
 }
 h1 img,
 h1 svg,
@@ -930,9 +934,9 @@ h5 svg,
 h6 img,
 h6 svg {
 	float: left;
-	height: var(--headline-size);
-	margin: -.5em var(--line-size) .5em 0;
-	width: var(--headline-size);
+	height: var(--sixtyfour-pixel);
+	margin: -.5em var(--thirtytwo-pixel) .5em 0;
+	width: var(--sixtyfour-pixel);
 }
 em a img,
 em a svg,
@@ -940,9 +944,9 @@ em label img,
 em label svg,
 button img,
 button svg {
-	height: var(--line-size);
+	height: var(--thirtytwo-pixel);
 	margin: -.25em .25em -.5em -.25em;
-	width: var(--line-size);
+	width: var(--thirtytwo-pixel);
 }
 em small a img,
 em small a svg {
@@ -954,8 +958,8 @@ em small a svg {
 /* Figures */
 
 figure {
-	border: var(--border-size) solid transparent;
-	margin: var(--line-size) 0;
+	border: var(--one-pixel) solid transparent;
+	margin: var(--thirtytwo-pixel) 0;
 	padding: 0;
 }
 figure img {
@@ -965,9 +969,9 @@ figure img {
 figure figcaption {
 	background: var(--color-black);
 	color: var(--color-white);
-	line-height: var(--line-size);
+	line-height: var(--thirtytwo-pixel);
 	text-align: center;
-	padding: var(--base-size);
+	padding: var(--four-pixel);
 	position: absolute;
 	bottom: 0; left: 0; right: 0;
 }
@@ -1050,7 +1054,7 @@ a:visited:active svg {
 }
 nav a:hover,
 nav label:hover {
-	border: var(--border-size) solid currentColor;
+	border: var(--one-pixel) solid currentColor;
 }
 
 /* Soft theme */
@@ -1154,22 +1158,24 @@ nav label {
 #page {
 	background-image: linear-gradient(to bottom, cyan 0, rgba(255, 255, 255, 0) 1px);
 	background-repeat: repeat-y;
-	background-size: 100% var(--grid-size);
+	background-size: 100% var(--sixteen-pixel);
 }
 */
 
 /* root */
 
 :root {
-	--border-size: 1px;
-	--base-size: 4px;
-	--quarter-size: 7px;
-	--indent-size: 15px;
-	--grid-size: 16px;
-	--font-size: 20px;
-	--linepadded-size: 30px;
-	--line-size: 32px;
-	--headline-size: 64px;
+	--one-pixel: 1px;
+	--two-pixel: 2px;
+	--four-pixel: 4px;
+	--seven-pixel: 7px;
+	--fifteen-pixel: 15px;
+	--sixteen-pixel: 16px;
+	--twenty-pixel: 20px;
+	--thirty-pixel: 30px;
+	--thirtytwo-pixel: 32px;
+	--fourtytwo-pixel: 42px;
+	--sixtyfour-pixel: 64px;
 	--page-size: 1200px;
 	
 	--color-white: rgba(255,255,255,1);

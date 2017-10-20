@@ -443,28 +443,6 @@
 
 /* ------------------------------------------------------------ Components */
 
-/* Dialog */
-
-dialog {
-	background: #fff;
-	border: 1px solid currentColor;
-	box-shadow: 0 0 12px rgba(0,0,0,.5);
-	display: none;
-	position: fixed;
-	top: 10%;
-	left: 20%;
-	right: 20%;
-	width: 60%;
-	z-index: 10;
-}
-@media (max-width: 767px) {
-	dialog {
-		top: 16px;
-		left: 5%;
-		right: 5%;
-		width: 90%;
-	}
-}
 
 /* Site logo */
 
@@ -556,8 +534,35 @@ dialog {
 	}
 }
 
-/* Menu, collapser, accordion and tabs */
+/* Dialog, menu, collapser, accordion and tabs */
 
+dialog {
+	background: #fff;
+	border: 1px solid currentColor;
+	box-shadow: 0 0 12px rgba(0,0,0,.5);
+	display: none;
+	position: fixed;
+	top: 10%;
+	left: 20%;
+	right: 20%;
+	width: 60%;
+	z-index: 10;
+}
+@media (max-width: 767px) {
+	dialog {
+		top: 16px;
+		left: 5%;
+		right: 5%;
+		width: 90%;
+	}
+}
+.overlay {
+	background-color: rgba(0,0,0,.4);
+	position: fixed;
+	top: 0; bottom: 0;
+	left: 0; right: 0;
+	z-index: 9;
+}
 .menu {
 	display: inline-block;
 	position: relative;
@@ -617,6 +622,7 @@ dialog {
 	margin: 0 1px;
 }
 input:checked ~ dialog,
+input:checked ~ .overlay,
 .menu input:checked ~ nav[hidden],
 .collapser input:checked ~ div[hidden],
 .accordion li input:checked ~ div[hidden],
@@ -819,12 +825,63 @@ input:checked ~ .alert {
 	right: -120%;
 }
 
+/* Lightbox */
+
+[id*='lightbox']:hover,
+[id*='lightbox']:visited,
+[id*='lightbox']:active,
+[id*='lightbox']:visited:hover {
+	text-decoration: none;
+	-moz-opacity: 1;
+	opacity: 1;
+}
+[id*='lightbox']:target {
+	background-color: rgba(0,0,0,.8);
+	display: block;
+	text-align: center;
+	position: fixed;
+	top: 0; bottom: 0;
+	left: 0; right: 0;
+	z-index: 12;
+}
+[id*='lightbox']:target img {
+	display: block;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	margin: 0 auto;
+	max-height: 80%;
+	max-width: 80%;
+	width: auto;
+	-webkit-animation: lightboxIn 1s ease both;
+	-moz-animation: lightboxIn 1s ease both;
+	animation: lightboxIn 1s ease both;
+}
+[id*='lightbox']:target + a + figcaption {
+	position: fixed;
+	bottom: 0; left: 0; right: 0;
+	height: 64px;
+	z-index: 12;
+}
+@-webkit-keyframes lightboxIn {
+	from { opacity: 0; }
+}
+@-moz-keyframes fadeIn {
+	from { opacity: 0; }
+}
+@keyframes fadeIn {
+	from { opacity: 0; }
+}
+
 /* Dismiss labels */
 
 dialog > label,
 .alert > label,
 .flip article > label,
-.flip aside > label {
+.flip aside > label,
+[id*='lightbox']:target + a,
+[id*='lightbox']:target ~ .previous,
+[id*='lightbox']:target ~ .next {
 	border: 1px solid currentColor;
 	border-radius: 50%;
 	cursor: pointer;
@@ -835,10 +892,29 @@ dialog > label,
 	line-height: 36px;
 	width: 42px;
 	text-align: center;
+	text-decoration: none;
 	z-index: 2;
 	position: absolute;
 	top: 16px;
 	right: 16px;
+}
+[id*='lightbox']:target + a,
+[id*='lightbox']:target ~ .previous,
+[id*='lightbox']:target ~ .next {
+	background-color: #fff;
+	border: 2px solid currentColor;
+	color: #333;
+	visibility: visible;
+	position: fixed;
+	top: 16px; right: 16px;
+	z-index: 12;
+}
+[id*='lightbox']:target ~ .previous,
+[id*='lightbox']:target ~ .next {
+	top: 50%;
+}
+[id*='lightbox']:target ~ .previous {
+	left: 16px; right: auto;
 }
 
 /* Mark */
@@ -863,6 +939,35 @@ nav strong label mark {
 	right: 4px;
 }
 
+/* Banners and covers */
+
+.banner,
+.cover {
+	background-position: top center;
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	border:none;
+	color: #fff;
+	letter-spacing: .2em;
+	overflow: hidden;
+	text-align: center;
+}
+.banner {
+	height: 512px;
+	padding-top:180px;
+}
+.cover {
+	height: 90vh;
+	padding-top: 320px;
+}
+
+@media (max-width: 767px) {
+	.banner {
+		height: 320px;
+		padding-top: 128px;
+	}
+}
 
 /* Basic animations */
 
@@ -920,7 +1025,7 @@ dialog,
 	cursor: pointer;
 	display: block;
 	float: right;
-	margin: 0 16px;
+	margin: 0 8px;
 	padding: 0;
 	text-align: center;
 	line-height: 40px;
