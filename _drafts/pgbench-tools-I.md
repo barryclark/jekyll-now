@@ -9,7 +9,7 @@ This is a translation of my [original post](https://www.loxodata.com/post/benchm
 
 During PgDAY Paris in march of 2017, I was lucky to watch Fabien Coelho's conference on benchmarking. 
 You may find a summary in french [here](/post/proper-benchmarking/)
-I was also lucky to attend a lecture from Kaarel Mopel from Cybertec who mentionned `pgbench-tools` which I had to give a go ! 
+I was also lucky to attend a lecture from Kaarel Mopel from Cybertec who mentioned `pgbench-tools` which I had to give a go ! 
 
 ## What is it all about ?
 
