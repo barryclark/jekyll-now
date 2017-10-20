@@ -4,12 +4,16 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Spire Digital is a community of geeks in Chesterfield
 
-### More Information
+### Come to our Meetups
 
-A place to include any other types of information that you'd like to include about yourself.
+<https://www.meetup.com/Spire-Digital-Technology-in-Chesterfield/>
 
-### Contact me
+### Join us on slack
 
-[email@domain.com](mailto:email@domain.com)
+<http://spiredigitalslack.herokuapp.com>
+
+### Contact Us
+
+[trevorrwarduk@gmail.com](mailto:trevorrwarduk@gmail.com)
