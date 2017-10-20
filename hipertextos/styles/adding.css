@@ -7,3 +7,7 @@ nav a {	font-weight: normal;}
 nav a b {text-transform: uppercase;}
 nav {text-align: center;}
 .cover h2 {letter-spacing: 0.001em;font-weight: normal; }
+.cover {
+	height: 80vh;
+	padding-top: 210px;
+}
