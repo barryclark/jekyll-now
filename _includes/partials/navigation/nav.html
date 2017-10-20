@@ -1,8 +1,21 @@
-<nav class="nav-sticky top flat black" id="menu">
-		<a href="{{ site.baseurl }}/media/" title="Agenda de Concerts"  class="navlink">Portfoli</a>
-		<a href="{{ site.baseurl }}/blog/" title="Videos, fotos i cartells" class="navlink">Blog</a>
-		<a href="{{ site.baseurl }}/" class="home" title="Home"><b>{{ site.name }}</b></a>
-		<a href="{{ site.baseurl }}/about/" title="Contacta amb nosaltres"  class="navlink">Contacte</a>	
-		<a href="#subs" title="About"  class="navlink">Seguir</a>	
-		<hr class="visible-phone">
-</nav>
+			<nav id="site-nav" class="nav-smart">
+				<div>
+					<a class="site-logo" href="index.html" title="BarcelonaCSS: Main">
+						<img src="../src/ics/android-chrome-192x192.png" alt="BarcelonaCSS logo">
+					</a>
+					<input type="checkbox" id="mobnav" name="mobnav" aria-hidden="true" hidden> 
+					<strong><label for="mobnav">Menú<mark></mark></label></strong>
+					<div hidden>
+					<a href="{{ site.baseurl }}/media/" title="Agenda de Concerts"  class="navlink">Portfoli</a>
+					<a href="{{ site.baseurl }}/blog/" title="Videos, fotos i cartells" class="navlink">Blog</a>
+					<a href="{{ site.baseurl }}/" class="home" title="Home"><b>{{ site.name }}</b></a>
+					<a href="{{ site.baseurl }}/about/" title="Contacta amb nosaltres"  class="navlink">Contacte</a>	
+					<a href="#subs" title="About"  class="navlink">Seguir</a>	
+						<form action="http://www.google.com/cse"> 
+							<input type="hidden" name="cx" value="GoogleCSEID"> 
+							<input type="text" name="q" placeholder="cerca"> 
+							<input type="submit" name="sa" value="·"> 
+						</form>
+					</div>
+				 </div>
+			</nav>

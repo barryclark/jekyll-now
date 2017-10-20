@@ -3,14 +3,16 @@ layout: default
 ---
     {% include partials/navigation/nav.html %}
 	{% include partials/head.html %}
-    <main id="content" role="main" class="flat black voltaire">
+    <main id="content" role="main">
+    	<div>
+			<section>
 				{% include partials/navigation/covers.html %}		
-			<hr>
-			<div class="universe filled white section-blank">
+			</section>
+			<section>
 			{% include partials/suscribe.html %}
-			</div>
-    	<div class="universe flat black s">
-    		<hr>
-          {% include svg-icons.html %}
+			</section>
+    		<section>
+            {% include svg-icons.html %}
+    		</section>
     	</div>
     </main>

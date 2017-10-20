@@ -1,11 +1,6 @@
-        <header class="header-cover flat black" style="background-image: url('{{ site.baseurl }}/img/thumb.jpg');">
-		<div class="filled white">
-			<div class="content">
-				<h1 class="uppercased voltaire">{{ site.name }}</h1>
-				<h2>{% if site.description %}
-						<span class="oswald">{{ site.description }} </span>
-					{% endif %}
-				</h2>
-			</div><!-- /.content -->
-		</div>
+        <header  id="page-header" style="background-image: url('{{ site.baseurl }}/img/thumb.jpg');">
+			<div>
+				<h1>{{ site.name }}</h1>
+				{% if site.description %}<h2>{{ site.description }}</h2>{% endif %}
+			</div>
 		</header>
