@@ -14,23 +14,24 @@ I was also lucky to attend a lecture from Kaarel Mopel from Cybertec who mention
 ## What is it all about ?
 
 
-`pgbench-tools` is a tool that automates benchmarking performance tests.
-It works on the well known [pgbench](https://www.postgresql.org/docs/9.6/static/pgbench.html), a tool among the contributions installed with a full installation of PostgreSQL.
-Two scripts are used to wrap and make series of tests with pgbench.
+`pgbench-tools` is a tool that automates benchmarking tests.
+It works on the well known project [pgbench](https://www.postgresql.org/docs/9.6/static/pgbench.html), a tool among the contributions installed with a full installation of PostgreSQL.
+Two scripts are used to wrap and make series of tests with pgbench : `benchwarmer` and `runset`.
 
-It is also possible to collect statistics both from the OS (CPU, RAM, etc.) and from Postgres (buffercache, and checkpoints among other things).
+It is also possible to collect statistics both from the OS (CPU, RAM, etc.) and from Postgres (buffercache and checkpoints among other things).
 
 There are also scripts for basic configuration and memory usage monitoring.
 
-If that is not the case, I strongly recommend to get familiar with pgbench documentation if you are at all interested in benchmarking. 
+If that is not the case, I strongly recommend to get acquainted with pgbench documentation if you are at all interested in benchmarking. 
 
 ## What can pgbench-tools do ?
-It makes automated tests based on the different variables that you input : scale, client, duration of test, rushhour rate or normal rates.
-One should never bench with only tps in mind but also latency, and for this option -R (option **SETRATES**) will reflect the activity on your cluster. It is up to you to know which rate applies.
+
+It makes automated tests based on the different variables that you choose : scale, client, duration of test, "rush hour" rate (as fast as possible) or normal rates (a target of tps).
+One should never bench with only tps in mind but also latency, and for this option -R (option **SETRATES**) will reflect the activity on your cluster. It is up to you to find out which rates to apply.
 
 ## Prerequisites
 
-* _**git**_&nbsp;:  with `git clone`, you can clone the repository to your local machine. Of course, it is also possible to download the archive in zip format and decompress.
+* _**git**_&nbsp;:  with `git clone`, you can clone the repository to your local machine. Of course, it is also possible to download the archive in zip format and decompress it.
 
 * _**GNUplot**_ is used for the creation of graphs. I am afraid there is no substitute. 
 
@@ -48,26 +49,26 @@ Then, initialise the database with a script&nbsp;:
 
 	psql -f init/resultdb.sql -d results
 
-You should think about using  the correct database in the command line, but also in the `config` file which is fortunately at the root of the folder and filled very handily with default values.
+You should think about using the correct database in the command line, but also in the `config` file which is fortunately at the root of the folder and filled (very handily) with default values.
 
-At last, create a initial set which is going to be used as a baseline.
+At last, create an initial set which is going to be used as a baseline.
 
 	./newset 'Initial Config'
 
 ## Vocubulary words
 
 A **set** is a series of tests.
-For a given configuration of pgbench-tools and of the cluster, the tools lauches a benchmark.
+For a given configuration of pgbench-tools and of the cluster, the tool lauches a benchmark.
 That way, everything can be categorised.
 
-**Scale** refers to the size of the database, you can see sometimes "scaling factor" in replacement.
+**Scale** refers to the size of the database, equally you can sometimes see "scaling factor" in replacement.
 It is a factor that multiplies the default size of pgbench database.
 
 Transactions per second are abreviated by **tps**.
 
 The value of **client** is the number of concurrent access to the database.
 
-**Latency** is the time the client takes finish transaction and give back permission to send another query.
+**Latency** is the time the client takes to finish a transaction (commit) and allows to send another query.
 
 The three values **avg_latency**, **max_latency**, **90%<**&nbsp;: are respectively average latency, maximum latency, and latency of 90th percentile. 
 They describe distribution of latency.
@@ -77,9 +78,9 @@ They describe distribution of latency.
 The important scripts are&nbsp;:
 
 * **newset**&nbsp;:
-	* `./newset` gives a list of all the set created&nbsp;;
+	* `./newset` gives a list of all the sets created&nbsp;;
 	* `./newset 'nom_du_test'` adds another set to the list.
-* **runset**&nbsp;: `./runset` lauches the tests&nbsp;;
+* **runset**&nbsp;: `./runset` fires the tests inside a given set&nbsp;;
 * **config**&nbsp;: is the file that contains the necessary informations for the tests. You can edit this with your favourite tool (vim, nano, emacs)&nbsp;:
    * contains the connection string&nbsp;;
    * database for the bench (default value is `pgbench`)&nbsp;;
