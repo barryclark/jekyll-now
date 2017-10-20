@@ -5,6 +5,8 @@ Draft: true
 published: true
 ---
 
+This is a translation of my [original post](https://www.loxodata.com/post/benchmarking-pratique/) in french for Loxodata - PostgreSQL experts in France
+
 During PgDAY Paris in march of 2017, I was lucky to watch Fabien Coelho's conference on becnhmarking. 
 You may find a summary in french [here](/post/proper-benchmarking/)
 I was also lucky to attend a lecture from Kaarel Mopel from Cybertec who mentionned `pgbench-tools` which I had to give a go ! 
@@ -98,9 +100,9 @@ The is fisrt a part with a general view&nbsp;:
    * a comparison graph with 1 curve for each set on the same showing tps depending on scaling factor and tps depending on client number.
    
 Here are some examples of 2 graphs&nbsp;:
-![Exemple de tps vs Taille BDD et Facteur d'échelle](/images/post/pgbench-tools-2017/graph1_exple.png)
+![Sample : tps vs DB size and scaling factor](https://www.loxodata.com/images/post/pgbench-tools-2017/graph1_exple.png)
 
-![Exemple de graph en 3d](/images/post/pgbench-tools-2017/graph-3d-pgb-tools.png)
+![Sample of 3D graph](https://www.loxodata.com/images/post/pgbench-tools-2017/graph-3d-pgb-tools.png)
 
 The second part is a more detailled result for each set &nbsp;:
 
@@ -110,7 +112,7 @@ The second part is a more detailled result for each set &nbsp;:
    * a detailed table with relevant values for each test (`set`, `test`, `scale`, `clients`, `rate_limit`, `tps`, `max_latency`, `chkpts`, `buf_check`, `buf_clean`, `buf_backend`, `buf_alloc`, `max_clean`, `backend_sync`, `max_dirty`, `wal_written`, `cleanup`).
 
 
-![exemple tableau pour le set 9](/images/post/pgbench-tools-2017/tableau-moyennes-p-echelle.png)
+![sample : table set 9](https://www.loxodata.com/images/post/pgbench-tools-2017/tableau-moyennes-p-echelle.png)
 
 
 ## Word of warning
