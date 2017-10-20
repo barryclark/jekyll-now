@@ -50,7 +50,7 @@ C'est donc ce contexte spécifique qui me force ici à mettre de côté ces solu
 <!-- SAS&nbsp;: Il faut être plus précis. On peut toujours penser que les solutions ne sont pas bonnes,
   alors que c'est peut-être le contexte le problème -->
 
-Obviouslty, Pacemaker/Corosync was considered but failover to a different site was the matter : the options made available to us the cluster linux were not allowing us to restart activity to our safety site. 
+Obviously, Pacemaker/Corosync was considered but failover to a different site was the matter : the options made available to us on the linux cluster were not allowing us to restart activity to our safety site. 
 Moreover, managment of this ressource would have been given to AdminSys department and therefore outside of our jurisdiction.
 <!--Evidemment, Pacemaker/Corosync était en lice mais le failover sur un autre site était en cause&nbsp;: les options du cluster linux disponibles chez le client ne nous permettent pas de reprendre l'activité en basculant sur notre site de secours. -->
 <!-- SAS&nbsp;: Pas compris -->
@@ -59,7 +59,7 @@ Moreover, managment of this ressource would have been given to AdminSys departme
 Last obvious solution at the time : `REPMGR`.
 <!--Dernière option évidente&nbsp;: `REPMGR`. -->
 
-It took me some time to install and get to the failover part.
+It took me some time to install and get to the failover part to work.
 Finally, I managed to set up a 3 node cluster (+1 witness), eventhough network failures were badly handled.
 I know that `REPMGR` is managing database replication on top of automatic failover but still, this is not something that can be cast aside and have no repercutions.
 <!--Il me fallut un certains temps pour l'installer et arriver à la partie failover.
@@ -93,20 +93,30 @@ We expect roughly 5 + 3*5 = 20 secondes of downtime for the database.
 <!--Ce qui est donc attendu est 5 + 3*5 = 20 secondes de downtime environ pour la base de données.-->
 
 
+### The Customer is King (a man who is his own lawyer has a fool for a client)
+<!--### Le client est roi-->
 
-### Le client est roi
-
-
-A partir de là, je cherchais comment il m'aurait été possible de mesurer le temps d'indisponibilité tout en gardant une connexion à la base de données avec pgbench en tâche de fond.
+From there, I was looking for a way to measure downtime while keeping a connection to my database with pgbench in the background.
+This is where a colleague of mine reminded me of this new libpq feature in the (then upcoming) release during the PgDAY.
+As a matter of fact, without client reconnection solution, the client would not be able to reconnect to a functionning cluster without a new configuration of connection string.
+It appeared to me that the client failover feature could allow me to measure downtime and quantify write loss during failover.
+<!-- A partir de là, je cherchais comment il m'aurait été possible de mesurer le temps d'indisponibilité tout en gardant une connexion à la base de données avec pgbench en tâche de fond.
 C'est alors qu'un de mes collègues me rappela cette fonctionalité de la libpq qui nous avait été présenté au PgDAY.
 En effet, sans solution de bascule des connexions, il n'est pas possible de se reconnecter à la nouvelle instance acceptant les écritures à moins d'une réécriture manuelle de la chaîne de connexion.
-Il m'apparu donc que le failover côté client de PG10 pourrait alors m'aider à mesurer le temps d'indisponibilité et la quantité d'écritures impactées lors de la bascule.
+Il m'apparu donc que le failover côté client de PG10 pourrait alors m'aider à mesurer le temps d'indisponibilité et la quantité d'écritures impactées lors de la bascule.-->
 
 <!-- SAS&nbsp;: Je suis perdu. On parle de la fonctionnalité PG10 en intro. Puis de REPMAGR qui est la
 super solution, pour dire qu'un collègue propose la fonctionnalité. Mais laquelle ? Repmgr, la
 bascule PG10 ? -->
 
-#### Comment ?
+#### How ?
+<!--#### Comment ?-->
+
+The only thing you have to do is mention if you are looking for read-write (primary) or read-only (standby or primary) cluster inside the connection string. 
+Here, I am looking for a read-write cluster.
+I was looking for a way to measure timewise loss of connection during the operation as well.
+But how ? 
+Let's do some reading first, [here](http://paquier.xyz/postgresql-2/postgres-10-libpq-read-write/).
 
 Il suffit de préciser dans la chaîne de connexion si l'on souhaite se connecter à une instance en lecture-écriture (primaire) ou une instance sans distinction lecture seule ou lecture-écriture (standby ou primaire).
 <!-- SAS&nbsp;: pas clair du tout. Que veut-on mesurer ? -->
