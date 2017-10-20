@@ -3,7 +3,7 @@ layout: page
 title: Acerca de mí
 permalink: /about/
 ---
-<img src="imagenes/ProfilePhoto.jpg" class="miFoto"> 
+<img src="images/ProfilePhoto.jpg" class="miFoto"> 
 Hace mucho tiempo que empecé en este mundo de la Informática (antes de que empezaran a verse las primeras versiones de Windows). Desde entonces me ha apasionado la Programación, aunque no me he dedicado profesionalmente, siempre he estado aprediendo nuevos lenguajes. Incluso he olvidado ya algunos de ellos.
 
 Ahora me encuentro realizando el Ciclo de Grado Superior de Desarrollo de Aplicaciones Multiplataforma con el firme objetivo de dedicarme a ello profesionalmente.
