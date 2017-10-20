@@ -307,22 +307,32 @@ The client does not do a rollback, write are not written durably in the database
 Le client ne fait pas de rollback, les écritures ne sont donc pas enregistrées durablement dans la base de données.
 **Les lignes sont donc sur un fichier wal sur le primaire.**-->
 
-### Pourrais-je éviter de perdre ces lignes à l'avenir ?
-**Oui**, si j'active le synchronous_standby_names en identifiants les instances secondaires, les écritures se comporteront de façon synchrones et 
+### Will I be able to avoid losing those tuples in the future ?
+<!--### Pourrais-je éviter de perdre ces lignes à l'avenir ?-->
+**Yes**, if `synchronous_standby_names` is activated and identifying all the secondary instances, writes will be synchronous and client will render access once the transaction is committed on the secondary/ies.
+Note that this is not compatible with `REPMGR`.
+<!--**Oui**, si j'active le synchronous_standby_names en identifiants les instances secondaires, les écritures se comporteront de façon synchrones et 
 le client retrouve la main lorsqu'il a commité les informations sur les secondaires indiqués.
 Je n'ai alors pas de perte d'écriture. 
-Ce fonctionnement n'est pas compatible avec REPMGR (voir ci-dessus).
-
-
-### Pourrais-je récupérer ces lignes ?
-Si mon primaire peut-être rallumé et effectuer un redémarrage suivi d'une restauration de ses fichiers wal sans erreur (sans corruption), alors je pourrais remettre la main sur les écritures manquantes.
+Ce fonctionnement n'est pas compatible avec REPMGR (voir ci-dessus).-->
+### Could I get my missing tuples back ?
+<!--### Pourrais-je récupérer ces lignes ?-->
+If my primary can be turned back online and play the wal it has stored without an error, then I can get my tuples back.
+Otherwise, it will be more difficult (sometimes impossible) to regain.
+I should also point out that writes stuck in the wal file did not receive confirmation.
+If the restore does not find coherence after the missing tuples, they will be roolbacked and will not be able to appear in a query to the database.
+If all goes according to plan, missing writes will appear in the database. 
+From there, I will be able to insert those lines on my new primary after the failure has occurred.
+<!--Si mon primaire peut-être rallumé et effectuer un redémarrage suivi d'une restauration de ses fichiers wal sans erreur (sans corruption), alors je pourrais remettre la main sur les écritures manquantes.
 Dans le cas contraire, elles seront peut-être plus difficiles (impossible ?) à récuperer (**lien vers article corruption sur le blog**).
 Il est à noter que les écritures restées dans le fichier wal n'ont pas reçu de confirmation en écriture.
 Si la restauration ne trouve pas de point de cohérence lors la partie comportant les dernières écritures, elles seront rollbackées et n'apparaitront pas lors de l'interrogation de la base de données.
 Si tout se passe pour le mieux, les écritures apparaitrons dans la base lorsque nous ferons une requêtes.
-Je pourrai alors insérer ces lignes manquantes dans le primaire qui a pris le relai lors de la panne.
+Je pourrai alors insérer ces lignes manquantes dans le primaire qui a pris le relai lors de la panne.-->
 
-Ceci est une opération fastidieuse et difficile à automatiser, c'est pourquoi une bascule automatique doit être choisie en toute connaissance de cause surtout si la configuration nous impose (comme ici) de ne pas avoir de réplication synchrone.
+This is a tedious job and difficult to automate, this is why an automatic failover should be choses carefully. 
+Knowing full well all the implications, and like here if writes are not synchronous.
+<!--Ceci est une opération fastidieuse et difficile à automatiser, c'est pourquoi une bascule automatique doit être choisie en toute connaissance de cause surtout si la configuration nous impose (comme ici) de ne pas avoir de réplication synchrone.-->
 
 <!-- SAS&nbsp;: Mais, alors, le client a une erreur. Les données ne sont pas marquées comme enregistrées
 ? -->
@@ -332,22 +342,34 @@ Ceci est une opération fastidieuse et difficile à automatiser, c'est pourquoi 
 
 <!-- SAS&nbsp;: PostgreSQL est génial. Mais je ne sais pas ce qui fonctionne, parce qu'on a perdu des
 écritures. -->
-La bascule **fonctionne** puisque nous retrouvons nos écritures qui continuent sur le nouveau primaire après la promotion.
+Automatic failover works : Horray ! Indeed we get new writes on the new primary after the promotion.
+<!--La bascule **fonctionne** puisque nous retrouvons nos écritures qui continuent sur le nouveau primaire après la promotion.-->
 
-Cependant, nous avons vu ensemble qu'une fois la bascule effectuée, il nous manquait des lignes dans notre table de log. 
+However, we saw that afterwards, we were missing some tuples in our log table.
+It is possible to avoid losing those lines entierly at the cost of the solution itself. 
+It is also possible to regain access to those lines and reinsert them on the new primary.
+Depending, on the configuration and the HA solution, I would have to, if necessary, restore my datas to integrate them to my new timeline.
+<!--Cependant, nous avons vu ensemble qu'une fois la bascule effectuée, il nous manquait des lignes dans notre table de log. 
 Il est possible d'éviter de perdre ces lignes, et aussi de les récupérer si tout se passe correctement. 
-En fonction de la configuration et de la solution de bascule automatique, je devrais, si nécessaire, restaurer mes données pour les réintégrer à ma nouvelle timeline. 
+En fonction de la configuration et de la solution de bascule automatique, je devrais, si nécessaire, restaurer mes données pour les réintégrer à ma nouvelle timeline. -->
 
-Mais encore une fois il est tout à fait possible d'éviter cet écueil en modifiant la configuration. 
+But once more, it is possible to avoid this by changing the configuration.
+In the case of synchronous replication however, one would have to bear in mind that a failure of the replica would stop the primary from writing new datas as it cannot commit on the entirerity of the nodes.
+Difficult choice, I must admit.
+<!--Mais encore une fois il est tout à fait possible d'éviter cet écueil en modifiant la configuration. 
 Dans le cas d'une réplication synchrone cependant, il faut garder à l'esprit qu'une panne sur le réplica entraine le bloquage de la primaire qui ne peut commiter les information sur l'intégralité du cluster.
-Choix cornélien, il faut bien l'avouer.
+Choix cornélien, il faut bien l'avouer.-->
 
-L'objet du présent post était principalement dédié à décrire la bascule automatique côté client et retrouver un accès en écriture sur un nouveau noeud. 
+During downtime, we saw that writes were kept waiting while there was no node available for writing.
+I did not put the error message gotten from the initial failure, but the client is aware it went wrong and change configuration accordingly.
+<!--L'objet du présent post était principalement dédié à décrire la bascule automatique côté client et retrouver un accès en écriture sur un nouveau noeud. 
 Nous avons pu constater que les écritures ont été mise en attente lorsque aucun noeud n'était disponible.
-L'erreur remontée au client n'est pas documentée ici, cependant elle permet d'avoir un avertissement que nous pouvons confirmer lors de l'analyse des traces et de prendre les dispositions nécessaires.
+L'erreur remontée au client n'est pas documentée ici, cependant elle permet d'avoir un avertissement que nous pouvons confirmer lors de l'analyse des traces et de prendre les dispositions nécessaires.-->
 
-Nous n'avons perdu "que" 25 écritures, soit 250 millisecondes (`10000µs*25`), malgré les 20 secondes d'indisponibilité.
-C'est un moindre mal, mais si nous voulons garantir l'intégrité des données, il faut pouvoir mettre en oeuvre les moyens de conserver dans la mesure du possible cette intégrité.
+We lost "only" 25 tuples, or 250 millisecondes (`10000µs*25`), despite of 20s of total downtime.
+This is a lesser evil, but if one is to garantee integrity, one must take all the necessary precaution to insure that is the case.
+<!--Nous n'avons perdu "que" 25 écritures, soit 250 millisecondes (`10000µs*25`), malgré les 20 secondes d'indisponibilité.
+C'est un moindre mal, mais si nous voulons garantir l'intégrité des données, il faut pouvoir mettre en oeuvre les moyens de conserver dans la mesure du possible cette intégrité.-->
 
 <!-- Le temps pendant lequel aucune instance n'était disponible, les écritures ont été mises en attente par le client.-->
 
