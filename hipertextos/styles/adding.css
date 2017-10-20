@@ -1,0 +1,9 @@
+/* BarcelonaCSS */
+/* by Acozar/Miralles  ADDING CSS */
+
+/* ------------------------------------------------------------ Resets */
+
+nav {
+	background-color: var(--color-black);
+	color: var(--color-white);
+}
