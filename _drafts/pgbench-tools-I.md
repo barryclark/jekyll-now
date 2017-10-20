@@ -5,60 +5,58 @@ Draft: true
 published: true
 ---
 
-Lors du PGDAY Paris de mars de cette année, j'ai pu assister à la conférence de Fabien Coelho sur le benchmarking que je vous ai retranscrite [ici](/post/proper-benchmarking/).
-J'ai aussi eu la chance de voir Kaarel Mopel de Cybertec mentionner `pgbench-tools` que je me suis empressé de regarder.
+During PgDAY Paris in march of 2017, I was lucky to watch Fabien Coelho's conference on becnhmarking. 
+You may find a summary in french [here](/post/proper-benchmarking/)
+I was also lucky to attend a lecture from Kaarel Mopel from Cybertec who mentionned `pgbench-tools` which I had to give a go ! 
 
-## De quoi s'agit-il ?
+## What is it all about ?
 
-`pgbench-tools` est un ensemble d'outils d'automatisation de tests de performance.
-Il s'appuie sur [pgbench](https://www.postgresql.org/docs/9.6/static/pgbench.html), outil faisant partie des contributions de base installées lors d'une installation complète de PostgreSQL.
-Les scripts `benchwarmer` et `runset` servent ensemble à envelopper pgbench et sérialiser les tests.
 
-Il est également possible de collecter les statistiques, que ce soit au niveau de l'OS (utilisation mémoire, processeur, etc.) ou au niveau de PostgreSQL (buffers cache et checkpoints, notamment).
+`pgbench-tools` is a tool that automates benchmarking performance tests.
+It works on the well known [pgbench](https://www.postgresql.org/docs/9.6/static/pgbench.html), a tool among the contributions installed with a full installation of PostgreSQL.
+Two scripts are used to wrap and make series of tests with pgbench.
 
-Enfin d'autres scripts interviennent pour la configuration de base des tests ou pour monitorer l'utilisation de la mémoire.
+It is also possible to collect statistics both from the OS (CPU, RAM, etc.) and from Postgres (buffercache, and checkpoints among other things).
 
-Si ce n'est pas déjà fait, je vous conseille de vous familiariser avec la documentation de pgbench et de prendre connaissance de mon précédent post sur "[le benchmarking fait correctement](/post/proper-benchmarking/)".
+There are also scripts for basic configuration and memory usage monitoring.
 
-## Que peut faire pgbench-tools ?
-Pgbench-tools peut faire des tests automatisés&nbsp;: "scale", clients, temps de test, le régime "Heure de pointe" et le régime "Normal".
-Comme déjà couvert dans un précédent [article](/post/proper-benchmarking/), le bench ne s'effectue pas uniquement avec une simulation par pic d'activité.
+If that is not the case, I strongly recommend to get familiar with pgbench documentation if you are at all interested in benchmarking. 
 
-Il convient également de régler le bench pour un régime dit "normal" (option **SETRATES**).
-C'est ici à vous de déterminer quel sera le nombre de transactions par seconde en moyenne sur votre instance.
+## What can pgbench-tools do ?
+It makes automated tests based on the different variables that you input : scale, client, duration of test, rushhour rate or normal rates.
+One should never bench with only tps in mind but also latency, and for this option -R (option **SETRATES**) will reflect the activity on your cluster. It is up to you to know which rate applies.
 
-## Prérequis
+## Prerequisites
 
-* _**git**_&nbsp;:  avec un `git clone`, on peut copier le dépôt en local. Il est également possible de télécharger et décompresser l'archive.
+* _**git**_&nbsp;:  with `git clone`, you can clone the repository to your local machine. Of course, it is also possible to download the archive in zip format and decompress.
 
-* _**GNUplot**_ est utilisé pour la génération des graphiques pour les rapports. Il n'existe pas de substitut.
+* _**GNUplot**_ is used for the creation of graphs. I am afraid there is no substitute. 
 
-## L'installation
 
-Tout d'abord, il faut commencer par créer les bases pour le bench et pour les résultats&nbsp;:
+## Installation
+
+First, create database for the bench and for storing the results&nbsp;:
 
 ~~~
 createdb results
 createdb pgbench
 ~~~
 
-
-Puis, initialiser la base de données avec le script d'initialisation&nbsp;:
+Then, initialise the database with a script&nbsp;:
 
 	psql -f init/resultdb.sql -d results
 
-Pensez à déclarer la bonne base de données dans la requête ci-dessus, mais également dans le fichier `config` présent à la racine du dossier et prérempli avec des valeurs par défaut.
+You should think about using  the correct database in the command line, but also in the `config` file which is fortunately at the root of the folder and filled very handily with default values.
 
-Enfin, créer le set initial qui va nous servir de référence&nbsp;:
+At last, create a initial set which is going to be used as a baseline.
 
 	./newset 'Initial Config'
 
-## Un peu de vocabulaire
+## Vocubulary words
 
-Un **set** est un ensemble de tests.
-Pour une configuration donnée (de pgbench-tools et de l'instance), on lance l'outil de benchmark.
-Ceci permet de ranger les tests par catégorie.
-
+A **set** is a series of tests.
+For a given configuration of pgbench-tools and of the cluster, the tools lauches a benchmark.
+That way, everything can be categorised.
 Le mot **Scale** qui peut se traduire littéralement par échelle.
 On y fait parfois référence avec le terme "scaling factor" (facteur d'échelle).
 Il correspond à un coefficient multiplicateur sur la taille de la base de données `pgbench`.
