@@ -3,6 +3,12 @@ layout: default
 ---
 
   	{% include partials/navigation/nav-section.html %}
+    <header  id="page-header" style="background-image: url('{{ site.baseurl }}/img/thumb_4.jpg');">
+		<div>
+			<h1>{{ site.name }}</h1>
+			{% if site.description %}<h2><small>{{ site.description }}</small></h2>{% endif %}
+		</div>
+	</header>
 <main id="page-main" role="main">
 	<div id="layout">
   	{% for post in site.posts %}
