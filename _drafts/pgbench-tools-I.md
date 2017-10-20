@@ -102,7 +102,7 @@ Here are some examples of 2 graphs&nbsp;:
 
 ![Exemple de graph en 3d](/images/post/pgbench-tools-2017/graph-3d-pgb-tools.png)
 
-The second part is for each set a more detailled result&nbsp;:
+The second part is a more detailled result for each set &nbsp;:
 
    * a first graph tps/db size and scale on the average of each test of each set then a second showing **tps**/client in the same manner&nbsp;;
    * 2 tables summing up the set&nbsp;: one by scaling factore and the other by client (showing `set`, `scale`, `tps`, `avg_latency`, `90%\<`, `max_latency`)&nbsp;;
@@ -112,58 +112,57 @@ The second part is for each set a more detailled result&nbsp;:
 
 ![exemple tableau pour le set 9](/images/post/pgbench-tools-2017/tableau-moyennes-p-echelle.png)
 
-## Mise en garde et précaution
 
-Il est important de coller à la réalité pour obtenir un résultat pratique.
-Premièrement, je recommande vivement d'activer l'écriture dans les WAL (`fsync`) ainsi que la sauvegarde et l'archivage des WAL.
+## Word of warning
 
-Ceci est d'autant plus important que les écritures ont lieu dans les WAL, dans la base, dans les `clog` et dans les logs.
-Ces écritures ont un impact sur les performances lors du bench, désactiver l'écriture et l'archivage des WAL nuirait à la pertinence du résultat.
+It is important to stick as close as possible to reality to get a practical and meaningful result.
+Firstly, I recommend activating `archive_mode` and `fsync` ON as well as backup and wal archiving.
 
-Au regard de ses informations, une fois le bench lancé, des WAL vont être produits, beaucoup de WAL, j'ai bien dit **BEAUCOUP** de WAL.
-Vous pouvez donc choisir de faire une purge manuelle ou de mettre un système de fichiers immense pour anticiper ce problème.
+This is all the more important as writes are performed in the WAL folder, in the database, in the former clogs (now XACT) and in the logs (if have had them activated - but it is better anyway).
+The writes have an impact on performances during the bench, deactivating those would predjudice the relevance of the results.
 
-## L'outil original et ses forks
+With regards to this information, once the bench is fired, WAL files are going to be produced. Lots of files, and I really mean **LOTS OF FILES**.
+You can choose to do a manual purge, or provide your server with a huge File System to think ahead of this issue.e problème.
 
-L'outil original tel qu'il est sur le `git` de son auteur c'est [ici](https://github.com/gregs1104/pgbench-tools).
+## The original and the forks
 
-Pour ma part, je suis tombé sur des problèmes de compatibilité avec PostgreSQL 9.6.
-Il m'a donc été nécessaire de mettre à jour l'outil.
-Voici le lien à jour de juin 2017 pour [cette version](https://github.com/emerichunter/pgbench-tools) avec les modifications ad hoc.
+The original tool as it has been issued by its author is [here](https://github.com/gregs1104/pgbench-tools).
 
-En effet, dans la version 9.6, la génération de nombres aléatoires utilisée par les scripts pgbench change de format (cf. [documentation](https://www.postgresql.org/docs/9.6/static/pgbench.html)).
-J'ai également intégré des modifications/améliorations dont je vous parlerai plus en détail dans le prochain article.
+As far as I am concerned, I stumbled across compatibility issues with PostgreSQL 9.6 at the time of testing (several months ago).
+It was therefore necessary to update the tool.
+Indeed, in the version 9.6, generation of random series changes syntax, the scripts are no longer compatible (see [documentation](https://www.postgresql.org/docs/9.6/static/pgbench.html)).
 
+Here is a link up to date with the last bug fixes and new features that I will cover in a later post : [here](https://github.com/emerichunter/pgbench-tools).
 
-## Dans quel cas l'utiliser ?
+## When to use it ?
 
-1. **C'est un choix parfait pour faire une comparaison exhaustive du changement d'un
-   paramètre**&nbsp;:
-Vous souhaitez améliorer des performances de façon générale dans le cadre d'une utilisation particulière de votre instance de base de données.
-Seules quelques heures de test sont nécessaires.
-Il n'est alors pas nécessaire d'entrer plusieurs échelles&nbsp;: seule la vôtre convient.
+1. **It is a perfect choice for comparing all-inclusively changing of a single parameter**&nbsp;:
+Should you wish to better your database's performances in a general manner.
+Only a handfull of hours should suffice.
+It is not necessary to test for many scales, or client or tps or anything else. 
+Juste tailor the settings to your particular configuration en environment and you should be fine.
 
-2. **Votre configuration matérielle change**&nbsp;: Vous gagnez au loto et vous investissez dans votre matériel, ou au contraire les choix stratégiques vous imposent de virtualiser ou de diminuer le nombre de noeuds de votre infrastructure.
-Vous souhaitez donc connaître la façon dont sera impactée votre instance avec ce nouveau matériel.
-Une série de comparaisons avec les 2 configurations permettra de se rendre facilement compte de l'évolution.
+2. **Your hardware configuration changes**&nbsp;: You may win at the lottery and invest in your hardware or on the contrary strategic choice is imposed to you : you have to virtualise or downgrade your configuration. 
+You may wish to know how your database will respond to this new hardware.
+A comparison between the 2 configurations will make you realise easily if your expactations are met.
 
-3. **Il s'inscrit parfaitement dans le cas de ce que l'on pourrait appeler le "bench continu"**. (Vous êtes riche comme Bruce Wayne&nbsp;: du temps, de l'argent et évidemment un Bat-Computer).
-Un serveur identique à la production sur lequel on répète des tests de bench en changeant des variables PostgreSQL.
-Dans ce scénario, difficile à proposer dans un contexte de restriction financière, on peut même imaginer un petit cluster avec un rejeu des transactions de production grâce à un proxy ou à un fichier de log.
-Nous reviendrons sur cette solution (passionnante à mon sens) dans un prochain article.
+3. **It's a perfect fit what one could call "continuous benchmarking"**. (You are as wealthy as Bruce Wayne&nbsp;: time, money and of course a Bat-computer).
+A server identical to production setup upon which tests are repeated changing variables one at a time.
+In this scenario, difficult to suggest in a finance limited situation, we could even imagine a (small) cluster with transactions replayed continuously with the help of a proxy or a parsed a log file.
+We will get back to that idea in a future post.
 
 ## Conclusion
 
-Comme on peut le constater à la lecture de cet article, `pgbench-tools` est un outil exhaustif qui permet d'industrialiser et fiabiliser ses tests de performance, tout en générant un rapport complet.
-Beaucoup d'aspects comme la reproductibilité, la sérialisation et les statistiques sont d'ores et déjà un bond en avant en comparaison de `pgbench` seul.
+As we can see, with regards to this post, `pgbench-tools` is an all-inclusive tool that enables you to automate and enhance reliability performance benchmarking while generating a fully comprehensive and complete report.
+Many aspects like reproductibility, serialisation and statistics are already a leap forward in comparison to `pgbench` alone.
 
-La compatibilité avec la version 9.6 étant un énorme frein, la correction me paraissait d'autant plus urgente avec la version 10 de PostgreSQL qui arrive à la fin de l'année.
-J'ai poussé cette modification, mais celle-ci reste en attente de validation par l'auteur Greg Smith.
-Je ne doute pas de la nécessité de devoir apporter d'autres corrections pour la nouvelle version qui s'annonce.
+Compatibility with version 9.6 was a major issue, fixing this was paramount as v10 was coming this year (which by the way is not changed in v10 - but I will have to adresse that later on).
+There is a pull request, but it is still hanging after months of waiting and is still not clear if it will ever be published.
+I have no doubt that some more fixing is going to be needed in the coming versions.
 
-Trouvant un grand intérêt à cet utilitaire, j'ai décidé de le forker et d'y amener d'autres améliorations et corrections.
-Je remets ici le lien : [pgbench-tools](https://github.com/emerichunter/pgbench-tools) avec les modifications si vous l'avez manqué plus haut.
+As I found myself very interested in this tool, I decided to fork it and bring my spin to the software.
+I give the link again, in case you missed it earlier on : [here](https://github.com/emerichunter/pgbench-tools) with corrections and upgrades.
 
-Nous avons vu les possibilités théoriques de l'outil, dans le prochain volet, je vous parlerai de certaines fonctionnalités avancées avec des exemples pour démarrer un bench.
+I showed you the theoretical capabilities of pgbench-tools, I will go into further detail and use a practical case to show you advanced features in the coming posts.
 
-A vos benchs !
+Until then : Bench it !
