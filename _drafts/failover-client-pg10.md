@@ -118,14 +118,17 @@ I was looking for a way to measure timewise loss of connection during the operat
 But how ? 
 Let's do some reading first, [here](http://paquier.xyz/postgresql-2/postgres-10-libpq-read-write/).
 
-Il suffit de préciser dans la chaîne de connexion si l'on souhaite se connecter à une instance en lecture-écriture (primaire) ou une instance sans distinction lecture seule ou lecture-écriture (standby ou primaire).
+<!--Il suffit de préciser dans la chaîne de connexion si l'on souhaite se connecter à une instance en lecture-écriture (primaire) ou une instance sans distinction lecture seule ou lecture-écriture (standby ou primaire).-->
 <!-- SAS&nbsp;: pas clair du tout. Que veut-on mesurer ? -->
-En l'occurence, pour un failover des écritures, il me faut retrouver une connexion sur un primaire acceptant les écritures.
-Je cherche par la même occasion, à mesurer le temps d'indisponibilité total et à quantifier en terme de temps les écritures perdues pendant l'opération de failover.
+<!--En l'occurence, pour un failover des écritures, il me faut retrouver une connexion sur un primaire acceptant les écritures.
+Je cherche par la même occasion, à mesurer le temps d'indisponibilité total et à quantifier en terme de temps les écritures perdues pendant l'opération de failover.-->
 <!-- /SAS -->
-Une petite lecture de ce post nous permet d'avoir une idée sur la façon de procéder [ici](http://paquier.xyz/postgresql-2/postgres-10-libpq-read-write/).
+<!-- Une petite lecture de ce post nous permet d'avoir une idée sur la façon de procéder [ici](http://paquier.xyz/postgresql-2/postgres-10-libpq-read-write/).-->
 
-Voici un petit extrait du script que j'ai écrit en suivant ces indications qui vous aiguillera encore d'avantage sur la façon de procéder&nbsp;:
+Here is a little extract of the script used and based on the not so crystal clear post I just mentionned.
+This will enlightened on how to proceed.
+
+<!--Voici un petit extrait du script que j'ai écrit en suivant ces indications qui vous aiguillera encore d'avantage sur la façon de procéder&nbsp;:-->
 
 ~~~
 
@@ -147,39 +150,56 @@ CONNINFO="postgresql://"$HOST_1":"$","$HOST_2":"$PORT_2","$HOST_3":"$PORT_3"/"$M
 ~~~
 
 
+### Quantify write loss and time loss : why ?
+<!--### Quantifier la perte d'écriture en terme de temps : Pourquoi ?-->
 
-### Quantifier la perte d'écriture en terme de temps : Pourquoi ?
-
-J'ai utilisé usleep pour écrire dans une table de log toute les 10ms en utilisant la chaîne de connexion décrite plus haut. 
+I used `usleep` to help me write in a log table every 10ms using the connection string described previously.
+It is possible to increase the sample rate but the reason I chose this timeframe is because it is imposed by the time dimension of my system, allow me to explain :
+<!--J'ai utilisé usleep pour écrire dans une table de log toute les 10ms en utilisant la chaîne de connexion décrite plus haut. 
 Il est possible d'augmenter la fréquence d'échantillonnage de notre mesure. 
-Cependant, j'ai choisi cette mesure pour tenter de respecter un ordre de grandeur determiné par les échelles de mon système&nbsp;:
+Cependant, j'ai choisi cette mesure pour tenter de respecter un ordre de grandeur determiné par les échelles de mon système&nbsp;:-->
 
-1. en dessous (largement) du temps total d'indisponibilité attendu (environ 20 secondes voir plus haut)
+1. (greatly) bellow total duration of downtime (around 20 seconds like I previously explained)
+2. below the time needed to actually trigger failover (somewhere around 1s)
+3. above hardware time limit : connexion to cluster, system and PG logs, CPU frequency... In that case, the tool used to measure could have otherwise influence greatly the results by having too many INSERTs during the test*.
+<!--1. en dessous (largement) du temps total d'indisponibilité attendu (environ 20 secondes voir plus haut)
 2. en dessous du temps nécessaire à la bascule une fois l'opération de basculement déclenchée (de l'ordre de 1s)
-3. au dessus des temps machines&nbsp;: connexion à l'instance, logs système et PG, frequence cpu... dans le cas contraire ma mesure aurait pu influencer le résultat par un trop grand nombre d'INSERTs à réaliser *. 
+3. au dessus des temps machines&nbsp;: connexion à l'instance, logs système et PG, frequence cpu... dans le cas contraire ma mesure aurait pu influencer le résultat par un trop grand nombre d'INSERTs à réaliser *. -->
 
 ****
-**NOTE**&nbsp;: * Ce qui aurait impacté les performances du serveur et de l'instance (imaginez une mesure toute les nanosecondes avec nanosleep&nbsp;: on atteindrait alors le milliard de tps !). 
+**NOTE**&nbsp;: * Which would have impacted performance of the server. Can you imagine 1 measure every nanosecond with nanosleep ? We would reach the billion tps !
+With a probe sent every 10ms we have a rate of 100tps for our logging.
+Which in turn translates into a daily trafic of 8 millions writes (perfectly reasonnable).
+<!--**NOTE**&nbsp;: * Ce qui aurait impacté les performances du serveur et de l'instance (imaginez une mesure toute les nanosecondes avec nanosleep&nbsp;: on atteindrait alors le milliard de tps !). 
 Avec une mesure toute les 10ms, nous avons alors 100 tps seulement pour le traçage des écritures. 
-Ce qui en soit correspond à un système avec une charge tout à fait honorable (environ 8 millions d'écritures par jour).
+Ce qui en soit correspond à un système avec une charge tout à fait honorable (environ 8 millions d'écritures par jour).-->
 ****
 
-J'ai donc fait cet utilitaire&nbsp;: [monitoring_replication](https://github.com/emerichunter/monitoring_replication) pour mesurer le nombre d'écritures 
+I build this little tool to make my measurment : [monitoring_replication](https://github.com/emerichunter/monitoring_replication).
+Installation and user guide are in the README. 
+
+<!--J'ai donc fait cet utilitaire&nbsp;: [monitoring_replication](https://github.com/emerichunter/monitoring_replication) pour mesurer le nombre d'écritures 
 et le temps pendant lequel les écritures sont venues à manquer sur l'instance pendant la panne et le failover.
-L'installation et le mode d'emploi sont expliqués en détails dans le README.
+L'installation et le mode d'emploi sont expliqués en détails dans le README.-->
 
+## Let's fill the WAL !
+<!--## Remplissons le WAL !-->
 
-## Remplissons le WAL !
+First, let's prepare the right conditions for our plan to unfold : fill the wal file system.
+Once this is done, we go take a look at the repmgrd.log and in the log table created for the occasion.
+<!--Tout d'abord, créons le bon scénario pour remplir notre FS de WAL. 
+Nous regardons ensuite dans les traces laissées par repmgrd.log et dans la table de log créée et approvisionnée par notre utilitaire.-->
 
-
-Tout d'abord, créons le bon scénario pour remplir notre FS de WAL. 
-Nous regardons ensuite dans les traces laissées par repmgrd.log et dans la table de log créée et approvisionnée par notre utilitaire.
+Here is an extract of `repmgrd.log` which refers to our test.
+Detection of failure appears line 2.
+The last 3 lines refer to promotion of standby chosen by `REPMGR`.
+Please note that time read at 21s until promotion is successful.
 
 <!-- SAS&nbsp;: Ca sort d'où ? -->
-Voici un extrait de la trace log de `repmgrd.log` correspondant au test de remplissage de FS.
+<!--Voici un extrait de la trace log de `repmgrd.log` correspondant au test de remplissage de FS.
 La détection de la panne a lieu ligne 2. 
 Les trois dernières lignes correspondent à la promotion du standby choisi en primaire.
-Notez que le marqueur de temps comptabilise 21 secondes jusqu'à la promotion du standby en nouveau primaire.
+Notez que le marqueur de temps comptabilise 21 secondes jusqu'à la promotion du standby en nouveau primaire.-->
 
 ~~~~
 
@@ -216,9 +236,11 @@ log node 2 (standby failover)
 
 ~~~~
 
+Let's have a look at insertions done by our tool. 
+
 <!-- SAS&nbsp;: Comment sont-elles mesurées ? Et à quoi correspondent-elles ? -->
-Regardons ensuite le résultat des insertions effectuées grâce à notre outil, comportant la chaine de connexion ainsi qu'une résolution temporelle de 10ms (1 INSERT toute les 10ms).
-Voici les mesures de pertes d'écritures lors de notre bascule vers notre nouveau primaire. (extrait)
+<!--Regardons ensuite le résultat des insertions effectuées grâce à notre outil, comportant la chaine de connexion ainsi qu'une résolution temporelle de 10ms (1 INSERT toute les 10ms).
+Voici les mesures de pertes d'écritures lors de notre bascule vers notre nouveau primaire. (extrait)-->
 <!-- And then the time measurement of writes loss during client failover to the newly elected master. (extract) -->
 
 |pk    | time                          |
@@ -242,35 +264,48 @@ Voici les mesures de pertes d'écritures lors de notre bascule vers notre nouvea
 | 5916 | 2017-07-13 10:29:47.053968+02 |
 | 5917 | 2017-07-13 10:29:47.108371+02 |
 
-Les écritures ont repris au bout de 21 secondes. 
-Le failover client fonctionne donc comme attendu. 
+Writes are back around 21s later.
+Client failover works just like expected.
+<!--Les écritures ont repris au bout de 21 secondes. 
+Le failover client fonctionne donc comme attendu. -->
 
+## They selected happily ever after... or did they ?
+<!--## Et ils vécurent heureux et eurent beaucoup de SELECT...-->
 
-## Et ils vécurent heureux et eurent beaucoup de SELECT...
-
-Nous avons de nouvelles écritures enregistrées au bout de 21 secondes, mais 25 INSERTS sont manquants (5886-5911).
-Le client reçoit une erreur lorsque les fichiers n'ont pas pu être flushé sur disque. 
+We have writes after 21s of downtime, but 25 INSERTS are missing (5886-5911).
+The client received an error when files couldn't be flush to disk.
+<!--Nous avons de nouvelles écritures enregistrées au bout de 21 secondes, mais 25 INSERTS sont manquants (5886-5911).
+Le client reçoit une erreur lorsque les fichiers n'ont pas pu être flushé sur disque.--> 
 <!-- SAS&nbsp;: Comment voit-on les nouvelles écritures ? Que doit-on faire de ces inserts manquants ? Où
 sont-ils ? Le client est-il prévenu ? -->
 
-Que s'est il passé ? 
+What happened ?
+<!--Que s'est il passé ? -->
 
 ## Q & A
 
-Nous allons par la suite procéder avec des questions/réponses. 
+Let us proceed by question/answer :
+<!--Nous allons par la suite procéder avec des questions/réponses. -->
 
+### Where are the missing lines ?
+<!--### Où sont les lignes manquantes ? -->
 
-### Où sont les lignes manquantes ? 
-
+I'd like to mention that `synchronous_standby` is ON.
+However, `synchronous_standby_names` is empty : `REPMGR` is not meant to work that way and might not switch.
+Writes work therefore in an asynchronous manner.
+Client gets confirmation of write when informations are flushed on primary.
 <!-- SAS&nbsp;: Je ne suis pas sûr de comprendre la suite. -->
-A ce stade, je préfère mentionner que le paramètre `synchronous_standby` est à ON.
+<!--A ce stade, je préfère mentionner que le paramètre `synchronous_standby` est à ON.
 Cependant, `synchronous_standby_names` est resté vide&nbsp;: le fonctionnement de bascule automatique de REPMGR n'est pas prévu pour cela et pourrait mal fonctionner.
 Les écritures se comportent alors de manière asynchrones.
-Le client obtient une réponse de confirmation lorsque les informations ont été flushées sur le disque du primaire.
+Le client obtient une réponse de confirmation lorsque les informations ont été flushées sur le disque du primaire.-->
 
-Il reçoit une erreur lorsque l'espace disque vient à manquer sur le système de fichier. 
+It gets an error when disk space is missing on FS.
+The client does not do a rollback, write are not written durably in the database.
+**Missing write are therefore in a wal file on the primary.**
+<!--Il reçoit une erreur lorsque l'espace disque vient à manquer sur le système de fichier. 
 Le client ne fait pas de rollback, les écritures ne sont donc pas enregistrées durablement dans la base de données.
-**Les lignes sont donc sur un fichier wal sur le primaire.**
+**Les lignes sont donc sur un fichier wal sur le primaire.**-->
 
 ### Pourrais-je éviter de perdre ces lignes à l'avenir ?
 **Oui**, si j'active le synchronous_standby_names en identifiants les instances secondaires, les écritures se comporteront de façon synchrones et 
