@@ -3,42 +3,27 @@ layout: default
 ---
 
   	{% include partials/navigation/nav-section.html %}
-    <header  id="page-header" style="background-image: url('{{ site.baseurl }}/img/thumb_4.jpg');">
-		<div>
-			<h1>{{ site.name }}</h1>
-			{% if site.description %}<h2><small>{{ site.description }}</small></h2>{% endif %}
-		</div>
-	</header>
+<header  id="page-header" style="background-image: url('{{ site.baseurl }}/img/thumb.jpg');">
+	<div>
+		<h1>{{ site.name }}</h1>
+		{% if site.description %}<h2><small>{{ site.description }}</small></h2>{% endif %}
+	</div>
+</header>
 <main id="page-main" role="main">
-	<div id="layout">
+	<div>
   	{% for post in site.posts %}
-    	<article class="post">
-    	{% if post.day %}
-    	<section class="ical-front filled red thin thumb-1">
-    	<h4 class="day">{{ post.day }}</h4>
-		<h4 class="month">{{ post.month }}</h4>
-		</section>
-    	{% endif %}
-
-    	{% if post.post %}
-    	<section class="ical-front filled soft-grey thin thumb-1">
-    	<h4 class="day icon icon-bullhorn"></h4>
-		<h4 class="month">Notícies</h4>
-		</section>
-    	{% endif %}
-
-    	{% if post.video %}
-    	<section class="ical-front filled soft-grey thin thumb-1">
-    	<h4 class="day icon icon-youtube"></h4>
-		<h4 class="month">Videos</h4>
-		</section>
-    	{% endif %}
-		
-      	<section class="post-content thumb-10">
-		<h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
-        {{ post.excerpt }}
-      	<a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Llegir Més</a>
-      	</section>
+    	<article>
+    		{% if post.video %}
+    		<section class="ical-front filled soft-grey thin thumb-1">
+    			<h4 class="day icon icon-youtube"></h4>
+				<h4 class="month">Videos</h4>
+			</section>
+    		{% endif %}
+      		<section>
+				<h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
+        		{{ post.excerpt }}
+      			<em><a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Llegir Més</a></em>
+      		</section>
     	</article>
   	{% endfor %}
 	</div>
