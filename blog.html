@@ -10,27 +10,47 @@ layout: default
 	</div>
 </header>
 <main id="page-main" role="main">
-	<div>
-  	{% for post in site.posts %}
-    	<article>
+	<div id="layout">
+					<nav class="nav-scroll">
+						<div>
+							<label for="layout-simple" title="Simple" id="label-simple">Simple</label>
+							<label for="layout-list" title="List" id="label-list">List</label>
+							<label for="layout-table" title="Table" id="label-table">Table</label>
+							<label for="layout-gallery" title="Gallery" id="label-gallery">Gallery</label>
+							<label for="layout-cards" title="Cards" id="label-cards">Cards</label>		
+							<label for="layout-tiles" title="Tiles" id="label-tiles">Tiles</label>		
+						 </div>
+					</nav>
+					<hr>
+					
+					<input type="radio" name="layout" id="layout-simple" aria-hidden="true" hidden checked>
+					<input type="radio" name="layout" id="layout-list" aria-hidden="true" hidden>
+					<input type="radio" name="layout" id="layout-table" aria-hidden="true" hidden>
+					<input type="radio" name="layout" id="layout-gallery" aria-hidden="true" hidden>
+					<input type="radio" name="layout" id="layout-cards" aria-hidden="true" hidden>
+					<input type="radio" name="layout" id="layout-tiles" aria-hidden="true" hidden>
+					
+  		{% for post in site.posts %}
+    	<div id="layout-result">
     		{% if post.video %}
     		<section class="ical-front filled soft-grey thin thumb-1">
     			<h4 class="day icon icon-youtube"></h4>
 				<h4 class="month">Videos</h4>
 			</section>
     		{% endif %}
-      		<section>
+      		<article>
 				<h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
-        		{{ post.excerpt }}
-      			<em><a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Llegir Més</a></em>
-      		</section>
-    	</article>
-  	{% endfor %}
+        		<div>{{ post.excerpt }}</div>
+      			<nav><a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Llegir Més</a></nav>
+      		</article>
+    	</div>
+  		{% endfor %}
+
+		<section>
+		{% include partials/suscribe.html %}
+		</section>
+		<section>
+    	{% include svg-icons.html %}
+		</section>
 	</div>
-	<section>
-	{% include partials/suscribe.html %}
-	</section>
-	<section>
-    {% include svg-icons.html %}
-	</section>
 </main>
