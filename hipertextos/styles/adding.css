@@ -3,6 +3,7 @@
 
 /* ------------------------------------------------------------ Resets */
 
+#site-nav {border-bottom:none;box-shadow: 0 1px 12px rgba(0,0,0,.032);}
 #site-nav a {	font-weight: normal;min-width:12%;}
 #site-nav a b {text-transform: uppercase;}
 #site-nav, footer, #follows, #icons, .nav-scroll {text-align: center;}
@@ -18,7 +19,7 @@
 	background-repeat: no-repeat;
 	border:none;
 }
-.cover-page #page-header {position:sticky;
+.cover-page #page-header {border:1px solid rgba(255,255,255,0.5);box-shadow:inset 0 -1px 7px rgba(0,0,0,.06);
 	background-position: top center;
 	background-attachment: fixed;
 	background-size: cover;
