@@ -19,28 +19,28 @@
   <body>
 	{% include partials/navigation/nav-about.html %}
 	<!-- Page content -->
-	<div class="page full-cover flat black" id="page" style="background-image: url('{{ site.baseurl }}/img/about.jpg');">
-		<header class="header-up">
+	<div class="page" id="page">
+		<header id="page-header" class="banner" style="background-image: url('{{ site.baseurl }}/img/about.jpg');">
+			<div>
 						<h3>BIO</h3>
+			</div>
 		</header>
-		<main id="content" class="universe">
-		<section class="section-blank">
-		{{ content }}
-		</section>			
-							<hr class="filled black">					
-					<section class="universe filled white section-blank">
-						<div class="musics">
-						<h3>Formació</h3>
-						{% if site.site_musics %}
-						<h4>{{ site.site_musics }}</h4>
-						{% endif %}
-						</div>
-					</section>
-							<hr class="filled black">
+		<main id="page-main">
+			<div>
+				<section>
+				{{ content }}
+				</section>			
+				<section class="universe filled white section-blank">
+					<h3>Formació</h3>
+					{% if site.site_musics %}
+					<h4>{{ site.site_musics }}</h4>
+					{% endif %}
+				</section>
 							
-					<section class="universe filled white section-blank">
+				<section class="universe filled white section-blank">
 					{% include partials/suscribe.html %}
-					</section>
+				</section>
+			</div>
 		</main>
 		{% include partials/footerslim.html %}
 	</div><!-- /#page -->
