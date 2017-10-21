@@ -45,12 +45,13 @@ layout: default
       		</article>
     	</div>
   		{% endfor %}
-
-		<section>
-		{% include partials/suscribe.html %}
-		</section>
-		<section>
-    	{% include svg-icons.html %}
-		</section>
+	</div>
+	<div>
+			<section id="follows">
+			<h3>Segueix-nos!</h3>
+			{% include partials/suscribe.html %}
+			<hr>
+            {% include svg-icons.html %}
+    		</section>
 	</div>
 </main>
