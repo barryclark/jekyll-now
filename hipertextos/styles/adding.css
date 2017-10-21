@@ -1,3 +1,19 @@
+---
+---
+
+//
+// IMPORTS
+//
+
+@import "reset";
+@import "variables";
+// Syntax highlighting @import is at the bottom of this file
+
+/**************/
+/* BASE RULES */
+/**************/
+
+
 /* BarcelonaCSS */
 /* by Acozar/Miralles  ADDING CSS */
 
@@ -11,3 +27,10 @@ nav {text-align: center;}
 	height: 80vh;
 	padding-top: 210px;
 }
+
+
+
+// Settled on moving the import of syntax highlighting to the bottom of the CSS
+// ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
+@import "highlights";
+@import "svg-icons";
