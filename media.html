@@ -5,59 +5,57 @@ permalink: /media/
 ---
 
     <main id="page-main" role="main">
-	<div id="layout" class="gallery">
-		<div>
-			<article>					
+	<div id="layout" class="tiles">
+			<section>					
     			<h5 class="thin"><u>Cartells</u></h5>
-    			<hr>
     			<div class="mosaic-imagens">
-  <figure class="imagens">
+  <article class="imagens">
     <a href="{{ site.baseurl }}/assets/cartells/image1.jpg" data-lightbox="roadtrip"><img class="flat white squared" src="{{ site.baseurl }}/assets/cartells/image1.jpg" alt="{{ image.basename }}"></a>
-  </figure>
-  <figure class="imagens">
+  </article>
+  <article class="imagens">
     <a href="{{ site.baseurl }}/assets/cartells/image2.jpg" data-lightbox="roadtrip"><img class="flat white squared" src="{{ site.baseurl }}/assets/cartells/image2.jpg" alt="{{ image.basename }}"></a>
-  </figure>
-  <figure class="imagens">
+  </article>
+  <article class="imagens">
     <a href="{{ site.baseurl }}/assets/cartells/image3.jpg" data-lightbox="roadtrip"><img class="flat white squared" src="{{ site.baseurl }}/assets/cartells/image3.jpg" alt="{{ image.basename }}"></a>
-  </figure>
-  <figure class="imagens">
+  </article>
+  <article class="imagens">
     <a href="{{ site.baseurl }}/assets/cartells/image4.jpg" data-lightbox="roadtrip"><img class="flat white squared" src="{{ site.baseurl }}/assets/cartells/image4.jpg" alt="{{ image.basename }}"></a>
-  </figure>
-  <figure class="imagens">
+  </article>
+  <article class="imagens">
     <a href="{{ site.baseurl }}/assets/cartells/image5.jpg" data-lightbox="roadtrip"><img class="flat white squared" src="{{ site.baseurl }}/assets/cartells/image5.jpg" alt="{{ image.basename }}"></a>
-  </figure>
-  <figure class="imagens">
+  </article>
+  <article class="imagens">
     <a href="{{ site.baseurl }}/assets/cartells/image6.jpg" data-lightbox="roadtrip"><img class="flat white squared" src="{{ site.baseurl }}/assets/cartells/image6.jpg" alt="{{ image.basename }}"></a>
-  </figure>
-  <figure class="imagens">
+  </article>
+  <article class="imagens">
     <a href="{{ site.baseurl }}/assets/cartells/image7.jpg" data-lightbox="roadtrip"><img class="flat white squared" src="{{ site.baseurl }}/assets/cartells/image7.jpg" alt="{{ image.basename }}"></a>
-  </figure>
-  <figure class="imagens">
+  </article>
+  <article class="imagens">
     <a href="{{ site.baseurl }}/assets/cartells/image8.jpg" data-lightbox="roadtrip"><img class="flat white squared" src="{{ site.baseurl }}/assets/cartells/image8.jpg" alt="{{ image.basename }}"></a>
-  </figure>
-  <figure class="imagens">
+  </article>
+  <article class="imagens">
     <a href="{{ site.baseurl }}/assets/cartells/image9.jpg" data-lightbox="roadtrip"><img class="flat white squared" src="{{ site.baseurl }}/assets/cartells/image9.jpg" alt="{{ image.basename }}"></a>
-  </figure>
+  </article>
 		    	</div>
-			</article>
-			<article>					
+			</section>
+			<section>					
     			<h5 class="thin"><u>Fotografíes</u></h5>
-    			<hr>
     			<div class="mosaic-imagens">		
-{% assign image_files = site.static_files | where: "image", true %}
-{% for image in image_files %}
-  <figure class="imagens">
-    <a href="{{ site.baseurl }}/assets/fotos/{{ image.name }}" data-lightbox="roadtrip"><img class="flat white squared" src="{{ site.baseurl }}/assets/fotos/{{ image.name }}" alt="{{ image.basename }}"></a>
-  </figure>
-{% endfor %}
+	{% assign image_files = site.static_files | where: "image", true %}
+	{% for image in image_files %}
+	<article class="imagens">
+    	<a href="{{ site.baseurl }}/assets/fotos/{{ image.name }}" data-lightbox="roadtrip"><img class="flat white squared" src="{{ site.baseurl }}/assets/fotos/{{ image.name }}" alt="{{ image.basename }}"></a>
+	</article>
+	{% endfor %}
 		    	</div>
-			</article>
-		</div><!-- /#viewer -->
+			</section>
 	</div><!-- /#Layout -->
-	<section>
-	{% include partials/suscribe.html %}
-	</section>
-	<section>
-    {% include svg-icons.html %}
-	</section>
-</main>
+	<div>
+		<section>
+		{% include partials/suscribe.html %}
+		</section>
+		<section>
+    	{% include svg-icons.html %}
+		</section>
+	</div>
+	</main>
