@@ -3,7 +3,7 @@
 
 /* ------------------------------------------------------------ Resets */
 
-nav a {	font-weight: normal;}
+nav a {	font-weight: normal;min-width:12%;}
 nav a b {text-transform: uppercase;}
 nav {text-align: center;}
 .cover h2 {letter-spacing: 0.001em;font-weight: normal; }
@@ -18,4 +18,8 @@ nav {text-align: center;}
 
 /* Listed */ 
 .mosaic-imagens a {	margin:0!important;padding:0!important;	}
-.listed article { border:none;overflow: hidden;width: 100%;display: block;display: inline-block;margin: 0.01em;padding:0;-webkit-column-break-inside: avoid;-moz-column-break-inside:avoid;-moz-page-break-inside:avoid;page-break-inside: avoid;}
+.listed article { 
+border:none;overflow: hidden;width: 100%;
+display: block;display: inline-block;margin: 0.01em;padding:0;
+-webkit-column-break-inside: avoid;-moz-column-break-inside:avoid;-moz-page-break-inside:avoid;page-break-inside: avoid;
+}
