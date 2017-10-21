@@ -13,9 +13,9 @@ nav {text-align: center;}
 }
 
 /* Classic Gallery */ 
-.listed section {	-webkit-column-count: 4;-moz-column-count: 4;column-count: 4;border:none;line-height:2em;font-size:0.12em;}
+.listed section {	-webkit-column-count: 4;-moz-column-count: 4;column-count: 4;border:none;line-height:2em;font-size:0.2em;}
 .imagens img {margin:0!important;padding:0!important;border:none;}
-
+.listed {padding:0!important;}
 /* Listed */ 
 .listed img {	margin:0!important;padding:0!important;	}
 .listed article { 
@@ -23,4 +23,3 @@ border:none;overflow: hidden;width: 100%;
 display: block;display: inline-block;margin:0!important;padding:0!important;
 -webkit-column-break-inside: avoid;-moz-column-break-inside:avoid;-moz-page-break-inside:avoid;page-break-inside: avoid;
 }
-
