@@ -4,7 +4,7 @@ title: Introduction to Tensorflow and Linear Regression
 mathjax: True
 ---
 
-
+A link to the slides given at the workshop is available [here](http://bit.ly/2hTLMjb).
 # Last Week's Review
 
 Before diving into this week's new material, we wanted to first take a step back and review what we learned last week since linear regression is a fundamental model within machine learning. We also wanted to go back and review some Tensorflow specifics.
