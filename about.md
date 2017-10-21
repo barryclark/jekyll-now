@@ -16,7 +16,7 @@ _[isardmt@gmail.com](mailto:isardmt@gmail.com)_
 _[Trucar al 658973617](tel:+34 658973617)_
 
 
-######O bé a través de les Xarxes
+###### O bé a través de les Xarxes
 {% include svg-icons.html %}
 
 
