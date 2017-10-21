@@ -1,107 +1,33 @@
 library(dplyr)
 library(tidyr)
 library(purrr)
+library(purrrlyr)
 library(stringr)
 library(ggplot2)
+library(metafor)
 
 a <- read.csv("http://datacolada.org/wp-content/uploads/2017/10/Smaller-ManyLabs-Cleaned-Dataset-file.csv")  
 
-metak <- function(x, group, lab) {
-  
-  m <- tapply(x, list(lab, group), mean, na.rm = TRUE)
-  s <- tapply(x, list(lab, group), sd, na.rm = TRUE)
-  n <- tapply(x, list(lab, group), function(x) sum(!is.na(x)))
-  
-  
-  meta_RE <- rma(measure="SMD",
-                 m1i = m[,1], m2i= m[,2], 
-                 sd1i = s[,1], sd2i = s[,2], 
-                 n1i = n[,1], n2i = n[,2],
-                 method="HE")
-  
-  with(meta_RE, data.frame(b = as.numeric(b), tau = sqrt(tau2), Isq = I2, p = QEp))
-}
+labs <- 26
+referrer <- factor(rep(LETTERS, rpois(labs, lambda = 40)))
+n <- length(referrer)
+anch1group <- sample(c(0,1), size = n, replace = TRUE)
+anch2group <- sample(c(0,1), size = n, replace = TRUE)
+anch3group <- sample(c(0,1), size = n, replace = TRUE)
+anch4group <- sample(c(0,1), size = n, replace = TRUE)
+Ranch1 <- rnorm(n, mean = 0, sd = 1)
+Ranch2 <- rnorm(n, mean = ifelse(anch2group==1, 0.5, 0), sd = 1)
+Ranch3 <- rnorm(n, mean = ifelse(anch4group==1, 0.5, 0), sd = 1) + 
+  rnorm(nlevels(referrer), sd = 0.3)[referrer]
+Ranch4 <- rnorm(n, mean = ifelse(anch4group==1, 0.5, 0), sd = rexp(labs, rate = 1)[referrer]) + 
+  rnorm(labs, sd = 0.3)[referrer]
 
-meta_boot <- function(x, group, lab, boots = 1000, seed = NULL) { 
-  if (!is.null(seed)) set.seed(seed)
-  
-  rerun(boots, {
-    lab.boot=sample(lab)
-    metak(x = x, group = group, lab = lab.boot)
-  }) %>%
-    bind_rows()
-}
+a <- data.frame(referrer, anch1group, anch2group, anch3group, anch4group, 
+                Ranch1, Ranch2, Ranch3, Ranch4)
 
-run_meta_boot <- function(x, group, lab, boot = 1000, seed = NULL) {
-  
-  meta_actual <- metak(x = x, group = group, lab = lab)
-  meta_null <- meta_boot(x = x, group = group, lab = lab, boot = boot, seed = seed)
-  
-  par(mfrow=c(2,2))
-  
-  b_rng <- range(c(meta_actual$b, meta_null$b))
-  hist(meta_null$b, main="Effect size", xlab = "", xlim = b_rng)
-  abline(v = meta_actual$b, col = "red")
-  
-  p_rng <- range(c(meta_actual$p, meta_null$p))
-  hist(meta_null$p, main="p-value for heterogeneity under the null", xlim = p_rng)
-  abline(v = meta_actual$p, col = "red")
-  
-  Isq_rng <- range(c(meta_actual$Isq, meta_null$Isq))
-  hist(meta_null$Isq, main="Distribution of I2 under-null", xlim = Isq_rng)
-  abline(v = meta_actual$Isq, col = "red")
-  
-  tau_rng <- range(c(meta_actual$tau, meta_null$tau))
-  hist(meta_null$tau, main="tau", xlim = tau_rng)
-  abline(v = meta_actual$tau, col = "red")
-  
-  
-  list(actual = meta_actual, boot = meta_null)
-}
-
-#-----------------------------------------------
-# Replicate Uri's bootstrapping approach
-#-----------------------------------------------
-
-Ranch1_res <- with(a, run_meta_boot(x = Ranch1, group = anch1group, lab = referrer))
-Ranch2_res <- with(a, run_meta_boot(x = Ranch2, group = anch2group, lab = referrer))
-Ranch3_res <- with(a, run_meta_boot(x = Ranch3, group = anch3group, lab = referrer))
-Ranch4_res <- with(a, run_meta_boot(x = Ranch4, group = anch4group, lab = referrer))
-
-# Note that the actual average effect size estimates are far outside the range of simulated values.
-# This means that the simulation process (re-randomizing the lab) is imposing a further restriction
-# in addition to the null of zero between-study heterogeneity.
-
-
-# simulated data
-
-sim_dat <- select(a, group = anch1group, lab = referrer)
-n <- nrow(sim_dat)
-sim_dat$y1 <- with(sim_dat, rnorm(n, mean = 0, sd = 1))
-sim_dat$y2 <- with(sim_dat, rnorm(n, mean = ifelse(group==1, 0.5, 0), sd = 1))
-sim_dat$y3 <- with(sim_dat, rnorm(n, mean = ifelse(group==1, nchar(as.character(lab)) / 8, 0), sd = 1))
-sim_dat$y4 <- with(sim_dat, rnorm(n, mean = ifelse(group==1, 0.5, 0), sd = 1) + rnorm(nlevels(lab), sd = 0.3)[lab])
-sim_dat$y5 <- with(sim_dat, rnorm(n, mean = ifelse(group==1, nchar(as.character(lab)) / 8, 0), sd = 1) + rnorm(nlevels(lab), sd = 0.3)[lab])
-
-sim1_res <- with(sim_dat, run_meta_boot(x = y1, group = group, lab = lab))
-mean(sim1_res$boot$p < .05)
-
-sim2_res <- with(sim_dat, run_meta_boot(x = y2, group = group, lab = lab))
-mean(sim2_res$boot$p < .05)
-
-sim3_res <- with(sim_dat, run_meta_boot(x = y3, group = group, lab = lab))
-mean(sim3_res$boot$p < .05)
-
-sim4_res <- with(sim_dat, run_meta_boot(x = y4, group = group, lab = lab))
-mean(sim4_res$boot$p < .05)
-
-sim5_res <- with(sim_dat, run_meta_boot(x = y5, group = group, lab = lab))
-mean(sim5_res$boot$p < .05)
-
-#-----------------------------------------------
-# Calculate summary statistics
-#-----------------------------------------------
-
+#----------------------------------------------------
+# turn data into long format for easier processing
+#----------------------------------------------------
 
 long_dat <- 
   a %>%
@@ -114,11 +40,152 @@ long_dat <-
   ) %>%
   select(-x) %>%
   spread(group, val)
+
+
+metak <- function(x, group, lab, method = "HE") {
   
+  m <- tapply(x, list(lab, group), mean, na.rm = TRUE)
+  s <- tapply(x, list(lab, group), sd, na.rm = TRUE)
+  n <- tapply(x, list(lab, group), function(x) sum(!is.na(x)))
+  
+  meta <- rma(measure="SMD",
+                 m1i = m[,1], m2i= m[,2], 
+                 sd1i = s[,1], sd2i = s[,2], 
+                 n1i = n[,1], n2i = n[,2],
+                 method = method)
+  
+  with(meta, data.frame(b = as.numeric(b), tau = sqrt(tau2), Isq = I2, p = QEp))
+}
+
+meta_reps <- function(x, group, lab, reps = 1000, seed = NULL) { 
+  if (!is.null(seed)) set.seed(seed)
+  
+  rerun(reps, {
+    lab_resample <- sample(lab)
+    metak(x = x, group = group, lab = lab_resample)
+  }) %>%
+    bind_rows()
+}
+
+run_meta_RT <- function(x, group, lab, reps = 1000, seed = NULL, 
+                          graph = TRUE, all_results = FALSE) {
+  
+  meta_actual <- metak(x = x, group = group, lab = lab)
+  meta_null <- meta_reps(x = x, group = group, lab = lab, reps = reps, seed = seed)
+  
+  if (graph) {
+    p <- par("mfrow")
+    par(mfrow=c(2,2))
+    
+    b_rng <- range(c(meta_actual$b, meta_null$b))
+    hist(meta_null$b, main="Effect size", xlab = "", xlim = b_rng)
+    abline(v = meta_actual$b, col = "red")
+    
+    p_rng <- range(c(meta_actual$p, meta_null$p))
+    hist(meta_null$p, main="p-value for heterogeneity under the null", xlab = "", xlim = p_rng)
+    abline(v = meta_actual$p, col = "red")
+    
+    Isq_rng <- range(c(meta_actual$Isq, meta_null$Isq))
+    hist(meta_null$Isq, main="Distribution of I2 under-null", xlab = "", xlim = Isq_rng)
+    abline(v = meta_actual$Isq, col = "red")
+    
+    tau_rng <- range(c(meta_actual$tau, meta_null$tau))
+    hist(meta_null$tau, main="tau", xlab = "", xlim = tau_rng)
+    abline(v = meta_actual$tau, col = "red")
+    
+    par(mfrow = p)  
+  }
+  
+  p_vals <- data_frame(b = mean(abs(meta_actual$b) > abs(meta_null$b)),
+              tau = mean(meta_actual$tau > meta_null$tau),
+              Isq = mean(meta_actual$Isq > meta_null$Isq),
+              p = mean(meta_actual$p < meta_null$p))
+  
+  if (all_results) {
+    return(list(p_vals = p_vals, actual = meta_actual, sim = meta_null))
+  } else {
+    return(p_vals)
+  }
+}
+
+#-----------------------------------------------
+# Replicate Uri's bootstrapping approach
+#-----------------------------------------------
+
+meta_results <- 
+  long_dat %>%
+  group_by(dv) %>%
+  do(metak(x = .$y, group = .$group, lab = .$lab))
+
+long_dat %>%
+  group_by(dv) %>%
+  do(run_meta_RT(x = .$y, group = .$group, lab = .$lab, graph = TRUE))
+
+# Note that the actual average effect size estimates are far outside the range of simulated values.
+# This means that the simulation process (re-randomizing the lab) is imposing a further restriction
+# in addition to the null of zero between-study heterogeneity.
+
+
+# simulated data
+
+sim_dat <- 
+  select(a, group = anch1group, lab = referrer) %>%
+  mutate(
+    y1 = rnorm(n(), mean = 0, sd = 1),
+    y2 = rnorm(n(), mean = ifelse(group==1, 0.5, 0), sd = 1),
+    y3 = rnorm(n(), mean = ifelse(group==1, nchar(as.character(lab)) / 8, 0), sd = 1),
+    y4 = rnorm(n(), mean = ifelse(group==1, 0.5, 0), sd = 1) + 
+      rnorm(nlevels(lab), mean = 0, sd = 0.3)[lab],
+    y5 = rnorm(n(), mean = ifelse(group==1, nchar(as.character(lab)) / 8, 0), sd = 1) +
+      rnorm(nlevels(lab), mean = 0, sd = 0.3)[lab]
+  ) %>%
+  gather("mod","y", y1:y5)
+
+sim_dat %>%
+  group_by(mod) %>%
+  do(run_meta_RT(x = .$y, group = .$group, lab = .$lab, graph = TRUE))
+
+#------------------------------------------------------
+# Simulate rejection rates of Uri's randomization test
+#------------------------------------------------------
+
+sim_reject_rate <- function(group, lab, ES = 0, btw = 0, df = 0,
+                            reps = 1000, RTs = 1000, alpha = 0.05, seed = NULL) {
+  if (!is.null(seed)) set.seed(seed)
+  
+  n <- length(lab)
+  labs <- nlevels(lab)
+  
+  rerun(reps, {
+    y_btw <- rnorm(labs, mean = 0, sd = btw)
+    scale <- if (df > 0) rchisq(labs, df = df) / df else rep(1, labs)
+    y <- (rnorm(n, mean = ifelse(group==1, ES, 0), sd = 1) + y_btw[lab]) * scale[lab]
+    run_meta_RT(x = y, group = group, lab = lab, reps = RTs, graph = FALSE)  
+  }) %>%
+    bind_rows() %>%
+    summarise_all(funs(mean(. < alpha)))
+}
+
+params <- cross_df(list(
+  ES = c(0, 0.5), 
+  btw = c(0, 0.3),
+  df = c(0, 10)
+))
+
+results <- invoke_rows(sim_reject_rate, params, 
+                       group = group, lab = lab,
+                       reps = 10, RTs = 10)
+
+results %>% 
+  unnest()
+
+#-----------------------------------------------
+# Calculate summary statistics
+#-----------------------------------------------
 
 summary_stats <- 
   long_dat %>%
-  group_by(lab, dv, group) %>%
+  group_by(dv, lab, group) %>%
   summarize(
     m = mean(y, na.rm = TRUE),
     sd = sd(y, na.rm = TRUE),
@@ -126,11 +193,33 @@ summary_stats <-
   ) %>%
   summarise(
     m0 = m[group==0],
+    m1 = m[group==1],
     sd_pooled = sqrt(sum((n - 1) * sd^2) / sum(n - 1))
   )
 
 ggplot(summary_stats, aes(sd_pooled)) + 
   geom_histogram() + 
+  facet_wrap(~ dv, scales = "free_x") + 
+  theme_minimal()
+
+ggplot(summary_stats, aes(m0, sd_pooled)) + 
+  geom_point() + 
   facet_wrap(~ dv, scales = "free") + 
   theme_minimal()
 
+meta_results <- 
+  long_dat %>%
+  group_by(dv) %>%
+  do(metak(x = .$y, group = .$group, lab = .$lab))
+
+
+transformed_dat <- 
+  long_dat %>%
+  left_join(meta_results, by = "dv") %>%
+  left_join(summary_stats, by = c("dv", "lab")) %>%
+  mutate(y_trans = (y - ifelse(group==0, m0, m1)) / sd_pooled + b * (group==1)) %>%
+  select(dv, lab, group, y, y_trans)
+
+transformed_dat %>%
+  group_by(dv) %>%
+  do(run_meta_RT(x = .$y_trans, group = .$group, lab = .$lab, graph = TRUE))
