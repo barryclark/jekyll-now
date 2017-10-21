@@ -6,15 +6,21 @@ permalink: /about/
 ---
 
 ## Sobre mí
-Quintet de música retro-americana. Un elegant repás cronològic a l'essència i origen de la música popular des dels anys 20 fins a l'actualitat. Clàssics del swing més autèntic, joies del jazz més íntim i composicions per a cine. Formació original a quartet desde 2010.
+Isard Miralles, il·lustrador i dissenyador gràfic de Barcelona.
+
+Vaig estudiar Arts Aplicades, il·lustració i pintura.
+I posteriorment música moderna.
+Actualment compagino la vida de músic amb la de creatiu gràfic sent aquestes dos les meves grans passions.
+
+Si em necessites per a algun projecte serà un plaer poder ajudar-te. Pots posar-te en contacte amb mi, respondré el més aviat possible.
 
 ----
 
 ## Contacte
-Podeu posar-vos en contacte amb mi a través del correu, trucant, vía Whatsapp o Telegram
 
 _[isardmt@gmail.com](mailto:isardmt@gmail.com)_ 
 _[Trucar al 658973617](tel:+34 658973617)_
+_[Desar Contacte](download:xxx)_
 
 O bé a través de les Xarxes
 
