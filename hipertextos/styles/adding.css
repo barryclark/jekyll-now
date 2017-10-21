@@ -5,7 +5,7 @@
 
 #site-nav a {	font-weight: normal;min-width:12%;}
 #site-nav a b {text-transform: uppercase;}
-#site-nav, footer, #follows, #icons {text-align: center;}
+#site-nav, footer, #follows, #icons, .nav-scroll {text-align: center;}
 .cover h2 {letter-spacing: 0.001em;font-weight: normal; }
 .cover {
 	height: 80vh;
