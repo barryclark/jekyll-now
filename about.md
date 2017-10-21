@@ -13,10 +13,10 @@ Quintet de música retro-americana. Un elegant repás cronològic a l'essència 
 ## Contacte
 Podeu posar-vos en contacte amb mi a través del correu, trucant, vía Whatsapp o Telegram
 
+----
 _[isardmt@gmail.com](mailto:isardmt@gmail.com)_ 
 _[Trucar al 658973617](tel:+34 658973617)_
 
-----
 O bé a través de les Xarxes
 
 {% include svg-icons.html %}
