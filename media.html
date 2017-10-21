@@ -6,8 +6,8 @@ permalink: /media/
 
     <main id="page-main" role="main">
 	<div id="layout" class="listed">
-			<section>					
     			<h5><u>Cartells</u></h5>
+			<section>					
   <article>
 	<a href="{{ site.baseurl }}/assets/cartells/image1.jpg" data-lightbox="roadtrip"><img class="imagens" src="{{ site.baseurl }}/assets/cartells/image1.jpg" alt="{{ image.basename }}"></a>
   </article>
@@ -37,8 +37,8 @@ permalink: /media/
   </article>
 			</section>
 			<hr>
-			<section>					
     			<h5><u>Fotografíes</u></h5>
+			<section>					
 	{% assign image_files = site.static_files | where: "image", true %}
 	{% for image in image_files %}
 	<article>
