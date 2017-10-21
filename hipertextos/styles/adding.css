@@ -11,16 +11,12 @@
 	height: 80vh;
 	padding-top: 210px;
 }
-.cover-page {
+#page.cover-page {
 	background-position: top center;
 	background-attachment: fixed;
 	background-size: cover;
 	background-repeat: no-repeat;
 	border:none;
-	color: #fff;
-	letter-spacing: .2em;
-	overflow: hidden;
-	text-align: center;
 }
 
 /* Classic Gallery */ 
