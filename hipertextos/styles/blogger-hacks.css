@@ -1,26 +1,5 @@
 /* Blogger hacks */
 
-/* Images */
-
-article .article-body {
-	margin: 1em 0;
-}
-article .article-body img {
-	border: thin solid #aaa;
-	float: left;
-	margin: 0 1em;
-	object-fit: cover;
-	width: 10em;
-	height: 10em;
-}
-article .article-content img {
-	border: thin solid #aaa;
-	display: block;
-	margin: 1em auto;
-	width: 80%;
-	height: auto;
-}
-
 /* Blogger labels */
 
 article .blogger-labels {
@@ -31,18 +10,18 @@ article .blogger-labels {
 	clear: both;
 	color: #333;
 	font-size: 0;
-	margin: 12px 0 0;
+	margin: 16px 0 0;
 	text-align: center;
 }
 .blogger-labels:before {
-	border-bottom: 1px solid #999;
+	border-bottom: 1px solid currentColor;
 	display: block;
-	content: 'Temes';
+	content: 'Tags';
 	font-size: 16px;
 	margin: 16px;
 }
 .blogger-labels a {
-	background: #999;
+	border: 1px solid currentColor;
 	border-radius: 2em;
 	color: #ffffff !important;
 	font-size: 16px;
@@ -54,44 +33,10 @@ article .blogger-labels {
 	hyphens: none;
 }
 .blogger-labels a:hover {
-	background: #dd0000;
-}
-.post .blogger-labels {
-	display: none;
+	background-color: #000;
+	color: #fff;
 }
 
-/* Twitter timeline */
-
-.twitter-timeline {
-	display: block;
-	margin: 0 auto;
-}
-
-/* Responsive hacks */
-
-@media (max-width: 768px) {
-	footer {
-		text-align: center;
-	}
-}
-
-/* Scroll-slide */
-
-.scroll-slide {
-	height: 480px;
-	width: 100%;
-	white-space: nowrap;
-	overflow-y: hidden;
-	overflow-x: scroll;
-	-webkit-overflow-scrolling: touch;
-}
-.scroll-slide * {
-	display: inline;
-}
-.scroll-slide img {
-	height: 480px;
-	width: auto;
-}
 
 /* Prev/next */
 
@@ -202,4 +147,11 @@ article .blogger-labels {
 .cookie-choices-button:nth-child(2) {
 	background: #3AB16C;
 	color: #ffffff !important;
+}
+
+/* Twitter timeline */
+
+.twitter-timeline {
+	display: block;
+	margin: 0 auto;
 }

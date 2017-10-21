@@ -15,37 +15,37 @@
 
 /* Simple view */
 
-#layout.simple article,
+.simple article,
 #layout-simple:checked ~ #layout-result article {
 	border: none;
 	border-top: 16px solid currentColor;
 	padding: 16px 0;
 }
-#layout.simple article h3,
+.simple article h3,
 #layout-simple:checked ~ #layout-result article h3 {
 	margin: 0;
 }
-#layout.simple articlestrong,
+.simple articlestrong,
 #layout-simple:checked ~ #layout-result article strong {
 	margin: 0;
 }
-#layout.simple article div,
+.simple article div,
 #layout-simple:checked ~ #layout-result article div {
 
 }
-#layout.simple article div img,
+.simple article div img,
 #layout-simple:checked ~ #layout-result article div img {
 	height: 254px;
 	margin-bottom: 24px;
 	object-fit: cover;
 	width: 100%;
 }
-#layout.simple article nav,
+.simple article nav,
 #layout-simple:checked ~ #layout-result article nav {
 	border-color: transparent;
 	text-align: center;
 }
-#layout.simple article nav a,
+.simple article nav a,
 #layout-simple:checked ~ #layout-result article nav a {
 	background-color: #000;
 	border-radius: 50%;
@@ -58,7 +58,7 @@
 
 /* List view */
 
-#layout.list article,
+.list article,
 #layout-list:checked ~ #layout-result article {
 	border-color: transparent;
 	border-top: 1px solid currentColor;
@@ -66,25 +66,25 @@
 	margin: 0;
 	padding: 16px 0 0;
 }
-#layout.list article h3,
+.list article h3,
 #layout-list:checked ~ #layout-result article h3 {
 	line-height: 32px;
 	margin: 0;
 	padding: 0 64px 0 0;
 }
-#layout.list article strong,
+.list article strong,
 #layout-list:checked ~ #layout-result article strong {
 	font-size: 12px;
 	margin: 0;
 }
-#layout.list article div,
+.list article div,
 #layout-list:checked ~ #layout-result article div {
 	display: block;
 	height: 160px;
 	margin: 0 0 16px;
 	overflow: hidden;
 }
-#layout.list article div img,
+.list article div img,
 #layout-list:checked ~ #layout-result article div img {
 	border-radius: 50%;
 	height: 128px;
@@ -93,7 +93,7 @@
 	object-fit: cover;	
 	width: 128px;
 }
-#layout.list article nav,
+.list article nav,
 #layout-list:checked ~ #layout-result article nav {
 	border-color: transparent;
 	padding: 0;
@@ -102,7 +102,7 @@
 	text-align: center;
 	width: 48px;
 }
-#layout.list article nav a,
+.list article nav a,
 #layout-list:checked ~ #layout-result article nav a {
 	background: #000;
 	border-color: transparent;
@@ -115,7 +115,7 @@
 
 /* Table view */
 
-#layout.table article,
+.table article,
 #layout-table:checked ~ #layout-result article {
 	border: none;
 	clear: both;
@@ -128,9 +128,9 @@
 	text-align: left;
 	Width: 100%;
 }
-#layout.table article h3,
-#layout.table article strong,
-#layout.table article div,
+.table article h3,
+.table article strong,
+.table article div,
 #layout-table:checked ~ #layout-result article h3,
 #layout-table:checked ~ #layout-result article strong,
 #layout-table:checked ~ #layout-result article div {
@@ -144,43 +144,43 @@
 	padding: 16px 0;
 	width: 22.9999999999%; 
 }
-#layout.table article h3,
+.table article h3,
 #layout-table:checked ~ #layout-result article h3 {
 		line-height: 32px;
 		width: 47.9999999999%;
 }
-#layout.table article strong,
+.table article strong,
 #layout-table:checked ~ #layout-result article strong {
 	padding: 16px 8px 0;
 }
-#layout.table article div,
+.table article div,
 #layout-table:checked ~ #layout-result article div {
 	height: 254px;
 }
-#layout.table article div img,
+.table article div img,
 #layout-table:checked ~ #layout-result article div img {
 	height: 254px;
 	object-fit: cover;
 	width: 100%;
 }
-#layout.table article nav,
+.table article nav,
 #layout-table:checked ~ #layout-result article nav {
 	border: none;
 	clear: both;
 	margin: 16px 0;
 }
-#layout.table article nav a,
+.table article nav a,
 #layout-table:checked ~ #layout-result article nav a {
 	background-color: #000;
 	color: #fff;
 }
 @media (max-width: 767px) {
-	#layout.table article,
+	.table article,
 	#layout-table:checked ~ #layout-result article {
 		height: auto;
 		width: 100%;
 	}
-	#layout.table article h3,
+	.table article h3,
 	#layout-table:checked ~ #layout-result article h3,
 	#layout-table:checked ~ #layout-result article strong,
 	#layout-table:checked ~ #layout-result article div,
@@ -188,25 +188,25 @@
 		margin: 0;
 		width: 47.9999999999%;
 	}
-	#layout.table article div,
+	.table article div,
 	#layout-table:checked ~ #layout-result article div {
 		border: none;
 		height: 208px;
 		margin-bottom: 16px;
 	}
-	#layout.table article div img,
+	.table article div img,
 	#layout-table:checked ~ #layout-result article div img {
 		height: 240px;
 	}
-	#layout.table article nav,
+	.table article nav,
 	#layout-table:checked ~ #layout-result article nav {
 		text-align: left;
 	}
 }
 @media (max-width: 480px) {
-	#layout.table article h3,
-	#layout.table article strong,
-	#layout.table article div,
+	.table article h3,
+	.table article strong,
+	.table article div,
 	#layout-table:checked ~ #layout-result article h3,
 	#layout-table:checked ~ #layout-result article strong,
 	#layout-table:checked ~ #layout-result article div {
@@ -217,7 +217,7 @@
 
 /* Gallery view */
 
-#layout.gallery article,
+.gallery article,
 #layout-gallery:checked ~ #layout-result article {
 	border: none;
 	clear: none;
@@ -229,32 +229,32 @@
 	text-align: center;
 	width: 23.9999999999%; 
 }
-#layout.gallery article h3,
+.gallery article h3,
 #layout-gallery:checked ~ #layout-result article h3 {
 	font-size: 16px;
-	height: 16px;
-	line-height: 16px;
+	height: 32px;
+	line-height: 32px;
 	margin: 0;
 	overflow: hidden;
 	text-overflow: ellipsis;
 }
-#layout.gallery article strong,
+.gallery article strong,
 #layout-gallery:checked ~ #layout-result article strong {
 	height: 16px;
 }
-#layout.gallery article div,
+.gallery article div,
 #layout-gallery:checked ~ #layout-result article div {
 	height: 256px;
 	overflow: hidden;
 }
-#layout.gallery article div img,
+.gallery article div img,
 #layout-gallery:checked ~ #layout-result article div img {
 	height: 256px;
 	overflow: hidden;
 	object-fit: cover;
 	width: 100%;
 }
-#layout.gallery article nav,
+.gallery article nav,
 #layout-gallery:checked ~ #layout-result article nav {
 	border-color: transparent;
 	font-size: 16px;
@@ -263,13 +263,13 @@
 	bottom: 0; left: 0;
 	width: 100%;
 }
-#layout.gallery article nav a,
+.gallery article nav a,
 #layout-gallery:checked ~ #layout-result article nav a {
 	background-color: transparent;
 	border-color: transparent;
 	color: #fff;
 }
-#layout.gallery article:hover nav a,
+.gallery article:hover nav a,
 #layout-gallery:checked ~ #layout-result article:hover nav a {
 	background-color: #fff;
 	border-color: #fff;
@@ -278,7 +278,7 @@
 
 /* Cards view */
 
-#layout.cards article,
+.cards article,
 #layout-cards:checked ~ #layout-result article {
 	background-color: #fff;
 	border-color: #fff;
@@ -293,11 +293,11 @@
 	overflow: hidden;
 	width: 23.9999999999%; 
 }
-#layout.cards article:hover,
+.cards article:hover,
 #layout-cards:checked ~ #layout-result article:hover {
 	box-shadow: 0 2px 6px rgba(0,0,0,.6);
 }
-#layout.cards article h3,
+.cards article h3,
 #layout-cards:checked ~ #layout-result article h3 {
 	font-size: 24px;
 	height: 64px;
@@ -306,39 +306,39 @@
 	padding: 0 4px;
 	overflow: hidden;
 }
-#layout.cards article strong,
+.cards article strong,
 #layout-cards:checked ~ #layout-result article strong {
 	height: 16px;
 	padding: 0 4px;
 	overflow: hidden;
 }
-#layout.cards article div,
+.cards article div,
 #layout-cards:checked ~ #layout-result article div {
 	height: 186px;
 	overflow: hidden;
 	padding: 0;
-}#layout.cards article div img,
+}.cards article div img,
 #layout-cards:checked ~ #layout-result article div img {
 	height: 186px;
 	overflow: hidden;
 	object-fit: cover;	
 	width: 100%;
 }
-#layout.cards article nav,
+.cards article nav,
 #layout-cards:checked ~ #layout-result article nav {
 	border-color: transparent;
 	font-size: 16px;
 	line-height: 16px;
 	text-align: center;
 }
-#layout.cards article nav a,
+.cards article nav a,
 #layout-cards:checked ~ #layout-result article nav a {
 	border-color: transparent;
 }
 
 /* Tiles view */
 
-#layout.tiles article,
+.tiles article,
 #layout-tiles:checked ~ #layout-result article {
 	clear: none;
 	display: block;
@@ -349,10 +349,10 @@
 	overflow: hidden;
 	width: 24.9999999999%; 
 }
-#layout.tiles article h3,
-#layout.tiles article strong,
-#layout.tiles article div,
-#layout.tiles article nav,
+.tiles article h3,
+.tiles article strong,
+.tiles article div,
+.tiles article nav,
 #layout-tiles:checked ~ #layout-result article h3,
 #layout-tiles:checked ~ #layout-result article strong,
 #layout-tiles:checked ~ #layout-result article div,
@@ -362,7 +362,7 @@
 	position: absolute;
 	top: 0; right: 0; left: 0; bottom: 0;
 }
-#layout.tiles article h3,
+.tiles article h3,
 #layout-tiles:checked ~ #layout-result article h3 {
 	background-color: rgba(0,0,0,.1);
 	font-size: 24px;
@@ -371,49 +371,49 @@
 	z-index: 9;
 	opacity: .5;
 }
-#layout.tiles article:hover h3,
+.tiles article:hover h3,
 #layout-tiles:checked ~ #layout-result article:hover h3 {
 	background-color: rgba(0,0,0,.8);
 	height: 256px;
 	opacity: 1;
 }
-#layout.tiles article strong,
+.tiles article strong,
 #layout-tiles:checked ~ #layout-result article strong {
 	top: 16px;
 	z-index: 9;
 }
-#layout.tiles article div,
+.tiles article div,
 #layout-tiles:checked ~ #layout-result article div {
 	height: 256px;
 	overflow: hidden;
 	padding: 0;
 	z-index: 8;
 }
-#layout.tiles article div img,
+.tiles article div img,
 #layout-tiles:checked ~ #layout-result article div img {
 	height: 256px;
 	overflow: hidden;
 	object-fit: cover;	
 	width: 100%;
 }
-#layout.tiles article nav,
+.tiles article nav,
 #layout-tiles:checked ~ #layout-result article nav {
 	top: auto;
 	z-index: 9;
 }
-#layout.tiles article nav a,
+.tiles article nav a,
 #layout-tiles:checked ~ #layout-result article nav a {
 	border-color: rgba(255,255,255,.2);
 }
-#layout.tiles article nav a:hover,
+.tiles article nav a:hover,
 #layout-tiles:checked ~ #layout-result article nav a:hover {
 	color: #fff;
 }
 
 @media (max-width: 960px) {
-	#layout.gallery article,
-	#layout.cards article,
-	#layout.tiles article,
+	.gallery article,
+	.cards article,
+	.tiles article,
 	#layout-gallery:checked ~ #layout-result article,
 	#layout-cards:checked ~ #layout-result article,
 	#layout-tiles:checked ~ #layout-result article {
@@ -421,9 +421,9 @@
 	}
 }
 @media (max-width: 767px) {
-	#layout.gallery article,
-	#layout.cards article,
-	#layout.tiles article,
+	.gallery article,
+	.cards article,
+	.tiles article,
 	#layout-gallery:checked ~ #layout-result article,
 	#layout-cards:checked ~ #layout-result article,
 	#layout-tiles:checked ~ #layout-result article {
@@ -431,9 +431,9 @@
 	}
 }
 @media (max-width: 480px) {
-	#layout.gallery article,
-	#layout.cards article,
-	#layout.tiles article,
+	.gallery article,
+	.cards article,
+	.tiles article,
 	#layout-gallery:checked ~ #layout-result article,
 	#layout-cards:checked ~ #layout-result article,
 	#layout-tiles:checked ~ #layout-result article {
@@ -470,23 +470,6 @@
 	padding-right: 26px;
 	position: relative;
 }
-@media (max-width: 767px) {
-	.nav-smart {
-		position: relative;
-	}
-	.nav-smart div strong label {
-		display: inline-block;
-	}
-	.nav-smart div div[hidden] {
-		display: none;
-	}
-	.nav-smart div div[hidden] a {
-		display: block;
-	}
-	.nav-smart input:checked ~ div[hidden] {
-		display: block;
-	}
-}
 
 /* Sticky navigation */
 
@@ -500,7 +483,7 @@
 	position: sticky; 
 	top: 0;
 	left: 0;
-	z-index: 6;
+	z-index: 5;
 }
 @media (max-width: 767px) {
 	.nav-sticky,
@@ -534,6 +517,44 @@
 	}
 }
 
+/* Navigation with menus */
+
+nav .menu label {
+	padding-right: 64px;
+}
+nav .menu nav {
+	width: 256px;
+}
+
+/* Small devices navigation */
+
+@media (max-width: 767px) {
+	.nav-smart,
+	nav .menu nav {
+		position: relative;
+	}
+	nav .menu nav {
+		background-color: transparent;
+		box-shadow: none;
+		top: 0;
+		width: 100%;
+	}
+	.nav-smart div strong label {
+		display: inline-block;
+	}
+	.nav-smart div div[hidden] {
+		display: none;
+	}
+	.nav-smart div div[hidden] a,
+	nav .menu,
+	nav .menu nav ul li a {
+		display: block;
+	}
+	.nav-smart input:checked ~ div[hidden] {
+		display: block;
+	}
+}
+
 /* Dialog, menu, collapser, accordion and tabs */
 
 dialog {
@@ -556,12 +577,16 @@ dialog {
 		width: 90%;
 	}
 }
-.overlay {
+.overlay,
+.overlay-transparent {
 	background-color: rgba(0,0,0,.4);
 	position: fixed;
 	top: 0; bottom: 0;
 	left: 0; right: 0;
 	z-index: 9;
+}
+.overlay-transparent {
+	background-color: transparent;
 }
 .menu {
 	display: inline-block;
@@ -583,7 +608,7 @@ dialog {
 	position: absolute;
 	top: 3em; left: 0;
 	width: 100%;
-	z-index: 4;
+	z-index: 9;
 }
 .menu nav a {
 	border-color: transparent;
@@ -623,6 +648,7 @@ dialog {
 }
 input:checked ~ dialog,
 input:checked ~ .overlay,
+input:checked ~ .overlay-transparent,
 .menu input:checked ~ nav[hidden],
 .collapser input:checked ~ div[hidden],
 .accordion li input:checked ~ div[hidden],
@@ -846,10 +872,10 @@ input:checked ~ .alert {
 }
 [id*='lightbox']:target img {
 	display: block;
-	position: relative;
+	position: absolute;
 	top: 50%;
-	transform: translateY(-50%);
-	margin: 0 auto;
+	left: 0; right: 0;
+	margin: -25% auto 0;
 	max-height: 80%;
 	max-width: 80%;
 	width: auto;
@@ -961,7 +987,20 @@ nav strong label mark {
 	height: 90vh;
 	padding-top: 320px;
 }
-
+.sticky-header {
+	background-color: #fff;
+	padding: 0;
+	text-align: center;
+	position: -webkit-sticky; 
+	position: sticky; 
+	top: 0;
+	left: 0;
+	z-index: 5;
+}
+.sticky-header * {
+	font-size: 24px;
+	margin: 0;
+}
 @media (max-width: 767px) {
 	.banner {
 		height: 320px;

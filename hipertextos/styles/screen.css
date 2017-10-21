@@ -282,6 +282,7 @@ pre {
 	word-wrap: break-word;
 	white-space: pre;
 	white-space: pre-wrap;
+	width: 100%;
 }
 q {
 	letter-spacing: var(--one-pixel);
@@ -485,7 +486,7 @@ textarea:focus,
 	font-family: var(--font-default);
 	font-size: var(--thirtytwo-pixel);
 	position: absolute;
-	top: 0; right: calc(-1*var(--sixtyfour-pixel));
+	top: 0; right: var(--two-pixel);
 }
 
 /* Input and emphatic info */
@@ -876,7 +877,8 @@ article, aside {
 #site-nav > div,
 #page-nav > div,
 #page-section > div,
-#page-footer > div {
+#page-footer > div,
+[id*='page-section'] > div {
 	margin: 0 auto;
 	padding: 0 var(--sixteen-pixel);
 	position: relative;
@@ -1106,11 +1108,17 @@ nav label:hover {
 #theme-dark:checked ~ #page,
 #theme-dark:checked ~ #site-nav,
 #theme-dark:checked ~ #page-nav {
-	background-color: var(--color-hardgrey);
+	background-color: var(--color-softblack);
 	color: var(--color-white);	
 }
 #theme-dark:checked ~ #page a {
 	color: var(--color-white);	
+}
+#theme-dark:checked ~ #page em a,
+#theme-dark:checked ~ #page em label,
+#theme-dark:checked ~ #page em button {
+	background-color: var(--color-hardgrey);
+	color: var(--color-softgrey);	
 }
 #theme-dark:checked ~ #page a:visited,
 #theme-dark:checked ~ #page em a:visited {
@@ -1122,10 +1130,10 @@ nav label:hover {
 #theme-dark:checked ~ #page nav label:hover,
 #theme-dark:checked ~ #page a:hover,
 #theme-dark:checked ~ #page a:visited:hover {
-	color: var(--color-blue);
+	color: var(--color-white);
 }
 #theme-dark:checked ~ #page a:hover svg {
-	fill: var(--color-blue);
+	fill: var(--color-white);
 }
 #theme-dark:checked ~ #page a:active,
 #theme-dark:checked ~ #page a:visited:active {
@@ -1191,6 +1199,7 @@ nav label {
 	--color-grey: rgba(150,150,150,1);
 	--color-hardgrey: rgba(90,90,90,1);
 	--color-black: rgba(0,0,0,1);
+	--color-softblack: rgba(10,10,10,1);
 	
 	--color-soft: rgba(247,246,255,1);
 	--color-softtext: rgba(89,81,147,1);
