@@ -18,6 +18,12 @@
 	background-repeat: no-repeat;
 	border:none;
 }
+.cover-page #page-header {position:sticky;
+	background-position: top center;
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
 
 /* Classic Gallery */ 
 .listed section {	-webkit-column-count: 4;-moz-column-count: 4;column-count: 4;border:none;line-height:2em;font-size:0.2em;}
