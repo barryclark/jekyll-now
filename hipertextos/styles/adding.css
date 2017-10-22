@@ -7,6 +7,9 @@
 #site-nav, footer, #follows, #icons, #covers, .nav-scroll {
 text-align: center;
 }
+body {text-align: justify;-moz-hyphens:none;-ms-hyphens:none;-webkit-hyphens:none;-o-hyphens:none;hyphens:none;
+ word-wrap:none;
+ }
 /* Nav */
 #site-nav {background:#111 !important;color:#fff;border-bottom:none;box-shadow: 0 1px 12px rgba(0,0,0,.032);}
 #site-nav a {	font-weight: normal;min-width:12%;border:none}
@@ -35,7 +38,16 @@ text-align: center;
 form .button {border:thin solid currentColor;margin-top:0.6em;}
 
 /* Suscribe */
-#covers svg {width: 16.6666666666%;margin-bottom:1.2em;color:#999;}
+#covers {color:#444;}
+#covers svg {width: 16.6666666666%;margin-bottom:1.2em;color:#ccc;}
+#covers article {border:0;margin-bottom:1.2em;}
+
+@media (max-width: 1200px) {
+	#covers article {width: 49.9999999999%;}
+}
+@media (max-width: 767px) {
+	#covers article {width: 100%;}
+}
 
 /* Classic Gallery */ 
 .listed section {	-webkit-column-count: 4;-moz-column-count: 4;column-count: 4;border:none;line-height:2em;font-size:0.2em;}
