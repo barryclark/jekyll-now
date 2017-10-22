@@ -13,13 +13,12 @@ Vaig estudiar Arts Aplicades, il·lustració i pintura. I posteriorment música 
 Actualment compagino la vida de músic amb la de creatiu gràfic sent aquestes dos les meves grans passions.
 
 
-Si em necessites, serà un plaer poder ajudar-te.
-
-Pots posar-te en contacte amb mi, respondré el més aviat possible.
-
 ----
 
 ## Contacte
+Si em necessites, serà un plaer poder ajudar-te.
+
+Pots posar-te en contacte amb mi, respondré el més aviat possible.
 
 _[isardmt@gmail.com](mailto:isardmt@gmail.com)_ 
 _[Trucar al 658973617](tel:+34 658973617)_
