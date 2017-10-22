@@ -26,7 +26,7 @@
 	background-repeat: no-repeat;
 }
 
-form .button {border:thin solid #000;}
+form .button {border:thin solid currentColor;margin-top:0.6em;}
 
 /* Classic Gallery */ 
 .listed section {	-webkit-column-count: 4;-moz-column-count: 4;column-count: 4;border:none;line-height:2em;font-size:0.2em;}
