@@ -50,8 +50,8 @@ form .button {border:thin solid currentColor;margin-top:0.6em;}
 }
 
 /* Footer */ 
-#page-footer {background:#222;color:#999;m}
-#web-credits {background:#555;color:#999;}
+#page-footer {background:#222;color:#999;}
+#web-credits {border-top:thin solid #292929;border-bottom:thin solid #292929;}
 
 /* Classic Gallery */ 
 .listed section {	-webkit-column-count: 4;-moz-column-count: 4;column-count: 4;border:none;line-height:2em;font-size:0.2em;}
