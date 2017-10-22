@@ -1,12 +1,10 @@
 ---
 layout: post
-title: Logistic Regression using numpy
+title: LOGISTIC REGRESSION USING NUMPY
 comments: true
 ---
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-
-## LOGISTIC REGRESSION USING NUMPY
 
 
  **Logistic regression** is a statistical method for analyzing a dataset in which there are one or more independent variables that determine an outcome.  Machine learning borrows this technique from the field of statistics for solving classification problems.
@@ -15,7 +13,7 @@ Before we delve deeper into logistic regression we need to familiarize ourselves
 
 ![Machine Learning](../assets/1.png)
 
-#### **CLASSIFICATION**
+### **CLASSIFICATION**
 
 The simplest form of classification is binary classification and as the name suggests it classifies the data into two classes. Say if our data is being  divided into two classes A and B,then if it belongs to class A it must be absent from class B.
 
@@ -24,7 +22,7 @@ Let us understand this with the help of an example, say we have been transported
 ![Binary Classification](../assets/2.jpg)
 
 
-OK so far so good, now let us move on to multiclass classification. As the name suggests instead of two classes we now have many. Let us consider the very famous Iris dataset which contains information regarding  four features of an Iris flower and based on these four features the Iris flower is classified into its three subspecies . This is multiclass classification involving 3 classes corresponding to the 3 subspecies of the iris flower. In this blog we have explained how to perform multiclass classification on the Iris dataset using Python. You can download the dataset from [here](../assets/iris.csv)
+OK so far so good, now let us move on to multiclass classification. As the name suggests instead of two classes we now have many. Let us consider the very famous Iris dataset which contains information regarding  four features of an Iris flower and based on these four features the Iris flower is classified into its three subspecies . This is multiclass classification involving 3 classes corresponding to the 3 subspecies of the iris flower. In this blog we have explained how to perform multiclass classification on the Iris dataset using Python. You can download the dataset from [here](../assets/Iris.csv)
 
 ![Iris Dataset](../assets/3.jpg)
 So that is all regarding classification, I hope that now based on the dataset you will be able to identify what sort of classification problem it is.
@@ -40,7 +38,7 @@ Let us suppose that Y is the output ie 0 or 1 and X is the input feature. Hence 
 
 This can be represented mathematically as :
 
-$Z = P(Y = 1/X)$
+$$Z = P(Y = 1/X)$$
 
 We mentioned sigmoid function right? Here is a brief explanation regarding it.
 
@@ -81,13 +79,14 @@ From scikit-learn package we use a function &quot;train\_test\_split&quot; to ra
 #### **LOSS FUNCTION AND COST FUNCTION**
 
 ![Cost Function](../assets/8.png)
+
 Loss function basically helps us predict how far our predicted output is from the actual output.
 
-Hence by minimizing our loss function we arrive at the best possible accuracy for our model .
+Hence by minimizing our loss function we arrive at the best possible accuracy for our model.
 
-Loss function is calculated for only one training example . Cost function is calculated when there are m number of training examples involved , it is the average of all the loss functions . In the code snippet above we have calculated the cost function .
+Loss function is calculated for only one training example. Cost function is calculated when there are m number of training examples involved, it is the average of all the loss functions. In the code snippet above we have calculated the cost function.
 
-In here the prediction of our model is  A , in mathematical terms A= sigmoid(wx+b) (wx+b is a linear model of the form y=mx+c where b is the bias term equivalent to c in the equation y=mx+c) where w is the weight matrix and x is the input matrix. Weights basically decide the priority or influence of a particular feature in deciding the output . For example , if two candidates get the same marks in an engineering entrance exam the ranks are decided based on the maths score of the candidate , so we can say that maths is the feature that is given more weightage than the other features that is physics and chemistry in deciding the rank.  Looking at the dataset we can&#39;t predict which feature carries more weightage than the other hence initially the weight matrix is initialised with random values(as demonstrated in the function initialize) and then the model is trained to find the weights that provide the best possible accuracy by minimizing the cost function(in the optimize function).  These final weights are used to predict the output based on test data. The cost function basically helps us determine the performance of our w and b on the dataset.
+In here the prediction of our model is  A, in mathematical terms $$A = sigmoid(wx+b)$$,  (wx+b is a linear model of the form $$y = mx + c$$ where b is the bias term equivalent to c in the equation $$y = mx + c$$) where w is the weight matrix and x is the input matrix. Weights basically decide the priority or influence of a particular feature in deciding the output. For example, if two candidates get the same marks in an engineering entrance exam the ranks are decided based on the maths score of the candidate, so we can say that maths is the feature that is given more weightage than the other features that is physics and chemistry in deciding the rank.  Looking at the dataset we can&#39;t predict which feature carries more weightage than the other hence initially the weight matrix is initialised with random values(as demonstrated in the function initialize) and then the model is trained to find the weights that provide the best possible accuracy by minimizing the cost function(in the optimize function).  These final weights are used to predict the output based on test data. The cost function basically helps us determine the performance of our w and b on the dataset.
 
 ![Cost function graph](../assets/9.png)
 
@@ -119,9 +118,9 @@ As mentioned , in order to arrive at the best possible result we need to minimiz
 
  ![Loss Function](../assets/13.png)
 
- Let us assume a function $y = mx + z$, here y is a function of two variables x and z hence the partial derivative of y with respect to z represents differentiating y with respect to z by keeping x constant.
+ Let us assume a function $$y = mx + z$$, here y is a function of two variables x and z hence the partial derivative of y with respect to z represents differentiating y with respect to z by keeping x constant.
 
-  Since we need to minimize our loss function(L) , we need to find its gradient ,hence we  need to find $\frac{\partial L}{\partial w}$ and $\frac{\partial L}{\partial b}$ since L is a function of w and b so minimizes for a particular value of w and b as we  saw in the graph of J vs w and b.
+  Since we need to minimize our loss function(L), we need to find its gradient, hence we need to find $$\frac{\partial L}{\partial w}$$ and $$\frac{\partial L}{\partial b}$$ since L is a function of w and b so minimizes for a particular value of w and b as we saw in the graph of J vs w and b.
   So as we can see from this computational graph, our loss function is a function of a which in turn is function of z where z is a function of w, x and b.( in this example we have assumed only two features so dealing with only two weights w1 and w2). Hence $$\frac{\partial L}{\partial w}= \frac{\partial L}{\partial a}.\frac{\partial a}{\partial z}.\frac{\partial z}{\partial w}$$
 
    on solving we get
@@ -137,8 +136,8 @@ As mentioned , in order to arrive at the best possible result we need to minimiz
 
  this can be calculated by solving equation 1 and 2 simultaneously.
 
- $$\frac{\partial dz}{\partial dw} = x$$
- $\frac{\partial dL}{\partial dw}$ can be represented as dw, hence $dw1 =dz.x1$ and $dw2= dz.x2$.
+ $$\frac{\partial dz}{\partial dw}=x$$   
+ $$\frac{\partial dL}{\partial dw}$$ can be represented as dw, hence $$dw1 =dz.x1$$ and $$dw2= dz.x2$$.
 
  Similarly,  $$\frac{\partial dL}{\partial db} = \frac{\partial dL}{\partial da}.\frac{\partial da}{\partial dz}.\frac{\partial dz}{\partial db}$$
 
@@ -146,7 +145,7 @@ As mentioned , in order to arrive at the best possible result we need to minimiz
 
  Hence  $$db = dz$$
 
- Since cost function is the average of loss function so the value of dw1 when we consider m training examples is $dw1 / m$, similarly for db it is $db / m$.
+ Since cost function is the average of loss function so the value of dw1 when we consider m training examples is $$dw1 / m$$, similarly for db it is $$db / m$$.
 
  If we refer to the code snippet we can observe that after each iteration the value of dw and db changes and so do the values of w and b since $$w = w- alpha.dw$$ and $$b = b - alpha.db$$
 
@@ -156,7 +155,7 @@ As mentioned , in order to arrive at the best possible result we need to minimiz
 
  You can play around with the learning rate in the code provided in the link at the end of this article and see how the graph of cost function v/s number of iteration varies.
 
- #### REGULARIZATION AND OVERFITTING
+#### **REGULARIZATION AND OVERFITTING**
 
  Usually during training and testing our model shows two types of undesired behaviour. In the first case we obtain a very poor accuracy on both the training data as well as testing data and our model is said to underfit the data. This problem can be resolved by various methods such as increasing the number of iterations, increasing the number of training examples etc. The following graph explains underfitting.
 
@@ -200,7 +199,7 @@ Looking at the dataset we can see that the features ( sepal length, sepal width,
 
 Here x is the value of the feature, min(x) is the lowest and max(x) is the highest value of the feature in all the examples. So using this formula we scale all the 4 features of this dataset to between 0 and 1. For this dataset it wasn&#39;t really necessary to use feature scaling but we still have done it because it is generally required.
 
-OK so that&#39;s all folks!! Now go take a break. Please feel free to ask any questions that you have or to point out mistakes that I might have made. You can find the code enclosed in this [code](../assets/iris_dataset.py).
+OK so that&#39;s all folks!! Now go take a break. Please feel free to ask any questions that you have or to point out mistakes that I might have made. You can find the code enclosed in this [code](../assets/Log_reg_iris_dataset.py).
 
 
 Written by [Anisha Pal](https://www.linkedin.com/in/anisha-pal-10b2bb147/) and [Shourya Jaiswal](https://www.linkedin.com/in/shourya-jaiswal-1992a2b6/) for ActiveAI.
