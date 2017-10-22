@@ -105,3 +105,5 @@ This is nowhere as efficent as it absolutely could be. Firstly, this needs to in
 It would also be preferable to not poll 1000+ webpages ever minute, so cutting out those stops which don't report data as well as being smarter with the scheduler would be beneficial to reduce computational and network load.
 
 *TL;DR* There is also [this](http://www.travelinedata.org.uk/traveline-open-data/nextbuses-api/) which is Travellines's NextBus API for bus stops across the UK. But that's much less fun.
+
+I'm still polishing the edges on the code and the API but I'll write a followup post once I'm satisfied.
