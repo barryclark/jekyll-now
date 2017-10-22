@@ -18,11 +18,11 @@ avatar: https://raw.githubusercontent.com/yoonkh/yoonkh.github.io/master/images/
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email:
+  email: zizou0812@gmail.com
   facebook:
   flickr:
   github: yoonkh/yoonkh.github.io
-  instagram: khyoon880
+  instagram: khyun880
   linkedin:
   pinterest:
   rss: # just type anything here for a working RSS icon
@@ -84,3 +84,5 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+
+theme: jekyll-theme-minimal
