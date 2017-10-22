@@ -33,6 +33,9 @@ text-align: center;
 /* Suscribe */
 form .button {border:thin solid currentColor;margin-top:0.6em;}
 
+/* Suscribe */
+#covers svg {width: 16.6666666666%;margin-bottom:1.2em;color:#999;}
+
 /* Classic Gallery */ 
 .listed section {	-webkit-column-count: 4;-moz-column-count: 4;column-count: 4;border:none;line-height:2em;font-size:0.2em;}
 .imagens img {margin:0!important;padding:0!important;border:none;}
