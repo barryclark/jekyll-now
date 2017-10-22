@@ -4,12 +4,12 @@ title: About
 permalink: /about/
 ---
 
-Hello World
+백엔드 개발자 윤경한입니다
 
 ### More Information
 
-백엔드 개발자입니다
+--
 
 ### Contact me
 
-[email@domain.com](mailto:zizou0812@gmail.com)
+[zizou0812@gmail.com](mailto:zizou0812@gmail.com)
