@@ -3,15 +3,20 @@
 
 /* ------------------------------------------------------------ Resets */
 
+/* Center */
+#site-nav, footer, #follows, #icons, #covers, .nav-scroll {
+text-align: center;
+}
+/* Nav */
 #site-nav {border-bottom:none;box-shadow: 0 1px 12px rgba(0,0,0,.032);}
 #site-nav a {	font-weight: normal;min-width:12%;}
 #site-nav a b {text-transform: uppercase;}
-#site-nav, footer, #follows, #icons, .nav-scroll {text-align: center;}
 .cover h2 {letter-spacing: 0.001em;font-weight: normal; }
 .cover {
 	height: 80vh;
 	padding-top: 210px;
 }
+/* Page & Header */
 #page.cover-page {
 	background-position: top center;
 	background-attachment: fixed;
@@ -25,14 +30,13 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 }
-
+/* Suscribe */
 form .button {border:thin solid currentColor;margin-top:0.6em;}
 
 /* Classic Gallery */ 
 .listed section {	-webkit-column-count: 4;-moz-column-count: 4;column-count: 4;border:none;line-height:2em;font-size:0.2em;}
 .imagens img {margin:0!important;padding:0!important;border:none;}
 .listed {padding:0!important;}
-
 .listed img {	margin:0!important;padding:0!important;	}
 .listed article { 
 border:none;overflow: hidden;width: 100%;
