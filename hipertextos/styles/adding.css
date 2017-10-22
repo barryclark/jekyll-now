@@ -29,7 +29,6 @@ body {text-align: justify;-moz-hyphens:none;-ms-hyphens:none;-webkit-hyphens:non
 	border:none;
 }
 .cover-page #page-header {border:1px solid rgba(255,255,255,0.5);box-shadow:inset 0 -1px 7px rgba(0,0,0,.06);
-	background-color: #000;
 	background-position: top center;
 	background-attachment: fixed;
 	background-size: cover;
