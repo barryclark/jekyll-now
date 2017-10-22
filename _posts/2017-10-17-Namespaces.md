@@ -3,7 +3,7 @@ layout: post
 title: Namespaces
 ---
 
-Namepsaces dělí začínajícího programátora od mírné pokročilého. Co vše to obnáší?
+Namespaces dělí začínajícího programátora od mírné pokročilého. Co vše to obnáší?
 
 # Přiblížení jmenných prostorů
 
@@ -104,7 +104,7 @@ Pokud danou funkci nebo třídu potřebuješ často, je velmi nepraktické opiso
 use ApplicationOne\Service;
 use ApplicationOne\Service\Database\Connector
 
-functionService();
+Service\functionService();
 Connector::functionStuff();
 ```
 
@@ -117,7 +117,7 @@ use ApplicationOne\Service as Sr;
 use ApplicationOne\Service\Database\Connector as C;
 
 Sr\functionService();
-C\Connector::functionStuff();
+C::functionStuff();
 ```
 
 
