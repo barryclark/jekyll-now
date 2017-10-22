@@ -4,7 +4,7 @@
 /* ------------------------------------------------------------ Resets */
 
 /* Center */
-#site-nav, footer, #follows, #icons, #covers, .nav-scroll {
+#site-nav, footer, #follows, #icons, #covers, .nav-scroll, #web-credits {
 text-align: center;
 }
 body {text-align: justify;-moz-hyphens:none;-ms-hyphens:none;-webkit-hyphens:none;-o-hyphens:none;hyphens:none;
@@ -50,8 +50,9 @@ form .button {border:thin solid currentColor;margin-top:0.6em;}
 }
 
 /* Footer */ 
-#page-footer {background:#222;color:#999;}
+#page-footer {background:#222;color:#999;m}
 #web-credits {background:#555;color:#999;}
+
 /* Classic Gallery */ 
 .listed section {	-webkit-column-count: 4;-moz-column-count: 4;column-count: 4;border:none;line-height:2em;font-size:0.2em;}
 .imagens img {margin:0!important;padding:0!important;border:none;}
