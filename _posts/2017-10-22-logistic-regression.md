@@ -199,7 +199,7 @@ Looking at the dataset we can see that the features ( sepal length, sepal width,
 
 Here x is the value of the feature, min(x) is the lowest and max(x) is the highest value of the feature in all the examples. So using this formula we scale all the 4 features of this dataset to between 0 and 1. For this dataset it wasn&#39;t really necessary to use feature scaling but we still have done it because it is generally required.
 
-OK so that&#39;s all folks!! Now go take a break. Please feel free to ask any questions that you have or to point out mistakes that I might have made. You can find the code enclosed in this [code](../assets/Log_reg_iris_dataset.py).
+OK so that&#39;s all folks!! Now go take a break. Please feel free to ask any questions that you have or to point out mistakes that we might have made. You can find the code enclosed in this [code](../assets/Log_reg_iris_dataset.py).
 
 
 Written by [Anisha Pal](https://www.linkedin.com/in/anisha-pal-10b2bb147/) and [Shourya Jaiswal](https://www.linkedin.com/in/shourya-jaiswal-1992a2b6/) for ActiveAI.
