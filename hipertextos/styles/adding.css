@@ -4,7 +4,7 @@
 /* ------------------------------------------------------------ Resets */
 
 /* Center */
-#site-nav, footer, #follows, #icons, #covers, .nav-scroll {
+#site-nav, footer, #follows, #icons, #covers, .nav-scroll, #web-credits {
 text-align: center;
 }
 body {text-align: justify;-moz-hyphens:none;-ms-hyphens:none;-webkit-hyphens:none;-o-hyphens:none;hyphens:none;
