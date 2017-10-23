@@ -1,3 +1,7 @@
+---
+type: post
+name: Apuntes Oracle SQL
+---
 # SQL ORACLE
 ## Tipos de Datos
 Tipo | Descripción
