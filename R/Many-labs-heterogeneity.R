@@ -8,22 +8,22 @@ library(metafor)
 
 a <- read.csv("http://datacolada.org/wp-content/uploads/2017/10/Smaller-ManyLabs-Cleaned-Dataset-file.csv")  
 
-labs <- 26
-referrer <- factor(rep(LETTERS, rpois(labs, lambda = 40)))
-n <- length(referrer)
-anch1group <- sample(c(0,1), size = n, replace = TRUE)
-anch2group <- sample(c(0,1), size = n, replace = TRUE)
-anch3group <- sample(c(0,1), size = n, replace = TRUE)
-anch4group <- sample(c(0,1), size = n, replace = TRUE)
-Ranch1 <- rnorm(n, mean = 0, sd = 1)
-Ranch2 <- rnorm(n, mean = ifelse(anch2group==1, 0.5, 0), sd = 1)
-Ranch3 <- rnorm(n, mean = ifelse(anch4group==1, 0.5, 0), sd = 1) + 
-  rnorm(nlevels(referrer), sd = 0.3)[referrer]
-Ranch4 <- rnorm(n, mean = ifelse(anch4group==1, 0.5, 0), sd = rexp(labs, rate = 1)[referrer]) + 
-  rnorm(labs, sd = 0.3)[referrer]
-
-a <- data.frame(referrer, anch1group, anch2group, anch3group, anch4group, 
-                Ranch1, Ranch2, Ranch3, Ranch4)
+# labs <- 26
+# referrer <- factor(rep(LETTERS, rpois(labs, lambda = 40)))
+# n <- length(referrer)
+# anch1group <- sample(c(0,1), size = n, replace = TRUE)
+# anch2group <- sample(c(0,1), size = n, replace = TRUE)
+# anch3group <- sample(c(0,1), size = n, replace = TRUE)
+# anch4group <- sample(c(0,1), size = n, replace = TRUE)
+# Ranch1 <- rnorm(n, mean = 0, sd = 1)
+# Ranch2 <- rnorm(n, mean = ifelse(anch2group==1, 0.5, 0), sd = 1)
+# Ranch3 <- rnorm(n, mean = ifelse(anch4group==1, 0.5, 0), sd = 1) + 
+#   rnorm(nlevels(referrer), sd = 0.3)[referrer]
+# Ranch4 <- rnorm(n, mean = ifelse(anch4group==1, 0.5, 0), sd = rexp(labs, rate = 1)[referrer]) + 
+#   rnorm(labs, sd = 0.3)[referrer]
+# 
+# a <- data.frame(referrer, anch1group, anch2group, anch3group, anch4group, 
+#                 Ranch1, Ranch2, Ranch3, Ranch4)
 
 #----------------------------------------------------
 # turn data into long format for easier processing
@@ -96,24 +96,26 @@ run_meta_RT <- function(x, group, lab, reps = 1000, seed = NULL,
     par(mfrow = p)  
   }
   
-  p_vals <- data_frame(b = mean(abs(meta_actual$b) > abs(meta_null$b)),
-              tau = mean(meta_actual$tau > meta_null$tau),
-              Isq = mean(meta_actual$Isq > meta_null$Isq),
-              p = mean(meta_actual$p < meta_null$p))
+  summary_vals <- data_frame(
+    p_b = mean(abs(meta_actual$b) < abs(meta_null$b)),
+    p_p = mean(meta_actual$p > meta_null$p),
+    p_Isq = mean(meta_actual$Isq < meta_null$Isq),
+    median_Isq = median(meta_null$Isq),
+    sig_p = mean(meta_null$p < .05)
+  )
   
   if (all_results) {
-    return(list(p_vals = p_vals, actual = meta_actual, sim = meta_null))
+    return(list(summary_vals = summary_vals, actual = meta_actual, sim = meta_null))
   } else {
-    return(p_vals)
+    return(summary_vals)
   }
 }
 
 #-----------------------------------------------
-# Replicate Uri's bootstrapping approach
+# Replicate Uri's randomization test analysis
 #-----------------------------------------------
 
-meta_results <- 
-  long_dat %>%
+long_dat %>%
   group_by(dv) %>%
   do(metak(x = .$y, group = .$group, lab = .$lab))
 
@@ -126,58 +128,20 @@ long_dat %>%
 # in addition to the null of zero between-study heterogeneity.
 
 
-# simulated data
+# Uri's simulated data
 
-sim_dat <- 
+Uri_sim_dat <- 
   select(a, group = anch1group, lab = referrer) %>%
   mutate(
     y1 = rnorm(n(), mean = 0, sd = 1),
     y2 = rnorm(n(), mean = ifelse(group==1, 0.5, 0), sd = 1),
-    y3 = rnorm(n(), mean = ifelse(group==1, nchar(as.character(lab)) / 8, 0), sd = 1),
-    y4 = rnorm(n(), mean = ifelse(group==1, 0.5, 0), sd = 1) + 
-      rnorm(nlevels(lab), mean = 0, sd = 0.3)[lab],
-    y5 = rnorm(n(), mean = ifelse(group==1, nchar(as.character(lab)) / 8, 0), sd = 1) +
-      rnorm(nlevels(lab), mean = 0, sd = 0.3)[lab]
+    y3 = rnorm(n(), mean = ifelse(group==1, nchar(as.character(lab)) / 8, 0), sd = 1)
   ) %>%
-  gather("mod","y", y1:y5)
+  gather("mod","y", y1:y3)
 
-sim_dat %>%
+Uri_sim_dat %>%
   group_by(mod) %>%
   do(run_meta_RT(x = .$y, group = .$group, lab = .$lab, graph = TRUE))
-
-#------------------------------------------------------
-# Simulate rejection rates of Uri's randomization test
-#------------------------------------------------------
-
-sim_reject_rate <- function(group, lab, ES = 0, btw = 0, df = 0,
-                            reps = 1000, RTs = 1000, alpha = 0.05, seed = NULL) {
-  if (!is.null(seed)) set.seed(seed)
-  
-  n <- length(lab)
-  labs <- nlevels(lab)
-  
-  rerun(reps, {
-    y_btw <- rnorm(labs, mean = 0, sd = btw)
-    scale <- if (df > 0) rchisq(labs, df = df) / df else rep(1, labs)
-    y <- (rnorm(n, mean = ifelse(group==1, ES, 0), sd = 1) + y_btw[lab]) * scale[lab]
-    run_meta_RT(x = y, group = group, lab = lab, reps = RTs, graph = FALSE)  
-  }) %>%
-    bind_rows() %>%
-    summarise_all(funs(mean(. < alpha)))
-}
-
-params <- cross_df(list(
-  ES = c(0, 0.5), 
-  btw = c(0, 0.3),
-  df = c(0, 10)
-))
-
-results <- invoke_rows(sim_reject_rate, params, 
-                       group = group, lab = lab,
-                       reps = 10, RTs = 10)
-
-results %>% 
-  unnest()
 
 #-----------------------------------------------
 # Calculate summary statistics
@@ -189,37 +153,74 @@ summary_stats <-
   summarize(
     m = mean(y, na.rm = TRUE),
     sd = sd(y, na.rm = TRUE),
-    n = sum(!is.na(y))
+    n = sum(!is.na(y)),
+    nas = sum(is.na(y))
   ) %>%
   summarise(
+    N = sum(n),
+    na_pct = sum(nas) / sum(nas + N),
+    f = n[group==1] / N,
     m0 = m[group==0],
     m1 = m[group==1],
     sd_pooled = sqrt(sum((n - 1) * sd^2) / sum(n - 1))
+  ) %>%
+  mutate(
+    mean_diff = m1 - m0,
+    d = mean_diff / sd_pooled
   )
 
-ggplot(summary_stats, aes(sd_pooled)) + 
-  geom_histogram() + 
-  facet_wrap(~ dv, scales = "free_x") + 
-  theme_minimal()
+summary_stats %>%
+  ungroup() %>%
+  select(-dv, -lab) %>%
+  cor()
 
-ggplot(summary_stats, aes(m0, sd_pooled)) + 
+ggplot(summary_stats, aes(sd_pooled, mean_diff, size = N)) + 
   geom_point() + 
   facet_wrap(~ dv, scales = "free") + 
   theme_minimal()
+
+
+#-----------------------------------------------
+# Simulated data that matches summary stats
+#-----------------------------------------------
+
+James_sim_dat <- 
+  long_dat %>%
+  left_join(summary_stats, by = c("dv", "lab")) %>%
+  mutate(
+    y = ifelse(is.na(y), NA, 
+               m0 + (rt(n(), df = 3) + ifelse(group==1, 0.5, 0)) * sd_pooled)
+  ) %>%
+  select(dv, lab, group, y)
+
+James_sim_dat %>%
+  group_by(dv) %>%
+  do(run_meta_RT(x = .$y, group = .$group, lab = .$lab, graph = TRUE))
+
+#-----------------------------------------------
+# randomization test after transformation
+#-----------------------------------------------
 
 meta_results <- 
   long_dat %>%
   group_by(dv) %>%
   do(metak(x = .$y, group = .$group, lab = .$lab))
 
-
 transformed_dat <- 
   long_dat %>%
   left_join(meta_results, by = "dv") %>%
   left_join(summary_stats, by = c("dv", "lab")) %>%
-  mutate(y_trans = (y - ifelse(group==0, m0, m1)) / sd_pooled + b * (group==1)) %>%
-  select(dv, lab, group, y, y_trans)
+  mutate(
+    y_t1 = (y - m0) / sd_pooled,
+    y_t2 = (y - ifelse(group==0, m0, m1)) / sd_pooled + ifelse(group==1, b, 0)
+  ) %>%
+  select(dv, lab, group, starts_with("y"))
 
 transformed_dat %>%
   group_by(dv) %>%
-  do(run_meta_RT(x = .$y_trans, group = .$group, lab = .$lab, graph = TRUE))
+  do(run_meta_RT(x = .$y_t1, group = .$group, lab = .$lab, graph = TRUE))
+
+transformed_dat %>%
+  group_by(dv) %>%
+  do(run_meta_RT(x = .$y_t2, group = .$group, lab = .$lab, graph = TRUE))
+
