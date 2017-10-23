@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Pgbench-tools Part I
-date: 2017-10-22 08:57:00 GMT
+date: 2017-10-21 08:57:00 GMT
 ---
 
 This is a translation of my [original post](https://www.loxodata.com/post/benchmarking-pratique/) in french for Loxodata - PostgreSQL experts in France
