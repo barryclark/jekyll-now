@@ -34,6 +34,8 @@ body {text-align: justify;-moz-hyphens:none;-ms-hyphens:none;-webkit-hyphens:non
 	background-size: cover;
 	background-repeat: no-repeat;
 }
+.quarter {width: 49.9999999999%;}
+
 /* Suscribe */
 form .button {border:thin solid currentColor;margin-top:0.6em;}
 

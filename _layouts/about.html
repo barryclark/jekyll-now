@@ -28,11 +28,9 @@
 		<main id="page-main">
 			<div>
 				<section>
-				<div>
+				<div class="quarter">
 					<h2>Sobre mí</h2>
 					{{ content }}
-				</div>
-				<div>
 					<hr>
 					<h2>Contacte</h2>
 					<p>Si em necessites per a algún projecte, serà un plaer poder ajudar-te.<br>
@@ -47,13 +45,28 @@
 				<p>O bé a través de les Xarxes</p>
 				{% include svg-icons.html %}
 					<hr>
-				<div>
+				<div class="quarter">
+					<h2>Treballo en</h2>
+					<ul>
+						<li>
+						<a href="xxx">BONROLLO</a>
+						</li>
+						<li>
+						<a href="xxx">OLDS TEAM</a>
+						</li>
+						<li>
+						<a href="xxx">VIDEOS MANGUIS</a>
+						</li>
+					</ul>
 					<h2>Descargar</h2>
-					{% if page.link1 %}<a href="{{ page.link1 }}">{{ page.name1 }}</a>{% endif %}
-					{% if page.link2 %}<a href="{{ page.link2 }}">{{ page.name2 }}</a>{% endif %}
-					{% if page.link3 %}<a href="{{ page.link3 }}">{{ page.name3 }}</a>{% endif %}
-					{% if page.link4 %}<a href="{{ page.link4 }}">{{ page.name4 }}</a>{% endif %}
-					{% if page.link5 %}<a href="{{ page.link5 }}">{{ page.name5 }}</a>{% endif %}
+					<ul>
+						<li>
+						<a href="xxx">Ps Brushes</a>
+						</li>
+						<li>
+						<a href="xxx">Ps Brushes</a>
+						</li>
+					</ul>
 				</div>
 				</section>										
 				<section id="follows">
