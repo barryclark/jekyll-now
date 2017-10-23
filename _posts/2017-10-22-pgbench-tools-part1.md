@@ -5,7 +5,7 @@ Title: Pgbench-tools Part I
 
 This is a translation of my [original post](https://www.loxodata.com/post/benchmarking-pratique/) in french for Loxodata - PostgreSQL experts in France
 
-During PgDAY Paris in march of 2017, I was lucky to attend Fabien Coelho's conference on benchmarking. 
+During PgDAY Paris in march of 2017, I was lucky to attend Fabien Coelho's lecture on benchmarking. 
 You may find a summary in french [here](https://www.loxodata.com/post/proper-benchmarking/)
 I was also lucky to attend a lecture from Kaarel Mopel from Cybertec who mentioned `pgbench-tools` which I had to give a go ! 
 
