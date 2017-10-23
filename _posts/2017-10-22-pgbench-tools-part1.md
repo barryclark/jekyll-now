@@ -1,7 +1,6 @@
 ---
 layout: post
 Title: Pgbench-tools - Introduction
-published: true
 ---
 
 This is a translation of my [original post](https://www.loxodata.com/post/benchmarking-pratique/) in french for Loxodata - PostgreSQL experts in France
