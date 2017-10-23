@@ -28,7 +28,32 @@
 		<main id="page-main">
 			<div>
 				<section>
+				<div>
+					<h2>Sobre mí</h2>
 					{{ content }}
+				</div>
+				<div>
+					<hr>
+					<h2>Contacte</h2>
+					<p>Si em necessites per a algún projecte, serà un plaer poder ajudar-te.<br>
+					Pots posar-te en contacte amb mi, respondré el més aviat possible.</p>
+					<strong>
+					<em><a href="mailto:isardmt@gmail.com">isardmt@gmail.com</a></em>
+					<em><a href="tel:+34 658973617">Trucar al 658973617</a></em>
+					<em><a href="download:xxx">Desar Contacte</a></em>
+					</strong>
+				</div>
+					<hr>
+				<p>O bé a través de les Xarxes</p>
+				{% include svg-icons.html %}
+					<hr>
+				<div>
+					<h2>Descargar</h2>
+					{% if page.link1 %}<a href="{{ page.link1 }}">{{ page.name1 }}</a>{% endif %}
+					{% if page.link2 %}<a href="{{ page.link2 }}">{{ page.name2 }}</a>{% endif %}
+
+				</div>
+
 				</section>										
 				<section id="follows">
 					<h3>Seguir!</h3>
