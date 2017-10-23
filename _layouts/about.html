@@ -49,8 +49,8 @@
 					<hr>
 				<div>
 					<h2>Descargar</h2>
-					<a href="{{ page.link1 }}">{{ page.name1 }}</a>
-					<a href="{{ page.link2 }}">{{ page.name2 }}</a>
+					{% if page.link1 %}<a href="{{ page.link1 }}">{{ page.name1 }}</a>{% endif %}
+					{% if page.link2 %}<a href="{{ page.link2 }}">{{ page.name2 }}</a>{% endif %}
 					{% if page.link3 %}<a href="{{ page.link3 }}">{{ page.name3 }}</a>{% endif %}
 					{% if page.link4 %}<a href="{{ page.link4 }}">{{ page.name4 }}</a>{% endif %}
 					{% if page.link5 %}<a href="{{ page.link5 }}">{{ page.name5 }}</a>{% endif %}
