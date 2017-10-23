@@ -1,7 +1,6 @@
-
 ---
-layout: post
 title: Apuntes Oracle SQL
+layout: post
 ---
 # SQL ORACLE
 ## Tipos de Datos
