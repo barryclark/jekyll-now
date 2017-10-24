@@ -10,6 +10,8 @@ text-align: center;
 body {text-align: justify;-moz-hyphens:none;-ms-hyphens:none;-webkit-hyphens:none;-o-hyphens:none;hyphens:none;
  word-wrap:none;
  }
+ p {	font-size: 18px;
+	line-height: 28px;}
 /* Nav */
 #site-nav {background:#111 !important;color:#fff;border-bottom:none;box-shadow: 0 1px 12px rgba(0,0,0,.032);}
 #site-nav a {	font-weight: normal;min-width:12%;border:none}
@@ -17,7 +19,7 @@ body {text-align: justify;-moz-hyphens:none;-ms-hyphens:none;-webkit-hyphens:non
 #site-nav a b {text-transform: uppercase;}
 .cover h2 {letter-spacing: 0.001em;font-weight: normal; }
 .cover {
-	height: 69vh;
+	height: 76vh;
 	padding-top: 210px;
 }
 /* Page & Header */
