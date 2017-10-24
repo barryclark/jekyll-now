@@ -1,6 +1,6 @@
 ---
-layout: post
-title: Apuntes Oracle SQL
+  layout: post
+  title: Apuntes de Oracle SQL
 ---
 # SQL ORACLE
 ## Tipos de Datos
@@ -22,7 +22,7 @@ __ROWID__ | Dirección que identifica de forma única a una fila de una tabla.
 SELECT [ALL | DISTINCT] [expre_colum1, expre_colum2, .., expre_column | * ]
 FROM [nombre_tabla1., ncmbre_tabla2......nombre_tablan]
 [WHERE condición]
-[ORDER BY <expre_colum [DESC | ASC] [ ,expre_colum [DESC | ASC]...];
+[ORDER BY expre_colum [DESC | ASC] [ ,expre_colum [DESC | ASC]...];
 ```
 ___Uso de Alias___:
 ```sql
@@ -37,9 +37,11 @@ __'%'__ : Comodín (Cualquier cadena de 0 o más caracteres).
 __'_'__ : Marcador de posición (Cualquier un carácter cualquiera).
 
   ___Sintaxis___:
+
   ```sql
     ... WHERE columns LIKE 'caracteres_especiales' ...
   ```
+
 - #### NULL y NOT NULL:
 Se dice que una columna de una fila es _NULL_ si está completamente vacía.
 Para comprobar si el valor de una columna es nulo empleamos la expresión: ___column IS NULL___.
@@ -48,16 +50,16 @@ Si queremos saber si el valor de una columna no es nulo, usamos la expresión: c
 - #### Comprobaciones de Conjuntos de valores:
   - **IN**
   El operador *IN* nos permite comprobar si una expresión pertenece o no (_NOT_) a un conjunto de valores.
-  
+
     ```sql
-  <expresión> [NOT] IN (lista de valores separados por comas)
-```
+    <expresión> [NOT] IN (lista de valores separados por comas)
+    ```
  - **BETWEEN**
 El operador *BETWEEN* comprueba si un valor está comprendido o no (*NOT*) dentro de un rango de valores, desde un valor inicial a un valor final.
-  
-  ```sql
-<expresión> [NOT] BETWEEN valor_inicial AND valor_final)
-```
+
+    ```sql
+    <expresión> [NOT] BETWEEN valor_inicial AND valor_final)
+    ```
 - #### SUBCONSULTAS:
 Se utilizan para realizar alguna operación de consulta a partir de los datos devueltos por otra consulta.
 
