@@ -28,6 +28,7 @@ body {text-align: justify;-moz-hyphens:none;-ms-hyphens:none;-webkit-hyphens:non
 	background-size: cover;
 	background-repeat: no-repeat;
 }
+.cover-page #page-main ul {-webkit-column-count: 3;-moz-column-count: 3;column-count: 3;}
 
 /* Suscribe */
 form .button {border:thin solid currentColor;margin-top:0.6em;}
