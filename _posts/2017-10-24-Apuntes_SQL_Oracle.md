@@ -47,15 +47,17 @@ Se dice que una columna de una fila es _NULL_ si está completamente vacía.
 Para comprobar si el valor de una columna es nulo empleamos la expresión: ___column IS NULL___.
 Si queremos saber si el valor de una columna no es nulo, usamos la expresión: columna ***column IS NOT NULL***.
 
-- #### Comprobaciones de Conjuntos de valores:
-  - **IN**
-  El operador *IN* nos permite comprobar si una expresión pertenece o no (_NOT_) a un conjunto de valores.
+- #### Comprobaciones de Conjuntos de Valores:
+  - ***IN***
+
+    El operador *IN* nos permite comprobar si una expresión pertenece o no (_NOT_) a un conjunto de valores:
 
     ```sql
     <expresión> [NOT] IN (lista de valores separados por comas)
     ```
- - **BETWEEN**
-El operador *BETWEEN* comprueba si un valor está comprendido o no (*NOT*) dentro de un rango de valores, desde un valor inicial a un valor final.
+ - ***BETWEEN***
+
+    El operador *BETWEEN* comprueba si un valor está comprendido o no (*NOT*) dentro de un rango de valores, desde un valor inicial a un valor final:
 
     ```sql
     <expresión> [NOT] BETWEEN valor_inicial AND valor_final)
