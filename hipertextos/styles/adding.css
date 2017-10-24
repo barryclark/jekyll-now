@@ -4,7 +4,7 @@
 /* ------------------------------------------------------------ Resets */
 
 /* Center */
-#site-nav, footer, #follows, #icons, #covers, .nav-scroll, #web-credits {
+#site-nav, footer, #follows, #follows-big, #icons, #covers, .nav-scroll, #web-credits {
 text-align: center;
 }
 body {text-align: justify;-moz-hyphens:none;-ms-hyphens:none;-webkit-hyphens:none;-o-hyphens:none;hyphens:none;
@@ -29,6 +29,7 @@ body {text-align: justify;-moz-hyphens:none;-ms-hyphens:none;-webkit-hyphens:non
 	background-repeat: no-repeat;
 }
 .cover-page #page-main ul {-webkit-column-count: 3;-moz-column-count: 3;column-count: 3;}
+#follows-big em a {font-size:1.2em;}
 
 /* Suscribe */
 form .button {border:thin solid currentColor;margin-top:0.6em;}
