@@ -13,10 +13,10 @@ Actualment compagino la vida de creatiu gràfic amb la de músic.
 
 He treballat en:
 
-* Retratísta
 * Disseny Gràfic
 * Cartells & flyers
 * Branding
+* Retratísta
 * HTML5 & CSS3
 * Publicitat
 * Comunity Manager
@@ -26,4 +26,4 @@ He treballat en:
 * Tècnic de llums
 * Baterísta profesional
 
-###### Si em necessites per a algún projecte, serà un plaer poder ajudar-te.
+Si em necessites per a algún projecte, serà un plaer poder ajudar-te.
