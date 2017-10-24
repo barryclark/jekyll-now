@@ -4,6 +4,7 @@
 ---
 # SQL ORACLE
 ## Tipos de Datos
+
 Tipo | Descripción
 -- | --
 __CHAR(n)__ | String de longitud fija de n caracteres (máximo 255 caracteres).
@@ -25,9 +26,11 @@ FROM [nombre_tabla1., ncmbre_tabla2......nombre_tablan]
 [ORDER BY expre_colum [DESC | ASC] [ ,expre_colum [DESC | ASC]...];
 ```
 ___Uso de Alias___:
+
 ```sql
   SELECT  nombre_tabla [AS] "alias" FROM ...
 ```
+
 - #### Operadores de Comparación y Lógicos:
 __'='__ (igual que), __'>'__ (mayor que), __'<'__ (menor que), __'>='__ (mayor o igual que), __'<='__ (menor o igual que),
 __'!='__ o __'<>'__ (distinto de).
@@ -66,6 +69,7 @@ Si queremos saber si el valor de una columna no es nulo, usamos la expresión: c
 Se utilizan para realizar alguna operación de consulta a partir de los datos devueltos por otra consulta.
 
   ___Sintaxis___:
+  
 ```sql
   SELECT ... FROM ... WHERE columna operador_comparativo (SELECT ... FROM ... WHERE ...);
 ```
@@ -74,18 +78,23 @@ Se utilizan para realizar alguna operación de consulta a partir de los datos de
  ```SQL
  SELECT APELLIDO FROM EMPLE WHERE OFICIO = (SELECT OFICIO FROM EMPLE WHERE DEPT_NO = 20);
  ```
+ 
  - #### Subconsulta que generan listas de valores:
  Son aquellas subconsultas que devuelven más de una fila o más de un valor.
  Cuando una subconsulta devuelva más de un valor, usaremos el operador ***IN*** en la cláusula *WHERE*.
+ 
  ```SQL
  SELECT APELLIDO FROM EMPLE WHERE OFICIO IN (SELECT OFICIO FROM EMPLE WHERE DEPT_NO = 20);
  ```
+ 
 - #### COMBINACION DE TABLAS:
 Consultas de columnas de varias tablas. Las tablas se expresarán a la derecha de la palabra *FROM*.
+
  ```SQL
  SELECT columnas de tablas citadas en cláusula_from FROM tabla1, tabla2, ...
  WHERE tabla1.columna = tabla2.columna;
  ```
+ 
 ***
 ## Funciones
 Las funciones se usan dentro de expresiones y actúan con los valores de las columnas, variables o constantes.
