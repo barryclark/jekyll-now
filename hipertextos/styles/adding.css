@@ -19,7 +19,7 @@ body {text-align: justify;-moz-hyphens:none;-ms-hyphens:none;-webkit-hyphens:non
 #site-nav a b {text-transform: uppercase;}
 .cover h2 {letter-spacing: 0.001em;font-weight: normal; }
 .cover {
-	height: 78vh;
+	height: 80vh;
 	padding-top: 210px;
 }
 /* Page & Header */
