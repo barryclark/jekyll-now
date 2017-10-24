@@ -5,11 +5,10 @@ permalink: /about/
 
 ---
 
-##### Il·lustrador, dissenyador i músic de Barcelona.
+##### Il·lustrador, dissenyador i músic de Barcelona
 
-Vaig estudiar Arts Aplicades, il·lustració, pintura i posteriorment música moderna.
-
-Actualment compagino la vida de creatiu gràfic amb la de músic.
+###### Vaig estudiar Arts Aplicades, il·lustració, pintura i posteriorment música moderna.
+###### Actualment compagino la vida de creatiu gràfic amb la de músic.
 
 He treballat en:
 
@@ -26,4 +25,4 @@ He treballat en:
 * Tècnic de llums
 * Baterísta profesional
 
-Si em necessites per a algún projecte, serà un plaer poder ajudar-te.
+###### Si em necessites per a algún projecte, serà un plaer poder ajudar-te.
