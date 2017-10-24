@@ -11,11 +11,18 @@ Vaig estudiar Arts Aplicades, il·lustració, pintura i posteriorment música mo
 
 He treballat en:
 
-* Técnic de So
-* Técnic de llums
 * Retratísta
 * Disseny Gràfic
+* Impressions
 * Disseny Web
+* HTML5 & CSS3
+* Campanyes de Publicitat
+* Comunity Manager
+* YouTube Creators
+* Promoció Cultural
+* Tècnic de So
+* Tècnic de llums
+* Baterísta profesional
 
 Actualment compagino la vida de creatiu gràfic amb la de músic.
 
