@@ -22,8 +22,8 @@ body {text-align: justify;-moz-hyphens:none;-ms-hyphens:none;-webkit-hyphens:non
 }
 /* Page & Header */
 
-.cover-page #page-header {border-bottom:1px solid #000;
-	background-position: top center;
+.cover-page #page-header {border-bottom:10px solid var(--color-softgrey);
+	background-position: top center;color: var(--color-grey);
 	background-attachment: fixed;
 	background-size: cover;
 	background-repeat: no-repeat;
