@@ -18,7 +18,7 @@ He treballat en:
 * Cartells & flyers
 * Branding
 * HTML5 & CSS3
-* Campanyes de Publicitat
+* Publicitat
 * Comunity Manager
 * YouTube Creators
 * Promoció Cultural
