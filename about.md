@@ -9,11 +9,13 @@ permalink: /about/
 
 Vaig estudiar Arts Aplicades, il·lustració, pintura i posteriorment música moderna.
 
+Actualment compagino la vida de creatiu gràfic amb la de músic.
+
 He treballat en:
 
 * Retratísta
 * Disseny Gràfic
-* Impressions
+* Cartells & flyers
 * Branding
 * HTML5 & CSS3
 * Campanyes de Publicitat
@@ -23,7 +25,5 @@ He treballat en:
 * Tècnic de So
 * Tècnic de llums
 * Baterísta profesional
-
-Actualment compagino la vida de creatiu gràfic amb la de músic.
 
 Si em necessites per a algún projecte, serà un plaer poder ajudar-te.
