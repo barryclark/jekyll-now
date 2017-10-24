@@ -5,11 +5,11 @@ permalink: /about/
 
 ---
 
-Isard Miralles, il·lustrador i dissenyador gràfic de Barcelona.
+Il·lustrador, dissenyador i músic de Barcelona.
 
-Vaig estudiar Arts Aplicades, il·lustració i pintura. I posteriorment música moderna.
+Vaig estudiar Arts Aplicades, il·lustració, pintura i posteriorment música moderna.
 
 
-Actualment compagino la vida de músic amb la de creatiu gràfic sent aquestes dos les meves grans passions.
+Actualment compagino la vida de creatiu gràfic amb la de músic.
 
 Si em necessites per a algún projecte, serà un plaer poder ajudar-te.
