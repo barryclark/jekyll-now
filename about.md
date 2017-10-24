@@ -14,7 +14,7 @@ He treballat en:
 * Retratísta
 * Disseny Gràfic
 * Impressions
-* Disseny Web
+* Branding
 * HTML5 & CSS3
 * Campanyes de Publicitat
 * Comunity Manager
