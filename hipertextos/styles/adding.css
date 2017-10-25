@@ -8,18 +8,16 @@ text-align: center;
 body {text-align: justify;-moz-hyphens:none;-ms-hyphens:none;-webkit-hyphens:none;-o-hyphens:none;hyphens:none;
  word-wrap:none;
  }
- p {	font-size: 18px;line-height: 28px;}
+p, ul {font-size: 18px;line-height: 27px;}
 em hr {border-bottom:thin solid #eee;}	
 
 /* Nav */
-#site-nav {background:#111 !important;color:#fff;border-bottom:none;box-shadow: 0 1px 12px rgba(0,0,0,.032);}
-#site-nav a {	font-weight: normal;min-width:12%;border:none}
-#site-nav a:hover, #site-nav a:visited {	color:#fafafa;background:#000;}
-#site-nav a b {text-transform: uppercase;}
-.cover h2 {letter-spacing: 0.001em;font-weight: normal; }
-.cover {
-	height: 80vh;
-	padding-top: 230px;}
+#site-nav { background:#111 !important;color:#fff;border-bottom:none;box-shadow: 0 1px 12px rgba(0,0,0,.032);}
+#site-nav a { font-weight: normal;min-width:12%;border:none}
+#site-nav a:hover, #site-nav a:visited { color:#fafafa;background:#000;}
+#site-nav a b { text-transform: uppercase;}
+.cover h2 { letter-spacing: 0.001em;font-weight: normal; }
+.cover { height: 80vh;padding-top: 230px;}
 
 /* Page & Header */
 .cover-page #page-header {border-bottom:10px solid var(--color-softgrey);
@@ -30,7 +28,7 @@ em hr {border-bottom:thin solid #eee;}
 /* Suscribe */
 form .button {border:thin solid currentColor;margin-top:0.6em;}
 
-/* Suscribe */
+/* Covers */
 #covers {color: var(--color-grey);}
 #covers svg {width: 16.6666666666%;margin-bottom:1.2em;color: var(--color-softgrey); }
 #covers article {border:0;}
@@ -57,8 +55,6 @@ figure em a {border:none;border-bottom;line-height:0.2em;padding:12px 4px;}
 .imagens img {margin:0!important;padding:0!important;border:none;}
 .listed {padding:0!important;}
 .listed img {	margin:0!important;padding:0!important;	}
-.listed article { 
-border:none;overflow: hidden;width: 100%;
-display: block;display: inline-block;margin:0!important;padding:0!important;
+.listed article { border:none;overflow: hidden;width: 100%;display: block;display: inline-block;margin:0!important;padding:0!important;
 -webkit-column-break-inside: avoid;-moz-column-break-inside:avoid;-moz-page-break-inside:avoid;page-break-inside: avoid;
 }
