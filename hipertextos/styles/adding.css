@@ -12,6 +12,8 @@ body {text-align: justify;-moz-hyphens:none;-ms-hyphens:none;-webkit-hyphens:non
  }
  p {	font-size: 18px;
 	line-height: 28px;}
+em hr {border-bottom:thin solid #eee;}	
+
 /* Nav */
 #site-nav {background:#111 !important;color:#fff;border-bottom:none;box-shadow: 0 1px 12px rgba(0,0,0,.032);}
 #site-nav a {	font-weight: normal;min-width:12%;border:none}
@@ -22,6 +24,7 @@ body {text-align: justify;-moz-hyphens:none;-ms-hyphens:none;-webkit-hyphens:non
 	height: 80vh;
 	padding-top: 210px;
 }
+
 /* Page & Header */
 
 .cover-page #page-header {border-bottom:10px solid var(--color-softgrey);
