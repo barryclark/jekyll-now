@@ -9,7 +9,7 @@ body {text-align: justify;-moz-hyphens:none;-ms-hyphens:none;-webkit-hyphens:non
  word-wrap:none;
  }
 p, ul {font-size: 18px;line-height: 27px;}
-em hr {border-bottom:thin solid #eee;}	
+em hr {border-bottom:10px solid #eee;}	
 em u a {background:var(--color-grey);color:var(--color-soft);border-radius:40px;min-width:12%;max-width:50%;margin-top:38px; }
 
 /* Nav */
@@ -21,7 +21,7 @@ em u a {background:var(--color-grey);color:var(--color-soft);border-radius:40px;
 .cover { height: 80vh;padding-top: 230px;}
 
 /* Page & Header */
-.cover-page #page-header {border-bottom:10px solid var(--color-softgrey);
+#page-header {border-bottom:10px solid var(--color-softgrey);
 	background-color: var(--color-hardgrey);color: var(--color-softgrey);}
 .cover-page #page-main ul {-webkit-column-count: 3;-moz-column-count: 3;column-count: 3;}
 
