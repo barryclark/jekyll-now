@@ -52,7 +52,7 @@ figure em a {border:none;border-bottom;line-height:0.2em;padding:12px 4px;}
 #web-credits {border-top:thin solid #292929;border-bottom:thin solid #292929;}
 
 /* Classic Gallery */ 
-.listed section {	-webkit-column-count: 4;-moz-column-count: 4;column-count: 4;border:none;line-height:2em;font-size:0.2em;}
+.listed section {	-webkit-column-count: 3;-moz-column-count: 3;column-count: 3;border:none;line-height:2em;font-size:0.2em;}
 .imagens img {margin:0!important;padding:0!important;border:none;}
 .listed {padding:0!important;}
 .listed img {	margin:0!important;padding:0!important;	}
