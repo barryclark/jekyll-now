@@ -1,17 +1,14 @@
 /* BarcelonaCSS */
 /* by Acozar/Miralles  ADDING CSS */
-
 /* ------------------------------------------------------------ Resets */
 
-/* Center */
 #site-nav, footer, #follows, #follows-big, #icons, #covers, .nav-scroll, #web-credits {
 text-align: center;
 }
 body {text-align: justify;-moz-hyphens:none;-ms-hyphens:none;-webkit-hyphens:none;-o-hyphens:none;hyphens:none;
  word-wrap:none;
  }
- p {	font-size: 18px;
-	line-height: 28px;}
+ p {	font-size: 18px;line-height: 28px;}
 em hr {border-bottom:thin solid #eee;}	
 
 /* Nav */
@@ -22,33 +19,27 @@ em hr {border-bottom:thin solid #eee;}
 .cover h2 {letter-spacing: 0.001em;font-weight: normal; }
 .cover {
 	height: 80vh;
-	padding-top: 210px;
-}
+	padding-top: 230px;}
 
 /* Page & Header */
-
 .cover-page #page-header {border-bottom:10px solid var(--color-softgrey);
 	background-position: top center;color: var(--color-grey);
-	background-attachment: fixed;
-	background-size: cover;
-	background-repeat: no-repeat;
-}
+	background-attachment: fixed;background-size: cover;background-repeat: no-repeat;}
 .cover-page #page-main ul {-webkit-column-count: 3;-moz-column-count: 3;column-count: 3;}
 
 /* Suscribe */
 form .button {border:thin solid currentColor;margin-top:0.6em;}
 
 /* Suscribe */
-#covers {color:#444;}
-#covers svg {width: 16.6666666666%;margin-bottom:1.2em;color:#ccc;}
-#covers article {border:0;margin-bottom:1.2em;}
+#covers {color: var(--color-grey);}
+#covers svg {width: 16.6666666666%;margin-bottom:1.2em;color: var(--color-softgrey); }
+#covers article {border:0;}
+#page #covers article {text-shadow:-1px 1px 2px #ddd;}
 
 @media (max-width: 1200px) {
 	#covers article {width: 49.9999999999%;}
 	.cover-page #page-main ul {-webkit-column-count: 2;-moz-column-count: 2;column-count: 2;}
     .cover-page .thumb-9, .cover-page .thumb-3 {width: 100%;}
-
-
 }
 @media (max-width: 767px) {
 	#covers article {width: 100%;}
