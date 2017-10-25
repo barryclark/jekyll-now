@@ -22,8 +22,7 @@ em u a {background:var(--color-grey);color:var(--color-soft);border-radius:40px;
 
 /* Page & Header */
 .cover-page #page-header {border-bottom:10px solid var(--color-softgrey);
-	background-position: top center;color: var(--color-grey);
-	background-attachment: fixed;background-size: cover;background-repeat: no-repeat;}
+	background-color: var(--color-hardgrey);color: var(--color-softgrey);}
 .cover-page #page-main ul {-webkit-column-count: 3;-moz-column-count: 3;column-count: 3;}
 
 /* Suscribe */
