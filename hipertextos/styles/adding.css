@@ -25,8 +25,8 @@ em u a {background:var(--color-grey);color:var(--color-soft);border-radius:40px;
 	background-color: var(--color-black);color: var(--color-blue);}
 .cover-page #page-main ul {-webkit-column-count: 3;-moz-column-count: 3;column-count: 3;}
 .cover-page #page-main {color:var(--color-hardgrey);}
-.cover-page #follows-big a {border:thin solid var(--color-soft);background: transparent;}
-.cover-page #icons a:hover {border:thin solid var(--color-blue);}
+#icons a {border:thin solid var(--color-soft);background: transparent;}
+#icons a:hover {border:thin solid var(--color-blue);}
 
 /* Suscribe */
 form .button {border:thin solid currentColor;margin-top:0.6em;}
