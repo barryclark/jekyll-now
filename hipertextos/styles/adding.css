@@ -10,7 +10,8 @@ body {text-align: justify;-moz-hyphens:none;-ms-hyphens:none;-webkit-hyphens:non
  }
 p, ul {font-size: 18px;line-height: 27px;}
 em hr {border-bottom:thin solid #eee;}	
-em u a {background:var(--color-grey);color:var(--color-soft);border-radius:40px;min-width:12%;max-width:50%;margin-top:38px; }
+em u a {text-transform:uppercase;background:var(--color-white);color:var(--color-soft);border:thin solid var(--color-grey);color:var(--color-grey);border-radius:40px;width:256px;margin-top:38px; }
+em u a:hover {border: thin solid var(--color-blue);color:var(--color-blue); }
 
 /* Nav */
 #site-nav { background:#111 !important;color:#fff;border-bottom:none;box-shadow: 0 1px 12px rgba(0,0,0,.032);}
