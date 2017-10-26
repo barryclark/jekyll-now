@@ -92,6 +92,6 @@ exclude:
 defaults:
   -
     scope:
-      path: "assets/print"
+      path: "assets"
     values:
       image: true

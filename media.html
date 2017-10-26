@@ -8,21 +8,12 @@ permalink: /media/
 	<div id="layout" class="listed">
     			<h5><u>Matte Painting</u></h5>
 			<section>					
-  <article>
-	<a href="{{ site.baseurl }}/assets/mattepainting/image1.jpg" data-lightbox="roadtrip"><img class="imagens" src="{{ site.baseurl }}/assets/mattepainting/image1.jpg" alt="{{ image.basename }}"></a>
-  </article>
-  <article>
-    <a href="{{ site.baseurl }}/assets/mattepainting/image2.jpg" data-lightbox="roadtrip"><img class="imagens" src="{{ site.baseurl }}/assets/mattepainting/image2.jpg" alt="{{ image.basename }}"></a>
-  </article>
-  <article>
-    <a href="{{ site.baseurl }}/assets/mattepainting/image3.jpg" data-lightbox="roadtrip"><img class="imagens" src="{{ site.baseurl }}/assets/mattepainting/image3.jpg" alt="{{ image.basename }}"></a>
-  </article>
-  <article>
-    <a href="{{ site.baseurl }}/assets/mattepainting/image4.jpg" data-lightbox="roadtrip"><img class="imagens" src="{{ site.baseurl }}/assets/mattepainting/image4.jpg" alt="{{ image.basename }}"></a>
-  </article>
-  <article>
-    <a href="{{ site.baseurl }}/assets/mattepainting/image5.jpg" data-lightbox="roadtrip"><img class="imagens" src="{{ site.baseurl }}/assets/mattepainting/image5.jpg" alt="{{ image.basename }}"></a>
-  </article>
+	{% assign image_files = site.static_files | where: "image", true %}
+	{% for image in image_files %}
+	<article>
+    	<a href="{{ site.baseurl }}/assets/mattepainting/{{ image.name }}" data-lightbox="roadtrip"><img class="imagens" src="{{ site.baseurl }}/assets/print/{{ image.name }}" alt="{{ image.basename }}"></a>
+	</article>
+	{% endfor %}
 			</section>
 			<hr>
     			<h5><u>Impressions</u></h5>
@@ -37,52 +28,22 @@ permalink: /media/
 			<hr>
     			<h5><u>Branding</u></h5>
 			<section>					
-  <article>
-	<a href="{{ site.baseurl }}/assets/branding/logos1.jpg" data-lightbox="roadtrip"><img class="imagens" src="{{ site.baseurl }}/assets/branding/logos1.jpg" alt="{{ image.basename }}"></a>
-  </article>
-  <article>
-    <a href="{{ site.baseurl }}/assets/branding/logos2.jpg" data-lightbox="roadtrip"><img class="imagens" src="{{ site.baseurl }}/assets/branding/logos2.jpg" alt="{{ image.basename }}"></a>
-  </article>
-  <article>
-    <a href="{{ site.baseurl }}/assets/branding/logos3.jpg" data-lightbox="roadtrip"><img class="imagens" src="{{ site.baseurl }}/assets/branding/logos3.jpg" alt="{{ image.basename }}"></a>
-  </article>
-  <article>
-    <a href="{{ site.baseurl }}/assets/branding/logos4.jpg" data-lightbox="roadtrip"><img class="imagens" src="{{ site.baseurl }}/assets/branding/logos4.jpg" alt="{{ image.basename }}"></a>
-  </article>
-  <article>
-    <a href="{{ site.baseurl }}/assets/branding/logos5.jpg" data-lightbox="roadtrip"><img class="imagens" src="{{ site.baseurl }}/assets/branding/logos5.jpg" alt="{{ image.basename }}"></a>
-  </article>
-  <article>
-	<a href="{{ site.baseurl }}/assets/branding/logos6.jpg" data-lightbox="roadtrip"><img class="imagens" src="{{ site.baseurl }}/assets/branding/logos6.jpg" alt="{{ image.basename }}"></a>
-  </article>
-  <article>
-    <a href="{{ site.baseurl }}/assets/branding/logos7.jpg" data-lightbox="roadtrip"><img class="imagens" src="{{ site.baseurl }}/assets/branding/logos7.jpg" alt="{{ image.basename }}"></a>
-  </article>
-  <article>
-    <a href="{{ site.baseurl }}/assets/branding/logos8.jpg" data-lightbox="roadtrip"><img class="imagens" src="{{ site.baseurl }}/assets/branding/logos8.jpg" alt="{{ image.basename }}"></a>
-  </article>
-  <article>
-    <a href="{{ site.baseurl }}/assets/branding/logos9.jpg" data-lightbox="roadtrip"><img class="imagens" src="{{ site.baseurl }}/assets/branding/logos9.jpg" alt="{{ image.basename }}"></a>
-  </article>
+	{% assign image_files = site.static_files | where: "image", true %}
+	{% for image in image_files %}
+	<article>
+    	<a href="{{ site.baseurl }}/assets/branding/{{ image.name }}" data-lightbox="roadtrip"><img class="imagens" src="{{ site.baseurl }}/assets/print/{{ image.name }}" alt="{{ image.basename }}"></a>
+	</article>
+	{% endfor %}
 			</section>
 			<hr>
     			<h5><u>Pintura</u></h5>
 			<section>					
-  <article>
-	<a href="{{ site.baseurl }}/assets/paint/paint1.jpg" data-lightbox="roadtrip"><img class="imagens" src="{{ site.baseurl }}/assets/paint/paint1.jpg" alt="{{ image.basename }}"></a>
-  </article>
-  <article>
-    <a href="{{ site.baseurl }}/assets/paint/paint2.jpg" data-lightbox="roadtrip"><img class="imagens" src="{{ site.baseurl }}/assets/paint/paint2.jpg" alt="{{ image.basename }}"></a>
-  </article>
-  <article>
-    <a href="{{ site.baseurl }}/assets/paint/paint3.jpg" data-lightbox="roadtrip"><img class="imagens" src="{{ site.baseurl }}/assets/paint/paint3.jpg" alt="{{ image.basename }}"></a>
-  </article>
-  <article>
-    <a href="{{ site.baseurl }}/assets/paint/paint4.jpg" data-lightbox="roadtrip"><img class="imagens" src="{{ site.baseurl }}/assets/paint/paint4.jpg" alt="{{ image.basename }}"></a>
-  </article>
-  <article>
-    <a href="{{ site.baseurl }}/assets/paint/paint5.jpg" data-lightbox="roadtrip"><img class="imagens" src="{{ site.baseurl }}/assets/paint/paint5.jpg" alt="{{ image.basename }}"></a>
-  </article>
+	{% assign image_files = site.static_files | where: "image", true %}
+	{% for image in image_files %}
+	<article>
+    	<a href="{{ site.baseurl }}/assets/paint/{{ image.name }}" data-lightbox="roadtrip"><img class="imagens" src="{{ site.baseurl }}/assets/print/{{ image.name }}" alt="{{ image.basename }}"></a>
+	</article>
+	{% endfor %}
 			</section>
 			<hr>
 	</div><!-- /#Layout -->
