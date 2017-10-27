@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Introduction to Tensorflow and Linear Regression
+title: Introduction to Classification and Logistic Regression
 mathjax: True
 ---
 
