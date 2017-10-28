@@ -11,6 +11,11 @@
 		  'page': '{{ site.baseurl }}{{ page.url }}',
 		  'title': '{{ page.title | replace: "'", "\\'" }}'
 		});
+		ga('require', 'eventTracker');
+		ga('require', 'outboundLinkTracker');
+		ga('require', 'urlChangeTracker');
+		ga('send', 'pageview');
 	</script>
+	<script async src="autotrack.js"></script>
 	<!-- End Google Analytics -->
 {% endif %}
