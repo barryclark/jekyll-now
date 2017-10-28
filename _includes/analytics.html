@@ -7,15 +7,15 @@
 		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
 		ga('create', '{{ site.google_analytics }}', 'auto');
-		ga('send', 'pageview', {
-		  'page': '{{ site.baseurl }}{{ page.url }}',
-		  'title': '{{ page.title | replace: "'", "\\'" }}'
-		});
 		ga('require', 'eventTracker');
 		ga('require', 'outboundLinkTracker');
 		ga('require', 'urlChangeTracker');
 		ga('require', 'autotrack');
-		ga('send', 'pageview');
+		ga('send', 'pageview', {
+		  'page': '{{ site.baseurl }}{{ page.url }}',
+		  'title': '{{ page.title | replace: "'", "\\'" }}'
+		});		
+		
 	</script>
 	<script async src="https://raw.githubusercontent.com/srk97/geeks/master/autotrack.js"></script>
 	<!-- End Google Analytics -->
