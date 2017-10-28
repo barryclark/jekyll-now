@@ -772,6 +772,17 @@ header a.home:hover{
     margin: auto;
     
 }
+// Damn Embeds
 
+#single-post .twitter-tweet-rendered {
+    width:auto!important;
+    display:flex!important;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px!important;
+        @include mobile-small{
+        margin-bottom: 24px!important;
+    }
+}
 
-/// This is the end my friend...
+// This is the end my friend...
