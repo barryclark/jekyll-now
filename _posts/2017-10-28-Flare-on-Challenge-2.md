@@ -5,7 +5,7 @@ title: Reversing IgniteMe.exe, Flare-on Challenge 2
 
 Finding the encoded flag in this executable was easy. You can find it by running 'strings IgniteMe.exe' or by looking in the string table in IDA. 
 
-![_config.yml]({{ site.baseurl }}/images/flare-on_challenge_2/string_table.png)
+![_config.yml]({{ site.baseurl }}/images/flare-on_challenge_2/strings.png)
 
 Following the reference to the string "G1v3 m3 t3h fl4g: ", will show the code for requesting the user's input. By analyzing the code you can see that a function is called, and the return is then checked. Based on this check the program will either output "G00d j0b!" or "N0t t00 h0t R we? ...". This function will probably contain the code for validating the user's input.
 
@@ -31,8 +31,6 @@ encoded_iv = (encoded_iv & 0x000000FF) >> 1 # shr ax, 1
 print 'IV = {0}'.format(encoded_iv)
 
 ```
-
-![_config.yml]({{ site.baseurl }}/images/flare-on_challenge_2/compare.png)
 
 The result is 4, which can then be used to retrieve the flag. By looking at the loop that compares the input and the flag we can see that the encoded flag is decoded by encoded_string[index] XOR xor_char, where xor_char starts as 4 and is updated to decoded_string[index]. 
 
