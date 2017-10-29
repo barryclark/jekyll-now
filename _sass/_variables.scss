@@ -5,10 +5,11 @@
 
 // Colors
 $blue: #4183C4;
+$cyan: #038e8e;
 
 // Grays
 $black: #000;
-$darkerGray: #222;
+$darkerGray: #111;
 $darkGray: #333;
 $gray: #666;
 $lightGray: #eee;
@@ -18,6 +19,11 @@ $white: #fff;
 $helvetica: Helvetica, Arial, sans-serif;
 $helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $georgia: Georgia, serif;
+$droidsans: 'Droid Sans', sans-serif;
+$encodesans: 'Encode Sans', sans-serif;
+$ptsans: 'PT Sans', sans-serif;
+$consolas: Consolas, monaco, monospace;
+
 
 // Mobile breakpoints
 @mixin mobile {
