@@ -32,8 +32,6 @@ print 'IV = {0}'.format(encoded_iv)
 
 ```
 
-![_config.yml]({{ site.baseurl }}/images/flare-on_challenge_2/compare.png)
-
 The result is 4, which can then be used to retrieve the flag. By looking at the loop that compares the input and the flag we can see that the encoded flag is decoded by encoded_string[index] XOR xor_char, where xor_char starts as 4 and is updated to decoded_string[index]. 
 
 ![_config.yml]({{ site.baseurl }}/images/flare-on_challenge_2/getting_the_flag.png)
