@@ -86,12 +86,20 @@ frappe@erpnext:~$
 
 Now the main problem now is how to access these files as local files. Vagrant has a configuration called `synced_folders`. This, however, will prioritize syncing from host machine to guest. So if you have an empty host folder, it will screw up the initial setting from ERPNext. *My solution is simple: wait for the `frappe-bench` folder to finish setting up, then copy it out and sync.*
 
-Remember the static ip above, it will be useful here, we use scp to copy the whole folder out. This will take sometimes because we will copy the `.git` folders as well. Probably can make the copying faster using `tar` but i ignore it for the moment. 
+Remember the static ip above, it will be useful here, we use scp to copy the whole folder out. Because it's a local server, it's pretty fast. 
 
-Anyway, as long as the copying's done, it will be much better because we can continue use git on these local files and still have it synced to the VM.
 {% highlight ruby %}
-scp -r frappe@192.168.50.5:~/frappe-bench code
+scp -r frappe@192.168.50.5:~/frappe-bench/ code
 {% endhighlight %}
+
+Anyway, as long as the copying's done, it will be much better because we can continue use git on these local files and still have it synced to the VM. 
+
+We can use tar for this as well:
+
+{% highlight ruby %}
+ssh frappe@192.168.50.5 'cd ~/frappe-bench && tar czvf - .' | tar xzf - -C ./code
+{% endhighlight %}
+
 #### 4. Last step is to enable synced_folder
 Add a line to your `Vagrantfile` so that it looks like below:
 {% highlight ruby %}
