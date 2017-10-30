@@ -1,8 +1,10 @@
 ---
   layout: post
-  title: Apuntes de Oracle SQL
+  title: Tema 2: Introducción a SQL
 ---
-# Tema 2: Introdución a SQL
+
+Para realizar consultas a la base de datos, utilizaremos una única sentencia ***SELECT***. De la consulta se puede obtener: cualquier *unidad de datos*, *todos los datos*, *cualquier subconjunto de datos*, *cualquier conjunto de subconjuntos de datos*.
+
 ## Tipos de Datos
 
 Tipo | Descripción
