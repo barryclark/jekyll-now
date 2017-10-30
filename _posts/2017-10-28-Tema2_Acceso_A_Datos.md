@@ -58,14 +58,14 @@ Si queremos saber si el valor de una columna no es nulo, usamos la expresión: c
   - **IN**
   El operador *IN* nos permite comprobar si una expresión pertenece o no (_NOT_) a un conjunto de valores.
     ```sql
-  <expresión> [NOT] IN (lista de valores separados por comas)
-```
+    <expresión> [NOT] IN (lista de valores separados por comas)
+    ```
   - **BETWEEN**
   El operador *BETWEEN* comprueba si un valor está comprendido o no (*NOT*) dentro de un rango de valores, desde un valor inicial a un valor final.
   
     ```sql
-  <expresión> [NOT] BETWEEN valor_inicial AND valor_final)
-```
+    <expresión> [NOT] BETWEEN valor_inicial AND valor_final)
+    ```
 
 - #### SUBCONSULTAS:
 Se utilizan para realizar alguna operación de consulta a partir de los datos devueltos por otra consulta.
