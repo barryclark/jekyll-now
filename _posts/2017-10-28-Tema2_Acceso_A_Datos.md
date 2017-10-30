@@ -78,8 +78,8 @@ Se utilizan para realizar alguna operación de consulta a partir de los datos de
  SELECT APELLIDO FROM EMPLE WHERE OFICIO IN (SELECT OFICIO FROM EMPLE WHERE DEPT_NO = 20);
  ```
  
-- #### COMBINACION DE TABLAS:
-Consultas de columnas de varias tablas. Las tablas se expresarán a la derecha de la palabra *FROM*.
+ - #### COMBINACION DE TABLAS:
+ Consultas de columnas de varias tablas. Las tablas se expresarán a la derecha de la palabra *FROM*.
  
  ```SQL
  SELECT columnas de tablas citadas en cláusula_from FROM tabla1, tabla2, ...
