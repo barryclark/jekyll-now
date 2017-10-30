@@ -2,6 +2,7 @@
   layout: post
   title: Tema 2: Introducción a SQL
 ---
+# Introducción a SQL
 
 Para realizar consultas a la base de datos, utilizaremos una única sentencia ***SELECT***. De la consulta se puede obtener: cualquier *unidad de datos*, *todos los datos*, *cualquier subconjunto de datos*, *cualquier conjunto de subconjuntos de datos*.
 
