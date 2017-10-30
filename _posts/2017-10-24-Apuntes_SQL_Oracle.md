@@ -2,7 +2,7 @@
   layout: post
   title: Apuntes de Oracle SQL
 ---
-# CONSULTAS BÁSICAS
+# Tema 2: Introdución a SQL
 ## Tipos de Datos
 
 Tipo | Descripción
