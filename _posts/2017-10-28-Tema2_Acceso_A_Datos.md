@@ -3,7 +3,7 @@ layout: post
 title: Tema 2 de Acceso a Datos
 ---
 ### Introducción a SQL
-Aquellos que no me conozcáis, os preguntaréis el por qué de mi avatar. Pues bien, el motivo es porque desde hace muchos años colecciono sellos de correos de todo el mundo.
+Este es mi resumen del Tema 2 de Acceso a Datos, del 2º curso del Ciclo de Desarrollo de Aplicaciones Multiplataforma.
 
 ## Tipos de Datos
 Tipo | Descripción
