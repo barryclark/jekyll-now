@@ -70,7 +70,7 @@ The metric Prometheus scraped was called `my_response_time`, and it has correspo
 Now running the following query in Prometheus will get you a first version of our SLI, let's say "percentage of requests served within 500ms":
 
 ```
-my_response_time_buckets{le="0.5"} / my_response_time_count * 100
+my_response_time_buckets{le="0.5"} / ignoring (le) (my_response_time_count) * 100
 ```
 
 This will return a vector of values, like this:
@@ -82,7 +82,7 @@ Element | Value
 
 Which means: _Since the start of the service, 42.05% of the requests on instance `service-a-0` were answered in under 500ms, and for the instance `service-a-1` the corresponding value is 40.15%_
 
-This is nice, but not quite what we'd want to have.
+The `ignoring(le)` enables Prometheus to match the vectors via their labels; this is necessary as the `my_response_time_count` metric does not have a `le` label. So, this is nice, but not quite what we'd want to have.
 
 ### Refining the queries
 
