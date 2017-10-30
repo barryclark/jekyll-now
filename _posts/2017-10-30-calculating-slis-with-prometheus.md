@@ -17,7 +17,7 @@ I thought I'd share some of the perhaps more trivial insights we had when trying
 
 When going cloud native and "devops", you sooner or later encounter the need to explicitly calculate how well you're doing your job; you can't hand it off to some "operations team" anymore, it's really within your responsibility to come up with hard facts of how well your application is working.
 
-With "hard facts", I mean real numbers. And those numbers should make sense to anybody looking at them, without much interpretation. Plus they should reflect to as large an extent as possible how happy your customers are using your application.
+With "hard facts", I mean real numbers. And those numbers should make sense to anybody looking at them, without much interpretation. Plus they should reflect to as large an extent as possible how happy your customers are when using your application.
 
 Usually this means checking for at least the following things:
 
@@ -30,7 +30,7 @@ A common way to map these aspects to real numbers is to use the following approa
 
 After you have found a way to get the measurements, define a duration (in seconds/milliseconds) which is what the customer would perceive as good performance, and calculate a percentage on that, so that you receive a indicator like this: "Percentage of requests/pages served within 200ms" (example for a typical white box metric based value), or in a similar way, "Percentage of monitoring runs which finish within 10000ms" (which can be a typical black box based value). These can be *Service Level Indicators* (SLI).
 
-Such SLIs can then be held against a *Service Level Objective* (SLO), which says e.g. "We want to serve 95% of requests within 200ms." This type of sentence can also be used as a *Service Level Agreement* towards your customer; an SLA is mostly less strict than an objective, so that you can still meet your SLA, even if you did not meet your SLO.
+Such SLIs can then be held against a *Service Level Objective* (SLO), which says e.g. "We want to serve 95% of requests within 200ms." This type of sentence can also be used as a *Service Level Agreement* towards your customer; an SLA is mostly less strict than an SLO, so that you can still meet your SLA, even if you did not meet your SLO.
 
 ### How do we get the data then?
 
@@ -40,9 +40,9 @@ To enable the kind of queries as above, you usually instrument your services wit
 
 ![Prometheus Buckets](/images/prometheus-buckets.png "Prometheus Buckets")
 
-This means each bucket is always a "less than _n_ ms" type of bucket, meaning that buckets "to the right" contain all buckets "to the left" of themselves.
+This means each bucket is always a "less than _n_ ms" type of bucket, meaning that buckets "to the right" contain all buckets "to the left".
 
-Which bucket sizes are meaningful is up to you; depending on your defined SLIs, you should definitely have one bucket which corresponds to the upper bound of your indicator, so that it's possible to reason about it (we'll get to that below).
+Which bucket sizes are meaningful is up to you; depending on your defined SLIs, you should have one bucket which corresponds to the upper bound of your indicator, so that it's possible to reason about it (we'll get to that below).
 
 Creating this kind of metric is quite simple if you use one of the many [Prometheus client libraries](https://prometheus.io/docs/instrumenting/clientlibs/); most have direct support for histogram type metrics out of the box. You usually just have to add the bucket sizes and instrument your code (and of course expose a `/metrics` endpoint).
 
@@ -51,15 +51,15 @@ Creating this kind of metric is quite simple if you use one of the many [Prometh
 Given that Prometheus now scrapes your histogram metrics, there will now be metrics inside Prometheus which look approximately like this, at a specific point in time:
 
 ```
-my_response_time_buckets{le="0.1" instance="service-a-0"} 23
-my_response_time_buckets{le="0.1" instance="service-a-1"} 25
-my_response_time_buckets{le="0.3" instance="service-a-0"} 48
-my_response_time_buckets{le="0.3" instance="service-a-1"} 34
-my_response_time_buckets{le="0.5" instance="service-a-0"} 127
-my_response_time_buckets{le="0.5" instance="service-a-1"} 136
+my_response_time_buckets{le="0.1", instance="service-a-0"} 23
+my_response_time_buckets{le="0.1", instance="service-a-1"} 25
+my_response_time_buckets{le="0.3", instance="service-a-0"} 48
+my_response_time_buckets{le="0.3", instance="service-a-1"} 34
+my_response_time_buckets{le="0.5", instance="service-a-0"} 127
+my_response_time_buckets{le="0.5", instance="service-a-1"} 136
 ...
-my_response_time_buckets{le="5" instance="service-a-0"} 247
-my_response_time_buckets{le="5" instance="service-a-1"} 273
+my_response_time_buckets{le="5", instance="service-a-0"} 247
+my_response_time_buckets{le="5", instance="service-a-1"} 273
 ...
 my_response_time_count{instance="service-a-0"} 302
 my_response_time_count{instance="service-a-1"} 339
@@ -150,23 +150,23 @@ And the resulting JSON will look like this:
 
 ### Using Black Box histogram from "the outside"
 
-The above approach makes most sense if you can get your metrics from inside your application via white box measuring. It can still work with measurements from "the outside", checking end-to-end functionality.
+The above approach makes most sense if you can get your metrics from inside your application via white box measuring, but it can also work with measurements from "the outside", e.g. from checking end-to-end functionality.
 
-In the simplest case, Prometheus can reach the end to end monitoring application, which collects metrics just as with the white box instrumentation, which then makes it possible to calculate SLIs based on things like "Percentage of log ins which reach time to first use within 3000ms". The setup for that could be like this:
+In the simplest case, Prometheus can reach the end to end monitoring application, which collects metrics just as with the white box instrumentation. This makes it possible to calculate SLIs based on things like "Percentage of log ins which reach time to first use within 3000ms". The setup for that could look like this:
 
 ![Prometheus End to End Setup 1](/images/prometheus-blackbox-1.png "Prometheus End to End Setup 1")
 
-This obviously requires Prometheus to be able to reach the monitoring application, and it needs to have a reachable metrics end point. In many cases, this is difficult to achieve, and this leads us to a second possibility to get such metrics into the same Prometheus as for the white box tests:
+This obviously requires Prometheus to be able to reach the monitoring application, and it needs to have a reachable metrics end point. In some cases, this is difficult to achieve. This leads us to a second possibility to get such metrics into the same Prometheus instance as for the white box tests:
 
 ![Prometheus End to End Setup 1](/images/prometheus-blackbox-2.png "Prometheus End to End Setup 1")
 
-In this case, we have added two components: An API gateway, and the [Prometheus Pushgateway](https://github.com/prometheus/pushgateway). The API Gateway (e.g. Mashape Kong, or, shameless plug for [wicked.haufe.io](http://wicked.haufe.io)) makes sure only authenticated clients may reach the Pushgateway, and the Pushgateway accepts metrics being pushed to it, which it in turn then exposes via its own `/metrics` end point to a Prometheus instance inside e.g. a Kubernetes Cluster.
+In this case, we have added two components: An API gateway, and the [Prometheus Pushgateway](https://github.com/prometheus/pushgateway). The API Gateway (e.g. Mashape Kong, or, shameless plug: using [wicked.haufe.io](http://wicked.haufe.io)) makes sure only authenticated clients may reach the Pushgateway, and the Pushgateway accepts metrics being pushed to it, which it in turn then exposes via its own `/metrics` end point to a Prometheus instance inside e.g. a Kubernetes Cluster.
 
-FWIW, the second pattern is what we have applied for our production setup; it also allows us to implement alerting on top of the "black box" type metrics.
+FWIW, the second pattern is what we have applied for our production setup; both approaches also allows us to implement alerting on top of the "black box" type metrics.
 
 ### Wrap up
 
-I hope you could some insight on how SLIs can be calculated using histogram metrics and Prometheus - fairly easily and straightforward, if you start from the right direction. Starting with Prometheus can be challenging, but it's - in my opinion - absolutely worth the effort; this applies the more if you are on Kubernetes, but even in a non-containerized environment, Prometheus can make very much sense.
+I hope you could get some insight on how SLIs can be calculated using histogram metrics and Prometheus - fairly easily and straightforward, if you start from the right direction. Starting with Prometheus can be challenging, but it's - in my opinion - absolutely worth the effort; this applies the more if you are on Kubernetes, but even in a non-containerized environment, Prometheus can make very much sense.
 
 Obviously there are more things you could write about here, like how black box end to end tests can be written. We have very good experience with [Puppeteer](https://github.com/GoogleChrome/puppeteer), but that will be the topic of a future blog post
 
