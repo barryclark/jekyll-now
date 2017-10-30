@@ -3,7 +3,7 @@ layout: post
 title: Tema 2 de Acceso a Datos
 ---
 ### Introducción a SQL
-Este es mi resumen del Tema 2 de Acceso a Datos, del 2º curso del Ciclo de Desarrollo de Aplicaciones Multiplataforma.
+Este es mi resumen del Tema 2 de Acceso a Datos, del 2º curso del Ciclo de Desarrollo de Aplicaciones Multiplataforma.  
 
 ## Consultas de Datos
 ### Sentencias SELECT
