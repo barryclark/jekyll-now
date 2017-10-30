@@ -103,7 +103,7 @@ So, let's calculate the following:
 This can be expressed in the Prometheus Query Language like this:
 
 ```
-sum(rate(my_response_time_buckets{le="0.5"}[30m]) / sum(rate(my_response_time_count[30m])) * 100
+sum(rate(my_response_time_buckets{le="0.5"}[30m])) / sum(rate(my_response_time_count[30m])) * 100
 ```
 
 The `rate()` function takes a time series as a parameter, which is created by the expression `my_response_time_buckets{le="0.5"}[30m]` as per Prometheus Query Language notation. Doing the same with the `_count` counter and some mathematical happiness (dividing the rate with the other rate actually renders something useful again), the expected result of such a query would something like this:
