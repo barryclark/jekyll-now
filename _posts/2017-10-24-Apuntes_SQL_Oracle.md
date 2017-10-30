@@ -1,11 +1,12 @@
 ---
 layout: post
-title: Tema 2 de Acceso a Datos
+title: Acceso a Datos
 ---
 
-### Introducción a SQL
+# Tema 2: Introducción a SQL
 Para realizar consultas a la base de datos, utilizaremos una única sentencia ***SELECT***. De la consulta se puede obtener: cualquier *unidad de datos*, *todos los datos*, *cualquier subconjunto de datos*, *cualquier conjunto de subconjuntos de datos*.
 
+Para realizar consultas a la base de datos, utilizaremos una única sentencia ***SELECT***. De la consulta se puede obtener: cualquier *unidad de datos*, *todos los datos*, *cualquier subconjunto de datos*, *cualquier conjunto de subconjuntos de datos*.
 
 ## Consultas de Datos
 ### Sentencias SELECT
@@ -87,7 +88,7 @@ Consultas de columnas de varias tablas. Las tablas se expresarán a la derecha d
  ```
  
 ***
-## Funciones
+# Tema 3: Funciones
 Las funciones se usan dentro de expresiones y actúan con los valores de las columnas, variables o constantes.
 Se utilizan en: *cláusulas SELECT*, *cláusulas WHERE*, *cláusulas ORDER BY*.
   - [Funciones aritméticas](#F1)
