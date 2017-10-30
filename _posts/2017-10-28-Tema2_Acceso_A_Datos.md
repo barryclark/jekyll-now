@@ -63,8 +63,8 @@ Si queremos saber si el valor de una columna no es nulo, usamos la expresión: c
   - **BETWEEN**
   El operador *BETWEEN* comprueba si un valor está comprendido o no (*NOT*) dentro de un rango de valores, desde un valor inicial a un valor final.
   
-  ```sql
-<expresión> [NOT] BETWEEN valor_inicial AND valor_final)
+    ```sql
+  <expresión> [NOT] BETWEEN valor_inicial AND valor_final)
 ```
 
 - #### SUBCONSULTAS:
