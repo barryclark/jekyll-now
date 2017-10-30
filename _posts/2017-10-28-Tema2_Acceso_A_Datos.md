@@ -5,19 +5,6 @@ title: Tema 2 de Acceso a Datos
 ### Introducción a SQL
 Este es mi resumen del Tema 2 de Acceso a Datos, del 2º curso del Ciclo de Desarrollo de Aplicaciones Multiplataforma.
 
-## Tipos de Datos
-
-Tipo | Descripción
--- | --
-__CHAR(n)__ | String de longitud fija de n caracteres (máximo 255 caracteres).
-__VARCHAR2(n)__ | String de logitud variable de n caracteres (máximo 2000 carcteres).
-__NUMBER(n,m)__ | Numérico de longitud n con m decimales (máximo 38 dígitos).
-__LONG__ | Cadenas de caracteres de longitud variable (hasta 2 gigabytes de información).
-__DATE__ | Fechas y horas (Siglo/Año/Mes/Día/Hora/Minutos/Segundos).
-__RAW__ | Datos binarios (cadenas de bytes hasta 255 bytes).
-__LONG RAW__ | Almacenamiento de gráficos, sonidos, etc. (hasta 2 Gigabytes).
-__ROWID__ | Dirección que identifica de forma única a una fila de una tabla.
-
 ## Consultas de Datos
 ### Sentencias SELECT
 - #### Sintaxis:
