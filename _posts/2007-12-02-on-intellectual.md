@@ -4,8 +4,6 @@ title: '지식인론 &#8211; Intro. &#8220;왜 이지경이 되었을까?&#8221;
 date: 2007-12-02T15:26:57+00:00
 author: admin
 layout: post
-guid: http://flyhendrixfly.net/?p=9
-permalink: '/2007/12/02/%ec%a7%80%ec%8b%9d%ec%9d%b8%eb%a1%a0-intro-%ec%99%9c-%ec%9d%b4%ec%a7%80%ea%b2%bd%ec%9d%b4-%eb%90%98%ec%97%88%ec%9d%84%ea%b9%8c/'
 views:
   - "264"
 mytory_md_visits_count:
