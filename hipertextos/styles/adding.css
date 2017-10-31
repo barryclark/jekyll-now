@@ -52,9 +52,8 @@ figure em a {border:none;border-bottom;line-height:0.2em;padding:12px 4px;}
 
 /* Footer */ 
 #page-footer {background:#222;color:#999;}
-#page-footer em small a {border: thin solid #222;background:#eee;}
-#page-footer em small .facebook a {background:#cc0000;}
-#web-credits {border-top:thin solid #292929;border-bottom:thin solid #292929;}
+#page-footer em small a {border: thin solid #222;}
+#web-credits {border-bottom:thin solid #292929;}
 
 /* Classic Gallery */ 
 .listed section {	-webkit-column-count: 3;-moz-column-count: 3;column-count: 3;border:none;line-height:2em;font-size:0.2em;}
