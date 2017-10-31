@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 한국 신자유주의의 기원과 형성 - 지주형
+tags: book, note
 ---
 
 [책 페이지](http://www.kyobobook.co.kr/product/detailViewKor.laf?ejkGb=KOR&mallGb=KOR&barcode=9788970138039&orderClick=LEA&Kc=)
