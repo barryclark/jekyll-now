@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 일베의 사상 / 박가분
+tags: book, note, discourse
 ---
 
 [책 페이지](http://www.kyobobook.co.kr/product/detailViewKor.laf?ejkGb=KOR&mallGb=KOR&barcode=9788997889280&orderClick=LAH&Kc=)
