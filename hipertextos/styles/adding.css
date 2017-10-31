@@ -30,6 +30,8 @@ em u a:hover {border: thin solid var(--color-blue);color:var(--color-blue); }
 #icons a:hover {border:thin solid var(--color-blue);}
 .cover-page aside {border:none;color: var(--color-grey);}
 
+figure em a {border:none;border-bottom;line-height:0.2em;padding:12px 4px;}
+
 /* Suscribe */
 form .button {border:thin solid currentColor;margin-top:0.6em;}
 
@@ -55,8 +57,8 @@ form .button {border:thin solid currentColor;margin-top:0.6em;}
 	background-size: cover;background-repeat: no-repeat;
 	border:none;overflow: hidden;text-align: center;
 }
-
-figure em a {border:none;border-bottom;line-height:0.2em;padding:12px 4px;}
+#page-nav {border:none;}
+.serveis#page-main {padding:0;}
 
 /* Footer */ 
 #page-footer {background:#222;color:#999;}
