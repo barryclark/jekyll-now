@@ -5,25 +5,28 @@ permalink: /serveis/
 
 ---
 
-###### Il·lustrador, dissenyador i músic de Barcelona
+# 
 
-Vaig estudiar Arts Aplicades, il·lustració, pintura i posteriorment música moderna.
+### Disseny Web
 
-Actualment compagino la vida de creatiu gràfic amb la de músic.
+###### HTML5 & CSS3
 
-He treballat en:
+##### Un Disseny exclusiu per a cada projecte. Mola un montón, no t'ho perdis que me se lo quitan de las manos broder
 
-* Disseny Gràfic
-* Cartells & flyers
-* Branding
-* Retratísta
-* HTML5 & CSS3
-* Publicitat
-* Comunity Manager
-* YouTube Creators
-* Promoció Cultural
-* Tècnic de So
-* Tècnic de llums
-* Baterísta profesional
+### Branding
 
-Si em necessites per a algún projecte, serà un plaer poder ajudar-te.
+###### Imatge Coorporativa
+
+##### Creació de Marca Identitaria. Mola un montón, no t'ho perdis que me se lo quitan de las manos broder
+
+### Matte Painting
+
+###### Ilustració & retoc fotogràfic
+
+##### Creacions amb Photoshop que molen un montón, no t'ho perdis que me se lo quitan de las manos broder
+
+### Impressions
+
+###### Treballs per a imprempta
+
+##### Treballs per a impressió que molen un montón, no t'ho perdis que me se lo quitan de las manos broder
