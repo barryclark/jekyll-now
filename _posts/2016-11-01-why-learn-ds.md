@@ -4,8 +4,6 @@ title: 데이터 과학을 공부하는 이유
 date: 2016-11-01T21:57:59+00:00
 author: admin
 layout: post
-guid: http://flyhendrixfly.net/?p=3324
-permalink: '/2016/11/01/%eb%8d%b0%ec%9d%b4%ed%84%b0_%ea%b3%bc%ed%95%99%ec%9d%84_%ea%b3%b5%eb%b6%80%ed%95%98%eb%8a%94_%ec%9d%b4%ec%9c%a0/'
 views:
   - "2427"
 mytory_md_visits_count:
