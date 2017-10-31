@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 국가와 지역 / 박배균 ∙ 김동완 편
+tags: book, note, geology
 ---
 
 [책 페이지](http://www.kyobobook.co.kr/product/detailViewKor.laf?ejkGb=KOR&mallGb=KOR&barcode=9788993404142&orderClick=LEA&Kc=)
