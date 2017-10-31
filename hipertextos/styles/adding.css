@@ -49,6 +49,13 @@ form .button {border:thin solid currentColor;margin-top:0.6em;}
     .cover-page .thumb-9, .cover-page .thumb-3 {width: 100%;}
 }
 
+/* Serveis */
+#section-web, #section-brand, #section-paint, #section-print {
+	background-position: top center;background-attachment: fixed;
+	background-size: cover;background-repeat: no-repeat;
+	border:none;overflow: hidden;text-align: center;
+}
+
 figure em a {border:none;border-bottom;line-height:0.2em;padding:12px 4px;}
 
 /* Footer */ 
