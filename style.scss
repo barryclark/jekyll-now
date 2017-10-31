@@ -312,15 +312,18 @@ footer {
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "_highlights";
 
-// Code highlighting classess
-
 .codehilite {
-  overflow: auto;
-  font-size: 0.9em;
+    overflow: auto;
+    font-size: 0.9em;
 }
-    .codehilite table {
-        margin-bottom: 0 !important;
-    }
+
+table.rouge-table tr {
+    background-color: #FFF !important;
+}
+
+td.rouge-code {
+    padding: 0px !important;
+}
 
 code, kbd, pre, samp {
     font-family: monospace,monospace;
@@ -328,9 +331,9 @@ code, kbd, pre, samp {
 }
 
 // because of bootstrap
-td.code{
-  padding:0 !important;
-  background-color:#fff;
+td.code {
+    padding: 0 !important;
+    background-color: #fff;
 }
 
 pre {
@@ -342,10 +345,11 @@ pre {
     word-break: inherit;
     word-wrap: inherit;
 }
-    pre.lineno {
-        padding-left:0px !important;
-        padding-right:0px !important;
-    }
+
+pre.lineno {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
 
 .codehilite td {
     border: 1px solid #dee;
@@ -366,8 +370,9 @@ pre {
 dt {
     font-weight: bold;
     text-decoration: underline;
-  }
-  dd {
+}
+
+dd {
     margin: 0;
     padding: 0 0 0.5em 0;
-  }
+}
