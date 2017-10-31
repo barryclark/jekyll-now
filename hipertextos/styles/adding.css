@@ -28,6 +28,7 @@ em u a:hover {border: thin solid var(--color-blue);color:var(--color-blue); }
 .cover-page #page-main {color:var(--color-hardgrey);}
 #icons a {border:thin solid var(--color-soft);background: transparent;}
 #icons a:hover {border:thin solid var(--color-blue);}
+.cover-page aside {border:none;color: var(--color-grey);}
 
 /* Suscribe */
 form .button {border:thin solid currentColor;margin-top:0.6em;}
