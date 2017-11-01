@@ -3,7 +3,7 @@ layout: post
 title: Creating an acs-engine runtime docker image
 subtitle: How to enable using acs-engine in build pipelines
 category: dev
-tags: [howto, open-source, devops, automation, cloud]
+tags: [howto, devops, automation, cloud, docker, kubernetes]
 author: Martin Danielsson
 author_email: martin.danielsson@haufe-lexware.com 
 header-img: "images/new/Exportiert_56.jpg"

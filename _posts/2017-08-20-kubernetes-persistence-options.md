@@ -3,7 +3,7 @@ layout: post
 title: Kubernetes persistence options [updated]
 subtitle: Spoilt for choice
 category: dev
-tags: [devops, cloud, development]
+tags: [devops, cloud, development, kubernetes, docker]
 author: Lars Kumbier
 author_email: lars@kumbier.it
 header-img: "images/kubernetes-persistence-options/header.jpg"

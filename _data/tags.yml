@@ -58,6 +58,9 @@
 - slug: logging
   name: Logging
 
+- slug: kubernetes
+  name: Kubernetes
+
 - slug: microservice
   name: Microservice
 

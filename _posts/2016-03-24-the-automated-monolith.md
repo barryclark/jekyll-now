@@ -3,7 +3,7 @@ layout: post
 title: The Automated Monolith
 subtitle: Build, Deploy and Testing using Docker, Docker Compose, Docker Machine, go.cd and Azure
 category: dev
-tags: [howto, devops, deveopment]
+tags: [howto, devops, development]
 author: Marco Seifried
 author_email: marco.seifried@haufe-lexware.com
 header-img: "images/new/Exportiert_42.jpg"

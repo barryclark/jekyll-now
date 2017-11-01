@@ -3,7 +3,7 @@ layout: post
 title: Installing Kubernetes using ACS Engine in Azure Germany
 subtitle:
 category: dev
-tags: [howto, cloud, Kubernetes]
+tags: [howto, cloud, docker, kubernetes]
 author: Raul Firu
 author_email: raul.firu@haufe-lexware.com
 header-img: "images/new/Exportiert_13.jpg"
