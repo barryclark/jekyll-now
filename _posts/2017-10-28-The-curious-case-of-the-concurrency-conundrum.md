@@ -117,9 +117,7 @@ Let’s take a look at some of the problems in the above illustration:
 1. The parallel execution causes Action A2 to be lost because:
   1. A2 ran not knowing that A1 was performed by the client before itself.
   2. Finished before A1 and it was overwritten after A1 finishes.
-
 2. An issue then that can follow from that is that the client state "loses" the A2. 
-
 3. Finally, let’s say the User refreshes the UI and they get a fresh state or
 even starts work on a new State.
     1. Unknown to them another user has performed action B1 which updates the
