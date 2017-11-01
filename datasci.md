@@ -1,6 +1,6 @@
 ---
 layout: page
-title: OSS Computer Science
+title: OSS Data Science
 permalink: /about/datasci/
 ---
 
