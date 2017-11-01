@@ -1,3 +1,9 @@
+---
+layout: page
+title: OSS Computer Science
+permalink: /compsci/
+---
+
 ## Computer Science
 Classes from [OSS - Computer Science](https://github.com/open-source-society/computer-science)
 
