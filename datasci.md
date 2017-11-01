@@ -1,7 +1,7 @@
 ---
 layout: page
 title: OSS Computer Science
-permalink: /about/compsci/
+permalink: /about/datasci/
 ---
 
 Classes from [OSS - Data Science](https://github.com/open-source-society/data-science)
