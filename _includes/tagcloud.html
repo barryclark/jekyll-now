@@ -9,8 +9,8 @@
 {% for tag in tags %}
 {% assign rel_tag_size = site.tags[tag].size | times: 4.0 | divided_by: tag_count | plus: 1 %}
 <span style="white-space: nowrap; font-size: {{ rel_tag_size }}em; padding: 0.6em;">
-	<a href="{{ site.baseurl }}/tags/{{ tag | slugize }}" class="tag">{{ tag | slugize }}
-		<span>({{ site.tags[tag].size }})</span>
+	<a href="{{ site.baseurl }}/meta/tag/{{ tag | slugize }}" class="tag">{{ tag | slugize }}
+		<!-- <span>({{ site.tags[tag].size }})</span> -->
 	</a>
 </span>
 {% endfor %}
