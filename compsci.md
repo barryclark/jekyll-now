@@ -24,7 +24,7 @@ I decided that I wanted a broader CS background than what I was going to get out
 | Class | Completed | Repository |
 | ----- | --------- | ---------- |
 | How to Code - Simple Data | 10/30/2017 | [repo](https://github.com/mattboler/SimpleData) |
-| How to Code - Complex Data | | |
+| How to Code - Complex Data | In Progress | [repo](https://github.com/mattboler/ComplexData) |
 | Software Construction - Data Abstraction | | |
 | Software Construction - Object-Oriented Design | | |
 | Programming Languages, Part A | | | 
