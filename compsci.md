@@ -22,7 +22,7 @@ I decided that I wanted a broader CS background than what I was going to get out
 #### Core Programming
 
 | Class | Completed | Repository |
-| ----- | --------- | |
+| ----- | --------- | ---------- |
 | How to Code - Simple Data | 10/30/2017 | [repo](https://github.com/mattboler/SimpleData) |
 | How to Code - Complex Data | | |
 | Software Construction - Data Abstraction | | |
@@ -36,7 +36,7 @@ I decided that I wanted a broader CS background than what I was going to get out
 #### Core Math
 
 | Class | Completed | Repository |
-| ----- | --------- | |
+| ----- | --------- | ---------- |
 | Linear Algebra - Foundations to Frontiers | Covered by Math 2660 @Auburn | |
 | Calculus One | Covered by Math 1610 @ Auburn | | 
 | Calculus Two | Covered by Math 1620 @ Auburn | |
@@ -45,7 +45,7 @@ I decided that I wanted a broader CS background than what I was going to get out
 #### Core Systems
 
 | Class | Completed | Repository |
-| ----- | --------- | |
+| ----- | --------- | ---------- |
 | Build a Modern Computer from First Principles: From Nand to Tetris | | |
 | Nand to Tetris Part II | | |
 | Introduction to Computer Networking | | |
@@ -54,7 +54,7 @@ I decided that I wanted a broader CS background than what I was going to get out
 #### Core Theory
 
 | Class | Completed | Repository |
-| ----- | --------- | |
+| ----- | --------- | ---------- |
 | Algorithms (1/4) | | |
 | Algorithms (2/4) | | |
 | Algorithms (3/4) | | |
@@ -63,7 +63,7 @@ I decided that I wanted a broader CS background than what I was going to get out
 #### Core Applications
 
 | Class | Completed | Repository |
-| ----- | --------- | |
+| ----- | --------- | ---------- |
 | Databases | | | 
 | Machine Learning | | |
 | Computer Graphics | | |
@@ -76,7 +76,7 @@ I decided that I wanted a broader CS background than what I was going to get out
 #### Advanced Programming
 
 | Class | Completed | Repository |
-| ----- | --------- | |
+| ----- | --------- | ---------- |
 | Compilers | | |
 | Software Debugging | | |
 | Software Testing | | |
@@ -87,7 +87,7 @@ I decided that I wanted a broader CS background than what I was going to get out
 #### Advanced Math
 
 | Class | Completed | Repository |
-| ----- | --------- | |
+| ----- | --------- | ---------- |
 | Introduction to Mathematical Thinking | | | 
 | Calculus: Parametric Equations and Polar Coordinates | | |
 | Multivariable Calculus | | |
@@ -96,7 +96,7 @@ I decided that I wanted a broader CS background than what I was going to get out
 #### Advanced Systems
 
 | Class | Completed | Repository |
-| ----- | --------- | |
+| ----- | --------- | ---------- |
 | Electricity and Magnetism, Part 1 | | |
 | Electricity and Magnetism, Part 2 | | |
 | Computation Structures 1: Digital Circuits | | |
@@ -107,7 +107,7 @@ I decided that I wanted a broader CS background than what I was going to get out
 #### Advanced Theory
 
 | Class | Completed | Repository |
-| ----- | --------- | |
+| ----- | --------- | ---------- |
 | Introduction to Logic | | |
 | Automata Theory | | |
 | Reliable Distributed Systems, Part 1 | | |
@@ -119,7 +119,7 @@ I decided that I wanted a broader CS background than what I was going to get out
 #### Advanced Applications
 
 | Class | Completed | Repository |
-| ----- | --------- | |
+| ----- | --------- | ---------- |
 | Robotics (Specialization) | | |
 | Data Mining (Specialization) | | |
 | Big Data (Specialization) | | |
