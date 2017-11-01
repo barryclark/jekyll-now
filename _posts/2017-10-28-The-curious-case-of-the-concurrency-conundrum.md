@@ -114,7 +114,7 @@ perfect, execution order in the next section.
 
 Let’s take a look at some of the problems in the above illustration:
 
-1. The parallel excecution causes Action A2 to be lost because:
+1. The parallel execution causes Action A2 to be lost because:
   1. A2 ran not knowing that A1 was performed by the client before itself.
   2. Finished before A1 and it was overwritten after A1 finishes.
 
@@ -158,7 +158,7 @@ We must also make sure Users performing these actions have the full picture of
 what they are doing. Which is to say, that every external update to the state
 must be visible to a user before his own actions will be considered.
 
-We can solve these two points by looking at solving the issue from the perspective of the two differnt
+We can solve these two points by looking at solving the issue from the perspective of the two different 
 types of actions.
 
 ## Same origin actions and the order!
@@ -225,7 +225,7 @@ resulting in state modification.
 ## Moving onwards!
 
 Having looked at the two main concepts and issues around this type of
-asynchronous UI we can use the rest of the post to discuss **the UI aproach** to help the
+asynchronous UI we can use the rest of the post to discuss **the UI approach** to help the
 back-end achieve the orchestration needed to handle the different scenarios.
 
 We will also take a look at how we can create a situation where we make sure
@@ -303,7 +303,7 @@ Everything we discussed before leads us to think about implementing a queue of
 sorts to handle the actions a particular user does on the UI. 
 
 This is driven mainly by the POST limitation of not having access to the
-identifier for an action at the moment we send it in jvascript code. 
+identifier for an action at the moment we send it in JavaScript code. 
 
 At the end of the day we also need to track and reference all the promises
 somewhere until we get the identifiers.
@@ -353,7 +353,7 @@ function that creates them.
 
 > NOTE: There is no way we can get anything else running or executing at the
 same time. One example would be a timeout with a 0ms delay. Not even that will
-get called until the current code block finishes. And there is no real guarantess it will get called straight after! 
+get called until the current code block finishes. And there is no real guarantees it will get called straight after! 
 
 Based on this once we start recording an action or start processing a state
 update we know that we can’t have another action being sent or another update
