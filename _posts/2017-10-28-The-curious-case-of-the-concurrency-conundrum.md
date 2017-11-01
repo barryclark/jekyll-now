@@ -7,21 +7,25 @@ headerimage: /images/2017-10-28-Concurrency/Client Updates Issue.png
 comments: true
 ---
 
-The project I’m working on at work ran into a very interesting problem with
-how we handle user actions on the UI and how those actions are processed in
-the back end.
+The architecture of the system I'm currently involved in at work is capable of
+processing multiple user actions in parallel and out of order. The actions are
+then reflected on a main state object that represents the current user's
+interaction within a business process.
 
-The architecture of the system is capable of  processing multiple user actions
-in parallel and out of order. This was mostly reflected on a main state object
-that represents the current user's interaction within a business process.
+The outcome of the parallel processing turned out to cause the state not being
+correctly updated. Certain user actions were not reflected properly and were
+lost even though the users sent them from the UI.
 
-The outcome of this is that the state was  not correctly updated. Certain user
-actions were not reflected properly and were lost even though the users sent
-them from the UI.
+The issue was tackled on both the UI and Server fronts. This post will focus
+on the UI solution and the reasoning behind it. At the same time it will take
+a somewhat deeper look at the issue itself.
 
-The issue was tackled on both the UI and server fronts. This post will focus
-on the UI solution and the reasoning behind it. At  the same time it will take
-a deeper look at the issue itself.
+>Disclaimer: Because of client confidentiality and security reasons some parts
+of the post are a bit abstract and some details are not discussed. The
+javascript code shown, even though written in real javascript, is also
+abstracted away and written specifically for demonstration purposes of this
+post and therefore should not be taken as a real implemented xample of the
+discussed ideas herein.
 
 # Setting up the stage!
 
@@ -29,39 +33,37 @@ The front end of the solution is an Angular application which handles a
 business process  represented as a JavaScript object that tracks the state and
 changes.
 
-The State is the current collection of data for an instance of a business
+The State is the current collection of data for one instance of a business
 process on which the users operate by execution UI actions.
 
 The actions are sent and processed in the server resulting in state updates
 pushed back to the UI.
 
-**What is important to note for the server side of is that the processing does
+**What is important to note for the server side is that the processing does
 not happen straight away, but is handled by a service bus.**
 
-When everything is finalized the UI then gets an asynchronous notification via
-SignalR and in turn updates the local state to reflect the one from the
-notification.
+When everything is finalized on the server the UI gets an asynchronous
+notification via SignalR and in turn updates the local state to reflect the
+one from the notification (server).
 
-Moving unto updates themselves we separate them into two main categories:
+Because of the roles of users we can make a difference between two types of
+updates origination from different actions:
 
 1. Actions issued by the users who currently are involved in the business
 process and operate on a detailed view of the state.
 
-2. Actions issued by a set of power users who can change certain aspects of
+2. Actions issued by a set of **power users** who can change certain aspects of
 the state including the ownership.
 
-The main difference being the two being the view the users have on the state.
 In the first case, the users are actively observing the state they are
-changing, which might not need be the case with the second set of actions.
+changing, which is usually not the case for the second set of actions/users.
 
-To better illustrates this part of the system we can take a look at the
-following diagram:
+To better illustrates this we can take a look at the following diagram:
 
 ![UpdateSources]({{ site.baseurl }}/images/2017-10-28-Concurrency/UpdateSources.png)
 
-Even though the diagram does not contain any problems with it if we look
-closely and knowing how things are processed we can determine a couple of
-possible issue points:
+Even though the diagram does not illustrate any problems with it if we look
+closely  a couple of possible issue points:
 
 1. User A can send two actions A1 and A2 at relatively the same:
    1. A1 sent.
@@ -71,12 +73,12 @@ possible issue points:
    5. Server processor sets StateA1 as final after A1 completes.
    6. Resulting in A2 being lost.
 
-2. There is also the subtle issue where 2 users can perform actions with a
+2. There is also the subtle issue where two users can perform actions with
 enough time difference that the final state is resolved correctly BUT it means
-that a user has performed an action on a stale State that is not up to date.
+that one user has performed an action on a stale State that is not up to date.
 
 We will see some more detailed explanations of the two above problems in the
-following sections where we will try to identify is how and when a single user
+following sections where we will try to identify how and when a single user
 receives notifications of changes for the state on the UI and the two general
 types of notifications.
 
@@ -86,8 +88,11 @@ types of notifications.
 
 We can see that the state updates can be categorized in two main types: 
 
-1. State updates triggered by actions performed by the current client.
-2. State updates triggered by actions from other clients.
+1. State updates triggered by actions performed by the current user.
+2. State updates triggered by actions from other users.
+
+This follows the separation in the previous section around the notifications
+and user types.
 
 We can also notice that the above image illustrates a perfect scenario where
 each action is executed when it hits the server and each state update is
@@ -95,49 +100,44 @@ processed as it comes in the front end.
 
 But this is usually not what happens! ClientA can perform many actions in
 quick succession, and without any mechanism to control this the actions can be
-executed in parallel on the server.
+executed in parallel when they reach the server.
 
-> NOTE: The parallel execution comes from the service bus implementation which can
-pick up user actions in batches.
+> NOTE: The parallel execution comes from the service bus implementation which
+can pick up user actions in batches.
 
-This can obviously lead to a lack of consistency on what is shown on the UI!
-
-To better understand what might really go wrong we will look at a not so
-perfect execution order in the next section.
+To better understand what might really go wrong we will look at a, not so
+perfect, execution order in the next section.
 
 ## The Issue Scenario
 
 ![ClientUpdatesIssue]({{ site.baseurl }}/images/2017-10-28-Concurrency/Client Updates Issue.png)
 
-Let’s take a look at some of the problems in the above diagram:
+Let’s take a look at some of the problems in the above illustration:
 
-1. First of all the server can process some of the action in parallel without
-consideration of the sequence the client sends the actions in. This results in
-losing of one of the Actions. In the above example that is action A2 which:
-  1. Ran not knowing that Action A1 was performed by the client before it.
-  2. Finished before Action A1 and it was overwritten.
+1. The parallel excecution causes Action A2 to be lost because:
+  1. A2 ran not knowing that A1 was performed by the client before itself.
+  2. Finished before A1 and it was overwritten after A1 finishes.
 
-2. An issue then that can follow from that is that the client state loses the A2 action. 
+2. An issue then that can follow from that is that the client state "loses" the A2. 
 
 3. Finally, let’s say the User refreshes the UI and they get a fresh state or
 even starts work on a new State.
     1. Unknown to them another user has performed action B1 which updates the
        server side state to SRB1.
-    2.  Before SRB1 is propagated to our user they send ActionA3 not
-        knowing about the server changes
-
+    2. Before SRB1 is propagated to our user they send ActionA3 not
+       knowing about the server changes
 
 The big problem with item 3 above is that B1 might change the state in such a
 way that it might affect the user's decision to run A3 or the data they will
 associate with the action.
 
-Thinking about this we arrive at the point of the post, being how concurrency
+Thinking about this we arrive at title point, being how concurrency
 is expressed in this system.
 
 # Concuwhat?!
 
 Concurrency! And after reading the Wikipedia definition, it turns out the lack
-of concurrency in all of the above examples
+of concurrency in all of the above examples:
 
 >In computer science, concurrency is the decomposability property of a
 program, algorithm, or problem into order-independent or partially-ordered
@@ -150,11 +150,16 @@ described is really concurrent. For us the order is of great importance as
 each action might result in alterations to the other available actions or
 available data.
 
+>Or at least that is how I understood the definition of concurrency! :)
+
 Each action must be completed before the next one can happen.
 
-We must also insure Users performing these actions have the full picture on
+We must also make sure Users performing these actions have the full picture of
 what they are doing. Which is to say, that every external update to the state
 must be visible to a user before his own actions will be considered.
+
+We can solve these two points by looking at solving the issue from the perspective of the two differnt
+types of actions.
 
 ## Same origin actions and the order!
 
@@ -166,7 +171,7 @@ actions are processed as the user is sending them from the UI and nothing gets
 executed out of order and the server state is consistent.
 
 For example when sending Action A2 we send along an identifier saying that A1
-was the previous action. The back-end will then know to hold on A2 until it
+was the previous action. The back-end will then know to "hold on" A2 until it
 knows A1 is finished.
 
 > We can use the notation A2(A1) to denote the identification approach and
@@ -175,22 +180,24 @@ make the following couple of sections easier to describe.
 But we might already guess that this is not enough as we also know that
 multiple users can make changes to the state.
 
-## Multi origin actions
+## Multi origin/user actions
 
 The second thing to do is handling actions from multiple origins or users.
-Let's also  in mind is that actions from other users trigger the external
+
+What we should also keep in mind is that actions from other users trigger the external
 state update.
 
-The thing here is that there is not much else to do from any of the clients to
-help with point 3 in the issue scenario above. Let's think it through:
+The thing here is that there is not much else to do on any of the clients to
+help with point resolving point number three  in the issue scenario. Let's think it through:
 
 The client sends A2(A1). Some other client sends B1(A1) and B1 get’s executed
 first.
 
 The above looks troublesome but it’s fixable by having the server also keeps
 track about what was executed last for the given state, no matter which
-client/user executed it. We can now compare state metadata and arrive at the
-following conclusion:
+client/user executed it.
+
+We can now compare state metadata and arrive at the following conclusion:
 
 1. When B1(A1) arrives check server state for last executed action which at
 the time of check is A1.
@@ -208,17 +215,17 @@ At this point we discard A2(A1). The user will have to re-perform that action.
 They should review the state and try and perform the action again.
 
 We saw in the Client Update diagram that external state changes are
-immediately propagated to the all clients. As a result the new external state
+immediately propagated to all clients. As a result the new external state
 for the user sending A2(A1) will come some time after they’ve sent their
 action. They will then be able to review and perform their action again.
 
-> The server in both cases will have to keep track of what action execution
-modified the state and which was the last action.
+> In both origin cases the server will have to keep track of what last action was executed
+resulting in state modification.
 
 ## Moving onwards!
 
 Having looked at the two main concepts and issues around this type of
-asynchronous UI we can use the rest of the post to discuss ways to help the
+asynchronous UI we can use the rest of the post to discuss **the UI aproach** to help the
 back-end achieve the orchestration needed to handle the different scenarios.
 
 We will also take a look at how we can create a situation where we make sure
@@ -229,7 +236,7 @@ actually fits and helps with the orchestration.
 
 I wanted to come up with an interesting analogy for how things are handled on
 the Client. The final concept is one where each action needs a ticket to be
-executed by the server. In a way we will be implementing a ticketing system
+executed by the server. In a way we will be implementing a "ticketing system"
 with the restriction where the uniqueness of the tickets is dependent on all
 the previous passengers.
 
@@ -239,7 +246,7 @@ state. And the ticket is valid only if the action identified by the ticket
 value has been processed on the server and is the last processed action.
 
 We send the action and then the big doorman in the server in the cloud
-validates the action ticket which results in three possible actions:
+validates the action ticket which results in three possible outcomes:
 
 1. The action identified by the value in our ticket has been processed and is
 the last processed action. Our ticket is valid and we are good to go!
@@ -250,7 +257,7 @@ after the previous action. Good to go but we will wait a little bit!
 
 3. The action identified by the ticket value has been processed but also other
 actions have been processed after it. We have to go back and get a new ticket
-with a new value matching the latest processed action!
+with a new value matching the latest processed action! Not good! We  let the user know to review!
 
 ## Digging deeper!
 
@@ -266,9 +273,9 @@ For our purposes we presume that the promise will resolve to the server
 generated identifier for the action we sent. It is this identifier that
 is the ticket value for any next action.
 
-> NOTE: Remember that the POST promise does not contain the new state after
+> NOTE: Remember that the POST promise resolution data does not contain the new state after
 the action is applied. That comes later with the SignalR notification after
-the action is fully executed.
+the action is fully executed. The point when the Promise resolves does not equal the point the action is completed!
 
 We can identify two challenges here:
 
@@ -283,11 +290,11 @@ let’s look at what constitutes the state object.
 
 ## State Object
 
-They key aspect our state is that each time it undergoes change we store the
+They key aspect of our state is that each time it undergoes change we store the
 identifier of the action that changed it. This is also true for the initial
 action that "creates" the state.
 
-With this in mind we have a more clearer picture on the resolution for the
+With this in mind we have a more clearer picture on the fix for the
 second issue in the previous section.
 
 ## Tracking Actions
@@ -295,14 +302,15 @@ second issue in the previous section.
 Everything we discussed before leads us to think about implementing a queue of
 sorts to handle the actions a particular user does on the UI. 
 
-This is driven mainly by the POST limitation and not having access to the
-identifier for an action at the moment we send it in code. At the end of the
-day we need to track and reference all the promises somewhere until we at
-least get the identifiers.
+This is driven mainly by the POST limitation of not having access to the
+identifier for an action at the moment we send it in jvascript code. 
+
+At the end of the day we also need to track and reference all the promises
+somewhere until we get the identifiers.
 
 ## Types of Tracked Actions
 
-We already discussed that states can undergo mainly 2 different types of
+We already discussed that states can undergo mainly two different types of
 updates while users are working on them. Updates triggered by the users
 themselves and updates triggered by different users in the application.
 
@@ -327,9 +335,13 @@ the UI.
 
 We can now start talking about specifics and achieving the above in code.
 
+> IMPORTANT! In the above image some of the State Update nodes are update nodes
+from received from actions from the current user working on the state. It will be a bit clearer how this
+is handled when looking at the code. 
+
 # Javascript Execution and Promises
 
-First we will look into some characteristics of Javascript that help us with
+First lets mention some characteristics of Javascript that help us with
 managing some of our issues.
 
 Javascript is an inherently single threaded language which makes our somewhat
@@ -341,10 +353,10 @@ function that creates them.
 
 > NOTE: There is no way we can get anything else running or executing at the
 same time. One example would be a timeout with a 0ms delay. Not even that will
-get called until the current code block finishes. 
+get called until the current code block finishes. And there is no real guarantess it will get called straight after! 
 
 Based on this once we start recording an action or start processing a state
-update we know that we can’t have another action being sent or an other update
+update we know that we can’t have another action being sent or another update
 processed.
 
 We know that we will complete recording everything we want for the current
@@ -444,17 +456,15 @@ There are a couple of methods we use as given of which the most important are:
 2. storeNode()
 
 These two methods abstract away the storage and retrieval of the nodes in our
-action array. One important thing to note is that these should basically
-implement a stack like structure. We put nodes on the stack and are always
-able to get the last node.
-
-> Note: My own implementation is a finite `stack` like structure implemented
-with a finite number of items. When we reach the limit the node at the tail of
-the stack gets discarded.
+action array. One important thing to note is that the service handling this should
+implement a stack like structure. We should be able to add nodes on the stack and always
+be able to get the last node.
 
 ## Handling state updates by external sources
 
-Let's now have a look at the method handling the state updates: 
+Let's now have a look at the method handling the state updates. This one is a
+bit more complicated. Remember the state updates that can arrive can triggered
+by external users and the current user as well:
 
 ```javascript
 // This method gets called anytime a state update triggered by the back end happens
@@ -592,7 +602,7 @@ The thing to keep in mind is that the only way the server let's us know that
 something got processed or not is using the SignalR notifications.
 
 In our case we will have a SignalR notification type for successful processed
-action which contains the new state.  
+action which contains the new state. This is what we handle in the previous code example.
 
 We can also have a SignalR notification type letting us know our action has
 failed to process because of the wrong value in our ticket.
@@ -602,12 +612,11 @@ These actions are processed quite differently.
 1. The new state SignalR handler eventually calls **handleStateUpdate()** with
 the new state.
 
-2. The failed to process SignalR handler can call a notification UI service
+2. The **failed to process** SignalR handler can call a notification UI service
 that shows an appropriate message.
 
-**We don't have to do anything special for failed actions because we receive
-the successful state update either way, even if the state has been updated by
-a different user.**
+**We don't have to do anything special for failed actions because another user changed the state because we receive
+the successful state update (from the other user) either way**
 
 # Wrapping things up!
 
@@ -620,16 +629,10 @@ to some of these interesting specifics of the JavaScript language.
 
 One key thing to finally mention are all the issues that I came across while
 working on this. There were several versions of the above code before reaching
-the final version. I made some  mistakes with the initial versions but to
-discuss them would be a topic of its own as the reasons touch upon the time
-frames in which the solution was to be delivered.
+the final version. There were some mistakes with the initial versions but to
+discussing them should be a topic on its own! 
 
-Nonetheless that period provided a very interesting experience which I'm
-planning to cover in a future post!
+Nonetheless that experience was quite informative which is something I'm
+planning to cover in a future lessons learned type of post!
 
 Until next time!
-
-
-
-
-
