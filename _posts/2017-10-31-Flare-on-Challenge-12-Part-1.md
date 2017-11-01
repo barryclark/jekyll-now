@@ -27,17 +27,17 @@ I used Spy Studio to watch API calls made by coolprogram. Here you can see the c
 
 ![_config.yml]({{ site.baseurl }}/images/flare-on_challenge_12_part_1/spystudio_second_stage_return.png)
 
-I then start up fakenet and rerun coolprogram, and this time it succeeds. Inspecting the InternetReadFile call allows us to see the parameters, and by breaking after the call we can see what was opened. In this case it was the encrypted secondstage that we had setup to be returned. 
+I then start up FakeNet-NG and rerun coolprogram, and this time it succeeds. Inspecting the InternetReadFile call allows us to see the parameters, and by breaking after the call we can see what was opened. In this case it was the encrypted secondstage that we had setup to be returned. 
 
 Coolprogram created a process with the command parameter of "C:\Program Files (x86)\Internet Explorer\iexplore.exe -nohome". This proves that the iexplore.exe process we saw eariler was indeed a bad process started by coolprogram. 
 
 ![_config.yml]({{ site.baseurl }}/images/flare-on_challenge_12_part_1/call_address.png)
 
-Spy Studio can show us the call stack when an API call is made. This can be useful to set breakpoints in a debugger or for finding a focus area for disassembly. Another nice feature of Spy Studio is being able to compare traces of the execution of a program. Below is the return from comparing the traces of coolprogram when no file was returned and when was. It is currently filtered on "caller = coolprogram.exe". This allows you to quickly see what was different when the file was returned. 
+Spy Studio can show us the call stack when an API call is made. This can be useful to set breakpoints in a debugger or for finding a focus area for disassembly. Another nice feature of Spy Studio is being able to compare traces of the execution of a program. Below is the return from comparing the traces of coolprogram when no file was returned and when one was. It is currently filtered on "caller = coolprogram.exe". This allows you to quickly see what was different when the file was returned. 
 
 ![_config.yml]({{ site.baseurl }}/images/flare-on_challenge_12_part_1/trace_compare.png)
 
-I was not able to find the API call for WriteProcessMemory in Spy Studio, so I fired up API Monitor. I selected to monitor InternetReadFile and WriteProcessMemory API calls. This is another was to see the different calls the program makes, but you need to know what API calls you want to monitor. Breakpoints can be set to before or after an API call. This allows you to attach a debugger to the process or even modify the values being passed to or returned from the API call. 
+I was not able to find the API call for WriteProcessMemory in Spy Studio, so I fired up API Monitor. InternetReadFile and WriteProcessMemory API calls were selected to monitor. This is another way to see the different calls the program makes, but you need to know what API calls you want to monitor. Breakpoints can be set to before or after an API call. This allows you to attach a debugger to the process or even modify the values being passed to or returned from the API call. 
 
 ![_config.yml]({{ site.baseurl }}/images/flare-on_challenge_12_part_1/change_parameters.png)
 
@@ -45,11 +45,11 @@ Below I inspected the call to InternetReadFile to check that the file retrieved 
 
 ![_config.yml]({{ site.baseurl }}/images/flare-on_challenge_12_part_1/api_monitor_read_file.png)
 
-By breaking on the WriteProcessMemory API call the parameters passed can be inspected. The parameters we are interested in are IpBuffer and nSize, which is the address of memory to start writing from and number of byte to write respectively. 
+By breaking on the WriteProcessMemory API call the parameters passed can be inspected. The parameters we are interested in are IpBuffer and nSize, which is the address of memory to start writing from and number of bytes to write respectively. 
 
 ![_config.yml]({{ site.baseurl }}/images/flare-on_challenge_12_part_1/api_monitor_break_write_process.png)
 
-The memory can be dumped many different ways such as using procdump, ollydbg, or using api monitor to inspect the memory. Now we have the decrypted secondstage and are now able to go to the next step. 
+The memory can be dumped many different ways such as using procdump, ollydbg, or using Api Monitor to inspect the memory. Now we have the decrypted secondstage and are now able to go to the next step. 
 
 ![_config.yml]({{ site.baseurl }}/images/flare-on_challenge_12_part_1/found_decrypted_file.png)
 
