@@ -84,3 +84,8 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+
+# build setting 
+encoding: utf-8
+highlighter: rouge
+highlighter: pygments
