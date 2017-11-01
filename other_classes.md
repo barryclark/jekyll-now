@@ -30,14 +30,14 @@ Misc classes I plan to take when I have time.
 | Robotics: Dynamics and Control | | |
 | Robotics: Locomotion Engineering | | |
 
-## BioInformatics (If I ever have time)
+### BioInformatics (If I ever have time)
 Classes from [OSS - BioInformatics](https://github.com/open-source-society/bioinformatics)
 
 [![Open Source Society University - BioInformatics](https://img.shields.io/badge/OSSU-bioinformatics-blue.svg)](https://github.com/open-source-society/bioinformatics)
 
 * Classes where notes or homework are done primarily on paper will be scanned or converted to TeX and uploaded to repos as I find time, but they will lag behind programming classes in terms of being up to date.
 
-### 1st Year
+#### 1st Year
 
 | Class | Completed | Repository |
 | ----- | --------- | ---------- |
@@ -50,7 +50,7 @@ Classes from [OSS - BioInformatics](https://github.com/open-source-society/bioin
 | Calculus 1 | Covered by Math 1610 @ Auburn | |
 | Mathematics for CS | | |
 
-### 2nd Year
+#### 2nd Year
 
 | Class | Completed | Repository |
 | ----- | --------- | ---------- |
@@ -63,7 +63,7 @@ Classes from [OSS - BioInformatics](https://github.com/open-source-society/bioin
 | Introduction to Linux | | | 
 | Descriptive Statistics | | |
 
-### 3rd Year
+#### 3rd Year
 
 | Class | Completed | Repository |
 | ----- | --------- | ---------- |
@@ -77,7 +77,7 @@ Classes from [OSS - BioInformatics](https://github.com/open-source-society/bioin
 | Biostatistics 1 | | |
 | Biostatistics 2 | | |
 
-### 4th Year
+#### 4th Year
 
 | Class | Completed | Repository |
 | ----- | --------- | ---------- |
@@ -96,7 +96,7 @@ Classes from [OSS - BioInformatics](https://github.com/open-source-society/bioin
 | Bioinformatics 7 | | |
 | Evolution | | |
 
-### Extra Year 
+#### Extra Year 
 
 | Class | Completed | Repository |
 | ----- | --------- | ---------- |
