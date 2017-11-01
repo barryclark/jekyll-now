@@ -1,10 +1,6 @@
 ---
 layout: post
-title: You're up and running!
+title: Hello World!
 ---
 
-Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
-
-![_config.yml]({{ site.baseurl }}/images/config.png)
-
-The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
+Testing, testing, 1 2 3. Hi! This is going to be a place for me to put updates on personal projects, mostly RPi and Arduino mechatronics builds. I'm about to start working on an OpenCV-based motion tracking and laser targeting system, stay tuned for the beginning of the build.
