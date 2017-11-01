@@ -1,4 +1,11 @@
-  ### Astrophysics Xseries
+---
+layout: page
+title: Other Classes
+permalink: /about/other_classes/
+---
+
+
+### Astrophysics Xseries
 
 | Class | Completed | Repository |
 | ----- | --------- | ---------- |
