@@ -24,7 +24,7 @@ a somewhat deeper look at the issue itself.
 of the post are a bit abstract and some details are not discussed. The
 javascript code shown, even though written in real javascript, is also
 abstracted away and written specifically for demonstration purposes of this
-post and therefore should not be taken as a real implemented xample of the
+post. Therefore should not be taken as a real implemented example of the
 discussed ideas herein.
 
 # Setting up the stage!
