@@ -1,3 +1,9 @@
+---
+layout: page
+title: OSS Computer Science
+permalink: /about/compsci/
+---
+
 Classes from [OSS - Data Science](https://github.com/open-source-society/data-science)
 
 I love linear algebra and I love weird information, so here's a new hobby.
