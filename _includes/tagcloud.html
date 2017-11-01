@@ -6,7 +6,7 @@
 {% assign tag_count = tag_count | plus: site.tags[tag].size %}
 {% endfor %}
 
-<ul class="tag">
+<ul class="tags">
     {% for tag in tags %}
     {% assign rel_tag_size = site.tags[tag].size | times: 4.0 | divided_by: tag_count | plus: 1 %}
     <li style="font-size: {{ rel_tag_size }}em;">
