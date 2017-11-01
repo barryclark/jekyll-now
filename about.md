@@ -20,7 +20,7 @@ Classes I'm currently working through:
 
 Classes I've finished or plan on taking in the future:
 
-* [Computer Science](compsci.md)
+* [Computer Science](https://mattboler.github.io/about/compsci/)
 * [Data Science](datasci.md)
 * [Misc Science and Engineering](other_classes.md)
 
