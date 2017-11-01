@@ -4,6 +4,7 @@ title: Other Classes
 permalink: /about/other_classes/
 ---
 
+Misc classes I plan to take when I have time.
 
 ### Astrophysics Xseries
 
