@@ -10,10 +10,17 @@ search_omit: true
     <input class="search-button" type="submit" value="Search" />
   </form>
 
+  <p class="post-meta" style="text-align: justify;">
+    {% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
+    {% assign tags = site_tags | split:',' | sort %}
+    {% include tagcloud.html %}
+  </p>
+  
   <!-- Search results placeholder -->
   <p data-search-found class="search-result-counter">
     <span data-search-found-count></span> Result(s) found for &ldquo;<span data-search-found-term></span>&rdquo;.
   </p>
+  
   <div data-search-results></div>
 
   <!-- Search result template -->
