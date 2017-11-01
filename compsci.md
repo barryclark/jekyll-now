@@ -4,6 +4,8 @@ title: OSS Computer Science
 permalink: /about/compsci/
 ---
 
+TEST
+
 Classes from [OSS - Computer Science](https://github.com/open-source-society/computer-science)
 
 I decided that I wanted a broader CS background than what I was going to get out of my minor, so I'm taking classes from here as I have time. Additionally, I want to stay fresh during my work semesters, so this seemed like good practice.
