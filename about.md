@@ -20,7 +20,7 @@ Classes I'm currently working through:
 
 Classes I've finished or plan on taking in the future:
 
-* [Computer Science](cs.md)
+* [Computer Science](compsci.md)
 * [Data Science](ds.md)
 * [Misc Science and Engineering](other_classes.md)
 
