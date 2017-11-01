@@ -31,4 +31,4 @@ Resume: [here](resumeSmr2017.pdf)
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[meb0054@auburn.edu](mailto:meb0054@auburn.edu)
