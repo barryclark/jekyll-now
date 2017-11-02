@@ -3,6 +3,8 @@ layout: post
 title: Laser Tracking Project Introduction
 ---
 
+![Blinding](/images/robot_blinding.gif)
+
 If you haven't watched Michael Reeves' eye-lasering robot [here](https://www.youtube.com/watch?v=Q8zC3-ZQFJI), then go do that.
 I'm going to do the same thing, but hopefully with a bit more speed and precision.
 The end goal is to end up with a pan-tilt laser that will follow reasonably fast-moving thrown objects across the screen.
