@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Introduction to Tensorflow and Linear Regression
+title: Introduction to Classification and Logistic Regression
 mathjax: True
 ---
 
-
+A link to the slides given at the workshop is available [here](http://bit.ly/2hTLMjb).
 # Last Week's Review
 
 Before diving into this week's new material, we wanted to first take a step back and review what we learned last week since linear regression is a fundamental model within machine learning. We also wanted to go back and review some Tensorflow specifics.
@@ -133,20 +133,20 @@ plt.show()
 - **Learning is about generalizing from the training data that we have.**
 
 ### Loss functions
-- Given a function $ f: X \rightarrow Y $, we want to evaluate how well it is doing. 
-- Example loss function: just take the squared difference: $ L_i = (f(x_i) - y_i)^2 $
-- If we make predictions across the entire training set, we end up with a total loss $ L = \sum_{i = 1}^{N} L_i = \sum_{i = 1}^{N} (f(x_i) - y_i)^2 $
+- Given a function $$ f: X \rightarrow Y $$, we want to evaluate how well it is doing. 
+- Example loss function: just take the squared difference: $$ L_i = (f(x_i) - y_i)^2 $$
+- If we make predictions across the entire training set, we end up with a total loss $$ L = \sum_{i = 1}^{N} L_i = \sum_{i = 1}^{N} (f(x_i) - y_i)^2 $$
 - Assumption: If we can minimize this loss, then we have learned a good function that can accurately predict inputs from outputs. 
     - Is this true? What are arguments for and against this assumption? Think about what we're really interested in with machine learning, and how the value of this loss relates to that. 
 
 ### Linear Regression
 - Linear regression is one model that we can use when dealing with real-valued outputs. 
-- Fundamental assumption: model our output ($y_i$) as a ** linear combination ** of our inputs. 
-- Example: We want to learn a function $y_i = f(x_i) = wx_i$ where $ w $ is some parameter that we must come up with. We have the following dataset: $(1, 2.5), (2, 4.5), (5, 10.5)$. What is a sensible parameter choice for $w$? Given this parameter choice, what loss (using the sum of squared losses function given above) do you get? 
+- Fundamental assumption: model our output ($$y_i$$) as a ** linear combination ** of our inputs. 
+- Example: We want to learn a function $$y_i = f(x_i) = wx_i$$ where $$ w $$ is some parameter that we must come up with. We have the following dataset: $$(1, 2.5), (2, 4.5), (5, 10.5)$$. What is a sensible parameter choice for $$w$$? Given this parameter choice, what loss (using the sum of squared losses function given above) do you get? 
 
 ### Generalizing the idea of linear regression
-- In general, each of our puts, $x$, will be a vector of features as opposed to a single numerical value. If each vector has size $n$, then we will need to learn a set of $n$ parameters, or weights - one for each feature. We also need a **bias unit**, which will allow our model to not necessarily have to pass through the origin, which is useful t fit data that does not pass through the origin. 
-- Our function is now $f(x_i) = w_1*x_1 + w_2*x_2 + ... w_n*x_n = \sum_{i = 1}^{N}w_ix_i $. We can also compactly write this as a vector-vector multiplication where $W$ is our vector of weights and $x$ is our vector of features: $f(x_i) = Wx_i$.
+- In general, each of our puts, $$x$$, will be a vector of features as opposed to a single numerical value. If each vector has size $$n$$, then we will need to learn a set of $$n$$ parameters, or weights - one for each feature. We also need a **bias unit**, which will allow our model to not necessarily have to pass through the origin, which is useful t fit data that does not pass through the origin. 
+- Our function is now $$f(x_i) = w_1*x_1 + w_2*x_2 + ... w_n*x_n = \sum_{i = 1}^{N}w_ix_i $$. We can also compactly write this as a vector-vector multiplication where $$W$$ is our vector of weights and $$x$$ is our vector of features: $$f(x_i) = Wx_i$$.
 - As you can probably guess, it is extremely impractical to set the weights manually! We were able to get a good approximation of the weight for the single dimension case, but in practice there can be up to millions of training examples and thousands of features. We want our machine learning model to learn the weights. 
 
 ### Learning a good setting of weight parameters
@@ -164,12 +164,12 @@ plt.show()
 ### Binary Classification
 - Binary classification is a simpler classification problem, but the concepts we learn allow us to generalize to multi-class classification extremely easily. 
 - The setting is the same as any supervised learning problem: given a set of inputs and outputs, we wish to learn a function that maps inputs to outputs that generalizes well. The only difference from linear regression is that we don't want a real-valued output, but instead discrete outputs: 0 or 1. 
-- We can create discrete outputs through using the **sigmoid** function. The sigmoid function $\sigma(x) = \frac{1}{1 + e^{-x}}$ takes in a real-valued $x$ and produces a value between 0 and 1. 
+- We can create discrete outputs through using the **sigmoid** function. The sigmoid function $$\sigma(x) = \frac{1}{1 + e^{-x}}$$ takes in a real-valued $$x$$ and produces a value between 0 and 1. 
 - We can interpret this result as a **probability**: the closer the value is to 1, the more sure we that our example belongs to class 1, and the closer the value is to 0, the more sure we are that our example belongs to class 0. 
 
 ### Exercises
 - What is our prediction now given by? 
-- How do we change our learning algorithm to accommodate the addition of $\sigma(x)$ to our prediction function $f$? 
+- How do we change our learning algorithm to accommodate the addition of $$\sigma(x)$$ to our prediction function $$f$$? 
 
 ### From Binary to Multi-Class Classification
 - Sometimes, we don't want just binary outputs - we actually want to be able to distinguish between several classes. For example, if we're learning a function to recognize handwritten digits, we would want to classify each digit instead of just figuring out if this digit is a 0 or not. 
@@ -182,16 +182,16 @@ If we consider our basic model of a neuron, we see that it has one vector of wei
 
 $$ a = W^{T}x + b $$
 
-For our MNIST problem, x is a vector with 784 components, W was originally a single vector with 784 values, and the bias, b, was a single number. However, if we modified W to be a matrix instead, we get multiple rows of weights, each of which can be applied to the input x via a matrix multiplication. Since we want to be able to predict 10 different labels, we can let W be a 10 x 784 matrix, and the matrix product $Wx$ will produce a column vector of values that represent the output of 10 separate classifiers, where the weights for each classifier is given by the rows of W. The bias term is now a 10-dimensional vector that each add a bias term to matrix product. The core idea, however, is that this matrix of weights represent different classifiers, and now we can predict more than just binary labels. An image from Stanford's CS 231n course shows this clearly [3]:
+For our MNIST problem, x is a vector with 784 components, W was originally a single vector with 784 values, and the bias, b, was a single number. However, if we modified W to be a matrix instead, we get multiple rows of weights, each of which can be applied to the input x via a matrix multiplication. Since we want to be able to predict 10 different labels, we can let W be a 10 x 784 matrix, and the matrix product $$Wx$$ will produce a column vector of values that represent the output of 10 separate classifiers, where the weights for each classifier is given by the rows of W. The bias term is now a 10-dimensional vector that each add a bias term to matrix product. The core idea, however, is that this matrix of weights represent different classifiers, and now we can predict more than just binary labels. An image from Stanford's CS 231n course shows this clearly [3]:
 
 ![Multi-class classification](https://raw.githubusercontent.com/rohan-varma/rohan-blog/gh-pages/images/imagemap.jpg)
 
 Now that we have a vector of outputs that roughly correspond to scores for each predicted class, we'd like to figure out the most likely label. To do this, we can map our 10 dimensional vector to another 10 dimensional vector which each value is in the range (0, 1), and the sum of all values is 1. This is known as the softmax function. We can use the output of this function to represent a probability distribution: each value gives us the probability of the input x mapping to a particular label y. The softmax function's input and output are both vectors, and it can be defined as $$\frac{e^{z_i}}{\sum_{i=1}^{N} e^{z_i}}$$
 
 
-Next, we can use our loss function discussed previously to evaluate how well our classifier is doing. Specifically, we use the cross-entropy loss, which for a single prediction/label pair, is given by $ C(S,L) = - \sum_{i}L_{i}log(S_{i})$. 
+Next, we can use our loss function discussed previously to evaluate how well our classifier is doing. Specifically, we use the cross-entropy loss, which for a single prediction/label pair, is given by $$ C(S,L) = - \sum_{i}L_{i}log(S_{i})$$. 
 
-Here, $L$ is a specific one-hot encoded label vector, meaning that it is a column vector that has a 1 at the index corresponding to its label, and is zero everywhere else. $S$ is a prediction vector whose elements sum to 1. As an example, we may have: 
+Here, $$L$$ is a specific one-hot encoded label vector, meaning that it is a column vector that has a 1 at the index corresponding to its label, and is zero everywhere else. $$S$$ is a prediction vector whose elements sum to 1. As an example, we may have: 
 
 $$L = \begin{bmatrix}
            1 \\
@@ -311,4 +311,5 @@ for i in range(images.shape[0]):
 ```python
 
 ```
+
 
