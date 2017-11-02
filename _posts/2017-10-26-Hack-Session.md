@@ -4,7 +4,7 @@ title: Pandas Tutorial & Kaggle Hack Session
 mathjax: True
 ---
 
-
+A link to the slides given at the workshop is available [here](https://docs.google.com/presentation/d/1dBfAeSrrlAKV86Pgk1XHYw1Ux5eUOi2fEHQmFHAgqQg/edit?pli=1#slide=id.g35f391192_00). This week's workshop is best viewed as a downloaded Jupyter notebook, so we'd recomment downloading the [Pandas Tutorial](https://github.com/uclaacmai/tf-workshop-series-fall17/blob/master/week4-pandas-and-kaggle/Pandas%20Tutorial.ipynb) and the [Kaggle Starter](https://github.com/uclaacmai/tf-workshop-series-fall17/blob/master/week4-pandas-and-kaggle/Kaggle%20Hack%20Session%20Starter.ipynb) notebooks.
 # Introduction
 
 Today, we have our first ever Kaggle Hack Session! We're going to be competing in the Titantic competition. The goal in this competition is to be able to predict who survived and who passed away during this tragedy, given information about the people involved.
