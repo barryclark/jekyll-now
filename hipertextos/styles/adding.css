@@ -60,8 +60,8 @@ form .button {border:thin solid currentColor;margin-top:0.6em;}
 	border:none;overflow: hidden;text-align: center;
 }
 #page-nav {border:none;color:var(--color-hardgrey);}
-#page-nav a svg {max-width:30px;}
-#page-nav div {height:80px;}
+#page-nav a svg {}
+#page-nav div {height:64px;}
 .serveis#page-main {padding:0;}
 
 /* Footer */ 
