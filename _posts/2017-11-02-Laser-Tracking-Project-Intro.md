@@ -17,3 +17,8 @@ Then it's on to programming.
 4. Get servos to point at center of recognized object.
 
 Step 1 should be a half-hour process at the most, I'll get it done after work either today or tomorrow.
+
+I'm reasonably proficient at programming for Arduino, so I don't think that'll be a problem. 
+I've never used OpenCV (or any sort of image processing apart from basic linear algebra stuff), so that'll be a bit of an adventure. 
+I'll either use C or Python; I haven't decided which yet. 
+C would help ensure the program is efficient enough to run on an RPi, but the C bindinss for OpenCV are supposedly second-class whereas Python is supported much better.
