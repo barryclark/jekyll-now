@@ -3,7 +3,7 @@ layout: post
 title: Laser Tracking Project Introduction
 ---
 
-<img src=/images/robot_blinding.gif alt="Blinding" style="width: 50%"/> 
+<img src=/images/robot_blinding.gif alt="Blinding" style="width: 50px"/> 
 
 ![Blinding](/images/robot_blinding.gif)
 
