@@ -2,7 +2,7 @@
 /* by Acozar/Miralles  ADDING CSS */
 /* ------------------------------------------------------------ Resets */
 
-#site-nav, footer, #follows, #follows-big, #icons, #covers, .nav-scroll, #web-credits {
+#site-nav, footer, #follows, #follows-big, #icons, #covers, .nav-scroll, #web-credits, #page-header {
 text-align: center;
 }
 body {text-align: justify;-moz-hyphens:none;-ms-hyphens:none;-webkit-hyphens:none;-o-hyphens:none;hyphens:none;
@@ -22,8 +22,8 @@ em u a:hover {border: thin solid var(--color-blue);color:var(--color-blue); }
 .cover { height: 80vh;padding-top: 230px;}
 
 /* Page & Header */
-.serveis-header {border-bottom:10px solid var(--color-grey);
-	background-color: var(--color-hardblack);color: var(--color-grey);}
+.serveis-header {border-bottom:10px solid var(--color-hardgrey);
+	background-color: var(--color-black);color: var(--color-hardgrey);}
 .cover-page #page-header {border-bottom:10px solid var(--color-blue);
 	background-color: var(--color-black);color: var(--color-blue);}
 .cover-page #page-main ul {-webkit-column-count: 3;-moz-column-count: 3;column-count: 3;}
@@ -61,7 +61,7 @@ form .button {border:thin solid currentColor;margin-top:0.6em;}
 }
 #page-nav {border:none;color:var(--color-hardgrey);}
 #page-nav a svg {max-width:30px;}
-#page-nav div {height:82px;}
+#page-nav div {height:80px;padding-top:10px;}
 .serveis#page-main {padding:0;}
 
 /* Footer */ 
