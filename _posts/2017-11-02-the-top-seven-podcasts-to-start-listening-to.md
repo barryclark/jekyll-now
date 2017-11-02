@@ -19,7 +19,7 @@ Since I have an Andriod phone I needed an app on the Play Store. After reading a
 
 Quality is my biggest concern with listening to podcasts. I don't want to hear bad information (fake news? is that what it's called nowadays?). A few of the podcasts I've been listening to are syndications of over-the-air shows or put together by NPR. A few of them are more independent, however.
 
-In no particular order, but grouped by topic, the podcasts I've been listening to are:
+In no particular order, but grouped by topic, the podcasts I've been listening to, along with their summary are:
 
 ### Financial: 
 
