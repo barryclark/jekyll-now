@@ -3,6 +3,8 @@ layout: post
 title: Laser Tracking Project Introduction
 ---
 
+<img src=/images/robobt_blinding.gif alt="Blinding" style="width: 50%"/> 
+
 ![Blinding](/images/robot_blinding.gif)
 
 If you haven't watched Michael Reeves' eye-lasering robot [here](https://www.youtube.com/watch?v=Q8zC3-ZQFJI), then go do that.
