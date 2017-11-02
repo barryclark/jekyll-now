@@ -61,7 +61,7 @@ form .button {border:thin solid currentColor;margin-top:0.6em;}
 }
 #page-nav {border:none;color:var(--color-hardgrey);}
 #page-nav a svg {max-width:30px;}
-#page-nav div {height:80px;padding-top:10px;}
+#page-nav div {height:80px;}
 .serveis#page-main {padding:0;}
 
 /* Footer */ 
