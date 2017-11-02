@@ -59,6 +59,8 @@ form .button {border:thin solid currentColor;margin-top:0.6em;}
 	background-size: cover;background-repeat: no-repeat;
 	border:none;overflow: hidden;text-align: center;
 }
+#section-web svg, #section-brand svg, #section-paint svg, #section-print svg {width:64px;}
+
 #page-nav {border:none;color:var(--color-hardgrey);}
 #page-nav a svg {}
 #page-nav div {height:64px;}
