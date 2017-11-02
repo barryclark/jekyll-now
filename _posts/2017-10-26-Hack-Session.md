@@ -4,7 +4,7 @@ title: Pandas Tutorial & Kaggle Hack Session
 mathjax: True
 ---
 
-A link to the slides given at the workshop is available [here](http://bit.ly/2hTLMjb).
+A link to the slides given at the workshop is available [here](https://docs.google.com/presentation/d/1dBfAeSrrlAKV86Pgk1XHYw1Ux5eUOi2fEHQmFHAgqQg/edit#slide=id.g35f391192_00).
 # Last Week's Review
 
 Before diving into this week's new material, we wanted to first take a step back and review what we learned last week since linear regression is a fundamental model within machine learning. We also wanted to go back and review some Tensorflow specifics.
