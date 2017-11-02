@@ -22,3 +22,5 @@ I'm reasonably proficient at programming for Arduino, so I don't think that'll b
 I've never used OpenCV (or any sort of image processing apart from basic linear algebra stuff), so that'll be a bit of an adventure. 
 I'll either use C or Python; I haven't decided which yet. 
 C would help ensure the program is efficient enough to run on an RPi, but the C bindinss for OpenCV are supposedly second-class whereas Python is supported much better.
+For this to be a permanent build, I'll eventually need to use a usb webcam rather than the laptop's.
+But for the time being I don't need to grab one.
