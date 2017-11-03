@@ -64,12 +64,9 @@ form .button {border:thin solid currentColor;margin-top:0.6em;}
 	border:none;overflow: hidden;text-align: center;
 }
 #section-web svg, #section-brand svg, #section-paint svg, #section-print svg {width:64px;}
-#resumed svg {width:64px;}
-#resumed {text-align:center!important;height:100%;overflow:hidden;color:var(--color-grey);}
-#resumed em {padding:10px 0px 10px 0px;}
-#resumed-web svg {width:64px;}
-aside#resumed-web {color:var(--color-orange);text-align:center!important;height:100%;overflow:hidden;border-radius:0.4em;}
-#resumed-web em {padding:10px 0px 10px 0px;}
+#resumed-web svg {width:48px;}
+#resumed-web {color:var(--color-translucentblack);text-align:center!important;}
+#resumed-web em {}
 
 #page-nav {border:none;color:var(--color-hardgrey);}
 #page-nav a svg {}
