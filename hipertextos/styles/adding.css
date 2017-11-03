@@ -65,6 +65,9 @@ form .button {border:thin solid currentColor;margin-top:0.6em;}
 #resumed svg {width:64px;}
 #resumed {text-align:center!important;height:100%;overflow:hidden;color:var(--color-grey);}
 #resumed em {padding:10px 0px 10px 0px;}
+#resumed-web svg {width:64px;}
+#resumed-web {text-align:center!important;height:100%;overflow:hidden;color:var(--color-grey);}
+#resumed-web em {padding:10px 0px 10px 0px;}
 
 #page-nav {border:none;color:var(--color-hardgrey);}
 #page-nav a svg {}
