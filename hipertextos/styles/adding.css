@@ -45,18 +45,6 @@ form .button {border:thin solid currentColor;margin-top:0.6em;}
 #covers article {border:0;}
 #page #covers article {text-shadow:-1px 1px 2px #ddd;}
 
-@media (max-width: 1200px) {
-	#covers article {width: 49.9999999999%;}
-	.cover-page #page-main ul {-webkit-column-count: 2;-moz-column-count: 2;column-count: 2;}
-    .cover-page .thumb-9, .cover-page .thumb-3 {width: 100%;}
-    .cell-x1 {width: 20%;}
-}
-@media (max-width: 767px) {
-	#covers article {width: 100%;}
-    .cover-page .thumb-9, .cover-page .thumb-3 {width: 100%;}
-    .cell-x1 {	width: 50%;}
-}
-
 /* Serveis */
 #section-web, #section-brand, #section-paint, #section-print {
 	background-position: top center;background-attachment: fixed;
@@ -88,4 +76,19 @@ form .button {border:thin solid currentColor;margin-top:0.6em;}
 .listed img {	margin:0!important;padding:0!important;	}
 .listed article { border:none;overflow: hidden;width: 100%;display: block;display: inline-block;margin:0!important;padding:0!important;
 -webkit-column-break-inside: avoid;-moz-column-break-inside:avoid;-moz-page-break-inside:avoid;page-break-inside: avoid;
+}
+
+@media (max-width: 1600px) {
+
+}
+@media (max-width: 1200px) {
+	#covers article {width: 49.9999999999%;}
+	.cover-page #page-main ul {-webkit-column-count: 2;-moz-column-count: 2;column-count: 2;}
+    .cover-page .thumb-9, .cover-page .thumb-3 {width: 100%;}
+    .cell-x1 {width: 20%;}
+}
+@media (max-width: 767px) {
+	#covers article {width: 100%;}
+    .cover-page .thumb-9, .cover-page .thumb-3 {width: 100%;}
+    .cell-x1 {	width: 50%;}
 }
