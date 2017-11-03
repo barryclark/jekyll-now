@@ -62,6 +62,8 @@ form .button {border:thin solid currentColor;margin-top:0.6em;}
 	border:none;overflow: hidden;text-align: center;
 }
 #section-web svg, #section-brand svg, #section-paint svg, #section-print svg {width:64px;}
+#resumed svg {width:128px;}
+#resumed {text-align:center!important;height:100%;overflow:hidden;}
 
 #page-nav {border:none;color:var(--color-hardgrey);}
 #page-nav a svg {}
