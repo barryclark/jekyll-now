@@ -81,14 +81,16 @@ form .button {border:thin solid currentColor;margin-top:0.6em;}
 @media (max-width: 1600px) {
 
 }
-@media (max-width: 1200px) {
+@media (max-width: 1500px) {
 	#covers article {width: 49.9999999999%;}
 	.cover-page #page-main ul {-webkit-column-count: 2;-moz-column-count: 2;column-count: 2;}
-    .cover-page .thumb-9, .cover-page .thumb-3 {width: 100%;}
+    .cover-page .thumb-9, .cover-page .thumb-3, .thumb-5, .thumb-6 {width: 100%;}
     .cell-x1 {width: 20%;}
+    .cell-6, .pushed-6 {width:100%;}
 }
 @media (max-width: 767px) {
 	#covers article {width: 100%;}
     .cover-page .thumb-9, .cover-page .thumb-3 {width: 100%;}
     .cell-x1 {	width: 50%;}
+    .cell-6, .pushed-6 {width:100%;margin:0 !important;}
 }
