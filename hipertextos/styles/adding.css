@@ -86,7 +86,6 @@ form .button {border:thin solid currentColor;margin-top:0.6em;}
 	.cover-page #page-main ul {-webkit-column-count: 2;-moz-column-count: 2;column-count: 2;}
     .cover-page .thumb-9, .cover-page .thumb-3, .thumb-5, .thumb-6 {width: 100%;}
     .cell-x1 {width: 20%;}
-    .cell-6, .pushed-6 {width:100%;}
 }
 @media (max-width: 767px) {
 	#covers article {width: 100%;}
