@@ -49,10 +49,12 @@ form .button {border:thin solid currentColor;margin-top:0.6em;}
 	#covers article {width: 49.9999999999%;}
 	.cover-page #page-main ul {-webkit-column-count: 2;-moz-column-count: 2;column-count: 2;}
     .cover-page .thumb-9, .cover-page .thumb-3 {width: 100%;}
+    .cell-x1 {width: 20%;}
 }
 @media (max-width: 767px) {
 	#covers article {width: 100%;}
     .cover-page .thumb-9, .cover-page .thumb-3 {width: 100%;}
+    .cell-x1 {	width: 50%;}
 }
 
 /* Serveis */
@@ -66,7 +68,7 @@ form .button {border:thin solid currentColor;margin-top:0.6em;}
 #resumed {text-align:center!important;height:100%;overflow:hidden;color:var(--color-grey);}
 #resumed em {padding:10px 0px 10px 0px;}
 #resumed-web svg {width:64px;}
-#resumed-web {text-align:center!important;height:100%;overflow:hidden;color:var(--color-grey);}
+aside#resumed-web {color:var(--color-orange);text-align:center!important;height:100%;overflow:hidden;border-radius:0.4em;}
 #resumed-web em {padding:10px 0px 10px 0px;}
 
 #page-nav {border:none;color:var(--color-hardgrey);}
