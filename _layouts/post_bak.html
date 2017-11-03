@@ -1,0 +1,37 @@
+---
+layout: default
+---
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ko_KR/sdk.js#xfbml=1&version=v2.7&appId=185107328331620";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+<article class="post">
+  <h1>{{ page.title }}</h1>
+  <div class="date">
+    Written on {{ page.date | date: "%B %e, %Y" }}, {{ page.author }}
+  </div>
+  
+  <div class="entry">
+    {{ content }}
+  </div>
+  
+  
+  <div class="fb-follow" data-href="https://www.facebook.com/sieunkr" data-layout="standard" data-size="large" data-show-faces="true"></div>
+  
+  <br />
+  <br />
+  <div class="fb-like" data-href="https://zumdev.github.io{{ page.url }}" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+  <!-- 페이스북 댓글 -->
+  <div class="fb-comments" data-href="https://zumdev.github.io{{ page.url }}" data-numposts="5"></div>
+  
+  {% include disqus.html %}
+</article>
+
+
