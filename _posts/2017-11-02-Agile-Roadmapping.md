@@ -3,7 +3,7 @@ layout: post
 title: Planning ahead the agile way - a method for agile roadmapping
 ---
 
-=== Agile is shortsighted ===
+# Agile is shortsighted #
 
 Agile is shortsighted! In SCRUM you are only interested in whats going on in the next sprint! Kanban focusses only on what's next! Long term planning is not agile! Sounds familiar? The gap between short term (sprint-)planning and long term roadmaps is an often discussed focus point in the world of agile and an often cited reason why "our company cannot do agile". 
 And it is true. A lot of litarature advertieses only the fast reaction time and short iteration cycles that agile methods give us, especially if applied to software development. But it is also true, that a lot of business-areas are operating on longer cycles than single sprints. Yearly budget allocations, fixed amount projects and hard deadlines are real and existing challenges in the industry. Leaving aside if this is how it should be - or not - for the moment, those practices are still alive and kicking in a lot of industrial sectors such as the medical or machine industry. 
@@ -12,9 +12,9 @@ So how do we as software deliverers go about catering to these long and slow cyc
 
 And that is wrong. Agile should do and advertise long term planning, it just should do it in the - surprise! - agile way. Long term plans should be living documents that get adapted as we learn more about the project. They should also be coarser than our daily work. I usually pick a frequency for doing the roadmapping-sessions with the team that is at least twice the frequency of the time horizon of the roadmap. For most teams I know this settles around four times a year. The goal of such roadmapping-sessions is not primarily to generate content - that should happen all the time -, but to provide a well defined snapshot of what at the time is seen as the most likely direction a piece of software could take. Word of warning here, if done for the first time this can be time consuming and, but it gets better with each roadmap iteration. 
 
-({{ site.baseurl }}/images/agile-roadmapping/roadmapping_session_timetable.jpg)
+![oogle]({{ site.baseurl }}/images/agile-roadmapping/roadmapping_session_timetable.jpg)
 
-=== Building content for a roadmap ===
+# Building content for a roadmap #
 
 My preferred approach to building up or refining a roadmap is to first focus on content in a top down manner and do any estimation or sequenstial ordering later. Also a very important and often forgotten step is the throwing away of old and unimportant ideas and roadmap items.  
 If there is an existing roadmap to refine, I start with the team and the PO by throwing out everything which we no longer see as important or as unfeasible at the moment. Really throw it away, make it invisible on the roadmap just moving it to a "to be done later" section will clutter up things very fast. If things are really is important they will pop up again. By completely throwing away unripe ideas we reward just-in-time planning ahead, because the less you invested in one of these items the easier it is to throw away. A sure sign of a mature team and a realistic roadmap is that there is no fuss about cutting away anything that is no longer worth the effort. Of course with all the throwing away it is really helpful if you can archive the old snapshots of the roadmap.
@@ -26,7 +26,7 @@ The next step is to assign priorities to the leaves of the tree, as opposed to t
 
 ({{ site.baseurl }}/images/agile-roadmapping/tree_including_estimation.jpg)
 
-=== From roadmap to backlog ===
+# From roadmap to backlog #
 
 Once the team is happy with the content of the tree, take the issues and put them in a proposed order of execution. It may help to keep some levels of hierarchy visible on the roadmap to show how big the context swtiches between individual items are. This is often a visualisation to be shown outside the team and to do more strategic planning on. What remains is to break the roadmap items down into workable and ready stories.
 
@@ -36,6 +36,6 @@ For me this often means taking them as they are and putting them at the bottom o
 
 ({{ site.baseurl }}/images/agile-roadmapping/backlog-including-roadmap-items.jpg)
 
-=== Using the roadmap in the daily work ===
+# Using the roadmap in the daily work #
 
 I like to print out the roadmap and put it up next to the agile wall, so I can refer to it easily during the daily stand ups. Some teams even pinned done stories to the respective roadmap item it belonged to to se how closely we follow our plan and to facilitate discussions about deviations. Deviations are of course not bad at all, but it helps to visualize them and conscious of when, why and how they happen. This information then can also be taken to the sprint planning and after a few iterations serves as a good indicator for the next roadmapping period. 
