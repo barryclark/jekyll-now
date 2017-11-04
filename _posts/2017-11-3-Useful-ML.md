@@ -7,9 +7,10 @@ mathjax: True
 Today, we read a paper that presents a higher level overview of machine learning, the core of the learning problem and makes it difficult, and many valuable insights relating to a model's ability to generalize and how to prevent overfitting. We thought this paper was valuable because while it did not discuss in detail specific machine learning algorithms or rigorous optimization and probabilility theory, it reminded us of the core problems all of us are trying to solve using machine learning.
 
 Link to slides: https://docs.google.com/presentation/d/1I2B0TLEWjffEXZva6OEw1mfU4FWZ5vSjBnfxFXmXl6g/edit?usp=sharing
+
 Link to paper: https://homes.cs.washington.edu/~pedrod/papers/cacm12.pdf
 
-After reading this paper, ponder the following questions:
+After reading this paper, we discussed the following questions:
 1) What types of problems can't be solved with manually programming rules, and instead require large amounts of data? 
 2) The paper discussed choosing a representation for a learner being equivalent to choosing a specific function within a hypothesis space - give a concrete example of such a hypothesis space. 
 3) How do evaluation/objective functions and optimization relate to each other? 
