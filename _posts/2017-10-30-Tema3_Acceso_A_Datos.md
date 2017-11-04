@@ -3,7 +3,7 @@ layout: post
 title: Tema 3 de Acceso a Datos
 ---
 ### Funciones
-Aquellos que no me conozcáis, os preguntaréis el por qué de mi avatar. Pues bien, el motivo es porque desde hace muchos años colecciono sellos de correos de todo el mundo.
+Este es mi resumen del Tema 3 de Acceso a Datos, del 2º curso del Ciclo de Desarrollo de Aplicaciones Multiplataforma.
 
 ## Funciones
 Las funciones se usan dentro de expresiones y actúan con los valores de las columnas, variables o constantes.
