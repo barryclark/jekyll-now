@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Paper Analysis: A Few Useful Things to Know About Machine Learning
+title: Paper Reading Group - A Few Useful Things to Know about Machine Learning
 mathjax: True
 ---
 
