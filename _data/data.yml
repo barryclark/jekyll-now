@@ -198,6 +198,46 @@
   location_gr: Ηράκλειο, Κρήτη, Ελλάδα
   location_en: Heraklion, Crete, Greece
 
+- company_gr: Miniweb
+  company_en: Miniweb
+  url: http://miniweb.gr
+  category_gr: Υπηρεσίες διαδικτύου
+  category_en: Internet services
+  location_gr: Ιεράπετρα, Κρήτη, Ελλάδα
+  location_en: Ierapetra, Crete, Greece
+
+- company_gr: Ειρηναίος Ρουστάς
+  company_en: Irinaios Roustas
+  url: 
+  category_gr: Ασφαλιστικός σύμβουλος, e.roystas@yahoo.gr, 6977562156
+  category_en: Insurance agent, e.roystas@yahoo.gr, 6977562156
+  location_gr: Πόρτο Ράφτη, Αττική, Ελλάδα
+  location_en: Porto Rafti, Attica, Greece
+
+- company_gr: Δημήτρης Δημητρίου
+  company_en: Dimitris Dimitriou
+  url: http://www.dimit.gr
+  category_gr: Λογιστής
+  category_en: Accountant
+  location_gr: Βόλος, Μαγνησία, Ελλάδα
+  location_en: Volos, Magnisia, Greece
+  
+- company_gr: Komotini online
+  company_en: Komitini online
+  url: http://www.kom.gr
+  category_gr: Portal
+  category_en: Portal
+  location_gr: Κομοτηνή, Ροδόπη, Ελλάδα
+  location_en: Komotini, Rodopi, Greece  
+
+- company_gr: Gee
+  company_en: Gee
+  url: http://www.gee.gr
+  category_gr: Καφές και πρωινό
+  category_en: Coffee and breakfast
+  location_gr: Κομοτηνή, Ροδόπη, Ελλάδα
+  location_en: Komotini, Rodopi, Greece  
+
 - company_gr: Easy.gr
   company_en: Easy.gr
   url: https://easy.gr
