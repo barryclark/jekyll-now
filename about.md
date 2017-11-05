@@ -1,15 +1,13 @@
 ---
 layout: page
-title: About
+title: Acerca de mí
 permalink: /about/
 ---
+<img src="/images/ProfilePhoto.jpg" class="miFoto"> 
+Hace mucho tiempo que empecé en este mundo de la Informática (antes de que empezaran a verse las primeras versiones de Windows). Desde entonces me ha apasionado la Programación, aunque no me he dedicado profesionalmente, siempre he estado aprediendo nuevos lenguajes. Incluso he olvidado ya algunos de ellos.
 
-Some information about you!
+Ahora me encuentro realizando el Ciclo de Grado Superior de Desarrollo de Aplicaciones Multiplataforma con el firme objetivo de dedicarme a ello profesionalmente.
 
-### More Information
+La idea de este blog surge a partir de las clases sobre GitHub que he recibido en la asignatura de Implantación de Servicios Web.
 
-A place to include any other types of information that you'd like to include about yourself.
-
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+#### Contacta conmigo: [migueloped@gmail.com](mailto:migueloped@gmail.com)

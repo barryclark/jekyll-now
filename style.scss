@@ -213,7 +213,8 @@ img {
 nav {
   float: right;
   margin-top: 23px; // @TODO: Vertically middle align
-  font-family: $helveticaNeue;
+
+	font-family: $helveticaNeue;
   font-size: 18px;
 
   @include mobile {
@@ -281,6 +282,20 @@ nav {
 footer {
   padding: 20px 0;
   text-align: center;
+}
+
+.miFoto {
+  margin-right: 10px;
+  width: 72px;
+  height: 72px;
+  float: left;
+}
+
+.fotoPost {
+  margin-left: 10px;
+  width: 160px;
+  height: 165px;
+  float: right;	
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
