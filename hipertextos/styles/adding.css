@@ -58,7 +58,7 @@ form .button {border:thin solid currentColor;margin-top:0.6em;}
 #resumed-web svg {width:48px;}
 #resumed-web {color:var(--color-translucentblack);text-align:center!important;}
 #resumed-web em {padding:1em 0 1em 0;}
-#browsers-ios svg {width:23px;color:var(--color-translucentblack);margin:3px 3px 0 0;}
+#browsers-ios svg {width:23px;color:var(--color-translucentblack);margin:0 3px 0 0;}
 
 #page-nav {border:none;color:var(--color-hardgrey);}
 #page-nav a svg {}
