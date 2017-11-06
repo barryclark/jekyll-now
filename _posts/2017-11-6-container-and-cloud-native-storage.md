@@ -12,6 +12,6 @@ title: "[Slides] [Nov 2017] What's the future of cloud and container native stor
 Here are slides from my talk on "What's the future of cloud and container native storage?" at the Microservices Conference in London on 6 November, 2017.
 
 Resource links:
-* [Try StorageOS](my.storageos.com/main/tutorials)
-* [Quickstart - get StorageOS from the Docker Hub](storageos.com/install)
-* [Cloud Native London Meetup](meetup.com/Cloud-Native-London) on Wednesday, including Justin Cormack from Docker
+* [Try StorageOS with browser-based tutorials](https://my.storageos.com/main/tutorials)
+* [Quickstart](https://storageos.com/install) - get StorageOS from the Docker Hub
+* [Cloud Native London Meetup](https://meetup.com/Cloud-Native-London) on Wednesday, including Justin Cormack from Docker
