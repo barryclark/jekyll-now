@@ -14,4 +14,7 @@ Here are slides from my talk on "What's the future of cloud and container native
 Resource links:
 * [Try StorageOS with browser-based tutorials](https://my.storageos.com/main/tutorials)
 * [Quickstart](https://storageos.com/install) - get StorageOS from the Docker Hub
-* [Cloud Native London Meetup](https://meetup.com/Cloud-Native-London) on Wednesday, including Justin Cormack from Docker
+* [Cloud Native London Meetup](https://meetup.com/Cloud-Native-London) on Wednesday, including Justin Cormack from Docker.
+
+![Cheryl Hung presenting at muCon London]({{site.baseurl}}/images/presenting.jpg)
+![The Eight principles of cloud native storage]({{site.baseurl}}/images/8-principles.jpg.jpg)
