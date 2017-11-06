@@ -1,9 +1,7 @@
 ---
 layout: post
-title: Planning ahead the agile way - a method for agile roadmapping
+title: Planning ahead the agile way  
 ---
-
-# Agile is shortsighted 
 
 Agile is shortsighted! In SCRUM you are only interested in whats going on in the next sprint! Kanban focusses only on what's next! Long term planning is not agile! Sounds familiar? The gap between short term (sprint-)planning and long term roadmaps is an often discussed focus point in the world of agile and an often cited reason why "our company cannot do agile". 
 And it is true. A lot of litarature advertieses only the fast reaction time and short iteration cycles that agile methods give us, especially if applied to software development. But it is also true, that a lot of business-areas are operating on longer cycles than single sprints. Yearly budget allocations, fixed amount projects and hard deadlines are real and existing challenges in the industry. Leaving aside if this is how it should be - or not - for the moment, those practices are still alive and kicking in a lot of industrial sectors such as the medical or machine industry. 
