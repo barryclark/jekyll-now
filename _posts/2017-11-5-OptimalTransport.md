@@ -9,140 +9,29 @@ This summer I stumbled upon the optimal transportation problem, an optimization 
 
 Let's have a party in our research unit! Pastries and party hats for everyone! We ask Tinne, our laboratory manager, to make some desserts: an airy merveilleux, some delicious eclairs, a big bowl of dark chocolate mousse, a sweet passion fruit-flavored bavarois and moist carrot cake (we got to have our vegetables). If we mentally cut all these sweets into portions, we have twenty portions as shown in the table below.
 
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>merveilleux</th>
-      <th>eclair</th>
-      <th>chocolate mousse</th>
-      <th>bavarois</th>
-      <th>carrot cake</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>Pieces</th>
-      <td>4</td>
-      <td>2</td>
-      <td>6</td>
-      <td>4</td>
-      <td>4</td>
-    </tr>
-  </tbody>
-</table>
+| merveilleux     | eclair     | chocolate mousse | bavarois | carrot cake|
+| :------------- | :------------- | :- | :- |:-| :- |
+| 4 | 2 | 6 | 4 | 4|
 
 Since this is academia, we respect the hierarchy: people higher on the ladder are allowed to take more dessert. The professors, Bernard, Jan and Willem each get three pieces each, our senior post-doc Hilde will take four portions (one for each of her children) and the teaching assistants are allowed two portions per person. Since Wouter is a shared teaching assistant with the Biomath research group, he can only take one (sorry Wouter).
 
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Bernard</th>
-      <th>Jan</th>
-      <th>Willem</th>
-      <th>Hilde</th>
-      <th>Steffie</th>
-      <th>Marlies</th>
-      <th>Tim</th>
-      <th>Wouter</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>Pieces</th>
-      <td>3</td>
-      <td>3</td>
-      <td>3</td>
-      <td>4</td>
-      <td>2</td>
-      <td>2</td>
-      <td>2</td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
+| Bernard | Jan | Willem | Hilde | Steffie | Marlies | Tim | Wouter |
+| :------------- | :------------- |  :------------- | :------------- |  :------------- | :------------- | :------------- | :-------------
+|3   |  3 | 3  | 4  | 2  | 2  | 2  | 1  |
+
 
 As engineers and mathematicians, we pride ourselves in doing things the optimal way. So how can we divide the desserts to make everybody as happy as possible? As I prepare a course on optimization, I went around and asked which of those treats they liked. On a scale between -2 and 2, with -2 being something they hated and 2 being their absolute favorite, the desert preferences of the teaching staff is given below (students: take note!).
 
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>merveilleux</th>
-      <th>eclair</th>
-      <th>chocolate mousse</th>
-      <th>bavarois</th>
-      <th>carrot cake</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>Bernard</th>
-      <td>2</td>
-      <td>2</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>Jan</th>
-      <td>0</td>
-      <td>-2</td>
-      <td>-2</td>
-      <td>-2</td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <th>Willem</th>
-      <td>1</td>
-      <td>2</td>
-      <td>2</td>
-      <td>2</td>
-      <td>-1</td>
-    </tr>
-    <tr>
-      <th>Hilde</th>
-      <td>2</td>
-      <td>1</td>
-      <td>0</td>
-      <td>1</td>
-      <td>-1</td>
-    </tr>
-    <tr>
-      <th>Steffie</th>
-      <td>0.5</td>
-      <td>2</td>
-      <td>2</td>
-      <td>1</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>Marlies</th>
-      <td>0</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>-1</td>
-    </tr>
-    <tr>
-      <th>Tim</th>
-      <td>-2</td>
-      <td>2</td>
-      <td>2</td>
-      <td>1</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>Wouter</th>
-      <td>2</td>
-      <td>1</td>
-      <td>2</td>
-      <td>1</td>
-      <td>-1</td>
-    </tr>
-  </tbody>
-</table>
+| merveilleux     | eclair     | chocolate mousse | bavarois | carrot cake|
+| :------------- | :------------- | :- | :- |:-| :- |
+|Bernard   | 2  | 2  | 1  | 0  | 0  |
+|Jan   | 0  | -2  |  -2 | -2  | 2  |
+|Willem   | 1  | 2  | 2  | 2  | -1  |
+|Hilde   | 2  | 1  | 0  | 1  | -1  |
+|Steffie   | 0.5  | 2  | 2  | 1  | 0  |
+|Marlies   | 0  |  1 | 1  | 1  | -1  |
+|Tim   |  -2 |  2 |  2 |  1 | 1  |
+|Wouter   |2   |1   |2   |1   | -1  |
 
 See how most people like eclairs and chocolate mousse, but merveilleus are a more polarizing dessert! Jan is lactose intolerant, so he gave a high score to the carrot cake by default.
 
