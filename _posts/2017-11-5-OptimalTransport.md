@@ -3,8 +3,6 @@ layout: post
 title: Notes on optimal transport
 ---
 
-<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-
 This summer I stumbled upon the optimal transportation problem, an optimization problem where the goals is to transform one probability distribution into another with a cost as low as possible. It is so simple to understand, yet it has a mind-boggling number of applications in probability, computer vision, machine learning, computational fluid dynamics and computational biology. I recently gave a seminar on this topic and this post is an overview on the topic. Enjoy!
 
 ## A party in the lab
@@ -152,53 +150,59 @@ My task is clear: divide these desserts in such a way that people get their port
 
 ## The optimal transport problem
 
-Let us introduce some notation so we can formally state this as an optimization problem. Let $\mathbf{r}$ be the vector containing the amount of dessert every portion can eat. In this case $\mathbf{r} = (3,3,3,4,2,2,2,1)^\intercal$ (in general the dimension of $\mathbf{r}$ is $n$). Similarly, $\mathbf{c}$ denotes the vector of how much there is of every dessert, i.e. $\mathbf{c}=(4, 2, 6, 4, 4)^\intercal$ (in general the dimension of $\mathbf{c}$ is $m$). Often $\mathbf{r}$ and $\mathbf{c}$ represent marginal probability distributions, hence their values sum to one.
+Let us introduce some notation so we can formally state this as an optimization problem. Let $$\mathbf{r}$$ be the vector containing the amount of dessert every portion can eat. In this case $$\mathbf{r} = (3,3,3,4,2,2,2,1)^\intercal$$ (in general the dimension of $$\mathbf{r}$$ is $$n$$). Similarly, $$\mathbf{c}$$ denotes the vector of how much there is of every dessert, i.e. $$\mathbf{c}=(4, 2, 6, 4, 4)^\intercal$$ (in general the dimension of $$\mathbf{c}$$ is $$m$$). Often $$\mathbf{r}$$ and $$\mathbf{c}$$ represent marginal probability distributions, hence their values sum to one.
 
-Let $U(\mathbf{r}, \mathbf{c})$ be the set of positive $n\times m$ matrices for which the rows sum to $\mathbf{r}$ and the columns sum to $\mathbf{c}$:
+Let $$U(\mathbf{r}, \mathbf{c})$$ be the set of positive $$n\times m$$ matrices for which the rows sum to $$\mathbf{r}$$ and the columns sum to $$\mathbf{c}$$:
 
 $$U(\mathbf{r}, \mathbf{c}) = \{P\in \mathbb{R}_{>0}^{n\times m}\mid P\mathbf{1}_m = \mathbf{r}, P^\intercal\mathbf{1}_n = \mathbf{c}\}\,.$$
 
-For our problem, $U(\mathbf{r}, \mathbf{c})$ contains all the ways of dividing the desserts for my colleagues. Note that we assume here that we can slice every dessert however we like. We do not have to only give whole pieces of pie but can give any fraction we like.
+For our problem, $$U(\mathbf{r}, \mathbf{c})$$ contains all the ways of dividing the desserts for my colleagues. Note that we assume here that we can slice every dessert however we like. We do not have to only give whole pieces of pie but can give any fraction we like.
 
-The preferences of each person for each dessert is also stored in a matrix. In order to be consistent with the literature, this will be stored in an $n\times m$ *cost* matrix $M$. The above matrix is a preference matrix which can easily changed into a cost matrix by inverting the sign of every element.
+The preferences of each person for each dessert is also stored in a matrix. In order to be consistent with the literature, this will be stored in an $$n\times m$$ *cost* matrix $$M$$. The above matrix is a preference matrix which can easily changed into a cost matrix by inverting the sign of every element.
 
 So finally, the problem we want to solve is formally posed as
+
 $$
 d_M(\mathbf{r}, \mathbf{c}) = \min_{P\in U(\mathbf{r}, \mathbf{c})}\, \sum_{i,j}P_{ij}M_{ij}\,.
 $$
-This is called the *optimal transport* between $\mathbf{r}$ and $\mathbf{c}$. It can be solved relatively easily using linear programming.
 
-The optimum, $d_M(\mathbf{r}, \mathbf{c})$, is called the *Wasserstein metric*. Is a basically a distance between two probability distributions. It is sometimes also called the *earth mover distance* as it can be interpreted as how much 'dirt' you have to move to change one 'landscape' (distribution) in another.
+This is called the *optimal transport* between $$\mathbf{r}$$ and $$\mathbf{c}$$. It can be solved relatively easily using linear programming.
+
+The optimum, $$d_M(\mathbf{r}, \mathbf{c})$$, is called the *Wasserstein metric*. Is a basically a distance between two probability distributions. It is sometimes also called the *earth mover distance* as it can be interpreted as how much 'dirt' you have to move to change one 'landscape' (distribution) in another.
 
 ## Choosing a bit of everything
 
 Consider a slightly modified form of the optimal transport:
+
 $$
 d_M^\lambda(\mathbf{r}, \mathbf{c}) = \min_{P\in U(\mathbf{r}, \mathbf{c})}\, \sum_{i,j}P_{ij}M_{ij} - \frac{1}{\lambda}h(P)\,,
 $$
-in which the minimizer $d^\lambda_M(\mathbf{r}, \mathbf{c})$ is called the *Sinkhorn distance*. Here, the extra term
+
+in which the minimizer $$d^\lambda_M(\mathbf{r}, \mathbf{c})$$ is called the *Sinkhorn distance*. Here, the extra term
+
 $$
 h(P) = -\sum_{i,j}P_{ij}\log P_{ij}
 $$
-is the *information entropy* of $P$. One can increase the entropy by making the distribution more homogeneous, i.e. giving everybody a more equal share of every dessert. The parameter $\lambda$ determines the trade-off between the two terms: trying to give every person only their favorites or encouraging equal distributions. Machine learners will recognize this as similar to regularization in, for example, ridge regression. Similar as that for machine learning problems a tiny bit of shrinkage of the parameter can lead to an improved performance, the Sinkhorn distance is also observed to work better than the Wasserstein distance on some problems. This is because we use a very natural prior on the distribution matrix $P$: in absence of a cost, everything should be homogeneous!
 
-If you squint your eyes a bit, you can also recognize a Gibbs free energy minization problem into this, containing energy, entropy, physical restrictions ($U(\mathbf{r}, \mathbf{c})$) and a temperature ($1/\lambda$). This could be used to describe a system of two types of molecules (for example proteins and ligands) which have a varying degree of cross-affinity for each other.  
+is the *information entropy* of $$P$$. One can increase the entropy by making the distribution more homogeneous, i.e. giving everybody a more equal share of every dessert. The parameter $$\lambda$$ determines the trade-off between the two terms: trying to give every person only their favorites or encouraging equal distributions. Machine learners will recognize this as similar to regularization in, for example, ridge regression. Similar as that for machine learning problems a tiny bit of shrinkage of the parameter can lead to an improved performance, the Sinkhorn distance is also observed to work better than the Wasserstein distance on some problems. This is because we use a very natural prior on the distribution matrix $$P$$: in absence of a cost, everything should be homogeneous!
+
+If you squint your eyes a bit, you can also recognize a Gibbs free energy minization problem into this, containing energy, entropy, physical restrictions ($$U(\mathbf{r}, \mathbf{c})$$) and a temperature ($$1/\lambda$$). This could be used to describe a system of two types of molecules (for example proteins and ligands) which have a varying degree of cross-affinity for each other.  
 
 ## An elegant algorithm for Sinkhorn distances
 
-Even though the entropic regularization can be motivated, to some extent, it appears that we have made the problem harder to solve because we added an extra term. Remarkably, there exists a very simple and efficient algorithm to obtain the optimal distribution matrix $P_\lambda^\star$ and the associated $d_M^\lambda(\mathbf{r}, \mathbf{c})$! This algorithm starts form the observation that the elements of the optimal distribution matrices are of the form
-$$
-(P_\lambda^\star)_{ij} = \alpha_i\beta_j e^{-\lambda M_{ij}}\,,
-$$
-with $\alpha_1,\ldots,\alpha_n$ and $\beta_1,\ldots,\beta_n$ some constants that have to be determined that the rows, resp. columns, sum to $\mathbf{r}$, resp. $\mathbf{c}$! As such, the optimal distribution matrix can be obtained by the following algorithm.
+Even though the entropic regularization can be motivated, to some extent, it appears that we have made the problem harder to solve because we added an extra term. Remarkably, there exists a very simple and efficient algorithm to obtain the optimal distribution matrix $$P_\lambda^\star$$ and the associated $$d_M^\lambda(\mathbf{r}, \mathbf{c})$$! This algorithm starts form the observation that the elements of the optimal distribution matrices are of the form
 
-> **given**: $M$, $\mathbf{r}$, $\mathbf{c}$ and $\lambda$
+$$(P_\lambda^\star)_{ij} = \alpha_i\beta_j e^{-\lambda M_{ij}}\,,$$
+
+with $$\alpha_1,\ldots,\alpha_n$$ and $$\beta_1,\ldots,\beta_n$$ some constants that have to be determined that the rows, resp. columns, sum to $$\mathbf{r}$$, resp. $$\mathbf{c}$$! As such, the optimal distribution matrix can be obtained by the following algorithm.
+
+> **given**: $$M$$, $$\mathbf{r}$$, $$\mathbf{c}$$ and $$\lambda$$
 >
-> **initialize**: $P_\lambda = e^{-\lambda M}$
+> **initialize**: $$P_\lambda = e^{-\lambda M}$$
 >
 > **repeat**
->> 1. **scale the rows** such that the row sums match $\mathbf{r}$
->> 2. **scale the columns** such that the column sums match $\mathbf{c}$
+>> 1. **scale the rows** such that the row sums match $$\mathbf{r}$$
+>> 2. **scale the columns** such that the column sums match $$\mathbf{c}$$
 >
 > **until** convergence
 
@@ -235,21 +239,21 @@ def compute_optimal_transport(M, r, c, lam, epsilon=1e-8):
 
 Using this algorithm we can compute the optimal distribution of desserts, shown below.
 
-![The solution of the dessert problem with $\lambda=10$, a very good approximation of the unregularized problem.](../images/2017_optimal_transport/desserts_high_lambda.png)
+![The solution of the dessert problem with $$\lambda=10$$, a very good approximation of the unregularized problem.](../images/2017_optimal_transport/desserts_high_lambda.png)
 
-Here, everybody only has desserts they like. Note that for example Jan gets three pieces of carrot cake (the only thing he can eat) while Tim gets the remaining piece (he is the only person with some fondness of this dessert). If we turn the regularization parameter $\lambda$ down, we encourage a more homogeneous distribution, though some people will have to try some desserts which are not their favorites...
+Here, everybody only has desserts they like. Note that for example Jan gets three pieces of carrot cake (the only thing he can eat) while Tim gets the remaining piece (he is the only person with some fondness of this dessert). If we turn the regularization parameter $$\lambda$$ down, we encourage a more homogeneous distribution, though some people will have to try some desserts which are not their favorites...
 
-![The solution with a slightly lower $\lambda$. Clearly a different optimal distribution is obtained.](../images/2017_optimal_transport/desserts_low_lambda.png)
+![The solution with a slightly lower $$\lambda$$. Clearly a different optimal distribution is obtained.](../images/2017_optimal_transport/desserts_low_lambda.png)
 
 The optimal transport problem, with or without entropic regularization has a nice geometric interpretation, shown below.
 
 ![A geometric view of the optimal transport problem.](../images/2017_optimal_transport/geometry.png)
 
-The cost matrix determines a direction in which distributions are better or worse. The set $U(\mathbf{r}, \mathbf{c})$ contains all feasible distributions. In the unregularized case, the optimum $P^\star$ is usually found in one of the corners of such a set. When adding the entropic regularizer, we restrict ourselves to distributions with a minimum of entropy, lying within the smooth red curve. Because we don't have to deal with the sharp corners of $U(\mathbf{r}, \mathbf{c})$ any more, it is easier to find the optimum. As special cases, when $\lambda\rightarrow \infty$, then $P^\star_\lambda$ will become closers to $P^\star$ (until the algorithm runs into numerical difficulties). For $\lambda\rightarrow 0$ on the other hand, only the entropic term is taken into account and $P_\lambda^\star=\mathbf{r}\mathbf{c}^\intercal$, a homogeneous distribution.
+The cost matrix determines a direction in which distributions are better or worse. The set $$U(\mathbf{r}, \mathbf{c})$$ contains all feasible distributions. In the unregularized case, the optimum $$P^\star$$ is usually found in one of the corners of such a set. When adding the entropic regularizer, we restrict ourselves to distributions with a minimum of entropy, lying within the smooth red curve. Because we don't have to deal with the sharp corners of $$U(\mathbf{r}, \mathbf{c})$$ any more, it is easier to find the optimum. As special cases, when $$\lambda\rightarrow \infty$$, then $$P^\star_\lambda$$ will become closers to $$P^\star$$ (until the algorithm runs into numerical difficulties). For $$\lambda\rightarrow 0$$ on the other hand, only the entropic term is taken into account and $$P_\lambda^\star=\mathbf{r}\mathbf{c}^\intercal$$, a homogeneous distribution.
 
 ## The many applications of optimal transport
 
-So optimal transport has two big applications: *matching distributions* (being interested in $P_\lambda^\star$) or computing a *distance between distributions* (being interested in $d^\lambda_M(\mathbf{r}, \mathbf{c})$).
+So optimal transport has two big applications: *matching distributions* (being interested in $$P_\lambda^\star$$) or computing a *distance between distributions* (being interested in $$d^\lambda_M(\mathbf{r}, \mathbf{c})$$).
 
 ### Matching distributions
 
