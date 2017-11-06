@@ -17,4 +17,6 @@ Resource links:
 * [Cloud Native London Meetup](https://meetup.com/Cloud-Native-London) on Wednesday, including Justin Cormack from Docker.
 
 ![Cheryl Hung presenting at muCon London]({{site.baseurl}}/images/presenting.jpg)
+
+
 ![The Eight principles of cloud native storage]({{site.baseurl}}/images/8-principles.jpg)
