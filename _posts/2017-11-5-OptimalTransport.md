@@ -3,6 +3,8 @@ layout: post
 title: Notes on optimal transport
 ---
 
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
 This summer I stumbled upon the optimal transportation problem, an optimization problem where the goals is to transform one probability distribution into another with a cost as low as possible. It is so simple to understand, yet it has a mind-boggling number of applications in probability, computer vision, machine learning, computational fluid dynamics and computational biology. I recently gave a seminar on this topic and this post is an overview on the topic. Enjoy!
 
 ## A party in the lab
