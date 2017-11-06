@@ -1,23 +1,23 @@
 ---
+comments: true
 layout: post
 title: GIT服务器安装
-comments: true
 ---
 
 在vps上搭建git服务器的主要目的是为了能够持续部署我的博客,再熟悉git原理以及协议,因为git是去中心化的结构,我记得有人说过,去中心化的设计在现实发展过程中会促使出现超级中心,比如github以及将来比特币未来的局势
 
 相比svn等集中式版本控制,git分布式更为优越,符合互联网的定义,只是搭建过程略显复杂,我们将使用git协议,下面优缺点引自git官网:
 
-##### Git 协议
+##### Git 协议#####
 >这是一个包含在 Git 软件包中的特殊守护进程； 它会监听一个提供类似于 SSH 服务的特定端口（9418），而无需任何授权。打算支持 Git 协议的仓库，需要先创建 git-daemon-export-ok 文件 — 它是协议进程提供仓库服务的必要条件 — 但除此之外该服务没有什么安全措施。要么所有人都能克隆 Git 仓库，要么谁也不能。这也意味着该协议通常不能用来进行推送。你可以允许推送操作；然而由于没有授权机制，一旦允许该操作，网络上任何一个知道项目 URL 的人将都有推送权限。不用说，这是十分罕见的情况。
 
-##### 优点
+##### 优点#####
 >Git 协议是现存最快的传输协议。如果你在提供一个有很大访问量的公共项目，或者一个不需要对读操作进行授权的庞大项目，架设一个 Git 守护进程来供应仓库是个不错的选择。它使用与 SSH 协议相同的数据传输机制，但省去了加密和授权的开销。
 
-##### 缺点
+##### 缺点#####
 >Git 协议消极的一面是缺少授权机制。用 Git 协议作为访问项目的唯一方法通常是不可取的。一般的做法是，同时提供 SSH 接口，让几个开发者拥有推送（写）权限，其他人通过 git:// 拥有只读权限。 Git 协议可能也是最难架设的协议。它要求有单独的守护进程，需要定制 — 我们将在本章的 “Gitosis” 一节详细介绍它的架设 — 需要设定 xinetd 或类似的程序，而这些工作就没那么轻松了。该协议还要求防火墙开放 9418 端口，而企业级防火墙一般不允许对这个非标准端口的访问。大型企业级防火墙通常会封锁这个少见的端口。
 
-#### 在服务器上部署git
+#### 在服务器上部署git####
 我们需要创建裸仓库,可以克隆事加`--bare`即可,想这样:
 `$ git clone --bare you_project you_project.git`
 这个操作与`git init`+`git fetch`类似.
@@ -25,7 +25,7 @@ comments: true
 我们打算把git仓库放在`/opt/git`目录下,在服务器上执行克隆
 `git clone user@:YouDomain/opt/git/you_project.git`
 
-#### 生成 SSH 公钥
+#### 生成 SSH 公钥####
 大多数 Git 服务器都会选择使用 SSH 公钥来进行授权。系统中的每个用户都必须提供一个公钥用于授权，没有的话就要生成一个。生成公钥的过程在所有操作系统上都差不多。 首先先确认一下是否已经有一个公钥了。SSH 公钥默认储存在账户的主目录下的 `~/.ssh` 目录。进去看看：
 
     $ cd ~/.ssh
@@ -34,7 +34,8 @@ comments: true
     configid_dsa.pub
 关键是看有没有用 `something` 和 `something.pub` 来命名的一对文件，这个 `something` 通常就是 `id_dsa` 或 `id_rsa`。有 `.pub` 后缀的文件就是公钥，另一个文件则是密钥。假如没有这些文件，或者干脆连 `.ssh` 目录都没有，可以用 `ssh-keygen` 来创建。该程序在 Linux/Mac 系统上由 SSH 包提供，而在 Windows 上则包含在 MSysGit 包里：
 
-    $ ssh-keygen
+```
+$ ssh-keygen
     Generating public/private rsa key pair.
     Enter file in which to save the key (/Users/schacon/.ssh/id_rsa):
     Enter passphrase (empty for no passphrase):
@@ -43,6 +44,8 @@ comments: true
     Your public key has been saved in /Users/schacon/.ssh/id_rsa.pub.
     The key fingerprint is:
     43:c5:5b:5f:b1:f1:50:43:ad:20:a6:92:6a:1f:9a:3a schacon@agadorlaptop.local
+```
+
 它先要求你确认保存公钥的位置（`.ssh/id_rsa`），然后它会让你重复一个密码两次，如果不想在使用公钥的时候输入密码，可以留空。
 
 现在，所有做过这一步的用户都得把它们的公钥给你或者 Git 服务器的管理员（假设 SSH 服务被设定为使用公钥机制）。他们只需要复制 `.pub` 文件的内容然后发邮件给管理员。公钥的样子大致如下：
