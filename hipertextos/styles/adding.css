@@ -59,7 +59,7 @@ form .button {border:thin solid currentColor;margin-top:0.6em;}
 #resumed-web {color:var(--color-translucentblack);text-align:center!important;}
 #resumed-web em {padding:1em 0 1em 0;}
 #resumed-paint svg {width:48px;}
-#resumed-paint {color:var(--color-translucentwhite);text-align:center!important;}
+#resumed-paint {color:var(--color-translucentwhite);}
 #resumed-paint em {padding:1em 0 1em 0;}
 
 #browsers-ios svg {width:23px;color:var(--color-translucentblack);margin:0 3px 0 0;}
