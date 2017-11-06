@@ -4,12 +4,9 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Modern software development is a team sport, that no longer happens behind closed doors. As an experienced C++ developer and agile transformator I believe that software projects do not have to be painful and risky to execute. 
 
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+Over my github account https://www.github.com/bernedom
