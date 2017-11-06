@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Slides] [Nov 2017] What's the future of cloud and container native storage - Microservices conference"
+title: "[Slides] [Photos] [Nov 2017] What's the future of cloud and container native storage - Microservices conference"
 ---
 
 <object data="http://www.oicheryl.com/resources/What's-the-future-of-container-and-cloud-native-storage.pdf" type="application/pdf" width="700px" height="700px">
@@ -17,4 +17,4 @@ Resource links:
 * [Cloud Native London Meetup](https://meetup.com/Cloud-Native-London) on Wednesday, including Justin Cormack from Docker.
 
 ![Cheryl Hung presenting at muCon London]({{site.baseurl}}/images/presenting.jpg)
-![The Eight principles of cloud native storage]({{site.baseurl}}/images/8-principles.jpg.jpg)
+![The Eight principles of cloud native storage]({{site.baseurl}}/images/8-principles.jpg)
