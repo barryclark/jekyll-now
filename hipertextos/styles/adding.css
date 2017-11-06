@@ -61,6 +61,7 @@ form .button {border:thin solid currentColor;margin-top:0.6em;}
 #browsers-ios svg {width:23px;color:var(--color-translucentblack);margin:0 3px 0 0;}
 #section-brand h4{line-height:1.18em;}
 .big-icon svg {width:269px!important;padding-top:16px;}
+#section-paint {color:var(--color-white);}
 
 #page-nav {border:none;color:var(--color-hardgrey);}
 #page-nav a svg {}
