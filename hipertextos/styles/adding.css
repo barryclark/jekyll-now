@@ -70,6 +70,7 @@ form .button {border:thin solid currentColor;margin-top:0.6em;}
 #resumed svg {width:64px;text-align:center!important;}
 #resumed  em a svg {width:32px;}
 #resumed {color:var(--color-hardgrey);text-align:center!important;}
+#resumed p {text-align: justify;-moz-hyphens:none;-ms-hyphens:none;-webkit-hyphens:none;-o-hyphens:none;hyphens:none;}
 #resumed h2 {margin:0;}
 
 #browsers-ios svg {width:23px;color:var(--color-translucentblack);margin:0 3px 0 0;}
