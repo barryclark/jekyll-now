@@ -52,9 +52,6 @@ form .button {border:thin solid currentColor;margin-top:0.6em;}
 	border:none;overflow: hidden;text-align: center;
 }
 #section-web svg, #section-brand svg, #section-paint svg, #section-print svg {width:64px;}
-#resumed svg {width:48px;}
-#resumed {color:var(--color-hardgrey);text-align:center!important;}
-#resumed em {padding:1em 0 1em 0;}
 #resumed-web svg {width:48px;}
 #resumed-web {color:var(--color-translucentblack);text-align:center!important;}
 #resumed-web em {padding:1em 0 1em 0;}
@@ -67,6 +64,12 @@ form .button {border:thin solid currentColor;margin-top:0.6em;}
 #resumed-print em {padding:12px 0 12px 0;}
 #section-brand h4 {margin-bottom:0;}
 #section-brand h5 {line-height:1.3em;}
+
+#resumed  em a {text-align:center!important;float:none  !important;}
+#resumed svg {width:64px;text-align:center!important;}
+#resumed  em a svg {width:32px;}
+#resumed {color:var(--color-hardgrey);text-align:center!important;}
+#resumed em {padding:1em 0 1em 0;}
 
 #browsers-ios svg {width:23px;color:var(--color-translucentblack);margin:0 3px 0 0;}
 #section-brand h4{line-height:1.18em;}
