@@ -61,9 +61,9 @@ form .button {border:thin solid currentColor;margin-top:0.6em;}
 #resumed-paint svg {width:32px;}
 #resumed-paint {color:var(--color-translucentwhite);}
 #resumed-paint h5 {margin: 0 0 6px 0;}
-#resumed-print svg {width:48px;}
+#resumed-print svg {width:26px;}
 #resumed-print {color:var(--color-translucentblack);}
-#resumed-print h5 {margin: 0 0 6px 0;}
+#resumed-print h5 {margin: 0 0 6px 0;text-align:left!important;}
 #section-brand h4 {margin-bottom:0;}
 #section-brand h5 {line-height:1.3em;}
 
