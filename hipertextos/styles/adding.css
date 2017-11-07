@@ -53,7 +53,7 @@ form .button {border:thin solid currentColor;margin-top:0.6em;}
 }
 #section-web svg, #section-brand svg, #section-paint svg, #section-print svg {width:64px;}
 #resumed-web svg {width:48px;}
-#resumed-web {color:var(--color-translucentblack);text-align:center!important;}
+#resumed-web {color:var(--color-translucentblack);text-align:center!important;font-size:16px;}
 #resumed-web em {padding:1em 0 1em 0;}
 #resumed-paint svg {width:32px;}
 #resumed-paint {color:var(--color-translucentwhite);}
