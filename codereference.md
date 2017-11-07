@@ -38,6 +38,12 @@ http://jetpackweb.com/blog/2009/09/23/pbcopy-in-ubuntu-command-line-clipboard/
 
     find . -type d -empty -not -path "./.git/*" -exec touch {}/.gitkeep \; 
  
+##### Convert pdf to png using imagemagick
+      for f in *pdf
+      do 
+          convert -density 150 -antialias "$f" -append -resize 1024x -quality 100 "${f%.pdf}.png"
+      done
+ 
 ##### Convert variable space separated table to tab separated table
 
         unexpand -a file.txt > newfile.tab
