@@ -77,8 +77,8 @@ form .button {border:thin solid currentColor;margin-top:0.6em;}
 #section-paint {color:var(--color-white);}
 
 #page-nav {border:none;color:var(--color-hardgrey);}
-#page-nav a svg {}
-#page-nav div {height:64px;}
+#page-nav a {min-width:9%;}
+#page-nav div {height:80px;font-size:14px;}
 .serveis#page-main {padding:0;}
 
 /* Footer */ 
