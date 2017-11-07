@@ -1,10 +1,11 @@
 ---
 layout: post
-title: Paper Reading Group - A Few Useful Things to Know about Machine Learning
+title: Introduction to Neural Networks
 mathjax: True
 ---
 
 
+Slides for the workshop are available
 ### Recap: The Learning Problem
 
 We have a dataset of $$(x, y)$$ pairs where $$x$$ denotes a vector of features and $$y$$ denotes the label for that feature vector. We want to learn a function $$h(x)$$ that maps features to labels, with good generalization accuracy. We do this by minimizing a loss function computed on our dataset: $$ \sum_{i=1}^{N} L(y_i, h(x_i)) $$. There are many loss functions we can choose. We have gone over the cross-entropy loss and variants of the squared error loss functions in previous workshops, and we will once again consider those today. 
