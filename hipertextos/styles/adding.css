@@ -65,7 +65,7 @@ form .button {border:thin solid currentColor;margin-top:0.6em;}
 #section-brand h4 {margin-bottom:0;}
 #section-brand h5 {line-height:1.3em;}
 
-#resumed  em a {text-align:center!important;float:none  !important;}
+#resumed img {max-width:128px;}
 #resumed svg {width:64px;text-align:center!important;}
 #resumed  em a svg {width:32px;}
 #resumed {color:var(--color-hardgrey);text-align:center!important;}
