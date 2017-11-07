@@ -69,7 +69,7 @@ form .button {border:thin solid currentColor;margin-top:0.6em;}
 #resumed svg {width:64px;text-align:center!important;}
 #resumed  em a svg {width:32px;}
 #resumed {color:var(--color-hardgrey);text-align:center!important;}
-#resumed em {padding:1em 0 1em 0;}
+#resumed h2 {margin:0;}
 
 #browsers-ios svg {width:23px;color:var(--color-translucentblack);margin:0 3px 0 0;}
 #section-brand h4{line-height:1.18em;}
