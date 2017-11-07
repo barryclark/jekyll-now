@@ -79,7 +79,9 @@ img.big-icon {width:64px;padding-top:16px;}
 
 #page-nav {border:none;color:var(--color-hardgrey);}
 #page-nav a {min-width:9%;}
-#page-nav div {height:86px;font-size:16px;}
+#page-nav a:hover {border:thin solid rgba(0,0,0,.06);background:rgba(0,0,0,.02);}
+#page-nav a:visited {color: var(--color-grey) ;}
+#page-nav div {height:80px;font-size:15px;}
 .serveis#page-main {padding:0;}
 
 /* Footer */ 
