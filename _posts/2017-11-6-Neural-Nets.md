@@ -325,7 +325,7 @@ with tf.Session() as sess:
 - Why is the test accuracy lower than the (final) training accuracy ?
 - How can we tune our hyperparameters? In practice, is it okay to continually search for the best performance on the test dataset? 
 - When we add additional layers to our learning model, how does gradient descent change? In particular, why is it important to be extra careful about our learning rate, have sensible initialization, and tune hyperparameters?
-- Why do we use only 100 examples in each iteration, as opposed to the entire dataset of 50,000 examples? 
+- Why do we use only $$100$$ examples in each iteration, as opposed to the entire dataset of 50,000 examples? 
 
 ### Exercises
 1. Using different activation functions. Consult the Tensorflow documentation on `tanh` and `sigmoid`, and use that as the activation function instead of `relu`. Gauge the resulting changes in accuracy. 
