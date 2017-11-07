@@ -61,6 +61,7 @@ form .button {border:thin solid currentColor;margin-top:0.6em;}
 #resumed-paint svg {width:32px;}
 #resumed-paint {color:var(--color-translucentwhite);}
 #resumed-paint h5 {margin: 0 0 6px 0;}
+#section-brand h4 {margin-bottom:0;}
 
 #browsers-ios svg {width:23px;color:var(--color-translucentblack);margin:0 3px 0 0;}
 #section-brand h4{line-height:1.18em;}
