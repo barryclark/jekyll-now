@@ -125,6 +125,8 @@ img.big-icon {width:64px;padding-top:16px;}
     #resumed-print.cell-6 {width:100%!important;}
     #resumed-print.pushed-6 {margin-left:0;}
     strong em a {font-size: 16px;}
+    aside.thumb-3 {margin-top:1.2em;}
+    aside.thumb-3 p {margin:1em 0 1em 0;border-bottom: thin solid #eee;}
 }
 @media (max-width: 767px) {
 	#covers article {width: 100%;}
