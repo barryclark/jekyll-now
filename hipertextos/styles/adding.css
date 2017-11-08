@@ -13,7 +13,7 @@ em u label {text-transform:uppercase;background:var(--color-white);color:var(--c
 em u label:hover {border: thin solid var(--color-blue);color:var(--color-blue); }
 /* Nav */
 #site-nav { background: var(--color-soft-black) !important;color:var(--color-soft);border-bottom:none;box-shadow: 0 1px 12px rgba(0,0,0,.032);}
-#site-nav a { font-weight: normal;min-width:12%;border:none}
+#site-nav a { font-weight: normal;min-width:12%;border:none;letter-spacing: .05em}
 #site-nav a:hover, #site-nav a:visited { color:#fafafa;background:#000;}
 #site-nav a b { text-transform: uppercase;}
 .cover h2 { letter-spacing: 0.001em;font-weight: normal; }
