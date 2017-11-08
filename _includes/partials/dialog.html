@@ -4,11 +4,14 @@
 		<dialog>
 				<label for="modal-two">x</label>
 			<header>
-				<h3>dialog header h3 (2)</h3>
-				<p class="lead">dialog header p</p>
+				<h3>Contactar</h3>
+				<p class="lead">Envía'm la teva proposta!</p>
 			</header>
 			<div>
 				<p>dialog div p</p>
+{% if site.footer-links.email %}<em><small><a href="mailto:{{ site.footer-links.email }}"><i class="icon-gmail"></i></a></small></em>{% endif %}
+{% if site.footer-links.facebook %}<em class="facebook"><small><a href="https://www.facebook.com/{{ site.footer-links.facebook }}"><i class="icon-facebook"></i></a></small></em>{% endif %}
+{% if site.footer-links.twitter %}<em><small><a href="https://www.twitter.com/{{ site.footer-links.twitter }}"><i class="icon-twitter"></i></a></small></em>{% endif %}
 			</div>
 		</dialog>
 	</div>
