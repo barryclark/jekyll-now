@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 2017-11-09-Learning React...
-subtitle: ...from a testers point of view
+title: Learning React
+subtitle: from a testers point of view
 category: dev
 tags: [frontend, development]
 author: Alina Ionescu
