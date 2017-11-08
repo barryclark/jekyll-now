@@ -3,25 +3,20 @@
 /* ------------------------------------------------------------ Resets */
 
 #site-nav, footer, #follows, #follows-big, #icons, #covers, .nav-scroll, #web-credits, #page-header {
-text-align: center;
-}
-body {text-align: justify;-moz-hyphens:none;-ms-hyphens:none;-webkit-hyphens:none;-o-hyphens:none;hyphens:none;
- word-wrap:none;
- }
+text-align: center;}
+body {text-align: justify;-moz-hyphens:none;-ms-hyphens:none;-webkit-hyphens:none;-o-hyphens:none;hyphens:none;word-wrap:none;}
 p, ul {font-size: 18px;line-height: 27px;}
 .text-left {text-align:left;}
 .text-right {text-align:right;}
 em hr {border-bottom:thin solid #eee;}	
 em u a {text-transform:uppercase;background:var(--color-white);color:var(--color-soft);border:thin solid var(--color-grey);color:var(--color-grey);border-radius:40px;width:256px;margin-top:38px; }
 em u a:hover {border: thin solid var(--color-blue);color:var(--color-blue); }
-
 /* Nav */
 #site-nav { background: var(--color-soft-black) !important;color:var(--color-soft);border-bottom:none;box-shadow: 0 1px 12px rgba(0,0,0,.032);}
 #site-nav a { font-weight: normal;min-width:12%;border:none}
 #site-nav a:hover, #site-nav a:visited { color:#fafafa;background:#000;}
 #site-nav a b { text-transform: uppercase;}
 .cover h2 { letter-spacing: 0.001em;font-weight: normal; }
-
 /* Page & Header */
 .serveis-header {border-bottom:10px solid var(--color-hardgrey);
 	background-color: var(--color-black);color: var(--color-hardgrey);}
@@ -34,24 +29,20 @@ em u a:hover {border: thin solid var(--color-blue);color:var(--color-blue); }
 #icons a {border:thin solid var(--color-soft);background: transparent;}
 #icons a:hover {border:thin solid var(--color-blue);}
 .cover-page aside {border:none;color: var(--color-grey);}
-
+.cover-page  #coffee {    background: var(--color-background); /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(red, var(--color-background)); /* For Safari 5.1 to 6.0 */background: -o-linear-gradient(red, var(--color-background)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(red, var(--color-background)); /* For Firefox 3.6 to 15 */background: linear-gradient(#eee, var(--color-background)); /* Standard syntax */}
 figure em a {border:none;border-bottom;line-height:0.2em;padding:12px 4px;}
-
 /* Suscribe */
 form .button {border:thin solid currentColor;margin-top:0.6em;}
-
 /* Covers */
 #covers {color: var(--color-grey);}
 #covers img {width: 16.6666666666%;margin-bottom:1.2em; }
 #covers article {border:0;}
 #page #covers article {text-shadow:-1px 1px 2px #ddd;}
-
 /* Serveis */
 #section-web, #section-brand, #section-paint, #section-print {
-	background-position: top center;background-attachment: fixed;
-	background-size: cover;background-repeat: no-repeat;
-	border:none;overflow: hidden;text-align: center;
-}
+	background-position: top center;background-attachment: fixed;background-size: cover;background-repeat: no-repeat;border:none;overflow: hidden;text-align: center;}
 #section-web svg, #section-brand svg, #section-paint svg, #section-print svg {width:64px;}
 #resumed-web svg {width:36px;}
 #resumed-web {color:var(--color-translucentblack);text-align:center!important;font-size:15px;}
@@ -66,31 +57,25 @@ form .button {border:thin solid currentColor;margin-top:0.6em;}
 #section-brand h4 {margin-bottom:0;}
 #section-brand h5 {line-height:1.3em;}
 #section-brand .thumb-4 img {max-width:48%;}
-
+#browsers-ios svg {width:23px;color:var(--color-translucentblack);margin:0 3px 0 0;}
+#section-brand h4{line-height:1.18em;}
+img.big-icon {width:64px;padding-top:16px;}
+#section-paint {color:var(--color-white);}
+/* Coffee? */
 #coffee img {max-width:160px;margin-bottom:32px;}
 #coffee svg {width:64px;text-align:center!important;}
 #coffee  em a svg {width:32px;}
 #coffee {color:var(--color-hardgrey);text-align:center!important;}
 #coffee p {text-align: justify;-moz-hyphens:none;-ms-hyphens:none;-webkit-hyphens:none;-o-hyphens:none;hyphens:none;}
 #coffee h2 {margin:0;}
-
-#browsers-ios svg {width:23px;color:var(--color-translucentblack);margin:0 3px 0 0;}
-#section-brand h4{line-height:1.18em;}
-img.big-icon {width:64px;padding-top:16px;}
-#section-paint {color:var(--color-white);}
-
-#page-nav {border:none;color:var(--color-hardgrey);}
-#page-nav a {min-width:9%;}
+/* Nav */
+#page-nav {border:none;color:var(--color-hardgrey);} #page-nav a {min-width:9%;}
 #page-nav a:hover {border:thin solid rgba(0,0,0,.06);background:rgba(0,0,0,.02);}
 #page-nav a:visited {color: var(--color-grey) ;}
-#page-nav div {height:80px;font-size:15px;}
-.serveis#page-main {padding:0;}
-
+#page-nav div {height:80px;font-size:15px;}.serveis#page-main {padding:0;}
 /* Footer */ 
-#page-footer {background:#222;color:#999;}
-#page-footer em small a {border: thin solid #222;}
+#page-footer {background:#222;color:#999;}#page-footer em small a {border: thin solid #222;}
 #web-credits {border-bottom:thin solid #292929;}
-
 /* Classic Gallery */
 .listed .img-icon {width:32px;}
 .listed u {margin-left:12px;}
@@ -102,9 +87,6 @@ img.big-icon {width:64px;padding-top:16px;}
 -webkit-column-break-inside: avoid;-moz-column-break-inside:avoid;-moz-page-break-inside:avoid;page-break-inside: avoid;
 }
 
-@media (max-width: 1600px) {
-
-}
 @media (max-width: 1500px) {
 	#covers article {width: 49.9999999999%;}
     #section-web .pushed-6 {margin:0;text-align:right;}
