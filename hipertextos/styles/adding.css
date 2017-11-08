@@ -21,7 +21,6 @@ em u a:hover {border: thin solid var(--color-blue);color:var(--color-blue); }
 #site-nav a:hover, #site-nav a:visited { color:#fafafa;background:#000;}
 #site-nav a b { text-transform: uppercase;}
 .cover h2 { letter-spacing: 0.001em;font-weight: normal; }
-.cover { height: 80vh;padding-top: 230px;}
 
 /* Page & Header */
 .serveis-header {border-bottom:10px solid var(--color-hardgrey);
