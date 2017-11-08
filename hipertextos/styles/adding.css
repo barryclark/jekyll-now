@@ -56,6 +56,7 @@ form .button {border:thin solid currentColor;margin-top:0.6em;}
 #resumed-web svg {width:36px;}
 #resumed-web {color:var(--color-translucentblack);text-align:center!important;font-size:15px;}
 #resumed-web em {padding:1em 0 1em 0;}
+#responsive img {width:86%;}
 #resumed-paint svg {width:32px;}
 #resumed-paint {color:var(--color-translucentwhite);}
 #resumed-paint h5 {margin: 0 0 6px 0;}
@@ -110,6 +111,7 @@ img.big-icon {width:64px;padding-top:16px;}
     #section-web .pushed-6 {margin:0;text-align:right;}
     #section-web .cell-10 {width: 40% !important;}
     #section-web .cell-x1 {width: 50%;}
+    #responsive img {width:380px;}
     #section-paint .pushed-6 {margin-left:33%;}
     #section-paint .thumb-6 {width:66%;}
     #section-paint h5 {font-size: 19px;}
@@ -127,6 +129,7 @@ img.big-icon {width:64px;padding-top:16px;}
     .cover-page .thumb-9, .cover-page .thumb-3 {width: 100%;}
     #section-web .cell-x1 {	width: 20%;}
     #section-web .cell-10 {width: 100% !important;margin:0;}
+    #responsive img {width:256px;}
     #section-paint .pushed-6 {margin-left:30%!important;}
     #section-paint .thumb-6 {width:70%;}
     .cell-6, .pushed-6 {width:100%;margin:0 !important;}
