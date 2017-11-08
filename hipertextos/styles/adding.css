@@ -91,7 +91,7 @@ img.big-icon {width:64px;padding-top:16px;}
 #web-credits {border-bottom:thin solid #292929;}
 
 /* Classic Gallery */
-.listed .img-icon {width:32px;}
+.listed .img-icon {width:36px;}
 .listed section {	-webkit-column-count: 3;-moz-column-count: 3;column-count: 3;border:none;line-height:2em;font-size:0.2em;}
 .imagens img {margin:0!important;padding:0!important;border:none;}
 .listed {padding:0!important;}

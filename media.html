@@ -6,8 +6,7 @@ permalink: /media/
 
     <main id="page-main" role="main">
 	<div id="layout" class="listed">
-				<img src="{{ site.baseurl }}/hipertextos/svg/photos.svg" class="img-icon">
-    			<h3>Matte Painting</h3>
+    			<h3><img src="{{ site.baseurl }}/hipertextos/svg/photos.svg" class="img-icon"><u>Matte Painting</u></h3>
 			<section>					
   <article>
 	<a href="{{ site.baseurl }}/assets/mattepainting/image1.jpg" data-lightbox="roadtrip"><img class="imagens" src="{{ site.baseurl }}/assets/mattepainting/image1.jpg" alt="{{ image.basename }}"></a>
@@ -26,7 +25,7 @@ permalink: /media/
   </article>
 			</section>
 			<hr>
-    			<h4><img src="{{ site.baseurl }}/hipertextos/svg/printer.svg" class="img-icon"><u>Impressions</u></h4>
+    			<h3><img src="{{ site.baseurl }}/hipertextos/svg/printer.svg" class="img-icon"><u>Impressions</u></h3>
 			<section>					
 	{% assign image_files = site.static_files | where: "image", true %}
 	{% for image in image_files %}
@@ -67,7 +66,7 @@ permalink: /media/
   </article>
 			</section>
 			<hr>
-    			<h4><img src="{{ site.baseurl }}/hipertextos/svg/pencil.svg" class="img-icon"><u>Pintura</u></h4>
+    			<h3><img src="{{ site.baseurl }}/hipertextos/svg/pencil.svg" class="img-icon"><u>Pintura</u></h3>
 			<section>					
   <article>
 	<a href="{{ site.baseurl }}/assets/paint/paint1.jpg" data-lightbox="roadtrip"><img class="imagens" src="{{ site.baseurl }}/assets/paint/paint1.jpg" alt="{{ image.basename }}"></a>
