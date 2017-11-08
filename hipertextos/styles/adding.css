@@ -68,7 +68,7 @@ form .button {border:thin solid currentColor;margin-top:0.6em;}
 #section-brand h5 {line-height:1.3em;}
 #section-brand .thumb-4 img {max-width:48%;}
 
-#resumed img {max-width:230px;margin-bottom:32px;}
+#resumed img {max-width:160px;margin-bottom:32px;}
 #resumed svg {width:64px;text-align:center!important;}
 #resumed  em a svg {width:32px;}
 #resumed {color:var(--color-hardgrey);text-align:center!important;}
