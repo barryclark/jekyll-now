@@ -88,6 +88,7 @@ img.big-icon {width:64px;padding-top:16px;}
 /* Dialog */
 #dialog .icon-alarm svg {max-width:15px!important;}
 #dialog dialog {border:none;border-radius:7px 7px 6px 6px;}
+#dialog footer {border:none;padding:21px;border-radius:0 0 6px 6px;}
 #dialog header {border:none;padding:21px;border-radius:6px 6px 0 0;}
 #dialog header h2 svg {width:32px;margin:0px 12px 0 0;}
 #dialog header h2 {font-size: 2.3em;margin-bottom:6px;}
