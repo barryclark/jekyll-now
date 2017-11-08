@@ -9,8 +9,8 @@ p, ul {font-size: 18px;line-height: 27px;}
 .text-left {text-align:left;}
 .text-right {text-align:right;}
 em hr {border-bottom:thin solid #eee;}	
-em u label {text-transform:uppercase;background:var(--color-white);color:var(--color-soft);border:thin solid var(--color-grey);color:var(--color-grey);border-radius:40px;width:256px;margin-top:38px; }
-em u label:hover {border: thin solid var(--color-blue);color:var(--color-blue); }
+em u label, em u a {text-transform:uppercase;background:var(--color-white);color:var(--color-soft);border:thin solid var(--color-grey);color:var(--color-grey);border-radius:40px;width:256px;margin-top:38px; }
+em u label:hover, em u a:hover {border: thin solid var(--color-blue);color:var(--color-blue); }
 /* Nav */
 #site-nav { background: var(--color-soft-black) !important;color:var(--color-soft);border-bottom:none;box-shadow: 0 1px 12px rgba(0,0,0,.032);}
 #site-nav a { font-weight: normal;min-width:12%;border:none;letter-spacing: .05em}
