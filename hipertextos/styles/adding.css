@@ -86,7 +86,8 @@ img.big-icon {width:64px;padding-top:16px;}
 .listed article { border:none;overflow: hidden;width: 100%;display: block;display: inline-block;margin:0!important;padding:0!important;
 -webkit-column-break-inside: avoid;-moz-column-break-inside:avoid;-moz-page-break-inside:avoid;page-break-inside: avoid;}
 /* Dialog */
-#dialog dialog {border:none;border-radius:6px;}
+#dialog dialog {border:none;border-radius:7px 7px 6px 6px;}
+#dialog header {border:none;border-radius:6px 6px 0 0;}
 #dialog em a {border:none;color:var(--color-grey);}
 img.dialog-svg {width:72px!important;height:64px;}
 #dialog dialog div a {font-size:15px;}
