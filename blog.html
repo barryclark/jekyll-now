@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: blog
 ---
 
 <div class="posts">

@@ -1,289 +1,239 @@
----
----
-
-//
-// IMPORTS
-//
-
-@import "reset";
-@import "variables";
-// Syntax highlighting @import is at the bottom of this file
-
-/**************/
-/* BASE RULES */
-/**************/
-
-html {
-  font-size: 100%;
+.landingHead{
+  opacity:30;
+  background-color:black;
+  background-image: url("https://images.pexels.com/photos/85105/pexels-photo-85105.jpeg?w=940&h=650&auto=compress&cs=tinysrgb");
+  background-size:100%;
+  width:100%;
+  height:650px;
+  opacity: .8
 }
 
-body {
-	background: $white;
-  font: 18px/1.4 $helvetica;
-  color: $darkGray;
+.headshotPic{
+  width:200px;
+  height:200px;
+  border-radius: 50%;
 }
 
-.container {
+.landingText{
+  width:95%;
   margin: 0 auto;
-  max-width: 740px;
-  padding: 0 10px;
+  background-color: #6d6d6d;
+  position:relative;
+  top:240px;
+}
+
+.aboutMe{
+  font-size:25px;
+  line-height:1.5;
+  font-style:italic;
+}
+body{
+  position:relative;
+  background: #34495e;
+  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+  line-height: 25px;
+  margin-bottom:100px;
+}
+
+/*general*/
+.content, .panel-default>.panel-heading, .navbar{
+  background:#fff;
+}
+
+h1, h2, h3{
+  color: #dfd6ca;
+  text-align:center;
+  margin-bottom:25px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight:bold;
+}
+h1{
+  text-align:center;
+  font-size:40px;
+  letter-spacing: 5px;
+}
+h2{
+  font-size:30px; 
+}
+h3{
+  font-size:20px;
+}
+hr{
+  color:gray;
+}
+
+.content{
+  margin:30px 0;
+}
+
+/*footer*/
+
+.fa{
+  margin-left:20px;
+}
+.navbar-fixed-bottom{
+  padding: 10px;
+  text-align: center;
+  background: #666666;
+  border-top: 5px solid #4aaaa5;
+
+}
+.navbar-default .navbar-text{
+  font-size:16px;
+  width:100%;
+  text-align:center;
+  color: #D3D3D3;
+}
+
+header .container {
+  padding:100px;
+}
+
+.navbar-custom {
+  background: #2C3E50;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  border: none;
+}
+
+.portfolioImg{
+  width:100%;
+  height:300px;
+  margin-top:50px;
+}
+
+.portfolioTitle{
+  position:absolute;
+}
+
+/* Uncomment everything commented to CSS for the hide/show */
+
+.gallery {
+  width: 25em;
+  margin: 2em auto;
+}
+
+.gallery-item {
+  height: auto;
+  float: left;
+  margin-bottom: 2em;
+  position: relative;
+}
+
+.gallery-item:first-child {
+  margin-right: 2.762430939%;
+}
+
+.gallery-item img {
   width: 100%;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: $helveticaNeue;
-  color: $darkerGray;
-  font-weight: bold;
-
-  line-height: 1.7;
-  margin: 1em 0 15px;
-  padding: 0;
-
-  @include mobile {
-    line-height: 1.4;
-  }
+.gallery-item:hover .img-title {
+  /*opacity: 1;*/
 }
 
-h1 {
-  font-size: 30px;
-  a {
-    color: inherit;
-  }
-}
-
-h2 {
-  font-size: 24px;
-}
-
-h3 {
-  font-size: 20px;
-}
-
-h4 {
-  font-size: 18px;
-  color: $gray;
-}
-
-p {
-  margin: 15px 0;
-}
-
-a {
-  color: $blue;
-  text-decoration: none;
-	cursor: pointer;
-  &:hover, &:active {
-    color: $blue;
-  }
-}
-
-ul, ol {
-  margin: 15px 0;
-  padding-left: 30px;
-}
-
-ul {
-  list-style-type: disc;
-}
-
-ol {
-  list-style-type: decimal;
-}
-
-ol ul, ul ol, ul ul, ol ol {
+.img-title {
+  position: absolute;
+  bottom: 0;
   margin: 0;
+  padding-top:10px;
+  height: 25%;
+  width: 100%;
+  text-align: center;
+  /*opacity: 0;*/
+  display: none; /* comment this out for CSS hover */
+  background-color: #333;
+  /*transition: all 0.5s ease;*/
 }
 
-ul ul, ol ul {
-  list-style-type: circle;
-}
-
-em, i {
-  font-style: italic;
-}
-
-strong, b {
-  font-weight: bold;
-}
-
-img {
-  max-width: 100%;
-}
-
-// Fixes images in popup boxes from Google Translate
-.gmnoprint img {
-  max-width: none;
-}
-
-.date {
-  font-style: italic;
-  color: $gray;
-}
-
-// Specify the color of the selection
-::-moz-selection {
-  color: $black;
-  background: $lightGray;
-}
-::selection {
-  color: $black;
-  background: $lightGray;
-}
-
-// Nicolas Gallagher's micro clearfix hack
-// http://nicolasgallagher.com/micro-clearfix-hack/
-.clearfix:before,
-.clearfix:after {
-    content: " ";
-    display: table;
-}
-
-.clearfix:after {
-    clear: both;
-}
-
-/*********************/
-/* LAYOUT / SECTIONS */
-/*********************/
-
-//
-// .masthead
-//
-
-.wrapper-masthead {
-  margin-bottom: 50px;
-}
-
-.masthead {
-  padding: 20px 0;
-  border-bottom: 1px solid $lightGray;
-
-  @include mobile {
-    text-align: center;
-  }
-}
-
-.site-avatar {
-  float: left;
-  width: 70px;
-  height: 70px;
-  margin-right: 15px;
-
-  @include mobile {
-    float: none;
-    display: block;
-    margin: 0 auto;
-  }
-
-  img {
-    border-radius: 5px;
-  }
-}
-
-.site-info {
-  float: left;
-
-  @include mobile {
-    float: none;
-    display: block;
-    margin: 0 auto;
-  }
-}
-
-.site-name {
-  margin: 0;
-  color: $darkGray;
-  cursor: pointer;
-  font-family: $helveticaNeue;
-  font-weight: 300;
-  font-size: 28px;
-  letter-spacing: 1px;
-}
-
-.site-description {
-  margin: -5px 0 0 0;
-  color: $gray;
-  font-size: 16px;
-
-  @include mobile {
-    margin: 3px 0;
-  }
-}
-
-nav {
-  float: right;
-  margin-top: 23px; // @TODO: Vertically middle align
-  font-family: $helveticaNeue;
-  font-size: 18px;
-
-  @include mobile {
-    float: none;
-    margin-top: 9px;
-    display: block;
-    font-size: 16px;
-  }
-
-  a {
-    margin-left: 20px;
-    color: $darkGray;
-    text-align: right;
-    font-weight: 300;
-    letter-spacing: 1px;
-
-    @include mobile {
-      margin: 0 10px;
-      color: $blue;
-    }
-  }
-}
-
-//
-// .main
-//
-
-.posts > .post {
-  padding-bottom: 2em;
-  border-bottom: 1px solid $lightGray;
-}
-
-.posts > .post:last-child {
-  padding-bottom: 1em;
-  border-bottom: none;
-}
-
-.post {
-  blockquote {
-    margin: 1.8em .8em;
-    border-left: 2px solid $gray;
-    padding: 0.1em 1em;
-    color: $gray;
-    font-size: 22px;
-    font-style: italic;
-  }
-
-  .comments {
-    margin-top: 10px;
-  }
-
-  .read-more {
-    text-transform: uppercase;
-    font-size: 15px;
-  }
-}
-
-.wrapper-footer {
-  margin-top: 50px;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  background-color: $lightGray;
-}
-
-footer {
-  padding: 20px 0;
+.img-title h5 {
+  position: absolute;
+  color: #fff;
+  top: 33%;
+  width: 100%;
   text-align: center;
 }
 
-// Settled on moving the import of syntax highlighting to the bottom of the CSS
-// ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
-@import "highlights";
-@import "svg-icons";
+
+.banner {
+  display: block;
+  min-height: 200px;
+  width: 100%;
+  position: relative;
+}
+.typedText{
+  font-size:20px;
+}
+.typed_wrap {
+  font-family: 'Open Sans', sans-serif;
+
+  display: block;
+  width: 60%;
+  height: auto;
+  padding: 30px;
+  border: 4px solid #ecf0f1;
+  background-color:black;
+  /*centers it in the .banner*/
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.typed_wrap h1 {
+  display: inline;
+}
+
+/*Add custom cursor so it auto inherits font styles*/
+.typed::after {
+  content: '|';
+  display: inline;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
+}
+
+/*Removes cursor that comes with typed.js*/
+.typed-cursor{
+  opacity: 0;
+  display: none;
+}
+/*Custom cursor animation*/
+@keyframes blink{
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
+}
+@-moz-keyframes blink{
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
+}
+
+.lead{
+  margin-top:30px;
+}
+
+.content{
+  padding-bottom:30px;
+}
+.contactHead{
+  color:black;
+}
+
+
+@media only screen and (max-width: 500px) {
+    .typed_wrap {
+       width:100%;
+    }
+}
