@@ -43,7 +43,7 @@ form .button {border:thin solid currentColor;margin-top:0.6em;}
 
 /* Covers */
 #covers {color: var(--color-grey);}
-#covers svg {width: 16.6666666666%;margin-bottom:1.2em;color: var(--color-softgrey); }
+#covers img {width: 16.6666666666%;margin-bottom:1.2em; }
 #covers article {border:0;}
 #page #covers article {text-shadow:-1px 1px 2px #ddd;}
 
