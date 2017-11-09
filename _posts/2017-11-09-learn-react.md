@@ -6,7 +6,7 @@ category: dev
 tags: [frontend, development]
 author: Alina Ionescu
 author_email: alina.ionescu@haufe-lexware.com
-header-img: "images/learn-react/learn-react-header.jpg"
+header-img: "images/learn-react/learn-react-header.png"
 ---
 
 ### **How it all began...**
@@ -25,13 +25,13 @@ Main competition is Angular framework developed by Google. If you are curious yo
 
 ### **How is Javascript different from Java?**
 As stated by the guys on [Stackoverflow](https://stackoverflow.com/a/245068)
-> Java and Javascript are similar like Car and Carpet are similar.
+>Java and Javascript are similar like Car and Carpet are similar.
 
 I will not go into more detail... :D
 
 ### **A few concepts**
 #### Arrow functions
-> An arrow function expression has a shorter syntax than a function expression and does not have its own this, arguments, super, or new.target. These function expressions are best suited for non-method functions, and they cannot be used as constructors.
+>An arrow function expression has a shorter syntax than a function expression and does not have its own this, arguments, super, or new.target. These function expressions are best suited for non-method functions, and they cannot be used as constructors.
 
 Here is an example of a normal function and its corresponding arrow function:
 ```
