@@ -16,9 +16,11 @@
 html {
   font-size: 100%;
 }
-
 body {
-	background: $white;
+    background-image: url("img_tree.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
   font: 18px/1.4 $helvetica;
   color: $darkGray;
 }
