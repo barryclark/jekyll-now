@@ -31,18 +31,22 @@ I will not go into more detail... :D
 
 ### **A few concepts**
 #### Arrow functions
+
 >An arrow function expression has a shorter syntax than a function expression and does not have its own this, arguments, super, or new.target. These function expressions are best suited for non-method functions, and they cannot be used as constructors.
 
 Here is an example of a normal function and its corresponding arrow function:
+
 ```
 function square (x) {
     return x * x;
 };
 const squareArrowFunction = (x) => x * x;
 ```
+
 Both can be used.
 
 #### State & Props
+
 ```state``` and ```props``` are two types of data that control a component.
 While ```props``` values never change, ```state``` is being used for data that is going to change. 
 
@@ -70,6 +74,7 @@ Split your application in reusable components. For example, in a ToDo applicatio
 ![](/images/learn-react/Components.png)
 
 Component example:
+
 ```
 import React from 'react';
 import * as Redux from 'react-redux';
@@ -109,6 +114,7 @@ It is a very good practice to write unit tests for your application.
 You can easily catch problems when changes occur. Trust me I'm a tester ;)
 For example, below you can see 2 tests. One that tests the TodoApp component exists and it correctly renders the TodoList.
 Component test example:
+
 ```
 var {Provider} = require('react-redux');
 var TestUtils = require('react-addons-test-utils');
@@ -139,6 +145,7 @@ describe('TodoApp', () => {
   });
 });
 ```
+
 6. Use [Firebase](https://firebase.google.com/) as backend.
 Firebase has a lot of interesting features you can use. Like authentication, database, etc.
 7. Deploy your application to production.
