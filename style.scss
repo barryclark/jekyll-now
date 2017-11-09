@@ -234,7 +234,14 @@ header .container {
   color:black;
 }
 
+article{
+  margin-top:50px;
+  background:white;
+}
 
+.posts{
+  background:white;
+}
 @media only screen and (max-width: 500px) {
     .typed_wrap {
        width:100%;
