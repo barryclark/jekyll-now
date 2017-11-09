@@ -16,7 +16,7 @@ Classes I'm currently working through:
 
 * [How to Code - Complex Data](https://github.com/mattboler/ComplexData)
 * [Applications of Linear Algebra Part 2](https://github.com/mattboler/applications2)
-* [Astrophysics X Series 1/4](https://github.com/mattboler/astro1x)
+* [Introduction to Aerospace Engineering](https://github.com/mattboler/IntroAero)
 
 Classes I've finished or plan on taking in the future:
 
