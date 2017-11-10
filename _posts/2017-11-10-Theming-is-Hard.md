@@ -38,7 +38,7 @@ I tried Ubuntu 17.10 and its defualt gnome:
 
 Positive:
 
--Lots and lots of GTK themes to pick from (Arc, Numix, Adapta, etc).
+- Lots and lots of GTK themes to pick from (Arc, Numix, Adapta, etc).
 - Good keyboard shortcuts.
 - Manages workspaces well.
 - EXTENSIONS.
