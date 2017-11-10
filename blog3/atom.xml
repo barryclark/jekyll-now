@@ -1,0 +1,26 @@
+---
+layout: nil
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title type="text" xml:lang="en">Blog 3</title>
+    <link type="application/atom+xml" href="http://www.example.com/blog3/atom.xml" rel="self"/>
+    <link type="text" href="http://garron.me" rel="alternate"/>
+    <updated>{{ site.time | date_to_xmlschema }}</updated>
+    <id>http://example.com</id>
+    <author>
+        <name>Guillermo Garron</name>
+    </author>
+    <rights>Copyright (c) 2010-2011 Guillermo Garron</rights>
+    {% for post in site.posts limit:20 %}
+    {% if post.categories contains 'blog3' %}
+    <entry>
+        <title>{{ post.title }}</title>
+        <link href="http://garron.me{{ post.url }}"/>
+        <updated>{{ post.date | date_to_xmlschema }}</updated>
+        <id>http://garron.me{{ post.url }}</id>
+        <summary type="html">{{ post.content | xml_escape }}</summary>
+    </entry>
+    {% endif %}
+    {% endfor %}
+</feed>
