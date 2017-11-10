@@ -4,12 +4,13 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Hello! Welcome to A MindMui Blog - a blog about me. I usually write what I have learned.
 
-### More Information
+### About me
 
-A place to include any other types of information that you'd like to include about yourself.
+My name is Mind. I am a Thai front-end developer and data analyst.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+Write to me at
+[mochimind@gmail.com](mailto:mochimind@gmail.com)
