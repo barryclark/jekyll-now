@@ -25,30 +25,30 @@ XUbuntu 17.10 (what I've been using for a while now):
 
 Positive:
 
-    * Very configurable.
-    * Lightweight and fast.
-    * Very stable.
+- Very configurable.
+- Lightweight and fast.
+- Very stable.
 
 Negative:
 
-    * Keyboard shortcuts required hacky solutions.
-    * Boring.
+- Keyboard shortcuts required hacky solutions.
+- Boring.
 
 I tried Ubuntu 17.10 and its defualt gnome:
 
 Positive:
 
-    * Lots and lots of GTK themes to pick from (Arc, Numix, Adapta, etc).
-    * Good keyboard shortcuts.
-    * Manages workspaces well.
-    * EXTENSIONS.
+-Lots and lots of GTK themes to pick from (Arc, Numix, Adapta, etc).
+- Good keyboard shortcuts.
+- Manages workspaces well.
+- EXTENSIONS.
 
 Negative:
 
-    * Ubuntu's version of dash to panel is *abominable*.
-    * The open/close animation for the app menu looks like it runs at 15fps.
-    * I don't like how I can't set the transparency of the panel through either ubuntu-panel or dash-to-panel.
-    * On the whole not particularly configurable (DPI is a significant problem area).
+- Ubuntu's version of dash to panel is *abominable*.
+- The open/close animation for the app menu looks like it runs at 15fps.
+- I don't like how I can't set the transparency of the panel through either ubuntu-panel or dash-to-panel.
+- On the whole not particularly configurable (DPI is a significant problem area).
 
 Having tried the most common DEs, I'm moving on to experimenting with WMs. 
 And Arch, because why not.
