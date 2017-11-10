@@ -4,12 +4,16 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+undergraduate: [HEU](http://www.hrbeu.edu.cn/)
+
+postgraduate： [UESTC](http://www.uestc.edu.cn/)
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+I am currently a graduate student.
+
+The research direction is Deep Learning (for image).
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[duanyzhi@outlook.com](mailto:email@domain.com)

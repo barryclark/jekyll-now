@@ -1,11 +1,7 @@
 ---
 layout: post
-title: Deep Learning
+title: Convolutional Neural Networks
 ---
 
-undergraduate: [HEU](http://www.hrbeu.edu.cn/)
+卷积神经网络
 
-postgraduate： [UESTC](http://www.uestc.edu.cn/)
-
-
-My [Deep Learning function](https://github.com/duanyzhi/deep_learning)
