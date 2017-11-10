@@ -27,7 +27,7 @@ published: true
   </tr>
   <tr>
     <td>Did I reach my target? </td>
-    <td></td>
+    <td>Yes I have successfully posted my first blog on github.</td>
   </tr>
 </table>
 
