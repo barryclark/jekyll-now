@@ -1,10 +1,14 @@
 ---
 layout: post
-title: You're up and running!
+title: BTG Pactual digital (iOS)
 ---
 
-Hi :)
+#### [11/2016 - Current]
+##### BTG Pactual digital
 
-![_config.yml]({{ site.baseurl }}/images/config.png)
+<p align="center"> 
+<img src="https://www.btgpactualdigital.com/wp-content/themes/btgpactualdigital/static/img/details/plataforma-digital-btgv2.png"/>
+</p>
 
-The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
+Nowdays I work on a [BTG Pactual digital]() iOS app. BTG Pactual digital is a digital investidor plataform of the largest investiment banking of Latin America BTG Pactual.
+The nice part of this job is the huge knowledge acquired in the financial market, and yours "evolution" into digital financial market.
