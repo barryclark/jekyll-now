@@ -8,21 +8,22 @@ My name is Matt Boler and I'm a student at Auburn University, pursuing an Honor'
 
 ### Projects
 
-* [Balancing Robot](https://github.com/mattboler/MECH3050_Balance)
+- [Balancing Robot](https://github.com/mattboler/MECH3050_Balance)
+- [Laser Tracking Robot (current project)](https://github.com/mattboler/Eye-Lasering)
 
 ### Self-Directed Learning
 
 Classes I'm currently working through:
 
-* [How to Code - Complex Data](https://github.com/mattboler/ComplexData)
-* [Applications of Linear Algebra Part 2](https://github.com/mattboler/applications2)
-* [Introduction to Aerospace Engineering](https://github.com/mattboler/IntroAero)
+- [How to Code - Complex Data](https://github.com/mattboler/ComplexData)
+- [Applications of Linear Algebra Part 2](https://github.com/mattboler/applications2)
+- [Introduction to Aerospace Engineering](https://github.com/mattboler/IntroAero)
 
 Classes I've finished or plan on taking in the future:
 
-* [Computer Science](compsci.md)
-* [Data Science](datasci.md)
-* [Misc Science and Engineering](other_classes.md)
+- [Computer Science](compsci.md)
+- [Data Science](datasci.md)
+- [Misc Science and Engineering](other_classes.md)
 
 Resume: [here](resumeSmr2017.pdf)
 
