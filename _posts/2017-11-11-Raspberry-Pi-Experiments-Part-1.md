@@ -455,8 +455,97 @@ out:
 2. Both at 3 and 8 we are using the LED API to push the state we are tracking
    internally via pixelMatrix to the actual LED matrix on the device.
 
+For reference the full file:
 
-For reference the full 
+``` javascript
+var senseLed = require("sense-hat-led");
+var senseJoystick = require('sense-joystick');
+
+import { Colors } from '../constants/colors';
+import { Keys } from '../constants/keys';
+
+export class LedNavigationController {
+    private colorService = new Colors();
+
+    private x: number = 0;
+    private y: number = 0;
+
+    private readonly xMax: number = 8;
+    private readonly yMax: number = 8;
+
+    private pixelMatrix: Array<Array<number>>;
+
+    private playerColor: Array<number> = [255, 255, 255];
+
+    private setLed(color: Array<number>) {
+        senseLed.clear(color);
+    }
+
+    private ResetMatrix() {
+        this.pixelMatrix = new Array<Array<number>>();
+
+        for (var index = 0; index < this.xMax * this.yMax; index++) {
+            this.pixelMatrix.push(Colors.Off);
+        }
+    }
+
+    private SetCurrentPosition(x: number, y: number) {
+        var index = x * this.xMax + y;
+        this.pixelMatrix[index] = this.playerColor;
+    }
+
+    public boot() {
+        this.ResetMatrix();
+        this.SetCurrentPosition(this.x, this.y);
+        senseLed.setPixels(this.pixelMatrix);
+
+        senseJoystick.getJoystick()
+            .then((joystick: any) => {
+                joystick.on('press', (direction: any) => {
+                    switch (direction) {
+                        case Keys.Left:
+                            this.y--;
+                            if (this.y < 0) {
+                                this.y = 0;
+                            }
+                            break;
+                        case Keys.Right:
+                            this.y++;
+                            if (this.y > this.yMax - 1) {
+                                this.y = this.yMax - 1;
+                            }
+                            break;
+                        case Keys.Up:
+                            this.x--;
+                            if (this.x < 0) {
+                                this.x = 0;
+                            }
+                            break;
+                        case Keys.Down:
+                            this.x++;
+                            if (this.x > this.xMax - 1) {
+                                this.x = this.xMax - 1
+                            }
+                            break;
+                        case Keys.Click:
+                            this.playerColor = this.colorService.GetRandomColor();
+                            break;
+                        default:
+                            break;
+                    }
+
+                    console.log('Got button press in the direction: ', direction);
+                    console.log("Current X: " + this.x);
+                    console.log("Current Y: " + this.y);
+
+                    this.ResetMatrix();
+                    this.SetCurrentPosition(this.x, this.y);
+                    senseLed.setPixels(this.pixelMatrix);
+                });
+            });
+    }
+}
+```
 
 # Demo
 
