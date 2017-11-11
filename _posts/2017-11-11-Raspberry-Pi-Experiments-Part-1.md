@@ -505,7 +505,8 @@ export class LedNavigationController {
         senseLed.setPixels(this.pixelMatrix);
 
         // 4. second hardware call! 
-        // Register a handler on the joystick press event which gives us the direction. 
+        // Register a handler on the joystick press 
+        // event which gives us the direction. 
         senseJoystick.getJoystick()
             .then((joystick: any) => {
                 joystick.on('press', (direction: any) => {
@@ -550,7 +551,8 @@ export class LedNavigationController {
                     console.log("Current X: " + this.x);
                     console.log("Current Y: " + this.y);
 
-                    // 7. Reseting the Matrix and player position after handling inputs
+                    // 7. Reseting the Matrix and player position 
+                    //    after handling inputs
                     this.ResetMatrix();
                     this.SetCurrentPosition(this.x, this.y);
 
