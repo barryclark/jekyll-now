@@ -1,6 +1,6 @@
 ---
 layout: post
-categories: [raspberry, pi, sense, hat, led, typescript]
+categories: [raspberry, pi, sense, hat, led, typescript, node, javascript, hardware]
 title: Raspberry PI Experiments - Part 1
 author: emir_osmanoski
 comments: true
@@ -454,6 +454,9 @@ out:
    register our handler
 2. Both at 3 and 8 we are using the LED API to push the state we are tracking
    internally via pixelMatrix to the actual LED matrix on the device.
+
+
+For reference the full 
 
 # Demo
 
