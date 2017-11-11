@@ -455,12 +455,13 @@ out:
 2. Both at 3 and 8 we are using the LED API to push the state we are tracking
    internally via pixelMatrix to the actual LED matrix on the device.
 
-# Final Demo
+# Demo
 
 The final output of the above code can be seen in the following video:
 
-<div class= "embed-responsive embed-responsive-16by9 col-xs-12 text-center">
+<div class= "embed-responsive embeded_video embed-responsive-16by9 text-center">
     <iframe 
+        class="embed-responsive-item"
         width="560" 
         height="315" 
         src="https://www.youtube.com/embed/V_JY1LeZfio?rel=0" 
