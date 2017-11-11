@@ -495,14 +495,23 @@ export class LedNavigationController {
     }
 
     public boot() {
+        // 1. initially rset the matrix 
         this.ResetMatrix();
+
+        // 2. initially set the current position
         this.SetCurrentPosition(this.x, this.y);
+
+        // 3. the first hardware call! Push the pixelMatrix to the senseLed
         senseLed.setPixels(this.pixelMatrix);
 
+        // 4. second hardware call! 
+        // Register a handler on the joystick press event which gives us the direction. 
         senseJoystick.getJoystick()
             .then((joystick: any) => {
                 joystick.on('press', (direction: any) => {
                     switch (direction) {
+                        // 5. We use the Keys constant to determine the key 
+                        // that was pressed and change position accordingly.
                         case Keys.Left:
                             this.y--;
                             if (this.y < 0) {
@@ -531,15 +540,22 @@ export class LedNavigationController {
                             this.playerColor = this.colorService.GetRandomColor();
                             break;
                         default:
+                            // noop    
                             break;
                     }
+
+                    // 6. Do some logging
 
                     console.log('Got button press in the direction: ', direction);
                     console.log("Current X: " + this.x);
                     console.log("Current Y: " + this.y);
 
+                    // 7. Reseting the Matrix and player position after handling inputs
                     this.ResetMatrix();
                     this.SetCurrentPosition(this.x, this.y);
+
+                    // 8. Updating the hardware LED state with the
+                    //    current internal pixelMatrix state
                     senseLed.setPixels(this.pixelMatrix);
                 });
             });
