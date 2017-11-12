@@ -11,7 +11,8 @@ IUserSettings
 
 UserSettingsOnDisk : IUSerSettings
 	Settings Get()
-		return JsonDeserialize(ReadTextFile('~/.myappsettings.json'))
+		jsonText = ReadTextFile('~/.myappsettings.json')
+		return JsonDeserialize(jsonText)
 ```  
 
 In distributed systems I might have code running in two systems.
