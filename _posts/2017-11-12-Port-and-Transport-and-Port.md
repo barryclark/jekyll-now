@@ -4,16 +4,14 @@ I can bend the dependency's interface to the shape that I want for my domain.
 
 That might look like:
 
-```
-IUserSettings
-	Settings Get()
-	Set(name, value)
-
-UserSettingsOnDisk : IUSerSettings
-	Settings Get()
-		jsonText = ReadTextFile('~/.myappsettings.json')
-		return JsonDeserialize(jsonText)
-```  
+	IUserSettings
+		Settings Get()
+		Set(name, value)
+	
+	UserSettingsOnDisk : IUSerSettings
+		Settings Get()
+			jsonText = ReadTextFile('~/.myappsettings.json')
+			return JsonDeserialize(jsonText)
 
 In distributed systems I might have code running in two systems.
 For example, maybe there is a security restriction that forces certain code to run on a certain computer.
