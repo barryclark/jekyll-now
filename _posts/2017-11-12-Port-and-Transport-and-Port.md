@@ -10,7 +10,7 @@ That might look like:
 	
 	UserSettingsOnDisk : IUSerSettings
 		Settings Get()
-			jsonText = ReadTextFile('~/.myappsettings.json')
+			jsonText = ReadTextFile('~/.myapp.json')
 			return JsonDeserialize(jsonText)
 
 In distributed systems I might have code running in two systems.
