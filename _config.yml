@@ -18,14 +18,14 @@ avatar: https://en.gravatar.com/userimage/5015851/7fc1b580e33036e45dee9bfd66b0e7
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email:
+  email: jay+blog@bazuzi.com
   facebook:
   flickr:
   github: jaybazuzi
   instagram:
   linkedin:
   pinterest:
-  rss: # yes
+  rss: yes
   twitter: jaybazuzi
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
@@ -41,7 +41,7 @@ google_analytics: UA-109575325-1
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
-url: https://jaybazuzi.github.io/
+url: https://jay.bazuzi.com/
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
