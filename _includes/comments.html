@@ -1,20 +1,18 @@
 {% if site.data.comments[page.slug] %}
   {% assign comments = site.data.comments[page.slug] | sort %}
   {% for comment in comments %}
-  <article id="comment-{{ comment[1].date }}" class="js-comment comment" itemprop="comment" itemscope itemtype="http://schema.org/Comment">
-  <div class="comment-content-wrapper">
+  <article id="comment-{{ comment[1].date }}" class="comment" itemprop="comment" itemscope itemtype="http://schema.org/Comment">
     <h3 class="comment-author" itemprop="author" itemscope itemtype="http://schema.org/Person">
       {% if comment[1].url %}<a href="comment[1].url">{% endif %}
       <span itemprop="name">{{ comment[1].name }}</span>
       {% if comment[1].url %}</a>{% endif %}
     </h3>
-    <div class="comment-{{ comment[1].date }}">
+    <div class="comment-date">
       <a href="#comment-{{ comment[1].date }}" itemprop="url">
       <time datetime="{{ comment[1].date | date_to_xmlschema }}" itemprop="datePublished">{{ comment[1].date | date: '%B %d, %Y %r' }}</time>
       </a>
     </div>
-    <div itemprop="text"><p>{{ comment[1].message }}</p></div>
-  </div>
+    <div class="comment-body" itemprop="text"><p>{{ comment[1].message }}</p></div>
   </article>
   {% endfor %}
 {% endif %}
@@ -22,9 +20,9 @@
 <form id="post-new-comment" method="post" action="https://api.staticman.net/v2/entry/hendrixjoseph/hendrixjoseph.github.io/master/comments">
   <input name="options[redirect]" type="hidden" value="{{ site.url }}{{ page.url }}">
   <input name="options[slug]" type="hidden" value="{{ page.slug }}">
-  <label><input name="fields[name]" type="text">Name</label>
-  <label><input name="fields[url]" type="text">URL</label>
-  <label><input name="fields[email]" type="email">E-mail</label>
-  <label><textarea name="fields[message]"></textarea>Message</label>  
-  <button type="submit">Go!</button>
+  <label>Comment<textarea name="fields[message]"></textarea></label>  
+  <label>Name<input name="fields[name]" type="text"></label>
+  <label>Email<input name="fields[url]" type="text"></label>
+  <label>Website<input name="fields[email]" type="email"></label>
+  <button type="submit">Post comment</button>
 </form>
