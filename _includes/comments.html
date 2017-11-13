@@ -4,7 +4,7 @@
   {% for comment in comments %}
   <article id="comment-{{ comment[1].date }}" class="comment" itemprop="comment" itemscope itemtype="http://schema.org/Comment">
     <h3 class="comment-author" itemprop="author" itemscope itemtype="http://schema.org/Person">
-      {% if comment[1].url %}<a rel="nofollow" href="comment[1].url">{% endif %}
+      {% if comment[1].url %}<a rel="nofollow" href="{{ comment[1].url }}">{% endif %}
       <span itemprop="name">{{ comment[1].name }}</span>
       {% if comment[1].url %}</a>{% endif %}
     </h3>
