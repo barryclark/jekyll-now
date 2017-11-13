@@ -14,11 +14,8 @@
 
 #post-new-comment {
   label textarea, label input, button {
-    display: block; 
-  }
-  
-  label {
-    margin: 0.5em
+    display: block;
+    margin-bottom: 1em;
   }
   
   .comment-body textarea {
