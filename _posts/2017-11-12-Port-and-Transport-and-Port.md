@@ -20,15 +20,14 @@ I don't need the same kind of adapting.
 But I do want to abstract away the remote communication, and I don't want to deal with remoting when testing the business rules.
 If both sides are implemented using the same technology, I use this trick or organize and test them in a convenient way. 
 
-1. Define the interface I wish I had.
-2. Make one component implement that interface.
-3. Make the other component talk to that interface.
-4. Test the components together.
+1. Define the interface I wish I had. In practice, I push tweak this interface repeatedly as I push responsibilities from one side to the other.
+2. Make one class implement that interface, while another talks to that interface.
+3. Test the components together.
 
 ```
 IFoo
 	Bar()
-	
+
 class Manager(IFoo foo)
 	DoWork()
 		foo.Bar()
