@@ -1,3 +1,4 @@
+<div class="comments">
 {% if site.data.comments[page.slug] %}
   {% assign comments = site.data.comments[page.slug] | sort %}
   <h3>{{ comments | size }} comments for {{ page.title }}</h3>
@@ -28,3 +29,4 @@
   <label class="comment-email">Website (optional)<input name="fields[url]" type="text"></label>  
   <button type="submit">Post comment</button>
 </form>
+</div>
