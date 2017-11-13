@@ -20,9 +20,9 @@
 <form id="post-new-comment" method="post" action="https://api.staticman.net/v2/entry/hendrixjoseph/hendrixjoseph.github.io/master/comments">
   <input name="options[redirect]" type="hidden" value="{{ site.url }}{{ page.url }}">
   <input name="options[slug]" type="hidden" value="{{ page.slug }}">
-  <label class="comment-body">Comment<textarea name="fields[message]"></textarea></label>  
-  <label class="comment-author">Name<input name="fields[name]" type="text"></label>
-  <label class="comment-email">Email<input name="fields[url]" type="text"></label>
-  <label class="comment-url">Website<input name="fields[email]" type="email"></label>
+  <label class="comment-body">Comment (required)<textarea name="fields[message]"></textarea></label>  
+  <label class="comment-author">Name (required)<input name="fields[name]" type="text"></label>
+  <label class="comment-url">Email (required)<input name="fields[email]" type="email"></label>
+  <label class="comment-email">Website (optional)<input name="fields[url]" type="text"></label>  
   <button type="submit">Post comment</button>
 </form>
