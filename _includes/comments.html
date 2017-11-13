@@ -1,5 +1,6 @@
 {% if site.data.comments[page.slug] %}
   {% assign comments = site.data.comments[page.slug] | sort %}
+  <h3>{{ comments | size }} comments for {{ page.title }}</h3>
   {% for comment in comments %}
   <article id="comment-{{ comment[1].date }}" class="comment" itemprop="comment" itemscope itemtype="http://schema.org/Comment">
     <h3 class="comment-author" itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -17,6 +18,7 @@
   {% endfor %}
 {% endif %}
 
+<h3>Leave a Reply</h3>
 <form id="post-new-comment" method="post" action="https://api.staticman.net/v2/entry/hendrixjoseph/hendrixjoseph.github.io/master/comments">
   <input name="options[redirect]" type="hidden" value="{{ site.url }}{{ page.url }}">
   <input name="options[slug]" type="hidden" value="{{ page.slug }}">
