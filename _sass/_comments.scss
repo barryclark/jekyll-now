@@ -17,7 +17,17 @@
     display: block; 
   }
   
+  label {
+    margin: 0.5em
+  }
+  
   .comment-body textarea {
     width: 100%
-  }  
+  }
+  
+  label input {
+    max-width: 25em;
+    width: 40%;
+    min-width: 10em;
+  }
 }
