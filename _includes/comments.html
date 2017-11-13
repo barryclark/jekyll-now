@@ -1,5 +1,6 @@
 {% if site.data.comments[page.slug] %}
   {% assign comments = site.data.comments[page.slug] | sort %}
+  {{ comment }}
   {% for comment in comments %}
   <article id="comment-{{ comment[1].date }}" class="js-comment comment" itemprop="comment" itemscope itemtype="http://schema.org/Comment">
   <div class="comment-content-wrapper">
