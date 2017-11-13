@@ -1,5 +1,5 @@
 .comment-author {
-  margin: 0;
+  margin: 0.5em 0 0 0;
 }
 
 .comment-date a {
@@ -10,4 +10,14 @@
 
 .comment-body {
 
+}
+
+#post-new-comment {
+  label textarea, label input, button {
+    display: block; 
+  }
+  
+  .comment-body textarea {
+    width: 100%
+  }  
 }
