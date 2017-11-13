@@ -1,17 +1,17 @@
 {% if site.data.comments[page.slug] %}
   {% assign comments = site.data.comments[page.slug] | sort %}
   {% for comment in comments %}
-  <article id="comment-{{ comment.date }}" class="js-comment comment" itemprop="comment" itemscope itemtype="http://schema.org/Comment">
-  <div class="comment__content-wrapper">
-    <h3 class="comment__author" itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <span itemprop="name">{{ comment.name }}</span>
+  <article id="comment-{{ comment[1].date }}" class="js-comment comment" itemprop="comment" itemscope itemtype="http://schema.org/Comment">
+  <div class="comment-content-wrapper">
+    <h3 class="comment-author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <span itemprop="name">{{ comment[1].name }}</span>
     </h3>
-    <div class="comment-{{ comment.date }}">
-      <a href="#comment-{{ comment.date }}" itemprop="url">
-      <time datetime="{{ comment.date }}" itemprop="datePublished">{{ comment.date }}</time>
+    <div class="comment-{{ comment[1].date }}">
+      <a href="#comment-{{ comment[1].date }}" itemprop="url">
+      <time datetime="{{ comment[1].date }}" itemprop="datePublished">{{ comment[1].date }}</time>
       </a>
     </div>
-    <div itemprop="text"><p>{{ comment.message }}</p></div>
+    <div itemprop="text"><p>{{ comment[1].message }}</p></div>
   </div>
   </article>
   {% endfor %}
