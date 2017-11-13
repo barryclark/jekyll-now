@@ -1,10 +1,28 @@
+{% if site.data.comments[page.slug] %}
+  {% assign comments = site.data.comments[page.slug] | sort %}
+  {% for comment in comments %}
+  <article id="comment-{{ comment.date }}" class="js-comment comment" itemprop="comment" itemscope itemtype="http://schema.org/Comment">
+  <div class="comment__content-wrapper">
+    <h3 class="comment__author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <span itemprop="name">{{ comment.name }}</span>
+    </h3>
+    <div class="comment-{{ comment.date }}">
+      <a href="#comment-{{ comment.date }}" itemprop="url">
+      <time datetime="{{ comment.date }}" itemprop="datePublished">{{ comment.date }}</time>
+      </a>
+    </div>
+    <div itemprop="text"><p>{{ comment.message }}</p></div>
+  </div>
+  </article>
+  {% endfor %}
+{% endif %}
+
 <form id="post-new-comment" method="post" action="https://api.staticman.net/v2/entry/hendrixjoseph/hendrixjoseph.github.io/master/comments">
   <input name="options[redirect]" type="hidden" value="{{ site.url }}{{ page.url }}">
-  <!-- e.g. "2016-01-02-this-is-a-post" -->
   <input name="options[slug]" type="hidden" value="{{ page.slug }}">
   <label><input name="fields[name]" type="text">Name</label>
+  <label><input name="fields[url]" type="text">URL</label>
   <label><input name="fields[email]" type="email">E-mail</label>
-  <label><textarea name="fields[message]"></textarea>Message</label>
-  
+  <label><textarea name="fields[message]"></textarea>Message</label>  
   <button type="submit">Go!</button>
 </form>
