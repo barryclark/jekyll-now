@@ -1,8 +1,8 @@
-I use Ports-and-Adapters to abstract away my application's interactions with external system.
+I use Ports-and-Adapters to abstract away my application's interactions with external systems.
+I bend the dependency's interface to the shape that I want for my domain.
 This makes it easier to think about my code and to unit test it.
-I can bend the dependency's interface to the shape that I want for my domain.
 
-That might look like:
+This kind of interface might look something like:
 
 	IUserSettings
 		Settings Get()
@@ -13,9 +13,11 @@ That might look like:
 			jsonText = ReadTextFile('~/.myapp.json')
 			return JsonDeserialize(jsonText)
 
-In distributed systems I might have code running in two systems.
-For example, maybe there is a security restriction that forces certain code to run on a certain computer.
-This is a lot like talking to an external system, except that I fully control the interface and can make it look however I want. 
+Now imagine a distribute system, where I have code running on multiple computers.
+For example, maybe there is a security restriction that forces certain code to run on a certain computer, while some business logic runs on another computer.
+This is a lot like talking to an external system, except that I fully control the interface and can make it look however I want.
+I don't need the same kind of adapting.
+But I do want to abstract away the remote communication, and I don't want to deal with remoting when testing the business rules.
 If both sides are implemented using the same technology, I use this trick or organize and test them in a convenient way. 
 
 1. Define the interface I wish I had.
