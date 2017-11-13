@@ -28,7 +28,7 @@ If both sides are implemented using the same technology, I use this trick or org
 IFoo
 	Bar()
 
-class Manager(IFoo foo)
+class ...(IFoo foo)
 	DoWork()
 		foo.Bar()
 
@@ -42,8 +42,8 @@ manager.DoWork()
 Assert(Foo.Bar did the right thing)
 ```
 
-5. Write a transport for that interface.
-6. Test the transport. The question is "if I send in message X, does message X pop out on the other side?". There's no business logic, no conditionals to test. 
+4. Write a transport for that interface.
+5. Test the transport. The question is "if I send in message X, does message X pop out on the other side?". There's no business logic, no conditionals to test. 
 
 ```
 class FooToHttp(IPAddress ipAddress) : IFoo
@@ -67,11 +67,11 @@ Assert(loggingFoo got a call to Bar())
 7. In production, wire it all up together:
 
 ```
-// System 1
+// Computer 1
 manager = new Manager(new FooToHttp(system2ipAddress))
 manager.DoWork()
 
-// System 2
+// Computer 2
 new HttpServer(new HttpToFoo(new Foo()))
 ```
 
