@@ -9,7 +9,7 @@
     </h3>
     <div class="comment-{{ comment[1].date }}">
       <a href="#comment-{{ comment[1].date }}" itemprop="url">
-      <time datetime="{{ comment[1].date }}" itemprop="datePublished">{{ comment[1].date }}</time>
+      <time datetime="{{ comment[1].date }}" itemprop="datePublished">{{ comment[1].date | date: '%B %d, %Y' }}</time>
       </a>
     </div>
     <div itemprop="text"><p>{{ comment[1].message }}</p></div>
