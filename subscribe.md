@@ -8,5 +8,5 @@ permalink: /subscribe/
   Your email: <input type='text' name='btr_email' /><br />
   <input type='hidden' name='btr_url' value='http://jay.bazuzi.com/feed.xml' />
   <input type='hidden' name='schedule_type' value='0' />
-  <input type='submit' value='Subscribe via email' />
+  <input type='submit' value='Go!' />
 </form>
