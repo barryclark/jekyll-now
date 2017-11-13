@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "[Video] [Slides] [Aug 2017] Persistent storage for Docker - Microservices London meetup"
+title: "[Video] [Slides] [Aug 2017] Persistent storage for Docker - London μServices (Microservices) User Group"
 ---
 
  <iframe src="https://player.vimeo.com/video/228229016" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-I gave a talk at the Microservices meetup on "Persistent storage for Docker - which solution and why?" on 2 August, 2017 in London. My slides are also available here:
+I gave a talk at the London μServices (Microservices) User Group meetup on "Persistent storage for Docker - which solution and why?" on 2 August, 2017 in London. My slides are also available here:
 
 <object data="http://www.oicheryl.com/resources/Persistent Storage in Docker.pdf" type="application/pdf" width="700px" height="700px">
     <embed src="http://www.oicheryl.com/resources/Persistent Storage in Docker.pdf">
