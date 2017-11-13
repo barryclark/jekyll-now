@@ -4,9 +4,9 @@
   <article id="comment-{{ comment[1].date }}" class="js-comment comment" itemprop="comment" itemscope itemtype="http://schema.org/Comment">
   <div class="comment-content-wrapper">
     <h3 class="comment-author" itemprop="author" itemscope itemtype="http://schema.org/Person">
-      {% if comment[1].url %}<a href="comment[1].url">{% endif}
+      {% if comment[1].url %}<a href="comment[1].url">{% endif %}
       <span itemprop="name">{{ comment[1].name }}</span>
-      {% if comment[1].url %}</a>{% endif}
+      {% if comment[1].url %}</a>{% endif %}
     </h3>
     <div class="comment-{{ comment[1].date }}">
       <a href="#comment-{{ comment[1].date }}" itemprop="url">
