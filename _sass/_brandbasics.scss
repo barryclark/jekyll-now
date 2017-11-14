@@ -1,0 +1,113 @@
+
+//
+// VARIABLES
+//
+
+// Colors
+$pink: #FFC8C8;
+$lightgreen: #ADECCF;
+
+// Grays
+$black: #000;
+$darkerGray: #222;
+$darkGray: #333;
+$gray: #666;
+$lightGray: #eee;
+$white: #fff;
+
+
+// Font stacks
+@font-face {
+  font-family: "Avenir Next Regular";
+  src: url("fonts/avenir-next-regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Avenir Next Bold";
+  src: url("fonts/avenir-next-bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Avenir Next Italic";
+  src: url("fonts/avenir-next-italic.ttf") format("truetype");
+}
+
+// Fonts
+$avenirreg: "Avenir Next Regular", sans-serif;
+$avenirbold: "Avenir Next Bold", sans-serif;
+$avenirtalic:  "Avenir Next Italic", sans-serif;
+
+
+// Mobile breakpoints
+
+
+// Defining values
+$small-breakpoint:  640px  !default;
+$medium-breakpoint: 1024px !default;
+$large-breakpoint:  1440px !default;
+$xlarge-breakpoint: 1920px !default;
+
+// Here we define the lower and upper bounds for each media size
+$small-range:   (0, $small-breakpoint) !default; /* 0, 640px */
+$medium-range:  (calc(1 + $small-breakpoint), $medium-breakpoint) !default; /* 641px, 1024px */
+$large-range:   (calc(1 + $medium-breakpoint), $large-breakpoint)  !default; /* 1025px, 1440px */
+$xlarge-range:  (calc(1 + $large-breakpoint), $xlarge-breakpoint) !default; /* 1441px, 1920px */
+$xxlarge-range: (calc(1 + $xlarge-breakpoint), calc(900*$xlarge-breakpoint)) !default; /* 1921px, ... */
+
+$screen:       "only screen" !default;
+$landscape:    "#{$screen} and (orientation: landscape)" !default;
+$portrait:     "#{$screen} and (orientation: portrait)" !default;
+$small-up:     $screen !default;
+$small-only:   "#{$screen} and (max-width: #{$small-breakpoint})" !default;
+
+$medium-up: "#{$screen} and (min-width:(calc(1 + #{$small-breakpoint}))" !default;
+$medium-down: "#{screeen} and (max-wdith: #{$medium-breakpoint})" !default;
+$medium-only: "#{$screen} and (min-width:#{$small-breakpoint}) and (max-width:#{$medium-breakpoint})" !default;
+
+$large-up: "#{$screen} and (min-width:#{$large-breakpoint})" !default;
+$large-only: "#{$screen} and (min-width:(calc(1 + #{$medium-breakpoint})) and (max-width:#{$large-breakpoint})" !default;
+
+$xlarge-up: "#{$screen} and (min-width:#{$xlarge-breakpoint})" !default;
+$xlarge-only: "#{$screen} and (min-width:(calc(1 + #{$large-breakpoint})) and (max-width:#{$xlarge-range})" !default;
+
+$xxlarge-up: "#{$screen} and (min-width:(calc(1 + #{$xlarge-breakpoint})" !default;
+$xxlarge-only: "#{$screen} and (min-width:(calc(1 + #{$xlarge-breakpoint}) and (max-width:calc(900*#{$xlarge-breakpoint}))" !default;
+
+$retina: (
+  "#{$screen} and (-webkit-min-device-pixel-ratio: 2)",
+  "#{$screen} and (min--moz-device-pixel-ratio: 2)",
+  "#{$screen} and (-o-min-device-pixel-ratio: 2/1)",
+  "#{$screen} and (min-device-pixel-ratio: 2)",
+  "#{$screen} and (min-resolution: 192dpi)",
+  "#{$screen} and (min-resolution: 2dppx)"
+);
+
+@mixin small-up {
+  @media #{$small-only} {
+    @content;
+  }
+}
+
+@mixin medium-down {
+  @media #{$medium-down} {
+    @content;
+  }
+}
+
+@mixin medium-only {
+  @media #{$medium-only} {
+    @content;
+  }
+}
+
+@mixin large-only {
+  @media #{$large-only} {
+    @content;
+  }
+}
+
+@mixin xlarge-only {
+  @media #{$xlarge-only} {
+    @content;
+  }
+}

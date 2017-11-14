@@ -1,0 +1,66 @@
+<style> 
+
+#nav_sidebar_guts: {
+grid-template-rows: auto auto auto auto;
+font-family: $avenirbold;
+font-size: 20pt;
+text-align: left;
+text-transform: lowercase;
+color: $darkGray;  
+}
+
+#day: {
+grid-row: 1 / span 1;
+}
+
+#nav_what_what: {
+grid-row: 2 / span 1;
+}
+
+#nav_more_info: {
+grid-row: 3 / span 1;
+}
+
+#nav_link_list: {
+grid-row: 4 / span 1;
+}
+
+</style>
+
+
+<!-- 'sidebar' -->
+<div class="column d-flex absolute xs-12 sm-12 md-3 lg-12 xl-3"> 
+
+<!-- 'nav guts' >>>>>>>>>> replace with {% include nav.html %} -->
+ <div id="nav_sidebar_guts" class="column d-flex xs-12 sm-12 md-12 lg-12 xl-12"> 
+
+      <!-- 'personalized welcome message' -->
+      <div id="day" class="pt-12-sm pt-12-md pt-12-lg pt-12-xl pl-12-sm pl-12-md pl-12-lg pl-12-xl">
+      hi
+      </div>
+      <!-- end 'personalized welcome message' -->
+
+      <!-- 'my name is/what i do message' -->
+      <div id="nav_what_what" class="pt-12-sm pt-12-md pt-12-lg pt-12-xl pl-12-sm pl-12-md pl-12-lg pl-12-xl">
+      my name is andrew erdle and i help build brands and market products.
+      </div>
+      <!-- end 'my name is/what i do message' -->
+         
+      <!-- 'a bit more about what i do message' -->          
+      <div id="nav_more_info" class="pt-12-sm pt-12-md pt-12-lg pt-12-xl pl-12-sm pl-12-md pl-12-lg pl-12-xl">
+      sometimes it means strategy. sometimes it's means new products. sometimes it means instagram.
+      </div>
+      <!-- end 'a bit more about what i do message' -->
+
+      <!-- 'link list' --> 
+      <div id="nav_link_list" class="pt-12-sm pt-12-md pt-12-lg pt-12-xl pl-12-sm pl-12-md pl-12-lg pl-12-xl">
+      <a href="{{%20site.baseurl%20}}/about">About</a><br>
+      <a href="{{%20site.baseurl%20}}/press">Press</a><br>
+      <a href="{{%20site.baseurl%20}}/contact">Contact</a><br>
+      </div> 
+      <!-- end 'link list' -->
+
+</div>
+<!--end 'nav guts' -->
+</div>
+<!--end 'sidebar' -->
