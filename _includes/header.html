@@ -1,0 +1,13 @@
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+
+  <link href="/style.css" rel="stylesheet" type="text/css">
+  <link href="/normalize.css" rel="stylesheet" type="text/css">
+  <script>
+  document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");
+  </script>
+  <link href="{{ site.baseurl }}/feed.xml" rel="alternate" title="{{ site.name }} - {{ site.description }}" type="application/rss+xml">
+      
+</head>
