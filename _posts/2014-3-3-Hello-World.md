@@ -2,7 +2,7 @@
 layout: post
 title: Hello World!
 date: 2017-11-13
-published: false
+published: true
 ---
 
 Hello! This is my first blog post.
