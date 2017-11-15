@@ -17,7 +17,7 @@ First, I check if the opening value of the S&P 100 index fund is higher or equal
 I accomplished this in Microsoft Excel. I set up Excel's IF function in a similar fashion to the following: `=IF(A3>=A2,B2,C2/A3)`. A more pseudocode variant of this is:
 
 ```
-If PRICE &ge; PRICE YESTERDAY
+If PRICE ≥ PRICE YESTERDAY
     HOLD // Shares = Yesterday's Shares
 Else
     SELL // Shares = Yesterday's Value / Today's Price
