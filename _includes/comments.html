@@ -1,7 +1,7 @@
 <div class="comments">
 {% if site.data.comments[page.slug] %}
   {% assign comments = site.data.comments[page.slug] | sort %}
-  <h3>{{ comments | size }} comments for {{ page.title }}</h3>
+  <h3>{{ comments | pluralize: 'comment', 'comments' }} for {{ page.title }}</h3>
   {% for comment in comments %}
   <article id="comment-{{ comment[1].date }}" class="comment" itemprop="comment" itemscope itemtype="http://schema.org/Comment">
     <h3 class="comment-author" itemprop="author" itemscope itemtype="http://schema.org/Person">
