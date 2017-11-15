@@ -3,7 +3,7 @@ layout: post
 title: Investing in the Stock Market With a Time Machine
 tags: [technology]
 keywords: [microsoft excel, excel, stock market, stock, market, investment, invest, investing, time machine, time travel]
-image: /images/2016-chart.png
+image: /images/stock-magic/2016-chart.png
 ---
 
 One of the most challenging aspects of investing is lack of foreknowledge or future knowledge - we simply do not know what the performance of a stock or index fund will be. But what if we could print out a list of opening values of a stock and then take a  time machine backward in time and invest with foreknowledge? Would we be able to make much more money than otherwise possible?
