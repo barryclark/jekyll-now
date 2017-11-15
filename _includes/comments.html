@@ -14,7 +14,7 @@
       <time datetime="{{ comment[1].date | date_to_xmlschema }}" itemprop="datePublished">{{ comment[1].date | date: '%B %d, %Y %r' }}</time>
       </a>
     </div>
-    <div class="comment-body" itemprop="text"><p>{{ comment[1].message }}</p></div>
+    <div class="comment-body" itemprop="text"><p>{{ comment[1].message | markdownify }}</p></div>
   </article>
   {% endfor %}
 {% endif %}
