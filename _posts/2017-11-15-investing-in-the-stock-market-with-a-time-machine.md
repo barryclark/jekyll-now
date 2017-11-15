@@ -10,9 +10,15 @@ One of the most challenging aspects of investing is lack of foreknowledge or fut
 
 *If this blog post interests you, then check out [Is a Time Series Correlated with its Future Self?](http://hendrixjoseph.github.io/is-a-time-series-correlated-with-its-future-self/)*
 
+###  Data
+
+I used the daily opening values for the S&P 100 for three different time periods (discussed later). I got the data from [Yahoo Finance](https://finance.yahoo.com/) under the stock ticker [OEX](https://finance.yahoo.com/quote/%5EOEX?p=%5EOEX).
+
 ### Method
 
-First, I check if the opening value of the S&P 100 index fund is higher or equal to the previous day's opening value. If so, then I hold. If not, I sell. This ensures that the number of shares and value can never go down - they'll either stay the same or go up.
+Day one I invest a fixed amount of money - $1000 in the experiments below. I chose this amount of money because it will show up better against the stock price in the charts and the math is easy to figure out the percent increase or decrease
+
+Then, I check if the opening value of the S&P 100 index fund is higher or equal to the previous day's opening value. If so, then I hold. If not, I sell. This ensures that the number of shares and value can never go down - they'll either stay the same or go up.
 
 I accomplished this in Microsoft Excel. I set up Excel's IF function in a similar fashion to the following: `=IF(A3>=A2,B2,C2/A3)`. A more pseudocode variant of this is:
 
@@ -37,7 +43,7 @@ $100.00  | 1.040816327 |  $104.08
 
 ### Experiments
 
-I tried this with three different time periods: last month (October 2017), last year (2016), and 2008. I chose last year because it was a good year for the stock market, whereas I chose 2008 because it was the last well-known crash. For each test, I started with an initial investment of $1000. I chose $1000 for a couple of reasons: it will show up better against the stock price in the charts and the math is easy to figure out the percent increase or decrease
+I tried this with three different time periods: last month (October 2017), last year (2016), and 2008. I chose last year because it was a good year for the stock market, whereas I chose 2008 because it was the last well-known crash. For each test, I started with an initial investment of $1000. Again, I chose $1000 for a couple of reasons: it will show up better against the stock price in the charts and the math is easy to figure out the percent increase or decrease
 
 ### Results
 
