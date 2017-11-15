@@ -18,7 +18,7 @@ published: true
 
 <table>
   <tr>
-    <td>Starting point:</td>
+   <p class="oblique"> <td>Starting point:</p>
     <td>Talking and creating a scratch game using code.</td>
   </tr>
   <tr>
