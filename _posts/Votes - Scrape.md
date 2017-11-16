@@ -1,3 +1,8 @@
+---
+layout: post
+title: Voting Capstone Web Scraping
+---
+
 {
  "cells": [
   {
