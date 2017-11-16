@@ -14,7 +14,7 @@ About
 ====
 Project developed in the Hackathon of Raspberry Pi and Java, organized by the team [Sou Java](https://github.com/soujava) at Campus Party Brasil 7.
 The of Rasplauncher idea is to be a small launcher 😅( like a small robotic arm) that throws objects. Control is done through an Android application.
-[Project repository :octocat:](https://github.com/diegocarloslima/RaspLauncher)
+![](https://raw.githubusercontent.com/ezefranca/ezefranca.github.io/master/_/_/_/_/_/_/_/_/_/_/_/_/_/_/nothing/_www/photos/octo.png)[Project repository](https://github.com/diegocarloslima/RaspLauncher)
 
 Demo
 ====
@@ -22,9 +22,9 @@ Demo
 
 Team
 ====
-:octocat:[diegocarloslima](https://github.com/diegocarloslima)  
-:octocat:[ezefranca](https://github.com/ezefranca)  
-:octocat:[pondaco](https://github.com/pondaco)  
+![](https://raw.githubusercontent.com/ezefranca/ezefranca.github.io/master/_/_/_/_/_/_/_/_/_/_/_/_/_/_/nothing/_www/photos/octo.png)[diegocarloslima](https://github.com/diegocarloslima)  
+![](https://raw.githubusercontent.com/ezefranca/ezefranca.github.io/master/_/_/_/_/_/_/_/_/_/_/_/_/_/_/nothing/_www/photos/octo.png)[ezefranca](https://github.com/ezefranca)  
+![](https://raw.githubusercontent.com/ezefranca/ezefranca.github.io/master/_/_/_/_/_/_/_/_/_/_/_/_/_/_/nothing/_www/photos/octo.png)[pondaco](https://github.com/pondaco)  
 <img class="img img-responsive" src="https://raw.githubusercontent.com/ezefranca/ezefranca.github.io/master/_/_/_/_/_/_/_/_/_/_/_/_/_/_/nothing/_www/photos/rasplauncher_team.jpg" alt="Hackahtonvencedores" />
 
 Hackathon Flyer
