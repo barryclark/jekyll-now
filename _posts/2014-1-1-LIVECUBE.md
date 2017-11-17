@@ -14,13 +14,10 @@ Press
 ====
 (Portuguese)
 
-- ![Jovem Pan](http://blog.jovempan.uol.com.br/technews/noticias/maratona-hacker-premia-ideias-inovadoras-para-a-industria/)
-
-- ![Fiesp](http://www.fiesp.com.br/noticias/depois-de-maratona-de-24h-hackathon-divulga-vencedores-de-sua-terceira-edicao/)
-
-- ![Hackathons Brasil](https://hackathonbrasil.com.br/home/blog/magalhaes-junior-explica-como-a-equipe-polimoto-desenvolveu-um-dos-aplicativos-vencedores-do-hackathonfiesp/)
-
-- ![Programa Ideias e Invençoes (TV)](https://youtu.be/L41iN9mmlk4?t=19m16s)
+- [Jovem Pan](http://blog.jovempan.uol.com.br/technews/noticias/maratona-hacker-premia-ideias-inovadoras-para-a-industria/)
+- [Fiesp](http://www.fiesp.com.br/noticias/depois-de-maratona-de-24h-hackathon-divulga-vencedores-de-sua-terceira-edicao/)
+- [Hackathons Brasil](https://hackathonbrasil.com.br/home/blog/magalhaes-junior-explica-como-a-equipe-polimoto-desenvolveu-um-dos-aplicativos-vencedores-do-hackathonfiesp/)
+- [Programa Ideias e Invençoes (TV)](https://youtu.be/L41iN9mmlk4?t=19m16s)
 
 
 About
