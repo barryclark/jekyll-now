@@ -18,8 +18,8 @@
       <time datetime="{{ comment[1].date | date_to_xmlschema }}" itemprop="datePublished">{{ comment[1].date | date: '%B %d, %Y %r' }}</time>
       </a>
     </div>
-    <div class="comment-body" itemprop="text"><p>{{ comment[1].message | markdownify }}</p></div>
-    </div>{% if comment[1].replyto %}</div>{% endif %}
+    <div class="comment-body" itemprop="text">{{ comment[1].message | markdownify }}</div>
+    {% if comment[1].replyto %}</div>{% endif %}
   {% if forloop.last %}{% include comment-reply-to.html replyto=comment %}</article>{% endif %}
   {% endfor %}
 {% endif %}
