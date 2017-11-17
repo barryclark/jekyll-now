@@ -1,10 +1,9 @@
 ---
 layout: post
-title: LIVECUBE
+title: LiveCube
 ---
 
-#### [2014 - LIVECUBE]
-##### LIVECUBE | Hackathon 🥇
+##### LiveCube | Hackathon 🥇
 
 LiveCube
 ====

@@ -3,7 +3,6 @@ layout: post
 title: Magrela 🚲
 ---
 
-#### [2016 - Magrela] 
 ##### Magrela | Hackathon 🥈
 
 Press: (portuguese)
