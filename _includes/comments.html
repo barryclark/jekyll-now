@@ -25,7 +25,7 @@
 {% endif %}
 
 <h3>Leave a Reply</h3>
-<form id="post-new-comment" method="post" action="https://api.staticman.net/v2/entry/hendrixjoseph/hendrixjoseph.github.io/master/comments">
+<form id="post-new-comment" class="new-comment" method="post" action="https://api.staticman.net/v2/entry/hendrixjoseph/hendrixjoseph.github.io/master/comments">
   <input name="options[redirect]" type="hidden" value="{{ site.url }}{{ page.url }}">
   <input name="options[slug]" type="hidden" value="{% if include.slug %}{{ include.slug }}{% else %}{{ page.slug }}{% endif %}">
   <label class="comment-body">Comment (required)<textarea name="fields[message]" required="required" aria-required="true"></textarea></label>  
