@@ -19,4 +19,4 @@ title: Voter Behavior
   
   I will be using linear regression models and time series regression on the voting data incorporating the results fo the natural langage processing. 
 
-  ![an image alt text]({{ site.baseurl }}/images/2004_dem_scatter.png "2004 Democratic Votes"
+  ![an image alt text](/images/2004_dem_scatter.png "2004 Democratic Votes")
