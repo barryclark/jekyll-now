@@ -1,7 +1,7 @@
 <div class="comments">
 {% if site.data.comments[page.slug] %}
   {% assign comments = site.data.comments[page.slug] | sort %}
-  <h3>{{ comments | size | pluralize: 'comment', 'comments' }} for {{ page.title }}</h3>
+  <h3>{{ comments.size | pluralize: 'comment', 'comments' }} for {{ page.title }}</h3>
   {% for comment in comments %}
   <article id="comment-{{ comment[1].date }}" class="comment" itemprop="comment" itemscope itemtype="http://schema.org/Comment">
     <div><img src="{% if comment[1].email == "e591f3aa7c8cbd7dd9e3389958949ed3" %}https://avatars.githubusercontent.com/u/12754677?v=3{% else %}https://www.gravatar.com/avatar/{{ comment[1].email }}{% endif %}" style="float: left; height: 80px; width: 80px; margin-right: 10px;"/>
