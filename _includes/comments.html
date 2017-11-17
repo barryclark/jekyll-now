@@ -17,6 +17,19 @@
       </a>
     </div>
     <div class="comment-body" itemprop="text"><p>{{ comment[1].message | markdownify }}</p></div>
+    <h3>Leave a Reply</h3>
+      <form id="post-new-comment" method="post" action="https://api.staticman.net/v2/entry/hendrixjoseph/hendrixjoseph.github.io/master/comments">
+        <input name="options[redirect]" type="hidden" value="{{ site.url }}{{ page.url }}">
+        <input name="options[slug]" type="hidden" value="{% if include.slug %}{{ include.slug }}{% else %}{{ page.slug }}{% endif %}">
+        <input name="fields[replyto]" type="hidden" value="{{ comment[1].date }}">
+        <label class="comment-body">Comment (required)<textarea name="fields[message]" required="required" aria-required="true"></textarea></label>  
+        <label class="comment-author">Name (required)<input name="fields[name]" id="name" required="required" aria-required="true" type="text"></label>
+        <label class="comment-url">Email (required)<input name="fields[email]" id="email" required="required" aria-required="true" type="email"></label>
+        <label class="comment-email">Website (optional)<input name="fields[url]" id="url" type="url"></label>  
+        <button type="submit">Post comment</button>
+        <em>Note that comments won't appear until approved.</em>
+      </form>
+    </div>
   </article>
   {% endfor %}
 {% endif %}
