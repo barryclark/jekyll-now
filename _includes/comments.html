@@ -6,7 +6,7 @@
   {% unless comment[1].replyto %}
     {% unless forloop.first %}{% include comment-reply-to.html replyto=comment %}</article>{% endunless %}
     <article id="comment-{{ comment[1].date }}" class="comment" itemprop="comment" itemscope itemtype="http://schema.org/Comment">{% endunless %}
-    {% if comment[1].replyto %}<div style="margin-left: 20px;">{% endif %}<div>
+    <div{% if comment[1].replyto %} style="margin-left: 20px;"{% endif %}>
       <img src="{% if comment[1].email == "e591f3aa7c8cbd7dd9e3389958949ed3" %}https://avatars.githubusercontent.com/u/12754677?v=3{% else %}https://www.gravatar.com/avatar/{{ comment[1].email }}{% endif %}" style="float: left; height: 80px; width: 80px; margin-right: 10px;"/>
       <h3 class="comment-author" itemprop="author" itemscope itemtype="http://schema.org/Person">
         {% if comment[1].url %}<a rel="nofollow" href="{{ comment[1].url }}">{% endif %}
@@ -20,7 +20,7 @@
       </a>
     </div>
     <div class="comment-body" itemprop="text"><p>{{ comment[1].message | markdownify }}</p></div>
-    </div>{% if comment[1].replyto %}</div>{% endif %}
+    </div>
   {% if forloop.last %}{% include comment-reply-to.html replyto=comment %}</article>{% endif %}
   {% endfor %}
 {% endif %}
