@@ -3,7 +3,8 @@
   {% assign comments = site.data.comments[page.slug] | sort %}
   <h3>{{ comments | size }} comment{% if comments.size > 1 %}s{% endif %} for <em>{{ page.title }}</em></h3>
   {% for comment in comments %}
-  <article id="comment-{{ comment[1].date }}" class="comment" itemprop="comment" itemscope itemtype="http://schema.org/Comment">
+  {% unless comment[i].replyto %}{% unless forloop.first %}</article>{% endunless %}
+  <article id="comment-{{ comment[1].date }}" class="comment" itemprop="comment" itemscope itemtype="http://schema.org/Comment">{% endunless %}
     <div><img src="{% if comment[1].email == "e591f3aa7c8cbd7dd9e3389958949ed3" %}https://avatars.githubusercontent.com/u/12754677?v=3{% else %}https://www.gravatar.com/avatar/{{ comment[1].email }}{% endif %}" style="float: left; height: 80px; width: 80px; margin-right: 10px;"/>
     <h3 class="comment-author" itemprop="author" itemscope itemtype="http://schema.org/Person">
       {% if comment[1].url %}<a rel="nofollow" href="{{ comment[1].url }}">{% endif %}
@@ -30,7 +31,7 @@
         <em>Note that comments won't appear until approved.</em>
       </form>
     </div>
-  </article>
+  {% if forloop.last %}</article>{% endif %}
   {% endfor %}
 {% endif %}
 
