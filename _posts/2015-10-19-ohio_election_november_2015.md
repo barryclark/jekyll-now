@@ -23,7 +23,7 @@ This is just some general information and links about the issues in Ohio, or, mo
 #### Issue 2 : Proposal to prohibit any petitioner from using the Ohio Constitution to grant a monopoly, oligopoly, or cartel
 
 * [This issue on ballotpedia.org](http://ballotpedia.org/Ohio_Initiated_Monopolies_Amendment,_Issue_2_%282015%29)
-* [Libertarian Party of Ohio says no](https://www.lpo.org/elections/state-ballot-issues/702-lpo-recommends-no-vote-on-ballot-issue-2)
+* [Libertarian Party of Ohio says no](https://web.archive.org/web/20160410192947/https://www.lpo.org/elections/state-ballot-issues/702-lpo-recommends-no-vote-on-ballot-issue-2)
 * [Ohio Green Party says no](https://web.archive.org/web/20151009032050/http://www.ohiogreens.org/story/ohio-green-party-withdraws-support-issue-2)
 * [Ohio Green Party previously said yes](https://web.archive.org/web/20151007041244/http://www.ohiogreens.org/story/green-party-ohio-announces-recommendations-ohio-statewide-ballot-issues)
 
