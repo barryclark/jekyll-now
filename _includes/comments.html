@@ -4,7 +4,7 @@
   <h3>{{ comments | size }} comment{% if comments.size > 1 %}s{% endif %} for <em>{{ page.title }}</em></h3>
   {% for comment in comments %}
   {% unless comment[1].replyto %}
-    {% unless forloop.first %}{% include comment-reply-to.html replydate="555" replyto="replyto" %}</article>{% endunless %}
+    {% unless forloop.first %}{% include comment-reply-to.html replydate=comment[1].date replyto="replyto" %}</article>{% endunless %}
     <article id="comment-{{ comment[1].date }}" class="comment" itemprop="comment" itemscope itemtype="http://schema.org/Comment">{% endunless %}
     <div>
       <img src="{% if comment[1].email == "e591f3aa7c8cbd7dd9e3389958949ed3" %}https://avatars.githubusercontent.com/u/12754677?v=3{% else %}https://www.gravatar.com/avatar/{{ comment[1].email }}{% endif %}" style="float: left; height: 80px; width: 80px; margin-right: 10px;"/>
@@ -21,7 +21,7 @@
     </div>
     <div class="comment-body" itemprop="text"><p>{{ comment[1].message | markdownify }}</p></div>
     </div>
-  {% if forloop.last %}{% include comment-reply-to.html replydate="555" replyto="replyto" %}</article>{% endif %}
+  {% if forloop.last %}{% include comment-reply-to.html replydate=comment[1].date replyto="replyto" %}</article>{% endif %}
   {% endfor %}
 {% endif %}
 
