@@ -21,7 +21,7 @@ comments:
   # (*) REQUIRED
   #
   # Destination path (filename) for the data files. Accepts placeholders.
-  filename: "entry{field.replyto}{@timestamp}"
+  filename: "entry{fields.replyto}{@timestamp}"
 
   # The format of the generated data files. Accepted values are "json", "yaml"
   # or "frontmatter"
