@@ -3,7 +3,7 @@
   {% assign comments = site.data.comments[page.slug] | sort %}
   <h3>{{ comments | size }} comment{% if comments.size > 1 %}s{% endif %} for <em>{{ page.title }}</em></h3>
   {% for comment in comments %}
-  {% unless comment[i].replyto %}{% unless forloop.first %}</article>{% endunless %}
+  {% unless comment[1].replyto %}{% unless forloop.first %}</article>{% endunless %}
   <article id="comment-{{ comment[1].date }}" class="comment" itemprop="comment" itemscope itemtype="http://schema.org/Comment">{% endunless %}
     <div><img src="{% if comment[1].email == "e591f3aa7c8cbd7dd9e3389958949ed3" %}https://avatars.githubusercontent.com/u/12754677?v=3{% else %}https://www.gravatar.com/avatar/{{ comment[1].email }}{% endif %}" style="float: left; height: 80px; width: 80px; margin-right: 10px;"/>
     <h3 class="comment-author" itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -18,7 +18,7 @@
       </a>
     </div>
     <div class="comment-body" itemprop="text"><p>{{ comment[1].message | markdownify }}</p></div>
-    {% unless comment[i].replyto %}<h3>Leave a Reply</h3>
+    {% unless comment[1].replyto %}<h3>Leave a Reply</h3>
       <form id="post-new-comment" method="post" action="https://api.staticman.net/v2/entry/hendrixjoseph/hendrixjoseph.github.io/master/comments" style="display: none;">
         <input name="options[redirect]" type="hidden" value="{{ site.url }}{{ page.url }}">
         <input name="options[slug]" type="hidden" value="{% if include.slug %}{{ include.slug }}{% else %}{{ page.slug }}{% endif %}">
