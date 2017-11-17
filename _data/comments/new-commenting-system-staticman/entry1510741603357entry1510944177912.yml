@@ -3,7 +3,7 @@ replyto: entry1510741603357
 message: >-
   I added a reply feature - it only goes one deep. Also, Staticman supports a
   subscribe feature, but you have to have (or rather, I have to have) a
-  [Mailgun](https://www.mailgun.com/) account, but I don't want to pay for it.<br /><br />Oh, and I made our last two comments manually :)
+  [Mailgun](https://www.mailgun.com/) account, but I don't want to pay for it.<br /><br />Oh, and I made our last two comments into replies manually :)
 name: JoeHx
 email: e591f3aa7c8cbd7dd9e3389958949ed3
 url: 'https://hendrixjoseph.github.io'
