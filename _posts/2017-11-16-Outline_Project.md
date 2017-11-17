@@ -17,4 +17,6 @@ title: Voter Behavior
   
   The goal of this project is to explain how campaign rhetoric is reflected in voting behavior. This is based on the thesis that candidates focus on a topic influences voting behavior in counties with indicators relatd to the topic. In other words, campaign rhetoric affects the decision to vote.
   
-  I will be using linear regression models and time series regression on the voting data incorporating the results fo the natural langage processing.  
+  I will be using linear regression models and time series regression on the voting data incorporating the results fo the natural langage processing. 
+
+  ![an image alt text]({{ site.baseurl }}/images/2004_dem_scatter.png "2004 Democratic Votes"
