@@ -9,7 +9,7 @@ One of Trump's most (in)famous campaign promises is the several hundred mile lon
 
 ## 1.	Trump's Plan: Strong arm Mexico with our trade deficit.
 
-According to [Trump's website](https://www.donaldjtrump.com/positions/pay-for-the-wall), he'll threaten to make a rule ([based on a section of the Patriot Act](https://www.gpo.gov/fdsys/pkg/PLAW-107publ56/pdf/PLAW-107publ56.pdf)) that would prevent some Mexicans from wiring money to family back home to Mexico. This rule, according to Trump's website, would cost Mexico "approximately $24 billion a year." Trump seems to think the wall will only cost at most $10 billion. He simply asks that "Mexico...make a one-time payment of $5-10 billion to ensure that $24 billion continues to flow into their country year after year." Will Mexico call Trump's bluff on the proposed rule? Is it a bluff?
+According to [Trump's website](https://web.archive.org/web/20160906003643/https://www.donaldjtrump.com/positions/pay-for-the-wall), he'll threaten to make a rule ([based on a section of the Patriot Act](https://www.gpo.gov/fdsys/pkg/PLAW-107publ56/pdf/PLAW-107publ56.pdf)) that would prevent some Mexicans from wiring money to family back home to Mexico. This rule, according to Trump's website, would cost Mexico "approximately $24 billion a year." Trump seems to think the wall will only cost at most $10 billion. He simply asks that "Mexico...make a one-time payment of $5-10 billion to ensure that $24 billion continues to flow into their country year after year." Will Mexico call Trump's bluff on the proposed rule? Is it a bluff?
 
 Will the wall cost that little? I mean, $10 billion, or $10,000,000,000.00, seems a lot to me. There's over 2,000 miles of border, 600+ miles that are land borders.
 
