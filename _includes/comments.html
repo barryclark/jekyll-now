@@ -21,7 +21,7 @@
     </div>
     <div class="comment-body" itemprop="text"><p>{{ comment[1].message | markdownify }}</p></div>
     </div>
-  {% if forloop.last %}{% unless comment[1].replyto %}{% endunless %}</article>{% endif %}
+  {% if forloop.last %}{% unless comment[1].replyto %}{% include comment-reply-to.html replydate=comment[1].date replyto=comment[0] %}{% endunless %}</article>{% endif %}
   {% endfor %}
 {% endif %}
 
