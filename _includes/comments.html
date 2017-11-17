@@ -18,7 +18,7 @@
     </div>
     <div class="comment-body" itemprop="text"><p>{{ comment[1].message | markdownify }}</p></div>
     <h3>Leave a Reply</h3>
-      <form id="post-new-comment" method="post" action="https://api.staticman.net/v2/entry/hendrixjoseph/hendrixjoseph.github.io/master/comments">
+      <form id="post-new-comment" method="post" action="https://api.staticman.net/v2/entry/hendrixjoseph/hendrixjoseph.github.io/master/comments" style="display: none;">
         <input name="options[redirect]" type="hidden" value="{{ site.url }}{{ page.url }}">
         <input name="options[slug]" type="hidden" value="{% if include.slug %}{{ include.slug }}{% else %}{{ page.slug }}{% endif %}">
         <input name="fields[replyto]" type="hidden" value="{{ comment[0] }}">
