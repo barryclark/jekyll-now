@@ -1,6 +1,6 @@
 ---
-layout: page
-title: About
+layout: contactpage
+title: Contact
 permalink: /about/
 ---
 ### About 
