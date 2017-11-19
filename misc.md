@@ -1,7 +1,5 @@
 ---
-layout: page
+layout: misc
 title: Misc
 permalink: /misc/
 ---
-
-{include talks.html}
