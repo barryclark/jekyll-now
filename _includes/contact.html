@@ -10,9 +10,20 @@
     margin-bottom: 16px; /* Bottom margin */
     resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
 }
+    
+ input[type=email], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
 
 /* Style the submit button with a specific background color etc */
-input[type=submit] {
+button[type=submit] {
     background-color: #4CAF50;
     color: white;
     padding: 12px 20px;
@@ -27,9 +38,9 @@ input[type=submit]:hover {
 }
 </style>
  <form method="POST" action="http://formspree.io/ezequiel.ifsp@gmail.com">
-  <input type="text" name="name">
-  <input type="email" name="email" placeholder="Your email">
-  <textarea name="message" placeholder="Write something.." style="height:200px"></textarea>
+  <input type="text" name="name" placeholder="name">
+  <input type="email" name="email" placeholder="email">
+  <textarea name="message" placeholder="What's up?" style="height:200px"></textarea>
   <button type="submit">Send</button>
   </form>
 
