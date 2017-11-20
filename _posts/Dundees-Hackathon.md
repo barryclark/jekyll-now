@@ -39,6 +39,18 @@ I would make sure I knew specifically what each sponsor purposed as a challenge,
 
 ## Ticketing
 
+Once we had secured the venue and got clearence from the school, health and saftey & security (which had its own set of struggles) we were able to set a capacity limit and release tickets. I threw together a quick application in Laravel — the source for which is available [here](https://github.com/ConorHaining/quackathon) — the purpose was to quicker and easily get all the information we needed.
+
+I have seen a few hackathon use something like Eventbrite, which I personally didn't feel was flexible enough for our needs in this instance so quickly making an application was a better idea. If I had given myself some more time, I'd have extended the website to intergrate some form of CRM like Mailchimp, or even just an email provider like SendGrid ect, only to make the distribution of emails a much less manual process.
+
+I found myself manually taking a database dump, firing it into a spreadsheet and using that to email out to attendees which was quite tedious at times. I was travelling in the run up to the hackathon, and editing that spreadsheet to update it with those who weren't able to attend and replace them with those on our waiting list.
+
 ## On The Day
 
+On the day, everything ran very (thankfully) smoothly. A huge relief after all the planning. The only issue was in the morning, the bakery providing part of our breakfast meal had forgotten about the order but not much would be done.
+
 ## Wrap-up
+
+Hackathon are of huge value to students, I've found them to be a great experience and a fantastic way to to learn something new and greatly improve teamworking and communications. I never expected to be on the other side organising one but I need to stress this was far from a one man show and certainly would never have been possible with the whole committee as well as the School of Computing.
+
+It's been great to have local companies work so closely with us, we are hoping to keep that relationship and are hoping to run some events in the new year.
