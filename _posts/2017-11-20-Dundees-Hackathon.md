@@ -49,6 +49,6 @@ On the day, everything ran very (thankfully) smoothly. A huge relief after all t
 
 ## Wrap-up
 
-Hackathon are of huge value to students. I've found them to be a great experience and a fantastic way to to learn something new and greatly improve team-working and communications skills. I never expected to be on the other side organising one but I need to stress that this was far from a one man show. It certainly would never have been possible with the whole committee as well as the School of Computing.
+Hackathons are of huge value to students. I've found them to be a great experience and a fantastic way to to learn something new and greatly improve team-working and communications skills. I never expected to be on the other side organising one but I need to stress that this was far from a one man show. It certainly would never have been possible with the whole committee as well as the School of Computing.
 
 It's been great to have local companies work so closely with us. We are looking to keep that relationship and are hoping to run some events in the new year.
