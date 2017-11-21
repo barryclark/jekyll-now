@@ -1,6 +1,7 @@
 ---
 layout: post
 title: One Big Go Post
+category: GO
 ---
 
 #This post
