@@ -36,7 +36,7 @@
 .simple article div img,
 #layout-simple:checked ~ #layout-result article div img {
 	height: 254px;
-	margin-bottom: 24px;
+	margin-bottom: 16px;
 	object-fit: cover;
 	width: 100%;
 }
@@ -50,8 +50,8 @@
 	background-color: #000;
 	border-radius: 50%;
 	color: #fff;
-	height: 62px;
-	line-height: 64px;
+	height: 65px;
+	line-height: 65px;
 	padding: 0;
 	width: 62px;
 }
@@ -80,18 +80,18 @@
 .list article div,
 #layout-list:checked ~ #layout-result article div {
 	display: block;
-	height: 160px;
+	height: 200px;
 	margin: 0 0 16px;
 	overflow: hidden;
 }
 .list article div img,
 #layout-list:checked ~ #layout-result article div img {
 	border-radius: 50%;
-	height: 128px;
+	height: 160px;
 	float: left;
 	margin: 0 32px 0 0;
 	object-fit: cover;	
-	width: 128px;
+	width: 160px;
 }
 .list article nav,
 #layout-list:checked ~ #layout-result article nav {
@@ -281,15 +281,13 @@
 .cards article,
 #layout-cards:checked ~ #layout-result article {
 	background-color: #fff;
-	border-color: #fff;
-	border-radius: 2px;
-	box-shadow: 0 1px 2px rgba(0,0,0,.8);
+	border-color: rgba(0,0,0,.09);
 	color: #000;
 	clear: none;
 	display: block;
 	float: left;
-	margin: 0 0.5% 16px;
-	padding: 16px 0 0;
+	margin: 0 0.5% 12px;
+	padding: 12px 0 0;
 	overflow: hidden;
 	width: 23.9999999999%; 
 }
@@ -341,6 +339,7 @@
 .tiles article,
 #layout-tiles:checked ~ #layout-result article {
 	clear: none;
+	border:none;
 	display: block;
 	float: left;
 	height: 256px;
@@ -404,6 +403,7 @@
 .tiles article nav a,
 #layout-tiles:checked ~ #layout-result article nav a {
 	border-color: rgba(255,255,255,.2);
+	border:none;text-decoration:none;
 }
 .tiles article nav a:hover,
 #layout-tiles:checked ~ #layout-result article nav a:hover {
