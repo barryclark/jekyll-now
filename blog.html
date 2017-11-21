@@ -36,7 +36,7 @@ layout: default
 				<h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
         		<div>{{ post.excerpt }}</div>
     			{% if post.img %}
-        			<div><img src="{{ site.baseurl }}{{ post.img }}" class="post-img"></div>
+        			<div><img src="./{{ post.img }}" class="post-img"></div>
     			{% endif %}
       			<nav><a href="{{ site.baseurl }}{{ post.url }}" class="read-more"><b>[+]</b></a></nav>
       		</article>
