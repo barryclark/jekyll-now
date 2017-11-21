@@ -34,12 +34,8 @@ layout: default
     		{% endif %}
       		<article>
 				<h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
-        		<div>
-        		{{ post.excerpt }}
-        		{% if post.img %}
-        		<img src="../{{ post.img }}" class="post-img">
-    			{% endif %}
-    			</div>
+				<strong>Article date & info</strong>
+        		<div>{% if post.img %}<img src="../{{ post.img }}">{% endif %}{{ post.excerpt }}</div>
       			<nav><a href="{{ site.baseurl }}{{ post.url }}" class="read-more"><b>[+]</b></a></nav>
       		</article>
     	</div>
