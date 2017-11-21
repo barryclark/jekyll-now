@@ -8,7 +8,7 @@ layout: default
 	<div id="layout">
 					<nav class="nav-scroll">
 						<div>
-							<label for="layout-simple" title="Simple" id="label-simple">Simple</label>
+							<label for="layout-simple" title="Simple" id="label-simple"><i class="icon-pinterest"></i><br>Simple</label>
 							<label for="layout-list" title="List" id="label-list">List</label>
 							<label for="layout-table" title="Table" id="label-table">Table</label>
 							<label for="layout-gallery" title="Gallery" id="label-gallery">Gallery</label>
@@ -26,15 +26,9 @@ layout: default
 					
   		{% for post in site.posts %}
     	<div id="layout-result">
-    		{% if post.video %}
-    		<section class="ical-front filled soft-grey thin thumb-1">
-    			<h4 class="day icon icon-youtube"></h4>
-				<h4 class="month">Videos</h4>
-			</section>
-    		{% endif %}
       		<article>
 				<h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
-				<strong>Article date & info</strong>
+				<strong>{{ post.info }}</strong>
         		<div>{% if post.img %}<img src="../{{ post.img }}">{% endif %}{{ post.excerpt }}</div>
       			<nav><a href="{{ site.baseurl }}{{ post.url }}" class="read-more"><b>[+]</b></a></nav>
       		</article>
