@@ -1,8 +1,9 @@
 ---
-layout: post-date
-title: Palau Sant Jordi a tope
-day: 25
-month: Desembre
+layout: post
+title: The Bear
+img: "images/image2.jpg"
+post: default
+info: Video Masterclass
 ---
 
 Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
