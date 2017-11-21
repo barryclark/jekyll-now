@@ -223,17 +223,17 @@
 	clear: none;
 	display: block;
 	float: left;
-	margin: 0 0.5% 64px;
+	margin: 0 0.2% 52px;
 	padding: 0;
 	overflow: hidden;
 	text-align: center;
-	width: 23.9999999999%; 
+	width: 33.3333333333%; 
 }
 .gallery article h3,
 #layout-gallery:checked ~ #layout-result article h3 {
-	font-size: 16px;
-	height: 32px;
-	line-height: 32px;
+	font-size: 21px;
+	height: 28px;
+	line-height: 28px;
 	margin: 0;
 	overflow: hidden;
 	text-overflow: ellipsis;
@@ -257,7 +257,7 @@
 .gallery article nav,
 #layout-gallery:checked ~ #layout-result article nav {
 	border-color: transparent;
-	font-size: 16px;
+	font-size: 26px;
 	line-height: 32px;
 	position: absolute;
 	bottom: 0; left: 0;
@@ -297,8 +297,8 @@
 }
 .cards article h3,
 #layout-cards:checked ~ #layout-result article h3 {
-	font-size: 24px;
-	height: 64px;
+	font-size: 21px;
+	height: 42px;
 	line-height: 32px;
 	margin: 0;
 	padding: 0 4px;
@@ -361,6 +361,9 @@
 	position: absolute;
 	top: 0; right: 0; left: 0; bottom: 0;
 }
+.tiles article a,
+#layout-tiles:checked ~ #layout-result article a {color:#fff !important;
+}
 .tiles article h3,
 #layout-tiles:checked ~ #layout-result article h3 {
 	background-color: rgba(0,0,0,.1);
@@ -368,7 +371,6 @@
 	line-height: 32px;
 	padding: 96px 16px;
 	z-index: 9;
-	opacity: .5;
 }
 .tiles article:hover h3,
 #layout-tiles:checked ~ #layout-result article:hover h3 {
@@ -402,8 +404,7 @@
 }
 .tiles article nav a,
 #layout-tiles:checked ~ #layout-result article nav a {
-	border-color: rgba(255,255,255,.2);
-	border:none;text-decoration:none;
+	border:none;text-decoration:none;color:#fff;
 }
 .tiles article nav a:hover,
 #layout-tiles:checked ~ #layout-result article nav a:hover {
