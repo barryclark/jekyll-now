@@ -11,8 +11,8 @@ p, ul {font-size: 18px;line-height: 27px;}
 em hr {border-bottom:thin solid #eee;}	
 em u label, em u a {text-transform:uppercase;background:var(--color-white);color:var(--color-soft);border:2px solid var(--color-grey);color:var(--color-grey);border-radius:40px;width:256px;margin-top:38px; }
 em u label:hover, em u a:hover {border: 2px solid var(--color-blue);color:var(--color-blue); }
-p em {border: var(--one-pixel) solid transparent;font-weight: bold;line-height: 54px;font-size: 21px;padding: 0;text-rendering: optimizeLegibility;}
-section.cover-justify {padding:0 12px 0 12px;text-align: justify;-moz-hyphens:none;-ms-hyphens:none;-webkit-hyphens:none;-o-hyphens:none;hyphens:none;word-wrap:none;}
+p em {border: var(--one-pixel) solid transparent;font-weight: bold;line-height: 24px;font-size: 21px;padding: 0;text-rendering: optimizeLegibility;}
+section.cover-justify p {padding: 6px 18px 0 18px;line-height: 23px;font-size: 15px !important;}
 /* Nav */
 #site-nav { background: var(--color-soft-black) !important;color:var(--color-soft);border-bottom:none;box-shadow: 0 1px 12px rgba(0,0,0,.032);}
 #site-nav a { font-weight: normal;min-width:12%;border:none;letter-spacing: .05em}
