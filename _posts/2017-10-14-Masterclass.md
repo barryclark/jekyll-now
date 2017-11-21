@@ -1,9 +1,9 @@
 ---
 layout: post
-title: The Bear
+title: Disseny & Més
 img: "images/image2.jpg"
 post: default
-info: Video Masterclass
+category: Masterclass
 ---
 
 Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
