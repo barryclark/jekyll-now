@@ -106,14 +106,7 @@ img.dialog-svg {width:120px!important;height:150px;}
 /* Posts */
 #post-title, #date, #post-share {text-align: center;}
 #post-video, #post-share, #post-header {border:none;}
-#post-img img {
-    border-radius: 50%;
-    height: 210px;
-    float: left;
-    margin: 0;
-    object-fit: cover;
-    width: 210px;
-}
+#post-img img { border-radius: 50%;height: 210px;float: left;margin: 0;margin-right: 12px;object-fit: cover; width: 210px;}
 #post-video {}
 #post-share em a {color:#fff;border-radius:50%;}
 #post-share em svg {padding:0px 0px 0px 7px;}
