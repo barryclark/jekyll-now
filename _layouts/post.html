@@ -5,22 +5,22 @@ comments: true
 
   	{% include partials/navigation/nav-section.html %}
 <article class="post">
-	<h2 class="post-title">{{ page.title }}</h2>
-
-  <div class="entry">
-    {{ content }}
-  </div>
-
-  <div class="date filled soft-grey">
-    <h6>Publicat el {{ page.date | date: "%e %B , %Y" }}</h6>
-    <hr>
-  </div>
-  <hr class="lines grey">
-<section class="filled grey section-blank">
-	<h2>Comentaris</h2>
-  <div class="cell-8 pushed-2">
-  {% include disqus.html %}
-  </div>
-  <hr>
-</section>
+	<div>
+		<h2 class="post-title">{{ page.title }}</h2>
+		<div class="entry">
+	    {{ content }}
+		</div>
+		<div class="date filled soft-grey">
+    	<h6>Publicat el {{ page.date | date: "%e %B , %Y" }}</h6>
+    	<hr>
+  		</div>
+		<em><hr></em>
+		<section class="filled grey section-blank">
+		<div class="cell-8 pushed-2">
+		<h3><u>Comentaris</u></h3>
+		{% include disqus.html %}
+		</div>
+  		<hr>
+		</section>
+	</div>
 </article>
