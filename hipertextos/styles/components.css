@@ -298,7 +298,7 @@
 .cards article h3,
 #layout-cards:checked ~ #layout-result article h3 {
 	font-size: 21px;
-	height: 42px;
+	height: 32px;
 	line-height: 32px;
 	margin: 0;
 	padding: 0 4px;
@@ -306,9 +306,8 @@
 }
 .cards article strong,
 #layout-cards:checked ~ #layout-result article strong {
-	height: 16px;
-	padding: 0 4px;
-	overflow: hidden;
+	height: 16px;background:var(--color-blue);color:#fff;
+	padding: 3px 80% 8px 6px;width:100%;overflow:hidden;
 }
 .cards article div,
 #layout-cards:checked ~ #layout-result article div {

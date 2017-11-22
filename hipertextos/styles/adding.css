@@ -20,7 +20,7 @@ section.cover-justify p {padding: 6px 18px 0 18px;line-height: 23px;font-size: 1
 #site-nav a b { text-transform: uppercase;}
 .cover h2 { letter-spacing: 0.001em;font-weight: normal; }
 .nav-scroll label {font-size:12px;line-height:12px;padding:14px;font-weight: normal;}
-.nav-scroll label img {width:15px;height:15px; margin-bottom: 5px;}
+.nav-scroll label svg {width:15px;height:15px; margin-bottom: 5px;}
 /* Page & Header */
 .serveis-header {border-bottom:10px solid var(--color-hardgrey);
 	background-color: var(--color-black);color: var(--color-hardgrey);}
