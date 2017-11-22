@@ -9,25 +9,23 @@ comments: true
 				<h2 id="post-title"><u>{{ page.title }}</u></h2>
 		</header>
 		<div id="layout">	
-			<div  id="post-img" class="cell-1">
-				<img src="../{{ page.img }}">
-			</div>
 			<article id="post-video" class="post cell-10">
-					<div id="entry">
-	    				{{ content }}
+				<img id="post-img" src="../{{ page.img }}">
+				<div id="entry">
+	    			{{ content }}
+				</div>
+				<em><hr></em>
+				<div id="date">
+    				<p>Publicat el {{ page.date | date: "%e %B , %Y" }}</p>
+  				</div>
+				<em><hr></em>
+				<section class="filled grey section-blank">
+					<div>
+						<h3><u>Comentaris</u></h3>
+						{% include disqus.html %}
 					</div>
-					<em><hr></em>
-					<div id="date">
-    					<p>Publicat el {{ page.date | date: "%e %B , %Y" }}</p>
-  					</div>
-					<em><hr></em>
-					<section class="filled grey section-blank">
-						<div>
-							<h3><u>Comentaris</u></h3>
-							{% include disqus.html %}
-						</div>
-  						<hr>
-					</section>
+  					<hr>
+				</section>
 			</article>
 			<aside id="post-share" class="cell-1">
 				{% include share.html %}
