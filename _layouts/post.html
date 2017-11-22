@@ -4,24 +4,29 @@ comments: true
 ---
 
   	{% include partials/navigation/nav-section.html %}
-	<div>
-<article class="post">
-		<h2 id="post-title"><u>{{ page.title }}</u></h2>
-		<div id="entry" class="columns-2">
-	    {{ content }}
-		</div>
-		<em><hr></em>
-		<div id="date">
-    	<p>Publicat el {{ page.date | date: "%e %B , %Y" }}</p>
-    	<hr>
-  		</div>
-		<em><hr></em>
-		<section class="filled grey section-blank">
-		<div class="cell-8 pushed-2">
-		<h3><u>Comentaris</u></h3>
-		{% include disqus.html %}
-		</div>
-  		<hr>
-		</section>
-</article>
+	<div  id="post-img" class="cell-2">
+		<img src="../{{ post.img }}">
 	</div>
+	<article id="post-video" class="post cell-8">
+		<div>
+			<h2 id="post-title"><u>{{ page.title }}</u></h2>
+			<div id="entry">
+	    		{{ content }}
+			</div>
+			<em><hr></em>
+			<div id="date">
+    			<p>Publicat el {{ page.date | date: "%e %B , %Y" }}</p>
+  			</div>
+			<em><hr></em>
+			<section class="filled grey section-blank">
+				<div class="cell-8 pushed-2">
+					<h3><u>Comentaris</u></h3>
+					{% include disqus.html %}
+				</div>
+  				<hr>
+			</section>
+		</div>
+	</article>
+	<aside id="post-share" class="cell-2">
+		{% include partials/share.html %}
+	</aside>
