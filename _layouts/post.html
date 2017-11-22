@@ -6,12 +6,13 @@ comments: true
   	{% include partials/navigation/nav-section.html %}
 <article class="post">
 	<div>
-		<h2 id="post-title">{{ page.title }}</h2>
+		<h2 id="post-title"><u>{{ page.title }}</u></h2>
 		<div id="entry">
 	    {{ content }}
 		</div>
+		<em><hr></em>
 		<div id="date">
-    	<h6>Publicat el {{ page.date | date: "%e %B , %Y" }}</h6>
+    	<p>Publicat el {{ page.date | date: "%e %B , %Y" }}</p>
     	<hr>
   		</div>
 		<em><hr></em>
