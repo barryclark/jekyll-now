@@ -146,12 +146,12 @@
 }
 .table article h3,
 #layout-table:checked ~ #layout-result article h3 {
-		line-height: 32px;
-		width: 47.9999999999%;
+	line-height: 32px;
+	width: 47.9999999999%;
 }
 .table article strong,
 #layout-table:checked ~ #layout-result article strong {
-	padding: 16px 8px 0;
+	padding: 33px 8px 0;
 }
 .table article div,
 #layout-table:checked ~ #layout-result article div {
