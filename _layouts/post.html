@@ -8,12 +8,15 @@ comments: true
 		<header id="post-header">
 				<h2 id="post-title"><u>{{ page.title }}</u></h2>
 		</header>
-			<img id="post-img" class="cell-1" src="../{{ page.img }}">
+			<img id="post-img" class="cell-2" src="../{{ page.img }}">
 			<article id="post-video" class="post cell-10">
 				<div id="entry">
 	    			{{ content }}
 				</div>
 				<em><hr></em>
+				<aside id="post-share">
+					{% include share.html %}
+				</aside>
 				<div id="date">
     				<p>Publicat el {{ page.date | date: "%e %B , %Y" }}</p>
   				</div>
@@ -24,7 +27,4 @@ comments: true
 					</div>
   					<hr>
 			</article>
-			<aside id="post-share" class="cell-1">
-				{% include share.html %}
-			</aside>
 	</main>

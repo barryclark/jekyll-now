@@ -108,7 +108,6 @@ img.dialog-svg {width:120px!important;height:150px;}
 #post-video, #post-share, #post-header {border:none;}
 #post-img img {	border-radius: 50%;height: 128px;float: right;margin: 0;object-fit: cover;	width: 128px;}
 #post-video {}
-#post-share ul li {list-style-type:none;}
 #post-share em a {background:var(--color-blue);color:#fff;border-radius:50%;}
 #post-share em svg {padding:0px 0px 0px 7px;}
 /* Simple & List ( em u a ) Links */
