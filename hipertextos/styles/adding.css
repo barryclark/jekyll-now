@@ -105,6 +105,10 @@ img.dialog-svg {width:120px!important;height:150px;}
 #dialog footer {background: var(--color-softgrey);color:var(--color-hardgrey);border:none;padding-bottom:23px; }
 /* Posts */
 #post-title, #entry, #date {text-align: center;}
+#post-video, #post-share {border:none;}
+#post-img {}
+#post-video {}
+#post-share em a {display:inline;background:var(--color-blue);color:#fff;}
 
 @media (max-width: 1500px) {
    	img.dialog-svg {width:80px!important;height:70px;}
