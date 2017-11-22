@@ -8,9 +8,9 @@ comments: true
 		<header id="post-header">
 				<h2 id="post-title"><u>{{ page.title }}</u></h2>
 		</header>
-		<div id="layout">	
+		<div>	
+			<img id="post-img" class="cell-1" src="../{{ page.img }}">
 			<article id="post-video" class="post cell-10">
-				<img id="post-img" src="../{{ page.img }}">
 				<div id="entry">
 	    			{{ content }}
 				</div>
@@ -19,13 +19,11 @@ comments: true
     				<p>Publicat el {{ page.date | date: "%e %B , %Y" }}</p>
   				</div>
 				<em><hr></em>
-				<section class="filled grey section-blank">
 					<div>
 						<h3><u>Comentaris</u></h3>
 						{% include disqus.html %}
 					</div>
   					<hr>
-				</section>
 			</article>
 			<aside id="post-share" class="cell-1">
 				{% include share.html %}
