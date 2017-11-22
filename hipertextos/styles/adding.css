@@ -120,15 +120,25 @@ img.dialog-svg {width:120px!important;height:150px;}
 
 /* Simple & List ( em u a ) Links */
 .simple em u a,
-#layout-simple:checked ~ #layout-result em u a,
-.list em u a,
-#layout-list:checked ~ #layout-result em u a { padding:6px;border:1px solid var(--color-hardgrey);color:var(--color-hardgrey);border-radius:40px;width:230px;margin-top:21px;}
+#layout-simple:checked ~ #layout-result em u a {
+    padding: 6px;border: 1px solid var(--color-hardgrey);
+    color: var(--color-hardgrey);border-radius: 40px;
+    width: 210px;margin-top: 23px;}
 .simple em u svg,
-#layout-simple:checked ~ #layout-result em u svg,
+#layout-simple:checked ~ #layout-result em u svg {
+    width: 21px;}
+.list em u a,
+#layout-list:checked ~ #layout-result em u a {
+    padding: 3px;font-size:15px;line-height:27px;
+    border: 1px solid var(--color-hardgrey);
+    color: var(--color-hardgrey);
+    border-radius: 40px;
+    width: 169px;
+    margin-top: 21px;}
 .list em u svg,
-#layout-list:checked ~ #layout-result em u svg { width:21px;	}
-
-
+#layout-list:checked ~ #layout-result em u svg {
+    width: 15px;padding:5px 0 0 0;
+}
 @media (max-width: 1500px) {
    	img.dialog-svg {width:80px!important;height:70px;}
 	#covers article {width: 49.9999999999%;}
