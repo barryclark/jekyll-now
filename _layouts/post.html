@@ -4,12 +4,14 @@ comments: true
 ---
 
   	{% include partials/navigation/nav-section.html %}
+<div id="post-content">
+	<h2 id="post-title"><u>{{ page.title }}</u></h2>
+
 	<div  id="post-img" class="cell-2">
 		<img src="../{{ page.img }}">
 	</div>
 	<article id="post-video" class="post cell-8">
 		<div>
-			<h2 id="post-title"><u>{{ page.title }}</u></h2>
 			<div id="entry">
 	    		{{ content }}
 			</div>
@@ -30,3 +32,4 @@ comments: true
 	<aside id="post-share" class="cell-2">
 		{% include share.html %}
 	</aside>
+</div>
