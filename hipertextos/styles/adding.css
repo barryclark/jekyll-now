@@ -104,11 +104,11 @@ img.dialog-svg {width:120px!important;height:150px;}
 #dialog header, #dialog dialog label  {background:var(--color-soft-black);color:var(--color-hardgrey);}
 #dialog footer {background: var(--color-softgrey);color:var(--color-hardgrey);border:none;padding-bottom:23px; }
 /* Posts */
-#post-title, #entry, #date {text-align: center;}
+#post-title, #entry, #date, #post-share {text-align: center;}
 #post-video, #post-share, #post-header {border:none;}
 #post-img img {	border-radius: 50%;height: 128px;float: right;margin: 0;object-fit: cover;	width: 128px;}
 #post-video {}
-#post-share em a {background:var(--color-blue);color:#fff;border-radius:50%;}
+#post-share em a {color:#fff;border-radius:50%;}
 #post-share em svg {padding:0px 0px 0px 7px;}
 /* Simple & List ( em u a ) Links */
 .simple em u a,
