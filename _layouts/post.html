@@ -8,8 +8,10 @@ comments: true
 		<header id="post-header">
 				<h2 id="post-title"><u>{{ page.title }}</u></h2>
 		</header>
-			<img id="post-img" class="cell-2" src="../{{ page.img }}">
-			<article id="post-video" class="post cell-10">
+		<figure id="post-img" class="cell-2">
+			<img src="../{{ page.img }}">
+		</figure>
+			<article id="post-video" class="post cell-8">
 				<div id="entry">
 	    			{{ content }}
 				</div>
