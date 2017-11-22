@@ -121,7 +121,7 @@ img.dialog-svg {width:120px!important;height:150px;}
 /* Simple & List ( em u a ) Links */
 .simple em u a,
 #layout-simple:checked ~ #layout-result em u a {
-    padding: 6px;border: 1px solid var(--color-hardgrey);
+    padding: 6px;border: 2px solid var(--color-hardgrey);
     color: var(--color-hardgrey);border-radius: 40px;
     width: 210px;margin-top: 23px;}
 .simple em u svg,
