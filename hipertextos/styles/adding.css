@@ -2,6 +2,42 @@
 /* by Acozar/Miralles  ADDING CSS */
 /* ------------------------------------------------------------ Resets */
 
+/* Layout ( em u a ) Links */
+/* Simple */
+.simple em u a,
+#layout-simple:checked ~ #layout-result em u a {
+	font-size:12px !important;
+}
+/* List */
+.list em u a,
+#layout-list:checked ~ #layout-result em u a {
+padding:6px;border:1px solid var(--color-hardgrey);color:var(--color-hardgrey);border-radius:40px;width:230px;margin-top:21px;	
+}
+.list em u svg,
+#layout-list:checked ~ #layout-result em u svg {
+width:21px;	
+}
+/* Table */
+.table em u a,
+#layout-table:checked ~ #layout-result em u a {
+	font-size:12px !important;
+}
+/* Gallery */
+.gallery em u a,
+#layout-gallery:checked ~ #layout-result em u a {
+	font-size:12px !important;
+}
+/* Cards */
+.cards em u a,
+#layout-cards:checked ~ #layout-result em u a {
+	font-size:12px !important;
+}
+/* Tiles */
+.tiles em u a,
+#layout-tiles:checked ~ #layout-result em u a {
+	font-size:12px !important;
+}
+
 #site-nav, footer, #follows, #follows-big, #icons, #covers, .nav-scroll, #web-credits, #page-header {
 text-align: center;}
 body {text-align: justify;-moz-hyphens:none;-ms-hyphens:none;-webkit-hyphens:none;-o-hyphens:none;hyphens:none;word-wrap:none;}
@@ -9,7 +45,7 @@ p, ul {font-size: 18px;line-height: 27px;}
 .text-left {text-align:left;}
 .text-right {text-align:right;}
 em hr {border-bottom:thin solid #eee;}	
-em u label, em u a {text-transform:uppercase;background:var(--color-white);color:var(--color-soft);border:2px solid var(--color-grey);color:var(--color-grey);border-radius:40px;width:256px;margin-top:38px; }
+em u label, em u a {text-transform:uppercase;background:var(--color-white);border:2px solid var(--color-grey);color:var(--color-grey);border-radius:40px;width:256px;margin-top:38px; }
 em u label:hover, em u a:hover {border: 2px solid var(--color-blue);color:var(--color-blue); }
 p em {border: var(--one-pixel) solid transparent;font-weight: bold;line-height: 24px;font-size: 21px;padding: 0;text-rendering: optimizeLegibility;}
 section.cover-justify p {padding: 6px 18px 0 18px;line-height: 23px;font-size: 16px !important;letter-spacing: .15em}
