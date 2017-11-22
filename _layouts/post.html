@@ -5,8 +5,11 @@ comments: true
 
   	{% include partials/navigation/nav-section.html %}
 <div id="post-content">
-	<h2 id="post-title"><u>{{ page.title }}</u></h2>
-
+	<header>
+		<div>
+			<h2 id="post-title"><u>{{ page.title }}</u></h2>
+		</div>
+	</header>	
 	<div  id="post-img" class="cell-2">
 		<img src="../{{ page.img }}">
 	</div>
