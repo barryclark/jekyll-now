@@ -110,6 +110,11 @@ img.dialog-svg {width:120px!important;height:150px;}
 #post-video {}
 #post-share em a {color:#fff;border-radius:50%;}
 #post-share em svg {padding:0px 0px 0px 7px;}
+
+#tw {background:var(--color-green);}
+#fb {background:var(--color-blue);}
+#go {background:var(--color-orange);}
+
 /* Simple & List ( em u a ) Links */
 .simple em u a,
 #layout-simple:checked ~ #layout-result em u a,
@@ -119,6 +124,7 @@ img.dialog-svg {width:120px!important;height:150px;}
 #layout-simple:checked ~ #layout-result em u svg,
 .list em u svg,
 #layout-list:checked ~ #layout-result em u svg { width:21px;	}
+
 
 @media (max-width: 1500px) {
    	img.dialog-svg {width:80px!important;height:70px;}
