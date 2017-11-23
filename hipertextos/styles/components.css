@@ -23,7 +23,7 @@
 }
 .simple article h3,
 #layout-simple:checked ~ #layout-result article h3 {
-	margin: 0;
+	margin: 0;line-height: 64px;font-size:2.6em;
 }
 .simple articlestrong,
 #layout-simple:checked ~ #layout-result article strong {
@@ -68,7 +68,7 @@
 }
 .list article h3,
 #layout-list:checked ~ #layout-result article h3 {
-	line-height: 32px;
+	line-height: 54px;font-size:2.3em;
 	margin: 0;
 	padding: 0 64px 0 0;
 }
@@ -231,9 +231,9 @@
 }
 .gallery article h3,
 #layout-gallery:checked ~ #layout-result article h3 {
-	font-size: 21px;
-	height: 28px;
-	line-height: 28px;
+	font-size: 25px;
+	height: 30px;
+	line-height: 27px;
 	margin: 0;
 	overflow: hidden;
 	text-overflow: ellipsis;
@@ -297,9 +297,9 @@
 }
 .cards article h3,
 #layout-cards:checked ~ #layout-result article h3 {
-	font-size: 21px;
-	height: 32px;
-	line-height: 32px;
+	font-size: 20px;
+	height: 30px;
+	line-height: 25px;
 	margin: 0;
 	padding: 0 4px;
 	overflow: hidden;
@@ -366,9 +366,9 @@
 .tiles article h3,
 #layout-tiles:checked ~ #layout-result article h3 {
 	background-color: rgba(0,0,0,.1);
-	font-size: 24px;
-	line-height: 32px;
-	padding: 96px 16px;
+	font-size: 1.2em;
+	line-height: 1.2em;
+	padding: 160px 16px;
 	z-index: 9;
 }
 .tiles article:hover h3,
