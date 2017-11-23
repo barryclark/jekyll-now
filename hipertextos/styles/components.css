@@ -27,7 +27,7 @@
 }
 .simple article strong,
 #layout-simple:checked ~ #layout-result article strong {
-	margin: 0;background:var(--color-blue);padding:6px 12px 9px 12px;position:absolute;margin-top:5px;color:#fff;margin-left: 8px;border-radius: 3px;
+	margin: 0;background:var(--color-blue);right:0;padding:6px 12px 9px 12px;position:absolute;margin-top:5px;color:#fff;margin-right: 8px;border-radius: 3px;
 }
 .simple article div,
 #layout-simple:checked ~ #layout-result article div {
