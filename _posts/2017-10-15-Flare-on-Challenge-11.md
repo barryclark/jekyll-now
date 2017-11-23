@@ -107,6 +107,7 @@ The number being subtracted is different, but 220810 is the same. This indicated
 ###finding the encoded flag###
 So I then started searching through the trace to see how the number being checked is built. This resulted in a few interesting things. The first reference to 224767 is `13580 = 220926 - -1 (220927)`. I decided to then find references to the index 13580, to see where the first reference is so I can then see how the number is built.
 
+
 ![_config.yml]({{ site.baseurl }}/images/flare-on_challenge_11/index%2013580.png)
 
 Turns out that this index is referenced in the gap we saw earlier. A good indicator we are on the right track. After going through the trace I find the algorithm is `((code(char) * 15) * 128 + 127)`. 
