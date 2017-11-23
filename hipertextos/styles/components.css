@@ -25,9 +25,9 @@
 #layout-simple:checked ~ #layout-result article h3 {
 	margin: 0;line-height: 64px;font-size:2.6em;
 }
-.simple articlestrong,
+.simple article strong,
 #layout-simple:checked ~ #layout-result article strong {
-	margin: 0;
+	margin: 0;background:var(--color-blue);right:0;padding:6px 12px 9px 12px;position:absolute;margin-top:5px;color:#fff;margin-right: 8px;border-radius: 3px;
 }
 .simple article div,
 #layout-simple:checked ~ #layout-result article div {
