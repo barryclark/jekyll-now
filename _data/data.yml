@@ -86,6 +86,22 @@
   location_gr: Ελληνικό, Αττική, Ελλάδα
   location_en: Elliniko, Attica, Greece
 
+- company_gr: MultiCopter
+  company_en: MultiCopter
+  url: http://www.multicopter.gr
+  category_gr: Drones
+  category_en: Drones
+  location_gr: Χαϊδάρι, Αττική, Ελλάδα
+  location_en: Haidari, Attica, Greece
+
+- company_gr: Τετράδιο
+  company_en: Tetradio
+  url: https://coinmap.org/venue/11653
+  category_gr: Βιβλιοπωλείο
+  category_en: Bookshop
+  location_gr: Αθήνα, Αττική, Ελλάδα
+  location_en: Athens, Attica, Greece
+
 - company_gr: Biofire
   company_en: Biofire
   url: http://www.biofire.gr
