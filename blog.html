@@ -30,7 +30,7 @@ comments: true
       		<article>
 				<h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
 				<strong>{{ post.category }}</strong>
-        		<figure id="blog-img">{% if post.img %}<a href="../{{ post.img }}" data-lightbox="roadtrip"><img src="../{{ post.img }}"></a>{% endif %}{{ post.excerpt }}</figure>
+        		<div id="blog-img">{% if post.img %}<a href="../{{ post.img }}" data-lightbox="roadtrip"><img src="../{{ post.img }}"></a>{% endif %}{{ post.excerpt }}</div>
       			<nav><a href="{{ site.baseurl }}{{ post.url }}" class="read-more"><b>[+]</b></a></nav>
       		</article>
     	</div>
