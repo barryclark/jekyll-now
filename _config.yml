@@ -49,6 +49,8 @@ gems:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
   
 timezone: SE
+encoding: UTF-8
+future: true
 
 # Exclude these files from your production _site
 exclude:
