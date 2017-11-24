@@ -25,8 +25,10 @@ com us explico al final de l'article.
 
 ---
 
-### *Enllaços Directes*
+### Enllaços Directes
 
+
+![_config.yml]({{ site.baseurl }}/images/brushes/brushes1.jpg)
 
 ###### Pack de Carles Marsal
 El primer que vaig utilitzar, i segurament el més versàtil.
@@ -35,7 +37,7 @@ Pedra, roca, llums, punts de fuga, núvols, sorra, cabells, herba, etc...
 
 <strong><em><a href="http://carlesmarsal.com/about/#footer" title="Baixar desde la web"><i class="icon-cloud-download"></i>Web Autor</a></em>
 <em><a href="https://www.dropbox.com/s/h1n73f9hr5msu85/Carles%20Marsal%20Photoshop%20Brushes.zip?dl=0" title="Enllaç directe"><i class="icon-cloud-download"></i>Directe</a></em>
-<em><a href="http://xxx/carlesmarsal.pdf" title="Baixar desde la web"><i class="icon-cloud-download"></i>Veure PDF</a></em></strong>
+<em><a href="../images/brushes/carlesmarsal.pdf" title="Baixar desde la web"><i class="icon-cloud-download"></i>Veure PDF</a></em></strong>
 
 ---
 
@@ -63,7 +65,7 @@ Vi, taques i paper. Pràctic per a efectes senzills.
 
 ---
 
-### *Enllaços a Biblioteques*
+### Enllaços a Biblioteques
 
 ---
 
