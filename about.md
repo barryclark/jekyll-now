@@ -3,13 +3,8 @@ layout: page
 title: About
 permalink: /about/
 ---
+I'm a 27 year old swede currently in my last year at the Master Programme in Statistics at Uppsala University, Sweden.
 
-Some information about you!
+### Interests and content
 
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
-
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+I'm interested in most kinds of data analysis and visualization (even though I can be a lot better at it). Posts here will include my humble tries at kaggle competitions, a lot of sports analysis and other fun stuff.
