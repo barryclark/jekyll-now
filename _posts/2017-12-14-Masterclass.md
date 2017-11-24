@@ -29,7 +29,6 @@ com us explico al final de l'article.
 
 
 ###### Pack de Carles Marsal
-
 El primer que vaig utilitzar, i segurament el més versàtil.
 
 Pedra, roca, llums, punts de fuga, núvols, sorra, cabells, herba, etc...
@@ -40,7 +39,6 @@ Pedra, roca, llums, punts de fuga, núvols, sorra, cabells, herba, etc...
 ---
 
 ###### Pack de Acuarel·la
-
 Acuarel·la, taques i paper. Pràctic per a efectes senzills.
 
 <strong><em><a href="xxx" title="Baixar desde la web"><i class="icon-cloud-download"></i>Web Autor</a></em>
@@ -49,8 +47,7 @@ Acuarel·la, taques i paper. Pràctic per a efectes senzills.
 ---
 
 ###### Pack de Carles Marsupial
-
-El primer que vaig utilitzar, i segurament el més versàtil. Pedra, roca, llums, punts de fuga, núvols, sorra, cabells, herba, etc...
+El primer que vaig utilitzar, i segurament el més versàtil.
 
 <strong><em><a href="xxx" title="Baixar desde la web"><i class="icon-cloud-download"></i>Web Autor</a></em>
 <em><a href="xxx" title="Enllaç directe"><i class="icon-cloud-download"></i>Directe</a></em></strong>
@@ -58,7 +55,6 @@ El primer que vaig utilitzar, i segurament el més versàtil. Pedra, roca, llums
 ---
 
 ###### Pack de vi
-
 Vi, taques i paper. Pràctic per a efectes senzills.
 
 <strong><em><a href="xxx" title="Baixar desde la web"><i class="icon-cloud-download"></i>Web Autor</a></em>
