@@ -17,17 +17,20 @@ Normalment es treballen amb tableta gràfica tot i que no es imprescindible.
 <!--more-->
 
 
+<br>
 
 Es carrèguen de manera senzilla desde Photoshop,
 
 com us explico al final de l'article.
 
 
+
+
 ### Enllaços Directes
 
 
 
-##### Pack de Carles Marsal
+###### Pack de Carles Marsal
 
 El primer que vaig utilitzar, i segurament el més versàtil.
 
@@ -38,7 +41,7 @@ Pedra, roca, llums, punts de fuga, núvols, sorra, cabells, herba, etc...
 
 <br>
 
-##### Pack de Acuarel·la
+###### Pack de Acuarel·la
 
 Acuarel·la, taques i paper. Pràctic per a efectes senzills.
 
@@ -47,7 +50,7 @@ Acuarel·la, taques i paper. Pràctic per a efectes senzills.
 
 <br>
 
-##### Pack de Carles Marsupial
+###### Pack de Carles Marsupial
 
 El primer que vaig utilitzar, i segurament el més versàtil. Pedra, roca, llums, punts de fuga, núvols, sorra, cabells, herba, etc...
 
@@ -56,7 +59,7 @@ El primer que vaig utilitzar, i segurament el més versàtil. Pedra, roca, llums
 
 <br>
 
-##### Pack de vi
+###### Pack de vi
 
 Vi, taques i paper. Pràctic per a efectes senzills.
 
