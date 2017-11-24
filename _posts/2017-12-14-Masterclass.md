@@ -28,7 +28,7 @@ com us explico al final de l'article.
 ### Enllaços Directes
 
 
-![_config.yml]({{ site.baseurl }}/images/brushes/brushes1.jpg)
+<a href="{{ site.baseurl }}/images/brushes/brushes1.jpg" data-lightbox="roadtrip"><img src="{{ site.baseurl }}/images/brushes/brushes1.jpg"></a>
 
 ###### Pack de Carles Marsal
 El primer que vaig utilitzar, i segurament el més versàtil.
@@ -40,7 +40,7 @@ Pedra, roca, llums, punts de fuga, núvols, sorra, cabells, herba, etc...
 <em><a href="../images/brushes/carlesmarsal.pdf" title="Baixar desde la web"><i class="icon-cloud-download"></i>Veure PDF</a></em></strong>
 
 ---
-![_config.yml]({{ site.baseurl }}/images/brushes/brushes2.jpg)
+<a href="{{ site.baseurl }}/images/brushes/brushes2.jpg" data-lightbox="roadtrip"><img src="{{ site.baseurl }}/images/brushes/brushes2.jpg"></a>
 
 ###### Pack de Acuarel·la
 Acuarel·la, taques i paper. Pràctic per a efectes senzills.
@@ -49,7 +49,7 @@ Acuarel·la, taques i paper. Pràctic per a efectes senzills.
 <em><a href="xxx" title="Enllaç directe"><i class="icon-cloud-download"></i>Directe</a></em></strong>
 
 ---
-![_config.yml]({{ site.baseurl }}/images/brushes/brushes3.jpg)
+<a href="{{ site.baseurl }}/images/brushes/brushes3.jpg" data-lightbox="roadtrip"><img src="{{ site.baseurl }}/images/brushes/brushes3.jpg"></a>
 
 ###### Pack de Carles Marsupial
 El primer que vaig utilitzar, i segurament el més versàtil.
@@ -58,7 +58,7 @@ El primer que vaig utilitzar, i segurament el més versàtil.
 <em><a href="xxx" title="Enllaç directe"><i class="icon-cloud-download"></i>Directe</a></em></strong>
 
 ---
-![_config.yml]({{ site.baseurl }}/images/brushes/brushes4.jpg)
+<a href="{{ site.baseurl }}/images/brushes/brushes4.jpg" data-lightbox="roadtrip"><img src="{{ site.baseurl }}/images/brushes/brushes4.jpg"></a>
 
 ###### Pack de vi
 Vi, taques i paper. Pràctic per a efectes senzills.
