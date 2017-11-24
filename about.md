@@ -13,11 +13,11 @@ My name is Matt Boler and I'm a student at Auburn University, pursuing an Honor'
 
 ### Self-Directed Learning
 
-Classes I'm currently working through:
+Classes and books I'm working through:
 
 - [How to Code - Complex Data](https://github.com/mattboler/ComplexData)
 - [Applications of Linear Algebra Part 2](https://github.com/mattboler/applications2)
-- [Introduction to Aerospace Engineering](https://github.com/mattboler/IntroAero)
+- [Modern C](https://github.com/mattboler/ModernC)
 
 Repositories for other classes I am either taking or have already finished can be found on my [github](https://github.com/mattboler).
 
