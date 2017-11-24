@@ -21,6 +21,7 @@ section.cover-justify p {padding: 6px 18px 0 18px;line-height: 23px;font-size: 1
 .cover h2 { letter-spacing: 0.001em;font-weight: normal; }
 .nav-scroll label {font-size: 11px;line-height: 12px;padding: 10px;font-weight: normal;}
 .nav-scroll label img {width: 18px;height: 18px;margin-bottom: 8px;}
+.nav-scroll label:hover {border:thin solid transparent;}
 /* Page & Header */
 .serveis-header {border-bottom:10px solid var(--color-hardgrey);
 	background-color: var(--color-black);color: var(--color-hardgrey);}
