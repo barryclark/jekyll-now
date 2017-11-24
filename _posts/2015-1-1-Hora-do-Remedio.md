@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Hora do Remédio
+title: Hora do Remédio 💊👴🏻
 ---
 
 ##### Hora do Remédio | Hackathon 🥇
