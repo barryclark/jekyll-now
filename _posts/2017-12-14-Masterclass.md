@@ -42,29 +42,35 @@ Pedra, roca, llums, punts de fuga, núvols, sorra, cabells, herba, etc...
 ---
 <a href="{{ site.baseurl }}/images/brushes/brushes2.jpg" data-lightbox="roadtrip"><img src="{{ site.baseurl }}/images/brushes/brushes2.jpg"></a>
 
-###### Pack de Acuarel·la
-Acuarel·la, taques i paper. Pràctic per a efectes senzills.
+###### DD Splatter Brushes
+Drippings, pintura, gotes, etc...
 
-<strong><em><a href="xxx" title="Baixar desde la web"><i class="icon-cloud-download"></i>Web Autor</a></em>
-<em><a href="xxx" title="Enllaç directe"><i class="icon-cloud-download"></i>Directe</a></em></strong>
+Ideal per a treballs artístics.
 
----
-<a href="{{ site.baseurl }}/images/brushes/brushes3.jpg" data-lightbox="roadtrip"><img src="{{ site.baseurl }}/images/brushes/brushes3.jpg"></a>
-
-###### Pack de Carles Marsupial
-El primer que vaig utilitzar, i segurament el més versàtil.
-
-<strong><em><a href="xxx" title="Baixar desde la web"><i class="icon-cloud-download"></i>Web Autor</a></em>
-<em><a href="xxx" title="Enllaç directe"><i class="icon-cloud-download"></i>Directe</a></em></strong>
+<strong><em><a href="https://www.brusheezy.com/brushes/59244-splatter-brush-collection" title="Baixar desde la web"><i class="icon-cloud-download"></i>Web Autor</a></em>
+<em><a href="https://www.brusheezy.com/brushes/59244-splatter-brush-collection" title="Enllaç segur"><i class="icon-cloud-download"></i>Directe</a></em></strong>
 
 ---
 <a href="{{ site.baseurl }}/images/brushes/brushes4.jpg" data-lightbox="roadtrip"><img src="{{ site.baseurl }}/images/brushes/brushes4.jpg"></a>
 
-###### Pack de vi
-Vi, taques i paper. Pràctic per a efectes senzills.
+###### Lens Flare
+Efectes d'il·luminació de càmara,
+
+el clàssic "Lens Flare" a una pinzellada. 
 
 <strong><em><a href="xxx" title="Baixar desde la web"><i class="icon-cloud-download"></i>Web Autor</a></em>
 <em><a href="xxx" title="Enllaç directe"><i class="icon-cloud-download"></i>Directe</a></em></strong>
+
+---
+<a href="{{ site.baseurl }}/images/brushes/brushes5.jpg" data-lightbox="roadtrip"><img src="{{ site.baseurl }}/images/brushes/brushes5.jpg"></a>
+
+###### Acuarel·la (Free Water color 7 i 10)
+Textures d'acuarel·la molt realístes i versàtils
+
+pinzells d'alta resolució.
+
+<strong><em><a href="https://www.brusheezy.com/brushes/58203-free-watercolor-photoshop-brushes-7" title="Baixar desde la web"><i class="icon-cloud-download"></i>Water Color 7</a></em>
+<em><a href="https://www.brusheezy.com/brushes/58155-free-watercolor-photoshop-brushes-10" title="Enllaç directe"><i class="icon-cloud-download"></i>Water Color 10</a></em></strong>
 
 ---
 
