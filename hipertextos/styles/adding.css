@@ -115,6 +115,8 @@ img.dialog-svg {width:120px!important;height:150px;}
 #post-video {}
 #post-download {}
 #post-download p img {max-width:320px;float:left;border-radius:4px;margin:0 18px 12px 0;}
+#post-download em a {	font-size: 15px;line-height: 18px;margin-top:17px;}
+#post-download em svg {	font-size: 18px;line-height: 18px;padding: 3px 0 0 0;}
 #post-share em a {color:#fff;border-radius:50%;}
 #post-share em svg {padding:0px 0px 0px 7px;}
 
