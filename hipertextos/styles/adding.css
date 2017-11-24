@@ -107,7 +107,7 @@ img.dialog-svg {width:120px!important;height:150px;}
 #dialog footer {background: var(--color-softgrey);color:var(--color-hardgrey);border:none;padding-bottom:23px; }
 /* Posts */
 #post-title, #date, #post-share {text-align: center;}
-#post-video, #post-share, #post-header {border:none;}
+#post-video, #post-download, #post-share, #post-header {border:none;}
 .post em u a { padding: 6px;border: 2px solid var(--color-grey);color: var(--color-grey);border-radius: 40px;width: 180px;margin-top: 18px;}
 .post em u svg { width: 18px;}
 #post-header {border-bottom: 9px solid var(--color-black);}
