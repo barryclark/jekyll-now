@@ -1,6 +1,6 @@
 ---
 layout: post
-title: RASPLAUNCHER
+title: RaspLauncher 🚀
 ---
 
 #### [2014 - RASPLAUNCHER]
@@ -22,11 +22,7 @@ Demo
 
 Team
 ====
-![](https://raw.githubusercontent.com/ezefranca/ezefranca.github.io/master/_/_/_/_/_/_/_/_/_/_/_/_/_/_/nothing/_www/photos/octo.png)[diegocarloslima](https://github.com/diegocarloslima)  
-![](https://raw.githubusercontent.com/ezefranca/ezefranca.github.io/master/_/_/_/_/_/_/_/_/_/_/_/_/_/_/nothing/_www/photos/octo.png)[ezefranca](https://github.com/ezefranca)  
-![](https://raw.githubusercontent.com/ezefranca/ezefranca.github.io/master/_/_/_/_/_/_/_/_/_/_/_/_/_/_/nothing/_www/photos/octo.png)[pondaco](https://github.com/pondaco)  
-<img class="img img-responsive" src="https://raw.githubusercontent.com/ezefranca/ezefranca.github.io/master/_/_/_/_/_/_/_/_/_/_/_/_/_/_/nothing/_www/photos/rasplauncher_team.jpg" alt="Hackahtonvencedores" />
+![](https://raw.githubusercontent.com/ezefranca/ezefranca.github.io/master/_/_/_/_/_/_/_/_/_/_/_/_/_/_/nothing/_www/photos/octo.png)[diegocarloslima](https://github.com/diegocarloslima)![](https://raw.githubusercontent.com/ezefranca/ezefranca.github.io/master/_/_/_/_/_/_/_/_/_/_/_/_/_/_/nothing/_www/photos/octo.png)[ezefranca](https://github.com/ezefranca)![](https://raw.githubusercontent.com/ezefranca/ezefranca.github.io/master/_/_/_/_/_/_/_/_/_/_/_/_/_/_/nothing/_www/photos/octo.png)[pondaco](https://github.com/pondaco)<img class="img img-responsive" src="https://raw.githubusercontent.com/ezefranca/ezefranca.github.io/master/_/_/_/_/_/_/_/_/_/_/_/_/_/_/nothing/_www/photos/rasplauncher_team.jpg" alt="Hackahtonvencedores" />
 
-Hackathon Flyer
-====
+
 ![Hackathon logo](http://3.bp.blogspot.com/-PSzq4WrZheQ/UuJxMXtW59I/AAAAAAAAheU/k4waw7SWtaI/s1600/1613776_665089613542151_217963323_n.jpg)
