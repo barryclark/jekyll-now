@@ -25,9 +25,8 @@ com us explico al final de l'article.
 
 ---
 
-### Enllaços Directes
+### *Enllaços Directes*
 
----
 
 ###### Pack de Carles Marsal
 
@@ -67,7 +66,7 @@ Vi, taques i paper. Pràctic per a efectes senzills.
 
 ---
 
-### Enllaços a Biblioteques
+### *Enllaços a Biblioteques*
 
 ---
 
