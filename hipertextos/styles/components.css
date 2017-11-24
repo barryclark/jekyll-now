@@ -223,11 +223,11 @@
 	clear: none;
 	display: block;
 	float: left;
-	margin: 0 0.2% 52px;
+	margin: 0 0.1% 23px;
 	padding: 0;
 	overflow: hidden;
 	text-align: center;
-	width: 33.3333333333%; 
+	width: 33.133333333%;  
 }
 .gallery article h3,
 #layout-gallery:checked ~ #layout-result article h3 {
