@@ -1,12 +1,15 @@
 ---
-layout: post
-title: Disseny & Més
-img: "images/image2.jpg"
+layout: post-download
+title: Selecció de Pinzells (PS Brushes)
+img: "images/recursos.jpg"
 post: default
-category: Masterclass
+category: Recursos
 ---
 
-Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
+Aquí us deixo una selecció dels pinzells que més utilitzo en Photoshop.
+
+Són tots Gratuïts.
+
 
 ![_config.yml]({{ site.baseurl }}/assets/cartells/image1.jpg)
 
