@@ -72,8 +72,28 @@ pinzells d'alta resolució.
 <em><a href="https://www.brusheezy.com/brushes/58155-free-watercolor-photoshop-brushes-10" title="Enllaç directe"><i class="icon-cloud-download"></i>Water Color 10</a></em></strong>
 
 ---
+<a href="{{ site.baseurl }}/images/brushes/brushes6.jpg" data-lightbox="roadtrip"><img src="{{ site.baseurl }}/images/brushes/brushes6.jpg"></a>
 
-### Enllaços a Biblioteques
+###### Splatter
+Dos packs d'esquitxos o drippings,
+
+Bastant realísta i versàtil. 
+
+<strong><em><a href="xxx" title="Baixar desde la web"><i class="icon-cloud-download"></i>Pack 1</a></em>
+<em><a href="xxx" title="Enllaç directe"><i class="icon-cloud-download"></i>Pack 2</a></em></strong>
+
+---
+<a href="{{ site.baseurl }}/images/brushes/brushes7.jpg" data-lightbox="roadtrip"><img src="{{ site.baseurl }}/images/brushes/brushes7.jpg"></a>
+
+###### Pinzellades (Strokes)
+Pinzellades amb textura de pinzell gruixut.
+
+textura d'alta resolució.
+
+<strong><em><a href="https://www.brusheezy.com/brushes/58203-free-watercolor-photoshop-brushes-7" title="Baixar desde la web"><i class="icon-cloud-download"></i>Water Color 7</a></em>
+<em><a href="https://www.brusheezy.com/brushes/58155-free-watercolor-photoshop-brushes-10" title="Enllaç directe"><i class="icon-cloud-download"></i>Water Color 10</a></em></strong>
+
+---
 
 ---
 
