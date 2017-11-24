@@ -23,12 +23,11 @@ Es carrèguen de manera senzilla desde Photoshop,
 
 com us explico al final de l'article.
 
-
-
+---
 
 ### Enllaços Directes
 
-
+---
 
 ###### Pack de Carles Marsal
 
@@ -39,7 +38,7 @@ Pedra, roca, llums, punts de fuga, núvols, sorra, cabells, herba, etc...
 <strong><em><a href="http://carlesmarsal.com/about/#footer" title="Baixar desde la web"><i class="icon-cloud-download"></i>Web Autor</a></em>
 <em><a href="https://www.dropbox.com/s/h1n73f9hr5msu85/Carles%20Marsal%20Photoshop%20Brushes.zip?dl=0" title="Enllaç directe"><i class="icon-cloud-download"></i>Directe</a></em></strong>
 
--
+---
 
 ###### Pack de Acuarel·la
 
@@ -57,7 +56,7 @@ El primer que vaig utilitzar, i segurament el més versàtil. Pedra, roca, llums
 <strong><em><a href="xxx" title="Baixar desde la web"><i class="icon-cloud-download"></i>Web Autor</a></em>
 <em><a href="xxx" title="Enllaç directe"><i class="icon-cloud-download"></i>Directe</a></em></strong>
 
-----
+---
 
 ###### Pack de vi
 
@@ -66,8 +65,10 @@ Vi, taques i paper. Pràctic per a efectes senzills.
 <strong><em><a href="xxx" title="Baixar desde la web"><i class="icon-cloud-download"></i>Web Autor</a></em>
 <em><a href="xxx" title="Enllaç directe"><i class="icon-cloud-download"></i>Directe</a></em></strong>
 
-----
+---
 
 ### Enllaços a Biblioteques
+
+---
 
  [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
