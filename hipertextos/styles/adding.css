@@ -126,6 +126,10 @@ img.dialog-svg {width:120px!important;height:150px;}
     padding: 6px;border: 2px solid var(--color-hardgrey);
     color: var(--color-hardgrey);border-radius: 40px;
     width: 210px;margin-top: 23px;}
+.simple em u a :hover,
+#layout-simple:checked ~ #layout-result em u a:hover {
+    color: var(--color-link);border: 2px solid var(--color-link); 
+}
 .simple em u svg,
 #layout-simple:checked ~ #layout-result em u svg {
     width: 21px;}
@@ -137,6 +141,10 @@ img.dialog-svg {width:120px!important;height:150px;}
     border-radius: 40px;
     width: 169px;
     margin-top: 21px;}
+.list em u a :hover,
+#layout-list:checked ~ #layout-result em u a:hover {
+    color: var(--color-link);border: thin solid var(--color-link); 
+}
 .list em u svg,
 #layout-list:checked ~ #layout-result em u svg {
     width: 15px;padding:5px 0 0 0;
