@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Lixo Papão
+title: Lixo Papão ♻️📲
 ---
 
 ##### Lixo Papão | Apple Developer Academy
@@ -16,6 +16,7 @@ Our project was focused in the technology and when we met Lixo Papão, we combin
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/PuYcZmfWAB0?rel=0" frameborder="0" allowfullscreen></iframe>
 
+<img class="img img-responsive" src="https://mir-s3-cdn-cf.behance.net/project_modules/max_3840/697dd433520403.56ae6ffc071da.png" alt="Hackahtonvencedores" />
 
 About
 ====
@@ -23,7 +24,4 @@ About
 We presented Lixo Papão to a group of chinese students. Sorry about the poor audio.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/cbosWf2l-YA?rel=0" frameborder="0" allowfullscreen></iframe>
 
-
-Team
-====
 
