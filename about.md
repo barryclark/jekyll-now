@@ -19,11 +19,7 @@ Classes I'm currently working through:
 - [Applications of Linear Algebra Part 2](https://github.com/mattboler/applications2)
 - [Introduction to Aerospace Engineering](https://github.com/mattboler/IntroAero)
 
-Classes I've finished or plan on taking in the future:
-
-- [Computer Science](compsci.md)
-- [Data Science](datasci.md)
-- [Misc Science and Engineering](other_classes.md)
+Repositories for other classes I am either taking or have already finished can be found on my [github](https://github.com/mattboler).
 
 Resume: [here](resumeSmr2017.pdf)
 
