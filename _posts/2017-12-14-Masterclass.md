@@ -95,9 +95,4 @@ textura d'alta resolució.
 
 ---
 
----
-###### Baixar
-
-També pots baixar tots els pinzells a [brushes.zip](../images/brushes/brushes.zip) .
-
 
