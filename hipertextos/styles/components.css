@@ -23,7 +23,7 @@
 }
 .simple article h3,
 #layout-simple:checked ~ #layout-result article h3 {
-	margin: 0;line-height: 64px;font-size:2.6em;
+	margin: 0;
 }
 .simple article strong,
 #layout-simple:checked ~ #layout-result article strong {
@@ -68,7 +68,6 @@
 }
 .list article h3,
 #layout-list:checked ~ #layout-result article h3 {
-	line-height: 54px;font-size:2.3em;
 	margin: 0;
 	padding: 0 64px 0 0;
 }
