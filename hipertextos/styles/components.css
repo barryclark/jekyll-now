@@ -367,10 +367,10 @@
 }
 .tiles article h3,
 #layout-tiles:checked ~ #layout-result article h3 {
-	background-color: rgba(0,0,0,.1);
+	background-color: rgba(20,0,0,.3);
 	font-size: 1.2em;
-	line-height: 1.2em;
-	padding: 160px 16px;
+	line-height: 1.1em;
+	padding: 140px 16px;
 	z-index: 9;
 }
 .tiles article:hover h3,
