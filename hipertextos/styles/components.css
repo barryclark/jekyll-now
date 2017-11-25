@@ -111,7 +111,10 @@
 	padding: 8px 0;
 	width: 48px;
 }
-
+@media (max-width: 767px) {
+    .list article div img,
+    #layout-list:checked ~ #layout-result article div img {width:128px;height:128px;margin:0 12px 12px 0;}
+}
 /* Table view */
 
 .table article,
