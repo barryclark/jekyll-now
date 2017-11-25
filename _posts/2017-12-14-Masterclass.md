@@ -96,5 +96,8 @@ textura d'alta resolució.
 ---
 
 ---
+###### Baixar
 
- [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
+També pots baixar tots els pinzells a [brushes.zip](../images/brushes/brushes.zip) .
+
+
