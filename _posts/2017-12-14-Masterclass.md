@@ -17,11 +17,6 @@ Normalment es treballen amb tableta gràfica tot i que no es imprescindible.
 <!--more-->
 
 
-<br>
-
-Es carrèguen de manera senzilla desde Photoshop,
-
-
 ---
 
 ### Enllaços Directes
