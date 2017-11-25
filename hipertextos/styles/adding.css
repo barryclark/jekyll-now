@@ -120,7 +120,7 @@ img.dialog-svg {width:120px!important;height:150px;}
 #post-share em a {color:#fff;border-radius:50%;}
 #post-share em svg {padding:0px 0px 0px 7px;}
 #post-share em a:hover {background:#fff !important;border:thin solid var(--color-link);}
-#post-share em a:visited {background-color:var(--color-grey)  !important;}
+#post-share em a:visited {background-color:var(--color-soft-grey)  !important;}
 
 #tw {background:var(--color-green);}
 #fb {background:var(--color-blue);}
