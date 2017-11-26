@@ -1,0 +1,28 @@
+  {% if post %}
+    {% assign data = post %}
+  {% else %}
+    {% assign data = page %}
+  {% endif %}
+
+{% if data %}
+   <span class='post-category-mark'>
+    {% if data.category %}
+      (
+        <a rel="tag" href="#" onclick="return false;">{{data.category}} </a>
+      )
+    {% elsif data.categories %}
+      (
+      {% for item in data.categories %}
+        {% if forloop.last %}
+          <a rel="tag" href="#" onclick="return false;">{{item}} </a>
+        {% else %}
+          <a rel="tag" href="#" onclick="return false;">{{item}}, </a>
+        {% endif %}
+      {% endfor %}
+      )
+
+    {% else %}
+      {{page.title}}
+    {% endif %}        
+  </span>
+{% endif %}

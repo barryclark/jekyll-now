@@ -25,7 +25,7 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 740px;
+  max-width: 850px;
   padding: 0 10px;
   width: 100%;
 }
@@ -151,7 +151,7 @@ img {
 //
 
 .wrapper-masthead {
-  margin-bottom: 50px;
+    //margin-bottom: 50px;
 }
 
 .masthead {
@@ -241,9 +241,17 @@ nav {
 // .main
 //
 
+.th{
+  font-weight:bold !important;
+}
+
 .posts > .post {
   padding-bottom: 2em;
   border-bottom: 1px solid $lightGray;
+}
+
+.hidden_image{
+  display:none;
 }
 
 .posts > .post:last-child {
@@ -251,7 +259,24 @@ nav {
   border-bottom: none;
 }
 
-.post {
+.post-category-mark{
+  clear:both;
+  font-weight: bold;
+  font-size:14px;
+
+  color:#000000 !important;
+
+  position:relative;
+  display:block;
+}
+
+  .post-category-mark a{
+      color:#000000 !important;
+      font-style: oblique !important;
+  }
+
+
+.post { 
   blockquote {
     margin: 1.8em .8em;
     border-left: 2px solid $gray;
@@ -283,7 +308,75 @@ footer {
   text-align: center;
 }
 
+.embeded_video {
+  margin-bottom: 20px;
+}
+
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
-@import "highlights";
-@import "svg-icons";
+@import "_highlights";
+
+.codehilite {
+    overflow: auto;
+    font-size: 0.9em;
+}
+
+table.rouge-table tr {
+    background-color: #FFF !important;
+}
+
+td.rouge-code {
+    padding: 0px !important;
+}
+
+code, kbd, pre, samp {
+    font-family: monospace,monospace;
+    font-size: 1em;
+}
+
+// because of bootstrap
+td.code {
+    padding: 0 !important;
+    background-color: #fff;
+}
+
+pre {
+    padding: 10px;
+    margin: 0;
+    line-height: 23px;
+    white-space: pre;
+    overflow-x: auto;
+    word-break: inherit;
+    word-wrap: inherit;
+}
+
+pre.lineno {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+.codehilite td {
+    border: 1px solid #dee;
+}
+
+.codehilite .gl {
+    background: #fafafa;
+    border-right: 1px solid #ddd;
+    color: #ccc;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    padding: 0 5px;
+    overflow: hidden;
+}
+
+dt {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+dd {
+    margin: 0;
+    padding: 0 0 0.5em 0;
+}
