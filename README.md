@@ -17,6 +17,8 @@ Please note to set the proxy if you are working from within the Haufe Intranet
 
 If you find bugs or issues you can [open an issue](https://github.com/Haufe-Lexware/Haufe-Lexware.github.io/issues/new) describing the problem that you're looking to resolve and we'll go from there.
 
+**Note**: The Proxy is no longer valid. Please see the issues.
+
 ---
 
 ### Credits

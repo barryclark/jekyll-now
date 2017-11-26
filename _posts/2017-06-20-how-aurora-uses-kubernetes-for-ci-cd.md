@@ -3,7 +3,7 @@ layout: post
 title: How the Aurora team manages their Kubernetes deployments
 subtitle: Immutable Infrastructure and CI/CD with Jenkins, Docker and Kubernetes
 category: dev
-tags: [general, cloud, microservice, devops, docker]
+tags: [general, cloud, microservice, devops, docker, kubernetes]
 author: Martin Danielsson
 author_email: martin.danielsson@haufe-lexware.com
 header-img: "images/new/Exportiert_38.jpg"

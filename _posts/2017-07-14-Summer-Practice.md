@@ -2,7 +2,7 @@
 layout: post
 title: Summer Work Practice
 category: dev
-tags: [summer, practice, experience, high school]
+tags: [general]
 author: Raluca Vlad
 author_email: raluvlad@yahoo.com
 header-img: "images/new/Exportiert_27.jpg"

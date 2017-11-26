@@ -3,7 +3,7 @@ layout: post
 title: Being a Microservice or Cattle over pets
 subtitle: A personal recap on QCon 2016
 category: dev
-tags: [conference, qcon, microservices, devops]
+tags: [conference, microservice, devops]
 author: Axel Schulz
 author_email: axel.schulz@semigator.de
 header-img: "images/new/Exportiert_18.jpg"

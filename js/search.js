@@ -19,6 +19,7 @@ var q, jsonFeedUrl = "/feeds/feed.json",
     $foundContainer = $("[data-search-found]"),
     $foundTerm = $("[data-search-found-term]"),
     $foundCount = $("[data-search-found-count]"),
+    $tagContainer = $("#tag-cloud"),
     allowEmpty = true,
     showLoader = true,
     loadingClass = "is--loading";
@@ -167,6 +168,7 @@ function populateResultsString(count) {
     $foundTerm.text(q);
     $foundCount.text(count);
     $foundContainer.show();
+    $tagContainer.hide();
 }
 
 

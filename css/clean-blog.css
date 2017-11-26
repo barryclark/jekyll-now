@@ -719,3 +719,40 @@ a.button.active {
   background-color: #005DA5;
   border: 1px solid #005DA5;
 }
+
+.tags {
+  list-style: none;
+  padding: 0;
+  text-align: justify;
+}
+
+.tags li {
+  display: inline-block;
+  margin: 0 15px 10px 0;
+}
+
+.tags li:last-child {
+  margin-right: 0;
+}
+
+.tag {
+  background: #ddd;
+  border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  box-shadow: 1px 1px 2px #ccc;
+  -moz-box-shadow: 1px 1px 2px #ccc;
+  -webkit-box-shadow: 1px 1px 2px #ccc;
+  color: #888;
+  padding: 2px 8px 2px 8px;
+  text-decoration: none;
+}
+
+.tag:visited {
+  color: #888;
+}
+
+.tag:hover {
+  background: #ccc;
+  color: #777;
+}

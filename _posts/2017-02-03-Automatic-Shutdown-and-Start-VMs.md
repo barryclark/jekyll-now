@@ -3,7 +3,7 @@ layout: post
 title: Keeping our Azure Cloud Tidy - Part 1
 subtitle:
 category: dev
-tags: [howot, cloud, devops]
+tags: [howto, cloud, devops]
 author: Esmaeil Sarabadani
 author_email: esmaeil.sarabadani@haufe-lexware.com
 header-img: "images/new/Exportiert_43.jpg"
