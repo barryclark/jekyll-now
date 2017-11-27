@@ -186,15 +186,19 @@ img.dialog-svg {width:120px;height:150px;}
     .cover#page-header {padding-top:120px;}
     .cover#page-header h1 {line-height:0.8em;font-size:23px ;}
     .cover#page-header h2 {line-height:1.2em;font-size:15px ;}
+    .cover-page h4  {text-align:center;}
+    .cover-page p {font-size:15px;line-height:1.5em;}
+    .cover-page ul li {font-size:12px;line-height:1.3em;margin-top:5px;padding:0;}
+    .cover-page strong em a {width:100%;margin-bottom: 5px;}
 	#dialog .icon-alarm svg {max-width:16px!important;}
-	#dialog dialog {}
+	#dialog dialog p {font-size:12px;line-height:1.5em;}
 	#dialog footer {padding:12px;border-radius:0 0 6px 6px;}
 	#dialog header {padding:12px;border-radius:6px 6px 0 0;}
-	#dialog header h2 svg {width:26px;margin:0px 9px 0 0;}
-	#dialog header h2 {font-size: 1.75em;margin-bottom:0px;}
-	#dialog header .lead {line-height: .9em;margin-bottom:0px;}
+	#dialog header h2 svg {width:16px;margin:0px 6px 0 0;}
+	#dialog header h2 {font-size: 1.25em;margin-bottom:0px;}
+	#dialog header .lead {font-size:14px;line-height: 1.2em;margin:0;}
 	#dialog em a {}
-   	img.dialog-svg {width:70px!important;height:62px;}
+   	img.dialog-svg {width:45px!important;height:45px;}
    	#covers article {width: 100%;}
     .cover-page .thumb-9, .cover-page .thumb-3 {width: 100%;}
     #section-web .cell-x1 {	width: 20%;}
