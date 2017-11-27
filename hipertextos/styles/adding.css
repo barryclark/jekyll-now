@@ -197,7 +197,7 @@ img.dialog-svg {width:120px;height:150px;}
 	#dialog header h2 svg {width:16px;margin:0px 6px 0 0;}
 	#dialog header h2 {font-size: 1.25em;margin-bottom:0px;}
 	#dialog header .lead {font-size:14px;line-height: 1.2em;margin:0;}
-	#dialog em a {}
+	#dialog div em a {font-size:10px;line-height:2.3em;padding:7px;}
    	img.dialog-svg {width:45px!important;height:45px;}
    	#covers article {width: 100%;}
     .cover-page .thumb-9, .cover-page .thumb-3 {width: 100%;}
