@@ -36,7 +36,7 @@ The correlation function of x and y is defined as the covariance of x and y divi
 
 correlation(x,y) = covariance(x,y)/std(x)std(y)
 
-This means, as described on this page (http://www.mathsisfun.com/data/correlation.html), we only need to know a few things: the sum of x, y, x^2, y^2, and xy. Intuitively, and perhaps by experience, we know that the order by which we sum numbers does not affect the result. This is also a basic mathematical concept known as [the associative property of addition](http://www.coolmath.com/prealgebra/06-properties/03-properties-associative-addition-01).
+This means, as described on [the Math Is Fun webpage](http://www.mathsisfun.com/data/correlation.html), we only need to know a few things: the sum of x, y, x^2, y^2, and xy. Intuitively, and perhaps by experience, we know that the order by which we sum numbers does not affect the result. This is also a basic mathematical concept known as [the associative property of addition](http://www.coolmath.com/prealgebra/06-properties/03-properties-associative-addition-01).
 
 But why does changing the order of one column matter?
 
