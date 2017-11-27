@@ -3,7 +3,7 @@ layout: post
 title: "Correlation: Does Order Matter?"
 tags: [math]
 keywords: [correlation, correlated, order]
-image: /images/stock-magic/2016-chart.png
+image: /images/correlation-graphs.png
 ---
 
 One of the more interesting and important parts of studying two different sets of data is to see if they are correlated. It might make one wonder if the order of the data matters. In this blog post, I show with three different methods - by an empirical example, by looking at the correlation function, and visually - why the order doesn't matter so long as each data point is matched to the same datapoint each time.
