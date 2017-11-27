@@ -1,12 +1,12 @@
 - slug: api
   name: API
-  
+
 - slug: automation
   name: Automation
 
 - slug: bots
   name: Bots
-  
+
 - slug: cloud
   name: Cloud
 
@@ -33,7 +33,7 @@
 
 - slug: design
   name: Design
-  
+
 - slug: development
   name: Development
 
@@ -54,7 +54,7 @@
 
 - slug: ideas
   name: Ideation
-  
+
 - slug: logging
   name: Logging
 
@@ -72,7 +72,7 @@
 
 - slug: patterns
   name: Patterns
-  
+
 - slug: readinglist
   name: Reading List
 
@@ -82,6 +82,8 @@
 - slug: serverless
   name: Serverless
 
+- slug: springboot
+  name: Spring Boot
+
 - slug: ux
   name: UX
-  
