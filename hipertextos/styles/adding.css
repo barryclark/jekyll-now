@@ -192,7 +192,8 @@ img.dialog-svg {width:120px;height:150px;}
     .cover-page strong em a {width:100%;margin-bottom: 5px;}
 	#dialog .icon-alarm svg {max-width:16px!important;}
 	#dialog dialog p {font-size:12px;line-height:1.5em;}
-	#dialog footer {padding:12px;border-radius:0 0 6px 6px;}
+    #dialog footer {padding:12px;border-radius:0 0 6px 6px;max-height:90px;}
+    #dialog footer p {line-height:1.5em;padding:0;margin:0;}
 	#dialog header {padding:12px;border-radius:6px 6px 0 0;}
 	#dialog header h2 svg {width:16px;margin:0px 6px 0 0;}
 	#dialog header h2 {font-size: 1.25em;margin-bottom:0px;}
