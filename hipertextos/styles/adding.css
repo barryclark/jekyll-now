@@ -32,7 +32,7 @@ section.cover-justify p {padding: 6px 18px 0 18px;line-height: 23px;font-size: 1
 #page-nav a:visited {color: var(--color-grey) ;}
 #page-nav div {height:80px;font-size:15px;}.serveis#page-main {padding:0;}
 /* Page & Header */
-.cover#page-header  {background-color: var(--color-black);}
+.cover#page-header  {background-color: var(--color-black);image-rendering: crisp-edges;}
 .serveis-header {border-bottom:10px solid var(--color-hardgrey);
 	background-color: var(--color-black);color: var(--color-hardgrey);}
 .medias#page-header {border-bottom:10px solid var(--color-grey);
@@ -183,6 +183,9 @@ img.dialog-svg {width:120px;height:150px;}
     aside.thumb-3 p {margin:1em 0 1em 0;border-bottom: thin solid #eee;}
 }
 @media (max-width: 767px) {
+    .cover#page-header {padding-top:120px;}
+    .cover#page-header h1 {line-height:0.8em;font-size:23px ;}
+    .cover#page-header h2 {line-height:1.2em;font-size:15px ;}
 	#dialog .icon-alarm svg {max-width:16px!important;}
 	#dialog dialog {}
 	#dialog footer {padding:12px;border-radius:0 0 6px 6px;}
