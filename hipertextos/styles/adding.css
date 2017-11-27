@@ -96,7 +96,9 @@ img.big-icon {width:64px;padding-top:16px;}
 -webkit-column-break-inside: avoid;-moz-column-break-inside:avoid;-moz-page-break-inside:avoid;page-break-inside: avoid;}
 /* Dialog */
 #dialog .icon-alarm svg {max-width:23px!important;}
+#dialog {max-height:80%;overflow:hidden;}
 #dialog dialog {border:none;border-radius:7px 7px 6px 6px;}
+#dialog dialog p {text-align:center;color:var(--color-grey);}
 #dialog header {border:none;padding:21px;border-radius:6px 6px 0 0;}
 #dialog header h2 svg {width:32px;margin:0px 12px 0 0;}
 #dialog header h2 {font-size: 2.3em;margin-bottom:6px;}
