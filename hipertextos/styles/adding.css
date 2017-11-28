@@ -202,6 +202,8 @@ img.dialog-svg {width:120px;height:150px;}
    	img.dialog-svg {width:45px!important;height:45px;}
    	#covers article {width: 100%;}
     .cover-page .thumb-9, .cover-page .thumb-3 {width: 100%;}
+    #page-nav a {font-size: 10px;}
+    #page-nav img {max-width:32px;}
     #section-web .cell-x1 {	width: 20%;}
     #section-web .cell-10 {width: 100% !important;margin:0;}
     #responsive img {width:256px;}
