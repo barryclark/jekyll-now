@@ -12,7 +12,7 @@
     <meta name="description" content="{{ site.description }}">
 
     {% if page.thumbnail %}
-       <meta property="og:image" content="{{ site.baseurl }}{{ page.thumbnail }}">
+       <meta property="og:image" content="{{ site.baseurl }}/{{ page.thumbnail }}">
     {% endif %}
     <!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -25,6 +25,9 @@
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
     {% if page.style %}
        <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/specialcss/{{ page.style }}.css" />
+    {% endif %}
+    feed.xml" />
+    {% if page.java %}
        <script type='text/javascript' src="{{ site.baseurl }}/specialjs/{{ page.java }}.js"></script>
     {% endif %}
     {% if page.id %}
