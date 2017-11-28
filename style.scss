@@ -20,7 +20,7 @@ html {
 body {
 	background: $white;
   font: 18px/1.4 $helvetica;
-  color: $linear-gradient(to bottom, #66ffff 0%, #0b0c10 100%);
+  color: linear-gradient(to bottom, #66ffff 0%, #0b0c10 100%);
 }
 
 .container {
