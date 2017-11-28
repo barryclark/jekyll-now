@@ -1,0 +1,35 @@
+---
+layout: post
+title: My plan for grad school
+---
+
+Going into undergrad, it was obvious I was going to do either computer science or mechanical engineering.
+I wanted to do robotics, but wasn't very interested in the E.E. side of things (turns out I like it more than I thought I would).
+I ended up majoring in M.E. for a simple reason: I could minor in C.S., but not M.E..
+So now I'm thinking about grad school and I'm realizing I'd like to explore the more R&D side of things, which leans C.S. heavy.
+
+Enter Georgia Tech's OMSCS program. 
+It's an online masters in C.S..
+It's from a great univeristy.
+It has a robotics and computer vision specialization.
+It's cheap.
+I'm in.
+
+So, I'm changing my self learning plans. 
+Before, I had been using [OSSU](https://github.com/ossu)'s computer science and data science curriculums to pick classes to take and things to learn.
+To be the best applicant possible, I'm going to change to a much more focused list of classes.
+
+| Topic | Class | 
+| ----- | --------- |
+| Git/Github | [How to use Git](https://www.udacity.com/course/how-to-use-git-and-github--ud775) |
+| C Refresh | [Modern C](https://github.com/mattboler/ModernC) |
+| Java Refresh | [Software Construction: Data Abstraction](https://www.edx.org/course/software-construction-data-abstraction-ubcx-softconst1x) |
+| Python Refresh | [Introduciton to Computer Science and Programming Using Python](https://www.edx.org/course/introduction-computer-science-mitx-6-00-1x-11) |
+| Math Refresh | [Mathematics for Computer Science](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-042j-mathematics-for-computer-science-spring-2015/index.htm) |
+| AI Introduction | [Intro to Artificial Intelligence](https://www.udacity.com/course/intro-to-artificial-intelligence--cs271) |
+| Operating Systems Introduction | [Nand to Tetris](https://www.coursera.org/learn/build-a-computer) |
+
+I'm already working on the C refresher. 
+I'm also taking a Diff Eq refresh to prepare for the spring, and edx's robotics micromasters for fun. 
+After I finish the Diff Eq refresh, I'll cut down to two classes at a time.
+
