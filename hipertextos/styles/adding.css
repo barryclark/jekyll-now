@@ -21,7 +21,7 @@ section.cover-justify p {padding: 6px 18px 0 18px;line-height: 23px;font-size: 1
 #site-nav a b {text-transform: uppercase;font-weight: lighter ;}
 #site-nav a b:before {border-bottom: thin solid #252525;content: ' ';display: block;position: absolute;left: 46%;right: 0;width: 8%;padding-bottom: 2px;}
 #site-nav a b:after {border-bottom: thin solid #252525;content: ' ';display: block;position: absolute;left: 46%;right: 0;width: 8%;margin-top: -2px;}
-#current-nav {color:#fff !important;}
+#current-nav, #current-nav:visited {color:#fff !important;}
 .cover h2 { letter-spacing: 0.001em;font-weight: normal; }
 .nav-scroll label {font-size: 11px;line-height: 12px;padding: 10px;font-weight: normal;}
 .nav-scroll label img {width: 18px;height: 18px;margin-bottom: 8px;}
