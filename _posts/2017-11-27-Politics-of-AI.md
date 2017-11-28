@@ -3,6 +3,7 @@ layout: post
 title: Democratizing AI for the Benefit of Society
 intro: Reflections on Web Summit 2017 part 1. Thinking about the mid and long-term effects of AI on society.
 style: aibg
+thumbnail: 'images/websummit2017-th.jpg'
 ---
 
 Will artificial intelligence<sup>1</sup> be the best or worst thing to ever happen in humanity? This overarching question was raised by Stephen Hawking, who opened Web Summit 2017, the largest tech conference in the world with almost 70,000 attendees. Over a thousand speakers in 25 sub-conferences would ponder over this theme whether their topic was directly about AI or not.
