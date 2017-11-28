@@ -31,7 +31,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: $gothamMedium;
   color: $armadillo;
   font-weight: bold;  
-  line-height: 1.7;
+  line-height: 1.2;
   padding: 0;
 
   @include mobile {
@@ -104,6 +104,10 @@ img {
 .date {
   font-style: italic;
   font-size: 80%;
+}
+
+sup, sub{
+  font-size: .6em;
 }
 
 // Specify the color of the selection
