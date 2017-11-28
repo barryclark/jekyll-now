@@ -9,7 +9,12 @@
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }}</title>
 
     <meta name="author" content="{{ site.name }}" />
-    <meta name="description" content="{{ site.description }}">
+    
+    {% if page.intro %}
+       <meta name="description" content="{{ page.intro }}">
+    {% else %}   
+       <meta name="description" content="{{ site.description }}">
+    {% endif %}
 
     {% if page.thumbnail %}
        <meta property="og:image" content="http://mika.design/{{ page.thumbnail }}">
