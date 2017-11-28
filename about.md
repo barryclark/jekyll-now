@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-TESTING
+TESTING 123
 
 My name is Matt Boler and I'm a student at Auburn University, pursuing an Honor's BS in Mechanical Engineering with a Computer Science minor. I will be graduating in May 2019. I have professional experience in manufacturing engineering and hobby/competitive team experience in robotics and aerospace, mostly focused on programming and simulations. I spend most of my free time reading and taking online classes, both to expand on what I'm learning in my degree and to learn about anything that interests me. 
 
