@@ -19,20 +19,20 @@ How did they come to these numbers? I'm not sure; part of me thinks it has to do
 
 I'm going to try to analyze this safe withdrawal rate number by some math. First, I'm going to define some single-letter variables for the next few equations:
 
-```
+`
 p = principal
 r = interest rate
 b = balance after interest is applied
 i = interest earned
-```
+`
 
 Now let's define some equations. These are all finance equations that well should all know & love:
 
-```
+`
 p + i = b
 pr = i (for one period)
 p(1 + r) = b (for one period)
-```
+`
 
 Using these equations, let's answer our initial question:
 
@@ -60,7 +60,7 @@ Only one equation makes sense for this, names `pr = i`. Since we're solving for 
 
 Now, the results look something like:
 
-```
+`
 $100,000 / 0.05% = $200,000,000
 $100,000 / 1.00% = $10,000,000
 $100,000 / 1.25% = $8,000,000
@@ -68,7 +68,7 @@ $100,000 / 4.00% = $2,500,000
 $100,000 / 5.00% = $2,000,000
 $100,000 / 20.00% = $500,000
 $100,000 / 1000.00% = $10,000
-```
+`
 
 If I just keep my money in a typical, crappy-rate savings account, I need a gigantic $200 million to live on the interest. Raising the interest rate to what Ally gave just a year ago, that amount is greatly reduced to only ten million dollars - or eight million dollars if you use today's rate. That little bit of interest goes a long way.
 
@@ -80,7 +80,7 @@ The S&P 500 return and bitcoin return were just for fun. Both are above average 
 
 Note that above I assumed income equals expenses. Let's do three more assumptions: expenses are 75%, 50%, and 25% of income:
 
-```
+`
 75% &times; $100,000 / 0.05% = $150,000,000
 75% &times; $100,000 / 1.00% = $7,500,000
 75% &times; $100,000 / 1.25% = $6,000,000
@@ -88,9 +88,9 @@ Note that above I assumed income equals expenses. Let's do three more assumption
 75% &times; $100,000 / 5.00% = $1,500,000
 75% &times; $100,000 / 20% = $375,000
 75% &times; $100,000 / 1000% = $7,500
-```
+`
 
-```
+`
 50% &times; $100,000 / 0.05% = $100,000,000
 50% &times; $100,000 / 1.00% = $5,000,000
 50% &times; $100,000 / 1.25% = $4,000,000
@@ -98,9 +98,9 @@ Note that above I assumed income equals expenses. Let's do three more assumption
 50% &times; $100,000 / 5.00% = $1,000,000 
 50% &times; $100,000 / 20% = $250,000
 50% &times; $100,000 / 1000% = $5,000
-```
+`
 
-```
+`
 25% &times; $100,000 / 0.05% = $50,000,000
 25% &times; $100,000 / 1.00% = $2,500,000
 25% &times; $100,000 / 1.25.00% = $2,000,000
@@ -108,4 +108,4 @@ Note that above I assumed income equals expenses. Let's do three more assumption
 25% &times; $100,000 / 5.00% = $500,000
 25% &times; $100,000 / 20% = $125,000
 25% &times; $100,000 / 1000% = $2,500
-```
+`
