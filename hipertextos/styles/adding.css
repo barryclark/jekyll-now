@@ -194,10 +194,10 @@ img.dialog-svg {width:120px;height:150px;}
     #section-print {background-image: url("/img/print.jpg");}
 }
 @media (min-width: 768px) {
-    #page-header .cover {background-image: url("/img/web_m.jpg");}
-    #section-web {background-image: url("/img/home_m.jpg");}
+    #page-header .cover {background-image: url("/img/home_m.jpg");}
+    #section-web {background-image: url("/img/web_m.jpg");}
     #section-brand {background-image: url("/img/blog_m.jpg");}
-    #section-paint {background-image: url("/img/print_m.jpg");}
+    #section-paint {background-image: url("/img/flower_m.jpg");}
     #section-print {background-image: url("/img/print_m.jpg");}
 }
 @media (max-width: 768px) {
