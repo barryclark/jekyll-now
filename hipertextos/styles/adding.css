@@ -162,7 +162,11 @@ img.dialog-svg {width:120px;height:150px;}
 }
 @media (max-width: 1500px) {
    	img.dialog-svg {width:80px!important;height:70px;}
-	#covers article {width: 49.9999999999%;}
+    #covers { text-rendering: optimizeLegibility;}
+    #covers article h4{font-size:95%;}
+    #covers article h5{font-size:18px;}
+    #covers .cover-justify p{font-size:14px!important;letter-spacing: 0.001em;}
+    #covers article p em{font-size:15px!important;letter-spacing: 0.001em;}
     #section-web .pushed-6 {}
     #section-web .cell-10 {}
     #section-web .cell-x1 {width: 20%;}
@@ -196,6 +200,11 @@ img.dialog-svg {width:120px;height:150px;}
     .cover-page p {font-size:15px;line-height:1.5em;}
     .cover-page ul li {font-size:12px;line-height:1.3em;margin-top:5px;padding:0;}
     .cover-page strong em a {width:100%;margin-bottom: 5px;}
+    #covers article h4{font-size:32px;}
+    #covers article h5{font-size:26px;}
+    #covers .cover-justify p{font-size:18px!important;letter-spacing: 0.005em;line-height:1.8em;}
+    #covers article p em{font-size:19px!important;letter-spacing: 0.015em;}
+    #covers article img {margin-top:64px;}
 	#dialog .icon-alarm svg {max-width:16px!important;margin:0;padding:0;}
 	#dialog dialog p {font-size:12px;line-height:1.5em;}
 	#dialog header {padding:12px;border-radius:6px 6px 0 0;}
