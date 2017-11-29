@@ -194,7 +194,7 @@ img.dialog-svg {width:120px;height:150px;}
     aside.thumb-3 p {margin:1em 0 1em 0;border-bottom: thin solid #eee;}
 }
 @media (max-width: 768px) {
-    #page-header.cover {background-image: url("/img/home_m.jpg"); background-size:100% auto;background-position:fixed !important; }
+    #page-header.cover {background-image: url("/img/home_b.jpg"); background-size:100% auto;background-position:fixed !important; }
     #section-web {background-image: url("/img/texture/h_paper.png");background-size:200px 200px;background-repeat: repeat;}
     #section-brand {background-image: url("/img/texture/yellow_skulls.png");background-size:400px 400px;background-repeat: repeat;}
     #section-paint {background-image: url("/img/texture/dark.png");background-size:180px 180px;background-repeat: repeat;}
