@@ -75,7 +75,6 @@ form .button {border:thin solid currentColor;margin-top:0.6em;}
 #section-brand h4 {margin-bottom:0;}
 #section-brand h5 {line-height:1.3em;}
 #section-brand .thumb-4 img {max-width:48%;}
-#browser-ios.thumb {max-height:46px;margin:0!important;padding:0!important;}
 #browser-ios svg {width:23px;color:var(--color-translucentblack);margin:0 5px 0 0;}
 #section-brand h4{line-height:1.18em;}
 img.big-icon {width:64px;padding-top:16px;}
@@ -213,7 +212,7 @@ img.dialog-svg {width:120px;height:150px;}
     #covers .cover-justify p{font-size:18px!important;letter-spacing: 0.005em;line-height:1.8em;}
     #covers article p em{font-size:19px!important;letter-spacing: 0.015em;}
     #covers article img {margin-top:64px;}
-    #browser-ios.thumb {}
+    #browser-ios.thumb {display:none;visibility:hidden;}
 	#dialog .icon-alarm svg {max-width:16px!important;margin:0;padding:0;}
 	#dialog dialog p {font-size:12px;line-height:1.5em;}
 	#dialog header {padding:12px;border-radius:6px 6px 0 0;}
