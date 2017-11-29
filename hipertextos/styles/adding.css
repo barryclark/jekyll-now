@@ -2,10 +2,10 @@
 /* by Acozar/Miralles  ADDING CSS */
 /* ------------------------------------------------------------ Resets */
 #page-header.cover {background-image: url("/img/home.jpg");background-position:fixed;}
-#section-web {background-image: url("/img/web.jpg");}
-#section-brand {background-image: url("/img/blog.jpg");}
-#section-paint {background-image: url("/img/flower.jpg");}
-#section-print {background-image: url("/img/print.jpg");}
+#section-web {background-image: url("/img/web.jpg");background-position:fixed;}
+#section-brand {background-image: url("/img/blog.jpg");background-position:fixed;}
+#section-paint {background-image: url("/img/flower.jpg");background-position:fixed;}
+#section-print {background-image: url("/img/print.jpg");background-position:fixed;}
 #site-nav, footer, #follows, #follows-big, #icons, #covers, .nav-scroll, #web-credits, #page-header {
 text-align: center;}
 body {text-align: justify;-moz-hyphens:none;-ms-hyphens:none;-webkit-hyphens:none;-o-hyphens:none;hyphens:none;word-wrap:none;}
@@ -197,7 +197,7 @@ img.dialog-svg {width:120px;height:150px;}
     #section-web {background-image: url("/img/web_m.jpg");background-size:100% auto;}
     #section-brand {background-image: url("/img/blog_m.jpg");background-size:100% auto;}
     #section-paint {background-image: url("/img/flower_m.jpg");background-size:100% auto;}
-    #section-print {background-image: url("/img/print_m.jpg");background-size:100% auto}
+    #section-print {background-image: url("/img/print_m.jpg");background-size:100% auto;}
 }
 @media (max-width: 768px) {
     .cover#page-header {padding-top:120px;}
