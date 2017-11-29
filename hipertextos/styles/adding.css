@@ -200,8 +200,7 @@ img.dialog-svg {width:120px;height:150px;}
     #section-brand {background-image: url("/img/texture/yellow_skulls.png");background-size:400px 400px;background-repeat: repeat;}
     #section-paint {background-image: url("/img/texture/dark.png");background-size:180px 180px;background-repeat: repeat;}
     #section-print {background-image: url("/img/texture/white_tree.png");background-size:350px 350px;background-repeat: repeat;}
-}
-@media (max-width: 768px) {
+
     .cover#page-header {padding-top:120px;}
     .cover#page-header h1 {line-height:0.8em;font-size:23px ;}
     .cover#page-header h2 {line-height:1.2em;font-size:15px ;}
@@ -214,7 +213,7 @@ img.dialog-svg {width:120px;height:150px;}
     #covers .cover-justify p{font-size:18px!important;letter-spacing: 0.005em;line-height:1.8em;}
     #covers article p em{font-size:19px!important;letter-spacing: 0.015em;}
     #covers article img {margin-top:64px;}
-    #browser-ios .thumb {margin:0;padding:0;line-height:2.5em;}
+    #browser-ios.thumb {margin:0;padding:0;line-height:1.5em;}
 	#dialog .icon-alarm svg {max-width:16px!important;margin:0;padding:0;}
 	#dialog dialog p {font-size:12px;line-height:1.5em;}
 	#dialog header {padding:12px;border-radius:6px 6px 0 0;}
