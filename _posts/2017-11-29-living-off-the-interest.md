@@ -3,6 +3,7 @@ layout: post
 title: Living off the Interest
 tags: [math]
 keywords: [lottery, interest, financial, financial independence, safe withdrawal rate, interest rate, rate]
+image: /images/covers/2017-11-29-living-off-the-interest.png
 ---
 
 A common topic of conversation is what people would do if they won the lottery. People often dream of winning it big any buying big houses, nice cars, and quitting their jobs. My brothers and I weren't immune to this topic, however, we often would have another answer as to what to do with lottery winnings: *put it in the bank and live off the interest.*
