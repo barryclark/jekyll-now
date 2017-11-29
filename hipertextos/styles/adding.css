@@ -178,7 +178,7 @@ img.dialog-svg {width:120px;height:150px;}
     #section-paint h5 {font-size: 19px;}
     #section-paint em {font-size: 14px;}
 	#resumed-paint svg {width:23px;}
-    #browsers-ios .thumb {width: 49.9999999999% !important;}
+    #browser-ios .thumb {width: 49.9999999999% !important;}
   	.cover-page #page-main ul {-webkit-column-count: 2;-moz-column-count: 2;column-count: 2;}
     .cover-page p {font-size:16px;line-height:1.8em;}
     .cover-page ul li {font-size:14px;line-height:1.5em;margin-top:5px;padding:0;}
