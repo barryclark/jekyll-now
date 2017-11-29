@@ -208,8 +208,7 @@ img.dialog-svg {width:120px;height:150px;}
     .cover-page .thumb-9, .cover-page .thumb-3 {width: 100%;}
     aside.thumb-3 {text-align: center;margin-top:2.1em;}
     aside.thumb-3 h2{font-size: 2.6em;color: var(--color-hardgrey) }
-    #page-nav a {font-size: 10px;}
-    #page-nav img {max-width:32px;}
+    #page-nav a {font-size: 13px;}
     #section-web .cell-x1 {	width: 20%;}
     #section-web .cell-10 {width: 100% !important;margin:0;}
     #responsive img {width:256px;}
