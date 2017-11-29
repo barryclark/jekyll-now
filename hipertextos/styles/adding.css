@@ -194,10 +194,10 @@ img.dialog-svg {width:120px;height:150px;}
 }
 @media (max-width: 768px) {
     #page-header.cover {background-image: url("/img/home_m.jpg"); background-size:100% auto;background-position:fixed !important; }
-    #section-web {background-image: url("/img/texture/h_texture.png");background-size:400px 400px; background-repeat: repeat !important;}
+    #section-web {background-image: url("/img/texture/grey-geek.png");background-size:264px 264px;background-repeat: repeat;}
     #section-brand {background-image: url("/img/texture/yellow_skulls.png");background-size:400px 400px;background-repeat: repeat;}
-    #section-paint {background-image: url("/img/texture/grey-geek.png");background-size:264px 264px;background-repeat: repeat;}
-    #section-print {background-image: url("/img/texture/light-tile.gif");background-size:400px 400px;background-repeat: repeat;}
+    #section-paint {background-image: url("/img/texture/dark.png");background-size:180px 180px;background-repeat: repeat;}
+    #section-print {background-image: url("/img/texture/white_tree.png");background-size:350px 350px;background-repeat: repeat;}
 }
 @media (max-width: 768px) {
     .cover#page-header {padding-top:120px;}
