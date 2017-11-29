@@ -1,15 +1,16 @@
 /* BarcelonaCSS */
 /* by Acozar/Miralles  ADDING CSS */
 /* ------------------------------------------------------------ Resets */
-#page-header.cover {background-image: url("/img/home.jpg");background-position:fixed;}
-#section-web {background-image: url("/img/web.jpg");background-position:fixed;}
-#section-brand {background-image: url("/img/blog.jpg");background-position:fixed;}
-#section-paint {background-image: url("/img/flower.jpg");background-position:fixed;}
-#section-print {background-image: url("/img/print.jpg");background-position:fixed;}
 #site-nav, footer, #follows, #follows-big, #icons, #covers, .nav-scroll, #web-credits, #page-header {
 text-align: center;}
 body {text-align: justify;-moz-hyphens:none;-ms-hyphens:none;-webkit-hyphens:none;-o-hyphens:none;hyphens:none;word-wrap:none;}
 p, ul {font-size: 18px;line-height: 27px;}
+#page-header.cover {background-image: url("/img/home.jpg");background-position:fixed;}
+#page-header.serveis-header {background-image: url("/img/texture/dark.png");background-size:180px 180px;background-repeat: repeat;}
+#section-web {background-image: url("/img/web.jpg");background-position:fixed;}
+#section-brand {background-image: url("/img/blog.jpg");background-position:fixed;}
+#section-paint {background-image: url("/img/flower.jpg");background-position:fixed;}
+#section-print {background-image: url("/img/print.jpg");background-position:fixed;}
 .text-left {text-align:left;}
 .text-right {text-align:right;}
 em hr {border-bottom:thin solid #eee;}	
