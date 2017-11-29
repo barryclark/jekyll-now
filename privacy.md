@@ -4,7 +4,7 @@ title: Privacy Policy
 permalink: /privacy/
 ---
 
-*Revised April 17, 2017.*
+*Revised November 29, 2017.*
 
 ## Google Analytics
 
@@ -30,7 +30,7 @@ This site participates in the [Amazon Services LLC Associates Program](https://a
 
 ### Comments
 
-The comment section underneath most of the posts is Facebook's comment plugin. To post comments requires a Facebook account and adherence to [Facebook's Data Policy](https://www.facebook.com/policy.php).
+I use a Jekyll and GitHub Page commenting system known as [StaticMan](https://hendrixjoseph.github.io/new-commenting-system-staticman/). Each comment requires a comment and an email. I never see the email nor saved it in plaintext. It is hashed and stored using MD5, which allows me to access profile images associated with the email via [Gravatar](https://www.gravatar.com).
 
 ### Share
 
