@@ -6,7 +6,7 @@ text-align: center;}
 body {text-align: justify;-moz-hyphens:none;-ms-hyphens:none;-webkit-hyphens:none;-o-hyphens:none;hyphens:none;word-wrap:none;}
 p, ul {font-size: 18px;line-height: 27px;}
 #page-header.cover {background-image: url("/img/home.jpg");background-position:fixed;}
-#page-header.serveis-header {background-image: url("/img/texture/dark.png");background-size:180px 180px;background-repeat: repeat;}
+#page-header.serveis-header {background-image: url("/img/texture/grey-geek.png");background-size:198px 200px;background-repeat: repeat;}
 #section-web {background-image: url("/img/web.jpg");background-position:fixed;}
 #section-brand {background-image: url("/img/blog.jpg");background-position:fixed;}
 #section-paint {background-image: url("/img/flower.jpg");background-position:fixed;}
@@ -75,6 +75,7 @@ form .button {border:thin solid currentColor;margin-top:0.6em;}
 #section-brand h4 {margin-bottom:0;}
 #section-brand h5 {line-height:1.3em;}
 #section-brand .thumb-4 img {max-width:48%;}
+#browser-ios {max-height:200px;}
 #browsers-ios svg {width:23px;color:var(--color-translucentblack);margin:0 3px 0 0;}
 #section-brand h4{line-height:1.18em;}
 img.big-icon {width:64px;padding-top:16px;}
