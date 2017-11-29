@@ -193,11 +193,11 @@ img.dialog-svg {width:120px;height:150px;}
     aside.thumb-3 p {margin:1em 0 1em 0;border-bottom: thin solid #eee;}
 }
 @media (max-width: 768px) {
-    #page-header.cover {background-image: url("/img/home_m.jpg"); background-size:100% auto; }
-    #section-web {background-image: url("/img/web_m.jpg");background-size:100% auto;}
-    #section-brand {background-image: url("/img/blog_m.jpg");background-size:100% auto;}
-    #section-paint {background-image: url("/img/flower_m.jpg");background-size:100% auto;}
-    #section-print {background-image: url("/img/print_m.jpg");background-size:100% auto;}
+    #page-header.cover {background-image: url("/img/home_m.jpg"); background-size:100% auto;background-position:fixed !important; }
+    #section-web {background-image: url("/img/web_m.jpg");background-size:100% auto;background-position:fixed !important;}
+    #section-brand {background-image: url("/img/blog_m.jpg");background-size:100% auto;background-position:fixed !important;}
+    #section-paint {background-image: url("/img/flower_m.jpg");background-size:100% auto;background-position:fixed !important;}
+    #section-print {background-image: url("/img/print_m.jpg");background-size:100% auto;background-position:fixed !important;}
 }
 @media (max-width: 768px) {
     .cover#page-header {padding-top:120px;}
