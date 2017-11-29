@@ -30,7 +30,7 @@ permalink: /sitemap/
 
 ## Pages
 
-{% for page in (1..21) %}
+{% for page in (1..23) %}
 * [Page {{ page }}]({% unless page == 1 %}{{ site.paginate_path | replace: ':num', page }}{% endunless %}/){% endfor %}
 
 ## 404s
