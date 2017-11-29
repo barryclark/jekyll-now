@@ -187,14 +187,14 @@ img.dialog-svg {width:120px;height:150px;}
     aside.thumb-3 a {font-size:18px;}
     aside.thumb-3 a svg {width:23px;}
     aside.thumb-3 p {margin:1em 0 1em 0;border-bottom: thin solid #eee;}
-    #page-header .cover {background-image: url("/img/home.jpg");}
+    #page-header.cover {background-image: url("/img/home.jpg");}
     #section-web {background-image: url("/img/web.jpg");}
     #section-brand {background-image: url("/img/blog.jpg");}
     #section-paint {background-image: url("/img/flower.jpg");}
     #section-print {background-image: url("/img/print.jpg");}
 }
 @media (min-width: 768px) {
-    #page-header .cover {background-image: url("/img/home_m.jpg");}
+    #page-header.cover {background-image: url("/img/colors.jpg");}
     #section-web {background-image: url("/img/web_m.jpg");}
     #section-brand {background-image: url("/img/blog_m.jpg");}
     #section-paint {background-image: url("/img/flower_m.jpg");}
