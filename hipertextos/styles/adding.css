@@ -212,8 +212,8 @@ img.dialog-svg {width:120px;height:150px;}
     #section-web .cell-x1 {	width: 20%;}
     #section-web .cell-10 {width: 100% !important;margin:0;}
     #resumed-web em, #responsive {margin-top:10px;margin-bottom:10px;padding-bottom: 10px;padding-top: 10px;}
-    #resumed-web em svg {max-width:21px;}
-    #resumed-web em {font-size: 10px;line-height:1.9em;}
+    #resumed-web em svg {max-width:21px;max-height:21px;}
+    #resumed-web em {font-size: 10px;line-height:21px;}
     #responsive img {width:256px;}
     #section-paint .pushed-6 {margin-left:10%!important;}
     #section-paint .thumb-6 {width:90%;line-height:.95em;}
