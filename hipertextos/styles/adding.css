@@ -189,11 +189,11 @@ img.dialog-svg {width:120px;height:150px;}
     aside.thumb-3 p {margin:1em 0 1em 0;border-bottom: thin solid #eee;}
 }
 @media (min-width: 768px) {
-    #page-header {background-image: url("home_m.jpg");}
-    #section-web {background-image: url("web_m.jpg");}
+    #page-header {background-image: url("/img/home_m.jpg");}
+    #section-web {background-image: url("/img/web_m.jpg");}
     #section-brand {background-image: url("/img/blog_m.jpg");}
-    #section-paint {background-image: url("./img/flower_m.jpg");}
-    #section-print {background-image: url("../img/print_m.jpg");}
+    #section-paint {background-image: url("/img/flower_m.jpg");}
+    #section-print {background-image: url("/img/print_m.jpg");}
 }
 @media (max-width: 768px) {
     .cover#page-header {padding-top:120px;}
