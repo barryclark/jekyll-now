@@ -174,14 +174,18 @@ img.dialog-svg {width:120px;height:150px;}
 	#resumed-paint svg {width:23px;}
     #browsers-ios .thumb {width: 49.9999999999% !important;}
   	.cover-page #page-main ul {-webkit-column-count: 2;-moz-column-count: 2;column-count: 2;}
-    .cover-page .thumb-9, .cover-page .thumb-3, .thumb-5, .thumb-6 {width: 100%;}
+    .cover-page p {font-size:16px;line-height:1.8em;}
+    .cover-page ul li {font-size:14px;line-height:1.5em;margin-top:5px;padding:0;}
+    .thumb-5, .thumb-6 {width: 100%;}
     #coffee .thumb-2 {width: 33.33333%!important;}
     #coffee .pushed-5 {margin-left:33.33333%!important;}
 	#section-brand h5 {line-height:1.0em;}
     #resumed-print.cell-6 {width:100%!important;}
     #resumed-print.pushed-6 {margin-left:0;}
     strong em a {font-size: 16px;}
-    aside.thumb-3 {margin-top:1.2em;}
+    aside.thumb-3 {margin-top:1.em;}
+    aside.thumb-3 a {font-size:18px;}
+    aside.thumb-3 a svg {width:23px;}
     aside.thumb-3 p {margin:1em 0 1em 0;border-bottom: thin solid #eee;}
 }
 @media (max-width: 767px) {
@@ -202,6 +206,8 @@ img.dialog-svg {width:120px;height:150px;}
    	img.dialog-svg {width:45px!important;height:45px;}
    	#covers article {width: 100%;}
     .cover-page .thumb-9, .cover-page .thumb-3 {width: 100%;}
+    aside.thumb-3 {text-align: center;margin-top:2.1em;}
+    aside.thumb-3 h2{font-size: 2.6em;color: var(--color-hardgrey) }
     #page-nav a {font-size: 10px;}
     #page-nav img {max-width:32px;}
     #section-web .cell-x1 {	width: 20%;}
