@@ -75,7 +75,7 @@ form .button {border:thin solid currentColor;margin-top:0.6em;}
 #section-brand h4 {margin-bottom:0;}
 #section-brand h5 {line-height:1.3em;}
 #section-brand .thumb-4 img {max-width:48%;}
-#browser-ios.thumb {max-height:100%;margin:0!important;padding:0!important;}
+#browser-ios.thumb {max-height:100px;margin:0!important;padding:0!important;}
 #browser-ios svg {width:23px;color:var(--color-translucentblack);margin:0 5px 0 0;}
 #section-brand h4{line-height:1.18em;}
 img.big-icon {width:64px;padding-top:16px;}
