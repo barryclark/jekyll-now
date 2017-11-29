@@ -212,7 +212,7 @@ img.dialog-svg {width:120px;height:150px;}
     #covers .cover-justify p{font-size:18px!important;letter-spacing: 0.005em;line-height:1.8em;}
     #covers article p em{font-size:19px!important;letter-spacing: 0.015em;}
     #covers article img {margin-top:64px;}
-    #browser-ios em {margin:0;padding:0;line-height:2.5em;}
+    #browser-ios .thumb {margin:0;padding:0;line-height:2.5em;}
 	#dialog .icon-alarm svg {max-width:16px!important;margin:0;padding:0;}
 	#dialog dialog p {font-size:12px;line-height:1.5em;}
 	#dialog header {padding:12px;border-radius:6px 6px 0 0;}
