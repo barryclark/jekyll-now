@@ -244,3 +244,6 @@ img.dialog-svg {width:120px;height:150px;}
     #diamond img {display:none;}
     strong em a {font-size: 15px;}
 }
+@media (max-width: 480px) {
+    #page-header.cover {background-image: url("/img/home_m.jpg"); background-size:100% auto;background-position:fixed !important; }
+}
