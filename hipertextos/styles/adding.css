@@ -6,7 +6,7 @@ text-align: center;}
 body {text-align: justify;-moz-hyphens:none;-ms-hyphens:none;-webkit-hyphens:none;-o-hyphens:none;hyphens:none;word-wrap:none;}
 p, ul {font-size: 18px;line-height: 27px;}
 #page-header.cover {background-image: url("/img/home.jpg");background-position:fixed;}
-#page-header.serveis-header {background-image: url("/img/texture/grey-geek.png");background-size:198px 200px;background-repeat: repeat;}
+#page-header.serveis-header {background-image: url("/img/texture/dark_design.png");background-size:46px 29px;background-repeat: repeat;}
 #section-web {background-image: url("/img/web.jpg");background-position:fixed;}
 #section-brand {background-image: url("/img/blog.jpg");background-position:fixed;}
 #section-paint {background-image: url("/img/flower.jpg");background-position:fixed;}
@@ -196,7 +196,7 @@ img.dialog-svg {width:120px;height:150px;}
 }
 @media (max-width: 768px) {
     #page-header.cover {background-image: url("/img/home_m.jpg"); background-size:100% auto;background-position:fixed !important; }
-    #section-web {background-image: url("/img/texture/naturalwhite.png");background-size:400px 400px;background-repeat: repeat;}
+    #section-web {background-image: url("/img/texture/h_paper.png");background-size:200px 200px;background-repeat: repeat;}
     #section-brand {background-image: url("/img/texture/yellow_skulls.png");background-size:400px 400px;background-repeat: repeat;}
     #section-paint {background-image: url("/img/texture/dark.png");background-size:180px 180px;background-repeat: repeat;}
     #section-print {background-image: url("/img/texture/white_tree.png");background-size:350px 350px;background-repeat: repeat;}
