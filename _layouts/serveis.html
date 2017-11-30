@@ -24,7 +24,11 @@
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
 
     {% include favicons.html %}
-	
+	<style type="text/css">
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
   </head>
 
   <body>
@@ -173,7 +177,6 @@
     ================================================== -->
   	<script src="{{ site.baseurl }}/hipertextos/js/jquery.js"></script>
   	<script src="{{ site.baseurl }}/hipertextos/js/icons.js"></script>
-  	<script src="{{ site.baseurl }}/hipertextos/js/anime.min.js"></script>
     {% include analytics.html %}
   </body>
 </html>
