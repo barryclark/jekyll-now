@@ -1,0 +1,9 @@
+/* Covers & Section */
+/* by Miralles  ADDING CSS */
+/* ------------------------------------------------------------ */
+#page-header.cover {background-image: url("/img/home.jpg");background-position:fixed;}
+#page-header.serveis-header {background-image: url("/img/texture/dark_design.png");background-size:46px 29px;background-repeat: repeat;}
+#section-web {background-image: url("/img/web.jpg");background-position:fixed;}
+#section-brand {background-image: url("/img/blog.jpg");background-position:fixed;}
+#section-paint {background-image: url("/img/flower.jpg");background-position:fixed;}
+#section-print {background-image: url("/img/print.jpg");background-position:fixed;}
