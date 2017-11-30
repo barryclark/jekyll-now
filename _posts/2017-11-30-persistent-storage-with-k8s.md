@@ -13,6 +13,6 @@ My slides from my talk on "Persistent Storage with Kubernetes in Production - wh
 
 Resource links:
 * [Try StorageOS with browser-based tutorials](https://my.storageos.com/main/tutorials)
-* [Quickstart](https://storageos.com/kubernetes) - get StorageOS from the Docker Hub
+* [Quickstart](https://storageos.com/kubernetes) - install StorageOS with Kubernetes
 * [StorageOS slack channel](https://slack.storageos.com)
 * [Cloud Native London December](https://www.meetup.com/Cloud-Native-London/events/243917004/)
