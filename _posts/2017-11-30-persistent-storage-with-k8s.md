@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Slides] [Nov 2017] Persistent storage with Kubernetes in production - Microservices conference"
+title: "[Slides] [Nov 2017] Persistent storage with Kubernetes in production - Kubernetes London"
 ---
 
 <object data="http://www.oicheryl.com/resources/persistent-storage-with-k8s.pdf" type="application/pdf" width="700px" height="700px">
@@ -14,4 +14,5 @@ My slides from my talk on "Persistent Storage with Kubernetes in Production - wh
 Resource links:
 * [Try StorageOS with browser-based tutorials](https://my.storageos.com/main/tutorials)
 * [Quickstart](https://storageos.com/kubernetes) - get StorageOS from the Docker Hub
+* [StorageOS slack channel](https://slack.storageos.com)
 * [Cloud Native London December](https://www.meetup.com/Cloud-Native-London/events/243917004/)
