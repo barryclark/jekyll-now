@@ -161,6 +161,9 @@ img.dialog-svg {width:120px;height:150px;}
 #layout-list:checked ~ #layout-result em u svg {
     width: 15px;padding:5px 0 0 0;
 }
+em small #go-up { background:rgba(0,0,0,.1);padding:15px;border-radius:50%; }
+em small #go-up:hover {background:rgba(0,0,0,.3); }
+
 @media (max-width: 1250px) {
    	img.dialog-svg {width:80px!important;height:70px;}
     #covers { text-rendering: optimizeLegibility;}
