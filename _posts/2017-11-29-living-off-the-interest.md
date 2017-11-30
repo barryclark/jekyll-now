@@ -45,7 +45,7 @@ Let's assume my household income is $100,000. We don't have an interest rate ava
 
 > Typical savings account interest rate: 0.05%
 >
-> Ally Bank savings account rate about a year ago: 1.00%
+> [Ally Bank](https://www.ally.com/) savings account rate about a year ago: 1.00%
 >
 > Ally Bank savings account now: 1.25%
 >
