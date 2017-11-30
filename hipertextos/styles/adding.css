@@ -3,10 +3,7 @@
 /* ------------------------------------------------------------ Resets */
 #site-nav, footer, #follows, #follows-big, #icons, #covers, .nav-scroll, #web-credits, #page-header {
 text-align: center;}
-body {text-align: justify;-moz-hyphens:none;-ms-hyphens:none;-webkit-hyphens:none;-o-hyphens:none;hyphens:none;word-wrap:none;
-  animation-duration: 2s;
-  animation-name: slidein;
-}
+body {text-align: justify;-moz-hyphens:none;-ms-hyphens:none;-webkit-hyphens:none;-o-hyphens:none;hyphens:none;word-wrap:none;}
 p, ul {font-size: 18px;line-height: 27px;}
 #page-header.cover {background-image: url("/img/home.jpg");background-position:fixed;}
 #page-header.serveis-header {background-image: url("/img/texture/dark_design.png");background-size:46px 29px;background-repeat: repeat;}
@@ -164,7 +161,7 @@ img.dialog-svg {width:120px;height:150px;}
 #layout-list:checked ~ #layout-result em u svg {
     width: 15px;padding:5px 0 0 0;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1250px) {
    	img.dialog-svg {width:80px!important;height:70px;}
     #covers { text-rendering: optimizeLegibility;}
     #covers article h4{font-size:95%;}
@@ -196,8 +193,15 @@ img.dialog-svg {width:120px;height:150px;}
     aside.thumb-3 a svg {width:23px;}
     aside.thumb-3 p {margin:1em 0 1em 0;border-bottom: thin solid #eee;}
 }
+@media (max-width: 1242px) {
+	#page-header.cover {background-image: url("/img/home_b.jpg");background-position:fixed;}
+	#section-web {background-image: url("/img/web_b.jpg");background-position:fixed;}
+	#section-brand {background-image: url("/img/blog_b.jpg");background-position:fixed;}
+	#section-paint {background-image: url("/img/flower_b.jpg");background-position:fixed;}
+	#section-print {background-image: url("/img/print_b.jpg");background-position:fixed;}
+}
 @media (max-width: 768px) {
-    #page-header.cover {background-image: url("/img/home_b.jpg"); background-size:100% auto;background-position:fixed !important; }
+    #page-header.cover {background-image: url("/img/home_m.jpg"); background-size:100% auto;background-position:fixed !important; }
     #section-web {background-image: url("/img/texture/h_paper.png");background-size:200px 200px;background-repeat: repeat;}
     #section-brand {background-image: url("/img/texture/yellow_skulls.png");background-size:400px 400px;background-repeat: repeat;}
     #section-paint {background-image: url("/img/texture/dark.png");background-size:180px 180px;background-repeat: repeat;}
