@@ -3,6 +3,6 @@
 
 {"posts":[
 {% for post in site.posts %}
-{"title":"{{ post.title }}","url":"{{ post.url }}","img":"{{ post.image }}"}{% unless forloop.last %},{% endunless %}
+{"title":"{{ post.title | replace: '"', '\"' }}","url":"{{ post.url }}","img":"{{ post.image }}"}{% unless forloop.last %},{% endunless %}
 {% endfor %}
 ]}
