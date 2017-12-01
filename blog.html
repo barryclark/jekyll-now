@@ -9,12 +9,12 @@ comments: true
 	<div id="layout">
 					<nav class="nav-scroll anm-moveFromLeftFade">
 						<div>
-							<label for="layout-simple" title="Simple" id="label-simple" class="anm-scaleUp delay-600"><img src="{{ site.baseurl }}/hipertextos/images/icons.svg"><br>Simple</label>
+							<label for="layout-simple" title="Simple" id="label-simple" class="anm-zoomIn delay-500"><img src="{{ site.baseurl }}/hipertextos/images/icons.svg"><br>Simple</label>
 							<label for="layout-list" title="List" id="label-list" class="anm-zoomIn delay-600"><img src="{{ site.baseurl }}/hipertextos/images/icons9.svg"><br>List</label>
-							<label for="layout-table" title="Table" id="label-table" class="anm-zoomIn-left delay-600"><img src="{{ site.baseurl }}/hipertextos/images/icons8.svg"><br>Table</label>
-							<label for="layout-gallery" title="Gallery" id="label-gallery" class="anm-zoomInUp delay-600"><img src="{{ site.baseurl }}/hipertextos/images/icons4.svg"><br>Gallery</label>
-							<label for="layout-cards" title="Cards" id="label-cards" class="anm-zoomOut delay-600"><img src="{{ site.baseurl }}/hipertextos/images/icons5.svg"><br>Cards</label>		
-							<label for="layout-tiles" title="Tiles" id="label-tiles" class="anm-scaleUp delay-600"><img src="{{ site.baseurl }}/hipertextos/images/icons6.svg"><br>Tiles</label>		
+							<label for="layout-table" title="Table" id="label-table" class="anm-zoomIn delay-700"><img src="{{ site.baseurl }}/hipertextos/images/icons8.svg"><br>Table</label>
+							<label for="layout-gallery" title="Gallery" id="label-gallery" class="anm-zoomIn delay-800"><img src="{{ site.baseurl }}/hipertextos/images/icons4.svg"><br>Gallery</label>
+							<label for="layout-cards" title="Cards" id="label-cards" class="anm-zoomIn delay-900"><img src="{{ site.baseurl }}/hipertextos/images/icons5.svg"><br>Cards</label>		
+							<label for="layout-tiles" title="Tiles" id="label-tiles" class="anm-zoomIn delay-1000"><img src="{{ site.baseurl }}/hipertextos/images/icons6.svg"><br>Tiles</label>		
 						 </div>
 					</nav>
 					<hr>
@@ -27,7 +27,7 @@ comments: true
 					
   		{% for post in site.posts %}
     	<div id="layout-result">
-      		<article class="anm-moveFromBottomFade delay-1000">
+      		<article class="anm-zoomIn delay-2000">
 				<h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
 				<strong>{{ post.category }}</strong>
         		<div>{% if post.img %}<a href="../{{ post.img }}" data-lightbox="roadtrip"><img class="blog-img" src="../{{ post.img }}"></a>{% endif %}{{ post.excerpt }}</div>
