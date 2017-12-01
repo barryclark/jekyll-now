@@ -5,17 +5,20 @@
 text-align: center;}
 body {text-align: justify;-moz-hyphens:none;-ms-hyphens:none;-webkit-hyphens:none;-o-hyphens:none;hyphens:none;word-wrap:none;}
 p, ul {font-size: 18px;line-height: 27px;}
-@keyframes navs {
-    from {
-        position:absolute;top:-50px;
-    }
 
-    to {
-        position:relative;top:0px;
-    }
+#site-nav {	-webkit-animation: moveFromTopFade .7s ease both;
+	-moz-animation: moveFromTopFade .7s ease both;
+	animation: moveFromTopFade .7s ease both;}
+
+@-webkit-keyframes moveFromTop {
+	from { -webkit-transform: translateY(-100%); }
 }
-#site-nav {animation-name:navs;font-size:17px;animation-duration: 1s;animation-timing-function: ease-in-out;}
-
+@-moz-keyframes moveFromTop {
+	from { -moz-transform: translateY(-100%); }
+}
+@keyframes moveFromTop {
+	from { transform: translateY(-100%); }
+}
 
 @keyframes head {
     from {
@@ -47,6 +50,15 @@ p, ul {font-size: 18px;line-height: 27px;}
     -webkit-animation: moveFromBottomFade .7s ease both;
 	-moz-animation: moveFromBottomFade .7s ease both;
 	animation: moveFromBottomFade .7s ease both;
+}
+@-webkit-keyframes moveToBottomFade {
+	to { opacity: 0; -webkit-transform: translateY(100%); }
+}
+@-moz-keyframes moveToBottomFade {
+	to { opacity: 0; -moz-transform: translateY(100%); }
+}
+@keyframes moveToBottomFade {
+	to { opacity: 0; transform: translateY(100%); }
 }
 #page-header.serveis-header {background-image: url("/img/texture/dark_design.png");background-size:46px 29px;background-repeat: repeat;image-rendering: crisp-edges;}
 #section-web {background-image: url("/img/web.jpg");background-position:fixed;image-rendering: crisp-edges;}
