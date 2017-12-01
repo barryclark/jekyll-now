@@ -17,7 +17,7 @@ p, ul {font-size: 18px;line-height: 27px;}
 }
 #page-header.cover {
     animation-name: opacitat;
-    animation-delay: .6s; -webkit-animation-delay: .6s;
+    animation-delay: .25s; -webkit-animation-delay: .25s;
     animation-duration: 1.2s; -webkit-animation-duration: 1.2s;
     animation-timing-function: ease-in-out; -webkit-animation-timing-function: ease-in-out;
     background-image: url("/img/home.jpg");image-rendering: crisp-edges;
