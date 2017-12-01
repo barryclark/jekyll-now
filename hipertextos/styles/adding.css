@@ -6,6 +6,15 @@ text-align: center;}
 body {text-align: justify;-moz-hyphens:none;-ms-hyphens:none;-webkit-hyphens:none;-o-hyphens:none;hyphens:none;word-wrap:none;}
 p, ul {font-size: 18px;line-height: 27px;}
 
+#site-nav, #page-header.cover, #page-main {
+	-webkit-animation-duration: 1s;
+	   -moz-animation-duration: 1s;
+	        animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	   -moz-animation-fill-mode: both;
+	        animation-fill-mode: both;
+}
+
 #site-nav {	-webkit-animation: moveFromTopFade .7s ease both;
 	-moz-animation: moveFromTopFade .7s ease both;
 	animation: moveFromTopFade .7s ease both;}
