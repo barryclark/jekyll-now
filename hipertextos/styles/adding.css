@@ -7,22 +7,27 @@ body {text-align: justify;-moz-hyphens:none;-ms-hyphens:none;-webkit-hyphens:non
 p, ul {font-size: 18px;line-height: 27px;}
 @keyframes navs {
     from {
-        font-size:0px;
+        position:absolute;top:-50px;
     }
 
     to {
-        font-size:17px;
+        position:relative;top:0px;
     }
 }
 nav a {animation-name:navs;font-size:17px;animation-duration: 1s;animation-timing-function: ease-in-out;}
 
+
 @keyframes head {
     from {
-        opacity:0;
+        opacity:0;filter: alpha(opacity=0); /* For IE8 and earlier */
+        -webkit-filter: blur(90px); /* Safari 6.0 - 9.0 */
+    	filter: blur(90px);
     }
 
     to {
-        opacity:100;
+        opacity:100;filter: alpha(opacity=100); /* For IE8 and earlier */
+        -webkit-filter: grayscale(0px); /* Safari 6.0 - 9.0 */
+    	filter: grayscale(0px);
     }
 }
 
@@ -30,9 +35,11 @@ nav a {animation-name:navs;font-size:17px;animation-duration: 1s;animation-timin
     background-image: url("/img/home.jpg");image-rendering: crisp-edges;
     background-position: fixed;
     width: 100%;opacity:100;
+    -webkit-filter: blur(0px); /* Safari 6.0 - 9.0 */
+    filter: blur(0px);
     animation-name: head;
-    animation-duration: 1s;
-    animation-timing-function: ease-in-out;
+    animation-duration: 1s; -webkit-animation-duration: 1s;
+    animation-timing-function: ease-in-out; -webkit-animation-timing-function: ease-in-out;
 }
 @keyframes main {
     from {
@@ -47,8 +54,8 @@ nav a {animation-name:navs;font-size:17px;animation-duration: 1s;animation-timin
 #page-main {
 	opacity:100;
     animation-name: main;
-    animation-duration: 2s;
-    animation-timing-function: ease-in-out;
+    animation-duration: 2s; -webkit-animation-duration: 2s;
+    animation-timing-function: ease-in-out;-webkit-animation-timing-function: ease-in-out;
 }
 #page-header.serveis-header {background-image: url("/img/texture/dark_design.png");background-size:46px 29px;background-repeat: repeat;image-rendering: crisp-edges;}
 #section-web {background-image: url("/img/web.jpg");background-position:fixed;image-rendering: crisp-edges;}
