@@ -19,7 +19,7 @@ p, ul {font-size: 18px;line-height: 27px;}
 #page-header.cover {
     background-image: url("/img/home.jpg");image-rendering: crisp-edges;
     background-position: fixed;
-    width: 100%;opacity:100;
+    width: 100%;opacity:0;
     -webkit-filter: blur(0px); /* Safari 6.0 - 9.0 */
     filter: blur(0px);
     animation-name: opacitat;
@@ -28,7 +28,7 @@ p, ul {font-size: 18px;line-height: 27px;}
 }
 
 #page-main {
-	opacity:100;
+	opacity:0;
     animation-name: opacitat;
     animation-duration: 1s; -webkit-animation-duration: 1s;
     animation-delay: .6s; -webkit-animation-delay: .6s;
