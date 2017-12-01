@@ -1,4 +1,4 @@
-/* hipertextos anime.css */
+/* hipertextos-anime.css */
 /* by Acozar */
 /* www.hipertextos.net */
 /* General MIT License (MIT) */
@@ -23,7 +23,8 @@
 	overflow: hidden;
 	z-index: 1;
 }
-.content-fullscreen .slide-wrapper  {
+.content-fullscreen .slide-wrapper,
+.header-slider .slide-wrapper  {
 	height: 100%;
 }
 .content-fullscreen .slide-wrapper,
@@ -2506,10 +2507,20 @@ button.slide-trigger.previous {
 	-moz-animation-delay: 2s;
 	animation-delay: 2s;
 }
+.delay-2500 {
+	-webkit-animation-delay: 2.5s;
+	-moz-animation-delay: 2.5s;
+	animation-delay: 2.5s;
+}
 .delay-3000 {
 	-webkit-animation-delay: 3s;
 	-moz-animation-delay: 3s;
 	animation-delay: 3s;
+}
+.delay-3500 {
+	-webkit-animation-delay: 3.5s;
+	-moz-animation-delay: 3.5s;
+	animation-delay: 3.5s;
 }
 .delay-4000 {
 	-webkit-animation-delay: 4s;
