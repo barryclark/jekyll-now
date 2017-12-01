@@ -1213,7 +1213,7 @@ nav label {
 	--color-translucentblack: rgba(0,0,0,.5);
 	--color-translucentwhite: rgba(255,255,255,.5);
 	
-	--color-background: rgba(250,250,250,1);
+	--color-background: rgba(255,255,255,1);
 	
 	--font-default: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
 	--font-code: Monaco, Menlo, Consolas,'Courier New', monospace;
