@@ -93,7 +93,9 @@ img.big-icon {width:64px;padding-top:16px;}
 /* Footer */ 
 #page-footer {background:#222;color:#999;}
 #page-footer em small a {border: thin solid #222;}
-#web-credits {border-bottom:thin solid #292929;}
+#web-credits {opacity:.75;border-bottom: thin solid var(--color-softgrey);}
+#web-credits label svg {max-width:72px;margin:12px;opacity:.6;border-radius:50%;}
+#web-credits label svg:hover {cursor:pointer !important;opacity:1;box-shadow: 0 1px 3px rgba(0,0,0,.3);}
 /* Classic Gallery */
 .listed .img-icon {width:32px;}
 .listed u {margin-left:12px;}
