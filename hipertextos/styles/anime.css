@@ -1,4 +1,4 @@
-/* hipertextos-anime.css */
+/* hipertextos anime.css */
 /* by Acozar */
 /* www.hipertextos.net */
 /* General MIT License (MIT) */
@@ -23,8 +23,7 @@
 	overflow: hidden;
 	z-index: 1;
 }
-.content-fullscreen .slide-wrapper,
-.header-slider .slide-wrapper  {
+.content-fullscreen .slide-wrapper  {
 	height: 100%;
 }
 .content-fullscreen .slide-wrapper,
