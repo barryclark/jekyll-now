@@ -177,10 +177,6 @@ main {
     z-index: 1;
     background-color: var(--color-white);
 }
-.cover-page {
-    margin-bottom: 550px;
-    z-index: 1;
-}
 
 #page-footer {
     position: fixed;
@@ -300,9 +296,6 @@ main {
 	}
     main {
     margin-bottom: 360px;
-	}
-	.cover-page {
-    margin-bottom: 650px;
 	}
     #icons a {width:30%;}
 }
