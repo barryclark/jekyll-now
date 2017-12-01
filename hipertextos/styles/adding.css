@@ -87,10 +87,11 @@ img.big-icon {width:64px;padding-top:16px;}
 #coffee img {max-width:160px;margin-bottom:32px;}
 #coffee svg {width:64px;text-align:center!important;}
 #coffee  em a svg {width:32px;}
-#coffee {color:var(--color-hardgrey);text-align:center!important;}
+#coffee {color: var(--color-hardgrey);height:100%;border-bottom:4px solid #eee;text-align: center !important;}
 #coffee p {text-align: justify;-moz-hyphens:none;-ms-hyphens:none;-webkit-hyphens:none;-o-hyphens:none;hyphens:none;}
 /* Footer */ 
-#page-footer {background:#222;color:#999;}#page-footer em small a {border: thin solid #222;}
+#page-footer {background:#222;color:#999;}
+#page-footer em small a {border: thin solid #222;}
 #web-credits {border-bottom:thin solid #292929;}
 /* Classic Gallery */
 .listed .img-icon {width:32px;}
@@ -99,8 +100,7 @@ img.big-icon {width:64px;padding-top:16px;}
 .imagens img {margin:0!important;padding:0!important;border:none;}
 .listed {padding:0!important;}
 .listed img {	margin:0!important;padding:0!important;	}
-.listed article { border:none;overflow: hidden;width: 100%;display: block;display: inline-block;margin:0!important;padding:0!important;
--webkit-column-break-inside: avoid;-moz-column-break-inside:avoid;-moz-page-break-inside:avoid;page-break-inside: avoid;}
+.listed article { border:none;overflow: hidden;width: 100%;display: block;display: inline-block;margin:0!important;padding:0!important;-webkit-column-break-inside: avoid;-moz-column-break-inside:avoid;-moz-page-break-inside:avoid;page-break-inside: avoid;}
 /* Dialog */
 #dialog .icon-alarm svg {max-width:23px!important;}
 #dialog {max-height:80%;overflow:hidden;}
@@ -169,11 +169,23 @@ em small #go-up { background:rgba(0,0,0,.1);padding:15px;border-radius:50%; }
 em small #go-up:hover {background:rgba(0,0,0,.3); }
 
 #avatar {margin:2px 15px 0 0;background-color:var(--color-white)!important;border-radius:50%;padding:2px;border:thin solid var(--color-grey);opacity:.7;}
+
 /* Footer fixed */
-main {margin-bottom:260px;z-index:1;background-color:var(--color-white);}
+main {
+    margin-bottom: 260px;
+    z-index: 1;
+    background-color: var(--color-white);
+}
+.cover-page {
+    margin-bottom: 550px;
+    z-index: 1;
+}
+
 #page-footer {
-    position: fixed;box-shadow:inset 0 12px 80px rgba(0,0,0,.5);
-    bottom: 0px;z-index:-1;
+    position: fixed;
+    box-shadow: inset 0 12px 80px rgba(0, 0, 0, .5);
+    bottom: 0px;
+    z-index: -1;
     width: 100%;
 }
 @media (max-width: 1250px) {
