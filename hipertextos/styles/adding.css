@@ -169,7 +169,13 @@ em small #go-up { background:rgba(0,0,0,.1);padding:15px;border-radius:50%; }
 em small #go-up:hover {background:rgba(0,0,0,.3); }
 
 #avatar {margin:2px 15px 0 0;background-color:var(--color-white)!important;border-radius:50%;padding:2px;border:thin solid var(--color-grey);opacity:.7;}
-
+/* Footer fixed */
+main {margin-bottom:260px;z-index:1;background-color:var(--color-white);}
+#page-footer {
+    position: fixed;box-shadow:inset 0 12px 80px rgba(0,0,0,.5);
+    bottom: 0px;z-index:-1;
+    width: 100%;
+}
 @media (max-width: 1250px) {
    	img.dialog-svg {width:80px!important;height:70px;}
     #covers { text-rendering: optimizeLegibility;}
