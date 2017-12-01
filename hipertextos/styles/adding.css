@@ -5,7 +5,7 @@
 text-align: center;}
 body {text-align: justify;-moz-hyphens:none;-ms-hyphens:none;-webkit-hyphens:none;-o-hyphens:none;hyphens:none;word-wrap:none;}
 p, ul {font-size: 18px;line-height: 27px;}
-
+main {padding-bottom:0!important;}
 #page-header.cover {
     background-image: url("/img/home.jpg");image-rendering: crisp-edges;
     background-position: fixed;
