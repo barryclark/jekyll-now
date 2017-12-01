@@ -20,8 +20,8 @@
       </a>
     </div>
     <div class="comment-body" itemprop="text">{{ comment[1].message | markdownify }}</div>
-    {% if comment[1].replyto %}</div>{% endif %}
-  {% if forloop.last %}{% include comment-reply-to.html replyto=comment %}</article>{% endif %}
+    {% if comment[1].replyto %}</div></div>{% endif %}
+  {% if forloop.last %}{% include comment-reply-to.html replyto=comment %}</div></article>{% endif %}
   {% assign prevcomment = comment %}
   {% endfor %}
 {% endif %}
