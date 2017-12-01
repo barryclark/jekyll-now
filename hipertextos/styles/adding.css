@@ -7,11 +7,11 @@ body {text-align: justify;-moz-hyphens:none;-ms-hyphens:none;-webkit-hyphens:non
 p, ul {font-size: 18px;line-height: 27px;}
 @keyframes fronter {
     from {
-        width:1px; margin: auto;
+        opacity:0;
     }
 
     to {
-        width:100%;
+        opacity:100;
     }
 }
 
@@ -20,8 +20,8 @@ p, ul {font-size: 18px;line-height: 27px;}
     background-position: fixed;
     width: 100%;
     animation-name: fronter;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
+    animation-duration: 2s;animation-delay: 1s;
+    animation-timing-function: ease-in-out;
 }
 #page-header.serveis-header {background-image: url("/img/texture/dark_design.png");background-size:46px 29px;background-repeat: repeat;}
 #section-web {background-image: url("/img/web.jpg");background-position:fixed;}
@@ -38,14 +38,14 @@ section.cover-justify p {padding: 6px 18px 0 18px;line-height: 23px;font-size: 1
 /* Nav */
 @keyframes open-nav {
     from {
-        top:-32px;
+        margin-top:-32px;
     }
 
     to {
-        top:0;
+        margin-top:0;
     }
 }
-#site-nav {animation-name:open-nav;animation-duration: 1s;background: var(--color-soft-black) !important;border-bottom: none;font-size: 17px;color: var(--color-grey);box-shadow: 0 1px 21px rgba(0, 0, 0, .23);}
+#site-nav {animation-name:open-nav;animation-duration: 1s;animation-timing-function: ease-in-out;background: var(--color-soft-black) !important;border-bottom: none;font-size: 17px;color: var(--color-grey);box-shadow: 0 1px 21px rgba(0, 0, 0, .23);}
 #site-nav a {font-weight: lighter;min-width: 12%;border: none;letter-spacing: .032em;}
 #site-nav a:visited { color: var(--color-grey);text-decoration: none;}
 #site-nav a:hover, #site-nav a b:hover { color: #fff !important;background: #000;text-decoration: none;}
