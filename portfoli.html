@@ -25,8 +25,8 @@ permalink: /portfoli/
   </article>
 			</section>
 			<hr>
-    			<h3 class="anm-moveFromLeft delay-1500"><img src="{{ site.baseurl }}/hipertextos/svg/printer.svg" class="img-icon"><u>Impressions</u></h3>
-			<section class="anm-moveFromLeft delay-2000">					
+    			<h3 class="anm-moveFromLeftFade delay-1500"><img src="{{ site.baseurl }}/hipertextos/svg/printer.svg" class="img-icon"><u>Impressions</u></h3>
+			<section class="anm-fadeIn delay-2000">					
 	{% assign image_files = site.static_files | where: "image", true %}
 	{% for image in image_files %}
 	<article>
@@ -35,8 +35,8 @@ permalink: /portfoli/
 	{% endfor %}
 			</section>
 			<hr>
-    			<h3 class="anm-moveFromLeft delay-2500"><img src="{{ site.baseurl }}/hipertextos/svg/diamond.svg" class="img-icon"><u>Branding</u></h3>
-			<section class="anm-moveFromLeft delay-3000 slow">					
+    			<h3 class="anm-moveFromLeftFade delay-2500"><img src="{{ site.baseurl }}/hipertextos/svg/diamond.svg" class="img-icon"><u>Branding</u></h3>
+			<section class="anm-fadeIn delay-3000 slow">					
   <article>
 	<a href="{{ site.baseurl }}/assets/branding/logos1.jpg" data-lightbox="roadtrip"><img class="imagens" src="{{ site.baseurl }}/assets/branding/logos1.jpg" alt="{{ image.basename }}"></a>
   </article>
@@ -66,8 +66,8 @@ permalink: /portfoli/
   </article>
 			</section>
 			<hr>
-    			<h3><img src="{{ site.baseurl }}/hipertextos/svg/pencil.svg" class="img-icon"><u>Pintura</u></h3>
-			<section class="anm-moveFromLeft delay-4000 slow">					
+    			<h3 class="anm-moveFromLeftFade delay-4000"><img src="{{ site.baseurl }}/hipertextos/svg/pencil.svg" class="img-icon"><u>Pintura</u></h3>
+			<section class="anm-fadeIn delay-4000 slow">					
   <article>
 	<a href="{{ site.baseurl }}/assets/paint/paint1.jpg" data-lightbox="roadtrip"><img class="imagens" src="{{ site.baseurl }}/assets/paint/paint1.jpg" alt="{{ image.basename }}"></a>
   </article>
