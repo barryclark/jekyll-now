@@ -11,7 +11,7 @@ main {padding-bottom:0!important;}
     background-position: fixed;
 }
 #page-header.serveis-header {background-image: url("/img/texture/dark_design.png");background-size:46px 29px;background-repeat: repeat;image-rendering: crisp-edges;}
-#page-header.about-cover {background-image: url("/img/texture/dark-sound.png");background-size:42px 22px;background-repeat: repeat;image-rendering: crisp-edges;}
+#page-header.about-cover {background-image: url("/img/texture/dark_wood.png");background-size:512px 512px;background-repeat: repeat;image-rendering: crisp-edges;}
 #section-web {background-image: url("/img/web.jpg");background-position:fixed;image-rendering: crisp-edges;}
 #section-brand {background-image: url("/img/blog.jpg");background-position:fixed;image-rendering: crisp-edges;}
 #section-paint {background-image: url("/img/flower.jpg");background-position:fixed;image-rendering: crisp-edges;}
