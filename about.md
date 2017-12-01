@@ -3,8 +3,6 @@ layout: page
 permalink: /about/
 ---
 
-# Biography
-
 Redouane Lguensat was born in Casablanca, Morocco in 1991. He received an Engineering degree in information processing systems from Télécom Bretagne, France, and a Master of research in image processing at Rennes I university, France, in 2014. He received his PhD degree in Signal and Image Processing applied to ocean remote sensing from IMT Atlantique, Brest, France. Currently he is pursuing a CNES funded Postdoc at Institut des Géosciences et de l'Environnement, Grenoble, France.
 
 His research interests include signal and image processing, data-driven methods, inverse problems, machine learning, data assimilation and optimization.
