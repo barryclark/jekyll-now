@@ -16,18 +16,18 @@ p, ul {font-size: 18px;line-height: 27px;}
 }
 
 #page-header.cover {
-    background-image: url("/img/home.jpg");
+    background-image: url("/img/home.jpg");image-rendering: crisp-edges;
     background-position: fixed;
     width: 100%;
     animation-name: fronter;
     animation-duration: 1s;
     animation-timing-function: ease-in-out;
 }
-#page-header.serveis-header {background-image: url("/img/texture/dark_design.png");background-size:46px 29px;background-repeat: repeat;}
-#section-web {background-image: url("/img/web.jpg");background-position:fixed;}
-#section-brand {background-image: url("/img/blog.jpg");background-position:fixed;}
-#section-paint {background-image: url("/img/flower.jpg");background-position:fixed;}
-#section-print {background-image: url("/img/print.jpg");background-position:fixed;}
+#page-header.serveis-header {background-image: url("/img/texture/dark_design.png");background-size:46px 29px;background-repeat: repeat;image-rendering: crisp-edges;}
+#section-web {background-image: url("/img/web.jpg");background-position:fixed;image-rendering: crisp-edges;}
+#section-brand {background-image: url("/img/blog.jpg");background-position:fixed;image-rendering: crisp-edges;}
+#section-paint {background-image: url("/img/flower.jpg");background-position:fixed;image-rendering: crisp-edges;}
+#section-print {background-image: url("/img/print.jpg");background-position:fixed;image-rendering: crisp-edges;}
 .text-left {text-align:left;}
 .text-right {text-align:right;}
 em hr {border-bottom:thin solid #eee;}	
@@ -38,7 +38,7 @@ section.cover-justify p {padding: 6px 18px 0 18px;line-height: 23px;font-size: 1
 /* Nav */
 @keyframes opnav {
     from {
-        height:1px;
+        height:0;
     }
 
     to {
@@ -67,7 +67,7 @@ section.cover-justify p {padding: 6px 18px 0 18px;line-height: 23px;font-size: 1
 #page-nav a:visited {color: var(--color-grey) ;}
 #page-nav div {height:80px;font-size:15px;}.serveis#page-main {padding:0;}
 /* Page & Header */
-.cover#page-header  {background-color: var(--color-black);image-rendering: crisp-edges;}
+.cover#page-header  {background-color: var(--color-black);}
 .serveis-header {border-bottom:10px solid var(--color-hardgrey);background-color: var(--color-black);color: var(--color-hardgrey);}
 .medias#page-header {border-bottom:10px solid var(--color-grey);background-color: var(--color-softgrey);color: var(--color-grey);}
 .cover-page #page-header {border-bottom:10px solid var(--color-blue);background-color: var(--color-black);color: var(--color-blue);}
