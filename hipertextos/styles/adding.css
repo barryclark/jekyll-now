@@ -14,7 +14,7 @@ p, ul {font-size: 18px;line-height: 27px;}
         font-size:17px;
     }
 }
-nav a {animation-name:navs;font-size:0px;animation-duration: 1s;animation-timing-function: ease-in-out;}
+nav a {animation-name:navs;font-size:17px;animation-duration: 1s;animation-timing-function: ease-in-out;animation-delay: -5s;}
 
 @keyframes head {
     from {
@@ -29,9 +29,9 @@ nav a {animation-name:navs;font-size:0px;animation-duration: 1s;animation-timing
 #page-header.cover {
     background-image: url("/img/home.jpg");image-rendering: crisp-edges;
     background-position: fixed;
-    width: 100%;opacity:0;
+    width: 100%;opacity:100;
     animation-name: head;
-    animation-duration: 1s;
+    animation-duration: 1s;animation-delay: -3s;
     animation-timing-function: ease-in-out;
 }
 @keyframes main {
@@ -44,10 +44,10 @@ nav a {animation-name:navs;font-size:0px;animation-duration: 1s;animation-timing
     }
 }
 
-#main {
-	opacity:0;
+#page-main {
+	opacity:100;
     animation-name: main;
-    animation-duration: 2s;
+    animation-duration: 2s;animation-delay: -2s;
     animation-timing-function: ease-in-out;
 }
 #page-header.serveis-header {background-image: url("/img/texture/dark_design.png");background-size:46px 29px;background-repeat: repeat;image-rendering: crisp-edges;}
