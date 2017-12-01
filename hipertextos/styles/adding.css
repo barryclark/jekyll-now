@@ -5,7 +5,19 @@
 text-align: center;}
 body {text-align: justify;-moz-hyphens:none;-ms-hyphens:none;-webkit-hyphens:none;-o-hyphens:none;hyphens:none;word-wrap:none;}
 p, ul {font-size: 18px;line-height: 27px;}
-#page-header.cover {background-image: url("/img/home.jpg");background-position:fixed;}
+@keyframes fronter {
+    from {opacity:100;}
+    to {opacity:0;}
+}
+
+#page-header.cover {
+    background-image: url("/img/home.jpg");
+    background-position: fixed;
+    width:100%;
+    animation-name: fronter;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
 #page-header.serveis-header {background-image: url("/img/texture/dark_design.png");background-size:46px 29px;background-repeat: repeat;}
 #section-web {background-image: url("/img/web.jpg");background-position:fixed;}
 #section-brand {background-image: url("/img/blog.jpg");background-position:fixed;}
