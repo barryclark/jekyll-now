@@ -28,9 +28,9 @@ comments: true
   		{% for post in site.posts %}
     	<div id="layout-result">
       		<article class="anm-moveToBottomFade delay-1500">
-				<h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
+				<h3 class="anm-zoomIn delay-1500 slow"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
 				<strong>{{ post.category }}</strong>
-        		<div>{% if post.img %}<a href="../{{ post.img }}" data-lightbox="roadtrip"><img class="blog-img" src="../{{ post.img }}"></a>{% endif %}{{ post.excerpt }}</div>
+        		<div class="anm-zoomIn delay-2000 fast">{% if post.img %}<a href="../{{ post.img }}" data-lightbox="roadtrip"><img class="blog-img" src="../{{ post.img }}"></a>{% endif %}{{ post.excerpt }}</div>
       			<nav><a href="{{ site.baseurl }}{{ post.url }}" class="read-more"><b>[+]</b></a></nav>
       		</article>
     	</div>
