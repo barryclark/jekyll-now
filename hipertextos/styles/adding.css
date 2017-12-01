@@ -7,11 +7,11 @@ body {text-align: justify;-moz-hyphens:none;-ms-hyphens:none;-webkit-hyphens:non
 p, ul {font-size: 18px;line-height: 27px;}
 @keyframes fronter {
     from {
-        width:1px;
+        height:1px;
     }
 
     to {
-        width:100%;
+        height:100%;
     }
 }
 
