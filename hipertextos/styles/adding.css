@@ -277,7 +277,59 @@ main {
     #coffee .pushed-5 {margin-left:5%!important;}
     #diamond img {display:none;}
     strong em a {font-size: 15px;}
+    .simple h3,
+	#layout-simple:checked ~ #layout-result h3 {
+
+	}
+	.simple,
+	#layout-simple:checked ~ #layout-result  {
+	  
+	}
+	.list h3,
+	#layout-list:checked ~ #layout-result h3 {
+    font-size: 26px;
+	}
+	.list p,
+	#layout-list:checked ~ #layout-result p {
+	font-size:15px;letter-spacing: .01em
+	}
+	.list article div img,
+	#layout-list:checked ~ #layout-result article div img {
+		width:96px;height:96px;
+	}
+    main {
+    margin-bottom: 360px;
+	}
+	.cover-page {
+    margin-bottom: 650px;
+	}
+    #icons a {width:30%;}
 }
+
 @media (max-width: 432px) {
-    #page-header.cover {background-image: url("/img/home_m.jpg"); background-size:100% auto;background-position:fixed !important; }
+    #page-header.cover {
+        background-image: url("/img/home_m.jpg");
+        background-size: 100% auto;
+        background-position: fixed !important;
+    }
+.simple h3,
+	#layout-simple:checked ~ #layout-result h3 {
+
+	}
+	.simple,
+	#layout-simple:checked ~ #layout-result  {
+	  
+	}
+	.list h3,
+	#layout-list:checked ~ #layout-result h3 {
+    font-size: 17px;line-height:26px;
+	}
+	.list p,
+	#layout-list:checked ~ #layout-result p {
+	font-size:12px;letter-spacing: .001em;line-height:21px;
+	}
+	.list article div img,
+	#layout-list:checked ~ #layout-result article div img {
+		width:64px;height:64px;
+	}
 }
