@@ -14,9 +14,9 @@ p, ul {font-size: 18px;line-height: 27px;}
         font-size:17px;
     }
 }
-nav a {animation-name:navs;font-size:17px;animation-duration: 1s;animation-timing-function: ease-in-out;}
+nav a {animation-name:navs;font-size:0px;animation-duration: 1s;animation-timing-function: ease-in-out;}
 
-@keyframes fronter {
+@keyframes head {
     from {
         opacity:0;
     }
@@ -29,9 +29,25 @@ nav a {animation-name:navs;font-size:17px;animation-duration: 1s;animation-timin
 #page-header.cover {
     background-image: url("/img/home.jpg");image-rendering: crisp-edges;
     background-position: fixed;
-    width: 100%;
-    animation-name: fronter;
+    width: 100%;opacity:0;
+    animation-name: head;
     animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+@keyframes main {
+    from {
+        opacity:0;
+    }
+
+    to {
+        opacity:100;
+    }
+}
+
+#main {
+	opacity:0;
+    animation-name: main;
+    animation-duration: 2s;
     animation-timing-function: ease-in-out;
 }
 #page-header.serveis-header {background-image: url("/img/texture/dark_design.png");background-size:46px 29px;background-repeat: repeat;image-rendering: crisp-edges;}
