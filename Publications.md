@@ -10,7 +10,7 @@ published: true
 
 # Submitted/Working on..
 
-<img style="float:left;margin-right:20px" src="https://raw.githubusercontent.com/redouanelg/redouanelg.github.io/master/images/eddynet.png" width="350" height="200"> Redouane Lguensat, Miao Sun, Ronan Fablet, Evan Mason, Pierre Tandeo, Ge Chen. **EddyNet: A Deep Neural Network For Pixel-Wise Classification of Oceanic Eddies** [pdf](https://arxiv.org/abs/1711.03954){:target="_blank"}
+<img style="float:left;margin-right:20px" src="https://raw.githubusercontent.com/redouanelg/redouanelg.github.io/master/images/eddynet.jpg" width="350" height="200"> Redouane Lguensat, Miao Sun, Ronan Fablet, Evan Mason, Pierre Tandeo, Ge Chen. **EddyNet: A Deep Neural Network For Pixel-Wise Classification of Oceanic Eddies** [pdf](https://arxiv.org/abs/1711.03954){:target="_blank"}
 
 <img style="float:left;margin-right:20px" src="https://raw.githubusercontent.com/redouanelg/redouanelg.github.io/master/images/slainterp.png" width="350" height="200"> Redouane Lguensat, Phi Huynh Viet, Miao Sun, Ge Chen, Tian Fenglin, Bertrand Chapron, Ronan Fablet 
 **Data-driven Interpolation of Sea Level Anomalies using Analog Data Assimilations**. [pdf](https://hal.archives-ouvertes.fr/hal-01609851){:target="_blank"}
