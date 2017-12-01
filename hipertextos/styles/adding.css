@@ -6,22 +6,9 @@ text-align: center;}
 body {text-align: justify;-moz-hyphens:none;-ms-hyphens:none;-webkit-hyphens:none;-o-hyphens:none;hyphens:none;word-wrap:none;}
 p, ul {font-size: 18px;line-height: 27px;}
 
-@keyframes opacitat {
-    from {
-        opacity:0;filter: alpha(opacity=0); /* For IE8 and earlier */
-    }
-
-    to {
-        opacity:100;filter: alpha(opacity=100); /* For IE8 and earlier */
-    }
-}
 #page-header.cover {
-    animation-name: opacitat;
-    animation-duration: 1.2s; -webkit-animation-duration: 1.2s;
-    animation-timing-function: ease-in-out; -webkit-animation-timing-function: ease-in-out;
     background-image: url("/img/home.jpg");image-rendering: crisp-edges;
     background-position: fixed;
-    width: 100%;opacity:100;
 }
 #page-header.serveis-header {background-image: url("/img/texture/dark_design.png");background-size:46px 29px;background-repeat: repeat;image-rendering: crisp-edges;}
 #section-web {background-image: url("/img/web.jpg");background-position:fixed;image-rendering: crisp-edges;}
