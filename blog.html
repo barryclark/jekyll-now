@@ -26,8 +26,8 @@ comments: true
 					<input type="radio" name="layout" id="layout-tiles" aria-hidden="true" hidden>
 					
   		{% for post in site.posts %}
-    	<div id="layout-result" class="anm-moveFromBottomFade delay-4000">
-      		<article>
+    	<div id="layout-result">
+      		<article  class="anm-moveFromBottomFade delay-4000">
 				<h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
 				<strong>{{ post.category }}</strong>
         		<div>{% if post.img %}<a href="../{{ post.img }}" data-lightbox="roadtrip"><img class="blog-img" src="../{{ post.img }}"></a>{% endif %}{{ post.excerpt }}</div>
