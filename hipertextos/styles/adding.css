@@ -23,14 +23,15 @@ p, ul {font-size: 18px;line-height: 27px;}
     -webkit-filter: blur(0px); /* Safari 6.0 - 9.0 */
     filter: blur(0px);
     animation-name: opacitat;
-    animation-duration: .6s; -webkit-animation-duration: .6s;
+    animation-duration: 1s; -webkit-animation-duration: 1s;
     animation-timing-function: ease-in-out; -webkit-animation-timing-function: ease-in-out;
 }
 
 #page-main {
 	opacity:100;
     animation-name: opacitat;
-    animation-duration: .9s; -webkit-animation-duration: .9s;
+    animation-duration: 1s; -webkit-animation-duration: 1s;
+    animation-delay: .6s; -webkit-animation-delay: .6s;
     animation-timing-function: ease-in-out; -webkit-animation-timing-function: ease-in-out;
 }
 
