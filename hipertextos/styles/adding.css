@@ -67,7 +67,7 @@ section.cover-justify p {padding: 6px 18px 0 18px;line-height: 23px;font-size: 1
 #page-nav a:visited {color: var(--color-grey) ;}
 #page-nav div {height:80px;font-size:15px;}.serveis#page-main {padding:0;}
 /* Page & Header */
-.cover#page-header  {background-color: var(--color-black);}
+.cover#page-header  {background-color: var(--color-white);}
 .serveis-header {border-bottom:10px solid var(--color-hardgrey);background-color: var(--color-black);color: var(--color-hardgrey);}
 .medias#page-header {border-bottom:10px solid var(--color-grey);background-color: var(--color-softgrey);color: var(--color-grey);}
 .cover-page #page-header {border-bottom:10px solid var(--color-blue);background-color: var(--color-black);color: var(--color-blue);}
