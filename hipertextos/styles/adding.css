@@ -20,7 +20,7 @@ p, ul {font-size: 18px;line-height: 27px;}
     background-position: fixed;
     width: 100%;
     animation-name: fronter;
-    animation-duration: 3s;
+    animation-duration: 1s;
     animation-timing-function: ease-in-out;
 }
 #page-header.serveis-header {background-image: url("/img/texture/dark_design.png");background-size:46px 29px;background-repeat: repeat;image-rendering: crisp-edges;}
@@ -45,7 +45,7 @@ section.cover-justify p {padding: 6px 18px 0 18px;line-height: 23px;font-size: 1
         font-size:17px;
     }
 }
-nav #site-nav a {animation-name:opnav;animation-duration: 1s;animation-timing-function: ease-in-out;}
+nav #site-nav a {animation-name:opnav;animation-duration: 1s;font-size:17px;}
 #site-nav {background: var(--color-soft-black) !important;border-bottom: none;font-size: 17px;color: var(--color-grey);box-shadow: 0 1px 21px rgba(0, 0, 0, .23);}
 #site-nav a {font-weight: lighter;min-width: 12%;border: none;letter-spacing: .032em;}
 #site-nav a:visited { color: var(--color-grey);text-decoration: none;}
