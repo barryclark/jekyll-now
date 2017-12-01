@@ -14,7 +14,7 @@ p, ul {font-size: 18px;line-height: 27px;}
         position:relative;top:0px;
     }
 }
-nav a {animation-name:navs;font-size:17px;animation-duration: 1s;animation-timing-function: ease-in-out;}
+#site-nav a {animation-name:navs;font-size:17px;animation-duration: 1s;animation-timing-function: ease-in-out;}
 
 
 @keyframes head {
