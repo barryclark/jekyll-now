@@ -38,7 +38,7 @@ section.cover-justify p {padding: 6px 18px 0 18px;line-height: 23px;font-size: 1
 /* Nav */
 @keyframes opnav {
     from {
-        height:0;
+        height:1px;
     }
 
     to {
