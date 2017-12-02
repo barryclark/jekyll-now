@@ -1,15 +1,11 @@
 ---
 layout: post
-title: "[Video] [Slides] [Photos] [Nov 2017] Persistent storage with Kubernetes in production - Kubernetes London"
+title: "[Slides] [Photos] [Nov 2017] Persistent storage with Kubernetes in production - Kubernetes London"
 ---
 
 ![Cheryl Hung]({{site.baseurl}}/images/k8s-1.jpg)
 
-I spoke at the Kubernetes London meetup on 30 November, 2017 on "Persistent Storage with Kubernetes in Production - which solution and why?":
-
-<iframe src="https://player.vimeo.com/video/241538232" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-
-and here are the slides:
+I spoke at the Kubernetes London meetup on 30 November, 2017 on "Persistent Storage with Kubernetes in Production - which solution and why?": and here are the slides:
 
 <object data="http://www.oicheryl.com/resources/persistent-storage-with-k8s.pdf" type="application/pdf" width="700px" height="700px">
     <embed src="http://www.oicheryl.com/resources/persistent-storage-with-k8s.pdf">
