@@ -74,9 +74,8 @@ img.dialog-svg {width:120px;height:150px;}
 #llicencia img {width:48px;}
 .cc-icon img (width:64px;)
 /* Coffee? */
-#coffee img {max-width:160px;margin-bottom:32px;}
 #coffee svg {width:64px;text-align:center!important;}
-#coffee  em a svg {width:32px;}
+#coffee  em img {width:230px;margin-bottom:32px;}
 #coffee {color: var(--color-hardgrey);height:100%;text-align: center !important;}
 #coffee p {text-align: justify;-moz-hyphens:none;-ms-hyphens:none;-webkit-hyphens:none;-o-hyphens:none;hyphens:none;}
 
