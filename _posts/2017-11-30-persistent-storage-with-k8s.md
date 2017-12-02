@@ -19,8 +19,8 @@ Resource links:
 
 ![Cheryl Hung]({{site.baseurl}}/images/k8s-1.jpg)
 
-![Cheryl Hung]({{site.baseurl}}/images/k8s-2.jpg)
+![Cheryl Hung]({{site.baseurl}}/images/k8s-2.JPG)
 
-![Cheryl Hung]({{site.baseurl}}/images/k8s-3.jpg)
+![Cheryl Hung]({{site.baseurl}}/images/k8s-3.JPG)
 
 ![Cheryl Hung]({{site.baseurl}}/images/k8s-4.jpg)
