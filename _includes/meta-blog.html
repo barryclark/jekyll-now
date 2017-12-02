@@ -1,0 +1,31 @@
+    <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+	<meta http-equiv="Content-Language" content="ES-CT"/>
+	<link rel="canonical" href="http://isardmiralles.com/"/>
+		
+	<meta name="distribution" content="global"/>
+	<meta name="keys" content="treballs, brushes, codigos, imatges, edició html5 i css3, jekyll now, tutoriales, diseño, recursos, diseny web, matte painting, adobe photoshop, disseny responsive, html5 i css3"/>
+	<meta name="description" content="Blog personal, recursos, tutorials, videos y descargas gratis">
+
+	<!-- Metadata: GeoTags -->
+	<meta name="geo.region" content="ES-CT" />
+	<meta name="geo.placename" content="Barcelona" />
+	<meta name="geo.position" content="41.385064;2.173403" />
+	<meta name="ICBM" content="41.385064, 2.173403" />
+		
+    {% if page.excerpt %}
+    <meta name="description" content="{{ page.excerpt| strip_html }}" />
+    <meta property="og:description" content="{{ page.excerpt| strip_html }}" />
+    {% else %}
+    <meta name="description" content="{{ site.description }}">
+    <meta property="og:description" content="{{ site.description }}" />
+    {% endif %}
+    <meta name="author" content="{{ site.name }}" />
+
+    {% if page.title %}
+    <meta property="og:title" content="{{ page.title }}" />
+    <meta property="twitter:title" content="{{ page.title }}" />
+    {% endif %}
