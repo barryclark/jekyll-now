@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Slides] [Nov 2017] Persistent storage with Kubernetes in production - Kubernetes London"
+title: "[Slides] [Photos] [Nov 2017] Persistent storage with Kubernetes in production - Kubernetes London"
 ---
 
 <object data="http://www.oicheryl.com/resources/persistent-storage-with-k8s.pdf" type="application/pdf" width="700px" height="700px">
@@ -16,3 +16,11 @@ Resource links:
 * [Quickstart](https://storageos.com/kubernetes) - install StorageOS with Kubernetes
 * [StorageOS slack channel](https://slack.storageos.com)
 * [Cloud Native London December](https://www.meetup.com/Cloud-Native-London/events/243917004/)
+
+![Cheryl Hung]({{site.baseurl}}/images/k8s-1.jpg)
+
+![Cheryl Hung]({{site.baseurl}}/images/k8s-2.jpg)
+
+![Cheryl Hung]({{site.baseurl}}/images/k8s-3.jpg)
+
+![Cheryl Hung]({{site.baseurl}}/images/k8s-4.jpg)
