@@ -30,3 +30,28 @@ img.dialog-svg {width:120px;height:150px;}
 #coffee  em a svg {width:32px;}
 #coffee {color: var(--color-hardgrey);height:100%;text-align: center !important;}
 #coffee p {text-align: justify;-moz-hyphens:none;-ms-hyphens:none;-webkit-hyphens:none;-o-hyphens:none;hyphens:none;}
+
+@media (max-width: 1250px) {
+   	img.dialog-svg {width:80px!important;height:70px;}
+    #coffee .thumb-2 {width: 33.33333%!important;}
+    #coffee .pushed-5 {margin-left:33.33333%!important;}
+}
+@media (max-width: 768px) {
+	#dialog .icon-alarm svg {max-width:16px!important;margin:0;padding:0;}
+	#dialog dialog p {font-size:12px;line-height:1.5em;}
+	#dialog header {padding:12px;border-radius:6px 6px 0 0;}
+	#dialog header h2 svg {width:16px;margin:0px 6px 0 0;}
+	#dialog header h2 {font-size: 1.25em;margin-bottom:0px;}
+	#dialog header .lead {font-size:14px;line-height: 1.2em;margin:0;}
+	#dialog div em a {font-size:10px;line-height:2.3em;padding:7px;}
+   	img.dialog-svg {width:45px!important;height:45px;}
+    .cell-6, .pushed-6 {width:85%;margin-left:8% !important;}
+    #coffee .thumb-2 {width: 90%!important;}
+    #coffee .pushed-5 {margin-left:5%!important;}
+    #diamond img {display:none;}
+
+}
+
+@media (max-width: 432px) {
+
+}
