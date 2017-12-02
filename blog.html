@@ -30,8 +30,8 @@ comments: true
       		<article class="anm-fadeIn delay-1000">
 				<h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
 				<strong>{{ post.category }}</strong>
-      			<a href="{{ site.baseurl }}{{ post.url }}#disqus_thread"> Comentaris</a>
         		<div>{% if post.img %}<a href="../{{ post.img }}" data-lightbox="roadtrip"><img class="blog-img" src="../{{ post.img }}"></a>{% endif %}{{ post.excerpt }}</div>
+      			<p><a href="{{ site.baseurl }}{{ post.url }}#disqus_thread"> Comentaris</a></p>
       			<nav><a href="{{ site.baseurl }}{{ post.url }}" class="read-more"><b>[+]</b></a></nav>
       		</article>
     	</div>
