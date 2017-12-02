@@ -1,0 +1,40 @@
+---
+site:
+  title: Example Website
+  description: Very basic example website using jekyll-language-plugin.
+  keywords: >
+    example site, example, site, jekyll, jekyll-language-plugin, language,
+    plugin
+err:
+  title: File Not Found
+  lead: 404
+  slogan: File Not Found
+root:
+  title: Choose your Language
+  description: "Please select your language from the list below:"
+index:
+  title: Example Site
+  lead: Example Site
+  slogan: An example site using jekyll-language-plugin.
+  description: >
+    This site is as simple as possible to effectively demonstrate the usage
+    of this plugin. Further information on how to use the plugin can be found
+    on GitHub.
+  custom_loader: User-defined Data Loader
+  custom_loader_test: Test string
+  posts: Posts
+about:
+  slug: about-us
+  title: About Us
+post:
+  published: Published
+  date_format: '%B %d, %Y'
+footnote: Copyright (c) Example Site 2015. All rights reserved.
+lang:
+  en: English
+  de: German
+date:
+  abbr_daynames: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
+  daynames: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
+  abbr_monthnames: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+  monthnames: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']

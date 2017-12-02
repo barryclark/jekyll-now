@@ -1,0 +1,37 @@
+---
+site:
+  title: Beispielseite
+  description: Eine sehr einfache Beispielseite mit jekyll-language-plugin.
+  keywords: >
+    beispielseite, beispiel, seite, jekyll, jekyll-language-plugin, language,
+    plugin, sprache, sprachplugin
+err:
+  title: Datei Nicht Gefunden
+  lead: 404
+  slogan: Datei Nicht Gefunden
+index:
+  title: Beispielseite
+  lead: Beispielseite
+  slogan: Eine Beispielseite mit jekyll-language-plugin.
+  description: >
+    Diese Seite ist so einfach wie möglich gestaltet, damit der Umgang mit dem
+    Plugin effektiv demonstriert werden kann. Weitere Informationen, wie das
+    Plugin zu verwenden ist finden sich auf GitHub.
+  custom_loader: Benutzerdefinierter Datenlader
+  custom_loader_test: Testzeichenkette
+  posts: Beiträge
+about:
+  slug: ueber-uns
+  title: Über Uns
+post:
+  published: Veröffentlicht
+  date_format: '%d. %B %Y'
+footnote: Copyright (c) Beispielseite 2015. Alle Rechte vorbehalten.
+lang:
+  en: Englisch
+  de: Deutsch
+date:
+  abbr_daynames: ['So', 'Mo', 'Di', 'Mi', 'Do', 'Fr', 'Sa']
+  daynames: ['Sonntag', 'Montag', 'Dienstag', 'Mitwoch', 'Donnerstag', 'Freitag', 'Samstag']
+  abbr_monthnames: ['Jan', 'Feb', 'Mär', 'Apr', 'Mai', 'Jun', 'Jul', 'Aug', 'Sep', 'Okt', 'Nov', 'Dez']
+  monthnames: ['Januar', 'Februar', 'März', 'April', 'Mai', 'Juni', 'Juli', 'August', 'September', 'Oktober', 'November', 'Dezember']

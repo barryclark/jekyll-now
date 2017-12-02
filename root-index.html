@@ -1,0 +1,22 @@
+---
+layout: bare
+language: en
+subset: root
+permalink: /
+navigation: false
+---
+<h1>{% t 'title' %}</h1>
+<p>{% t 'description' %}</p>
+<ul>
+{% for language in site.languages %}
+  <li><a href="{{ site.baseurl }}/{{ language }}/" title="{% tl language %}">{% tl language %}</a></li>
+{% endfor %}
+</ul>
+<script id="site-languages-json" type="application/json">
+{% raw %}{{% endraw %}
+{% for language in site.languages %}
+  "{{ language }}": "{{ site.baseurl }}/{{ language }}/"
+  {% if forloop.last != true %},{% endif %}
+{% endfor %}
+{% raw %}}{% endraw %}
+</script>
