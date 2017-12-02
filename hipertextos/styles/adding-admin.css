@@ -1,0 +1,18 @@
+/* by Isard Miralles  ADDING CSS */
+/* ------------------------------------------------------------ Resets */
+#page-header .private {
+text-align: center;}
+
+@media (max-width: 1250px) {
+
+}
+@media (max-width: 1242px) {
+	#page-header.cover {background-image: url("/img/home_b.jpg");background-position:fixed;}
+}
+@media (max-width: 768px) {
+    #page-header.cover {background-image: url("/img/home_m.jpg"); background-size:100% auto;background-position:fixed !important; }
+}
+
+@media (max-width: 432px) {
+    #page-header.cover {background-image: url("/img/home_m.jpg");background-size: 100% auto;background-position: fixed !important;}
+}
