@@ -11,6 +11,7 @@ Vaig estudiar Arts Aplicades, il·lustració, pintura i posteriorment música mo
 
 Actualment compagino la vida de creatiu gràfic amb la de músic.
 
+
 He treballat en:
 
 * Disseny Gràfic
