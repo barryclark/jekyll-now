@@ -6,12 +6,12 @@ comments: true
   	{% include partials/navigation/nav-article.html %}
     <main id="page-main" role="main">
 		<header id="post-header">
-				<h1 id="post-title">{{ page.title }}</h1>
+				<h1 id="post-title" class="anm-moveFromBottomFade">{{ page.title }}</h1>
 		</header>
 		<div>
-			<article id="post-video" class="post">
+			<article id="post-video" class="post anm-fadeIn delay-500">
 				<div id="entry">
-					<figure id="post-img">
+					<figure id="post-img" class="anm-moveFromLeftFade delay-700">
 						<a href="../{{ page.img }}" data-lightbox="roadtrip"><img src="../{{ page.img }}"></a>
 					</figure>
 	    			{{ content }}
