@@ -52,26 +52,6 @@ figure em a {border:none;border-bottom;line-height:0.2em;padding:12px 4px;}
 #covers img {width: 16.6666666666%;margin-bottom:1.2em; }
 #covers article {border:0;}
 #page #covers article {text-shadow:-1px 1px 2px #ddd;}
-/* Footer */ 
-#page-footer {background:#222;color:#999;}
-#page-footer em small a {border: thin solid #222;}
-#web-credits {opacity:.75;background-color:#fafafa;border-bottom: thin solid var(--color-softgrey);border-top:thin solid var(--color-softgrey);}
-#web-credits label svg {max-width:72px;margin:10px;opacity:.6;border-radius:50%;}
-#web-credits label svg:hover {cursor:pointer !important;opacity:1;box-shadow: 0 1px 3px rgba(0,0,0,.3);}
-/* Classic Gallery */
-.listed .img-icon {width:32px;}
-.listed u {margin-left:12px;}
-.listed section {border:none;line-height:2em;font-size:0.2em;-webkit-column-count: 3;-moz-column-count: 3;column-count: 3;}
-.imagens img {margin:0!important;padding:0!important;border:none;}
-.listed {padding:0!important;}
-.listed img {	margin:0!important;padding:0!important;	}
-.listed article { border:none;overflow: hidden;width: 100%;display: block;display: inline-block;margin:0!important;padding:0!important;-webkit-column-break-inside: avoid;-moz-column-break-inside:avoid;-moz-page-break-inside:avoid;page-break-inside: avoid;}
-em small #go-up { background:rgba(0,0,0,.1);padding:15px;border-radius:50%; }
-em small #go-up:hover {background:rgba(0,0,0,.3); }
-#avatar {margin:0 15px 0 0;border-radius:50%;padding:2px;opacity:.7;}
-/* Footer fixed */
-main { margin-bottom: 260px;z-index: 1;background-color: var(--color-white);}
-#page-footer {position: fixed;box-shadow: inset 0 12px 80px rgba(0, 0, 0, .5);bottom: 0px;z-index: -1;width: 100%;}
 /* Dialog */
 #dialog .icon-alarm svg {max-width:23px!important;}
 #dialog {max-height:80%;overflow:hidden;}
@@ -99,8 +79,31 @@ img.dialog-svg {width:120px;height:150px;}
 #coffee  em a svg {width:32px;}
 #coffee {color: var(--color-hardgrey);height:100%;text-align: center !important;}
 #coffee p {text-align: justify;-moz-hyphens:none;-ms-hyphens:none;-webkit-hyphens:none;-o-hyphens:none;hyphens:none;}
+
+/* Footer */ 
+#page-footer {background:#222;color:#999;}
+#page-footer em small a {border: thin solid #222;}
+#web-credits {opacity:.75;background-color:#fafafa;border-bottom: thin solid var(--color-softgrey);border-top:thin solid var(--color-softgrey);}
+#web-credits label svg {max-width:72px;margin:10px;opacity:.6;border-radius:50%;}
+#web-credits label svg:hover {cursor:pointer !important;opacity:1;box-shadow: 0 1px 3px rgba(0,0,0,.3);}
+/* Classic Gallery */
+.listed .img-icon {width:32px;}
+.listed u {margin-left:12px;}
+.listed section {border:none;line-height:2em;font-size:0.2em;-webkit-column-count: 3;-moz-column-count: 3;column-count: 3;}
+.imagens img {margin:0!important;padding:0!important;border:none;}
+.listed {padding:0!important;}
+.listed img {	margin:0!important;padding:0!important;	}
+.listed article { border:none;overflow: hidden;width: 100%;display: block;display: inline-block;margin:0!important;padding:0!important;-webkit-column-break-inside: avoid;-moz-column-break-inside:avoid;-moz-page-break-inside:avoid;page-break-inside: avoid;}
+em small #go-up { background:rgba(0,0,0,.1);padding:15px;border-radius:50%; }
+em small #go-up:hover {background:rgba(0,0,0,.3); }
+#avatar {margin:0 15px 0 0;border-radius:50%;padding:2px;opacity:.7;}
+/* Footer fixed */
+main { margin-bottom: 260px;z-index: 1;background-color: var(--color-white);}
+#page-footer {position: fixed;box-shadow: inset 0 12px 80px rgba(0, 0, 0, .5);bottom: 0px;z-index: -1;width: 100%;}
 @media (max-width: 1250px) {
    	img.dialog-svg {width:80px!important;height:70px;}
+    #coffee .thumb-2 {width: 33.33333%!important;}
+    #coffee .pushed-5 {margin-left:33.33333%!important;}
     #covers { text-rendering: optimizeLegibility;}
     #covers article h4{font-size:95%;}
     #covers article h5{font-size:18px;}
@@ -115,8 +118,6 @@ img.dialog-svg {width:120px;height:150px;}
     aside.thumb-3 a {font-size:18px;}
     aside.thumb-3 a svg {width:23px;}
     aside.thumb-3 p {margin:1em 0 1em 0;border-bottom: thin solid #eee;}
-    #coffee .thumb-2 {width: 33.33333%!important;}
-    #coffee .pushed-5 {margin-left:33.33333%!important;}
 }
 @media (max-width: 1242px) {
 	#page-header.cover {background-image: url("/img/home_b.jpg");background-position:fixed;}
