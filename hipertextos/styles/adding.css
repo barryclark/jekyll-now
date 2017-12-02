@@ -144,18 +144,7 @@ figure iframe {width:100%;}
 #fb {background:var(--color-blue);}
 #go {background:var(--color-orange);}
 
-/* Link Comentaris Count */
-.list #link-comment {
-    float: right;font-size:17px;border-bottom:thin solid currentcolor;
-    position: absolute;color:var(--color-hardgrey);
-    right: 0;text-decoration:none;
-    bottom: 6px;
-}
-.list #link-comment:hover {
-    border-bottom:thin solid currentcolor;
-    color:var(--color-link);
-}
-/* Simple & List Links */
+/* Simple, List, Table, Gallery, Cards, Tiles */
 .simple em u a,
 #layout-simple:checked ~ #layout-result em u a {
     padding: 6px;border: 2px solid var(--color-hardgrey);
@@ -205,6 +194,54 @@ figure iframe {width:100%;}
 }
 .list #link-comment:hover,
 #layout-list:checked ~ #layout-result #link-comment:hover {
+    border-bottom:thin solid currentcolor;
+    color:var(--color-link);
+}
+.table #link-comment,
+#layout-table:checked ~ #layout-result #link-comment {
+    float: right;font-size:17px;border-bottom:thin solid currentcolor;
+    position: absolute;color:var(--color-hardgrey);
+    right: 0;text-decoration:none;
+    bottom: 6px;
+}
+.table #link-comment:hover,
+#layout-table:checked ~ #layout-result #link-comment:hover {
+    border-bottom:thin solid currentcolor;
+    color:var(--color-link);
+}
+.gallery #link-comment,
+#layout-gallery:checked ~ #layout-result #link-comment {
+    float: right;font-size:17px;border-bottom:thin solid currentcolor;
+    position: absolute;color:var(--color-hardgrey);
+    right: 0;text-decoration:none;
+    bottom: 6px;
+}
+.gallery #link-comment:hover,
+#layout-gallery:checked ~ #layout-result #link-comment:hover {
+    border-bottom:thin solid currentcolor;
+    color:var(--color-link);
+}
+.cards #link-comment,
+#layout-cards:checked ~ #layout-result #link-comment {
+    float: right;font-size:17px;border-bottom:thin solid currentcolor;
+    position: absolute;color:var(--color-hardgrey);
+    right: 0;text-decoration:none;
+    bottom: 6px;
+}
+.cards #link-comment:hover,
+#layout-cards:checked ~ #layout-result #link-comment:hover {
+    border-bottom:thin solid currentcolor;
+    color:var(--color-link);
+}
+.tiles #link-comment,
+#layout-tiles:checked ~ #layout-result #link-comment {
+    float: right;font-size:17px;border-bottom:thin solid currentcolor;
+    position: absolute;color:var(--color-hardgrey);
+    right: 0;text-decoration:none;
+    bottom: 6px;
+}
+.tiles #link-comment:hover,
+#layout-tiles:checked ~ #layout-result #link-comment:hover {
     border-bottom:thin solid currentcolor;
     color:var(--color-link);
 }
