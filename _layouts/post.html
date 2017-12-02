@@ -5,13 +5,13 @@ comments: true
 
   	{% include partials/navigation/nav-article.html %}
     <main id="page-main" role="main">
-		<header id="post-header">
-				<h1 id="post-title" class="anm-moveFromBottomFade">{{ page.title }}</h1>
+		<header id="post-header" class="anm-moveFromRight delay-600">
+				<h1 id="post-title" class="anm-moveFromBottomFade delay-900">{{ page.title }}</h1>
 		</header>
 		<div>
-			<article id="post-video" class="post anm-fadeIn delay-500">
+			<article id="post-video" class="post anm-rotateCubeTopIn delay-1000">
 				<div id="entry">
-					<figure id="post-img" class="anm-moveFromLeftFade delay-700">
+					<figure id="post-img">
 						<a href="../{{ page.img }}" data-lightbox="roadtrip"><img src="../{{ page.img }}"></a>
 					</figure>
 	    			{{ content }}
