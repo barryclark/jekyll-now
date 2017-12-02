@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Slides] [Photos] [Nov 2017] Persistent storage with Kubernetes in production - Kubernetes London"
+title: "[Video] [Slides] [Photos] [Nov 2017] Persistent storage with Kubernetes in production - Kubernetes London"
 ---
 
 ![Cheryl Hung]({{site.baseurl}}/images/k8s-1.jpg)
