@@ -144,7 +144,7 @@ figure iframe {width:100%;}
 #fb {background:var(--color-blue);}
 #go {background:var(--color-orange);}
 
-/* Link Comentaris */
+/* Link Comentaris Count */
 .list #link-comment {
     float: right;font-size:17px;border-bottom:thin solid currentcolor;
     position: absolute;color:var(--color-hardgrey);
@@ -155,7 +155,7 @@ figure iframe {width:100%;}
     border-bottom:thin solid currentcolor;
     color:var(--color-link);
 }
-/* Simple & List ( em u a ) Links */
+/* Simple & List Links */
 .simple em u a,
 #layout-simple:checked ~ #layout-result em u a {
     padding: 6px;border: 2px solid var(--color-hardgrey);
