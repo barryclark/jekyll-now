@@ -1,15 +1,11 @@
-/* BarcelonaCSS */
-/* by Acozar/Miralles  ADDING CSS */
+/* by Isard Miralles  ADDING CSS */
 /* ------------------------------------------------------------ Resets */
 #site-nav, footer, #follows, #follows-big, #icons, #covers, .nav-scroll, #web-credits, #page-header {
 text-align: center;}
 body {text-align: justify;-moz-hyphens:none;-ms-hyphens:none;-webkit-hyphens:none;-o-hyphens:none;hyphens:none;word-wrap:none;}
 p, ul {font-size: 18px;line-height: 27px;}
 main {padding-bottom:0!important;}
-#page-header.cover {
-    background-image: url("/img/home.jpg");image-rendering: crisp-edges;
-    background-position: fixed;
-}
+#page-header.cover {background-image: url("/img/home.jpg");image-rendering: crisp-edges;background-position: fixed;}
 #page-header.serveis-header {background-image: url("/img/texture/dark_design.png");background-size:46px 29px;background-repeat: repeat;image-rendering: crisp-edges;}
 #page-header.about-cover {background-image: url("/img/texture/dark.png");background-size:180px 180px;background-repeat: repeat;image-rendering: crisp-edges;}
 #section-web {background-image: url("/img/web.jpg");background-position:fixed;image-rendering: crisp-edges;}
@@ -179,7 +175,7 @@ img.dialog-svg {width:120px;height:150px;}
 em small #go-up { background:rgba(0,0,0,.1);padding:15px;border-radius:50%; }
 em small #go-up:hover {background:rgba(0,0,0,.3); }
 
-#avatar {margin:2px 15px 0 0;background-color:var(--color-white)!important;border-radius:50%;padding:2px;border:thin solid var(--color-grey);opacity:.7;}
+#avatar {margin:0 15px 0 0;border-radius:50%;padding:2px;opacity:.7;}
 
 /* Footer fixed */
 main {
