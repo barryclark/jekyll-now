@@ -118,6 +118,14 @@ img.dialog-svg {width:120px;height:150px;}
 #dialog dialog div a {font-size:15px;}
 #dialog header {padding-top:0px;}
 #dialog header, #dialog dialog label  {background:var(--color-soft-black);color:var(--color-hardgrey);}
+.rights#dialog header {
+    background: var(--color-yellow);
+}
+#llicencia {
+
+}
+#llicencia img {}
+
 /* Posts */
 #post-title, #date, #post-share {text-align: center;}
 #post-video, #post-download, #post-share, #post-header {border:none;}
