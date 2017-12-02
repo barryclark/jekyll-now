@@ -13,11 +13,9 @@
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/styles/components.css" />
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/styles/helpers.css" />
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/styles/adding.css" />
-	{% if page.comments %}	
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/styles/adding-blog.css" />
-	{% endif %}
+	{% if page.comments %}<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/styles/adding-blog.css" />{% endif %}
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/styles/anime.css" />
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/css/lightbox.min.css" />
+    {% if page.comments %}<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/css/lightbox.min.css" />{% endif %}
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
 
     {% include favicons.html %}
@@ -42,8 +40,8 @@
   	<script src="{{ site.baseurl }}/hipertextos/js/jquery.js"></script>
   	<script src="{{ site.baseurl }}/hipertextos/js/icons.js"></script>
   	<script src="{{ site.baseurl }}/hipertextos/js/anime.js"></script>
-  	<script src="{{ site.baseurl }}/hipertextos/js/lightbox.min.js"></script>
-  	<script type="text/javascript">
+  	{% if page.comments %}<script src="{{ site.baseurl }}/hipertextos/js/lightbox.min.js"></script>
+	<script type="text/javascript">
   		$(document).ready(function() {
     		$("[href]").each(function() {
     		    if (this.href == window.location.href) {
@@ -51,9 +49,7 @@
     	    	}
     		});
 		});
-  	</script>
-	{% if page.comments %}
-    	<script id="dsq-count-scr" src="//isard-miralles.disqus.com/count.js" async></script>
-	{% endif %}
+  	</script>{% endif %}
+	{% if page.comments %}<script id="dsq-count-scr" src="//isard-miralles.disqus.com/count.js" async></script>{% endif %}
   </body>
 </html>
