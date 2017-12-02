@@ -173,6 +173,10 @@ figure iframe {width:100%;}
 #layout-list:checked ~ #layout-result em u svg {
     width: 15px;padding:5px 0 0 0;
 }
+.list #link-comment a,
+#layout-list:checked ~ #layout-result #link-comment a {
+    float:right;position:absolute;right:0;bottom:0;
+}
 em small #go-up { background:rgba(0,0,0,.1);padding:15px;border-radius:50%; }
 em small #go-up:hover {background:rgba(0,0,0,.3); }
 
