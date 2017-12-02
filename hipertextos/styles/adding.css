@@ -173,9 +173,17 @@ figure iframe {width:100%;}
 #layout-list:checked ~ #layout-result em u svg {
     width: 15px;padding:5px 0 0 0;
 }
-.list #link-comment a,
-#layout-list:checked ~ #layout-result #link-comment a {
-    float:right;position:absolute;right:0;bottom:0;
+.list #link-comment,
+#layout-list:checked ~ #layout-result #link-comment {
+    float: right;font-size:17px;border-bottom:thin solid currentcolor;
+    position: absolute;color:var(--color-hardgrey);
+    right: 0;text-decoration:none;
+    bottom: 6px;
+}
+.list #link-comment:hover,
+#layout-list:checked ~ #layout-result #link-comment:hover {
+    border-bottom:thin solid currentcolor;
+    color:var(--color-link);
 }
 em small #go-up { background:rgba(0,0,0,.1);padding:15px;border-radius:50%; }
 em small #go-up:hover {background:rgba(0,0,0,.3); }
