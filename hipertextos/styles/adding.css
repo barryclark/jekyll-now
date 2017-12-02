@@ -121,6 +121,7 @@ img.dialog-svg {width:120px;height:150px;}
 .rights#dialog dialog label  {background:transparent;color:var(--color-hardgrey);}
 .rights#dialog header {
     background: var(--color-yellow);}
+.rights#dialog .yellow {color:var(--color-yellow)!important;}
 #llicencia, .rights#dialog h5 {text-align:center;}
 #llicencia img {width:48px;}
 .cc-icon img (width:64px;)
