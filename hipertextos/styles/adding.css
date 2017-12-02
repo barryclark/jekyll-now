@@ -124,6 +124,7 @@ img.dialog-svg {width:120px;height:150px;}
 #llicencia, .rights#dialog h5 {text-align:center;}
 #llicencia img {width:48px;}
 .cc-icon img (width:64px;)
+.rights#dialog em u a {background:#fafafa;border:thin solid var(--color-softgrey);}
 
 /* Posts */
 #post-title, #date, #post-share {text-align: center;}
