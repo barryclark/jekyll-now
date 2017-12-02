@@ -123,6 +123,7 @@ img.dialog-svg {width:120px;height:150px;}
     background: var(--color-yellow);}
 #llicencia, .rights#dialog h5 {text-align:center;}
 #llicencia img {width:48px;}
+.cc-icon img (width:64px;)
 
 /* Posts */
 #post-title, #date, #post-share {text-align: center;}
