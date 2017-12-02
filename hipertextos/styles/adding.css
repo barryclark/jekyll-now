@@ -144,6 +144,17 @@ figure iframe {width:100%;}
 #fb {background:var(--color-blue);}
 #go {background:var(--color-orange);}
 
+/* Link Comentaris */
+.list #link-comment {
+    float: right;font-size:17px;border-bottom:thin solid currentcolor;
+    position: absolute;color:var(--color-hardgrey);
+    right: 0;text-decoration:none;
+    bottom: 6px;
+}
+.list #link-comment:hover {
+    border-bottom:thin solid currentcolor;
+    color:var(--color-link);
+}
 /* Simple & List ( em u a ) Links */
 .simple em u a,
 #layout-simple:checked ~ #layout-result em u a {
@@ -157,6 +168,18 @@ figure iframe {width:100%;}
 .simple em u svg,
 #layout-simple:checked ~ #layout-result em u svg {
     width: 21px;}
+.simple #link-comment,
+#layout-simple:checked ~ #layout-result #link-comment {
+    float: right;font-size:17px;border-bottom:thin solid currentcolor;
+    position: absolute;color:var(--color-hardgrey);
+    right: 0;text-decoration:none;
+    bottom: 6px;
+}
+.simple #link-comment:hover,
+#layout-simple:checked ~ #layout-result #link-comment:hover {
+    border-bottom:thin solid currentcolor;
+    color:var(--color-link);
+}
 .list em u a,
 #layout-list:checked ~ #layout-result em u a {
     padding: 3px;font-size:15px;line-height:27px;
