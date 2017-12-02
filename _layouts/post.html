@@ -21,7 +21,7 @@ comments: true
 					{% include share.html %}
 				</aside>
 				<div id="date">
-    				<p>Publicat el {{ page.date | date_to_string }}</p>
+    				<p>Publicat el {{ page.date | site.time | date_to_string }}</p>
   				</div>
 				<em><hr></em>
 					<div>
