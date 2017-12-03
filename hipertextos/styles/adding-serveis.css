@@ -38,7 +38,7 @@ img.big-icon {width:64px;padding-top:16px;}
     animation-duration: 12s;animation-timing-function: ease-in-out;
 }
 @keyframes diamonds {
-    0% {background-image: url(/hipertextos/svg/diamond-1.svg);background-repeat: none ;}
+    0% {background-image: url(/hipertextos/svg/diamond-1.svg);background-repeat: none ;width:280px;height:280px;}
     25% {background-image: url(/hipertextos/svg/diamond-2.svg);background-repeat: none ;width:280px;height:280px;}
     50% {background-image: url(/hipertextos/svg/diamond.svg);background-repeat: none ;width:280px;height:280px;}
     100% {background-image: url(/hipertextos/svg/diamond-5.svg);background-repeat: none ;width:280px;height:280px;}
