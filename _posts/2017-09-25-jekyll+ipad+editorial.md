@@ -37,7 +37,7 @@ Saltémonos la parte de configurar github pages con Jekyll porque es tan fácil 
 
 ###  editorial
 
-Esta simple app para edición de texto plano, tiene algo llamado *workflows*, y niños, **es la cumbia**, ya que se pueden programar acciones, así tal cual, **if**, **while** y todas esas **programanerdidades**, de hecho hay un [sitio](www.editorial-workflows.com), en el sitio hay varios workflows con github, pensándos exclusivamente para blog, no logre hacerlos funcionar bien ,había q sacar un token de api, lo hice pero nah, si en verdad es tan sencillo como subir el archivo desde safari, o simplemente copiar y pegar.
+Esta simple app para edición de texto plano, tiene algo llamado *workflows*, y niños, **es la cumbia**, ya que se pueden programar acciones, así tal cual, **if**, **while** y todas esas **programanerdidades**, de hecho hay un [sitio](www.editorial-workflows.com), en el sitio hay varios workflows con github, pensándos exclusivamente para blog, no logre hacerlos funcionar bien, había q sacar un token de api, lo hice pero, nah, si en verdad es tan sencillo como subir el archivo desde safari, o simplemente copiar y pegar, para que usar API.
 
 La gran ventaja de **editorial** es que me deja crear snippets q se acomodan a como yo he hecho algunas modificaciones al mismo jekyll y al css, cosa que otros editores no me dejan y como soy un viejo lobo de mar acostumbrado al teclado andar escribiendo los *figure* y esa clase de **html** es imposible.
 
