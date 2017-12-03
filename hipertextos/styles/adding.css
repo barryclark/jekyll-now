@@ -14,9 +14,6 @@ text-align: center;}
 #site-nav label {color:var(--color-grey);border:thin solid transparent;}
 #site-nav label:hover {color:var(--color-soft-grey);border:thin solid #353535;}
 .cover h2 { letter-spacing: 0.001em;font-weight: normal; }
-.nav-scroll label {font-size: 11px;line-height: 12px;padding: 10px;font-weight: normal;}
-.nav-scroll label img {width: 18px;height: 18px;margin-bottom: 8px;}
-.nav-scroll label:hover {border:thin solid transparent;}
 #coffee h2 {margin:0;}
 body {text-align: justify;-moz-hyphens:none;-ms-hyphens:none;-webkit-hyphens:none;-o-hyphens:none;hyphens:none;word-wrap:none;}
 p, ul {font-size: 18px;line-height: 27px;}
