@@ -12,7 +12,7 @@ background-size:46px 29px;background-repeat: repeat;image-rendering: crisp-edges
 /* Serveis */
 #section-web, #section-brand, #section-paint, #section-print {background-position: top center;background-attachment: fixed;background-size: cover;background-repeat: no-repeat;border:none;overflow: hidden;text-align: center;}
 #section-web svg, #section-brand svg, #section-paint svg, #section-print svg {width:64px;}
-#resumed-web svg {width:36px;}
+#resumed-web svg {width:26px;}
 #resumed-web {color:var(--color-translucentblack);text-align:center!important;font-size:15px;}
 #resumed-web em {padding:1em 0 1em 0;}
 #responsive img {width:86%;}
