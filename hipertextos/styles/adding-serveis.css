@@ -32,8 +32,8 @@ img.big-icon {width:64px;padding-top:16px;}
 
 /* Animacions propies */
 
-figure img {width:260px;height:260px;margin-left:6%;border:none; }
-figure .diamond-base {border:none;
+aside {width:260px;height:260px;margin-left:6%;border:none; }
+aside .diamond-base {border:none;width:260px;height:260px;
 	background: url(/hipertextos/svg/diamond-5.svg);background-repeat: none ;
 	transition-duration: width .1s, height .1s, background 0.1s;-webkit-transition-duration: width .1s, height .1s, background 0.1s;
     animation-name: diamonds;animation-iteration-count: infinite;
