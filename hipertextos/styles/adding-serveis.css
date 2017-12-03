@@ -32,9 +32,10 @@ img.big-icon {width:64px;padding-top:16px;}
 
 /* Animacions propies */
 #diamond {
-	background: url(/hipertextos/svg/diamond.svg), url(/svg/diamond-1.svg), url(./svg/diamond-2.svg), url(./hipertextos/svg/diamond-3.svg);
+	background: url(/hipertextos/svg/diamond.svg), url(/hipertextos/svg/diamond-1.svg), url(/hipertextos/svg/diamond-2.svg), url(/hipertextos/svg/diamond-3.svg);
     transition: width 2s, height 4s; -webkit-transition: width 2s, height 4s; /* Safari */
     animation-iteration-count: infinite; -webkit-animation-iteration-count: infinite;
+    width:80px;height:80px;
 }
 @media (max-width: 1250px) {
     #section-web .pushed-6 {}
