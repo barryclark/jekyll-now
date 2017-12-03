@@ -1,5 +1,6 @@
 /* by Isard Miralles  ADDING EXTRA to About - CSS */
 /* ------------------------------------------------------------ Resets */
+
 #page-header.about-cover {background-image: url("/img/texture/dark.png");background-size:180px 180px;background-repeat: repeat;image-rendering: crisp-edges;}
 #avatar {margin:0 15px 0 0;border-radius:50%;padding:2px;opacity:.7;}
 .cover-page #page-header {border-bottom:10px solid var(--color-blue);background-color: var(--color-black);color: var(--color-blue);}
