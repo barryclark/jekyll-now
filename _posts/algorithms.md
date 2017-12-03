@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Algorithms to live by
+title: Sorting socks and other practical uses of algorithms
 ---
+
+
 
 ## Optimal stopping
 
 - Picking a book? ander voorbeeld, papers kiezen om te lezen?
 - knowing when to fold
 - *secretary problem*, stop after 37% ($1/e$)
-- parking problem (denk dat dit poison is?)
+- parking problem (denk dat dit Poison is?)
 - full information
 
 ```python
@@ -46,10 +48,23 @@ Out[23]: 0.75149999999999995
 
 ## Sorting
 
-- example: books in order?
-- searching vs sorting
-- binsort
-- tournaments
+Despite having a master degree in engineering, I have to admit that I do not really know how to operate our washing machine. Hence, I am usually the one who has to fold the laundry which my partner has washed. I can treat this mostly as an exercise in mindfulness, except for the socks. We seem to have an endless variety of different kinds of socks (my mother has a shop selling underwear) and most of my time in the laundry room is finding the matching pairs of socks. Sadly, I use a rather inefficient form of ... sort: I pick a (initially brightly colored) sock and subsequently comb trough the pile to find its partner. This leaves me with a depressing time complexity of $\mathcal{O}(n^2)$, time proportional to the the number of socks squared.
+
+When going through your laundry, organizing your contacts, alphabetizing your books or sorting a pack of cards, an efficient method of sorting requires more effort than going though the whole collection once. More precisely, it requires about $\mathcal{O}(n\log n)$ comparisons. This is better than how I organize my socks, but still requires several passes through the collection. Why do we sort if it is that much work? Because it is much easier to find items from a sorted collection compared to an unorganized collection. And this is the *searching-sorting trade-off*. Sorting is a lot of work in advance, but you save time searching for things on the long run.
+
+As an easy alternative for keeping your stuff perfectly sorted you can use *bin sort*:
+
+> Ordering and keeping things ordered is often an unnecessary hassle. Instead, simply divide your collection in a manageable number of 'bins'.
+
+This is the approach that is used in ..., the most efficient library in the world. ...
+
+- tijdscomplexiteit
+- sorteren vs zoeken
+
+#REVIEW
+- naam sorteer algorithm
+- naam efficient bibliotheek
+- Foto van mijn sokken
 
 ## Caching
 
@@ -57,8 +72,6 @@ Out[23]: 0.75149999999999995
 - clairvoyance
 - Nogushi filing system
 - memory works like cashing
-
-> Ordering and keeping things ordered is a hassle. Just divide your stuff in a manageable number of 'bins'.
 
 ## Scheduling
 
@@ -70,7 +83,7 @@ Out[23]: 0.75149999999999995
 
 > Do tasks in order of importance divided by the time it takes to finish the task.
 
-## Bayes's rule
+## Bayes' rule
 
 - predicting using one data point
 - *power-law distributions* => multiplicative rule
@@ -84,8 +97,6 @@ Out[23]: 0.75149999999999995
 - penalizing complexity
 - early stopping
 
-> Open yourself to randomness: make a random wikipedia page / random research article your browser starting page.
-
 ## Relaxation
 
 - Relaxation of hard problems
@@ -97,6 +108,8 @@ Out[23]: 0.75149999999999995
 - Metropolis Hastings methode
 - hill climbing
 - simulated annealing
+
+> Open yourself to randomness: make a random wikipedia page / random research article your browser starting page.
 
 ## Networking
 
@@ -114,6 +127,8 @@ Out[23]: 0.75149999999999995
   - *sealed-bid first auction*
   - Vicrey auction: sealed bid, winner has to pay the offer of second-place bidder
 
-## Computationa kindness
+## Computational kindness
 
-Min aantal keuzes die anderen moeten maken
+As a last piece of advice for dealing with others (or yourself): try to limit the amount of computation needed.
+
+- organiseren van feestjes
