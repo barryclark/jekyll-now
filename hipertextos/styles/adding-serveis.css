@@ -44,8 +44,8 @@ img.big-icon {width:64px;padding-top:16px;}
 #diamond-base {width:290px;height:290px;margin-left:6%;
 	background-image: url(/hipertextos/svg/diamond-1.svg)no-repeat top left;background-size: contain;
 	animation-name: diamond;animation-iteration-count: infinite;
-    animation-duration: 18s;-webkit-transition: -webkit-transform 2s; /* Safari */
-    transition: transform 2s;
+    animation-duration: 23s;-webkit-transition: -webkit-transform 1.2s; /* Safari */
+    transition: transform 1.2s;
 }
 @media (max-width: 1250px) {
     #section-web .pushed-6 {}
