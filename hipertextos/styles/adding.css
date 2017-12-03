@@ -31,13 +31,8 @@ section.cover-justify p {padding: 6px 18px 0 18px;line-height: 23px;font-size: 1
 .cover#page-header  {background-color: var(--color-white);}
 .serveis-header {border-bottom:10px solid var(--color-hardgrey);background-color: var(--color-black);color: var(--color-hardgrey);}
 .medias#page-header {border-bottom:10px solid var(--color-grey);background-color: var(--color-softgrey);color: var(--color-grey);}
-.cover-page #page-header {border-bottom:10px solid var(--color-blue);background-color: var(--color-black);color: var(--color-blue);}
-.cover-page #page-main ul {-webkit-column-count: 3;-moz-column-count: 3;column-count: 3;}
-.cover-page #page-main {color:var(--color-hardgrey);}
 #icons a {border:thin solid var(--color-soft);background: transparent;}
 #icons a:hover {border:thin solid var(--color-blue);}
-.cover-page aside {border:none;color: var(--color-grey);}
-.cover-page  #coffee {  background: var(--color-background);background: -webkit-linear-gradient(red, var(--color-background));background: -moz-linear-gradient(red, var(--color-background)); background: linear-gradient(#eee, var(--color-background));}
 figure em a {border:none;border-bottom;line-height:0.2em;padding:12px 4px;}
 /* Portfolio Nav */
 #page-nav {border:none;color:var(--color-hardgrey);} 
@@ -49,7 +44,7 @@ figure em a {border:none;border-bottom;line-height:0.2em;padding:12px 4px;}
 #covers {color: var(--color-grey);}
 #covers img {width: 13%;margin-bottom:1.2em; }
 #covers article {border:0;}
-#page #covers article {text-shadow:-1px 1px 2px #ddd;}
+#page #covers article {text-shadow:1px 1px 3px rgba(0,0,0,.12);}
 /* Dialog */
 #dialog .icon-alarm svg {max-width:23px!important;}
 #dialog {max-height:80%;overflow:hidden;}
