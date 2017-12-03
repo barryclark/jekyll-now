@@ -35,17 +35,16 @@ img.big-icon {width:64px;padding-top:16px;}
 #diamond {padding-left:6%;}
 @keyframes diamond {
     0% {background-image: url(/hipertextos/svg/diamond-1.svg);background-repeat: none ;border:none;}
-    15% {background-image: url(/hipertextos/svg/diamond-2.svg);background-repeat: none ;border:none;}
-    30% {background-image: url(/hipertextos/svg/diamond-3.svg);background-repeat: none ;border:none;}
-    45% {background-image: url(/hipertextos/svg/diamond-4.svg);background-repeat: none ;border:none;}
+    20% {background-image: url(/hipertextos/svg/diamond-3.svg);background-repeat: none ;border:none;}
+    40% {background-image: url(/hipertextos/svg/diamond-4.svg);background-repeat: none ;border:none;}
     60% {background-image: url(/hipertextos/svg/diamond-5.svg);background-repeat: none ;border:none;}
-    75% {background-image: url(/hipertextos/svg/diamond-6.svg);background-repeat: none ;border:none;}
+    80% {background-image: url(/hipertextos/svg/diamond-6.svg);background-repeat: none ;border:none;}
     100% {background-image: url(/hipertextos/svg/diamond-7.svg);background-repeat: none ;border:none;}
 }
 #diamond-base {width:290px;height:290px;margin-left:6%;
-	background-image: url(/hipertextos/svg/diamond-7.svg)no-repeat top left;background-size: contain;
+	background-image: url(/hipertextos/svg/diamond-1.svg)no-repeat top left;background-size: contain;
 	animation-name: diamond;animation-iteration-count: infinite;
-    animation-duration: 15s;-webkit-transition: -webkit-transform 2s; /* Safari */
+    animation-duration: 18s;-webkit-transition: -webkit-transform 2s; /* Safari */
     transition: transform 2s;
 }
 @media (max-width: 1250px) {
