@@ -24,35 +24,9 @@ figure iframe {width:100%;}
 #go {background:var(--color-orange);}
 
 /* nav Scroll */
-.nav-scroll {color:var(--color-grey);}
-.nav-scroll label {font-size: 11px;line-height: 12px;padding: 10px;font-weight: normal;border:none;}
+.nav-scroll label {font-size: 11px;line-height: 12px;padding: 10px;font-weight: normal;}
 .nav-scroll label img {width: 18px;height: 18px;margin-bottom: 8px;}
-.nav-scroll label:hover {border:thin solid transparent;}
-
-.simple .nav-scroll label,
-#layout-simple:checked ~ #layout-result .nav-scroll label {
-	color:var(--color-black);
-}
-.list .nav-scroll label,
-#layout-list:checked ~ #layout-result .nav-scroll label {
-	color:var(--color-black);
-}
-.table .nav-scroll label,
-#layout-table:checked ~ #layout-result .nav-scroll label {
-	color:var(--color-black);
-}
-.gallery .nav-scroll label,
-#layout-gallery:checked ~ #layout-result .nav-scroll label {
-	color:var(--color-black);
-}
-.cards .nav-scroll label,
-#layout-cards:checked ~ #layout-result .nav-scroll label {
-	color:var(--color-black);	
-}
-.tiles .nav-scroll label,
-#layout-tiles:checked ~ #layout-result .nav-scroll label {
-	color:var(--color-black);	
-}
+.nav-scroll label:hover {border:thin solid transparent;color:var(--color-black);text-decoration:none;}
 
 /* Simple, List, Table, Gallery, Cards, Tiles */
 .simple em u a,
