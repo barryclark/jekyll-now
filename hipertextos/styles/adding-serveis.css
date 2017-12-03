@@ -47,6 +47,18 @@ img.big-icon {width:64px;padding-top:16px;}
     animation-duration: 23s;-webkit-transition: -webkit-transform 1.2s; /* Safari */
     transition: transform 1.2s;
 }
+@keyframes diamond-fill {
+    0% {color:#000;fill:#000;}
+    50% {color:#eee;fill:#eee;}
+    100% {color:#cc0000;fill:#cc0000;}
+}
+#diamond-base-fill {width:290px;height:290px;margin-left:6%;
+	background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' x='0' y='0' viewBox='0 0 33 33' xml:space='preserve' enable-background='new 0 0 33 33'><path d='M16.5 30.5c-0.1 0-0.3-0.1-0.4-0.2l-16-19C0 11.1 0 10.9 0.1 10.7l6-8c0.1-0.1 0.2-0.2 0.4-0.2h20c0.2 0 0.3 0.1 0.4 0.2l6 8c0.1 0.2 0.1 0.4 0 0.6l-16 19C16.8 30.4 16.6 30.5 16.5 30.5zM1.1 11L16.5 29.2l15.4-18.2L26.3 3.5H6.8L1.1 11zM32.5 11.5h-32C0.2 11.5 0 11.3 0 11s0.2-0.5 0.5-0.5h32c0.3 0 0.5 0.2 0.5 0.5S32.8 11.5 32.5 11.5zM16.5 30.5c0 0-0.1 0-0.1 0 -0.3-0.1-0.4-0.4-0.3-0.6l6-19c0.1-0.3 0.4-0.4 0.6-0.3 0.3 0.1 0.4 0.4 0.3 0.6l-6 19C16.9 30.4 16.7 30.5 16.5 30.5zM16.5 30.5c-0.2 0-0.4-0.1-0.5-0.3l-6-19c-0.1-0.3 0.1-0.5 0.3-0.6 0.3-0.1 0.5 0.1 0.6 0.3l6 19c0.1 0.3-0.1 0.5-0.3 0.6C16.6 30.5 16.6 30.5 16.5 30.5zM10.5 11.5c-0.2 0-0.4-0.1-0.4-0.3l-4-8C5.9 3 6 2.7 6.3 2.6 6.5 2.4 6.8 2.5 6.9 2.8l4 8c0.1 0.2 0 0.5-0.2 0.7C10.7 11.5 10.6 11.5 10.5 11.5zM10.5 11.5c-0.1 0-0.2 0-0.3-0.1 -0.2-0.2-0.3-0.5-0.1-0.7l6-8c0.2-0.2 0.5-0.3 0.7-0.1 0.2 0.2 0.3 0.5 0.1 0.7l-6 8C10.8 11.4 10.7 11.5 10.5 11.5zM22.5 11.5c-0.2 0-0.3-0.1-0.4-0.2l-6-8c-0.2-0.2-0.1-0.5 0.1-0.7 0.2-0.2 0.5-0.1 0.7 0.1l6 8c0.2 0.2 0.1 0.5-0.1 0.7C22.7 11.5 22.6 11.5 22.5 11.5zM22.5 11.5c-0.1 0-0.2 0-0.2-0.1 -0.2-0.1-0.3-0.4-0.2-0.7l4-8c0.1-0.2 0.4-0.3 0.7-0.2 0.2 0.1 0.3 0.4 0.2 0.7l-4 8C22.9 11.4 22.7 11.5 22.5 11.5z' /></svg>";
+	background-size: contain;
+	animation-name: diamond-fill;animation-iteration-count: infinite;
+	animation-duration: 23s;-webkit-transition: -webkit-transform 1.2s; /* Safari */
+	transition: transform 1.2s;
+}
 @media (max-width: 1250px) {
     #section-web .pushed-6 {}
     #section-web .cell-10 {}
