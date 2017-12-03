@@ -32,6 +32,7 @@ img.big-icon {width:64px;padding-top:16px;}
 
 /* Animacions propies */
 
+#section-brand aside, #section-brand aside svg {border:0px solid transparent!important;}
 aside {width:260px;height:260px;margin-left:6%;border:none; }
 aside .diamond-base {border:none;width:260px;height:260px;
 	background: url(/hipertextos/svg/diamond-5.svg);background-repeat: none ;
