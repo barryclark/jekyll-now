@@ -51,16 +51,29 @@ img.big-icon {width:64px;padding-top:16px;}
     left:-180px;
     top:center;
 	animation-name: petals;animation-iteration-count: infinite;
-    animation-duration: 12s;-webkit-transition: -webkit-transform 1.2s; /* Safari */
-    transition: transform 1.2s;
+    animation-duration: 32s;
 }
 @keyframes petals {
     0% {-ms-transform: rotate(0deg);-webkit-transform: rotate(0deg); transform: rotate(0deg);}
     50% {-ms-transform: rotate(180deg);-webkit-transform: rotate(180deg); transform: rotate(180deg);}
     100% {-ms-transform: rotate(360deg);-webkit-transform: rotate(360deg); transform: rotate(360deg);}
 }
-#petals-case .petals img {z-index:1;}
-#petals-case .petals-shadow img {top:69px;}
+#petals-case .petals  {z-index:1;}
+#petals-case .petals-shadow {top:69px;}
+
+#print-case img{
+    position:absolute ;
+    right:-30px;
+    top:center;
+	animation-name: printer;animation-iteration-count: infinite;
+    animation-duration: 32s;
+}
+@keyframes printer {
+    0% {-ms-transform: rotate(0deg);-webkit-transform: rotate(0deg); transform: rotate(0deg);}
+    50% {-ms-transform: rotate(180deg);-webkit-transform: rotate(180deg); transform: rotate(180deg);}
+    100% {-ms-transform: rotate(360deg);-webkit-transform: rotate(360deg); transform: rotate(360deg);}
+}
+#print-case .printer  {}
 
 
 /* 
