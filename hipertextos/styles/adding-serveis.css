@@ -46,8 +46,21 @@ img.big-icon {width:64px;padding-top:16px;}
     animation-duration: 23s;-webkit-transition: -webkit-transform 1.2s; /* Safari */
     transition: transform 1.2s;
 }
-#petals-case {position:  ;left:;top:;}
-#petals {}
+#petals-case img{
+    position:absolute ;
+    left:-180px;
+    top:center;
+	animation-name: petals;animation-iteration-count: infinite;
+    animation-duration: 12s;-webkit-transition: -webkit-transform 1.2s; /* Safari */
+    transition: transform 1.2s;
+}
+@keyframes petals {
+    0% {-ms-transform: rotate(0deg);-webkit-transform: rotate(0deg); transform: rotate(0deg);}
+    50% {-ms-transform: rotate(180deg);-webkit-transform: rotate(180deg); transform: rotate(180deg);}
+    100% {-ms-transform: rotate(360deg);-webkit-transform: rotate(360deg); transform: rotate(360deg);}
+}
+#petals-case .petals img {z-index:1;}
+#petals-case .petals-shadow img {top:69px;}
 
 
 /* 
