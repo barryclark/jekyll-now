@@ -4,12 +4,13 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+I think numerically and am able to translate that logic into common vernacular. I approach every obstacle and a new challenge with creativity and determination. I am passionate about economic equity of individuals and within markets companies.
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+I'm an aspiring Data Scientist in New York.
+
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[penelopeleach10@gmail.com](mailto:penelopeleach10@gmail.com)
