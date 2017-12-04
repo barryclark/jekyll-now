@@ -52,7 +52,7 @@ img.big-icon {width:64px;padding-top:16px;}
     top:center;
 }
 #petals-case .petals  {z-index:-1;}
-#petals-case .petals-shadow {top:72px;z-index: -2;
+#petals-case .petals-shadow {top:72px;z-index: -10;
 	animation: scaleUp .8s ease both;
     -webkit-animation: scaleUp .8s ease both;
 	-moz-animation: scaleUp .8s ease both;
