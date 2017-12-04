@@ -65,7 +65,6 @@ img.big-icon {width:64px;padding-top:16px;}
     100% {-ms-transform: rotate(360deg);-webkit-transform: rotate(360deg); transform: rotate(360deg);}
 }
 #petals {width:290px;height:290px;margin-left:6%;
-	background-image: url(/hipertextos/petals.png)no-repeat top left;background-size: contain;
 	animation-name: petals;animation-iteration-count: infinite;
     animation-duration: 12s;-webkit-transition: -webkit-transform 1.2s; /* Safari */
     transition: transform 1.2s;
