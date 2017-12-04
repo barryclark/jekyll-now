@@ -54,7 +54,7 @@ img.big-icon {width:64px;padding-top:16px;}
 #petals-case .petals  {z-index:-1;}
 #petals-case .petals-shadow {top:69px;z-index: -2;animation-name: petals;
 	animation-iteration-count: 1;opacity:.5;
-    animation-duration: 2s;animation-delay:-2s;}
+    animation-duration: 2s;}
 @keyframes petals {
     0% {opacity:.1;}
     100% {opacity: 1;}
