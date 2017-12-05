@@ -27,7 +27,7 @@
 	{% include partials/navigation/nav-about.html %}
 		<header id="page-header" class="about-cover anm-moveFromTop">
 			<div>
-				<h1 class="anm-moveFromBottomFade delay-100">{{ page.name }}</h1>
+				<h1 class="anm-moveFromBottomFade delay-100">{{ page.title }}</h1>
 			</div>
 		</header>
 		<main id="page-main" class="anm-fadeIn delay-300">
@@ -35,7 +35,7 @@
 				<h3 class="anm-zoomIn delay-400"><small>Banda de música retroamericana</small></h3>
 				<section>
 					<h1 class="anm-scaleUpCenter delay-400"><u>Qui Som</u></h1>
-					<h2>{{ page.name }}</h2>
+					<h2>{{ page.title }}</h2>
 					<h3>{{ page.lead }}</h3>
 					<div>
 						{{ content }}
@@ -59,29 +59,29 @@
 					<hr>
 					<h1 class="anm-scaleUpCenter delay-400"><u>Músics</u></h1>
 					<div>
-						<div class="thumb-2">
+						<div class="cell-x2">
 							<img src="{{ site.baseurl }}/hipertextos/svg/diamond.svg" class="musics">
 							<h4>{{ page.vox }}</h4>
 							<h5><small>Veu</small></h5>
 						</div>
-						<div class="thumb-2">
+						<div class="cell-x2">
 							<img src="{{ site.baseurl }}/hipertextos/svg/diamond.svg" class="musics">
-							<h4>{{ page.sax }}</h4>
+							<h4><small>{{ page.sax }}</small></h4>
 							<h5><small>Saxo</small></h5>
 						</div>
-						<div class="thumb-2">
+						<div class="cell-x2">
 							<img src="{{ site.baseurl }}/hipertextos/svg/diamond.svg" class="musics">
-							<h4>{{ page.guitar }}</h4>
+							<h6>{{ page.guitar }}</h6>
 							<h5><small>Guitarra</small></h5>
 						</div>
-						<div class="thumb-2">
+						<div class="cell-x2">
 							<img src="{{ site.baseurl }}/hipertextos/svg/diamond.svg" class="musics">
-							<h4>{{ page.bass }}</h4>
+							<h5>{{ page.bass }}</h5>
 							<h5><small>Contrabaix</small></h5>
 						</div>
-						<div class="thumb-2">
+						<div class="cell-x2">
 							<img src="{{ site.baseurl }}/hipertextos/svg/diamond.svg" class="musics">
-							<h4>{{ page.drums }}</h4>
+							<h5>{{ page.drums }}</h5>
 							<h5><small>Bateria</small></h5>
 						</div>
 					</div>
