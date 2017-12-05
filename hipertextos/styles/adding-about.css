@@ -5,8 +5,8 @@
 .cover-page #page-header {border-bottom:10px solid var(--color-blue);background-color: var(--color-grey);color: var(--color-blue);}
 .cover-page #page-main {background-color: var(--color-softgrey) ;}
 .cover-page #page-main {color:var(--color-hardgrey);}
+#page-main h6 i svg {color:var(--color-red);width:32px;height:32px!important;margin:0 6px 0 0;}
 .cover-page #page-main h1 {text-align:right;color:var(--color-red);}
-.cover-page #page-main h2 {text-align:center;}
 .cover-page  #coffee {  background: var(--color-background);background: -webkit-linear-gradient(red, var(--color-background));background: -moz-linear-gradient(red, var(--color-background)); background: linear-gradient(#eee, var(--color-background));}
 #repertori h5, #repertori h3 {text-align:center;}
 #repertori h5 strong {}
