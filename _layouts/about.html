@@ -27,7 +27,7 @@
 	{% include partials/navigation/nav-about.html %}
 		<header id="page-header" class="about-cover anm-moveFromTop">
 			<div>
-				<h1 class="anm-moveFromBottomFade delay-100">{{ site.name }} Band</h1>
+				<h1 class="anm-moveFromBottomFade delay-100">{{ page.name }}</h1>
 			</div>
 		</header>
 		<main id="page-main" class="anm-fadeIn delay-300">
@@ -35,6 +35,8 @@
 				<h3 class="anm-zoomIn delay-400"><small>Banda de música retroamericana</small></h3>
 				<section>
 					<h1 class="anm-scaleUpCenter delay-400"><u>Qui Som</u></h1>
+					<h2>{{ page.name }}</h2>
+					<h3>{{ page.lead }}</h3>
 					<div>
 						{{ content }}
 					</div>
@@ -57,7 +59,31 @@
 					<hr>
 					<h1 class="anm-scaleUpCenter delay-400"><u>Músics</u></h1>
 					<div>
-						<h4>{{ page.vox }} , {{ page.sax }}</h4>
+						<div class="thumb-2">
+							<img src="{{ site.baseurl }}/hipertextos/svg/diamond.svg" class="musics">
+							<h4>{{ page.vox }}</h4>
+							<h5><small>Veu</small></h5>
+						</div>
+						<div class="thumb-2">
+							<img src="{{ site.baseurl }}/hipertextos/svg/diamond.svg" class="musics">
+							<h4>{{ page.sax }}</h4>
+							<h5><small>Saxo</small></h5>
+						</div>
+						<div class="thumb-2">
+							<img src="{{ site.baseurl }}/hipertextos/svg/diamond.svg" class="musics">
+							<h4>{{ page.guitar }}</h4>
+							<h5><small>Guitarra</small></h5>
+						</div>
+						<div class="thumb-2">
+							<img src="{{ site.baseurl }}/hipertextos/svg/diamond.svg" class="musics">
+							<h4>{{ page.bass }}</h4>
+							<h5><small>Contrabaix</small></h5>
+						</div>
+						<div class="thumb-2">
+							<img src="{{ site.baseurl }}/hipertextos/svg/diamond.svg" class="musics">
+							<h4>{{ page.drums }}</h4>
+							<h5><small>Bateria</small></h5>
+						</div>
 					</div>
 					<div id="repertori">
 						<h1 class="anm-scaleUpCenter delay-400"><u>Repertori</u></h1>
