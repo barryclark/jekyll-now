@@ -1,6 +1,6 @@
 ---
-layout: default
-title: Resume
+layout: page
+title: Resum&eacute;
 permalink: /resume/
 ---
 
