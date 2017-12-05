@@ -5,26 +5,14 @@ permalink: /about/
 
 ---
 
-###### Il·lustrador, dissenyador i músic de Barcelona
+###### Banda de música retroamericana
 
-Vaig estudiar Arts Aplicades, il·lustració, pintura i posteriorment música moderna.
+Som Old Steam, una banda de swing, jazz y blues de Barcelona. Les cançons de clàssics com Ella Fitzgerald, Nina Simone, Frank Sinatra, Ray Charles, Louis Prima o Etta James son parades d’un nostàlgic viatge per la millor música retroamericana. 
 
-Actualment compagino la vida de creatiu gràfic amb la de músic.
+A més, el nostre tren arriba fins el segle XXI, versionant Lady Gaga i altres artistes contemporanis, així com oferint cançons de creació propia, sempre amb el punt vintage que ens caracteritza.
 
+El nostre show, ple de ritme i cançons que públic de totes les edats reconeixerà, és ideal per amenitzar qualsevol vetllada: concerts en locals de tota mena (bars, sales de concert, hotels, etc), festes majors, ballades swing i festes de temàtica vintage. També estem disponibles per realitzar esdeveniments privats (aniversaris, bodes, etc).
 
-He treballat en:
+Gaudeix d’una divertida i elegant experiència musical amb
 
-* Disseny Gràfic
-* Cartells & flyers
-* Branding
-* Retratísta
-* HTML5 & CSS3
-* Publicitat
-* Comunity Manager
-* YouTube Creators
-* Promoció Cultural
-* Tècnic de So
-* Tècnic de llums
-* Baterísta profesional
-
-Si em necessites per a algún projecte, serà un plaer poder ajudar-te.
+Maria Baeta (veu), Pep Cabrero (saxo), Juanje Sánchez (guitarra), Jose Borjas (baix/contrabaix) i Isard Miralles (bateria).
