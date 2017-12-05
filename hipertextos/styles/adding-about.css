@@ -1,7 +1,7 @@
 /* by Isard Miralles  ADDING EXTRA to About - CSS */
 /* ------------------------------------------------------------ Resets */
 
-#page-header.about-cover {background-image: url("/img/texture/regal.png");background-size:400px 400px;background-repeat: repeat;image-rendering: crisp-edges;}
+#page-header.about-cover {background-image: url("/img/texture/grey.png");background-size:200px 200px;background-repeat: repeat;image-rendering: crisp-edges;}
 .cover-page #page-header {border-bottom:10px solid var(--color-blue);background-color: var(--color-grey);color: var(--color-blue);}
 .cover-page #page-main {background-image: url("/img/texture/light.png");background-size:588px 470px;background-repeat: repeat;image-rendering: crisp-edges;}
 .cover-page #page-main {color:var(--color-hardgrey);}
