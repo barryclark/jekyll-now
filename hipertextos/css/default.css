@@ -1,26 +1,27 @@
-.page {text-align:center;}
-h1 {font-size:6.5em;line-height:1.9em;margin-bottom:0;}
-.img {width:100%;padding:none;margin:none;height:100%;}
-.layout {}
-#footer {}
-.button-centered .squared {width:12%;}
-a.button:hover, a.button:focus {background-color:#fafafa !important;color:#555 !important;}
-.foot {opacity:0.8;font-size:1.2em;}
-.header-cover {	padding:12% 0 0;height: 55em;
-	background-position: top center;
-	background-attachment: fixed;
-	background-size: 100%;
-	background-repeat: no-repeat;
-	border:none;}
-.dates a{font-family: 'Six Caps', sans-serif;font-size:2.3em;line-height:0.6em;letter-spacing: 0.08em;
-}
+/* Home ANIME */
 
-@media (max-width: 1366px) {
+body {
+	width: 100wh;
+	height: 90vh;
+	color: #EA6666;
+	background: linear-gradient(45deg, #F5AB35, #EA6666, #7895B5, #408EBE);
+	background-size: 300% 300%;
+	-webkit-animation: gradient 32s ease infinite;
+	-moz-animation: gradient 32s ease infinite;
+	animation: gradient 32s ease infinite;
 }
-@media (max-width: 800px) {
+@-webkit-keyframes gradient {
+	0% { background-position: 0% 50%}
+	50% {background-position: 100% 50%}
+	100% {background-position: 0% 50%}
 }
-@media (max-width: 767px) {
+@-moz-keyframes gradient {
+	0% {background-position: 0% 50%}
+	50% {background-position: 100% 50%}
+	100% {background-position: 0% 50%}
 }
-@media (max-width: 550px) {
-
+@keyframes gradient {
+	0% {background-position: 0% 50%}
+	50% {background-position: 100% 50%}
+	100% {background-position: 0% 50%}
 }

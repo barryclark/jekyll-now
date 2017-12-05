@@ -1,0 +1,22 @@
+/* by Isard Miralles  ADDING EXTRA to About - CSS */
+/* ------------------------------------------------------------ Resets */
+
+#page-header.about-cover {background-image: url("/img/texture/dark.png");background-size:180px 180px;background-repeat: repeat;image-rendering: crisp-edges;}
+#avatar {margin:0 15px 0 0;border-radius:50%;padding:2px;opacity:.7;}
+.cover-page #page-header {border-bottom:10px solid var(--color-blue);background-color: var(--color-black);color: var(--color-blue);}
+.cover-page #page-main ul {-webkit-column-count: 3;-moz-column-count: 3;column-count: 3;}
+.cover-page #page-main {color:var(--color-hardgrey);}
+.cover-page aside {border:none;color: var(--color-grey);}
+.cover-page  #coffee {  background: var(--color-background);background: -webkit-linear-gradient(red, var(--color-background));background: -moz-linear-gradient(red, var(--color-background)); background: linear-gradient(#eee, var(--color-background));}
+
+@media (max-width: 1250px) {
+  	.cover-page #page-main ul {-webkit-column-count: 2;-moz-column-count: 2;column-count: 2;}
+    .cover-page p {font-size:16px;line-height:1.8em;}
+    .cover-page ul li {font-size:14px;line-height:1.5em;margin-top:5px;padding:0;}
+}
+@media (max-width: 768px) {
+    .cover-page h4  {text-align:center;}
+    .cover-page p {font-size:15px;line-height:1.5em;}
+    .cover-page ul li {font-size:12px;line-height:1.3em;margin-top:5px;padding:0;}
+    .cover-page strong em a {width:100%;margin-bottom: 5px;}
+}

@@ -1,10 +1,3 @@
-{% for sibling in page.previous_sibling %}
-					{% for child in page.previous_sibling %}
-						{% if child.thumb %}
-					<div class="sibling-content prev-sib anm-moveFromLeft delay-300">
-	  <a href="{{ sibling.url }}" title="Articulo Anterior: {{ sibling.title }}" class="txt-sibling prev"> Anterior</a>
-						<a href="{{ sibling.url }}" title="{{ sibling.title }}"><img class="img-sibling" src="{{ sibling.thumb.url }}" alt="{{ sibling.title }}"></a>
-					</div>
-						{% endif %}
-					{% endfor %}
-{% endfor %}
+	<div class="previous-post">
+  		<a href="{{ site.posts }}{{ page.previous }}" title="Següent Artícle: {{ page.previous }}" class="previous"> Següent</a>
+	</div>

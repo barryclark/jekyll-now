@@ -1,0 +1,157 @@
+/* by Isard Miralles  ADDING EXTRA to Blog - CSS */
+/* ------------------------------------------------------------ Resets */
+
+/* Posts */
+#post-title, #date, #post-share {text-align: center;}
+#post-video, #post-download, #post-share, #post-header {border:none;}
+.post em u a { padding: 6px;border: 2px solid var(--color-grey);color: var(--color-grey);border-radius: 40px;width: 180px;margin-top: 18px;}
+.post em u svg { width: 18px;}
+#post-header {border-bottom: 9px solid var(--color-black);}
+#post-img img { border-radius: 50%;height: 210px;float: left;margin: 0 23px 26px 0;object-fit: cover;width: 210px;}
+#post-video {}
+#post-download {}
+#post-download p img {max-width:320px;float:left;border-radius:4px;margin:0 18px 12px 0;}
+#post-download p em a {	font-size: 15px;line-height: 18px;margin-top:17px;}
+#post-download em svg {	font-size: 18px;line-height: 18px;padding: 3px 0 0 0;}
+figure iframe {width:100%;}
+#post-share em a {color:#fff;border-radius:50%;}
+#post-share em svg {padding:0px 0px 0px 7px;}
+#post-share em a:hover {background:#fff !important;border:thin solid var(--color-link);}
+#post-share em a:visited {background-color:var(--color-soft-grey)  !important;}
+
+#tw {background:var(--color-green);}
+#fb {background:var(--color-blue);}
+#go {background:var(--color-orange);}
+
+/* nav Scroll */
+.nav-scroll label {font-size: 11px;line-height: 12px;padding: 10px;font-weight: normal;}
+.nav-scroll label img {width: 18px;height: 18px;margin-bottom: 8px;}
+.nav-scroll label:hover {border:thin solid transparent;color:var(--color-black);text-decoration:none;}
+
+/* Simple, List, Table, Gallery, Cards, Tiles */
+.simple em u a,
+#layout-simple:checked ~ #layout-result em u a {
+    padding: 6px;border: 2px solid var(--color-hardgrey);
+    color: var(--color-hardgrey);border-radius: 40px;
+    width: 210px;margin-top: 23px;}
+.simple em u a :hover,
+#layout-simple:checked ~ #layout-result em u a:hover {
+    color: var(--color-link);border: 2px solid var(--color-link); 
+}
+.simple em u svg,
+#layout-simple:checked ~ #layout-result em u svg {
+    width: 21px;}
+.simple #link-comment,
+#layout-simple:checked ~ #layout-result #link-comment {
+    float: right;font-size:17px;border-bottom:thin solid currentcolor;
+    position: absolute;color:var(--color-hardgrey);
+    right: 0;text-decoration:none;
+    bottom: 6px;
+}
+.simple #link-comment:hover,
+#layout-simple:checked ~ #layout-result #link-comment:hover {
+    border-bottom:thin solid currentcolor;
+    color:var(--color-link);
+}
+.list em u a,
+#layout-list:checked ~ #layout-result em u a {
+    padding: 3px;font-size:15px;line-height:27px;
+    border: 1px solid var(--color-hardgrey);
+    color: var(--color-hardgrey);
+    border-radius: 40px;
+    width: 169px;
+    margin-top: 21px;}
+.list em u a :hover,
+#layout-list:checked ~ #layout-result em u a:hover {
+    color: var(--color-link);border: thin solid var(--color-link); 
+}
+.list em u svg,
+#layout-list:checked ~ #layout-result em u svg {
+    width: 15px;padding:5px 0 0 0;
+}
+.list #link-comment,
+#layout-list:checked ~ #layout-result #link-comment {
+    float: right;font-size:17px;border-bottom:thin solid currentcolor;
+    position: absolute;color:var(--color-hardgrey);
+    right: 0;text-decoration:none;
+    bottom: 6px;
+}
+.list #link-comment:hover,
+#layout-list:checked ~ #layout-result #link-comment:hover {
+    border-bottom:thin solid currentcolor;
+    color:var(--color-link);
+}
+.table #link-comment,
+#layout-table:checked ~ #layout-result #link-comment {
+    font-size:17px;border-bottom:thin solid currentcolor;
+    position: absolute;padding:15px 15px 15px 15px;
+    left: 80px;text-decoration:none;color:var(--color-vlink); 
+    bottom: 3px;
+}
+.gallery #link-comment,
+#layout-gallery:checked ~ #layout-result #link-comment {
+    float: right;font-size:13px;border-bottom:none;
+    position: absolute;color:var(--color-white);background-color:rgba(0,0,0,.5);
+    right: 9px;text-decoration:none;padding:0 12px 0 12px;
+    bottom: 1px;
+}
+.cards #link-comment,
+#layout-cards:checked ~ #layout-result #link-comment {
+    float: right;font-size:12px;border-bottom:none;
+    position: absolute;color:var(--color-hardgrey);
+    right: 0;text-decoration:none;
+    bottom: 7px;padding:0 9px 0 0;
+}
+.tiles #link-comment,
+#layout-tiles:checked ~ #layout-result #link-comment {
+    float: none;font-size:12px;border-bottom:none;
+    position: absolute;color:var(--color-hardgrey);
+    left:37%;text-decoration:none;
+    bottom: -5px;z-index:10;
+}
+/* Suscribe */
+form .button {border:thin solid currentColor;margin-top:0.6em;}
+
+@media (max-width: 1250px) {
+
+}
+@media (max-width: 1242px) {
+
+}
+@media (max-width: 768px) {
+    .simple h3,
+	#layout-simple:checked ~ #layout-result h3 {
+
+	}
+	.simple,
+	#layout-simple:checked ~ #layout-result  {
+	  
+	}
+	.list h3,
+	#layout-list:checked ~ #layout-result h3 {
+    font-size: 26px;
+	}
+	.list p,
+	#layout-list:checked ~ #layout-result p {
+	font-size:15px;letter-spacing: .01em
+	}
+	.list article div img,
+	#layout-list:checked ~ #layout-result article div img {
+		width:96px;height:96px;
+	}
+}
+
+@media (max-width: 432px) {
+	.list h3,
+	#layout-list:checked ~ #layout-result h3 {
+    font-size: 17px;line-height:26px;
+	}
+	.list p,
+	#layout-list:checked ~ #layout-result p {
+	font-size:12px;letter-spacing: .001em;line-height:21px;
+	}
+	.list article div img,
+	#layout-list:checked ~ #layout-result article div img {
+		width:64px;height:64px;
+	}
+}

@@ -1,8 +1,13 @@
-<nav class="nav-sticky top flat black" id="menu">
-		<a href="{{ site.baseurl }}/blog/" title="Agenda de Concerts"  class="navlink">Agenda</a>
-		<a href="{{ site.baseurl }}/media/" title="Videos, fotos i cartells" class="navlink">Media</a>
-		<a href="{{ site.baseurl }}/" class="home" title="Home"><b>{{ site.name }}</b></a>
-		<a href="{{ site.baseurl }}/about/" title="Contacta amb nosaltres"  class="navlink">Contacte</a>	
-		<a href="#subs" title="About"  class="navlink">Seguir</a>	
-		<hr class="visible-phone">
-</nav>
+			<nav id="site-nav" class="nav-smart">
+				<div>
+					<input type="checkbox" id="mobnav" name="mobnav" aria-hidden="true" hidden> 
+					<strong><label for="mobnav">Menú<mark></mark></label></strong>
+					<div hidden>
+					<a href="{{ site.baseurl }}/serveis/" title="Serveis Gráfics">Serveis</a>	
+					<a href="{{ site.baseurl }}/portfoli/" title="Treballs i creacions gràfiques">Portfoli</a>
+					<a href="{{ site.baseurl }}/" title="Pàgina Principal" id="current-nav"><b>{{ site.name }}</b></a>
+					<a href="{{ site.baseurl }}/blog/" title="Blog personal">Blog</a>
+					<a href="{{ site.baseurl }}/about/" title="Informació i Contacte">Contacte</a>	
+					</div>
+				 </div>
+			</nav>
