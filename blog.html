@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+<div class="posts">
+  {% for post in site.posts %}
+    <div class="post">    
+
+      <h1><a href="{{ site.baseurl }}{{ post.url }}" class="fadein">{{ post.title }}</a></h1>
+
+		{% if post.intro %}
+		    <p>{{ post.intro | truncatewords:40}}</p>
+		{% endif %}
+      
+      <div class="read-more"><a href="{{ site.baseurl }}{{ post.url }}" class="fadein">Read More</a></div>
+    </div>
+  {% endfor %}
+</div>

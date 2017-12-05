@@ -1,0 +1,356 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="style.css" />
+<title>The Design Journey of Mika Aldaba</title>
+<META NAME="keywords" CONTENT="mika aldaba, art direction, travel, posters, music, harry potter, television, illustration, art direction for web">
+<META NAME="description" CONTENT="Mika Aldaba is a creative art director who is devoted to making beautiful designs that make you think and feel. I want to design things that make you happy or make you look differently. ">
+<META HTTP-EQUIV="Content-Language" CONTENT="EN">
+<META NAME="author" CONTENT="Mika Aldaba">
+<META NAME="robots" CONTENT="FOLLOW,INDEX">
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+<script>
+$(document).ready(function() {
+  function filterPath(string) {
+  return string
+    .replace(/^\//,'')
+    .replace(/(index|default).[a-zA-Z]{3,4}$/,'')
+    .replace(/\/$/,'');
+  }
+  var locationPath = filterPath(location.pathname);
+  var scrollElem = scrollableElement('html', 'body');
+
+  $('a[href*=#]').each(function() {
+    var thisPath = filterPath(this.pathname) || locationPath;
+    if (  locationPath == thisPath
+    && (location.hostname == this.hostname || !this.hostname)
+    && this.hash.replace(/#/,'') ) {
+      var $target = $(this.hash), target = this.hash;
+      if (target) {
+        var targetOffset = $target.offset().top;
+        $(this).click(function(event) {
+          event.preventDefault();
+          $(scrollElem).animate({scrollTop: targetOffset}, 1000, function() {
+            location.hash = target;
+          });
+        });
+      }
+    }
+  });
+
+  // use the first element that is "scrollable"
+  function scrollableElement(els) {
+    for (var i = 0, argLength = arguments.length; i <argLength; i++) {
+      var el = arguments[i],
+          $scrollElement = $(el);
+      if ($scrollElement.scrollTop()> 0) {
+        return el;
+      } else {
+        $scrollElement.scrollTop(1);
+        var isScrollable = $scrollElement.scrollTop()> 0;
+        $scrollElement.scrollTop(0);
+        if (isScrollable) {
+          return el;
+        }
+      }
+    }
+    return [];
+  }
+
+});
+</script>
+</head>
+
+<body>
+
+<div id="navigation">
+
+    	<ul id="nav">
+    		<li class="current"><a href="#chapter0"><img id="logo" src="images/designjourney.png" alt="The Design Journey of Mika Aldaba"></a></li>
+    		<li><a href="#chapter1"><span class="menu item1"></span></a></li>
+    		<li><a href="#chapter2"><span class="menu item2"></span></a></li>
+    		<li><a href="#chapter3"><span class="menu item3"></span></a></li>
+    		<li><a href="#chapter4"><span class="menu item4"></span></a></li>
+    		<li><a href="#chapter5"><span class="menu item5"></span></a></li>
+    		<li><a href="#about"><span class="menu item6"></span></a></li>
+    		<li><a href="#contact"><span class="menu item7"></span></a></li> 
+    	</ul>
+    	<div class="socialmedia">
+    	<div align="center">
+    		<a href="http://facebook.com/hailph" target="_blank"><img class="smicon" src="images/facebook.png" alt="facebook" /></a>
+    		<a href="http://www.linkedin.com/in/mikhaila" target="_blank"><img class="smicon" src="images/linkedin.png" alt="linkedin" /></a>
+    		<a href="http://hailmika.tumblr.com" target="_blank"><img class="smicon" src="images/tumblr.png" alt="tumblr" /></a>
+    		</div>
+    	</div>
+    </div>
+
+<div id="wrapper">
+
+
+
+<div id="main">
+
+    <div id="chapter0">
+        
+        <div class="map"></div>
+        <div id="chapter0card" class="postcard">
+            <h2 class="heading"><img src="images/heading_00.gif" alt="Dear Reader" /></h2>
+            <p class="content">Welcome! You are not lost, this really is my portfolio. Instead of sorting my works by type, I am showing it here in the wider context of my personal journey in finding my purpose in life & my quest to find my style in design.
+        Thanks for stopping by!</p>
+            <div class="signature"><img src="images/signature.gif" alt="Mika"  /></div>
+            <div class="stamp"><img src="images/stamp01.jpg" alt="Nostalgia" /></div>
+            <div class="address"><img src="images/address01.gif" alt="An interesting person somewhere in the world" /></div>
+        </div>
+        <div class="pen"></div>
+    </div>
+    
+    <div id="chapter1">
+    	<div class="chapterNumber"><img src="images/chapter01.gif" alt="1" /></div>
+        
+        <h1 class="title"><img src="images/title01.gif" alt="Design is beautiful" /></h1>
+        
+    	<div id="uts" class="place"><img src="images/under_the_stars.png" alt="Under the Stars, Ateneo de Manila University"/><div id="utstext" class="contentbg"><p class="work">This is one of the major projects of LFC: an outdoor film screening. Photo by Dom Dycaico</p></div></div>
+        
+        <div id="chapter1card" class="postcard">
+            <h2 class="heading"><img src="images/heading_01.gif" alt="A love of film led me to design" /></h2>
+            <p class="content">I joined the Loyola Film Circle with the assumption that I would be making films but I ended up being the Creative Director of the newly established LFC Creative Team.</p>
+            <div class="stamp"><img src="images/stamp02.jpg" alt="Loyola Film Circle" /></div>
+            <div class="address"></div>
+        </div>
+        
+        <div id="lfcbunny" class="place"><img src="images/ajax-loader.gif" data-original="images/lfc_bunny.png" alt="LFC Bunny"/></div>
+        
+        <div id="bunnytext" class="contentbg"><p class="work">The LFC Bunny is featured in a lot of my designs because of the mascot’s recognizability.</p></div>
+        
+        <div id="lfccircus" class="work"><img class="rectangle" src="images/ajax-loader.gif" data-original="images/lfc_circus.jpg" alt="LFC RecWeek Tarp"/><div class="contentbg"><p class="work">This tarpaulin for the circus themed recruitment week increased membership</p></div></div>
+        
+        <div id="lfcportfolio" class="work"><img src="images/ajax-loader.gif" data-original="images/lfc_portfolio.png" alt="LFC Portfolio brochure"/><div id="lfcportfoliotext" class="contentbg"><p class="work">This booklet was used to market the organization to potential sponsors.</p></div></div>
+        
+        <div id="flick" class="work"><img src="images/ajax-loader.gif" data-original="images/flick.png" alt="FL!CK Magazine"/><div id="flicktext" class="contentbg"><p class="work">My first major role was to be the Creative Director of the only film magazine published by students.</p></div></div>
+        
+        <div id="chapter1cardb" class="postcard">
+            <p class="content">My first posters highlighted form over function. As you can see on this poster, the design looks pretty but you can barely see the actual films to be screened. It was a time for an exploration of style.</p>
+            <p class="content">As Creative Director, I set a very high standard for designs by implementing a peer review system that helped members to learn from each other. I am proud to say that <a href="http://loyolafilmtriangle.tumblr.com/" target="_blank">our team still has some of the best designers on campus.</a></p>
+            <div class="stamp"></div>
+            <div class="address"></div>
+        </div>
+        
+        <div id="kapelikula" class="work"><img class="rectangle" src="images/ajax-loader.gif" data-original="images/kapelikula.jpg" alt="Kapelikula"/><div class="contentbg"><p class="work">A poster inspired by Starbucks. Kapelikula is formed by kape + pelikula translated as coffee + film. People get free coffee in the film screening.</p></div></div>
+        
+        <div id="avo" class="work"><img class="rectangle" src="images/ajax-loader.gif" data-original="images/avo.jpg" alt="Ateneo Video Open"/><div class="contentbg"><p class="work">This tarpaulin for the circus themed recruitment week increased membership</p></div></div>
+        
+        <div id="loyolascreen" class="work"><img class="rectangle" src="images/ajax-loader.gif" data-original="images/loyolascreen.jpg" alt="Loyola Screen"/><div class="contentbg"><p class="work">A poster promoting a film screening of the documentary Lupang Hinarang by Ditsi Carolino.</p></div></div>
+        
+        <div id="epson" class="work"><a href="http://www.mb.com.ph/node/21905" target="_blank"><img src="images/ajax-loader.gif" data-original="images/epson.png" alt="EPSON Featured Artist"/></a></div>
+        
+        <div id="healthdev" class="work"><img class="rectangle" src="images/ajax-loader.gif" data-original="images/healthdev.jpg" alt="Healthdev"/><div class="contentbg"><p class="work">This logo for Healthdev Integrative Clinics was my first paid professional design job. </p></div></div>
+        
+        <div id="healthdevimgs" class="place"><img src="images/ajax-loader.gif" data-original="images/healthdev_office.gif" alt="Healthdev"/></div>
+        
+        <div class="feather"><img src="images/feather.png" alt="feather"/></div><div class="feather2"><img src="images/feather2.png" alt="feather"/></div><div class="feather3"><img src="images/ajax-loader.gif" data-original="images/feather.png" alt="feather"/></div>
+    </div>
+        
+    <div id="chapter2">
+    	<div class="chapterNumber chapterNum2"><img src="images/chapter02.gif" alt="2" /></div>
+        
+        <h1 class="title"><img src="images/ajax-loader.gif" data-original="images/title02.gif" alt="Design is passion" /></h1>
+        
+        <div class="knife"><img src="images/ajax-loader.gif" data-original="images/knife.png" alt="knife"/></div>
+        
+        <div id="chapter2card" class="postcard">
+            <h2 class="heading"><img src="images/heading_02.gif" alt="My epiphany" /></h2>
+            <p class="content">In my junior year, I spent a semester abroad in San Francisco. Seeing Jason Munn selling his posters at the Treasure Island Music Festival made me realize that design isn’t just a hobby for me but something more important than that. But I also learned that if I wanted to be a designer, I really had to love it.</p>
+            <div class="stamp"></div>
+            <div class="address"></div>
+        </div>
+        
+        <div class="goldengate"><img class="rectangle" src="images/ajax-loader.gif" data-original="images/goldengate.jpg" alt="Golden Gate Bridge"/></div>
+        <div class="treasureisland"><img src="images/ajax-loader.gif" data-original="images/treasureisland.png" alt="feather"/></div>
+        
+        <div id="jason" class="place"><a href="http://www.jasonmunn.com" target="_blank"><img class="rectangle" src="images/ajax-loader.gif" data-original="images/jason.jpg" alt="Jason Munn"/></a><div class="contentbg"><p class="work">Jason Munn at his booth in Treasure Island.</p></div></div>
+        
+        <div id="wrongguys" class="work"><a href="http://www.wrongguys.com" target="_blank"><img class="rectangle" src="images/ajax-loader.gif" data-original="images/wrongguys.jpg" alt="Wrong Guys"/></a><div class="contentbg"><p class="work">This is a website that I made for Richard Leo and Tom Wells in 2008 to promote their book The Wrong Guys.</p></div></div>
+        
+        <div id="tomwells" class="work"><a href="http://www.tomleewells.com" target="_blank"><img class="rectangle" src="images/ajax-loader.gif" data-original="images/tomwells.jpg" alt="Tom Wells"/></a><div class="contentbg"><p class="work">In 2011, Tom Wells approached me again to design his promotional website.</p></div></div>
+        
+    </div>
+    
+    <div id="chapter3">
+    	<div class="chapterNumber chapterNum3"><img src="images/chapter03.gif" alt="3" /></div>
+        
+        <h1 class="title"><img src="images/ajax-loader.gif" data-original="images/title03.gif" alt="Design is thinking made visual" /></h1>
+        
+        <div id="chapter3card" class="postcard">
+            <h2 class="heading"><img src="images/heading_03.gif" alt="The rise" /></h2>
+            <p class="content">Back in the Philippines from an inspirational trip, I was on my way to attaining my college goal: to win the Loyola Schools' Awards for the Arts for Graphic Design. I had a tough time because I was also busy working on my Computer Science thesis and reviving the promotion department of the Computer Society of the Ateneo. I barely slept in my senior year.</p>
+            <div class="stamp"></div>
+            <div class="address"></div>
+        </div>
+        
+        <div class="lightbulb"></div><div class="light"><img src="images/ajax-loader.gif" data-original="images/light.png" alt="light"/></div>
+        
+        <div class="ipod"></div>
+        
+        <div id="compsatsite" class="work"><img class="rectangle" src="images/ajax-loader.gif" data-original="images/compsatsite.jpg" alt="CompSAt Website"/><div class="contentbg"><p class="work">Above is a website and at the right is a tarpaulin designed as part of the CompSAt Create Genius Campaign for Recruitment of new members.</p></div></div>
+        
+        <div id="compsattarp" class="work"><img class="rectangle" src="images/ajax-loader.gif" data-original="images/compsattarp.jpg" alt="CompSAt Tarp"/></div>
+        
+        <div id="compsatvideo" class="work"><a href="http://youtu.be/cz0hg7o6KMg" target="_blank"><img src="images/ajax-loader.gif" data-original="images/compsatvideo.jpg" alt="CompSAt Video"/></a><div class="contentbg"><p class="work">This is a Flash animation inspired by Apple that was shown to Ateneo freshmen as part of the Create Genius recruitment campaign. Watch it on Youtube.</p></div></div>
+        
+        <div class="sagmeister"><img src="images/ajax-loader.gif" data-original="images/sagmeister.gif" alt="Dear Mr. Sagmeister, please hire me" /></div>
+        
+        <div id="upgrade" class="work"><img class="rectangle" src="images/ajax-loader.gif" data-original="images/upgrade.jpg" alt="Upgrade"/><div class="contentbg"><p class="work">This poster was used to promote
+CompSAt week.</p></div></div>
+        
+        <div id="loopback" class="work"><img class="rectangle" src="images/ajax-loader.gif" data-original="images/loopback.jpg" alt="Loopback"/><div class="contentbg"><p class="work">This was a photobooth souvenir which I designed, from Loopback, the CompSAt reunion party.</p></div></div>
+        
+        <div id="darkknight" class="work"><a href="http://hailmika.tumblr.com/post/255419382/another-homework-xd-this-time-the-random-words" target="_blank"><img class="rectangle" src="images/ajax-loader.gif" data-original="images/darkknight.jpg" alt="The Dark Knight Returns"/></a><div class="contentbg"><p class="work">Homework for Advanced 
+Graphic Design Class.</p></div></div>
+        
+        <div id="atonement" class="work"><a href="http://hailmika.tumblr.com/post/316322716/this-one-should-be-fairly-obvious-p" target="_blank"><img class="rectangle" src="images/ajax-loader.gif" data-original="images/atonement.jpg" alt="Atonement"/></a><div class="contentbg"><p class="work">Trivia: I wasn’t officially enrolled in this class.</p></div></div>
+        
+    	<div id="chapter3cardb" class="postcard">
+            <h2 class="heading"><img src="images/heading_03b.gif" alt="The rise" /></h2>
+            <p class="content">After hundreds of design mockups, sleepless nights, tons of hard work and missed gatherings, I didn’t get the award because I lacked my own visual style. All this time I’ve been designing “form follows function” that I wasn’t able to focus on style. Not winning made me reflect on my style and commit to work even harder.</p>
+            <div class="stamp"></div>
+            <div class="address"></div>
+        </div>
+        
+        <div id="peace" class="work"><a href="http://hailmika.tumblr.com/post/267481455/this-is-my-new-favorite-assignment-i-made-my" target="_blank"><img class="rectangle" src="images/ajax-loader.gif" data-original="images/peace.jpg" alt="Peace"/></a></div>
+        
+    </div>    
+    
+    <div id="chapter4">
+    	<div class="chapterNumber chapterNum4"><img src="images/chapter04.gif" alt="4" /></div>
+        
+        <h1 class="title"><img src="images/ajax-loader.gif" data-original="images/title04.gif" alt="Design makes you feel" /></h1>
+        
+        <div id="chapter4card" class="postcard">
+            <h2 class="heading"><img src="images/heading_04.gif" alt="Beyond design: art direction" /></h2>
+            <p class="content">Despite not having an art degree, I ended up working at Dyll with some of the most creative people I’ve ever met. I learned more about how to come up with 360 advertising campaigns, how to go viral and the importance of appealing to emotions.</p>
+            <div class="stamp"><a href="http://hailmika.tumblr.com/post/748925324/i-am-currently-job-hunting-praying-to-get-that" target="_blank"><img src="images/stamp05.jpg" alt="best of both worlds" /></a></div>
+            <div class="address"></div>
+        </div>
+    
+    <div id="dyll" class="place"><a href="http://dyll.biz" target="_blank"><img src="images/ajax-loader.gif" data-original="images/dyll.jpg" alt="My iMac in Dyll" class="rectangle" /></a></div>
+    
+	    <div id="chapter4cardb" class="postcard">
+            <h2 class="heading"><img src="images/heading_04b.gif" alt="I design for people not awards" /></h2>
+            <p class="content">I applied my new learnings in some design experiments on my blog which got a surprising amount of positive feedback which made me feel like I did something good as a designer.</p>
+            <div class="stamp"><a href="http://hailmika.tumblr.com/post/362790643/project-for-polsci-how-we-envision-the-country-d" target="_blank"><img src="images/stamp04.jpg" alt="Pilipinas" /></a></div>
+            <div class="address"></div>
+        </div>
+        
+        <div class="monarch"><img src="images/ajax-loader.gif" data-original="images/monarch.png" alt="monarch"/></div><div class="monarch2"><img src="images/ajax-loader.gif" data-original="images/monarch2.png" alt="monarch2"/></div><div class="monarch3"><img src="images/ajax-loader.gif" data-original="images/monarch3.png" alt="monarch3"/></div>
+        
+        <div class="iphone"></div>
+        
+        <div id="alice" class="work"><a href="http://youtu.be/8xzGEb46La8" target="_blank"><img src="images/ajax-loader.gif" data-original="images/alice.jpg" alt="Alice in Mad Men"/></a><div class="contentbg"><p class="work">This is a flash animation of a pop culture mashup between Alice in Wonderland and Mad Men that I made for my Flash class in San Francisco. Watch it on Youtube.</p></div></div>
+        
+        <div id="liberate" class="work"><a href="http://hailmika.tumblr.com/post/3446198896/i-think-its-good-that-people-are-being-aware" target="_blank"><img class="rectangle" src="images/ajax-loader.gif" data-original="images/liberate.jpg" alt="Liberate"/></a><div class="contentbg"><p class="work">This graphic I made in reaction to the situation in the Middle East got over 18,000 notes, was tweeted by CNN news anchor Kristie Lou Stout and was featured in the Al Jazeera Blog.</p></div></div>
+        
+        <div id="liberateshirt" class="work"><img src="images/ajax-loader.gif" data-original="images/liberateshirt.png" alt="Liberate T-Shirt"/></div>
+        
+        <p id="liberateshirtdesc" class="work">Some people made it into a shirt to raise money for donations and gave me one.</p>
+        
+        <div id="spells" class="work"><a href="http://hailmika.tumblr.com/tagged/book+of+spells" target="_blank"><img class="rectangle" src="images/ajax-loader.gif" data-original="images/spells.jpg" alt="Harry Potter Spell Typography"/></a><div class="contentbg"><p class="work">This Harry Potter spell typography I did for fun got over 30,000 notes in Tumblr.</p></div></div>
+        
+        <div id="oscars" class="work"><a href="http://hailmika.tumblr.com/post/3550793350/i-wasnt-really-planning-on-doing-this-but-it-just" target="_blank"><img class="rectangle" src="images/ajax-loader.gif" data-original="images/oscars.jpg" alt="2011 Oscars"/></a><div class="contentbg"><p class="work">This graphic I made for the 2011 Oscars also got over 10,000 notes.</p></div></div>
+       
+        
+    </div>
+    
+    <div id="chapter5">
+    	<div class="chapterNumber chapterNum5"><img src="images/chapter05.gif" alt="5" /></div>
+        
+        <h1 class="title"><img src="images/ajax-loader.gif" data-original="images/title05.gif" alt="Design is human" /></h1>
+        
+        <div id="chapter5card" class="postcard">
+            <h2 class="heading"><img src="images/heading_05.gif" alt="Beyond design: art direction" /></h2>
+            <p class="content">My design journey continues in Singapore where I am currently a Web Designer navigating the social media seas in Techsailor. I am learning more about user experience and design strategy. My design philosophy is still evolving as I go to new places and meet more people.</p>
+            <div class="stamp"></div>
+            <div class="address"></div>
+        </div>
+    
+	    <div class="boat"><img src="images/ajax-loader.gif" data-original="images/boat.png" alt="boat"/></div><div id="singapore" class="place"><img src="images/ajax-loader.gif" data-original="images/singapore.png" /></div><div class="newlife"><a href="http://hailmika.tumblr.com/post/4494985142/pic-i-took-on-the-plane-sorry-for-the-crap" target="_blank"><img src="images/ajax-loader.gif" data-original="images/newlife.png" alt="A New Life"/></a></div>
+        
+        <div class="ipad"></div>
+        
+        <div id="bangkok" class="work"><a href="http://www.bangkokiswaitingforyou.com" target="_blank"><img src="images/ajax-loader.gif" data-original="images/bangkok.jpg" alt="Bangkok is Waiting For You"/></a><br /><br /><br /><br /><div class="contentbg"><p class="work">This is a website I designed as a part of Techsailor for CNBC and BMA for a Bangkok Wish List Contest.</p></div></div>
+             
+    </div>
+<br /><br />
+	<div align="center"><img src="images/tbc.gif" alt="To Be Continued..." /></div>
+    
+    <div id="about">
+        <h1><img src="images/ajax-loader.gif" data-original="images/aboutme.gif" alt="About Me" /></h1>
+        <div class="mika place"><img src="images/ajax-loader.gif" data-original="images/me.png" alt="me"/></div>
+        <div id="paper" class="rectangle">
+        <p class="content">My life is devoted to making beautiful designs that make you think and feel. I want to design things that make you happy or make you look differently.<br /><br />
+    
+    My goal is to make something truly iconic that will stand the test of time, not something that is trendy and disposable. <br /><br />
+    
+    I believe that a good design is one that communicates a story well.<br /><br />
+    
+    Thank you for listening to my story.</p>
+        </div>
+        <div id="links">
+        <a href="http://mika.ph/files/portfolio2011.pdf" target="_blank"><img src="images/downloadportfolio.gif" alt="Download My Portfolio" /></a><br /><br />
+        <a href="http://mika.ph/files/CV_MikhailaAldaba.pdf" target="_blank"><img src="images/downloadresume.gif" alt="Download My Resume" /></a><br /><br />
+        <a href="http://hailmika.tumblr.com" target="_blank"><img src="images/visitmyblog.gif" alt="Visit My Blog" /></a>
+        </div>
+    </div>
+    
+    <div id="contact">
+    <h1><img src="images/ajax-loader.gif" data-original="images/contactme.gif" alt="Contact Me" /></h1>
+    	    <div id="contactcard" class="postcard">
+            
+            <p class="content">
+Do you need a new art director/designer? Do you want to collaborate with me? Are you a student who wants advice? Do you watch an insane amount of film and tv? Do you like coffee or tea?
+<br /><br />
+
+If you answered yes to any of those questions, we should talk and see where it goes.<br /><br />
+    <a href="http://mika.ph/wordpress/" target="_blank">Looking for my old website? It's still here</a>
+</p>
+            <div class="stamp"><img src="images/stamp03.jpg" alt="Mika" /></div>
+            <div class="address"><img src="images/myaddress.gif" alt="Mika Aldaba Art Director Design Travel Film" /></div>
+        </div>
+        <div class="future rectangle place"><img src="images/ajax-loader.gif" data-original="images/future.jpg" alt="future"/></div><div class="tea"><img src="images/ajax-loader.gif" data-original="images/tea.png" alt="tea"/></div>
+    </div>
+    
+
+</div>
+</div>
+
+  <script src="jquery.lazyload.js?v=3" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript" charset="utf-8">
+      $(function() {
+          $("img").lazyload({
+              effect : "fadeIn"
+          });
+      });
+  </script>
+  <script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    _uacct = "UA-190966-1";
+    urchinTracker();
+  </script>
+<!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+var sc_project=7493384; 
+var sc_invisible=1; 
+var sc_security="3704ad82"; 
+</script>
+<script type="text/javascript"
+src="http://www.statcounter.com/counter/counter.js"></script>
+<noscript><div class="statcounter"><a title="tumblr page
+counter" href="http://statcounter.com/tumblr/"
+target="_blank"><img class="statcounter"
+src="http://c.statcounter.com/7493384/0/3704ad82/1/"
+alt="tumblr page counter"></a></div></noscript>
+<!-- End of StatCounter Code for Default Guide -->
+
+</body>
+</html>

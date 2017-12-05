@@ -1,0 +1,705 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* mika.ph Design Journey */
+
+
+body {
+font-family:Baskerville,"Times New Roman", Times, serif;
+color:#5a1d0d;
+  padding: 0;
+  margin: 0;
+  background: #160901;
+  width: 100%;
+  min-width: 960px;
+  display: table;
+  min-width:960px;
+}
+
+a{
+color:#5a1d0d;
+}
+
+#wrapper {
+background: url(images/wood_bg.jpg) repeat-y center top;
+  width: 100%;
+	display: table;
+  
+}
+
+#main {
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  background: url(images/wood_bg.jpg) repeat-y center top;
+  background-position: -160px 0px;
+}
+
+.postcard{
+ position:absolute;
+ background:url(images/postcard.png) no-repeat;
+ height: 225px;
+ width: 355px;
+}
+
+.stamp{
+ position:absolute;
+ width: 35px;
+height: 45px;
+top: 18px;
+left: 304px;
+}
+
+.address{
+ position:absolute;
+  width: 125px;
+height: 55px;
+top: 83px;
+left: 212px;
+}
+
+.signature{
+position: relative;
+float:left;
+margin-top: 5px;
+margin-left:130px;
+width: 61px;
+}
+
+h2.heading{
+position: relative;
+float:left;
+margin-top: 20px;
+margin-left:20px;
+width: 200px;
+}
+
+p.content{
+font-size:12px;
+position: relative;
+float:left;
+line-height: 14px;
+margin-top: 10px;
+margin-left:20px;
+width: 170px;
+}
+
+.chapterNumber{
+position:absolute;
+background: url(images/chapter_num.png);
+width:72px;
+height:72px;
+left:38px;
+top: 100px;
+}
+
+.chapterNumber img{
+margin-top: 10px;
+margin-left: 20px;
+}
+
+h1.title{
+position:absolute;
+}
+
+.place{
+position:absolute;
+}
+
+.work{
+position:absolute;
+}
+
+.rectangle{
+-moz-box-shadow: 0 0 3px 3px #471b03;
+-webkit-box-shadow: 0 0 3px 3px#471b03;
+box-shadow: 0 0 3px 3px #471b03;
+}
+
+.contentbg{
+background: url(images/text_bg.png) repeat;
+width: 100%;
+margin-top:10px;
+}
+
+p.work{
+padding: 8px;
+line-height: 14px;
+color: #fffdc1;
+font-size:12px;
+position:relative;
+}
+
+
+/* Navigation */
+#navigation{
+width: 960px;
+left: 50%;
+margin: 0 0 0 -480px;
+height: 75px;
+position: fixed;
+z-index: 10;
+}
+
+#logo{
+width: 140px;
+height: 75px;
+float: left;
+}
+
+#nav{
+float:left;
+display: inline;
+text-align: left;
+list-style-type: none;
+width: 873px;
+}
+
+.menu{
+background: url(images/menu.gif);
+height: 39px;
+float: left;
+}
+
+.menu:hover{
+background-position-y: -80px;
+}
+
+.item1{
+width: 115px;
+background-position: -1px 0;
+}
+
+.item2{
+width: 100px;
+background-position: -118px 0px;
+}
+
+.item3{
+width: 165px;
+background-position: -220px 0px;
+}
+
+.item4{
+width: 125px;
+background-position: -388px 0px;
+}
+
+.item5{
+width: 100px;
+background-position: -513px 0px;
+}
+
+.item6{
+width: 55px;
+background-position: -618px 0px;
+}
+
+.item7{
+width: 73px;
+background-position: -678px 0px;
+}
+
+.socialmedia{
+width: 75px;
+height: 39px;
+background: url(images/sm.gif);
+float:left;
+}
+
+.socialmedia:hover{
+background-position-y: -80px;
+}
+
+.smicon{
+margin-top: 13px;
+margin-left: 2px;
+}
+
+/* Chapter 0 */
+
+#chapter0{
+width: 960px;
+position:relative;
+height: 635px;
+}
+
+#chapter0card.postcard{
+top: 395px;
+left: 340px;
+z-index: 5;
+}
+
+
+.map{
+position:absolute;
+ background:url(images/map.jpg) no-repeat;
+ width: 895px;
+ height: 495px;
+z-index: 0;
+top: 45px;
+left: 13px;
+}
+
+
+.pen{
+background:url(images/pen.png) no-repeat;
+ position:absolute;
+  width: 145px;
+height: 188px;
+top: 450px;
+left: 632px;
+z-index: 6;
+}
+
+/* Chapter 1 */
+#chapter1{
+width: 960px;
+position:relative;
+height: 1450px;
+}
+
+#chapter1 h1.title{
+left:128px;
+top: 80px;
+}
+
+.feather{
+position:absolute;
+width: 156px;
+height: 89px;
+top: 10px;
+left: 40px;
+z-index: 6;
+}
+
+.feather2{
+position:absolute;
+width: 105px;
+height: 48px;
+top: 180px;
+left: 360px;
+z-index: 6;
+}
+
+.feather3{
+position:absolute;
+width: 156px;
+height: 89px;
+top: 910px;
+left: 230px;
+z-index: 6;
+}
+
+#chapter1card.postcard{top: 250px;left: 50px;z-index: 0;}
+
+#chapter1cardb.postcard{top: 770px;left: 400px;z-index: 0;}
+
+#uts{left: 480px;top: 10px;}
+#utstext{ width: 240px; margin-left: 135px;}
+
+#lfcbunny{left: 265px;top: 420px; z-index: 1;}
+#bunnytext{ position:absolute; left: 80px; top: 470px; z-index: 0; width: 200px;}
+
+#lfccircus{left: 375px;top: 335px; width: 220px; z-index: 2;}
+
+#lfcportfolio{left: 615px;top: 365px;width: 300px;}
+#lfcportfoliotext{ width: 240px; margin-left: 55px;}
+
+#flick{left: 55px;top: 560px;width: 304px;}
+#flicktext{ width: 240px; margin-left: 55px;}
+
+#kapelikula{left: 670px;top: 735px;width: 240px; z-index: 1;}
+
+#avo{left: 10px;top: 970px;width: 200px;}
+
+#loyolascreen{left: 260px;top: 1010px;width: 210px;}
+
+#healthdev{left: 515px;top: 1180px;width: 288px;z-index: 2;}
+#healthdevimgs{left: 795px;top: 1200px;width: 114px;z-index: 1;}
+
+#epson{left: 490px;top: 1010px;}
+
+/* Chapter 2 */
+#chapter2{
+width: 960px;
+position:relative;
+height: 830px;
+}
+
+.chapterNum2{
+top: 70px;
+}
+
+.chapterNum2 img{
+margin-top:15px;
+}
+
+#chapter2 h1.title{
+left:118px;
+top: 50px;
+}
+
+.knife{
+position:absolute;
+width: 323px;
+height: 100px;
+top: 40px;
+left: 378px;
+z-index: 4;
+}
+
+.goldengate{
+position:absolute;
+width: 300px;
+height: 410px;
+top: 0px;
+left: 610px;
+z-index: 2;
+}
+
+.treasureisland{
+position:absolute;
+width: 230px;
+height: 435px;
+top: 30px;
+left: 440px;
+z-index: 3;
+}
+
+#chapter2card.postcard{top: 220px;left: 250px;z-index: 0;}
+
+#jason{left: 40px;top: 240px;width: 180px;}
+
+#wrongguys{left: 50px;top: 480px;width: 385px;}
+
+#tomwells{left: 470px;top: 500px;width: 390px;}
+
+/* Chapter 3 */
+#chapter3{
+width: 960px;
+position:relative;
+height: 1210px;
+}
+
+.chapterNum3{
+top: 70px;
+}
+
+#chapter3 h1.title{
+left:120px;
+top: 70px;
+}
+
+#chapter3card.postcard{top: 370px;left: 460px;z-index: 0;}
+#chapter3cardb.postcard{top: 920px;left: 240px;z-index: 0;}
+
+.lightbulb{
+background:url(images/lightbulb.png) no-repeat;
+position:absolute;
+width: 107px;
+height: 176px;
+top: 165px;
+left: 5px;
+z-index: 3;
+}
+
+.light{
+position:absolute;
+width: 119px;
+height: 119px;
+top: 165px;
+left: 0px;
+z-index: 2;
+}
+
+.ipod{
+background:url(images/iphone.gif) no-repeat;
+position:absolute;
+width: 365px;
+height: 190px;
+top: 320px;
+left: 60px;
+}
+
+.sagmeister{
+position:absolute;
+width: 382px;
+height: 228px;
+top: 600px;
+left: 10px;
+z-index: 0;
+}
+
+#compsatsite{left: 440px;top: 80px;width: 275px;}
+
+#loopback{left: 570px;top: 630px;width: 316px;}
+
+#compsattarp{left: 730px;top: 60px;width: 160px;}
+
+#darkknight{left: 50px;top: 860px;width: 152px;}
+
+#peace{left: 510px;top: 940px;width: 147px;z-index: 1}
+
+#compsatvideo{left: 110px;top: 330px;width: 260px;}
+
+#atonement{left: 700px;top: 920px;width: 143px;}
+
+#upgrade{left: 380px;top: 610px;width: 155px;z-index: 1;}
+
+/* Chapter 4 */
+#chapter4{
+width: 960px;
+position:relative;
+height: 960px;
+}
+
+.chapterNum4{
+top: 70px;
+}
+
+#chapter4 h1.title{
+left:120px;
+top: 50px;
+}
+
+#chapter4card.postcard{top: 300px;left: 130px;z-index: 0;}
+#chapter4cardb.postcard{top: 570px;left: 500px;z-index: 0;}
+
+.iphone{
+background:url(images/iphone.gif) no-repeat;
+position:absolute;
+width: 365px;
+height: 190px;
+top: 280px;
+left: 470px;
+}
+
+
+.monarch{
+position:absolute;
+width: 268px;
+height: 165px;
+top: 140px;
+left: 5px;
+z-index: 3;
+}
+
+.monarch2{
+position:absolute;
+width: 123px;
+height: 194px;
+top: 300px;
+left: 30px;
+z-index: 3;
+}
+
+.monarch3{
+position:absolute;
+width: 173px;
+height: 271px;
+top: 270px;
+left: 325px;
+z-index: 0;
+}
+
+#liberateshirt{
+position:absolute;
+width: 307px;
+height: 176px;
+top: 765px;
+left: 450px;
+z-index: 3;
+}
+
+#liberateshirtdesc{
+position:absolute;
+width: 115px;
+top: 810px;
+left: 570px;
+z-index: 2;
+background: url(images/text_bg.png) repeat;
+margin-top:10px;
+}
+
+#dyll{left: 500px;top: 60px;width: 345px;}
+
+#alice{left: 520px;top: 290px;width: 262px;}
+
+#liberate{left: 245px;top: 550px;width: 235px;}
+
+#spells{left: 30px;top: 550px;width: 197px;}
+
+#oscars{left: 720px;top: 630px;width: 167px;}
+
+/* Chapter 5 */
+#chapter5{
+width: 960px;
+position:relative;
+height: 700px;
+}
+
+.chapterNum5{
+top: 70px;
+}
+
+#chapter5 h1.title{
+left:150px;
+top: 50px;
+}
+
+#chapter5card.postcard{top: 260px;left: 60px;z-index: 0;}
+
+.boat{
+position:absolute;
+width: 270px;
+height: 144px;
+top: 145px;
+left: 45px;
+z-index: 3;
+}
+
+#singapore{left: 530px;top: 20px;width: 347px;}
+
+.newlife{
+position:absolute;
+width: 204px;
+height: 264px;
+top: 425px;
+left: 180px;
+z-index: 1;
+}
+
+.ipad{
+background:url(images/ipad.gif) no-repeat;
+position:absolute;
+width: 510px;
+height: 400px;
+top: 230px;
+left: 355px;
+z-index: 2;
+}
+
+
+#bangkok{left: 405px;top: 270px;width: 410px;z-index: 3;}
+
+/* About Me */
+
+#about{
+width: 960px;
+position:relative;
+height: 340px;
+}
+
+#paper{
+position:absolute;
+background:url(images/paper.jpg) no-repeat;
+width: 305px;
+height: 230px;
+top: 90px;
+left: 240px;
+z-index: 1;
+}
+
+#paper p.content{
+width: 260px;
+margin: 30px;
+}
+.mika{
+position:absolute;
+width: 181px;
+height: 232px;
+top: 50px;
+left: 80px;
+z-index: 2;
+}
+
+#links{
+position:absolute;
+width: 310px;
+height: 250px;
+top: 120px;
+left: 575px;
+}
+
+/* Contact Me */
+
+#contact{
+width: 960px;
+position:relative;
+height: 400px;
+}
+
+#contactcard.postcard{
+top: 70px;
+left: 20px;
+z-index: 5;
+}
+
+.future{
+position:absolute;
+width: 364px;
+height: 217px;
+top: 30px;
+left: 305px;
+z-index: 0;
+}
+
+.tea{
+position:absolute;
+width: 299px;
+height: 288px;
+top: 105px;
+left: 610px;
+z-index: 2;
+}
