@@ -8,6 +8,7 @@ permalink: /sitemap/
 
 * [Front Page](/index.html)
 * [About](/about/)
+* [R&eacute;sum&eacute; / CV](/resume/)
 * [Privacy Policy](/privacy/)
 * [T-Shirts](/t-shirts/)
 * [Web Portfolio](/web-portfolio/)
