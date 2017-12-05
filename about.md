@@ -13,6 +13,11 @@ A més, el nostre tren arriba fins el segle XXI, versionant Lady Gaga i altres a
 
 El nostre show, ple de ritme i cançons que públic de totes les edats reconeixerà, és ideal per amenitzar qualsevol vetllada: concerts en locals de tota mena (bars, sales de concert, hotels, etc), festes majors, ballades swing i festes de temàtica vintage. També estem disponibles per realitzar esdeveniments privats (aniversaris, bodes, etc).
 
+
 Gaudeix d’una divertida i elegant experiència musical amb
 
-Maria Baeta (veu), Pep Cabrero (saxo), Juanje Sánchez (guitarra), Jose Borjas (baix/contrabaix) i Isard Miralles (bateria).
+###### Maria Baeta (veu)
+###### Pep Cabrero (saxo)
+###### Juanje Sánchez (guitarra)
+###### Jose Borjas (baix/contrabaix)
+###### Isard Miralles (bateria).
