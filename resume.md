@@ -1,3 +1,8 @@
+---
+layout: default
+title: Resume / CV
+permalink: /resume/
+---
 
 ## Work History
 
