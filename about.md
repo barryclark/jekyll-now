@@ -19,7 +19,7 @@ El nostre show, ple de ritme i cançons que públic de totes les edats reconeixe
 ###### Gaudeix d’una divertida i elegant experiència musical amb
 
 
-#### **Maria Baeta** (veu) **Pep Cabrero** (saxo) **Juanje Sánchez** (guitarra) **Jose Borjas** (baix/contrabaix) **Isard Miralles** (bateria)
+##### **Maria Baeta** (veu) **Pep Cabrero** (saxo) **Juanje Sánchez** (guitarra) **Jose Borjas** (baix/contrabaix) **Isard Miralles** (bateria)
 
 ### Contacte
 ###### Podeu posar-vos en contacte amb nosaltres a través del correu, trucant-nos o vía Whatsapp o Telegram
