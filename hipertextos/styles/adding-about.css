@@ -1,9 +1,9 @@
 /* by Isard Miralles  ADDING EXTRA to About - CSS */
 /* ------------------------------------------------------------ Resets */
 
-#page-header.about-cover {background-image: url("/img/texture/dark_grey.png");background-size:256px 256px;background-repeat: repeat;image-rendering: crisp-edges;}
+#page-header.about-cover {background-image: url("/img/texture/stardust.png");background-size:798px 798px;background-repeat: repeat;image-rendering: crisp-edges;}
 #avatar {margin:0 15px 0 0;border-radius:50%;padding:2px;opacity:.7;}
-.cover-page #page-header {border-bottom:10px solid var(--color-red);background-color: var(--color-grey);color: var(--color-red);}
+.cover-page #page-header {border-bottom:10px solid var(--color-blue);background-color: var(--color-grey);color: var(--color-blue);}
 .cover-page #page-main ul {-webkit-column-count: 3;-moz-column-count: 3;column-count: 3;}
 .cover-page #page-main {color:var(--color-hardgrey);}
 .cover-page aside {border:none;color: var(--color-grey);}
