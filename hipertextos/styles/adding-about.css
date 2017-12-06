@@ -10,7 +10,11 @@
 .cover-page  #coffee {  background: var(--color-background);background: -webkit-linear-gradient(red, var(--color-background));background: -moz-linear-gradient(red, var(--color-background)); background: linear-gradient(#eee, var(--color-background));}
 #repertori h5 strong {}
 #repertori h5 em {color:var(--color-red);padding:6px;}
-#musics .cell-x2 {border:thin solid var(--color-soft);}
+#musics .cell-x2 {
+    border: thin solid var(--color-soft);box-shadow:1px 2px 6px rgba(0,0,0,.06);
+    background:rgba(255,255,255,.6);border-radius:15px;
+}
+#musics .cell-x2 h6{background:rgba(0,0,0,.06);border-radius:15px 15px 0 0;}
 #musics .musics {width:120px;padding: 15px;}
 #repertori label, div.collapser div {border-color:var(--color-soft-grey);}
 @media (max-width: 1250px) {
