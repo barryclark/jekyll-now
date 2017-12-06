@@ -1,6 +1,7 @@
 <div class="comments">
-{% if site.data.comments[page.slug] %}
-  {% assign comments = site.data.comments[page.slug] | sort %}
+{% if include.slug %}{% assign slug = include.slug %}{% else %}{% assign slug = page.slug %}{% endif %}
+{% if site.data.comments[slug] %}
+  {% assign comments = site.data.comments[slug] | sort %}
   <h3>{{ comments | size }} comment{% if comments.size > 1 %}s{% endif %} for <em>{{ page.title }}</em></h3>
   {% for comment in comments %}
   {% unless comment[1].replyto %}
@@ -29,7 +30,7 @@
 <h3>Leave a Reply</h3>
 <form id="post-new-comment" class="new-comment" method="post" action="https://api.staticman.net/v2/entry/hendrixjoseph/hendrixjoseph.github.io/master/comments">
   <input name="options[redirect]" type="hidden" value="{{ site.url }}{{ page.url }}">
-  <input name="options[slug]" type="hidden" value="{% if include.slug %}{{ include.slug }}{% else %}{{ page.slug }}{% endif %}">
+  <input name="options[slug]" type="hidden" value="{{ slug }}">
   <label class="comment-body">Comment (required)<textarea name="fields[message]" required="required" aria-required="true"></textarea></label>  
   <label class="comment-author">Name (required)<input name="fields[name]" id="name" required="required" aria-required="true" type="text"></label>
   <label class="comment-url">Email (required, always hashed, never used nor published)<input name="fields[email]" id="email" required="required" aria-required="true" type="email"></label>
