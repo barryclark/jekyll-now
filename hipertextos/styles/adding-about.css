@@ -2,22 +2,16 @@
 /* ------------------------------------------------------------ Resets */
 
 #page-header.about-cover {background-image: url("/img/texture/dark.png");background-size:180px 180px;background-repeat: repeat;image-rendering: crisp-edges;}
+#repertori h5, #repertori h3, #contracta, #musics .cell-x2 {text-align:center;}
+
 .cover-page #page-header {border-bottom:10px solid var(--color-blue);background-color: var(--color-grey);color: var(--color-blue);}
 .cover-page #page-main {color:var(--color-hardgrey);}
-#page-main h5 i svg {
-    color: var(--color-red);
-    width: 30px;
-    height: 30px !important;
-    margin: 2px 6px 0 -5px;
-}
-.cover-page #page-main h1 {text-align:right;color:var(--color-red);}
+.cover-page #page-main h2 {text-align:right;color:var(--color-red);}
 .cover-page  #coffee {  background: var(--color-background);background: -webkit-linear-gradient(red, var(--color-background));background: -moz-linear-gradient(red, var(--color-background)); background: linear-gradient(#eee, var(--color-background));}
-#repertori h5, #repertori h3 {text-align:center;}
 #repertori h5 strong {}
 #repertori h5 em {color:var(--color-red);padding:6px;}
-#musics .cell-x2 {text-align: center;border:thin solid var(--color-soft);}
+#musics .cell-x2 {border:thin solid var(--color-soft);}
 #musics .musics {width:120px;padding: 15px;}
-
 @media (max-width: 1250px) {
   	.cover-page #page-main ul {-webkit-column-count: 2;-moz-column-count: 2;column-count: 2;}
     .cover-page p {font-size:16px;line-height:1.8em;}
