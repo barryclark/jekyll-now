@@ -27,7 +27,7 @@
 	{% include partials/navigation/nav-about.html %}
 		<header id="page-header" class="about-cover anm-moveFromTop">
 			<div>
-				<h1 class="anm-moveFromBottomFade delay-100">{{ page.title }}</h1>
+				<h1 class="anm-moveFromBottomFade delay-100">{{ page.title }} Band</h1>
 			</div>
 		</header>
 		<nav id="page-nav" class="nav-scroll">
@@ -43,7 +43,7 @@
 			<div>
 				<section id="info-about" class="anm-fadeIn delay-1000">
 					<h2 id="info" class="anm-moveFromLeftFade delay-1500"><u>Qui Som</u></h2>
-					<h5 class="anm-moveFromTopFade delay-2000">{{ page.lead }}</h5>
+					<h5 class="anm-moveFromTopFade delay-2000">{{ page.som }}</h5>
 					<div class="columns-2 anm-fadeIn delay-2000">
 						{{ content }}
 					</div>
@@ -54,7 +54,7 @@
 					<div id="musics">
 					<h2 id="band" class="anm-moveFromLeftFade delay-3000"><u>Músics</u></h2>
 						<div>
-							<h5>Una banda de luxe</h5>
+							<h5>{{ page.musics }}</h5>
 						</div>
 						<hr>
 						<div class="cell-x2">
@@ -86,7 +86,11 @@
 					<hr>
 					<h2 id="prensa" class="anm-moveFromLeftFade delay-600"><u>Prensa</u></h2>
 						<div>
-							<h5>Aspectes tècnics</h5>
+							<h5>{{ page.prensa }}</h5>
+							<h6><b>Nom:</b> {{ page.title }}</h6>
+							<h6><b>Origen:</b> Barcelona</h6>
+							<h6><b>Any:</b> desde 2015</h6>
+							<h6><b>Formació:</b> Quintet</h6>
 						</div>
 					<strong>
 						<em class="anm-scaleUp delay-800"><a href="{{ site.baseurl }}/hipertextos/pdf/biografia.pdf"><i class="icon-cloud-download"></i>Biografía.pdf</a></em>
@@ -96,7 +100,7 @@
 					<hr>
 					<h2 id="reper" class="anm-moveFromLeftFade delay-800"><u>Repertori</u></h2>
 					<div>
-						<h5>Un repertori en constant evolució</h5>
+						<h5>{{ page.som }}</h5>
 					</div>						
 					
 					<div id="repertori" class="collapser">

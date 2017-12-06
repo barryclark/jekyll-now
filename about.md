@@ -1,8 +1,11 @@
 ---
 layout: about
-title: Old Steam Band
+title: Old Steam
 permalink: /about/
-lead: Banda de swing, jazz y blues desde Barcelona
+som: Banda de swing, jazz y blues desde Barcelona
+musics: Una banda de luxe!
+prensa: Aspectes tècnics
+reper: Un repertori en constant evolució
 vox: Maria Baeta
 sax: Pep Cabrero
 guitar: Juanje Sánchez
