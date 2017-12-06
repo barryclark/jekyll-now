@@ -3,7 +3,6 @@
 
 #page-header.about-cover {background-image: url("/img/texture/dark.png");background-size:180px 180px;background-repeat: repeat;image-rendering: crisp-edges;}
 .cover-page #page-header {border-bottom:10px solid var(--color-blue);background-color: var(--color-grey);color: var(--color-blue);}
-.cover-page #page-main {background-color: var(--color-softgrey) ;}
 .cover-page #page-main {color:var(--color-hardgrey);}
 #page-main h6 i svg {color:var(--color-red);width:32px;height:32px!important;margin:0 6px 0 0;}
 .cover-page #page-main h1 {text-align:right;color:var(--color-red);}
