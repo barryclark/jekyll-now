@@ -21,6 +21,8 @@
 #repertori h5, #repertori h3 {text-align:center;}
 #repertori h5 strong {}
 #repertori h5 em {color:var(--color-red);padding:6px;}
+#musics .cell-x2 {text-align: center;}
+
 
 @media (max-width: 1250px) {
   	.cover-page #page-main ul {-webkit-column-count: 2;-moz-column-count: 2;column-count: 2;}
