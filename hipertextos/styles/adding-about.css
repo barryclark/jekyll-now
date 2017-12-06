@@ -17,6 +17,8 @@
 #musics .cell-x2 h6{background:rgba(0,0,0,.06);border-radius:15px 15px 0 0;}
 #musics .musics {width:120px;padding: 15px;}
 #repertori label, div.collapser div {border-color:var(--color-soft-grey);}
+.news {width:120px;float:left; margin-top:-6px; margin-right: 23px;margin-bottom:0;color: rgba(0,0,0,.32); }
+
 @media (max-width: 1250px) {
   	.cover-page #page-main ul {-webkit-column-count: 2;-moz-column-count: 2;column-count: 2;}
     .cover-page p {font-size:16px;line-height:1.8em;}
