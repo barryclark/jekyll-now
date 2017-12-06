@@ -5,7 +5,7 @@
   <input name="fields[replyto]" type="hidden" value="{% if include.replyto[1].replyto %}{{ include.replyto[1].replyto }}{% else %}{{ include.replyto[0] }}{% endif %}">
   <label class="comment-body">Comment (required)<textarea name="fields[message]" required="required" aria-required="true"></textarea></label>  
   <label class="comment-author">Name (required)<input name="fields[name]" id="name" required="required" aria-required="true" type="text"></label>
-  <label class="comment-url">Email (required)<input name="fields[email]" id="email" required="required" aria-required="true" type="email"></label>
+  <label class="comment-url">Email (required, always hashed, never used nor published)<input name="fields[email]" id="email" required="required" aria-required="true" type="email"></label>
   <label class="comment-email">Website (optional)<input name="fields[url]" id="url" type="url"></label>  
   <button type="submit">Post comment</button>
   <em>Note that comments won't appear until approved.</em>
