@@ -12,6 +12,7 @@
 #repertori h5 em {color:var(--color-red);padding:6px;}
 #musics .cell-x2 {border:thin solid var(--color-soft);}
 #musics .musics {width:120px;padding: 15px;}
+#repertori label, div.collapser div {border-color:var(--color-soft-grey);}
 @media (max-width: 1250px) {
   	.cover-page #page-main ul {-webkit-column-count: 2;-moz-column-count: 2;column-count: 2;}
     .cover-page p {font-size:16px;line-height:1.8em;}
