@@ -13,7 +13,7 @@
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/styles/components.css" />
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/styles/adding.css" />
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/styles/helpers.css" />
-	{% if page.comments %}<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/styles/adding-blog.css" />{% endif %}
+	<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/styles/adding-agenda.css" />
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/styles/anime.css" />
     {% if page.comments %}<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/css/lightbox.min.css" />{% endif %}
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
@@ -31,8 +31,9 @@
 		
 	<!-- Page content -->
 	<div class="page" id="page">
-      {{ content }}
-    {% include partials/footer.html %}
+		{% include partials/navigation/nav.html %}
+    	{{ content }}
+    	{% include partials/footer.html %}
 	</div>
 
     <!-- Scripts
