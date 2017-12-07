@@ -37,7 +37,9 @@ comments: true
 						<p class="month">{{ post.month }}</p></a></div>
 						{% endif %}
 				</div>
-      			<a id="link-comment" href="{{ site.baseurl }}{{ post.url }}#disqus_thread" class="anm-moveFromLeftFade delay-1500"> Comentaris</a>
+				<div id="link-comment">
+      				<a href="{{ site.baseurl }}{{ post.url }}#disqus_thread" class="anm-moveFromLeftFade delay-1500"> Comentaris</a>
+      			</div>
       			<nav><a href="{{ site.baseurl }}{{ post.url }}" class="read-more"><b>[+]</b></a></nav>
       		</article>
     	</div>
