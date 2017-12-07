@@ -20,8 +20,10 @@ layout: default
 					<h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
 					<div>
 						<p>{{ post.excerpt }}</p>
-	      			<a id="link-image"  href="{{ site.url }}/{{ post.img }}" data-lightbox="roadtrip" class="anm-moveFromLeftFade delay-1000"> Cartell</a>
-	      			<a id="link-comment" href="{{ site.baseurl }}{{ post.url }}#disqus_thread" class="anm-moveFromLeftFade delay-1000"> Comentaris</a>
+	      			<strong>
+	      				<em><a href="{{ site.url }}/{{ post.img }}" data-lightbox="roadtrip" class="anm-moveFromLeftFade delay-1000"> Cartell</a></em>
+	      				<em><a href="{{ site.baseurl }}{{ post.url }}#disqus_thread" class="anm-moveFromLeftFade delay-1000"> Comentaris</a></em>
+	      			</strong>
 					</div>
     	  			<nav><a href="{{ site.baseurl }}{{ post.url }}" class="read-more"><b>[+]</b></a></nav>
       		</article>
