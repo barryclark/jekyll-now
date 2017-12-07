@@ -34,9 +34,9 @@ figure iframe {width:100%;}
 .nav-scroll label:hover {border:thin solid transparent;color:var(--color-black);text-decoration:none;}
 
 /* Category Agenda */
-#post-date {color:var(--color-red);}
-#post-date h1 {font-weight: lighter;margin:0 0 12px 0;}
-#post-date h5 {font-weight: normal;}
+#post-date {color:var(--color-red);text-align:center;margin:0;padding:32px 0 23px 0;border:1px solid var(--color-softgrey);}
+#post-date h1 {font-weight: lighter;margin:0 0 2px 0;font-size:3.2em;}
+#post-date h5 {font-weight: normal;font-size: 0.75em;}
 
 /* Simple, List, Table, Gallery, Cards, Tiles */
 .simple em u a,
