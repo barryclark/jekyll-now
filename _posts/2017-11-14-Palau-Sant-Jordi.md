@@ -3,7 +3,7 @@ layout: post-date
 title: Palau Sant Jordi a tope
 category: agenda
 img: "assets/print/foto1.jpg"
-day: 05
+day: 5
 month: Gener
 comments: true
 excerpt_separator: <!--more-->
