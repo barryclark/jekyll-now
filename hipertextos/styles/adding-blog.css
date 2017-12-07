@@ -98,8 +98,13 @@ figure iframe {width:100%;}
 }
 .table #ical a,
 #layout-table:checked ~ #layout-result #ical a {
-    padding: 3px;width:90px;top:30px;right:6px;
+    padding: 0;width:100%;top:50%;font-size:0.8em;
     background: var(--color-white);box-shadow:-2px 3px 5px rgba(0,0,0,.06);
+}
+
+.table #ical a:hover,
+#layout-table:checked ~ #layout-result #ical a:hover {
+    opacity:0;
 }
 .gallery #link-comment,
 #layout-gallery:checked ~ #layout-result #link-comment {
