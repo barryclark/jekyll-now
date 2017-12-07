@@ -18,9 +18,11 @@ layout: default
 				</figure>
       		<article id="post-agenda" class="thumb-9">
 					<h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
-					<div>{{ post.excerpt }}</div>
+					<div>
+						<p>{{ post.excerpt }}</p>
 	      			<a id="link-image"  href="{{ site.url }}/{{ post.img }}" data-lightbox="roadtrip" class="anm-moveFromLeftFade delay-1000"> Cartell</a>
 	      			<a id="link-comment" href="{{ site.baseurl }}{{ post.url }}#disqus_thread" class="anm-moveFromLeftFade delay-1000"> Comentaris</a>
+					</div>
     	  			<nav><a href="{{ site.baseurl }}{{ post.url }}" class="read-more"><b>[+]</b></a></nav>
       		</article>
     	</div>
