@@ -7,7 +7,10 @@ permalink: /resume/
 <style>
 span.company, span.job, span.job-date {
   display: inline-block;
-  width: 32%;
+}
+
+span.company, span.job-date {
+  width: 28%;
 }
 
 span.company {
@@ -16,6 +19,7 @@ span.company {
 
 span.job {
   text-align: center;
+  width: 40%;
 }
 
 span.job-date {
