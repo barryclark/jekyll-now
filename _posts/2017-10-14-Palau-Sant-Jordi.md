@@ -5,6 +5,7 @@ category: agenda
 img: "assets/print/foto1.jpg"
 day: 25
 month: Desembre
+comments: true
 excerpt_separator: <!--more-->
 
 ---
