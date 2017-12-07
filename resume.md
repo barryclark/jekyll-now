@@ -5,16 +5,21 @@ permalink: /resume/
 ---
 
 <style>
-span.company, span.job, span.date {
+span.company, span.job, span.job-date {
   display: inline-block;
-}
-
-span.company, span.job {
-  width: 33%;
-}
-
-span.date {
   width: 32%;
+}
+
+span.company {
+  text-align: left;
+}
+
+span.job {
+  text-align: center;
+}
+
+span.job-date {
+  text-align: right;
 }
 </style>
 
@@ -27,24 +32,24 @@ span.date {
 
 ## Work History
 
-### <span class="company">Northrop Grumman Corporation</span> | <span class="job">Software Engineer</span> | <span class="date">January 2014 – Present</span>
+### <span class="company">Northrop Grumman Corporation</span> | <span class="job">Software Engineer</span> | <span class="job-date">January 2014 – Present</span>
 * Modified an existing Java Swing desktop application by improving its mapping capabilities using [OpenMap 5.0.3](https://github.com/OpenMap-java/openmap), added advanced metrics, and applied redesigns to the GUI.
 * Migrated that Java Swing desktop application to a web application using GlassFish, JPA, CDI, JSF, [PrimeFaces](http://www.primefaces.org/), [PrimeFaces Extensions](http://primefaces-extensions.github.io/), and an Oracle XE database. Provided major customizations to the PrimeFaces JSF timeline component. Configured the build and dependency tool [Maven](https://maven.apache.org/) such that the web application could be built while not connected to the Internet.
 * Maintain and update the public website for [the Defense Production Act Title III program](http://www.dpatitle3.com/dpa_db/). Made this website into HTML5 compliant by modifying and customizing the PHP files, CSS files, and image files in such a way that the website's overall appearance did not change. Implemented a mobile-friendly version using CSS media queries.
 
-### Moreover Technologies | Quality Assurance (QA) Engineer | May 2013 – October 2013
+### <span class="company">Moreover Technologies</span> | <span class="job">Quality Assurance (QA) Engineer</span> | <span class="job-date">May 2013 – October 2013</span>
 
 * Automated web applications using the Java library [Selenium](http://www.seleniumhq.org/).
 * Tested REST interfaces using [JMeter](http://jmeter.apache.org/).
 * Reported bugs using [JIRA](https://www.atlassian.com/software/jira).
 
-### Air Force Institute of Technology | Computer Programmer / Research Assistant | Mar 2011 – May 2013
+### <span class="company">Air Force Institute of Technology</span> | <span class="job">Computer Programmer / Research Assistant</span> | <span class="job-date">Mar 2011 – May 2013</span>
 
 * Generated 3D models from 2D imagery using the structure-from-motion (SfM) C/C++ library [Bundler](http://www.cs.cornell.edu/~snavely/bundler/)
 * Generated simulated images using [Blender](https://www.blender.org/)
 *	Provided input on an AFIT student’s [graduate thesis](http://www.dtic.mil/dtic/tr/fulltext/u2/a557206.pdf)
 
-### Wright State University | Teacher's Assistant | September 2010 – June 2012
+### <span class="company">Wright State University</span> | <span class="job">Teacher's Assistant</span> | <span class="job-date">September 2010 – June 2012</span>
 
 * Taught computer labs in the Java language for non-majors (CS141 & CS142).
 * Graded student projects in a timely manner.
@@ -52,9 +57,9 @@ span.date {
 
 ## Education
 
-### Wright State University | Master of Science (M.S.) in Computer Science | 2014 – 2019
+### <span class="company">Wright State University</span> | <span class="job">Master of Science (M.S.) in Computer Science</span> | <span class="job-date">2014 – 2019</span>
 
-### Wright State University | Bachelor of Science (B.S.) in Computer Science | 2008 – 2012
+### <span class="company">Wright State University</span> | <span class="job">Bachelor of Science (B.S.) in Computer Science</span> | <span class="job-date">2008 – 2012</span>
 
 ## Certifications
 
