@@ -14,8 +14,6 @@ No us perdeu aquest concert!
 
 Dissabte 30 de Setembre 2017.
 
-
-
 <!--more-->
 
 Més textos tipo Info
