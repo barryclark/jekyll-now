@@ -4,6 +4,20 @@ title: R&eacute;sum&eacute; / CV
 permalink: /resume/
 ---
 
+<style>
+span.company, span.job, span.date {
+  display: inline-block;
+}
+
+span.company, span.job {
+  width: 33%;
+}
+
+span.date {
+  width: 32%;
+}
+</style>
+
 ## Summary
 
 *	Highly proficient in a variety of Java technologies, including Java EE, GlassFish, JPA (Java Persistence API), JSF (Java ServerFaces), and Maven.
@@ -13,7 +27,7 @@ permalink: /resume/
 
 ## Work History
 
-### <span>Northrop Grumman Corporation</span> <span>Software Engineer</span> <span>January 2014 – Present</span>
+### <span class="company">Northrop Grumman Corporation</span> | <span class="job">Software Engineer</span> | <span class="date">January 2014 – Present</span>
 * Modified an existing Java Swing desktop application by improving its mapping capabilities using [OpenMap 5.0.3](https://github.com/OpenMap-java/openmap), added advanced metrics, and applied redesigns to the GUI.
 * Migrated that Java Swing desktop application to a web application using GlassFish, JPA, CDI, JSF, [PrimeFaces](http://www.primefaces.org/), [PrimeFaces Extensions](http://primefaces-extensions.github.io/), and an Oracle XE database. Provided major customizations to the PrimeFaces JSF timeline component. Configured the build and dependency tool [Maven](https://maven.apache.org/) such that the web application could be built while not connected to the Internet.
 * Maintain and update the public website for [the Defense Production Act Title III program](http://www.dpatitle3.com/dpa_db/). Made this website into HTML5 compliant by modifying and customizing the PHP files, CSS files, and image files in such a way that the website's overall appearance did not change. Implemented a mobile-friendly version using CSS media queries.
