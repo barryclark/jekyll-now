@@ -11,6 +11,10 @@ layout: default
 
 		{% for post in site.categories[page.category] %}
     	<div id="layout-result">
+    		<figure id="post-date">
+				<h3>{{ post.date }}</h3>				
+				<h5>{{ post.month }}</h5>
+			</figure>
       		<article class="anm-fadeIn delay-1000">
 				<h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
         		<div>{% if post.img %}<a href="../{{ post.img }}" data-lightbox="roadtrip"><img class="blog-img" src="../{{ post.img }}"></a>{% endif %}{{ post.excerpt }}</div>

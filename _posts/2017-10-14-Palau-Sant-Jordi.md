@@ -18,7 +18,8 @@ Dissabte 30 de Setembre 2017.
 
 <!--more-->
 
+Més textos tipo Info
 
-<figure>
-	<a href="../assets/print/foto1.jpg" data-lightbox="roadtrip"><img src="../assets/print/foto1.jpg"></a>
-</figure>
+No us perdeu aquest concert!
+
+Dissabte 30 de Setembre 2017.
