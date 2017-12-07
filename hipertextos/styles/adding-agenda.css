@@ -4,31 +4,6 @@
 #page-header.serveis-header {background-image: url("/img/texture/dark_design.png");
 background-size:46px 29px;background-repeat: repeat;image-rendering: crisp-edges;}
 
-/* Serveis */
-#section-web {background-image: url("/img/web.jpg");background-position:fixed;image-rendering: crisp-edges;}
-#section-brand {background-image: url("/img/blog.jpg");background-position:fixed;image-rendering: crisp-edges;}
-#section-paint {background:fixed;overflow:hidden;background-image: url("/img/texture/asfalt.png");background-size: 466px 349px;background-repeat: repeat;image-rendering: crisp-edges;text-align:center;}
-#section-print {background-image: url("/img/print.jpg");background-position:fixed;image-rendering: crisp-edges;background-attachment: fixed;border:none;text-align:center;}
-#section-web, #section-brand, #section-print {background-position: top center;background-attachment: fixed;background-size: cover;background-repeat: no-repeat;border:none;overflow: hidden;text-align: center;}
-#section-web svg, #section-brand svg, #section-paint svg, #section-print svg {width:64px;}
-#resumed-web svg {width:26px;}
-#resumed-web {color:var(--color-translucentblack);text-align:center!important;font-size:15px;}
-#resumed-web em {padding:1em 0 1em 0;}
-#responsive img {width:86%;}
-#resumed-paint svg {width:23px;}
-#resumed-paint {color:var(--color-translucentwhite);}
-#resumed-paint h5 {margin: 0 0 6px 0;}
-#resumed-print {color:var(--color-translucentblack);}
-#resumed-print h5 {margin: 0 0 8px 0;}
-#resumed-print em {padding:12px 0 12px 0;}
-#section-brand h4 {margin-bottom:0;}
-#section-brand h5 {line-height:1.3em;}
-#section-brand .thumb-4 img {max-width:48%;}
-#browser-ios svg {width:23px;color:var(--color-translucentblack);margin:0 5px 0 0;}
-#section-brand h4{line-height:1.18em;}
-img.big-icon {width:64px;padding-top:16px;}
-#section-paint {color:var(--color-white);}
-
 /* Animacions propies */
 
 #diamond {padding-left:6%;}
