@@ -15,9 +15,6 @@ avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/je
 # Flags below are optional
 #
 
-# Musics and instrument
-site_musics: <b>Maria Baeta</b> - veu<br><b>Pep Cabrero</b> - Saxo<br><b>Juanje Sánchez</b> - Guitarra<br><b>José Borjas</b> - Contrabaix<br><b>Isard Miralles</b> - Bateria<br>
-
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
