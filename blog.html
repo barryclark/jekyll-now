@@ -33,8 +33,8 @@ comments: true
 				 <div>
     				{% if post.day %}
 					<div id="ical"><a href="{{ site.baseurl }}{{ post.url }}" class="ical-front">
-					<h2 class="day">{{ post.day }}</h4>
-					<h4 class="month">{{ post.month }}</h4>
+					<h2 class="day">{{ post.day }}</h2>
+					<h5 class="month">{{ post.month }}</h5>
 					</a>{{ post.excerpt }}</div>{% endif %}
 					{% if post.img %}<a href="../{{ post.img }}" data-lightbox="roadtrip"><img class="blog-img" src="../{{ post.img }}"></a>{% endif %}{{ post.excerpt }}</div>
 				
