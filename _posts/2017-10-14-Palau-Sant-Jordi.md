@@ -2,12 +2,22 @@
 layout: post-date
 title: Palau Sant Jordi a tope
 category: agenda
+img: "assets/print/foto1.jpg"
 day: 25
 month: Desembre
+excerpt_separator: <!--more-->
+
 ---
 
-Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
+No us perdeu aquest concert!
 
-![_config.yml]({{ site.baseurl }}/assets/cartells/image1.jpg)
+Dissabte 30 de Setembre 2017.
 
-The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
+
+
+<!--more-->
+
+
+<figure>
+	<a href="../assets/print/foto1.jpg" data-lightbox="roadtrip"><img src="../assets/print/foto1.jpg"></a>
+</figure>
