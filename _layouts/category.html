@@ -24,7 +24,7 @@ layout: default
       		</article>
 			{% if post.img %}
 			<section id="" class="thumb-2">	
-				<a href=".../{{ post.img }}" data-lightbox="roadtrip"><img class="blog-img" src=".../{{ post.img }}"></a>
+				<a href="{{ site.url }}{{ post.img }}" data-lightbox="roadtrip"><img class="blog-img" src="{{ site.url }}{{ post.img }}"></a>
 			</section>
 			{% endif %}
     	</div>
