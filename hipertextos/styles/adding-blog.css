@@ -56,6 +56,11 @@ figure iframe {width:100%;}
     border-bottom:thin solid currentcolor;
     color:var(--color-link);
 }
+.simple #ical a,
+#layout-simple:checked ~ #layout-result #ical a {
+    padding: 3px;width:90px;top:30px;right:6px;
+    background: var(--color-white);box-shadow:-2px 3px 5px rgba(0,0,0,.06);
+}
 .list em u a,
 #layout-list:checked ~ #layout-result em u a {
     padding: 3px;font-size:15px;line-height:27px;
@@ -91,12 +96,22 @@ figure iframe {width:100%;}
     left: 80px;text-decoration:none;color:var(--color-vlink); 
     bottom: 3px;
 }
+.table #ical a,
+#layout-table:checked ~ #layout-result #ical a {
+    padding: 3px;width:90px;top:30px;right:6px;
+    background: var(--color-white);box-shadow:-2px 3px 5px rgba(0,0,0,.06);
+}
 .gallery #link-comment,
 #layout-gallery:checked ~ #layout-result #link-comment {
     float: right;font-size:13px;border-bottom:none;
     position: absolute;color:var(--color-white);background-color:rgba(0,0,0,.5);
     right: 9px;text-decoration:none;padding:0 12px 0 12px;
     bottom: 1px;
+}
+.gallery #ical a,
+#layout-gallery:checked ~ #layout-result #ical a {
+    padding: 3px;width:90px;top:30px;right:6px;
+    background: var(--color-white);box-shadow:-2px 3px 5px rgba(0,0,0,.06);
 }
 .cards #link-comment,
 #layout-cards:checked ~ #layout-result #link-comment {
@@ -105,12 +120,22 @@ figure iframe {width:100%;}
     right: 0;text-decoration:none;
     bottom: 7px;padding:0 9px 0 0;
 }
+.cards #ical a,
+#layout-cards:checked ~ #layout-result #ical a {
+    padding: 3px;width:90px;top:30px;right:6px;
+    background: var(--color-white);box-shadow:-2px 3px 5px rgba(0,0,0,.06);
+}
 .tiles #link-comment,
 #layout-tiles:checked ~ #layout-result #link-comment {
     float: none;font-size:12px;border-bottom:none;
     position: absolute;color:var(--color-hardgrey);
     left:37%;text-decoration:none;
     bottom: -5px;z-index:10;
+}
+.tiles #ical a,
+#layout-tiles:checked ~ #layout-result #ical a {
+    padding: 3px;width:90px;top:30px;right:6px;
+    background: var(--color-white);box-shadow:-2px 3px 5px rgba(0,0,0,.06);
 }
 /* Suscribe */
 form .button {border:thin solid currentColor;margin-top:0.6em;}
