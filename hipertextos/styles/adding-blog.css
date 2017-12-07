@@ -3,7 +3,7 @@
 
 /* Posts */
 #post-title, #date, #post-share {text-align: center;}
-#post-video, #post-download, #post-share, #post-header {border:none;}
+#post-video, #post-download, #post-share, #post-header, #post-agenda, #post-date {border:none;}
 .post em u a { padding: 6px;border: 2px solid var(--color-grey);color: var(--color-grey);border-radius: 40px;width: 180px;margin-top: 18px;}
 .post em u svg { width: 18px;}
 #post-header {border-bottom: 9px solid var(--color-black);}

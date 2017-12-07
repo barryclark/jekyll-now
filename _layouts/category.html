@@ -16,7 +16,7 @@ layout: default
 				<h1>{{ post.day }}</h1>				
 				<h5>{{ post.month }}</h5>
 			</figure>
-      		<article class="thumb-9 anm-fadeIn delay-1000">
+      		<article id="post-agenda" class="thumb-9 anm-fadeIn delay-1000">
 				<h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
         		<div>{% if post.img %}<a href=".../{{ post.img }}" data-lightbox="roadtrip"><img class="blog-img" src=".../{{ post.img }}"></a>{% endif %}{{ post.excerpt }}</div>
       			<a id="link-comment" href="{{ site.baseurl }}{{ post.url }}#disqus_thread" class="anm-moveFromLeftFade delay-1500"> Comentaris</a>
