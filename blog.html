@@ -31,20 +31,14 @@ comments: true
 				<h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
 				<strong>{{ post.category }}</strong>
 				
-    	{% if post.agenda %}
+    	{% if post.day %}
     	<div><a href="{{ site.baseurl }}{{ post.url }}" class="ical-front">
     	<h2 class="day">{{ post.day }}</h4>
 		<h4 class="month">{{ post.month }}</h4>
 		</a>{{ post.excerpt }}</div>
     	{% endif %}
 
-    	{% if post.info %}
-        <div>{% if post.img %}<a href="../{{ post.img }}" data-lightbox="roadtrip"><img class="blog-img info-img" src="../{{ post.img }}"></a>{% endif %}{{ post.excerpt }}</div>
-    	{% endif %}
-
-    	{% if post.video %}
         <div>{% if post.img %}<a href="../{{ post.img }}" data-lightbox="roadtrip"><img class="blog-img" src="../{{ post.img }}"></a>{% endif %}{{ post.excerpt }}</div>
-    	{% endif %}
 				
       			<a id="link-comment" href="{{ site.baseurl }}{{ post.url }}#disqus_thread" class="anm-moveFromLeftFade delay-1500"> Comentaris</a>
       			<nav><a href="{{ site.baseurl }}{{ post.url }}" class="read-more"><b>[+]</b></a></nav>
