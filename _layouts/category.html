@@ -6,7 +6,9 @@ layout: default
     {% include partials/navigation/nav-agenda.html %}
 	{% include partials/header.html %}
     <main id="page-main" role="main">
-    
+
+	<div id="layout">
+
 		{% for post in site.categories[page.category] %}
     	<div id="layout-result">
       		<article class="anm-fadeIn delay-1000">
@@ -19,4 +21,12 @@ layout: default
     	</div>
 		{% endfor %}
 
+	</div>
+	<em><hr></em>
+	<div>
+			<section id="follows">
+			{% include partials/suscribe.html %}
+    		</section>
+	</div> 
+	
     </main>
