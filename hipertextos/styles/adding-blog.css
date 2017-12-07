@@ -55,15 +55,15 @@ figure iframe {width:100%;}
 .simple em u svg,
 #layout-simple:checked ~ #layout-result em u svg {
     width: 21px;}
-.simple #link-comment,
-#layout-simple:checked ~ #layout-result #link-comment {
+.simple #link-comment a,
+#layout-simple:checked ~ #layout-result #link-comment a{
     float: right;font-size:17px;border-bottom:thin solid currentcolor;
     position: absolute;color:var(--color-hardgrey);
     right: 0;text-decoration:none;
     bottom: 6px;
 }
-.simple #link-comment:hover,
-#layout-simple:checked ~ #layout-result #link-comment:hover {
+.simple #link-comment a:hover,
+#layout-simple:checked ~ #layout-result #link-comment a:hover {
     border-bottom:thin solid currentcolor;
     color:var(--color-link);
 }
@@ -88,20 +88,20 @@ figure iframe {width:100%;}
 #layout-list:checked ~ #layout-result em u svg {
     width: 15px;padding:5px 0 0 0;
 }
-.list #link-comment,
-#layout-list:checked ~ #layout-result #link-comment {
+.list #link-comment a,
+#layout-list:checked ~ #layout-result #link-comment a {
     float: right;font-size:17px;border-bottom:thin solid currentcolor;
     position: absolute;color:var(--color-hardgrey);
     right: 0;text-decoration:none;
     bottom: 6px;
 }
-.list #link-comment:hover,
-#layout-list:checked ~ #layout-result #link-comment:hover {
+.list #link-comment a:hover,
+#layout-list:checked ~ #layout-result #link-comment a:hover {
     border-bottom:thin solid currentcolor;
     color:var(--color-link);
 }
-.table #link-comment,
-#layout-table:checked ~ #layout-result #link-comment {
+.table #link-comment a,
+#layout-table:checked ~ #layout-result #link-comment a {
     font-size:17px;border-bottom:thin solid currentcolor;
     position: absolute;padding:15px 15px 15px 15px;
     left: 80px;text-decoration:none;color:var(--color-vlink); 
@@ -117,8 +117,8 @@ figure iframe {width:100%;}
 #layout-table:checked ~ #layout-result #ical a:hover {
     opacity:0;
 }
-.gallery #link-comment,
-#layout-gallery:checked ~ #layout-result #link-comment {
+.gallery #link-comment a,
+#layout-gallery:checked ~ #layout-result #link-comment a{
     float: right;font-size:13px;border-bottom:none;
     position: absolute;color:var(--color-white);background-color:rgba(0,0,0,.5);
     right: 9px;text-decoration:none;padding:0 12px 0 12px;
@@ -129,8 +129,8 @@ figure iframe {width:100%;}
     padding: 3px;width:90px;top:30px;right:6px;
     background: var(--color-white);box-shadow:-2px 3px 5px rgba(0,0,0,.06);
 }
-.cards #link-comment,
-#layout-cards:checked ~ #layout-result #link-comment {
+.cards #link-comment a,
+#layout-cards:checked ~ #layout-result #link-comment a {
     float: right;font-size:12px;border-bottom:none;
     position: absolute;color:var(--color-hardgrey);
     right: 0;text-decoration:none;
@@ -149,8 +149,8 @@ figure iframe {width:100%;}
 #layout-cards:checked ~ #layout-result #ical h1 {
     font-size:36px;line-height:36px;margin:6px 0 0 0;
 }
-.tiles #link-comment,
-#layout-tiles:checked ~ #layout-result #link-comment {
+.tiles #link-comment a,
+#layout-tiles:checked ~ #layout-result #link-comment a {
     float: none;font-size:12px;border-bottom:none;
     position: absolute;color:var(--color-hardgrey);
     left:37%;text-decoration:none;
