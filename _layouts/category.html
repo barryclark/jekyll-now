@@ -16,21 +16,12 @@ layout: default
 					<h1>{{ post.day }}</h1>				
 					<h5>{{ post.month }}</h5>
 				</figure>
-      		<article id="post-agenda">
-				<section class="thumb-9">
+      		<article id="post-agenda" class="thumb-9">
 					<h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
 					<div>{{ post.excerpt }}</div>
-	      			<a id="link-comment" href="{{ site.baseurl }}{{ post.url }}#disqus_thread" class="anm-moveFromLeftFade delay-1500"> Comentaris</a>
-    	  			<nav><a href="{{ site.baseurl }}{{ post.url }}" class="read-more"><b>[+]</b></a></nav>
-      			</section>
-					<div id="link-more-img" class="collapser">
-						<em><label for="a-2">Veure Cartell<br>&xoplus;</label></em>
-						<input type="checkbox" id="a-2" name="checkcollapser" hidden>
-						<div hidden class="slow">
-							<a href="{{ site.url }}/{{ post.img }}" data-lightbox="roadtrip"><img class="blog-img" src="{{ site.url }}/{{ post.img }}"></a>
-							<em><label for="a-2">&xotime;</label></em>
-						</div>
-					</div>
+	      			<a id="link-image"  href="{{ site.url }}/{{ post.img }}" data-lightbox="roadtrip" class="anm-moveFromLeftFade delay-1000"> Cartell</a>
+	      			<a id="link-comment" href="{{ site.baseurl }}{{ post.url }}#disqus_thread" class="anm-moveFromLeftFade delay-1000"> Comentaris</a>
+    	  			<nav><a href="{{ site.baseurl }}{{ post.url }}" class="read-more"><b>&xoplus;</b></a></nav>
       		</article>
     	</div>
 		{% endfor %}
