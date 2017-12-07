@@ -31,6 +31,11 @@ figure iframe {width:100%;}
 .nav-scroll label img {width: 18px;height: 18px;margin-bottom: 8px;}
 .nav-scroll label:hover {border:thin solid transparent;color:var(--color-black);text-decoration:none;}
 
+/* Category Agenda */
+#post-date {color:var(--color-red);}
+#post-date h1 {font-weight: lighter;margin:0 0 12px 0;}
+#post-date h5 {font-weight: normal;}
+
 /* Simple, List, Table, Gallery, Cards, Tiles */
 .simple em u a,
 #layout-simple:checked ~ #layout-result em u a {
