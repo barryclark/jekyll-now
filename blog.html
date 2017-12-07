@@ -32,7 +32,7 @@ comments: true
 				<strong>{{ post.category }}</strong>
 				
     	{% if post.day %}
-    	<div><a href="{{ site.baseurl }}{{ post.url }}" class="ical-front">
+    	<div id="ical"><a href="{{ site.baseurl }}{{ post.url }}" class="ical-front">
     	<h2 class="day">{{ post.day }}</h4>
 		<h4 class="month">{{ post.month }}</h4>
 		</a>{{ post.excerpt }}</div>
