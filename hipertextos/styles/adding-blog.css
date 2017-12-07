@@ -18,7 +18,7 @@ figure iframe {width:100%;}
 #post-share em svg {padding:0px 0px 0px 7px;}
 #post-share em a:hover {background:#fff !important;border:thin solid var(--color-link);}
 #post-share em a:visited {background-color:var(--color-soft-grey)  !important;}
-#ical a {text-decoration:none;color:var(--color-red);width:30%;float:right;position:absolute;right:0;text-align: center;}
+#ical a {text-decoration:none;color:var(--color-red);width:10%;float:right;position:absolute;right:0;top:0;text-align: center;}
 
 #tw {background:var(--color-green);}
 #fb {background:var(--color-blue);}
