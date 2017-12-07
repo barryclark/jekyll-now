@@ -12,21 +12,23 @@ layout: default
 
 		{% for post in site.categories[page.category] %}
     	<div id="layout-result">
-    		<figure id="post-date" class="thumb-2">
-				<h1>{{ post.day }}</h1>				
-				<h5>{{ post.month }}</h5>
-			</figure>
-      		<article id="post-agenda" class="thumb-8 anm-fadeIn delay-1000">
-				<h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
-        		<div>{{ post.excerpt }}</div>
-      			<a id="link-comment" href="{{ site.baseurl }}{{ post.url }}#disqus_thread" class="anm-moveFromLeftFade delay-1500"> Comentaris</a>
-      			<nav><a href="{{ site.baseurl }}{{ post.url }}" class="read-more"><b>[+]</b></a></nav>
+    		<article id="" class="">
+	    		<figure id="post-date" class="thumb-1">
+					<h1>{{ post.day }}</h1>				
+					<h5>{{ post.month }}</h5>
+				</figure>
+    	  		<div id="post-agenda" class="thumb-10">
+					<h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
+        			<div>{{ post.excerpt }}</div>
+      				<a id="link-comment" href="{{ site.baseurl }}{{ post.url }}#disqus_thread" class="anm-moveFromLeftFade delay-1500"> Comentaris</a>
+	      			<nav><a href="{{ site.baseurl }}{{ post.url }}" class="read-more"><b>[+]</b></a></nav>
+    	  		</div>
+				{% if post.img %}
+				<section id="" class="thumb-1">	
+					<a href="{{ site.url }}/{{ post.img }}" data-lightbox="roadtrip"><img class="blog-img" src="{{ site.url }}/{{ post.img }}"></a>
+				</section>
+				{% endif %}
       		</article>
-			{% if post.img %}
-			<section id="" class="thumb-2">	
-				<a href="{{ site.url }}/{{ post.img }}" data-lightbox="roadtrip"><img class="blog-img" src="{{ site.url }}/{{ post.img }}"></a>
-			</section>
-			{% endif %}
     	</div>
 		{% endfor %}
 
