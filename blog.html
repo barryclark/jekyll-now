@@ -31,7 +31,11 @@ comments: true
 				<h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
 				<strong>{{ post.category }}</strong>
 				 <div>{% if post.img %}<a href="../{{ post.img }}" data-lightbox="roadtrip"><img class="blog-img" src="../{{ post.img }}"></a>{% endif %}{{ post.excerpt }}</div>
-				
+				    {% if post.day %}
+					<div id="ical"><a href="{{ site.baseurl }}{{ post.url }}" class="ical-front">
+					<h2 class="day">{{ post.day }}</h2>
+					<h5 class="month">{{ post.month }}</h5></a></div>
+					{% endif %}
       			<a id="link-comment" href="{{ site.baseurl }}{{ post.url }}#disqus_thread" class="anm-moveFromLeftFade delay-1500"> Comentaris</a>
       			<nav><a href="{{ site.baseurl }}{{ post.url }}" class="read-more"><b>[+]</b></a></nav>
       		</article>
