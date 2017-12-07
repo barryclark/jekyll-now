@@ -127,8 +127,16 @@ figure iframe {width:100%;}
 }
 .cards #ical a,
 #layout-cards:checked ~ #layout-result #ical a {
-    padding: 3px;width:90px;top:30px;right:6px;
+    padding: 0;width:70px;height:70px;top:0;left:0;border-radius:50%;
     background: var(--color-white);box-shadow:-2px 3px 5px rgba(0,0,0,.06);
+}
+.cards #ical p,
+#layout-cards:checked ~ #layout-result #ical p {
+    font-size:10px;line-height:12px;margin:0;
+}
+.cards #ical h1,
+#layout-cards:checked ~ #layout-result #ical h1 {
+    font-size:36px;line-height:36px;margin:6px 0 0 0;
 }
 .tiles #link-comment,
 #layout-tiles:checked ~ #layout-result #link-comment {
