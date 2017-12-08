@@ -1,17 +1,6 @@
 /* by Isard Miralles  ADDING CSS */
 /* ------------------------------------------------------------ Resets */
 
-@font-face {
-    font-family: 'Bauru';
-    font-style: normal;
-    font-weight: 400;
-    src: local('Bauru'),
-         url(./hipertextos/tipos/bauru.eot) format('embedded-opentype'),
-         url(./hipertextos/tipos/bauru.ttf) format('truetype'),
-         url(./hipertextos/tipos/bauru.otf) format('opentype'),
-         url(./hipertextos/tipos/bauru.woff) format('woff');
-}
-
 #site-nav, footer, #follows, #follows-big, #icons, #covers, .nav-scroll, #web-credits, #page-header, #post-header, #post-share, #date {
 text-align: center;}
 /* Nav */
