@@ -43,8 +43,9 @@ figure em a {border:none;border-bottom;line-height:0.2em;padding:12px 4px;}
 #page-nav div {height:80px;font-size:15px;}.serveis#page-main {padding:0;}
 
 /* Media */
-.youtube {	clear: both;margin-bottom: 1.5em;position: relative;padding-bottom: 56.25%;padding-top: 2.25em;height: 0;overflow: hidden;z-index: 100;}
+.youtube {	clear: both;margin-bottom: 1.5em;position: relative;padding-bottom: 30.25%;padding-top: 0.25em;height: 0;overflow: hidden;z-index: 100;}
 .youtube iframe {width:100%;height:100%;}
+#black-video {background: var(--color-black); height:100%;width:100%;display: inline-block; }
 
 /* Covers */
 #covers {color: var(--color-grey);}
