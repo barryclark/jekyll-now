@@ -1,7 +1,8 @@
 /* by Isard Miralles  ADDING CSS */
 /* ------------------------------------------------------------ Resets */
 #pre-cover, #post-cover {width:120px; }
-img#post-cover {transform: rotate(180deg);}
+#page-header #pre-cover, #page-header #post-cover {display:inline-block; }
+#post-cover img{transform: rotate(180deg);}
 #cover-lines img{margin-top:2%;margin-bottom:2%;}
 
 #site-nav, footer, #follows, #follows-big, #icons, #covers, .nav-scroll, #web-credits, #page-header, #post-header, #post-share, #date {
