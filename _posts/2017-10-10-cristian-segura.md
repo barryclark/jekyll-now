@@ -4,7 +4,7 @@ title: Disseny de Cartell
 post: default
 comments: true
 category: treballs
-img: "assets/print/foto1.jpg"
+img: "assets/fotos/foto1.jpg"
 excerpt_separator: <!--more-->
 ---
 

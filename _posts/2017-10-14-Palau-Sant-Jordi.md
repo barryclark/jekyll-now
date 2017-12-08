@@ -2,7 +2,7 @@
 layout: post-date
 title: Palau Sant Jordi a tope
 category: agenda
-img: "assets/print/foto1.jpg"
+img: "assets/fotos/foto1.jpg"
 day: 25
 month: Desembre
 comments: true
