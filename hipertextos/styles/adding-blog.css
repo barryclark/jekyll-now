@@ -35,12 +35,13 @@ figure iframe {width:100%;}
 
 /* Category Agenda */
 #post-date {color:var(--color-red);text-align:center;margin:0;padding:32px 0 0 0;}
-#post-date h1 {font-weight: lighter;margin:0 0 2px 0;font-size:3.2em;}
-#post-date h5 {font-weight: normal;font-size: 0.75em;}
+#post-date h1 {font-weight: lighter;margin:0 0 2px 0;font-size:3.8em;}
+#post-date h5 {font-weight: normal;font-size: 0.85em;}
 #link-image {float: right;font-size:17px;border-bottom:thin solid currentcolor;color:var(--color-hardgrey);text-decoration:none;}
 #link-image:hover {border-bottom:thin solid currentcolor;color:var(--color-link);}
 #post-agenda strong em a {padding:8px;margin-top:26px;font-size:18px;font-weight: normal;border-color:var(--color-softgrey);color:var(--color-grey);border-radius:3px;margin-right:3px;}
 #post-agenda strong em a:hover {color:var(--color-link);border-color:var(--color-link);text-decoration:none;}
+#post-agenda strong em svg {width:16px;margin-left:1px;}
 
 /* Simple, List, Table, Gallery, Cards, Tiles */
 .simple em u a,
