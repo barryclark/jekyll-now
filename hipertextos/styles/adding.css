@@ -3,8 +3,8 @@
 #pre-cover, #post-cover {width:120px; }
 #page-header #pre-cover, #page-header #post-cover {display:inline-block; }
 #post-cover img{transform: rotate(180deg);}
-#cover-lines img{margin-top:2%;margin-bottom:2%;}
-
+#cover-lines img{}
+hr.lines {border:1px solid #fff;height:2px;width:33%;margin-left:33%;margin-top:2px;margin-bottom:8px;}
 #site-nav, footer, #follows, #follows-big, #icons, #covers, .nav-scroll, #web-credits, #page-header, #post-header, #post-share, #date {
 text-align: center;}
 /* Nav */
