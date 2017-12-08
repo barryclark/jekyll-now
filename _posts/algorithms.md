@@ -7,21 +7,21 @@ title: Sorting socks and other practical uses of algorithms
 
 ## Optimal stopping
 
-Suppose that you are in an ice cream salon with a hundred different flavors of ice cream: chocolate-mint, peanut butter, pepper, coffee-chocolate-garlic... Because you don't know any of these strange combinations, the friendly ice cream vendor allows you some tastes. You can try a little spoon of a type of ice cream and then have to decide whether you want the full portion of that type or want to taste something else. Politeness says that if you have have declined a flavor to try a new one, you can never choose that flavor again. Which strategy will lead to the best bowl of ice cream?
+Suppose that you are in an ice cream salon with a hundred different flavors of ice cream: chocolate-mint, peanut butter, pepper, coffee-chocolate-garlic and many more! Because you don't know any of these strange combinations, the friendly ice cream vendor allows you some tastes. You can try a little spoon of a type of ice cream and then have to decide whether you want the full portion of that type or want to taste something else. Politeness says that if you have have declined a flavor to try a new one, you can never choose that flavor again. Which strategy will lead to the best bowl of ice cream?
 
-This problem is well-known in mathematical circles as the *secretary problem*. You have a set of candidates for the position of your new secretary which you interview in random order. After every interview you have to decide to his this candidate or reject and hire a new one. Clearly, if you decide to hire too soon, you are likely to end up with a suboptimal secretary whereas if you keep rejecting in the hope of finding someone better, it is likely that you rejected the best one. There is a rather elegant solution to this problem:
+This problem is well-known in mathematical circles as the **secretary problem**. You have a set of candidates for the position of your new secretary which you interview in random order. After every interview you have to decide to his this candidate or reject and hire a new one. Clearly, if you decide to hire too soon, you are likely to end up with a suboptimal secretary whereas if you keep rejecting in the hope of finding someone better, it is likely that you rejected the best one. There is a rather elegant solution to this problem:
 
-> When choosing something, first spend $e^{-1}\approx 37$% of your effort just looking and from then on pick a good one.
+> When searching for the best item, first spend $e^{-1}\approx 37$% of your effort just looking and from then on pick a good one.
 
 So, returning to the ice cream dilemma, if I can reasonably try ten flavors, my best strategy is to taste and reject the first four flavors to get a feel of the 'distribution' and from then onwards choose something that I like. Many daily problems can be tackled this way: hiring candidates, looking for a job, finding a new apartment to selecting your life partner. Typical for all these problems is that the distribution is unknown beforehand: before starting our search we have no point of reference for what is good or not. If instead of hiring people based on their qualitative competence, we base ourself on their study results it all becomes much easier. Just look until you find a candidate with the highest score you can reasonably expect: when interviewing ten candidates you can reasonably expect one to be in the top-ten percentile grade-wise.
 
 ## Exploring / exploiting
 
-Where should we go and eat tonight? Are we going to our favorite Italian which we always enjoy or are we taking a gamble and try that new Lebanese place, which might be a hit or miss. This is called the *exploration vs exploitation*: should you exploit your best strategy you have found up to know or engage in the risky endeavor of exploring? As a researcher, it is a problem I face regularly: continue working on my current research lines (resulting in a quite steady output of papers though not necessary the most exciting topic) or try this new thing all the cool kids are doing (which could be high-impact, but will probably just be a dead end).
+Where should we go and eat tonight? Are we going to our favorite Italian which we always enjoy or are we taking a gamble and try that new Lebanese place, which might be a hit or miss. This is called the **exploration vs exploitation**: should you exploit your best strategy you have found up to know or engage in the risky endeavor of exploring? As a researcher, it is a problem I face regularly: continue working on my current research lines (resulting in a quite steady output of papers though not necessary the most exciting topic) or try this new thing all the cool kids are doing (which could be high-impact, but will probably just be a dead end).
 
 - *Gittins index*
 
-Perhaps a more simple way guiding your choices is through a *regret bound*: which ones of these things will I regret most of not having done?
+Perhaps a more simple way guiding your choices is through a **regret bound**: which ones of these things will I regret most of not having done?
 
 - voorbeeld
 - *Gittins index*
@@ -73,47 +73,12 @@ So, if one task takes twice as much time as another, only do it first if it is m
 
 ## Bayes' rule
 
+![](../images/2017_algorithms/bayes.png)
+
 - predicting using one data point
 - *power-law distributions* => multiplicative rule
 - *normal distributions* => average rule
 - *Erlang distribution* => additive rule
-
-## Overfitting
-
-- only liking particular tastes = overfitting on food
-- cross validation
-- penalizing complexity
-- early stopping
-
-## Relaxation
-
-- Relaxation of hard problems
-- tafel schikking
-
-## Randomness
-
-- monte carlo methode
-- Metropolis Hastings methode
-- hill climbing
-- simulated annealing
-
-> Open yourself to randomness: make a random wikipedia page / random research article your browser starting page.
-
-## Networking
-
-- forgiving people: exponential backoff
-  - omgaan met mensen: elke fout verdubbel je de straf
-- peter principle
-
-## Game theory
-
-- cheating: moeilijk om mee om te gaan
-- tragedy of the commons
-- prisoner's dilemma
-- emoties: heuristiek van natuur om groep te bevoordelen (liefde/ergernis)
-- veiling
-  - *sealed-bid first auction*
-  - Vicrey auction: sealed bid, winner has to pay the offer of second-place bidder
 
 ## Computational kindness
 
