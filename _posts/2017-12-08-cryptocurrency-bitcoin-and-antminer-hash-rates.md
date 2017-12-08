@@ -14,11 +14,11 @@ I'm not sure exactly how NiceHash worked. I only got paid twice via their servic
 
 Miners get paid for every block the entire pool verifies by [the following equation](https://slushpool.com/help/manual/rewards):
 
-$$miner reward = block value&times;(1 − pool fee )&times;{miner hash rate \over pool hash rate}$$
+$$miner reward = block value×(1 − pool fee )×{miner hash rate \over pool hash rate}$$
 
 The pool's fee is 2%, and the average block value is about 16 bitcoins (12.5 bitcoins for a block reward plus transaction fees). So the equation could be simplified to:
 
-$$miner reward = 16&times;(0.98)&times;{miner hash rate \over pool hash rate}$$
+$$miner reward = 16×(0.98)×{miner hash rate \over pool hash rate}$$
 
 According to SlushPool, my miner has averaged about 450 gigahashes a second (Gh/s). The entire pool's hash rate has averaged an astonishing 1.3 exahashes a second (Eh/s).
 
@@ -30,11 +30,11 @@ I know the numbers million (six zeroes), billion (nine zeroes), trillion (twelve
 
 Okay, back to how much I make. Let's continue to plug the numbers into the previous equation:
 
-$$miner reward = 16&times;(0.98)&times;{450,000,000,000 \over 1,300,000,000,000,000,000}$$
+$$miner reward = 16×(0.98)×{450,000,000,000 \over 1,300,000,000,000,000,000}$$
 
 Although we can just plug that into a calculator, let's factor out the extra zeroes on the division (let's keep my hash rate at the hundred's place, though):
 
-$$miner reward = 16&times;(0.98)&times;{450 \over 1,300,000,000}$$
+$$miner reward = 16×(0.98)×{450 \over 1,300,000,000}$$
 
 Just using [Google as a calculator](https://www.google.com/search?q=16*(0.98)*450%2F1%2C300%2C000%2C000) shows that my reward is about 0.00000542769 bitcoins.
 
