@@ -85,8 +85,6 @@ img.dialog-svg {width:120px;height:150px;}
 #web-credits label svg {max-width:72px;margin:10px;opacity:.6;border-radius:50%;}
 #web-credits label svg:hover {cursor:pointer !important;opacity:1;box-shadow: 0 1px 3px rgba(0,0,0,.3);}
 /* Classic Gallery */
-.listed .img-icon {width:32px;}
-.listed u {margin-left:12px;}
 .listed section {border:none;line-height:2em;font-size:0.2em;-webkit-column-count: 3;-moz-column-count: 3;column-count: 3;}
 .imagens img {margin:0!important;padding:0!important;border:none;}
 .listed {padding:0!important;}
