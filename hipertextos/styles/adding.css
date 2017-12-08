@@ -1,6 +1,6 @@
 /* by Isard Miralles  ADDING CSS */
 /* ------------------------------------------------------------ Resets */
-#pre-cover, #post-cover {width:120px; }
+#pre-cover, #post-cover {width:100px; }
 #page-header #pre-cover, #page-header #post-cover {display:inline-block; }
 #post-cover img{transform: rotate(180deg);}
 #cover-lines img{}
