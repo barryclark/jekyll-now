@@ -15,7 +15,7 @@ permalink: /media/
 	{% assign image_files = site.static_files | where: "image", true %}
 	{% for image in image_files %}
 	<article>
-    	<a href="{{ site.baseurl }}/assets/print/{{ image.name }}" data-lightbox="roadtrip"><img class="imagens" src="{{ site.baseurl }}/assets/print/{{ image.name }}" alt="{{ image.basename }}"></a>
+    	<a href="{{ site.baseurl }}/assets/fotos/{{ image.name }}" data-lightbox="roadtrip"><img class="imagens" src="{{ site.baseurl }}/assets/fotos/{{ image.name }}" alt="{{ image.basename }}"></a>
 	</article>
 	{% endfor %}
 			</section>
