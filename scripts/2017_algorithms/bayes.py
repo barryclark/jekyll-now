@@ -31,11 +31,12 @@ xvals = np.linspace(1e-1, 10)
 # parameters
 mu = 5
 a = 2.3
+sigma = 2
 
 # prior density
-f_norm = np.exp(-(xvals - 5)**2 / 3)
+f_norm = np.exp(-(xvals - 5)**2 / sigma)
 f_power = xvals**(-a)
-f_erlang = np.exp(-1.5 * xvals) * xvals**a
+f_erlang = np.exp(-1.5 * xvals) * xvals**a + 1e-2
 
 # posterior exp, E[X|X>y]
 
@@ -49,9 +50,9 @@ if __name__ == '__main__':
     fig, axes = plt.subplots(nrows=3, ncols=2, figsize=(6, 8))
 
     # priors
-    make_plot(axes[0,0], f_norm, 'reading time chapter', 'number of chapters',
+    make_plot(axes[0,0], f_norm+3e-2, 'reading time chapter', 'number of chapters',
                                                         'Normal prior')
-    make_plot(axes[1,0], np.linspace(1e-3, 3)**(-a), 'reading time book',
+    make_plot(axes[1,0], np.linspace(1e-3, 3)**(-a) + 1e-3, 'reading time book',
                                         'number of books', 'Power law prior')
     axes[1,0].set_ylim([0, 10])
     make_plot(axes[2,0], f_erlang, 'waiting time for next book',

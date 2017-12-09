@@ -4,33 +4,27 @@ title: Sorting socks and other practical uses of algorithms
 ---
 
 
-
 ## Optimal stopping
 
-Suppose that you are in an ice cream salon with a hundred different flavors of ice cream: chocolate-mint, peanut butter, pepper, coffee-chocolate-garlic and many more! Because you don't know any of these strange combinations, the friendly ice cream vendor allows you some tastes. You can try a little spoon of a type of ice cream and then have to decide whether you want the full portion of that type or want to taste something else. Politeness says that if you have have declined a flavor to try a new one, you can never choose that flavor again. Which strategy will lead to the best bowl of ice cream?
+Suppose that you are in an ice cream salon with a hundred different flavors of ice cream: chocolate-mint, peanut butter, pepper, coffee-chocolate-garlic and many more! Because you do not know any of these strange combinations, the friendly ice cream vendor allows you to taste some! You can try a little spoon of a flavor of ice cream and then have to decide whether you want a full portion of that kind or want to taste something else. Politeness says that if you have have declined a flavor to try a new one, you can never choose that previous flavor again. Which strategy will lead to the best bowl of ice cream?
 
-This problem is well-known in mathematical circles as the **secretary problem**. You have a set of candidates for the position of your new secretary which you interview in random order. After every interview you have to decide to his this candidate or reject and hire a new one. Clearly, if you decide to hire too soon, you are likely to end up with a suboptimal secretary whereas if you keep rejecting in the hope of finding someone better, it is likely that you rejected the best one. There is a rather elegant solution to this problem:
+This problem is well-known in mathematical circles as the **secretary problem**: you have a set of candidates to fill a vacant secretary position. These candidates visit your office one-by-one to get interviewed. After every interview you have to decide to hire this candidate or reject and interview a new one. Clearly, if you decide to hire too soon you likely end up with a mediocre candidate. On the other hand, if you keep rejecting applicants in the hope of finding someone better, it is likely that you rejected the best one. There is a rather elegant solution to this problem:
 
-> When searching for the best item, first spend $e^{-1}\approx 37$% of your effort just looking and from then on pick a good one.
+> When searching for the best 'item', first spend $e^{-1}\approx 37$% of your effort just looking and from then on pick a good one.
 
 So, returning to the ice cream dilemma, if I can reasonably try ten flavors, my best strategy is to taste and reject the first four flavors to get a feel of the 'distribution' and from then onwards choose something that I like. Many daily problems can be tackled this way: hiring candidates, looking for a job, finding a new apartment to selecting your life partner. Typical for all these problems is that the distribution is unknown beforehand: before starting our search we have no point of reference for what is good or not. If instead of hiring people based on their qualitative competence, we base ourself on their study results it all becomes much easier. Just look until you find a candidate with the highest score you can reasonably expect: when interviewing ten candidates you can reasonably expect one to be in the top-ten percentile grade-wise.
 
 ## Exploring / exploiting
 
-Where should we go and eat tonight? Are we going to our favorite Italian which we always enjoy or are we taking a gamble and try that new Lebanese place, which might be a hit or miss. This is called the **exploration vs exploitation**: should you exploit your best strategy you have found up to know or engage in the risky endeavor of exploring? As a researcher, it is a problem I face regularly: continue working on my current research lines (resulting in a quite steady output of papers though not necessary the most exciting topic) or try this new thing all the cool kids are doing (which could be high-impact, but will probably just be a dead end).
+Where should we go and eat tonight? Are we going to our favorite Italian which we always enjoy or are we taking a gamble and try that new Lebanese place, which might be a hit or miss. This is called the **exploration vs exploitation dilemma**. Is it better to exploit your best strategy or to engage in the risky endeavor of exploring? As a researcher, it is a problem you face regularly: continue working on a current research line (resulting in a quite steady output of papers though not necessary the most exciting topic) or try this new thing you just read about (which could be high-impact, but will probably just be a dead end)?
 
-- *Gittins index*
+A formal solution to this problem has been developed by [Gitten](https://en.wikipedia.org/wiki/Gittins_index). The main idea is based on a **discount factor**: the notion that a reward now or in the near future is worth more than the same reward in a farther future. Using some rather complex formulas and a discount factor to weigh the important the Gittens index provides a value which allow you to determine if you should try something new or stick to the same thing.
 
 Perhaps a more simple way guiding your choices is through a **regret bound**: which ones of these things will I regret most of not having done?
 
-- voorbeeld
-- *Gittins index*
-- regret and confidence bounds
-- A/B testing
-
 ## Sorting
 
-Despite having a master degree in engineering, I have to admit that I do not really know how to operate our washing machine. Hence, I am usually the one who has to fold the laundry which my partner has washed. I can treat this mostly as an exercise in mindfulness, except for the socks. We seem to have an endless variety of different kinds of socks (my mother has a shop selling underwear) and most of my time in the laundry room is finding the matching pairs of socks. Sadly, I use a rather inefficient form of ... sort: I pick a (initially brightly colored) sock and subsequently comb trough the pile to find its partner. This leaves me with a depressing time complexity of $\mathcal{O}(n^2)$, time proportional to the the number of socks squared.
+Despite having a master degree in engineering, I have to admit that I do not really know how to operate our washing machine. Hence, I am usually the one who has to fold the laundry which my partner has washed. I can treat this mostly as an exercise in mindfulness, except for the socks. We seem to have an endless variety of different kinds of socks (my mother has a shop selling underwear) and most of my time in the laundry room is finding the matching pairs of socks. Sadly, I use a rather inefficient form of insertion sort: I pick a (initially brightly colored) sock and subsequently comb trough the pile to find its partner. This leaves me with a depressing time complexity of $\mathcal{O}(n^2)$, time proportional to the the number of socks squared.
 
 When going through your laundry, organizing your contacts, alphabetizing your books or sorting a pack of cards, an efficient method of sorting requires more effort than going though the whole collection once. More precisely, it requires about $\mathcal{O}(n\log n)$ comparisons. This is better than how I organize my socks, but still requires several passes through the collection. Why do we sort if it is that much work? Because it is much easier to find items from a sorted collection compared to an unorganized collection. And this is the *searching-sorting trade-off*. Sorting is a lot of work in advance, but you save time searching for things on the long run.
 
@@ -38,16 +32,11 @@ As an easy alternative for keeping your stuff perfectly sorted you can use *bin 
 
 > Ordering and keeping things ordered is often an unnecessary hassle. Instead, simply divide your collection in a manageable number of 'bins'.
 
-This is the approach that is used in ..., the most efficient library in the world. Sorting stuff into $k$ bins has a time complexity of only $\mathcal{O}(kn)$. Furthermore, if you want to sort the bins themselves, it is quite easy as there are relatively few objects per bin. I actually use this system myself for my books, rather than sorted by author, my books are grouped by color. In addition to being esthetically pleasing, I can find my books much easier based on the color of their cover than the author's name.
+Sorting stuff into $k$ bins has a time complexity of only $\mathcal{O}(kn)$. Furthermore, if you want to sort the bins themselves, it is quite easy as there are relatively few objects per bin. I actually use this system myself for my books, rather than sorted by author, my books are grouped by color. In addition to being esthetically pleasing, I can find my books much easier based on the color of their cover than the author's name.
 
-And yes, from now on I subdive my socks in brownish, dark and colored.
+And yes, from now on I subdivide my socks in brownish, dark and colored.
 
-Foto sokken
-
-#REVIEW
-- naam sorteer algorithm
-- naam efficient bibliotheek
-- Foto van mijn sokken
+![](../images/2017_algorithms/socks.jpg)
 
 ## Caching
 
@@ -70,15 +59,6 @@ If you just have some things to do, without order (some chores at home), you wil
 > Do tasks in order of importance divided by the time it takes to finish the task.
 
 So, if one task takes twice as much time as another, only do it first if it is more than two times as important.
-
-## Bayes' rule
-
-![](../images/2017_algorithms/bayes.png)
-
-- predicting using one data point
-- *power-law distributions* => multiplicative rule
-- *normal distributions* => average rule
-- *Erlang distribution* => additive rule
 
 ## Computational kindness
 
