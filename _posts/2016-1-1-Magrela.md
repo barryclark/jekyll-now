@@ -1,11 +1,12 @@
 ---
 layout: post
-title: Magrela 🚲
+title: Magrela 🚲 - Hackathon 🥈
 ---
 
 ##### Magrela | Hackathon 🥈
 
-Press: (portuguese)[[1]](http://imasters.com.br/noticia/acompanhe-fotos-do-angelhack-realizado-na-sede-da-ibm-brasil)
+Press: (portuguese)
+[[1]](http://imasters.com.br/noticia/acompanhe-fotos-do-angelhack-realizado-na-sede-da-ibm-brasil)
 [[2]](http://www.timaissimples.com.br/2016/04/angelhacknaibm/&prev=search)
 
 
