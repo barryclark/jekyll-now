@@ -1,6 +1,6 @@
 ---
 layout: post
-title: LiveCube 👪💕
+title: LiveCube 👪💕 - Hackathon 🥇
 ---
 
 ##### LiveCube | Hackathon 🥇
