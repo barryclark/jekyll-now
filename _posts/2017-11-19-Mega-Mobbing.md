@@ -1,3 +1,8 @@
+---
+layout: post
+title: Mega Mobbing
+---
+
 This week we ran a #mobprogramming session with 35 people. Here are some notes about how that went:
 
 At Tableau everyone in the Dev Team gets training in Arlo Belshee's _Read-by-Refactoring_. It's an experiential class, where the attendees are invited to work on a problem they often face: reading gnarly, untested legacy code and trying to make some progress improving it. The instructors coach them into discovering new patterns of thinking; since our goal is first to change how programmers' fingers work, mobbing is far more effective than a lecture.
