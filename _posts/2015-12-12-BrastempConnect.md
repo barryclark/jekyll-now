@@ -5,7 +5,7 @@ title: Brastemp Connect 🚿👖 - Hackathon 🥈
 
 ##### Brastemp Connect | Hackathon 🥈
 
-<img height="400" src="https://github.com/ezefranca/ezefranca.github.io/blob/master/images/brastemp/splash_iphone5c_green_portrait.png?raw=true"><img height="400" src="https://github.com/ezefranca/ezefranca.github.io/blob/master/images/brastemp/choose_iphone5c_green_portrait.png?raw=true"><img height="400" src="https://github.com/ezefranca/ezefranca.github.io/blob/master/images/brastemp/management_iphone5c_green_portrait.png?raw=true"><img height="400" src="https://github.com/ezefranca/ezefranca.github.io/blob/master/images/brastemp/management_iphone5c_green_portrait.png?raw=true">
+<img height="400" src="https://github.com/ezefranca/ezefranca.github.io/blob/master/images/brastemp/brastep-connect.png?raw=true">
 
 Press
 ====
