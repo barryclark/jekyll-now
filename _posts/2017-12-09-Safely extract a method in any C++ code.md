@@ -112,8 +112,10 @@ The order of the capture list will influence the order of the parameters of the 
 - Make the parameter const and by-reference
 - Remove the variable from the capture list
 - Pass the variable in to the call
-Compile.
+- Compile.
+
 i.e.:
+
 ```
 Foo foo = ...
 
@@ -127,6 +129,7 @@ Applesauce();
 ```
 
 becomes
+
 ```
  Foo foo = ...
 
@@ -163,6 +166,7 @@ If `this` is not captured, use 7B.
 - In the header file, add the function declaration in a private section of the class.
 - Compile 
 i.e.:
+
 ```
 auto SomeClass::Applesauce(Foo& foo, Bar*& bar) -> void {
     // ...
