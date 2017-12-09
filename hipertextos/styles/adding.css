@@ -5,7 +5,7 @@
 #post-cover img{transform: rotate(180deg);}
 #cover-lines img{}
 hr.lines {border:thin solid #fff;height:2px;width:33.33333%;margin-left:33.33333%;margin-top:2px;margin-bottom:8px;}
-hr.lines .lgrey {border-color: var(--color-grey);}
+hr.lines.lgrey {border-top:thin solid var(--color-softgrey);}
 #site-nav, footer, #follows, #follows-big, #icons, #covers, .nav-scroll, #web-credits, #page-header, #post-header, #post-share, #date {
 text-align: center;}
 /* Nav */
@@ -55,8 +55,9 @@ figure em a {border:none;border-bottom;line-height:0.2em;padding:12px 4px;}
 /* Covers */
 #covers {color: var(--color-grey);}
 #covers img {width: 13%;margin-bottom:1.2em; }
+#covers .train-icon {width: 80px;margin-bottom:.2em;opacity:.5; }
 #covers article {border:0;}
-#page #covers article {text-shadow:1px 1px 3px rgba(0,0,0,.12);}
+#page #covers article {}
 /* Dialog */
 #dialog .icon-alarm svg {max-width:23px!important;}
 #dialog {max-height:80%;overflow:hidden;}
