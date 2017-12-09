@@ -55,7 +55,7 @@ figure em a {border:none;border-bottom;line-height:0.2em;padding:12px 4px;}
 /* Covers */
 #covers {color: var(--color-grey);}
 #covers img {width: 13%;margin-bottom:1.2em; }
-#covers .train-icon {width: 80px;margin-bottom:.2em;opacity:.5; }
+#covers .train-icon {width: 70px;margin-bottom:.2em;opacity:.32; }
 #covers article {border:0;}
 #page #covers article {}
 /* Dialog */
