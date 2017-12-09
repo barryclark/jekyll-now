@@ -1,6 +1,6 @@
 ---
 layout: post
-title: RaspLauncher 🚀
+title: RaspLauncher 🚀 - Hackathon 🥈
 ---
 
 ##### Rasplauncher | Hackathon 🥈
