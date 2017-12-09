@@ -13,7 +13,7 @@ Carina zoned in on some of the aspects of 2FA that are holding back consumers an
 There are many other approaches to 2FA implementation, such as TOTP via phone, TOTP via email, using a security key such as Yubikey, facial identificaton (I.E. IPhone X), and Amazon Alexa Voice recognition, just to name a few. When implementing 2FA it's important to consider the needs and possible accessibility restrictions of our various users, and keep those in mind when considering the wide array of choices we have when implementing 2FA.
 
 Additionally Carina mentioned that we can strengthen the effect of 2FA by increasing the quality of the first factor of authentication. Some ways that this can be achieved are by:
-* Ruthlessly slashing arbitrary restrictions - such as minimum password length, which is a pointless restriction because no matter how short the password is, when you hash it, it will be the same length as other hashes if you are using something like bcrypt.
+* Ruthlessly slashing arbitrary restrictions
 * Communicating remaining restrictions to users
 * Sanitizing user input
 * Hashing securely
