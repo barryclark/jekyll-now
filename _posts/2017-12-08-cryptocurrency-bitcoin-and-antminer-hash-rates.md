@@ -4,11 +4,15 @@ title: Cryptocurrency, Bitcoin, & AntMiner Hash Rates
 tags: [money]
 keywords: [antimer hash rates, bitcoin, cryptocurrency, antminer]
 mathjax: true
+image: /images/antminer-s3.jpg
 ---
 
 Earlier this year I become interested in the cryptocurrency scene, particularly bitcoin. In addition to [buying some bitcoin on Coinbase](https://www.coinbase.com/join/5955857b9c87bc02147fbba4), I also bought [an AntMiner S3 on eBay](https://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_id=114&ipn=icep&toolid=20004&campid=5337996799&mpre=https://www.ebay.com/sch/i.html?_nkw=antminer+s3). I was using the AntMiner via the NiceHash service, but after the recent hack, I decided to move to an actual pool. After a very short amount of research, I decided to go with SlushPool, which is one of the older pools.
 
 So how much do I make with my AntMiner? Not much, really. In fact, I probably spend more on electricity than I make. **To make things confusing, I get paid for mining with bitcoins, whereas the electric company bills me in US dollars.**
+
+![My AntMiner S3](/images/antminer-s3.jpg)
+*My AntMiner S3*
 
 I'm not sure exactly how NiceHash worked. I only got paid twice via their service, and I was close to another payout before they got hacked. SlushPool seems to be more straightforward on how much they pay.
 
