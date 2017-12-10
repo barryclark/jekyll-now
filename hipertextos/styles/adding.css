@@ -1,6 +1,6 @@
 /* by Isard Miralles  ADDING CSS */
 /* ------------------------------------------------------------ Resets */
-#site-nav, nav, #page-header h2  {font-family: 'Voltaire';text-transform: uppercase; }
+#site-nav, nav, #page-header h2, #cite, #masters  {font-family: 'Voltaire';text-transform: uppercase; }
 #pre-cover, #post-cover {width:72px; }
 #page-header #pre-cover, #page-header #post-cover {display:inline-block; }
 #post-cover img{transform: rotate(180deg);}
@@ -54,11 +54,11 @@ figure em a {border:none;border-bottom;line-height:0.2em;padding:12px 4px;}
 #black-video {background: var(--color-black); height:100%;width:100%;display: inline-block; }
 
 /* Covers */
-#cita h5 {line-height: 1.4em;font-weight:lighter;margin:15px 0 18px 0;}
-#masters h2 {line-height: 1.2em;font-weight:lighter;}
+#cita h5 {line-height: 1.4em;margin:15px 0 18px 0;}
+#masters h2 {line-height: 1.2em;}
 #masters h5 em {color:var(--color-softgrey);}
 #masters {text-align: center;}
-#masters h5 {line-height: 1.6em;padding:0 2% 0 2%;font-weight:lighter;}
+#masters h5 {line-height: 1.6em;padding:0 2% 0 2%;}
 #go-down em a, #go-next em a {
     background:transparent;
     border: transparent ;
