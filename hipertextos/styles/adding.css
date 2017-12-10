@@ -53,9 +53,10 @@ figure em a {border:none;border-bottom;line-height:0.2em;padding:12px 4px;}
 #black-video {background: var(--color-black); height:100%;width:100%;display: inline-block; }
 
 /* Covers */
-#masters {background-image: url("/img/about.jpg");image-rendering: crisp-edges;background-position: fixed;	background-position: top center;
-	background-attachment: fixed;background-size: cover;background-repeat: no-repeat;border:none;color: #fff;overflow: hidden;text-align: center;}
-#masters h5 {line-height: 1.5em;padding:2%;font-weight:lighter;}
+#masters {color:var(--color-white);background-image: url("/img/about.jpg");image-rendering: crisp-edges;background-position: fixed;	background-position: top center;
+	background-attachment: fixed;background-size: cover;background-repeat: no-repeat;color: #fff;overflow: hidden;text-align: center;}
+#masters h5 {line-height: 1.6em;padding:2%;font-weight:lighter;}
+#masters em u a {background-color:transparent;color:var(--color-white);font-weight:normal;border-color:var(--color-white);margin-bottom:69px;}
 #go-down em a {
     background:transparent;
     border: transparent ;
