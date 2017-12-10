@@ -53,7 +53,8 @@ figure em a {border:none;border-bottom;line-height:0.2em;padding:12px 4px;}
 #black-video {background: var(--color-black); height:100%;width:100%;display: inline-block; }
 
 /* Covers */
-#masters h5 {line-height: 1.5em;padding:3%;}
+#masters {background-image: url("/img/about.jpg");image-rendering: crisp-edges;background-position: fixed;}
+#masters h5 {line-height: 1.5em;padding:2%;font-weight:lighter;}
 #go-down em a {
     background:transparent;
     border: transparent ;
