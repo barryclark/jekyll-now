@@ -9,6 +9,7 @@ hr.lines.lgrey {border-top:thin solid var(--color-softgrey);}
 #site-nav, footer, #follows, #follows-big, #icons, #covers, .nav-scroll, #web-credits, #page-header, #post-header, #post-share, #date {
 text-align: center;}
 /* Nav */
+nav {font-family: 'Voltaire';text-transform: uppercase; }
 #site-nav {background: var(--color-soft-black) !important;border-bottom: none;font-size: 17px;color: var(--color-grey);box-shadow: 0 1px 21px rgba(0, 0, 0, .23);}
 #site-nav a {font-weight: lighter;min-width: 12%;border: none;letter-spacing: .032em;}
 #site-nav a:visited { color: var(--color-grey);text-decoration: none;}
