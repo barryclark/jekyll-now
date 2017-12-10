@@ -23,6 +23,9 @@ figure iframe {width:100%;}
 #fb {background:var(--color-blue);}
 #go {background:var(--color-orange);}
 
+h3 a {color: var(--color-hardgrey) }
+h3 a:hover {color: var(--color-link); text-decoration:none;}
+
 /* nav Scroll */
 .nav-scroll label {font-size: 11px;line-height: 12px;padding: 10px;font-weight: normal;}
 .nav-scroll label img {width: 18px;height: 18px;margin-bottom: 8px;}
