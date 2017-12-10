@@ -54,6 +54,7 @@ figure em a {border:none;border-bottom;line-height:0.2em;padding:12px 4px;}
 #black-video {background: var(--color-black); height:100%;width:100%;display: inline-block; }
 
 /* Covers */
+#cita h4 {line-height: 1.2em;font-weight:lighter;}
 #masters {text-align: center;}
 #masters h5 {line-height: 1.6em;padding:0 2% 0 2%;font-weight:lighter;}
 #masters em u a {background-color:transparent;color:var(--color-softgrey);font-weight: normal ;border:thin solid var(--color-softgrey);margin-bottom:42px;}
