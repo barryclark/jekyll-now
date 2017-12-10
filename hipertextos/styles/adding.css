@@ -61,7 +61,7 @@ figure em a {border:none;border-bottom;line-height:0.2em;padding:12px 4px;}
 #masters h5 {line-height: 1.6em;padding:0 2% 0 2%;font-weight:lighter;}
 #masters em u a {background-color:transparent;color:var(--color-softgrey);font-weight: normal ;border:thin solid var(--color-softgrey);margin-bottom:42px;}
 #masters em u a:hover {box-shadow:0 2px 5px rgba(0,0,0,.07);}
-#go-down em a, #go-footer em a {
+#go-down em a, #go-next em a {
     background:transparent;
     border: transparent ;
     font-size: 80px;
@@ -72,8 +72,13 @@ figure em a {border:none;border-bottom;line-height:0.2em;padding:12px 4px;}
     text-align: right;
 }
 
-#go-down em a:hover, #go-footer em a:hover {
+#go-down em a:hover {
     text-decoration: none;color:#fafafa;
+    border: transparent;
+    text-align: right;
+}
+#go-next em a:hover {
+    text-decoration: none;color:var(--color-hardgrey);
     border: transparent;
     text-align: right;
 }
