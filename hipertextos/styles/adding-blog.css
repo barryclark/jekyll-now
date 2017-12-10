@@ -29,8 +29,8 @@ figure iframe {width:100%;}
 #go {background:var(--color-orange);}
 
 /* nav Scroll */
-.nav-scroll label {font-size: 11px;line-height: 12px;padding: 10px;font-weight: normal;}
-.nav-scroll label img {width: 18px;height: 18px;margin-bottom: 8px;}
+.nav-scroll {}
+.nav-scroll label img {width: 22px;height: 22px;}
 .nav-scroll label:hover {border:thin solid transparent;color:var(--color-black);text-decoration:none;}
 
 /* Category Agenda */
