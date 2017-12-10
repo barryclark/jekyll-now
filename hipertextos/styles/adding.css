@@ -1,6 +1,6 @@
 /* by Isard Miralles  ADDING CSS */
 /* ------------------------------------------------------------ Resets */
-#site-nav, nav, #page-header h2, #cita, #masters  {font-family: 'Voltaire';text-transform: uppercase; }
+#site-nav, nav, #page-header h2, #cita, #masters, #cover-links  {font-family: 'Voltaire';text-transform: uppercase; }
 #pre-cover, #post-cover {width:72px; }
 #page-header #pre-cover, #page-header #post-cover {display:inline-block; }
 #post-cover img{transform: rotate(180deg);}
@@ -59,27 +59,10 @@ figure em a {border:none;border-bottom;line-height:0.2em;padding:12px 4px;}
 #masters h5 em {color:var(--color-soft-grey);margin: 0 12px 0 12px }
 #masters {text-align: center;}
 #masters h5 {line-height: 1.6em;padding:0 2% 0 2%;}
-#go-down em a, #go-next em a {
-    background:transparent;
-    border: transparent ;
-    font-size: 80px;
-    height: 80px;
-    width: 80px;
-    transform: rotate(90deg);
-    border-radius: 50%;
-    text-align: right;
-}
-
-#go-down em a:hover {
-    text-decoration: none;color:#fafafa;
-    border: transparent;
-    text-align: right;
-}
-#go-next em a:hover {
-    text-decoration: none;color:var(--color-hardgrey);
-    border: transparent;
-    text-align: right;
-}
+#cover-links a {width:25%;text-decoration: none;}
+#go-down em a, #go-next em a {background:transparent;border: transparent ;font-size: 80px;height: 80px;width: 80px;transform: rotate(90deg);border-radius: 50%;text-align: right;}
+#go-down em a:hover {text-decoration: none;color:#fafafa;border: transparent;text-align: right;}
+#go-next em a:hover {text-decoration: none;color:var(--color-hardgrey);border: transparent;text-align: right;}
 #covers {color: var(--color-grey);}
 #covers img {width: 13%;margin-bottom:1.2em; }
 #covers .train-icon {width: 60px;margin-bottom:.2em;opacity:.42; }
