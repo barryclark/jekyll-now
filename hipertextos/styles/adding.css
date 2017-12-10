@@ -56,7 +56,7 @@ figure em a {border:none;border-bottom;line-height:0.2em;padding:12px 4px;}
 /* Covers */
 #cita h5 {line-height: 1.4em;margin:15px 0 18px 0;}
 #masters h2 {line-height: 1.2em;}
-#masters h5 em {color:var(--color-softgrey);margin: 0 12px 0 12px }
+#masters h5 em {color:var(--color-soft-grey);margin: 0 12px 0 12px }
 #masters {text-align: center;}
 #masters h5 {line-height: 1.6em;padding:0 2% 0 2%;}
 #go-down em a, #go-next em a {
