@@ -8,7 +8,9 @@
 .cover-page #page-main {color:var(--color-hardgrey);background-image: url("/img/texture/creamy.png");background-size:160px 160px;background-repeat: repeat;image-rendering: crisp-edges;}
 .cover-page #page-main h2 {text-align:right;color:var(--color-grey);font-family: 'Voltaire';text-transform:uppercase;}
 .cover-page #page-main h5 {font-family: 'Voltaire';text-transform:uppercase;}
-.cover-page  #coffee {  background: var(--color-background);background: -webkit-linear-gradient(red, var(--color-background));background: -moz-linear-gradient(red, var(--color-background)); background: linear-gradient(#eee, var(--color-background));}
+#avatar {padding: 8px 12px 0 0;}
+#down-avatar em a {width:100%;}
+
 #repertori h5 strong {}
 #repertori h5 em {color:var(--color-red);padding:6px;}
 #musics .cell-x2 {
