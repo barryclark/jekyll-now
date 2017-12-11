@@ -11,12 +11,12 @@ layout: default
 		<input type="radio" name="layout" id="layout-list" aria-hidden="true" hidden checked>
 
 		{% for post in site.categories[page.category] %}
-    	<div id="layout-result" class="anm-scaleUp delay-1000">
-	    		<figure id="post-date" class="cell-x2">
+    	<div id="layout-result">
+	    		<figure id="post-date" class="cell-x2 anm-scaleUp delay-800">
 					<h1>{{ post.day }}</h1>				
 					<h5>{{ post.month }}</h5>
 				</figure>
-      		<article id="post-agenda" class="thumb-9">
+      		<article id="post-agenda" class="thumb-9 anm-scaleDownUp delay-900">
 					<h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
 					<div>
 						<p>{{ post.excerpt }}</p>
