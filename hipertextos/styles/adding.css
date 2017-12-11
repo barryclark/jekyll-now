@@ -98,6 +98,7 @@ img.dialog-svg {width:120px;height:150px;}
 
 /* Footer */ 
 #page-footer {background:#222;color:#999;}
+#go-up {transform: rotate(90deg);font-size:30px;}
 #page-footer a {color: var(--color-flink);text-decoration:none;}
 #page-footer a:hover {color: var(--color-hflink)!important;border-color: var(--color-hflink);}
 #page-footer a:visited {color: var(--color-vflink);border-color: var(--color-vflink);}
