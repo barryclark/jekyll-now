@@ -1,9 +1,11 @@
 /* by Isard Miralles  ADDING EXTRA to Blog - CSS */
 /* ------------------------------------------------------------ Resets */
 
-#post-header {background-image: url("/img/texture/doodles.png");background-size:400px 400px;background-repeat: repeat;image-rendering: crisp-edges;}
-
+#post-header {background-image: url("/img/texture/h_stone.png");background-size:400px 400px;background-repeat: repeat;text-transform:uppercase;}
+#post-header, h3 a, #post-date h5 {font-family: 'Voltaire';}
 /* Posts */
+h3 a {color:var(--color-softblack);}
+h3 a:hover {text-decoration:none;}
 #post-title, #date, #post-share {text-align: center;}
 #post-video, #post-download, #post-share, #post-header, #post-agenda, #post-date, #post-blog {border:none;}
 .post em u a { padding: 6px;border: 2px solid var(--color-grey);color: var(--color-grey);border-radius: 40px;width: 180px;margin-top: 18px;}
