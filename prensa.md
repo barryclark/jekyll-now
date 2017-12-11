@@ -1,11 +1,9 @@
 ---
-layout: default
+layout: prensa
 title: Prensa
 permalink: /prensa/
 
 ---
-
-{% include partials/navigation/nav-about.html %}
 
 ## Zona de Prensa
 

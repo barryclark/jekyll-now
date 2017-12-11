@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+
+    {% include meta.html %}
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/styles/screen.css" />
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/styles/components.css" />
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/styles/helpers.css" />
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/styles/adding.css" />
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/styles/adding-about.css" />
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/styles/anime.css" />    
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+	<link href="https://fonts.googleapis.com/css?family=Voltaire" rel="stylesheet">
+
+    {% include favicons.html %}
+
+  </head>
+
+  <body>
+	<!-- Page content -->
+	<div class="page cover-page" id="page">
+	{% include partials/navigation/nav-about.html %}
+		<header id="page-header" class="about-cover anm-moveFromTop">
+			<div>
+				<h1 class="anm-moveFromBottomFade delay-100">{{ page.title }} Band</h1>
+			</div>
+		</header>
+		<nav id="page-nav" class="nav-scroll">
+			<div>
+				<a href="#info" title="Text" class="anm-zoomIn delay-600"><img src="{{ site.baseurl }}/hipertextos/svg/telephone.svg"><br>Som</a>
+				<a href="#band" title="Forms" class="anm-zoomIn delay-700"><img src="{{ site.baseurl }}/hipertextos/svg/musics.svg"><br>Músics</a>
+				<a href="#prensa" title="Tables" class="anm-zoomIn delay-800"><img src="{{ site.baseurl }}/hipertextos/svg/prensa.svg"><br>Prensa</a>
+				<a href="#reper" title="Navigation" class="anm-zoomIn delay-900"><img src="{{ site.baseurl }}/hipertextos/svg/reper.svg"><br>Repertori</a>
+				<a href="#web-credits" title="Fem un cafè?" class="anm-zoomIn delay-1000"><img src="{{ site.baseurl }}/hipertextos/svg/credits.svg"><br>Credits</a>
+			 </div>
+		</nav>
+		<main id="page-main" class="anm-fadeIn delay-900 slow">
+			<div>
+				<section id="press-zone">
+					{{ content }}
+				</section>
+				<hr>									
+			</div>
+		</main>
+		{% include partials/footer.html %}
+	</div><!-- /#page -->
+	
+		<!-- Out of page
+		================================================== -->	
+    {% include partials/dialog.html %}  
+    {% include partials/rights.html %}  
+
+    <!-- Scripts
+    ================================================== -->
+  	<script src="{{ site.baseurl }}/hipertextos/js/jquery.js"></script>
+  	<script src="{{ site.baseurl }}/hipertextos/js/anime.js"></script>
+  	<script src="{{ site.baseurl }}/hipertextos/js/icons.js"></script>
+  </body>
+</html>
