@@ -11,7 +11,7 @@ layout: default
 		<input type="radio" name="layout" id="layout-list" aria-hidden="true" hidden checked>
 
 		{% for post in site.categories[page.category] %}
-    	<div id="layout-result" class="anm-scaleUp delay-800">
+    	<div id="layout-result" class="anm-scaleUp delay-1000">
 	    		<figure id="post-date" class="cell-x2">
 					<h1>{{ post.day }}</h1>				
 					<h5>{{ post.month }}</h5>
@@ -21,7 +21,7 @@ layout: default
 					<div>
 						<p>{{ post.excerpt }}</p>
 	      			<strong>
-	      				<em><a href="{{ site.url }}/{{ post.img }}" data-lightbox="roadtrip" class="anm-zoomIn delay-900"><i class="icon-file"></i> Cartell</a></em>
+	      				<em><a href="{{ site.url }}/{{ post.img }}" data-lightbox="roadtrip" class="anm-zoomIn delay-1000"><i class="icon-file"></i> Cartell</a></em>
 	      				<em><a href="{{ site.baseurl }}{{ post.url }}#disqus_thread" class="anm-zoomIn delay-1000"> Comentaris</a></em>
 	      			</strong>
 					</div>
@@ -33,7 +33,7 @@ layout: default
 	</div>
 	<em><hr></em>
 	<div>
-			<section id="follows" class="anm-moveFromBottomFade delay-1500">
+			<section id="follows" class="anm-fadeIn delay-2000">
 			{% include partials/suscribe.html %}
     		</section>
 	</div> 
