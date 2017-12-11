@@ -28,22 +28,27 @@
 	{% include partials/navigation/nav-about.html %}
 		<header id="page-header" class="about-cover anm-moveFromTop">
 			<div>
-				<h1 class="anm-moveFromBottomFade delay-100">{{ page.title }} Band</h1>
+				<h1 class="anm-moveFromBottomFade delay-100">{{ page.title }}</h1>
 			</div>
 		</header>
-		<nav id="page-nav" class="nav-scroll">
-			<div>
-				<a href="#info" title="Text" class="anm-zoomIn delay-600"><img src="{{ site.baseurl }}/hipertextos/svg/telephone.svg"><br>Som</a>
-				<a href="#band" title="Forms" class="anm-zoomIn delay-700"><img src="{{ site.baseurl }}/hipertextos/svg/musics.svg"><br>Músics</a>
-				<a href="#prensa" title="Tables" class="anm-zoomIn delay-800"><img src="{{ site.baseurl }}/hipertextos/svg/prensa.svg"><br>Prensa</a>
-				<a href="#reper" title="Navigation" class="anm-zoomIn delay-900"><img src="{{ site.baseurl }}/hipertextos/svg/reper.svg"><br>Repertori</a>
-				<a href="#web-credits" title="Fem un cafè?" class="anm-zoomIn delay-1000"><img src="{{ site.baseurl }}/hipertextos/svg/credits.svg"><br>Credits</a>
-			 </div>
-		</nav>
 		<main id="page-main" class="anm-fadeIn delay-900 slow">
 			<div>
 				<section id="press-zone">
 					{{ content }}
+				</section>
+				<section id="">
+					<div class="biobuttons">
+						<em><a href="mailto:oldsteambcn@gmail.com" title="Envia'ns un correu">oldsteambcn@gmail.com</a></em>
+						<em><a href="tel:+34 658973617" title="Truca'ns">Trucar al 658973617</a></em>
+						<em><a href="xxx/vcard" title="Desar my vCard" download="oldsteam.vcard">Desar Contacte vCard</a></em>
+					</div>
+					<hr>
+					<div class="content">
+						<h6>O bé a través de les Xarxes</h6>
+						<div id="deep-buttons" class="button-centered s filled white">
+    						{% include svg-icons.html %}
+						</div>
+					</div>
 				</section>
 				<hr>									
 			</div>
