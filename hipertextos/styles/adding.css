@@ -1,6 +1,6 @@
 /* by Isard Miralles  ADDING CSS */
 /* ------------------------------------------------------------ Resets */
-.charge {position:absolute;left:middle;top:middle;}
+.charge {position:absolute;left:50%;top:25%;}
 #site-nav, nav, #page-header h1, #cita, #masters, #cover-links  {font-family: 'Voltaire';text-transform: uppercase; }
 #pre-cover, #post-cover {width:72px; }
 #page-header #pre-cover, #page-header #post-cover {display:inline-block; }
