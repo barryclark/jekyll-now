@@ -12,11 +12,11 @@ layout: default
 
 		{% for post in site.categories[page.category] %}
     	<div id="layout-result">
-	    		<figure id="post-date" class="cell-x2 anm-scaleUp delay-800">
+	    		<figure id="post-date" class="cell-x2 anm-moveFromLeftFade delay-800">
 					<h1>{{ post.day }}</h1>				
 					<h5>{{ post.month }}</h5>
 				</figure>
-      		<article id="post-agenda" class="thumb-9 anm-scaleUpDown delay-900">
+      		<article id="post-agenda" class="thumb-9 anm-moveFromBottomFade delay-800">
 					<h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
 					<div>
 						<p>{{ post.excerpt }}</p>
