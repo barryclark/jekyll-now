@@ -98,6 +98,9 @@ img.dialog-svg {width:120px;height:150px;}
 
 /* Footer */ 
 #page-footer {background:#222;color:#999;}
+#page-footer a {color: var(--color-flink);}
+#page-footer a:hover {color: var(--color-hflink);border-color: var(--color-hflink);}
+#page-footer a:visited {color: var(--color-vflink);border-color: var(--color-vflink);}
 #page-footer em small a {border: thin solid #222;}
 #web-credits {opacity:.75;background-color:#fafafa;border-bottom: thin solid var(--color-softgrey);border-top:thin solid var(--color-softgrey);}
 #web-credits label svg {max-width:72px;margin:10px;opacity:.6;border-radius:50%;}
