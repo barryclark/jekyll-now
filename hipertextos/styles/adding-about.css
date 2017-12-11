@@ -10,10 +10,12 @@
 .cover-page #page-main h5 {font-family: 'Voltaire';text-transform:uppercase;}
 #avatar {border-radius: 4px;}
 #down-avatar em a {width:100%;}
+#down-avatar em a:hover {color:var(--color-link);border-color:var(--color-link);text-decoration:none;border-radius:50px 50px;}
 #down-avatar, #down-info {margin-top:12px;}
 #down-info { padding-left:16px;}
 #down-info p {line-height:1.65em;}
-#down-info a {color:var(--color-hardgrey);}
+#down-info a {color:var(--color-hardgrey);text-decoration:none;}
+#down-info a:hover {color:var(--color-link);}
 #repertori h5 strong {}
 #repertori h5 em {color:var(--color-red);padding:6px;}
 #musics .cell-x2 {
