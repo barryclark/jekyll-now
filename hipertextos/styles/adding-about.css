@@ -8,9 +8,10 @@
 .cover-page #page-main {color:var(--color-hardgrey);background-image: url("/img/texture/creamy.png");background-size:160px 160px;background-repeat: repeat;image-rendering: crisp-edges;}
 .cover-page #page-main h2 {text-align:right;color:var(--color-grey);font-family: 'Voltaire';text-transform:uppercase;}
 .cover-page #page-main h5 {font-family: 'Voltaire';text-transform:uppercase;}
-#avatar {}
+#avatar {border-radius: 4px;}
 #down-avatar em a {width:100%;}
-
+#down-avatar, #down-info {margin-top:12px;}
+#down-info { padding-left:16px;}
 #repertori h5 strong {}
 #repertori h5 em {color:var(--color-red);padding:6px;}
 #musics .cell-x2 {
