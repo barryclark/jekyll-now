@@ -5,18 +5,18 @@ comments: true
 
   	{% include partials/navigation/nav-article.html %}
     <main id="page-main" role="main">
-		<header id="post-header" class="anm-moveFromLeft delay-100">
+		<header id="post-header" class="anm-moveFromTop delay-100">
 				<h1 id="post-title" class="anm-moveFromBottomFade delay-1000">{{ page.title }}</h1>
 		</header>
 		<div>
 			<article id="post-blog" class="post anm-fadeIn delay-1000">
 				<div id="entry">
 					<figure id="post-img">
-						<a href="../{{ page.img }}" data-lightbox="roadtrip"><img src="../{{ page.img }}"></a>
+						<a href="../{{ page.img }}" data-lightbox="roadtrip"><img src="../{{ page.img }}" rel="Cartell de Old Steam"></a>
 					</figure>
 	    			{{ content }}
 	    			<figure>
-						<a href="../assets/print/foto1.jpg" data-lightbox="roadtrip"><img src="../assets/print/foto1.jpg"></a>
+						<a href="../assets/print/foto1.jpg" data-lightbox="roadtrip"><img src="../assets/print/foto1.jpg" rel="Ampliació del cartell de Old Steam"></a>
 					</figure>
 				</div>
 				<em><hr></em>

@@ -11,7 +11,7 @@ permalink: /media/
 	{% assign image_files = site.static_files | where: "image", true %}
 	{% for image in image_files %}
 	<article class="imagens anm-zoomIn delay-3000">
-    	<a href="{{ site.baseurl }}/assets/fotos/{{ image.name }}" data-lightbox="roadtrip"><img src="{{ site.baseurl }}/assets/fotos/{{ image.name }}" alt="{{ image.basename }}"></a>
+    	<a href="{{ site.baseurl }}/assets/fotos/{{ image.name }}" data-lightbox="roadtrip"><img src="{{ site.baseurl }}/assets/fotos/{{ image.name }}" alt="Cartells i fotografíes de la banda Old Steam de Barcelona"></a>
 	</article>
 	{% endfor %}
 			</section>
