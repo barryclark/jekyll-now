@@ -1,6 +1,6 @@
 /* by Isard Miralles  ADDING CSS */
 /* ------------------------------------------------------------ Resets */
-#site-nav, nav, #page-header h2, #cita, #masters, #cover-links  {font-family: 'Voltaire';text-transform: uppercase; }
+#site-nav, nav, #page-header h1, #cita, #masters, #cover-links  {font-family: 'Voltaire';text-transform: uppercase; }
 #pre-cover, #post-cover {width:72px; }
 #page-header #pre-cover, #page-header #post-cover {display:inline-block; }
 #post-cover img{transform: rotate(180deg);}
