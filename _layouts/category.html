@@ -12,17 +12,17 @@ layout: default
 
 		{% for post in site.categories[page.category] %}
     	<div id="layout-result">
-	    		<figure id="post-date" class="cell-x2 anm-zoomIn delay-900">
+	    		<figure id="post-date" class="cell-x2 anm-zoomIn delay-1000">
 					<h1>{{ post.day }}</h1>				
 					<h5>{{ post.month }}</h5>
 				</figure>
-      		<article id="post-agenda" class="thumb-9 anm-moveFromBottomFade delay-900">
+      		<article id="post-agenda" class="thumb-9 anm-moveFromBottomFade delay-1000">
 					<h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
 					<div>
 						<p>{{ post.excerpt }}</p>
 	      			<strong>
-	      				<em><a href="{{ site.url }}/{{ post.img }}" data-lightbox="roadtrip" class="anm-zoomIn delay-1000"><i class="icon-file"></i> Cartell</a></em>
-	      				<em><a href="{{ site.baseurl }}{{ post.url }}#disqus_thread" class="anm-zoomIn delay-1000"> Comentaris</a></em>
+	      				<em><a href="{{ site.url }}/{{ post.img }}" data-lightbox="roadtrip" class="anm-zoomIn delay-1500"><i class="icon-file"></i> Cartell</a></em>
+	      				<em><a href="{{ site.baseurl }}{{ post.url }}#disqus_thread" class="anm-zoomIn delay-1500"> Comentaris</a></em>
 	      			</strong>
 					</div>
     	  			<nav><a href="{{ site.baseurl }}{{ post.url }}" class="read-more"><b>[+]</b></a></nav>
