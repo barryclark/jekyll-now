@@ -33,6 +33,7 @@ figure iframe {width:100%;}
 #tw {background:var(--color-green);}
 #fb {background:var(--color-blue);}
 #go {background:var(--color-orange);}
+#post-agenda div p i svg {width:14px;color:var(--color-grey);}
 
 /* nav Scroll */
 .nav-scroll {}
