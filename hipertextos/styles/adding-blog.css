@@ -3,7 +3,7 @@
 
 .agenda#post-header {background-image: url("/img/texture/h_stone.png");background-size:400px 400px;background-repeat: repeat;text-transform:uppercase;}
 #post-header, h3 a, #post-date h5 {font-family: 'Voltaire';}
-.img-bolo#back-header {-webkit-filter:blur(32px);filter:blur(32px);height:100%;width:100%;opacity:.75;object-fit: cover;
+.img-bolo#back-header {-webkit-filter:blur(32px);filter:blur(32px);height:100%;width:100%;object-fit: cover;
     background-position:;position: top center;position:absolute;top:0;left:0;background-attachment: fixed;background-size: cover;background-repeat: no-repeat;overflow: hidden;text-align: center; }
 /* Posts */
 h3 a {color:var(--color-softblack);}
