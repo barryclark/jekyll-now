@@ -7,7 +7,7 @@
 h3 a {color:var(--color-softblack);}
 h3 a:hover {text-decoration:none;}
 #post-title, #date, #post-share {text-align: center;}
-#post-video, #post-download, #post-share, #post-header, #post-agenda, #post-date, #post-blog {border:none;}
+#post-video, #post-download, #post-share, #post-header, #post-agenda, #post-date, #post-blog, #page-date {border:none;}
 .post em u a { padding: 6px;border: 2px solid var(--color-grey);color: var(--color-grey);border-radius: 40px;width: 180px;margin-top: 18px;}
 .post em u svg { width: 18px;}
 #post-header {border-bottom: 9px solid var(--color-black);}
@@ -26,7 +26,10 @@ figure iframe {width:100%;}
 #ical h1 {font-weight: lighter;margin-bottom:6px;font-size:3.2em;}
 #ical p {font-size:0.8em;}
 #post-content {color:var(--color-black);}
-
+#page-date #post-date {border-bottom:thin solid #eee;margin-bottom:3%;}
+#page-date #post-date h1 {font-size: 6.2em;margin:3%;}
+#page-date #post-date h5 {font-size: 1.5em;margin:5%;}
+#date-img {padding-right:3%;margin-top:5px;}
 #tw {background:var(--color-green);}
 #fb {background:var(--color-blue);}
 #go {background:var(--color-orange);}

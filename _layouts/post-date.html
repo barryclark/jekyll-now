@@ -15,7 +15,7 @@ comments: true
 						<h1>{{ page.day }}</h1>
 						<h5>{{ page.month }}</h5>
 					</figure>
-					<figure id="date-img" class="thumb-6">
+					<figure id="date-img" class="thumb-4 pushed-2">
 						<a href="../{{ page.img }}" data-lightbox="roadtrip"><img src="../{{ page.img }}" alt="Ampliació del cartell de Old Steam"></a>
 					</figure>
 					<div id="post-info" class="thumb-6">
@@ -27,8 +27,9 @@ comments: true
 						Ciutat: <b>{{ page.city }}</b><br>
 						Preu: <b>{{ page.price }}</b><br>
 						</p>
+						<hr>
+		    			<div id="post-content">{{ content }}</div>
 					</div>
-	    			<div id="post-content">{{ content }}</div>
 
 				</div>
 				<em><hr></em>
