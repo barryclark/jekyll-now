@@ -1,7 +1,7 @@
 /* by Isard Miralles  ADDING EXTRA to Blog - CSS */
 /* ------------------------------------------------------------ Resets */
 
-#post-header {background-image: url("/img/texture/h_stone.png");background-size:400px 400px;background-repeat: repeat;text-transform:uppercase;}
+.agenda#post-header {background-image: url("/img/texture/h_stone.png");background-size:400px 400px;background-repeat: repeat;text-transform:uppercase;}
 #post-header, h3 a, #post-date h5 {font-family: 'Voltaire';}
 /* Posts */
 h3 a {color:var(--color-softblack);}
