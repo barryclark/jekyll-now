@@ -19,7 +19,12 @@ layout: default
       		<article id="post-agenda" class="thumb-9 anm-moveFromBottomFade delay-1000">
 					<h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
 					<div>
-						<p>{{ post.excerpt }}</p>
+						<p>Hora: <b>{{ post.hora }}</b><br>
+						local: <b>{{ post.local }}</b><br>
+						Ciutat: <b>{{ post.city }}</b><br>
+						Dia: <b>{{ post.day }} de {{ post.month }} {{ post.year }}</b><br>
+						Preu: <b>{{ post.price }}</b><br>
+						</p>
 	      			<strong>
 	      				<em><a href="{{ site.url }}/{{ post.img }}" data-lightbox="roadtrip" class="anm-zoomIn delay-1500"><i class="icon-file"></i> Cartell</a></em>
 	      				<em><a href="{{ site.baseurl }}{{ post.url }}#disqus_thread" class="anm-zoomIn delay-1500"> Comentaris</a></em>
