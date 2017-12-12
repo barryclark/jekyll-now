@@ -48,7 +48,7 @@ figure iframe {width:100%;}
 #post-date h5 {font-weight: normal;font-size: 0.85em;}
 #link-image {float: right;font-size:17px;border-bottom:thin solid currentcolor;color:var(--color-hardgrey);text-decoration:none;}
 #link-image:hover {border-bottom:thin solid currentcolor;color:var(--color-link);}
-#post-agenda strong em a {padding:8px;margin-top:26px;font-size:18px;font-weight: normal;border-color:var(--color-softgrey);color:var(--color-grey);border-radius:3px;margin-right:3px;}
+#post-agenda strong em a {padding:6px 12px 6px 12px;margin-top:12px;font-size:17px;font-weight: normal;border-color:var(--color-grey);color:var(--color-grey);border-radius:3px;margin-right:3px;}
 #post-agenda strong em a:hover {color:var(--color-link);border-color:var(--color-link);text-decoration:none;}
 #post-agenda strong em svg {width:16px;margin-left:1px;}
 
