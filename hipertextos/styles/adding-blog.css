@@ -25,6 +25,7 @@ figure iframe {width:100%;}
 #ical a {text-decoration:none;color:var(--color-red);width:80px;float:right;position:absolute;right:0;top:0;text-align: center;}
 #ical h1 {font-weight: lighter;margin-bottom:6px;font-size:3.2em;}
 #ical p {font-size:0.8em;}
+#post-content {color:var(--color-black);}
 
 #tw {background:var(--color-green);}
 #fb {background:var(--color-blue);}
