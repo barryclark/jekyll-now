@@ -1,0 +1,213 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'D:\\software\\nodejs\\node.exe',
+1 verbose cli   'C:\\Users\\Administrator\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'Jekyll',
+1 verbose cli   'and',
+1 verbose cli   'plug-ins' ]
+2 info using npm@4.0.2
+3 info using node@v8.9.1
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData Jekyll
+8 silly fetchPackageMetaData and
+9 silly fetchPackageMetaData plug-ins
+10 silly fetchNamedPackageData Jekyll
+11 silly mapToRegistry name Jekyll
+12 silly mapToRegistry using default registry
+13 silly mapToRegistry registry http://registry.npm.taobao.org/
+14 silly mapToRegistry data Result {
+14 silly mapToRegistry   raw: 'Jekyll',
+14 silly mapToRegistry   scope: null,
+14 silly mapToRegistry   escapedName: 'Jekyll',
+14 silly mapToRegistry   name: 'Jekyll',
+14 silly mapToRegistry   rawSpec: '',
+14 silly mapToRegistry   spec: 'latest',
+14 silly mapToRegistry   type: 'tag' }
+15 silly mapToRegistry uri http://registry.npm.taobao.org/Jekyll
+16 silly fetchNamedPackageData and
+17 silly mapToRegistry name and
+18 silly mapToRegistry using default registry
+19 silly mapToRegistry registry http://registry.npm.taobao.org/
+20 silly mapToRegistry data Result {
+20 silly mapToRegistry   raw: 'and',
+20 silly mapToRegistry   scope: null,
+20 silly mapToRegistry   escapedName: 'and',
+20 silly mapToRegistry   name: 'and',
+20 silly mapToRegistry   rawSpec: '',
+20 silly mapToRegistry   spec: 'latest',
+20 silly mapToRegistry   type: 'tag' }
+21 silly mapToRegistry uri http://registry.npm.taobao.org/and
+22 silly fetchNamedPackageData plug-ins
+23 silly mapToRegistry name plug-ins
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry http://registry.npm.taobao.org/
+26 silly mapToRegistry data Result {
+26 silly mapToRegistry   raw: 'plug-ins',
+26 silly mapToRegistry   scope: null,
+26 silly mapToRegistry   escapedName: 'plug-ins',
+26 silly mapToRegistry   name: 'plug-ins',
+26 silly mapToRegistry   rawSpec: '',
+26 silly mapToRegistry   spec: 'latest',
+26 silly mapToRegistry   type: 'tag' }
+27 silly mapToRegistry uri http://registry.npm.taobao.org/plug-ins
+28 verbose request uri http://registry.npm.taobao.org/Jekyll
+29 verbose request no auth needed
+30 info attempt registry request try #1 at 15:02:13
+31 verbose request id 3e13b352f94f55ef
+32 http request GET http://registry.npm.taobao.org/Jekyll
+33 verbose request uri http://registry.npm.taobao.org/plug-ins
+34 verbose request no auth needed
+35 info attempt registry request try #1 at 15:02:13
+36 http request GET http://registry.npm.taobao.org/plug-ins
+37 verbose request uri http://registry.npm.taobao.org/and
+38 verbose request no auth needed
+39 info attempt registry request try #1 at 15:02:13
+40 http request GET http://registry.npm.taobao.org/and
+41 http 200 http://registry.npm.taobao.org/and
+42 verbose headers { server: 'nginx/1.4.6 (Ubuntu)',
+42 verbose headers   date: 'Wed, 13 Dec 2017 07:02:15 GMT',
+42 verbose headers   'content-type': 'application/json; charset=utf-8',
+42 verbose headers   'transfer-encoding': 'chunked',
+42 verbose headers   connection: 'keep-alive',
+42 verbose headers   'x-current-requests': '1',
+42 verbose headers   'x-readtime': '15',
+42 verbose headers   'content-encoding': 'gzip' }
+43 silly get cb [ 200,
+43 silly get   { server: 'nginx/1.4.6 (Ubuntu)',
+43 silly get     date: 'Wed, 13 Dec 2017 07:02:15 GMT',
+43 silly get     'content-type': 'application/json; charset=utf-8',
+43 silly get     'transfer-encoding': 'chunked',
+43 silly get     connection: 'keep-alive',
+43 silly get     'x-current-requests': '1',
+43 silly get     'x-readtime': '15',
+43 silly get     'content-encoding': 'gzip' } ]
+44 verbose get saving and to C:\Users\Administrator\AppData\Roaming\npm-cache\registry.npm.taobao.org\and\.cache.json
+45 verbose correctMkdir C:\Users\Administrator\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+46 http 404 http://registry.npm.taobao.org/plug-ins
+47 verbose headers { 'content-type': 'application/json',
+47 verbose headers   'cache-control': 'max-age=0',
+47 verbose headers   'content-length': '2',
+47 verbose headers   'accept-ranges': 'bytes',
+47 verbose headers   date: 'Wed, 13 Dec 2017 07:02:17 GMT',
+47 verbose headers   via: '1.1 varnish',
+47 verbose headers   connection: 'close',
+47 verbose headers   'x-served-by': 'cache-hnd18742-HND',
+47 verbose headers   'x-cache': 'MISS',
+47 verbose headers   'x-cache-hits': '0',
+47 verbose headers   'x-timer': 'S1513148537.707218,VS0,VE868',
+47 verbose headers   vary: 'Accept-Encoding' }
+48 silly get cb [ 404,
+48 silly get   { 'content-type': 'application/json',
+48 silly get     'cache-control': 'max-age=0',
+48 silly get     'content-length': '2',
+48 silly get     'accept-ranges': 'bytes',
+48 silly get     date: 'Wed, 13 Dec 2017 07:02:17 GMT',
+48 silly get     via: '1.1 varnish',
+48 silly get     connection: 'close',
+48 silly get     'x-served-by': 'cache-hnd18742-HND',
+48 silly get     'x-cache': 'MISS',
+48 silly get     'x-cache-hits': '0',
+48 silly get     'x-timer': 'S1513148537.707218,VS0,VE868',
+48 silly get     vary: 'Accept-Encoding' } ]
+49 silly fetchPackageMetaData Error: Registry returned 404 for GET on http://registry.npm.taobao.org/plug-ins
+49 silly fetchPackageMetaData     at makeError (C:\Users\Administrator\AppData\Roaming\npm\node_modules\npm\node_modules\npm-registry-client\lib\request.js:302:12)
+49 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\npm\node_modules\npm-registry-client\lib\request.js:280:14)
+49 silly fetchPackageMetaData     at Request._callback (C:\Users\Administrator\AppData\Roaming\npm\node_modules\npm\node_modules\npm-registry-client\lib\request.js:210:14)
+49 silly fetchPackageMetaData     at Request.self.callback (C:\Users\Administrator\AppData\Roaming\npm\node_modules\npm\node_modules\request\request.js:186:22)
+49 silly fetchPackageMetaData     at emitTwo (events.js:126:13)
+49 silly fetchPackageMetaData     at Request.emit (events.js:214:7)
+49 silly fetchPackageMetaData     at Request.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\npm\node_modules\request\request.js:1081:10)
+49 silly fetchPackageMetaData     at emitOne (events.js:116:13)
+49 silly fetchPackageMetaData     at Request.emit (events.js:211:7)
+49 silly fetchPackageMetaData     at IncomingMessage.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\npm\node_modules\request\request.js:1001:12)
+49 silly fetchPackageMetaData  error for plug-ins { Error: Registry returned 404 for GET on http://registry.npm.taobao.org/plug-ins
+49 silly fetchPackageMetaData     at makeError (C:\Users\Administrator\AppData\Roaming\npm\node_modules\npm\node_modules\npm-registry-client\lib\request.js:302:12)
+49 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\npm\node_modules\npm-registry-client\lib\request.js:280:14)
+49 silly fetchPackageMetaData     at Request._callback (C:\Users\Administrator\AppData\Roaming\npm\node_modules\npm\node_modules\npm-registry-client\lib\request.js:210:14)
+49 silly fetchPackageMetaData     at Request.self.callback (C:\Users\Administrator\AppData\Roaming\npm\node_modules\npm\node_modules\request\request.js:186:22)
+49 silly fetchPackageMetaData     at emitTwo (events.js:126:13)
+49 silly fetchPackageMetaData     at Request.emit (events.js:214:7)
+49 silly fetchPackageMetaData     at Request.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\npm\node_modules\request\request.js:1081:10)
+49 silly fetchPackageMetaData     at emitOne (events.js:116:13)
+49 silly fetchPackageMetaData     at Request.emit (events.js:211:7)
+49 silly fetchPackageMetaData     at IncomingMessage.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\npm\node_modules\request\request.js:1001:12) pkgid: 'plug-ins', statusCode: 404, code: 'E404' }
+50 http 404 http://registry.npm.taobao.org/Jekyll
+51 verbose headers { 'content-type': 'application/json',
+51 verbose headers   'cache-control': 'max-age=0',
+51 verbose headers   'content-length': '2',
+51 verbose headers   'accept-ranges': 'bytes',
+51 verbose headers   date: 'Wed, 13 Dec 2017 07:02:17 GMT',
+51 verbose headers   via: '1.1 varnish',
+51 verbose headers   connection: 'close',
+51 verbose headers   'x-served-by': 'cache-hnd18736-HND',
+51 verbose headers   'x-cache': 'MISS',
+51 verbose headers   'x-cache-hits': '0',
+51 verbose headers   'x-timer': 'S1513148536.226258,VS0,VE1550',
+51 verbose headers   vary: 'Accept-Encoding' }
+52 silly get cb [ 404,
+52 silly get   { 'content-type': 'application/json',
+52 silly get     'cache-control': 'max-age=0',
+52 silly get     'content-length': '2',
+52 silly get     'accept-ranges': 'bytes',
+52 silly get     date: 'Wed, 13 Dec 2017 07:02:17 GMT',
+52 silly get     via: '1.1 varnish',
+52 silly get     connection: 'close',
+52 silly get     'x-served-by': 'cache-hnd18736-HND',
+52 silly get     'x-cache': 'MISS',
+52 silly get     'x-cache-hits': '0',
+52 silly get     'x-timer': 'S1513148536.226258,VS0,VE1550',
+52 silly get     vary: 'Accept-Encoding' } ]
+53 silly fetchPackageMetaData Error: Registry returned 404 for GET on http://registry.npm.taobao.org/Jekyll
+53 silly fetchPackageMetaData     at makeError (C:\Users\Administrator\AppData\Roaming\npm\node_modules\npm\node_modules\npm-registry-client\lib\request.js:302:12)
+53 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\npm\node_modules\npm-registry-client\lib\request.js:280:14)
+53 silly fetchPackageMetaData     at Request._callback (C:\Users\Administrator\AppData\Roaming\npm\node_modules\npm\node_modules\npm-registry-client\lib\request.js:210:14)
+53 silly fetchPackageMetaData     at Request.self.callback (C:\Users\Administrator\AppData\Roaming\npm\node_modules\npm\node_modules\request\request.js:186:22)
+53 silly fetchPackageMetaData     at emitTwo (events.js:126:13)
+53 silly fetchPackageMetaData     at Request.emit (events.js:214:7)
+53 silly fetchPackageMetaData     at Request.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\npm\node_modules\request\request.js:1081:10)
+53 silly fetchPackageMetaData     at emitOne (events.js:116:13)
+53 silly fetchPackageMetaData     at Request.emit (events.js:211:7)
+53 silly fetchPackageMetaData     at IncomingMessage.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\npm\node_modules\request\request.js:1001:12)
+53 silly fetchPackageMetaData  error for Jekyll { Error: Registry returned 404 for GET on http://registry.npm.taobao.org/Jekyll
+53 silly fetchPackageMetaData     at makeError (C:\Users\Administrator\AppData\Roaming\npm\node_modules\npm\node_modules\npm-registry-client\lib\request.js:302:12)
+53 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\npm\node_modules\npm-registry-client\lib\request.js:280:14)
+53 silly fetchPackageMetaData     at Request._callback (C:\Users\Administrator\AppData\Roaming\npm\node_modules\npm\node_modules\npm-registry-client\lib\request.js:210:14)
+53 silly fetchPackageMetaData     at Request.self.callback (C:\Users\Administrator\AppData\Roaming\npm\node_modules\npm\node_modules\request\request.js:186:22)
+53 silly fetchPackageMetaData     at emitTwo (events.js:126:13)
+53 silly fetchPackageMetaData     at Request.emit (events.js:214:7)
+53 silly fetchPackageMetaData     at Request.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\npm\node_modules\request\request.js:1081:10)
+53 silly fetchPackageMetaData     at emitOne (events.js:116:13)
+53 silly fetchPackageMetaData     at Request.emit (events.js:211:7)
+53 silly fetchPackageMetaData     at IncomingMessage.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\npm\node_modules\request\request.js:1001:12) pkgid: 'Jekyll', statusCode: 404, code: 'E404' }
+54 silly rollbackFailedOptional Starting
+55 silly rollbackFailedOptional Finishing
+56 silly runTopLevelLifecycles Finishing
+57 silly install printInstalled
+58 verbose stack Error: Registry returned 404 for GET on http://registry.npm.taobao.org/plug-ins
+58 verbose stack     at makeError (C:\Users\Administrator\AppData\Roaming\npm\node_modules\npm\node_modules\npm-registry-client\lib\request.js:302:12)
+58 verbose stack     at CachingRegistryClient.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\npm\node_modules\npm-registry-client\lib\request.js:280:14)
+58 verbose stack     at Request._callback (C:\Users\Administrator\AppData\Roaming\npm\node_modules\npm\node_modules\npm-registry-client\lib\request.js:210:14)
+58 verbose stack     at Request.self.callback (C:\Users\Administrator\AppData\Roaming\npm\node_modules\npm\node_modules\request\request.js:186:22)
+58 verbose stack     at emitTwo (events.js:126:13)
+58 verbose stack     at Request.emit (events.js:214:7)
+58 verbose stack     at Request.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\npm\node_modules\request\request.js:1081:10)
+58 verbose stack     at emitOne (events.js:116:13)
+58 verbose stack     at Request.emit (events.js:211:7)
+58 verbose stack     at IncomingMessage.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\npm\node_modules\request\request.js:1001:12)
+59 verbose statusCode 404
+60 verbose pkgid plug-ins
+61 verbose cwd D:\github\dytsun.github.io
+62 error Windows_NT 10.0.15063
+63 error argv "D:\\software\\nodejs\\node.exe" "C:\\Users\\Administrator\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js" "install" "Jekyll" "and" "plug-ins"
+64 error node v8.9.1
+65 error npm  v4.0.2
+66 error code E404
+67 error 404 Registry returned 404 for GET on http://registry.npm.taobao.org/plug-ins
+68 error 404
+69 error 404 'plug-ins' is not in the npm registry.
+70 error 404 You should bug the author to publish it (or use the name yourself!)
+71 error 404 Note that you can also install from a
+72 error 404 tarball, folder, http url, or git url.
+73 verbose exit [ 1, true ]
