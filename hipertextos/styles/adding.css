@@ -68,7 +68,7 @@ figure em a {border:none;border-bottom;line-height:0.2em;padding:12px 4px;}
 #masters h5 {line-height: 1.6em;padding:0 2% 0 2%;font-weight: lighter;}
 #cover-links a {border:2px solid var(--color-grey) ;text-decoration: none;min-width:12%;margin:0 2px 0 2px;}
 #cover-links a:hover {border:2px solid var(--color-link) ;color: var(--color-link) ;}
-#info-seo {color:var(--color-link);}
+#info-seo {background-color:var(--color-link);}
 #info-seo h1 {line-height:1.2em;margin-bottom:0;}
 #info-seo h2 {line-height:1.1em;margin-bottom:0;}
 #go-down em a, #go-next em a {color:rgba(220,190,90,.69);background:transparent;border: transparent ;font-size: 80px;height: 80px;width: 80px;transform: rotate(90deg);border-radius: 50%;text-align: right;}
@@ -125,10 +125,9 @@ img.dialog-svg {width:120px;height:150px;}
 em small #go-up { background:rgba(0,0,0,.1);padding:15px;border-radius:50%; }
 em small #go-up:hover {background:rgba(0,0,0,.3); }
 /* Footer fixed */
-main { margin-bottom: 232px;z-index: 1;background-color: var(--color-white);
-    box-shadow:0 75px 60px rgba(0,0,0,.32);
-}
-#page-footer {position: fixed;box-shadow: inset 0 0 32px rgba(0, 0, 0, .32);bottom: 0px;z-index: -1;width: 100%;}
+main { }
+#page-footer {box-shadow: inset 0 0 32px rgba(0, 0, 0, .32);}
+
 @media (max-width: 1250px) {
    	img.dialog-svg {width:80px!important;height:70px;}
     #coffee .thumb-2 {width: 33.33333%!important;}
