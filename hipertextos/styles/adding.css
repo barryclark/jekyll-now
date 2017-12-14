@@ -128,10 +128,8 @@ em small #go-up:hover {background:transparent; }
 main { }
 #page-footer {padding-top:0;}
 
-@media (max-width: 1250px) {
+@media (max-width: 1250px) {#masters h5, #cita h5  {font-size:20px!important;}
    	img.dialog-svg {width:80px!important;height:70px;}
-    #coffee .thumb-2 {width: 33.33333%!important;}
-    #coffee .pushed-5 {margin-left:33.33333%!important;}
     #covers { text-rendering: optimizeLegibility;}
     #covers article h4{font-size:95%;}
     #covers article h5{font-size:18px;}
@@ -139,17 +137,13 @@ main { }
     #covers article p em{font-size:15px!important;letter-spacing: 0.001em;}
     .thumb-5, .thumb-6 {width: 100%;}
     strong em a {font-size: 16px;}
-    aside.thumb-3 {margin-top:1.em;}
-    aside.thumb-3 a {font-size:18px;}
-    aside.thumb-3 a svg {width:23px;}
-    aside.thumb-3 p {margin:1em 0 1em 0;border-bottom: thin solid #eee;}
 }
-@media (max-width: 1242px) {
+@media (max-width: 1242px) {  #masters h5, #cita h5  {font-size:18px!important;}
 	#page-header.cover {background-image: url("/img/home_b.jpg");background-position:fixed;}
 }
-@media (max-width: 768px) {
+@media (max-width: 768px) {    #masters h5, #cita h5  {font-size:14px!important;}
     #page-header.cover {background-image: url("/img/home_m.jpg"); background-size:100% auto;background-position:fixed !important; }
-    .cover#page-header {padding-top:120px;}
+    .cover#page-header {padding-top:100px;}
     .cover#page-header h1 {line-height:0.8em;font-size:23px ;}
     .cover#page-header h2 {line-height:1.2em;font-size:15px ;}
     #covers article h4{font-size:32px;}
