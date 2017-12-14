@@ -1,8 +1,8 @@
 ---
 layout: post
 title: The 5 Books I Read in 2017
-tags: [money]
-keywords: [antimer hash rates, bitcoin, cryptocurrency, antminer]
+tags: [culture]
+keywords: [book, books, read, reading, novel]
 image: /images/covers/neuromancer-book-cover.jpg
 ---
 
