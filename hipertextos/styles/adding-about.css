@@ -19,10 +19,11 @@
 #repertori h5 strong {}
 #repertori h5 em {color:var(--color-red);padding:6px;}
 #musics .cell-x2 {
-    border: thin solid var(--color-soft);box-shadow:1px 2px 6px rgba(0,0,0,.06);
-    background:rgba(255,255,255,.6);border-radius:15px;
+    border: thin solid var(--color-soft);
+    background:rgba(0,0,0,.6);border-radius:16px;
 }
-#musics .cell-x2 h6{background:rgba(0,0,0,.06);border-radius:15px 15px 0 0;}
+#musics .cell-x2 h6{background:rgba(255,255,255,.6);border-radius:15px 15px 0 0;}
+#musics .cell-x2 h5{color:var(--color-translucentwhite) ;border-radius:15px 15px 0 0;}
 #musics .musics {width:120px;padding: 15px;}
 #repertori label, div.collapser div {border-color:var(--color-soft-grey);}
 .news {width:120px;float:left; margin-top:-6px; margin-right: 23px;margin-bottom:0;color: rgba(0,0,0,.32); }
@@ -33,8 +34,12 @@
     .cover-page ul li {font-size:14px;line-height:1.5em;margin-top:5px;padding:0;}
 }
 @media (max-width: 768px) {
-    .cover-page h4  {text-align:center;}
-    .cover-page p {font-size:15px;line-height:1.5em;}
-    .cover-page ul li {font-size:12px;line-height:1.3em;margin-top:5px;padding:0;}
-    .cover-page strong em a {width:100%;margin-bottom: 5px;}
+    .columns-2 {	-webkit-column-count: 1;-moz-column-count: 1;column-count: 1;}
+    .cell-x2 {width:50%;}
+    .cell-x2 h6 {font-size: 16px;font-weight: lighter ;}
+}
+@media (max-width: 432px) {
+    .cell-x2 {width:100%;}
+    .cell-x2 h6 {font-size: 19px;font-weight: lighter ;}
+    #musics .musics {width:75px;padding: 5px;}
 }
