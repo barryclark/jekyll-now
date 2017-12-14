@@ -68,9 +68,6 @@ figure em a {border:none;border-bottom;line-height:0.2em;padding:12px 4px;}
 #masters h5 {line-height: 1.6em;padding:0 2% 0 2%;font-weight: lighter;}
 #cover-links a {border:2px solid var(--color-grey) ;text-decoration: none;min-width:12%;margin:0 2px 0 2px;}
 #cover-links a:hover {border:2px solid var(--color-link) ;color: var(--color-link) ;}
-#info-seo {background-color:var(--color-link);}
-#info-seo h1 {line-height:1.2em;margin-bottom:0;}
-#info-seo h2 {line-height:1.1em;margin-bottom:0;}
 #go-down em a, #go-next em a {color:rgba(220,190,90,.69);background:transparent;border: transparent ;font-size: 80px;height: 80px;width: 80px;transform: rotate(90deg);border-radius: 50%;text-align: right;}
 #go-down em a:hover {text-decoration: none;color:var(--color-flink) ;border: transparent;text-align: right;}
 #go-next em a:hover {text-decoration: none;color:var(--color-hardgrey);border: transparent;text-align: right;}
@@ -106,7 +103,10 @@ img.dialog-svg {width:120px;height:150px;}
 #coffee {color: var(--color-hardgrey);height:100%;text-align: center !important;}
 #coffee p {text-align: justify;-moz-hyphens:none;-ms-hyphens:none;-webkit-hyphens:none;-o-hyphens:none;hyphens:none;}
 
-/* Footer */ 
+/* Footer */
+#info-seo {background-color:var(--color-flink);min-width:100%;color:#222;}
+#info-seo h1 {line-height:1.0em;margin-bottom:0;}
+#info-seo h2 {line-height:1.6em;margin-bottom:0;}
 #page-footer {background:#222;color:#999;}
 #go-up {transform: rotate(90deg);}
 #page-footer a {color: var(--color-flink);text-decoration:none;}
@@ -122,11 +122,11 @@ img.dialog-svg {width:120px;height:150px;}
 .listed {padding:0!important;}
 .listed img {	margin:0!important;padding:0!important;	}
 .listed article { border:none;overflow: hidden;width: 100%;display: block;display: inline-block;margin:0!important;padding:0!important;-webkit-column-break-inside: avoid;-moz-column-break-inside:avoid;-moz-page-break-inside:avoid;page-break-inside: avoid;}
-em small #go-up { background:rgba(0,0,0,.1);padding:15px;border-radius:50%; }
-em small #go-up:hover {background:rgba(0,0,0,.3); }
+em small #go-up { background:var(--color-flink) ;font-size:36px;color:#222;padding:13px 12px 13px 12px;border-radius:50%;margin-top:15px; }
+em small #go-up:hover {background:transparent; }
 /* Footer fixed */
 main { }
-#page-footer {box-shadow: inset 0 0 32px rgba(0, 0, 0, .32);}
+#page-footer {padding-top:0;}
 
 @media (max-width: 1250px) {
    	img.dialog-svg {width:80px!important;height:70px;}
