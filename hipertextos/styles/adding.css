@@ -137,9 +137,12 @@ main { }
     #covers article p em{font-size:15px!important;letter-spacing: 0.001em;}
     .thumb-5, .thumb-6 {width: 100%;}
     strong em a {font-size: 16px;}
+    #cover-links a {font-weight:lighter;}
 }
 @media (max-width: 1242px) {  #masters h5, #cita h5  {font-size:18px!important;}
 	#page-header.cover {background-image: url("/img/home_b.jpg");background-position:fixed;}
+    #cover-links a {font-size:18px;width:23%;margin:2px;font-weight:lighter;}
+    #page-footer h2 small {font-size:50% ;letter-spacing: 0.03em;}
 }
 @media (max-width: 768px) {    #masters h5, #cita h5  {font-size:14px!important;}
     #page-header.cover {background-image: url("/img/home_m.jpg"); background-size:100% auto;background-position:fixed !important; }
@@ -161,15 +164,12 @@ main { }
 	#dialog header .lead {font-size:14px;line-height: 1.2em;margin:0;}
 	#dialog div em a {font-size:10px;line-height:2.3em;padding:7px;}
    	img.dialog-svg {width:45px!important;height:45px;}
-    aside.thumb-3 {text-align: center;margin-top:2.1em;}
-    aside.thumb-3 h2{font-size: 2.6em;color: var(--color-hardgrey) }
     #page-nav a {font-size: 13px;}
     strong em a {font-size: 15px;}
-    main { margin-bottom: 360px;	}
     #icons a {width:30%;}
+    #cover-links a {font-size:16px;width:48%;margin:2px;font-weight:lighter;}
     .cell-6, .pushed-6 {width:85%;margin-left:8% !important;}
-    #coffee .thumb-2 {width: 90%!important;}
-    #coffee .pushed-5 {margin-left:5%!important;}
+    #page-footer h2 small {font-size:40% ;letter-spacing: 0.03em;}
 }
 
 @media (max-width: 432px) {
