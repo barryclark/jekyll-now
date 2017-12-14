@@ -61,4 +61,6 @@ AntMiner S5+ | 7,722 | 0.00012108 | 0.0029059 | 3,436 | 82.464 | on [Amazon](htt
 AntMiner S7 | 4,860 | 0.00007620 | 0.0018289 | 1,210 | 29.04 | on [Amazon](https://www.amazon.com/s/?field-keywords=antminer+s7&tag=hendrixjoseph-20) or [eBay](https://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_id=114&ipn=icep&toolid=20004&campid=5337996799&mpre=https://www.ebay.com/sch/i.html?_nkw=antminer+s7)
 AntMiner S9 | 14,000 | 0.00021952 | 0.0052685 | 1,375 | 33 | on [Amazon](https://www.amazon.com/s/?field-keywords=antminer+s9&tag=hendrixjoseph-20) or [eBay](https://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_id=114&ipn=icep&toolid=20004&campid=5337996799&mpre=https://www.ebay.com/sch/i.html?_nkw=antminer+s9)
 
+{% include amazon/native-ad.html title="AntMiner S-Series" asin=B00HL4MEG6,B00NZDBWKG,B00NWHT18A,B00RCTIY4G,B014OGCP6W,B075MH4HSL %}
+
 Remember that Gh/s = Gigahashes / second and kWh = kilowatt-hour. The reward is in bitcoins. The source of the hash rate and watts is from [the bitcoin wiki](https://en.bitcoin.it/wiki/Mining_hardware_comparison).
