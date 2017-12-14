@@ -2,7 +2,7 @@
 /* ------------------------------------------------------------ Resets */
 .charge {position:absolute;left:49.5%;top:25%;}
 #site-nav, nav, #page-header h1, #cita, #masters, #cover-links  {font-family: 'Voltaire';text-transform: uppercase; }
-#pre-cover, #post-cover {width:72px; }
+#pre-cover, #post-cover { }
 #page-header #pre-cover, #page-header #post-cover {display:inline-block; }
 #post-cover img{transform: rotate(180deg);}
 #cover-lines img{}
