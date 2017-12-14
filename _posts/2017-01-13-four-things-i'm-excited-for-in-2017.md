@@ -35,7 +35,7 @@ I received my Bachelor in Computer Science from Wright State in 2012, and have b
 
 This semester (spring) I'm doing an independent study on natural language processing. I haven't 100% decided yet, but I'm probably going to use this [MIT OpenCourseWare](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-864-advanced-natural-language-processing-fall-2005/) course as a foundation. Then I'll have two semesters of thesis work (summer and fall) and graduate in December.
 
-This is a soft goal for me - if I have to wait until 2018 to graduate, I'm fine with that. But finally, the end it in site!
+This is a soft goal for me - if I have to wait until 2018 to graduate, I'm fine with that. But finally, the end is in site!
 
 ## Solar Eclipse
 
