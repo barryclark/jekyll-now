@@ -1,5 +1,11 @@
 /* by Isard Miralles  ADDING CSS */
 /* ------------------------------------------------------------ Resets */
+@font-face {
+    font-family: "Grenadier NF";
+    font-style: normal;
+    font-weight: normal;
+    src: local("?"), url("/hipertextos/fonts/grenadiernf.otf") format("otf"), url("/hipertextos/fonts/grenadiernf.ttf") format("truetype");
+}
 .charge {position:absolute;left:49.5%;top:25%;}
 #site-nav, nav, #page-header h1, #cita, #masters, #cover-links  {font-family: 'Voltaire';text-transform: uppercase; }
 #pre-cover, #post-cover { }
@@ -15,9 +21,9 @@ text-align: center;}
 #site-nav a {font-weight: lighter;min-width: 12%;border: none;letter-spacing: .032em;}
 #site-nav a:visited { color: var(--color-grey);text-decoration: none;}
 #site-nav a:hover, #site-nav a b:hover { color: #fff !important;background: #000;text-decoration: none;}
-#site-nav a b {text-transform: uppercase;font-weight: normal ;letter-spacing: .16em;}
-#site-nav a b:before {border-bottom: thin solid #444;content: ' ';display: block;position: absolute;left: 47.5%;right: 0;width: 5%;padding-bottom: 2px;}
-#site-nav a b:after {border-bottom: thin solid #444;content: ' ';display: block;position: absolute;left: 47.5%;right: 0;width: 5%;margin-top: -2px;}
+#site-nav a b {font-family: 'Grenadier NF';text-transform: uppercase;font-weight: normal ;letter-spacing: .12em;}
+#site-nav a b:before {border-bottom: 1px solid #444;content: ' ';display: block;position: absolute;left: 47%;right: 0;width: 6%;padding-bottom: 2px;}
+#site-nav a b:after {border-bottom: 1px solid #444;content: ' ';display: block;position: absolute;left: 47%;right: 0;width: 6%;margin-top: -3px;}
 #current-nav, #current-nav a:visited, #current-nav:visited {color:#fff !important;}
 #site-nav label {color:var(--color-grey);border:thin solid transparent;}
 #site-nav label:hover {color:var(--color-soft-grey);border:thin solid #353535;}
