@@ -53,7 +53,7 @@ figure em a {border:none;border-bottom;line-height:0.2em;padding:12px 4px;}
 /* Media */
 #youtube {max-width:100%;max-height:100%;}
 #youtube iframe {_width:100%;_height:100%;}
-#black-video {background: var(--color-black); _height:100%;_width:100%;_display: inline-block; }
+#black-video {background: var(--color-black); height:100%;width:100%; }
 .medias h3 {}
 /* Covers */
 #cita h5 {line-height: 1.4em;margin:15px 0 18px 0;font-weight: lighter;}
