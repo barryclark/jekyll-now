@@ -117,9 +117,13 @@ figure iframe {width:100%;}
     left: 80px;text-decoration:none;color:var(--color-vlink); 
     bottom: 3px;
 }
+.table #ical a h1,
+#layout-table:checked ~ #layout-result #ical a h1 {
+    line-height:0.7em;padding-top:8px;font-size:2.3em;
+}
 .table #ical a,
 #layout-table:checked ~ #layout-result #ical a {
-    padding: 0;width:100%;top:50%;font-size:0.8em;
+    padding: 0;width:100%;top:65%;font-size:0.9em;opacity:.95;
     background: var(--color-white);box-shadow:-2px 3px 5px rgba(0,0,0,.06);
 }
 
@@ -136,8 +140,16 @@ figure iframe {width:100%;}
 }
 .gallery #ical a,
 #layout-gallery:checked ~ #layout-result #ical a {
-    padding: 3px;width:90px;top:30px;right:6px;
+    width:80px;top:32px;right:9px;font-size:10px;border-radius:4px;
     background: var(--color-white);box-shadow:-2px 3px 5px rgba(0,0,0,.06);
+}
+.gallery #ical a p,
+#layout-gallery:checked ~ #layout-result #ical a p{
+    width:80px;top:30px;right:6px;
+}
+.gallery #ical a h1,
+#layout-gallery:checked ~ #layout-result #ical a h1{
+    line-height:1.2em;margin-bottom:-5px;
 }
 .cards #link-comment,
 #layout-cards:checked ~ #layout-result #link-comment {
@@ -148,16 +160,16 @@ figure iframe {width:100%;}
 }
 .cards #ical a,
 #layout-cards:checked ~ #layout-result #ical a {
-    padding: 0;width:70px;height:70px;top:0;left:0;border-radius:50%;
+    margin:3px;width:60px;height:60px;top:0;right:0;border-radius:50%;
     background: var(--color-white);box-shadow:-2px 3px 5px rgba(0,0,0,.06);
 }
 .cards #ical p,
 #layout-cards:checked ~ #layout-result #ical p {
-    font-size:10px;line-height:12px;margin:0;
+    font-size:11px;line-height:13px;margin:0;
 }
 .cards #ical h1,
 #layout-cards:checked ~ #layout-result #ical h1 {
-    font-size:36px;line-height:36px;margin:6px 0 0 0;
+    font-size:25px;line-height:28px;margin:5px 0 0 0;
 }
 
 /* Suscribe */
