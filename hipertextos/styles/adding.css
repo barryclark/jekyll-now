@@ -120,8 +120,8 @@ img.dialog-svg {width:120px;height:150px;}
 .listed {padding:0!important;}
 .listed img {	margin:0!important;padding:0!important;	}
 .listed article { border:none;overflow: hidden;width: 100%;display: block;display: inline-block;margin:0!important;padding:0!important;-webkit-column-break-inside: avoid;-moz-column-break-inside:avoid;-moz-page-break-inside:avoid;page-break-inside: avoid;}
-em small #go-up { background:var(--color-flink) ;font-size:36px;color:#222;padding:13px 12px 13px 12px;border-radius:50%;margin-top:15px; }
-em small #go-up:hover {background:transparent; }
+em small #go-up { font-weight:bold  !important;background:var(--color-black) ;font-size:36px;color:var(--color-flink);padding:13px 12px 13px 12px;border-radius:50%;margin-top:15px; }
+em small #go-up:hover {background:var(--color-translucentblack); }
 /* Footer fixed */
 main { }
 #page-footer {padding-top:0;}
