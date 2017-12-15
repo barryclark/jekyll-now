@@ -54,6 +54,9 @@ figure iframe {width:100%;}
 #post-agenda h3 a:visited {color:#444;}
 #post-agenda strong em svg {width:16px;margin-left:1px;}
 
+a.read-more {}
+a.read-more:hover {text-decoration:none !important;}
+
 /* Simple, List, Table, Gallery, Cards, Tiles */
 .simple em u a,
 #layout-simple:checked ~ #layout-result em u a {
