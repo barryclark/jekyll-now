@@ -45,7 +45,7 @@ section.cover-justify p {padding: 6px 18px 0 18px;line-height: 23px;font-size: 1
 .cover#page-header  {background-color: var(--color-white);}
 .serveis-header {border-bottom:10px solid var(--color-hardgrey);background-color: var(--color-black);color: var(--color-hardgrey);}
 .medias#page-header {border-bottom:10px solid var(--color-grey);background-color: var(--color-softgrey);color: var(--color-grey);}
-#icons a {border:thin solid var(--color-soft);background: transparent;}
+#icons a {border:thin solid var(--color-soft);background: transparent;border-radius:50%;}
 #icons a:hover {border:thin solid var(--color-blue);}
 figure em a {border:none;border-bottom;line-height:0.2em;padding:12px 4px;}
 /* Portfolio Nav */
@@ -164,10 +164,11 @@ main { }
    	img.dialog-svg {width:45px!important;height:45px;}
     #page-nav a {font-size: 13px;}
     strong em a {font-size: 15px;}
-    #icons a {width:15%;padding:12px;}
+    #icons a {width:15%;padding:12px;border-radius:2px;}
     #cover-links a {font-size:16px;width:48%;margin:2px;font-weight:lighter;}
     .cell-6, .pushed-6 {width:85%;margin-left:8% !important;}
     #page-footer h2 small {font-size:40% ;letter-spacing: 0.03em;}
+    #page-footer p {font-size:15px;letter-spacing: 0.02em;}
 }
 
 @media (max-width: 432px) {
