@@ -1,0 +1,8 @@
+_id: bd11c990-e1b1-11e7-a76b-dd4e37b68aa6
+replyto: entry1513325113439
+message: "The Gh/s and the watts columns are just from the bitcoin wiki here -> https://en.bitcoin.it/wiki/Mining_hardware_comparison\r\n\r\nThose are basically the advertised rates.\r\n\r\nThe reward / block column is just plugging in the Gh/s column into equation shown earlier on the post (but I'll repeat it here):\r\n\r\n$$reward = 16×(0.98)×{Gh/s \\over 1,300,000,000}$$\r\n\r\nreward / day is just the reward / block column multiplied by 24\r\n\r\nkWh / day is the watts column multiplied by 24 and divided by 1000"
+name: JoeHx
+email: e591f3aa7c8cbd7dd9e3389958949ed3
+url: 'https://hendrixjoseph.github.io'
+date: 1513353916
+timestamp: 1513353916
