@@ -37,9 +37,16 @@
     .columns-2 {	-webkit-column-count: 1;-moz-column-count: 1;column-count: 1;}
     .cell-x2 {width:50%;}
     .cell-x2 h6 {font-size: 16px;font-weight: lighter ;}
+    .thumb-x2 {width:32%;}
+    .thumb-x8 {width:68%;}
+    #down-info {padding-left:8px;}
+    #down-info p {font-size:15px;}
 }
 @media (max-width: 432px) {
     .cell-x2 {width:100%;}
     .cell-x2 h6 {font-size: 19px;font-weight: lighter ;}
     #musics .musics {width:75px;padding: 5px;}
+    .thumb-x2, .thumb-x8 {width:100%;margin:0;}
+    #down-info {padding-left:0;}
+    #down-info p {font-size:12px;}
 }
