@@ -1162,6 +1162,8 @@ nav label {
 	background-color: var(--color-background);
 }
 
+@font-face {font-family: "Grenadier NF";font-style: normal;font-weight: normal;src: local("?"), url("/hipertextos/fonts/grenadiernf.otf") format("otf"), url("/hipertextos/fonts/grenadiernf.ttf") format("truetype");}
+
 /* Vertical grid 
 #page {
 	background-image: linear-gradient(to bottom, cyan 0, rgba(255, 255, 255, 0) 1px);

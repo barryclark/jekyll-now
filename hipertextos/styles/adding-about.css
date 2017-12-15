@@ -16,22 +16,16 @@
 #down-info p {line-height:1.65em;}
 #down-info a {color:var(--color-hardgrey);text-decoration:none;}
 #down-info a:hover {color:var(--color-link);}
-#repertori h5 strong {}
 #repertori h5 em {color:var(--color-red);padding:6px;}
-#musics .cell-x2 {
-    border: thin solid var(--color-soft);
-    background:rgba(0,0,0,.6);border-radius:16px;
-}
+#musics .cell-x2 {border: thin solid var(--color-soft);background:rgba(0,0,0,.6);border-radius:16px;}
 #musics .cell-x2 h6{background:rgba(255,255,255,.6);border-radius:15px 15px 0 0;}
 #musics .cell-x2 h5{color:var(--color-translucentwhite) ;border-radius:15px 15px 0 0;}
 #musics .musics {width:120px;padding: 15px;}
 #repertori label, div.collapser div {border-color:var(--color-soft-grey);}
 .news {width:120px;float:left; margin-top:-6px; margin-right: 23px;margin-bottom:0;color: rgba(0,0,0,.32); }
-.nav-scroll a, .cell-x2 img { 
-    -webkit-filter: sepia(90%);filter: sepia(90%);}
-.nav-scroll a:hover, .cell-x2 img:hover { 
-    -webkit-filter: sepia(0%);filter: sepia(0%);}
-
+.nav-scroll a, .cell-x2 img { -webkit-filter: grayscale(90%);filter: grayscale(90%);}
+.nav-scroll a:hover, .cell-x2 img:hover { -webkit-filter: grayscale(0%);filter: grayscale(0%);}
+#musics .cell-x2:hover {background-color:rgba(0,0,0,.42);}
 @media (max-width: 1250px) {
   	.cover-page #page-main ul {-webkit-column-count: 2;-moz-column-count: 2;column-count: 2;}
     .cover-page p {font-size:16px;line-height:1.8em;}
@@ -39,7 +33,7 @@
     #repertori h5 {font-size:23px;line-height:12px;letter-spacing: 0.003em;}
 }
 @media (max-width: 768px) {
-    .columns-2 {	-webkit-column-count: 1;-moz-column-count: 1;column-count: 1;}
+    .columns-2 {-webkit-column-count: 1;-moz-column-count: 1;column-count: 1;}
     .cell-x2 {width:50%;}
     .cell-x2 h6 {font-size: 16px;font-weight: lighter ;}
     .thumb-x2 {width:32%;}

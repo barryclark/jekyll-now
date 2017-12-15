@@ -37,12 +37,10 @@ figure iframe {width:100%;}
 #fb {background:var(--color-blue);}
 #go {background:var(--color-orange);}
 #post-agenda div p i svg {width:14px;color:var(--color-grey);}
-
 /* nav Scroll */
 .nav-scroll {}
 .nav-scroll label img {width: 18px;height: 18px;}
 .nav-scroll label:hover {border:thin solid transparent;color:var(--color-black);text-decoration:none;}
-
 /* Category Agenda */
 #post-date {color:var(--color-red);text-align:center;margin:0;padding:32px 0 0 0;}
 #post-date h1 {font-weight: lighter;margin:0 0 2px 0;font-size:3.8em;}
@@ -53,212 +51,93 @@ figure iframe {width:100%;}
 #post-agenda strong em a:hover {color:var(--color-link);border-color:var(--color-link);text-decoration:none;}
 #post-agenda h3 a:visited {color:#444;}
 #post-agenda strong em svg {width:16px;margin-left:1px;}
-
 a.read-more {}
 a.read-more:hover {text-decoration:none !important;}
-
 /* Simple, List, Table, Gallery, Cards, Tiles */
 .simple em u a,
-#layout-simple:checked ~ #layout-result em u a {
-    padding: 6px;border: 2px solid var(--color-hardgrey);
-    color: var(--color-hardgrey);border-radius: 40px;
-    width: 210px;margin-top: 23px;}
+#layout-simple:checked ~ #layout-result em u a {padding: 6px;border: 2px solid var(--color-hardgrey);color: var(--color-hardgrey);border-radius: 40px;width: 210px;margin-top: 23px;}
 .simple em u a :hover,
-#layout-simple:checked ~ #layout-result em u a:hover {
-    color: var(--color-link);border: 2px solid var(--color-link); 
-}
+#layout-simple:checked ~ #layout-result em u a:hover {color: var(--color-link);border: 2px solid var(--color-link); }
 .simple em u svg,
-#layout-simple:checked ~ #layout-result em u svg {
-    width: 21px;}
+#layout-simple:checked ~ #layout-result em u svg {width: 21px;}
 .simple #link-comment,
-#layout-simple:checked ~ #layout-result #link-comment {
-    float: right;font-size:17px;border-bottom:thin solid currentcolor;
-    position: absolute;color:var(--color-hardgrey);
-    right: 0;text-decoration:none;
-    bottom: 6px;
-}
+#layout-simple:checked ~ #layout-result #link-comment {float: right;font-size:17px;border-bottom:thin solid currentcolor;position: absolute;color:var(--color-hardgrey);right: 0;text-decoration:none;bottom: 6px;}
 .simple #link-comment:hover,
-#layout-simple:checked ~ #layout-result #link-comment:hover {
-    border-bottom:thin solid currentcolor;
-    color:var(--color-link);
-}
+#layout-simple:checked ~ #layout-result #link-comment:hover {border-bottom:thin solid currentcolor;color:var(--color-link);}
 .simple #ical a,
-#layout-simple:checked ~ #layout-result #ical a {
-    padding: 3px;width:90px;top:30px;right:6px;
-    background: var(--color-white);box-shadow:-2px 3px 5px rgba(0,0,0,.06);
-}
+#layout-simple:checked ~ #layout-result #ical a {padding: 3px;width:90px;top:30px;right:6px;background: var(--color-white);box-shadow:-2px 3px 5px rgba(0,0,0,.06);}
 .simple #post-content,
-#layout-simple:checked ~ #layout-result #post-content {
-
-}
 .list #post-content,
-#layout-list:checked ~ #layout-result #post-content {
-    max-width:90%;
-}
+#layout-list:checked ~ #layout-result #post-content {max-width:90%;}
 .list #ical a h1,
-#layout-list:checked ~ #layout-result #ical a h1 {
-    line-height:0.7em;padding-top:8px;font-size:2.0em;
-}
+#layout-list:checked ~ #layout-result #ical a h1 {line-height:0.7em;padding-top:8px;font-size:2.0em;}
 .list #ical a p,
-#layout-list:checked ~ #layout-result #ical a p {
-    font-size:0.69em;
-}
+#layout-list:checked ~ #layout-result #ical a p {font-size:0.69em;}
 .list em u a,
-#layout-list:checked ~ #layout-result em u a {
-    padding: 3px;font-size:15px;line-height:27px;
-    border: 1px solid var(--color-hardgrey);
-    color: var(--color-hardgrey);
-    border-radius: 40px;
-    width: 169px;
-    margin-top: 21px;}
+#layout-list:checked ~ #layout-result em u a {padding: 3px;font-size:15px;line-height:27px;border: 1px solid var(--color-hardgrey);color: var(--color-hardgrey);border-radius: 40px;width: 169px;margin-top: 21px;}
 .list em u a :hover,
-#layout-list:checked ~ #layout-result em u a:hover {
-    color: var(--color-link);border: thin solid var(--color-link); 
-}
+#layout-list:checked ~ #layout-result em u a:hover {color: var(--color-link);border: thin solid var(--color-link); }
 .list em u svg,
-#layout-list:checked ~ #layout-result em u svg {
-    width: 15px;padding:5px 0 0 0;
-}
+#layout-list:checked ~ #layout-result em u svg {width: 15px;padding:5px 0 0 0;}
 .list #link-comment,
-#layout-list:checked ~ #layout-result #link-comment {
-    float: right;font-size:17px;border-bottom:thin solid currentcolor;
-    position: absolute;color:var(--color-hardgrey);
-    right: 0;text-decoration:none;
-    bottom: 6px;
-}
+#layout-list:checked ~ #layout-result #link-comment {float: right;font-size:17px;border-bottom:thin solid currentcolor;position: absolute;color:var(--color-hardgrey);right: 0;text-decoration:none;bottom: 6px;}
 .list #link-comment:hover,
-#layout-list:checked ~ #layout-result #link-comment:hover {
-    border-bottom:thin solid currentcolor;
-    color:var(--color-link);
-}
+#layout-list:checked ~ #layout-result #link-comment:hover {border-bottom:thin solid currentcolor;color:var(--color-link);}
 .table #link-comment,
-#layout-table:checked ~ #layout-result #link-comment {
-    font-size:17px;border-bottom:thin solid currentcolor;
-    position: absolute;padding:15px 15px 15px 15px;
-    left: 80px;text-decoration:none;color:var(--color-vlink); 
-    bottom: 3px;
-}
+#layout-table:checked ~ #layout-result #link-comment {font-size:17px;border-bottom:thin solid currentcolor;position: absolute;padding:15px 15px 15px 15px;left: 80px;text-decoration:none;color:var(--color-vlink); bottom: 3px;}
 .table #ical a h1,
-#layout-table:checked ~ #layout-result #ical a h1 {
-    line-height:0.7em;padding-top:8px;font-size:2.3em;
-}
+#layout-table:checked ~ #layout-result #ical a h1 {line-height:0.7em;padding-top:8px;font-size:2.3em;}
 .table #ical a,
-#layout-table:checked ~ #layout-result #ical a {
-    padding: 0;width:100%;top:65%;font-size:0.9em;opacity:.95;
-    background: var(--color-white);box-shadow:-2px 3px 5px rgba(0,0,0,.06);
-}
-
+#layout-table:checked ~ #layout-result #ical a {padding: 0;width:100%;top:65%;font-size:0.9em;opacity:.95;background: var(--color-white);box-shadow:-2px 3px 5px rgba(0,0,0,.06);}
 .table #ical a:hover,
-#layout-table:checked ~ #layout-result #ical a:hover {
-    opacity:0;
-}
+#layout-table:checked ~ #layout-result #ical a:hover {opacity:0;}
 .gallery #link-comment,
-#layout-gallery:checked ~ #layout-result #link-comment {
-    float: right;font-size:13px;border-bottom:none;
-    position: absolute;color:var(--color-white);background-color:rgba(0,0,0,.5);
-    right: 9px;text-decoration:none;padding:0 12px 0 12px;
-    bottom: 1px;
-}
+#layout-gallery:checked ~ #layout-result #link-comment {float: right;font-size:13px;border-bottom:none;position: absolute;color:var(--color-white);background-color:rgba(0,0,0,.5);right: 9px;text-decoration:none;padding:0 12px 0 12px;bottom: 1px;}
 .gallery #ical a,
-#layout-gallery:checked ~ #layout-result #ical a {
-    width:80px;top:32px;right:9px;font-size:10px;border-radius:4px;
-    background: var(--color-white);box-shadow:-2px 3px 5px rgba(0,0,0,.06);
-}
+#layout-gallery:checked ~ #layout-result #ical a {width:80px;top:32px;right:9px;font-size:10px;border-radius:4px;background: var(--color-white);box-shadow:-2px 3px 5px rgba(0,0,0,.06);}
 .gallery #ical a p,
-#layout-gallery:checked ~ #layout-result #ical a p{
-    width:80px;top:30px;right:6px;
-}
+#layout-gallery:checked ~ #layout-result #ical a p{width:80px;top:30px;right:6px;}
 .gallery #ical a h1,
-#layout-gallery:checked ~ #layout-result #ical a h1{
-    line-height:1.2em;margin-bottom:-5px;
-}
+#layout-gallery:checked ~ #layout-result #ical a h1{line-height:1.2em;margin-bottom:-5px;}
 .cards #link-comment,
-#layout-cards:checked ~ #layout-result #link-comment {
-    float: right;font-size:12px;border-bottom:none;
-    position: absolute;color:var(--color-hardgrey);
-    right: 0;text-decoration:none;
-    bottom: 7px;padding:0 9px 0 0;
-}
+#layout-cards:checked ~ #layout-result #link-comment {float: right;font-size:12px;border-bottom:none;position: absolute;color:var(--color-hardgrey);right: 0;text-decoration:none;bottom: 7px;padding:0 9px 0 0;}
 .cards #ical a,
-#layout-cards:checked ~ #layout-result #ical a {
-    margin:3px;width:60px;height:60px;top:0;right:0;border-radius:50%;
-    background: var(--color-white);box-shadow:-2px 3px 5px rgba(0,0,0,.06);
-}
+#layout-cards:checked ~ #layout-result #ical a {margin:3px;width:60px;height:60px;top:0;right:0;border-radius:50%;background: var(--color-white);box-shadow:-2px 3px 5px rgba(0,0,0,.06);}
 .cards #ical p,
-#layout-cards:checked ~ #layout-result #ical p {
-    font-size:11px;line-height:13px;margin:0;
-}
+#layout-cards:checked ~ #layout-result #ical p {font-size:11px;line-height:13px;margin:0;}
 .cards #ical h1,
-#layout-cards:checked ~ #layout-result #ical h1 {
-    font-size:25px;line-height:28px;margin:5px 0 0 0;
-}
-
+#layout-cards:checked ~ #layout-result #ical h1 {font-size:25px;line-height:28px;margin:5px 0 0 0;}
 /* Suscribe */
 form .button {border:thin solid currentColor;margin-top:0.6em;}
-
 @media (max-width: 1250px) {
 	.list #post-content,
-	#layout-list:checked ~ #layout-result #post-content {
-	    max-width:80%;
-	}
+	#layout-list:checked ~ #layout-result #post-content {max-width:80%;}
 }
 @media (max-width: 1242px) {
 	.list #post-content,
-	#layout-list:checked ~ #layout-result #post-content {
-	    max-width:68%;
-	}
+	#layout-list:checked ~ #layout-result #post-content {max-width:68%;}
 }
 @media (max-width: 768px) {
-    .simple h3,
-	#layout-simple:checked ~ #layout-result h3 {
-
-	}
-	.simple,
-	#layout-simple:checked ~ #layout-result  {
-	  
-	}
 	.list h3,
-	#layout-list:checked ~ #layout-result h3 {
-    font-size: 26px;
-	}
+	#layout-list:checked ~ #layout-result h3 {font-size: 26px;}
 	.list p,
-	#layout-list:checked ~ #layout-result p {
-	font-size:15px;letter-spacing: .01em
-	}
+	#layout-list:checked ~ #layout-result p {font-size:15px;letter-spacing: .01em}
 	.list #post-content,
-	#layout-list:checked ~ #layout-result #post-content {
-	    max-width:65%;
-	}
+	#layout-list:checked ~ #layout-result #post-content {max-width:65%;}
     .list article div img,
-	#layout-list:checked ~ #layout-result article div img {
-		width:96px;height:96px;
-	}
+	#layout-list:checked ~ #layout-result article div img {width:96px;height:96px;}
     .list #ical a h1,
-	#layout-list:checked ~ #layout-result #ical a h1 {
-    	padding-top:0px;font-size:2.0em;
-        line-height:0.7em;
-	}
+	#layout-list:checked ~ #layout-result #ical a h1 {padding-top:0px;font-size:2.0em;line-height:0.7em;}
 }
-
 @media (max-width: 432px) {
 	.list h3,
-	#layout-list:checked ~ #layout-result h3 {
-    font-size: 17px;line-height:26px;
-	}
+	#layout-list:checked ~ #layout-result h3 {font-size: 17px;line-height:26px;}
 	.list p,
-	#layout-list:checked ~ #layout-result p {
-	font-size:12px;letter-spacing: .001em;line-height:21px;
-	}
+	#layout-list:checked ~ #layout-result p {font-size:12px;letter-spacing: .001em;line-height:21px;}
 	.list article div img,
-	#layout-list:checked ~ #layout-result article div img {
-		width:54px;height:54px;
-	}
+	#layout-list:checked ~ #layout-result article div img {width:54px;height:54px;}
 	.list #post-content,
-	#layout-list:checked ~ #layout-result #post-content {
-	    max-width:50%;
-	}
+	#layout-list:checked ~ #layout-result #post-content {max-width:50%;}
     .list #ical a h1,
-	#layout-list:checked ~ #layout-result #ical a h1 {
-    	line-height:0.7em;font-size:1.5em;
-	}
+	#layout-list:checked ~ #layout-result #ical a h1 {line-height:0.7em;font-size:1.5em;}
 }
