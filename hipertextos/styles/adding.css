@@ -56,7 +56,7 @@ figure em a {border:none;border-bottom;line-height:0.2em;padding:12px 4px;}
 #page-nav div {height:80px;font-size:15px;}
 
 /* Media */
-.youtube {	clear: both;margin-bottom: 0;position: relative;padding-bottom: 30.25%;padding-top: 0.25em;height: 0;overflow: hidden;z-index: 100;}
+.youtube {	clear: both;margin-bottom: 0;position: relative;padding-bottom: 23%;height: 0;overflow: hidden;z-index: 100;}
 .youtube iframe {width:100%;height:100%;}
 #black-video {background: var(--color-black); height:100%;width:100%;display: inline-block; }
 
@@ -110,6 +110,7 @@ img.dialog-svg {width:120px;height:150px;}
 #page-footer a:hover {color: var(--color-hflink)!important;border-color: var(--color-hflink);}
 #page-footer a:visited {color: var(--color-vflink);border-color: var(--color-vflink);}
 #page-footer em small a {border: thin solid #222;}
+#page-footer h1 small {font-size:60%;letter-spacing: 0.23em;}
 #web-credits {opacity:.75;background-color:#fafafa;border-bottom: thin solid var(--color-softgrey);border-top:thin solid var(--color-softgrey);}
 #web-credits label svg {max-width:72px;margin:10px;opacity:.6;border-radius:50%;}
 #web-credits label svg:hover {cursor:pointer !important;opacity:1;box-shadow: 0 1px 3px rgba(0,0,0,.3);}
@@ -125,7 +126,7 @@ em small #go-up:hover {background:transparent; }
 main { }
 #page-footer {padding-top:0;}
 
-@media (max-width: 1250px) {#masters h5, #cita h5  {font-size:20px!important;}
+@media (max-width: 1350px) {#masters h5, #cita h5  {font-size:20px!important;}
    	img.dialog-svg {width:80px!important;height:70px;}
     #covers { text-rendering: optimizeLegibility;}
     #covers article h4{font-size:95%;}
@@ -135,12 +136,14 @@ main { }
     .thumb-5, .thumb-6 {width: 100%;}
     strong em a {font-size: 16px;}
     #cover-links a {font-weight:lighter;}
+    .youtube {	margin:0;padding-bottom: 26em;}
 }
 @media (max-width: 1242px) {  #masters h5, #cita h5  {font-size:18px!important;}
 	#page-header.cover {background-image: url("/img/home_b.jpg");background-position:fixed;
     padding-top:180px;height:100%;}
     #cover-links a {font-size:18px;width:23%;margin:2px;font-weight:lighter;}
     #page-footer h2 small {font-size:50% ;letter-spacing: 0.03em;}
+    .youtube {	margin:0;padding-bottom: 26em;}
 }
 @media (max-width: 768px) {    #masters h5, #cita h5  {font-size:14px!important;}
     #page-header.cover {background-image: url("/img/home_m.jpg");background-size:100% auto;background-position:fixed !important; }
@@ -153,6 +156,7 @@ main { }
     #covers article p em{font-size:19px!important;letter-spacing: 0.015em;}
     #covers article img {margin-top:64px;}
    	#covers article {width: 100%;}
+    .youtube {	margin:0;padding-bottom: 16em;}
     .cover-page .thumb-9, .cover-page .thumb-3 {width: 100%;}
 	#dialog .icon-alarm svg {max-width:16px!important;margin:0;padding:0;}
 	#dialog dialog p {font-size:12px;line-height:1.5em;}
@@ -167,11 +171,16 @@ main { }
     #icons a {width:15%;padding:12px;border-radius:2px;}
     #cover-links a {font-size:16px;width:48%;margin:2px;font-weight:lighter;}
     .cell-6, .pushed-6 {width:85%;margin-left:8% !important;}
-    #page-footer h2 small {font-size:40% ;letter-spacing: 0.03em;}
+    #page-footer h1 small {font-size:69% ;letter-spacing: 0.16em;}
+    #page-footer h2 small {font-size:62% ;letter-spacing: 0.005em;}
     #page-footer p {font-size:15px;letter-spacing: 0.02em;}
 }
 
 @media (max-width: 432px) {
     #page-header.cover {padding-top:90px;height:100%;background-image: url("/img/home_m.jpg");background-size: 100% auto;background-position: fixed !important;}
     #icons a {width:18%;padding:8px;}
+    #page-footer h1 small {font-size:50% ;letter-spacing: 0.23em;}
+    #page-footer h2 small {font-size:42% ;letter-spacing: 0.002em;}
+    #page-footer p {font-size:9px;letter-spacing: 0.01em;font-weight:lighter;}
+    .youtube {	margin:0;padding-bottom: 12em;}
 }
