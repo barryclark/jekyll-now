@@ -90,6 +90,14 @@ figure iframe {width:100%;}
 #layout-list:checked ~ #layout-result #post-content {
     max-width:90%;
 }
+.list #ical a h1,
+#layout-list:checked ~ #layout-result #ical a h1 {
+    line-height:0.7em;padding-top:8px;font-size:2.0em;
+}
+.list #ical a p,
+#layout-list:checked ~ #layout-result #ical a p {
+    font-size:0.69em;
+}
 .list em u a,
 #layout-list:checked ~ #layout-result em u a {
     padding: 3px;font-size:15px;line-height:27px;
@@ -188,7 +196,6 @@ form .button {border:thin solid currentColor;margin-top:0.6em;}
 	#layout-list:checked ~ #layout-result #post-content {
 	    max-width:80%;
 	}
-    .nav-scroll label img {margin-right:3px;}
 }
 @media (max-width: 1242px) {
 	.list #post-content,
@@ -197,7 +204,6 @@ form .button {border:thin solid currentColor;margin-top:0.6em;}
 	}
 }
 @media (max-width: 768px) {
-    .nav-scroll label img {width: 15px;height: 15px;margin:0;}
     .simple h3,
 	#layout-simple:checked ~ #layout-result h3 {
 
@@ -230,7 +236,6 @@ form .button {border:thin solid currentColor;margin-top:0.6em;}
 }
 
 @media (max-width: 432px) {
-    .nav-scroll label img {width: 15px;height: 15px;margin-right:5px;}
 	.list h3,
 	#layout-list:checked ~ #layout-result h3 {
     font-size: 17px;line-height:26px;
