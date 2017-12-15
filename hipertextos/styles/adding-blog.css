@@ -5,6 +5,7 @@
 #post-header, h3 a, #post-date h5 {font-family: 'Voltaire';}
 .img-bolo#back-header {-webkit-filter:blur(32px);filter:blur(32px);height:100%;width:100%;opacity:.75;
     background-position:;position: top center;position:absolute;top:0;left:0;background-attachment: fixed;background-size: cover;background-repeat: no-repeat;overflow: hidden;text-align: center; }
+#page-main {background-color:var(--color-white);}
 /* Posts */
 h3 a {color:var(--color-softblack);}
 h3 a:hover {text-decoration:none;}
@@ -50,6 +51,7 @@ figure iframe {width:100%;}
 #link-image:hover {border-bottom:thin solid currentcolor;color:var(--color-link);}
 #post-agenda strong em a {padding:6px 12px 6px 12px;margin-top:12px;font-size:17px;font-weight: normal;border-color:var(--color-grey);color:var(--color-grey);border-radius:3px;margin-right:3px;}
 #post-agenda strong em a:hover {color:var(--color-link);border-color:var(--color-link);text-decoration:none;}
+#post-agenda h3 a:visited {color:#444;}
 #post-agenda strong em svg {width:16px;margin-left:1px;}
 
 /* Simple, List, Table, Gallery, Cards, Tiles */

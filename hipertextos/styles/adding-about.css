@@ -32,6 +32,7 @@
   	.cover-page #page-main ul {-webkit-column-count: 2;-moz-column-count: 2;column-count: 2;}
     .cover-page p {font-size:16px;line-height:1.8em;}
     .cover-page ul li {font-size:14px;line-height:1.5em;margin-top:5px;padding:0;}
+    #repertori h5 {font-size:23px;line-height:12px;letter-spacing: 0.003em;}
 }
 @media (max-width: 768px) {
     .columns-2 {	-webkit-column-count: 1;-moz-column-count: 1;column-count: 1;}
@@ -41,6 +42,8 @@
     .thumb-x8 {width:68%;}
     #down-info {padding-left:8px;}
     #down-info p {font-size:15px;}
+    #repertori h5 {font-size:18px;line-height:21px;letter-spacing: 0.03em;margin-bottom: 16px;border-bottom: thin solid var(--color-softgrey);}
+    #repertori h5 strong {font-size:16px;}
 }
 @media (max-width: 432px) {
     .cell-x2 {width:100%;}
@@ -49,4 +52,6 @@
     .thumb-x2, .thumb-x8 {width:100%;margin:0;}
     #down-info {padding-left:0;}
     #down-info p {font-size:12px;}
+    #repertori h5 {font-size:10px;line-height:15px;letter-spacing: 0.06em;margin-bottom: 16px;border-bottom: thin solid var(--color-softgrey); }
+    #repertori h5 em {font-size:18px;display:inline-block;width:100%;}
 }
