@@ -164,7 +164,7 @@ main { }
    	img.dialog-svg {width:45px!important;height:45px;}
     #page-nav a {font-size: 13px;}
     strong em a {font-size: 15px;}
-    #icons a {width:30%;}
+    #icons a {width:15%;padding:12px;}
     #cover-links a {font-size:16px;width:48%;margin:2px;font-weight:lighter;}
     .cell-6, .pushed-6 {width:85%;margin-left:8% !important;}
     #page-footer h2 small {font-size:40% ;letter-spacing: 0.03em;}
@@ -172,4 +172,5 @@ main { }
 
 @media (max-width: 432px) {
     #page-header.cover {padding-top:90px;height:100%;background-image: url("/img/home_m.jpg");background-size: 100% auto;background-position: fixed !important;}
+    #icons a {width:18%;padding:8px;}
 }
