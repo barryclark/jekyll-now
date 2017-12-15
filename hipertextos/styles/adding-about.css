@@ -27,6 +27,10 @@
 #musics .musics {width:120px;padding: 15px;}
 #repertori label, div.collapser div {border-color:var(--color-soft-grey);}
 .news {width:120px;float:left; margin-top:-6px; margin-right: 23px;margin-bottom:0;color: rgba(0,0,0,.32); }
+.nav-scroll a, .cell-x2 img { 
+    -webkit-filter: sepia(90%);filter: sepia(90%);}
+.nav-scroll a:hover, .cell-x2 img:hover { 
+    -webkit-filter: sepia(0%);filter: sepia(0%);}
 
 @media (max-width: 1250px) {
   	.cover-page #page-main ul {-webkit-column-count: 2;-moz-column-count: 2;column-count: 2;}

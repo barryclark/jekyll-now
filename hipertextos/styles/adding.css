@@ -7,7 +7,7 @@
     src: local("?"), url("/hipertextos/fonts/grenadiernf.otf") format("otf"), url("/hipertextos/fonts/grenadiernf.ttf") format("truetype");
 }
 .charge {position:absolute;left:49.5%;top:25%;}
-#site-nav, nav, #page-header h1, #masters, #cover-links, #info-seo  {font-family: 'Voltaire';text-transform: uppercase; }
+#site-nav, nav, #page-header h1, #masters, #cover-links, #info-seo, .medias h3  {font-family: 'Voltaire';text-transform: uppercase; }
 #pre-cover, #post-cover { }
 #page-header #pre-cover, #page-header #post-cover {display:inline-block; }
 #post-cover img{transform: rotate(180deg);margin-top:-12px;}
@@ -60,7 +60,7 @@ figure em a {border:none;border-bottom;line-height:0.2em;padding:12px 4px;}
 .youtube {	clear: both;margin-bottom: 0;position: relative;padding-bottom: 23%;height: 0;overflow: hidden;z-index: 100;}
 .youtube iframe {width:100%;height:100%;}
 #black-video {background: var(--color-black); height:100%;width:100%;display: inline-block; }
-
+.medias h3 {}
 /* Covers */
 #cita h5 {line-height: 1.4em;margin:15px 0 18px 0;font-weight: lighter;}
 #masters h2 {line-height: .6em;font-weight: lighter;}
