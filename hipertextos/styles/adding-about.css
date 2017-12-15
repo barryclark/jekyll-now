@@ -4,7 +4,7 @@
 #page-header.about-cover {background-image: url("/img/texture/dark.png");background-color:var(--color-black);background-size:180px 180px;background-repeat: repeat;image-rendering: crisp-edges;}
 #repertori h5, #repertori h3, #contracta, #musics .cell-x2 {text-align:center;}
 #page-nav {box-shadow:0 2px 3px rgba(0,0,0,.032), 0 2px 12px rgba(0,0,0,.03), 0 2px 60px rgba(0,0,0,.07);}
-.cover-page #page-header {border-bottom:10px solid var(--color-softgrey);background-color: var(--color-grey);color: var(--color-grey);font-family: 'Voltaire';text-transform:uppercase;}
+.cover-page #page-header {border-bottom:10px solid var(--color-link);color: var(--color-link);font-family: 'Voltaire';text-transform:uppercase;}
 .cover-page #page-main {color:var(--color-hardgrey);background-image: url("/img/texture/light.png");background-size:294px 235px;background-repeat: repeat;image-rendering: crisp-edges;}
 .cover-page #page-main h2 {text-align:right;color:var(--color-grey);font-family: 'Voltaire';text-transform:uppercase;}
 .cover-page #page-main h5 {font-family: 'Voltaire';text-transform:uppercase;}
