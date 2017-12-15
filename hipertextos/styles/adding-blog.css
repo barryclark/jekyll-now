@@ -24,8 +24,8 @@ figure iframe {width:100%;}
 #post-share em svg {padding:0px 0px 0px 7px;}
 #post-share em a:hover {background:#fff !important;border:thin solid var(--color-link);}
 #post-share em a:visited {background-color:var(--color-soft-grey)  !important;}
-#ical a {text-decoration:none;color:var(--color-red);width:80px;float:right;position:absolute;right:0;top:0;text-align: center;}
-#ical h1 {font-weight: lighter;margin-bottom:6px;font-size:3.2em;}
+#ical a {text-decoration:none;color:var(--color-red);width:58px;position:absolute;right:0;top:0;text-align: center;}
+#ical h1 {font-weight: lighter;margin-bottom:6px;font-size:3.0em;}
 #ical p {font-size:0.8em;}
 #post-content {color:var(--color-black);}
 #page-date #post-date {border-bottom:thin solid #eee;margin-bottom:3%;}
@@ -81,6 +81,14 @@ figure iframe {width:100%;}
 #layout-simple:checked ~ #layout-result #ical a {
     padding: 3px;width:90px;top:30px;right:6px;
     background: var(--color-white);box-shadow:-2px 3px 5px rgba(0,0,0,.06);
+}
+.simple #post-content,
+#layout-simple:checked ~ #layout-result #post-content {
+
+}
+.list #post-content,
+#layout-list:checked ~ #layout-result #post-content {
+    max-width:90%;
 }
 .list em u a,
 #layout-list:checked ~ #layout-result em u a {
@@ -176,10 +184,16 @@ figure iframe {width:100%;}
 form .button {border:thin solid currentColor;margin-top:0.6em;}
 
 @media (max-width: 1250px) {
-
+	.list #post-content,
+	#layout-list:checked ~ #layout-result #post-content {
+	    max-width:80%;
+	}
 }
 @media (max-width: 1242px) {
-
+	.list #post-content,
+	#layout-list:checked ~ #layout-result #post-content {
+	    max-width:68%;
+	}
 }
 @media (max-width: 768px) {
     .simple h3,
@@ -198,9 +212,18 @@ form .button {border:thin solid currentColor;margin-top:0.6em;}
 	#layout-list:checked ~ #layout-result p {
 	font-size:15px;letter-spacing: .01em
 	}
-	.list article div img,
+	.list #post-content,
+	#layout-list:checked ~ #layout-result #post-content {
+	    max-width:65%;
+	}
+    .list article div img,
 	#layout-list:checked ~ #layout-result article div img {
 		width:96px;height:96px;
+	}
+    .list #ical a h1,
+	#layout-list:checked ~ #layout-result #ical a h1 {
+    	padding-top:0px;font-size:2.0em;
+        line-height:0.7em;
 	}
 }
 
@@ -215,6 +238,14 @@ form .button {border:thin solid currentColor;margin-top:0.6em;}
 	}
 	.list article div img,
 	#layout-list:checked ~ #layout-result article div img {
-		width:64px;height:64px;
+		width:54px;height:54px;
+	}
+	.list #post-content,
+	#layout-list:checked ~ #layout-result #post-content {
+	    max-width:50%;
+	}
+    .list #ical a h1,
+	#layout-list:checked ~ #layout-result #ical a h1 {
+    	line-height:0.7em;font-size:1.5em;
 	}
 }
