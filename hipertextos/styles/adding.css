@@ -104,13 +104,13 @@ img.dialog-svg {width:120px;height:150px;}
 #info-seo {background-color:var(--color-flink);min-width:100%;color:#222;}
 #info-seo h1 {line-height:1.0em;margin-bottom:0;}
 #info-seo h2 {line-height:1.6em;margin-bottom:0;}
-#page-footer {background:#222;color:#999;}
+#page-footer {background:#222;color:#999;border-bottom:6px solid var(--color-flink);}
 #go-up {transform: rotate(90deg);}
 #page-footer a {color: var(--color-flink);text-decoration:none;}
 #page-footer a:hover {color: var(--color-hflink)!important;border-color: var(--color-hflink);}
 #page-footer a:visited {color: var(--color-vflink);border-color: var(--color-vflink);}
 #page-footer em small a {border: thin solid #222;}
-#page-footer h1 small {font-size:60%;letter-spacing: 0.23em;}
+#page-footer h1 small {font-size:65%;letter-spacing: 0.23em;}
 #web-credits {opacity:.75;background-color:#fafafa;border-bottom: thin solid var(--color-softgrey);border-top:thin solid var(--color-softgrey);}
 #web-credits label svg {max-width:72px;margin:10px;opacity:.6;border-radius:50%;}
 #web-credits label svg:hover {cursor:pointer !important;opacity:1;box-shadow: 0 1px 3px rgba(0,0,0,.3);}
