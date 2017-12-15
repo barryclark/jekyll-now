@@ -6,11 +6,11 @@ permalink: /media/
 
     <main id="page-main" role="main" class="medias">
 	<div id="layout" class="listed">
-    			<h3 class="anm-moveFromBottomFade delay-3000"><u>Cartells & Fotografíes</u></h3>
+    			<h3 class="anm-moveFromBottomFade delay-3500"><u>Cartells & Fotografíes</u></h3>
 			<section>					
 	{% assign image_files = site.static_files | where: "image", true %}
 	{% for image in image_files %}
-	<article class="imagens anm-zoomIn delay-3000">
+	<article class="imagens anm-zoomIn delay-3500">
     	<a href="{{ site.baseurl }}/assets/fotos/{{ image.name }}" data-lightbox="roadtrip"><img src="{{ site.baseurl }}/assets/fotos/{{ image.name }}" alt="Cartells i fotografíes de la banda Old Steam"></a>
 	</article>
 	{% endfor %}
@@ -18,7 +18,7 @@ permalink: /media/
 			<hr>
 	</div><!-- /#Layout -->
 	<div>
-			<section id="follows" class="anm-scaleUp delay-2000">
+			<section id="follows" class="anm-scaleUp delay-4000">
 			<h4>Seguir!</h4>
 			{% include partials/suscribe.html %}
     		</section>
