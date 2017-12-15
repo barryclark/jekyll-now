@@ -54,6 +54,20 @@ figure em a {border:none;border-bottom;line-height:0.2em;padding:12px 4px;}
 #black-video iframe { }
 #black-video {background: var(--color-black);}
 .medias h3 {}
+.youtuber {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.youtuber object,
+.youtuber embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
 /* Covers */
 #cita h5 {line-height: 1.4em;margin:15px 0 18px 0;font-weight: lighter;}
 #masters h2 {line-height: .6em;font-weight: lighter;}
