@@ -47,6 +47,7 @@ section.cover-justify p {padding: 6px 18px 0 18px;line-height: 23px;font-size: 1
 .medias#page-header {border-bottom:10px solid var(--color-grey);background-color: var(--color-softgrey);color: var(--color-grey);}
 #icons a {border:thin solid var(--color-soft);background: transparent;border-radius:50%;}
 #icons a:hover {border:thin solid var(--color-blue);}
+#icons a:visited {border:thin solid #222;}
 figure em a {border:none;border-bottom;line-height:0.2em;padding:12px 4px;}
 /* Portfolio Nav */
 #page-nav {border:none;color:var(--color-hardgrey);} 
