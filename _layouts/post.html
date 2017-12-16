@@ -4,7 +4,7 @@ layout: default
 
 <article class="post">
   <h1>{{ page.title }}</h1>
-
+ {% include share-page.html %}
   <div class="entry">
     {{ content }}
   </div>
@@ -14,4 +14,5 @@ layout: default
   </div>
 
   {% include disqus.html %}
+  {% include analytics.html %}
 </article>
