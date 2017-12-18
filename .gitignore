@@ -10,3 +10,4 @@ node_modules
 package.json
 vendor
 *.swp
+.github.cfg
