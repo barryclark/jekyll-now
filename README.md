@@ -12,6 +12,7 @@ Sou lliure de:
 
 **Adaptar** - remesclar, transformar i crear a partir del material
 
-[CC Licence](https://creativecommons.org/licenses/by-nc-sa/3.0/deed.ca)
+
+Veure la Llicènia completa a [CC Creative Commons](https://creativecommons.org/licenses/by-nc-sa/3.0/deed.ca)
 
 
