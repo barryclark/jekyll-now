@@ -1,7 +1,6 @@
 /* by Isard Miralles  ADDING CSS */
 /* ------------------------------------------------------------ Resets */
 #site-nav, nav, #page-header h1, #masters, #cover-links, #info-seo, .medias h3  {font-family: 'Voltaire';text-transform: uppercase; }
-#pre-cover, #post-cover { }
 #page-header #pre-cover, #page-header #post-cover {display:inline-block; }
 #post-cover img{transform: rotate(180deg);margin-top:-12px;}
 #cover-lines img{margin-top:-12px;}
@@ -15,7 +14,7 @@ text-align: center;}
 #site-nav a:visited { color: var(--color-grey);text-decoration: none;}
 #site-nav a:hover, #site-nav a b:hover { color: #fff !important;background: #000;text-decoration: none;}
 #site-nav a b {font-family: 'Grenadier NF';text-transform: uppercase;font-weight: normal ;letter-spacing: .12em;}
-#site-nav a b:before {border-bottom: 1px solid #444;content: ' ';display: block;position: absolute;left: 47%;right: 0;width: 6%;padding-bottom: 2px;}
+#site-nav a b:before {border-bottom: 1px solid #444;content: '';display: block;position: absolute;left: 47%;right: 0;width: 6%;padding-bottom: 2px;}
 #site-nav a b:after {border-bottom: 1px solid #444;content: ' ';display: block;position: absolute;left: 47%;right: 0;width: 6%;margin-top: -3px;}
 #current-nav, #current-nav a:visited, #current-nav:visited {color:#fff !important;}
 #site-nav label {color:var(--color-grey);border:thin solid transparent;}
