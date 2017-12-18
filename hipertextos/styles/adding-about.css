@@ -26,6 +26,94 @@
 .nav-scroll a, .cell-x2 img { -webkit-filter: grayscale(90%);filter: grayscale(90%);}
 .nav-scroll a:hover, .cell-x2 img:hover { -webkit-filter: grayscale(0%);filter: grayscale(0%);}
 #musics .cell-x2:hover {background-color:rgba(0,0,0,.42);}
+/* Panel flip */
+
+.panel-flip,
+.panel-flip-onhover {
+	display: block;
+	margin: 0 auto;
+	overflow: hidden;
+	width: 100%;
+	min-height: 20em;
+	position: relative;
+	-webkit-perspective: 600px;
+	-moz-perspective: 600px;
+	perspective: 600px;
+}
+.panel-flip .front,
+.panel-flip-onhover .front,
+.panel-flip .back,
+.panel-flip-onhover .back {
+	margin: 1em;
+	min-height: 18em;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: inherit;
+	height: inherit;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transition: all .4s ease-in-out;
+	transition: all .4s ease-in-out;
+}
+.panel-flip .front,
+.panel-flip-onhover .front {
+	z-index: 900;
+	-webkit-transform: rotateX(0deg) rotateY(0deg);
+	-moz-transform: rotateX(0deg) rotateY(0deg);
+	transform: rotateX(0deg) rotateY(0deg);
+}
+.panel-flip.turned .front,
+.fliptrigger:checked ~ .front,
+.panel-flip-onhover:hover .front {
+	z-index: 900;
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}
+.panel-flip .back,
+.panel-flip-onhover .back {
+	float: none;
+	z-index: 800;
+	-webkit-transform: rotateY(-180deg);
+	-moz-transform: rotateY(-179deg);
+	transform: rotateY(-179deg);
+}
+.panel-flip.turned .back,
+.fliptrigger:checked ~ .back,
+.panel-flip-onhover:hover .back {
+	z-index: 1000;
+	-webkit-transform: rotateX(0deg) rotateY(0deg);
+	-moz-transform: rotateX(0deg) rotateY(0deg);
+	transform: rotateX(0deg) rotateY(0deg);
+}
+.button-flip,
+.footer-flip {
+	display: block;
+	position: absolute;
+}
+.footer-flip {
+	background: rgba(0,0,0,.3);
+	border: none;
+	height: 4em;
+	padding: .1em .5em;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 991;
+}
+.button-flip {
+	padding: .1em;
+	height: 2em;
+	bottom: .1em;
+	right: 2em;
+	width: 2em;
+	z-index: 1001;
+}
 @media (max-width: 1250px) {
   	.cover-page #page-main ul {-webkit-column-count: 2;-moz-column-count: 2;column-count: 2;}
     .cover-page p {font-size:16px;line-height:1.8em;}
