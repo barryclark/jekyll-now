@@ -200,6 +200,10 @@ h6 u:after {
 	}
 }
 
+/* Tipography */
+
+@font-face {font-family: "Grenadier NF";font-style: normal;font-weight: normal;src: local("?"), url("/hipertextos/fonts/grenadiernf.otf") format("otf"), url("/hipertextos/fonts/grenadiernf.ttf") format("truetype");}
+
 /* Breaks */
 
 hr, 
@@ -1161,8 +1165,6 @@ nav label {
 #page {
 	background-color: var(--color-background);
 }
-
-@font-face {font-family: "Grenadier NF";font-style: normal;font-weight: normal;src: local("?"), url("/hipertextos/fonts/grenadiernf.otf") format("otf"), url("/hipertextos/fonts/grenadiernf.ttf") format("truetype");}
 
 /* Vertical grid 
 #page {
