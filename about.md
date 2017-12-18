@@ -5,10 +5,10 @@ permalink: /about/
 som: Banda de swing, jazz y blues desde Barcelona
 musics: Una banda de luxe!
 musics2: Formació estable de músics professionals
-prensa: Aspectes tècnics
-prensa2: Informació adicional, disposició a l'escenari i requeriments tècnics
-reper: Un repertori en constant evolució
-reper2: Ella Fitzgerald, Nina Simone, Frank Sinatra, Ray Charles, Louis Prima, Etta James, etc..
+prensa: Zona de Prensa
+prensa2: Informació, disposició i requeriments tècnics.
+reper: Jazz, Swing & Blues
+reper2: El nostre repertori abarca desde els anys 20 fins a l'actualitat, un repàs de la història del Jazz.
 vox: Maria Baeta
 sax: Pep Cabrero
 guitar: Juanje Sánchez
