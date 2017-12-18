@@ -8,7 +8,7 @@ musics2: Formació estable de músics professionals
 prensa: Zona de Prensa
 prensa2: Informació, disposició i requeriments tècnics.
 reper: Jazz, Swing & Blues
-reper2: El nostre repertori abarca desde els anys 20 fins a l'actualitat, un repàs de la història del Jazz.
+reper2: El nostre repertori abarca desde els anys 20 fins a l'actualitat, un repàs en ordre cronològic per la història del Jazz.
 vox: Maria Baeta
 sax: Pep Cabrero
 guitar: Juanje Sánchez
