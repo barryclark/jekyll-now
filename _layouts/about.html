@@ -58,6 +58,17 @@
 							<p>{{ page.musics2 }}</p>
 						</div>
 						<hr>
+						<div class="panel-flip">
+							<input class="fliptrigger" type="checkbox" id="flip-1" name="flip" aria-hidden="true" hidden>
+								<div class="front flat red">
+									<h3>Front of my panel</h3><hr>
+									<label class="button button-flip flat soft-red" for="flip-1">+</label>
+								</div>
+								<div class="back flat green">
+									<h3>Back</h3><hr>
+									<label class="button button-flip flat soft-green" for="flip-1">-</label>
+								</div>
+						</div>
 						<div class="cell-x2">
 							<h6>{{ page.vox }}</h6>
 							<img src="{{ site.baseurl }}/hipertextos/svg/m-mic.svg" class="musics" alt="micrófon">
