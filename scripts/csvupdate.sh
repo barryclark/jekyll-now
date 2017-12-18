@@ -1,5 +1,6 @@
 #! /bin/bash
 
+logger reset repo
 git clean -fxd
 git reset --hard HEAD
 git pull
@@ -18,6 +19,7 @@ CSV_LINKS='https://docs.google.com/spreadsheets/d/e/2PACX-1vRfNyClIl9C7yvUJP7UAh
 CSV_COMUNI='https://docs.google.com/spreadsheets/d/1cDw6doPl-WTn9KgNNyxwm92gKLnemMyrE1iCjCE5Cds/pub?gid=812837042&single=true&output=csv'
 #MD_vittime='http://blog.spaziogis.it/static/projs/terremotocentroitalia/vittime.md'
 
+logger get CSVs from sheets
 wget -O _data/contatti.csv $CSV_CONTATTI
 wget -O _data/alloggi.csv $CSV_ALLOGGI 
 wget -O _data/donazioni.csv $CSV_DONAZIONI
@@ -31,17 +33,21 @@ wget -O _data/storie.csv $CSV_STORIE
 wget -O _data/links.csv $CSV_LINKS
 wget -O _data/comuni.csv $CSV_COMUNI 
 
+logger github2CSV
+(cd ../.. && python terremotocentro/scripts/github2CSV.py terremotocentro/_data/issues.csv terremotocentro/_data/issuesjson.json terremotocentro/_data/issues.geojson)
 
 #wget -O vittime.md $MD_vittime
 
 sed -i 's/\r$//g' _data/*.csv
 
+logger push
 git add _data
 #git add vittime.md
 git commit -m "auto CSV update $(date -Iseconds)"
 git pull --rebase
 git push
 
+logger clean
 git clean -fxd
 git reset --hard HEAD
 
