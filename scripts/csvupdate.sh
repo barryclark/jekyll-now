@@ -34,7 +34,7 @@ wget -O _data/links.csv $CSV_LINKS
 wget -O _data/comuni.csv $CSV_COMUNI 
 
 logger github2CSV
-(cd ../.. && python terremotocentro/scripts/github2CSV.py terremotocentro/_data/issues.csv terremotocentro/_data/issuesjson.json terremotocentro/_data/issues.geojson)
+(cd .. && python terremotocentro/scripts/github2CSV.py terremotocentro/_data/issues.csv terremotocentro/_data/issuesjson.json terremotocentro/_data/issues.geojson)
 
 #wget -O vittime.md $MD_vittime
 
