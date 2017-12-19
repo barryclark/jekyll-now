@@ -3,15 +3,15 @@ layout: post
 title: Sorting socks and other practical uses of algorithms
 ---
 
-Algorithms are awesome. While mathematics is mainly dealing with proving theorems, which merely state some truth, computer scientist study algorithms, which actually *produce results*. A mathematician might be able to tell you that there is a way, a computer scientist will be able to find the way!
+Algorithms are awesome! While mathematics is mainly dealing with proving theorems, which merely state some truth, computer science studies algorithms, which *produce truths*. A mathematician might be able to tell you that there is a way, a computer scientist will be able to find the way!
 
 Recently, I came across the book '[Algorithms to Live by: The Computer Science of Human Decisions](https://www.goodreads.com/book/show/34150973-algorithms-to-live-by)'. Part self-help book on organizing, part popular science, it made for both an enjoyable and interesting read. In the different chapters, the authors discussed different computer science problems and how the solutions can be applied to our daily lives, such as how to seat guests at a wedding party.
 
-Also nice is that the authors provided some biological context. Some algorithms are hard-wired in our genes and brain, courtesy of evolution. Seeing the world around in terms data-processing algorithms was also one of the main ideas of [Homo Deus](https://michielstock.github.io/Homo_Deus/).
+Also nice is that the authors provided some biological context. Some algorithms are hard-wired in our genes and brain, courtesy of evolution. For example, slime molds use their body to 'compute' a minimum spanning tree to connect different food particles in an optimal way. Seeing the world around in terms data-processing algorithms was also one of the main ideas of [Homo Deus](https://michielstock.github.io/Homo_Deus/), another book I recently read.
 
 In this post I give an overview of some of the chapters discussed in the book. I wanted to summarize the complete book, but it contained too many interesting ideas. Hope that this post spark some people to read it, or at the very least save some time sorting out your laundry!
 
-TODO: titeltjes aanpassen, nalezen, figuur?
+TODO: nalezen, figuur?
 
 ## On hiring a new secretary
 
@@ -31,9 +31,11 @@ The secretary problem can pop up in many disguises: hiring candidates, looking f
 
 Where should we go and eat tonight? Are we going to our favorite Italian which we always enjoy or are we taking a gamble and try that new Lebanese place, which might be a hit or miss. Computer scientist refer to this as the **exploration versus exploitation dilemma**. Is it better to exploit your best strategy or to engage in the risky endeavor of to go exploring? Researchers face this problem regularly: continue working on a current research line (resulting in a steady output of papers, but not necessary the most exciting topic) or try this new thing you just read about (which could be high-impact, but will probably be a dead end)?
 
-Gitten developed a formal solution to the exploration versus exploitation dilemma in the form of the eponymous [Gittens index](https://en.wikipedia.org/wiki/Gittins_index). The main idea using a **discount factor**: a reward now is worth more than the same reward in the future. Using some rather complex formulas and a discount factor to weigh the important the Gittens index provides a number that allows you to determine if you should try something new or stick to the same thing.
+A very simple strategy to determine whether you should try something new is the **win-stay, loose-shift algorithm**. Keep doing the same thing as long as you are winning and change when things are going bad. This strategy is provably better than chance, though it is rather severe towards good but imperfect options. Even the best restaurants can have a bad evening and win-stay, loose-shift implies going to a new restaurants after a single disappointment, even it is the last night in town.  
 
-A more simple way guiding your choices is through a **regret bound**: which ones of these things will I regret most of not having done? Often, it is hard to say what you could gain by choice, while it might be easy to state what you would loose. TODO: stukje herlezen en voorbeeld startup
+Gittin developed a formal solution to the exploration versus exploitation dilemma in the form of the eponymous [Gittins index](https://en.wikipedia.org/wiki/Gittins_index). The main idea using a **discount factor**: a reward now is worth more than the same reward in the future. Using some rather complex formulas and a discount factor to weigh the important the Gittins index provides a number that allows you to determine if you should try something new or stick to the same thing.
+
+A more simple way guiding your choices is through a **regret bound**: which ones of these things will I regret most of not having done? Often, it is hard to say what you could gain by choice, while it might be easy to state what you would loose. So if you are considering to making the leap from being an employee to doing a risky startup, think which choice will likely result in the fewest number of regrets when you are 80. Only you can tell.
 
 ## Sorting laundry in linear time
 
@@ -63,7 +65,7 @@ An elegant solution is assuming that the things you used in the past will be use
 
 This stack of documents will essentially be self-organizing in the sense that the documents you need a lot tend to be at the top while papers you do not need any more will slowly collect at the bottom. I find it a comforting thought that one of the most efficient ways to organize paperwork is by putting it on a pile on your desk. You can also applied this on your computer. I set the filing system of my MacBook such that a new Finder window will show all my documents in the order of last opened.
 
-## Scheduling a dinner party
+## Preparing a dinner party
 
 Planning complex project with many interdependent tasks is no easy task. One such project is cooking a multi-course dinner: vegetables should be cut before they can be sautéed, the oven should be used optimally and, for God's sake, do not use the knife for raw vegetables after using it for meat! Scheduling theory is serious business!
 
@@ -75,10 +77,9 @@ If you just have to do some chores at home or some tasks at work, without a spec
 
 So, if one task takes twice as much time as another, only do it first if it is more than two times as important.
 
-## Other lessens from algorithms
+## Other lessons from algorithms
 
-- **Overfitting**: our brains are wired to find pattern that might not be there. Sometimes the most simple explanation is correct. #TODO voorbeeld
+- **Overfitting**: our brains are wired to find pattern that might not be there. Sometimes the most simple explanation is correct.
 - **Relaxation**: can't solve this hard problem? Just relax and forget some constraints to make it easier! *Buying Christmas presents for everyone*
-- **Randomness** as an inspiration for new solutions. *Make your opening page in your browser a random Wikipedia page.*
+- **Randomness** as an inspiration for new ideas. *Make your opening page in your browser a random Wikipedia page. Visit the Tumblrverse!*
 - **Computational kindness**: try to limit the computational burden to your friends and family. *Rather than asking your friends for a data to meet (an open problem), give them some two possible dates to meet (a verification problem).*
-- **Exponential penalty**: ** #TODO: finish this
