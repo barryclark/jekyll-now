@@ -18,18 +18,17 @@ The goal of this project is to explain how campaign rhetoric is reflected in vot
 
 I was able to predict the Election a speech was made in with an Accuracy Score of 97%. Below are the left are the most frequent words per election, and on the right are the coefficients for that election. The goal is to find the topics in each election's speechs reflected in wht factors influence voter participation.
 
-Nominee Speeches | Voter Participation 
-- | - 
-![an image alt text](/images/Voter_images/words_2008.png "Coefficients Graph 2008") | ![an image alt text](/images/Voter_images/total_feat_2008.png "Word Frequency Graph")
+
+![an image alt text](/images/Voter_images/words_2008.png "Coefficients Graph 2008") 
+![an image alt text](/images/Voter_images/total_feat_2008.png "Word Frequency Graph")
 
 
-Nominee Speeches | Voter Participation 
-- | - 
-![an image alt text](/images/Voter_images/words_2012.png "Coefficients Graph 2008") | ![an image alt text](/images/Voter_images/total_feat_2012.png "Word Frequency Graph")
+![an image alt text](/images/Voter_images/words_2012.png "Coefficients Graph 2008") 
+![an image alt text](/images/Voter_images/total_feat_2012.png "Word Frequency Graph")
 The most interesting features in the 2012 election were the Unemployment Rates for October and November. The November Unemployment Rate has a negative coefficient, while the October Rate has a relatively high positive one. The October rate show what people are reacting to conceptually, and the November Rate show the Actual Unemplayment they face on election day. So in counties with 
 
-Nominee Speeches | Voter Participation 
-- | - 
-![an image alt text](/images/Voter_images/words_2016.png "Coefficients Graph 2008") | ![an image alt text](/images/Voter_images/total_feat_2016.png "Word Frequency Graph")
+
+![an image alt text](/images/Voter_images/words_2016.png "Coefficients Graph 2008") 
+![an image alt text](/images/Voter_images/total_feat_2016.png "Word Frequency Graph")
 In the 2016 Election the higher the percent on people in the country who lived under the poverty line, the lower Voter Participation was. Interestingly the most common word by far was people. This may a a coincidence or it oculd be that those who lived above the poverty line reacted favorably to the nominees talking about the people.
 
