@@ -3,7 +3,7 @@ layout: post
 title: "[Video] [Slides] [Dec 2017] Persistent storage with Kubernetes in production - Kubecon + Cloud Native Con 2017, Austin"
 ---
 
-<iframe width="1120" height="630" src="https://www.youtube.com/embed/hqE5c5pyfrk" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+<iframe width="840" height="472" src="https://www.youtube.com/embed/hqE5c5pyfrk" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 
 My talk at Kubecon + Cloud Native Con North America 2017 is titled "Persistent Storage with Kubernetes in Production - which solution and why?" and the slides are available here:
 
