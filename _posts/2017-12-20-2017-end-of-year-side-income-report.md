@@ -24,7 +24,6 @@ I don't make as much using eBates as most people, but I think that's either beca
 
 Square Cash is just referral money, although I'm unsure how much is from my [Square Cash review post](http://hendrixjoseph.github.io/square-cash-review/) and how much is from [/r/churning referral threads](https://www.reddit.com/r/churning/wiki/ccreferrals). Here's my [Square Cash referral link](http://cash.me/app/VBWWSRS).
 
-<span class="table-pie"><span class="table">
 site | amount
 --- | ---
 Amazon Mechanical Turk | $733.19
@@ -33,7 +32,8 @@ Receipt Hog | $60.00
 Ibotta | $20.50
 eBates | $33.87
 Square Cash | $50.00
-</span><span id="survey-pie" class="pie"></span></span>
+
+<div id="survey-pie" class="pie"></div>
 
 ### Flipping
 
@@ -49,7 +49,7 @@ craigslist | $6.08
 Facebook | $219.94
 eBay | $238.44
 
-<div id="flipping-pie"></div>
+<div id="flipping-pie" class="pie"></div>
 
 ### Credit Card Rewards
 
@@ -66,7 +66,7 @@ Chase Freedom | $661.26
 Capital One Quicksilver | $353.55
 US Bank Cash+ | $197.93
 
-<div id="credit-card-pie"></div>
+<div id="credit-card-pie" class="pie"></div>
 
 ### Bank Accounts
 
@@ -84,7 +84,7 @@ Santander | checking account | $450.00
 WPCU | checking & savings account | $199.14
 Ally | savings account | $112.24
 
-<div id="bank-account-pie"></div>
+<div id="bank-account-pie" class="pie"></div>
 
 ### Print-On-Demand Sites
 
@@ -98,7 +98,7 @@ Merch by Amazon | $996.15
 TeeSpring | $17.48 + $18.00 = $35.48
 Redbubble | $2.72
 
-<div id="pod-pie"></div>
+<div id="pod-pie" class="pie"></div>
 
 ### Blogging
 
@@ -113,7 +113,7 @@ what | amount
 Amazon Affiliates | $34.12
 Google Adsense | $11.22
 
-<div id="blogging-pie"></div>
+<div id="blogging-pie" class="pie"></div>
 
 ### Totals
 
@@ -126,16 +126,12 @@ bank accounts | $1266.80
 print-on-demand sites | $1034.35
 blogging | $45.34
 
-<div id="total-pie"></div>
+<div id="total-pie" class="pie"></div>
 
 <style>
-.table, .pie {
+.pie {
     display: inline-block;
     width: 49%;
-}
-
-.table-pie {
-    display: block;
 }
 </style>
 
