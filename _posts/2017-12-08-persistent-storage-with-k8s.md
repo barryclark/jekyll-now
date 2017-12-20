@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Slides] [Dec 2017] Persistent storage with Kubernetes in production - Kubecon + Cloud Native Con 2017, Austin"
+title: "[Video] [Slides] [Dec 2017] Persistent storage with Kubernetes in production - Kubecon + Cloud Native Con 2017, Austin"
 ---
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/hqE5c5pyfrk" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
