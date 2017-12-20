@@ -24,6 +24,8 @@ I don't make as much using eBates as most people, but I think that's either beca
 
 Square Cash is just referral money, although I'm unsure how much is from my [Square Cash review post](http://hendrixjoseph.github.io/square-cash-review/) and how much is from [/r/churning referral threads](https://www.reddit.com/r/churning/wiki/ccreferrals). Here's my [Square Cash referral link](http://cash.me/app/VBWWSRS).
 
+<div><div class="table">
+
 site | amount
 --- | ---
 Amazon Mechanical Turk | $733.19
@@ -33,7 +35,9 @@ Ibotta | $20.50
 eBates | $33.87
 Square Cash | $50.00
 
-<div id="survey-pie"></div>
+</div><div id="survey-pie" class="pie"></div>
+
+</div>
 
 ### Flipping
 
@@ -127,6 +131,13 @@ print-on-demand sites | $1034.35
 blogging | $45.34
 
 <div id="total-pie"></div>
+
+<style>
+.table, .pie {
+    display: inline-block;
+    width: 49%;
+}
+</style>
 
 <script>
 $(document).ready(function() {
