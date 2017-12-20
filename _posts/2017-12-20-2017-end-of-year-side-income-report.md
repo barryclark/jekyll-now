@@ -131,7 +131,6 @@ blogging | $45.34
 <style>
 .pie {
     display: inline-block;
-    width: 49%;
 }
 </style>
 
