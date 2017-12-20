@@ -33,7 +33,7 @@ Ibotta | $20.50
 eBates | $33.87
 Square Cash | $50.00
 
-<div id="survey-pie"><div>
+<div id="survey-pie"></div>
 
 ### Flipping
 
@@ -49,7 +49,7 @@ craigslist | $6.08
 Facebook | $219.94
 eBay | $238.44
 
-<div id="flipping-pie"><div>
+<div id="flipping-pie"></div>
 
 ### Credit Card Rewards
 
@@ -66,7 +66,7 @@ Chase Freedom | $661.26
 Capital One Quicksilver | $353.55
 US Bank Cash+ | $197.93
 
-<div id="credit-card-pie"><div>
+<div id="credit-card-pie"></div>
 
 ### Bank Accounts
 
@@ -84,7 +84,7 @@ Santander | checking account | $450.00
 WPCU | checking & savings account | $199.14
 Ally | savings account | $112.24
 
-<div id="bank-account-pie"><div>
+<div id="bank-account-pie"></div>
 
 ### Print-On-Demand Sites
 
@@ -98,7 +98,7 @@ Merch by Amazon | $996.15
 TeeSpring | $17.48 + $18.00 = $35.48
 Redbubble | $2.72
 
-<div id="pod-pie"><div>
+<div id="pod-pie"></div>
 
 ### Blogging
 
@@ -113,7 +113,7 @@ what | amount
 Amazon Affiliates | $34.12
 Google Adsense | $11.22
 
-<div id="blogging-pie"><div>
+<div id="blogging-pie"></div>
 
 ### Totals
 
@@ -126,7 +126,7 @@ bank accounts | $1266.80
 print-on-demand sites | $1034.35
 blogging | $45.34
 
-<div id="total-pie"><div>
+<div id="total-pie"></div>
 
 <script>
 $(document).ready(function() {
