@@ -35,9 +35,7 @@ Ibotta | $20.50
 eBates | $33.87
 Square Cash | $50.00
 
-</div><div id="survey-pie" class="pie"></div>
-
-</div>
+</div><div id="survey-pie" class="pie"></div></div>
 
 ### Flipping
 
