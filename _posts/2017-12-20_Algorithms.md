@@ -19,7 +19,7 @@ In mathematical circles, this problem is known as the **secretary problem**: a s
 
 There is a rather elegant solution to this problem:
 
-> When searching for the best 'item', first spend $e^{-1}\approx 37$% of your effort just looking. From then onwards settle for an item at least as good as what you have encountered up to that moment.
+> When searching for the best 'item', first spend $$e^{-1}\approx 37$$% of your effort just looking. From then onwards settle for an item at least as good as what you have encountered up to that moment.
 
 Returning to the ice cream dilemma, if you can reasonably try ten flavors, the best strategy is to taste and reject the first four flavors to get a feel of the 'distribution' of the flavors. Now that you have some points of reference, pick the first flavor that tastes better than you had so far. If you found nothing that surpasses the initial four, you are out of luck and have to stick with the last flavor. Better some ice cream than none at all!
 
@@ -37,9 +37,9 @@ A more simple way guiding your choices is through a **regret bound**: which ones
 
 ## Sorting laundry in linear time
 
-Despite having a master degree in engineering, I have to admit that I do not have a solid grasp on how to operate our washing machine. Hence, more often than not I am the one who has to fold the laundry that my partner has washed. No problem, I can treat this as an exercise in mindfulness. Except for the socks. We seem to have an endless variety of different kinds of socks (my mother has a shop selling underwear). Most of my time in the laundry room is finding the matching pairs of socks. Sadly, I use a rather inefficient form of insertion sort: I pick one sock (brightly colored ones are first to go) and subsequently comb trough the pile to find its partner. Repeat until task completed. This leaves me with a depressing time complexity of $\mathcal{O}(n^2)$, time proportional to the number of socks squared.
+Despite having a master degree in engineering, I have to admit that I do not have a solid grasp on how to operate our washing machine. Hence, more often than not I am the one who has to fold the laundry that my partner has washed. No problem, I can treat this as an exercise in mindfulness. Except for the socks. We seem to have an endless variety of different kinds of socks (my mother has a shop selling underwear). Most of my time in the laundry room is finding the matching pairs of socks. Sadly, I use a rather inefficient form of insertion sort: I pick one sock (brightly colored ones are first to go) and subsequently comb trough the pile to find its partner. Repeat until task completed. This leaves me with a depressing time complexity of $$\mathcal{O}(n^2)$$, time proportional to the number of socks squared.
 
-When going through your laundry, organizing your contacts, alphabetizing your books or sorting a pack of cards, any sorting method requires more effort than going though the whole collection once. More precisely, it requires about $\mathcal{O}(n\log n)$ comparisons on average for the best methods. This is better than how I organize my socks, but still requires several passes through the laundry basket to complete this chore.
+When going through your laundry, organizing your contacts, alphabetizing your books or sorting a pack of cards, any sorting method requires more effort than going though the whole collection once. More precisely, it requires about $$\mathcal{O}(n\log n)$$ comparisons on average for the best methods. This is better than how I organize my socks, but still requires several passes through the laundry basket to complete this chore.
 
 Why do we sort when it requires that much work? Because it is much easier to find items from a sorted collection compared to an unorganized collection! And this is the **searching-sorting trade-off**. Sorting is a lot of work in advance, but you save time searching on the long run.
 
@@ -47,7 +47,7 @@ As an easy alternative for keeping your stuff completely sorted you can use **bi
 
 > Ordering and keeping things ordered is often an unnecessary hassle. Instead, simply divide your collection in a manageable number of 'bins'.
 
-Sorting items into $k$ bins has a time complexity of merely $\mathcal{O}(kn)$. Furthermore, there are relatively few objects per bin, so sorting the individual bins is easy. I actually use this system myself for my books, rather than sorted by author, I organize my books by color. In addition to being esthetically pleasing, I can find my books much easier based on the color of their cover than the author's name.
+Sorting items into $$k$$ bins has a time complexity of merely $$\mathcal{O}(kn)$$. Furthermore, there are relatively few objects per bin, so sorting the individual bins is easy. I actually use this system myself for my books, rather than sorted by author, I organize my books by color. In addition to being esthetically pleasing, I can find my books much easier based on the color of their cover than the author's name.
 
 And yes, since having read *Algorithms to Live by* I subdivide my socks in brownish, dark and colored groups. Slightly mismatched feet are as small price to pay for a great time complexity!
 
