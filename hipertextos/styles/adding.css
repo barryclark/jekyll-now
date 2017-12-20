@@ -32,7 +32,7 @@ section.cover-justify p {padding: 6px 18px 0 18px;line-height: 23px;font-size: 1
 .cover#page-header  {background-color: var(--color-white);}
 .serveis-header {border-bottom:10px solid var(--color-hardgrey);background-color: var(--color-black);color: var(--color-hardgrey);}
 .medias#page-header {border-bottom:10px solid var(--color-grey);background-color: var(--color-softgrey);color: var(--color-grey);}
-#icons a {border:thin solid var(--color-soft);background: transparent;}
+#icons a {border:thin solid var(--color-soft);background: transparent;border-radius:50%;}
 #icons a:hover {border:thin solid var(--color-blue);}
 figure em a {border:none;border-bottom;line-height:0.2em;padding:12px 4px;}
 /* Portfolio Nav */
@@ -138,12 +138,13 @@ main { margin-bottom: 232px;z-index: 1;background-color: var(--color-white);
     #page-nav a {font-size: 13px;}
     strong em a {font-size: 15px;}
     main { margin-bottom: 360px;	}
-    #icons a {width:30%;}
     .cell-6, .pushed-6 {width:85%;margin-left:8% !important;}
     #coffee .thumb-2 {width: 90%!important;}
     #coffee .pushed-5 {margin-left:5%!important;}
+    #icons a {width:15%;padding:12px;border-radius:2px;}
 }
 
 @media (max-width: 432px) {
     #page-header.cover {background-image: url("/img/home_m.jpg");background-size: 100% auto;background-position: fixed !important;}
+	#icons a {width:18%;padding:8px;}
 }
