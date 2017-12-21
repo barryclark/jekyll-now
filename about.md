@@ -1,15 +1,18 @@
----
+﻿---
 layout: page
-title: About
+title: 三千世界
 permalink: /about/
 ---
 
-Some information about you!
+宇宙、世界、人生
 
-### More Information
+### 简介
 
-A place to include any other types of information that you'd like to include about yourself.
+三千是一个奇妙的数字;
+Trisahasra-maha-sahasra-lokadhatu 是一个奇妙的概念;
+真是……想想就容易着迷啊
 
-### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+### 联系我
+
+[3000@3000shijie.com](mailto:3000@3000shijie.com)
