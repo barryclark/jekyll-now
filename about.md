@@ -1,15 +1,17 @@
 ---
 layout: page
-title: About
+title: 关于
 permalink: /about/
 ---
 
 Some information about you!
 
-### More Information
+### 简介
 
-A place to include any other types of information that you'd like to include about yourself.
+从硅谷看到的世界，或许只是世界的倒影吧
+所以，我随便说说
+您随便听听
 
-### Contact me
+### 联系我
 
-[email@domain.com](mailto:email@domain.com)
+[3000@3000shijie.com](mailto:3000@3000shijie.com)
