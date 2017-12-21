@@ -8,8 +8,8 @@ permalink: /about/
 
 ### 简介
 
-三千是一个奇妙的数字
-Trisahasra-maha-sahasra-lokadhatu 是一个奇妙的概念
+三千是一个奇妙的数字。
+Trisahasra-maha-sahasra-lokadhatu 是一个奇妙的概念。
 真是……想想就容易着迷啊
 
 
