@@ -1,16 +1,17 @@
 ---
 layout: page
-title: 关于
+title: 三千世界
 permalink: /about/
 ---
 
-Some information about you!
+宇宙、世界、人生
 
 ### 简介
 
-从硅谷看到的世界，或许只是世界的倒影吧
-所以，我随便说说
-您随便听听
+三千是一个奇妙的数字
+Trisahasra-maha-sahasra-lokadhatu 是一个奇妙的概念
+真是……想想就容易着迷啊
+
 
 ### 联系我
 
