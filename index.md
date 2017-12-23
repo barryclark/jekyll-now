@@ -26,6 +26,7 @@ title: Πως αγοράζουμε, πουλάμε, ξοδεύουμε και δ
 - [Πως θα διαφημίσω ότι δέχομαι Bitcoin ως τρόπο πληρωμής;](#promote)
 - [Ποια άλλα κρυπτονομίσματα υπάρχουν πέρα από το Bitcoin;](#cryptocurrencies)
 - [Τι πρέπει να προσέχω όταν αγοράζω ή επενδύω σε κρυπτονομίσματα;](#scams)
+- [Ποια projects σχετικά με κρυπτονομίσματα και blockchain υπάρχουν στην Ελλάδα και στην Κύπρο;](#projects)
 
 ### <a name="merchant-table"></a>Ποιές εταιρείες και επαγγελματίες δέχονται Bitcoin στην Ελλάδα;
 
@@ -215,7 +216,18 @@ title: Πως αγοράζουμε, πουλάμε, ξοδεύουμε και δ
 - Μερικές γνωστές απάτες που έχουν εμφανιστεί στην Ελλάδα: [OneCoin/OneLife](https://en.wikipedia.org/wiki/OneCoin), S-coin/Coinspace. Μπορείτε να διαβάσετε περισσότερα στα Ελληνικά στο [Scamcoin Detector](http://scamdetectorgr.blogspot.gr/).
 - Μερικά άρθρα που περιγράφουν απάτες με κρυπτονομίσματα: [https://blog.xapo.com/beware-of-extraordinary-claims/](https://blog.xapo.com/beware-of-extraordinary-claims/), [http://www.badbitcoin.org/tips/](http://www.badbitcoin.org/tips/), [https://www.weusecoins.com/bitcoin-scams-how-stay-safe/](https://www.weusecoins.com/bitcoin-scams-how-stay-safe/), [https://www.coingecko.com/buzz/complete-guide-to-bitcoin-scams](https://www.coingecko.com/buzz/complete-guide-to-bitcoin-scams). Βίντεο που περιγράφει πως δουλεύουν τα πυραμιδικά σχήματα Πόνζι: [https://www.youtube.com/watch?v=VXRkfqw67GE](https://www.youtube.com/watch?v=VXRkfqw67GE).
 
-Τελευταία ενημέρωση: 2017-12-04
+### <a name="projects"></a> Ποια projects σχετικά με κρυπτονομίσματα και blockchain υπάρχουν στην Ελλάδα και στην Κύπρο;
+
+- Το [Coinomi multicurrency wallet](https://coinomi.com)
+- Το [University of Nicosia δωρεάν MOOC Introduction to Digital Currencies και το MSc in Digital Currency](https://digitalcurrency.unic.ac.cy)
+- Η [Synaphea](https://synaphea.com) Enterprise Blockchain Solutions
+- Η [norbloc](https://norbloc.com)
+- Το [Oceanus Foundation](http://www.oceanus.tech)
+- Η [TaxExperts](https://www.taxexperts.gr) ασχολείται με θέματα φορολογίας κρυπτονομισμάτων
+- Η [stampd](https://stampd.io)
+- Η [BitforTip](https://www.bitfortip.com)
+
+Τελευταία ενημέρωση: 2017-12-23
 
 <!-- <div class="posts">
   {% for post in site.posts %}

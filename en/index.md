@@ -7,6 +7,7 @@ Come to one of our meetups in [Athens](https://www.meetup.com/BlockchainGreece-0
 
 - [Which companies, stores and professionals accept Bitcoin in Greece?](#merchant-table)
 - [How can I buy Bitcoin in Greece?](#buybitcoin)
+- [What cryptocurrency and blockchain projects are there in Greece and Cyprus?](#projects)
 
 ### <a name="merchant-table"></a>Which companies, stores and professionals accept Bitcoin in Greece?
 
@@ -70,8 +71,21 @@ Come to one of our meetups in [Athens](https://www.meetup.com/BlockchainGreece-0
 	Sample receipt from Chip-Chap:
 
 	![](/images/Page 8.png)
+	
 
-Last update: 2017-12-04
+### <a name="projects"></a> What cryptocurrency and blockchain projects are there in Greece and Cyprus?
+
+- The [Coinomi multicurrency wallet](https://coinomi.com)
+- The [University of Nicosia free Introduction to Digital Currencies MOOC  and the MSc in Digital Currency](https://digitalcurrency.unic.ac.cy)
+- [Synaphea](https://synaphea.com) Enterprise Blockchain Solutions
+- [norbloc](https://norbloc.com)
+- The [Oceanus Foundation](http://www.oceanus.tech)
+- [TaxExperts](https://www.taxexperts.gr) offers cryptocurrency taxation advice
+- [stampd](https://stampd.io)
+- [BitforTip](https://www.bitfortip.com)
+
+
+Last update: 2017-12-23
 
 <!-- <div class="posts">
   {% for post in site.posts %}
