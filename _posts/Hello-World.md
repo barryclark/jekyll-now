@@ -7,6 +7,8 @@ Testing: Copied from my personal notes - Normal Distribution
 
 Source: https://en.wikipedia.org/wiki/Normal_distribution
 
+| Fields | Values | 
+|---|---|
 |Notation	|	$$ N(\mu,\sigma^2) $$|
 |Parameters	|	$$ \mu\in\bold{R} $$ -- mean (location) <br> $$ \sigma^2>0 $$ -- variance (squared scale)|
 |pdf	|	{{Normal Distribution pdf}}|
