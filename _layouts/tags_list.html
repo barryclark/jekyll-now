@@ -1,0 +1,19 @@
+{% assign tags = include.tags | split:'|' | sort | uniq %}
+
+{% if include.tags.size > 0 %}
+    <footer>
+        <div class="tag-list">
+        {% if include.tags.size == 1 %}
+          <div class="meta">Tag</div>
+        {% elsif include.tags.size > 1 %}
+          <div class="meta">Tags</div>
+        {% endif %}
+
+        {% for tag in tags %}
+          <a class="button" href="{{site.baseurl}}/tags#{{tag}}">
+            <p><i class="fa fa-tag fa-fw"></i> {{ tag }}</p>
+          </a>
+        {% endfor %}
+        </div>
+    </footer>
+  {% endif %}
