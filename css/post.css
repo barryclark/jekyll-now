@@ -1,0 +1,116 @@
+/* FONTS */
+@font-face {
+	font-family: "Aleo";
+	font-weight: normal;
+	font-style: italic;
+	src: url("../resources/fonts/aleo/Aleo-Italic.otf");
+}
+
+@font-face {
+	font-family: "Aleo";
+	font-weight: bold;
+	font-style: normal;
+	src: url("../resources/fonts/aleo/Aleo-Bold.otf");
+}
+
+/* GENERAL */
+
+/* POST */
+article#mainPostArticle {
+	margin-bottom: 8.98vw;
+}
+
+article#mainPostArticle > *{
+	width: 100%;
+}
+
+header#postHeader, section#postContentSection {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/*Header*/
+header#postHeader picture, header#postHeader picture img{
+	width: 100%;
+}
+
+header#postHeader picture img {
+	height: 43vw;
+	background: gold;
+}
+
+header#postHeader hgroup {
+	margin-top: 8.98vw;
+	margin-bottom: 0.78vw;
+}
+
+header#postHeader hgroup > * {
+	width: 52.73vw;
+}
+
+header#postHeader hgroup h1 {
+	font-family: "LeagueSpartan", sans-serif;
+	font-weight: bold;
+	font-size: 3.51vw;
+}
+
+header#postHeader hgroup h2 {
+	margin-top: 0.39vw;
+	font-family: "Aleo", serif;
+	font-weight: normal;
+	font-size: 1.95vw;
+}
+
+/*Content*/
+section#postContentSection > *{
+	width: 52.73vw;
+}
+
+section#postContentSection h1 {
+	margin-top: 6.25vw;
+	font-family: "LeagueSpartan", sans-serif;
+	font-weight: bold;
+	font-size: 2.929vw;
+}
+
+section#postContentSection h2 {
+	margin-top: 2.34vw;
+	font-family: "Aleo", serif;
+	font-weight: bold;
+	font-size: 2.539vw;
+}
+
+section#postContentSection h3 {
+	margin-top: 2.34vw;
+	font-family: "Aleo", serif;
+	font-weight: bold;
+	font-size: 1.757vw;
+}
+
+section#postContentSection p {
+	margin-top: 1.56vw;
+	font-family: "Aleo", serif;
+	font-weight: normal;
+	font-size: 1.757vw;
+	line-height: 2.734vw;
+}
+
+section#postContentSection ul, ol {
+	margin-top: 1.56vw;
+	list-style-position: inside;
+}
+
+section#postContentSection li {
+	font-family: "Aleo", serif;
+	font-weight: normal;
+	font-size: 1.757vw;
+	line-height: 2.734vw
+}
+
+section#postContentSection img {
+	margin-top: 2.34vw;
+	margin-bottom: 0.78vw;
+	background-color: red;
+	height: 240px;
+}

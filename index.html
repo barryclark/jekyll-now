@@ -2,17 +2,52 @@
 layout: default
 ---
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
+<section id="mainAboutSection">
+	<article>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vestibulum turpis ac porttitor volutpat. Mauris facilisis velit sit amet nulla semper, a ultricies nunc gravida.
+		</p>
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+		<footer>
+			Design
+		</footer>
+	</article>
 
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
+	<article>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vestibulum turpis ac porttitor volutpat. Mauris facilisis velit sit amet nulla semper, a ultricies nunc gravida.
+		</p>
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
-</div>
+		<footer>
+			Code
+		</footer>
+	</article>
+</section>
+
+<section id="mainProjectsSection">
+
+	{% assign featuredPosts = "" | split:"|"  %}
+	{% assign nonFeaturedPosts = "" | split:"|"  %}
+        {% for post in site.posts %}
+            {% if post.featured %}
+                {% assign featuredPosts = featuredPosts | push: post %}
+            {% else %}
+                {% assign nonFeaturedPosts = nonFeaturedPosts | push: post %}
+            {% endif %}
+        {% endfor %}
+    {% assign featuredPosts = featuredPosts | sort: 'weight' | reverse %}
+    {% assign nonFeaturedPosts = nonFeaturedPosts | sort: 'weight' | reverse %}
+
+
+	<div id="mainFeaturedProjectsDiv">
+		{% for post in featuredPosts %}
+			{% include index-post.html post=post %}
+		{% endfor %}
+	</div>
+
+	<div id="mainNonFeaturedProjectsDiv">
+		{% for post in nonFeaturedPosts %}
+			{% include index-post.html post=post %}
+		{% endfor %}
+	</div>
+</section>

@@ -1,0 +1,202 @@
+/* GENERAL */
+main#bodyMain > section {
+	padding: 0px 8.98vw;
+}
+
+/* ABOUT */
+main#bodyMain section#mainAboutSection {
+	display: flex;
+	margin-top: 9.68vw;/*124px;*/
+	margin-bottom: 14.37vw;/*184px;*/
+	margin-left: auto;
+	margin-right: auto;
+	width: 52.5vw;
+}
+
+section#mainAboutSection article {
+	width: 50%;
+	margin-right: 4px;
+}
+
+section#mainAboutSection article p {
+	font-family: "Aleo", serif;
+	font-size: 1.95vw;
+	line-height: 3.32vw;
+	text-align: right;
+}
+
+section#mainAboutSection article footer {
+	margin-top: 24px;
+	font-family: "LeagueSpartan", sans-serif;
+	font-weight: bold;
+	font-size: 4.29vw;
+	text-align: right;
+	text-transform: uppercase;
+	opacity: 0.66;
+}
+
+section#mainAboutSection article:last-of-type {
+	margin-left: 4px;
+	margin-right: 0px;
+}
+
+section#mainAboutSection article:last-of-type p {
+	text-align: left;
+	opacity: 0.50;
+}
+
+section#mainAboutSection article:last-of-type footer {
+	text-align: left;
+	opacity: 0.22;
+}
+
+/* PROJECTS */
+article.projectArticle {
+	position: relative;
+}
+
+article.projectArticle > section {
+	width: 100%;
+}
+
+/*Text*/
+section.projectArticleTextSection {
+	padding-top: 44px;
+}
+
+section.projectArticleTextSection header h1{
+	font-family: "LeagueSpartan", sans-serif;
+	font-weight: bold;
+	font-size: 3.7vw;/*38px;*/
+}
+
+section.projectArticleTextSection header h2{
+	font-family: "Aleo", serif;
+	font-size: 1.56vw;/*16px;*/
+	font-weight: normal;
+	margin-top: 24px;
+}
+
+section.projectArticleTextSection article p {
+	font-family: "Aleo", serif;
+	font-size: 16px;
+	line-height: 26px;
+	margin-top: 24px;
+}
+
+section.projectArticleTextSection footer {
+	margin-top: 24px;
+}
+
+section.projectArticleTextSection footer a {
+	font-family: "Aleo", serif;
+	font-size: 16px;
+	display: inline-block;
+	border: solid 1px black;
+	padding: 12px 24px;
+
+	transition: background-color 0.3s;
+}
+
+section.projectArticleTextSection footer a:hover {
+	background-color: black;
+	color: white;
+}
+
+/*Picture*/
+section.projectArticlePictureSection {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+}
+
+section.projectArticlePictureSection picture {
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+}
+
+section.projectArticlePictureSection picture:nth-of-type(1) {
+	background-color: gold;
+}
+
+section.projectArticlePictureSection picture:nth-of-type(2) {
+	display: none;
+	background-color: red;
+}
+
+/*Featured*/
+div#mainFeaturedProjectsDiv article.projectArticle{
+	display: flex;
+	align-items: flex-start;
+	width: 100%;
+	margin-bottom: 2.34vw;
+}
+
+div#mainFeaturedProjectsDiv section.projectArticleTextSection{
+	width: 44%;
+	padding-right: 3.5vw; 
+}
+
+div#mainFeaturedProjectsDiv article.projectArticle:nth-of-type(even) {
+	flex-direction: row-reverse;
+}
+
+div#mainFeaturedProjectsDiv article.projectArticle:nth-of-type(even) section.projectArticleTextSection{
+	width: 44%;
+	padding-right: 0px;
+	padding-left: 3.5vw; /*36px;*/
+}
+
+div#mainFeaturedProjectsDiv section.projectArticlePictureSection {
+	position: relative;
+	width: 56%;
+	height: 474px;
+}
+
+div#mainFeaturedProjectsDiv section.projectArticlePictureSection picture:nth-of-type(1) {
+	right: -8.98vw;
+}
+
+div#mainFeaturedProjectsDiv section.projectArticlePictureSection picture:nth-of-type(2) {
+	display: block;
+}
+
+div#mainFeaturedProjectsDiv article.projectArticle:nth-of-type(even) section.projectArticlePictureSection picture:nth-of-type(1){
+	left: -8.98vw;
+	right: 0px;
+}
+
+/*Non Featured*/
+div#mainNonFeaturedProjectsDiv {
+	
+}
+
+div#mainNonFeaturedProjectsDiv article.projectArticle {
+	width: 44%;
+	height: 474px;
+	display: inline-block;
+}
+
+div#mainNonFeaturedProjectsDiv article.projectArticle:nth-of-type(odd) {
+	margin-right: 12%;
+}
+
+div#mainNonFeaturedProjectsDiv article.projectArticle:nth-of-type(even) {
+	padding-left: 3.5vw;
+	margin-right: 0px;
+}
+
+div#mainNonFeaturedProjectsDiv section.projectArticlePictureSection picture:nth-of-type(1) {
+	left: -8.98vw;
+}
+
+div#mainNonFeaturedProjectsDiv article.projectArticle:nth-of-type(even) section.projectArticlePictureSection picture:nth-of-type(1) {
+	left: 0px;
+	right: -8.98vw;
+}
