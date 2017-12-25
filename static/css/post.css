@@ -108,8 +108,9 @@ section#postContentSection li {
 	line-height: 2.734vw
 }
 
-section#postContentSection img {
-	margin-top: 2.34vw;
+section#postContentSection p img {
+	width: 100%;
+	margin-top: 0.78vw;
 	margin-bottom: 0.78vw;
 	background-color: red;
 	height: 240px;
