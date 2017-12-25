@@ -6,8 +6,7 @@
 			</a>	
 			<h2>
 				{% for role in include.post.roles %}
-					{{ role }}
-					{% unless forloop.last %}, {% endunless %}
+					{{ role }}{% unless forloop.last %}, {% endunless %}
 				{% endfor %}
 			</h2>
 
