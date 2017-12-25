@@ -6,6 +6,7 @@ main#bodyMain > section {
 /* ABOUT */
 main#bodyMain section#mainAboutSection {
 	display: flex;
+	padding: 0px;
 	margin-top: 9.68vw;/*124px;*/
 	margin-bottom: 14.37vw;/*184px;*/
 	margin-left: auto;
