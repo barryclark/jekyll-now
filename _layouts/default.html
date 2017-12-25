@@ -4,15 +4,15 @@
 <head>
   {% include meta.html %}
   <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }}</title>
-  <link rel="stylesheet" type="text/css" href="{{css/global.css | absolute_url}}">
-  <link rel="stylesheet" type="text/css" href="{{css/index.css | absolute_url}}">
-  <link rel="stylesheet" type="text/css" href="{{css/post.css | absolute_url}}">
+  <link rel="stylesheet" type="text/css" href="{{static/css/global.css | absolute_url}}">
+  <link rel="stylesheet" type="text/css" href="{{static/css/index.css | absolute_url}}">
+  <link rel="stylesheet" type="text/css" href="{{static/css/post.css | absolute_url}}">
 </head>
 
 <body>
   <nav id="bodyNav">
     <section id="navLogo">
-      <a href="{{ site.baseurl }}">
+      <a href="/">
         <span>Diego</span>
         <span>Cruz</span>
       </a>
