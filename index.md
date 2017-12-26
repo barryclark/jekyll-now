@@ -26,6 +26,7 @@ title: Πως αγοράζουμε, πουλάμε, ξοδεύουμε και δ
 - [Πως θα διαφημίσω ότι δέχομαι Bitcoin ως τρόπο πληρωμής;](#promote)
 - [Ποια άλλα κρυπτονομίσματα υπάρχουν πέρα από το Bitcoin;](#cryptocurrencies)
 - [Τι πρέπει να προσέχω όταν αγοράζω ή επενδύω σε κρυπτονομίσματα;](#scams)
+- [Έχω οικιακό τιμολόγιο €0,10/KWh της ΔΕΗ, μπορώ να κάνω mining κρυπτονομισμάτων;](#electricitycost)
 - [Ποια projects σχετικά με κρυπτονομίσματα και blockchain υπάρχουν στην Ελλάδα και στην Κύπρο;](#projects)
 
 ### <a name="merchant-table"></a>Ποιές εταιρείες και επαγγελματίες δέχονται Bitcoin στην Ελλάδα;
@@ -215,6 +216,11 @@ title: Πως αγοράζουμε, πουλάμε, ξοδεύουμε και δ
 - Ένα ανταλλακτήριο που πουλάει ένα κρυπτονόμισμα σε πολύ χαμηλή τιμή (π.χ. πουλάει Bitcoin στη μισή τιμή σε σχέση με άλλα ανταλλακτήρια) είναι απάτη.
 - Μερικές γνωστές απάτες που έχουν εμφανιστεί στην Ελλάδα: [OneCoin/OneLife](https://en.wikipedia.org/wiki/OneCoin), S-coin/Coinspace. Μπορείτε να διαβάσετε περισσότερα στα Ελληνικά στο [Scamcoin Detector](http://scamdetectorgr.blogspot.gr/).
 - Μερικά άρθρα που περιγράφουν απάτες με κρυπτονομίσματα: [https://blog.xapo.com/beware-of-extraordinary-claims/](https://blog.xapo.com/beware-of-extraordinary-claims/), [http://www.badbitcoin.org/tips/](http://www.badbitcoin.org/tips/), [https://www.weusecoins.com/bitcoin-scams-how-stay-safe/](https://www.weusecoins.com/bitcoin-scams-how-stay-safe/), [https://www.coingecko.com/buzz/complete-guide-to-bitcoin-scams](https://www.coingecko.com/buzz/complete-guide-to-bitcoin-scams). Βίντεο που περιγράφει πως δουλεύουν τα πυραμιδικά σχήματα Πόνζι: [https://www.youtube.com/watch?v=VXRkfqw67GE](https://www.youtube.com/watch?v=VXRkfqw67GE).
+
+
+### <a name="electricitycost"></a> Έχω οικιακό τιμολόγιο €0,10/KWh της ΔΕΗ, μπορώ να κάνω mining κρυπτονομισμάτων;
+
+[Το οικιακό τιμολόγιο της ΔΕΗ](https://bitcoinx.gr/ποιό-είναι-το-κόστος-της-κιλοβατώρας/) για κατανάλωση 2000-3000KWh ανά τετράμηνο, μετά όλους τους φόρους και τις προσαυξήσεις, είναι €0,2189375/KWh.
 
 ### <a name="projects"></a> Ποια projects σχετικά με κρυπτονομίσματα και blockchain υπάρχουν στην Ελλάδα και στην Κύπρο;
 
