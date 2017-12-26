@@ -224,10 +224,11 @@ title: Πως αγοράζουμε, πουλάμε, ξοδεύουμε και δ
 - Η [norbloc](https://norbloc.com)
 - Το [Oceanus Foundation](http://www.oceanus.tech)
 - Η [TaxExperts](https://www.taxexperts.gr) ασχολείται με θέματα φορολογίας κρυπτονομισμάτων
-- Η [stampd](https://stampd.io)
-- Η [BitforTip](https://www.bitfortip.com)
+- Το [stampd](https://stampd.io)
+- Το [BitforTip](https://www.bitfortip.com)
+- Το [CoinLib](https://coinlib.io)
 
-Τελευταία ενημέρωση: 2017-12-23
+Τελευταία ενημέρωση: 2017-12-26
 
 <!-- <div class="posts">
   {% for post in site.posts %}

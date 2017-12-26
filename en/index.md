@@ -83,9 +83,9 @@ Come to one of our meetups in [Athens](https://www.meetup.com/BlockchainGreece-0
 - [TaxExperts](https://www.taxexperts.gr) offers cryptocurrency taxation advice
 - [stampd](https://stampd.io)
 - [BitforTip](https://www.bitfortip.com)
+- [CoinLib](https://coinlib.io)
 
-
-Last update: 2017-12-23
+Last update: 2017-12-26
 
 <!-- <div class="posts">
   {% for post in site.posts %}
