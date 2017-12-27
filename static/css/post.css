@@ -36,8 +36,7 @@ header#postHeader picture, header#postHeader picture img{
 }
 
 header#postHeader picture img {
-	height: 43vw;
-	background: gold;
+	width: 100%;
 }
 
 header#postHeader hgroup {
