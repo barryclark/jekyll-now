@@ -201,6 +201,10 @@ div#mainNonFeaturedProjectsDiv article.projectArticle:nth-of-type(even) {
 	margin-right: 0px;
 }
 
+div#mainNonFeaturedProjectsDiv section.projectArticlePictureSection {
+	display: none;
+}
+
 div#mainNonFeaturedProjectsDiv section.projectArticlePictureSection picture:nth-of-type(1) {
 	left: -8.98vw;
 }
