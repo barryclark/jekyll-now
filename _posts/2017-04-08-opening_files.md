@@ -1,10 +1,10 @@
 ---
 title: "Opening text files in Python"
-date: 2017-10-20 08:26:28 -0400
-categories: jekyll update
+date: 2017-04-08
+categories: nltk python
 ---
 
-Python offers several different methods for opening files, but are all options equally good? What's the best method for the generic case of opening a file?
+Python offers several different methods for opening text files, but are all options equally good? What's the best method for the generic case of opening a text file?
 
 The most basic is the following:
 ```python

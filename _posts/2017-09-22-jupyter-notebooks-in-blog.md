@@ -1,7 +1,7 @@
 ---
 title: "Preparing Jupyter Notebooks for Blog"
-date: 2017-09-22 08:26:28 -0400
-categories: Jupyter-Notebooks update
+date: 2017-09-22
+categories: Jupyter-Notebooks
 ---
 
 How can I convert my Jupyter Notebooks to [Jekyll](https://jekyllrb.com/)-ready blog posts in a single click? How do I streamline that process so that I can quickly fix typos, better explain topics, or add new ideas without the hassle of manually converting the notebooks to something more Jekyll-friendly? To answer this, I decided to write a simple batch script that allows me to edit posts in Jupyter Notebooks and then post them as HTMLs. This is built for Windows and using [Github Pages](https://pages.github.com/), which is what I use to host this blog.

@@ -1,8 +1,3 @@
----
-title: "NLTK Tutorial"
-date: 2017-10-20 08:26:28 -0400
-categories: jekyll update
----
 
 The Natural Language ToolKit (NLTK) is the most popular library for natural language processing (NLP) in Python. The authors also created the [NTLK textbook](http://www.nltk.org/book/), which is a great resource for learning how to use NLTK. This notebook is a compilation of the parts of NLTK that I found most interesting.
 

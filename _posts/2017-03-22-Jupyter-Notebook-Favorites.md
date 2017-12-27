@@ -1,7 +1,7 @@
 ---
 title: "Jupyter Notebook Favorites"
-date: 2017-10-20 08:26:28 -0400
-categories: jekyll update
+date: 2017-03-22
+categories: Jupyter-Notebook cheatsheets
 ---
 
 One of the many great things about Jupyter Notebooks is the ability to add extensions.
@@ -40,7 +40,7 @@ Jupyter Notebooks use MathJax to render LaTeX in Markdown. To add LaTeX, simply 
 
 $c = \sqrt{a^2 + b^2}$
 
-If you want to center your formula, surround it with `$$`:
+If you want to center your formula, surround it with `$$`
 $$
 \begin{align}
 \nabla \times \vec{\mathbf{B}} -\, \frac1c\, \frac{\partial\vec{\mathbf{E}}}{\partial t} & = \frac{4\pi}{c}\vec{\mathbf{j}} \\   \nabla \cdot \vec{\mathbf{E}} & = 4 \pi \rho \\
