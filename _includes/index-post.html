@@ -26,11 +26,15 @@
 	</section>
 	<section class="projectArticlePictureSection">
 		<picture>
-			<img src="{% if include.post.background %}/static/img/{{ include.post.background }}{% endif %}">
+			{% if include.post.background %}
+				<img src="/static/img/{{ include.post.background }}">
+			{% endif %}
 		</picture>
 
 		<picture>
-			<img src="{% if include.post.foreground %}/static/img/{{ include.post.foreground }}{% endif %}">
+			{% if include.post.foreground %}
+				<img src="/static/img/{{ include.post.foreground }}">
+			{% endif %}
 		</picture>
 
 	</section>

@@ -5,7 +5,9 @@ layout: default
 <article id="mainPostArticle">
 	<header id="postHeader">
 		<picture>
-			<img src="{% if page.banner %}/static/img/{{ page.banner }}{% endif %}">
+			{% if page.banner %}
+				<img src="/static/img/{{ page.banner }}">
+			{% endif %}
 		</picture>
 
 		<hgroup>
