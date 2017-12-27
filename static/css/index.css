@@ -54,7 +54,7 @@ section#mainAboutSection article:last-of-type footer {
 /* PROJECTS */
 article.projectArticle {
 	position: relative;
-	margin-bottom: 2.34vw;
+	margin-bottom: 6.05vw;
 }
 
 article.projectArticle > section {
@@ -135,7 +135,6 @@ section.projectArticlePictureSection picture:nth-of-type(1) img{
 	height: 100%;
 
 	object-fit: contain;
-	object-position: bottom right;
 }	
 
 section.projectArticlePictureSection picture:nth-of-type(2) {
@@ -171,6 +170,7 @@ div#mainFeaturedProjectsDiv section.projectArticlePictureSection {
 
 div#mainFeaturedProjectsDiv section.projectArticlePictureSection picture:nth-of-type(1) {
 	right: -8.98vw;
+	object-position: bottom right;
 }
 
 div#mainFeaturedProjectsDiv section.projectArticlePictureSection picture:nth-of-type(2) {
@@ -180,6 +180,7 @@ div#mainFeaturedProjectsDiv section.projectArticlePictureSection picture:nth-of-
 div#mainFeaturedProjectsDiv article.projectArticle:nth-of-type(even) section.projectArticlePictureSection picture:nth-of-type(1){
 	left: -8.98vw;
 	right: 0px;
+	object-position: bottom left;
 }
 
 /*Non Featured*/
