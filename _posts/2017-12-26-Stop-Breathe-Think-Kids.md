@@ -3,6 +3,7 @@ layout: post
 title: Stop, Breathe & Think Kids
 description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vestibulum turpis ac porttitor volutpat. Mauris facilisis velit sit amet nulla semper, a ultricies nunc gravida.
 background: index/sbt-postBackground.svg
+banner: posts/sbt-postBanner.png
 featured: true
 roles: [iOS Developer, UI Engineer]
 order: 1
