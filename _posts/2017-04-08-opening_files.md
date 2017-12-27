@@ -1,6 +1,7 @@
 ---
-layout: post
-title: Opening files in Python
+title: "Opening text files in Python"
+date: 2017-10-20 08:26:28 -0400
+categories: jekyll update
 ---
 
 Python offers several different methods for opening files, but are all options equally good? What's the best method for the generic case of opening a file?

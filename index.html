@@ -1,31 +1,7 @@
 ---
-layout: default
+# You don't need to edit this file, it's empty on purpose.
+# Edit theme's home layout instead if you wanna make some changes
+# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+layout: home
+author_profile: true
 ---
-
-<div class="posts">
-	{% for post in site.posts %}
-
-	{% capture tags %}
-
-	{% for tag in post.tags%}
-	{{ tag | replace: " ", "-"}}
-	{% endfor %}
-
-	{% endcapture %}
-
-	<article class="post {{ tags | truncatewords: post.tags.size | replace: '...', ''}}">
-
-		<h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
-		<div class="entry">
-<!-- 		{% if post.excerpt %}
-    		{{ post.excerpt | strip_html | truncatewords: 50}}
-		{% endif %} -->
-			<!-- {{ post.excerpt | strip_html | truncatewords: 50}} -->
-			{{ post.content | strip_html | truncatewords: 25 }}
-		</div>
-
-		<a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-	</article>
-	{% endfor %}
-</div>
