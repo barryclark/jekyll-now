@@ -13,16 +13,16 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Data science blog
+title: 
 email: julius.s.simonelli@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  This is my new blog
+  This is my blog
 github: [metadata]
 baseurl: #/mm-remote-theme-test
 url: https://jss367.github.io/
 twitter_username: 
 github_username: jss367
-minimal_mistakes_skin: dark
+minimal_mistakes_skin: dirt
 
 # Build settings
 markdown: kramdown
