@@ -1,0 +1,725 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../.rvm/gems/ruby-2.0.0-p353/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../.rvm/gems/ruby-2.0.0-p353/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../.rvm/gems/ruby-2.0.0-p353/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../.rvm/gems/ruby-2.0.0-p353/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../.rvm/gems/ruby-2.0.0-p353/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../.rvm/gems/ruby-2.0.0-p353/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../.rvm/gems/ruby-2.0.0-p353/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../.rvm/gems/ruby-2.0.0-p353/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../.rvm/gems/ruby-2.0.0-p353/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/**************/
+/* BASE RULES */
+/**************/
+/* line 54, ../sass/screen.scss */
+html {
+  font-size: 100%;
+}
+
+/* line 58, ../sass/screen.scss */
+body {
+  font: 18px/1.4 "Muli", Helvetica, Verdana, sans-serif;
+  color: #4D433D;
+  padding: 0;
+  margin: 0;
+  background: url(../images/background.jpg);
+  width: 100%;
+  display: table;
+}
+
+/* line 68, ../sass/screen.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: Gotham Medium, "Montserrat", Helvetica Neue Medium, Verdana, sans-serif;
+  color: #4D433D;
+  font-weight: bold;
+  line-height: 1.7;
+  padding: 0;
+}
+@media screen and (max-width: 640px) {
+  /* line 68, ../sass/screen.scss */
+  h1, h2, h3, h4, h5, h6 {
+    line-height: 1.4;
+  }
+}
+
+/* line 80, ../sass/screen.scss */
+h1 {
+  font-size: 30px;
+}
+/* line 82, ../sass/screen.scss */
+h1 a {
+  color: inherit;
+}
+
+/* line 87, ../sass/screen.scss */
+h2 {
+  font-size: 24px;
+}
+
+/* line 91, ../sass/screen.scss */
+h3 {
+  font-size: 20px;
+}
+
+/* line 95, ../sass/screen.scss */
+h4 {
+  font-size: 18px;
+  color: #666;
+}
+
+/* line 100, ../sass/screen.scss */
+a {
+  color: #6fcacf;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* line 104, ../sass/screen.scss */
+a:hover, a:active {
+  color: #6fcacf;
+}
+
+/* line 109, ../sass/screen.scss */
+ul, ol {
+  margin: 15px 0;
+  padding-left: 30px;
+}
+
+/* line 114, ../sass/screen.scss */
+ul {
+  list-style-type: disc;
+}
+
+/* line 118, ../sass/screen.scss */
+ol {
+  list-style-type: decimal;
+}
+
+/* line 122, ../sass/screen.scss */
+ol ul, ul ol, ul ul, ol ol {
+  margin: 0;
+}
+
+/* line 126, ../sass/screen.scss */
+ul ul, ol ul {
+  list-style-type: circle;
+}
+
+/* line 130, ../sass/screen.scss */
+em, i {
+  font-style: italic;
+}
+
+/* line 134, ../sass/screen.scss */
+strong, b {
+  font-weight: bold;
+}
+
+/* line 138, ../sass/screen.scss */
+img {
+  max-width: 100%;
+}
+
+/* line 142, ../sass/screen.scss */
+.date {
+  font-style: italic;
+  font-size: 80%;
+}
+
+/* line 148, ../sass/screen.scss */
+::-moz-selection {
+  color: #000;
+  background: #eee;
+}
+
+/* line 152, ../sass/screen.scss */
+::selection {
+  color: #000;
+  background: #eee;
+}
+
+/* line 159, ../sass/screen.scss */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+/* line 165, ../sass/screen.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* mika.ph General Rules */
+/* line 171, ../sass/screen.scss */
+.fadeout {
+  opacity: 1;
+  transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
+}
+
+/* line 178, ../sass/screen.scss */
+.fadeout:hover {
+  opacity: 0.8;
+  transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
+}
+
+/* line 185, ../sass/screen.scss */
+.fadein {
+  opacity: 0.8;
+  transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
+}
+
+/* line 192, ../sass/screen.scss */
+.fadein:hover {
+  opacity: 1;
+  transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
+}
+
+/* line 199, ../sass/screen.scss */
+p {
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  padding-top: 0;
+  padding-bottom: 20px;
+}
+
+/* line 207, ../sass/screen.scss */
+h1 {
+  padding-bottom: 20px;
+  width: 600px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  color: #e8e6db;
+}
+
+/* line 216, ../sass/screen.scss */
+hr {
+  height: 1px;
+  border: none;
+  color: #fff;
+  background-color: #fff;
+  opacity: 0.2;
+}
+
+/* mika.ph Design Journey */
+/* line 226, ../sass/screen.scss */
+body {
+  font-family: 'Muli',Helvetica, Verdana, sans-serif;
+  color: #4D433D;
+  padding: 0;
+  margin: 0;
+  background: url(../images/background.jpg);
+  width: 100%;
+  display: table;
+}
+
+/* Navigation */
+/* line 238, ../sass/screen.scss */
+#logo {
+  position: absolute;
+  text-align: center;
+  width: 100px;
+  background: url(../images/logo-no-text.svg);
+  background-size: 100px 100px;
+  margin-top: 30px;
+  margin-left: 50%;
+  left: -50px;
+  opacity: 0.8;
+}
+
+/* line 250, ../sass/screen.scss */
+#mikalogo {
+  background: url(../images/logo-text.svg);
+  background-size: 100px 100px;
+  width: 100px;
+  height: 100px;
+  display: block;
+  opacity: 0.2;
+  transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
+}
+
+/* line 262, ../sass/screen.scss */
+#mikalogo:hover {
+  opacity: 1;
+  transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
+}
+
+/* line 269, ../sass/screen.scss */
+#leftnav {
+  position: absolute;
+  margin-left: 50%;
+  width: 300px;
+  left: -400px;
+  text-align: right;
+  padding-top: 70px;
+}
+
+/* line 278, ../sass/screen.scss */
+#leftnav a, #rightnav a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #e8e6db;
+  font-size: 80%;
+  line-height: 2em;
+}
+
+/* line 286, ../sass/screen.scss */
+#leftnav a {
+  padding-left: 50px;
+}
+
+/* line 290, ../sass/screen.scss */
+#rightnav a {
+  padding-right: 50px;
+}
+
+/* line 294, ../sass/screen.scss */
+#rightnav {
+  position: absolute;
+  margin-left: 50%;
+  width: 300px;
+  left: 100px;
+  padding-top: 70px;
+  text-align: left;
+}
+
+/* line 304, ../sass/screen.scss */
+#mobnav_button {
+  display: none;
+}
+
+/* line 308, ../sass/screen.scss */
+#mobnav {
+  padding-top: 76px;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.6s ease 0s;
+}
+
+/* line 316, ../sass/screen.scss */
+.box-shadow-menu {
+  position: relative;
+  padding-left: 1.25em;
+  text-transform: uppercase;
+  color: #e8e6db;
+  opacity: 0.8;
+  font-size: 80%;
+}
+
+/* line 324, ../sass/screen.scss */
+.box-shadow-menu:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.25em;
+  width: 1em;
+  height: 0.10em;
+  background: #e8e6db;
+  box-shadow: 0 0.25em 0 0 #e8e6db, 0 0.5em 0 0 #e8e6db;
+}
+
+/* Hero */
+/* line 339, ../sass/screen.scss */
+#giantlogo {
+  background-image: url(../images/dj.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 400px;
+  height: 400px;
+  margin-top: 74px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  text-align: center;
+}
+
+/* line 352, ../sass/screen.scss */
+#rotatingGlobe {
+  margin-top: 110px;
+  width: 180px;
+  height: 180px;
+}
+
+/* Home Text */
+/* line 360, ../sass/screen.scss */
+#welcome {
+  color: #e8e6db;
+  text-align: center;
+  margin-top: 50px;
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 50px;
+}
+/* line 368, ../sass/screen.scss */
+#welcome p {
+  padding-top: 0px;
+  text-align: center;
+}
+
+/* line 374, ../sass/screen.scss */
+a {
+  color: #6fcacf;
+  text-decoration: none;
+}
+
+/* line 379, ../sass/screen.scss */
+h1 {
+  font-size: 1.6em;
+  letter-spacing: -1px;
+  font-family: Gotham Medium,'Montserrat',Helvetica Neue Medium, Verdana, sans-serif;
+  line-height: 1.9em;
+}
+
+/* line 386, ../sass/screen.scss */
+p {
+  line-height: 1.3em;
+}
+
+/* mika.ph General Rules */
+/* line 393, ../sass/screen.scss */
+#cover a, #welcome a, .fadeout {
+  opacity: 1;
+  transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
+}
+
+/* line 400, ../sass/screen.scss */
+#cover a, #welcome a:hover, .fadeout:hover {
+  opacity: 0.8;
+  transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
+}
+
+/* line 407, ../sass/screen.scss */
+.fadein {
+  opacity: 0.8;
+  transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
+}
+
+/* line 414, ../sass/screen.scss */
+.fadein:hover {
+  opacity: 1;
+  transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
+}
+
+/* line 421, ../sass/screen.scss */
+p {
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  line-height: 1.6em;
+}
+
+/* line 430, ../sass/screen.scss */
+h1 {
+  padding-bottom: 20px;
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Default Header */
+/* line 439, ../sass/screen.scss */
+#header {
+  color: #e8e6db;
+  text-align: center;
+  margin-top: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 50px;
+  width: 600px;
+}
+
+/* Resume */
+/* line 451, ../sass/screen.scss */
+.resume {
+  width: 300px;
+  float: left;
+  position: relative;
+  text-align: left;
+  padding-bottom: 20px;
+}
+/* line 456, ../sass/screen.scss */
+.resume a {
+  margin-top: 8px;
+  text-decoration: none;
+}
+
+/* line 464, ../sass/screen.scss */
+.resume:hover .resumelink {
+  opacity: 1;
+  transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
+}
+
+/* line 472, ../sass/screen.scss */
+.resumelink {
+  opacity: 0;
+  transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
+}
+
+/* Article */
+/* line 481, ../sass/screen.scss */
+.entry {
+  background: #e8e6db;
+  color: #4D433D;
+  text-align: center;
+  padding-top: 50px;
+}
+/* line 486, ../sass/screen.scss */
+.entry h1 {
+  padding-bottom: 20px;
+}
+/* line 489, ../sass/screen.scss */
+.entry h1 {
+  color: #4D433D;
+}
+/* line 493, ../sass/screen.scss */
+.entry img {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+/* line 497, ../sass/screen.scss */
+.entry a {
+  color: #189fa5;
+}
+
+/* Disqus */
+/* line 504, ../sass/screen.scss */
+#disqus_thread {
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 510, ../sass/screen.scss */
+.wrapper-footer {
+  margin-top: 20px;
+}
+
+/* line 514, ../sass/screen.scss */
+footer {
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* Phone */
+@media screen and (max-width: 600px) {
+  /* line 523, ../sass/screen.scss */
+  #logo {
+    margin-top: 10px;
+    left: -30px;
+  }
+
+  /* line 528, ../sass/screen.scss */
+  #logo, #mikalogo, #mikalogo:hover {
+    background-size: 60px 60px;
+    width: 60px;
+    height: 60px;
+  }
+
+  /* line 534, ../sass/screen.scss */
+  #leftnav, #rightnav {
+    display: none;
+  }
+
+  /* line 538, ../sass/screen.scss */
+  #mobnav_button {
+    position: absolute;
+    top: 30px;
+    right: 10px;
+    display: block;
+    cursor: pointer;
+    z-index: 10;
+  }
+
+  /* line 547, ../sass/screen.scss */
+  #mobnav ul {
+    text-align: center;
+    width: 100%;
+    margin-left: 0;
+    padding-left: 0;
+  }
+  /* line 552, ../sass/screen.scss */
+  #mobnav ul li {
+    list-style-type: none;
+    border-bottom: 1px solid #6fcacf;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    -webkit-background-clip: padding-box;
+    /* for Safari */
+    background-clip: padding-box;
+    /* for IE9+, Firefox 4+, Opera, Chrome */
+  }
+  /* line 553, ../sass/screen.scss */
+  #mobnav ul li a {
+    text-transform: uppercase;
+    color: #e8e6db;
+    line-height: 2em;
+    opacity: 0.8;
+    display: block;
+  }
+
+  /* line 569, ../sass/screen.scss */
+  #giantlogo {
+    width: 300px;
+    height: 300px;
+    margin-top: 14px;
+  }
+
+  /* line 575, ../sass/screen.scss */
+  #rotatingGlobe {
+    margin-top: 75px;
+    width: 150px;
+    height: 150px;
+  }
+
+  /* line 581, ../sass/screen.scss */
+  #welcome {
+    width: 100%;
+    margin-top: 40px;
+  }
+  /* line 584, ../sass/screen.scss */
+  #welcome h1, #welcome p {
+    width: 300px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  /* line 591, ../sass/screen.scss */
+  #header {
+    width: 300px;
+    margin-top: 14px;
+  }
+  /* line 594, ../sass/screen.scss */
+  #header h1 {
+    width: 300px;
+    line-height: 1em;
+  }
+  /* line 598, ../sass/screen.scss */
+  #header p {
+    width: 300px;
+  }
+
+  /* line 603, ../sass/screen.scss */
+  .entry {
+    padding-top: 50px;
+  }
+  /* line 605, ../sass/screen.scss */
+  .entry h1 {
+    padding-bottom: 20px;
+    width: 300px;
+  }
+  /* line 610, ../sass/screen.scss */
+  .entry p {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  /* line 618, ../sass/screen.scss */
+  .entry img {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  /* line 624, ../sass/screen.scss */
+  .fullwidth {
+    width: 100%;
+  }
+
+  /* line 628, ../sass/screen.scss */
+  #disqus_thread {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
