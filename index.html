@@ -35,8 +35,8 @@ layout: default
                 {% assign nonFeaturedPosts = nonFeaturedPosts | push: post %}
             {% endif %}
         {% endfor %}
-    {% assign featuredPosts = featuredPosts | sort: 'weight' | reverse %}
-    {% assign nonFeaturedPosts = nonFeaturedPosts | sort: 'weight' | reverse %}
+    {% assign featuredPosts = featuredPosts | sort: 'order' %}
+    {% assign nonFeaturedPosts = nonFeaturedPosts | sort: 'order' %}
 
 
 	<div id="mainFeaturedProjectsDiv">
