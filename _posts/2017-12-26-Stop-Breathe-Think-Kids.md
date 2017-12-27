@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Test Post
-description: This a test post with the only purpose of testing the site's layout.
+title: Stop, Breathe & Think Kids
+description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vestibulum turpis ac porttitor volutpat. Mauris facilisis velit sit amet nulla semper, a ultricies nunc gravida.
+background: index/sbt-postBackground.svg
 featured: true
 roles: [iOS Developer, UI Engineer]
-order: 999
-published: false
+order: 1
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vestibulum turpis ac porttitor volutpat. Mauris facilisis velit sit amet nulla semper, a ultricies nunc gravida.
@@ -29,3 +29,5 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vestibulum turp
 ### Heading 3
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vestibulum turpis ac porttitor volutpat. Mauris facilisis velit sit amet nulla semper, a ultricies nunc gravida.
+
+
