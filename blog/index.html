@@ -4,7 +4,12 @@ layout: default
 
 <div class="posts">
   {% for post in site.posts %}
-    <div class="post">    
+    <div class="post" {% if post.bg %}
+    style="background: url(../{{ post.bg }}) no-repeat center center fixed;  -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;"
+{% endif %}>    
 
       <h1><a href="{{ site.baseurl }}{{ post.url }}" class="fadein">{{ post.title }}</a></h1>
 

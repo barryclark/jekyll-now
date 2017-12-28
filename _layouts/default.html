@@ -51,7 +51,14 @@
   Menu
 </span></div>
 
-    <div id="main" role="main">
+    <div id="main" role="main"
+{% if page.bg %}
+    style="background: url({{ page.bg }}) no-repeat center center fixed;  -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;"
+{% endif %}
+    >
       <div id="mobnav">
         <ul>
           <li><a href="http://mika.design/files/aldaba_portfolio_2017.pdf">Portfolio</a></li>

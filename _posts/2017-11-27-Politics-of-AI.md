@@ -2,7 +2,7 @@
 layout: post
 title: Democratizing AI for the Benefit of Society
 intro: Reflections on Web Summit 2017 part 1. Thinking about the mid and long-term effects of AI on society.
-style: aibg
+bg: 'images/websummit2017.jpg'
 thumbnail: 'images/websummit2017-th.jpg'
 ---
 
