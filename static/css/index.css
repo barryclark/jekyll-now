@@ -263,6 +263,12 @@ section.projectArticlePictureSection picture:nth-of-type(1) img{
 	object-fit: contain;
 }	
 
+@media (max-width: 760px) {
+	section.projectArticlePictureSection picture:nth-of-type(1) img{
+		object-fit: fill;
+	}
+}
+
 section.projectArticlePictureSection picture:nth-of-type(2) {
 	display: none;
 }
@@ -324,7 +330,7 @@ div#mainFeaturedProjectsDiv section.projectArticlePictureSection picture:nth-of-
 
 @media (max-width: 760px) {
 	div#mainFeaturedProjectsDiv section.projectArticlePictureSection picture:nth-of-type(1) {
-		right: -63.5vw;
+		right: -70vw;
 		left: -5vw;
 	}
 }
@@ -345,7 +351,7 @@ div#mainFeaturedProjectsDiv article.projectArticle:nth-of-type(even) section.pro
 @media (max-width: 760px) {
 	div#mainFeaturedProjectsDiv article.projectArticle:nth-of-type(even) section.projectArticlePictureSection picture:nth-of-type(1) {
 		right: -5vw;
-		left: -63.5vw;
+		left: -70vw;
 	}
 }
 
