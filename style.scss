@@ -68,6 +68,11 @@ a {
   }
 }
 
+.paddingbottom{
+  padding-bottom: 20px;
+  display: block;
+}
+
 ul, ol {
   margin: 15px 0;
   padding-left: 30px;
@@ -338,14 +343,6 @@ z-index: 100;
     text-align: center;
   }
 
-  blockquote {
-    margin: 1.8em .8em;
-    border-left: 2px solid $gray;
-    padding: 0.1em 1em;
-    color: $satin-linen;
-    font-size: 22px;
-    font-style: italic;
-  }
 
   .comments {
     margin-top: 10px;
@@ -389,6 +386,22 @@ z-index: 100;
   }
 }
 
+
+  blockquote {
+    background: $eastern-blue;
+    margin: 1em 1em 2em 1em;
+    border: 2px solid $satin-linen;
+    outline: 4px solid $eastern-blue;
+    padding: 80px;
+    color: $satin-linen;
+    font-size: 22px;
+  }
+
+  .salmon{
+    background: $salmon;
+    outline: 4px solid $salmon;
+  }
+
 .entry{
   background: $satin-linen;
   color: $armadillo;
@@ -399,6 +412,34 @@ z-index: 100;
   }
   a{
     color: $eastern-blue;
+  }
+  h2, h3{
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto; 
+    width: $itemWidth;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: block;
+  }
+}
+
+.sidenote{
+  float: left;
+  margin: 0 0 0 -12em;
+  line-height: normal;
+  padding-right: 10px;
+  width: 170px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 150px;
+  font-size: 0.7em;
+  line-height: 1.2em;
+  color: $biloba;
+  a{
+    
+    text-decoration: underline;
+    margin-bottom: 20px;
   }
 }
 
