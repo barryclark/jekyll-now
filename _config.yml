@@ -1,6 +1,7 @@
 #
 # This file contains configuration flags to customize your site
 #
+baseurl: https://jonhoare.github.io
 
 permalink: /:title/
 
