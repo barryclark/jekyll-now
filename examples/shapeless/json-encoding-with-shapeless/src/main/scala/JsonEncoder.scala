@@ -11,9 +11,9 @@ object JsonEncoder {
   def instance[A](func: A => String): JsonEncoder[A] = new JsonEncoder[A] {
     override def encodeAsJson(value: A): String = func(value)
   }
-//
-//  implicit val intEncoder: JsonEncoder[Int] = instance((value: Int) => value.toString)
-//
+
+  implicit val intEncoder: JsonEncoder[Int] = instance((value: Int) => value.toString)
+
 //  implicit val stringEncoder: JsonEncoder[String] = instance((value: String) => s""""$value\"""")
 //
 //  implicit val booleanEncoder: JsonEncoder[Boolean] = instance((value: Boolean) => value.toString)

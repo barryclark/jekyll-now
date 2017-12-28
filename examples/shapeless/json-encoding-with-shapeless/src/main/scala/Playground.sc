@@ -11,8 +11,8 @@ val cowRec = labl.to(cow)
 println(cowRec)
 
 def test[A <: Product, L <: HList](cow2: A)(implicit lgen: LabelledGeneric.Aux[A, L]) = {
-  val a = lgen.to(cow2)
-  val b = labl.to(cow)
+  val a = lgen.to(cow2).keys
+  val b = labl.to(cow).keys
 
   a
 
