@@ -22,4 +22,4 @@ Now all I need to do is write new blog posts in Markdown format and store them u
 * Ease of Setup - 7/10
 * Customization - 10/10
 * Ease of adding new Posts - 10/10
-* Overall Experience - 10/10 
+* Overall Experience - 9/10 
