@@ -80,7 +80,7 @@
   color: #fff;
   margin-top: 0;
   font-family: "Abril Fatface", serif;
-  font-size: 3.25rem;
+  font-size: 1.6rem;
 }
 
 /* Sidebar nav */
@@ -105,13 +105,23 @@ a.sidebar-nav-item:focus {
  * contents to the bottom of the sidebar in tablets and up.
  */
 
+ .sidebar-sticky img {
+  display: none;
+}
+
 @media (min-width: 48em) {
-  .sidebar-sticky {
-    position: absolute;
-    right:  1rem;
-    bottom: 1rem;
-    left:   1rem;
-  }
+ .sidebar-sticky {
+   position: absolute;
+   right: 1rem;
+   top: 3rem;
+   left: 1rem;
+   text-align: center;
+ }
+ .sidebar-sticky img {
+   width: 200px;
+   display: inline-block;
+   border-radius: 100px;
+ }
 }
 
 
