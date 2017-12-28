@@ -11,6 +11,8 @@ main#bodyMain > section {
 
 /* ABOUT */
 main#bodyMain section#mainAboutSection {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	padding: 0px;
 	margin-top: 9.68vw;/*124px;*/
@@ -210,6 +212,10 @@ section.projectArticleTextSection footer a {
 	border: solid 1px black;
 	padding: 1.17vw 2.34vw;
 
+	-webkit-transition: background-color 0.3s;
+
+	-o-transition: background-color 0.3s;
+
 	transition: background-color 0.3s;
 }
 
@@ -260,12 +266,15 @@ section.projectArticlePictureSection picture:nth-of-type(1) img{
 	width: 100%;
 	height: 100%;
 
-	object-fit: contain;
+	-o-object-fit: contain;
+
+	   object-fit: contain;
 }	
 
 @media (max-width: 760px) {
 	section.projectArticlePictureSection picture:nth-of-type(1) img{
-		object-fit: fill;
+		-o-object-fit: fill;
+		   object-fit: fill;
 	}
 }
 
@@ -275,8 +284,12 @@ section.projectArticlePictureSection picture:nth-of-type(2) {
 
 /*Featured*/
 div#mainFeaturedProjectsDiv article.projectArticle{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: flex-start;
+	-webkit-box-align: start;
+	    -ms-flex-align: start;
+	        align-items: flex-start;
 	width: 100%;
 }
 
@@ -294,7 +307,10 @@ div#mainFeaturedProjectsDiv section.projectArticleTextSection{
 }
 
 div#mainFeaturedProjectsDiv article.projectArticle:nth-of-type(even) {
-	flex-direction: row-reverse;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: reverse;
+	    -ms-flex-direction: row-reverse;
+	        flex-direction: row-reverse;
 }
 
 div#mainFeaturedProjectsDiv article.projectArticle:nth-of-type(even) section.projectArticleTextSection{
@@ -336,7 +352,8 @@ div#mainFeaturedProjectsDiv section.projectArticlePictureSection picture:nth-of-
 }
 
 div#mainFeaturedProjectsDiv section.projectArticlePictureSection picture:nth-of-type(1) img {
-	object-position: bottom right;
+	-o-object-position: bottom right;
+	   object-position: bottom right;
 }
 
 div#mainFeaturedProjectsDiv section.projectArticlePictureSection picture:nth-of-type(2) {
@@ -356,7 +373,8 @@ div#mainFeaturedProjectsDiv article.projectArticle:nth-of-type(even) section.pro
 }
 
 div#mainFeaturedProjectsDiv article.projectArticle:nth-of-type(even) section.projectArticlePictureSection picture:nth-of-type(1) img {
-	object-position: bottom left;
+	-o-object-position: bottom left;
+	   object-position: bottom left;
 }
 
 /*Non Featured*/

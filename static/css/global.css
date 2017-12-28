@@ -16,7 +16,8 @@
 * {
 	margin: 0px;
 	padding: 0px;
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 	text-decoration: none;
 	font-size: 0px;
 	color: black;
@@ -42,6 +43,8 @@ body {
 
 /* BODY NAV */
 nav#bodyNav {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	width: 100%;
 	padding: 0px 8.98vw;
@@ -90,17 +93,29 @@ section#navLogo a span:last-of-type {
 }
 
 section#navMenu {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex: 1;
-	justify-content: flex-end;
+	-webkit-box-flex: 1;
+	    -ms-flex: 1;
+	        flex: 1;
+	-webkit-box-pack: end;
+	    -ms-flex-pack: end;
+	        justify-content: flex-end;
 }
 
 section#navMenu ul {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: stretch;
+	-webkit-box-align: stretch;
+	    -ms-flex-align: stretch;
+	        align-items: stretch;
 }
 
 section#navMenu li {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 }
 
