@@ -14,11 +14,11 @@ object JsonEncoder {
 
   implicit val intEncoder: JsonEncoder[Int] = instance((value: Int) => value.toString)
 
-//  implicit val stringEncoder: JsonEncoder[String] = instance((value: String) => s""""$value\"""")
-//
-//  implicit val booleanEncoder: JsonEncoder[Boolean] = instance((value: Boolean) => value.toString)
-//
-//  implicit val hNilEncoder: JsonEncoder[HNil] = instance(_ => "")
+  implicit val stringEncoder: JsonEncoder[String] = instance((value: String) => s""""$value\"""")
+
+  implicit val booleanEncoder: JsonEncoder[Boolean] = instance((value: Boolean) => value.toString)
+
+  implicit val hNilEncoder: JsonEncoder[HNil] = instance(_ => "")
 //
 ////  implicit def genericEncoder[A, R](implicit gen: Generic.Aux[A, R], jsonEncoder: JsonEncoder[R]): JsonEncoder[A] = instance { myCaseClass =>
 ////    jsonEncoder.encodeAsJson(gen.to(myCaseClass))

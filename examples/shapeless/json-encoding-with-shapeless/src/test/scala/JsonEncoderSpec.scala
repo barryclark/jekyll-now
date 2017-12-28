@@ -40,11 +40,13 @@ class JsonEncoderSpec extends FlatSpec with Matchers {
     }
 
 
-    implicit def reprEncoder3[K, H, T <: HList](implicit witness: Witness.Aux[K]): JsonEncoder[FieldType[K, H] :: T] = {
-      println(s"FieldName is ${witness.value.toString}")
+    implicit def reprEncoder3[K <: Symbol, H, T <: HList](implicit witness: Witness.Aux[K],
+                                                          hEncoder: JsonEncoder[H],
+                                                          tEncoder: JsonEncoder[T]): JsonEncoder[FieldType[K, H] :: T] = {
+      println(s"FieldName is ${witness.value.name}")
       instance { moo =>
         moo match {
-          case ::(head: FieldType[Symbol, H], tail) => head.toString
+          case ::(head: H, tail) => head.toString
         }
       }
     }
