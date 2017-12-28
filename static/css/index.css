@@ -1,6 +1,12 @@
 /* GENERAL */
 main#bodyMain > section {
-	padding: 0px 7.5vw;
+	padding: 0px 8.98vw;
+}
+
+@media (max-width: 760px) {
+	main#bodyMain > section {
+		padding: 0px 5vw;
+	}
 }
 
 /* ABOUT */
@@ -16,10 +22,7 @@ main#bodyMain section#mainAboutSection {
 
 @media (max-width: 760px) {
 	main#bodyMain section#mainAboutSection {
-		width: 100%;
-		padding: 0px 7.5vw;
-		margin-top: 7.5vw;
-		margin-bottom: 22.5vw;
+		display: none;
 	}
 }
 
@@ -74,6 +77,58 @@ section#mainAboutSection article:last-of-type footer {
 	opacity: 0.22;
 }
 
+/* ABOUT MOBILE */
+main#bodyMain section#mainMobileAboutSection {
+	display: none;
+	width: 100%;
+	margin: 24vw 0px;
+	padding: 0px 5vw;
+}
+
+@media (max-width: 760px) {
+	main#bodyMain section#mainMobileAboutSection {
+		display: block;
+	}
+}
+
+section#mainMobileAboutSection > * {
+	width: 100%;
+}
+
+section#mainMobileAboutSection > article:first-of-type {
+	margin-bottom: 6.8vw;
+}
+
+section#mainMobileAboutSection > article:last-of-type {
+	margin-top: 3.75vw;
+}
+
+section#mainMobileAboutSection > article p {
+	font-family: "Aleo", serif;
+	font-size: 5vw;
+	line-height: 8.12vw;
+	text-align: left;
+}
+
+section#mainMobileAboutSection > article:last-of-type p {
+	opacity: 0.5;
+	text-align: right;
+}
+
+section#mainMobileAboutSection > div h1, section#mainMobileAboutSection > div span {
+	font-family: "LeagueSpartan", sans-serif;
+	font-weight: bold;
+	font-size: 6.25vw;
+	text-align: center;
+	text-transform: uppercase;
+	opacity: 0.66;
+}
+
+section#mainMobileAboutSection > div span {
+	opacity: 0.22;
+	margin-left: 2px;
+}
+
 /* PROJECTS */
 article.projectArticle {
 	position: relative;
@@ -82,7 +137,7 @@ article.projectArticle {
 
 @media (max-width: 760px) {
 	article.projectArticle {
-		margin-bottom: 15vw;
+		margin-bottom: 7.5vw;
 	}
 }
 
@@ -268,8 +323,8 @@ div#mainFeaturedProjectsDiv section.projectArticlePictureSection picture:nth-of-
 
 @media (max-width: 760px) {
 	div#mainFeaturedProjectsDiv section.projectArticlePictureSection picture:nth-of-type(1) {
-		right: -70vw;
-		left: -7.5vw;
+		right: -63.5vw;
+		left: -5vw;
 	}
 }
 
@@ -288,8 +343,8 @@ div#mainFeaturedProjectsDiv article.projectArticle:nth-of-type(even) section.pro
 
 @media (max-width: 760px) {
 	div#mainFeaturedProjectsDiv article.projectArticle:nth-of-type(even) section.projectArticlePictureSection picture:nth-of-type(1) {
-		right: -7.5vw;
-		left: -70vw;
+		right: -5vw;
+		left: -63.5vw;
 	}
 }
 
@@ -299,7 +354,13 @@ div#mainFeaturedProjectsDiv article.projectArticle:nth-of-type(even) section.pro
 
 /*Non Featured*/
 div#mainNonFeaturedProjectsDiv {
-	
+	margin-bottom: 6.05vw;
+}
+
+@media (max-width: 760px) {
+	div#mainNonFeaturedProjectsDiv {
+		margin-bottom: 3.25vw;
+	}
 }
 
 div#mainNonFeaturedProjectsDiv article.projectArticle {
@@ -310,7 +371,7 @@ div#mainNonFeaturedProjectsDiv article.projectArticle {
 @media (max-width: 760px) {
 	div#mainNonFeaturedProjectsDiv article.projectArticle {
 		width: 100%;
-		margin-bottom: 7.5vw;
+		margin-bottom: 3.25vw;
 	}
 }
 

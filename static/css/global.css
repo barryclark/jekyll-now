@@ -49,7 +49,7 @@ nav#bodyNav {
 
 @media (max-width: 760px) {
 	nav#bodyNav {
-		padding: 0px 7.5vw;
+		padding: 0px 5vw;
 	}
 }
 
@@ -60,7 +60,8 @@ section#navLogo {
 
 @media (max-width: 760px) {
 	section#navLogo {
-		padding-bottom: 17px;
+		padding: 16px 0px;
+		padding-bottom: 8px;
 	}
 }
 
@@ -124,6 +125,12 @@ main#bodyMain {
 	width: 100%;
 	margin-top: 36px;
 	overflow: visible;
+}
+
+@media (max-width: 760px) {
+	main#bodyMain {
+		margin-top: 0px;
+	}
 }
 
 main#bodyMain > * {
