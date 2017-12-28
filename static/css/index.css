@@ -1,6 +1,6 @@
 /* GENERAL */
 main#bodyMain > section {
-	padding: 0px 8.98vw;
+	padding: 0px 7.5vw;
 }
 
 /* ABOUT */
@@ -8,10 +8,19 @@ main#bodyMain section#mainAboutSection {
 	display: flex;
 	padding: 0px;
 	margin-top: 9.68vw;/*124px;*/
-	margin-bottom: 14.37vw;/*184px;*/
+	margin-bottom: 19.14vw;/*184px+ 12px*/
 	margin-left: auto;
 	margin-right: auto;
 	width: 52.5vw;
+}
+
+@media (max-width: 760px) {
+	main#bodyMain section#mainAboutSection {
+		width: 100%;
+		padding: 0px 7.5vw;
+		margin-top: 7.5vw;
+		margin-bottom: 22.5vw;
+	}
 }
 
 section#mainAboutSection article {
@@ -26,6 +35,13 @@ section#mainAboutSection article p {
 	text-align: right;
 }
 
+@media (max-width: 760px) {
+	section#mainAboutSection article p {
+		font-size: 3.75vw;
+		line-height: 6.25vw;
+	}
+}
+
 section#mainAboutSection article footer {
 	margin-top: 24px;
 	font-family: "LeagueSpartan", sans-serif;
@@ -34,6 +50,13 @@ section#mainAboutSection article footer {
 	text-align: right;
 	text-transform: uppercase;
 	opacity: 0.66;
+}
+
+@media (max-width: 760px) {
+	section#mainAboutSection article footer {
+		margin-top: 2.5vw;
+		font-size: 6.25vw;
+	}
 }
 
 section#mainAboutSection article:last-of-type {
@@ -57,6 +80,12 @@ article.projectArticle {
 	margin-bottom: 6.05vw;
 }
 
+@media (max-width: 760px) {
+	article.projectArticle {
+		margin-bottom: 15vw;
+	}
+}
+
 article.projectArticle > section {
 	width: 100%;
 }
@@ -72,11 +101,24 @@ section.projectArticleTextSection header h1{
 	font-size: 3.7vw;/*38px;*/
 }
 
+@media (max-width: 760px) {
+	section.projectArticleTextSection header h1 {
+		font-size: 7.5vw;
+	}
+}
+
 section.projectArticleTextSection header h2{
 	font-family: "Aleo", serif;
 	font-size: 1.95vw;/*20px;*/
 	font-weight: normal;
 	margin-top: 0.39vw;
+}
+
+@media (max-width: 760px) {
+	section.projectArticleTextSection header h2 {
+		font-size: 6.25vw;
+		margin-top: 2.5vw;
+	}
 }
 
 section.projectArticleTextSection article p {
@@ -86,8 +128,23 @@ section.projectArticleTextSection article p {
 	margin-top: 2.34vw;
 }
 
+@media (max-width: 760px) {
+	section.projectArticleTextSection article p {
+		font-size: 5vw;
+		line-height: 8.12vw;
+		margin-top: 7.5vw;
+	}
+}
+
 section.projectArticleTextSection footer {
 	margin-top: 2.34vw;
+}
+
+@media (max-width: 760px) {
+	section.projectArticleTextSection footer {
+		margin-top: 3.75vw;
+		margin-bottom: 7.5vw;
+	}
 }
 
 section.projectArticleTextSection footer a {
@@ -98,6 +155,13 @@ section.projectArticleTextSection footer a {
 	padding: 1.17vw 2.34vw;
 
 	transition: background-color 0.3s;
+}
+
+@media (max-width: 760px) {
+	section.projectArticleTextSection footer a {
+		font-size: 5vw;
+		padding: 2.5vw 5vw;
+	} 
 }
 
 section.projectArticleTextSection footer a:hover {
@@ -113,6 +177,12 @@ section.projectArticlePictureSection {
 	width: 100%;
 	height: 100%;
 	z-index: -1;
+}
+
+@media (max-width: 760px) {
+	section.projectArticlePictureSection {
+		opacity: 1;
+	}
 }
 
 section.projectArticlePictureSection:before {
@@ -153,14 +223,31 @@ div#mainFeaturedProjectsDiv section.projectArticleTextSection{
 	padding-right: 3.5vw; 
 }
 
+@media (max-width: 760px) {
+	div#mainFeaturedProjectsDiv section.projectArticleTextSection{
+		width: 80%;
+		padding-right: 0px;
+		min-height: calc((100vw - 48px) * 1.12); 
+	}
+}
+
 div#mainFeaturedProjectsDiv article.projectArticle:nth-of-type(even) {
 	flex-direction: row-reverse;
 }
 
 div#mainFeaturedProjectsDiv article.projectArticle:nth-of-type(even) section.projectArticleTextSection{
-	width: 44%;
 	padding-right: 0px;
 	padding-left: 3.5vw; /*36px;*/
+}
+
+@media (max-width: 760px) {
+	div#mainFeaturedProjectsDiv article.projectArticle:nth-of-type(even) section.projectArticleTextSection{
+		padding-left: 0px;
+	}
+
+	div#mainFeaturedProjectsDiv article.projectArticle:nth-of-type(even) section.projectArticleTextSection *{
+		text-align: right;
+	}
 }
 
 div#mainFeaturedProjectsDiv section.projectArticlePictureSection {
@@ -168,8 +255,25 @@ div#mainFeaturedProjectsDiv section.projectArticlePictureSection {
 	width: 56%;
 }
 
+@media (max-width: 760px) {
+	div#mainFeaturedProjectsDiv section.projectArticlePictureSection {
+		position: absolute;
+		width: 100%;
+	}
+}
+
 div#mainFeaturedProjectsDiv section.projectArticlePictureSection picture:nth-of-type(1) {
 	right: -8.98vw;
+}
+
+@media (max-width: 760px) {
+	div#mainFeaturedProjectsDiv section.projectArticlePictureSection picture:nth-of-type(1) {
+		right: -70vw;
+		left: -7.5vw;
+	}
+}
+
+div#mainFeaturedProjectsDiv section.projectArticlePictureSection picture:nth-of-type(1) img {
 	object-position: bottom right;
 }
 
@@ -180,6 +284,16 @@ div#mainFeaturedProjectsDiv section.projectArticlePictureSection picture:nth-of-
 div#mainFeaturedProjectsDiv article.projectArticle:nth-of-type(even) section.projectArticlePictureSection picture:nth-of-type(1){
 	left: -8.98vw;
 	right: 0px;
+}
+
+@media (max-width: 760px) {
+	div#mainFeaturedProjectsDiv article.projectArticle:nth-of-type(even) section.projectArticlePictureSection picture:nth-of-type(1) {
+		right: -7.5vw;
+		left: -70vw;
+	}
+}
+
+div#mainFeaturedProjectsDiv article.projectArticle:nth-of-type(even) section.projectArticlePictureSection picture:nth-of-type(1) img {
 	object-position: bottom left;
 }
 
@@ -193,13 +307,32 @@ div#mainNonFeaturedProjectsDiv article.projectArticle {
 	display: inline-block;
 }
 
+@media (max-width: 760px) {
+	div#mainNonFeaturedProjectsDiv article.projectArticle {
+		width: 100%;
+		margin-bottom: 7.5vw;
+	}
+}
+
 div#mainNonFeaturedProjectsDiv article.projectArticle:nth-of-type(odd) {
 	margin-right: 12%;
+}
+
+@media (max-width: 760px) {
+	div#mainNonFeaturedProjectsDiv article.projectArticle:nth-of-type(odd) {
+		margin-right: 0px;
+	}
 }
 
 div#mainNonFeaturedProjectsDiv article.projectArticle:nth-of-type(even) {
 	padding-left: 3.5vw;
 	margin-right: 0px;
+}
+
+@media (max-width: 760px) {
+	div#mainNonFeaturedProjectsDiv article.projectArticle:nth-of-type(even) {
+		padding-left: 0px;
+	}
 }
 
 div#mainNonFeaturedProjectsDiv section.projectArticlePictureSection {
