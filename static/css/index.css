@@ -40,13 +40,6 @@ section#mainAboutSection article p {
 	text-align: right;
 }
 
-@media (max-width: 760px) {
-	section#mainAboutSection article p {
-		font-size: 3.75vw;
-		line-height: 6.25vw;
-	}
-}
-
 section#mainAboutSection article footer {
 	margin-top: 24px;
 	font-family: "LeagueSpartan", sans-serif;
@@ -54,14 +47,7 @@ section#mainAboutSection article footer {
 	font-size: 4.29vw;
 	text-align: right;
 	text-transform: uppercase;
-	opacity: 0.66;
-}
-
-@media (max-width: 760px) {
-	section#mainAboutSection article footer {
-		margin-top: 2.5vw;
-		font-size: 6.25vw;
-	}
+	opacity: 0.8;
 }
 
 section#mainAboutSection article:last-of-type {
@@ -124,7 +110,6 @@ section#mainMobileAboutSection > div h1, section#mainMobileAboutSection > div sp
 	font-size: 6.25vw;
 	text-align: center;
 	text-transform: uppercase;
-	opacity: 0.66;
 }
 
 section#mainMobileAboutSection > div span {
