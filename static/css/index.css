@@ -14,7 +14,7 @@ main#bodyMain section#mainAboutSection {
 	display: flex;
 	padding: 0px;
 	margin-top: 9.68vw;/*124px;*/
-	margin-bottom: 19.14vw;/*184px+ 12px*/
+	margin-bottom: 16vw;
 	margin-left: auto;
 	margin-right: auto;
 	width: 52.5vw;
@@ -133,7 +133,7 @@ section#mainMobileAboutSection > div span {
 /* PROJECTS */
 article.projectArticle {
 	position: relative;
-	margin-bottom: 6.05vw;
+	margin-bottom: 1.5vw;
 }
 
 @media (max-width: 760px) {
