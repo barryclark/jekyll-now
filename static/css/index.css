@@ -81,7 +81,8 @@ section#mainAboutSection article:last-of-type footer {
 main#bodyMain section#mainMobileAboutSection {
 	display: none;
 	width: 100%;
-	margin: 24vw 0px;
+	margin: 12vw 0px;
+	margin-bottom: 24vw;
 	padding: 0px 5vw;
 }
 
@@ -137,7 +138,7 @@ article.projectArticle {
 
 @media (max-width: 760px) {
 	article.projectArticle {
-		margin-bottom: 7.5vw;
+		margin-bottom: 10vw;
 	}
 }
 
@@ -158,7 +159,7 @@ section.projectArticleTextSection header h1{
 
 @media (max-width: 760px) {
 	section.projectArticleTextSection header h1 {
-		font-size: 7.5vw;
+		font-size: 6.87vw;
 	}
 }
 
@@ -171,7 +172,7 @@ section.projectArticleTextSection header h2{
 
 @media (max-width: 760px) {
 	section.projectArticleTextSection header h2 {
-		font-size: 6.25vw;
+		font-size: 5vw;
 		margin-top: 2.5vw;
 	}
 }
@@ -185,8 +186,8 @@ section.projectArticleTextSection article p {
 
 @media (max-width: 760px) {
 	section.projectArticleTextSection article p {
-		font-size: 5vw;
-		line-height: 8.12vw;
+		font-size: 4.37vw;
+		line-height: 7.7vw;
 		margin-top: 7.5vw;
 	}
 }
