@@ -330,7 +330,7 @@ div#mainFeaturedProjectsDiv section.projectArticlePictureSection picture:nth-of-
 
 @media (max-width: 760px) {
 	div#mainFeaturedProjectsDiv section.projectArticlePictureSection picture:nth-of-type(1) {
-		right: -70vw;
+		right: -76vw;
 		left: -5vw;
 	}
 }
@@ -351,7 +351,7 @@ div#mainFeaturedProjectsDiv article.projectArticle:nth-of-type(even) section.pro
 @media (max-width: 760px) {
 	div#mainFeaturedProjectsDiv article.projectArticle:nth-of-type(even) section.projectArticlePictureSection picture:nth-of-type(1) {
 		right: -5vw;
-		left: -70vw;
+		left: -76vw;
 	}
 }
 
