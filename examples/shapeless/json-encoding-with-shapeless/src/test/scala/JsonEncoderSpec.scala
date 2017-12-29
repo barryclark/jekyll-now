@@ -34,7 +34,7 @@ class JsonEncoderSpec extends FlatSpec with Matchers {
         println("genericEncoder got called")
         //      jsonEncoder.encodeAsJson(gen.to(myCaseClass))
         //        println(gen.to(myCaseClass).keys)
-        jsonEncoder.encodeAsJson(gen.to(myCaseClass))
+        s"{${jsonEncoder.encodeAsJson(gen.to(myCaseClass))}}"
       }
       moo
     }
@@ -46,7 +46,8 @@ class JsonEncoderSpec extends FlatSpec with Matchers {
       println(s"FieldName is ${witness.value.name}")
       instance { moo =>
         moo match {
-          case ::(head: H, tail) => head.toString
+          case ::(head: H, HNil) => s""""${witness.value.name}": ${writeJson(head)}"""
+          case ::(head: H, tail) => s""""${witness.value.name}": ${writeJson(head)}, ${writeJson(tail)}"""
         }
       }
     }
@@ -80,8 +81,8 @@ class JsonEncoderSpec extends FlatSpec with Matchers {
     //    println(s"XXXXXXXXXXXXXXXXXXXXXXXXX\n${test.keys}\nXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx")
 
 
-    writeJson(simpleCaseClass) shouldBe "5"
-    //    writeJson(simpleCaseClass) shouldBe """{"myNumber": 5}"""
+//    writeJson(simpleCaseClass) shouldBe "5"
+        writeJson(simpleCaseClass) shouldBe """{"myNumber": 5}"""
   }
 
 }

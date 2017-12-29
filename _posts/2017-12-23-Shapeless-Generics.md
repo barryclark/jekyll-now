@@ -9,5 +9,4 @@ through an example myself, and I know many other people are the same, so, if you
 here is my challenge to you...
 
 ## The challenge
-Write JSON encoders that can encode any case class (including nested ones) that contain Ints, Strings, or Booleans.
-
+Write an encoder 
