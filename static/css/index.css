@@ -47,7 +47,7 @@ section#mainAboutSection article footer {
 	font-size: 4.29vw;
 	text-align: right;
 	text-transform: uppercase;
-	opacity: 0.8;
+	opacity: 0.9;
 }
 
 section#mainAboutSection article:last-of-type {
@@ -57,7 +57,7 @@ section#mainAboutSection article:last-of-type {
 
 section#mainAboutSection article:last-of-type p {
 	text-align: left;
-	opacity: 0.50;
+	opacity: 0.4;
 }
 
 section#mainAboutSection article:last-of-type footer {
@@ -100,7 +100,7 @@ section#mainMobileAboutSection > article p {
 }
 
 section#mainMobileAboutSection > article:last-of-type p {
-	opacity: 0.5;
+	opacity: 0.4;
 	text-align: right;
 }
 
