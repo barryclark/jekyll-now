@@ -1,4 +1,5 @@
 import shapeless._
+import shapeless.labelled.FieldType
 
 trait JsonEncoder[A] {
   def encodeAsJson(value: A): String
@@ -19,16 +20,19 @@ object JsonEncoder {
   implicit val booleanEncoder: JsonEncoder[Boolean] = instance((value: Boolean) => value.toString)
 
   implicit val hNilEncoder: JsonEncoder[HNil] = instance(_ => "")
-//
-////  implicit def genericEncoder[A, R](implicit gen: Generic.Aux[A, R], jsonEncoder: JsonEncoder[R]): JsonEncoder[A] = instance { myCaseClass =>
-////    jsonEncoder.encodeAsJson(gen.to(myCaseClass))
-////  }
-//
-//  implicit def reprEncoder[H, T <: HList](implicit hEncoder: JsonEncoder[H], tEncoder: JsonEncoder[T]): JsonEncoder[H :: T] = {
-//    instance[H :: T] {
-//      case head :: tail => writeJson(head) ++ writeJson(tail)
-//    }
-//  }
+
+  implicit def genericEncoder[A <: Product, L <: HList](implicit gen: LabelledGeneric.Aux[A, L],
+                                                        jsonEncoder: JsonEncoder[L]): JsonEncoder[A] = instance {
+    myCaseClass: A => s"{${jsonEncoder.encodeAsJson(gen.to(myCaseClass))}}"
+  }
+
+  implicit def reprEncoder[K <: Symbol, H, T <: HList](implicit witness: Witness.Aux[K],
+                                                       hEncoder: JsonEncoder[H],
+                                                       tEncoder: JsonEncoder[T]): JsonEncoder[FieldType[K, H] :: T] =
+    instance {
+      case ::(head: H, HNil) => s""""${witness.value.name}": ${writeJson(head)}"""
+      case ::(head: H, tail) => s""""${witness.value.name}": ${writeJson(head)}, ${writeJson(tail)}"""
+    }
 
   def writeJson[A](value: A)(implicit enc: JsonEncoder[A]): String = enc.encodeAsJson(value)
 }
