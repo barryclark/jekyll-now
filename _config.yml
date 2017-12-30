@@ -18,10 +18,10 @@ avatar: https://avatars2.githubusercontent.com/u/30640646?s=400&v=4
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email:joshcpohl@gmail.com
+  email: joshcpohl@gmail.com
   facebook:
   flickr:
-  github: https://github.com/JC-Pohl/jc-pohl.github.io
+  github: https: //github.com/JC-Pohl/jc-pohl.github.io
   instagram:
   linkedin:
   pinterest:
@@ -41,7 +41,7 @@ google_analytics:
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
-url: http://jc-pohl.github.io
+url: http: //jc-pohl.github.io
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
