@@ -1,4 +1,7 @@
-
+---
+layout: post
+title: Predicting Supreme Court Decisions
+---
 
 ```python
 import seaborn as sns
