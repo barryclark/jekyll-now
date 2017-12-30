@@ -286,7 +286,7 @@ section.projectArticlePictureSection picture {
 	}
 }
 
-div#nonFeaturedProjects section.projectArticlePictureSection {
+div#nonFeaturedProjectsDiv section.projectArticlePictureSection {
 	display: none;
 }
 
