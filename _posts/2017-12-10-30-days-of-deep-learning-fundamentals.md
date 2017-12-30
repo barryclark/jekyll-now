@@ -2,6 +2,7 @@
 layout: post
 title: 30 days of Deep Learning Fundamentals
 permalink: /blog/30-days-of-deep-learning-fundamentals/
+comment: true
 ---
 ### What's this about?
 After years of going into lectures and yawning in the classes, I finally decided to start a hands-on project on deep learning. Also I figured, why not document my progress along the way? I have a bad memory anyway, and hopefully it will do some greater good to help a lost soul find its way home in the deep swamp of machine learning.

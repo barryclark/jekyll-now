@@ -2,6 +2,7 @@
 layout: post
 title: Day 1-2 Multilayer Perceptron on MNIST
 permalink: /30ddlf/mlp-on-mnist
+comment: true
 ---
 #### Project Content &rarr;  *[30 Days Of Deep Learning Fundamentals](/blog/30-days-of-deep-learning-fundamentals/)*
 ## Day 1
