@@ -57,13 +57,13 @@ layout: default
     {% assign nonFeaturedPosts = nonFeaturedPosts | sort: 'order' %}
 
 
-	<div id="mainFeaturedProjectsDiv">
+	<div id="featuredProjectsDiv">
 		{% for post in featuredPosts %}
 			{% include index-post.html post=post %}
 		{% endfor %}
 	</div>
 
-	<div id="mainNonFeaturedProjectsDiv">
+	<div id="nonFeaturedProjectsDiv">
 		{% for post in nonFeaturedPosts %}
 			{% include index-post.html post=post %}
 		{% endfor %}
