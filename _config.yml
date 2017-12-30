@@ -16,8 +16,8 @@
 title: An exploration of natural language processing and more
 email: julius.s.simonelli@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  This is my blog
-github: [metadata]
+  A tutorial-style data science blog with a focus on natural language processing
+github: www.github.com/jss367 #[metadata]
 baseurl: #/mm-remote-theme-test
 url: https://jss367.github.io/
 twitter_username: 
@@ -47,8 +47,8 @@ author:
   name   : "Julius Simonelli"
   avatar : "/assets/images/bio-photo.jpg"
   bio    : "Data Scientist"
-  email  : # optional
-  uri    : "https://jss367.github.io/"
+  email  : julius.s.simonelli@gmail.com
+  #uri    : "https://jss367.github.io/"
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

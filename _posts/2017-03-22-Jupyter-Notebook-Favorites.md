@@ -1,8 +1,3 @@
----
-title: "Jupyter Notebook Favorites"
-date: 2017-03-22
-categories: Jupyter-Notebook cheatsheets
----
 
 One of the many great things about Jupyter Notebooks is the ability to add extensions.
 
@@ -18,6 +13,18 @@ pip install jupyter_contrib_nbextensions
 Then:
 1. Enter: jupyter contrib nbextension install --user
 1. Go to the Nbextensions tab and enable it from there
+
+# Running pip from Jupyter Notebooks
+
+You can run external commands by putting an exclamation mark in front of the command. This means that you can make pip install directly from Jupyter Notebooks:
+
+
+```python
+!pip install numpy
+```
+
+    Requirement already satisfied: numpy in c:\users\hmisys\anaconda3\lib\site-packages
+    
 
 # Jupyter Notebook extensions
 

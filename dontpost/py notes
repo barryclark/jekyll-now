@@ -9,13 +9,7 @@ for tanh and sigmoid, you want to keep the activation values close to zero to ge
 Is 0.01 the best? No. It's OK for shallow networks, but not large ones
 
 
-
 the bias does not have a symmetry problem, so you can initialize it as zeros
-
-
-pynotes
-
-(In Python 2, 5 / 2 is 2. In Python 3, 5 / 2 is 2.5, and 5 // 2 is 2
 
 
 
