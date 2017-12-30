@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Predicting Supreme Court Decisions
+title: Supreme Court Decisions
 ---
 
 ```python
@@ -15,7 +15,8 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.metrics import confusion_matrix, classification_report, roc_curve, auc
 import matplotlib.pyplot as plt
-%matplotlib inline```
+%matplotlib inline
+```
 
 
 ```python
