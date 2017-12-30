@@ -17,7 +17,7 @@
 	margin: 0px;
 	padding: 0px;
 	-webkit-box-sizing: border-box;
-	        box-sizing: border-box;
+	box-sizing: border-box;
 	text-decoration: none;
 	font-size: 0px;
 	color: black;
@@ -47,7 +47,7 @@ nav#bodyNav {
 	display: -ms-flexbox;
 	display: flex;
 	width: 100%;
-	padding: 0px 8.98vw;
+	padding: 0px 11.72vw;
 }
 
 @media (max-width: 760px) {
