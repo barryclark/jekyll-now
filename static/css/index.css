@@ -107,7 +107,7 @@ section#mainMobileAboutSection > div span {
 
 /* PROJECTS DIV */
 div#featuredProjectsDiv {
-	overflow: auto;
+	overflow: hidden;
 }
 
 div#nonFeaturedProjectsDiv {
@@ -117,8 +117,18 @@ div#nonFeaturedProjectsDiv {
 	-webkit-box-pack: justify;
 	    -ms-flex-pack: justify;
 	        justify-content: space-between;
-	margin-top: 8.58vw;
+	margin-top: 4.29vw;
 	margin-bottom: 8.58vw;
+}
+
+@media (max-width: 760px) {
+	div#nonFeaturedProjectsDiv {
+		margin-top: 0px;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+	}
 }
 
 /* PROJECT */
@@ -138,6 +148,10 @@ article.projectArticle {
 	article.projectArticle {
 		margin-bottom: 10vw;
 	}
+
+	div#nonFeaturedProjectsDiv article.projectArticle {
+		margin-bottom: 5vw;
+	}
 }
 
 article.projectArticle:nth-of-type(even) {
@@ -148,6 +162,20 @@ article.projectArticle:nth-of-type(even) {
 }
 
 /*Text*/
+section.projectArticleTextSection {
+	width: 33.69vw;
+}
+
+@media (max-width: 760px) {
+	section.projectArticleTextSection {
+		width: 70%;
+	}
+
+	div#nonFeaturedProjectsDiv section.projectArticleTextSection {
+		width: 90vw;
+	}
+}
+
 article.projectArticle:nth-of-type(odd) section.projectArticleTextSection{
 	margin-left: 11.72vw;
 }
@@ -161,16 +189,6 @@ article.projectArticle:nth-of-type(even) section.projectArticleTextSection{
 	article.projectArticle:nth-of-type(odd) section.projectArticleTextSection, article.projectArticle:nth-of-type(even) section.projectArticleTextSection{
 		margin-left: 5vw;
 		margin-right: 5vw;
-	}
-}
-
-section.projectArticleTextSection {
-	width: 33.69vw;
-}
-
-@media (max-width: 760px) {
-	section.projectArticleTextSection {
-		width: 70%;
 	}
 }
 
