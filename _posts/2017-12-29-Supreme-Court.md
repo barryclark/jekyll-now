@@ -3,11 +3,15 @@ layout: post
 title: Supreme Court Decisions
 ---
 
-```python
+```
+python
 import seaborn as sns
 import pandas as pd
 import numpy as np
 from sklearn.model_selection import train_test_split, GridSearchCV, cross_val_score
+```
+```
+python
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.preprocessing import OneHotEncoder, label_binarize
 from sklearn.ensemble import RandomForestClassifier
