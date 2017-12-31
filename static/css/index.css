@@ -4,7 +4,7 @@ main#bodyMain section#mainAboutSection {
 	display: -ms-flexbox;
 	display: flex;
 	margin-top: 7.42vw;/*100px - 24px*/
-	margin-bottom: 15.4vw;/*260px*/
+	margin-bottom: 25.39vw;/*260px*/
 	margin-left: auto;
 	margin-right: auto;
 	width: 52.5vw;
@@ -141,7 +141,7 @@ article.projectArticle {
 	-ms-flex-align: stretch;
 	align-items: stretch;
 	width: 100%;
-	margin-bottom: 4.29vw;
+	margin-bottom: 11.72vw;
 }
 
 @media (max-width: 760px) {
@@ -294,6 +294,7 @@ section.projectArticlePictureSection {
 }
 
 section.projectArticlePictureSection picture {
+	display: block;
 	width: 100%;
 	min-height: 51.97vw;
 }
