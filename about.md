@@ -4,16 +4,15 @@ title: About
 permalink: /about/
 ---
 
-### Interests
+This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
 
-Aside of my _regular_ job as researcher I am interested in deep learning, self-driving cars and software development in general.
+You can find the source code for Minima at GitHub:
+[jekyll][jekyll-organization] /
+[minima](https://github.com/jekyll/minima)
 
-### Motivation
+You can find the source code for Jekyll at GitHub:
+[jekyll][jekyll-organization] /
+[jekyll](https://github.com/jekyll/jekyll)
 
-I am happy to transfer my knowledge (and enthusiasm) back to the community so that others won't make the same mistakes that I did when I started.
-Here, community includes not only other (under)graduate students, but also interested teenagers.
-I believe that all problems can be explained in a way almost everyone can understand them.
 
-### Contact me
-
-[sascha.wirges+github@gmail.com](mailto:sascha.wirges+github@gmail.com)
+[jekyll-organization]: https://github.com/jekyll
