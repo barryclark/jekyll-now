@@ -53,7 +53,7 @@ header#postHeader picture img {
 }
 
 header#postHeader hgroup {
-	margin-top: 8.98vw;
+	margin-top: 5.86vw;
 	margin-bottom: 0.78vw;
 }
 
@@ -89,7 +89,7 @@ header#postHeader hgroup h2 {
 	margin-top: 0.39vw;
 	font-family: "Aleo", serif;
 	font-weight: normal;
-	font-size: 1.95vw;
+	font-size: 1.757vw;
 }
 
 @media (max-width: 760px) {
@@ -110,7 +110,7 @@ section#postContentSection > *{
 }
 
 section#postContentSection h1 {
-	margin-top: 6.25vw;
+	margin-top: 4.68vw;
 	font-family: "LeagueSpartan", sans-serif;
 	font-weight: bold;
 	font-size: 2.929vw;
@@ -127,7 +127,7 @@ section#postContentSection h2 {
 	margin-top: 2.34vw;
 	font-family: "Aleo", serif;
 	font-weight: bold;
-	font-size: 2.539vw;
+	font-size: 2.34vw;
 }
 
 @media (max-width: 760px) {
@@ -141,7 +141,7 @@ section#postContentSection h3 {
 	margin-top: 2.34vw;
 	font-family: "Aleo", serif;
 	font-weight: bold;
-	font-size: 1.757vw;
+	font-size: 1.56vw;/*16px*/
 }
 
 @media (max-width: 760px) {
@@ -155,8 +155,8 @@ section#postContentSection p {
 	margin-top: 1.56vw;
 	font-family: "Aleo", serif;
 	font-weight: normal;
-	font-size: 1.757vw;
-	line-height: 2.734vw;
+	font-size: 1.56vw;/*16px*/
+	line-height: 2.53vw;
 }
 
 @media (max-width: 760px) {
@@ -181,8 +181,8 @@ section#postContentSection ul, section#postContentSection ol {
 section#postContentSection li {
 	font-family: "Aleo", serif;
 	font-weight: normal;
-	font-size: 1.757vw;
-	line-height: 2.734vw
+	font-size: 1.56vw;/*16px*/
+	line-height: 2.53vw;
 }
 
 @media (max-width: 760px) {
@@ -196,6 +196,4 @@ section#postContentSection p img {
 	width: 100%;
 	margin-top: 0.78vw;
 	margin-bottom: 0.78vw;
-	background-color: red;
-	height: 240px;
 }

@@ -137,14 +137,7 @@ section#navMenu li a{
 /* BODY MAIN */
 main#bodyMain {
 	width: 100%;
-	margin-top: 36px;
-	overflow: visible;
-}
-
-@media (max-width: 760px) {
-	main#bodyMain {
-		margin-top: 0px;
-	}
+	overflow: hidden;
 }
 
 main#bodyMain > * {
