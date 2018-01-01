@@ -2,6 +2,8 @@
 layout: post
 title: GraphViz diagram base on PowerShell Test-NetConnection -Traceroute 
 ---
+I need to understood some dependencies between my WAN network traces. Most of my system are hosted on Windows (or at least available to me). So I rather prefer to use windows tools (both on WS 2012 R2, WS 2008 R2 and (don't ask, please, some older Windows)).  
+
 First approach: 
 ```powershell
 Import-Module PSGraph
@@ -21,6 +23,10 @@ $res = graph g {$nodes}
 $res | out-file tracer.dot -Verbose
 $res | Export-PSGraph -OutputFormat png -DestinationPath ooo.png
 ```
+so... I need make some separation of collecting data and process it before send to GraphViz. In general I've 2 possible method to collect it: 
+- tracert.exe 
+- Test-NetConnection -computername 8.8.8.8 -traceroute 
+and I'm affraid 2nd of them are not available on my machines. so it left only to use first or both. Lets start from second, as easiest. 
 
 ## See also 
 * https://www.the-little-things.net/blog/2013/10/06/visualize-active-directory-site-connections/
