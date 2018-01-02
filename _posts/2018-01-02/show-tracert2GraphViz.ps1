@@ -40,6 +40,7 @@ Function get-tracert2GraphViz {
   )
 
   BEGIN {
+    $datestr = $((get-date -format s).Replace(':','').Replace('-',''))
     $tempdir = "$env:temp\tracert"
     $null = new-item  -ItemType "directory" -Path $tempdir -Force -Verbose 
     $colors = 'red','green','orange','yellow','red','pink'
@@ -50,30 +51,30 @@ Function get-tracert2GraphViz {
     $n = 0 
     $m = 0
     foreach ($target in $targets) {
-      $datestr = $((get-date -format s).Replace(':',''))
+      
       if($x11colors) {$x11ccount = ($x11colors).count
       $color = ($x11colors[$((Get-Random -Maximum $x11ccount))]).Trim()} else {$color = $colors | Get-Random}
       $n++ 
       <#if($env:COMPUTERNAME -imatch '(ASH|ZB)') { #>
-      if(((Get-Host).Version).Major -ge 4) {
+      if(((Get-Host).Version).Major -le 4) {
         $object = Test-NetConnection -ComputerName $target -TraceRoute
         $FromHop = $object.SourceAddress| Select-Object -ExpandProperty IPAddress
         $hoplist = $object | Select-Object -ExpandProperty TraceRoute
       } 
       else {
-        $t = Invoke-Tracert -RemoteHost $target 
+        $t = Invoke-Tracert -RemoteHost $target
+        $FromHop = "startT" 
         $hoplist = $t | Select-Object -ExpandProperty Node
       }
       foreach ($NextHop in $hoplist) {
         $m++
-   #$Result = ('`"{0}`" -> `"{1}`"`[color={2};label=`"{3}:{4}`"`]`;' -f $FromHop, $NextHop, $color, $n, $m) 
+        if($NextHop -imatch '(0.0.0.0|Request timed out)') {$NextHop = "timeout$n$m$datestr"}
         $Result = ('"{0}" -> "{1}"[color={2};label="{3}:{4}"];' -f $FromHop, $NextHop, $color, $n, $m) 
         $FromHop = $NextHop 
         Write-Warning -Message $NextHop 
         $Results+=$Result
         $locresfile = ('{0}\{1}-traceroute-{2}' -f $tempdir, $target, $datestr)
-        $null = $result | Out-File -append -Verbose -FilePath $locresfile
-     
+        $null = $result | Out-File -append -Verbose -FilePath $locresfile    
       }
     } #EndForEach 
   }
@@ -284,16 +285,6 @@ $script:x11color = 'aliceblue
   khaki3
   lavenderblush2
   lemonchiffon1
-  lightblue1
-  lightcyan
-  lightgoldenrod
-  lightgoldenrodyellow
-  lightpink2
-  lightsalmon2
-  lightskyblue1
-  lightslategray
-  lightsteelblue3
-  lightyellow3
   magenta1
   maroon1
   mediumblue
@@ -325,7 +316,6 @@ $script:x11color = 'aliceblue
   skyblue1
   slateblue1
   slategray1
-  snow
   springgreen
   steelblue
   tan
@@ -344,16 +334,6 @@ $script:x11color = 'aliceblue
   khaki4
   lavenderblush3
   lemonchiffon2
-  lightblue2
-  lightcyan1
-  lightgoldenrod1
-  lightgray
-  lightpink3
-  lightsalmon3
-  lightskyblue2
-  lightslategrey
-  lightsteelblue4
-  lightyellow4
   magenta2
   maroon2
   mediumorchid
@@ -361,7 +341,6 @@ $script:x11color = 'aliceblue
   mediumseagreen
   midnightblue
   mistyrose3
-  navajowhite2
   none
   olivedrab3
   orange3
@@ -404,16 +383,6 @@ $script:x11color = 'aliceblue
   lavender
   lavenderblush4
   lemonchiffon3
-  lightblue3
-  lightcyan2
-  lightgoldenrod2
-  lightgrey
-  lightpink4
-  lightsalmon4
-  lightskyblue3
-  lightsteelblue
-  lightyellow
-  limegreen
   magenta3
   maroon3
   mediumorchid1
@@ -421,7 +390,6 @@ $script:x11color = 'aliceblue
   mediumslateblue
   mintcream
   mistyrose4
-  navajowhite3
   oldlace
   olivedrab4
   orange4
@@ -464,15 +432,6 @@ $script:x11color = 'aliceblue
   lavenderblush
   lawngreen
   lemonchiffon4
-  lightblue4
-  lightcyan3
-  lightgoldenrod3
-  lightpink
-  lightsalmon
-  lightseagreen
-  lightskyblue4
-  lightsteelblue1
-  lightyellow1
   linen
   magenta4
   maroon4
@@ -523,16 +482,6 @@ $script:x11color = 'aliceblue
   khaki2
   lavenderblush1
   lemonchiffon
-  lightblue
-  lightcoral
-  lightcyan4
-  lightgoldenrod4
-  lightpink1
-  lightsalmon1
-  lightskyblue
-  lightslateblue
-  lightsteelblue2
-  lightyellow2
   magenta
   maroon
   mediumaquamarine

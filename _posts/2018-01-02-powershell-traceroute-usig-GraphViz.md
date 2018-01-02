@@ -28,7 +28,8 @@ so... I need make some separation of collecting data and process it before send 
 - Test-NetConnection -computername 8.8.8.8 -traceroute 
 and I'm afraid 2nd of them are not available on my machines. so it left only to use first or both. 
 
-ok, it looks like that: 
+ok, it looks like that: https://github.com/ziembor/ziembor.github.io/blob/master/_posts/2018-01-02/show-tracert2GraphViz.ps1 
+![](https://ziembor.github.io/_posts/2018-01-02/5921960349401088.png)
 
 ## See also 
 * 
