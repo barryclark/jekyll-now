@@ -1,7 +1,6 @@
 ---
 layout: post
-title: You're up and running!
-Welcome to my personal github page
+title: You're up and running! Welcome to my personal github page
 ---
 
 I am jus learning how this things work
