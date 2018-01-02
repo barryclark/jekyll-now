@@ -1,4 +1,4 @@
-<h3 onclick="$('#reply-to-comment-{{ include.replyto[1].date }}').toggle()">Reply to This Thread</h3>
+<h3 onclick="$('#reply-to-comment-{{ include.replyto[1].date }}').toggle()" style="cursor: pointer;">Reply to This Thread</h3>
 <form id="reply-to-comment-{{ include.replyto[1].date }}" class="new-comment" method="post" action="https://api.staticman.net/v2/entry/hendrixjoseph/hendrixjoseph.github.io/master/comments" style="display: none;">
   <input name="options[redirect]" type="hidden" value="{{ site.url }}{{ page.url }}">
   <input name="options[slug]" type="hidden" value="{% if include.slug %}{{ include.slug }}{% else %}{{ page.slug }}{% endif %}">
