@@ -4,7 +4,7 @@ title: About Me
 permalink: /about/
 ---
 
-The same way that life brought me to NYC from Barcelona,it had some other surprise for me: Data Science. This is about a my relationship with data
+This is about a my relationship with data. The same way that life brought me to NYC from Barcelona,it had some other surprise for me: Data Science. I hope you can enjoy it as much as I do and if there is anything you want to say, comment or whatever, you are welcome to do it.
 
 ### More Information
 
