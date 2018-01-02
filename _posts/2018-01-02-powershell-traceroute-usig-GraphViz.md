@@ -26,9 +26,12 @@ $res | Export-PSGraph -OutputFormat png -DestinationPath ooo.png
 so... I need make some separation of collecting data and process it before send to GraphViz. In general I've 2 possible method to collect it: 
 - tracert.exe 
 - Test-NetConnection -computername 8.8.8.8 -traceroute 
-and I'm affraid 2nd of them are not available on my machines. so it left only to use first or both. Lets start from second, as easiest. 
+and I'm afraid 2nd of them are not available on my machines. so it left only to use first or both. 
+
+ok, it looks like that: 
 
 ## See also 
+* 
 * https://www.the-little-things.net/blog/2013/10/06/visualize-active-directory-site-connections/
 * https://www.the-little-things.net/blog/2013/11/02/ad-audit-report-with-powershell-part-2/ 
 * https://confluence.slac.stanford.edu/display/IEPM/PingER+Route+Visualizer+using+Traceroutes 
