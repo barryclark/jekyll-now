@@ -3,7 +3,7 @@ layout: post
 title: Welcome to my personal github page
 ---
 
-I am jus learning how this things work
+Here you will find a brief introduction to my most recent projects.
 
 ##This is a list.
   1. Item first
