@@ -1,7 +1,7 @@
 ---
 layout: wds1
 title: World Design Summit 2017&#58; Designing the World (Part 1 of 2)
-intro: I reflect on my favourite talks of the World Design Summit, my coincidental interactions with the attendees and speakers, mini-travelogues on my Montreal experience and my reflections about the philosophy of design as framed by Henk Oosterling’s Dasein as Design. What is the use of design today?
+intro: I reflect on my favourite talks of the World Design Summit and my reflections about the philosophy of design as framed by Henk Oosterling’s Dasein as Design. What is the use of design today?
 style: 
 bg: 'images/wds1.jpg'
 thumbnail: 'images/wds1-th.jpg'
