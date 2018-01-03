@@ -5,9 +5,17 @@ permalink: /30ddlf/mlp-on-mnist
 comment: true
 ---
 #### Project Content &rarr;  *[30 Days Of Deep Learning Fundamentals](/blog/30-days-of-deep-learning-fundamentals/)*
+#### Github repo for today &rarr; *[MLP on MNIST](https://github.com/6ixNugget/MLP-on-MNIST)*
+
 ## Day 1
 #### Focus of the day: Learn and play with MNIST dataset
 [MNIST](http://yann.lecun.com/exdb/mnist/) is a classic CV dataset that was set up by Yann LeCun et al. It's a good entry level CV dataset for people who want to get their feet wet in ML world.
+
+#### Task done:
+
+1. Coded up a MLP in tensorflow to play with MNIST dataset
+2. Successfully trained a four layer MLP.
+3. Tweaked the hyperparameters a little bit, observe and document the performance.
 
 #### Q & A: 
 1. What is a multilayer perceptron? 
@@ -34,12 +42,6 @@ comment: true
 
     [Tensorflow doc on save/restore](https://www.tensorflow.org/programmers_guide/saved_model)
 
-#### Task done:
-
-1. Coded up a MLP in tensorflow to play with MNIST dataset
-2. Successfully trained a four layer MLP.
-3. Tweaked the hyperparameters a little bit, observe and document the performance.
-
 #### Questions raised
 1. How do hyperparameters affect the performance of a MLP?
 2. How do the hyperparameters affect the performance of other NN architectures?
@@ -47,6 +49,10 @@ comment: true
 ## Day 2
 #### Focus of the day: Play with the hyperparameters
 Try different combinations of LR and batch size and see what happens
+
+#### Task done:
+1. Reproduce the results shown in [On large-batch training for deep learning (Keskar et al,2017)](https://arxiv.org/abs/1609.04836) on MNIST MLP
+2. Compare the results of small and large batch size.
 
 #### Q&A:
 1. What is the difference between batch mode, mini-batch model and online learning?
@@ -64,8 +70,8 @@ Try different combinations of LR and batch size and see what happens
     > regime and present numerical evidence that supports
     > the view that large-batch methods tend to converge to sharp minimizers of the
     > training and testing functions—and as is well known, sharp minima lead to poorer
-    > generalization. In contrast, small-batch methods consistently converge to flat min-
-    > imizers, and our experiments support a commonly held view that this is due to the
+    > generalization. In contrast, small-batch methods consistently converge to flat 
+    > minimizers, and our experiments support a commonly held view that this is due to the
     > inherent noise in the gradient estimation. 
 
     In simple words, similar with small vs large LR, large-batch methods give poorer generalization than small-batch methods. However a larger batch size does provide faster training, and in some case, if the training time is the bottleneck, it is crucial to experiment for a reasonably good large batch size.
@@ -88,10 +94,6 @@ Try different combinations of LR and batch size and see what happens
         This is the most tricky one. People spend quite a lot more time on LR than the other two. LR has a huge impact on the training process and the performance of the model. A too large LR would overshoot the optimal point and a too small one would cause optimizer to be stuck in a local minima.  
 
     [Chapter 8 of Deep Learning book by Ian Goodfellow and Yoshua Bengio and Aaron Courville](http://www.deeplearningbook.org/contents/optimization.html) has an in-depth discussion on this topic.
-
-#### Task done:
-1. Reproduce the results shown in [On large-batch training for deep learning (Keskar et al,2017)](https://arxiv.org/abs/1609.04836) on MNIST MLP
-2. Compare the results of small and large batch size.
 
 #### Notes of the day:
 1. Keskar's paper ([On large-batch training for deep learning (Keskar et al,2017)](https://arxiv.org/abs/1609.04836)) gives a very detailed explanation to my question "How does mini batch size affect the performance of generalization". They provided numerical analytics and proof to the well known observation that large batch size leads to a loss in generalization performance. In simple words, the reason according to Keskar's team, is that large batch size optimizer tends to converge to "sharp minimizers of the training function". Unlike small batch methods, large batches typically are not able to escape the basin of sharp minimizers due to the lack of noisiness in the training batches. 
