@@ -571,7 +571,7 @@ p{
 
 .entry{
 padding-top: 50px;
-h1{
+h1,h2,h3{
   width: $mobWidth;
   padding-bottom: 20px;
 }
@@ -593,6 +593,26 @@ img{
 
 .fullwidth{
   width: 100%;
+}
+
+blockquote{
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-size: 18px;
+  margin: 0;
+  margin-bottom: 20px;
+  border: none;
+  outline: none;
+}
+
+.salmon{
+  outline: none;
+}
+
+.sidenote{
+  display: none;
 }
 
 #disqus_thread{
