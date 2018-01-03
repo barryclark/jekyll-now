@@ -4,7 +4,8 @@ title: About
 permalink: /about/
 ---
 
-I think numerically and am able to translate that logic into common vernacular. I approach every obstacle and a new challenge with creativity and determination. I am passionate about economic equity of individuals and within markets companies.
+I am passionate about uncovering the narrative behind data and making it intelligible to different audiences. I find a unique sense of joy in using Data Science to examine uncharted territory in global trends. I bring to the table a liberal arts background a multicultural heritage and a love of international exploration.
+
 
 ### More Information
 
