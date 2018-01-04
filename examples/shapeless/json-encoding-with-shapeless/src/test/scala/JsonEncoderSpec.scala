@@ -25,4 +25,22 @@ class JsonEncoderSpec extends FlatSpec with Matchers {
     val simpleCaseClass = SimpleCaseClass(5)
     writeJson(simpleCaseClass) shouldBe """{"myNumber": 5}"""
   }
+
+  it should "be able to encode a multi-field case class" in {
+    case class ComplexCaseClass(str: String, num: Int, good: Boolean)
+    val classToEncode = ComplexCaseClass("myString", 5, true)
+    println(writeJson(classToEncode))
+    writeJson(classToEncode) shouldBe """{"str": "myString", "num": 5, "good": true}"""
+  }
+
+//  it should "be able to encode a nested case class" in pendingUntilFixed {
+//    case class SimpleOne(simpleString: String, num2: Int)
+//    case class NestedCaseClass(yetAnotherCC: SimpleOne)
+//
+//    val simpleOne = SimpleOne("simpleString", 5)
+//    val complexOne = NestedCaseClass(simpleOne)
+//
+//    val complexEncoder = JsonEncoder[NestedCaseClass]
+//  }
+
 }
