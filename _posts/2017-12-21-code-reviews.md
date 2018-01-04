@@ -14,11 +14,11 @@ To us, a code review is the final check by the team that the change being delive
 * follows agreed best practice, and coding standards
 * code is understandable, maintainable and clean
 * all automated tests are written, and have the necessary coverage
-* the acceptance criteria on the ticket has been met
+* the acceptance criteria on the ticket have been met
 
 # How do we do code reviews? #
 
-In order to gain the most from our code reviews, we try and stick the following: 
+In order to gain the most from our code reviews, we try and stick the following...
 * Two other people to review each pull request (PR)
 * Picking reviewers that will have the most impact
 * Adding comments to the PR on anything you think needs explaining
@@ -30,7 +30,7 @@ In order to gain the most from our code reviews, we try and stick the following:
 
 ## Prevent Issues ##
 
-Code reviews are an additional gate, and more pairs of eyes on a change. This can increase the likelihood of picking up issues before they out of the development environment where fixing is much quicker and cheaper. At this point the developer is unlikely to have context switched too, so can make the change relatively easily.
+Code reviews are an additional gate, and more pairs of eyes on a change. This can increase the likelihood of picking up issues before they are out of the development environment where fixing is much quicker and cheaper. At this point the developer is unlikely to have context switched too, so can make the change relatively easily.
 
 As we do our branching as feature/bug branches, this allows us to prevent a merge onto master/develop before it's approved. This can then be coupled with Continuous Integration to check the code also builds and tests succeed before the merge also.
 
@@ -50,7 +50,7 @@ Instead, incremental improvement through reviews can reduce the debt in a more c
 
 This standard of best practice can (and should) evolve over time, sure you can write it down and put it on the wall, but only through repetition in code reviews does it become second nature. As it's also evolved through team consensus, members are more likely to buy into it and follow in the long term.
 
-On my projects once we have a strong foundation of standards, I like to then introduce "Scouts Honour", (also known as the Boy Scouts Rule). Put simply, Scouts "Always leave the campground cleaner than you found it." which also applies to code. It doesn't matter if you didn't touch that method, if it needs refactoring, then do it. 
+On my projects once we have a strong foundation of standards, I like to then introduce the Boy Scouts Rule. Put simply, Scouts "Always leave the campground cleaner than you found it." which also applies to code. It doesn't matter if you didn't touch that method, if it needs refactoring, then do it. 
 
 We expect that every PR will contain some form of refactoring, which continues to drive down that tech debt, improve maintainability, and gives developers ownership over the codebase which reaffirms the "[you are not the code you write](https://hackernoon.com/you-are-not-the-code-you-write-e54f02876ca3)" value.
 
@@ -66,6 +66,12 @@ We like to have a blameless project, and as we usually aim for two code reviews,
 
 As you're having to show your code to your peers every time there is a change, naturally you are going to make sure it's as good as you can make it (with the time constraints of course), this means that we have found that people start doing their own personal code reviews first picking up on the agreed best practice issues that can easily get missed.
 
-The more you strive as an individual to produce better code, the better it is for the team, and the fewer comments being passed around on a PR. We're always aiming for that holy "LGTM!" review.
+The more you strive as an individual to produce better code, the better it is for the team, and the fewer comments being passed around on a PR. We're always aiming for that holy "[LGTM!](https://www.urbandictionary.com/define.php?term=LGTM)" review. Only for us to be suspicious about it later, thinking it's too good to be true.
 
-Only for us to be suspicious about it later... thinking it's too good to be true
+## Smaller Changes ##
+
+It doesn't have to happen too often to receive a "50 files changed" with multi-thousand line changes, before you start to realise that it's not workable. This drives developers think about their commits size and structure to produce smaller, incremental changes that not only can be more easily backed out, but also they can be reviewed much more easily.
+
+## Summary ##
+
+So, in short, code reviews provide a lot of benefits to product quality and shared team understanding and they are easy to do. With a little practice they can become a low friction part of your development routine. Why not give it a try and let me know how you get on?
