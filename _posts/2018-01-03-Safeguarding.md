@@ -22,7 +22,7 @@ What made it possible to create this problem? What factors led to this happening
 Safeguarding is quick and lightweight.
 ===
 
-Now that you've identified a deep underlying cause for a broad genus of problems, don't fix the whole genus at once. Find one thing you can do to make things a little bit better. If you can reduce the size of the genus by 15%, that's about right. 
+Now that you've identified a deep underlying cause for a broad genus of problems, don't fix the whole genus at once. Find one thing you can do to make things a little bit better. If you can reduce the size of the genus by 15%, that's about right.
 
 Look for things that each take about an hour. This makes it easy to justify the cost. You'll capture the value of your efforts quickly. If your idea doesn't pan out, you haven't lost much. If you get interrupted during the 3rd hour, you'll still have two safeguards completed.
 
@@ -58,7 +58,7 @@ Is this Refactoring?
 
 Some safeguarding is refactoring. Some is testing. Some is tooling. 
 
-Safeguarding is not education, which puts a burden on developers. 
+Safeguarding does not include educating developers not to use a certain code construct. That puts the burden in the wrong place. 
 
 Is this Root Cause Analysis?
 ====
