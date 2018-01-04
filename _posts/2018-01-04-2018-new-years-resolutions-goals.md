@@ -28,6 +28,9 @@ One is to eat out less. Last year we limited ourselves to eating out once per we
 
 That's a 25% reduction. Last year we spent almost *four grand* eating out (although a thousand of that was for our honeymoon in Iceland). A 25% reduction means we'll spend a thousand dollars less this year, or $750 if you don't include Iceland.
 
+![A grass field in Iceland](/images/covers/2018-01-04-2018-new-years-resolutions-goals.jpg)
+*A picture I took of a grass field in Iceland*
+
 We also intend to be more frugal when we do eat out by using coupons or ordering less expensive dishes.
 
 The other is for her to cut my hair. I got my hair cut five times last year for a total of $88. That's almost $18 a haircut. Hair trimmers can cost anywhere from $260 for [a professional hair trimmer](https://www.amazon.com/Andis-Professional-Powerful-Lightweight-Cordless/dp/B06XGQJPK7/?tag=hendrixjoseph-20) (haha, not buying that one) to $20 for [a much cheaper, but still quality hair trimmer](https://www.amazon.com/Wahl-Color-Complete-Cutting-79300-400T/dp/B000JNQSIQ/?tag=hendrixjoseph-20), at least on Amazon (note these prices will probably change over time). You might even do better if you shop around.
