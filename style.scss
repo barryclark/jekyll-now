@@ -287,7 +287,7 @@ td, th {
    border: 1px solid $darkGray;
 }
 
-td:nth-child(2n) {
+tr:nth-child(2n) {
   background-color: $lightGray;
 }
 
