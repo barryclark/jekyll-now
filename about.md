@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-I am passionate about uncovering the narrative behind data and making it intelligible to different audiences. I find a unique sense of joy in using Data Science to examine uncharted territory in global trends. I bring to the table a liberal arts background a multicultural heritage and a love of international exploration.
+I am passionate about uncovering the narrative behind data and making it intelligible to different audiences. I find a unique sense of joy in using Data Science to examine uncharted territory in global trends. I bring to the table a liberal arts background, a multicultural heritage, and a love of international exploration.
 
 
 ### More Information
