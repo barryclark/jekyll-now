@@ -23,7 +23,7 @@ comment: true
 
 2. What role does input normalization play?
 
-    Normalization is useful to prevent neurons from saturating when inputs may have varying scale, and to aid generalization. Training a deep neural network is often complicated by the fact that distributions of each layer's input or each datapoint changes during training. This forces to use smaller learning rates and careful parameter initialization and consequently slows down the learning process. Oftentimes, by fixing the distribution of inputs to a network would have positive consequences such as accelerating learning and better generalization results.
+    Normalization is useful to prevent neurons from saturating when inputs may have varying scales, and to aid generalization. Training a deep neural network is often complicated by the fact that distributions of each layer's input or each datapoint changes during training. This forces to use smaller learning rates and careful parameter initialization and consequently slows down the learning process. Oftentimes, by fixing the distribution of inputs to a network would have positive consequences such as accelerating learning and better generalization results.
 
 3. What is saturating nonlinearity?
 
@@ -84,8 +84,25 @@ comment: true
 
 #### Q&A
 1. What's moving averages? How is it used in DL?
+
+    Refer to **Notes of the day** down at bottom of the post.
+
 2. What's momentum used in training?
+
+    Refer to **Notes of the day** down at bottom of the post.
+
 3. What's the connection between consecutive convolutional layers and the filter sizes?
+
+    It's easy to visualize that a stack of two subsequent 3x3 conv layers (without spatial pooling in between) has a pretty similar effect as a 5x5 conv layer.  
+
+    In Alexnet, every convolutional layer is followed by a spatial pooling and it's not hard to see the problem with this method: when we are trying to increase the depth of a network, sub-sampling methods like spatial pooling multiplicatively decrease the size of the feature map. For example, a 32 by 32 image can only afford 5 max-poolings before it becomes a single pixel. One of the solutions to this problem is that instead of using relatively large filter size in one single convolutional layer, we do multiple layers with small filter sizes. VGG is one of the models that follow this configuration.
+
+    In the [original paper of VGG](https://arxiv.org/pdf/1409.1556.pdf), section 2.3, the authors discussed on this topic. In VGG, before each maxlpool layer, there are 2 to 3 convolutional layers in between and each with a relatively small filter size of 3. (In VGG16-C they also have 1x1 conv layers)
+
+    The size of the effective area of a block of convolutional layer is referred as Effective Receptive Field (EFR) in the paper. We can just think of it as the field of view of a camera (the conv block) that scans an area (the inputs, in our case) multiple times. The EFR, or effective field of view, of a single 5x5 conv layer is 5x5. The EFR of a stack of two 3x3 conv layers is 5x5 as well. EFR of a single conv layer of 7x7 filter is 7x7, and a stack of 3 conv layers of filter size 3x3 is also 7x7.
+
+    One of the advantages of this configuration is that, by substituting with multiple conv layers, we can introduce more non-linearities into the system. After each conv layer with small filter size, we can add a non-linear activation function. The end result is that, while we have the same EFR, we have made the decision function more discriminative by inserting more non-linearities. Another advantage discussed in the paper is that this configuration requires significantly fewer parameters compared to single layer structure.
+
 
 ## Day 6
 
@@ -96,5 +113,33 @@ comment: true
 
 #### Q&A
 1. What is learning rate schedule and how important is it?
+    In training deep networks, you can obtain better results by annealing the learning rate over time. While a relatively large initial learning rate is important for optimizers like SGD not to get stuck in a local minimum, a too large LR during the later stage of training will cause the optimizer to bounce around the optimal point and not be able to converge correctly.
+
+    There are several methods we can use to anneal learning rate. One of them is just to simply stop the training and change the LR manually. It requires a fairly good intuition and can be really tricky sometimes. 
+
+    Learning rate schedule is another method, it sets up an algorithm to decay the learning rate during the training. There are three common types:
+    
+    * Step decay:   Step decay reduces the learning rate by some factor every few steps (oftentimes it's epochs).
+    * Exponential decay: Decay the learning rate exponentially according to the number of steps. A implementation from tf.train.exponential_decay:
+    > decayed_learning_rate = learning_rate * decay_rate ^ (global_step / decay_steps)
+    * 1/t decay: Just as what it says, the number of steps is down there in the denominator. A implementation from tf.train.inverse_time_decay:
+    > decayed_learning_rate = learning_rate / (1 + decay_rate * t)
+
+    Another way to adjust the learning rate during training is to use a per-parameter adaptive learning rate methods. Refer to the **Notes of the day** for more.
+    
 2. In what way does the metrics of sparsity aid learning process?
 3. What's Adam?
+
+    Refer to **Notes of the day** down at bottom of the post.
+
+
+## Notes of the day
+
+I'll copy and paste the questions that I asked you to refer to this part from above.  
+1. What's moving averages? How is it used in DL?
+2. What's momentum used in training?
+3. What's Adam?
+
+It turns out these questions are all connected. And the answers to them all reside in a topic called "Per-parameter adaptive learning rate methods".
+
+Forgive me as I'll keep you hanging on these questions. As of right now I'm working on experimenting the differences between the methods, and I will write a dedicated post on these questions and the topic of per-parameter learning methods.
