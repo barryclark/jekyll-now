@@ -5,9 +5,9 @@ Introduction
 
 Seeing as I previously wrote about one of my favorite past times - [Whisky](https://gwarrenn.github.io/whisky/) - I figured I would explore one of my least favorite things next: bike accidents.
 
-Thanks to the [DC Government's OpenData Portal](http://opendata.dc.gov/), we can explore the frequency bike accidents and attempt to answer a few questions about bike accidents. The DC Department of Transporation maintains a log of all reported (an important caveat to the data) traffic accidents since August 2015, as well as some helpful metadata, such as the age of all parties involved. I downloaded the data and filtered the dataset to any accident over the past three years that involved at least one bicylist. I also pulled in some other data provided by DC DataPortal, including road and bike lane data, as well as weather data from the National Weather Service.
+Thanks to the [DC Government's OpenData Portal](http://opendata.dc.gov/), we can explore the frequency bike accidents and attempt to answer a few questions about bike accidents. The DC Department of Transportation maintains a log of all reported (an important caveat to the data) traffic accidents since August 2015, as well as some helpful metadata, such as the age of all parties involved. I downloaded the data and filtered the data set to any accident over the past three years that involved at least one bicyclist. I also pulled in some other data provided by DC DataPortal, including road and bike lane data, as well as weather data from the National Weather Service.
 
-An important note to preface this project: the accident data gives us a sense of where/when accidents happen in the district, but it's difficult to disentagle accidents and overall ridership patterns. I may say something like "X street is the most dangerous because it has Y number of accidents." This may make it seem like there is something structurally wrong with or dangerous about the street, when in reality it may simply be that road is one of the more popular routes and actually has a proportionally lower number of accidents compared to other streets. However, we can use this accident data as a way to not only find where/when accidents happen, but also establish patterns of ridership in DC. As far as I can tell there is a dearth of data out there that tracks ridership patterns and demographics. Consider this an unfortunate survey of bicyclists in DC with a very specific selection bias.
+An important note to preface this project: the accident data gives us a sense of where/when accidents happen in the district, but it's difficult to disentangle accidents and overall ridership patterns. I may say something like "X street is the most dangerous because it has Y number of accidents." This may make it seem like there is something structurally wrong with or dangerous about the street, when in reality it may simply be that road is one of the more popular routes and actually has a proportionally lower number of accidents compared to other streets. However, we can use this accident data as a way to not only find where/when accidents happen, but also establish patterns of ridership in DC. As far as I can tell there is a dearth of data out there that tracks ridership patterns and demographics. Consider this an unfortunate survey of bicyclists in DC with a very specific selection bias.
 
 Getting Started
 ---------------
@@ -27,14 +27,14 @@ Are Maryland drivers really the worst?
 
 ![_config.yml]({{ site.baseurl }}/images/drivers_state.png)
 
-DC drivers account for just under half of the accidents involving cyclists in the district. Maryland drivers also make up a sizeable portion of accidents involving bikes - doubling the number of accidents that Virginia drivers are involved with.
+DC drivers account for just under half of the accidents involving cyclists in the district. Maryland drivers also make up a sizable portion of accidents involving bikes - doubling the number of accidents that Virginia drivers are involved with.
 
-Where do the highest amoung of accidents take place?
+Where do the most accidents take place?
 ----------------------------------------------------
 
 ![_config.yml]({{ site.baseurl }}/images/crash_map.png)
 
-The heatmap above shows the density of accidents involving bikes in Washington DC. Not surprisingly, the epicenter of the heatmap is in downtown DC, just north of the National Mall and south of Meridian Hill Park. There are also a few other noticeable bubbles in Columbia Heights on 14th Street and Georgetown.
+The heat map above shows the density of accidents involving bikes in Washington DC. Not surprisingly, the epicenter of the heat map is in downtown DC, just north of the National Mall and south of Meridian Hill Park. There are also a few other noticeable bubbles in Columbia Heights on 14th Street and Georgetown.
 
 ![_config.yml]({{ site.baseurl }}/images/most_dangerous_streets.png)
 
@@ -61,11 +61,11 @@ Generally, Thursdays and Fridays have the highest reported levels of bike accide
 
 ![_config.yml]({{ site.baseurl }}/images/bike_crashes_per_hour.png)
 
-The graph above shows the breakdown of bike accidents throughout the day, controlling for weekends and weekdays. The pattern is fairly similar for weekends and weekdays: the largest precentage of accidents occur after midnight, decreasing until the early afternoon when they begin to rise again. However, the biggest difference between weekends and weekdays occurs in the early afternoon to evening. On weekdays, accidents begin to rise around noon and then peak around 4:00 PM, declining until 8:00 PM. I call this the "dinner lull": the time after the commuters have gotten home and before they go out for the evening.
+The graph above shows the breakdown of bike accidents throughout the day, controlling for weekends and weekdays. The pattern is fairly similar for weekends and weekdays: the largest percentage of accidents occur after midnight, decreasing until the early afternoon when they begin to rise again. However, the biggest difference between weekends and weekdays occurs in the early afternoon to evening. On weekdays, accidents begin to rise around noon and then peak around 4:00 PM, declining until 8:00 PM. I call this the "dinner lull": the time after the commuters have gotten home and before they go out for the evening.
 
 ![_config.yml]({{ site.baseurl }}/images/bike_crashes_per_month.png)
 
-Turning to look at the number of bike accidents by month, we see that the distribution is more left skewed than I previously imagined, with the highest number of accidents in September and October. I expected the number of accidents to follow the distribution of total number of bicyclists. More simply, th warmer the weather, the more people on the road, and more accidents. However, the accident data tells a different story.
+Turning to look at the number of bike accidents by month, we see that the distribution is more left skewed than I previously imagined, with the highest number of accidents in September and October. I expected the number of accidents to follow the distribution of total number of bicyclists. More simply, the warmer the weather, the more people on the road, and more accidents. However, the accident data tells a different story.
 
 Is this a result of less people biking during these hot summer months, or is it actually safer to bike in the summer time? OR are there more accidents that are going unreported to the Department of Transportation during this time? In order to answer the first question (the second requires an understanding of the DDOT's reporting system), we need to get a sense of overall ridership patterns.
 
@@ -86,7 +86,7 @@ If we take this a step further and look at the average number of accidents by da
 Conclusion and Final Thoughts
 -----------------------------
 
-Thats it (for now)! Thanks for reading/skimming/looking at the charts. I was able to look at a number of the "What and Where" type questions in this analysis. However, the biggest omission is the "Why" do these bicycle accidents happen, which is the hardest to answer. There are a number of really interesting projects attempting to answer this question, such as the [City of Boston's Crash Modelling Project](https://github.com/Data4Democracy/boston-crash-modeling), which partially inspired this project. Hopefully, I can tackle that question in a subsequent project.
+That's it (for now)! Thanks for reading/skimming/looking at the charts. I was able to look at a number of the "What and Where" type questions in this analysis. However, the biggest omission is the "Why" do these bicycle accidents happen, which is the hardest to answer. There are a number of really interesting projects attempting to answer this question, such as the [City of Boston's Crash Modeling Project](https://github.com/Data4Democracy/boston-crash-modeling), which partially inspired this project. Hopefully, I can tackle that question in a subsequent project.
 
 All of the code and data involved in this project can be accessed here: <https://github.com/GWarrenn/dc_data>
 
