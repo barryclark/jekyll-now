@@ -1,4 +1,4 @@
-<img src="header.jpg" width="100%" />
+![_config.yml]({{ site.baseurl }}/images/header.jpg)
 
 Introduction
 ------------
@@ -12,41 +12,41 @@ An important note to preface this project: the accident data gives us a sense of
 Getting Started
 ---------------
 
-Since August 2015 there have been just over ~1,200<sup>1</sup> reported accidents involving bicycles in Washington DC.
+Since August 2015 there have been just over ~1,200* reported accidents involving bicycles in Washington DC.
 
-<img src="injuries.png" width="100%" />
+![_config.yml]({{ site.baseurl }}/images/injuries.png)
 
 Of the 1,200 accidents, nearly 60% of the cyclists involved sustained what the Department of Transportation classified as "minor injuries," while a third of cyclists were able to walk away without any injuries.
 
-<img src="age.png" width="100%" />
+![_config.yml]({{ site.baseurl }}/images/age.png)
 
 Not surprisingly, cyclists involved in the accidents skew younger than drivers, with an average age of 34 compared to driver's 44. This isn't to say that younger cyclists are more likely to be involved in accidents, more that this follows the demographics of the overall population of cyclists.
 
 Are Maryland drivers really the worst?
 --------------------------------------
 
-<img src="drivers_state.png" width="100%" />
+![_config.yml]({{ site.baseurl }}/images/drivers_state.png)
 
 DC drivers account for just under half of the accidents involving cyclists in the district. Maryland drivers also make up a sizeable portion of accidents involving bikes - doubling the number of accidents that Virginia drivers are involved with.
 
 Where do the highest amoung of accidents take place?
 ----------------------------------------------------
 
-<img src="crash_map.png" width="100%" />
+![_config.yml]({{ site.baseurl }}/images/crash_map.png)
 
 The heatmap above shows the density of accidents involving bikes in Washington DC. Not surprisingly, the epicenter of the heatmap is in downtown DC, just north of the National Mall and south of Meridian Hill Park. There are also a few other noticeable bubbles in Columbia Heights on 14th Street and Georgetown.
 
-<img src="most_dangerous_streets.png" width="100%" />
+![_config.yml]({{ site.baseurl }}/images/most_dangerous_streets.png)
 
 More specifically, M Street, K Street, 14th Street, Georgia Avenue, and Florida Avenue have racked up the most bike accidents. This list tracks with my experiences biking in DC; Georgia Avenue in particular is a pretty terrifying road.
 
-<img src="road_classification.png" width="100%" />
+![_config.yml]({{ site.baseurl }}/images/road_classification.png)
 
 Generally, arterial roads - high capacity urban roads - are the most dangerous type of roads for bicyclists, accounting for half of all accidents in the district. Local and collector roads make up for the other half of accidents. Puzzlingly enough, the Department of Transportation recorded four accidents on interstates and other freeways/expressways.
 
 More information on road classification types can be found here: <https://en.wikipedia.org/wiki/Functional_classification>
 
-<img src="bike_lanes.png" width="100%" />
+![_config.yml]({{ site.baseurl }}/images/bike_lanes.png)
 
 The next question I wanted to investigate was what was the difference in reported accidents between roads that have some form compared to those with no protection. I was able to merge in street level metadata to the accident level data using [bicycle lane & road metadata from DC OpenData](http://opendata.dc.gov/datasets/bicycle-lanes). You can see in the chart above that there is a clear difference in reported accidents between roads with bike lanes and those without.
 
@@ -55,15 +55,15 @@ The next question I wanted to investigate was what was the difference in reporte
 When do bicycle accidents happen?
 ---------------------------------
 
-<img src="bike_crashes_per_day.png" width="100%" />
+![_config.yml]({{ site.baseurl }}/images/bike_crashes_per_day.png)
 
 Generally, Thursdays and Fridays have the highest reported levels of bike accidents in Washington DC. My assumption for this is that there are simply more people out and about in the city on their bikes on these days. There's also a pretty satisfying normal distribution to the number of crashes by day of the week.
 
-<img src="bike_crashes_per_hour.png" width="100%" />
+![_config.yml]({{ site.baseurl }}/images/bike_crashes_per_hour.png)
 
 The graph above shows the breakdown of bike accidents throughout the day, controlling for weekends and weekdays. The pattern is fairly similar for weekends and weekdays: the largest precentage of accidents occur after midnight, decreasing until the early afternoon when they begin to rise again. However, the biggest difference between weekends and weekdays occurs in the early afternoon to evening. On weekdays, accidents begin to rise around noon and then peak around 4:00 PM, declining until 8:00 PM. I call this the "dinner lull": the time after the commuters have gotten home and before they go out for the evening.
 
-<img src="bike_crashes_per_month.png" width="100%" />
+![_config.yml]({{ site.baseurl }}/images/bike_crashes_per_month.png)
 
 Turning to look at the number of bike accidents by month, we see that the distribution is more left skewed than I previously imagined, with the highest number of accidents in September and October. I expected the number of accidents to follow the distribution of total number of bicyclists. More simply, th warmer the weather, the more people on the road, and more accidents. However, the accident data tells a different story.
 
@@ -73,11 +73,11 @@ Is this a result of less people biking during these hot summer months, or is it 
 
 We can get a general sense of ridership patterns using [Capital Bikeshare](https://www.capitalbikeshare.com/system-data) data. Capital Bikeshare is a subscription-based bike sharing service in Washington DC that lets users rent bikes for a given amount of time before returning them to a number of docks throughout the city.
 
-<img src="bikeshare_comparison.png" width="100%" />
+![_config.yml]({{ site.baseurl }}/images/bikeshare_comparison.png)
 
 The ridership data shows the pattern I previously expected: the peak bicycling months for DC Bikeshare are July and August. It is important to note that DC Bikeshare riders =/= all cyclists, so we have to be careful making connections between the two. However, despite having the highest amount of DC Bikeshare riders on the road during this time, the summer months had lower numbers of reported accidents than the fall months.
 
-<img src="accidents_weather.png" width="100%" />
+![_config.yml]({{ site.baseurl }}/images/accidents_weather.png)
 
 If we take this a step further and look at the average number of accidents by daily temperature using data from the National Weather Service, we find that warmer weather (independent of month) is generally associated with higher levels of accidents - up until a certain point. Days with an max temperature of 80 degrees, on average, have 3 accidents involving bicycles, while days with a maximum of 100 degrees have 2 accidents.
 
@@ -92,4 +92,6 @@ All of the code and data involved in this project can be accessed here: <https:/
 
 Happy to answer any questions/comments/criticism/rants: <augustjwarren@gmail.com>
 
-<sup>1</sup> As noted in the monthly section, there appears to be a bit of a lag in 2017 reporting. The number of accidents in the summer of 2017 is much lower than 2016, while the late-winter/spring of 2017 have similar levels as 2016.
+---
+
+* As noted in the monthly section, there appears to be a bit of a lag in 2017 reporting. The number of accidents in the summer of 2017 is much lower than 2016, while the late-winter/spring of 2017 have similar levels as 2016.
