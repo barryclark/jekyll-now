@@ -83,6 +83,8 @@ If we take this a step further and look at the average number of accidents by da
 
 [Also, on average there are less accidents on 40 degree days than 20 & 60 degree days.](https://www.youtube.com/watch?v=7ttbQTz8tAE&feature=youtu.be&t=28)
 
+So, it does appear that even though there are more bikers on the road during the summer months, there are fewer accidents than in the fall months.
+
 Conclusion and Final Thoughts
 -----------------------------
 
