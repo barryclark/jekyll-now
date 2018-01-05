@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Stop, Breathe & Think Kids
-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vestibulum turpis ac porttitor volutpat. Mauris facilisis velit sit amet nulla semper, a ultricies nunc gravida.
+description: Mindfulness app specially designed for kids, featuring guided meditations for dealing with anxiety, stress and sleeping problems. Showcased on The Planet of the Apps show and selected as App Store's Best of Show 2017 in 3 countries
 background: index/sbt-postBackground.svg
 banner: posts/sbt-postBanner.png
 featured: true
@@ -9,26 +9,33 @@ roles: [iOS Developer, UI Engineer]
 order: 1
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vestibulum turpis ac porttitor volutpat. Mauris facilisis velit sit amet nulla semper, a ultricies nunc gravida.
+Mindfulness app specially designed for kids, featuring guided meditations for dealing with anxiety, stress and sleeping problems. Showcased on The Planet of the Apps show and selected as **App Store's Best of Show 2017** in 3 countries.
 
-# Heading 1
+# Can we teach our kids to meditate?
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vestibulum turpis ac porttitor volutpat. Mauris facilisis velit sit amet nulla semper, a ultricies nunc gravida.
+After having established itself in the mindfulness space, 'Stop, Breathe & Think' had an interesting question: Can we make our kids care about meditating?
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vestibulum turpis ac porttitor volutpat. Mauris facilisis velit sit amet nulla semper, a ultricies nunc gravida.
+Our aimed audience, between 6 and 11 years old, provided me a fascinating challenge. As a UI Engineer, my main goals were:
 
-## Heading 2
+- Fast and impatience-proof performance
+- Generous tappable areas
+- Fun but not-in-the-way micro interactions
 
-- Item 1
-- Item 2
-- Item 3
+Without the baggage of our first app, we decided going full Swift and with exclusive support of iOS 10 (and later, iOS 11).
 
-1. Item 1
-2. Item 2
-3. Item 3
+# From side project to main attraction
 
-### Heading 3
+The project was originally pitched by the product team as a proof-of-concept app. They decided to assign only me and our ux/ui designer for working on its first version while the rest of the team were focused on our original app.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vestibulum turpis ac porttitor volutpat. Mauris facilisis velit sit amet nulla semper, a ultricies nunc gravida.
+Only time after release the CEO revealed the product was actually part of a broader and bigger strategy born from the company's participation on The Planet of the Apps show. Currently the app is growing faster than its All-Ages counterpart.
+
+
+# Fast prototyping for early deliveries
+
+# Taking control of the flow
+
+# Featured interactions
+
+# Final thoughts
 
 
