@@ -18,9 +18,10 @@ To see only the server's responses in Wireshark the filter "http && ip.src==10.0
 ![_config.yml]({{ site.baseurl }}/images/we_got_breached/SQL_break_out.png)
 
 The returns for the first char of the length of row one schema_name were:
-char > 51 was not found
-char > 48 was found
-char > 49 was not found
+
+    char > 51 was not found
+    char > 48 was found
+    char > 49 was not found
 
 This means the char is greater than 48, but not greater than 49, so char is 49. 49 is 1 when converted to ascii. If done for the second char you get 8, which means the schema_name is 18 chars long. The attacker can now guess the chars in the actual name. 
 
@@ -33,15 +34,15 @@ The quickest way to find out what the flag value is from the pcap, is to export 
 ![_config.yml]({{ site.baseurl }}/images/we_got_breached/http_export.png)
 
 After exporting HTTP objects for the responses for the flag, run the following:
-```
-strings http_objects/* > flag_pcap.txt
-sort flag_pcap.txt > flag_data_sorted.txt
-cat flag_data_sorted.txt | grep ,X, | grep not (where X is the char you want)
-```
+
+    strings http_objects/* > flag_pcap.txt
+    sort flag_pcap.txt > flag_data_sorted.txt
+    cat flag_data_sorted.txt | grep ,X, | grep not (where X is the char you want)
+
 
 This will show you the smallest value that was not found, which is the value that the char is. If you want to verify this you can reverse sort flag_pcap.txt, and then grep for first value found. This will be the value right below the answer. 
 
 To automate the process the following bash can be run, after you know the length of the flag:
-for i in $(seq 1 37); do cat flag_data_sorted.txt | grep ,$i, | grep not -m 1; done
+    for i in $(seq 1 37); do cat flag_data_sorted.txt | grep ,$i, | grep not -m 1; done
 
 ![_config.yml]({{ site.baseurl }}/images/we_got_breached/flag_data.png)
