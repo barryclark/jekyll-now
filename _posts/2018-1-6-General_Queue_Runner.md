@@ -15,7 +15,7 @@ Trong một ứng dụng về học máy thì khâu chuẩn bị dữ liệu ban
 
 Trong running-time các enqueue operator sẽ được thi hành bởi các threads được tạo ra bởi `tf.train.QueueRunner`. Vài dòng code cuối trong hàm `tf.train.start_queue_runners` sẽ cho chúng ta thấy rõ điều này:
 
-<div style="font-size: 80%;">
+<div style="font-size: 75%;">
 {% highlight python %}
     ...
     with sess.graph.as_default():
@@ -27,6 +27,7 @@ Trong running-time các enqueue operator sẽ được thi hành bởi các thre
 {% endhighlight %}
 </div>
 Ở đây tham số `collection` được mặc định là `tf.GraphKeys.QUEUE_RUNNERS`, nghĩa là các queue runner mặc định sẽ được lấy từ `collection` có tên là `tf.GraphKeys.QUEUE_RUNNERS`. Bạn có thể xem chi tiết hàm `tf.train.add_queue_runner` để thấy rõ điều này, nó đơn giản chỉ thêm queue runner vào trong một collection:
+<div style="font-size: 75%;">
  {% highlight python %}
     def add_queue_runner(qr, collection=ops.GraphKeys.QUEUE_RUNNERS):
       """Adds a `QueueRunner` to a collection in the graph.
@@ -45,9 +46,10 @@ Trong running-time các enqueue operator sẽ được thi hành bởi các thre
       """
       ops.add_to_collection(collection, qr)
 {% endhighlight %}
- 
+ </div>
  Trong implemention của `tf.train.QueueRunner` chúng ta chỉ cần quan tâm tới hai hàm `_run` và `create_threads`. Về cơ bản `tf.train.QueueRunner` tạo các threads của nó bằng cách chạy hàm `create_threads` với hàm private `_run` như là thread function để chạy enqueue operator. Bạn chú ý rằng một `tf.train.QueueRunner` có thể chứa nhiều enqueue operator để chạy, và một enqueue operator được chạy bởi một thread. Các enqueue thread được đồng bộ bởi đối tượng `tf.train.coordinator` và mặc định là các daemon threads. Một điều khá may mắn là các enqueue operator hỗ trợ feed_dict mechanism, nghĩa là chúng ta có thể thực thi câu lệnh `session.run(enqueue, feed_dict={feed_tensors: data_to_feed})` điều này không được nói tới rõ ràng trong tensorflow document. Vì thế, chúng tôi thay đổi một chút hàm `_run` để nó có thể làm việc với feed_dict mechanism bằng cách thêm hai tham số cho hàm này là `feed_dict_fn` và `feed_tensor`. Mục đích của hàm `feed_dict_fn` là để lấy dữ liệu từ source và feed vào `feed_tensor`:
 
+<div style="font-size: 75%;">
 {% highlight python %}
     def _run(self, sess, enqueue_op, coord=None, feed_dict_fn=None, feed_tensor=None):
         """Execute the enqueue op in a loop, close the queue in case of error.
@@ -98,9 +100,11 @@ Trong running-time các enqueue operator sẽ được thi hành bởi các thre
                     self._runs_per_session[sess] -= 1
 
 {% endhighlight %}
+</div>
 
 Như vậy chúng ta chỉ cần thay đổi nhỏ trong hàm `create_threads` để cho hàm `_run` làm việc là thêm vào tham số của thread function là `feed_dict_fn` và `feed_tensor`:
 
+<div style="font-size: 75%;">
 {% highlight python %}
     def create_threads(self, sess, coord=None, daemon=False, start=False):
         """Create threads to run the enqueue ops for the given session.
@@ -157,9 +161,10 @@ Như vậy chúng ta chỉ cần thay đổi nhỏ trong hàm `create_threads` �
 
         return ret_threads
 {% endhighlight %}
+</div>
 
 Bạn có thể xem toàn bộ code của general queue runner tại [đây](https://github.com/ChappiebotAI/engineering/blob/master/general_queue_runner/general_queue_runner.py). Để sử dụng general queue runner, bạn cần khởi tạo nó như với queue runner bình thường với các tham số `feed_dict_funcs`, `feed_tensors`. Các giá trị trong 2 tham số `feed_dict_funcs` và `feed_tensors` phải tương ứng với nhau, ví dụ hàm đọc dữ liệu từ database phải tương ứng với tensor được đọc ra từ đó. Dưới đây là một demo sample sử dụng general queue runner với cả 2 kiểu dữ liệu là fixed shape và dynamic shape:
-
+<div style="font-size: 75%;">
 {% highlight python %}
 from __future__ import absolute_import
 from __future__ import division
@@ -277,5 +282,6 @@ FIXED_TEST = True
 if FIXED_TEST: test_fixed_shape(value)
 else: test_dynamic_shape(value)
 {% endhighlight %}
+</div>
 
 Một lưu ý nhỏ đối với general queue runner là nó không thể được serialized tới computation graph thông thường được chứa theo định dạng protobuf. Vì thế nó không được đăng ký bởi hàm `register_proto_function` và hàm `to_proto` của nó là không được thực hiện bạn có thể xem nó trong code của general queue runner.
