@@ -15,6 +15,7 @@ Trong một ứng dụng về học máy thì khâu chuẩn bị dữ liệu ban
 
 Trong running-time các enqueue operator sẽ được thi hành bởi các threads được tạo ra bởi `tf.train.QueueRunner`. Vài dòng code cuối trong hàm `tf.train.start_queue_runners` sẽ cho chúng ta thấy rõ điều này:
 
+<div style="font-size: 80%;">
 {% highlight python %}
     ...
     with sess.graph.as_default():
@@ -24,7 +25,7 @@ Trong running-time các enqueue operator sẽ được thi hành bởi các thre
                                        start=start))
     return threads
 {% endhighlight %}
-
+</div>
 Ở đây tham số `collection` được mặc định là `tf.GraphKeys.QUEUE_RUNNERS`, nghĩa là các queue runner mặc định sẽ được lấy từ `collection` có tên là `tf.GraphKeys.QUEUE_RUNNERS`. Bạn có thể xem chi tiết hàm `tf.train.add_queue_runner` để thấy rõ điều này, nó đơn giản chỉ thêm queue runner vào trong một collection:
  {% highlight python %}
     def add_queue_runner(qr, collection=ops.GraphKeys.QUEUE_RUNNERS):
