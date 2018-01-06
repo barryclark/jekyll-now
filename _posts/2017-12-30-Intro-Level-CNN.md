@@ -113,6 +113,7 @@ comment: true
 
 #### Q&A
 1. What is learning rate schedule and how important is it?
+
     In training deep networks, you can obtain better results by annealing the learning rate over time. While a relatively large initial learning rate is important for optimizers like SGD not to get stuck in a local minimum, a too large LR during the later stage of training will cause the optimizer to bounce around the optimal point and not be able to converge correctly.
 
     There are several methods we can use to anneal learning rate. One of them is just to simply stop the training and change the LR manually. It requires a fairly good intuition and can be really tricky sometimes. 
@@ -123,11 +124,22 @@ comment: true
     * Exponential decay: Decay the learning rate exponentially according to the number of steps. A implementation from tf.train.exponential_decay:
     > decayed_learning_rate = learning_rate * decay_rate ^ (global_step / decay_steps)
     * 1/t decay: Just as what it says, the number of steps is down there in the denominator. A implementation from tf.train.inverse_time_decay:
-    > decayed_learning_rate = learning_rate / (1 + decay_rate * t)
+    > decayed_learning_rate = learning_rate/(1 + decay_rate * t)
 
     Another way to adjust the learning rate during training is to use a per-parameter adaptive learning rate methods. Refer to the **Notes of the day** for more.
     
 2. In what way does the metrics of sparsity aid learning process?
+
+    Sparsity is a property that describes how sparse a model is. By sparsity, we usually mean the sparsity of connections. An algorithm yields a sparse result when only a small number of parameters that describe the model are non-zero.   
+    
+    In an analogy to the human brain, although we have an incredibly large number of neurons, each neuron only connects to a small number of peers. When a single neuron is triggered/activated, it has a higher probability to activate its connected peers too. Each unit in a deep learning model should also connect to relatively few peers.
+
+    In most models, we induce the sparsity of connections by having higher sparsity of weights. What this means is that instead of connecting a neuron to fewer peers, we connect the neuron to most of its peers (sometimes make it fully connected), and have most of the weights to be zero. This resembles a similar effect as having a high sparsity in connections as zero weights essentially mean no connections between the neurons. (Unlike sparsity in connections though, we still have to pay the price of computational resources to multiply the inputs and zeros)
+
+    We can use sparsity as a way to regularize learning. Intuitively, a model that has a low sparsity, meaning that it has used a larger number of parameters to approximate the target,  will have a higher risk of overfitting. By regularizing the training with sparsity, we can theoretically reduce the risk of overfitting as well. L1 regularizer is the most commonly used sparsity regularizer.
+
+    As my research goes, I found there are also people suggesting sparsity "has not been paid off" as empirical evidence do not provide solid support to the theory. [Ian Goodfellow's answer on Quora](https://www.quora.com/Where-is-Sparsity-important-in-Deep-Learning/answer/Ian-Goodfellow?srid=td71). So take it with a grain of salt.
+
 3. What's Adam?
 
     Refer to **Notes of the day** down at bottom of the post.
