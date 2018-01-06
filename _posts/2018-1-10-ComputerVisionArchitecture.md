@@ -1,14 +1,13 @@
 ---
 layout: post
-title: Test Mathematic Equations
+title: GENERAL INTRODUCTION OF DEEP LEARNING ARCHITECTURE FOR COMPUTER VISION IN OTONHANH.VN
 ---
-##GENERAL INTRODUCTION OF DEEP LEARNING ARCHITECTURE FOR COMPUTER VISION IN OTONHANH.VN
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nowadays, Deep Learning become more and more popular in many domains like Finance, 
 E-Commerce. At OtoNhanh.vn, we employ Deep Learning to tackle the problems of Natural Language Processing to deal with 
 the requests of the user in our site or of Computer Vision in the illustration of cars. In this blog, we will focus on 
 the network architecture that we consider to use in our Computer Vision application.  
 
-###I. Convolutional Neural Network (ConvNet)  
+### I. Convolutional Neural Network (ConvNet)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The heart of Deep Learning in Computer Vision is ConvNet, a sub-division of Neural
 Network designed specifically to cope with the images. Regular Neural Network is made of fully-connected layers: each 
 unit from one layer have the access to every units from the previous layer, which leads to the explosion in the number 
@@ -22,14 +21,14 @@ types of layer: Convolutional Layer, Pooling Layer and Fully Connected Layer.
 with some differentiable function that may or may not have parameters.  
 >
 
-#####Convolutional Layer  
+##### Convolutional Layer  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;It plays the roles of feature detector in ConvNet. In more detailed, it computes the 
 dot product of 3-D kernel with local region from input image. This sliding-window method can be considered as 
 convolution operation, this is the origin of its name. Each kernel will detect a same feature in every region of the 
 image and send it to the higher layer to construct more delicate feature detector. After the convolution, we prefer to 
 apply some sorts of activation function like ReLU or tanh... to adapt to the non-linearity  
 
-#####Pooling Layer  
+##### Pooling Layer  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The most two popular pooling operation is average pooling and max pooling. This 
 layer is used to achieve the invariance during the training. It means that if we modify the input a little bit, it won't
 affect the overall result much. This invariance is very important in the task of classification as we may capture the 
@@ -38,18 +37,19 @@ However, the way it achieve the invariance by losing the information raises a lo
 community. Recently, G.Hinton, a "god father" in this domain, has public his research about Capsule Net, a way to 
 achieve the pose invariance without using pooling  
 
-#####Fully-Connected Layer  
+##### Fully-Connected Layer  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;At the end of ConvNet, we always put this layer, accompanied by a softmax loss 
 function in case of multi-classification. It will measure the score for each label so that we could choose the label for 
 the input image.  
 
-Generally speaking, Convolutional Layer, Pooling Layer and Fully-Connected Layer are the principal components of ConvNet 
-in the image classification task. To make use these layers at its best, the researchers in Deep Learning community try 
-try to contruct different network architectures. One of the most popular benchmark is the ImageNet challenge. In the 
-next part, we will focus on the architectures that we have implemented in our business.  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Generally speaking, Convolutional Layer, Pooling Layer and Fully-Connected Layer are 
+the principal components of ConvNet in the image classification task. To make use these layers at its best, the 
+researchers in Deep Learning community try to contruct different network architectures. One of the most popular 
+benchmark is the ImageNet challenge. In the next part, we will focus on the architectures that we have implemented in 
+our business.  
 
-###II. Network Architectures
-#####1. AlexNet  
+### II. Network Architectures
+##### 1. AlexNet  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;It is developped by _Alex Krizhevsky and al._. It was submitted to the ImageNet 
 Challenge in 2012 and really made an echo in Deep Learning society by its superiority in the contest. In fact, it is 
 pretty similar to the famous LeNet but bigger and deeper.  
@@ -70,13 +70,13 @@ layer and fully connected layer.
 - One thing to notice: The above architecture is suitable for ImageNet whose sizes are large, for other datasets like 
 MNIST or CIFAR10, we have to reduce some layers to avoid Vanish Gradient.  
  
-#####2. VGG-Net  
+##### 2. VGG-Net  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This architecture is, from my point of view, a deeper version of AlexNet. Its main 
 contribution is that a better performance of the network can be achieved by simply increasing its layers for more 
 sophisticated representation. Its detailed architecture can be found in the paper [Very deep convolutional networks for 
 large-scale image recognition](https://arxiv.org/pdf/1409.1556.pdf).  
 
-#####3. ResNet
+##### 3. ResNet
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unlike the last architectures when they simply increase the depth of the network to 
 enhance the performance, this time, _Kaiming He and al_ have done something new to improve the classification. After 
 VGGNet, Deep Learning community has the impression that a deeper network will definitely bring us to a better 
@@ -108,7 +108,7 @@ mapping, than to learn the function as a new one
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Based on our experience, ResNet is still one of the most powerful Deep Learning 
 architecture in term of error rate and efficiency computation.  
 
-#####4. DenseNet  
+##### 4. DenseNet  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DenseNet is the latest Deep Learning architecture published by _Gao Huang and al._. 
 From their point of view, the degradation in error rate when the network become deeper comes from the fact that the 
 information from input vanishes while passing the layers. So we consider that the shortcut in the residual blocks from 
