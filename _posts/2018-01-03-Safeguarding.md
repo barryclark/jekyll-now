@@ -47,7 +47,6 @@ An example would be useful right now.
 | Create a class with an Equals override for a VIN / Windows file name / user name. | Yes. |
 | Create classes with an Equals override for every bare string in your system, all at once. | No. |
 
-
 Is this the Camp Site Rule?
 ====
 
@@ -68,6 +67,16 @@ Safeguarding includes analysis of underlying causes, although the word "root" im
 I often see attempts at RCA that are too shallow, such as "we've found the line of code that brought the site down." Safeguarding is deeper than that; deep enough to address a genus.
 
 At the same time, Safeguarding can be *less* deep than RCA. It need only go deep enough to reduce the genus by 15%. The next time you have a problem in this area, it will be easier for safeguarding to go a little deeper.
+
+I don't have time for Safeguarding
+====
+Then you need more Safeguarding.
+
+Sometimes you can take the time to clean up the code you're working in, as you're working in it.
+
+Sometimes you can't afford to delay the work, and make the quick, targeted change. That's when you need Safeguarding. How rushed you feel = how much safeguarding you need.
+
+Remember that Safeguarding comes *after* fixing the problem, so it won't stop you from getting the urgent thing done quickly, but it will reduce the need for urgency in the future.
 
 Thanks
 ====
