@@ -5,9 +5,9 @@ title: Classification With Matlab
 
 In my 2016 linear algebra class during my Master's, we were assigned to do a project that used SVD and PCA in some fashion. I used SVD to classify emotions from an image, and my partner, David Kaplan, used PCA to predict gender from a picture. 
 
-I used a method that was used by Lassiter A. and Gugercin S. to determine what number someone had written down<sup>[1]</sup>. The method works by taking each training image and converting them into multiple one column matrices and then combining these. SVD is then used to determine the U matrix. This new matrix is used with the test image z to get the residual, through the equation ||(I-UU<sup>T</sup>z||. The image is then classified as the emotion that had the smallest residual. 
+I used a method that was used by Lassiter A. and Gugercin S. to determine what number someone had written down[1]. The method works by taking each training image and converting them into multiple one column matrices and then combining these. SVD is then used to determine the U matrix. This new matrix is used with the test image z to get the residual, through the equation norm(I-U(U transpose)z). The image is then classified as the emotion that had the smallest residual. 
 
-I wanted to see if this method was useful for a different classification problem. I also wanted to determine if the classification could be improved by filtering the image beforehand. The idea was that different filters might remove some of the noise or emphasize different features. I used the original black and white image, polarized, and sobel filtered images. The images were used from the Karolinska Directed Emotional Faces database<sup>[2]</sup>.
+I wanted to see if this method was useful for a different classification problem. I also wanted to determine if the classification could be improved by filtering the image beforehand. The idea was that different filters might remove some of the noise or emphasize different features. I used the original black and white image, polarized, and sobel filtered images. The images were used from the Karolinska Directed Emotional Faces database[2].
 
 ![_config.yml]({{ site.baseurl }}/images/linear_project/test_images.png)
 
