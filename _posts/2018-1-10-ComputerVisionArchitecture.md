@@ -107,15 +107,16 @@ than to a zero mapping, it should be easier for the solver to find the perturbat
 mapping, than to learn the function as a new one
 >  
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Based on our experience, ResNet is still one of the most powerful Deep Learning 
+Based on our experience, ResNet is still one of the most powerful Deep Learning 
 architecture in term of error rate and efficiency computation.  
 
 ##### 4. DenseNet  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DenseNet is the latest Deep Learning architecture published by _Gao Huang and al._. 
+DenseNet is the latest Deep Learning architecture published by _Gao Huang and al._. 
 From their point of view, the degradation in error rate when the network become deeper comes from the fact that the 
 information from input vanishes while passing the layers. So we consider that the shortcut in the residual blocks from 
 ResNet is one way to  maintain the information from the input till the end of the network.  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The authors of DenseNet pushed the idea of ResNet to its limit. They divide DenseNet 
+
+The authors of DenseNet pushed the idea of ResNet to its limit. They divide DenseNet 
 into the dense blocks
 
 
