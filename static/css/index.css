@@ -329,16 +329,29 @@ section.projectArticlePictureSection picture img{
 }
 
 /* MAIN FOOTER */
-footer#mainFooter {
+footer#mainProjectsFooter {
 	padding: 0px 11.72vw;
 	padding-bottom: 2.34vw;
 }
 
-footer#mainFooter  p, footer#mainFooter a {
+@media (max-width: 760px) {
+	footer#mainProjectsFooter {
+		padding: 0px 5vw;
+		padding-bottom: 5vw;
+	}
+}
+
+footer#mainProjectsFooter  p, footer#mainProjectsFooter a {
 	font-family: 'Aleo', serif;
 	font-size: 1.17vw;
 }
 
-footer#mainFooter a {
+@media (max-width: 760px) {
+	footer#mainProjectsFooter  p, footer#mainProjectsFooter a {
+		font-size: 3.75vw;
+	}
+}
+
+footer#mainProjectsFooter a {
 	text-decoration: underline;
 }
