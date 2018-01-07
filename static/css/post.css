@@ -175,7 +175,7 @@ section#postContentSection h3 {
 	}
 }
 
-section#postContentSection p {
+section#postContentSection p, section#postContentSection em {
 	margin-top: 1.56vw;
 	font-family: "Aleo", serif;
 	font-weight: normal;
@@ -184,7 +184,7 @@ section#postContentSection p {
 }
 
 @media (max-width: 760px) {
-	section#postContentSection p {
+	section#postContentSection p, section#postContentSection em {
 		margin-top: 5vw;
 		font-size: 4.37vw;
 		line-height: 7.7vw;
