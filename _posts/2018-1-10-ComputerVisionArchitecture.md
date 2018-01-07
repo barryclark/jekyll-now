@@ -2,13 +2,13 @@
 layout: post
 title: GENERAL INTRODUCTION OF DEEP LEARNING ARCHITECTURE FOR COMPUTER VISION IN OTONHANH.VN
 ---
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nowadays, Deep Learning become more and more popular in many domains like Finance, 
+Nowadays, Deep Learning become more and more popular in many domains like Finance, 
 E-Commerce. At OtoNhanh.vn, we employ Deep Learning to tackle the problems of Natural Language Processing to deal with 
 the requests of the user in our site or of Computer Vision in the illustration of cars. In this blog, we will focus on 
 the network architecture that we consider to use in our Computer Vision application.  
 
 ### I. Convolutional Neural Network (ConvNet)  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The heart of Deep Learning in Computer Vision is ConvNet, a sub-division of Neural
+The heart of Deep Learning in Computer Vision is ConvNet, a sub-division of Neural
 Network designed specifically to cope with the images. Regular Neural Network is made of fully-connected layers: each 
 unit from one layer have the access to every units from the previous layer, which leads to the explosion in the number 
 of parameters of the network. For example, if we have a RGB image whose size is 200x200 as an input, each neuron in the 
@@ -22,7 +22,7 @@ with some differentiable function that may or may not have parameters.
 >
 
 ##### Convolutional Layer  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;It plays the roles of feature detector in ConvNet. In more detailed, it computes the 
+It plays the roles of feature detector in ConvNet. In more detailed, it computes the 
 dot product of 3-D kernel with local region from input image. This sliding-window method can be considered as 
 convolution operation, this is the origin of its name. Each kernel will detect a same feature in every region of the 
 image and send it to the higher layer to construct more delicate feature detector. After the convolution, we prefer to 
@@ -38,7 +38,7 @@ community. Recently, G.Hinton, a "god father" in this domain, has public his res
 achieve the pose invariance without using pooling  
 
 ##### Fully-Connected Layer  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;At the end of ConvNet, we always put this layer, accompanied by a softmax loss 
+At the end of ConvNet, we always put this layer, accompanied by a softmax loss 
 function in case of multi-classification. It will measure the score for each label so that we could choose the label for 
 the input image.  
 
@@ -50,10 +50,11 @@ our business.
 
 ### II. Network Architectures
 ##### 1. AlexNet  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;It is developped by _Alex Krizhevsky and al._. It was submitted to the ImageNet 
+It is developped by _Alex Krizhevsky and al._. It was submitted to the ImageNet 
 Challenge in 2012 and really made an echo in Deep Learning society by its superiority in the contest. In fact, it is 
 pretty similar to the famous LeNet but bigger and deeper.  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Furthermore, it introduced local response normalization to improve the performance 
+
+Furthermore, it introduced local response normalization to improve the performance 
 and some techniques like data augmentation or dropout to enhance the generalization. Also, it provides us an
 implementation technique to carry out the training in limited hardware.  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Detail of AlexNet architecture used in ImageNet Challenge:  
@@ -71,13 +72,13 @@ layer and fully connected layer.
 MNIST or CIFAR10, we have to reduce some layers to avoid Vanish Gradient.  
  
 ##### 2. VGG-Net  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This architecture is, from my point of view, a deeper version of AlexNet. Its main 
+This architecture is, from my point of view, a deeper version of AlexNet. Its main 
 contribution is that a better performance of the network can be achieved by simply increasing its layers for more 
 sophisticated representation. Its detailed architecture can be found in the paper [Very deep convolutional networks for 
 large-scale image recognition](https://arxiv.org/pdf/1409.1556.pdf).  
 
 ##### 3. ResNet
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unlike the last architectures when they simply increase the depth of the network to 
+Unlike the last architectures when they simply increase the depth of the network to 
 enhance the performance, this time, _Kaiming He and al_ have done something new to improve the classification. After 
 VGGNet, Deep Learning community has the impression that a deeper network will definitely bring us to a better 
 performance. Nevertheless, Kaiming He discovered that it is only true to some extent, after that the error rate may be 
@@ -89,16 +90,17 @@ representation $$\hat{f}$$ of the underlying function $$f(x)$$.
 ![](https://cdn-images-1.medium.com/max/1600/1*pUyst_ciesOz_LUg0HocYg.png)  
 *Residual Block*  
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;To be more precise, in the original paper, the authors indicated that it exists the 
+To be more precise, in the original paper, the authors indicated that it exists the 
 degradation in performance when we deepen the network. Overfitting is not the cause since the training error is also 
 higher in case of deeper network.   
 ![Error rate between the 20-layer network and 56-layer network](https://wiki.tum.de/download/attachments/22578294/Figure%201.bmp?version=1&modificationDate=1485208088253&api=v2)  
 *Error rate between the 20-layer network and 56-layer network*  
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kaiming He had an impression that the neural networks have difficulties in mapping 
+Kaiming He had an impression that the neural networks have difficulties in mapping 
 the identity function. With residual blocks, when identity mapping is sufficient, the neural networks may drive the 
 weights of theirs layers towards zero so as to approach the identity mappings.  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In practice, it is rare that identity mappings are optimal but arcording to the 
+
+In practice, it is rare that identity mappings are optimal but arcording to the 
 authors:  
 >... our reformulation may help to precondition the problem. If the optimal function is closer to an identity mapping 
 than to a zero mapping, it should be easier for the solver to find the perturbations with reference to an identity 
