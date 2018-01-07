@@ -6,6 +6,7 @@ background: index/fetch-postBackground.svg
 featured: false
 roles: [iOS Developer, Creative Technologist]
 order: 2
+published: false
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vestibulum turpis ac porttitor volutpat. Mauris facilisis velit sit amet nulla semper, a ultricies nunc gravida.

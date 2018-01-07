@@ -16,6 +16,12 @@
 			<p>
 				{{ include.post.description }}
 			</p>
+
+			{% if include.post.description2 %}
+				<p>
+					{{ include.post.description2 }}
+				</p>
+			{% endif %}
 		</article>
 
 		<footer>

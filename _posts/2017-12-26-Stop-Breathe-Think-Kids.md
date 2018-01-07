@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Stop, Breathe & Think Kids
-description: Mindfulness app specially designed for kids, featuring guided meditations for dealing with anxiety, stress and sleeping problems. Showcased on The Planet of the Apps show and selected as App Store's Best of Show 2017 in 3 countries
+description: Mindfulness app specially designed for kids, featuring guided meditations for dealing with anxiety, stress and sleeping problems. 
+description2: Showcased on The Planet of the Apps show and selected as App Store's Best of Show 2017 in 3 countries.
 background: index/sbt-postBackground.svg
 banner: posts/sbt-postBanner.png
 featured: true
@@ -9,7 +10,9 @@ roles: [iOS Developer, UI Engineer]
 order: 1
 ---
 
-Mindfulness app specially designed for kids, featuring guided meditations for dealing with anxiety, stress and sleeping problems. Showcased on The Planet of the Apps show and selected as **App Store's Best of Show 2017** in 3 countries.
+*Mindfulness app specially designed for kids, featuring guided meditations for dealing with anxiety, stress and sleeping problems.*
+
+*Showcased on The Planet of the Apps show and selected as **App Store's Best of Show 2017** in 3 countries.*
 
 # Can we teach our kids to meditate?
 
@@ -29,13 +32,30 @@ The project was originally pitched by the product team as a proof-of-concept app
 
 Only time after release the CEO revealed the product was actually part of a broader and bigger strategy born from the company's participation on The Planet of the Apps show. Currently the app is growing faster than its All-Ages counterpart.
 
-
 # Fast prototyping for early deliveries
+
+Keeping the sprints short and our options open, I decided for a deliver-early approach, focusing on providing UI implementation progress on our foundational iterations.
+
+I relied on .xib files for laying out our scenes and branched out a (very) slim version of the VIPER architecture for our modules.
 
 # Taking control of the flow
 
+Thanks to this approach, I noticed early on that we needed to structure our navigation flow based more on our information needs rather than how we were visually presenting the screens.
+
+So there's a heavy reliance on custom transitions across the app (e.g a modal transition animation mimicking a right-to-left push transition), giving us the freedom we were looking for. 
+
 # Featured interactions
 
+I have many favorite interactions, but one I feel most proud of is actually a later adition to the product: the kids account screen.
+
+Comprising of a custom laid out UICollectionView, the kid account edition blends with its parent screen creating a seemless experience.
+
+Also, I kind of dig this small detail of the sticky back button on a screen transition. The little things in life.
+
 # Final thoughts
+
+I'll always value the oportunity of working on this project. Having a direct impact on children lives is what makes this project so special. 
+
+We keep receiving emails thanking us for helping  an austistic child finding calmness or a bullied child regaining confidence in life. That's the ultimate reward on this job.
 
 

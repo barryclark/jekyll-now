@@ -13,6 +13,13 @@
 	src: url("../resources/fonts/aleo/Aleo-Bold.otf");
 }
 
+@font-face {
+	font-family: "Aleo";
+	font-weight: bold;
+	font-style: italic;
+	src: url("../resources/fonts/aleo/Aleo-BoldItalic.otf");
+}
+
 /* GENERAL */
 
 /* POST */
