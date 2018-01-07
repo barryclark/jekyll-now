@@ -1,32 +1,31 @@
-#
 # This file contains configuration flags to customize your site
 #
 
 # Name of your site (displayed in the header)
-name: Your Name
+name: Mao Ke
 
 # Short bio or description (displayed in the header)
-description: Web Developer from Somewhere
+description: Android Developer from ShenZhen
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
+avatar: https://avatars1.githubusercontent.com/u/27619424?s=400&u=247369b70c07f6d911e1a865173c1276b1ef0894&v=4
 
 #
 # Flags below are optional
 #
 
 # Includes an icon in the footer for each username you enter
-footer-links:
+footer-links: kekemao00.github.io
   dribbble:
-  email:
-  facebook:
+  email: kekemao00@gmail.com
+  facebook: https://www.facebook.com/kekemao00
   flickr:
-  github: barryclark/jekyll-now
+  github: https://github.com/kekemao00
   instagram:
   linkedin:
   pinterest:
   rss: # just type anything here for a working RSS icon
-  twitter: jekyllrb
+  twitter: MaoKe
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
