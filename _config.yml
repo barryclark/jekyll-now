@@ -11,6 +11,9 @@ description: Engineering Blog
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: /images/infinityworks.png
 
+# Fixing build ...
+repository: infinityworks/engineering
+
 authors:
   default:
     display_name: Infinity Works
