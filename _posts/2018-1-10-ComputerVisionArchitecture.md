@@ -29,7 +29,7 @@ image and send it to the higher layer to construct more delicate feature detecto
 apply some sorts of activation function like ReLU or tanh... to adapt to the non-linearity  
 
 ##### Pooling Layer  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The most two popular pooling operation is average pooling and max pooling. This 
+The most two popular pooling operation is average pooling and max pooling. This 
 layer is used to achieve the invariance during the training. It means that if we modify the input a little bit, it won't
 affect the overall result much. This invariance is very important in the task of classification as we may capture the 
 same object but from the different pose or it may have capture the noise as well.  
@@ -42,7 +42,7 @@ At the end of ConvNet, we always put this layer, accompanied by a softmax loss
 function in case of multi-classification. It will measure the score for each label so that we could choose the label for 
 the input image.  
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Generally speaking, Convolutional Layer, Pooling Layer and Fully-Connected Layer are 
+Generally speaking, Convolutional Layer, Pooling Layer and Fully-Connected Layer are 
 the principal components of ConvNet in the image classification task. To make use these layers at its best, the 
 researchers in Deep Learning community try to contruct different network architectures. One of the most popular 
 benchmark is the ImageNet challenge. In the next part, we will focus on the architectures that we have implemented in 
@@ -57,7 +57,8 @@ pretty similar to the famous LeNet but bigger and deeper.
 Furthermore, it introduced local response normalization to improve the performance 
 and some techniques like data augmentation or dropout to enhance the generalization. Also, it provides us an
 implementation technique to carry out the training in limited hardware.  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Detail of AlexNet architecture used in ImageNet Challenge:  
+
+Detail of AlexNet architecture used in ImageNet Challenge:  
 - There are 8 main layers in AlexNet: the first five layer are Convolutional Layer and their dependencies. The remaining 
 three layers are the fully-connected layer. The outputs of the last fully-connected layer are brought to 1000-way 
 soft-max classifier.
