@@ -3,8 +3,11 @@ main#bodyMain section#mainAboutSection {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	margin-top: 7.42vw;/*100px - 24px*/
-	margin-bottom: 25.39vw;/*260px*/
+	margin-bottom: 19.53vw;/*200px*/
 	margin-left: auto;
 	margin-right: auto;
 	width: 52.5vw;
@@ -17,14 +20,14 @@ main#bodyMain section#mainAboutSection {
 }
 
 section#mainAboutSection article {
-	width: 50%;
-	margin-right: 4px;
+	width: 25.39vw;
+	margin-right: 8px;
 }
 
 section#mainAboutSection article p {
 	font-family: "Aleo", serif;
 	font-size: 1.95vw;
-	line-height: 3.32vw;
+	line-height: 2.92vw;
 	text-align: right;
 }
 
@@ -39,7 +42,7 @@ section#mainAboutSection article footer {
 }
 
 section#mainAboutSection article:last-of-type {
-	margin-left: 4px;
+	margin-left: 8px;
 	margin-right: 0px;
 }
 
@@ -323,4 +326,19 @@ section.projectArticlePictureSection picture img{
 		-o-object-fit: fill;
 		   object-fit: fill;
 	}
+}
+
+/* MAIN FOOTER */
+footer#mainFooter {
+	padding: 0px 11.72vw;
+	padding-bottom: 2.34vw;
+}
+
+footer#mainFooter  p, a {
+	font-family: 'Aleo', serif;
+	font-size: 1.17vw;
+}
+
+footer#mainFooter a {
+	text-decoration: underline;
 }

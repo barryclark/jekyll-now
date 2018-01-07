@@ -21,6 +21,23 @@
 }
 
 /* GENERAL */
+header#mainHeader {
+	margin-bottom: 1.17vw;
+}
+
+header#mainHeader a {
+	font-family: "Aleo", serif;
+	font-size: 1.56vw;
+	display: inline-block;
+	border: solid 1px black;
+	padding: 1.17vw 2.34vw;
+
+	-webkit-transition: background-color 0.3s;
+
+	-o-transition: background-color 0.3s;
+
+	transition: background-color 0.3s;
+}
 
 /* POST */
 article#mainPostArticle {
