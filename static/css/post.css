@@ -175,16 +175,15 @@ section#postContentSection h3 {
 	}
 }
 
-section#postContentSection p, section#postContentSection em {
+section#postContentSection p, section#postContentSection p * {
 	margin-top: 1.56vw;
 	font-family: "Aleo", serif;
-	font-weight: normal;
 	font-size: 1.56vw;/*16px*/
 	line-height: 2.53vw;
 }
 
 @media (max-width: 760px) {
-	section#postContentSection p, section#postContentSection em {
+	section#postContentSection p, section#postContentSection p * {
 		margin-top: 5vw;
 		font-size: 4.37vw;
 		line-height: 7.7vw;
@@ -202,7 +201,7 @@ section#postContentSection ul, section#postContentSection ol {
 	}
 }
 
-section#postContentSection li {
+section#postContentSection li, section#postContentSection li * {
 	font-family: "Aleo", serif;
 	font-weight: normal;
 	font-size: 1.56vw;/*16px*/
@@ -210,7 +209,7 @@ section#postContentSection li {
 }
 
 @media (max-width: 760px) {
-	section#postContentSection li {
+	section#postContentSection li, section#postContentSection li * {
 		font-size: 4.37vw;
 		line-height: 7.7vw;
 	}
