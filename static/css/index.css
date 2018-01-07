@@ -334,7 +334,7 @@ footer#mainFooter {
 	padding-bottom: 2.34vw;
 }
 
-footer#mainFooter  p, a {
+footer#mainFooter  p, footer#mainFooter a {
 	font-family: 'Aleo', serif;
 	font-size: 1.17vw;
 }
