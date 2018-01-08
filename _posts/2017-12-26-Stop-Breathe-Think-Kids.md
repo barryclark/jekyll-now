@@ -4,7 +4,7 @@ title: Stop, Breathe & Think Kids
 description: Mindfulness app specially designed for kids, featuring guided meditations for dealing with anxiety, stress and sleeping problems. 
 description2: Showcased on The Planet of the Apps show and selected as App Store's Best of Show 2017 in 3 countries.
 background: index/sbt-postBackground.svg
-banner: posts/sbtk-banner.jpg
+banner: posts/StopBreathe&ThinkKids/sbtk-banner.jpg
 featured: true
 roles: [iOS Developer, UI Engineer]
 order: 1
