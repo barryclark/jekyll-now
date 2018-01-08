@@ -28,13 +28,13 @@ Our aimed audience, between 6 and 11 years old, provided me a fascinating challe
 
 Without the baggage of our first app, we decided going full Swift and with exclusive support of iOS 10 (and later, iOS 11).
 
-![](/static/img/posts/StopBreathe&ThinkKids/sbtk-kid.png)
-
 # From side project to main attraction
 
 The project was originally pitched by the product team as a proof-of-concept app. They decided to assign only me and our ux/ui designer for working on its first version while the rest of the team were focused on our original app.
 
 Only time after release the CEO revealed the product was actually part of a broader and bigger strategy born from the company's participation on The Planet of the Apps show. Currently the app is growing faster than its All-Ages counterpart.
+
+![](/static/img/posts/StopBreathe&ThinkKids/sbtk-kid.png)
 
 # Fast prototyping for early deliveries
 
