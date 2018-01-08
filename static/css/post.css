@@ -77,13 +77,13 @@ header#postHeader picture img {
 }
 
 header#postHeader hgroup {
-	margin-top: 5.86vw;
+	margin-top: 2.43vw;
 	margin-bottom: 0.78vw;
 }
 
 @media (max-width: 760px) {
 	header#postHeader hgroup {
-		margin-top: 10vw;
+		margin-top: 5vw;
 	}
 }
 
@@ -219,4 +219,10 @@ section#postContentSection p img {
 	width: 100%;
 	margin-top: 0.78vw;
 	margin-bottom: 0.78vw;
+}
+
+section#postContentSection p video {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
