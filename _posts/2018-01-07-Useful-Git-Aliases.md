@@ -1,5 +1,3 @@
-# Useful Git Aliases
-
 I am always looking to make my life easier, quicker and typing less so I rely heavily on Keyboard Shortcuts and so the following Aliases really help me out.
 
 I have actually decided to create this post mostly for my own benefit, but hopefully many of you may benefit from a lot of these aliases that I use day to day with git.
