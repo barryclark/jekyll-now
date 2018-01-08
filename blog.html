@@ -1,0 +1,13 @@
+---
+layout: blog
+---
+<div class="posts">
+			<ul>
+  {% for post in site.posts %}
+    <article class="post">
+      <li>{{ post.date | date: "%B %e, %Y" }} - <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+    </article>
+  
+  {% endfor %}
+  </ul>
+</div>

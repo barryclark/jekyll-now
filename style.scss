@@ -1,0 +1,253 @@
+---
+---
+
+.landingHead{
+  opacity:30;
+  background-color:black;
+  background-image: url("https://images.pexels.com/photos/85105/pexels-photo-85105.jpeg?w=940&h=650&auto=compress&cs=tinysrgb");
+  background-size:100%;
+  width:100%;
+  height:650px;
+  opacity: .8
+}
+
+.headshotPic{
+  width:200px;
+  height:200px;
+  border-radius: 50%;
+}
+
+.landingText{
+  width:95%;
+  margin: 0 auto;
+  background-color: #6d6d6d;
+  position:relative;
+  top:240px;
+}
+
+.aboutMe{
+  font-size:25px;
+  line-height:1.5;
+  font-style:italic;
+}
+body{
+  position:relative;
+  background: #34495e;
+  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+  line-height: 25px;
+  margin-bottom:100px;
+}
+
+/*general*/
+.content, .panel-default>.panel-heading, .navbar{
+  background:#fff;
+}
+
+h1, h2, h3{
+  color: #dfd6ca;
+  text-align:center;
+  margin-bottom:25px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight:bold;
+}
+h1{
+  text-align:center;
+  font-size:40px;
+  letter-spacing: 5px;
+}
+h2{
+  font-size:30px; 
+}
+h3{
+  font-size:20px;
+}
+hr{
+  color:gray;
+}
+
+.content{
+  margin:30px 0;
+}
+
+/*footer*/
+
+.fa{
+  margin-left:20px;
+}
+.navbar-fixed-bottom{
+  padding: 10px;
+  text-align: center;
+  background: #666666;
+  border-top: 5px solid #4aaaa5;
+
+}
+.navbar-default .navbar-text{
+  font-size:16px;
+  width:100%;
+  text-align:center;
+  color: #D3D3D3;
+}
+
+header .container {
+  padding:100px;
+}
+
+.navbar-custom {
+  background: #2C3E50;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  border: none;
+}
+
+.portfolioImg{
+  width:100%;
+  height:300px;
+  margin-top:50px;
+}
+
+.portfolioTitle{
+  position:absolute;
+}
+
+/* Uncomment everything commented to CSS for the hide/show */
+
+.gallery {
+  width: 25em;
+  margin: 2em auto;
+}
+
+.gallery-item {
+  height: auto;
+  float: left;
+  margin-bottom: 2em;
+  position: relative;
+}
+
+.gallery-item:first-child {
+  margin-right: 2.762430939%;
+}
+
+.gallery-item img {
+  width: 100%;
+}
+
+.gallery-item:hover .img-title {
+  /*opacity: 1;*/
+}
+
+.img-title {
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  padding-top:10px;
+  height: 25%;
+  width: 100%;
+  text-align: center;
+  /*opacity: 0;*/
+  display: none; /* comment this out for CSS hover */
+  background-color: #333;
+  /*transition: all 0.5s ease;*/
+}
+
+.img-title h5 {
+  position: absolute;
+  color: #fff;
+  top: 33%;
+  width: 100%;
+  text-align: center;
+}
+
+
+.banner {
+  display: block;
+  min-height: 200px;
+  width: 100%;
+  position: relative;
+}
+.typedText{
+  font-size:20px;
+}
+.typed_wrap {
+  font-family: 'Open Sans', sans-serif;
+
+  display: block;
+  width: 60%;
+  height: auto;
+  padding: 30px;
+  border: 4px solid #ecf0f1;
+  background-color:black;
+  /*centers it in the .banner*/
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.typed_wrap h1 {
+  display: inline;
+}
+
+/*Add custom cursor so it auto inherits font styles*/
+.typed::after {
+  content: '|';
+  display: inline;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
+}
+
+/*Removes cursor that comes with typed.js*/
+.typed-cursor{
+  opacity: 0;
+  display: none;
+}
+/*Custom cursor animation*/
+@keyframes blink{
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
+}
+@-moz-keyframes blink{
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
+}
+
+.lead{
+  margin-top:30px;
+}
+
+.content{
+  padding-bottom:30px;
+}
+.contactHead{
+  color:black;
+}
+ul, h1{
+  margin-top:50px
+}
+article{
+  background:white;
+}
+.posts{
+  background:white;
+}
+
+.entry{
+  padding:10px
+}
+@media only screen and (max-width: 500px) {
+    .typed_wrap {
+       width:100%;
+    }
+}
