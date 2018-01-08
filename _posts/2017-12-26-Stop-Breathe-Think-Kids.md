@@ -4,7 +4,7 @@ title: Stop, Breathe & Think Kids
 description: Mindfulness app specially designed for kids, featuring guided meditations for dealing with anxiety, stress and sleeping problems. 
 description2: Showcased on The Planet of the Apps show and selected as App Store's Best of Show 2017 in 3 countries.
 background: index/sbt-postBackground.svg
-banner: posts/sbt-postBanner.png
+banner: posts/sbtk-banner.jpg
 featured: true
 roles: [iOS Developer, UI Engineer]
 order: 1
@@ -14,7 +14,7 @@ order: 1
 
 *Showcased on The Planet of the Apps show and selected as **App Store's Best of Show 2017** in 3 countries.*
 
-![](/static/img/posts/StopBreathe&ThinkKids/sbtk-player-iphone6.png)
+![](/static/img/posts/StopBreathe&ThinkKids/sbtk-player-iphone6.jpg)
 
 # Can we teach our kids to meditate?
 
@@ -34,7 +34,7 @@ The project was originally pitched by the product team as a proof-of-concept app
 
 Only time after release the CEO revealed the product was actually part of a broader and bigger strategy born from the company's participation on The Planet of the Apps show. Currently the app is growing faster than its All-Ages counterpart.
 
-![](/static/img/posts/StopBreathe&ThinkKids/sbtk-kid.png)
+![](/static/img/posts/StopBreathe&ThinkKids/sbtk-kid.jpg)
 
 # Fast prototyping for early deliveries
 
@@ -53,7 +53,7 @@ So there's a heavy reliance on custom transitions across the app (e.g a modal tr
 I have many favorite interactions, but one I feel most proud of the Emotion Picker. Comprising of a UIStackView for the parent emotions and a custom laid out UICollectionView for the children, it helps you quickly express all the range of emotion you feel in a quick and fun way.
 
 <p>
-<video width="100%" controls preload="metadata" poster="/static/img/posts/StopBreathe&ThinkKids/sbtk-emotionPicker-poster.png">
+<video width="100%" controls preload="metadata" poster="/static/img/posts/StopBreathe&ThinkKids/sbtk-emotionPicker-poster.jpg">
 <source src="/static/img/posts/StopBreathe&ThinkKids/sbtk-emotionPicker.mp4" type="video/mp4">
 </video>
 </p>
@@ -61,7 +61,7 @@ I have many favorite interactions, but one I feel most proud of the Emotion Pick
 I also feel proud of the Kids Account Manager, a later adition to the product. A UICollectionView with custom layout seamlessly gives way to a second screen for editing a kid's information.
 
 <p>
-<video width="100%" controls preload="metadata" poster="/static/img/posts/StopBreathe&ThinkKids/sbtk-kidsAccount-poster.png">
+<video width="100%" controls preload="metadata" poster="/static/img/posts/StopBreathe&ThinkKids/sbtk-kidsAccount-poster.jpg">
 <source src="/static/img/posts/StopBreathe&ThinkKids/sbtk-kidsAccount.mp4" type="video/mp4">
 </video>
 </p>
