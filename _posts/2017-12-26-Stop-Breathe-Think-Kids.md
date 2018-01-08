@@ -53,7 +53,7 @@ So there's a heavy reliance on custom transitions across the app (e.g a modal tr
 I have many favorite interactions, but one I feel most proud of the Emotion Picker. Comprising of a UIStackView for the parent emotions and a custom laid out UICollectionView for the children, it helps you quickly express all the range of emotion you feel in a quick and fun way.
 
 <p>
-<video width="100%" controls>
+<video width="100%" controls preload="metadata" poster="/static/img/posts/StopBreathe&ThinkKids/sbtk-emotionPicker-poster.png">
 <source src="/static/img/posts/StopBreathe&ThinkKids/sbtk-emotionPicker.mp4" type="video/mp4">
 </video>
 </p>
@@ -61,7 +61,7 @@ I have many favorite interactions, but one I feel most proud of the Emotion Pick
 I also feel proud of the Kids Account Manager, a later adition to the product. A UICollectionView with custom layout seamlessly gives way to a second screen for editing a kid's information.
 
 <p>
-<video width="100%" controls>
+<video width="100%" controls preload="metadata" poster="/static/img/posts/StopBreathe&ThinkKids/sbtk-kidsAccount-poster.png">
 <source src="/static/img/posts/StopBreathe&ThinkKids/sbtk-kidsAccount.mp4" type="video/mp4">
 </video>
 </p>
