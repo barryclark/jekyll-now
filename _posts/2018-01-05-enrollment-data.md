@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Public Enrollment Data
+categories: Education Data
 ---
 
 Charter schools are stealing our students and destroying public education.
