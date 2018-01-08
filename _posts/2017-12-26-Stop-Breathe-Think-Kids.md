@@ -14,6 +14,8 @@ order: 1
 
 *Showcased on The Planet of the Apps show and selected as **App Store's Best of Show 2017** in 3 countries.*
 
+![](/static/img/posts/StopBreathe&ThinkKids/sbtk-player-iphone6.png)
+
 # Can we teach our kids to meditate?
 
 After having established itself in the mindfulness space, 'Stop, Breathe & Think' had an interesting question: Can we make our kids care about meditating?
@@ -25,6 +27,8 @@ Our aimed audience, between 6 and 11 years old, provided me a fascinating challe
 - Fun but not-in-the-way micro interactions
 
 Without the baggage of our first app, we decided going full Swift and with exclusive support of iOS 10 (and later, iOS 11).
+
+![](/static/img/posts/StopBreathe&ThinkKids/sbtk-kid.png)
 
 # From side project to main attraction
 
@@ -46,11 +50,17 @@ So there's a heavy reliance on custom transitions across the app (e.g a modal tr
 
 # Featured interactions
 
-I have many favorite interactions, but one I feel most proud of is actually a later adition to the product: the kids account screen.
+I have many favorite interactions, but one I feel most proud of the Emotion Picker. Comprising of a UIStackView for the parent emotions and a custom laid out UICollectionView for the children, it helps you quickly express all the range of emotion you feel in a quick and fun way.
 
-Comprising of a custom laid out UICollectionView, the kid account edition blends with its parent screen creating a seemless experience.
+<video width="100%" controls>
+<source src="/static/img/posts/StopBreathe&ThinkKids/sbtk-emotionPicker.mp4" type="video/mp4">
+</video>
 
-Also, I kind of dig this small detail of the sticky back button on a screen transition. The little things in life.
+I also feel proud of the Kids Account Manager, a later adition to the product. A UICollectionView with custom layout seamlessly gives way to a second screen for editing a kid's information.
+
+<video width="100%" controls>
+<source src="/static/img/posts/StopBreathe&ThinkKids/sbtk-kidsAccount.mp4" type="video/mp4">
+</video>
 
 # Final thoughts
 
