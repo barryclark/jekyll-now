@@ -1,6 +1,6 @@
 ---
 layout: post
-title: GENERAL INTRODUCTION OF DEEP LEARNING ARCHITECTURE FOR COMPUTER VISION IN OTONHANH.VN
+title: General introduction of deep learning architecture for Computer Vision in OtoNhanh.vn
 ---
 Nowadays, Deep Learning become more and more popular in many domains like Finance, 
 E-Commerce. At OtoNhanh.vn, we employ Deep Learning to tackle the problems of Natural Language Processing to deal with 
