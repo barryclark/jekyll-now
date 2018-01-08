@@ -52,7 +52,7 @@ mt = mergetool
 
 ### Add All Files
 ****
-**Synopsis:** Shorthand to `A`dd `A`ll files, including untracked files, to the staging area.
+**Synopsis:** Shorthand to **A**dd **A**ll files, including untracked files, to the staging area.
 
 **Usage:** `git aa`
 
@@ -74,7 +74,7 @@ pf = push -f
 
 ### Rebase Master
 ****
-**Synopsis:** Shorthand to `R`e`B`ase from the `M`aster branch.
+**Synopsis:** Shorthand to **R**e**B**ase from the **M**aster branch.
 
 **Usage:** `git rbm`
 
@@ -85,7 +85,7 @@ rbm = rebase master
 
 ### Interactively Rebase Master
 ****
-**Synopsis:** Shorthand to intractively rebase from the master branch using the `-i` option.
+**Synopsis:** Shorthand to **R**e**B**ase from the **M**aster branch **I**nteractively using the `-i` option.
 
 **Usage:** `git rbm`
 
@@ -129,7 +129,7 @@ rbs = rebase --skip
 
 ### Checkout a New Local Branch
 ****
-**Synopsis:** Shorthand to `C`heck`O`ut a `N`ew 
+**Synopsis:** Shorthand to **C**heck**O**ut a **N**ew 
 local branch.
 
 **Usage:** `git con mybranchname`
@@ -141,7 +141,7 @@ con = checkout -b
 
 ### Checkout Master Branch
 ****
-**Synopsis:** Shorthand to `C`heck`O`ut then `M`aster branch.
+**Synopsis:** Shorthand to **C**heck**O**ut the **M**aster branch.
 
 **Usage:** `git com`
 
@@ -152,7 +152,7 @@ com = checkout master
 
 ### Commit with Message
 ****
-**Synopsis:** Shorthand to `C`ommit with a `M`essage.
+**Synopsis:** Shorthand to **C**ommit with a **M**essage.
 
 **Usage:** `git cm "My Short Commit Message"`
 
@@ -174,7 +174,7 @@ ca = commit --amend
 
 ### Delete Local Branch
 ****
-**Synopsis:** Shorthand to `D`elete local `B`ranch.
+**Synopsis:** Shorthand to **D**elete local **B**ranch.
 
 **Usage:** `git db mybranchtodelete`
 
@@ -185,7 +185,7 @@ db = branch -d
 
 ### Force Delete Local Branch
 ****
-**Synopsis:** Shorthand to `D`elete local `B`ranch with `F`orce.
+**Synopsis:** Shorthand to **D**elete local **B**ranch with `F`orce.
 
 **Usage:** `git dbf mybranchtodelete`
 
@@ -196,7 +196,7 @@ dbf = branch -D
 
 ### Delete Remote Branch
 ****
-**Synopsis:** Shorthand to `D`elete `R`emote `B`ranch.
+**Synopsis:** Shorthand to **D**elete **R**emote **B**ranch.
 
 **Usage:** `git drb mybranchtodelete`
 
@@ -207,7 +207,7 @@ drb = push origin --delete
 
 ### Reset HEAD and Delete Changes
 ****
-**Synopsis:** Shorthand to `R`eset `H`EAD `H`ard as with the `--hard` option which will reset your local branch back to the HEAD and remove all changes.
+**Synopsis:** Shorthand to **R**eset **H**EAD **H**ard as with the `--hard` option which will reset your local branch back to the HEAD and remove all changes.
 
 **Usage:** `git rhh`
 
@@ -218,7 +218,7 @@ rhh = reset HEAD --hard
 
 ### List Branches
 ****
-**Synopsis:** Shorthand to `L`ist local `B`ranches.
+**Synopsis:** Shorthand to **L**ist local **B**ranches.
 
 **Usage:** `git lb`
 
@@ -229,7 +229,7 @@ lb = branch -vl
 
 ### List Branches including remote
 ****
-**Synopsis:** Shorthand to `L`ist `B`ranches `A`ll which includes remote branches.
+**Synopsis:** Shorthand to **L**ist **B**ranches **A**ll which includes remote branches.
 
 **Usage:** `git lba`
 
@@ -240,7 +240,7 @@ lb = branch -vla
 
 ### Force Clean Branch
 ****
-**Synopsis:** Shorthand to `C`lean and `F`orce all Files and Untracked Files/Directories.
+**Synopsis:** Shorthand to **C**lean and **F**orce all Files and Untracked Files/Directories.
 
 **Usage:** `git cf`
 
@@ -251,7 +251,7 @@ cf = clean -fd
 
 ### Push Tags
 ****
-**Synopsis:** Shorthand to `P`ush `T`ags to the remote repository.
+**Synopsis:** Shorthand to **P**ush **T**ags to the remote repository.
 
 **Usage:** `git pt`
 
@@ -262,7 +262,7 @@ pt = push --tags
 
 ### Fetch All Changes
 ****
-**Synopsis:** Shorthand to `F`etch `A`ll changes from the remote repository.
+**Synopsis:** Shorthand to **F**etch **A**ll changes from the remote repository.
 
 **Usage:** `git fa`
 
@@ -273,7 +273,7 @@ fa = fetch --all
 
 ### Edit the Global Git Config
 ****
-**Synopsis:** Shorthand to `E`dit your `G`lobal git `C`onfig file.
+**Synopsis:** Shorthand to **E**dit your **G**lobal git **C**onfig file.
 
 **Usage:** `git egc`
 
