@@ -3,6 +3,8 @@ layout: post
 title: Jupyter Notebook Favorites
 description: "Some of my favorites things about Jupyter Notebooks"
 modified: 2017-03-22
+tags: [jupyter notebook]
+mathjax: true
 ---
 
 
