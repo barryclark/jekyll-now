@@ -11,7 +11,8 @@ description: Web Developer from Somewhere
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://avatars2.githubusercontent.com/u/29385551?s=460&v=4
 
-theme: Minimal
+# Added Supported Theme: Minimal
+theme: jekyll-theme-minimal
 
 #
 # Flags below are optional
