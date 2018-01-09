@@ -9,7 +9,7 @@ name: PhotoVision
 description: World-Class Scans With A Small-Town Lab!
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://avatars.githubusercontent.com/digijim
+banner-image: /images/banner_logo.png
 
 #
 # Flags below are optional
