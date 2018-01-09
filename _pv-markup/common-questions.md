@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Welcome! We're Glad You're Here.
-permalink: commmon-questions.html
+permalink: common-questions.html
 ---
 
 ## 1. Create an Account + Submit Preference Images
