@@ -65,7 +65,7 @@ The graph above shows the breakdown of bike accidents throughout the day, contro
 
 ![_config.yml]({{ site.baseurl }}/images/bike_crashes_per_month.png)
 
-Turning to look at the number of bike accidents by month, we see that the distribution is more left skewed than I previously imagined, with the highest number of accidents in September and October. I expected the number of accidents to follow the distribution of total number of bicyclists. More simply, the warmer the weather, the more people on the road, and more accidents. However, the accident data tells a different story.
+Turning to look at the number of bike accidents by month, we see that the distribution is quite left skewed, more so than I previously imagined, with the highest number of accidents in September and October. I expected the number of accidents to follow the distribution of total number of bicyclists. More simply, the warmer the weather, the more people on the road, and more accidents. However, the accident data tells a different story.
 
 Is this a result of less people biking during these hot summer months, or is it actually safer to bike in the summer time? OR are there more accidents that are going unreported to the Department of Transportation during this time? In order to answer the first question (the second requires an understanding of the DDOT's reporting system), we need to get a sense of overall ridership patterns.
 
