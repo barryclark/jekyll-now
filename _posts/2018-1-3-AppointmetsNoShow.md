@@ -6,6 +6,7 @@ Why so many people do not show up for their medical approintments? Is it normal 
 This is a study trying to predict if people will show up to their medical appointment.
 
 ![68445279 doctors wallpapers](/images/68445279-doctors-wallpapers.jpg "68445279 doctors wallpapers")
+![68445279 doctors wallpapers](/images/68445279-doctors-wallpapers.jpg){:height="700px" width="400px"}
 
 ## This is a brief description of this project.
   1. Dataset contains 110k medical appointments that took place in Vitoria, Brazil in between April 29th and Jun 8th 2016.
