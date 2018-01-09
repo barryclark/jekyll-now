@@ -34,19 +34,25 @@
     #repertori h5 {font-size:23px;line-height:12px;letter-spacing: 0.003em;}
 }
 @media (max-width: 768px) {
-    .columns-2 {-webkit-column-count: 1;-moz-column-count: 1;column-count: 1;}
+    div .columns-2 {-webkit-column-count: 1;-moz-column-count: 1;column-count: 1;}
     .cell-x2 {width:50%;}
     .cell-x2 h6 {font-size: 16px;font-weight: lighter ;}
+    #musics .cell-x2 {width:50%;}
     .thumb-x2 {width:32%;}
     .thumb-x8 {width:68%;}
+    #down-avatar {width:35%;}
+    #down-info  {width:65%;}
     #down-info {padding-left:8px;}
     #down-info p {font-size:15px;}
     #repertori h5 {font-size:18px;line-height:21px;letter-spacing: 0.03em;margin-bottom: 16px;border-bottom: thin solid var(--color-softgrey);}
     #repertori h5 strong {font-size:16px;}
 }
 @media (max-width: 432px) {
+    #down-avatar {width:100%;}
+    #down-info  {width:100%;}
     .cell-x2 {width:100%;}
     .cell-x2 h6 {font-size: 19px;font-weight: lighter ;}
+    #musics .cell-x2 {width:100%;}
     #musics .musics {width:75px;padding: 5px;}
     .thumb-x2, .thumb-x8 {width:100%;margin:0;}
     #down-info {padding-left:0;}
