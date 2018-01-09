@@ -1,5 +1,11 @@
-# Film Services
-We currently process C-41 color negative film and Black + White negative film in most sizes ranging from 135 rolls to 8x10 sheets. Here are our [current service times](http://photovisionprints.com/film-service-times).
+---
+layout: page
+title: Film Services
+permalink: film-services.html
+---
+
+We currently process C-41 color negative film and Black + White negative film. We can process most film sizes ranging from 135 roll film to 8x10 sheet film on C-41 and Black + White. You can find our current service time [here](http://photovisionprints.com/film-service-times).
+
 
 ## Develop Only
 Sometimes you only need the bare essentials. When that's the case, your film will be developed with the utmost care before being sleeved. Receive your film boxed and cut or uncut.
@@ -75,6 +81,7 @@ We will hold your negatives based on the Ship Back preference marked on your [Or
 | **Fill 2" Flat Rate box** | $10.00 |
 | **Fill 4" Flat Rate box** | $20.00 |
 | **End of Year** | Price varies |
+
 
 Negatives are shipped back via USPS Priority Flat Rate shipping to reduce costs to you. We will charge your card on file at time of shipment. *For international shipping*, these prices will vary.
 

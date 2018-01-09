@@ -4,8 +4,14 @@
 
 Outstanding prints on the finest Fujicolor Crystal Archive Supreme Paper. This isn't your typical photo paper—Fujicolor Crystal Archive Supreme is rarely used by other film labs because of its higher cost. It has a luscious thickness you have to see (and feel) to believe, with beautiful color reproduction, brilliant whites and excellent resistance to light fade.
 
+---
+layout: page
+title: Print Services
+permalink: print-services.html
+---
 
-## Standard Prints 
+
+## Standard Prints
 
 |Size                     |Fujicolor Crystal Archive Supreme (Lustre)    |  Fuji Crystal Archive Pearl (Metallic)|
 | ----------------------- | ----------------------------- | ------------------------------------- |
@@ -15,7 +21,7 @@ Outstanding prints on the finest Fujicolor Crystal Archive Supreme Paper. This i
 | **4x5**	              | $0.39                         | N/A                                   |
 | **4x6**	              | $0.39	                      | N/A                                   |
 | **5x5**                 | $1.55            	          | N/A                                   |
-| **5x7** 	              | $3.50	                      | N/A                                   | 
+| **5x7** 	              | $3.50	                      | N/A                                   |
 | **8x8**	              | $7.50	                      | N/A                                   |
 | **8x10**	              | $7.50	                      | $8.50                                 |
 | **8x12**	              | $7.50	                      | $8.50                                 |
@@ -25,14 +31,14 @@ Outstanding prints on the finest Fujicolor Crystal Archive Supreme Paper. This i
 | **10X15**               | $9.50                         | $12.50                                |
 | **11X14**               | $14.50                        | $22.00                                |
 | **11x17**	              | $14.50	                      | $22.00                                |
-| **12x18**	              | $17.95	                      | $25.45                                | 
+| **12x18**	              | $17.95	                      | $25.45                                |
 | **16x20**	              | $25.95	                      | $31.45                                |
 | **16x24**	              | $28.95	                      | $35.45                                |
 | **20x24**	              | $28.95	                      | $38.95                                |
 | **20x30**	              | $29.95	                      | $44.95                                |
 | **24x30**	              | $35.95	                      | $47.45                                |
 | **24x36**	              | $49.95	                      | $57.95                                |
-| **30x40**	              | $59.95	                      | $64.95                                | 
+| **30x40**	              | $59.95	                      | $64.95                                |
 | **30x45**	              | $59.95	                      | $69.45                                |
 
 

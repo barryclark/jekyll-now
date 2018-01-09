@@ -1,4 +1,8 @@
-# As seen in
+---
+layout: page
+title: As Seen In
+permalink: as-seen-in.html
+---
 
 We are honored to work alongside amazing film photographers! Here are a few places you can find their work + our scans:
 

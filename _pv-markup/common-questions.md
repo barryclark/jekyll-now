@@ -1,4 +1,8 @@
-# Welcome! We're Glad You're Here.
+---
+layout: page
+title: Welcome! We're Glad You're Here.
+permalink: common-questions.html
+---
 
 ## 1. Create an Account + Submit Preference Images
 Tell us a bit about yourself and your style! This will help speed up the process once we receive your film.
@@ -44,6 +48,7 @@ Yes! Every scan arrives rotated and organized by roll number and frame number (i
 
 ## What if I have a problem with my order?
 If you have any questions, concerns or difficulties at any time, please contact us as soon as possible via email at [info@photovisionprints.com](mailto:info@photovisionprints.com) or by phone at 503-588-3686. We will do everything we can to ensure you are happy with your order!
+
 
 ## How do I order prints?
 Proof prints can be requested via your [order form](http://photovisionprints.com/s/PhotoVision-Film-Order-Form-Fall-2015.pdf) when you send in your film. Prefer to view your scans prior to ordering prints? Not a problem! You may [order prints](http://photovisionprints.com/ordering/) from us anytime online from film or digital images. Find print pricing [here](http://photovisionprints.com/print).
@@ -98,6 +103,7 @@ Every roll of film is scanned by hand on the renowned Fuji Frontier SP3000. We'v
 ## What are Exposure Reference Sheets?
 When shooting film, your negatives act as your road map to understanding the connection between how you expose your film and your scan results. Exposure Reference Sheets are provided for every roll within your order's [Box](http://box.com) folder. They are designed to help you better understand the relationship between your exposures and scans at a glance.
 
+
 ## How do I read my Exposure Reference Sheets?
 Exposure Reference Sheets provide a thumbnail of every frame in your roll, allowing you to clearly and easily see how you exposed your film. Frames that are light with little detail represent overexposure, while frames that are dark with lots of detail represent underexposure. [See examples](https://photovisionprints.squarespace.com/exposure-reference-sheet).
 
@@ -106,6 +112,7 @@ Yes, we can push or pull film up to 3 stops. Indicate on your order form whether
 
 ## How do you process Ilford Delta 3200?
 We process Delta 3200 at 3200 unless you indicate otherwise. So, let us know what you rate your 3200 at, please and thank you.
+
 
 ## Do you process + scan E-6 slide film?
 Sadly, we no longer process E-6. But we do scan it!

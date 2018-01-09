@@ -1,4 +1,8 @@
-# Love letters from our photographers
+---
+layout: page
+title: Love Letters from Our Photographers
+permalink: praise.html
+---
 
 *"Other labs don’t hold a candle to you in quality and care for their customers. Thanks for all you do!" __[Kathryn Bruns](http://www.kathrynbruns.com/) December 15, 2017__*
 
