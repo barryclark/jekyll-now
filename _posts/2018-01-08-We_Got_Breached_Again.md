@@ -7,9 +7,9 @@ This is an attack similar to the We Got Breached challenge, except this time we 
 
 When the SQLi query is broken out, you can see that the attacker built the query to check each bit of each char. Unlike the previous attack there is no guessing, but you have to make 7 queries for each char which can be noisy. If the bit being checked is 1, then the server sleeps for 2 milliseconds. 
 
-![_config.yml]({{ site.baseurl }}/images/we_got_breached/log_entry.png)
+![_config.yml]({{ site.baseurl }}/images/we_got_breached_again/log_entry.png)
 
-![_config.yml]({{ site.baseurl }}/images/we_got_breached/query_break_out.png)
+![_config.yml]({{ site.baseurl }}/images/we_got_breached_again/query_break_out.png)
 
 If SLEEP(2) executes, then the query is admin’ AND 0 AND ‘16173 = false
 Else the query is admin’ AND 3724 AND ‘16173 = true
@@ -68,4 +68,4 @@ with open(filepath) as fp:
                     cur_char = ''
 ```
 
-![_config.yml]({{ site.baseurl }}/images/we_got_breached/flag.png)
+![_config.yml]({{ site.baseurl }}/images/we_got_breached_again/flag.png)
