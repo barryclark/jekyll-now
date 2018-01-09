@@ -9,7 +9,7 @@ When the SQLi query is broken out, you can see that the attacker built the query
 
 ![_config.yml]({{ site.baseurl }}/images/we_got_breached_again/log_entry.png)
 
-Anything between "/*" and "*/" is padding used to make the query harder to read, and the number of bytes returned to be different. The same with the random numbers, both in the false branch of the if statement and the last number. This makes it harder to see that the bytes returned can be used to figure out if the if statement returned true or false. 
+Anything between "/\*" and "*/" is padding used to make the query harder to read, and the number of bytes returned to be different. The same with the random numbers, both in the false branch of the if statement and the last number. This makes it harder to see that the bytes returned can be used to figure out if the if statement returned true or false. 
 
 ![_config.yml]({{ site.baseurl }}/images/we_got_breached_again/query_break_out.png)
 
