@@ -67,6 +67,9 @@ baseurl: ""
 
 permalink: pretty
 
+# include subfolder with markup files
+include: ['_pv-markup']
+
 # The release of Jekyll Now that you're using
 version: v1.2.0
 
