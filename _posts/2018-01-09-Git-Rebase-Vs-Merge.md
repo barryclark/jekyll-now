@@ -6,6 +6,8 @@ I notice that this tends to happen when
 * The master branch has had new commits added and is now ahead of the developers feature branch.
 * The developer is now ready to merge his feature into the master branch.
 
+![Feature Branch](https://www.atlassian.com/dam/jcr:01b0b04e-64f3-4659-af21-c4d86bc7cb0b/01.svg)
+
 At this point, the developer uses the knowledge of what they know, or a UI to handle this for them, but essentially tries 1 of the 2 following approaches to merging.
 
 1. Tries to merge the feature branch directly into master. 
@@ -31,13 +33,31 @@ At this point, the developer uses the knowledge of what they know, or a UI to ha
    
    Also, in the event that this does work, the history again becomes very difficult to read. Perhaps as a developer you might not need to care about the history now. But what about when you have introduced a terrible bug and it's going to take a while to fix, so you want to pull this commit out, how can you look through and find the commit(s) quickly to pull out? Or what about when someone on your DEVOPS team wants to gather up some Release Notes of recent changes by looking at the history? You end up with so many backward and forward commits that it is hard, if not impossible, to see what has happened.
 
+![Merge](https://www.atlassian.com/dam/jcr:e229fef6-2c2f-4a4f-b270-e1e1baa94055/02.svg)
+
 ## Introducing a Rebase
+
+```git
+git rebase master
+```
+
+![Rebase](https://www.atlassian.com/dam/jcr:5b153a22-38be-40d0-aec8-5f2fffc771e5/03.svg)
 
 When I mention a rebase to most people I get a very blank/confused stare back as I find not many people understand what this is and how to use it. Or they have a rough understanding but are far too scared to use it.
 
 A rebase is a command you can use instead of a merge to get changes from a shared branch such as master, into your own feature branch. The difference is how the process works compared to a merge.
 
 When you perform a rebase what happens is a set of logical steps that gets the work that you have committed on your feature branch ontop of the HEAD of the latest changes from master, almost as if you had just done all the work ontop of the latest changes, making your branch ahead of the master rather than behind.
+
+
+
+### What is happening under the hood
+1. The common ancestor commit between the 2 branches is located.
+2. Git will then rewind the HEAD of the branch back to this common commit and will stash all the commits that you have made since this point.
+3. New changes from the master branch are pulled over to the feature branch so that now the feature branch and master branch are identical.
+4. Git will then replay each commit that you made on the branch, one at a time on top of the new HEAD with all the latest changes.
+5. When git applies these commits, one at a time, if there is a merge conflict when applying the commit, the process is paused and you are then asked how to fix the merge conflicts. You can then fix these as you would normally and as soon as you have fixed up all the conflicts, you tell git to continue with the rebase `git rebase --continue`
+6. This process keeps happening until all of your commits have been replayed on top of the master branch changes, almost as if you had just done all your work now on the latest changes.
 
 
 
