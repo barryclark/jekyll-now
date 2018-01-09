@@ -4,10 +4,10 @@ layout: default
 
 <div class="posts">
   {% for post in site.posts %}
+    {% assign author = site.authors[post.author] %}
     <article class="post">
-
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
+      <span>Tác giả: <i>{{ author.display_name }}</i></span>
       <div class="entry">
         {{ post.excerpt }}
       </div>

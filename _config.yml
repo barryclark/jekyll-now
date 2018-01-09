@@ -84,3 +84,19 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+
+authors:
+  ducta:
+    display_name: Duc Tran
+    gravatar: 60fd5218fff6927c0ed376cce01c5460
+    email: duc@chappiebot.com
+    web:
+    twitter:
+    github:
+  hoangbm:
+    display_name: Hoang Bui
+    gravatar: 76dbcc74021b8039f14c7b583978b56d
+    email: hoang@chappiebot.com
+    web:
+    twitter:
+    github:
