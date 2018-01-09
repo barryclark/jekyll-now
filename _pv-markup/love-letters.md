@@ -1,5 +1,8 @@
-
-# Love letters from our photographers
+---
+layout: page
+title: Love Letters from Our Photographers
+permalink: praise.html
+---
 
 *"Other labs don’t hold a candle to you in quality and care for their customers. Thanks for all you do!" __[Kathryn Bruns](http://www.kathrynbruns.com/) December 15, 2017__*
 
@@ -55,7 +58,7 @@
 
 *"ARE YOU GUYS SERIOUS?!?!?! First off, you turn 2 weddings and a rehearsal (over 150 rolls) around in 1 day. THEN, I look at the scans are they are unbelievable! Insanely consistent and just absolutely nailed on all accounts. I don't know how you're doing it, but keep doing it. Thank you so much for everything! I truly couldn't be happier. I love you and I'm not afraid to say it." __[Erich McVey](http://www.erichmcvey.com/) April 27, 2017__
 
-*"Oh my goodness! Y’all are amazing! I’m in love with these scans! Thank you so much for the speedy turnaround and for doing such a wonderful job! :simple-smile:" __[Courtney Leigh](http://courtneyleighphoto.com/) April 27, 2017__* 
+*"Oh my goodness! Y’all are amazing! I’m in love with these scans! Thank you so much for the speedy turnaround and for doing such a wonderful job! :simple-smile:" __[Courtney Leigh](http://courtneyleighphoto.com/) April 27, 2017__*
 
 *"Y'AAAAALLLLLL. I am losing my MIND, these are EXACTLY what I pictured in my head! Thank you, thank you, thank youuuuuu! So much fun to relive this trip!!!" __[Perry Vaile](http://perryvaile.com/) April 25, 2017__*
 
