@@ -17,14 +17,14 @@ We _highly recommend_ you send your film via a trackable method to ensure its sa
 No problem! Please fill out **one order form per shoot** and **separate** each shoot + order form into its own zip-close bag.
 
 ## Where do I send my film?
-Download our **[pre-addressed shipping label](http://static1.squarespace.com/static/525ad986e4b05804955f92b3/t/5283f921e4b05aa1b7657491/1384380705454/PhotoVision+Mailing+Label.pdf)** or hand-address your package in stunning calligraphy to:
+Download our **[pre-addressed shipping label](/images/PhotoVision+Mailing+Label.pdf)** or hand-address your package in stunning calligraphy to:
 **Attn: Film Crew**
 **PhotoVision**
 **3775 Market St NE**
 **Salem, OR 97301**
 
 ## Still have questions?
-We're happy to help! Our phones are answered by our friendly Team from 10 a.m.–5 p.m. PST, Monday–Friday.
+We're happy to help! Our phones are answered by our friendly Team from {{ site.company-info.service-hours }}.
 
 **503-588-3686**
 [**info@photovisionprints.com**](mailto:info@photovisionprints.com)
