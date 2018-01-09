@@ -1,0 +1,178 @@
+/* by Isard Miralles  ADDING CSS */
+/* ------------------------------------------------------------ Resets */
+#site-nav, nav, #page-header h1, #masters, #cover-links, #info-seo, .medias h3  {font-family: 'Voltaire';text-transform: uppercase; }
+#page-header #pre-cover, #page-header #post-cover {display:inline-block; }
+#post-cover img{transform: rotate(180deg);margin-top:-12px;}
+#cover-lines img{margin-top:-12px;}
+hr.lines {border:thin solid #fff;height:2px;width:33.33333%;margin-left:33.33333%;margin-top:2px;margin-bottom:8px;}
+hr.lines.lgrey {border-top:thin solid var(--color-softgrey);}
+#site-nav, footer, #follows, #follows-big, #icons, #covers, .nav-scroll, #web-credits, #page-header, #post-header, #post-share, #date, #info-seo, #black-video {
+text-align: center;}
+/* Nav */
+#site-nav {background: var(--color-soft-black) !important;border-bottom: none;font-size: 17px;color: var(--color-grey);box-shadow: 0 1px 21px rgba(0, 0, 0, .23);}
+#site-nav a {font-weight: lighter;min-width: 12%;border: none;letter-spacing: .032em;}
+#site-nav a:visited { color: var(--color-grey);text-decoration: none;}
+#site-nav a:hover, #site-nav a b:hover { color: #fff !important;background: #000;text-decoration: none;}
+#site-nav a b {font-family: 'Grenadier NF';text-transform: uppercase;font-weight: normal ;letter-spacing: .12em;}
+#site-nav a b:before {border-bottom: 1px solid #444;content: '';display: block;position: absolute;left: 47%;right: 0;width: 6%;padding-bottom: 2px;}
+#site-nav a b:after {border-bottom: 1px solid #444;content: ' ';display: block;position: absolute;left: 47%;right: 0;width: 6%;margin-top: -3px;}
+#current-nav, #current-nav a:visited, #current-nav:visited {color:#fff !important;}
+#site-nav label {color:var(--color-grey);border:thin solid transparent;}
+#site-nav label:hover {color:var(--color-soft-grey);border:thin solid #353535;}
+.sticky-none#site-nav {position:relative !important;}
+.cover h2 { letter-spacing: 0.001em;font-weight: normal; }
+#coffee h2 {margin:0;}
+body {text-align: justify;-moz-hyphens:none;-ms-hyphens:none;-webkit-hyphens:none;-o-hyphens:none;hyphens:none;word-wrap:none;}
+p, ul {font-size: 18px;line-height: 27px;}
+main {padding-bottom:0!important;}
+#page-header.cover {background-image: url("/img/home.jpg");image-rendering: crisp-edges;background-position: fixed;}
+.text-left {text-align:left;}
+.text-right {text-align:right;}
+em hr {border-bottom:thin solid #eee;}	
+em u label, em u a {text-transform:uppercase;font-weight:bold ;background:var(--color-white);border:2px solid var(--color-link);color:var(--color-link);border-radius:40px;width:256px; }
+em u label:hover, em u a:hover {border: 2px solid var(--color-vlink);color:var(--color-hardgrey);text-decoration: none;box-shadow:0 3px 7px rgba(0,0,0,.08); }
+em u label:active, em u a:active {background-color:rgba(240,240,240,.5) ;color:var(--color-link) !important;border: 2px solid var(--color-link);box-shadow:inset 0 3px 5px rgba(0,0,0,.12);text-decoration: none; }
+p em {border: var(--one-pixel) solid transparent;font-weight: bold;line-height: 24px;font-size: 21px;padding: 0;text-rendering: optimizeLegibility;}
+section.cover-justify p {padding: 6px 18px 0 18px;line-height: 23px;font-size: 16px !important;letter-spacing: .15em}
+/* Page & Header */
+.cover#page-header  {background-color: var(--color-white);}
+.serveis-header {border-bottom:10px solid var(--color-hardgrey);background-color: var(--color-black);color: var(--color-hardgrey);}
+.medias#page-header {border-bottom:10px solid var(--color-grey);background-color: var(--color-softgrey);color: var(--color-grey);}
+.black-video#page-header {border-bottom:10px solid var(--color-grey);background-color: var(--color-softgrey);color: var(--color-grey);}
+#icons a {border:thin solid var(--color-soft);background: transparent;border-radius:50%;}
+#icons a:hover {border:thin solid var(--color-blue);}
+#icons em small a:visited {border:thin solid #222;color:var(--color-vlink);}
+figure em a {border:none;border-bottom;line-height:0.2em;padding:12px 4px;}
+/* Portfolio Nav */
+#page-nav {border:none;color:var(--color-hardgrey);} 
+#page-nav a {min-width: 9%;max-height:100%;}
+#page-nav a:hover {border:thin solid rgba(0,0,0,.06);background:rgba(0,0,0,.02);}
+#page-nav a:visited {color: var(--color-grey) ;}
+#page-nav div {height:80px;font-size:15px;}
+
+.sepia-img { -webkit-filter: sepia(50%);filter: sepia(50%);}
+.sepia-img:hover { -webkit-filter: sepia(0%);filter: sepia(0%);opacity:.99;}
+.medias h3 {}
+/* Covers */
+#cita h5 {line-height: 1.4em;margin:15px 0 18px 0;font-weight: lighter;}
+#masters h2 {line-height: .6em;font-weight: lighter;}
+#masters h2 small, #page-footer h1 small {line-height: 1.2em;font-family: 'Grenadier NF';}
+#masters h5 em {color:var(--color-hflink);margin: 0 6px 0 6px }
+#masters {text-align: center;}
+#masters h5 {line-height: 1.6em;padding:0 2% 0 2%;font-weight: lighter;}
+#cover-links a {border:2px solid var(--color-grey) ;text-decoration: none;min-width:12%;margin:0 2px 0 2px;}
+#cover-links a:hover {border:2px solid var(--color-link) ;color: var(--color-link) ;}
+#go-down em a, #go-next em a {color:rgba(220,190,90,.69);background:transparent;border: transparent ;font-size: 80px;height: 80px;width: 80px;transform: rotate(90deg);border-radius: 50%;text-align: right;}
+#go-down em a:hover {text-decoration: none;color:var(--color-flink) ;border: transparent;text-align: right;}
+#go-next em a:hover {text-decoration: none;color:var(--color-hardgrey);border: transparent;text-align: right;}
+#covers {color: var(--color-grey);}
+#covers img {width: 13%;margin-bottom:1.2em; }
+#covers .train-icon {width: 60px;margin-bottom:.2em;opacity:.42; }
+#covers article {border:0;}
+#page #covers article {}
+/* Dialog */
+#dialog .icon-alarm svg {max-width:23px!important;}
+#dialog {max-height:80%;overflow:hidden;}
+#dialog dialog {border:none;border-radius:9px 9px 6px 6px;}
+#dialog dialog p {text-align:center;color:var(--color-grey);}
+#dialog header {border:none;padding:21px;border-radius:6px 6px 0 0;}
+#dialog header h2 svg {width:32px;margin:0px 12px 0 0;}
+#dialog header h2 {font-size: 2.3em;margin-bottom:6px;}
+#dialog header .lead {line-height: 1em;margin-bottom:7px;}
+#dialog em a {border:none;color:var(--color-grey);}
+img.dialog-svg {width:120px;height:150px;}
+#dialog dialog div a {font-size:15px;}
+#dialog header {padding-top:0px;}
+#dialog header, #dialog dialog label  {background-image: url("/img/texture/grey.png");background-size:200px 200px;background-repeat: repeat;color:var(--color-grey);}
+#dialog header {border-bottom:4px solid var(--color-grey);}
+.rights#dialog dialog label  {background:transparent;color:var(--color-hardgrey);}
+.rights#dialog header {
+    background: var(--color-yellow);}
+.rights#dialog .yellow {color:var(--color-yellow)!important;}
+#llicencia {text-align:center;color:var(--color-hardgrey);}
+#llicencia img {width:48px;}
+.cc-icon img (width:64px;)
+
+/* Footer */
+#info-seo {background-color:var(--color-flink);min-width:100%;color:#222;}
+#info-seo h1 {line-height:1.0em;margin-bottom:0;}
+#info-seo h2 {line-height:1.6em;margin-bottom:0;}
+#page-footer {background:#222;color:#999;border-bottom:6px solid var(--color-flink);}
+#go-up {transform: rotate(90deg);}
+#page-footer a {color: var(--color-flink);text-decoration:none;}
+#page-footer a:hover {color: var(--color-hflink)!important;border-color: var(--color-hflink);}
+#page-footer a:visited {color: var(--color-vflink);border-color: var(--color-vflink);}
+#page-footer em small a {border: thin solid #222;}
+#page-footer h1 small {font-size:65%;letter-spacing: 0.23em;}
+#web-credits {opacity:.75;background-color:#fafafa;border-bottom: thin solid var(--color-softgrey);border-top:thin solid var(--color-softgrey);}
+#web-credits label svg {max-width:72px;margin:10px;opacity:.6;border-radius:50%;}
+#web-credits label svg:hover {cursor:pointer !important;opacity:1;box-shadow: 0 1px 3px rgba(0,0,0,.3);}
+/* Classic Gallery */
+.listed section {border:none;line-height:2em;font-size:0.2em;-webkit-column-count: 3;-moz-column-count: 3;column-count: 3;}
+.imagens img {margin:0!important;padding:0!important;border:none;}
+.listed {padding:0!important;}
+.listed img {	margin:0!important;padding:0!important;	}
+.listed article { border:none;overflow: hidden;width: 100%;display: block;display: inline-block;margin:0!important;padding:0!important;-webkit-column-break-inside: avoid;-moz-column-break-inside:avoid;-moz-page-break-inside:avoid;page-break-inside: avoid;}
+em small #go-up { font-weight:bold  !important;background:var(--color-black) ;font-size:36px;color:var(--color-flink);padding:13px 12px 13px 12px;border-radius:50%;margin-top:15px; }
+em small #go-up:hover {background:var(--color-translucentblack); }
+/* Footer fixed */
+main { }
+#page-footer {padding-top:0;}
+
+@media (max-width: 1350px) {#masters h5, #cita h5  {font-size:20px!important;}
+   	img.dialog-svg {width:80px!important;height:70px;}
+    #covers { text-rendering: optimizeLegibility;}
+    #covers article h4{font-size:95%;}
+    #covers article h5{font-size:18px;}
+    #covers .cover-justify p{font-size:14px!important;letter-spacing: 0.001em;}
+    #covers article p em{font-size:15px!important;letter-spacing: 0.001em;}
+    .thumb-5, .thumb-6 {width: 100%;}
+    strong em a {font-size: 16px;}
+    #cover-links a {font-weight:lighter;}
+    .youtube {	margin:0;padding-bottom: 26em;}
+}
+@media (max-width: 1242px) {  #masters h5, #cita h5  {font-size:18px!important;}
+	#page-header.cover {background-image: url("/img/home_b.jpg");background-position:fixed;
+    padding-top:145px;height:100%;}
+    #cover-links a {font-size:18px;width:23%;margin:2px;font-weight:lighter;}
+    #page-footer h2 small {font-size:50% ;letter-spacing: 0.03em;}
+    .youtube {	margin:0;padding-bottom: 26em;}
+}
+@media (max-width: 768px) {    #masters h5, #cita h5  {font-size:14px!important;}
+    #page-header.cover {background-image: url("/img/home_m.jpg");background-size:100% auto;background-position:fixed !important; }
+    .cover#page-header {padding-top:120px;height:100%;}
+    .cover#page-header h1 {line-height:0.9em;font-size:32px ;}
+    #covers article h4{font-size:32px;}
+    #covers article h5{font-size:26px;}
+    #covers .cover-justify p{font-size:18px!important;letter-spacing: 0.005em;line-height:1.8em;}
+    #covers article p em{font-size:19px!important;letter-spacing: 0.015em;}
+    #covers article img {margin-top:64px;}
+   	#covers article {width: 100%;}
+    .youtube {	margin:0;padding-bottom: 16em;}
+    .cover-page .thumb-9, .cover-page .thumb-3 {width: 100%;}
+	#dialog .icon-alarm svg {max-width:16px!important;margin:0;padding:0;}
+	#dialog dialog p {font-size:12px;line-height:1.5em;}
+	#dialog header {padding:12px;border-radius:6px 6px 0 0;}
+	#dialog header h2 svg {width:16px;margin:0px 6px 0 0;}
+	#dialog header h2 {font-size: 1.25em;margin-bottom:0px;}
+	#dialog header .lead {font-size:14px;line-height: 1.2em;margin:0;}
+	#dialog div em a {font-size:10px;line-height:2.3em;padding:7px;}
+   	img.dialog-svg {width:45px!important;height:45px;}
+    #page-nav a {font-size: 13px;}
+    strong em a {font-size: 15px;}
+    #icons a {width:15%;padding:12px;border-radius:2px;}
+    #cover-links a {font-size:16px;width:48%;margin:2px;font-weight:lighter;}
+    .cell-6, .pushed-6 {width:85%;margin-left:8% !important;}
+    #page-footer h1 small {font-size:69% ;letter-spacing: 0.16em;}
+    #page-footer h2 small {font-size:62% ;letter-spacing: 0.005em;}
+    #page-footer p {font-size:15px;letter-spacing: 0.02em;}
+}
+
+@media (max-width: 432px) {
+    #page-header.cover {padding-top:90px;height:100%;background-image: url("/img/home_m.jpg");background-size: 100% auto;background-position: fixed !important;}
+    #icons a {width:18%;padding:8px;}
+    #page-footer h1 small {font-size:50% ;letter-spacing: 0.23em;}
+    #page-footer h2 small {font-size:42% ;letter-spacing: 0.002em;}
+    #page-footer p {font-size:9px;letter-spacing: 0.01em;font-weight:lighter;}
+    .youtube {	margin:0;padding-bottom: 12em;}
+}

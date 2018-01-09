@@ -1,0 +1,4 @@
+{% for child in page.children %}
+  {% include 'partials/sitemap/sitemap-url.xml' with { 'page': child } %}
+  {% include 'partials/sitemap/sitemap-children.xml' with { 'page': child } %}
+{% endfor %}

@@ -1,0 +1,42 @@
+/* iExplorer sucks */
+
+/* Long life to Free Software */
+
+
+img, div, a, input { 
+	behavior: url('http://code.hipertextos.net/src/css/iepngfix.htc') 
+}
+.headline,
+.title,
+.section-title,
+a:hover, a:active, 
+a:visited,
+.caption-inside,
+.caption-onhover,
+.soft-glass,
+.glass {
+	filter: alpha(opacity=80);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+}
+nav .form-search {
+	*display: none;
+}
+.tab-label {
+	filter: alpha(opacity=60);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
+}
+.tab [type=radio]:checked ~ label,
+.tab label.tab-active,
+li .carousel-check:checked ~ .carousel-slide,
+li .carousel-jslide {
+	filter: alpha(opacity=100);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+}
+li .carousel-slide {
+	filter: alpha(opacity=0);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+}

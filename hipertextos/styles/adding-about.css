@@ -1,0 +1,62 @@
+/* by Isard Miralles  ADDING EXTRA to About - CSS */
+/* ------------------------------------------------------------ Resets */
+
+#page-header.about-cover {background-image: url("/img/texture/dark.png");background-color:var(--color-black);background-size:180px 180px;background-repeat: repeat;image-rendering: crisp-edges;}
+#repertori h5, #repertori h3, #contracta, #musics .cell-x2 {text-align:center;}
+#page-nav {box-shadow:0 2px 3px rgba(0,0,0,.032), 0 2px 12px rgba(0,0,0,.03), 0 2px 60px rgba(0,0,0,.07);}
+.cover-page #page-header {border-bottom:10px solid var(--color-link);color: var(--color-link);font-family: 'Voltaire';text-transform:uppercase;}
+.cover-page #page-main {color:var(--color-hardgrey);background-image: url("/img/texture/light.png");background-size:294px 235px;background-repeat: repeat;image-rendering: crisp-edges;}
+.cover-page #page-main h2 {text-align:right;color:var(--color-grey);font-family: 'Voltaire';text-transform:uppercase;}
+.cover-page #page-main h5 {font-family: 'Voltaire';text-transform:uppercase;}
+#avatar {border-radius: 4px;}
+#down-avatar em a {width:100%;}
+#down-avatar em a:hover {color:var(--color-link);border-color:var(--color-link);text-decoration:none;border-radius:50px 50px;}
+#down-avatar, #down-info {margin-top:12px;}
+#down-info { padding-left:16px;}
+#down-info p {line-height:1.65em;}
+#down-info a {color:var(--color-hardgrey);text-decoration:none;}
+#down-info a:hover {color:var(--color-link);}
+#repertori h5 em {color:var(--color-red);padding:6px;}
+#musics .cell-x2 {border: thin solid var(--color-soft);background:rgba(0,0,0,.6);border-radius:16px;}
+#musics .cell-x2 h6{background:rgba(255,255,255,.6);border-radius:15px 15px 0 0;}
+#musics .cell-x2 h5{color:var(--color-translucentwhite) ;border-radius:15px 15px 0 0;}
+#musics .musics {width:120px;padding: 15px;}
+#repertori label, div.collapser div {border-color:var(--color-soft-grey);}
+.news {width:120px;float:left; margin-top:-6px; margin-right: 23px;margin-bottom:0;color: rgba(0,0,0,.32); }
+.nav-scroll a, .cell-x2 img { -webkit-filter: grayscale(90%);filter: grayscale(90%);}
+.nav-scroll a:hover, .cell-x2 img:hover { -webkit-filter: grayscale(0%);filter: grayscale(0%);}
+#musics .cell-x2:hover {background-color:rgba(0,0,0,.42);}
+
+@media (max-width: 1250px) {
+  	.cover-page #page-main ul {-webkit-column-count: 2;-moz-column-count: 2;column-count: 2;}
+    .cover-page p {font-size:16px;line-height:1.8em;}
+    .cover-page ul li {font-size:14px;line-height:1.5em;margin-top:5px;padding:0;}
+    #repertori h5 {font-size:23px;line-height:12px;letter-spacing: 0.003em;}
+}
+@media (max-width: 768px) {
+    div .columns-2 {-webkit-column-count: 1;-moz-column-count: 1;column-count: 1;}
+    .cell-x2 {width:50%;}
+    .cell-x2 h6 {font-size: 16px;font-weight: lighter ;}
+    #musics .cell-x2 {width:50%;}
+    .thumb-x2 {width:32%;}
+    .thumb-x8 {width:68%;}
+    #down-avatar {width:35%;}
+    #down-info  {width:65%;}
+    #down-info {padding-left:8px;}
+    #down-info p {font-size:15px;}
+    #repertori h5 {font-size:18px;line-height:21px;letter-spacing: 0.03em;margin-bottom: 16px;border-bottom: thin solid var(--color-softgrey);}
+    #repertori h5 strong {font-size:16px;}
+}
+@media (max-width: 432px) {
+    #down-avatar {width:100%;}
+    #down-info  {width:100%;}
+    .cell-x2 {width:100%;}
+    .cell-x2 h6 {font-size: 19px;font-weight: lighter ;}
+    #musics .cell-x2 {width:100%;}
+    #musics .musics {width:75px;padding: 5px;}
+    .thumb-x2, .thumb-x8 {width:100%;margin:0;}
+    #down-info {padding-left:0;}
+    #down-info p {font-size:12px;}
+    #repertori h5 {font-size:10px;line-height:15px;letter-spacing: 0.06em;margin-bottom: 16px;border-bottom: thin solid var(--color-softgrey); }
+    #repertori h5 em {font-size:18px;display:inline-block;width:100%;}
+}

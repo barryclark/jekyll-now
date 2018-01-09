@@ -1,0 +1,3 @@
+{% for image in page.images %}
+  <img src="{{ image.url }}" alt="{{ image.name }}." />
+{% endfor %}

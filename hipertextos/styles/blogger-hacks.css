@@ -1,0 +1,157 @@
+/* Blogger hacks */
+
+/* Blogger labels */
+
+article .blogger-labels {
+	display: none;
+}
+.blogger-labels {
+	display: block;
+	clear: both;
+	color: #333;
+	font-size: 0;
+	margin: 16px 0 0;
+	text-align: center;
+}
+.blogger-labels:before {
+	border-bottom: 1px solid currentColor;
+	display: block;
+	content: 'Tags';
+	font-size: 16px;
+	margin: 16px;
+}
+.blogger-labels a {
+	border: 1px solid currentColor;
+	border-radius: 2em;
+	color: #ffffff !important;
+	font-size: 16px;
+	margin: 0 .25em;
+	padding: .25em 1em;
+	text-decoration: none !important;
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	hyphens: none;
+}
+.blogger-labels a:hover {
+	background-color: #000;
+	color: #fff;
+}
+
+
+/* Prev/next */
+
+.prev-next,
+.prev-next .blog-paging-control-container  {
+	position: absolute;
+	left: 0;
+	right: 0;
+	width: 100%;
+}
+.prev-next .blog-paging-control-container .blog-paging-control,
+.prev-next .blog-paging-control-container .blog-paging-control:after {
+	display: block;
+	height: 2em;
+	width: 2em;
+	position: absolute;
+	text-decoration: none;
+	top: -.25em;
+	z-index: 1;
+}
+.prev-next .blog-paging-control-container .blog-paging-control:nth-child(1),
+.prev-next .blog-paging-control-container .blog-paging-control:nth-child(2) {
+	visibility: hidden;
+}
+.prev-next .blog-paging-control-container .blog-paging-control:nth-child(1) {
+	left: 0; right: auto;
+}
+.prev-next .blog-paging-control-container .blog-paging-control:nth-child(2),
+.prev-next .blog-paging-control-container .blog-paging-control:only-child {
+	right: 0; left: auto;
+}
+.prev-next .blog-paging-control-container .blog-paging-control:nth-child(1):after,
+.prev-next .blog-paging-control-container .blog-paging-control:nth-child(2):after {
+	border: thin solid #ccc;
+	border-radius: 50%;
+	color: #bbb;
+	display: block;
+	font-size: 1.2em;
+	font-weight: bold;
+	line-height: 1.9em;
+	height: 2em;
+	width: 2em;
+	visibility: visible;
+}
+.prev-next .blog-paging-control-container .blog-paging-control:nth-child(1):after {
+	content: '<';
+}
+.prev-next .blog-paging-control-container .blog-paging-control:nth-child(2):after,
+.prev-next .blog-paging-control-container .blog-paging-control:only-child:after {
+	content: '>';
+}
+
+.pagination {
+	margin: 2em auto 3em;
+}
+.pagination a {
+	visibility: hidden;
+}
+.pagination a:after {
+	border-radius: 2em;
+	font-weight: normal;
+	margin-left: -5em;
+	padding: .75em 1em;
+	visibility: visible;
+}
+.pagination a:nth-child(1):after {
+	content: '< Posterior';
+}
+.pagination a:nth-child(2):after,
+.pagination a:only-child:after {
+	content: ' Anterior >';
+}
+.pagination a:after,
+.prev-next .blog-paging-control-container .blog-paging-control:after {
+	background: #000;
+	color: #fff;
+}
+.pagination a:hover:after,
+.prev-next .blog-paging-control-container .blog-paging-control:hover:after {
+	background: #3AB16C;
+	color: #fff;
+}
+.pagination a:visited:hover:after,
+.prev-next .blog-paging-control-container .blog-paging-control:visited:hover:after {
+	background: #dd0000;
+}
+
+/* Cookies info */
+
+#cookieChoiceInfo {
+	background-color: #fff !important;
+	background-color: rgba(255,255,255,0.8) !important;
+	top: auto !important;
+	bottom: 0px !important;
+}
+#cookieChoiceInfo .cookie-choices-text {
+	color: #000;
+	font-size: 14px !important;
+	line-height: 1em !important;
+}
+.cookie-choices-button {
+	border: thin solid #fff;
+	border-radius: 24px !important;
+	color: #3AB16C !important;
+	font-size: 10px !important;
+	padding: 12px 24px !important;
+}
+.cookie-choices-button:nth-child(2) {
+	background: #3AB16C;
+	color: #ffffff !important;
+}
+
+/* Twitter timeline */
+
+.twitter-timeline {
+	display: block;
+	margin: 0 auto;
+}

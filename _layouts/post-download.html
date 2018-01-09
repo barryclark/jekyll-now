@@ -1,0 +1,34 @@
+---
+layout: default
+comments: true
+---
+
+  	{% include partials/navigation/nav-section.html %}
+		<header id="post-header" class="anm-moveFromTop delay-100">
+				<h1 id="post-title" class="anm-moveFromBottomFade delay-1000">{{ page.title }}</h1>
+		</header>
+    <main id="page-main" role="main">
+		<div>
+			<article id="post-download" class="post anm-fadeIn delay-1000">
+				<div id="entry">
+					<figure id="post-img">
+						<a href="../{{ page.img }}" data-lightbox="roadtrip"><img src="../{{ page.img }}" alt="Imatge del post"></a>
+					</figure>
+	    			<p>{{ content }}</p>
+				</div>
+				<em><hr></em>
+				<aside id="post-share">
+					{% include share.html %}
+				</aside>
+				<div id="date">
+    				<p>Publicat el {{ page.date | date: "%e %B , %Y" }}</p>
+  				</div>
+				<em><hr></em>
+					<div>
+						<h3><u>Comentaris</u></h3>
+						{% include disqus.html %}
+					</div>
+  					<hr>
+			</article>
+		</div>
+	</main>

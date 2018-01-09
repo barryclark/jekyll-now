@@ -1,17 +1,37 @@
 ---
 layout: default
+comments: true
 ---
 
-<article class="post">
-  <h1>{{ page.title }}</h1>
-
-  <div class="entry">
-    {{ content }}
-  </div>
-
-  <div class="date">
-    Written on {{ page.date | date: "%B %e, %Y" }}
-  </div>
-
-  {% include disqus.html %}
-</article>
+  	{% include partials/navigation/nav-article.html %}
+		<header id="post-header" class="anm-moveFromTop delay-100">
+				<h1 id="post-title" class="anm-moveFromBottomFade delay-1000">{{ page.title }}</h1>
+		</header>
+    <main id="page-main" role="main">
+		<div>
+			<article id="post-blog" class="post anm-fadeIn delay-1000">
+				<div id="entry">
+					<figure id="post-img">
+						<a href="../{{ page.img }}" data-lightbox="roadtrip"><img src="../{{ page.img }}" alt="Cartell de Old Steam"></a>
+					</figure>
+	    			<p>{{ content }}</p>
+	    			<figure>
+						<a href="../{{ page.img }}" data-lightbox="roadtrip"><img src="../{{ page.img }}" alt="Ampliació del cartell de Old Steam"></a>
+					</figure>
+				</div>
+				<em><hr></em>
+				<aside id="post-share">
+					{% include share.html %}
+				</aside>
+				<div id="date">
+    				<p>Publicat el {{ page.date | date: "%e %B , %Y" }}</p>
+  				</div>
+				<em><hr></em>
+					<div>
+						<h3><u>Comentaris</u></h3>
+						{% include disqus.html %}
+					</div>
+  					<hr>
+			</article>
+		</div>
+	</main>
