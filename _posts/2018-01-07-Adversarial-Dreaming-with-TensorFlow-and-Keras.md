@@ -13,7 +13,7 @@ Everyone has heard the feats of Google's "dreaming" neural network. Today, we're
 
 ##  Adversarial Images
 
-Adversarial images have been getting a lot of attention lately. Adversarial images are images that fool state of the art image classifiers, but a human would easily classify as the proper class. At present, these images are only possible with access to the classifier you aim to fool, but that could always change in the future. Therefore, researchers are already exploring all the different ways one can exploit an image classifier. 
+Adversarial images have been getting a lot of attention lately. Adversarial images are images that fool state of the art image classifiers but a human would easily classify as the proper class. At present, these images are only possible with access to the classifier you aim to fool, but that could always change in the future. Therefore, researchers are already exploring all the different ways one can exploit an image classifier. 
 
 There have been several papers exploring these so-called attacks. The aptly named [One pixel attacks](https://arxiv.org/abs/1710.08864) change a single pixel to trick a classifier:
 ![One pixel attacks](../images/advdream/one_pixel.png)
@@ -21,7 +21,7 @@ There have been several papers exploring these so-called attacks. The aptly name
 [Special glasses](https://www.cs.cmu.edu/~sbhagava/papers/face-rec-ccs16.pdf) have been used to cause a classifier to misclassify celebrities:
 ![Misclassifying Reese](../images/advdream/glasses.png)
 
-One can quickly imagine how this can go awry when self-driving cars need to identify obstacles (or pedestrians). With these publications in mind, I would like to walk through another approach that combined "dreaming" to create adversarial images.
+One can quickly imagine how this can go awry when self-driving cars need to identify obstacles (or pedestrians). With these publications in mind, I would like to walk through another approach that combines "dreaming" to create adversarial images.
 
 
 
