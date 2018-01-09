@@ -1,3 +1,5 @@
+Both of these commands enable you to achieve the same end goal, but they both achieve this in different ways. 
+
 I quite often have friends and colleagues come to me when they come across issues in git where they are trying to get master changes into their feature branch or where they try to get their work into the master branch. This is usually presented in the form of merge conflicts that they are struggling to get their heads around or with a terrible history trail that they cannot get their heads around when trying to work out what has happened somewhere along the line.
 
 I notice that this tends to happen when
@@ -51,7 +53,7 @@ A rebase is a command you can use instead of a merge to get changes from a share
 
 When you perform a rebase what happens is a set of logical steps that gets the work that you have committed on your feature branch ontop of the HEAD of the latest changes from master, almost as if you had just done all the work ontop of the latest changes, making your branch ahead of the master rather than behind.
 
-
+The merge conflicts are much easier to resolve in this fashion as well as you are able to see on a commit by commit basis what is wrong and why. These merge conflicts are then resolved during that commit so that it is as if you had only just made the entire change in one commit rather than made a change, then fixed some conflict.
 
 ### What is happening under the hood
 1. The common ancestor commit between the 2 branches is located.
