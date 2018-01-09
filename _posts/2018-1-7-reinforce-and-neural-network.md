@@ -88,7 +88,7 @@ $$\mathbb{E}_{\pi_{\theta}}\left[\alpha G_t \sum_{k=0}^{t} \nabla_{\theta}\ln \p
 
 $$\mathbf{Var}\left[(G_t - b) \sum_{k=0}^{t} \nabla_{\theta}\ln \pi_{\theta}(a_k | s_k) \big| \theta\right] = (G_t - b)^2 \mathbf{Var}\left[ \sum_{k=0}^{t} \nabla_{\theta}\ln \pi_{\theta}(a_k | s_k) \big| \theta\right]$$
 
-Baseline $$b$$ càng gần với $$G_t$$ thì phương sai của gradient càng giảm xuống điều này giúp việc học ổn định hơn. Nếu trong một neural network điều này giúp hạn chế rủi ro xảy ra của hiện tượng exploding và vanish gradient. Như vậy một cách tự nhiên $$b$$ sẽ là một ước lượng của $$G_t$$, nó có thể được học bởi bất kỳ kỹ thuật nào sử dụng cho ước lượng Q-value. Trong thực tế giá trị của gradient sẽ được tính bằng cách lấy trung bình của các mẫu:
+Baseline $$b$$ càng gần với $$G_t$$ thì phương sai của gradient càng giảm xuống điều này giúp việc học ổn định hơn. Nếu trong một neural network nó sẽ giúp hạn chế rủi ro xảy ra của hiện tượng exploding và vanish gradient. Như vậy một cách tự nhiên $$b$$ sẽ là một ước lượng của $$G_t$$, nó có thể được học bởi bất kỳ kỹ thuật nào sử dụng cho ước lượng Q-value. Trong thực tế giá trị của gradient sẽ được tính bằng cách lấy trung bình của các mẫu:
 
 $$\mathbb{E}_{\pi_{\theta}}\left[\alpha (G_t - b) \sum_{k=0}^{t} \nabla_{\theta}\ln \pi_{\theta}(a_k | s_k) \big| \theta\right] \approx \frac{1}{M}\sum_{m=0}^{M}\left[\alpha (G_t^m - b) \sum_{k=0}^{t} \nabla_{\theta}\ln \pi_{\theta}(a_k | s_k) \big| \theta\right]$$
 
@@ -100,3 +100,5 @@ REINFORCE cũng là một hệ quả của định lý Policy Gradient bạn có
 
 <div style="font-weight:700;">REINFORCE within baseline:</div>
 ![REINFORE_2](/images/REINFORCE_baseline.png "REINFORCE within baseline")
+
+Việc sử dụng REINFORCE trong neural network là khá tự nhiên bởi một vài lý do
