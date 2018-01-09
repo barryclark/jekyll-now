@@ -10,4 +10,4 @@ This is a study trying to predict if people will show up to their medical appoin
   2. The baseline is 79.8% of showups.
   3. The link: [AppointmentsNoShow](https://github.com/AlexChicote/AppointmentsNoShow) on GitHub.
   
-![image-title-here](../images/68445279-doctors-wallpapers.jpg.jpg){:class="img-responsive"}
+![image-title-here](../images/68445279-doctors-wallpapers.jpg.jpg)
