@@ -20,7 +20,7 @@ permalink: praise.html
 
 *"Aloha, PhotoVision Team! I cannot thank you enough for your help! I really appreciate the extra attention and guidance you've given me. There was a lot of uncertainty on my end on how this order would turn out. When I got my scans, I was thrilled to see that they looked great! Though I'm currently a hobbyist photographer, I still felt like you rolled out the red carpet for me. Thanks for playing a pivotal roll in my passion for photography. Thank you for being awesome teachers. Thank you for the 5-star++++ customer service and the stellar job! Is it too weird to say 'I love you guys!?' Mahalo." __[Irene Cole](http://www.irenecolephotography.com/) September 28, 2017__*
 
-*"You guys are beyond amazing. THANK YOU for supporting us little people, thank you for thinking outside the box and thank you for doing what you do so well so we can do what we love doing! Sending you a virtual hug . . . and a box of chocolates. :wink:" __[Betsy Tomasello of Betsy Blue Photography](http://www.betsyblue.com/) September 14, 2017
+*"You guys are beyond amazing. THANK YOU for supporting us little people, thank you for thinking outside the box and thank you for doing what you do so well so we can do what we love doing! Sending you a virtual hug . . . and a box of chocolates. :wink:" __[Betsy Tomasello of Betsy Blue Photography](http://www.betsyblue.com/) September 14, 2017*
 
 *"Hello, PV Team! I just wanted to let you know how thrilled I am with these recent scans. You folks nailed it and I'm so grateful to have a quality lab I can trust with my business! Thank you!!" __[Kathryn Bruns](http://www.kathrynbruns.com/) August 31, 2017__*
 
@@ -28,19 +28,19 @@ permalink: praise.html
 
 *"Hi there! First off, thank you SO much for letting me and my family drop in a couple of weeks ago on our way back to California at the tail end of our West Coast road trip. It was a major highlight for me, and I was just incredibly touched by how warm and gracious everyone was. The experience made me even more grateful for the entire PhotoVision Team and all the hard work you do. The fact that people recognized my two little girls from years' worth of scanning was the cherry on top. And getting to drop off my 4-year-old's first roll of film was what I hope will be the beginning of a long relationship between my daughter and PhotoVision. :simple_smile: Thank you so much for your time! I sure appreciate how easy it is to ask for help and advice from the Team at PhotoVision. Right from the get go, I have never once felt intimidated and that approachability sold me immediately!" __[Jamie Fenwick of Jaime Lauren Photography](http://www.jaimelaurenphotography.com/) August 21, 2017__*
 
-*"Thanks for everything you guys do. You honestly have made my life as a photographer so much better!" __[Cameo Godinho of Magnolia & Magpie](http://www.magnoliaandmagpie.com/) August 14, 2017
+*"Thanks for everything you guys do. You honestly have made my life as a photographer so much better!" __[Cameo Godinho of Magnolia & Magpie](http://www.magnoliaandmagpie.com/) August 14, 2017)__*
 
 *"I always have such an incredible experience working with you guys and truly feel the love and care you put into developing the hundreds of rolls of film we all send you." __[Ali Lavin](http://alimaephoto.com/) August 7, 2017__*
 
-*"Hey, Team!! These two wedding could not be any more different lighting-wise, but you guys just 100% NAILED the skin tones on both of these, I could not be happier!!! . . . I just love how every note or comment I have made has been received and then applied to the next order. . . . Tears of joy. I love you guys!" __[Matoli Keely]() July 26, 2017
+*"Hey, Team!! These two wedding could not be any more different lighting-wise, but you guys just 100% NAILED the skin tones on both of these, I could not be happier!!! . . . I just love how every note or comment I have made has been received and then applied to the next order. . . . Tears of joy. I love you guys!" __[Matoli Keely]() July 26, 2017*
 
 *"Thank you so much for such beautiful scans yet again! . . . Seeing these wonderful scans has been the silver lining in an otherwise stressful week. Thank you, thank you!" __[Cassie Xie](http://www.cassiexie.com/) July 25, 2017__*
 
 *"Thank you once again for these scans. They are so amazing and I'm very pleased with this order. I know you guys are really busy with wedding season in full swing. I just wanted to extend how much I value what the Team provides. Keep up the great work!" __[Shirley Matz](http://www.shirleyclairephotography.com/) July 20, 2017__*
 
-*"I want to say thank you for the first set of prints. They came out lovely and I really like the thickness of the paper. I will definitely be ordering more from you in the future!!" __Allyne Armitage July 4, 2017__
+*"I want to say thank you for the first set of prints. They came out lovely and I really like the thickness of the paper. I will definitely be ordering more from you in the future!!" __Allyne Armitage July 4, 2017__*
 
-*"Hi there, beautiful PhotoVision Team! I wanted to reach out quickly and share some exciting news with you all—I’m currently a finalist for Southern Weddings’ Best of the South Wedding Awards: Film Photographer. YAY! I owe you all a million thanks. I never could have gotten to this point without the gorgeous, consistent scans you provide and the care you give my film. Thank you, thank you, thank you. PV film crew, I could sing your praises all day—I love working with your amazing Team, and I’m deeply appreciative of all your hard work! Have a great day! :simple-smile:" __[Haley Entrekin Bilunas of Photos by Heart](http://photosbyheart.com/) May 30, 2017__
+*"Hi there, beautiful PhotoVision Team! I wanted to reach out quickly and share some exciting news with you all—I’m currently a finalist for Southern Weddings’ Best of the South Wedding Awards: Film Photographer. YAY! I owe you all a million thanks. I never could have gotten to this point without the gorgeous, consistent scans you provide and the care you give my film. Thank you, thank you, thank you. PV film crew, I could sing your praises all day—I love working with your amazing Team, and I’m deeply appreciative of all your hard work! Have a great day! :simple-smile:" __[Haley Entrekin Bilunas of Photos by Heart](http://photosbyheart.com/) May 30, 2017__*
 
 *"I just wanted to say, over the past few years, I had a vision of where I wanted to be with my work and style. Step One was transitioning to film. The rest has been a learning process with myself, this new medium and understanding this craft. And over this process, you all have been nothing but helpful. I am so thankful for everything you do and so happy with where my style has evolved to this day!! I couldn’t do it without you guys." __[Kelsea Holder](http://www.kelseaholder.com/) May 19, 2017__*
 
@@ -56,7 +56,7 @@ permalink: praise.html
 
 *"I shot this session LAST WEEK—LITERALLY LAST FRIDAY—and these DLKFJS:LKMCSD:LJDS SCANS ARE IN MY HANDS ALREADY. AND THEY ARE AMAZING. I cannot begin to thank you guys! OH MY GOODNESS. This is the pinnacle of all that I've ever dreamed of in a creative shoot and I was SO. FLIPPING. WORRIED about shooting in this indoor studio with barely any daylight and you guys have completely blown me away with the color work here. I'm seriously in tears. I can't stop looking at these photos. Thank you, thank you, thank you! I cannot WAIT to share these with my partners. Thank you a million times over and more!" __[Cassie Xie](http://www.cassiexie.com/) May 4, 2017__*
 
-*"ARE YOU GUYS SERIOUS?!?!?! First off, you turn 2 weddings and a rehearsal (over 150 rolls) around in 1 day. THEN, I look at the scans are they are unbelievable! Insanely consistent and just absolutely nailed on all accounts. I don't know how you're doing it, but keep doing it. Thank you so much for everything! I truly couldn't be happier. I love you and I'm not afraid to say it." __[Erich McVey](http://www.erichmcvey.com/) April 27, 2017__
+*"ARE YOU GUYS SERIOUS?!?!?! First off, you turn 2 weddings and a rehearsal (over 150 rolls) around in 1 day. THEN, I look at the scans are they are unbelievable! Insanely consistent and just absolutely nailed on all accounts. I don't know how you're doing it, but keep doing it. Thank you so much for everything! I truly couldn't be happier. I love you and I'm not afraid to say it." __[Erich McVey](http://www.erichmcvey.com/) April 27, 2017__*
 
 *"Oh my goodness! Y’all are amazing! I’m in love with these scans! Thank you so much for the speedy turnaround and for doing such a wonderful job! :simple-smile:" __[Courtney Leigh](http://courtneyleighphoto.com/) April 27, 2017__*
 
@@ -80,9 +80,9 @@ permalink: praise.html
 
 *"You guys are the GREATEST, truly the nicest to work with. Thanks so much for your guidance." __[Cristina Lozito](www.cristinalozito.com) March 16, 2017__*
 
-*"I just wanted to say that I absolutely ADORE these images! The colors, warmth, exposure, etc. were all completely spot on! . . . Thank you again for always making me so excited about scan day!" __[Nikki Neswick of Nikki Nicole Photography](http://www.nikkineswick.com) March 16, 2017
+*"I just wanted to say that I absolutely ADORE these images! The colors, warmth, exposure, etc. were all completely spot on! . . . Thank you again for always making me so excited about scan day!" __[Nikki Neswick of Nikki Nicole Photography](http://www.nikkineswick.com) March 16, 2017__*
 
-*"WOW!!!! You guys are phenomenal for getting these back so quickly!!!! Y’all made my day!!! Thank you!!" __[Perry Vaile](http://www.perryvaile.com/) March 16, 2017__
+*"WOW!!!! You guys are phenomenal for getting these back so quickly!!!! Y’all made my day!!! Thank you!!" __[Perry Vaile](http://www.perryvaile.com/) March 16, 2017__*
 
 *"Thank you for these beautiful scans!! It was my first time trying AgfaPhoto Vista and you made it shine! Thank you for your consistency and care toward every order." __[Violeta Garcia-Mendoza](http://www.violetagarciamendoza.com) March 15, 2017__*
 
@@ -102,11 +102,11 @@ permalink: praise.html
 
 *"The more PhotoVision in my life, the better. You guys made my transition from digital a simplified dream . . . truly, and I’m forever grateful!" __[Betsy Tomasello of Betsy Blue Photography](http://www.betsyblue.com/) February 22, 2017__*
 
-*"We really adore y’all and our photos have never looked better!" __[Ashley + Coty Henry of Henry Photography]() February 15, 2017
+*"We really adore y’all and our photos have never looked better!" __[Ashley + Coty Henry of Henry Photography](http://www.henryphotography.com/) February 15, 2017__*
 
 *"YOU GUYS, I love you all so much. These scans are so perfect. Please keep doing everything like this, this batch is PERFECTION! It’s so me, just what I was hoping for! . . . I’m just so thankful for how attentive you all are! I feel like even the slightest notes I had on contrast and highlight detail from my last scans were taken into consideration and everything is so perfect! I couldn’t be happier! Thank you from the bottom of my heart!" __[Renée Tophia of Eden Willow Photography](http://www.edenwillowphoto.com/) February 15, 2017__*
 
-*"I just wanted to say THANK YOU to you guys for all of the perfect scans you've been sending me! Every order I have received is exactly what I was hoping for. You guys are amazing!" __[Nikki Neswick of Nikki Nicole Photography](http://www.nikkineswick.com/) February 13, 2017
+*"I just wanted to say THANK YOU to you guys for all of the perfect scans you've been sending me! Every order I have received is exactly what I was hoping for. You guys are amazing!" __[Nikki Neswick of Nikki Nicole Photography](http://www.nikkineswick.com/) February 13, 2017__*
 
 *"Hi, PhotoVision Fam! I just wanted to say thank you so much for your incredible turnaround times right now. It has been amazing and I really appreciate all the work you do!" __[Shayla Acosta of Shayla Renee Photography](http://www.shaylareneephotography.com/) February 2, 2017__*
 
@@ -118,7 +118,7 @@ permalink: praise.html
 
 *"#LoveMyLab is in my little preset Instagram hashtags now, I love it and YOU ALL!! :simple-smile: Thanks for making everything look so pretty!" __[Ashley (McKinney) Brown of Shinning Light Photography](http://www.shininglight516.com/) January 17, 2017__*
 
-*"THANK YOU for having such an amazing and quick turnaround on this order (especially over a holiday weekend)!! You guys are amazing—thank you!!!!" __[Olivia Richards](http://www.oliviarichards.net/) January 2, 2017__
+*"THANK YOU for having such an amazing and quick turnaround on this order (especially over a holiday weekend)!! You guys are amazing—thank you!!!!" __[Olivia Richards](http://www.oliviarichards.net/) January 2, 2017__*
 
 *"My work over the last year has improved so much in consistency and I couldn’t have done it without you guys! Not only are you a talented team who handles our film with care and precision, you’re kind and wonderful people as well! I’m so thankful and proud to say PV will always be my lab of choice!" __[Renée Tophia of Eden Willow Photography](http://www.edenwillowphoto.com/) December 28, 2016__*
 
@@ -138,6 +138,6 @@ permalink: praise.html
 
 *"I honestly can't thank you guys enough. My last couple of orders have been PERFECT!" __[Callie Manion](http://www.calliemanionphotography.com/) October 17, 2016__*
 
-*"It is amazing how you guys go above and beyond time and time again!! P.S. Getting weird here, but I completely love you guys. :simple-smile: :simple-smile:" __[Matoli Keeley](http://matolikeelyphotography.com/) October 14, 2016
+*"It is amazing how you guys go above and beyond time and time again!! P.S. Getting weird here, but I completely love you guys. :simple-smile: :simple-smile:" __[Matoli Keeley](http://matolikeelyphotography.com/)__ October 14, 2016*
 
-*"Thank you so much for knocking these out of the park! I honestly had my fingers crossed with this batch, as the shooting conditions were less than ideal, but you guys worked your magic and I couldn't be happier! Thank you for the consistent and beautiful scans every time!!" __[Emily Sleadd of Hunting Ground Films](http://www.huntinggroundfilms.com/) October 12, 2016
+*"Thank you so much for knocking these out of the park! I honestly had my fingers crossed with this batch, as the shooting conditions were less than ideal, but you guys worked your magic and I couldn't be happier! Thank you for the consistent and beautiful scans every time!!" __[Emily Sleadd of Hunting Ground Films](http://www.huntinggroundfilms.com/)__ October 12, 2016*
