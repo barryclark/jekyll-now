@@ -19,14 +19,14 @@ html {
 
 body {
 	background: $white;
-  font: 18px/1.4 $helvetica;
+  font: 16px/1.4 $helvetica;
   color: $darkGray;
 }
 
 .container {
   margin: 0 auto;
-  max-width: 740px;
-  padding: 0 10px;
+  // max-width: 740px;
+  // padding: 0 10px;
   width: 100%;
 }
 
@@ -155,8 +155,14 @@ img {
 }
 
 .masthead {
-  padding: 20px 0;
-  border-bottom: 1px solid $lightGray;
+  padding: 10px;
+  margin-bottom: 30px;
+  background-color: black;
+  overflow: auto;
+
+  a, span {
+    color: white;
+  }
 
   @include mobile {
     text-align: center;
@@ -212,9 +218,8 @@ img {
 
 nav {
   float: right;
-  margin-top: 23px; // @TODO: Vertically middle align
   font-family: $helveticaNeue;
-  font-size: 18px;
+  font-size: 16px;
 
   @include mobile {
     float: none;
@@ -281,6 +286,7 @@ nav {
 footer {
   padding: 20px 0;
   text-align: center;
+  overflow: auto;
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS

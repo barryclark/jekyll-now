@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: What Makes Us Tick...
 permalink: /about/
 ---
 
