@@ -4,7 +4,7 @@ title: General introduction of deep learning architecture for Computer Vision in
 author: hoangbm
 ---
 Nowadays, Deep Learning become more and more popular in many domains like Finance, 
-E-Commerce. At OtoNhanh.vn, we employ Deep Learning to tackle the problems of Natural Language Processing to deal with 
+E-Commerce. At [OtoNhanh.vn](https://otonhanh.vn), we employ Deep Learning to tackle the problems of Natural Language Processing to deal with 
 the requests of the user in our site or of Computer Vision in the illustration of cars. In this blog, we will focus on 
 the network architecture that we consider to use in our Computer Vision application.  
 
