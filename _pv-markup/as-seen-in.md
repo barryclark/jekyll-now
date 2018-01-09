@@ -18,3 +18,5 @@ We are honored to work alongside amazing film photographers! Here are a few plac
 ![Rocky Mountain Bride logo][http://www.rockymountainbride.com/]
 ![Oregon Bride logo][http://orbridemag.com/]
 ![Southern Weddings logo][http://www.southernweddings.com/]
+![Dark Beauty Magazine logo][http://www.darkbeautymag.com]
+![Hochzeitsguide VOW logo][http://www.hochzeitsguide.com/]
