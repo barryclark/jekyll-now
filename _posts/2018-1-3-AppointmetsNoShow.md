@@ -11,3 +11,4 @@ This is a study trying to predict if people will show up to their medical appoin
   3. The link: [AppointmentsNoShow](https://github.com/AlexChicote/AppointmentsNoShow) on GitHub.
   
 ![image-title-here](../images/68445279-doctors-wallpapers.jpg.jpg)
+![Jekyll Now Theme Screenshot](/images/jekyll-now-theme-screenshot.jpg "Jekyll Now Theme Screenshot")
