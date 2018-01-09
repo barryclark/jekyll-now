@@ -8,6 +8,8 @@ I notice that this tends to happen when
 
 ![Feature Branch](https://www.atlassian.com/dam/jcr:01b0b04e-64f3-4659-af21-c4d86bc7cb0b/01.svg)
 
+## Merging
+
 At this point, the developer uses the knowledge of what they know, or a UI to handle this for them, but essentially tries 1 of the 2 following approaches to merging.
 
 1. Tries to merge the feature branch directly into master. 
@@ -58,12 +60,61 @@ When you perform a rebase what happens is a set of logical steps that gets the w
 4. Git will then replay each commit that you made on the branch, one at a time on top of the new HEAD with all the latest changes.
 5. When git applies these commits, one at a time, if there is a merge conflict when applying the commit, the process is paused and you are then asked how to fix the merge conflicts. You can then fix these as you would normally and as soon as you have fixed up all the conflicts, you tell git to continue with the rebase `git rebase --continue`
 6. This process keeps happening until all of your commits have been replayed on top of the master branch changes, almost as if you had just done all your work now on the latest changes.
+7. Finally your local branch and your remote branch are now completely out of sync and git will tell you there are changes from the remote to pull and changes to push. This is perfectly normal because what you have done is updated your branch's history compared to the remote. What you need to do now is to force push your changes to the remote which will overwrite the history and trust your local branch. `git push --force`.
 
+After a rebase your branch is now x commits ahead of master and ready to be easily merged into master.
+```git
+git checkout master
+git merge feature/branch
+```
 
+## When NOT to use a rebase
 
-I frequently get asked the same question and hear the same statement from developers when it comes to Merging and Rebasing.
-* *What is the difference between a git merge and a git rebase?*
-* *I am scared of or have been told to never rewrite my git history!*
+For those people that have heard about rebase, this is usually the part that scares them the most.
 
+Because you are overwriting/changing the history of the branch and force pushing changes to the remote repository, you should **NEVER** do this on a public/shared branch. Only ever perform this if you are the only person working on the branch because if you are sharing this with another developer, and they try to pull changes from the remote repository, you will break their local copy.
 
-Then I am presented with an issue that a fellow colleague has gotten themselves into when they merge changes from master into their feature branch and then merge their feature branch back into master
+Generally speaking this is a safe and very useful command to know, and as soon as you understand what is happening under the covers, it makes the most sense out of all the options.
+
+## Workflow
+
+I recommend following this simple workflow in a team when working with feature branches and master.
+
+* Always rebase master when trying to get other changes.
+* Always merge feature branch back into master.
+
+1. Create a new feature branch
+2. Make changes/commits
+3. When ready to merge, checkout master and pull the latest changes
+4. Switch back to yor feature branch and rebase master
+5. Fix any conflicts
+6. Force Push Changes to the Remote Repository
+7. Create a Pull Request for someone to Review and Merge into master OR merge your feature branch into master and push the changes.
+
+Example
+
+```git
+git checkout master # Checkout the master branch
+git pull # Pull the latest changes from the remote repository
+git checkout -b feature/mybranch # Create a new branch feature/mybranch from the latest master branch.
+# Make some changes to the files
+git add -A # Add all files including untracked to be committed.
+git commit -m "Committing my changes with a useful message." # Commit the changes with a useful one line commit message.
+# Make some changes to the files
+git add -A # Add all files including untracked to be committed.
+git commit -m "Committing my changes with a useful message." # Commit the changes with a useful one line commit message.
+git checkout master # Switch back to the master branch
+git pull # Make sure you have the latest changes from the remote repository.
+git checkout feature/mybranch # Switch back to my feature branch
+git rebase master # Use the rebase command to play all my changes ontop of the latest master branch.
+git push --force # Force push the changes of my local branch to the remote repository
+# Either use your git web UI to make a Pull Request to merge your feature branch into the master branch, having another Team Member review your changes.
+# OR merge and push locally...
+git checkout master
+git merge feature/mybranch
+git push
+```
+
+## References
+
+Images are from Atlassian's Tutorials and you can find further information on Rebase vs Merging at their page [here](https://www.atlassian.com/git/tutorials/merging-vs-rebasing)
