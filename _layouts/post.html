@@ -17,7 +17,7 @@ layout: default
   <hr/>
   <ul class="recent-posts">
   {% for post in site.posts limit:5 %}  
-    {% if page.title != post.title: %}
+    {% if page.title != post.title %}
   <li><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>  
     {% endif %}
   {% endfor %}  
