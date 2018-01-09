@@ -142,6 +142,65 @@ img {
     clear: both;
 }
 
+/*******************************************/
+/* PHOTOVISION SPECIFIC MODS GO BELOW HERE */
+/*******************************************/
+
+// to center elements on page
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// to left-justify elements
+.left {
+  text-align: left;
+  float: left;
+}
+
+// to right-justify text or elements
+.right {
+  text-align: right;
+  float: right;
+}
+
+.footer-nav-left {
+  text-align: left;
+  float: left;
+  margin-left: 20px;
+  margin-right: 60px;
+
+  @include mobile {
+    float: none;
+    width: 100%;
+  }
+}
+
+.footer-nav-right {
+  text-align: right;
+  float: right;
+  margin-right: 20px;
+
+  @include mobile {
+    text-align: left;
+    float: none;
+    margin-left: 20px;
+    width: 100%;
+    ul {
+      margin-left: -40px;
+    }
+  }
+}
+
+.svg-icon {
+  max-height: 20px;
+  max-width: 20px;
+}
+/*******************************************/
+/* PHOTOVISION SPECIFIC MODS GO ABOVE HERE */
+/*******************************************/
+
 /*********************/
 /* LAYOUT / SECTIONS */
 /*********************/
