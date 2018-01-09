@@ -4,8 +4,6 @@ title: Shipping Tips
 permalink: shipping-tips.html
 ---
 
-# Shipping Tips
-
 ## Use a zip-close bag
 Liquids can be surprisingly harmful to unprocessed film. Placing your **film + order form** inside a plastic zip-close bag gives you added peace of mind and protects your investment.
 
