@@ -94,20 +94,20 @@ I recommend following this simple workflow in a team when working with feature b
 Example
 
 ```git
-git checkout master # Checkout the master branch
-git pull # Pull the latest changes from the remote repository
-git checkout -b feature/mybranch # Create a new branch feature/mybranch from the latest master branch.
+git checkout master
+git pull
+git checkout -b feature/mybranch
 # Make some changes to the files
-git add -A # Add all files including untracked to be committed.
-git commit -m "Committing my changes with a useful message." # Commit the changes with a useful one line commit message.
+git add -A
+git commit -m "Committing my changes with a useful message."
 # Make some changes to the files
-git add -A # Add all files including untracked to be committed.
-git commit -m "Committing my changes with a useful message." # Commit the changes with a useful one line commit message.
+git add -A
+git commit -m "Committing my changes with a useful message."
 git checkout master # Switch back to the master branch
-git pull # Make sure you have the latest changes from the remote repository.
-git checkout feature/mybranch # Switch back to my feature branch
-git rebase master # Use the rebase command to play all my changes ontop of the latest master branch.
-git push --force # Force push the changes of my local branch to the remote repository
+git pull
+git checkout feature/mybranch
+git rebase master
+git push --force
 # Either use your git web UI to make a Pull Request to merge your feature branch into the master branch, having another Team Member review your changes.
 # OR merge and push locally...
 git checkout master
