@@ -1,13 +1,14 @@
 ---
 layout: post
 title: General introduction of deep learning architecture for Computer Vision in OtoNhanh.vn
+author: hoangbm
 ---
 Nowadays, Deep Learning become more and more popular in many domains like Finance, 
 E-Commerce. At OtoNhanh.vn, we employ Deep Learning to tackle the problems of Natural Language Processing to deal with 
 the requests of the user in our site or of Computer Vision in the illustration of cars. In this blog, we will focus on 
 the network architecture that we consider to use in our Computer Vision application.  
 
-### I. Convolutional Neural Network (ConvNet)  
+# I. Convolutional Neural Network (ConvNet)  
 The heart of Deep Learning in Computer Vision is ConvNet, a sub-division of Neural
 Network designed specifically to cope with the images. Regular Neural Network is made of fully-connected layers: each 
 unit from one layer have the access to every units from the previous layer, which leads to the explosion in the number 
@@ -44,12 +45,13 @@ the input image.
 
 Generally speaking, Convolutional Layer, Pooling Layer and Fully-Connected Layer are 
 the principal components of ConvNet in the image classification task. To make use these layers at its best, the 
-researchers in Deep Learning community try to contruct different network architectures. One of the most popular 
-benchmark is the ImageNet challenge. In the next part, we will focus on the architectures that we have implemented in 
-our business.  
+researchers in Deep Learning community try to contruct different network architectures. The arrival of ConvNet has 
+changed the fundamental tasks of Computer Vision from *feature enfineering* to *network engineering* to find the best 
+representation for the classification. One of the most popular benchmark is the ImageNet challenge. In the next part, 
+we will focus on the architectures that we have implemented in our business.  
 
-### II. Network Architectures
-##### 1. AlexNet  
+# II. Network Architectures
+### 1. AlexNet  
 It is developped by _Alex Krizhevsky and al._. It was submitted to the ImageNet 
 Challenge in 2012 and really made an echo in Deep Learning society by its superiority in the contest. In fact, it is 
 pretty similar to the famous LeNet but bigger and deeper.  
@@ -72,11 +74,76 @@ layer and fully connected layer.
 - One thing to notice: The above architecture is suitable for ImageNet whose sizes are large, for other datasets like 
 MNIST or CIFAR10, we have to reduce some layers to avoid Vanish Gradient.  
  
-##### 2. VGG-Net  
+### 2. VGG-Net  
 This architecture is, from my point of view, a deeper version of AlexNet. Its main 
 contribution is that a better performance of the network can be achieved by simply increasing its layers for more 
-sophisticated representation. Its detailed architecture can be found in the paper [Very deep convolutional networks for 
+sophisticated representation.  
+![](https://www.cs.toronto.edu/~frossard/post/vgg16/vgg16.png)  
+*VGG-Net architecture*  
+Its detailed architecture can be found in the paper [Very deep convolutional networks for 
 large-scale image recognition](https://arxiv.org/pdf/1409.1556.pdf).  
+
+### 3. Inception
+Along with VGGNet, Inception is also a contestant in the 2014 ILSVRC who gained much 
+attention from the community. While VGGNet give us a simple way to reinforce the result by stacking more layers, 
+Inception gives us many new notions which, in my opinion, inspires many successors. Inception architecture sticks to a 
+very famous meme in the internet:  
+![](http://i1.kym-cdn.com/photos/images/newsfeed/000/531/557/a88.jpg)  
+
+There are two papers about this architecture that worth noticing:  
+[Going Deeper with Convolutions](https://static.googleusercontent.com/media/research.google.com/vi//pubs/archive/43022.pdf)  
+[Rethinking the Inception Architecture for Computer Vision](https://static.googleusercontent.com/media/research.google.com/vi//pubs/archive/44903.pdf)  
+
+Personally, I recommend you to take time with the second paper, it gives us some insights about Inception. Now I may 
+summarize the idea of the paper:  
+##### General Design Principles:
+- **Avoid representational bottlenecks**: We shouldn't reduce the size as well as the dimension of the input to abruptly, 
+especially in the first layers. The representation size ought to be shrinked mildly thoughout the network in order to 
+avoid the loss of information.  
+- **Higher dimensional representations are easier to process**: Adding more filters per tile is encouraged for the 
+purpose of faster training.  
+- **Spatial aggregation can be done over lower dimensional embeddings without much or any loss in representational power**.  
+Considering adjacent layers are highly correlated, it results in much less loss of information during dimension 
+reduction. So why not reducing the dimension for a faster learning?
+- **Balance the width and depth of the network**: We should increase both the depth of the network and the number of 
+filters per stage for the optimal improvement.  
+
+##### Factorizing Convolution:
+In my own experience, before reading this paper, I had always had an impression that a larger filter size will lead to 
+a faster training due to the fact that larger filter size make smaller feature maps. However, it turns out that instead 
+of using a large filter, we should factorize it into smaller filter layers. For instance, a two 3x3 layer is more 
+preferable than a 5x5 filter.  
+![](https://adriancolyer.files.wordpress.com/2017/03/rethinking-inception-fig-1.jpeg?w=480)  
+Furthermore, althought it seem logical when we don't introduce ReLU layer between the two small convolutional layer to 
+simulate the large layer at its best, the author advised us to employ the ReLU layer after each convolution.  
+
+##### Auxiliary Classifiers:  
+Inception also introduce a new concept of auxiliary classifiers. We add some classifiers at the intermediate layers: 
+Their loss is added to the total loss with a specific weights. In the inference, these classifiers are discarded. They 
+act as the regularizer and also a way to combat vanishing gradient. However, it is proved that their contribution is 
+quite limited, and in most case, just a secondary classifier is sufficient.  
+![](http://www.e-sciencecentral.org/upload/ijfis/thumb/ijfis-17-026f7.gif)  
+*Concept of auxiliary classifier*  
+
+##### Grid Size Reduction:
+Traditionally, to reduce the size of the feature map, we use pooling operator before entering a module, which is 
+contrast to the principle of avoiding representational bottlenecks. We may reverse the order by executing the module 
+first and then applying the pooling, however, it is computationally expensive.  
+![](https://raw.githubusercontent.com/stdcoutzyx/Blogs/master/blogs2016/imgs_inception/12.png)  
+The author proposed to use concatenation as a way to bypass the bottleneck but still reduce the size:  
+![](https://raw.githubusercontent.com/stdcoutzyx/Blogs/master/blogs2016/imgs_inception/13.png)  
+
+##### Inception Architecture:  
+![](http://joelouismarino.github.io/images/blog_images/blog_googlenet_keras/googlenet_diagram.png)  
+
+Its core element is Inception module. In this module, we use different filter size to the same input and combine the 
+feature map using concatenation. In the module, we also implement some above tricks to improve the trainign process.  
+![](https://cpmajgaard.com/blog/assets/images/parking/inception.jpg)  
+
+Basically, it is the concept of Inception architecture that we want to introduce. In the paper, they also talk about 
+a regularization technique called *Label Smoothing*, but it is out of scope of this article.  
+
+
 
 ##### 3. ResNet
 Unlike the last architectures when they simply increase the depth of the network to 
