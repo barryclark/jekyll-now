@@ -133,16 +133,15 @@ main { }
 }
 @media (max-width: 1242px) {  #masters h5, #cita h5  {font-size:18px!important;}
 	#page-header.cover {background-image: url("/img/home_b.jpg");background-position:fixed;
-    padding-top:180px;height:100%;}
+    padding-top:145px;height:100%;}
     #cover-links a {font-size:18px;width:23%;margin:2px;font-weight:lighter;}
     #page-footer h2 small {font-size:50% ;letter-spacing: 0.03em;}
     .youtube {	margin:0;padding-bottom: 26em;}
 }
 @media (max-width: 768px) {    #masters h5, #cita h5  {font-size:14px!important;}
     #page-header.cover {background-image: url("/img/home_m.jpg");background-size:100% auto;background-position:fixed !important; }
-    .cover#page-header {padding-top:180px;height:100%;}
-    .cover#page-header h1 {line-height:0.8em;font-size:23px ;}
-    .cover#page-header h2 {line-height:1.2em;font-size:15px ;}
+    .cover#page-header {padding-top:120px;height:100%;}
+    .cover#page-header h1 {line-height:0.9em;font-size:32px ;}
     #covers article h4{font-size:32px;}
     #covers article h5{font-size:26px;}
     #covers .cover-justify p{font-size:18px!important;letter-spacing: 0.005em;line-height:1.8em;}
