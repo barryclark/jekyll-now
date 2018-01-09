@@ -48,7 +48,7 @@ More information on road classification types can be found here: <https://en.wik
 
 ![_config.yml]({{ site.baseurl }}/images/bike_lanes.png)
 
-The next question I wanted to investigate was what was the difference in reported accidents between roads that have some form compared to those with no protection. I was able to merge in street level metadata to the accident level data using [bicycle lane & road metadata from DC OpenData](http://opendata.dc.gov/datasets/bicycle-lanes). You can see in the chart above that there is a clear difference in reported accidents between roads with bike lanes and those without.
+The next question I wanted to investigate is the difference in reported accidents between roads that have some form compared to those with no protection. I was able to merge in street level metadata to the accident level data using [bicycle lane & road metadata from DC OpenData](http://opendata.dc.gov/datasets/bicycle-lanes). You can see in the chart above that there is a clear difference in reported accidents between roads with bike lanes and those without.
 
 *cough, cough build more bike lanes please cough, cough*
 
