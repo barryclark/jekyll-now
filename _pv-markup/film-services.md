@@ -1,4 +1,9 @@
-# Film Services
+---
+layout: page
+title: Film Services
+permalink: film-services.html
+---
+
 We currently process C-41 color negative film and Black + White negative film. We can process most film sizes ranging from 135 roll film to 8x10 sheet film on C-41 and Black + White. You can find our current service time [here](http://photovisionprints.com/film-service-times).
 
 ## Develop Only
