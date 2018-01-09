@@ -6,11 +6,23 @@
 name: PhotoVision
 
 # Short bio or description (displayed in the header)
-description: World-Class Scans With A Small-Town Lab!
+description: The Northwest's Premiere Film Lab -- PhotoVision
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 banner-image: /images/banner_logo.png
 
+repository: PhotoVision/PhotoVision.github.io
+
+company-info:
+  service-hours: 9:00 am – 5:00 pm PST,  M – F
+  lobby-hours: 11:00 am – 3:00 pm PST,  M – F
+  address: 3775 Market Street Northeast
+  csz: Salem, Oregon 97301
+  map-url: https://goo.gl/maps/fT5EYiWhXrt
+  phone: 1-503-588-3686
+  email: info@photovisionprints.com
+
+turnaround-time: 1 business day
 #
 # Flags below are optional
 #
@@ -19,17 +31,17 @@ banner-image: /images/banner_logo.png
 footer-links:
   dribbble:
   email:
-  facebook:
+  facebook: photovisionprints
   flickr:
-  github: 
-  instagram: 
+  github:
+  instagram: photovisionprints
   linkedin:
-  pinterest:
+  pinterest: pvprints
   rss: # just type anything here for a working RSS icon
-  twitter: 
+  twitter: pvprints
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
-  googleplus: # anything in your profile username that comes after plus.google.com/
+  googleplus: "101012725939928707667"
 
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
