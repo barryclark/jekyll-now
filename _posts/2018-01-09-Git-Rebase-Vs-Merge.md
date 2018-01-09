@@ -12,7 +12,7 @@ I notice that this tends to happen when
 
 At this point, the developer uses the knowledge of what they know, or a UI to handle this for them, but essentially tries 1 of the 2 following approaches to merging.
 
-1. Tries to merge the feature branch directly into master. 
+1. Try to merge the feature branch directly into master. 
 
    The developer first checks out the local master branch and does a pull from the remote repository to make sure they are up to date and then performs a `git merge feature/branch` to attempt to merge their changes into master. They may be lucky and have no merge conflicts, but more often than not, especially with large teams, there will be merge conflicts to resolve. The developer then tries to fix up these merge conflicts at the merge commit in their local master branch and then push the changes to the remote repository.
 
@@ -23,7 +23,7 @@ At this point, the developer uses the knowledge of what they know, or a UI to ha
    * You are making changes directly in the master branch that cannot be pushed to the remote repository and tested by a Continuous Integration Process, therefore master can end up in an unstable state.
    * When you try to look back at this merge in the future, perhaps you need to revert this commit, it becomes very hard to find out what actually happened, when it happened and how it happened. There is no distinguish between the work you did for your feature and the work you had to do to get other developers changes which resulted in the mergec conflict.
 
-2. Tries to merge the master changes into their feature branch to make sure their feature is up to date before merging back into master.
+2. Try to merge the master changes into their feature branch to make sure their feature is up to date before merging back into master.
 
    The developer first checks out the local master branch and does a pull from the remote repository to make sure they are up to date and then performs a `git checkout feature/branch` followed by a `git merge master` to merge the master changes into their feature branch and fix the conflicts here, so that when they then `git checkout master` and `git merge feature/branch` the conflicts will already have been correctly resolved.
 
