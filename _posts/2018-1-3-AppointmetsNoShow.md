@@ -13,7 +13,7 @@ This is a study trying to predict if people will show up to their medical appoin
   3. The link: [AppointmentsNoShow](https://github.com/AlexChicote/AppointmentsNoShow) on GitHub for a more detailed and technical analysis.
   
   
-### This is a more extense non-technical description of Appointments No-show study.
+## This is a more extense non-technical description of Appointments No-show study.
 
-  1. ## Gathering the datataset.
+  1. ### Gathering the datataset.
   
