@@ -35,7 +35,7 @@ Data files are saved on a yearly basis.
 # Model
 
 
-[1]: # Conclusions
+# [1]: Conclusions
 
 There are many claims about lowered enrollment in public schools. I taught at Franklin Sr. High School and experienced the following drop in enrollment:
 
