@@ -36,12 +36,14 @@ his/her family and in the future.
 ![graphCapstoneDayOfWeek](/images/graphCapstoneDayOfWeek.jpg){:height="500px" width="700px"}
 
  3. ## What about the model?
- Once all the feature engineering was done, it was time to get to know the data and its features. The way to do it is to see 
- how this variables are affected by the target. I just show a coup,e of graphs where I measure age and tthe day of the week to
- the show/no-show. At the same time, I draw a line representing the baseline for a better interpretation. 
+ In order to select the model, I preselect the features and ordered them based on its correation to our taget. With the       
+ sorted, I ran almost all models available while loopong over the features adding 2 everytime and scoring its accuracy.
+ As usual, I compared the score to the baseline.
+ The reasons to do it this way was to select the model while also selecting features.
 
 ![graphCapstoneAge](/images/graphCapstoneAge.jpg){:height="400px" width="700px"}
 ![graphCapstoneDayOfWeek](/images/graphCapstoneDayOfWeek.jpg){:height="500px" width="700px"}
 
+  The winner was Gradient Boosting Classifier.
 
 
