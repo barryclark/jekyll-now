@@ -25,7 +25,7 @@ his/her family and in the future.
  engineering, I created new ones that end up being important (under Feature Engineering).
 
 
-![AlexChicoteCapstone](/images/AlexChicoteCapstone.jpg){:height="550px" width="750px"}
+![AlexChicoteCapstone](/images/AlexChicoteCapstone.jpg){:height="600px" width="800px"}
 
 
  ##Getting to know our Data.
@@ -34,8 +34,8 @@ his/her family and in the future.
  how this variables are affected by the target. I just show a coup,e of graphs where I measure age and tthe day of the week to
  the show/no-show. At the same time, I draw a line representing the baseline for a better interpretation. 
 
-![graphCapstoneAge](/images/graphCapstoneAge.jpg){:height="500px" width="800px"}
-![graphCapstoneDayOfWeek](/images/graphCapstoneDayOfWeek.jpg){:height="500px" width="800px"}
+![graphCapstoneAge](/images/graphCapstoneAge.jpg){:height="600px" width="900px"}
+![graphCapstoneDayOfWeek](/images/graphCapstoneDayOfWeek.jpg){:height="600px" width="900px"}
 
  ##What about the model?
  
