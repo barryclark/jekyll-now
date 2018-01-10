@@ -1,5 +1,10 @@
-
-Light verbs are verbs that have little meaning on their own, almost like filler verbs. While light verbs are certainly not wrong, writers need to be careful about using them too often. It can fill writting with fluff. Sentences with light verbs often contain nouns that could replace the light verb. For example:
+---
+layout: post
+title: "Light Verbs 1"
+date: 2017-08-05
+tags: [python, nlp]
+---
+Light verbs are verbs that have little meaning on their own, almost like filler verbs. While light verbs are certainly not wrong, writers need to be careful about using them too often.<!--more--> It can fill writting with fluff. Sentences with light verbs often contain nouns that could replace the light verb. For example:
 
 "I did the review of your text"
 
@@ -205,8 +210,3 @@ print("That is {:.2%} of all verbs in this text".format(len(light_verbs_in_text)
     
 
 In [Part 2](https://jss367.github.io/Light-verbs-2/), we'll compare several texts from the literary canon and visualize it.
-
-
-```python
-
-```

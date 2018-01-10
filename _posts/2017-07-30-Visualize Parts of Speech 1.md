@@ -1,5 +1,10 @@
-
-Do good writers use fewer adverbs than poor writers? Is it possible to improve ones writing by looking at the relative distribution of different parts of speech (POS)? I was curious about this and wanted to investigate. The first step towards determining this is to find out what a "normal" POS distribution is. To do that, we'll explore parts of speech usage in Great Expectations by Charles Dickens.
+---
+layout: post
+title: "Visualize Parts of Speech 1"
+date: 2017-07-30
+tags: [python, nlp]
+---
+Do good writers use fewer adverbs than poor writers? Is it possible to improve ones writing by looking at the relative distribution of different parts of speech (POS)? I was curious about this and wanted to investigate. The first step towards determining this is to find out what a "normal" POS distribution is. To do that, we'll explore parts of speech usage in Great Expectations by Charles Dickens.<!--more-->
 
 
 ```python
@@ -23,9 +28,12 @@ raw = response.read().decode('utf8')
 print(raw[:200])
 ```
 
-    ﻿The Project Gutenberg EBook of Great Expectations, by Charles Dickens
-    
-    This eBook is for the use of anyone anywhere at no cost and with
+    ﻿The Project Gutenberg EBook of Great Expectations, by Charles Dickens
+
+    
+
+    This eBook is for the use of anyone anywhere at no cost and with
+
     almost no restrictions whatsoever.  You may copy it, give it
     
 
@@ -38,8 +46,10 @@ text = raw[886:-19150] # Jumping to where it actually starts
 print(text[:205])
 ```
 
-    My father’s family name being Pirrip, and my Christian name Philip, my
-    infant tongue could make of both names nothing longer or more explicit
+    My father’s family name being Pirrip, and my Christian name Philip, my
+
+    infant tongue could make of both names nothing longer or more explicit
+
     than Pip. So, I called myself Pip, and came to be called Pip.
     
 

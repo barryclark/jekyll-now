@@ -1,10 +1,11 @@
 ---
-title: "Opening text files in Python"
+layout: post
+title: "Opening Text Files in Python"
 date: 2017-04-08
-categories: nltk python
+tags: [python, nlp]
 ---
 
-Python offers several different methods for opening text files, but are all options equally good? What's the best method for the generic case of opening a text file?
+Python offers several different methods for opening text files, but are all options equally good? What's the best method for the generic case of opening a text file?<!--more-->
 
 The most basic is the following:
 ```python

@@ -1,5 +1,10 @@
-
-In [Gathering text from Project Gutenberg](https://jss367.github.io/Getting-text-from-Project-Gutenberg/) we retrieved text from Project Gutenberg and built a couple of functions along the way to help. The functions make us more efficient, but what we really need is a class for books. The will allow us to store and analyze many different texts very efficiently. Let's build that here.
+---
+layout: post
+title: "Class for Gathering Text"
+date: 2017-08-15
+tags: [python, nlp]
+---
+In [Gathering text from Project Gutenberg](https://jss367.github.io/Getting-text-from-Project-Gutenberg/) we retrieved text from Project Gutenberg and built a couple of functions along the way to help. The functions make us more efficient, but what we really need is a class for books. The will allow us to store and analyze many different texts very efficiently. Let's build that here.<!--more-->
 
 Let's make a class called Book that will store the methods and variables we need. Each book will have a title, a url (from Project Gutenberg), a position where the text actually starts, and a position where the text actually ends. We'll also want to hold the raw text, the tokens, and the [parts of speech](https://jss367.github.io/Visualize-Parts-of-Speech-1/) within the class. We'll build methods within the class to determine each of these.
 

@@ -1,5 +1,10 @@
-
-Let's take the [previous analysis](https://jss367.github.io/Light-verbs-1/) of a single text and formalize it so we can use it against many texts. From there we'll explore light verb use across many texts.
+---
+layout: post
+title: "Light Verbs 2"
+date: 2017-09-06
+tags: [python, nlp]
+---
+Let's take the [previous analysis](https://jss367.github.io/Light-verbs-1/) of a single text and formalize it so we can use it against many texts. From there we'll explore light verb use across many texts.<!--more-->
 
 
 We're going to combine the `find_light_verbs` function from [Light Verbs 1](https://jss367.github.io/Light-verbs-1/) with the [class we made for Books](https://jss367.github.io/Class-for-Gathering-Text/). This will make comparisons across many texts very simple.

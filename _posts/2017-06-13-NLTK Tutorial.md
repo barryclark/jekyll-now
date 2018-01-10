@@ -1,5 +1,10 @@
-
-The Natural Language ToolKit (NLTK) is the most popular library for natural language processing (NLP) in Python. The authors also created the [NTLK textbook](http://www.nltk.org/book/), which is a great resource for learning how to use NLTK. This notebook is a compilation of the parts of NLTK that I found most interesting.
+---
+layout: post
+title: "NLTK Tutorial"
+date: 2017-08-05
+tags: [python, nlp, cheatsheets]
+---
+The Natural Language ToolKit (NLTK) is the most popular library for natural language processing (NLP) in Python. The authors also created the [NTLK textbook](http://www.nltk.org/book/), which is a great resource for learning how to use NLTK. This notebook is a compilation of the parts of NLTK that I found most interesting.<!--more-->
 
 # Chapter 1
 
