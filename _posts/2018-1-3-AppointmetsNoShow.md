@@ -17,11 +17,14 @@ his/her family and in the future.
 ## Non-technical description of Appointments No-show study.
 
   1. ## Gathering the data.
-  No pain, no gain and, I would add, no data no project. I obtained all the data from Kaggle and thanks to altruistics
-  efforts. Every row in the file of 110k of them that I obtained was an appointment and for each appointment I had the 
-  following information.
+ No pain, no gain and, I would add, no data no project. I obtained all the data from Kaggle and thanks to altruistics
+ efforts. Every row in the file of 110k of them that I obtained was an appointment and for each appointment I had the 
+ information listed under Appointments. Then, happily thinking that the weather would be a key factor, I scraped data 
+ and added weather information to the mix for the days of the appointments.
 
-![AlexChicoteCapstone](/images/AlexChicoteCapstone.jpg){:height="400px" width="700px"}
+
+
+![AlexChicoteCapstone](/images/AlexChicoteCapstone.jpg){:height="500px" width="700px"}
 
 
 
