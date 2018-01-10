@@ -6,13 +6,14 @@ Why so many people do not show up for their medical approintments? Is it normal 
 This is a study trying to predict if people will show up to their medical appointment.
 ![68445279 doctors wallpapers](/images/68445279-doctors-wallpapers.jpg){:height="300px" width="600px"}
 
-## This is a brief description of this project.
+## Brief description of Appointments No-Show.
   1. Dataset contains 110k medical appointments that took place in Vitoria, Brazil in between April 29th and Jun 8th 2016.
   2. The baseline is 79.8% of showups.
-  3. The link: [AppointmentsNoShow](https://github.com/AlexChicote/AppointmentsNoShow) on GitHub for a more detailed and technical analysis.
+  3. The link: [AppointmentsNoShow](https://github.com/AlexChicote/AppointmentsNoShow) on GitHub for a more detailed and  
+     technical explanation.
   
-  
-## This is a more extense non-technical description of Appointments No-show study.
+## Non-technical description of Appointments No-show study.
 
-  1. ### Gathering the datataset.
-  
+  1. Gathering the data.
+    No pain, no gain and, I would add, no data no project. I obtained all the data from Kaggle and thanks to altruistics
+    efforts. Every row in the file of 110k that I obtained was an appointment
