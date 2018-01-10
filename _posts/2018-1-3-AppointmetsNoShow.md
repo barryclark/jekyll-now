@@ -35,6 +35,6 @@ his/her family and in the future.
  engineering, I created new ones that end up being important (under Feature Engineering).
 
 
-![graphCapstoneAge](/images/graphCapstoneAge.jpg){:height="600px" width="800px"} ![graphCapstoneDayOfWeek](/images/graphCapstoneDayOfWeek.jpg){:height="600px" width="800px"}
+![graphCapstoneAge](/images/graphCapstoneAge.jpg){:height="600px" width="600px"} ![graphCapstoneDayOfWeek](/images/graphCapstoneDayOfWeek.jpg){:height="600px" width="600px"}
 ![graphCapstoneTimeUntilApp](/images/graphCapstoneTimeUntilApp.jpg){:height="600px" width="800px"} ![graphCapstoneWeather](/images/graphCapstoneWeather.jpg){:height="600px" width="800px"}
 
