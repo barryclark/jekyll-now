@@ -34,8 +34,8 @@ his/her family and in the future.
  and added weather information to the mix for the days of the appointments (Under Weather) and finally through feature
  engineering, I created new ones that end up being important (under Feature Engineering).
 
-![graphCapstoneAge](/images/graphCapstoneAge.jpg){:height="500px" width="500px"}
-![graphCapstoneDayOfWeek](/images/graphCapstoneDayOfWeek.jpg){:height="500px" width="500px"}
+![graphCapstoneAge](/images/graphCapstoneAge.jpg){:height="600px" width="700px"}
+![graphCapstoneDayOfWeek](/images/graphCapstoneDayOfWeek.jpg){:height="600px" width="700px"}
 
 
 
