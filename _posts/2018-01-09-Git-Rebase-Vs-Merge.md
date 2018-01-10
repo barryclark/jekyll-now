@@ -57,9 +57,9 @@ The merge conflicts are much easier to resolve in this fashion as well as you ar
 
 ### What is happening under the hood
 1. The common ancestor commit between the 2 branches is located.
-2. Git will then rewind the HEAD of the branch back to this common commit and will stash all the commits that you have made since this point.
+2. Git will then rewind the HEAD of the branch back to this common commit and will keep a track of all the commits that you have made since this point.
 3. New changes from the master branch are pulled over to the feature branch so that now the feature branch and master branch are identical.
-4. Git will then replay each commit that you made on the branch, one at a time on top of the new HEAD with all the latest changes.
+4. Git will then replay each patch that was stored in memory as a new commit, one at a time on top of the new HEAD with all the latest changes.
 5. When git applies these commits, one at a time, if there is a merge conflict when applying the commit, the process is paused and you are then asked how to fix the merge conflicts. You can then fix these as you would normally and as soon as you have fixed up all the conflicts, you tell git to continue with the rebase `git rebase --continue`
 6. This process keeps happening until all of your commits have been replayed on top of the master branch changes, almost as if you had just done all your work now on the latest changes.
 7. Finally your local branch and your remote branch are now completely out of sync and git will tell you there are changes from the remote to pull and changes to push. This is perfectly normal because what you have done is updated your branch's history compared to the remote. What you need to do now is to force push your changes to the remote which will overwrite the history and trust your local branch. `git push --force`.
