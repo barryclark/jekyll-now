@@ -48,6 +48,7 @@ his/her family and in the future.
 
 
  ## Conclusions
+ 
  Based on the score:
  A. I obtained an accuracy of 80.7% that is 0.9% improvement what means (considering every appointment would take an average
  of 30 min) a saving of 374 hours per month.
