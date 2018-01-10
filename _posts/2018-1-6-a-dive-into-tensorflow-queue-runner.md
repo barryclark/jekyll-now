@@ -1,6 +1,7 @@
 ---
 layout: post
 title: A dive into tensorflow queue runner
+author: ducta
 ---
 
 Trong một ứng dụng về học máy thì khâu chuẩn bị dữ liệu ban đầu là phần quan trọng nhất chiếm rất nhiều thời gian - từ bước thu nhập, chứa ở đâu, tiền xử lý... thậm chí là cách thức đọc nó vào trong một bước của quá trình huấn luyện một mô hình. Bài viết này nhằm mục đích đi sâu vào cách thức hoạt động của queue runner và tổng quát nó trong tensorflow (một framework phổ biến về deep learning) nhằm mục đích giải quyết vấn đề thực tế dữ liệu thu nhập được có thể chứa nhiều nơi nhưng vẫn có một giao tiếp chung trong quá trình đọc vào quá trình huấn luyện. Ví dụ dữ liệu của bạn chứa ở cả local, database, hoặc Amazon S3 service... bằng cách nào bạn có thể có một hàm đọc chung cho các nơi chứa dữ liệu này trong tensorflow. Ý tưởng ban đầu là vấn đề giải quyết bằng cơ chế feed_dict, bạn viết các reader khác nhau cho mỗi data source khác nhau đọc dữ liệu từ mỗi cái và đưa vào feed_dict. Tuy nhiên, cơ chế feed_dict là flexibility nhưng không tối ưu trong việc scale theo [Tensorflow performance guide](https://www.tensorflow.org/performance/performance_guide#input_pipeline_optimization) (chú ý trong tensorflow version >= 1.2, [Dataset API](https://www.tensorflow.org/programmers_guide/datasets) được recommend sử dụng để viết một input pipeline thay cho queue runner). 
