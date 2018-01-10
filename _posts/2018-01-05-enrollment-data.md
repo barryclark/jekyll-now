@@ -8,7 +8,7 @@ categories: Education Data
 
 #### Students are leaving public schools because they have better options provided by School Choice.
 
-I hope to eventually explore the two clickbait claims above. tl;dr You can skip to the [conclusions section][1] where I address them. The more general purpose of this post is to outline my process to explore this data starting from the raw form on the web. 
+I hope to eventually explore the two clickbait claims above. tl;dr You can skip to the [conclusions section](#conc) where I address them. The more general purpose of this post is to outline my process to explore this data starting from the raw form on the web. 
   
 I will follow a process similar to [EliteDataScience](https://elitedatascience.com/birds-eye-view):
   - Exploratory Analysis
@@ -35,7 +35,7 @@ Data files are saved on a yearly basis.
 # Model
 
 
-# [1]: Conclusions
+# Conclusions<a name="conc"></a>
 
 There are many claims about lowered enrollment in public schools. I taught at Franklin Sr. High School and experienced the following drop in enrollment:
 
