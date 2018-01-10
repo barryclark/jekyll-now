@@ -57,6 +57,7 @@ his/her family and in the future.
 
 
 ![graphCapstoneFeatureImportance](/images/graphCapstoneFeatureImportance.jpg){:height="400px" width="700px"}
+![graphCapstoneConfusionMatrix](/images/graphCapstoneConfusionMatrix.jpg){:height="400px" width="700px"}
 
 
   As any other project in life, this is not totally done. I want to tweak the model, add more data and try a Bayes
