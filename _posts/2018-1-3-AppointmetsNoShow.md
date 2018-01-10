@@ -6,7 +6,6 @@ Why so many people do not show up for their medical approintments? Is it normal 
 was an interesting question that deserved, at least, my attention. I had to main reasons: the first one was the economic 
 impact it has in the underemployment of public resources and, most importantly, the social cost that has in the patient, in
 his/her family and in the future.
-
 ![68445279 doctors wallpapers](/images/68445279-doctors-wallpapers.jpg){:height="300px" width="600px"}
 
 ## Brief description of Appointments No-Show.
