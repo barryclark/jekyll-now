@@ -1,10 +1,5 @@
----
-layout: post
-title: "Visualize Parts of Speech 2"
-date: 2017-09-06
-tags: [python, nlp]
----
-This notebook takes off from [Visualize Parts of Speech 1](https://jss367.github.io/Visualize-Parts-of-Speech-1/), which ended with a visualization from a single text. In this notebook we look at how to visually compare the part of speech usage in many texts.<!--more-->
+
+This notebook takes off from [Visualize Parts of Speech 1](https://jss367.github.io/Visualize-Parts-of-Speech-1/), which ended with a visualization from a single text. In this notebook we look at how to visually compare the part of speech usage in many texts.
 
 
 ```python

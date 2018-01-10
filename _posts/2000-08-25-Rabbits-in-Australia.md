@@ -1,14 +1,7 @@
----
-layout: post
-title: "Rabbits in Australia"
-description: "A mathematical look at rabbbit population growth in Australia"
-tags: [python]
-mathjax: true
-modified: 2013-06-30
----
 
-The story of rabbits in Australia, and the resulting eradication efforts, provides a cautionary tale about viruses and immunity.<!--more--> Captive rabbits were first introduced into Australia in 1788 by the first European settlement - the penal colony at Botany Bay. The early settlers brought five rabbits with them to Australia. The rabbits were breed and kept for food but never released into the wild. More rabbits subsequently arrived as settlements dotted the Australian landscape. They spread around Tasmania (then known as Van Diemen’s Land) but they were mostly controlled in the mainland and didn’t spread into the wild.
+The story of rabbits in Australia, and the resulting eradication efforts, provides a cautionary tale about viruses and immunity. Captive rabbits were first introduced into Australia in 1788 by the first European settlement - the penal colony at Botany Bay. The early settlers brought five rabbits with them to Australia. The rabbits were breed and kept for food but never released into the wild. More rabbits subsequently arrived as settlements dotted the Australian landscape. They spread around Tasmania (then known as Van Diemen’s Land) but they were mostly controlled in the mainland and didn’t spread into the wild.
 The settlers were able to keep the rabbit population in captivity and under control for over half a century, until one thing happened - they got bored. They wanted to hunt rabbits like they did in England and so, in 1859, they released 24 rabbits into the wild. From there the population grew, like, well, rabbits.
+
 
 Rabbits have a gestation period of about four weeks, and each new litter of rabbits contains four baby bunnies. So if it takes two rabbits four weeks to make four baby rabbits, that’s a growth rate of about .5 rabbits per week for each rabbit. However, rabbits take about 17 weeks to reach sexual maturity and in the wild live only around one year, so they're only breeding about a third of their lives. Still, that’s an incredible growth rate and with the vastness of the Australian open landscape in front of them, the population grew. 
 
@@ -43,17 +36,14 @@ $$P(t) = P_oe^{rt}$$
 However, this doesn't allow us enough precision. For example, rabbits don't reach sexual maturity until 17 weeks - how do we factor that in? We could find the average amount of their lifespan that rabbits spend as sexually mature and factor that into the growth rate, but we'll need more precision that
 
 One important component that is missing is the carrying capacity - how many rabbits can there be until the land cannot hold them all? We'll use the following equation to factor that in:
-sexually mature population at time 0:
-
+sexually mature population at time 0
 $$P_t =P_m * r_{grow} * (1 - P_{tot}/K)$$
 
-where
-
-* $$P_t$$ = population this week
-* $$r_{grow}$$ = growth rate
-* $$P_m$$ = sexually mature population from previous week
-* $$P_{tot}$$ = total population from the previous week
-* $$K$$ = carrying capacity
+* $P_t$ - population this week
+* $r_{grow}$ - growth rate
+* $P_m$ - sexually mature population from previous week
+* $P_{tot}$ - total population from the previous week
+* $K$ - carrying capacity
 
 
 ```python
@@ -324,3 +314,8 @@ plt.show()
 
 
 And that's where we are today.
+
+
+```python
+
+```

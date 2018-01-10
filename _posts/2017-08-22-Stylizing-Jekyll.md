@@ -1,10 +1,5 @@
----
-layout: post
-title: "Stylizing Jekyll"
-date: 2017-08-22
-tags: [jekyll, markdown, cheatsheets]
----
-This is a quite cheatsheet for stylizing Jekyll blog posts.<!--more--> Jekyll uses Markdown for formating, so all the Markdown commands work in Jekyll.
+
+Jekyll uses Markdown for formating, so all the Markdown commands work in Jekyll.
 
 # Headers
 

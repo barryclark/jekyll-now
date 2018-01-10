@@ -1,13 +1,13 @@
 ---
-layout: post
-title: "Getting Text from Project Gutenberg"
+title: "Project Gutenberg"
 date: 2016-10-20 08:26:28 -0400
-tags: [nltk, nlp]
+categories: jekyll update
 ---
+
 
 Project Gutenberg is an effort to make digital copies of books available to everyone. They have books that are now in the public domain, which means that the copyright has expired from them. Because of this, their collection is mainly comprised of older texts, and they have over 50,000 books in total.
 
-This notebook demonstrates how to extract text from Project Gutenberg. This is particularly useful for text analysis such as Natural Language Processing (NLP).<!--more-->
+This notebook demonstrates how to extract text from Project Gutenberg. This is particularly useful for text analysis such as Natural Language Processing (NLP).
 
 
 ```python

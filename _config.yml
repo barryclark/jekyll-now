@@ -1,90 +1,77 @@
-title:            Analytically Speaking
-description:      An exploration of natural language processing and more
-disqus_shortname: 
-reading_time:     true
-words_per_minute: 160
-# Your site's domain goes here (eg: https://mmistakes.github.io, http://yourdomain.com, etc)
-# When testing locally leave blank or use http://localhost:4000
-url:
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
-# Owner/author information
-owner:
-  name:           Julius Simonelli
-  avatar:         avatar.jpg
-  bio:            "I am a data scientist with an interest in natural language processing"
-  email:          julius.s.simonelli@gmail.com
-  # Social networking links used in footer. Update and remove as you like.
-  twitter:        
-  facebook:       
-  github: jss367
-  stackexchange:  
-  linkedin:       
-  instagram:      
-  flickr:         
-  tumblr:         
-  # google plus id, include the '+', eg +mmistakes
-  google_plus:
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: An exploration of natural language processing and more
+email: julius.s.simonelli@gmail.com
+description: >- # this means to ignore newlines until "baseurl:"
+  A tutorial-style data science blog with a focus on natural language processing
+github: www.github.com/jss367 #[metadata]
+baseurl: #/mm-remote-theme-test
+url: https://jss367.github.io/
+twitter_username: 
+github_username: jss367
+minimal_mistakes_skin: dirt
 
-# Background image to be tiled on all pages
-background: 
+# Build settings
+markdown: kramdown
+remote_theme: mmistakes/minimal-mistakes
+# Outputting
+permalink: /:categories/:title/
+paginate: 8 # amount of posts to show
+paginate_path: /page:num/
+timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
-# Analytics and webmaster tools stuff goes here
-google_analytics: UA-100441463-1
-google_verify:      
-# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
-bing_verify:         
 
-# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    America/New_York
-future:      false  # publish future dated posts --  true, false (default) 
-highlighter: rouge
-markdown:    kramdown
-gems:
-  - jekyll-sitemap
+# Plugins (previously gems:)
+plugins:
   - jekyll-paginate
+  - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
-sass:
-  sass_dir: _sass
-  style: compressed
+  - jemoji
+  - jekyll-remote-theme
 
-# https://github.com/mojombo/jekyll/wiki/Permalinks
-permalink:   /:title/
+author:
+  name   : "Julius Simonelli"
+  avatar : "/assets/images/bio-photo.jpg"
+  bio    : "Data Scientist"
+  email  : julius.s.simonelli@gmail.com
+  #uri    : "https://jss367.github.io/"
 
-# Amount of post to show on home page
-paginate: 7
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#  - vendor
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
 
-kramdown:
-  input: GFM
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  enable_coderay: false
-
-include: 
-  - .htaccess
-exclude: 
-  - "*.less"
-  - "*.sublime-project"
-  - "*.sublime-workspace"
-  - .asset-cache
-  - .bundle
-  - .jekyll-assets-cache
-  - .sass-cache
-  - CHANGELOG
-  - Capfile
-  - Gemfile
-  - Gruntfile.js
-  - LICENSE
-  - README
-  - Rakefile
-  - config
-  - gulpfile.js
-  - lib
-  - log
-  - node_modules
-  - package.json
-  - spec
-  - tmp
-  - vendor
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
