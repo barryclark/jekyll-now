@@ -11,7 +11,6 @@
 
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/slick/slick.css"/>
-    // Add the new slick-theme.css if you want the default styling
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/slick/slick-theme.css"/>
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
 
@@ -98,8 +97,10 @@
         $('.praise-teaser').slick({
           slidesToShow: 1,
           slidesToScroll: 1,
+          arrows: true,
+          dots: true,
           autoplay: true,
-          autoplaySpeed: 10000,
+          autoplaySpeed: 8000,
         });
       });
     </script>
