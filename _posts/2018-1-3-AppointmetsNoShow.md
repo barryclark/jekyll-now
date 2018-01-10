@@ -18,5 +18,10 @@ his/her family and in the future.
 
   1. Gathering the data.
     No pain, no gain and, I would add, no data no project. I obtained all the data from Kaggle and thanks to altruistics
-    efforts. Every row in the file of 110k that I obtained was an appointment
-  
+    efforts. Every row in the file of 110k of them that I obtained was an appointment and for each appointment I had the 
+    following information.
+![AlexChicoteCapstone](/images/6lexChicoteCapstone.jpg){:height="300px" width="600px"}
+
+
+
+
