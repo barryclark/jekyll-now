@@ -28,11 +28,7 @@ his/her family and in the future.
 
 
  2. ## Getting to know our Data.
- No pain, no gain and, I would add, no data no project. I obtained all the data from Kaggle and thanks to altruistics
- efforts. Every row in the file of 110k of them that I obtained was an appointment and for each appointment I had the 
- information listed under Appointments. Then, happily thinking that the weather would be a key factor, I scraped data 
- and added weather information to the mix for the days of the appointments (Under Weather) and finally through feature
- engineering, I created new ones that end up being important (under Feature Engineering).
+ Once all the feature engineering was done, it was time to get to know the data and its features. It is important to determine
 
 ![graphCapstoneAge](/images/graphCapstoneAge.jpg){:height="600px" width="700px"}
 ![graphCapstoneDayOfWeek](/images/graphCapstoneDayOfWeek.jpg){:height="600px" width="700px"}
