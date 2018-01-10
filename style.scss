@@ -19,8 +19,11 @@ html {
 
 body {
 	background: $white;
-  font: 16px/1.4 $helvetica;
+  font: 18px/1.4 $helvetica;
   color: $darkGray;
+  @include mobile {
+    font-size: 18px;
+  }
 }
 
 .container {
@@ -151,6 +154,7 @@ img {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
 }
 
 // to left-justify elements
@@ -193,10 +197,42 @@ img {
   }
 }
 
+.praise-teaser {
+  max-width: 1000px;
+  margin: 0 auto 0 auto;
+  @include mobile {
+    max-width: none;
+    margin: 0px 30px 0px 30px;
+  }
+  .slick-prev:before, .slick-next:before {
+    color: black;
+  }
+}
+
+#as-seen-in {
+  background: linear-gradient($white, $lightGray);
+}
+
+#as-seen-in-table {
+  margin: 0 auto 0 auto;
+  caption {
+    padding: 20px;
+  }
+  tr td {
+    text-align: center;
+    vertical-align: middle;
+    padding: 25px 45px 25px 45px;
+    @include mobile {
+      padding: 0px 8px;
+    }
+  }
+}
+
 .svg-icon {
   max-height: 20px;
   max-width: 20px;
 }
+
 /*******************************************/
 /* PHOTOVISION SPECIFIC MODS GO ABOVE HERE */
 /*******************************************/
@@ -336,9 +372,6 @@ nav {
 }
 
 .wrapper-footer {
-  margin-top: 50px;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
   background-color: $lightGray;
 }
 
