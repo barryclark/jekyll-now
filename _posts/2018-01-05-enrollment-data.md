@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Public Enrollment Data
+title: California Public Enrollment Data
 categories: Education Data
 ---
 
@@ -11,28 +11,28 @@ categories: Education Data
 I hope to eventually explore the two clickbait claims above. tl;dr You can skip to the [conclusions section](#conc) where I address them. The more general purpose of this post is to outline my process to explore this data starting from the raw form on the web. 
   
 I will follow a process similar to [EliteDataScience](https://elitedatascience.com/birds-eye-view):
-  - Exploratory Analysis
-  - Data Cleaning
-  - Feature Engineering
-  - Algorithm Selection
-  - Model Training
+  - [Exploratory Analysis](#explore)
+  - [Data Cleaning](#clean)
+  - [Feature Engineering](#feature)
+  - [Algorithm Selection](#algo)
+  - [Model Training](#model)
 
-# Exploration
+# Exploration<a name="explore"></a>
 CA Student & School Data Files can be found on [California's DoE website](https://www.cde.ca.gov/ds/sd/sd/). However, they are tab delimited .txt files. So we must first convert them to lists
 
 ## Enrollment
 Data files are saved on a yearly basis.
 
-# Cleaning
+# Cleaning<a name="clean"></a>
 
 
-# Features
+# Features<a name="feature"></a>
 
 
-# Algorithm
+# Algorithm<a name="algo"></a>
 
 
-# Model
+# Model<a name="model"></a>
 
 
 # Conclusions<a name="conc"></a>
