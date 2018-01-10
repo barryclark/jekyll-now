@@ -4,13 +4,35 @@ title: Public Enrollment Data
 categories: Education Data
 ---
 
-Charter schools are stealing our students and destroying public education.
+### Charter schools are stealing our students and destroying public education.
 
-Students are leaving lower performing schools because they have better options provided by School Choice.
+### Students are leaving lower performing schools because they have better options provided by School Choice.
 
-I hope to eventually explore the two clickbait claims above. tl;dr You can skip to the <conclusions section> where I address them. The more general purpose of this post is to outline my process to explore this data starting from the raw form on the web. I will follow a process similar to EliteDataScience:
+I hope to eventually explore the two clickbait claims above. tl;dr You can skip to the <conclusions section> where I address them. The more general purpose of this post is to outline my process to explore this data starting from the raw form on the web. 
+  
+I will follow a process similar to EliteDataScience:
+  - Exploratory Analysis
+  - Data Cleaning
+  - Feature Engineering
+  - Algorithm Selection
+  - Model Training
 
-<HEADER> Conclusions </Header>
+# Exploration
+
+
+# Cleaning
+
+
+# Features
+
+
+# Algorithm
+
+
+# Model
+
+
+# Conclusions
 
 There are many claims about lowered enrollment in public schools. I taught at Franklin Sr. High School and experienced the following drop in enrollment:
 
