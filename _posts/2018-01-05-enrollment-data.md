@@ -10,7 +10,7 @@ categories: Education Data
 
 I hope to eventually explore the two clickbait claims above. tl;dr You can skip to the <conclusions section> where I address them. The more general purpose of this post is to outline my process to explore this data starting from the raw form on the web. 
   
-I will follow a process similar to EliteDataScience:
+I will follow a process similar to [EliteDataScience](https://elitedatascience.com/birds-eye-view):
   - Exploratory Analysis
   - Data Cleaning
   - Feature Engineering
@@ -18,7 +18,10 @@ I will follow a process similar to EliteDataScience:
   - Model Training
 
 # Exploration
+CA Student & School Data Files can be found on [California's DoE website](https://www.cde.ca.gov/ds/sd/sd/). However, they are tab delimited .txt files. So we must first convert them to lists
 
+## Enrollment
+Data files are saved on a yearly basis.
 
 # Cleaning
 
