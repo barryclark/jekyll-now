@@ -16,7 +16,7 @@ his/her family and in the future.
   
 ## Non-technical description of Appointments No-show study.
 
-  1. Gathering the data.
+  1. # Gathering the data.
     No pain, no gain and, I would add, no data no project. I obtained all the data from Kaggle and thanks to altruistics
     efforts. Every row in the file of 110k of them that I obtained was an appointment and for each appointment I had the 
     following information.
