@@ -245,7 +245,7 @@ PyTorch sẽ lo việc tính toán gradient cho bạn (bằng backprop), việc 
 
 Bạn sẽ cần tự giải thích hàm `calc_loss` tại sao nó làm việc cho trường hợp sử dụng baseline coi như một bài tập nhỏ.
 
-Có rất nhiều ứng dụng sử dụng REINFORCE, không chỉ trong ngành game mà còn trong các ngành khác như NLP, marketing, computer vision... REINFORCE cũng là nền tảng cho nhiều thuật toán Evoluation Strategy (ES), một thông tin khá thú vị gần đây một nhóm sinh viên MIT ở [labsix](http://www.labsix.org) thực hiện adversarial attack vào Google Cloud Vision dựa trên thuật toán Natural Evoluation Strategy (NES). Hiện tại, trong sản phẩm [OtoNhanh.vn](https://otonhanh.vn) chúng tôi đã và đang ứng dụng REINFORCE vào bài toán remarketing, cũng như một số vấn đề về NLP (generative model, semantic parsing, chatbot, ...). 
+Có rất nhiều ứng dụng sử dụng REINFORCE, không chỉ trong ngành game mà còn trong các ngành khác như NLP, marketing, computer vision... REINFORCE cũng là nền tảng cho nhiều thuật toán Evoluation Strategy (ES), một thông tin khá thú vị gần đây một nhóm sinh viên MIT ở [labsix](http://www.labsix.org) thực hiện adversarial attack vào Google Cloud Vision dựa trên thuật toán Natural Evoluation Strategy (NES). Và hiện tại, trong sản phẩm [OtoNhanh.vn](https://otonhanh.vn) chúng tôi đã và đang ứng dụng REINFORCE vào bài toán remarketing, cũng như một số vấn đề về NLP (generative model, semantic parsing, chatbot, ...). 
   
 ### Tài liệu tham khảo:
 - <i>Williams 1992</i>: Simple Statistical Gradient-Following Algorithms for Connectionist Reinforcement Learning.
