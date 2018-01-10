@@ -32,8 +32,8 @@ his/her family and in the future.
  how this variables are affected by the target. I just show a coup,e of graphs where I measure age and tthe day of the week to
  the show/no-show. At the same time, I draw a line representing the baseline for a better interpretation. 
 
-![graphCapstoneAge](/images/graphCapstoneAge.jpg){:height="400px" width="700px"}
-![graphCapstoneDayOfWeek](/images/graphCapstoneDayOfWeek.jpg){:height="500px" width="700px"}
+![graphCapstoneAge](/images/graphCapstoneAge.jpg){:height="500px" width="800px"}
+![graphCapstoneDayOfWeek](/images/graphCapstoneDayOfWeek.jpg){:height="500px" width="800px"}
 
  3. ## What about the model?
  In order to select the model, I preselect the features and ordered them based on its correation to our taget. With the       
@@ -41,8 +41,8 @@ his/her family and in the future.
  As usual, I compared the score to the baseline.
  The reasons to do it this way was to select the model while also selecting features.
 
-![graphCapstoneAge](/images/graphCapstoneAge.jpg){:height="400px" width="700px"}
-![graphCapstoneDayOfWeek](/images/graphCapstoneDayOfWeek.jpg){:height="500px" width="700px"}
+![graphCapstoneCaompringModels](/images/graphCapstoneCaompringModels.jpg){:height="400px" width="700px"}
+
 
   The winner was Gradient Boosting Classifier.
 
