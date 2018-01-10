@@ -4,8 +4,7 @@ title: About
 permalink: /about/
 ---
 
-I am a self-taught, highly motivated full stack .Net developer and DEVOPS engineer with over 20 years experience, 11 of
-which are in a professional capacity.
+My name is Jon, I live near Brighton and I am a self-taught, highly motivated full stack .Net developer and DEVOPS engineer with over 20 years experience, 11 of which are in a professional capacity.
 
 I am extremely passionate about technology, spending my own time learning and researching the latest technologies.
 
