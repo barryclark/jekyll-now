@@ -28,11 +28,20 @@ his/her family and in the future.
 
 
  2. ## Getting to know our Data.
- Once all the feature engineering was done, it was time to get to know the data and its features. It is important to determine
+ Once all the feature engineering was done, it was time to get to know the data and its features. The way to do it is to see 
+ how this variables are affected by the target. I just show a coup,e of graphs where I measure age and tthe day of the week to
+ the show/no-show. At the same time, I draw a line representing the baseline for a better interpretation. 
 
-![graphCapstoneAge](/images/graphCapstoneAge.jpg){:height="600px" width="700px"}
-![graphCapstoneDayOfWeek](/images/graphCapstoneDayOfWeek.jpg){:height="600px" width="700px"}
+![graphCapstoneAge](/images/graphCapstoneAge.jpg){:height="400px" width="700px"}
+![graphCapstoneDayOfWeek](/images/graphCapstoneDayOfWeek.jpg){:height="500px" width="700px"}
 
+ 3. ## What about the model?
+ Once all the feature engineering was done, it was time to get to know the data and its features. The way to do it is to see 
+ how this variables are affected by the target. I just show a coup,e of graphs where I measure age and tthe day of the week to
+ the show/no-show. At the same time, I draw a line representing the baseline for a better interpretation. 
+
+![graphCapstoneAge](/images/graphCapstoneAge.jpg){:height="400px" width="700px"}
+![graphCapstoneDayOfWeek](/images/graphCapstoneDayOfWeek.jpg){:height="500px" width="700px"}
 
 
 
