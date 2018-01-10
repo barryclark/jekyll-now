@@ -47,3 +47,17 @@ his/her family and in the future.
   The winner was Gradient Boosting Classifier.
 
 
+ 4. ## Conclusions?
+ Based on the score:
+ A. I obtained an accuracy of 80.7% that is 0.9% improvement what means (considering every appointment would take an average
+ of 30 min) a saving of 374 hours per month.
+ B. I discovered which the most important features are. I have to say that they did not surprising and I wold call it the  
+ vistory of the common sense: Time betwwen schedule an appointment, age and appointments missed previously. The rest of the 
+ fetuares happened to be of way least importance. 
+
+
+![graphCapstoneFeatureImportance](/images/graphCapstoneFeatureImportance.jpg){:height="400px" width="700px"}
+
+
+  As any other project in life, this is not totally done. I want to tweak the model, add more data and try a Bayes
+  approach. Thank you for your attention and interest.
