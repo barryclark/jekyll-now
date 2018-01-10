@@ -16,7 +16,7 @@ his/her family and in the future.
   
 ## Non-technical description of Appointments No-show study.
 
-  1. ## Gathering the data.
+  ## Gathering the data.
  No pain, no gain and, I would add, no data no project. I obtained all the data from Kaggle and thanks to altruistics
  efforts. Every row in the file of 110k of them that I obtained was an appointment and for each appointment I had the 
  information listed under Appointments. Then, happily thinking that the weather would be a key factor, I scraped data 
@@ -27,7 +27,7 @@ his/her family and in the future.
 ![AlexChicoteCapstone](/images/AlexChicoteCapstone.jpg){:height="550px" width="750px"}
 
 
- 2. ## Getting to know our Data.
+ ## Getting to know our Data.
  Once all the feature engineering was done, it was time to get to know the data and its features. The way to do it is to see 
  how this variables are affected by the target. I just show a coup,e of graphs where I measure age and tthe day of the week to
  the show/no-show. At the same time, I draw a line representing the baseline for a better interpretation. 
@@ -35,7 +35,7 @@ his/her family and in the future.
 ![graphCapstoneAge](/images/graphCapstoneAge.jpg){:height="500px" width="800px"}
 ![graphCapstoneDayOfWeek](/images/graphCapstoneDayOfWeek.jpg){:height="500px" width="800px"}
 
- 3. ## What about the model?
+ ## What about the model?
  In order to select the model, I preselect the features and ordered them based on its correation to our taget. With the       
  sorted, I ran almost all models available while loopong over the features adding 2 everytime and scoring its accuracy.
  As usual, I compared the score to the baseline.
@@ -47,7 +47,7 @@ his/her family and in the future.
   The winner was Gradient Boosting Classifier.
 
 
- 4. ## Conclusions?
+ ## Conclusions
  Based on the score:
  A. I obtained an accuracy of 80.7% that is 0.9% improvement what means (considering every appointment would take an average
  of 30 min) a saving of 374 hours per month.
