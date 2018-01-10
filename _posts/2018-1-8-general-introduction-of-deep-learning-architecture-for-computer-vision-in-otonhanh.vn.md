@@ -20,7 +20,11 @@ In this context, Yann LeCunn developped a biologically-inspired neural network c
 types of layer: Convolutional Layer, Pooling Layer and Fully Connected Layer.  
 > A ConvNet is made up of Layers. Every layer has a simple API: It transforms an input 3D volume to an output 3D Volume
 with some differentiable function that may or may not have parameters.  
->
+
+<p align="center">
+ <img src="/images/Introduction_CNN/cnn.jpeg" alt="" align="middle">
+</p>  
+*In each layer of ConvNet, it transform a 3-D input block to 3-D output block* [Source](http://cs231n.github.io/assets/cnn/cnn.jpeg)
 
 ##### Convolutional Layer  
 It plays the roles of feature detector in ConvNet. In more detailed, it computes the 
@@ -145,10 +149,11 @@ a regularization technique called *Label Smoothing*, but it is out of scope of t
 
 
 
-##### 3. ResNet
+### 4. ResNet
 Unlike the last architectures when they simply increase the depth of the network to 
-enhance the performance, this time, _Kaiming He and al_ have done something new to improve the classification. After 
-VGGNet, Deep Learning community has the impression that a deeper network will definitely bring us to a better 
+enhance the performance, this time, _Kaiming He and al_ have done something ground-breaking to improve the 
+classification. It really make a way for us to train hyper deep network with compelling performance. After VGGNet, Deep 
+Learning community has the impression that a deeper network will definitely bring us to a better 
 performance. Nevertheless, Kaiming He discovered that it is only true to some extent, after that the error rate may be 
 up. This fact is against our intuition: A deeper architecture must have a more representational power or at least have 
 a same performance with the shallow one in case the added layers are identity mappings. Based on that observation, he 
@@ -161,7 +166,7 @@ representation $$\hat{f}$$ of the underlying function $$f(x)$$.
 To be more precise, in the original paper, the authors indicated that it exists the 
 degradation in performance when we deepen the network. Overfitting is not the cause since the training error is also 
 higher in case of deeper network.   
-![Error rate between the 20-layer network and 56-layer network](https://wiki.tum.de/download/attachments/22578294/Figure%201.bmp?version=1&modificationDate=1485208088253&api=v2)  
+![](https://wiki.tum.de/download/attachments/22578294/Figure%201.bmp?version=1&modificationDate=1485208088253&api=v2)  
 *Error rate between the 20-layer network and 56-layer network*  
 
 Kaiming He had an impression that the neural networks have difficulties in mapping 
@@ -177,6 +182,26 @@ mapping, than to learn the function as a new one
 
 Based on our experience, ResNet is still one of the most powerful Deep Learning 
 architecture in term of error rate and efficiency computation.  
+
+
+### 5. ResNeXt  
+As ResNet performance in 2015 ILSVRC blewed people's mind, its architecture is getting studied heavily 
+and some refinements have been made in the architecture. ResNeXt is one of them.  
+Its core element is called ResNext building block:  
+![](/home/minhoangbui/chappiebotai.github.io/images/Introduction_CNN/1_7JzJ1RGh1Y4VoG1M4dseTw.png)  
+As you can see, ResNext building block is a fusion of residual block and Inception block. ResNeXt resembles Inception 
+that input will go though several convolution path, the outputs of these path are merged by the addition, unlike the 
+concatenation in Inception. Before leaving the block, it will be added with the input like the ResNet in order to 
+produce the overall output of the block. All the path in the ResNeXt block share the same *topology*, which help to 
+simplify the hyper-parameters tuning.  
+>The transformations to be aggregated are all of the same topology. This design allows us to extend to any large number 
+of transformations without specialized design.  
+>  
+The authors argue that this architecture is more easily tuned than its predecessors since it has a simple paradigm and 
+only one hyper-parameter to be adjusted. They also state that modifying the cardinality is more effective than modifying 
+width/depth of the network.  
+More details about the implementation can be found in the paper [Aggregated Residual Transformations for Deep Neural 
+Networks](https://arxiv.org/pdf/1611.05431.pdf)  
 
 ##### 4. DenseNet  
 DenseNet is the latest Deep Learning architecture published by _Gao Huang and al._. 
