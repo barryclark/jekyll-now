@@ -3,11 +3,18 @@ layout: default
 title: Create Account
 ---
 
-<h1>Contact Information</h1>
+<h2>Contact Information</h2>
 
 <form action="https://formspree.io/info@photovisionprints.com"
-      method="POST">
-    <input type="text" name="name">
-    <input type="email" name="_replyto">
-    <input type="submit" value="Send">
+      method="POST" name="contact_form">
+  <span class="required_notification">* Denotes Required Field</span>
+  <span>Name*</span>
+  <label for="first_name">First Name</label>
+  <input type="text" name="first_name">
+  <label for="last_name">Last Name</label>
+  <input type="text" name="last_name">
+  <label for="email">Email*</label>
+  <input type="email" name="email">
+  <span class="form_hint">Proper format "name@something.com"</span>
+  <input type="submit" value="Create Account">
 </form>
