@@ -10,9 +10,9 @@
     <![endif]-->
 
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
-    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/slick/slick.css"/>
     // Add the new slick-theme.css if you want the default styling
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/slick/slick-theme.css"/>
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
 
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
@@ -92,7 +92,7 @@
     <!-- Maybe at a later date we'll add Analytics? {% include analytics.html %} -->
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/slick/slick.min.js"></script>
     <script type="text/javascript">
       $(document).ready(function(){
         $('.praise-teaser').slick({
