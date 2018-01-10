@@ -21,7 +21,7 @@ his/her family and in the future.
     efforts. Every row in the file of 110k of them that I obtained was an appointment and for each appointment I had the 
     following information.
 
-![AlexChicoteCapstone](/images/AlexChicoteCapstone.jpg){:height="300px" width="600px"}
+![AlexChicoteCapstone](/images/AlexChicoteCapstone.jpg){:height="400px" width="600px"}
 
 
 
