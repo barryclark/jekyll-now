@@ -254,4 +254,4 @@ Có rất nhiều ứng dụng sử dụng REINFORCE, không chỉ trong ngành 
 - <i>R.Sutton 2016</i>: Reinforcement Learning -  A Introduction 
 - <i>Ronen Tamari 2016</i>: REINFORCE Framework for Stochastic Policy Optimization and its use in Deep Learning
 - [http://www.labsix.org](http://www.labsix.org/partial-information-adversarial-examples/): Partial Information Attacks on Real-world AI
-- <i>V.Zhong 2017</i>:Seq2SQL: Generating Structured Queries from Natural Language using Reinforcement Learning
+- <i>V.Zhong 2017</i>: Seq2SQL: Generating Structured Queries from Natural Language using Reinforcement Learning
