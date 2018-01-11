@@ -3,11 +3,58 @@ layout: default
 title: Create Account
 ---
 
-<h1>Contact Information</h1>
-
 <form action="https://formspree.io/info@photovisionprints.com"
-      method="POST">
-    <input type="text" name="name">
-    <input type="email" name="_replyto">
-    <input type="submit" value="Send">
+      method="POST" name="contact_form" class="contact_form">
+  <h1>Create Account</h1>
+  <ul>
+    <li>
+      <h2>Contact Information</h2>
+      <span class="required_notification">* Denotes Required Field</span>
+    </li>
+    <li>
+      <strong>Name</strong><span class="required_notification">*</span>
+    </li>
+    <li>
+      <div class="half">
+        <input type="text" name="first_name"/>
+        <label for="first_name">First Name</label>
+      </div>
+      <div class="half">
+        <input type="text" name="last_name"/>
+        <label for="last_name">Last Name</label>
+      </div>
+    </li>
+    <li>
+      <label for="email">Email<span class="required_notification">*</span></label>
+      <input type="email" name="email"/>
+    </li>
+    <li>
+      <label for="phone">Phone</label>
+      <input type="text" name="phone"/>
+    </li>
+    <li>
+      <label for="address1">Address</label>
+      <input type="text" name="address1"/>
+    </li>
+    <li>
+      <div class="half">
+        <input type="text" name="city"/>
+        <label for="city">City</label>
+      </div>
+      <div class="quarter">
+        <input type="text" name="state"/>
+        <label for="state">State/Province</label>
+      </div>
+      <div class="quarter">
+        <input type="text" name="zip"/>
+        <label for="zip">Zip/Postal</label>
+      </div>
+    </li>
+    <li>
+      {% include countries-list.html %}
+      <label for="country">Country</label>
+    <li>
+      <button class="submit center" type="submit">Create Account</button>
+    </li>
+  </ul>
 </form>

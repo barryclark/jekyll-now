@@ -27,7 +27,7 @@ body {
 }
 
 .container {
-  margin: 0 auto;
+  // margin: 0 auto;
   // max-width: 740px;
   // padding: 0 10px;
   width: 100%;
@@ -231,6 +231,71 @@ img {
 .svg-icon {
   max-height: 20px;
   max-width: 20px;
+}
+
+.contact_form {
+  max-width: 700px;
+  margin-left: 250px;
+  h2 {
+    margin: 0;
+    display: inline;
+  }
+  label {
+    display: block;
+    font-size: 18px;
+  }
+  ul {
+    width: 100%;
+    list-style-type: none;
+    list-style-position: outside;
+    margin: 0px;
+    padding: 0px;
+    li {
+      width: 100%;
+      font-size: 18px;
+      padding: 12px 0px;
+      position: relative;
+      div.half {
+        display: inline-block;
+        width: 49.4%;
+      }
+      div.quarter {
+        display: inline-block;
+        width: 24.5%;
+      }
+    }
+  }
+  input, select {
+    height: 42px;    
+    font-size: 18px;
+    width: 100%;
+    padding: 5px 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  button.submit {
+    width: 180px;
+    height: 50px;
+    margin-top: 25px;
+    border-radius: 5px;
+    background-color: white;
+    border: 1px solid black;
+    font-size: 19px;
+    :hover {
+      background-color: $lightGray;
+    }
+    :active {
+      background-color: gray;
+    }
+  }
+}
+
+.required_notification {
+    color: #d45252;
+    // margin: 5px 0 0 0;
+    // display: inline-block;
+    // float: right;
 }
 
 /*******************************************/
