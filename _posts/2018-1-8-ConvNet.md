@@ -9,11 +9,11 @@ Processing to deal with the requests of the user in our site or of Computer Visi
 blog, we will focus on the network architecture that we consider to use in our Computer Vision application. There will 
 be 4 parts in this series:
 - Part 1: ConvNet and its principal elements
-- Part 2: ConvNet architectures (1)
-- Part 3: ConvNet architectures (2) 
-- Part 4: Challenges and future vision
-All the source codes in this blog 
-base on TensorFlow in Python2.7
+- Part 2: [ConvNet architectures (1)](/architecture-1)  
+- Part 3: [ConvNet architectures (2)](/architecture-2)  
+- Part 4: [Challenges and future vision](/challenge-vision)  
+
+All the source codes in this blog base on TensorFlow in Python2.7
 
 # Convolutional Neural Network (ConvNet)  
 The heart of Deep Learning in Computer Vision is ConvNet, a sub-division of Neural
