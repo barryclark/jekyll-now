@@ -12,7 +12,9 @@
   <title>Jesse Stern - Web Developer</title>
   <!-- Latest compiled and minified CSS & JS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <script src="//code.jquery.com/jquery.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"/>
   <link href="assets/css/style.css" rel="stylesheet">
@@ -30,17 +32,17 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#headshot">Jesse Stern</a>
+        <a class="navbar-brand" href="#landing">Jesse Stern</a>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse navbar-ex1-collapse">
         <ul class="nav navbar-nav navbar-right">
           <li>
-            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="#portfolio">Projects</a>
           </li>
           <li>
-            <a class="nav-link" href="#portfolio">Portfolio</a>
+            <a class="nav-link" href="#about">About</a>
           </li>
           <li>
             <a class="nav-link" href="#contact">Contact</a>
@@ -51,115 +53,129 @@
   </nav>
 
   <header class="bg-primary text-white">
-    <div id ="headshot" class="container text-center">
-      <div class = "landingText">
-        <img src = "./assets/images/myimg.jpg" class = "headshotPic">
-        <h1>Jesse Stern</h1>
-        <p class="lead">Web Developer</p>
-      </div>
-    </div>
-  </header>
-
-  <section>
-    <div id="about" class="container landingHead">
-      <div class="row">
-        <div class="col-lg-12 mx-auto">
-          <h2>Hi, I'm Jesse!</h2>
-          <p class="lead"><em>I am a developer that has a passion for building new and exciting products using JavaScript, Node.js, and Express. I love solving problems and working in small groups, skills that I gained along with patience and discipline during many years of studying and playing music.</em>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="bg-light">
-    <div id="portfolio" class="container">
-      <h1>Portfolio</h1>
-      <div class="row">
-        <div class="col-md-6 portfolioImg">
-          <div class="col-md-6 portfolioTitle">My Raag Book
+    <div id ="landing" class="container text-center landingHead">
+      <div class="landingText">
+        <div class="row">
+         <div class="typed_wrap">
+          <div class="typedText">
+            Hi! My name is Jesse, I like to <span class="typed"></span>
           </div>
-          <img src = "http://placehold.it/200x200">
         </div>
-        <div class="col-md-6 portfolioImg">
-         <a href="https://sternj20.github.io/foodtrucker/" target="_blank">
-           <div class="col-md-6 portfolioTitle">SF Food Trucker
-           </div>
-           <img src = "http://placehold.it/200x200">
-         </a>
-       </div>
-       <div class="col-md-6 portfolioImg">
-        <a href="https://sternj20.github.io/Hangman-Game/" target="_blank">
-         <div class="col-md-6 portfolioTitle">Hangman Game
-         </div>
-         <img src = "http://placehold.it/200x200">
-       </a>
-     </div>
-     <div class="col-md-6 portfolioImg">
-       <div class="col-md-6 portfolioTitle">New Project
-       </div>
-       <img src = "http://placehold.it/200x200">
-     </div>
-     <div class="col-md-6 portfolioImg">
-      <div class="col-md-6 portfolioTitle">New Project
       </div>
-      <img src = "http://placehold.it/200x200">
-    </div>
-    <div class="col-md-6 portfolioImg">
-      <div class="col-md-6 portfolioTitle">New Project
-      </div>
-      <img src = "http://placehold.it/200x200">
     </div>
   </div>
-</div>
-</section>
+</header>
 
-<!-- contact section -->
-<section class = "bg-light">
-  <div id="contact" class ="container">
+
+<section class="bg-light">
+  <div id="portfolio" class="container">
+    <h1>PROJECTS</h1><hr>
     <div class="row">
-      <div class="col-md-12 content">
-        <div class="page-header">
-          <h1>Contact me</h1>
-        </div>
-        <form>
-          <div class="form-group">
-            <label for="exampleName">Name</label>
-            <input type="name" class="form-control" id="exampleName" placeholder="John Smith">
-          </div>
-          <div class="form-group">
-            <label for="exampleInputEmail1">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="example@gmail.com">
-          </div>
-          <div class="form-group">
-            <label for="exampleTextarea">Message</label>
-            <textarea class="form-control" id="exampleTextarea" rows="9"></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
-      </div> <!-- col md8 -->
-    </div>
-  </div>
-</section>
 
-<!-- Footer -->
-<footer class="py-5 bg-dark">
-  <div class="container">
-    <div class = "row">
-      <div class = "col-md-12 icons">
-        <p class="m-0 text-center text-white">Copyright &copy; Jesse Stern 2017</p>
+      <div class="col-md-6">
+        <figure class="gallery-item">
+          <a href="https://ragabook.herokuapp.com/" target="_blank">
+            <img src = "assets/images/projects/ragabook.jpg" class="portfolioImg img-responsive">
+            <figcaption class="img-title">
+              <h5>An app to notate Indian Classical Music compositions</h5>
+            </figcaption>
+          </a>
+        </figure>
+      </div>
+
+      <div class="col-md-6">
+        <figure class="gallery-item">
+          <a href="https://game-vault.herokuapp.com/" target="_blank">
+            <img src = "assets/images/projects/gamevault.jpg" class="portfolioImg img-responsive">
+            <figcaption class="img-title">
+              <h5>MERN app that allows board game users to search and save their games, and meet others who have games they have or they want.</h5>
+            </figcaption>
+          </a>
+        </figure>
       </div>
     </div>
-    <div class="container text-center">
-      <a href="https://github.com/sternj20"><i class="fa fa-github fa-3x"></i></a>
-      <a href="https://twitter.com/jessesternmusic"><i class="fa fa-twitter fa-3x"></i></a>
-      <a href="https://www.linkedin.com/in/jesse-stern/"><i class=" fa fa-linkedin fa-3x"></i></a>
-      <a href="https://stackoverflow.com/users/7561041/sternj20"><i class=" fa fa-stack-overflow fa-3x"></i></a>
-    </div>
-  </div>
-</div>
-<script src="assets/js/scrolling-nav.js"></script>
 
-</body>
 
-</html>
+      <div class="col-md-6">
+        <figure class="gallery-item">
+          <a href="https://sternj20.github.io/foodtrucker" target="_blank">
+            <img src = "assets/images/projects/foodtrucker.jpg" class="portfolioImg img-responsive">
+            <figcaption class="img-title">
+              <h5>Locates food trucks that are currently open in San Francisco</h5>
+            </figcaption>
+          </a>
+        </figure>
+      </div>
+
+      <div class="col-md-6">
+        <figure class="gallery-item">
+          <a href="https://sternj20.github.io/Hangman-Game/" target="_blank">
+            <img src = "assets/images/projects/hangman.jpg" class="portfolioImg img-responsive">
+            <figcaption class="img-title">
+              <h5>Classic hangman game with a jazzy twist</h5>
+            </figcaption>
+          </a>
+        </figure>
+      </div>
+    </section>
+
+    <header class="bg-primary text-white">
+      <div id ="about" class="container text-center">
+        <h1>ABOUT ME</h1><hr>
+        <img src = "./assets/images/myimg.jpg" class = "headshotPic">
+        <p class="lead"><em>I am a developer with a background in music and education currently seeking opportunities in Front or Back
+End Web Development. I'm passionate about solving problems and working in small groups to build tools to empower and enrich communities and lives.</em>
+
+        </div>
+      </header>
+
+      <!-- contact section -->
+      <section class = "bg-light">
+        <div id="contact" class ="container">
+          <div class="row">
+            <div class="col-md-12 content">
+              <div class="page-header">
+                <h1 class="contactHead">Contact me</h1>
+              </div>
+              <form action="https://formspree.io/jessesternmusic@gmail.com"
+      method="POST">
+                <div class="form-group">
+                  <label for="exampleName">Name</label>
+                  <input name ="name" type="name" class="form-control" id="exampleName" placeholder="John Smith" required>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input name ="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="example@gmail.com" required>
+                </div>
+                <div class="form-group">
+                  <label for="exampleTextarea">Message</label>
+                  <textarea name ="message" class="form-control" id="exampleTextarea" rows="9" required ></textarea>
+                </div>
+                  <input type="submit" value="Send" />
+              </form>
+            </div> <!-- col md8 -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="py-5 bg-dark">
+        <div class="container">
+          <div class = "row">
+
+          </div>
+          <div class=" text-center">
+            <a href="https://github.com/sternj20" target="_blank"><i class="fa fa-github fa-3x"></i></a>
+            <a href="https://twitter.com/jessesternmusic" target="_blank"><i class="fa fa-twitter fa-3x"></i></a>
+            <a href="https://www.linkedin.com/in/jesse-stern/" target="_blank"><i class=" fa fa-linkedin fa-3x"></i></a>
+            <a href="https://stackoverflow.com/users/7561041/sternj20" target="_blank"><i class=" fa fa-stack-overflow fa-3x"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class = "col-md-12 icons">
+        <p class="m-0 text-center"><h3>Copyright &copy; Jesse Stern 2017<h3></p>
+        </div>
+        <script src="assets/js/scrolling-nav.js"></script>
+        <script type="assets/js/typeheader.js"></script>
+      </body>
+      </html>
