@@ -6,12 +6,10 @@ layout: blog
   {% for post in site.posts %}
     <article class="post">
       <li>{{ post.date | date: "%B %e, %Y" }} - {{ post.title }}</li>
-    {{ post.excerpt }}
-    {% if post.content contains site.excerpt_separator %}
-      <a href="{{ site.baseurl }}{{ post.url }}">Read more</a>
-    {% endif %}
-
-
+	    {{ post.excerpt }}
+	    {% if post.content contains site.excerpt_separator %}
+	      <a href="{{ site.baseurl }}{{ post.url }}">Read more</a>
+	    {% endif %}
     </article>
 
   {% endfor %}
