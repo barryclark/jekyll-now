@@ -1,6 +1,7 @@
 #
 # This file contains configuration flags to customize your site
 #
+excerpt_separator: "<!--excerpt-->"
 
 # Name of your site (displayed in the header)
 name: Your Name

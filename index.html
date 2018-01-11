@@ -1,18 +1,165 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
+<head>
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-      <div class="entry">
-        {{ post.excerpt }}
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Jesse Stern - Web Developer</title>
+  <!-- Latest compiled and minified CSS & JS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <script src="//code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"/>
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar">
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#headshot">Jesse Stern</a>
       </div>
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#portfolio">Portfolio</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div>
+  </nav>
+
+  <header class="bg-primary text-white">
+    <div id ="headshot" class="container text-center">
+      <div class = "landingText">
+        <img src = "./assets/images/myimg.jpg" class = "headshotPic">
+        <h1>Jesse Stern</h1>
+        <p class="lead">Web Developer</p>
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <div id="about" class="container landingHead">
+      <div class="row">
+        <div class="col-lg-12 mx-auto">
+          <h2>Hi, I'm Jesse!</h2>
+          <p class="lead"><em>I am a developer that has a passion for building new and exciting products using JavaScript, Node.js, and Express. I love solving problems and working in small groups, skills that I gained along with patience and discipline during many years of studying and playing music.</em>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-light">
+    <div id="portfolio" class="container">
+      <h1>Portfolio</h1>
+      <div class="row">
+        <div class="col-md-6 portfolioImg">
+          <div class="col-md-6 portfolioTitle">My Raag Book
+          </div>
+          <img src = "http://placehold.it/200x200">
+        </div>
+        <div class="col-md-6 portfolioImg">
+         <a href="https://sternj20.github.io/foodtrucker/" target="_blank">
+           <div class="col-md-6 portfolioTitle">SF Food Trucker
+           </div>
+           <img src = "http://placehold.it/200x200">
+         </a>
+       </div>
+       <div class="col-md-6 portfolioImg">
+        <a href="https://sternj20.github.io/Hangman-Game/" target="_blank">
+         <div class="col-md-6 portfolioTitle">Hangman Game
+         </div>
+         <img src = "http://placehold.it/200x200">
+       </a>
+     </div>
+     <div class="col-md-6 portfolioImg">
+       <div class="col-md-6 portfolioTitle">New Project
+       </div>
+       <img src = "http://placehold.it/200x200">
+     </div>
+     <div class="col-md-6 portfolioImg">
+      <div class="col-md-6 portfolioTitle">New Project
+      </div>
+      <img src = "http://placehold.it/200x200">
+    </div>
+    <div class="col-md-6 portfolioImg">
+      <div class="col-md-6 portfolioTitle">New Project
+      </div>
+      <img src = "http://placehold.it/200x200">
+    </div>
+  </div>
 </div>
+</section>
+
+<!-- contact section -->
+<section class = "bg-light">
+  <div id="contact" class ="container">
+    <div class="row">
+      <div class="col-md-12 content">
+        <div class="page-header">
+          <h1>Contact me</h1>
+        </div>
+        <form>
+          <div class="form-group">
+            <label for="exampleName">Name</label>
+            <input type="name" class="form-control" id="exampleName" placeholder="John Smith">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="example@gmail.com">
+          </div>
+          <div class="form-group">
+            <label for="exampleTextarea">Message</label>
+            <textarea class="form-control" id="exampleTextarea" rows="9"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div> <!-- col md8 -->
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="py-5 bg-dark">
+  <div class="container">
+    <div class = "row">
+      <div class = "col-md-12 icons">
+        <p class="m-0 text-center text-white">Copyright &copy; Jesse Stern 2017</p>
+      </div>
+    </div>
+    <div class="container text-center">
+      <a href="https://github.com/sternj20"><i class="fa fa-github fa-3x"></i></a>
+      <a href="https://twitter.com/jessesternmusic"><i class="fa fa-twitter fa-3x"></i></a>
+      <a href="https://www.linkedin.com/in/jesse-stern/"><i class=" fa fa-linkedin fa-3x"></i></a>
+      <a href="https://stackoverflow.com/users/7561041/sternj20"><i class=" fa fa-stack-overflow fa-3x"></i></a>
+    </div>
+  </div>
+</div>
+<script src="assets/js/scrolling-nav.js"></script>
+
+</body>
+
+</html>
