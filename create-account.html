@@ -3,18 +3,54 @@ layout: default
 title: Create Account
 ---
 
-<h2>Contact Information</h2>
-
 <form action="https://formspree.io/info@photovisionprints.com"
-      method="POST" name="contact_form">
-  <span class="required_notification">* Denotes Required Field</span>
-  <span>Name*</span>
-  <label for="first_name">First Name</label>
-  <input type="text" name="first_name">
-  <label for="last_name">Last Name</label>
-  <input type="text" name="last_name">
-  <label for="email">Email*</label>
-  <input type="email" name="email">
-  <span class="form_hint">Proper format "name@something.com"</span>
-  <input type="submit" value="Create Account">
+      method="POST" name="contact_form" class="contact_form">
+  <ul>
+    <li>
+      <h2>Contact Information</h2>
+      <span class="required_notification">* Denotes Required Field</span>
+    </li>
+    <li>
+      <span>Name*</span>
+    </li>
+    <li>
+      <div>
+        <input type="text" name="first_name" class="name"/>
+        <label for="first_name">First Name</label>
+      </div>
+      <div>
+        <input type="text" name="last_name" class="name"/>
+        <label for="last_name">Last Name</label>
+      </div>
+    </li>
+    <li>
+      <label for="email">Email*</label>
+      <input type="email" name="email"/>
+    </li>
+    <li>
+      <label for="phone">Phone</label>
+      <input type="text" name="phone"/>
+    </li>
+    <li>
+      <label for="address1">Address</label>
+      <input type="text" name="address1"/>
+    </li>
+    <li>
+      <div>
+        <input class="csz" type="text" name="city"/>
+        <label for="city">City</label>
+      </div>
+      <div>
+        <input class="csz" type="text" name="state"/>
+        <label for="state">State</label>
+      </div>
+      <div>
+        <input class="csz" type="text" name="zip"/>
+        <label for="zip">Zip</label>
+      </div>
+    </li>
+    <li>
+      <button class="submit" type="submit">Create Account</button>
+    </li>
+  </ul>
 </form>

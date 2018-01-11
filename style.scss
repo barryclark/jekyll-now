@@ -197,6 +197,66 @@ img {
   max-height: 20px;
   max-width: 20px;
 }
+
+.contact_form {
+  h2 {
+    margin: 0;
+    display: inline;
+  }
+  label {
+    display: block;
+  }
+  ul {
+    width: 750px;
+    list-style-type: none;
+    list-style-position: outside;
+    margin: 0px;
+    padding: 0px;
+    li {
+      padding: 12px;
+      position:relative;
+      div {
+        display: inline-block;
+      }
+    }
+  }
+  input {
+    height: 42px;
+    width: 600px;
+    padding: 5px 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  input.name {
+    width: 298px;
+  }
+  input.csz {
+    width: 196px;
+  }
+  button.submit {
+    width: 350px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: white;
+    border: 3px solid black;
+    font-size: 25px;
+    :hover {
+      background-color: $lightGray;
+    }
+    :active {
+      background-color: gray;
+    }
+  }
+}
+
+.required_notification {
+    color: #d45252;
+    margin: 5px 0 0 0;
+    display: inline;
+    float: right;
+}
+
 /*******************************************/
 /* PHOTOVISION SPECIFIC MODS GO ABOVE HERE */
 /*******************************************/
