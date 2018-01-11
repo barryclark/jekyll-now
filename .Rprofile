@@ -38,6 +38,7 @@ r2jekyll <- function(filename, dpi = 192) {
   unlink("{{site.url}}", recursive=T)
 }
 
+# r2jekyll("procedural-sensitivities-paper")
 # r2jekyll("Back-from-IES-PI-meeting")
 # r2jekyll("delta-method-and-2SLS-SEs")
 # r2jekyll("MI-with-clubSandwich")

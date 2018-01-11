@@ -1,0 +1,33 @@
+---
+layout: post
+title: "New paper: procedural sensitivities of effect size measures for SCDs"
+date: January 10, 2018
+tags: [single-case-research, effect-sizes]
+---
+
+I'm very happy to share that my article "Procedural sensitivities of effect sizes for single-case designs with directly observed behavioral outcome measures" has been accepted at _Psychological Methods_. There's no need to delay in reading it, since you can check out the [pre-print](https://osf.io/pxn24/) and  [supporting materials](https://osf.io/hkzsm/). Here's the abstract:
+
+> A wide variety of effect size indices have been proposed for quantifying the magnitude of treatment effects in single-case designs. Commonly used measures include parametric indices such as the standardized mean difference, as well as non-overlap measures such as the percentage of non-overlapping data, improvement rate difference, and non-overlap of all pairs. Currently, little is known about the properties of these indices when applied to behavioral data collected by systematic direct observation, even though systematic direct observation is the most common method for outcome measurement in single-case research. This study uses Monte Carlo simulation to investigate the properties of several widely used single-case effect size measures when applied to systematic direct observation data. Results indicate that the magnitude of the non-overlap measures and of the standardized mean difference can be strongly influenced by procedural details of the study's design, which is a significant limitation to using these indices as effect sizes for meta-analysis of single-case designs. A less widely used parametric index, the log-response ratio, has the advantage of being insensitive to sample size and observation session length, although its magnitude is influenced by the use of partial interval recording.
+
+This paper was a long time coming. The core idea came out of a grant proposal I wrote during the summer of 2014, which I fleshed out for a [poster presented at AERA]({{ site.url }}/files/AERA-2015-poster-Non-overlap-measures.pdf) in April of 2015. After finishing a draft of the paper, I tried to publish it in a special education journal, reasoning that the main audience for the paper is researchers interested in meta-analyzing single case research studies that are commonly used in some parts of special education. That turned out to be a non-starter. Four rejection letters later, I re-worked the paper a bit to give more technical details, then submitted it to a more methods-ish journal. This yielded an R&R, I revised the paper extensively, resubmitted it, and it was declined. Buying in fully to the sunk costs fallacy, I sent the paper to Psychological Methods. This time, I received very extensive and helpful feedback from several anonymous reviewers and an associate editor (thank you, anonymous peers!), which helped me to revise the paper yet again, and this time it was accepted. Sixth time is the charm, as they say. 
+
+Here's the complete time-line of submissions:
+
+* August 5, 2015: submitted to journal #1 (special education)
+* August 28, 2015: desk reject decision from journal #1
+* September 3, 2015: submitted to journal #2 (special education) 
+* November 6, 2015: reject decision (after peer review) from journal #2
+* November 18, 2015: submitted to journal #3 (special education)
+* November 22, 2015: desk reject decision from journal #3 as not appropriate for their audience. I was grateful to get a quick decision. 
+* November 23, 2015: submitted to journal #4 (special education)
+* February 17, 2016: reject decision (after peer review) from journal #4
+* April 19, 2016: submitted to journal #5 (methods)
+* August 16, 2016: revise-and-resubmit decision from journal #5
+* October 14, 2016: re-submitted to journal #5
+* February 2, 2017: reject decision from journal #5
+* May 10, 2017: submitted to _Psychological Methods_
+* September 1, 2017: revise-and-resubmit decision from _Psychological Methods_
+* September 26, 2017: re-submitted to _Psychological Methods_
+* November 22, 2017: conditional acceptance
+* December 6, 2017: re-submitted with minor revisions
+* January 10, 2018: accepted at _Psychological Methods_
