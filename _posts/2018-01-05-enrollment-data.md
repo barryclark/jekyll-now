@@ -6,7 +6,7 @@ categories: Education Data
 
 #### Charter schools are stealing our students and destroying public education.
 
-#### Students are leaving public schools because they have better options provided by School Choice.
+#### Students are leaving public schools because they have better chart options.
 
 I hope to eventually explore the two clickbait claims above. tl;dr You can skip to the [conclusions section](#conc) where I address them. The more general purpose of this post is to outline my process to explore this data starting from the raw form on the web. 
   
