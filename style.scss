@@ -24,7 +24,7 @@ body {
 }
 
 .container {
-  margin: 0 auto;
+  // margin: 0 auto;
   // max-width: 740px;
   // padding: 0 10px;
   width: 100%;
@@ -199,48 +199,54 @@ img {
 }
 
 .contact_form {
+  max-width: 700px;
+  margin-left: 250px;
   h2 {
     margin: 0;
     display: inline;
   }
   label {
     display: block;
+    font-size: 18px;
   }
   ul {
-    width: 750px;
+    width: 100%;
     list-style-type: none;
     list-style-position: outside;
     margin: 0px;
     padding: 0px;
     li {
-      padding: 12px;
-      position:relative;
-      div {
+      width: 100%;
+      font-size: 18px;
+      padding: 12px 0px;
+      position: relative;
+      div.half {
         display: inline-block;
+        width: 49.4%;
+      }
+      div.quarter {
+        display: inline-block;
+        width: 24.5%;
       }
     }
   }
-  input {
-    height: 42px;
-    width: 600px;
+  input, select {
+    height: 42px;    
+    font-size: 18px;
+    width: 100%;
     padding: 5px 8px;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
   }
-  input.name {
-    width: 298px;
-  }
-  input.csz {
-    width: 196px;
-  }
   button.submit {
-    width: 350px;
+    width: 180px;
     height: 50px;
-    border-radius: 25px;
+    margin-top: 25px;
+    border-radius: 5px;
     background-color: white;
-    border: 3px solid black;
-    font-size: 25px;
+    border: 1px solid black;
+    font-size: 19px;
     :hover {
       background-color: $lightGray;
     }
@@ -252,9 +258,9 @@ img {
 
 .required_notification {
     color: #d45252;
-    margin: 5px 0 0 0;
-    display: inline;
-    float: right;
+    // margin: 5px 0 0 0;
+    // display: inline-block;
+    // float: right;
 }
 
 /*******************************************/

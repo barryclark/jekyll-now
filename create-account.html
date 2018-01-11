@@ -5,26 +5,27 @@ title: Create Account
 
 <form action="https://formspree.io/info@photovisionprints.com"
       method="POST" name="contact_form" class="contact_form">
+  <h1>Create Account</h1>
   <ul>
     <li>
       <h2>Contact Information</h2>
       <span class="required_notification">* Denotes Required Field</span>
     </li>
     <li>
-      <span>Name*</span>
+      <strong>Name</strong><span class="required_notification">*</span>
     </li>
     <li>
-      <div>
-        <input type="text" name="first_name" class="name"/>
+      <div class="half">
+        <input type="text" name="first_name"/>
         <label for="first_name">First Name</label>
       </div>
-      <div>
-        <input type="text" name="last_name" class="name"/>
+      <div class="half">
+        <input type="text" name="last_name"/>
         <label for="last_name">Last Name</label>
       </div>
     </li>
     <li>
-      <label for="email">Email*</label>
+      <label for="email">Email<span class="required_notification">*</span></label>
       <input type="email" name="email"/>
     </li>
     <li>
@@ -36,21 +37,24 @@ title: Create Account
       <input type="text" name="address1"/>
     </li>
     <li>
-      <div>
-        <input class="csz" type="text" name="city"/>
+      <div class="half">
+        <input type="text" name="city"/>
         <label for="city">City</label>
       </div>
-      <div>
-        <input class="csz" type="text" name="state"/>
-        <label for="state">State</label>
+      <div class="quarter">
+        <input type="text" name="state"/>
+        <label for="state">State/Province</label>
       </div>
-      <div>
-        <input class="csz" type="text" name="zip"/>
-        <label for="zip">Zip</label>
+      <div class="quarter">
+        <input type="text" name="zip"/>
+        <label for="zip">Zip/Postal</label>
       </div>
     </li>
     <li>
-      <button class="submit" type="submit">Create Account</button>
+      {% include countries-list.html %}
+      <label for="country">Country</label>
+    <li>
+      <button class="submit center" type="submit">Create Account</button>
     </li>
   </ul>
 </form>
