@@ -16,9 +16,11 @@
 html {
   font-size: 100%;
 }
-
 body {
-	background: $white;
+    background-image: url("https://media.architecturaldigest.com/photos/584f2ba2dcb583e908275aad/master/w_640,c_limit/best-white-paint-colors-valspar.jpg");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
   font: 18px/1.4 $helvetica;
   color: $darkGray;
 }
