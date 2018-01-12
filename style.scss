@@ -19,7 +19,7 @@ html {
 
 body {
 	background: $white;
-  font: 18px/1.4 $helvetica;
+  font: 18px/1.4 Roboto;
   color: $darkGray;
   @include mobile {
     font-size: 18px;
@@ -34,9 +34,9 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $helveticaNeue;
+  // font-family: $helveticaNeue;
   color: $darkerGray;
-  font-weight: bold;
+  // font-weight: bold;
 
   line-height: 1.7;
   margin: 1em 0 15px;
@@ -72,7 +72,7 @@ p {
 }
 
 a {
-  color: $blue;
+  color: #83b3be;
   text-decoration: none;
 	cursor: pointer;
   &:hover, &:active {
@@ -198,14 +198,43 @@ img {
 }
 
 .praise-teaser {
-  max-width: 1000px;
-  margin: 0 auto 0 auto;
+  font-size: 30px;
+  color: $darkGray;
+  padding: 75px 0;
+  background-color: $lightGray;
   @include mobile {
+    width: 100%;
     max-width: none;
-    margin: 0px 30px 0px 30px;
   }
   .slick-prev:before, .slick-next:before {
     color: black;
+  }
+  .slick-list {
+    width: 1500px;
+    margin: 0 auto 0 auto;
+    @include mobile {
+      font-size: 18px;
+      width: 90%;
+    }
+  }
+  .start-white-quote:before, .end-white-quote:after {
+    content: "\"";
+    color: white;
+    font-size: 60px;
+    font-family: Catamaran;
+    line-height: 30px;
+    vertical-align: bottom;
+  }
+  .start-white-quote:before {
+    content: '“'
+  }
+  .right {
+    font-size: 24px;
+  }
+  ul li {
+    width: 100%;
+    display: inline-block;
+    list-style-type: none;
   }
 }
 
@@ -236,6 +265,10 @@ img {
 .contact_form {
   max-width: 700px;
   margin-left: 250px;
+  @include mobile {
+    width: 98%;
+    margin-left: 5px;
+  }
   h2 {
     margin: 0;
     display: inline;
@@ -266,7 +299,7 @@ img {
     }
   }
   input, select {
-    height: 42px;    
+    height: 42px;
     font-size: 18px;
     width: 100%;
     padding: 5px 8px;
@@ -315,17 +348,24 @@ img {
 }
 
 .masthead {
-  padding: 10px;
+  height: 44px;
+  padding: 9px 10px;
   margin-bottom: 30px;
   background-color: black;
-  overflow: auto;
+  // overflow: auto;
 
   a, span {
     color: white;
   }
 
   @include mobile {
-    text-align: center;
+    height: auto;
+    .left {
+      display: none;
+    }
+    .right {
+      text-align: center;
+    }
   }
 }
 
@@ -360,7 +400,7 @@ img {
   margin: 0;
   color: $darkGray;
   cursor: pointer;
-  font-family: $helveticaNeue;
+  // font-family: $helveticaNeue;
   font-weight: 300;
   font-size: 28px;
   letter-spacing: 1px;
@@ -378,7 +418,7 @@ img {
 
 nav {
   float: right;
-  font-family: $helveticaNeue;
+  // font-family: $helveticaNeue;
   font-size: 16px;
 
   @include mobile {
