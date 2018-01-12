@@ -348,11 +348,11 @@ img {
 }
 
 .masthead {
-  height: 44px;
-  padding: 9px 10px;
-  margin-bottom: 30px;
+  padding: 6px 10px;
+  margin-bottom: 40px;
   background-color: #232323;
   a, span {
+    font-size: 14px;
     color: white;
   }
   @include mobile {
