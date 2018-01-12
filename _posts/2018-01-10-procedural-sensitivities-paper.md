@@ -3,6 +3,7 @@ layout: post
 title: "New paper: procedural sensitivities of effect size measures for SCDs"
 date: January 10, 2018
 tags: [single-case-research, effect-sizes]
+permalink: procedural-sensitivities-paper
 ---
 
 I'm very happy to share that my article "Procedural sensitivities of effect sizes for single-case designs with directly observed behavioral outcome measures" has been accepted at _Psychological Methods_. There's no need to delay in reading it, since you can check out the [pre-print](https://psyarxiv.com/vxa86) and  [supporting materials](https://osf.io/hkzsm/). Here's the abstract:
