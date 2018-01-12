@@ -201,6 +201,9 @@ img {
   color: #232323;
   padding: 3em 0;
   background-color: $lightGray;
+  :hover {
+    cursor: pointer;
+  }
   @include mobile {
     width: 100%;
   }
