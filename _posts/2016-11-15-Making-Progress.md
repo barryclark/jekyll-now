@@ -6,7 +6,11 @@ date:   2016-11-15
 
 
 
-I have been making steady progress on Freecodecamp. I have completed the basic Javascript section and am moving onto Object Orientated Programming. There have been several times when I have been completely stumped on how to solve a challenge, and have had to look online for guidance. This has indicated to me that I need to go back and review some more before I move forward.
+I have been making steady progress on Freecodecamp.
+
+<!--excerpt-->
+
+I have completed the basic Javascript section and am moving onto Object Orientated Programming. There have been several times when I have been completely stumped on how to solve a challenge, and have had to look online for guidance. This has indicated to me that I need to go back and review some more before I move forward.
 
 So I am now working on a course on Khan Academy called Intro to JS: Drawing and Animation. After that I plan to also complete their Intro to HTML and CSS course. Review is good.
 

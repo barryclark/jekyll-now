@@ -4,7 +4,11 @@ title: Life as Analogous to Code
 date:   2017-03-29 19:00
 ---
 
-I am sitting here, drinking some great African Autumn tea by Harney and Sons and working on some coding. My coding class starts in less than three weeks, and I'm using the time leading up to it to try and brush up on Javascript fundamentals as much as possible. I've been going through various resources online, such as Flatiron school's bootcamp prep course, which is amazing! I have also continued to work on FreeCodeCamp, and then going through some of Rithm School's curriculum.
+I am sitting here, drinking some great African Autumn tea by Harney and Sons and working on some coding.
+
+<!--excerpt-->
+
+My coding class starts in less than three weeks, and I'm using the time leading up to it to try and brush up on Javascript fundamentals as much as possible. I've been going through various resources online, such as Flatiron school's bootcamp prep course, which is amazing! I have also continued to work on FreeCodeCamp, and then going through some of Rithm School's curriculum.
 
 I have attended several meetups hosted by Rithm School that have been incredibly beneficial to me, as well as slightly discouraging, but I always get over it and get back on the horse. Last night was one of those nights. I attended a workshop for D3.js, which is a data-visualization library for Javascript. It is a really powerful tool for creating representations of data, but I had a hard time wrapping my mind around it. This was one of those times where you felt like everyone else could understand, but you can't and you feel like one of the least smart people in the room. Welcome to a coder's life, AKA imposter syndrome. Thankfully, I've already become somewhat comfortable (or less uncomfortable) with this all too familiar scenario through my education in music, knowing that if I do find myself in a situation like this it is a great opportunity for growth if my ego can just get out of the way. At the end of the night I felt really down on myself, but ready to go home and try and learn up on this stuff at some point. I think I am just going to work on fundamentals for a while but try to come back and learn D3, because I am really excited about the possibilities that it offers.
 

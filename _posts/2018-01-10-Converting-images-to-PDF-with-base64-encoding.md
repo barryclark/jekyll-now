@@ -9,7 +9,7 @@ Generate a PDF from an array of image links returned from an API endpoint
 
 **An unforseen challenge**(*and how I found my way through it)*:
 CORS(Cross-Origin Resource Sharing), used a proxy server
-
+<!--excerpt-->
 I was given a challenge to work on which involved generating a PDF from an array of images returned from an API endpoint. This seemed like an easy enough task once I found the package [JSPDF](https://github.com/MrRio/jsPDF). I linked to the package using the CDN link provided from the docs and ran a quick test using the example function provided.
 
 ```
