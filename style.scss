@@ -169,6 +169,12 @@ img {
   float: right;
 }
 
+.company-logo img {
+  @include mobile {
+    width: 80%;
+  };
+}
+
 .footer-nav-left {
   text-align: left;
   float: left;
