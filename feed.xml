@@ -1,5 +1,4 @@
 ---
-layout: null
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
@@ -8,13 +7,8 @@ layout: null
     <description>{{ site.description | xml_escape }}</description>
     <link>{{ site.url }}</link>
     <atom:link href="{{ site.url }}/feed.xml" rel="self" type="application/rss+xml" />
-    <copyright>2017 Joseph Hendrix</copyright>
+    <copyright>2018 Joseph Hendrix</copyright>
     <language>en-us</language>
-    <!-- image>
-      <url>http://www.w3schools.com/images/logo.gif</url>
-      <title>W3Schools.com</title>
-      <link>http://www.w3schools.com</link>
-    </image -->
     {% for post in site.posts limit:10 %}
       <item>
         <title>{{ post.title | xml_escape }}</title>
