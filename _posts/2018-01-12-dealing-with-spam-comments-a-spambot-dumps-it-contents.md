@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Dealing with Spam Comments & A Spambot Dumps it Contents
+title: Dealing with Spam Comments & A Spambot Dumps Its Contents
 tags: [web]
 keywords: [spam, comments, commenting, spam comments, spam comment, dealing with spam, spambot]
 image: /images/honeypot.png
