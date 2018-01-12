@@ -11,7 +11,7 @@ Not only is making sketchnotes much more fun than traditional boring noting, it 
 2. **To summarize papers and books.** Sketchnoting is an excellent way to retain information from books or papers. Since I always carry my notebook with me, I can rapidly look back to the main points of something I read. Since the sketches are often quite distinctive, I can quickly find back the relevant page.  
 3. **To organize my thoughts.** When preparing a lecture or presentation, writing out a project proposal or brainstorming for new research ideas, I like to make a sketchnote as well. If I can outline the crux in a page or two, I can usually explain it well to other people. Since sketchnoting is quite visually stimulating, I also better remember the content.
 
-[![Talk about social learning by Sandy Pentland at ECML 2016. ](../images/2018_sketchnotes/group.png)](https://michielstock.github.io/images/2018_sketchnotes/group.png)
+[![Three sketechnotes: a talk, a book and a brainstorm. ](../images/2018_sketchnotes/group.png)](https://michielstock.github.io/images/2018_sketchnotes/group.png)
 
 I always thought of myself as being spectacularly bad at drawing. Being friends with [Koen van den Eeckhout](http://www.koenvandeneeckhout.be/category/artwork/), who is the official sketchnoter of the [Science Café](http://www.wetenschapscafe.be/) at Ghent, does *not* help my self esteem. The philosophy of sketchnoting however is to keep the artwork simple and having fun is more important than a crisp end result. Remember, there are only five basic shapes to draw just about anything: point, square, circle, line and triangle. Though I still do not find my drawings very appealing, I do see quite an improvement of my artwork in the last years.
 
@@ -21,5 +21,5 @@ Sketchnotes are an good way to have a bit of presence on the social media. Posti
 
 P.S. Since this year I have taken up [bullet journalling](http://bulletjournal.com/) as well. I find that this is a good way to keep track of my work and what I read and it is another way to express my love for fancy notebooks.
 
-![Talk about deep learning by Max Welling at Benelearn 2016.](../images/2018_sketchnotes/DL.png)
-![Summary of some machine learning papers.](../images/2018_sketchnotes/machinelearning.png)
+
+[![Three more sketchnotes: iGEM, comparing distributions using kernels and a brainstorm for my postdoctoral project. ](../images/2018_sketchnotes/examples.png)](https://michielstock.github.io/images/2018_sketchnotes/examples.png)
