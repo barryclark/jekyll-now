@@ -20,7 +20,7 @@ html {
 body {
 	background: $white;
   font: 18px/1.4 Roboto;
-  color: $darkGray;
+  color: #232323;
   @include mobile {
     font-size: 18px;
   }
@@ -35,7 +35,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   // font-family: $helveticaNeue;
-  color: $darkerGray;
+  color: #232323;
   // font-weight: bold;
 
   line-height: 1.7;
@@ -64,7 +64,7 @@ h3 {
 
 h4 {
   font-size: 18px;
-  color: $gray;
+  color: #232323;
 }
 
 p {
@@ -76,7 +76,7 @@ a {
   text-decoration: none;
 	cursor: pointer;
   &:hover, &:active {
-    color: $blue;
+    color: #232323;
   }
 }
 
@@ -125,11 +125,11 @@ img {
 
 // Specify the color of the selection
 ::-moz-selection {
-  color: $black;
+  color: #232323;
   background: $lightGray;
 }
 ::selection {
-  color: $black;
+  color: #232323;
   background: $lightGray;
 }
 
@@ -209,14 +209,14 @@ img {
 
 .praise-teaser {
   font-size: 1.8em;
-  color: $darkGray;
+  color: #232323;
   padding: 3em 0;
   background-color: $lightGray;
   @include mobile {
     width: 100%;
   }
   .slick-prev:before, .slick-next:before {
-    color: black;
+    color: #232323;
   }
   .slick-list {
     width: 65%;
@@ -330,7 +330,7 @@ img {
     margin-top: 25px;
     border-radius: 5px;
     background-color: white;
-    border: 1px solid black;
+    border: 1px solid #232323;
     font-size: 19px;
     :hover {
       background-color: $lightGray;
@@ -368,7 +368,7 @@ img {
   height: 44px;
   padding: 9px 10px;
   margin-bottom: 30px;
-  background-color: black;
+  background-color: #232323;
   // overflow: auto;
 
   a, span {
@@ -415,7 +415,7 @@ img {
 
 .site-name {
   margin: 0;
-  color: $darkGray;
+  color: #232323;
   cursor: pointer;
   // font-family: $helveticaNeue;
   font-weight: 300;
