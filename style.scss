@@ -29,7 +29,7 @@ body {
 .container {
   // margin: 0 auto;
   // max-width: 740px;
-  // padding: 0 10px;
+  // padding: 0 .3em;
   width: 100%;
 }
 
@@ -39,7 +39,7 @@ h1, h2, h3, h4, h5, h6 {
   // font-weight: bold;
 
   line-height: 1.7;
-  margin: 1em 0 15px;
+  margin: 1em 0;
   padding: 0;
 
   @include mobile {
@@ -81,8 +81,8 @@ a {
 }
 
 ul, ol {
-  margin: 15px 0;
-  padding-left: 30px;
+  // margin: 15px 0;
+  // padding-left: .1em;
 }
 
 ul {
@@ -174,9 +174,14 @@ img {
   float: left;
   margin-left: 20px;
   margin-right: 60px;
-
+  h4 {
+    font-weight: bold;
+  }
+  ul {
+    list-style-type: none;
+  }
   @include mobile {
-    float: none;
+    // float: none;
     width: 100%;
   }
 }
@@ -185,32 +190,36 @@ img {
   text-align: right;
   float: right;
   margin-right: 20px;
-
+  h4 {
+    font-weight: bold;
+  }
+  ul {
+    list-style-type: none;
+  }
   @include mobile {
     text-align: left;
-    float: none;
+    float: left;
     margin-left: 20px;
-    width: 100%;
-    ul {
-      margin-left: -40px;
-    }
+    // width: 100%;
+    // ul {
+    //   margin-left: -40px;
+    // }
   }
 }
 
 .praise-teaser {
-  font-size: 30px;
+  font-size: 1.8em;
   color: $darkGray;
-  padding: 75px 0;
+  padding: 3em 0;
   background-color: $lightGray;
   @include mobile {
     width: 100%;
-    max-width: none;
   }
   .slick-prev:before, .slick-next:before {
     color: black;
   }
   .slick-list {
-    width: 1500px;
+    width: 65%;
     margin: 0 auto 0 auto;
     @include mobile {
       font-size: 18px;
@@ -220,16 +229,20 @@ img {
   .start-white-quote:before, .end-white-quote:after {
     content: "\"";
     color: white;
-    font-size: 60px;
+    font-size: 3em;
     font-family: Catamaran;
-    line-height: 30px;
+    line-height: .1em;
     vertical-align: bottom;
   }
   .start-white-quote:before {
     content: '“'
   }
   .right {
-    font-size: 24px;
+    font-size: .8em;
+    // font-size: 24px;
+    // @include mobile {
+    //   font-size: .8em;
+    // }
   }
   ul li {
     width: 100%;
@@ -253,6 +266,10 @@ img {
     padding: 25px 45px 25px 45px;
     @include mobile {
       padding: 0px 8px;
+      .rf-logo {
+        width: 30px;
+        height: 30px;
+      }
     }
   }
 }
@@ -417,19 +434,19 @@ img {
 }
 
 nav {
-  float: right;
+  // float: right;
   // font-family: $helveticaNeue;
-  font-size: 16px;
+  // font-size: 16px;
 
   @include mobile {
     float: none;
-    margin-top: 9px;
+    // margin-top: 9px;
     display: block;
-    font-size: 16px;
+    // font-size: 16px;
   }
 
   a {
-    margin-left: 20px;
+    // margin-left: 20px;
     color: $darkGray;
     text-align: right;
     font-weight: 300;
@@ -481,7 +498,6 @@ nav {
 }
 
 footer {
-  padding: 20px 0;
   text-align: center;
   overflow: auto;
 }
