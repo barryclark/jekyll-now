@@ -198,14 +198,43 @@ img {
 }
 
 .praise-teaser {
-  max-width: 1000px;
-  margin: 0 auto 0 auto;
+  font-size: 30px;
+  color: $darkGray;
+  padding: 75px 0;
+  background-color: $lightGray;
   @include mobile {
+    width: 100%;
     max-width: none;
-    margin: 0px 30px 0px 30px;
   }
   .slick-prev:before, .slick-next:before {
     color: black;
+  }
+  .slick-list {
+    width: 1500px;
+    margin: 0 auto 0 auto;
+    @include mobile {
+      font-size: 18px;
+      width: 90%;
+    }
+  }
+  .start-white-quote:before, .end-white-quote:after {
+    content: "\"";
+    color: white;
+    font-size: 60px;
+    font-family: Catamaran;
+    line-height: 30px;
+    vertical-align: bottom;
+  }
+  .start-white-quote:before {
+    content: '“'
+  }
+  .right {
+    font-size: 24px;
+  }
+  ul li {
+    width: 100%;
+    display: inline-block;
+    list-style-type: none;
   }
 }
 
