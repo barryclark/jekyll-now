@@ -76,7 +76,7 @@ researchers in Deep Learning community try to contruct different network archite
 changed the fundamental tasks of Computer Vision from *feature enfineering* to *network engineering* to find the best 
 representation for the classification. One of the most popular benchmark is the ImageNet challenge. To further boost the 
 performance of ConvNet, the researchers also introduces some secondary components like Batch Normalization, Local 
-Response Normalization...
+Response Normalization, Dropout...
 In the next part, we will focus on the architectures that we have implemented in our business.  
 
 # Reference: 

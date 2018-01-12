@@ -50,9 +50,12 @@ a way to regularize the model. Nevertheless, it leads to the different results i
 # Prospective work  
 In [OtoNhanh](https://otonhanh.vn), we aim at improving end-user experience with our website, and Computer Vision will
 be an important part. Our forthcoming works will be:  
-- Since our current classification is just at the low level: it can only classify the images into pre-defined groups. 
-We are in need of more detailed investigation, including image similarity in a group or car orientation estimation.   
+- Since our current classification is just at the low level: it can only capture the shallow semantic feature. 
+We are in need of more detailed investigation, including image similarity in a same class or car orientation estimation.   
 [3D Pose Regression using Convolutional Neural Networks](http://juxi.net/workshop/deep-learning-robotic-vision-cvpr-2017/papers/9.pdf)  
 [Learning Fine-grained Image Similarity with Deep Ranking](https://static.googleusercontent.com/media/research.google.com/vi//pubs/archive/42945.pdf)  
-- We also target at the Interior 3D Reconstruction so that the user can have a lively view of the car
+- We also target at the Interior 3D Reconstruction so that the user can have a lively view of the car.  
+- For data collection, we intend to integrate a secondary model to the crawler. It will play the role of labeling the 
+crawled images automatically. Then someone from our firm will justify th eirvalidity before give them to our main models 
+as training data.    
 
