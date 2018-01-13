@@ -241,6 +241,10 @@ img {
 
 #as-seen-in {
   background: linear-gradient($white, $lightGray);
+  padding: 2em 10em;
+  @include mobile {
+    padding: .2em 1em;
+  }
 }
 
 #as-seen-in-table {
