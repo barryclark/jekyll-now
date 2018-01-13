@@ -56,6 +56,15 @@ Edit `/_posts/2014-3-3-Hello-World.md` to publish your first blog post. This [Ma
 4. View your website at http://127.0.0.1:4000/
 5. Commit any changes and push everything to the master branch of your GitHub user repository. GitHub Pages will then rebuild and serve your website.
 
+Note: If you encounter error as the following:
+
+![Ruby Error](/images/first-post.png "Ruby Error")
+
+Please run the command line to fix it:
+```bash
+$ sudo apt-get update
+$ sudo apt-get install ruby-dev
+```
 ## Moar!
 
 I've created a more detailed walkthrough, [**Build A Blog With Jekyll And GitHub Pages**](http://www.smashingmagazine.com/2014/08/01/build-blog-jekyll-github-pages/) over at the Smashing Magazine website. Check it out if you'd like a more detailed walkthrough and some background on Jekyll. :metal:
