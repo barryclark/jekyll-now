@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Convolution Neural Network in [OtoNhanh.vn](https://otonhanh.vn)
+title: Convolution Neural Network in OtoNhanh.vn
 author: hoangbm
 ---
 Nowadays, Deep Learning become more and more popular in many domains like Finance, 
