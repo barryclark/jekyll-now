@@ -118,3 +118,10 @@ Issues and Pull Requests are greatly appreciated. If you've never contributed to
 You can start by [opening an issue](https://github.com/barryclark/jekyll-now/issues/new) describing the problem that you're looking to resolve and we'll go from there.
 
 I want to keep Jekyll Now as minimal as possible. Every line of code should be one that's useful to 90% of the people using it. Please bear that in mind when submitting feature requests. If it's not something that most people will use, it probably won't get merged. :guardsman:
+
+## Write your post
+1. Fork this repo to your local repo
+2. Clone the local repo
+3. Make your post in the `_posts` folder. All files must to write according to [kramdown](https://kramdown.gettalong.org/documentation.html) syntax. You can use latex in your file see https://github.com/ChappiebotAI/chappiebotai.github.io/blob/master/_posts/2018-1-7-reinforce-and-neural-network.md for a example.
+4. Commit your changes and create a pull request
+
