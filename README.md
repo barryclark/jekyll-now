@@ -58,7 +58,7 @@ Edit `/_posts/2014-3-3-Hello-World.md` to publish your first blog post. This [Ma
 
 Note: If you encounter error as the following:
 
-![Ruby Error](/images/first-post.png "Ruby Error")
+![Ruby Error](/images/ruby-error.png "Ruby Error")
 
 Please run the command line to fix it:
 ```bash
