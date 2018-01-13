@@ -20,7 +20,7 @@ html {
 body {
 	background: $white;
   font: 18px/1.4 Roboto;
-  color: #232323;
+  color: #424242;
   @include mobile {
     font-size: 18px;
   }
@@ -31,7 +31,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #232323;
+  color: #424242;
   line-height: 1.7;
   margin: 1em 0;
   padding: 0;
@@ -57,7 +57,7 @@ h3 {
 
 h4 {
   font-size: 18px;
-  color: #232323;
+  color: #424242;
 }
 
 p {
@@ -69,7 +69,7 @@ a {
   text-decoration: none;
 	cursor: pointer;
   &:hover, &:active {
-    color: #232323;
+    color: #424242;
   }
 }
 
@@ -113,11 +113,11 @@ img {
 
 // Specify the color of the selection
 ::-moz-selection {
-  color: #232323;
+  color: #424242;
   background: $lightGray;
 }
 ::selection {
-  color: #232323;
+  color: #424242;
   background: $lightGray;
 }
 
@@ -198,14 +198,17 @@ img {
 
 .praise-teaser {
   font-size: 1.8em;
-  color: #232323;
+  color: #424242;
   padding: 3em 0;
   background-color: $lightGray;
+  :hover {
+    cursor: pointer;
+  }
   @include mobile {
     width: 100%;
   }
   .slick-prev:before, .slick-next:before {
-    color: #232323;
+    color: #424242;
   }
   .slick-list {
     width: 65%;
@@ -238,13 +241,14 @@ img {
 
 #as-seen-in {
   background: linear-gradient($white, $lightGray);
+  padding: 2em 10em;
+  @include mobile {
+    padding: .2em 1em;
+  }
 }
 
 #as-seen-in-table {
   margin: 0 auto 0 auto;
-  caption {
-    padding: 20px;
-  }
   tr td {
     text-align: center;
     vertical-align: middle;
@@ -315,7 +319,7 @@ img {
     margin-top: 25px;
     border-radius: 5px;
     background-color: white;
-    border: 1px solid #232323;
+    border: 1px solid #424242;
     font-size: 19px;
     :hover {
       background-color: $lightGray;
@@ -350,7 +354,7 @@ img {
 .masthead {
   padding: 6px 10px;
   margin-bottom: 40px;
-  background-color: #232323;
+  background-color: #424242;
   a, span {
     font-size: 14px;
     color: white;
@@ -392,7 +396,7 @@ img {
 
 .site-name {
   margin: 0;
-  color: #232323;
+  color: #424242;
   cursor: pointer;
   font-weight: 300;
   font-size: 28px;
