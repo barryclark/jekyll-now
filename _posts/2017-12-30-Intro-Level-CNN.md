@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Day 3-6 Intro Level CNN
+title: Day 3-6 Introduction to CNN
 permalink: /30ddlf/intro-level-CNN
 comment: true
 ---
