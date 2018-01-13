@@ -121,7 +121,7 @@ I want to keep Jekyll Now as minimal as possible. Every line of code should be o
 
 ## Write your post
 1. Fork this repo to your local repo
-2. Clone the local repo
+2. Clone the local repo, and make a local development enviroment as in the section `Local Development`.
 3. Make your post in the `_posts` folder. All files must to write according to [kramdown](https://kramdown.gettalong.org/documentation.html) syntax. You can use latex in your file see https://github.com/ChappiebotAI/chappiebotai.github.io/blob/master/_posts/2018-1-7-reinforce-and-neural-network.md for a example.
 4. Commit your changes and create a pull request
 
