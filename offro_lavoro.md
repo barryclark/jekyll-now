@@ -15,9 +15,8 @@ permalink: /offro_lavoro/
 
 <div class="row"><div class="col-md-12"> <div id="map"></div> </div> </div>
 <div class="panel-group">
-{% assign filteredissues = site.data.issuesjson | where: "state","open" %}
+{% assign filteredissues = site.data.issuesjson | where: "state","open" | where_exp: "member","member.issue.labels contains 'Offro lavoro'"%}
 {% for member in filteredissues %}
-{% if member.issue.labels contains "Offro lavoro" %}
 <div class="panel-body">
 <a href="/issues/{{ member.number }}" class="list-group-item">
 	<h4 class="list-group-item-heading">{{member.title}}</h4>
@@ -36,7 +35,6 @@ permalink: /offro_lavoro/
 </ul>
 </div>
 </div>
-{% endif %}
 {% endfor %}
 </div>
 
@@ -48,10 +46,8 @@ markerColor: 'green'
 });
 var markerList=[];
 {% for member in filteredissues %}
-{% if member.issue.labels contains "Offro lavoro" %}
 {% if member.issue.lat != blank and member.issue.lon != blank %}
 markerList.push([{{member.issue.lat}}, {{member.issue.lon}}, "{{member.title|uri_escape}}", "/issues/{{ member.number }}"]);
-{% endif %}
 {% endif %}
 {% endfor %}
 
