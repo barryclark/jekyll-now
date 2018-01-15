@@ -15,9 +15,8 @@ permalink: /eventi/
 
 <div class="row"><div class="col-md-12"> <div id="map"></div> </div> </div>
 <div class="panel-group">
-{% assign filteredissues = site.data.issuesjson | where: "state","open" %}
+{% assign filteredissues = site.data.issuesjson | where: "state","open" | where_exp: "member","member.issue.labels contains 'Eventi'"%}
 {% for member in filteredissues %}
-{% if member.issue.labels contains "Eventi" %}
 
 <div class="panel-body">
 <a href="/issues/{{ member.number }}" class="list-group-item">
@@ -39,7 +38,6 @@ permalink: /eventi/
 </ul>
 </div>
 </div>
-{% endif %}
 {% endfor %}
 </div>
 
@@ -51,10 +49,8 @@ markerColor: 'green'
 });
 var markerList=[];
 {% for member in filteredissues %}
-{% if member.issue.labels contains "Eventi" %}
 {% if member.issue.lat != blank and member.issue.lon != blank %}
 markerList.push([{{member.issue.lat}}, {{member.issue.lon}}, "{{member.title|uri_escape}}", "/issues/{{ member.number }}"]);
-{% endif %}
 {% endif %}
 {% endfor %}
 
