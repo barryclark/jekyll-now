@@ -20,9 +20,8 @@ permalink: /bollettino/
 <h3 id="Aperte">Segnalazioni Aperte</h3>
 
 <div class="panel-group">
-{% assign filteredissues = site.data.issuesjson | where: "state","open" %}
+{% assign filteredissues = site.data.issuesjson | where: "state","open" | where_exp: "member","member.issue.labels contains 'Bollettino'"%}
 {% for member in filteredissues %}
-{% if member.issue.labels contains "Bollettino" %}
 {% capture memberName %}{{member.issue.data.descrizione}}{% endcapture %}
 {% assign memberId = member.number %}
 {% capture memberUrl %}{{site.url}}/issues/{{member.number}}{% endcapture %}
@@ -63,16 +62,14 @@ permalink: /bollettino/
 </ul>
 </div>
 </div>
-{% endif %}
 {% endfor %}
 </div>
 
 <h3 id="Chiuse">Segnalazioni Chiuse</h3>
 
 <div class="panel-group sieve">
-{% assign filteredissues = site.data.issuesjson | where: "state","closed" %}
+{% assign filteredissues = site.data.issuesjson | where: "state","closed" | where_exp: "member","member.issue.labels contains 'Bollettino'"%}
 {% for member in filteredissues %}
-{% if member.issue.labels contains "Bollettino" %}
 {% capture memberName %}{{member.issue.data.descrizione}}{% endcapture %}
 {% assign memberId = member.number %}
 {% capture memberUrl %}{{site.url}}/issues/{{member.number}}{% endcapture %}
@@ -113,13 +110,12 @@ permalink: /bollettino/
 </ul>
 </div>
 </div>
-{% endif %}
 {% endfor %}
 </div>
 
 <div class="posts">
-  {% for post in site.posts %}
-    {% if post.categories contains 'bollettino' %}
+{% assign filteredposts = site.posts |  where_exp: "post","member.categories contains 'bollettino'"%}
+  {% for post in filteredposts %}
       <article class="post">
         <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
 
@@ -129,18 +125,15 @@ permalink: /bollettino/
 
         <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
       </article>
-    {% endif %}
   {% endfor %}
 </div>
 
 <script>
 var markerList=[];
-{% assign filteredissues = site.data.issuesjson | where: "state","open" %}
+{% assign filteredissues = site.data.issuesjson | where: "state","open" | where_exp: "member","member.issue.labels contains 'Bollettino'"%}
 {% for member in filteredissues %}
-{% if member.issue.labels contains "Bollettino" %}
 {% if member.issue.lat != blank and member.issue.lon != blank %}
 markerList.push([{{member.issue.lat}}, {{member.issue.lon}}, "{{member.title|uri_escape}}", "/issues/{{ member.number }}"]);
-{% endif %}
 {% endif %}
 {% endfor %}
 
