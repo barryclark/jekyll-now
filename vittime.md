@@ -32,8 +32,8 @@ Cognome         |Nome                    |Prefettura   |Data di nascita|Luogo di
 
 
 <div class="posts">
-  {% for post in site.posts %}
-    {% if post.categories contains 'vittime' %}
+{% assign filteredposts = site.posts | where_exp: "post","post.categories contains 'vittime'"%}
+  {% for post in filteredposts %}
       <article class="post">
         <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
 
@@ -43,7 +43,6 @@ Cognome         |Nome                    |Prefettura   |Data di nascita|Luogo di
 
         <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Leggi Tutto</a>
       </article>
-    {% endif %}
   {% endfor %}
 </div>
 
