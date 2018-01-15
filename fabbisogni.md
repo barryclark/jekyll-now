@@ -4,9 +4,8 @@ title: Fabbisogni
 permalink: /fabbisogni/
 ---
 <div class="panel-group">
-        {% assign filteredissues = site.data.issuesjson | where: "state","open" %}
-	{% for member in filteredissues %}
-	{% if member.issue.labels contains "Fabbisogni" %}
+{% assign filteredissues = site.data.issuesjson | where: "state","open" | where_exp: "member","member.issue.labels contains 'Fabbisogni'"%}
+{% for member in filteredissues %}
 	<div class="panel-body">
 	<a href="/issues/{{ member.number | datapage_url: '.' }}" class="list-group-item">
 		<h4 class="list-group-item-heading">{{member.title}}</h4>
@@ -24,6 +23,5 @@ permalink: /fabbisogni/
 </ul>
 </div>
 </div>
-{% endif %}
 {% endfor %}
 </div>
