@@ -8,11 +8,9 @@ Di seguito la lista dei contatti e dei link registrati da TerremotoCentroItalia
 
 # Contatti
 
-{% assign filteredissues = site.data.issuesjson | where: "state","open" %}
+{% assign filteredissues = site.data.issuesjson | where: "state","open" | where_exp: "member","member.issue.labels contains 'Contatti'"%}
 {% for member in filteredissues %}
-{% if member.issue.labels contains "Contatti" %}
 * <a href="/issues/{{ member.number | datapage_url: '.' }}">{{member.title}}</a>
-{% endif %}
 {% endfor %}
 
 # Link
