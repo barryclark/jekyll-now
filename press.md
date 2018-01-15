@@ -38,8 +38,8 @@ Data            |Fonte                   |Titolo       |Fonte
 
 
 <div class="posts">
-  {% for post in site.posts %}
-    {% if post.categories contains 'press' %}
+{% assign filteredposts = site.posts | where_exp: "post","post.categories contains 'press'"%}
+  {% for post in filteredposts %}
       <article class="post">
         <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
 
@@ -49,7 +49,6 @@ Data            |Fonte                   |Titolo       |Fonte
 
         <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Leggi Tutto</a>
       </article>
-    {% endif %}
   {% endfor %}
 </div>
 
