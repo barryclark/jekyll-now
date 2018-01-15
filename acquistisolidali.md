@@ -4,9 +4,8 @@ title: Acquisti Solidali
 permalink: /acquistisolidali/
 ---
 <div class="panel-group">
-{% assign filteredissues = site.data.issuesjson | where: "state","open" %}
+{% assign filteredissues = site.data.issuesjson | where: "state","open" | where_exp: "member","member.issue.labels contains 'acquisto solidale'"%}
 {% for member in filteredissues %}
-{% if member.issue.labels contains "acquisto solidale" %}
 
 <div class="panel panel-default">
 <div class="panel-heading">
@@ -38,6 +37,5 @@ permalink: /acquistisolidali/
 </ul>
 </div>
 </div>
-{% endif %}
 {% endfor %}
 </div>
