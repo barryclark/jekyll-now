@@ -57,7 +57,6 @@ title: Πως αγοράζουμε, πουλάμε, ξοδεύουμε και δ
 - [Expedia](http://www.expedia.com/Checkout/BitcoinTermsAndConditions) και στην Ελλάδα
 - [Περιοδικό Fortune](https://subscription.timeinc.com/storefront/site/fo-20for1999ccar1214bc.html)
 - [Wikipedia](https://wikimediafoundation.org/wiki/Ways_to_Give#bitcoin), για δωρεές
-- [Steam](http://store.steampowered.com)
 
 ### <a name="buybitcoin"></a>Πώς μπορώ να αγοράσω Bitcoin από την Ελλάδα;
 
@@ -233,7 +232,7 @@ title: Πως αγοράζουμε, πουλάμε, ξοδεύουμε και δ
 - Το [BitforTip](https://www.bitfortip.com)
 - Το [CoinLib](https://coinlib.io)
 
-Τελευταία ενημέρωση: 2017-12-26
+Τελευταία ενημέρωση: 2018-01-15
 
 <!-- <div class="posts">
   {% for post in site.posts %}

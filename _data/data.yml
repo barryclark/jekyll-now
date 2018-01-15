@@ -222,6 +222,22 @@
   location_gr: Ιεράπετρα, Κρήτη, Ελλάδα
   location_en: Ierapetra, Crete, Greece
 
+- company_gr: Alda Shop
+  company_en: Alda Shop
+  url: http://aldashop.business.site
+  category_gr: Τουριστικά είδη
+  category_en: Gift shop
+  location_gr: Ρέθυμνο, Κρήτη, Ελλάδα
+  location_en: Rethymno, Crete, Greece
+
+- company_gr: Imam Baildi
+  company_en: Imam Baildi
+  url: https://www.facebook.com/imambaildishop
+  category_gr: Τουριστικά είδη
+  category_en: Gift shop
+  location_gr: Ρέθυμνο, Κρήτη, Ελλάδα
+  location_en: Rethymno, Crete, Greece
+
 - company_gr: Ειρηναίος Ρουστάς
   company_en: Irinaios Roustas
   url: 
@@ -515,8 +531,16 @@
   url: http://www.directshop.gr/
   category_gr: Ηλεκτρονικό κατάστημα για υπολογιστές
   category_en: Computer eshop
-  location_gr: Ιωάννινα, Ελλάδα
-  location_en: Ioannina, Greece
+  location_gr: Ιωάννινα, Ήπειρος, Ελλάδα
+  location_en: Ioannina, Epirus, Greece
+  
+- company_gr: Uniphone
+  company_en: Uniphone
+  url: https://www.uniphone.gr
+  category_gr: Κινητά τηλέφωνα
+  category_en: Mobile phone shop
+  location_gr: Άρτα, Ήπειρος, Ελλάδα
+  location_en: Arta, Epirus, Greece  
 
 - company_gr: WebToner
   company_en: WebToner
@@ -668,7 +692,39 @@
   category_gr: Τεχνικό γραφείο - Πολιτικοί Μηχανικοί
   category_en: Civil Engineers
   location_gr: Πανόραμα, Μακεδονία, Ελλάδα
-  location_en: Πανόραμα, Μακεδονία, Ελλάδα
+  location_en: Panorama, Macedonia, Greece
+
+- company_gr: Δικηγορικό Γραφείο Νικόδημου Ελ. Σταυρίδη
+  company_en: Nikodimos El. Stavridis Law Office
+  url: http://serreslaw.gr
+  category_gr: Δικηγορικό Γραφείο
+  category_en: Law Office
+  location_gr: Σέρρες, Μακεδονία, Ελλάδα
+  location_en: Serres, Macedonia, Greece
+
+- company_gr: Aqua Mare
+  company_en: Aqua Mare
+  url: http://aquamarefishspa.com
+  category_gr: Fish Spa
+  category_en: Fish Spa
+  location_gr: Ναύπλιο, Αργολίδα, Ελλάδα
+  location_en: Nafplio, Argolis, Greece
+
+- company_gr: The Project Garments
+  company_en: The Project Garments
+  url: https://www.theprojectgarments.com
+  category_gr: Ανδρική μόδα
+  category_en: Mens fashion
+  location_gr: Νέο Ηράκλειο, Αττική, Ελλάδα
+  location_en: Neo Iraklio, Attica, Greece
+
+- company_gr: Σταύρος Πουλικαρακος
+  company_en: Stavros Poulikarakos
+  url: 
+  category_gr: Ηλεκτρικά είδη - εγκαταστάσεις 2104815981
+  category_en: Electrical shop tel. 2104815981
+  location_gr: Πειραιάς, Αττική, Ελλάδα
+  location_en: Piraeus, Attica, Greece
 
 - company_gr: Πανεπιστήμιο Λευκωσίας
   company_en: University of Nicosia

@@ -84,7 +84,7 @@ Come to one of our meetups in [Athens](https://www.meetup.com/BlockchainGreece-0
 - [BitforTip](https://www.bitfortip.com)
 - [CoinLib](https://coinlib.io)
 
-Last update: 2017-12-26
+Last update: 2018-01-15
 
 <!-- <div class="posts">
   {% for post in site.posts %}
