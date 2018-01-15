@@ -42,6 +42,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 30px;
+  font-weight: 300;
   a {
     color: inherit;
   }
@@ -49,15 +50,17 @@ h1 {
 
 h2 {
   font-size: 24px;
+  font-weight: 300;
 }
 
 h3 {
   font-size: 20px;
+  font-weight: 300;
 }
 
 h4 {
-  font-size: 18px;
-  color: #424242;
+  font-size: 19px;
+  font-weight: 300;
 }
 
 p {
@@ -66,6 +69,7 @@ p {
 
 a {
   color: #83b3be;
+  font-size: 16px;
   text-decoration: none;
 	cursor: pointer;
   &:hover, &:active {
@@ -163,39 +167,6 @@ img {
   };
 }
 
-.footer-nav-left {
-  text-align: left;
-  float: left;
-  margin-left: 20px;
-  margin-right: 60px;
-  h4 {
-    font-weight: bold;
-  }
-  ul {
-    list-style-type: none;
-  }
-  @include mobile {
-    width: 100%;
-  }
-}
-
-.footer-nav-right {
-  text-align: right;
-  float: right;
-  margin-right: 20px;
-  h4 {
-    font-weight: bold;
-  }
-  ul {
-    list-style-type: none;
-  }
-  @include mobile {
-    text-align: left;
-    float: left;
-    margin-left: 20px;
-  }
-}
-
 .praise-teaser {
   font-size: 1.8em;
   font-weight: 300;
@@ -249,7 +220,7 @@ img {
 }
 
 #as-seen-in-table {
-  margin: 0 auto 0 auto;
+  margin: 20px auto 0 auto;
   tr td {
     text-align: center;
     vertical-align: middle;
@@ -264,9 +235,41 @@ img {
   }
 }
 
-.svg-icon {
-  max-height: 20px;
-  max-width: 20px;
+.footer-nav-left {
+  text-align: left;
+  float: left;
+  margin-left: 20px;
+  margin-right: 60px;
+  h4 {
+    margin: 50px 0px 10px 0px;
+  }
+  ul {
+    list-style-type: none;
+  }
+  @include mobile {
+    width: 100%;
+  }
+}
+
+.footer-nav-right {
+  text-align: right;
+  float: right;
+  margin-right: 20px;
+  strong, span {
+    padding: 0px 3px;
+    font-size: 16px;
+  }
+  h4 {
+    margin: 50px 0px 10px 0px;
+  }
+  ul {
+    list-style-type: none;
+  }
+  @include mobile {
+    text-align: left;
+    float: left;
+    margin-left: 20px;
+  }
 }
 
 .contact_form {
@@ -340,6 +343,12 @@ img {
     padding: 2.2%;
   }
 }
+
+.svg-icon {
+  max-height: 20px;
+  max-width: 20px;
+}
+
 /*******************************************/
 /* PHOTOVISION SPECIFIC MODS GO ABOVE HERE */
 /*******************************************/
