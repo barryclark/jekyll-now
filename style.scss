@@ -211,11 +211,22 @@ img {
   }
 }
 
+article {
+  padding: 2% 10%;
+  .entry {
+    padding-left: 2%;
+    padding-right: 4%;
+    p {
+      padding-bottom: 2%;
+    }
+  }
+}
+
 #as-seen-in {
   background: linear-gradient($white, $lightGray);
-  padding: 2em 10em;
+  padding: 2% 10%;
   @include mobile {
-    padding: .2em 1em;
+    padding: 2%;
   }
 }
 
@@ -224,12 +235,13 @@ img {
   tr td {
     text-align: center;
     vertical-align: middle;
-    padding: 25px 45px 25px 45px;
+    padding: .5% 3%;
+    .rf-logo {
+      width: 60%;
+    }
     @include mobile {
-      padding: 0px 8px;
       .rf-logo {
-        width: 30px;
-        height: 30px;
+        width: 40%;
       }
     }
   }
