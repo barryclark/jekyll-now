@@ -4,8 +4,8 @@ title: Blog
 permalink: /post/
 ---
 <div class="posts">
-  {% for post in site.posts %}
-    {% if post.categories contains 'blog' %}
+{% assign filteredposts = site.posts | where_exp: "post","post.categories contains 'blog'"%}
+  {% for post in filteredposts %}
       <article class="post">
         <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
 
@@ -15,6 +15,5 @@ permalink: /post/
 
         <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Leggi tutto</a>
       </article>
-    {% endif %}
   {% endfor %}
 </div>
