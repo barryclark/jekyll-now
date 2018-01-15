@@ -15,9 +15,8 @@ permalink: /emergenza_abruzzo/
 
 <div class="row"><div class="col-md-12"> <div id="map"></div> </div> </div>
 <div class="panel-group">
-{% assign filteredissues = site.data.issuesjson | where: "state","open" %}
+{% assign filteredissues = site.data.issuesjson | where: "state","open" | where_exp: "member","member.issue.labels contains 'emergenzaAbruzzo'"%}
 {% for member in filteredissues %}
-{% if member.issue.labels contains "emergenzaAbruzzo" %}
 <div class="panel-body">
 <a href="/issues/{{ member.number }}" class="list-group-item">
 	<h4 class="list-group-item-heading">{{member.title}}</h4>
@@ -36,17 +35,14 @@ permalink: /emergenza_abruzzo/
 </ul>
 </div>
 </div>
-{% endif %}
 {% endfor %}
 </div>
 
 <script>
 var markerList=[];
 {% for member in filteredissues %}
-{% if member.issue.labels contains "emergenzaAbruzzo" %}
 {% if member.issue.lat != blank and member.issue.lon != blank %}
 markerList.push([{{member.issue.lat}}, {{member.issue.lon}}, "{{member.title|uri_escape}}", "/issues/{{ member.number }}"]);
-{% endif %}
 {% endif %}
 {% endfor %}
 
