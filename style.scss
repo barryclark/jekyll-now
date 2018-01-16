@@ -319,6 +319,11 @@ article {
     float: left;
     margin-left: 20px;
   }
+  @media screen and (max-width: 1100px) {
+    text-align: left;
+    float: left;
+    margin-left: 20px;
+  }
 }
 
 .contact_form {
@@ -424,7 +429,11 @@ article {
       display: none;
     }
     .right {
+      float: none;
       text-align: center;
+      .service-time {
+        display: block;
+      }
     }
   }
 }
