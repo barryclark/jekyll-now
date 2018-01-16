@@ -4,7 +4,7 @@ title: Film Services
 permalink: film-services.html
 ---
 
-We currently process C-41 color negative film and Black + White negative film. We can process most film sizes ranging from 135 roll film to 8x10 sheet film on C-41 and Black + White. You can find our current service time [here](http://photovisionprints.com/film-service-times).
+We currently process C-41 color negative film and Black + White negative film. We can process most film sizes ranging from 135 roll film to 8x10 sheet film on C-41 and Black + White. You can find our current service time [here]({{ site.baseurl}}/service-times).
 
 
 ## Develop Only
@@ -73,7 +73,7 @@ Resolution matters. That's why our normal scans give you the freedom to print st
 We take the utmost care with your film! Negatives will be carefully cut, sleeved and organized at no charge. If your rolls are numbered (which BTW, we *highly* recommend) they will also be kept in numerical order.
 
 ## How do I get my negatives back?
-We will hold your negatives based on the Ship Back preference marked on your [Order Form](http://photovisionprints.com/s/PhotoVision-Film-Order-Form-Fall-2015.pdf).
+We will hold your negatives based on the Ship Back preference marked on your [Order Form]({{ site.baseurl}}/images/PhotoVision-Film-Order-Form-Dec-2017.pdf).
 
 | **Ship Back Options** |   |
 | --- | :---: |
@@ -86,7 +86,7 @@ We will hold your negatives based on the Ship Back preference marked on your [Or
 Negatives are shipped back via USPS Priority Flat Rate shipping to reduce costs to you. We will charge your card on file at time of shipment. *For international shipping*, these prices will vary.
 
 ## Can I talk to someone?
-Absolutely! We're happy to help. Please don't hesitate to reach out with any questions. Our phones are answered by our friendly Team from 10 a.m.–5 p.m. PST, Monday–Friday.
+Absolutely! We're happy to help. Please don't hesitate to reach out with any questions. Our phones are answered by our friendly Team from {{ site.company-info.service-hours }}.
 
-**503-588-3686**
-[**info@photovisionprints.com**](mailto:info@photovisionprints.com)
+[{{ site.company-info.display-phone }}](tel:{{ site.company-info.phone }})  
+[{{ site.company-info.email }}]({{ site.company-info.email }})

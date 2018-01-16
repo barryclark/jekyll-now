@@ -75,7 +75,7 @@ Create prints from 3.5x5" to 30x45" from your desktop or phone.
 *Service times are given as good faith estimates and are ultimately dependent on the volume of work coming in from our photographers.*
 
 ## Can I talk to someone?
-Absolutely! We're happy to help. Please don't hesitate to reach out with any questions. Our phones are answered by our friendly Team from 10 a.m.–5 p.m. PST, Monday–Friday.
+Absolutely! We're happy to help. Please don't hesitate to reach out with any questions. Our phones are answered by our friendly Team from {{ site.company-info.service-hours }}.
 
-**503-588-3686**
-[**info@photovisionprints.com**](mailto:info@photovisionprints.com)
+[{{ site.company-info.display-phone }}](tel:{{ site.company-info.phone }})  
+[{{ site.company-info.email }}]({{ site.company-info.email }})
