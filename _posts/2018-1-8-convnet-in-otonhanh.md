@@ -20,7 +20,7 @@ Network designed specifically to cope with the images. Regular Neural Network is
 unit from one layer have the access to every units from the previous layer, which leads to the explosion in the number 
 of parameters of the network. For example, if we have a RGB image whose size is 200x200 as an input, each neuron in the 
 first hidden layer will have 200x200x3 = 120000 weights to compute the output. This redundancy of the parameters is 
-really a catastrophe for the training procedure: it doesn't help to generalize the problems well and conduct the slow 
+really a catastrophe for the training procedure: it doesn't help to generalize the problems well and results in the slow 
 convergence due to the large amount of the parameters.  
 In this context, Yann LeCunn developped a biologically-inspired neural network called ConvNet. ConvNet comprises 3 main 
 types of layer: Convolutional Layer, Pooling Layer and Fully Connected Layer.  
@@ -33,25 +33,27 @@ with some differentiable function that may or may not have parameters.
 </p>  
 
 
-##### Convolutional Layer  
+### Convolutional Layer  
 It plays the roles of feature detector in ConvNet. In more detailed, it computes the 
 dot product of 3-D kernel with local region from input image. This sliding-window method can be considered as 
 convolution operation, this is the origin of its name. Each kernel will detect a same feature in every region of the 
 image and send it to the higher layer to construct more delicate feature detector. After the convolution, we prefer to 
-apply some sorts of activation function like ReLU or tanh... to adapt to the non-linearity  
+apply some sorts of activation function like ReLU or tanh... to adapt to the non-linearity.  
+Convolution has been used previously with some man-made filter like Laplace or Sobel to detect feature in the image, 
+however, ConvNet proposes a way to *learn* the filter automatically.  
 
 <p align="center">
  <img src="/images/Introduction_CNN/conv-layer.gif" alt="" align="middle">
  <div align="center">Illustration of convolution operation. <a href="http://cs231n.github.io/convolutional-networks/">Source</a></div>
 </p> 
 
-##### Pooling Layer  
+### Pooling Layer  
 The most two popular pooling operation is average pooling and max pooling. This 
 layer is used to achieve the invariance during the training. It means that if we modify the input a little bit, it won't
 affect the overall result much. This invariance is very important in the task of classification as we may capture the 
 same object but from the different pose or it may have capture the noise as well.  
 However, the way it achieve the invariance by losing the information raises a lot of arguments in the Deep Learning 
-community. Recently, G.Hinton, a "god father" in this domain, has public his research about Capsule Net, a way to 
+community. Recently, G.Hinton, a "god father" in this domain, has publicized his research about Capsule Net, a method to 
 achieve the pose invariance without using pooling.  
 
 <p align="center">
@@ -59,7 +61,7 @@ achieve the pose invariance without using pooling.
  <div align="center">Maxpool operation <a href="http://cs231n.github.io/assets/cnn/maxpool.jpeg">Source</a></div>
 </p>    
 
-##### Fully-Connected Layer  
+### Fully-Connected Layer  
 At the end of ConvNet, we always put this layer, accompanied by a softmax loss 
 function in case of multi-classification. It will measure the score for each label so that we could choose the label for 
 the input image.  
@@ -71,18 +73,18 @@ the input image.
 
 Generally speaking, Convolutional Layer, Pooling Layer and Fully-Connected Layer are 
 the principal components of ConvNet in the image classification task. To make use these layers at its best, the 
-researchers in Deep Learning community try to contruct different network architectures. The arrival of ConvNet has 
-changed the fundamental tasks of Computer Vision from *feature enfineering* to *network engineering* to find the best 
+researchers in Deep Learning community try to construct different network architectures. The arrival of ConvNet has 
+changed the fundamental tasks of Computer Vision from *feature engineering* to *network engineering* to find the best 
 representation for the classification. One of the most popular benchmark is the ImageNet challenge. To further boost the 
 performance of ConvNet, the researchers also introduces some secondary components like Batch Normalization, Local 
 Response Normalization, Dropout...
-In the next part, we will focus on the architectures that we have implemented in our business.  
+In the next part, we will concentrate on the architectures that we have implemented in our business.  
 
-##### Reference: 
+### Reference: 
 - [Convolutional Neural Networks for Visual Recognition](http://cs231n.github.io/convolutional-networks/)  
 
 # II. ConvNet Architectures: 
-### 1. AlexNet  
+## 1. AlexNet  
 It is developped by _Alex Krizhevsky and al._. It was submitted to the ImageNet 
 Challenge in 2012 and really made an echo in Deep Learning society by its superiority in the contest. In fact, it is 
 pretty similar to the famous LeNet but bigger and deeper.  
@@ -96,7 +98,7 @@ Detail of AlexNet architecture used in ImageNet Challenge:
 three layers are the fully-connected layer. The outputs of the last fully-connected layer are brought to 1000-way 
 soft-max classifier.
 - The kernel of the second, fourth and fifth convolutional layer are connected to the kernel from the previous layer. 
-Local response normalization follow only the first two convolutional layer. Max pooling operation follows both 
+Local response normalization follows only the first two convolutional layer. Max pooling operation follows both 
 normalization layer and the fifth convolution layer. ReLU non-linearity is applied to every output of convolutional 
 layer and fully connected layer.  
 
@@ -150,10 +152,11 @@ Source code for AlexNet:
  </div>  
 Its detailed architecture can be found in the paper [ImageNet Classification with Deep Convolutional Neural Networks](https://www.nvidia.cn/content/tesla/pdf/machine-learning/imagenet-classification-with-deep-convolutional-nn.pdf).  
 
-### 2. VGG-Net  
+## 2. VGG-Net  
 This architecture is, from my point of view, a deeper version of AlexNet. Its main 
 contribution is that a better performance of the network can be achieved by simply increasing its layers for more 
-sophisticated representation.  
+sophisticated representation. Furthermore, VGG-style strategy of repeating layers of the same shape helps for isolating 
+a few factors and extending to any large number of transformation. This strategy is inherited profoundly by ResNext.  
 
 <p align="center">
  <img src="/images/Introduction_CNN/vgg16.png" alt="" align="middle">
@@ -204,7 +207,7 @@ sophisticated representation.
 Its detailed architecture can be found in the paper [Very deep convolutional networks for 
 large-scale image recognition](https://arxiv.org/pdf/1409.1556.pdf).  
 
-### 3. Inception
+## 3. Inception
 Along with VGGNet, Inception is also a contestant in the 2014 ILSVRC who gained much 
 attention from the community. While VGGNet give us a simple way to reinforce the result by stacking more layers, 
 Inception gives us many new notions which, in my opinion, inspires many successors. Inception architecture sticks to a 
@@ -221,22 +224,22 @@ There are two papers about this architecture that worth noticing:
 
 Personally, I recommend you to take time with the second paper, it gives us some insights about Inception. Now I may 
 summarize the idea of the paper:  
-##### General Design Principles:
-- **Avoid representational bottlenecks**: We shouldn't reduce the size as well as the dimension of the input to abruptly, 
+### General Design Principles:
+- **Avoid representational bottlenecks**: We shouldn't reduce the size as well as the dimension of the input too abruptly, 
 especially in the first layers. The representation size ought to be shrinked mildly thoughout the network in order to 
 avoid the loss of information.  
 - **Higher dimensional representations are easier to process**: Adding more filters per tile is encouraged for the 
 purpose of faster training.  
-- **Spatial aggregation can be done over lower dimensional embeddings without much or any loss in representational power**.  
+- **Spatial aggregation can be done over lower dimensional embeddings without much or any loss in representational power**. 
 Considering adjacent layers are highly correlated, it results in much less loss of information during dimension 
 reduction. So why not reducing the dimension for a faster learning?
 - **Balance the width and depth of the network**: We should increase both the depth of the network and the number of 
 filters per stage for the optimal improvement.  
 
-##### Factorizing Convolution:
+### Factorizing Convolution:
 In my own experience, before reading this paper, I had always had an impression that a larger filter size will lead to 
 a faster training due to the fact that larger filter size make smaller feature maps. However, it turns out that instead 
-of using a large filter, we should factorize it into smaller filter layers. For instance, a two 3x3 layer is more 
+of using a large filter, we should factorize it into smaller filter layers. For instance, two 3x3 layers are more 
 preferable than a 5x5 filter.  
 
 <p align="center">
@@ -248,7 +251,7 @@ preferable than a 5x5 filter.
 Furthermore, althought it seem logical when we don't introduce ReLU layer between the two small convolutional layer to 
 simulate the large layer at its best, the author advised us to employ the ReLU layer after each convolution.  
 
-##### Auxiliary Classifiers:  
+### Auxiliary Classifiers:  
 Inception also introduces a new concept of auxiliary classifiers. We add some classifiers at the intermediate layers: 
 Their loss is added to the total loss with a specific weights. In the inference, these classifiers are discarded. They 
 act as the regularizer and also a way to combat vanishing gradient. However, it is proved that their contribution is 
@@ -272,8 +275,12 @@ first and then applying the pooling, however, it is computationally expensive.
 
 The author proposed to use concatenation as a way to bypass the bottleneck but still reduce the size:  
 
+<p align="center">
+ <img src="/images/Introduction_CNN/GridSizeRedcution.jpg" alt="" align="middle">
+ <div align="center">Concatenation in Inception <a href="http://yeephycho.github.io/blog_img/GridSizeRedcution.jpg"> Source</a></div>
+</p>
 
-##### Inception Architecture:  
+### Inception Architecture:  
 <p align="center">
  <img src="/images/Introduction_CNN/googlenet_diagram.png" alt="" align="middle">
  <div align="center"> <a href="http://joelouismarino.github.io/images/blog_images/blog_googlenet_keras/googlenet_diagram.png"> Source</a></div>
@@ -281,7 +288,7 @@ The author proposed to use concatenation as a way to bypass the bottleneck but s
 
 
 Its core element is Inception module. In this module, we use different filter size to the same input and combine the 
-feature map using concatenation. In the module, we also implement some above tricks to improve the trainign process.  
+feature map using concatenation. In the module, we also implement some above tricks to improve the training process.  
 <p align="center">
  <img src="/images/Introduction_CNN/inception.jpg" alt="" align="middle">
  <div align="center">Inception block <a href="https://cpmajgaard.com/blog/assets/images/parking/inception.jpg"> Source</a></div>
@@ -315,14 +322,14 @@ Basically, it is the concept of Inception architecture that we want to introduce
 a regularization technique called *Label Smoothing*, but it is out of scope of this article.  
 
 ### 4. ResNet
-Unlike the last architectures when they simply increase the depth of the network to 
+Unlike the some architectures when they simply increase the depth of the network to 
 enhance the performance, this time, _Kaiming He and al_ have done something ground-breaking to improve the 
 classification. It really make a way for us to train hyper deep network with compelling performance. After VGGNet, Deep 
 Learning community has the impression that a deeper network will definitely bring us to a better 
 performance. Nevertheless, Kaiming He discovered that it is only true to some extent, after that the error rate may be 
 up. This fact is against our intuition: A deeper architecture must have a more representational power or at least have 
 a same performance with the shallow one in case the added layers are identity mappings. Based on that observation, he 
-wondered that instead of mapping the function $$f(x)$$, it may be easier to map the residual function _h(x) = f(x) - I_ 
+wondered that instead of mapping the function $$f(x)$$, it may be easier to map the residual function $$h(x) = f(x) - I$$ 
 (in which I is the identity mapping). After obtaining the approximation $$\hat{h}$$, we could easily add I back to get the 
 representation $$\hat{f}$$ of the underlying function $$f(x)$$.  
 
@@ -431,9 +438,9 @@ Its core element is called ResNext building block:
 </p>
 
 As you can see, ResNext building block is a fusion of residual block and Inception block. ResNeXt resembles Inception 
-that input will go though several convolution path, the outputs of these path are merged by the addition, unlike the 
+that input will go though several convolution paths, the outputs of these paths are merged by the addition, unlike the 
 concatenation in Inception. Before leaving the block, it will be added with the input like the ResNet in order to 
-produce the overall output of the block. All the path in the ResNeXt block share the same *topology*, which help to 
+produce the overall output of the block. All the paths in the ResNeXt block share the same *topology*, which helps to 
 simplify the hyper-parameters tuning.  
 >The transformations to be aggregated are all of the same topology. This design allows us to extend to any large number 
 of transformations without specialized design.  
@@ -497,9 +504,9 @@ width/depth of the network.
 More details about the implementation can be found in the paper [Aggregated Residual Transformations for Deep Neural 
 Networks](https://arxiv.org/pdf/1611.05431.pdf)  
 
-##### 4. DenseNet  
+### 6. DenseNet  
 DenseNet is the latest Deep Learning architecture published by _Gao Huang and al._. 
-From their point of view, the degradation in error rate when the network become deeper comes from the fact that the 
+From their point of view, the degradation in error rate when the network becomes deeper comes from the fact that the 
 information from input vanishes while passing the layers. So we consider that the shortcut in the residual blocks from 
 ResNet is one way to  maintain the information from the input till the end of the network.  
 
@@ -618,7 +625,7 @@ giving them to our classification models.
 
 <p align="center">
  <img src="/images/Introduction_CNN/guong-chieu-hau.jpg" alt="" align="middle">
- <div align="center">Object in object<a href="https://www.smart.com/content/dam/smart/HQ/master/index/Visuals/VP1/VP1_01HE_smart_range_autumn_campaign.jpg.imgresize.width=1920.name=imagevp1.jpg/1503650299540.jpg">Source</a></div>
+ <div align="center">Object in object <a href="https://www.smart.com/content/dam/smart/HQ/master/index/Visuals/VP1/VP1_01HE_smart_range_autumn_campaign.jpg.imgresize.width=1920.name=imagevp1.jpg/1503650299540.jpg">Source</a></div>
 </p>  
 
 <p align="center">
