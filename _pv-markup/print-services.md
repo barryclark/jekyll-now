@@ -1,14 +1,14 @@
-# Print your work
-
-## Picture the difference. 
-
-Outstanding prints on the finest Fujicolor Crystal Archive Supreme Paper. This isn't your typical photo paper—Fujicolor Crystal Archive Supreme is rarely used by other film labs because of its higher cost. It has a luscious thickness you have to see (and feel) to believe, with beautiful color reproduction, brilliant whites and excellent resistance to light fade.
-
 ---
 layout: page
 title: Print Services
 permalink: print-services.html
 ---
+
+# Print your work
+
+## Picture the difference.
+
+Outstanding prints on the finest Fujicolor Crystal Archive Supreme Paper. This isn't your typical photo paper—Fujicolor Crystal Archive Supreme is rarely used by other film labs because of its higher cost. It has a luscious thickness you have to see (and feel) to believe, with beautiful color reproduction, brilliant whites and excellent resistance to light fade.
 
 
 ## Standard Prints
@@ -46,12 +46,12 @@ permalink: print-services.html
 Add a professional + clean look to your proof prints at no charge. White borders are available for 3.5x5, 4x5, 4x6, 4.5x6, 5x5 and 5x7.
 
 | Size |  |
-| --- | --- | 
+| --- | --- |
 | **Small** | 1/4" |
 | **Medium** | 3/8" |
 | **Large** | 1/2" |
 
-## Panoramic Prints 
+## Panoramic Prints
 
 |Short Edge               |Long Edge / Lustre             |Long Edge / Metallic                   |
 | ----------------------- | ----------------------------- | ------------------------------------- |
@@ -63,7 +63,7 @@ Add a professional + clean look to your proof prints at no charge. White borders
 Over 1200 ppi
 more info
 
-## Order Prints 
+## Order Prints
 ![Image for prints] [(file:///C:/Users/AshleyLoney/Desktop/littleprints.jpg) (https://argus.mydakis.com/?currentOrder=JNNuCE5Ma_NyalJJ8xhC1w==&base_url=http://photovision.dakisphotofactory.com/&page_file=onlinePrint.html&page_version=1497537556&lang=en&session_id=5ffcea7d-0fe0-473d-a68a-81f27d71600e&retailer_guid=72580de0-7e71-012a-65be-00163e7d1945&cartUrl=cart.html&_ga=2.187790184.1711583671.1513372491-2015243592.1504913226)
 
 Create prints from 3.5x5" to 30x45" from your desktop or phone.
