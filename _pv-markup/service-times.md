@@ -15,5 +15,5 @@ _Service times are ultimately dependent on the volume of work coming in from our
 
 _Service times are in business days starting the first business day **after** your order is received. Our service times tend to increase in Summer and Fall, when incoming film is high (i.e. wedding season) and decrease in late Winter._
 
-#### [PRINT SERVICE TIMES](http://photovisionprints.com/print-service-times)
-#### [RUSH POLICY](http://photovisionprints.com/rush-policy)
+#### [PRINT SERVICE TIMES]({{ site.baseurl}}/print-service-times)
+#### [RUSH POLICY]({{ site.baseurl}}/rush-policy)
