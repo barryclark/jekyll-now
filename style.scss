@@ -429,7 +429,11 @@ article {
       display: none;
     }
     .right {
+      float: none;
       text-align: center;
+      .service-time {
+        display: block;
+      }
     }
   }
 }
