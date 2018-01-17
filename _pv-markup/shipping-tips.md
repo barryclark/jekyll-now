@@ -11,7 +11,7 @@ Liquids can be surprisingly harmful to unprocessed film. Placing your **film + o
 We've seen more than one roll of film lost into the postal abyss because it was sent in a flimsy envelope. Don't be that guy! Place your _bagged_ film + order form inside a **box** and use **plenty of cushioning** to ensure your film's safe journey. (Pro tip: [USPS Priority Mail boxes](http://store.usps.com/store/results/free-shipping-supplies/shipping-supplies/_/N-alnx4jZ7d0v8v) are free!)
 
 ## Get a tracking number
-We _highly recommend_ you send your film via a trackable method to ensure its safe arrival. Your film is precious cargo!
+We _highly recommend_ you send your film via a trackable method to ensure its safe arrival. Your film is precious cargo! Generally, we have found USPS Priority Mail to be the most economical choice. 
 
 ## Sending in more than one shoot?
 Not a problem! Please fill out **one order form per shoot** and **separate** each shoot + order form into its own zip-close bag.
