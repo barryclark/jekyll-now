@@ -86,6 +86,14 @@
   location_gr: Ελληνικό, Αττική, Ελλάδα
   location_en: Elliniko, Attica, Greece
 
+- company_gr: Northwind
+  company_en: Northwind
+  url: https://www.northwind.gr/
+  category_gr: Ανάκτηση δεδομένων
+  category_en: Data recovery
+  location_gr: Θεσσαλονίκη, Μακεδονία, Ελλάδα
+  location_en: Thessaloniki, Macedonia, Greece
+
 - company_gr: MultiCopter
   company_en: MultiCopter
   url: http://www.multicopter.gr
