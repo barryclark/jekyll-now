@@ -10,7 +10,7 @@ Tell us a bit about yourself and your style! This will help speed up the process
 2. [**Submit Preference Images**]({{ site.baseurl }}/submit-preference-images)
 
 ## 2. Fill out an Order Form
-Order forms are _**crucial**_. They help us ensure all your film has arrived safely and is processed to your specifications. Download + print one [here]({{ site.baseurl }}/images/PhotoVision-Film-Order-Form-Dec-2017.pdf).
+Order forms are _**crucial**_. They help ensure all your film has arrived safely and is processed to your specifications. [Download + print]({{ site.baseurl }}/images/PhotoVision-Film-Order-Form-Dec-2017.pdf).
 
 ## 3. Send in your Film + Order Form (*Safely*)
 1. Learn how to [safely ship]({{ site.baseurl }}/shipping-tips) your precious cargo.
@@ -20,7 +20,7 @@ Order forms are _**crucial**_. They help us ensure all your film has arrived saf
 **3775 Market St NE**
 **Salem OR 97301**
 
-# Your Vision
+# My Vision
 
 Our world-class color techs can best match your vision when you provide the road map! And the best road maps include both **preference images** and **written preferences**.
 
@@ -32,7 +32,7 @@ We recommend you send us **3-5 preference images** to keep on file. These images
 
 When choosing preference images, the most important aspect to consider is **skin tones**. Pick images where your subject fills the majority of the frame and has the **skin tones**, **density** and **contrast level** you are striving to achieve.
 
-## What should I write under My Vision?
+## What should I write under "Anything else we should know?"
 
 Focus on describing your **_overall ideal image_**. 
 - Warm / cool / neutral
@@ -86,7 +86,8 @@ When shooting film, your negatives act as your road map to understanding the con
 ## How do I read them?
 [Exposure Reference Sheets]({{ site.baseurl }}/exposure-reference-sheet) provide a thumbnail of every frame in your roll, allowing you to clearly and easily see how you exposed your film. Frames that are light with little detail represent overexposure, while frames that are dark with lots of detail represent underexposure.
 
-# Cool Details
+# Details OR
+# ??? Need heading
 
 ## Pricing?
 [Film services]({{ site.baseurl }}/film-services). [Print services]({{ site.baseurl }}/print-services).
