@@ -6,7 +6,7 @@ categories: Education Data
 
 #### Charter schools are stealing our students and destroying public education.
 
-#### Students are leaving public schools because they have better chart options.
+#### Students are leaving public schools because they have better charter options.
 
 I hope to eventually explore the two clickbait claims above. tl;dr You can skip to the [conclusions section](#conc) where I address them. The more general purpose of this post is to outline my process to explore this data starting from the raw form on the web. 
   
@@ -18,10 +18,12 @@ I will follow a process similar to [EliteDataScience](https://elitedatascience.c
   - [Model Training](#model)
 
 # Exploration<a name="explore"></a>
-CA Student & School Data Files can be found on [California's DoE website](https://www.cde.ca.gov/ds/sd/sd/). However, they are tab delimited .txt files with fields that vary across years ('81-92, '93-97, '98-08, '09-16). 
+CA Student & School Data Files can be found on [California's DoE website](https://www.cde.ca.gov/ds/sd/sd/). However, they are tab delimited .txt files with fields that vary across years. 
 
 ## Enrollment
-Data files are saved on a yearly basis.
+Within student enrollment data lies a story. I hope that visualizing the data will encourage others to tell their sides of that story and bring it to light. 
+
+Data files are saved on a yearly basis with minor field changes across 4 timespans (['81-92](https://www.cde.ca.gov/ds/sd/sd/fsenr81to92.asp), ['93-97](https://www.cde.ca.gov/ds/sd/sd/fsenr93.asp), ['98-08](https://www.cde.ca.gov/ds/sd/sd/fsenr98.asp), ['09-16](https://www.cde.ca.gov/ds/sd/sd/fsenr.asp)). Mainly the changes are to racial/ethnic designation codes, so analysis involving ethnicity will require some wrangling.
 
 # Cleaning<a name="clean"></a>
 I first convert them to data tables:
