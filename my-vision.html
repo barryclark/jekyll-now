@@ -100,7 +100,7 @@ title: My Vision
         if(validFileType(files[i])) {
           if(files[i].size > 2621440) {
             para.textContent = files[i].name + ' is too large. Please restrict your selection to files under 2.5MB.';
-            listItem.appendChild(para);
+            preview.appendChild(para);
           } else {
             var img = document.createElement('img');
             // img.src = createThumbnail(files[i]);
