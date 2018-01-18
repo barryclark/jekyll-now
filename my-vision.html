@@ -13,7 +13,7 @@ title: My Vision
     </li>
     <li>
       <label for="email">Email<span class="required_notification">* required</span></label>
-      <input type="email" name="email" placeholder="Use the email address from when you created your account"/>
+      <input id="email" type="email" name="email" placeholder="Use the email address from when you created your account"/>
     </li>
     <li>
       <h2>Preference Information</h2>
@@ -31,17 +31,27 @@ title: My Vision
         placeholder="(Example) &quot;Make my images the most beautiful anyone could ever possibly imagine.&quot;"/>
     </li>
     <li>
-      <button class="submit center" type="submit">Submit</button>
+      <button class="submit center" type="submit" disabled>Submit</button>
     </li>
   </ul>
 </form>
 
 <script type="text/javascript">
+  var emailInput = document.querySelector('#email');
   var input = document.querySelector('#image-uploader');
   var preview = document.querySelector('.image-preview');
   var fileTypes = ['image/jpeg', 'image/pjpeg', 'image/png'];
 
+  emailInput.addEventListener('change', enableSubmit);
   input.addEventListener('change', updateImageDisplay);
+
+  function enableSubmit() {
+    if(!emailInput.value){
+      return;
+    } else {
+      document.querySelector(".submit").disabled = false;
+    }
+  }
 
   function validFileType(file) {
     for(var i = 0; i < fileTypes.length; i++) {
