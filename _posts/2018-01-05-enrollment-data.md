@@ -18,19 +18,20 @@ I will follow a process similar to [EliteDataScience](https://elitedatascience.c
   - [Model Training](#model)
 
 # Exploration<a name="explore"></a>
-CA Student & School Data Files can be found on [California's DoE website](https://www.cde.ca.gov/ds/sd/sd/). However, they are tab delimited .txt files with fields that vary across years ('81-92, '93-97, '98-08, '09-16). So I first convert them to data tables:
+CA Student & School Data Files can be found on [California's DoE website](https://www.cde.ca.gov/ds/sd/sd/). However, they are tab delimited .txt files with fields that vary across years ('81-92, '93-97, '98-08, '09-16). 
+
+## Enrollment
+Data files are saved on a yearly basis.
+
+# Cleaning<a name="clean"></a>
+I first convert them to data tables:
+
     # Returns a datatable from a list of tab delimited files and a list of names
     listToDataTable <- function(file.list, names.list, id) {
       DT.list <- lapply(file.list, read.table, fill=TRUE, na.strings=c("", "NA"), sep ="\t", quote = "", header=TRUE)
       setattr(DT.list, 'names', names.list)
       return(rbindlist(DT.list, use.names=TRUE, fill=TRUE, idcol=id))
     }
-
-## Enrollment
-Data files are saved on a yearly basis.
-
-# Cleaning<a name="clean"></a>
-
 
 # Features<a name="feature"></a>
 
