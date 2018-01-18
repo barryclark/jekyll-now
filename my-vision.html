@@ -3,8 +3,10 @@ layout: default
 title: My Vision
 ---
 
-<form action="https://formspree.io/info@photovisionprints.com"
-      method="POST" name="my_vision_form" class="my_vision_form">
+<form action="//formspree.io/info@photovisionprints.com"
+      method="POST"
+      name="my-vision-form"
+      class="my-vision-form">
   <h1>My Vision</h1>
   <h3>Submit or update preferences<a href="{{ site.baseurl}}/common-questions#my-vision">&nbsp;Learn more</a></h3>
   <ul>
@@ -38,11 +40,13 @@ title: My Vision
 </form>
 
 <script type="text/javascript">
+  var myVisionForm = document.querySelector('.my-vision-form');
   var emailInput = document.querySelector('#email');
   var input = document.querySelector('#image-uploader');
   var preview = document.querySelector('.image-preview');
   var fileTypes = ['image/jpeg', 'image/pjpeg', 'image/png'];
 
+  myVisionForm.addEventListener('submit', submitForm);
   emailInput.addEventListener('change', enableSubmit);
   input.addEventListener('change', updateImageDisplay);
 
@@ -60,7 +64,6 @@ title: My Vision
         return true;
       }
     }
-
     return false;
   }
 
@@ -103,8 +106,6 @@ title: My Vision
             preview.appendChild(para);
           } else {
             var img = document.createElement('img');
-            // img.src = createThumbnail(files[i]);
-            // img.src = window.URL.createObjectURL(files[i]);
             img.src = window.URL.createObjectURL(files[i]);
             img.width = 130;
             img.onload = function() {
@@ -122,5 +123,17 @@ title: My Vision
         list.appendChild(listItem);
       }
     }
+  }
+
+  function submitForm(e) {
+    e.preventDefault();
+    // $.ajax({
+    // 	url: '//formspree.io/info@photovisionprints.com',
+    // 	method: 'POST',
+    // 	// data: $(this).serialize(),
+    //   data: {message: "hello!"},
+    // 	dataType: 'json'
+    // });
+    myVisionForm.reset();
   }
 </script>
