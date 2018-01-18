@@ -329,7 +329,7 @@ article {
   }
 }
 
-.contact_form {
+.contact_form, .my_vision_form {
   max-width: 700px;
   margin-left: 250px;
   @include mobile {
@@ -373,6 +373,14 @@ article {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+  }
+  .image-preview {
+    ul li {
+      padding: 10px;
+      position: relative;
+      display: inline-block;
+      width: 20%;
+    }
   }
   button.submit {
     width: 180px;
