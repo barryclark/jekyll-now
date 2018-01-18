@@ -8,7 +8,7 @@ categories: Education Data
 
 #### Students are leaving public schools because they have better charter options.
 
-I hope to eventually explore the two clickbait claims above. tl;dr You can skip to the [conclusions section](#conc) where I address them. The more general purpose of this post is to outline my process to explore this data starting from the raw form on the web. 
+I hope to eventually explore the two clickbait claims above. tl;dr You can skip to the [conclusions section](#conc) where I address them. The more general purpose of this post is to outline my process to explore California enrollment data starting from the raw form on the web. 
   
 I will follow a process similar to [EliteDataScience](https://elitedatascience.com/birds-eye-view):
   - [Exploratory Analysis](#explore)
@@ -23,7 +23,22 @@ CA Student & School Data Files can be found on [California's DoE website](https:
 ## Enrollment
 Within student enrollment data lies a story. I hope that visualizing the data will encourage others to tell their sides of that story and bring it to light. 
 
-Data files are saved on a yearly basis with minor field changes across 4 timespans (['81-92](https://www.cde.ca.gov/ds/sd/sd/fsenr81to92.asp), ['93-97](https://www.cde.ca.gov/ds/sd/sd/fsenr93.asp), ['98-08](https://www.cde.ca.gov/ds/sd/sd/fsenr98.asp), ['09-16](https://www.cde.ca.gov/ds/sd/sd/fsenr.asp)). Mainly the changes are to racial/ethnic designation codes, so analysis involving ethnicity will require some wrangling.
+Data files are saved on a yearly basis with minor field changes across 4 timespans (['81-92](https://www.cde.ca.gov/ds/sd/sd/fsenr81to92.asp), ['93-97](https://www.cde.ca.gov/ds/sd/sd/fsenr93.asp), ['98-08](https://www.cde.ca.gov/ds/sd/sd/fsenr98.asp), ['09-16](https://www.cde.ca.gov/ds/sd/sd/fsenr.asp)). Mainly, the changes are to racial/ethnic designation codes, so analysis involving ethnicity will require some wrangling.
+
+Here is quick exploration of '92, '97, '08, '16 enrollment data.
+
+# head()
+
+    > head(df0809)
+            CDS_CODE    COUNTY              DISTRICT              SCHOOL ETHNIC GENDER KDGN GR_1 GR_2 GR_3 GR_4 GR_5 GR_6 GR_7 GR_8 UNGR_ELM GR_9 GR_10 GR_11 GR_12 UNGR_SEC ENR_TOTAL ADULT
+    1 33671243331071 Riverside Moreno Valley Unified Vista del Lago High      4      M    0    0    0    0    0    0    0    0    0        0    5    14     7     6        0        32     0
+    2 33671243331071 Riverside Moreno Valley Unified Vista del Lago High      5      F    0    0    0    0    0    0    0    0    0        0  199   225   183   151        0       758     0
+    3 33671243331071 Riverside Moreno Valley Unified Vista del Lago High      5      M    0    0    0    0    0    0    0    0    0        0  239   229   191   152        0       811     0
+    4 33671243331071 Riverside Moreno Valley Unified Vista del Lago High      8      M    0    0    0    0    0    0    0    0    0        0    3     5     3     1        0        12     0
+    5 33671243331071 Riverside Moreno Valley Unified Vista del Lago High      2      M    0    0    0    0    0    0    0    0    0        0   10    13     8     9        0        40     0
+    6 33671243331071 Riverside Moreno Valley Unified Vista del Lago High      1      M    0    0    0    0    0    0    0    0    0        0    1     2     3     1        0         7     0
+
+# dim()
 
 # Cleaning<a name="clean"></a>
 I first convert them to data tables:
