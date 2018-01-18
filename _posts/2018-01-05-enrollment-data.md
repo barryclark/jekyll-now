@@ -26,13 +26,14 @@ Data files are saved on a yearly basis.
 # Cleaning<a name="clean"></a>
 I first convert them to data tables:
 
+```RMarkdown
     # Returns a datatable from a list of tab delimited files and a list of names
     listToDataTable <- function(file.list, names.list, id) {
       DT.list <- lapply(file.list, read.table, fill=TRUE, na.strings=c("", "NA"), sep ="\t", quote = "", header=TRUE)
       setattr(DT.list, 'names', names.list)
       return(rbindlist(DT.list, use.names=TRUE, fill=TRUE, idcol=id))
     }
-
+```
 # Features<a name="feature"></a>
 
 
