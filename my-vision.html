@@ -87,6 +87,7 @@ title: My Vision
     } else if(files.length > 5) {
       input.value = "";
       var para = document.createElement('p');
+      para.setAttribute("class", "required_notification");
       para.textContent = 'Please limit your selection to 5 (five) images or less';
       preview.appendChild(para);
     } else {
@@ -95,6 +96,7 @@ title: My Vision
       for(var i = 0; i < files.length; i++) {
         var listItem = document.createElement('li');
         var para = document.createElement('p');
+        para.setAttribute("class", "required_notification");
         if(validFileType(files[i])) {
           if(files[i].size > 2621440) {
             para.textContent = files[i].name + ' is too large. Please restrict your selection to files under 2.5MB.';
