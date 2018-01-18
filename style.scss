@@ -53,7 +53,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-h1 {
+h1, .site-name {
   font-size: 30px;
   a {
     color: inherit;
@@ -229,6 +229,7 @@ header {
   font-weight: 300;
   font-size: 28px;
   letter-spacing: 1px;
+  line-height: 1.7;
 }
 
 .site-description {
