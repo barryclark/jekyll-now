@@ -3,7 +3,7 @@ layout: post
 title: "Toastmaster's Icebreaker Speech: The Story of Joe"
 tags: [culture]
 keywords: [toastmaster, toastmaster's, toastmaster's club, icebreaker, icebreaker speech, toastmaster's icebreaker speech]
-image: /images/toastmasters/joe-icebreaker.png
+image: /images/toastmasters/joe-icebreaker-share.png
 ---
 
 Last November, my wife and I joined our local Toastmaster's club. Toastmaster's, for those who are unfamiliar, is a public-speaking development group. I'm not sure how good a speaker I am, but I know regardless of how good or bad I am, I want to improve. In fact, one of my [new year's resolutions for 2018](https://hendrixjoseph.github.io/2018-new-years-resolutions-goals/) is professional a personal development. So Toastmaster's just makes sense.
