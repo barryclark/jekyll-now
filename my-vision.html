@@ -3,11 +3,7 @@ layout: default
 title: My Vision
 ---
 
-<form action="//formspree.io/digijim@gmail.com"
-      method="POST"
-      acccept="application/json"
-      name="my-vision-form"
-      class="my-vision-form">
+<form class="my-vision-form">
   <input type="hidden" name="_subject" value="Customer Preference Submission">
   <input style="display:none" type="text" name="_gotcha">
   <h1>My Vision</h1>
@@ -93,7 +89,7 @@ title: My Vision
               para.textContent = files[i].name + ' is too large. Please restrict your selection to files under 2.5MB.';
               $('.image-preview').append(para);
             } else {
-              imageList.push('File' + [i] + ': ' + files[i].name);
+              imageList.push('File' + (i + 1) + ': ' + files[i].name);
               var img = document.createElement('img');
               img.src = window.URL.createObjectURL(files[i]);
               img.width = 130;
@@ -113,26 +109,32 @@ title: My Vision
       }
     });
 
-    $('.my-vision-form').submit(function(e) {
-      var formData = this.serialize();
-      formData.push(imageList.serialize());
+    $('.submit').click(function(e) {
+      // formData.push(imageList.serialize());
       e.preventDefault();
+      var email = $('#email').val();
+      var images = $('#image-uploader').val();
+      var instructions = $('#instructions').val();
+      var data = {
+        '_subject': 'Customer Preferences Submission',
+        'email': email,
+        'images': images,
+        'instructions': instructions
+      };
       $.ajax({
       	url: '//formspree.io/digijim@gmail.com',
       	method: 'POST',
-      	data: formData,
+      	data: data,
       	dataType: 'json',
     		beforeSend: function() {
-          this.append('<p class="required_notification sending">Sending message…</p>');
+          $('.my-vision-form').append('<p class="required_notification sending">Sending message…</p>');
     		},
     		success: function(data) {
-          this.reset();
-          document.querySelector('.sending').remove();
-          this.append('<p class="required_notification">Thank you. Your preference information has been successfully submitted!</p>');
+          window.location.replace("{{ site.baseurl }}/my-vision-thanks");
     		},
     		error: function(err) {
-          document.querySelector('.sending').remove();
-          this.append('<p class="required_notification">Oops, there was an error.</p>');
+          $('.sending').remove();
+          $('.my-vision-form').append('<p class="required_notification">Oops, there was an error.</p>');
     		}
       });
     });
