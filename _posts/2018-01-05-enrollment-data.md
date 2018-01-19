@@ -33,6 +33,8 @@ Here is quick exploration of '92, '97, '08, '16 enrollment data.
 df9798 <- read.table("./Data/ent1997-1998.txt", fill=TRUE, na.strings=c("", "NA"), sep ="\t", quote = "", header=TRUE)
 df0809 <- read.table("./Data/rol2008-2009.txt", fill=TRUE, na.strings=c("", "NA"), sep ="\t", quote = "", header=TRUE)
 df1617 <- read.table("./Data/rol2016-2017.txt", fill=TRUE, na.strings=c("", "NA"), sep ="\t", quote = "", header=TRUE)
+```
+```
 > head(df0809)
         CDS_CODE    COUNTY              DISTRICT              SCHOOL ETHNIC GENDER KDGN GR_1 GR_2 GR_3 GR_4 GR_5 GR_6 GR_7 GR_8 UNGR_ELM GR_9 GR_10 GR_11 GR_12 UNGR_SEC ENR_TOTAL ADULT
 1 33671243331071 Riverside Moreno Valley Unified Vista del Lago High      4      M    0    0    0    0    0    0    0    0    0        0    5    14     7     6        0        32     0
@@ -72,13 +74,14 @@ All of the data contains a CDS_CODE that is a unique identifier for County, Dist
 # Cleaning<a name="clean"></a>
 I first convert them to data tables:
 
-    # Returns a datatable from a list of tab delimited files and a list of names
-    listToDataTable <- function(file.list, names.list, id) {
-      DT.list <- lapply(file.list, read.table, fill=TRUE, na.strings=c("", "NA"), sep ="\t", quote = "", header=TRUE)
-      setattr(DT.list, 'names', names.list)
-      return(rbindlist(DT.list, use.names=TRUE, fill=TRUE, idcol=id))
-    }
-
+```R
+# Returns a datatable from a list of tab delimited files and a list of names
+listToDataTable <- function(file.list, names.list, id) {
+DT.list <- lapply(file.list, read.table, fill=TRUE, na.strings=c("", "NA"), sep ="\t", quote = "", header=TRUE)
+setattr(DT.list, 'names', names.list)
+return(rbindlist(DT.list, use.names=TRUE, fill=TRUE, idcol=id))
+}
+```
 # Features<a name="feature"></a>
 
 
