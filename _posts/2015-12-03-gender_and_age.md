@@ -5,7 +5,7 @@ tags: [family tree]
 keywords: [gender, age, statistics, data mining]
 javascripts: [/js/d3.min.js, /js/c3.min.js]
 deferedjavascripts: [/js/familyTree/gender.min.js]
-csses: [/css/c3.css, /css/gender.css]
+csses: [/css/c3.min.css, /css/gender.css]
 image: /images/gender.jpg
 thumbnail: true
 ---
