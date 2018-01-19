@@ -5,7 +5,7 @@ tags: [family tree, math]
 keywords: [age, statistics, data mining]
 javascripts: [/js/d3.min.js, /js/c3.min.js]
 deferedjavascripts: [/js/familyTree/ageChart.min.js]
-csses: [/css/c3.css]
+csses: [/css/c3.min.css]
 image: /images/Family-Tree-icon-200.png
 ---
 
