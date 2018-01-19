@@ -3,11 +3,13 @@ layout: default
 title: My Vision
 ---
 
-<form action="//formspree.io/info@photovisionprints.com"
 <form action="//formspree.io/digijim@gmail.com"
       method="POST"
+      acccept="application/json"
       name="my-vision-form"
       class="my-vision-form">
+  <input type="hidden" name="_subject" value="Customer Preference Submission">
+  <input style="display:none" type="text" name="_gotcha">
   <h1>My Vision</h1>
   <h3>Submit or update preferences<a href="{{ site.baseurl}}/common-questions#my-vision">&nbsp;Learn more</a></h3>
   <ul>
@@ -23,119 +25,116 @@ title: My Vision
     </li>
     <li>
       <label for="image-uploader">Preference Images (click "Choose Files" or drag-and-drop files here)</label>
-      <input id="image-uploader" name="image-uploader" type="file" multiple accept=".png, .jpg, .jpeg" limit="5"/>
+      <input id="image-uploader" name="image-uploader" type="file" multiple accept=".png, .jpg, .jpeg"/>
       <div class="image-preview">
         <p>(No files currently selected for upload)</p>
       </div>
     </li>
     <li>
       <label for="instructions">Anything else we should know?<a href="{{ site.baseurl}}/common-questions#preferences">&nbsp;Learn more</a></label>
-      <input type="text" name="instructions" maxlength="280"
+      <input id="instructions" type="text" name="instructions" maxlength="280"
         placeholder="(Example) &quot;Make my images the most beautiful anyone could ever possibly imagine.&quot;"/>
     </li>
-	  <input type="hidden" name="_subject" value="Customer Preference Submission">
     <li>
       <button class="submit center" type="submit" disabled>Submit</button>
     </li>
   </ul>
 </form>
 
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript">
-  var myVisionForm = document.querySelector('.my-vision-form');
-  var emailInput = document.querySelector('#email');
-  var input = document.querySelector('#image-uploader');
-  var preview = document.querySelector('.image-preview');
-  var fileTypes = ['image/jpeg', 'image/pjpeg', 'image/png'];
+  $(document).ready(function(){
+    var fileTypes = ['image/jpeg', 'image/pjpeg', 'image/png'];
+    var imageList = new Array();
 
-  myVisionForm.addEventListener('submit', submitForm);
-  emailInput.addEventListener('change', enableSubmit);
-  input.addEventListener('change', updateImageDisplay);
-
-  function enableSubmit() {
-    if(!emailInput.value){
-      return;
-    } else {
-      document.querySelector(".submit").disabled = false;
-    }
-  }
-
-  function validFileType(file) {
-    for(var i = 0; i < fileTypes.length; i++) {
-      if(file.type === fileTypes[i]) {
-        return true;
+    $('#email').change(function() {
+      if($(this).val()){
+        $('.submit').prop('disabled', false);
       }
-    }
-    return false;
-  }
+    });
 
-  function returnFileSize(number) {
-    if(number < 1024) {
-      return number + 'bytes';
-    } else if(number > 1024 && number < 1048576) {
-      return (number/1024).toFixed(1) + 'KB';
-    } else if(number > 1048576) {
-      return (number/1048576).toFixed(1) + 'MB';
-    }
-  }
-
-  function updateImageDisplay() {
-    while(preview.firstChild) {
-      preview.removeChild(preview.firstChild);
-    }
-
-    var files = input.files;
-    if(!files.length) {
-      var para = document.createElement('p');
-      para.textContent = 'No files currently selected for upload';
-      preview.appendChild(para);
-    } else if(files.length > 5) {
-      input.value = "";
-      var para = document.createElement('p');
-      para.setAttribute("class", "required_notification");
-      para.textContent = 'Please limit your selection to 5 (five) images or less';
-      preview.appendChild(para);
-    } else {
-      var list = document.createElement('ul');
-      preview.appendChild(list);
-      for(var i = 0; i < files.length; i++) {
-        var listItem = document.createElement('li');
-        var para = document.createElement('p');
-        para.setAttribute("class", "required_notification");
-        if(validFileType(files[i])) {
-          if(files[i].size > 2621440) {
-            para.textContent = files[i].name + ' is too large. Please restrict your selection to files under 2.5MB.';
-            preview.appendChild(para);
-          } else {
-            var img = document.createElement('img');
-            img.src = window.URL.createObjectURL(files[i]);
-            img.width = 130;
-            img.onload = function() {
-              window.URL.revokeObjectURL(this.src);
-            }
-            img.setAttribute("title", files[i].name + " -- " + returnFileSize(files[i].size));
-
-            listItem.appendChild(img);
-          }
-        } else {
-          para.textContent = '"' + files[i].name + '" is not a valid file type. Update your selection.';
-          listItem.appendChild(para);
+    function validFileType(file) {
+      for(var i = 0; i < fileTypes.length; i++) {
+        if(file.type === fileTypes[i]) {
+          return true;
         }
+      }
+      return false;
+    }
 
-        list.appendChild(listItem);
+    function returnFileSize(number) {
+      if(number < 1024) {
+        return number + 'bytes';
+      } else if(number > 1024 && number < 1048576) {
+        return (number/1024).toFixed(1) + 'KB';
+      } else if(number > 1048576) {
+        return (number/1048576).toFixed(1) + 'MB';
       }
     }
-  }
 
-  function submitForm(e) {
-    e.preventDefault();
-    // $.ajax({
-    // 	url: '//formspree.io/info@photovisionprints.com',
-    // 	method: 'POST',
-    // 	// data: $(this).serialize(),
-    //   data: {message: "hello!"},
-    // 	dataType: 'json'
-    // });
-    myVisionForm.reset();
-  }
+    $('#image-uploader').change(function() {
+      $('.image-preview').empty();
+      var files = this.files;
+
+      if(files.length === 0){
+        $('.image-preview').append('<p class="required_notification">No files currently selected for upload</p>');
+      } else if(files.length > 5) {
+        $('.image-preview').append('<p class="required_notification">Please limit your selection to 5 (five) images or less</p>');
+      } else {
+        var list = document.createElement('ul');
+        $('.image-preview').append(list);
+        for(var i = 0; i < files.length; i++) {
+          var listItem = document.createElement('li');
+          var para = document.createElement('p');
+          para.setAttribute("class", "required_notification");
+          if(validFileType(files[i])) {
+            if(files[i].size > 2621440) {
+              para.textContent = files[i].name + ' is too large. Please restrict your selection to files under 2.5MB.';
+              $('.image-preview').append(para);
+            } else {
+              imageList.push('File' + [i] + ': ' + files[i].name);
+              var img = document.createElement('img');
+              img.src = window.URL.createObjectURL(files[i]);
+              img.width = 130;
+              img.onload = function() {
+                window.URL.revokeObjectURL(this.src);
+              }
+              img.setAttribute("title", files[i].name + " -- " + returnFileSize(files[i].size));
+
+              listItem.appendChild(img);
+            }
+          } else {
+            para.textContent = '"' + files[i].name + '" is not a valid file type. Update your selection.';
+            $('.image-preview').append(para);
+          }
+          list.appendChild(listItem);
+        }
+      }
+    });
+
+    $('.my-vision-form').submit(function(e) {
+      var formData = this.serialize();
+      formData.push(imageList.serialize());
+      e.preventDefault();
+      $.ajax({
       	url: '//formspree.io/digijim@gmail.com',
+      	method: 'POST',
+      	data: formData,
+      	dataType: 'json',
+    		beforeSend: function() {
+          this.append('<p class="required_notification sending">Sending message…</p>');
+    		},
+    		success: function(data) {
+          this.reset();
+          document.querySelector('.sending').remove();
+          this.append('<p class="required_notification">Thank you. Your preference information has been successfully submitted!</p>');
+    		},
+    		error: function(err) {
+          document.querySelector('.sending').remove();
+          this.append('<p class="required_notification">Oops, there was an error.</p>');
+    		}
+      });
+    });
+  });
 </script>
