@@ -113,12 +113,11 @@ title: My Vision
       // formData.push(imageList.serialize());
       e.preventDefault();
       var email = $('#email').val();
-      var images = $('#image-uploader').val();
       var instructions = $('#instructions').val();
       var data = {
         '_subject': 'Customer Preferences Submission',
         'email': email,
-        'images': images,
+        'images': imageList, // culled when creating thumbnails in #image-uploader.change function above 
         'instructions': instructions
       };
       $.ajax({
