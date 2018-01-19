@@ -5,7 +5,7 @@ tags: [family tree, math]
 keywords: [deaths, age, statistics, data mining]
 javascripts: [/js/d3.min.js, /js/c3.min.js]
 deferedjavascripts: [/js/familyTree/meanMedianDeathYear.min.js]
-csses: [/css/c3.css]
+csses: [/css/c3.min.css]
 image: /images/covers/meanMedianDeathYear.png
 ---
 
