@@ -3,7 +3,7 @@ layout: post
 title: What is "a genus of bugs"?
 ---
 
-When [Safeguarding](Safeguarding) we want to reduce the size of a genus of bugs by 15% each time. So what makes a genus of bugs?
+When [Safeguarding](/Safeguarding) we want to reduce the size of a genus of bugs by 15% each time. So what makes a genus of bugs?
 
 We were working on code that dealt with attributes. Attributes have names and values. Attribute Values are exact-match, case-sensitive strings, but Attribute Names are case-_insensitive_. We'd sometimes forget and write a bug:
 
