@@ -2,4 +2,7 @@
 layout: post
 title: some usefull Azure Shell 2.0 commands 
 ---
-#TBD
+
+```bash
+az vm start --ids  $(az vm list --query "[].id" -o tsv -g MAILKATLABXYZ| grep -v horde)
+```
