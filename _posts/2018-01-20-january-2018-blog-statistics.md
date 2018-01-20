@@ -13,21 +13,21 @@ Two of the tools I use are from Google. Namely, these are [Google Analytics](htt
 
 ## Alexa
 
-* Global Rank &rarr 2,476,245  
-* Rank in the United States &rarr 452,281
-* Total Sites Linking In &rarr 80
+* Global Rank &rarr; 2,476,245  
+* Rank in the United States &rarr; 452,281
+* Total Sites Linking In &rarr; 80
 
 ## Google Analytics
 
-* Sessions &rarr 1,356
-* Users &rarr 970
-* Pageviews &rarr 1,989
+* Sessions &rarr; 1,356
+* Users &rarr; 970
+* Pageviews &rarr; 1,989
 
 ## Adsense
 
-* Estimated earnings &rarr $1.84
-* Impressions &rarr 1,174
-* Clicks &rarr 1
+* Estimated earnings &rarr; $1.84
+* Impressions &rarr; 1,174
+* Clicks &rarr; 1
 
 ## Ratios
 
