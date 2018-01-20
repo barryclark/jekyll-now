@@ -6,10 +6,11 @@
 name: Ziemek Borowski 
 
 # Short bio or description (displayed in the header)
-description: ziembor blog
+description: ziembor blog / EN
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
+avatar: https://pl.gravatar.com/userimage/3871591/2ad31b5b77afe8db20c20b4282db22f2.jpeg
+#avatar:  https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
 
 #
 # Flags below are optional
@@ -19,11 +20,11 @@ avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/je
 footer-links:
   dribbble:
   email: ziemek@ziembor.pl
-  facebook:
+  facebook: ziembor
   flickr:
-  github: 
+  github: ziembor
   instagram:
-  linkedin:
+  linkedin: 
   pinterest:
   rss: # just type anything here for a working RSS icon
   twitter: ziembor
