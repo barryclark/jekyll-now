@@ -46,6 +46,6 @@ Now that kind of bug can't easily happen, but there's a more general category of
 
 After addressing that one, the next might be "equality between values in the domain".
 
-Like in biology, the boundaries of a genus of bugs are always changing, although in software the change can be very fast. Unlike bioligy, the key is to pick a genus that is big enough to be interesting, but small enough to fit in your brain.
+Like in biology, the boundaries of a genus of bugs are always changing, although in software the change can be very fast. Unlike biology, the key is to pick a genus that is big enough to be interesting, but small enough to fit in your brain.
 
-I used to say "class of bugs", but when people heard me say "there's a large class of bugs and we should shrink it", they thought I meant "a `class` in code that has too many responsibilities and is buggy, which should be broken up and cleaned". And yes, that is a common occurrence, it's not quite why I'm trying to say right now, so I switched to "genus".
+I used to say "class of bugs", but when people heard me say "there's a large class of bugs and we should shrink it", they thought I meant "a `class` in code that has too many responsibilities and is buggy, which should be broken up and cleaned". And yes, that is a common occurrence, it's not quite what I'm trying to say right now, so I switched to "genus".
