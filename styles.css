@@ -1,0 +1,241 @@
+/* Global Layout Set-up */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  color: #222;
+  background: #f7f5f0;
+}
+/* Link Styles */
+
+a {
+  text-decoration: none;
+  color: #3399ff;
+}
+a:hover {
+  color: #6633ff;
+}
+
+/* Section Styles */
+
+.main-nav {
+  width: 100%;
+  background: black;
+  min-height: 30px;
+  padding: 10px;
+  position: fixed;
+  text-align: center;
+}
+.nav {
+  display: flex;
+  justify-content: space-around;
+  font-weight: 700;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+}
+.nav .name {
+  display: none;
+}
+.nav li {
+  padding: 5px 10px 10px 10px;
+}
+.nav a {
+  transition: all .5s;
+}
+.nav a:hover {
+  color: white
+}
+
+header {
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('images/big-bend.jpg') no-repeat top center ;
+  background-size: cover;
+  overflow: hidden;
+  padding-top: 60px;
+}
+
+.nowheader {
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('images/prague.JPG') no-repeat top center ;
+  background-size: cover;
+  overflow: hidden;
+  padding-top: 60px;
+}
+
+.resumeheader {
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('images/mexico-city.jpg') no-repeat top center ;
+  background-size: cover;
+  overflow: hidden;
+  padding-top: 60px;
+}
+
+header {
+  line-height: 1.5;
+}
+header .profile-image {
+  margin-top: 50px;
+  width: 150px;
+  height: 150px;
+  border-radius: 5px;
+  border: 3px solid white;
+  transition: all .5s;
+}
+header .profile-image:hover {
+  transform: scale(1.1);
+}
+.tag {
+  background-color: #222;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  display: table;
+  margin: 10px auto;
+}
+
+.location {
+  background-color: #222;
+  color: white;
+}
+
+.photo-credit {
+  background-color: #222;
+  color: white;
+  opacity: 0.6;
+}
+
+.card {
+  margin: 30px;
+  padding: 20px 40px 40px;
+  max-width: 600px;
+  text-align: left;
+  background: #fff;
+  border-bottom: 4px solid #ccc;
+  border-radius: 6px;
+}
+.card:hover {
+  border-color: #3399ff;
+}
+
+ul.skills {
+  padding: 0;
+  text-align: center;
+}
+
+.skills li {
+  border-radius: 6px;
+  display: inline-block;
+  background: #ff9904;
+  color: white;
+  padding: 5px 10px;
+  margin: 2px;
+}
+
+.skills li:nth-child(odd) {
+  background: #0399ff;
+}
+
+footer {
+  width: 100%;
+  min-height: 30px;
+  padding: 20px 0 40px 20px;
+}
+
+footer .copyright {
+  top: -8px;
+  margin-right: 20px;
+  font-size: .75em;
+}
+
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer ul li {
+  display: inline-block;
+}
+
+a.social {
+  display: inline-block;
+  text-indent: -9999px;
+  margin-left: 5px;
+  width: 30px;
+  height: 30px;
+  background-size: 30px 30px;
+  opacity: .5;
+  transition: all .25s;
+}
+a.twitter {
+  background-image: url(images/twitter.svg);
+}
+a.linkedin {
+  background-image: url(images/linkedin.svg);
+}
+a.github {
+  background-image: url(images/github.svg);
+}
+a.social:hover {
+  opacity: 1;
+}
+.clearfix {
+  clear: both;
+}
+
+/* Styles for larger screens */
+@media screen and (min-width: 720px) {
+
+  .flex {
+      display: flex;
+      max-width: 1200px;
+      justify-content: space-around;
+      margin: 0 auto;
+  }
+
+  header {
+    min-height: 450px;
+  }
+
+  .nav {
+    max-width: 1200px;
+  }
+
+  .nav .name {
+    display: block;
+    margin-right: auto;
+    color: white;
+  }
+
+  main {
+    padding-top: 50px;
+  }
+
+  main p {
+    line-height: 1.6em;
+  }
+
+  footer {
+    font-size: 1.3em;
+    max-width: 1200px;
+    margin: 40px auto;
+  }
+
+}
+
+h3 {
+  color: 222;
+}
+
+.card-title {
+  text-align: center;
+  border: solid black 2px;
+  border-radius: 10px;
+  margin-top: 50px;
+}
