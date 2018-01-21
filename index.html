@@ -1,18 +1,65 @@
----
-layout: default
----
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Jacob Poterbin's Profile</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900" rel="stylesheet">
+</head>
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
+<body>
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+    <nav>
+      <div class="main-nav">
+          <ul class="nav">
+            <li class="name">Jacob Poterbin</li>
+            <li><a href="index.html">About</a></li>
+            <li><a href="resume.html">Work</a></li>
+            <li><a href="now.html">What I'm Doing Now</a></li>
+          </ul>
+      </div>
+    </nav>
 
-      <div class="entry">
-        {{ post.excerpt }}
+    <header>
+      <img src="images/profile.png" alt="Picture of Jake Poterbin" class="profile-image">
+      <h1 class="tag name">Jacob Poterbin</h1>
+      <p class="tag location">Currently in Austin, Texas.</p>
+      <p class="tag photo-credit">Photo: Big Bend National Park, 2016</p>
+    </header>
+
+    <main class="flex">
+      <div class="card">
+        <article>
+          <h2>Me in 10 Seconds</h2>
+          <p>I thoroughly enjoy leading ideas from back-of-the-napkin to valued services. See <a href="https://www.roverpass.com" target="blank">RoverPass.com.</a></p>
+            <p>My work relies on my strengths: taking full responsibility, thinking about the future, making sure each puzzle piece fits together, being empathetic and moving the day-to-day forward with organized collaboration.</p>
+  					<p>I strongly believe in the power of words, a good first impression and a pragmatic approach. I seek out ideas, people, and experiences that have a positive, lasting impact. I enjoy seeing multiple viewpoints to create something cohesive.</p>
+          <p><a href="now.html">See what I'm up to now.</a></p>
+        </article>
       </div>
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
-</div>
+      <!--<div class="card">
+        <h2 class="card-title">Goals</h2>
+        <p>I want to master the process of building web sites and increase my knowledge, skills and abilities in:</p>
+        <ul class="skills">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Ruby</li>
+          <li>Rails</li>
+        </ul>
+        <p>I’d like to work for a web design firm helping clients create an impressive online presence.</p>
+      </div> -->
+
+    </main>
+    <footer>
+      <ul>
+        <li><a href="https://twitter.com/jpoterbin" target="_blank" class="social twitter">Twitter</a></li>
+        <li><a href="https://www.linkedin.com/in/jpoterbin" target="_blank" class="social linkedin">LinkedIn</a></li>
+        <li><a href="https://github.com/jpoterbin" target="_blank" class="social github">Github</a></li>
+      </ul>
+      <p class="copyright">Copyright 2017, Jacob Poterbin</p>
+    </footer>
+  </body>
+  </html>
