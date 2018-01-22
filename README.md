@@ -26,4 +26,4 @@ $ sudo apt-get install ruby-dev
 2. Clone the local repo, and make a local development enviroment as in the section `Local Development`.
 3. Make your post in the `_posts` folder. All files must to write according to [kramdown](https://kramdown.gettalong.org/documentation.html) syntax. You can use latex in your file see https://github.com/ChappiebotAI/chappiebotai.github.io/blob/master/_posts/2018-1-7-reinforce-and-neural-network.md for a example.
 4. Commit your changes and create a pull request
-
+5. To write a post as draft please follow this guide [https://jekyllrb.com/docs/drafts/](https://jekyllrb.com/docs/drafts/)
