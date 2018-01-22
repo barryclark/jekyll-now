@@ -47,7 +47,7 @@
 {% endcapture %}{% assign jbcache = nil %}<!DOCTYPE html>
 <html lang="en-us">
 	<head itemscope itemtype="http://schema.org/WebSite">
-		<title itemprop='name'>{% if page.layout == 'tag' %}Check out the latest {{ page.title | xml_escape }} posts on {{ site.name }}{% else %}{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }}{% unless include.isPost %}– {{ site.description }}{% endunless %}{% endif %}</title>
+		<title itemprop='name'>{% if page.layout == 'tag' %}Check out the latest {{ page.title | xml_escape }} posts on {{ site.name }}{% else %}{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }}{% unless layout.isPost %} – {{ site.description }}{% endunless %}{% endif %}</title>
 		{% if page.noindex or layout.noindex %}<meta name="robots" content="noindex" />{% endif %}
 		
 		{% include metadata/meta.html %}
