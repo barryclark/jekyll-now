@@ -3,10 +3,10 @@ layout: post
 title: Convolution Neural Network in OtoNhanh.vn
 author: hoangbm
 ---
-Nowadays, Deep Learning become more and more popular in many domains like Finance, 
+Nowadays, Deep Learning becomes more and more popular in many domains like Finance, 
 E-Commerce. At [OtoNhanh.vn](https://otonhanh.vn), we employ Deep Learning to tackle the problems of Natural Language 
 Processing to deal with the requests of the user in our site or of Computer Vision in the illustration of cars. In this 
-blog, we will focus on the network architecture that we consider to use in our Computer Vision application. There will 
+blog, we will focus on the network architectures that we consider to use in our Computer Vision application. There will 
 be 3 parts in this blog:
 - Part 1: ConvNet and its principal elements
 - Part 2: ConvNet architectures 
@@ -37,10 +37,10 @@ with some differentiable function that may or may not have parameters.
 It plays the roles of feature detector in ConvNet. In more detailed, it computes the 
 dot product of 3-D kernel with local region from input image. This sliding-window method can be considered as 
 convolution operation, this is the origin of its name. Each kernel will detect a same feature in every region of the 
-image and send it to the higher layer to construct more delicate feature detector. After the convolution, we prefer to 
-apply some sorts of activation function like ReLU or tanh... to adapt to the non-linearity.  
+image and will send it to the higher layer to construct more delicate feature detector. After the convolution, we prefer 
+to apply some sorts of activation function like ReLU or tanh... to adapt to the non-linearity.  
 Convolution has been used previously with some man-made filter like Laplace or Sobel to detect feature in the image, 
-however, ConvNet proposes a way to *learn* the filter automatically.  
+however, ConvNet proposes a way to *learn* the filters automatically.  
 
 <p align="center">
  <img src="/images/Introduction_CNN/conv-layer.gif" alt="" align="middle">
@@ -48,7 +48,7 @@ however, ConvNet proposes a way to *learn* the filter automatically.
 </p> 
 
 ### Pooling Layer  
-The most two popular pooling operation is average pooling and max pooling. This 
+The most two popular pooling operation are average pooling and max pooling. This 
 layer is used to achieve the invariance during the training. It means that if we modify the input a little bit, it won't
 affect the overall result much. This invariance is very important in the task of classification as we may capture the 
 same object but from the different pose or it may have capture the noise as well.  
@@ -108,7 +108,7 @@ layer and fully connected layer.
 </p>  
  
     
-- One thing to notice: The above architecture is suitable for ImageNet whose sizes are large, for other datasets like 
+- One thing to notice: The above architecture is suitable for ImageNet whose size is large, for other datasets like 
 MNIST or CIFAR10, we have to reduce some layers to avoid Vanish Gradient.  
 Source code for AlexNet:
 
@@ -209,7 +209,7 @@ large-scale image recognition](https://arxiv.org/pdf/1409.1556.pdf).
 
 ## 3. Inception
 Along with VGGNet, Inception is also a contestant in the 2014 ILSVRC who gained much 
-attention from the community. While VGGNet give us a simple way to reinforce the result by stacking more layers, 
+attention from the community. While VGGNet gives us a simple way to reinforce the result by stacking more layers, 
 Inception gives us many new notions which, in my opinion, inspires many successors. Inception architecture sticks to a 
 very famous meme in the internet:  
 
@@ -222,8 +222,8 @@ There are two papers about this architecture that worth noticing:
 [Going Deeper with Convolutions](https://static.googleusercontent.com/media/research.google.com/vi//pubs/archive/43022.pdf)  
 [Rethinking the Inception Architecture for Computer Vision](https://static.googleusercontent.com/media/research.google.com/vi//pubs/archive/44903.pdf)  
 
-Personally, I recommend you to take time with the second paper, it gives us some insights about Inception. Now I may 
-summarize the idea of the paper:  
+Personally, I recommend you to take time with the second paper, it gives us some insights about Inception. Now I will 
+summarize the ideas of the paper:  
 ### General Design Principles:
 - **Avoid representational bottlenecks**: We shouldn't reduce the size as well as the dimension of the input too abruptly, 
 especially in the first layers. The representation size ought to be shrinked mildly thoughout the network in order to 
@@ -322,9 +322,9 @@ Basically, it is the concept of Inception architecture that we want to introduce
 a regularization technique called *Label Smoothing*, but it is out of scope of this article.  
 
 ### 4. ResNet
-Unlike the some architectures when they simply increase the depth of the network to 
+Unlike some above architectures when they simply increase the depth of the network to 
 enhance the performance, this time, _Kaiming He and al_ have done something ground-breaking to improve the 
-classification. It really make a way for us to train hyper deep network with compelling performance. After VGGNet, Deep 
+classification. It really makes a way for us to train hyper deep network with compelling performance. After VGGNet, Deep 
 Learning community has the impression that a deeper network will definitely bring us to a better 
 performance. Nevertheless, Kaiming He discovered that it is only true to some extent, after that the error rate may be 
 up. This fact is against our intuition: A deeper architecture must have a more representational power or at least have 
@@ -353,8 +353,7 @@ Kaiming He had an impression that the neural networks have difficulties in mappi
 the identity function. With residual blocks, when identity mapping is sufficient, the neural networks may drive the 
 weights of theirs layers towards zero so as to approach the identity mappings.  
 
-In practice, it is rare that identity mappings are optimal but arcording to the 
-authors:  
+In practice, it is rare that identity mappings are optimal but according to the authors:  
 >... our reformulation may help to precondition the problem. If the optimal function is closer to an identity mapping 
 than to a zero mapping, it should be easier for the solver to find the perturbations with reference to an identity 
 mapping, than to learn the function as a new one  
@@ -508,7 +507,7 @@ Networks](https://arxiv.org/pdf/1611.05431.pdf)
 DenseNet is the latest Deep Learning architecture published by _Gao Huang and al._. 
 From their point of view, the degradation in error rate when the network becomes deeper comes from the fact that the 
 information from input vanishes while passing the layers. So we consider that the shortcut in the residual blocks from 
-ResNet is one way to  maintain the information from the input till the end of the network.  
+ResNet is one way to maintain the information from the input till the end of the network.  
 
 The authors of DenseNet pushed the idea of ResNet to its limit. To maximize the information flow between layers in the 
 network, they divide DenseNet into the dense blocks in which all the layers are directed connected. However, in contrast 
