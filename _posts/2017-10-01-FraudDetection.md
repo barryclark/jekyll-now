@@ -3,6 +3,8 @@
 ```python
 import pandas as pd
 import numpy as np
+import matplotlib.pyplot as plt
+import pickle
 from imblearn.over_sampling import SMOTE, ADASYN
 from sklearn.metrics import accuracy_score, confusion_matrix
 from collections import Counter
@@ -126,6 +128,24 @@ print(data['cum_fraud'].head())
 
 
 ```python
+cosa = data['cum_fraud']
+```
+
+
+```python
+#I save data['cum_fraud'] so I do not have through that again: it is too long
+with open('cum-fraud.pkl', 'wb') as picklefile:
+    pickle.dump(cosa, picklefile)
+```
+
+
+```python
+with open('cum-fraud.pkl', 'rb') as picklefile:
+    the_same_sample = pickle.load(picklefile)
+```
+
+
+```python
 data.dtypes
 ```
 
@@ -221,180 +241,62 @@ data_nova = pd.concat([data, dummies], axis=1)
 
 
 ```python
-data_nova.head()
+with open('data_nova.pkl', 'wb') as picklefile:
+    pickle.dump(data_nova, picklefile)
 ```
 
 
+```python
+!ls
+```
+
+    FraudDetection.ipynb                 cum-fraud.pkl
+    [31mPS_20174392719_1491204439457_log.csv[m[m data_nova.pkl
 
 
-<div>
-<style>
-    .dataframe thead tr:only-child th {
-        text-align: right;
-    }
 
-    .dataframe thead th {
-        text-align: left;
-    }
+```python
+print(data_nova.shape)
+print(data['type'].unique())
+```
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>step</th>
-      <th>type</th>
-      <th>amount</th>
-      <th>nameOrig</th>
-      <th>oldbalanceOrig</th>
-      <th>newbalanceOrig</th>
-      <th>nameDest</th>
-      <th>oldbalanceDest</th>
-      <th>newbalanceDest</th>
-      <th>isFraud</th>
-      <th>...</th>
-      <th>newbalanceOrig_avg</th>
-      <th>oldbalanceDest_avg</th>
-      <th>newbalanceDest_avg</th>
-      <th>jugo</th>
-      <th>cum_fraud</th>
-      <th>CASH_IN</th>
-      <th>CASH_OUT</th>
-      <th>DEBIT</th>
-      <th>PAYMENT</th>
-      <th>TRANSFER</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>1</td>
-      <td>PAYMENT</td>
-      <td>9839.64</td>
-      <td>C1231006815</td>
-      <td>170136.0</td>
-      <td>160296.36</td>
-      <td>M1979787155</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0.061384</td>
-      <td>0.000000</td>
-      <td>0.0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>1</td>
-      <td>PAYMENT</td>
-      <td>1864.28</td>
-      <td>C1666544295</td>
-      <td>21249.0</td>
-      <td>19384.72</td>
-      <td>M2044282225</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0.096173</td>
-      <td>0.000000</td>
-      <td>0.0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>1</td>
-      <td>TRANSFER</td>
-      <td>181.00</td>
-      <td>C1305486145</td>
-      <td>181.0</td>
-      <td>0.00</td>
-      <td>C553264065</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>1</td>
-      <td>...</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>1</td>
-      <td>CASH_OUT</td>
-      <td>181.00</td>
-      <td>C840083671</td>
-      <td>181.0</td>
-      <td>0.00</td>
-      <td>C38997010</td>
-      <td>21182.0</td>
-      <td>0.0</td>
-      <td>1</td>
-      <td>...</td>
-      <td>0.000000</td>
-      <td>0.008545</td>
-      <td>0.0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>1</td>
-      <td>PAYMENT</td>
-      <td>11668.14</td>
-      <td>C2048537720</td>
-      <td>41554.0</td>
-      <td>29885.86</td>
-      <td>M1230701703</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0.390423</td>
-      <td>0.000000</td>
-      <td>0.0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-    </tr>
-  </tbody>
-</table>
-<p>5 rows × 22 columns</p>
-</div>
+    (6362620, 21)
+    ['PAYMENT' 'TRANSFER' 'CASH_OUT' 'DEBIT' 'CASH_IN']
 
 
+INtentar fer algunes grafiques
+
+
+```python
+type_fraud = []
+for it in data['type'].unique():
+    x = (data.loc[(data['type'] == it) & (data['isFraud'] == 1), :]['isFraud'].sum())
+    type_fraud.append(x)
+    print(it, x)
+plt.bar(range(0,len(type_fraud)), type_fraud)
+pos = np.arange(len(data['type'].unique())) + .2
+plt.xticks(pos,data['type'].unique(), fontsize =10)
+plt.xlabel('Type of Transaction')
+plt.title('Fraud per type of Transaction')
+plt.show()
+#plt.axhline(baseline, c='r')
+```
+
+    PAYMENT 0
+    TRANSFER 4097
+    CASH_OUT 4116
+    DEBIT 0
+    CASH_IN 0
+
+
+
+![png](FraudDetection_files/FraudDetection_22_1.png)
+
+
+
+```python
+data.loc[data['type']]
+```
 
 
 ```python
