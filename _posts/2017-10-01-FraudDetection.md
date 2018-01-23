@@ -1,4 +1,8 @@
-
+---
+layout: post
+title: Fraud Detection
+---
+This is a study trying to figure out if we are able to predict fraud in bank transactions. Before they happen, obviously.
 
 ```python
 import pandas as pd
