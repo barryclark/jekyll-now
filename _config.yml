@@ -72,6 +72,7 @@ sass:
 
 # Use the following plug-ins
 gems:
+  - jekyll-redirect-from
   - jekyll-sitemap
   - jekyll-feed
   - jemoji
