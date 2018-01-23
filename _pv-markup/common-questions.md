@@ -105,13 +105,13 @@ Resolution matters. That's why our normal scans give you the freedom to print st
 *All scan resolutions are approximate. Slight variations are normal.*
 
 ## What scanners do you use?
-Every roll of film is scanned by hand on the renowned Fuji Frontier SP3000 or Noritsu S-1800. Both are excellent tools to help you reach your vision! You may choose between either on your order form. However, keep in mind there are certain film stocks that will always be scanned on the Noritsu: Portra160, Ektar100 and all black + white stocks.
+Every roll of film is scanned by hand on the renowned Fuji Frontier SP3000 or Noritsu S-1800. Both are excellent tools to help you reach your vision! You may choose between either on your [order form]({{ site.baseurl }}/images/PhotoVision-Film-Order-Form-Dec-2017.pdf). However, keep in mind there are certain film stocks that will always be scanned on the Noritsu: Portra160, Ektar100 and all black + white stocks.
 
 ## Do you offer push/pull processing?
-Yes, we can push or pull film up to 3 stops. Indicate on your order form whether your film needs to be pushed or pulled and by how many stops (i.e. Push +2 or Pull -1). Also, please indicate which roll you need pushed or pulled by placing a **rubber band** around it. Push/pull processing is $3.00 per roll.
+Yes, we can push or pull film up to 3 stops. Indicate on your [order form]({{ site.baseurl }}/images/PhotoVision-Film-Order-Form-Dec-2017.pdf) whether your film needs to be pushed or pulled and by how many stops (i.e. Push +2 or Pull -1). Also, please indicate which roll you need pushed or pulled by placing a **rubber band** around it. Push/pull processing is $3.00 per roll.
 
 ## How do you process Ilford Delta 3200?
-We process Delta 3200 at 3200 unless you indicate otherwise. Please note on your order form how you rated your 3200.
+We process Delta 3200 at 3200 unless you indicate otherwise. Please note on your [order form]({{ site.baseurl }}/images/PhotoVision-Film-Order-Form-Dec-2017.pdf) how you rated your 3200.
 
 ## Do you process + scan E-6 slide film?
 Sadly, we no longer process E-6, but we do scan it.
