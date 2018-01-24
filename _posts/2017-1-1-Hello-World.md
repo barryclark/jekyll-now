@@ -15,7 +15,7 @@ I am working in a Synthetic Database for Fraud Detection in banking transactions
   
 ## Non-technical description of Appointments No-show study.
 
- ##Gathering the data.
+ ## Gathering the data.
   
 
 
