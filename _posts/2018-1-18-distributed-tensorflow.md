@@ -135,61 +135,61 @@ In fact, it is difficult to find an example of In-Graph Replication.
 A piece of code of Synchronous Between-Graph in [OtoNhanh.vn](https://www.otonhanh.vn/) 
 <div style="font-size: 75%;">
  {% highlight python %}
-            with tf.device(dev):
-            self.global_step = tf.train.get_or_create_global_step()
-            input_tensor = self.app.create_input_tensor()
-            input_tensor = [t for t in input_tensor]
-            input_tensor.append(self.global_step)
+        with tf.device(dev):
+        self.global_step = tf.train.get_or_create_global_step()
+        input_tensor = self.app.create_input_tensor()
+        input_tensor = [t for t in input_tensor]
+        input_tensor.append(self.global_step)
+        
+        self.model_inst = self.model_cls(
+                               input_tensor,
+                               self.config,
+                               devs=self.devs)
 
-            self.model_inst = self.model_cls(
-                                   input_tensor,
-                                   self.config,
-                                   devs=self.devs)
+        self.global_step = tf.contrib.framework.get_or_create_global_step()
+        self.lrn_rate = tf.train.exponential_decay(
+            self.train_cfg['init_lrn_rate'],
+            self.global_step,
+            self.train_cfg['step_change_lrn_rate'],
+            self.train_cfg['decay_lrn_ratio'],
+            staircase=True)
 
-            self.global_step = tf.contrib.framework.get_or_create_global_step()
-            self.lrn_rate = tf.train.exponential_decay(
-                self.train_cfg['init_lrn_rate'],
-                self.global_step,
-                self.train_cfg['step_change_lrn_rate'],
-                self.train_cfg['decay_lrn_ratio'],
-                staircase=True)
+        optimizer = select_optimizer(self.train_cfg['optimizer'],
+                                     self.lrn_rate, user_defined_optimizer)
 
-            optimizer = select_optimizer(self.train_cfg['optimizer'],
-                                         self.lrn_rate, user_defined_optimizer)
+        exp_moving_averager = tf.train.ExponentialMovingAverage(
+            0.9, self.global_step)
 
-            exp_moving_averager = tf.train.ExponentialMovingAverage(
-                0.9, self.global_step)
+        variables_to_average = (
+            tf.trainable_variables() + tf.moving_average_variables())
 
-            variables_to_average = (
-                tf.trainable_variables() + tf.moving_average_variables())
+        self.sync_optimzier \
+            = tf.train.SyncReplicasOptimizer(
+            optimizer,
+            replicas_to_aggregate=replicas_to_aggregate,
+            total_num_replicas=num_workers,
+            variable_averages=exp_moving_averager,
+            variables_to_average=variables_to_average
+        )
 
-            self.sync_optimzier \
-                = tf.train.SyncReplicasOptimizer(
-                optimizer,
-                replicas_to_aggregate=replicas_to_aggregate,
-                total_num_replicas=num_workers,
-                variable_averages=exp_moving_averager,
-                variables_to_average=variables_to_average
-            )
+        self.model_inst.build_graph()
+        self.total_cost = self.get_total_loss()
+        if is_chief:
+            self.loss_averages_op = self.build_losses_avg_op()
 
-            self.model_inst.build_graph()
-            self.total_cost = self.get_total_loss()
-            if is_chief:
-                self.loss_averages_op = self.build_losses_avg_op()
-
-            cost_vars_map = self.model_inst.build_loss_vars_map()
-            grads = []
-            for map in cost_vars_map:
-                cost, vars = map
-                partial_grads = self.sync_optimzier.compute_gradients(cost, var_list=vars)
-                grads += partial_grads
+        cost_vars_map = self.model_inst.build_loss_vars_map()
+        grads = []
+        for map in cost_vars_map:
+            cost, vars = map
+            partial_grads = self.sync_optimzier.compute_gradients(cost, var_list=vars)
+            grads += partial_grads
 
         if self.train_cfg.has_key('clipper') and self.train_cfg['clipper']:
             clipper = select_clipper(clipper_info=self.train_cfg['clipper'],
                                      user_defined_clipper=user_defined_clipper)
             for grad, var in grads:
                 grads = [(clipper(grad), var)]
-
+    
         # build train op
         apply_gradient_op = self.sync_optimzier.apply_gradients(
             grads,
@@ -285,31 +285,32 @@ A piece of code from [OtoNhanh.vn](https://www.otonhanh.vn/):
 
 <div style="font-size: 75%;">
  {% highlight python %}
-            with tf.train.MonitoredTrainingSession(
-                    master=self.server.target,
-                    hooks=hooks,
-                    chief_only_hooks=chief_only_hooks,
-                    save_summaries_steps=0,
-                    is_chief=is_chief,
-                    config=tf.ConfigProto(
-                                allow_soft_placement=True,
-                                log_device_placement=self.train_cfg['log_device_placement'])) \
-                    as mon_sess:
+        with tf.train.MonitoredTrainingSession(
+                master=self.server.target,
+                hooks=hooks,
+                chief_only_hooks=chief_only_hooks,
+                save_summaries_steps=0,
+                is_chief=is_chief,
+                config=tf.ConfigProto(
+                            allow_soft_placement=True,
+                            log_device_placement=self.train_cfg['log_device_placement'])) \
+                as mon_sess:
 
-                if self.train_cfg['restore_sess'] and is_chief:
-                    print("Restoring saved session...")
-                    self._restore_session(restoring_saver, mon_sess,
-                                          self.train_cfg['restore_checkpoint_path'], cpkt_dir)
+            if self.train_cfg['restore_sess'] and is_chief:
+                print("Restoring saved session...")
+                self._restore_session(restoring_saver, mon_sess,
+                                      self.train_cfg['restore_checkpoint_path'], cpkt_dir)
 
-                if hasattr(self.app,'session_start_callback'):
-                    self.app.session_start_callback(mon_sess, model)
+            if hasattr(self.app,'session_start_callback'):
+                self.app.session_start_callback(mon_sess, model)
 
-                print("Run training operators...")
-                dataset_loading_time = self.train_cfg.get('dataset_loading_time', 3)
-                print("Delay %ds for starting queue runners." % dataset_loading_time)
-                time.sleep(dataset_loading_time)
-                while not mon_sess.should_stop():
-                    mon_sess.run(train_op) endhighlight %}
+            print("Run training operators...")
+            dataset_loading_time = self.train_cfg.get('dataset_loading_time', 3)
+            print("Delay %ds for starting queue runners." % dataset_loading_time)
+            time.sleep(dataset_loading_time)
+            while not mon_sess.should_stop():
+                mon_sess.run(train_op) 
+ {% endhighlight %}
  </div>  
 
 # Conclusion.  
