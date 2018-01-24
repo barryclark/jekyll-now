@@ -3,8 +3,8 @@ layout: post
 title: Fraud Detection, Coming soon!!!
 ---
 
-I am working in a Synthetic Database for Fraud Detection in banking transactions. This is another Kaggle project with over 6 million rows, being each row a bank transaction. One of the challenges is that this is a very unbalanced database with a very small amount of fraudulent transactions (less than 1%).
-![nofrauds](/images/nofrauds.gif){:height="300px" width="600px"}
+I am working in a Synthetic Database for Fraud Detection in banking transactions. This is another Kaggle project with over 6 million rows, being each row a bank transaction. One of the challenges is that this is a very unbalanced database with a very small amount of fraudulent transactions (less than 1%). Let's start working.
+![nofrauds](/images/nofrauds.gif){:height="300px" width="400px"}
 
 
 ## Brief description of Fraud Detection.
