@@ -9,6 +9,9 @@ Here I am using a synthetic dataframe. It has over 6 million rows and not so man
 
 
 
+
+
+
 ## Brief description of Fraud Detection.
 
 ```python
