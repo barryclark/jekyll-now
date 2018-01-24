@@ -2,7 +2,6 @@
 layout: post
 title: Distributed Tensorflow
 author: hoangbm
-comments:true
 ---
 
 Along with the development of [OtoNhanh.vn](https://www.otonhanh.vn/), datasets from automobile industry and users of
