@@ -8,7 +8,6 @@ This is a very unbalanced database (less than 1% of fraud transactions). Let's g
 
 ![nofrauds](/images/nofrauds.gif){:height="300px" width="500px"}
 
-{% if page.excerpt %}
 
 ## Brief description of Fraud Detection.
   1. Dataset contains 6,362,620 synthetic transactions generated using a simulator called PaySim.
@@ -17,7 +16,7 @@ This is a very unbalanced database (less than 1% of fraud transactions). Let's g
 
 ## Non-technical description of Fraud Detection study.
 
-##Gathering the data.
+## Gathering the data.
 
 The first thing I will have to do as usual is to upload and analyze the data.
 
@@ -31,10 +30,5 @@ data = data.rename(columns={'oldbalanceOrg': 'oldbalanceOrig'})
 
 data.shape
 ```
-
 (6362620, 17)
-
-
-
-
 ![FraudDetection_22_1](/images/FraudDetection_files/FraudDetection_22_1.png){:height="300px" width="600px"}
