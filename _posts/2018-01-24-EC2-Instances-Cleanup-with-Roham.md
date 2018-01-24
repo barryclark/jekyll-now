@@ -90,6 +90,7 @@ The table below briefly explains how you need to format your cron expression to 
 | **Possible Values** | 0-59 | 0-23 | 1-31 | 1-12 OR jan-dec | 1-7 OR mon-sun |
 
 ### Other possible characters
+
 | Character | Definition |
 |:---:|:---|
 | Comma (,) | Commas are used to separate items of a list. For example, using "mon,wed,fri" in the 5th field (day of week) means Mondays, Wednesdays and Fridays. |
