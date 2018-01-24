@@ -31,6 +31,6 @@ data = data.rename(columns={'oldbalanceOrg': 'oldbalanceOrig'})
 data.shape
 ```
 (6362620, 17)
-![FraudDetection_22_1](/images/FraudDetection_files/FraudDetection_22_1.png){:height="300px" width="600px"}
+![FraudDetection 22 1](/images/FraudDetection_files/FraudDetection_22_1.png){:height="300px" width="600px"}
 
 
