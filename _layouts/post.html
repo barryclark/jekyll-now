@@ -2,15 +2,15 @@
 layout: default
 ---
 <article class="post">
+  {% assign author = site.authors[post.author] %}
   <h1>{{ page.title }}</h1>
-
+  <div class="date">
+    Written on {{ page.date | date: "%B %e, %Y" }} by {{ author.display_name }}
+  </div>
   <div class="entry">
     {{ content }}
   </div>
 
-  <div class="date">
-    Written on {{ page.date | date: "%B %e, %Y" }}
-  </div>
 
   {% include disqus.html %}
   
