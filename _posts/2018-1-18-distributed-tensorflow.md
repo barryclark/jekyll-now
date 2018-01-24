@@ -10,8 +10,8 @@ TensorFlow has become our preferable deep learning library for a variety of reas
 supports strongly *Distributed Training*, which is very important in production up-scaling. In this blog, I will briefly 
 introduce Distributed TensorFlow and the way we apply it in our business.  
 
-# Basic definitions in Distributed Computing  
-## Model Paralleism versus Data Paralleism  
+## I. Basic definitions in Distributed Computing  
+### Model Paralleism versus Data Paralleism  
 They are two popular styles in Paralleism Computing, which solve different problems in Deep Learning training.
 First, we talk about *Model Parallism*. A very first example of this method can be found in this famous 
 [article](http://vision.stanford.edu/teaching/cs231b_spring1415/slides/alexnet_tugce_kyunghee.pdf). In this Alex-Net, 
@@ -42,7 +42,7 @@ the community and the rest of this blog, we will talk about the technique used i
 At the moment, *Data Paralleism* is heavily employed by [OtoNhanh.vn](https://www.otonhanh.vn/) when we train our 
 Computer Vision models using cloud services of Amazon (AWS).    
 
-## Method of Aggregation.  
+### Method of Aggregation.  
 In *Data Paralleism* mechanism, each GPUs will compute its own gradients of the whole graph. So we have to think a way 
 to combine all these gradients for the update of the parameter. There are 2 settings: *Synchronous Data Paralleism* and 
 *Asynchronous Data Paralleism*. In synchronised setting, several data batches are processed at the same time. Once all 
@@ -64,7 +64,7 @@ its speed is understandably superior.
  <div align="center">Comparision in term of speed. <a href="http://lynnapan.github.io/images/tensorflow/1.PNG">Source</a></div>
 </p>  
 
-# Distributed TensorFlow.  
+## II. Distributed TensorFlow.  
 In this part, I will give a bottom-up introduction about the distributed mechanism offered by TensorFlow. Four main 
 pillars of Distributed TensorFlow are:  
 - Model replication
@@ -72,7 +72,7 @@ pillars of Distributed TensorFlow are:
 - Sessions and Servers
 - Fault tolerance  
 
-## Model Replication  
+### Model Replication  
 TensorFlow Graph is made of Variables and Operations. We assign them to device by the function `with tf.device`. 
 Considering that we have a computer with 2 components `/cpu:0` and `/gpu:0`, we could assign the variables to the `/cpu:0` 
 and the operations to the `/gpu:0` with this:
@@ -136,69 +136,69 @@ A piece of code of Synchronous Between-Graph in [OtoNhanh.vn](https://www.otonha
 <div style="font-size: 75%;">
  {% highlight python %}
         with tf.device(dev):
-        self.global_step = tf.train.get_or_create_global_step()
-        input_tensor = self.app.create_input_tensor()
-        input_tensor = [t for t in input_tensor]
-        input_tensor.append(self.global_step)
-        
-        self.model_inst = self.model_cls(
-                               input_tensor,
-                               self.config,
-                               devs=self.devs)
-
-        self.global_step = tf.contrib.framework.get_or_create_global_step()
-        self.lrn_rate = tf.train.exponential_decay(
-            self.train_cfg['init_lrn_rate'],
-            self.global_step,
-            self.train_cfg['step_change_lrn_rate'],
-            self.train_cfg['decay_lrn_ratio'],
-            staircase=True)
-
-        optimizer = select_optimizer(self.train_cfg['optimizer'],
-                                     self.lrn_rate, user_defined_optimizer)
-
-        exp_moving_averager = tf.train.ExponentialMovingAverage(
-            0.9, self.global_step)
-
-        variables_to_average = (
-            tf.trainable_variables() + tf.moving_average_variables())
-
-        self.sync_optimzier \
-            = tf.train.SyncReplicasOptimizer(
-            optimizer,
-            replicas_to_aggregate=replicas_to_aggregate,
-            total_num_replicas=num_workers,
-            variable_averages=exp_moving_averager,
-            variables_to_average=variables_to_average
-        )
-
-        self.model_inst.build_graph()
-        self.total_cost = self.get_total_loss()
-        if is_chief:
-            self.loss_averages_op = self.build_losses_avg_op()
-
-        cost_vars_map = self.model_inst.build_loss_vars_map()
-        grads = []
-        for map in cost_vars_map:
-            cost, vars = map
-            partial_grads = self.sync_optimzier.compute_gradients(cost, var_list=vars)
-            grads += partial_grads
-
-        if self.train_cfg.has_key('clipper') and self.train_cfg['clipper']:
-            clipper = select_clipper(clipper_info=self.train_cfg['clipper'],
-                                     user_defined_clipper=user_defined_clipper)
-            for grad, var in grads:
-                grads = [(clipper(grad), var)]
+            self.global_step = tf.train.get_or_create_global_step()
+            input_tensor = self.app.create_input_tensor()
+            input_tensor = [t for t in input_tensor]
+            input_tensor.append(self.global_step)
+            
+            self.model_inst = self.model_cls(
+                                   input_tensor,
+                                   self.config,
+                                   devs=self.devs)
     
-        # build train op
-        apply_gradient_op = self.sync_optimzier.apply_gradients(
-            grads,
-            global_step=self.global_step
-        )
+            self.global_step = tf.contrib.framework.get_or_create_global_step()
+            self.lrn_rate = tf.train.exponential_decay(
+                self.train_cfg['init_lrn_rate'],
+                self.global_step,
+                self.train_cfg['step_change_lrn_rate'],
+                self.train_cfg['decay_lrn_ratio'],
+                staircase=True)
+    
+            optimizer = select_optimizer(self.train_cfg['optimizer'],
+                                         self.lrn_rate, user_defined_optimizer)
+    
+            exp_moving_averager = tf.train.ExponentialMovingAverage(
+                0.9, self.global_step)
+    
+            variables_to_average = (
+                tf.trainable_variables() + tf.moving_average_variables())
+    
+            self.sync_optimzier \
+                = tf.train.SyncReplicasOptimizer(
+                optimizer,
+                replicas_to_aggregate=replicas_to_aggregate,
+                total_num_replicas=num_workers,
+                variable_averages=exp_moving_averager,
+                variables_to_average=variables_to_average
+            )
+    
+            self.model_inst.build_graph()
+            self.total_cost = self.get_total_loss()
+            if is_chief:
+                self.loss_averages_op = self.build_losses_avg_op()
+    
+            cost_vars_map = self.model_inst.build_loss_vars_map()
+            grads = []
+            for map in cost_vars_map:
+                cost, vars = map
+                partial_grads = self.sync_optimzier.compute_gradients(cost, var_list=vars)
+                grads += partial_grads
+    
+            if self.train_cfg.has_key('clipper') and self.train_cfg['clipper']:
+                clipper = select_clipper(clipper_info=self.train_cfg['clipper'],
+                                         user_defined_clipper=user_defined_clipper)
+                for grad, var in grads:
+                    grads = [(clipper(grad), var)]
+        
+            # build train op
+            apply_gradient_op = self.sync_optimzier.apply_gradients(
+                grads,
+                global_step=self.global_step
+            )
 {% endhighlight %}
  </div> 
 
-## Device placement for Variables  
+### Device placement for Variables  
 When scaling up the distributed model, it is usually not sufficient to have only one `ps` in the network. Obviously, we 
 could create several `ps` with different `task_index` and then assign the variables to these `ps` using `with tf.device`. 
 But this manual assignment seems really dull when we have about 100 `ps`. TensorFlow tackles this issue by creating a 
@@ -218,7 +218,7 @@ A more intelligent strategy worth considering is `tf.contrib.training.GreedyLoad
  <div align="center">Load balancing variables <a href="http://lynnapan.github.io/images/tensorflow/9.PNG">Source</a></div>
 </p>  
 
-## Session and Server  
+### Session and Server  
 In basic TensorFlow program, we often use `tf.Session()` to run the operations. But this function only know about the 
 local machine. So there is a scenery that workers from different machines run independently if we keep everything 
 unchanged. In Distributed TensorFlow, we invent two classes: `tf.train.ClusterSpec()` and `tf.train.Server` to link the 
@@ -241,7 +241,7 @@ gradients fromt the workers.
  <div align="center">Distributed code for parameter server <a href="http://lynnapan.github.io/images/tensorflow/14.PNG">Source</a></div>
 </p>  
 
-## Fault Tolerance  
+### Fault Tolerance  
 > A distributed system is a system in which I can't get my work done because a computer has failed that I've never even 
 heard of - Leslie Lamport  
 
@@ -313,12 +313,12 @@ A piece of code from [OtoNhanh.vn](https://www.otonhanh.vn/):
  {% endhighlight %}
  </div>  
 
-# Conclusion.  
+# III. Conclusion.  
 From our point of view, Distributed TensorFlow is the best distributed system for Deep Learning. At the moment, it is 
 still improved by Deep Learning community to achieve better performance and to be more robust. In the next blogs, we may 
 talk about deploying and serving on AWS by using [Chef](https://www.chef.io/chef/) and [Kubernetes](https://kubernetes.io/).
 
-# References:  
+# IV. References:  
 - [Distributed TensorFlow](https://www.tensorflow.org/deploy/distributed)
 - https://www.oreilly.com/ideas/distributed-tensorflow (I don't agree with the definition of *In-Graph Replication* in 
 this article, otherwise it is worth reading)  
