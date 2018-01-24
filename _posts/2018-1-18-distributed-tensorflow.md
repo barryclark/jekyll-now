@@ -25,9 +25,10 @@ for each GPU: each GPU will compute the gradient for some variables of the model
 </p>  
 
 The advantage of this approach is quite apparent: it helps us to deal with the large architecture which cannot be fitted 
-in a single GPU. However, in [OtoNhanh.vn](https://www.otonhanh.vn/), especially in Computer Vision lab, this benefit 
-is limited. All the architectures are able to reside in a single GPU and we don't have a desire to expand in order to 
-avoid Over-fitting.  
+in a single GPU. Nevertheless, we have to wait for every node in the network to complete their computing before starting 
+another step. A solution for this bottleneck is [Synthetic Gradient](https://arxiv.org/pdf/1608.05343.pdf). 
+In [OtoNhanh.vn](https://www.otonhanh.vn/), especially in Computer Vision lab, this benefit is limited. All the 
+architectures are able to reside in a single GPU and we don't have a desire to expand in order to avoid Over-fitting.  
 
 In contrast, *Data Paralleism* fixes the same graph in every GPUs in the network but uses different data batches for 
 each GPU, then do some aggregation to combine the gradients from different GPUs. This approach helps us to slide over 
