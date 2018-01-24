@@ -26,4 +26,5 @@ data = df.copy()
 
 data = data.rename(columns={'oldbalanceOrg': 'oldbalanceOrig'})
 
-data.shape```
+data.shape
+```
