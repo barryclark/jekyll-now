@@ -4,18 +4,23 @@ title: Fraud Detection
 ---
 This is a study trying to figure out if we are able to predict fraud in bank transactions. Before they happen, obviously.
 Here I am using a synthetic dataframe. It has over 6 million rows and not so many columns(13). The goal is to predict which 
-ones are fraudulent. Let's go find out!
+ones are fraudulent. I am working in a Synthetic Database for Fraud Detection in banking transactions. This is another Kaggle project with over 6 million rows, being each row a bank transaction.
+This is a very unbalanced database (less than 1% of fraud transactions).
+
+Let's go find out!
 
 
 
-![nofrauds](/images/nofrauds.gif){:height="300px" width="600px"}
-
-
-
-
-
+![nofrauds](/images/nofrauds.gif){:height="300px" width="500px"}
 
 ## Brief description of Fraud Detection.
+  1. Dataset contains 110k medical appointments that took place in Vitoria, Brazil in between April 29th and Jun 8th 2016.
+  2. The baseline is 79.8% of showups.
+  3. The link: [AppointmentsNoShow](https://github.com/AlexChicote/AppointmentsNoShow) on GitHub for a more detailed and  
+     technical explanation.
+  
+
+
 
 ```python
 import pandas as pd
@@ -28,13 +33,6 @@ from collections import Counter
 from sklearn.model_selection import GridSearchCV, train_test_split, cross_val_predict, cross_val_score
 from sklearn.ensemble import GradientBoostingClassifier
 ```
-
-
-```python
-!ls
-```
-
-    FraudDetection.ipynb                 [31mPS_20174392719_1491204439457_log.csv[m[m
 
 
 
