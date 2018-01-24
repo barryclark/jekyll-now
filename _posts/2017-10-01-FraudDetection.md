@@ -9,8 +9,6 @@ This is a very unbalanced database (less than 1% of fraud transactions).
 
 Let's go find out!
 
-
-
 ![nofrauds](/images/nofrauds.gif){:height="300px" width="500px"}
 
 ## Brief description of Fraud Detection.
@@ -18,21 +16,10 @@ Let's go find out!
   2. The baseline is 79.8% of showups.
   3. The link: [AppointmentsNoShow](https://github.com/AlexChicote/AppointmentsNoShow) on GitHub for a more detailed and  
      technical explanation.
-  
+## Non-technical description of Fraud Detection study.
 
-
-
-```python
-import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
-import pickle
-from imblearn.over_sampling import SMOTE, ADASYN
-from sklearn.metrics import accuracy_score, confusion_matrix
-from collections import Counter
-from sklearn.model_selection import GridSearchCV, train_test_split, cross_val_predict, cross_val_score
-from sklearn.ensemble import GradientBoostingClassifier
-```
+ ##Gathering the data.
+The first thing I will have to do as usual is to upload and analyze the data.
 
 
 
