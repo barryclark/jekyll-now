@@ -313,12 +313,12 @@ A piece of code from [OtoNhanh.vn](https://www.otonhanh.vn/):
  {% endhighlight %}
  </div>  
 
-# III. Conclusion.  
+## III. Conclusion.  
 From our point of view, Distributed TensorFlow is the best distributed system for Deep Learning. At the moment, it is 
 still improved by Deep Learning community to achieve better performance and to be more robust. In the next blogs, we may 
 talk about deploying and serving on AWS by using [Chef](https://www.chef.io/chef/) and [Kubernetes](https://kubernetes.io/).
 
-# IV. References:  
+## IV. References:  
 - [Distributed TensorFlow](https://www.tensorflow.org/deploy/distributed)
 - [https://www.oreilly.com/ideas/distributed-tensorflow](https://www.oreilly.com/ideas/distributed-tensorflow) 
 (I don't agree with the definition of Model Replication in this article, otherwise it is worth reading)  
