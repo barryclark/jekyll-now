@@ -7,7 +7,7 @@ Here I am using a synthetic dataframe simulating mobile money transactions. It h
 This is a very unbalanced database (less than 1% of fraud transactions). Let's go find out!
 
 ![nofrauds](/images/nofrauds.gif){:height="300px" width="500px"}
-
+## Post excerpts
 
 ## Brief description of Fraud Detection.
   1. Dataset contains 6,362,620 synthetic transactions generated using a simulator called PaySim.
