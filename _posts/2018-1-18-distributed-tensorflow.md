@@ -5,7 +5,7 @@ author: hoangbm
 ---
 
 Along with the development of [OtoNhanh.vn](https://www.otonhanh.vn/), datasets from automobile industry and users of
-our site become tremendous. This motivates us to find more efficient training strategy. In [OtoNhanh.vn](https://www.otonhanh.vn/), 
+our site become tremendous. This motivates us to find more efficient training strategies. In [OtoNhanh.vn](https://www.otonhanh.vn/), 
 TensorFlow has become our preferable deep learning library for a variety of reasons, one of them is that TensorFlow 
 supports strongly *Distributed Training*, which is very important in production up-scaling. In this blog, I will briefly 
 introduce Distributed TensorFlow and the way we apply it in our business.  
@@ -13,7 +13,7 @@ introduce Distributed TensorFlow and the way we apply it in our business.
 ## I. Basic definitions in Distributed Computing  
 ### Model Paralleism versus Data Paralleism  
 They are two popular styles in Paralleism Computing, which solve different problems in Deep Learning training.
-First, we talk about *Model Parallism*. A very first example of this method can be found in this famous 
+First, we talk about *Model Parallelism*. A very first example of this method can be found in this famous 
 [article](http://vision.stanford.edu/teaching/cs231b_spring1415/slides/alexnet_tugce_kyunghee.pdf). In this Alex-Net, 
 the model is too big for a single GPU, so the authors employed it in two GPUs: some parts of the graph reside in a GPU, 
 while the others stay in the other GPU. In model parallelism, we split the whole graph among GPUs and use the same data 
@@ -25,13 +25,13 @@ for each GPU: each GPU will compute the gradient for some variables of the model
 </p>  
 
 The advantage of this approach is quite apparent: it helps us to deal with the large architecture which cannot be fitted 
-in a single GPUs. However, in [OtoNhanh.vn](https://www.otonhanh.vn/), especially in Computer Vision lab, this benefit 
+in a single GPU. However, in [OtoNhanh.vn](https://www.otonhanh.vn/), especially in Computer Vision lab, this benefit 
 is limited. All the architectures are able to reside in a single GPU and we don't have a desire to expand in order to 
 avoid Over-fitting.  
 
 In contrast, *Data Paralleism* fixes the same graph in every GPUs in the network but uses different data batches for 
 each GPU, then do some aggregation to combine the gradients from different GPUs. This approach helps us to slide over 
-the whole dataset faster, e.g, finish an epoch in a shorter time. In fact, *Data Paralleism* gains more attention from 
+the whole data-set faster, e.g, finish an epoch in a shorter time. In fact, *Data Paralleism* gains more attention from 
 the community and the rest of this blog, we will talk about the technique used in this approach.  
 
 <p align="center">
@@ -45,7 +45,7 @@ Computer Vision models using cloud services of Amazon (AWS).
 ### Method of Aggregation.  
 In *Data Paralleism* mechanism, each GPUs will compute its own gradients of the whole graph. So we have to think a way 
 to combine all these gradients for the update of the parameter. There are 2 settings: *Synchronous Data Paralleism* and 
-*Asynchronous Data Paralleism*. In synchronised setting, several data batches are processed at the same time. Once all 
+*Asynchronous Data Paralleism*. In synchronised setting, several data batches are processed simultaneously. Once all 
 the local back-props are finished, the local gradients are averaged and we performed the update. We can see the 
 bottleneck here: the overall computation speed of the system equals to the weakest worker in the network.  
 In asynchronised setting, once a GPUs finishes its computation, we will use its gradient to update the model immediately. 
@@ -88,7 +88,7 @@ and the operations to the `/gpu:0` with this:
 {% endhighlight %}
  </div>  
 If we don't specify the device, TensorFlow will automatically choose the more optimal device, in this case, `/gpu:0`, 
-to place both the variables and the operation.  
+to place both the variables and the operations.  
 In TensorFlow, there are 2 jobs: parameter server (ps) and worker:  
 <p align="center">
  <img src="/images/distributed-tensorflow/clever-dist-tf-arch.png" alt="" align="middle">
@@ -121,7 +121,7 @@ assign the huge graph to every node in the network.
 Each worker will build its own graph based on its responsibility. Generally speaking, each worker only shares the global 
 variables placed on `ps` with each other and keep the local tasks for themselves. It is compatible with both 
 *Model Parallelism* and surprisingly, *Data Parallelism*. In *Data Parallelism*, there will be a `chief worker`. Besides 
-computing the gradient, the `chief worker` have to do some works like executing the `tf.train.Saver()` or logging, etc. 
+computing the gradient, the `chief worker` has to do some works like executing the `tf.train.Saver()` or logging, etc. 
 So the `tf.Graph()`s of the workers are not exactly the same.  
  
 <p align="center">
@@ -132,7 +132,7 @@ So the `tf.Graph()`s of the workers are not exactly the same.
 Nowadays, Between-Graph Replication overwhelms In-Graph Replication in Distributed TensorFlow thanks to its flexibility. 
 In fact, it is difficult to find an example of In-Graph Replication.  
 
-A piece of code of Synchronous Between-Graph in [OtoNhanh.vn](https://www.otonhanh.vn/) 
+A piece of code of Synchronous Between-Graph in [OtoNhanh.vn](https://www.otonhanh.vn/):  
 <div style="font-size: 75%;">
  {% highlight python %}
         with tf.device(dev):
@@ -202,8 +202,8 @@ A piece of code of Synchronous Between-Graph in [OtoNhanh.vn](https://www.otonha
 When scaling up the distributed model, it is usually not sufficient to have only one `ps` in the network. Obviously, we 
 could create several `ps` with different `task_index` and then assign the variables to these `ps` using `with tf.device`. 
 But this manual assignment seems really dull when we have about 100 `ps`. TensorFlow tackles this issue by creating a 
-function called `tf.train.replica_device_setter`. This function outputs an instance which acts as the input of 
-`tf.device`. This function will distribute the variables among the `ps` tasks in `round-robin` style.  
+function called `tf.train.replica_device_setter()`. This function outputs an instance which acts as the input of 
+`tf.device()`. This function will distribute the variables among the `ps` tasks in `round-robin` style.  
 
 <p align="center">
  <img src="/images/distributed-tensorflow/8.PNG" alt="" align="middle">
@@ -233,8 +233,8 @@ could run code from anywhere in the cluster.
  <div align="center">Distributed code for worker <a href="http://lynnapan.github.io/images/tensorflow/13.PNG">Source</a></div>
 </p>  
 
-For `ps`, it is much simpler. If this component is `ps`, it only have to run `tf.train.Server().join()` to combine the 
-gradients fromt the workers.  
+For `ps`, it is much simpler. If this component is `ps`, it only has to run `tf.train.Server().join()` to combine the 
+gradients from the workers.  
 
 <p align="center">
  <img src="/images/distributed-tensorflow/14.PNG" alt="" align="middle">
@@ -251,10 +251,10 @@ limit the risk.
 
 #### tf.train.Saver()  
 We use `tf.train.Saver()` also in regular training, however, there are some things that we want to highlight in 
-Distibuted Training:  
+Distributed Training:  
 - `sharded` if set to True will allows to write the checkpoints in `ps` in parallel instead of centralizing in one `ps`. 
 It is recommended to set to True.  
-- As I have indicated before, only `chief worker` have the right to write the checkpoints, not to mention parameters 
+- As I have indicated above, only `chief worker` has the right to write the checkpoints, not to mention parameters 
 initialization or summary recording.  
 - It is also able to write and send the checkpoint to cloud service instead of local machine to avoid the risk of 
 machine corruption. 
@@ -265,7 +265,7 @@ What if we encountered a problem during Distributed Training, how to recover fro
 - Non-chief worker fails: it is the less severe case since it is stateless. When it is fixed, it just has to reconnect 
 to `ps` to keep computing.  
 - Parameter server fails: it is more complicated since all the workers rely on it to compute and update the parameters.
-So when the `ps` crashes, the `chief worker` notices its failure, stops the training of other workers and restore the 
+So when the `ps` crashes, the `chief worker` notices its failure, stops the training of other workers and restores the 
 system back to the last checkpoint.  
 - Chief worker fails:  it is the most trickiest since `chief worker` plays many roles in training. When it crashes, the 
 training could continues, but since that moment, we lose control of the training. So in this case, everything will be 
@@ -320,8 +320,8 @@ talk about deploying and serving on AWS by using [Chef](https://www.chef.io/chef
 
 # IV. References:  
 - [Distributed TensorFlow](https://www.tensorflow.org/deploy/distributed)
-- https://www.oreilly.com/ideas/distributed-tensorflow (I don't agree with the definition of *In-Graph Replication* in 
-this article, otherwise it is worth reading)  
+- [https://www.oreilly.com/ideas/distributed-tensorflow](https://www.oreilly.com/ideas/distributed-tensorflow) 
+(I don't agree with the definition of Model Replication in this article, otherwise it is worth reading)  
 - [DISTRIBUTED TENSORFLOW EXAMPLE](http://ischlag.github.io/2016/06/12/async-distributed-tensorflow/)
-- http://lynnapan.github.io/2017/09/04/distributed%20tensorflow/#In-graph-replication
+- [http://lynnapan.github.io/2017/09/04/distributed%20tensorflow/#In-graph-replication](http://lynnapan.github.io/2017/09/04/distributed%20tensorflow/#In-graph-replication)
 
