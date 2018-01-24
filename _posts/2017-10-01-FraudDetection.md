@@ -3,7 +3,7 @@ layout: post
 title: Fraud Detection
 ---
 This is a study trying to figure out if we are able to predict fraud in bank transactions. Before they happen, obviously.
-Here I am using a synthetic dataframe. It has over 6 million rows and not so many columns(13). The goal is to predict which ones are fraudulent.
+Here I am using a synthetic dataframe. It has over 6 million rows and not so many columns(13). The goal is to predict which ones are fraudulent. Let's move on
 
 ![nofrauds](/images/nofrauds.gif){:height="300px" width="600px"}
 
