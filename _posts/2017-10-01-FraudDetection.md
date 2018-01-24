@@ -10,6 +10,8 @@ Let's go find out!
 
 ![nofrauds](/images/nofrauds.gif){:height="300px" width="500px"}
 
+
+
 ## Brief description of Fraud Detection.
   1. Dataset contains 6,362,620 synthetic transactions generated using a simulator called PaySim.
   2. The baseline is 99.87% of no fraudulent transactions.
@@ -33,6 +35,7 @@ data.shape
 ```
 
 (6362620, 17)
+
 
 
 
