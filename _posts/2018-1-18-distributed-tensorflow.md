@@ -320,7 +320,7 @@ talk about deploying and serving on AWS by using [Chef](https://www.chef.io/chef
 
 # References:  
 - [Distributed TensorFlow](https://www.tensorflow.org/deploy/distributed)
-- https://www.oreilly.com/ideas/distributed-tensorflow (I don't agree to the definition of *In-Graph Replication* in 
+- https://www.oreilly.com/ideas/distributed-tensorflow (I don't agree with the definition of *In-Graph Replication* in 
 this article, otherwise it is worth reading)  
 - [DISTRIBUTED TENSORFLOW EXAMPLE](http://ischlag.github.io/2016/06/12/async-distributed-tensorflow/)
 - http://lynnapan.github.io/2017/09/04/distributed%20tensorflow/#In-graph-replication
