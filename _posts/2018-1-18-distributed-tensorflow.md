@@ -133,7 +133,7 @@ So the `tf.Graph()`s of the workers are not exactly the same.
 Nowadays, Between-Graph Replication overwhelms In-Graph Replication in Distributed TensorFlow thanks to its flexibility. 
 In fact, it is difficult to find an example of In-Graph Replication.  
 
-A piece of code of Synchronous Between-Graph in [OtoNhanh.vn](https://www.otonhanh.vn/):  
+A piece of code of Synchronous Between-Graph from our engine:    
 <div style="font-size: 75%;">
  {% highlight python %}
         with tf.device(dev):
@@ -282,7 +282,7 @@ without `tf.global_variables_initializer`, decide `chief worker`, do some additi
  <div align="center">Example of `tf.train.MonitoredTrainingSession()` <a href="http://lynnapan.github.io/images/tensorflow/20.PNG">Source</a></div>
 </p>  
 
-A piece of code from [OtoNhanh.vn](https://www.otonhanh.vn/):  
+A piece of code from our engine:  
 
 <div style="font-size: 75%;">
  {% highlight python %}
