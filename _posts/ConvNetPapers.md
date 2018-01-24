@@ -1,3 +1,12 @@
+---
+layout: post
+title: Introduction to Neural Networks
+mathjax: True
+---
+
+
+Slides for the workshop are available [here](https://docs.google.com/presentation/d/1vSABD8toPvuPXTkcbzQNSUle25JivCp96b79NU_cWtg/edit).
+
 
 ## AlexNet Paper (https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf)
 
