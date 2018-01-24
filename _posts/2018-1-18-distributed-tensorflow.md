@@ -317,3 +317,10 @@ A piece of code from [OtoNhanh.vn](https://www.otonhanh.vn/):
 From our point of view, Distributed TensorFlow is the best distributed system for Deep Learning. At the moment, it is 
 still improved by Deep Learning community to achieve better performance and to be more robust. In the next blogs, we may 
 talk about deploying and serving on AWS by using [Chef](https://www.chef.io/chef/) and [Kubernetes](https://kubernetes.io/).
+
+# References:  
+- [Distributed TensorFlow](https://www.tensorflow.org/deploy/distributed)
+- https://www.oreilly.com/ideas/distributed-tensorflow
+- [DISTRIBUTED TENSORFLOW EXAMPLE](http://ischlag.github.io/2016/06/12/async-distributed-tensorflow/)
+- http://lynnapan.github.io/2017/09/04/distributed%20tensorflow/#In-graph-replication
+
