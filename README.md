@@ -24,7 +24,7 @@ $ sudo apt-get install ruby-dev
 1. Login to administrator account
 2. Install brew by command line:
 ```bash
-$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+$ sudo /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 3. Update ruby:
 ```bash
@@ -39,7 +39,7 @@ $ gem -v
 5. Install `nokogiri` package 
 ```bash
 $ brew uninstall libxml2
-$ sudo gem gem install nokogiri -- --with-xml2-include=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/libxml2 --use-system-libraries
+$ sudo gem install nokogiri -- --with-xml2-include=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/libxml2 --use-system-libraries
 ```
 6. Continue step 1 as in Linux local development
 
