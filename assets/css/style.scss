@@ -3,3 +3,11 @@
 
 @import 'jekyll-theme-cayman';
 @import 'svg-icons';
+
+div.entry > p {
+  font-size:16px;
+}
+
+article > h2{
+  margin-bottom: 3px!important;
+}

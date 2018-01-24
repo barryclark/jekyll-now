@@ -6,13 +6,15 @@ layout: default
   {% for post in site.posts %}
     {% assign author = site.authors[post.author] %}
     <article class="post">
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-      <span>Tác giả: <i>{{ author.display_name }}</i></span>
+      <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+      <div style="padding-bottom:13px;"><i>Written by {{ author.display_name }}</i></div>
       <div class="entry">
         {{ post.excerpt }}
       </div>
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Xem thêm</a>
+      <div style="padding-bottom:30px;">
+        <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Xem thêm</a>
+      </div>
     </article>
   {% endfor %}
 </div>
