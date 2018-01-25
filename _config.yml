@@ -6,7 +6,7 @@
 name: Arianna Knows Some Stuff
 
 # Short bio or description (displayed in the header)
-description: Blog about nothing at all, yet. Astrophysics PhD at UCL.
+description: Blog about nothing at all, yet.
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
@@ -85,4 +85,4 @@ exclude:
   - README.md
   - CNAME
   
-theme: jekyll-theme-minimal
+theme: jekyll-theme-minima
