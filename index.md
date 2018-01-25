@@ -130,7 +130,6 @@ title: Πως αγοράζουμε, πουλάμε, ξοδεύουμε και δ
 
 - [Coinomi](https://coinomi.com), τρέχει σε Android. Είναι thin client.
 - [Electrum](https://electrum.org) τρέχει σε Windows, Mac, Linux, Android. Είναι thin client.
-- [MultiBit HD](https://multibit.org) τρέχει σε Windows, Mac, Linux. Είναι thin client.
 
 ### <a name="paymentsinperson"></a> Τι χρειάζομαι για να δέχομαι πληρωμές σε κατάστημα;
 
