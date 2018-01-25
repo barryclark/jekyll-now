@@ -4,12 +4,13 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+I'm an Astrophysics PhD student at UCL.
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+I also do other things.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+I don't really want to put my email here in case I get lots of spam.
+
