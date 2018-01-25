@@ -7,7 +7,7 @@ title: My Vision
   <input type="hidden" name="_subject" value="Customer Preference Submission">
   <input style="display:none" type="text" name="_gotcha">
   <h1>My Vision</h1>
-  <h3>Submit or update preferences<a href="{{ site.baseurl}}/common-questions#my-vision">&nbsp;Learn more</a></h3>
+  <div class="notifications"></div>
   <h3>Submit or update preferences<a href="{{ site.baseurl}}/common-questions#what-are-preference-images--why-should-i-send-them-in">&nbsp;Learn more</a></h3>
   <ul>
     <li>
@@ -21,7 +21,7 @@ title: My Vision
       <h2>Preference Information</h2>
     </li>
     <li>
-      <label for="image-uploader">Preference Images (click "Choose Files" or drag-and-drop files here)</label>
+      <label for="image-uploader">Preference Images (click "Choose Files" or drag-and-drop) (.jpg, .png)</label>
       <input id="image-uploader" name="image-uploader" type="file" multiple accept=".png, .jpg, .jpeg"/>
       <div class="image-preview">
         <p>(No files currently selected for upload)</p>
@@ -37,7 +37,6 @@ title: My Vision
     </li>
   </ul>
 </form>
-
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript">
