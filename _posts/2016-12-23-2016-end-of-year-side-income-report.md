@@ -46,7 +46,7 @@ This card gives you 1.5% cash back on purchases, plus a $150 bonus if you spend 
 
 Check out the link below to get yours. It's a referral link, so I'll get something, too.
 
-> [Earn $150 cash back with Chase Freedom Unlimited&#8480;](https://applynow.chase.com/FlexAppWeb/renderApp.do?SPID=FNRV&CELL=63HB&MSC=1535963954)  #sponsored
+> [Earn $150 cash back with Chase Freedom Unlimited&#8480;](http://hendrixjoseph.github.io/chase-freedom-unlimited/)  #sponsored
 
 ### Chase Freedom
 
@@ -58,7 +58,7 @@ I just got it this month, so I didn't get any rewards this year. I have $252.28 
 
 The link below should lead to an application page. Again, it's a referral link.
 
-> [Earn $150 cash back with Chase Freedom&reg;](https://applynow.chase.com/FlexAppWeb/renderApp.do?SPID=FNS7&CELL=63HB&MSC=1538443475) #sponsored
+> [Earn $150 cash back with Chase Freedom&reg;](http://hendrixjoseph.github.io/chase-freedom/) #sponsored
 
 ## Checking Bonuses
 
@@ -92,7 +92,7 @@ Some people do really well with Ibotta. I don't simply because I'm not going to 
 
 That said, I have cashed out once at $20, plus have another $14.75 balance in the app.
 
-If you haven't used Ibotta yet, you can use [my referral link to get $10 to start](https://ibotta.com/r/ljedsao). I'll get $5.
+If you haven't used Ibotta yet, you can use [my referral link to get $10 to start](http://hendrixjoseph.github.io/ibotta/). I'll get $5.
 
 ### ReceiptHog
 
