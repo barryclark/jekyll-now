@@ -22,7 +22,7 @@ I was surprised I had made anything from Ibotta since I stopped using it a while
 
 I don't make as much using eBates as most people, but I think that's either because I won't make a purchase just to get cash back, plus I don't push the referrals much. Here's my [eBates referral link](http://hendrixjoseph.github.io/ebates/).
 
-Square Cash is just referral money, although I'm unsure how much is from my [Square Cash review post](http://hendrixjoseph.github.io/square-cash-review/) and how much is from [/r/churning referral threads](https://www.reddit.com/r/churning/wiki/ccreferrals). Here's my [Square Cash referral link](http://cash.me/app/VBWWSRS).
+Square Cash is just referral money, although I'm unsure how much is from my [Square Cash review post](http://hendrixjoseph.github.io/square-cash-review/) and how much is from [/r/churning referral threads](https://www.reddit.com/r/churning/wiki/ccreferrals). Here's my [Square Cash referral link](http://hendrixjoseph.github.io/square-cash/).
 
 site | amount
 --- | ---
