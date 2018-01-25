@@ -20,7 +20,7 @@ Receipt Hog changed their payout thresholds earlier this year, so I had to cash 
 
 I was surprised I had made anything from Ibotta since I stopped using it a while ago - the twenty or so bucks is just a holdover from 2016 that I cashed out in January.
 
-I don't make as much using eBates as most people, but I think that's either because I won't make a purchase just to get cash back, plus I don't push the referrals much. Here's my [eBates referral link](https://www.ebates.com/r/WIRICK22?eeid=28187).
+I don't make as much using eBates as most people, but I think that's either because I won't make a purchase just to get cash back, plus I don't push the referrals much. Here's my [eBates referral link](http://hendrixjoseph.github.io/ebates/).
 
 Square Cash is just referral money, although I'm unsure how much is from my [Square Cash review post](http://hendrixjoseph.github.io/square-cash-review/) and how much is from [/r/churning referral threads](https://www.reddit.com/r/churning/wiki/ccreferrals). Here's my [Square Cash referral link](http://cash.me/app/VBWWSRS).
 
@@ -53,7 +53,7 @@ eBay | $238.44
 
 ### Credit Card Rewards
 
-I'm quite surprised how much I made on the two Chase cards considering I received the bonuses for them last year, I've had no referrals,  and won't spend money just to get points. Here are my [Chase Freedom referral link](https://applynow.chase.com/FlexAppWeb/renderApp.do?SPID=FNS7&CELL=63HB&MSC=1538443475) and my [Chase Freedom Unlimited referral link](https://applynow.chase.com/FlexAppWeb/renderApp.do?SPID=FNRV&CELL=63HB&MSC=1535963954) if you're interested - both are a $150 bonus after $500 spend. Be sure to read the fine print and details for each.
+I'm quite surprised how much I made on the two Chase cards considering I received the bonuses for them last year, I've had no referrals,  and won't spend money just to get points. Here are my [Chase Freedom referral link](http://hendrixjoseph.github.io/chase-freedom/) and my [Chase Freedom Unlimited referral link](http://hendrixjoseph.github.io/chase-freedom-unlimited/) if you're interested - both are a $150 bonus after $500 spend. Be sure to read the fine print and details for each.
 
 I got the Quicksilver for my honeymoon trip to Iceland since there are no foreign transaction fees. I believe the bonus was $150, and Capital One provides no referral bonuses.
 
@@ -88,7 +88,7 @@ Ally | savings account | $112.24
 
 ### Print-On-Demand Sites
 
-These are mostly t-shirt designs. I never expected [my Amazon t-shirts](https://www.amazon.com/s/?field-keywords=joehx&tag=hendrixjoseph-20) to sell so well. I more expected something like my [TeeSpring](http://hendrixjoseph.github.io/my-first-teespring-designs/) or [Redbubble](https://www.redbubble.com/people/joehx) sales.
+These are mostly t-shirt designs. I never expected [my Amazon t-shirts](http://hendrixjoseph.github.io/t-shirts/) to sell so well. I more expected something like my [TeeSpring](http://hendrixjoseph.github.io/my-first-teespring-designs/) or [Redbubble](https://www.redbubble.com/people/joehx) sales.
 
 I'm not complaining, though.
 
