@@ -1,0 +1,43 @@
+---
+layout: default
+title: My Vision
+---
+
+<form class="my-vision-form">
+  <input type="hidden" name="_subject" value="Customer Preference Submission">
+  <input style="display:none" type="text" name="_gotcha">
+  <h1>My Vision</h1>
+  <h3>Submit or update preferences<a href="{{ site.baseurl}}/common-questions#what-are-preference-images--why-should-i-send-them-in">&nbsp;Learn more</a></h3>
+  <div class="notifications"></div>
+  <ul>
+    <li>
+      <h2>Account Information</h2>
+    </li>
+    <li>
+      <label for="email">Email<span class="required_notification">* required</span></label>
+      <input id="email" type="email" name="email" placeholder="Use the email address from when you created your account"/>
+    </li>
+    <li>
+      <h2>Preference Information</h2>
+    </li>
+    <li>
+      <label for="image-uploader">Preference Images (click "Choose Files" or drag-and-drop) (.jpg, .png)</label>
+      <input id="image-uploader" name="image-uploader" type="file" multiple accept=".png, .jpg, .jpeg"/>
+      <div class="image-preview">
+        <p>(No files currently selected for upload)</p>
+      </div>
+    </li>
+    <li>
+      <label for="instructions">Anything else we should know?<a href="{{ site.baseurl}}/common-questions#preferences">&nbsp;Learn more</a></label>
+      <input id="instructions" type="text" name="instructions" maxlength="280"
+        placeholder="(Example) &quot;Make my images the most beautiful anyone could ever possibly imagine.&quot;"/>
+    </li>
+    <li>
+      <button class="submit center" type="submit" disabled>Submit</button>
+    </li>
+  </ul>
+</form>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="https://sdk.amazonaws.com/js/aws-sdk-2.182.0.min.js"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/app.js"></script>
