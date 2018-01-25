@@ -270,7 +270,8 @@ So when the `ps` crashes, the `chief worker` notices its failure, stops the trai
 system back to the last checkpoint.  
 - Chief worker fails:  it is the most trickiest since `chief worker` plays many roles in training. When it crashes, the 
 training could continues, but since that moment, we lose control of the training. So in this case, everything will be 
-stopped and we turn back to the last checkpoint, just like the `ps` case.  
+stopped and we turn back to the last checkpoint, just like the `ps` case. To reduce the risk, we may exchange the role 
+of `chief worker` after a number of steps.   
 
 
 #### tf.train.MonitoredTrainingSession()
