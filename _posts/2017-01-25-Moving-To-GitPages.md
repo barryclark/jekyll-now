@@ -3,10 +3,12 @@ layout: post
 title: Using GitPages instead of Medium
 ---
 
-I've gone hacker!
------------------
+
 
 ![Hacker]({{ "https://kolemcrae.github.io/images/hacker.jpg" | absolute_url }})
+
+I've gone hacker!
+-----------------
 
 Well, *sort of.* 
 
