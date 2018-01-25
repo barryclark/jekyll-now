@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Greetings!
-published: false
+published: true
+category: Random
 ---
 
-I'm just investigating how this all works for me. You can find out a tiny bit more about me by clicking below. Possibly.
+I'm just investigating how this all works.
