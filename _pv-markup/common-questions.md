@@ -7,7 +7,7 @@ permalink: common-questions.html
 ## 1. Create an Account + Submit Preference Images
 Tell us a bit about yourself and your style! This will help speed up the process once we receive your film.
 1. [**Create an Account**]({{ site.baseurl }}/create-account)
-2. [**Submit Preference Images**]({{ site.baseurl }}/submit-preference-images)
+2. [**Submit Preference Images**]({{ site.baseurl }}/my-vision)
 
 ## 2. Fill out an Order Form
 Order forms are _**crucial**_. They help us ensure all your film has arrived safely and is processed to your specifications. Download + print one [here]({{ site.baseurl }}/images/PhotoVision-Film-Order-Form-Dec-2017.pdf).
@@ -31,8 +31,8 @@ We recommend you send us **3-5 preference images** to keep on file. These images
 When choosing preference images, the most important aspect to consider is **skin tones**. Pick images where your subject fills the majority of the frame and has the **skin tones**, **density** and **contrast level** you are striving to achieve.
 
 ## How do I update/change my preference images?
-**New customer?** First, [create an account]({{ site.baseurl }}/create-account). *Then*, [submit your preference images]({{ site.baseurl }}/submit-preference-images).
-**Current customers** may update preference images [here]({{ site.baseurl }}/submit-preference-images) or email them as an attachment to [{{ site.company-info.email }}](mailto:{{ site.company-info.email }}).
+**New customer?** First, [create an account]({{ site.baseurl }}/create-account). *Then*, [submit your preference images]({{ site.baseurl }}/my-vision).
+**Current customers** may update preference images [here]({{ site.baseurl }}/my-vision) or email them as an attachment to [{{ site.company-info.email }}](mailto:{{ site.company-info.email }}).
 
 ## Who do you recommend for shipping?
 We *highly recommend* shipping your film *in a box* via a *trackable service* to ensure your film arrives safely. Generally, we have found USPS Priority Mail to be the most economical choice. Learn how to [safely ship]({{ site.baseurl }}/shipping-tips) your precious cargo.
