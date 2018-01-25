@@ -7,8 +7,8 @@ title: My Vision
   <input type="hidden" name="_subject" value="Customer Preference Submission">
   <input style="display:none" type="text" name="_gotcha">
   <h1>My Vision</h1>
-  <div class="notifications"></div>
   <h3>Submit or update preferences<a href="{{ site.baseurl}}/common-questions#what-are-preference-images--why-should-i-send-them-in">&nbsp;Learn more</a></h3>
+  <div class="notifications"></div>
   <ul>
     <li>
       <h2>Account Information</h2>
@@ -39,103 +39,5 @@ title: My Vision
 </form>
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script type="text/javascript">
-  $(document).ready(function(){
-    var fileTypes = ['image/jpeg', 'image/pjpeg', 'image/png'];
-    var imageList = new Array();
-
-    $('#email').change(function() {
-      if($(this).val()){
-        $('.submit').prop('disabled', false);
-      }
-    });
-
-    function validFileType(file) {
-      for(var i = 0; i < fileTypes.length; i++) {
-        if(file.type === fileTypes[i]) {
-          return true;
-        }
-      }
-      return false;
-    }
-
-    function returnFileSize(number) {
-      if(number < 1024) {
-        return number + 'bytes';
-      } else if(number > 1024 && number < 1048576) {
-        return (number/1024).toFixed(1) + 'KB';
-      } else if(number > 1048576) {
-        return (number/1048576).toFixed(1) + 'MB';
-      }
-    }
-
-    $('#image-uploader').change(function() {
-      $('.image-preview').empty();
-      var files = this.files;
-
-      if(files.length === 0){
-        $('.image-preview').append('<p class="required_notification">No files currently selected for upload</p>');
-      } else if(files.length > 5) {
-        $('.image-preview').append('<p class="required_notification">Please limit your selection to 5 (five) images or less</p>');
-      } else {
-        var list = document.createElement('ul');
-        $('.image-preview').append(list);
-        for(var i = 0; i < files.length; i++) {
-          var listItem = document.createElement('li');
-          var para = document.createElement('p');
-          para.setAttribute("class", "required_notification");
-          if(validFileType(files[i])) {
-            if(files[i].size > 2621440) {
-              para.textContent = files[i].name + ' is too large. Please restrict your selection to files under 2.5MB.';
-              $('.image-preview').append(para);
-            } else {
-              imageList.push('File' + (i + 1) + ': ' + files[i].name);
-              var img = document.createElement('img');
-              img.src = window.URL.createObjectURL(files[i]);
-              img.width = 130;
-              img.onload = function() {
-                window.URL.revokeObjectURL(this.src);
-              }
-              img.setAttribute("title", files[i].name + " -- " + returnFileSize(files[i].size));
-
-              listItem.appendChild(img);
-            }
-          } else {
-            para.textContent = '"' + files[i].name + '" is not a valid file type. Update your selection.';
-            $('.image-preview').append(para);
-          }
-          list.appendChild(listItem);
-        }
-      }
-    });
-
-    $('.submit').click(function(e) {
-      // formData.push(imageList.serialize());
-      e.preventDefault();
-      var email = $('#email').val();
-      var instructions = $('#instructions').val();
-      var data = {
-        '_subject': 'Customer Preferences Submission',
-        'email': email,
-        'images': imageList, // culled when creating thumbnails in #image-uploader.change function above 
-        'instructions': instructions
-      };
-      $.ajax({
-      	url: '//formspree.io/digijim@gmail.com',
-      	method: 'POST',
-      	data: data,
-      	dataType: 'json',
-    		beforeSend: function() {
-          $('.my-vision-form').append('<p class="required_notification sending">Sending message…</p>');
-    		},
-    		success: function(data) {
-          window.location.replace("{{ site.baseurl }}/my-vision-thanks");
-    		},
-    		error: function(err) {
-          $('.sending').remove();
-          $('.my-vision-form').append('<p class="required_notification">Oops, there was an error.</p>');
-    		}
-      });
-    });
-  });
-</script>
+<script src="https://sdk.amazonaws.com/js/aws-sdk-2.182.0.min.js"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/app.js"></script>
