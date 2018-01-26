@@ -64,7 +64,7 @@ Over 1200 ppi
 more info
 
 ## Order Prints
-![Image for prints](http://photovision.dakisphotofactory.com/onlinePrint.html)
+[![]({{ site.baseurl}}/images/littleprints.jpg)](http://photovision.dakisphotofactory.com/onlinePrint.html)
 
 Create prints from 3.5x5" to 30x45" from your desktop or phone.
 
