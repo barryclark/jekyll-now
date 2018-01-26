@@ -33,6 +33,12 @@ I built the site using the lazy way: I forked a blog that's already built. You c
 
 I then went on the fun journey of learning to edit the thing and tweak it to what I wanted. This included figuring out how to add pagination (only 5 posts will show on my home page and you have "next" and "previous" for other posts), installing bootstrap, fixing a million things in the css and more. 
 
+The next step was my domain name. Setting up a custom domain with GitHub pages isn't too hard, it's just a few clicks. You can find out more [here.](https://help.github.com/articles/using-a-custom-domain-with-github-pages/)
+
+The problem is SSL won't work properly. It'll show up as the wrong certificate giving your users a big red error. To get around this I used Cloudflare. You can find a post on getting it up and running [here.](https://blog.cloudflare.com/secure-and-fast-github-pages-with-cloudflare/) I also get all the other added benefits of using Cloudflare including caching and protection. 
+
+As an fyi if you don't want to use Cloudflare the only way to use ssl is if you either have your own domain or your domain host can use ANAME or flattened CNAME. 
+
 In the end I've hacked together what I think is an easy to read, good looking website that I can edit from anywhere and is free! 
 
 If you prefer the design of my site over the original I forked, the repository is [here.](https://github.com/kolemcrae/kolemcrae.github.io)
