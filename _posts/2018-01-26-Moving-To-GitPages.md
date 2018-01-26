@@ -5,7 +5,7 @@ title: Using GitPages instead of Medium
 
 
 
-![time]({{ "https://kolemcrae.github.io/images/timeheader.jpg" | absolute_url }})
+![time](/images/timeheader.jpg)
 
 I've gone hacker!
 
