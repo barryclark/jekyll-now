@@ -10,7 +10,7 @@ title: Google's Clever Solution to the Porn Problem (safe for work)
 
 
 
-![time]({{ "https://kolemcrae.github.io/images/notporn.jpg" | absolute_url }})
+![Google Image](/images/notporn.jpg)
 
 Let’s start with a simple and honest sentence:
 
