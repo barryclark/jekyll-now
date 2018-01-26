@@ -1,4 +1,4 @@
->Welcome to Kole's Readme! 
+# Welcome to Kole's Readme! 
 
 This is a heavily modified version of jekyll-now. I have made quite a few changes including: 
 
