@@ -25,11 +25,11 @@ What?
 
 You might ask. But, this is a blog! 
 
-You're right. It is. It is a static blog. I am sing Jeckyll to take markdown in GitHub and turn it into static HTML. This means the website is lightning quick and accessible. 
+You're right. It is. It is a static blog. I am using Jeckyll to take markdown in GitHub and turn it into static HTML. This means the website is lightning quick and accessible. 
 
-It was a bit of a learning curve to get to this point. I had to elarn how to use GitHub for one (a very usefull skill!) and elarn how the theming works, posting, markdown etc. 
+It was a bit of a learning curve to get to this point. I had to learn how to use GitHub for one (a very usefull skill!) and learn how the themeing works, posting, markdown etc. 
 
-I built the site using the lazy way: I forced a blog that's already built. You can find the repository [here.](https://github.com/barryclark/jekyll-now). 
+I built the site using the lazy way: I forked a blog that's already built. You can find the repository [here.](https://github.com/barryclark/jekyll-now). 
 
 I then went on the fun journey of learning to edit the thing and tweak it to what I wanted. This included figuring out how to add pagination (only 5 posts will show on my home page and you have "next" and "previous" for other posts), installing bootstrap, fixing a million things in the css and more. 
 
