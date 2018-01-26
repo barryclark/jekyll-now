@@ -17,23 +17,23 @@ title: Create Account
     <li>
       <div class="half">
         <input id="first_name" type="text" name="first_name"/>
-        <label for="first_name">First Name</label>
+        <label for="first_name">First Name<span class="required_notification">*</span></label>
       </div>
       <div class="half">
         <input id="last_name" type="text" name="last_name"/>
-        <label for="last_name">Last Name</label>
+        <label for="last_name">Last Name<span class="required_notification">*</span></label>
       </div>
     </li>
     <li>
-      <label for="email">Email<span class="required_notification">*</span></label>
+      <label for="email"><strong>Email</strong><span class="required_notification">*</span></label>
       <input id="email" type="email" name="email"/>
     </li>
     <li>
-      <label for="phone">Phone</label>
+      <label for="phone"><strong>Phone</strong><span class="required_notification">*</span></label>
       <input id="phone" type="text" name="phone"/>
     </li>
     <li>
-      <label for="address1">Address</label>
+      <label for="address1"><strong>Address</strong></label>
       <input id="address1" type="text" name="address1"/>
     </li>
     <li>
@@ -57,8 +57,22 @@ title: Create Account
       {% include countries-list.html %}
       <label for="country">Country</label>
     <li>
-      <button class="submit center" type="submit">Create Account</button>
+      <button class="submit center" disabled type="submit">Create Account</button>
     </li>
   </ul>
 </form>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript">
+  $(function() {
+    $('.contact_form').change(function() {
+      if(($('#first_name').val()) && ($('#last_name').val()) && ($('#email').val()) && ($('#phone').val())){
+        $('.submit').prop('disabled', false);
+      } else {        
+        $('.submit').prop('disabled', true);
+      }
+    });
+  });
+</script>
 <!-- TODO: Submit this form's data as current site does, so that data is automatically entered into Labworks -->
+
