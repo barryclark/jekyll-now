@@ -58,7 +58,7 @@ Next you need to learn some general data analysis tools. Things like Tableau and
 Knowing how to set up proper dashboards, do analysis of data and even predicting the future (within reason) are all super valuable assets.
 
 ## Adwords certification (then get Bing)
-This one is easy. Go here: https://support.google.com/partners/answer/6123881?hl=en
+This one is easy. Go here: [https://support.google.com/partners/answer/6123881?hl=en](https://support.google.com/partners/answer/6123881?hl=en)
 
 Study all that.
 
@@ -73,7 +73,7 @@ The best part is gaining this knowledge is completely free (hell, you can say yo
 
 Just go here and start:
 
-(https://www.codecademy.com/)[https://www.codecademy.com/]
+[https://www.codecademy.com/](https://www.codecademy.com/)
 
 ## FTP and SSH (Why you need to become even more nerdy)
 Next up you got a get a little more nerdy. Knowing how to update sites using FTP and SSH are invaluable tools that will get you in the good graces of many a hiring manager.
