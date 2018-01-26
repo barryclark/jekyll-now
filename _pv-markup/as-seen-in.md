@@ -12,7 +12,7 @@ We are honored to work alongside amazing film photographers! Here are a few plac
 [![Rangefinder logo](images/as-seen-in/rf-logo.png)](http://www.rfannual.com/)
 [![Huff Post logo](images/as-seen-in/huffpost-new-logo-2017.jpg)](www.huffingtonpost.com)
 [![Martha Stewart Weddings logo](images/as-seen-in/martha-stewart-weddings.png)](http://www.marthastewartweddings.com/)
-[![Belle Lumiere logo](images/as-seen-in/LOGO_BL.png)](http://www.bellelumieremagazine.com)
+[![Belle Lumiere logo](images/as-seen-in/Belle Lum new.png)](http://www.bellelumieremagazine.com)
 [![Magnolia Rouge logo](images/as-seen-in/magnolia rouge.png)](http://www.magnoliarouge.com/)
 [![Dear Gray logo](images/as-seen-in/DearGray-Logo-Magazine.png)](http://www.deargraymagazine.com/)
 [![The Knot logo](images/as-seen-in/theknotlogo.png)](http://www.theknot.com/)
