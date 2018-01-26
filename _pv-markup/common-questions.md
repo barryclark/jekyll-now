@@ -1,8 +1,39 @@
 ---
 layout: page
-title: Welcome! We're Glad You're Here.
 permalink: common-questions.html
 ---
+<style>
+.tablelines th {
+    border-bottom: 2px solid black;
+    padding: .3em 1em .3em 1em;
+}
+.tablelines td {
+    border-bottom: 1px solid black;
+    padding: .3em 1em .3em 1em;
+}
+.tablelines tr:last-child td {
+    border: none;
+}
+ol, ul {
+    padding-left: 3em;
+}
+p {
+    margin-bottom: 0;
+}
+.entry h1 {
+    border-bottom: 1px solid #ccc;
+    color: #757575;
+    font-size: 2.8em;
+    font-weight: 300;
+}
+.entry h2 {
+    font-size: 1.5em;
+    font-weight: 300;
+    color: #757575;
+}
+</style>
+
+# Welcome! We're Glad You're Here.
 
 ## 1. Create an Account + Submit Preference Images
 Tell us a bit about yourself and your style! This will help speed up the process once we receive your film.
@@ -68,11 +99,12 @@ Proof prints may be requested via your [order form]({{ site.baseurl }}/images/Ph
 We will hold your negatives based on the Ship Back preference marked on your [Order Form]({{ site.baseurl }}/images/PhotoVision-Film-Order-Form-Dec-2017.pdf). Negatives are shipped back via USPS Priority Flat Rate shipping to reduce costs to you. We will charge your card on file at time of shipment. *For international shipping*, these prices will vary.
 
 | **Ship Back Options** |   |
-| --- | :---: |
+| :--- | :---: |
 | **2 weeks** | $6.50 |
 | **Fill 2" Flat Rate box** | $10.00 |
 | **Fill 4" Flat Rate box** | $20.00 |
 | **End of Year** | Price varies |
+{: .tablelines}
 
 ## How are my negatives handled + organized?
 We take the utmost care with your film! Negatives are carefully cut, sleeved and organized by hand at no charge. If your rolls are numbered (which BTW, we *highly* recommend) they will also be kept in numerical order.
@@ -95,12 +127,13 @@ When shooting film, your negatives act as your road map to understanding the con
 Resolution matters. That's why our normal scans give you the freedom to print stunning 20x24s straight away, while our large scans can easily grace a billboard.
 
 | **Film Size** | **Format** | **Normal Scan** | **Large Scan** |
-| --- | :---: | :---: | :---: |
+| :--- | :---: | :---: | :---: |
 | **35mm** | 4x6 | 2400x3600 | 3600x5400 |
 | **120 / 220** | 6x4.5 | 2700x3600 | 3600x4800 |
 | **120 / 220** | 6x6 | 2700x2700 | 3600x3600 |
 | **120 / 220** | 6x7 | 2700x3150 | 3600x4200 |
 | **120 / 220** | 6x8 | 2700x3600 | 3600x4800 |
+{: .tablelines}
 *All scan resolutions are approximate. Slight variations are normal.*
 
 ## What scanners do you use?
