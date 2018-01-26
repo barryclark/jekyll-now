@@ -16,37 +16,40 @@ title: Create Account
     </li>
     <li>
       <div class="half">
-        <input type="text" name="first_name"/>
+        <input id="first_name" type="text" name="first_name"/>
         <label for="first_name">First Name</label>
       </div>
       <div class="half">
-        <input type="text" name="last_name"/>
+        <input id="last_name" type="text" name="last_name"/>
         <label for="last_name">Last Name</label>
       </div>
     </li>
     <li>
       <label for="email">Email<span class="required_notification">*</span></label>
-      <input type="email" name="email"/>
+      <input id="email" type="email" name="email"/>
     </li>
     <li>
       <label for="phone">Phone</label>
-      <input type="text" name="phone"/>
+      <input id="phone" type="text" name="phone"/>
     </li>
     <li>
       <label for="address1">Address</label>
-      <input type="text" name="address1"/>
+      <input id="address1" type="text" name="address1"/>
+    </li>
+    <li>
+      <input id="address2" type="text" name="address2"/>
     </li>
     <li>
       <div class="half">
-        <input type="text" name="city"/>
+        <input id="city" type="text" name="city"/>
         <label for="city">City</label>
       </div>
       <div class="quarter">
-        <input type="text" name="state"/>
+        <input id="state" type="text" name="state"/>
         <label for="state">State/Province</label>
       </div>
       <div class="quarter">
-        <input type="text" name="zip"/>
+        <input id="zip" type="text" name="zip"/>
         <label for="zip">Zip/Postal</label>
       </div>
     </li>
@@ -58,3 +61,4 @@ title: Create Account
     </li>
   </ul>
 </form>
+<!-- TODO: Submit this form's data as current site does, so that data is automatically entered into Labworks -->
