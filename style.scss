@@ -10,7 +10,7 @@
 // Syntax highlighting @import is at the bottom of this file
 
 /**************/
-/* BASE RULES */
+/* The Header */
 /**************/
 
 .jumbotron {
@@ -24,6 +24,10 @@
 }
 
 
+/**************/
+/* Fixes a bug where images are too big and break the site */
+/**************/
+
 
 img {
 	
@@ -36,17 +40,37 @@ html {
   font-size: 100%;
 }
 
+/**************/
+/* The body of the page */
+/**************/
+
+
 body {
 	background: $white;
-  font: 18px/1.4 $helvetica;
-  color: $darkGray;
-}
+  }
 
 .container {
   margin: 0 auto;
-  max-width: 740px;
+  max-width: 500px;
   padding: 0 10px;
   width: 100%;
+}
+
+
+/**************/
+/* Making text pretty */
+/**************/
+
+h1 {
+color: #3090C7;
+	
+	
+}
+
+a {
+text-decoration: none !important;
+	color: black;
+	
 }
 
 
