@@ -35,10 +35,10 @@ p {
 
 # Welcome! We're Glad You're Here.
 
-## 1. Create an Account + Submit Preference Images
+## 1. Create an Account + Submit Preferences
 Tell us a bit about yourself and your style! This will help speed up the process once we receive your film.
 1. [**Create an Account**]({{ site.baseurl }}/create-account)
-2. [**Submit Preference Images**]({{ site.baseurl }}/my-vision)
+2. [**Submit Preferences**]({{ site.baseurl }}/preferences)
 
 ## 2. Fill out an Order Form
 Order forms are _**crucial**_. They help ensure all your film has arrived safely and is processed to your specifications. [Download + print]({{ site.baseurl }}/images/PhotoVision-Film-Order-Form-Dec-2017.pdf).
@@ -51,7 +51,7 @@ Order forms are _**crucial**_. They help ensure all your film has arrived safely
 **3775 Market St NE**
 **Salem OR 97301**
 
-# My Vision
+# Preferences
 
 Our world-class color techs can best match your vision when you provide the road map! And the best road maps include both **preference images** and **written preferences**.
 

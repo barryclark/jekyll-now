@@ -344,7 +344,7 @@ article {
   }
 }
 
-.contact_form, .my-vision-form {
+.contact_form, .preferences-form {
   max-width: 700px;
   margin-left: 250px;
   @include mobile {
@@ -412,6 +412,18 @@ article {
       background-color: gray;
     }
   }
+}
+
+.preferences-form {
+  h1 {
+    margin-bottom: 0px;
+  }
+  a {
+    margin-top: 1em;
+  }
+  ul {
+    margin-top: 2em;
+  }  
 }
 
 .required_notification {

@@ -90,7 +90,7 @@ $(function() {
                 $('.notifications').append('<p class="required_notification sending">Ok. Now sending your preferences…</p>');
             },
             success: function (data) {
-                window.location.replace("/my-vision-thanks");
+                window.location.replace("/preferences-thanks");
             },
             error: function (err) {
                 $('.sending').remove();
