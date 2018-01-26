@@ -15,21 +15,21 @@ I Currently work at Kanetix as their Senior Digital Marketing Strategist.
 Websites I run:
 --------------
 
-Toronto Booze Hound, McRae Digital Ltd & Modern Human Beings
+[Toronto Booze Hound](https://torontoboozehound.com), [McRae Digital](https://mcraedigital.com) & [Modern Human Beings](https://modernhumanbeings.com)
 
 Other Projects:
 --------------
 
-My new novel is well on the way. It’s a comedy! (get my current novel for free here!)
+My new novel is well on the way. It’s a comedy! [Get my previous novel for free here](https://www.smashwords.com/books/view/683795)
 
 Always recording new music, sometimes sharing it.
 
 Currently DM an awesome D&D group!
 
-You can follow my professional life on LinkedIn.
+You can follow my professional life on [LinkedIn.](www.linkedin.com/in/kole-mcrae)
 
 
-Updated Jan 15 2018.
+Updated Jan 26 2018.
 
 Inspired by Derek Sivers
 
