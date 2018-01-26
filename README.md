@@ -9,5 +9,6 @@ This is a heavily modified version of [jekyll-now.](https://github.com/barryclar
 * Heavily modified the design 
 * Fixed the max width for better readability
 * Updated the typography for readability
+* Added a favicon
 
 This project is open source - use as you wish! 
