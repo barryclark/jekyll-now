@@ -34,6 +34,7 @@ Updated Jan 26 2018.
 Inspired by Derek Sivers
 
 
-### Contact me
+Contact me
+----------
 
 [kolemcrae@gmail.com](mailto:kolemcrae@gmail.com)
