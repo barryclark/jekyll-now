@@ -3,7 +3,7 @@ layout: post
 title: National Geographic - Here is a way to save a lot of money
 ---
 
-![time]({{ "https://kolemcrae.github.io/images/national.jpg" | absolute_url }})
+![national geographic image]({{ "{{ site.baseurl }}/images/national.jpg" | absolute_url }})
 
 Yesterday I got an email from National Geographic. This isn’t too weird since I am a subscriber. What’s weird is what the email was for. They were trying to make me a subscriber by offering a discounted price. 
 
