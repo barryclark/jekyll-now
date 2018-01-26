@@ -58,9 +58,10 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 500px;
+
   padding: 0 10px;
   width: 100%;
+	max-width: 33em !important;
 }
 
 
