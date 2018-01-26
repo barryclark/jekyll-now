@@ -26,7 +26,7 @@ Always recording new music, [sometimes sharing it.](https://soundcloud.com/kolem
 
 Currently DM an awesome D&D group!
 
-You can follow my professional life on [LinkedIn.](www.linkedin.com/in/kole-mcrae)
+You can follow my professional life on [LinkedIn.](https://www.linkedin.com/in/kole-mcrae)
 
 
 Updated Jan 26 2018.
