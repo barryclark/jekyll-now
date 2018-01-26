@@ -6,7 +6,7 @@ title: Creeping People Out at Scale to Get a Job
 
 ---
 
-![time]({{ "https://kolemcrae.github.io/images/ghost.jpg" | absolute_url }})
+![ghost](/images/ghost.jpg)
 
 About 8 years ago (I know, writing this as the opening means I have to update it each year) there was this story.
 
