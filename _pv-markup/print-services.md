@@ -1,8 +1,37 @@
 ---
 layout: page
-title: Print Services
 permalink: print-services.html
 ---
+<style>
+.tablelines th {
+    border-bottom: 2px solid black;
+    padding: .3em 1em .3em 1em;
+}
+.tablelines td {
+    border-bottom: 1px solid black;
+    padding: .3em 1em .3em 1em;
+}
+.tablelines tr:last-child td {
+    border: none;
+}
+ol, ul {
+    padding-left: 3em;
+}
+p {
+    margin-bottom: 0;
+}
+.entry h1 {
+    border-bottom: 1px solid #ccc;
+    color: #757575;
+    font-size: 2.8em;
+    font-weight: 300;
+}
+.entry h2 {
+    font-size: 1.5em;
+    font-weight: 300;
+    color: #757575;
+}
+</style>
 
 # Print your work
 
@@ -13,8 +42,8 @@ Outstanding prints on the finest Fujicolor Crystal Archive Supreme Paper. This i
 
 ## Standard Prints
 
-|Size                     |Fujicolor Crystal Archive Supreme (Lustre)    |  Fuji Crystal Archive Pearl (Metallic)|
-| ----------------------- | ----------------------------- | ------------------------------------- |
+| **Size**                | **Fujicolor Crystal Archive Supreme (Lustre)**   |  **Fuji Crystal Archive Pearl (Metallic)** |
+| :---------------------- | :---------------------------: | :-----------------------------------: |
 | **Wallets 8 per Sheet** | $6.00                         | N/A                                   |
 | **3.5x5**	              | $0.39	                      | N/A                                   |
 | **4x4**	              | $0.39	                      | N/A                                   |
@@ -40,6 +69,7 @@ Outstanding prints on the finest Fujicolor Crystal Archive Supreme Paper. This i
 | **24x36**	              | $49.95	                      | $57.95                                |
 | **30x40**	              | $59.95	                      | $64.95                                |
 | **30x45**	              | $59.95	                      | $69.45                                |
+{: .tablelines}
 
 
 ## Borders
@@ -50,6 +80,7 @@ Add a professional + clean look to your proof prints at no charge. White borders
 | **Small** | 1/4" |
 | **Medium** | 3/8" |
 | **Large** | 1/2" |
+{: .tablelines}
 
 ## Panoramic Prints
 
@@ -57,6 +88,7 @@ Add a professional + clean look to your proof prints at no charge. White borders
 | ----------------------- | ----------------------------- | ------------------------------------- |
 | **Less than or equal to 20"**	| $1.25 per linear inch	  | $1.50 per linear inch                 |
 | **Less than or equal to 30"** | $1.75 per linear inch	  | $2.00 per linear inch                 |
+{: .tablelines}
 
 ## Poly Prints
 

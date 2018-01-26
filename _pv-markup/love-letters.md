@@ -1,8 +1,39 @@
 ---
 layout: page
-title: Love Letters from Our Photographers
 permalink: praise.html
 ---
+<style>
+.tablelines th {
+    border-bottom: 2px solid black;
+    padding: .3em 1em .3em 1em;
+}
+.tablelines td {
+    border-bottom: 1px solid black;
+    padding: .3em 1em .3em 1em;
+}
+.tablelines tr:last-child td {
+    border: none;
+}
+ol, ul {
+    padding-left: 3em;
+}
+p {
+    margin-bottom: 0;
+}
+.entry h1 {
+    border-bottom: 1px solid #ccc;
+    color: #757575;
+    font-size: 2.8em;
+    font-weight: 300;
+}
+.entry h2 {
+    font-size: 1.5em;
+    font-weight: 300;
+    color: #757575;
+}
+</style>
+
+# Love Letters from Our Photographers
 
 *Other labs don’t hold a candle to you in quality and care for their customers. Thanks for all you do!  
 __[Kathryn Bruns](http://www.kathrynbruns.com/) 12.15.17__*
