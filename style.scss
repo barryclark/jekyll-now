@@ -167,6 +167,18 @@ img {
   };
 }
 
+.fuji-fresh-container {
+  background-color: $lightGray;
+  :hover {
+    cursor: pointer;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
 .praise-teaser-container {
   background-color: $lightGray;
 }
@@ -229,7 +241,10 @@ img {
     }
   }
   .right {
-    font-size: .75em;
+    &:before {
+      content: '—';
+    }
+    font-size: .85em;
     a {
       font-size: 1em;
     }
