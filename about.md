@@ -22,7 +22,7 @@ Other Projects:
 
 My new novel is well on the way. It’s a comedy! [Get my previous novel for free here](https://www.smashwords.com/books/view/683795)
 
-Always recording new music, sometimes sharing it.
+Always recording new music, [sometimes sharing it.](https://soundcloud.com/kolemcrae)
 
 Currently DM an awesome D&D group!
 
