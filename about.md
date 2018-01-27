@@ -20,9 +20,11 @@ Wer sind wir?
 ==============
 Wir sind das Team Apoapsis aus Vaterstetten. Unsere Gruppe besteht aus 
 Niklas Cölle, Thomas Schlienz, Leon Hauser und Felix Edelmann, und wir besuchen alle die 11. Jahrgangsstufe des 
-Humboldt-Gymnasiums Vaterstetten. ![_config.yml]({{ site.baseurl }}/images/Team Apoapsis.jpeg)
+Humboldt-Gymnasiums Vaterstetten. ![_config.yml]({{ site.baseurl }}/images/Team_Apoapsis.jpeg)
 Mit unserem CanSat wollen wir die Feinstaubkonzentration der Atmosphäre in der Luft
 messen. Die gesammelten Daten werden in einer Datenbank, die bald auf dieser Website hinzugefügt wird, gesammelt, und 
 werden für jeden zugänglich sein.
+
+
 Inspiriert wurden wir vor allem durch das Projekt [luftdaten.info](luftdaten.info) des OK Lab Stuttgart, welches die Messungen von öffentlich
 zugänglichen Feinstaubsensoren sammelt, in Echtzeit verarbeitet und auf einer Karte öffentlich dargestellt werden.
