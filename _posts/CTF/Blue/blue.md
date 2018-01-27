@@ -1,3 +1,8 @@
+---
+layout: post
+title: Hack The Box - Blue
+category: CTF
+---
 # Hack The Box - Blue
 
 ## Inital Information
