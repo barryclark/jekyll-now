@@ -3,7 +3,7 @@ layout: post
 title: Social Media und die Website
 ---
 
-Der Tag ist fast rum, und unsere Social Media Kanäle wurden auf den *neusten Stand* 
+Der Tag ist fast rum, und unsere Social Media Kanäle wurden auf den neusten Stand 
 gebracht. Über [Twitter](https://twitter.com/Apoapsis_HGV), [Instagram](https://www.instagram.com/apoapsis_hgv/), 
 [Facebook](https://www.facebook.com/ApoapsisHGV/) und diese Website werden wir über unsere Unternehmungen 
 und Planungen rund um den CanSat Wettbewerb 2018 berichten.
