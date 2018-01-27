@@ -1,10 +1,10 @@
 ---
 layout: post
 title: Über uns und das Projekt
-lang: de
+lang: en
 ref: about
 ---
-
+English about
 Was ist ein Cansat?
 --------------------
 

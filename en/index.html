@@ -1,11 +1,10 @@
 ---
 layout: default
-lang: de
-ref: index
+lang: en
+ref: index 
 ---
 <div>
 {% assign posts=site.posts | where:"lang", page.lang %}
-{{site.pages.url}}
 {% for post in posts %}
   <article class="post">
     <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
@@ -14,7 +13,7 @@ ref: index
       {{ post.excerpt }}
     </div>
 
-    <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Weiterlesen</a>
+    <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read more</a>
   </article>
 {% endfor %}
 </div>
