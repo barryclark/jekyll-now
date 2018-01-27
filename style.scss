@@ -168,7 +168,18 @@ img {
 }
 
 .fuji-fresh-container {
-  background-color: $lightGray;
+  :hover {
+    cursor: pointer;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.reference-sheets-container {
+  width: 50%;
   :hover {
     cursor: pointer;
   }
