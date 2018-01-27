@@ -10,7 +10,8 @@ layout: default
   </div>
 
   <div class="date">
-    Geschrieben am {{ page.date | date: "%B %e, %Y" }}
+    Geschrieben am {{ page.date | date: "%d. %B %Y" | replace:"January","Januar" | replace:"Februar","February" | replace:"March","März" | replace:"May","Mai" | replace:"June","Juni" | replace:"July","Juli" | replace:"December","Dezember" }}
+
   </div>
 
   {% include disqus.html %}
