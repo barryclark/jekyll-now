@@ -230,8 +230,8 @@ markerColor: 'blue'
 var map = L.map('map')
 
 // create the tile layer with correct attribution
-var osmUrl='http://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png';
-var osmAttrib='&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, Tiles courtesy of <a href="http://hot.openstreetmap.org/" target="_blank">Humanitarian OpenStreetMap Team</a>';
+var osmUrl='{{site.tile_map}}';
+var osmAttrib='&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, Tiles courtesy of <a href="http://leafletjs.com/" target="_blank">Leaflet</a>';
 var osm = new L.TileLayer(osmUrl, {minZoom: 6, maxZoom: 19, attribution: osmAttrib});
 
 
@@ -247,7 +247,7 @@ for (var i=0; i<markerList.length; i++) {
         var type = markerList[i][4]
 
         if (!isNaN(lat) && !isNaN(lon)) {
-                var markerLocation = new L.LatLng(lat, lon); 
+                var markerLocation = new L.LatLng(lat, lon);
                 if (type == 'Donazioni') {
                         var marker = new L.Marker(markerLocation, {icon: donazioniMarker});
                 } else if (type == 'Alloggi') {

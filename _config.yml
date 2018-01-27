@@ -21,7 +21,7 @@ description: Un progetto per informare sugli eventi sismici che hanno colpito il
 # --- Navigation bar options --- #
 # List of links in the navigation bar
 navbar-links:
-  Segnala: 
+  Segnala:
     - Segnalazioni terremoto: "segnala/"
     - Segnala dati: "dataset/"
   Richieste:
@@ -129,7 +129,8 @@ markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
 paginate: 5
-
+#selec tile for maps
+tile_map: http://{s}.tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png
 kramdown:
   input: GFM
 
