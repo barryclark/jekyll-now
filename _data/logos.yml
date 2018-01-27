@@ -14,10 +14,6 @@
   logo: /img/icone/03-alloggi.png
   map: true
   link: 2016-09-22-mappa-alloggi
-- name: Mappa Segnalazioni
-  logo: /img/icone/05-segnalazioni.png
-  map: true
-  link: 2016-09-01-mappa-segnalazioni
 - name: Mappa Viabilità
   logo: /img/icone/09-traffico.png
   map: true
@@ -41,7 +37,7 @@
 - name: DATI
   logo: /img/icone/tci-opendata.png
   map: false
-  link: dataset/  
+  link: dataset/
 - name: ALLOGGI
   logo: /img/icone/alloggi2-tci.png
   map: false
