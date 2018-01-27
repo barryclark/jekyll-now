@@ -55,7 +55,7 @@ markerList.push([{{member.issue.lat}}, {{member.issue.lon}}, "{{member.title|uri
 var map = L.map('map')
 
 // create the tile layer with correct attribution
-var osmUrl='https://tiles.wmflabs.org/bw-mapnik/${z}/${x}/${y}.png';
+var osmUrl='http://{s}.tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png';
 var osmAttrib='&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, Tiles courtesy of <a href="http://leafletjs.com/" target="_blank">Leaflet</a>';
 var osm = new L.TileLayer(osmUrl, {minZoom: 6, maxZoom: 19, attribution: osmAttrib});
 
