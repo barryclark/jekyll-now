@@ -3,6 +3,7 @@ layout: page
 title: My Music
 permalink: /music/
 ---
+![music](/images/music.jpg)
 
 I have several albums available and I am always posting new music. 
 
