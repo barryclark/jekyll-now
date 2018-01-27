@@ -4,7 +4,7 @@ title: Über uns und das Projekt
 ---
 
 Was ist ein Cansat?
-===================
+--------------------
 
 Ein Cansat ist eine Kapsel in der Größe einer handelsüblichen Getränkedose, die mithilfe einer kleinen Rakete
 in eine Höhe von ca. 1000m geschossen wird und daraufhin an einem Fallschirm wieder runtergleitet. Dabei sammeln
@@ -17,7 +17,7 @@ unter [cansat.de](cansat.de)
 
 
 Wer sind wir?
-==============
+---------------
 Wir sind das Team Apoapsis aus Vaterstetten. Unsere Gruppe besteht aus
 Niklas Cölle, Thomas Schlienz, Leon Hauser und Felix Edelmann, und wir besuchen alle die 11. Jahrgangsstufe des
 Humboldt-Gymnasiums Vaterstetten.
