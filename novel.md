@@ -3,6 +3,9 @@ layout: page
 title: My Novel
 permalink: /novel/
 ---
+![novel](/images/novel.jpg)
+
+I'm currently working on my second novel, but you can check out my first below! 
 
 # Please Laugh at my Funeral
 This is my first published novel. It is available in it's entirety for free. 
