@@ -4,7 +4,6 @@ title: My Music
 permalink: /music/
 ---
 
-# My Music
 I have several albums available and I am always posting new music. 
 
 ## Recent Music
