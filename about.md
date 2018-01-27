@@ -26,7 +26,7 @@ messen. Die gesammelten Daten werden in einer Datenbank, die bald auf dieser Web
 werden für jeden zugänglich sein.
 
 
-Inspiriert wurden wir vor allem durch das Projekt [luftdaten.info](luftdaten.info) des OK Lab Stuttgart, welches die Messungen von öffentlich
+Inspiriert wurden wir vor allem durch das Projekt [luftdaten.info](http://luftdaten.info) des OK Lab Stuttgart, welches die Messungen von öffentlich
 zugänglichen Feinstaubsensoren sammelt, in Echtzeit verarbeitet und auf einer Karte öffentlich dargestellt werden.
 
 ![team.jpeg]({{ site.baseurl }}/images/team.jpeg)
