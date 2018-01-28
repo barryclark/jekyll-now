@@ -2,7 +2,7 @@
 layout: post
 title: Social Media und die Website
 ref: socialWeb
-lang: de
+lang: DE
 ---
 
 Der Tag ist fast rum, und unsere Social Media Kanäle wurden auf den neusten Stand
