@@ -21,7 +21,8 @@ Copy the exploit script to your folder, and then modify its content as shown in 
 ![Exploit Script hostname](/images/solidstate/hostname.png "Exploit Script hostname")
 ## Exploitation Part-1
 Telnet to the port 4555 presents us with a username and password login. Using root/root we login to the service.
-![Telnet 4555](/images/blue/telnet_4555.png "Telnet 4555")
+
+![Telnet 4555](/images/solidstate/telnet_4555.png "Telnet 4555")
 Login to the service we can begin to run JAMES commands, for further information on the commands enter the "?" which will present you with all the possible commands.
 We can use the setpassword command for the user account mindy.
 ![Setpassword Mindy](/images/solidstate/setpassword_mindy.png)
