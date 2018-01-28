@@ -4,11 +4,11 @@ title: Wilkommen auf unserem Blog!
 lang: en
 ref: first
 ---
-English!!!!
-Hier werdet ihr Neuigkeiten über unser Projekt erfahren, zum Beispiel Tests von Komponenten,
-das Entwickeln von Bauteilen & Software und vieles mehr.
-Wenn ihr mehr über uns erfahren wollt, schaut mal [hier](https://apoapsishgv.github.io/about/) vorbei.
 
-Für mehr Updates könnt ihr uns auch [auf Twitter folgen](https://twitter.com/Apoapsis_HGV).
+Here you will find news about our project, for example about the tests of components,
+the devlopment of parts & software and much more.
+If you want to know more about us, check out [here] (https://apoapsishgv.github.io/en/about/).
 
-Wenn ihr mehr über den Wettbewerb selbst lernen wollt, schaut auf der [offiziellen Seite des CanSat Wettbewerb 2018](https://www.cansat.de/) vorbei.
+For more updates, you can also follow us [on Twitter] (https://twitter.com/Apoapsis_HGV).
+
+If you want to learn more about the competition itself, check out the [official CanSat 2018 Contest page] (https://www.cansat.de/).
