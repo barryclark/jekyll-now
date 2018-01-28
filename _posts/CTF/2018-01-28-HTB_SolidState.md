@@ -5,7 +5,7 @@ category: CTF
 ---
 
 ## Inital Information
-
+From the initial information, the box running Linux .
 ## Enumeration
 Let us begin with NMAPPING the box using the the following command
 
