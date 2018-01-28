@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About us and our project
-lang: en
+lang: EN
 ref: about
 ---
 
@@ -23,7 +23,7 @@ About us
 We are the team Apoapsis from Vaterstetten. Our group consists of
 Niklas Cölle, Thomas Schlienz, Leon Hauser and Felix Edelmann, and we all attend the 11th grade of the
 Humboldt-Gymnasiums Vaterstetten.
-With our CanSat we want to measure the fine dust concentration of the atmosphere in higher air layers. 
+With our CanSat we want to measure the fine dust concentration of the atmosphere in higher air layers.
 The collected data will be added to a public database which will soon be added to this website.
 
 We were mainly inspired by the project [luftdaten.info](http://luftdaten.info) of the OK Lab Stuttgart, which collects the measurements of public accessible fine dust sensors in real time and displays them on a public available map.
