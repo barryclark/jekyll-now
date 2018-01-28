@@ -34,7 +34,8 @@ Now that we have changed mindy's password, we can telnet to 110.
 now if we list the messages that mindy has stored.
 
 ![List Messages](/images/solidstate/list_110.png)
-we see that there are two messages, if we retrieve the first message 1109.
+
+We see that there are two messages, if we retrieve the first message 1109.
 
 ![Read Message](/images/solidstate/retr_110.png)
 From this we get the password and username for the ssh of mindy.
