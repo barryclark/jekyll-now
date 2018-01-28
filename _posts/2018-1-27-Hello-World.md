@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Welcome to our Blog!
-lang: en
+lang: EN
 ref: first
 ---
 
