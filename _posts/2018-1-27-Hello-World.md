@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Wilkommen auf unserem Blog!
+title: Welcome to our Blog!
 lang: en
 ref: first
 ---
