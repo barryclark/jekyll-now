@@ -5,9 +5,9 @@ category: CTF
 ---
 
 ## Inital Information
-From the initial information, the box running Linux .
+From the initial information, the box running Linux.
 ## Enumeration
-Let us begin with NMAPPING the box using the the following command
+Let us begin with nmap agianst the boxes IP.
 
 ![Full TCP Scan of SolidState](/images/solidstate/tcpfull_solidstate.png"Full TCP Scan against SolidState")
 
