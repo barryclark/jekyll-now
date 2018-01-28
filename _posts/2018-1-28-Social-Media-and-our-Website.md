@@ -2,7 +2,7 @@
 layout: post
 title: Social Media und die Website
 ref: socialWeb
-lang: en
+lang: EN
 ---
 
 The day is almost over and our social media channels have been updated. Via [Twitter](https://twitter.com/Apoapsis_HGV), 
