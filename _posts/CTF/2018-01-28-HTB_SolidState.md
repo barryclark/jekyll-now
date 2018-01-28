@@ -47,7 +47,7 @@ Now that our script has executed, we need to setup a netcat listerner
 After we have executed the script, ssh into the box with mindy using the following command:
 ![SSH Mindy](/images/solidstate/ssh_login_mindy.png "SSH Login as Mindy")
 Once we have logged in, our netcat shell will get a bash shell which we can get our user.txt flag as well as our next foothold to get root.
-![NC Connected](/images/solidstates/ssh_connected.png "SSH Connected")
+![NC Connected](/images/solidstates/ssh_login_mindy.png "SSH Connected")
 
 ## Exploitation Part-4
 Now that we have got a shell that isn't jailed we can begin to look for a method to get root. You can use Linuxenum here however doing some manual enumeration there is a script in /opt/ which is running at root access.
