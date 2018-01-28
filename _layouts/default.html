@@ -29,8 +29,8 @@
 
           <nav>
 
-            <a href="{% if page.lang == "de" %}{{ site.baseurl }}/{% elsif page.lang == "en" %}{{ site.baseurl }}/en{% endif %}">Blog</a>
-            <a href="{% if page.lang == "de" %}{{ site.baseurl }}/about{% elsif page.lang == "en" %}{{ site.baseurl }}/en/about{% endif %}">{% if page.lang == "de" %}Über{% elsif page.lang == "en" %}About{% endif %}</a>
+            <a href="{% if page.lang == "DE" %}{{ site.baseurl }}/{% elsif page.lang == "EN" %}{{ site.baseurl }}/en{% endif %}">Blog</a>
+            <a href="{% if page.lang == "DE" %}{{ site.baseurl }}/about{% elsif page.lang == "EN" %}{{ site.baseurl }}/en/about{% endif %}">{% if page.lang == "DE" %}Über{% elsif page.lang == "EN" %}About{% endif %}</a>
               {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
               {% for post in posts %}
                 <a href="{{ post.url }}" class="{{ post.lang }}">{{ post.lang }}</a>
