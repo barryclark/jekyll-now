@@ -15,7 +15,7 @@ This data is either transmitted in real time to a ground station or stored in th
 the landing.
 
 More information about the challenge can be found on the official Cansat 2018 competition website
-under [cansat.de](https://cansat.de).
+at [cansat.de](https://cansat.de).
 
 
 About us
