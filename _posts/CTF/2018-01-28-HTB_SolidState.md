@@ -9,7 +9,7 @@ From the initial information, the box running Linux .
 ## Enumeration
 Let us begin with NMAPPING the box using the the following command
 
-![Full TCP Scan of SolidState](/images/solidstate/fulltcp_solidstate.png "Full TCP Scan against SolidState")
+![Full TCP Scan of SolidState](/images/solidstate/tcpfull_solidstate.png "Full TCP Scan against SolidState")
 
 The scan shows that ssh is running on port 22, and a JAMES service which is used as a mail server on the other ports.
 
@@ -28,9 +28,10 @@ We can use the setpassword command for the user account mindy.
 ## Exploitation Part-2
 Now that we have changed mindy's password, we can telnet to 110 and entering the commands:
 ![Login to port 110](/images/solidstate/login_110.png)
-now if we list the messages that mindy has stored
+now if we list the messages that mindy has stored.
+
 ![List Messages](/images/solidstate/list_110.png)
-we see that there are two messages, if we retrieve the first message 1109
+we see that there are two messages, if we retrieve the first message 1109.
 ![Read Message](/images/solidstate/retr_110.png)
 From this we get the password and username for the ssh of mindy.
 
