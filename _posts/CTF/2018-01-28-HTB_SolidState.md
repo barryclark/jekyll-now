@@ -28,23 +28,14 @@ Telnet to the port 4555 presents us with a username and password login. Using ro
 ![Telnet 4555](/images/blue/telnet_4555.png "Telnet 4555")
 Login to the service we can begin to run JAMES commands, for further information on the commands enter the "?" which will present you with all the possible commands.
 We can use the setpassword command for the user account mindy.
-```bash
-setpassword mindy test
-```
+![Setpassword Mindy](/images/solidstate/setpassword_mindy.png)
 ## Exploitation Part-2
 Now that we have changed mindy's password, we can telnet to 110 and entering the commands:
-```bash
-USER mindy
-PASS mindy
-```
+![Login to port 110](/images/solidstate/login_110.png)
 now if we list the messages that mindy has stored
-```bash
-list
-```
+![List Messages](/images/solidstate/list_110.png)
 we see that there are two messages, if we retrieve the first message 1109
-```bash
-retr 1109
-```
+![Read Message](/images/solidstate/retr_110.png)
 From this we get the password and username for the ssh of mindy.
 
 ## Exploitation Part-3
@@ -67,7 +58,7 @@ Now if we read the contents of the file we should see something on the lines
 Rerun the script and a text file should be created within the /tmp/ directory.
 ### Reading /tmp/exit.txt
 Traverse the /tmp/ directory and cat the outputs of the file
-![Read /tmp/exit.txt](/images/solidstate/read_tmp_exit_text "Read /tmp/exit.txt")
+![Read /tmp/exit.txt](/images/solidstate/read_tmp_exit_text.png "Read /tmp/exit.txt")
 This will present the root flag.
 Congratz you have rooted the box.
 
