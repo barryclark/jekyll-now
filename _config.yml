@@ -24,7 +24,7 @@ footer-links:
   instagram: apoapsis_hgv
   linkedin:
   pinterest:
-  rss: # just type anything here for a working RSS icon
+  rss: CreativeRSSName
   twitter: Apoapsis_HGV
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
@@ -40,7 +40,7 @@ google_analytics: UA-113202603-1
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
-url:
+url: https://apoapsishgv.github.io/
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
