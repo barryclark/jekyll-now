@@ -1,34 +1,31 @@
 ---
 layout: post
-title: Über uns und das Projekt
+title: About us and our project
 lang: en
 ref: about
 ---
-English about
-Was ist ein Cansat?
+
+What is a Cansat?
 --------------------
 
-Ein Cansat ist eine Kapsel in der Größe einer handelsüblichen Getränkedose, die mithilfe einer kleinen Rakete
-in eine Höhe von ca. 1000m geschossen wird und daraufhin an einem Fallschirm wieder runtergleitet. Dabei sammeln
-die Sensoren an Bord verschiedene Daten über die Umgebung, zum Beispiel Temperatur, Druck, Position und vieles mehr.
-Diese Daten werden entweder in Echtzeit an eine Bodenstation übertragen oder in der Kapsel gespeichert und nach
-der Landung ausgelesen.
+A Cansat is a capsule the size of a standard soda can. Using a small rocket
+it is launched to a height of about 1000m and then glides back down on a parachute.
+The sensors on bord provide various data about the environment, such as temperature, pressure, position and  more.
+This data is either transmitted in real time to a ground station or stored in the capsule and collected after
+the landing.
 
-Mehr Informationen über die Herausforderung gibt es auf der Website des offiziellen Cansat-Wettbewerbs 2018
-unter [cansat.de](cansat.de)
+More information about the challenge can be found on the official Cansat 2018 competition website
+under [cansat.de](https://cansat.de).
 
 
-Wer sind wir?
+About us
 ---------------
-Wir sind das Team Apoapsis aus Vaterstetten. Unsere Gruppe besteht aus
-Niklas Cölle, Thomas Schlienz, Leon Hauser und Felix Edelmann, und wir besuchen alle die 11. Jahrgangsstufe des
+We are the team Apoapsis from Vaterstetten. Our group consists of
+Niklas Cölle, Thomas Schlienz, Leon Hauser and Felix Edelmann, and we all attend the 11th grade of the
 Humboldt-Gymnasiums Vaterstetten.
-Mit unserem CanSat wollen wir die Feinstaubkonzentration der Atmosphäre in der Luft
-messen. Die gesammelten Daten werden in einer Datenbank, die bald auf dieser Website hinzugefügt wird, gesammelt, und
-werden für jeden zugänglich sein.
+With our CanSat we want to measure the fine dust concentration of the atmosphere in higher air layers. 
+The collected data will be added to a public database which will soon be added to this website.
 
-
-Inspiriert wurden wir vor allem durch das Projekt [luftdaten.info](http://luftdaten.info) des OK Lab Stuttgart, welches die Messungen von öffentlich
-zugänglichen Feinstaubsensoren sammelt, in Echtzeit verarbeitet und auf einer Karte öffentlich dargestellt werden.
+We were mainly inspired by the project [luftdaten.info](http://luftdaten.info) of the OK Lab Stuttgart, which collects the measurements of public accessible fine dust sensors in real time and displays them on a public available map.
 
 ![team.jpeg]({{ site.baseurl }}/images/team.jpeg)
