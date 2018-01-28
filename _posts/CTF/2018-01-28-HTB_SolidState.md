@@ -7,12 +7,8 @@ category: CTF
 ## Inital Information
 
 ## Enumeration
-Let us begin with NMAPPING the box using the the following command:
-```bash
-nmap -A -sV -n -p- 10.10.10.51 -oA FULLTCP_SOLIDSTATE
-```
+Let us begin with NMAPPING the box using the the following command
 
-### NMAP
 ![Full TCP Scan of SolidState](/images/solidstate/fulltcp_solidstate.png "Full TCP Scan against SolidState")
 
 The scan shows that ssh is running on port 22, and a JAMES service which is used as a mail server on the other ports.
@@ -21,8 +17,8 @@ The scan shows that ssh is running on port 22, and a JAMES service which is used
 Taking the information we have from NMAP, we can use that within searchsploit
 ![Searchsploit James 2.3.2](/images/solidstate/searchsploit.png "Searchsploit James 2.3.2")
 Copy the exploit script to your folder, and then modify its content as shown in the next two images.
-![Exploit Script Reverse Shell](/image/solidstate/payload_reverse "Exploit Script Reverse Shell")
-![Exploit Script hostname](/images/solidstate/hostname "Exploit Script hostname")
+![Exploit Script Reverse Shell](/image/solidstate/payload_reverse.png "Exploit Script Reverse Shell")
+![Exploit Script hostname](/images/solidstate/hostname.png "Exploit Script hostname")
 ## Exploitation Part-1
 Telnet to the port 4555 presents us with a username and password login. Using root/root we login to the service.
 ![Telnet 4555](/images/blue/telnet_4555.png "Telnet 4555")
