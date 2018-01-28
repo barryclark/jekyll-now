@@ -17,5 +17,5 @@ every team member can access everything, making collaboration easier.
 It also makes it easier for us to setup our database, which will be a big part of our secondary mission.
 
 In addition to that, Repositories for the other software components of the project (The ground station and the satellite)
-have been created on Github which not only all team mebers can access but every person can gain insight on
+have been created on Github. By doing that not only all team mebers, but also everyone else can gain insight on
 our project development.
