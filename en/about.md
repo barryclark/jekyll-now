@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About us and our project
-lang: en
+lang: EN
 ref: about
 ---
 
