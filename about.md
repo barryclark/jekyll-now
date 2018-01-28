@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Über uns und das Projekt
-lang: de
+lang: DE
 ref: about
 ---
 
