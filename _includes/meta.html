@@ -1,30 +1,79 @@
+	{% if page.posting %}
+	 <link rel="prerender" href="{{ page.next.url }}">
+	 <link rel="prerender" href="{{ page.previous.url }}">
+	{% endif %}
+		
 	<meta name="distribution" content="global"/>
-	<meta name="keywords" content="Isard Miralles, disseny, diseny gràfic, diseny web, matte painting, Barcelona, adobe photoshop, contratar freelance, artista web, responsive, html5 i css3" />
+	<meta name="keywords" content="{% for tag in page.tags %} {{ tag }}, {% endfor %} Isard Miralles, disseny, diseny gràfic, diseny web, matte painting, Barcelona, adobe photoshop, contratar freelance, artista web, responsive, html5 i css3" />
 	<meta name="description" content="{{ site.description }} | Edició de pàgines web originals, il·lustració tradicional, serveis per imprimir i disseny gràfic. Artista visual, Matte Painting, portades originals, Art conceptual, Concept Art" />
 	<meta name="robots" content="index, follow" />
-    <meta name="author" content="Isard Miralles" />
-    <meta name='designer' content="Isard Miralles">
-    
+    <meta name="author" href="https://plus.google.com/{{ site.footer-links.googleplus }}" />
+    <meta name="designer" content="Isard Miralles">
+	
+	<meta itemprop="name" content="Cover Page"/>
+	<meta itemprop="url" content="http://isardmiralles.com"/>
+	<meta itemprop="thumbnailUrl" content="{{ site.baseurl }}/hipertextos/brand/cover.png"/>
+	<link rel="image_src" href="{{ site.baseurl }}/hipertextos/brand/cover.png" />
+	<meta itemprop="image" content="{{ site.baseurl }}/hipertextos/brand/cover.png"/>
+
 	<!-- Metadata: GeoTags -->
 	<meta name="geo.region" content="Catalunya" />
 	<meta name="geo.placename" content="Barcelona" />
 	<meta name="geo.position" content="41.4470282;2.2413973" />
 	<meta name="ICBM" content="41.4470282;2.2413973" />
-		
+
+	<meta property="og:type" content="website"/>			
     {% if page.excerpt %}
-    <meta name="description" content="{{ page.excerpt| strip_html }}" />
-    <meta property="og:description" content="{{ page.excerpt| strip_html }}" />
+    <meta itemprop="name" content="{% if page.title %}{{ page.title }}{% endif %}">
+    <meta name="description" content="{{ page.excerpt| normalize_whitespace | strip_html }}" />
+    <meta itemprop="description" content="{{ page.excerpt| normalize_whitespace | strip_html }}">
+    <meta property="og:description" content="{{ page.excerpt| normalize_whitespace | strip_html }}" />
+    <meta itemprop="image" content="http://isardmiralles.com/{{ post.img }}">
+	<!-- Twitter Card data -->
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="@{{ site.footer-links.twitter }}">
+	<meta name="twitter:title" content="{{ page.title }}">
+	<meta name="twitter:description" content="{{ page.excerpt|  normalize_whitespace | strip_html }}">
+	<meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
+	<meta name="twitter:creator" content="@{{ site.footer-links.twitter }}">
+	<!-- Twitter summary card with large image. Al menos estas medidas 280x150px -->
+	{% if page.img %}<meta name="twitter:image:src" content="http://isardmiralles.com/{{ post.img }}">{% endif %}
+	<!-- Open Graph data -->
+	<meta property="og:title" content="{{ page.title }}" />
+	<meta property="og:type" content="article" />
+	<meta property="og:url" content=" {{ site.baseurl }}" />
+	{% if page.img %}<meta property="og:image" content="http://isardmiralles.com/{{ post.img }}" />{% endif %}
+	<meta property="og:description" content="{{ page.excerpt|  normalize_whitespace | strip_html }}" />
+	<meta property="og:site_name" content="{{ site.baseurl }}" />
+	<meta property="og:url" content="{{ site.url }}{{ page.url }}">
+	<meta property="article:published_time" content="{{ page.date }}" />
+	<meta property="article:modified_time" content="{{ page.date }}" />
+	<meta property="article:section" content="Post" />
+	<meta property="article:tag" content="{% for tag in page.tags %} {{ tag }}, {% endfor %}" />
+	<meta property="fb:admins" content="Isard-Miralles-261219727225263" />
     {% else %}
+    <meta itemprop="name" content="{{ page.title }} {{ site.name }}">
     <meta name="description" content="{{ site.description }} | Edició de pàgines web originals, il·lustració tradicional, serveis per imprimir i disseny gràfic. Artista visual, Matte Painting, portades originals, Art conceptual, Concept Art" />
-    <meta property="og:description" content="{{ site.description }} | Edició de pàgines web originals, il·lustració tradicional, serveis per imprimir i disseny gràfic. Artista visual, Matte Painting, portades originals, Art conceptual, Concept Art" />
+    <meta itemprop="description" content="Los YouTubers que estás buscando. {{ site.description }} | Isard Miralles, disseny, diseny gràfic, diseny web, matte painting, Barcelona, adobe photoshop, contratar freelance, artista web, responsive, html5 i css3">
+    <meta property="og:description" content="{{ page.description | default: site.description}}" />
+    <meta itemprop="image" content="{{ site.baseurl }}/hipertextos/brand/cover.png">
+	<!-- Twitter Card data -->
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="@{{ site.footer-links.twitter }}">
+	<meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.name }}{% endif %}">
+	<meta name="twitter:description" content="{{ page.description | default: site.description}} | | Edició de pàgines web originals, il·lustració tradicional, serveis per imprimir i disseny gràfic. Artista visual, Matte Painting, portades originals, Art conceptual, Concept Art">
+	<meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
+	<meta name="twitter:creator" content="@{{ site.footer-links.twitter }}">
+	<!-- Twitter summary card with large image. Al menos estas medidas 280x150px -->
+	<meta name="twitter:image:src" content="http://www.isardmiralles.com/">
+	<!-- Open Graph data -->
+	<meta property="og:title" content="{{ site.name }}" />
+	<meta property="og:type" content="article" />
+	<meta property="og:url" content="{{ site.url }}{{ page.url }}">
+	<meta property="og:image" content="{{ site.baseurl }}/hipertextos/brand/cover.png" />
+	<meta property="og:site_name" content="http://www.isardmiralles.com/" />
+	<meta property="article:published_time" content="{{ site.date }}" />
+	<meta property="article:modified_time" content="{{ page.date }}" />
+	<meta property="article:tag" content="Isard Miralles,{% for tag in page.tags %} {{ tag }}, {% endfor %}disseny, diseny gràfic, diseny web, matte painting, Barcelona, adobe photoshop, contratar freelance, artista web, responsive, html5 i css3" />
+	<meta property="fb:admins" content="Isard-Miralles-261219727225263" />
     {% endif %}
-    <meta name="author" content="{{ site.name }}" />
-
-    {% if page.title %}
-    <meta property="og:title" content="{{ page.title }}" />
-    <meta property="twitter:title" content="{{ page.title }}" />
-    {% endif %}
-
-
-
-
