@@ -1,7 +1,7 @@
 ---
 layout: about
 title: Contacte
-permalink: /about/
+permalink: /contacte/
 
 ---
 
