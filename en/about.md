@@ -27,5 +27,3 @@ With our CanSat we want to measure the fine dust concentration of the atmosphere
 The collected data will be added to a public database which will soon be added to this website.
 
 We were mainly inspired by the project [luftdaten.info](http://luftdaten.info) of the OK Lab Stuttgart, which collects the measurements of public accessible fine dust sensors in real time and displays them on a public available map.
-
-![team.jpeg]({{ site.baseurl }}/images/team.jpeg)
