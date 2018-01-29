@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Social Media und die Website
+title: Über Social Media und unsere Website
 ref: socialWeb
 lang: DE
 ---
