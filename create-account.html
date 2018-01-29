@@ -1,0 +1,127 @@
+---
+layout: default
+title: Create Account
+---
+
+<form class="contact_form">
+  <input type="hidden" name="_subject" value="Create Account Form Submission">
+  <input style="display:none" type="text" name="_gotcha">
+  <h1>Create Account</h1>  
+  <div class="notifications"></div>
+  <ul>
+    <li>
+      <h2>Contact Information</h2>
+      <span class="required_notification">* Denotes Required Field</span>
+    </li>
+    <li>
+      <strong>Name</strong><span class="required_notification">*</span>
+    </li>
+    <li>
+      <div class="half">
+        <input id="first_name" type="text" name="first_name"/>
+        <label for="first_name">First Name<span class="required_notification">*</span></label>
+      </div>
+      <div class="half">
+        <input id="last_name" type="text" name="last_name"/>
+        <label for="last_name">Last Name<span class="required_notification">*</span></label>
+      </div>
+    </li>
+    <li>
+      <label for="email"><strong>Email</strong><span class="required_notification">*</span></label>
+      <input id="email" type="email" name="email"/>
+    </li>
+    <li>
+      <label for="phone"><strong>Phone</strong><span class="required_notification">*</span></label>
+      <input id="phone" type="text" name="phone"/>
+    </li>
+    <li>
+      <label for="address1"><strong>Address</strong></label>
+      <input id="address1" type="text" name="address1"/>
+    </li>
+    <li>
+      <input id="address2" type="text" name="address2"/>
+    </li>
+    <li>
+      <div class="half">
+        <input id="city" type="text" name="city"/>
+        <label for="city">City</label>
+      </div>
+      <div class="quarter">
+        <input id="state" type="text" name="state"/>
+        <label for="state">State/Province</label>
+      </div>
+      <div class="quarter">
+        <input id="zip" type="text" name="zip"/>
+        <label for="zip">Zip/Postal</label>
+      </div>
+    </li>
+    <li>
+      {% include countries-list.html %}
+      <label for="country">Country</label>
+    <li>
+      <button class="submit center" disabled type="submit">Create Account</button>
+    </li>
+  </ul>
+</form>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript">
+  $(function() {
+    function sendEmail() {
+        var firstName = $('#first_name').val();
+        var lastName = $('#last_name').val();        
+        var email = $('#email').val();
+        var phone = $('#phone').val();
+        var address1 = $('#address1').val();
+        var address2 = $('#address2').val();
+        var city = $('#city').val();
+        var state = $('#state').val();
+        var zip = $('#zip').val();
+        var country = $('#country').val();
+        var data = {
+            '_subject': 'Create Account Form Submission',
+            'First Name': firstName,
+            'Last Name': lastName,
+            'Email': email,
+            'Phone': phone,
+            'Address1': address1,
+            'Address2': address2,
+            'City': city,
+            'State': state,
+            'Zip': zip,
+            'Country': country
+        };
+        $.ajax({
+            url: '//formspree.io/info@photovisionprints.com',
+            method: 'POST',
+            data: data,
+            dataType: 'json',
+            beforeSend: function () {
+                $('.notifications').append('<p class="required_notification sending">Creating your account…</p>');
+            },
+            success: function (data) {
+                window.location.replace("/create-account-thanks");
+            },
+            error: function (err) {
+                $('.sending').remove();
+                $('.notifications').append('<p class="required_notification">Oops, there was an error creating your account. Please try again or contact us for support.</p>');
+            }
+        });
+    }
+
+    $('.contact_form').change(function() {
+      if(($('#first_name').val()) && ($('#last_name').val()) && ($('#email').val()) && ($('#phone').val())){
+        $('.submit').prop('disabled', false);
+      } else {        
+        $('.submit').prop('disabled', true);
+      }
+    });
+
+    $('.submit').click(function(e) {
+      e.preventDefault();      
+      $('html,body').css('cursor','wait');
+      sendEmail();      
+      $('html,body').css('cursor','default');
+    });
+  });
+</script>

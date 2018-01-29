@@ -3,14 +3,27 @@
 #
 
 # Name of your site (displayed in the header)
-name: Your Name
+name: PhotoVision
 
 # Short bio or description (displayed in the header)
-description: Web Developer from Somewhere
+description: The Northwest's Premiere Film Lab
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
+banner-image: /images/banner_logo.png
 
+repository: PhotoVision/PhotoVision.github.io
+
+company-info:
+  service-hours: 9a – 5p PST M – F
+  lobby-hours: 11a – 3p PST  M – F
+  address: 3775 Market St NE
+  csz: Salem OR 97301
+  map-url: https://goo.gl/maps/fT5EYiWhXrt
+  phone: 1-503-588-3686
+  display-phone: 503.588.3686
+  email: info@photovisionprints.com
+
+turnaround-time: 1 business day
 #
 # Flags below are optional
 #
@@ -19,17 +32,17 @@ avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/je
 footer-links:
   dribbble:
   email:
-  facebook:
+  facebook: photovisionprints
   flickr:
-  github: barryclark/jekyll-now
-  instagram:
+  github:
+  instagram: photovisionprints
   linkedin:
-  pinterest:
+  pinterest: pvprints
   rss: # just type anything here for a working RSS icon
-  twitter: jekyllrb
+  twitter: pvprints
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
-  googleplus: # anything in your profile username that comes after plus.google.com/
+  googleplus: "101012725939928707667"
 
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
@@ -53,7 +66,10 @@ baseurl: ""
 # !! You don't need to change any of the configuration flags below !!
 #
 
-permalink: /:title/
+permalink: pretty
+
+# include subfolder with markup files
+include: ['_pv-markup']
 
 # The release of Jekyll Now that you're using
 version: v1.2.0
@@ -73,9 +89,10 @@ sass:
   style: :expanded # You might prefer to minify using :compressed
 
 # Use the following plug-ins
-gems:
+plugins:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
+  - jemoji # GitHub-flavored Emoji plugin for Jekyll
 
 # Exclude these files from your production _site
 exclude:
@@ -84,3 +101,5 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+
+theme: jekyll-theme-slate

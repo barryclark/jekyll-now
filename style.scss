@@ -19,26 +19,22 @@ html {
 
 body {
 	background: $white;
-  font: 18px/1.4 $helvetica;
-  color: $darkGray;
+  font: 18px/1.4 Roboto;
+  color: #424242;
+  @include mobile {
+    font-size: 18px;
+  }
 }
 
 .container {
-  margin: 0 auto;
-  max-width: 740px;
-  padding: 0 10px;
   width: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $helveticaNeue;
-  color: $darkerGray;
-  font-weight: bold;
-
+  color: #424242;
   line-height: 1.7;
-  margin: 1em 0 15px;
+  margin: 1em 0;
   padding: 0;
-
   @include mobile {
     line-height: 1.4;
   }
@@ -46,6 +42,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 30px;
+  font-weight: 300;
   a {
     color: inherit;
   }
@@ -53,15 +50,17 @@ h1 {
 
 h2 {
   font-size: 24px;
+  font-weight: 300;
 }
 
 h3 {
   font-size: 20px;
+  font-weight: 300;
 }
 
 h4 {
-  font-size: 18px;
-  color: $gray;
+  font-size: 19px;
+  font-weight: 300;
 }
 
 p {
@@ -69,17 +68,13 @@ p {
 }
 
 a {
-  color: $blue;
+  color: #83b3be;
+  font-size: 16px;
   text-decoration: none;
 	cursor: pointer;
   &:hover, &:active {
-    color: $blue;
+    color: #424242;
   }
-}
-
-ul, ol {
-  margin: 15px 0;
-  padding-left: 30px;
 }
 
 ul {
@@ -122,11 +117,11 @@ img {
 
 // Specify the color of the selection
 ::-moz-selection {
-  color: $black;
+  color: #424242;
   background: $lightGray;
 }
 ::selection {
-  color: $black;
+  color: #424242;
   background: $lightGray;
 }
 
@@ -142,24 +137,353 @@ img {
     clear: both;
 }
 
+/*******************************************/
+/* PHOTOVISION SPECIFIC MODS GO BELOW HERE */
+/*******************************************/
+
+// to center elements on page
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+// to left-justify elements
+.left {
+  text-align: left;
+  float: left;
+}
+
+// to right-justify text or elements
+.right {
+  text-align: right;
+  float: right;
+}
+
+.company-logo img {
+  @include mobile {
+    width: 80%;
+  };
+}
+
+.fuji-fresh-container {
+  :hover {
+    cursor: pointer;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.reference-sheets-container {
+  width: 50%;
+  :hover {
+    cursor: pointer;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.praise-teaser-container {
+  background-color: $lightGray;
+}
+
+.praise-teaser {
+  font-size: 1.8em;
+  font-weight: 300;
+  color: #424242;
+  margin: 0 20%;
+  padding: 2.5% 1% 3% 1%;
+  background-color: $lightGray;
+  :hover {
+    cursor: pointer;
+  }
+  @media screen and (max-width: 1100px) {
+    font-size: 1.2em;
+    padding: 2% 5%;
+  }
+  @include mobile {
+    margin: 0 10%;
+    padding: 5% 12%;
+  }
+  .slick-prev{
+      display: block;
+      content: "";
+      background: url('images/begin-quote.png') no-repeat center center;
+      height: 90px;
+      width: 90px;
+      background-size: 90%;
+      &:before {
+        opacity: 0;
+      }
+      @media screen and (max-width: 1100px) {
+        background-size: 60%;
+      }
+  }
+  .slick-next{
+      display: block;
+      content: "";
+      background: url('images/end-quote.png') no-repeat center center;
+      height: 90px;
+      width: 90px;
+      background-size: 90%;
+      &:before {
+        opacity: 0;
+      }
+      @media screen and (max-width: 1100px) {
+        background-size: 60%;
+      }
+  }
+  .slick-list {
+    margin: 0 10% 0 10%;
+    a {
+      font-size: 1em;
+    }
+    @include mobile {
+      margin: 0 10% 0 4%;
+      font-size: 1em;
+      width: 90%;
+    }
+  }
+  .right {
+    &:before {
+      content: '—';
+    }
+    font-size: .85em;
+    a {
+      font-size: 1em;
+    }
+  }
+  ul li {
+    width: 100%;
+    display: inline-block;
+    list-style-type: none;
+  }
+}
+
+.slick-initialized .slick-slide {
+  padding-top: .5%;
+  float: none;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+article {
+  padding: 2% 10%;
+  .entry {
+    padding-left: 2%;
+    padding-right: 4%;
+    p {
+      padding-bottom: 2%;
+    }
+    a {
+      font-size: 1em;
+    }
+  }
+}
+
+#as-seen-in {
+  background: linear-gradient($white, $lightGray);
+  padding: 2% 10%;
+  @include mobile {
+    padding: 2%;
+  }
+}
+
+#as-seen-in-table {
+  margin: 20px auto 0 auto;
+  tr td {
+    text-align: center;
+    vertical-align: middle;
+    padding: .5% 3%;
+    .rf-logo {
+      width: 60%;
+    }
+    @include mobile {
+      .rf-logo {
+        width: 40%;
+      }
+    }
+  }
+}
+
+.footer-nav-left {
+  text-align: left;
+  float: left;
+  margin-left: 20px;
+  margin-right: 60px;
+  h4 {
+    margin: 50px 0px 10px 0px;
+  }
+  ul {
+    list-style-type: none;
+  }
+  @include mobile {
+    width: 100%;
+  }
+}
+
+.footer-nav-right {
+  text-align: right;
+  float: right;
+  margin-right: 20px;
+  strong, span {
+    padding: 0px 3px;
+    font-size: 16px;
+  }
+  h4 {
+    margin: 50px 0px 10px 0px;
+  }
+  ul {
+    list-style-type: none;
+  }
+  @include mobile {
+    text-align: left;
+    float: left;
+    margin-left: 20px;
+  }
+  @media screen and (max-width: 1100px) {
+    text-align: left;
+    float: left;
+    margin-left: 20px;
+  }
+}
+
+.contact_form, .preferences-form {
+  max-width: 700px;
+  margin-left: 250px;
+  @include mobile {
+    width: 98%;
+    margin-left: 5px;
+  }
+  h2 {
+    margin: 0;
+    display: inline;
+  }
+  label {
+    display: block;
+    font-size: 18px;
+  }
+  ul {
+    width: 100%;
+    list-style-type: none;
+    list-style-position: outside;
+    margin: 0px;
+    padding: 0px;
+    li {
+      width: 100%;
+      font-size: 18px;
+      padding: 12px 0px;
+      position: relative;
+      div.half {
+        display: inline-block;
+        width: 49.4%;
+      }
+      div.quarter {
+        display: inline-block;
+        width: 24.5%;
+      }
+    }
+  }
+  input, select {
+    height: 42px;
+    font-size: 18px;
+    width: 100%;
+    padding: 5px 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  .image-preview {
+    ul li {
+      padding: 10px;
+      position: relative;
+      display: inline-block;
+      width: 20%;
+    }
+  }
+  button.submit {
+    width: 180px;
+    height: 50px;
+    margin-top: 25px;
+    border-radius: 5px;
+    background-color: white;
+    border: 1px solid #424242;
+    font-size: 19px;
+    :hover {
+      background-color: $lightGray;
+    }
+    :active {
+      background-color: gray;
+    }
+  }
+}
+
+.preferences-form {
+  h1 {
+    margin-bottom: 0px;
+  }
+  a {
+    margin-top: 1em;
+  }
+  ul {
+    margin-top: 2em;
+  }  
+}
+
+.required_notification {
+    color: #d45252;
+}
+
+.social-icons {
+  a {
+    padding: 2.2%;
+  }
+}
+
+.svg-icon {
+  max-height: 20px;
+  max-width: 20px;
+}
+
+/*******************************************/
+/* PHOTOVISION SPECIFIC MODS GO ABOVE HERE */
+/*******************************************/
+
 /*********************/
 /* LAYOUT / SECTIONS */
 /*********************/
-
-//
-// .masthead
-//
 
 .wrapper-masthead {
   margin-bottom: 50px;
 }
 
 .masthead {
-  padding: 20px 0;
-  border-bottom: 1px solid $lightGray;
-
+  padding: 6px 10px;
+  margin-bottom: 40px;
+  background-color: #424242;
+  a, span {
+    font-size: 14px;
+    color: white;
+  }
   @include mobile {
-    text-align: center;
+    height: auto;
+    .left {
+      display: none;
+    }
+    .right {
+      float: none;
+      text-align: center;
+      .service-time {
+        display: block;
+      }
+    }
   }
 }
 
@@ -168,13 +492,11 @@ img {
   width: 70px;
   height: 70px;
   margin-right: 15px;
-
   @include mobile {
     float: none;
     display: block;
     margin: 0 auto;
   }
-
   img {
     border-radius: 5px;
   }
@@ -182,7 +504,6 @@ img {
 
 .site-info {
   float: left;
-
   @include mobile {
     float: none;
     display: block;
@@ -192,9 +513,8 @@ img {
 
 .site-name {
   margin: 0;
-  color: $darkGray;
+  color: #424242;
   cursor: pointer;
-  font-family: $helveticaNeue;
   font-weight: 300;
   font-size: 28px;
   letter-spacing: 1px;
@@ -204,42 +524,10 @@ img {
   margin: -5px 0 0 0;
   color: $gray;
   font-size: 16px;
-
   @include mobile {
     margin: 3px 0;
   }
 }
-
-nav {
-  float: right;
-  margin-top: 23px; // @TODO: Vertically middle align
-  font-family: $helveticaNeue;
-  font-size: 18px;
-
-  @include mobile {
-    float: none;
-    margin-top: 9px;
-    display: block;
-    font-size: 16px;
-  }
-
-  a {
-    margin-left: 20px;
-    color: $darkGray;
-    text-align: right;
-    font-weight: 300;
-    letter-spacing: 1px;
-
-    @include mobile {
-      margin: 0 10px;
-      color: $blue;
-    }
-  }
-}
-
-//
-// .main
-//
 
 .posts > .post {
   padding-bottom: 2em;
@@ -272,15 +560,12 @@ nav {
 }
 
 .wrapper-footer {
-  margin-top: 50px;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
   background-color: $lightGray;
 }
 
 footer {
-  padding: 20px 0;
   text-align: center;
+  overflow: hidden;
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
