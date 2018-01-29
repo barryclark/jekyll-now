@@ -2,6 +2,8 @@
 <html>
   <head>
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+    {% seo %}
+    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.png">
 
     {% include meta.html %}
 
