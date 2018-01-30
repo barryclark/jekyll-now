@@ -1,6 +1,6 @@
 ---
 layout: post
-title: From Python to C/C++ and to GPU: a Pytorch walk-through
+title: From Python to C/C++ and to GPU, a Pytorch walk-through
 ---
 
 From Python to C/C++ and to GPU: a Pytorch walk-through
