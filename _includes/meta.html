@@ -9,21 +9,46 @@
 	<meta name="robots" content="index, follow" />
     <meta name="author" href="https://plus.google.com/{{ site.footer-links.googleplus }}" />
     <meta name="designer" content="Isard Miralles">
-	
-	<meta itemprop="name" content="Cover Page"/>
-	<meta itemprop="url" content="http://isardmiralles.com"/>
+
+	{% if page.home %}
+	<meta itemprop="name" content="Inici"/>
+	<meta itemprop="url" content="http://isardmiralles.com/"/>
 	<meta itemprop="thumbnailUrl" content="{{ site.baseurl }}/hipertextos/brand/cover.png"/>
 	<link rel="image_src" href="{{ site.baseurl }}/hipertextos/brand/cover.png" />
 	<meta itemprop="image" content="{{ site.baseurl }}/hipertextos/brand/cover.png"/>
-
+	{% endif %}
+	{% if page.posting %}
+	<meta itemprop="name" content="{{ page.title }}"/>
+	<meta itemprop="url" content="http://isardmiralles.com/{{ page.url }}"/>
+	<meta itemprop="thumbnailUrl" content="http://isardmiralles.com/{{ page.img }}"/>
+	<link rel="image_src" href="http://isardmiralles.com/{{ page.img }}" />
+	<meta itemprop="image" content="http://isardmiralles.com/{{ page.img }}"/>
+	{% endif %}
+	{% if page.gallery %}
+	<meta itemprop="name" content="Secció contacte"/>
+	<meta itemprop="url" content="http://isardmiralles.com/portfoli"/>
+	<meta itemprop="thumbnailUrl" content="{{ site.baseurl }}/hipertextos/brand/cover.png"/>
+	<link rel="image_src" href="{{ site.baseurl }}/hipertextos/brand/cover.png" />
+	<meta itemprop="image" content="{{ site.baseurl }}/hipertextos/brand/cover.png"/>
+	{% endif %}
+	{% if page.about %}
+	<meta itemprop="name" content="Secció contacte"/>
+	<meta itemprop="url" content="http://isardmiralles.com/contacte"/>
+	<meta itemprop="thumbnailUrl" content="{{ site.baseurl }}/hipertextos/brand/cover.png"/>
+	<link rel="image_src" href="{{ site.baseurl }}/hipertextos/brand/cover.png" />
+	<meta itemprop="image" content="{{ site.baseurl }}/hipertextos/brand/cover.png"/>
+	{% endif %}
+	
 	<!-- Metadata: GeoTags -->
 	<meta name="geo.region" content="Catalunya" />
 	<meta name="geo.placename" content="Barcelona" />
 	<meta name="geo.position" content="41.4470282;2.2413973" />
 	<meta name="ICBM" content="41.4470282;2.2413973" />
 
-	<meta property="og:type" content="website"/>			
-    {% if page.excerpt %}
+	<meta property="og:type" content="website"/>	
+	{% if page.img %}<meta name="twitter:image:src" content="http://isardmiralles.com/{{ post.img }}">{% endif %}
+	{% if page.img %}<meta property="og:image" content="http://isardmiralles.com/{{ post.img }}" />{% endif %}		
+    {% if page.posting %}
     <meta itemprop="name" content="{% if page.title %}{{ page.title }}{% endif %}">
     <meta name="description" content="{{ page.excerpt| normalize_whitespace | strip_html }}" />
     <meta itemprop="description" content="{{ page.excerpt| normalize_whitespace | strip_html }}">
@@ -37,12 +62,10 @@
 	<meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
 	<meta name="twitter:creator" content="@{{ site.footer-links.twitter }}">
 	<!-- Twitter summary card with large image. Al menos estas medidas 280x150px -->
-	{% if page.img %}<meta name="twitter:image:src" content="http://isardmiralles.com/{{ post.img }}">{% endif %}
 	<!-- Open Graph data -->
 	<meta property="og:title" content="{{ page.title }}" />
 	<meta property="og:type" content="article" />
 	<meta property="og:url" content=" {{ site.baseurl }}" />
-	{% if page.img %}<meta property="og:image" content="http://isardmiralles.com/{{ post.img }}" />{% endif %}
 	<meta property="og:description" content="{{ page.excerpt|  normalize_whitespace | strip_html }}" />
 	<meta property="og:site_name" content="{{ site.baseurl }}" />
 	<meta property="og:url" content="{{ site.url }}{{ page.url }}">

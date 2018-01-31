@@ -5,8 +5,12 @@
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
     <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
 	<link rel="canonical" href="http://isardmiralles.com/serveis"/>
-	
-    {% include meta-serveis.html %}
+	<meta itemprop="name" content="Secció serveis grafics"/>
+	<meta itemprop="url" content="http://isardmiralles.com/serveis"/>
+	<meta itemprop="thumbnailUrl" content="{{ site.baseurl }}/hipertextos/brand/cover.png"/>
+	<link rel="image_src" href="{{ site.baseurl }}/hipertextos/brand/cover.png" />
+	<meta itemprop="image" content="{{ site.baseurl }}/hipertextos/brand/cover.png"/>
+    {% include meta.html %}
 
     <!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
