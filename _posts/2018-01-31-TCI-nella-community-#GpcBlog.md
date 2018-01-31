@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Anche TerremotoCentroItalia nella community #GpcBlog
+title: Anche TerremotoCentroItalia nel Blog del Giornale della Protezione Civie
 categories: blog
 ---
 
