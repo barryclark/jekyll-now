@@ -8,7 +8,7 @@ title: Creeping People Out at Scale to Get a Job
 
 ![ghost](/images/ghost.jpg)
 
-About 8 years ago (I know, writing this as the opening means I have to update it each year) there was this story.
+About 8 years ago (I know, writing this as the opening means I have to update it each year) there was this [story.](https://mashable.com/2010/05/13/job-google-ad-words/)
 
 Distilled, it basically says a dude created an Adwords campaign specifically for executives that will Google themselves. It was clever and in the end got him a job.
 
