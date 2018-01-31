@@ -16,7 +16,7 @@ As the tools in experiments neuroscience are rapidly developing, this is an impo
 
 Journal club meetings currently take place on Mondays at 1:00 pm in seminar room of the Institute for Advanced Computational Science (IACS). Sometimes there are treats.
 
-**Join the club** by joining the [SBU Computational Neuroscience Journal Club](https://groups.google.com/d/forum/sbu-computational-neuroscience/join)
+**Join the club** by joining the [SBU Computational Neuroscience Google Group](https://groups.google.com/d/forum/sbu-computational-neuroscience/join)
 
 # 2018 Spring Schedule
 
