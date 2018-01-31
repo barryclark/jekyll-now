@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Anche TerremotoCentroItalia nel Blog del Giornale della Protezione Civie
+title: Anche TerremotoCentroItalia nel Blog del Giornale della Protezione Civile
 categories: blog
 ---
 
