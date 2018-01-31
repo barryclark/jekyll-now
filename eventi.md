@@ -16,6 +16,7 @@ permalink: /eventi/
 <div class="row"><div class="col-md-12"> <div id="map"></div> </div> </div>
 <div class="panel-group">
 {% assign filteredissues = site.data.issuesjson | where: "state","open" | where_exp: "member","member.issue.labels contains 'Eventi'"%}
+
 {% for member in filteredissues %}
 
 <div class="panel-body">
