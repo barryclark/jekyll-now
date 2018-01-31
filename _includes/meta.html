@@ -1,18 +1,23 @@
 	{% if page.posting %}
 	 <link rel="prerender" href="{{ page.next.url }}">
 	 <link rel="prerender" href="{{ page.previous.url }}">
-	{% endif %}
-		
+	{% endif %}		
 	<meta name="distribution" content="global"/>
 	<meta name="keywords" content="{% for tag in page.tags %} {{ tag }}, {% endfor %} Isard Miralles, disseny, diseny gràfic, diseny web, matte painting, Barcelona, adobe photoshop, contratar freelance, artista web, responsive, html5 i css3" />
 	<meta name="description" content="{{ site.description }} | Edició de pàgines web originals, il·lustració tradicional, serveis per imprimir i disseny gràfic. Artista visual, Matte Painting, portades originals, Art conceptual, Concept Art" />
 	<meta name="robots" content="index, follow" />
     <meta name="author" href="https://plus.google.com/{{ site.footer-links.googleplus }}" />
     <meta name="designer" content="Isard Miralles">
-
 	{% if page.home %}
 	<meta itemprop="name" content="Inici"/>
 	<meta itemprop="url" content="http://isardmiralles.com/"/>
+	<meta itemprop="thumbnailUrl" content="{{ site.baseurl }}/hipertextos/brand/cover.png"/>
+	<link rel="image_src" href="{{ site.baseurl }}/hipertextos/brand/cover.png" />
+	<meta itemprop="image" content="{{ site.baseurl }}/hipertextos/brand/cover.png"/>
+	{% endif %}
+	{% if page.bloggin %}
+	<meta itemprop="name" content="{{ page.title }}"/>
+	<meta itemprop="url" content="http://isardmiralles.com/blog"/>
 	<meta itemprop="thumbnailUrl" content="{{ site.baseurl }}/hipertextos/brand/cover.png"/>
 	<link rel="image_src" href="{{ site.baseurl }}/hipertextos/brand/cover.png" />
 	<meta itemprop="image" content="{{ site.baseurl }}/hipertextos/brand/cover.png"/>
@@ -24,8 +29,8 @@
 	<link rel="image_src" href="http://isardmiralles.com/{{ page.img }}" />
 	<meta itemprop="image" content="http://isardmiralles.com/{{ page.img }}"/>
 	{% endif %}
-	{% if page.gallery %}
-	<meta itemprop="name" content="Secció contacte"/>
+	{% if page.galleria %}
+	<meta itemprop="name" content="Secció Portfoli"/>
 	<meta itemprop="url" content="http://isardmiralles.com/portfoli"/>
 	<meta itemprop="thumbnailUrl" content="{{ site.baseurl }}/hipertextos/brand/cover.png"/>
 	<link rel="image_src" href="{{ site.baseurl }}/hipertextos/brand/cover.png" />
@@ -37,8 +42,7 @@
 	<meta itemprop="thumbnailUrl" content="{{ site.baseurl }}/hipertextos/brand/cover.png"/>
 	<link rel="image_src" href="{{ site.baseurl }}/hipertextos/brand/cover.png" />
 	<meta itemprop="image" content="{{ site.baseurl }}/hipertextos/brand/cover.png"/>
-	{% endif %}
-	
+	{% endif %}	
 	<!-- Metadata: GeoTags -->
 	<meta name="geo.region" content="Catalunya" />
 	<meta name="geo.placename" content="Barcelona" />
