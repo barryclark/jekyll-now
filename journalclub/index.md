@@ -14,26 +14,27 @@ As the tools in experiments neuroscience are rapidly developing, this is an impo
 * recent advances in theoretical neuroscience
 * popular theories in neuroscience
 
-Journal club meetings currently take place on Wednesdays at 12:00 pm in seminar room of the Institute for Advanced Computational Science (IACS). Sometimes there are treats.
+Journal club meetings currently take place on Mondays at 1:00 pm in seminar room of the Institute for Advanced Computational Science (IACS). Sometimes there are treats.
 
-**Join the club** by emailing [David Hocker](mailto:david.hocker@stonybrook.edu?subject=computational journal club)!
+**Join the club** by joining the [SBU Computational Neuroscience Journal Club](https://groups.google.com/d/forum/sbu-computational-neuroscience/join)
 
-# 2017 Fall Schedule
+# 2018 Spring Schedule
 
-- September 20: David Hocker
-- September 27: Piotr Sokol
-- October 4: Phillip Kang
-- October 11: Yuan Zhao (time change, TBA)
-- October 18: David Hocker
-- October 25: Memming Park
-- November 1: Elliot Crooks
-- November 8: Giancarlo La Camera
-- November 15: Logan Becker
-- November 22:  No meeting- Thanksgiving
-- November 29: (TBA)
-- December 6: (TBA)
-- December 13: (TBA)
-- December 20: (TBA)
+- January 29: Jin Wang
+- February 5: Memming Park
+- February 12: Piotr Sokol
+- February 19: Yuan Zhao
+- February 26: Elliot Crooks
+- March 5: No journal club, Cosyne meeting
+- March 12: No journal club, Spring Break
+- March 19: Logan Becker 
+- March 26: Ziheng Chen
+- April 2: Braden Brinkman
+- April 9: Petar Djuric
+- April 16: Breanna Jones
+- April 23: Sima Motakham
+- April 30: Josue Nassar
+- May 5: Yanliang Shi
 
 
 
