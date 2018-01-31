@@ -5,7 +5,7 @@
 name: Sada Kubsad
 
 # Short bio or description (displayed in the header)
-description: Hi. I am very passionate about technology and its application to the real world. 
+description: Passionate about technology and simplicity 
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://raw.githubusercontent.com/sadamahan/jekyll-now/master/images/Seattle-Reduced.png
@@ -17,10 +17,10 @@ avatar: https://raw.githubusercontent.com/sadamahan/jekyll-now/master/images/Sea
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email: Sada.Kubsad@gmail.com
+  email: sada@kubsad.tech
   facebook:
   flickr:
-  github: sadamahan/jekyll-now  
+  github: sada-kubsad/jekyll-now  
   instagram:
   linkedin: linkedin.com/in/sadakubsad
   pinterest:
