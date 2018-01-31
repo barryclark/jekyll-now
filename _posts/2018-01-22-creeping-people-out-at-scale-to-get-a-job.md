@@ -44,7 +44,7 @@ To do this we need to use business data.
 Step 3: Setting up business data
 ---------------------------------
 
-We are going to use the power of ad customizers! You can find more information on them by clicking here. In general they are a great way to make ads that scale. You can take a piece of data, such as a keyword, and then create attributes that can be used in the ad.
+We are going to use the power of ad customizers! You can find more information on them by [clicking here.](https://support.google.com/adwords/answer/6072565?hl=en) In general they are a great way to make ads that scale. You can take a piece of data, such as a keyword, and then create attributes that can be used in the ad.
 
 As a simple example my name could be the keyword as +Kole +McRae and the {firstname} attribute would be Kole and the {lastname} attribute would be McRae.
 
@@ -52,7 +52,7 @@ To do this you need to create a csv that includes all this information.
 
 The easiest way to set this up is the have the first column be keywords and then use some simple excel formulas to take the first name in the next column and last name in the third.
 
-For more specific details on setting up the file simply go here.
+For more specific details on setting up the file simply go [here.](https://support.google.com/adwords/answer/6093368)
 
 That page also has information on how to add the data to your ads.
 
