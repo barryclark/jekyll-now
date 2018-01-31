@@ -68,11 +68,13 @@ filter_labels=[r.get_label(l) for l in FILTER_LABELS]
 issues=r.get_issues(since=lastTime,labels=filter_labels,state='all')
 
 csvwriter.writerow(("url","id","updated_at","created_at","title","lat","lon","labels","milestone","image","data","body","state"))
-if jwr:
-    jwr.write("[")
 
 if gjwr:
-    gjwr.write('{ "type": "FeatureCollection", "features": [')
+    gjwr.write('{ "type": "FeatureCollection", "features": ')
+
+csvarray=[]
+jsonarray=[]
+geojsonarray=[]
 
 for issue in issues:
     labels = json.dumps([l.name for l in issue.labels])
@@ -119,16 +121,19 @@ for issue in issues:
 
     labels=labels.encode('utf-8')
 
-    csvwriter.writerow((issue.html_url,issue.id,issue.updated_at,issue.created_at,title,lat,lon,labels,issue.milestone,image,json.dumps(data,sort_keys=True),issue.body.encode('utf-8'), issue.state))
+    csvarray.append((issue.html_url,issue.id,issue.updated_at,issue.created_at,title,lat,lon,labels,issue.milestone,image,json.dumps(data,sort_keys=True),issue.body.encode('utf-8'), issue.state))
     
     if jwr:
-        jwr.write(json.dumps({"title":issue.title,"number":issue.number,"state":issue.state,"issue":{"url":issue.html_url,"id":issue.id,"updated_at":issue.updated_at.isoformat()+"+00:00","created_at":issue.created_at.isoformat()+"+00:00","title":title,"lat":lat,"lon":lon,"labels":eval(labels) if labels else None,"milestone":issue.milestone.title if issue.milestone else None,"image":image,"data":data,"body":issue.body.encode('utf-8')}}, sort_keys=True)+",\n")
+        jsonarray.append({"title":issue.title,"number":issue.number,"state":issue.state,"issue":{"url":issue.html_url,"id":issue.id,"updated_at":issue.updated_at.isoformat()+"+00:00","created_at":issue.created_at.isoformat()+"+00:00","title":title,"lat":lat,"lon":lon,"labels":labels,"milestone":issue.milestone.title if issue.milestone else None,"image":image,"data":data,"body":issue.body.encode('utf-8')}})
 
     if gjwr:
-        gjwr.write(json.dumps({"type":"Feature","geometry":{"type":"Point","coordinates":[lon,lat]},"properties":{"title":issue.title,"number":issue.number,"state":issue.state,"url":issue.html_url,"id":issue.id,"updated_at":issue.updated_at.isoformat()+"+00:00","created_at":issue.created_at.isoformat()+"+00:00","labels":eval(labels) if labels else None,"milestone":issue.milestone.title if issue.milestone else None,"image":image,"data":data,"body":issue.body.encode('utf-8')}}, sort_keys=True)+",\n")
+        geojsonarray.append({"type":"Feature","geometry":{"type":"Point","coordinates":[lon,lat]},"properties":{"title":issue.title,"number":issue.number,"state":issue.state,"url":issue.html_url,"id":issue.id,"updated_at":issue.updated_at.isoformat()+"+00:00","created_at":issue.created_at.isoformat()+"+00:00","labels":eval(labels) if labels else None,"milestone":issue.milestone.title if issue.milestone else None,"image":image,"data":data,"body":issue.body.encode('utf-8')}})
+
+csvwriter.writerows(csvarray)
 
 if jwr:
-    jwr.write("]")
+    jwr.write(json.dumps(jsonarray,sort_keys=True))
 
 if gjwr:
-    gjwr.write("]}")
+    gjwr.write(json.dumps(geojsonarray,sort_keys=True)+"}")
+
