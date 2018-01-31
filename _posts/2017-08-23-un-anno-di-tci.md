@@ -4,7 +4,7 @@ title: Un Anno di TerremotoCentroItalia
 categories: blog
 ---
 
-E' il 24 agosto 2017. Doveva arrivare prima o poi. Un anno. Un anno dal primo sisma del 2016 nel Centro Italia. Un anno dalla nascita del nostro progetto di informazione [TerremotoCentroItalia](http://terremotocentroitalia.info/) (detto anche *TCI *come lo chiamiamo tra gli affezionatissimi).
+E' il 24 agosto 2017. Doveva arrivare prima o poi. Un anno. Un anno dal primo sisma del 2016 nel Centro Italia. Un anno dalla nascita del nostro progetto di informazione [TerremotoCentroItalia](http://terremotocentroitalia.info/) (detto anche **TCI** come lo chiamiamo tra gli affezionatissimi).
 
 Da oggi in poi probabilmente sarà un continuo ascoltar le seguenti frasi “un anno dal terremoto ad Amatrice”, “un anno dal terremoto a Norcia”, “un anno dalla distruzione del Centro Italia”, “un anno dalla distruzione dei monti Sibillini”, “un anno da Rigopiano” etc...Ogni media si assume però, la responsabilità di parlare “per conto suo” e tramite “la sua inchiesta”.
 
