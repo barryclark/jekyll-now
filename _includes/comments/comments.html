@@ -1,0 +1,15 @@
+<section id="comments" class="comments">
+	<h3>{{ comments | size }} comment{% if comments.size > 1 %}s{% endif %} for <em>{{ page.title }}</em></h3>
+	<ul class="comment-list">
+	{% for comment in comments %}
+		<li id="comment-{{ comment[1].date }}" class="comment">
+		<article class="comment-body" itemprop="comment" itemscope itemtype="http://schema.org/Comment">
+			<div class="comment-meta">
+				{% include comments/vcard.html comment=comment[1] %}
+			</div>
+			<div class="comment-content">{{ comment[1].message | markdownify }}</div>
+		</article>
+		</li>
+	{% endfor %}
+	</ul>
+</section>
