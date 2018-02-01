@@ -10,26 +10,26 @@ Below are the people, companies and more that I endorse. Blogs I read, services 
 <div class="list-group">
 <button type="button" class="list-group-item list-group-item-action active">Blogs  </button>
  <a href="https://moz.com/blog" class="list-group-item list-group-item-action">Moz</a>
+ <a href="http://saintjohnswort.ca/" class="list-group-item list-group-item-action">St. John's Wort</a>
+ <a href="https://thethirstywench.com/" class="list-group-item list-group-item-action">The Thirsty Wench</a>
 </div>
 
+<div class="list-group">
+<button type="button" class="list-group-item list-group-item-action active">Services  </button>
+ <a href="https://github.com/" class="list-group-item list-group-item-action">GitHub</a>
+ <a href="https://www.cloudflare.com/" class="list-group-item list-group-item-action">CloudFlare</a>
+ <a href="https://www.ubuntu.com/" class="list-group-item list-group-item-action">Ubuntu</a>
+</div>
 
+<div class="list-group">
+<button type="button" class="list-group-item list-group-item-action active">Charities  </button>
+ <a href="https://www.amnesty.org/en/" class="list-group-item list-group-item-action">Amnesty International</a>
+ <a href="http://www.doctorswithoutborders.org/" class="list-group-item list-group-item-action">Doctors Without Borders</a>
+</div>
 
-[St. John's Wort](http://saintjohnswort.ca/)
-[The Thirsty Wench](https://thethirstywench.com/)
+<div class="list-group">
+<button type="button" class="list-group-item list-group-item-action active">Charities  </button>
+ <a href="http://www.thejournal.email/" class="list-group-item list-group-item-action">Kevin Rose</a>
 
-# Services
-[GitHub](https://github.com/)
+</div>
 
-[Spotify](https://spotify.com)
-
-[Cloudflare](https://www.cloudflare.com/)
-
-[Ubuntu](https://www.ubuntu.com/)
-
-# Charities
-[Amnesty International](https://www.amnesty.org/en/)
-
-[Doctors Without Borders](http://www.doctorswithoutborders.org/)
-
-# Email Lists
-[Kevin Rose](http://www.thejournal.email/)
