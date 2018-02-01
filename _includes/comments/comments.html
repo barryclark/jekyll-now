@@ -11,19 +11,19 @@
 		</article>
 		{% if comment.replyto %}
 		{% if comments[next].replyto %}
-		</li>
+		</li>1
 		{% else %}
-		</li></ul>
+		</li></ul>2
 		<h3 onclick="$('#reply-to-comment-{{ comment[1].date }}').toggle()" style="cursor: pointer;">Reply to This Thread</h3>
 		
 		</li>
 		{% endif %}
 		{% else %}
 		{% if comments[next].replyto %}
-		<ul class="comment-list">
+		<ul class="comment-list">3
 		{% else %}
 		<h3 onclick="$('#reply-to-comment-{{ comment[1].date }}').toggle()" style="cursor: pointer;">Reply to This Thread</h3>
-		
+		4
 		</li>
 		{% endif %}
 		{% endif %}
