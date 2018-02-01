@@ -9,7 +9,7 @@ Below are the people, companies and more that I endorse. Blogs I read, services 
 
 <div class="list-group">
 <button type="button" class="list-group-item list-group-item-action active">Blogs  </button>
- <a href="https://moz.com/blog" class="list-group-item list-group-item-action">Moz</button>
+ <a href="https://moz.com/blog" class="list-group-item list-group-item-action">Moz</a>
 </div>
 
 
