@@ -1,7 +1,7 @@
 <div class="comment-author vcard">
   <img alt="avatar for {{ include.comment.name }}" src="{% if include.comment.email == "e591f3aa7c8cbd7dd9e3389958949ed3" %}https://avatars.githubusercontent.com/u/12754677?v=3{% else %}https://www.gravatar.com/avatar/{{ comment[1].email }}{% endif %}" class="avatar avatar-80 photo" height="80" width="80">
   {% if include.comment.url %}{% unless include.comment.url == blank %}<a target="_blank"  rel="external nofollow" href="{{ include.comment.url }}">{% endunless %}{% endif %}
-  {{ include.comment.name }}
+  <span class="author-name">{{ include.comment.name }}</span>
   {% if include.comment.url %}{% unless include.comment.url == blank %}</a>{% endunless %}{% endif %}
 </div>
 <div class="comment-metadata">
