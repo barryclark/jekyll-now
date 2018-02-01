@@ -86,4 +86,12 @@ section.comments {
   label, textarea, input, button {
       display: block;
   }
+  
+  textarea, input {
+    width: 100%;
+  }
+  
+  input {
+    max-width: 25em;
+  }
 }
