@@ -9,10 +9,13 @@
 			{% include comments/vcard.html comment=comment[1] %}
 			<div class="comment-content">{{ comment[1].message | markdownify }}</div>
 		</article>
+		<h3 onclick="$('#reply-to-comment-{{ comment[1].date }}').toggle()" style="cursor: pointer;">Reply to This Thread</h3>
+		{% include comments/form.html slug=slug reply=comment[1].date %}
 		</li>
 	{% endfor %}
 	</ul>
 </section>
 {% endif %}
 
-{% include form slug=slug %}
+<h3 id="reply-title" class="comment-reply-title">Leave a Reply</h3>
+{% include comments/form.html slug=slug %}
