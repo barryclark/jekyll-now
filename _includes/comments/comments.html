@@ -6,7 +6,7 @@
 	{% for comment in comments %}{% assign next = forloop.index0 | plus: 1 %}
 		<li id="comment-{{ comment[1].date }}" class="comment">
 		<article class="comment-body" itemprop="comment" itemscope itemtype="http://schema.org/Comment">
-			
+			{% include comments/vcard.html comment=comment[1] %}
 			<div class="comment-content">{{ comment[1].message | markdownify }}</div>
 		</article>
 		{% if comment[1].replyto and comments[next][1].replyto %}
@@ -14,13 +14,13 @@
 		{% elsif comment[1].replyto %}
 		</li></ul>
 		<h3 onclick="$('#reply-to-comment-{{ comment[1].date }}').toggle()" style="cursor: pointer;">Reply to This Thread</h3>
-		{% include comments/form.html slug=slug reply=comment[1].date %}
+		
 		</li>
 		{% elsif comments[next][1].replyto %}
 		<ul class="comment-list">
 		{% else %}
 		<h3 onclick="$('#reply-to-comment-{{ comment[1].date }}').toggle()" style="cursor: pointer;">Reply to This Thread</h3>
-		{% include comments/form.html slug=slug reply=comment[1].date %}
+		
 		</li>
 		{% endif %}		
 	{% endfor %}
