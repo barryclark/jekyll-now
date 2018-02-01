@@ -1,0 +1,10 @@
+<form id="post-new-comment{{ include.date }}" class="new-comment" method="post" action="https://api.staticman.net/v2/entry/hendrixjoseph/hendrixjoseph.github.io/master/comments">
+  <input name="options[redirect]" type="hidden" value="{{ site.url }}{{ page.url }}">
+  <input name="options[slug]" type="hidden" value="{{ include.slug }}">
+  <label class="comment-body" for="comment{{ include.date }}">Comment (required)</label><textarea name="fields[message]" id="comment{{ include.date }}" required="required" cols="45" rows="8" maxlength="65525" aria-required="true"></textarea>
+  <label class="comment-author" for="name{{ include.date }}">Name (required)</label><input name="fields[name]" id="name{{ include.date }}" required="required" aria-required="true" type="text">
+  <label class="comment-email" for="email{{ include.date }}">Email (required, always hashed, never used nor published)</label><input name="fields[email]" id="email{{ include.date }}" required="required" aria-required="true" type="email">
+  <label class="comment-url" for="url{{ include.date }}">Website (optional)</label><input name="fields[url]" id="url{{ include.date }}" type="url"></label>  
+  <button type="submit">Post comment</button>
+  <em>Note that comments won't appear until approved.</em>
+</form>
