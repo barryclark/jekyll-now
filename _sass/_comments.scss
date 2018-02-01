@@ -39,3 +39,20 @@
     }
   }
 }
+
+.comment-list {
+  list-style-type: none;
+  
+  img.avatar {
+    float: left;
+    height: 80px;
+    width: 80px;
+    margin: 10px 10px 0px 0px;
+  }
+  
+  time {
+    font-size: small;
+    color: black;
+    font-weight: 700;
+  }
+}
