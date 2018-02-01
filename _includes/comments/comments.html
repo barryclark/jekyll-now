@@ -6,7 +6,7 @@
 	{% for comment in comments %}{% assign next = forloop.index0 | plus: 1 %}
 		<li id="comment-{{ comment[1].date }}" class="comment">
 		<article class="comment-body" itemprop="comment" itemscope itemtype="http://schema.org/Comment">
-			{% include comments/vcard.html comment=comment[1] %}
+			{% assign c = comment[1] %}{% include comments/vcard.html comment=c %}
 			<div class="comment-content">{{ comment[1].message | markdownify }}</div>
 		</article>
 		{% if comment[1].replyto and comments[next][1].replyto %}
