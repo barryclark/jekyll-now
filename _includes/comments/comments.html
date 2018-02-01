@@ -4,14 +4,15 @@
 	<h3>{{ comments | size }} comment{% if comments.size > 1 %}s{% endif %} for <em>{{ page.title }}</em></h3>
 	<ul class="comment-list">
 	{% for comment in comments %}{% assign next = forloop.index0 | plus: 1 %}
+		8{{ comment }}8
 		<li id="comment-{{ comment[1].date }}" class="comment">
 		<article class="comment-body" itemprop="comment" itemscope itemtype="http://schema.org/Comment">
 			
 			<div class="comment-content">{{ comment[1].message | markdownify }}</div>
 		</article>
-		{% if comment.replyto and comments[next].replyto %}
+		{% if comment[1].replyto and comments[next].replyto %}
 		</li>
-		{% elsif comment.replyto %}
+		{% elsif comment[1].replyto %}
 		</li></ul>4
 		<h3 onclick="$('#reply-to-comment-{{ comment[1].date }}').toggle()" style="cursor: pointer;">Reply to This Thread</h3>
 
