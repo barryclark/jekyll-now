@@ -44,6 +44,7 @@ section.comments {
   article.comment-body {
     border: none;
     box-shadow: none;
+    padding: 0;
   }
   
   .comment-list {
@@ -67,10 +68,10 @@ section.comments {
     }
   }
 
-  .comment-list.top li {
+  .comment-list.top > li {
     border: 1px solid #ddd;
     box-shadow: 5px 5px 0px 0px #f1f1f1;
-    padding: 0 1em 0 1em;
+    padding: 1em;
     margin-bottom: 1em;
   }
 }
