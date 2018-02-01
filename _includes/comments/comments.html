@@ -9,24 +9,20 @@
 			
 			<div class="comment-content">{{ comment[1].message | markdownify }}</div>
 		</article>
-		{% if comment.replyto %}
-		{% if comments[next].replyto %}
+		{% if comment.replyto and comments[next].replyto %}
 		</li>
-		{% else %}
+		{% elsif comment.replyto %}
 		</li></ul>
 		<h3 onclick="$('#reply-to-comment-{{ comment[1].date }}').toggle()" style="cursor: pointer;">Reply to This Thread</h3>
-		
+
 		</li>
-		{% endif %}
-		{% else %}
-		{% if comments[next].replyto %}
+		{% elsif comments[next].replyto %}
 		<ul class="comment-list">
 		{% else %}
 		<h3 onclick="$('#reply-to-comment-{{ comment[1].date }}').toggle()" style="cursor: pointer;">Reply to This Thread</h3>
-		8{{ comments[next] }}8
+		
 		</li>
-		{% endif %}
-		{% endif %}
+		{% endif %}		
 	{% endfor %}
 	</ul>
 </section>
