@@ -7,9 +7,13 @@ permalink: /endorse/
 
 Below are the people, companies and more that I endorse. Blogs I read, services I use and charities I donate to.
 
-<ul class="list-group">
+<div class="list-group">
 <button type="button" class="list-group-item list-group-item-action active">Blogs  </button>
  <a href="https://moz.com/blog" class="list-group-item list-group-item-action">Moz</button>
+</div>
+
+
+
 [St. John's Wort](http://saintjohnswort.ca/)
 [The Thirsty Wench](https://thethirstywench.com/)
 
