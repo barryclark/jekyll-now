@@ -28,7 +28,7 @@ Below are the people, companies and more that I endorse. Blogs I read, services 
 </div>
 
 <div class="list-group" style="margin: 1em;">
-<button type="button" class="list-group-item list-group-item-action active">Charities  </button>
+<button type="button" class="list-group-item list-group-item-action active">Email Lists  </button>
  <a href="http://www.thejournal.email/" class="list-group-item list-group-item-action">Kevin Rose</a>
 
 </div>
