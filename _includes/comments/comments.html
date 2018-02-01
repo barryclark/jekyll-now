@@ -14,13 +14,13 @@
 		{% elsif comment[1].replyto %}
 		</li></ul>
 		<h3 onclick="$('#reply-to-comment-{{ comment[1].date }}').toggle()" style="cursor: pointer;">Reply to This Thread</h3>
-
+		{% include comments/form.html slug=slug reply=comment[1].date %}
 		</li>
 		{% elsif comments[next][1].replyto %}
 		<ul class="comment-list">
 		{% else %}
 		<h3 onclick="$('#reply-to-comment-{{ comment[1].date }}').toggle()" style="cursor: pointer;">Reply to This Thread</h3>
-		
+		{% include comments/form.html slug=slug reply=comment[1].date %}
 		</li>
 		{% endif %}		
 	{% endfor %}
