@@ -54,7 +54,13 @@ section.comments {
       float: left;
       height: 80px;
       width: 80px;
-      margin: 10px 10px 0px 0px;
+      margin: 0 10px 10px 0px;
+    }
+    
+    .author-name {
+      color: #222;
+      font-size: 20px;
+      font-weight: bold;
     }
 
     time {
