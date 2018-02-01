@@ -40,23 +40,37 @@
   }
 }
 
-.comment-list {
-  list-style-type: none;
-  
-  img.avatar {
-    float: left;
-    height: 80px;
-    width: 80px;
-    margin: 10px 10px 0px 0px;
+section.comments {
+  article.comment-body {
+    border: none;
+    box-shadow: none;
   }
   
-  time {
-    font-size: small;
-    color: black;
-    font-weight: 700;
+  .comment-list {
+    list-style-type: none;
+
+    img.avatar {
+      float: left;
+      height: 80px;
+      width: 80px;
+      margin: 10px 10px 0px 0px;
+    }
+
+    time {
+      font-size: small;
+      color: black;
+      font-weight: 700;
+    }
+
+    .comment-content {
+      clear: left;
+    }
   }
-  
-  .comment-content {
-    clear: left;
+
+  .comment-list.top {
+    border: 1px solid #ddd;
+    box-shadow: 5px 5px 0px 0px #f1f1f1;
+    padding: 0 1em 0 1em;
+    margin-bottom: 1em;
   }
 }
