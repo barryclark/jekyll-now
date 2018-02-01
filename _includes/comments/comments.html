@@ -3,7 +3,7 @@
 <section id="comments" class="comments">
 	<h3>{{ comments | size }} comment{% if comments.size > 1 %}s{% endif %} for <em>{{ page.title }}</em></h3>
 	<ul class="comment-list">
-	{% for comment in comments %}{% assign next = forloop.index0 | plus: 1 %}8comments[next]8
+	{% for comment in comments %}{% assign next = forloop.index0 | plus: 1 %}8{{ comments[next] }}8
 		<li id="comment-{{ comment[1].date }}" class="comment">
 		<article class="comment-body" itemprop="comment" itemscope itemtype="http://schema.org/Comment">
 			
