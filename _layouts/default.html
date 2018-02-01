@@ -26,7 +26,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     
     
-    
+    {% assign current = page.url | downcase | split: '/' %}
    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
     <a class="navbar-brand" href="{{ site.baseurl }}/"><img src="/images/logo.png" class="d-inline-block align-top" alt="logo">&nbsp;Kole McRae</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,19 +37,19 @@
     <ul class="navbar-nav mr-auto float-xs-right">
  
   <li class="nav-item">
-        <a class="nav-link" href="{{ site.baseurl }}/">Blog</a>
+        <a {% if current[1] == '' %}class='active nav-link'{% endif %} class="nav-link" href="{{ site.baseurl }}/">Blog</a>
       </li>
        <li class="nav-item">
-        <a class="nav-link" href="{{ site.baseurl }}/about">What Am I Up To?</a>
+        <a {% if current[1] == 'about' %}class='active nav-link'{% endif %}  class="nav-link" href="{{ site.baseurl }}/about">What Am I Up To?</a>
       </li>
          <li class="nav-item">
-        <a class="nav-link" href="{{ site.baseurl }}/music">Music</a>
+        <a {% if current[1] == 'music' %}class='active nav-link'{% endif %}  class="nav-link" href="{{ site.baseurl }}/music">Music</a>
       </li>
          <li class="nav-item">
-        <a class="nav-link" href="{{ site.baseurl }}/novel">Novel</a>
+        <a {% if current[1] == 'novel' %}class='active nav-link'{% endif %} class="nav-link" href="{{ site.baseurl }}/novel">Novel</a>
       </li>
         <li class="nav-item">
-        <a class="nav-link" href="{{ site.baseurl }}/endorse">What I Endorse</a>
+        <a {% if current[1] == 'endorse' %}class='active nav-link'{% endif %}  class="nav-link" href="{{ site.baseurl }}/endorse">What I Endorse</a>
       </li>
          <li class="nav-item">
         <a class="nav-link" href="https://www.buymeacoffee.com/kolemcrae">Buy Me a Coffee</a>
