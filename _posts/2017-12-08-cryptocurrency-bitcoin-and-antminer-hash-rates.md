@@ -44,7 +44,7 @@ Just using [Google as a calculator](https://www.google.com/search?q=16*(0.98)*45
 
 How often do I get a reward? It varies greatly - as little as a minute and many as several hours. However, it averages to about once an hour.
 
-This means in a 24-hour day I'll make 0.00001085538 bitcoins.
+This means in a 24-hour day I'll make 0.00013026456 bitcoins.
 
 How much this is in US dollars is left as an exercise for the reader.
 
