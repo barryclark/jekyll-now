@@ -4,7 +4,7 @@
   <label class="comment-body" for="comment{{ include.reply }}">Comment (required)</label><textarea name="fields[message]" id="comment{{ include.reply }}" required="required" cols="45" rows="8" maxlength="65525" aria-required="true"></textarea>
   <label class="comment-author" for="name{{ include.reply }}">Name (required)</label><input name="fields[name]" id="name{{ include.reply }}" required="required" aria-required="true" type="text">
   <label class="comment-email" for="email{{ include.reply }}">Email (required, always hashed, never used nor published)</label><input name="fields[email]" id="email{{ include.reply }}" required="required" aria-required="true" type="email">
-  <label class="comment-url" for="url{{ include.reply }}">Website (optional)</label><input name="fields[url]" id="url{{ include.reply }}" type="url"></label>  
+  <label class="comment-url" for="url{{ include.reply }}">Website (optional)</label><input name="fields[url]" id="url{{ include.reply }}" type="url">
   <button type="submit">Post comment</button>
   <em>Note that comments won't appear until approved.</em>
 </form>
