@@ -3,7 +3,7 @@
 <section id="comments" class="comments">
 	<h3>{{ comments | size }} comment{% if comments.size > 1 %}s{% endif %} for <em>{{ page.title }}</em></h3>
 	<ul class="comment-list">
-	{% for comment in comments %}{% assign next = forloop.index0 | plus: 1 %}8{{ comments[next] }}8
+	{% for comment in comments %}{% assign next = forloop.index0 | plus: 1 %}
 		<li id="comment-{{ comment[1].date }}" class="comment">
 		<article class="comment-body" itemprop="comment" itemscope itemtype="http://schema.org/Comment">
 			
@@ -11,19 +11,19 @@
 		</article>
 		{% if comment.replyto %}
 		{% if comments[next].replyto %}
-		</li>1
+		</li>
 		{% else %}
-		</li></ul>2
+		</li></ul>
 		<h3 onclick="$('#reply-to-comment-{{ comment[1].date }}').toggle()" style="cursor: pointer;">Reply to This Thread</h3>
 		
 		</li>
 		{% endif %}
 		{% else %}
 		{% if comments[next].replyto %}
-		<ul class="comment-list">3
+		<ul class="comment-list">
 		{% else %}
 		<h3 onclick="$('#reply-to-comment-{{ comment[1].date }}').toggle()" style="cursor: pointer;">Reply to This Thread</h3>
-		4
+		8{{ comments[next].replyto }}8
 		</li>
 		{% endif %}
 		{% endif %}
