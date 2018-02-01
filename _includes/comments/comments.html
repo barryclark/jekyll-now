@@ -1,15 +1,18 @@
+{% if include.slug %}{% assign slug = include.slug %}{% else %}{% assign slug = page.slug %}{% endif %}
+{% if site.data.comments[slug] %}{% assign comments = site.data.comments[slug] | sort %}
 <section id="comments" class="comments">
 	<h3>{{ comments | size }} comment{% if comments.size > 1 %}s{% endif %} for <em>{{ page.title }}</em></h3>
 	<ul class="comment-list">
 	{% for comment in comments %}
 		<li id="comment-{{ comment[1].date }}" class="comment">
 		<article class="comment-body" itemprop="comment" itemscope itemtype="http://schema.org/Comment">
-			<div class="comment-meta">
-				{% include comments/vcard.html comment=comment[1] %}
-			</div>
+			{% include comments/vcard.html comment=comment[1] %}
 			<div class="comment-content">{{ comment[1].message | markdownify }}</div>
 		</article>
 		</li>
 	{% endfor %}
 	</ul>
 </section>
+{% endif %}
+
+{% include form slug=slug %}
