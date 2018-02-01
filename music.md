@@ -27,7 +27,7 @@ I have several albums available and I am always posting new music.
 <img class="card-img-top" src="/images/earth.jpg" alt="Earth">
 <div class="card-body">
   <h5 class="card-title">Earth</h5>
-<p class="card-text">This is an older album of mine recorded completely in Linux. you can find it  </p>
+<p class="card-text">This is an older album of mine recorded completely in Linux. Far more ambient than my newer work.</p>
 <a href="https://noisetrade.com/loveislikepancakes/earth" class="btn btn-primary">Listen Here</a>
  </div>
 </div>
