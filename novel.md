@@ -12,6 +12,6 @@ I'm currently working on my second novel, but you can check out my first below!
 <div class="card-body">
   <h5 class="card-title">Please Laugh at my Funeral</h5>
 <p class="card-text">This is my first published novel. It is available in it's entirety for free. </p>
-<a href="https://www.smashwords.com/books/view/683795" class="btn btn-primary">click here and choose your platform.</a>
+<a href="https://www.smashwords.com/books/view/683795" class="btn btn-primary">Read it Here</a>
  </div>
 </div>
