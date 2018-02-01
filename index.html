@@ -17,16 +17,25 @@ layout: default
   {% endfor %}
 </div>
 <br />
-<div class="pagination">
+<nav aria-label="...">
+<ul class="pagination">
+  
   {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path }}" class="previous">&nbsp;Previous&nbsp;</a>
+  <li class="page-item">
+      <a href="{{ paginator.previous_page_path }}" class="page-link">Previous</a>
+  </li>
   {% else %}
     
   {% endif %}
-  <span class="page_number ">&nbsp;Page: {{ paginator.page }} of {{ paginator.total_pages }}&nbsp;</span>
+   <li class="page-item">
+  <span class="page_number page-link">&nbsp;Page: {{ paginator.page }} of {{ paginator.total_pages }}&nbsp;</span>
+  </li>
   {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path }}" class="next">&nbsp;Next&nbsp;</a>
+   <li class="page-item">
+    <a href="{{ paginator.next_page_path }}" class="page-link">&nbsp;Next&nbsp;</a>
+  </li>
   {% else %}
     
   {% endif %}
-</div>
+</ul>
+</nav>
