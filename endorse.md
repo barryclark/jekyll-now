@@ -7,13 +7,10 @@ permalink: /endorse/
 
 Below are the people, companies and more that I endorse. Blogs I read, services I use and charities I donate to.
 
-# Blogs
-## Digital Marketing
-[Moz](https://moz.com/blog)
-
-## Ontario Liquor
+<ul class="list-group">
+<button type="button" class="list-group-item list-group-item-action active">Blogs  </button>
+ <a href="https://moz.com/blog" class="list-group-item list-group-item-action">Moz</button>
 [St. John's Wort](http://saintjohnswort.ca/)
-
 [The Thirsty Wench](https://thethirstywench.com/)
 
 # Services
