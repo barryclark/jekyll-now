@@ -8,7 +8,8 @@ permalink: /music/
 I have several albums available and I am always posting new music. 
 
 
-
+<div class="row">
+  <div class="col-sm-4">
 <div class="card" style="width: 18rem; margin: 1rem;">
 <img class="card-img-top" src="/images/recent.jpg" alt="Recent Music">
 <div class="card-body">
@@ -29,6 +30,8 @@ I have several albums available and I am always posting new music.
   <h5 class="card-title">Earth</h5>
 <p class="card-text">This is an older album of mine recorded completely in Linux. you can find it  </p>
 <a href="https://noisetrade.com/loveislikepancakes/earth" class="btn btn-primary">Listen Here</a>
+ </div>
+</div>
  </div>
 </div>
 
