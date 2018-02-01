@@ -8,8 +8,7 @@ permalink: /music/
 I have several albums available and I am always posting new music. 
 
 
-<div class="row">
-  <div class="col-sm-6">
+<div class="card-deck">
 <div class="card" style="width: 18rem;">
 <img class="card-img-top" src="/images/recent.jpg" alt="Recent Music">
 <div class="card-body">
@@ -33,7 +32,7 @@ I have several albums available and I am always posting new music.
  </div>
 </div>
  </div>
-</div>
+
 
 
 
