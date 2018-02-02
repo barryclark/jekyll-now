@@ -19,6 +19,8 @@ Below are the people, companies and more that I endorse. Blogs I read, services 
  <a href="https://github.com/" class="list-group-item list-group-item-action">GitHub</a>
  <a href="https://www.cloudflare.com/" class="list-group-item list-group-item-action">CloudFlare</a>
  <a href="https://www.ubuntu.com/" class="list-group-item list-group-item-action">Ubuntu</a>
+  <a href="https://slack.com/" class="list-group-item list-group-item-action">Slack</a>
+  
 </div>
 
 <div class="list-group" style="margin: 1em;">
