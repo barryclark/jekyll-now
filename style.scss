@@ -10,105 +10,92 @@
 // Syntax highlighting @import is at the bottom of this file
 
 /**************/
-/* BASE RULES */
+/* The Header */
 /**************/
+
+.jumbotron {
+
+	height: 400px;
+	
+	  background-image: url(../images/compass.jpg)!important;
+        background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/**************/
+/* Fixes a bug where images are too big and break the site */
+/**************/
+
+
+img {
+	
+max-width: 100%;	
+	
+}
+
 
 html {
   font-size: 100%;
 }
 
-body {
-	background: $white;
-  font: 18px/1.4 $helvetica;
-  color: $darkGray;
-}
-
-.container {
-  margin: 0 auto;
-  max-width: 740px;
-  padding: 0 10px;
-  width: 100%;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: $helveticaNeue;
-  color: $darkerGray;
-  font-weight: bold;
-
-  line-height: 1.7;
-  margin: 1em 0 15px;
-  padding: 0;
-
-  @include mobile {
-    line-height: 1.4;
-  }
-}
-
-h1 {
-  font-size: 30px;
-  a {
-    color: inherit;
-  }
+.list-group-item-action.active {
+	
+background-color: #3190c8!important;	
 }
 
 h2 {
-  font-size: 24px;
+	
+padding-top: 1em;	
+	
+	
 }
 
-h3 {
-  font-size: 20px;
+h1 {
+padding-top: 1em;
+
 }
 
-h4 {
-  font-size: 18px;
-  color: $gray;
+/**************/
+/* The body of the page */
+/**************/
+
+
+body {
+	background: $white;
+  }
+
+.container {
+  margin: 0 auto;
+
+  padding: 0 10px;
+  width: 100%;
+	max-width: 45em !important;
 }
 
-p {
-  margin: 15px 0;
+
+/**************/
+/* Making text pretty */
+/**************/
+
+h1 {
+color: black !important;
+	
+	
+}
+
+.posts a {
+	
+color: black !important;	
+	
 }
 
 a {
-  color: $blue;
-  text-decoration: none;
-	cursor: pointer;
-  &:hover, &:active {
-    color: $blue;
-  }
+text-decoration: none !important;
+	color: black;
+	
 }
 
-ul, ol {
-  margin: 15px 0;
-  padding-left: 30px;
-}
-
-ul {
-  list-style-type: disc;
-}
-
-ol {
-  list-style-type: decimal;
-}
-
-ol ul, ul ol, ul ul, ol ol {
-  margin: 0;
-}
-
-ul ul, ol ul {
-  list-style-type: circle;
-}
-
-em, i {
-  font-style: italic;
-}
-
-strong, b {
-  font-weight: bold;
-}
-
-img {
-  max-width: 100%;
-}
 
 // Fixes images in popup boxes from Google Translate
 .gmnoprint img {
@@ -163,22 +150,7 @@ img {
   }
 }
 
-.site-avatar {
-  float: left;
-  width: 70px;
-  height: 70px;
-  margin-right: 15px;
 
-  @include mobile {
-    float: none;
-    display: block;
-    margin: 0 auto;
-  }
-
-  img {
-    border-radius: 5px;
-  }
-}
 
 .site-info {
   float: left;
@@ -192,7 +164,7 @@ img {
 
 .site-name {
   margin: 0;
-  color: $darkGray;
+  color: white;
   cursor: pointer;
   font-family: $helveticaNeue;
   font-weight: 300;
@@ -202,7 +174,7 @@ img {
 
 .site-description {
   margin: -5px 0 0 0;
-  color: $gray;
+  color: white;
   font-size: 16px;
 
   @include mobile {
@@ -210,32 +182,6 @@ img {
   }
 }
 
-nav {
-  float: right;
-  margin-top: 23px; // @TODO: Vertically middle align
-  font-family: $helveticaNeue;
-  font-size: 18px;
-
-  @include mobile {
-    float: none;
-    margin-top: 9px;
-    display: block;
-    font-size: 16px;
-  }
-
-  a {
-    margin-left: 20px;
-    color: $darkGray;
-    text-align: right;
-    font-weight: 300;
-    letter-spacing: 1px;
-
-    @include mobile {
-      margin: 0 10px;
-      color: $blue;
-    }
-  }
-}
 
 //
 // .main
