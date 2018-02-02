@@ -31,6 +31,10 @@ section.comments {
       clear: left;
     }
   }
+  
+  .comment-list.top {
+    padding: 0;
+  }
 
   .comment-list.top > li {
     border: 1px solid #ddd;
