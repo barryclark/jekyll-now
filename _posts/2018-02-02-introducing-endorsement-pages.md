@@ -28,3 +28,7 @@ I built one for my site if you want to see an example: [Just click here.](/endor
 These "Endorsement" pages aren't for large blogs or those corporate blogs with thousands of readers, they are for your average person with a small personal site - the kind of thing the Internet used to be all about. 
 
 Which brings me to a point: I wish the Internet was more personal again. A grouping of human beings. I'm a ig fan of the [Humans.txt](http://humanstxt.org/) innitiative and I think this plays well with it. 
+
+It doesn't have to be complicated - just think of the things and people and stuff you would recommend, organize it in some logical way and make it into a page. 
+
+
