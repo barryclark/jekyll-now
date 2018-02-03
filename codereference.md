@@ -232,6 +232,11 @@ ex. ENS0000001ENS0000002 -> ENS0000001 ENS0000002
 ##### Import python3 print functions
     from __future__ import print_function
 
+##### Apply pairwise comparison function to all possible pair combinations of rows in a matrix
+     # normally np.correlate([1, 2, 3], [0, 1, 0.5]) = array [3.5]
+     dist.squareform( dist.pdist(df, lambda x,y: np.correlate(x,y)) )
+
+
 ##### argparse Command line args
     import argparse
     
