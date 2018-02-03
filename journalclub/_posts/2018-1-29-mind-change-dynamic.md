@@ -2,7 +2,7 @@
 layout: post
 title: Physical Mechanism of mind changes and tradeoffs among speed, accuracy, and energy gost in brain decision making - Landscape and flux perspective. (2016)
 category: journalclub
-olddate: January 29 2018
+olddate: January, 29 2018
 ---
 
 * [Paper]({{site.url}}/journalclub/JCpapers/Wang_YanZhangWang_BrainDecisionMaking_CPB_2016.pdf) Han Yan, Kun Zhang and Jin Wang. Physical mechanism of mind changes and tradeoffs among speed, accuracy, and energy cost in brain decision making: Landscape and flux perspective, Chin. Phys. B. (2016)
