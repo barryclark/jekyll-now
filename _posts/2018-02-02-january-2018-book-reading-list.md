@@ -32,7 +32,7 @@ That said, this book did inform me of a couple ideas I was unaware of. These ide
 
 If you've kept up with my past few blog posts, you'll know that my wife is expecting our first child soon (a son, due early April!) We're both heavily into learning (we both joined Toastmaster's and gave our [icebreaker speech](https://hendrixjoseph.github.io/toastmasters-icebreaker-speech-the-story-of-joe/) last month) and have already taken a few classes about childbirth, so it's no surprise we're reading books on the subject as well.
 
-[The Everything Father-To-Be Book](https://www.amazon.com/Everything-Father-Be-Book-Survival/dp/1580629741/?tag=hendrixjoseph-20) is okay on the subject. Just okay. I feel as if it's more geared towards unexpected fathers and more stereotypical, beer-drinking, football-watching men. As I don't enjoy drinking beer (or any alcohol for that matter) and I'm not that into sports, it felt as if I was the target audience for this book.
+[The Everything Father-To-Be Book](https://www.amazon.com/Everything-Father-Be-Book-Survival/dp/1580629741/?tag=hendrixjoseph-20) is okay on the subject. Just okay. I feel as if it's more geared towards unexpected fathers and more stereotypical, beer-drinking, football-watching men. As I don't enjoy drinking beer (or any alcohol for that matter) and I'm not that into sports, it felt as if I was not the target audience for this book.
 
 {% include amazon/native-ad.html title="The Everything Father-To-Be Book" asin="1580629741,B006MGPJEI,1440574448" %}
 
