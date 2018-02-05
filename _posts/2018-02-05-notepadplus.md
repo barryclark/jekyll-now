@@ -7,5 +7,4 @@ categories:
 tags: 
 bigimg: 
 ---
-![]
-chèn ảnh thế nào ta?
+![notepad](https://vlvn.github.io/blog/images/nps.png)
