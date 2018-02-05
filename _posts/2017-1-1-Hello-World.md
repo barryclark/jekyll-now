@@ -1,32 +1,34 @@
 ---
 layout: post
-title: Fraud Detection, Coming soon!!!
+title: BarcelonaAccidents, Coming soon!!!
 ---
 
-I am working in a Synthetic Database for Fraud Detection in banking transactions. This is another Kaggle project with over 6 million rows, being each row a bank transaction. One of the challenges is that this is a very unbalanced database with a very small amount of fraudulent transactions (less than 1%). Let's start working.
-![nofrauds](/images/nofrauds.gif){:height="300px" width="400px"}
+Yes, I let myself go and get sucked in by my origins. I just had to work on a database that is from my hometown (Barcelona) as a modest way to show my support to the fellow Catalans in these sad days.
+
+![nofrauds](/images/BCN01.jpg){:height="300px" width="400px"}
 
 
 ## Brief description of Fraud Detection.
-  1. Dataset contains 6,362,620 transactionsm from "a synthetic dataset generated using the simulator called PaySim as an approach to such a problem. PaySim uses aggregated data from the private dataset to generate a synthetic dataset that resembles the normal operation of transactions and injects malicious behaviour to later evaluate the performance of fraud detection methods".
-  2. The baseline is 99.87% of showups.
+  1. Dataset contains almost 80,000 accidents taht ocurr in the city from 2010 to 2016
+  2. This is a multiclassification case.
   3. The link in github for a more detailed and technical explanation is not yet available.
   
 ## Non-technical description of Appointments No-show study.
 
 ## Gathering the data.
   
-
-
 ```
-python
+data = pd.DataFrame()
+files = []
+columnes = []
+for otem in range(2010, 2017):
+    file = '{}_accidents.csv'.format(otem)
+    df = pd.read_csv(file, encoding='ISO-8859-15')
+    fila = df.shape[0]
+    columna = df.shape[1]
+    files.append(fila)
+    data = data.append(df, ignore_index=True)
+    columnes.append(columna)
+data.shape, sum(files), sum(columnes)
 
-file = 'PS_20174392719_1491204439457_log.csv'
-df = pd.read_csv(file)
-
-data = df.copy()
-
-data = data.rename(columns={'oldbalanceOrg': 'oldbalanceOrig'})
-
-data.shape
 ```
