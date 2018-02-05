@@ -165,14 +165,16 @@ img {
 
 .site-avatar {
   float: left;
-  width: 70px;
-  height: 70px;
+  width: 200px;
+  height: 200px;
   margin-right: 15px;
 
   @include mobile {
     float: none;
     display: block;
     margin: 0 auto;
+    width: 70px;
+    height: 70px;
   }
 
   img {
@@ -182,11 +184,13 @@ img {
 
 .site-info {
   float: left;
+  padding-top: 40px;
 
   @include mobile {
     float: none;
     display: block;
     margin: 0 auto;
+    padding-top: 0;
   }
 }
 
