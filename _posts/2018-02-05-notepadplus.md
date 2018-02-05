@@ -7,4 +7,6 @@ categories:
 tags: 
 bigimg: 
 ---
-![notepad](https://vlvn.github.io/blog/images/nps.png)
+![notepad](https://vlvn.github.io/blog/images/nps1.png)
+![notepad](https://vlvn.github.io/blog/images/nps2.png)
+![notepad](https://vlvn.github.io/blog/images/nps3.png)
