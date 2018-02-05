@@ -1,24 +1,3 @@
-<style>
-
-.chart rect {
-  fill: steelblue;
-}
-
-.chart text {
-  fill: white;
-  font: 10px sans-serif;
-  text-anchor: end;
-}
-
-</style>
-<svg class="chart">
-
-</svg>
-<script src="//d3js.org/d3.v3.min.js">
-
-</script>
-<script>
-
 var width = 420,
     barHeight = 20;
 
@@ -28,7 +7,7 @@ var x = d3.scale.linear()
 var chart = d3.select(".chart")
     .attr("width", width);
 
-d3.tsv("data.tsv", type, function(error, data) {
+d3.csv("8116.csv", type, function(error, data) {
   x.domain([0, d3.max(data, function(d) { return d.value; })]);
 
   chart.attr("height", barHeight * data.length);
