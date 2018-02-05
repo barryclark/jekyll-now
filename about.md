@@ -4,12 +4,10 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+## Bine ati venit!
 
-### More Information
+Aceasta este pagina de web a comunitatii CoderDojo Alba Iulia. Grupul oficial aferent acestui site se gaseste [aici](https://zen.coderdojo.com/dojos/ro/alba-iulia-alba-county/alba-iulia-directia-programe-primaria-alba-iulia) si [aici gasiti grupul de Facebook](https://www.facebook.com/groups/1609746875954975/)
 
-A place to include any other types of information that you'd like to include about yourself.
+Pe scurt, CoderDojo este o comunitate a copiilor intre 7 si 17 ani ("ninja") dornici sa invete programare de la mentori care ii ajuta voluntar (nu costa nimic).
 
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+Dojo-ul se gaseste in Alba Iulia, [strada Bucovinei numarul 6](https://goo.gl/maps/Q7Yfzi5x54B2) si se organizeaza in fiecare Sambata intre 13:00-17:00 cu exceptiile anuntate in prealabil pe grup.
