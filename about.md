@@ -1,7 +1,7 @@
 ---
 layout: page
-title: About
-permalink: /about/
+title: Despre
+permalink: /despre/
 ---
 
 ## Bine ati venit!
