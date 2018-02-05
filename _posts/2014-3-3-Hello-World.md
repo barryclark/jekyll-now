@@ -1,7 +1,3 @@
----
-layout: post
-title: Firs entry!
----
 
 I started this blog as a reminder to myself how I made and set up multiple stuff during all this awesome learning path
 
