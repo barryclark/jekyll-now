@@ -1,4 +1,4 @@
-##This is my first blog
+## This is my first blog
 
 This is a project to keep track of everything that I am learning and to keep a reminder to my future self how I managed to make that stuff work or fix that nasty bug for all my side projects
 
