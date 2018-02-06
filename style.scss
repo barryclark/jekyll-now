@@ -163,8 +163,17 @@ img {
   }
 }
 
+.site-avatar {
+  float: left;
+  width: 10240px;
+  height: 768px;
+  margin-right: 15px;
 
-
+  @include mobile {
+    float: none;
+    display: block;
+    margin: 0 auto;
+  }
 
   img {
     border-radius: 5px;
