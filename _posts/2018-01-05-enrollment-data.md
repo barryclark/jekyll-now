@@ -8,7 +8,9 @@ categories: Education Data
 
 #### Students are leaving public schools because they have better charter options.
 
-I hope to eventually explore the two clickbait claims above. tl;dr You can skip to the [conclusions section](#conc) where I address them. The more general purpose of this post is to outline my process to explore California enrollment data starting from the raw form on the web. 
+I hope to eventually explore the two clickbait claims above. The primary purpose of this blog is to address them, get in touch if this interests you. 
+
+The purpose of this post is to outline my process to explore California enrollment data starting from the raw form on the web. As I progress though the steps, I will write additional posts to share results and/or go into specifics on troubleshooting technical difficulties. 
   
 I will follow a process similar to [EliteDataScience](https://elitedatascience.com/birds-eye-view):
   - [Exploratory Analysis](#explore)
@@ -18,7 +20,7 @@ I will follow a process similar to [EliteDataScience](https://elitedatascience.c
   - [Model Training](#model)
 
 # Exploration<a name="explore"></a>
-CA Student & School Data Files can be found on [California's DoE website](https://www.cde.ca.gov/ds/sd/sd/). However, they are tab delimited .txt files with fields that vary across years. 
+CA Student & School Data Files can be found on [California's DoE website](https://www.cde.ca.gov/ds/sd/sd/). They are tab delimited .txt files with fields that vary across years. 
 
 ## Enrollment
 Within student enrollment data lies a story. I hope that visualizing the data will encourage others to tell their sides of that story and bring it to light. 
@@ -82,8 +84,19 @@ setattr(DT.list, 'names', names.list)
 return(rbindlist(DT.list, use.names=TRUE, fill=TRUE, idcol=id))
 }
 ```
-# Features<a name="feature"></a>
 
+I will bind the data tables across years together into one large data.table in order to visualize change over time. Before doing so, I need to make sure that the column headers are the same for each data table and each col contains the same type of data.
+
+# Features<a name="feature"></a>
+The first thing to notice is that enrollments seem to be decreasing in many areas even though population has been rising. Normalizing for population growth seems like something worth trying.
+
+In California, a child must be five years old BEFORE September 1 in order to enroll in kindergarten. Elementary school is kindergarten through 5th grade (ages 5-10), middle school is grades 6-8 (ages 11-13), and high school is grades 9-12 (ages 14-18). I will use these figures copied from a [Stanford resource](https://cardinalatwork.stanford.edu/benefits-rewards/worklife/children-family/school-age-resources) to define school-aged children and pull that data from Census resources.
+
+I want to understand locations where enrollment is trending down or trending up
+
+I want to identify schools with high diversity entropy and low diversity entropy
+
+I want to identify schools with high class entropy and low class entropy
 
 # Algorithm<a name="algo"></a>
 
@@ -97,7 +110,7 @@ There are many claims about lowered enrollment in public schools. I taught at Fr
 
 <INSERT IMG Franklin_enrollment_2005-2013>
 
-My experience was local and anecdotal. Sure there are some charters that opened up, but the housing crisis hit, and the Highland Park area is a classic example of gentrification. Our community was RED HOT on redfin due to foreclosures, our city council member increased police presence, there was a huge gang raid in 2009, and changing deomographics of homeowners contributes to enrollment patterns.
+My experience was local and anecdotal. Some charters opened up, the housing crisis hit, and the Highland Park area is a classic example of gentrification. Our community was RED HOT on redfin due to foreclosures, our city council member increased police presence, there was a huge gang raid in 2009, and changing deomographics of homeowners contributes to enrollment patterns.
 
-The point of my experience is to inform the fluctuations we will now explore in public enrollment data. Clearly, we would need to do a lot data cleaning, merging, and feature engineering to get anywhere close to explaining enrollment fluctuations in any given community.
+The point of my experience is to inform the fluctuations I will explore in public enrollment data. We will need to do a lot data cleaning, merging, and feature engineering to get anywhere close to explaining enrollment fluctuations in any given community.
 
