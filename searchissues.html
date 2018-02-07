@@ -58,7 +58,7 @@ window.store = {};
     {% for member in filteredissues %}
 window.store["{{site.url}}/issues/{{member.number}}"]={
         "title": urldecode("{{ member.title | strip_html | url_encode }}"),
-        "label": "{{member.issue.labels | join: ','}}",
+        "label": {{member.issue.labels | join: ','}},
         {% if member.issue.data.descrizione != blank %}
         "content": urldecode("{{ member.issue.data.descrizione | url_encode }}"),
         {% else %}
