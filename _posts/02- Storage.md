@@ -1,0 +1,82 @@
+# Cloud Locations: Case for Objects Storage
+
+> This is second of the series of articles discussing the elements required to make locally developed data science models production-ready
+
+An analytical service that aims to be deployed should have a well thought-out strategy for its data storage. Manually locating an input and *pipelining* it to output isn’t a pragmatic approach. 
+
+Storages have been traditionally hierarchically organized(file storage) and stored in logical block addresses(Block Storage). A lot of pain-points exists for “file storage system” and we all have experienced it sometime or other. Now, these technologies are ripened to its the maximum efficiency. It thus couldn’t catch-up with the [Analytics 3.0](https://hbr.org/2013/12/analytics-30) needs of today’s time and necessitated the advent of “object storage” which are easy to interact with a construct, in a similar fashion as you would with a OOPS (*think* GET-PUT). Organizations are going to end up with a hybrid data environment based on the varied choices of complexity needed for the processing.
+
+<div class="image">
+<img src="https://d2mxuefqeaa7sj.cloudfront.net/s_26F7E84A82168715E1857F924053C6CFA04F2FDC084D14CB27C9B201D55D1E8C_1509976668036_UAS_storage_options.png" alt="sample" width="600" height="400">
+  <div><i>image source: Ubuntu Insights</i></div>
+</div>
+<br>
+
+## Features of Object Storage
+
+As one analytics team, you should be able to identify the use-cases of object storage with your models.  Continuing from the home security case instanced in the [previous post](https://github.com/anuragsoni9/ProductionScale/blob/master/01-%20Intro.md),  Tyco is in the business of streaming video data in real-time and are also likely storing metadata(e.g., statistics) too associated with processing and results.  Their data’s  [velocity](https://www.forbes.com/sites/brentdykes/2017/06/28/big-data-forget-volume-and-variety-focus-on-velocity/#1a696e606f7d) is a crucial aspect of the whole architecture and requires the armor of Object storage to be able to handle it. 
+
+Specifically, Object Storage would be able to offer Tyco the following:
+
+
+- **Cost-Effectiveness** 
+
+Streaming high-quality video is costly. A byte captured in Asia, stored in the US and analyzed in Europe is going to have a threefold data-related cost than a traditional channel. Object storage provider offers dirt-cheap prices. Storage is never been this cheap in history. Any other form will have an overhead expense of maintenance and cost will really add-up in the global nodes of a network.
+
+
+> Amazon’s pricing(per GB):  [Object Storage](https://aws.amazon.com/s3/pricing/)($0.023) vs [Block Storage](https://aws.amazon.com/ebs/pricing/)($0.1) vs [File Storage](https://aws.amazon.com/efs/pricing/)($0.3)]
+
+
+- **Flexibility**
+
+Major players in the storage are generally not offering only the single object storage service but a suite of infrastructure services over a cloud. These are broadly integrated among itself and have huge benefits to extend capability quickly. For example, Amazon [Cloudfront](http://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/TutorialStreamingJWPlayer.html) and [Elastic Transcoder](https://aws.amazon.com/elastictranscoder/) API will allow you to directly allow view media in cloud environment as opposed to downloading it multiple times.
+But to point specific flexibility within object storage(e.g., S3), S3 data connectors are provided by almost all data-related application. For remaining use-cases, REST APIs and SDKs are available to make a seamless layer for data transfer. There are also detailed flexibility like  defining specific filters for the metrics aligning with specific business application
+With offering of a lot of options to tweak the storage in terms of performance and its integration, Tyco too can “plug and play” a lot of building blocks to strategically and economically meet its needs
+
+<div class="image">
+<img src="https://d2mxuefqeaa7sj.cloudfront.net/s_26F7E84A82168715E1857F924053C6CFA04F2FDC084D14CB27C9B201D55D1E8C_1509988277683_image.png" alt="sample" width="600" height="400">
+  <div><i>AWS Services Offering: Flexibility to step into any infrastructure needs</i></div>
+</div>
+<br>
+
+
+- **Scalability**
+
+Demand-driven nimble storage needs are a way of doing business now. Consider the case of a popular TV [episode](https://www.youtube.com/watch?v=0a2lv4IwZFY&t=6s) of Silicon Valley, where startup team (quite comically!) had to do all sorts of maneuvering to meet an unanticipated surge in traffic. They eventually decided to move to [AWS](https://www.youtube.com/watch?v=JESKjC0SzWE) with the hope to never repeat the mistake.
+Systems have a non-linear complexity buildup when they scale. New customer acquisitions, new markets, new types of video codecs will all be the drivers for scalability of the Tyco analytics service. Tyco has large content video libraries and it should have  automated process, storage at scale. It would require policies at storage level e.g. if library isn’t accessed for 30 days, move it to [cooler](https://www.cloudberrylab.com/blog/amazon-s3-azure-and-google-cloud-prices-compare/) storage. 
+
+
+> The total volume of data and number of objects you can store are unlimited. Individual Amazon S3 objects can range in size from a minimum of 0 bytes to a maximum of 5 terabytes - **Amazon S3 FAQ**
+
+
+- **Simplicity** 
+
+Hadoop or traditional storage would require huge resources to maintain cumbersome in-house infra with significant expected downtime. This is in contrast to easy integration consoles and  [99.999%](http://www.zdnet.com/article/the-race-to-99-999-percent-uptime-3tera-ups-the-cloud-sla-ante/) reliability offered by leading providers owing to intense competition. Their competition is your gain. With the delegation of these aspects of your deployment to object storage services, as a company you can dedicate a lot of focus on the real value-adds that you have to offer.
+
+
+>  Amazon S3 is built for simplicity, with a web-based management console, mobile app, and full REST APIs and SDKs for easy integration with third-party technologies. - **Amazon S3 Product Details**
+
+
+
+## Points to watch out for
+
+> “Risk comes from not knowing what you`re doing.” - *Warren Buffett*
+
+Every option has a choice and knowledge about our decions should be wary of its shortcomings as well to mitigate it tactically, 
+
+Items that can be be troubling when dealing with a object-storage are following:
+
+- Organization(*when* compared with file storage)
+- Data Versioning
+- Access Control layer
+- Compliance/Privacy (*huge concerns* in Medical and Financial Industry*)*
+- latency between transfer over different cloud vendors
+- single-supplier risk
+
+There are **solutions** to manage some of its shortcomings. Take, for example, [Pachyderm](http://pachyderm.io/). Pachyderm is an excellent open-source tool that provides a framework to handle data lineage in the cloud environment with additional [security features](http://pachyderm.readthedocs.io/en/latest/enterprise/auth.html). It provides an opportunity for data science professionals to consider their data as for how they consider their code i.e. ability to version it. Pachyderm layer on top of standard Object Store(*like* S3) is designed to add a leash on the juggernaut offerings by object storage. 
+
+
+![source: pachyderm website](https://d2mxuefqeaa7sj.cloudfront.net/s_26F7E84A82168715E1857F924053C6CFA04F2FDC084D14CB27C9B201D55D1E8C_1509979551595_enterprise.png)
+
+
+
