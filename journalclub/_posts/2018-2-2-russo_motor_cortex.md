@@ -2,7 +2,7 @@
 layout: post
 title: Motor Cortex Embeds Muscle-like Commands in an Untangled Population Response (2018)
 category: journalclub
-olddate: February, 5 2018
+olddate: February 5, 2018
 ---
 
 * [Paper]({{site.url}}/journalclub/JCpapers/Russo_Motor_cortex.pdf) Abigail A. Russo, Sean R. Bittner, Sean M. Perkins, Jeffrey S. Seely, Brian M. London, Antonio H. Lara, Andrew Miri, Najja J. Marshall, Adam Kohn, Thomas M. Jessell, Laurence F. Abbott, John P. Cunningham, and Mark M. Churchland. Motor Cortex Embeds Muscle-like Commands in an Untangled Population Response, Neuron. (2018)
