@@ -11,7 +11,6 @@ git init .
 An example of a .gitignore file of course not everything is needed:
 ```
 # Compiled source #
-###################
 *.com
 *.class
 *.dll
@@ -20,9 +19,6 @@ An example of a .gitignore file of course not everything is needed:
 *.so
 
 # Packages #
-############
-# it's better to unpack these files and commit the raw source
-# git has its own built in compression methods
 *.7z
 *.dmg
 *.gz
@@ -33,13 +29,11 @@ An example of a .gitignore file of course not everything is needed:
 *.zip
 
 # Logs and databases #
-######################
 *.log
 *.sql
 *.sqlite
 
 # OS generated files #
-######################
 .DS_Store
 .DS_Store?
 ._*
