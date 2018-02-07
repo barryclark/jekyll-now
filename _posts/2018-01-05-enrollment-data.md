@@ -98,6 +98,8 @@ I want to identify schools with high diversity entropy and low diversity entropy
 
 I want to identify schools with high class entropy and low class entropy
 
+Who gets pushed out of schools? Opportunity transfers, expulsions...
+
 # Algorithm<a name="algo"></a>
 
 
