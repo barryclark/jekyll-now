@@ -5,7 +5,7 @@ category: journalclub
 olddate: February 12, 2018
 ---
 
-* [Paper]({{site.url}}/journalclub/JCpapers/Ghanbari_Estimating_Plasticity.pdf) Abed Ghanbari, Aleksey Malyshev, Maxim Volgushev, Ian H. Stevenson. Estimating short-term synaptic plasticity from pre- and postsynaptic spiking, PLOS. (2017)
+* [Paper]({{site.url}}/journalclub/JCpapers/Ghanbari_Estimating_Plasticity.pdf) Abed Ghanbari, Aleksey Malyshev, Maxim Volgushev, Ian H. Stevenson. Estimating short-term synaptic plasticity from pre- and postsynaptic spiking, PLoS Comput Biol. (2017)
 * Abstract
 
 Short-term synaptic plasticity (STP) critically affects the processing of information in neuronal
