@@ -12,6 +12,6 @@ Mostly posts and tutorials about web development and design. The main purpose is
 No bullshit. No lengthy shit. If something can be explained in one line, explain it in one line.
 
 
-# Contact me
+## Contact me
 
-[Send me an email](mailto:221bvl@gmail.com)
+[My Facebook](fb.com/221bvl) but mostly random pictures there.
