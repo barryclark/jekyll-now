@@ -16,5 +16,6 @@ Anurag’s work involved building solutions that target customer pain-points in 
 
 ### Contact me
 
-[soni.anuragg@gmail.com](mailto:soni.anuragg@yahoo.com)
-[www.linkedin.com/in/anurag-soni1](linkedin: my profile)
+[email](soni.anuragg@gmail.com)
+
+[linkedin](www.linkedin.com/in/anurag-soni1)
