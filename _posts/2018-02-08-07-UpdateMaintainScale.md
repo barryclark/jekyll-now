@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 # Update, Maintain and Scale your Data Science Pipeline
 
@@ -160,5 +160,4 @@ The basic objective of whole series was to help you explore the opportunity of r
 
 It can also be redesigned to implement your own data pipeline that you have been trying to run manually. The most learning is expected to be in the through understanding of [Pipeline Specification](http://pachyderm.readthedocs.io/en/stable/reference/pipeline_spec.html) and writing your own project’s [Dockerfile](https://docs.docker.com/engine/userguide/eng-image/dockerfile_best-practices/). 
 
-To that end, [Daniel Whitnack](http://www.datadan.io/) has provided various examples [here](http://docs.pachyderm.io/en/latest/examples/readme.html) which can be further tried-out to get used-to on this. It includes pipeline examples of typical R/Python classification, GPU-enabled distributed training etc. 
-
+To that end, [Daniel Whitnack](http://www.datadan.io/) has provided various examples [here](http://docs.pachyderm.io/en/latest/examples/readme.html) which can be further tried-out to get used-to on this. It includes pipeline examples of typical R/Python classification, GPU-enabled distributed training etc.
