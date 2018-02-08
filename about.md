@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-HellO My name is Anurag Soni.
+Hello My name is Anurag Soni.
 
 
 I am a seasoned Technology enabler who is currently enrolled in Business Analytics program at Purdue University. 
