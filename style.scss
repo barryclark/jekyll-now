@@ -7,36 +7,30 @@
 
 @import "reset";
 @import "variables";
-// Syntax highlighting @import is at the bottom of this file
+// Syntax highlighting @import is at the bottom of this fill
 
-/**************/
-/* BASE RULES */
-/**************/
-
-html {
-  font-size: 100%;
+{ html 
+  font-size: 70%;
+} 
+{ body
+  background-image: url("https://configurator.lamborghini.com/img/car-selection-aventador-coupe.png");
+  font: 18px/1.4 $monospace;
 }
-
-body {
-	background: $white;
-  font: 18px/1.4 $helvetica;
-  color: $darkGray;
-}
-
 .container {
-  margin: 0 auto;
-  max-width: 740px;
-  padding: 0 10px;
-  width: 100%;
+  margin: 70 auto;
+  max-width: 200px;
+  padding: 0 30px;
+  width: 50%;
 }
+	
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $helveticaNeue;
-  color: $darkerGray;
+  font-family: $monospace;
+  color: $Aqua;
   font-weight: bold;
 
   line-height: 1.7;
-  margin: 1em 0 15px;
+  margin: 1em 0 30px;
   padding: 0;
 
   @include mobile {
@@ -47,39 +41,39 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: 30px;
   a {
-    color: inherit;
+    color: aqua;
   }
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 40px;
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 30px;
 }
 
 h4 {
-  font-size: 18px;
-  color: $gray;
+  font-size: 28px;
+  color: $green;
 }
 
 p {
-  margin: 15px 0;
+  margin: 30px 0;
 }
 
 a {
-  color: $blue;
+  color: $green;
   text-decoration: none;
 	cursor: pointer;
   &:hover, &:active {
-    color: $blue;
+    color: $purple;
   }
 }
 
 ul, ol {
   margin: 15px 0;
-  padding-left: 30px;
+  padding-left: 25px;
 }
 
 ul {
@@ -99,7 +93,7 @@ ul ul, ol ul {
 }
 
 em, i {
-  font-style: italic;
+  font-style: bold;
 }
 
 strong, b {
@@ -107,7 +101,7 @@ strong, b {
 }
 
 img {
-  max-width: 100%;
+  max-width: 60%;
 }
 
 // Fixes images in popup boxes from Google Translate
@@ -116,14 +110,14 @@ img {
 }
 
 .date {
-  font-style: italic;
-  color: $gray;
+  font-style: bold;
+  color: $orange;
 }
 
 // Specify the color of the selection
 ::-moz-selection {
-  color: $black;
-  background: $lightGray;
+  color: $yellow;
+  background: $aqua;
 }
 ::selection {
   color: $black;
