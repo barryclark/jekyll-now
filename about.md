@@ -4,12 +4,14 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+## The purpose of this blog
 
-### More Information
+Mostly posts and tutorials about web development and design. The main purpose is to make a reference for myself in the future because I have short-term memory loss.
 
-A place to include any other types of information that you'd like to include about yourself.
+## My style
+No bullshit. No lengthy shit. If something can be explained in one line, explain it in one line.
 
-### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+## Contact me
+
+[My Facebook](fb.com/221bvl) but mostly random pictures there.
