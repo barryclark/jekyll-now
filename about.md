@@ -9,4 +9,4 @@ Part of the 2018 graduate program.
 ### Contact me
 
 Email: morgan.haywood
-Slack: Morgan Haywood
+Slack: @morgan.haywood
