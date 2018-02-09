@@ -1,3 +1,4 @@
+{% comment %}
 <form id="post-new-comment{{ include.reply }}" class="new-comment" method="post" action="https://dev.staticman.net/v2/entry/hendrixjoseph/hendrixjoseph.github.io/master/comments"{% if include.reply %} style="display: none;"{% endif %}>
   <input name="options[redirect]" type="hidden" value="{{ site.url }}{{ page.url }}">
   <input name="options[slug]" type="hidden" value="{{ include.slug }}">
@@ -7,5 +8,5 @@
   <label class="comment-url" for="url{{ include.reply }}">Website (optional)</label><input name="fields[url]" id="url{{ include.reply }}" type="url">
   <button type="submit">Post comment</button>
   <em>Note that comments won't appear until approved.</em>
-</form>
-{% comment %}***Commenting temporarily disabled.***{% endcomment %}
+</form>{% endcomment %}
+***Commenting temporarily disabled.***
