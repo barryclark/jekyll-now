@@ -5,4 +5,4 @@ title: Hello World!
 
 This a test post.
 
-I'm afraid it's rather boring :+1:
+I'm afraid it's rather boring :sleepy:
