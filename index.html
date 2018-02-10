@@ -3,75 +3,148 @@ layout: default
 ---
 
 <section id="mainAboutSection">
-	<article>
-		<p>
-			Crafting an experience with empathy and compassion towards the user and its context. Embracing user's needs as yours.
-		</p>
+			<header>
+				<h1>About <span>Me</span></h1>
+			</header>
 
-		<footer>
-			Design
+			<article>
+				<p>
+					Crafting an experience with empathy and compassion towards the user and its context. Embracing user's needs as yours.
+				</p>
+
+				<p>
+					Making unobstrusive products for enhancing people's reach and capabilities. Building 'bicycles for our minds' <strong>*</strong>.
+				</p>
+			</article>
+		</section>
+
+		<section id="mainProjectsSection">
+			<header>
+				<h1>Projects</h1>
+			</header>
+
+			<div id="projectsDiv">
+				<article class="projectsArticle landscapePhoneBig">
+					<header>
+						<a href="#">
+							<video autoplay loop poster="static/media/index/thumbnails/StopBreathe&ThinkKids.jpg">
+								<source src="static/media/index/thumbnails/StopBreathe&ThinkKids.m4v" type="video/mp4">
+							</video>
+						</a>
+					</header>
+					<article>
+						<h1>Stop, Breathe & Think Kids</h1>
+					</article>
+				</article>
+
+				<article class="projectsArticle squareBig">
+					<header>
+						<a href="#">
+							<video autoplay loop poster="static/media/index/thumbnails/Suny.jpg">
+								<source src="static/media/index/thumbnails/Suny.m4v" type="video/mp4">
+							</video>
+						</a>
+					</header>
+					<article>
+						<h1>Suny</h1>
+					</article>
+				</article>
+
+				<article class="projectsArticle portraitPhoneBig">
+					<header>
+						<a href="#">
+							<picture>
+								<img src="static/media/index/thumbnails/StopBreathe&Think.jpg">
+							</picture>
+						</a>
+					</header>
+					<article>
+						<h1>Stop, Breathe & Think</h1>
+					</article>
+				</article>
+
+				<article class="projectsArticle squareBig">
+					<header>
+						<a href="#">
+							<picture>
+								<img src="static/media/index/thumbnails/FetchMyPet.jpg">
+							</picture>
+						</a>
+					</header>
+					<article>
+						<h1>Fetch My Pet</h1>
+					</article>
+				</article>
+
+				<article class="projectsArticle landscapeTabletMedium">
+					<header>
+						<a href="#">
+							<picture>
+								<img src="static/media/index/thumbnails/Arrivedo.jpg">
+							</picture>
+						</a>
+					</header>
+					<article>
+						<h1>Arrivedo</h1>
+					</article>
+				</article>
+
+				<article class="projectsArticle landscapePhoneSmall">
+					<header>
+						<a href="#">
+							<picture>
+								<img src="static/media/index/thumbnails/Toast.jpg">
+							</picture>
+						</a>
+					</header>
+					<article>
+						<h1>Toast</h1>
+					</article>
+				</article>
+
+				<article class="projectsArticle landscapePhoneMedium">
+					<header>
+						<a href="#">
+							<video autoplay loop poster="static/media/index/thumbnails/HorizontalFloatingHeaderLayout.jpg">
+								<source src="static/media/index/thumbnails/HorizontalFloatingHeaderLayout.m4v" type="video/mp4">
+							</video>
+						</a>
+					</header>
+					<article>
+						<h1>Horizontal Floating Header Layout</h1>
+					</article>
+				</article>
+
+				<article class="projectsArticle portraitPhoneMedium">
+					<header>
+						<a href="#">
+							<video autoplay loop poster="static/media/index/thumbnails/PannablePickerView.jpg">
+								<source src="static/media/index/thumbnails/PannablePickerView.m4v" type="video/mp4">
+							</video>
+						</a>
+					</header>
+					<article>
+						<h1>Pannable PickerView</h1>
+					</article>
+				</article>
+
+				<article class="projectsArticle squareSmall">
+					<header>
+						<a href="#">
+							<picture>
+								<img src="static/media/index/thumbnails/Noty.jpg">
+							</picture>
+						</a>
+					</header>
+					<article>
+						<h1>Noty</h1>
+					</article>
+				</article>
+			</div>
+		</section>
+
+		<footer id="mainFooter">
+			<p>
+				(<strong>*</strong>) <a href="https://www.youtube.com/watch?v=ob_GX50Za6c"><strong>Steve Jobs</strong>, "Computers are like a bicycle for our minds." </a>
+			</p>
 		</footer>
-	</article>
-
-	<article>
-		<p>
-			Making unobstrusive products for enhancing people's reach and capabilities. Building 'bicycles for our minds' *.
-		</p>
-
-		<footer>
-			Code
-		</footer>
-	</article>
-</section>
-
-<section id="mainMobileAboutSection">
-	<article>
-		<p>
-			Crafting an experience with empathy and compassion towards the user and its context. Embracing user's needs as yours.
-		</p>
-	</article>
-
-	<div>
-		<h1>Design<span>Code</span></h1>
-	</div>
-
-	<article>
-		<p>
-			Making unobstrusive products for enhancing people's reach and capabilities. Building 'bicycles for our minds' *.
-		</p>
-	</article>
-</section>
-
-<section id="mainProjectsSection">
-
-	{% assign featuredPosts = "" | split:"|"  %}
-	{% assign nonFeaturedPosts = "" | split:"|"  %}
-        {% for post in site.posts %}
-            {% if post.featured %}
-                {% assign featuredPosts = featuredPosts | push: post %}
-            {% else %}
-                {% assign nonFeaturedPosts = nonFeaturedPosts | push: post %}
-            {% endif %}
-        {% endfor %}
-    {% assign featuredPosts = featuredPosts | sort: 'order' %}
-    {% assign nonFeaturedPosts = nonFeaturedPosts | sort: 'order' %}
-
-
-	<div id="featuredProjectsDiv">
-		{% for post in featuredPosts %}
-			{% include index-post.html post=post %}
-		{% endfor %}
-	</div>
-
-	<div id="nonFeaturedProjectsDiv">
-		{% for post in nonFeaturedPosts %}
-			{% include index-post.html post=post %}
-		{% endfor %}
-	</div>
-</section>
-
-<footer id="mainProjectsFooter">
-	<p>
-		(*) <a href="https://www.youtube.com/watch?v=ob_GX50Za6c">Steve Jobs, "Computers are like a bicycle for our minds." </a>
-	</p>
-</footer>

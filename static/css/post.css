@@ -19,35 +19,11 @@
 	font-style: italic;
 	src: url("../resources/fonts/aleo/Aleo-BoldItalic.otf");
 }
-
-/* GENERAL */
-header#mainHeader {
-	margin-bottom: 1.17vw;
-}
-
-header#mainHeader a {
-	font-family: "Aleo", serif;
-	font-size: 1.56vw;
-	display: inline-block;
-	border: solid 1px black;
-	padding: 1.17vw 2.34vw;
-
-	-webkit-transition: background-color 0.3s;
-
-	-o-transition: background-color 0.3s;
-
-	transition: background-color 0.3s;
-}
-
 /* POST */
 article#mainPostArticle {
-	margin-bottom: 8.98vw;
-}
-
-@media (max-width: 760px) {
-	article#mainPostArticle {
-		margin-bottom: 10vw;
-	}
+	width: 100%;
+	text-align: left;
+	margin-bottom: 9.96vw;
 }
 
 article#mainPostArticle > *{
@@ -62,75 +38,57 @@ header#postHeader, section#postContentSection {
 	-webkit-box-direction: normal;
 	    -ms-flex-direction: column;
 	        flex-direction: column;
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
+	-webkit-box-align: left;
+	    -ms-flex-align: left;
+	        align-items: left;
 }
 
 /*Header*/
-header#postHeader picture, header#postHeader picture img{
-	width: 100%;
+header#postHeader {
+	margin-top: 11.03vw;
+	width: 37.10vw;
+	margin-left: 9.96vw;
 }
 
-header#postHeader picture img {
-	width: 100%;
+header#postHeader a,  header#postHeader a *{
+	font-family: "Lora", serif;
+	font-weight: normal;
+	font-size: 1.757vw;
+	text-decoration: none;
+	text-align: left;
+}
+
+header#postHeader a:before {
+	content: "← ";
 }
 
 header#postHeader hgroup {
-	margin-top: 2.43vw;
-	margin-bottom: 0.78vw;
-}
-
-@media (max-width: 760px) {
-	header#postHeader hgroup {
-		margin-top: 5vw;
-	}
-}
-
-header#postHeader hgroup > * {
-	width: 52.73vw;
-}
-
-@media (max-width: 760px) {
-	header#postHeader hgroup > * {
-		width: 90vw;
-	}
+	margin-top: 4.29vw;
+	margin-bottom: 4.29vw;
 }
 
 header#postHeader hgroup h1 {
 	font-family: "LeagueSpartan", sans-serif;
 	font-weight: bold;
-	font-size: 3.51vw;
-}
-
-@media (max-width: 760px) {
-	header#postHeader hgroup h1 {
-		font-size: 6.87vw;
-	}
+	font-size: 3.71vw;
+	text-transform: uppercase;
 }
 
 header#postHeader hgroup h2 {
 	margin-top: 0.39vw;
-	font-family: "Aleo", serif;
+	font-family: "Lora", serif;
 	font-weight: normal;
 	font-size: 1.757vw;
 }
 
-@media (max-width: 760px) {
-	header#postHeader hgroup h2 {
-		font-size: 5vw;
-	}
-}
-
 /*Content*/
-section#postContentSection > *{
-	width: 52.73vw;
+section#postContentSection{
+	width: 100%;
 }
 
-@media (max-width: 760px) {
-	section#postContentSection > * {
-		width: 90vw;
-	}
+section#postContentSection > * {
+	width: 52.24vw;
+	margin-left: 9.96vw;
 }
 
 section#postContentSection h1 {
@@ -140,25 +98,11 @@ section#postContentSection h1 {
 	font-size: 2.929vw;
 }
 
-@media (max-width: 760px) {
-	section#postContentSection h1 {
-		margin-top: 10vw;
-		font-size: 5.6vw;
-	}
-}
-
 section#postContentSection h2 {
 	margin-top: 2.34vw;
 	font-family: "Aleo", serif;
 	font-weight: bold;
 	font-size: 2.34vw;
-}
-
-@media (max-width: 760px) {
-	section#postContentSection h2 {
-		margin-top: 5vw;
-		font-size: 5vw;
-	}
 }
 
 section#postContentSection h3 {
@@ -168,13 +112,6 @@ section#postContentSection h3 {
 	font-size: 1.56vw;/*16px*/
 }
 
-@media (max-width: 760px) {
-	section#postContentSection h3 {
-		margin-top: 5vw;
-		font-size: 4.37vw;
-	}
-}
-
 section#postContentSection p, section#postContentSection p * {
 	margin-top: 1.56vw;
 	font-family: "Aleo", serif;
@@ -182,23 +119,13 @@ section#postContentSection p, section#postContentSection p * {
 	line-height: 2.53vw;
 }
 
-@media (max-width: 760px) {
-	section#postContentSection p, section#postContentSection p * {
-		margin-top: 5vw;
-		font-size: 4.37vw;
-		line-height: 7.7vw;
-	}
+section#postContentSection p * {
+	width: 100%;
 }
 
 section#postContentSection ul, section#postContentSection ol {
 	margin-top: 1.56vw;
 	list-style-position: inside;
-}
-
-@media (max-width: 760px) {
-	section#postContentSection ul, section#postContentSection ol {
-		margin-top: 5vw;
-	}
 }
 
 section#postContentSection li, section#postContentSection li * {
@@ -208,21 +135,49 @@ section#postContentSection li, section#postContentSection li * {
 	line-height: 2.53vw;
 }
 
-@media (max-width: 760px) {
-	section#postContentSection li, section#postContentSection li * {
-		font-size: 4.37vw;
-		line-height: 7.7vw;
-	}
-}
-
 section#postContentSection p img {
-	width: 100%;
 	margin-top: 0.78vw;
 	margin-bottom: 0.78vw;
 }
 
-section#postContentSection p video {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
+/* Gallery */
+div#postContentGallery {
+	width: 100%;
+	margin-top: 2.34vw;
+	margin-left: 0px;
+}
+
+div#postContentGallery ul{
+	width: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	list-style: none;
+	-ms-flex-wrap: nowrap;
+	    flex-wrap: nowrap;
+	overflow: auto;
+}
+
+div#postContentGallery ul li:first-of-type {
+	margin-left: 9.96vw;
+}
+
+div#postContentGallery ul li + li {
+	margin-left: 2.34vw;
+}
+
+div#postContentGallery ul li:last-of-type {
+	padding-right: 9.96vw;
+}
+
+div#postContentGallery ul li.landscape img{
+	width: 52.24vw;
+}
+
+div#postContentGallery ul li.portrait img{
+	height: 52.24vw;
 }
