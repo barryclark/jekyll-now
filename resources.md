@@ -1,10 +1,8 @@
 ---
 layout: page
-title: About
+title: Our Machine Learning Resources
 permalink: /resources/
 ---
-
-### Our Machine Learning Resources
 
 Here, you'll find all of ACM AI's content over the years, including code, blog posts, notes, and slides. Enjoy!
 
