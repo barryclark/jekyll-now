@@ -16,7 +16,7 @@ We're UCLA's premiere artificial intelligence and machine learning group. We [te
 
 ### A few of our past events
 
-[spring17workshop](https://raw.githubusercontent.com/uclaacmai/uclaacmai.github.io/master/ai-photos/Workshop.jpg)
+![spring17workshop](https://raw.githubusercontent.com/uclaacmai/uclaacmai.github.io/master/ai-photos/Workshop.jpg)
 *A full house for our first workshop of the Spring 2017 Quarter!*
 
 ### Contact
