@@ -13,6 +13,6 @@ I am passionate about Analytics, Data Science topics.
 
 ### Contact me
 
-[email](soni.anuragg@gmail.com)
+[email](mailto:soni.anuragg@gmail.com)
 
-[linkedin](www.linkedin.com/in/anurag-soni1)
+[linkedin](http://www.linkedin.com/in/anurag-soni1)
