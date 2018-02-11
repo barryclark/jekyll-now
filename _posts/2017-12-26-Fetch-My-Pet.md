@@ -4,7 +4,9 @@ title: Fetch My Pet
 roles: [iOS Developer]
 ---
 
-![](/static/media/posts/FetchMyPet/fetch-banner.jpg)
+<p>
+	<img src="/static/media/posts/FetchMyPet/fetch-banner.jpg" class="portrait">
+</p>
 
 Always keep track of your pet with Fetch My Pet, thanks to its companion bluetooth collar and its geofencing technology.
 

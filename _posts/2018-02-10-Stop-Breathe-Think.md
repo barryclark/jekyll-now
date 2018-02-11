@@ -4,7 +4,9 @@ title: Stop, Breathe & Think
 roles: [iOS Developer]
 ---
 
-![](/static/media/posts/StopBreathe&Think/sbt-banner.jpg)
+<p>
+	<img src="/static/media/posts/StopBreathe&Think/sbt-banner.jpg" class="portrait">
+</p>
 
 Mindfulness app that helps you stop, breathe and deal with your emotions. With more than 200K active monthly users, it recently appeared on *The Planet of the Apps* show.
 

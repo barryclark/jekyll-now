@@ -64,7 +64,7 @@ header#postHeader a:before {
 
 header#postHeader hgroup {
 	margin-top: 4.29vw;
-	margin-bottom: 4.29vw;
+	margin-bottom: 1vw;
 }
 
 header#postHeader hgroup h1 {
@@ -143,6 +143,14 @@ section#postContentSection li, section#postContentSection li * {
 section#postContentSection p img {
 	margin-top: 0.78vw;
 	margin-bottom: 0.78vw;
+}
+
+section#postContentSection p img.landscape, section#postContentSection p video.landscape{
+	width: 52.24vw;
+}
+
+section#postContentSection p img.portrait, section#postContentSection p video.portrait {
+	height: 52.24vw;
 }
 
 /* Gallery */
