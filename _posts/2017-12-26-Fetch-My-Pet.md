@@ -1,32 +1,47 @@
 ---
 layout: post
 title: Fetch My Pet
-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vestibulum turpis ac porttitor volutpat. Mauris facilisis velit sit amet nulla semper, a ultricies nunc gravida.
-background: index/fetch-postBackground.svg
-featured: false
-roles: [iOS Developer, Creative Technologist]
-order: 2
-published: false
+roles: [iOS Developer]
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vestibulum turpis ac porttitor volutpat. Mauris facilisis velit sit amet nulla semper, a ultricies nunc gravida.
+![](/static/media/posts/FetchMyPet/fetch-banner.jpg)
 
-# Heading 1
+Always keep track of your pet with Fetch My Pet, thanks to its companion bluetooth collar and its geofencing technology.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vestibulum turpis ac porttitor volutpat. Mauris facilisis velit sit amet nulla semper, a ultricies nunc gravida.
+Developed with Swift for iOS 9 and later iPhone devices.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vestibulum turpis ac porttitor volutpat. Mauris facilisis velit sit amet nulla semper, a ultricies nunc gravida.
+# Taking care of pets, together
 
-## Heading 2
+GPS collars are expensive and require their battery drains really quickly. By using Bluetooth beacon technology and geofencing, the app can create a whole network of devices in search of missing pets. 
 
-- Item 1
-- Item 2
-- Item 3
+# Features
 
-1. Item 1
-2. Item 2
-3. Item 3
+- Track when your pet leaves your sight
+- Report a pet as missing, sending an "AMBER" alert like to all the nearby users
+- Track automatically if another user has encountered your pet
 
-### Heading 3
+# Gallery
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vestibulum turpis ac porttitor volutpat. Mauris facilisis velit sit amet nulla semper, a ultricies nunc gravida.
+<div id="postContentGallery">
+	<ul>
+		<li class="portrait">
+			<img src="static/media/posts/FetchMyPet/gallery/fetch-1.jpg">
+		</li>
+		<li class="portrait">
+			<img src="static/media/posts/FetchMyPet/gallery/fetch-2.jpg">
+		</li>
+		<li class="portrait">
+			<img src="static/media/posts/FetchMyPet/gallery/fetch-3.jpg">
+		</li>
+		<li class="portrait">
+			<img src="static/media/posts/FetchMyPet/gallery/fetch-4.jpg">
+		</li>
+		<li class="portrait">
+			<img src="static/media/posts/FetchMyPet/gallery/fetch-5.jpg">
+		</li>
+		<li class="portrait">
+			<img src="static/media/posts/FetchMyPet/gallery/fetch-6.jpg">
+		</li>
+	</ul>
+</div>
+

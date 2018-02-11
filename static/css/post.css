@@ -123,6 +123,10 @@ section#postContentSection p * {
 	width: 100%;
 }
 
+section#postContentSection p a {
+	font-weight: 700;
+}
+
 section#postContentSection ul, section#postContentSection ol {
 	margin-top: 1.56vw;
 	list-style-position: inside;
