@@ -127,6 +127,7 @@ section#postContentSection p img.landscape, section#postContentSection p video.l
 
 section#postContentSection p img.portrait, section#postContentSection p video.portrait {
 	height: 52.24vw;
+	width: auto;
 }
 
 /* Gallery */
