@@ -30,13 +30,13 @@ As the lead developer, I collaborated closely with the UX team for iterating the
 # Videos
 
 <p>
-<video width="100%" controls preload="metadata" poster="/static/img/posts/StopBreathe&ThinkKids/videos/sbtk-1.jpg">
+<video width="100%" controls preload="metadata" poster="/static/media/posts/StopBreathe&ThinkKids/videos/sbtk-1.jpg">
 <source src="/static/media/posts/StopBreathe&ThinkKids/videos/sbtk-1.mp4" type="video/mp4">
 </video>
 </p>
 
 <p>
-<video width="100%" controls preload="metadata" poster="/static/img/posts/StopBreathe&ThinkKids/videos/sbtk-2.jpg">
+<video width="100%" controls preload="metadata" poster="/static/media/posts/StopBreathe&ThinkKids/videos/sbtk-2.jpg">
 <source src="/static/media/posts/StopBreathe&ThinkKids/videos/sbtk-2.mp4" type="video/mp4">
 </video>
 </p>
@@ -46,25 +46,25 @@ As the lead developer, I collaborated closely with the UX team for iterating the
 <div id="postContentGallery">
 	<ul>
 		<li class="landscape">
-			<img src="static/media/posts/StopBreathe&ThinkKids/gallery/sbtk-1.jpg">
+			<img src="/static/media/posts/StopBreathe&ThinkKids/gallery/sbtk-1.jpg">
 		</li>
 		<li class="landscape">
-			<img src="static/media/posts/StopBreathe&ThinkKids/gallery/sbtk-2.jpg">
+			<img src="/static/media/posts/StopBreathe&ThinkKids/gallery/sbtk-2.jpg">
 		</li>
 		<li class="landscape">
-			<img src="static/media/posts/StopBreathe&ThinkKids/gallery/sbtk-3.jpg">
+			<img src="/static/media/posts/StopBreathe&ThinkKids/gallery/sbtk-3.jpg">
 		</li>
 		<li class="landscape">
-			<img src="static/media/posts/StopBreathe&ThinkKids/gallery/sbtk-4.jpg">
+			<img src="/static/media/posts/StopBreathe&ThinkKids/gallery/sbtk-4.jpg">
 		</li>
 		<li class="landscape">
-			<img src="static/media/posts/StopBreathe&ThinkKids/gallery/sbtk-5.jpg">
+			<img src="/static/media/posts/StopBreathe&ThinkKids/gallery/sbtk-5.jpg">
 		</li>
 		<li class="landscape">
-			<img src="static/media/posts/StopBreathe&ThinkKids/gallery/sbtk-6.jpg">
+			<img src="/static/media/posts/StopBreathe&ThinkKids/gallery/sbtk-6.jpg">
 		</li>
 		<li class="landscape">
-			<img src="static/media/posts/StopBreathe&ThinkKids/gallery/sbtk-7.jpg">
+			<img src="/static/media/posts/StopBreathe&ThinkKids/gallery/sbtk-7.jpg">
 		</li>
 	</ul>
 </div>
