@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-I am an aspiring data scientist. I have expertise in mathematics teaching and organizing for social justice. I promise to keep a beginner’s mindset.
+I am an aspiring data scientist. I have expertise in [mathematics teaching](https://evanrushton.blogspot.com/), [learning design](evanrushton.wixsite.com/learndesigntech), and organizing for [social justice](https://www.facebook.com/LosAngelesAlgebraProject/). Keep a beginner’s mindset. Live to learn. Love to teach.
 
 ### More Information
 
