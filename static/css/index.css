@@ -1,0 +1,258 @@
+/* ABOUT */
+section#mainAboutSection {
+	margin-top: 15.82vw;
+}
+
+
+section#mainAboutSection > header{
+	margin-left: 23.45vw;
+}
+
+section#mainAboutSection > header * {
+	font-family: 'LeagueSpartan', sans-serif;
+	font-size: 9.7656vw;
+	color: black;
+	text-transform: uppercase;
+}
+
+section#mainAboutSection > header span {
+	color: white;
+}
+
+section#mainAboutSection article {
+	margin-top: 0.97vw;
+}
+
+section#mainAboutSection article *{
+	font-family: 'Lora', serif;
+	font-size: 1.75vw;
+	color: black;
+	width: 37vw;
+	text-align: center;
+	line-height: 2.54vw;
+}
+
+section#mainAboutSection article strong {
+	font-weight: 700;
+	color: #F55F5F;
+}
+
+section#mainAboutSection article p + p{
+	margin-top: 2.34vw;
+}
+
+section#mainAboutSection article p:first-of-type {
+	margin-left: 28.34vw;
+}
+
+section#mainAboutSection article p:last-of-type {
+	margin-left: 34vw;
+}
+
+/* PROJECTS */
+section#mainProjectsSection {
+	margin-top: 19.14vw;
+	margin-bottom: 12vw;
+}
+
+section#mainProjectsSection > header {
+	margin-top: -5.85vw;
+	padding: 0px 9.96vw;
+}
+
+section#mainProjectsSection > header * {
+	font-family: 'LeagueSpartan', sans-serif;
+	font-size: 6.835vw;
+	text-align: right;
+	color: black;
+	text-transform: uppercase;
+}
+
+section#mainProjectsSection div#projectsDiv {
+	margin-top: 3.71vw;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	padding-left: 8.79vw;
+}
+
+/* PROJECT */
+article.projectsArticle {
+	margin: 0px 1.17vw;
+}
+
+article.projectsArticle > header{
+	position: relative;
+}
+
+article.projectsArticle > header a:before {
+	content: "";
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.5);
+	opacity: 0;
+	-webkit-transition: opacity 0.2s;
+	-o-transition: opacity 0.2s;
+	transition: opacity 0.2s;
+	z-index: 1;
+}
+
+article.projectsArticle > header a:after {
+	position: absolute;
+	top: 50%;
+	left: 0px;
+	width: 100%;
+
+	content: "ENTER";
+	font-family: "LeagueSpartan", sans-serif;
+	font-size: 2.34vw;
+	color: white;
+	text-align: center;
+
+	margin: auto;
+	margin-top: -1vw;
+
+	opacity: 0;
+	-webkit-transition: opacity 0.2s;
+	-o-transition: opacity 0.2s;
+	transition: opacity 0.2s;
+	z-index: 1;
+}
+
+article.projectsArticle > header a:hover:before {
+	opacity: 1.0;
+}
+
+article.projectsArticle > header a:hover:after {
+	opacity: 1.0;
+}
+
+article.projectsArticle > header video, article.projectsArticle > header img {
+	width: 100%;
+	height: 100%;
+	-o-object-fit: cover;
+	   object-fit: cover;
+	-o-object-position: center center;
+	   object-position: center center;
+}
+
+article.projectsArticle > header img {
+	-o-object-position: top center;
+	   object-position: top center;
+}
+
+article.projectsArticle > article {
+	margin-top: 1.17vw;
+}
+
+article.projectsArticle article h1 {
+	font-family: 'LeagueSpartan', sans-serif;
+	font-size: 1.17vw;
+	text-transform: uppercase;
+	padding-bottom: 1.75vw;
+}
+
+/* Thumbnails */
+article.projectsArticle.landscapePhoneBig > header {
+	width: 51.75vw /*530px*/;
+	height: 29.19vw /*298px*/;
+}
+
+article.projectsArticle.landscapePhoneMedium > header {
+	width: 34.37vw /*352px*/;
+	height: 19.33vw /*198px*/;
+}
+
+article.projectsArticle.landscapePhoneSmall > header {
+	width: 21.87vw /*224px*/;
+	height: 12.30vw/*126px*/;
+}
+
+article.projectsArticle.squareBig > header {
+	width: 25.78vw /*264px*/;
+	height: 25.78vw /*264px*/;
+}
+
+article.projectsArticle.squareMedium > header {
+	
+}
+
+article.projectsArticle.squareSmall > header {
+	width: 19.33vw /*198px*/;
+	height: 19.33vw /*198px*/;
+}
+
+article.projectsArticle.portraitPhoneBig > header {
+	width: 21.87vw /*224px*/;
+	height: 38.77vw /*397px*/;
+}
+
+article.projectsArticle.portraitPhoneMedium > header {
+	width: 17.96vw /*184px*/;
+	height: 32.03vw /*328px*/;
+}
+
+article.projectsArticle.portraitPhoneSmall > header {
+	
+}
+
+article.projectsArticle.landscapeTabletBig > header {
+
+}
+
+article.projectsArticle.landscapeTabletMedium > header {
+	width: 25.78vw /*264px*/;
+	height: 19.43vw /*199px*/;
+}
+
+article.projectsArticle.landscapeTabletSmall > header {
+	
+}
+
+article.projectsArticle:nth-of-type(5) {
+	margin-top: -3.32vw;
+	padding-left: 1.7vw;
+}
+
+article.projectsArticle:nth-of-type(7) {
+	margin-top: -12.89vw;
+	padding-left: 0.9vw;
+}
+
+article.projectsArticle:nth-of-type(8) {
+	margin-top: -22.46vw;
+}
+
+article.projectsArticle:nth-of-type(9) {
+	margin-top: -5.86vw;
+	padding-left: 40.1vw;
+}
+
+/* FOOTER */
+footer#mainFooter {
+	padding: 0px 9.96vw;
+	margin-bottom: 2vw;
+	text-align: right;
+	opacity: 0.7;
+}
+
+footer#mainFooter *{
+	font-family: 'Lora',serif;
+	font-size: 1.36vw;
+	color: black;
+	text-decoration: none;
+}
+
+footer#mainFooter p strong {
+	font-weight: 700;
+	color: #F55F5F;
+}
+
+footer#mainFooter p  a strong {
+	color: black;
+}

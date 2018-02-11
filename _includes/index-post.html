@@ -1,0 +1,41 @@
+<article class="projectArticle">
+	<section class="projectArticleTextSection">
+		<header>
+			<a href="{{ site.baseurl }}{{ post.url }}">
+			<h1>{{ include.post.title }}</h1>
+			</a>	
+			<h2>
+				{% for role in include.post.roles %}
+					{{ role }}{% unless forloop.last %}, {% endunless %}
+				{% endfor %}
+			</h2>
+
+		</header>
+
+		<article>
+			<p>
+				{{ include.post.description }}
+			</p>
+
+			{% if include.post.description2 %}
+				<p>
+					{{ include.post.description2 }}
+				</p>
+			{% endif %}
+		</article>
+
+		<footer>
+			<a href="{{ site.baseurl }}{{ post.url }}">
+				See More
+			</a>
+		</footer>
+	</section>
+	<section class="projectArticlePictureSection">
+		<picture>
+			{% if include.post.background %}
+				<img src="/static/img/{{ include.post.background }}">
+			{% endif %}
+		</picture>
+
+	</section>
+</article>

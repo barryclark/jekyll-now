@@ -1,0 +1,187 @@
+/* FONTS */
+@font-face {
+	font-family: "Aleo";
+	font-weight: normal;
+	font-style: italic;
+	src: url("../resources/fonts/aleo/Aleo-Italic.otf");
+}
+
+@font-face {
+	font-family: "Aleo";
+	font-weight: bold;
+	font-style: normal;
+	src: url("../resources/fonts/aleo/Aleo-Bold.otf");
+}
+
+@font-face {
+	font-family: "Aleo";
+	font-weight: bold;
+	font-style: italic;
+	src: url("../resources/fonts/aleo/Aleo-BoldItalic.otf");
+}
+/* POST */
+article#mainPostArticle {
+	width: 100%;
+	text-align: left;
+	margin-bottom: 9.96vw;
+}
+
+article#mainPostArticle > *{
+	width: 100%;
+}
+
+header#postHeader, section#postContentSection {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-align: left;
+	    -ms-flex-align: left;
+	        align-items: left;
+}
+
+/*Header*/
+header#postHeader {
+	margin-top: 11.03vw;
+	width: 37.10vw;
+	margin-left: 9.96vw;
+}
+
+header#postHeader a,  header#postHeader a *{
+	font-family: "Lora", serif;
+	font-weight: normal;
+	font-size: 1.757vw;
+	text-decoration: none;
+	text-align: left;
+}
+
+header#postHeader a:before {
+	content: "← ";
+}
+
+header#postHeader hgroup {
+	margin-top: 4.29vw;
+	margin-bottom: 4.29vw;
+}
+
+header#postHeader hgroup h1 {
+	font-family: "LeagueSpartan", sans-serif;
+	font-weight: bold;
+	font-size: 3.71vw;
+	text-transform: uppercase;
+}
+
+header#postHeader hgroup h2 {
+	margin-top: 0.39vw;
+	font-family: "Lora", serif;
+	font-weight: normal;
+	font-size: 1.757vw;
+}
+
+/*Content*/
+section#postContentSection{
+	width: 100%;
+}
+
+section#postContentSection > * {
+	width: 52.24vw;
+	margin-left: 9.96vw;
+}
+
+section#postContentSection h1 {
+	margin-top: 4.68vw;
+	font-family: "LeagueSpartan", sans-serif;
+	font-weight: bold;
+	font-size: 2.929vw;
+}
+
+section#postContentSection h2 {
+	margin-top: 2.34vw;
+	font-family: "Aleo", serif;
+	font-weight: bold;
+	font-size: 2.34vw;
+}
+
+section#postContentSection h3 {
+	margin-top: 2.34vw;
+	font-family: "Aleo", serif;
+	font-weight: bold;
+	font-size: 1.56vw;/*16px*/
+}
+
+section#postContentSection p, section#postContentSection p * {
+	margin-top: 1.56vw;
+	font-family: "Aleo", serif;
+	font-size: 1.56vw;/*16px*/
+	line-height: 2.53vw;
+}
+
+section#postContentSection p * {
+	width: 100%;
+}
+
+section#postContentSection p a {
+	font-weight: 700;
+}
+
+section#postContentSection ul, section#postContentSection ol {
+	margin-top: 1.56vw;
+	list-style-position: inside;
+}
+
+section#postContentSection li, section#postContentSection li * {
+	font-family: "Aleo", serif;
+	font-weight: normal;
+	font-size: 1.56vw;/*16px*/
+	line-height: 2.53vw;
+}
+
+section#postContentSection p img {
+	margin-top: 0.78vw;
+	margin-bottom: 0.78vw;
+}
+
+/* Gallery */
+div#postContentGallery {
+	width: 100%;
+	margin-top: 2.34vw;
+	margin-left: 0px;
+}
+
+div#postContentGallery ul{
+	width: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	list-style: none;
+	-ms-flex-wrap: nowrap;
+	    flex-wrap: nowrap;
+	overflow: auto;
+}
+
+div#postContentGallery ul li:first-of-type {
+	margin-left: 9.96vw;
+}
+
+div#postContentGallery ul li + li {
+	margin-left: 2.34vw;
+}
+
+div#postContentGallery ul li:last-of-type {
+	padding-right: 9.96vw;
+}
+
+div#postContentGallery ul li.landscape img{
+	width: 52.24vw;
+}
+
+div#postContentGallery ul li.portrait img{
+	height: 52.24vw;
+}

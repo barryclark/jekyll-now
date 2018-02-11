@@ -1,51 +1,46 @@
 <!DOCTYPE html>
+
 <html>
-  <head>
-    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+<head>
+  {% include meta.html %}
+  <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }}</title>
+  <link rel="stylesheet" type="text/css" href="/static/css/global.css">
+  <link rel="stylesheet" type="text/css" href="/static/css/index.css">
+  <link rel="stylesheet" type="text/css" href="/static/css/post.css">
+</head>
 
-    {% include meta.html %}
+<body>
+  <nav id="bodyNav">
+    <section id="navLogo">
+      <a href="/">
+        <span>Diego</span>
+        <span>Cruz</span>
+      </a>
+    </section>
 
-    <!--[if lt IE 9]>
-      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    <section id="navMenu">
+      <ul>
+        <li>
+          <a href="mailto:diego.cruz@icloud.com?subject=Hi there!">
+            <img src="/static/media/global/mailIcon.svg">
+          </a>
+        </li>
+        <li>
+          <a href="https://www.github.com/cruzdiego?tab=repositories" target="_blank">
+            <img src="/static/media/global/githubIcon.svg">
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/diegocruzc" target="_blank">
+            <img src="/static/media/global/linkedInIcon.svg">
+          </a>
+        </li>
+      </ul>
+    </section>
+  </nav>
 
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
-    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
-
-    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
-  </head>
-
-  <body>
-    <div class="wrapper-masthead">
-      <div class="container">
-        <header class="masthead clearfix">
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
-
-          <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-            <p class="site-description">{{ site.description }}</p>
-          </div>
-
-          <nav>
-            <a href="{{ site.baseurl }}/">Blog</a>
-            <a href="{{ site.baseurl }}/about">About</a>
-          </nav>
-        </header>
-      </div>
-    </div>
-
-    <div id="main" role="main" class="container">
-      {{ content }}
-    </div>
-
-    <div class="wrapper-footer">
-      <div class="container">
-        <footer class="footer">
-          {% include svg-icons.html %}
-        </footer>
-      </div>
-    </div>
-
-    {% include analytics.html %}
-  </body>
+  <main id="bodyMain">
+    {{ content }}
+  </main>
+</body>
 </html>
