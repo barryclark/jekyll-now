@@ -7,7 +7,7 @@
 <div class="comment-metadata">
   <a href="#comment-{{ include.comment.date }}">
     <time datetime="{{ include.comment.date | date_to_xmlschema }}">
-      {{ include.comment.date | date: '%B %d, %Y %r' }}
+      {{ include.comment.date | date: '%B %d, %Y %I:%M %p' }}
     </time>
   </a>
 </div>
