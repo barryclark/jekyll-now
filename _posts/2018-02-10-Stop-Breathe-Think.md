@@ -26,22 +26,22 @@ Initially born as a non-profit, the app stands firmly on its roots as a user-fir
 <div id="postContentGallery">
 	<ul>
 		<li class="portrait">
-			<img src="static/media/posts/StopBreathe&Think/gallery/sbt-1.jpg">
+			<img src="/static/media/posts/StopBreathe&Think/gallery/sbt-1.jpg">
 		</li>
 		<li class="portrait">
-			<img src="static/media/posts/StopBreathe&Think/gallery/sbt-2.jpg">
+			<img src="/static/media/posts/StopBreathe&Think/gallery/sbt-2.jpg">
 		</li>
 		<li class="portrait">
-			<img src="static/media/posts/StopBreathe&Think/gallery/sbt-3.jpg">
+			<img src="/static/media/posts/StopBreathe&Think/gallery/sbt-3.jpg">
 		</li>
 		<li class="portrait">
-			<img src="static/media/posts/StopBreathe&Think/gallery/sbt-4.jpg">
+			<img src="/static/media/posts/StopBreathe&Think/gallery/sbt-4.jpg">
 		</li>
 		<li class="portrait">
-			<img src="static/media/posts/StopBreathe&Think/gallery/sbt-5.jpg">
+			<img src="/static/media/posts/StopBreathe&Think/gallery/sbt-5.jpg">
 		</li>
 		<li class="portrait">
-			<img src="static/media/posts/StopBreathe&Think/gallery/sbt-6.jpg">
+			<img src="/static/media/posts/StopBreathe&Think/gallery/sbt-6.jpg">
 		</li>
 	</ul>
 </div>

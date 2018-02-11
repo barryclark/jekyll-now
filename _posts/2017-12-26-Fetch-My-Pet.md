@@ -25,22 +25,22 @@ GPS collars are expensive and require their battery drains really quickly. By us
 <div id="postContentGallery">
 	<ul>
 		<li class="portrait">
-			<img src="static/media/posts/FetchMyPet/gallery/fetch-1.jpg">
+			<img src="/static/media/posts/FetchMyPet/gallery/fetch-1.jpg">
 		</li>
 		<li class="portrait">
-			<img src="static/media/posts/FetchMyPet/gallery/fetch-2.jpg">
+			<img src="/static/media/posts/FetchMyPet/gallery/fetch-2.jpg">
 		</li>
 		<li class="portrait">
-			<img src="static/media/posts/FetchMyPet/gallery/fetch-3.jpg">
+			<img src="/static/media/posts/FetchMyPet/gallery/fetch-3.jpg">
 		</li>
 		<li class="portrait">
-			<img src="static/media/posts/FetchMyPet/gallery/fetch-4.jpg">
+			<img src="/static/media/posts/FetchMyPet/gallery/fetch-4.jpg">
 		</li>
 		<li class="portrait">
-			<img src="static/media/posts/FetchMyPet/gallery/fetch-5.jpg">
+			<img src="/static/media/posts/FetchMyPet/gallery/fetch-5.jpg">
 		</li>
 		<li class="portrait">
-			<img src="static/media/posts/FetchMyPet/gallery/fetch-6.jpg">
+			<img src="/static/media/posts/FetchMyPet/gallery/fetch-6.jpg">
 		</li>
 	</ul>
 </div>

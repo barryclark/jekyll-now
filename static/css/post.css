@@ -95,7 +95,8 @@ section#postContentSection h1 {
 	margin-top: 4.68vw;
 	font-family: "LeagueSpartan", sans-serif;
 	font-weight: bold;
-	font-size: 2.929vw;
+	font-size: 1.95vw;
+	text-transform: uppercase;
 }
 
 section#postContentSection h2 {
