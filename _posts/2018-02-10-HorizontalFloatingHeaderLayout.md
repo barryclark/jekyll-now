@@ -29,5 +29,5 @@ For a complete control over the scrolling performance, I decided to make it a UI
 
 # Link
 
-Avaiable on Github: (https://github.com/cruzdiego/HorizontalFloatingHeaderLayout)
+Avaiable on Github: [https://github.com/cruzdiego/HorizontalFloatingHeaderLayout](https://github.com/cruzdiego/HorizontalFloatingHeaderLayout)
 
