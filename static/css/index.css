@@ -87,6 +87,13 @@ article.projectsArticle > header{
 	position: relative;
 }
 
+article.projectsArticle > header a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
 article.projectsArticle > header a:before {
 	content: "";
 	position: absolute;

@@ -99,10 +99,6 @@ section#postContentSection p, section#postContentSection p * {
 	line-height: 2.53vw;
 }
 
-section#postContentSection p * {
-	width: 100%;
-}
-
 section#postContentSection p a {
 	font-weight: 700;
 }
@@ -113,7 +109,7 @@ section#postContentSection ul, section#postContentSection ol {
 }
 
 section#postContentSection li, section#postContentSection li * {
-	font-family: "Alora", serif;
+	font-family: "Lora", serif;
 	font-weight: normal;
 	font-size: 1.56vw;/*16px*/
 	line-height: 2.53vw;
@@ -122,6 +118,7 @@ section#postContentSection li, section#postContentSection li * {
 section#postContentSection p img {
 	margin-top: 0.78vw;
 	margin-bottom: 0.78vw;
+	width: 100%;
 }
 
 section#postContentSection p img.landscape, section#postContentSection p video.landscape{
