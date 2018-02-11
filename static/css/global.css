@@ -5,13 +5,6 @@
 	src: url("../resources/fonts/league-spartan/LeagueSpartan-Bold.otf");
 }
 
-@font-face {
-	font-family: "Aleo";
-	font-weight: normal;
-	font-style: normal;
-	src: url("../resources/fonts/aleo/Aleo-Regular.otf");
-}
-
 /* GENERAL */
 * {
 	margin: 0px;
@@ -31,41 +24,25 @@ html,body {
 	-webkit-text-size-adjust: none;
 }
 
-@media (max-width: 319px) {
-	html,body {
-		overflow-x: auto;
-	}
-}
-
 body {
-	background: white;
+	background: url(../media/global/headerBG.svg) top center no-repeat;
+	background-size: 100% auto;
+	background-color: white;
 }
 
 /* BODY NAV */
 nav#bodyNav {
+	position: absolute;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
 	width: 100%;
-	padding: 0px 11.72vw;
-}
-
-@media (max-width: 760px) {
-	nav#bodyNav {
-		padding: 0px 5vw;
-	}
+	padding: 0px 9.96vw;
 }
 
 section#navLogo {
-	padding: 24px 0px;
-	padding-bottom: 18px;
-}
-
-@media (max-width: 760px) {
-	section#navLogo {
-		padding: 16px 0px;
-		padding-bottom: 8px;
-	}
+	padding: 2.34vw 0px;
+	padding-bottom: 1.75vw;
 }
 
 section#navLogo a {
@@ -75,16 +52,10 @@ section#navLogo a {
 section#navLogo a span {
 	font-family: "LeagueSpartan", sans-serif;
 	font-weight: bold;
-	font-size: 28px;
+	font-size: 2.73vw;
 	color: black;
 	text-transform: uppercase;
 	margin-bottom: -22%;
-}
-
-@media (max-width: 760px) {
-	section#navLogo a span {
-		font-size: 24px;
-	}
 }
 
 section#navLogo a span:last-of-type {
@@ -121,17 +92,11 @@ section#navMenu li {
 section#navMenu li a{
 	display: block;
 	margin: auto;
-	margin-left: 24px;
+	margin-left: 2.34vw;
 }
 
-@media (max-width: 760px) {
-	section#navMenu li a {
-		margin-left: 12px;
-	}
-
-	section#navMenu li a img {
-		height: 20px;
-	}
+section#navMenu li a img {
+	height: 2.44vw;
 }
 
 /* BODY MAIN */
