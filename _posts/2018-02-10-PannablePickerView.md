@@ -43,5 +43,5 @@ One of my main goals was keeping the component as self contained as possible, wi
 
 # Link
 
-Avaiable on Github: (https://github.com/cruzdiego/PannablePickerView)
+Avaiable on Github: [https://github.com/cruzdiego/PannablePickerView](https://github.com/cruzdiego/PannablePickerView)
 
