@@ -9,7 +9,7 @@ csses: [/css/election2016.css]
 
 I've noticed that on my social media feeds a lot of people are deeply upset that Donald Trump was elected President. Well, technically, he hasn't been elected yet. The [Electoral College](https://en.wikipedia.org/wiki/Electoral_College_%28United_States%29) will [meet on Monday, December 12th, 2016 in their respective state capitals](https://en.wikipedia.org/wiki/Electoral_College_%28United_States%29#Meetings) to cast their votes, but it's highly unlikely anyone will be a [faithless elector](https://en.wikipedia.org/wiki/Faithless_elector).
 
-One of the biggest claims is that people [voting third party](http://hendrixjoseph.github.io/vote_third_party/) cost Clinton the election. Is this really true? Let's look at some numbers for four different scenarios, and then I'll say whether it's true or not.
+One of the biggest claims is that people voting third party cost Clinton the election. Is this really true? Let's look at some numbers for four different scenarios, and then I'll say whether it's true or not.
 
 *Note: I got these numbers from [a Google search on November 10, 2016](https://www.google.com/search?q=electorial+college). [You can see my spreadsheet here.](/xlxs/election2016.xlsx
 )*
