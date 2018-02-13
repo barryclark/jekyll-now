@@ -41,7 +41,7 @@ These are the top ten tweets I made (not retweets) based on [Twitter's analytics
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">I&#39;d Rather Be <a href="https://twitter.com/hashtag/Camping?src=hash">#Camping</a> T-Shirt <a href="https://t.co/SEA1wRsJVV">https://t.co/SEA1wRsJVV</a></p>&mdash; Joseph Hendrix (@JoesGitHubBlog) <a href="https://twitter.com/JoesGitHubBlog/status/854711886637617152">April 19, 2017</a></blockquote>
 
-*Yet another [Amazon shirt](http://hendrixjoseph.github.io/i-m-selling-t-shirts-on-amazon-now/).*
+*Yet another [Amazon shirt](http://hendrixjoseph.github.io/t-shirts/).*
 
 ### 7. 228 impressions and 2 engagements
 
