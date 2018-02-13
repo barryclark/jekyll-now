@@ -28,7 +28,7 @@ Various articles such as [this one on superuser.com](http://superuser.com/questi
 
 Curious, I plugged her laptop into the router directly with an ethernet cable. The laptop now had access to the Internet. Now, some laptops have a physical switch that turns WiFi on and off, and I though she may have bumped it - I looked, and her laptop did not have such a switch.
 
-I searched for the second error message (the "No operation can be performed on Local Area Connection while it has its media disconnected.") and came across [this thread on SuperUser.com](http://superuser.com/questions/1155769/windows-10-local-area-connection-media-disconnected), which suggested the following command, again as administrator in the command prompt:
+I searched for the second error message (the "No operation can be performed on Local Area Connection while it has its media disconnected.") and came across [this thread on SuperUser.com](https://web.archive.org/web/20170129183230/https://superuser.com/questions/1155769/windows-10-local-area-connection-media-disconnected), which suggested the following command, again as administrator in the command prompt:
 
 {% highlight shell %}
 netsh int ip reset
