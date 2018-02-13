@@ -130,3 +130,19 @@ print("Breadth First search order:" + str(breadthSearch(deque([test]),[])))
 ```
 
 ### Commit the new changes
+
+
+```python
+git branch feature/algorithms
+git checkout feature/algorithms
+git add .
+git commit -m "Adding the search algorithms"
+git push --set-upstream origin feature/algorithms
+```
+Now we will create a pull request from the GitHub repository
+
+1. Go to the project in Github
+2. Select branches
+3. Select the branch that you have been working on
+4. click on create pull request
+5. Accept pull request (OPTIONAL since you might not have the privileges to make pull requests to this branch)
