@@ -18,7 +18,7 @@ This is just some general information and links about the issues in Ohio, or, mo
 
 * [This issue on ballotpedia.org](http://ballotpedia.org/Ohio_Bipartisan_Redistricting_Commission_Amendment,_Issue_1_%282015%29)
 * [Libertarian Party of Ohio says no](https://web.archive.org/web/20160410211854/https://www.lpo.org/elections/state-ballot-issues/701-lpo-recommends-no-vote-on-ballot-issue-1)
-* [Ohio Green Party says yes](http://www.ohiogreens.org/story/green-party-ohio-announces-recommendations-ohio-statewide-ballot-issues)
+* [Ohio Green Party says yes](https://web.archive.org/web/20151007041244/http://www.ohiogreens.org/story/green-party-ohio-announces-recommendations-ohio-statewide-ballot-issues)
 
 #### Issue 2 : Proposal to prohibit any petitioner from using the Ohio Constitution to grant a monopoly, oligopoly, or cartel
 
@@ -69,7 +69,7 @@ A "[mill](https://en.wikipedia.org/wiki/Mill_%28currency%29)" is a thousandth of
   * [Bellbrook UMC pdf on him](https://web.archive.org/web/20130725005019/http://bellbrookumc.org/docs/church/darryl_fairchild.pdf)
 * Matt Joseph
   * [Campaign website](http://www.mattjoseph.com)
-  * [My Store: Matt Joseph](http://www.welcomedayton.org/my-story-matt-joseph)
+  * [My Story: Matt Joseph](http://www.welcomedayton.org/my-story-matt-joseph)
   * [City of Dayton Web Page](https://web.archive.org/web/20151103093311/http://www.cityofdayton.org/cco/Pages/CommissionerMattJoseph.aspx)
 * Chris Shaw
   * [Campaign website](http://chrisshawfordayton.com)
@@ -83,7 +83,7 @@ A "[mill](https://en.wikipedia.org/wiki/Mill_%28currency%29)" is a thousandth of
   * [NCCJ of Greater Dayton bio](http://www.nccjgreaterdayton.org/dr-robert-c-walker-bio) 
   * [Facebook page](https://www.facebook.com/WalkerForDaytonPublicSchools)
 * John McManus
-  * [Campaign website](http://www.johnmcmanusfordayton.com)
+  * [Campaign website](https://web.archive.org/web/20151213232446/http://www.johnmcmanusfordayton.com/)
 * Nancy Nerny
   * [Someone's blog post on her from 2007](https://leftofdayton.wordpress.com/2007/10/29/nancy-nerny-for-dayton-school-board)
 * Sheila Taylor
