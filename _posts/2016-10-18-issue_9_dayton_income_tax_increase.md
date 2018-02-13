@@ -15,7 +15,7 @@ Dayton voters will see the following wording for what is Issue 9 on their ballot
 
 How much will this cost the average worker? It's pretty simple math, but here's a couple quotes from various sources:
 
-## [OpportunityForAllDayton.com FAQ](http://www.opportunityforalldayton.com/faq)
+## [OpportunityForAllDayton.com FAQ](https://web.archive.org/web/20170726131053/http://opportunityforalldayton.com/)
 
 > The ¼% would result in an average investment of $1.60 per week for someone earning $35,000 a year. 
 
