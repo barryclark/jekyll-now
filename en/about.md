@@ -6,25 +6,24 @@ title: About us and our project
 ref: about
 ---
 
-What is a Cansat?
+What is a CanSat?
 --------------------
-
-A Cansat is a capsule the size of a standard soda can. Using a small rocket
+A CanSat is a capsule the size of a standard soda can. Using a small rocket
 it is launched to a height of about 1000m and then glides back down on a parachute.
-The sensors on bord provide various data about the environment, such as temperature, pressure, position and  more.
+The sensors on bord provide various data about the environment, such as temperature, pressure, position and more.
 This data is either transmitted in real time to a ground station or stored in the capsule and collected after
 the landing.
 
-More information about the challenge can be found on the official Cansat 2018 competition website
+More information about the challenge can be found on the official CanSat 2018 competition website
 at [cansat.de](https://cansat.de).
 
 
 About us
 ---------------
 We are the team Apoapsis from Vaterstetten. Our group consists of
-Niklas Cölle, Thomas Schlienz, Leon Hauser and Felix Edelmann, and we all attend the 11th grade of the
-Humboldt-Gymnasiums Vaterstetten.
-With our CanSat we want to measure the fine dust concentration of the atmosphere in higher air layers.
-The collected data will be added to a public database which will soon be added to this website.
+Niklas Cölle, Leon Hauser, Thomas Schlienz, Henrik Böving and Felix Edelmann, and we all attend the 11th grade of the
+Humboldt-Gymnasium Vaterstetten.
+With our CanSat, we want to measure the fine dust concentration of the atmosphere in higher air layers.
+The collected data will be added to a public database which will be added to this website.
 
-We were mainly inspired by the project [luftdaten.info](http://luftdaten.info) of the OK Lab Stuttgart, which collects the measurements of public accessible fine dust sensors in real time and displays them on a public available map.
+We were inspired by the project [luftdaten.info](http://luftdaten.info) of the OK Lab Stuttgart, which collects the measurements of public accessible fine dust sensors in real time and displays them on a public available map.
