@@ -1,7 +1,8 @@
 ---
-layout: post
-title: About us and our project
+layout: page
+permalink: /en/about/
 lang: EN
+title: About us and our project
 ref: about
 ---
 

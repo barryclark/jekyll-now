@@ -1,8 +1,8 @@
 ---
 layout: page
-permalink: /en/team/
-lang: EN
-title: The Team
+permalink: /team/
+lang: DE
+title: Das Team
 ref: team
 ---
 
@@ -12,4 +12,4 @@ ref: team
 * Henrik Böving
 * Felix Edelmann
 
-_Detailed presentations are coming soon_
+_Detaillierte Vorstellungen folgen bald_
