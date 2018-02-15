@@ -276,9 +276,15 @@ nav {
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
   background-color: $lightGray;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
+	
+    width: 100%; // Don't change
+    background-image: none;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-position: 0% 0%;
+    position: fixed;
+    bottom: 0pt;
+    left: 0pt;
 }
 
 footer {
