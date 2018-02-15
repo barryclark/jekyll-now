@@ -4,20 +4,17 @@ permalink: /en/
 lang: EN
 ref: index
 ---
-
 <div>
-  <h1>Newest blog posts</h1>
+{% assign posts=site.posts | where:"lang", page.lang %}
+{% for post in posts %}
+  <article class="post">
+    <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
 
-  {% assign posts=site.posts | where:"lang", page.lang %}
-  {% for post in posts %}
-    <article class="post">
-      <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> <span class="meta">{{ post.date | date: "%d/%b/%Y" }}</span></h2>
+    <div class="entry">
+      {{ post.excerpt }}
+    </div>
 
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
-
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read more</a>
-    </article>
-  {% endfor %}
+    <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read more</a>
+  </article>
+{% endfor %}
 </div>
