@@ -20,7 +20,7 @@ I did not want the availability of the database to compromise the functionality 
 ### Python Script Modifications and Issues
 * After each retweet, I call a new `saveTweetJsonToFile` function. This is wrapped in a try..catch block.
 * I get latest daily file name, based on today's date. This is created if it does not already exist.
-~~~python
+~~~ python
 fileName = os.path.join(sys.path[0],'export','tweet_data_{0}.json'.format(getDailyFileName()))
 
 def getDailyFileName():
