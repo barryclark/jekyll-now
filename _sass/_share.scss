@@ -71,7 +71,7 @@ a:hover {
 
 .mobile-hide {
 	@include mobile {
-		display: none;
+		display: none !important;
 	}
 }
 
