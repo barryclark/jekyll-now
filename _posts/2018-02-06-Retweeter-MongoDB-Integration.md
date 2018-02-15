@@ -1,3 +1,8 @@
+---
+layout: post
+title: How to integrate MongoDB with a Python TwitterBot
+---
+
 # Introduction
 I was looking for a practical project to help me learn MongoDB. I realised that the ideal data source already existed in my Python ReTweeter project ([FurzedownTweets](https://github.com/JosephTech/ReTweeter)). The basic Tweet object exposed using JSON by the [Twitter API](https://developer.twitter.com/en/docs/tweets/data-dictionary/overview/tweet-object) is a great example of the sort of hierarchical document which MongoDB is designed to handle. 
 
