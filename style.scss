@@ -28,7 +28,6 @@ body {
   max-width: 740px;
   padding: 0 10px;
   width: 100%;
-  margin-bottom: 139px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -277,15 +276,6 @@ nav {
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
   background-color: $lightGray;
-	
-    width: 100%; // Don't change
-    background-image: none;
-    background-repeat: repeat;
-    background-attachment: scroll;
-    background-position: 0% 0%;
-    position: fixed;
-    bottom: 0pt;
-    left: 0pt;
 }
 
 footer {
