@@ -6,7 +6,7 @@
 name: Julian Joseph
 
 # Short bio or description (displayed in the header)
-description: Web Developer from Somewhere
+description: .NET Developer based in London
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
@@ -23,7 +23,7 @@ footer-links:
   flickr:
   github: josephtech/
   instagram:
-  linkedin: linkedin.com/in/julianjoseph/
+  linkedin: julianjoseph
   pinterest:
   rss: # just type anything here for a working RSS icon
   twitter: julesjoseph
