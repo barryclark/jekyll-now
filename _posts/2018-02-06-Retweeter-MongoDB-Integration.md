@@ -1,5 +1,5 @@
 # Introduction
-I was looking for a practical project to help me learn MongoDB. I realised that the ideal data source already existed in my Python ReTweeter project (FurzedownTweets). The basic Tweet object exposed using JSON by the [Twitter API](https://developer.twitter.com/en/docs/tweets/data-dictionary/overview/tweet-object) is a great example of the sort of hierarchical document which MongoDB is designed to handle. 
+I was looking for a practical project to help me learn MongoDB. I realised that the ideal data source already existed in my Python ReTweeter project ([FurzedownTweets](https://github.com/JosephTech/ReTweeter)). The basic Tweet object exposed using JSON by the [Twitter API](https://developer.twitter.com/en/docs/tweets/data-dictionary/overview/tweet-object) is a great example of the sort of hierarchical document which MongoDB is designed to handle. 
 
 # Libraries Used
 * [Tweepy](http://www.tweepy.org/)
@@ -83,5 +83,5 @@ I now have a text file for each day, containing all the data relating to statuse
 ## Conclusion
 I now have a daily batch process, (run via a cron job) which processes my daily json file and uploads it to my MongoDB database. This has given me, though obviously not big data, a reasonable base from which to experiment with MongoDB querying, aggregation and map/reduce.
 
-It's also expanded my Python knowledge in having to overcome various issues as described above - and, as an added bonus,  I've learnt the basics of [MarkDown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) Next step is to create some web pages which will show analyses of the data being recorded by FurzedownTweets - who knows, it may be useful to someone!
+It's also expanded my Python knowledge in having to overcome various issues as described above - and, as an added bonus,  I've learnt the basics of [MarkDown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) Next step is to create some web pages which will show analyses of the data being recorded by [FurzedownTweets](https://twitter.com/furzedowntweets) - who knows, it may be useful to someone!
 
