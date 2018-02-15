@@ -31,13 +31,9 @@
 	display: none;	
 }
 
-a:hover {
-	.fa {
-		display: none;	
-	}
-	
+a:hover {	
 	.full-name {
-		display: inherit;
+		display: inline-block;
 	}
 }
 
