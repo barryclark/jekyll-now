@@ -168,6 +168,7 @@ img {
   width: 70px;
   height: 70px;
   margin-right: 15px;
+  vertical-align: bottom;
 
   @include mobile {
     float: none;
