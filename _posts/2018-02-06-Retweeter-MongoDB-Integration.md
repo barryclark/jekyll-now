@@ -21,13 +21,13 @@ I did not want the availability of the database to compromise the functionality 
 * After each retweet, I call a new `saveTweetJsonToFile` function. This is wrapped in a try..catch block.
 * I get latest daily file name, based on today's date. This is created if it does not already exist.
 
-{% highlight python linenos %}
+```python
     fileName = os.path.join(sys.path[0],'export','tweet_data_{0}.json'.format(getDailyFileName()))
 
     def getDailyFileName():
     ## dd/mm/yyyy format
     return time.strftime("%Y%m%d")
-{% endhighlight %}
+```
 
 * The Twitter API I am using (Tweepy) exposes a status object which represents all the data relating to a given Tweet. It is not [JSON serializable](https://stackoverflow.com/questions/27900451/convert-tweepy-status-object-into-json), but it does have a `_json` property which can be extracted using the Python `json.dumps` function.
 
