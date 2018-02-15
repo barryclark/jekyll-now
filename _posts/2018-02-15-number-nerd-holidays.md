@@ -27,6 +27,8 @@ July 22 | Pi Day 2
 October 23 | Mole Day
 November 23 | Fibonacci Day
 
-I just created a shirt for Phi Day. I could also easily make one for Tau day as well, but I need enough digits to make the design.
+I just created [a shirt for Phi Day](https://www.amazon.com/dp/B079V4CW4B/?tag=hendrixjoseph-20). I could also easily make one for Tau day as well, but I need enough digits to make the design.
+
+{% include amazon/native-ad.html title="Phi (Golden Ratio) T-Shirt" asin="B079V4CW4B,B079V5L6GD" %}
 
 Do you see any days I missed?
