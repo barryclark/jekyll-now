@@ -21,9 +21,9 @@ This was a fun event held in London on Feb 8, 2018, with myself moderating an ev
 
 I greatly enjoyed hearing the teams discuss the complexity, tooling, integration with existing systems, security, diagnostics and upgrading of their chosen container management platforms.
 
-The surprise winner of the audience vote was Rancher, given the visibility and community traction of Kubernetes. However Shannon Williams did a excellent job sharing the motivations and vision behind Rancher, which won the audience over.
-
 ![The Great Container Management Debate]({{site.baseurl}}/images/2018-2-8-pic3.png)
+
+The surprise winner of the audience vote was Rancher, given the visibility and community traction of Kubernetes. However Shannon Williams did a excellent job sharing the motivations and vision behind Rancher, which won the audience over.
 
 Congratulations to all the teams, and thanks to the organizers and sponsors!
 
