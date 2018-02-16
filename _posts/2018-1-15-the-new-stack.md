@@ -3,7 +3,9 @@ layout: post
 title: "[Article] [Jan 2018] The 8 Principles of Cloud Native Storage - The New Stack"
 ---
 
-My article was published in The New Stack: [A key challenge in managing storage is dealing with persistence — a problem that affects developers, system administrators, operations and DevOps throughout organizations.](https://thenewstack.io/achieve-persistent-storage-kubernetes-production)
+![The New Stack](https://media.licdn.com/media/AAEAAQAAAAAAAAKcAAAAJGY4NzYyMWFjLTAyZmMtNGRhYS1hNDMxLTBiM2JmZDA2NmNhYw.png)
+
+My article was published in The New Stack on 15 Jan 2018: [A key challenge in managing storage is dealing with persistence — a problem that affects developers, system administrators, operations and DevOps throughout organizations.](https://thenewstack.io/achieve-persistent-storage-kubernetes-production)
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">8 Principles of Cloud Native Storage:<br>1. application-centric<br>2. platform agnostic<br>3. declared and composed<br>4. API-driven<br>5. natively secure<br>6. agile<br>7. performant<br>8. consistently available<br>by <a href="https://twitter.com/oicheryl?ref_src=twsrc%5Etfw">@oicheryl</a> on <a href="https://twitter.com/thenewstack?ref_src=twsrc%5Etfw">@thenewstack</a> <a href="https://t.co/VFSD1CxsK0">https://t.co/VFSD1CxsK0</a></p>&mdash; Lawrence Hecht (@LawrenceHecht) <a href="https://twitter.com/LawrenceHecht/status/957924784322568193?ref_src=twsrc%5Etfw">January 29, 2018</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
