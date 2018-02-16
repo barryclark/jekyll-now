@@ -7,15 +7,15 @@ title: "[Photos] [Feb 2018] The Great Container Management Debate"
 
 This was a fun event held on Feb 8, 2018, with myself moderating an evening debate between four teams. Each team consisted of one advocate and one customer.
 
-**KUBERNETES:** Luke Bond, Home Office; Ben Hall, Founder of Katacoda
+-**KUBERNETES:** Luke Bond, Home Office; Ben Hall, Founder of Katacoda
 
-**MESOSPHERE:** Darren Davison, Technical Authority for Capita Employee Benefits; Joerg Schad, Technical Lead Community Projects Mesosphere Inc
+-**MESOSPHERE:** Darren Davison, Technical Authority for Capita Employee Benefits; Joerg Schad, Technical Lead Community Projects Mesosphere Inc
 
-**HASHICORP NOMAD:** Nic Jackson, HashiCorp Engineer; James Rasell, Principal Systems Engineer, Elsevier
+-**HASHICORP NOMAD:** Nic Jackson, HashiCorp Engineer; James Rasell, Principal Systems Engineer, Elsevier
 
-**RANCHER:** Shannon Williams, Rancher Co-Founder; Tom Bamford, Platform Engineering Lead, Buildit@Wipro Digital
+-**RANCHER:** Shannon Williams, Rancher Co-Founder; Tom Bamford, Platform Engineering Lead, Buildit@Wipro Digital
 
-**Moderators:** Cheryl Hung, StorageOS; James Betteley, Contino
+-**Moderators:** Cheryl Hung, StorageOS; James Betteley, Contino
 
 ![The Great Container Management Debate]({{site.baseurl}}/images/2018-2-8-pic2.jpg)
 
