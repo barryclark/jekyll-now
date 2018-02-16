@@ -5,7 +5,7 @@ title: "[Photos] [Feb 2018] The Great Container Management Debate"
 
 ![The Great Container Management Debate]({{site.baseurl}}/images/2018-2-8-pic1.jpg)
 
-This was a fun event held on Feb 8, 2018, with myself moderating an evening debate between four teams. Each team consisted of one advocate and one customer.
+This was a fun event held in London on Feb 8, 2018, with myself moderating an evening debate between four teams. Each team consisted of one advocate and one customer.
 
 -**KUBERNETES:** Luke Bond, Home Office; Ben Hall, Founder of Katacoda
 
