@@ -16,7 +16,7 @@ Diese Daten werden entweder in Echtzeit an eine Bodenstation übertragen oder in
 der Landung ausgelesen.
 
 Mehr Informationen über die Herausforderung gibt es auf der Website des offiziellen CanSat-Wettbewerbs 2018
-unter [cansat.de](cansat.de)
+unter [cansat.de](https://cansat.de)
 
 
 Wer sind wir?

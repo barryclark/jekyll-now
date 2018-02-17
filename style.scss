@@ -13,31 +13,38 @@
 /* BASE RULES */
 /**************/
 
+* {
+  transition: all .2s;
+}
+
 html {
   font-size: 100%;
 }
 
 body {
-	background: $white;
-  font: 18px/1.4 $helvetica;
-  color: $darkGray;
+	background: url("/images/nasa-space-background-dimmed.jpg");
+  font: 18px/1.4 $nunito;
+  font-weight: $nunito-light;
+  color: $primary-black;
 }
 
-.container {
-  margin: 0 auto;
+#container {
+  margin: 8rem auto 3rem;
   max-width: 900px;
-  padding: 0 10px;
-  width: 100%;
-}
+  padding: 0 1.5rem;
+	background: $white;
+  width: calc(100% - 4rem);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
 
-.header-image img{
-  width: 100%;
+  @include mobile {
+    padding: 0 1rem;
+    width: calc(100% - 2rem);
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $helveticaNeue;
-  color: $darkerGray;
-  font-weight: bold;
+  font-family: $dosis;
+  font-weight: $dosis-bold;
 
   line-height: 1.7;
   margin: 1em 0 15px;
@@ -65,7 +72,7 @@ h3 {
 
 h4 {
   font-size: 18px;
-  color: $gray;
+  color: $secondary-black;
 }
 
 p {
@@ -73,11 +80,12 @@ p {
 }
 
 a {
-  color: $blue;
+  color: $apoapsis-darkblue;
   text-decoration: none;
 	cursor: pointer;
+
   &:hover, &:active {
-    color: $blue;
+    color: $apoapsis-lightblue;
   }
 }
 
@@ -107,7 +115,7 @@ em, i {
 }
 
 strong, b {
-  font-weight: bold;
+  font-weight: $nunito-bold;
 }
 
 img {
@@ -119,19 +127,14 @@ img {
   max-width: none;
 }
 
-.date {
-  font-style: italic;
-  color: $gray;
-}
-
 // Specify the color of the selection
 ::-moz-selection {
-  color: $black;
-  background: $lightGray;
+  color: $primary-black;
+  background: $disabled-black;
 }
 ::selection {
-  color: $black;
-  background: $lightGray;
+  color: $primary-black;
+  background: $disabled-black;
 }
 
 // Nicolas Gallagher's micro clearfix hack
@@ -150,43 +153,45 @@ img {
 /* LAYOUT / SECTIONS */
 /*********************/
 
-//
-// .masthead
-//
-
 .wrapper-masthead {
   margin-bottom: 50px;
 }
 
 .masthead {
   padding: 20px 0;
-  border-bottom: 1px solid $lightGray;
+  border-bottom: 1px solid $divider-black;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
 
   @include mobile {
+    justify-content: center;
     text-align: center;
   }
 }
 
 .site-avatar {
-  float: left;
-  width: 70px;
-  height: 70px;
-  margin-right: 15px;
+  $avatar-size: 64px;
+  width: $avatar-size;
+  height: $avatar-size;
+  margin-right: .5rem;
 
   @include mobile {
-    float: none;
-    display: block;
-    margin: 0 auto;
+    flex-basis: 100%;
+    margin: 0;
   }
 
   img {
-    border-radius: 5px;
+    width: $avatar-size;
+    height: $avatar-size;
+
+    &:hover {
+      opacity: .4;
+    }
   }
 }
 
 .site-info {
-  float: left;
-
   @include mobile {
     float: none;
     display: block;
@@ -196,18 +201,17 @@ img {
 
 .site-name {
   margin: 0;
-  color: $darkGray;
   cursor: pointer;
-  font-family: $helveticaNeue;
-  font-weight: 300;
+  font-family: $dosis;
+  font-weight: $dosis-light;
   font-size: 28px;
   letter-spacing: 1px;
 }
 
 .site-description {
   margin: -5px 0 0 0;
-  color: $gray;
-  font-size: 16px;
+  color: $secondary-black;
+  font-weight: $dosis-light;
 
   @include mobile {
     margin: 3px 0;
@@ -215,39 +219,54 @@ img {
 }
 
 nav {
-  float: right;
-  margin-top: 23px; // @TODO: Vertically middle align
-  font-family: $helveticaNeue;
+  font-family: $nunito;
   font-size: 18px;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  display: flex;
 
   @include mobile {
-    float: none;
     margin-top: 9px;
-    display: block;
     font-size: 16px;
+    justify-content: center;
+  }
+
+  & > a {
+    padding: .4rem;
+    border-radius: 4px;
+
+    &:hover {
+      background: $apoapsis-lightblue;
+      color: $white;
+    }
   }
 
   a {
-    margin-left: 20px;
-    color: $darkGray;
-    text-align: right;
-    font-weight: 300;
-    letter-spacing: 1px;
+    margin: .2rem;
+    display: inline-block;
+  }
 
-    @include mobile {
-      margin: 0 10px;
-      color: $blue;
+  .language-links {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+
+    img {
+      height: 20px;
+      width: auto;
+      display: block;
+
+      &:hover {
+        opacity: .4;
+      }
     }
   }
 }
 
-//
-// .main
-//
-
 .posts > .post {
   padding-bottom: 2em;
-  border-bottom: 1px solid $lightGray;
+  border-bottom: 1px solid $divider-black;
 }
 
 .posts > .post:last-child {
@@ -255,31 +274,65 @@ nav {
   border-bottom: none;
 }
 
-.post {
-  blockquote {
-    margin: 1.8em .8em;
-    border-left: 2px solid $gray;
-    padding: 0.1em 1em;
-    color: $gray;
-    font-size: 22px;
+.page-banner {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  & > img {
+    max-height: 200px;
+    max-width: 100%;
+    margin-bottom: 3rem;
+  }
+
+  & > div {
+    padding: 0 1rem;
+    max-width: 400px;
     font-style: italic;
+    font-weight: $nunito-light;
+    line-height: 1.7;
+    margin-bottom: 3rem;
   }
+}
 
-  .comments {
-    margin-top: 10px;
-  }
+.meta {
+  font-size: 1rem;
+  font-family: monospace;
+  margin-left: 1em;
+  color: $secondary-black;
+}
 
-  .read-more {
-    text-transform: uppercase;
-    font-size: 15px;
+blockquote {
+  margin: 1.8em .8em;
+  border-left: 2px solid $divider-black;
+  padding: 0.1em 1em;
+  color: $secondary-black;
+  font-size: 22px;
+  font-style: italic;
+}
+
+.comments {
+  margin-top: 10px;
+}
+
+.read-more {
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: $nunito-medium;
+  padding: .6rem;
+  border-radius: 4px;
+
+  &:hover {
+    background: $apoapsis-lightblue;
+    color: $white;
   }
 }
 
 .wrapper-footer {
   margin-top: 50px;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  background-color: $lightGray;
+  border-top: 1px solid $divider-black;
 }
 
 footer {

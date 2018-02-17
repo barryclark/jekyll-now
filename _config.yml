@@ -9,12 +9,6 @@ name: Team Apoapsis Blog
 description: CanSat-Team des Humboldt-Gymnasiums Vaterstetten
 description_en: CanSat team of the Humboldt-Gymnasium Vaterstetten
 
-# URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://raw.githubusercontent.com/ApoapsisHGV/ApoapsisHGV.github.io/master/images/logo.png
-#
-# Flags below are optional
-#
-
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
