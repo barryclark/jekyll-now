@@ -90,6 +90,15 @@ a {
   &:hover, &:active {
     color: $apoapsis-lightblue;
   }
+
+  i, img {
+    &:hover {
+      opacity: .4;
+    }
+    &:active {
+      opacity: .2;
+    }
+  }
 }
 
 ul, ol {
@@ -187,10 +196,6 @@ img {
   img {
     width: $avatar-size;
     height: $avatar-size;
-
-    &:hover {
-      opacity: .4;
-    }
   }
 }
 
@@ -259,10 +264,6 @@ nav {
       height: 20px;
       width: auto;
       display: block;
-
-      &:hover {
-        opacity: .4;
-      }
     }
   }
 }
