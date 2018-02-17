@@ -23,6 +23,9 @@ html {
 
 body {
 	background: url("/images/nasa-space-background-dimmed.jpg");
+  background-attachment: fixed;
+  background-size: 1250px auto;
+  background-color: #000044;
   font: 18px/1.4 $nunito;
   font-weight: $nunito-light;
   color: $primary-black;
@@ -130,11 +133,11 @@ img {
 // Specify the color of the selection
 ::-moz-selection {
   color: $primary-black;
-  background: $disabled-black;
+  background: $divider-black;
 }
 ::selection {
   color: $primary-black;
-  background: $disabled-black;
+  background: $divider-black;
 }
 
 // Nicolas Gallagher's micro clearfix hack
