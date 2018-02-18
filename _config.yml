@@ -23,11 +23,11 @@ footer-links:
   flickr:
   github: dorianbrown
   instagram:
-  linkedin: in/dorian-brown-141ab74b/
+  linkedin: dorian-brown-141ab74b/
   pinterest:
   rss: # just type anything here for a working RSS icon
   twitter: 
-  stackoverflow: users/1415371/ballzoffury # your stackoverflow profile, e.g. "users/50476/bart-kiers"
+  stackoverflow: users/1415371/ballzoffury?tab=profile # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
 
