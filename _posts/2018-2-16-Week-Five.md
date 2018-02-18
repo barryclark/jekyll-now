@@ -17,7 +17,7 @@ Day 4: Lesson Eight [Lesson 8: Javascript V (Classes and Prototype)][5].  A dive
 
 ## Continual work/forward plans
 
-- Next week of [Lambda School][1] precourse.  This should be the close out of the bootcamp.  I'm looking forward to this week as I think it has some projects that are going to kick off on Tuesday!
+- Lessons 9-12 of the [Lambda School][1] precourse.  This should be the close out of the mini-bootcamp.
 
 [1]: https://lambdaschool.com/
 [2]: https://github.com/izulien/Precourse/tree/master/Lesson5-JS-II
