@@ -6,7 +6,7 @@ author: Dorian Brown
 categories: [General]
 ---
 
-## Introduction
+# Introduction
 
 Well this is going to be my first post. As I'm sure lots of first time bloggers have run into, you feel a lot of pressure to make the first post amazing. You feel the need to start with a great first post, because you've told all your friends you're going to make a blog, and some of them are eagerly awaiting that first post. And then pressure builds…
 
