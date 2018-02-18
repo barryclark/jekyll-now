@@ -29,7 +29,7 @@ library(knitr)
 Next step, write your blog post. I'm sure most of you are familiar with the 
 RMarkdown format, but if not it's basically a superset of standard markdown, which allows the execution of code within the document (check out the [docs](http://rmarkdown.rstudio.com/")). Once you've got your draft ready, you can preview it with the preview/knit button in Rstudio.
 
-So, you&#39;ve finished your post and you're eager to share it with the world. Running this R script will do the trick:
+So, you've finished your post and you're eager to share it with the world. Running this R script will do the trick:
 
 ```r
 pw &lt;- readLines(file(&#39;../data/wp_password.txt&#39;))
