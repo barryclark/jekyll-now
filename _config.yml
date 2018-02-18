@@ -84,3 +84,5 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+
+# Excerpt seperator (auto-selection not working in markdown?!?)

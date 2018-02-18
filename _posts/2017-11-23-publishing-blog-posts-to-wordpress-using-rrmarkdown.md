@@ -4,6 +4,7 @@ title: Publishing blog posts to Wordpress using R/RMarkdown
 date: 2017-11-23 03:11
 comments: true
 categories: [General, Technical Stuff]
+excerpt: When I was getting this blog setup, I decided I needed to make creating new posts as easy as possible. I want to use my daily commute (which is about 1.5 hours each day) to create new content, and in order to make the barrier as small as possible it started looking into the options for posting from some kind of notebook format.
 ---
 When I was getting this blog setup, I decided I needed to make creating new posts as easy as possible. I want to use my daily commute (which is about 1.5 hours each day) to create new content, and in order to make the barrier as small as possible it started looking into the options for posting from some kind of notebook format.
 
@@ -32,11 +33,11 @@ RMarkdown format, but if not it's basically a superset of standard markdown, whi
 So, you've finished your post and you're eager to share it with the world. Running this R script will do the trick:
 
 ```r
-pw &lt;- readLines(file(&#39;../data/wp_password.txt&#39;))
+pw &lt;- readLines(file("../data/wp_password.txt"))
 options(WordpressLogin = c(dsbrown = pw),
-        WordpressURL = &#39;http://www.findingsignal.xyz/xmlrpc.php&#39;)
+        WordpressURL = "http://www.findingsignal.xyz/xmlrpc.php")
 
-rmd_file &lt;- args$file
+rmd_file <- args$file
 # Post thumbnail
 opts_knit$set(upload.fun = function(file){library(RWordPress);uploadFile(file)$url;})
 
