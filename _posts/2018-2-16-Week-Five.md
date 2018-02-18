@@ -13,11 +13,14 @@ Day 2: Lesson Six, [Javascript III (for Loops continued, and Arrays)][3].  Quick
 
 Day 3: Lesson Seven, [Javascript IV (Objects)][4]. Introduction to objects, looping through objects, and overall access / modification of objects properties.
 
+Day 4: Lesson Eight [Lesson 8: Javascript V (Classes and Prototype)][5].  A dive into classes and more actions / uses with Prototypes.  This had quick homework but I did trip myself up by forgetting index 0 when working on reverse strings.
+
 ## Continual work/forward plans
 
-- Lessons 6-8 of the [Lambda School][1] precourse.
+- Next week of [Lambda School][1] precourse.  This should be the close out of the bootcamp.  I'm looking forward to this week as I think it has some projects that are going to kick off on Tuesday!
 
 [1]: https://lambdaschool.com/
 [2]: https://github.com/izulien/Precourse/tree/master/Lesson5-JS-II
 [3]: https://github.com/izulien/Precourse/tree/master/Lesson6-JS-III
 [4]: https://github.com/izulien/Precourse/tree/master/Lesson7-JS-IV
+[5]: https://github.com/izulien/Precourse/tree/master/Lesson8-JS-V
