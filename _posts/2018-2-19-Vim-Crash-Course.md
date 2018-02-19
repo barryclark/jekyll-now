@@ -3,11 +3,11 @@ layout: post
 title: Vim Crash Course
 ---
 
-This is summary of the vim introducation given to my by the lovely Jonathan :blush: Let me make clear from the start, this is not a vim user's guide to vim. This is an oh-crap-some-command-just-dumped-me-into-vim-help! user's guide to vim. There's quite a difference. And if you're wondering, yes, that's happened to me _multiple_ times before.
+This is summary of the vim introduction given to my by the lovely Jonathan :blush: Let me make clear from the start, this is not a vim user's guide to vim. This is an oh-crap-some-command-just-dumped-me-into-vim-help! user's guide to vim. There's quite a difference. And if you're wondering, yes, that's happened to me _multiple_ times before.
 
 First things first, your panic button: escape. If in doubt, hit escape until you're sure you're out of whatever mode you've got yourself into, then take a deep breath and start over. Unless otherwise stated, this guide assumes that you're starting from a nice clean new vim window (which, fyi, you might not have if you've been unexpectedly catapulted into it). Or that you've mashed esc until you have one.
 
-Second key point: everything is case sensitive. Upper and lower case versions of commands tend to do _similar_ things, but they are **not** the same. Pay attention to case, or find youself wondering why you're typing at the end of your file instead of the start.
+Second key point: everything is case sensitive. Upper and lower case versions of commands tend to do _similar_ things, but they are **not** the same. Pay attention to case, or find yourself wondering why you're typing at the end of your file instead of the start.
 
 Finally, I suggest playing around with the following commands in a text file you don't care about. It's much easier to understanding how exactly everything behaves by actually _seeing_ it. The command `vim file.txt` will create and open a new file called _file.txt_ in the current directory (unless that file already exists, in which case it will just open it).
 
@@ -33,11 +33,11 @@ Most commands proceeded by a `:` can be chained (although you won't see any more
 
 #### Moving around
 
-Your arrow keys should let you move your cursor around the document. If these don't work, try using **`h j k l`** instead (for left, down, up, and right respetively).
+Your arrow keys should let you move your cursor around the document. If these don't work, try using **`h j k l`** instead (for left, down, up, and right respectively).
 
 **`$`** takes you to the start of the current line, and **`^`** takes you to the end. If you're on a mac, you can alternatively use fn + left / right arrow.
 
-**`gg`** goes to the start of the document. If you preceed it with a number (e.g `8gg`) then you will go to that line.
+**`gg`** goes to the start of the document. If you precede it with a number (e.g `8gg`) then you will go to that line.
 
 **`G`** goes to the end of the document.
 
@@ -51,7 +51,7 @@ Your arrow keys should let you move your cursor around the document. If these do
 
 #### Making mistakes
 
-**`u`** undoes the last action. Warning: everything you type between hitting `i` (or `a` etc) and hitting escape counts as one action. If you insert 5 paragraphs, escape and then undo, you will lose them all. Consider at minimum exiting insert mode occassionally (and preferrably saving).
+**`u`** undoes the last action. Warning: everything you type between hitting `i` (or `a` etc) and hitting escape counts as one action. If you insert 5 paragraphs, escape and then undo, you will lose them all. Consider at minimum exiting insert mode occasionally (and preferably saving).
 
 **`^r`** (control + r) to redo the last thing you undid.
 
@@ -69,7 +69,7 @@ Beyond the above commands, there's some useful settings which might make your li
 
 **`set showmatch`** will highlight matching brackets.
 
-**`set scrolloff=3`** will keep 3 lines visible above and below your cursor (if possbile). Subsitiute other numbers for more or fewer.
+**`set scrolloff=3`** will keep 3 lines visible above and below your cursor (if possible). Substitute other numbers for more or fewer.
 
 ```
 set foldenable
@@ -90,5 +90,5 @@ will give you nicer, auto-indenting tabs.
 
 ---
 
-There's a lot deeper you can go into vim, and **lot** more ways to make editing in it more efficent. But the above should be all you need to actually _use_ it at a basic level, and not have to start desperately web-searching if you're ever forced to :stuck_out_tongue_closed_eyes:
+There's a lot deeper you can go into vim, and **lot** more ways to make editing in it more efficient. But the above should be all you need to actually _use_ it at a basic level, and not have to start desperately web-searching if you're ever forced to :stuck_out_tongue_closed_eyes:
 
