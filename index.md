@@ -14,7 +14,7 @@ The  original idea for creating this site/blog was to document some of the techn
 {% for post in site.posts limit:5 %}
     <article class="post">
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+      <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ page.date}}: {{ post.title }}</a></h3>
 
       <div class="entry">
         {{ post.excerpt }}
