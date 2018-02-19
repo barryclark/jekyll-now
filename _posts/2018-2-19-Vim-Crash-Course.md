@@ -71,15 +71,14 @@ Beyond the above commands, there's some useful settings which might make your li
 
 **`set scrolloff=3`** will keep 3 lines visible above and below your cursor (if possbile). Subsitiute other numbers for more or fewer.
 
-**```
+```
 set foldenable
 set foldlevelstart=99
 set foldmethod=indent
 ```
-**
 will let you fold blocks of code (nicely) with **`za`**. This acts as a toggle, so `za` will also unfold.
 
-**```
+```
 set autoindent
 set expandtab
 set smarttab
@@ -87,10 +86,9 @@ set shiftwidth=2
 set tabstop=2
 set softtabstop=2
  ```
- **
 will give you nicer, auto-indenting tabs.
 
 ---
 
-There's a lot deeper you can go into vim, and **lot** more ways to make editing in it more efficent. But the above should be all you need to actually _use_ it at a basic level, and not have to start desperately web-searching if you're ever forced to :stuck_out_tounge_closed_eyes:
+There's a lot deeper you can go into vim, and **lot** more ways to make editing in it more efficent. But the above should be all you need to actually _use_ it at a basic level, and not have to start desperately web-searching if you're ever forced to :stuck_out_tongue_closed_eyes:
 
