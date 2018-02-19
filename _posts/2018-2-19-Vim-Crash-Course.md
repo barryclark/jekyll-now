@@ -9,7 +9,7 @@ First things first, your panic button: escape. If in doubt, hit escape until you
 
 Second key point: everything is case sensitive. Upper and lower case versions of commands tend to do _similar_ things, but they are **not** the same. Pay attention to case, or find youself wondering why you're typing at the end of your file instead of the start.
 
-Finally, I suggest playing around with the following commands in a text file you don't care about. It's much easier to understanding how exactly everything behaves by actually _seeing_ it. The command `vim file.txt` will create and open a new file called file.txt in the current (unless one already exists, in which case it will just open it).
+Finally, I suggest playing around with the following commands in a text file you don't care about. It's much easier to understanding how exactly everything behaves by actually _seeing_ it. The command `vim file.txt` will create and open a new file called _file.txt_ in the current directory (unless that file already exists, in which case it will just open it).
 
 ---
 
@@ -27,9 +27,19 @@ Most commands proceeded by a `:` can be chained (although you won't see any more
 
 **`i`** gets you into insert mode. This lets you type text like you normally would. Take care though: unless you move your cursor, you'll start typing _before_ the character under you cursor.
 
-**`a`** is for append, and is very similar to `i`. The difference is that while `i` insters before the current character, `a` appends after the current character.
+**`a`** appends, and is very similar to `i`. The difference is that while `i` inserts before the current character, `a` appends after the current character.
 
 **`I`** starts you inserting at the start of the current line, and **`A`** starts you appending at the end of the current line.
+
+#### Moving around
+
+Your arrow keys should let you move your cursor around the document. If these don't work, try using **`h j k l`** instead (for left, down, up, and right respetively).
+
+**`$`** takes you to the start of the current line, and **`^`** takes you to the end. If you're on a mac, you can alternatively use fn + left / right arrow.
+
+**`gg`** goes to the start of the document. If you preceed it with a number (e.g `8gg`) then you will go to that line.
+
+**`G`** goes to the end of the document.
 
 #### Copying and pasting
 
@@ -37,13 +47,48 @@ Most commands proceeded by a `:` can be chained (although you won't see any more
 
 **`p`** pastes after the current line, and **`P`** pastes before the current line.
 
-**`dd`** deletes (cuts) the current line, and like `yy` can be proceeded by a number to cut multiple.
+**`dd`** cuts (or if it's easier to remember, deletes) the current line, and like `yy` can be proceeded by a number to cut multiple.
 
 #### Making mistakes
 
-**`u`** undoes the last action. Gotcha: everything you type between hitting `i` (or `a` etc) and hitting escape counts as one action. If you insert 5 paragraphs, escape and then undo, you will lose them all. Consider at minimum exiting insert mode occassionally (and preferrably saving).
+**`u`** undoes the last action. Warning: everything you type between hitting `i` (or `a` etc) and hitting escape counts as one action. If you insert 5 paragraphs, escape and then undo, you will lose them all. Consider at minimum exiting insert mode occassionally (and preferrably saving).
 
 **`^r`** (control + r) to redo the last thing you undid.
 
+#### Searching text
 
+**`/`** will let you type text for which to search. Press enter to search for what you typed (e.g. `/hello` followed by enter will take you to the first instance of the word _hello_). **`n`** will move you to the next instance.
+
+---
+
+Beyond the above commands, there's some useful settings which might make your life easier (especially if you're editing code). These can be typed in (followed by enter) when you open a document, or added to your `~/.vimrc` so that they run automatically every time you open something in vim.
+
+**`set number`** shows line numbers.
+
+**`syntax enable`** enables syntax highlighting.
+
+**`set showmatch`** will highlight matching brackets.
+
+**`set scrolloff=3`** will keep 3 lines visible above and below your cursor (if possbile). Subsitiute other numbers for more or fewer.
+
+**```
+set foldenable
+set foldlevelstart=99
+set foldmethod=indent
+```**
+will let you fold blocks of code (nicely) with **`za`**. This acts as a toggle, so `za` will also unfold.
+
+**```
+set autoindent
+set expandtab
+set smarttab
+set shiftwidth=2
+set tabstop=2
+set softtabstop=2
+ ```**
+will give you nicer, auto-indenting tabs.
+
+---
+
+There's a lot deeper you can go into vim, and **lot** more ways to make editing in it more efficent. But the above should be all you need to actually _use_ it at a basic level, and not have to start desperately web-searching if you're ever forced to :stuck_out_tounge_closed_eyes:
 
