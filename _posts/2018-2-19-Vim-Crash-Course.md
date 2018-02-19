@@ -9,7 +9,7 @@ First things first, your panic button: escape. If in doubt, hit escape until you
 
 Second key point: everything is case sensitive. Upper and lower case versions of commands tend to do _similar_ things, but they are **not** the same. Pay attention to case, or find yourself wondering why you're typing at the end of your file instead of the start.
 
-Finally, I suggest playing around with the following commands in a text file you don't care about. It's much easier to understanding how exactly everything behaves by actually _seeing_ it. The command `vim file.txt` will create and open a new file called _file.txt_ in the current directory (unless that file already exists, in which case it will just open it).
+Finally, I suggest playing around with the following commands in a text file you don't care about. It's much easier to understand how exactly everything behaves by actually _seeing_ it. The command `vim file.txt` will create and open a new file called _file.txt_ in the current directory (unless that file already exists, in which case it will just open it).
 
 ---
 
@@ -58,6 +58,8 @@ Your arrow keys should let you move your cursor around the document. If these do
 #### Searching text
 
 **`/`** will let you type text for which to search. Press enter to search for what you typed (e.g. `/hello` followed by enter will take you to the first instance of the word _hello_). **`n`** will move you to the next instance.
+
+You can add some regex-style expressions for more sophisticated searching, although vim uses a largely different syntax from the more standard perl-style one. A quick search for _vim regex_ should point you in the right direction.
 
 ---
 
