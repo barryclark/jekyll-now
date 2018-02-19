@@ -9,8 +9,11 @@ I have had a GitHub account for a few years, and keep the code for all my person
 
 Initially, the idea of a blog based on static web pages sounded pretty archaic - surely dynamic page generation is the way to go? However, although it requires a bit more technical knowledge to set up, there are quite a few compelling reasons to use this approach:
 
-* Performance: our web server is simply serving up static files - there is very little server-side processing
-* TBC
+* **Performance**: our web server is simply serving up static files - there is very little server-side processing
+* **Simplicity**: our web server only needs to be able to serve up static html pages - and all content can be written using MarkDown
+* **Security**: dynamically generated web pages carry a much higher risk of malicious exploitation, due to the presence of a back-end database. This security loophole is closed if we use Jekyll
+* **Scalability**: a server that serves up only static pages can handle a lot more traffic than one that needs to generate dynamic content. It is also much simpler to deploy the site to multiple servers if redundancy or load balancing is required
+* **Version Control**: the site content is all hosted within GitHub, so we automatically get all the GitHub goodness of version control, branching, collaborative coding etc. The GitHub repository also acts as an off-site backup
 
 It's also been a good opportunity to look at some new web frameworks and approaches which I haven't encountered before, namely:
 
