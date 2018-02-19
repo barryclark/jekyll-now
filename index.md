@@ -8,8 +8,7 @@ The  original idea for creating this site/blog was to document some of the techn
 
 
 ## Recent Blog Posts
-{% raw %}
-~~~html
+
 <div class="posts">
 {% for post in site.posts limit:5 %}
     <article class="post">
@@ -24,5 +23,3 @@ The  original idea for creating this site/blog was to document some of the techn
     </article>
 {% endfor %}
 </div>
-~~~
-{% endraw %}
