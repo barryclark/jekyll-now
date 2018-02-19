@@ -4,7 +4,7 @@ title: Publications
 permalink: /publications/
 ---
 
-![E3SM: Bottom temperature]({{ site.url }}/images/antarctic_temp_oRRS30to10v3wLI.jpg)
+![E3SM: Bottom temperature]({{ site.url }}/images/popsicles_cccr.jpg)
 
 Please contact me for PDF copies if required.
 
