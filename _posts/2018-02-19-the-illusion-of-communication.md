@@ -4,6 +4,7 @@ title: The Illusion of Communication
 tags: [culture]
 keywords: [communication, illusion, illusion of communication, message]
 image: /images/biscuits.png
+excerpt: Recently I heard the following quote often misattributed to George Bernard Shaw - "The Biggest Problem in Communication Is the Illusion That It Has Taken Place." And it made me think in what ways is communication often an illusion? 
 ---
 
 Recently I heard the following [quote often misattributed to George Bernard Shaw](https://quoteinvestigator.com/2014/08/31/illusion/):
