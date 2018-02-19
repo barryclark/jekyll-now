@@ -75,7 +75,8 @@ Beyond the above commands, there's some useful settings which might make your li
 set foldenable
 set foldlevelstart=99
 set foldmethod=indent
-```**
+```
+**
 will let you fold blocks of code (nicely) with **`za`**. This acts as a toggle, so `za` will also unfold.
 
 **```
@@ -85,7 +86,8 @@ set smarttab
 set shiftwidth=2
 set tabstop=2
 set softtabstop=2
- ```**
+ ```
+ **
 will give you nicer, auto-indenting tabs.
 
 ---
