@@ -5,7 +5,7 @@ category: journalclub
 olddate: February 26, 2018
 ---
 
-* [Paper]({{site.url}}/journalclub/JCpapers/Hoefle_fMRI_encode.pdf) Sebastian Hoefe1, Annerose Engel, Rodrigo Basilio, Vinoo Alluri, Petri Toiviainen, Maurício Cagy & Jorge Moll. Identifying musical pieces from fMRI data using encoding and decoding models, Scientific Reports. (2018)
+* [Paper]({{site.url}}/journalclub/JCpapers/Hoefle_fMRI_encode.pdf) Sebastian Hoefle, Annerose Engel, Rodrigo Basilio, Vinoo Alluri, Petri Toiviainen, Maurício Cagy & Jorge Moll. Identifying musical pieces from fMRI data using encoding and decoding models, Scientific Reports. (2018)
 * Abstract
 
 Encoding models can reveal and decode neural representations in the visual and semantic domains.
