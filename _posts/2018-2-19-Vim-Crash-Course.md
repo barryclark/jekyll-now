@@ -63,7 +63,7 @@ You can add some regex-style expressions for more sophisticated searching, altho
 
 ---
 
-Beyond the above commands, there's some useful settings which might make your life easier (especially if you're editing code). These can be typed in (followed by enter) when you open a document, or added to your `~/.vimrc` so that they run automatically every time you open something in vim.
+Beyond the above commands, there's some useful settings which might make your life easier (especially if you're editing code). These can be typed in (preceded by `:` and followed by enter) when you open a document, or added as-is to your `~/.vimrc` so that they run automatically every time you open something in vim.
 
 **`set number`** shows line numbers.
 
