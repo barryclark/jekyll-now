@@ -12,15 +12,6 @@ The  original idea for creating this site/blog was to document some of the techn
 
 <div class="posts">
 {% for post in site.posts limit:5 %}
-    <article class="post">
-
       <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.date | date: "%B %e, %Y" }}: {{ post.title }}</a></h2>
-
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
-
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
 {% endfor %}
 </div>
