@@ -16,6 +16,7 @@ Initially, the idea of a blog based on static web pages sounded pretty archaic -
 * **Scalability**: a server that serves up only static pages can handle a lot more traffic than one that needs to generate dynamic content. It is also much simpler to deploy the site to multiple servers if redundancy or load balancing is required
 * **Version Control**: the site content is all hosted within GitHub, so we automatically get all the GitHub goodness of version control, branching, collaborative coding etc. The GitHub repository also acts as an off-site backup
 * **Automatic SEO**: Jekyll automatically creates sitemap.xml and robots.txt for you and deploys them to your website
+* **Automatic RSS Feed**: Jekyll will automatically create an Atom RSS feed for you at feed.xml
 
 It's also been a good opportunity to look at some new web frameworks and approaches which I haven't encountered before, namely:
 
