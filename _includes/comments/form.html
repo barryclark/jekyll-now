@@ -2,6 +2,7 @@
 <form id="post-new-comment{{ include.reply }}" class="new-comment" method="post" action="https://api.staticman.net/v2/entry/hendrixjoseph/hendrixjoseph.github.io/master/comments"{% if include.reply %} style="display: none;"{% endif %}>
   <input name="options[redirect]" type="hidden" value="{{ site.url }}{{ page.url }}">
   <input name="options[slug]" type="hidden" value="{{ include.slug }}">
+  {% if include.reply %}<input name="fields[replyto]" type="hidden" value="{{ include.reply }}">{% endif %}
   <label class="comment-body" for="comment{{ include.reply }}">Comment (required)</label><textarea name="fields[msg]" id="comment{{ include.reply }}" required="required" cols="45" rows="8" maxlength="65525" aria-required="true"></textarea>
   <label class="comment-author" for="name{{ include.reply }}">Name (required)</label><input name="fields[name]" id="name{{ include.reply }}" required="required" aria-required="true" type="text">
   <label class="comment-email" for="email{{ include.reply }}">Email (required, always hashed, never used nor published)</label><input name="fields[email]" id="email{{ include.reply }}" required="required" aria-required="true" type="email">
