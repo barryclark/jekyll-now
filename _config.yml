@@ -25,7 +25,7 @@ footer-links:
   instagram:
   linkedin: julianjoseph
   pinterest:
-  rss: # just type anything here for a working RSS icon
+  rss: https://julianjoseph.github.io/feed.xml
   twitter: julesjoseph
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
