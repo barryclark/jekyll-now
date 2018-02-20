@@ -118,6 +118,7 @@ img {
 .date {
   font-style: italic;
   color: $gray;
+  text-align: right;
 }
 
 // Specify the color of the selection
@@ -253,12 +254,16 @@ nav {
 
 .post {
   blockquote {
-    margin: 1.8em .8em;
+    margin: 1.2em .8em;
     border-left: 2px solid $gray;
     padding: 0.1em 1em;
     color: $gray;
-    font-size: 22px;
+    font-size: 18px;
     font-style: italic;
+
+    p {
+      margin: 3px 0;
+    }
   }
 
   .comments {
@@ -266,8 +271,11 @@ nav {
   }
 
   .read-more {
-    text-transform: uppercase;
     font-size: 15px;
+    vertical-align: middle;
+    .fas.fa-angle-right {
+      vertical-align: middle;
+    }
   }
 }
 
