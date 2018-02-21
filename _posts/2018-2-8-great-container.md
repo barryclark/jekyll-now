@@ -17,7 +17,7 @@ This was a fun event held in London on Feb 8, 2018, with myself moderating an ev
 
 **RANCHER:** Shannon Williams, Rancher Co-Founder; Tom Bamford, Platform Engineering Lead, Buildit@Wipro Digital
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/MkHZgJseOkU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe width="720" height="405" src="https://www.youtube.com/embed/MkHZgJseOkU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 I greatly enjoyed hearing the teams discuss the complexity, tooling, integration with existing systems, security, diagnostics and upgrading of their chosen container management platforms.
 
