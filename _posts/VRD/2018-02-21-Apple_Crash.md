@@ -5,7 +5,7 @@ category: VRD
 ---
 
 # Introduction
-Using different types of network classifications is a normal day to day thing for IT practioners. However, Class E networks aren't commonly used as they're a /4, making the address space absolutely huge! Poking around with the network manager of Apple IOS High Sierra while trying to connect to a class e network (240.240.240.240) causes a validation error to occur when entered in manually, trying to implement said address within the advanced features (after you have got the validation error) will cause the network manager to crash giving an illegal instruction error within the console out put. Forward a few manual tests and a Integer Overflow occurs allowing for a negative number to be entered (this shouldn't be possible within a IP range), mapping this negative number also represents a memory location within the memory map.
+Using different types of network classifications is a normal day to day thing for IT practioners. However, class E networks aren't commonly used as they're a /4, making the address space absolutely huge! Poking around with the network manager of Apple IOS High Sierra while trying to connect to a class E network (240.240.240.240) causes a validation error to occur when entered in manually, trying to implement said address within the advanced features (after you have got the validation error) will cause the network manager to crash giving an illegal instruction error within the console out put. Forward a few manual tests and a Integer Overflow occurs allowing for a negative number to be entered (this shouldn't be possible within a IP range), mapping this negative number also represents a 32 bit memory location within the memory map of the network manager process.
 
 # Crash and ... Overflow (I wish this was Burn)
 Before we begin looking at the crash, I will provide some screen captions of the current version of the OS begin run.
@@ -31,6 +31,10 @@ and
 ![Class E DHCP 2](/images/apple_crash_network_manager/dhcp_connected_via_server.png "DHCP Connected")
 
 The experiment demonstrates that the network stack hasn't crashed as the device is connected and running. Therefore, we can conclude that this is a network manager issue, which narrows our scope and liklihood of a magic packet (damn).
+
+However, trying to then re-enter the class e network after it has been established within DHCP still provides an error.
+
+![Class E DHCP -> Manual](/images/apple_crash_network_manager/dhcp_manual.png "DHCP to Manual")
 
 So, we now know that this is a problem with the network managers validation, but what else can we do to misconfigure and get some interesting results?
 
