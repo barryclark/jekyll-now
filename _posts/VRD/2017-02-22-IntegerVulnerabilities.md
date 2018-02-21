@@ -128,7 +128,10 @@ The following image is of the second code segement of the above malloc which is 
 
 In Addition: If a segmentation fault doesn't occur, the value that is being set will automatically wrap around not to a negative number but to a significantly higher number within the unsigned region. This is because malloc is expecting an unsigned value, in which the compiler can automatically allocate this.
 # Conclusion
-As demonstrated an integer vulnerabilities can cause extreme problems which is why it is always important to check that you are using the right variable types when writing code. 
+As demonstrated an integer vulnerabilities can cause extreme problems which is why it is always important to check that you are using the right variable types when writing code.
+
+# Update
+As a real world example of an integer overflow occurring, see my post about [Crashing The Apple Network Manager](http://www.exit.wtf/Apple_Network_Manager_Crash/)
 
 # References
 [Phrack: Basic Integer Overflows](http://phrack.org/issues/60/10.html)
