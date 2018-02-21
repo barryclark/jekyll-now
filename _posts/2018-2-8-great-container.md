@@ -1,11 +1,13 @@
 ---
 layout: post
-title: "[Photos] [Feb 2018] The Great Container Management Debate"
+title: "[Video] [Photos] [Feb 2018] The Great Container Management Debate"
 ---
 
 ![The Great Container Management Debate]({{site.baseurl}}/images/2018-2-8-pic1.jpg)
 
 This was a fun event held in London on Feb 8, 2018, with myself moderating an evening debate between four teams. Each team consisted of one advocate and one customer.
+
+**Moderators:** Cheryl Hung, StorageOS; James Betteley, Contino
 
 **KUBERNETES:** Luke Bond, Home Office; Ben Hall, Founder of Katacoda
 
@@ -15,9 +17,7 @@ This was a fun event held in London on Feb 8, 2018, with myself moderating an ev
 
 **RANCHER:** Shannon Williams, Rancher Co-Founder; Tom Bamford, Platform Engineering Lead, Buildit@Wipro Digital
 
-**Moderators:** Cheryl Hung, StorageOS; James Betteley, Contino
-
-![The Great Container Management Debate]({{site.baseurl}}/images/2018-2-8-pic2.jpg)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/MkHZgJseOkU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 I greatly enjoyed hearing the teams discuss the complexity, tooling, integration with existing systems, security, diagnostics and upgrading of their chosen container management platforms.
 
