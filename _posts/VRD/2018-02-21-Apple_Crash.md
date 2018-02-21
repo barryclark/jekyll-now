@@ -5,10 +5,10 @@ category: VRD
 ---
 
 # Introduction
-Using different types of network classifications is a normal day to day thing for IT practioners. However, class E networks aren't commonly used as they're a /4, making the address space absolutely huge! Poking around with the network manager of Apple IOS High Sierra while trying to connect to a class E network (240.240.240.240) causes a validation error to occur when entered in manually, trying to implement said address within the advanced features (after you have got the validation error) will cause the network manager to crash giving an illegal instruction error within the console out put. Forward a few manual tests and a Integer Overflow occurs allowing for a negative number to be entered (this shouldn't be possible within a IP range), mapping this negative number also represents a 32 bit memory location within the memory map of the network manager process.
+Using different types of network classifications is a normal day to day thing for IT practitioner. However, class E networks aren't commonly used as they're a /4, making the address space absolutely huge! Poking around with the network manager of Apple IOS High Sierra while trying to connect to a class E network (240.240.240.240) causes a validation error to occur when entered in manually, trying to implement said address within the advanced features (after you have got the validation error) will cause the network manager to crash giving an illegal instruction error within the console out put. Forward a few manual tests and a Integer Overflow occurs allowing for a negative number to be entered (this shouldn't be possible within a IP range), mapping this negative number also represents a 32 bit memory location within the memory map of the network manager process.
 
 # Crash and ... Overflow (I wish this was Burn)
-Before we begin looking at the crash, heres a screen grab of the current version of High Sierra.
+Before we begin looking at the crash, here's a screen grab of the current version of High Sierra.
 
 ![OS Version](/images/apple_crash_network_manager/version.png "Version of OS")
 
@@ -30,7 +30,7 @@ and
 
 ![Class E DHCP 2](/images/apple_crash_network_manager/dhcp_connected_via_server.png "DHCP Connected")
 
-The experiment demonstrates that the network stack hasn't crashed as the device is connected and running. Therefore, we can conclude that this is a network manager issue, which narrows our scope and liklihood of a magic packet (damn).
+The experiment demonstrates that the network stack hasn't crashed as the device is connected and running. Therefore, we can conclude that this is a network manager issue, which narrows our scope and likelihood of a magic packet (damn).
 
 However, trying to then re-enter the class e network after it has been established within DHCP still provides an error.
 
@@ -59,7 +59,7 @@ As an interesting little experiment if we convert the hex value back to decimal 
 
 
 # Emails and Response Time
-After emailing product-security@apple.com, an analysis of the issue and conclusion was met within four days. The bug has been passed to the appropriate team and it maybe likely that Mac users may have the oppertunity to use Class E networks for those qwerky experiments.
+After emailing product-security@apple.com, an analysis of the issue and conclusion was met within four days. The bug has been passed to the appropriate team and it maybe likely that Mac users may have the opportunity to use Class E networks for those qwerky experiments.
 
 # Conclusion
-Overall the bug was fairly neat and demonstrates that integer overflows can still happen. Although this bug seems to be un-exploitable, it highlights that validation within the network manager is preventing legitimate IP addresses being entered. 
+Overall the bug was fairly neat and demonstrates that integer overflows can still happen. Although this bug seems to be un-exploitable, it highlights that validation within the network manager is preventing legitimate IP addresses being entered.
