@@ -8,7 +8,7 @@ category: VRD
 Using different types of network classifications is a normal day to day thing for IT practioners. However, class E networks aren't commonly used as they're a /4, making the address space absolutely huge! Poking around with the network manager of Apple IOS High Sierra while trying to connect to a class E network (240.240.240.240) causes a validation error to occur when entered in manually, trying to implement said address within the advanced features (after you have got the validation error) will cause the network manager to crash giving an illegal instruction error within the console out put. Forward a few manual tests and a Integer Overflow occurs allowing for a negative number to be entered (this shouldn't be possible within a IP range), mapping this negative number also represents a 32 bit memory location within the memory map of the network manager process.
 
 # Crash and ... Overflow (I wish this was Burn)
-Before we begin looking at the crash, I will provide some screen captions of the current version of the OS begin run.
+Before we begin looking at the crash, heres a screen grab of the current version of High Sierra.
 
 ![OS Version](/images/apple_crash_network_manager/version.png "Version of OS")
 
