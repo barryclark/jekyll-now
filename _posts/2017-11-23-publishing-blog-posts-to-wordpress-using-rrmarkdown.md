@@ -34,7 +34,7 @@ RMarkdown format, but if not it's basically a superset of standard markdown, whi
 So, you've finished your post and you're eager to share it with the world. Running this R script will do the trick:
 
 ```r
-pw &lt;- readLines(file("../data/wp_password.txt"))
+pw <- readLines(file("../data/wp_password.txt"))
 options(WordpressLogin = c(dsbrown = pw),
         WordpressURL = "http://www.findingsignal.xyz/xmlrpc.php")
 
