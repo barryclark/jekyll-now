@@ -87,4 +87,33 @@ Another issue is, the standard *Distributed Tensorflow* cannot exploit fully the
 
 Obviously, we cannot expect that the real performance can reach the theoretical one. However, according to the above 
 illustration, we can't ignore the fact that the conventional mechanism is wasting the hardware capacity. Motivated by 
-Facebook's paper, Uber opensourced their distributed framework named Horovod in Tensorflow.   
+Facebook's paper, Uber opensourced their distributed framework named Horovod in Tensorflow.  
+
+To understand the mechanism of Horovod, we have to study some MPI's concept. Horovod core principles are based on MPI to 
+aggregate the gradient. According to *Facebook*, in the deep learning network, each GPU has their own gradient and to 
+update the parameters, we must combine these gradients. As the models grow complex and the computation capacity increases, 
+it is hard to ignore the aggregation cost in the backprop. [Message Passing Interface](http://mpi-forum.org/) provides us 
+a way to address the issue. 
+Consider that we train a model on 4 servers with 4 GPUs in each.  
+- Size is the number of processes, in this case, 16. If GPUs are equipped with Hyper-Threading technology, there would 
+be 32, but it is for the future.  
+- Rank is the unique process ID from 0 to 15.  
+- Local rank is the unique process ID within the servers. To sum up, each GPU has two kinds of ID.  
+- Allreduce is an operation which combines the gradients from the GPUs and distributes back to them.  
+<p align="center">
+ <img src="/images/distributed-improvement/687474703a2f2f6d70697475746f7269616c2e636f6d2f7475746f7269616c732f6d70692d7265647563652d616e642d616c6c7265647563652f6d70695f616c6c7265647563655f312e706e67.png" alt="" align="middle">
+ <div align="center">MPI-Allreduce <a href="https://camo.githubusercontent.com/73a34c7e1ff1b19e8011027934ce997e2c1d5dcf/687474703a2f2f6d70697475746f7269616c2e636f6d2f7475746f7269616c732f6d70692d7265647563652d616e642d616c6c7265647563652f6d70695f616c6c7265647563655f312e706e67">Source</a></div>
+</p> 
+
+- Allgather is an operation that one process gathers data from the other processes.  
+<p align="center">
+ <img src="/images/distributed-improvement/687474703a2f2f6d70697475746f7269616c2e636f6d2f7475746f7269616c732f6d70692d736361747465722d6761746865722d616e642d616c6c6761746865722f616c6c6761746865722e706e67.png" alt="" align="middle">
+ <div align="center">MPI-Allreduce <a href="https://camo.githubusercontent.com/73a34c7e1ff1b19e8011027934ce997e2c1d5dcf/687474703a2f2f6d70697475746f7269616c2e636f6d2f7475746f7269616c732f6d70692d7265647563652d616e642d616c6c7265647563652f6d70695f616c6c7265647563655f312e706e67">Source</a></div>
+</p>  
+- Broadcast is an operation that diffuses the data from one process.  
+<p align="center">
+ <img src="/images/distributed-improvement/687474703a2f2f6d70697475746f7269616c2e636f6d2f7475746f7269616c732f6d70692d62726f6164636173742d616e642d636f6c6c6563746976652d636f6d6d756e69636174696f6e2f62726f6164636173745f7061747465726e2e706e67.png" alt="" align="middle">
+ <div align="center">MPI-Allreduce <a href="https://camo.githubusercontent.com/7173c02d44489ca6f680b40611c1c55234e98908/687474703a2f2f6d70697475746f7269616c2e636f6d2f7475746f7269616c732f6d70692d62726f6164636173742d616e642d636f6c6c6563746976652d636f6d6d756e69636174696f6e2f62726f6164636173745f7061747465726e2e706e67">Source</a></div>
+</p>  
+
+
