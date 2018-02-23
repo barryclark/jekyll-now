@@ -89,6 +89,7 @@ Obviously, we cannot expect that the real performance can reach the theoretical 
 illustration, we can't ignore the fact that the conventional mechanism is wasting the hardware capacity. Motivated by 
 Facebook's paper, Uber opensourced their distributed framework named Horovod in Tensorflow.  
 
+## Message Passing Interface (MPI)
 To understand the mechanism of Horovod, we have to study some MPI's concept. Horovod core principles are based on MPI to 
 aggregate the gradient. According to *Facebook*, in the deep learning network, each GPU has their own gradient and to 
 update the parameters, we must combine these gradients. As the models grow complex and the computation capacity increases, 
