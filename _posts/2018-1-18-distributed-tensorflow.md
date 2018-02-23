@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Distributed Tensorflow
+title: Distributed TensorFlow
 author: hoangbm
 ---
 
