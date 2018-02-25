@@ -52,7 +52,7 @@ MathJax を使っているので LaTeX 記法で数式も書けるし、画像�
 
 
 ## Overleaf + Beamer
-これ: [一例としてCCのテンプレート](https://www.overleaf.com/latex/templates/beamer-presentation/zxrfltwmbcrt#.WpKU9nWGPdE)
+これ: [テンプレートの一例（Creative Commons License）](https://www.overleaf.com/latex/templates/beamer-presentation/zxrfltwmbcrt#.WpKU9nWGPdE)
 
 LaTeX じゃないと気が済まないという人はこういう構成もありだと思う。[こんな感じ](https://www.overleaf.com/read/xdndnnwrnbwk)である。
 
