@@ -12,7 +12,7 @@ Welfenstr. 11a
 
 ## Kontakt
 **Telefon**: +49 176 80009085  
-**E-Mail**: [niklas@coelle-online.com](mailto:niklas@coelle-online.com)
+**E-Mail**: [niklas.coelle@gmail.com](mailto:niklas.coelle@gmail.com)
 
 ## Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV
 Niklas Cölle  
