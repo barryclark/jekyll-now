@@ -1,4 +1,4 @@
-<div class="posts">{% if include.onlytags %}{% assign posts=site.tags[include.onlytags] %}{% else %}{% assign posts=paginator.posts %}{% endif %}
+{% if include.onlytags %}{% assign posts=site.tags[include.onlytags] %}{% else %}<div class="posts">{% assign posts=paginator.posts %}{% endif %}
   
 {% for post in posts %}<article class="post">
 <h2 class="post-header">
