@@ -13,11 +13,10 @@ noindex: true
 </nav>
 <hr />
 
-{% if content %}
+<div class="posts">
 <article class="post">
 {{ content }}
 </article>
-{% endif %}
 
 {% include posts.html onlytags=page.title %}
 
