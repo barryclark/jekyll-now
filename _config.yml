@@ -9,7 +9,7 @@ name: Felicity Inc.
 description: Denk- und Zahnstocherfabrik.
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: {{site.baseurl}}/images/stronkes-brain.png
+avatar: https://raw.githubusercontent.com/lukeweidenwalker/LukeWeidenwalker.github.io/master/images/stronkes-brain.png
 
 #
 # Flags below are optional
