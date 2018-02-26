@@ -1,7 +1,7 @@
 ---
 layout: post
-author: || Luk.
 title: Digitales Papier.
+author: || Luk.
 ---
 
 Ein Holzort aus Wahn und Schall, für holzige Lettern und Verse. 
