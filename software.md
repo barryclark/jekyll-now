@@ -35,7 +35,7 @@ An R package implementing several methods of estimating a design-comparable stan
 
 An R package for calculating basic effect size indices for single-case designs, including several non-overlap measures and parametric effect size measures, and for estimating the gradual effects model developed by Swan and Pustejovsky (2017).
 
-- [Source code and installation instructions on Github](https://github.com/jepusto/scdhlm)
+- [Source code and installation instructions on Github](https://github.com/jepusto/SingleCaseES)
 - [Single case effect size calculator](https://jepusto.shinyapps.io/SCD-effect-sizes/): An interactive web application for calculating basic effect size indices.
 - [Gradual Effect Model calculator](https://jepusto.shinyapps.io/gem-scd/): An interactive web application for estimating effect sizes using the gradual effects model.
 
