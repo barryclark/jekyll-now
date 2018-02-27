@@ -244,6 +244,8 @@ Since the script run on a single machine with (possibly) multiple GPUs.
 ring-allreduce.  
 - <b>hvd.BroadcastGlobalVariablesHook(0)</b> helps to broacast the variables initialized by the first process to all other 
 processes to ensure consistent initialization.  
+- I divide the max_step by the number of GPUs as max_step in my subconsciousness as well as in the configuration file 
+is for a single GPU training, so in multiple GPUs training, we should divide the max_step by the number of GPUs.
 
 ## Tensor Fusion.  
 Recall that *Give the sufficient buffer, this paradigm can leverage the hardware capacity*, it means that this technique 
