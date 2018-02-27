@@ -26,20 +26,20 @@ For fun, I created this [compound interest](https://en.wikipedia.org/wiki/Compou
 #final-amount {
   text-align: center;
 }
-form {
+form.calc-input {
   margin: 0 auto;
   width: 275px;
 }
-form span {
+form.calc-input span {
   display: inline-block;
   width: 175px;
 }
-form input {
+form.calc-input input {
   width: 100px 
 }
 </style>
 
-<form>
+<form class="calc-input">
 <div><span>Initial balance</span><input type="number" name="start" step="0.01" value="100" min="0" required></div>
 <div><span>Rate</span><input type="number" name="rate" value="1" min="0" max="100" required></div>
 <div><span>Period (times a year)</span><input type="number" name="period" step="1" value="12" min="1" max="365" required></div>
