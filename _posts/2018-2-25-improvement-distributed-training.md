@@ -274,4 +274,8 @@ we have implemented Horovod in our classification training and the result is pro
 Amazon platform which allows the GPUs to be fully connected to each other.   
 
 
+# References:  
+- [Uber Engineering site](https://eng.uber.com/horovod/)
+- [Accurate, Large Minibatch SGD: Training ImageNet in 1 Hour](https://arxiv.org/pdf/1706.02677.pdf)
+
 
