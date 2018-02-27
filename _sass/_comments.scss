@@ -1,63 +1,63 @@
 section.comments {
-  article.comment-body {
-    border: none;
-    box-shadow: none;
-    padding: 0;
-  }
-  
-  .comment-list {
-    list-style-type: none;
-
-    img.avatar {
-      float: left;
-      height: 80px;
-      width: 80px;
-      margin: 0 10px 10px 0px;
-    }
-    
-    .author-name {
-      color: #222;
-      font-size: 20px;
-      font-weight: bold;
-    }
-	
-	a .author-name {
-	  color: #4183C4;
+	article.comment-body {
+		border: none;
+		box-shadow: none;
+		padding: 0;
 	}
 
-    time {
-      font-size: small;
-      color: black;
-      font-weight: 700;
-    }
+	.comment-list {
+		list-style-type: none;
 
-    .comment-content {
-      clear: left;
-    }
-  }
-  
-  .comment-list.top {
-    padding: 0;
-  }
+		img.avatar {
+			float: left;
+			height: 80px;
+			width: 80px;
+			margin: 0 10px 10px 0px;
+		}
 
-  .comment-list.top > li {
-    border: 1px solid #ddd;
-    box-shadow: 5px 5px 0px 0px #f1f1f1;
-    padding: 1em;
-    margin-bottom: 1em;
-  }
+		.author-name {
+			color: #222;
+			font-size: 20px;
+			font-weight: bold;
+		}
+
+		a .author-name {
+			color: #4183C4;
+		}
+
+		time {
+			font-size: small;
+			color: black;
+			font-weight: 700;
+		}
+
+		.comment-content {
+			clear: left;
+		}
+	}
+
+	.comment-list.top {
+		padding: 0;
+	}
+
+	.comment-list.top > li {
+		border: 1px solid #ddd;
+		box-shadow: 5px 5px 0px 0px #f1f1f1;
+		padding: 1em;
+		margin-bottom: 1em;
+	}
 }
 
 .new-comment {
-  label, textarea, input, button {
-      display: block;
-  }
-  
-  textarea, input {
-    width: 100%;
-  }
-  
-  input {
-    max-width: 25em;
-  }
+	label, textarea, input, button {
+		display: block;
+	}
+
+	textarea, input {
+		width: 100%;
+	}
+
+	input {
+		max-width: 25em;
+	}
 }
