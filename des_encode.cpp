@@ -20,60 +20,63 @@ void des_encryption_8(unsigned char *input, unsigned char *key, unsigned char *o
 	    desEncryptor.ProcessAndXorBlock(input,xorBlock,output);
 }
 
-
-string des_encode(string &plain, byte key[]) {
-	string cipher;
+void des_encryption(char *plaintext, char *key, char *ciphertext) {
+	char *subtext;
+	char *subcipher;
 	
-	try	{
-		cout << "plain text: " << plain << endl;
-		ECB_Mode<DES>::Encryption enc;
-		enc.SetKey(key, DES::DEFAULT_KEYLENGTH);
-		StringSource(plain, true, new StreamTransformationFilter(enc, new StringSink(cipher)));//add padding by StreamTransformationFilter
-	} catch(const CryptoPP::Exception &e){ 
-		cerr << e.what() << endl;
-		exit(1);
+	for(int i=0; i < sizeof plaintext; i=i+8) {
+		int start = i;
+		int end = start + 8;
+		copy(plaintext + start, plaintext + end, subtext);
+		des_encryption_8(subtext, key, subcipher)
+		copy(subcipher, subcipher + 8, ciphertext + start)
 	}
-	
-	return cipher;
+}
+
+void read_key(char *keystring, byte key[]) {
+	memset(key,0,DES::DEFAULT_KEYLENGTH);
+		
+	for(int i=0;i<DES::DEFAULT_KEYLENGTH;i++) {
+		if(keystring[i]!='\0') {
+			key[i]=(byte)keystring[i];
+		} else {
+			break;
+		}
+	}
 }
 
 int main(int argc, char * argv[]) {
 
-	fstream file1;
-	fstream file2;
+	ifstream infile;
+	ofstream outfile;
+	streampos size;
+	char *plaintext;
+	char *ciphertext;
 	byte key[DES::DEFAULT_KEYLENGTH];
 
 	if(argc!=4)	{
 		cout<<"usage:des_encode infile outfile key"<<endl;
 	} else {
-		file1.open(argv[1],ios::in);
-		file2.open(argv[2],ios::out);
-		//reading
-		stringstream buffer;
-		buffer << file1.rdbuf();
-		string plain(buffer.str());
-		//cout<<"plain text:"<<plain<<endl;
-		//get key
-		memset(key,0,DES::DEFAULT_KEYLENGTH);
+		infile.open(argv[1], ios::in | ios::binary | ios::ate);
+		outfile.open(argv[2], ios::out | ios::binary);
 		
-		for(int i=0;i<DES::DEFAULT_KEYLENGTH;i++) {
-			if(argv[3][i]!='\0') {
-				key[i]=(byte)argv[3][i];
-			} else {
-				break;
-			}
-		}
-		//print key
-		string encoded;
-		encoded.clear();
-		StringSource(key, sizeof(key), true, new HexEncoder( new StringSink(encoded)));
-		cout << "key: " << encoded<< endl;
-		//encode
-		string cipher=des_encode(plain,key);
-		file2<<cipher;
-		cout<<"cipher text stored in:"<<argv[2]<<endl;
+		if (infile.is_open()) {
 
-		file1.close();
-		file2.close();
+			size = infile.tellg();
+			plaintext = new char [size];
+			infile.seekg(0, ios::beg);
+			infile.read(plaintext, size);
+			
+			read_key(argv[3], key);
+			des_encryption(plaintext, key, ciphertext);
+			
+			outfile << ciphertext;
+			cout << "cipher text stored in: " << argv[2] << endl;
+		} else {
+			cout << "Unable to open file " << argv[1];
+		}
+		
+		infile.close();
+		outfile.close();
 	}
 }
