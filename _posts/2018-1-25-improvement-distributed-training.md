@@ -89,6 +89,7 @@ Obviously, we cannot expect that the real performance can reach the theoretical 
 illustration, we can't ignore the fact that the conventional mechanism is wasting the hardware capacity. Motivated by 
 Facebook's paper, Uber opensourced their distributed framework named Horovod in Tensorflow.  
 
+## Message Passing Interface (MPI)
 To understand the mechanism of Horovod, we have to study some MPI's concept. Horovod core principles are based on MPI to 
 aggregate the gradient. According to *Facebook*, in the deep learning network, each GPU has their own gradient and to 
 update the parameters, we must combine these gradients. As the models grow complex and the computation capacity increases, 
@@ -115,5 +116,160 @@ be 32, but it is for the future.
  <img src="/images/distributed-improvement/687474703a2f2f6d70697475746f7269616c2e636f6d2f7475746f7269616c732f6d70692d62726f6164636173742d616e642d636f6c6c6563746976652d636f6d6d756e69636174696f6e2f62726f6164636173745f7061747465726e2e706e67.png" alt="" align="middle">
  <div align="center">MPI-Allreduce <a href="https://camo.githubusercontent.com/7173c02d44489ca6f680b40611c1c55234e98908/687474703a2f2f6d70697475746f7269616c2e636f6d2f7475746f7269616c732f6d70692d62726f6164636173742d616e642d636f6c6c6563746976652d636f6d6d756e69636174696f6e2f62726f6164636173745f7061747465726e2e706e67">Source</a></div>
 </p>  
+
+## Ring-allreduce  
+The conventional data-parallel distributed training paradigm comprises 4 steps:  
+- Step 1: Each worker run a copy of training script and a portion of data. They will compute their local gradient.  
+- Step 2: The workers send their own gradient to the parameter-servers in order to combine the gradients.  
+- Step 3: The workers receive the combined gradient from the parameter-servers to update the model in each.  
+- Step 4: Repeat step 1.  
+
+There are some issues we must face when leveraging this paradigm:  
+- Decide the right ratio of workers to parameter-servers.  
+- It relates many components like clusters, workers, parameter-servers, etc...  
+
+In the early 2017, Baidu published his paper [Bringing HPC Techniques to Deep Learning](http://research.baidu.com/bringing-hpc-techniques-deep-learning/)  
+as an effort to replace the above step 2 and step 3 using a protocol called ring-allreduce. In this paradigm, there is 
+no parameter-servers to combine the gradient. The workers communicate with each other.  
+
+<p align="center">
+ <img src="/images/distributed-improvement/image4-2.png" alt="" align="middle">
+ <div align="center">How the workers combine the gradients between them <a href="http://eng.uber.com/wp-content/uploads/2017/10/image4-2.png">Source</a></div>
+</p>  
+Consider that there are N nodes in the network, each worker will communicate 2*(N-1) times with the others. In the first 
+(N-1) iteration, the gradients in the buffer are summed in the ring network fashion. In the second (N-1) iteration, we 
+replace the gradient in all the node by the new one. Give the sufficient buffer, this paradigm can leverage the hardware 
+capacity. Baidu suggest that this is the most bandwidth-optimal method until now. Furthermore, this method is more 
+intuitive than the standard one. The all-reduce method can be found in MPI's implementation like OpenMPI. The users just 
+have to modify their programs of averaging the gradient using allreduce operation.  
+
+## Introducing Horovod  
+Based on the previous observation, Uber has made several experiments and finally publish their stand-alone Python 
+package named Horovod. In Horovod, Baidu ring-allreduce implementation is replaced by NCCL by NVIDIA. NCCL provides us a 
+highly optimized ring-allreduce. In addition, NCCL 2 introduced the ability to run this operation across multiple machines 
+in the network, which enables us to leverage the computation capacity of the distributed network. 
+Not only that, Horovod could work with enormous models which resides on multiple GPUs while the original version can 
+only supported models fitting on a single GPU. Last but not least, the new API allows us to simplify our program much, 
+as illustrated followingly. 
+
+<div style="font-size: 75%;">
+ {% highlight python %}
+    def horovod_distributed_train(self):
+        hvd.init()
+        train_dir = os.path.join(self.train_cfg['train_dir'],
+                                 self.model_cfg['name'], 'train')
+                                 
+        cpkt_dir = os.path.join(self.common_cfg['log_root'],
+                                self.model_cfg['name'], 'checkpoint')
+
+        train_strategy = self.app.train_strategy(self.config, self.app)
+
+        with train_strategy.graph_def, train_strategy.cpu_device:
+            train_op = train_strategy.build_train_op()
+            model = train_strategy.get_model_instance()
+            self.app.build_graph_callback(model, train_op)
+
+            param_stats = tf.profiler.profile(graph=tf.get_default_graph(),
+                                              options=option_builder.ProfileOptionBuilder.trainable_variables_parameter())
+
+            sys.stdout.write('Total params:%d\n' % param_stats.total_parameters)
+            summary_hook = tf.train.SummarySaverHook(
+                save_steps=self.train_cfg['save_steps'],
+                output_dir=train_dir,
+                summary_op=tf.summary.merge([model.summary(), ])
+            )
+
+            restoring_saver = tf.train.Saver(
+                var_list=train_strategy.get_restoring_variables(
+                    self.train_cfg['restoring_global_step']),
+                max_to_keep=self.train_cfg['max_to_keep'])
+            training_saver = tf.train.Saver(
+                var_list=train_strategy.get_saving_variables(
+                    self.train_cfg['saving_global_step']),
+                max_to_keep=self.train_cfg['max_to_keep'])
+            checkpoint_hook = tf.train.CheckpointSaverHook(
+                cpkt_dir,
+                save_steps=self.train_cfg['save_steps'], saver=training_saver,
+                checkpoint_basename=model.__class__.__name__ + ".cpkt")
+
+            logger_hook = self._create_logger_hook(train_strategy)
+            app_stop_hook = self._create_stop_by_app_hook()
+
+            config = tf.ConfigProto(allow_soft_placement=True,
+                                    log_device_placement=self.train_cfg['log_device_placement'])
+
+            config.gpu_options.allow_growth = True
+            config.gpu_options.visible_device_list = str(hvd.local_rank())
+            hooks = [hvd.BroadcastGlobalVariablesHook(0),
+                     tf.train.StopAtStepHook(last_step=self.train_cfg['max_steps'] // hvd.size()),
+                     app_stop_hook,
+                     logger_hook]
+            if hvd.rank() == 0:
+                hooks.append(checkpoint_hook)
+                # NOTE: If the machine is the main worker, we will assign that checkpoint_hook 
+                # task to him
+
+            with tf.train.MonitoredTrainingSession(
+                    hooks=hooks,
+                    chief_only_hooks=[summary_hook],
+                    save_summaries_steps=0,
+                    config=config) as mon_sess:
+
+                if self.train_cfg['restore_sess']:
+                    print("Restoring saved session...")
+                    self._restore_session(restoring_saver, mon_sess,
+                                          self.train_cfg['restore_checkpoint_path'],
+                                          cpkt_dir)
+
+                if hasattr(self.app, 'session_start_callback'):
+                    self.app.session_start_callback(mon_sess, model)
+
+                dataset_loading_time = self.train_cfg.get('dataset_loading_time', 3)
+                print("Delay %ds for starting queue runners." % dataset_loading_time)
+                time.sleep(dataset_loading_time)
+                while not mon_sess.should_stop():
+                    mon_sess.run(train_op)
+
+            if hasattr(self.app, 'session_stop_callback'):
+                self.app.session_stop_callback()
+
+{% endhighlight %}
+ </div>  
+
+In the above code, there are some lines worth noticing:  
+- <b>hvd.init()</b> initializes Horovod.  
+- <b>config.gpu_options.visible_device_list = str(hvd.local_rank)</b> assigns a GPU to each of processes. Why local_rank ? 
+Since the script run on a single machine with (possibly) multiple GPUs.  
+- <b>opt=hvd.DistributedOptimizer(opt)</b> wraps the TensorFlow optimizer, which provides the ability to use 
+ring-allreduce.  
+- <b>hvd.BroadcastGlobalVariablesHook(0)</b> helps to broacast the variables initialized by the first process to all other 
+processes to ensure consistent initialization.  
+
+## Tensor Fusion.  
+Recall that *Give the sufficient buffer, this paradigm can leverage the hardware capacity*, it means that this technique 
+can perform best only if the tensors are large enough. In case of small tensors, we may fuse them first before 
+performing ring-allreduce on them. To do this, Horovod establishes a secondary buffer and selects some small tensors to 
+fit the fusion buffer. Obviously, the ring-allreduce operation is performed on the fusion buffer only.  
+
+## Horovod benchmark.  
+The detail benchmark can be found in the [Uber Engineering site](https://eng.uber.com/horovod/). To be short, Horovod 
+overpowers the traditional paradigm, esspecially when the number of GPUs grows higher.  
+
+<p align="center">
+ <img src="/images/distributed-improvement/image6-768x330.png" alt="" align="middle">
+ <div align="center">Comparison between Distributed TensorFlow and Horovod over the number of GPUs.<a href="http://eng.uber.com/wp-content/uploads/2017/10/image6.png">Source</a></div>
+</p>  
+
+Uber also make a comparison between 2 communication protocols TCP and RDMI. However, we won't discuss about it in this 
+blog. You could read about it in the original blog of Uber.  
+
+
+# Conclusion
+To sum up, Facebook's paper and Uber's framework really make an echo in the community. They provide us a way to leverage 
+distributing computing, which is important in the production. Horovod is still in its early stage of development, there 
+are still some issues with it like MPI installation and deep learning scaling. In [OtoNhanh.vn](https://www.otonhanh.vn/), 
+we have implemented Horovod in our classification training and the result is promising, especially when people use the 
+Amazon platform which allows the GPUs to be fully connected to each other.   
+
 
 
