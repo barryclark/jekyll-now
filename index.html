@@ -1,72 +1,12 @@
 ---
 layout: default
-modes: true
 home: true
 ---
 
   	{% include partials/head.html %}  	
 <main id="page-main" role="main">
 	<div id="layout">
-					<nav class="nav-scroll anm-moveFromLeftFade">
-						<div>
-							<label for="layout-gallery" title="ver en Galeria" id="label-gallery" class="anm-zoomIn delay-500"><b>&plusb;</b></label>
-							<label for="layout-list" title="ver en Lista compacta" id="label-list" class="anm-zoomIn delay-600"><b>&minusb;</b></label>
-							<label for="layout-simple" title="ver Gran formato" id="label-simple" class="anm-zoomIn delay-700"><b>&timesb;</b></label>
-							<label id="separador" class="anm-zoomIn delay-200">&boxv;</label>
-							<label for="theme-dark" id="label-dark" data-title="Dark theme" title="Modo Oscuro" class="anm-zoomIn delay-800"><b>&FilledSmallSquare;</b></label>
-							<label for="theme-soft" id="label-soft" data-title="Soft theme" title="Modo Rojo" class="anm-zoomIn delay-900"><b>&star;</b></label>
-							<label for="theme-light" id="label-light" data-title="Light theme" title="Modo claro" class="anm-zoomIn delay-1000"><b>&EmptySmallSquare;</b></label>
-						 </div>
-					</nav>
-					<input type="radio" name="layout" id="layout-gallery" aria-hidden="true" hidden>
-					<input type="radio" name="layout" id="layout-list" aria-hidden="true" hidden>
-					<input type="radio" name="layout" id="layout-simple" aria-hidden="true" hidden checked>
-					<!-- Theme inputs (invisibles) -->		
-					<input type="radio" id="theme-light" name="theme" aria-hidden="true" hidden>
-					<input type="radio" id="theme-soft" name="theme" aria-hidden="true" hidden>
-					<input type="radio" id="theme-dark" name="theme" aria-hidden="true" hidden>
-  		{% for post in paginator.posts %}
-    	<div id="layout-result">
-<div class="content">							
-      		<article class="anm-moveFromBottomFade delay-1000">
-				<h3><a href="{{ site.baseurl }}{{ post.url }}" title="Ver {{ post.title }}">{{ post.title }}</a></h3>
-				<strong>{{ post.category }}</strong>
-        		<div>{% if post.id %}<a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}"><img class="blog-img" src="https://i1.ytimg.com/vi/{{ post.img }}/maxresdefault.jpg" alt="ver online {{ post.title }}" rel="foto de {{ post.title }} , {% for tag in post.tags %}{{ tag }}, {% endfor %}"></a>{% endif %}{{ post.excerpt }}</div>
-      			<nav><a href="{{ site.baseurl }}{{ post.url }}" class="read-more" title="Ver online {{ post.title }}">&rtrif;</a></nav>
-      		</article>
-		{% if paginator.total_pages > 1 %}
-		<div class="pagination">
-    	{% if paginator.previous_page %}
-    	{% if paginator.page == 2 %}
-        <a href="{{ site.siteurl }}/" title="Previo">&laquo; Prev</a>
-    	{% else %}
-        <a href="{{ site.siteurl }}/page{{ paginator.previous_page }}/"  title="Anterior">&laquo; Anterior</a>
-    	{% endif %}    
-		{% else %}
-    	<span>&laquo; Prev</span>
-		{% endif %}
-
-	    {% if paginator.next_page %}
-    	<a class='next' href="{{ site.siteurl }}/page{{ paginator.next_page }}/"  title="Siguiente">Siguiente &raquo;</a>
-		{% else %}
-    	<span class='next' title="Siguiente">Next &raquo;</span>
-    	{% endif %}
-  		</div>
-  		{% endif %}
-
-</div>
-		</div>
-  		{% endfor %}
-   	<script src="{{ site.baseurl }}/hipertextos/js/jquery-1.11.1.js"></script>
-	<script src="{{ site.baseurl }}/hipertextos/js/infinite-srcoll.js"></script>
-
-	<script type="text/javascript">
-	// content selector is used to extract the additional items 
-	$('.content').jscroll({
-	    contentSelector: ".content",
-	    nextSelector: '.next'
-	});
-	</script>		
+	
 	</div>
 	<em><hr></em>
 	<div>
