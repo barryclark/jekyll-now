@@ -26,14 +26,26 @@ void des_encryption(unsigned char *plaintext, unsigned char *key, unsigned char 
 	
 	for(int i=0; i < sizeof plaintext; i=i+8) {
 		int start = i;
-		int end = start + 8;
-		copy(plaintext + start, plaintext + end, subtext);
+		int end;
+		
+		if(i + 8 < sizeof plaintext) {
+			end = start + 8;
+			copy(plaintext + start, plaintext + end, subtext);
+		} else {
+			end = sizeof plaintext;
+			unsigned int size = 8 - (end - start);
+			unsigned char *pad;
+			memset(pad,(unsigned char)size,size);
+			copy(plaintext + start, plaintext + end, subtext);
+			copy(pad, pad + size, subtext + size);
+		}
+		
 		des_encryption_8(subtext, key, subcipher);
 		copy(subcipher, subcipher + 8, ciphertext + start);
 	}
 }
 
-void read_key(unsigned char *keystring, unsigned char *key) {
+void read_key(char *keystring, unsigned char *key) {
 	memset(key,0,DES::DEFAULT_KEYLENGTH);
 		
 	for(int i=0;i<DES::DEFAULT_KEYLENGTH;i++) {
@@ -64,7 +76,7 @@ int main(int argc, char * argv[]) {
 			size = infile.tellg();
 			plaintext = new unsigned char[size];
 			infile.seekg(0, ios::beg);
-			infile.read(plaintext, size);
+			infile.read((char*)plaintext, size);
 			
 			read_key(argv[3], key);
 			des_encryption(plaintext, key, ciphertext);
