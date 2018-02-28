@@ -3,6 +3,7 @@
 
 footer, #follows, #follows-big, #icons, #covers, .nav-scroll, #web-credits, #page-header, #post-header, #post-share, #date {
 text-align: center;}
+main {font-family:'Lato', sans-serif;padding-top:1px;margin-bottom: 0;}
 /* Nav */
 #site-nav {font-family:'Lato';background: var(--color-soft-black) !important;border-bottom: none;font-size: 17px;color: var(--color-grey);}
 #site-nav a {color:var(--color-soft)!important;text-transform:uppercase;font-weight: bold ;border: none;}
@@ -28,7 +29,6 @@ text-align: center;}
 /* Footer */ 
 #page-footer {background:#222;color:#999;box-shadow: inset 0 0 32px rgba(0, 0, 0, .32);bottom: 0px;width: 100%;}
 #page-footer em small a {border: thin solid #222;}
-#lato {width:100%;font-family:'Lato', sans-serif;}
 #page-footer h3 a {color:var(--color-grey) ;text-decoration:none;font-size: 32px;line-height:1.5;font-weight: lighter ;letter-spacing: 0.12em;}
 #page-footer h3 a:hover {color:var(--color-link) ;font-size: 42px;line-height:1.0;font-weight: lighter ;letter-spacing: 0.18em;}
 
@@ -38,8 +38,6 @@ text-align: center;}
 #page-footer #sitemap strong em a {background: transparent!important;font-size:17px;padding:10px 15px 10px 15px;letter-spacing: 0.069em;}
 #page-footer #sitemap strong em a:hover {color:var(--color-link);text-decoration:none;}
 #page-footer #sitemap svg {width:17px;}
-
-main { padding-top:1px;margin-bottom: 0;}
 
 @media (max-width: 1250px) {
 
