@@ -26,7 +26,7 @@
 
         appendString += '</div>';
         appendString += '<div class="panel-footer">';
-        var itemLabels = item.label.split(',');
+        var itemLabels = item.label;
         var printLabels = arrayIntersect(itemLabels,usedLabels);
 
         appendString += printLabels.join('|');
