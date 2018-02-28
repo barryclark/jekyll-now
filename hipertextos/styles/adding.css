@@ -5,7 +5,7 @@ footer, #follows, #follows-big, #icons, #covers, .nav-scroll, #web-credits, #pag
 text-align: center;}
 /* Nav */
 #site-nav {background: var(--color-soft-black) !important;border-bottom: none;font-size: 17px;color: var(--color-grey);}
-#site-nav a b {font-family:'Mouse Memoirs', sans-serif;font-size: 26px;font-weight: lighter ;letter-spacing: 0.032em;}
+#site-nav a b {font-family:'Lato', sans-serif;font-size: 26px;font-weight: lighter ;letter-spacing: 0.032em;}
 #site-nav a {color:var(--color-grey)!important;font-weight: bold ;border: none;}
 #site-nav a:visited { color: var(--color-grey);text-decoration: none;}
 #site-nav a:hover, #site-nav a b:hover { color: var(--color-white);text-decoration: none;}
@@ -25,7 +25,7 @@ body {text-align: justify;-moz-hyphens:none;-ms-hyphens:none;-webkit-hyphens:non
 p, ul {font-size: 18px;line-height: 27px;}
 main {padding-bottom:0!important;}
 #page-header.cover {background-image: url("/img/texture/videosmanguis.gif");background-color:var(--color-black);background-size:180px 180px;background-repeat: repeat;image-rendering: crisp-edges;}
-#page-header.cover h1 {margin-bottom:0;font-family:'Mouse Memoirs', sans-serif;letter-spacing: 0.01em;text-shadow:0 3px 7px rgba(0,0,0,.23) ;}
+#page-header.cover h1 {margin-bottom:0;font-family:'Lato', sans-serif;letter-spacing: 0.01em;text-shadow:0 3px 7px rgba(0,0,0,.23) ;}
 #page-header.cover h2 small {letter-spacing: 0.015em;text-shadow:0 3px 3px rgba(0,0,0,.23) }
 #page-header.page-title {color:var(--color-white);border:none;background-color:var(--color-hard-grey);box-shadow:inset 0 3px 21px rgba(0,0,0,.25);background-image: url("/img/texture/dark_grey.png");background-size:256px 256px;background-attachment:fixed ; background-repeat: repeat;image-rendering: crisp-edges;}
 #cover-logo { position: absolute ;left: 0; right: 0;margin-left: auto; margin-right: auto;top:16px;width: 200px;}
@@ -49,24 +49,7 @@ section.cover-justify p {padding: 6px 18px 0 18px;line-height: 23px;font-size: 1
 #icons a:hover {border:thin solid var(--color-blue);}
 figure em a {border:none;border-bottom;line-height:0.2em;padding:12px 4px;}
 
-/* TAGS & CATGEGORIES */
-a.tagged  {color:var(--color-hardgrey) ;font-size:17px;text-decoration: none;border:thin solid currentcolor;display:inline-block ; padding:2px 9px 3px 9px;margin-top:8px;border-radius:23px;}
-a.tagged:hover {color:var(--color-white) ;background-color:var(--color-hardgrey) ;box-shadow:inset 0 1px 12px rgba(0,0,0,.3);}
-.cat-post {height:110px;width:48%;margin-right:2%;float:left;max-height:100px;}
-.cat-post h6 {line-height:1.2em;}
-.cat-img {width: 132px;height: auto;float: left;margin: 5px 16px 0 0;}
-.cat-img img {object-fit:cover ;width:100%;height:80px;}
-.lab-post {height:75px;width:48%;margin-right:2%;float:left;max-height:75px;}
-.lab-post h6 {line-height:1.2em;}
-.lab-img {width: 110px;height: auto;float: left;margin: 5px 16px 0 0;}
-.lab-img img {object-fit:cover ;width:100%;height:69px;}
 
-/* Portfolio Nav */
-#page-nav {border-bottom: none;border-bottom:thin solid currentcolor;color:currentcolor;text-transform:uppercase ;} 
-#page-nav a {min-width: 9%;margin:0;max-height:100%;}
-#page-nav a:hover {text-decoration:none;border:thin solid rgba(0,0,0,.06);background:rgba(0,0,0,.02);}
-#page-nav a:visited {color: var(--color-grey) ;}
-#page-nav div {height:65px;font-size:15px;letter-spacing: 0.06em;}.serveis#page-main {padding:0;}
 /* nav Scroll */
 .nav-scroll {border-bottom:1px solid var(--color-transgrey) ;height:65px;}
 .nav-scroll label {font-size: 11px;line-height: 12px;font-weight: normal;}
@@ -97,35 +80,11 @@ img.dialog-svg {width:70px;height:70px;border-radius:21%;}
 #llicencia {text-align:center;color:var(--color-hardgrey);}
 #llicencia img {width:48px;}
 .cc-icon img (width:64px;)
-/* Coffee? */
-#coffee svg {width:64px;text-align:center!important;}
-#coffee  em img {width:230px;margin-bottom:32px;}
-#coffee {color: var(--color-hardgrey);height:100%;text-align: center !important;}
-#coffee p {text-align: justify;-moz-hyphens:none;-ms-hyphens:none;-webkit-hyphens:none;-o-hyphens:none;hyphens:none;}
-
-/* Classic Gallery */
-.listed .img-icon {width:32px;}
-.listed u {margin-left:12px;}
-.listed section {border:none;line-height:2em;font-size:0.2em;-webkit-column-count: 3;-moz-column-count: 3;column-count: 3;}
-.imagens img {margin:0!important;padding:0!important;border:none;}
-.listed {padding:0!important;}
-.listed img {	margin:0!important;padding:0!important;	}
-.listed article { border:none;overflow: hidden;width: 100%;display: block;display: inline-block;margin:0!important;padding:0!important;-webkit-column-break-inside: avoid;-moz-column-break-inside:avoid;-moz-page-break-inside:avoid;page-break-inside: avoid;}
-em small #go-up { background:rgba(0,0,0,.1);padding:15px;border-radius:50%; }
-em small #go-up:hover {background:rgba(0,0,0,.3); }
-
-/* SEARCH */
-.buscar#page-header {background-image: url("/img/texture/h_seamless.png");background-size:400px 400px;background-repeat: repeat;image-rendering: crisp-edges;border:none!important;box-shadow:inset 0 0 6px rgba(0,0,0,.12);}
-.buscar#page-header h1 {font-family:'Mouse Memoirs', sans-serif;font-weight: lighter ;}
-.buscar form input  {border:2px solid var(--color-softgrey);background:var(--color-white)!important;font-size:25px;height:46px;border-radius:32px;padding:0 23px 0 23px;}
-.buscar form input:focus  {background:var(--color-white)  !important;letter-spacing: 0.025em;box-shadow:none;border-color:var(--color-grey);}
-.buscar form input ~ input[type=submit] {display: inline-block;color: var(--color-grey);transform: rotate(40deg);width:45px;height:45px;padding:0 0 3px 6px;font-size:30px;}
-.buscar form input ~ input[type=submit]:hover {color:var(--color-grey) ;background-color:var(--color-white)!important;border-color:var(--color-grey);}
 
 /* Footer */ 
 #page-footer {background:#222;color:#999;box-shadow: inset 0 0 32px rgba(0, 0, 0, .32);bottom: 0px;width: 100%;}
 #page-footer em small a {border: thin solid #222;}
-#mouse {width:100%;font-family:'Mouse Memoirs', sans-serif;}
+#lato {width:100%;font-family:'Lato', sans-serif;}
 #page-footer h3 a {color:var(--color-grey) ;text-decoration:none;font-size: 32px;line-height:1.5;font-weight: lighter ;letter-spacing: 0.12em;}
 #page-footer h3 a:hover {color:var(--color-link) ;font-size: 42px;line-height:1.0;font-weight: lighter ;letter-spacing: 0.18em;}
 
