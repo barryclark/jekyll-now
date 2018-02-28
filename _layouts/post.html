@@ -1,17 +1,62 @@
 ---
 layout: default
+posting: true
 ---
 
-<article class="post">
-  <h1>{{ page.title }}</h1>
+	<header id="post-header" class="head-band anm-moveFromLeft">
+    <div id="back-header" class="img-bolo head-band anm-fadeIn delay-1000 extra-slow" style="background-image: url('https://i1.ytimg.com/vi/{{ page.img }}/maxresdefault.jpg');">
+	</div>
+			<h1 id="post-title" class="anm-moveFromBottomFade delay-800 extra-slow">{{ page.title }}</h1>
+	</header>
+    <main id="page-main" class="post-dark">
+		<div>
+			<article id="post-video" class="post">
+				<div id="entry" class="anm-fadeIn delay-1500" itemscope itemtype="http://schema.org/Movie">
+					<div>
+						<figure>
+							<div>
+								<iframe width="1280" height="720" src="https://www.youtube.com/embed/{{ page.img }}?autoplay=1&rel=0" frameborder="0" allowfullscreen></iframe>
+							</div>
+						</figure>
+					</div>
+					<figure id="post-img">
+						<img src="https://i1.ytimg.com/vi/{{ page.img }}/maxresdefault.jpg" alt="{% for tag in page.tags %} {{ tag }}, {% endfor %}">
+					</figure>
+	    			{{ content }}
+				</div>
+				<em><hr></em>
+				<div id="labels">
+    {% for tag in page.tags %}
+      <a href="{{ site.baseurl }}/blog/tags/#{{ tag }}" class="tagged">{{ tag }}</a>
+    {% endfor %}
+				</div>
 
-  <div class="entry">
-    {{ content }}
-  </div>
-
-  <div class="date">
-    Written on {{ page.date | date: "%B %e, %Y" }}
-  </div>
-
-  {% include disqus.html %}
-</article>
+				<aside id="post-share">
+					{% include share.html %}
+				</aside>
+				<div id="date">
+    				<p>Publicat el {{ page.date | date: '%Y-%m-%d' }}</p>
+  				</div>
+  				<hr>
+				<div class="PageNavigation">
+				  {% if page.previous.url %}
+				  	<div class="prev">
+				  	<a class="thumb-2" href="{{ page.previous.url }}"><img src="https://i1.ytimg.com/vi/{{ page.previous.img }}/maxresdefault.jpg" rel="{% for tag in page.previous.tags %} {{ tag }}, {% endfor %}"></a>
+				  	<a class="thumb-4" href="{{ page.previous.url }}"><h5>&laquo; Anterior</h5><h6>{{ page.previous.title }}</h6></a>
+					</div>
+				  {% endif %}
+				  {% if page.next.url %}
+					<div class="next">
+				  	<a class="thumb-4" href="{{ page.next.url }}"><h5>Siguiente &raquo;</h5><h6>{{ page.next.title }}</h6></a>
+					<a class="thumb-2" href="{{ page.next.url }}"><img src="https://i1.ytimg.com/vi/{{ page.next.img }}/maxresdefault.jpg" rel="{% for tag in page.next.tags %} {{ tag }}, {% endfor %}"></a>
+					</div>
+				  {% endif %}
+				</div>
+				<hr>
+				<div id="related-posts">
+					{% include partials/related.html %}
+  				</div>
+  				<hr>
+			</article>
+		</div>
+	</main>

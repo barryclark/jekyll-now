@@ -1,0 +1,27 @@
+/* Home ANIME */
+
+body {
+	width: 100wh;
+	height: 90vh;
+	color: #EA6666;
+	background: linear-gradient(45deg, #F5AB35, #EA6666, #7895B5, #408EBE);
+	background-size: 300% 300%;
+	-webkit-animation: gradient 32s ease infinite;
+	-moz-animation: gradient 32s ease infinite;
+	animation: gradient 32s ease infinite;
+}
+@-webkit-keyframes gradient {
+	0% { background-position: 0% 50%}
+	50% {background-position: 100% 50%}
+	100% {background-position: 0% 50%}
+}
+@-moz-keyframes gradient {
+	0% {background-position: 0% 50%}
+	50% {background-position: 100% 50%}
+	100% {background-position: 0% 50%}
+}
+@keyframes gradient {
+	0% {background-position: 0% 50%}
+	50% {background-position: 100% 50%}
+	100% {background-position: 0% 50%}
+}

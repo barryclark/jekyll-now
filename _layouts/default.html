@@ -1,50 +1,122 @@
 <!DOCTYPE html>
-<html>
+<html lang="es-ES">
   <head>
+    <meta name="encoding" charset="utf-8" />
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
-
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+	<link rel="canonical" href="http://videosmanguis.net/"/>
+	
     {% include meta.html %}
 
     <!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/styles/screen.min.css" />
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/styles/adding.css" />
+	{% if page.comments %}<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/styles/adding-blog.css" />{% endif %}
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/styles/anime.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+	<link href="https://fonts.googleapis.com/css?family=Mouse+Memoirs" rel="stylesheet">
+    {% include favicons.html %}
 
-    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+	
   </head>
 
   <body>
-    <div class="wrapper-masthead">
-      <div class="container">
-        <header class="masthead clearfix">
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
 
-          <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-            <p class="site-description">{{ site.description }}</p>
-          </div>
+			<!-- Theme inputs (invisibles) -->		
+		<input type="radio" id="theme-light" name="theme" aria-hidden="true" hidden>
+		<input type="radio" id="theme-soft" name="theme" aria-hidden="true" hidden>
+		<input type="radio" id="theme-dark" name="theme" aria-hidden="true" hidden>
 
-          <nav>
-            <a href="{{ site.baseurl }}/">Blog</a>
-            <a href="{{ site.baseurl }}/about">About</a>
-          </nav>
-        </header>
-      </div>
-    </div>
+	
+	
+	<!-- Page content -->
+	<div class="page" id="page">
+  	{% if page.comments %}
+	{% include partials/navigation/nav-article.html %}
+	{% else %}
+	{% include partials/navigation/nav.html %}
+	{% endif %}
 
-    <div id="main" role="main" class="container">
       {{ content }}
-    </div>
+    {% include partials/footer.html %}
+	</div>
 
-    <div class="wrapper-footer">
-      <div class="container">
-        <footer class="footer">
-          {% include svg-icons.html %}
-        </footer>
-      </div>
-    </div>
+  	{% if page.modes %}
+	<!-- Tools switcher -->  		
+  	<div id="tools-switcher">
+  		<label for="tools-check" data-title="Modos" class="pophover">+</label>
+  	</div>
+	<!-- Tools nav -->
+	<input type="checkbox" id="tools-check" name="Modos" aria-hidden="true" hidden>
+	<nav id="tools-nav">
+		<label for="tools-check" id="label-tools" data-title="Cerrar" class="pophover">x</label>
+		<label for="theme-dark" id="label-dark" data-title="Modo Oscuro" class="pophover"></label>
+		<label for="theme-soft" id="label-soft" data-title="Modo Rojo" class="pophover"></label>
+		<label for="theme-light" id="label-light" data-title="Modo Claro" class="pophover"></label>
+	</nav>
+	{% endif %}
+	
+    <!-- Scripts
+    ================================================== -->
+  	<script src="{{ site.baseurl }}/hipertextos/js/icons.js"></script>
+  	<script src="{{ site.baseurl }}/hipertextos/js/anime.js"></script>
+  	{% if page.comments %}
+	<script type="text/javascript">
+  		$(document).ready(function() {
+    		$("[href]").each(function() {
+    		    if (this.href == window.location.href) {
+    	        	$(this).addClass("active");
+    	    	}
+    		});
+		});
+  	</script>{% endif %}
+
+{% if page.home %}
+  	<script type="application/ld+json">
+{ "@context": "http://schema.org", 
+ "@type": "Blog",
+ "keywords": "humor videos graciosos videos divertidos notícias series cine películas Star Wars Stranger Things Juego de Tronos review youtuber youtube vacas manguis", 
+ "url": "http://videosmanguis.net",
+ "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://videosmanguis.net"
+  },
+ "author": {
+    "@type": "Person",
+    "name": "Videos Manguis",
+    "sameAs": [
+        "https://youtube.com/c/VideosManguis",
+        "https://twitter.com/videosmanguis",
+        "https://www.facebook.com/Videos-Manguis-232512496769704",
+        "https://plus.google.com/u/0/+VideosManguis",
+        "https://instagram.com/videosmanguis",
+        "https://github.com/vacaceo"
+    ]
+  }
+ }
+</script>
+{% endif %}
+{% if page.comments %}
+	<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "VideoObject",
+  "name": "{{ page.title }}",
+  "description": "{{ page.excerpt }}",
+  "thumbnailUrl": [
+    "https://i1.ytimg.com/vi/{{ page.img }}/maxresdefault.jpg",
+    "http://img.youtube.com/vi/{{ page.img }}/hqdefault.jpg",
+    "http://img.youtube.com/vi/{{ page.img }}/mqdefault.jpg"
+   ],
+  "uploadDate": "{{ page.date }}",
+  "contentUrl": "http://videosmanguis.net{{ page.url }}",
+  "embedUrl": "https://www.youtube.com/embed/{{ page.img }}"
+}
+	</script>
+{% endif %}
 
     {% include analytics.html %}
   </body>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+
+    {% include meta-serveis.html %}
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+	
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/styles/screen.css" />
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/styles/components.css" />
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/styles/helpers.css" />
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/styles/adding.css" />
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/styles/adding-serveis.css" />
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/styles/anime.css" />
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+
+    {% include favicons.html %}
+  </head>
+
+  <body>
+	<!-- Page content -->
+	<div class="page serveis-page" id="page">
+  	{% include partials/navigation/nav-serveis.html %}
+	{% include partials/header-serveis.html %}
+		<nav id="page-nav" class="nav-scroll">
+			<div>
+				<a href="#section-web" title="Text" class="anm-zoomIn delay-600"><img src="{{ site.baseurl }}/hipertextos/svg/html5.svg" alt="enllaç secció web"><br>Web</a>
+				<a href="#section-brand" title="Forms" class="anm-zoomIn delay-700"><img src="{{ site.baseurl }}/hipertextos/svg/diamond.svg" alt="enllaç secció Branding"><br>Branding</a>
+				<a href="#section-paint" title="Tables" class="anm-zoomIn delay-800"><img src="{{ site.baseurl }}/hipertextos/svg/photos.svg" alt="enllaç secció Gràfics"><br>Gràfics</a>
+				<a href="#section-print" title="Navigation" class="anm-zoomIn delay-900"><img src="{{ site.baseurl }}/hipertextos/svg/printer.svg" alt="enllaç secció imprimir"><br>Imprimir</a>
+				<a href="#coffee" title="Fem un cafè?" class="anm-zoomIn delay-1000"><img src="{{ site.baseurl }}/hipertextos/svg/coffee.svg" alt="enllaç a pendre un cafè"><br>Cafè?</a>
+			 </div>
+		</nav>
+  	<main id="page-main" class="serveis">
+		<section id="section-web" class="anm-fadeIn delay-1500">
+			<hr><br>
+			<img src="{{ site.baseurl }}/hipertextos/svg/html5.svg" alt="Secció web" class="big-icon">
+			<h2>Disseny Web</h2>
+			<h4><small>HTML5 & CSS3</small></h4>
+			<div>
+				<div class="cell-6 pushed-6 text-left">
+					<h4>Un Disseny exclusiu per a cada projecte.<br>
+					Sense Plantilles.</h5>
+					<div class="thumb">
+						<ul>
+							<li><b>100% Autogestionable</b></li>
+							<li><b>Sense manteniment</b></li>
+							<li><b>Posicionament SEO</b></li>
+							<li><b>Hosting Gratuït</b></li>
+							<li><b>100% responsive</b></li>
+						</ul>
+					</div>
+					<div id="responsive" class="thumb-6">
+						<img src="{{ site.baseurl }}/img/responsive.png" alt="Imatge sobre adaptabilitat web">
+					<br>
+					</div>
+					<div id="browser-ios" class="thumb">
+						<em><i class="icon-apple" alt="icona apple"></i></em>
+						<em><i class="icon-android" alt="icona android"></i></em>
+						<em><i class="icon-windows" alt="icona windows"></i></em>
+						<em><i class="icon-safari" alt="icona navegador safari"></i></em>
+						<em><i class="icon-chrome" alt="icona navegador chrome"></i></em>
+						<em><i class="icon-firefox" alt="icona navegador firefox"></i></em>
+						<em><i class="icon-opera" alt="icona navegador opera"></i></em>
+						<em><i class="icon-IE" alt="icona navegador explorer"></i></em>
+					<br>
+					</div>
+					<div class="thumb">
+							<h6 class="anm-scaleUp delay-2000"><a href="{{ site.baseurl }}/about/">Contactar »</a></h6>
+					</div>
+				</div>
+				<div class="cell-10 pushed-1">
+					<section id="resumed-web">
+						<em class="cell-x1"><i class="icon-support" alt="icona assesoría"></i><br>Assesoría</em>
+						<em class="cell-x1"><i class="icon-star" alt="icona branding"></i><br>Branding</em>
+						<em class="cell-x1"><i class="icon-diamond" alt="icona logos"></i><br>Logos</em>
+						<em class="cell-x1"><i class="icon-warning" alt="icona disseny"></i><br>Disseny</em>
+						<em class="cell-x1"><i class="icon-domain" alt="icona edició web"></i><br>Edició Web</em>
+						<em class="cell-x1"><i class="icon-landingpage" alt="icona redisseny"></i><br>Redisseny</em>
+						<em class="cell-x1"><i class="icon-target" alt="icona seo i sem"></i><br>SEO i SEM</em>
+						<em class="cell-x1"><i class="icon-share2" alt="icona xarxes socials"></i><br>Xarxes</em>
+						<em class="cell-x1"><i class="icon-cart" alt="icona tenda online"></i><br>Tenda</em>
+						<em class="cell-x1"><i class="icon-play" alt="icona videos"></i><br>Video</em>
+					</section>
+				</div>
+			</div>
+		</section>
+		<section id="section-brand"  class="anm-fadeIn delay-1500">
+			<hr><br>
+			<img src="{{ site.baseurl }}/hipertextos/svg/diamond.svg" alt="Secció Branding" class="big-icon">
+			<h2>Branding</h2>
+			<h4><small>Imatge Coorporativa</small></h4>
+		<div>
+			<div class="cell-6 text-right">
+				<h4>Disseny Coorporatiu<br>
+				Creació de marca identitària</h4>
+			</div>
+			<hr>
+			<div class="cell-6 text-right">
+				<h5>Disseny Vectorial<br>
+				Briefing Creatiu<br>
+				Xarxes Socials<br>
+				Fulls d'estil<br>
+				Tipografíes<br>
+				Papeleria<br>
+				Targetes</h5>
+				<h6 class="anm-scaleUp delay-2000"><a href="{{ site.baseurl }}/about/">Contactar »</a></h6>
+				<br>
+			</div>
+			<div id="diamond" class="thumb-4 anm-fadeIn delay-1500">
+				<div id="diamond-base" alt="Secció Branding"></div>
+				<hr>
+			</div>
+		</div>
+			<hr>
+		</section>
+		<section id="section-paint" class="anm-fadeIn delay-1500">
+			<hr><br>
+			<img src="{{ site.baseurl }}/hipertextos/svg/photos.svg" alt="Secció Gràfics" class="big-icon">
+			<h2>Gràfics</h2>
+			<h4><small>Ilustració & retoc fotogràfic</small></h4>
+			<div>
+				<div id="petals-case">
+						<img src="{{ site.baseurl }}/img/petals.png" class="petals anm-scaleUp delay-2000" alt="imatge realísta de flor violeta">
+						<img src="{{ site.baseurl }}/img/petals-shadow.png" class="petals-shadow anm-scaleUp delay-2000" alt="sombra de la flor">
+					<hr>
+				</div>
+				<div class="thumb-6 pushed-6 text-left">
+					<h4>Creacions exclusives.<br>
+					Més de 20 anys d'experiència</h4>
+					<div id="resumed-paint" class="thumb">
+						<em><h5><i class="icon-star"></i>Il·lustració</h5> Creacions Artístiques 100% Originals.</em><br>
+						<em><h5><i class="icon-film"></i>Matte Painting</h5> Recursos per a post-producció de cine (chroma i 3D Mapping)</em><br>
+						<em><h5><i class="icon-share2"></i>Xarxes Socials</h5> Creació i adaptació d'imatges per a Xarxes Socials</em><br>
+						<em><h5><i class="icon-camera"></i>Fotografía</h5> Creació i edició de fotografíes per a us coorporatiu</em><br>
+						<em><h5><i class="icon-folder"></i>Banc d'imatges</h5> Creació de bancs d'imatges temàtics de calitat i lliures de drets</em><br>
+					</div>
+					<hr>
+					<h6 class="anm-scaleUp delay-2000"><a href="{{ site.baseurl }}/about/">Contactar »</a></h6>
+				</div>			
+			</div>			
+			<hr>
+		</section>
+		<section id="section-print"  class="anm-fadeIn delay-1500">
+			<hr><br>
+			<img src="{{ site.baseurl }}/hipertextos/svg/printer.svg" alt="Secció Immpressions" class="big-icon">
+			<h2>Imprimir</h2>
+			<h4><small>Treballs per a imprempta</small></h4>
+			<div>
+				<div class="cell-6 text-right">
+					<h4>Si es per imprimir,<br>
+					jo t'ho puc dissenyar.</h4>
+						<div id="resumed-print" class="cell-6 pushed-6">
+							<em><h5>Cartells</h5>Disseny per a cartells i flyers. Creació i/o adaptació de imatge coorporativa.</em>
+							<em><h5>Targetes</h5>Edició de targetes coorporatives. Logotips, tipografíes i colors.</em>
+							<em><h5>Impressió</h5>Tots els soports i formats amb professionals especialitzats.</em>
+							<em><h5>Distribució</h5>Distribució de flyers i cartells amb els principals professionals.</em>
+						</div>
+					<h6 class="anm-scaleUp delay-2000"><a href="{{ site.baseurl }}/about/">Contactar »</a></h6>
+				</div>
+			</div>
+			<hr>
+		</section>
+    {% include partials/coffee.html %}   		
+	</main>
+    {% include partials/footer.html %}
+	</div>
+		<!-- Out of page
+		================================================== -->	
+    {% include partials/dialog.html %}   		
+    
+    <!-- Scripts
+    ================================================== -->
+  	<script src="{{ site.baseurl }}/hipertextos/js/jquery.js"></script>
+  	<script src="{{ site.baseurl }}/hipertextos/js/anime.js"></script>
+  	<script src="{{ site.baseurl }}/hipertextos/js/icons.js"></script>
+    {% include analytics.html %}
+  </body>
+</html>

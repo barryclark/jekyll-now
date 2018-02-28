@@ -1,0 +1,37 @@
+	<meta name="distribution" content="global"/>
+	<meta name="keywords" content="{% for tag in page.tags %} {{ tag }}, {% endfor %} humor, videos divertidos, notícias, series, cine, películas, review, youtuber" />
+	<meta name="description" content="Los YouTubers que estás buscando. {{ site.description }} | Programa semanal en Youtube, normalmente en directo aunque también hacemos montajes y videos divertidos con post-producción | Star Wars, DC Comics, Marvel, Rick and Morty, Stranger Things, Juego de Tronos, Disney" />
+	<meta name="robots" content="index, follow" />
+    <meta name="author" href="https://plus.google.com/{{ site.footer-links.googleplus }}" />
+    <meta name="designer" content="Videos Manguis">
+	<meta name="google-site-verification" content="Fo93HRW1pYCpTH0Ms73QTpXnt3PVx2k_2DnPa4YJiNk" />
+	
+	<!-- Metadata: GeoTags -->
+	<meta name="geo.region" content="Catalunya" />
+	<meta name="geo.placename" content="Barcelona" />
+	<meta name="geo.position" content="41.4470282;2.2413973" />
+	<meta name="ICBM" content="41.4470282;2.2413973" />
+
+	<meta property="og:type" content="website"/>			
+    <meta itemprop="name" content="{{ page.title }} {{ site.name }}">
+    <meta name="description" content="{{ site.description }} Programa semanal en Youtube, normalmente en directo aunque también hacemos montajes y videos divertidos con post-producción" />
+    <meta itemprop="description" content="Los YouTubers que estás buscando. {{ site.description }} | Star Wars, DC Comics, Marvel, Rick and Morty, Stranger Things, Juego de Tronos, Disney">
+    <meta property="og:description" content="{{ page.description | default: site.description}}" />
+    <meta itemprop="image" content="{{ site.baseurl }}/hipertextos/brand/cover.png">
+	<!-- Twitter Card data -->
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="@{{ site.footer-links.twitter }}">
+	<meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.name }}{% endif %}">
+	<meta name="twitter:description" content="{{ page.description | default: site.description}} | Programa semanal en Youtube, normalmente en directo aunque también hacemos montajes y videos divertidos con post-producción">
+	<meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
+	<meta name="twitter:creator" content="@{{ site.footer-links.twitter }}">
+	<!-- Twitter summary card with large image. Al menos estas medidas 280x150px -->
+	<meta name="twitter:image:src" content="http://www.videosmanguis.net/">
+	<!-- Open Graph data -->
+	<meta property="og:title" content="{{ site.name }}" />
+	<meta property="og:type" content="article" />
+	<meta property="og:url" content="{{ site.url }}{{ page.url }}">
+	<meta property="og:image" content=" {{ site.baseurl }}/hipertextos/brand/cover.png" />
+	<meta property="og:description" content="Los YouTubers que estás buscando. {{ site.description }} | Programa semanal en Youtube, normalmente en directo aunque también hacemos montajes y videos divertidos con post-producción | Star Wars, DC Comics, Marvel, Rick and Morty, Stranger Things, Juego de Tronos, Disney" />
+	<meta property="og:site_name" content="http://www.videosmanguis.net/" />
+	<meta property="fb:admins" content="Videos-Manguis-232512496769704 " />

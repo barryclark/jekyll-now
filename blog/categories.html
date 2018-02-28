@@ -1,0 +1,68 @@
+---
+layout: default
+title: Categorías
+modes: true
+---
+{% comment%}
+Here we generate all the categories.
+{% endcomment%}
+
+{% assign rawcats = "" %}
+{% for post in site.posts %}
+{% assign tcats = post.category | join:'|' | append:'|' %}
+{% assign rawcats = rawcats | append:tcats %}
+{% endfor %}
+
+{% assign rawcats = rawcats | split:'|' | sort %}
+
+{% assign cats = "" %}
+
+{% for cat in rawcats %}
+{% if cat != "" %}
+
+{% if cats == "" %}
+{% assign cats = cat | split:'|' %}
+{% endif %}
+
+{% unless cats contains cat %}
+{% assign cats = cats | join:'|' | append:'|' | append:cat | split:'|' %}
+{% endunless %}
+{% endif %}
+{% endfor %}
+
+<header id="page-header" class="page-title">
+  <h3>{{ page.title }}</h3>
+</header>
+
+	<nav id="page-nav" class="nav-scroll">
+		<div>
+			{% for ct in cats %}
+			<a href="#{{ ct | slugify }}" title="Ver videos con éste Tag"> {{ ct }} </a> &nbsp;&nbsp;
+			{% endfor %}
+		</div>
+	</nav>
+<main id="page-main" class="post-dark">
+
+<div class="posts">
+	
+{% for ct in cats %}
+<h1 id="{{ ct | slugify }}"><u>{{ ct }}</u></h1>
+<div>
+  {% for post in site.posts %}
+  {% if post.category contains ct %}
+  <div class="cat-post">
+  	<a href="{{ post.url }}" title="Ver online {{ post.title }}">
+	<figure class="cat-img">
+		<img src="https://i1.ytimg.com/vi/{{ post.img }}/maxresdefault.jpg" alt="ver el video {{ post.title }}">
+	</figure>
+	</a>
+    <h6><a href="{{ post.url }}" title="Ver {{ post.title }}">{{ post.title }}</a><br><small>{{ post.date | date_to_string }}</small></h6>
+  </div>
+  {% endif %}
+  {% endfor %}
+  <hr>
+</div>
+{% endfor %}
+
+	</div>
+</main>

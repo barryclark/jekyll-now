@@ -1,0 +1,35 @@
+---
+layout: default
+comments: true
+---
+
+  	{% include partials/navigation/nav-section.html %}
+<article class="post">
+	<div>
+		<div class="ical">
+			<figure>
+				<div>
+				{{ page.iframe }}
+				</div>
+			</figure>
+		</div>
+		<hr>
+		<h2 id="post-title" class="">{{ page.title }}</h2>
+		<div id="entry">
+	    {{ content }}
+		</div>
+		<em><hr></em>
+		<div id="date">
+    	<p>Publicat el {{ page.date | date: "%e %B , %Y" }}</p>
+    	<hr>
+  		</div>
+		<em><hr></em>
+		<section class="filled grey section-blank">
+		<div class="cell-8 pushed-2">
+		<h3><u>Comentaris</u></h3>
+		{% include disqus.html %}
+		</div>
+  		<hr>
+		</section>
+	</div>
+</article>

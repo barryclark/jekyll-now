@@ -1,0 +1,49 @@
+{% assign wordcount = include.content | number_of_words %}
+
+<script type="application/ld+json">
+{  
+   "@context":"http://schema.org",
+   "@type":"BlogPosting",
+   "headline":"{{ include.headline }}",
+   "genre":"{{ include.category }}",
+   "keywords":"{{ include.keywords }}",
+   "wordCount":"{{ wordcount }}",
+   "url":"http://videosmanguis.net{{ include.link }}",
+   "datePublished":"{{ include.date | | date: '%Y-%m-%d' }}",
+   "author":{  
+      "@type":"Person",
+      "name":"Videos Manguis",
+      "sameAs":[  
+        "https://twitter.com/videosmanguis",
+        "https://github.com/vacaceo",
+        "https://plus.google.com/u/0/+VideosManguis"
+      ]
+   },
+   "publisher":{  
+      "@type":"Person",
+      "name":"Videos Manguis",
+      "sameAs":[  
+        "https://twitter.com/videosmanguis",
+        "https://github.com/vacaceo",
+        "https://plus.google.com/u/0/+VideosManguis"
+      ],
+      "image": {
+  		"@type": "ImageObject",
+  		"contentUrl": "http://videosmanguis.net/hipertextos/brand/cover.png",
+  		  "url": "http://videosmanguis.net/"
+    }
+   },
+   "image":{  
+      "@type":"ImageObject",
+      "contentUrl":"https://i1.ytimg.com/vi/{{ page.img }}/maxresdefault.jpg",
+      "url":"http://videosmanguis.net",
+      "height":"450",
+      "width":"1000"
+   },
+   "mainEntityOfPage":{  
+      "@type":"WebPage",
+      "@id":"http://videosmanguis.net{{ include.link }}"
+   },
+   "articleBody":"{{ include.content | strip_html | xml_escape | normalize_whitepace | strip_newlines | strip }}"
+}
+</script>

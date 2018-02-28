@@ -1,0 +1,70 @@
+<div id="media" class="">
+
+	<nav class="nav-inline universe">
+  
+  {% if page.images %}
+  	<a href="#images" title="Pictures" class="icon icon-image"></a>
+  {% endif %}
+
+  {% if page.video %}
+  	<a href="#video" title="Videos" class="icon icon-film"></a>
+  {% endif %}
+  
+  {% if page.mp3 %}
+  	<a href="#audio" title="Audio content" class="icon icon-volume-high"></a>
+  {% endif %}
+
+  {% if page.swf %}
+  	<a href="#flash" title="Flash content" class="icon icon-lightning"></a>
+  {% endif %}
+
+  {% if page.pdf %}
+  	<a href="#pdf" title="PDF documents" class="icon icon-book"></a>
+  {% endif %}
+
+  {% if page.doc %}
+  	<a href="#doc" title="Text docuemnts" class="icon icon-file"></a>
+  {% endif %}
+  	</nav>
+  
+  
+{% if page.html %}
+    {% include 'partials/assets/html.html' %}
+  {% endif %}
+  
+  {% if page.images %}
+  	<h4 class="section-title icon icon-image" id="images"> Images</h4>
+    {% include 'partials/assets/images.html' %}
+  {% endif %}
+
+  {% if page.video %}
+  	<h4 class="section-title icon icon-film" id="video"> Videos</h4>
+    {% include 'partials/assets/video.html' %}
+  {% endif %}
+  
+  {% if page.mp3 %}
+  	<h4 class="section-title icon icon-volume-high" id="audio"> Audio</h4>
+    {% include 'partials/assets/audio.html' %}
+  {% endif %}
+
+  {% if page.swf %}
+  	<h4 class="section-title icon icon-lightning" id="flash"> Flash</h4>
+    {% include 'partials/assets/swf.html' %}
+  {% endif %}
+
+  {% if page.pdf %}
+  	<h4 class="section-title icon icon-book" id="pdf"> PDF's</h4>
+    {% include 'partials/assets/pdfs.html' %}
+  {% endif %}
+
+  {% if page.doc %}
+  	<h4 class="section-title icon icon-file" id="doc"> Docs</h4>
+    {% include 'partials/assets/docs.html' %}
+  {% endif %}
+  
+  {% if page.rtf %}
+  	<h4 class="section-title icon icon-file" id="rtf"> RTF's</h4>
+    {% include 'partials/assets/rtf.html' %}
+  {% endif %}
+
+</div>

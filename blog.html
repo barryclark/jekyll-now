@@ -1,0 +1,44 @@
+---
+layout: default
+comments: true
+---
+
+  	{% include partials/navigation/nav-article.html %}
+  	
+<main id="page-main" role="main">
+	<div id="layout">
+					<nav class="nav-scroll anm-moveFromLeftFade">
+						<div>
+							<label for="layout-simple" title="Simple" id="label-simple" class="anm-zoomIn delay-500"><img src="{{ site.baseurl }}/hipertextos/images/icons.svg"><br>Ampliar</label>
+							<label for="layout-list" title="List" id="label-list" class="anm-zoomIn delay-600"><img src="{{ site.baseurl }}/hipertextos/images/list.svg"><br>Llista</label>
+							<label for="layout-table" title="Table" id="label-table" class="anm-zoomIn delay-700"><img src="{{ site.baseurl }}/hipertextos/images/table.svg"><br>Taula</label>
+							<label for="layout-gallery" title="Gallery" id="label-gallery" class="anm-zoomIn delay-800"><img src="{{ site.baseurl }}/hipertextos/images/icons8.svg"><br>Galeria</label>
+							<label for="layout-cards" title="Cards" id="label-cards" class="anm-zoomIn delay-900"><img src="{{ site.baseurl }}/hipertextos/images/icons4.svg"><br>Reduïr</label>		
+						 </div>
+					</nav>
+					<hr>
+					<input type="radio" name="layout" id="layout-simple" aria-hidden="true" hidden>
+					<input type="radio" name="layout" id="layout-list" aria-hidden="true" hidden checked>
+					<input type="radio" name="layout" id="layout-table" aria-hidden="true" hidden>
+					<input type="radio" name="layout" id="layout-gallery" aria-hidden="true" hidden>
+					<input type="radio" name="layout" id="layout-cards" aria-hidden="true" hidden>
+					
+  		{% for post in site.posts %}
+    	<div id="layout-result">
+      		<article class="anm-fadeIn delay-1000">
+				<h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
+				<strong>{{ post.category }}</strong>
+        		<div>{% if post.img %}<a href="../{{ post.img }}" data-lightbox="roadtrip"><img class="blog-img" src="../{{ post.img }}"></a>{% endif %}{{ post.excerpt }}</div>
+      			<a id="link-comment" href="{{ site.baseurl }}{{ post.url }}#disqus_thread" class="anm-moveFromLeftFade delay-1500"> Comentaris</a>
+      			<nav><a href="{{ site.baseurl }}{{ post.url }}" class="read-more"><b>[+]</b></a></nav>
+      		</article>
+    	</div>
+  		{% endfor %}
+	</div>
+	<em><hr></em>
+	<div>
+			<section id="follows">
+			{% include partials/suscribe.html %}
+    		</section>
+	</div>
+</main>
