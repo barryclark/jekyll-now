@@ -1985,7 +1985,7 @@ nav strong label mark {
 	background-size: cover;
 	background-repeat: no-repeat;
 	border:none;
-	color: #fff;
+	color: #000;
 	letter-spacing: .2em;
 	overflow: hidden;
 	text-align: center;
@@ -1995,8 +1995,8 @@ nav strong label mark {
 	padding-top:180px;
 }
 .cover {
-	height: 25vh;
-	padding-top: 46px;
+	height: 90vh;
+	padding-top: 260px;
 }
 .sticky-header {
 	background-color: #fff;

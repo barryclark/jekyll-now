@@ -24,7 +24,6 @@ text-align: center;}
 body {text-align: justify;-moz-hyphens:none;-ms-hyphens:none;-webkit-hyphens:none;-o-hyphens:none;hyphens:none;word-wrap:none;}
 p, ul {font-size: 18px;line-height: 27px;}
 main {padding-bottom:0!important;}
-#page-header.cover {background-image: url("/img/texture/videosmanguis.gif");background-color:var(--color-black);background-size:180px 180px;background-repeat: repeat;image-rendering: crisp-edges;}
 #page-header.cover h1 {margin-bottom:0;font-family:'Lato', sans-serif;letter-spacing: 0.01em;text-shadow:0 3px 7px rgba(0,0,0,.23) ;}
 #page-header.cover h2 small {letter-spacing: 0.015em;text-shadow:0 3px 3px rgba(0,0,0,.23) }
 #page-header.page-title {color:var(--color-white);border:none;background-color:var(--color-hard-grey);box-shadow:inset 0 3px 21px rgba(0,0,0,.25);background-image: url("/img/texture/dark_grey.png");background-size:256px 256px;background-attachment:fixed ; background-repeat: repeat;image-rendering: crisp-edges;}
