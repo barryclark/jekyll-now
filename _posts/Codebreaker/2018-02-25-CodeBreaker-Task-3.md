@@ -1,6 +1,6 @@
 ---
 layout: default
-permalink: /Codebreaker/
+permalink: /Codebreaker//CodeBreaker-Task-3
 title: NSA Codebreaker 2017, Task 3
 ---
 
@@ -14,7 +14,7 @@ This would normally be extremely difficult in SHA3 256. It's made possible since
 
 Below is a python script to find the 4 bytes needed. 
 
-```python
+{% highlight python %}
 import sha3
 import binascii
 
@@ -35,7 +35,7 @@ for i in range(0x10000):
         col_s=sha3.sha3_256(binascii.unhexlify(col + col_1)).hexdigest()
         if s[:8] == col_s[:8]:
             print col + col_1, col_s
-```
+{% endhighlight %}
 
 ![_config.yml]({{ site.baseurl }}/images/CodeBreaker/Task_3/python_hash_col.png)
 
