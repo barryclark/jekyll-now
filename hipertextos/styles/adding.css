@@ -36,7 +36,6 @@ hr.lines {border-bottom:thin solid var(--color-grey);}
 #mapa {margin-bottom:-11px;}
 
 /* CONTACTE */
-.cover-page #dark {	background-position: top center;background-attachment: fixed;background-size: cover;background-repeat: no-repeat;}
 .cover-page #dark a {color:var(--color-white);}
 .cover-page #dark a:hover {text-decoration:none;} 
 .cover-page #dark svg {width:32px;}
