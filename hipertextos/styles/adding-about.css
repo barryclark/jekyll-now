@@ -10,6 +10,25 @@
 .cover-page #dark a {color:var(--color-white);font-size:26px;line-height:21px;font-weight:lighter;}
 .cover-page #dark a:hover {text-decoration:none;} 
 
+.hex-sup {
+  border-right: 3.4641em solid transparent;
+  border-bottom: 2em solid #ccc;
+  border-left: 3.4641em solid transparent;
+  height: 0;
+  width:  0;
+}
+#icons em small a {
+  height: 4em;
+  width: 6.9282em;
+}
+.hex-inf {
+  border-top: 2em solid #ccc;
+  border-right: 3.4641em solid transparent;
+  border-left: 3.4641em solid transparent;
+  height: 0;
+  width: 0;
+}
+
 @media (max-width: 1250px) {
 
 }
