@@ -55,15 +55,18 @@
 		<main id="page-main">
 			<div id="layout" class="anm-fadeIn delay-700">
 				<div id="intro">
-
+					<h4>{{ site.description }}</h4>
 				<br>
 
 			<section id="starwars" class="full-cover anm-fadeIn delay-1000">
 				<div>
-					<h4>{{ page.previ }}</h4>
+					<h4>{{ site.description }}</h4>
 				</div>
 			</section>
 		</main>
+    	<div id="mapa">
+  		{% include mapa.html %} 
+		</div>
 		{% include partials/footer.html %}
 	</div><!-- /#page -->
 	
