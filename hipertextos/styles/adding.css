@@ -48,6 +48,8 @@ hr.lines {border-bottom:thin solid var(--color-grey);}
 #page-footer h3 a {color:var(--color-grey) ;text-decoration:none;font-size: 32px;line-height:1.5;font-weight: lighter ;letter-spacing: 0.12em;}
 #page-footer h3 a:hover {color:var(--color-link) ;font-size: 42px;line-height:1.0;font-weight: lighter ;letter-spacing: 0.18em;}
 
+#page-footer .footer-logo  {width:360px;}
+#page-footer .thumb-6 p {line-height:1.3em;font-size:0.9em;font-weight:lighter;}
 #page-footer em a {background:transparent;}
 #page-footer em a:hover, #page-footer em a:focus {color:var(-color-white);}
 
