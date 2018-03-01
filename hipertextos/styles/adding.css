@@ -1,7 +1,7 @@
 /* by Isard Miralles  ADDING CSS */
 /* ------------------------------------------------------------ Resets */
 
-footer, #follows, #follows-big, #icons, #covers, .nav-scroll, #web-credits, #page-header, #post-header, #post-share, #date {
+footer, #follows, #follows-big, #icons, #covers, .nav-scroll, #web-credits, #page-header, #post-header, #post-share, #layout {
 text-align: center;}
 main {font-family:'Lato', sans-serif;padding-top:1px;margin-bottom: 0;}
 /* Nav */
