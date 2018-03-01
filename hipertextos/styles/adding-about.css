@@ -1,63 +1,21 @@
 /* by Isard Miralles  ADDING EXTRA to About - CSS */
 /* ------------------------------------------------------------ Resets */
 
-#page-header.about-cover {background-image: url("/img/texture/dark.png");background-size:180px 180px;background-repeat: repeat;image-rendering: crisp-edges;}
-#about-content {border:none;}
-#about-icons a {border:none; }
-#about-icons {text-align: center;top:12px;}
-#avatar { margin: 0 19px 0 2%;float:left;padding: 2px; max-width:160px;margin-bottom:23px;}
-.cover-page #page-header {text-align:left;border-bottom:10px solid var(--color-softtext);background-color: var(--color-black);color: rgba(220,220,220,1);}
-#page-header h4 {line-height:1.4em;padding-top:3px;margin-top:3px;}
-.cover-page #page-main {color:currentcolor;}
-.cover-page a, .cover-page a:visited {color:currentcolor !important;background-color: transparent !important;}
-.cover-page a:hover {color:currentcolor !important;background-color: transparent !important;}
-.cover-page  #coffee {  background: var(--color-background);background: -webkit-linear-gradient(red, var(--color-background));background: -moz-linear-gradient(red, var(--color-background)); background: linear-gradient(#eee, var(--color-background));}
-.cover-page h5 {line-height:1.4em;font-weight: normal;margin:0;}
-.cover-page h2 {margin:0;}
-.cover-page h3 {margin:0 0 60px 0;}
-#about-content h2, #about-content h4 {text-align:center;}
-#about-content h4 {font-weight:lighter ;margin:2% 0 4% 0;}
-#about-content h3 {margin:10px 0 10px 0;font-weight:normal ;}
-#about-content h1 {text-align:center;}
-#about-content img {float:left;margin:9px 15px 9px 0;}
-#about-content p {line-height:1.6em;font-weight: normal;font-size:26px;}
-#about-content blockquote {border:thin solid currentcolor;border-left:12px solid currentcolor;text-align:right;background-image: url("/assets/bio/yoda.png");background-size:132px 132px;background-repeat:no-repeat;background-position: right;}
-#about-content blockquote p {width:85%;margin-right:10%;}
-#about-content blockquote.cow-hack  {background-image: url("/assets/bio/vacasuperiora.png");background-size:132px 132px;}
+/* by Isard Miralles  ADDING EXTRA to About - CSS */
+/* ------------------------------------------------------------ Resets */
 
-#web-credits {opacity:.75;background-color:var(--color-transgrey) ;border: none;}
-#web-credits label svg {max-width:72px;margin:10px;opacity:.6;border-radius:50%;}
-#web-credits label svg:hover {cursor:pointer !important;opacity:1;box-shadow: 0 1px 3px rgba(0,0,0,.3);}
-
-#follow-yt {float:left;text-align: center;margin-right:15px;}
-section.full-cover {background:var(--color-black);padding:6% 19% 6% 19%;color:var(--color-blue);}
-.full-cover div h4 {line-height:1.6em;}
-#intro #spoilers h2, #intro #spoilers h6 {text-align: center!important;margin-bottom:6px;color:var(--color-transgrey);}
-#intro #subs {text-align:center;margin-top:1%;}
-#ep2, #ep3, #ep4, #ep5 {border-top:thin solid currentcolor;margin-top:23px;}
+.page-header {
+    background-color:var(--color-black)!important;border:1px solid #000!important;}
+.cover-page #dark {text-align:center;}
+.cover-page #dark a {color:var(--color-white);font-size:26px;line-height:21px;font-weight:lighter;}
+.cover-page #dark a:hover {text-decoration:none;} 
 
 @media (max-width: 1250px) {
-    #page-header h4 {font-size:32px;line-height:1.5em;padding-top:3px;margin-top:3px;}
-    section.full-cover {padding:5% 2% 5% 2%;}
-    .cover-page p {font-size:16px;line-height:1.8em;}
-	#about-content blockquote p, #about-content blockquote.cow-hack p {font-size:15px;width:83%;}
-    #about-content blockquote, #about-content blockquote.cow-hack {background-size:112px 112px }
+
 }
 @media (max-width: 768px) {
-    #page-header h4 {font-size:23px;line-height:1.8em;padding-top:3px;margin-top:0;text-align:left;}
-    main {margin-bottom:0px!important;padding-bottom:0px!important;}
-    #about-content p{font-size:17px ;}
-    section.full-cover {padding:5% 2% 5% 1%;}
-	.full-cover div h4 {font-size:23px;line-height:1.4em;text-align: left;}
-    .cover-page h4  {text-align:center;}
-    .cover-page p {font-size:15px;line-height:1.5em;}
-    .cover-page strong em a {width:100%;margin-bottom: 5px;}
-	#about-content blockquote p, #about-content blockquote.cow-hack p {font-size:15px;width:82%;margin-right:23%;}
-    #about-content blockquote, #about-content blockquote.cow-hack {background-size:96px 96px }
+
 }
 @media (max-width: 432px) {
-    #avatar { margin: 0 3px 0 0;float:left;padding: 1px; max-width:92px;margin-bottom:26px;}
-    #page-header h4 {font-size:13px;line-height:1.8em;padding-top:3px;margin-top:0;text-align:left;}
-  	#about-content blockquote, #about-content blockquote.cow-hack  {border-left:4px solid currentcolor;background-size:69px 69px;}
-	#about-content blockquote p, #about-content blockquote.cow-hack p {width:82%;}  
+
 }

@@ -35,11 +35,6 @@ hr.lines {border-bottom:thin solid var(--color-grey);}
 #domicili h4, #domicili h3 {text-align:right;}
 #mapa {margin-bottom:-11px;}
 
-/* CONTACTE */
-.cover-page #dark {text-align:center;}
-.cover-page #dark a {color:var(--color-white);font-size:26px;line-height:21px;font-weight:lighter;}
-.cover-page #dark a:hover {text-decoration:none;} 
-
 /* Footer */ 
 #page-footer {background:#222;color:#999;box-shadow: inset 0 0 56px rgba(0, 0, 0, .32);bottom: 0px;width: 100%;}
 #page-footer em small a {border: thin solid #222;}
