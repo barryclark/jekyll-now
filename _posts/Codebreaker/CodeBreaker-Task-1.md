@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 permalink: /Codebreaker/
 title: NSA Codebreaker 2017, Task 1
 ---
