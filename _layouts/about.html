@@ -27,24 +27,21 @@
 	<!-- Page content -->
 	<div class="page cover-page" id="page">
 		<header class="page-header" class="cover about-cover" style="background-image: url('{{ site.baseurl }}/hipertextos/brand/contacte.jpg');">
-			<div id="layout">
-				<div class="anm-fadeIn delay-200">
-					<section id="dark">
-						<div id="contacte" class="thumb-6 pushed-3">
-						<a href="http://bonrolloarenas.com"  class="" title="Tornar a l'inici"><img class="" src="{{ site.baseurl }}/hipertextos/brand/bonrolloarenas.png"></a>
-							<div>
-								<h5><a href="tel:{{ site.phone }}" title="Trucar"> {{ site.phone }}</a></h5>
-								<h5><a href="mailto:{{ site.email }}" title="{{ site.email }}"> {{ site.email }}</a></h5>
-								<h5><a href="#mapa" title="Veure al mapa"> {{ site.location }}</a></h5>
-							</div>
+			<div class="anm-fadeIn delay-200">
+				<section id="dark">
+					<div id="contacte" class="thumb-6 pushed-3">
+					<a href="http://bonrolloarenas.com"  class="" title="Tornar a l'inici"><img class="" src="{{ site.baseurl }}/hipertextos/brand/bonrolloarenas.png"></a>
+						<div>
+							<h5><a href="tel:{{ site.phone }}" title="Trucar"> {{ site.phone }}</a></h5>
+							<h5><a href="mailto:{{ site.email }}" title="{{ site.email }}"> {{ site.email }}</a></h5>
+							<h5><a href="#mapa" title="Veure al mapa"> {{ site.location }}</a></h5>
 						</div>
-					</section>
-					<section id="follows">
-            			{% include svg-icons.html %}
-    				</section>
-				</div>
+					</div>
+				</section>
+				<section id="follows">
+        			{% include svg-icons.html %}
+				</section>
 			</div>
-					<a href="#content" class="button-icon icon icon-a-down circled flat hard-black anm-moveFromTopFade delay-900 slow"></a>				
 		</header>
 	{% include partials/navigation/nav.html %}
 		<main id="page-main">
