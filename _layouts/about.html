@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="es-ES">
+<html lang="ca-ES">
   <head>
     <meta name="encoding" charset="utf-8" />
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
     <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
-	<link rel="canonical" href="http://videosmanguis.net/nosotras"/>
+	<link rel="canonical" href="http://bonrolloarena.com/contacte"/>
 	
     {% include meta.html %}
 
@@ -12,90 +12,56 @@
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/styles/screen.css" />
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/styles/components.css" />
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/styles/helpers.css" />
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/styles/screen.min.css" />
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/styles/adding.css" />
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/styles/adding-about.css" />
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/styles/anime.css" />    
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
-	<link href="https://fonts.googleapis.com/css?family=Mouse+Memoirs" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700,300,100,900" rel="stylesheet">
 	
     {% include favicons.html %}
 
   </head>
 
   <body>
-  			<!-- Theme inputs (invisibles) -->		
-		<input type="radio" id="theme-light" name="theme" aria-hidden="true" hidden>
-		<input type="radio" id="theme-soft" name="theme" aria-hidden="true" hidden>
-		<input type="radio" id="theme-dark" name="theme" aria-hidden="true" hidden>
-		
+
 	<!-- Page content -->
 	<div class="page cover-page" id="page">
-		{% include partials/navigation/nav-scroll.html %}
-		<header id="page-header" class="about-cover anm-moveFromTop delay-200">
-			<div>
-					<div id="follow-yt" class="anm-fadeIn delay-800">
-						<img src="{{ site.avatar }}" id="avatar" class="anm-scaleUp delay-900" rel="Logo Videos Manguis">
-					</div>
-					<h4>{{ page.about }}<br>{{ page.lab }}</h4>
+		<header class="page-header" class="cover" style="background-image: url('{{ site.baseurl }}/hipertextos/brand/cover.jpg');">
+			<div class="container about">
+				<div class="anm-moveFromBottomFade delay-300">
+					<section class="flat dark">
+						<div class="text-left filled soft cell-7 pushed-5">
+						<a href="http://bonrolloarenas.com"  class="" title="Tornar a l'inici"><img class="" src="./hipertextos/brand/bonrolloarenas.png"></a>
+						<ul class="list-square list-unlisted">
+							<li> 
+							<h4 class="icon icon-mobile"><a href="tel:{{ site.phone }}" title="Trucar"> {{ page.phone }}</a></h4></li>
+							<li>
+							<h4 class="icon icon-gmail"><a href="mailto:{{ site.email }}" title="{{ site.email }}"> {{ site.email }}</a></h4></li>
+							<li>
+							<h4 class="icon icon-location">{{ site.location }}</h4></li>
+						</ul>
+						</div>
+				<hr>
+				<section id="follows">
+            		{% include svg-icons.html %}
+    			</section>
+					</section>
+				</div>
 			</div>
+					<a href="#content" class="button-icon icon icon-a-down circled flat hard-black anm-moveFromTopFade delay-900 slow"></a>				
 		</header>
 		<main id="page-main">
 			<div id="layout" class="anm-fadeIn delay-700">
 				<div id="intro">
-					<div id="subs">
-						<script src="https://apis.google.com/js/platform.js"></script>
-						<div class="g-ytsubscribe" data-channelid="UCHffnAhZO1wWlhxRg0mAf2w" data-layout="default" data-count="default"></div>
-					</div>
+
 				<br>
-			<div id="about-icons">
-				<div>
-					<p>
-{% if site.footer-links.youtube %}<em><a class="anm-zoomIn delay-500" href="https://youtube.com/{{ site.footer-links.youtube }}" title="Síguenos en Youtube"><img class="dialog-svg" src="{{ site.baseurl }}/hipertextos/svg/youtube.svg" alt="botó YouTube"><br>YouTube</a></em>{% endif %}
-{% if site.footer-links.twitter %}<em><a class="anm-zoomIn delay-600" href="https://www.twitter.com/{{ site.footer-links.twitter }}" title="Síguenos en Twitter"><img class="dialog-svg" src="{{ site.baseurl }}/hipertextos/svg/twitter.svg" alt="botó Twitter"><br>Twitter</a></em>{% endif %}
-{% if site.footer-links.facebook %}<em><a class="anm-zoomIn delay-700" href="https://www.facebook.com/{{ site.footer-links.facebook }}" title="Síguenos en Facebook"><img class="dialog-svg" src="{{ site.baseurl }}/hipertextos/svg/facebook.svg" alt="botó facebook"><br>Facebook</a></em>{% endif %}
-{% if site.footer-links.googleplus %}<em><a class="anm-zoomIn delay-800" href="https://google.plus.com/{{ site.footer-links.googleplus }}" title="Síguenos en Google Plus"><img class="dialog-svg" src="{{ site.baseurl }}/hipertextos/svg/google-plus.svg" alt="botó Google Plus"><br>Google Plus</a></em>{% endif %}
-{% if site.footer-links.instagram %}<em><a class="anm-zoomIn delay-900" href="https://instagram.com/{{ site.footer-links.instagram }}" title="Síguenos en Instagram"><img class="dialog-svg" src="{{ site.baseurl }}/hipertextos/svg/instagram.svg" alt="botó Instagram"><br>Instagram</a></em>{% endif %}
-					</p>
-				</div>
-			</div>
-					<em><hr></em>
-					<h5>{{ page.intro }}</h5>
-					<p><b>Nota:</b> Mira lo que pasó con George Lucas por no hacer las cosas bien desde el principio...</p>
-					<div id="spoilers">
-					<em><hr></em>
-						<h2>Atención Spoilers!</h2>
-						<h6>Aún no han hecho la peli pero nunca se sabe</h6>
-					<em><hr></em>
-					</div>
-				</div>
-			</div>
-			<hr>
+
 			<section id="starwars" class="full-cover anm-fadeIn delay-1000">
 				<div>
 					<h4>{{ page.previ }}</h4>
 				</div>
 			</section>
-			<nav id="page-nav" class="nav-scroll">
-				<div>
-					<a href="#ep1" title="Episodio I">I</a> &nbsp;&nbsp;
-					<a href="#ep2" title="Episodio II">II</a> &nbsp;&nbsp;
-					<a href="#ep3" title="Episodio III">III</a> &nbsp;&nbsp;
-					<a href="#ep4" title="Episodio IV">IV</a> &nbsp;&nbsp;
-					<a href="#ep5" title="Episodio Final">Ir al grano</a> &nbsp;&nbsp;
-				</div>
-			</nav>
-			<div>
-				<section>
-					<hr>
-					<article id="about-content"  class="anm-moveFromBottomFade delay-900">
-					{{ content }}
-					</article>
-				</section>
-			</div>
-			{% include partials/credits.html %}
 		</main>
 		{% include partials/footer.html %}
 	</div><!-- /#page -->
