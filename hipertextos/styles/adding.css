@@ -17,7 +17,7 @@ main {font-family:'Lato', sans-serif;padding-top:1px;margin-bottom: 0;}
 
 /* Header cover*/
 #page-header {color:var(--color-grey);}
-#page-header h5:before {background:url("./hipertextos/brand/line.jpg") no-repeat;}
+#page-header h5 {}
 #cover-logo {max-width:512px;height:180px;top:-30px;}
 
 /* nav Scroll */
