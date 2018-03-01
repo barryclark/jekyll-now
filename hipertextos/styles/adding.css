@@ -5,10 +5,11 @@ footer, #follows, #follows-big, #icons, #covers, .nav-scroll, #web-credits, #pag
 text-align: center;}
 main {font-family:'Lato', sans-serif;padding-top:1px;margin-bottom: 0;}
 /* Nav */
-#site-nav {font-family:'Lato';background: var(--color-soft-black) !important;border-bottom: none;font-size: 17px;color: var(--color-grey);}
+#site-nav {font-family:'Lato';background: var(--color-soft-black) !important;border-bottom: none;font-size: 15px;line-height:20px;color: var(--color-grey);}
 #site-nav a {color:var(--color-soft)!important;text-transform:uppercase;font-weight: bold ;border: none;}
 #site-nav a:visited { color: var(--color-grey);text-decoration: none;}
 #site-nav a:hover, #site-nav a b:hover { color: var(--color-white);text-decoration: none;}
+#site-nav a b img {width:102px;font-size:18px;padding-top:1px;}
 #site-nav label {color:var(--color-grey);border:thin solid transparent;}
 #site-nav label:hover {color:var(--color-soft-grey);border:thin solid #353535;}
 #site-nav em a {color:var(--color-grey)!important ;position:absolute;top:0;right:12px;background:transparent!important;width:40px;padding-right:0;}
