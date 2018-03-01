@@ -20,7 +20,7 @@ main {font-family:'Lato', sans-serif;padding-top:1px;margin-bottom: 0;}
 #page-header {color:var(--color-grey);}
 #page-header h5 img {width:512px;height:100%;float:none;margin:-25px 0 0 0;}
 #page-header h5 {text-align:center;}
-#cover-logo {max-width:512px;height:180px;margin-bottom:-20px;}
+#cover-logo {max-width:512px;height:180px;margin-bottom:-32px;margin-top:-23px;}
 #page-header div em a {color:var(--color-soft);background:none;font-size:16px;letter-spacing:0.06em ;padding:12px 14px;}
 #page-header div em a i svg {width:15px;padding:3px 0 0 0;}
 #page-header div em a:hover {text-decoration:none;}
