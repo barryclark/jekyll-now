@@ -1,10 +1,17 @@
-# Neuroevolution - The Introduction
+---
+layout: post
+title: Neuroevolution - The Introduction
+comments: true
+---
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
 
 Of late I came across a really mind blowing video which is shown below. 
 
 <iframe width="660" height="300" src="https://www.youtube.com/embed/27PYlj-qNb0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-This made me go right to the crux of the concept field behind it – Neuroevolution. Maybe you haven't heard of neuroevolution in the midst of all the excitement over deep learning, but it has been the subject of study for a small, enthusiastic research community for decades. Lately this topic has been gathering a lot of attention as people have begun realizing its potential.
+This made me go right to the crux of the concept field behind it – **Neuroevolution**. Maybe you haven't heard of neuroevolution in the midst of all the excitement over deep learning, but it has been the subject of study for a small, enthusiastic research community for decades. Lately this topic has been gathering a lot of attention as people have begun realizing its potential.
 
 Put simply, neuroevolution is a subfield of artificial intelligence (AI) and machine learning (ML) . The concept of neuroevolution consists of triggering an evolutionary process similar to the one that led to the development of our brain inside a computer. In other words, neuroevolution seeks to develop neural networks through evolutionary algorithms.
 
@@ -18,7 +25,7 @@ This algorithm went viral in a video called MarI/O where a network was developed
 
 <iframe width="660" height="300" src="https://www.youtube.com/embed/qv6UVOQ0F44" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-NeuroEvolution of Augmenting Topologies (NEAT) is a genetic algorithm (GA) for the generation of evolving artificial neural networks a neuroevolution technique developed by Ken Stanley in 2002 while at The University of Texas at Austin.
+**NeuroEvolution of Augmenting Topologies (NEAT)** is a genetic algorithm (GA) for the generation of evolving artificial neural networks a neuroevolution technique developed by Ken Stanley in 2002 while at The University of Texas at Austin.
 
 A thorough treatment of the algorithm can be found in the paper [Evolving Neural Networks through Augmenting Topologies](http://nn.cs.utexas.edu/downloads/papers/stanley.ec02.pdf) by **Kenneth O. Stanley** and **Risto Miikkulainen**.
 
@@ -140,3 +147,4 @@ Here are few reference links that might help you gain more insights on the topic
 - [Genetic Algorithm](https://www.cse.unsw.edu.au/~billw/cs9414/notes/ml/05ga/05ga.html)
 
 
+Written by [Yashika Badaya](https://www.linkedin.com/in/yashika-badaya-7a63a214b)for ActiveAI.
