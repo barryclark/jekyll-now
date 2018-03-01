@@ -51,7 +51,7 @@ hr.lines {border-bottom:thin solid var(--color-grey);}
 #page-footer em a {background:transparent;}
 #page-footer em a:hover, #page-footer em a:focus {color:var(-color-white);}
 
-#page-footer p {padding-bottom:69px;}
+#page-footer p {padding-bottom:32px;}
 #page-footer #sitemap {color:var(--color-grey);width:100%;}
 #page-footer #sitemap strong {display:inline-block;text-align: center;}
 #page-footer #sitemap strong em a {background: transparent!important;font-size:17px;padding:10px 15px 10px 15px;letter-spacing: 0.069em;}
