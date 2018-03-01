@@ -6,7 +6,7 @@ author: hoangbm
 
 In the last blog about [Distributed TensorFlow](/distributed-tensorflow), we have provided some  
 fundamental knowledge of Distributed Training in this framework. However, it is not enough if we want to apply it 
-efficiently. Today, we will five some additional tricks to make use of Distributed Computing better.  
+efficiently. Today, we will provide some additional tricks to make use of Distributed Computing better in [OtoNhanh.vn](https://www.otonhanh.vn/).  
 
 # I) Facebook's tricks to train ImageNet faster.  
 
@@ -277,5 +277,3 @@ Amazon platform which allows the GPUs to be fully connected to each other.
 # References:  
 - [Uber Engineering site](https://eng.uber.com/horovod/)
 - [Accurate, Large Minibatch SGD: Training ImageNet in 1 Hour](https://arxiv.org/pdf/1706.02677.pdf)
-
-
