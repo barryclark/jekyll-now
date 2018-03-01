@@ -25,7 +25,7 @@ main {font-family:'Lato', sans-serif;padding-top:1px;margin-bottom: 0;}
 #page-header div em a i svg {width:15px;padding:3px 0 0 0;}
 #page-header div em a:hover {text-decoration:none;}
 
-#layout i svg {width: 18px;text-align: center;}
+#layout i svg {width: 18px;position:absolute ;left:49.3%;text-align: center !important;padding-bottom:32px;}
 
 /* nav Scroll */
 .nav-scroll {border-bottom:1px solid var(--color-transgrey) ;height:65px;}
