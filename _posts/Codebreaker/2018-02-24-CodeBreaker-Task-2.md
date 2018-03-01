@@ -21,11 +21,11 @@ The final alert message is encrypted, but there are a few things that seem uniqu
 
 Below is the snort signatures for the above alerts. 
 
-{% highlight %}
+```
 alert tcp 172.21.37.124 8883 -> any any (msg:"poss malicious - Wrong protocol"; dsize: 7; content:"|46|"; rawbytes; offset: 6; depth: 1; sid: 1000000;)
 alert tcp 172.21.37.124 8883 -> any any (msg:"poss malicious - Handshake failure"; dsize: 7; content:"|28|"; rawbytes; offset: 6; depth: 1; sid: 1000001;)
 alert tcp 172.21.37.124 8883 -> any any (msg:"poss malicious - Encrypted alert"; flags: FPA; dsize: 31; content:"|15|"; rawbytes; offset: 0; depth: 1; sid: 1000002;)
-{% endhighlight %}
+```
 
 ![_config.yml]({{ site.baseurl }}/images/Codebreaker/Task_2/snort_rule_breakout.png)
 
