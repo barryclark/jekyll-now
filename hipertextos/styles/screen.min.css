@@ -2710,3 +2710,5 @@ dialog,
 	stroke: transparent !important;
 }
 
+#site-logo a:visited {color:var(--color-white)!important;}
+
