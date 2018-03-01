@@ -15,7 +15,7 @@ main {font-family:'Lato', sans-serif;padding-top:1px;margin-bottom: 0;}
 #site-nav em a {color:var(--color-grey)!important ;position:absolute;top:0;right:12px;background:transparent!important;width:40px;padding-right:0;}
 #site-nav em a:visited {color:var(--color-grey)!important ;}
 #site-nav em a:hover {color:#fafafa!important;fill:#fafafa!important;stroke:#fafafa!important;}
-
+#site-logo a, #site-logo a:hover, #site-logo a:visited {color:var(--color-white)!important;}
 /* Header cover*/
 #page-header {color:var(--color-grey);}
 #page-header h5 img {width:512px;height:100%;float:none;margin:-25px 0 0 0;}
