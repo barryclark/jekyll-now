@@ -10,6 +10,10 @@ alternativa: Una alternativa saludable al menjar ràpid.
 natural: Cuina amb amor, amb productes naturals i de proximitat.
 terra: Receptes de la terra de tota la vida.
 
+# Horari
+dilluns: de 19h a 23h
+dimdium: De 13h a 16h / de 19h a 23h
+
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://avatars0.githubusercontent.com/u/36928139?s=460&v=4
 logo: ./hipertextos/brand/bonrollo.svg
