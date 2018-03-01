@@ -43,17 +43,17 @@ hr.lines {border-bottom:thin solid var(--color-grey);}
 .nav-scroll label#separador {opacity:.25!important;font-size:1.0em;top:-2px;padding-left:0px;padding-right:0;}
 
 /* Footer */ 
-#page-footer {background:#222;color:#999;box-shadow: inset 0 0 32px rgba(0, 0, 0, .32);bottom: 0px;width: 100%;}
+#page-footer {background:#222;color:#999;box-shadow: inset 0 0 56px rgba(0, 0, 0, .32);bottom: 0px;width: 100%;}
 #page-footer em small a {border: thin solid #222;}
 #page-footer h3 a {color:var(--color-grey) ;text-decoration:none;font-size: 32px;line-height:1.5;font-weight: lighter ;letter-spacing: 0.12em;}
 #page-footer h3 a:hover {color:var(--color-link) ;font-size: 42px;line-height:1.0;font-weight: lighter ;letter-spacing: 0.18em;}
 
-#page-footer .footer-logo  {width:360px;}
-#page-footer .thumb-6 p {line-height:1.3em;font-size:0.9em;font-weight:lighter;}
+#page-footer .footer-logo  {width:380px;}
+#page-footer .thumb-6 p {line-height:1.3em;font-size:0.9em;font-weight:lighter;padding-bottom:69px;}
 #page-footer em a {background:transparent;}
 #page-footer em a:hover, #page-footer em a:focus {color:var(-color-white);}
-
-#page-footer p {padding-bottom:32px;}
+#footer-home img {max-width:420px;height:150px;margin-bottom:-30px;}
+#page-footer p {}
 
 @media (max-width: 1250px) {
 
