@@ -47,7 +47,7 @@ Taking a quick look at it I identified an array of bytes loaded onto the stack t
 
 This appeared to be what I wanted, so the next step was trying to figure out what function is being used. The arguments passed and the return value seem to be unique and so I searched through the functions IDA identified until I found one that matched. Since the stack string looked like it was obfuscation I tried XORing each byte with 1-255 to see if the result was readable, but didn't get anything. 
 
-![_config.yml]({{ site.baseurl }}/images/Codebreaker/Task_5/check_function.png)
+![_config.yml]({{ site.baseurl }}/images/Codebreaker/Task_5/compare_function.png)
 
 This function seem to be checking the arguments passed in. The only problem was that the data on the stack was non-printable characters and everything in the HTTP header should be readable. This should have been my hint that this was not the right function. This was the only function I could find that had the right signature and I got stuck on this being the correct function. I decided to check to see if there was any other things that could be used to identify the server. I used bulk_extractor to scan the memory capture for network packets, that I then opened in Wireshark. Below is the SYN packet sent to establish a connection with the server. 
 
