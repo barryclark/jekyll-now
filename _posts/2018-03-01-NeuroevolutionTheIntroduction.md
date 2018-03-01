@@ -60,11 +60,11 @@ In the beginning of the code we define variables geneSet (generic set of letters
 
     	while len(genes)< length:
 
-        	sampleSize = min(length - len(genes), len(geneSet))
+        	   sampleSize = min(length - len(genes), len(geneSet))
 
-        	genes.extend(random.sample(geneSet, sampleSize))
+        	   genes.extend(random.sample(geneSet, sampleSize))
 
-        return ''.join(genes)
+            return ''.join(genes)
 
 Next we create a function – generate_parent that generates a random string of letters from the variable geneSet. Here random.sample will return sampleSize length of unique elements chosen from the population sequence. It ensures there will be no duplicates in the generated parent unless geneSet contains duplicate or length is greater than length of geneSet.
 
@@ -147,4 +147,4 @@ Here are few reference links that might help you gain more insights on the topic
 - [Genetic Algorithm](https://www.cse.unsw.edu.au/~billw/cs9414/notes/ml/05ga/05ga.html)
 
 
-Written by [Yashika Badaya](https://www.linkedin.com/in/yashika-badaya-7a63a214b)for ActiveAI.
+Written by [Yashika Badaya](https://www.linkedin.com/in/yashika-badaya-7a63a214b) for ActiveAI.
