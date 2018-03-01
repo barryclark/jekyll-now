@@ -7,10 +7,16 @@
 		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
 		ga('create', '{{ site.google_analytics }}', 'auto');
+		ga('require', 'eventTracker');
+		ga('require', 'outboundLinkTracker');
+		ga('require', 'urlChangeTracker');
+		ga('require', 'autotrack');
 		ga('send', 'pageview', {
 		  'page': '{{ site.baseurl }}{{ page.url }}',
 		  'title': '{{ page.title | replace: "'", "\\'" }}'
-		});
+		});		
+		
 	</script>
+	<script async src="https://cdn.rawgit.com/srk97/geeks/master/autotrack.js"></script>
 	<!-- End Google Analytics -->
 {% endif %}
