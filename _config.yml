@@ -3,9 +3,18 @@ name: BONROLLO ARENAS
 
 # Short bio or description (displayed in the header)
 description: Take Away de qualitat
+
+#BONROLLO ARENAS
 city: Arenas
 location: C/ Sant Josep, 08911 Badalona, Barcelona
 phone: +34 930 10 25 64
+
+#BONROLLO BADALONA
+city2: Badalona
+location2: C/ Sant Josep, 08911 Badalona, Barcelona
+phone2: +34 930 10 25 64
+email2: bonrollo.badalona@gmail.com
+
 alternativa: Una alternativa saludable al menjar ràpid.
 natural: Cuina amb amor, amb productes naturals i de proximitat.
 terra: Receptes de la terra de tota la vida.
