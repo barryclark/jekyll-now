@@ -29,4 +29,4 @@ yurt dışında ödül avcılığı gerçekleştirerek faaliyetlerini sürdürme
 
 [Twitter için;](https://twitter.com/SiberPau)
 
-[Telegram için;](t.me/siberpau)
+[Telegram için;](https://t.me/siberpau)
