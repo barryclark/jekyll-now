@@ -1001,7 +1001,7 @@ figure div iframe {
 /* Links */
 
 a:hover, a:active, a:visited {
-	text-decoration: underline;
+	text-decoration: none;
 	-moz-opacity: 0.9;
 	opacity: 0.9;
 }
@@ -1030,10 +1030,10 @@ a {
 }
 a:visited,
 em a:visited {
-	color: var(--color-vlink);
+	color: var(--color-soft);
 }
 a:visited svg {
-	fill: var(--color-vlink);
+	fill: var(--color-soft);
 }
 nav label:hover,
 a:hover,
