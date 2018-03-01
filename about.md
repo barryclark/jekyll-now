@@ -1,10 +1,8 @@
 ---
 layout: page
-title: HAKKINDA
+title: PAUSİBER HAKKINDA
 permalink: /about/
 ---
-
-# PAUSİBER HAKKINDA
 
 PaüSiber, 2015 yılında okuldan bağımsız bir öğrenci topluluğu olarak çalışmalarına
 yazılım, siber güvenlik, güvenli kod geliştirme, kaliteli kod yazımı, yüksek seviyeli
