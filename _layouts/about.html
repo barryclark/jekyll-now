@@ -27,19 +27,20 @@
 
 	<!-- Page content -->
 	<div class="page cover-page" id="page">
+	{% include partials/navigation/nav.html %}
 		<header class="page-header" class="cover" style="background-image: url('{{ site.baseurl }}/hipertextos/brand/contacte.jpg');">
 			<div id="about">
 				<div class="anm-moveFromBottomFade delay-300">
-					<section class="flat dark">
-						<div class="text-left filled soft cell-7 pushed-5">
-						<a href="http://bonrolloarenas.com"  class="" title="Tornar a l'inici"><img class="" src="./hipertextos/brand/bonrolloarenas.png"></a>
+					<section id="dark">
+						<div class="text-left cell-7 pushed-5">
+						<a href="http://bonrolloarenas.com"  class="" title="Tornar a l'inici"><img class="" src="{{ site.baseurl }}/hipertextos/brand/bonrolloarenas.png"></a>
 						<ul class="list-square list-unlisted">
 							<li> 
-							<h4 class="icon icon-mobile"><a href="tel:{{ site.phone }}" title="Trucar"> {{ page.phone }}</a></h4></li>
+							<h4><i class="icon icon-mobile"></i><a href="tel:{{ site.phone }}" title="Trucar"> {{ page.phone }}</a></h4></li>
 							<li>
-							<h4 class="icon icon-gmail"><a href="mailto:{{ site.email }}" title="{{ site.email }}"> {{ site.email }}</a></h4></li>
+							<h4><i class="icon icon-gmail"></i><a href="mailto:{{ site.email }}" title="{{ site.email }}"> {{ site.email }}</a></h4></li>
 							<li>
-							<h4 class="icon icon-location">{{ site.location }}</h4></li>
+							<h4><i class="icon icon-location"></i> {{ site.location }}</h4></li>
 						</ul>
 						</div>
 				<hr>
@@ -68,19 +69,6 @@
 	
 		<!-- Out of page
 		================================================== -->
-
-		<!-- Tools switcher -->  		
-  		<div id="tools-switcher">
-  			<label for="tools-check" data-title="Modos	" class="pophover">+</label>
-  		</div>
-		<!-- Tools nav -->
-		<input type="checkbox" id="tools-check" name="Modos" aria-hidden="true" hidden>
-		<nav id="tools-nav">
-			<label for="tools-check" id="label-tools" data-title="Cerrar" class="pophover">x</label>
-			<label for="theme-dark" id="label-dark" data-title="Modo Oscuro" class="pophover"></label>
-			<label for="theme-soft" id="label-soft" data-title="Modo Rojo" class="pophover"></label>
-			<label for="theme-light" id="label-light" data-title="Modo Claro" class="pophover"></label>
-		</nav>
 		
     {% include partials/rights.html %}  
 
