@@ -35,11 +35,11 @@
 						<a href="http://bonrolloarenas.com"  class="" title="Tornar a l'inici"><img class="" src="{{ site.baseurl }}/hipertextos/brand/bonrolloarenas.png"></a>
 						<ul class="list-square list-unlisted">
 							<li> 
-							<h4><i class="icon icon-mobile"></i><a href="tel:{{ site.phone }}" title="Trucar"> {{ site.phone }}</a></h4></li>
+							<h5><i class="icon icon-mobile"></i><a href="tel:{{ site.phone }}" title="Trucar"> {{ site.phone }}</a></h5></li>
 							<li>
-							<h4><i class="icon icon-gmail"></i><a href="mailto:{{ site.email }}" title="{{ site.email }}"> {{ site.email }}</a></h4></li>
+							<h5><i class="icon icon-gmail"></i><a href="mailto:{{ site.email }}" title="{{ site.email }}"> {{ site.email }}</a></h5></li>
 							<li>
-							<h4><i class="icon icon-location"></i> {{ site.location }}</h4></li>
+							<h5><i class="icon icon-location"></i> {{ site.location }}</h5></li>
 						</ul>
 						</div>
 				<hr>
@@ -55,13 +55,16 @@
 			<div id="layout" class="anm-fadeIn delay-700">
 				<div id="intro">
 					<h4>{{ site.description }}</h4>
-				<br>
-
-			<section id="starwars" class="full-cover anm-fadeIn delay-1000">
-				<div>
-					<h4>{{ site.description }}</h4>
+					<hr class="lines">
+					<div id="horari">
+  						{% include horari.html %} 
+					</div>
+					<hr>
+					<div id="domicili">
+  						{% include domicili.html %} 
+					</div>
+					<hr>
 				</div>
-			</section>
 		</main>
     	<div id="mapa">
   		{% include mapa.html %} 
