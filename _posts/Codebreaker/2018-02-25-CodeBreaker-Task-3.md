@@ -9,7 +9,7 @@ The hint they gave was that the authentication scheme was modified to allow the 
 
 This would normally be extremely difficult in SHA3 256. It's made possible since the collision only needs to be 4 bytes long. Now that I have found the vulnerability a proof of the exploit needs to be done. To do this I needed to find the correct password to use to find the partial hash collision. Using Wireshark the initial authentication sent in the test environment was captured. 
 
-![_config.yml]({{ site.baseurl }}/images/CodeBreaker/Task_3/***picture***.png)
+![_config.yml]({{ site.baseurl }}/images/Codebreaker/Task_3/***picture***.png)
 
 Below is a python script to find the 4 bytes needed. 
 
@@ -36,8 +36,8 @@ for i in range(0x10000):
             print col + col_1, col_s
 {% endhighlight %}
 
-![_config.yml]({{ site.baseurl }}/images/CodeBreaker/Task_3/python_hash_col.png)
+![_config.yml]({{ site.baseurl }}/images/Codebreaker/Task_3/python_hash_col.png)
 
 I then formatted it as 0x045cca7cfb5cca7cfb, encoded it with base64 and submitted it. 
 
-![_config.yml]({{ site.baseurl }}/images/CodeBreaker/Task_3/complete.png)
+![_config.yml]({{ site.baseurl }}/images/Codebreaker/Task_3/complete.png)
