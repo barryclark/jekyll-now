@@ -25,8 +25,13 @@ main {font-family:'Lato', sans-serif;padding-top:1px;margin-bottom: 0;}
 #page-header div em a i svg {width:15px;padding:3px 0 0 0;}
 #page-header div em a:hover {text-decoration:none;}
 
-#layout i svg {width: 18px;position:absolute ;left:49.3%;text-align: center !important;padding-bottom:32px;}
+#layout i svg {width: 18px;position:absolute ;left:49.3%;padding-bottom:32px;}
+#horari i svg, #domicili i svg {width:132px;position:relative;left:0;top:69px;color:var(--color-grey);}
+#horari h4, #domicili h4 {margin-bottom:2px;}
+#horari h4, #horari h3 {text-align:left;}
+#domicili h4, #domicili h3 {text-align:right;}
 #mapa {margin-bottom:-11px;}
+
 /* nav Scroll */
 .nav-scroll {border-bottom:1px solid var(--color-transgrey) ;height:65px;}
 .nav-scroll label {font-size: 11px;line-height: 12px;font-weight: normal;}
