@@ -1,5 +1,6 @@
 ---
 layout: post
+permalink: /Codebreaker/
 title: NSA Codebreaker 2017, Task 4
 ---
 

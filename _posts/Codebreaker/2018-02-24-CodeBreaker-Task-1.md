@@ -1,9 +1,8 @@
 ---
 layout: post
+permalink: /Codebreaker/
 title: NSA Codebreaker 2017, Task 1
 ---
-
-
 
 For task 1, you are given a network traffic capture and keys to decrypt the SSL traffic. The challenge asks you to ID 9 potentially malicious TLS sessions and provide the timestamp of the first packet and source IP. I opened the capture in Wireshark and loaded the provide keys.
 
