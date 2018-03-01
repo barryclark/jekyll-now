@@ -37,7 +37,7 @@ hr.lines {border-bottom:thin solid var(--color-grey);}
 
 /* CONTACTE */
 .cover-page #dark {text-align:center;}
-.cover-page #dark a {color:var(--color-white);font-size:26px;line-height:21px;}
+.cover-page #dark a {color:var(--color-white);font-size:26px;line-height:21px;font-weight:lighter;}
 .cover-page #dark a:hover {text-decoration:none;} 
 
 /* Footer */ 
