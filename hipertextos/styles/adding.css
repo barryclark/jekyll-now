@@ -52,7 +52,8 @@ padding-left:80px;padding-right:80px;padding-top:36px;}
 #page-nav div{height:90px;}
 #page-nav a img {width:69px;height:69px;opacity:.69;}
 #page-nav a:hover {background:var(--color-soft);}
-img.icon {width:21px;}
+img.icon {width:15px;margin-left:5px;margin-right:5px;}
+.legends p {font-size:15px;}
 
 /* Footer */ 
 #page-footer {background:#222;color:#999;box-shadow: inset 0 0 56px rgba(0, 0, 0, .32);bottom: 0px;width: 100%;}
