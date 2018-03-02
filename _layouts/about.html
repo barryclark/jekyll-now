@@ -51,16 +51,9 @@
 				<div id="intro">
 					<h4>{{ site.description }}</h4>
 					<hr class="lines">
-					<div id="horari">
-  						{% include horari.html %} 
-					</div>
-					<hr>
-					<div id="domicili">
-  						{% include domicili.html %} 
-					</div>
-					<hr>
 					<div id="postalcode">
 						<h4>Fins a casa teva!</h4>
+  						<p>Codis postals de Barcelona on repartim:</p>
   						{% if site.postalcode1 %}<button>{{ site.postalcode1 }}</button>{% endif %}
   						{% if site.postalcode2 %}<button>{{ site.postalcode2 }}</button>{% endif %}
   						{% if site.postalcode3 %}<button>{{ site.postalcode3 }}</button>{% endif %}
@@ -70,8 +63,15 @@
   						{% if site.postalcode7 %}<button>{{ site.postalcode7 }}</button>{% endif %}
   						{% if site.postalcode8 %}<button>{{ site.postalcode8 }}</button>{% endif %}
   						{% if site.postalcode9 %}<button>{{ site.postalcode9 }}</button>{% endif %}
-  						<hr>
-  						<p>Codis postals de Barcelona on repartim</p>
+  						<br>
+					</div>
+					<hr>
+					<div id="domicili">
+  						{% include domicili.html %} 
+					</div>
+					<hr>
+					<div id="horari">
+  						{% include horari.html %} 
 					</div>
 					<hr>
 				</div>
