@@ -49,11 +49,10 @@
 		<main id="page-main">
 			<div id="layout" class="anm-fadeIn delay-700">
 				<div id="intro">
-					<h4>{{ site.description }}</h4>
-					<hr class="lines">
 					<div id="postalcode">
 						<h4>Fins a casa teva!</h4>
   						<p>Codis postals de Barcelona on repartim:</p>
+  						<br>
   						{% if site.postalcode1 %}<button>{{ site.postalcode1 }}</button>{% endif %}
   						{% if site.postalcode2 %}<button>{{ site.postalcode2 }}</button>{% endif %}
   						{% if site.postalcode3 %}<button>{{ site.postalcode3 }}</button>{% endif %}
@@ -69,12 +68,15 @@
 					<div id="domicili">
   						{% include domicili.html %} 
 					</div>
-					<hr>
+					<h5><small><i class="icon-flickr"></i></small></h5>
+					<h4>{{ site.description }}</h4>
+					<h5><small><i class="icon-flickr"></i></small></h5>
 					<div id="horari">
   						{% include horari.html %} 
 					</div>
 					<hr>
 				</div>
+			</div>
 		</main>
     	<div id="mapa">
   		{% include mapa.html %} 
