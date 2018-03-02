@@ -15,11 +15,11 @@ postalcode8:
 postalcode9:
 
 # Preus
-rollitos: 9.50
-petit: 9.50
-pures: 6
-cremes: 6
-amanides: 6
+rollitos: 9.5
+petit: 9.5
+pures: 6.0
+cremes: 6.0
+amanides: 6.0
 
 # BONROLLO ARENAS
 city: Arenas
