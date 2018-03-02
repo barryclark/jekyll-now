@@ -55,6 +55,10 @@ padding-left:80px;padding-right:80px;padding-top:36px;}
 img.icon {width:15px;margin-left:5px;margin-right:5px;}
 .legends p {font-size:15px;}
 
+h6.title {text-align:left;font-size:.75em;border-bottom:thin solid var(--color-grey); }
+#rollitos-cart {text-align: left;}
+#rollitos-cart p {margin-top:-23px;}
+
 /* Footer */ 
 #page-footer {background:#222;color:#999;box-shadow: inset 0 0 56px rgba(0, 0, 0, .32);bottom: 0px;width: 100%;}
 #page-footer em small a {border: thin solid #222;}
