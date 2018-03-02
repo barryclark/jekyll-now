@@ -49,6 +49,9 @@
 		<main id="page-main">
 			<div id="layout" class="anm-fadeIn delay-700">
 				<div id="intro">
+					<div id="domicili">
+  						{% include domicili.html %} 
+					</div>
 					<div id="postalcode">
 						<h4>Fins a casa teva!</h4>
   						<p>Codis postals de Barcelona on repartim:</p>
@@ -65,15 +68,13 @@
   						<br>
 					</div>
 					<hr>
-					<div id="domicili">
-  						{% include domicili.html %} 
-					</div>
-					<h5><small><i class="icon-flickr"></i></small></h5>
-					<h4>{{ site.description }}</h4>
-					<h5><small><i class="icon-flickr"></i></small></h5>
 					<div id="horari">
   						{% include horari.html %} 
 					</div>
+					<hr>
+					<h5><small><i class="icon-flickr"></i></small></h5>
+					<h4>{{ site.description }}</h4>
+					<h5><small><i class="icon-flickr"></i></small></h5>
 					<hr>
 				</div>
 			</div>
