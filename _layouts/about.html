@@ -49,28 +49,28 @@
 		<main id="page-main">
 			<div id="layout" class="anm-fadeIn delay-700">
 				<div id="intro">
-					<div id="domicili">
+					<section id="domicili">
   						{% include domicili.html %} 
-					</div>
-					<div id="postalcode">
-						<h4>Fins a casa teva!</h4>
-  						<p>Codis postals de Barcelona on repartim:</p>
-  						<br>
-  						{% if site.postalcode1 %}<button>{{ site.postalcode1 }}</button>{% endif %}
-  						{% if site.postalcode2 %}<button>{{ site.postalcode2 }}</button>{% endif %}
-  						{% if site.postalcode3 %}<button>{{ site.postalcode3 }}</button>{% endif %}
-  						{% if site.postalcode4 %}<button>{{ site.postalcode4 }}</button>{% endif %}
-  						{% if site.postalcode5 %}<button>{{ site.postalcode5 }}</button>{% endif %}
-  						{% if site.postalcode6 %}<button>{{ site.postalcode6 }}</button>{% endif %}
-  						{% if site.postalcode7 %}<button>{{ site.postalcode7 }}</button>{% endif %}
-  						{% if site.postalcode8 %}<button>{{ site.postalcode8 }}</button>{% endif %}
-  						{% if site.postalcode9 %}<button>{{ site.postalcode9 }}</button>{% endif %}
-  						<br>
-					</div>
+						<div id="postalcode">
+							<h4>Fins a casa teva!</h4>
+  							<p>Codis postals de Barcelona on repartim:</p>
+  							<br>
+  							{% if site.postalcode1 %}<button>{{ site.postalcode1 }}</button>{% endif %}
+  							{% if site.postalcode2 %}<button>{{ site.postalcode2 }}</button>{% endif %}
+  							{% if site.postalcode3 %}<button>{{ site.postalcode3 }}</button>{% endif %}
+  							{% if site.postalcode4 %}<button>{{ site.postalcode4 }}</button>{% endif %}
+  							{% if site.postalcode5 %}<button>{{ site.postalcode5 }}</button>{% endif %}
+  							{% if site.postalcode6 %}<button>{{ site.postalcode6 }}</button>{% endif %}
+  							{% if site.postalcode7 %}<button>{{ site.postalcode7 }}</button>{% endif %}
+  							{% if site.postalcode8 %}<button>{{ site.postalcode8 }}</button>{% endif %}
+  							{% if site.postalcode9 %}<button>{{ site.postalcode9 }}</button>{% endif %}
+  							<br>
+						</div>
+					</section>
 					<hr>
-					<div id="horari">
+					<section id="horari">
   						{% include horari.html %} 
-					</div>
+					</section>
 					<hr>
 					<h5><small><i class="icon-flickr"></i></small></h5>
 					<h4>{{ site.description }}</h4>
