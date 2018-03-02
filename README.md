@@ -6,17 +6,17 @@ Makalenizi yayınlamadan önce makalenizin bazı kalıplarda olması gerekiyor. 
 
 Makale içeriğine geçecek olursak yazınızın başına
 
-<img src="{{ site.url }}/images/header.jpg" alt="{{ page.title }}">
+![header](images/header.jpg)
 
 eklemeniz gerekiyor. Burada düzenlemeniz gereken title ve yazan bölümleridir. Daha sonrasında yazınızı yazabilirsiniz. Yazılarınızı yazarken markdown dilini kullandığınızı unutmayınız.
 
 * .md uzantılı dosyanızı [Pausiber/wiki/post](https://github.com/PauSiber/wiki/tree/master/_posts) linkteki upload file bölümüne yükleyip 
 
-<img src="{{ site.url }}/images/upload.jpg" alt="{{ page.title }}">
+![upload](images/upload.jpg)
 
 aşağıdaki bu gibi düzenleyip gönderiniz.
 
-<img src="{{ site.url }}/images/pullrequest.jpg" alt="{{ page.title }}">
+![pull-request](images/pullrequest.jpg)
 
 Create pull request demeniz yeterli olacaktır.
 
