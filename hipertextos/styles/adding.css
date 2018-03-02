@@ -32,7 +32,7 @@ hr.lines {border-bottom:thin solid var(--color-grey);}
 #horari i svg, #domicili i svg {width:132px;position:relative;left:0;color:var(--color-softgrey);}
 #horari h4, #domicili h4 {margin-bottom:2px;}
 #horari h4, #horari h3 {text-align:left;}
-#domicili h4, #domicili h3 {text-align:right;}
+#domicili h4, #domicili h3 {text-align:left;}
 #mapa {margin-bottom:-11px;}
 #layout em a {background-color:var(--color-soft-black);color:var(--color-soft);border-radius:6px;padding-left:32px;padding-right:32px;}
 #layout em a:hover, #layout em a:active, #layout em a:focus {background-color:var(--color-white);color:var(--color-black);}
