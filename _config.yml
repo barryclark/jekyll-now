@@ -14,13 +14,20 @@ postalcode7:
 postalcode8:
 postalcode9:
 
-#BONROLLO ARENAS
+# Preus
+rollitos: 9.50
+petit: 9.50
+pures: 6
+cremes: 6
+amanides: 6
+
+# BONROLLO ARENAS
 city: Arenas
 location: C/ Gran Vía Les Corts 373, centre Comercial Arenas, Barcelona
 phone: +34 931 18 98 27
 email: bonrollo.arenas@gmail.com
 
-#BONROLLO BADALONA
+# BONROLLO BADALONA
 city2: Badalona
 location2: C/ Sant Josep, 08911 Badalona, Barcelona
 phone2: +34 930 10 25 64
