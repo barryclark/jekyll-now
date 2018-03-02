@@ -60,7 +60,15 @@
 					</div>
 					<hr>
 					<div id="postalcode">
-  						<h5>{{ site.postalcode }}</h5>
+  						{% if site.postalcode1 %}<label>{{ site.postalcode1 }}</label>{% endif %}
+  						{% if site.postalcode2 %}<label>{{ site.postalcode2 }}</label>{% endif %}
+  						{% if site.postalcode3 %}<label>{{ site.postalcode3 }}</label>{% endif %}
+  						{% if site.postalcode4 %}<label>{{ site.postalcode4 }}</label>{% endif %}
+  						{% if site.postalcode5 %}<label>{{ site.postalcode5 }}</label>{% endif %}
+  						{% if site.postalcode6 %}<label>{{ site.postalcode6 }}</label>{% endif %}
+  						{% if site.postalcode7 %}<label>{{ site.postalcode7 }}</label>{% endif %}
+  						{% if site.postalcode8 %}<label>{{ site.postalcode8 }}</label>{% endif %}
+  						{% if site.postalcode9 %}<label>{{ site.postalcode9 }}</label>{% endif %}
 					</div>
 					<hr>
 				</div>
