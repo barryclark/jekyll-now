@@ -49,8 +49,7 @@ padding-left:80px;padding-right:80px;padding-top:36px;}
 /* Footer */ 
 #page-footer {background:#222;color:#999;box-shadow: inset 0 0 56px rgba(0, 0, 0, .32);bottom: 0px;width: 100%;}
 #page-footer em small a {border: thin solid #222;}
-#page-footer h3 a {color:var(--color-grey) ;text-decoration:none;font-size: 32px;line-height:1.5;font-weight: lighter ;letter-spacing: 0.12em;}
-#page-footer h3 a:hover {color:var(--color-link) ;font-size: 42px;line-height:1.0;font-weight: lighter ;letter-spacing: 0.18em;}
+#page-footer h5 a {text-decoration:none;font-size:0.9em;font-weight: lighter ;letter-spacing: 0.05em;}
 
 #page-footer .footer-logo  {width:380px;}
 #page-footer .thumb-6 p {line-height:1.3em;font-size:0.9em;font-weight:lighter;padding-bottom:69px;}
