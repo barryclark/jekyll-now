@@ -11,8 +11,9 @@
 .cover-page #dark a:hover {text-decoration:none;} 
 #horari .thumb-6, #domicili .thumb-6 {width:100%;}
 #horari h4, #horari h3, #domicili h4, #domicili h3 {text-align:center;}
-#horari i svg, #domicili i svg {background-color:transparent ;background-image: url(/hipertextos/brand/hexagonblack.png);background-repeat:no-repeat;background-size:150px;width:150px;height:150px;border:none!important;
-padding-left:45px;padding-right:45px;padding-top:32px;}
+#horari h4 {font-size:42px;line-height:1.6em;}
+#horari i svg, #domicili i svg {background-color:transparent ;background-image: url(/hipertextos/brand/hexagonblack.png);background-repeat:no-repeat;background-size:100px;width:100px;height:100px;border:none!important;
+padding-left:0px;padding-right:0px;padding-top:30px;}
 
 @media (max-width: 1250px) {
 
