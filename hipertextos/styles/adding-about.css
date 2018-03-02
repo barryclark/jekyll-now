@@ -15,6 +15,8 @@
 #horari i svg, #domicili i svg {background-color:transparent ;background-image: url(/hipertextos/brand/hexagonblack.png);background-repeat:no-repeat;background-size:100px;width:100px;height:100px;border:none!important;
 padding-left:0px;padding-right:0px;padding-top:30px;}
 
+#layout section {border:thin solid var(--color-softgrey);}
+
 @media (max-width: 1250px) {
 
 }
