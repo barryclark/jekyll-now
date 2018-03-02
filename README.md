@@ -16,7 +16,7 @@ eklemeniz gerekiyor. Burada düzenlemeniz gereken title ve yazan bölümleridir.
 
 aşağıdaki bu gibi düzenleyip gönderiniz.
 
-![pull-request](images/pullrequest.jpg)
+![pull-request](images/pull-request.jpg)
 
 Create pull request demeniz yeterli olacaktır.
 
