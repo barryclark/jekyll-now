@@ -29,17 +29,19 @@ main {font-family:'Lato', sans-serif;padding-top:36px;margin-bottom: 0;}
 hr.lines {border-bottom:thin solid var(--color-grey);}
 .detalls a {padding-left:32px;padding-right:32px;}
 #layout i svg {width: 18px;position:absolute ;left:49.3%;padding-bottom:32px;}
-#horari i svg, #domicili i svg {width:132px;position:relative;left:0;color:var(--color-softgrey);}
+#horari i svg, #domicili i svg {width:132px;position:relative;left:0;top:69px;color:var(--color-grey);}
 #horari h4, #domicili h4 {margin-bottom:2px;}
 #horari h4, #horari h3 {text-align:left;}
 #domicili h4, #domicili h3 {text-align:right;}
 #mapa {margin-bottom:-11px;}
 
-/* Buttons hexagon */
+/* Buttons hexagons */
 #icons em a {background-color:transparent ;background-image: url(/hipertextos/brand/hexagon.png);background-repeat:no-repeat  ;background-size:100px;width:100px;height:100px;border:none!important;
 padding-left:35px;padding-right:35px;}
-#horari i svg, #domicili i svg {background-color:transparent ;background-image: url(/hipertextos/brand/hexagonblack.png);background-repeat:no-repeat  ;background-size:200px;width:200px;height:200px;border:none!important;
-padding-left:60px;padding-right:60px;padding-top:30px;}
+#layout em a {background-color:transparent ;background-image: url(/hipertextos/brand/hexagon.png);background-repeat:no-repeat  ;background-size:100px;width:100px;height:100px;border:none!important;
+padding-top:33px;color:var(--color-white);}
+#horari i svg, #domicili i svg {background-color:transparent ;background-image: url(/hipertextos/brand/hexagonblack.png);background-repeat:no-repeat  ;background-size:132px;width:132px;height:132px;border:none!important;
+padding-left:35px;padding-right:35px;}
 
 /* Footer */ 
 #page-footer {background:#222;color:#999;box-shadow: inset 0 0 56px rgba(0, 0, 0, .32);bottom: 0px;width: 100%;}
