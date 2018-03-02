@@ -1213,8 +1213,8 @@ nav label {
 	--color-softblack: rgba(10,10,10,1);
 	--color-soft-black: rgba(23,20,21,1);
 
-	--color-link: rgba(50,122,174,1);
-	--color-vlink: rgba(20,100,140,1);
+	--color-link: rgba(220,220,220,1);
+	--color-vlink: rgba(220,220,220,.9);
 
 	--color-soft: rgba(230,230,230,1);
 	--color-softtext: rgba(180,60,60,1);
