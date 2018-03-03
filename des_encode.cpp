@@ -1,4 +1,4 @@
-// 2018-03-03 12:21PM
+// 2018-03-03 12:36PM
 
 #include <iostream>
 #include <iomanip>
@@ -32,7 +32,7 @@ void des_encryption_8(unsigned char *input, unsigned char *key, unsigned char *o
     unsigned char xorBlock[8];
     memset(xorBlock,0,8);
     desEncryptor.SetKey(key,8);
-    desEncryptor.ProcessAndXorBlock(input,xorBlock,output);
+    desEncryptor.ProcessBlock(input,output);
 }
 
 void des_encryption(unsigned char *plaintext, unsigned char *key, unsigned char *ciphertext, streampos file_size) {
