@@ -9,7 +9,7 @@ layout: default
     <div id="lang-content" role="main">
         <ul id="post-list">
             {% for post in site.posts %}
-                {% if { post.lang || 'en' } == page.name %}
+                {% if post.lang == 'en' %}
                     {% include item.html %}
                 {% endif %}
             {% endfor %}
