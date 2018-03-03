@@ -92,10 +92,17 @@ collections:
   lang:
     output: true
     permalink: /lang/:path/
-      
+  tags:
+    output: true
+    permalink: /tags/:path/
 defaults:
-  -scope:
-    path: 'en'
-    type: lang
-  values:
-    layout: language
+  - scope:
+      path: ''
+      type: lang
+    values:
+      layout: language
+  - scope:
+      path: ''
+      type: tags
+    values:
+      layout: tag
