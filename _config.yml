@@ -90,7 +90,7 @@ theme: jekyll-theme-hacker
 # Collections for tags
 collections:
   lang:
-    output: false
+    output: true
     permalink: /lang/:path/
   tags:
     output: true
