@@ -12,6 +12,7 @@ timezone : GMT+0900
 ### More Information
 
 Developer Programmer & Software Architect since 19 Oct 2013
+Working inside of Spring & Java Environment
 
 ### Contact me
 
