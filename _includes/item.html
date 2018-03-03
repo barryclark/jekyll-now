@@ -10,14 +10,6 @@
         {% endfor %}
     </p>
     <div class="post-meta">
-        {% assign author = site.authors | where: 'name', post.author | first %}
-        <a href="{{ site.baseurl }}/authors/{{ post.author }}">
-            <div class="author-image"
-                 {% if author.image %}style="background-image:url({{ author.image }});"{% endif %}>
-                <span class="sr-only">{{ author.name }}'s profile image</span>
-            </div>
-            <p class="author-name">{{ author.name }}</p>
-        </a>
         <p class="post-date">{{ post.date | date: '%Y-%m-%d %H:%M' }}</p>
     </div>
     <!--<div class="clearfix"></div>-->
