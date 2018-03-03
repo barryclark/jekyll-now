@@ -18,7 +18,7 @@ layout: default
     <div id="language-content" role="main">
         <ul id="post-list">
             {% for post in site.posts %}
-                {% if post.tags contains page.name %}
+                {% if post.language contains page.name %}
                     {% include item.html %}
                 {% endif %}
             {% endfor %}
