@@ -1,0 +1,7 @@
+<div>
+  <p>
+    {% for tag in page.tags %}
+      <a href="{{ site.baseurl }}/tags/{{ tag }}" title="{{ tag }}" class="tag tag-{{ tag }}">{{ tag }}</a>
+    {% endfor %}
+  </p>
+</div>
