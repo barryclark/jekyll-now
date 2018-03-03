@@ -283,6 +283,19 @@ footer {
   text-align: center;
 }
 
+a.tag {
+    display: inline-block;
+    margin: 0 5px 5px 0;
+    padding: 0 10px;
+    border: 1px solid #e6e6e6;
+    border-radius: 4px;
+    vertical-align: middle;
+    background-color: #fafafa;
+    color: #1e1e1e;
+    font-size: 12px;
+    line-height: 24px; /* 24px = 26(height) - 2(border) */
+}
+
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
