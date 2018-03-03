@@ -1,4 +1,4 @@
 ---
-name: ko_kr
+name: kr
 title: 한글
 ---
