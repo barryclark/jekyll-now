@@ -4,6 +4,10 @@ name: BONROLLO ARENAS
 # Short bio or description (displayed in the header)
 description: Take Away de qualitat
 
+alternativa: Una alternativa saludable al menjar ràpid.
+natural: Cuina amb amor, amb productes naturals i de proximitat.
+terra: Receptes de la terra de tota la vida.
+
 postalcode1: 08015
 postalcode2: 08011
 postalcode3: 08004
@@ -39,10 +43,6 @@ city2: Badalona
 location2: C/ Sant Josep, 08911 Badalona, Barcelona
 phone2: +34 930 10 25 64
 email2: bonrollo.badalona@gmail.com
-
-alternativa: Una alternativa saludable al menjar ràpid.
-natural: Cuina amb amor, amb productes naturals i de proximitat.
-terra: Receptes de la terra de tota la vida.
 
 # Horari
 dilluns: de 19h a 23h
