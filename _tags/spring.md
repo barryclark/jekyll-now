@@ -1,4 +1,4 @@
 ---
 name: spring
-title: Spring_framework
+title: Spring framework
 ---
