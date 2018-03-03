@@ -100,7 +100,7 @@ defaults:
       path: ''
       type: lang
     values:
-      layout: language
+      layout: lang
   - scope:
       path: ''
       type: tags
