@@ -38,7 +38,7 @@
     <div id="content" class="container" role="main">
         <ul id="post-list">
             {% for post in site.posts %}
-                {% if post.tags contains page.name %}
+                {% if post.lang == page.name %}
                     {% include item.html %}
                 {% endif %}
             {% endfor %}
