@@ -3,7 +3,7 @@
 #
 
 # Name of your site (displayed in the header)
-name: Techtonic, by d.e. wilson
+name: seattleTECHTONIC, by d.e. wilson
 
 # Short bio or description (displayed in the header)
 description: Tech Notes from the woods outside Seattle
@@ -25,7 +25,7 @@ footer-links:
   instagram:
   linkedin:
   pinterest:
-  rss: # just type anything here for a working RSS icon
+  rss: # rss
   twitter: dwilson22180
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
