@@ -4,12 +4,15 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+title : Sol labs
+name : Cyan Raphael Yi
+name(ko_kr) : 이현승
+timezone : GMT+0900
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+Developer Programmer & Software Architect since 19 Oct 2013
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[cyan.r.yi@gmail.com](mailto:cyan.r.yi@gmail.com)
