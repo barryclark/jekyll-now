@@ -1,4 +1,4 @@
-// 2018-03-02 09:11PM
+// 2018-03-02 09:22PM
 
 #include <iostream>
 #include <cstring>
@@ -17,8 +17,8 @@ using namespace std;
 
 using namespace CryptoPP;
 
-void des_encryption_8(char *input, unsigned char *key, char *output) {
-    //copy(input, input + 8, output);
+void des_encryption_8(unsigned char *input, unsigned char *key, unsigned char *output) {
+//    copy(input, input + 8, output);
     DESEncryption desEncryptor;
     unsigned char xorBlock[8];
     memset(xorBlock,0,8);
@@ -26,9 +26,9 @@ void des_encryption_8(char *input, unsigned char *key, char *output) {
     desEncryptor.ProcessAndXorBlock(input,xorBlock,output);
 }
 
-void des_encryption(char *plaintext, unsigned char *key, char *ciphertext, streampos file_size) {
-    char subtext[9];
-    char subcipher[9];
+void des_encryption(unsigned char *plaintext, unsigned char *key, unsigned char *ciphertext, streampos file_size) {
+    unsigned char subtext[9];
+    unsigned char subcipher[9];
     
     memset(subtext, '\0', 9);
     memset(subcipher, '\0', 9);
@@ -82,8 +82,8 @@ int main(int argc, char * argv[]) {
     ofstream outfile;
     streampos size;
     streampos ciphersize;
-    char *plaintext;
-    char *ciphertext;
+    unsigned char *plaintext;
+    unsigned char *ciphertext;
     unsigned char *key;
 
     if (argc != 4) {
@@ -101,16 +101,16 @@ int main(int argc, char * argv[]) {
                 ciphersize = size + 8 - (size % 8);
             }
             
-            plaintext = new char[size];
-            ciphertext = new char[ciphersize];
+            plaintext = new unsigned char[size];
+            ciphertext = new unsigned char[ciphersize];
             infile.seekg(0, ios::beg);
-            infile.read(plaintext, size);
+            infile.read((char*)plaintext, size);
             
             read_key(argv[3], key);
             
             des_encryption(plaintext, key, ciphertext, size);
 
-            outfile.write(ciphertext, ciphersize);
+            outfile.write((char*)ciphertext, ciphersize);
             cout << "cipher text stored in: " << argv[2] << endl;
         } else {
             cout << "Unable to open file " << argv[1] << endl;
