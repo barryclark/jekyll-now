@@ -1,4 +1,4 @@
 ---
 name: en
-title: English
+title: Docs by English
 ---
