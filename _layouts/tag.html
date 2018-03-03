@@ -1,16 +1,9 @@
 ---
 layout: default
 ---
-<div id="navbar" class="container">
-    <h5><a id="link-back" href="/">Main</a></h5>
-</div>
-
-<div id="cover" class="container"
-     {% if page.image %}style="background-image: url({{ page.image }});"{% endif %}>
-    <div>
-        <h1>{{ page.title | default: page.name }}</h1>
-        <p>All Posts in <strong>{{ page.name }}</strong></p>
-    </div>
+<div>
+    <h1>{{ page.title | default: page.name }}</h1>
+    <p>All Posts in <strong>{{ page.name }}</strong></p>
 </div>
 
 <div id="content" class="container">
