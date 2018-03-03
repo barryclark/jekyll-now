@@ -49,6 +49,8 @@ padding-left:35px;padding-right:35px;}
 padding-top:3px;color:var(--color-white);font-weight: normal;font-size:20px;}
 #horari i svg, #domicili i svg {background-color:transparent ;background-image: url(/hipertextos/brand/hexagonblack.png);background-repeat:no-repeat;background-size:250px;width:250px;height:250px;border:none!important;
 padding-left:80px;padding-right:80px;padding-top:36px;}
+#location i svg {background-color:transparent ;background-image: url(/hipertextos/brand/hexagon.png);background-repeat:no-repeat;background-size:100px;width:100px;height:100px;border:none!important;
+padding-left:32px;padding-right:32px;padding-top:6px;color:var(--color-softgrey);}
 
 /* Carta Section */
 #page-header.carta-header {border:none;	height: 269px;padding-top:80px;background-position: top center;background-attachment: fixed;background-size: cover;background-repeat: no-repeat;
