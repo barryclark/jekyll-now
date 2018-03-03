@@ -1,18 +1,18 @@
 ---
 layout: default
 ---
+<div>
+    <h1>{{ page.title | default: page.name }}</h1>
+</div>
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
-
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
-
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
+<div id="content" class="container">
+    <div id="lang-content" role="main">
+        <ul id="post-list">
+            {% for post in site.posts %}
+                {% if { post.lang || 'en' } == page.name %}
+                    {% include item.html %}
+                {% endif %}
+            {% endfor %}
+        </ul>
+    </div>
 </div>
