@@ -1,4 +1,4 @@
-// 2018-03-02 09:32PM
+// 2018-03-02 09:41PM
 
 #include <iostream>
 #include <cstring>
@@ -27,13 +27,13 @@ void des_encryption_8(unsigned char *input, unsigned char *key, unsigned char *o
 }
 
 void des_encryption(unsigned char *plaintext, unsigned char *key, unsigned char *ciphertext, streampos file_size) {
-    unsigned char subtext[8];
-    unsigned char subcipher[8];
+    unsigned char subtext[9];
+    unsigned char subcipher[9];
     
-    memset(subtext, '\0', 8);
-    memset(subcipher, '\0', 8);
+    memset(subtext, '\0', 9);
+    memset(subcipher, '\0', 9);
     
-    //cout << "plaintext: " << plaintext << endl;
+    cout << "plaintext: " << plaintext << endl;
         
     for(int i=0; i < file_size; i=i+8) {        
         int start = i;
@@ -48,15 +48,17 @@ void des_encryption(unsigned char *plaintext, unsigned char *key, unsigned char 
             memset(subtext,size,8);
             copy(plaintext + start, plaintext + end, subtext);
         }
-                       
+                
+        cout << i << endl;
+        
         des_encryption_8(subtext, key, subcipher);
         copy(subcipher, subcipher + 8, ciphertext + start);
                 
-        //cout << i << "p: " << subtext << endl;        
-        //cout << i << "c: " << subcipher << endl;
+        cout << i << "p: " << subtext << endl;
+        cout << i << "c: " << subcipher << endl;
     }
     
-    //cout << "ciphertext: " << ciphertext << endl;
+    cout << "ciphertext: " << ciphertext << endl;
 }
 
 void read_key(char *keystring, unsigned char *key) {
