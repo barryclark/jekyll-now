@@ -74,7 +74,12 @@ padding-left:8px;padding-top:6px;font-size:2.5em;margin-top: 40px;}
 
 #foot-cover.cover {width:100%;	height: 400px;padding-top:50px;color:var(--color-white);}
 #foot-cover.cover svg {float:none;text-align: center;width:30px;}
+
 #mapa {background-color:#222;padding-top:23px;color:var(--color-hardgrey);}
+#mapa h4 img {display:inline;float:none;padding: 6px;max-width:60px;height:100%; }
+#mapa h4 .red {background:var(--color-red);}
+#mapa h4 .green {background:var(--color-green);}
+#mapa h4 div {display:inline;padding-left:12px;padding-right:12px;border-radius:3px;color:var(--color-soft);}
 
 /* Footer */ 
 #page-footer {background:#222;color:#999;box-shadow: inset 0 0 56px rgba(0, 0, 0, .32);bottom: 0px;width: 100%;}
