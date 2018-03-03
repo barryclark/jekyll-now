@@ -1,6 +1,7 @@
-// 2018-03-02 09:41PM
+// 2018-03-03 12:21PM
 
 #include <iostream>
+#include <iomanip>
 #include <cstring>
 #include <fstream>
 #include <sstream>
@@ -17,6 +18,14 @@ using namespace std;
 
 using namespace CryptoPP;
 
+void printhex(unsigned char *text) {
+    for(int i = 0; i < 8; i++) {
+        cout << setbase(16) << (int)text[i] << " ";
+    }
+    
+    cout << endl;
+}
+
 void des_encryption_8(unsigned char *input, unsigned char *key, unsigned char *output) {
 //    copy(input, input + 8, output);
     DESEncryption desEncryptor;
@@ -28,12 +37,12 @@ void des_encryption_8(unsigned char *input, unsigned char *key, unsigned char *o
 
 void des_encryption(unsigned char *plaintext, unsigned char *key, unsigned char *ciphertext, streampos file_size) {
     unsigned char subtext[9];
-    unsigned char subcipher[9];
+    unsigned char subcipher[8];
     
-    memset(subtext, '\0', 9);
-    memset(subcipher, '\0', 9);
+    memset(subtext, '\0', 8);
+    memset(subcipher, '\0', 8);
     
-    cout << "plaintext: " << plaintext << endl;
+//    cout << "plaintext: "; printhex(plaintext);
         
     for(int i=0; i < file_size; i=i+8) {        
         int start = i;
@@ -48,21 +57,19 @@ void des_encryption(unsigned char *plaintext, unsigned char *key, unsigned char 
             memset(subtext,size,8);
             copy(plaintext + start, plaintext + end, subtext);
         }
-                
-        cout << i << endl;
-        
+                        
         des_encryption_8(subtext, key, subcipher);
         copy(subcipher, subcipher + 8, ciphertext + start);
                 
-        cout << i << "p: " << subtext << endl;
-        cout << i << "c: " << subcipher << endl;
+        cout << i << "p: "; printhex(subtext);
+        cout << i << "c: "; printhex(subcipher);
     }
     
-    cout << "ciphertext: " << ciphertext << endl;
+//    cout << "ciphertext: "; printhex(ciphertext);
 }
 
 void read_key(char *keystring, unsigned char *key) {
-    //cout << "read_key -> keystring = " << keystring << endl;
+    cout << "read_key -> keystring = " << keystring << endl;
     
     key = new unsigned char[8];
     memset(key, 0, 8);
@@ -75,7 +82,7 @@ void read_key(char *keystring, unsigned char *key) {
         }
     }
     
-    //cout << "read_key -> key = " << key << endl;
+    cout << "read_key -> key = "; printhex(key);
 }
 
 int main(int argc, char * argv[]) {
