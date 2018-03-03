@@ -1,4 +1,4 @@
 ---
 name: kr
-title: 한글 
+title: 한글 문서
 ---
