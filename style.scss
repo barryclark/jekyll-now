@@ -296,6 +296,88 @@ a.tag {
     line-height: 24px; /* 24px = 26(height) - 2(border) */
 }
 
+#post-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#post-list .post-item {
+    list-style: none;
+    position: relative;
+    margin: 0 40px;
+    padding: 50px 0 50px 40px;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+#post-list .post-title,
+#post-list .post-excerpt,
+#post-list .post-tags {
+    margin: 0 160px 0 0; /* 160px = 60(spacing from .post-author) + 140(.post-author width) - 40(padding-left) */
+    max-width: 620px;
+}
+
+#post-list .post-title {
+    font-size: 26px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#post-list .post-excerpt {
+    margin-top: 22px;
+    font-size: 14px;
+    line-height: 24px; /* 24px = 14(font-size) + 10(line-spacing) */
+    display: block;
+    max-height: 48px; /* 2 lines */
+    display: -webkit-box; /* multi-line ellipsis */
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    overflow: hidden;
+}
+
+#post-list .post-meta {
+    position: absolute;
+    top: 63px;
+    right: 0;
+    width: 140px;
+}
+
+#post-list .author-image {
+    display: block;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    border-radius: 100%;
+    background: url(../images/pc/default_pic_s.png) no-repeat center;
+    background-size: cover;
+}
+
+#post-list .author-name {
+    margin: 12px 0 0 0;
+    font-size: 14px;
+    color: #1e1e1e;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#post-list .post-date {
+    margin: 6px 0 0 0;
+    font-size: 12px;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#post-list .post-tags {
+    margin-top: 18px;
+}
+
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
