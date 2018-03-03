@@ -40,7 +40,7 @@ Here, you'll find all of ACM AI's content over the years, including code, blog p
 
 #### Autoencoders
 - [Slides](https://docs.google.com/presentation/u/1/d/1ZHiViM6mxJuagKM1dIMbQzVzMJJAcNCRZQxEhYIlCWM/edit#slide=id.g35ed75ccf_022)
-- [Code](https://github.com/uclaacmai/autoencoder-workshop/blob/master/Tensorflow%20Autoencoder.ipynb)
+- [Code](https://github.com/uclaacmai/autoencoder-workshop/blob/master/Tensorflow%20Autoencoder.ipynb).
 
 
 #### Research Paper Reviews
