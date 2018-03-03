@@ -86,3 +86,16 @@ exclude:
   - CNAME
 
 theme: jekyll-theme-hacker
+
+# Collections for tags
+collections:
+  language:
+    output: false
+      permalink: /lang/:path/
+      
+defaults:
+  - scope:
+      path: ''
+      type: language
+    values:
+      layout: language
