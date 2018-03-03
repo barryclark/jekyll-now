@@ -60,9 +60,10 @@ img.icon {width:15px;margin-left:5px;margin-right:5px;}
 .legends p {font-size:15px;}
 
 h6.title {text-align:left;font-size:.75em;margin-bottom:-32px;color:var(--color-grey); }
-#rollitos-cart, #pures-cart, #cremes-cart, #amanides-cart, #xips-cart, #postres-cart {text-align: left;}
-#rollitos-cart h4, #pures-cart h4, #cremes-cart h4, #amanides-cart h4, #xips-cart h4, #postres-cart h4, begudes-cart h4 {margin-top:-10px;letter-spacing: -0.032em;}
-#rollitos-cart p, #pures-cart p, #cremes-cart p, #amanides-cart p, #xips-cart p, #postres-cart p {margin-top:-35px;}
+#rollitos-cart, #pures-cart, #cremes-cart, #amanides-cart, #xips-cart, #postres-cart, #begudes-cart {text-align: left;}
+#rollitos-cart h4, #pures-cart h4, #cremes-cart h4, #amanides-cart h4, #xips-cart h4, #postres-cart h4, #begudes-cart h4 {margin-top:-10px;letter-spacing: -0.032em;}
+#rollitos-cart p, #pures-cart p, #cremes-cart p, #amanides-cart p, #xips-cart p, #postres-cart p, #begudes-cart p {margin-top:-35px;}
+#begudes-cart h5, #begudes-cart h6 {text-align: center;}
 button {background-color:transparent ;background-image: url(/hipertextos/brand/hexagonblack.png);background-repeat:no-repeat  ;background-size:100px;width:100px;height:100px;border:none!important;
     color:var(--color-white);min-height:100px;font-size:30px;letter-spacing: 0.06em;font-weight: lighter }
 #menu h2, #menu h3 {margin:0;}
