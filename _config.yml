@@ -90,7 +90,7 @@ theme: jekyll-theme-hacker
 # Collections for tags
 collections:
   lang:
-    output: true
+    output: false
     permalink: /lang/:path/
   tags:
     output: true
@@ -100,7 +100,7 @@ defaults:
       path: 'en'
       type: lang
     values:
-      layout: default
+      layout: lang
   - scope:
       path: ''
       type: tags
