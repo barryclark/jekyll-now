@@ -94,8 +94,8 @@ collections:
     permalink: /lang/:path/
       
 defaults:
-  -scope:
+  - scope:
     path: 'en'
-    type: language
+    type: lang
   values:
     layout: language
