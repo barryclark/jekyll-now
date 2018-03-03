@@ -39,11 +39,9 @@ streampos des_decryption(unsigned char *plaintext, unsigned char *key, unsigned 
     unsigned char subtext[8];
     unsigned char subcipher[8];
     
-    memset(subtext, '\0', 8);
-    memset(subcipher, '\0', 8);
-    
-//    cout << "ciphertext: " printhex(ciphertext);
-        
+    memset(subtext, 0, 8);
+    memset(subcipher, 0, 8);
+            
     for(int i = 0; i < file_size; i = i + 8) {        
         int start = i;
         int end;
@@ -55,11 +53,10 @@ streampos des_decryption(unsigned char *plaintext, unsigned char *key, unsigned 
         copy(subtext, subtext + 8, plaintext + start);
                         
         cout << i << "c: "; printhex(subcipher);
+        cout << i << "k: "; printhex(key);
         cout << i << "p: "; printhex(subtext);
     }
-    
-//    cout << "plaintext: "; printhex(plaintext);
-    
+        
     for(int i = 1; i <= 8; i++) {
         if(subtext[8 - i] == i) {
             return file_size - i; 
@@ -74,7 +71,6 @@ streampos des_decryption(unsigned char *plaintext, unsigned char *key, unsigned 
 void read_key(char *keystring, unsigned char *key) {
     cout << "read_key -> keystring = " << keystring << endl;
     
-    key = new unsigned char[8];
     memset(key, 0, 8);
     
     for (int i = 0; i < 8; i++) {
@@ -96,7 +92,7 @@ int main(int argc, char * argv[]) {
     streampos plainsize;
     unsigned char *plaintext;
     unsigned char *ciphertext;
-    unsigned char *key;
+    unsigned char *key = new unsigned char[8];
 
     if (argc != 4) {
         cout << "usage:des_encode infile outfile key" << endl;

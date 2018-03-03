@@ -28,27 +28,21 @@ void printhex(unsigned char *text) {
 
 void des_encryption_8(unsigned char *input, unsigned char *key, unsigned char *output) {
 //    copy(input, input + 8, output);
-    
-    ECB_Mode< DES >::Decryption dec;
-    dec.SetKey(key, 8);
-    dec.ProcessData(output, input, 8);
-    
+      
     DESEncryption desEncryptor;
     unsigned char xorBlock[8];
     memset(xorBlock,0,8);
     desEncryptor.SetKey(key,8);
-     desEncryptor.ProcessBlock(input,output);
+    desEncryptor.ProcessBlock(input,output);
 }
 
 void des_encryption(unsigned char *plaintext, unsigned char *key, unsigned char *ciphertext, streampos file_size) {
     unsigned char subtext[9];
     unsigned char subcipher[8];
     
-    memset(subtext, '\0', 8);
-    memset(subcipher, '\0', 8);
-    
-//    cout << "plaintext: "; printhex(plaintext);
-        
+    memset(subtext, 0, 8);
+    memset(subcipher, 0, 8);
+            
     for(int i=0; i < file_size; i=i+8) {        
         int start = i;
         int end;
@@ -67,16 +61,14 @@ void des_encryption(unsigned char *plaintext, unsigned char *key, unsigned char 
         copy(subcipher, subcipher + 8, ciphertext + start);
                 
         cout << i << "p: "; printhex(subtext);
+        cout << i << "k: "; printhex(key);
         cout << i << "c: "; printhex(subcipher);
     }
-    
-//    cout << "ciphertext: "; printhex(ciphertext);
 }
 
 void read_key(char *keystring, unsigned char *key) {
     cout << "read_key -> keystring = " << keystring << endl;
     
-    key = new unsigned char[8];
     memset(key, 0, 8);
     
     for (int i = 0; i < 8; i++) {
@@ -98,7 +90,7 @@ int main(int argc, char * argv[]) {
     streampos ciphersize;
     unsigned char *plaintext;
     unsigned char *ciphertext;
-    unsigned char *key;
+    unsigned char *key =  new unsigned char[8];
 
     if (argc != 4) {
         cout << "usage:des_encode infile outfile key" << endl;
