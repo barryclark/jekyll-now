@@ -9,8 +9,8 @@
                class="tag tag-{{ tag }}">{{ tag }}</a>
         {% endfor %}
     </p>
-    <div class="post-meta">
-        <p class="post-date">{{ post.date | date: '%Y-%m-%d %H:%M' }}</p>
-    </div>
+    <div class="date">
+        Written on {{ page.date | date: "%B %e, %Y" }}
+    </div>    
     <!--<div class="clearfix"></div>-->
 </li>
