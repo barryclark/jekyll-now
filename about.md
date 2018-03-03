@@ -4,10 +4,10 @@ title: About
 permalink: /about/
 ---
 
-title : Sol labs
-name : Cyan Raphael Yi
-name(ko_kr) : 이현승
-timezone : GMT+0900
+* title : Sol labs
+* name : Cyan Raphael Yi
+* name(ko_kr) : 이현승
+* timezone : GMT+0900
 
 ### More Information
 
