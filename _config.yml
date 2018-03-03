@@ -91,7 +91,7 @@ theme: jekyll-theme-hacker
 collections:
   language:
     output: false
-    permalink: /lang/:path/
+    permalink: /language/:path/
       
 defaults:
   -scope:
