@@ -91,11 +91,11 @@ theme: jekyll-theme-hacker
 collections:
   language:
     output: false
-      permalink: /lang/:path/
+    permalink: /lang/:path/
       
 defaults:
-  - scope:
-      path: ''
-      type: language
-    values:
-      layout: language
+  -scope:
+    path: ''
+    type: language
+  values:
+    layout: language
