@@ -97,7 +97,7 @@ collections:
     permalink: /tags/:path/
 defaults:
   - scope:
-      path: ''
+      path: 'en'
       type: lang
     values:
       layout: lang
