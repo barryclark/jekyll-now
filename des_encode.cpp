@@ -1,4 +1,4 @@
-// 2018-03-03 12:36PM
+// 2018-03-03 12:43PM
 
 #include <iostream>
 #include <iomanip>
@@ -19,7 +19,7 @@ using namespace std;
 using namespace CryptoPP;
 
 void printhex(unsigned char *text) {
-    for(int i = 0; i < 8; i++) {
+    for(int i = 0; i < DES::DEFAULT_BLOCKSIZE; i++) {
         cout << setbase(16) << (int)text[i] << " ";
     }
     
@@ -29,37 +29,37 @@ void printhex(unsigned char *text) {
 void des_encryption_8(unsigned char *input, unsigned char *key, unsigned char *output) {
 //    copy(input, input + 8, output);
     DESEncryption desEncryptor;
-    unsigned char xorBlock[8];
-    memset(xorBlock,0,8);
-    desEncryptor.SetKey(key,8);
+    unsigned char xorBlock[DES::DEFAULT_BLOCKSIZE];
+    memset(xorBlock,0,DES::DEFAULT_BLOCKSIZE);
+    desEncryptor.SetKey(key,DES::DEFAULT_KEYLENGTH);
     desEncryptor.ProcessBlock(input,output);
 }
 
 void des_encryption(unsigned char *plaintext, unsigned char *key, unsigned char *ciphertext, streampos file_size) {
     unsigned char subtext[9];
-    unsigned char subcipher[8];
+    unsigned char subcipher[DES::DEFAULT_KEYLENGTH];
     
-    memset(subtext, '\0', 8);
-    memset(subcipher, '\0', 8);
+    memset(subtext, '\0', DES::DEFAULT_BLOCKSIZE);
+    memset(subcipher, '\0', DES::DEFAULT_BLOCKSIZE);
     
 //    cout << "plaintext: "; printhex(plaintext);
         
-    for(int i=0; i < file_size; i=i+8) {        
+    for(int i=0; i < file_size; i=i+DES::DEFAULT_BLOCKSIZE) {        
         int start = i;
         int end;
         
         if(i + 7 < file_size) {
-            end = start + 8;
+            end = start + DES::DEFAULT_BLOCKSIZE;
             copy(plaintext + start, plaintext + end, subtext);
         } else {
             end = file_size;
-            int size = 8 - (end - start);
-            memset(subtext,size,8);
+            int size = DES::DEFAULT_BLOCKSIZE - (end - start);
+            memset(subtext,size,DES::DEFAULT_BLOCKSIZE);
             copy(plaintext + start, plaintext + end, subtext);
         }
                         
         des_encryption_8(subtext, key, subcipher);
-        copy(subcipher, subcipher + 8, ciphertext + start);
+        copy(subcipher, subcipher + DES::DEFAULT_BLOCKSIZE, ciphertext + start);
                 
         cout << i << "p: "; printhex(subtext);
         cout << i << "c: "; printhex(subcipher);
@@ -71,10 +71,10 @@ void des_encryption(unsigned char *plaintext, unsigned char *key, unsigned char 
 void read_key(char *keystring, unsigned char *key) {
     cout << "read_key -> keystring = " << keystring << endl;
     
-    key = new unsigned char[8];
-    memset(key, 0, 8);
+    key = new unsigned char[DES::DEFAULT_KEYLENGTH];
+    memset(key, 0, DES::DEFAULT_KEYLENGTH);
     
-    for (int i = 0; i < 8; i++) {
+    for (int i = 0; i < DES::DEFAULT_KEYLENGTH; i++) {
         if (keystring[i] != '\0') {
             key[i] = (unsigned char)keystring[i];
         } else {
@@ -104,10 +104,10 @@ int main(int argc, char * argv[]) {
         if (infile.is_open()) {
             size = infile.tellg();
             
-            if(size % 8 == 0) {
+            if(size % DES::DEFAULT_BLOCKSIZE == 0) {
                 ciphersize = size;
             } else {
-                ciphersize = size + 8 - (size % 8);
+                ciphersize = size + DES::DEFAULT_BLOCKSIZE - (size % DES::DEFAULT_BLOCKSIZE);
             }
             
             plaintext = new unsigned char[size];
