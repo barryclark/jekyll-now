@@ -29,7 +29,15 @@
 	<div class="page" id="page">
 	{% include partials/navigation/nav.html %}
       {{ content }}
-      <hr>
+      
+		<div id="foot-cover" class="cover" style="background-image: url('{{ site.baseurl }}/hipertextos/brand/carta.jpg');">
+			<h5><small><i class="icon-flickr"></i></small></h5>
+			<h4><small>{{ site.alternativa }}<br>
+			{{ site.natural }}<br>
+			{{ site.terra }}</small></h4>
+			<h5><small><i class="icon-flickr"></i></small></h5>
+		</div>
+		<hr>
     	<div id="mapa">
   		{% include mapa.html %} 
 		</div>
