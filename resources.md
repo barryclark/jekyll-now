@@ -47,6 +47,7 @@ Here, you'll find all of ACM AI's content over the years, including code, blog p
 - [A few useful things to know about machine learning](https://docs.google.com/presentation/d/1I2B0TLEWjffEXZva6OEw1mfU4FWZ5vSjBnfxFXmXl6g/edit?usp=sharing)
 - [Deep Learning: An overview](https://docs.google.com/presentation/d/12AthaGiN669pe_6fvGz0DPb9emsJJK20xbOWu2l2ixo/edit?usp=sharing)
 - AlexNet, Inception Net, & ResNet [notes](https://github.com/uclaacmai/paper-analysis/blob/master/cnn-papers/ConvNetPapers.md) and [slides](https://docs.google.com/presentation/d/1e9A6mn-tB-LhCfRKsJBUoDU-ePmQjpSfGFL9HINuJgM/edit)
+- Word2Vec [meeting slides](https://docs.google.com/presentation/d/1j4Z7XgP9sB2_kveMfia77b3KjHZrxGp0Gc-YHXslwoA/edit?usp=sharing)
 
 #### General
 - [ACM AI Intro Meeting Slides](http://bit.ly/2xw2T18)
