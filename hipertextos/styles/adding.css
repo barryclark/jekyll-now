@@ -16,6 +16,10 @@ main {font-family:'Lato', sans-serif;padding-top:36px;margin-bottom: 0;}
 #site-nav em a:visited {color:var(--color-grey)!important ;}
 #site-nav em a:hover {color:#fafafa!important;fill:#fafafa!important;stroke:#fafafa!important;}
 #site-logo a, #site-logo a:hover, #site-logo a:visited {color:var(--color-white)!important;}
+
+#site-nav .site-logo {background-color:transparent ;background-image: url(/hipertextos/brand/hexagon.png);background-repeat:no-repeat  ;background-size:40px;width:40px;height:40px;border:none!important;
+padding-left:10px;padding-right:10px;padding-top:11px;margin-top:3px;opacity:.7;z-index:10;}
+
 /* Header cover*/
 #page-header {color:var(--color-grey);}
 #page-header h5 img {width:512px;height:100%;float:none;margin:-25px 0 0 0;}
