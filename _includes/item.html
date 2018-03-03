@@ -3,12 +3,7 @@
         <h3 class="post-title">{{ post.title }}</h3>
         <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 75 }}</p>
     </a>
-    <p class="post-tags">
-        {% for tag in post.tags %}
-            <a href="{{ site.baseurl }}/tags/{{ tag }}" title="{{ tag }}"
-               class="tag tag-{{ tag }}">{{ tag }}</a>
-        {% endfor %}
-    </p>
+    {% include tags.html %}
     <div class="post-date">
         Written on {{ post.date | date: "%B %e, %Y" }}
     </div>    
