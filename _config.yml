@@ -95,7 +95,7 @@ collections:
       
 defaults:
   -scope:
-    path: '/en'
-    type: lang
+    path: 'en'
+    type: language
   values:
-    layout: lang
+    layout: language
