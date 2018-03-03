@@ -1,4 +1,4 @@
-// 2018-03-02 09:22PM
+// 2018-03-02 09:32PM
 
 #include <iostream>
 #include <cstring>
@@ -27,11 +27,11 @@ void des_decryption_8(unsigned char *input, unsigned char *key, unsigned char *o
 }
 
 streampos des_decryption(unsigned char *plaintext, unsigned char *key, unsigned char *ciphertext, streampos file_size) {
-    unsigned char subtext[9];
-    unsigned char subcipher[9];
+    unsigned char subtext[8];
+    unsigned char subcipher[8];
     
-    memset(subtext, '\0', 9);
-    memset(subcipher, '\0', 9);
+    memset(subtext, '\0', 8);
+    memset(subcipher, '\0', 8);
     
     //cout << "ciphertext: " << ciphertext << endl;
         
