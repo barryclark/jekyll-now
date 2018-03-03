@@ -89,13 +89,13 @@ theme: jekyll-theme-hacker
 
 # Collections for tags
 collections:
-  language:
+  lang:
     output: false
-    permalink: /language/:path/
+    permalink: /lang/:path/
       
 defaults:
   -scope:
-    path: ''
-    type: language
+    path: '/en'
+    type: lang
   values:
-    layout: language
+    layout: lang
