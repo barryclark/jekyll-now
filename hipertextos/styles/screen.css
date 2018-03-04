@@ -1207,6 +1207,8 @@ nav label {
 	--color-softblack: rgba(10,10,10,1);
 	--color-soft-black: rgba(23,20,21,1);
 
+	--color-gold: rgba(236,227,198,1);
+	
 	--color-link: rgba(167, 131, 23, 1.0);
 	--color-vlink: rgba(167, 131, 23, .8);
 	
