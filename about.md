@@ -7,7 +7,7 @@ permalink: /about/
 
 ### About Me
 
-Seattle tech writer, white paper expert, analyst, serial startup survivor. 
+Seattle tech writer, analyst, white paper expert, serial startup survivor. 
 
 ### Contact me
 
