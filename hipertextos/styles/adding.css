@@ -9,13 +9,13 @@ hr.lines.lgrey {border-top:thin solid var(--color-softgrey);}
 #site-nav, footer, #follows, #follows-big, #icons, #covers, .nav-scroll, #web-credits, #page-header, #post-header, #post-share, #date, #info-seo, #black-video {
 text-align: center;}
 /* Nav */
-#site-nav {background: var(--color-soft-black) !important;border-bottom: none;font-size: 17px;color: var(--color-grey);box-shadow: 0 1px 21px rgba(0, 0, 0, .23);}
+#site-nav {background: #edefef!important;border-bottom: none;font-size: 17px;color: var(--color-blue);box-shadow: none;}
 #site-nav a {font-weight: lighter;min-width: 12%;border: none;letter-spacing: .032em;}
 #site-nav a:visited { color: var(--color-grey);text-decoration: none;}
-#site-nav a:hover, #site-nav a b:hover { color: #fff !important;background: #000;text-decoration: none;}
-#site-nav a b {font-family: 'Grenadier NF';text-transform: uppercase;font-weight: normal ;letter-spacing: .12em;}
-#site-nav a b:before {border-bottom: 1px solid #444;content: '';display: block;position: absolute;left: 47%;right: 0;width: 6%;padding-bottom: 2px;}
-#site-nav a b:after {border-bottom: 1px solid #444;content: ' ';display: block;position: absolute;left: 47%;right: 0;width: 6%;margin-top: -3px;}
+#site-nav a:hover, #site-nav a b:hover { color: var(--color-hardgrey)!important;text-decoration: none;}
+#site-nav a b {font-family: 'Grenadier NF';text-transform: uppercase;font-weight: normal ;letter-spacing: .12em;color:var(--color-blue);}
+#site-nav a b:before {border-bottom: 1px solid currentcolor;content: '';display: block;position: absolute;left: 47%;right: 0;width: 6%;padding-bottom: 2px;}
+#site-nav a b:after {border-bottom: 1px solid currentcolor;content: ' ';display: block;position: absolute;left: 47%;right: 0;width: 6%;margin-top: -3px;}
 #current-nav, #current-nav a:visited, #current-nav:visited {color:#fff !important;}
 #site-nav label {color:var(--color-grey);border:thin solid transparent;}
 #site-nav label:hover {color:var(--color-soft-grey);border:thin solid #353535;}
