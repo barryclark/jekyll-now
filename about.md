@@ -5,10 +5,10 @@ permalink: /about/
 ---
 
 
-### About Me
+### Bio
 
 Seattle tech writer, analyst, white paper expert, serial startup survivor. 
 
-### Contact me
+### Contact
 
 [Hire me, tip me off, drop me a note, ask me anything.](mailto:dwilson22180@gmail.com)
