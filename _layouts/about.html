@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ca">
+  <head>
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+
+    {% include meta.html %}
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/styles/screen.css" />
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/styles/components.css" />
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/styles/adding.css" />
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/styles/adding-about.css" />
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/styles/helpers.css" />
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/styles/anime.css" />    
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+	<link href="https://fonts.googleapis.com/css?family=Voltaire" rel="stylesheet">
+
+    {% include favicons.html %}
+
+  </head>
+  <body>
+	<!-- Page content -->
+	<div class="page cover-page" id="page">
+	{% include partials/navigation/nav-about.html %}
+		<header id="page-header" class="about-cover anm-moveFromTop delay-200">
+			<div>
+				<h1 class="anm-moveFromBottomFade delay-300">{{ page.title }} Band</h1>
+			</div>
+		</header>
+		<nav id="page-nav" class="nav-scroll anm-fadeIn delay-600">
+			<div>
+				<a href="#info" title="Text" class="anm-zoomIn delay-700"><img src="{{ site.baseurl }}/hipertextos/svg/telephone.svg" alt="telefon"><br>Som</a>
+				<a href="#band" title="Forms" class="anm-zoomIn delay-800"><img src="{{ site.baseurl }}/hipertextos/svg/musics.svg" alt="samarreta equip"><br>Músics</a>
+				<a href="#prensa" title="Tables" class="anm-zoomIn delay-900"><img src="{{ site.baseurl }}/hipertextos/svg/prensa.svg" alt="altaveu"><br>Premsa</a>
+				<a href="#reper" title="Navigation" class="anm-zoomIn delay-1000"><img src="{{ site.baseurl }}/hipertextos/svg/reper.svg" alt="gramófon antic"><br>Repertori</a>
+			 </div>
+		</nav>
+		<main id="page-main" class="anm-fadeIn delay-900 slow">
+			<div>
+				<section id="info-about" class="anm-fadeIn delay-1000">
+					<h2 id="info" class="anm-moveFromTopFade delay-1500"><u>Qui Som</u></h2>
+					<h5 class="anm-fadeIn delay-1500 slow">{{ page.som }}</h5>
+					<div class="columns-2 anm-moveFromBottomFade delay-1500">
+						{{ content }}
+					</div>
+					<div id="contracta">
+						<em class="thumb anm-scaleUp delay-1500 slow"><u><label for="modal-two">Contractació</label></u></em>
+					</div>
+					<hr>
+					<div id="musics">
+					<h2 id="band" class="anm-fadeIn delay-2000"><u>Músics</u></h2>
+						<div>
+							<h5>{{ page.musics }}</h5>
+							<p>{{ page.musics2 }}</p>
+						</div>
+						<hr>
+						<div class="cell-x2">
+							<h6>{{ page.vox }}</h6>
+							<img src="{{ site.baseurl }}/hipertextos/svg/m-mic.svg" class="musics" alt="micrófon">
+							<h5><small>Veu</small></h5>
+						</div>
+						<div class="cell-x2">
+							<h6>{{ page.sax }}</h6>
+							<img src="{{ site.baseurl }}/hipertextos/svg/m-sax.svg" class="musics" alt="Saxo">
+							<h5><small>Saxo</small></h5>
+						</div>
+						<div class="cell-x2">
+							<h6>{{ page.guitar }}</h6>
+							<img src="{{ site.baseurl }}/hipertextos/svg/m-guitar.svg" class="musics" alt="Guitarra elèctrica">
+							<h5><small>Guitarra</small></h5>
+						</div>
+						<div class="cell-x2">
+							<h6>{{ page.bass }}</h6>
+							<img src="{{ site.baseurl }}/hipertextos/svg/m-bass.svg" class="musics" alt="Contrabaix">
+							<h5><small>Contrabaix</small></h5>
+						</div>
+						<div class="cell-x2">
+							<h6>{{ page.drums }}</h6>
+							<img src="{{ site.baseurl }}/hipertextos/svg/m-drums.svg" class="musics" alt="Batería">
+							<h5><small>Bateria</small></h5>
+						</div>
+					</div>
+					<hr>
+					<h2 id="prensa" class="anm-scaleUp delay-600"><u>Premsa</u></h2>
+						<div>
+							<h5>{{ page.premsa }}</h5>
+							<p>{{ page.premsa2 }}</p>
+							<div id="down-avatar" class="thumb-x2">
+								<img src="{{ site.baseurl }}/hipertextos/brand/icon.jpg" id="avatar" alt="Logotip de la banda Old Steam">
+								<em><a href="{{ site.baseurl }}/hipertextos/brand/logo.jpg">&darr; Logo</a></em>
+							</div>
+							<div id="down-info" class="thumb-x8">
+								<p>&star; Nom: <b>{{ page.title }}</b><br>
+								&star; Origen: <b>Barcelona</b><br>
+								&star; Any: <b>2015</b><br>
+								&star; Formació: <b>Quintet</b><br>
+								&star; Estil: <b>Jazz, Swing & blues</b><br>
+								&commat; Contacte: <b><a href="mailto:oldsteambcn@gmail.com"> oldsteambcn@gmail.com</a></b><br>
+								&darr; Biografía: <b><a href="{{ site.baseurl }}/hipertextos/pdf/biografia.pdf"> Biografía.pdf</a></b><br>
+								&darr; Rider Tècnic <b><a href="{{ site.baseurl }}/hipertextos/pdf/rider_tecnic.pdf"> Rider.pdf</a></b><br>
+								
+								<!-- <a href="{{ site.baseurl }}/prensa"><i class="icon-bullhorn"></i> Zona de Prensa</a> -->
+								</p>
+							</div>
+						</div>
+					<hr>
+					<h2 id="reper" class="anm-scaleUp delay-800"><u>Repertori</u></h2>
+					<div>
+						<h5>{{ page.reper }}</h5>
+						<p>{{ page.reper2 }}</p>
+					</div>						
+					
+					<div id="repertori" class="collapser">
+						<em><label for="a-2">REPERTORI COMPLET</label></em>
+						<input type="checkbox" id="a-2" name="checkcollapser" hidden>
+						<div hidden>
+							<h5><strong>Dark Eyes</strong> <em>1920</em> <strong>Adalgiso Ferraris</strong></h5>
+							<h5><strong>Blue Skies</strong> <em>1926</em> <strong>Irving Berlin</strong></h5>
+							<h5><strong>Puttin' on the Ritz</strong> <em>1927</em> <strong>Irving Berlin</strong></h5>
+							<h5><strong>On the sunny side of the street</strong> <em>1930</em> <strong>Jimmy McHugh y Dorothy Fields</strong></h5>
+							<h5><strong>I need a sugar in my bowl</strong> <em>1931</em> <strong>Bessie Smith</strong></h5>
+							<h5><strong>All of me</strong> <em>1931</em> <strong>Gerald Marks y Seymour Simons</strong></h5>
+							<h5><strong>Bei Mir Bist du Schön</strong> <em>1932</em> <strong>Jacob Jacobs y Sholom Secunda</strong></h5>
+							<h5><strong>Cheek to cheek</strong> <em>1935</em> <strong>Irving Berlin</strong></h5>
+							<h5><strong>Sing sing sing</strong> <em>1936</em> <strong>Louis Prima / Benny Goodman</strong></h5>
+							<h5><strong>At Last</strong> <em>1941</em> <strong>Etta James</strong></h5>
+							<h5><strong>El Padrino</strong> <em>1942</em> <strong>Nino Rota</strong></h5>
+							<h5><strong>Bella Ciao</strong> <em>1943</em> <strong>Desconocido</strong></h5>
+							<h5><strong>Why Don't You Do Right?</strong> <em>1945</em> <strong>Joseph "Kansas Joe" McCoy</strong></h5>
+							<h5><strong>Put the blame on mame</strong> <em>1946</em> <strong>Allan Roberts y Doris Fisher</strong></h5>
+							<h5><strong>I just want to make love with u</strong> <em>1950</em> <strong>Muddy Waters</strong></h5>
+							<h5><strong>Flying to the moon</strong> <em>1954</em> <strong>Bart Howard</strong></h5>
+							<h5><strong>Mr Sandman</strong> <em>1954</em> <strong>Pat Ballard</strong></h5>
+							<h5><strong>Moliendo café</strong> <em>1958</em> <strong>José Manzo Perroni</strong></h5>
+							<h5><strong>Love me right</strong> <em>1959</em> <strong>LaVern Baker</strong></h5>
+							<h5><strong>Hit the road Jack</strong> <em>1961</em> <strong>Ray Charles</strong></h5>
+							<h5><strong>Crazy</strong> <em>1962</em> <strong>Willie Nelson</strong></h5>
+							<h5><strong>Danke Schoen</strong> <em>1962</em> <strong>Bert Kaempfert</strong></h5>
+							<h5><strong>Moondance</strong> <em>1970</em> <strong>Van Morrison</strong></h5>
+							<h5><strong>Miss Celie's Blues</strong> <em>1985</em> <strong>Quincy Jones y Rod Temperton</strong></h5>
+							<h5><strong>Nah Neh Nah</strong> <em>1990</em> <strong>Vaya Con Dios</strong></h5>
+							<h5><strong>Goodnight Moon</strong> <em>1999</em> <strong>Shivaree</strong></h5>
+							<h5><strong>You know I'm Good</strong> <em>2006</em> <strong>Amy Winehouse</strong></h5>
+							<h5><strong>Bad Romance</strong> <em>2009</em> <strong>Lady Gaga</strong></h5>
+							<h5><strong>Waiting for you</strong> <em>1930</em> <strong>Maria Baeta & Pep Cabrero</strong></h5>
+							<h5><strong>Sinister Swing</strong> <em>2010</em> <strong>Maria Baeta & Pep Cabrero</strong></h5>
+							<em><label for="a-2"><img src="{{ site.baseurl }}/hipertextos/svg/close.svg" class="close" alt="cerrar"> TANCAR</label></em>
+						</div>
+					</div>
+				</section>
+				<hr>									
+			</div>
+			{% include partials/credits.html %}
+		</main>
+		{% include partials/footer.html %}
+	</div><!-- /#page -->
+	
+		<!-- Out of page
+		================================================== -->	
+    {% include partials/dialog.html %}  
+    {% include partials/rights.html %}  
+
+    <!-- Scripts
+    ================================================== -->
+  	<script src="{{ site.baseurl }}/hipertextos/js/jquery.js"></script>
+  	<script src="{{ site.baseurl }}/hipertextos/js/anime.js"></script>
+  	<script src="{{ site.baseurl }}/hipertextos/js/icons.js"></script>
+    {% include analytics.html %}
+  </body>
+</html>

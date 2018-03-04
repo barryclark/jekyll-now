@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ca-ES">
+  <head>
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+
+    {% include meta.html %}
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/styles/screen.css" />
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/styles/components.css" />
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/styles/helpers.css" />
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/styles/adding.css" />
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/styles/adding-about.css" />
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/styles/anime.css" />    
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+	<link href="https://fonts.googleapis.com/css?family=Voltaire" rel="stylesheet">
+
+    {% include favicons.html %}
+
+  </head>
+
+  <body>
+	<!-- Page content -->
+	<div class="page cover-page" id="page">
+	{% include partials/navigation/nav-about.html %}
+		<header id="page-header" class="about-cover anm-moveFromTop">
+			<div>
+				<h1 class="anm-moveFromBottomFade delay-100">{{ page.title }}</h1>
+			</div>
+		</header>
+		<main id="page-main" class="anm-fadeIn delay-900 slow">
+			<div>
+				<section id="press-zone">
+					{{ content }}
+				</section>
+				<section id="">
+					<div class="biobuttons">
+						<em><a href="mailto:oldsteambcn@gmail.com" title="Envia'ns un correu">oldsteambcn@gmail.com</a></em>
+						<em><a href="tel:{{ site.phone }}" title="Truca'ns">Trucar al {{ site.phone }}</a></em>
+						<em><a href="./hipertextos/brand/vcard.vcf" title="Desar my vCard" download="oldsteam.vcard">Desar vCard</a></em>
+					</div>
+					<hr>
+					<div class="content">
+						<h6>O bé a través de les Xarxes</h6>
+						<div id="deep-buttons" class="button-centered s filled white">
+    						{% include svg-icons.html %}
+						</div>
+					</div>
+				</section>
+				<hr>									
+			</div>
+		</main>
+		{% include partials/footer.html %}
+	</div><!-- /#page -->
+	
+		<!-- Out of page
+		================================================== -->	
+    {% include partials/dialog.html %}  
+    {% include partials/rights.html %}  
+
+    <!-- Scripts
+    ================================================== -->
+  	<script src="{{ site.baseurl }}/hipertextos/js/jquery.js"></script>
+  	<script src="{{ site.baseurl }}/hipertextos/js/anime.js"></script>
+  	<script src="{{ site.baseurl }}/hipertextos/js/icons.js"></script>
+    {% include analytics.html %}
+  </body>
+</html>

@@ -1,0 +1,32 @@
+---
+layout: gallery
+title: Media
+permalink: /media/
+---
+
+    <main id="page-main" role="main" class="medias">
+    	<div>
+    		<figure>
+				<div>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/oevn35Mrxzk" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</figure>
+    	</div>
+		<div id="layout" class="listed">
+    		<h3 class="anm-moveFromBottomFade delay-1000"><u>Cartells & Fotografíes</u></h3>
+			<section>					
+	{% assign image_files = site.static_files | where: "image", true %}
+	{% for image in image_files %}
+	<article class="imagens anm-zoomIn delay-1500">
+    	<a href="{{ site.baseurl }}/assets/fotos/{{ image.name }}" data-lightbox="roadtrip"><img class="sepia-img" src="{{ site.baseurl }}/assets/fotos/{{ image.name }}" alt="Cartells i fotografíes de la banda Old Steam"></a>
+	</article>
+	{% endfor %}
+			</section>
+			<hr>
+	</div><!-- /#Layout -->
+	<div>
+			<section id="follows" class="anm-scaleUp delay-2000">
+			{% include partials/suscribe.html %}
+    		</section>
+	</div>
+	</main>
