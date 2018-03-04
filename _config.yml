@@ -1,5 +1,5 @@
 # Name of your site (displayed in the header)
-name: Old Steam
+name: SonDelVent
 
 # Short bio or description (displayed in the header)
 description: Quintet de Swing, Jazz i Blues des de Barcelona
@@ -14,29 +14,29 @@ phone: +34633101657
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email: oldsteambcn@gmail.com
-  facebook: oldsteambcn
+  email: sondelvent@gmail.com
+  facebook: sondelvent
   flickr:
-  github: OldSteam/oldsteam.github.io
-  instagram: oldsteambcn
+  github:
+  instagram: sondelvent
   linkedin:
   pinterest:
   rss: rss
-  twitter: old_steam
+  twitter: sondelvent
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
-  youtube: channel/UCq-WDyrQVCWWKPrpe2K1oPg
+  youtube: channel/UC9D8DWb0Xu1KI-9ncz4YvNw
   googleplus: # anything in your profile username that comes after plus.google.com/  
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 # You can find your shortname on the Settings page of your Disqus account
-disqus: oldsteam
+disqus:
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-google_analytics: UA-108094705-1
+google_analytics: 
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
-url: http://www.oldsteam.com
+url: http://www.sondelvent.com
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
