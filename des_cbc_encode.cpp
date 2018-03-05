@@ -1,4 +1,4 @@
-// 2018-03-04 9:40PM
+// 2018-03-04 9:53PM
 
 #include <iostream>
 #include <iomanip>
@@ -29,7 +29,7 @@ void printhex(unsigned char *text) {
 void des_encryption_8(unsigned char *input, unsigned char *key, unsigned char *xorBlock, unsigned char *output) {
 //    copy(input, input + 8, output);
     
-    unsigned char xored[8] = new unsigned char[8];
+    unsigned char xored[8];
     
     for(int i = 0; i < 8; i++) {
         xored[i] = input[i] ^ xorBlock[i];
@@ -40,14 +40,14 @@ void des_encryption_8(unsigned char *input, unsigned char *key, unsigned char *x
     desEncryptor.ProcessBlock(xored,output);
 }
 
-void des_encryption(unsigned char *plaintext, unsigned char *key, unsigned char *ciphertext, streampos file_size) {
+void des_encryption(unsigned char *plaintext, unsigned char *key, unsigned char *ciphertext, unsigned char *iv, streampos file_size) {
     unsigned char subtext[8];
     unsigned char subcipher[8];
     unsigned char prevcipher[8];
     
     memset(subtext, 0, 8);
     memset(subcipher, 0, 8);
-    memset(prevcipher, 0, 8);
+    copy(iv, iv + 8, prevcipher);
             
     for(int i=0; i < file_size; i=i+8) {        
         int start = i;
@@ -100,9 +100,10 @@ int main(int argc, char * argv[]) {
     unsigned char *plaintext;
     unsigned char *ciphertext;
     unsigned char *key =  new unsigned char[8];
+    unsigned char *iv =  new unsigned char[8];
 
-    if (argc != 4) {
-        cout << "usage:des_encode infile outfile key" << endl;
+    if (argc != 4 || argc != 5) {
+        cout << "usage:des_encode infile outfile key iv" << endl;
     } else {
         infile.open(argv[1], ios::in | ios::binary | ios::ate);
         outfile.open(argv[2], ios::out | ios::binary);
@@ -123,7 +124,13 @@ int main(int argc, char * argv[]) {
             
             read_key(argv[3], key);
             
-            des_encryption(plaintext, key, ciphertext, size);
+            if(argc == 5) {
+                read_key(argv[3], iv);
+            } else {
+                memset(iv, 0, 8);
+            }
+            
+            des_encryption(plaintext, key, ciphertext, iv, size);
 
             outfile.write((char*)ciphertext, ciphersize);
             cout << "cipher text stored in: " << argv[2] << endl;
