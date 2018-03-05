@@ -1,4 +1,4 @@
-// 2018-03-04 9:18PM
+// 2018-03-04 9:40PM
 
 #include <iostream>
 #include <iomanip>
@@ -28,10 +28,16 @@ void printhex(unsigned char *text) {
 
 void des_encryption_8(unsigned char *input, unsigned char *key, unsigned char *xorBlock, unsigned char *output) {
 //    copy(input, input + 8, output);
+    
+    unsigned char xored[8];
+    
+    for(int i = 0; i < 8; i++) {
+        xored[i] = input[i] ^ xorBlock[i];
+    }
       
     DESEncryption desEncryptor;
     desEncryptor.SetKey(key,8);
-    desEncryptor.ProcessAndXorBlock(input,xorBlock,output);
+    desEncryptor.ProcessBlock(xored,output);
 }
 
 void des_encryption(unsigned char *plaintext, unsigned char *key, unsigned char *ciphertext, streampos file_size) {
