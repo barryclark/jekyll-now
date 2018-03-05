@@ -1,4 +1,4 @@
-// 2018-03-04 1:00PM
+// 2018-03-04 8:34PM
 
 #include <iostream>
 #include <iomanip>
@@ -35,11 +35,13 @@ void des_encryption_8(unsigned char *input, unsigned char *key, unsigned char *x
 }
 
 void des_encryption(unsigned char *plaintext, unsigned char *key, unsigned char *ciphertext, streampos file_size) {
-    unsigned char subtext[9];
+    unsigned char subtext[8];
     unsigned char subcipher[8];
+    unsigned char prevcipher[8];
     
     memset(subtext, 0, 8);
     memset(subcipher, 0, 8);
+    memset(prevcipher, 0, 8);
             
     for(int i=0; i < file_size; i=i+8) {        
         int start = i;
@@ -55,11 +57,14 @@ void des_encryption(unsigned char *plaintext, unsigned char *key, unsigned char 
             copy(plaintext + start, plaintext + end, subtext);
         }
                         
-        des_encryption_8(subtext, key, subcipher, subcipher);
+        des_encryption_8(subtext, key, prevcipher, subcipher);
         copy(subcipher, subcipher + 8, ciphertext + start);
+        copy(subcipher, subcipher + 8, prevcipher);
+        
                 
         cout << i << "p: "; printhex(subtext);
         cout << i << "k: "; printhex(key);
+        cout << i << "x: "; printhex(prevcipher);
         cout << i << "c: "; printhex(subcipher);
     }
 }
