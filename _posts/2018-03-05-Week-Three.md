@@ -35,7 +35,7 @@ I completed five courses on Code School: Javascript Road Trip parts 1-3, Javascr
 
 I pair programmed with Elliot for this. I hadn't done any Elixr before, so it was very interesting to use a programming language with a completely different paradigm. I don't think I'm very good at Elixr yet, but I certainly learnt a lot from the experience. It was especially good to work on something with a far more experienced developer; I learnt a lot from observing his workflow and thought process.
 
-#### Networking Workshop
+#### Networking workshop
 
 It's been a long time since I learnt networking fundamentals (10 years? Uni barely covered it so it must have been year 11 or 12), so this was a good, fast-paced refresher for me. I know that there's still a fair bit which wasn't covered in this, and which I've forgotten the specifics of though, so I should look into those things for my own reference in the coming weeks.
 
@@ -61,6 +61,10 @@ I think that the main takeaways from this book are to focus on writing solid, ma
 
 On the final point the book raised about future career goals, I think that this is something I should keep in mind during the grad program. The program is my best chance at experiencing a wide variety of areas within the engineering department (although obviously in low-level roles), and thus learning which I love or hate. I really want to have as much variety as possible in my crew rotations, so that I can be exposed to as many areas as possible and hopefully get a feel for where I want to aim long-term.
 
+#### Organise workshops and maintain calendar
+
+I was on duty to organise workshops this week (we're rotating the responsibility around the team). I found this a very valuable experience, as it gave me greater exposure to others in the organisation. I think that we have prehaps more limited opportunities to meet others than we could, so needing to organise the workshops gave me a good avenue to meet more people in a range or roles.
+
 ---
 
 ## Takeaways
@@ -72,6 +76,8 @@ On the final point the book raised about future career goals, I think that this 
 * Revise old knowledge and practice new.
 
 * Be a positive influence in your team.
+
+* Make an effort to meet people.
 
 ---
 
