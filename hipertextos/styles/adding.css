@@ -20,7 +20,8 @@ text-align: center;}
 #site-nav label {color:var(--color-grey);border:thin solid transparent;}
 #site-nav label:hover {color:var(--color-soft-grey);border:thin solid #353535;}
 .sticky-none#site-nav {position:relative !important;}
-.cover h2 { letter-spacing: 0.001em;font-weight: normal; }
+#cover-logo { font-size:5.2em;letter-spacing: 0.18em;margin-bottom:0px;font-weight: normal; }
+.cover h1 {text-shadow:-1px 3px 12px rgba(0,0,0,.15);}
 #coffee h2 {margin:0;}
 body {text-align: justify;-moz-hyphens:none;-ms-hyphens:none;-webkit-hyphens:none;-o-hyphens:none;hyphens:none;word-wrap:none;}
 p, ul {font-size: 18px;line-height: 27px;}
