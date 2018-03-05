@@ -49,12 +49,29 @@ Elliot was working on changing how a Node application handles message events. Th
 
 #### _New Programmer's Survival Manual_ chapters 4 to 7 
 
+Chapter 4 covered working with other people, who will likely have differnt personality types. You need to learn to work effectivley with people with different perspectives. You need to be aware that infulence is not always connected to the formal organision chart; personal conenctions play a large role. Knowing who to get on side before pitching ideas, or who will know the person to ask about a topic, is very valuable. Finally, meetings should have a clear purpose and be constructive.
 
+Chapter 5 talked about different roles with the engineering department and the wider company. It suggested how to begin a conversation with people in various roles, and emphasised the value in getting to know people from a wide variety of backgrounds.
+
+Chapter 6 discussed project and product life cycles, and how your role changes depending on where your product is at. It also suggested taking time to consider your role from the company's perspective. Finailly, it discussed some red-flags when it comes to business practices.
+
+Chapter 7 focused on self-improvment, how to keep a postivie outlook and continue learning, and future career goals.
+
+I think that the main takeawyas fom this book are to focus on writing solid, maintainable code which improves the product rather than quick fixes. You should also make sure that you get recognised for your work, and work as best you can within your teama and company. You should have both a deep understanding of and high skill at your job, as well as a wide breadth of knowledge of the company as a whole and the various roles within it. Effective team work is also important; be a positive influence within the team.
+
+On the final point the book raised about future career goals, I think that this is something I should keep in mind during the grad program. The program is my best chance at experiencing a wide variety of areas within the engineering department (although obviously in low-level roles), and thus learning which I love or hate. I really want to have as much varienty as possible in my crew rotations, so that I can be exposed to as many areas as possible and hopefully get a feel for where I want to aim long-term.
 
 ---
 
 ## Takeaways
 
+* Javascript handles things a bit differently from Java, but is definitely worth learning! Node also seems very useful.
+
+* It is good to be familar with a range of programming paradigms.
+
+* Revise old knowledge and practice new.
+
+* Be a positive influcence in your team.
 
 ---
 
