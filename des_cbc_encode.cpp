@@ -29,7 +29,7 @@ void printhex(unsigned char *text) {
 void des_encryption_8(unsigned char *input, unsigned char *key, unsigned char *xorBlock, unsigned char *output) {
 //    copy(input, input + 8, output);
     
-    unsigned char xored[8];
+    unsigned char xored[8] = new unsigned char[8];
     
     for(int i = 0; i < 8; i++) {
         xored[i] = input[i] ^ xorBlock[i];
