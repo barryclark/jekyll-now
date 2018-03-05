@@ -1,4 +1,4 @@
-// 2018-03-04 8:34PM
+// 2018-03-04 9:18PM
 
 #include <iostream>
 #include <iomanip>
@@ -50,13 +50,14 @@ streampos des_decryption(unsigned char *plaintext, unsigned char *key, unsigned 
         copy(ciphertext + start, ciphertext + end, subcipher);
                               
         des_decryption_8(subcipher, key, prevcipher, subtext);
-        copy(subtext, subtext + 8, plaintext + start);
-        copy(subcipher, subcipher + 8, prevcipher);
                         
         cout << i << "c: "; printhex(subcipher);
         cout << i << "k: "; printhex(key);
         cout << i << "x: "; printhex(prevcipher);
         cout << i << "p: "; printhex(subtext);
+
+        copy(subtext, subtext + 8, plaintext + start);
+        copy(subcipher, subcipher + 8, prevcipher);
     }
         
     for(int i = 1; i <= 8; i++) {

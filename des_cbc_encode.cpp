@@ -1,4 +1,4 @@
-// 2018-03-04 8:34PM
+// 2018-03-04 9:18PM
 
 #include <iostream>
 #include <iomanip>
@@ -58,14 +58,14 @@ void des_encryption(unsigned char *plaintext, unsigned char *key, unsigned char 
         }
                         
         des_encryption_8(subtext, key, prevcipher, subcipher);
-        copy(subcipher, subcipher + 8, ciphertext + start);
-        copy(subcipher, subcipher + 8, prevcipher);
-        
                 
         cout << i << "p: "; printhex(subtext);
         cout << i << "k: "; printhex(key);
         cout << i << "x: "; printhex(prevcipher);
         cout << i << "c: "; printhex(subcipher);
+        
+        copy(subcipher, subcipher + 8, ciphertext + start);
+        copy(subcipher, subcipher + 8, prevcipher);
     }
 }
 
