@@ -29,15 +29,15 @@ I have definitely improved my Javascript. It is similar enough to Java that I've
 
 #### Code School Javascript courses
 
-I completed five courses on Code School: Javascript Roadtrip parts 1-3, Javascript Best Practices, and Real-time Web with Node.js. I liked the way Code School ran the courses, with brief videos explaining concepts and then plenty of exercises to actually practice them. While I learn concepts well from lecture-style things like the videos, I found that I needed the exercises to learn the syntax properly. I found the videos a little slow-paced though, so I watched them on 2x speed which helped a lot! 
+I completed five courses on Code School: Javascript Road Trip parts 1-3, Javascript Best Practices, and Real-time Web with Node.js. I liked the way Code School ran the courses, with brief videos explaining concepts and then plenty of exercises to actually practice them. While I learn concepts well from lecture-style things like the videos, I found that I needed the exercises to learn the syntax properly. I found the videos a little slow-paced though, so I watched them on 2x speed which helped a lot! 
 
 #### Elixr code wars exercise
 
-I pair programmed with Elliot for this. I hadn't done any Elixr before, so it was very interesting to use a programming language with a completely different paradigm. I don't think I'm very good at Elixr yet, but I certainly learnt a lot from the experience. It was espeically good to work on something with a far more experienced developer; I learnt a lot from observing his workflow and thought process.
+I pair programmed with Elliot for this. I hadn't done any Elixr before, so it was very interesting to use a programming language with a completely different paradigm. I don't think I'm very good at Elixr yet, but I certainly learnt a lot from the experience. It was especially good to work on something with a far more experienced developer; I learnt a lot from observing his workflow and thought process.
 
 #### Networking Workshop
 
-It's been a long time since I learnt networking fundamentals (10 years? Uni barely covered it so it must have been year 11 or 12), so this was a good, fast-paced refersher for me. I know that there's still a fair bit which wasn't covered in this, and which I've forgotten the specifics of though, so I should look into those things for my own reference in the coming weeks.
+It's been a long time since I learnt networking fundamentals (10 years? Uni barely covered it so it must have been year 11 or 12), so this was a good, fast-paced refresher for me. I know that there's still a fair bit which wasn't covered in this, and which I've forgotten the specifics of though, so I should look into those things for my own reference in the coming weeks.
 
 #### Payslips coding exercise (again again)
 
@@ -45,21 +45,21 @@ After a further code review with my mentors, we decided that I should work on ad
 
 #### Pair programming with Elliot
 
-Elliot was working on changing how a Node application handles message events. This was really interesting and useful to watch (although I called it pair programming, in pracitce I was mostly watching while I got a feel for the application). As well as all the things (mentioned above) which come from seeing a more experienced devloper at work, it was also a fantastic demonstaration of all the Node things I'd learnt the day before.
+Elliot was working on changing how a Node application handles message events. This was really interesting and useful to watch (although I called it pair programming, in practice I was mostly watching while I got a feel for the application). As well as all the things (mentioned above) which come from seeing a more experienced developer at work, it was also a fantastic demonstration of all the Node things I'd learnt the day before.
 
 #### _New Programmer's Survival Manual_ chapters 4 to 7 
 
-Chapter 4 covered working with other people, who will likely have differnt personality types. You need to learn to work effectivley with people with different perspectives. You need to be aware that infulence is not always connected to the formal organision chart; personal conenctions play a large role. Knowing who to get on side before pitching ideas, or who will know the person to ask about a topic, is very valuable. Finally, meetings should have a clear purpose and be constructive.
+Chapter 4 covered working with other people, who will likely have different personality types. You need to learn to work effectively with people with different perspectives. You need to be aware that influence is not always connected to the formal organisation chart; personal connections play a large role. Knowing who to get on side before pitching ideas, or who will know the person to ask about a topic, is very valuable. Finally, meetings should have a clear purpose and be constructive.
 
 Chapter 5 talked about different roles with the engineering department and the wider company. It suggested how to begin a conversation with people in various roles, and emphasised the value in getting to know people from a wide variety of backgrounds.
 
-Chapter 6 discussed project and product life cycles, and how your role changes depending on where your product is at. It also suggested taking time to consider your role from the company's perspective. Finailly, it discussed some red-flags when it comes to business practices.
+Chapter 6 discussed project and product life cycles, and how your role changes depending on where your product is at. It also suggested taking time to consider your role from the company's perspective. Finally, it discussed some red-flags when it comes to business practices.
 
-Chapter 7 focused on self-improvment, how to keep a postivie outlook and continue learning, and future career goals.
+Chapter 7 focused on self-improvement, how to keep a positive outlook and continue learning, and future career goals.
 
-I think that the main takeawyas fom this book are to focus on writing solid, maintainable code which improves the product rather than quick fixes. You should also make sure that you get recognised for your work, and work as best you can within your teama and company. You should have both a deep understanding of and high skill at your job, as well as a wide breadth of knowledge of the company as a whole and the various roles within it. Effective team work is also important; be a positive influence within the team.
+I think that the main takeaways from this book are to focus on writing solid, maintainable code which improves the product rather than quick fixes. You should also make sure that you get recognised for your work, and work as best you can within your team and company. You should have both a deep understanding of and high skill at your job, as well as a wide breadth of knowledge of the company as a whole and the various roles within it. Effective team work is also important; be a positive influence within the team.
 
-On the final point the book raised about future career goals, I think that this is something I should keep in mind during the grad program. The program is my best chance at experiencing a wide variety of areas within the engineering department (although obviously in low-level roles), and thus learning which I love or hate. I really want to have as much varienty as possible in my crew rotations, so that I can be exposed to as many areas as possible and hopefully get a feel for where I want to aim long-term.
+On the final point the book raised about future career goals, I think that this is something I should keep in mind during the grad program. The program is my best chance at experiencing a wide variety of areas within the engineering department (although obviously in low-level roles), and thus learning which I love or hate. I really want to have as much variety as possible in my crew rotations, so that I can be exposed to as many areas as possible and hopefully get a feel for where I want to aim long-term.
 
 ---
 
@@ -67,11 +67,11 @@ On the final point the book raised about future career goals, I think that this 
 
 * Javascript handles things a bit differently from Java, but is definitely worth learning! Node also seems very useful.
 
-* It is good to be familar with a range of programming paradigms.
+* It is good to be familiar with a range of programming paradigms.
 
 * Revise old knowledge and practice new.
 
-* Be a positive influcence in your team.
+* Be a positive influence in your team.
 
 ---
 
