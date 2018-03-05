@@ -13,7 +13,7 @@ text-align: center;}
 #site-nav a {font-weight: lighter;min-width: 12%;border: none;letter-spacing: .032em;}
 #site-nav a:visited { color: var(--color-softgrey);text-decoration: none;}
 #site-nav a:hover, #site-nav a b:hover { color: var(--color-soft)!important;text-decoration: none;}
-#site-nav a b {font-family: 'Aladin';text-transform: uppercase;font-weight: normal ;letter-spacing: .12em;color:var(--color-gold);}
+#site-nav a b {font-family: 'Voltaire';text-transform: uppercase;font-weight: normal ;letter-spacing: .12em;color:var(--color-gold);}
 #site-nav a b:before {border-bottom: 1px solid currentcolor;content: '';display: block;position: absolute;left: 47%;right: 0;width: 6%;padding-bottom: 2px;}
 #site-nav a b:after {border-bottom: 1px solid currentcolor;content: ' ';display: block;position: absolute;left: 47%;right: 0;width: 6%;margin-top: -3px;}
 #current-nav, #current-nav a:visited, #current-nav:visited {color:#fff !important;}
