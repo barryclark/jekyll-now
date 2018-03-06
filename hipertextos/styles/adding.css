@@ -76,7 +76,7 @@ figure em a {border:none;border-bottom;line-height:0.2em;padding:12px 4px;}
 #dialog header h2 {font-size: 3.2em;margin-bottom:0;padding-top:12px;}
 #dialog header .lead {line-height: 1em;margin-bottom:7px;}
 #dialog em a {border:none;color:var(--color-grey);}
-#dialog #phones em a {font-size:42px;}
+#dialog #phones em a {font-size:3.2em;font-weight: bold;font-family: 'Voltaire';border:thin solid #eee;}
 #dialog #phones em img.dialog-svg {width:80px;height:80px;}
 img.dialog-svg {width:130px;height:130px;}
 #dialog dialog div a {font-size:20px;}
