@@ -26,9 +26,7 @@ void printhex(unsigned char *text) {
     cout << endl;
 }
 
-void des_encryption_8(unsigned char *input, unsigned char *key, unsigned char *xorBlock, unsigned char *output) {
-//    copy(input, input + 8, output);
-    
+void des_encryption_8(unsigned char *input, unsigned char *key, unsigned char *xorBlock, unsigned char *output) {   
     unsigned char xored[8];
     
     for(int i = 0; i < 8; i++) {
@@ -91,8 +89,7 @@ void read_key(char *keystring, unsigned char *key) {
     cout << "read_key -> key = "; printhex(key);
 }
 
-int main(int argc, char * argv[]) {
-
+void encode_file(char *infilename, char* outfilename, char* keystring, char* ivstring, bool hasIv) {
     ifstream infile;
     ofstream outfile;
     streampos size;
@@ -101,44 +98,76 @@ int main(int argc, char * argv[]) {
     unsigned char *ciphertext;
     unsigned char *key =  new unsigned char[8];
     unsigned char *iv =  new unsigned char[8];
+    
+    infile.open(infilename, ios::in | ios::binary | ios::ate);
+    outfile.open(outfilename, ios::out | ios::binary);
 
-    if (argc != 4 || argc != 5) {
-        cout << "usage:des_encode infile outfile key iv" << endl;
-    } else {
-        infile.open(argv[1], ios::in | ios::binary | ios::ate);
-        outfile.open(argv[2], ios::out | ios::binary);
+    if (infile.is_open()) {
+        size = infile.tellg();
 
-        if (infile.is_open()) {
-            size = infile.tellg();
-            
-            if(size % 8 == 0) {
-                ciphersize = size;
-            } else {
-                ciphersize = size + 8 - (size % 8);
-            }
-            
-            plaintext = new unsigned char[size];
-            ciphertext = new unsigned char[ciphersize];
-            infile.seekg(0, ios::beg);
-            infile.read((char*)plaintext, size);
-            
-            read_key(argv[3], key);
-            
-            if(argc == 5) {
-                read_key(argv[3], iv);
-            } else {
-                memset(iv, 0, 8);
-            }
-            
-            des_encryption(plaintext, key, ciphertext, iv, size);
-
-            outfile.write((char*)ciphertext, ciphersize);
-            cout << "cipher text stored in: " << argv[2] << endl;
+        if(size % 8 == 0) {
+            ciphersize = size;
         } else {
-            cout << "Unable to open file " << argv[1] << endl;
+            ciphersize = size + 8 - (size % 8);
         }
 
-        infile.close();
-        outfile.close();
+        plaintext = new unsigned char[size];
+        ciphertext = new unsigned char[ciphersize];
+        infile.seekg(0, ios::beg);
+        infile.read((char*)plaintext, size);
+
+        read_key(keystring, key);
+
+        if(hasIv) {
+            read_key(ivstring, iv);
+        } else {
+            memset(iv, 0, 8);
+        }
+
+        des_encryption(plaintext, key, ciphertext, iv, size);
+
+        outfile.write((char*)ciphertext, ciphersize);
+        cout << "cipher text stored in: " << argv[2] << endl;
+    } else {
+        cout << "Unable to open file " << argv[1] << endl;
+    }
+
+    infile.close();
+    outfile.close();
+}
+
+void test(char *test) {
+    unsigned char *plaintext;
+    unsigned char *ciphertext;
+    unsigned char *key = new unsigned char[8];
+    unsigned char *iv =  new unsigned char[8];
+    
+    if(test[0] == '1') {
+        key = {0x14, 0x0b, 0xb2, 0x2a, 0xb4, 0x06, 0xb6, 0x74};
+        iv = {0x4c, 0xa0, 0x0f, 0xd6, 0xdb, 0xf1, 0xfb, 0x28};
+        plaintext = {0x00, 0x11, 0x22, 0x33, 0x44, 0x55, 0x66, 0x77, 0x88, 0x99, 0xAA, 0xBB, 0xCC, 0xDD, 0xEE, 0xFF}; //16
+    } else if(test[0] == '2') {
+        key = {0x32, 0xF6, 0xA8, 0x31, 0x98, 0xA2, 0xE0, 0x37};
+        iv = {0x0f, 0xf4, 0xc8, 0xd6, 0x1e, 0x80, 0x06, 0x18};
+        plaintext = {0x32, 0x43, 0xF6, 0xA8, 0x88, 0x5A, 0x30, 0x8D, 0x31, 0x31, 0x98, 0xA2, 0xE0, 0x37, 0x07, 0x34};               
+    } else {
+        cout << "there are only two tests: -test 1 and -test 2" << endl;
+        return;
+    }
+    
+    des_encryption(plaintext, key, ciphertext, iv, 16);
+    
+    cout << "ciphertext" << endl;
+    printhex(ciphertext);
+    printhex(ciphertext + 8);
+}
+
+int main(int argc, char * argv[]) {
+    if(argc == 3 && argv[1] == "-test") {
+        test(argv[2]);
+    } else if (argc != 4 && argc != 5) {
+        cout << "usage:des_encode infile outfile key iv" << endl;
+    } else {
+        encode_file(argv[1], argv[2], argv[3], argv[4], argc == 5);
     }
 }
