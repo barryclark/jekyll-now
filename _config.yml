@@ -9,7 +9,8 @@ cover: El vapor dels trens que van expandir<br>el blues, el jazz i el swing per 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: http://{{ site.baseurl }}/hipertextos/brand/icon.jpg
 
-phone: +34633101657
+phone1: +34661269611
+phone2: +34661269611
 
 # Includes an icon in the footer for each username you enter
 footer-links:
