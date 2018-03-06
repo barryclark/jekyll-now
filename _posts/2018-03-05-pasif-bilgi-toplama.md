@@ -27,21 +27,21 @@
 
 	Örneğin DuckDuckGo arama motoru üzerinde **Bora Tanrıkulu** şeklinde arama yaptığınızda aşağıdaki gibi bir sonuç elde edersiniz.
 
-	![duckduckgo-search](pics/1.png)
+	![duckduckgo-search](/images/pasif-bilgi-toplama/1.png)
 
 - Açık kaynak istihbaratının önemi TSK tarafından hazırlanmış [Türkiye ve Açık Kaynak İstihbaratı](https://www.academia.edu/9832312/A%C3%A7%C4%B1k_Kaynak_%C4%B0stihbarat%C4%B1) metni içerisinde bulunan "Çağımızda ülkeler istihbarat ihtiyaçlarını %80-90 oranında açık kaynaklardan elde etmektedir" cümlesi ile daha rahat anlaşılabilir.
 
-	![TSK-OSINT](pics/2.png)
+	![TSK-OSINT](/images/pasif-bilgi-toplama/2.png)
 
 ## Hedefe Ait IP Tespiti
 
 - IP hakkında bilgi sahibi olmak için [ipsorgu.com](http://www.ipsorgu.com/) gibi siteler kullanılabilir
 	
-	![ipsorgu](pics/4.png)
+	![ipsorgu](/images/pasif-bilgi-toplama/4.png)
 
 	ya da **nslookup** gibi araçlar kullanılabilir
 
-	![nslookup](pics/3.png)
+	![nslookup](/images/pasif-bilgi-toplama/3.png)
 
 ## Hedefe Ait Subdomain'lerin Tespiti
 
@@ -49,21 +49,21 @@
 	
 	subdomain tespiti için [netcraft.com](https://www.netcraft.com/) kullanılabilir.
 
-	![pau.edu.tr](pics/5.png)
+	![pau.edu.tr](/images/pasif-bilgi-toplama/5.png)
 
 ## Hedefe Ait İçeriklerin Tespiti
 
 - Google arama motoru üzerinde **site:\*.pau.edu.tr ext:pdf** şeklinde arama yaptığınızda aşağıdaki gibi pdf'leri görebilirsiniz.
 
-	![pdf-pau.edu.tr](pics/7.png)
+	![pdf-pau.edu.tr](/images/pasif-bilgi-toplama/7.png)
 
 ## theHarvester ile Bilgi Toplanması
 
 - theHarvester farklı açık kaynaklardan; e-mail adresleri, subdomain isimleri, virtual host'ları, açık portları vb. tespit edebilen bir tool'dur.
 	
-	![theHarvester](pics/15.png)
+	![theHarvester](/images/pasif-bilgi-toplama/15.png)
 
-	![theHarvester-pauedutr](pics/16.png)
+	![theHarvester-pauedutr](/images/pasif-bilgi-toplama/16.png)
 
 ## CloudFlare Bypass(atlamak) Etmek
 
@@ -71,7 +71,7 @@
 	
 	Araştırılması yapılacak sitenin CloudFlare arkasın olup olmadığı anlamak için [builtwith.com](https://builtwith.com/wikipedia.org) kullanılabilir. Örneğin [canyoupwn.me](https://canyoupwn.me) sitesi CloudFlare arkasındadır.
 
-	![builtwith-canyoupenme](pics/23.png)
+	![builtwith-canyoupenme](/images/pasif-bilgi-toplama/23.png)
 
 	Bu saklanmış IP'leri bulamak için bazı yöntemler vardır.
 
@@ -79,7 +79,7 @@
 
 	Buradaki mantığımız, sitenin tüm alt domainlerinin IP'leri ile CloudFlare'e kayıtlı olan IP'yi karşılaştırmak. Bulunan bu farklı ip adresi sitenin gerçek ip adresi olur.
 
-	![nmap-dns-brute](pics/22.png)
+	![nmap-dns-brute](/images/pasif-bilgi-toplama/22.png)
 
 ## Google Advanced Search
 
@@ -87,7 +87,7 @@
 	
 	Operatorler: (defcon-2005)
 
-	![google-advanced-search](pics/6.png)
+	![google-advanced-search](/images/pasif-bilgi-toplama/6.png)
 
 	**site:** adres çubuğumuzda bulunan “https://canyoupwn.me” kısım.
     
@@ -140,7 +140,7 @@
 	
 	[ipfingerprints.com](http://www.ipfingerprints.com/) yerine başka muadil sistemler de tercih sebebi olabilir
 
-	![location-wikipedia](pics/8.png)
+	![location-wikipedia](/images/pasif-bilgi-toplama/8.png)
 
 ## WHOIS Kaydı İncelemesi
 
@@ -148,9 +148,9 @@
 	
 	Örneğin aşağıdaki gibi bir arama ile, [wikipedia.org](https://www.wikipedia.org/) hakkında bilgi edinilir.
 
-	![wikipedia.org-1](pics/9.png)
+	![wikipedia.org-1](/images/pasif-bilgi-toplama/9.png)
 
-	![wikipedia.org-2](pics/10.png)
+	![wikipedia.org-2](/images/pasif-bilgi-toplama/10.png)
 
 ## Shodan Arama Motoru ile Araştırma
 
@@ -158,7 +158,7 @@
 	
 	Örneğin aşağıdaki gibi bir arama ile 22 portu (default ssh) ile internete bağlı cihazlar tespit edilebilir.
 
-	![shodan-22](pics/11.png)
+	![shodan-22](/images/pasif-bilgi-toplama/11.png)
 
 ## Zoomeye Arama Motoru ile Araştırma
 
@@ -166,11 +166,11 @@
 
 	Örneğin **os:linux** şeklideki bir arama ile aşağıdaki gibi bir sonuç elde edilir.
 
-	![zoomeye-os-linux](pics/12.png)
+	![zoomeye-os-linux](/images/pasif-bilgi-toplama/12.png)
 
 	Daha detaylı aramaların nasıl yapıldığını öğrenmek için [zoomeye.org/help](https://www.zoomeye.org/help)
 
-	![zoomeye-help](pics/13.png)
+	![zoomeye-help](/images/pasif-bilgi-toplama/13.png)
 
 ## Archive.org ile Zamanda Geriye Gitmek
 
@@ -178,7 +178,7 @@
 
 	Örneğin facebook’un 10 yıl önceki görünümüne aşağıdaki gibi erişebilirsiniz.
 
-	![facebook-timemachine-10](pics/14.png)
+	![facebook-timemachine-10](/images/pasif-bilgi-toplama/14.png)
 
 ## Sosyal Medya Hesaplarının Analizi
 
@@ -186,19 +186,19 @@
 
 	Sosyal medya siteleri; insanların bilgilerini sosyal medya siteleri üzerinde tutarsızca paylaştığı günümüz dünyasında, insanlar hakkında bilgi toplamak için çok uygun bir ortamdır.
 
-	![pipl-boratanrikulu](pics/17.png)
+	![pipl-boratanrikulu](/images/pasif-bilgi-toplama/17.png)
 
 ## E-Mail Adres Analizi
 
 - [haveibeenpwned.com](https://haveibeenpwned.com/) sitesi ile, araştırmasını yaptığımız e-mail'in daha önce siber saldırılardan etkilenip etkilenmediğini araştırabiliriz.
 	
-	![pwnedmails](pics/18.png)
+	![pwnedmails](/images/pasif-bilgi-toplama/18.png)
 
 ## Alexa ile Site Analizi
 
 - [alexa.com](https://www.alexa.com/siteinfo) ile sitelerin dereceleri(rank), trafik kaynaklarını, istatistikleri incelenebilir.
 	
-	![alexa-wikipedia](pics/19.png)
+	![alexa-wikipedia](/images/pasif-bilgi-toplama/19.png)
 
 ## CV İncelenmesi
 
@@ -208,10 +208,10 @@
 
 - [GitHub](https://github.com) commit'lerinin incelenmesiyle, geliştiriciler tarafından gözden kaçmış / göz ardı edilmiş bilgilere erişilebilir, önemli bilgiler elde edilebilir.
 
-	![github-commit](pics/20.png)
+	![github-commit](/images/pasif-bilgi-toplama/20.png)
 
 ## Pastebin
 
 - [pastebin.com](https://pastebin.com/) hızlı olarak genellikle uzun textlerin gönderildiği bir web sitesidir. İnsanların dikkatsizce **public** olarak gönderme yaptığından dolayı, bir çok önemli verinin bulnabileceği bir sitedir.
 
-	![pastebin](pics/21.png)
+	![pastebin](/images/pasif-bilgi-toplama/21.png)
