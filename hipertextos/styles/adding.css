@@ -56,11 +56,6 @@ figure em a {border:none;border-bottom;line-height:0.2em;padding:12px 4px;}
 .medias h3 {}
 /* Covers */
 #cita h5 {line-height: 1.4em;margin:15px 0 18px 0;font-weight: lighter;}
-#masters h2 {line-height: .6em;font-weight: lighter;}
-#masters h2 small, #page-footer h1 small {line-height: 1.2em;font-family: 'Grenadier NF';}
-#masters h5 em {color:var(--color-hflink);margin: 0 6px 0 6px }
-#masters {text-align: center;}
-#masters h5 {line-height: 1.6em;padding:0 2% 0 2%;font-weight: lighter;}
 #cover-links a {border:2px solid var(--color-grey) ;text-decoration: none;min-width:12%;margin:0 2px 0 2px;}
 #cover-links a:hover {border:2px solid var(--color-link) ;color: var(--color-link) ;}
 #go-down em a, #go-next em a {color:rgba(220,190,90,.69);background:transparent;border: transparent ;font-size: 80px;height: 80px;width: 80px;transform: rotate(90deg);border-radius: 50%;text-align: right;}
