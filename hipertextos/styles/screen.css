@@ -1209,12 +1209,12 @@ nav label {
 
 	--color-gold: rgba(236,227,198,1);
 	
-	--color-link: rgba(167, 131, 23, 1.0);
-	--color-vlink: rgba(167, 131, 23, .8);
+	--color-link: rgba(125, 152, 177, 1.0);
+	--color-vlink: rgba(125, 152, 177, .8);
 	
-    --color-flink: rgba(45,115,178,1);
-    --color-hflink: rgba(244,192,21,.6);
-    --color-vflink: rgba(244,192,21,.5);
+    --color-flink: rgba(125, 152, 177, 1.0);
+    --color-hflink: rgba(125, 152, 177, .9);
+    --color-vflink: rgba(125, 152, 177, .8);
     
 	--color-soft: rgba(247,246,255,1);
 	--color-softtext: rgba(89,81,147,1);

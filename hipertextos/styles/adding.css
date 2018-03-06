@@ -95,12 +95,14 @@ img.dialog-svg {width:130px;height:130px;}
 #info-seo {background-color:var(--color-flink);min-width:100%;color:#222;}
 #info-seo h1 {line-height:1.0em;margin-bottom:0;}
 #info-seo h2 {line-height:1.6em;margin-bottom:0;}
-#page-footer {background:#222;color:#999;border-bottom:6px solid var(--color-flink);}
-#go-up {transform: rotate(90deg);}
-#page-footer a {color: var(--color-flink);text-decoration:none;}
-#page-footer a:hover {color: var(--color-hflink)!important;border-color: var(--color-hflink);}
+#page-footer {background:#fafafa;color:var(--color-grey);}
+#go-up {transform: rotate(90deg);border:none!important;}
+#page-footer a {color: #fafafa;text-decoration:none;}
+#page-footer p a {color: var(--color-grey) ;text-decoration:none;font-weight: bold;}
+#page-footer #follows a {background:var(--color-flink);}
+#page-footer a:hover {border-color: var(--color-flink);background:transparent!important;}
 #page-footer a:visited {color: var(--color-vflink);border-color: var(--color-vflink);}
-#page-footer em small a {border: thin solid #222;}
+#page-footer em small a {border: thin solid #eee;}
 #page-footer h1 small {font-size:65%;letter-spacing: 0.23em;}
 #web-credits {opacity:.75;background-color:#fafafa;border-bottom: thin solid var(--color-softgrey);border-top:thin solid var(--color-softgrey);}
 #web-credits label svg {max-width:72px;margin:10px;opacity:.6;border-radius:50%;}
@@ -111,7 +113,7 @@ img.dialog-svg {width:130px;height:130px;}
 .listed {padding:0!important;}
 .listed img {	margin:0!important;padding:0!important;	}
 .listed article { border:none;overflow: hidden;width: 100%;display: block;display: inline-block;margin:0!important;padding:0!important;-webkit-column-break-inside: avoid;-moz-column-break-inside:avoid;-moz-page-break-inside:avoid;page-break-inside: avoid;}
-em small #go-up { font-weight:bold  !important;background:var(--color-black) ;font-size:36px;color:var(--color-flink);padding:13px 12px 13px 12px;border-radius:50%;margin-top:15px; }
+em small #go-up { font-weight:bold  !important;background:transparent ;font-size:36px;color:var(--color-flink);padding:13px 12px 13px 12px;border-radius:50%;margin-top:15px; }
 em small #go-up:hover {background:var(--color-translucentblack); }
 /* Footer fixed */
 main { }
