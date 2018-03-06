@@ -1,4 +1,4 @@
-// 2018-03-04 9:53PM
+// 2018-03-05 9:01PM
 
 #include <iostream>
 #include <iomanip>
@@ -27,7 +27,6 @@ void printhex(unsigned char *text) {
 }
 
 void des_decryption_8(unsigned char *input, unsigned char *key, unsigned char *xorBlock,  unsigned char *output) {
-    //copy(input, input + 8, output);
     DESDecryption desDecryptor;
     desDecryptor.SetKey(key,8);
     desDecryptor.ProcessAndXorBlock(input,xorBlock,output);
@@ -87,8 +86,7 @@ void read_key(char *keystring, unsigned char *key) {
     cout << "read_key -> key = "; printhex(key);
 }
 
-int main(int argc, char * argv[]) {
-
+void decode_file(char *infilename, char* outfilename, char* keystring, char* ivstring, bool hasIv) {
     ifstream infile;
     ofstream outfile;
     streampos size;
@@ -97,40 +95,44 @@ int main(int argc, char * argv[]) {
     unsigned char *ciphertext;
     unsigned char *key = new unsigned char[8];
     unsigned char *iv =  new unsigned char[8];
+    
+    infile.open(infilename, ios::in | ios::binary | ios::ate);
+    outfile.open(outfilename, ios::out | ios::binary);
 
-    if (argc != 4 || argc != 5) {
-        cout << "usage:des_encode infile outfile key iv" << endl;
-    } else {
-        infile.open(argv[1], ios::in | ios::binary | ios::ate);
-        outfile.open(argv[2], ios::out | ios::binary);
+    if (infile.is_open()) {
+        size = infile.tellg();
 
-        if (infile.is_open()) {
-            size = infile.tellg();
+        plaintext = new unsigned char[size];
+        ciphertext = new unsigned char[size];
+        infile.seekg(0, ios::beg);
+        infile.read((char*)ciphertext, size);
 
-            plaintext = new unsigned char[size];
-            ciphertext = new unsigned char[size];
-            infile.seekg(0, ios::beg);
-            infile.read((char*)ciphertext, size);
-            
-            read_key(argv[3], key);
-            
-            if(argc == 5) {
-                read_key(argv[3], iv);
-            } else {
-                memset(iv, 0, 8);
-            }
-            
-            plainsize = des_decryption(plaintext, key, ciphertext, iv, size);
-            
-            //cout << plainsize << endl;
-            
-            outfile.write((char*)plaintext, plainsize);
-            cout << "plaintext stored in: " << argv[2] << endl;
+        read_key(keystring, key);
+
+        if(hasIv) {
+            read_key(ivstring, iv);
         } else {
-            cout << "Unable to open file " << argv[1] << endl;
+            memset(iv, 0, 8);
         }
 
-        infile.close();
-        outfile.close();
+        plainsize = des_decryption(plaintext, key, ciphertext, iv, size);
+
+
+        outfile.write((char*)plaintext, plainsize);
+        cout << "plaintext stored in: " << outfilename << endl;
+    } else {
+        cout << "Unable to open file " << infilename << endl;
+    }
+
+    infile.close();
+    outfile.close();
+}
+
+int main(int argc, char * argv[]) {
+
+    if (argc != 4 && argc != 5) {
+        cout << "usage:des_encode infile outfile key iv" << endl;
+    } else {
+        decode_file(argv[1], argv[2], argv[3], argv[4], argc == 5);
     }
 }

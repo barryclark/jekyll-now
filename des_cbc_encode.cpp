@@ -1,4 +1,4 @@
-// 2018-03-05 8:49PM
+// 2018-03-05 9:01PM
 
 #include <iostream>
 #include <iomanip>
@@ -149,6 +149,18 @@ void test(char *test) {
         unsigned char *iv = new unsigned char[8]{0x0f, 0xf4, 0xc8, 0xd6, 0x1e, 0x80, 0x06, 0x18};
         unsigned char *plaintext = new unsigned char[16]{0x32, 0x43, 0xF6, 0xA8, 0x88, 0x5A, 0x30, 0x8D, 0x31, 0x31, 0x98, 0xA2, 0xE0, 0x37, 0x07, 0x34};
         des_encryption(plaintext, key, ciphertext, iv, 16);
+    } else if(test[0] == '3') {
+        cout << "Change one bit of the key - repeat of -test 2, except first byte of key is +1" << endl;
+        unsigned char *key = new unsigned char[8]{0x33, 0xF6, 0xA8, 0x31, 0x98, 0xA2, 0xE0, 0x37};
+        unsigned char *iv = new unsigned char[8]{0x0f, 0xf4, 0xc8, 0xd6, 0x1e, 0x80, 0x06, 0x18};
+        unsigned char *plaintext = new unsigned char[16]{0x32, 0x43, 0xF6, 0xA8, 0x88, 0x5A, 0x30, 0x8D, 0x31, 0x31, 0x98, 0xA2, 0xE0, 0x37, 0x07, 0x34};
+        des_encryption(plaintext, key, ciphertext, iv, 16);
+    } else if(test[0] == '4') {
+        cout << "Change one bit of the plaintext - repeat of -test 2, except first byte of key is +1" << endl;
+        unsigned char *key = new unsigned char[8]{0x32, 0xF6, 0xA8, 0x31, 0x98, 0xA2, 0xE0, 0x37};
+        unsigned char *iv = new unsigned char[8]{0x0f, 0xf4, 0xc8, 0xd6, 0x1e, 0x80, 0x06, 0x18};
+        unsigned char *plaintext = new unsigned char[16]{0x33, 0x43, 0xF6, 0xA8, 0x88, 0x5A, 0x30, 0x8D, 0x31, 0x31, 0x98, 0xA2, 0xE0, 0x37, 0x07, 0x34};
+        des_encryption(plaintext, key, ciphertext, iv, 16);
     } else {
         cout << "there are only two tests: -test 1 and -test 2" << endl;
         return;
@@ -160,7 +172,7 @@ void test(char *test) {
 }
 
 int main(int argc, char * argv[]) {
-    if(argc == 3 && strncmp(argv[1], "-test") == 0) {
+    if(argc == 3 && strcmp(argv[1], "-test") == 0) {
         test(argv[2]);
     } else if (argc != 4 && argc != 5) {
         cout << "usage:des_encode infile outfile key iv" << endl;
