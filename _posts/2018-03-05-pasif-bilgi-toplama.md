@@ -4,6 +4,8 @@
 +excerpt: "Pasif bilgi toplama hakkında kısa bir özet."
 ---
 
+***Yazan: Bora Tanrıkulu***
+
 
 **Kaynaklar:**
 
