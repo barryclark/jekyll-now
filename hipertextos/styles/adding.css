@@ -78,11 +78,13 @@ figure em a {border:none;border-bottom;line-height:0.2em;padding:12px 4px;}
 #dialog dialog p {text-align:center;color:var(--color-grey);}
 #dialog header {border:none;padding:21px;border-radius:6px 6px 0 0;}
 #dialog header h2 svg {width:32px;margin:0px 12px 0 0;}
-#dialog header h2 {font-size: 2.3em;margin-bottom:6px;}
+#dialog header h2 {font-size: 3.2em;margin-bottom:0;padding-top:12px;}
 #dialog header .lead {line-height: 1em;margin-bottom:7px;}
 #dialog em a {border:none;color:var(--color-grey);}
-img.dialog-svg {width:120px;height:150px;}
-#dialog dialog div a {font-size:15px;}
+#dialog #phones em a {font-size:42px;}
+#dialog #phones em img.dialog-svg {width:80px;height:80px;}
+img.dialog-svg {width:130px;height:130px;}
+#dialog dialog div a {font-size:20px;}
 #dialog header {padding-top:0px;}
 #dialog header, #dialog dialog label  {background-image: url("/img/texture/grey.png");background-size:200px 200px;background-repeat: repeat;color:var(--color-grey);}
 #dialog header {border-bottom:4px solid var(--color-grey);}
