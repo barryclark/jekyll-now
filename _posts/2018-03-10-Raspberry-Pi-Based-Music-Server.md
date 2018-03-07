@@ -25,8 +25,17 @@ There main problems with these approaches are:
 * Having to use laptop to control music playback
 * Spotify is great, but has a lot of gaps
 
+**Requirements**
+In summary:
+* Direct connection to my existing hifi amplifier - no streaming!
+* Store all my music files
+* Remote control
+* Hifi sound quality (obviously within the parameters of file compression etc)
+
+I searched for solutions online. There are a few components available which meet the above criteria, but they are all really expensive (eg [Brennan](http://www.brennan.co.uk/units) - around £500)
+
 **The Solution**
-Use a Raspberry Pi. 
+
 
 ***Ingredients***
 * 1 x Raspberry Pi
