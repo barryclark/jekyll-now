@@ -11,7 +11,7 @@ published: false
 **The Problem**
 I have a reasonably large collection of music files (about 80GB), which I keep on my laptop hard drive. I love the convenience of storing/playing music as files, and have been progressively ripping and mothballing my CD/Vinyl/Cassette collection over the years. 
 
-However, I am still quite old school in that I like to listen to my music through my 20 year old separates hifi. You would have thought that there would be a reliable way of doing this, but apparently not. You could say the real problem is my refusal to go along with the streaming paradigm!
+However, I am still quite old school in that I like to listen to my music through my 20 year old separates hifi. With a separates system, if you want to play CDs you get a CD player, vinyl - a turntable, etc - for music files - what?
 
 I've tried a number of solutions with varying degrees of success over the years, including:
 
