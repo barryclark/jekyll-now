@@ -23,7 +23,7 @@ I've tried a number of solutions with varying degrees of success over the years,
 There main problems with these approaches are:
 * Streaming dropouts - very annoying!
 * Having to use laptop to control music playback
-* Spotify is great, but has a lot of gaps
+* Spotify is great, but has a lot of gaps in its catalogue
 
 **Requirements**
 In summary:
@@ -32,7 +32,7 @@ In summary:
 * Remote control
 * Hifi sound quality (obviously within the parameters of file compression etc)
 
-I searched for solutions online. There are a few components available which meet the above criteria, but they are all really expensive (eg [Brennan](http://www.brennan.co.uk/units) - around £500)
+I searched for solutions online. There are a few components available which meet the above criteria, but they are all really expensive (eg [Brennan](http://www.brennan.co.uk/units) - around £500). The market has decided that streaming is the way forward!
 
 **The Solution**
 
