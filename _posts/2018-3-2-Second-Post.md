@@ -1,6 +1,54 @@
 ---
 layout: post
-title: My Second Post
+title: HQ2 - Here's Where It's Going
 ---
 
-My second post.
+###Amazon’s HQ2 — Here’s Where It’s Going
+
+You don’t need to be a rocket scientist to figure out where Amazon’s HQ2 will go. More than likely, it was a foregone conclusion from the beginning. In this little game of Clue, there are only three or four possible rooms where the crime can occur.
+
+Why? Because you can’t build a battleship in a bathtub.
+
+You have to hand it to them, though, the whole dog-and-pony show pitting every city in North America against every other city in North America — it was marketing genius, and a sweet way to collect a wallet full of free offers without lifting a finger.
+
+Don’t think Amazon won’t use those coupons, either — after the ‘announcement’ they’ll certainly come back to the dewy-eyed supplicants and say, hey, sad news — we didn’t pick you. Happy news though: we are going to build a distribution hub/fulfillment warehouse/data center/alexa factory/movie studio/robot hospital/drone airport/etc in your hood, and we will take you up on those tasty tax-free bonds, those free leases, those empty cornfields (etc) you wanted to give us.
+
+Cities across America — you tipped your hand. You told the used car salesman what you were willing to pay.
+
+Back to that Bathtub, though — in the last decade it has become increasingly clear what kind of company Amazon is. Just follow the money, and remember that Amazon is a company with three CEOs. Bezos, of course, but also Jeff Wilke (CEO of consumer, the Everything in Amazon’s Everything Store) and Andy Jassy.
+
+Jassy is CEO of AWS. AWS is the segment of the company — the only segment — with the fat margins. AWS is the cloud provider segment, the elastic beanstalk, the stairway to profitability that has driven Amazon’s stock through the roof. What has AWS done for Amazon? Take a look. Here’s the chart since launch:
+
+[amzn since launch] (https://dwilson22180.github.io/images/amznalltime.png "amzn all time")
+
+It scrapes along through the 90s, the ‘world’s biggest bookstore’ days, then hits the bubble where every Internet stock on the Nasdaq goes through the roof. Then the Internet bubble bursts, and, like almost every Internet stock on the market, it plummets, skidding icily miracle-on-the-Hudson style into the 21st century. There our brave AMZN bobs and bounces along, the sad carpet-hugging helium balloon after the party, dogged by razor-thin margins, by the unquenchable appetite for spending all the cash that comes in, constantly getting bigger without ever — P&Lwise — really getting better. Until 2006. Then it goes through the roof.
+
+[amzn since 2006] (https://dwilson22180.github.io/images/amznsince2006.png "chart since 2006")
+
+What happened in 2006? AWS launched. Make no mistake, without AWS Amazon would be in one of two places — floating tits up with a stagnant stock price and increasingly frustrated investors, or out of business, sold off in pieces or simply shitcanned, like Netscape, Geocities, Broadcast.com, Excite, Yahoo, AOL — you know the roll call of the dead, the walking dead, and the dismembered.
+
+AWS is the black ink that makes the red ink — Everything Else in the Everything Store — possible.
+
+Which brings us back to HQ2 and the Battleship. It strains credulity to think that HQ2 will not be built with AWS first and foremost in mind. Seattle can remain the “Everything” headquarters. HQ2 will be the AWS headquarters. It will and it must go where the Internet backbone can support it, where there is room and infrastructure to build, launch, turn, manage the Battleship, the Golden Goose that made Jeff Bezos the richest man on Earth.
+
+>AWS is the black ink that makes the red ink — Everything Else in the Everything Store — possible.
+
+You can read the tea leaves to find locations which might have the infrastructure: the largest Equinix exchanges are in NYC, Silicon Valley, and the Washington DC area. There are three major Internet hubs in the United States — ‘MAEs’ in the quaint telcom language of the UUNet days. They are in San Jose, in Dallas, and in — oh, there it is again — the Washington DC area.
+
+Or you can skip the tea leaves and cut right to the chase, and all you AWS users out there know this already — there are three US AWS regional edge caches — these are the mega-caches that serve more localized and more numerous “Edge locations” in AWS Availability Zones (they do love their jargon) throughout North America and the world. These three caches are in the Columbus, Ohio area, in Oregon, and — what a surprise — in the Washington DC area. Which one is the biggest and most important? Without a doubt, the DC region. The Internet lives and dies in places like Ashburn, Herndon, Chantilly — suburban Virginia towns, once heartbreakingly beautiful horse country, now increasingly carpeted with Amazon data centers and the wind and solar farms to power them. These sprawling suburbs are a stone’s throw from Dulles International Airport, with its almost-completed DC Metro line at the front door.
+
+At bottom, this is a real estate story. Like every real estate story, it is about location, location, location. But also about colocation, and where the fat pipes are. They are in Northern Virginia. When Ashburn goes down, the Internet goes with it.
+
+>[N. Virginia Landgrab Continues: Next Amazon Data Center Campus?] (http://www.datacenterknowledge.com/archives/2017/03/08/n-virginia-landgrab-continues-next-amazon-data-center-campus)
+	
+Sorry, Pittsburgh. Goodbye, Columbus. Regrets to Boston, Austin, Los Angeles, Toronto, Raleigh, Miami, Atlanta. Adios, everyone else.
+
+HQ2 is almost without a doubt going to the Washington, DC area. Amazon hasn’t even really tried to conceal this. Its list of “finalists” includes only one major metropolitan area with three remaining contenders within a 50-mile radius of each other — the District of Columbia proper, Northern Virginia, and Montgomery County, Maryland. It’s a nice touch, if not exactly a poker-faced move — leaving three contenders allows the remaining hopefuls to compete against each other, to sweeten their deal when the decision has likely already been made. Go ahead guys, bid each other up. Or maybe get smart, and retract your offers. Amazon is coming, with or without the sweeteners.
+
+BTW, hey, Fairfax, Virginia, you can stop running those ads on NPR in Seattle about how great your county is. Your foursome has already teed off.
+
+HQ2 = Us-East-1.
+
+PS -You bridesmaids left on the shortlist of 20 — Amazon wants something from you. They will get it. Especially you, Columbus. Stay tuned.
+
+
