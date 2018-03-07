@@ -15,7 +15,7 @@ However, I am still quite old school in that I like to listen to my music throug
 
 I've tried a number of solutions with varying degrees of success over the years, including:
 
-* Stream from iTunes on my laptop via AirPort
+* Stream from iTunes on my laptop via AirPort Express
 * Upload all my music to a free Google Play account, then stream via a Google Chromecast Audio
 * Connect iPod Classic to hifi via a dedicated docking station
 
@@ -27,6 +27,7 @@ Use a Raspberry Pi
 ***Ingredients***
 * 1 x Raspberry Pi
 * 1 x HiFiBerry DAC+
+* 1 x USB Wifi Adapter for the Raspberry Pi
 * 1 x 128GB USB Stick
 * 1 x SD Card
 * 1 x RuneAudio image
