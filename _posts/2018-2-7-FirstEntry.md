@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Fresh Start!
-date: 2018-03-07
+date: 2018-2-7
 ---
 
 Finally! I'm live and my blog is running!
