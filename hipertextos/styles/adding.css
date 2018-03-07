@@ -9,7 +9,7 @@ hr.lines.lgrey {border-top:thin solid var(--color-softgrey);}
 #site-nav, footer, #follows, #follows-big, #icons, #covers, .nav-scroll, #web-credits, #page-header, #post-header, #post-share, #date, #info-seo, #black-video {
 text-align: center;}
 /* Nav */
-#site-nav, #site-nav label {background: #333!important;border-bottom: none;font-size: 17px;color: var(--color-grey);box-shadow: none;}
+#site-nav, #site-nav label {background: var(--color-nav)!important;border-bottom: none;font-size: 17px;color: var(--color-grey);box-shadow: none;}
 #site-nav a, #site-nav label {font-weight: lighter;min-width: 12%;border: none;letter-spacing: .032em;}
 #site-nav a:visited, #site-nav label:visited { color: var(--color-grey);text-decoration: none;}
 #site-nav a:hover, #site-nav a b:hover, #site-nav label:hover { color: var(--color-soft)!important;text-decoration: none;}
@@ -35,6 +35,9 @@ em u label:hover, em u a:hover {border: 2px solid var(--color-vlink);color:var(-
 em u label:active, em u a:active {background-color:rgba(240,240,240,.5) ;color:var(--color-link) !important;border: 2px solid var(--color-link);box-shadow:inset 0 3px 5px rgba(0,0,0,.12);text-decoration: none; }
 p em {border: var(--one-pixel) solid transparent;font-weight: bold;line-height: 24px;font-size: 21px;padding: 0;text-rendering: optimizeLegibility;}
 section.cover-justify p {padding: 6px 18px 0 18px;line-height: 23px;font-size: 16px !important;letter-spacing: .15em}
+/* Main Page */
+#page-main.home-page {background-color: var(--color-hardgrey);}
+
 /* Page & Header */
 .cover#page-header  {background-color: var(--color-white);box-shadow:inset 0 -160px 132px rgba(230,230,230,.6);}
 .serveis-header {border-bottom:10px solid var(--color-hardgrey);background-color: var(--color-black);color: var(--color-hardgrey);}
@@ -98,7 +101,8 @@ img.dialog-svg {width:69px;height:90px;}
 #info-seo {background-color:var(--color-flink);min-width:100%;color:#222;}
 #info-seo h1 {line-height:1.0em;margin-bottom:0;}
 #info-seo h2 {line-height:1.6em;margin-bottom:0;}
-#page-footer {background:var(--color-hardgrey) ;color:var(--color-grey);}
+#page-footer {padding-top:0;border:none;}
+#page-footer {background:var(--color-nav) ;color:var(--color-grey);}
 #go-up {transform: rotate(90deg);border:none!important;}
 #page-footer a {color: var(--color-hardgrey);text-decoration:none;}
 #page-footer p a {color: var(--color-grey) ;text-decoration:none;font-weight: bold;}
@@ -118,9 +122,6 @@ img.dialog-svg {width:69px;height:90px;}
 .listed article { border:none;overflow: hidden;width: 100%;display: block;display: inline-block;margin:0!important;padding:0!important;-webkit-column-break-inside: avoid;-moz-column-break-inside:avoid;-moz-page-break-inside:avoid;page-break-inside: avoid;}
 em small #go-up { font-weight:bold  !important;background:transparent ;font-size:36px;color:var(--color-flink);padding:13px 12px 13px 12px;border-radius:50%;margin-top:15px; }
 em small #go-up:hover {background:var(--color-translucentblack); }
-/* Footer fixed */
-main { }
-#page-footer {padding-top:0;}
 
 @media (max-width: 1350px) {#masters h5, #cita h5  {font-size:20px!important;}
    	img.dialog-svg {width:80px!important;height:70px;}
