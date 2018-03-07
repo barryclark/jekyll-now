@@ -38,13 +38,15 @@ I searched for solutions online. There are a few components available which meet
 
 
 ***Ingredients***
-* 1 x Raspberry Pi
-* 1 x HiFiBerry DAC+
-* 1 x USB Wifi Adapter for the Raspberry Pi
-* 1 x HiFiBerry Acrylic Case for DAC+ (RCA)
-* 1 x 128GB USB Stick
-* 1 x SD Card
-* 1 x RuneAudio image
-* 2 x good quality phono leads
+* 1 x Raspberry Pi (£32)
+* 1 x HiFiBerry DAC+ (£25)
+* 1 x USB Wifi Adapter for the Raspberry Pi (£6)
+* 1 x HiFiBerry Acrylic Case for DAC+ (RCA) (£10)
+* 1 x 128GB USB Stick (£28)
+* 1 x 8GB SD Card (£8)
+* 1 x RuneAudio image (Free)
+* 2 x good quality phono leads (£6)
+
+Total: £115
 
 ***Method***
