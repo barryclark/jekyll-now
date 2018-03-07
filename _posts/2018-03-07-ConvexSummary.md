@@ -3,7 +3,7 @@ layout: post
 title: Lessons from convex optimization
 ---
 
-In the last four weeks, I taught about convex optimization to my bioinformatics students. Since this topic is of general interest to those working with data and models, I would like to summarize the main points that the 'casual optimizer' should know. For a much more comprehensive overview, I refer to the excellent textbook of Boyd and Vandenberghe referenced below.
+In the last four weeks, I taught about convex optimization to my bioinformatics students. Since this topic is of general interest to those working with data and models, I will try to summarize the main points that the 'casual optimizer' should know. For a much more comprehensive overview, I refer to the excellent textbook of Boyd and Vandenberghe referenced below.
 
 ## Convex functions
 
@@ -165,7 +165,7 @@ $$
 
 where $$f_0,\ldots,f_m\ :\ \mathbb{R}^n \rightarrow \mathbb{R}$$ are convex and twice continuously differentiable.
 
-A trick is reformulating the problem using soft constrains in the objective function:
+A trick is reformulating the problem using soft constraints in the objective function:
 
 $$
 \min_\mathbf{x}  tf_0(\mathbf{x})-\sum_{i=1}^m\log(-f_i(\mathbf{x}))\,,
@@ -175,7 +175,7 @@ where we used the *logarithmic barrier* to approximate the inequality constraint
 
 ![Larger values of $$t$$ result in a better approximation of](../images/2018_convex/log_bar.png)
 
-High values of $$t$$ result in a very good approximation but are hard to optimize because they are ill-conditioned. *Interior point methods* start with a low value of $$t$$ to obtain an initial solution and iteratively use the previous solution as a starting point for the soft-constraint optimization problem with increased $$t$$.
+High values of $$t$$ result in a very good approximation but are hard to optimize because they are ill-conditioned. *Interior point methods* start with a low value of $$t$$ to obtain an initial solution and iteratively use the previous solution as a starting point for the soft-constrained optimization problem with increased $$t$$.
 
 ## References
 
