@@ -2,9 +2,12 @@
 name: SonDelVent
 
 # Short bio or description (displayed in the header)
-description: Quintet de Swing, Jazz i Blues des de Barcelona
+description: Música mediterranea en una noche estrellada
 
-cover: El vapor dels trens que van expandir<br>el blues, el jazz i el swing per tot E.E.U.U.
+cover: música mediterranea en una noche estrellada<br>Aromas de jazmín que vuelan al son de una guitarra flamenca
+
+minibio: Grupo de música mediterranea desde Barcelona. Sensualidad, alegría y fiesta con el sabor especial del flamenco y la fusión latina. Una vida entera dedicada al oficio de las canciones avalan este espectáculo que hace reír, sentir y soñar.
+bio: Grupo de música mediterranea desde Barcelona. Sensualidad, alegría y fiesta con el sabor especial del flamenco y la fusión latina. Una vida entera dedicada al oficio de las canciones avalan este espectáculo que hace reír, sentir y soñar.
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: http://{{ site.baseurl }}/hipertextos/brand/icon.jpg
