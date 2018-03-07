@@ -28,6 +28,7 @@ Use a Raspberry Pi
 * 1 x Raspberry Pi
 * 1 x HiFiBerry DAC+
 * 1 x USB Wifi Adapter for the Raspberry Pi
+* 1 x HiFiBerry Acrylic Case for DAC+ (RCA)
 * 1 x 128GB USB Stick
 * 1 x SD Card
 * 1 x RuneAudio image
