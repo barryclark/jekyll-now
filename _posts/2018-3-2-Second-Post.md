@@ -1,9 +1,8 @@
 ---
 layout: post
-title: HQ2 - Here's Where It's Going
+title: Amazon's HQ2 - Here's Where It's Going
 ---
 
-### Amazon’s HQ2 — Here’s Where It’s Going
 
 You don’t need to be a rocket scientist to figure out where Amazon’s HQ2 will go. More than likely, it was a foregone conclusion from the beginning. In this little game of Clue, there are only three or four possible rooms where the crime can occur.
 
