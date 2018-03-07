@@ -2,6 +2,7 @@
 layout: post
 title: How to integrate MongoDB with a Python TwitterBot
 categories: blog
+comments: true
 ---
 
 # Introduction
