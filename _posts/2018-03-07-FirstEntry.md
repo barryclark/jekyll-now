@@ -1,9 +1,8 @@
 ---
 layout: post
 title: Fresh Start!
+date: 2018-03-07
 ---
-
-![_config.yml](/images/config.jpg)
 
 Finally! I'm live and my blog is running!
 
@@ -17,3 +16,5 @@ My goal is to become a professional full stack developer one day. Wish me luck,g
 At the moment I'm learning some HTML/CSS and will move on to Javascript pretty soon.
 I'm excited since I want to learn Javascript to create my own Plugins for RPG Maker MV.
 I know, I know. What kind of nerdy stuff is that? :D
+
+That's all for now. See you around!
