@@ -145,6 +145,7 @@ em small #go-up:hover {background:var(--color-translucentblack); }
     .youtube {	margin:0;padding-bottom: 26em;}
 }
 @media (max-width: 768px) {    #masters h5, #cita h5  {font-size:14px!important;}
+	#top-video div .thumb-6 {width:100%;margin-left:0;}
     #page-header.cover {background-image: url("/img/home_m.jpg");background-size:100% auto;background-position:fixed !important; }
     .cover#page-header {padding-top:120px;height:100%;}
     .cover#page-header h1 {line-height:0.9em;font-size:32px ;}
