@@ -18,11 +18,15 @@ I've tried a number of solutions with varying degrees of success over the years,
 * Stream from iTunes on my laptop via AirPort Express
 * Upload all my music to a free Google Play account, then stream via a Google Chromecast Audio
 * Connect iPod Classic to hifi via a dedicated docking station
+* Stream from Spotify via a Google Chromecast Audio
 
-The main problem with all of these is the glitchiness of the streaming - they will work intermittently or not at all.
+There main problems with these approaches are:
+* Streaming dropouts - very annoying!
+* Having to use laptop to control music playback
+* Spotify is great, but has a lot of gaps
 
 **The Solution**
-Use a Raspberry Pi
+Use a Raspberry Pi. 
 
 ***Ingredients***
 * 1 x Raspberry Pi
