@@ -49,15 +49,16 @@ section.cover-justify p {padding: 6px 18px 0 18px;line-height: 23px;font-size: 1
 #icons a:hover {border:thin solid var(--color-blue);}
 #icons em small a:visited {border:thin solid #222;color:var(--color-vlink);}
 figure em a {border:none;border-bottom;line-height:0.2em;padding:12px 4px;}
-/* Portfolio Nav */
+/* Portfolio & P. Nav */
+.medias#page-main {background-color:var(--color-nav);}
 #page-nav {border:none;color:var(--color-hardgrey);} 
 #page-nav a {min-width: 9%;max-height:100%;}
 #page-nav a:hover {border:thin solid rgba(0,0,0,.06);background:rgba(0,0,0,.02);}
 #page-nav a:visited {color: var(--color-grey) ;}
 #page-nav div {height:80px;font-size:15px;}
 
-.sepia-img { -webkit-filter: sepia(50%);filter: sepia(50%);}
-.sepia-img:hover { -webkit-filter: sepia(0%);filter: sepia(0%);opacity:.99;}
+.sepia-img {border:thin solid rgba(230,230,230,.69)!important; }
+.sepia-img:hover { box-shadow:0 1px 12px rgba(0,0,0,.42);border:thin solid var(--color-grey)!important;}
 .medias h3 {}
 /* Covers */
 #cita h5 {line-height: 1.4em;margin:15px 0 18px 0;font-weight: lighter;font-family: 'Voltaire';text-transform: uppercase;letter-spacing: 0.05em}
