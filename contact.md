@@ -24,7 +24,7 @@ xylar
 
 ## Mail
 
-Fluid Dynamics Group <br/>
+[Fluid Dynamics and Solid Mechanics Group](http://www.lanl.gov/org/padste/adtsc/theoretical/fluid-dynamics-solid-mechanics/index.php) <br/>
 Los Alamos National Laboratory <br/>
 T-3, Mail Stop B216 <br/>
 Los Alamos, NM 87545 <br/>
