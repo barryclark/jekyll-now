@@ -43,7 +43,8 @@ section.cover-justify p {padding: 6px 18px 0 18px;line-height: 23px;font-size: 1
 .cover#page-header  {background-color: var(--color-white);box-shadow:inset 0 -160px 132px rgba(230,230,230,.6);}
 .serveis-header {border-bottom:10px solid var(--color-hardgrey);background-color: var(--color-black);color: var(--color-hardgrey);}
 .medias#page-header {border-bottom:10px solid var(--color-grey);background-color: var(--color-softgrey);color: var(--color-grey);}
-.black-video#page-header {border-bottom:10px solid var(--color-grey);background-color: var(--color-softgrey);color: var(--color-grey);}
+.black-video#page-header {font-family: 'Voltaire';border-bottom:none;background-image: url("/img/texture/stardust.png");background-size:798px 798px;background-repeat: repeat;color:var(--color-softgrey);}
+.black-video#page-header h1, .black-video#page-header h3 {margin-bottom:6px;}
 #icons a {border:thin solid var(--color-soft);background: transparent;border-radius:50%;}
 #icons a:hover {border:thin solid var(--color-blue);}
 #icons em small a:visited {border:thin solid #222;color:var(--color-vlink);}
