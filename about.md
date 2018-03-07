@@ -10,6 +10,6 @@ Join my coding journey and don't be shy to shoot me a message :)
 
 Under construction!
 
-### Contact me
+### Contact me 
 
 [ann.honecker@gmail.com](mailto:ann.honecker@gmail.com)
