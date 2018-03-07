@@ -18,7 +18,7 @@ Back to that Bathtub, though — in the last decade it has become increasing
 
 Jassy is CEO of AWS. AWS is the segment of the company — the only segment — with the fat margins. AWS is the cloud provider segment, the elastic beanstalk, the stairway to profitability that has driven Amazon’s stock through the roof. What has AWS done for Amazon? Take a look. Here’s the chart since launch:
 
-![amzn since launch] (https://dwilson22180.github.io/images/amznalltime.png "amzn all time")
+![amzn since launch]({{ https://dwilson22180.github.io}}/images/amznalltime.png "amzn all time")
 
 It scrapes along through the 90s, the ‘world’s biggest bookstore’ days, then hits the bubble where every Internet stock on the Nasdaq goes through the roof. Then the Internet bubble bursts, and, like almost every Internet stock on the market, it plummets, skidding icily miracle-on-the-Hudson style into the 21st century. There our brave AMZN bobs and bounces along, the sad carpet-hugging helium balloon after the party, dogged by razor-thin margins, by the unquenchable appetite for spending all the cash that comes in, constantly getting bigger without ever — P&Lwise — really getting better. Until 2006. Then it goes through the roof.
 
