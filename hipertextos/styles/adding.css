@@ -36,7 +36,8 @@ em u label:active, em u a:active {background-color:rgba(240,240,240,.5) ;color:v
 p em {border: var(--one-pixel) solid transparent;font-weight: bold;line-height: 24px;font-size: 21px;padding: 0;text-rendering: optimizeLegibility;}
 section.cover-justify p {padding: 6px 18px 0 18px;line-height: 23px;font-size: 16px !important;letter-spacing: .15em}
 /* Main Page */
-#page-main.home-page {background-color: var(--color-softblack);}
+#page-main.home-page {}
+#page-main.flowers {background-image: url("/img/texture/greyfloral.png");background-size:150px 124px;background-repeat: repeat;color:var(--color-grey);}
 
 /* Page & Header */
 .cover#page-header  {background-color: var(--color-white);box-shadow:inset 0 -160px 132px rgba(230,230,230,.6);}
@@ -58,7 +59,7 @@ figure em a {border:none;border-bottom;line-height:0.2em;padding:12px 4px;}
 .sepia-img:hover { -webkit-filter: sepia(0%);filter: sepia(0%);opacity:.99;}
 .medias h3 {}
 /* Covers */
-#cita h5 {line-height: 1.4em;margin:15px 0 18px 0;font-weight: lighter;}
+#cita h5 {line-height: 1.4em;margin:15px 0 18px 0;font-weight: lighter;font-family: 'Voltaire';text-transform: uppercase;letter-spacing: 0.05em}
 #cover-links a {border:2px solid var(--color-grey) ;text-decoration: none;min-width:12%;margin:0 2px 0 2px;}
 #cover-links a:hover {border:2px solid var(--color-link) ;color: var(--color-link) ;}
 #go-down em a, #go-next em a {color:rgba(220,190,90,.69);background:transparent;border: transparent ;font-size: 80px;height: 80px;width: 80px;transform: rotate(90deg);border-radius: 50%;text-align: right;}

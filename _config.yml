@@ -15,6 +15,20 @@ avatar: http://{{ site.baseurl }}/hipertextos/brand/icon.jpg
 phone1: +34661269611
 phone2: +34661269611
 
+# HOME
+home_video: LBtiJlI9U0w
+
+# MEDIA
+video1: J5s2AgwXyqI
+video2: g-PS8ftx5ME
+video3: yGY6jr4DlMs
+video4:
+video5:
+video6:
+video7:
+video8:
+video9:
+
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
