@@ -3,7 +3,7 @@ layout: post
 title: HQ2 - Here's Where It's Going
 ---
 
-###Amazon’s HQ2 — Here’s Where It’s Going
+### Amazon’s HQ2 — Here’s Where It’s Going
 
 You don’t need to be a rocket scientist to figure out where Amazon’s HQ2 will go. More than likely, it was a foregone conclusion from the beginning. In this little game of Clue, there are only three or four possible rooms where the crime can occur.
 
@@ -19,11 +19,11 @@ Back to that Bathtub, though — in the last decade it has become increasing
 
 Jassy is CEO of AWS. AWS is the segment of the company — the only segment — with the fat margins. AWS is the cloud provider segment, the elastic beanstalk, the stairway to profitability that has driven Amazon’s stock through the roof. What has AWS done for Amazon? Take a look. Here’s the chart since launch:
 
-[amzn since launch] (https://dwilson22180.github.io/images/amznalltime.png "amzn all time")
+![amzn since launch] (https://dwilson22180.github.io/images/amznalltime.png "amzn all time")
 
 It scrapes along through the 90s, the ‘world’s biggest bookstore’ days, then hits the bubble where every Internet stock on the Nasdaq goes through the roof. Then the Internet bubble bursts, and, like almost every Internet stock on the market, it plummets, skidding icily miracle-on-the-Hudson style into the 21st century. There our brave AMZN bobs and bounces along, the sad carpet-hugging helium balloon after the party, dogged by razor-thin margins, by the unquenchable appetite for spending all the cash that comes in, constantly getting bigger without ever — P&Lwise — really getting better. Until 2006. Then it goes through the roof.
 
-[amzn since 2006] (https://dwilson22180.github.io/images/amznsince2006.png "chart since 2006")
+![amzn since 2006] (https://dwilson22180.github.io/images/amznsince2006.png "chart since 2006")
 
 What happened in 2006? AWS launched. Make no mistake, without AWS Amazon would be in one of two places — floating tits up with a stagnant stock price and increasingly frustrated investors, or out of business, sold off in pieces or simply shitcanned, like Netscape, Geocities, Broadcast.com, Excite, Yahoo, AOL — you know the roll call of the dead, the walking dead, and the dismembered.
 
@@ -39,7 +39,7 @@ Or you can skip the tea leaves and cut right to the chase, and all you AWS users
 
 At bottom, this is a real estate story. Like every real estate story, it is about location, location, location. But also about colocation, and where the fat pipes are. They are in Northern Virginia. When Ashburn goes down, the Internet goes with it.
 
->[N. Virginia Landgrab Continues: Next Amazon Data Center Campus?] (http://www.datacenterknowledge.com/archives/2017/03/08/n-virginia-landgrab-continues-next-amazon-data-center-campus)
+>[N. Virginia Landgrab Continues: Next Amazon Data Center Campus?](http://www.datacenterknowledge.com/archives/2017/03/08/n-virginia-landgrab-continues-next-amazon-data-center-campus)
 	
 Sorry, Pittsburgh. Goodbye, Columbus. Regrets to Boston, Austin, Los Angeles, Toronto, Raleigh, Miami, Atlanta. Adios, everyone else.
 
