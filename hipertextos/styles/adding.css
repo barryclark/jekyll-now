@@ -51,7 +51,9 @@ section.cover-justify p {padding: 6px 18px 0 18px;line-height: 23px;font-size: 1
 figure em a {border:none;border-bottom;line-height:0.2em;padding:12px 4px;}
 
 /* Portfolio & P. Nav */
-#top-video {background-color:var(--color-black);padding:2px;height:100%;}
+#top-video {background-color:var(--color-black);padding:2px;height:100%;text-align:center;border-bottom:10px solid var(--color-nav);}
+#top-video em u a {color:var(--color-hardgrey) ;font-weight: normal;border:2px solid currentcolor;background:var(--color-nav);margin-bottom:-23px;}
+#top-video em u a:hover {color:var(--color-nav) ;font-weight: normal;border:2px solid currentcolor;background:var(--color-hardgrey);}
 #page-nav {border:none;color:var(--color-hardgrey);} 
 #page-nav a {min-width: 9%;max-height:100%;}
 #page-nav a:hover {border:thin solid rgba(0,0,0,.06);background:rgba(0,0,0,.02);}
@@ -136,6 +138,7 @@ em small #go-up:hover {background:var(--color-translucentblack); }
     strong em a {font-size: 16px;}
     #cover-links a {font-weight:lighter;}
     .youtube {	margin:0;padding-bottom: 26em;}
+	#top-video div.thumb-6 {width:80%;margin-left:10%;}
 }
 @media (max-width: 1242px) {  #masters h5, #cita h5  {font-size:18px!important;}
 	#page-header.cover {background-image: url("/img/home_b.jpg");background-position:fixed;
@@ -143,9 +146,10 @@ em small #go-up:hover {background:var(--color-translucentblack); }
     #cover-links a {font-size:18px;width:23%;margin:2px;font-weight:lighter;}
     #page-footer h2 small {font-size:50% ;letter-spacing: 0.03em;}
     .youtube {	margin:0;padding-bottom: 26em;}
+	#top-video div.thumb-6 {width:100%;margin-left:0;}
 }
-@media (max-width: 768px) {    #masters h5, #cita h5  {font-size:14px!important;}
-	#top-video div .thumb-6 {width:100%;margin-left:0;}
+@media (max-width: 768px) { 
+    #cita h5  {font-size:14px!important;}
     #page-header.cover {background-image: url("/img/home_m.jpg");background-size:100% auto;background-position:fixed !important; }
     .cover#page-header {padding-top:120px;height:100%;}
     .cover#page-header h1 {line-height:0.9em;font-size:32px ;}
