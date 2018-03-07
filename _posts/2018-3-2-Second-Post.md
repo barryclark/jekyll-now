@@ -22,7 +22,7 @@ Jassy is CEO of AWS. AWS is the segment of the company — the only segment�
 
 It scrapes along through the 90s, the ‘world’s biggest bookstore’ days, then hits the bubble where every Internet stock on the Nasdaq goes through the roof. Then the Internet bubble bursts, and, like almost every Internet stock on the market, it plummets, skidding icily miracle-on-the-Hudson style into the 21st century. There our brave AMZN bobs and bounces along, the sad carpet-hugging helium balloon after the party, dogged by razor-thin margins, by the unquenchable appetite for spending all the cash that comes in, constantly getting bigger without ever — P&Lwise — really getting better. Until 2006. Then it goes through the roof.
 
-![amzn since 2006] (https://dwilson22180.github.io/images/amznsince2006.png "chart since 2006")
+![amzn since 2006]({{ https://dwilson22180.github.io}}/images/amznsince2006.png "chart since 2006")
 
 What happened in 2006? AWS launched. Make no mistake, without AWS Amazon would be in one of two places — floating tits up with a stagnant stock price and increasingly frustrated investors, or out of business, sold off in pieces or simply shitcanned, like Netscape, Geocities, Broadcast.com, Excite, Yahoo, AOL — you know the roll call of the dead, the walking dead, and the dismembered.
 
