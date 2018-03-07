@@ -2,6 +2,7 @@
 layout: post
 title: Hello Jekyll!
 categories: blog
+comments: true
 ---
 
 This is my first blog post, using my new Jekyll/GitHub Pages website. I looked at a few options for creating a personal website/blog - such as WordPress and Blogger, both of which I have used before, and are very user-friendly but quite clunky. 
