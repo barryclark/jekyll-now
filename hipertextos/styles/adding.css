@@ -51,7 +51,7 @@ section.cover-justify p {padding: 6px 18px 0 18px;line-height: 23px;font-size: 1
 figure em a {border:none;border-bottom;line-height:0.2em;padding:12px 4px;}
 
 /* Portfolio & P. Nav */
-#top-video {background-color:var(--color-black);padding:2px;}
+#top-video {background-color:var(--color-black);padding:2px;height:100%;}
 #page-nav {border:none;color:var(--color-hardgrey);} 
 #page-nav a {min-width: 9%;max-height:100%;}
 #page-nav a:hover {border:thin solid rgba(0,0,0,.06);background:rgba(0,0,0,.02);}
