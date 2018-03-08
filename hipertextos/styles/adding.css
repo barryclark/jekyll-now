@@ -37,7 +37,7 @@ p em {border: var(--one-pixel) solid transparent;font-weight: bold;line-height: 
 section.cover-justify p {padding: 6px 18px 0 18px;line-height: 23px;font-size: 16px !important;letter-spacing: .15em}
 /* Main Page */
 #page-main.home-page {background: #d9dbda ;text-align:center;}
-#page-main.home-page em u a {color:var(--color-grey);background-color:var(--color-soft-grey); font-weight: normal;border:2px solid currentcolor;}
+#page-main.home-page em u a {color:var(--color-grey);background-color:var(--color-soft-grey); font-weight: normal;border:2px solid currentcolor;margin-top:-50px;margin-bottom:23px;}
 #page-main.flowers {background-image: url("/img/texture/greyfloral.png");background-size:150px 124px;background-repeat: repeat;color:var(--color-grey);}
 
 /* Page & Header */
@@ -107,12 +107,11 @@ img.dialog-svg {width:69px;height:90px;}
 #info-seo h1 {line-height:1.0em;margin-bottom:0;}
 #info-seo h2 {line-height:1.6em;margin-bottom:0;}
 #page-footer {padding-top:0;border:none;}
-#page-footer {background:var(--color-nav) ;color:var(--color-grey);}
-#go-up {transform: rotate(90deg);border:none!important;}
+#page-footer {background:var(--color-nav) ;color:var(--color-hardgrey);}
 #page-footer a {color: var(--color-hardgrey);text-decoration:none;}
 #page-footer p a {color: var(--color-grey) ;text-decoration:none;font-weight: bold;}
-#page-footer #follows a {background:var(--color-flink);}
-#page-footer a:hover {border-color: var(--color-flink);background:transparent!important;}
+#page-footer #follows a {background:var(--color-hardgrey);color:var(--color-nav);}
+#page-footer a:hover {border-color: var(--color-link);color:var(--color-softgrey)!important;background:transparent!important;}
 #page-footer a:visited {color: var(--color-vflink);border-color: var(--color-vflink);}
 #page-footer em small a {border: thin solid var(--color-hardgrey);}
 #page-footer h1 small {font-size:65%;letter-spacing: 0.23em;}
