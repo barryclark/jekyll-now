@@ -4,7 +4,15 @@ title: About
 permalink: /about/
 ---
 
-### AMZN Newsletter
+
+### Bio
+
+Seattle tech writer, analyst, movie lover, serial startup survivor. 
+
+### Contact
+
+[Hire me, tip me off, drop me a note, ask me anything.](mailto:dwilson22180@gmail.com)
+
 
 <!-- Begin MailChimp Signup Form -->
 <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
@@ -26,11 +34,3 @@ permalink: /about/
 </div>
 
 <!--End mc_embed_signup-->
-
-### Bio
-
-Seattle tech writer, analyst, white paper expert, serial startup survivor. 
-
-### Contact
-
-[Hire me, tip me off, drop me a note, ask me anything.](mailto:dwilson22180@gmail.com)
