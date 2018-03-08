@@ -1,6 +1,6 @@
 /* by Isard Miralles  ADDING EXTRA to CARTA - CSS */
 
-#page-header.carta-header {background-image: url("/hipertextos/brand/carta.jpg");font-family:'Lato', sans-serif; text-transform: uppercase; border:none;height: 260px;padding-top:80px;background-position: center;background-attachment: fixed;background-size: cover;background-repeat: no-repeat;
+#page-header.carta-header {background-image: url("/hipertextos/brand/carta.jpg");background-color:var(--color-hardgrey);font-family:'Lato', sans-serif; text-transform: uppercase; border:none;height: 360px;padding-top:180px;background-position: center;background-attachment: fixed;background-size: cover;background-repeat: no-repeat;
     border:none;color: #fafafa;letter-spacing: .2em;overflow: hidden;text-align: center;}
 #page-nav div{height:90px;}
 #page-nav a img {width:69px;height:69px;opacity:.69;}
@@ -8,7 +8,7 @@
 img.icon {width:15px;margin-left:5px;margin-right:5px;}
 .legends p {font-size:15px;}
 
-#foot-cover.cover {background-image: url("/hipertextos/brand/carta.jpg");background-position: top center;background-attachment: fixed;background-size: cover;background-repeat: no-repeat;}
+#foot-cover.cover {background-image: url("/hipertextos/brand/carta.jpg");background-color:var(--color-hardgrey);background-position: top center;background-attachment: fixed;background-size: cover;background-repeat: no-repeat;}
 h6.title {text-align:left;font-size:.75em;margin-bottom:-32px;color:var(--color-grey); }
 #rollitos-cart, #pures-cart, #cremes-cart, #amanides-cart, #xips-cart, #postres-cart, #begudes-cart {text-align: left;}
 #rollitos-cart h4, #pures-cart h4, #cremes-cart h4, #amanides-cart h4, #xips-cart h4, #postres-cart h4, #begudes-cart h4 {margin-top:-10px;letter-spacing: -0.032em;}
@@ -23,8 +23,10 @@ padding-left:8px;padding-top:6px;font-size:2.5em;margin-top: 40px;}
 @media (max-width: 1250px) {
     #rollitos h4.headline {font-size:1.6em;}
     #rollitos p {font-size:18px ;}
+    #page-header.carta-header {height: 280px;padding-top:130px;}
 }
 @media (max-width: 1242px) {
+    #page-header.carta-header {height: 260px;padding-top:90px;}
     #rollitos h4.headline {font-size:1.4em;}
     #rollitos p {font-size:16px ;}
 	button {background-size:90px;width:90px;height:90px;min-width:90px;
@@ -37,7 +39,7 @@ padding-left:8px;padding-top:6px;font-size:2.5em;margin-top: 40px;}
     	background-image: url("/hipertextos/brand/carta_mcover.jpg");background-size: top auto;background-position:fixed !important;}
     #foot-cover .cover {
     	background-image: url("/hipertextos/brand/carta_m.jpg");background-size:100% auto;background-position:fixed !important;}
-    #page-header.carta-header { height: 180px;padding-top:60px;}
+    #page-header.carta-header { height: 190px;padding-top:69px;}
     #foot-cover.cover {font-size: 18px;}
     #foot-cover.cover h5 {margin-bottom: 0px}
     .legends p {font-size: 12px;}
@@ -62,5 +64,5 @@ padding-left:8px;padding-top:6px;font-size:2.5em;margin-top: 40px;}
     #begudes-cart p {font-size:15px ;line-height:1.5em;padding-top:12px;padding-bottom:6px;}
 }
 @media (max-width: 432px) {
-
+	#page-header.carta-header { height: 150px;padding-top:45px;}
 }

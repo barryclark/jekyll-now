@@ -24,13 +24,15 @@ petit: 6.0
 pures: 6.0
 cremes: 6.0
 amanides: 6.0
-xips: 3.0
 postres: 5.0
 menu: 16.5
 aigua: 2.0
 llauna: 3.0
 sucs: 4.0
 
+# Horari
+dilluns: de 19h a 23h
+dimdium: De 13h a 16h / de 19h a 23h
 
 # BONROLLO ARENAS
 city: Arenas
@@ -44,17 +46,10 @@ location2: C/ Sant Josep, 08911 Badalona, Barcelona
 phone2: +34 930 10 25 64
 email2: bonrollo.badalona@gmail.com
 
-# Horari
-dilluns: de 19h a 23h
-dimdium: De 13h a 16h / de 19h a 23h
-
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://avatars0.githubusercontent.com/u/36928139?s=460&v=4
 logo: ./hipertextos/brand/bonrollo.svg
 
-#
-# Flags below are optional
-#
 
 # Includes an icon in the footer for each username you enter
 footer-links:
@@ -62,12 +57,12 @@ footer-links:
   email: bonrollo.arenas@gmail.com
   facebook: BONROLLOARENAS
   instagram: bonrolloarenas
+  twitter: bonrolloarenas
   linkedin:
   pinterest:
-  twitter: bonrolloarenas
   youtube:
   googleplus: 
-  tripadvisor: bonrollo
+  tripadvisor:
   flickr:
   github:
   behance:  
