@@ -36,7 +36,8 @@ em u label:active, em u a:active {background-color:rgba(240,240,240,.5) ;color:v
 p em {border: var(--one-pixel) solid transparent;font-weight: bold;line-height: 24px;font-size: 21px;padding: 0;text-rendering: optimizeLegibility;}
 section.cover-justify p {padding: 6px 18px 0 18px;line-height: 23px;font-size: 16px !important;letter-spacing: .15em}
 /* Main Page */
-#page-main.home-page {background: #dee0df ;}
+#page-main.home-page {background: #d9dbda ;text-align:center;}
+#page-main.home-page em u a {color:var(--color-grey);background-color:var(--color-soft-grey); font-weight: normal;border:2px solid currentcolor;}
 #page-main.flowers {background-image: url("/img/texture/greyfloral.png");background-size:150px 124px;background-repeat: repeat;color:var(--color-grey);}
 
 /* Page & Header */
