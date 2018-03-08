@@ -13,7 +13,9 @@ bio: Grupo de música mediterranea desde Barcelona. Sensualidad, alegría y fies
 avatar: http://{{ site.baseurl }}/hipertextos/brand/icon.jpg
 
 phone1: +34661269611
+name1: Rafa
 phone2: +34661269611
+name2: Estrella
 contratacion: SonDelVent
 
 # HOME
