@@ -1,9 +1,6 @@
 /* by Isard Miralles  ADDING EXTRA to About - CSS */
 /* ------------------------------------------------------------ Resets */
 
-/* by Isard Miralles  ADDING EXTRA to About - CSS */
-/* ------------------------------------------------------------ Resets */
-
 .page-header {
     background-color:var(--color-black)!important;border:1px solid #000!important;}
 .cover-page #dark {text-align:center;z-index:10;}
