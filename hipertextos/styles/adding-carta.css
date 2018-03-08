@@ -9,6 +9,9 @@ img.icon {width:15px;margin-left:5px;margin-right:5px;}
 .legends p {font-size:15px;}
 
 #foot-cover.cover {background-image: url("/hipertextos/brand/carta.jpg");background-color:var(--color-hardgrey);background-position: top center;background-attachment: fixed;background-size: cover;background-repeat: no-repeat;}
+#foot-cover h5 svg {min-width:100%;}
+#foot-cover h5 {margin-bottom:23px;}
+#foot-cover h4 {font-size:2.6em;line-height:1em;margin-bottom:48px;}
 h6.title {text-align:left;font-size:.75em;margin-bottom:-32px;color:var(--color-grey); }
 #rollitos-cart, #pures-cart, #cremes-cart, #amanides-cart, #xips-cart, #postres-cart, #begudes-cart {text-align: left;}
 #rollitos-cart h4, #pures-cart h4, #cremes-cart h4, #amanides-cart h4, #xips-cart h4, #postres-cart h4, #begudes-cart h4 {margin-top:-10px;letter-spacing: -0.032em;}
@@ -37,11 +40,9 @@ padding-left:8px;padding-top:6px;font-size:2.5em;margin-top: 40px;}
 @media (max-width: 768px) {
     #page-header.carta-header {
     	background-image: url("/hipertextos/brand/carta_mcover.jpg");background-size: top auto;background-position:fixed !important;}
-    #foot-cover .cover {
-    	background-image: url("/hipertextos/brand/carta_m.jpg");background-size:100% auto;background-position:fixed !important;}
+    #foot-cover.cover {
+    	background-image: url("/hipertextos/brand/carta_m.jpg");background-size:top auto;background-position:fixed !important;}
     #page-header.carta-header { height: 190px;padding-top:69px;}
-    #foot-cover.cover {font-size: 18px;}
-    #foot-cover.cover h5 {margin-bottom: 0px}
     .legends p {font-size: 12px;}
     #page-nav div{height:69px;}
 	#page-nav a img {width:52px;height:52px;}
@@ -62,8 +63,13 @@ padding-left:8px;padding-top:6px;font-size:2.5em;margin-top: 40px;}
     #begudes h5, #begudes h6 {line-height:1.2em;padding:0px;}
     #begudes h5 {margin-top:15px;}
     #begudes-cart p {font-size:15px ;line-height:1.5em;padding-top:12px;padding-bottom:6px;}
+    #foot-cover h5 svg {padding:12px;}
+	#foot-cover h5 {margin-bottom:12px!important;}
+	#foot-cover h4 {font-size:1.9em;line-height:1em;margin-bottom:48px;}
 }
 @media (max-width: 432px) {
 	#page-header.carta-header { height: 150px;padding-top:45px;}
     #page-header.carta-header, #foot-cover.cover {background-image: url("/img/texture/grey-geek.png");background-size:198px 200px;background-repeat: repeat;color:var(--color-grey);}
+
+
 }
