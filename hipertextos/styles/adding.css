@@ -23,7 +23,7 @@ body {text-align: justify;-moz-hyphens:none;-ms-hyphens:none;-webkit-hyphens:non
 padding-left:10px;padding-right:10px;padding-top:11px;margin-top:3px;opacity:.7;z-index:10;}
 
 /* Header cover*/
-#page-header {color:var(--color-grey);background:var(--color-black);}
+#page-header {color:var(--color-grey);}
 #page-header h5 img {width:512px;height:100%;float:none;margin:-25px 0 0 0;}
 #page-header h5 {text-align:center;}
 #cover-logo {max-width:512px;height:180px;margin-bottom:-32px;margin-top:-23px;}
