@@ -106,7 +106,11 @@ padding-left:8px;padding-top:6px;font-size:2.5em;margin-top: 40px;}
 	#page-header div em a {font-size:14px;letter-spacing:0.03em ;padding:12px 12px;width:45%;margin-bottom:6px;}
 	#page-header div em a i svg {width:15px;padding:3px 0 0 0;}
     #page-header.cover h4 {font-size:2.1em;padding-left:32px;padding-right:32px;}
-    #page-main #layout div h4 small {letter-spacing: 0.001em;font-size: 12px;}
+    #horari h4, #horari h3, #domicili h4, #domicili h3 {text-align:center!important;}
+    #horari .thumb-6, #domicili .thumb-6 {width:100%;}
+ 	#horari i svg, #domicili i svg {background-size:150px;width:150px;height:150px;padding-left:50px;padding-right:50px;padding-top:32px;margin-bottom:12px;}
+    #page-footer .thumb-6 {font-size: 16px;width:100%;}
+    #footer-logo a {width:100%;}
 }
 
 @media (max-width: 432px) {
