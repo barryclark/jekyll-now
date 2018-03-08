@@ -1,105 +1,19 @@
-/* by Isard Miralles  ADDING EXTRA to Serveis - CSS */
+/* by Isard Miralles  ADDING EXTRA to CARTA - CSS */
 /* ------------------------------------------------------------ Resets */
 
-#page-header.serveis-header {background-image: url("/img/texture/dark_design.png");
-background-size:46px 29px;background-repeat: repeat;image-rendering: crisp-edges;}
+/* CARTA */
 
-/* Serveis */
-#section-web {background-image: url("/img/web.jpg");background-position:fixed;image-rendering: crisp-edges;}
-#section-brand {background-image: url("/img/blog.jpg");background-position:fixed;image-rendering: crisp-edges;}
-#section-paint {background:fixed;overflow:hidden;background-image: url("/img/texture/asfalt.png");background-size: 466px 349px;background-repeat: repeat;image-rendering: crisp-edges;text-align:center;}
-#section-print {background-image: url("/img/print.jpg");background-position:fixed;image-rendering: crisp-edges;background-attachment: fixed;border:none;text-align:center;}
-#section-web, #section-brand, #section-print {background-position: top center;background-attachment: fixed;background-size: cover;background-repeat: no-repeat;border:none;overflow: hidden;text-align: center;}
-#section-web svg, #section-brand svg, #section-paint svg, #section-print svg {width:64px;}
-#resumed-web svg {width:26px;}
-#resumed-web {color:var(--color-translucentblack);text-align:center!important;font-size:15px;}
-#resumed-web em {padding:1em 0 1em 0;}
-#responsive img {width:86%;}
-#resumed-paint svg {width:23px;}
-#resumed-paint {color:var(--color-translucentwhite);}
-#resumed-paint h5 {margin: 0 0 6px 0;}
-#resumed-print {color:var(--color-translucentblack);}
-#resumed-print h5 {margin: 0 0 8px 0;}
-#resumed-print em {padding:12px 0 12px 0;}
-#section-brand h4 {margin-bottom:0;}
-#section-brand h5 {line-height:1.3em;}
-#section-brand .thumb-4 img {max-width:48%;}
-#browser-ios svg {width:23px;color:var(--color-translucentblack);margin:0 5px 0 0;}
-#section-brand h4{line-height:1.18em;}
-img.big-icon {width:64px;padding-top:16px;}
-#section-paint {color:var(--color-white);}
 
-/* Animacions propies */
 
-#diamond {padding-left:6%;}
-@keyframes diamond {
-    0% {background-image: url(/hipertextos/diamond/diamond_0.png);background-repeat: none ;border:none;}
-    10% {background-image: url(/hipertextos/diamond/diamond_1.png);background-repeat: none ;border:none;}
-    20% {background-image: url(/hipertextos/diamond/diamond_2.png);background-repeat: none ;border:none;}
-    30% {background-image: url(/hipertextos/diamond/diamond_3.png);background-repeat: none ;border:none;}
-    40% {background-image: url(/hipertextos/diamond/diamond_4.png);background-repeat: none ;border:none;}
-    50% {background-image: url(/hipertextos/diamond/diamond_5.png);background-repeat: none ;border:none;}
-    60% {background-image: url(/hipertextos/diamond/diamond_6.png);background-repeat: none ;border:none;}
-    70% {background-image: url(/hipertextos/diamond/diamond_7.png);background-repeat: none ;border:none;}
-    80% {background-image: url(/hipertextos/diamond/diamond_8.png);background-repeat: none ;border:none;}
-    90% {background-image: url(/hipertextos/diamond/diamond_9.png);background-repeat: none ;border:none;}
-    100% {background-image: url(/hipertextos/diamond/diamond_10.png);background-repeat: none ;border:none;}
-}
-#diamond-base {width:290px;height:290px;margin-left:6%;
-	background-image: url(/hipertextos/diamond/diamond_10.png)no-repeat top left;background-size: contain;
-	animation-name: diamond;animation-iteration-count: infinite;
-    animation-duration: 4.5s;
-}
-#petals-case img{
-    position:absolute ;
-    left:120px;
-    top:center;
-}
-#petals-case .petals  {z-index:-1;}
-#petals-case .petals-shadow {top:72px;z-index: -10;
-}
 
 @media (max-width: 1250px) {
-    #section-web .pushed-6 {}
-    #section-web .cell-10 {}
-    #section-web .cell-x1 {width: 20%;}
-    #responsive img {width:380px;}
-    #section-paint .pushed-6 {margin-left:33%;}
-    #section-paint .thumb-6 {width:66%;}
-    #section-paint h5 {font-size: 19px;}
-    #section-paint em {font-size: 14px;}
-	#resumed-paint svg {width:23px;}
-    #browser-ios .thumb {width: 49.9999999999% !important;}
-	#section-brand h5 {line-height:1.0em;}
-    #resumed-print.cell-6 {width:96%!important;}
-    #resumed-print.pushed-6 {margin-left:0;}
+
 }
 @media (max-width: 1242px) {
-	#section-web {background-image: url("/img/web_b.jpg");background-position:fixed;}
-	#section-brand {background-image: url("/img/blog_b.jpg");background-position:fixed;}
-	#section-print {background-image: url("/img/print_b.jpg");background-position:fixed;}
+
 }
 @media (max-width: 768px) {
-    #section-web {background-image: url("/img/texture/h_paper.png");background-size:200px 200px;background-repeat: repeat;}
-    #section-brand {background-image: url("/img/texture/yellow_skulls.png");background-size:400px 400px;background-repeat: repeat;}
-    #section-print {background-image: url("/img/texture/white_tree.png");background-size:350px 350px;background-repeat: repeat;}
-    #section-web, #section-brand, #section-paint, #section-print {line-height:.6em;}
-    #browser-ios.thumb {display:none;visibility:hidden;}
-    #section-web .cell-x1 {	width: 20%;}
-    #section-web .cell-10 {width: 100% !important;margin:0;}
-    #resumed-web em, #responsive {margin-top:5px;margin-bottom:5px;padding-bottom: 5px;padding-top: 5px;}
-    #resumed-web em svg {max-width:21px;max-height:21px;}
-    #resumed-web em {font-size: 10px;line-height:21px;}
-    #section-brand h5 {line-height:1.3em;}
-    #responsive img {width:256px;}
-    #section-paint .pushed-6 {margin-left:8%!important;}
-    #section-paint .thumb-6 {width:85%;line-height:1.1em;}
-    #resumed-paint svg {display:none;}
-    #resumed-print.cell-6 {width:88%!important;font-size: 16px;line-height:28px;}
-    #diamond img {display:none;}
-    main {
-    margin-bottom: 360px;
-	}
+
 }
 
 @media (max-width: 432px) {
