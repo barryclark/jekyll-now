@@ -2,7 +2,7 @@
 /* ------------------------------------------------------------ Resets */
 
 /* CARTA */
-#page-header.carta-header {border:none;	height: 269px;padding-top:80px;background-position: top center;background-attachment: fixed;background-size: cover;background-repeat: no-repeat;
+#page-header.carta-header {font-family:'Lato', sans-serif; text-transform: uppercase; border:none;height: 260px;padding-top:80px;background-position: top center;background-attachment: fixed;background-size: cover;background-repeat: no-repeat;
     border:none;color: #fafafa;letter-spacing: .2em;overflow: hidden;text-align: center;}
 #page-nav div{height:90px;}
 #page-nav a img {width:69px;height:69px;opacity:.69;}
@@ -22,16 +22,31 @@ button {background-color:transparent ;background-image: url(/hipertextos/brand/h
 padding-left:8px;padding-top:6px;font-size:2.5em;margin-top: 40px;}
 
 
-
-
 @media (max-width: 1250px) {
-
+    #rollitos h4.headline {font-size:1.6em;}
+    #rollitos p {font-size:18px ;}
 }
 @media (max-width: 1242px) {
-
+    #rollitos h4.headline {font-size:1.4em;}
+    #rollitos p {font-size:16px ;}
+	button {background-size:90px;width:90px;height:90px;min-width:90px;
+    min-height:90px;font-size:26px;letter-spacing: 0.06em;}
+    .thumb-8 {width:58.3333333333%;}
+    .thumb-1 {max-width:16.6666666666%;}
 }
 @media (max-width: 768px) {
-
+	button {background-size:80px;width:80px;height:80px;min-width:80px;
+    min-height:80px;font-size:26px;letter-spacing: 0.06em;}
+    #rollitos h4.headline {font-size:1.0em;}
+    #rollitos-cart p, #pures-cart p, #cremes-cart p, #amanides-cart p, #postres-cart p {
+        font-size:13px ;line-height:1.8em;}
+    .thumb-3 {width:70%;}
+    .thumb-8 {width:70%;margin-top:-30px;}
+    .thumb-1 {width:20%;margin-top:-30px;}
+    h6.title {display:none;visibility: hidden ;}
+    #salsa .thumb-6 {width:100%;margin-bottom:32px;}
+    #salsa p {font-size: 17px;}
+    #salsa h6 {font-size:32px;margin-bottom:8px;}
 }
 
 @media (max-width: 432px) {
