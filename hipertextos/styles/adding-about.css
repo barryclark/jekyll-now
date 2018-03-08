@@ -18,8 +18,10 @@ padding-left:0px;padding-right:0px;padding-top:30px;}
 
 }
 @media (max-width: 768px) {
-    #dark .thumb-6 {width:100%;margin:0;}
-    #dark h5 a {font-size: 20px!important;}
+    #dark {padding-left:20px;padding-right:20px;}
+    #dark .thumb-6 {width:100%;margin:0;padding:0px;line-height:18px!important;}
+    #dark h5 a {font-size: 16px!important;}
+    #dark h5 {line-height: 10px!important;margin-bottom:18px;}
     #icons em a {background-size:70px;width:70px;height:70px;padding-left:21px;padding-right:21px;}
     #horari h4, #horari h3, #domicili h4, #domicili h3 {text-align:center!important;}
     #horari h4, #domicili h4 {font-size:1.9em ;line-height:.75em ;padding-left:10%;padding-right:10%;}
@@ -28,5 +30,10 @@ padding-left:0px;padding-right:0px;padding-top:30px;}
     #postalcode button {background-size:100px;width:100px;height:100px;padding-top:0;font-size:18px;margin-bottom:12px;}
 }
 @media (max-width: 432px) {
-
+    #dark .thumb-6 {line-height:10px!important;}
+    #dark h5 a {font-size: 15px!important;line-height: 18px!important;}
+    #dark {padding-left:40px;padding-right:40px;}
+    #dark h5 {line-height: 18px!important;margin-bottom:10px;}
+	#horari i svg, #domicili i svg {background-color:transparent ;background-image: url(/hipertextos/brand/hexagonblack.png);background-repeat:no-repeat;background-size:80px;width:80px;height:80px;border:none!important;
+	padding-left:15px;padding-right:15px;padding-top:23px;}
 }
