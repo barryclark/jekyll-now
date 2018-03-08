@@ -96,14 +96,19 @@ padding-left:8px;padding-top:6px;font-size:2.5em;margin-top: 40px;}
 
 
 @media (max-width: 1250px) {
-
+    #page-header.cover {height: 70vh;padding-top: 160px;}
 }
 @media (max-width: 1242px) {
 }
 @media (max-width: 768px) {
-
+    #page-header.cover {height: 60vh;padding-top: 45px!important;}
+    #cover-logo, #arenas {max-width:100%;height:145px;margin-bottom:-32px;margin-top:0;}
+	#page-header div em a {font-size:14px;letter-spacing:0.03em ;padding:12px 12px;width:45%;margin-bottom:6px;}
+	#page-header div em a i svg {width:15px;padding:3px 0 0 0;}
+    #page-header.cover h4 {font-size:2.1em;padding-left:32px;padding-right:32px;}
+    #page-main #layout div h4 small {letter-spacing: 0.001em;font-size: 12px;}
 }
 
 @media (max-width: 432px) {
-
+    #page-header.cover {height: 70vh;padding-top: 160px;}
 }			
