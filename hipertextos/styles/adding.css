@@ -96,6 +96,7 @@ img.dialog-svg {width:69px;height:90px;}
 #dialog header h3 {padding:15px;letter-spacing: 0.06em}
 #dialog header, #dialog dialog label {background-image: url("/img/texture/dark_grey.png");background-size:256px 256px;background-repeat: repeat;color:var(--color-grey);}
 #dialog header {border-bottom:4px solid var(--color-grey);}
+#dialog #dialog-icons {text-align: center;}
 .rights#dialog dialog label  {background:transparent;color:var(--color-hardgrey);}
 .rights#dialog header {
     background: var(--color-yellow);}
