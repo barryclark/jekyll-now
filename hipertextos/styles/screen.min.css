@@ -1462,7 +1462,7 @@ nav label {
 	border:none;
 }
 .site-logo img {
-	border-radius: 25%;
+	
 }
 
 /* Smart navigation */
@@ -1961,15 +1961,15 @@ nav strong label mark,
 .collapser mark,
 .accordion mark {
 	background-color: transparent;
-	border-top: 8px solid currentColor;
+	border-top: 10px solid currentColor;
 	border-right: 8px solid transparent;
 	border-left: 8px solid transparent;
 	border-bottom: none;
-	color: inherit;
+	color: inherit;color:var(--color-hardgrey);
 	content:'';
 	position: absolute;
 	right: 16px;
-	top: 24px;
+	top: 20px;
 	vertical-align: middle;
 }
 nav strong label mark {
