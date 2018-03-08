@@ -1,6 +1,6 @@
 /* by Isard Miralles  ADDING EXTRA to CARTA - CSS */
 
-#page-header.carta-header {background-image: url("/hipertextos/brand/carta.jpg");font-family:'Lato', sans-serif; text-transform: uppercase; border:none;height: 260px;padding-top:80px;background-position: top center;background-attachment: fixed;background-size: cover;background-repeat: no-repeat;
+#page-header.carta-header {background-image: url("/hipertextos/brand/carta.jpg");font-family:'Lato', sans-serif; text-transform: uppercase; border:none;height: 260px;padding-top:80px;background-position: center;background-attachment: fixed;background-size: cover;background-repeat: no-repeat;
     border:none;color: #fafafa;letter-spacing: .2em;overflow: hidden;text-align: center;}
 #page-nav div{height:90px;}
 #page-nav a img {width:69px;height:69px;opacity:.69;}
@@ -33,7 +33,9 @@ padding-left:8px;padding-top:6px;font-size:2.5em;margin-top: 40px;}
     .thumb-1 {max-width:16.6666666666%;}
 }
 @media (max-width: 768px) {
-    #page-header.carta-header, #foot-cover.cover {
+    #page-header.carta-header {
+    	background-image: url("/hipertextos/brand/carta_mcover.jpg");background-size: top auto;background-position:fixed !important;}
+    #foot-cover .cover {
     	background-image: url("/hipertextos/brand/carta_m.jpg");background-size:100% auto;background-position:fixed !important;}
     #page-header.carta-header { height: 180px;padding-top:60px;}
     #foot-cover.cover {font-size: 18px;}
