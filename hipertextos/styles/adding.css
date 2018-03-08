@@ -1,110 +1,66 @@
-/* by Isard Miralles  ADDING CSS */
-/* ------------------------------------------------------------ Resets */
+/* by Isard Miralles  ADDING EXTRA to CARTA - CSS */
 
-footer, #follows, #follows-big, #icons, #covers, .nav-scroll, #web-credits, #page-header, #mapa, #post-share, #layout {
-text-align: center;}
-main {font-family:'Lato', sans-serif;padding-top:36px;margin-bottom: 0;}
-body {text-align: justify;-moz-hyphens:none;-ms-hyphens:none;-webkit-hyphens:none;-o-hyphens:none;hyphens:none;word-wrap:none;}
+#page-header.carta-header {background-image: url("/hipertextos/brand/carta.jpg");font-family:'Lato', sans-serif; text-transform: uppercase; border:none;height: 260px;padding-top:80px;background-position: center;background-attachment: fixed;background-size: cover;background-repeat: no-repeat;
+    border:none;color: #fafafa;letter-spacing: .2em;overflow: hidden;text-align: center;}
+#page-nav div{height:90px;}
+#page-nav a img {width:69px;height:69px;opacity:.69;}
+#page-nav a:hover {background:var(--color-soft);}
+img.icon {width:15px;margin-left:5px;margin-right:5px;}
+.legends p {font-size:15px;}
 
-/* Nav */
-#site-nav {font-family:'Lato';background: var(--color-soft-black) !important;border-bottom: none;font-size: 15px;line-height:20px;color: var(--color-grey);}
-#site-nav a {color:var(--color-soft)!important;text-transform:uppercase;font-weight: bold ;border: none;}
-#site-nav a:visited { color: var(--color-grey);text-decoration: none;}
-#site-nav a:hover, #site-nav a b:hover { color: var(--color-white);text-decoration: none;}
-#site-nav a b img {width:102px;font-size:18px;padding-top:1px;}
-#site-nav label {color:var(--color-grey);border:thin solid transparent;}
-#site-nav label:hover {color:var(--color-soft-grey);border:thin solid #353535;}
-#site-nav em a {color:var(--color-grey)!important ;position:absolute;top:0;right:12px;background:transparent!important;width:40px;padding-right:0;}
-#site-nav em a:visited {color:var(--color-grey)!important ;}
-#site-nav em a:hover {color:#fafafa!important;fill:#fafafa!important;stroke:#fafafa!important;}
-#site-logo a, #site-logo a:hover, #site-logo a:visited {color:var(--color-white)!important;}
-
-#site-nav .site-logo {background-color:transparent ;background-image: url(/hipertextos/brand/hexagon.png);background-repeat:no-repeat  ;background-size:40px;width:40px;height:40px;border:none!important;
-padding-left:10px;padding-right:10px;padding-top:11px;margin-top:3px;opacity:.7;z-index:10;}
-
-/* Header cover*/
-#page-header {color:var(--color-grey);}
-#page-header h5 img {width:512px;height:100%;float:none;margin:-25px 0 0 0;}
-#page-header h5 {text-align:center;}
-#cover-logo {max-width:512px;height:180px;margin-bottom:-32px;margin-top:-23px;}
-#page-header div em a {color:var(--color-soft);background:none;font-size:16px;letter-spacing:0.06em ;padding:12px 14px;}
-#page-header div em a i svg {width:15px;padding:3px 0 0 0;}
-#page-header div em a:hover {text-decoration:none;}
-
-/* Body & co */
-hr.lines {border-bottom:thin solid var(--color-grey);}
-.detalls a {padding-left:32px;padding-right:32px;}
-#layout i svg {width: 18px;position:absolute ;left:49.3%;padding-bottom:32px;}
-#horari i svg, #domicili i svg {width:132px;position:relative;left:0;color:var(--color-softgrey);}
-#horari h4, #domicili h4 {margin-bottom:2px;}
-#horari h4, #horari h3 {text-align:left;}
-#domicili h4, #domicili h3 {text-align:left;}
-#mapa {margin-bottom:-11px;}
-#layout em a {background-color:var(--color-soft-black);color:var(--color-soft);border-radius:6px;padding-left:32px;padding-right:32px;}
-#layout em a:hover, #layout em a:active, #layout em a:focus {background-color:var(--color-white);color:var(--color-black);}
-
-/* Buttons hexagons */
-#icons em a {background-color:transparent ;background-image: url(/hipertextos/brand/hexagon.png);background-repeat:no-repeat  ;background-size:100px;width:100px;height:100px;border:none!important;
-padding-left:35px;padding-right:35px;}
-#icons em a:hover, #icons em a:focus, #icons em a:active {color:var(--color-white);}
-#postalcode button {background-color:transparent ;background-image: url(/hipertextos/brand/hexagon.png);background-repeat:no-repeat  ;background-size:100px;width:100px;height:100px;border:none!important;
-padding-top:3px;color:var(--color-white);font-weight: normal;font-size:20px;}
-#horari i svg, #domicili i svg {background-color:transparent ;background-image: url(/hipertextos/brand/hexagonblack.png);background-repeat:no-repeat;background-size:250px;width:250px;height:250px;border:none!important;
-padding-left:80px;padding-right:80px;padding-top:36px;}
-#location i svg {background-color:transparent ;background-image: url(/hipertextos/brand/hexagon.png);background-repeat:no-repeat;background-size:100px;width:100px;height:100px;border:none!important;
-padding-left:32px;padding-right:32px;padding-top:6px;color:var(--color-softgrey);}
-
-#foot-cover.cover {width:100%;	height: 400px;padding-top:50px;color:var(--color-white);}
-#foot-cover.cover svg {float:none;text-align: center;width:30px;}
-
-#mapa {background-color:#222;padding-top:23px;color:var(--color-hardgrey);}
-#mapa h4 {color:var(--color-soft);font-size: 21px;line-height: 21px}
-#mapa h4 div img {float:none;	height: 30px;);margin: -.25em .5em -.25em -.5em;width: 30px; }
-#mapa h4 .red {background:var(--color-red);}
-#mapa h4 .green {background:var(--color-green);}
-#mapa h4 div {display:inline;padding-left:12px;padding-right:12px;border-radius:3px;color:var(--color-soft);}
-
-/* Footer */ 
-#page-footer {background:#222;color:#999;box-shadow: inset 0 0 56px rgba(0, 0, 0, .32);bottom: 0px;width: 100%;}
-#page-footer em small a {border: thin solid #222;}
-#page-footer h5 a {text-decoration:none;font-size:0.9em;font-weight: lighter ;letter-spacing: 0.05em;}
-
-#page-footer .footer-logo  {width:380px;}
-#page-footer .thumb-6 p {line-height:1.3em;font-size:0.9em;font-weight:lighter;padding-bottom:69px;}
-#page-footer em a {background:transparent;}
-#page-footer em a:hover, #page-footer em a:focus {color:var(-color-white);}
-#footer-home img {max-width:420px;height:150px;margin-bottom:-30px;}
-#page-footer p {}
-
+#foot-cover.cover {background-image: url("/hipertextos/brand/carta.jpg");background-position: top center;background-attachment: fixed;background-size: cover;background-repeat: no-repeat;}
+h6.title {text-align:left;font-size:.75em;margin-bottom:-32px;color:var(--color-grey); }
+#rollitos-cart, #pures-cart, #cremes-cart, #amanides-cart, #xips-cart, #postres-cart, #begudes-cart {text-align: left;}
+#rollitos-cart h4, #pures-cart h4, #cremes-cart h4, #amanides-cart h4, #xips-cart h4, #postres-cart h4, #begudes-cart h4 {margin-top:-10px;letter-spacing: -0.032em;}
+#rollitos-cart p, #pures-cart p, #cremes-cart p, #amanides-cart p, #xips-cart p, #postres-cart p, #begudes-cart p {margin-top:-35px;}
+#begudes-cart h5, #begudes-cart h6 {text-align: center;}
+button {background-color:transparent ;background-image: url(/hipertextos/brand/hexagonblack.png);background-repeat:no-repeat  ;background-size:100px;width:100px;height:100px;border:none!important;
+    color:var(--color-white);min-height:100px;font-size:30px;letter-spacing: 0.06em;font-weight: lighter }
+#menu h2, #menu h3 {margin:0;}
+.menu-hex {background-color:transparent ;background-image: url(/hipertextos/brand/hexagonblack.png);background-repeat:no-repeat;background-size:250px;width:250px;height:250px;border:none!important;
+padding-left:8px;padding-top:6px;font-size:2.5em;margin-top: 40px;}
 
 @media (max-width: 1250px) {
-    #page-header.cover {height: 70vh;padding-top: 160px;}
+    #rollitos h4.headline {font-size:1.6em;}
+    #rollitos p {font-size:18px ;}
 }
 @media (max-width: 1242px) {
+    #rollitos h4.headline {font-size:1.4em;}
+    #rollitos p {font-size:16px ;}
+	button {background-size:90px;width:90px;height:90px;min-width:90px;
+    min-height:90px;font-size:26px;letter-spacing: 0.06em;}
+    .thumb-8 {width:58.3333333333%;}
+    .thumb-1 {max-width:16.6666666666%;}
 }
 @media (max-width: 768px) {
-    #page-header.cover {height: 60vh;padding-top: 45px!important;}
-    #cover-logo, #arenas {max-width:100%;height:145px;margin-bottom:-32px;margin-top:0;}
-	#page-header div em a {font-size:14px;letter-spacing:0.03em ;padding:12px 12px;width:45%;margin-bottom:6px;}
-	#page-header div em a i svg {width:15px;padding:3px 0 0 0;}
-    #page-header.cover h4 {font-size:2.1em;padding-left:32px;padding-right:32px;}
-    #horari h4, #horari h3, #domicili h4, #domicili h3 {text-align:center!important;}
-    #horari h4, #domicili h4 {font-size:1.6em ;line-height:.75em ;padding-left:6%;padding-right:6%;}
-    #horari .thumb-6, #domicili .thumb-6 {width:100%;}
- 	#horari i svg, #domicili i svg {background-size:150px;width:150px;height:150px;padding-left:50px;padding-right:50px;padding-top:32px;margin-bottom:12px;}
-    #page-footer .thumb-6 {font-size: 16px;width:100%;}
-    #page-footer p {font-size: 13px;}
-    #footer-home img {max-width:100%;}
-    #page-footer div section a {width:21%;padding:16px;}
-    #page-footer div {padding:2px;}
-    #mapa h3 small {font-size: 16px;letter-spacing: 0.05em;}
-    #mapa h4 {font-size: 20px;line-height: 20px}
-	#mapa h4 div img {height: 20px;);margin: -.15em 0 -.15em -.5em;width:20px; }
-	#mapa h4 div {padding-left:12px;padding-right:12px;border-radius:2px;}
-
+    #page-header.carta-header {
+    	background-image: url("/hipertextos/brand/carta_mcover.jpg");background-size: top auto;background-position:fixed !important;}
+    #foot-cover .cover {
+    	background-image: url("/hipertextos/brand/carta_m.jpg");background-size:100% auto;background-position:fixed !important;}
+    #page-header.carta-header { height: 180px;padding-top:60px;}
+    #foot-cover.cover {font-size: 18px;}
+    #foot-cover.cover h5 {margin-bottom: 0px}
+    .legends p {font-size: 12px;}
+    #page-nav div{height:69px;}
+	#page-nav a img {width:52px;height:52px;}
+	button {background-size:80px;width:80px;height:80px;min-width:80px;
+    min-height:80px;font-size:26px;letter-spacing: 0.06em;}
+    #rollitos h4.headline {font-size:1.0em;}
+    #rollitos-cart p, #pures-cart p, #cremes-cart p, #amanides-cart p, #postres-cart p {
+        font-size:13px ;line-height:1.8em;}
+    .thumb-3 {width:70%;}
+    .thumb-8 {width:70%;margin-top:-30px;}
+    .thumb-1 {width:20%;margin-top:-30px;}
+    h6.title {display:none;visibility: hidden ;}
+    #salsa .thumb-6 {width:100%;margin-bottom:32px;}
+    #salsa p {font-size: 17px;}
+    #salsa h6 {font-size:32px;margin-bottom:8px;}
+    #menu .thumb-6, #begudes .thumb-6 {width:100%;}
+    #menu .thumb-6, #begudes .thumb-6 {width:100%;}
+    #begudes h5, #begudes h6 {line-height:1.2em;padding:0px;}
+    #begudes h5 {margin-top:15px;}
+    #begudes-cart p {font-size:15px ;line-height:1.5em;padding-top:12px;padding-bottom:6px;}
+}
+@media (max-width: 432px) {
 
 }
-
-@media (max-width: 432px) {
-    #page-header.cover {height: 70vh;padding-top: 160px;}
-}			
