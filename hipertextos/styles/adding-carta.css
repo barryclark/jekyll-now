@@ -1,7 +1,5 @@
 /* by Isard Miralles  ADDING EXTRA to CARTA - CSS */
-/* ------------------------------------------------------------ Resets */
 
-/* CARTA */
 #page-header.carta-header {font-family:'Lato', sans-serif; text-transform: uppercase; border:none;height: 260px;padding-top:80px;background-position: top center;background-attachment: fixed;background-size: cover;background-repeat: no-repeat;
     border:none;color: #fafafa;letter-spacing: .2em;overflow: hidden;text-align: center;}
 #page-nav div{height:90px;}
@@ -21,7 +19,6 @@ button {background-color:transparent ;background-image: url(/hipertextos/brand/h
 .menu-hex {background-color:transparent ;background-image: url(/hipertextos/brand/hexagonblack.png);background-repeat:no-repeat;background-size:250px;width:250px;height:250px;border:none!important;
 padding-left:8px;padding-top:6px;font-size:2.5em;margin-top: 40px;}
 
-
 @media (max-width: 1250px) {
     #rollitos h4.headline {font-size:1.6em;}
     #rollitos p {font-size:18px ;}
@@ -35,6 +32,12 @@ padding-left:8px;padding-top:6px;font-size:2.5em;margin-top: 40px;}
     .thumb-1 {max-width:16.6666666666%;}
 }
 @media (max-width: 768px) {
+    #page-header.carta-header {
+        background-size: auto;background-position: top center;background-size: cover;
+    	height: 180px;padding-top:60px;}
+    #foot-cover.cover {font-size: 18px;}
+    #foot-cover.cover h5 {margin-bottom: 0px}
+    .legends p {font-size: 12px;}
     #page-nav div{height:69px;}
 	#page-nav a img {width:52px;height:52px;}
 	button {background-size:80px;width:80px;height:80px;min-width:80px;
@@ -55,7 +58,6 @@ padding-left:8px;padding-top:6px;font-size:2.5em;margin-top: 40px;}
     #begudes h5 {margin-top:15px;}
     #begudes-cart p {font-size:15px ;line-height:1.5em;padding-top:12px;padding-bottom:6px;}
 }
-
 @media (max-width: 432px) {
 
 }
