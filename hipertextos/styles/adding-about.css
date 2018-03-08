@@ -18,7 +18,14 @@ padding-left:0px;padding-right:0px;padding-top:30px;}
 
 }
 @media (max-width: 768px) {
-
+    #dark .thumb-6 {width:100%;margin:0;}
+    #dark h5 a {font-size: 20px!important;}
+    #icons em a {background-size:70px;width:70px;height:70px;padding-left:21px;padding-right:21px;}
+    #horari h4, #horari h3, #domicili h4, #domicili h3 {text-align:center!important;}
+    #horari h4, #domicili h4 {font-size:1.9em ;line-height:.75em ;padding-left:10%;padding-right:10%;}
+    #postalcode p {margin-top:16px;}
+    #postalcode {display:inline;padding:0;margin:0;}
+    #postalcode button {background-size:100px;width:100px;height:100px;padding-top:0;font-size:18px;margin-bottom:12px;}
 }
 @media (max-width: 432px) {
 
