@@ -14,6 +14,7 @@ Seattle tech writer, analyst, movie lover, serial startup survivor.
 [Hire me, tip me off, drop me a note, ask me anything.](mailto:dwilson22180@gmail.com)
 
 
+
 <!-- Begin MailChimp Signup Form -->
 <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
 <style type="text/css">
