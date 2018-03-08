@@ -14,7 +14,7 @@ I'll write down what I've learned so far and where I'll be struggling.
 My goal is to become a professional full stack developer one day. Wish me luck,guys!
 
 At the moment I'm learning some HTML/CSS and will move on to Javascript pretty soon.
-I'm excited since I want to learn Javascript to create my own Plugins for RPG Maker MV.
-I know, I know. What kind of nerdy stuff is that? :D
+I'm excited since I can use Javascript to create my own Plugins for RPG Maker MV.
+Let's see how this will work out. I'm faithful.
 
-That's all for now. See you around!
+So guys, that's all for now. See you around!
