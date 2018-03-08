@@ -35,6 +35,8 @@ padding-left:8px;padding-top:6px;font-size:2.5em;margin-top: 40px;}
     .thumb-1 {max-width:16.6666666666%;}
 }
 @media (max-width: 768px) {
+    #page-nav div{height:69px;}
+	#page-nav a img {width:52px;height:52px;}
 	button {background-size:80px;width:80px;height:80px;min-width:80px;
     min-height:80px;font-size:26px;letter-spacing: 0.06em;}
     #rollitos h4.headline {font-size:1.0em;}
@@ -47,6 +49,11 @@ padding-left:8px;padding-top:6px;font-size:2.5em;margin-top: 40px;}
     #salsa .thumb-6 {width:100%;margin-bottom:32px;}
     #salsa p {font-size: 17px;}
     #salsa h6 {font-size:32px;margin-bottom:8px;}
+    #menu .thumb-6, #begudes .thumb-6 {width:100%;}
+    #menu .thumb-6, #begudes .thumb-6 {width:100%;}
+    #begudes h5, #begudes h6 {line-height:1.2em;padding:0px;}
+    #begudes h5 {margin-top:15px;}
+    #begudes-cart p {font-size:15px ;line-height:1.5em;padding-top:12px;padding-bottom:6px;}
 }
 
 @media (max-width: 432px) {
