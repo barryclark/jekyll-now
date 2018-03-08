@@ -12,7 +12,7 @@ body {text-align: justify;-moz-hyphens:none;-ms-hyphens:none;-webkit-hyphens:non
 #site-nav a:visited { color: var(--color-grey);text-decoration: none;}
 #site-nav a:hover, #site-nav a b:hover { color: var(--color-white);text-decoration: none;}
 #site-nav a b img {width:102px;font-size:18px;padding-top:1px;border:none!important;}
-#site-nav a b img…hover, #site-nav a b img:active, #site-nav a b img:focus {border:none!important;}
+#site-nav a b img:hover, #site-nav a b img:active, #site-nav a b img:focus {border:none!important;}
 #site-nav label {color:var(--color-grey);border:thin solid transparent;}
 #site-nav label:hover {color:var(--color-soft-grey);border:thin solid #353535;}
 #site-nav em a {color:var(--color-grey)!important ;position:absolute;top:0;right:12px;background:transparent!important;width:40px;padding-right:0;}
