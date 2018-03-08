@@ -4,6 +4,8 @@
 footer, #follows, #follows-big, #icons, #covers, .nav-scroll, #web-credits, #page-header, #mapa, #post-share, #layout {
 text-align: center;}
 main {font-family:'Lato', sans-serif;padding-top:36px;margin-bottom: 0;}
+body {text-align: justify;-moz-hyphens:none;-ms-hyphens:none;-webkit-hyphens:none;-o-hyphens:none;hyphens:none;word-wrap:none;}
+
 /* Nav */
 #site-nav {font-family:'Lato';background: var(--color-soft-black) !important;border-bottom: none;font-size: 15px;line-height:20px;color: var(--color-grey);}
 #site-nav a {color:var(--color-soft)!important;text-transform:uppercase;font-weight: bold ;border: none;}
@@ -107,10 +109,20 @@ padding-left:8px;padding-top:6px;font-size:2.5em;margin-top: 40px;}
 	#page-header div em a i svg {width:15px;padding:3px 0 0 0;}
     #page-header.cover h4 {font-size:2.1em;padding-left:32px;padding-right:32px;}
     #horari h4, #horari h3, #domicili h4, #domicili h3 {text-align:center!important;}
+    #horari h4, #domicili h4 {font-size:1.6em ;line-height:.75em ;padding-left:6%;padding-right:6%;}
     #horari .thumb-6, #domicili .thumb-6 {width:100%;}
  	#horari i svg, #domicili i svg {background-size:150px;width:150px;height:150px;padding-left:50px;padding-right:50px;padding-top:32px;margin-bottom:12px;}
     #page-footer .thumb-6 {font-size: 16px;width:100%;}
+    #page-footer p {font-size: 13px;}
     #footer-home img {max-width:100%;}
+    #page-footer div section a {width:21%;padding:16px;}
+    #page-footer div {padding:2px;}
+    #mapa h3 small {font-size: 16px;letter-spacing: 0.05em;}
+    #mapa h4 {font-size: 20px;line-height: 20px}
+	#mapa h4 div img {height: 20px;);margin: -.15em 0 -.15em -.5em;width:20px; }
+	#mapa h4 div {padding-left:12px;padding-right:12px;border-radius:2px;}
+
+
 }
 
 @media (max-width: 432px) {
