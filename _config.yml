@@ -12,10 +12,8 @@ bio: Grupo de música mediterranea desde Barcelona. Sensualidad, alegría y fies
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: http://{{ site.baseurl }}/hipertextos/brand/icon.jpg
 
-phone1: +34661269611
-name1: Rafa
-phone2: +34661269611
-name2: Estrella
+phone1: 661269611
+phone2: 661269611
 contratacion: SonDelVent
 
 # HOME
