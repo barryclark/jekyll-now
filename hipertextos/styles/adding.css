@@ -106,5 +106,5 @@ padding-left:32px;padding-right:32px;padding-top:6px;color:var(--color-softgrey)
 }
 
 @media (max-width: 432px) {
-    #page-header.cover {height: 70vh;padding-top: 160px;}
+    #page-header.cover {height: 100%;padding-top: 60px;}
 }			
