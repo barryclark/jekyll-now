@@ -65,4 +65,9 @@ padding-left:8px;padding-top:6px;font-size:2.5em;margin-top: 40px;}
 }
 @media (max-width: 432px) {
 	#page-header.carta-header { height: 150px;padding-top:45px;}
+    #page-header.carta-header {
+    	background-image: url("/hipertextos/brand/carta_mcover.jpg");background-size: top auto;background-position:fixed !important;}
+    #foot-cover .cover {
+    	background-image: url("/hipertextos/brand/carta_m.jpg");background-size:100% auto;background-position:fixed !important;}
+
 }
