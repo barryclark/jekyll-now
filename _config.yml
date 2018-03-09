@@ -15,8 +15,6 @@ avatar: http://{{ site.baseurl }}/hipertextos/brand/icon.jpg
 phone1: 661269611
 phone2: 661269611
 contratacion: SonDelVent
-trio: Voz, Saxo/flauta y Guitarra
-quintet: + Contrabajo y percusión
 
 # HOME
 home_video: LBtiJlI9U0w
