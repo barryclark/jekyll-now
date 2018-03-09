@@ -10,6 +10,9 @@
 .cover-page #page-main h5 {font-family: 'Voltaire';text-transform:uppercase;}
 .news {width:120px;float:left; margin-top:-6px; margin-right: 23px;margin-bottom:0;color: rgba(0,0,0,.32); }
 
+.hexagon {background-color:transparent ;background-image: url(/hipertextos/brand/hexagon.png);background-repeat:no-repeat  ;background-size:100px;width:100px;height:100px;border:none!important;
+padding-left:35px;padding-right:35px;}
+
 @media (max-width: 1250px) {
   	.cover-page #page-main ul {-webkit-column-count: 2;-moz-column-count: 2;column-count: 2;}
     .cover-page p {font-size:16px;line-height:1.8em;}
