@@ -1,6 +1,6 @@
 ---
 layout: about
-title: Old Steam
+title: Contacto
 permalink: /about/
 som: Banda de swing, jazz y blues desde Barcelona
 musics: Una banda de luxe!

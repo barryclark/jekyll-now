@@ -27,7 +27,7 @@
 	{% include partials/navigation/nav.html %}
 		<header id="page-header" class="about-cover anm-moveFromTop delay-200">
 			<div>
-				<h1 class="anm-moveFromBottomFade delay-300">{{ page.title }} Band</h1>
+				<h1 class="anm-moveFromBottomFade delay-300">{{ page.title }}</h1>
 			</div>
 		</header>
 		<nav id="page-nav" class="nav-scroll anm-fadeIn delay-600">
@@ -42,9 +42,9 @@
 			<div>
 				<section id="info-about" class="anm-fadeIn delay-1000">
 					<h2 id="info" class="anm-moveFromTopFade delay-1500"><u>Qui Som</u></h2>
-					<h5 class="anm-fadeIn delay-1500 slow">{{ page.som }}</h5>
-					<div class="columns-2 anm-moveFromBottomFade delay-1500">
-						{{ content }}
+					<h5 class="anm-fadeIn delay-1500 slow">{{ site.description }}</h5>
+					<div class="anm-moveFromBottomFade delay-1500">
+						{{ site.bio }}
 					</div>
 					<div id="contracta">
 						<em class="thumb anm-scaleUp delay-1500 slow"><u><label for="modal-two">Contractació</label></u></em>
