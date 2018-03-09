@@ -37,9 +37,13 @@ An Amazon product URL links to a unique product. In the case of the Nintendo Swi
 
 https://www.amazon.com/Nintendo-Switch-Neon-Blue-Red-Joy/dp/B01MUAGZ49/ref=sr_1_2?s=videogames&ie=UTF8&qid=1520015026&sr=1-2&keywords=nintendo%2Bswitch&th=1
 
+![Amazon Product URL 01](/images/amazon-screenshots/amazon-product-url-01.png)
+
 After I removed all the URL parameters, I found that the page is mostly unchanged:
 
 https://www.amazon.com/Nintendo-Switch-Neon-Blue-Red-Joy/dp/B01MUAGZ49/ref=sr_1_2
+
+![Amazon Product URL 02](/images/amazon-screenshots/amazon-product-url-02.png)
 
 The biggest change is that the search box is now empty.
 
@@ -47,9 +51,13 @@ Playing around with the URL, I found out you can remove both the "ref=" part and
 
 https://www.amazon.com/dp/B01MUAGZ49/
 
+![Amazon Product URL 03](/images/amazon-screenshots/amazon-product-url-03.png)
+
 In fact, you can change the product description, and the page is the same:
 
 https://www.amazon.com/totally-not-a-nintendo-switch/dp/B01MUAGZ49/
+
+![Amazon Product URL 04](/images/amazon-screenshots/amazon-product-url-04.png)
 
 I believe, and what most other people believe, is that the in-URL product description is mostly an SEO tactic. What's important is having the "/dp/" part and the "B01MUAGZ49" part.
 
@@ -77,15 +85,23 @@ When I searched for a Nintendo Switch under the video games category, I got the 
 
 https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Dvideogames&field-keywords=nintendo+switch
 
+![Amazon Search URL 01](/images/amazon-screenshots/amazon-search-url-01.png)
+
 The only part I could remove without significantly changing the page was the "ref=nb_sb_noss" part:
 
 https://www.amazon.com/s/?url=search-alias%3Dvideogames&field-keywords=nintendo+switch
+
+![Amazon Search URL 02](/images/amazon-screenshots/amazon-search-url-02.png)
 
 That said, check out what happened when I used only one or the other URL parameter.
 
 https://www.amazon.com/s/?field-keywords=nintendo+switch
 
+![Amazon Search URL 03](/images/amazon-screenshots/amazon-search-url-03.png)
+
 https://www.amazon.com/s/?url=search-alias%3Dvideogames
+
+![Amazon Search URL 04](/images/amazon-screenshots/amazon-search-url-04.png)
 
 Here's a table of the parameters, again with a few extra from using Amazon Associates SiteStripe:
 
@@ -103,9 +119,13 @@ Finally, if I selected a category or department (and since I'm using the Nintend
 
 https://www.amazon.com/computer-video-games-hardware-accessories/b/ref=nav_shopall_cvg_ce?ie=UTF8&node=468642
 
+![Amazon Category URL 01](/images/amazon-screenshots/amazon-category-url-01.png)
+
 Playing around with the URL, I was able to get the same page with just the following:
 
 https://www.amazon.com/b/?node=468642
+
+![Amazon Category URL 02](/images/amazon-screenshots/amazon-category-url-02.png)
 
 Similar to the product pages, the "computer-video-games-hardware-accessories" is not only not needed, it can be changed to just about anything with no effect on the page itself.
 
