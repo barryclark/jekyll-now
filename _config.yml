@@ -5,9 +5,7 @@ name: SonDelVent
 description: Música mediterranea en una noche estrellada
 
 cover: música mediterranea en una noche estrellada<br>Aromas de jazmín que vuelan al son de una guitarra flamenca
-
 minibio: Grupo de música mediterranea desde Barcelona.<br>Sensualidad, alegría y fiesta con el sabor especial del flamenco y la fusión latina. Una vida entera dedicada al oficio de las canciones avalan este espectáculo que hace reír, sentir y soñar.
-bio: Grupo de música mediterranea desde Barcelona.<br>Sensualidad, alegría y fiesta con el sabor especial del flamenco y la fusión latina. Una vida entera dedicada al oficio de las canciones avalan este espectáculo que hace reír, sentir y soñar.
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: http://{{ site.baseurl }}/hipertextos/brand/icon.jpg
@@ -16,10 +14,10 @@ phone1: 661269611
 phone2: 661269611
 contratacion: SonDelVent
 
-# HOME
+# HOME page
 home_video: LBtiJlI9U0w
 
-# MEDIA
+# MEDIA page
 video1: LBtiJlI9U0w
 video2: J5s2AgwXyqI
 video3: g-PS8ftx5ME
@@ -29,6 +27,11 @@ video6:
 video7:
 video8:
 video9:
+
+# CONTACTO page
+bio: Grupo de música mediterranea desde Barcelona.<br>Sensualidad, alegría y fiesta con el sabor especial del flamenco y la fusión latina. Una vida entera dedicada al oficio de las canciones avalan este espectáculo que hace reír, sentir y soñar.
+prensa: música mediterranea en una noche estrellada<br>Aromas de jazmín que vuelan al son de una guitarra flamenca
+
 
 # Includes an icon in the footer for each username you enter
 footer-links:
