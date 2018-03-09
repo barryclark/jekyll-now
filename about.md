@@ -14,7 +14,7 @@ I spent five years at Google writing C++ on teams across Google Maps, and lived 
 
 I hold a Masters in Computer Science from the University of Cambridge (King’s College). My final year dissertation was on [Gesture controlled robotics using the Vicon motion capture system](https://github.com/oicheryl/cambridge/blob/master/documentation/dissertation/cjh84.pdf)
 
-[Download my resume.](http://www.oicheryl.com/resources/CloudNativeLondonOct.pdf)
+[Download my resume.](http://www.oicheryl.com/resources/CherylHung-CV.pdf)
 
 ### Contact me
 
