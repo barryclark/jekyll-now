@@ -12,9 +12,8 @@
 #contacto em a { font-size:1.5em;
     width:100%;background:transparent;border:none;border-bottom:2px solid rgba(0,0,0,.2);border-top:2px solid rgba(220,220,220,.032);}
 #contacto em b {color:var(--color-hardgrey);}
-#info-about {text-align:center;}
-#info { 
-    background-color:transparent ;background-image: url(/hipertextos/brand/hexagonblack.png);background-repeat:no-repeat  ;background-size:100px;width:100px;height:100px;border:none!important;
+#info-about, #info {text-align:center;}
+.hexagon {background-color:transparent ;background-image: url(/hipertextos/brand/hexagonblack.png);background-repeat:no-repeat  ;background-size:100px;width:100px;height:100px;border:none!important;
 	padding-left:35px;padding-right:35px;}
 
 @media (max-width: 1250px) {
