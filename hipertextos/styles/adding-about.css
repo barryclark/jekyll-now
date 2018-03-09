@@ -3,6 +3,8 @@
 
 #page-header.about-cover {background-image: url("/img/texture/dark.png");background-color:var(--color-black);background-size:180px 180px;background-repeat: repeat;image-rendering: crisp-edges;}
 #contracta  {text-align:center;}
+#contracta em u label {background: rgba(250,250,250,.5);color:var(--color-hardgrey);border-color: currentcolor;}
+#contracta em u label:hover {background: var(--color-nav);color:var(--color-soft-grey);border-color: var(--color-black);}
 #page-nav {box-shadow:0 2px 3px rgba(0,0,0,.032), 0 2px 12px rgba(0,0,0,.03), 0 2px 60px rgba(0,0,0,.07);}
 .cover-page #page-header {border-bottom:10px solid var(--color-link);color: var(--color-link);font-family: 'Voltaire';text-transform:uppercase;}
 .cover-page #page-main {color:var(--color-hardgrey);background-image: url("/img/texture/light.png");background-size:294px 235px;background-repeat: repeat;image-rendering: crisp-edges;}
@@ -12,9 +14,10 @@
 #contacto em a { font-size:1.5em;
     width:100%;background:transparent;border:none;border-bottom:2px solid rgba(0,0,0,.2);border-top:2px solid rgba(220,220,220,.032);}
 #contacto em b {color:var(--color-hardgrey);}
-#info-about, #info {text-align:center;}
-.hexagon {background-color:transparent ;background-image: url(/hipertextos/brand/hexagonblack.png);background-repeat:no-repeat  ;background-size:100px;width:100px;height:100px;border:none!important;
-	padding-left:35px;padding-right:35px;}
+#info-about, #info {text-align:center;margin-bottom:23px;}
+#info button { color:var(--color-soft);text-transform:uppercase;font-family: 'Voltaire'; font-size:28px;opacity:.69;
+    background-color:transparent ;background-image: url(/hipertextos/brand/hexagonblack.png);background-repeat:no-repeat  ;background-size:100px;width:100px;height:100px;border:none!important;
+	padding-left:25px;padding-right:25px;}
 
 @media (max-width: 1250px) {
   	.cover-page #page-main ul {-webkit-column-count: 2;-moz-column-count: 2;column-count: 2;}
