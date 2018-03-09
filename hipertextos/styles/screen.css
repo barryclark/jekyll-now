@@ -276,7 +276,7 @@ code {
 }
 code, 
 pre {
-	font-family; var(--font-code);
+	font-family; var(--font-brand);
 }
 pre {
 	background: var(--color-translucentwhite);
@@ -1228,6 +1228,7 @@ nav label {
 	--color-background: rgba(255,255,255,1);
 	
 	--font-default: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
+	--font-brand: 'Voltaire', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
 	--font-code: Monaco, Menlo, Consolas,'Courier New', monospace;
 }
 	
