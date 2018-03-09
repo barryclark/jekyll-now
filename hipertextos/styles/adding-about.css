@@ -2,7 +2,7 @@
 /* ------------------------------------------------------------ Resets */
 
 #page-header.about-cover {background-image: url("/img/texture/dark.png");background-color:var(--color-black);background-size:180px 180px;background-repeat: repeat;image-rendering: crisp-edges;}
-#contracta  {text-align:center;}
+#contracta, #prensa  {text-align:center;}
 #contracta em u label {background: rgba(250,250,250,.5);color:var(--color-hardgrey);border-color: currentcolor;}
 #contracta em u label:hover {text-decoration:none;background: var(--color-nav);color:var(--color-soft-grey);border-color: var(--color-black);}
 #page-nav {box-shadow:0 2px 3px rgba(0,0,0,.032), 0 2px 12px rgba(0,0,0,.03), 0 2px 60px rgba(0,0,0,.07);}
