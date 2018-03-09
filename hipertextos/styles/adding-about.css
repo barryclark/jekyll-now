@@ -24,8 +24,9 @@
 #branding figure a img:hover {
     border-radius:8px;border:2px solid rgba(45,45,45,.6);
     box-shadow: 1px 6px 12px rgba(0,0,0,.12);}
-#download em u a {min-width:44%;margin-bottom: 5px;font-family: 'Voltaire';font-size:1.2em;}
+#download em u a {min-width:100%;margin-bottom: 5px;font-family: 'Voltaire';font-size:1.2em;}
 #download em i svg {font-size:.5em;}
+h3 { line-height:1.0em; }
 
 @media (max-width: 1250px) {
   	.cover-page #page-main ul {-webkit-column-count: 2;-moz-column-count: 2;column-count: 2;}
@@ -44,6 +45,7 @@
     .cell-x2 h6 {font-size: 19px;font-weight: lighter ;}
     .thumb-x2, .thumb-x8 {width:100%;margin:0;}
 }
+
 
 
 
