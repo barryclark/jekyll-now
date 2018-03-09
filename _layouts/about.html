@@ -41,47 +41,25 @@
 		<main id="page-main" class="anm-fadeIn delay-900 slow">
 			<div>
 				<section id="info-about" class="anm-fadeIn delay-1000">
-					<h2 id="info" class="anm-moveFromTopFade delay-1500"><u>Qui Som</u></h2>
-					<h5 class="anm-fadeIn delay-1500 slow">{{ site.description }}</h5>
+					<h2 id="info" class="anm-moveFromTopFade delay-1500">{{ site.description }}</h2>
 					<div class="anm-moveFromBottomFade delay-1500">
 						{{ site.bio }}
 					</div>
 					<div id="contracta">
-						<em class="thumb anm-scaleUp delay-1500 slow"><u><label for="modal-two">Contractació</label></u></em>
+						<em class="thumb anm-scaleUp delay-1500 slow"><u><label for="modal-two">Contratación</label></u></em>
 					</div>
 					<hr>
 					<div id="musics">
-					<h2 id="band" class="anm-fadeIn delay-2000"><u>Músics</u></h2>
-						<div>
-							<h5>{{ page.musics }}</h5>
-							<p>{{ page.musics2 }}</p>
+					<h2 id="band" class="anm-fadeIn delay-2000">Formatos</h2>
+						<div class="thumb-6">
+							<h5>TRIO</h5>
+							<p>{{ site.trio }}</p>
+						</div>
+						<div class="thumb-6">
+							<h5>QUINTET</h5>
+							<p>{{ site.quintet }}</p>
 						</div>
 						<hr>
-						<div class="cell-x2">
-							<h6>{{ page.vox }}</h6>
-							<img src="{{ site.baseurl }}/hipertextos/svg/m-mic.svg" class="musics" alt="micrófon">
-							<h5><small>Veu</small></h5>
-						</div>
-						<div class="cell-x2">
-							<h6>{{ page.sax }}</h6>
-							<img src="{{ site.baseurl }}/hipertextos/svg/m-sax.svg" class="musics" alt="Saxo">
-							<h5><small>Saxo</small></h5>
-						</div>
-						<div class="cell-x2">
-							<h6>{{ page.guitar }}</h6>
-							<img src="{{ site.baseurl }}/hipertextos/svg/m-guitar.svg" class="musics" alt="Guitarra elèctrica">
-							<h5><small>Guitarra</small></h5>
-						</div>
-						<div class="cell-x2">
-							<h6>{{ page.bass }}</h6>
-							<img src="{{ site.baseurl }}/hipertextos/svg/m-bass.svg" class="musics" alt="Contrabaix">
-							<h5><small>Contrabaix</small></h5>
-						</div>
-						<div class="cell-x2">
-							<h6>{{ page.drums }}</h6>
-							<img src="{{ site.baseurl }}/hipertextos/svg/m-drums.svg" class="musics" alt="Batería">
-							<h5><small>Bateria</small></h5>
-						</div>
 					</div>
 					<hr>
 					<h2 id="prensa" class="anm-scaleUp delay-600"><u>Premsa</u></h2>
