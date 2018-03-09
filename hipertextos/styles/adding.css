@@ -8,6 +8,9 @@ hr.lines {border:thin solid #fff;height:2px;width:33.33333%;margin-left:33.33333
 hr.lines.lgrey {border-top:thin solid var(--color-softgrey);}
 #site-nav, footer, #follows, #follows-big, #icons, #covers, .nav-scroll, #web-credits, #page-header, #post-header, #post-share, #date, #info-seo, #black-video {
 text-align: center;}
+.text-left {text-align:left;}
+.text-right {text-align:right;}
+
 /* Nav */
 #site-nav, #site-nav label {background: var(--color-nav)!important;border-bottom: none;font-size: 17px;color: var(--color-grey);box-shadow: none;}
 #site-nav a, #site-nav label {font-weight: lighter;min-width: 12%;border: none;letter-spacing: .032em;}
