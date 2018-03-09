@@ -28,6 +28,12 @@
 		<header id="page-header" class="about-cover anm-moveFromTop delay-200">
 			<div>
 				<h1 class="anm-moveFromBottomFade delay-300">{{ page.title }}</h1>
+				<hr>
+				<div id="contacto">
+					<h5><a href="tel:{{ site.phone1 }}" title="Llamar"> {{ site.phone1 }}</a></h5>
+					<h5><a href="tel:{{ site.phone2 }}" title="Llamar"> {{ site.phone2 }}</a></h5>
+					<h5><a href="mailto:{{ site.footer-links.email }}" title="{{ site.footer-links.email }}"> {{ site.footer-links.email }}</a></h5>
+				</div>
 			</div>
 		</header>
 		<main id="page-main" class="anm-fadeIn delay-900 slow">
@@ -41,29 +47,6 @@
 					<div id="contracta">
 						<em class="thumb anm-scaleUp delay-1500 slow"><u><label for="modal-two">Contratación</label></u></em>
 					</div>
-					<hr>
-					<h2 id="prensa" class="anm-scaleUp delay-600"><u>Premsa</u></h2>
-						<div>
-							<h5>{{ page.premsa }}</h5>
-							<p>{{ page.premsa2 }}</p>
-							<div id="down-avatar" class="thumb-x2">
-								<img src="{{ site.baseurl }}/hipertextos/brand/icon.jpg" id="avatar" alt="Logotip de la banda Old Steam">
-								<em><a href="{{ site.baseurl }}/hipertextos/brand/logo.jpg">&darr; Logo</a></em>
-							</div>
-							<div id="down-info" class="thumb-x8">
-								<p>&star; Nom: <b>{{ page.title }}</b><br>
-								&star; Origen: <b>Barcelona</b><br>
-								&star; Any: <b>2015</b><br>
-								&star; Formació: <b>Quintet</b><br>
-								&star; Estil: <b>Jazz, Swing & blues</b><br>
-								&commat; Contacte: <b><a href="mailto:oldsteambcn@gmail.com"> oldsteambcn@gmail.com</a></b><br>
-								&darr; Biografía: <b><a href="{{ site.baseurl }}/hipertextos/pdf/biografia.pdf"> Biografía.pdf</a></b><br>
-								&darr; Rider Tècnic <b><a href="{{ site.baseurl }}/hipertextos/pdf/rider_tecnic.pdf"> Rider.pdf</a></b><br>
-								
-								<!-- <a href="{{ site.baseurl }}/prensa"><i class="icon-bullhorn"></i> Zona de Prensa</a> -->
-								</p>
-							</div>
-						</div>
 					<hr>
 				</section>
 				<hr>									
