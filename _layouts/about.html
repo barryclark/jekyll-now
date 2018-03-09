@@ -27,19 +27,18 @@
 	{% include partials/navigation/nav.html %}
 		<header id="page-header" class="about-cover anm-moveFromTop delay-200">
 			<div>
-				<h1 class="anm-moveFromBottomFade delay-300">{{ page.title }}</h1>
-				<hr>
 				<div id="contacto">
 					<h5><a href="tel:{{ site.phone1 }}" title="Llamar"> {{ site.phone1 }}</a></h5>
 					<h5><a href="tel:{{ site.phone2 }}" title="Llamar"> {{ site.phone2 }}</a></h5>
 					<h5><a href="mailto:{{ site.footer-links.email }}" title="{{ site.footer-links.email }}"> {{ site.footer-links.email }}</a></h5>
 				</div>
+				<h1 class="anm-moveFromBottomFade delay-300">{{ page.title }}</h1>
 			</div>
 		</header>
 		<main id="page-main" class="anm-fadeIn delay-900 slow">
 			<div>
 				<section id="info-about" class="anm-fadeIn delay-1000">
-					<h2 id="info" class="anm-moveFromTopFade delay-1500"><u>Bio</u></h2>
+					<h2 id="info" class="anm-moveFromTopFade delay-1500">Bio</h2>
 					<h5>{{ site.description }}</h5>
 					<div class="anm-moveFromBottomFade delay-1500">
 						{{ site.bio }}

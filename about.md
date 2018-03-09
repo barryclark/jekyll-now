@@ -1,19 +1,7 @@
 ---
 layout: about
-title: Contacto
+title: SonDelVent
 permalink: /about/
-som: Banda de swing, jazz y blues desde Barcelona
-musics: Una banda de luxe!
-musics2: Formació estable de músics professionals
-premsa: Zona de Premsa
-premsa2: Informació, disposició i requeriments tècnics.
-reper: Jazz, Swing & Blues
-reper2: El nostre repertori abarca desde els anys 20 fins a l'actualitat, un repàs en ordre cronològic per la història del Jazz.
-vox: Maria Baeta
-sax: Pep Cabrero
-guitar: Juanje Sánchez
-bass: Jose Borjas
-drums: Isard Miralles
 
 ---
 
