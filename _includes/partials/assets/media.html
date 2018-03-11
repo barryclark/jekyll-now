@@ -1,0 +1,34 @@
+<div id="media">
+  {% if page.html %}
+    {% include partials/assets/html.html %}
+  {% endif %}
+  
+  {% if page.images %}
+    {% include partials/assets/images.html %}
+  {% endif %}
+
+  {% if page.video %}
+    {% include partials/assets/video.html %}
+  {% endif %}
+  
+  {% if page.mp3 %}
+    {% include partials/assets/audio.html %}
+  {% endif %}
+
+  {% if page.swf %}
+    {% include partials/assets/swf.html %}
+  {% endif %}
+
+  {% if page.pdf %}
+    {% include partials/assets/pdfs.html %}
+  {% endif %}
+
+  {% if page.doc %}
+    {% include partials/assets/docs.html %}
+  {% endif %}
+  
+  {% if page.rtf %}
+    {% include partials/assets/rtf.html %}
+  {% endif %}
+
+</div>

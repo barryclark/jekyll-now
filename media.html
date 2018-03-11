@@ -1,0 +1,20 @@
+---
+layout: gallery
+title: Media
+permalink: /media/
+---
+
+    <main id="page-main" role="main" class="medias">
+		<div id="layout" class="listed">
+    		<h3 class="anm-moveFromBottomFade delay-1000"><u>Fotos</u></h3>
+			<section>					
+	{% assign image_files = site.static_files | where: "image", true %}
+	{% for image in image_files %}
+	<article class="imagens anm-zoomIn delay-1500">
+    	<a href="{{ site.baseurl }}/assets/fotos/{{ image.name }}" data-lightbox="roadtrip"><img class="sepia-img" src="{{ site.baseurl }}/assets/fotos/{{ image.name }}" alt="fotografias de la banda SonDelVent"></a>
+	</article>
+	{% endfor %}
+			</section>
+			<hr>
+	</div><!-- /#Layout -->
+	</main>

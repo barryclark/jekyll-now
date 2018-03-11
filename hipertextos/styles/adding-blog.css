@@ -1,0 +1,156 @@
+/* by Isard Miralles  ADDING EXTRA to Blog - CSS */
+/* ------------------------------------------------------------ Resets */
+
+.agenda#post-header {background-image: url("/img/texture/light.png");background-size:294px 235px;background-repeat: repeat;text-transform:uppercase;}
+#post-header, h3 a, #post-date h5 {font-family: 'Voltaire';}
+.img-bolo#back-header {-webkit-filter:blur(32px);filter:blur(32px);height:100%;width:100%;opacity:.75;
+    background-position:;position: top center;position:absolute;top:0;left:0;background-attachment: fixed;background-size: cover;background-repeat: no-repeat;overflow: hidden;text-align: center; }
+#page-main {background-color:var(--color-white);}
+/* Posts */
+h3 a {color:var(--color-softblack);}
+h3 a:hover {text-decoration:none;}
+#post-title, #date, #post-share {text-align: center;}
+#post-video, #post-download, #post-share, #post-header, #post-agenda, #post-date, #post-blog, #page-date {border:none;}
+.post em u a { padding: 6px;border: 2px solid var(--color-grey);color: var(--color-grey);border-radius: 40px;width: 180px;margin-top: 18px;}
+.post em u svg { width: 18px;}
+#post-header {border-bottom: 9px solid var(--color-black);}
+#post-img img { border-radius: 50%;height: 210px;float: left;margin: 0 23px 26px 0;object-fit: cover;width: 210px;}
+#post-video {}
+#post-download {}
+#post-download p img {max-width:320px;float:left;border-radius:4px;margin:0 18px 12px 0;}
+#post-download p em a {	font-size: 15px;line-height: 18px;margin-top:17px;}
+#post-download em svg {	font-size: 18px;line-height: 18px;padding: 3px 0 0 0;}
+figure iframe {width:100%;}
+#post-share em a {color:#fff;border-radius:50%;}
+#post-share em svg {padding:0px 0px 0px 7px;}
+#post-share em a:hover {background:#fff !important;border:thin solid var(--color-link);}
+#post-share em a:visited {background-color:var(--color-soft-grey)  !important;}
+#ical a {text-decoration:none;color:var(--color-red);width:58px;position:absolute;right:0;top:0;text-align: center;}
+#ical h1 {font-weight: lighter;margin-bottom:6px;font-size:3.0em;}
+#ical p {font-size:0.8em;}
+#post-content {color:var(--color-black);}
+#page-date #post-date {border-bottom:thin solid #eee;padding:0;margin-bottom:4%;}
+#page-date #post-date h1 {font-size: 5.6em;margin:0;}
+#page-date #post-date h5 {font-size: 1.4em;margin:5%;}
+#date-img {padding-right:2%;margin-top:5px;}
+#tw {background:var(--color-green);}
+#fb {background:var(--color-blue);}
+#go {background:var(--color-orange);}
+#post-agenda div p i svg {width:14px;color:var(--color-grey);}
+/* nav Scroll */
+.nav-scroll {}
+.nav-scroll label img {width: 18px;height: 18px;}
+.nav-scroll label:hover {border:thin solid transparent;color:var(--color-black);text-decoration:none;}
+/* Category Agenda */
+#post-date {color:var(--color-red);text-align:center;margin:0;padding:32px 0 0 0;}
+#post-date h1 {font-weight: lighter;margin:0 0 2px 0;font-size:3.8em;}
+#post-date h5 {font-weight: normal;font-size: 0.85em;}
+#link-image {float: right;font-size:17px;border-bottom:thin solid currentcolor;color:var(--color-hardgrey);text-decoration:none;}
+#link-image:hover {border-bottom:thin solid currentcolor;color:var(--color-link);}
+#post-agenda strong em a {padding:4px 9px 4px 9px;margin-top:10px;font-size:15px;font-weight: normal;border-color:var(--color-grey);color:var(--color-grey);border-radius:3px;margin-right:3px;}
+#post-agenda strong em a:hover {color:var(--color-link);border-color:var(--color-link);text-decoration:none;}
+#post-agenda h3 a:visited {color:#444;}
+#post-agenda strong em svg {width:16px;margin-left:1px;}
+a.read-more {}
+a.read-more:hover {text-decoration:none !important;}
+/* Simple, List, Table, Gallery, Cards, Tiles */
+.simple em u a,
+#layout-simple:checked ~ #layout-result em u a {padding: 6px;border: 2px solid var(--color-hardgrey);color: var(--color-hardgrey);border-radius: 40px;width: 210px;margin-top: 23px;}
+.simple em u a :hover,
+#layout-simple:checked ~ #layout-result em u a:hover {color: var(--color-link);border: 2px solid var(--color-link); }
+.simple em u svg,
+#layout-simple:checked ~ #layout-result em u svg {width: 21px;}
+.simple #link-comment,
+#layout-simple:checked ~ #layout-result #link-comment {float: right;font-size:17px;border-bottom:thin solid currentcolor;position: absolute;color:var(--color-hardgrey);right: 0;text-decoration:none;bottom: 6px;}
+.simple #link-comment:hover,
+#layout-simple:checked ~ #layout-result #link-comment:hover {border-bottom:thin solid currentcolor;color:var(--color-link);}
+.simple #ical a,
+#layout-simple:checked ~ #layout-result #ical a {padding: 3px;width:90px;top:30px;right:6px;background: var(--color-white);box-shadow:-2px 3px 5px rgba(0,0,0,.06);}
+.simple #post-content,
+.list #post-content,
+#layout-list:checked ~ #layout-result #post-content {max-width:90%;}
+.list #ical a h1,
+#layout-list:checked ~ #layout-result #ical a h1 {line-height:0.7em;padding-top:8px;font-size:2.0em;}
+.list #ical a p,
+#layout-list:checked ~ #layout-result #ical a p {font-size:0.69em;}
+.list em u a,
+#layout-list:checked ~ #layout-result em u a {padding: 3px;font-size:15px;line-height:27px;border: 1px solid var(--color-hardgrey);color: var(--color-hardgrey);border-radius: 40px;width: 169px;margin-top: 21px;}
+.list em u a :hover,
+#layout-list:checked ~ #layout-result em u a:hover {color: var(--color-link);border: thin solid var(--color-link); }
+.list em u svg,
+#layout-list:checked ~ #layout-result em u svg {width: 15px;padding:5px 0 0 0;}
+.list #link-comment,
+#layout-list:checked ~ #layout-result #link-comment {float: right;font-size:17px;border-bottom:thin solid currentcolor;position: absolute;color:var(--color-hardgrey);right: 0;text-decoration:none;bottom: 6px;}
+.list #link-comment:hover,
+#layout-list:checked ~ #layout-result #link-comment:hover {border-bottom:thin solid currentcolor;color:var(--color-link);}
+.table #link-comment,
+#layout-table:checked ~ #layout-result #link-comment {font-size:17px;border-bottom:thin solid currentcolor;position: absolute;padding:15px 15px 15px 15px;left: 80px;text-decoration:none;color:var(--color-vlink); bottom: 3px;}
+.table #ical a h1,
+#layout-table:checked ~ #layout-result #ical a h1 {line-height:0.7em;padding-top:8px;font-size:2.3em;}
+.table #ical a,
+#layout-table:checked ~ #layout-result #ical a {padding: 0;width:100%;top:65%;font-size:0.9em;opacity:.95;background: var(--color-white);box-shadow:-2px 3px 5px rgba(0,0,0,.06);}
+.table #ical a:hover,
+#layout-table:checked ~ #layout-result #ical a:hover {opacity:0;}
+.gallery #link-comment,
+#layout-gallery:checked ~ #layout-result #link-comment {float: right;font-size:13px;border-bottom:none;position: absolute;color:var(--color-white);background-color:rgba(0,0,0,.5);right: 9px;text-decoration:none;padding:0 12px 0 12px;bottom: 1px;}
+.gallery #ical a,
+#layout-gallery:checked ~ #layout-result #ical a {width:80px;top:32px;right:9px;font-size:10px;border-radius:4px;background: var(--color-white);box-shadow:-2px 3px 5px rgba(0,0,0,.06);}
+.gallery #ical a p,
+#layout-gallery:checked ~ #layout-result #ical a p{width:80px;top:30px;right:6px;}
+.gallery #ical a h1,
+#layout-gallery:checked ~ #layout-result #ical a h1{line-height:1.2em;margin-bottom:-5px;}
+.cards #link-comment,
+#layout-cards:checked ~ #layout-result #link-comment {float: right;font-size:12px;border-bottom:none;position: absolute;color:var(--color-hardgrey);right: 0;text-decoration:none;bottom: 7px;padding:0 9px 0 0;}
+.cards #ical a,
+#layout-cards:checked ~ #layout-result #ical a {margin:3px;width:60px;height:60px;top:0;right:0;border-radius:50%;background: var(--color-white);box-shadow:-2px 3px 5px rgba(0,0,0,.06);}
+.cards #ical p,
+#layout-cards:checked ~ #layout-result #ical p {font-size:11px;line-height:13px;margin:0;}
+.cards #ical h1,
+#layout-cards:checked ~ #layout-result #ical h1 {font-size:25px;line-height:28px;margin:5px 0 0 0;}
+/* Suscribe */
+form .button {border:thin solid currentColor;margin-top:0.6em;}
+@media (max-width: 1250px) {
+	.list #post-content,
+	#layout-list:checked ~ #layout-result #post-content {max-width:80%;}
+}
+@media (max-width: 1242px) {
+	.list #post-content,
+	#layout-list:checked ~ #layout-result #post-content {max-width:68%;}
+	#page-date #post-date h1 {font-size: 5.2em;line-height:1.1em;margin:0;}
+	#page-date #post-date h5 {font-size: 1.2em;line-height:1.6em;margin:1%;}
+	#date-img {margin:0;width:50%;}
+}
+@media (max-width: 768px) {
+    #post-date h1 {margin:0 0 2px 0;font-size:38px;line-height:1px;margin-bottom:15px;}
+	#post-date h5 {font-size: 16px;}
+    #post-agenda strong em a {padding:4px 9px 4px 9px;margin-top:5px;font-size:14px;margin-right:3px;}
+    #post-agenda strong em svg {display:none;}
+    #post-agenda div p i svg {display:none;}
+	#layout-list:checked ~ #layout-result #post-content {max-width:68%;}
+	#page-date #post-date h1 {font-size: 3.2em;line-height:1.1em;margin:0;}
+	#page-date #post-date h5 {font-size: 1.0em;line-height:1.2em;margin:1%;}
+	#date-img {margin:0;margin-bottom:2%;width:100%;}
+    .list h3,
+	#layout-list:checked ~ #layout-result h3 {font-size: 26px;}
+	.list p,
+	#layout-list:checked ~ #layout-result p {font-size:15px;letter-spacing: .01em}
+	.list #post-content,
+	#layout-list:checked ~ #layout-result #post-content {max-width:65%;}
+    .list article div img,
+	#layout-list:checked ~ #layout-result article div img {width:96px;height:96px;}
+    .list #ical a h1,
+	#layout-list:checked ~ #layout-result #ical a h1 {padding-top:0px;font-size:2.0em;line-height:0.7em;}
+}
+@media (max-width: 432px) {
+    #post-date h1 {margin:0;font-size:32px;line-height:1px;margin-bottom:12px;}
+	.list h3,
+	#layout-list:checked ~ #layout-result h3 {font-size: 17px;line-height:19px;text-align: left;}
+	.list p,
+	#layout-list:checked ~ #layout-result p {font-size:12px;letter-spacing: .001em;line-height:21px;}
+	.list article div img,
+	#layout-list:checked ~ #layout-result article div img {width:54px;height:54px;}
+	.list #post-content,
+	#layout-list:checked ~ #layout-result #post-content {max-width:50%;}
+    .list #ical a h1,
+	#layout-list:checked ~ #layout-result #ical a h1 {line-height:0.7em;font-size:1.5em;}
+}

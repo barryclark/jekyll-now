@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es-ES">
   <head>
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 
@@ -9,43 +9,52 @@
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/styles/screen.css" />
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/styles/components.css" />
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/styles/adding.css" />
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/styles/helpers.css" />
+	{% if page.comments %}<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/styles/adding-blog.css" />{% endif %}
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/styles/anime.css" />
+    {% if page.comments %}<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/css/lightbox.min.css" />{% endif %}
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+	<link href="https://fonts.googleapis.com/css?family=Voltaire" rel="stylesheet">
+    {% include favicons.html %}
 
-    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+	
   </head>
 
   <body>
-    <div class="wrapper-masthead">
-      <div class="container">
-        <header class="masthead clearfix">
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
-
-          <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-            <p class="site-description">{{ site.description }}</p>
-          </div>
-
-          <nav>
-            <a href="{{ site.baseurl }}/">Blog</a>
-            <a href="{{ site.baseurl }}/about">About</a>
-          </nav>
-        </header>
-      </div>
-    </div>
-
-    <div id="main" role="main" class="container">
+		<!-- Theme inputs (invisibles) -->		
+		<input type="radio" id="theme-light" name="theme" aria-hidden="true" hidden>
+		<input type="radio" id="theme-soft" name="theme" aria-hidden="true" hidden>
+		<input type="radio" id="theme-dark" name="theme" aria-hidden="true" hidden>
+		
+	<!-- Page content -->
+	<div class="page" id="page">
       {{ content }}
-    </div>
-
-    <div class="wrapper-footer">
-      <div class="container">
-        <footer class="footer">
-          {% include svg-icons.html %}
-        </footer>
-      </div>
-    </div>
-
+    {% include partials/footer.html %}
+	</div>
+	<!-- Out of page
+	================================================== -->	
+    {% include partials/dialog.html %}  
+    {% include partials/rights.html %}  
+    
+    <!-- Scripts
+    ================================================== -->
+  	<script src="{{ site.baseurl }}/hipertextos/js/jquery.js"></script>
+  	<script src="{{ site.baseurl }}/hipertextos/js/icons.js"></script>
+  	<script src="{{ site.baseurl }}/hipertextos/js/anime.js"></script>
+	{% if page.comments %}<script id="dsq-count-scr" src="//oldsteam.disqus.com/count.js" async></script>{% endif %}
+  	{% if page.comments %}<script src="{{ site.baseurl }}/hipertextos/js/lightbox.min.js"></script>{% endif %}
+	{% if page.comments %}<script type="text/javascript">
+  		$(document).ready(function() {
+    		$("[href]").each(function() {
+    		    if (this.href == window.location.href) {
+    	        	$(this).addClass("active");
+    	    	}
+    		});
+		});
+  	</script>{% endif %}
     {% include analytics.html %}
   </body>
 </html>

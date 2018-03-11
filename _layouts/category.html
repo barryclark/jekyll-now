@@ -1,0 +1,44 @@
+---
+layout: default
+
+---
+
+    {% include partials/navigation/nav-agenda.html %}
+	{% include partials/header.html %}
+    <main id="page-main">
+
+	<div id="layout">
+		<input type="radio" name="layout" id="layout-list" aria-hidden="true" hidden checked>
+
+		{% for post in site.categories[page.category] %}
+    	<div id="layout-result">
+	    		<figure id="post-date" class="cell-x2 anm-zoomIn delay-1000">
+					<h1>{{ post.day }}</h1>				
+					<h5>{{ post.month }}</h5>
+				</figure>
+      		<article id="post-agenda" class="thumb-9 anm-moveFromBottomFade delay-1000">
+					<h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
+					<div>
+						<p><i class="icon-alarm"></i> {{ post.hora }}<br>
+						<i class="icon-credit"></i> {{ post.price }}<br>
+						<i class="icon-location"></i> {{ post.local }} ({{ post.city }})<br>
+						</p>
+	      			<strong>
+	      				<em><a href="{{ site.url }}/{{ post.img }}" data-lightbox="roadtrip" class="anm-zoomIn delay-1500"><i class="icon-file"></i> Cartell</a></em>
+	      				<em><a href="{{ site.baseurl }}{{ post.url }}#disqus_thread" class="anm-zoomIn delay-1500"> Comentaris</a></em>
+	      			</strong>
+					</div>
+    	  			<nav><a href="{{ site.baseurl }}{{ post.url }}" class="read-more"><b>[+]</b></a></nav>
+      		</article>
+    	</div>
+		{% endfor %}
+
+	</div>
+	<em><hr></em>
+	<div>
+			<section id="follows" class="anm-fadeIn delay-2000">
+			{% include partials/suscribe.html %}
+    		</section>
+	</div> 
+	
+    </main>

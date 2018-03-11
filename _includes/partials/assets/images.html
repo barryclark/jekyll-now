@@ -1,0 +1,11 @@
+{% for image in page.images %}
+  <figure>
+    <a href="{{ image.url }}"><img src="{{ image.url }}" alt="{{ image.title }}"></a>
+    {% if image.description %}
+      <figcaption>
+      	<h4>{{ image.title }}</h4>
+      	<p>{{ image.description }}</p>
+      </figcaption>
+    {% endif %}
+  </figure>
+{% endfor %}

@@ -1,0 +1,11 @@
+BEGIN:VCARD
+VERSION:3.0
+PRODID:-//Apple Inc.//Mac OS X 10.12.6//EN
+N:;SonDelVent;;;
+TEL;type=CELL;type=VOICE;type=pref:661269611
+item1.URL;type=pref:www.sondelvent.com
+item1.X-ABLabel:_$!<HomePage>!$_
+X-ABShowAs:COMPANY
+UID:1f1e8311-b672-44df-a81c-3517fb619904
+X-ABUID:1F1E8311-B672-44DF-A81C-3517FB619904:ABPerson
+END:VCARD

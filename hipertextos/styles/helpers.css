@@ -1,0 +1,698 @@
+/* BarcelonaCSS helpers */
+/* by Acózar/Miralles */
+
+/* ------------------------------------------------------------ Font Stacks */
+
+/* Elegant Style */
+
+.elegant, 
+.elegant *, 
+.elegant *:after, 
+.elegant *:before {
+	font-family: Baskerville, "Baskerville Old Face", "Goudy Old Style", Garamond, "Times New Roman", serif;
+	letter-spacing: .1em;
+}
+.elegant ol li { 
+	list-style-type: upper-roman; 
+}
+.elegant ul li { 
+	list-style-type: square; 
+}
+
+/* Funny Style */
+
+.funny, 
+.funny *, 
+.funny *:after, 
+.funny *:before {
+	font-family: Chalkboard, Casual, 'Comic Sans MS', Verdana, sans-serif;
+	letter-spacing: .1em;
+}
+
+/* Gothik Style */
+
+.gothik, 
+.gothik *, 
+.gothik *:after, 
+.gothik *:before {
+ 	font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+}
+
+/* Hard Style */
+
+.hard, 
+.hard *, 
+.hard *:after, 
+.hard *:before {
+	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans-serif;
+	font-size: 1.25em;
+	letter-spacing: .05em;
+}
+
+/* Modern Style */
+
+.modern, 
+.modern *, 
+.modern *:after, 
+.modern *:before {
+	font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+}
+.modern ul li { 
+	list-style-type: circle; 
+}
+
+/* Monospace Style */
+
+.monospace, 
+.monospace *, 
+.monospace *:after, 
+.monospace *:before {
+  	font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+}
+.monospace ul li { 
+	list-style-type: square; 
+}
+
+/* Techno Style */
+
+.techno, 
+.techno *, 
+.techno *:after, 
+.techno *:before {
+  	font-family: "Exo", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", sans-serif;
+}
+.techno ul li { 
+	list-style-type: square; 
+}
+
+/* Typewriter Style */
+
+.typewriter, 
+.typewriter *, 
+.typewriter *:after, 
+.typewriter *:before {
+  	font-family: 'Special Elite', Times New Roman, Times, serif;
+}
+
+/* ------------------------------------------------------------ Positioning */
+
+.position-absolute,
+.position-absolute-phone-relative,
+.position-fixed,
+.position-fixed-phone-relative,
+.position-sticky,
+.position-sticky-phone-relative {
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 9;
+}
+.position-absolute,
+.position-absolute-phone-relative {
+	position: absolute;
+}
+.position-fixed,
+.position-fixed-phone-relative {
+	position: fixed;
+}
+.position-relative {
+	position: relative;
+}
+.position-sticky,
+.position-sticky-phone-relative {
+	box-shadow: 0 0 2px rgba(0,0,0,.3);
+	position: sticky; 
+	position: -webkit-sticky; 
+
+}
+.position-float,
+.position-float-right {
+	display: block;
+	float: left;
+	margin: 16px;
+}
+.position-float-right {
+	float: right;
+}
+@media (max-width: 767px) {
+	.position-absolute-phone-relative,
+	.position-fixed-phone-relative,
+	.position-sticky-phone-relative {
+		position: relative
+	}
+}
+
+/* ------------------------------------------------------------ Shapes */
+
+/* Basic shapes */
+
+.rounded-soft {
+	border-radius: 8px;
+}
+.rounded-medium {
+	border-radius: 16px;
+}
+.rounded-soft {
+	border-radius: 48px;
+}
+.square {
+	border-radius: 0px;
+}
+.circle {
+	border-radius: 50%;
+}
+
+/* ------------------------------------------------------------ Visibility & basic responsiveness */
+
+/* Default & desktop */
+
+.shown,
+.shown-desktop,
+.hidden-tablet,
+.hidden-phone {
+	display: block !important;
+	visibility: visible !important;
+}
+.hidden,
+.hidden-desktop,
+.shown-phone,
+.shown-tablet {
+	display: none !important;
+	visibility: hidden !important;
+}
+
+/* Tablet */
+
+@media (max-width: 767px) {
+	.shown-tablet,
+	.hidden-desktop,
+	.hidden-phone {
+		display: block !important;
+		visibility: visible !important;
+	}
+	.hidden,
+	.hidden-tablet,
+	.shown-phone {
+		display: none !important;
+		visibility: hidden !important;
+	}
+}
+
+/* Phone */
+
+@media (max-width: 480px) {
+	.shown-phone,
+	.hidden-desktop,
+	.hidden-phone {
+		display: block !important;
+		visibility: visible !important;
+	}
+	.hidden,
+	.hidden-desktop,
+	.shown-tablet,
+	.shown-tablet {
+		display: none !important;
+		visibility: hidden !important;
+	}
+}
+
+/* ------------------------------------------------------------ Grids */
+
+/* Cell & Thumb */
+
+[class*='cell'], 
+[class*='thumb'],
+.cell, 
+.thumb {
+	display: block;
+	float: left;
+	height: auto;
+	width: 100%;
+}
+
+/* 1/12 (Default) */
+
+.cell-1, 
+.thumb-1, 
+.col-12 .cell, 
+.col-12 .thumb {
+	width: 8.3333333333%;
+}
+.cell-2, 
+.thumb-2, 
+.col-6 .cell, 
+.col-6 .thumb {
+	width: 16.6666666666%;
+}
+.cell-3, 
+.thumb-3, 
+.col-4 .cell, 
+.col-4 .thumb {
+	width: 24.9999999999%;
+}
+.cell-4, 
+.thumb-4, 
+.col-3 .cell, 
+.col-3 .thumb {
+	width: 33.3333333333%;
+}
+.cell-5,
+.thumb-5 {
+	width: 41.6666666666%;
+}
+.cell-6, 
+.thumb-6, 
+.col-2 .cell, 
+.col-2 .thumb {
+	width: 49.9999999999%;
+}
+.cell-7,
+.thumb-7 {
+	width: 58.3333333333%;
+}
+.cell-8,
+.thumb-8 {
+	width: 66.6666666666%;
+}
+.cell-9,
+.thumb-9 {
+	width: 74.9999999999%;
+}
+.cell-10,
+.thumb-10 {
+	width: 83.3333333333%;
+}
+.cell-11,
+.thumb-11 {
+	width: 91.66666666%;
+}
+.cell-12,
+.thumb-12 {
+	width: 100%;
+}
+
+/* Golden */
+
+.col-gr .cell-primary {
+	width: 61.80%;
+}
+.col-gr .cell-secondary {
+	width: 38.20%;
+}
+
+/* 1/10 */
+
+.cell-x1, 
+.thumb-x1, 
+.col-10 .cell, 
+.col-10 .thumb {
+	width: 10%;
+}
+.cell-x2, 
+.thumb-x2, 
+.col-5 .cell, 
+.col-5 .thumb {
+	width: 20%;
+}
+.cell-x3,
+.thumb-x3 {
+	width: 30%;
+}
+.cell-x4,
+.thumb-x4 {
+	width: 40%;
+}
+.cell-x5,
+.thumb-x5 {
+	width: 50%;
+}
+.cell-x6,
+.thumb-x6 {
+	width: 60%;
+}
+.cell-x7,
+.thumb-x7 {
+	width: 70%;
+}
+.cell-x8,
+.thumb-x8 {
+	width: 80%;
+}
+.cell-x9,
+.thumb-x9 {
+	width: 90%;
+}
+
+/* 1/8 */
+
+.cell-e,
+.thumb-e, 
+.col-e .cell, 
+.col-e .thumb {
+	width: 12.499999999%;
+}
+
+/* Offset */
+
+.pushed-1 {
+	margin-left: 8.3333333333%;
+}
+.pushed-2 {
+	margin-left: 16.6666666666%;
+}
+.pushed-3 {
+	margin-left: 24.9999999999%;
+}
+.pushed-4 {
+	margin-left: 33.3333333333%;
+}
+.pushed-5 {
+	margin-left: 41.6666666666%;
+}
+.pushed-6 {
+	margin-left: 49.9999999999%;
+}
+.pushed-7 {
+	margin-left: 58.3333333333%;
+}
+.pushed-8 {
+	margin-left: 66.6666666666%;
+}
+.pushed-9 {
+	margin-left: 74.9999999999%;
+}
+.pushed-10 {
+	margin-left: 83.3333333333%;
+}
+.pushed-11 {
+	margin-left: 91.66666666%;
+}
+
+/* Magazine columns (dividing one box in columns with column-count attribute) */
+
+[class*='columns'] {
+	display: block;
+	margin: 0;
+	width: 100%;
+} 
+.columns-2 {
+	-webkit-column-count: 2;
+	-moz-column-count: 2;
+	column-count: 2;
+} 
+.columns-3 {
+	-webkit-column-count: 3;
+	-moz-column-count: 3;
+	column-count: 3;
+} 
+.columns-4 {
+	-webkit-column-count: 4;
+	-moz-column-count: 4;
+	column-count: 4;
+} 
+.no-columns {
+	-webkit-column-span: all;
+	-moz-column-span: all;
+	column-span: all;
+}
+@media (max-width: 768px) {
+	.columns-blocked {
+		-webkit-column-count: 1;
+		-moz-column-count: 1;
+		column-count: 1;
+		-webkit-column-span: all;
+		-moz-column-span: all;
+		column-span: all;
+	}
+}
+
+/* Levels (fixing heights for a vertical grid) */
+
+.level, [class*='level'] {
+	display: block;
+	height: auto;
+	overflow: hidden;
+	width: auto;
+}
+.level-1 {
+	height: 16px;
+}
+.level-2 {
+	height: 32px;
+}
+.level-3 {
+	height: 48px;
+}
+.level-4 {
+	height: 64px;
+}
+.level-5 {
+	height: 80px;
+}
+.level-6 {
+	height: 96px;
+}
+.level-7 {
+	height: 112px;
+}
+.level-8 {
+	height: 128px;
+}
+.level-9 {
+	height: 144px;
+}
+.level-10 {
+	height: 160px;
+}
+.level-11 {
+	height: 176px;
+}
+.level-12 {
+	height: 192px;
+}
+.level-13 {
+	height: 208px;
+}
+.level-14 {
+	height: 224px;
+}
+.level-15 {
+	height: 240px;
+}
+.level-16 {
+	height: 256px;
+}
+.level-17 {
+	height: 272px;
+}
+.level-18 {
+	height: 288px;
+}
+.level-19 {
+	height: 304px;
+}
+.level-20 {
+	height: 320px;
+}
+@media (max-width: 767px) {
+	.level-blocked {
+		height: auto;
+	}
+}
+
+/* ------------------------------------------------------------ Colors */
+
+/* Colors */
+
+[class*='color'],
+[class*='color'] * {
+	background-color: currentColor;
+	border-color: currentColor;
+	fill: currentColor;
+	stroke: currentColor;
+}
+.color-soft-yellow,
+.color-soft-yellow * {
+	color: #FFEE99;
+}
+.color-yellow,
+.color-yellow * {
+	color: #F7CA18;
+}
+.color-soft-amber,
+.color-soft-amber * {
+	color: #F5AB35;
+}
+.color-amber,
+.color-amber * {
+	color: #EB9532;
+}
+.color-soft-orange,
+.color-soft-orange * {
+	color: #E87E04;
+}
+.color-orange,
+.color-orange * {
+	color: #F9690E;
+}
+.color-soft-red ,
+.color-soft-red  *{
+	color: #EA6666;
+}
+.color-red,
+.color-red * {
+	color: #EE0000;
+}
+.color-soft-granate,
+.color-soft-granate * {
+	color: #D64541;
+}
+.color-granate,
+.color-granate * {
+	color: #96281B;
+}
+.color-soft-brown,
+.color-soft-brown * {
+	color: #944019;
+}
+.color-brown,
+.color-brown * {
+	color: #5B2B14;
+}
+.color-soft-pink,
+.color-soft-pink * {
+	color: #FFC0CB;
+}
+.color-pink,
+.color-pink * {
+	color: #FFB6C1;
+}
+.color-soft-magenta,
+.color-soft-magenta * {
+	color: #FF77FC;
+}
+.color-magenta,
+.color-magenta * {
+	color: #FF00FF;
+}
+.color-soft-violet,
+.color-soft-violet * {
+	color: #A46DBB;
+}
+.color-violet,
+.color-violet * {
+	color: #8844a5;
+}
+.color-soft-sky,
+.color-soft-sky * {
+	color: #C5EFF7;
+}
+.color-sky,
+.color-sky * {
+	color: #89C4F4;
+}
+.color-soft-blue,
+.color-soft-blue * {
+	color: #408EBE;
+}
+.color-blue,
+.color-blue * {
+	color: #006DAB;
+}
+.color-soft-green,
+.color-soft-green * {
+	color: #65C38E;
+}
+.color-green,
+.color-green * {
+	color: #3AB16C;
+}
+.color-soft-olive,
+.color-soft-olive * {
+	color: #6d8764;
+}
+.color-olive,
+.color-olive * {
+	color: #3E4C39;
+}
+.color-soft-turquoise,
+.color-soft-turquoise * {
+	color: #34C3A7;
+}
+.color-turquoise,
+.color-turquoise * {
+	color: #00AF8B;
+}
+.color-soft-asphalt,
+.color-soft-asphalt * {
+	color: #7895B5;
+}
+.color-asphalt,
+.color-asphalt * {
+	color: #2C3E50;
+}
+.color-black,
+.color-black * {
+	color: #000;
+}
+.color-hard-grey,
+.color-hard-grey * {
+	color: #333333;
+}
+.color-grey,
+.color-grey * {
+	color: #666666;
+}
+.color-soft-grey,
+.color-soft-grey * {
+	color: #d5d5d5;
+}
+.color-soft,
+.color-soft * {
+	color: #E6ECED;
+}
+.color-white,
+.color-white * {
+	color: #ffffff;
+}
+
+/* Color skins */
+
+.skin-positive,
+.skin-positive * {
+	background-color: transparent !important;
+	border-width: 1px !important;
+	fill: transparent !important;
+}
+.skin-negative,
+.skin-negative * {
+	color: #ffffff !important;
+	border-color: transparent !important;
+	fill: #ffffff !important;
+}
+.skin-text,
+.skin-text * {
+	background: transparent !important;
+	border-color: transparent !important;
+}
+
+/* Color resets */
+
+.skin-yang,
+.skin-yang * {
+	background-color: #ffffff !important;
+	border: none;
+	color: #000000 !important;
+	fill: #000000 !important;
+	stroke: transparent !important;
+}
+.skin-yin,
+.skin-yin * {
+	color: #000000 !important;
+	border: none;
+	color: #ffffff !important;
+	fill: #ffffff !important;
+	stroke: transparent !important;
+}
+
+/* The end */

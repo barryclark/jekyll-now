@@ -1,0 +1,24 @@
+				  	{% if page.children %}
+					<div id="viewer" class="listed">
+				{% include 'partials/assets/media-box.html' %}
+					{% for child in page.children %}
+					  <article id="{{ child.section }}" class="article-max">
+						<h5 class="article-title thin"><a href="{{ child.url }}" title="{{ child.title }}">{{ child.title }}</a></h5>
+						{% if child.lead %}
+						<h6 class="article-lead xs">{{ child.lead }}</h6>
+						{% endif %}
+						<div class="mosaic-imagens">
+{% for image in child.images %}
+  <figure class="imagens">
+    <a href="{{ image.url }}"><img class="button-icon flat white squared" src="{{ image.url }}" alt="{{ image.title }}"></a>
+  </figure>
+{% endfor %}
+						</div>
+					<hr>
+					<div class="text-right">
+					<a href="{{ child.url }}"><div class="icon filled soft-grey symbol-more"><b class="foot-post uppercased">{{ child.title }}</b></div></a>
+					</div>
+					  </article>
+					{% endfor %}
+					</div><!-- /#viewer -->
+				  {% endif %}	
