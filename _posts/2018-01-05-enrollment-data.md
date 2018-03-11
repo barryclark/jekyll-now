@@ -10,7 +10,7 @@ categories: Education Data
 
 I hope to eventually explore the two clickbait claims above. The primary purpose of this blog is to address them, get in touch if this interests you. 
 
-The purpose of this post is to outline my process to explore California enrollment data starting from the raw form on the web. As I progress though the steps, I will write additional posts to share results and/or go into specifics on troubleshooting technical difficulties. 
+This post outlines my process to explore California enrollment data starting from the raw form on the web. 
   
 I will follow a process similar to [EliteDataScience](https://elitedatascience.com/birds-eye-view):
   - [Exploratory Analysis](#explore)
@@ -18,6 +18,8 @@ I will follow a process similar to [EliteDataScience](https://elitedatascience.c
   - [Feature Engineering](#feature)
   - [Algorithm Selection](#algo)
   - [Model Training](#model)
+
+As I progress though the steps, I will write additional posts to share results and/or go into specifics on troubleshooting technical difficulties. 
 
 # Exploration<a name="explore"></a>
 CA Student & School Data Files can be found on [California's DoE website](https://www.cde.ca.gov/ds/sd/sd/). They are tab delimited .txt files with fields that vary across years. 
@@ -87,6 +89,12 @@ return(rbindlist(DT.list, use.names=TRUE, fill=TRUE, idcol=id))
 
 I will bind the data tables across years together into one large data.table in order to visualize change over time. Before doing so, I need to make sure that the column headers are the same for each data table and each col contains the same type of data.
 
+## NA Values
+
+While binding tables together, many NA values have been introduced. Much of this can be explained by schools opening and closing. Additionally, the master list of schools for California is only kept up-to-date, meaning that historical data on schools that have since closed or changed CDS_CODE needs to be recreated from what data we can find in the enrollment files.
+
+Luckily, the '92 data file does include county and school name information along with CDS_CODES - so we can recover some NA_VALUES.
+
 # Features<a name="feature"></a>
 The first thing to notice is that enrollments seem to be decreasing in many areas even though population has been rising. Normalizing for population growth seems like something worth trying.
 
@@ -98,7 +106,7 @@ I want to identify schools with high diversity entropy and low diversity entropy
 
 I want to identify schools with high class entropy and low class entropy
 
-Who gets pushed out of schools? Opportunity transfers, expulsions...
+Who gets pushed out of schools? Opportunity transfers, expulsions, suspension rates ...
 
 # Algorithm<a name="algo"></a>
 
