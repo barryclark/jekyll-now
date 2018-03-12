@@ -53,7 +53,15 @@ When /new is requested, "HTTP_X_CLIENT_ID" is checked against cmd_auth in the fo
 
 Python provides a useful way to access a function in a class. If you put '@property' before the function, it can be access just like a normal variable. This can be seen when the logger does the following 'if server_config.return_log:'. (more about the @property) 
 
-This line is the key to putting the two exploits we have found together to exploit the server. Str.format will let you access properties of the values passed in, but you can't use it to call functions. The @property makes the function return_log() act as a property and allows it to now be called through the str.format function. The last piece is finding how to format the string you need to send to the server. 
+This line is the key to putting the two exploits we have found together to exploit the server. Str.format will let you access properties of the values passed in, but you can't use it to call functions. The @property makes the function return_log() act as a property and allows it to now be called through the str.format function. The last piece is finding how to format the string you need to send to the server. The globals list is available through class objects, but not from variables. This means that we can't use the str variables passed to the formatter, we need something else. 
+
+When the server hits a critical error, it passes the ServerConfig object to the logging module for the formatter to use. We can access this object in the formatter to get the property need. '{args[0]}' can be used to access the first arg passed in to the logging function. This allows us pass in the HTTP header 'X-CLIENT-ID: {args[0].return_log}', and the cookie will be examined on a critical error. Remote code can now be run on the webserver to queue a new bot command. 
+
+formattign cookie
+
+To determine what command needs to be sent to the botnet, the bot code needs to be examined. In IDA we can see the code that is ran to handle a message. When handling a message the bot will check to see if the topic is addressed for the bridge, or for the broadcast/own message topic. If the message is addressed to the bot, it will unpack the message to execute. An example of a bot command can be found in the memory scrap from task 5. We can use this to figure out what is needed for our command. 
+
+Below are the commands the bot will recornize. We want the cmd_uninstall command, which will stop the bridge if enabled and then safely remove the bot from our agent. (image from code)
 
 
 
