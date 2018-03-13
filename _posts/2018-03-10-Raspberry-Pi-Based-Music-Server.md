@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Raspberry Pi Music Player
+title: Raspberry Pi Hi-Fi
 categories: blog
 comments: true
 published: false
 ---
 
-# Using as Raspberry Pi as a Music Server
+# Raspberry Pi Hi-Fi
 
 **The Problem**
 I have a reasonably large collection of music files (about 80GB), which I keep on my laptop hard drive. I love the convenience of storing/playing music as files, and have been progressively ripping and mothballing my CD/Vinyl/Cassette collection over the years. 
 
-However, I am still quite old school in that I like to listen to my music through my 20 year old separates hifi system. Now, for all other music media formats, there has always been a readily available generic solution for the hifi separates system:
+However, I am still quite old school in that I like to listen to my music through my 20 year old separates hi-fi system. Now, for all other music media formats, there has always been a readily available generic solution for the hifi separates system:
 
 * Vinyl = record player/turntable
 * Cassette = cassette deck
@@ -19,7 +19,7 @@ However, I am still quite old school in that I like to listen to my music throug
 * MiniDisc = minidisc player
 * MP3 etc = er ....... who knows?
 
-To my knowledge, there has never been a straightforward plug and play option for adding a collection of music files to a hifi system.
+To my knowledge, there has never been a straightforward plug and play option for adding a collection of music files to a hi-fi system.
 
 I've tried a number of solutions with varying degrees of success over the years, including:
 
