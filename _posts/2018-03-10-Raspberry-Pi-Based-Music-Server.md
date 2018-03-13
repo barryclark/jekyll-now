@@ -78,7 +78,7 @@ In action:
 
 ![Raspberry Pi Hi-Fi in action](https://github.com/JulianJoseph/julianjoseph.github.io/blob/master/images/raspberry-pi-hifi-in-action.jpg)
 
-The RuneAudion Android App:
+The RuneAudio Android App:
 
 ![RuneAudion Android App](https://github.com/JulianJoseph/julianjoseph.github.io/blob/master/images/RuneAudio-AndroidApp.jpg)
 
