@@ -8,8 +8,9 @@ Some information about you!
 
 ### More Information
 
-Hi!
+Data Driven | Research Enthusiast
+I love the journey that data exploration takes you on. When approaching a problem I aim to integrate creativity, elegance and efficiency in order find meaningful solutions. Grounded in a deep and thorough training of experimental design and modeling, I strive to communicate a clear narrative to complex concepts.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[hirsch.tova@gmail.com](mailto:email@domain.com)
