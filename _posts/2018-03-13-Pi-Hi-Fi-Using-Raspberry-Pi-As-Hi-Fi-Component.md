@@ -6,8 +6,6 @@ comments: true
 published: true
 ---
 
-# Pi Hi Fi - Using a Raspberry Pi as a Hi-Fi Component
-
 **The Problem**
 
 I have a reasonably large collection of music files (about 80GB), which I keep on my laptop hard drive. I love the convenience of storing/playing music as files, and have been progressively ripping and mothballing my CD/Vinyl/Cassette/MiniDisc collection over the years. 
