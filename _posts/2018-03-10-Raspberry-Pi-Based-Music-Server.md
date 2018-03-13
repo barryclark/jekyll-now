@@ -45,8 +45,6 @@ I searched for solutions online. There are a few components available which meet
 **The Solution**
 Of course, use a Raspberry Pi! A few Google searches revealed a host of ideas for turning a humble Pi into a hi-fi music player.
 
-![Raspberry Pi Hi-Fi in action](https://raw.githubusercontent.com/julianjoseph/julianjoseph.github.io/master/images/raspberry-pi-hifi-in-action.jpg)
-
 ***Ingredients***
 * 1 x Raspberry Pi (£32)
 * 1 x HiFiBerry DAC+ (£25)
@@ -74,4 +72,12 @@ Here is the finished item:
 ![Raspberry Pi Hi-Fi](https://raw.githubusercontent.com/julianjoseph/julianjoseph.github.io/master/images/raspberry-pi-hifi.jpg)
 
 As my hi-fi system diminishes over the years (good bye to: turntable, cassette deck, minidisc player, CD player) - the Pi has become the heart of the system. Plus, its small size means that it can be hidden away behind the amp, so no need to accommodate another bulky separates component.
+
+![Raspberry Pi Hi-Fi in action](https://raw.githubusercontent.com/julianjoseph/julianjoseph.github.io/master/images/raspberry-pi-hifi-in-action.jpg)
+
+![RuneAudion Android App](https://raw.githubusercontent.com/julianjoseph/julianjoseph.github.io/master/images/RuneAudio-AndroidApp.jpg)
+
+![Chimney Windows MPD Player](https://raw.githubusercontent.com/julianjoseph/julianjoseph.github.io/master/images/chimney-mpd-player.jpg)
+
+
 
