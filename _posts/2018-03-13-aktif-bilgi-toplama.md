@@ -33,7 +33,7 @@ NMAP ile Ağ Keşfi - Murat Yokuş (Pusula Yayıncılık)
 
 - Ağda aktif olan cihazların tespiti için yapılmış, bir NMAP taraması örneği:
 
-	![nmap-ping-taraması](pics/1.png)
+	![nmap-ping-taraması](/images/aktif-bilgi-toplama/1.png)
 
 ## NMAP ile Tarama İşlemleri
 
@@ -53,7 +53,7 @@ NMAP ile Ağ Keşfi - Murat Yokuş (Pusula Yayıncılık)
 	
 	**Service:** Port numarasına ait servis bilgisini verir.
 
-	![nmap-argumansiz-tarama](pics/2.png)
+	![nmap-argumansiz-tarama](/images/aktif-bilgi-toplama/2.png)
 
 ## Çoklu Hedefler Üzerinde Tarama Yapmak
 
@@ -61,7 +61,7 @@ NMAP ile Ağ Keşfi - Murat Yokuş (Pusula Yayıncılık)
 
 	Bunun için aşağıdaki örnekteki bi hedef IP'ler ardı ardına yazılabilir 
 
-	![nmap-coklu-tarama](pics/3.png)
+	![nmap-coklu-tarama](/images/aktif-bilgi-toplama/3.png)
 
 - Ya da aynı işlem aşağıdaki komut ile de yapılabilir
 
@@ -89,7 +89,7 @@ NMAP ile Ağ Keşfi - Murat Yokuş (Pusula Yayıncılık)
 
 	Örnek vermek gerekirse, aşağıdaki tarama işleminde **10.0.2.0/24** ağında bulunan tüm cihazları taramasını ama locahost olan 10.0.2.14 IP'sını taramaması sağlanır.
 
-	![nmap-exclude](pics/4.png)
+	![nmap-exclude](/images/aktif-bilgi-toplama/4.png)
 
 ## Agresif Tarama Yapmak
 
@@ -101,11 +101,11 @@ NMAP ile Ağ Keşfi - Murat Yokuş (Pusula Yayıncılık)
 
 	[**metasploitable**](https://sourceforge.net/projects/metasploitable/files/Metasploitable2/) cihazı üzerinde yapılan **agresif tarama örneği**:
 
-	![nmap--A](pics/5.png)
-	![nmap--A](pics/6.png)
-	![nmap--A](pics/7.png)
-	![nmap--A](pics/8.png)
-	![nmap--A](pics/9.png)
+	![nmap--A](/images/aktif-bilgi-toplama/5.png)
+	![nmap--A](/images/aktif-bilgi-toplama/6.png)
+	![nmap--A](/images/aktif-bilgi-toplama/7.png)
+	![nmap--A](/images/aktif-bilgi-toplama/8.png)
+	![nmap--A](/images/aktif-bilgi-toplama/9.png)
 
 ## NMAP Parametreleri
 
@@ -145,7 +145,7 @@ NMAP ile Ağ Keşfi - Murat Yokuş (Pusula Yayıncılık)
 
 - Bu parametre ile hedef basit bir ping isteği gönderilerek aktif olup olmadığı tespit edilmeye çalışılır.
 
-	![nmap-ping-taraması](pics/1.png)
+	![nmap-ping-taraması](/images/aktif-bilgi-toplama/1.png)
 
 #### -PS Parametresi ile TCP syn ping
 
@@ -229,7 +229,7 @@ NMAP ile Ağ Keşfi - Murat Yokuş (Pusula Yayıncılık)
 
 - **whois-domain.nse** script'i ile yapılan tarama örneği:
 
-	![nmap-nse-whois](pics/10.png)
+	![nmap-nse-whois](/images/aktif-bilgi-toplama/10.png)
 
 #### Kategoriye göre Script Çalıştırma
 
@@ -249,39 +249,39 @@ NMAP ile Ağ Keşfi - Murat Yokuş (Pusula Yayıncılık)
 
 - Malware kategorisinde bulunan scriptler ile tarama örneği:
 
-	![nmap-nse-malware](pics/15.png)
-	![nmap-nse-malware-2](pics/16.png)
+	![nmap-nse-malware](/images/aktif-bilgi-toplama/15.png)
+	![nmap-nse-malware-2](/images/aktif-bilgi-toplama/16.png)
 
 #### Örnek Bir Backdoor Bulma Aşaması
 
 - NMAP ile versiyon taraması yaparız;
 
-	![nmap-ftp-backdoor](pics/18.png)
+	![nmap-ftp-backdoor](/images/aktif-bilgi-toplama/18.png)
 
 - Çıkan sonuçlara uygun Scriptlere bakarız.
 
 	ftp (vsftpd 2.3.4) için yapılan script taraması:
 	
-	![nmap-ftp-backdoor](pics/19.png)
+	![nmap-ftp-backdoor](/images/aktif-bilgi-toplama/19.png)
 
 	Referance kısmında bunun için belirtilen exploit'i kullanmak için metasploit'i açıyoruz ve belirtilen aramayı yaptıktan sonra exploit'imizi seçiyoruz.
 
-	![msfconsole-ftp](pics/20.png)
-	![msfconsole-ftp](pics/21.png)
-	![msfconsole-ftp](pics/22.png)
+	![msfconsole-ftp](/images/aktif-bilgi-toplama/20.png)
+	![msfconsole-ftp](/images/aktif-bilgi-toplama/21.png)
+	![msfconsole-ftp](/images/aktif-bilgi-toplama/22.png)
 
 #### Script Dosyaları Database Güncelleme
 
 - Aşağıdaki gibi güncelleme işlemi gerçekleştirilir.
 
-	![nmap-nse-update-db](pics/12.png)
+	![nmap-nse-update-db](/images/aktif-bilgi-toplama/12.png)
 
 #### Script Dosyalarının Konumu
 
 - Script dosyaları, linux sistemlerde, **/usr/share/nmap/scripts/** altındadır.
 
-	![nmap-scripts-folder](pics/13.png)
-	![nmap-scripts-search](pics/14.png)
+	![nmap-scripts-folder](/images/aktif-bilgi-toplama/13.png)
+	![nmap-scripts-search](/images/aktif-bilgi-toplama/14.png)
 
 ## Güvenlik Duvarını Atlatmak
 
@@ -347,4 +347,4 @@ NMAP ile Ağ Keşfi - Murat Yokuş (Pusula Yayıncılık)
 		nmap --spoof-mac 0 [hedef]
 	```
 
-	![nmap-mac](pics/23.png)
+	![nmap-mac](/images/aktif-bilgi-toplama/23.png)
