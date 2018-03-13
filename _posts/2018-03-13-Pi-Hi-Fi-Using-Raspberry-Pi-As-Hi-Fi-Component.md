@@ -72,21 +72,21 @@ In terms of finishing, a good case is a must have - HifiBerry do a [custom one](
 
 Here is the finished item:
 
-![Raspberry Pi Hi-Fi](https://github.com/JulianJoseph/julianjoseph.github.io/blob/master/images/raspberry-pi-hifi.jpg)
+![Raspberry Pi Hi-Fi](https://raw.githubusercontent.com/julianjoseph/julianjoseph.github.io/master/images/raspberry-pi-hifi.jpg)
 
 As my hi-fi system diminishes over the years (good bye to: turntable, cassette deck, minidisc player, CD player) - the Pi has become the heart of the system. Plus, its small size means that it can be hidden away behind the amp, so no need to accommodate another bulky separates component!
 
 In action:
 
-![Raspberry Pi Hi-Fi in action](https://github.com/JulianJoseph/julianjoseph.github.io/blob/master/images/raspberry-pi-hifi-in-action.jpg)
+![Raspberry Pi Hi-Fi in action](https://raw.githubusercontent.com/julianjoseph/julianjoseph.github.io/master/images/raspberry-pi-hifi-in-action.jpg)
 
 The RuneAudio Android App:
 
-![RuneAudion Android App](https://github.com/JulianJoseph/julianjoseph.github.io/blob/master/images/RuneAudio-AndroidApp.jpg)
+![RuneAudion Android App](https://raw.githubusercontent.com/julianjoseph/julianjoseph.github.io/master/images/RuneAudio-AndroidApp.jpg)
 
 Chimney Windows MPD App:
 
-![Chimney Windows MPD Player](https://github.com/JulianJoseph/julianjoseph.github.io/blob/master/images/chimney-mpd-player.jpg)
+![Chimney Windows MPD Player](https://raw.githubusercontent.com/julianjoseph/julianjoseph.github.io/master/images/chimney-mpd-player.jpg)
 
 
 
