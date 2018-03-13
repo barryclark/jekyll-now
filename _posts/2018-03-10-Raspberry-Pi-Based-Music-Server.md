@@ -38,12 +38,12 @@ In summary:
 * Direct connection to my existing hifi amplifier - no streaming!
 * Store all my music files
 * Remote control
-* Hifi sound quality (obviously within the parameters of file compression etc)
+* Hi-Fi sound quality (obviously within the parameters of file compression etc)
 
 I searched for solutions online. There are a few components available which meet the above criteria, but they are all really expensive (eg [Brennan](http://www.brennan.co.uk/units) - around £500). The market has decided that streaming is the way forward!
 
 **The Solution**
-Of course, use a Raspberry Pi! A few Google searches revealed a host of ideas for turning a humble Pi into a hif music player.
+Of course, use a Raspberry Pi! A few Google searches revealed a host of ideas for turning a humble Pi into a hi-fi music player.
 
 ![Raspberry Pi Hi-Fi in action](https://raw.githubusercontent.com/julianjoseph/julianjoseph.github.io/master/images/raspberry-pi-hifi-in-action.jpg)
 
