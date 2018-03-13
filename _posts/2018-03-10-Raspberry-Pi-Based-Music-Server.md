@@ -11,7 +11,7 @@ published: false
 **The Problem**
 I have a reasonably large collection of music files (about 80GB), which I keep on my laptop hard drive. I love the convenience of storing/playing music as files, and have been progressively ripping and mothballing my CD/Vinyl/Cassette collection over the years. 
 
-However, I am still quite old school in that I like to listen to my music through my 20 year old separates hi-fi system. Now, for all other music media formats, there has always been a readily available generic solution for the hifi separates system:
+However, I am still quite old school in that I like to listen to my music through my 20 year old separates hi-fi system. Now, for all other music media formats, there has always been a readily available generic solution for the hi-fi separates system:
 
 * Vinyl = record player/turntable
 * Cassette = cassette deck
@@ -64,12 +64,12 @@ The other essential item is a DAC (Digital to Analogue Converter). Although the 
 
 RuneAudio is capable of streaming media from a network drive, but I wanted a totally wired connection, so used a high capacity USB memory stick (128GB) plugged directly into the Pi with all my music collection on it. If you want to update your collection later, you can simply FTP files to the Pi.
 
-You'll also need a wifi adapter to allow you to control playback etc. The RuneAudio GUI is exposed via a local website on your home network. This allows you to control it from any internet-enabled device with a browser. Also, RuneAudio is an [MPD Client](https://www.musicpd.org/). This is a common framework for playing music from a server. This means that, if you don't like the RuneAudio UI, you can choose from a variety of other MPD-enabled interfaces. eg on my laptop, I use a Windows app called [Chimney](https://www.microsoft.com/en-gb/store/p/chimney/9wzdncrfj6jx?silentauth=1&wa=wsignin1.0&activetab=pivot%3aoverviewtab) which provides a richer UX than the RuneAudio one. There are also players available as iOS, Android apps etc etc
+You'll also need a wifi adapter to allow you to control playback etc. The RuneAudio GUI is exposed via a local website on your home network. This allows you to control it from any internet-enabled device with a browser. Also, RuneAudio is an [MPD Client](https://www.musicpd.org/). This is a common framework for playing music from a server. This means that, if you don't like the RuneAudio UI, you can choose from a variety of other MPD-enabled interfaces. eg on my laptop, I use a Windows app called [Chimney](https://www.microsoft.com/en-gb/store/p/chimney/9wzdncrfj6jx?silentauth=1&wa=wsignin1.0&activetab=pivot%3aoverviewtab) which provides a richer UX than the RuneAudio one. There are also players available as iOS, Android apps etc etc. RuneAudio also provide an [Android app](https://play.google.com/store/apps/details?id=com.runeaudio&hl=en_GB) version of their UI.
 
-In terms of finishing, a case is good - HifiBerry do a custom one which accommodates Pi with the DAC attached: https://www.hifiberry.com/shop/cases/hifiberry-case-for-dac-rca-and-digi-black/
+In terms of finishing, a case is good - HifiBerry do a [custom one](https://www.hifiberry.com/shop/cases/hifiberry-case-for-dac-rca-and-digi-black/) which accommodates a Pi with DAC and RCA cables attached attached.
 
 Here is the finished item:
 ![image-title-here](https://raw.githubusercontent.com/julianjoseph/julianjoseph.github.io/master/images/raspberry-pi-hifi.jpg)
 
-As my hifi system diminishes over the years (good bye to turntable, cassette deck, minidisc player, CD player) - the Pi has become the heart of the system. Plus, its small size means that it can be hidden away behind the amp, so no need to accommodate another bulky separates component.
+As my hi-fi system diminishes over the years (good bye to: turntable, cassette deck, minidisc player, CD player) - the Pi has become the heart of the system. Plus, its small size means that it can be hidden away behind the amp, so no need to accommodate another bulky separates component.
 
