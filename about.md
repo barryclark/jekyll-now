@@ -10,6 +10,8 @@ Coming soon...
 
 Coming soon...
 
+[Training Courses](/training/courses)
+
 ### Contact me
 
 [jules@joseph-net.co.uk](mailto:jules@joseph-net.co.uk)
