@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Pi Hi Fi
+title: Pi Hi Fi - Using a Raspberry Pi as a Hi-Fi Component
 categories: blog
 comments: true
 published: false
 ---
 
-# Pi Hi Fi
+# Pi Hi Fi - Using a Raspberry Pi as a Hi-Fi Component
 
 **The Problem**
 
@@ -68,7 +68,7 @@ The other essential item is a DAC (Digital to Analogue Converter). Although the 
 
 RuneAudio is capable of streaming media from a network drive, but I wanted a totally wired connection, so I used a high capacity USB memory stick (128GB) plugged directly into the Pi with all my music collection on it. If you want to update your collection later, you can simply FTP files to the USB stick via the Pi.
 
-You'll also need a Pi wifi adapter to allow you to control playback etc. The RuneAudio GUI is exposed via a local website on your home network. This allows you to control it from any internet-enabled device with a browser. Also, RuneAudio is an [MPD Client](https://www.musicpd.org/). This is a common framework for playing music from a server. This means that, if you don't like the RuneAudio UI, you can choose from a variety of other MPD-enabled interfaces. eg on my laptop, I use a Windows app called [Chimney](https://www.microsoft.com/en-gb/store/p/chimney/9wzdncrfj6jx?silentauth=1&wa=wsignin1.0&activetab=pivot%3aoverviewtab) which provides a richer UX than the RuneAudio one. There are also players available as iOS, Android apps etc etc. RuneAudio provide an [Android app](https://play.google.com/store/apps/details?id=com.runeaudio&hl=en_GB) version of their UI.
+You'll also need a Pi wifi adapter to allow you to control playback etc. The RuneAudio GUI is exposed via a local website on your home network. This allows you to control it from any internet-enabled device with a browser. Also, RuneAudio uses [MPD (Music Player Daemon)](https://en.wikipedia.org/wiki/Music_Player_Daemon). This is a common framework for playing music from a server. This means that, if you don't like the RuneAudio UI, you can choose from a variety of other MPD-enabled interfaces. eg on my laptop, I use a Windows app called [Chimney](https://www.microsoft.com/en-gb/store/p/chimney/9wzdncrfj6jx?silentauth=1&wa=wsignin1.0&activetab=pivot%3aoverviewtab) which provides a richer UX than the RuneAudio one. There are also players available as iOS, Android apps etc etc. RuneAudio provide an [Android app](https://play.google.com/store/apps/details?id=com.runeaudio&hl=en_GB) version of their UI.
 
 In terms of finishing, a case is good - HifiBerry do a [custom one](https://www.hifiberry.com/shop/cases/hifiberry-case-for-dac-rca-and-digi-black/) which accommodates a Pi with DAC and RCA cables attached.
 
