@@ -67,3 +67,7 @@ RuneAudio is capable of streaming media from a network drive, but I wanted a tot
 You'll also need a wifi adapter to allow you to control playback etc. The RuneAudio GUI is exposed via a local website on your home network. This allows you to control it from any internet-enabled device with a browser. Also, RuneAudio is an [MPD Client](https://www.musicpd.org/). This is a common framework for playing music from a server. This means that, if you don't like the RuneAudio UI, you can choose from a variety of other MPD-enabled interfaces. eg on my laptop, I use a Windows app called [Chimney](https://www.microsoft.com/en-gb/store/p/chimney/9wzdncrfj6jx?silentauth=1&wa=wsignin1.0&activetab=pivot%3aoverviewtab) which provides a richer UX than the RuneAudio one. There are also players available as iOS, Android apps etc etc
 
 In terms of finishing, a case is good - HifiBerry do a custom one which accommodates Pi with the DAC attached: https://www.hifiberry.com/shop/cases/hifiberry-case-for-dac-rca-and-digi-black/
+
+Here is the finished item:
+![image-title-here](https://raw.githubusercontent.com/julianjoseph/julianjoseph.github.io/master/images/raspberry-pi-hifi.jpg{:class="img-responsive"}
+
