@@ -3,7 +3,7 @@ layout: post
 title: Pi Hi Fi - Using a Raspberry Pi as a Hi-Fi Component
 categories: blog
 comments: true
-published: false
+published: true
 ---
 
 # Pi Hi Fi - Using a Raspberry Pi as a Hi-Fi Component
