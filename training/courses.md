@@ -1,7 +1,7 @@
 ---
 layout: page
 title: courses
-permalink: /about/training/courses
+permalink: /training/courses
 ---
 
 Coming soon...
