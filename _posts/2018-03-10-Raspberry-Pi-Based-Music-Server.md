@@ -69,15 +69,15 @@ You'll also need a wifi adapter to allow you to control playback etc. The RuneAu
 In terms of finishing, a case is good - HifiBerry do a [custom one](https://www.hifiberry.com/shop/cases/hifiberry-case-for-dac-rca-and-digi-black/) which accommodates a Pi with DAC and RCA cables attached attached.
 
 Here is the finished item:
-![Raspberry Pi Hi-Fi](https://raw.githubusercontent.com/julianjoseph/julianjoseph.github.io/master/images/raspberry-pi-hifi.jpg)
+![Raspberry Pi Hi-Fi](https://github.com/JulianJoseph/julianjoseph.github.io/blob/master/images/raspberry-pi-hifi.jpg)
 
 As my hi-fi system diminishes over the years (good bye to: turntable, cassette deck, minidisc player, CD player) - the Pi has become the heart of the system. Plus, its small size means that it can be hidden away behind the amp, so no need to accommodate another bulky separates component.
 
-![Raspberry Pi Hi-Fi in action](https://raw.githubusercontent.com/julianjoseph/julianjoseph.github.io/master/images/raspberry-pi-hifi-in-action.jpg)
+![Raspberry Pi Hi-Fi in action](https://github.com/JulianJoseph/julianjoseph.github.io/blob/master/images/raspberry-pi-hifi-in-action.jpg)
 
-![RuneAudion Android App](https://raw.githubusercontent.com/julianjoseph/julianjoseph.github.io/master/images/RuneAudio-AndroidApp.jpg)
+![RuneAudion Android App](https://github.com/JulianJoseph/julianjoseph.github.io/blob/master/images/RuneAudio-AndroidApp.jpg)
 
-![Chimney Windows MPD Player](https://raw.githubusercontent.com/julianjoseph/julianjoseph.github.io/master/images/chimney-mpd-player.jpg)
+![Chimney Windows MPD Player](https://github.com/JulianJoseph/julianjoseph.github.io/blob/master/images/chimney-mpd-player.jpg)
 
 
 
