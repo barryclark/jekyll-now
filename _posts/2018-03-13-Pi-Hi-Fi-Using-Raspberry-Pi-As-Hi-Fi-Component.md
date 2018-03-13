@@ -76,7 +76,7 @@ Here is the finished item:
 
 As my hi-fi system diminishes over the years (good bye to: turntable, cassette deck, minidisc player, CD player) - the Pi has become the heart of the system. Plus, its small size means that it can be hidden away behind the amp, so no need to accommodate another bulky separates component!
 
-In action:
+In action (using the RuneAudio Browser UI):
 
 ![Raspberry Pi Hi-Fi in action](https://raw.githubusercontent.com/julianjoseph/julianjoseph.github.io/master/images/raspberry-pi-hifi-in-action.jpg)
 
