@@ -11,7 +11,15 @@ published: false
 **The Problem**
 I have a reasonably large collection of music files (about 80GB), which I keep on my laptop hard drive. I love the convenience of storing/playing music as files, and have been progressively ripping and mothballing my CD/Vinyl/Cassette collection over the years. 
 
-However, I am still quite old school in that I like to listen to my music through my 20 year old separates hifi. With a separates system, if you want to play CDs you get a CD player, vinyl - a turntable, etc - for music files - what?
+However, I am still quite old school in that I like to listen to my music through my 20 year old separates hifi system. Now, for all other music media formats, there has always been a readily available generic solution for the hifi separates system:
+
+* Vinyl = record player/turntable
+* Cassette = cassette deck
+* CD = CD player
+* MiniDisc = minidisc player
+* MP3 etc = er ....... who knows?
+
+To my knowledge, there has never been a straightforward plug and play option for adding a collection of music files to a hifi system.
 
 I've tried a number of solutions with varying degrees of success over the years, including:
 
@@ -22,7 +30,7 @@ I've tried a number of solutions with varying degrees of success over the years,
 
 There main problems with these approaches are:
 * Streaming dropouts - very annoying!
-* Having to use laptop to control music playback
+* Having to use a laptop to control music playback
 * Spotify is great, but has a lot of gaps in its catalogue
 
 **Requirements**
@@ -35,7 +43,7 @@ In summary:
 I searched for solutions online. There are a few components available which meet the above criteria, but they are all really expensive (eg [Brennan](http://www.brennan.co.uk/units) - around £500). The market has decided that streaming is the way forward!
 
 **The Solution**
-
+Of course, use a Raspberry Pi! A few Google searches revealed a host of ideas for turning a humble Pi into a hif music player.
 
 ***Ingredients***
 * 1 x Raspberry Pi (£32)
@@ -50,3 +58,10 @@ I searched for solutions online. There are a few components available which meet
 Total: £115
 
 ***Method***
+I won't go into too much detail as there are so many "how to" web pages that already cover this. But in summary, the heart of the system is the RuneAudio software available from their [website](http://www.runeaudio.com/). This is essentially a modified Linux OS which turns your Pi into a music player. 
+
+The other essential item is a DAC (Digital to Analogue Converter). Although the Pi has audio outputs, these are very low quality. The [HiFiBerry DAC+](https://www.hifiberry.com/products/dacplus/) plugs directly into your Pi motherboard, and provides RCA outputs for connection to an external amp.
+
+RuneAudio is capable of streaming media from a network drive, but I wanted a totally wired connection, so used a high capacity USB memory stick (128GB) plugged directly into the Pi with all my music collection on it. If you want to update your collection later, you can simply FTP files to the Pi.
+
+In terms of finishing, a case is good - HifiBerry do a custom one which accommodates Pi with the DAC attached: https://www.hifiberry.com/shop/cases/hifiberry-case-for-dac-rca-and-digi-black/
