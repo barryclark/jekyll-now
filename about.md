@@ -4,11 +4,11 @@ title: about
 permalink: /about/
 ---
 
-TBC
+Coming soon...
 
 ### More Information
 
-TBC
+Coming soon...
 
 ### Contact me
 
