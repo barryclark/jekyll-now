@@ -69,5 +69,5 @@ You'll also need a wifi adapter to allow you to control playback etc. The RuneAu
 In terms of finishing, a case is good - HifiBerry do a custom one which accommodates Pi with the DAC attached: https://www.hifiberry.com/shop/cases/hifiberry-case-for-dac-rca-and-digi-black/
 
 Here is the finished item:
-![image-title-here](https://raw.githubusercontent.com/julianjoseph/julianjoseph.github.io/master/images/raspberry-pi-hifi.jpg{:class="img-responsive"}
+![image-title-here](https://raw.githubusercontent.com/julianjoseph/julianjoseph.github.io/master/images/raspberry-pi-hifi.jpg){:class="img-responsive"}
 
