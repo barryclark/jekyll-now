@@ -1,5 +1,6 @@
 ---
 layout: default
+permalink: /CodeBreaker-Task-3/
 title: NSA Codebreaker 2017, Task 3
 ---
 
