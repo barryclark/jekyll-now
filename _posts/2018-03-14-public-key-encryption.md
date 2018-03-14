@@ -13,5 +13,11 @@ As is convention in cryptography, I will use 'Alice' and 'Bob' to reffer to the 
 
 --
 
-## Symmetric Key Encryption and the Key Distribution Problem
+## Symmetric Key Encryption
+
+Before 
+
+--
+
+## References
 
