@@ -10,7 +10,7 @@ You can see multiple references to pyrun, python, and modules that are provided 
 
 After the competition Kopohono on reddit gave the hint that the server can be treated as a zipfile and using python you can unzip and get the main code. This allowed me to open it up and see what it was trying to do. 
 
-![_config.yml]({{ site.baseurl }}/images/CodeBreaker/Task_6/extracted.png)
+![_config.yml]({{ site.baseurl }}/images/codeBreaker/Task_6/extracted.png)
 
 Uncompyle6 can be used to decompile python3.5 bytecode back to the source code. 
 {% highlight bash %}
@@ -20,7 +20,7 @@ uncompyle6 -ro ./pyserver_decomplied ./pyserver_pyc/
 
 The main function will extract extra data and xor it with the mtime of the python interpreter currently running, and then tries to import this as a zipped python module. The main function is ran using pyrun, meaning that the mtime is of the server file. A zip file's magic number is '50 4B 03 04', and since we know what it is encrypted as we can find out what the mtime should be. This will allows us to retrieve the zipfile that is being imported. 
 
-![_config.yml]({{ site.baseurl }}/images/CodeBreaker/Task_6/loader.png)
+![_config.yml]({{ site.baseurl }}/images/codeBreaker/Task_6/loader.png)
 
 The XOR formula is:  <br>
 (Plain Text) XOR (Extra Bytes) XOR (MTime) = (Encrypted Text) <br>
@@ -30,15 +30,15 @@ To get the MTime, the following can be done: <br>
 
 A epoch time converter such as [Epoch Converter](https://www.epochconverter.com/), can be used to find out the actual date and time from the hex. The system uses big endian, so the MTime is '38 6D 43 80', which represents GMT: Saturday, January 1, 2000 12:00:00 AM. There are two ways to retrieve the zip file, the first is to timestomp the server file and run it outside of docker. This will result in the zip file being stored in the /tmp directory, which can then be extracted. Another way is to use a program to XOR the encrypted zip for you, I used 010 Editor and XOR'd using (Extra Bytes) XOR (MTime) = '25 E6 C8 9D'. 
 
-![_config.yml]({{ site.baseurl }}/images/CodeBreaker/Task_6/decrypted_pyserver.png)
+![_config.yml]({{ site.baseurl }}/images/codeBreaker/Task_6/decrypted_pyserver.png)
 
 To run the server in the docker file 'RUN TZ=UTC touch -mt 200001010000.00 /usr/local/bin/server' needed to be added to DockerFile after server is copied to the container. 
 
-![_config.yml]({{ site.baseurl }}/images/CodeBreaker/Task_6/pyserver.png)
+![_config.yml]({{ site.baseurl }}/images/codeBreaker/Task_6/pyserver.png)
 
 Now that the server code is recovered we can start examining it to look for vulnerabilities. The server contains five routes needed for the operation of the bot net. 
 
-![_config.yml]({{ site.baseurl }}/images/CodeBreaker/Task_6/server_urls.png)
+![_config.yml]({{ site.baseurl }}/images/codeBreaker/Task_6/server_urls.png)
 
 Data that has been uploaded is written to a file called queue.XXXXXXXX.dat, where XXXXXXXX is an integer, in 4K chunks. These files will grow until 1GB, before another file is created. Both commands and upload data reside in the same file. 
 
@@ -46,11 +46,11 @@ The first thing I tried was to upload a command and told the server it was encod
 
 In the server config file there is a cookie that is retrieved with a hardcoded secret. This cookie tells the server if it should be return logs to the requester, but is only used in debugging mode. Debugging is hardcoded to false, but the code is left in. Bottle will automatically unpickle cookies that are signed (). Pickle is one method of getting remote code execution in python. This is most likely one step in our attack chain if we can get the program to check that cookie. 
 
-![_config.yml]({{ site.baseurl }}/images/CodeBreaker/Task_6/server_config.png)
+![_config.yml]({{ site.baseurl }}/images/codeBreaker/Task_6/server_config.png)
 
 Looking further into the code and what values can be controlled by the requester may give us more insight into the next step. When the server receives a request it will check the HTTP headers for 'X-CLIENT-ID' and store the value into the request.environ as 'HTTP_X_CLIENT_ID: value'. This value is used in the logger to build a string to pass to logging.formatter. This module will use that string to format output when debugging or an error happens. This allows the requester to change the format of the string passed to the formatter which can leak information, example can be found at [Careful with Str Format](http://lucumr.pocoo.org/2016/12/29/careful-with-str-format/). This might be useful, but currently we can not use it, since data is only returned to the user if debugging is enabled. 
 
-![_config.yml]({{ site.baseurl }}/images/CodeBreaker/Task_6/logger.png)
+![_config.yml]({{ site.baseurl }}/images/codeBreaker/Task_6/logger.png)
 
 The next thing I saw could be a possible vulnerability, depending on how the config file is written. The cmd_auth value is read from config.json file, if the value is a string then the cmd_auth can be gotten around relatively easy. When /new is requested, "HTTP_X_CLIENT_ID" is checked against cmd_auth in the following manner 'config.clientid in config.cmd_auth'. If cmd_auth is a string then the requester could iterate through all printable chars until this check was true. The following 's' in 'secret' will return true. This is fine if cmd_auth is a list and is probably not the exploit we want, but interesting. 
 
@@ -77,7 +77,7 @@ Use service.queue_worker.write <br>
 return (exec, ("import sys; sys.modules['pyserver.services'].__dict__['get_services']().queue_worker.write(b'test cookie 2')",))
 {% endhighlight %}
 
-![_config.yml]({{ site.baseurl }}/images/CodeBreaker/Task_6/python_code_breakout.png)
+![_config.yml]({{ site.baseurl }}/images/codeBreaker/Task_6/python_code_breakout.png)
 
 To test the exploit I can edit the servercfg file to call logging.critical() which will kick off the exploit. To get the server running place the pyserver folder into the extracted server code. Next comment out the line 54 'sys.meta_path.append(MetaImportFinder('pyserver'))' in loader.py. The exploit GET request can be sent using curl, which is used to make HTTP requests from the command line. 
 
@@ -86,11 +86,11 @@ Curl Command: <br>
 curl 127.0.0.1:9999/next -b 'return_log=!r2gZZc868QijVwEoj2kX7A==?gASViAAAAAAAAACMCGJ1aWx0aW5zlIwEZXhlY5STlIxsaW1wb3J0IHN5czsgc3lzLm1vZHVsZXNbJ3B5c2VydmVyLnNlcnZpY2VzJ10uX19kaWN0X19bJ2dldF9zZXJ2aWNlcyddKCkucXVldWVfd29ya2VyLndyaXRlKGIndGVzdCBjb29raWUgMicplIWUUpQu' -H 'X-CLIENT-ID: {args[0].return_log}'
 {% endhighlight %}
 
-![_config.yml]({{ site.baseurl }}/images/CodeBreaker/Task_6/exploit_test.png)
+![_config.yml]({{ site.baseurl }}/images/codeBreaker/Task_6/exploit_test.png)
 
 Opening the queue.00000000.dat file, the output from the test command can be seen. 
 
-![_config.yml]({{ site.baseurl }}/images/CodeBreaker/Task_6/queue_file.png)
+![_config.yml]({{ site.baseurl }}/images/codeBreaker/Task_6/queue_file.png)
 
 Our final steps are: <br>
 1. Find method to cause critical error <br>
