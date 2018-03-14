@@ -13,7 +13,7 @@ After the competition Kopohono on reddit gave the hint that the server can be tr
 ![_config.yml]({{ site.baseurl }}/images/CodeBreaker/Task_6/extracted.png)
 
 Uncompyle6 can be used to decompile python3.5 bytecode back to the source code. 
-{% highlight shell %}
+{% highlight bash %}
 pip install uncompyle6
 uncompyle6 -ro ./pyserver_decomplied ./pyserver_pyc/
 {% endhighlight %}
