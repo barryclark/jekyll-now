@@ -33,4 +33,5 @@ The traces of the deployment of the vulnerability you discovered was found on th
 # Task 6 - Craft an Exploit for the Botnet Server and Devise a Strategy to Clean the Infected Endpoints #
 I was not able to complete task 6 during the competition, but I have been working on it. In this task your team was able to find a server for sale online that matched the profile of the server currently being used by the botmaster. You must get it running, and then find a way to exploit it to queue a command to uninstall the botnet. 
 
-Writeup coming soon
+[Task 6 Part 1 Writeup](https://armerj.github.io/CodeBreaker-Task-6-Part-1)
+Part 2 Writeup coming soon
