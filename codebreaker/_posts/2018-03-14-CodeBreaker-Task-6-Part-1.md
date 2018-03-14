@@ -44,7 +44,7 @@ Data that has been uploaded is written to a file called queue.XXXXXXXX.dat, wher
 
 The first thing I tried was to upload a command and told the server it was encoded as gzip. The server doesn't check it, and just stores the data, but the files uploaded are marked with "0"*32 to indicate that this is data and not a command to be ran.
 
-In the server config file there is a cookie that is retrieved with a hardcoded secret. This cookie tells the server if it should be return logs to the requester, but is only used in debugging mode. Debugging is hardcoded to false, but the code is left in. Bottle will automatically unpickle cookies that are signed (). Pickle is one method of getting remote code execution in python. This is most likely one step in our attack chain if we can get the program to check that cookie. 
+In the server config file there is a cookie that is retrieved with a hardcoded secret. This cookie tells the server if it should be return logs to the requester, but is only used in debugging mode. Debugging is hardcoded to false, but the code is left in. Bottle will automatically unpickle cookies that are signed, ([Warning about signed cookies](https://bottlepy.org/docs/dev/api.html#the-request-object)). Pickle is one method of getting remote code execution in python. This is most likely one step in our attack chain if we can get the program to check that cookie. 
 
 ![_config.yml]({{ site.baseurl }}/images/Codebreaker/Task_6/server_config.png)
 
@@ -86,7 +86,7 @@ Curl Command: <br>
 curl 127.0.0.1:9999/next -b 'return_log=!r2gZZc868QijVwEoj2kX7A==?gASViAAAAAAAAACMCGJ1aWx0aW5zlIwEZXhlY5STlIxsaW1wb3J0IHN5czsgc3lzLm1vZHVsZXNbJ3B5c2VydmVyLnNlcnZpY2VzJ10uX19kaWN0X19bJ2dldF9zZXJ2aWNlcyddKCkucXVldWVfd29ya2VyLndyaXRlKGIndGVzdCBjb29raWUgMicplIWUUpQu' -H 'X-CLIENT-ID: {args[0].return_log}'
 {% endhighlight %}
 
-![_config.yml]({{ site.baseurl }}/images/Codebreaker/Task_6/exploit_test.png)
+![_config.yml]({{ site.baseurl }}/images/Codebreaker/Task_6/testing_exploit.png)
 
 Opening the queue.00000000.dat file, the output from the test command can be seen. 
 
