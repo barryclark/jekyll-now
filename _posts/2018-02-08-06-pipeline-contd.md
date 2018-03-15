@@ -2,7 +2,8 @@
 published: true
 ---
 # Building the full Data Pipeline - II
-In the [series](https://github.com/anuragsoni9/ProductionScale/blob/master/README.md), we previously talked about various components and how different stages fit together to form a data pipeline. This post first gives an introduction to the revolutionary *taskmaster* in our production environment - **Kubernetes** and then proceed to demonstrate step-by-step how to possibly implement a running data pipeline of Tyco Object Detection in Google Cloud. 
+
+>In the [series](https://github.com/anuragsoni9/ProductionScale/blob/master/README.md), we previously talked about various components and how different stages fit together to form a data pipeline. This post first gives an introduction to the revolutionary *taskmaster* in our production environment - **Kubernetes** and then proceed to demonstrate step-by-step how to possibly implement a running data pipeline of Tyco Object Detection in Google Cloud. 
 
 
 ## Kubernetes - Why?
