@@ -34,7 +34,7 @@ Journal club meetings currently take place on Mondays at 1:00 pm in seminar room
 - April 16: Breanna Jones
 - April 23: Sima Motakham
 - April 30: Josue Nassar
-- May 5: Yanliang Shi
+- May 7: Yanliang Shi
 
 
 
