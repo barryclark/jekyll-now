@@ -1,0 +1,92 @@
+<footer class="footer">
+
+  <div class="social-media-icons">
+    {% if site.footer-links.dribbble %}
+    <a href="https://dribbble.com/{{ site.footer-links.dribbble }}">
+      <img class="svg-icon dribbble" />
+    </a>
+    {% endif %}
+
+    {% if site.footer-links.email %}
+    <a href="mailto:{{ site.footer-links.email }}">
+        <img class="svg-icon email" />
+      </a>
+    {% endif %}
+
+    {% if site.footer-links.facebook %}
+    <a href="https://www.facebook.com/{{ site.footer-links.facebook }}">
+      <img class="svg-icon facebook" />
+    </a>
+    {% endif %}
+
+    {% if site.footer-links.flickr %}
+    <a href="https://www.flickr.com/{{ site.footer-links.flickr }}">
+      <img class="svg-icon flickr" />
+    </a>
+    {% endif %}
+
+    {% if site.footer-links.github %}
+    <a href="https://github.com/{{ site.footer-links.github }}">
+      <img class="svg-icon github" />
+    </a>
+    {% endif %}
+
+    {% if site.footer-links.instagram %}
+    <a href="https://instagram.com/{{ site.footer-links.instagram }}">
+      <img class="svg-icon instagram" />
+    </a>
+    {% endif %}
+
+    {% if site.footer-links.linkedin %}
+    <a href="https://www.linkedin.com/in/{{ site.footer-links.linkedin }}">
+      <img class="svg-icon linkedin" />
+    </a>
+    {% endif %}
+
+    {% if site.footer-links.pinterest %}
+    <a href="https://www.pinterest.com/{{ site.footer-links.pinterest }}">
+      <img class="svg-icon pinterest" />
+    </a>
+    {% endif %}
+
+    {% if site.footer-links.rss %}
+    <a href="{{ site.baseurl }}/feed.xml">
+      <img class="svg-icon rss" />
+    </a>
+    {% endif %}
+
+    {% if site.footer-links.twitter %}
+    <a href="https://www.twitter.com/{{ site.footer-links.twitter }}">
+      <img class="svg-icon twitter" />
+    </a>
+    {% endif %}
+
+    {% if site.footer-links.stackoverflow %}
+    <a href="http://stackoverflow.com/{{ site.footer-links.stackoverflow }}">
+      <img class="svg-icon stackoverflow" />
+    </a>
+    {% endif %}
+
+    {% if site.footer-links.youtube %}
+    <a href="https://youtube.com/{{ site.footer-links.youtube }}">
+      <img class="svg-icon youtube" />
+    </a>
+    {% endif %}
+
+    {% if site.footer-links.googleplus %}
+    <a href="https://plus.google.com/{{ site.footer-links.googleplus }}">
+      <img class="svg-icon googleplus" />
+    </a>
+    {% endif %}
+
+    <a href="http://www.humboldt-gym.de/">
+      <img src="{{site.baseurl}}/images/hgv-logo-small.png" />
+    </a>
+  </div>
+
+  <nav>
+    <a href="/impressum/">Impressum</a>
+    <a href="/datenschutzerklaerung/">Datenschutzerklärung</a>
+  </nav>
+
+</footer>

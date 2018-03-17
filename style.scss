@@ -91,7 +91,7 @@ a {
     color: $apoapsis-lightblue;
   }
 
-  i, img {
+  img {
     &:hover {
       opacity: .4;
     }
@@ -342,6 +342,11 @@ blockquote {
 footer {
   padding: 20px 0;
   text-align: center;
+}
+
+.social-media-icons img {
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .4);
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
