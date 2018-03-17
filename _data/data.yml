@@ -54,6 +54,14 @@
   location_gr: Αθήνα, Αττική, Ελλάδα
   location_en: Athens, Attica, Greece
 
+- company_gr: Feel Your Home
+  company_en: Feel Your Home
+  url: http://feelyourhome.gr
+  category_gr: Είδη σπιτού
+  category_en: Household items
+  location_gr: Αθήνα, Αττική, Ελλάδα
+  location_en: Athens, Attica, Greece
+
 - company_gr: Omega Gaming Center
   company_en: Omega Gaming Center
   url: http://www.ogamingcenter.com
@@ -99,6 +107,14 @@
   url: https://www.northwind.gr/
   category_gr: Ανάκτηση δεδομένων
   category_en: Data recovery
+  location_gr: Θεσσαλονίκη, Μακεδονία, Ελλάδα και Αθήνα, Αττική, Ελλάδα
+  location_en: Thessaloniki, Macedonia, Greece and Athens, Attica, Greece
+
+- company_gr: Ratio Legal Services
+  company_en: Ratio Legal Services
+  url: https://www.ratio-law.com
+  category_gr: Δικηγορικό γραφείο
+  category_en: Legal Services
   location_gr: Θεσσαλονίκη, Μακεδονία, Ελλάδα
   location_en: Thessaloniki, Macedonia, Greece
 
@@ -141,6 +157,14 @@
   category_en: Women's clothes
   location_gr: Αθήνα, Αττική, Ελλάδα
   location_en: Athens, Attica, Greece
+
+- company_gr: Χιώτης
+  company_en: Hiotis
+  url: https://www.fireshop.gr
+  category_gr: Είδη πυρόσβεσης
+  category_en: Fire extinguishers
+  location_gr: Νέα Ιωνία, Αττική, Ελλάδα
+  location_en: Nea Ionia, Attica, Greece
   
 - company_gr: Μικροβιολογικό Ιατρείο Πέγκλης Ευάγγελος
   company_en: Clinical laboratory Pegklis Evangelos
@@ -557,6 +581,14 @@
   category_en: Computer eshop
   location_gr: Ιωάννινα, Ήπειρος, Ελλάδα
   location_en: Ioannina, Epirus, Greece
+
+- company_gr: Δημήτριος Νταρας
+  company_en: Dimitrios Ntaras
+  url: http://ntaras.gr
+  category_gr: Φωτογράφια και βιντεοσκόπηση
+  category_en: Photography and videography
+  location_gr: Ιωάννινα, Ήπειρος, Ελλάδα
+  location_en: Ioannina, Epirus, Greece
   
 - company_gr: Uniphone
   company_en: Uniphone
@@ -726,6 +758,22 @@
   location_gr: Σέρρες, Μακεδονία, Ελλάδα
   location_en: Serres, Macedonia, Greece
 
+- company_gr: SafeWallet
+  company_en: SafeWallet
+  url: https://safewallet.gr
+  category_gr: Πορτοφόλια με προστασία RFID
+  category_en: RFID-safe wallets
+  location_gr: Βέροια, Μακεδονία, Ελλάδα
+  location_en: Veria, Macedonia, Greece
+
+- company_gr: Κοσμοδιαχείριση Σαπλατέρα Βασιλική
+  company_en: Kosmodiahirisi Saplatera Vasiliki
+  url: https://www.facebook.com/saplatera.vasiliki
+  category_gr: Διαχείριση κοινοχρήστων
+  category_en: Building management
+  location_gr: Κιλκίς, Μακεδονία, Ελλάδα
+  location_en: Kilkis, Macedonia, Greece
+
 - company_gr: Aqua Mare
   company_en: Aqua Mare
   url: http://aquamarefishspa.com
@@ -755,6 +803,14 @@
   url: https://www.klosti.com/
   category_gr: Είδη δώρων
   category_en: Gift shop
+  location_gr: Online, Ελλάδα
+  location_en: Online, Greece
+
+- company_gr: SNIF
+  company_en: SNIF
+  url: https://www.snif.gr/
+  category_gr: Ευρετήριο ιστοτόπων
+  category_en: Web directory
   location_gr: Online, Ελλάδα
   location_en: Online, Greece
 
