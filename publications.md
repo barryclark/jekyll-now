@@ -6,8 +6,8 @@ permalink: /publications/
 
 ### Single-case research and behavioral observation
 
-* Pustejovsky, J.E. (2018). Using response ratios for meta-analyzing single-case designs with behavioral outcomes. _Journal of School Psychology_, forthcoming. 
-[Preprint](https://osf.io/4fe6u/) [Supporting materials](https://osf.io/c3fe9/)
+* Pustejovsky, J.E. (2018). [Using response ratios for meta-analyzing single-case designs with behavioral outcomes.](https://doi.org/10.1016/j.jsp.2018.02.003) _Journal of School Psychology, 16_, 99-112. 
+[Preprint](https://psyarxiv.com/nj28d/) [Supporting materials](https://osf.io/c3fe9/)
 * Pustejovsky, J.E. (2018). Procedural sensitivities of effect sizes for single-case designs with behavioral outcome measures. _Psychological Methods_, forthcoming. [Preprint](https://psyarxiv.com/vxa86). [Supporting materials](https://osf.io/hkzsm/)
 * Maggin, D. M., Lane, K. L., & Pustejovsky, J. E. (2017). [Introduction to the special issue on single-case systematic reviews and meta-analysis](http://dx.doi.org/10.1177/0741932517717043). _Remedial and Special Education, 38_(6), 323-330.
 * Common, E. A., Lane, K. L., Pustejovsky, J. E., Johnson, A. H., & Johl, L. E. (2017). [Functional assessment-based interventions for students with or at-risk for high incidence disabilities: Field-testing single-case synthesis methods](http://dx.doi.org/10.1177/0741932517693320). _Remedial and Special Education, 38_(6), 331-352.
