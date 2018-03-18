@@ -5,6 +5,7 @@ description: “Data Scientist”
 baseurl: ""
 url: "https://anuragsoni9.github.io"
 github_username:  anuragsoni9
+twitter_username: anurag___soni
 
 # Build settings
 markdown: kramdown
