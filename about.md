@@ -4,6 +4,7 @@ title: About
 permalink: /about/
 ---
 
+![](https://avatars0.githubusercontent.com/u/31220236?s=460&v=4)
 Hello My name is Anurag Soni.
 
 
