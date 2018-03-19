@@ -12,8 +12,8 @@ Our final steps are:<br>
 The instructions for task 6 stated that a message needs to be sent using the MQTT topic found in task 5. The code to handle a MQTT message for the bot.so can be found in the function module\_handle_message. This function checks that the message is meant for the botnet and then calls incoming() to handle the message. 
 
 Each bot is setup to listen for 3 messages:<br>
-nodes-15411B7B, used to upload files to server, bot must already have bridge enabled<br>
-nodes-0E53325B, this is a broadcast topic for all bots<br>
+nodes-15411b7b, used to upload files to server, bot must already have bridge enabled<br>
+nodes-0e53325b, this is a broadcast topic for all bots<br>
 nodes-XXXXXXXX, where XXXXXXXX is a unique identifier for that bot<br>
 
 [bot_incoming_flow]
@@ -110,7 +110,20 @@ To test the exploit on the server through the bridge, the server needs to be ran
 
 I made my own dockerfile containing:
 {% highlight bash %}
+FROM python:3.5
 
+RUN dpkg --add-architecture i386 && apt-get -qy update && apt-get -qy install libc6:i386 nginx-extras ssl-cert && rm -rf /var/lib/apt/lists/* 
+
+RUN pip install bottle
+
+COPY nginx.conf /etc/nginx/nginx.conf
+COPY nginx_site_default.cfg /etc/nginx/conf.d/default.conf
+
+EXPOSE 80
+EXPOSE 443
+
+COPY unzip /server/
+CMD nginx; python3.5 /server/__main__.py
 {% endhighlight %}
 
 The server was then built and ran with the same commands to build/run the server executable provided. 
