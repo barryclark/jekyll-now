@@ -6,9 +6,9 @@ title: NSA Codebreaker 2017, Task 5
 
 For this task you were given a memory capture from one of the MQTT controllers. You needed to identify the PID of the malicious process, the attacker's MQTT topic, and the attacker's C2 HTTP server. The server could change IP address so you had to find some other identifying information. Below is a template of the commands I ran, X is which command to run. 
 
-```
+{% highlight bash %}
 volatility --plugins=/usr/share/volatility/profiles --profile=Linux3_13_0-128-generic-volatilityx64 -f /root/Desktop/codebreaker/agent.lime X
-```
+{% endhighlight %}
 
 I used volatility with the image profile they provided to explore the memory capture. My first step was to run linux_netstat to get the current connections. From this I saw a PID connecting out to a HTTP server. A connection was being made to IP 10.134.97.12 on port 80, by PID 1545. 
 
