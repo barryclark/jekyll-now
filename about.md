@@ -19,3 +19,7 @@ I hold a Masters in Computer Science from the University of Cambridge (King’s 
 ### Contact me
 
 [Tweet me @oicheryl](https://twitter.com/oicheryl) for speaking engagements, work opportunities, new projects etc.
+
+### Source code
+
+The source code for this blog is available at [Github](https://github.com/oicheryl/oicheryl.github.io).
