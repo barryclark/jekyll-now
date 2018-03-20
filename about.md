@@ -10,11 +10,9 @@ I founded the [Cloud Native London meetup](https://www.meetup.com/Cloud-Native-L
 
 ## Background
 
-I spent five years at Google writing C++ on teams across Google Maps, and lived in London and New York.
+I spent five years at Google writing C++ on Google Maps in London and New York. [Download my resume.](http://www.oicheryl.com/resources/CherylHung-CV.pdf)
 
-I hold a Masters in Computer Science from the University of Cambridge (King’s College). My final year dissertation was on [Gesture controlled robotics using the Vicon motion capture system](https://github.com/oicheryl/cambridge/blob/master/documentation/dissertation/cjh84.pdf)
-
-[Download my resume.](http://www.oicheryl.com/resources/CherylHung-CV.pdf)
+I hold a Masters in Computer Science from the University of Cambridge (King’s College). My final year dissertation was on [Gesture controlled robotics using the Vicon motion capture system](https://github.com/oicheryl/cambridge/blob/master/documentation/dissertation/cjh84.pdf).
 
 [Tweet me](https://twitter.com/oicheryl) for speaking engagements, work opportunities, new projects etc.
 
