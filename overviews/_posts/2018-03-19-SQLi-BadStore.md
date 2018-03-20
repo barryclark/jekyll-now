@@ -53,7 +53,7 @@ Each of the following returns information about a user. <br>
 
 ![_config.yml]({{ site.baseurl }}/images/Codebreaker/sqli_badstore/user_information.png)
 
-[The way databases log in here]
+The site will log in a user by querying the database for a username and password. If this query returns successfully then the username in the first row is used to log in the user. It doesn't matter how many rows are returned, aslong as there is one. This is why we making this query return true, will let us login to the site. 
 
 Now we have a list of user names, emails and password hashes for BadStore. In the login page we can inject "admin' #", this sets the username as admin and comments out the password check. 
 
@@ -94,7 +94,7 @@ There is a secret admin portal referenced in the code.
 
 The layout of the cookie can be found here, along with the fact it checks the cookie to see if user is an admin. This information could be used to manipulate the cookie to get access to things you are supposed to be able to .<br><br>
 Errors logs: <br>
-h2("Recent Apache Error Log"),p,hr, \`tail /usr/local/apache/logs/error_log` <br><br>
+h2("Recent Apache Error Log"),p,hr, \`tail /usr/local/apache/logs/error_log\` <br><br>
 Location of backup database: <br>
 prepare( "SELECT * FROM orderdb INTO OUTFILE '/usr/local/apache/htdocs/backup/orderdb.bak'") <br><br>
 Other table names: <br>
@@ -113,10 +113,6 @@ The database can also be dumped using "mysqldump -h 192.168.126.135 -u root -p b
 
 If using a MySQL client version that is after 5.02 you may get the error "mysqldump: Error: 'Table 'INFORMATION\_SCHEMA.FILES' doesn't exist' when trying to dump tablespaces". This is fine, its just looking for INFORMATION_SCHEMA, but it still dumps the database. 
 The database dump will give us all the tables and columns in the database, along with any information stored in them. 
-There are also Metaexploit modules that can be useful when trying to get into a database server. 
-
-[Metaexploit]
-![_config.yml]({{ site.baseurl }}/images/Codebreaker/sqli_badstore/error_message.png)
 
 BadStore allows the user to upload files to the server from the supplier page. If this wasn't available, then the MySQL function outfile could be used. This function can be used to write a field from a column into a file on the webserver. 
 From the MySQL console we can issue the following commands: <br>
@@ -126,21 +122,14 @@ SELECT code into outfile '/usr/local/apache/cgi-bin/test.html' from badstoredb.e
 
 ![_config.yml]({{ site.baseurl }}/images/Codebreaker/sqli_badstore/uploading_file.png)
 
+When there is a SQLi vulnerablility in a website, there is usually alot more the attacker can do than just login. Below are some of the things we did: <br>
+- I was able to log in as every user without knowing their name <br>
+- Uploaded files <br>
+- Read files on server <br>
+- Dumped database <br>
+- Viewed senstive information <br>
 
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Things we could still do: <br>
+- Execute system commands <br>
+- DROP database, for DOS <br>
+- Insert/Update records <br>
