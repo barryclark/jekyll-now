@@ -3,7 +3,7 @@ layout: post
 title: BadStore SQLi Writeup
 ---
 
-A little while ago I went through a security course, and we were testing SQLi on BadStore.net. BadStore.net is a website created to test common web attacks on. I enjoyed practicing on it, and wanted to do a write of some of the things you can do a SQLi vulnerablility. 
+A little while ago I went through a security course, and we were testing SQLi on BadStore.net. [BadStore.net](https://www.vulnhub.com/entry/badstore-123,41/) is a website created to test common web attacks on. I enjoyed practicing on it, and wanted to do a write of some of the things you can do a SQLi vulnerablility. 
 
 I used single quote to test different fields for SQL injection vulnerability. This caused an error telling me the query had invalid syntax, and that the database was MySQL. 
 
