@@ -9,7 +9,7 @@ I used single quote to test different fields for SQL injection vulnerability. Th
 
 ![_config.yml]({{ site.baseurl }}/images/sqli_badstore/error_message.png)
 
-Since this is a practice website it gives you the query, `SELECT itemnum, sdesc, ldesc, price FROM itemdb WHERE '<user input>' IN (itemnum,sdesc,ldesc)` To get all the items in the store the string "1'='1' #" can be used. This will create a true statement for the where clause, and comment the rest of the statement out. You can tell this returned everything, because there is a test item. 
+Since this is a practice website it gives you the query, "SELECT itemnum, sdesc, ldesc, price FROM itemdb WHERE '<user input>' IN (itemnum,sdesc,ldesc)" To get all the items in the store the string "1'='1' #" can be used. This will create a true statement for the where clause, and comment the rest of the statement out. You can tell this returned everything, because there is a test item. 
 
 ![_config.yml]({{ site.baseurl }}/images/sqli_badstore/all_items.png)
 
@@ -46,7 +46,7 @@ Some of the special charaters encoded are: <br>
 , = %2C <br>
 \# = %23 <br>
 / = %2F <br> 
-+ = space <br>
+\+ = space <br>
 
 There is a table called userdb, but we need to find the column names so we can start dumping information. One way to find possible names for the columns is through the tags in the html. If we open the source for the login page and search for "INPUT TYPE", there are tags for "email", "fullname", "passwd", and "pwdhint". These can be used to start testing for column names. 
 
@@ -122,7 +122,7 @@ If using a MySQL client version that is after 5.02 you may get the error "mysqld
 The database dump will give us all the tables and columns in the database, along with any information stored in them. 
 
 BadStore allows the user to upload files to the server from the supplier page. If this wasn't available, then the MySQL function outfile could be used. This function can be used to write a field from a column into a file on the webserver. 
-From the MySQL console we can issue the following commands: <br>
+From the MySQL console we can issue the following commands: <br><br>
 CREATE TABLE badstoredb.\`exploit\` ( \`code\` varchar(256)); <br> 
 INSERT INTO badstoredb.exploit VALUES ('test exploit'); <br>
 SELECT code into outfile '/usr/local/apache/cgi-bin/test.html' from badstoredb.exploit; <br> 
@@ -130,13 +130,13 @@ SELECT code into outfile '/usr/local/apache/cgi-bin/test.html' from badstoredb.e
 ![_config.yml]({{ site.baseurl }}/images/sqli_badstore/uploading_file.png)
 
 When there is a SQLi vulnerablility in a website, there is usually alot more the attacker can do than just login. Below are some of the things we did: <br>
-- I was able to log in as every user without knowing their name <br>
+- Log in as every user without knowing their name <br>
 - Uploaded files <br>
 - Read files on server <br>
-- Dumped database <br>
-- Viewed senstive information <br>
+- Dump database <br>
+- View senstive information <br>
 
 Things we could still do: <br>
 - Execute system commands <br>
-- DROP database, for DOS <br>
+- DROP database, for DoS <br>
 - Insert/Update records <br>
