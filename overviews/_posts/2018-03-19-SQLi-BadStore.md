@@ -50,7 +50,7 @@ Some of the special charaters encoded are: <br>
 
 There is a table called userdb, but we need to find the column names so we can start dumping information. One way to find possible names for the columns is through the tags in the html. If we open the source for the login page and search for "INPUT TYPE", there are tags for "email", "fullname", "passwd", and "pwdhint". These can be used to start testing for column names. 
 
-![_config.yml]({{ site.baseurl }}/images/sqli_badstore/html_tags.png)
+![_config.yml]({{ site.baseurl }}/images/sqli_badstore/html_tags.png) 
 
 Each of the following returns information about a user. <br>
 1'='0' UNION SELECT email, 1, 1, 1 from userdb # <br>
