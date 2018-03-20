@@ -8,7 +8,7 @@ I’m an ex-Google software engineer, now product and engineering manager at Sto
 
 I founded the [Cloud Native London meetup](https://www.meetup.com/Cloud-Native-London/), the official Cloud Native Computing Foundation (CNCF) meetup group. It's dedicated to building a strong, open, diverse developer community around the Cloud Native platform and technologies in London.
 
-## More information
+## Background
 
 I spent five years at Google writing C++ on teams across Google Maps, and lived in London and New York.
 
@@ -16,10 +16,8 @@ I hold a Masters in Computer Science from the University of Cambridge (King’s 
 
 [Download my resume.](http://www.oicheryl.com/resources/CherylHung-CV.pdf)
 
-### Contact me
-
-[Tweet me @oicheryl](https://twitter.com/oicheryl) for speaking engagements, work opportunities, new projects etc.
+[Tweet me](https://twitter.com/oicheryl) for speaking engagements, work opportunities, new projects etc.
 
 ### Source code
 
-The source code for this blog is available at [Github](https://github.com/oicheryl/oicheryl.github.io).
+The source code for this blog is [available on Github](https://github.com/oicheryl/oicheryl.github.io).
