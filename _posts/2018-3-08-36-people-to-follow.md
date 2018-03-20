@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Mar 2018] 36 people in container tech you should be following"
+title: "[Article] [Mar 2018] 36 people in container tech you should be following"
 ---
 
 ![Cheryl Hung](https://cdn-images-1.medium.com/max/1600/1*RR2CCmq2zcIGXnzI6eDhYg.jpeg)
