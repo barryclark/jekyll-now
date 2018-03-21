@@ -78,6 +78,7 @@ gems:
   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
 
 # Exclude these files from your production _site
+# force build
 exclude:
   - Gemfile
   - Gemfile.lock
