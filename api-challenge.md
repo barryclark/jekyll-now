@@ -24,7 +24,6 @@ A place to include any other types of information that you'd like to include abo
 ### Let's Get To Work!
 
 ```html
-<!DOCTYPE html>
 <html>
 <head>
 <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
@@ -62,8 +61,8 @@ A place to include any other types of information that you'd like to include abo
 
 </body>
 </html>
-<!-- ```
-
+```
+<!-- 
 function getTweets(nextToken, callback) {
 
     var oauth2 = new OAuth.OAuth2(
