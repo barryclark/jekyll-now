@@ -32,7 +32,7 @@ A place to include any other types of information that you'd like to include abo
     </form>
     <div id="results"></div>
 </div>
-<script id="results-template" type="text/x-handlebars-template">
+<script id="results-template" type="text/x-handlebars-template" src="test.js">
     {{#each albums.items}}
     <div style="background-image:url({{images.0.url}})" data-album-id="{{id}}" class="cover"></div>
     {{/each}}
