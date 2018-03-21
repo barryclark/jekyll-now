@@ -22,8 +22,7 @@ Use the JSON language to find the Spotify song!
 A place to include any other types of information that you'd like to include about yourself.
 
 ### Let's Get To Work!
-<script async src="//jsfiddle.net/JMPerez/0u0v7e1b/embed/"></script>
-<!-- 
+
 <div class="container">
     <h1>Search for an Artist</h1>
     <p>Type an artist name and click on "Search". Then, click on any album from the results to play 30 seconds of its first track.</p>
@@ -37,7 +36,7 @@ A place to include any other types of information that you'd like to include abo
     {{#each albums.items}}
     <div style="background-image:url({{images.0.url}})" data-album-id="{{id}}" class="cover"></div>
     {{/each}}
-</script> -->
+</script>
 
 <!-- 
 function getTweets(nextToken, callback) {
