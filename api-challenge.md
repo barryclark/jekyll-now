@@ -22,3 +22,5 @@ Use the JSON language to find the Spotify song!
 A place to include any other types of information that you'd like to include about yourself.
 
 ### Let's Get To Work!
+
+<a href="http://localhost:8888/" target="_blank">Connect</a>
