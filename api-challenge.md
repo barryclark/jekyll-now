@@ -23,45 +23,21 @@ A place to include any other types of information that you'd like to include abo
 
 ### Let's Get To Work!
 
-```html
-<html>
-<head>
-<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <meta charset="utf-8">
-  <title>API Weather Query</title>
-  <script>
-
-  function getSurfReport() {
-
-// use AJAX to avoid CORS restrictions in API calls.
- var output = $.ajax({
-    url: 'https://simple-weather.p.mashape.com/surfreport/123?units=imperial&days=1&time=1433772000',
-    type: 'GET',
-    data: {},
-    dataType: 'json',
-    success: function(data) {
-        //Here we pull out the recommendation from the JSON object.
-        //To see the whole object, you can output it to your browser console using console.log(data);
-        document.getElementById("output").innerHTML = data.surfreport[0].monday.2pm.recommendation;
-        },
-    error: function(err) { alert(err); },
-    beforeSend: function(xhr) {
-    xhr.setRequestHeader("X-Mashape-Authorization", "WOyzMuE8c9mshcofZaBke3kw7lMtp1HjVGAjsndqIPbU9n2eET"); // Enter here your Mashape key
-    }
-});
-
-}
-
+<div class="container">
+    <h1>Search for an Artist</h1>
+    <p>Type an artist name and click on "Search". Then, click on any album from the results to play 30 seconds of its first track.</p>
+    <form id="search-form">
+        <input type="text" id="query" value="" class="form-control" placeholder="Type an Artist Name"/>
+        <input type="submit" id="search" class="btn btn-primary" value="Search" />
+    </form>
+    <div id="results"></div>
+</div>
+<script id="results-template" type="text/x-handlebars-template">
+    {{#each albums.items}}
+    <div style="background-image:url({{images.0.url}})" data-album-id="{{id}}" class="cover"></div>
+    {{/each}}
 </script>
-</head>
-<body>
 
-  <button onclick="getSurfReport()">See the surfing recommendation</button>
-  <div id="output"></div>
-
-</body>
-</html>
-```
 <!-- 
 function getTweets(nextToken, callback) {
 
