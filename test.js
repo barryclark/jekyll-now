@@ -6,6 +6,8 @@ var templateSource = document.getElementById('results-template').innerHTML,
     audioObject = null;
 
 var fetchTracks = function (albumId, callback) {
+
+    console.log('fetching tracks');
     
     //Javascript
     $.get("https://api.spotify.com/v1/search?q=track%3Anumb+artist%3Alinkin+park&type=track",
