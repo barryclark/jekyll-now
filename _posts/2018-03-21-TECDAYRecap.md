@@ -6,7 +6,7 @@ category: dev
 tags: [culture]
 author: Scott Speights
 author_email: scott.speights@haufe-lexware.com
-header-img: "../images/TEC-Day-2018/TECDay-BlastOff.jpg
+header-img: "images/TEC-Day-2018/TECDay-BlastOff.jpg
 ---
 
 # The general feeling about TEC
@@ -57,6 +57,6 @@ If you didn't make it, be sure to check out the talks from both the day and the 
 
 Great talks, incredible conversations, superlative networking, the t-shirts were the coolest, and lots of food for thought about technology, mindset and culture in the computing profession. Perhaps most importantly, I would say everyone who attended is better prepared to –
 
-![Be True to yourself.](../images/TECDay-2018/UweChoices.JPG)
+![Be True to yourself.](../images/TECDay-2018/UWEChoices.JPG)
 
 Looking forward to seeing you at TEC Day 2019.
