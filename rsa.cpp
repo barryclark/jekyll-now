@@ -40,30 +40,45 @@ int main(int argc, char * argv[]) {
 
     /////////////////////////////////////////////////////////
 
-    string message, recovered;
+    char *message, *recovered;
+    Integer *cipherarray;
     Integer m, c, r;
 
-    message = "secret";
+    message = "secret"; // secret is of length 6 
     cout << "message: " << message << endl;
+    
+    cipherarray = new Integer[6];
+    recovered = new char[6];
+    
+    // Encrypt
+    for(int i = 0; i < 6; i++) {
+        m = Integer((message[i], sizeof char);
+        cout << "m" << i << ": " << hex << m << endl;        
+
+        c = pubKey.ApplyFunction(m);
+        cout << "c" << i << ": " << hex << c << endl;
+        
+        cipherarray[i] = c;
+    }
 
     // Treat the message as a big endian array
-    m = Integer((const byte *)message.data(), message.size());
-    cout << "m: " << hex << m << endl;
-
-    // Encrypt
-    c = pubKey.ApplyFunction(m);
-    cout << "c: " << hex << c << endl;
-
+    //m = Integer((const byte *)message.data(), message.size());
+    
     // Decrypt
-    r = privKey.CalculateInverse(prng, c);
-    cout << "r: " << hex << r << endl;
+    for(int i = 0; i < 6; i++) {
+        c = cipherarray[i];
+        
+        r = privKey.CalculateInverse(prng, c);
+        cout << "r" << i << ": " << hex << r << endl;
+        recovered[i] = (char)r.ConvertToLong();
+    }
 
     // Round trip the message
-    size_t req = r.MinEncodedSize();
-    recovered.resize(req);
-    r.Encode((byte *)recovered.data(), recovered.size());
+//    size_t req = r.MinEncodedSize();
+//    recovered.resize(req);
+//    r.Encode((byte *)recovered.data(), recovered.size());
 
-    cout << "recovered: " << recovered << endl;	
+    cout << "recovered: " << recovered << endl;
 
     return 0;
 }
