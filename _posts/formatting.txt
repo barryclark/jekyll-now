@@ -1,0 +1,8 @@
+You need three lines seperating this layout text from your post text.
+---
+layout: post <--this will tell the file to use the post.html layout
+title: This will be the title of the blog post
+<there are other things that can go here like category:, external link:, ect.>
+---
+
+Add your blogs down here.
