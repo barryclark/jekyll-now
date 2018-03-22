@@ -1,4 +1,4 @@
-// 03/21/2018 10:09
+// 03/21/2018 10:19
 
 #include <iostream>
 #include <iomanip>
@@ -31,13 +31,37 @@ bool load_key(char *filename) {
             
             if(count == 0) {
                 n = Integer(chararray);
+                
+                cout << "n" << endl;
+                cout << hex << n << endl;
+                cout << "line" << endl;
+                cout << line << endl;
+                cout << "chararray" << endl;
+                cout << chararray << endl << endl;
+                
             } else if(count == 1) {
                 e = Integer(chararray);
+                
+                cout << "e" << endl;
+                cout << hex << e << endl;
+                cout << "line" << endl;
+                cout << line << endl;
+                cout << "chararray" << endl;
+                cout << chararray << endl << endl;
+                
             } else if(count == 2) {
                 d = Integer(chararray);
+                
+                cout << "d" << endl;
+                cout << hex << d << endl;
+                cout << "line" << endl;
+                cout << line << endl;
+                cout << "chararray" << endl;
+                cout << chararray << endl << endl;
+                
             } else {
                 infile.close();
-                return; // shouldn't get this far...
+                return true; // shouldn't get this far...
             }
 
             count++;
@@ -51,41 +75,54 @@ bool load_key(char *filename) {
     return true;
 }
 
-void encrypt(char *plaintext, Integer *ciphertext, streampos file_size) {
+bool encrypt(char *plaintext, Integer *ciphertext, streampos file_size) {
     RSA::PublicKey pubKey;
     pubKey.Initialize(n, e);
     
     if(pubKey.Validate(prng, 3)) {
-    Integer m, c;
-    
-    for(int i = 0; i < file_size; i++) {
-        m = Integer((long)plaintext[i]);
-        cout << "m" << i << ": " << hex << m << endl;
+        Integer m, c;
 
-        c = pubKey.ApplyFunction(m);
-        cout << "c" << i << ": " << hex << c << endl;
-        
-        ciphertext[i] = c;
-    }
+        for(int i = 0; i < file_size; i++) {
+            m = Integer((long)plaintext[i]);
+            cout << "m" << i << ": " << hex << m << endl;
+
+            c = pubKey.ApplyFunction(m);
+            cout << "c" << i << ": " << hex << c << endl;
+
+            ciphertext[i] = c;
+        }
     } else {
         cout << "public key not valid" << endl;
         cout << "n:" << hex << n << endl;
         cout << "e:" << hex << e << endl;
+        cout << "e:" << hex << d << endl;
+        
+        return false;
     }
+    
+    return true;
 }
 
-void decrypt(Integer *ciphertext, char *plaintext, int size) {
+bool decrypt(Integer *ciphertext, char *plaintext, int size) {
     Integer c, r;
     
     RSA::PrivateKey privKey;
     privKey.Initialize(n, e, d);
     
-    for(int i = 0; i < size; i++) {
-        c = ciphertext[i];
+    if(privKey.Validate(prng, 3)) {
+        for(int i = 0; i < size; i++) {
+            c = ciphertext[i];
+
+            r = privKey.CalculateInverse(prng, c);
+            cout << "r" << i << ": " << hex << r << endl;
+            plaintext[i] = (char)r.ConvertToLong();
+        }
+    } else {
+        cout << "private key not valid" << endl;
+        cout << "n:" << hex << n << endl;
+        cout << "e:" << hex << e << endl;
         
-        r = privKey.CalculateInverse(prng, c);
-        cout << "r" << i << ": " << hex << r << endl;
-        plaintext[i] = (char)r.ConvertToLong();
+        return false;
     }
 }
 
@@ -107,13 +144,12 @@ void encrypt_file(char *infilename, char *outfilename) {
         infile.seekg(0, ios::beg);
         infile.read((char*)plaintext, size);
 
-        encrypt(plaintext, ciphertext, size);
-        
-        for(int i = 0; i < size; i++) {
-            outfile << hex << ciphertext[i] << endl;
+        if(encrypt(plaintext, ciphertext, size)) {        
+            for(int i = 0; i < size; i++) {
+                outfile << hex << ciphertext[i] << endl;
+            }        
+            cout << "cipher text stored in: " << outfilename << endl;
         }
-        
-        cout << "cipher text stored in: " << outfilename << endl;
     } else {
         cout << "Unable to open file " << infilename << endl;
     }
@@ -148,9 +184,9 @@ void decrypt_file(char *infilename, char *outfilename) {
         i++;
     }
     
-    decrypt(ciphertext, plaintext, size);
-    
-    outfile.write((char*)plaintext, lines);
+    if(decrypt(ciphertext, plaintext, size)) {
+        outfile.write((char*)plaintext, lines);    
+    }
     
     infile.close();    
     outfile.close();
