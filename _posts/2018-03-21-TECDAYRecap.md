@@ -1,7 +1,7 @@
 ---
 layout: post
 title: TEC Day 2018
-subtitle: take off and landing - the rundown
+subtitle: take off and landing
 category: dev
 tags: [culture]
 author: Scott Speights
