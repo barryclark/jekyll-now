@@ -6,7 +6,7 @@ category: dev
 tags: [culture]
 author: Scott Speights
 author_email: scott.speights@haufe-lexware.com
-header-img: "images/TEC-Day-2018/TECDay-BlastOff.jpg
+header-img: "../images/TEC-Day-2018/TECDay-BlastOff.jpg
 ---
 
 # The general feeling about TEC
