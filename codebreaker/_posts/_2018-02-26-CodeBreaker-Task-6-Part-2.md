@@ -9,15 +9,30 @@ Our final steps are:<br>
 3. Determine delivery method<br>
 4. Test exploit
 
-An error has to be caused somewhere in the server application that will be raised up through bottle. In the [bottle documentation] ***difference between .12 and .13*** it mentions that all errors caused by the developer's application are caught and handled by bottle to keep it from crashing the server. There is a discrempency between the documentation and the bottle source code though. In bottle 0.12.13 there are four expections that are rerasied or not caught by bottle. They are UnicodeError, KeyboardInterrupt, SystemExit, and MemoryError. KeyboardInterrupt and SystemExit are of no use to us, since we can't create these. 
+An error has to be caused somewhere in the server application that will be raised up through bottle. In the [bottle tutorial](https://bottlepy.org/docs/dev/tutorial.html) it mentions that all errors caused by the developer's application are caught and handled by bottle to keep it from crashing the server. This is not entirely true and is in fact different than what the documentation states. The documentation says that most expections are caught and changed to HTTPError. In bottle 0.12.13 there are four expections that are rerasied or not caught by bottle. They are UnicodeError, KeyboardInterrupt, SystemExit, and MemoryError. KeyboardInterrupt and SystemExit are of no use to us, since we can't create these. 
 
-The UnicodeError can be caused to throw an error easily, but the is that this error is caused before the HTTP headers are read in. To make this error useful you would need to send a unicode byte that when logged by the wsgiref server is ascii. As far as I know this can't be done with Utf-8, so while interesting its not useful. 
+The UnicodeError can be caused to throw an error easily, but the is that this error is caused before the HTTP headers are read in. To make this error useful you would need to send a Unicode byte that when logged by the wsgiref server is ascii. As far as I know this can't be done with Utf-8, so while interesting its not useful. The code was changed in the dev version of bottle to ignore any Unicode characters that are not Utf-8. 
 
-The MemoryError is the error we want. This error is created when the server starts to run out of memory. The bot will upload files from the host to the webserver, for the attacker to then access. This is where we will most likey find our oppurtinuty to cause a memory error. 
+The MemoryError is the error we want. This error is created when the server starts to run out of memory. The bot will upload files from the host to the webserver, for the attacker to then access. This is where we will most likely find our opportunity to cause a memory error. I created a route called /memory in my test environment so that I could do a quick test to check my assumption about this error. 
+
+[]
 
 When a file is uploaded to the server it can be encoded as gzip, deflate, or identity (plain text). If the file is gzip it will be stored without any further checks or compression. When the file is deflate the server will instead decompress it in 1GB chunks and then recompress as gzip. This method is used to limit the that data in memory, so there is not a memory error. The interesting thing though is that when a gzip is decompressed there is no check or chunking done. Instead the full gzip is extracted in one go, this can cause a memory error if the file is too big. 
 
-When a file is requested using /result/<uid> the HTTP header Accept-Encoding is used to determine how the file is sent back to the requester. This means that a gzip bomb can uploaded to the server using /upload/ 'Content-Encoding: gzip', and then downloaded again as /result/ with the header 'Accept-Encoding: identity'. When this gzip is decompress it will expand to a much bigger file than can fit in memory and cause a memory error. Bottle will reraise this error which will cause the server to log a critical error, this will then trigger the remote executed code in the cookie. 
+When a file is requested using /result/<uid> the HTTP header Accept-Encoding is used to determine how the file is sent back to the requester. This means that a gzip bomb can uploaded to the server using /upload/ 'Content-Encoding: gzip', and then downloaded again as /result/ with the header 'Accept-Encoding: identity'. When this gzip is decompress it will expand to a much bigger file than can fit in memory and cause a memory error. 
+
+The below code will create a 1.8GB gzip bomb in python. <br>
+{% highlight python %}
+import gzip
+file = open('gzip_bomb_18', 'wb')
+
+zeros=b'0'*1810612736
+gzip_bomb = gzip.compress(zeros)
+
+file.write(gzip_bomb)
+{% endhighlight %}
+
+Bottle will re-raise this error which will cause the server to log a critical error, this will then trigger the remote executed code in the cookie. We can test this exploit with curl. 
  
 []
 
@@ -64,7 +79,14 @@ To find out if the bridge can use a different port we can examine the code in ID
 
 [bash_cmdline_args]
 
-Looking at how the other arguments are used we can determine what the folders are used for. The 2nd argument is the folder used for commands retrieved from server. The 3rd command is the folder used to upload data to the server. When a message is sent to 'nodes-15411b7b' it is saved to 
+Looking at how the other arguments are used we can determine what the folders are used for. The 2nd argument is the folder used for commands retrieved from server. The 3rd command is the folder used to upload data to the server. When a message is sent to 'nodes-15411b7b' it is saved to the folder to upload to the server. The bot will first create the file using the template 'out-XXXXXX'. Next it will change the permissions to the file to 666 (everyone has read/write), and then it will rename the file 'out-XXXXXX.done'. The bridge has used notify\_add\_watch to be notified of any rename actions with in the folder. Once it is notified of the change it will upload the file, and remove it from the tmp folder. We can replicate the action with the following. 
+
+*** maybe save for later ***
+{% highlight bash %}
+echo -ne '00000000000000000000000000000005\x00test outfile' > out-ZaSLIZ
+chmod 666 out-ZaSLIZ 
+mv out-ZaSLIZ out-ZaSLIZ.done
+{% endhighlight %}
 
 [cmdline_args_used_for]
 
@@ -180,3 +202,6 @@ str.format vulnerability, since can control HTTP_X_CLIENT_ID. python has no %n s
 
 
 ![_config.yml]({{ site.baseurl }}/images/CodeBreaker/Task_5/XXXXX.png)
+
+
+Maybe do cyber kill chain or other threat modeling for task
