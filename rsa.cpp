@@ -1,3 +1,5 @@
+// 03/21/2018 10:09
+
 #include <iostream>
 #include <iomanip>
 #include <string>
@@ -16,6 +18,8 @@ using namespace CryptoPP;
 // d = private exponent
 Integer n, e, d;
 
+AutoSeededRandomPool prng;
+
 bool load_key(char *filename) {
     ifstream infile(filename);
     string line;
@@ -23,12 +27,14 @@ bool load_key(char *filename) {
     
     if (infile.is_open()) {
         while(getline(infile, line)) {
+            const char *chararray = line.c_str();
+            
             if(count == 0) {
-                n = Integer(line);
+                n = Integer(chararray);
             } else if(count == 1) {
-                e = Integer(line);
+                e = Integer(chararray);
             } else if(count == 2) {
-                d = Integer(line);
+                d = Integer(chararray);
             } else {
                 infile.close();
                 return; // shouldn't get this far...
@@ -48,7 +54,8 @@ bool load_key(char *filename) {
 void encrypt(char *plaintext, Integer *ciphertext, streampos file_size) {
     RSA::PublicKey pubKey;
     pubKey.Initialize(n, e);
-
+    
+    if(pubKey.Validate(prng, 3)) {
     Integer m, c;
     
     for(int i = 0; i < file_size; i++) {
@@ -60,10 +67,14 @@ void encrypt(char *plaintext, Integer *ciphertext, streampos file_size) {
         
         ciphertext[i] = c;
     }
+    } else {
+        cout << "public key not valid" << endl;
+        cout << "n:" << hex << n << endl;
+        cout << "e:" << hex << e << endl;
+    }
 }
 
 void decrypt(Integer *ciphertext, char *plaintext, int size) {
-    AutoSeededRandomPool prng;
     Integer c, r;
     
     RSA::PrivateKey privKey;
@@ -132,7 +143,8 @@ void decrypt_file(char *infilename, char *outfilename) {
     plaintext = new char[lines];
     
     while(getline(infile, line)) {
-        ciphertext[i] = Integer(line);
+        const char *chararray = line.c_str();
+        ciphertext[i] = Integer(chararray);
         i++;
     }
     
@@ -153,7 +165,7 @@ void usage() {
 int main(int argc, char * argv[]) {
     // usage: ./rsa -de infile outfile keyfile
     
-    if(argc != 4) {
+    if(argc != 5) {
         usage();
     } else {
         char *flag = argv[1];
