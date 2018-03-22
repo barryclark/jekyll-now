@@ -6,7 +6,7 @@ category: dev
 tags: [culture]
 author: Scott Speights
 author_email: scott.speights@haufe-lexware.com
-header-img: "images/TECDay-2018/TECDayBlastOff.jpg"
+header-img: "images/TECDay-2018/TECDayBlastOff.JPG"
 ---
 
 # The general feeling about TEC
@@ -27,7 +27,7 @@ Not only were we supported by two superstars of the computing world - Uwe F. and
 
 It was also a day of firsts because we said farewell to our outgoing CTO and welcomed our incoming AT EXACTLY THE SAME TIME. I don't imagine that happens in most companies.
 
-It was saddening to see Holger R. go after three great years of moving Haufe Group software engineering (and the Haufe Group) to the forefront of technology. He left us in a great position, and it was a must to send him off in the right way. At the same time ;), it's certain that we're going to keep moving ahead under the leadership of our new CTO Raul F.
+It was saddening to see Holger R. go after three great years of moving Haufe Group software engineering (and the Haufe Group) to the forefront of technology. He left us in a great position, and it was a must to send him off in the right way. At the same time ;), it's certain that we're going to keep moving ahead under the leadership of our new CTO, Raul F.
 
 
 ![Farewell and Welcome](../images/TECDay-2018/TShirt-uebergabe.JPG)
