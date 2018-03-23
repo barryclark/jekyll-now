@@ -5,7 +5,9 @@ permalink: /about/
 published: true
 ---
 
-I'm a Tech/Scifi enthusiast who's in love with building digital things. Software Engineering background. Founder of a tech company. intrigued with Android development and machine learning at the moment.
+Machine Learning content developer at Udacity. Created lessons for Machine Learning Nanodegree and Deep Learning Nanodegree. 
+
+I'm a Tech/Scifi enthusiast who's in love with building digital things. Software Engineering background. Founder of a tech company. 
 
 ### Contact me
 

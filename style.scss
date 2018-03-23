@@ -110,33 +110,63 @@ em, i {
   border-collapse: collapse;
   margin: 40px auto;
 }
-
-.prediction table tr{
-  padding: 1px 10px;
-
-}
-
+.prediction table tr{  padding: 1px 10px;  }
 .prediction table th{
   padding: 4px 5px;
   font-weight: bold;
   font-size: 80%;
 }
-
-
-
 .prediction table td{
   padding: 4px 5px;
-  border-top: 1px solid #333;
+  /*border-top: 1px solid #333;*/
+}
+
+.middle-aligned{
+  vertical-align:middle !important;
+}
+span.middle-aligned{
+  vertical-align: middle;
 }
 
 td.slider-value{
   min-width: 70px;
   font-weight: bold;
 }
+span.slider-value{
+  display:inline-block;
+  min-width: 45px;
+  font-weight: bold;
+  text-align:center;
+}
 
 td.slider-value .weight {  color: $weightGreen; opacity: 0.7 ;}
+span.slider-value .weight {  color: $weightGreen; opacity: 0.7 ;}
 td.slider-value .bias {  color: $biasPurple;  opacity: 0.7; }
+.explicit-slider-weight-value{
+  min-width: 55px;
+  font-weight: bold;
+  color: $weightGreen;
+  opacity: 0.7 ;
+  vertical-align: middle;
+  text-align:center;
+}
+.explicit-activation-output-value {
+  min-width: 130px;
+  font-weight: bold;
+  color: $activationYellow;
+  opacity: 0.7;
+  vertical-align: middle;
+  text-align: center;
+}
 
+.explicit-relu-activation-output-value {
+  min-width: 55px;
+  font-weight: bold;
+  color: $activationYellow;
+  opacity: 0.7;
+  vertical-align: middle;
+  text-align: center;
+}
 
 .prediction .img-div {
   max-width: 600px;
@@ -268,21 +298,14 @@ td.error-cell{  text-align:center;  }
 .prediction .prediction-dot{  fill: $pink;  }
 .prediction .y_{  color: $lightBlue;  }
 .prediction .y {  color: $pink;  }
-.prediction .one_variable td:nth-child(4), td:nth-child(5) {  color: $darkYellow;  }
+.prediction .one_variable td:nth-child(4), .prediction .one_variable td:nth-child(5) {  color: $darkYellow;  }
 .prediction .one_variable td:nth-child(2) {  color: $lightBlue;  }
 .prediction .one_variable td:nth-child(3) {  color: $pink;  }
-.prediction .one_variable td:nth-child(4), td:nth-child(5) {  color: $darkYellow;  }
+.prediction .one_variable td:nth-child(4), .prediction .one_variable td:nth-child(5) {  color: $darkYellow;  }
 
-
-.prediction .two_variables td:nth-child(3) {
-  color: $lightBlue;
-}
-.prediction .two_variables td:nth-child(4) {
-  color: $pink;
-}
-.prediction .two_variables td:nth-child(5), td:nth-child(6) {
-  color: $yellow;
-}
+.prediction .two_variables td:nth-child(3) {  color: $lightBlue;  }
+.prediction .two_variables td:nth-child(4) {  color: $pink;  }
+.prediction .two_variables td:nth-child(5), .prediction .two_variables td:nth-child(6) {  color: $yellow;  }
 
 
 
@@ -382,18 +405,25 @@ div.nn-tooltip {
 .nn-node{  fill: white;  stroke-width: $lighterOutlinedNodeStrokeWidth;  }
 .nn-node:hover{ stroke: $lighterGray; }
 .nn-node-highlighted{ stroke: $lighterGray !important; }
-.layer-input-value{font-size: 11px;  opacity:0.7;}
-g text.layer-input-value-highlighted{font-size: 11px;  opacity:1 !important ; fill:$gray !important;}
-.layer-input-value-from-input{fill: #7ac680}
+.layer-input-value{font-size: 11px;  opacity:0.5;}
+g text.layer-input-value-highlighted{font-size: 11px;  opacity:1 !important ; /*fill:$gray !important;*/}
+.layer-input-value-from-input{fill: $weightLayerInput}
 //.layer-input-value-from-input{fill: #a8e7ad}
-.layer-input-value-from-bias{fill: #b2aef4}
+.layer-input-value-from-bias{fill: $biasLayerInput}
 .input-group text{   pointer-events: none;  }
 .output-group text.node-text{   pointer-events: none; fill:$nnOutputNodeText !important;   }
-.outlined-input-node{  stroke: $inputOutlineColor;}
-.outlined-weight-node{  stroke: $nnWeightNode; }
-.outlined-bias-node{  stroke: $biasOutlineColor;}
-.outlined-output-node{  stroke: $outputOutlineColor;}
-.outlined-softmax-node{  stroke: $softmaxOutlineColor;}
+.layer-group text.node-text{   pointer-events: none; fill:$nnOutputNodeText !important;   }
+
+.outlined-input-node{  stroke: $inputOutlineColor; fill: $inputNodeFillColor}
+.outlined-weight-node{  stroke: $nnWeightNode; fill: $weightNodeFillColor }
+.outlined-bias-node{  stroke: $biasOutlineColor; fill: $biasNodeFillColor;}
+.outlined-output-node{  stroke: $outputOutlineColor; fill: $outputNodeFillColor}
+
+.outlined-activation-node{  stroke: $softmaxOutlineColor;}
+.outlined-softmax-node{  stroke: $softmaxOutlineColor; fill: $softmaxNodeFillColor}
+.outlined-sigmoid-node{  stroke: $softmaxOutlineColor; fill: $softmaxNodeFillColor}
+
+g.activation text{ pointer-events: none; }
 g.softmax text{   pointer-events: none;  }
 
 .input-node-text{ color:$nnInputNodeText}
@@ -421,20 +451,24 @@ line.nn-arrow-highlighted{
 #neural-network-calculation-viz  .outlined-weight-node:hover .weightNodeText{  font-size: 12px;  fill: $gray;  }
 #neural-network-calculation-viz .highlighted-softmax-output{ fill:#333}
 #neural-network-calculation-viz .dim-softmax-output{ fill:#ccc}
+#neural-network-calculation-viz .sigmoid-output{ fill:$activationYellow}
 
 
 
-.prediction table.input-calculation{  font-size: 80% ;  border-collapse: collapse;  margin: 8px;  color: #888;  }
+.prediction table.input-calculation{  font-size: 100% ;  border-collapse: collapse;  margin: 8px;  color: #888;  }
 .prediction table.input-calculation tr{  padding: 1px 10px;  }
 .prediction table.input-calculation th{  padding: 4px 5px;  font-weight: bold;  font-size: 90%;  }
 .prediction table.input-calculation td{  padding: 4px 5px;  border-top: 0px solid #333; ;  }
 
-.prediction table.input-calculation td.importance-10{ color: #ccc; }
+.prediction table.input-calculation td.importance-10{ color: #aaa; }
 .prediction table.input-calculation td.importance-20{ color: #999; }
 .prediction table.input-calculation td.importance-30{ color: #333; }
+.prediction table.input-calculation td.number{ text-align:left; }
 
-.prediction table.input-calculation  tr.total-row{ border-top:1px dashed #ccc; }
-
+.prediction table.input-calculation tr.total-row{ border-top:1px dashed #ccc; }
+.prediction table.input-calculation td.sum-value{ color:$nnOutputNodeText; }
+.prediction table.input-calculation td.weight-layer-input{color: $weightLayerInput}
+.prediction table.input-calculation td.bias-layer-input{color: $biasLayerInput}
 
 
 .prediction table.softmax-calculation{  font-size: 100% ;  border-collapse: collapse;  margin: 8px;  color: #888;  }
@@ -443,18 +477,68 @@ line.nn-arrow-highlighted{
 .prediction table.softmax-calculation td{  border: 1px solid #ddd;}
 
 .prediction table.softmax-calculation tr{  padding: 1px 5px;  }
-.prediction table.softmax-calculation th{  font-weight:normal; font-size: 90%; text-align: center; padding:12px 12px;}
+.prediction table.softmax-calculation th{  font-weight:bold; font-size: 90%; text-align: center; padding:12px 12px;}
 .prediction table.softmax-calculation td{  padding: 4px 5px;  border-top: 0px solid #333;  text-align: center;  }
-.prediction table.softmax-calculation td.input{  color:$nnOutputNodeText; }
-.prediction table.softmax-calculation td.calculation{  font-size: 12pt ; padding: 8px 8px; }
+.prediction table.softmax-calculation .input{  color:$nnOutputNodeText; }
+.prediction table.softmax-calculation td.calculation{  font-size: 150% ; padding: 8px 8px; }
 .prediction table.softmax-calculation td.class-name{  vertical-align: middle; font-size: 90%;}
 .prediction table.softmax-calculation td.highlighted{ font-weight: bold}
 
-.prediction table.softmax-calculation td.importance-10{ color: #ccc; }
+.prediction table.softmax-calculation td.importance-10{ color: #aaa; }
 .prediction table.softmax-calculation td.importance-20{ color: #999; }
 .prediction table.softmax-calculation td.importance-30{ color: #333; }
 
 .prediction table.softmax-calculation  tr.total-row{ border-top:1px dashed #ccc; }
+
+
+table.collapsed-style{font-size: 90%;  border-collapse: collapse;  margin: 8px;  color: #333;  }
+
+.prediction table.collapsed-style, .prediction table.collapsed-style th,
+.prediction table.collapsed-style td{  border: 1px solid #ddd;}
+.prediction table.collapsed-style tbody tr:hover{  background-color: #f4e5f8}
+.prediction table.collapsed-style td, .prediction table.collapsed-style th{  padding: 8px 8px; text-align: center;  }
+table.collapsed-style th{  }
+
+.prediction .titanic-dataset table{   color:#666;  }
+.prediction .titanic-dataset table td{  font-size: 90%; border: 1px solid #ddd; }
+.prediction .titanic-dataset table th{  font-size: 90%; border: 1px solid #ddd; }
+.prediction .titanic-dataset table td:nth-child(2), .prediction .titanic-dataset table th:nth-child(2)
+{  color: #b2aef4; font-weight:bold;  }
+.prediction .titanic-dataset table td:nth-child(5), .prediction .titanic-dataset table th:nth-child(5),
+.prediction .titanic-dataset table td:nth-child(6), .prediction .titanic-dataset table th:nth-child(6)
+{  color: #d18fe2; font-weight:bold;  }
+
+#sigmoid-label{font-size: 30px; font-family: serif; dominant-baseline:central; fill:#888}
+
+
+.prediction table.activation-graph-slider{  margin:0; font-size:100% }
+.prediction table.activation-graph-slider td{  border:0;  }
+
+
+// Sigmoid graph
+
+.activation-graph .y-axis text{fill: $activationYellow;}
+.activation-graph .x-axis text{fill: $nnWeightNodeText;}
+.sigmoid-value-dot{  stroke: #666;  stroke-width: 1px;  fill: #fffef1;}
+.sigmoid-value-text{fill: $activationYellow;}
+.sigmoid-line{stroke: $invisibleUFO; fill:none; stroke-linejoin: round; stroke-linecap: round; stroke-width: 1.5;}
+
+#sigmoid-formula-input{  width:60px;  display: inline-block;  text-align:left;  }
+#sigmoid-formula-input .sigmoid-value-input-number {  color: $weightGreen;  opacity: 0.7  }
+#sigmoid-result{ color: $activationYellow;}
+
+
+// Relu graph
+
+.activation-graph .y-axis text{fill: $activationYellow;}
+.activation-graph .x-axis text{fill: $nnWeightNodeText;}
+.activation-value-dot{  stroke: #666;  stroke-width: 1px;  fill: #fffef1;}
+.activation-value-text{fill: $activationYellow;}
+.activation-line-straight{stroke: $invisibleUFO; fill:none; stroke-width: 1.5;}
+
+#relu-formula-input{  width:45px;  display: inline-block;  text-align:center;  }
+#relu-formula-input .relu-value-input-number {  color: $weightGreen;  opacity: 0.7  }
+#relu-result{ color: $activationYellow;}
 
 
 // Quick guide to neurons
@@ -464,16 +548,40 @@ line.nn-arrow-highlighted{
   padding: 15px 0;
 }
 
-.side-column{
+.prediction div.neuron-expo .small-column{
+  text-align: center;
+}
+
+
+.prediction div.neuron-expo .side-column{
   font-size: 80%;
   color: #888;
 }
 
-.side-column code{
+.prediction div.neuron-expo .side-column code{
   font-size: 80%;
   color: #666;
 }
 
+
+pre{
+  padding:8px;
+}
+pre code{
+  font-size:90%;
+}
+
+
+.vcenter {
+  display: inline-block;
+  vertical-align: middle;
+  float: none;
+}
+
+.vertical-align {
+  display: flex;
+  align-items: center;
+}
 
 
 .grid line {
@@ -484,13 +592,6 @@ line.nn-arrow-highlighted{
 
 .grid path {
   stroke-width: 0;
-}
-
-
-#sigmoid-formula-input{
-  width:60px;
-  display: inline-block;
-  text-align:left;
 }
 
 // ============

@@ -89,34 +89,34 @@ neuralNetworkCalculationViz.prototype.drawGraph = function () {
     this.softmaxOutputsX = outputLayerX;
     // Now the Y coordinates for each layer
     // Input layer
-    this.inputNodeY = d3.scaleLinear()
+    this.getYCoordinateOfNodeInInputLayer = d3.scaleLinear()
         .domain([0, this.inputNodeCount])
         .range([this.neuralNetworkMargin.top + this.nodeRadius,
             grapher.neuralNetworkHeight - this.nodeRadius]);
 
-    this.outputNodeY = d3.scaleLinear()
+    this.getYCoordinateOfNodeInOutputLayer = d3.scaleLinear()
         .domain([0, this.inputNodeCount - 1])
         .range([this.neuralNetworkMargin.top + this.nodeRadius,
             grapher.neuralNetworkHeight - this.nodeRadius]);
 
     this.inputLayerCoordinates = d3.range(this.inputNodeCount).map(function (i) {
-        var y = grapher.inputNodeY(i);
+        var y = grapher.getYCoordinateOfNodeInInputLayer(i);
         return {x: inputLayerX, y: y, index: i, type: "input"};
     });
     this.inputLayerCoordinates.push({
-        x: inputLayerX, y: grapher.inputNodeY(this.inputNodeCount),
+        x: inputLayerX, y: grapher.getYCoordinateOfNodeInInputLayer(this.inputNodeCount),
         index: this.inputNodeCount, type: "bias"
     });
 
     // Bias layer
-    this.biasLayerCoordinates = d3.range(this.outputNodeCount).map(function (i) {
-        var y = grapher.outputNodeY(i);
+    this.outputLayerCoordinates = d3.range(this.outputNodeCount).map(function (i) {
+        var y = grapher.getYCoordinateOfNodeInOutputLayer(i);
         return {x: biasLayerX, y: y, index: i, type: "input"};
     });
 
     // Output layer
     this.outputLayerCoordinates = d3.range(this.outputNodeCount).map(function (i) {
-        var y = grapher.outputNodeY(i);
+        var y = grapher.getYCoordinateOfNodeInOutputLayer(i);
         return {x: outputLayerX, y: y, index: i};
     });
 
@@ -140,7 +140,7 @@ neuralNetworkCalculationViz.prototype.drawGraph = function () {
     for (var j = 0; j < this.outputNodeCount; j++)
         for (var i = 0; i < this.inputLayerNodeCount; i++) {
 
-            var opposite = this.inputLayerCoordinates[i].y - this.biasLayerCoordinates[j].y,
+            var opposite = this.inputLayerCoordinates[i].y - this.outputLayerCoordinates[j].y,
                 adjacent = biasLayerX - inputLayerX,
                 angle = Math.atan(opposite / adjacent),
                 yCoordinate = this.inputLayerCoordinates[i].y -
@@ -182,8 +182,8 @@ neuralNetworkCalculationViz.prototype.drawGraph = function () {
             this.inputToBiasLines.push({
                 x1: this.inputLayerCoordinates[i].x,
                 y1: this.inputLayerCoordinates[i].y,
-                x2: this.biasLayerCoordinates[j].x,
-                y2: this.biasLayerCoordinates[j].y,
+                x2: this.outputLayerCoordinates[j].x,
+                y2: this.outputLayerCoordinates[j].y,
                 inputIndex: i,
                 outputIndex: j
             });
@@ -194,10 +194,10 @@ neuralNetworkCalculationViz.prototype.drawGraph = function () {
     // Calculate the coordiantes of the lines from input to bias
     for (var i = 0; i < this.outputNodeCount; i++)
         this.BiasToSoftmaxLines.push({
-            x1: this.biasLayerCoordinates[i].x,
-            y1: this.biasLayerCoordinates[i].y,
+            x1: this.outputLayerCoordinates[i].x,
+            y1: this.outputLayerCoordinates[i].y,
             x2: softmaxLayerX - grapher.nodeRadius,
-            y2: this.biasLayerCoordinates[i].y
+            y2: this.outputLayerCoordinates[i].y
         });
 
 
@@ -206,9 +206,9 @@ neuralNetworkCalculationViz.prototype.drawGraph = function () {
     for (var i = 0; i < this.outputNodeCount; i++)
         this.softmaxtoOutputLines.push({
             x1: softmaxLayerX + grapher.nodeRadius + 6,
-            y1: this.biasLayerCoordinates[i].y,
+            y1: this.outputLayerCoordinates[i].y,
             x2: outputLayerX - grapher.nodeRadius,
-            y2: this.biasLayerCoordinates[i].y,
+            y2: this.outputLayerCoordinates[i].y,
             outputNode: i,
             class_name: this.classes[i]
         });
@@ -224,7 +224,7 @@ neuralNetworkCalculationViz.prototype.drawGraph = function () {
     this.graphWeightNodes(this.weightLayerCoordinates);
     //this.graphOutputNodes(this.outputLayerCoordinates);
 
-    this.graphBiasNodes(this.biasLayerCoordinates);
+    this.graphBiasNodes(this.outputLayerCoordinates);
     this.graphSoftmax(softmaxCoordinates);
 
 
@@ -715,7 +715,7 @@ neuralNetworkCalculationViz.prototype.graphSoftmaxOutputs = function (softmaxOut
         .attrs({
             class: "softmax-output-group",
             transform: function (d) {
-                return "translate(" + (grapher.softmaxOutputsX - 8) + ", " + (grapher.outputNodeY(d.index) + 5) + ")";
+                return "translate(" + (grapher.softmaxOutputsX - 8) + ", " + (grapher.getYCoordinateOfNodeInOutputLayer(d.index) + 5) + ")";
             },
             //"font-size": function(d){return 10 + d.value * 8 }
         });

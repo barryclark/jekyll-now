@@ -114,7 +114,6 @@ numberFormatter = function(value, digit_limit){
 
     if( value == 0 )
         return 0;
-
     return value.toExponential(1);
 
 };

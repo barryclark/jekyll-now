@@ -2,34 +2,34 @@
  * Created by alammar on 2/3/17.
  */
 
-var sigmoidGraph = function (containerElement, xStart, xEnd, xDefault, sliderElement, sigmoidInputElement,
-                             sigmoidFormulaInputElement, sigmoidResult, sigmoidGraphResult) {
+var reluGraph = function (containerElement, xStart, xEnd, xDefault, sliderElement, reluInputElement,
+                             reluFormulaInputElement, reluResult, reluGraphResult) {
     this.containerElement = containerElement;
     this.graphWidth = 400;
     this.graphHeight = 160;
     this.sliderElement = sliderElement;
-    this.sigmoidInputElement = sigmoidInputElement;
-    this.sigmoidFormulaInputElement = sigmoidFormulaInputElement;
-    this.sigmoidResult = sigmoidResult;
+    this.reluInputElement = reluInputElement;
+    this.reluFormulaInputElement = reluFormulaInputElement;
+    this.reluResult = reluResult;
     this.xDefault = xDefault;
-    this.sigmoidGraphResult = sigmoidGraphResult;
+    this.reluGraphResult = reluGraphResult;
 
     this.values = this.generateValues(xStart, xEnd);
     this.initializeGraph();
     this.attachEventsToSlider();
 
 
-    this.updateSigmoidValue(this.containerElement, this.sigmoidInputElement, this.xDefault);
+    this.updateReluValue(this.containerElement, this.reluInputElement, this.xDefault);
 };
 
 
-sigmoidGraph.prototype.initializeGraph = function () {
+reluGraph.prototype.initializeGraph = function () {
     var obj = this;
-    this.graphHolder = d3.select(this.containerElement) // select the container element
+    this.graphHolder = d3.select(this.containerElement) // select the 'body' element
         .append("svg")           // append an SVG element to the body
         .attr("class", "activation-graph")
-        .attr("width", this.graphWidth)
-        .attr("height", this.graphHeight);
+        .attr("width", this.graphWidth)      // make the SVG element 449 pixels wide
+        .attr("height", this.graphHeight);    // make the SVG element 249 pixels high
     this.margin = {top: 30, right: 60, bottom: 20, left: 60};
     this.width = +this.graphHolder.attr("width") - this.margin.left - this.margin.right;
     this.height = +this.graphHolder.attr("height") - this.margin.top - this.margin.bottom;
@@ -49,14 +49,15 @@ sigmoidGraph.prototype.initializeGraph = function () {
         })
         .y(function (d) {
             return obj.y(d.y);
-        })
-        .curve(d3.curveCardinal.tension(0.5));
+        });
 
 
     obj.x.domain(d3.extent(this.values, function (d) {
         return d.x;
     }));
-    obj.y.domain([0, 1]);
+    obj.y.domain(d3.extent(this.values, function (d) {
+        return d.y;
+    }));
 
 
     // X axis
@@ -70,8 +71,7 @@ sigmoidGraph.prototype.initializeGraph = function () {
     // Y Axis
     this.g.append("g")
         .attr("class", "y-axis")
-        .call(d3.axisLeft(obj.y)
-            .tickValues([0, 0.5, 1]))
+        .call(d3.axisLeft(obj.y))
         .append("text")
         .attr("fill", "#000")
         .attr("transform", "rotate(-90)")
@@ -99,7 +99,7 @@ sigmoidGraph.prototype.initializeGraph = function () {
     // gridlines in y axis function
     function make_y_gridlines() {
         return d3.axisLeft(obj.y)
-            .tickValues([0, 0.5, 1])
+            .ticks(1)
     }
 
     // add the Y gridlines
@@ -114,17 +114,17 @@ sigmoidGraph.prototype.initializeGraph = function () {
     // Line
     this.g.append("path")
         .datum(this.values)
-        .attr("class", "sigmoid-line")
+        .attr("class", "relu-line activation-line-straight")
         .attr("d", line);
 
 
 
     this.valueG = this.g.append("g")
         .attr("class", "value-point")
-        .attr("transform", "translate("+this.x(this.xDefault)+"," + this.y(sigmoid(this.xDefault)) + ")");
+        .attr("transform", "translate("+this.x(this.xDefault)+"," + this.y(relu(this.xDefault)) + ")");
 
     this.valueG.append("ellipse")
-        .attr("class", "sigmoid-value-dot")
+        .attr("class", "relu-value-dot activation-value-dot")
         .attr("rx", 5)
         .attr("ry", 5)
         .attr("cx", 0)
@@ -132,19 +132,19 @@ sigmoidGraph.prototype.initializeGraph = function () {
 
 
     this.valueG.append("text")
-        .attr("class", "sigmoid-value-text")
+        .attr("class", "relu-value-text activation-value-text")
         .attr("fill", "red")
         .attr("text-anchor", "middle")
         .attr("font-size", "12")
         .attr("y", -8)
-        .text(sigmoid(this.xDefault));
+        .text(relu(this.xDefault));
 
 
 
 };
 
 
-sigmoidGraph.prototype.updateGraph = function () {
+reluGraph.prototype.updateGraph = function () {
 
     var obj = this;
     this.width =  this.graphWidth - this.margin.left - this.margin.right;
@@ -176,18 +176,18 @@ sigmoidGraph.prototype.updateGraph = function () {
         .curve(d3.curveCardinal.tension(0.5));
 
 
-    d3.select(".sigmoid-line")
+    d3.select(".relu-line")
         .attr("d", line)
 };
 
 
-sigmoidGraph.prototype.attachEventsToSlider = function ( ) {
+reluGraph.prototype.attachEventsToSlider = function ( ) {
     console.log("attach",  this.sliderElement);
     // Attach events to react to the user moving the sliders
     var self = this;
     $(this.sliderElement).on("input change", (function(){
 
-        self.updateSigmoidValue(self.containerElement, self.sigmoidInputElement, this.value)
+        self.updateReluValue(self.containerElement, self.reluInputElement, this.value)
     }));
 
     $(this.sliderElement).css('margin-left',( this.margin.left - 20)+'px');
@@ -197,37 +197,37 @@ sigmoidGraph.prototype.attachEventsToSlider = function ( ) {
 
 
 
-sigmoidGraph.prototype.updateSigmoidValue = function (containerElement, sliderElement, inputValue) {
+reluGraph.prototype.updateReluValue = function (containerElement, sliderElement, inputValue) {
 
 
     // Update Text values
-    d3.selectAll(this.sigmoidInputElement)
+    d3.selectAll(this.reluInputElement)
         .text(inputValue);
-    d3.select(this.sigmoidFormulaInputElement)
+    d3.select(this.reluFormulaInputElement)
         .text( parseFloat(inputValue).toFixed(2) );
     // Update formula result
-    d3.select(this.sigmoidResult)
-        .text(sigmoid(inputValue).toFixed(11));
-    d3.select(this.sigmoidGraphResult)
-        .text( sigmoid(inputValue).toFixed(11) );
+    d3.select(this.reluResult)
+        .text(relu(inputValue));
+    d3.select(this.reluGraphResult)
+        .text( relu(inputValue) );
 
     // Update graph
     d3.select(this.containerElement + " .value-point")
-        .attr("transform", "translate(" + this.x(inputValue) +"," +this.y(sigmoid(inputValue))+")");
+        .attr("transform", "translate(" + this.x(inputValue) +"," +this.y(relu(inputValue))+")");
 
     // Update graph dot label
-    d3.select(this.containerElement + " .sigmoid-value-text")
-        .text(sigmoid(inputValue).toFixed(11));
+    d3.select(this.containerElement + " .relu-value-text")
+        .text(relu(inputValue));
 
 
 };
 
 
-sigmoidGraph.prototype.generateValues = function (xStart, xEnd) {
+reluGraph.prototype.generateValues = function (xStart, xEnd) {
     var length = xEnd - xStart, values = [];
 
-    for (var i = xStart; i <= xEnd; i++) {
-        var point = {x: i, y: sigmoid(i)};
+    for (var i = xStart; i <= xEnd; i = i +10) {
+        var point = {x: i, y: relu(i)};
         values.push(point);
     }
 
@@ -235,12 +235,12 @@ sigmoidGraph.prototype.generateValues = function (xStart, xEnd) {
 };
 
 
-var sigmoid = function (x) {
-    return 1 / ( 1 + Math.exp(-x))
+var relu = function (x) {
+    return x < 0? 0 : x;
 };
 
-var sig = new sigmoidGraph("#sigmoid-graph", -20, 20, 0, "#sigmoid-slider", ".sigmoid-input-value",
-    "#sigmoid-formula-input .sigmoid-value-input-number", "#sigmoid-result", ".explicit-activation-output-value");
+var relu_graph = new reluGraph("#relu-graph", -20, 20, 0, "#relu-slider", ".relu-input-value",
+    "#relu-formula-input .relu-value-input-number", "#relu-result", ".explicit-relu-activation-output-value");
 
 
 //d3.select(window).on('resize', resize);

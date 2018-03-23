@@ -90,14 +90,14 @@ var NN_trainer = function (svg_el, table_el, areas, prices, weight, bias, x1, y1
     }
     if (gradientDescent10Button != ''){
         $(this.table_el + " " + gradientDescent10Button).click(function(){
-            trainer_self.gradientDescentStep(10)
+            trainer_self.gradientDescentStep(10);
             ga('send', 'event', trainer_self.analyticsCategory, "Clicked on", "10 Gradient Descent Steps");
         });
     }
 
     if (gradientDescent100Button != ''){
         $(this.table_el + " " + gradientDescent100Button).click(function(){
-            trainer_self.gradientDescentStep(100)
+            trainer_self.gradientDescentStep(100);
             ga('send', 'event', trainer_self.analyticsCategory, "Clicked on", "100 Gradient Descent Steps");
         });
     }
