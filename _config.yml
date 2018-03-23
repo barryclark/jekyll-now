@@ -6,7 +6,7 @@
 name: AnnDG
 
 # Short bio or description (displayed in the header)
-description: Coding Noob
+description: The Coding Noob
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://avatars2.githubusercontent.com/u/36698577?s=400&u=c5494a14f23424b13888ae765cf829a2fa264895&v=4
@@ -18,7 +18,7 @@ avatar: https://avatars2.githubusercontent.com/u/36698577?s=400&u=c5494a14f23424
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email: ann.honecker@gmail.com
+  email:
   facebook:
   flickr:
   github: /AnnDG
