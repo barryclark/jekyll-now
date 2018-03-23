@@ -270,6 +270,8 @@ Intuitively, the weights indicate how much their associated property contribute 
 The trained network now looks like this:
 (hover or click on values in the table to see their individual predictions)
 
+## OOPS - Broken Visualization. Being fixed right this moment
+
 <div class="row vertical-align">
 <div id="neural-network-calculation-table" class="col-sm-3"></div>
 <div id="neural-network-calculation-viz" class="col-sm-9"></div>
