@@ -3,7 +3,7 @@ layout: page
 title: About Me
 permalink: /about/
 ---
-Hey! My name is Ann and I'm learning how to code.
+Hey! My name is Ann and I'm learning how to code.<br>
 Join my coding journey and don't be shy to shoot me a message :)
 
 ### More Information
