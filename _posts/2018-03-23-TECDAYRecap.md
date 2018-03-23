@@ -12,7 +12,9 @@ header-img: "images/TECDay-2018/TECDayBlastOff.jpg"
 
 # The general feeling about TEC at Haufe
 
-TEC Day is Haufe Group's large, group-wide, internal technology event held once a year where all DevOps personal and technologists converge on our Freiburg headquarters to learn, network and celebrate what we have accomplished - techonology-wise - over the past year. This year, we diverged a little bit from hard-core technology presentations and, in the first part of event, examined mindset and culture for the software engineering profession and how that's evolved at Haufe Group.
+TEC Day is Haufe Group's large, group-wide, internal technology event held once a year where all DevOps personal and technologists converge on our Freiburg headquarters to learn, network and celebrate what we have accomplished - techonology-wise - over the past year.
+
+This year, we diverged a little bit from hard-core technology presentations and, in the first part of event, examined mindset and culture for the software engineering profession and how that's evolved at Haufe Group alongside our technology.
 
 We've gotten really good feedback from just about everybody for TEC Day this year, and - considering that everybody from just about all the offices was there - that's awesome!
 
