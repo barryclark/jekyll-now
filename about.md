@@ -4,12 +4,16 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+![](https://avatars0.githubusercontent.com/u/31220236?s=460&v=4)
 
-### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+Hello My name is Anurag Soni.
+
+I am a seasoned Technology enabler who is currently enrolled in Business Analytics program at Purdue University. 
+
+I am passionate about Analytics, Data Science topics.
 
 ### Contact me
+[email](mailto:soni.anuragg@gmail.com)
 
-[email@domain.com](mailto:email@domain.com)
+[linkedin](http://www.linkedin.com/in/anurag-soni1)
