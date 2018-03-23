@@ -398,7 +398,7 @@ This post has been parked for more than a year. I had attempted to visualize a d
 
 
 <script type="text/javascript" src="/js/nnVizUtils.js"></script>
-<script type="text/javascript" src="/js/hawat/build.js"></script>
+<script type="text/javascript" src="/js/nn_calc.js"></script>
 <script type="text/javascript" src="/js/sigmoid_graph.js"></script>
 <script type="text/javascript" src="/js/relu_graph.js"></script>
 <script type="text/javascript" src="/js/accuracy-graph.js"></script>
