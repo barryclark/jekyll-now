@@ -26,16 +26,24 @@
             <p class="site-description">{{ site.description }}</p>
           </div>
 
-          <nav>
-            <a href="{{ site.baseurl }}/">Blog</a>
-            <a href="{{ site.baseurl }}/about">About</a>
-          </nav>
+          <!-- <nav>
+            <a href="{{ site.baseurl }}/challenge-1">Challenge 1</a>
+            <a href="{{ site.baseurl }}/challenge-2">Challenge 2</a>            
+            <a href="{{ site.baseurl }}/challenge-3">Challenge 3</a>
+            <a href="{{ site.baseurl }}/challenge-4">Challenge 4</a>
+          </nav> -->
         </header>
       </div>
     </div>
 
     <div id="main" role="main" class="container">
       {{ content }}
+      <div class="challenges"> 
+        <a href="{{ site.baseurl }}/api-challenge">Spotify Song Challenge</a>
+        <a href="{{ site.baseurl }}/html-challenge">HTML and CSS Challenge</a>            
+        <a href="{{ site.baseurl }}/challenge-3">Challenge 3</a>
+        <a href="{{ site.baseurl }}/challenge-4">Challenge 4</a>
+      </div>
     </div>
 
     <div class="wrapper-footer">
