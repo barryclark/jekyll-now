@@ -49,12 +49,12 @@ nodes-XXXXXXXX, where XXXXXXXX is a unique identifier for that bot<br>
 If the message is addressed to nodes-15411b7b, then the file is saved as /out-XXXXXX to the tmp folder that is used to upload to server. If the message is addressed to the other topics then it is unpacked and sent to the function dispatch(). To understand how the commands are structured, I had to research msgpack. A good source is [msgpack spec](https://github.com/msgpack/msgpack/blob/master/spec.md#overview), which explains the fields and how to use them.
 
 The fields used in the commands are: <br> 
-- fixarray (0x90-0x9f) <br> 
+Fixarray (0x90-0x9f) <br> 
  - Send a fixed number of objects <br> 
  - 1-15 elements <br> 
-- int32 (0xd2) <br> 
+Int32 (0xd2) <br> 
  - Send 32 bit integer <br> 
-- bin32 (0xc6) <br> 
+Bin32 (0xc6) <br> 
  - Send binary data <br> 
  - 1-(2^32) bytes <br> 
 
