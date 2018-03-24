@@ -49,14 +49,14 @@ nodes-XXXXXXXX, where XXXXXXXX is a unique identifier for that bot<br>
 If the message is addressed to nodes-15411b7b, then the file is saved as /out-XXXXXX to the tmp folder that is used to upload to server. If the message is addressed to the other topics then it is unpacked and sent to the function dispatch(). To understand how the commands are structured, I had to research msgpack. A good source is [msgpack spec](https://github.com/msgpack/msgpack/blob/master/spec.md#overview), which explains the fields and how to use them.
 
 The fields used in the commands are: <br> 
-**fixarray (0x90-0x9f)** <br> 
-- Send a fixed number of objects <br> 
-- 1-15 elements <br> 
-**int32 (0xd2)** <br> 
-- Send 32 bit integer <br> 
-**bin32 (0xc6)** <br> 
-- Send binary data <br> 
-- 1-(2^32) bytes <br> 
+- fixarray (0x90-0x9f) <br> 
+ - Send a fixed number of objects <br> 
+ - 1-15 elements <br> 
+- int32 (0xd2) <br> 
+ - Send 32 bit integer <br> 
+- bin32 (0xc6) <br> 
+ - Send binary data <br> 
+ - 1-(2^32) bytes <br> 
 
 By examining the dispatch function, the commands that the bot can handle and how to format them can be found. I figured the message to enable the bridge was still in memory, since it had just been enable at the time of the memory capture. The heap for the agent I extracted during task 5 was saved to task.1537.0x8750000.vma. The bridge command can be found in here by looking for 'nodes-', this will take us to the message in memory. We can use this to figure out what is needed for our command. 
 
