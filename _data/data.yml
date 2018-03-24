@@ -6,9 +6,17 @@
   location_gr: <b>Τοποθεσία</b>
   location_en: <b>Location</b>
 
+- company_gr: Bitrefill
+  company_en: Bitrefill
+  url: https://en.bitrefill.com/greece/
+  category_gr: Φόρτιση καρτοκινητών Vodafone, Q, Wind, Cosmote, CYTA
+  category_en: Top up prepaid Vodafone, Q, Wind, Cosmote and CYTA phones
+  location_gr: Online
+  location_en: Online
+
 - company_gr: The Cube
   company_en: The Cube
-  url: http://thecube.gr
+  url: https://thecube.gr
   category_gr: Coworking space
   category_en: Coworking space
   location_gr: Αθήνα, Αττική, Ελλάδα

@@ -231,7 +231,7 @@ title: Πως αγοράζουμε, πουλάμε, ξοδεύουμε και δ
 - Το [BitforTip](https://www.bitfortip.com)
 - Το [CoinLib](https://coinlib.io)
 
-Τελευταία ενημέρωση: 2018-03-17
+Τελευταία ενημέρωση: 2018-03-24
 
 <!-- <div class="posts">
   {% for post in site.posts %}
