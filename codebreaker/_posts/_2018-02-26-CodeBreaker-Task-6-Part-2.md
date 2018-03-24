@@ -1,5 +1,6 @@
 ---
 layout: post
+permalink: /CodeBreaker-Task-6-Part-2/
 title: NSA Codebreaker 2017, Task 6 Part 2
 ---
 
@@ -15,57 +16,59 @@ The UnicodeError can be caused to throw an error easily, but the is that this er
 
 The MemoryError is the error we want. This error is created when the server starts to run out of memory. The bot will upload files from the host to the webserver, for the attacker to then access. This is where we will most likely find our opportunity to cause a memory error. I created a route called /memory in my test environment so that I could do a quick test to check my assumption about this error. 
 
-[]
+![_config.yml]({{ site.baseurl }}/images/CodeBreaker/Task_6/memory_test.png)
 
 When a file is uploaded to the server it can be encoded as gzip, deflate, or identity (plain text). If the file is gzip it will be stored without any further checks or compression. When the file is deflate the server will instead decompress it in 1GB chunks and then recompress as gzip. This method is used to limit the that data in memory, so there is not a memory error. The interesting thing though is that when a gzip is decompressed there is no check or chunking done. Instead the full gzip is extracted in one go, this can cause a memory error if the file is too big. 
 
 When a file is requested using /result/<uid> the HTTP header Accept-Encoding is used to determine how the file is sent back to the requester. This means that a gzip bomb can uploaded to the server using /upload/ 'Content-Encoding: gzip', and then downloaded again as /result/ with the header 'Accept-Encoding: identity'. When this gzip is decompress it will expand to a much bigger file than can fit in memory and cause a memory error. 
 
 The below code will create a 1.8GB gzip bomb in python. <br>
-{% highlight python %}
-import gzip
-file = open('gzip_bomb_18', 'wb')
+{% highlight python %} <br>
+import gzip <br>
+file = open('gzip_bomb_18', 'wb') <br>
 
-zeros=b'0'*1810612736
-gzip_bomb = gzip.compress(zeros)
+zeros=b'0'*1810612736 <br>
+gzip_bomb = gzip.compress(zeros) <br>
 
-file.write(gzip_bomb)
+file.write(gzip_bomb) <br>
 {% endhighlight %}
 
-Bottle will re-raise this error which will cause the server to log a critical error, this will then trigger the remote executed code in the cookie. We can test this exploit with curl. 
- 
-[]
+Bottle will re-raise this error which will cause the server to log a critical error, this will then trigger the remote executed code in the cookie. Curl can be used to test the exploit on the server. 
 
-The instructions for task 6 stated that a message needs to be sent using the MQTT topic found in task 5. The code to handle a MQTT message for the bot.so can be found in the function module\_handle_message. This function checks that the message is meant for the botnet and then calls incoming() to handle the message. 
+![_config.yml]({{ site.baseurl }}/images/CodeBreaker/Task_6/server_memory_error.png)
+
+The instructions for task 6 stated that a message needs to be sent using the MQTT topic found in task 5. The code to handle a MQTT message for the bot.so can be found in the function module\_handle_message. This function checks that the message is meant for the botnet and then calls incoming() to process the message. 
 
 Each bot is setup to listen for 3 messages:<br>
 nodes-15411b7b, used to upload files to server, bot must already have bridge enabled<br>
 nodes-0e53325b, this is a broadcast topic for all bots<br>
 nodes-XXXXXXXX, where XXXXXXXX is a unique identifier for that bot<br>
 
-[bot_incoming_flow]
+![_config.yml]({{ site.baseurl }}/images/CodeBreaker/Task_6/bot_incoming_flow.png)
 
-If the message is addressed to nodes-15411b7b, then the file is saved as /out-XXXXXX to the tmp folder that is used to upload to server. If the message is addressed to the other topics then it is unpacked and sent to the function dispatch(). To understand how the commands are structured, I had to research msgpack. A good source is [msgpack spec](https://github.com/msgpack/msgpack/blob/master/spec.md#overview), which explains the fields and how to use them. The fields used in the commands are fixarray (0x90-0x9f), int32 (0xd2), and bin32 (0xc6). How they are used will become more clear as we retrieve the bridge command. 
+If the message is addressed to nodes-15411b7b, then the file is saved as /out-XXXXXX to the tmp folder that is used to upload to server. If the message is addressed to the other topics then it is unpacked and sent to the function dispatch(). To understand how the commands are structured, I had to research msgpack. A good source is [msgpack spec](https://github.com/msgpack/msgpack/blob/master/spec.md#overview), which explains the fields and how to use them.
 
-By examining the dispatch function, the commands that the bot can handle and how to format them can be found. I figured the message to enable the bridge was still in memory, since it had just been enable at the time of the memory capture. The ***Heap*** for the agent I extracted during task 5 was  saved to task.1537.0x8750000.vma. The bridge command can be found in here by looking for 'nodes-', this will take us to the message in memory. 
+The fields used in the commands are: <br> 
+**fixarray (0x90-0x9f)** <br> 
+- Send a fixed number of objects <br> 
+- 1-15 elements <br> 
+**int32 (0xd2)** <br> 
+- Send 32 bit integer <br> 
+**bin32 (0xc6)** <br> 
+- Send binary data <br> 
+- 1-(2^32) bytes <br> 
 
-To determine what command needs to be sent to the botnet, the bot code needs to be examined. In IDA we can see the code that is ran to handle a message. When handling a message the bot will check to see if the topic is addressed for the bridge, or for the broadcast/own message topic. If the message is addressed to the bot, it will unpack the message to execute. An example of a bot command can be found in the memory scrap from task 5. We can use this to figure out what is needed for our command. 
+By examining the dispatch function, the commands that the bot can handle and how to format them can be found. I figured the message to enable the bridge was still in memory, since it had just been enable at the time of the memory capture. The heap for the agent I extracted during task 5 was saved to task.1537.0x8750000.vma. The bridge command can be found in here by looking for 'nodes-', this will take us to the message in memory. We can use this to figure out what is needed for our command. 
 
 ![_config.yml]({{ site.baseurl }}/images/CodeBreaker/Task_6/memory_scrap.png)
 
 The highlighted portion is the second message the bot received. It took me a little while to figure this out, but unfortunately this bot has handled a message after the bridge was enabled. Part of the beginning of message that was sent to enable the bridge is missing. If we assume that the second message started overwriting at the beginning of the first message, we can narrow down what is missing. The MQTT topic should be the same length, next we can run through the code in IDA and restore the remaining part of the message. 
 
-[IDA incoming] 
-
-The incoming function will pull a string from the beginning of the message data, and is used after the dispatch function. The string is passed to prepend\_uuid() and is most likely the uuid. This can also be verified from the server code where the uuid used there are also 32 chars long. Next the bot will try to unpack the data sent to it, by calling umsgpack\_fixarray_binbin. 
-
-[umsgpack_flow]
-
-Following the umsgpack\_fixarray\_binbin function, we can see it is checking for a byte between 0x90-0x9f which corresponds to fixarray. Each element of the array is passed to umsgpack_bin to further unpack. 
+The incoming function will set a ptr a string from the beginning of the message data, and which is used after the dispatch function. The string is passed to prepend\_uuid() and is most likely the uuid. This can also be verified from the server code where the uuid used there are also 32 chars long. Next the bot will try to unpack the data sent to it, by calling umsgpack\_fixarray_binbin. This function will call umsgpack\_fixarray\_bins to unpack 2 bins. Following the umsgpack\_fixarray\_bins function, we can see it is checking for a byte between 0x90-0x9f which corresponds to fixarray. It then checks to ensure the number of bins found is the same as the number expected. 
 
 ![_config.yml]({{ site.baseurl }}/images/CodeBreaker/Task_6/umsgpack_0x9X.png)
 
-Following this function we can see that it is checking for the byte 0xc6, which is for the bin field. It then retrieves the next 4 bytes, and uses htonl() to convert them into a useable int32 for the number of bytes contained in the bin. 
+Each element of the fixarray is passed to umsgpack_bin to further unpack. Following this function we can see that it is checking for the byte 0xc6, which is for the bin field. It then retrieves the next 4 bytes, and uses htonl() to convert them into a useable int32 for the number of bytes contained in the bin. 
 
 ![_config.yml]({{ site.baseurl }}/images/CodeBreaker/Task_6/umsgpack_0xc6.png)
 
@@ -77,31 +80,21 @@ The part of the first message that was overwritten was 'MODULE/sys_16575f98/node
 
 To find out if the bridge can use a different port we can examine the code in IDA. If it couldn't change the port then we would have set up our network to reflect that. Fortunately, the bridge will take an extra argument which is used to set up the port to use. When the bridge starts up it will check the number of command line arguments. If there are four arguments then it use the port 80, otherwise it will use the 5th argument passed in as the port. 
 
-[bash_cmdline_args]
+![_config.yml]({{ site.baseurl }}/images/CodeBreaker/Task_6/bash_cmdline_port.png)
 
-Looking at how the other arguments are used we can determine what the folders are used for. The 2nd argument is the folder used for commands retrieved from server. The 3rd command is the folder used to upload data to the server. When a message is sent to 'nodes-15411b7b' it is saved to the folder to upload to the server. The bot will first create the file using the template 'out-XXXXXX'. Next it will change the permissions to the file to 666 (everyone has read/write), and then it will rename the file 'out-XXXXXX.done'. The bridge has used notify\_add\_watch to be notified of any rename actions with in the folder. Once it is notified of the change it will upload the file, and remove it from the tmp folder. We can replicate the action with the following. 
+Looking at how the other arguments are used we can determine what the folders are used for. The 2nd argument is the folder used for commands retrieved from server. The 3rd command is the folder used to upload data to the server. 
 
-*** maybe save for later ***
-{% highlight bash %}
-echo -ne '00000000000000000000000000000005\x00test outfile' > out-ZaSLIZ
-chmod 666 out-ZaSLIZ 
-mv out-ZaSLIZ out-ZaSLIZ.done
-{% endhighlight %}
-
-[cmdline_args_used_for]
+![_config.yml]({{ site.baseurl }}/images/CodeBreaker/Task_6/bash_cmdline_folders.png)
 
 There is enough space to change '10.134.97.12  &' to '127.0.0.1 8080&' without having to edit the msgpack fields. 
 
 ![_config.yml]({{ site.baseurl }}/images/CodeBreaker/Task_6/localhost_install.png)
 
-(I found that the port can be change by looking at the bash for args to bash)
-what are the args used for. folders for. how the files are sent to server, and how commands are returned
+Successfully sent enable bridge command. <br>
 
+![_config.yml]({{ site.baseurl }}/images/CodeBreaker/Task_6/successful_enable_bridge.png)
 
-
-[successful_enable_bridge]
-
-In the dispatch function, a local variable is passed to dispatch_to() and then loaded into edx to call. 
+This will allow us to have a complete replication of the environment. The next step is to determine what other commands the bot recognizes and how they are structured. In the dispatch function, a local variable is passed to dispatch_to() and then loaded into edx to call. 
 
 ![_config.yml]({{ site.baseurl }}/images/CodeBreaker/Task_6/dispatch.png)
 
@@ -113,95 +106,33 @@ The command we most likely want is the cmd\_uninstall, the 6th command in the ar
 
 ![_config.yml]({{ site.baseurl }}/images/CodeBreaker/Task_6/uninstall_message.png)
 
-[uninstall_message_break_out]
+![_config.yml]({{ site.baseurl }}/images/CodeBreaker/Task_6/uninstall_message_break_out.png)
 
-Testing the message gets the desired result.
+Testing the message gets the desired result. <br>
 
-[testing_uninstall_message]
+![_config.yml]({{ site.baseurl }}/images/CodeBreaker/Task_6/testing_uninstall_message.png)
 
-When the bot enables the bridge, it also makes a reactor to monitor the folder the bridge will save the commands in. When a new file is dropped in the reactor will read it, and call umsgpack\_fixarray\_binbin , publish, dispatch\_to, and finally executes the command. ***publish ensures ...***
+When the bot enables the bridge, it also makes a reactor to monitor the folder the bridge will save the commands in. When a new file is dropped in the reactor will read it, and call umsgpack\_fixarray\_binbin , publish, dispatch\_to, and finally executes the command. The publish will ensure that the other bots will execute the command sent by the botmaster. 
 
-The next step is to determine how we can get to the server. An example of a message to upload data can be found in the second message the bot received. The format for the message is MQTT Topic\x00<uuid>\x00<data>. This enables us to upload to the server any information we want, but it will be stored as data on the server. There is also no place to put our exploit cookie or x-client-id. I opened the bridge in IDA to see if I could see anything useful when the POST request is created. The POST request is created in sub_8049A2A. The file to send is opened and strnlen() is used to get the uuid for the upload, which is interesting since the uuid is always 32 bytes. 
+The next step is to determine how we can get our payload to the server. An example of a message to upload data can be found in the second message the bot received. The format for the message is MQTT Topic\x00<uuid>\x00<data>. This enables us to upload to the server any information we want, but it will be stored as data on the server. There is also no place to put our exploit cookie or x-client-id. I opened the bridge in IDA to see if I could see anything useful when the POST request is created. The POST request is created in sub_8049A2A. The file to send is opened and strnlen() is used to get the uuid for the upload, which is interesting since the uuid is always 32 bytes. 
 
 ![_config.yml]({{ site.baseurl }}/images/CodeBreaker/Task_6/get_uuid_from_file.png)
 
-In sub_80492E9 the uuid read from the file is then appended to the url /upload/. There is no check to ensure that the uuid is only 32 chars here. After a few tries I successfully added in new headers by adding them to the end of the uuid. 
+In sub_80492E9 the uuid read from the file is then appended to the url '/upload/'. There is no check to ensure that the uuid is only 32 chars here. This means that we can inject our own HTTP headers into the request by the bot. The process of sending multiple HTTP requests through a single TCP connection is called [HTTP pipelining](https://en.wikipedia.org/wiki/HTTP_pipelining). It is a simple process to inject multiple requests at the end of the uuid for the bot to send to the server. The problem with this is when you try to send the gzip file, which contains NULL bytes. The strnlen() function will see these and end the string read prematurely. Instead the first HTTP request needs to be finished and the headers the bot adds are read as data. Another /upload/ request can then be added that will send the gzip intact. 
 
-1st try<br>
-[first_try]
-final try<br>
-[final_try]
+![_config.yml]({{ site.baseurl }}/images/CodeBreaker/Task_6/http_pipelining.png)
 
-When injecting new headers, the old headers need to be accounted for in the count of the data being sent. I tried sending a request with 'Content-Length: -1', and got a 'HTTP 400 Bad Request' response. Next I tried setting the Content-Length to more bytes than I was sending, this caused the server to wait for remaining bytes. In the end it timed out and closed the connection. Neither of these caused the error that I needed though. 
+The bridge is programmed to make one POST connection, and not expect any return from the server. The bridge will close the connection as soon as the HTTP request is sent. When the connection is closed any requests unprocessed are dropped. This means that the GET /result/ request needs to be started before the bridge has sent all the data and closed the connection. To make the it easier on the participates the network has been setup to send data out of the network at a slower rate. For testing in our test environment the command tc can be used to limit traffic, I got the commands from [Performance Tests Slow Networks Tc](http://insightfullogic.com/2013/Jul/25/performance-tests-slow-networks-tc/).  
 
-
-
-
-
-
-
-To test the exploit on the server through the bridge, the server needs to be ran in docker so /upload/ works. For this I used the dissemble python modules, so I would be able to have some of the debug information. 
-
-I made my own dockerfile containing:
+Simulate slow network traffic: <br>
 {% highlight bash %}
-FROM python:3.5
-
-RUN dpkg --add-architecture i386 && apt-get -qy update && apt-get -qy install libc6:i386 nginx-extras ssl-cert && rm -rf /var/lib/apt/lists/* 
-
-RUN pip install bottle
-
-COPY nginx.conf /etc/nginx/nginx.conf
-COPY nginx_site_default.cfg /etc/nginx/conf.d/default.conf
-
-EXPOSE 80
-EXPOSE 443
-
-COPY unzip /server/
-CMD nginx; python3.5 /server/__main__.py
+sudo tc qdisc add dev lo handle 1: root htb
+sudo tc class add dev lo parent 1: classid 1:11 htb rate 500kbps
+sudo tc filter add dev lo protocol ip prio 1 u32 match ip dport 8080 0xffff flowid 1:11
+sudo tc qdisc add dev lo parent 1:11 netem delay 300ms # also worked without delay
 {% endhighlight %}
 
-The server was then built and ran with the same commands to build/run the server executable provided. 
+Sending exploit message. <br>
+![_config.yml]({{ site.baseurl }}/images/CodeBreaker/Task_6/triggered_exploit.png)
 
-
-
-Below are the commands the bot will recornize. We want the cmd_uninstall command, which will stop the bridge if enabled and then safely remove the bot from our agent. (image from code) also show what unsinstall cmd does in IDA. then send to see test
-
-Explain msgpack, what it is used for, and fields used here
-
-
-
-
-The complete attack will contain a cookie with python code pickled and signed, and the HTTP header X-CLIENT-ID as the string to exploit str.format
-
-
-Task 6
-What I know currently
-
-Attacker called enable_bridge and execute commands
-Commands are packed with msgpack
-command that needs to be queried is X
-
-
-Server flow
-
-format for queue
-
-basic bot flow
-
-Structure of bot commands
-bot installed, then deletes self on filesystem
-bridge installed, ip, files hardcoded
-then cmdline arg buffer rewritten
-watchers created on folders in bridge and bot
-value uploaded to server
-
-folders used in bridge and how they work
-
-str.format vulnerability, since can control HTTP_X_CLIENT_ID. python has no %n so no write capability, and no way to return error messages currently so can't leak information
-
-
-
-![_config.yml]({{ site.baseurl }}/images/CodeBreaker/Task_5/XXXXX.png)
-
-
-Maybe do cyber kill chain or other threat modeling for task
+<iframe width="560" height="315" src="https://www.youtube.com/embed/SdrCsHMbvoU?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
