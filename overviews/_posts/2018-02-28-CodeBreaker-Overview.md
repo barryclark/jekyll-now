@@ -34,4 +34,4 @@ The traces of the deployment of the vulnerability you discovered was found on th
 I was not able to complete task 6 during the competition, but I have been working on it. In this task your team was able to find a server for sale online that matched the profile of the server currently being used by the botmaster. You must get it running, and then find a way to exploit it to queue a command to uninstall the botnet. To finish this task you need to find 4 different vulnerabilities in the software provided. In python you need to use pickle to send python code, exploit a format string, and use a gzip bomb too cause an error. To get the exploit to the server, the bridge needs to be exploited to do HTTP pipelining. 
 
 [Task 6 Part 1 Writeup](https://armerj.github.io/CodeBreaker-Task-6-Part-1) <br>
-[Task 6 Part 1 Writeup](https://armerj.github.io/CodeBreaker-Task-6-Part-2/)
+[Task 6 Part 2 Writeup](https://armerj.github.io/CodeBreaker-Task-6-Part-2)
