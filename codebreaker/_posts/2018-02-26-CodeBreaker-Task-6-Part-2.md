@@ -50,13 +50,15 @@ If the message is addressed to nodes-15411b7b, then the file is saved as /out-XX
 
 The fields used in the commands are: <br> 
 Fixarray (0x90-0x9f) <br> 
- - Send a fixed number of objects <br> 
- - 1-15 elements <br> 
+- Send a fixed number of objects <br> 
+- 1-15 elements <br> 
+
 Int32 (0xd2) <br> 
- - Send 32 bit integer <br> 
+- Send 32 bit integer <br> 
+
 Bin32 (0xc6) <br> 
- - Send binary data <br> 
- - 1-(2^32) bytes <br> 
+- Send binary data <br> 
+- 1-(2^32) bytes <br> 
 
 By examining the dispatch function, the commands that the bot can handle and how to format them can be found. I figured the message to enable the bridge was still in memory, since it had just been enable at the time of the memory capture. The heap for the agent I extracted during task 5 was saved to task.1537.0x8750000.vma. The bridge command can be found in here by looking for 'nodes-', this will take us to the message in memory. We can use this to figure out what is needed for our command. 
 
