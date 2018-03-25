@@ -1,5 +1,5 @@
 _id: 51f98810-3043-11e8-b322-25e31ab1428e
-msg: >-
+message: >-
   I'm not sure what you think of your car example.  The question posed was How
   much should you pay for a car that gets 50 mpg?  Your answer is $7,200, which
   is inflated PV because you neglected the return rate.  Because you are not
@@ -14,5 +14,3 @@ name: RS
 email: 7b030c484890209be41790ce15c6b047
 url: ''
 date: 1521992633
-tags:
-  - comment-subscription
