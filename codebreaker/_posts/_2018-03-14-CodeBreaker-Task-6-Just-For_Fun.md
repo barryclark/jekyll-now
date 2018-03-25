@@ -9,6 +9,10 @@ just for fun.
 
 While the command to exploit the server can be done we can make it more reliable and smaller using the bot's ability to execute shell commands. 
 
+
+ubuntu uses dash, so scripting needs to reflect that
+Created python to exploit server
+
 Drop files in upload file
 
 Use python

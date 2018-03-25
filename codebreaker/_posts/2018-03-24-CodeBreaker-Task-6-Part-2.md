@@ -53,16 +53,16 @@ nodes-XXXXXXXX, where XXXXXXXX is a unique identifier for that bot<br>
 If the message is addressed to nodes-15411b7b, then the file is saved as /out-XXXXXX to the tmp folder that is used to upload to server. If the message is addressed to the other topics then it is unpacked and sent to the function dispatch(). To understand how the commands are structured, I had to research msgpack. A good source is [msgpack spec](https://github.com/msgpack/msgpack/blob/master/spec.md#overview), which explains the fields and how to use them.
 
 The fields used in the commands are: <br> 
-Fixarray (0x90-0x9f):
-- Send a fixed number of objects <br> 
-- 1-15 elements <br>
+1. Fixarray (0x90-0x9f):
+	- Send a fixed number of objects
+	- 1-15 elements
 
-Int32 (0xd2):
-- Send 32 bit integer <br> 
+2. Int32 (0xd2):
+	- Send 32 bit integer
 
-Bin32 (0xc6):
-- Send binary data <br> 
-- 1-(2^32) bytes <br> 
+3. Bin32 (0xc6):
+	- Send binary data
+	- 1-(2^32) bytes
 
 By examining the dispatch function, the commands that the bot can handle and how to format them can be found. I figured the message to enable the bridge was still in memory, since it had just been enable at the time of the memory capture. The heap for the agent I extracted during task 5 was saved to task.1537.0x8750000.vma. The bridge command can be found in here by looking for 'nodes-', this will take us to the message in memory. We can use this to figure out what is needed for our command. 
 
@@ -131,6 +131,8 @@ In sub_80492E9 the uuid read from the file is then appended to the url '/upload/
 ![_config.yml]({{ site.baseurl }}/images/Codebreaker/Task_6/http_pipelining.png)
 
 The bridge is programmed to make one POST connection, and not expect any return from the server. The bridge will close the connection as soon as the HTTP request is sent. When the connection is closed any requests unprocessed are dropped. This means that the GET /result/ request needs to be started before the bridge has sent all the data and closed the connection. To make the it easier on the participates the network has been setup to send data out of the network at a slower rate. For testing in our test environment the command tc can be used to limit traffic, I got the commands from [Performance Tests Slow Networks Tc](http://insightfullogic.com/2013/Jul/25/performance-tests-slow-networks-tc/).  
+
+#4. Test exploit<br>#
 
 Simulate slow network traffic: <br>
 {% highlight bash %}

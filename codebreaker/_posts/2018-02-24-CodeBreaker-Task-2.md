@@ -6,7 +6,7 @@ title: NSA Codebreaker 2017, Task 2
 
 This task asks for a snort or bro rule that can be deployed to find this traffic automatically. The rules must be able to work on encrypted traffic. The network traffic capture that is provided is encrypted, and no key is provided. The traffic from task 1 can be used to better understand what to look for and how to build the rules. 
 
-In task 1 the malicious traffic could be identified when it didn't provide a long enough password. I had originally tried to create a rule that checked the length of the first Application Data packet, this would contain the MQTT server password. Anything that wasn't [X] would be bad. This misses one of the malicious IPs, when the attacker tries to send a password of the correct length. A better way would be to alert on errors when connecting to the server. 
+In task 1 the malicious traffic could be identified when it didn't provide a long enough password. I had originally tried to create a rule that checked the length of the first Application Data packet, this would contain the MQTT server password. Anything that didn't have a frame length of 204 would be bad. This misses one of the malicious IPs, when the attacker tries to send a password of the correct length. A better way would be to alert on errors when connecting to the server. 
 
 ![_config.yml]({{ site.baseurl }}/images/Codebreaker/Task_2/Protocol_version_error.png)
 
@@ -22,11 +22,11 @@ The final alert message is encrypted, but there are a few things that seem uniqu
 
 Below is the snort signatures for the above alerts. 
 
-```
+{% highlight bash %} 
 alert tcp 172.21.37.124 8883 -> any any (msg:"poss malicious - Wrong protocol"; dsize: 7; content:"|46|"; rawbytes; offset: 6; depth: 1; sid: 1000000;)
 alert tcp 172.21.37.124 8883 -> any any (msg:"poss malicious - Handshake failure"; dsize: 7; content:"|28|"; rawbytes; offset: 6; depth: 1; sid: 1000001;)
 alert tcp 172.21.37.124 8883 -> any any (msg:"poss malicious - Encrypted alert"; flags: FPA; dsize: 31; content:"|15|"; rawbytes; offset: 0; depth: 1; sid: 1000002;)
-```
+{% endhighlight %} 
 
 ![_config.yml]({{ site.baseurl }}/images/Codebreaker/Task_2/snort_rule_breakout.png)
 
