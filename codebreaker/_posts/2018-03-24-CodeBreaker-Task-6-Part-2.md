@@ -10,32 +10,36 @@ Our final steps are:<br>
 3. Determine delivery method<br>
 4. Test exploit
 
+#1. Find method to cause critical error#
+
 An error has to be caused somewhere in the server application that will be raised up through bottle. In the [bottle tutorial](https://bottlepy.org/docs/dev/tutorial.html) it mentions that all errors caused by the developer's application are caught and handled by bottle to keep it from crashing the server. This is not entirely true and is in fact different than what the documentation states. The documentation says that most expections are caught and changed to HTTPError. In bottle 0.12.13 there are four expections that are rerasied or not caught by bottle. They are UnicodeError, KeyboardInterrupt, SystemExit, and MemoryError. KeyboardInterrupt and SystemExit are of no use to us, since we can't create these. 
 
-The UnicodeError can be caused to throw an error easily, but the is that this error is caused before the HTTP headers are read in. To make this error useful you would need to send a Unicode byte that when logged by the wsgiref server is ascii. As far as I know this can't be done with Utf-8, so while interesting its not useful. The code was changed in the dev version of bottle to ignore any Unicode characters that are not Utf-8. 
+The UnicodeError can be caused easily, but this error is caused before the HTTP headers are read in. To make this error useful you would need to send a Unicode byte that when logged by the wsgiref server is ascii. As far as I know this can't be done with Utf-8, so while interesting its not useful. The code was changed in the dev version of bottle to ignore any Unicode characters that are not Utf-8. 
 
-The MemoryError is the error we want. This error is created when the server starts to run out of memory. The bot will upload files from the host to the webserver, for the attacker to then access. This is where we will most likely find our opportunity to cause a memory error. I created a route called /memory in my test environment so that I could do a quick test to check my assumption about this error. 
+The MemoryError is the error we want. This error is created when the server starts to run out of memory. The bot will upload files from the host to the webserver, for the botmaster to then access. This is where we will most likely find our opportunity to cause a memory error. I created a route called /memory in my test environment so that I could do a quick test to check my assumption about this error. 
 
 ![_config.yml]({{ site.baseurl }}/images/Codebreaker/Task_6/memory_test.png)
 
-When a file is uploaded to the server it can be encoded as gzip, deflate, or identity (plain text). If the file is gzip it will be stored without any further checks or compression. When the file is deflate the server will instead decompress it in 1GB chunks and then recompress as gzip. This method is used to limit the that data in memory, so there is not a memory error. The interesting thing though is that when a gzip is decompressed there is no check or chunking done. Instead the full gzip is extracted in one go, this can cause a memory error if the file is too big. 
+When a file is uploaded to the server it can be encoded as gzip, deflate, or identity (plain text). If the file is gzip it will be stored without any further checks or compression. When the file is deflate the server will instead decompress it in 1GB chunks and then recompress as gzip. This method is used to limit the data in memory, to not cause a memory error. The interesting thing though is that when a gzip is decompressed there is no check or chunking done. Instead the full gzip is extracted in one go, this can cause a memory error if the file is too big. 
 
-When a file is requested using /result/<uid> the HTTP header Accept-Encoding is used to determine how the file is sent back to the requester. This means that a gzip bomb can uploaded to the server using /upload/ 'Content-Encoding: gzip', and then downloaded again as /result/ with the header 'Accept-Encoding: identity'. When this gzip is decompress it will expand to a much bigger file than can fit in memory and cause a memory error. 
+When a file is requested using /result/<uid> the HTTP header Accept-Encoding is used to determine how the file is sent back to the requester. This means that a gzip bomb can  be uploaded to the server using /upload/ 'Content-Encoding: gzip', and then downloaded again as /result/ with the header 'Accept-Encoding: identity'. When this gzip is decompress it will expand to a much bigger file than can fit in memory and cause a memory error. 
 
 The below code will create a 1.8GB gzip bomb in python. <br>
-{% highlight python %} <br>
-import gzip <br>
-file = open('gzip_bomb_18', 'wb') <br>
+{% highlight python %} 
+import gzip 
+file = open('gzip_bomb_18', 'wb') 
 
-zeros=b'0'*1810612736 <br>
-gzip_bomb = gzip.compress(zeros) <br>
+zeros=b'0'*1810612736 
+gzip_bomb = gzip.compress(zeros) 
 
-file.write(gzip_bomb) <br>
+file.write(gzip_bomb) 
 {% endhighlight %}
 
 Bottle will re-raise this error which will cause the server to log a critical error, this will then trigger the remote executed code in the cookie. Curl can be used to test the exploit on the server. 
 
 ![_config.yml]({{ site.baseurl }}/images/Codebreaker/Task_6/server_memory_error.png)
+
+#2. Get format needed for the bot command<br>#
 
 The instructions for task 6 stated that a message needs to be sent using the MQTT topic found in task 5. The code to handle a MQTT message for the bot.so can be found in the function module\_handle_message. This function checks that the message is meant for the botnet and then calls incoming() to process the message. 
 
@@ -64,9 +68,9 @@ By examining the dispatch function, the commands that the bot can handle and how
 
 ![_config.yml]({{ site.baseurl }}/images/Codebreaker/Task_6/memory_scrap.png)
 
-The highlighted portion is the second message the bot received. It took me a little while to figure this out, but unfortunately this bot has handled a message after the bridge was enabled. Part of the beginning of message that was sent to enable the bridge is missing. If we assume that the second message started overwriting at the beginning of the first message, we can narrow down what is missing. The MQTT topic should be the same length, next we can run through the code in IDA and restore the remaining part of the message. 
+The highlighted portion is the second message the bot received. It took me a little while to figure this out, but unfortunately this bot has handled a message after the bridge was enabled. Part of the beginning of the message that was sent to enable the bridge is missing. If we assume that the second message started overwriting at the beginning of the first message, we can narrow down what is missing. The MQTT topic should be the same length, next we can run through the code in IDA and restore the remaining part of the message. 
 
-The incoming function will set a ptr a string from the beginning of the message data, and which is used after the dispatch function. The string is passed to prepend\_uuid() and is most likely the uuid. This can also be verified from the server code where the uuid used there are also 32 chars long. Next the bot will try to unpack the data sent to it, by calling umsgpack\_fixarray_binbin. This function will call umsgpack\_fixarray\_bins to unpack 2 bins. Following the umsgpack\_fixarray\_bins function, we can see it is checking for a byte between 0x90-0x9f which corresponds to fixarray. It then checks to ensure the number of bins found is the same as the number expected. 
+The incoming function will set a ptr to a string from the beginning of the message data, which is then used after the dispatch function. The string is passed to prepend\_uuid() and is most likely the uuid. This can also be verified from the server code where the uuid used there are also 32 chars long. Next the bot will try to unpack the data sent to it, by calling umsgpack\_fixarray_binbin. This function will call umsgpack\_fixarray\_bins to unpack 2 bins. Following the umsgpack\_fixarray\_bins function, we can see it is checking for a byte between 0x90-0x9f which corresponds to fixarray. It then checks to ensure the number of bins found is the same as the number expected. 
 
 ![_config.yml]({{ site.baseurl }}/images/Codebreaker/Task_6/umsgpack_0x9X.png)
 
@@ -80,7 +84,7 @@ We now have all the information we need to repair the enable bridge command. Aft
 
 The part of the first message that was overwritten was 'MODULE/sys_16575f98/nodes-0e53325b\x00a2328e76932711e78517000c29a16437\x00\x92\xc6\x00\x00\x00' Now that the message has been restored, we can send this to enable the bridge on the agent. The arguments to /tmp/bash need to be modified though to get it to connect to our localhost for the server. 
 
-To find out if the bridge can use a different port we can examine the code in IDA. If it couldn't change the port then we would have set up our network to reflect that. Fortunately, the bridge will take an extra argument which is used to set up the port to use. When the bridge starts up it will check the number of command line arguments. If there are four arguments then it use the port 80, otherwise it will use the 5th argument passed in as the port. 
+To find out if the bridge can use a different port we can examine the code in IDA. If it couldn't change the port then we would have to set up our network to reflect that. Fortunately, the bridge will take an extra argument which is used to set up the port to use. When the bridge starts up it will check the number of command line arguments. If there are four arguments then it uses port 80, otherwise it will use the 5th argument passed in as the port. 
 
 ![_config.yml]({{ site.baseurl }}/images/Codebreaker/Task_6/bash_cmdline_port.png)
 
@@ -114,6 +118,8 @@ Testing the message gets the desired result. <br>
 
 ![_config.yml]({{ site.baseurl }}/images/Codebreaker/Task_6/testing_uninstall_message.png)
 
+#3. Determine delivery method<br>#
+
 When the bot enables the bridge, it also makes a reactor to monitor the folder the bridge will save the commands in. When a new file is dropped in the reactor will read it, and call umsgpack\_fixarray\_binbin , publish, dispatch\_to, and finally executes the command. The publish will ensure that the other bots will execute the command sent by the botmaster. 
 
 The next step is to determine how we can get our payload to the server. An example of a message to upload data can be found in the second message the bot received. The format for the message is MQTT Topic\x00<uuid>\x00<data>. This enables us to upload to the server any information we want, but it will be stored as data on the server. There is also no place to put our exploit cookie or x-client-id. I opened the bridge in IDA to see if I could see anything useful when the POST request is created. The POST request is created in sub_8049A2A. The file to send is opened and strnlen() is used to get the uuid for the upload, which is interesting since the uuid is always 32 bytes. 
@@ -138,3 +144,5 @@ Sending exploit message. <br>
 ![_config.yml]({{ site.baseurl }}/images/Codebreaker/Task_6/triggered_exploit.png)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/SdrCsHMbvoU?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+I have not been able to get the challenge to validate my message as correct, but it works on my own machine. 
