@@ -10,7 +10,7 @@ Our final steps are:<br>
 3. Determine delivery method<br>
 4. Test exploit
 
-#1. Find method to cause critical error#
+# 1. Find method to cause critical error #
 
 An error has to be caused somewhere in the server application that will be raised up through bottle. In the [bottle tutorial](https://bottlepy.org/docs/dev/tutorial.html) it mentions that all errors caused by the developer's application are caught and handled by bottle to keep it from crashing the server. This is not entirely true and is in fact different than what the documentation states. The documentation says that most expections are caught and changed to HTTPError. In bottle 0.12.13 there are four expections that are rerasied or not caught by bottle. They are UnicodeError, KeyboardInterrupt, SystemExit, and MemoryError. KeyboardInterrupt and SystemExit are of no use to us, since we can't create these. 
 
@@ -39,7 +39,7 @@ Bottle will re-raise this error which will cause the server to log a critical er
 
 ![_config.yml]({{ site.baseurl }}/images/Codebreaker/Task_6/server_memory_error.png)
 
-#2. Get format needed for the bot command<br>#
+# 2. Get format needed for the bot command #
 
 The instructions for task 6 stated that a message needs to be sent using the MQTT topic found in task 5. The code to handle a MQTT message for the bot.so can be found in the function module\_handle_message. This function checks that the message is meant for the botnet and then calls incoming() to process the message. 
 
@@ -118,7 +118,7 @@ Testing the message gets the desired result. <br>
 
 ![_config.yml]({{ site.baseurl }}/images/Codebreaker/Task_6/testing_uninstall_message.png)
 
-#3. Determine delivery method<br>#
+# 3. Determine delivery method #
 
 When the bot enables the bridge, it also makes a reactor to monitor the folder the bridge will save the commands in. When a new file is dropped in the reactor will read it, and call umsgpack\_fixarray\_binbin , publish, dispatch\_to, and finally executes the command. The publish will ensure that the other bots will execute the command sent by the botmaster. 
 
@@ -132,7 +132,7 @@ In sub_80492E9 the uuid read from the file is then appended to the url '/upload/
 
 The bridge is programmed to make one POST connection, and not expect any return from the server. The bridge will close the connection as soon as the HTTP request is sent. When the connection is closed any requests unprocessed are dropped. This means that the GET /result/ request needs to be started before the bridge has sent all the data and closed the connection. To make the it easier on the participates the network has been setup to send data out of the network at a slower rate. For testing in our test environment the command tc can be used to limit traffic, I got the commands from [Performance Tests Slow Networks Tc](http://insightfullogic.com/2013/Jul/25/performance-tests-slow-networks-tc/).  
 
-#4. Test exploit<br>#
+# 4. Test exploit #
 
 Simulate slow network traffic: <br>
 {% highlight bash %}
