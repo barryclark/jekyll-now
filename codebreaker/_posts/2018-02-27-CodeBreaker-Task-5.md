@@ -26,7 +26,7 @@ The next objective was to find the attacker's MQTT topic. The agent's memory sho
 
 ![_config.yml]({{ site.baseurl }}/images/Codebreaker/Task_5/linux_proc_dump_1537.png)
 
-From task 4 we know the topic has to contain MODULE in it. Running "strings task.1537.0x8750000.vma | grep MODULE" returns the MQTT topic codebreaker/MODULE/sys_16575f98/nodes-15411b7b. 
+From task 4 we know the topic has to contain MODULE in it. Running "strings task.1537.0x8750000.vma \| grep MODULE" returns the MQTT topic codebreaker/MODULE/sys_16575f98/nodes-15411b7b. 
 
 The last task was the hardest for me, because I made a mistake and it took me a while to recover from it.  For this part a identifying piece of information needs to be found within the /tmp/bash executable. To retrieve the the binary linux_procdump or linux_find_file can be used. The command linux_find_file will retrieve the executable as it is stored on the filesystem. The command linux_procdump will dump the executable from memory which may include additional information. 
 
