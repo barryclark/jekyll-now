@@ -338,7 +338,7 @@ sns.countplot(x='Baseball', data=df)
 
 
 
-![png](Blog_Post_1_files/Blog_Post_1_11_1.png)
+![png](./img/Blog_Post_1_files/Blog_Post_1_11_1.png)
 
 
 
@@ -355,7 +355,7 @@ sns.countplot(x='American football', data=df)
 
 
 
-![png](Blog_Post_1_files/Blog_Post_1_12_1.png)
+![png](./img/Blog_Post_1_files/Blog_Post_1_12_1.png)
 
 
 
@@ -397,7 +397,7 @@ ax = sns.barplot(x = 'Basketball', y = 'Year', data = df)
 ```
 
 
-![png](Blog_Post_1_files/Blog_Post_1_14_0.png)
+![png](./img/Blog_Post_1_files/Blog_Post_1_14_0.png)
 
 
 
@@ -423,7 +423,7 @@ ax = sns.barplot(x = 'Wrestling', y = 'Year', data = df)
 ```
 
 
-![png](Blog_Post_1_files/Blog_Post_1_16_0.png)
+![png](./img/Blog_Post_1_files/Blog_Post_1_16_0.png)
 
 
 
