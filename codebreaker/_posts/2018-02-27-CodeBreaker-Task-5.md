@@ -4,7 +4,7 @@ permalink: /CodeBreaker-Task-5/
 title: NSA Codebreaker 2017, Task 5
 ---
 
-For this task you were given a memory capture from one of the MQTT controllers. You needed to identify the PID of the malicious process, the attacker's MQTT topic, and the attacker's C2 HTTP server. The server could change IP address so you had to find some other identifying information. Below is a template of the commands I ran, X is which command to run. 
+For this task you were given a memory capture from one of the MQTT agents. You needed to identify the PID of the malicious process, the attacker's MQTT topic, and the attacker's C2 HTTP server. The server could change IP address so you had to find some other identifying information. Below is a template of the commands I ran, X is which command to run. 
 
 {% highlight bash %}
 volatility --plugins=/usr/share/volatility/profiles --profile=Linux3_13_0-128-generic-volatilityx64 -f /root/Desktop/codebreaker/agent.lime X
