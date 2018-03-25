@@ -4,6 +4,8 @@ permalink: /CodeBreaker-Task-6-Part-1/
 title: NSA Codebreaker 2017, Task 6 Part 1
 ---
 
+#Getting the Server to Run<br>#
+
 For task 6 you need to send a message to the bot that will then exploit the server and queue up a command to deconstruct the bot network. The botserver, bot.sys, and build config files are provided to you. When trying to run the server, it outputs an error 'File Corrupt'. This error is usually received when the ELF headers are messed up, but running the program under strace shows that the server does start doing something. Running strings on server provides some interesting output. 
 
 You can see multiple references to pyrun, python, and modules that are provided in python standard library. Researching online I determined that [pyrun](https://www.egenix.com/products/python/PyRun/) is used to pack your python program and the standard library together to ran on computer's without python. This is how far I was able to get during the competition, and was not able figure out how to fix the 'File Corrupt' error. 
@@ -36,6 +38,8 @@ To run the server in the docker file 'RUN TZ=UTC touch -mt 200001010000.00 /usr/
 
 ![_config.yml]({{ site.baseurl }}/images/Codebreaker/Task_6/pyserver.png)
 
+#Finding Vulnerabilities in the Server code<br>#
+
 Now that the server code is recovered we can start examining it to look for vulnerabilities. The server contains five routes needed for the operation of the bot net. 
 
 ![_config.yml]({{ site.baseurl }}/images/Codebreaker/Task_6/server_urls.png)
@@ -60,7 +64,9 @@ This line is the key to putting the two exploits we have found together to explo
 
 When the server hits a critical error, it passes the ServerConfig object to the logging module for the formatter to use. We can access this object in the formatter to get the property need. '{args[0]}' can be used to access the first arg passed in to the logging function. Now when the HTTP header contains 'X-CLIENT-ID: {args[0].return_log}' the cookie will be examined on a critical error. Remote code will now be ran on the webserver and can be used to queue a new bot command. A good example of using pickle for arbitrary python code execution can be found at [Dangerous Pickles](https://intoli.com/blog/dangerous-pickles/). I used exec instead of eval, since exec can import modules. 
 
-Below are some of the values you can set the return value of the __reduce__() function to get arbitrary python code execution. 
+#Pickling Arbitrary Python Code<br>#
+
+Below are some of the values you can set the return value of the \_\_reduce\_\_() function to get arbitrary python code execution. 
 
 Write to file directly <br>
 {% highlight python %}
@@ -72,7 +78,7 @@ Use service.queue_push() <br>
 return (exec, ("import sys; sys.modules['pyserver.services'].__dict__['get_services']().queue_push(b'test cookie 2')",))
 {% endhighlight %}
 
-Use service.queue_worker.write <br>
+Use service.queue_worker.write() <br>
 {% highlight python %}
 return (exec, ("import sys; sys.modules['pyserver.services'].__dict__['get_services']().queue_worker.write(b'test cookie 2')",))
 {% endhighlight %}
