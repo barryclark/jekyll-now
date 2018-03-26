@@ -52,7 +52,7 @@ And in between, we held our own talks:
 
 **Cloud Ready Platform** - Semigator told the story of the development team’s (technical) journey, starting from a heavy-weight platform running on an outdated tech-stack, to a cloud-ready application with a process focusing on automation. The talk included a wrap up of the lessons learned on the way as well as a look inside the technologies being used and how the change of technology influenced the structure and the culture in the dev team.
 
-- Operating microservices environments
+**Operating microservices environments** - Adina Toma and Martin Danielsson from team Aurora shared their insights from operating the application iDesk2, which runs in Kubernetes on Azure. The talk covered the basics of monitoring and observability, and how the Aurora team uses cloud native technology like Prometheus to get real time statistics and metrics for infrastructure, network and the application itself.
 
 **Research on Natural Language Processing** - Alexandru Filip showcased the latest applications of Natural Language Processing at Haufe Group, showing us that through Machine Learning and language specific models, search queries can be brought closer to natural language.
 
