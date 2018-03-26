@@ -46,7 +46,7 @@ There were lots of focussed talks - Uwe took on predicting where the future comp
 
 And in between, we held our own talks:
 
-**Hauf-Lexware Romania goes Full Stack** - Raul Firu and Holger Reinhardt took us through how HLRO has changed over the last one and a half years, what was most difficult about these changes, exposing us to the lessons learned from welding technology, structure and culture together, on the journey to becoming a full-stack, engineering center.
+**Haufe-Lexware Romania goes Full Stack** - Raul Firu and Holger Reinhardt took us through how HLRO has changed over the last one and a half years, what was most difficult about these changes, exposing us to the lessons learned from welding technology, structure and culture together, on the journey to becoming a full-stack, engineering center.
 
 **myOnboarding** - Karsten Gaebert and Marco Seifried gave a field report of their project myOnboarding. Next to technical insights they stressed that you have to see the product cycle as a whole, across all functions, roles and ultimately people. Only if all of it works together you are truly agile and deliver customer value fast. Constantly reviewing their process, open for change, they are about to enter the pilot customer phase for the myOnboarding product.
 
