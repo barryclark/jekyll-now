@@ -40,16 +40,22 @@ It was saddening to see Holger go after three great years of moving Haufe Group 
 ![Farewell and Welcome](../images/TECDay-2018/TShirt-uebergabe.jpg)
 
 # The talks
-There were lots of focussed talks - Uwe took on predicting where the future computing is going and what that means for developers today. Eberhard W. showed us how we need to look at Microservices and software architecture in general to make systems our computing systems maintainable.
+There were lots of focussed talks - Uwe took on predicting where the future computing is going and what that means for developers today. Eberhard W. showed us how we need to look at Microservices and software architecture in general to make our computing systems maintainable.
 
 ![This is how you do Microservices.](../images/TECDay-2018/Microservices-Wolff.JPG)
 
-And in between, we held our own talks on
-- Our evolving dev culture
-- New ways to develop software
-- How we dealt with technical debt
+And in between, we held our own talks:
+
+**HLRO goes Full Stack** - Raul Firu and Holger Reinhardt took us through how HLRO has changed over the last one and a half years, what was most difficult about these changes, exposing us to the lessons learned from welding technology, structure and culture together, on the journey to becoming a full-stack, engineering center.
+
+**myOnboarding** - Karsten Gaebert and Marco Seifried gave a field report of their project myOnboarding. Next to technical insights they stressed that you have to see the product cycle as a whole, across all functions, roles and ultimately people. Only if all of it works together you are truly agile and deliver customer value fast. Constantly reviewing their process, open for change, they are about to enter the pilot customer phase for the myOnboarding product.
+
+**Cloud Ready Platform** - Semigator told the story of the development team’s (technical) journey, starting from a heavy-weight platform running on an outdated tech-stack, to a cloud-ready application with a process focusing on automation. The talk included a wrap up of the lessons learned on the way as well as a look inside the technologies being used and how the change of technology influenced the structure and the culture in the dev team.
+
 - Operating microservices environments
-- Research on Natural Language Processing
+
+**Research on Natural Language Processing** - Alexandru Filip showcased the latest applications of Natural Language Processing at Haufe Group, showing us that through Machine Learning and language specific models, search queries can be brought closer to natural language.
+
 - Process and Tools in creating design prototypes
 
 # It spilled over to the Freiburg dev community!
