@@ -56,7 +56,9 @@ And in between, we held our own talks:
 
 **Research on Natural Language Processing** - Alexandru Filip showcased the latest applications of Natural Language Processing at Haufe Group, showing us that through Machine Learning and language specific models, search queries can be brought closer to natural language.
 
-- Process and Tools in creating design prototypes
+**Technology Enables Collaboration** - Frederick Hofmann explained how modern design technology has helped to improve quality and speed in collaboration and prototyping between business, design, dev and the customers for the Haufe Group.
+
+**Integrating different levels of security scans into CI/CD** - Nicholas Dille stepped through the roles that software tools Sonar Cube, Fortify and X-Ray play in ensuring security in the CI / CD pipeline at Haufe.
 
 # It spilled over to the Freiburg dev community!
 
