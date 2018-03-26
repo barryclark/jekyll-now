@@ -334,6 +334,17 @@ blockquote {
   }
 }
 
+.post-image {
+  display: block;
+  max-width: 400px;
+  margin: 0 auto;
+
+  figcaption {
+    text-align: center;
+    font-style: italic;
+  }
+}
+
 .wrapper-footer {
   margin-top: 50px;
   border-top: 1px solid $divider-black;
