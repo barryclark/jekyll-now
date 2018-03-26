@@ -3,6 +3,7 @@ layout: post
 title: Infoevent on 23/03/2018
 lang: EN
 ref: hase
+teaserImage: /images/Osterhase_Die_fertigen_Plakate.jpg
 ---
 
 On March 23, an information event was held at our school for

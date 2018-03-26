@@ -20,8 +20,16 @@ ref: index
 
   {% assign posts=site.posts | where:"lang", page.lang %}
   {% for post in posts %}
-    <article class="post">
+    <article class="post clearfix">
       <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> <span class="meta">{{ post.date | date: "%d/%b/%Y" }}</span></h2>
+
+      {% if post.teaserImage %}
+        <figure class="teaser-image">
+          <a href="{{ post.url }}">
+            <img src="{{ post.teaserImage }}" alt="{{ post.title }}" />
+          </a>
+        </figure>
+      {% endif %}
 
       <div class="entry">
         {{ post.excerpt }}

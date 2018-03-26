@@ -345,6 +345,17 @@ blockquote {
   }
 }
 
+.teaser-image {
+  float: left;
+  max-width: 250px;
+  margin: 0 1em 1em 0;
+
+  @include mobile {
+    float: none;
+    margin: 0 auto;
+  }
+}
+
 .wrapper-footer {
   margin-top: 50px;
   border-top: 1px solid $divider-black;
