@@ -150,7 +150,7 @@ If you want to learn about LSTM networks and how they work, I can’t recommend 
 **Code**
 ------
 
-Because I wanted to use a Word2Vec embedding for the words, we have to first create a mapping from the word to the corresponding index from the word to vector model. The following functions translate between the word2vec embedding index and the word itself
+Because I wanted to use a Word2Vec embedding for the words, we have to first create a mapping from the word to the corresponding index from the word to vector model. The following functions load the word2vec mode and translate between the word2vec embedding index and the word itself.
 
 *Word2Vec-related Functions*
 
