@@ -254,7 +254,7 @@ def sample(a, temp=1.0):
         return np.argmax(a)
 {% endhighlight %}
 
-**Text Generation** 
+*Text Generation*
 
 Okay, now for the fun part. The actual *text generation* of this LSTM text generation model. To get a qualitative sense of how well the model would be able to output lyrics, I wanted to output the lyrics every 5th epoch while training, so I used this  `on_epoch_end` function as a callback in my keras model training step. I vary the temperature for four different outputs for each 5th epoch, just to get a sense of the variety of lyrics it will produce given various temperatures. Basically, we take a seed text, clean it, convert it to our sequence format with padding just like we do the training data, and input it into the model, predicting the next word and adding the predicted word to the input to predict the following word, and so on until we get the full predicted text. 
 
