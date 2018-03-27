@@ -145,7 +145,7 @@ Input gates allow the LSTM model to decide whether or not to update the current 
 
 All of these gates are trainable weights, just like the weights of the hidden layers of a neural network.
 
-If you want to learn about LSTM networks and how they work, I can’t recommend Andrej Karpathy’s [post](http://karpathy.github.io/2015/05/21/rnn-effectiveness/) enough.
+If you want to learn about RNN/LSTM networks and how they work, I can’t recommend Andrej Karpathy’s [post](http://karpathy.github.io/2015/05/21/rnn-effectiveness/) on the effectiveness of RNN's enough.
 
 **Code**
 ------
