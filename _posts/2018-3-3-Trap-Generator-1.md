@@ -156,9 +156,10 @@ def ix_to_word(ix,w2vmodel):
     
 ```
    
-I already prepared the input data into a list of lists, with each sublist containing up to 6 words each. Because the model expects 6 words as input, the data must be padded if the line is less than 6 words long. The following code pads this data with the word2vec index for my catch-all ‘__UNSEEN__’ variable. This will allow the model to ignore words that weren’t in the training index or the word paddings.
+I already prepared the input data into a list of lists, with each sublist containing up to 6 words each. Because the model expects 6 words as input, the data must be padded if the line is less than 6 words long. The following code pads this data with the word2vec index for my catch-all ____UNSEEN____ variable. This will allow the model to ignore words that weren’t in the training index or the word paddings.
 
-```def create_training_data(w2vmodel):
+```
+def create_training_data(w2vmodel):
     #import lyrics
     lyrics_train=pickle.load(open('lines_train_'+str(max_seq_length)+'.p','rb'))
     lyrics_test=pickle.load(open('lines_test_'+str(max_seq_length)+'.p','rb'))
@@ -185,7 +186,8 @@ I already prepared the input data into a list of lists, with each sublist contai
 
 Creating the keras LSTM model:
 
-```def lstm_model(num_layers, dropout, layer_size, w2v_weights, max_seq_length):
+```
+def lstm_model(num_layers, dropout, layer_size, w2v_weights, max_seq_length):
     vocab_size, embedding_size = w2v_weights.shape
     ## create model
     optimizer=optimizers.Adam()
@@ -198,7 +200,7 @@ Creating the keras LSTM model:
     model.add(Dropout(dropout))
     model.add(Dense(vocab_size, activation = 'softmax'))
     model.compile(loss="sparse_categorical_crossentropy", optimizer=optimizer, metrics=['accuracy'])
-    return model```
+    return model
  ```
 
 I used a GPU instance on AWS to train the model...
