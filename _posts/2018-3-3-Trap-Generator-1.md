@@ -15,21 +15,21 @@ If you’re not interested in getting into the technical details of this project
 **Intro to the Trap Music Genre**
 ------
 
-Trap music is a sub genre of hip hop, which emerged in the early aughts with Atlanta-based rappers like Young Jeezy and Gucci Mane and now includes rappers like Lil Yachty and Migos, describes the cycle of poverty and the ‘trap’: a place where drugs are dealt: (https://www.theguardian.com/music/2015/aug/13/trap-kings-how-hip-hop-sub-genre-dominated-decade)
+Trap music is a sub genre of hip hop, which emerged in the early aughts with Atlanta-based rappers like Young Jeezy and Gucci Mane and now includes rappers like Lil Yachty and Migos, describes the cycle of poverty and the ‘trap’: a place where drugs are dealt:
 
 > The United Parcel Service and the people at the post office / 
 > didn’t call you back because you had cloudy piss /
 > So now you back at the trap just that, trapped /
 > Go on and marinate on that for a minute/
-> *SpottieOttieDopaliscious - Outkast*
+*SpottieOttieDopaliscious - Outkast*
 
 In addition to the subject matter of the lyrics, trap music also has common lyrical and beat characteristics throughout the genre, which has given it the reputation for being repetitive and formulaic amongst music critics and fans:
 
 > the formula [for trap] has become almost comically predictable: Open with an ambient intro that encompasses the song’s main 
 > theme, build the groove with some vocal booth ad-libs and producer drops, then open up with the beat track. Now, throw in a  
 > handful of “uuhhs!”s and “whats!” and dive into your first verse. Producers seem perfectly content to allow this sound to 
-> proliferate as is — but what’s keeping this repetitive formula from getting old?(https://flypaper.soundfly.com/produce
-> /why-does-trap-music-keep-working/)
+> proliferate as is — but what’s keeping this repetitive formula from getting old?
+*(https://flypaper.soundfly.com/produce/why-does-trap-music-keep-working/)*
 
 
 So I sought out to see: if trap music is *really* so easy to produce, could a computer write convincing trap lyrics?
@@ -171,7 +171,7 @@ def ix_to_word(ix,w2vmodel):
     
 {% endhighlight %}
    
-I already prepared the input data into a list of lists, with each sublist containing up to 6 words each. Because the model expects 6 words as input, the data must be padded if the line is less than 6 words long. The following code pads this data with the word2vec index for my catch-all ____UNSEEN____ variable. This will allow the model to ignore words that weren’t in the training index or the word paddings.
+I already prepared the input data into a list of lists, with each sublist containing up to 6 words each. Because the model expects 6 words as input, the data must be padded if the line is less than 6 words long. The following code pads this data with the word2vec index for my catch-all ____UNSEEN____ variable. This will allow the model to (hopefully) learn to ignore words that weren’t in the training index or the word paddings.
 
 {% highlight python %}
 
@@ -201,7 +201,13 @@ def create_training_data(w2vmodel):
     
 {% endhighlight %}
 
-Creating the keras LSTM model:
+The code below creates the framework of the deep learning model that will be trained using our training sequences we created above. It took a lot of tuning to determine the best model in terms of the lyrics the model was outputting and validation set loss, and I eventually stopped tuning when it became prohibitively expensive on a AWS GPU instance.
+
+In the code below, the embedding layer utilizes the word2vec embedding to convert the words into vectors as the input to the rest of the LSTM model.
+
+The LSTM layers are, just as they sound, the LSTM layers to the model.  Too many layers became extremely difficult (and expensive on an AWS GPU) to train, so I ended up limiting the number of hidden layers to two. The layer size was the largest of the values I tried at 512 nodes. Although it took longer to train the larger layers, they seemed to understand more of the nuances of the trap lyrics, rather than simply outputting the most common curse words from the data. In some of my smaller layer sizes, it was pretty common to see a chorus that was just a string of curse words in a loop.The `return_sequences=True` statement just returns the sequences as input into the next layer of the model. 
+
+The dropout layer randomly selects nodes to drop out, in order to reduce overfitting to the training set. Because the dataset proved difficult to learn for the model, dropout was limited to only .1 after various testing. 
 
 {% highlight python %}
 
@@ -222,7 +228,184 @@ def lstm_model(num_layers, dropout, layer_size, w2v_weights, max_seq_length):
     
 {% endhighlight %}
 
-I used a GPU instance on AWS to train the model...
+{% highlight python %}
+def sample(a, temp=1.0):
+    try:
+        a = np.log(a) / temp
+        a = np.exp(a) / np.sum(np.exp(a))
+        return np.argmax(np.random.multinomial(1, a, 1))
+            # prediction = np.asarray(a).astype('float64')
+            # prediction = np.log(prediction) / temp
+            # exp_prediction= np.exp(prediction)
+            # prediction = exp_prediction / np.sum(exp_prediction)
+            # probabilities = np.random.multinomial(1, prediction, 1)
+            # return np.argmax(probabilities)
+    except:
+        #print('Temperature cannot be 0. Temperature set to 1.')
+        return np.argmax(a)
+{% endhighlight %}
+
+Okay, now for the fun part. The actual *text generation* of this LSTM text generation model. To get a qualitative sense of how well the model would be able to output lyrics, I wanted to output the lyrics every 5th epoch while training. 
+{% highlight python %}
+
+def generate_text(model, w2vmodel, nb_epoch, length=75, max_seq_length=20, seed="Rain drop drop top"):
+    """
+    Function to output text trained by the neural network. Starts with a randomly selected capital letter.
+    Input:
+        model: fit keras model object
+        length: int. how long the output text should be. Default is 500 characters.
+        seed: the beginning of the generated lyrics. Set to be Migos' viral phrase "rain drop, drop top",
+            but will eventually be user input when hosted
+    Global variables:
+        vocab_size: int. How long the vocab size is
+        seq_length: int. Input size for model
+
+        ADD additional loop for lines (basically change seed each time)
+    """
+    global sample
+    generated = ''
+    sequences = seed
+
+    generated += seed
+
+    #clean seed
+    seed=re.sub(r'<[^<]+?>', '', seed)
+    #remove encoding characters like \x86
+    seed=re.sub(r'[^\x00-\x7f]','',seed)
+    seed=re.sub(r'\#','',seed)
+    #remove punctuation
+    seed=re.sub(r'[^A-Za-z0-9\s]','',seed)
+
+    #shorten if longer than max_seq_length
+    seed = seed.split(' ')[:max_seq_length]
+
+    word_ix_list = []
+    for word in seed:
+        try:
+            word = word_to_ix(word,w2vmodel)
+        except:
+            #since we're using -1 as a null word, we'll use that for words that aren't in the word2vec model
+            print('Warning: {0} not contained in training vocabulary. It will be ignored when computing output.'.format(word))
+            word = word_to_ix('_UNSEEN_',w2vmodel)
+        word_ix_list.append(word)
+
+    #pad word_list with the unseen word2vec if shorter than max_seq_length
+    word_ix_list = [word_to_ix('_UNSEEN_',w2vmodel)] * (max_seq_length-len(word_ix_list)) + word_ix_list
+
+    for temp in [0.2, 0.5, .75, 1.0]:
+        print('temperature: ', temp)
+        for word in range(length):
+            #reshape wordlist
+            word_ix_list = np.asarray(word_ix_list).reshape(1,max_seq_length)
+
+            #prediction = model.predict(x=word_ix_list)
+            #next_ix = np.argmax(prediction)
+            prediction = model.predict(x=word_ix_list,verbose=0)[0]
+            next_ix = sample(prediction, temp)
+            predicted_word = ix_to_word(next_ix,w2vmodel)
+
+            generated += (' ' + predicted_word) #add predicted word to the generated output
+
+            #remove first word from the word list to reduce the array for the max sequence length for the model
+            word_ix_list = np.append(word_ix_list,next_ix)
+            word_ix_list.shape
+            word_ix_list = np.delete(word_ix_list,0,0)
+        print(generated)
+        print('-----')
+    #print(generated)
+    return
+{% endhighlight %}
+
+
+
+{% highlight python %}
+def on_epoch_end(epoch, logs):
+    """ This callback is invoked at the end of each epoch. """
+    global w2vmodel
+    global max_seq_length
+    global word_to_ix
+    global ix_to_word
+    global sample
+    if epoch % 5 == 0:
+        generate_text(model, w2vmodel, epoch, length=75, max_seq_length=max_seq_length,
+         seed="In the kitchen, wrist twistin' like it's stir fry (whip it)\n")
+    return
+
+{% endhighlight %}
+
+
+Here are the functions described above in the full model code:
+
+{% highlight python %}
+#import lyrics
+lyrics_train=pickle.load(open('lines_train.p','rb'))
+lyrics_test=pickle.load(open('lines_test.p','rb'))
+#load word 2 vec model
+w2vmodel = Word2Vec.load('word2vec_model')
+
+w2v_weights = w2vmodel.wv.syn0
+
+#prepare data for training
+vocab_size, embedding_size = w2v_weights.shape
+print('vocab size: ', vocab_size)
+print('embedding size: ', embedding_size)
+max_seq_length = 24
+
+#create training Data
+X_train=[]
+y_train=[]
+for line in lyrics_train:
+    X_train.append([word_to_ix(word,w2vmodel) for word in line[:-1] if word!=''])
+    y_train.append(word_to_ix(line[-1],w2vmodel))
+
+#create testing data
+X_test=[]
+y_test=[]
+for line in lyrics_test:
+    X_test.append([word_to_ix(word,w2vmodel) for word in line[:-1] if word!=''])
+    y_test.append(word_to_ix(line[-1],w2vmodel))
+
+#pad training and testing X data with the unseen word2vec (hopefully the model will learn this is useless)
+X_train=sequence.pad_sequences(X_train, maxlen=max_seq_length, value=word_to_ix('_UNSEEN_',w2vmodel))
+X_test=sequence.pad_sequences(X_test, maxlen=max_seq_length, value=word_to_ix('_UNSEEN_',w2vmodel))
+
+len(X_test)
+len(X_train)
+#for num_layers in [3, 2]:
+#    for layer_size in [256, 128]:
+#        for batch_size in [300, 100]:
+            #for learning_rate in [1E-3, 1E-4]:
+#            for dropout in [.2,.5]:
+num_layers = 2
+batch_size = 128
+epochs=60
+dropout=.2
+layer_size = 512
+model = lstm_model(num_layers, dropout, layer_size, w2v_weights, max_seq_length)
+# Construct a hyperparameter string for each model architecture
+model_name = 'model_dropout_' + str(dropout) + '_num_layers_'+ str(num_layers) +'_layersize_' + str(layer_size) + '_batch_size_' + str(batch_size)
+
+print_callback=LambdaCallback(on_epoch_end=on_epoch_end)
+tbCallBack = TensorBoard(log_dir='./' + model_name +'/logs', histogram_freq=0, write_graph=True, write_images=True)
+checkpointer = ModelCheckpoint(filepath='./' + model_name + '/' + model_name + '_weights.h5', verbose=1, save_best_only=True)
+
+print('##'*50)
+print('Starting training for %s' % model_name)
+
+model.fit(X_train, y_train, validation_data=[X_test,y_test], shuffle=False, batch_size=batch_size,
+          epochs=60, callbacks=[print_callback, tbCallBack, checkpointer], verbose=2)
+
+
+print('Done training!')
+print('Run `tensorboard --logdir=%s` to see the results.' % './' + model_name)
+{% endhighlight %}
+
+**Results**
+------
+To train the model, I used a GPU instance on AWS to train the model, since it cut down the time to train this model tremendously (2 hours per epoch on my local machine down to 10 or so minutes). It definitely didn't come at a minimal cost though (anyone know how to dispute a $400 AWS charge?), but I think the results were (somewhat) worth it in the end.
+
+Examples:
+
 temp=.1
 Seed: a georgia peach
 how that fall get to it yeah get it
@@ -230,7 +413,6 @@ im on some top shit shit
 what is you hoes
 i aint tryna fuck with me cause i got the super water
 
+
 If you’d like to view the full code, you can check it out on my github page here <<insert link>>. You can also try generating your own lyrics by using my Heroku app located [here](trap-generator.zeager.xyz)
 enough. 
-
-
