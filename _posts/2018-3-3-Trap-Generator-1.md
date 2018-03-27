@@ -421,8 +421,6 @@ lookin like me/
 eyepatch irwing on the double six/ 
 got a trap on nomination*
 
-And one last one, for good measure.
-
 *i dont know motherfucking man thats a thousand in dongs/ 
  thousand dollar cashews widows ya/
  you a lot/
