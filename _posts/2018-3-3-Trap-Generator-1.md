@@ -258,7 +258,7 @@ Okay, now for the fun part. The actual *text generation* of this LSTM text gener
 
 
 {% highlight python %}
-
+```
 def generate_text(model, w2vmodel, nb_epoch, length=75, max_seq_length=20, seed="Rain drop drop top"):
     """
     Function to output text trained by the neural network. Starts with a randomly selected capital letter.
@@ -274,9 +274,8 @@ def generate_text(model, w2vmodel, nb_epoch, length=75, max_seq_length=20, seed=
     global sample
     generated = ''
     sequences = seed
-
     generated += seed
-
+    
     #clean seed
     seed=re.sub(r'<[^<]+?>', '', seed)
     #remove encoding characters like \x86
@@ -335,6 +334,7 @@ def on_epoch_end(epoch, logs):
         generate_text(model, w2vmodel, epoch, length=75, max_seq_length=max_seq_length,
          seed="Rain drop, drop top")
     return
+```
 {% endhighlight %}
 
 
@@ -342,6 +342,7 @@ def on_epoch_end(epoch, logs):
 Here are the functions described above in the full model code. We create the data, load the word2vec model, create the training and test data in correct format, create the model and then train the model with varying callbacks.
 
 {% highlight python %}
+```
 #import lyrics
 lyrics_train=pickle.load(open('lines_train.p','rb'))
 lyrics_test=pickle.load(open('lines_test.p','rb'))
@@ -399,6 +400,7 @@ model.fit(X_train, y_train, validation_data=[X_test,y_test], shuffle=False, batc
 
 print('Done training!')
 print('Run `tensorboard --logdir=%s` to see the results.' % './' + model_name)
+```
 {% endhighlight %}
 
 **Results**
