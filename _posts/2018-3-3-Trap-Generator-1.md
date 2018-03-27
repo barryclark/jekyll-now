@@ -31,7 +31,7 @@ In addition to the subject matter of the lyrics, trap music also has common lyri
 > handful of “uuhhs!”s and “whats!” and dive into your first verse. Producers seem perfectly content to allow this sound to 
 > proliferate as is — but what’s keeping this repetitive formula from getting old?
 
-*(https://flypaper.soundfly.com/produce/why-does-trap-music-keep-working/)*
+*[Source](https://flypaper.soundfly.com/produce/why-does-trap-music-keep-working/)*
 
 
 So I sought out to see: if trap music is *really* so easy to produce, could a computer write convincing trap lyrics?
