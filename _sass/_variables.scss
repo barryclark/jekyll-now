@@ -16,12 +16,12 @@ $white: #fff;
 
 // Font stacks
 $helvetica: Helvetica, Arial, sans-serif;
-$helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $georgia: Georgia, serif;
 
 /* type scale */
 
-$type-size-6                  : 0.75em !default;   // ~12px
+//$type-size-6                  : 0.75em !default;   // ~12px
 
 // Mobile breakpoints
 @mixin mobile {
