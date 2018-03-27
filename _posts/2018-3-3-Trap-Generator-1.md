@@ -61,6 +61,7 @@ From these, we now have contextualized output for each word that can find differ
 For this model, because the training data is so specific, I chose to train my own Word2Vec model on trap lyrics using a package called gensim, rather than relying on pre-trained Word2Vec models trained on more formal corpuses like news articles. 
 
 {% highlight python %}
+
 list_lyrics = pickle.load(open('clean_list_lyrics.p','rb'))
 
 #Word2Vec Embedding
@@ -97,7 +98,8 @@ for lyric in list_lyrics:
 w2vmodel = Word2Vec(lines,min_count=1,iter=200)
 
 w2vmodel.wv.most_similar('dollar')
- {% endhighlight %}
+
+{% endhighlight %}
 
 **Plain “Vanilla” Neural Network**
 
@@ -136,7 +138,9 @@ If you want to learn about LSTM networks and how they work, I can’t recommend 
 **Code**
 
 Because I wanted to use a Word2Vec embedding for the words, we have to first create a mapping from the word to the corresponding index from the word to vector model. The following functions translate between the word2vec embedding index and the word itself
+
 {% highlight python %}
+
 def load_w2v_model():
     #load word 2 vec model
     w2vmodel = Word2Vec.load('word2vec_model')
@@ -159,6 +163,7 @@ def ix_to_word(ix,w2vmodel):
 I already prepared the input data into a list of lists, with each sublist containing up to 6 words each. Because the model expects 6 words as input, the data must be padded if the line is less than 6 words long. The following code pads this data with the word2vec index for my catch-all ____UNSEEN____ variable. This will allow the model to ignore words that weren’t in the training index or the word paddings.
 
 {% highlight python %}
+
 def create_training_data(w2vmodel):
     #import lyrics
     lyrics_train=pickle.load(open('lines_train_'+str(max_seq_length)+'.p','rb'))
@@ -182,11 +187,13 @@ def create_training_data(w2vmodel):
     X_test=sequence.pad_sequences(X_test, maxlen=max_seq_length, value=word_to_ix('_UNSEEN_',w2vmodel))
 
     return X_train, y_train, X_test, y_test
+    
 {% endhighlight %}
 
 Creating the keras LSTM model:
 
 {% highlight python %}
+
 def lstm_model(num_layers, dropout, layer_size, w2v_weights, max_seq_length):
     vocab_size, embedding_size = w2v_weights.shape
     ## create model
@@ -201,6 +208,7 @@ def lstm_model(num_layers, dropout, layer_size, w2v_weights, max_seq_length):
     model.add(Dense(vocab_size, activation = 'softmax'))
     model.compile(loss="sparse_categorical_crossentropy", optimizer=optimizer, metrics=['accuracy'])
     return model
+    
 {% endhighlight %}
 
 I used a GPU instance on AWS to train the model...
