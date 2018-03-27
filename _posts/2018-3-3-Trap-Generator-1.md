@@ -58,8 +58,7 @@ Instead, I used skip-gram Word2Vec to as the input to the model, which produces 
 From these, we now have contextualized output for each word that can find different verb tenses and synonyms. 
 
 For this model, because the training data is so specific, I chose to train my own Word2Vec model on trap lyrics using a package called gensim, rather than relying on pre-trained Word2Vec models trained on more formal corpuses like news articles. 
-
-```
+{% highlight python %}
 list_lyrics = pickle.load(open('clean_list_lyrics.p','rb'))
 
 #Word2Vec Embedding
@@ -70,7 +69,7 @@ max_seq_length = 10
 #create lines/sentences
 
 sequences=[]
-# i wanted to include new line characters as a word in order to have the structure of 
+
 for lyric in list_lyrics:
     #add spaces around all new line characters
     lyric = re.sub(r'\n([a-zA-Z])',r'\n \1',lyric)
@@ -82,13 +81,12 @@ for lyric in list_lyrics:
     lyric = re.sub('\n\n\n\n\n','\n',lyric)
     #remove return characters
     lyric = re.sub('\r',' ',lyric)
-
     #split into words
     words = lyric.split(' ')
-
     #split into sequences
     lines = [words[i:i+max_seq_length] for i in range(0,len(words), max_seq_length)]
     sequences.append(lines)
+ {% endhighlight %}
 
 
 
