@@ -21,6 +21,7 @@ Trap music is a sub genre of hip hop, which emerged in the early aughts with Atl
 > didn’t call you back because you had cloudy piss /
 > So now you back at the trap just that, trapped /
 > Go on and marinate on that for a minute/
+
 *SpottieOttieDopaliscious - Outkast*
 
 In addition to the subject matter of the lyrics, trap music also has common lyrical and beat characteristics throughout the genre, which has given it the reputation for being repetitive and formulaic amongst music critics and fans:
@@ -29,6 +30,7 @@ In addition to the subject matter of the lyrics, trap music also has common lyri
 > theme, build the groove with some vocal booth ad-libs and producer drops, then open up with the beat track. Now, throw in a  
 > handful of “uuhhs!”s and “whats!” and dive into your first verse. Producers seem perfectly content to allow this sound to 
 > proliferate as is — but what’s keeping this repetitive formula from getting old?
+
 *(https://flypaper.soundfly.com/produce/why-does-trap-music-keep-working/)*
 
 
@@ -37,7 +39,7 @@ So I sought out to see: if trap music is *really* so easy to produce, could a co
 **The Problem**
 ------
 
-In this text generation problem, I am essentially trying to predict the next word given a sequence of words (a lot of people have also talked about the effectiveness of character-RNN as well, like Andrej Karpathy’s post on the effectiveness of RNNs). Take this example:
+In this text generation problem, I am essentially trying to predict the next word given a sequence of words, although character-level models have been shown to be very effective in text generation as well.
 
 ![_config.yml]({{ site.baseurl }}/images/trap_images/1.png)
 
@@ -173,7 +175,7 @@ def ix_to_word(ix,w2vmodel):
     
 {% endhighlight %}
    
-I already prepared the input data into a list of lists, with each sublist containing up to 6 words each. Because the model expects 6 words as input, the data must be padded if the line is less than 6 words long. The following code pads this data with the word2vec index for my catch-all ____UNSEEN____ variable. This will allow the model to (hopefully) learn to ignore words that weren’t in the training index or the word paddings.
+I already prepared the input data into a list of lists, with each sublist containing up to 6 words each. Because the model expects 6 <<???>> words as input, the data must be padded if the line is less than 6 words long. The following code pads this data with the word2vec index for my catch-all ____UNSEEN____ variable. This will allow the model to (hopefully) learn to ignore words that weren’t in the training index or the word paddings.
 
 *Training/Testing Data Creation and Formatting*
 
@@ -258,7 +260,6 @@ Okay, now for the fun part. The actual *text generation* of this LSTM text gener
 
 
 {% highlight python %}
-```
 def generate_text(model, w2vmodel, nb_epoch, length=75, max_seq_length=20, seed="Rain drop drop top"):
     """
     Function to output text trained by the neural network. Starts with a randomly selected capital letter.
@@ -334,7 +335,6 @@ def on_epoch_end(epoch, logs):
         generate_text(model, w2vmodel, epoch, length=75, max_seq_length=max_seq_length,
          seed="Rain drop, drop top")
     return
-```
 {% endhighlight %}
 
 
@@ -342,7 +342,6 @@ def on_epoch_end(epoch, logs):
 Here are the functions described above in the full model code. We create the data, load the word2vec model, create the training and test data in correct format, create the model and then train the model with varying callbacks.
 
 {% highlight python %}
-```
 #import lyrics
 lyrics_train=pickle.load(open('lines_train.p','rb'))
 lyrics_test=pickle.load(open('lines_test.p','rb'))
@@ -400,7 +399,6 @@ model.fit(X_train, y_train, validation_data=[X_test,y_test], shuffle=False, batc
 
 print('Done training!')
 print('Run `tensorboard --logdir=%s` to see the results.' % './' + model_name)
-```
 {% endhighlight %}
 
 **Results**
@@ -411,5 +409,4 @@ Examples:
 
 <<insert examples>>
 
-If you’d like to view the full code, you can check it out on my github page [here](https://github.com/frankiezeager/trap_generator). You can also try generating your own lyrics by using my Heroku app located [here](http://trap-generator.zeager.xyz)
-enough. 
+If you’d like to view the full code, you can check it out on my github page [here](https://github.com/frankiezeager/trap_generator). You can also try generating your own lyrics by using my Heroku app located [here](http://trap-generator.zeager.xyz). 
