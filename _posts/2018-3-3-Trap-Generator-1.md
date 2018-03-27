@@ -9,9 +9,6 @@ If you’re not interested in getting into the technical details of this project
 
 *Warning: This post will have some foul language (just the nature of the data)*
 
-<<generated lyrics>>
-<<maybe a migos song or st>>
-
 **Intro to the Trap Music Genre**
 ------
 
@@ -28,6 +25,14 @@ Trap music is a sub genre of hip hop, which emerged in the early aughts with Atl
 
 *[Source](https://flypaper.soundfly.com/produce/why-does-trap-music-keep-working/)*
 
+For example, here's an actual popular trap song -- Versace by Migos:
+
+*Versace, Versace Versace, Versace Versace/
+Versace, Versace Versace, Versace Versace/
+Versace, Versace, Medusa head on me like I'm 'Luminati/
+I know that you like it, Versace, my neck and my wrist is so sloppy/
+Versace, Versace, I love it, Versace the top of my Audi/
+My plug is John Gotti, he give me the ducks, I know that they're mighty*
 
 So I sought out to see: if trap music is *really* so easy to produce, could a computer write convincing trap lyrics?
 
@@ -94,8 +99,6 @@ for lyric in list_lyrics:
 #now we have a list of each song, with a list containing the words in the song, split by sequence seq_length
 
 w2vmodel = Word2Vec(lines,min_count=1,iter=200)
-
-w2vmodel.wv.most_similar('dollar')
 
 {% endhighlight %}
 
@@ -233,8 +236,23 @@ def lstm_model(num_layers, dropout, layer_size, w2v_weights, max_seq_length):
 
 Temperature of a softmax output allows you to play with how confident you want the RNN to be in its output. If you reduce the temperature near 0, the model will be very confident in its output, but you also are more likely to run into infinite loops. On the otherhand, if you increase the temperature close to 1, it will be less conservative in its predictions and will likely have more interesting and diverse text at the expense of errors (e.g. in part of speech, etc.).
 
-<<insert examples>>
+For example, here's the output with a temperature of 1:
+*shawty sucked a star* 
+*so she got the hood with me like a man they going hard to find me the shit to like* 
+*she fucked me up like a egg*
+*my dope and my girl like a dope boy* 
 
+It gets a variety of things wrong, like the phrase *a egg* instead of *an egg*, but personally I think the metaphors in the examples with higher temperature are much more hilarious than with a lower temperature (my dope and my girl like a dope boy?).
+
+With a temperature of 0.2:
+*im just a young rapper and the other my world god damn god*
+ *my baby in the club in my jacuzzi*
+ *savage it like i can get a brick on a new whip*
+ *young nigga in the club* 
+ *fuck the bitch bitch fuck bitch*
+ 
+ It gets much more of the cadence and grammar right, but sort of resorts to a loop of curse words at the end.
+ 
 {% highlight python %}
 def sample(a, temp=1.0):
     try:
@@ -395,10 +413,21 @@ print('Run `tensorboard --logdir=%s` to see the results.' % './' + model_name)
 
 **Results**
 ------
-To train the model, I used a GPU instance on AWS to train the model, since it cut down the time to train this model tremendously (2 hours per epoch on my local machine down to 10 or so minutes). It definitely didn't come at a minimal cost though (anyone know how to dispute a $400 AWS charge?), but I think the results were (somewhat) worth it in the end.
 
-Examples:
+Here are a few of my favorite lines that were generated using this model:
 
-<<insert examples>>
+*killer girls in my rental/
+lookin like me/
+eyepatch irwing on the double six/ 
+got a trap on nomination*
+
+And one last one, for good measure.
+
+*i dont know motherfucking man thats a thousand in dongs/ 
+ thousand dollar cashews widows ya/
+ you a lot/
+ fools are the from atlanta*
+
+Overall, the results don't seem exactly like a real trap song in the least, which goes to show that trap music isn't really as formulaic as the music critics complain about. This certainly was a fun side project, but I think the overall model could have definitely been improved with 1) more money (any one know how to dispute a $300 AWS charge??) 2) a character-based RNN model over the word-level model I used in this example. I thought the word level word2vec input would allow the model to have more context for the songs it was generating, but I think having a 30,000+ word vocabulary size vs a 26+ character vocabulary size made it *much* more difficult to train.
 
 If you’d like to view the full code, you can check it out on my github repository [here](https://github.com/frankiezeager/trap_generator). You can also try generating your own lyrics by using my Heroku app located [here](http://trap-generator.zeager.xyz). 
