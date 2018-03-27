@@ -13,6 +13,7 @@ If you’re not interested in getting into the technical details of this project
 <<maybe a migos song or st>>
 
 **Intro to the Trap Music Genre**
+
 Trap music is a sub genre of hip hop, which emerged in the early aughts with Atlanta-based rappers like Young Jeezy and Gucci Mane and now includes rappers like Lil Yachty and Migos, describes the cycle of poverty and the ‘trap’: a place where drugs are dealt: (https://www.theguardian.com/music/2015/aug/13/trap-kings-how-hip-hop-sub-genre-dominated-decade)
 
 > The United Parcel Service and the people at the post office / 
@@ -58,6 +59,7 @@ Instead, I used skip-gram Word2Vec to as the input to the model, which produces 
 From these, we now have contextualized output for each word that can find different verb tenses and synonyms. 
 
 For this model, because the training data is so specific, I chose to train my own Word2Vec model on trap lyrics using a package called gensim, rather than relying on pre-trained Word2Vec models trained on more formal corpuses like news articles. 
+
 {% highlight python %}
 list_lyrics = pickle.load(open('clean_list_lyrics.p','rb'))
 
@@ -86,7 +88,7 @@ for lyric in list_lyrics:
     #split into sequences
     lines = [words[i:i+max_seq_length] for i in range(0,len(words), max_seq_length)]
     sequences.append(lines)
- {% endhighlight %}
+ 
 
 
 
@@ -95,7 +97,7 @@ for lyric in list_lyrics:
 w2vmodel = Word2Vec(lines,min_count=1,iter=200)
 
 w2vmodel.wv.most_similar('dollar')
-```
+ {% endhighlight %}
 
 **Plain “Vanilla” Neural Network**
 
@@ -134,7 +136,7 @@ If you want to learn about LSTM networks and how they work, I can’t recommend 
 **Code**
 
 Because I wanted to use a Word2Vec embedding for the words, we have to first create a mapping from the word to the corresponding index from the word to vector model. The following functions translate between the word2vec embedding index and the word itself
-```
+{% highlight python %}
 def load_w2v_model():
     #load word 2 vec model
     w2vmodel = Word2Vec.load('word2vec_model')
@@ -152,11 +154,11 @@ def word_to_ix(word,w2vmodel):
 def ix_to_word(ix,w2vmodel):
     return w2vmodel.wv.index2word[ix]
     
-```
+{% endhighlight %}
    
 I already prepared the input data into a list of lists, with each sublist containing up to 6 words each. Because the model expects 6 words as input, the data must be padded if the line is less than 6 words long. The following code pads this data with the word2vec index for my catch-all ____UNSEEN____ variable. This will allow the model to ignore words that weren’t in the training index or the word paddings.
 
-```
+{% highlight python %}
 def create_training_data(w2vmodel):
     #import lyrics
     lyrics_train=pickle.load(open('lines_train_'+str(max_seq_length)+'.p','rb'))
@@ -180,11 +182,11 @@ def create_training_data(w2vmodel):
     X_test=sequence.pad_sequences(X_test, maxlen=max_seq_length, value=word_to_ix('_UNSEEN_',w2vmodel))
 
     return X_train, y_train, X_test, y_test
-```
+{% endhighlight %}
 
 Creating the keras LSTM model:
 
-```
+{% highlight python %}
 def lstm_model(num_layers, dropout, layer_size, w2v_weights, max_seq_length):
     vocab_size, embedding_size = w2v_weights.shape
     ## create model
@@ -199,7 +201,7 @@ def lstm_model(num_layers, dropout, layer_size, w2v_weights, max_seq_length):
     model.add(Dense(vocab_size, activation = 'softmax'))
     model.compile(loss="sparse_categorical_crossentropy", optimizer=optimizer, metrics=['accuracy'])
     return model
- ```
+{% endhighlight %}
 
 I used a GPU instance on AWS to train the model...
 temp=.1
