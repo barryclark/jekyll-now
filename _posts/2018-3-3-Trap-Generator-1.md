@@ -82,10 +82,7 @@ for lyric in list_lyrics:
     lyric = re.sub(r'\n([a-zA-Z])',r'\n \1',lyric)
     lyric = re.sub(r'([a-zA-Z])\n',r'\1 \n',lyric)
     #deal with multiple new line characters, but keeping single new line characters
-    lyric = re.sub('\n\n','\n',lyric)
-    lyric = re.sub('\n\n\n','\n',lyric)
-    lyric = re.sub('\n\n\n\n','\n',lyric)
-    lyric = re.sub('\n\n\n\n\n','\n',lyric)
+    lyric = re.sub(r'\n{2,}','\n',lyric)
     #remove return characters
     lyric = re.sub('\r',' ',lyric)
     #split into words
