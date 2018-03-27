@@ -151,10 +151,6 @@ img {
 // .masthead
 //
 
-.wrapper-masthead {
-  margin-bottom: 50px;
-}
-
 .masthead {
   padding: 20px 0;
   border-bottom: 1px solid $lightGray;
@@ -287,16 +283,16 @@ nav {
 }
 
 .share-page {
-  margin: -5px 0 0 0;
   color: $gray;
-  font-size: 18px;
+  font-size: 16px;
   float: right;
-  margin: 7px;
-  font-style: italic;
+  margin: 10px;
 }
 
 .fab {
-  height: 100%;
+  font-size: 23px;
+  vertical-align: middle;
+  margin: 2px
 }
 
 footer {
@@ -308,3 +304,17 @@ footer {
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
 @import "svg-icons";
+
+
+.wrapper-masthead {
+  top: 0;
+  z-index: 100;
+  position: fixed;
+  width: 100%;
+  background: white;
+}
+
+#not-header {
+  top: 100px;
+  position: relative;
+}
