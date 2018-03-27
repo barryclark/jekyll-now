@@ -150,6 +150,8 @@ If you want to learn about LSTM networks and how they work, I can’t recommend 
 
 Because I wanted to use a Word2Vec embedding for the words, we have to first create a mapping from the word to the corresponding index from the word to vector model. The following functions translate between the word2vec embedding index and the word itself
 
+*Word2Vec-related Functions*
+
 {% highlight python %}
 
 def load_w2v_model():
@@ -172,6 +174,8 @@ def ix_to_word(ix,w2vmodel):
 {% endhighlight %}
    
 I already prepared the input data into a list of lists, with each sublist containing up to 6 words each. Because the model expects 6 words as input, the data must be padded if the line is less than 6 words long. The following code pads this data with the word2vec index for my catch-all ____UNSEEN____ variable. This will allow the model to (hopefully) learn to ignore words that weren’t in the training index or the word paddings.
+
+*Training/Testing Data Creation and Formatting*
 
 {% highlight python %}
 
@@ -201,13 +205,16 @@ def create_training_data(w2vmodel):
     
 {% endhighlight %}
 
+*Keras Deep Learning Model Architecture*
+
 The code below creates the framework of the deep learning model that will be trained using our training sequences we created above. It took a lot of tuning to determine the best model in terms of the lyrics the model was outputting and validation set loss, and I eventually stopped tuning when it became prohibitively expensive on a AWS GPU instance.
 
 In the code below, the embedding layer utilizes the word2vec embedding to convert the words into vectors as the input to the rest of the LSTM model.
 
-The LSTM layers are, just as they sound, the LSTM layers to the model.  Too many layers became extremely difficult (and expensive on an AWS GPU) to train, so I ended up limiting the number of hidden layers to two. The layer size was the largest of the values I tried at 512 nodes. Although it took longer to train the larger layers, they seemed to understand more of the nuances of the trap lyrics, rather than simply outputting the most common curse words from the data. In some of my smaller layer sizes, it was pretty common to see a chorus that was just a string of curse words in a loop.The `return_sequences=True` statement just returns the sequences as input into the next layer of the model. 
+The LSTM layers are, just as they sound, the LSTM layers to the model.  Too many layers became extremely difficult (and expensive on an AWS EC2 GPU instance) to train, so I ended up limiting the number of hidden layers to two. The layer size was the largest of the values I tried at 512 nodes. Although it took longer to train the larger layers, they seemed to understand more of the nuances of the trap lyrics, rather than simply outputting the most common curse words from the data. In some of my smaller layer sizes, it was pretty common to see a chorus that was just a string of curse words in a loop.The `return_sequences=True` statement just returns the sequences as input into the next layer of the model. 
 
 The dropout layer randomly selects nodes to drop out, in order to reduce overfitting to the training set. Because the dataset proved difficult to learn for the model, dropout was limited to only .1 after various testing. 
+The final layer is a softmax output layer. This outputs a probability, for each word in our vocabulary, of what our next word is.
 
 {% highlight python %}
 
@@ -228,24 +235,28 @@ def lstm_model(num_layers, dropout, layer_size, w2v_weights, max_seq_length):
     
 {% endhighlight %}
 
+*Temperature*
+
+Temperature of a softmax output allows you to play with how confident you want the RNN to be in its output. If you reduce the temperature near 0, the model will be very confident in its output, but you also are more likely to run into infinite loops. On the otherhand, if you increase the temperature close to 1, it will be less conservative in its predictions and will likely have more interesting and diverse text at the expense of errors (e.g. in part of speech, etc.).
+
+<<insert examples>>
+
 {% highlight python %}
 def sample(a, temp=1.0):
     try:
         a = np.log(a) / temp
         a = np.exp(a) / np.sum(np.exp(a))
         return np.argmax(np.random.multinomial(1, a, 1))
-            # prediction = np.asarray(a).astype('float64')
-            # prediction = np.log(prediction) / temp
-            # exp_prediction= np.exp(prediction)
-            # prediction = exp_prediction / np.sum(exp_prediction)
-            # probabilities = np.random.multinomial(1, prediction, 1)
-            # return np.argmax(probabilities)
     except:
         #print('Temperature cannot be 0. Temperature set to 1.')
         return np.argmax(a)
 {% endhighlight %}
 
-Okay, now for the fun part. The actual *text generation* of this LSTM text generation model. To get a qualitative sense of how well the model would be able to output lyrics, I wanted to output the lyrics every 5th epoch while training. 
+**Text Generation** 
+
+Okay, now for the fun part. The actual *text generation* of this LSTM text generation model. To get a qualitative sense of how well the model would be able to output lyrics, I wanted to output the lyrics every 5th epoch while training, so I used this  `on_epoch_end` function as a callback in my keras model training step. I vary the temperature for four different outputs for each 5th epoch, just to get a sense of the variety of lyrics it will produce given various temperatures. Basically, we take a seed text, clean it, convert it to our sequence format with padding just like we do the training data, and input it into the model, predicting the next word and adding the predicted word to the input to predict the following word, and so on until we get the full predicted text. 
+
+
 {% highlight python %}
 
 def generate_text(model, w2vmodel, nb_epoch, length=75, max_seq_length=20, seed="Rain drop drop top"):
@@ -259,8 +270,6 @@ def generate_text(model, w2vmodel, nb_epoch, length=75, max_seq_length=20, seed=
     Global variables:
         vocab_size: int. How long the vocab size is
         seq_length: int. Input size for model
-
-        ADD additional loop for lines (basically change seed each time)
     """
     global sample
     generated = ''
@@ -314,11 +323,7 @@ def generate_text(model, w2vmodel, nb_epoch, length=75, max_seq_length=20, seed=
         print('-----')
     #print(generated)
     return
-{% endhighlight %}
-
-
-
-{% highlight python %}
+    
 def on_epoch_end(epoch, logs):
     """ This callback is invoked at the end of each epoch. """
     global w2vmodel
@@ -328,13 +333,13 @@ def on_epoch_end(epoch, logs):
     global sample
     if epoch % 5 == 0:
         generate_text(model, w2vmodel, epoch, length=75, max_seq_length=max_seq_length,
-         seed="In the kitchen, wrist twistin' like it's stir fry (whip it)\n")
+         seed="Rain drop, drop top")
     return
-
 {% endhighlight %}
 
 
-Here are the functions described above in the full model code:
+
+Here are the functions described above in the full model code. We create the data, load the word2vec model, create the training and test data in correct format, create the model and then train the model with varying callbacks.
 
 {% highlight python %}
 #import lyrics
@@ -349,7 +354,7 @@ w2v_weights = w2vmodel.wv.syn0
 vocab_size, embedding_size = w2v_weights.shape
 print('vocab size: ', vocab_size)
 print('embedding size: ', embedding_size)
-max_seq_length = 24
+max_seq_length = 10
 
 #create training Data
 X_train=[]
@@ -371,18 +376,14 @@ X_test=sequence.pad_sequences(X_test, maxlen=max_seq_length, value=word_to_ix('_
 
 len(X_test)
 len(X_train)
-#for num_layers in [3, 2]:
-#    for layer_size in [256, 128]:
-#        for batch_size in [300, 100]:
-            #for learning_rate in [1E-3, 1E-4]:
-#            for dropout in [.2,.5]:
 num_layers = 2
 batch_size = 128
 epochs=60
 dropout=.2
 layer_size = 512
 model = lstm_model(num_layers, dropout, layer_size, w2v_weights, max_seq_length)
-# Construct a hyperparameter string for each model architecture
+
+#Construct a hyperparameter string for each model architecture
 model_name = 'model_dropout_' + str(dropout) + '_num_layers_'+ str(num_layers) +'_layersize_' + str(layer_size) + '_batch_size_' + str(batch_size)
 
 print_callback=LambdaCallback(on_epoch_end=on_epoch_end)
@@ -406,13 +407,7 @@ To train the model, I used a GPU instance on AWS to train the model, since it cu
 
 Examples:
 
-temp=.1
-Seed: a georgia peach
-how that fall get to it yeah get it
-im on some top shit shit
-what is you hoes
-i aint tryna fuck with me cause i got the super water
+<<insert examples>>
 
-
-If you’d like to view the full code, you can check it out on my github page here <<insert link>>. You can also try generating your own lyrics by using my Heroku app located [here](trap-generator.zeager.xyz)
+If you’d like to view the full code, you can check it out on my github page [here](https://github.com/frankiezeager/trap_generator). You can also try generating your own lyrics by using my Heroku app located [here](trap-generator.zeager.xyz)
 enough. 
