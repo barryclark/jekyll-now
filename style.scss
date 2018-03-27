@@ -286,6 +286,19 @@ nav {
   background-color: $lightGray;
 }
 
+.share-page {
+  margin: -5px 0 0 0;
+  color: $gray;
+  font-size: 18px;
+  float: right;
+  margin: 7px;
+  font-style: italic;
+}
+
+.fab {
+  height: 100%;
+}
+
 footer {
   padding: 20px 0;
   text-align: center;
