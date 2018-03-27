@@ -401,4 +401,4 @@ Examples:
 
 <<insert examples>>
 
-If you’d like to view the full code, you can check it out on my github page [here](https://github.com/frankiezeager/trap_generator). You can also try generating your own lyrics by using my Heroku app located [here](http://trap-generator.zeager.xyz). 
+If you’d like to view the full code, you can check it out on my github repository [here](https://github.com/frankiezeager/trap_generator). You can also try generating your own lyrics by using my Heroku app located [here](http://trap-generator.zeager.xyz). 
