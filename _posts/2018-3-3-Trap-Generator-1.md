@@ -15,14 +15,14 @@ If you’re not interested in getting into the technical details of this project
 **Intro to the Trap Music Genre**
 ------
 
-Trap music is a sub genre of hip hop, which emerged in the early aughts with Atlanta-based rappers like Young Jeezy and Gucci Mane and now includes rappers like Lil Yachty and Migos, describes the cycle of poverty and the ‘trap’: a place where drugs are dealt:
-
-*The United Parcel Service and the people at the post office / 
-didn’t call you back because you had cloudy piss /
-So now you back at the trap just that, trapped /
-Go on and marinate on that for a minute/*
+*The United Parcel Service and the people at the post office*
+*didn’t call you back because you had cloudy piss*
+*So now you back at the trap just that, trapped*
+*Go on and marinate on that for a minute*
 
 *SpottieOttieDopaliscious - Outkast*
+
+Trap music is a sub genre of hip hop, which emerged in the early aughts with Atlanta-based rappers like Young Jeezy and Gucci Mane and now includes rappers like Lil Yachty and Migos, describes the cycle of poverty and the ‘trap’: a place where drugs are dealt.
 
 In addition to the subject matter of the lyrics, trap music also has common lyrical and beat characteristics throughout the genre, which has given it the reputation for being repetitive and formulaic amongst music critics and fans:
 
