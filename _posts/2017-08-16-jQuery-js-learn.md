@@ -101,3 +101,17 @@ Now the charts always resize in every screen.
 </div>
 <!-- line_2 end-->
 </div>
+
+### 收藏切换和点赞切换
+```js
+$(document).ready(function () {
+    var $light_num = {$data['light']|default=0};
+    $(".likey").click(function () {
+        $(".likey i").toggleClass("cur_yes");
+    })
+    $(".dianzan").toggle(function(){
+          $(".dianzan i").text($light_num+1).addClass("cur_yes");},function(){
+          $(".dianzan i").text($light_num).removeClass("cur_yes");
+    });
+})
+```
