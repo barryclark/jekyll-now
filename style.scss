@@ -15,6 +15,7 @@
 
 html {
   font-size: 100%;
+  font-family: 'Open Sans', sans-serif;
 }
 
 body {
@@ -31,7 +32,6 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $helveticaNeue;
   color: $darkerGray;
   font-weight: bold;
 
@@ -286,13 +286,16 @@ nav {
   color: $gray;
   font-size: 16px;
   float: right;
-  margin: 10px;
+  margin: 10px 0px 10px 0px;
+  padding: 3px 5px 3px 5px;
+  border-radius: 3px;
+  border:1px solid rgb(225, 225, 225);
 }
 
 .fab {
   font-size: 23px;
   vertical-align: middle;
-  margin: 2px
+  margin: 2px;
 }
 
 footer {
@@ -317,4 +320,34 @@ footer {
 #not-header {
   top: 100px;
   position: relative;
+}
+
+.title-figure {
+  width:100%;
+  max-height:300px;
+  overflow:hidden;
+  position:relative;
+  text-align:left;
+  color:white;
+  margin:40px 0px 20px 0px;
+  border-radius: 5px;
+
+  .title-img {
+    position: relative;
+    top:25%;
+    transform: translateY(-25%);
+    filter: brightness(85%);
+  }
+  .title-text {
+    position:absolute;
+    bottom:30px;
+    left:0px;
+    font-size:36px;
+    width:100%;
+    background-color: rgba(0,0,0,.65);
+    padding: 30px 20px 15px 20px;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight:500;
+  }
 }

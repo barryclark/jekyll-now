@@ -1,6 +1,6 @@
 ---
 layout: post
-title: A short introduction, and what this blog is going to be about
+title: A Short Introduction
 date: 2017-10-08 20:47
 author: Dorian Brown
 categories: [General]
@@ -8,9 +8,11 @@ picture: /assets/images/solitaire.jpg
 excerpt: Well this is going to be my first post. As I'm sure lots of first time bloggers have run into, you feel a lot of pressure to make the first post amazing. You feel the need to start with a great first post, because you've told all your friends you're going to make a blog, and some of them are eagerly awaiting that first post. And then pressure builds…
 ---
 
-# Introduction
+## Starting things off
 
 Well this is going to be my first post. As I'm sure lots of first time bloggers have run into, you feel a lot of pressure to make the first post amazing. You feel the need to start with a great first post, because you've told all your friends you're going to make a blog, and some of them are eagerly awaiting that first post. And then pressure builds…
+
+## Data-Fu
 
 Let me give a brief introduction of who I am. My name is Dorian Brown, and for about a year now I get to officially call myself a data scientist (atleast that's the title at my company). I've been living in the Netherlands for about 10 years in a small student town called Leiden near Amsterdam. It's worth a visit for a day if you're ever in the area. I studied theoretical mathematics here which I enjoyed a lot, and focused mostly on probablilty, statistics, optimization and algorithms.
 
