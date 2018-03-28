@@ -29,10 +29,7 @@ For example, here's an actual popular trap song -- Versace by Migos:
 
 *Versace, Versace Versace, Versace Versace/
 Versace, Versace Versace, Versace Versace/
-Versace, Versace, Medusa head on me like I'm 'Luminati/
-I know that you like it, Versace, my neck and my wrist is so sloppy/
-Versace, Versace, I love it, Versace the top of my Audi/
-My plug is John Gotti, he give me the ducks, I know that they're mighty*
+Versace, Versace, Medusa head on me like I'm 'Luminati*
 
 So I sought out to see: if trap music is *really* so easy to produce, could a computer write convincing trap lyrics?
 
@@ -52,7 +49,7 @@ By moving this window of input sequences as we predict more words, the model can
 **The Data**
 ------
 
-The first thing you need to train such a model is a large database of sequences like the ones above to train on. There’s no common database for trap lyrics, so for this model I created a simple web scraper to scrape lyrics from AZLyrics for a selection of hand-selected trap artists. I scraped around X number of songs from X number of artists for this project. These were further broken down into five word sequences (the input sequence), with a corresponding output word, which created about 500,000 unique training examples. 
+The first thing you need to train such a model is a large database of sequences like the ones above to train on. There’s no common database for trap lyrics, so for this model I created a simple web scraper to scrape lyrics from AZLyrics for a selection of hand-selected trap artists. I scraped the entire discography of 31 atists for this project. These were further broken down into five word sequences (the input sequence), with a corresponding output word, which created about 500,000 unique training examples. 
 
 **Explaining the Model**
 ------
