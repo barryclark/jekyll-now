@@ -1,0 +1,38 @@
+<div class="js-comments">
+    {% if site.data.comments[page.slug] %}
+      <h4 class="page__comments-title">{{ site.data.ui-text[site.locale].comments_title | default: "Comments" }}</h4>
+      {% assign comments = site.data.comments[page.slug] | sort %}
+
+      {% for comment in comments %}
+        {% assign email = comment[1].email %}
+        {% assign name = comment[1].name %}
+        {% assign url = comment[1].url %}
+        {% assign date = comment[1].date %}
+        {% assign message = comment[1].message %}
+        {% include comment.html index=forloop.index email=email name=name url=url date=date message=message %}
+      {% endfor %}
+    {% endif %}
+
+    <div class="page__comments-form">
+            <h4 class="page__comments-title">Leave a Comment</h4>
+            <p class="small">Your email address will not be published. Required fields are marked <span class="required">*</span></p>
+            <form id="new_comment" class="page__comments-form js-form form" method="post" action="https://api.staticman.net/v2/entry/dorianbrown/master/comments">
+              <div class="form-group">
+                <label for="comment-form-message"> Comment <small class="required">*</small></label>
+                <textarea type="text" rows="4" id="comment-form-message" name="fields[message]" tabindex="1"></textarea>
+                <div class="small help-block"><a href="https://daringfireball.net/projects/markdown/">{{ site.data.ui-text[site.locale].comment_form_md_info | default: "Markdown is supported." }}</a></div>
+              </div>
+              <div class="form-group">
+                <label for="comment-form-name"> Name <small class="required">*</small></label>
+                <input type="text" id="comment-form-name" name="fields[name]" tabindex="2" />
+              </div>
+              <div class="form-group">
+                <label for="comment-form-email"> Email address </label>
+                <input type="email" id="comment-form-email" name="fields[email]" tabindex="3" />
+              </div>
+              <div class="form-group">
+                <button type="submit" id="comment-form-submit" tabindex="5" class="btn btn--primary btn--large">{{ site.data.ui-text[site.locale].comment_btn_submit | default: "Submit Comment" }}</button>
+              </div>
+            </form>
+    </div>
+</div>
