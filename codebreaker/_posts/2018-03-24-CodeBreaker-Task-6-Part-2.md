@@ -147,4 +147,8 @@ Sending exploit message. <br>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/SdrCsHMbvoU?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
+A more abstract view of the exploit. <br>
+![_config.yml]({{ site.baseurl }}/images/Codebreaker/Task_6/task_6_exploit_abstract.gif)
+
 I have not been able to get the challenge to validate my message as correct, but it works on my own machine. 
+
