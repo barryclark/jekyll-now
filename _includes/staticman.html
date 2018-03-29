@@ -16,8 +16,9 @@
     <div class="page__comments-form">
             <h4 class="page__comments-title">Leave a Comment</h4>
             <p class="small">Your email address will not be published. Required fields are marked <span class="required">*</span></p>
-            <form id="new_comment" class="page__comments-form js-form form" method="post" action="https://api.staticman.net/v2/entry/dorianbrown/master/comments">
+            <form id="new_comment" class="page__comments-form js-form form" method="post" action="https://api.staticman.net/v2/entry/dorianbrown/dorianbrown.github.io/master/comments">
               <div class="form-group">
+                  <input name="options[redirect]" type="hidden" value="{{ site.url }}{{ page.url }}">
                 <label for="comment-form-message"> Comment <small class="required">*</small></label>
                 <textarea type="text" rows="4" id="comment-form-message" name="fields[message]" tabindex="1"></textarea>
                 <div class="small help-block"><a href="https://daringfireball.net/projects/markdown/">{{ site.data.ui-text[site.locale].comment_form_md_info | default: "Markdown is supported." }}</a></div>
