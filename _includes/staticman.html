@@ -1,6 +1,6 @@
 <div class="js-comments">
     {% if site.data.comments[page.slug] %}
-      <h4 class="page__comments-title">{{ site.data.ui-text[site.locale].comments_title | default: "Comments" }}</h4>
+      <h4 class="page__comments-title"> Comments </h4>
       {% assign comments = site.data.comments[page.slug] | sort %}
 
       {% for comment in comments %}
@@ -18,6 +18,7 @@
             <p class="small">Your email address will not be published. Required fields are marked <span class="required">*</span></p>
             <form id="new_comment" class="page__comments-form js-form form" method="post" action="https://api.staticman.net/v2/entry/dorianbrown/dorianbrown.github.io/master/comments">
               <div class="form-group">
+                  <input type="hidden" id="comment-post-id" name="options[slug]" value="{{ page.slug }}">
                   <input name="options[redirect]" type="hidden" value="{{ site.url }}{{ page.url }}">
                 <label for="comment-form-message"> Comment <small class="required">*</small></label>
                 <textarea type="text" rows="4" id="comment-form-message" name="fields[message]" tabindex="1"></textarea>
@@ -32,7 +33,7 @@
                 <input type="email" id="comment-form-email" name="fields[email]" tabindex="3" />
               </div>
               <div class="form-group">
-                <button type="submit" id="comment-form-submit" tabindex="5" class="btn btn--primary btn--large">{{ site.data.ui-text[site.locale].comment_btn_submit | default: "Submit Comment" }}</button>
+                <button type="submit" id="comment-form-submit" tabindex="5" class="btn btn--primary btn--large"> Submit Comment </button>
               </div>
             </form>
     </div>
