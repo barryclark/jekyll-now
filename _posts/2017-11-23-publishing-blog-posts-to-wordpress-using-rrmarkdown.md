@@ -10,7 +10,7 @@ excerpt: When I was getting this blog setup, I decided I needed to make creating
 
 # Easy posting
 
-When I was getting this blog setup, I decided I needed to make creating new posts as easy as possible. I want to use my daily commute (which is about 1.5 hours each day) to create new content, and in order to make the barrier as small as possible it started looking into the options for posting from some kind of notebook format.
+When I was getting this blog setup, I decided I needed to make creating new posts as easy as possible. I want to use my daily commute (which is about 1.5 hours each day) to create new content, and in order to make the barrier as small as possible I started looking into the options for posting from some kind of notebook format.
 
 After a lot of researching the options, looking into the available libraries, trying things out, I arrived at the combination of **Wordpress**, **R Markdown**, and the awesome **RWordpress** library.
 
