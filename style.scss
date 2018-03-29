@@ -19,15 +19,15 @@ html {
 }
 
 body {
-	background: $white;
+  background: $white;
   font: 18px/1.4 $helvetica;
   color: $darkGray;
 }
 
 .container {
   margin: 0 auto;
-  max-width: 740px;
-  padding: 0 10px;
+  max-width: 840px;
+  padding: 0 30px;
   width: 100%;
 }
 
@@ -315,11 +315,17 @@ footer {
   position: fixed;
   width: 100%;
   background: white;
+  @include mobile {
+    position: static;
+  }
 }
 
 #not-header {
   top: 100px;
   position: relative;
+  @include mobile {
+    position: static;
+  }
 }
 
 .title-figure {

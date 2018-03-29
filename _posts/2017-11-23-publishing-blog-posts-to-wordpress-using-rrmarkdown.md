@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Publishing blog posts to Wordpress using R/RMarkdown
+title: Publishing blog posts to Wordpress using RMarkdown
 date: 2017-11-23 03:11
 comments: true
 categories: [General, Technical Stuff]
