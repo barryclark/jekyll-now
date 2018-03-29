@@ -99,6 +99,8 @@ w2vmodel = Word2Vec(lines,min_count=1,iter=200)
 
 {% endhighlight %}
 
+https://github.com/frankiezeager/trap_generator/blob/02e789a4b72306e55882dee524a134acea1c0593/w2v_train.py#L49-L90
+
 **Plain “Vanilla” Neural Network**
 ------
 
@@ -167,7 +169,7 @@ def ix_to_word(ix,w2vmodel):
     
 {% endhighlight %}
    
-I already prepared the input data into a list of lists, with each sublist containing up to 6 words each. Because the model expects 6 <<???>> words as input, the data must be padded if the line is less than 6 words long. The following code pads this data with the word2vec index for my catch-all ____UNSEEN____ variable. This will allow the model to (hopefully) learn to ignore words that weren’t in the training index or the word paddings.
+I already prepared the input data into a list of lists, with each sublist containing up to 6 words each. Because the model expects 6 words as input, the data must be padded if the line is less than 6 words long. The following code pads this data with the word2vec index for my catch-all ____UNSEEN____ variable. This will allow the model to (hopefully) learn to ignore words that weren’t in the training index or the word paddings.
 
 *Training/Testing Data Creation and Formatting*
 
@@ -239,7 +241,7 @@ For example, here's the output with a temperature of 1:
 *she fucked me up like a egg*
 *my dope and my girl like a dope boy* 
 
-It gets a variety of things wrong, like the phrase *a egg* instead of *an egg*, but personally I think the metaphors in the examples with higher temperature are much more hilarious than with a lower temperature (my dope and my girl like a dope boy?).
+It gets a variety of things wrong, like the phrase *a egg* instead of *an egg*, but personally I think the metaphors in the examples with higher temperature are much more hilarious than with a lower temperature (my dope and my girl like a dope boy).
 
 With a temperature of 0.2:
 *im just a young rapper and the other my world god damn god*
