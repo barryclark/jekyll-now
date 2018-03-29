@@ -1,11 +1,4 @@
 
-// .highlight {
-//   border: 1px solid #ddd;
-//   -moz-box-shadow: 3px 3px rgba(0,0,0,0.1);
-//   -webkit-box-shadow: 3px 3px rgba(0,0,0,0.1);
-//   box-shadow: 3px 3px rgba(0,0,0,0.1);
-// }
-
 code {
   font-family:'Bitstream Vera Sans Mono','Courier', monospace;
 }
@@ -19,6 +12,9 @@ code {
   box-shadow: 3px 3px rgba(0,0,0,0.1);
   border-radius: 4px;
 }
+
+pre { white-space: pre; overflow: auto; }
+
 .highlight pre { background-color: #282828 }
 .highlight .hll { background-color: #ffffcc }
 .highlight  { background: #282828; color: #ebdbb2; background-color: #282828 }
