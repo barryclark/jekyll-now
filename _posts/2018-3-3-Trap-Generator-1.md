@@ -80,7 +80,7 @@ for lyric in list_lyrics:
     #add spaces around all new line characters
     lyric = re.sub(r'\n([a-zA-Z])',r'\n \1',lyric)
     lyric = re.sub(r'([a-zA-Z])\n',r'\1 \n',lyric)
-    #deal with multiple new line characters, but keeping single new line characters
+    #deal with multiple new line characters, but keeping single \n
     lyric = re.sub(r'\n{2,}','\n',lyric)
     #remove return characters
     lyric = re.sub('\r',' ',lyric)
@@ -90,16 +90,12 @@ for lyric in list_lyrics:
     lines = [words[i:i+max_seq_length] for i in range(0,len(words), max_seq_length)]
     sequences.append(lines)
  
-
-
-
-#now we have a list of each song, with a list containing the words in the song, split by sequence seq_length
+#now we have a list of each song, with a list containing
+#the words in the song, split by sequence seq_length
 
 w2vmodel = Word2Vec(lines,min_count=1,iter=200)
 
 {% endhighlight %}
-
-https://github.com/frankiezeager/trap_generator/blob/02e789a4b72306e55882dee524a134acea1c0593/w2v_train.py#L49-L90
 
 **Plain “Vanilla” Neural Network**
 ------
