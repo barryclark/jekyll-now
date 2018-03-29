@@ -20,7 +20,7 @@ html {
 
 body {
   background: $white;
-  font: 18px/1.4 $helvetica;
+  font: 16px $helvetica;
   color: $darkGray;
 }
 
@@ -341,6 +341,7 @@ footer {
   .title-img {
     position: relative;
     top:25%;
+    min-height: 300px;
     transform: translateY(-25%);
     filter: brightness(85%);
   }
