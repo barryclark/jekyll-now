@@ -3,8 +3,6 @@ layout: post
 title: How to remove a referenced entity's field from the view in Drupal 8
 ---
 
-# How To Remove a Referenced Entity's Field from the view in Drupal 8
-
 I had an issue with removing a field from the Drupal view. The module creating the field is in alpha release and did not have the view mode fully integrated, so the admin option to remove the field from the view was unavailable.
 
 ## The Code
