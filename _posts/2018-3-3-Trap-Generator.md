@@ -1,9 +1,8 @@
 ---
 layout: post
 title: Creating a Deep Learning Trap Lyric Generator, or, How Trap Music is not as Formulaic as Music Critics Think
-feature-img: ![_config.yml]({{ site.baseurl }}/images/trap_house.jpg)
 ---
-
+![_config.yml]({{ site.baseurl }}/images/trap_house.jpg)
 *2 Chainz's Pink Trap House in Atlanta, GA*
 
 If you’re not interested in getting into the technical details of this project and just want to play around with generating your own trap lyrics, you can use the web app I created [here](http://trap-generator.zeager.xyz).
