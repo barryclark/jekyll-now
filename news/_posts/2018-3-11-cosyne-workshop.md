@@ -4,12 +4,22 @@ title: COSYNE 2018 Workshops
 category: news
 ---
 
-RNN
-----
+After a cold trip, we finally made it to Breckenridge. 
+I felt lucky to get on a shuttle before the storm that blocked the way.
+The resort was really a nice and warm place to heal my headache. 
+
+![breckenridge](/images/breckenridge.jpg)
+
+During the two days, I spent most of my time in the workshops of recurrent neural networks and manifolds. There were interesting talks in both of them. I wish the organizers could make videos online afterwards.
+
+____
+(Written by Yuan Zhao)
+
+____
 
 **Studying human-level cognition with trained recurrent neural networks**
 
-Robert Yang et al. introduced a common framework to describe many cognitive tasks as graphs of simple operators, and trained RNN to perform various tasks within this framework. They found that the network developed compositionality of task representations, whereby one task can be performed by recombining in structions for other tasks. This talk pertains to the preprint [Clustering and compositionality of task representations in a neural network trained to perform many cognitive tasks](https://www.biorxiv.org/content/early/2017/09/01/183632).
+Robert Yang introduced a common framework to describe many cognitive tasks as graphs of simple operators, and trained RNN to perform various tasks within this framework. They found that the network developed compositionality of task representations, whereby one task can be performed by recombining in structions for other tasks. This talk pertains to the preprint [Clustering and compositionality of task representations in a neural network trained to perform many cognitive tasks](https://www.biorxiv.org/content/early/2017/09/01/183632).
 
 **Low-dimensional population activity in recurrent spiking networks**
 
