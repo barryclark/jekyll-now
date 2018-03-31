@@ -10,6 +10,8 @@ The last days we were pretty active and
 worked a lot on the hardware and software for the CanSat. Here we give
 a brief overview of the sensors and electronics we will use.
 
+{% include image.html path="/images/Prototyping.jpg" caption="You can almost see what's going on" %}
+
 ### Primary mission
 During the primary mission we will measure air density and temperature.
 For this we use the [BMP180](https://www.amazon.de/kwmobile-airpressure-digital-Barometric-Raspberry/dp/B01M0LU3KF/),
