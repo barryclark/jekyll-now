@@ -1,4 +1,4 @@
-// 03/21/2018 10:19
+// 03/30/2018 10:02
 
 #include <iostream>
 #include <iomanip>
@@ -30,35 +30,11 @@ bool load_key(char *filename) {
             const char *chararray = line.c_str();
             
             if(count == 0) {
-                n = Integer(chararray);
-                
-                cout << "n" << endl;
-                cout << hex << n << endl;
-                cout << "line" << endl;
-                cout << line << endl;
-                cout << "chararray" << endl;
-                cout << chararray << endl << endl;
-                
+                n = Integer(chararray);                               
             } else if(count == 1) {
-                e = Integer(chararray);
-                
-                cout << "e" << endl;
-                cout << hex << e << endl;
-                cout << "line" << endl;
-                cout << line << endl;
-                cout << "chararray" << endl;
-                cout << chararray << endl << endl;
-                
+                e = Integer(chararray);                
             } else if(count == 2) {
-                d = Integer(chararray);
-                
-                cout << "d" << endl;
-                cout << hex << d << endl;
-                cout << "line" << endl;
-                cout << line << endl;
-                cout << "chararray" << endl;
-                cout << chararray << endl << endl;
-                
+                d = Integer(chararray);                
             } else {
                 infile.close();
                 return true; // shouldn't get this far...
@@ -84,11 +60,7 @@ bool encrypt(char *plaintext, Integer *ciphertext, streampos file_size) {
 
         for(int i = 0; i < file_size; i++) {
             m = Integer((long)plaintext[i]);
-            cout << "m" << i << ": " << hex << m << endl;
-
             c = pubKey.ApplyFunction(m);
-            cout << "c" << i << ": " << hex << c << endl;
-
             ciphertext[i] = c;
         }
     } else {
@@ -112,9 +84,7 @@ bool decrypt(Integer *ciphertext, char *plaintext, int size) {
     if(privKey.Validate(prng, 3)) {
         for(int i = 0; i < size; i++) {
             c = ciphertext[i];
-
             r = privKey.CalculateInverse(prng, c);
-            cout << "r" << i << ": " << hex << r << endl;
             plaintext[i] = (char)r.ConvertToLong();
         }
     } else {
@@ -124,6 +94,8 @@ bool decrypt(Integer *ciphertext, char *plaintext, int size) {
         
         return false;
     }
+    
+    return true;
 }
 
 void encrypt_file(char *infilename, char *outfilename) {
@@ -161,7 +133,6 @@ void encrypt_file(char *infilename, char *outfilename) {
 void decrypt_file(char *infilename, char *outfilename) {
     ifstream infile;
     ofstream outfile;
-    streampos size;
     char *plaintext;
     Integer *ciphertext;
     string line;
@@ -178,13 +149,16 @@ void decrypt_file(char *infilename, char *outfilename) {
     ciphertext = new Integer[lines];
     plaintext = new char[lines];
     
+    infile.clear();
+    infile.seekg(0, ios::beg);
+    
     while(getline(infile, line)) {
         const char *chararray = line.c_str();
         ciphertext[i] = Integer(chararray);
         i++;
     }
     
-    if(decrypt(ciphertext, plaintext, size)) {
+    if(decrypt(ciphertext, plaintext, lines)) {
         outfile.write((char*)plaintext, lines);    
     }
     
