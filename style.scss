@@ -28,7 +28,7 @@ body {
 .container {
   margin: 0 auto;
   max-width: 840px;
-  padding: 0 30px;
+  padding: 0 20px;
   width: 100%;
 }
 
@@ -342,7 +342,7 @@ footer {
   .title-img {
     position: relative;
     top:25%;
-    min-height: 300px;
+    min-width: 600px; // Needs fixing
     transform: translateY(-25%);
     filter: brightness(85%);
   }
