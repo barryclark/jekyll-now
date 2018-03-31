@@ -8,11 +8,12 @@ code {
   margin: 2.4em 0.5em;
   font-size: 14px;
   font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
-  box-shadow: 3px 3px rgba(0,0,0,0.1);
-  border-radius: 4px;
+  box-shadow: 3px 2px 1px rgba(0,0,0,0.1);
+  border-radius: 5px;
 
   .monokai {
     padding: 1em 1.4em;
+    border-radius: 5px;
   }
 }
 
