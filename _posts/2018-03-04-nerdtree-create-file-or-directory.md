@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Create a new file or directory without exiting vim
+title: Create a new file or directory without exiting Vim/Neovim
 ---
 
 I've been happily using `vim`/`neovim` for a while but today I discovered a feature I think is worth sharing since, AFAIK, this is not widely known even among intermediate users. If you're using the add-on `NERDTree` you can easily create and rename files and directories without having to quit the editor or having to move to a different `tmux` pane.
