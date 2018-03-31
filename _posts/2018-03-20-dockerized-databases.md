@@ -7,7 +7,21 @@ categories: [Javascript]
 published: false
 ---
 
-# Dockerizing databases
+# Dockerized application deployment
+
+So this was my first hands-on experience with docker. It's a technology that has become huge in the last few years, and I was curious to see what all the fuss was about. 
+
+## Continuous Deployment
+
+My use-case for Docker is to make deploying a [Knowledge Repo](https://github.com/airbnb/knowledge-repo) at my organization easier. The webserver being deployed is a flask webserver+database, and since the application wasn't too advanced this meant I could focus on learning Docker. The added value would be making testing on my laptop have the same environment (docker) as the server it would be deployed to. I also wanted to try out a continuous deployment workflow, which means that when code is committed to git, the rest of the deployment process is completely automated. 
+
+Automated deployment means time for development and features, but implementing it does involve a time and knowledge investment initially. How do I automatically test/build/deploy my code? For each of these steps there are lots of solutions on the market, but your organization problems supports a certain tool for each one. In my case, Gitlab is the code repository, Jenkins as the build server which performs automated testing, Docker for building and "packaging", and Nolio for deployment to the production server. 
+
+# img
+
+There are lots of articles to be found about how to achieve continuous deployment, but the picture above is how I currently envision my own setup. 
+
+## What's the deal with docker?
 
 ## Docker for dummies
 
