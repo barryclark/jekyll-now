@@ -11,7 +11,7 @@ an der Hardware und Software für den CanSat gearbeitet. Wir geben
 euch hier mal einen kurzen Überblick über die Sensoren und Elektronik
 die wir verwenden werden.
 
-{% include image.html path="/images/Prototyping.jpg" caption="Prototyping macht ja so viel Spaß..." %}
+{% include image.html path="/images/Prototyping.jpg" caption="Hardwaredesign kann sehr schnell unordentlich werden..." %}
 
 ### Primärmission
 Die Primärmission besteht darin, während des Fluges den Luftdruck und
@@ -50,7 +50,7 @@ Preis: 6,10€ (+ 8,90€ für SD Karte)
 ### GPSModul
 Das [GPS Modul](http://www.watterott.com/de/Adafruit-Ultimate-GPS-Breakout-66-channel) ist nicht nur hilfreich, um die Posistion und Bewegung des CanSats zu bestimmen, 
 es hat auch einen anderen Vorteil, an den viele vielleicht nicht denken: Es kann die Zeit bestimmen.
-Für viele kleine Mikrokontroller wie den Arduino ist es schwierig, eine genaue Zeit anzugeben, da die intere Uhr irgendwann nicht mehr im Takt ist.
+Für viele kleine Mikrokontroller wie den Arduino ist es schwierig, eine genaue Zeit anzugeben, da die interne Uhr irgendwann nicht mehr im Takt ist.
 Mit dem GPS Modul können wir ziemlich akurat die Zeit bestimmen und unsere Datensätze mit einem Zeitstempel versehen, damit
 wir sie auch richtig auswerten können.
 Das Modul das wir verwenden wurde auch von Adafruit hergestellt, allerdings haben wir unseres von watterott.com bestellt.
