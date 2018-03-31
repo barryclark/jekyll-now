@@ -11,6 +11,8 @@ an der Hardware und Software für den CanSat gearbeitet. Wir geben
 euch hier mal einen kurzen Überblick über die Sensoren und Elektronik
 die wir verwenden werden.
 
+{% include image.html path="/images/Prototyping.jpg" caption="Prototyping macht ja so viel Spaß..." %}
+
 ### Primärmission
 Die Primärmission besteht darin, während des Fluges den Luftdruck und
 die Temperatur zu messen. Dazu verwenden wir den [BMP180](https://www.amazon.de/kwmobile-Luftdruck-digitalem-Barometric-Raspberry/dp/B01M0LU3KF/), 
