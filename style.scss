@@ -356,6 +356,34 @@ blockquote {
   }
 }
 
+.team-member-presentation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: .5em 0 1.5em;
+  font-style: italic;
+
+  &:nth-of-type(even) {
+    flex-direction: row-reverse;
+  }
+
+  img {
+    width: 96px;
+    height: 96px;
+    border-radius: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .4);
+    margin: 1em;
+  }
+
+  @include mobile {
+    flex-direction: column;
+
+    &:nth-of-type(even) {
+      flex-direction: column;
+    }
+  }
+}
+
 .wrapper-footer {
   margin-top: 50px;
   border-top: 1px solid $divider-black;
