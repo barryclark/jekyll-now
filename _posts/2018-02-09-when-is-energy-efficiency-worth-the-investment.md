@@ -70,7 +70,7 @@ Now let's look at a couple of examples. I'm going to write these as math word pr
     new daily cost: 6.5 watts * (1 kilowatt / 1000 watts) * 8 hours *  $0.11 = $0.00572
     daily savings: $0.0528 - $0.00572 = $0.04708
     days to payoff:  $3.25 / $0.04708 = 69 days
-    approximate rate of return = 2 ^ (1/[69/365]) - 1 = 1,333%
+    approximate rate of return = 2 ^ (1/[69/365]) - 1 = 3,812%
 
 Is it worth it? Is over a 1000% return on your money worth it? Hell yeah!
 
