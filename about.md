@@ -5,8 +5,11 @@ sidebar_link: true
 ---
 
 <p class="message">
-Hello!
+"The cowards never started and the weak died along the way." ― Phil Knight, Shoe Dog
 </p>
+
+<img alt="Mobile home page" src="{{ site.url }}/assets/me.jpg?raw=true" width="300px" align="center" 
+style="display: block;margin: 0 auto;" />
 
 I am senior java developer and I have more than 9 years of experience using Java and its environment.
 
@@ -22,5 +25,3 @@ Over there I coded using many technologies and the most important ones were Java
 
 Currently I have been coding Java 8, RestFul web services, micro services, Amazon Web services, automated testing, Git, Maven.
 
-![Desktop](/_screenshots/me.jpg?raw=true)
-<img alt="Mobile home page" src="{{ site.baseurl }}/_screenshots/me.jpg?raw=true" width="300px" />
