@@ -13,7 +13,7 @@ baseurl:          # the optional subpath of your site, e.g. "/blog"
                   # other pages at root, see the paginate_path and
                   # sidebar_blog_link below.
 
-google_analytics: UA-116827822-1
+google_analytics: 'UA-116827822-1'
 author:
   name:           'Thiago Montovaneli Albertino'
   url:            https://twitter.com/tmontovaneli
