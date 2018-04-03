@@ -1,12 +1,13 @@
 ---
 layout: page
 title: About
-permalink: /about/
+sidebar_link: true
 ---
 
-Hello! My name is Thiago Montovaneli and I live in ES, Brazil.
-I have developed web systems since 2007. During these years, I have worked with Java language and many frameworks in its world: JavaEE, Hibernate, JSF, JBoss Seam, Eclipse IDE, etc. Since I have developed web systems, I have coded with JavaScript, JQuery, JqueryUI as well a little CSS3.
+<p class="message">
+  Hey there! This page is included as an example. Feel free to customize it
+  for your own use upon downloading. Carry on!
+</p>
 
-### Contact me
-
-[thiagomontovaneli@gmail.com](mailto:thiagomontovaneli@gmail.com)
+To make pages show up in the sidebar, add `sidebar_link: true` to the front
+matter.

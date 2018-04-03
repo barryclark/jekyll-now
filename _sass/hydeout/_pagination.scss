@@ -1,0 +1,72 @@
+/*
+  Pagination
+
+  Super lightweight (HTML-wise) blog pagination. Should only be visible
+  when there is navigation available -- single buttons at top or bottom
+  of each page.
+*/
+
+.pagination {
+  margin-bottom: $section-spacing;
+  color: $gray-3;
+  text-align: center;
+
+  > a {
+    display: inline-block;
+    padding: $padding-v $padding-h;
+    border: solid $border-color;
+    border-radius: $border-radius;
+    border-width: 1px;
+    width: 60%;
+    max-width: $sidebar-width;
+    background: $body-bg;
+    box-shadow: $default-box-shadow;
+
+    &:hover {
+      background-color: $border-color;
+    }
+  }
+}
+
+// Bottom -> margin-top;
+* + .pagination {
+  margin-top: $section-spacing;
+}
+
+// Push above header if newer on mobile
+.content .pagination:first-child {
+  margin-top: -$section-spacing * 2;
+}
+
+// Make room for larger header by extending margin below title
+.index #sidebar {
+  padding-bottom: calc(#{$section-spacing} + #{$padding-v});
+}
+
+// But not on page1
+.home.index #sidebar {
+  padding-bottom: $section-spacing;
+}
+
+// Undo for larger screens
+@media (min-width: $large-breakpoint) {
+  .pagination > a {
+    box-shadow: none;
+
+    &:hover { box-shadow: $default-box-shadow; }
+  }
+
+  .content .pagination:first-child {
+    margin-top: 0;
+
+    + * {
+      padding-top: $section-spacing;
+      border-top: 1px solid $border-color;
+      margin-top: $section-spacing;
+    }
+  }
+
+  .index #sidebar {
+    padding-bottom: $section-spacing;
+  }
+}

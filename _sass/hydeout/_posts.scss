@@ -1,0 +1,92 @@
+// Posts and pages
+//
+// Each post is wrapped in `.post` and is used on default and post layouts. Each
+// page is wrapped in `.page` and is only used on the page layout.
+
+article + *, .post-body ~ section {
+  padding-top: $section-spacing;
+  border-top: 1px solid $border-color;
+  margin-top: $section-spacing;
+
+  > h2:first-child, > h3:first-child {
+    margin-top: 0;
+  }
+}
+
+.post, .page {
+  .content {
+    li + li {
+      margin-top: .25rem;
+    }
+  }
+}
+
+// Blog post or page title
+.page-title,
+.post-title,
+.post-title a {
+  color: $heading-color;
+}
+.page-title,
+.post-title {
+  margin-top: 0;
+}
+
+// h1-size h2
+h2.post-title, h2.page-title {
+  font-size: 2rem;
+}
+
+// Meta data line below post title
+.post-meta {
+  margin-top: -.5rem;
+  margin-bottom: 1rem;
+  color: $body-muted;
+}
+
+.post-tags a {
+  font-size: 0.8em;
+  margin-right: 0.5rem;
+  white-space:nowrap;
+  .tag-name { text-transform: capitalize; }
+
+  opacity: 0.75;
+  &:hover {
+    text-decoration: none;
+    opacity: 1;
+  }
+}
+
+.posts-by-tag h2 {
+  text-transform: capitalize;
+}
+
+.posts-list {
+  padding-left: 0;
+  list-style: none;
+
+  h3 {
+    margin-top: 0;
+  }
+
+  li {
+    small {
+      font-size: 75%;
+      color: #999;
+      white-space: nowrap;
+    }
+
+    a:hover {
+      color: $link-color;
+      text-decoration: none;
+
+      small {
+        color: inherit;
+      }
+    }
+  }
+}
+
+button.disqus-load {
+  margin-top: 1em;
+}

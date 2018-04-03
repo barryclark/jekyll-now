@@ -1,0 +1,21 @@
+{% comment %}
+  Check if we have a tags page active before linking to it.
+{% endcomment %}
+{% assign tags_page = false %}
+{% for node in site.pages %}
+  {% if node.layout == "tags" %}
+    {% assign tags_page = node %}
+  {% endif %}
+{% endfor %}
+
+<div class="post-tags">
+  {% for tag in include.post.tags %}
+    {% if tags_page %}
+    <a href="{{ site.baseurl }}{{ tags_page.url }}#{{ tag | slugify }}">
+    {% else %}<span>{% endif %}
+      <span class="icon">
+        {% include svg/tags.svg %}
+      </span>&nbsp;<span class="tag-name">{{ tag }}</span>
+    {% if tags_page %}</a>{% else %}</span>{% endif %}
+  {% endfor %}
+</div>

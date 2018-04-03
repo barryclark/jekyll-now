@@ -1,0 +1,50 @@
+$gray-1: #f9f9f9 !default;
+$gray-2: #e5e5e5 !default;
+$gray-3: #ccc !default;
+$gray-4: #767676 !default;
+$gray-5: #515151 !default;
+$gray-6: #313131 !default;
+
+$red: #ac4142 !default;
+$orange: #d28445 !default;
+$yellow: #f4bf75 !default;
+$green: #90a959 !default;
+$cyan: #75b5aa !default;
+$blue: #268bd2 !default;
+$brown: #8f5536 !default;
+
+$root-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif !default;
+$root-font-size: 1rem !default;
+$root-line-height: 1.5 !default;
+
+$body-color: $gray-5 !default;
+$body-muted: $gray-4 !default;
+$body-bg: #fff !default;
+$link-color: $blue !default;
+$heading-color: $gray-6 !default;
+
+$border-color: $gray-2 !default;
+$border-radius: 300px !default;
+$padding-v: 1em !default;
+$padding-h: 1.5em !default;
+$heading-spacing: 0.5rem !default;
+$section-spacing: 2rem !default;
+$sidebar-width: 18rem !default;
+
+$large-breakpoint: 49rem !default;
+$large-font-size: 1.25rem !default;
+
+$box-shadow-size: 1px !default;
+$box-shadow-opacity: 0.16 !default;
+$default-box-shadow: $box-shadow-size
+                     $box-shadow-size
+                     $box-shadow-size
+                     rgba(0, 0, 0, $box-shadow-opacity);
+
+$code-font-family: Menlo, Monaco, "Courier New", monospace !default;
+$code-color: #bf616a !default;
+
+// Hyde theming
+$sidebar-bg-color: #202020 !default;
+$sidebar-sticky: true !default;
+$layout-reverse: false !default;

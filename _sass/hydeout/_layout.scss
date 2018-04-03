@@ -1,0 +1,298 @@
+/*
+  Layout
+
+  Styles for managing the structural hierarchy of the site.
+  Hydeout features the large colored sidebar from Hyde that houses the
+  site name, intro, and "footer" content. Sidebar is on top of content on
+  mobile and expands into sidebar on larger width displays.
+
+  Sidebar CSS assumes HTML looks like this for post pages:
+
+    body
+    > #sidebar
+      > header (primary sidebar content -- i.e. title)
+        > h1 (home page only, otherwise div or span)
+      > secondary nav content we may want to hide on certain pages
+    > .container
+      > h1 (non-home page)
+      > .content
+
+  Basic approach is to color in body, make sidebar background transparent,
+  and then fill in the .container or .content elements depending on how far
+  we want the sidebar or header to stretch.
+*/
+
+body {
+  color: rgba(255,255,255,.75);
+  background-color: $sidebar-bg-color;
+  background-image: linear-gradient(
+    to bottom,
+    lighten($sidebar-bg-color, 7%),
+    darken($sidebar-bg-color, 7%));
+  display: flex;
+  flex-direction: column;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+#sidebar {
+  flex: 0 0 auto;
+  padding: $section-spacing;
+
+  .site-title {
+    font-family: "Abril Fatface", serif;
+    font-weight: normal;
+    font-size: $large-font-size;
+    color: rgba(255,255,255,.75);
+    margin-top: 0;
+    margin-bottom: $heading-spacing;
+
+    a {
+      color: inherit;
+      &:hover { color: white; }
+    }
+
+    .back-arrow { margin-right: 0.5rem; }
+  }
+}
+
+// Container is flexbox as well -- we want content div to stretch and fill
+.container {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+
+  > .content {
+    flex-grow: 1;
+  }
+}
+
+.content {
+  background: $body-bg;
+  color: $body-color;
+  padding: $section-spacing;
+}
+
+
+/* -----------------------------------------------------------
+  Mobile view
+----------------------------------------------------------- */
+
+// Hide secondary nav content in sidebar
+// Hide lead paragraph in sidebar
+#sidebar {
+  header ~ *, header ~ nav, p.lead {
+    display: none;
+  }
+}
+
+// Make header elements blend into sidebar / background
+.container > header {
+  background: transparent;
+  color: white;
+  margin: ($heading-spacing - $section-spacing)
+          $section-spacing
+          $section-spacing;
+
+  h1, h2 {
+    color: white;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+
+/* -----------------------------------------------------------
+  Mobile view for home page)
+----------------------------------------------------------- */
+
+.home #sidebar {
+
+  // Center sidebar content
+  text-align: center;
+
+  // Bigger title
+  .site-title {
+    font-size: 3.25rem;
+    color: white;
+  }
+
+  // Show secondary nav content + lead
+  header ~ *, p.lead {
+    display: block;
+  }
+
+  header {
+    ~ nav {
+      display: flex;
+    }
+  }
+
+  // Slightly more bottom padding to compensate for heading not match 100% of
+  // line-height on top
+  > *:last-child {
+    margin-bottom: 0.5rem;
+  }
+}
+
+
+/* -----------------------------------------------------------
+  Tablet / Desktop view
+----------------------------------------------------------- */
+
+@media (min-width: $large-breakpoint) {
+  body {
+    flex-direction: row;
+    height: 100vh;
+    overflow: auto;
+    > * { max-height: 100vh; overflow: auto; }
+  }
+
+  /* Undo mobile CSS */
+
+  #sidebar, .home #sidebar {
+    width: $sidebar-width;
+    text-align: left;
+
+    > *:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  #sidebar {
+    .site-title {
+      font-size: 3.25rem;
+
+      a { color: white; }
+      .back-arrow { display: none; }
+    }
+
+    p.lead, header ~ * {
+      display: block;
+    }
+
+    header ~ nav {
+      display: flex;
+    }
+  }
+
+  .index #sidebar { margin-bottom: 0; }
+
+  // Make entire container background white to contrast against sidebar
+  .container {
+    background: $body-bg;
+    color: $body-color;
+    padding: $section-spacing * 2;
+    height: 100vh;
+
+    > header {
+      color: inherit;
+      margin: 0;
+      h1, h2 {
+        color: inherit;
+
+        &:last-child {
+          margin-bottom: $heading-spacing;
+        }
+      }
+    }
+
+    > * {
+      max-width: 38rem;
+      padding: 0;
+    }
+  }
+}
+
+
+/* -----------------------------------------------------------
+  Sidebar links + nav
+----------------------------------------------------------- */
+
+#sidebar a {
+  color: #fff;
+
+  svg {
+    fill: rgba(255, 255, 255, 0.85);
+  }
+
+  &:hover, &:focus, &.active {
+    svg { fill: #fff; }
+  }
+
+  &:hover, &:focus {
+    text-decoration: underline;
+    &.icon {
+      text-decoration: none;
+    }
+  }
+
+  &.active {
+    font-weight: bold;
+  }
+}
+
+#sidebar nav {
+  display: flex;
+}
+
+#sidebar-nav-links {
+  flex-flow: column nowrap;
+}
+
+#sidebar-icon-links {
+  max-width: 100%;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin-top: 1rem;
+
+  @media (min-width: $large-breakpoint) {
+    margin-left: -0.25em;
+    justify-content: flex-start;
+  }
+}
+
+#sidebar nav > * {
+  display: block;
+  line-height: 1.75;
+}
+
+#sidebar nav > .icon {
+  font-size: 1.5rem;
+  display: inline-block;
+  margin: 0 0.25em;
+}
+
+
+/* -----------------------------------------------------------
+  Sticky sidebar
+
+  Set $sidebar-stick variable to affix sidebar contents to the
+  bottom of the sidebar in tablets and up.
+----------------------------------------------------------- */
+
+@if $sidebar-sticky {
+  @media (min-width: $large-breakpoint) {
+    body {
+      align-items: flex-end;
+    }
+  }
+}
+
+
+/* -----------------------------------------------------------
+  Reverse layout
+
+  Flip the orientation of the page by placing the `#sidebar`
+  on the right.
+----------------------------------------------------------- */
+
+@if $layout-reverse {
+  @media (min-width: $large-breakpoint) {
+    .container {
+      order: -1;
+    }
+  }
+}

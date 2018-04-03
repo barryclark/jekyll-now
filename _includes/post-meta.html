@@ -1,0 +1,29 @@
+<div class="post-meta">
+  <span class="post-date">{{ include.post.date | date_to_string }}</span>
+  <span class="post-categories">
+    {% for category in include.post.categories %}
+      &bull;
+
+      {% comment %}
+        Check if this category has a corresponding page before decide
+        to link to it. This is an O(n^2) operations so consider removing
+        it and linking for all categories (or no categories) if this
+        site has a lot of pages and/or a lot of categories.
+      {% endcomment %}
+      {% assign category_page = false %}
+      {% for node in site.pages %}
+        {% if node.category == category or node.title == category %}
+          {% assign category_page = node %}
+        {% endif %}
+      {% endfor %}
+
+      {% if category_page %}
+        <a href="{{ site.baseurl }}{{ category_page.url }}">
+          {{ category }}
+        </a>
+      {% else %}
+        {{ category }}
+      {% endif %}
+    {% endfor %}
+  </span>
+</div>

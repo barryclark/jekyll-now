@@ -1,0 +1,103 @@
+// Body resets
+//
+// Update the foundational and global aspects of the page.
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: $root-font-family;
+  font-size: $root-font-size;
+  line-height: $root-line-height;
+
+  @media (min-width: $large-breakpoint) {
+    font-size: $large-font-size;
+  }
+}
+
+body {
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+}
+
+main, article, section { display: block; }
+
+// No `:visited` state is required by default (browsers will use `a`)
+a {
+  color: $link-color;
+  text-decoration: none;
+
+  // `:focus` is linked to `:hover` for basic accessibility
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+
+  strong {
+    color: inherit;
+  }
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  margin: 0 0 1rem;
+  border-radius: 5px;
+  height: auto; // Fix to keep max-width from squishing images with defined
+                // height in HTML
+}
+
+table {
+  margin-bottom: 1rem;
+  width: 100%;
+  font-size: 85%;
+  border: 1px solid $border-color;
+  border-collapse: collapse;
+}
+
+td,
+th {
+  padding: .25rem .5rem;
+  border: 1px solid $border-color;
+}
+
+th {
+  text-align: left;
+}
+
+tbody tr:nth-child(odd) td,
+tbody tr:nth-child(odd) th {
+  background-color: $gray-1;
+}
+
+input[type="text"], input[type="search"], input[type="submit"], button {
+  padding: $padding-v $padding-h;
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+}
+
+button, input[type="submit"] {
+  cursor: pointer;
+  background: transparent;
+  border-color: $border-color;
+  color: $link-color;
+  transition: color 0.6s ease-in-out,
+              border-color 0.6s ease-in-out,
+              background 0.6s ease-in-out;
+
+  &:hover {
+    background: $link-color;
+    border-color: $link-color;
+    color: white;
+    box-shadow: $default-box-shadow;
+  }
+}

@@ -1,0 +1,16 @@
+.search-row {
+  display: flex;
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+  padding: 2px;
+
+  input {
+    border: 0;
+  }
+
+  input + input { margin-left: 2px; }
+
+  input[type="text"], input[type="search"] {
+    flex-grow: 1;
+  }
+}
