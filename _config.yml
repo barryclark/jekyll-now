@@ -17,6 +17,7 @@ google_analytics: 'UA-116827822-1'
 author:
   name:           'Thiago Montovaneli Albertino'
   url:            https://twitter.com/tmontovaneli
+  email:          'thiagomontovaneli@gmail.com'
 
 paginate:         5
 # paginate_path:    '/page:num'
@@ -36,3 +37,7 @@ sidebar_home_link:  true
                                 # to enable a separate blog link.
 github:             
   repo:             https://github.com/tmontovaneli
+
+
+linkedin:
+  repo: https://www.linkedin.com/in/thiago-montovaneli-albertino-8a633973/en

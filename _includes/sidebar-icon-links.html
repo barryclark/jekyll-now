@@ -8,9 +8,22 @@
     
   {% endif %}
 
+
+  <a id="linkedin-link"
+     class="icon" title="Linkedin" aria-label="Linkedin"
+     href="{{ site.linkedin.repo }}">
+    {% include svg/linkedin.svg %}
+  </a>
+
+  <a id="mail-link"
+     class="icon" title="Mail" aria-label="Mail"
+     href="mailto:{{ site.author.email }}">
+    {% include svg/email.svg %}
+  </a>
+
   <a id="subscribe-link"
      class="icon" title="Subscribe" aria-label="Subscribe"
-     href="{{ site.baseurl }}/feed.xml">
+     href="{{ site.github.repo }}">
     {% include svg/feed.svg %}
   </a>
 
