@@ -4,12 +4,15 @@ title: About
 sidebar_link: true
 ---
 
-<p class="message">
-"The cowards never started and the weak died along the way." ― Phil Knight, Shoe Dog
-</p>
+> The cowards never started and the weak died along the way.
+>
+><cite>Phil Knight, Shoe Dog</cite>
 
 <img alt="Mobile home page" src="{{ site.url }}/assets/me.jpg?raw=true" width="300px" align="center" 
 style="display: block;margin: 0 auto;" />
+
+
+Hey, I am Thiago Montovaneli Albertino and here you can read a little bit about me.
 
 I am senior java developer and I have more than 9 years of experience using Java and its environment.
 
