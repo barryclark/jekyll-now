@@ -8,7 +8,7 @@ sidebar_link: true
 >
 ><cite>Phil Knight, Shoe Dog</cite>
 
-<img alt="Mobile home page" src="{{ site.url }}/assets/me.jpg?raw=true" width="300px" align="center" 
+<img src="{{ site.url }}/assets/me.jpg?raw=true" width="300px" align="center" 
 style="display: block;margin: 0 auto;" />
 
 
