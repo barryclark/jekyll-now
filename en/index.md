@@ -32,7 +32,7 @@ Come to one of our meetups in [Athens](https://www.meetup.com/BlockchainGreece-0
 ### <a name="buybitcoin"></a>How can I buy Bitcoin in Greece?
 
 - At the Bitcoin ATM (only Euro -> Bitcoin) at the Orizontes bookshop, Thiveou Ioannou 20, Aharnes 13671, Attica at the outskits of Athens. They charge 7% over the [Kraken](https://www.kraken.com) exchange rate.
-- At the [BCash](https://bcash.gr/) Bitcoin ATM (buy & sell) at Dimitrakopoulou 84, Athens, near the Syggrou-Fix Metro station. There is an ATM at Kalokairinou 64 at Heraklion, Crete that sells Bitcoin. You can also buy Bitcoin with a voucher at the Aegean gas station at Thivon avenue & Krinis Str, Athens 18233. At the [Bitcoin ATM at Anageniseos 7, Thessaloniki](http://thesscash.gr/en/). Watch this [video](https://www.youtube.com/watch?v=WsVAE-4xP9A) on how to buy Bitcoin from the BCash ATM. They charge 7% over the [Kraken](https://www.kraken.com) exchange rate.
+- At the [BCash](https://bcash.gr/) Bitcoin ATM (buy & sell) at Dimitrakopoulou 84, Athens, near the Syggrou-Fix Metro station. There is an ATM at Kalokairinou 64 at Heraklion, Crete that sells Bitcoin. You can also buy Bitcoin with a voucher at the Aegean gas station at Thivon avenue & Krinis Str, Athens 18233. At the [Bitcoin ATM at Anageniseos 7, Thessaloniki](http://thesscash.gr/en/) to exchange Euros <-> Bitcoin. At the [Bitcoin ATM at Iasonos 20, Larisa](http://www.bitcoinspot.gr) to exchange Euros <-> Bitcoin. Watch this [video](https://www.youtube.com/watch?v=WsVAE-4xP9A) on how to buy Bitcoin from the BCash ATM. They charge 7% over the [Kraken](https://www.kraken.com) exchange rate.
 - At the Bitcoin ATM run by [GroupBTC Greece](https://www.groupbtc.com/el) at Kosta Varnali 2-4, Ermeion 3 shopping centre, Dourou Square, Halandri 15233. It is located next to the Grigoris Mikrogevmata shop.  Charges a fee of 7% over [BitcoinAverage](https://bitcoinaverage.com) for Euro -> Bitcoin and 4% for Bitcoin -> Euro.
 - At any Bitcoin exchange in the world, via a bank transfer. Due to the capital controls in Greece, as of March 2018 you can wire up to €2000 abroad per two months with no prior approval or paperwork. This method incurs the lowest fees, assuming you send the amount using a SEPA transfer (a Greek bank can charge as low as €1 for a SEPA transfer). Some exchanges that accept SEPA transfers are [Kraken](https://www.kraken.com), [Coinbase](https://www.coinbase.com/) and [BitStamp](https://www.bitstamp.net).
 - At a Bitcoin exchange that accepts debit or credit cards. <strike>An exchange that accepts Greek cards is Coinbase and charges 3.99%. Coinbase only accepts cards enabled for 3D Secure that allows secure online transactions. For Visa cards this mechanism is known as Verified by Visa and for MasterCard cards this is known as MasterCard SecureCode. Debit cards by Eurobank and Alpha Bank were successfully used on Coinbase recently (in 2017). Piraeus Bank no longer supports 3D Secure for their cards.</strike>
@@ -86,7 +86,7 @@ Come to one of our meetups in [Athens](https://www.meetup.com/BlockchainGreece-0
 - The [Hellenic Blockchain Hub](http://blockchain.org.gr) non-profit organization
 - The [Cyprus Blockchain Technologies](http://cybt.eu) non-profit organization
 
-Last update: 2018-04-04
+Last update: 2018-04-07
 
 <!-- <div class="posts">
   {% for post in site.posts %}
