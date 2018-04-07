@@ -1,15 +1,15 @@
 ---
 layout: page
-title: About
+title: About Me
 permalink: /about/
 ---
-
-Some information about you!
+Hey! My name is Ann and I'm learning how to code.<br>
+Join my coding journey and don't be shy to shoot me a message :)
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+Under construction!
 
-### Contact me
+### Contact me 
 
-[email@domain.com](mailto:email@domain.com)
+[ann.honecker@gmail.com](mailto:ann.honecker@gmail.com)
