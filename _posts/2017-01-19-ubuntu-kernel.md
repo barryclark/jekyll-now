@@ -4,6 +4,10 @@ title: ubuntuでlinux kernelのversionを固定する
 categories: ['env development']
 ---
 
+### TL;DR
+- nvidia-docker と不整合を起こさないように linux kernel version を固定するようにした
+<br>
+
 Ubuntu 16.04 LTSでlinux kernelのversionを固定する。<br>
 apt-get upgradeとかでkernelがversion upしてNVIDIAのdriverのversionと不整合を起こして入れ直し、が面倒だというのが主な理由。<br>
 こんなもん調べればいくらでも記事が出てくるだろうが、自分用に記録しておく。

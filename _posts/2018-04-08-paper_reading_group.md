@@ -3,13 +3,14 @@ layout: post
 title: 論文読み会で発表したい人はそんなにいないのでは？という気付き
 categories: ['ML paper']
 ---
-<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-
 
 ### TL;DR
 - [WSDM2018論文読み会](https://atnd.org/events/95510) に人が集まらなかった
 - 有意義な会ならちょっと宣伝すれば人が集まると思ってたのは見当違いだった
 - 論文読み会で発表したいと思っている人は割と少ないのでは？
+<br>
+
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
 世はまさに機械学習勉強会の時代である。
 

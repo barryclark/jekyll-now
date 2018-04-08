@@ -3,12 +3,13 @@ layout: post
 title: 家にホワイトボードがあると良いことがあります
 categories: ['env development']
 ---
-<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
 
 ### TL;DR
 - 家にホワイトボードを買って計算をしよう
+<br>
 
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
 自分の家には大きめのホワイトボードがある。
 120[cm]-90[cm]というサイズのものである。

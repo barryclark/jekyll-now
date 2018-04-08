@@ -3,13 +3,15 @@ layout: post
 title: 確定申告の提出書類を作成した
 categories: ['雑談']
 ---
-<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
 
 ### TL;DR
 - 平成29年分の確定申告の提出書類を作成した
 - 検討の結果、会計ソフトなどは何も使わずに全て自分で作成した
 - 作ったのは確定申告書Bと青色申告決算書と医療費控除の明細書
+<br>
+
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
 確定申告の季節だ。  
 確定申告は何度かしたことがあるが、個人事業主としても仕事をしながら確定申告書と青色申告決算書を作るのは初めてなので、備忘録を兼ねて記事にしておく。

@@ -3,11 +3,13 @@ layout: post
 title: DLを誤認識させるノイズの話
 categories: ['ML paper']
 ---
-<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
 
 ### TL;DR
 - 普遍的な摂動ノイズによって様々な画像がDLで誤認識されるという論文を読んで発表した
+<br>
+
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
 <script async class="speakerdeck-embed" data-id="5bf2665215fd4037823335e53b4c6d74" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
 

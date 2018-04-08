@@ -3,13 +3,15 @@ layout: post
 title: 論文を読んだ際のメモをレポジトリの issue に残していくことにした
 categories: ['ML paper']
 ---
-<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
 
 ### TL;DR
 - 論文読みのメモを [GitHubのレポジトリのissue](https://github.com/yoheikikuta/paper-reading/issues) で管理することにした
 - 数式は screencloud で imgur に保存してそれを貼るということにした。自分で書けないのは不便もあるが、数式が多すぎない論文なら大丈夫そう
 - 小さい単位でコメントとして残していくスタイルはまあまあ良さそう
+<br>
+
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
 普段の論文読みを iPad Pro に移行してから結構快適である。  
 

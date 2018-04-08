@@ -3,12 +3,14 @@ layout: post
 title: 過去に XXX をしておけば良かった、という命題は真か偽か
 categories: ['雑談']
 ---
-<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
 
 ### TL;DR
 - 自分の場合はほとんど偽、と思う
 - ただプログラミングは何かしらやっておければ良かったのかもしれない
+<br>
+
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
 「過去に XXX をしておけば良かった」というのは割とよく目にする statement である。
 大学時代に真面目に数学をやっておけば良かった、みたいな話である。

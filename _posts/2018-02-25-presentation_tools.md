@@ -3,12 +3,14 @@ layout: post
 title: プレゼン用の資料作成のためのツールをいくつか試した
 categories: ['env development']
 ---
-<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
 
 ### TL;DR
 - プレゼンで資料を作るときに自分に合うものをちょっと探してみた
 - 結論としては Deckset（もしくは gitpitch）が良さそう
+<br>
+
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
 発表資料を作るとき、結構大変である。
 

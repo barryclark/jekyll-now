@@ -3,7 +3,6 @@ layout: post
 title: Deep Learning with Python を読んだ
 categories: ['ML paper']
 ---
-<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
 
 ### TL;DR
@@ -11,6 +10,9 @@ categories: ['ML paper']
 - よく書かれている本で、特に初学者〜中級者が Keras を使ってモデル構築ができるようになるには最適
 - 扱っているトピック自体は他の本と比べてそこまで変わっていないが、一つ一つの質は高い
 - 個人的には Keras の実装の話などをもっとして欲しかった
+<br>
+
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
 Keras 作者の Chollet 氏が書いた deep learning 本ということで、どんな内容なんだろうと思って読んでみた。
 

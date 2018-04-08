@@ -4,7 +4,12 @@ title: iMacのNVIDIA GPUをデュアルブートしたUbuntu16.04のnvidia-docke
 categories: ['env development']
 ---
 
-マシンは iMac(27-inch, Late 2013) でプロセッサは以下。<br>
+### TL;DR
+- タイトルまま
+<br>
+
+
+マシンは iMac(27-inch, Late 2013) でプロセッサは以下。
 
 - CPU : 3.4 GHz quad-core intel Core i5
 - GPU : NVIDIA GeForce GTX 775M with 2GB of GDDR5 memory
