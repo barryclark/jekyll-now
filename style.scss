@@ -18,9 +18,9 @@ html {
 }
 
 body {
-	background: $white;
+	background-image: url("https://www.bing.com/images/search?view=detailV2&ccid=Hnj9gaMz&id=66F2C4406589F1C6929E54E9664231CD9243F37D&thid=OIP.Hnj9gaMz5zNFR55QpbZ6aQHaFj&mediaurl=http%3a%2f%2f3.bp.blogspot.com%2f_LTDarCYdGZc%2fTIk01n5VIYI%2fAAAAAAAACOo%2fEBz0hsHQIZg%2fs1600%2fEvening%2bSplendor%2c%2bVolcanoes%2bNational%2bPark%2c%2bHawaii_2.jpg&exph=1200&expw=1600&q=volcanoes&simid=608033711897774543&selectedIndex=9");
   font: 18px/1.4 $helvetica;
-  color: $darkGray;
+  color: rgb(140, 140, 140);
 }
 
 .container {
@@ -28,11 +28,12 @@ body {
   max-width: 740px;
   padding: 0 10px;
   width: 100%;
+  background: green;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $helveticaNeue;
-  color: $darkerGray;
+  color: #ff6666;
   font-weight: bold;
 
   line-height: 1.7;
