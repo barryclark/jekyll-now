@@ -3,21 +3,26 @@
 // VARIABLES
 //
 
-// Colors
-$blue: #4183C4;
+$apoapsis-darkblue: #0056B9;
+$apoapsis-lightblue: #489DFF;
 
 // Grays
-$black: #000;
-$darkerGray: #222;
-$darkGray: #333;
-$gray: #666;
-$lightGray: #eee;
+$primary-black: rgba(0, 0, 0, .87);
+$secondary-black: rgba(0, 0, 0, .54);
+$disabled-black: rgba(0, 0, 0, .38);
+$divider-black: rgba(0, 0, 0, .12);
 $white: #fff;
 
-// Font stacks
-$helvetica: Helvetica, Arial, sans-serif;
-$helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$georgia: Georgia, serif;
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Dosis:300,500,700|Nunito:300,300i,600,600i,800,800i');
+$dosis: Dosis, Helvetica, Arial, sans-serif;
+$dosis-light: 300;
+$dosis-medium: 500;
+$dosis-bold: 700;
+$nunito: Nunito, Helvetica, Arial, sans-serif;
+$nunito-light: 300;
+$nunito-medium: 600;
+$nunito-bold: 800;
 
 // Mobile breakpoints
 @mixin mobile {

@@ -10,7 +10,8 @@ layout: default
   </div>
 
   <div class="date">
-    Written on {{ page.date | date: "%B %e, %Y" }}
+    {% if page.lang == "DE" %}Geschrieben am {{ page.date | date: "%d. %B %Y" | replace:"January","Januar" | replace:"Februar","February" | replace:"March","März" | replace:"May","Mai" | replace:"June","Juni" | replace:"July","Juli" | replace:"December","Dezember" }}{% elsif page.lang == "EN" %}Written on {{ page.date | date: "%d. %B %Y"}}{% endif %}
+
   </div>
 
   {% include disqus.html %}
