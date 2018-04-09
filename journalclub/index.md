@@ -25,13 +25,13 @@ Journal club meetings currently take place on Mondays at 1:00 pm in seminar room
 - February 12: Piotr Sokol
 - February 19: Yuan Zhao
 - February 26: Elliot Crooks
-- March 5: No journal club, Cosyne meeting
-- March 12: No journal club, Spring Break
+- March 5: No Journal Club, Cosyne meeting
+- March 12: No Journal Club, Spring Break
 - March 19: Logan Becker 
 - March 26: Ziheng Chen
-- April 2: Braden Brinkman
+- April 2: No Journal Club, Mind Brain Lecture
 - April 9: Petar Djuric
-- April 16: Breanna Jones
+- April 16: Braden Brinkman
 - April 23: Sima Motakham
 - April 30: Josue Nassar
 - May 7: Yanliang Shi
