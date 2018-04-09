@@ -12,11 +12,6 @@ The resort was really a nice and warm place to heal my headache.
 
 During the two days, I spent most of my time in the workshops of recurrent neural networks and manifolds. There were interesting talks in both of them. I wish the organizers could make videos online afterwards.
 
-____
-(Written by Yuan Zhao)
-
-____
-
 **Studying human-level cognition with trained recurrent neural networks**
 
 Robert Yang introduced a common framework to describe many cognitive tasks as graphs of simple operators, and trained RNN to perform various tasks within this framework. They found that the network developed compositionality of task representations, whereby one task can be performed by recombining in structions for other tasks. This talk pertains to the preprint [Clustering and compositionality of task representations in a neural network trained to perform many cognitive tasks](https://www.biorxiv.org/content/early/2017/09/01/183632).
@@ -54,3 +49,5 @@ where \\(x_t\\) and \\(y_t\\) are the latent state and observation of current ti
 \\]
 The inference is done by *Assumed Density Filtering* which optimizes \\(s\\), \\(\sigma_s\\) and \\(J\\) as well. Note that \\(\sigma_s\\) represents the confidence on the fixed point \\(s\\).
 
+____
+*Yuan Zhao*
