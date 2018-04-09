@@ -33,6 +33,12 @@ Byron Yu showed the work of applying factor analysis on spiking activity of recu
 ```
 Basically there were two kinds of comparisons that how the dimensionality and the percentage of explained variance change as more and more neurons or trials included in the analysis. Unfortunately, Byron could not finish all the staff in time because too many questions raised.
 
+**Relating sensorimotor timing to brain dynamics: insights from integrating recurrent neural networks with electrophysiology**
+
+Mehrdad Jazayeri talked about the evidence that RNN can be used to link brain activity to sensorimotor computations.In a ready-set-go time interval production task with variable scale, the neural activity of the population forms a manifold. On the interval subspace, the two temporal gains produced identical mean trajectories, while on the gain subspace, they were separated. 
+A control mechanism that relied on the system's inputs and initial conditions was revealed. This initial condition in turn set the speed of neural dynamics in the production epoch allowing the animal to aim for the target interval.
+[bioRxiv](https://www.biorxiv.org/content/early/2018/02/07/261214)
+
 **Describing nonlinear latent dynamics**
 
 Maneesh Sahani talked about the *Gaussian Process Dynamical Model* (GPDM) which describes nonlinear dynamical systems in forms of
