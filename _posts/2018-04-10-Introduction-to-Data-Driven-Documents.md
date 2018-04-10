@@ -34,3 +34,4 @@ As part of my daily load from my @furzedowntweets Twitter stream to MongoDB, I h
 As I have been learning the [Flask Python web development micro-framework](http://flask.pocoo.org/) recently, I thought I would continue with that platform for this exercise. So I set up a basic Flask app with two application routes:
 * Index - returns the default page - this will contain all the graphing functionality
 * RawData - this will connect my MongoDB Atlas instance in the cloud, and return the followers by date data in json format
+I created a graph.js file which contains all the d3 functionality.
