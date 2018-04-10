@@ -1,0 +1,55 @@
+---
+layout: post
+title: Sampling variance of Pearson's r in a two-level design
+date: October 7, 2017
+tags: [effect-sizes, meta-analysis, delta-method, distribution-theory]
+---
+
+Consider Pearson's correlation coefficient, $r$, calculated from two variables $X$ and $Y$ with population correlation $\rho$. If one calculates $r$ from a simple random sample of $N$ observations, $\{x_i, y_i\}_{i=1}^N$, then the sampling variance of $r$ will be approximately
+$$
+\text{Var}(r) \approx \frac{1}{N}\left(1 - \rho^2\right)^2.
+$$
+But what if the observations are drawn from a multi-stage sample? If one uses the raw correlation between the observations (ignoring the multi-level structure), then the $r$ will actually be a weighted average of within-cluster and between-cluster correlations (Snijders & Bosker, 2012). Intuitively, I would expect that the sampling variance of the between-cluster correlation will be a function of the number of clusters (regardless of the number of observations per cluster), so the variance of $r$ from a multi-stage sample would not necessarily be the same as that froma  simple random sample. What is the sampling variance of $r$ in this design?
+
+Let me be more precise here by formalizing the sampling process. Suppose that we have a sample with $m$ clusters, $n_j$ observations in cluster $j$, and total sample size $N = \sum_{j=1}^m n_j$. Assume that 
+$$
+\begin{aligned}
+X_{ij} &= v^x_j + e^x_{ij} \\
+Y_{ij} &= v^y_j + e^y_{ij},
+\end{aligned}
+$$
+for $i=1,...,n_j$ and $j=1,...,m$, where
+$$
+\left[\begin{array}{c} v^x_j \\ v^y_j \end{array}\right] \sim N\left(\left[\begin{array}{c}0 \\ 0 \end{array}\right], \left[\begin{array}{cc}\omega_x^2 & \phi \omega_x \omega_y \\ \phi \omega_x \omega_y & \omega_y^2\end{array}\right]\right) \qquad \text{and}\qquad \left[\begin{array}{c} e^x_{ij} \\ e^y_{ij} \end{array}\right] \sim N\left(\left[\begin{array}{c}0 \\ 0 \end{array}\right], \left[\begin{array}{cc}\sigma_x^2 & \rho \sigma_x \sigma_y \\ \rho \sigma_x \sigma_y & \sigma_y^2\end{array}\right]\right)
+$$
+and the error terms are mutually independent unless otherwise noted.
+
+To understand the sampling distribution of $r$ in this model, it helps to work with sums of squares between and within clusters. Let 
+$$
+\begin{aligned}
+\bar{x}_j &= \frac{1}{n_j} \sum_{i=1}^{n_j} X_{ij} \\
+\bar{\bar{x}} &= \frac{1}{N} \sum_{j=1}^m \sum_{i=1}^{n_j} X_{ij} = \frac{1}{N} \sum_{j=1}^m n_j \bar{x}_j \\
+SS_{xy}^W &= \sum_{j=1}^m \sum_{i=1}^{n_j} \left(X_{ij} - \bar{x}_j\right) \left(Y_{ij} - \bar{y}_j\right) \\
+SS_{xy}^B &= \sum_{j=1}^m n_j \left(\bar{x}_j - \bar{\bar{x}}\right) \left(\bar{y}_j - \bar{\bar{y}}\right),
+\end{aligned}
+$$
+with $SS^W_{xx}$, $SS^B_{xx}$, $SS^W_{yy}$, and $SS^B_{yy}$ defined analogously.
+
+Pearson's $r$ calculated across the entire sample of $N$ observations can be written as a weighted average of within- and between-cluster sample correlations, with weights that depend on the intra-class correlations of $X$ and $Y$. Specifically, 
+$$
+r = \sqrt{(1 - c_x)(1 - c_y)} \times \frac{SS^W_{xy}}{\sqrt{SS^W_{xx} SS^W_{yy}}} + \sqrt{c_x c_y} \times \frac{SS^B_{xy}}{\sqrt{SS^B_{xx} SS^B_{yy}}},
+$$
+where $c_x = SS^B_{xx} / \left(SS^B_{xx} + SS^W_{xx}\right)$ and $c_y = SS^B_{yy} / \left(SS^B_{yy} + SS^W_{yy}\right)$.
+
+Following standard results from multivariate analysis (Searle, 2006, p. 352, or likewise), the within sums-of-squares have the following variances and covariances:
+$$
+\begin{aligned}
+\text{Var}\left(SS^W_{xx}\right) &= (N - m) \times 2 \sigma_x^4 \\ 
+\text{Var}\left(SS^W_{yy}\right) &= (N - m) \times 2 \sigma_y^4 \\
+\text{Var}\left(SS^W_{xy}\right) &= (N - m) \times (1 + \rho^2)\sigma_x^2 \sigma_y^2 \\
+\text{Cov}\left(SS^W_{xx}, SS^W_{yy}\right) &= (N - m) \times 2 \rho^2 \sigma_x^2 \sigma_y^2 \\
+\text{Cov}\left(SS^W_{xx}, SS^W_{xy}\right) &= (N - m) \times 2 \rho \sigma_x^3 \sigma_y \\
+\text{Cov}\left(SS^W_{yy}, SS^W_{xy}\right) &= (N - m) \times 2 \rho \sigma_x \sigma_y^3.
+\end{aligned}
+$$
+The between sums-of-squares are a little bit trickier.
