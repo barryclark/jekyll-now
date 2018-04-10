@@ -24,4 +24,13 @@ D3 is definitely not a "here's my x series data, here's my series data, plot a l
 * CSS
 * JavaScript programming
 * HTML
-In return for the heavier investment in technical skills required to get up and running, you get incredibly fine-grained control over your visuals - which would be very hard or impossible to do with many other higher leve graphing tools. D3 acts as a thin layer between your data and the DOM, and harnesses the power of SVG to allow you to create interactive visuals dynamically all within the browser.
+
+In return for the heavier investment in technical skills required to get up and running, you get incredibly fine-grained control over your visuals - which would be very hard or impossible to do with many other higher leve graphing tools. D3 acts as a thin layer between your data and the DOM, and harnesses the power of [SVG (Scalable Vector Graphics)](https://en.wikipedia.org/wiki/Scalable_Vector_Graphics) to allow you to create interactive visuals dynamically all within the browser.
+
+I will run through the example I put together, after spending a couple of hours going through the PluralSight course.
+
+As part of my daily load from my @furzedowntweets Twitter stream to MongoDB, I have also been storing the total number of followers each day. I know this won't provide any amazing insights, but I thought it would be a good data source to use for a simple graphing example - not requiring any data manipulation within MongoDB.
+
+As I have been learning the [Flask Python web development micro-framework](http://flask.pocoo.org/) recently, I thought I would continue with that platform for this exercise. So I set up a basic Flask app with two application routes:
+* Index - returns the default page - this will contain all the graphing functionality
+* RawData - this will connect my MongoDB Atlas instance in the cloud, and return the followers by date data in json format
