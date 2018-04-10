@@ -36,11 +36,13 @@ As I have been learning the [Flask Python web development micro-framework](http:
 * RawData - this will connect my MongoDB Atlas instance in the cloud, and return the followers by date data in json format
 I created a graph.js file which contains all the d3 functionality.
 
-{% highlight javascript %}
+The entry point uses one of the d3 built-in data import functions - in this case we are using json, but it caters for a wide range of different data files. The method below runs when the index.html page loads - calls the /rawdata method, checks for any error, then passes the json data to the main plotGraph method.
+
+```javascript
 var data;
 d3.json("/rawdata", function(error, json) {
     if (error) return console.warn(error);
     data = json;
     plotGraph(error, data);
   });
-{% endhighlight %}
+```
