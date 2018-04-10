@@ -47,4 +47,23 @@ d3.json("/rawdata", function(error, json) {
   });
 ```
 
-You can see the full graph.js module (including definition of plotGraph) [here](https://github.com/JulianJoseph/d3-intro/blob/master/graph.js)
+You can see the full graph.js module (including definition of plotGraph) [here](https://github.com/JulianJoseph/d3-intro/blob/master/graph.js), but in summary, these are the steps I followed to generate an animated line chart showing total twitter followers over time:
+
+* Initialisation - define height and width of SVG element plus other layout constants
+* Data Parameters - get max and min of date range and follower count range
+* Add text headings to page
+* Define y scale
+```javascript
+    var yScale = d3.scale
+        .linear()
+        .domain([min,max + 10])
+        .range([h-padding, 10])
+        .nice();
+```        
+* Define x scale
+```javascript
+    var xScale = d3.scale
+        .linear()
+        .domain([0, followerData.length-1])
+        .range([5, w]);
+```        
