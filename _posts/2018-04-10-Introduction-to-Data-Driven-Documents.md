@@ -35,3 +35,12 @@ As I have been learning the [Flask Python web development micro-framework](http:
 * Index - returns the default page - this will contain all the graphing functionality
 * RawData - this will connect my MongoDB Atlas instance in the cloud, and return the followers by date data in json format
 I created a graph.js file which contains all the d3 functionality.
+
+{% highlight javascript %}
+var data;
+d3.json("/rawdata", function(error, json) {
+    if (error) return console.warn(error);
+    data = json;
+    plotGraph(error, data);
+  });
+{% endhighlight %}
