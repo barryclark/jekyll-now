@@ -8,10 +8,21 @@ layout: default
   <div class="entry">
     {{ content }}
   </div>
-
+  
   <div class="date">
     Written on {{ page.date | date: "%B %e, %Y" }}
   </div>
 
   {% include disqus.html %}
 </article>
+
+{% if page.tags != empty %}
+    <footer>
+      <p>Read more:</p>
+      <ul class="tag-list">
+        {% for tag in page.tags %}
+        <li><a href="{{ site.tag_dir | prepend: '/' }}/{{ tag | uri_escape }}">{{ tag }}</a></li>
+        {% endfor %}
+      </ul>
+    </footer>
+{% endif %}
