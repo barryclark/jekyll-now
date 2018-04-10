@@ -1,0 +1,77 @@
+
+button, canvas, textarea {
+    border: none;
+    border-radius: 10px;
+}
+
+button {
+    padding: 6 9px;
+    width: 82px;
+    height: 30px;
+}
+
+button:hover {
+    cursor: pointer;
+    color: #eee;
+    background-color: #222;
+}
+
+canvas {
+    background: #FFF;
+}
+
+a {
+    color: #ff9;
+}
+
+h2 {
+    text-align: center;
+    font-size: 10px;
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    height: 220px;
+}
+
+
+#main {
+    width: 960px;
+    padding: 0 15px;
+}
+
+#main #canvas {
+    width: 100%;
+    margin-top: 15px;
+}
+
+#main, #left, #center, #right, #info{
+    margin: 0 auto;
+}
+
+#left {
+    float: left;
+    width: 500px;
+    padding: 0 10px;
+}
+
+#center {
+    float: left;
+    width: 40px;
+    padding: 0 10px;
+}
+
+#right {
+    float: right;
+    width: 360px;
+    padding: 0 10px;
+    text-align: center;
+}
+
+#output {
+    background: #ccc;
+    margin-bottom: 10px;
+    height: 140px;
+}
+

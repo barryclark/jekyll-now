@@ -27,7 +27,7 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 840px;
+  max-width: 740px;
   padding: 0 20px;
   width: 100%;
 }
@@ -80,7 +80,7 @@ a {
 
 ul, ol {
   margin: 15px 0;
-  padding-left: 30px;
+  padding-left: 40px;
 }
 
 ul {
@@ -240,7 +240,7 @@ nav {
 //
 
 .posts > .post {
-  padding-bottom: 2em;
+  padding-bottom: 1em;
   border-bottom: 1px solid $lightGray;
 }
 
@@ -270,6 +270,7 @@ nav {
   .read-more {
     font-size: 15px;
     vertical-align: middle;
+    padding: 20px 0px 10px 0px;
     .fas.fa-angle-right {
       vertical-align: middle;
     }
@@ -342,7 +343,7 @@ footer {
   .title-img {
     position: relative;
     top:25%;
-    min-width: 600px; // Needs fixing
+    min-width: 100%; // Needs fixing
     transform: translateY(-25%);
     filter: brightness(85%);
   }
@@ -566,4 +567,21 @@ input,textarea,select {
 }
 .comment__date a {
  text-decoration:none
+}
+
+figure {
+  padding: 15px 0px 15px 0px;
+}
+
+figcaption {
+  font-size: 14px;
+  color: #606060;
+  font-style: italic;
+}
+
+.highlighter-rouge {
+  color:#914210;
+  background-color:#ffe6ba;
+  font-family: "Menlo","DejaVu Sans Mono","Consolas","Ubuntu Mono","Courier New",monospace;
+  border-radius: 3px;
 }

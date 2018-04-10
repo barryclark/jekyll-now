@@ -3,10 +3,14 @@ layout: default
 ---
 
 <article class="post">
+  {% if page.picture %}
   <figure class="title-figure">
     <img class="title-img" src="{{ page.picture }}">
     <div class="title-text"> {{ page.title }} </div>
   </figure>
+  {% else %}
+    <h1> {{ page.title }} </h1>
+  {% endif %}
 
   <div class="date">
     {{ page.date | date: "%B %e, %Y" }}
