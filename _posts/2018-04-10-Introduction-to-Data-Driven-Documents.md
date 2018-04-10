@@ -11,7 +11,7 @@ This article is a continuation of my earlier post on [how to migrate data from T
 
 ![Sample line chart](https://raw.githubusercontent.com/julianjoseph/julianjoseph.github.io/master/images/fdt-line-chart.jpg)
 
-D3 has been around since about 2011, but, like so many other dev tools, was completely new to me! I started by going through the excellent PluralSight course: [D3.js Data Visualization Fundamentals](https://app.pluralsight.com/library/courses/d3js-data-visualization-fundamentals/table-of-contents), then had a go at creating my own simple chart, using my MongoDB data in the cloud. This post is just an overview, so I won't go into too much detail on how to get up and running with D3.
+D3 has been around since about 2011, but, like so many other dev tools, was completely new to me! I started by going through the excellent PluralSight course: [D3.js Data Visualization Fundamentals](https://app.pluralsight.com/library/courses/d3js-data-visualization-fundamentals/table-of-contents), then had a go at creating my own simple chart, using my MongoDB data in the cloud. This post is just an overview, and there are loads of excellent tutorials available online, so I won't go into too much detail on how to get up and running with D3.
 
 D3 is definitely not a "here's my x series data, here's my y series data, plot a line chart" tool. It is quite low level, and requires a fairly good understanding of:
 * DOM
