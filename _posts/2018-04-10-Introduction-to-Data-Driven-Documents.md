@@ -1,6 +1,6 @@
 ---
 layout: post
-title: An Introduction to Data Driven Documents (d3)
+title: An Introduction to Data Driven Documents (D3)
 categories: blog
 comments: true
 published: false
