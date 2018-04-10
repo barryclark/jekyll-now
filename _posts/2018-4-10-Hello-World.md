@@ -14,6 +14,6 @@ Unfortunately, there were a number of teething problems, as documented [here](ht
 
 Frustrated, I decided to give Jekyll a try. After a bit of research, I found a [great starting point for Jekyll](https://github.com/barryclark/jekyll-now).
 
-A bit of research allowed for tags to also be [generated](https://blog.meinside.pe.kr/Adding-tag-cloud-and-archives-page-to-Jekyll/)
+A bit of research allowed for tags to also be [generated](https://blog.meinside.pe.kr/Adding-tag-cloud-and-archives-page-to-Jekyll/).
 
 If you're reading this, then I guess that I managed to get everything running!
