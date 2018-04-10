@@ -19,13 +19,13 @@ This article is a continuation of my earlier post on [how to migrate data from T
 
 D3 has been around since about 2011, but, like so many other dev tools, was completely new to me! I started by going through the excellent PluralSight course: [D3.js Data Visualization Fundamentals](https://app.pluralsight.com/library/courses/d3js-data-visualization-fundamentals/table-of-contents). This post is just an overview, so I won't go into too much detail on how to get up and running with D3.
 
-D3 is definitely not a "here's my x series data, here's my series data, plot a line chart" tool. It is quite low level, and requires a fairly good understanding of:
+D3 is definitely not a "here's my x series data, here's my y series data, plot a line chart" tool. It is quite low level, and requires a fairly good understanding of:
 * DOM
 * CSS
 * JavaScript programming
 * HTML
 
-In return for the heavier investment in technical skills required to get up and running, you get incredibly fine-grained control over your visuals - which would be very hard or impossible to do with many other higher leve graphing tools. D3 acts as a thin layer between your data and the DOM, and harnesses the power of [SVG (Scalable Vector Graphics)](https://en.wikipedia.org/wiki/Scalable_Vector_Graphics) to allow you to create interactive visuals dynamically all within the browser.
+In return for the heavier investment in technical skills required to get up and running, you get incredibly fine-grained control over your visuals - which would be very hard or impossible to do with many other higher level graphing tools. D3 acts as a thin layer between your data and the DOM, and harnesses the power of [SVG (Scalable Vector Graphics)](https://en.wikipedia.org/wiki/Scalable_Vector_Graphics) to allow you to create interactive visuals dynamically all within the browser.
 
 I will run through the example I put together, after spending a couple of hours going through the PluralSight course.
 
