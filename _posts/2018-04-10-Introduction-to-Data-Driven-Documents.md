@@ -29,10 +29,10 @@ As part of my daily load from my [@furzedowntweets](https://twitter.com/furzedow
 
 As I have been learning the [Flask Python web development micro-framework](http://flask.pocoo.org/) recently, I thought I would continue with that platform for this exercise. So I set up a basic Flask app with two application routes:
 * Index - returns the default page - this will contain all the graphing functionality
-* RawData - this will connect my MongoDB Atlas instance in the cloud, and return the followers by date data in json format
+* RawData - this will connect to my MongoDB Atlas instance in the cloud, and return the followers by date data in json format
 I created a graph.js file which contains all the d3 functionality.
 
-The entry point uses one of the d3 built-in data import functions - in this case we are using json, but it caters for a wide range of different data files. The method below runs when the index.html page loads - calls the /rawdata method, checks for any errors, then passes the json data to the main plotGraph method.
+The entry point uses one of the d3 built-in data import functions - in this case we are using json, but it provides methods for a wide range of different data files. The method below runs when the index.html page loads. It calls the /rawdata method, checks for any errors, then passes the json data to the main plotGraph method.
 
 ```javascript
 var data;
@@ -63,6 +63,7 @@ You can see the full graph.js module (including definition of plotGraph) [here](
         .domain([0, followerData.length-1])
         .range([5, w]);
 ```        
+Note the **domain** and **range** settings above. This is a very neat feature of D3. To ensure that your graph fits within the area you have defined for it, you tell it the domain - ie the max and min of the actual data you are using - then tell it the range - ie the co-ordinates of the space that you want to fill on the page. D3 will then automatically scale your data to fit the space available.
 * Define our graph line
 ```javascript
     var drawLine = d3.svg.line()
