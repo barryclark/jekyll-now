@@ -7,14 +7,6 @@ published: false
 date: 2018-04-10 00:00:00 +0000
 ---
 
-Topics to cover:
-- next step from MongoDB/Twitter article
-- flexible way to create charts
-- target audience is web developers - people who understand javascript/dom etc
-- steps to create line chart showing @furzedowntweets users over time
-- always a new thing to learn: hosted on amazon ec2 instance
-- update ec2 code to show animated chart with highlighted min/max values
-
 This article is a continuation of my earlier post on [how to migrate data from Twitter to MongoDB](https://julianjoseph.github.io/blog/2018/02/15/Retweeter-MongoDB-Integration/). I had been looking at ways of presenting the Twitter data from MongoDB in a graphical format. While searching, I came across the [D3 (Data Driven Documents) JavaScript library](https://d3js.org/).
 
 D3 has been around since about 2011, but, like so many other dev tools, was completely new to me! I started by going through the excellent PluralSight course: [D3.js Data Visualization Fundamentals](https://app.pluralsight.com/library/courses/d3js-data-visualization-fundamentals/table-of-contents). This post is just an overview, so I won't go into too much detail on how to get up and running with D3.
@@ -88,5 +80,14 @@ You can see the full graph.js module (including definition of plotGraph) [here](
 * Define the plot point labels - we are only showing the counts for the max and min counts, as well as for the earliest and latest dates in the data range
 
 And that's it. It sounds like a lot, and the code looks quite long - but the d3 methods are all pretty intuitive. A lot of the coding is just dynamically rendering CSS elements or attributes based on values from our dataset. In theory, you could make this code a lot more elegant by moving re-usable parts to another javascript module, but otherwise, as my first attempt at a d3 graph, I think it shows the potential of what you can achieve using this library.
+
+If you want to see the full potential of d3, go to [Mike Bostock's Blocks](https://bl.ocks.org/mbostock). Mike was one of the core developers of the d3 library. His website has thousands of examples which you can incorporate easily into your own code.
+
+To deploy my Flask web app, I needed a Linux web server. I always like to take the opportunity to try something new on these projects, and didn't want to just sign up to a new Linux hosting account. This is going to be a tiny website, with very little traffic, so ideally I want a free or near to free as possible hosting solution. Of course, now is the time to try out Amazon Web Services. I already have an account but have never used it. To be honest, whenever I have looked into AWS I have found the sheer range of services available and huge wealth of documentation slightly overwhelming. However, with a bit of persistence and help from a couple of handy online tutorials, I managed to get a free Ubuntu web server up and running on Amazon EC2 in a couple of hours. I deployed by code to the AWS server using WinSCP over SFTP.
+
+I used this excellent tutorial: [Running a Flask app on AWS EC2](https://www.datasciencebytes.com/bytes/2015/02/24/running-a-flask-app-on-aws-ec2/).
+
+And here is a link to the finished graph: [FurzedownTweets Data - Twitter Followers over Time](http://ec2-35-178-126-204.eu-west-2.compute.amazonaws.com/)
+
 
 The full source code for this example can be found here: https://github.com/JulianJoseph/d3-intro
