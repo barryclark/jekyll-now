@@ -67,3 +67,23 @@ You can see the full graph.js module (including definition of plotGraph) [here](
         .domain([0, followerData.length-1])
         .range([5, w]);
 ```        
+* Define our graph line
+```javascript
+    var drawLine = d3.svg.line()
+        .x(function(d,i){ return xScale(i);})
+        .y(function (d){ return yScale(d.count); })
+        .interpolate("monotone");
+```
+* Add SVG element to the page
+```javascript
+    var svg = d3.select("body")
+        .append("svg")        
+        .attr({
+            width: w,
+            height: h
+       });
+```
+* Define path attributes - ie colour, width etc of the line, and define the transition which animates the line
+* Define plot points - we are highlighting the max and min follwer count points with a red circle, and also defining a mouseover event handler for all the plot points which will show the count and date for each point
+* Define the plot point labels - we are only showing the counts for the max and min counts, as well as for the earliest and latest dates in the data range
+And that's it. It sounds like a lot, and the code looks quite long - but the d3 methods are all pretty intuitive. A lot of the coding is just dynamically rendering CSS elements or attributes based on values from our dataset. In theory, you could make this code a lot more elegant by moving re-usable parts to another javascript module, but otherwise, as my first attempt at a d3 graph, I think it shows the potential of what you can achieve using this library.
