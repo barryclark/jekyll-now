@@ -79,8 +79,10 @@ Putting the pieces together, we have
 
 $$
 \begin{aligned}
-(n - 1) \text{Var}(r) &\approx \sigma_{11} \left(\frac{\partial r}{\partial \phi_{xy}}\right)^2 + \sigma_{22} \left(\frac{\partial r}{ \partial \phi_{xx}}\right)^2 + \sigma_{33} \left(\frac{\partial r}{ \partial \phi_{yy}}\right)^2 + 2 \sigma_{12} \frac{\partial r}{\partial \phi_{xy}}\frac{\partial r}{\partial \phi_{xx}} + 2 \sigma_{13} \frac{\partial r}{\partial \phi_{xy}}\frac{\partial r}{\partial \phi_{yy}}+ 2 \sigma_{23} \frac{\partial r}{\partial \phi_{xx}}\frac{\partial r}{\partial \phi_{yy}} \\
-&= \frac{\phi_{xy}^2 + \phi_{xx} \phi_{yy}}{\phi_{xx} \phi_{yy}} + \frac{\phi_{xy}^2\phi_{xx}^2}{2 \phi_{xx}^3 \phi_{yy}} + \frac{\phi_{xy}^2\phi_{yy}^2}{2 \phi_{xx} \phi_{yy}^3} - \frac{2\phi_{xy} \phi_{xx}}{\phi_{xx}^2 \phi_{yy}} - \frac{2\phi_{xy} \phi_{yy}}{\phi_{xx} \phi_{yy}^2} + \frac{\phi_{xy}^4}{\phi_{xx}^2 \phi_{yy}^2} \\
+(n - 1) \text{Var}(r) &\approx \sigma_{11} \left(\frac{\partial r}{\partial \phi_{xy}}\right)^2 + \sigma_{22} \left(\frac{\partial r}{ \partial \phi_{xx}}\right)^2 + \sigma_{33} \left(\frac{\partial r}{ \partial \phi_{yy}}\right)^2 \\
+& \qquad \qquad + 2 \sigma_{12} \frac{\partial r}{\partial \phi_{xy}}\frac{\partial r}{\partial \phi_{xx}} + 2 \sigma_{13} \frac{\partial r}{\partial \phi_{xy}}\frac{\partial r}{\partial \phi_{yy}}+ 2 \sigma_{23} \frac{\partial r}{\partial \phi_{xx}}\frac{\partial r}{\partial \phi_{yy}} \\
+&= \frac{\phi_{xy}^2 + \phi_{xx} \phi_{yy}}{\phi_{xx} \phi_{yy}} + \frac{\phi_{xy}^2\phi_{xx}^2}{2 \phi_{xx}^3 \phi_{yy}} + \frac{\phi_{xy}^2\phi_{yy}^2}{2 \phi_{xx} \phi_{yy}^3} \\
+& \qquad \qquad - \frac{2\phi_{xy} \phi_{xx}}{\phi_{xx}^2 \phi_{yy}} - \frac{2\phi_{xy} \phi_{yy}}{\phi_{xx} \phi_{yy}^2} + \frac{\phi_{xy}^4}{\phi_{xx}^2 \phi_{yy}^2} \\
 &= 1 - 2\frac{\phi_{xy}^2}{\phi_{xx} \phi_{yy}} + \frac{\phi_{xy}^4}{\phi_{xx}^2 \phi_{yy}^2} \\
 &= \left(1 - \rho^2\right)^2.
 \end{aligned}
@@ -88,8 +90,7 @@ $$
 
 ### Fisher's $z$-transformation
 
-Meta-analysts will be very familiar with Fisher's $z$-transformation of $r$, given by
-$z(\rho) = \frac{1}{2} \log\left(\frac{1 + \rho}{1 - \rho}\right).$
+Meta-analysts will be very familiar with Fisher's $z$-transformation of $r$, given by $z(\rho) = \frac{1}{2} \log\left(\frac{1 + \rho}{1 - \rho}\right)$.
 Fisher's $z$ is the variance-stabilizing (and also normalizing) transformation of $r$, meaning that $\text{Var}\left(z(r)\right)$ is approximately a constant function of sample size, not depending on the degree of correlation $\rho$. We can see this using another application of the delta method:
 
 $$
