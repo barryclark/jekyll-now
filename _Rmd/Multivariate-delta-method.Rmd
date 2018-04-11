@@ -5,35 +5,46 @@ date: April 11, 2018
 tags: [delta-method, distribution-theory]
 ---
 
-The delta method is surely one of the most useful techniques in classical statistical theory. It's odd to put it this way, but I would say that the delta method is something like the precursor to the bootstrap, in terms of its utility and broad range of applications. Both are "first-line" tools for solving statistical problems. There are many good references on the delta-method, ranging from [a decent Wikipedia page](https://en.wikipedia.org/wiki/Delta_method) to a short introduction in _The American Statistician_ ([Oehlert, 1992](https://doi.org/10.1080%2F00031305.1992.10475842)). Many statistical theory textbooks also include a longer or shorter discussion of the method (e.g., Stuart & Ord, 1996; Casella & Berger, 2002). 
+The delta method is surely one of the most useful techniques in classical statistical theory. It's perhaps a bit odd to put it this way, but I would say that the delta method is something like the precursor to the bootstrap, in terms of its utility and broad range of applications---both are "first-line" tools for solving statistical problems. There are many good references on the delta-method, ranging from [the Wikipedia page](https://en.wikipedia.org/wiki/Delta_method) to a short introduction in _The American Statistician_ ([Oehlert, 1992](https://doi.org/10.1080%2F00031305.1992.10475842)). Many statistical theory textbooks also include a longer or shorter discussion of the method (e.g., Stuart & Ord, 1996; Casella & Berger, 2002). 
 
 I use the delta method all the time in my work, especially to derive approximations to the sampling variance of some estimator (or covariance between two estimators). Here I'll give one formulation of the multivariate delta method that I find particularly useful for this purpose. (This is nothing at all original. I'm only posting it on the off chance that others might find my crib notes helpful---and by "others" I mostly mean myself in six months...)
 
 ### Multi-variate delta method covariances 
  
 Suppose that we have a $p$-dimensional vector of statistics $\mathbf{T} = \left(T_1,...,T_p \right)$ that converge in distribution to the parameter vector $\boldsymbol\theta = \left(\theta_1,...,\theta_p\right)$ and have asymptotic covariance matrix $\boldsymbol\Sigma / n$, i.e., 
+
 $$
 \sqrt{n} \left(\mathbf{T} - \boldsymbol\theta\right) \stackrel{D}{\rightarrow} N\left( \mathbf{0}, \boldsymbol\Sigma \right).
 $$
+
 Now consider two functions $f$ and $g$, both of which take vectors as inputs, return scalar quantities, and don't have funky (discontinuous) derivatives. The asymptotic covariance between $f(\mathbf{T})$ and $g(\mathbf{T})$ is then approximately
+
 $$
 \text{Cov} \left(f(\mathbf{T}), g(\mathbf{T}) \right) \approx \frac{1}{n} \sum_{j=1}^p \sum_{k=1}^p  \frac{\partial f}{ \partial \theta_j}\frac{\partial g}{ \partial \theta_k}\sigma_{jk}, 
 $$
+
 where $\sigma_{jk}$ is the entry in row $j$ and column $k$ of the matrix $\boldsymbol\Sigma$. If the entries of $\mathbf{T}$ are asymptotically uncorrelated , then this simplifies to 
+
 $$
 \text{Cov} \left(f(\mathbf{T}), g(\mathbf{T}) \right) \approx \frac{1}{n} \sum_{j=1}^p \frac{\partial f}{ \partial \theta_j}\frac{\partial g}{ \partial \theta_j} \sigma_{jj}. 
 $$
+
 If we are interested in the variance of a single statistic, then the above formulas simplify further to
+
 $$
 \text{Var} \left(f(\mathbf{T})\right) \approx \frac{1}{n} \sum_{j=1}^p \sum_{k=1}^p  \frac{\partial f}{ \partial \theta_j}\frac{\partial f}{ \partial \theta_k}\sigma_{jk} 
 $$
+
 or 
+
 $$
 \text{Var} \left(f(\mathbf{T}) \right) \approx \frac{1}{n}\sum_{j=1}^p \left(\frac{\partial f}{ \partial \theta_j}\right)^2 \sigma_{jj}
 $$
+
 in the case of uncorrelated $\mathbf{T}$.
 
 Finally, if we are dealing with a univariate transformation $f(\theta)$, then of course the above simplifies even further to
+
 $$
 \text{Var}\left(f(T)\right) = \left(\frac{\partial f}{\partial \theta}\right)^2 \text{Var}(T)
 $$
@@ -41,16 +52,21 @@ $$
 ### Pearson's $r$
 
 These formulas are useful for all sorts of things. For example, they can be used to derive the sampling variance of Pearson's correlation coefficient. Suppose we have a simple random sample of $n$ observations from a multivariate normal distribution with mean 0 and variance-covariance matrix $\boldsymbol\Phi = \left[\begin{array}{cc}\phi_{xx} & \phi_{xy} \\ \phi_{xy} & \phi_{yy} \end{array}\right]$. Pearson's correlation is calculated as 
+
 $$
 r = \frac{s_{xy}}{\sqrt{s_{xx} s_{yy}}},
 $$
+
 where $s_{xx}$ and $s_{yy}$ are sample variances and $s_{xy}$ is the sample covariance. These sample variances and covariances are unbiased estimates of $\phi_{xx}$, $\phi_{yy}$, and $\phi_{xy}$, respectively. So in terms of the above notation, we have $\mathbf{T} = \left(s_{xx}, s_{yy}, s_{xy}\right)$, $\boldsymbol\theta = \left(\phi_{xx}, \phi_{yy}, \phi_{xy}\right)$, and $\rho = \phi_{xy} / \sqrt{\phi_{xx} \phi_{yy}}$. 
 
 From [a previous post]({{ site.url }}/distribution-of-sample-variances), we can work out the variance-covariance matrix of $\mathbf{T}$: 
+
 $$
 \text{Var}\left(\sqrt{n - 1} \left[\begin{array}{c} s_{xx} \\ s_{yy} \\ s_{xy}\end{array}\right]\right) = \boldsymbol\Sigma = \left[\begin{array}{ccc} 2 \phi_{xx}^2 & & \\ 2 \phi_{xy}^2 & 2 \phi_{yy}^2 & \\ 2 \phi_{xy} \phi_{xx} & 2 \phi_{xy} \phi_{yy} & \phi_{xy}^2 + \phi_{xx} \phi_{yy}\end{array}\right].
 $$
+
 The last piece is to find the derivatives of $r$ with respect to $\mathbf{T}$: 
+
 $$
 \begin{aligned}
 \frac{\partial r}{\partial \phi_{xy}} &= \phi_{xx}^{-1/2} \phi_{yy}^{-1/2} \\
@@ -58,7 +74,9 @@ $$
 \frac{\partial r}{\partial \phi_{yy}} &= -\frac{1}{2} \phi_{xy} \phi_{xx}^{-1/2} \phi_{yy}^{-3/2}
 \end{aligned}
 $$
+
 Putting the pieces together, we have
+
 $$
 \begin{aligned}
 (n - 1) \text{Var}(r) &\approx \sigma_{11} \left(\frac{\partial r}{\partial \phi_{xy}}\right)^2 + \sigma_{22} \left(\frac{\partial r}{ \partial \phi_{xx}}\right)^2 + \sigma_{33} \left(\frac{\partial r}{ \partial \phi_{yy}}\right)^2 + 2 \sigma_{12} \frac{\partial r}{\partial \phi_{xy}}\frac{\partial r}{\partial \phi_{xx}} + 2 \sigma_{13} \frac{\partial r}{\partial \phi_{xy}}\frac{\partial r}{\partial \phi_{yy}}+ 2 \sigma_{23} \frac{\partial r}{\partial \phi_{xx}}\frac{\partial r}{\partial \phi_{yy}} \\
@@ -73,13 +91,17 @@ $$
 Meta-analysts will be very familiar with Fisher's $z$-transformation of $r$, given by
 $z(\rho) = \frac{1}{2} \log\left(\frac{1 + \rho}{1 - \rho}\right).$
 Fisher's $z$ is the variance-stabilizing (and also normalizing) transformation of $r$, meaning that $\text{Var}\left(z(r)\right)$ is approximately a constant function of sample size, not depending on the degree of correlation $\rho$. We can see this using another application of the delta method:
+
 $$
 \frac{\partial z}{\partial \rho} = \frac{1}{1 - \rho^2}.
 $$
+
 Thus, 
+
 $$
 \text{Var}\left(z(r)\right) \approx \frac{1}{(1 - \rho^2)^2} \times \text{Var}(r) = \frac{1}{N - 1}.
 $$
+
 The variance of $z$ is usually given as $1 / (N - 3)$, which is even closer to exact. Here we've obtained the variance of $z$ using two applications of the delta-method. Because of [the chain rule](https://en.wikipedia.org/wiki/Chain_rule), we'd have ended up with the same result if we'd gone straight from the sample variances and covariances, using the multivariate delta method and the derivatives of $z$ with respect to $\boldsymbol\theta$.
 
 ### Covariances between correlations
