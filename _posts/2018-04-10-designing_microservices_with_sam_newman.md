@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Slay the monolith!"
-subtitle: Workshop Summary - "Designing Microservices with Sam Newman" – Some Thoughts about the _Why_, _What_ and _How_ when it comes to Microservices
+subtitle: Workshop - Designing Microservices with Sam Newman
 category: dev
 tags: [microservices, samnewman, devops, development]
 author: Christoph Eckerle, Frank Enders
