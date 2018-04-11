@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Sampling variance of Pearson's r in a two-level design
-date: October 7, 2017
+date: April 10, 2018
 tags: [effect-sizes, meta-analysis, delta-method, distribution-theory]
 ---
 
@@ -37,13 +37,21 @@ with $SS^W_{xx}$, $SS^B_{xx}$, $SS^W_{yy}$, and $SS^B_{yy}$ defined analogously.
 
 Pearson's $r$ calculated across the entire sample of $N$ observations can be written as a weighted average of within- and between-cluster sample correlations, with weights that depend on the intra-class correlations of $X$ and $Y$. Specifically, 
 $$
-r = \sqrt{(1 - c_x)(1 - c_y)} \times \frac{SS^W_{xy}}{\sqrt{SS^W_{xx} SS^W_{yy}}} + \sqrt{c_x c_y} \times \frac{SS^B_{xy}}{\sqrt{SS^B_{xx} SS^B_{yy}}},
+r = r_W \times \sqrt{(1 - c_x)(1 - c_y)} + r_B \times \sqrt{c_x c_y},
 $$
-where $c_x = SS^B_{xx} / \left(SS^B_{xx} + SS^W_{xx}\right)$ and $c_y = SS^B_{yy} / \left(SS^B_{yy} + SS^W_{yy}\right)$.
-
+where 
+$$
+\begin{aligned}
+r_W &= \frac{SS^W_{xy}}{\sqrt{SS^W_{xx} SS^W_{yy}}}, \qquad & r_B &= \frac{SS^B_{xy}}{\sqrt{SS^B_{xx} SS^B_{yy}}} \\
+c_x &= \frac{SS^B_{xx}}{SS^B_{xx} + SS^W_{xx}}, \qquad & c_y &= \frac{SS^B_{yy}}{SS^B_{yy} + SS^W_{yy}}.
+\end{aligned}
+$$
 Following standard results from multivariate analysis (Searle, 2006, p. 352, or likewise), the within sums-of-squares have the following variances and covariances:
 $$
 \begin{aligned}
+\text{E}\left(SS^W_{xx}\right) &= (N - m) \sigma_x^2 \\
+\text{E}\left(SS^W_{yy}\right) &= (N - m) \sigma_y^2 \\
+\text{E}\left(SS^W_{xy}\right) &= (N - m) \rho \sigma_x \sigma_y \\
 \text{Var}\left(SS^W_{xx}\right) &= (N - m) \times 2 \sigma_x^4 \\ 
 \text{Var}\left(SS^W_{yy}\right) &= (N - m) \times 2 \sigma_y^4 \\
 \text{Var}\left(SS^W_{xy}\right) &= (N - m) \times (1 + \rho^2)\sigma_x^2 \sigma_y^2 \\
@@ -52,4 +60,24 @@ $$
 \text{Cov}\left(SS^W_{yy}, SS^W_{xy}\right) &= (N - m) \times 2 \rho \sigma_x \sigma_y^3.
 \end{aligned}
 $$
-The between sums-of-squares are a little bit trickier.
+The between sums-of-squares are a little bit trickier. From Searle, Casella, and McCulloch (1992), 
+$$
+\begin{aligned}
+\text{E}\left(SS^B_{xx}\right) &= f_1 \phi_x^2 + (m - 1)\sigma_x^2 \\
+\text{E}\left(SS^B_{yy}\right) &= f_1 \phi_y^2 + (m - 1)\sigma_y^2 \\
+\text{E}\left(SS^B_{xy}\right) &= f_1 \phi_{xy} + (m - 1)\sigma_{xy} \\
+\text{Var}\left(SS^B_{xx}\right) &= 2\left[(m - 1)\sigma_x^4 + 2 f_1 \sigma_x^2 \phi_x^2 + f_2 \phi_x^4\right] \\ 
+\text{Var}\left(SS^B_{yy}\right) &= 2\left[(m - 1)\sigma_y^4 + 2 f_1 \sigma_y^2 \phi_y^2 + f_2 \phi_y^4\right] \\
+\text{Var}\left(SS^B_{xy}\right) &=  \\
+\text{Cov}\left(SS^B_{xx}, SS^B_{yy}\right) &=  \\
+\text{Cov}\left(SS^B_{xx}, SS^B_{xy}\right) &=  \\
+\text{Cov}\left(SS^B_{yy}, SS^B_{xy}\right) &= ,
+\end{aligned}
+$$
+where
+$$
+\begin{aligned}
+f_1 &= N - \frac{1}{N}\sum_{j=1}^m n_j^2 \\
+f_2 &= \sum_{j=1}^m n_j^2 - \frac{2}{N}\sum_{j=1}^m n_j^3 + \frac{1}{N^2} \left(\sum_{j=1}^m n_j^2 \right)^2.
+\end{aligned}
+$$

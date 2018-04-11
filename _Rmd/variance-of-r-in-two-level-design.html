@@ -10,7 +10,7 @@
 
 
 
-<meta name="date" content="2017-10-07" />
+<meta name="date" content="2018-04-10" />
 
 <title>Sampling variance of Pearson’s r in a two-level design</title>
 
@@ -304,7 +304,7 @@ $(document).ready(function () {
 
 
 <h1 class="title toc-ignore">Sampling variance of Pearson’s r in a two-level design</h1>
-<h4 class="date"><em>October 7, 2017</em></h4>
+<h4 class="date"><em>April 10, 2018</em></h4>
 
 </div>
 
@@ -329,10 +329,17 @@ SS_{xy}^B &amp;= \sum_{j=1}^m n_j \left(\bar{x}_j - \bar{\bar{x}}\right) \left(\
 \end{aligned}
 \]</span> with <span class="math inline">\(SS^W_{xx}\)</span>, <span class="math inline">\(SS^B_{xx}\)</span>, <span class="math inline">\(SS^W_{yy}\)</span>, and <span class="math inline">\(SS^B_{yy}\)</span> defined analogously.</p>
 <p>Pearson’s <span class="math inline">\(r\)</span> calculated across the entire sample of <span class="math inline">\(N\)</span> observations can be written as a weighted average of within- and between-cluster sample correlations, with weights that depend on the intra-class correlations of <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span>. Specifically, <span class="math display">\[
-r = \sqrt{(1 - c_x)(1 - c_y)} \times \frac{SS^W_{xy}}{\sqrt{SS^W_{xx} SS^W_{yy}}} + \sqrt{c_x c_y} \times \frac{SS^B_{xy}}{\sqrt{SS^B_{xx} SS^B_{yy}}},
-\]</span> where <span class="math inline">\(c_x = SS^B_{xx} / \left(SS^B_{xx} + SS^W_{xx}\right)\)</span> and <span class="math inline">\(c_y = SS^B_{yy} / \left(SS^B_{yy} + SS^W_{yy}\right)\)</span>.</p>
-<p>Following standard results from multivariate analysis (Searle, 2006, p. 352, or likewise), the within sums-of-squares have the following variances and covariances: <span class="math display">\[
+r = r_W \times \sqrt{(1 - c_x)(1 - c_y)} + r_B \times \sqrt{c_x c_y},
+\]</span> where <span class="math display">\[
 \begin{aligned}
+r_W &amp;= \frac{SS^W_{xy}}{\sqrt{SS^W_{xx} SS^W_{yy}}}, \qquad &amp; r_B &amp;= \frac{SS^B_{xy}}{\sqrt{SS^B_{xx} SS^B_{yy}}} \\
+c_x &amp;= \frac{SS^B_{xx}}{SS^B_{xx} + SS^W_{xx}}, \qquad &amp; c_y &amp;= \frac{SS^B_{yy}}{SS^B_{yy} + SS^W_{yy}}.
+\end{aligned}
+\]</span> Following standard results from multivariate analysis (Searle, 2006, p. 352, or likewise), the within sums-of-squares have the following variances and covariances: <span class="math display">\[
+\begin{aligned}
+\text{E}\left(SS^W_{xx}\right) &amp;= (N - m) \sigma_x^2 \\
+\text{E}\left(SS^W_{yy}\right) &amp;= (N - m) \sigma_y^2 \\
+\text{E}\left(SS^W_{xy}\right) &amp;= (N - m) \rho \sigma_x \sigma_y \\
 \text{Var}\left(SS^W_{xx}\right) &amp;= (N - m) \times 2 \sigma_x^4 \\ 
 \text{Var}\left(SS^W_{yy}\right) &amp;= (N - m) \times 2 \sigma_y^4 \\
 \text{Var}\left(SS^W_{xy}\right) &amp;= (N - m) \times (1 + \rho^2)\sigma_x^2 \sigma_y^2 \\
@@ -340,7 +347,24 @@ r = \sqrt{(1 - c_x)(1 - c_y)} \times \frac{SS^W_{xy}}{\sqrt{SS^W_{xx} SS^W_{yy}}
 \text{Cov}\left(SS^W_{xx}, SS^W_{xy}\right) &amp;= (N - m) \times 2 \rho \sigma_x^3 \sigma_y \\
 \text{Cov}\left(SS^W_{yy}, SS^W_{xy}\right) &amp;= (N - m) \times 2 \rho \sigma_x \sigma_y^3.
 \end{aligned}
-\]</span> The between sums-of-squares are a little bit trickier.</p>
+\]</span> The between sums-of-squares are a little bit trickier. From Searle, Casella, and McCulloch (1992), <span class="math display">\[
+\begin{aligned}
+\text{E}\left(SS^B_{xx}\right) &amp;= f_1 \phi_x^2 + (m - 1)\sigma_x^2 \\
+\text{E}\left(SS^B_{yy}\right) &amp;= f_1 \phi_y^2 + (m - 1)\sigma_y^2 \\
+\text{E}\left(SS^B_{xy}\right) &amp;= f_1 \phi_{xy} + (m - 1)\sigma_{xy} \\
+\text{Var}\left(SS^B_{xx}\right) &amp;= 2\left[(m - 1)\sigma_x^4 + 2 f_1 \sigma_x^2 \phi_x^2 + f_2 \phi_x^4\right] \\ 
+\text{Var}\left(SS^B_{yy}\right) &amp;= 2\left[(m - 1)\sigma_y^4 + 2 f_1 \sigma_y^2 \phi_y^2 + f_2 \phi_y^4\right] \\
+\text{Var}\left(SS^B_{xy}\right) &amp;=  \\
+\text{Cov}\left(SS^B_{xx}, SS^B_{yy}\right) &amp;=  \\
+\text{Cov}\left(SS^B_{xx}, SS^B_{xy}\right) &amp;=  \\
+\text{Cov}\left(SS^B_{yy}, SS^B_{xy}\right) &amp;= ,
+\end{aligned}
+\]</span> where <span class="math display">\[
+\begin{aligned}
+f_1 &amp;= N - \frac{1}{N}\sum_{j=1}^m n_j^2 \\
+f_2 &amp;= \sum_{j=1}^m n_j^2 - \frac{2}{N}\sum_{j=1}^m n_j^3 + \frac{1}{N^2} \left(\sum_{j=1}^m n_j^2 \right)^2.
+\end{aligned}
+\]</span></p>
 
 
 
