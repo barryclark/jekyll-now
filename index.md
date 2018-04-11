@@ -1,7 +1,7 @@
 ---
 layout: page-with-latest
 title: About
-feature_image: /images/headshot_left.jpg
+feature_image: /images/headshot_right.jpg
 contact_email: pusto@austin.utexas.edu
 ---
 
