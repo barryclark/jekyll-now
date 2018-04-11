@@ -38,6 +38,7 @@ r2jekyll <- function(filename, dpi = 192) {
   unlink("{{site.url}}", recursive=T)
 }
 
+# r2jekyll("Multivariate-delta-method")
 # r2jekyll("using-response-ratios-paper")
 # r2jekyll("procedural-sensitivities-paper")
 # r2jekyll("Back-from-IES-PI-meeting")
