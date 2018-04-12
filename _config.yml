@@ -85,6 +85,6 @@ exclude:
   - README.md
   - CNAME
 
-remote_theme: mmistakes/minimal-mistakes
+# remote_theme: mmistakes/minimal-mistakes
 
 theme: jekyll-theme-cayman
