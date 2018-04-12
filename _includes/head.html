@@ -1,0 +1,48 @@
+<head>
+  {%- if site.google_analytics and jekyll.environment == 'production' -%}
+    {%- include google_analytics.html -%}
+  {%- endif -%}
+  
+  <!-- Robots -->
+  <meta name="robots" content="{{- page.robots | default: 'index, follow' -}}" />
+  {%- unless page.canonical == false -%}<link rel="canonical" href="{{- page.url | absolute_url -}}" />{%- endunless -%}
+  
+  <!-- Title, description, author -->
+  {%- capture _page_title -%}
+    {%- if page.title -%}{{- page.title | append: ' | ' -}}{%- endif -%}
+    {{- site.title | default: "Untitled Website" -}}
+    {%- if site.subtitle -%}{{- site.subtitle | prepend: ' - ' -}}{%- endif -%}
+  {%- endcapture -%}
+  {%- assign _page_title = _page_title | escape -%}
+  {%- assign _page_description = page.description | default: site.description | default: _page_title | escape -%}
+
+  <title>{{- _page_title -}}</title>
+  <meta name="description" content="{{- _page_description -}}" />
+  <meta name="author" content="{{- site.author -}}" />
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="{{- _page_title -}}" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="{{- site.avatar | absolute_url -}}" />
+  <meta property="og:url" content="{{- page.url | absolute_url -}}" />
+  <meta property="og:site_name" content="{{- site.title | escape -}}" />
+  <meta property="og:description" content="{{- _page_description -}}" />
+  
+  <!-- Styles -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!--[if lte IE 8]><script src="{{- 'assets/js/ie/html5shiv.js' | relative_url -}}" defer></script><![endif]-->
+  <link rel="stylesheet" href="{{- 'assets/css/main.css' | relative_url -}}" />
+  <!--[if lte IE 8]><link rel="stylesheet" href="{{- 'assets/css/ie8.css' | relative_url -}}" /><![endif]-->
+  <!--[if lte IE 9]><link rel="stylesheet" href="{{- 'assets/css/ie9.css' | relative_url -}}" /><![endif]-->
+
+  <!-- Scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" defer></script>
+  <script src="{{- 'assets/js/jquery.scrolly.min.js' | relative_url -}}" defer></script>
+  <script src="{{- 'assets/js/jquery.scrollzer.min.js' | relative_url -}}" defer></script>
+  <script src="{{- 'assets/js/skel.min.js' | relative_url -}}" defer></script>
+  <script src="{{- 'assets/js/util.js' | relative_url -}}" defer></script>
+  <!--[if lte IE 8]><script src="{{- 'assets/js/ie/respond.min.js' | relative_url -}}" defer></script><![endif]-->
+  <script src="{{- 'assets/js/main.js' | relative_url -}}" defer></script>
+
+</head>

@@ -1,0 +1,15 @@
+{%- comment -%}
+  Include vars:
+  scrolly_nav
+{%- endcomment -%}
+
+<!-- Header -->
+<div id="header">
+  <div class="top">
+    {%- include logo.html -%}
+    {%- include nav.html section_items=include.scrolly_nav -%}
+  </div>
+  <div class="bottom">
+    {%- include social_icons.html -%}
+  </div>
+</div>
