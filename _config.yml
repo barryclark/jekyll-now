@@ -1,9 +1,9 @@
 #
 # This file contains configuration flags to customize your site
 #
-rrr
+
 # Name of your site (displayed in the header)
-name: The Code of Mike
+name: The Code of Michael
 
 # Short bio or description (displayed in the header)
 description: Full Stack Web Developer
