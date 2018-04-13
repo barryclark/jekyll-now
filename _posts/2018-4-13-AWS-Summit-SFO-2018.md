@@ -30,9 +30,9 @@ Use spot instance advisor
 
 Containerized application look at Fargate and Lambda.
 
-`
+```bash
 Don't live with the collateral damage of your failures.
-`
+```
 
 1. Right sizing
 2. Elasticity (turn stuff off!)
@@ -73,12 +73,6 @@ https://aws.amazon.com/step-functions/
 
 Here is a sample test tool for learning Step Functions - http://amzn.to/sfn-workshop
 
-```
-export AWS_ACCESS_KEY_ID=ASIAIYXT5W3KWMDYB3ZA
-export AWS_SECRET_ACCESS_KEY=coW6S5N8zNeF4tzk+E9F8NliBxR4HTCF1B0llGQk
-export AWS_SESSION_TOKEN=FQoDYXdzEGcaDE1TItM1ujrKS4aJiSLtAdLpaS1X7UxmZ208oi51arQkWgMMIlN+skYVHLDsU5EkoWHJpNrnG/xHYjAwE7gWWodUpG+uw4P/ehNKjxQjExg436rwlGAPDAqcOrn41SP6WpPU/rcveBnw+YKV3sZIz4jGiu9FHWkA5LPxqhIhH0EIs40VvfE8nbIEjVeoL3B5VgfKTP5Xl2Jybc9Wv2otunPCbIYUcgtjVDQkEbGVmIQOsQjtUOYpsOvpDby35xTSDp4/yo+9E0BjitNP4WIDoUoytsfMaYPr3TtC0uSIrhNSVvtSzswQoCjSBLZkcsv1p45d3AuAwsKMYh/rfyjBj5XWBQ==
-export AWS_DEFAULT_REGION=us-west-2
-```
 You can define an **Asynchronous** *Activity Task* which is polled by workers.
 
 #### Input/Output Processing
