@@ -30,9 +30,9 @@ Use spot instance advisor
 
 Containerized application look at Fargate and Lambda.
 
-```
+`
 Don't live with the collateral damage of your failures.
-```
+`
 
 1. Right sizing
 2. Elasticity (turn stuff off!)
