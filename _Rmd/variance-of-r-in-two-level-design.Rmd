@@ -6,78 +6,108 @@ tags: [effect-sizes, meta-analysis, delta-method, distribution-theory]
 ---
 
 Consider Pearson's correlation coefficient, $r$, calculated from two variables $X$ and $Y$ with population correlation $\rho$. If one calculates $r$ from a simple random sample of $N$ observations, $\{x_i, y_i\}_{i=1}^N$, then the sampling variance of $r$ will be approximately
+
 $$
 \text{Var}(r) \approx \frac{1}{N}\left(1 - \rho^2\right)^2.
 $$
+
 But what if the observations are drawn from a multi-stage sample? If one uses the raw correlation between the observations (ignoring the multi-level structure), then the $r$ will actually be a weighted average of within-cluster and between-cluster correlations (Snijders & Bosker, 2012). Intuitively, I would expect that the sampling variance of the between-cluster correlation will be a function of the number of clusters (regardless of the number of observations per cluster), so the variance of $r$ from a multi-stage sample would not necessarily be the same as that froma  simple random sample. What is the sampling variance of $r$ in this design?
 
 Let me be more precise here by formalizing the sampling process. Suppose that we have a sample with $m$ clusters, $n_j$ observations in cluster $j$, and total sample size $N = \sum_{j=1}^m n_j$. Assume that 
+
 $$
 \begin{aligned}
 X_{ij} &= v^x_j + e^x_{ij} \\
 Y_{ij} &= v^y_j + e^y_{ij},
 \end{aligned}
 $$
+
 for $i=1,...,n_j$ and $j=1,...,m$, where
-$$
-\left[\begin{array}{c} v^x_j \\ v^y_j \end{array}\right] \sim N\left(\left[\begin{array}{c}0 \\ 0 \end{array}\right], \left[\begin{array}{cc}\omega_x^2 & \phi \omega_x \omega_y \\ \phi \omega_x \omega_y & \omega_y^2\end{array}\right]\right) \qquad \text{and}\qquad \left[\begin{array}{c} e^x_{ij} \\ e^y_{ij} \end{array}\right] \sim N\left(\left[\begin{array}{c}0 \\ 0 \end{array}\right], \left[\begin{array}{cc}\sigma_x^2 & \rho \sigma_x \sigma_y \\ \rho \sigma_x \sigma_y & \sigma_y^2\end{array}\right]\right)
-$$
-and the error terms are mutually independent unless otherwise noted.
 
-To understand the sampling distribution of $r$ in this model, it helps to work with sums of squares between and within clusters. Let 
 $$
 \begin{aligned}
-\bar{x}_j &= \frac{1}{n_j} \sum_{i=1}^{n_j} X_{ij} \\
-\bar{\bar{x}} &= \frac{1}{N} \sum_{j=1}^m \sum_{i=1}^{n_j} X_{ij} = \frac{1}{N} \sum_{j=1}^m n_j \bar{x}_j \\
-SS_{xy}^W &= \sum_{j=1}^m \sum_{i=1}^{n_j} \left(X_{ij} - \bar{x}_j\right) \left(Y_{ij} - \bar{y}_j\right) \\
-SS_{xy}^B &= \sum_{j=1}^m n_j \left(\bar{x}_j - \bar{\bar{x}}\right) \left(\bar{y}_j - \bar{\bar{y}}\right),
+\left[\begin{array}{c} v^x_j \\ v^y_j \end{array}\right] &\sim N\left(\left[\begin{array}{c}0 \\ 0 \end{array}\right], \left[\begin{array}{cc}\omega_x^2 & \phi \omega_x \omega_y \\ \phi \omega_x \omega_y & \omega_y^2\end{array}\right]\right) \\ 
+\left[\begin{array}{c} e^x_{ij} \\ e^y_{ij} \end{array}\right] &\sim N\left(\left[\begin{array}{c}0 \\ 0 \end{array}\right], \left[\begin{array}{cc}\sigma_x^2 & \rho \sigma_x \sigma_y \\ \rho \sigma_x \sigma_y & \sigma_y^2\end{array}\right]\right)
 \end{aligned}
 $$
-with $SS^W_{xx}$, $SS^B_{xx}$, $SS^W_{yy}$, and $SS^B_{yy}$ defined analogously.
 
-Pearson's $r$ calculated across the entire sample of $N$ observations can be written as a weighted average of within- and between-cluster sample correlations, with weights that depend on the intra-class correlations of $X$ and $Y$. Specifically, 
+and the error terms are mutually independent unless otherwise noted. The raw Pearson's $r$ is calculated using the total sums of squares and cross-products:
+
 $$
-r = r_W \times \sqrt{(1 - c_x)(1 - c_y)} + r_B \times \sqrt{c_x c_y},
+r = \frac{SS_{xy}}{\sqrt{SS_{xx} SS_{yy}}},
 $$
+
 where 
+
 $$
 \begin{aligned}
-r_W &= \frac{SS^W_{xy}}{\sqrt{SS^W_{xx} SS^W_{yy}}}, \qquad & r_B &= \frac{SS^B_{xy}}{\sqrt{SS^B_{xx} SS^B_{yy}}} \\
-c_x &= \frac{SS^B_{xx}}{SS^B_{xx} + SS^W_{xx}}, \qquad & c_y &= \frac{SS^B_{yy}}{SS^B_{yy} + SS^W_{yy}}.
+SS_{xx} &= \sum_{j=1}^m \sum_{i=1}^{n_j} \left(X_{ij} - \bar{\bar{x}}\right)^2, \qquad \bar{\bar{x}} = \frac{1}{N} \sum_{j=1}^m \sum_{i=1}^{n_j} X_{ij} \\
+SS_{xy} &= \sum_{j=1}^m \sum_{i=1}^{n_j} \left(Y_{ij} - \bar{\bar{y}}\right)^2, \qquad \bar{\bar{y}} = \frac{1}{N} \sum_{j=1}^m \sum_{i=1}^{n_j} Y_{ij} \\
+SS_{xy} &= \sum_{j=1}^m \sum_{i=1}^{n_j} \left(X_{ij} - \bar{\bar{x}}\right) \left(Y_{ij} - \bar{\bar{y}}\right).
 \end{aligned}
 $$
-Following standard results from multivariate analysis (Searle, 2006, p. 352, or likewise), the within sums-of-squares have the following variances and covariances:
+
+### Common correlation and ICC 
+
+The distribution of the total correlation is pretty complicated. So far I've been able to obtain a special case that makes some further, fairly restrictive assumptions. Specifically, I will assume that the correlation is constant across the two levels, so that $\phi = \rho$, and that the intra-class correlation of $X$ is the same as that of $Y$. Let $k = \omega_x^2 / \sigma_x^2 = \omega_y^2 / \sigma_y^2$. Then 
+
 $$
-\begin{aligned}
-\text{E}\left(SS^W_{xx}\right) &= (N - m) \sigma_x^2 \\
-\text{E}\left(SS^W_{yy}\right) &= (N - m) \sigma_y^2 \\
-\text{E}\left(SS^W_{xy}\right) &= (N - m) \rho \sigma_x \sigma_y \\
-\text{Var}\left(SS^W_{xx}\right) &= (N - m) \times 2 \sigma_x^4 \\ 
-\text{Var}\left(SS^W_{yy}\right) &= (N - m) \times 2 \sigma_y^4 \\
-\text{Var}\left(SS^W_{xy}\right) &= (N - m) \times (1 + \rho^2)\sigma_x^2 \sigma_y^2 \\
-\text{Cov}\left(SS^W_{xx}, SS^W_{yy}\right) &= (N - m) \times 2 \rho^2 \sigma_x^2 \sigma_y^2 \\
-\text{Cov}\left(SS^W_{xx}, SS^W_{xy}\right) &= (N - m) \times 2 \rho \sigma_x^3 \sigma_y \\
-\text{Cov}\left(SS^W_{yy}, SS^W_{xy}\right) &= (N - m) \times 2 \rho \sigma_x \sigma_y^3.
-\end{aligned}
+\text{Var}(r) \approx \frac{(1 - \rho^2)^2}{\tilde{N}},
 $$
-The between sums-of-squares are a little bit trickier. From Searle, Casella, and McCulloch (1992), 
+
+where 
+
 $$
-\begin{aligned}
-\text{E}\left(SS^B_{xx}\right) &= f_1 \phi_x^2 + (m - 1)\sigma_x^2 \\
-\text{E}\left(SS^B_{yy}\right) &= f_1 \phi_y^2 + (m - 1)\sigma_y^2 \\
-\text{E}\left(SS^B_{xy}\right) &= f_1 \phi_{xy} + (m - 1)\sigma_{xy} \\
-\text{Var}\left(SS^B_{xx}\right) &= 2\left[(m - 1)\sigma_x^4 + 2 f_1 \sigma_x^2 \phi_x^2 + f_2 \phi_x^4\right] \\ 
-\text{Var}\left(SS^B_{yy}\right) &= 2\left[(m - 1)\sigma_y^4 + 2 f_1 \sigma_y^2 \phi_y^2 + f_2 \phi_y^4\right] \\
-\text{Var}\left(SS^B_{xy}\right) &=  \\
-\text{Cov}\left(SS^B_{xx}, SS^B_{yy}\right) &=  \\
-\text{Cov}\left(SS^B_{xx}, SS^B_{xy}\right) &=  \\
-\text{Cov}\left(SS^B_{yy}, SS^B_{xy}\right) &= ,
-\end{aligned}
+\tilde{N} = \frac{[f_1 k + N - 1]^2}{f_2 k^2 + 2 f_1 k + N - 1},
 $$
-where
+
+$\displaystyle{f_1 = N - \frac{1}{N}\sum_{j=1}^m n_j^2}$, and $\displaystyle{f_2 = \sum_{j=1}^m n_j^2 - \frac{2}{N}\sum_{j=1}^m n_j^3 + \frac{1}{N^2} \left(\sum_{j=1}^m n_j^2 \right)^2}$.
+
+If the clusters are all of equal size $n$, then 
+
 $$
-\begin{aligned}
-f_1 &= N - \frac{1}{N}\sum_{j=1}^m n_j^2 \\
-f_2 &= \sum_{j=1}^m n_j^2 - \frac{2}{N}\sum_{j=1}^m n_j^3 + \frac{1}{N^2} \left(\sum_{j=1}^m n_j^2 \right)^2.
-\end{aligned}
+\tilde{N} = \frac{[n(m - 1)k + nm - 1]^2}{n^2 (m - 1) k^2 + 2 n (m - 1)k + nm - 1}.
 $$
+
+Under the (restrictive) assumptions of common correlation and equal ICCs, Fisher's z transformation is variance-stabilizing (as it is under simple random sampling), so it seems reasonable to use
+
+$$
+\text{Var}\left(z(r)\right) \approx \frac{1}{\tilde{N} - 3}.
+$$
+
+```{r}
+library(purrr)
+library(dplyr)
+library(ggplot2)
+
+deff <- function(icc, n, m = length(n)) {
+  k <- icc / (1 - icc)
+  if (length(n) == 1) n <- rep(n, m)
+  N <- sum(n)
+  n_sq <- sum(n^2)
+  f1 <- N - n_sq / N
+  f2 <- n_sq - 2 * sum(n^3) / N + n_sq^2 / N^2
+  N_tilde <- (f1 * k + N - 1)^2 / (f2 * k^2 + 2 * f1 * k + N - 1)
+  N / N_tilde
+}
+
+deffs <- 
+  list(
+    icc = c(0, 0.05, seq(0.1, 0.4, 0.1)),
+    n = seq(2, 100, 2),
+    m = c(5, seq(10, 50, 10))
+  ) %>%
+  cross_df() %>%
+  group_by_all() %>%
+  mutate(
+    deff = deff(icc, n, m)
+  )
+
+ggplot(deffs, aes(n, deff, color = factor(icc))) + 
+  geom_line() + 
+  expand_limits(y = 0) + 
+  facet_wrap(~ m, labeller = "label_both") + 
+  theme_light() + 
+  labs(color = "ICC")
+```
+
