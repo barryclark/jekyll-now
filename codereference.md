@@ -225,6 +225,38 @@ ex. ENS0000001ENS0000002 -> ENS0000001 ENS0000002
      git clone the github repository
      python setup.py build_ext --inplace --force --user
      
+##### Arcane TACC launcher error on stampede2
+     
+     expr: non-integer argument 
+     ERROR: LAUNCHER_NPROCS is not set. 
+     
+     In .sbatch script, make sure #SBATCH -n (number of tasks) is evenly divisible by #SBATCH -N (number of nodes).
+     The expr error is from line 87 of $LAUNCHER_DIR/paramrun: 
+     export LAUNCHER_NPROCS=`expr $LAUNCHER_NHOSTS \* $LAUNCHER_PPN` 
+
+     If n isn't divisible by N, $LAUNCHER_PPN gets a value like '2,1', or '3,2', instead of being a single number like it needs to be for the line 87 division to happen, and LAUNCHER_NPROCS to be set. 
+
+#### Standard setup for TACC slurm sbatch parallel launcher script (commands file is one command per line)
+    ```{bash}
+    #!/bin/bash
+    #SBATCH -J runjob      # job name
+    #SBATCH -o runjob.o%j       # output and error file name (%j expands to jobID)
+    #SBATCH -n 100             # number of tasks
+    #SBATCH -N 5              # total number of nodes requested
+    #SBATCH -p normal     # queue (partition) -- normal, development, etc.
+    #SBATCH -t 2:00:00        # run time (hh:mm:ss) - 1.5 hours
+    #SBATCH --mail-user=claire.mcwhite@utexas.edu
+    #SBATCH --mail-type=begin  # email me when the job starts
+    #SBATCH --mail-type=end    # email me when the job finishes
+    #SBATCH -A A-cm10          # Specify allocation to charge against
+
+    export LAUNCHER_JOB_FILE=training_COMMANDS.sh
+    module load launcher
+    export EXECUTABLE=$LAUNCHER_DIR/init_launcher
+    export LAUNCHER_WORKDIR=$( pwd )
+    $LAUNCHER_DIR/paramrun $EXECUTABLE $LAUNCHER_JOB_FILE
+    ```
+     
 ##### Make a python package
  
      Use skeleton of flupan
