@@ -3,7 +3,7 @@ layout: post
 title: An Introduction to Data Driven Documents (D3)
 categories: blog
 comments: true
-published: false
+published: true
 date: 2018-04-14 00:00:00 +0000
 ---
 
