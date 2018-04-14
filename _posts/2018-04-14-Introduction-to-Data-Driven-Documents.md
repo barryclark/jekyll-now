@@ -21,7 +21,7 @@ D3 is definitely not a "here's my x series data, here's my y series data, plot a
 
 In return for the heavier investment in technical skills required to get up and running, you get incredibly fine-grained control over your visuals, as well as the ability to create animated and interactive content - which would be very hard or impossible to do with many other higher level graphing tools. D3 acts as a thin layer between your data and the DOM, and harnesses the power of [SVG (Scalable Vector Graphics)](https://en.wikipedia.org/wiki/Scalable_Vector_Graphics) to allow you to create visuals declaratively using XML style syntax. This screenshot shows you what D3 outputs to the page within the SVG tag:
 
-![Source code extract](https://raw.githubusercontent.com/julianjoseph/julianjoseph.github.io/master/images/fdt-line-chart-source.jpg)
+[![Source code extract](https://raw.githubusercontent.com/julianjoseph/julianjoseph.github.io/master/images/fdt-line-chart-source.jpg)](https://raw.githubusercontent.com/julianjoseph/julianjoseph.github.io/master/images/fdt-line-chart-source.jpg)
 
 I will run through the example I put together, after spending a couple of hours going through the PluralSight course.
 
