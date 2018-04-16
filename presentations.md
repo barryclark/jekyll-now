@@ -4,7 +4,7 @@ title: Presentations
 permalink: /presentations/
 ---
 
-* [Meta-analysis of dependent effects: A review and consolidation of methods]({{ site.url }}/files/dependent-effects-AERA-2018.pdf). Presentation at the American Educational Research Association annual convention, April 15, 2018 in New York, NY.
+* [Meta-analysis of dependent effects: A review and consolidation of methods]({{ site.url }}/files/Dependent-effects-AERA-2018.pdf). Presentation at the American Educational Research Association annual convention, April 15, 2018 in New York, NY.
 * [Meta-analysis of single-case research: A brief and breezy tour]({{ site.url }}/files/Single-Case-Meta-Analysis-AERA-2018.pdf). Presentation at the American Educational Research Association annual convention, April 15, 2018 in New York, NY.
 * [Randomization inference for single-case experimental designs]({{ site.url}}/files/Randomization-inference-for-SCED-2018-01-10.pdf). Presentation at the Institute of Education Sciences 2018 Principal Investigators Meeting, January 10, 2018 in Washington, DC.
 * [A gradual effects model for single case designs]({{ site.url}}/files/Gradual-effects-model-poster-IES-2018-01-10.pdf). Poster presented at the Institute of Education Sciences 2018 Principal Investigators Meeting, January 10, 2018 in Washington, DC.

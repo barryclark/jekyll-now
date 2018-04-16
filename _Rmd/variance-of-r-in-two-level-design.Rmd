@@ -49,7 +49,7 @@ $$
 
 ### Common correlation and ICC 
 
-The distribution of the total correlation seems to be pretty complicated. So far, I've been able to obtain the variance of $r$ for a special case that makes some further, fairly restrictive assumptions. Specifically, assume that the correlation is constant across the two levels, so that $\phi = \rho$, and that the intra-class correlation of $X$ is the same as that of $Y$. Let $k = \omega_x^2 / \sigma_x^2 = \omega_y^2 / \sigma_y^2$. Then 
+The distribution of the total correlation seems to be pretty complicated. So far, I've been able to obtain the variance of $r$ for a special case that makes some further, fairly restrictive assumptions. Specifically, assume that the correlation is constant across the two levels, so that $\phi = \rho$, and that the intra-class correlation of $X$ is the same as that of $Y$. Let $k = \omega_x^2 / \sigma_x^2 = \omega_y^2 / \sigma_y^2$ and $\psi = k / (k + 1) = \omega_x^2 / (\omega_x^2 + \sigma_x^2)$. Then 
 
 $$
 \text{Var}(r) \approx \frac{(1 - \rho^2)^2}{\tilde{N}},
@@ -58,16 +58,19 @@ $$
 where 
 
 $$
-\tilde{N} = \frac{[f_1 k + N - 1]^2}{f_2 k^2 + 2 f_1 k + N - 1},
+\tilde{N} = \frac{[N g_1 k + N - 1]^2}{N g_2 k^2 + 2 N g_1 k + N - 1} \approx \frac{N}{1 + (g_2 - g_1^2)\psi^2},
 $$
 
-$\displaystyle{f_1 = N - \frac{1}{N}\sum_{j=1}^m n_j^2}$, and $\displaystyle{f_2 = \sum_{j=1}^m n_j^2 - \frac{2}{N}\sum_{j=1}^m n_j^3 + \frac{1}{N^2} \left(\sum_{j=1}^m n_j^2 \right)^2}$.
+$\displaystyle{g_1 = 1 - \frac{1}{N^2}\sum_{j=1}^m n_j^2}$, and $\displaystyle{g_2 = \frac{1}{N}\sum_{j=1}^m n_j^2 - \frac{2}{N^2}\sum_{j=1}^m n_j^3 + \frac{1}{N^3} \left(\sum_{j=1}^m n_j^2 \right)^2}$.
 
 If the clusters are all of equal size $n$, then 
 
 $$
-\tilde{N} = \frac{[n(m - 1)k + nm - 1]^2}{n^2 (m - 1) k^2 + 2 n (m - 1)k + nm - 1}.
+\tilde{N} = \frac{[n(m - 1)k + nm - 1]^2}{n^2 (m - 1) k^2 + 2 n (m - 1)k + nm - 1} \approx \frac{N}{1 + (n - 1) \psi^2},
 $$
+The right-hand expression is a further approximation that will be very close to right so long as $m$ is not too too small. 
+
+### Z-transformation 
 
 Under the (restrictive) assumptions of common correlation and equal ICCs, Fisher's z transformation is variance-stabilizing (as it is under simple random sampling), so it seems reasonable to use
 
@@ -75,41 +78,12 @@ $$
 \text{Var}\left(z(r)\right) \approx \frac{1}{\tilde{N} - 3}.
 $$
 
-```{r}
-library(purrr)
-library(dplyr)
-library(ggplot2)
+### Design effect
 
-deff <- function(icc, n, m = length(n)) {
-  k <- icc / (1 - icc)
-  if (length(n) == 1) n <- rep(n, m)
-  N <- sum(n)
-  n_sq <- sum(n^2)
-  f1 <- N - n_sq / N
-  f2 <- n_sq - 2 * sum(n^3) / N + n_sq^2 / N^2
-  N_tilde <- (f1 * k + N - 1)^2 / (f2 * k^2 + 2 * f1 * k + N - 1)
-  (N - 1) / N_tilde
-}
+The design effect ($DEF$) is the ratio of the actual sampling variance of $r$ to the sampling variance from a simple random sample of the same size. Here, 
 
-deffs <- 
-  list(
-    icc = c(0, 0.05, seq(0.1, 0.4, 0.1)),
-    n = c(1, seq(5, 50, 5)),
-    m = c(5, seq(10, 50, 10))
-  ) %>%
-  cross_df() %>%
-  group_by_all() %>%
-  mutate(
-    deff = deff(icc, n, m),
-    def2 = (n - 1) * icc + 1
-  )
+$$
+DEF = \frac{N}{\tilde{N}} = 1 + (g_2 - g_1^2) \psi^2,
+$$
 
-ggplot(deffs) + 
-  geom_line(aes(n, deff, color = factor(icc))) + 
-  coord_cartesian(ylim = c(0,5)) + 
-  facet_wrap(~ m, labeller = "label_both") + 
-  theme_light() + 
-  labs(color = "ICC")
-
-```
-
+or with equal cluster-sizes, $DEF = 1 + (n - 1)\psi^2$. These expressions make it clear that the design effect for the correlation is _not_ equivalent to the well-known design effect for cluster-randomized trials, $1 + (n - 1)\psi$. We need to take the _square_ of the ICC here, which will make the design effect for $r$ _smaller_ than the design effect for a mean (or difference in means) based on the same sample. 
