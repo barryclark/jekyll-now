@@ -1,24 +1,24 @@
 ---
 layout: post
 title: Sampling variance of Pearson's r in a two-level design
-date: April 10, 2018
+date: April 15, 2018
 tags: [effect-sizes, meta-analysis, delta-method, distribution-theory]
 ---
 
-Consider Pearson's correlation coefficient, $r$, calculated from two variables $X$ and $Y$ with population correlation $\rho$. If one calculates $r$ from a simple random sample of $N$ observations, $\{x_i, y_i\}_{i=1}^N$, then the sampling variance of $r$ will be approximately
+Consider Pearson's correlation coefficient, $r$, calculated from two variables $X$ and $Y$ with population correlation $\rho$. If one calculates $r$ from a simple random sample of $N$ observations, then the sampling variance of $r$ will be approximately
 
 $$
 \text{Var}(r) \approx \frac{1}{N}\left(1 - \rho^2\right)^2.
 $$
 
-But what if the observations are drawn from a multi-stage sample? If one uses the raw correlation between the observations (ignoring the multi-level structure), then the $r$ will actually be a weighted average of within-cluster and between-cluster correlations (Snijders & Bosker, 2012). Intuitively, I would expect that the sampling variance of the between-cluster correlation will be a function of the number of clusters (regardless of the number of observations per cluster), so the variance of $r$ from a multi-stage sample would not necessarily be the same as that froma  simple random sample. What is the sampling variance of $r$ in this design?
+But what if the observations are drawn from a multi-stage sample? If one uses the raw correlation between the observations (ignoring the multi-level structure), then the $r$ will actually be a weighted average of within-cluster and between-cluster correlations (Snijders & Bosker, 2012). Intuitively, I would expect that the sampling variance of the between-cluster correlation will be a function of the number of clusters (regardless of the number of observations per cluster), so the variance of $r$ from a multi-stage sample would not necessarily be the same as that from a simple random sample. What is the sampling variance of $r$ in this design?
 
 Let me be more precise here by formalizing the sampling process. Suppose that we have a sample with $m$ clusters, $n_j$ observations in cluster $j$, and total sample size $N = \sum_{j=1}^m n_j$. Assume that 
 
 $$
 \begin{aligned}
-X_{ij} &= v^x_j + e^x_{ij} \\
-Y_{ij} &= v^y_j + e^y_{ij},
+X_{ij} &= \mu_x + v^x_j + e^x_{ij} \\
+Y_{ij} &= \mu_y + v^y_j + e^y_{ij},
 \end{aligned}
 $$
 
@@ -49,7 +49,7 @@ $$
 
 ### Common correlation and ICC 
 
-The distribution of the total correlation is pretty complicated. So far I've been able to obtain a special case that makes some further, fairly restrictive assumptions. Specifically, I will assume that the correlation is constant across the two levels, so that $\phi = \rho$, and that the intra-class correlation of $X$ is the same as that of $Y$. Let $k = \omega_x^2 / \sigma_x^2 = \omega_y^2 / \sigma_y^2$. Then 
+The distribution of the total correlation seems to be pretty complicated. So far, I've been able to obtain the variance of $r$ for a special case that makes some further, fairly restrictive assumptions. Specifically, assume that the correlation is constant across the two levels, so that $\phi = \rho$, and that the intra-class correlation of $X$ is the same as that of $Y$. Let $k = \omega_x^2 / \sigma_x^2 = \omega_y^2 / \sigma_y^2$. Then 
 
 $$
 \text{Var}(r) \approx \frac{(1 - \rho^2)^2}{\tilde{N}},
@@ -88,26 +88,28 @@ deff <- function(icc, n, m = length(n)) {
   f1 <- N - n_sq / N
   f2 <- n_sq - 2 * sum(n^3) / N + n_sq^2 / N^2
   N_tilde <- (f1 * k + N - 1)^2 / (f2 * k^2 + 2 * f1 * k + N - 1)
-  N / N_tilde
+  (N - 1) / N_tilde
 }
 
 deffs <- 
   list(
     icc = c(0, 0.05, seq(0.1, 0.4, 0.1)),
-    n = seq(2, 100, 2),
+    n = c(1, seq(5, 50, 5)),
     m = c(5, seq(10, 50, 10))
   ) %>%
   cross_df() %>%
   group_by_all() %>%
   mutate(
-    deff = deff(icc, n, m)
+    deff = deff(icc, n, m),
+    def2 = (n - 1) * icc + 1
   )
 
-ggplot(deffs, aes(n, deff, color = factor(icc))) + 
-  geom_line() + 
-  expand_limits(y = 0) + 
+ggplot(deffs) + 
+  geom_line(aes(n, deff, color = factor(icc))) + 
+  coord_cartesian(ylim = c(0,5)) + 
   facet_wrap(~ m, labeller = "label_both") + 
   theme_light() + 
   labs(color = "ICC")
+
 ```
 
