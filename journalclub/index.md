@@ -32,9 +32,10 @@ Journal club meetings currently take place on Mondays at 1:00 pm in seminar room
 - April 2: No Journal Club, Mind Brain Lecture
 - April 9: Petar Djuric
 - April 16: Braden Brinkman
-- April 23: Sima Motakham
+- April 23: Piotr Sokol
 - April 30: Josue Nassar
 - May 7: Yanliang Shi
+- May 14: Sima Motakham 
 
 
 
