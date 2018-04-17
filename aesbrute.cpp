@@ -1,4 +1,4 @@
-// 04/16/2018 08:37PM
+// 04/16/2018 09:22PM
 
 #include<iostream>
 #include<fstream>
@@ -29,16 +29,48 @@ string aes_decode(string & cipher, byte key[]) {
     return plain;	
 }
 
-void brute(char* infile[], char* outfile[]) {
+bool increment(byte front[], int pos) {
+    front[pos]++;
+    
+    if(front[pos] == 58) { // one character passed 9
+        front[pos] = 'a';
+    } else if(front[pos] == 123) { // one character passed z
+        front[pos] = '0';
+        
+        if(pos > 0) {
+            increment(front, pos - 1);
+            return false;
+        }
+    }
+    
+    return true;
+}
+
+void increment(byte front[]) {
+    return increment(front, 3);
+}
+
+string brute(string cipher) {
+    string plain;
+    
     byte rear[] = "x7qfkp3mbv9w"; // last 12 bytes
     byte front[] = "0000"; // first 4 bytes
-    byte key[] = new byte[16]; // 12 + 4 = 16 bytes
+    byte key[16];// = new byte[16]; // 12 + 4 = 16 bytes
     
-    copy(rear, rear + 12, key + 12);
-    copy(front, front + 4, key);    
+    copy(rear, rear + 12, key + 4);
+
+    do {
+        copy(front, front + 4, key);        
+        plain = aes_decode(cipher,key);
+        
+        cout << key << endl << plain << endl;
+        
+    } while(increment(front));
     
-    cout << key << endl;
-    
+    return plain;
+}
+
+void decode_file(char* infile, char* outfile) {   
     fstream file1;
     fstream file2;
     
@@ -49,10 +81,8 @@ void brute(char* infile[], char* outfile[]) {
     buffer << file1.rdbuf();  
     string cipher(buffer.str());
     
-    string plain=aes_decode(cipher,key);
-    cout << "cipher text: " << cipher << endl;
-    cout << "plain text: " << plain << endl;
-    
+    string plain = brute(cipher);
+       
     file2 << plain;
     
     file1.close();
@@ -65,6 +95,6 @@ int main(int argc,char * argv[]) {
     if(argc != 3) {
         cout << "usage: aesbrute infile outfile" << endl;
     } else {
-        brute(argv[1], argv[2]);
+        decode_file(argv[1], argv[2]);
     }
 }
