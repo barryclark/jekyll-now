@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: post
 title: Microservices at AJUG
 ---
 [Daniel Glauser](https://github.com/danielglauser) 
