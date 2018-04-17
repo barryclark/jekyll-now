@@ -21,3 +21,15 @@ After joining our two datasets, and crunching the numbers, we were able to ascer
 
 ![Differences in traffic between stations](/images/benson/sample.png)
 **Figure 2.** A sample of 5 MTA stations, with hourly entries and exits summed.
+
+
+We were able to find some positive correlation between MTA ridership and precipitation.  At low levels of rainfall, there was little or no real impact, but as the level of rainfall increased past a certain point, more New Yorkers were inclined to ride.
+
+![Precipitation correlated with ridership](/images/benson/rain.png)
+**Figure 3.** Precipitation plotted against MTA ridership.
+
+
+
+## The Takeaways
+Our work for this project was relatively limited in scope - time constraints certainly restricted the amount of data we were able to pull in and examine.  Obvious extensions to the work already done would be to incorporate additional years of data, as well as additional variables, such as hourly wind or temperature.  Despite this, the work we completed sufficed to illustrate some of the factors that determine ridership on the MTA.   
+[A more detailed presentation can be found here.](https://drive.google.com/open?id=1Fl8qNeVvkTOhQHpIoFnz1984CT7I-Y_0)
