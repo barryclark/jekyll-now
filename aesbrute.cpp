@@ -1,4 +1,4 @@
-// 04/16/2018 09:22PM
+// 04/17/2018 06:41PM
 
 #include<iostream>
 #include<fstream>
@@ -6,6 +6,9 @@
 #include<string>
 
 using namespace std;
+
+#include <chrono>
+using namespace std::chrono;
 
 #include"cryptopp/cryptlib.h"
 #include"cryptopp/hex.h"
@@ -39,6 +42,7 @@ bool increment(byte front[], int pos) {
         
         if(pos > 0) {
             increment(front, pos - 1);
+        } else {
             return false;
         }
     }
@@ -46,55 +50,73 @@ bool increment(byte front[], int pos) {
     return true;
 }
 
-void increment(byte front[]) {
+bool increment(byte front[]) {
     return increment(front, 3);
 }
 
-string brute(string cipher) {
+bool is_english(string plain) {
+    const char *array = plain.c_str();
+    
+    for(int i = 0; i < plain.size(); i++) {
+        char letter = array[i];
+        
+        if(letter < 32 || letter > 94) {
+            return false;
+        }
+    }
+    
+    return true;
+}
+
+void brute(string cipher) {
     string plain;
     
     byte rear[] = "x7qfkp3mbv9w"; // last 12 bytes
     byte front[] = "0000"; // first 4 bytes
     byte key[16];// = new byte[16]; // 12 + 4 = 16 bytes
     
+    memset(key, 0, 17);
     copy(rear, rear + 12, key + 4);
 
+    auto start = high_resolution_clock::now();
+    cout << "start: " << start << endl;
+    
     do {
         copy(front, front + 4, key);        
-        plain = aes_decode(cipher,key);
+        plain = aes_decode(cipher, key);
         
-        cout << key << endl << plain << endl;
+        if(is_english(plain)) {
+            cout << key << endl << plain << endl;
+            return plain;
+        }
         
     } while(increment(front));
     
-    return plain;
+    auto finish = high_resolution_clock::now();
+    duration<double> elapsed = finish - start;
+    cout << "finish: " << finish << endl;
+    cout << "elapsed: " << elapsed.count() << endl;
+    
 }
 
-void decode_file(char* infile, char* outfile) {   
+void decode_file(char* infile) {   
     fstream file1;
-    fstream file2;
     
     file1.open(infile,ios::in);
-    file2.open(outfile,ios::out);
     
     stringstream buffer;  
     buffer << file1.rdbuf();  
     string cipher(buffer.str());
     
-    string plain = brute(cipher);
-       
-    file2 << plain;
-    
     file1.close();
-    file2.close();
     
-    cout << "plain text stored in:" << outfile << endl;
+    brute(cipher);   
 }
 
 int main(int argc,char * argv[]) {
-    if(argc != 3) {
-        cout << "usage: aesbrute infile outfile" << endl;
+    if(argc != 2) {
+        cout << "usage: aesbrute infile" << endl;
     } else {
-        decode_file(argv[1], argv[2]);
+        decode_file(argv[1]);
     }
 }
