@@ -69,6 +69,10 @@ categories: ajug,java,meetups,patterns
 * 
 
 
-
+## Questions and Comments
+* "A single point of failure is a Single point of agility"
+* Tap Stream pattern to feed reporting ... Event Streams can do *anything*
+* Every touch point ... is a security vulnerability
+* How do you test... with a big ball of mutable state?
 
 
