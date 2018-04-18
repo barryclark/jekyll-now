@@ -3,7 +3,7 @@ layout: post
 title: "[Article] [Jan 2018] The 8 Principles of Cloud Native Storage - The New Stack"
 ---
 
-![The New Stack](https://media.licdn.com/media/AAEAAQAAAAAAAAKcAAAAJGY4NzYyMWFjLTAyZmMtNGRhYS1hNDMxLTBiM2JmZDA2NmNhYw.png)
+![The New Stack](https://storage.googleapis.com/cdn.thenewstack.io/media/2018/01/4c6c1d07-samuel-zeller-111390.jpg)
 
 My article was published in The New Stack on 15 Jan 2018.
 
