@@ -10,7 +10,7 @@
 
 
 
-<meta name="date" content="2018-04-15" />
+<meta name="date" content="2018-04-18" />
 
 <title>Sampling variance of Pearson’s r in a two-level design</title>
 
@@ -304,16 +304,16 @@ $(document).ready(function () {
 
 
 <h1 class="title toc-ignore">Sampling variance of Pearson’s r in a two-level design</h1>
-<h4 class="date"><em>April 15, 2018</em></h4>
+<h4 class="date"><em>April 18, 2018</em></h4>
 
 </div>
 
 
-<p>Consider Pearson’s correlation coefficient, <span class="math inline">\(r\)</span>, calculated from two variables <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> with population correlation <span class="math inline">\(\rho\)</span>. If one calculates <span class="math inline">\(r\)</span> from a simple random sample of <span class="math inline">\(N\)</span> observations, then the sampling variance of <span class="math inline">\(r\)</span> will be approximately</p>
+<p>Consider Pearson’s correlation coefficient, <span class="math inline">\(r\)</span>, calculated from two variables <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> with population correlation <span class="math inline">\(\rho\)</span>. If one calculates <span class="math inline">\(r\)</span> from a simple random sample of <span class="math inline">\(N\)</span> observations, then its sampling variance will be approximately</p>
 <p><span class="math display">\[
 \text{Var}(r) \approx \frac{1}{N}\left(1 - \rho^2\right)^2.
 \]</span></p>
-<p>But what if the observations are drawn from a multi-stage sample? If one uses the raw correlation between the observations (ignoring the multi-level structure), then the <span class="math inline">\(r\)</span> will actually be a weighted average of within-cluster and between-cluster correlations (Snijders &amp; Bosker, 2012). Intuitively, I would expect that the sampling variance of the between-cluster correlation will be a function of the number of clusters (regardless of the number of observations per cluster), so the variance of <span class="math inline">\(r\)</span> from a multi-stage sample would not necessarily be the same as that from a simple random sample. What is the sampling variance of <span class="math inline">\(r\)</span> in this design?</p>
+<p>But what if the observations are drawn from a multi-stage sample? If one uses the raw correlation between the observations (ignoring the multi-level structure), then the <span class="math inline">\(r\)</span> will actually be a weighted average of within-cluster and between-cluster correlations (see Snijders &amp; Bosker, 2012). Intuitively, I would expect that the sampling variance of the between-cluster correlation will be a function of the number of clusters (regardless of the number of observations per cluster), so the variance of <span class="math inline">\(r\)</span> from a multi-stage sample would not necessarily be the same as that from a simple random sample. What is the sampling variance of <span class="math inline">\(r\)</span> in this design?</p>
 <p>Let me be more precise here by formalizing the sampling process. Suppose that we have a sample with <span class="math inline">\(m\)</span> clusters, <span class="math inline">\(n_j\)</span> observations in cluster <span class="math inline">\(j\)</span>, and total sample size <span class="math inline">\(N = \sum_{j=1}^m n_j\)</span>. Assume that</p>
 <p><span class="math display">\[
 \begin{aligned}
@@ -348,12 +348,12 @@ SS_{xy} &amp;= \sum_{j=1}^m \sum_{i=1}^{n_j} \left(X_{ij} - \bar{\bar{x}}\right)
 \]</span></p>
 <p>where</p>
 <p><span class="math display">\[
-\tilde{N} = \frac{[N g_1 k + N - 1]^2}{N g_2 k^2 + 2 N g_1 k + N - 1} \approx \frac{N}{1 + (g_2 - g_1^2)\psi^2},
+\tilde{N} = \frac{N[g_1 k + 1]^2}{g_2 k^2 + 2 g_1 k + 1} \approx \frac{N}{1 + (g_2 - g_1^2)\psi^2},
 \]</span></p>
 <p><span class="math inline">\(\displaystyle{g_1 = 1 - \frac{1}{N^2}\sum_{j=1}^m n_j^2}\)</span>, and <span class="math inline">\(\displaystyle{g_2 = \frac{1}{N}\sum_{j=1}^m n_j^2 - \frac{2}{N^2}\sum_{j=1}^m n_j^3 + \frac{1}{N^3} \left(\sum_{j=1}^m n_j^2 \right)^2}\)</span>.</p>
 <p>If the clusters are all of equal size <span class="math inline">\(n\)</span>, then</p>
 <p><span class="math display">\[
-\tilde{N} = \frac{[n(m - 1)k + nm - 1]^2}{n^2 (m - 1) k^2 + 2 n (m - 1)k + nm - 1} \approx \frac{N}{1 + (n - 1) \psi^2},
+\tilde{N} = \frac{nm[k(m - 1) / m + 1]^2}{k^2 n (m - 1)/m + 2 k (m - 1) / m + 1} \approx \frac{N}{1 + (n - 1) \psi^2},
 \]</span> The right-hand expression is a further approximation that will be very close to right so long as <span class="math inline">\(m\)</span> is not too too small.</p>
 </section>
 <section id="z-transformation" class="level3">
@@ -365,11 +365,11 @@ SS_{xy} &amp;= \sum_{j=1}^m \sum_{i=1}^{n_j} \left(X_{ij} - \bar{\bar{x}}\right)
 </section>
 <section id="design-effect" class="level3">
 <h3>Design effect</h3>
-<p>The design effect (<span class="math inline">\(DEF\)</span>) is the ratio of the actual sampling variance of <span class="math inline">\(r\)</span> to the sampling variance from a simple random sample of the same size. Here,</p>
+<p>The design effect (<span class="math inline">\(DEF\)</span>) is the ratio of the actual sampling variance of <span class="math inline">\(r\)</span> to the sampling variance in a simple random sample of the same size. Here,</p>
 <p><span class="math display">\[
 DEF = \frac{N}{\tilde{N}} = 1 + (g_2 - g_1^2) \psi^2,
 \]</span></p>
-<p>or with equal cluster-sizes, <span class="math inline">\(DEF = 1 + (n - 1)\psi^2\)</span>. These expressions make it clear that the design effect for the correlation is <em>not</em> equivalent to the well-known design effect for cluster-randomized trials, <span class="math inline">\(1 + (n - 1)\psi\)</span>—we need to take the <em>square</em> of the ICC here.</p>
+<p>or with equal cluster-sizes, <span class="math inline">\(DEF = 1 + (n - 1)\psi^2\)</span>. These expressions make it clear that the design effect for the correlation is <em>not</em> equivalent to the well-known design effect for means or mean differences in cluster-randomized designs, <span class="math inline">\(1 + (n - 1)\psi\)</span>. We need to take the <em>square</em> of the ICC here, which will make the design effect for <span class="math inline">\(r\)</span> <em>smaller</em> than the design effect for a mean (or difference in means) based on the same sample.</p>
 </section>
 
 
