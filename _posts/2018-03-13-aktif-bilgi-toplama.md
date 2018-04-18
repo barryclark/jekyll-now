@@ -1,18 +1,14 @@
 ---
 +layout: post
 +title: "Aktif Bilgi Toplama (NMAP)"
-+excerpt: "NMAP kullanımı hakkında bir özet."
++subtitle: "NMAP kullanımı hakkında bir özet."
 ---
 
-***Yazan: Bora Tanrıkulu***
+***Yazan: [boratanrikulu](https://github.com/boratanrikulu)***
 
-
-**Kaynaklar:**
-
-NMAP ile Ağ Keşfi - Murat Yokuş (Pusula Yayıncılık)
-
-[canyoupwn.me/tr-nmap-cheatsheet/](https://canyoupwn.me/tr-nmap-cheatsheet/)
-
+**Kaynaklar:**  
+NMAP ile Ağ Keşfi - Murat Yokuş (Pusula Yayıncılık)  
+[canyoupwn.me/tr-nmap-cheatsheet/](https://canyoupwn.me/tr-nmap-cheatsheet/)  
 [jlk.fjfi.cvut.cz/arch/manpages/man/extra/nmap/](https://jlk.fjfi.cvut.cz/arch/manpages/man/extra/nmap/nmap.1.en)
 
 ---
