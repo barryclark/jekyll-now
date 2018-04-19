@@ -1,0 +1,11 @@
+<div id="amazon_template_book" style="display:none;">
+{% if site.amazon_asid %}
+<a href="https://www.amazon.co.jp/dp/__AMAZON_ASIN__/ref=as_li_ss_il?ie=UTF8&linkCode=li2&tag={{ site.amazon_asid }}" target="_blank">
+<img src="//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=__AMAZON_ASIN__&Format=_SL160_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag={{ site.amazon_asid }}" alt="__AMAZON_ASIN__.__UNIQUE__">
+</a>
+{% else %}
+<a href="https://www.amazon.co.jp/dp/__AMAZON_ASIN__/" target="_blank">
+<img src="//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=__AMAZON_ASIN__&Format=_SL160_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1" alt="__AMAZON_ASIN__.__UNIQUE__">
+</a>
+{% endif %}
+</div>

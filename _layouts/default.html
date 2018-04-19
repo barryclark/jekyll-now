@@ -1,25 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
   <head>
-    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+    <title>{% if page.title %}{{ page.title }} in {% endif %}{{ site.name }}</title>
 
-    {% include meta.html %}
+{% include meta.html %}
 
     <!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-
+    <base href="{{ site.baseurl }}" />
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/earlyaccess/roundedmplus1c.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
-
+    
+    <script type="text/javascript" src="{{ site.baseurl }}/js/jquery-1.6.1.min.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/js/jquery-jLinkPreview-1.0.0.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/js/jquery-jNetPreview-0.0.1.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/js/jquery-jW3CChecker-0.0.1.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/js/jquery-jAmazonImgConverter-0.0.1.js"></script>
+    <script type="text/javascript">
+    $(function() {
+       $().jLinkPreview({
+             'preload': true,
+             'width': 128,
+             'height': 96,
+             'fade': 100,
+             'background-color': '#FFF',
+             'elementsHavingId': '',
+             'elementsHavingClass': '',
+             'elementsRejectParenet': 'nav,h1,h2,h3,h4,footer',
+             'elementsRejectClass': 'read-more,site-avatar,w3ccheck_div,w3ccheck_link',
+             'attribute': 'noreferrer',
+             'waitingimage': 'https://xinolinx.github.io/images/icon_loader_b_ww_02_s1.gif',
+             'waitingimagetype': 'gif'
+       });
+    });
+    </script>
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
   </head>
 
   <body>
+  
+<!-- hiding templates START -->
+{% include amazon_img.html %}
+<!-- hiding templates END   -->
+    
     <div class="wrapper-masthead">
       <div class="container">
         <header class="masthead clearfix">
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
+          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" alt="site-avatar" /></a>
 
           <div class="site-info">
             <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
@@ -27,8 +56,14 @@
           </div>
 
           <nav>
-            <a href="{{ site.baseurl }}/">Blog</a>
             <a href="{{ site.baseurl }}/about">About</a>
+            {% if site.subsite %}
+            {% if site.subsitename %}
+            <a href="{{ site.subsite }}">{{ site.subsitename }}</a>
+            {% else %}
+            <a href="{{ site.subsite }}">SubSite</a>
+            {% endif %}
+            {% endif %}
           </nav>
         </header>
       </div>

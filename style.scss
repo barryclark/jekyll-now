@@ -18,8 +18,9 @@ html {
 }
 
 body {
-	background: $white;
-  font: 18px/1.4 $helvetica;
+  background: $white;
+  font: 12px/1.4 $helvetica;
+  font-weight: 300;
   color: $darkGray;
 }
 
@@ -44,24 +45,25 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-h1 {
-  font-size: 30px;
+h1, h2 {
+  font-size: 16px;
+  font-weight: 700;
   a {
     color: inherit;
   }
 }
 
-h2 {
-  font-size: 24px;
-}
-
 h3 {
-  font-size: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  color: $darkGray;
 }
 
 h4 {
-  font-size: 18px;
-  color: $gray;
+  font-size: 12px;
+  font-weight: 700;
+  color: #AAA;
+  background-color: #EFEFFC;
 }
 
 p {
@@ -70,16 +72,34 @@ p {
 
 a {
   color: $blue;
+  background-color: #EEE;
   text-decoration: none;
 	cursor: pointer;
   &:hover, &:active {
     color: $blue;
+    background-color: #EEF;
   }
+}
+
+h1 a {
+  color: inherit;
+  background-color: initial;
+}
+
+h2 a {
+  color: inherit;
+  background-color: initial;
+}
+
+.readmore {
+  color: $blue;
+  background-color: $lightBlue;
 }
 
 ul, ol {
   margin: 15px 0;
   padding-left: 30px;
+  color: #8AB;
 }
 
 ul {
@@ -117,7 +137,7 @@ img {
 
 .date {
   font-style: italic;
-  color: $gray;
+  color: $lightGray;
 }
 
 // Specify the color of the selection
@@ -195,15 +215,15 @@ img {
   color: $darkGray;
   cursor: pointer;
   font-family: $helveticaNeue;
-  font-weight: 300;
-  font-size: 28px;
+  font-weight: 400;
+  font-size: 20px;
   letter-spacing: 1px;
 }
 
 .site-description {
   margin: -5px 0 0 0;
   color: $gray;
-  font-size: 16px;
+  font-size: 12px;
 
   @include mobile {
     margin: 3px 0;
@@ -214,7 +234,8 @@ nav {
   float: right;
   margin-top: 23px; // @TODO: Vertically middle align
   font-family: $helveticaNeue;
-  font-size: 18px;
+  font-size: 12px;
+  font-weight: 500;
 
   @include mobile {
     float: none;
@@ -227,9 +248,9 @@ nav {
     margin-left: 20px;
     color: $darkGray;
     text-align: right;
-    font-weight: 300;
     letter-spacing: 1px;
-
+    background-color: initial;
+    
     @include mobile {
       margin: 0 10px;
       color: $blue;
@@ -246,7 +267,17 @@ nav {
   border-bottom: 1px solid $lightGray;
 }
 
+code > .post {
+  padding-bottom: 2em;
+  border-bottom: 1px solid $lightGray;
+}
+
 .posts > .post:last-child {
+  padding-bottom: 1em;
+  border-bottom: none;
+}
+
+code > .post:last-child {
   padding-bottom: 1em;
   border-bottom: none;
 }
@@ -267,7 +298,23 @@ nav {
 
   .read-more {
     text-transform: uppercase;
-    font-size: 15px;
+    font-size: 10px;
+    color: $lightGray;
+    border-bottom: 1px solid $lightGray;
+    background-color: initial;
+  }
+
+  .highlighter-rouge {
+    line-height: 13px;
+  }
+  code.highlighter-rouge {
+    margin-left: initial;
+    margin-right: initial;
+    background-color: $lightGray;
+  }	
+  div.highlighter-rouge {
+    margin-left: 20px;
+    margin-right: 10px;
   }
 }
 
@@ -282,6 +329,24 @@ footer {
   padding: 20px 0;
   text-align: center;
 }
+
+/*********************/
+/* LAYOUT / xinolinx */
+/*********************/
+@import "table";
+
+@import "amazon";
+
+@import "kaomoji";
+
+/*********************/
+/* LAYOUT / for JS   */
+/*********************/
+@import "jLinkPreview";
+
+/*********************/
+/* LAYOUT / includes */
+/*********************/
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
