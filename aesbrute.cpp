@@ -1,17 +1,15 @@
-// 04/17/2018 06:41PM
+// 04/19/2018 06:48PM
 
 #include<iostream>
 #include<fstream>
 #include<sstream>
-#include<string>
 
 using namespace std;
 
 #include <chrono>
+
 using namespace std::chrono;
 
-#include"cryptopp/cryptlib.h"
-#include"cryptopp/hex.h"
 #include"cryptopp/filters.h"
 #include"cryptopp/aes.h"
 #include"cryptopp/modes.h"
@@ -41,7 +39,7 @@ bool increment(byte front[], int pos) {
         front[pos] = '0';
         
         if(pos > 0) {
-            increment(front, pos - 1);
+            return increment(front, pos - 1);
         } else {
             return false;
         }
@@ -57,10 +55,10 @@ bool increment(byte front[]) {
 bool is_english(string plain) {
     const char *array = plain.c_str();
     
-    for(int i = 0; i < plain.size(); i++) {
+    for(int i = 5; i < plain.size() - 5; i++) {
         char letter = array[i];
         
-        if(letter < 32 || letter > 94) {
+        if(letter < ' '/* || letter > 126*/) {
             return false;
         }
     }
@@ -79,36 +77,29 @@ void brute(string cipher) {
     copy(rear, rear + 12, key + 4);
 
     auto start = high_resolution_clock::now();
-    cout << "start: " << start << endl;
     
     do {
         copy(front, front + 4, key);        
-        plain = aes_decode(cipher, key);
-        
-        if(is_english(plain)) {
-            cout << key << endl << plain << endl;
-            return plain;
-        }
-        
-    } while(increment(front));
+        plain = aes_decode(cipher, key);       
+    } while(!is_english(plain) && increment(front));
+    
+    cout << key << endl << plain << endl;
     
     auto finish = high_resolution_clock::now();
     duration<double> elapsed = finish - start;
-    cout << "finish: " << finish << endl;
-    cout << "elapsed: " << elapsed.count() << endl;
-    
+    cout << "elapsed: " << elapsed.count() <<  " seconds" << endl;    
 }
 
 void decode_file(char* infile) {   
-    fstream file1;
+    ifstream file;
     
-    file1.open(infile,ios::in);
+    file.open(infile);
     
     stringstream buffer;  
-    buffer << file1.rdbuf();  
+    buffer << file.rdbuf();  
     string cipher(buffer.str());
     
-    file1.close();
+    file.close();
     
     brute(cipher);   
 }
