@@ -1,6 +1,18 @@
 ---
 layout: default
 ---
+<script type="application/ld+json">{
+"@context": "http://schema.org",
+"@type": "Blog",
+"name": "{{ site.name }}",
+"url": "{{ site.url }}",
+"description": "{{ site.desciption }}",
+,
+"publisher": {
+"@type": "{{ site.name }}",
+"name": "{{ site.author }}"
+}
+}</script>
 
 <article class="page">
 
