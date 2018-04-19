@@ -15,17 +15,22 @@
 
 html {
   font-size: 100%;
+ 
+  height:100%;
 }
 
 body {
 	background: $white;
   font: 18px/1.4 $helvetica;
   color: $darkGray;
+
+  height:100%;
 }
 
 .container {
   margin: 0 auto;
-  max-width: 740px;
+//  max-width: 740px;
+  max-width: 760px;
   padding: 0 10px;
   width: 100%;
 }
@@ -262,7 +267,7 @@ nav {
   }
 
   .comments {
-    margin-top: 10px;
+    margin-top: 15px;
   }
 
   .read-more {
@@ -271,11 +276,27 @@ nav {
   }
 }
 
+
+.space-svg{
+  padding-bottom: 100px;
+}
+
+#wrapper {
+  min-height:100%;
+  position:relative;
+}
+
 .wrapper-footer {
   margin-top: 50px;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
   background-color: $lightGray;
+
+  width:100%;
+  height:90px;
+  position:absolute;
+  bottom:0;
+  left:0;
 }
 
 footer {
