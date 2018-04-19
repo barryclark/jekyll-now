@@ -33,3 +33,21 @@ I'm not impressed. No matter how bad the code is, it can be refactored to the ar
 # When to rewrite
 
 There's one context in which I do believe a rewrite is warranted: when the current system doesn't do what you need, at all. When the market wants you to go in the different direction. This is a business decision, not a technical one.
+
+# A microservice exception
+
+I've heard a story of an organization that had fanstistic results without refactoring. Here's how it went:
+
+- teams are writing services
+- by rule, no service may exceed _n_ lines of code
+	- because hitting this limit while writing a feature would be a big problem, in practice they had a soft cap of _3/4 * n_ lines
+- if you want one service to depend on a second service, the second must be published in a marketplace
+- when you publish in the marketplace, you are signing up to support the service for any user in the organizatioon
+- the marketplace supports rating and reviews
+
+Because each service was so small, it was easy to comprehend and work in, even if the code wasn't super-clean. 
+
+Because of the rating/reviews, if you needed a service you could quickly pick the best one available instead of depending on the one the Senior Architect selected at the start of the project.
+
+I don't know what other factors went into their success, so I don't know how to reproduce it, but it's interesting that there is an exception to the "always refactor" strategy I'm used to.
+
