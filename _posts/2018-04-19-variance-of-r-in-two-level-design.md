@@ -1,0 +1,94 @@
+---
+layout: post
+title: Sampling variance of Pearson's r in a two-level design
+date: April 19, 2018
+tags: [effect-sizes, meta-analysis, delta-method, distribution-theory]
+permalink: variance-of-r-in-two-level-design
+---
+
+Consider Pearson's correlation coefficient, $$r$$, calculated from two variables $$X$$ and $$Y$$ with population correlation $$\rho$$. If one calculates $$r$$ from a simple random sample of $$N$$ observations, then its sampling variance will be approximately
+
+$$
+\text{Var}(r) \approx \frac{1}{N}\left(1 - \rho^2\right)^2.
+$$
+
+But what if the observations are drawn from a multi-stage sample? If one uses the raw correlation between the observations (ignoring the multi-level structure), then the $$r$$ will actually be a weighted average of within-cluster and between-cluster correlations (see Snijders & Bosker, 2012). Intuitively, I would expect that the sampling variance of the between-cluster correlation will be a function of the number of clusters (regardless of the number of observations per cluster), so the variance of $$r$$ from a multi-stage sample would not necessarily be the same as that from a simple random sample. What is the sampling variance of $$r$$ in this design?
+
+Let me be more precise here by formalizing the sampling process. Suppose that we have a sample with $$m$$ clusters, $$n_j$$ observations in cluster $$j$$, and total sample size $$N = \sum_{j=1}^m n_j$$. Assume that 
+
+$$
+\begin{aligned}
+X_{ij} &= \mu_x + v^x_j + e^x_{ij} \\
+Y_{ij} &= \mu_y + v^y_j + e^y_{ij},
+\end{aligned}
+$$
+
+for $$i=1,...,n_j$$ and $$j=1,...,m$$, where
+
+$$
+\begin{aligned}
+\left[\begin{array}{c} v^x_j \\ v^y_j \end{array}\right] &\sim N\left(\left[\begin{array}{c}0 \\ 0 \end{array}\right], \left[\begin{array}{cc}\omega_x^2 & \phi \omega_x \omega_y \\ \phi \omega_x \omega_y & \omega_y^2\end{array}\right]\right) \\ 
+\left[\begin{array}{c} e^x_{ij} \\ e^y_{ij} \end{array}\right] &\sim N\left(\left[\begin{array}{c}0 \\ 0 \end{array}\right], \left[\begin{array}{cc}\sigma_x^2 & \rho \sigma_x \sigma_y \\ \rho \sigma_x \sigma_y & \sigma_y^2\end{array}\right]\right)
+\end{aligned}
+$$
+
+and the error terms are mutually independent unless otherwise noted. The raw Pearson's $$r$$ is calculated using the total sums of squares and cross-products:
+
+$$
+r = \frac{SS_{xy}}{\sqrt{SS_{xx} SS_{yy}}},
+$$
+
+where 
+
+$$
+\begin{aligned}
+SS_{xx} &= \sum_{j=1}^m \sum_{i=1}^{n_j} \left(X_{ij} - \bar{\bar{x}}\right)^2, \qquad \bar{\bar{x}} = \frac{1}{N} \sum_{j=1}^m \sum_{i=1}^{n_j} X_{ij} \\
+SS_{xy} &= \sum_{j=1}^m \sum_{i=1}^{n_j} \left(Y_{ij} - \bar{\bar{y}}\right)^2, \qquad \bar{\bar{y}} = \frac{1}{N} \sum_{j=1}^m \sum_{i=1}^{n_j} Y_{ij} \\
+SS_{xy} &= \sum_{j=1}^m \sum_{i=1}^{n_j} \left(X_{ij} - \bar{\bar{x}}\right) \left(Y_{ij} - \bar{\bar{y}}\right).
+\end{aligned}
+$$
+
+### Common correlation and ICC 
+
+The distribution of the total correlation seems to be pretty complicated. So far, I've been able to obtain the variance of $$r$$ for a special case that makes some further, fairly restrictive assumptions. Specifically, assume that the correlation is constant across the two levels, so that $$\phi = \rho$$, and that the intra-class correlation of $$X$$ is the same as that of $$Y$$. Let $$k = \omega_x^2 / \sigma_x^2 = \omega_y^2 / \sigma_y^2$$ and $$\psi = k / (k + 1) = \omega_x^2 / (\omega_x^2 + \sigma_x^2)$$. Then 
+
+$$
+\text{Var}(r) \approx \frac{(1 - \rho^2)^2}{\tilde{N}},
+$$
+
+where 
+
+$$
+\tilde{N} = \frac{N[g_1 k + 1]^2}{g_2 k^2 + 2 g_1 k + 1} \approx \frac{N}{1 + (g_2 - g_1^2)\psi^2},
+$$
+
+$\displaystyle{g_1 = 1 - \frac{1}{N^2}\sum_{j=1}^m n_j^2}$, and $$\displaystyle{g_2 = \frac{1}{N}\sum_{j=1}^m n_j^2 - \frac{2}{N^2}\sum_{j=1}^m n_j^3 + \frac{1}{N^3} \left(\sum_{j=1}^m n_j^2 \right)^2}$$.
+
+If the clusters are all of equal size $$n$$, then 
+
+$$
+\tilde{N} = \frac{nm[k(m - 1) / m + 1]^2}{k^2 n (m - 1)/m + 2 k (m - 1) / m + 1} \approx \frac{N}{1 + (n - 1) \psi^2},
+$$
+The right-hand expression is a further approximation that will be very close to right so long as $$m$$ is not too too small. 
+
+### Z-transformation 
+
+Under the (restrictive) assumptions of common correlation and equal ICCs, Fisher's z transformation is variance-stabilizing (as it is under simple random sampling), so it seems reasonable to use
+
+$$
+\text{Var}\left(z(r)\right) \approx \frac{1}{\tilde{N} - 3}.
+$$
+
+### Design effect
+
+The design effect ($DEF$) is the ratio of the actual sampling variance of $$r$$ to the sampling variance in a simple random sample of the same size. For the special case that I've described, 
+
+$$
+DEF = \frac{N}{\tilde{N}} = 1 + (g_2 - g_1^2) \psi^2,
+$$
+
+or with equal cluster-sizes, $$DEF = 1 + (n - 1)\psi^2$$. These expressions make it clear that the design effect for the correlation is _not_ equivalent to the well-known design effect for means or mean differences in cluster-randomized designs, which is $$1 + (n - 1)\psi$$. We need to take the _square_ of the ICC here, which will make the design effect for $$r$$ _smaller_ than the design effect for a mean (or difference in means) based on the same sample. 
+
+### Other special cases
+
+There are some further special cases that are not to hard to work out and could be useful as rough approximations at least. One is if the within-cluster correlation is zero $$(\rho = 0)$$ and we're interested in the between-cluster correlation $$\phi$$. Then the total correlation can be corrected for what is essentially measurement error using formulas from [Hunter and Schmidt (2004)](https://www.amazon.com/Methods-Meta-Analysis-Correcting-Research-Findings/dp/141290479X). A further specialization is if $$X$$ is a cluster-level measure so that $$\sigma_x^2 = 0$$. 
