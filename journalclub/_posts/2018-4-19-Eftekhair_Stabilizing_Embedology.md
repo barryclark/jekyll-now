@@ -1,0 +1,11 @@
+---
+layout: post
+title: Stabilizing embedology - Geometry-preserving delay-coordinate maps (2018)
+category: journalclub
+olddate: April 23, 2018
+---
+
+* [Paper]({{site.url}}/journalclub/JCpapers/Eftekhair_Stabilizing_Embedology.pdf) Armin Eftekhari, Han Lun Yap, Michael B. Wakin, and Christopher J. Rozell. Stabilizing embedology: Geometry-preserving delay-coordinate maps, Physical Review. (2018)
+* Abstract
+
+Delay-coordinate mapping is an effective and widely used technique for reconstructing and analyzing the dynamics of a nonlinear system based on time-series outputs. The efficacy of delay-coordinate mapping has long been supported by Takens' embedding theorem, which guarantees that delay-coordinate maps use the time-series output to provide a reconstruction of the hidden state space that is a one-to-one embedding of the system's attractor. While this topological guarantee ensures that distinct points in the reconstruction correspond to distinct points in the original state space, it does not characterize the quality of this embedding or illuminate how the specific parameters affect the reconstruction. In this paper, we extend Takens' result by establishing conditions under which delay-coordinate mapping is guaranteed to provide a stable embedding of a system's attractor. Beyond only preserving the attractor topology, a stable embedding preserves the attractor geometry by ensuring that distances between points in the state space are approximately preserved. In particular, we find that delay-coordinate mapping stably embeds an attractor of a dynamical system if the stable rank of the system is large enough to be proportional to the dimension of the attractor. The stable rank reflects the relation between the sampling interval and the number of delays in delay-coordinate mapping. Our theoretical findings give guidance to choosing system parameters, echoing the tradeoff between irrelevancy and redundancy that has been heuristically investigated in the literature. Our initial result is stated for attractors that are smooth submanifolds of Euclidean space, with extensions provided for the case of strange attractors.
