@@ -61,13 +61,14 @@ $$
 \tilde{N} = \frac{N[g_1 k + 1]^2}{g_2 k^2 + 2 g_1 k + 1} \approx \frac{N}{1 + (g_2 - g_1^2)\psi^2},
 $$
 
-$\displaystyle{g_1 = 1 - \frac{1}{N^2}\sum_{j=1}^m n_j^2}$, and $\displaystyle{g_2 = \frac{1}{N}\sum_{j=1}^m n_j^2 - \frac{2}{N^2}\sum_{j=1}^m n_j^3 + \frac{1}{N^3} \left(\sum_{j=1}^m n_j^2 \right)^2}$.
+with $\displaystyle{g_1 = 1 - \frac{1}{N^2}\sum_{j=1}^m n_j^2}$, and $\displaystyle{g_2 = \frac{1}{N}\sum_{j=1}^m n_j^2 - \frac{2}{N^2}\sum_{j=1}^m n_j^3 + \frac{1}{N^3} \left(\sum_{j=1}^m n_j^2 \right)^2}$.
 
 If the clusters are all of equal size $n$, then 
 
 $$
 \tilde{N} = \frac{nm[k(m - 1) / m + 1]^2}{k^2 n (m - 1)/m + 2 k (m - 1) / m + 1} \approx \frac{N}{1 + (n - 1) \psi^2},
 $$
+
 The right-hand expression is a further approximation that will be very close to right so long as $m$ is not too too small. 
 
 ### Z-transformation 
