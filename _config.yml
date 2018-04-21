@@ -9,7 +9,7 @@ name: Math and Computer Science Club
 description: at Laurentian University
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://raw.githubusercontent.com/lu-mcsc/lu-mcsc.github.io/master/images/mcsc.svg
+avatar: /images/mcsc.svg
 
 #
 # Flags below are optional
