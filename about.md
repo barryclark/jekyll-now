@@ -9,7 +9,7 @@ permalink: /about/
 
 I'm Dorian Brown, half Dutch half American, and I've been living in the Netherlands near Amsterdam (*Leiden!*) since 2000. Currently I am working as a data scientist at ING in the Netherlands.
 
-I started this blog as a creative outlet and reason to work on new ideas. For more on this blog you can check out [my first post]({% post_url 2017-10-08-a-short-introduction-and-what-this-blog-is-going-to-be-about %}).
+I started this blog as a creative outlet and reason to work on new ideas. In my current job I get to apply many different machine-learning techniques and teach them to fellow data scientists, and as I enjoy writing I thought this would be a great way to practice both of these skills for a wider audience. For more on this blog you can check out [my first post]({% post_url 2017-10-08-a-short-introduction-and-what-this-blog-is-going-to-be-about %}).
 
 ### The Future
 
