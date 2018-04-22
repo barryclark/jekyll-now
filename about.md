@@ -4,12 +4,16 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+This is the website for Laurentian’s Math and Computer Science Club. Here we post about news in the department, upcoming events, and any other outstanding news we seem to notice.
 
-### More Information
+### Current Location: 
 
-A place to include any other types of information that you'd like to include about yourself.
+Laurentian Univsersity, FA-370
 
-### Contact me
+### Current Executive
 
-[email@domain.com](mailto:email@domain.com)
+President: **Luke Allen**  
+Vice President: **Darius Garneau**  
+Treasurer: **Henri-Philippe Marceau**  
+Content Manager: **Emily Lalonde**  
+Web and Systems Administrator: **Patrick Trottier**  
