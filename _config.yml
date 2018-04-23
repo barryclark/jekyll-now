@@ -8,6 +8,8 @@ alternativa: Una alternativa saludable al menjar ràpid.
 natural: Cuina amb amor, amb productes naturals i de proximitat.
 terra: Receptes de la terra de tota la vida.
 
+premis: Premi Just Eat al millor restaurant a domicili de la Temporada 2017
+
 postalcode1: 08015
 postalcode2: 08011
 postalcode3: 08004
@@ -79,7 +81,7 @@ google_analytics: UA-71360606-1
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
-url: http://www.bonrolloarenas.com/
+url: http://www.bonrolloarenas.com
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
