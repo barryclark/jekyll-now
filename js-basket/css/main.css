@@ -30,6 +30,8 @@ html, body {
 
 .dropdown-item {
   cursor: pointer; }
+  .dropdown-item .text-muted {
+    pointer-events: none; }
 
 .dropdown-item--error {
   white-space: normal;

@@ -57,23 +57,20 @@ var shop = function () {
         var currencyTpl = '';
         var currencyTplErr = '<li class="dropdown-item dropdown-item--error"> \n        <p>Sorry, no currencies available at the moment!</p>\n        <p>In the meantime, try a manual conversion at <a href="http://xe.com/">Xe.com</a> while we fix it.\n        </li>';
 
-        // Populate dropdown with available currencies
-        // set endpoint and our access key
-        //const url = 'http://apilayer.net/api/live?access_key=0f0cd603e88461f93914c25ac233252a&format=1';  
-        var endpoint = 'live';
+        // Populate dropdown with available currencies from APILayer.net
         var access_key = '0f0cd603e88461f93914c25ac233252a';
-
-        // get the most recent exchange rates via the "live" endpoint.
-        // Using popular jQuery Ajax call for ease of integration and as recommended in API docs.
+        // Using popular jQuery Ajax call for ease of integration and as recommended in API's docs.
         $.ajax({
-            url: 'https://apilayer.net/api/' + endpoint + '?access_key=' + access_key,
+            url: 'http://apilayer.net/api/live?access_key=' + access_key,
             dataType: 'jsonp',
             success: function success(json) {
                 if (json.success) {
                     for (var key in json.quotes) {
                         //Get the currency abbreviation from the key name
                         var abbr = key.split('USD')[1];
-                        var rate = Number(json.quotes[key].toFixed(2));
+                        var USDAgainstGBP = json.quotes['USDGBP'];
+                        var rate = Number((json.quotes[key] / USDAgainstGBP).toFixed(2));
+
                         currencies.push({ abbr: abbr, rate: rate });
                         currencyTpl += '<li class="dropdown-item" data-type="currency" data-name="' + abbr + '" data-rate="' + rate + '"> \n                                ' + abbr + ' - <span class="text-muted"><small>' + rate + '</small></span>\n                            </li>';
                     }
