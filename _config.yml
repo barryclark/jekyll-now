@@ -22,16 +22,15 @@ postalcode9:
 
 
 # Preus
-rollitos: 9.5
+rollitos: 7.5
 petit: 6.0
-pures: 6.0
-cremes: 6.0
-amanides: 6.0
-postres: 5.0
-menu: 16.5
+pures: 4.5
+cremes: 4.5
+amanides: 4.5
+postres: 4.5
+menu: 12.5
 aigua: 2.0
-llauna: 3.0
-sucs: 4.0
+llauna: 2.0
 
 # Horari
 dilluns: de 19h a 23h
