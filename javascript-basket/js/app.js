@@ -66,7 +66,7 @@ var shop = function () {
         // get the most recent exchange rates via the "live" endpoint.
         // Using popular jQuery Ajax call for ease of integration and as recommended in API docs.
         $.ajax({
-            url: 'http://apilayer.net/api/' + endpoint + '?access_key=' + access_key,
+            url: 'https://apilayer.net/api/' + endpoint + '?access_key=' + access_key,
             dataType: 'jsonp',
             success: function success(json) {
                 if (json.success) {
