@@ -4,12 +4,8 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
-
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
+My name is Frankie and I'm currently a data scientist at IBM Watson Health in Chicago, but this is my spot for writing on non work-related side projects and technical musings. 
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[frankie@zeager.xyz](mailto:frankie@zeager.xyz)
