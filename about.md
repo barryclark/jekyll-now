@@ -4,12 +4,10 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+### The home of thinkers who do and do-ers who think
 
-### More Information
+A collective of leading Engineers and Technologists who have the intelligence to devise the right solution, the skills to build it and the ability to help you embed it, to drive real change in your organisation.
 
-A place to include any other types of information that you'd like to include about yourself.
+### Website
 
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+[infinityworks.com](https://www.infinityworks.com)
