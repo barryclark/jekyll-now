@@ -1,0 +1,11 @@
+---
+layout: post
+title: Neural Representation of Spatial Topology in the Rodent Hippocampus (2014)
+category: journalclub
+olddate: April 30, 2018
+---
+
+* [Paper]({{site.url}}/journalclub/JCpapers/Chen_Representation_Topology.pdf) Zen Chen, Stephen N. Gomperts, Jun Yamamoto, and Matthew A. Wilson. Neural Representation of Spatial Topology in the Rodent Hippocampus, Neural Computation.(2014)
+* Abstract
+
+Pyramidal cells in the rodent hippocampus often exhibit clear spatial tuning in navigation. Although it has been long suggested that pyramidal cell activity may underlie a topological code rather than a topographic code, it remains unclear whether an abstract spatial topology can be encoded in the ensemble spiking activity of hippocampal place cells. Using a statistical approach developed previously, we investigate this question and related issues in greater details. We recorded ensembles of hippocampal neurons as rodents freely foraged in one and two-dimensional spatial environments, and we used a “decode-to-uncover” strategy to examine the temporally structured patterns embedded in the ensemble spiking activity in the absence of observed spatial correlates during periods of rodent navigation or awake immobility. Specifically, the spatial environment was represented by a finite discrete state space. Trajectories across spatial locations (“states”) were associated with consistent hippocampal ensemble spiking patterns, which were characterized by a state transition matrix. From this state transition matrix, we inferred a topology graph that defined the connectivity in the state space. In both one and two-dimensional environments, the extracted behavior patterns from the rodent hippocampal population codes were compared against randomly shuffled spike data. In contrast to a topographic code, our results support the efficiency of topological coding in the presence of sparse sample size and fuzzy space mapping. This computational approach allows us to quantify the variability of ensemble spiking activity, to examine hippocampal population codes during off-line states, and to quantify the topological complexity of the environment.
