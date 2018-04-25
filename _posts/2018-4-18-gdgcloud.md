@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Slides] [Apr 2018] Think like a storage architect, in four questions"
+title: "[Slides] [Apr 2018] Think like a storage architect, in four questions - GDG Cloud London"
 ---
 
 <object data="http://www.oicheryl.com/resources/2018-4-18-think-like.pdf" type="application/pdf" width="700px" height="700px">
