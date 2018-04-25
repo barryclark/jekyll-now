@@ -9,7 +9,7 @@ title: "[Slides] [Apr 2018] Persistent storage for Kubernetes - DevOps with Kube
     </embed>
 </object>
 
-Here are my slides from my talk "Persistent storage for Kubernetes - which solution at why?" at DevOps with Kubernetes Meetup by Hotels.com on 25 April 2018. In this talk I cover:
+Here are my slides from my talk "Persistent storage for Kubernetes - which solution at why?" at [DevOps with Kubernetes Meetup by Hotels.com](https://www.eventbrite.co.uk/e/devops-with-kubernetes-meetup-by-hotelscom-expedia-tickets-44107262008) on 25 April 2018. In this talk I cover:
 
 * The basic concepts behind storage in Kubernetes
 * How to compare different storage options
