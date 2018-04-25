@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Slides] [Apr 2018] Persistent storage for Kubernetes - "
+title: "[Slides] [Apr 2018] Persistent storage for Kubernetes - DevOps with Kubernetes Meetup by Hotels.com"
 ---
 
 <object data="http://www.oicheryl.com/resources/2018-4-25-hotelscom.pdf" type="application/pdf" width="700px" height="700px">
