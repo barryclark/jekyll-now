@@ -14,4 +14,4 @@ Here are my slides from my talk "Persistent storage for Kubernetes - which solut
 * The basic concepts behind storage in Kubernetes
 * How to compare different storage options
 * The ideal storage for different use cases
-* [A live demo](demo.storageos.cloud)
+* [A live demo](https://demo.storageos.cloud)
