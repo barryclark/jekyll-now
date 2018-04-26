@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+
+    {% include meta.html %}
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+      <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+      <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+
+      <!-- Fonts -->
+
+      <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+
+      {% include jquery.html %}
+      {% include analytics.html %}
+
+  </head>
+
+  <body>
+      <div class="container--fluid clearfix">
+          <header class="header--company">
+
+              <div class="header--company__left-side">
+                  <button class="header--company__hamburger"><i class="fa fa-bars"></i></button>
+                  <img src="/assets/svg/logo--dark.svg" class="header--company__logo"/>
+              </div>
+
+              <nav class="header--company__navigation">
+                  {% include navigation.html %}
+              </nav>
+
+          </header>
+      </div>
+
+      <section class="container--fluid company__section--1">
+          <div class="container clearfix">
+              <div class="company__section--1__text">
+                  <h1>A plataforma que <span class="text-color--yellow--200">elimina o currículo</span></h1>
+
+                  <ul>
+                      <li>Publique de forma inteligente sua vaga em 1 minuto</li>
+                      <li>Veja 50+ candidatos compatíveis em 30 segundos</li>
+                      <li>Entreviste na plataforma quantos você quiser</li>
+                      <li>Contrate em 24 horas o melhor candidato</li>
+                  </ul>
+
+                  <a href="{{ site.baseurl }}/login/empresa">
+                      <button>Publicar Vaga</button>
+                  </a>
+              </div>
+
+              <div class="company__section--1__image">
+                  <img src="https://placehold.it/600/400/?text=Three Cards" />
+              </div>
+          </div>
+      </section>
+
+      <section class="container clearfix company__section--2">
+          <h1><span class="text-color--blue--500">+2.000</span> Empresas eliminaram o currículo com a <span class="text-color--blue--500">Empreguei</span></h1>
+
+          <div class="company__section--2__client-list">
+              <div class="company__section--2__client-list__client"><img src="/assets/img/bioage.png" /></div>
+              <div class="company__section--2__client-list__client"><img src="/assets/img/ford.png"/></div>
+              <div class="company__section--2__client-list__client"><img src="/assets/img/renault.png"/></div>
+              <div class="company__section--2__client-list__client"><img src="/assets/img/oppacart.png"/></div>
+              <div class="company__section--2__client-list__client"><img src="/assets/img/heineken.png"/></div>
+              <div class="company__section--2__client-list__client"><img src="/assets/img/even.png"/></div>
+              <div class="company__section--2__client-list__client"><img src="/assets/img/vonex.png"/></div>
+              <div class="company__section--2__client-list__client"><img src="/assets/img/lopes.png"/></div>
+          </div>
+      </section>
+
+      <section class="container--fluid company__section--3">
+          <div class="container clearfix">
+              <div class="company__section--3__text">
+                  <h1>Por que criamos a Empreguei</h1>
+
+                  <ul>
+                      <li>Livre de mensalidade</li>
+                      <li>Livre de currículos tradicionais</li>
+                      <li>Match inteligente de candidato com a sua vaga</li>
+                      <li>Candidatos com foto, salário pretendido e perto da vaga</li>
+                      <li>Atende pequenas, médias e grandes empresas</li>
+                  </ul>
+
+              </div>
+
+              <div class="company__section--1__image">
+                  <img src="https://placehold.it/500/500/?text=Flying Money" />
+              </div>
+          </div>
+      </section>
+
+      <section class="container clearfix company__section--4">
+          <div class="company__section--4__feature">
+              <img src="https://placehold.it/50/50/?text=Icon" />
+
+              <h2>Titulo</h2>
+
+              <p><!-- start slipsum code -->
+
+Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing.
+
+<!-- end slipsum code --></p>
+          </div>
+
+          <div class="company__section--4__feature">
+              <img src="https://placehold.it/50/50/?text=Icon" />
+
+              <h2>Titulo</h2>
+
+              <p><!-- start slipsum code -->
+
+Now that there is the Tec-9, a crappy spray gun from South Miami. This gun is advertised as the most popular gun in American crime. Do you believe that shit? It actually says that in the little book that comes with it: the most popular gun in American crime. Like they're actually proud of that shit.
+
+<!-- end slipsum code --></p>
+          </div>
+
+          <div class="company__section--4__feature">
+              <img src="https://placehold.it/50/50/?text=Icon" />
+
+              <h2>Titulo</h2>
+
+              <p><!-- start slipsum code -->
+
+Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends.
+
+<!-- end slipsum code --></p>
+          </div>
+
+          <div class="company__section--4__feature">
+              <img src="https://placehold.it/50/50/?text=Icon" />
+
+              <h2>Titulo</h2>
+
+              <p><!-- start slipsum code -->
+
+My money's in that office, right? If she start giving me some bullshit about it ain't there, and we got to go someplace else and get it, I'm gonna shoot you in the head then and there. Then I'm gonna shoot that bitch in the kneecaps, find out where my goddamn money is. She gonna tell me too. Hey, look at me when I'm talking to you, motherfucker. You listen: we go in there, and that nigga Winston or anybody else is in there, you the first motherfucker to get shot. You understand?
+
+<!-- end slipsum code --></p>
+          </div>
+      </section>
+
+      <section class="container--fluid company__section--5">
+          <div class="container clearfix">
+              <div class="company__section--5__text">
+                  <h1>Faça como Thiago!</h1>
+
+                  <p>Livre-se de currículos, recrute novos talentos!</p>
+
+                  <a href="{{ site.baseurl}}/login/empresa">
+                      <button>Publicar Vaga</button>
+                  </a>
+              </div>
+
+              <div class="company__section--5__video">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/4riI1v7lmaA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+              </div>
+          </div>
+      </section>
+
+      <section class="container clearfix company__section--6">
+          <h1>Preços</h1>
+          <h2>Confira nossa tabela de preços e planos.</h2>
+
+          <div class="company__section--6__plans">
+
+              <div class="company__section--6__plans__plan">
+                  <div class="company__section--6__plans__plan__name">Plano Básico</div>
+                  <div class="company__section--6__plans__plan__price">R$ 79,00</div>
+                  <div class="company__section--6__plans__plan__features">
+                      <li class="item">Candidatos perto da vaga</li>
+                      <li class="item">Candidatos com foto</li>
+                      <li class="item">Acesso à base de dados</li>
+                      <li class="item">Converse pela plataforma</li>
+                      <li class="item--denied">7 Testes online</li>
+                      <li class="item--denied">Testes online personalizados</li>
+                  </div>
+                  <a href="{{ site.baseurl }}/register/companies">
+                      <button>Adquirir</button>
+                  </a>
+              </div>
+
+              <div class="company__section--6__plans__plan company__section--6__plans__plan--featured">
+                  <div class="company__section--6__plans__plan__name">Plano Avançado</div>
+                  <div class="company__section--6__plans__plan__price">R$ 129,00</div>
+                  <div class="company__section--6__plans__plan__features">
+                      <li class="item">Candidatos perto da vaga</li>
+                      <li class="item">Candidatos com foto</li>
+                      <li class="item">Acesso à base de dados</li>
+                      <li class="item">Converse pela plataforma</li>
+                      <li class="item">7 Testes online</li>
+                      <li class="item">Testes online personalizados</li>
+                  </div>
+                  <a href="{{ site.baseurl }}/register/companies">
+                      <button>Adquirir</button>
+                  </a>
+              </div>
+          </div>
+      </section>
+
+      <section class="container clearfix company__section--7">
+          <div class="company__section--7__new">
+              <img src="https://placehold.it/200/200?text=Media" />
+
+              <a href="#"><button>Leia Mais</button></a>
+          </div>
+
+          <div class="company__section--7__new">
+              <img src="https://placehold.it/200/200?text=Media" />
+
+              <a href="#"><button>Leia Mais</button></a>
+          </div>
+
+          <div class="company__section--7__new">
+              <img src="https://placehold.it/200/200?text=Media" />
+
+              <a href="#"><button>Leia Mais</button></a>
+          </div>
+
+          <div class="company__section--7__new">
+              <img src="https://placehold.it/200/200?text=Media" />
+
+              <a href="#"><button>Leia Mais</button></a>
+          </div>
+      </section>
+
+      {% include footer.html %}
+
+      <script>
+
+          $('.header--company__hamburger').click(function(){
+              $('.header--company nav').slideToggle(100);
+          });
+
+
+      </script>
+
+  </body>
+</html>

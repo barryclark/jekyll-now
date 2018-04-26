@@ -1,0 +1,13 @@
+.text-color {
+    &--yellow {
+        &--200 {
+            color: $yellow200;
+        }
+    }
+
+    &--blue {
+        &--500 {
+            color: $blue500;
+        }
+    }
+}
