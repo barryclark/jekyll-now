@@ -46,7 +46,7 @@ hr.lines {border-bottom:thin solid var(--color-grey);}
 #layout em a {background-color:var(--color-soft-black);color:var(--color-soft);border-radius:6px;padding-left:32px;padding-right:32px;}
 #layout em a:hover, #layout em a:active, #layout em a:focus {background-color:var(--color-white);color:var(--color-black);}
 .cover-front {
-	background-position: top center;
+	background-position: bottom center;
 	background-attachment: fixed;display:block;
 	background-size:1920px;width:1920px;height:420px;	background-repeat: no-repeat;
 	border:none;color: #000;letter-spacing: .2em;
