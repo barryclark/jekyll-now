@@ -45,6 +45,18 @@ hr.lines {border-bottom:thin solid var(--color-grey);}
 #mapa {margin-bottom:-11px;}
 #layout em a {background-color:var(--color-soft-black);color:var(--color-soft);border-radius:6px;padding-left:32px;padding-right:32px;}
 #layout em a:hover, #layout em a:active, #layout em a:focus {background-color:var(--color-white);color:var(--color-black);}
+.cover-front {
+	background-position: top center;
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	border:none;
+	color: #000;
+	letter-spacing: .2em;
+	overflow: hidden;
+	text-align: center;
+	padding-top: 0;
+}
 
 /* Buttons hexagons */
 #icons em a {background-color:transparent ;background-image: url(/hipertextos/brand/hexagon.png);background-repeat:no-repeat  ;background-size:100px;width:100px;height:100px;border:none!important;
