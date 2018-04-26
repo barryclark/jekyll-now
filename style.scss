@@ -485,6 +485,9 @@ input,textarea,select {
 .required {
   color: red;
 }
+.js-comments {
+ margin: 80px 0px 0px 0px;
+}
 .page__comments {
  float:left;
  margin-left:0;
@@ -493,16 +496,15 @@ input,textarea,select {
  clear:both
 }
 .page__comments-title {
- margin-top:2rem;
  margin-bottom:10px;
- padding-top:2rem;
+ padding-bottom:10px;
  font-size:.75em;
- border-top:1px solid #f2f3f3;
- text-transform:uppercase
+ text-transform:uppercase;
+ border-bottom:1px solid #f2f3f3;
 }
 .page__comments-form {
  -webkit-transition:all 0.2s ease-in-out;
- transition:all 0.2s ease-in-out
+ transition:all 0.2s ease-in-out;
 }
 .page__comments-form.disabled input,.page__comments-form.disabled button,.page__comments-form.disabled textarea,.page__comments-form.disabled label {
  pointer-events:none;
