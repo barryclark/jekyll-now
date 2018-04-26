@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+
+    {% include meta.html %}
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+
+      {% include jquery.html %}
+      {% include analytics.html %}
+
+  </head>
+
+  <body>
+      <script>
+        function changeDescription(description) {
+            document.getElementById('landing__site-info__description').innerHTML(description);
+        }
+      </script>
+
+    <div class="wrapper-masthead">
+      <div class="container--fluid">
+        <header class="landing clearfix">
+
+          <img src="{{ site.avatar }}" class="landing__image"/>
+
+          <div class="landing__site-info">
+            <p id="landing__site-info__description" class="landing__site-info__description">{{ site.description }}</p>
+          </div>
+
+          <nav class="landing__navigation">
+              <a href="{{ site.baseurl }}/candidatos" class="landing__navigation--candidate" data="{{ site.candidates-description }}">
+                  <div class="landing__navigation--candidate__image">
+                    <img src="/assets/svg/jobot--candidates.svg" />
+                  </div>
+
+                  <Button>Quero Trabalhar</Button>
+              </a>
+
+              <a href="{{ site.baseurl }}/empresas" class="landing__navigation--company" data="{{ site.companies-description }}">
+                  <div class="landing__navigation--company__image">
+                    <img src="/assets/svg/jobot--companies.svg" />
+                  </div>
+
+                  <Button>Quero Contratar</Button>
+              </a>
+          </nav>
+
+        </header>
+      </div>
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          {% include svg-icons.html %}
+        </footer>
+      </div>
+    </div>
+
+      <script>
+      $('.landing__navigation--candidate').mouseenter(function(){
+          $('.landing__site-info__description')
+            .text($('.landing__navigation--candidate').attr('data'))
+        });
+
+      $('.landing__navigation--company').mouseenter(function(){
+          $('.landing__site-info__description')
+              .text($('.landing__navigation--company').attr('data'));
+      });
+      </script>
+
+  </body>
+</html>
