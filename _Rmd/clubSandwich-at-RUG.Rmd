@@ -9,6 +9,6 @@ Last night I attended a joint meetup between the [Austin R User Group](https://w
 
 - Caitlin Hudon: [Getting Plugged into Data Science](https://www.slideshare.net/CaitlinGarrett1/getting-plugged-into-data-science-87767332)
 - Claire McWhite: [A quick intro to networks](https://speakerdeck.com/clairemcwhite/a-quick-intro-to-networks)
-- Nathaniel Woodward: [Blogdown Demo!](goo.gl/vJs8kD) (link includes his slides and a demo screencast)
+- Nathaniel Woodward: [Blogdown Demo!](http://goo.gl/vJs8kD) (link includes his slides and a demo screencast)
 - me: [Robust, easy standard errors with the clubSandwich package]({{ sitel.url }}/files/clubSandwich). 
 
