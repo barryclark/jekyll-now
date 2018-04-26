@@ -1,7 +1,7 @@
 ---
-+layout: post
-+title: "Parola Kırma Saldırıları"
-+subtitle: "Genel olarak brute force'un ne olduğunu açıklayan bir anlatım."
+layout: post
+title: "Parola Kırma Saldırıları"
+subtitle: "Genel olarak brute force'un ne olduğunu açıklayan bir anlatım."
 ---
 
 ***Yazan: [boratanrikulu](https://github.com/boratanrikulu)***
