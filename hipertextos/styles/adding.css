@@ -50,7 +50,7 @@ hr.lines {border-bottom:thin solid var(--color-grey);}
 	background-attachment: fixed;display:block;
 	background-size:1920px;width:1920px;height:420px;	background-repeat: no-repeat;
 	border:none;color: #000;letter-spacing: .2em;
-	padding-top: 60px;text-align:right;
+	padding-top: 32px;text-align:right;
 }
 .cover-front h2, .cover-front h3 {margin:0px;}
 
@@ -103,6 +103,8 @@ padding-left:32px;padding-right:32px;padding-top:6px;color:var(--color-softgrey)
     #horari h4, #domicili h4 {font-size:1.6em ;line-height:.75em ;padding-left:6%;padding-right:6%;}
     #horari .thumb-6, #domicili .thumb-6 {width:100%;}
  	#horari i svg, #domicili i svg {background-size:150px;width:150px;height:150px;padding-left:50px;padding-right:50px;padding-top:32px;margin-bottom:12px;}
+    .cover-front h2, .cover-front h3 {font-size: 15px;line-height:32px;}
+    .cover-front {background-size:900px;width:900px;height:420px;padding-top: 12px;}
     #page-footer .thumb-6 {font-size: 16px;width:100%;}
     #page-footer p {font-size: 13px;}
     #footer-home img {max-width:100%;}
@@ -118,4 +120,6 @@ padding-left:32px;padding-right:32px;padding-top:6px;color:var(--color-softgrey)
 
 @media (max-width: 432px) {
     #page-header.cover {height: 100%;padding-top: 60px;}
+    .cover-front h2, .cover-front h3 {font-size: 12px;line-height:23px;}
+    .cover-front {background-size:750px;width:750px;height:230px;padding-top: 12px;}
 }			
