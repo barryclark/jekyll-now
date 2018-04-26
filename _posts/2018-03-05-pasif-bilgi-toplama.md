@@ -1,18 +1,14 @@
 ---
 +layout: post
 +title: "Pasif Bilgi Toplama (Açık Kaynak İstihbaratı)"
-+excerpt: "Pasif bilgi toplama hakkında kısa bir özet."
++subtitle: "Pasif bilgi toplama hakkında kısa bir özet."
 ---
 
-***Yazan: Bora Tanrıkulu***
+***Yazan: [boratanrikulu](https://github.com/boratanrikulu)***
 
-
-**Kaynaklar:**
-
-[erdemoflaz.com/pasif-bilgi-toplama](https://erdemoflaz.com/pasif-bilgi-toplama/)
-
-[canyoupwn.me](https://canyoupwn.me)
-
+**Kaynaklar:**  
+[erdemoflaz.com/pasif-bilgi-toplama](https://erdemoflaz.com/pasif-bilgi-toplama/)  
+[canyoupwn.me](https://canyoupwn.me)  
 [wikipedia.org](https://www.wikipedia.org/)
 
 
