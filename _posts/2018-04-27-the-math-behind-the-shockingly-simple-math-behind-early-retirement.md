@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The Math Behind The Shockingly Simple Math Behind Early Retirement
-tags: [math]
+tags: [math, money]
 keywords: [shockingly simple math, simple math, shockingly simple, early retirement, retirement, financial independence, equation, interest]
 image: /images/years-to-financial-independence.png
 ---
