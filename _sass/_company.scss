@@ -395,7 +395,7 @@
 
     &__feature {
         text-align-last: center;
-        flex-basis: 20%;
+        flex-basis: 25%;
 
         @include tablet {
             flex-basis: 50%;
@@ -676,15 +676,34 @@
         display: flex;
         flex-flow: column nowrap;
         align-items: center;
+        flex-basis: 33%;
+        justify-content: flex-start;
 
         img, a img {
             width: 200px;
         }
 
+        a {
+
+            i {
+                border-radius: 64px;
+                transition: .3s;
+            }
+
+            &:hover i{
+                -webkit-box-shadow: 0px 4px 0px 0px rgba(0,0,0,0.5);
+                -moz-box-shadow: 0px 4px 0px 0px rgba(0,0,0,0.5);
+                box-shadow: 0px 4px 0px 0px rgba(0,0,0,0.5);
+                transform: scale(1.03)
+            }
+        }
+
+        &:last-child {
+        }
+
         &--one{
             display: flex;
             flex-flow: column nowrap;
-            align-items: left;
 
             a {
                 button {
