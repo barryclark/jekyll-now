@@ -10,4 +10,10 @@
             color: $blue500;
         }
     }
+
+    &--deep-orange {
+        &--500 {
+            color: $orange500;
+        }
+    }
 }
