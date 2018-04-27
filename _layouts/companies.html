@@ -30,17 +30,17 @@
 
               <div class="header--company__left-side">
                   <button class="header--company__hamburger"><i class="fa fa-bars"></i></button>
-                  <img src="/assets/svg/logo--dark.svg" class="header--company__logo"/>
+                  <a href="{{ site.baseurl }}/"><img src="/assets/svg/logo--dark.svg" class="header--company__logo"/></a>
               </div>
 
               <nav class="header--company__navigation">
-                  {% include navigation.html %}
+                  {% include navigation.html company=true %}
               </nav>
 
           </header>
       </div>
 
-      <section class="container--fluid company__section--1">
+      <section class="container--fluid company__section--1" id="a-empreguei">
           <div class="container clearfix">
               <div class="company__section--1__text">
                   <h1>A plataforma que <span class="text-color--yellow--200">elimina o currículo</span></h1>
@@ -58,7 +58,35 @@
               </div>
 
               <div class="company__section--1__image">
-                  <img src="https://placehold.it/600/400/?text=Three Cards" />
+                  <div class="company__section--1__image__card">
+                      <img src="/assets/img/enzo.jpg" />
+                      <h2>Enzo Gabriel</h2>
+                      <ul>
+                          <li>Universidade de São Paulo</li>
+                          <li>enzo@email.com</li>
+                          <li>(00) 98765 4321</li>
+                          <li>R$ 2000,00</li>
+                          <li>1 Ano de Experiência</li>
+                          <li>26 Anos</li>
+                          <li>1.4km da Vaga</li>
+                          <li>Sim!</li>
+                      </ul>
+                  </div>
+
+                  <div class="company__section--1__image__card">
+                      <img src="/assets/img/ana.jpg" />
+                      <h2>Ana Oliveira</h2>
+                      <ul>
+                          <li>Universidade de Minas Gerais</li>
+                          <li>ana@email.com</li>
+                          <li>(00) 98765 4321</li>
+                          <li>R$ 1900,00</li>
+                          <li>2 Ano de Experiência</li>
+                          <li>23 Anos</li>
+                          <li>1.6km da Vaga</li>
+                          <li>Sim!</li>
+                      </ul>
+                  </div>
               </div>
           </div>
       </section>
@@ -78,7 +106,7 @@
           </div>
       </section>
 
-      <section class="container--fluid company__section--3">
+      <section class="container--fluid company__section--3" id="como-funciona">
           <div class="container clearfix">
               <div class="company__section--3__text">
                   <h1>Por que criamos a Empreguei</h1>
@@ -93,8 +121,8 @@
 
               </div>
 
-              <div class="company__section--1__image">
-                  <img src="https://placehold.it/500/500/?text=Flying Money" />
+              <div class="company__section--3__image">
+                  <img src="/assets/svg/flying-money.svg" />
               </div>
           </div>
       </section>
@@ -162,12 +190,12 @@ My money's in that office, right? If she start giving me some bullshit about it 
               </div>
 
               <div class="company__section--5__video">
-                  <iframe width="560" height="315" src="https://www.youtube.com/embed/4riI1v7lmaA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/74HhDbDWpvw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
               </div>
           </div>
       </section>
 
-      <section class="container clearfix company__section--6">
+      <section class="container clearfix company__section--6" id="precos">
           <h1>Preços</h1>
           <h2>Confira nossa tabela de preços e planos.</h2>
 
@@ -207,7 +235,7 @@ My money's in that office, right? If she start giving me some bullshit about it 
           </div>
       </section>
 
-      <section class="container--fluid company__section--7">
+      <section class="container--fluid company__section--7" id="midia">
           <div class="container clearfix">
               <h1>Na Mídia</h1>
 
@@ -242,7 +270,7 @@ My money's in that office, right? If she start giving me some bullshit about it 
 
       </section>
 
-      {% include footer.html %}
+      {% include footer.html company=false %}
 
       <script>
 

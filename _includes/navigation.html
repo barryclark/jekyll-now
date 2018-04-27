@@ -1,23 +1,29 @@
-    <a href="{{ site.baseurl }}#">
-        <button>A Empreguei</button>
+
+    <a href="{{ site.baseurl }}#a-empreguei">
+        <button class="scroll-trigger" >A Empreguei</button>
     </a>
 
-    <a href="{{ site.baseurl }}">
-        <button>Como Funciona</button>
+    <a href="{{ site.baseurl }}#como-funciona">
+        <button class="scroll-trigger" >Como Funciona</button>
     </a>
 
-    <a href="{{ site.baseurl }}">
-        <button>Preços</button>
+{% if include.company %}
+    <a href="{{ site.baseurl }}#precos">
+        <button class="scroll-trigger" >Preços</button>
+    </a>
+{% endif %}
+
+    <a href="{{ site.baseurl }}#midia">
+        <button class="scroll-trigger" >Midia</button>
     </a>
 
-    <a href="{{ site.baseurl }}">
-        <button>Contato</button>
-    </a>
-
+{% if include.company %}
     <a href="{{ site.baseurl }}/empresas">
-        <button class="company-button">Quero Contratar</button>
+        <button class="company-button">Publicar Vaga</button>
     </a>
-
-    <a href="{{ site.baseurl }}/candidatos">
+{% endif %}
+{% if include.candidate %}
+    <a href="{{ site.baseurl }}/login/candidatos">
         <button class="candidate-button">Quero Trabalhar</button>
     </a>
+{% endif %}

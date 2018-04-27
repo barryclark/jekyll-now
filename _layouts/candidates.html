@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+
+    {% include meta.html %}
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+      <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+      <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+
+      <!-- Fonts -->
+
+      <link href="https://fonts.googleapis.com/css?family=Roboto:300,700" rel="stylesheet">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+
+      {% include jquery.html %}
+      {% include analytics.html %}
+
+  </head>
+
+  <body>
+      <div class="container--fluid clearfix">
+          <header class="header--candidate">
+
+              <div class="header--candidate__left-side">
+                  <button class="header--candidate__hamburger"><i class="fa fa-bars"></i></button>
+                  <a href="{{ site.baseurl }}/"><img src="/assets/svg/logo--dark.svg" class="header--candidate__logo"/></a>
+              </div>
+
+              <nav class="header--candidate__navigation">
+                  {% include navigation.html candidate=true %}
+              </nav>
+
+          </header>
+      </div>
+
+      <section class="container--fluid candidate__section--1">
+          <div class="container clearfix">
+              <div class="candidate__section--1__text">
+                  <h1>Trabalhe com o que <span class="text-color--yellow--200">você</span> gosta!</h1>
+
+                  <ul>
+                      <li>Publique de forma inteligente sua vaga em 1 minuto</li>
+                      <li>Veja 50+ candidatos compatíveis em 30 segundos</li>
+                      <li>Entreviste na plataforma quantos você quiser</li>
+                      <li>Contrate em 24 horas o melhor candidato</li>
+                  </ul>
+
+                  <a href="{{ site.baseurl }}/login/candidato">
+                      <button>Quero Trabalhar</button>
+                  </a>
+              </div>
+
+              <div class="candidate__section--1__image">
+                  <img src="/assets/img/app-screens.png" />
+              </div>
+          </div>
+      </section>
+
+      <section class="container clearfix candidate__section--2">
+          <h1><span class="text-color--deep-orange--500">+2.000</span> Empresas contratando com a <span class="text-color--deep-orange--500">Empreguei</span></h1>
+
+          <div class="candidate__section--2__client-list">
+              <div class="candidate__section--2__client-list__client"><img src="/assets/img/bioage.png" /></div>
+              <div class="candidate__section--2__client-list__client"><img src="/assets/img/ford.png"/></div>
+              <div class="candidate__section--2__client-list__client"><img src="/assets/img/renault.png"/></div>
+              <div class="candidate__section--2__client-list__client"><img src="/assets/img/oppacart.png"/></div>
+              <div class="candidate__section--2__client-list__client"><img src="/assets/img/heineken.png"/></div>
+              <div class="candidate__section--2__client-list__client"><img src="/assets/img/even.png"/></div>
+              <div class="candidate__section--2__client-list__client"><img src="/assets/img/vonex.png"/></div>
+              <div class="candidate__section--2__client-list__client"><img src="/assets/img/lopes.png"/></div>
+          </div>
+      </section>
+
+      <section class="container--fluid candidate__section--3" id="a-empreguei">
+          <div class="container clearfix">
+              <div class="candidate__section--3__text">
+                  <h1>Por que criamos a Empreguei?</h1>
+
+                  <h2>Queremos que você seja feliz.</h2>
+
+                  <p>
+                  Cansamos de ver pessoas frustradas gastando dinheiro com assinaturas de sites de emprego, conduções para entrevistas que não dão em nada, ou quando chegam na entrevista descobrem que a vaga não era aquela que imaginava ou o salário era menor do que o pretendido. Só a Empreguei te entende e entende o que você quer! Te colocamos na cara do gol do seu novo emprego!
+                  </p>
+
+              </div>
+
+              <div class="candidate__section--1__image">
+                  <img src="/assets/svg/flying-money.svg" />
+              </div>
+          </div>
+      </section>
+
+      <section class="container clearfix candidate__section--4">
+          <h1>Resultados</h1>
+          <p>Quem faz o que gosta nunca precisará trabalhar!</p>
+
+          <div class="candidate__section--4__feature">
+              <img src="/assets/svg/like.svg" />
+
+              <h2>Satisfação</h2>
+
+              <p>Um emprego que você goste</p>
+          </div>
+
+          <div class="candidate__section--4__feature">
+              <img src="/assets/svg/skills.svg" />
+
+              <h2>Aprimoramento</h2>
+
+              <p>Um emprego que você possa desenvolver suas habilidades</p>
+          </div>
+
+          <div class="candidate__section--4__feature">
+              <img src="/assets/svg/career.svg" />
+
+              <h2>Crescimento</h2>
+
+              <p>Um emprego que você possa crescer na sua carreira</p>
+          </div>
+
+          <div class="candidate__section--4__feature">
+              <img src="/assets/svg/distance--orange.svg" />
+
+              <h2>Facilidade</h2>
+
+              <p>Seu novo trabalho perto da sua casa</p>
+          </div>
+      </section>
+
+      <section class="container--fluid candidate__section--5">
+          <div class="container clearfix">
+              <div class="candidate__section--5__text">
+                  <h1>Não perca tempo!</h1>
+
+                  <p>Encontre seu novo emprego agora!</p>
+
+                  <a href="{{ site.baseurl}}/login/candidato">
+                      <button>Encontrar Emprego Ideal</button>
+                  </a>
+              </div>
+
+              <div class="candidate__section--5__video">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/os2bKFg2VRs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+              </div>
+          </div>
+      </section>
+
+      <section class="container clearfix candidate__section--6" id="como-funciona">
+          <h1>Por que a Empreguei é diferente?</h1>
+          <h2>Aplicativo na Google Play ou Site!</h2>
+
+          <ul>
+
+              <li>Não precisa enviar seu currículo para ninguém mais</li>
+              <li>Salário da vaga é de acordo com sua pretensão</li>
+              <li>Focamos sempre no seu desenvolvimento profissional</li>
+              <li>Seu novo trabalho será perto da sua casa</li>
+
+          </ul>
+
+          <div class="candidate__section--6__links">
+              <a href='https://play.google.com/store/apps/details?id=com.hatchr.jobn&hl=pt-PT&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Disponível no Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/pt-br_badge_web_generic.png'/></a>
+
+              <a href="{{ site.baseurl }}/login/candidatos">
+                  <button>Acessar Site</button>
+              </a>
+          </div>
+      </section>
+
+      <section class="container--fluid candidate__section--7" id="midia">
+          <div class="container clearfix">
+              <h1>Na Mídia</h1>
+
+              <div class="candidate__section--7__news">
+
+                  <div class="candidate__section--7__news__new">
+                      <img src="/assets/img/endeavor.png" />
+
+                      <a href="#"><button>Leia Mais</button></a>
+                  </div>
+
+                  <div class="candidate__section--7__news__new">
+                      <img src="/assets/img/exame.png" />
+
+                      <a href="#"><button>Leia Mais</button></a>
+                  </div>
+
+                  <div class="candidate__section--7__news__new">
+                      <img src="/assets/img/globo-news.png" />
+
+                      <a href="#"><button>Leia Mais</button></a>
+                  </div>
+
+                  <div class="candidate__section--7__news__new">
+                      <img src="/assets/img/valor.png" />
+
+                      <a href="#"><button>Leia Mais</button></a>
+                  </div>
+
+              </div>
+          </div>
+
+      </section>
+
+      {% include footer.html candidate=true %}
+
+      <script>
+
+          $('.header--candidate__hamburger').click(function(){
+              $('.header--candidate nav').slideToggle(100);
+          });
+
+
+      </script>
+
+  </body>
+</html>
