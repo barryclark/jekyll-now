@@ -86,7 +86,7 @@ expenses | savings | years
 
 > Note: I made this table in Excel. Each row looks something like this:
 >
-> | `=A2-5` | =100-A3` | `=LOG10(((1.25 * A3) / (1.05 * B3)) + 1) /LOG10(1.05)` |
+> | `=A2-5` | `=100-A3` | `=LOG10(((1.25 * A3) / (1.05 * B3)) + 1) /LOG10(1.05)` |
 >
 > except the first row, since it will result in a divide by zero error.
 
