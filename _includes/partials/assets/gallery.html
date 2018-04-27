@@ -1,0 +1,9 @@
+<div class="mosaic">
+{% for image in page.images %}
+	<article>
+	  <figure class="article-thumb">
+		<a href="{{ image.url }}"><img src="{{ image.url }}" alt="{{ image.title }}"></a>
+	  </figure>
+	</article>
+{% endfor %}
+</div>

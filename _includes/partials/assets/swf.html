@@ -1,0 +1,11 @@
+{% for swf in page.swf %}
+<div class="flash">
+  <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=10,0,0,0" width="{{ swf.width }}" height="{{ swf.height }}" align="middle">
+    <param name="allowScriptAccess" value="sameDomain" />
+    <param name="allowFullScreen" value="false" />
+    <param name="movie" value="{{ swf.url }}" />
+    <param name="quality" value="high" />
+    <embed src="{{ swf.url }}" quality="high" width="{{ swf.width }}" height="{{ swf.height }}" name="x" align="middle" allowScriptAccess="sameDomain" allowFullScreen="false" type="application/x-shockwave-flash" pluginspage="http://www.adobe.com/go/getflashplayer" />
+  </object>
+</div>
+{% endfor %}

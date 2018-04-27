@@ -1,50 +1,56 @@
 <!DOCTYPE html>
-<html>
+<html lang="ca-ES">
   <head>
+    <meta name="encoding" charset="utf-8" />
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
-
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+	<link rel="canonical" href="http://bonrollobarcelona.com/"/>
+	
     {% include meta.html %}
 
     <!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/styles/screen.min.css" />
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/styles/adding.css" />
+    {% if page.css %}<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/styles/adding-carta.css" />{% endif %}
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/styles/anime.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
-
-    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700,300,100,900" rel="stylesheet">
+    {% include favicons.html %}
+	
   </head>
 
   <body>
-    <div class="wrapper-masthead">
-      <div class="container">
-        <header class="masthead clearfix">
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
-
-          <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-            <p class="site-description">{{ site.description }}</p>
-          </div>
-
-          <nav>
-            <a href="{{ site.baseurl }}/">Blog</a>
-            <a href="{{ site.baseurl }}/about">About</a>
-          </nav>
-        </header>
-      </div>
-    </div>
-
-    <div id="main" role="main" class="container">
+	
+	
+	<!-- Page content -->
+	<div class="page" id="page">
+	{% include partials/navigation/nav.html %}
       {{ content }}
-    </div>
-
-    <div class="wrapper-footer">
-      <div class="container">
-        <footer class="footer">
-          {% include svg-icons.html %}
-        </footer>
-      </div>
-    </div>
+      
+		{% if page.foot %}
+		<hr>
+		<div id="foot-cover" class="cover">
+			<div>
+			<h5><small><i class="icon-flickr"></i></small></h5>
+			<h4><small>{{ site.description }}</small></h4>
+			<h5><small><i class="icon-flickr"></i></small></h5>
+			</div>
+		</div>
+		{% endif %}
+    	<div id="mapa">
+  		{% include mapa.html %} 
+		</div>
+    {% include partials/footer.html %}
+	</div>
+	
+    <!-- Scripts
+    ================================================== -->
+  	<script src="{{ site.baseurl }}/hipertextos/js/jquery.js"></script>
+  	<script src="{{ site.baseurl }}/hipertextos/js/icons.js"></script>
+  	<script src="{{ site.baseurl }}/hipertextos/js/anime.js"></script>
 
     {% include analytics.html %}
   </body>

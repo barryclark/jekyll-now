@@ -1,18 +1,31 @@
 ---
 layout: default
+home: true
 ---
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
-
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
-
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
-</div>
+  	{% include partials/head.html %}  	
+<main id="page-main" role="main">
+	<div id="layout">
+		<div id="alternativa">
+			<h5><small><i class="icon-flickr"></i></small></h5>
+			<h4><small>{{ site.alternativa }}<br>
+			{{ site.natural }}<br>
+			{{ site.terra }}</small></h4>
+			<h5><small><i class="icon-flickr"></i></small></h5>
+		</div>
+		<hr class="lines">
+		<div id="horari">
+  			{% include horari.html %} 
+		</div>
+		<hr>
+		<div id="domicili">
+  			{% include domicili.html %} 
+		</div>
+		<hr>
+		<em><a class="detalls" href="{{ site.baseurl }}/contacte/#intro" title="Més Informació"><i class="icon-support"></i> Detalls</a></em>
+		<hr class="lines">
+	</div>
+</main>
+		<div id="justeat">
+  			{% include premis.html %} 
+		</div>

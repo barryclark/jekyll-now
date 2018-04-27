@@ -1,0 +1,12 @@
+<entry>
+   <title>{{ page.title }}</title>
+   <id>tag:{{ page.domain_name }},{{ page.date | date("Y") }}:/{{ page.permalink }}</id>
+   <updated>{{ page.updated }}</updated>
+   <link rel="alternate" type="text/html" href="http://{{ page.base_url }}/{{ page.permalink }}" />
+   <content type="xhtml" xml:lang="en">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+          {% include 'partials/feed/assets/feed-images.atom' %}
+          {{ page.content }}
+      </div>
+   </content>
+</entry>

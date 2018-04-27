@@ -1,0 +1,191 @@
+/* Image Filters */
+
+.blur, 
+.brightness, 
+.contrast, 
+.grayscale, 
+.huerotate, 
+.invert,
+.reflect,
+.saturate, 
+.antisaturate, 
+.sepialize,
+.blurh, 
+.brightnessh, 
+.contrasth, 
+.grayscaleh, 
+.huerotateh, 
+.inverth, 
+.saturateh, 
+.antisaturateh, 
+.sepializeh,
+.blur:hover, 
+.brightness:hover, 
+.contrast:hover, 
+.grayscale:hover, 
+.huerotate, 
+.invert:hover,
+.reflect:hover,
+.saturate:hover, 
+.antisaturate:hover, 
+.sepialize:hover,
+.blurh:hover, 
+.brightnessh:hover, 
+.contrasth:hover, 
+.grayscaleh:hover, 
+.huerotateh:hover, 
+.inverth:hover,
+.reflecth:hover,
+.saturateh:hover, 
+.antisaturateh:hover, 
+.sepializeh:hover {
+	/*Transition*/
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+}
+.blur, 
+.blurh:hover {
+	/*Blur*/
+	filter:blur(2px);
+	-webkit-filter:blur(2px);
+	-moz-filter:blur(2px);
+	-ms-filter:blur(2px);
+	-o-filter:blur(2px);
+ }
+.brightness, 
+.brightnessh:hover {
+	/*Hue Brightness*/
+	filter:brightness(0.5);
+	-webkit-filter:brightness(0.5);
+	-moz-filter:brightness(0.5);
+	-ms-filter:brightness(0.5);
+	-o-filter:brightness(0.5);
+ }
+.contrast, 
+.contrasth:hover {
+	/*Hue Contrast*/
+	filter:contrast(0.3);
+	-webkit-filter:contrast(0.3);
+	-moz-filter:contrast(0.3);
+	-ms-filter:contrast(0.3);
+	-o-filter:contrast(0.3);
+ }
+.grayscale, 
+.grayscalhe:hover {
+	/*Grayscale*/
+	filter:grayscale(1);
+	-webkit-filter:grayscale(1);
+	-moz-filter:grayscale(1);
+	-ms-filter:grayscale(1);
+	-o-filter:grayscale(1);
+ }
+.huerotate, 
+.huerotateh:hover {
+	/*Hue Rotate*/
+	filter:hue-rotate(180deg);
+	-webkit-filter:hue-rotate(180deg);
+	-moz-filter:hue-rotate(180deg);
+	-ms-filter:hue-rotate(180deg);
+	-o-filter:hue-rotate(180deg);
+ }
+.invert, 
+.inverth:hover {
+	/*Invert*/
+	filter:invert(1);
+	-webkit-filter:invert(1);
+	-moz-filter:invert(1);
+	-ms-filter:invert(1);
+	-o-filter:invert(1);
+ }
+.reflect,
+.reflecth:hover {
+    -webkit-box-reflect: below 0 -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(40%, transparent), to(rgba(255, 255, 255, 0.4)));
+}
+.saturate, 
+.saturateh:hover {
+	/*Saturate*/
+	filter:saturate(4);
+	-webkit-filter:saturate(4);
+	-moz-filter:saturate(4);
+	-ms-filter:saturate(4);
+	-o-filter:saturate(4);
+}
+.antisaturate, 
+.antisaturateh:hover {
+	/*Saturate*/
+	filter:saturate(.5);
+	-webkit-filter:saturate(.5);
+	-moz-filter:saturate(.5);
+	-ms-filter:saturate(.5);
+	-o-filter:saturate(.5);
+}
+.sepialize, 
+.sepializeh:hover {
+	/*Sepia*/
+	filter:sepia(1);
+	-webkit-filter:sepia(1);
+	-moz-filter:sepia(1);
+	-ms-filter:sepia(1);
+	-o-filter:sepia(1);
+}
+.blurh:hover, 
+.brightnessh:hover, 
+.contrasth:hover, 
+.grayscaleh:hover, 
+.huerotateh:hover, 
+.inverth:hover, 
+.saturateh:hover, 
+.sepializeh:hover,
+.antisaturateh:hover {
+	/*Blur*/
+	filter:blur(0px);
+	-webkit-filter:blur(0px);
+	-moz-filter:blur(0px);
+	-ms-filter:blur(0px);
+	-o-filter:blur(0px);
+  	/*Grayscale*/
+	filter:grayscale(0);
+	-webkit-filter:grayscale(0);
+	-moz-filter:grayscale(0);
+	-ms-filter:grayscale(0);
+	-o-filter:grayscale(0);
+	/*Hue Brightness*/
+	filter:brightness(0);
+	-webkit-filter:brightness(0);
+	-moz-filter:brightness(0);
+	-ms-filter:brightness(0);
+	-o-filter:brightness(0);
+  	/*Hue Contrast*/
+	filter:contrast(0);
+	-webkit-filter:contrast(0);
+	-moz-filter:contrast(0);
+	-ms-filter:contrast(0);
+	-o-filter:contrast(0);
+  	/*Hue Rotate*/
+	filter:hue-rotate(0deg);
+	-webkit-filter:hue-rotate(0deg);
+	-moz-filter:hue-rotate(0deg);
+	-ms-filter:hue-rotate(0deg);
+	-o-filter:hue-rotate(0deg);
+	/*Invert*/
+	filter:invert(0);
+	-webkit-filter:invert(0);
+	-moz-filter:invert(0);
+	-ms-filter:invert(0);
+	-o-filter:invert(0);
+	/*Saturate*/
+	filter:saturate(0);
+	-webkit-filter:saturate(0);
+	-moz-filter:saturate(0);
+	-ms-filter:saturate(0);
+	-o-filter:saturate(0);
+	/*Sepia*/
+	filter:sepia(0);
+	-webkit-filter:sepia(0);
+	-moz-filter:sepia(0);
+	-ms-filter:sepia(0);
+	-o-filter:sepia(0);
+}

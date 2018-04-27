@@ -1,0 +1,45 @@
+<div class="relatedPosts">
+
+<h3><u>Contenido Relacionado</u></h3> 
+  
+<div id="rel-content">
+
+{% assign maxRelated = 5 %}
+{% assign minCommonTags =  1 %}
+{% assign maxRelatedCounter = 0 %}
+
+{% for post in site.posts %}
+
+    {% assign sameTagCount = 0 %}
+    {% assign commonTags = '' %}
+
+    {% for category in post.categories %}
+      {% if post.url != page.url %}
+        {% if page.categories contains category %}
+          {% assign sameTagCount = sameTagCount | plus: 1 %}
+          {% capture tagmarkup %} <span class="label label-default">{{ category }}</span> {% endcapture %}
+          {% assign commonTags = commonTags | append: tagmarkup %}
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+
+    {% if sameTagCount >= minCommonTags %}
+    
+          <a href="{{ site.baseurl }}{{ post.url }}">
+              <div id="rel">
+                  <img class="thumbnails" width="100%" src="https://img.youtube.com/vi/{{ post.img }}/0.jpg">
+                  <h6>{{ post.title }}</h6>
+              </div>
+          </a>
+
+      {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
+      {% if maxRelatedCounter >= maxRelated %}
+        {% break %}
+      {% endif %}
+    {% endif %}
+
+  {% endfor %}
+
+</div>
+
+</div>

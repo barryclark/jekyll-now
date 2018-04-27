@@ -1,0 +1,11 @@
+{% for video in page.video %}
+  <div class="video">
+    <object classid="clsid:02BF25D5-8C17-4B23-BC80-D3488ABDDC6B" codebase="http://www.apple.com/qtactivex/qtplugin.cab" width="{{ video.width }}" height="{{ video.height }}" >
+      <param name="src" value="{{ video.url }}">
+      <param name="autoplay" value="false">
+      <param name="controller" value="true">
+      <embed src="{{ video.url }}" width="{{ video.width }}" height="{{ video.height }}" autoplay="false" controller="true" pluginspage="http://www.apple.com/quicktime/download/"></embed>
+    </object>
+  </div>
+  <div class="button-centered"><a class="button flat black" href="{{ video.url }}"><span class="icon icon-film"></span> Download video</a></div>
+{% endfor %}

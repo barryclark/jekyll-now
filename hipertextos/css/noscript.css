@@ -1,0 +1,15 @@
+/* Hiperstyles Noscript  by www.hipertextos.net */
+
+dialog,
+progress,
+.no-js,
+[class*='alert'],
+[class*='menu'],
+[class*='dialog'],
+.slide-page button { display: none !important; visibility: hidden !important; } 
+.js,
+.collapsed,
+.closed { clear: both; display: block; }
+.slide-wrapper { overflow: auto; }
+.slide-page { position: relative; visibility: visible; z-index: 1; }
+

@@ -1,0 +1,99 @@
+/* Hipertextos print.css */
+/* by Acozar - www.hipertextos.net */
+
+body {
+	background: white;
+	color: #000;
+	font-size: 12pt; 
+	font-family: Baskerville, "Baskerville Old Face", "Goudy Old Style", Garamond, Georgia, ‘Times New Roman’, serif; 
+	line-height: 1.5em;
+}
+* {
+	background: transparent;
+	clear: both;
+	color: #000;
+	display: block;
+	font-size: 12pt; 
+	font-family: Baskerville, "Baskerville Old Face", "Goudy Old Style", Garamond, Georgia, ‘Times New Roman’, serif; 
+	line-height: 1.5em;
+	margin: 0 0 1pt;
+	padding: 0;
+	width: 100%;
+	word-break: break-word;
+}
+h1 { font-size: 32pt; }
+h2 { font-size: 24pt; }
+h3 { font-size: 18pt; }
+h4 { font-size: 16pt; }
+h5 { font-size: 14pt; }
+h6 { font-size: 12pt; }
+p { font-size: 12pt; }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	border-bottom: thin solid #ddd;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+	margin: 0 0 1em;
+}
+a, a:link, a:visited {
+	color: #aa0000;
+	display: inline;
+	font-weight: bold; 
+	text-decoration: underline; 
+}
+a:link:after { 
+	content: " (" attr(href) ") "; 
+}
+nav,
+footer,
+style,
+script,
+dialog,
+progress,
+.no-js,
+[class*='alert'],
+[class*='menu'],
+[class*='dialog'] {
+	display: none;
+}
+pre {
+	border: 1px solid #ddd;
+	display: block;
+	font-size: 9pt;
+	margin: 2%;
+	padding: 2%;
+	width: 92%;
+}
+pre *, code, code *, cite, small, strong,
+i, em, span {
+	display: inline;
+	word-break:break-word;
+}
+table, thead, tr { display: table; width: 100%; }
+th { border: 1px solid #ddd; display: table-cell; width: auto; }
+
+.slide-wrapper {
+	overflow: auto;
+}
+.slide-page {
+	position: relative;
+	visibility: visible;
+	z-index: 1;
+}
+.icon {
+	display: inline;
+	height: 1em;
+	margin: 0 .5em;
+	width: 1em;
+}
