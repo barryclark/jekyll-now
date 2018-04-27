@@ -4,6 +4,6 @@ title: About
 permalink: /about/
 ---
 
-Ausgewählte Kuriositäten des Felicity Inc. Konglomerats bestehend aus StronkesBrain™, Weidenwalker.com und Ernst.
-Geposted wird unzuverlässig, aber ehrlich. Texte sind als Kunst zu verstehen (sollte das nicht erkenntlich sein).
-Kontakt: [Luk.](mailto:lw97@st-andrews.ac.uk)
+Aufgewachsen in einer bolivianischen Trollfabrik, musste die Contentmaschine laufend Stories generieren und Likes akquirieren. Nun in Freiheit, folgt sie dem unstillbaren Verlangen eine Essstäbchenmanufaktur zu besitzen. Mit der Hoffnung in ihrer Firma nur selten die Peitsche schwingen zu müssen und einen Text zu schreiben, der sie von den Schatten ihrer Vergangenheit befreit, beschreitet sie die Zukunft. Ihre Texte sind als Kunst zu verstehen.
+
+Kontakt: [Operator](mailto:lw97@st-andrews.ac.uk)
