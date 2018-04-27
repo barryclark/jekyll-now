@@ -1,31 +1,37 @@
-<footer class="container--fluid">
-    <div class="container clearfix footer">
-        <div class="footer__column">
+<footer class="container--fluid footer">
+    <div class="container clearfix">
+        <div class="footer__column footer__column--one">
             <h1>Mapa</h1>
 
             {% include navigation.html %}
         </div>
 
         <div class="footer__column">
-            <img src="/assets/svg/wordpress.svg" /> <span class="company__footer__column__blog">Blog</span>
+            <div>
+                <a href="{{ site.baseurl }}/blog">
+                    <h1 class="company__footer__column__blog">Blog</h1>
+                </a>
+            </div>
 
-            {% include svg-icons.html %}
+            <div>
+                {% include svg-icons.html %}
+            </div>
 
-            <a href="#">
-                <img src="/assets/svg/play-store.svg" />
-            </a>
+            <a href='https://play.google.com/store/apps/details?id=com.hatchr.jobn&hl=pt-PT&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Disponível no Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/pt-br_badge_web_generic.png'/></a>
         </div>
 
         <div class="footer__column">
-            <div class="footer__column__copyright">
+            <h1 class="footer__column__copyright">
                 ® 2017 Empreguei
-            </div>
+            </h1>
 
             <div class="footer__column__endeavor">
                 empreguei.com é uma empresa apoiada pela
-
-                <img src="/assets/svg/endeavor.svg" />
             </div>
+
+            <a href="http://endeavor.org.br">
+                <img src="/assets/img/endeavor.png" />
+            </a>
         </div>
     </div>
 </footer>

@@ -7,6 +7,7 @@
     justify-content: space-between;
     width: 100%;
     background: white;
+    z-index: 5;
 
     @include tablet {
         justify-content: flex-start;
@@ -309,7 +310,6 @@
             font-family: Gidolinya, sans-serif;
             line-height: 64px;
             color: $grey800;
-            font-size: 36px;
 
             @include mobile {
                 text-align: center;
@@ -388,8 +388,314 @@
 
 .company__section--4{
     display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-top: 64px;
+    margin-bottom: 64px;
 
     &__feature {
+        text-align-last: center;
+        flex-basis: 20%;
 
+        @include tablet {
+            flex-basis: 50%;
+        }
+
+        h2 {
+            color: $blue500;
+            font-family: Roboto, sans-serif;
+        }
+
+        img {
+            width: 50px;
+            height: 50px;
+        }
+
+        p {
+            font-size: 14px;
+            padding: 16px;
+            color: $grey800;
+            text-align: center;
+        }
+    }
+}
+
+.company__section--5{
+    background: $grey100;
+    -webkit-box-shadow: 0px 4px 0px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 4px 0px 0px rgba(0,0,0,0.3);
+    box-shadow: 0px 4px 0px 0px rgba(0,0,0,0.3);
+
+    .container {
+        display: flex;
+        justify-content: center;
+        flex-flow: row wrap;
+        align-items: center;
+    }
+
+    &__video {
+        flex-basis: 50%;
+    }
+
+    &__text {
+        flex-basis: 50%;
+
+        a {
+            text-align: center;
+            width: 100%;
+            display: block;
+
+            button {
+                background: $blue500;
+                font-size: 18px;
+                padding: 16px 32px;
+                border-radius: 64px;
+                border: none;
+                color: white;
+                text-transform: uppercase;
+                margin: 32px;
+                transition: .3s;
+                cursor: pointer;
+
+                &:hover {
+                    -webkit-box-shadow: 0px 4px 0px 0px rgba(0,0,0,0.3);
+                    -moz-box-shadow: 0px 4px 0px 0px rgba(0,0,0,0.3);
+                    box-shadow: 0px 4px 0px 0px rgba(0,0,0,0.3);
+                    transform: scale(1.03);
+                }
+            }
+        }
+    }
+}
+
+.company__section--6{
+    margin-top: 64px;
+
+    h1, h2 {
+        text-align: center;
+        line-height: 1em;
+    }
+
+    &__plans {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &__plan {
+            padding: 16px;
+            margin: 16px;
+            transition: .3s;
+            border: 1px solid $grey100;
+            position: relative;
+
+            &:hover{
+                -webkit-box-shadow: 0px 4px 0px 0px rgba(0,0,0,0.3);
+                -moz-box-shadow: 0px 4px 0px 0px rgba(0,0,0,0.3);
+                box-shadow: 0px 4px 0px 0px rgba(0,0,0,0.3);
+                border: 1px solid $blue500;
+                transform: scale(1.03);
+            }
+
+            &__name {
+                text-align: center;
+                padding: 16px;
+                text-transform: uppercase;
+                font-size: 14px;
+                font-weight: bold;
+            }
+
+            &--featured &__name {
+                color: $blue500;
+            }
+
+            &__price {
+                font-size: 42px;
+                font-weight: bold;
+                text-align: center;
+                font-family: Gidolinya, sans-serif;
+            }
+
+            &--featured &__price {
+                color: $green500;
+            }
+
+            &__features {
+                padding: 32px 16px;
+
+                li.item {
+                    list-style: none;
+                    margin-bottom: 8px;
+
+                    &::before {
+                        display: inline-block;
+                        vertical-align: middle;
+                        margin-right: 16px;
+                        content: url('/assets/svg/allowed.svg');
+                    }
+
+                    &--denied {
+                        list-style: none;
+
+                        &::before {
+                            display: inline-block;
+                            vertical-align: middle;
+                            margin-right: 16px;
+                            content: url('/assets/svg/denied.svg');
+                        }
+                    }
+                }
+            }
+
+            a {
+
+                button {
+                    background: $blue500;
+                    padding: 16px 32px;
+                    border-radius: 64px;
+                    color: white;
+                    text-transform: uppercase;
+                    font-size: 16px;
+                    width: 100%;
+                    border: none;
+                    transition: .3s;
+                    cursor: pointer;
+
+                    &:hover {
+                        -webkit-box-shadow: 0px 4px 0px 0px rgba(0,0,0,0.3);
+                        -moz-box-shadow: 0px 4px 0px 0px rgba(0,0,0,0.3);
+                        box-shadow: 0px 4px 0px 0px rgba(0,0,0,0.3);
+                        transform: scale(1.03);
+                    }
+                }
+            }
+
+            &--featured a button {
+                background: $green500;
+            }
+
+            &--featured:after {
+                content: 'Melhor Plano';
+                position: absolute;
+                top: -8px;
+                right: -16px;
+                z-index: 2;
+                text-transform: uppercase;
+                font-size: 12px;
+                font-weight: bold;
+                background: $orange500;
+                color: white;
+                padding: 8px;
+                -webkit-box-shadow: 4px 4px 0px 0px rgba(0,0,0,0.3);
+                -moz-box-shadow: 4px 4px 0px 0px rgba(0,0,0,0.3);
+                box-shadow: 4px 4px 0px 0px rgba(0,0,0,0.3);
+            }
+        }
+    }
+}
+
+.company__section--7{
+    margin-top: 64px;
+    padding: 64px 16px;
+    -webkit-box-shadow: 0px 4px 0px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 4px 0px 0px rgba(0,0,0,0.3);
+    box-shadow: 0px 4px 0px 0px rgba(0,0,0,0.3);
+    background: $grey50;
+
+    h1 {
+        text-align: center;
+    }
+
+    &__news {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 32px;
+
+        &__new {
+            display: flex;
+            align-items: center;
+            flex-flow: column nowrap;
+            transition: .3s;
+            border: 1px solid $grey100;
+            padding: 16px;
+            background: white;
+
+            &:hover {
+                -webkit-box-shadow: 0px 4px 0px 0px rgba(0,0,0,0.3);
+                -moz-box-shadow: 0px 4px 0px 0px rgba(0,0,0,0.3);
+                box-shadow: 0px 4px 0px 0px rgba(0,0,0,0.3);
+                border: 1px solid $blue500;
+                transform: scale(1.03);
+            }
+
+            img {
+                width: 180px;
+                height: 180px;
+
+                object-fit: contain;
+                object-position: center;
+            }
+
+            a {
+
+                button {
+                    background: $blue500;
+                    padding: 16px 32px;
+                    border-radius: 64px;
+                    color: white;
+                    text-transform: uppercase;
+                    font-size: 16px;
+                    border: none;
+                    transition: .3s;
+                    cursor: pointer;
+
+                    &:hover {
+                        -webkit-box-shadow: 0px 4px 0px 0px rgba(0,0,0,0.3);
+                        -moz-box-shadow: 0px 4px 0px 0px rgba(0,0,0,0.3);
+                        box-shadow: 0px 4px 0px 0px rgba(0,0,0,0.3);
+                        transform: scale(1.03);
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+.footer{
+    margin-top: 4px;
+    background: $grey100;
+
+    .container {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+    }
+
+    &__column{
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+
+        img, a img {
+            width: 200px;
+        }
+
+        &--one{
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: left;
+
+            a {
+                button {
+                    border: none;
+                    background: $grey100;
+                    padding: 8px 0;
+                    cursor: pointer;
+                    font-size: 16px;
+                    font-family: Roboto;
+                }
+            }
+        }
     }
 }

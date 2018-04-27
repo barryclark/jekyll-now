@@ -20,15 +20,15 @@ avatar: /assets/svg/logo.svg
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email:
-  facebook:
+  email: atendimento@empreguei.com
+  facebook: empreguei
   flickr:
-  github: barryclark/jekyll-now
-  instagram:
+  github: empreguei
+  instagram: empreguei
   linkedin:
   pinterest:
   rss: # just type anything here for a working RSS icon
-  twitter: jekyllrb
+  twitter:
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
