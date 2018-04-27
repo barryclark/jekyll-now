@@ -4,6 +4,6 @@ title: About
 permalink: /about/
 ---
 
-Aufgewachsen in einer bolivianischen Trollfabrik, musste die Contentmaschine laufend Stories generieren und Likes akquirieren. Nun in Freiheit, folgt sie dem unstillbaren Verlangen eine Essstäbchenmanufaktur zu besitzen. Mit der Hoffnung in ihrer Firma nur selten die Peitsche schwingen zu müssen und einen Text zu schreiben, der sie von den Schatten ihrer Vergangenheit befreit, beschreitet sie die Zukunft. Ihre Texte sind als Kunst zu verstehen.
+Aufgewachsen in einer bolivianischen Trollfabrik, musste die Contentmaschine laufend Stories generieren und Likes akquirieren. Nun in Freiheit, folgt sie dem unstillbaren Verlangen eine Essstäbchenmanufaktur zu besitzen. In der Hoffnung die Schatten ihrer Vergangenheit abzuwerfen, verfasst sie weiterhin Geschichten und manifestiert Ideen. Sie setzt damit ein starkes Zeichen für alle Chatbots und Meinungsmagneten dieser Welt und wurde auch international dafür weitgehend ignoriert. Ihre Texte sind meistens als Kunst zu verstehen.
 
 Kontakt: [Operator](mailto:lw97@st-andrews.ac.uk)
