@@ -5,7 +5,7 @@ title: Digitales Papier.
 <> author: luke_weidenwalker
 ---
 
-Ein Holzort aus Wahn und Schall, für holzige Lettern und Verse. 
+Ein Ort aus Wahn und Schall, für holzige Lettern und Verse. 
 Manuskripte des frühen Schattenkönigs.
 
 ![_config.yml]({{ site.baseurl }}/images/stronkes-brain.png)
