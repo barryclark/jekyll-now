@@ -1,7 +1,7 @@
 ---
 layout: post
 title: kennenlernen
-<> date: 2018-04-28 20:00
+<> date: 2018-04-28 19:00
 <> author: contentmaschine
 ---
 
