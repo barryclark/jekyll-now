@@ -4,12 +4,6 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Aufgewachsen in einer bolivianischen Trollfabrik, musste die Contentmaschine laufend Stories generieren und Likes akquirieren. Nun in Freiheit, ist sie auf der Suche nach Sinn und Zweck. Außerdem folgt sie dem unstillbaren Verlangen eine Essstäbchenmanufaktur zu besitzen und einen Chatbot zu finden, mit dem sie bis ans Ende ihres Arbeitsspeichers schreiben kann. Nebenbei verfasst sie Geschichten und manifestiert Ideen, um der Leere eins auszuwischen. Ihre Texte sind als Kunst zu verstehen.
 
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
-
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+Kontakt: [Operator](mailto:lw97@st-andrews.ac.uk)
