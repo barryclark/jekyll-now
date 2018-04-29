@@ -18,7 +18,7 @@ html {
 }
 
 body {
-	background: $white;
+  background: $white;
   font: 18px/1.4 $helvetica;
   color: $darkGray;
 }
@@ -248,6 +248,7 @@ nav {
 
 .posts > .post:last-child {
   padding-bottom: 1em;
+  margin-bottom: 1000px;
   border-bottom: none;
 }
 
@@ -271,11 +272,24 @@ nav {
   }
 }
 
+.posts {
+	margin-bottom: 100px;
+}
+
 .wrapper-footer {
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
   margin-top: 50px;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
   background-color: $lightGray;
+}
+
+.svg-icon {
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 footer {
