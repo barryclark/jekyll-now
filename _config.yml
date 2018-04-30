@@ -21,7 +21,7 @@ footer-links:
   email:
   facebook:
   flickr:
-  github: barryclark/jekyll-now
+  github: rayinla/rayinla.github.io
   instagram:
   linkedin:
   pinterest:
@@ -76,7 +76,7 @@ sass:
 gems:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
-
+  - github-pages
 # Exclude these files from your production _site
 exclude:
   - Gemfile
