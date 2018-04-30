@@ -1,7 +1,7 @@
 ---
 layout: prediction_post
-published: False
-title: A Visual Animated Overview of Sequence-to-Sequence Models With Attention (Neural Machine Translation as an Example)
+published: True
+title: How Deep Learning Attention Works (example - neural machine translation)
 ---
 
 Sequence-to-sequence models are deep learning models that have achieved a lot of success in tasks like machine translation, text summarization, and image captioning. Google Translate started [using](https://blog.google/products/translate/found-translation-more-accurate-fluent-sentences-google-translate/) such a model in production in late 2016. They are explained in the two pioneering papers ([Sutskever et al., 2014](https://papers.nips.cc/paper/5346-sequence-to-sequence-learning-with-neural-networks.pdf), [Cho et al., 2014](http://emnlp2014.org/papers/pdf/EMNLP2014179.pdf)).
