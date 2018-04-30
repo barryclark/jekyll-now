@@ -16,13 +16,15 @@
   </head>
 
   <body>
-    <div class="wrapper-masthead">
-      <div class="container">
+    
         <header class="masthead clearfix">
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
+          <!-- <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a> -->
+
+      
+    <div id="hero" class="wrapper mast-paper">
 
           <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
+            <h1 class="site-name"><a href="{{ site.baseurl }}/">How To Code</a></h1>
             <p class="site-description">{{ site.description }}</p>
           </div>
 
@@ -31,8 +33,9 @@
             <a href="{{ site.baseurl }}/about">About</a>
           </nav>
         </header>
-      </div>
-    </div>
+        </div>
+
+      
 
     <div id="main" role="main" class="container">
       {{ content }}
@@ -45,7 +48,7 @@
         </footer>
       </div>
     </div>
-
+    {% include scripts.html %}
     {% include analytics.html %}
   </body>
 </html>
