@@ -1,0 +1,14 @@
+<div class="post-nav">
+  {{if .NextInSection}}
+  <div class="post-nav-item">
+    <div class="meta-nav">{{ i18n "next" }}</div>
+    <a href="{{.NextInSection.Permalink}}" rel="next">{{.NextInSection.Title}}</a>
+  </div>
+  {{end}}
+  {{if .PrevInSection}}
+  <div class="post-nav-item">
+    <div class="meta-nav">{{ i18n "previous" }}</div>
+    <a href="{{.PrevInSection.Permalink}}" rel="prev">{{.PrevInSection.Title}}</a>
+  </div>
+  {{end}}
+</div>

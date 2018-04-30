@@ -1,0 +1,74 @@
+{{ partial "header.html" . }}
+{{ partial "navbar.html" . }}
+
+{{ partial "header_image.html" . }}
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1>{{ .Title | default (i18n "publications") }}</h1>
+
+      {{ with .Content }}
+      <div class="article-style" itemprop="articleBody">{{ . }}</div>
+      {{ end }}
+
+      {{/* Array of distinct years. */}}
+      {{ range .Pages.ByDate.Reverse }}
+        {{ $year := print (.Date.Format "2006") }}
+        {{ $.Scratch.SetInMap "years" $year $year }}
+      {{ end }}
+
+      <p>
+        {{ i18n "filter_by_type" }}:
+
+        <select class="pub-filters pubtype-select" data-filter-group="pubtype">
+          <option value="*">{{ i18n "filter_all" }}</option>
+          {{ range $index, $taxonomy := .Site.Taxonomies.publication_types }}
+          <option value=".pubtype-{{ (int $index) }}">
+            {{ index $.Site.Params.publication_types (int $index) }}
+          </option>
+          {{ end }}
+        </select>
+
+        <select class="pub-filters" data-filter-group="year">
+          <option value="*">{{ i18n "filter_all" }}</option>
+          {{ $years_sorted := $.Scratch.GetSortedMapValues "years" }}
+          {{ if $years_sorted }}
+          {{ range $year := sort $years_sorted "" "desc" }}
+          <option value=".year-{{ $year }}">
+            {{ $year }}
+          </option>
+          {{ end }}
+          {{ end }}
+        </select>
+      </p>
+
+      <div id="container-publications">
+        {{ range .Pages.ByDate.Reverse }}
+
+        {{ if .Params.publication_types }}
+          {{ $.Scratch.Set "pubtype" (index .Params.publication_types 0) }}
+        {{ else }}
+          {{ $.Scratch.Set "pubtype" 0 }}
+        {{ end }}
+
+        <div class="grid-sizer col-md-12 isotope-item pubtype-{{ $.Scratch.Get "pubtype" }} year-{{ .Date.Format "2006" }}">
+          {{ if eq $.Params.list_format 1 }}
+            {{ partial "publication_li_detailed" . }}
+          {{ else if eq $.Params.list_format 2 }}
+            {{ partial "publication_li_apa" . }}
+          {{ else if eq $.Params.list_format 3 }}
+            {{ partial "publication_li_mla" . }}
+          {{ else }}
+            {{ partial "publication_li_simple" . }}
+          {{ end }}
+        </div>
+
+        {{ end }}
+      </div>
+
+    </div>
+  </div>
+</div>
+{{ partial "footer_container.html" . }}
+{{ partial "footer.html" . }}

@@ -1,0 +1,801 @@
+"Study","Case","Setting","Measure","time","choice","Phase","A","B","lowIntAxis"
+"Bambara","Al","Dessert","Protests",1,0,"A",5,5,1
+"Bambara","Al","Dessert","Protests",2,0,"A",7,7,1
+"Bambara","Al","Dessert","Protests",3,0,"A",4,4,1
+"Bambara","Al","Dessert","Protests",4,1,"B",1,1,1
+"Bambara","Al","Dessert","Protests",5,1,"B",0,0,1
+"Bambara","Al","Dessert","Protests",6,1,"B",1,1,1
+"Bambara","Al","Dessert","Protests",7,1,"B",0,0,1
+"Bambara","Al","Dessert","Protests",8,0,"C",1,1,1
+"Bambara","Al","Dessert","Protests",9,0,"C",5,5,1
+"Bambara","Al","Dessert","Protests",10,0,"C",3,3,1
+"Bambara","Al","Dessert","Protests",11,0,"C",4,4,1
+"Bambara","Al","Dessert","Protests",12,1,"D",1,1,1
+"Bambara","Al","Dessert","Protests",13,1,"D",1,1,1
+"Bambara","Al","Dessert","Protests",14,1,"D",1,1,1
+"Bambara","Al","Dessert","Protests",15,1,"D",1,1,1
+"Bambara","Al","Dessert","Protests",16,1,"D",1,1,1
+"Bambara","Al","Dessert","Protests",17,1,"D",0,0,1
+"Bambara","Al","Dessert","Protests",18,1,"D",0,0,1
+"Bambara","Al","Dessert","Protests",19,1,"D",0,0,1
+"Bambara","Al","Dessert","Protests",20,1,"D",0,0,1
+"Bambara","Al","Dusting","Protests",1,0,"A",3,3,1
+"Bambara","Al","Dusting","Protests",2,0,"A",3,3,1
+"Bambara","Al","Dusting","Protests",3,0,"A",2,2,1
+"Bambara","Al","Dusting","Protests",4,0,"A",4,4,1
+"Bambara","Al","Dusting","Protests",5,1,"B",1,1,1
+"Bambara","Al","Dusting","Protests",6,1,"B",1,1,1
+"Bambara","Al","Dusting","Protests",7,1,"B",0,0,1
+"Bambara","Al","Dusting","Protests",8,1,"B",0,0,1
+"Bambara","Al","Dusting","Protests",9,0,"C",4,4,1
+"Bambara","Al","Dusting","Protests",10,0,"C",1,1,1
+"Bambara","Al","Dusting","Protests",11,0,"C",2,2,1
+"Bambara","Al","Dusting","Protests",12,0,"C",3,3,1
+"Bambara","Al","Dusting","Protests",13,1,"D",0,0,1
+"Bambara","Al","Dusting","Protests",14,1,"D",1,1,1
+"Bambara","Al","Dusting","Protests",15,1,"D",1,1,1
+"Bambara","Al","Dusting","Protests",16,1,"D",0,0,1
+"Bambara","Al","Dusting","Protests",17,1,"D",0,0,1
+"Bambara","Al","Dusting","Protests",18,1,"D",0,0,1
+"Bambara","Al","Dusting","Protests",19,1,"D",0,0,1
+"Bambara","Al","Dusting","Protests",20,1,"D",0,0,1
+"Bambara","Al","Vacuuming","Protests",1,0,"A",3,3,1
+"Bambara","Al","Vacuuming","Protests",2,0,"A",4,4,1
+"Bambara","Al","Vacuuming","Protests",3,0,"A",4,4,1
+"Bambara","Al","Vacuuming","Protests",4,1,"B",1,1,1
+"Bambara","Al","Vacuuming","Protests",5,1,"B",0,0,1
+"Bambara","Al","Vacuuming","Protests",6,1,"B",0,0,1
+"Bambara","Al","Vacuuming","Protests",7,1,"B",0,0,1
+"Bambara","Al","Vacuuming","Protests",8,0,"C",5,5,1
+"Bambara","Al","Vacuuming","Protests",9,0,"C",4,4,1
+"Bambara","Al","Vacuuming","Protests",10,0,"C",5,5,1
+"Bambara","Al","Vacuuming","Protests",11,1,"D",2,2,1
+"Bambara","Al","Vacuuming","Protests",12,1,"D",0,0,1
+"Bambara","Al","Vacuuming","Protests",13,1,"D",0,0,1
+"Bambara","Al","Vacuuming","Protests",14,1,"D",0,0,1
+"Bambara","Al","Vacuuming","Protests",15,1,"D",0,0,1
+"Bambara","Al","Vacuuming","Protests",16,1,"D",0,0,1
+"Bambara","Al","Vacuuming","Protests",17,1,"D",0,0,1
+"Bambara","Al","Vacuuming","Protests",18,1,"D",1,1,1
+"Bambara","Al","Vacuuming","Protests",19,1,"D",0,0,1
+"Cole","Keith","NA","Challenging behavior",1,0,"A",17,16.81,0
+"Cole","Keith","NA","Challenging behavior",2,0,"A",8,8.02,0
+"Cole","Keith","NA","Challenging behavior",3,0,"A",15,14.74,0
+"Cole","Keith","NA","Challenging behavior",4,0,"A",62,61.29,0
+"Cole","Keith","NA","Challenging behavior",5,0,"A",23,23.28,0
+"Cole","Keith","NA","Challenging behavior",6,0,"A",38,38.53,0
+"Cole","Keith","NA","Challenging behavior",7,1,"B",31,31.03,0
+"Cole","Keith","NA","Challenging behavior",8,1,"B",14,13.45,0
+"Cole","Keith","NA","Challenging behavior",9,1,"B",0,0,0
+"Cole","Keith","NA","Challenging behavior",10,1,"B",0,0,0
+"Cole","Keith","NA","Challenging behavior",11,1,"B",20,20.17,0
+"Cole","Keith","NA","Challenging behavior",12,1,"B",16,15.78,0
+"Cole","Keith","NA","Challenging behavior",13,1,"B",0,0,0
+"Cole","Keith","NA","Challenging behavior",14,1,"B",29,28.97,0
+"Cole","Keith","NA","Challenging behavior",15,1,"B",16,15.78,0
+"Cole","Keith","NA","Challenging behavior",16,0,"C",86,85.86,0
+"Cole","Keith","NA","Challenging behavior",17,0,"C",16,15.78,0
+"Cole","Keith","NA","Challenging behavior",18,0,"C",38,38.53,0
+"Cole","Keith","NA","Challenging behavior",19,0,"C",92,92.33,0
+"Cole","Keith","NA","Challenging behavior",20,1,"D",23,23.28,0
+"Cole","Keith","NA","Challenging behavior",21,1,"D",7,7.24,0
+"Cole","Keith","NA","Challenging behavior",22,1,"D",14,13.45,0
+"Cole","Keith","NA","Challenging behavior",23,1,"D",15,14.74,0
+"Cole","Keith","NA","Challenging behavior",24,1,"D",14,13.45,0
+"Cole","Keith","NA","Challenging behavior",25,1,"D",14,13.45,0
+"Cole","Keith","NA","Challenging behavior",26,1,"D",31,31.03,0
+"Cole","Keith","NA","Challenging behavior",27,1,"D",20,20.17,0
+"Cole","Keith","NA","Challenging behavior",28,1,"D",10,10.34,0
+"Cole","Keith","NA","Challenging behavior",29,1,"D",9,9.05,0
+"Cole","Wally","NA","Challenging behavior",1,0,"A",20,20,0
+"Cole","Wally","NA","Challenging behavior",2,0,"A",36,37.24,0
+"Cole","Wally","NA","Challenging behavior",3,0,"A",81,81.25,0
+"Cole","Wally","NA","Challenging behavior",4,0,"A",43,43.49,0
+"Cole","Wally","NA","Challenging behavior",5,0,"A",36,37.24,0
+"Cole","Wally","NA","Challenging behavior",6,0,"A",12,13.8,0
+"Cole","Wally","NA","Challenging behavior",7,0,"A",35,35.42,0
+"Cole","Wally","NA","Challenging behavior",8,0,"A",35,35.42,0
+"Cole","Wally","NA","Challenging behavior",9,0,"A",53,53.13,0
+"Cole","Wally","NA","Challenging behavior",10,1,"B",8,7.83,0
+"Cole","Wally","NA","Challenging behavior",11,1,"B",14,14.84,0
+"Cole","Wally","NA","Challenging behavior",12,1,"B",0,0,0
+"Cole","Wally","NA","Challenging behavior",13,1,"B",30,29.95,0
+"Cole","Wally","NA","Challenging behavior",14,1,"B",8,7.83,0
+"Cole","Wally","NA","Challenging behavior",15,1,"B",20,20.31,0
+"Cole","Wally","NA","Challenging behavior",16,1,"B",8,7.83,0
+"Cole","Wally","NA","Challenging behavior",17,0,"C",13,13.8,0
+"Cole","Wally","NA","Challenging behavior",18,0,"C",14,14.84,0
+"Cole","Wally","NA","Challenging behavior",19,0,"C",0,0,0
+"Cole","Wally","NA","Challenging behavior",20,0,"C",14,14.84,0
+"Cole","Wally","NA","Challenging behavior",21,0,"C",14,14.84,0
+"Cole","Wally","NA","Challenging behavior",22,0,"C",20,20.57,0
+"Cole","Wally","NA","Challenging behavior",23,0,"C",20,20.57,0
+"Cole","Wally","NA","Challenging behavior",24,0,"C",30,30.21,0
+"Cole","Wally","NA","Challenging behavior",25,0,"C",32,32.29,0
+"Cole","Wally","NA","Challenging behavior",26,1,"D",8,7.83,0
+"Cole","Wally","NA","Challenging behavior",27,1,"D",7,6.51,0
+"Cole","Wally","NA","Challenging behavior",28,1,"D",7,6.51,0
+"Cole","Wally","NA","Challenging behavior",29,1,"D",21,20,0
+"Cole","Wally","NA","Challenging behavior",30,1,"D",14,13.8,0
+"Cole","Wally","NA","Challenging behavior",31,1,"D",0,0,0
+"Cole","Wally","NA","Challenging behavior",32,1,"D",0,0,0
+"Dibley","Sally","NA","Protests",1,0,"A",10,10,1
+"Dibley","Sally","NA","Protests",2,0,"A",18,18,1
+"Dibley","Sally","NA","Protests",3,0,"A",12,12,1
+"Dibley","Sally","NA","Protests",4,0,"A",12,12,1
+"Dibley","Sally","NA","Protests",5,1,"B",2,2,1
+"Dibley","Sally","NA","Protests",6,1,"B",2,2,1
+"Dibley","Sally","NA","Protests",7,1,"B",5,5,1
+"Dibley","Sally","NA","Protests",8,1,"B",2,2,1
+"Dibley","Sally","NA","Protests",9,0,"C",11,11,1
+"Dibley","Sally","NA","Protests",10,0,"C",14,14,1
+"Dibley","Sally","NA","Protests",11,0,"C",15,15,1
+"Dibley","Sally","NA","Protests",12,0,"C",13,13,1
+"Dibley","Sally","NA","Protests",13,1,"D",5,5,1
+"Dibley","Sally","NA","Protests",14,1,"D",4,4,1
+"Dibley","Sally","NA","Protests",15,1,"D",5,5,1
+"Dibley","Sally","NA","Protests",16,1,"D",4,4,1
+"Dibley","Sally","NA","Protests",17,1,"D",5,5,1
+"Dibley","Sally","NA","Protests",18,1,"D",4,4,1
+"Dibley","Sally","NA","Protests",19,1,"D",1,1,1
+"Dibley","Sally","NA","Protests",20,1,"D",2,2,1
+"Dibley","Sally","NA","Protests",21,1,"D",2,2,1
+"Dunlap","Ahmad","Story telling","Disruptive behavior",1,0,"A",43,42.24,0
+"Dunlap","Ahmad","Story telling","Disruptive behavior",2,0,"A",62,61.84,0
+"Dunlap","Ahmad","Story telling","Disruptive behavior",3,0,"A",70,70.41,0
+"Dunlap","Ahmad","Story telling","Disruptive behavior",4,0,"A",76,75.61,0
+"Dunlap","Ahmad","Story telling","Disruptive behavior",5,1,"B",0,0,0
+"Dunlap","Ahmad","Story telling","Disruptive behavior",6,1,"B",0,0,0
+"Dunlap","Ahmad","Story telling","Disruptive behavior",7,1,"B",2,1.53,0
+"Dunlap","Ahmad","Story telling","Disruptive behavior",8,1,"B",3,2.76,0
+"Dunlap","Ahmad","Story telling","Disruptive behavior",9,0,"C",71,70.41,0
+"Dunlap","Ahmad","Story telling","Disruptive behavior",10,0,"C",58,56.33,0
+"Dunlap","Ahmad","Story telling","Disruptive behavior",11,0,"C",94,94.9,0
+"Dunlap","Ahmad","Story telling","Disruptive behavior",12,0,"C",92,93.37,0
+"Dunlap","Ahmad","Story telling","Disruptive behavior",13,1,"D",3,2.76,0
+"Dunlap","Ahmad","Story telling","Disruptive behavior",14,1,"D",5,3.98,0
+"Dunlap","Ahmad","Story telling","Disruptive behavior",15,1,"D",5,3.98,0
+"Dunlap","Ahmad","Story telling","Disruptive behavior",16,1,"D",6,5.51,0
+"Dunlap","Sven","Spelling class","Disruptive behavior",1,0,"A",56,54.84,0
+"Dunlap","Sven","Spelling class","Disruptive behavior",2,0,"A",42,41.61,0
+"Dunlap","Sven","Spelling class","Disruptive behavior",3,0,"A",13,13.23,0
+"Dunlap","Sven","Spelling class","Disruptive behavior",4,0,"A",74,71.94,0
+"Dunlap","Sven","Spelling class","Disruptive behavior",5,0,"A",60,58.71,0
+"Dunlap","Sven","Spelling class","Disruptive behavior",6,0,"A",37,36.77,0
+"Dunlap","Sven","Spelling class","Disruptive behavior",7,0,"A",35,35.16,0
+"Dunlap","Sven","Spelling class","Disruptive behavior",8,1,"B",12,13.23,0
+"Dunlap","Sven","Spelling class","Disruptive behavior",9,1,"B",0,0,0
+"Dunlap","Sven","Spelling class","Disruptive behavior",10,1,"B",28,27.42,0
+"Dunlap","Sven","Spelling class","Disruptive behavior",11,1,"B",1,1.94,0
+"Dunlap","Sven","Spelling class","Disruptive behavior",12,1,"B",4,5.48,0
+"Dunlap","Sven","Spelling class","Disruptive behavior",13,1,"B",10,9.68,0
+"Dunlap","Sven","Spelling class","Disruptive behavior",14,0,"C",15,15.48,0
+"Dunlap","Sven","Spelling class","Disruptive behavior",15,0,"C",42,41.61,0
+"Dunlap","Sven","Spelling class","Disruptive behavior",16,0,"C",13,12.9,0
+"Dunlap","Sven","Spelling class","Disruptive behavior",17,0,"C",1,1.94,0
+"Dunlap","Sven","Spelling class","Disruptive behavior",18,0,"C",26,27.1,0
+"Dunlap","Sven","Spelling class","Disruptive behavior",19,0,"C",46,45.16,0
+"Dunlap","Sven","Spelling class","Disruptive behavior",20,0,"C",43,41.61,0
+"Dunlap","Sven","Spelling class","Disruptive behavior",21,0,"C",45,44.19,0
+"Dunlap","Wendall","English class","Disruptive behavior",1,0,"A",25,24.59,0
+"Dunlap","Wendall","English class","Disruptive behavior",2,0,"A",43,42.95,0
+"Dunlap","Wendall","English class","Disruptive behavior",3,0,"A",27,26.89,0
+"Dunlap","Wendall","English class","Disruptive behavior",4,0,"A",13,13.44,0
+"Dunlap","Wendall","English class","Disruptive behavior",5,0,"A",43,42.95,0
+"Dunlap","Wendall","English class","Disruptive behavior",6,0,"A",24,24.59,0
+"Dunlap","Wendall","English class","Disruptive behavior",7,1,"B",0,0,0
+"Dunlap","Wendall","English class","Disruptive behavior",8,1,"B",2,1.97,0
+"Dunlap","Wendall","English class","Disruptive behavior",9,1,"B",0,0,0
+"Dunlap","Wendall","English class","Disruptive behavior",10,1,"B",0,0,0
+"Dunlap","Wendall","English class","Disruptive behavior",11,0,"C",19,18.03,0
+"Dunlap","Wendall","English class","Disruptive behavior",12,0,"C",9,8.52,0
+"Dunlap","Wendall","English class","Disruptive behavior",13,0,"C",19,18.03,0
+"Dunlap","Wendall","English class","Disruptive behavior",14,0,"C",37,35.74,0
+"Dunlap","Wendall","English class","Disruptive behavior",15,1,"D",12,11.48,0
+"Dunlap","Wendall","English class","Disruptive behavior",16,1,"D",0,0,0
+"Dunlap","Wendall","English class","Disruptive behavior",17,1,"D",2,1.97,0
+"Dunlap","Wendall","English class","Disruptive behavior",18,1,"D",13,13.44,0
+"Dunlap","Wendall","English class","Disruptive behavior",19,1,"D",7,6.56,0
+"Dunlap","Wendall","English class","Disruptive behavior",20,1,"D",22,21.64,0
+"Dunlap","Wendall","English class","Disruptive behavior",21,1,"D",10,9.51,0
+"Dyer","George","NA","Problem behavior",1,0,"A",36,34.69,0
+"Dyer","George","NA","Problem behavior",2,0,"A",65,63.14,0
+"Dyer","George","NA","Problem behavior",3,0,"A",54,53.57,0
+"Dyer","George","NA","Problem behavior",4,0,"A",40,40,0
+"Dyer","George","NA","Problem behavior",5,0,"A",29,20,0
+"Dyer","George","NA","Problem behavior",6,0,"A",0,0,0
+"Dyer","George","NA","Problem behavior",7,0,"A",25,24.46,0
+"Dyer","George","NA","Problem behavior",8,0,"A",25,24.46,0
+"Dyer","George","NA","Problem behavior",9,0,"A",65,63.14,0
+"Dyer","George","NA","Problem behavior",10,1,"B",15,15.09,0
+"Dyer","George","NA","Problem behavior",11,1,"B",0,0,0
+"Dyer","George","NA","Problem behavior",12,1,"B",35,34.69,0
+"Dyer","George","NA","Problem behavior",13,1,"B",10,10.31,0
+"Dyer","George","NA","Problem behavior",14,1,"B",20,20,0
+"Dyer","George","NA","Problem behavior",15,0,"C",48,47.56,0
+"Dyer","George","NA","Problem behavior",16,0,"C",43,42.57,0
+"Dyer","George","NA","Problem behavior",17,0,"C",48,47.56,0
+"Dyer","George","NA","Problem behavior",18,0,"C",15,15.09,0
+"Dyer","George","NA","Problem behavior",19,0,"C",48,47.56,0
+"Dyer","George","NA","Problem behavior",20,0,"C",35,34.69,0
+"Dyer","George","NA","Problem behavior",21,0,"C",35,34.69,0
+"Dyer","George","NA","Problem behavior",22,0,"C",43,42.57,0
+"Dyer","George","NA","Problem behavior",23,1,"D",5,4.42,0
+"Dyer","George","NA","Problem behavior",24,1,"D",20,20,0
+"Dyer","George","NA","Problem behavior",25,1,"D",9,10.31,0
+"Dyer","George","NA","Problem behavior",26,1,"D",5,4.42,0
+"Dyer","George","NA","Problem behavior",27,1,"D",16,15.09,0
+"Dyer","George","NA","Problem behavior",28,1,"D",5,4.42,0
+"Dyer","Lori","NA","Problem behavior",1,1,"A",35,36,0
+"Dyer","Lori","NA","Problem behavior",2,1,"A",63,63.79,0
+"Dyer","Lori","NA","Problem behavior",3,1,"A",36,36.95,0
+"Dyer","Lori","NA","Problem behavior",4,1,"A",50,50.53,0
+"Dyer","Lori","NA","Problem behavior",5,1,"A",57,58.42,0
+"Dyer","Lori","NA","Problem behavior",6,1,"A",25,25.58,0
+"Dyer","Lori","NA","Problem behavior",7,0,"B",86,87.16,0
+"Dyer","Lori","NA","Problem behavior",8,0,"B",77,78.63,0
+"Dyer","Lori","NA","Problem behavior",9,0,"B",57,58.42,0
+"Dyer","Lori","NA","Problem behavior",10,0,"B",70,70.74,0
+"Dyer","Lori","NA","Problem behavior",11,0,"B",47,48,0
+"Dyer","Lori","NA","Problem behavior",12,0,"B",88,89.68,0
+"Dyer","Lori","NA","Problem behavior",13,1,"C",21,21.47,0
+"Dyer","Lori","NA","Problem behavior",14,1,"C",33,33.79,0
+"Dyer","Lori","NA","Problem behavior",15,1,"C",57,58.42,0
+"Dyer","Lori","NA","Problem behavior",16,1,"C",35,36,0
+"Dyer","Lori","NA","Problem behavior",17,1,"C",25,25.58,0
+"Dyer","Lori","NA","Problem behavior",18,0,"D",50,50.53,0
+"Dyer","Lori","NA","Problem behavior",19,0,"D",70,70.74,0
+"Dyer","Lori","NA","Problem behavior",20,0,"D",77,78.63,0
+"Dyer","Lori","NA","Problem behavior",21,0,"D",40,40,0
+"Dyer","Lori","NA","Problem behavior",22,0,"D",41,41.37,0
+"Dyer","Lori","NA","Problem behavior",23,0,"D",44,44.21,0
+"Dyer","Lori","NA","Problem behavior",24,0,"D",67,68.53,0
+"Dyer","Lori","NA","Problem behavior",25,0,"D",53,53.37,0
+"Dyer","Lori","NA","Problem behavior",26,1,"E",20,20,0
+"Dyer","Lori","NA","Problem behavior",27,1,"E",28,28.42,0
+"Dyer","Lori","NA","Problem behavior",28,1,"E",46,47.37,0
+"Dyer","Lori","NA","Problem behavior",29,1,"E",26,25.58,0
+"Dyer","Lori","NA","Problem behavior",30,1,"E",37,37.89,0
+"Dyer","Lori","NA","Problem behavior",31,1,"E",39,40,0
+"Dyer","Mary","NA","Problem behavior",1,1,"A",71,69.52,0
+"Dyer","Mary","NA","Problem behavior",2,1,"A",50,49.09,0
+"Dyer","Mary","NA","Problem behavior",3,1,"A",5,5,0
+"Dyer","Mary","NA","Problem behavior",4,1,"A",40,40,0
+"Dyer","Mary","NA","Problem behavior",5,1,"A",40,40,0
+"Dyer","Mary","NA","Problem behavior",6,1,"A",5,5,0
+"Dyer","Mary","NA","Problem behavior",7,0,"B",71,69.52,0
+"Dyer","Mary","NA","Problem behavior",8,0,"B",89,89.66,0
+"Dyer","Mary","NA","Problem behavior",9,0,"B",76,74.68,0
+"Dyer","Mary","NA","Problem behavior",10,1,"C",20,20,0
+"Dyer","Mary","NA","Problem behavior",11,1,"C",16,16.18,0
+"Dyer","Mary","NA","Problem behavior",12,1,"C",0,0,0
+"Frea","Tim","Home living","Disruptive behavior",1,0,"A",1,1,1
+"Frea","Tim","Home living","Disruptive behavior",2,0,"A",2,2,1
+"Frea","Tim","Home living","Disruptive behavior",3,0,"A",4,4,1
+"Frea","Tim","Home living","Disruptive behavior",4,0,"A",6,6,1
+"Frea","Tim","Home living","Disruptive behavior",5,0,"A",3,3,1
+"Frea","Tim","Home living","Disruptive behavior",6,0,"A",10,10,1
+"Frea","Tim","Home living","Disruptive behavior",7,0,"A",2,2,1
+"Frea","Tim","Home living","Disruptive behavior",8,0,"A",4,4,1
+"Frea","Tim","Home living","Disruptive behavior",9,0,"A",0,0,1
+"Frea","Tim","Home living","Disruptive behavior",10,0,"A",4,4,1
+"Frea","Tim","Home living","Disruptive behavior",11,0,"A",7,7,1
+"Frea","Tim","Home living","Disruptive behavior",12,0,"A",1,1,1
+"Frea","Tim","Home living","Disruptive behavior",13,0,"A",1,1,1
+"Frea","Tim","Home living","Disruptive behavior",14,0,"A",0,0,1
+"Frea","Tim","Home living","Disruptive behavior",15,0,"A",4,4,1
+"Frea","Tim","Home living","Disruptive behavior",16,0,"A",12,12,1
+"Frea","Tim","Home living","Disruptive behavior",17,0,"A",3,3,1
+"Frea","Tim","Home living","Disruptive behavior",18,0,"A",4,4,1
+"Frea","Tim","Home living","Disruptive behavior",19,0,"A",2,2,1
+"Frea","Tim","Home living","Disruptive behavior",20,0,"A",4,4,1
+"Frea","Tim","Home living","Disruptive behavior",21,0,"A",7,8,1
+"Frea","Tim","Home living","Disruptive behavior",22,1,"B",1,1,1
+"Frea","Tim","Home living","Disruptive behavior",23,1,"B",1,1,1
+"Frea","Tim","Home living","Disruptive behavior",24,1,"B",0,0,1
+"Frea","Tim","Home living","Disruptive behavior",25,1,"B",0,0,1
+"Frea","Tim","Home living","Disruptive behavior",26,1,"B",0,0,1
+"Frea","Tim","Home living","Disruptive behavior",27,1,"B",2,2,1
+"Frea","Tim","Home living","Disruptive behavior",28,1,"B",0,0,1
+"Frea","Tim","Home living","Disruptive behavior",29,1,"B",0,0,1
+"Frea","Tim","Home living","Disruptive behavior",30,1,"B",0,0,1
+"Frea","Tim","Home living","Disruptive behavior",31,1,"B",0,0,1
+"Frea","Tim","Home living","Disruptive behavior",32,1,"B",0,0,1
+"Frea","Tim","Home living","Disruptive behavior",33,1,"B",0,0,1
+"Frea","Tim","Home living","Disruptive behavior",34,1,"B",0,0,1
+"Frea","Tim","Home living","Disruptive behavior",35,1,"B",0,0,1
+"Frea","Tim","Home living","Disruptive behavior",36,1,"B",0,0,1
+"Frea","Tim","Home living","Disruptive behavior",37,1,"B",0,0,1
+"Frea","Tim","Home living","Disruptive behavior",38,1,"B",0,0,1
+"Frea","Tim","Home living","Disruptive behavior",39,1,"B",0,0,1
+"Frea","Tim","Home living","Disruptive behavior",40,1,"B",0,0,1
+"Frea","Tim","Manipulatives","Disruptive behavior",1,0,"A",3,3,1
+"Frea","Tim","Manipulatives","Disruptive behavior",2,0,"A",0,0,1
+"Frea","Tim","Manipulatives","Disruptive behavior",3,0,"A",5,5,1
+"Frea","Tim","Manipulatives","Disruptive behavior",4,0,"A",14,14,1
+"Frea","Tim","Manipulatives","Disruptive behavior",5,0,"A",17,17,1
+"Frea","Tim","Manipulatives","Disruptive behavior",6,0,"A",6,6,1
+"Frea","Tim","Manipulatives","Disruptive behavior",7,0,"A",2,2,1
+"Frea","Tim","Manipulatives","Disruptive behavior",8,0,"A",3,3,1
+"Frea","Tim","Manipulatives","Disruptive behavior",9,0,"A",3,3,1
+"Frea","Tim","Manipulatives","Disruptive behavior",10,0,"A",7,7,1
+"Frea","Tim","Manipulatives","Disruptive behavior",11,0,"A",6,6,1
+"Frea","Tim","Manipulatives","Disruptive behavior",12,0,"A",8,8,1
+"Frea","Tim","Manipulatives","Disruptive behavior",13,0,"A",5,5,1
+"Frea","Tim","Manipulatives","Disruptive behavior",14,0,"A",2,2,1
+"Frea","Tim","Manipulatives","Disruptive behavior",15,0,"A",0,0,1
+"Frea","Tim","Manipulatives","Disruptive behavior",16,0,"A",8,8,1
+"Frea","Tim","Manipulatives","Disruptive behavior",17,0,"A",5,5,1
+"Frea","Tim","Manipulatives","Disruptive behavior",18,0,"A",1,1,1
+"Frea","Tim","Manipulatives","Disruptive behavior",19,0,"A",1,1,1
+"Frea","Tim","Manipulatives","Disruptive behavior",20,0,"A",12,12,1
+"Frea","Tim","Manipulatives","Disruptive behavior",21,0,"A",9,9,1
+"Frea","Tim","Manipulatives","Disruptive behavior",22,0,"A",1,1,1
+"Frea","Tim","Manipulatives","Disruptive behavior",23,0,"A",3,3,1
+"Frea","Tim","Manipulatives","Disruptive behavior",24,0,"A",5,5,1
+"Frea","Tim","Manipulatives","Disruptive behavior",25,0,"A",9,9,1
+"Frea","Tim","Manipulatives","Disruptive behavior",26,1,"B",0,0,1
+"Frea","Tim","Manipulatives","Disruptive behavior",27,1,"B",1,1,1
+"Frea","Tim","Manipulatives","Disruptive behavior",28,1,"B",1,1,1
+"Frea","Tim","Manipulatives","Disruptive behavior",29,1,"B",0,0,1
+"Frea","Tim","Manipulatives","Disruptive behavior",30,1,"B",0,0,1
+"Frea","Tim","Manipulatives","Disruptive behavior",31,1,"B",0,0,1
+"Frea","Tim","Manipulatives","Disruptive behavior",32,1,"B",0,0,1
+"Frea","Tim","Manipulatives","Disruptive behavior",33,1,"B",0,0,1
+"Frea","Tim","Manipulatives","Disruptive behavior",34,1,"B",0,0,1
+"Frea","Tim","Manipulatives","Disruptive behavior",35,1,"B",0,0,1
+"Frea","Tim","Manipulatives","Disruptive behavior",36,1,"B",0,0,1
+"Frea","Tim","Manipulatives","Disruptive behavior",37,1,"B",0,0,1
+"Frea","Tim","Manipulatives","Disruptive behavior",38,1,"B",0,0,1
+"Frea","Tim","Manipulatives","Disruptive behavior",39,1,"B",0,0,1
+"Frea","Tim","Manipulatives","Disruptive behavior",40,1,"B",0,0,1
+"Jolivette","Bruce","Math class","Disruptive behavior",1,1,"A",0,0,0
+"Jolivette","Bruce","Math class","Disruptive behavior",2,1,"A",1,1.55,0
+"Jolivette","Bruce","Math class","Disruptive behavior",3,1,"A",8,7.2,0
+"Jolivette","Bruce","Math class","Disruptive behavior",4,1,"A",18,19.93,0
+"Jolivette","Bruce","Math class","Disruptive behavior",5,1,"A",0,0,0
+"Jolivette","Bruce","Math class","Disruptive behavior",6,1,"A",0,0,0
+"Jolivette","Bruce","Math class","Disruptive behavior",7,1,"A",0,0,0
+"Jolivette","Bruce","Math class","Disruptive behavior",8,1,"A",0,0,0
+"Jolivette","Bruce","Math class","Disruptive behavior",9,1,"A",1,0,0
+"Jolivette","Bruce","Math class","Disruptive behavior",10,1,"A",0,0,0
+"Jolivette","Bruce","Math class","Disruptive behavior",11,1,"A",0,0,0
+"Jolivette","Bruce","Math class","Disruptive behavior",12,1,"A",0,0,0
+"Jolivette","Bruce","Math class","Disruptive behavior",13,0,"B",0,0,0
+"Jolivette","Bruce","Math class","Disruptive behavior",14,0,"B",10,11.76,0
+"Jolivette","Bruce","Math class","Disruptive behavior",15,0,"B",0,0,0
+"Jolivette","Bruce","Math class","Disruptive behavior",16,0,"B",3,4.4,0
+"Jolivette","Bruce","Math class","Disruptive behavior",17,1,"C",0,0,0
+"Jolivette","Bruce","Math class","Disruptive behavior",18,1,"C",0,0,0
+"Jolivette","Bruce","Math class","Disruptive behavior",19,1,"C",0,0,0
+"Jolivette","Bruce","Math class","Disruptive behavior",20,1,"C",0,0,0
+"Jolivette","Bruce","Math class","Disruptive behavior",21,1,"C",0,0,0
+"Jolivette","Bruce","Math class","Disruptive behavior",22,1,"C",0,0,0
+"Jolivette","Bruce","Math class","Disruptive behavior",23,1,"C",0,0,0
+"Jolivette","Bruce","Math class","Disruptive behavior",24,1,"C",0,0,0
+"Jolivette","John","Math class","Disruptive behavior",1,1,"A",0,0,0
+"Jolivette","John","Math class","Disruptive behavior",2,1,"A",4,4.57,0
+"Jolivette","John","Math class","Disruptive behavior",3,1,"A",22,21.75,0
+"Jolivette","John","Math class","Disruptive behavior",4,1,"A",0,0,0
+"Jolivette","John","Math class","Disruptive behavior",5,1,"A",6,5.72,0
+"Jolivette","John","Math class","Disruptive behavior",6,1,"A",0,0,0
+"Jolivette","John","Math class","Disruptive behavior",7,1,"A",0,0,0
+"Jolivette","John","Math class","Disruptive behavior",8,1,"A",0,0,0
+"Jolivette","John","Math class","Disruptive behavior",9,1,"A",0,3.53,0
+"Jolivette","John","Math class","Disruptive behavior",10,0,"B",14,15.52,0
+"Jolivette","John","Math class","Disruptive behavior",11,0,"B",0,0,0
+"Jolivette","John","Math class","Disruptive behavior",12,0,"B",9,9.71,0
+"Jolivette","John","Math class","Disruptive behavior",13,1,"C",0,0,0
+"Jolivette","John","Math class","Disruptive behavior",14,1,"C",0,0,0
+"Jolivette","John","Math class","Disruptive behavior",15,1,"C",0,0,0
+"Jolivette","John","Math class","Disruptive behavior",16,1,"C",0,0,0
+"Jolivette","John","Math class","Disruptive behavior",17,1,"C",0,0,0
+"Jolivette","John","Math class","Disruptive behavior",18,1,"C",4,3.66,0
+"Jolivette","John","Math class","Disruptive behavior",19,1,"C",0,0,0
+"Jolivette","John","Math class","Disruptive behavior",20,1,"C",0,0,0
+"Jolivette","John","Math class","Disruptive behavior",21,1,"C",0,0,0
+"Jolivette","John","Math class","Disruptive behavior",22,1,"C",0,0,0
+"Jolivette","John","Math class","Disruptive behavior",23,1,"C",0,0,0
+"Jolivette","Nicky","Math class","Disruptive behavior",1,1,"A",8,8.1,0
+"Jolivette","Nicky","Math class","Disruptive behavior",2,1,"A",4,4.12,0
+"Jolivette","Nicky","Math class","Disruptive behavior",3,1,"A",1,0,0
+"Jolivette","Nicky","Math class","Disruptive behavior",4,1,"A",18,19.45,0
+"Jolivette","Nicky","Math class","Disruptive behavior",5,1,"A",0,0,0
+"Jolivette","Nicky","Math class","Disruptive behavior",6,0,"B",3,4.63,0
+"Jolivette","Nicky","Math class","Disruptive behavior",7,0,"B",1,0,0
+"Jolivette","Nicky","Math class","Disruptive behavior",8,0,"B",3,3.9,0
+"Jolivette","Nicky","Math class","Disruptive behavior",9,0,"B",0,0,0
+"Jolivette","Nicky","Math class","Disruptive behavior",10,0,"B",9,10.6,0
+"Jolivette","Nicky","Math class","Disruptive behavior",11,0,"B",0,0,0
+"Jolivette","Nicky","Math class","Disruptive behavior",12,1,"C",0,0,0
+"Jolivette","Nicky","Math class","Disruptive behavior",13,1,"C",0,0,0
+"Jolivette","Nicky","Math class","Disruptive behavior",14,1,"C",0,0,0
+"Jolivette","Nicky","Math class","Disruptive behavior",15,1,"C",0,0,0
+"Jolivette","Nicky","Math class","Disruptive behavior",16,1,"C",0,0,0
+"Jolivette","Nicky","Math class","Disruptive behavior",17,1,"C",0,0,0
+"Jolivette","Nicky","Math class","Disruptive behavior",18,1,"C",0,0,0
+"Jolivette","Nicky","Math class","Disruptive behavior",19,1,"C",0,0,0
+"Jolivette","Nicky","Math class","Disruptive behavior",20,1,"C",0,0,0
+"Jolivette","Nicky","Math class","Disruptive behavior",21,1,"C",0,0,0
+"Kern","Danny","NA","Problem behavior",1,0,"A",380,381.41,0
+"Kern","Danny","NA","Problem behavior",2,0,"A",440,441.64,0
+"Kern","Danny","NA","Problem behavior",3,0,"A",285,285.5,0
+"Kern","Danny","NA","Problem behavior",4,0,"A",580,582.16,0
+"Kern","Danny","NA","Problem behavior",5,1,"B",0,0,0
+"Kern","Danny","NA","Problem behavior",6,1,"B",0,0,0
+"Kern","Danny","NA","Problem behavior",7,1,"B",0,0,0
+"Kern","Danny","NA","Problem behavior",8,0,"C",437,441.64,0
+"Kern","Danny","NA","Problem behavior",9,0,"C",570,571,0
+"Kern","Danny","NA","Problem behavior",10,0,"C",565,564.31,0
+"Kern","Danny","NA","Problem behavior",11,1,"D",137,138.29,0
+"Kern","Danny","NA","Problem behavior",12,1,"D",0,0,0
+"Kern","Danny","NA","Problem behavior",13,1,"D",15,11.15,0
+"Kern","Danny","NA","Problem behavior",14,1,"D",0,0,0
+"Kern","Shannon","NA","Problem behavior",1,0,"A",58,59.33,0
+"Kern","Shannon","NA","Problem behavior",2,0,"A",32,32.67,0
+"Kern","Shannon","NA","Problem behavior",3,0,"A",10,10,0
+"Kern","Shannon","NA","Problem behavior",4,0,"A",65,65.33,0
+"Kern","Shannon","NA","Problem behavior",5,0,"A",23,23.33,0
+"Kern","Shannon","NA","Problem behavior",6,0,"A",25,25.33,0
+"Kern","Shannon","NA","Problem behavior",7,1,"B",1,1,0
+"Kern","Shannon","NA","Problem behavior",8,1,"B",1,1,0
+"Kern","Shannon","NA","Problem behavior",9,1,"B",2,2.67,0
+"Kern","Shannon","NA","Problem behavior",10,1,"B",0,0,0
+"Kern","Shannon","NA","Problem behavior",11,0,"C",12,12.33,0
+"Kern","Shannon","NA","Problem behavior",12,0,"C",23,23.33,0
+"Kern","Shannon","NA","Problem behavior",13,0,"C",6,5.33,0
+"Kern","Shannon","NA","Problem behavior",14,0,"C",14,14.67,0
+"Kern","Shannon","NA","Problem behavior",15,1,"D",2,2.67,0
+"Kern","Shannon","NA","Problem behavior",16,1,"D",0,0,0
+"Kern","Shannon","NA","Problem behavior",17,1,"D",3,3.33,0
+"Kern","Shannon","NA","Problem behavior",18,1,"D",1,1,0
+"Kern","Shannon","NA","Problem behavior",19,1,"D",0,0,0
+"Kern","Shannon","NA","Problem behavior",20,0,"E",0,0,0
+"Kern","Shannon","NA","Problem behavior",21,0,"E",10,10.33,0
+"Kern","Shannon","NA","Problem behavior",22,0,"E",12,12.67,0
+"Kern","Shannon","NA","Problem behavior",23,1,"F",6,6.33,0
+"Kern","Shannon","NA","Problem behavior",24,1,"F",0,1,0
+"Kern","Shannon","NA","Problem behavior",25,1,"F",1,2.67,0
+"Kern","Shannon","NA","Problem behavior",26,1,"F",0,1,0
+"Kern","Shannon","NA","Problem behavior",27,1,"F",0,1,0
+"Moes","Carl","NA","Disruptive behavior",1,1,"A",37,36.1,0
+"Moes","Carl","NA","Disruptive behavior",2,1,"A",3,3.95,0
+"Moes","Carl","NA","Disruptive behavior",3,1,"A",0,0,0
+"Moes","Carl","NA","Disruptive behavior",4,1,"A",0,0,0
+"Moes","Carl","NA","Disruptive behavior",5,1,"A",0,0,0
+"Moes","Carl","NA","Disruptive behavior",6,0,"B",12,11.88,0
+"Moes","Carl","NA","Disruptive behavior",7,0,"B",11,9.6,0
+"Moes","Carl","NA","Disruptive behavior",8,0,"B",10,8.37,0
+"Moes","Carl","NA","Disruptive behavior",9,0,"B",14,13.55,0
+"Moes","Carl","NA","Disruptive behavior",10,0,"B",14,13.55,0
+"Moes","Carl","NA","Disruptive behavior",11,1,"C",1,0.45,0
+"Moes","Carl","NA","Disruptive behavior",12,1,"C",0,0,0
+"Moes","Carl","NA","Disruptive behavior",13,1,"C",1,0,0
+"Moes","Carl","NA","Disruptive behavior",14,1,"C",1,0,0
+"Moes","Carl","NA","Disruptive behavior",15,1,"C",0,0,0
+"Moes","Carl","NA","Disruptive behavior",16,0,"D",19,16.45,0
+"Moes","Carl","NA","Disruptive behavior",17,0,"D",17,13.4,0
+"Moes","Carl","NA","Disruptive behavior",18,0,"D",19,16.45,0
+"Moes","Carl","NA","Disruptive behavior",19,0,"D",17,13.4,0
+"Moes","Carl","NA","Disruptive behavior",20,0,"D",20,17.21,0
+"Moes","Charles","NA","Disruptive behavior",1,0,"A",20,21.42,0
+"Moes","Charles","NA","Disruptive behavior",2,0,"A",16,16.88,0
+"Moes","Charles","NA","Disruptive behavior",3,0,"A",17,17.07,0
+"Moes","Charles","NA","Disruptive behavior",4,0,"A",16,16.88,0
+"Moes","Charles","NA","Disruptive behavior",5,0,"A",18,17.51,0
+"Moes","Charles","NA","Disruptive behavior",6,1,"B",0,0,0
+"Moes","Charles","NA","Disruptive behavior",7,1,"B",0,0,0
+"Moes","Charles","NA","Disruptive behavior",8,1,"B",0,0,0
+"Moes","Charles","NA","Disruptive behavior",9,1,"B",0,0,0
+"Moes","Charles","NA","Disruptive behavior",10,1,"B",1,0,0
+"Moes","Charles","NA","Disruptive behavior",11,0,"C",80,76.02,0
+"Moes","Charles","NA","Disruptive behavior",12,0,"C",44,42.68,0
+"Moes","Charles","NA","Disruptive behavior",13,0,"C",45,42.87,0
+"Moes","Charles","NA","Disruptive behavior",14,0,"C",48,45.54,0
+"Moes","Charles","NA","Disruptive behavior",15,0,"C",52,50,0
+"Moes","Charles","NA","Disruptive behavior",16,1,"D",10,7.08,0
+"Moes","Charles","NA","Disruptive behavior",17,1,"D",0,0,0
+"Moes","Charles","NA","Disruptive behavior",18,1,"D",7,3.59,0
+"Moes","Charles","NA","Disruptive behavior",19,1,"D",0,0,0
+"Moes","Charles","NA","Disruptive behavior",20,1,"D",1,0,0
+"Moes","Chuck","NA","Disruptive behavior",1,1,"A",0,0,0
+"Moes","Chuck","NA","Disruptive behavior",2,1,"A",0,0,0
+"Moes","Chuck","NA","Disruptive behavior",3,1,"A",32,30,0
+"Moes","Chuck","NA","Disruptive behavior",4,1,"A",0,0,0
+"Moes","Chuck","NA","Disruptive behavior",5,1,"A",0,0,0
+"Moes","Chuck","NA","Disruptive behavior",6,0,"B",10,10,0
+"Moes","Chuck","NA","Disruptive behavior",7,0,"B",0,0,0
+"Moes","Chuck","NA","Disruptive behavior",8,0,"B",24,23.68,0
+"Moes","Chuck","NA","Disruptive behavior",9,0,"B",29,27.79,0
+"Moes","Chuck","NA","Disruptive behavior",10,0,"B",34,33.97,0
+"Moes","Chuck","NA","Disruptive behavior",11,1,"C",14,15.44,0
+"Moes","Chuck","NA","Disruptive behavior",12,1,"C",34,33.97,0
+"Moes","Chuck","NA","Disruptive behavior",13,1,"C",11,10,0
+"Moes","Chuck","NA","Disruptive behavior",14,1,"C",0,0,0
+"Moes","Chuck","NA","Disruptive behavior",15,1,"C",0,0,0
+"Moes","Chuck","NA","Disruptive behavior",16,0,"D",14,13.38,0
+"Moes","Chuck","NA","Disruptive behavior",17,0,"D",37,35,0
+"Moes","Chuck","NA","Disruptive behavior",18,0,"D",34,33.97,0
+"Moes","Chuck","NA","Disruptive behavior",19,0,"D",48,48.38,0
+"Moes","Chuck","NA","Disruptive behavior",20,0,"D",44,45.29,0
+"Moes","James","NA","Disruptive behavior",1,0,"A",50,50.98,0
+"Moes","James","NA","Disruptive behavior",2,0,"A",51,52.68,0
+"Moes","James","NA","Disruptive behavior",3,0,"A",26,27.56,0
+"Moes","James","NA","Disruptive behavior",4,0,"A",46,45.01,0
+"Moes","James","NA","Disruptive behavior",5,0,"A",44,43.73,0
+"Moes","James","NA","Disruptive behavior",6,1,"B",1,0,0
+"Moes","James","NA","Disruptive behavior",7,1,"B",1,0,0
+"Moes","James","NA","Disruptive behavior",8,1,"B",0,0,0
+"Moes","James","NA","Disruptive behavior",9,1,"B",1,0,0
+"Moes","James","NA","Disruptive behavior",10,1,"B",1,0,0
+"Moes","James","NA","Disruptive behavior",11,0,"C",35,32.85,0
+"Moes","James","NA","Disruptive behavior",12,0,"C",40,40,0
+"Moes","James","NA","Disruptive behavior",13,0,"C",54,52.92,0
+"Moes","James","NA","Disruptive behavior",14,0,"C",69,70,0
+"Moes","James","NA","Disruptive behavior",15,0,"C",84,83.22,0
+"Moes","James","NA","Disruptive behavior",16,1,"D",29,28.16,0
+"Moes","James","NA","Disruptive behavior",17,1,"D",0,0,0
+"Moes","James","NA","Disruptive behavior",18,1,"D",0,0,0
+"Moes","James","NA","Disruptive behavior",19,1,"D",6,1.29,0
+"Moes","James","NA","Disruptive behavior",20,1,"D",0,0,0
+"Powell","Evan","NA","Undesirable behavior",1,0,"A",77,77.79,0
+"Powell","Evan","NA","Undesirable behavior",2,0,"A",33,32.69,0
+"Powell","Evan","NA","Undesirable behavior",3,0,"A",80,80,0
+"Powell","Evan","NA","Undesirable behavior",4,0,"A",38,38.07,0
+"Powell","Evan","NA","Undesirable behavior",5,0,"A",57,57.93,0
+"Powell","Evan","NA","Undesirable behavior",6,0,"A",38,38.07,0
+"Powell","Evan","NA","Undesirable behavior",7,0,"A",87,87.31,0
+"Powell","Evan","NA","Undesirable behavior",8,0,"A",72,72,0
+"Powell","Evan","NA","Undesirable behavior",9,1,"B",23,22.76,0
+"Powell","Evan","NA","Undesirable behavior",10,1,"B",25,25.24,0
+"Powell","Evan","NA","Undesirable behavior",11,1,"B",35,35.17,0
+"Powell","Evan","NA","Undesirable behavior",12,1,"B",27,27.72,0
+"Powell","Evan","NA","Undesirable behavior",13,1,"B",17,17.38,0
+"Powell","Evan","NA","Undesirable behavior",14,0,"C",64,64.14,0
+"Powell","Evan","NA","Undesirable behavior",15,0,"C",40,40,0
+"Powell","Evan","NA","Undesirable behavior",16,0,"C",84,84,0
+"Powell","Evan","NA","Undesirable behavior",17,1,"D",19,20,0
+"Powell","Evan","NA","Undesirable behavior",18,1,"D",10,10.34,0
+"Powell","Evan","NA","Undesirable behavior",19,1,"D",22,22.76,0
+"Powell","Evan","NA","Undesirable behavior",20,1,"D",17,17.38,0
+"Romaniuk","Brooke","NA","Problem behavior",1,0,"A",25,25.35,0
+"Romaniuk","Brooke","NA","Problem behavior",2,0,"A",72,73.77,0
+"Romaniuk","Brooke","NA","Problem behavior",3,0,"A",30,30.25,0
+"Romaniuk","Brooke","NA","Problem behavior",4,0,"A",40,38.3,0
+"Romaniuk","Brooke","NA","Problem behavior",5,0,"A",26,25.42,0
+"Romaniuk","Brooke","NA","Problem behavior",6,0,"A",70,71.61,0
+"Romaniuk","Brooke","NA","Problem behavior",7,0,"A",85,84.91,0
+"Romaniuk","Brooke","NA","Problem behavior",8,0,"A",86,86.22,0
+"Romaniuk","Brooke","NA","Problem behavior",9,0,"A",78,76.34,0
+"Romaniuk","Brooke","NA","Problem behavior",10,1,"B",19,19.19,0
+"Romaniuk","Brooke","NA","Problem behavior",11,1,"B",20,19.36,0
+"Romaniuk","Brooke","NA","Problem behavior",12,1,"B",9,7.08,0
+"Romaniuk","Brooke","NA","Problem behavior",13,1,"B",2,0,0
+"Romaniuk","Brooke","NA","Problem behavior",14,1,"B",9,7.49,0
+"Romaniuk","Brooke","NA","Problem behavior",15,0,"C",99,97.03,0
+"Romaniuk","Brooke","NA","Problem behavior",16,0,"C",100,99.1,0
+"Romaniuk","Brooke","NA","Problem behavior",17,0,"C",78,77.25,0
+"Romaniuk","Brooke","NA","Problem behavior",18,0,"C",100,98.76,0
+"Romaniuk","Brooke","NA","Problem behavior",19,0,"C",99,97.09,0
+"Romaniuk","Brooke","NA","Problem behavior",20,1,"D",10,7.97,0
+"Romaniuk","Brooke","NA","Problem behavior",21,1,"D",2,0.9,0
+"Romaniuk","Brooke","NA","Problem behavior",22,1,"D",3,1,0
+"Romaniuk","Brooke","NA","Problem behavior",23,1,"D",6,2.97,0
+"Romaniuk","Brooke","NA","Problem behavior",24,1,"D",2,1,0
+"Romaniuk","Brooke","NA","Problem behavior",25,1,"D",0,0,0
+"Romaniuk","Christy","NA","Problem behavior",1,0,"A",22,21.64,0
+"Romaniuk","Christy","NA","Problem behavior",2,0,"A",63,62.76,0
+"Romaniuk","Christy","NA","Problem behavior",3,0,"A",54,54.15,0
+"Romaniuk","Christy","NA","Problem behavior",4,0,"A",75,75.81,0
+"Romaniuk","Christy","NA","Problem behavior",5,0,"A",75,75.81,0
+"Romaniuk","Christy","NA","Problem behavior",6,0,"A",54,54.28,0
+"Romaniuk","Christy","NA","Problem behavior",7,0,"A",82,79.55,0
+"Romaniuk","Christy","NA","Problem behavior",8,0,"A",72,73.1,0
+"Romaniuk","Christy","NA","Problem behavior",9,0,"A",78,77.46,0
+"Romaniuk","Christy","NA","Problem behavior",10,1,"B",70,71.02,0
+"Romaniuk","Christy","NA","Problem behavior",11,1,"B",89,89.08,0
+"Romaniuk","Christy","NA","Problem behavior",12,1,"B",95,94.89,0
+"Romaniuk","Christy","NA","Problem behavior",13,1,"B",91,90.6,0
+"Romaniuk","Christy","NA","Problem behavior",14,0,"C",58,57.49,0
+"Romaniuk","Christy","NA","Problem behavior",15,0,"C",91,91.41,0
+"Romaniuk","Christy","NA","Problem behavior",16,0,"C",86,87.12,0
+"Romaniuk","Christy","NA","Problem behavior",17,0,"C",91,91.49,0
+"Romaniuk","Christy","NA","Problem behavior",18,0,"C",66,67.03,0
+"Romaniuk","Christy","NA","Problem behavior",19,0,"C",90,90.14,0
+"Romaniuk","Christy","NA","Problem behavior",20,1,"D",96,95.94,0
+"Romaniuk","Christy","NA","Problem behavior",21,1,"D",90,90.94,0
+"Romaniuk","Christy","NA","Problem behavior",22,1,"D",65,67.2,0
+"Romaniuk","Christy","NA","Problem behavior",23,1,"D",96,96.07,0
+"Romaniuk","Christy","NA","Problem behavior",24,1,"D",93,93.22,0
+"Romaniuk","Christy","NA","Problem behavior",25,1,"D",95,96.15,0
+"Romaniuk","Gary","NA","Problem behavior",1,0,"A",24,24.62,0
+"Romaniuk","Gary","NA","Problem behavior",2,0,"A",66,67.81,0
+"Romaniuk","Gary","NA","Problem behavior",3,0,"A",36,37.07,0
+"Romaniuk","Gary","NA","Problem behavior",4,0,"A",40,41.48,0
+"Romaniuk","Gary","NA","Problem behavior",5,0,"A",70,71.29,0
+"Romaniuk","Gary","NA","Problem behavior",6,0,"A",66,67.47,0
+"Romaniuk","Gary","NA","Problem behavior",7,0,"A",86,85.32,0
+"Romaniuk","Gary","NA","Problem behavior",8,0,"A",69,69.53,0
+"Romaniuk","Gary","NA","Problem behavior",9,0,"A",99,99.35,0
+"Romaniuk","Gary","NA","Problem behavior",10,1,"B",30,30.48,0
+"Romaniuk","Gary","NA","Problem behavior",11,1,"B",52,52.82,0
+"Romaniuk","Gary","NA","Problem behavior",12,1,"B",40,40.03,0
+"Romaniuk","Gary","NA","Problem behavior",13,1,"B",6,4.8,0
+"Romaniuk","Gary","NA","Problem behavior",14,1,"B",16,15.18,0
+"Romaniuk","Gary","NA","Problem behavior",15,1,"B",41,40.52,0
+"Romaniuk","Gary","NA","Problem behavior",16,1,"B",9,9.03,0
+"Romaniuk","Gary","NA","Problem behavior",17,0,"C",88,87.45,0
+"Romaniuk","Gary","NA","Problem behavior",18,0,"C",72,72.4,0
+"Romaniuk","Gary","NA","Problem behavior",19,0,"C",79,78.31,0
+"Romaniuk","Gary","NA","Problem behavior",20,0,"C",98,96.91,0
+"Romaniuk","Gary","NA","Problem behavior",21,0,"C",63,63.17,0
+"Romaniuk","Gary","NA","Problem behavior",22,0,"C",90,89.26,0
+"Romaniuk","Gary","NA","Problem behavior",23,1,"D",0,0,0
+"Romaniuk","Gary","NA","Problem behavior",24,1,"D",41,40,0
+"Romaniuk","Gary","NA","Problem behavior",25,1,"D",23,22.45,0
+"Romaniuk","Gary","NA","Problem behavior",26,1,"D",8,6.67,0
+"Romaniuk","Gary","NA","Problem behavior",27,1,"D",85,82.84,0
+"Romaniuk","Gary","NA","Problem behavior",28,1,"D",27,25.01,0
+"Romaniuk","Gary","NA","Problem behavior",29,1,"D",4,1.92,0
+"Romaniuk","Gary","NA","Problem behavior",30,1,"D",27,25.01,0
+"Romaniuk","Gary","NA","Problem behavior",31,1,"D",16,14.45,0
+"Romaniuk","Maggie","NA","Problem behavior",1,0,"A",24,26.13,0
+"Romaniuk","Maggie","NA","Problem behavior",2,0,"A",38,36.5,0
+"Romaniuk","Maggie","NA","Problem behavior",3,0,"A",20,20,0
+"Romaniuk","Maggie","NA","Problem behavior",4,0,"A",58,58,0
+"Romaniuk","Maggie","NA","Problem behavior",5,0,"A",83,82.58,0
+"Romaniuk","Maggie","NA","Problem behavior",6,0,"A",74,73.52,0
+"Romaniuk","Maggie","NA","Problem behavior",7,0,"A",71,70.44,0
+"Romaniuk","Maggie","NA","Problem behavior",8,0,"A",76,74.85,0
+"Romaniuk","Maggie","NA","Problem behavior",9,1,"B",21,21.68,0
+"Romaniuk","Maggie","NA","Problem behavior",10,1,"B",35,34.3,0
+"Romaniuk","Maggie","NA","Problem behavior",11,1,"B",29,26.74,0
+"Romaniuk","Maggie","NA","Problem behavior",12,1,"B",32,30.39,0
+"Romaniuk","Maggie","NA","Problem behavior",13,0,"C",44,44.5,0
+"Romaniuk","Maggie","NA","Problem behavior",14,0,"C",56,54.88,0
+"Romaniuk","Maggie","NA","Problem behavior",15,0,"C",81,80,0
+"Romaniuk","Maggie","NA","Problem behavior",16,0,"C",68,66.66,0
+"Romaniuk","Maggie","NA","Problem behavior",17,0,"C",62,61.34,0
+"Romaniuk","Maggie","NA","Problem behavior",18,0,"C",100,97.88,0
+"Romaniuk","Maggie","NA","Problem behavior",19,1,"D",12,10.32,0
+"Romaniuk","Maggie","NA","Problem behavior",20,1,"D",8,5.75,0
+"Romaniuk","Maggie","NA","Problem behavior",21,0,"E",82,79.68,0
+"Romaniuk","Maggie","NA","Problem behavior",22,0,"E",98,96.78,0
+"Romaniuk","Maggie","NA","Problem behavior",23,1,"F",25,24.17,0
+"Romaniuk","Maggie","NA","Problem behavior",24,1,"F",19,16.61,0
+"Romaniuk","Rick","NA","Problem behavior",1,0,"A",21,20.18,0
+"Romaniuk","Rick","NA","Problem behavior",2,0,"A",30,29.55,0
+"Romaniuk","Rick","NA","Problem behavior",3,0,"A",58,57.66,0
+"Romaniuk","Rick","NA","Problem behavior",4,0,"A",55,55.5,0
+"Romaniuk","Rick","NA","Problem behavior",5,0,"A",62,61.98,0
+"Romaniuk","Rick","NA","Problem behavior",6,0,"A",66,67.75,0
+"Romaniuk","Rick","NA","Problem behavior",7,0,"A",42,43.24,0
+"Romaniuk","Rick","NA","Problem behavior",8,0,"A",65,66.31,0
+"Romaniuk","Rick","NA","Problem behavior",9,0,"A",76,76.4,0
+"Romaniuk","Rick","NA","Problem behavior",10,1,"B",80,82.16,0
+"Romaniuk","Rick","NA","Problem behavior",11,1,"B",84,84.32,0
+"Romaniuk","Rick","NA","Problem behavior",12,1,"B",70,72.07,0
+"Romaniuk","Rick","NA","Problem behavior",13,1,"B",64,64.14,0
+"Romaniuk","Rick","NA","Problem behavior",14,1,"B",69,70.63,0
+"Romaniuk","Rick","NA","Problem behavior",15,1,"B",76,77.84,0
+"Romaniuk","Rick","NA","Problem behavior",16,0,"C",98,98.02,0
+"Romaniuk","Rick","NA","Problem behavior",17,0,"C",100,100,0
+"Romaniuk","Rick","NA","Problem behavior",18,0,"C",30,29.55,0
+"Romaniuk","Rick","NA","Problem behavior",19,0,"C",57,57.66,0
+"Romaniuk","Rick","NA","Problem behavior",20,0,"C",91,91.53,0
+"Romaniuk","Rick","NA","Problem behavior",21,0,"C",90,91.5,0
+"Romaniuk","Rick","NA","Problem behavior",22,1,"D",100,100,0
+"Romaniuk","Rick","NA","Problem behavior",23,1,"D",94,95.14,0
+"Romaniuk","Rick","NA","Problem behavior",24,1,"D",46,47.57,0
+"Romaniuk","Rick","NA","Problem behavior",25,1,"D",60,61.26,0
+"Romaniuk","Rick","NA","Problem behavior",26,1,"D",50,51.89,0
+"Romaniuk","Rick","NA","Problem behavior",27,1,"D",38,38.92,0
+"Romaniuk","Rick","NA","Problem behavior",28,1,"D",98,97.3,0
+"Romaniuk","Rick","NA","Problem behavior",29,1,"D",56,55.5,0
+"Romaniuk","Riley","NA","Problem behavior",1,0,"A",17,16.8,0
+"Romaniuk","Riley","NA","Problem behavior",2,0,"A",10.5,10,0
+"Romaniuk","Riley","NA","Problem behavior",3,0,"A",16,16.8,0
+"Romaniuk","Riley","NA","Problem behavior",4,0,"A",19,19.4,0
+"Romaniuk","Riley","NA","Problem behavior",5,0,"A",11.5,12,0
+"Romaniuk","Riley","NA","Problem behavior",6,0,"A",7.5,7.8,0
+"Romaniuk","Riley","NA","Problem behavior",7,0,"A",20.5,20.4,0
+"Romaniuk","Riley","NA","Problem behavior",8,0,"A",11.5,12,0
+"Romaniuk","Riley","NA","Problem behavior",9,0,"A",3,2.8,0
+"Romaniuk","Riley","NA","Problem behavior",10,0,"A",13,12.8,0
+"Romaniuk","Riley","NA","Problem behavior",11,0,"A",21,21,0
+"Romaniuk","Riley","NA","Problem behavior",12,0,"A",14,13.8,0
+"Romaniuk","Riley","NA","Problem behavior",13,0,"A",15,15,0
+"Romaniuk","Riley","NA","Problem behavior",14,0,"A",20.5,20.2,0
+"Romaniuk","Riley","NA","Problem behavior",15,0,"A",17,17.2,0
+"Romaniuk","Riley","NA","Problem behavior",16,1,"B",16,15.8,0
+"Romaniuk","Riley","NA","Problem behavior",17,1,"B",25,24.8,0
+"Romaniuk","Riley","NA","Problem behavior",18,1,"B",15,15,0
+"Romaniuk","Riley","NA","Problem behavior",19,1,"B",15.5,15,0
+"Romaniuk","Riley","NA","Problem behavior",20,1,"B",26,26,0
+"Romaniuk","Riley","NA","Problem behavior",21,1,"B",23,22.8,0
+"Romaniuk","Riley","NA","Problem behavior",22,0,"C",11,10.6,0
+"Romaniuk","Riley","NA","Problem behavior",23,0,"C",16.5,16,0
+"Romaniuk","Riley","NA","Problem behavior",24,0,"C",22,21.2,0
+"Romaniuk","Riley","NA","Problem behavior",25,0,"C",29,28.4,0
+"Romaniuk","Riley","NA","Problem behavior",26,0,"C",16,16,0
+"Romaniuk","Riley","NA","Problem behavior",27,0,"C",10,10,0
+"Romaniuk","Riley","NA","Problem behavior",28,1,"D",14.5,14.6,0
+"Romaniuk","Riley","NA","Problem behavior",29,1,"D",28,27.8,0
+"Romaniuk","Riley","NA","Problem behavior",30,1,"D",20.5,19.8,0
+"Romaniuk","Riley","NA","Problem behavior",31,1,"D",22,22,0
+"Romaniuk","Riley","NA","Problem behavior",32,1,"D",21,21,0
+"Romaniuk","Riley","NA","Problem behavior",33,1,"D",24,24.2,0
+"Seybert","Bob","NA","Disruptive behavior",1,0,"A",12,12.74,0
+"Seybert","Bob","NA","Disruptive behavior",2,0,"A",38,36.11,0
+"Seybert","Bob","NA","Disruptive behavior",3,0,"A",21,20,0
+"Seybert","Bob","NA","Disruptive behavior",4,0,"A",34,32.57,0
+"Seybert","Bob","NA","Disruptive behavior",5,0,"A",62,60,0
+"Seybert","Bob","NA","Disruptive behavior",6,0,"A",43,41.77,0
+"Seybert","Bob","NA","Disruptive behavior",7,0,"A",57,55.93,0
+"Seybert","Bob","NA","Disruptive behavior",8,0,"A",4,4.96,0
+"Seybert","Bob","NA","Disruptive behavior",9,0,"A",46,45.31,0
+"Seybert","Bob","NA","Disruptive behavior",10,0,"A",28,25.49,0
+"Seybert","Bob","NA","Disruptive behavior",11,0,"A",68,63.72,0
+"Seybert","Bob","NA","Disruptive behavior",12,1,"B",26,23.36,0
+"Seybert","Bob","NA","Disruptive behavior",13,1,"B",21,20,0
+"Seybert","Bob","NA","Disruptive behavior",14,1,"B",17,12.74,0
+"Seybert","Bob","NA","Disruptive behavior",15,1,"B",9,9.91,0
+"Seybert","Bob","NA","Disruptive behavior",16,1,"B",17,12.74,0
+"Seybert","Bob","NA","Disruptive behavior",17,1,"B",0,0,0
+"Seybert","Bob","NA","Disruptive behavior",18,0,"C",10,9.91,0
+"Seybert","Bob","NA","Disruptive behavior",19,0,"C",28,24.78,0
+"Seybert","Bob","NA","Disruptive behavior",20,0,"C",6,5.66,0
+"Seybert","Bob","NA","Disruptive behavior",21,0,"C",34,32.57,0
+"Seybert","Bob","NA","Disruptive behavior",22,0,"C",10,8.5,0
+"Seybert","Bob","NA","Disruptive behavior",23,0,"C",0,0,0
+"Seybert","Maria","NA","Problem behavior",1,0,"A",18,18.57,0
+"Seybert","Maria","NA","Problem behavior",2,0,"A",9,9.29,0
+"Seybert","Maria","NA","Problem behavior",3,0,"A",39,40,0
+"Seybert","Maria","NA","Problem behavior",4,0,"A",4,4.29,0
+"Seybert","Maria","NA","Problem behavior",5,0,"A",14,15,0
+"Seybert","Maria","NA","Problem behavior",6,0,"A",4,4.29,0
+"Seybert","Maria","NA","Problem behavior",7,0,"A",28,27.14,0
+"Seybert","Maria","NA","Problem behavior",8,0,"A",2,2.14,0
+"Seybert","Maria","NA","Problem behavior",9,0,"A",14,15,0
+"Seybert","Maria","NA","Problem behavior",10,0,"A",22,20,0
+"Seybert","Maria","NA","Problem behavior",11,0,"A",11,10.71,0
+"Seybert","Maria","NA","Problem behavior",12,0,"A",7,6.43,0
+"Seybert","Maria","NA","Problem behavior",13,0,"A",32,30.71,0
+"Seybert","Maria","NA","Problem behavior",14,0,"A",24,22.86,0
+"Seybert","Maria","NA","Problem behavior",15,0,"A",14,12.86,0
+"Seybert","Maria","NA","Problem behavior",16,0,"A",24,22.86,0
+"Seybert","Maria","NA","Problem behavior",17,1,"B",4,2.14,0
+"Seybert","Maria","NA","Problem behavior",18,1,"B",7,5,0
+"Seybert","Maria","NA","Problem behavior",19,1,"B",2,1.43,0
+"Seybert","Maria","NA","Problem behavior",20,1,"B",2,1.43,0
+"Seybert","Maria","NA","Problem behavior",21,0,"C",45,42.14,0
+"Seybert","Maria","NA","Problem behavior",22,0,"C",9,6.43,0
+"Seybert","Maria","NA","Problem behavior",23,0,"C",50,45,0
+"Seybert","Maria","NA","Problem behavior",24,0,"C",21,17.86,0
+"Seybert","Maria","NA","Problem behavior",25,1,"D",39,35.71,0
+"Seybert","Maria","NA","Problem behavior",26,1,"D",18,15,0
+"Seybert","Maria","NA","Problem behavior",27,1,"D",14,10,0
+"Seybert","Maria","NA","Problem behavior",28,1,"D",25,21.43,0
+"Seybert","Maria","NA","Problem behavior",29,1,"D",5,4.29,0
+"Seybert","Scott","NA","Problem behavior",1,0,"A",79,80,0
+"Seybert","Scott","NA","Problem behavior",2,0,"A",40,40,0
+"Seybert","Scott","NA","Problem behavior",3,0,"A",71,70,0
+"Seybert","Scott","NA","Problem behavior",4,0,"A",46,43.57,0
+"Seybert","Scott","NA","Problem behavior",5,0,"A",66,65,0
+"Seybert","Scott","NA","Problem behavior",6,1,"B",47,44.29,0
+"Seybert","Scott","NA","Problem behavior",7,1,"B",47,44.29,0
+"Seybert","Scott","NA","Problem behavior",8,1,"B",35,34.29,0
+"Seybert","Scott","NA","Problem behavior",9,1,"B",46,44.29,0
+"Seybert","Scott","NA","Problem behavior",10,1,"B",26,25.71,0
+"Seybert","Scott","NA","Problem behavior",11,1,"B",21,20,0
+"Seybert","Scott","NA","Problem behavior",12,0,"C",60,55.71,0
+"Seybert","Scott","NA","Problem behavior",13,0,"C",22,22.14,0
+"Seybert","Scott","NA","Problem behavior",14,0,"C",74,70.71,0
+"Seybert","Scott","NA","Problem behavior",15,0,"C",79,75.71,0
+"Seybert","Scott","NA","Problem behavior",16,0,"C",44,42.14,0
+"Seybert","Scott","NA","Problem behavior",17,0,"C",63,59.29,0
+"Seybert","Scott","NA","Problem behavior",18,1,"D",9,6.43,0
+"Seybert","Scott","NA","Problem behavior",19,1,"D",27,25,0
+"Seybert","Scott","NA","Problem behavior",20,1,"D",25,22.14,0
+"Seybert","Scott","NA","Problem behavior",21,1,"D",9,6.43,0
+"Seybert","Scott","NA","Problem behavior",22,1,"D",20,17.14,0

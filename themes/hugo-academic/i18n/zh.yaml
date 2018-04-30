@@ -1,0 +1,160 @@
+# Navigation
+
+- id: toggle_navigation
+  translation: 切换导航
+
+- id: table_of_contents
+  translation: 目录
+
+# General
+
+- id: related
+  translation: 相关
+
+- id: minute_read
+  translation: 分钟阅读时间
+
+- id: previous
+  translation: 上一页
+
+- id: next
+  translation: 下一页
+
+- id: figure
+  translation: "图%d:"
+
+# Buttons
+
+- id: btn_preprint
+  translation: 预印本
+
+- id: btn_pdf
+  translation: PDF
+
+- id: btn_cite
+  translation: 引用
+
+- id: btn_slides
+  translation: 演示文稿
+
+- id: btn_video
+  translation: 视频
+
+- id: btn_code
+  translation: 代码
+
+- id: btn_dataset
+  translation: 数据集
+
+- id: btn_project
+  translation: 项目
+
+- id: btn_poster
+  translation: 海报
+
+- id: btn_source
+  translation: 源文档
+
+- id: btn_copy
+  translation: 复制
+
+- id: btn_download
+  translation: 下载
+
+# About widget
+
+- id: interests
+  translation: 兴趣爱好
+
+- id: education
+  translation: 教育经历
+
+# Publications widget
+
+- id: more_publications
+  translation: 更多出版物
+
+# Posts widget
+
+- id: continue_reading
+  translation: 继续阅读
+
+- id: more_posts
+  translation: 更多文章
+
+# Talks widget
+
+- id: more_talks
+  translation: 更多演讲
+
+# Publication/Talk details
+
+- id: abstract
+  translation: 摘要
+
+- id: publication
+  translation: 出版物
+
+- id: publication_type
+  translation: 类型
+
+- id: date
+  translation: 日期
+
+- id: last_updated
+  translation: 最近更新于
+
+- id: links
+  translation: 链接
+
+- id: event
+  translation: 事件
+
+- id: location
+  translation: 位置
+
+# Filtering
+
+- id: filter_by_type
+  translation: 按类型过滤
+
+- id: filter_all
+  translation: 全部
+
+# Project details
+
+- id: open_project_site
+  translation: 访问项目网站
+
+# Default node titles
+
+- id: posts
+  translation: 文章
+
+- id: publications
+  translation: 出版物
+
+- id: talks
+  translation: 演讲
+
+- id: projects
+  translation: 项目
+
+# Error 404
+
+- id: page_not_found
+  translation: 找不到页面
+
+- id: 404_recommendations
+  translation: 也许你在找？
+
+# Cookie consent
+
+- id: cookie_message
+  translation: 本网站使用cookies来确保您在本网站上获得最佳体验。
+
+- id: cookie_dismiss
+  translation: 知道了!
+
+- id: cookie_learn
+  translation: 了解更多

@@ -1,0 +1,50 @@
+{{ partial "header.html" . }}
+{{ partial "navbar.html" . }}
+<div class="container">
+
+  <h1>{{ i18n "page_not_found" }}</h1>
+  <p>{{ i18n "404_recommendations" }}</p>
+
+  {{ $posts_len := len (where .Site.RegularPages "Section" "post") }}
+  {{ if gt $posts_len 0 }}
+  <h2>{{ i18n "posts" }}</h2>
+  {{ range first 5 (where .Site.RegularPages "Section" "post") }}
+  <ul>
+    <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+  </ul>
+  {{ end }}
+  {{ end }}
+
+  {{ $pubs_len := len (where .Site.RegularPages "Section" "publication") }}
+  {{ if gt $pubs_len 0 }}
+  <h2>{{ i18n "publications" }}</h2>
+  {{ range first 5 (where .Site.RegularPages "Section" "publication") }}
+  <ul>
+    <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+  </ul>
+  {{ end }}
+  {{ end }}
+
+  {{ $talks_len := len (where .Site.RegularPages "Section" "talk") }}
+  {{ if gt $talks_len 0 }}
+  <h2>{{ i18n "talks" }}</h2>
+  {{ range first 5 (sort (where .Site.RegularPages "Type" "talk") ".Params.time_start" "desc") }}
+  <ul>
+    <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+  </ul>
+  {{ end }}
+  {{ end }}
+
+  {{ $projects_len := len (where .Site.RegularPages "Section" "project") }}
+  {{ if gt $projects_len 0 }}
+  <h2>{{ i18n "projects" }}</h2>
+  {{ range first 5 (where .Site.RegularPages "Section" "project") }}
+  <ul>
+    <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+  </ul>
+  {{ end }}
+  {{ end }}
+
+</div>
+{{ partial "footer_container.html" . }}
+{{ partial "footer.html" . }}
