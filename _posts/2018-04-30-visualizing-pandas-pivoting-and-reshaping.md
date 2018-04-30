@@ -20,7 +20,11 @@ Things get a lot more interesting once you're comfortable with the fundamentals 
 
 <img src="/images/pandas_pivot.png" />
 
+(Thanks to [/u/Xylon-](https://www.reddit.com/user/Xylon-) for the correction)
 
+## Melt
+
+<img src="/images/pandas_melt.png" />
 
 ## Stack
 
@@ -43,6 +47,3 @@ Example #3
 <img src="/images/pandas_unstack_0.png" />
 
 
-## Melt
-
-<img src="/images/pandas_melt.png" />
