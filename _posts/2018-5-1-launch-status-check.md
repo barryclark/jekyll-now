@@ -3,7 +3,7 @@ layout: post
 title: New blog coming soon
 ---
 
-![anticipation]({{ site.baseurl }}/images/astronomy-earth-explosion-2159.jpg)
+![rocket launch]({{ site.baseurl }}/images/astronomy-earth-explosion-2159.jpg)
 
 
 Anticipation levels are high and the pre-launch excitement is starting to build. It gives me great pleasure to announce a new blog from the Product and Technology Team @ CarFinance 247 is only a few weeks away.
