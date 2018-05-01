@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Circuit diagram and board design
-long: EN
+title: Schematic and PCB Design
+lang: EN
 ref: PCBDesign
 teaserImage: /images/CanSat_PCB_V1.png
 ---
