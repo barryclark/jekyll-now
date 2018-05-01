@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>JS Basket</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+  </head>
+
+  <body>
+    <form id="colorCalc" class="form">
+
+      <h1 class="h3">Hexadecimal Average Calculator</h1>
+      <hr>
+      <div class="form-group">
+        <label for="hex1">Hex 1</label>
+        <input type="text" class="form-control" id="hex1">
+      </div>
+
+      <div class="form-group">
+        <label for="hex2">Hex 2</label>
+        <input type="text" class="form-control" id="hex2">
+      </div>
+
+      <div class="form-group">
+        <label for="average">Average hex</label>
+        <input type="text" class="form-control" id="average" readonly>
+      </div>
+
+      <button class="btn btn-lg btn-primary btn-block" type="submit">Calculate</button>
+
+      <div class="row swatches">
+        <div id="displayHex1" class="col-md-4 swatch">
+          <div class="swatch__label">Hex 1</div>
+        </div>
+        <div id="displayHexAvg" class="col-md-4 swatch">
+          <div class="swatch__label">Average</div>
+        </div>
+        <div id="displayHex2" class="col-md-4 swatch">
+          <div class="swatch__label">Hex 2</div>
+        </div>
+      </div>
+    </form>
+
+    <script src="./app.js"></script>
+
+    <script>
+      document.querySelector('#colorCalc').addEventListener("submit", function(e){
+        e.preventDefault();
+        var hex1 = document.getElementById('hex1').value;
+        var hex2 = document.getElementById('hex2').value;
+        var avgHex = Module.averageColor(hex1, hex2);
+        document.getElementById('displayHex1').style.backgroundColor = '#' + hex1;
+        document.getElementById('displayHexAvg').style.backgroundColor = '#' + avgHex;
+        document.getElementById('displayHex2').style.backgroundColor = '#' + hex2;
+        document.getElementById('average').value = avgHex;
+      });
+    </script>
+
+  </body>
+</html>
