@@ -4,7 +4,7 @@ widget = "tag_cloud"
 active = true
 date = 2017-09-20T00:00:00
 
-title = "Tags"
+title = "Topics"
 subtitle = ""
 
 # Order that this section will appear in.
