@@ -30,6 +30,6 @@ weight = 5
  
 +++
 
-# Biography
+# __James E. Pustejovsky__
 
-I am a statistician and assistant professor in the College of Education at UT Austin, where I teach in the Educational Psychology department. My research focuses on development of statistical methodology for problems in education, psychology, and other areas of social science research, with a particular focus on methods related to meta-analysis and research synthesis. 
+I am a statistician and assistant professor in the College of Education at the University of Texas at Austin, where I teach in the Educational Psychology department. My research focuses on development of statistical methodology for problems in education, psychology, and other areas of social science research, with a particular focus on methods related to meta-analysis and research synthesis. 
