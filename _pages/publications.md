@@ -6,10 +6,6 @@ permalink: /publications/
 
 ### Single-case research and behavioral observation
 
-* Pustejovsky, J. E., Hedges, L. V., & Shadish, W. R. (2014). [Design-comparable effect sizes in multiple baseline designs: A general modeling framework.](http://doi.org/10.3102/1076998614547577) _Journal of Educational and Behavioral Statistics, 39_(5), 368-393. [Postprint]({{ site.url }}/files/Effect-sizes-in-multiple-baseline-designs-JEBS.pdf). [Supporting materials]({{ site.url }}/files/Effect-sizes-in-multiple-baseline-designs-Simulation-results.pdf). Software available in the [scdhlm package]({{site.url}}/software).
-* Hedges, L. V, Pustejovsky, J. E., & Shadish, W. R. (2013). [A standardized mean difference effect size for multiple baseline designs.](http://doi.org/10.1002/jrsm.1086) _Research Synthesis Methods, 4_(4), 324-341. Software available in the [scdhlm package]({{site.url}}/software).
-* Hedges, L. V, Pustejovsky, J. E., & Shadish, W. R. (2012). [A standardized mean difference effect size for single case designs.](http://doi.org/10.1002/jrsm.1052) _Research Synthesis Methods, 3_, 224–239. Software available in the [scdhlm package]({{site.url}}/software).
-
 ### Robust variance estimation
 
 * Pustejovsky, J. E. & Tipton, E. (2016). [Small sample methods for cluster-robust variance estimation and hypothesis testing in fixed effects models](http://doi.org/10.1080/07350015.2016.1247004). _Journal of Business and Economic Statistics_. In Press. 
