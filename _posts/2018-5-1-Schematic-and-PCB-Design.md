@@ -1,5 +1,5 @@
 ---
-layout: Post
+layout: post
 title: Circuit diagram and board design
 long: EN
 ref: PCBDesign
