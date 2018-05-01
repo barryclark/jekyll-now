@@ -42,7 +42,7 @@ lohnt es sich, das Design auszudrucken und auf Pappe zu kleben. Zwar kann man da
 Vor allem für uns ist das ganz hilfreich, da wir das Ganze in drei Raumebenen verschieben und vergleichen können, ob alle 
 Verbindungen auch übereinander passen.
 
-{% include image.html path="/images/CanSat_PCB_Layout.png" caption="Zum Testen: Alle drei Layer auf Pappe ausgedruckt und bestückt" %}
+{% include image.html path="/images/CanSat_PCB_Layout.jpg" caption="Zum Testen: Alle drei Layer auf Pappe ausgedruckt und bestückt" %}
 
 **Und jetzt?**
 
