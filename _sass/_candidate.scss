@@ -91,6 +91,11 @@
                 background: $deep-orange400;
                 color: white;
             }
+
+            &.company-button {
+                background: $blue500;
+                color: white;
+            }
         }
     }
 }
@@ -399,14 +404,14 @@
     &__feature {
         text-align-last: center;
         flex-basis: 25%;
+        transition: .3s;
+
+        &:hover{
+            transform: scale(1.05)
+        }
 
         @include tablet {
             flex-basis: 50%;
-        }
-
-        h2 {
-            color: $deep-orange400;
-            font-family: Roboto, sans-serif;
         }
 
         img {

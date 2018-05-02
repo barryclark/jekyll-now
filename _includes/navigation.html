@@ -1,8 +1,3 @@
-
-    <a href="{{ site.baseurl }}#a-empreguei">
-        <button class="scroll-trigger" >A Empreguei</button>
-    </a>
-
     <a href="{{ site.baseurl }}#como-funciona">
         <button class="scroll-trigger" >Como Funciona</button>
     </a>
@@ -21,9 +16,17 @@
     <a href="{{ site.baseurl }}/login/empresa">
         <button class="company-button">Publicar Vaga</button>
     </a>
+
+    <a href="{{ site.baseurl }}/candidatos">
+        <button class="candidate-button">Quero Trabalhar</button>
+    </a>
 {% endif %}
 {% if include.candidate %}
     <a href="{{ site.baseurl }}/login/candidato">
         <button class="candidate-button">Quero Trabalhar</button>
+    </a>
+
+    <a href="{{ site.baseurl }}/empresas">
+        <button class="company-button">Sou Empresa</button>
     </a>
 {% endif %}

@@ -91,6 +91,11 @@
                 background: $blue500;
                 color: white;
             }
+
+            &.candidate-button {
+                background: $deep-orange400;
+                color: white;
+            }
         }
     }
 }
@@ -223,6 +228,7 @@
             margin-bottom: 32px;
             transition: .3s;
             border-radius: 16px;
+            flex-basis: 200px;
 
             &:last-child {
                 @include mobile {
@@ -470,20 +476,26 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    margin-top: 64px;
+    padding-top: 64px;
     margin-bottom: 64px;
 
+    h1 {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 32px;
+    }
+
     &__feature {
-        text-align-last: center;
+        text-align: center;
         flex-basis: 25%;
+        transition: .3s;
+
+        &:hover {
+            transform: scale(1.05)
+        }
 
         @include tablet {
             flex-basis: 50%;
-        }
-
-        h2 {
-            color: $blue500;
-            font-family: Roboto, sans-serif;
         }
 
         img {
