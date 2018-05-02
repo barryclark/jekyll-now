@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Video] [Apr 2018] Interview with Cheryl Hung - Day of Cloud Native 2018"
+title: "[Video] [April 2018] Interview with Cheryl Hung - Day of Cloud Native 2018"
 ---
 
 <iframe width="700px" height="394px" src="https://www.youtube.com/embed/r20uXic_Hpw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
