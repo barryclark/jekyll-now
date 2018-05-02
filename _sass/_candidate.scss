@@ -110,6 +110,7 @@
     & .container {
         display: flex;
         flex-flow: row wrap;
+        justify-content: space-evenly;
     }
 
     &__text{
@@ -205,7 +206,7 @@
 
     &__image{
         flex-shrink: 4;
-        flex-basis: 45%;
+        flex-basis: 25%;
         display: flex;
         align-items: center;
         justify-content: flex-end;
