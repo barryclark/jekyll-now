@@ -110,7 +110,7 @@
     & .container {
         display: flex;
         flex-flow: row wrap;
-        justify-content: space-evenly;
+        justify-content: center;
     }
 
     &__text{
@@ -206,10 +206,11 @@
 
     &__image{
         flex-shrink: 4;
-        flex-basis: 25%;
+        flex-basis: 45%;
         display: flex;
         align-items: center;
         justify-content: flex-end;
+        flex-flow: column;
 
         @include mobile {
             justify-content: center;
@@ -218,6 +219,7 @@
         img {
             width: 90%;
             height: 90%;
+            max-width: 250px;
             object-fit: contain;
             object-position: center;
         }
