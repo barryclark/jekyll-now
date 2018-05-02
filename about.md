@@ -8,7 +8,7 @@ This is the website for Laurentian’s Math and Computer Science Club. Here we p
 
 ### Current Location: 
 
-Laurentian Univsersity, FA-370
+Laurentian University, FA-370
 
 ### Current Executive
 
