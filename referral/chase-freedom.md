@@ -2,7 +2,7 @@
 layout: page
 title: Chase Freedom Referral
 permalink: /chase-freedom/
-redirect_to: https://applynow.chase.com/FlexAppWeb/renderApp.do?SPID=FNS7&CELL=63HB&MSC=1538443475
+redirect_to: https://www.referyourchasecard.com/2/763CXS6AF2
 ---
 
-[Click here if you are not redirected](https://applynow.chase.com/FlexAppWeb/renderApp.do?SPID=FNS7&CELL=63HB&MSC=1538443475)
+[Click here if you are not redirected](https://www.referyourchasecard.com/2/763CXS6AF2)
