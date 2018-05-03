@@ -1,32 +1,32 @@
-    <a href="{{ site.baseurl }}#como-funciona">
+    <a href="{{ site.url }}#como-funciona">
         <button class="scroll-trigger" >Como Funciona</button>
     </a>
 
 {% if include.company %}
-    <a href="{{ site.baseurl }}#precos">
+    <a href="{{ site.url }}#precos">
         <button class="scroll-trigger" >Preços</button>
     </a>
 {% endif %}
 
-    <a href="{{ site.baseurl }}#midia">
+    <a href="{{ site.url }}#midia">
         <button class="scroll-trigger" >Midia</button>
     </a>
 
 {% if include.company %}
-    <a href="{{ site.baseurl }}/login/empresa">
+    <a href="{{ site.url }}/login/empresa">
         <button class="company-button">Publicar Vaga</button>
     </a>
 
-    <a href="{{ site.baseurl }}/candidatos">
+    <a href="{{ site.url }}/candidatos">
         <button class="candidate-button">Quero Trabalhar</button>
     </a>
 {% endif %}
 {% if include.candidate %}
-    <a href="{{ site.baseurl }}/login/candidato">
+    <a href="{{ site.url }}/login/candidato">
         <button class="candidate-button">Quero Trabalhar</button>
     </a>
 
-    <a href="{{ site.baseurl }}/empresas">
+    <a href="{{ site.url }}/empresas">
         <button class="company-button">Sou Empresa</button>
     </a>
 {% endif %}

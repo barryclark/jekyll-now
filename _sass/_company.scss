@@ -163,19 +163,19 @@
             }
 
             & li:nth-child(1)::before {
-                content: url('/assets/svg/clock.svg');
+                content: url('https://empreguei.github.io/assets/svg/clock.svg');
             }
 
             & li:nth-child(2)::before {
-                content: url('/assets/svg/puzzle.svg');
+                content: url('https://empreguei.github.io/assets/svg/puzzle.svg');
             }
 
             & li:nth-child(3)::before {
-                content: url('/assets/svg/chat.svg');
+                content: url('https://empreguei.github.io/assets/svg/chat.svg');
             }
 
             & li:nth-child(4)::before {
-                content: url('/assets/svg/hand-shake.svg');
+                content: url('https://empreguei.github.io/assets/svg/hand-shake.svg');
             }
         }
 
@@ -285,14 +285,14 @@
                         margin-right: 16px;
                     }
 
-                    &:nth-child(1)::before { content: url('/assets/svg/education.svg') }
-                    &:nth-child(2)::before { content: url('/assets/svg/mail.svg') }
-                    &:nth-child(3)::before { content: url('/assets/svg/phone.svg') }
-                    &:nth-child(4)::before { content: url('/assets/svg/money.svg') }
-                    &:nth-child(5)::before { content: url('/assets/svg/tie.svg') }
-                    &:nth-child(6)::before { content: url('/assets/svg/party.svg') }
-                    &:nth-child(7)::before { content: url('/assets/svg/distance.svg') }
-                    &:nth-child(8)::before { content: url('/assets/svg/bike.svg') }
+                    &:nth-child(1)::before { content: url('https://empreguei.github.io/assets/svg/education.svg') }
+                    &:nth-child(2)::before { content: url('https://empreguei.github.io/assets/svg/mail.svg') }
+                    &:nth-child(3)::before { content: url('https://empreguei.github.io/assets/svg/phone.svg') }
+                    &:nth-child(4)::before { content: url('https://empreguei.github.io/assets/svg/money.svg') }
+                    &:nth-child(5)::before { content: url('https://empreguei.github.io/assets/svg/tie.svg') }
+                    &:nth-child(6)::before { content: url('https://empreguei.github.io/assets/svg/party.svg') }
+                    &:nth-child(7)::before { content: url('https://empreguei.github.io/assets/svg/distance.svg') }
+                    &:nth-child(8)::before { content: url('https://empreguei.github.io/assets/svg/bike.svg') }
                 }
             }
 
@@ -476,7 +476,7 @@
     flex-flow: row wrap;
     justify-content: center;
     padding-top: 64px;
-    margin-bottom: 64px;
+    padding-bottom: 128px;
 
     h1 {
         width: 100%;
@@ -498,15 +498,15 @@
         }
 
         img {
-            width: 50px;
-            height: 50px;
+            width: 64px;
+            height: 64px;
         }
 
         p {
-            font-size: 14px;
             padding: 16px;
             color: $grey800;
             text-align: center;
+            font-weight: 300;
         }
     }
 }
@@ -643,7 +643,7 @@
                         display: inline-block;
                         vertical-align: middle;
                         margin-right: 16px;
-                        content: url('/assets/svg/allowed.svg');
+                        content: url('https://empreguei.github.io/assets/svg/allowed.svg');
                     }
 
                     &--denied {
@@ -653,7 +653,7 @@
                             display: inline-block;
                             vertical-align: middle;
                             margin-right: 16px;
-                            content: url('/assets/svg/denied.svg');
+                            content: url('https://empreguei.github.io/assets/svg/denied.svg');
                         }
                     }
                 }
