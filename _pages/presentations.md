@@ -5,7 +5,6 @@ permalink: /presentations/
 ---
 
 
-* [Randomization inference for single-case experimental designs]({{ site.url}}/files/Randomization-inference-for-SCED-2018-01-10.pdf). Presentation at the Institute of Education Sciences 2018 Principal Investigators Meeting, January 10, 2018 in Washington, DC.
 * [A gradual effects model for single case designs]({{ site.url}}/files/Gradual-effects-model-poster-IES-2018-01-10.pdf). Poster presented at the Institute of Education Sciences 2018 Principal Investigators Meeting, January 10, 2018 in Washington, DC.
 * [Heteroskedasticity-robust tests in linear regression: A review and evaluation of small-sample corrections]({{ site.url }}/files/AERA-2017-HC-t-tests.html). Presentation at the American Educational Research Association annual convention, April 30, 2017 in San Antonio, TX.
 * [Using response ratios for meta-analyzing single-case designs with behavioral outcomes]({{ site.url}}/files/AERA-2017-poster-Using-response-ratios.pdf). Poster presented at the American Educational Research Association annual convention, April 28, 2017 in San Antonio, TX. 

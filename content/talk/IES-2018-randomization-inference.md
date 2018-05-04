@@ -2,7 +2,7 @@
 date = 2018-01-10T08:15:00  # Schedule page publish date.
 
 title = "Randomization inference for single-case experimental designs"
-# time_start = 2018-04-15T08:15:00
+time_start = 2018-01-10T08:15:00
 # time_end = 2030-06-01T15:00:00
 abstract = ""
 abstract_short = ""
