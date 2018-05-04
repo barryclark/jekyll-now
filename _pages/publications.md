@@ -4,28 +4,18 @@ title: Selected Publications
 permalink: /publications/
 ---
 
-### Single-case research and behavioral observation
+Swan, Daniel M., & Pustejovsky, James E. (2018). A gradual effects model for single-case designs. Multivariate Behavioral Research, forthcoming. 
 
-### Robust variance estimation
+Zimmerman, Kathleen N., Ledford, Jennifer R., Severini, Katherine E., Pustejovsky, James E., Barton, Erin E., & Lloyd, Blair P. (2018). Single-case synthesis tools I: Evaluating the quality and rigor of research on antecedent sensory-based interventions. Research in Developmental Disabilities, forthcoming. https://doi.org/10.1016/j.ridd.2018.02.003 
 
-* Pustejovsky, J. E. & Tipton, E. (2016). [Small sample methods for cluster-robust variance estimation and hypothesis testing in fixed effects models](http://doi.org/10.1080/07350015.2016.1247004). _Journal of Business and Economic Statistics_. In Press. 
+Zimmerman, Kathleen N., Pustejovsky, James E., Ledford, Jennifer R., Barton, Erin E., Severini, Katherine E., & Lloyd, Blair P. (2018). Single-case synthesis tools II: Comparing overlap measures and parametric effect sizes for synthesizing antecedent sensory-based interventions. Research in Developmental Disabilities, forthcoming. https://doi.org/10.1016/j.ridd.2018.02.001 
 
-### Meta-analysis methods
+Shadish, William R., Larry V. Hedges, & James E. Pustejovsky (2014). Analysis and meta-analysis of single-case designs with a standardized mean difference statistic: A primer and applications. Journal of School Psychology, 52, 123-147. DOI: 10.1016/j.jsp.2013.11.005
 
-* Tipton, E. & Pustejovsky, J. E. (2015). [Small-sample adjustments for tests of moderators and model fit using robust variance estimation in meta-regression.](http://doi.org/10.3102/1076998615606099) _Journal of Educational and Behavioral Statistics, 40_(6), 604-634. [Preprint]({{ site.url }}/files/Tipton-Pustejovsky-F-tests-with-RVE-May-2015.pdf).
-* Pustejovsky, J. E. (2014). [Converting from d to r to z when the design uses extreme groups, dichotomization, or experimental control.](http://psycnet.apa.org/doi/10.1037/a0033788) _Psychological Methods, 19_(1), 92-112. [Postprint]({{ site.url }}/files/Converting-from-d-to-r-to-z.pdf). [Supporting materials]({{ site.url }}/files/d-to-r-to-Z-conversion-examples.xlsx).
+Shadish, William R., Larry V. Hedges, James E. Pustejovsky, Jonathan G. Boyajian, Kristynn J. Sullivan, Alma Andrade, & Jeannette Barrientos (2013). A d-statistic for single-case designs that is equivalent to the usual between-groups d-statistic. Neuropsychological Rehabilitation: An International Journal, 24 (3-4), 528-553.  DOI: 10.1080/09602011.2013.819021
 
-### Meta-analysis applications 
+Shadish, William R., Larry V. Hedges, James E. Pustejovsky, David M. Rindskopf, Jonathan G. Boyajian, & Kristynn J. Sullivan (2014). Analyzing Single-Case Designs: d, G, Hierarchical Models, Bayesian Estimators, Generalized Additive Models, and the Hopes and Fears of Researchers about Analyses. In T. R. Kratochwill & J. R. Levin (Eds.), Single-Case Intervention Research: Methodological and Data-Analysis Advances. Washington, D.C.: American Psychological Association.
 
-* Jim, H. S., Pustejovsky, J. E., Park, C. L., Danhauer, S. C., Sherman, A. C., Fitchett, G., Merluzzi, T. V., Munoz, A. R., George, L., Snyder, M. A., & Salsman, J. A. (2015). [Religion, spirituality, and physical health in cancer patients: A meta-analysis.](http://doi.org/10.1002/cncr.29353) _Cancer, 121_(21), 3760-3768. 
-* Salsman, J. M., Pustejovsky, J. E., Jim, H. S., Munoz, A. R., Merluzzi, T. V., George, L., Park, C. L., Danhauer, S. C., Sherman, A. C., Snyder, M. A., & Fitchett, G. (2015). [A meta-analytic approach to examine the relationship between religion/spirituality and mental health in cancer.](http://doi.org/10.1002/cncr.29350) _Cancer, 121_(21), 3769-3778.
-* Sherman, A. C., Merluzzi, T. V., Pustejovsky, J. E., Park, C. L., George, L., Fitchett, G., Jim, H. S., Munoz, A. R., Danhauer, S. C., Snyder, M. A., & Salsman, J. M. (2015). [A meta-analytic review of religious or spiritual involvement and social health among cancer patients.](http://doi.org/10.1002/cncr.29352) _Cancer, 121_(21), 3779-3788.
+Valentine, Jeffrey C., Emily E. Tanner-Smith, James E. Pustejovsky, and Timothy S. Lau (2016). Between-case standardized mean difference effect sizes for single-case designs: A primer and tutorial using the scdhlm web application. Oslo, Norway: The Campbell Collaboration. Retrieved from https://campbellcollaboration.org/library/effect-sizes-single-case-designs-campbell-discussion-paper-1.html
 
-### Other
-
-* Pustejovsky, J. E., & Spillane, J. P. (2009). [Question-order effects in social network name generators](http://doi.org/10.1016/j.socnet.2009.06.001). _Social Networks, 31_(4), 221–229. [Postprint]({{ site.url }}/files/Question-order-effects-in-social-network-name-generators.pdf).
-
-### Dissertation
-
-* [Operationally comparable effect sizes for meta-analysis of single-case research.]({{ site.url }}/files/Pustejovsky-2013-Thesis.pdf) 
-* [Synopsis]({{ site.url }}/files/Pustejovsky-2013-synopsis.pdf).
+Salsman, John M., James E. Pustejovsky, Crystal L. Park, Allen C. Sherman, Thomas V. Merluzzi, Suzanne C. Danhauer, Heather S. Jim, & George Fitchett (2016). Reply to the association between religion/spirituality and mental health in cancer. Cancer, 122, 2441-2442. DOI: 10.1002/cncr.30019
