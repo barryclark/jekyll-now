@@ -33,11 +33,8 @@ var Game = (function(){
         dice: document.querySelector('.dice')
     }
 
-    app.scores = [0,0];
     app.activePlayer = 0;
-    app.p1Score = app.scores[0];
-    app.p2Score = app.scores[1];
-    app.roundScore = parseInt(app.els.p1.score.textContent, 10);
+    app.roundScore = 0;
 
     app.getRandom = function(min, max) {
         // Inclusive of each end
@@ -52,8 +49,9 @@ var Game = (function(){
         app.dice.style.display = 'none';
         app.p1.score.innerHTML = '0';
         app.p2.score.innerHTML = '0';
+        app.p1.current.innerHTML = '0';
+        app.p2.current.innerHTML = '0';
     }
-
 
     function _attachListeners(){ 
         // Attach listeners 
@@ -69,28 +67,34 @@ var Game = (function(){
     function _applyScore(score){
         console.log(app.roundScore); 
     }
-    
+
     function _rollDice(){
         // get random number
-        var roll = app.getRandom(1,6);
-
+        var roll = app.getRandom(1,6); 
         // Display result
         app.dice.src = `images/dice-${roll}.png`;
         app.dice.style.display = 'block';
         console.log(roll);
-
+        console.log(app.roundScore);
         // Update round score if not a 1
-        if ( roll != 1 && app.activePlayer == 0 ) {
-            let currentScore = parseInt(app.p1.current.innerHTML, 10)
-             app.p1.current.innerHTML = currentScore += roll;
-        } else {
-            
-        }
-
+        if ( roll !== 1 ) {
+           // add the score 
+             app.roundScore += roll;
+             document.getElementById('current-'+ app.activePlayer).textContent = app.roundScore;
+         } else {
+             // Reset roundscore
+            app.roundScore = 0;
+            // Give score to the player
+            document.getElementById(`current-${app.activePlayer}`).textContent = app.roundScore;
+            // Remove marker
+            document.querySelector(`.player-${app.activePlayer}-panel`).classList.remove('active');
+            // Set next player
+            app.activePlayer = (app.activePlayer == 0) ? 1 : 0;
+            // Mark next player
+            document.querySelector(`.player-${app.activePlayer}-panel`).classList.add('active');
+          }
     }
-
-    
-    // EReturn public method
+    // Return public method
     return app;
 
 }());
