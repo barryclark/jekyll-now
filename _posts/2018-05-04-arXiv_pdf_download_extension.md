@@ -1,12 +1,12 @@
 ---
 layout: post
-title: arXiv の論文を google drive に保存する chrome extension を作った
+title: arXiv の論文を google drive に保存する Chrome extension を作った
 categories: ['env development']
 ---
 
 ### TL;DR
 - iPad Pro で論文を読む際に Notability を使いたいが Mendeley などと異なり論文管理は手間
-- chrome extension を使って arXiv の論文を google drive に保存できるようにした：[Repository](https://github.com/yoheikikuta/arxiv-pdf-downloader)
+- Chrome extension を使って arXiv の論文を google drive に保存できるようにした：[Repository](https://github.com/yoheikikuta/arxiv-pdf-downloader)
 - Notability との連携が改善されれば文句なしなのだが...
 <br>
 
@@ -16,7 +16,7 @@ categories: ['env development']
 その時の結論は「Mendeley + PaperShip」というものだった。
 
 しかしながら、やっぱりというかなんというか、気に入らない部分があって何とかできないかなぁと考えていた。
-結果、自分好みの chrome extension を作ればいけるのでは？と思って実際に作ってみたので、事の顛末を記しておく。
+結果、自分好みの Chrome extension を作ればいけるのでは？と思って実際に作ってみたので、事の顛末を記しておく。
 
 ### 現状の不満点
 - 複数アプリを跨って使っているので面倒
@@ -32,7 +32,7 @@ categories: ['env development']
 Notability の書き心地にぞっこんなので、このアプリ一本で論文読みやメモ書きを完結させたい。
 
 ただこの場合は論文をどう管理するかという問題が発生する。
-自分にとって必要なのは何かを考えた結果、arXivの論文が簡単に保存ができてかつファイル名にタイトルが含まれることくらいではないか、という考えに至った。
+論文を管理するというときに自分にとって必要なのは何かを考えた結果、arXivの論文が簡単に保存ができてかつファイル名にタイトルが含まれることくらいではないか、という考えに至った。
 
 例えば自分はそんなにたくさん論文を書いているわけではないので、Mendeley から簡単に bib ファイルを作れるとかは恩恵がない（実際に論文書くときも使ってない）。
 それ以外にも色々取得できるメタ情報もまあ使わないし、recommend される論文は大体が知ってるものなので有用性は特にない。
