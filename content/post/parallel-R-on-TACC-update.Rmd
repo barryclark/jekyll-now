@@ -1,0 +1,17 @@
+---
+title: "Update: parallel R on the TACC"
+author: 'James'
+date: '2014-04-08'
+slug: parallel-R-on-TACC-update
+categories: []
+tags:
+  - R
+  - simulation
+---
+
+I have learned from [Mr. Yaakoub El Khamra](https://www.tacc.utexas.edu/staff/yaakoub-el-khamra) that he and the good folks at TACC have made some modifications to TACC's custom MPI implementation and R build in order to correct bugs in Rmpi and snow that were causing crashes. [My earlier post](/parallel-R-on-TACC) has been updated to reflect the modifications. The main changes are:
+
+1. The version of MVAPICH2 has changed to 2.0b
+2. Changes to the Rmpi and snow packages necessitate using the latest version of R (Warm Puppy, 3.0.3). This version is available in the `Rstats` module.
+3. For improved reproducibility, I modified the R code so that the simulation driver function uses a seed value.
+4. I had to switch from `maply` to `mdply` as a result of (3). 
