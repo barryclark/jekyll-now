@@ -1,8 +1,14 @@
 ---
-layout: post
 title: Getting started with ARPobservation
-date: October 24, 2013
-tags: [behavioral-observation]
+author: 'James'
+date: '2013-10-24'
+slug: Getting-started-with-ARPobservation
+categories: []
+tags:
+  - behavioral observation
+header:
+  caption: ''
+  image: ''
 ---
 
 **UPDATED 5/29/2014 after posting the package to CRAN**

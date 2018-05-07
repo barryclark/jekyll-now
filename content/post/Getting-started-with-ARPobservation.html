@@ -1,0 +1,26 @@
+---
+title: Getting started with ARPobservation
+author: 'James'
+date: '2013-10-24'
+slug: Getting-started-with-ARPobservation
+categories: []
+tags:
+  - behavioral observation
+header:
+  caption: ''
+  image: ''
+---
+
+
+
+<p><strong>UPDATED 5/29/2014 after posting the package to CRAN</strong></p>
+<p>Here are step-by-step instructions on how to download and install ARPobservation. For the time being, ARPobservation is available as a pre-compiled binary for Windows. For Mac/Linux, you’ll have to download the source from Github.</p>
+<ol style="list-style-type: decimal">
+<li><p><a href="http://cran.us.r-project.org/">Download</a> and install R. R is free, open-source software that is used by many data analysts and statisticians. ARPobservation is a contributed package that runs within R, so you’ll need to get the base software first.</p></li>
+<li><p>(Optional but recommended) <a href="http://www.rstudio.com/">Download</a> and install RStudio, which is a very nice front-end interface to R.</p></li>
+<li><p>Open R or RStudio and type the following sequence of commands in the console:</p></li>
+</ol>
+<pre class="r"><code>install.packages(&quot;ARPobservation&quot;)
+library(ARPobservation)</code></pre>
+<p>You’ll only need to do the above once. Once you’ve got the package installed, type the following in order to access the package within an R session: <code>library(ARPobservation)</code>.</p>
+<p>To open the package documentation, type <code>package?ARPobservation</code>. To access the documentation for an individual function in this package, just type <code>?</code> followed by the name of the function. For instance, one of the main functions in the package is called <code>r_behavior_stream</code>; to access its documentation, type <code>?r_behavior_stream</code>.</p>

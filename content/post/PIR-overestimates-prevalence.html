@@ -1,0 +1,103 @@
+---
+title: To what extent does partial interval recording over-estimate prevalence?
+author: 'James'
+date: '2013-10-26'
+slug: PIR-overestimates-prevalence
+categories: []
+tags:
+  - behavioral observation
+header:
+  caption: ''
+  image: ''
+---
+
+
+
+<p>It is well known that the partial interval recording procedure produces an over-estimate of the prevalence of a behavior. Here I will demonstrate how to use the ARPobservation package to study the extent of this bias. First though, I’ll need to define the terms prevalence and incidence and also take a detour through continuous duration recording.</p>
+<div id="prevalence-and-incidence" class="section level2">
+<h2>Prevalence and incidence</h2>
+<p>First off, what do I mean by prevalence? In an alternating renewal process, <strong>prevalence</strong> is the long-run proportion of time that the behavior occurs. I’ll call prevalence <span class="math inline">\(\phi\)</span> (“phi”). So far, I’ve described alternating renewal processes in terms of their average event duration (which I’ll call <span class="math inline">\(\mu\)</span> or “mu”) and the average interim time (which I’ll call <span class="math inline">\(\lambda\)</span> or “lambda”). Prevalence is related to these quantities mathematically as follows:</p>
+<p><span class="math display">\[ \phi = \frac{\mu}{\mu + \lambda}. \]</span></p>
+<p>So given <span class="math inline">\(\mu\)</span> and <span class="math inline">\(\lambda\)</span>, we can figure out <span class="math inline">\(\phi\)</span>.</p>
+<p>Another characteristic of behavior that can be determined by the average event duration and average interim time is <strong>incidence</strong>, or the rate of event occurrence per unit of time. I’ll call incidence <span class="math inline">\(\zeta\)</span> (“zeta”). In an alternating renewal process,</p>
+<p><span class="math display">\[ \zeta = \frac{1}{\mu + \lambda}. \]</span></p>
+<p>This makes intuitive sense, because <span class="math inline">\(\mu + \lambda\)</span> is the average time in between the start of each event, so its inverse should be the average number of times that an event starts per unit of time. (Note that though this is quite intuitive, it’s also very difficult to prove mathematically.) Given <span class="math inline">\(\mu\)</span> and <span class="math inline">\(\lambda\)</span>, we can figure out <span class="math inline">\(\zeta\)</span>. Conversely, if we know <span class="math inline">\(\phi\)</span> and <span class="math inline">\(\zeta\)</span>, we can solve for <span class="math inline">\(\mu = \phi / \zeta\)</span> and <span class="math inline">\(\lambda = (1 - \phi) / \zeta\)</span>.</p>
+</div>
+<div id="continuous-duration-recording" class="section level2">
+<h2>Continuous duration recording</h2>
+<p>It can be shown mathematically that, on average, data produced by continuous duration recording (CDR) will be equal to the prevalence of the behavior. In statistical parlance, CDR data produces an <em>unbiased</em> estimate of prevalence. Since this is a mathematical fact, it’s a good idea to check that the software gives the same result (if it doesn’t, there must be something wrong with the code).</p>
+<p>In order to simulate behavior streams, the software needs values for the average event duration and average interim time. But I want to think in terms of prevalence and incidence, so I’ll first pick a value for incidence. Say that a new behavioral event starts once per minute on average, so incidence (in events per second) would be <span class="math inline">\(\zeta = 1 / 60\)</span>. I’ll then vary prevalence across the range from zero to one. For each value of prevalence, I’ll generate 10 behavior streams (if you’d like to do more, go ahead!).</p>
+<pre class="r"><code>library(ARPobservation)
+set.seed(8)
+zeta &lt;- 1 / 60
+phi &lt;- rep(seq(0.01, 0.99, 0.01), each = 10)
+
+# Now solve for mu and lambda
+mu &lt;- phi / zeta
+lambda &lt;- (1 - phi) / zeta
+
+iterations &lt;- length(phi) # total number of behavior streams to generate</code></pre>
+<p>Two last elements are needed before I can get to the simulating: I need to decide what distributions to use for event durations and interim times, and I need to decide how long the observation session should last. To keep things simple, for the time being I’ll use exponential distributions. I’ll also suppose that we observe for 10 min = 600 s, so that on average we should observe 10 events per session. Now I can simulate a bunch of behavior streams and apply the CDR procedure to them.</p>
+<pre class="r"><code>BS &lt;- r_behavior_stream(n = iterations, mu = mu, lambda = lambda, F_event = F_exp(), F_interim = F_exp(), stream_length = 600)
+CDR &lt;- continuous_duration_recording(BS)</code></pre>
+<p>To check that the CDR procedure is unbiased, I’ll plot the CDR data versus the true value of prevalence, and run a smoothing line through the cloud of data-points:</p>
+<pre class="r"><code>library(ggplot2)
+qplot(x = phi, y = CDR, geom = &quot;point&quot;) + geom_smooth(method = &quot;loess&quot;)</code></pre>
+<p><img src="/.rmarkdown-libs/figure-html4/CDR_bias-1.png" width="672" /></p>
+<p>The blue line is nearly identical to the line <code>y = x</code>, meaning that the average of CDR data is equal to prevalence. Good news–the software appears to be working correctly!</p>
+</div>
+<div id="partial-interval-recording" class="section level2">
+<h2>Partial interval recording</h2>
+<p>Now to partial interval recording (PIR). There are two different ways to think about how PIR data over-estimates prevalence. The conventional statistical approach follows the same logic as above, comparing the average value of PIR data to the true value of prevalence, <span class="math inline">\(\phi\)</span>. Using the same simulated data streams as above, with 15 s intervals and 5 s of rest time after each interval…</p>
+<pre class="r"><code>PIR &lt;- interval_recording(BS, interval_length = 20, rest_length = 5)
+
+qplot(x = phi, y = PIR, geom = &quot;point&quot;, ylim = c(-0.02,1.02)) + 
+  geom_smooth(method = &quot;loess&quot;, se = FALSE) + 
+  geom_abline(intercept = 0, slope = 1, linetype = &quot;dashed&quot;)</code></pre>
+<p><img src="/.rmarkdown-libs/figure-html4/PIR_bias-1.png" width="672" /></p>
+<p>The blue line indicates the average value of PIR data across the simulations for a given value of prevalence. The dashed line indicates <code>y = x</code>, so clearly PIR data over-estimates prevalence.</p>
+<p>Previous studies in the Applied Behavior Analysis literature have taken a slightly different approach to thinking about over-estimation. Rather than comparing PIR data to the prevalence parameter <span class="math inline">\(\phi\)</span>, PIR data is instead compared to the <em>sample</em> value of prevalence, which is equivalent to the CDR proportion. Following this logic, I apply the PIR and CDR procedures to the same simulated behavior streams, then plot PIR versus CDR.</p>
+<pre class="r"><code>obs_data &lt;- reported_observations(BS, data_types = c(&quot;C&quot;,&quot;P&quot;), interval_length = 20, rest_length = 5)
+
+qplot(x = CDR, y = PIR, data = obs_data, geom = &quot;point&quot;, ylim = c(-0.02,1.02)) + 
+  geom_smooth(method = &quot;loess&quot;, se = FALSE) + 
+  geom_abline(intercept = 0, slope = 1, linetype = &quot;dashed&quot;)</code></pre>
+<p><img src="/.rmarkdown-libs/figure-html4/PIR_CDR-1.png" width="672" /></p>
+<p>The blue fitted line is slightly different than with the other approach, but the general conclusion is the same: PIR data over-estimates prevalence.</p>
+<p>But by how much? That’s actually a tricky question to answer, because the extent of the bias depends on a bunch of factors:</p>
+<ul>
+<li>the true prevalence <span class="math inline">\(\phi\)</span>,</li>
+<li>the true incidence <span class="math inline">\(\zeta\)</span>,</li>
+<li>the length of the intervals, and</li>
+<li>the distribution of interim times <code>F_lambda</code>.</li>
+</ul>
+<p>(Curiously enough, the bias doesn’t depend on the distribution of event durations <code>F_mu</code>.)</p>
+<div id="interval-length" class="section level4">
+<h4>Interval length</h4>
+<p>To see that the bias depends on the length of intervals used, I’ll compare 15 s intervals with 5 s rest times versus 25 s intervals with 5 s rest times. For a session of length 600 s, the latter procedure will yield 20 intervals.</p>
+<pre class="r"><code>PIR_25 &lt;- interval_recording(BS, interval_length = 30, rest_length = 5)
+obs_data &lt;- cbind(obs_data, PIR_25)
+qplot(x = CDR, y = PIR, data = obs_data, geom = &quot;smooth&quot;, method = &quot;loess&quot;, ylim = c(-0.02,1.02)) + 
+  geom_smooth(aes(y = PIR_25), method = &quot;loess&quot;, se = FALSE, col = &quot;red&quot;) + 
+  geom_abline(intercept = 0, slope = 1, linetype = &quot;dashed&quot;)</code></pre>
+<p><img src="/.rmarkdown-libs/figure-html4/PIR_length-1.png" width="672" /></p>
+<p>The red line indicates that the longer interval time leads to a larger degree of over-estimation. (For clarity, I’ve removed the points in the scatter-plot.)</p>
+</div>
+<div id="interim-time-distribution" class="section level4">
+<h4>Interim time distribution</h4>
+<p>It isn’t terribly troubling that the bias of PIR data depends on the interval length, because the observer will generally know (and will hopefully report in any write-up of their experiment) the interval length that was used. Much more troubling is the fact that the bias depends on the <em>distribution</em> of interim times, because this is something that the observer or analyst won’t usually have much information about. To see how this bias works, I’ll compare behavior streams generated using an exponential distribution for the interim times with thos generated using a gamma distribution with shape parameter 3 (this distribution is much less dispersed than the exponential).</p>
+<pre class="r"><code>BS_exp &lt;- r_behavior_stream(n = iterations, mu = mu, lambda = lambda, F_event = F_exp(), F_interim = F_exp(), stream_length = 600)
+obs_exp &lt;- reported_observations(BS_exp, data_types = c(&quot;C&quot;,&quot;P&quot;), interval_length = 20, rest_length = 5)
+obs_exp$F_lambda &lt;- &quot;Exponential&quot;
+
+BS_gam &lt;- r_behavior_stream(n = iterations, mu = mu, lambda = lambda, F_event = F_exp(), F_interim = F_gam(shape = 3), stream_length = 600)
+obs_gam &lt;- reported_observations(BS_gam, data_types = c(&quot;C&quot;,&quot;P&quot;), interval_length = 20, rest_length = 5)
+obs_gam$F_lambda &lt;- &quot;Gamma(3)&quot;
+
+obs_data &lt;- rbind(obs_exp, obs_gam)
+qplot(x = C, y = P, color = F_lambda, 
+      data = obs_data, geom = &quot;smooth&quot;, method = &quot;loess&quot;, se = FALSE, ylim = c(-0.02, 1.02))</code></pre>
+<p><img src="/.rmarkdown-libs/figure-html4/PIR_interim_dist-1.png" width="768" /></p>
+<p>The gamma(3) interim time distribution leads to a slightly larger positive bias.</p>
+</div>
+</div>
