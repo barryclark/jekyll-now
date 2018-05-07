@@ -1,7 +1,6 @@
 # Folders to ignore
 .Rproj.user
 public
-
 # Numerous always-ignore extensions
 *.diff
 *.err
@@ -13,3 +12,4 @@ public
 *.zip
 *.vi
 *~
+.Rhistory
