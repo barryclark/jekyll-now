@@ -9,4 +9,8 @@ title: "[Slides] [May 2018] StorageOS: A Software Defined Storage Solution for O
     </embed>
 </object>
 
-These are my slides from "StorageOS: A Software Defined Storage Solution for OpenShift", a talk I gave at Red Hat Summit 2018 in San Francisco on 8 May, 2018.
+These are my slides from "StorageOS: A Software Defined Storage Solution for OpenShift", a talk I gave at [Red Hat Summit 2018](https://agenda.summit.redhat.com/SessionDetail.aspx?id=171677) in San Francisco on 8 May, 2018.
+
+Abstract:
+
+Learn how StorageOS integrates natively with K8S and OpenShift to provide Persistent Volumes and Storage Classes. Cheryl Hung, Product Manager at StorageOS discusses how any application or database can be containerized and deployed on an OpenShift cluster on-premises or in the cloud.
