@@ -1,11 +1,18 @@
 ---
-layout: post
 title: Designing simulation studies using R
-date: December 6, 2013
-tags: [simulation]
+author: 'James'
+date: '2013-12-06'
+slug: Designing-simulation-studies-using-R
+categories: []
+tags:
+  - R
+  - simulation
+header:
+  caption: ''
+  image: ''
 ---
 
-[Here are the slides]({{site.url}}/files/Designing-simulation-studies-using-R.pdf) from my presentation at this afternoon's Quant. Methods brown bag. I gave a very quick introduction to using R for conducting simulation studies. I hope it was enough to get people intrigued about the possibilities of using R in their own work.
+[Here are the slides](/files/Designing-simulation-studies-using-R.pdf) from my presentation at this afternoon's Quant. Methods brown bag. I gave a very quick introduction to using R for conducting simulation studies. I hope it was enough to get people intrigued about the possibilities of using R in their own work.
 
 The second half of the presentation sketched out a quick-and-dirty simulation of the [Behrens-Fisher problem](http://en.wikipedia.org/wiki/Behrens%E2%80%93Fisher_problem), or more specifically the coverage rates of 95% confidence intervals using Welch's degrees of freedom approximation, given independent samples with unequal variances. Here is [the complete code](https://gist.github.com/jepusto/7686463). As I mentioned in the talk, there's lots of room for improvement. The main point that I was trying to illustrate is that simulations have five distinct pieces:
 

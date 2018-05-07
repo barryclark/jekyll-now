@@ -1,0 +1,26 @@
+---
+title: Designing simulation studies using R
+author: 'James'
+date: '2013-12-06'
+slug: Designing-simulation-studies-using-R
+categories: []
+tags:
+  - R
+  - simulation
+header:
+  caption: ''
+  image: ''
+---
+
+
+
+<p><a href="/files/Designing-simulation-studies-using-R.pdf">Here are the slides</a> from my presentation at this afternoon’s Quant. Methods brown bag. I gave a very quick introduction to using R for conducting simulation studies. I hope it was enough to get people intrigued about the possibilities of using R in their own work.</p>
+<p>The second half of the presentation sketched out a quick-and-dirty simulation of the <a href="http://en.wikipedia.org/wiki/Behrens%E2%80%93Fisher_problem">Behrens-Fisher problem</a>, or more specifically the coverage rates of 95% confidence intervals using Welch’s degrees of freedom approximation, given independent samples with unequal variances. Here is <a href="https://gist.github.com/jepusto/7686463">the complete code</a>. As I mentioned in the talk, there’s lots of room for improvement. The main point that I was trying to illustrate is that simulations have five distinct pieces:</p>
+<ol style="list-style-type: decimal">
+<li>a data generating model,</li>
+<li>an estimation procedure,</li>
+<li>performance criteria,</li>
+<li>an experimental design (parameter values and sample dimensions), and</li>
+<li>analysis and results.</li>
+</ol>
+<p>It is useful to write simulation code that reflects the structure, so that it is easy for you (or other people) to read, revise, extend, or re-run it. And then post it on your blog.</p>
