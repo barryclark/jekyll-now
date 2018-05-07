@@ -1,11 +1,15 @@
 ---
-layout: post
 title: Running R in parallel on the TACC
-date: December 20, 2013
-tags: [simulation]
+author: 'James'
+date: '2013-12-20'
+slug: parallel-R-on-TACC
+categories: []
+tags:
+  - R
+  - simulation
 ---
 
-UPDATE (4/8/2014): I have learned from [Mr. Yaakoub El Khamra](https://www.tacc.utexas.edu/staff/yaakoub-el-khamra) that he and the good folks at TACC have made some modifications to TACC's custom MPI implementation and R build in order to correct bugs in Rmpi and snow that were causing crashes. This post [has been updated]({{site.url}}/parallel-R-on-TACC-update) to reflect the modifications.
+UPDATE (4/8/2014): I have learned from [Mr. Yaakoub El Khamra](https://www.tacc.utexas.edu/staff/yaakoub-el-khamra) that he and the good folks at TACC have made some modifications to TACC's custom MPI implementation and R build in order to correct bugs in Rmpi and snow that were causing crashes. This post [has been updated](/parallel-R-on-TACC-update) to reflect the modifications.
 
 I've started to use the Texas Advanced Computing Cluster to run statistical simulations in R. It takes a little bit of time to get up and running, but once you do it is an amazing tool. To get started, you'll need
 
@@ -18,7 +22,7 @@ I've started to use the Texas Advanced Computing Cluster to run statistical simu
 
 I've been running my simulations using a combination of several packages that provide very high-level functionality for parallel computing, namely `foreach`, `doSNOW`, and the `maply` function in `plyr`. All of this runs on top of an `Rmpi` implementation developed by the folks at TACC ([more details here](https://portal.tacc.utexas.edu/documents/13601/901835/Parallel_R_Final.pdf/)). 
 
-In [an earlier post]({{site.url}}/Designing-simulation-studies-using-R/), I shared code for running a very simple simulation of the Behrens-Fisher problem. Here's [adapted code](https://gist.github.com/jepusto/8059893) for running the same simulation on Stampede. The main difference is that there are a few extra lines of code to set up a cluster, seed a random number generator, and pass necessary objects (saved in `source_func`) to the nodes of the cluster:
+In [an earlier post](/Designing-simulation-studies-using-R/), I shared code for running a very simple simulation of the Behrens-Fisher problem. Here's [adapted code](https://gist.github.com/jepusto/8059893) for running the same simulation on Stampede. The main difference is that there are a few extra lines of code to set up a cluster, seed a random number generator, and pass necessary objects (saved in `source_func`) to the nodes of the cluster:
 
 ```{r, eval=FALSE}
 library(Rmpi)
