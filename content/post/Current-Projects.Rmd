@@ -1,8 +1,15 @@
 ---
-layout: post
 title: Current projects
-date: August 20, 2013
-tags: [behavioral-observation, single-case-research, projects]
+author: 'James'
+date: '2013-08-20'
+slug: Current-Projects
+categories: []
+tags:
+  - behavioral observation
+  - single-case research
+header:
+  caption: ''
+  image: ''
 ---
 
 Interested in working with me? See below for descriptions of several potential projects. If you have interest and abilities that line up with one of these, feel free to contact me.
