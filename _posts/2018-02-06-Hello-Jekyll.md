@@ -26,6 +26,6 @@ It's also been a good opportunity to look at some new web frameworks and approac
 * [JekyllNow](http://www.jekyllnow.com/): a pre-configured GitHub Pages blog which can be forked and customised
 * [Sass](https://sass-lang.com/): a scripting language used to generate CSS
 * [YAML](http://yaml.org/): a human-readable data serialization language, commonly used for configuration files
-* [Liquid](https://shopify.github.io/liquid/): template lanugage for web apps
+* [Liquid](https://shopify.github.io/liquid/): template language for web apps
 
 I will be adding content and functionality as and when over the coming weeks, so please check back soon.
