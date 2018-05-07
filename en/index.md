@@ -83,10 +83,11 @@ Come to one of our meetups in [Athens](https://www.meetup.com/BlockchainGreece-0
 - [stampd](https://stampd.io)
 - [BitforTip](https://www.bitfortip.com)
 - [CoinLib](https://coinlib.io)
+- The [BlockHero](https://blockhero.ai) portfolio tracker
 - The [Hellenic Blockchain Hub](http://blockchain.org.gr) non-profit organization
 - The [Cyprus Blockchain Technologies](http://cybt.eu) non-profit organization
 
-Last update: 2018-04-12
+Last update: 2018-05-07
 
 <!-- <div class="posts">
   {% for post in site.posts %}

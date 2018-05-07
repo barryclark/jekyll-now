@@ -230,10 +230,11 @@ title: Πως αγοράζουμε, πουλάμε, ξοδεύουμε και δ
 - Το [stampd](https://stampd.io)
 - Το [BitforTip](https://www.bitfortip.com)
 - Το [CoinLib](https://coinlib.io)
+- Το [BlockHero](https://blockhero.ai) portfolio tracker
 - Ο Μη-Κερδοσκοπικός Οργανισμός [Hellenic Blockchain Hub](http://blockchain.org.gr)
 - Ο Μη-Κερδοσκοπικός Οργανισμός [Cyprus Blockchain Technologies](http://cybt.eu)
 
-Τελευταία ενημέρωση: 2018-04-12
+Τελευταία ενημέρωση: 2018-05-07
 
 <!-- <div class="posts">
   {% for post in site.posts %}
