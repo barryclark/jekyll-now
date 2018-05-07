@@ -1,8 +1,15 @@
 ---
-layout: post
 title: 2SLS standard errors and the delta-method
-date: October 7, 2017
-tags: [instrumental-variables, delta-method]
+author: 'James'
+date: '2017-10-07'
+slug: delta-method-and-2SLS-SEs
+categories: []
+tags:
+  - instrumental variables
+  - delta method
+header:
+  caption: ''
+  image: ''
 ---
 
 I just covered instrumental variables in my course on causal inference, and so I have two-stage least squares (2SLS) estimation on the brain. In this post I'll share something I realized in the course of prepping for class: that standard errors from 2SLS estimation are equivalent to delta method standard errors based on the Wald IV estimator. (I'm no econometrician, so this had never occurred to me before. Perhaps it will be interesting to other non-econometrician readers. And perhaps the econometricians can point me to the relevant page in Wooldridge or Angrist and Pischke or whomever that explains this better than I have.)

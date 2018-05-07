@@ -1,8 +1,15 @@
 ---
-layout: post
 title: "New paper: Using response ratios for meta-analyzing SCDs with behavioral outcomes"
-date: March 16, 2018
-tags: [single-case-research, effect-sizes]
+author: 'James'
+date: '2018-03-16'
+slug: using-response-ratios-paper
+categories: []
+tags:
+  - single case research
+  - effect sizes
+header:
+  caption: ''
+  image: ''
 ---
 
 I'm pleased to announce that my article "Using response ratios for meta-analyzing SCDs with behavioral outcomes" has been accepted at _Journal of School Psychology_. There's a multitude of ways that you can access this work:

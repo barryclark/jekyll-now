@@ -1,8 +1,16 @@
 ---
-layout: post
 title: Imputing covariance matrices for meta-analysis of correlated effects
-date: August 10, 2017
-tags: [meta-analysis, sandwiches, R, programming]
+author: 'James'
+date: '2017-08-10'
+slug: imputing-covariance-matrices-for-multi-variate-meta-analysis
+categories: []
+tags:
+  - meta-analysis
+  - sandwiches
+  - R
+header:
+  caption: ''
+  image: ''
 ---
 
 In many systematic reviews, it is common for eligible studies to contribute effect size estimates from not just one, but _multiple_ relevant outcome measures, for a common sample of participants. If those outcomes are orrelated, then [so too will be the effect size estimates]({{ site.url }}/Correlations-between-SMDs). To estimate the degree of correlation, you would need the sample correlation among the outcomes---information that is woefully uncommon for primary studies to report (and best of luck to you if you try to follow up with author queries). Thus, the meta-analyst is often left in a situation where the sampling _variances_ of the effect size estimates can be reasonably well approximated, but the sampling _covariances_ are unknown for some or all studies. 

@@ -1,8 +1,16 @@
 ---
-layout: post
 title: Pooling clubSandwich results across multiple imputations
-date: September 29, 2017
-tags: [sandwiches, R]
+author: 'James'
+date: '2017-09-27'
+slug: MI-with-clubSandwich
+categories: []
+tags:
+  - missing data
+  - sandwiches
+  - R
+header:
+  caption: ''
+  image: ''
 ---
 
 A colleague recently asked me about how to apply cluster-robust hypothesis tests and confidence intervals, as calculated with the [clubSandwich package](https://CRAN.R-project.org/package=clubSandwich), when dealing with multiply imputed datasets.

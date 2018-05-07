@@ -1,8 +1,15 @@
 ---
-layout: post
 title: "You wanna PEESE of d's?"
-date: April 27, 2017
-tags: [meta-analysis]
+author: 'James'
+date: '2017-04-27'
+slug: PET-PEESE-performance
+categories: []
+tags:
+  - meta-analysis
+  - publication bias
+header:
+  caption: ''
+  image: ''
 ---
 
 Publication bias---or more generally, outcome reporting bias or dissemination bias---is recognized as a critical threat to the validity of findings from research syntheses. In the areas with which I am most familiar (education and psychology), it has become more or less a requirement for research synthesis projects to conduct analyses to detect the presence of systematic outcome reporting biases. Some analyses go further by trying correct for its distorting effects on average effect size estimates. Widely known analytic techniques for doing so include Begg and Mazumdar's [rank-correlation test](https://dx.doi.org/10.2307/2533446), the Trim-and-Fill technique proposed by [Duval and Tweedie](https://dx.doi.org/10.2307/2669529), and [Egger regression](https://dx.doi.org/10.1136/bmj.315.7109.629) (in its [many variants](https://dx.doi.org/10.1186/1471-2288-9-2)). Another class of methods involves selection models (or weight function models), as proposed by [Hedges and Vevea](https://dx.doi.org/10.1007/BF02294384), [Vevea and Woods](https://dx.doi.org/10.1037/1082-989X.10.4.428), and others. As far as I can tell, selection models are well known among methodologists but very seldom applied due to their complexity and lack of ready-to-use software (though [an R package](https://CRAN.R-project.org/package=weightr) has recently become available).  More recent proposals include the PET-PEESE technique introduced by [Stanley and Doucouliagos](https://dx.doi.org/10.1002/jrsm.1095); Simonsohn, Nelson, and Simmon's [p-curve technique](https://dx.doi.org/10.1177/1745691614553988); Van Assen, Van Aert, and Wichert's [p-uniform](http://dx.doi.org/10.1037/met0000025), and others. The list of techniques grows by the day.

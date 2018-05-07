@@ -1,8 +1,15 @@
 ---
-layout: post
 title: "The siren song of significance"
-date: June 19, 2017
-tags: [pre-registration, hypothesis-testing]
+author: 'James'
+date: '2017-06-19'
+slug: Siren-song-of-significance
+categories: []
+tags:
+  - pre-registration
+  - hypothesis testing
+header:
+  caption: ''
+  image: ''
 ---
 
 How is statistical analysis like the Odyssey? Here's an analogy that I used in my research methods course last semester to explain the purpose of study pre-registration. If you've ever read the Odyssey, you'll recall the story of the Sirens, the enchanting lady-monsters whose singing lures to certain death any sailor who hears them. ([See Wikipedia for crib notes.](https://en.wikipedia.org/wiki/Siren_(mythology)#Odyssey)) On the advise of his witch-friend Circe, Odysseus pulls a stunt so that he can hear the song of the Sirens while still making it safely past. He instructs his crew to plug their ears with beeswax and then lash him to the mast of his boat. As they sail past the Sirens, Odysseus hears the beautiful voices come-hithering and begs his men to free him, but they tie him up tighter until they are all safely out of ear-shot. 

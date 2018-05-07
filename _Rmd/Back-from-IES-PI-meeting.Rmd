@@ -1,8 +1,15 @@
 ---
-layout: post
 title: "Back from the IES PI meeting"
-date: January 10, 2018
-tags: [single-case-research, hypothesis-testing]
+author: 'James'
+date: '2018-01-10'
+slug: Back-from-IES-PI-meeting
+categories: []
+tags:
+  - single case research
+  - hypothesis testing
+header:
+  caption: ''
+  image: ''
 ---
 
 I'm just back from the Institute of Education Sciences' Principle Investigators conference in Washington D.C. It was an envigorating trip for me, and not only because of the opportunity to catch up with colleagues and friends from across the country. A running theme across several of the keynote addresses was the importance of increasing the transparency and replicability of education research, and it was exciting to hear about promising reforms underway and to talk about how to change the norms of our discipline(s). 

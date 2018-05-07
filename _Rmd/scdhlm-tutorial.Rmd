@@ -1,8 +1,15 @@
 ---
-layout: post
 title: New tutorial paper on BC-SMD effect sizes
-date: December 19, 2016
-tags: [single-case-research, effect-sizes]
+author: 'James'
+date: '2016-12-19'
+slug: scdhlm-tutorial
+categories: []
+tags:
+  - single case research
+  - effect sizes
+header:
+  caption: ''
+  image: ''
 ---
 
 I'm pleased to announce that the [Campbell Collaboration](https://www.campbellcollaboration.org/) has just published a new discussion paper that I wrote with my colleagues Jeff Valentine and Emily Tanner-Smith about [between-case standardized mean difference effect sizes for single-case designs](https://campbellcollaboration.org/library/effect-sizes-single-case-designs-campbell-discussion-paper-1.html). 

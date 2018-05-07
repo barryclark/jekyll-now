@@ -1,8 +1,15 @@
 ---
-layout: post
 title: The multivariate delta method
-date: April 11, 2018
-tags: [delta-method, distribution-theory]
+author: 'James'
+date: '2018-04-11'
+slug: Multivariate-delta-method
+categories: []
+tags:
+  - delta method
+  - distribution theory
+header:
+  caption: ''
+  image: ''
 ---
 
 The delta method is surely one of the most useful techniques in classical statistical theory. It's perhaps a bit odd to put it this way, but I would say that the delta method is something like the precursor to the bootstrap, in terms of its utility and broad range of applications---both are "first-line" tools for solving statistical problems. There are many good references on the delta-method, ranging from [the Wikipedia page](https://en.wikipedia.org/wiki/Delta_method) to a short introduction in _The American Statistician_ ([Oehlert, 1992](https://doi.org/10.1080%2F00031305.1992.10475842)). Many statistical theory textbooks also include a longer or shorter discussion of the method (e.g., Stuart & Ord, 1996; Casella & Berger, 2002). 

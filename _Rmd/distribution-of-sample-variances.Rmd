@@ -1,8 +1,14 @@
 ---
-layout: post
 title: The sampling distribution of sample variances
-date: April 25, 2016
-tags: [distribution-theory]
+author: 'James'
+date: '2016-04-25'
+slug: distribution-of-sampling-variances
+categories: []
+tags:
+  - distribution theory
+header:
+  caption: ''
+  image: ''
 ---
 
 A colleague and her students asked me the other day whether I knew of a citation that gives the covariance between the sample variances of two outcomes from a common sample. This sort of question comes up in meta-analysis problems occasionally. I didn't know of a convenient reference that directly answers the question, but I was able to suggest some references that would help (listed below). While the students work on deriving it, I'll provide the answer here so that they can check their work. 
