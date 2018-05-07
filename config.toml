@@ -182,6 +182,9 @@ enableGitInfo = false
     'Book section'  # 6
   ]
 
+[permalinks]
+    post = "/:slug"
+    
   # Configuration of talk pages.
   [params.talks]
     # Show talk time?
