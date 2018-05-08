@@ -2,7 +2,7 @@
 title: Sampling variance of Pearson's r in a two-level design
 author: 'James'
 date: '2018-04-10'
-slug: 
+slug: variance-of-r-in-two-level-design
 categories: []
 tags:
   - effect sizes

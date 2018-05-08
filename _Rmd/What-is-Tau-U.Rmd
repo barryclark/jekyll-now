@@ -1,8 +1,15 @@
 ---
-layout: post
 title: What is Tau-U?
-date: November 3, 2016
-tags: [effect-sizes, single-case-research]
+author: 'James'
+date: '2016-11-03'
+slug: What-is-Tau-U
+categories: []
+tags:
+  - effect sizes
+  - single-case research
+header:
+  caption: ''
+  image: ''
 ---
 
 [Parker, Vannest, Davis, and Sauber (2011)](http://dx.doi.org/10.1016/j.beth.2010.08.006) proposed the Tau-U index---actually several indices, rather---as effect size measures for single-case designs. The original paper describes several different indices that involve corrections for trend during the baseline phase, treatment phase, both phases, or neither phase. Without correcting for trends in either phase, the index is equal to the Mann-Whitney $U$ statistic calculated by comparing every pair of observations containing one point from each phase, scaled by the total number of such pairs. This version, which I'll call just "Tau", is simply a [linear re-scaling of the NAP statistic]({{site.url}}/NAP-SEs-and-CIs) to the range [-1,1]. 

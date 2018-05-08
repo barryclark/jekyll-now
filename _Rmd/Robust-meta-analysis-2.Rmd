@@ -1,8 +1,16 @@
 ---
-layout: post
 title: Another meta-sandwich
-date: April 23, 2014
-tags: [meta-analysis, sandwiches]
+author: 'James'
+date: '2014-04-23'
+slug: Robust-meta-analysis-2
+categories: []
+tags:
+  - meta-analysis
+  - sandwiches
+  - R
+header:
+  caption: ''
+  image: ''
 ---
 
 In [a previous post]({{site.url}}/Robust-meta-analysis-1/), I provided some code to do robust variance estimation with `metafor` and `sandwich`. 

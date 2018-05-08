@@ -1,8 +1,14 @@
 ---
-layout: post
 title: PIR and transformed PIR estimates of incidence
-date: June 3, 2016
-tags: [behavioral-observation]
+author: 'James'
+date: '2016-06-03'
+slug: PIR-for-rates
+categories: []
+tags:
+  - behavioral observation
+header:
+  caption: ''
+  image: ''
 ---
 
 ```{r}

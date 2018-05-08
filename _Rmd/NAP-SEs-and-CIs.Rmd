@@ -1,8 +1,15 @@
 ---
-layout: post
 title: Standard errors and confidence intervals for NAP
-date: February 28, 2016
-tags: [effect-sizes, single-case-research]
+author: 'James'
+date: '2016-02-28'
+slug: NAP-SEs-and-CIs
+categories: []
+tags:
+  - effect sizes
+  - single-case research
+header:
+  caption: ''
+  image: ''
 ---
 
 [Parker and Vannest (2009)](http://doi.org/10.1016/j.beth.2008.10.006) proposed non-overlap of all pairs (NAP) as an effect size index for use in single-case research. NAP is defined in terms of all pair-wise comparisons between the data points in two different phases for a given case (i.e., a treatment phase versus a baseline phase). For an outcome that is desirable to increase, NAP is the proportion of all such pair-wise comparisons where the treatment phase observation exceeds the baseline phase observation, with pairs that are exactly tied getting a weight of 1/2. NAP belongs to the family of non-overlap measures, which also includes the percentage of non-overlapping data, the improvement rate difference, and several other indices. It is exactly equivalent to [Vargha and Delaney's (2000)](http://doi.org/10.2307/1165329) modified Common Language Effect Size and has been proposed as an effect size index in other contexts too (e.g., [Acion, Peterson, Temple, & Arndt, 2006](http://doi.org/10.1002/sim.2256)). 

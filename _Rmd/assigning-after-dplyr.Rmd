@@ -1,8 +1,15 @@
 ---
-layout: post
 title: Assigning after dplyr
-date: May 13, 2016
-tags: [programming, R]
+author: 'James'
+date: '2016-05-13'
+slug: assigning-after-dplyr
+categories: []
+tags:
+  - R
+  - programming
+header:
+  caption: ''
+  image: ''
 ---
 
 Hadley Wickham's [dplyr](https://github.com/hadley/dplyr) and [tidyr](https://github.com/hadley/tidyr) packages completely changed the way I do data manipulation/munging in R. These packages make it possible to write shorter, faster, more legible, easier-to-intepret code to accomplish the sorts of manipulations that you have to do with practically any real-world data analysis. The legibility and interpretability benefits come from

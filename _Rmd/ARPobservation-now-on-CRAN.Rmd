@@ -2,7 +2,7 @@
 title: ARPobservation now on CRAN
 author: 'James'
 date: '2014-05-31'
-slug: 
+slug: ARPobservation-now-on-CRAN
 categories: []
 tags:
   - behavioral observation

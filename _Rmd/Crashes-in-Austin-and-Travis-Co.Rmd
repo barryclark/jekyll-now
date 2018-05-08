@@ -1,8 +1,14 @@
 ---
-layout: post
 title: Fatal crashes in Austin/Travis County
-date: August 20, 2015
-tags: [transportation]
+author: 'James'
+date: '2015-08-20'
+slug:
+categories: []
+tags:
+  - transportation
+header:
+  caption: ''
+  image: ''
 ---
 
 I have been hearing quite a bit lately about how there have been an unusually large number of fatal automobile crashes in Austin this year, resulting in a total of [69 fatalities (as of August 19th)](http://kxan.com/2015/08/19/southbound-i-35-closed-at-airport-blvd-after-fatal-crash/). Terrence Henry (of KUT) recently [did a story](http://kut.org/post/what-can-austin-do-stop-road-deaths) on this problem, and the City of Austin has convened the [Vision Zero Task Force](http://austintexas.gov/department/vision-zero-task-force) to figure out what policies to implement in order to prevent these deaths. KUT published [an interactive map](http://kut.org/post/map-austins-traffic-fatalities-so-far-2015) showing the locations of the fatal crashes and the Vision Zero Task Force put together a [heat map](http://austintexas.gov/sites/default/files/files/Imagine_Austin/VisionZero/CRASHES_allmodes_revised8_6_15.pdf) showing the locations of crashes over the past five years.

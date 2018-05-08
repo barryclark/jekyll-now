@@ -1,8 +1,15 @@
 ---
-layout: post
 title: Tau-U
-date: March 23, 2016
-tags: [effect-sizes, single-case-research]
+author: 'James'
+date: '2016-03-23'
+slug: Tau-U
+categories: []
+tags:
+  - effect sizes
+  - single-case research
+header:
+  caption: ''
+  image: ''
 ---
 
 [Parker, Vannest, Davis, and Sauber (2011)](http://doi.org/10.1016/j.beth.2010.08.006) proposed Tau-U as an effect size measure for use in single-case designs that exhibit baseline trend. In their original paper, they actually conceptualize Tau-U as a family of four distinct indices, distinguished by a) whether the index includes an adjustment for the presence of baseline trend and b) whether the index incorporates information about trend during the intervention phase. However, in subsequent presentations the authors seem to have focused exclusively on the index that adjusts for baseline trend but not for intervention phase trend, and so I'll do the same here. (This version is also the one available in the web-tool at [singlecaseresearch.org](http://singlecaseresearch.org/calculators).)

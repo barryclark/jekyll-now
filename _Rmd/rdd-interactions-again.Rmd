@@ -1,8 +1,15 @@
 ---
-layout: post
 title: Estimating average effects in regression discontinuities with covariate interactions
-date: January 27, 2016
-tags: [econometrics, R]
+author: 'James'
+date: '2016-01-27'
+slug: rdd-interactions-again
+categories: []
+tags:
+  - econometrics
+  - R
+header:
+  caption: ''
+  image: ''
 ---
 
 Regression discontinuity designs (RDDs) are now a widely used tool for program evaluation in economics and many other fields. RDDs occur in situations where some treatment/program of interest is assigned on the basis of a numerical score (called the running variable), all units scoring above a certain threshold receiving treatment and all units scoring at or below the threshold having treatment withheld (or vice versa, with treatment assigned to units scoring below the threshold). This mechanism provides a way to identify the __marginal average treatment effect__ (MATE): the average effect of treatment assignment for units on the cusp of the threshold. 

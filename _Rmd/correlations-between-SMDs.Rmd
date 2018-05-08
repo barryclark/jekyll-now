@@ -1,8 +1,15 @@
 ---
-layout: post
 title: Correlations between standardized mean differences
-date: September 17, 2015
-tags: [meta-analysis, effect-sizes]
+author: 'James'
+date: '2015-09-17'
+slug: correlations-between-SMDs
+categories: []
+tags:
+  - meta-analysis
+  - effect sizes
+header:
+  caption: ''
+  image: ''
 ---
 
 Several students and colleagues have asked me recently about an issue that comes up in multivariate meta-analysis when some of the studies include multiple treatment groups and multiple outcome measures. In this situation, one might want to include effect size estimates for each treatment group and each outcome measure. In order to do so in fully multivariate meta-analysis, estimates of the covariances among all of these efffect sizes are needed. The covariance among effect sizes arises for several reasons: 

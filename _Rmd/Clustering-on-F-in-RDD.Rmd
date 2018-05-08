@@ -1,9 +1,15 @@
 ---
-layout: post
 title: Clustering on the forcing variable in regression discontinuity designs
-author: James E. Pustejovsky
-date: June 13, 2016
-tags: [econometrics, sandwiches]
+author: 'James'
+date: '2016-06-13'
+slug: Clustering-on-F-in-RDD
+categories: []
+tags:
+  - sandwiches
+  - econometrics
+header:
+  caption: ''
+  image: ''
 ---
 
 # Notation and estimators

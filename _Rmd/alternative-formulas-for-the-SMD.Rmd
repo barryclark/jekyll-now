@@ -1,8 +1,16 @@
 ---
-layout: post
 title: Alternative formulas for the standardized mean difference
-date: June 3, 2016
-tags: [meta-analysis, effect-sizes, distribution-theory]
+author: 'James'
+date: '2016-06-03'
+slug: alternative-formulas-for-the-SMD
+categories: []
+tags:
+  - meta-analysis
+  - effect sizes
+  - distribution theory
+header:
+  caption: ''
+  image: ''
 ---
 
 The standardized mean difference (SMD) is surely one of the best known and most widely used effect size metrics used in meta-analysis. In generic terms, the SMD parameter is defined as the difference in population means between two groups (often this difference represents the effect of some intervention), scaled by the population standard deviation of the outcome metric. Estimates of the SMD can be obtained from a wide variety of experimental designs, ranging from simple, completely randomized designs, to repeated measures designs, to cluster-randomized trials.

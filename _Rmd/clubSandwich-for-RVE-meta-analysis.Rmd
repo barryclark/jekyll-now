@@ -1,8 +1,16 @@
 ---
-layout: post
 title: The clubSandwich package for meta-analysis with RVE
-date: July 10, 2015
-tags: [meta-analysis, sandwiches]
+author: 'James'
+date: '2015-07-10'
+slug: clubSandwich-for-RVE-meta-analysis
+categories: []
+tags:
+  - meta-analysis
+  - sandwiches
+  - R
+header:
+  caption: ''
+  image: ''
 ---
 
 I've recently been working on small-sample correction methods for hypothesis tests in linear regression models with cluster-robust variance estimation. My colleague (and grad-schoolmate) Beth Tipton has developed small-sample adjustments for t-tests (of single regression coefficients) in the context of meta-regression models with robust variance estimation, and together we have developed methods for multiple-contrast hypothesis tests. We have an R package (called `clubSandwich`) that implements all this stuff, not only for meta-regression models but also for other models and contexts where cluster-robust variance estimation is often used.

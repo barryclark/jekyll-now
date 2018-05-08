@@ -1,8 +1,15 @@
 ---
-layout: post
 title: "New working paper: Procedural sensitivities of SCD effect sizes"
-date: October 17, 2016
-tags: [effect-sizes, single-case-research]
+author: 'James'
+date: '2016-10-17'
+slug: SCD-effect-size-sensitivities
+categories: []
+tags:
+  - effect sizes
+  - single-case research
+header:
+  caption: ''
+  image: ''
 ---
 
 I've just posted a new version of my working paper, _Procedural sensitivities of effect sizes for single-case designs with behavioral outcome measures_. The abstract is below. This version is a major update of an [earlier paper]({{ site.url }}/files/Pustejovsky-2015-Nov-Non-overlap-measures.pdf) that focused only on the non-overlap measures. The new version also includes analysis of two other effect sizes (the within-case standardized mean difference and the log response ratio) as well as additional results and more succinct summaries of the main findings. 

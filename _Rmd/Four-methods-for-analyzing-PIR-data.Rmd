@@ -1,8 +1,15 @@
 ---
-layout: post
 title: "New article: Four methods for analyzing PIR data"
-date: February 11, 2015
-tags: [behavioral-observation, single-case-research]
+author: 'James'
+date: '2015-02-11'
+slug: Four-methods-for-analyzing-PIR-data
+categories: []
+tags:
+  - behavioral observation
+  - single-case research
+header:
+  caption: ''
+  image: ''
 ---
 
 My article with Daniel Swan, "Four methods for analyzing partial interval recording data, with application to single-case research" has been accepted for publication in Multivariate Behavioral Research. In an extension of my earlier paper on [measurement-comparable effect sizes]({{ site.url }}/files/Measurement-comparable-ES.pdf) for single-case studies, this article provides some approaches to estimating effect sizes from single-case studies that use partial interval or whole interval recording to measure behavioral outcomes. The full abstract is below. [Preprint]({{ site.url }}/files/4-PIR-methods-MBR.pdf) and [supporting materials]({{ site.url }}/files/4-PIR-Methods-Appendix.pdf) are available. R functions that implement the proposed methods are available in the package [ARPobservation](https://cran.r-project.org/web/packages/ARPobservation/).

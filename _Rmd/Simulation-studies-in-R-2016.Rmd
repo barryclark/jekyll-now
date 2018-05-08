@@ -1,8 +1,16 @@
 ---
-layout: post
 title: Simulation studies in R (Fall, 2016 version)
-date: September 28, 2016
-tags: [simulation]
+author: 'James'
+date: '2016-09-28'
+slug: Simulation-studies-in-R-2016
+categories: []
+tags:
+  - R
+  - simulation
+  - programming
+header:
+  caption: ''
+  image: ''
 ---
 
 In today's Quant Methods colloquium, I gave an introduction to the logic and purposes of Monte Carlo simulation studies, with examples written in R. 

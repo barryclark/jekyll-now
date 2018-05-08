@@ -1,8 +1,15 @@
 ---
-layout: post
 title: "Bug in nlme::lme with fixed sigma and REML estimation"
-date: November 7, 2016
-tags: [programming]
+author: 'James'
+date: '2016-11-07'
+slug: Bug-in-nlme-with-fixed-sigma
+categories: []
+tags:
+  - R
+  - programming
+header:
+  caption: ''
+  image: ''
 ---
 
 About one year ago, the `nlme` package introduced a feature that allowed the user to specify a fixed value for the residual variance in linear mixed effect models fitted with `lme()`. This feature is interesting to me because, when used with the `varFixed()` specification for the residual weights, it allows for estimation of a wide variety of meta-analysis models, including basic random effects models, bivariate models for estimating effects by trial arm, and other sorts of multivariate/multi-level random effects models. However, in kicking the tires on this feature, I noticed that the results that it produces are not quite consistent with the results produced by `metafor`, which is the main package I use for fitting meta-analytic models. 

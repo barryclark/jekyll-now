@@ -1,8 +1,0 @@
----
-layout: post
-title: Accounting for cluster-dependence in regression discontinuities
-date: February 7, 2016
-tags: [econometrics, R]
----
-
-The What Works Clearinghouse [recently posted new design standards](http://ies.ed.gov/ncee/wwc/pdf/reference_resources/wwc_rdd_standards_122315.pdf) for regression discontinuity designs. 

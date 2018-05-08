@@ -2,7 +2,7 @@
 title: "Wanted: PIR data"
 author: 'James'
 date: '2014-09-03'
-slug: 
+slug: wanted-PIR-data
 categories: []
 tags:
   - behavioral observation
