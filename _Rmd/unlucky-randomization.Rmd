@@ -1,8 +1,14 @@
 ---
-layout: post
 title: Unlucky randomization
-date: May 11, 2016
-tags: [experimental-design]
+author: 'James'
+date: '2016-05-11'
+slug: unlucky-randomization
+categories: []
+tags:
+  - experimental design
+header:
+  caption: ''
+  image: ''
 ---
 
 A colleague asked me the other day:

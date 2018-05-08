@@ -1,8 +1,14 @@
 ---
-layout: post
 title: "New article: Alternating renewal process models for behavioral observation"
-date: October 16, 2014
-tags: [behavioral-observation]
+author: 'James'
+date: '2014-10-16'
+slug: 
+categories: []
+tags:
+  - behavioral observation
+header:
+  caption: ''
+  image: ''
 ---
 
 My article with Chris Runyon, titled “Alternating renewal process models for behavioral observation: Simulation methods, software , and validity illustrations” has been published in Behavioral Disorders. The abstract is below. [Postprint available here]({{ site.url }}/files/Pustejovsky-Runyon-2015.pdf). All of the examples in the paper are available in the R package [ARPobservation](https://cran.r-project.org/web/packages/ARPobservation/).

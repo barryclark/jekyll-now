@@ -5,7 +5,7 @@ date: '2018-01-10'
 slug: procedural-sensitivities-paper
 categories: []
 tags:
-  - single case research
+  - single-case research
   - effect sizes
 header:
   caption: ''

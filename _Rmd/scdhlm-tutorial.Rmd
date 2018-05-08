@@ -5,7 +5,7 @@ date: '2016-12-19'
 slug: scdhlm-tutorial
 categories: []
 tags:
-  - single case research
+  - single-case research
   - effect sizes
 header:
   caption: ''

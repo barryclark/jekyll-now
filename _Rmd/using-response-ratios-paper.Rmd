@@ -5,7 +5,7 @@ date: '2018-03-16'
 slug: using-response-ratios-paper
 categories: []
 tags:
-  - single case research
+  - single-case research
   - effect sizes
 header:
   caption: ''
