@@ -36,7 +36,7 @@ HTJ
 To exactly re-produce the results with `metafor`, I'll need to use the weights proposed by HTJ. In their approach to the correlated effects case, effect size $i$ from study $j$ receives weight equal to $\left[\left(v_{\cdot j} + \hat\tau^2\right)(1 + (k_j - 1) \rho)\right]^{-1}$, where $v_{\cdot j}$ is the average sampling variance of the effect sizes from study $j$, $\hat\tau^2$ is an estimate of the between-study variance, $k_j$ is the number of correlated effects in study $j$, and $\rho$ is a user-specified value of the intra-study correlation. However, it appears that `robumeta` actually uses a slightly different set weights, which are equivalent to taking $\rho = 1$. I calculate the latter weights, fit the model in `metafor`, and output the robust standard errors and $t$-tests:
 
 ```{r, message=FALSE}
-devtools::source_gist("https://gist.github.com/jepusto/11144005")
+devtools::source_gist(id = "11144005", filename = "metafor-sandwich.R")
 
 corrdat <- within(corrdat, {
   var_mean <- tapply(var, studyid, mean)[studyid]

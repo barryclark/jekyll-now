@@ -1,0 +1,49 @@
+---
+title: Getting started with scdhlm
+author: 'James'
+date: '2014-10-19'
+slug: getting-started-with-scdhlm
+categories: []
+tags:
+  - single-case research
+  - R
+header:
+  caption: ''
+  image: ''
+---
+
+
+
+<p><strong>UPDATED 10/2/2016 after posting the package to CRAN</strong></p>
+<p>Here are step-by-step instructions on how to download and install the scdhlm package for R. You’ll need to have a <a href="http://cran.us.r-project.org/">copy of R installed</a>. There are two ways to do the installation: through the Comprehensive R Archive Network (CRAN) or from the source code on Github. I describe each approach in turn.</p>
+<div id="option-1-via-cran" class="section level3">
+<h3>Option 1: Via CRAN</h3>
+<p>Go via CRAN to install the most recent stable version of the package. Type the following commands at the R prompt:</p>
+<pre class="r"><code>install.packages(&quot;scdhlm&quot;)
+library(scdhlm)</code></pre>
+</div>
+<div id="option-2-via-github" class="section level3">
+<h3>Option 2: Via Github</h3>
+<p>Go via Github to get the latest development version of the package. For this option, you will first need to install the devtools package:</p>
+<pre class="r"><code>install.packages(&quot;devtools&quot;)</code></pre>
+<p>Once you have successfully installed this package, type the following:</p>
+<pre class="r"><code>library(devtools)
+install_github(&quot;jepusto/scdhlm&quot;)
+library(scdhlm)</code></pre>
+</div>
+<div id="further-instructions" class="section level3">
+<h3>Further instructions</h3>
+<p>You’ll only need to do the installation once. Once you’ve got the package installed, type the following in order to access the package within an R session: <code>library(scdhlm)</code>.</p>
+<p>To open the package documentation, type <code>package?scdhlm</code>. To access the documentation for an individual function in this package, just type <code>?</code> followed by the name of the function. For instance, one of the main functions in the package is called <code>g_REML</code>; to access its documentation, type <code>?g_REML</code>.</p>
+</div>
+<div id="web-interface-for-calculating-effect-sizes" class="section level3">
+<h3>web-interface for calculating effect sizes</h3>
+<p>The package includes an interactive app (written with <code>shiny</code>) for calculating design-comparable standardized mean differences. To run this app on your computer, you will first need to <a href="https://www.rstudio.com/products/rstudio/download/">install RStudio</a> (if you don’t already have it). Then ensure that you have the <code>shiny</code>, <code>markdown</code>, and <code>ggplot2</code> packages installed by running the following:</p>
+<pre class="r"><code>install.packages(&quot;shiny&quot;)
+install.packages(&quot;markdown&quot;)
+install.packages(&quot;ggplot2&quot;)</code></pre>
+<p>Finally, open the app by typing the following at the prompt within RStudio:</p>
+<pre class="r"><code>library(scdhlm)
+shine_scd()</code></pre>
+<p>The app should now open in your web browser.</p>
+</div>

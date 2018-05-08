@@ -1,0 +1,128 @@
+---
+title: Another meta-sandwich
+author: 'James'
+date: '2014-04-23'
+slug: Robust-meta-analysis-2
+categories: []
+tags:
+  - meta-analysis
+  - sandwiches
+  - R
+header:
+  caption: ''
+  image: ''
+---
+
+
+
+<p>In <a href="/Robust-meta-analysis-1/">a previous post</a>, I provided some code to do robust variance estimation with <code>metafor</code> and <code>sandwich</code>.
+Here’s another example, replicating some more of the calculations from <a href="http://doi.org/10.1002/jrsm.1091">Tanner-Smith &amp; Tipton (2013)</a>.
+(<a href="https://gist.github.com/jepusto/11147304">See here</a> for the complete code.)</p>
+<p>As a starting point, here are the results produced by the <code>robumeta</code> package:</p>
+<pre class="r"><code>library(grid)
+library(robumeta)
+
+data(corrdat)
+rho &lt;- 0.8
+
+HTJ &lt;- robu(effectsize ~ males + college + binge,
+            data = corrdat, 
+            modelweights = &quot;CORR&quot;, rho = rho,
+            studynum = studyid,
+            var.eff.size = var, small = FALSE)
+HTJ</code></pre>
+<pre><code>## RVE: Correlated Effects Model  
+## 
+## Model: effectsize ~ males + college + binge 
+## 
+## Number of studies = 39 
+## Number of outcomes = 172 (min = 1 , mean = 4.41 , median = 4 , max = 18 )
+## Rho = 0.8 
+## I.sq = 75.08352 
+## Tau.sq = 0.1557714 
+## 
+##                Estimate  StdErr t-value dfs P(|t|&gt;) 95% CI.L 95% CI.U Sig
+## 1 X.Intercept.  0.31936 0.27784   1.149  35   0.258  -0.2447  0.88340    
+## 2        males -0.00331 0.00376  -0.882  35   0.384  -0.0109  0.00431    
+## 3      college  0.41226 0.18685   2.206  35   0.034   0.0329  0.79159  **
+## 4        binge  0.13774 0.12586   1.094  35   0.281  -0.1178  0.39326    
+## ---
+## Signif. codes: &lt; .01 *** &lt; .05 ** &lt; .10 *
+## ---</code></pre>
+<p>To exactly re-produce the results with <code>metafor</code>, I’ll need to use the weights proposed by HTJ. In their approach to the correlated effects case, effect size <span class="math inline">\(i\)</span> from study <span class="math inline">\(j\)</span> receives weight equal to <span class="math inline">\(\left[\left(v_{\cdot j} + \hat\tau^2\right)(1 + (k_j - 1) \rho)\right]^{-1}\)</span>, where <span class="math inline">\(v_{\cdot j}\)</span> is the average sampling variance of the effect sizes from study <span class="math inline">\(j\)</span>, <span class="math inline">\(\hat\tau^2\)</span> is an estimate of the between-study variance, <span class="math inline">\(k_j\)</span> is the number of correlated effects in study <span class="math inline">\(j\)</span>, and <span class="math inline">\(\rho\)</span> is a user-specified value of the intra-study correlation. However, it appears that <code>robumeta</code> actually uses a slightly different set weights, which are equivalent to taking <span class="math inline">\(\rho = 1\)</span>. I calculate the latter weights, fit the model in <code>metafor</code>, and output the robust standard errors and <span class="math inline">\(t\)</span>-tests:</p>
+<pre class="r"><code>devtools::source_gist(id = &quot;11144005&quot;, filename = &quot;metafor-sandwich.R&quot;)
+
+corrdat &lt;- within(corrdat, {
+  var_mean &lt;- tapply(var, studyid, mean)[studyid]
+  k &lt;- table(studyid)[studyid]
+  var_HTJ &lt;- as.numeric(k * (var_mean + as.numeric(HTJ$mod_info$tau.sq)))
+})
+
+meta1 &lt;- rma.mv(effectsize ~ males + college + binge, 
+                V = var_HTJ, 
+                data = corrdat, method = &quot;FE&quot;)
+meta1$cluster &lt;- corrdat$studyid
+RobustResults(meta1)</code></pre>
+<pre><code>## 
+## t test of coefficients:
+## 
+##           Estimate Std. Error t value Pr(&gt;|t|)  
+## intrcpt  0.3193586  0.2778360  1.1494  0.25816  
+## males   -0.0033143  0.0037573 -0.8821  0.38374  
+## college  0.4122631  0.1868489  2.2064  0.03401 *
+## binge    0.1377393  0.1258637  1.0944  0.28127  
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
+<p>One could specify a similar (though not exactly identical model) in <code>metafor</code> as follows. In the HTJ approach, <span class="math inline">\(\rho\)</span> represents the total correlation induced by both the within-study sampling error and intra-study correlation in true effects. In contrast, the <code>metafor</code> approach would take <span class="math inline">\(\rho\)</span> to be correlation due to within-study sampling error alone. I’ll first need to create a block-diagonal covariance matrix given a user-specified value of <span class="math inline">\(\rho\)</span>.</p>
+<pre class="r"><code>library(Matrix)
+equicorr &lt;- function(x, rho) {
+  corr &lt;- rho + (1 - rho) * diag(nrow = length(x))
+  tcrossprod(x) * corr 
+} 
+covMat &lt;- as.matrix(bdiag(with(corrdat, tapply(var_mean, studyid, equicorr, rho = 0.8, simplify = FALSE))))</code></pre>
+<p>Passing this block-diagonal covariance matrix to <code>rma.mv</code>, I now estimate the model</p>
+<p><span class="math display">\[T_{ij} = \mathbf{X}_{ij} \beta + \nu_i + e_{ij},\]</span></p>
+<p>where <span class="math inline">\(Var(\nu_i) = \sigma^2\)</span>, <span class="math inline">\(Var(e_{ij}) = v_{ij}\)</span>, and <span class="math inline">\(Cor(e_{ij}, e_{ik}) = \rho\)</span>. Note that <span class="math inline">\(\sigma^2\)</span> is now estimated via REML.</p>
+<pre class="r"><code>meta2 &lt;- rma.mv(yi = effectsize ~ males + college + binge, 
+                V = covMat, random = ~ 1 | studyid, 
+                data = corrdat,
+                method = &quot;REML&quot;)
+c(sigma.sq = meta2$sigma2)</code></pre>
+<pre><code>##  sigma.sq 
+## 0.2477825</code></pre>
+<p>The between-study heterogeneity estimate is considerably larger than the moment estimate from <code>robumeta</code>. Together with the difference in weighting, this leads to some changes in the coefficient estimates and their estimated precision:</p>
+<pre class="r"><code>RobustResults(meta2)</code></pre>
+<pre><code>## 
+## t test of coefficients:
+## 
+##           Estimate Std. Error t value Pr(&gt;|t|)   
+## intrcpt -0.8907096  0.4148219 -2.1472 0.038783 * 
+## males    0.0163074  0.0055805  2.9222 0.006052 **
+## college  0.3180139  0.2273396  1.3988 0.170658   
+## binge   -0.0984026  0.0897269 -1.0967 0.280265   
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
+<p>It is important to keep in mind that the estimate of between-study heterogeneity depends on the posited model for the covariance structure, including the assumed value of <span class="math inline">\(\rho\)</span>. HTJ recommend conducting sensitivity analysis across a range of values for the within-study effect correlation. Re-calculating the value of <span class="math inline">\(\sigma^2\)</span> for <span class="math inline">\(\rho\)</span> between 0.0 and 0.9 yields the following:</p>
+<pre class="r"><code>sigma2 &lt;- function(rho) {
+  covMat &lt;- as.matrix(bdiag(with(corrdat, tapply(var_mean, studyid, equicorr, rho = rho, simplify = FALSE))))
+  rma.mv(yi = effectsize ~ males + college + binge, 
+                  V = covMat, random = ~ 1 | studyid, 
+                  data = corrdat,
+                  method = &quot;REML&quot;)$sigma2
+}
+rho_sens &lt;- seq(0,0.9,0.1)
+sigma2_sens &lt;- sapply(rho_sens, sigma2)
+cbind(rho = rho_sens, sigma2 = round(sigma2_sens, 4))</code></pre>
+<pre><code>##       rho sigma2
+##  [1,] 0.0 0.2519
+##  [2,] 0.1 0.2513
+##  [3,] 0.2 0.2507
+##  [4,] 0.3 0.2502
+##  [5,] 0.4 0.2497
+##  [6,] 0.5 0.2492
+##  [7,] 0.6 0.2487
+##  [8,] 0.7 0.2482
+##  [9,] 0.8 0.2478
+## [10,] 0.9 0.2474</code></pre>
+<p>The between-study heterogeneity is quite insensitive to the assumed value of <span class="math inline">\(\rho\)</span>.</p>
+<p>The difference between the results based on <code>metafor</code> versus on <code>robumeta</code> appears to be due to the subtle difference in the weighting approach: <code>metafor</code> uses block-diagonal weights that contain off-diagonal terms for effects drawn from a common study, whereas <code>robumeta</code> uses entirely diagonal weights.</p>
