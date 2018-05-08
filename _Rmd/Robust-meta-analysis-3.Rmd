@@ -13,7 +13,7 @@ header:
   image: ''
 ---
 
-In an earlier post about sandwich standard errors for multi-variate meta-analysis, I [mentioned]({{site.url}}/Robust-meta-analysis-1/) that Beth Tipton has recently proposed small-sample corrections for the covariance estimators and t-tests, based on the bias-reduced linearization approach of [McCaffrey, Bell, and Botts (2001)](http://www.amstat.org/sections/SRMS/Proceedings/y2001/Proceed/00264.pdf). 
+In an earlier post about sandwich standard errors for multi-variate meta-analysis, I [mentioned](/Robust-meta-analysis-1/) that Beth Tipton has recently proposed small-sample corrections for the covariance estimators and t-tests, based on the bias-reduced linearization approach of [McCaffrey, Bell, and Botts (2001)](http://www.amstat.org/sections/SRMS/Proceedings/y2001/Proceed/00264.pdf). 
 You can find her forthcoming paper on the adjustments [here](http://blogs.cuit.columbia.edu/let2119/files/2013/03/Tipton-RVE-Small-to-share.pdf). 
 My understanding is that these small-sample corrections are important because the uncorrected sandwich estimators can lead to under-statement of uncertainty and inflated type I error rates when a given meta-regression coefficient is estimated from only a small or moderately sized sample of independent studies (or clusters of studies). 
 Moreover, it can be difficult to determine exactly when you have a large enough sample to trust the uncorrected sandwiches. 

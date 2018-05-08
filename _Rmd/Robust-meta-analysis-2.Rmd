@@ -13,7 +13,7 @@ header:
   image: ''
 ---
 
-In [a previous post]({{site.url}}/Robust-meta-analysis-1/), I provided some code to do robust variance estimation with `metafor` and `sandwich`. 
+In [a previous post](/Robust-meta-analysis-1/), I provided some code to do robust variance estimation with `metafor` and `sandwich`. 
 Here's another example, replicating some more of the calculations from [Tanner-Smith & Tipton (2013)](http://doi.org/10.1002/jrsm.1091). 
 ([See here](https://gist.github.com/jepusto/11147304) for the complete code.)
 
