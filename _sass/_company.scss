@@ -402,7 +402,7 @@
     }
 
     ul {
-      font-size: 18px;
+      font-size: 25px;
 
       @include mobile {
         margin: 32px;
@@ -422,19 +422,19 @@
       }
 
       & li:nth-child(1)::before {
-        content: url("https://empreguei.github.io/assets/svg/coin.svg");
+        content: url("/assets/svg/coin.svg");
       }
       & li:nth-child(2)::before {
-        content: url("https://empreguei.github.io/assets/svg/no-cv.svg");
+        content: url("/assets/svg/no-cv.svg");
       }
       & li:nth-child(3)::before {
-        content: url("https://empreguei.github.io/assets/svg/hand-shake--money.svg");
+        content: url("/assets/svg/hand-shake--money.svg");
       }
       & li:nth-child(4)::before {
-        content: url("https://empreguei.github.io/assets/svg/person--ok.svg");
+        content: url("/assets/svg/person--ok.svg");
       }
       & li:nth-child(5)::before {
-        content: url("https://empreguei.github.io/assets/svg/building--briefcase.svg");
+        content: url("/assets/svg/building--briefcase.svg");
       }
 
     }
@@ -515,15 +515,16 @@
     }
 
     img {
-      width: 64px;
-      height: 64px;
+      width: 100px;
+      height: 100px;
     }
 
     p {
       padding: 16px;
       color: $grey800;
       text-align: center;
-      font-weight: 300;
+      font-weight: 400;
+      font-size: 22px;
     }
   }
 }
