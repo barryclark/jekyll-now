@@ -52,7 +52,7 @@ The same applies in the case of machine translation.
 </video>
 
 
-The context is a vector (an array of numbers, basically) in the case of machine translation. The encoder and decoder tend to both be [recurrent neural networks]().
+The context is a vector (an array of numbers, basically) in the case of machine translation. The encoder and decoder tend to both be [recurrent neural networks](https://www.youtube.com/watch?v=UNmqTiOnRfg).
 
 <div class="img-div" markdown="0">
     <img src="/images/context.png" />
@@ -102,7 +102,7 @@ The context vector turned out to be a bottleneck for these types of models. It m
 
 Let's continue looking at attention models at this high level of abstraction. An attention model differs from a classic sequence-to-sequence model in two main ways:
 
-First, the encoder passes a lot more data to the encoder. Instead of passing the last hidden state of the encoding stage, the encoder passes _all_ the hidden states to the decoder:
+First, the encoder passes a lot more data to the decoder. Instead of passing the last hidden state of the encoding stage, the encoder passes _all_ the hidden states to the decoder:
 
 <video width="100%" height="auto" loop autoplay controls>
   <source src="/images/seq2seq_7.mp4" type="video/mp4">
