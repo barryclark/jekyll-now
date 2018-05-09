@@ -84,10 +84,11 @@ Come to one of our meetups in [Athens](https://www.meetup.com/BlockchainGreece-0
 - [BitforTip](https://www.bitfortip.com)
 - [CoinLib](https://coinlib.io)
 - The [BlockHero](https://blockhero.ai) portfolio tracker
+- One of [IOHK](https://iohk.io/team/)'s three research centres is in Athens
 - The [Hellenic Blockchain Hub](http://blockchain.org.gr) non-profit organization
 - The [Cyprus Blockchain Technologies](http://cybt.eu) non-profit organization
 
-Last update: 2018-05-07
+Last update: 2018-05-09
 
 <!-- <div class="posts">
   {% for post in site.posts %}
