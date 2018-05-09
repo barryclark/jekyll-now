@@ -136,7 +136,7 @@ $$
 \frac{se_b}{s_p} = \frac{2(1 - r)}{n},
 $$
 
-where $r$ is the sample correlation between the pre- and post-tests. The remaining question is what to use for $\nu$. Borenstein (2009) uses $\nu = n - 1$. My previous post [on the sampling covariance of sample variances]({{site.url}}/distribution-of-sample-variances/) gave the result that $\text{Var}(s_p^2) = \sigma^4 (1 + \rho^2) / (n - 1)$, which would instead suggest using 
+where $r$ is the sample correlation between the pre- and post-tests. The remaining question is what to use for $\nu$. Borenstein (2009) uses $\nu = n - 1$. My previous post [on the sampling covariance of sample variances](/distribution-of-sample-variances/) gave the result that $\text{Var}(s_p^2) = \sigma^4 (1 + \rho^2) / (n - 1)$, which would instead suggest using 
 
 $$
 \nu = \frac{2 (n - 1)}{1 + r^2}. 

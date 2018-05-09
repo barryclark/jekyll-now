@@ -14,7 +14,7 @@ header:
 
 [Parker, Vannest, Davis, and Sauber (2011)](http://doi.org/10.1016/j.beth.2010.08.006) proposed Tau-U as an effect size measure for use in single-case designs that exhibit baseline trend. In their original paper, they actually conceptualize Tau-U as a family of four distinct indices, distinguished by a) whether the index includes an adjustment for the presence of baseline trend and b) whether the index incorporates information about trend during the intervention phase. However, in subsequent presentations the authors seem to have focused exclusively on the index that adjusts for baseline trend but not for intervention phase trend, and so I'll do the same here. (This version is also the one available in the web-tool at [singlecaseresearch.org](http://singlecaseresearch.org/calculators).)
 
-Tau-U is an elaboration on their previously proposed effect sizes [NAP and Tau]({{site.url}}/NAP-SEs-and-CIs), which do not account for baseline trends. The index is calculated as follows. Suppose that we have data from A and B phases from a single case, where the baseline phase has $m$ observations and treatment phase has $n$ observations. Let $y^A_1,...,y^A_m$ denote the baseline phase data and $y^B_1,...,y^B_n$ denote the treatment phase data. Tau-U is then calculated as
+Tau-U is an elaboration on their previously proposed effect sizes [NAP and Tau](/NAP-SEs-and-CIs), which do not account for baseline trends. The index is calculated as follows. Suppose that we have data from A and B phases from a single case, where the baseline phase has $m$ observations and treatment phase has $n$ observations. Let $y^A_1,...,y^A_m$ denote the baseline phase data and $y^B_1,...,y^B_n$ denote the treatment phase data. Tau-U is then calculated as
 
 $$
 \text{Tau-U} = \frac{S_P - S_B}{mn}
@@ -69,7 +69,7 @@ $$
 \end{aligned}
 $$
 
-where $\Phi()$ is the standard normal cumulative distribution function. I can use the above formulas to calculate the average value of Tau-U for various degrees of baseline trend ($$\beta_1$$), level shift ($$\beta_2$$), and phase lengths ($$m,n$$). 
+where $\Phi()$ is the standard normal cumulative distribution function. I can use the above formulas to calculate the average value of Tau-U for various degrees of baseline trend $(\beta_1)$, level shift $(\beta_2)$, and phase lengths $(m,n)$. 
 
 ```{r, message = FALSE, fig.width = 10, fig.height = 10}
 E_TauU <- function(b1, b2, m, n) {
@@ -102,7 +102,7 @@ ggplot(TauU_values, aes(n, TauU, color = factor(m))) +
   theme_bw() + theme(legend.position = "bottom")
 ```
 
-In the figure above, each plot corresponds to a different value of the baseline slope ($$\beta_1$$, ranging from -0.2 in the top row to 0.2 in the bottom row) and treatment shift ($$\beta_2$$, ranging from 0 in the first column to 2 in the last column). Within each plot, the x axis corresponds to treatment phase length and the different lines correspond to different baseline phase lengths. The thing to note is that, when the baseline slope is non-zero, the expected value of Tau-U ranges quite widely within each plot, depending on the values of $m$ and $n$. For example, when $\beta_2 = 0$ (in the first column), the data follow a simple linear trend with no shift. If the slope of the trend is equal to -0.2 (the first row), then the expected magnitude of Tau-U ranges from `r round(min(ex$TauU), 2)` to `r round(max(ex$TauU), 2)` depending on the phase lengths, which is quite a wide range. 
+In the figure above, each plot corresponds to a different value of the baseline slope ($\beta_1$, ranging from -0.2 in the top row to 0.2 in the bottom row) and treatment shift ($\beta_2$, ranging from 0 in the first column to 2 in the last column). Within each plot, the x axis corresponds to treatment phase length and the different lines correspond to different baseline phase lengths. The thing to note is that, when the baseline slope is non-zero, the expected value of Tau-U ranges quite widely within each plot, depending on the values of $m$ and $n$. For example, when $\beta_2 = 0$ (in the first column), the data follow a simple linear trend with no shift. If the slope of the trend is equal to -0.2 (the first row), then the expected magnitude of Tau-U ranges from `r round(min(ex$TauU), 2)` to `r round(max(ex$TauU), 2)` depending on the phase lengths, which is quite a wide range. 
 
 Generally, the degree of sample size sensitivity depends on the absolute magnitude of the baseline slope, with steeper slopes leading to increased sensitivity. For steeper values of slope, it appears that the degree to which the measure is affected by sample size even swamps the degree to which the measure is sensitive to the magnitude of the treatment effect. Very peculiar.
 

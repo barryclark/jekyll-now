@@ -1,0 +1,222 @@
+---
+title: "Bug in nlme::getVarCov"
+author: 'James'
+date: '2016-08-10'
+slug: bug-in-nlme-getVarCov
+categories: []
+tags:
+  - R
+  - programming
+header:
+  caption: ''
+  image: ''
+---
+
+
+
+<p>I have recently been working to ensure that <a href="https://github.com/jepusto/clubSandwich">my <code>clubSandwich</code> package</a> works correctly on fitted <code>lme</code> and <code>gls</code> models from the <code>nlme</code> package, which is one of the main R packages for fitting hierarchical linear models. In the course of digging around in the guts of <code>nlme</code>, I noticed a bug in the <code>getVarCov</code> function. The purpose of the function is to extract the estimated variance-covariance matrix of the errors from a fitted <code>lme</code> or <code>gls</code> model.</p>
+<p>It seems that this function is sensitive to the order in which the input data are sorted. <a href="https://bugs.r-project.org/bugzilla3/show_bug.cgi?id=16744">This bug report</a> noted the problem, but unfortunately their proposed fix doesn’t seem to solve the problem. In this post I’ll demonstrate the bug and a solution. (I’m posting this here because the R project’s bug reporting system is currently closed to people who were not registered as of early July, evidently due to some sort of spamming problem.)</p>
+<div id="the-issue" class="section level1">
+<h1>The issue</h1>
+<p>Here’s a simple demonstration of the problem. I’ll first fit a <code>gls</code> model with a heteroskedastic variance function and an AR(1) auto-correlation structure (no need to worry about the substance of the specification—we’re just worried about computation here) and then extract the variances for each of the units.</p>
+<pre class="r"><code># Demonstrate the problem with gls model
+
+library(nlme)
+data(Ovary)
+
+gls_raw &lt;- gls(follicles ~ sin(2*pi*Time) + cos(2*pi*Time), data = Ovary,
+               correlation = corAR1(form = ~ 1 | Mare),
+               weights = varPower())
+
+Mares &lt;- levels(gls_raw$groups)
+V_raw &lt;- lapply(Mares, function(g) getVarCov(gls_raw, individual = g))</code></pre>
+<p>Now I’ll repeat the process using the same data, but sorted in a different order</p>
+<pre class="r"><code>Ovary_sorted &lt;- Ovary[with(Ovary, order(Mare, Time)),]
+gls_sorted &lt;- update(gls_raw, data = Ovary_sorted)
+
+V_sorted &lt;- lapply(Mares, function(g) getVarCov(gls_sorted, individual = g))</code></pre>
+<p>The variance component estimates are essentially equal:</p>
+<pre class="r"><code>all.equal(gls_raw$modelStruct, gls_sorted$modelStruct)</code></pre>
+<pre><code>## [1] TRUE</code></pre>
+<p>However, the extracted variance-covariance matrices are not:</p>
+<pre class="r"><code>all.equal(V_raw, V_sorted)</code></pre>
+<pre><code>## [1] &quot;Component 1: Mean relative difference: 0.03256&quot;   
+## [2] &quot;Component 3: Mean relative difference: 0.05830791&quot;
+## [3] &quot;Component 4: Mean relative difference: 0.1142209&quot; 
+## [4] &quot;Component 5: Mean relative difference: 0.03619692&quot;
+## [5] &quot;Component 6: Mean relative difference: 0.09260648&quot;
+## [6] &quot;Component 8: Mean relative difference: 0.08650327&quot;
+## [7] &quot;Component 9: Mean relative difference: 0.07627162&quot;
+## [8] &quot;Component 10: Mean relative difference: 0.018103&quot; 
+## [9] &quot;Component 11: Mean relative difference: 0.1020658&quot;</code></pre>
+<p>Here’s the code of the relevant function:</p>
+<pre class="r"><code>nlme:::getVarCov.gls</code></pre>
+<pre><code>## function (obj, individual = 1, ...) 
+## {
+##     S &lt;- corMatrix(obj$modelStruct$corStruct)[[individual]]
+##     if (!is.null(obj$modelStruct$varStruct)) {
+##         ind &lt;- obj$groups == individual
+##         vw &lt;- 1/varWeights(obj$modelStruct$varStruct)[ind]
+##     }
+##     else vw &lt;- rep(1, nrow(S))
+##     vars &lt;- (obj$sigma * vw)^2
+##     result &lt;- t(S * sqrt(vars)) * sqrt(vars)
+##     class(result) &lt;- c(&quot;marginal&quot;, &quot;VarCov&quot;)
+##     attr(result, &quot;group.levels&quot;) &lt;- names(obj$groups)
+##     result
+## }
+## &lt;bytecode: 0x000000000b6cff20&gt;
+## &lt;environment: namespace:nlme&gt;</code></pre>
+<p>The issue is in the 4th line of the body. <code>getVarCov.gls</code> assumes that <code>varWeights(obj$modelStruct$varStruct)</code> is sorted in the same order as <code>obj$groups</code>, which is not necessarily true. Instead, <code>varWeights</code> seem to return the weights sorted according to the grouping variable. For this example, that means that the <code>varWeights</code> will not depend on the order in which the groups are sorted.</p>
+<pre class="r"><code>identical(gls_raw$groups, gls_sorted$groups)</code></pre>
+<pre><code>## [1] FALSE</code></pre>
+<pre class="r"><code>identical(varWeights(gls_raw$modelStruct$varStruct), 
+          varWeights(gls_sorted$modelStruct$varStruct))</code></pre>
+<pre><code>## [1] TRUE</code></pre>
+</div>
+<div id="fix-for-nlmegetvarcov.gls" class="section level1">
+<h1>Fix for <code>nlme:::getVarCov.gls</code></h1>
+<p>I think this can be solved by either</p>
+<ul>
+<li>putting the <code>varWeights</code> back into the same order as the raw data or</li>
+<li>sorting <code>obj$groups</code> before identifying the rows corresponding to the specified <code>individual</code>.</li>
+</ul>
+<p>Here’s a revised function that takes the second approach:</p>
+<pre class="r"><code># proposed patch for getVarCov.gls
+
+getVarCov_revised_gls &lt;- function (obj, individual = 1, ...) {
+    S &lt;- corMatrix(obj$modelStruct$corStruct)[[individual]]
+    if (!is.null(obj$modelStruct$varStruct)) {
+        ind &lt;- sort(obj$groups) == individual
+        vw &lt;- 1 / varWeights(obj$modelStruct$varStruct)[ind]
+    }
+    else vw &lt;- rep(1, nrow(S))
+    vars &lt;- (obj$sigma * vw)^2
+    result &lt;- t(S * sqrt(vars)) * sqrt(vars)
+    class(result) &lt;- c(&quot;marginal&quot;, &quot;VarCov&quot;)
+    attr(result, &quot;group.levels&quot;) &lt;- names(obj$groups)
+    result
+}</code></pre>
+<p>Testing that it works correctly:</p>
+<pre class="r"><code>V_raw &lt;- lapply(Mares, function(g) getVarCov_revised_gls(gls_raw, individual = g))
+V_sorted &lt;- lapply(Mares, function(g) getVarCov_revised_gls(gls_sorted, individual = g))
+all.equal(V_raw, V_sorted)</code></pre>
+<pre><code>## [1] TRUE</code></pre>
+</div>
+<div id="fix-for-nlmegetvarcov.lme" class="section level1">
+<h1>Fix for <code>nlme:::getVarCov.lme</code></h1>
+<p>The same issue comes up in <code>getVarCov.lme</code>. Here’s the fix and verification:</p>
+<pre class="r"><code># proposed patch for getVarCov.lme
+
+getVarCov_revised_lme &lt;- function (obj, individuals, type = c(&quot;random.effects&quot;, &quot;conditional&quot;, &quot;marginal&quot;), ...) {
+    type &lt;- match.arg(type)
+    if (any(&quot;nlme&quot; == class(obj))) 
+        stop(&quot;not implemented for \&quot;nlme\&quot; objects&quot;)
+    if (length(obj$group) &gt; 1) 
+        stop(&quot;not implemented for multiple levels of nesting&quot;)
+    sigma &lt;- obj$sigma
+    D &lt;- as.matrix(obj$modelStruct$reStruct[[1]]) * sigma^2
+    if (type == &quot;random.effects&quot;) {
+        result &lt;- D
+    }
+    else {
+        result &lt;- list()
+        groups &lt;- sort(obj$groups[[1]])
+        ugroups &lt;- unique(groups)
+        if (missing(individuals)) 
+            individuals &lt;- as.matrix(ugroups)[1, ]
+        if (is.numeric(individuals)) 
+            individuals &lt;- ugroups[individuals]
+        for (individ in individuals) {
+            indx &lt;- which(individ == ugroups)
+            if (!length(indx)) 
+                stop(gettextf(&quot;individual %s was not used in the fit&quot;, 
+                  sQuote(individ)), domain = NA)
+            if (is.na(indx)) 
+                stop(gettextf(&quot;individual %s was not used in the fit&quot;, 
+                  sQuote(individ)), domain = NA)
+            ind &lt;- groups == individ
+            if (!is.null(obj$modelStruct$corStruct)) {
+                V &lt;- corMatrix(obj$modelStruct$corStruct)[[as.character(individ)]]
+            }
+            else V &lt;- diag(sum(ind))
+            if (!is.null(obj$modelStruct$varStruct)) 
+                sds &lt;- 1/varWeights(obj$modelStruct$varStruct)[ind]
+            else sds &lt;- rep(1, sum(ind))
+            sds &lt;- obj$sigma * sds
+            cond.var &lt;- t(V * sds) * sds
+            dimnames(cond.var) &lt;- list(1:nrow(cond.var), 1:ncol(cond.var))
+            if (type == &quot;conditional&quot;) 
+                result[[as.character(individ)]] &lt;- cond.var
+            else {
+                Z &lt;- model.matrix(obj$modelStruct$reStruc, getData(obj))[ind, 
+                  , drop = FALSE]
+                result[[as.character(individ)]] &lt;- cond.var + 
+                  Z %*% D %*% t(Z)
+            }
+        }
+    }
+    class(result) &lt;- c(type, &quot;VarCov&quot;)
+    attr(result, &quot;group.levels&quot;) &lt;- names(obj$groups)
+    result
+}
+
+lme_raw &lt;- lme(follicles ~ sin(2*pi*Time) + cos(2*pi*Time), 
+               random = ~ 1 | Mare,
+               correlation = corExp(form = ~ Time),
+               weights = varPower(),
+               data=Ovary)
+
+lme_sorted &lt;- update(lme_raw, data = Ovary_sorted)
+
+all.equal(lme_raw$modelStruct, lme_sorted$modelStruct)</code></pre>
+<pre><code>## [1] TRUE</code></pre>
+<pre class="r"><code># current getVarCov
+V_raw &lt;- lapply(Mares, function(g) getVarCov(lme_raw, individual = g, type = &quot;marginal&quot;))
+V_sorted &lt;- lapply(Mares, function(g) getVarCov(lme_sorted, individual = g, type = &quot;marginal&quot;))
+all.equal(V_raw, V_sorted)</code></pre>
+<pre><code>##  [1] &quot;Component 1: Component 1: Mean relative difference: 0.003989954&quot; 
+##  [2] &quot;Component 3: Component 1: Mean relative difference: 0.003784181&quot; 
+##  [3] &quot;Component 4: Component 1: Mean relative difference: 0.003028662&quot; 
+##  [4] &quot;Component 5: Component 1: Mean relative difference: 0.0005997944&quot;
+##  [5] &quot;Component 6: Component 1: Mean relative difference: 0.002350456&quot; 
+##  [6] &quot;Component 7: Component 1: Mean relative difference: 0.007103733&quot; 
+##  [7] &quot;Component 8: Component 1: Mean relative difference: 0.001887638&quot; 
+##  [8] &quot;Component 9: Component 1: Mean relative difference: 0.0009601843&quot;
+##  [9] &quot;Component 10: Component 1: Mean relative difference: 0.004748783&quot;
+## [10] &quot;Component 11: Component 1: Mean relative difference: 0.001521097&quot;</code></pre>
+<pre class="r"><code># revised getVarCov 
+V_raw &lt;- lapply(Mares, function(g) getVarCov_revised_lme(lme_raw, individual = g, type = &quot;marginal&quot;))
+V_sorted &lt;- lapply(Mares, function(g) getVarCov_revised_lme(lme_sorted, individual = g, type = &quot;marginal&quot;))
+all.equal(V_raw, V_sorted)</code></pre>
+<pre><code>## [1] TRUE</code></pre>
+</div>
+<div id="session-info" class="section level1">
+<h1>Session info</h1>
+<pre class="r"><code>sessionInfo()</code></pre>
+<pre><code>## R version 3.4.4 (2018-03-15)
+## Platform: x86_64-w64-mingw32/x64 (64-bit)
+## Running under: Windows 7 x64 (build 7601) Service Pack 1
+## 
+## Matrix products: default
+## 
+## locale:
+## [1] LC_COLLATE=English_United States.1252 
+## [2] LC_CTYPE=English_United States.1252   
+## [3] LC_MONETARY=English_United States.1252
+## [4] LC_NUMERIC=C                          
+## [5] LC_TIME=English_United States.1252    
+## 
+## attached base packages:
+## [1] methods   stats     graphics  grDevices utils     datasets  base     
+## 
+## other attached packages:
+## [1] nlme_3.1-131.1
+## 
+## loaded via a namespace (and not attached):
+##  [1] Rcpp_0.12.11    bookdown_0.7    lattice_0.20-35 digest_0.6.15  
+##  [5] rprojroot_1.2   grid_3.4.4      backports_1.1.0 magrittr_1.5   
+##  [9] evaluate_0.10   blogdown_0.6    stringi_1.1.5   rmarkdown_1.8  
+## [13] tools_3.4.4     stringr_1.2.0   xfun_0.1        yaml_2.1.14    
+## [17] compiler_3.4.4  htmltools_0.3.6 knitr_1.17</code></pre>
+</div>

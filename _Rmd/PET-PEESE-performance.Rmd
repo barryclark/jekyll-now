@@ -71,7 +71,7 @@ library(tidyr)
 library(dplyr)
 library(ggplot2)
 
-load("../files/PET-PEESE-Simulation-Results.Rdata")
+load("../../static/files/PET-PEESE-Simulation-Results.Rdata")
 
 ```
 
@@ -105,7 +105,7 @@ For each simulated meta-sample, I calculated the following:
 * the modified PEESE estimator, which I'll call "SPEESE"; and 
 * SPET-SPEESE, which follows the same conditional logic as PET-PEESE. 
 
-Simulation results are summarized across `r unique(params$reps)` replications. The R code for all this [lives here]({{ site.url}}/R/PET-PEESE-performance-simulations.R). Complete numerical results [live here]({{ site.url}}/files/PET-PEESE-Simulation-Results.Rdata). Code for creating the graphs below [lives here]({{ site.url }}/R/PET-PEESE-performance-graphs.R).
+Simulation results are summarized across `r unique(params$reps)` replications. The R code for all this [lives here](/R/PET-PEESE-performance-simulations.R). Complete numerical results [live here](/files/PET-PEESE-Simulation-Results.Rdata). Code for creating the graphs below [lives here](/R/PET-PEESE-performance-graphs.R).
 
 # Results
 

@@ -1,0 +1,111 @@
+---
+title: What is Tau-U?
+author: 'James'
+date: '2016-11-03'
+slug: What-is-Tau-U
+categories: []
+tags:
+  - effect sizes
+  - single-case research
+header:
+  caption: ''
+  image: ''
+---
+
+
+
+<p><a href="http://dx.doi.org/10.1016/j.beth.2010.08.006">Parker, Vannest, Davis, and Sauber (2011)</a> proposed the Tau-U index—actually several indices, rather—as effect size measures for single-case designs. The original paper describes several different indices that involve corrections for trend during the baseline phase, treatment phase, both phases, or neither phase. Without correcting for trends in either phase, the index is equal to the Mann-Whitney <span class="math inline">\(U\)</span> statistic calculated by comparing every pair of observations containing one point from each phase, scaled by the total number of such pairs. This version, which I’ll call just “Tau”, is simply a <a href="/NAP-SEs-and-CIs">linear re-scaling of the NAP statistic</a> to the range [-1,1].</p>
+<p>To correct for baseline trend, the original paper proposes to calculate Kendall’s rank correlation (<span class="math inline">\(\tau_A\)</span>) between the phase A outcome data and the session numbers and use the result to make an adjustment to Tau. The other analyses presented in the original paper (incorporating adjustments for time trends during the treatment phase) are not presented in subsequent review papers, nor are they implemented in <a href="http://singlecaseresearch.org/calculators">the web-calculator</a> created by the authors, and so I won’t discuss them further here. Instead, in this post I will examine the calculation of the version of Tau-U that incorporates a baseline trend correction. This version seems to be the most widely applied in practice (likely due to the availability of the web-calculator) and is presented in several review papers by the same authors. It turns out though, that the definition of the index has shifted from the original paper to subsequent presentations.</p>
+<p>To make this concrete, let me first define a couple of things. Suppose that we have data from the baseline and treatment phases for a single case, where the baseline phase has <span class="math inline">\(m\)</span> observations and treatment phase has <span class="math inline">\(n\)</span> observations. Let <span class="math inline">\(y^A_1,...,y^A_m\)</span> denote the baseline phase data and <span class="math inline">\(y^B_1,...,y^B_n\)</span> denote the treatment phase data. Let <span class="math inline">\(S_P\)</span> denote Kendall’s S statistic calculated for the comparison between phases and <span class="math inline">\(S_A\)</span> denote Kendall’s S statistic calculated on the baseline trend. More precisely,</p>
+<p><span class="math display">\[
+\begin{aligned}
+S_P &amp;= \sum_{i=1}^m \sum_{j=1}^n \left[I\left(y^B_j &gt; y^A_i\right) - I\left(y^B_j &lt; y^A_i\right)\right] \\
+S_A &amp;= \sum_{i=1}^{m - 1} \sum_{j = i + 1}^m \left[I\left(y^A_j &gt; y^A_i\right) - I\left(y^A_j &lt; y^A_i\right)\right].
+\end{aligned}
+\]</span></p>
+<p>Note that <span class="math inline">\(S_P\)</span> is calculated from <span class="math inline">\(m \times n\)</span> pairs of observations, and Tau (without trend correction) is equal to <span class="math inline">\(\text{Tau} = S_P / (m n)\)</span>. Furthermore, <span class="math inline">\(S_A\)</span> is calculated from <span class="math inline">\(m (m - 1) / 2\)</span> pairs of observations and Kendall’s rank correlation coefficient for the baseline phase observations is <span class="math inline">\(t_A = S_A / [m (m - 1) / 2]\)</span>.</p>
+<div id="the-original-version" class="section level2">
+<h2>The original version</h2>
+<p>In the original paper, the authors explain that values of Tau-U can be calculated by adding or substracting values of <span class="math inline">\(\tau\)</span>, weighted by the corresponding number of pairs. Thus, Tau-U would be calculated as</p>
+<p><span class="math display">\[
+\text{Tau-U} = \frac{S_P - S_A}{mn + m(m - 1) / 2} = \frac{2n}{2n + m - 1} \text{Tau} - \frac{m - 1}{2n + m - 1} t_A.
+\]</span></p>
+<p>Both <span class="math inline">\(\text{Tau}\)</span> and <span class="math inline">\(t_A\)</span> have range [-1,1], and so Tau-U has the same range. This version of Tau-U can be calculated using <a href="https://manolov.shinyapps.io/Overlap/">this web app by Rumen Manolov</a>, which is based on <a href="https://dl.dropboxusercontent.com/u/2842869/Tau_U.R">this R code by Kevin Tarlow</a>. (The app and the R script also provide the other variants of Tau-U described in <a href="http://dx.doi.org/10.1016/j.beth.2010.08.006">Parker, Vannest, Davis, and Sauber (2011)</a>.)</p>
+</div>
+<div id="the-revised-version" class="section level2">
+<h2>The revised (?) version</h2>
+<p><a href="http://dx.doi.org/10.1177/0145445511399147">Parker, Vannest, and Davis (2011)</a> reviewed nine different non-overlap indices for use with data from single-case designs, including Tau-U. Rather than describing all four variations from the original paper, the authors define the index as follows:</p>
+<blockquote>
+<p>Tau-U (Parker et al., in press) extends [Tau] to control for undesirable positive baseline trend (monotonic trend). Monotonic trend is the upward progression of data points in any configuration, whether linear, curvilinear, or even in a mixed pattern of “fits and starts” (p. 11).</p>
+</blockquote>
+<p>In this and subsequent review articles, Tau-U seems to refer exclusively to the variant involving comparison between phases A and B, with an adjustment for phase A trend. That seems a sensible enough choice, which could have been due to space limitations, guidance from the journal editor, or further refinement of the methods (i.e., recognizing which of the variants would be most useful in application). However, the presentation of Tau-U in this article involved more than a change in emphasis—the definition of the index also changed. Following the notation above, Tau-U was now defined as</p>
+<p><span class="math display">\[
+\text{Tau-U} = \frac{S_P - S_A}{mn} = \text{Tau} - \frac{m - 1}{2n} t_A.
+\]</span></p>
+<p>The logical range of this version of the index is from <span class="math inline">\(-(2n + m - 1) / (2n)\)</span> to <span class="math inline">\((2n + m - 1) / (2n)\)</span>.</p>
+<p>This is the version of Tau-U implemented in the <a href="http://singlecaseresearch.org/calculators">singlecaseresearch.org</a> web calculator. It is also the version described in a later chapter by the same authors (<a href="http://dx.doi.org/10.1037/14376-005">Parker, Vannest, &amp; Davis, 2014</a>) and a review article by <a href="http://dx.doi.org/10.1111/1467-8578.12091">Rakap (2015)</a>. <a href="/Tau-U">My previous post about Tau-U</a> also presented this version of the index and noted that its magnitude is sensitive to the lengths of the baseline and treatment phases, which makes it rather difficult to interpret the Tau-U index as a measure of treatment effect magnitude.</p>
+</div>
+<div id="comparison" class="section level2">
+<h2>Comparison</h2>
+<p>Here is an R function for calculating the original or revised versions of Tau-U:</p>
+<pre class="r"><code>Tau_U &lt;- function(A_data, B_data, version = &quot;revised&quot;) {
+    m &lt;- length(A_data)
+    n &lt;- length(B_data)
+    Q_A &lt;- sapply(A_data, function(j) (j &gt; A_data) - (j &lt; A_data))
+    Q_P &lt;- sapply(B_data, function(j) (j &gt; A_data) - (j &lt; A_data))
+    
+    if (version==&quot;original&quot;) {
+      (sum(Q_P) - sum(Q_A[upper.tri(Q_A)])) / (m * n + m * (m - 1) / 2)
+    } else {
+      (sum(Q_P) - sum(Q_A[upper.tri(Q_A)])) / (m * n)
+    }
+}</code></pre>
+<p>The papers I’ve mentioned above all provide examples of the calculation of Tau-U. The following table reports the data from each of these examples (<a href="http://dx.doi.org/10.1016/j.beth.2010.08.006">Parker, Vannest, Davis, and Sauber, 2011a</a>; <a href="http://dx.doi.org/10.1177/0145445511399147">Parker, Vannest, and Davis, 2011b</a>; <a href="http://dx.doi.org/10.1037/14376-005">Parker, Vannest, &amp; Davis, 2014</a>), along with the value of Tau-U based on the original and revised formulas. The differences in magnitude are non-trivial.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Source</th>
+<th align="left">Phase A data</th>
+<th align="left">Phase B data</th>
+<th align="right">original</th>
+<th align="right">revised</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">2011a, Figure 2</td>
+<td align="left">2, 3, 5, 3</td>
+<td align="left">4, 5, 5, 7, 6</td>
+<td align="right">0.5000000</td>
+<td align="right">0.6500000</td>
+</tr>
+<tr class="even">
+<td align="left">2011b, Figure 1</td>
+<td align="left">20, 20, 26, 25, 22, 23</td>
+<td align="left">28, 25, 24, 27, 30, 30, 29</td>
+<td align="right">0.5438596</td>
+<td align="right">0.7380952</td>
+</tr>
+<tr class="odd">
+<td align="left">2011b, Table 1</td>
+<td align="left">3, 3, 4, 5</td>
+<td align="left">4, 5, 6, 7, 7</td>
+<td align="right">0.4230769</td>
+<td align="right">0.5500000</td>
+</tr>
+<tr class="even">
+<td align="left">2014, Figure 4.1</td>
+<td align="left">22, 21, 23, 23, 23, 22</td>
+<td align="left">24, 22, 23, 23, 24, 26, 25</td>
+<td align="right">0.4385965</td>
+<td align="right">0.5952381</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="implications" class="section level2">
+<h2>Implications</h2>
+<p>Rather than one effect size index called “Tau-U”, there are instead two different definitions, which can lead to quite different values of the index. Given this, researchers who apply Tau-U should endeavor to <strong>be clear and unambiguous about which version of the index they use</strong>. This can be done by stating exactly which software routine, web-app, or formula was used in making the calculations. If the calculations are done using a computer script, then the script should be made available (e.g., through the <a href="https://osf.io/">Open Science Framework</a>) so that other researchers can replicate the calculations.</p>
+<p>Furthermore, researchers need to <strong>be careful about applying interpretive guidelines for Tau-U</strong>, since those guidelines will not apply uniformly across the different versions of the index.</p>
+<p>Finally, I would recommend that any researchers who conduct a meta-analysis of single-case research <strong>make available the raw data used for effect size calculations</strong>, so that other researchers can scrutinize, replicate, and extend their analyses. The whole enterprise of research synthesis rests on the availability of data from primary studies (at least in summary form). It seems to me that meta-analysts thus have a duty to make the data that they assemble and organize readily accessible for others to use. Particularly in the context of meta-analysis of single-case research—where new methods are developing rapidly and there is not currently consensus around best practices—it seems especially appropriate and prudent to make one’s data available for future re-analysis.</p>
+</div>

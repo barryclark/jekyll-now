@@ -2,7 +2,7 @@
 title: The sampling distribution of sample variances
 author: 'James'
 date: '2016-04-25'
-slug: distribution-of-sampling-variances
+slug: distribution-of-sample-variances
 categories: []
 tags:
   - distribution theory

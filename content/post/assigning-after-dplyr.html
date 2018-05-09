@@ -1,0 +1,151 @@
+---
+title: Assigning after dplyr
+author: 'James'
+date: '2016-05-13'
+slug: assigning-after-dplyr
+categories: []
+tags:
+  - R
+  - programming
+header:
+  caption: ''
+  image: ''
+---
+
+
+
+<p>Hadley Wickham’s <a href="https://github.com/hadley/dplyr">dplyr</a> and <a href="https://github.com/hadley/tidyr">tidyr</a> packages completely changed the way I do data manipulation/munging in R. These packages make it possible to write shorter, faster, more legible, easier-to-intepret code to accomplish the sorts of manipulations that you have to do with practically any real-world data analysis. The legibility and interpretability benefits come from</p>
+<ul>
+<li>using functions that are simple verbs that do exactly what they say (e.g., <code>filter</code>, <code>summarize</code>, <code>group_by</code>) and</li>
+<li>chaining multiple operations together, through the pipe operator <code>%&gt;%</code> from the <a href="https://cran.r-project.org/web/packages/magrittr/vignettes/magrittr.html">magrittr</a> package.</li>
+</ul>
+<p>Chaining is particularly nice because it makes the code read like a story. For example, here’s the code to calculate sample means for the baseline covariates in a little experimental dataset I’ve been working with recently:</p>
+<pre class="r"><code>library(dplyr)
+dat &lt;- read.csv(&quot;http://jepusto.github.io/data/Mineo_2009_data.csv&quot;)
+
+dat %&gt;%
+  group_by(Condition) %&gt;%
+  select(Age, starts_with(&quot;Baseline&quot;)) %&gt;%
+  summarise_each(funs(mean)) -&gt;
+  baseline_means</code></pre>
+<p>Each line of the code is a different action: first group the data by <code>Condition</code>, then select the relevant variables, then summarise each of the variables with its sample mean in each group. The results are stored in a dataset called <code>baseline_means</code>.</p>
+<p>As I’ve gotten familiar with <code>dplyr</code>, I’ve adopted the style of using the backwards assignment operator (<code>-&gt;</code>) to store the results of a chain of manipulations. This is perhaps a little bit odd—in all the rest of my code I stick with the forward assignment operator (<code>&lt;-</code>) with the object name on the left—but the alternative is to break the “flow” of the story, effectively putting the punchline before the end of the joke. Consider:</p>
+<pre class="r"><code>baseline_means &lt;- dat %&gt;%
+  group_by(Condition) %&gt;%
+  select(Age, starts_with(&quot;Baseline&quot;)) %&gt;%
+  summarise_each(funs(mean))</code></pre>
+<pre><code>## Adding missing grouping variables: `Condition`</code></pre>
+<pre><code>## `summarise_each()` is deprecated.
+## Use `summarise_all()`, `summarise_at()` or `summarise_if()` instead.
+## To map `funs` over all variables, use `summarise_all()`</code></pre>
+<p>That’s just confusing to me. So backward assignment operator it is.</p>
+<div id="assigning-as-a-verb" class="section level3">
+<h3>Assigning as a verb</h3>
+<p>My only problem with this convention is that, with complicated chains of manipulations, I often find that I need to tweak the order of the verbs in the chain. For example, I might want to summarize <em>all</em> of the variables, and only then select which ones to store:</p>
+<pre class="r"><code>dat %&gt;%
+  group_by(Condition) %&gt;%
+  summarise_each(funs(mean)) %&gt;%
+  select(Age, starts_with(&quot;Baseline&quot;)) -&gt;
+  baseline_means</code></pre>
+<pre><code>## `summarise_each()` is deprecated.
+## Use `summarise_all()`, `summarise_at()` or `summarise_if()` instead.
+## To map `funs` over all variables, use `summarise_all()`</code></pre>
+<pre><code>## Warning in mean.default(Expressive.Language): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(Expressive.Language): argument is not numeric or
+## logical: returning NA
+
+## Warning in mean.default(Expressive.Language): argument is not numeric or
+## logical: returning NA</code></pre>
+<p>In revising the code, it’s necessary to change the symbols at the end of the second and third steps, which is a minor hassle. It’s possible to do it by very carefully cutting-and-pasting the end of the second step through everything but the <code>-&gt;</code> after the third step, but that’s a delicate operation, prone to error if you’re programming after hours or after beer. Wouldn’t it be nice if every step in the chain ended with <code>%&gt;%</code> so that you could move around whole lines of code without worrying about the bit at the end?</p>
+<p>Here’s one crude way to end each link in the chain with a pipe:</p>
+<pre class="r"><code>dat %&gt;%
+  group_by(Condition) %&gt;%
+  select(Age, starts_with(&quot;Baseline&quot;)) %&gt;%
+  summarise_each(funs(mean)) %&gt;%
+  identity() -&gt; baseline_means</code></pre>
+<pre><code>## Adding missing grouping variables: `Condition`</code></pre>
+<pre><code>## `summarise_each()` is deprecated.
+## Use `summarise_all()`, `summarise_at()` or `summarise_if()` instead.
+## To map `funs` over all variables, use `summarise_all()`</code></pre>
+<p>But this is still pretty ugly—it’s got an extra function call that’s not a verb, and the name of the resulting object is tucked away in the middle of a line. What I need is a verb to take the results of a chain of operations and assign to an object. Base R has a suitable candidate here: the <code>assign</code> function. How about the following?</p>
+<pre class="r"><code>dat %&gt;%
+  group_by(Condition) %&gt;%
+  select(Age, starts_with(&quot;Baseline&quot;)) %&gt;%
+  summarise_each(funs(mean)) %&gt;%
+  assign(&quot;baseline_means_new&quot;, .)</code></pre>
+<pre><code>## Adding missing grouping variables: `Condition`</code></pre>
+<pre><code>## `summarise_each()` is deprecated.
+## Use `summarise_all()`, `summarise_at()` or `summarise_if()` instead.
+## To map `funs` over all variables, use `summarise_all()`</code></pre>
+<pre class="r"><code>exists(&quot;baseline_means_new&quot;)</code></pre>
+<pre><code>## [1] FALSE</code></pre>
+<p>This doesn’t work because of some subtlety with the environment into which <code>baseline_means_new</code> is assigned. A brute-force fix would be to specify that the assign should be into the global environment. This will probably work 90%+ of the time, but it’s still not terribly elegant.</p>
+<p>Here’s a function that searches the call stack to find the most recent invocation of itself that does not involve non-standard evaluation, then assigns to its parent environment:</p>
+<pre class="r"><code>put &lt;- function(x, name, where = NULL) {
+  if (is.null(where)) {
+    sys_calls &lt;- sys.calls()
+    put_calls &lt;- grepl(&quot;\\&lt;put\\(&quot;, sys_calls) &amp; !grepl(&quot;\\&lt;put\\(\\.&quot;,sys_calls)
+    where &lt;- sys.frame(max(which(put_calls)) - 1)
+  }
+  assign(name, value = x, pos = where)
+}</code></pre>
+<p>Here are my quick tests that this function is assigning to the right environment:</p>
+<pre class="r"><code>put(dat, &quot;dat1&quot;)
+dat %&gt;% put(&quot;dat2&quot;)
+
+f &lt;- function(dat, name) {
+  put(dat, &quot;dat3&quot;)
+  dat %&gt;% put(&quot;dat4&quot;)
+  put(dat, name)
+  c(exists(&quot;dat3&quot;), exists(&quot;dat4&quot;), exists(name))
+}
+
+f(dat,&quot;dat5&quot;)</code></pre>
+<pre><code>## [1] TRUE TRUE TRUE</code></pre>
+<pre class="r"><code>grep(&quot;dat&quot;,ls(), value = TRUE)</code></pre>
+<pre><code>## [1] &quot;dat&quot;  &quot;dat1&quot; &quot;dat2&quot;</code></pre>
+<p>This appears to work even if you’ve got multiple nested calls to <code>put</code>:</p>
+<pre class="r"><code>put(f(dat, &quot;dat6&quot;), &quot;dat7&quot;)
+grep(&quot;dat&quot;,ls(), value = TRUE)</code></pre>
+<pre><code>## [1] &quot;dat&quot;  &quot;dat1&quot; &quot;dat2&quot; &quot;dat7&quot;</code></pre>
+<pre class="r"><code>dat7</code></pre>
+<pre><code>## [1] TRUE TRUE TRUE</code></pre>
+<pre class="r"><code>f(dat, &quot;dat8&quot;) %&gt;% put(&quot;dat9&quot;)
+grep(&quot;dat&quot;,ls(), value = TRUE)</code></pre>
+<pre><code>## [1] &quot;dat&quot;  &quot;dat1&quot; &quot;dat2&quot; &quot;dat7&quot; &quot;dat9&quot;</code></pre>
+<pre class="r"><code>dat9</code></pre>
+<pre><code>## [1] TRUE TRUE TRUE</code></pre>
+</div>
+<div id="it-works-i-think" class="section level3">
+<h3>It works! (I think…)</h3>
+<p>To be consistent with the style of dplyr, let me also tweak the function to allow <code>name</code> to be the unquoted object name:</p>
+<pre class="r"><code>put &lt;- function(x, name, where = NULL) {
+  name_string &lt;- deparse(substitute(name))
+  if (is.null(where)) {
+    sys_calls &lt;- sys.calls()
+    put_calls &lt;- grepl(&quot;\\&lt;put\\(&quot;, sys_calls) &amp; !grepl(&quot;\\&lt;put\\(\\.&quot;,sys_calls)
+    where &lt;- sys.frame(max(which(put_calls)) - 1)
+  }
+  assign(name_string, value = x, pos = where)
+}</code></pre>
+<p>Returning to my original chain of manipulations, here’s how it looks with the new function:</p>
+<pre class="r"><code>dat %&gt;%
+  group_by(Condition) %&gt;%
+  select(Age, starts_with(&quot;Baseline&quot;)) %&gt;%
+  summarise_each(funs(mean)) %&gt;%
+  put(baseline_means_new)</code></pre>
+<pre><code>## Adding missing grouping variables: `Condition`</code></pre>
+<pre><code>## `summarise_each()` is deprecated.
+## Use `summarise_all()`, `summarise_at()` or `summarise_if()` instead.
+## To map `funs` over all variables, use `summarise_all()`</code></pre>
+<pre class="r"><code>print(baseline_means_new)</code></pre>
+<pre><code>## # A tibble: 3 x 4
+##   Condition   Age Baseline.Gaze Baseline.Vocalizations
+##   &lt;fct&gt;     &lt;dbl&gt;         &lt;dbl&gt;                  &lt;dbl&gt;
+## 1 OtherVR     122          91.9                   2.86
+## 2 SelfVid     121         102                     1.86
+## 3 SelfVR      139          95.5                   1.43</code></pre>
+<p>If you’ve been following along, let me know what you think of this. Is it a good idea, or is it dangerous? Are there cases where this will break? Can you think of a better name?</p>
+</div>

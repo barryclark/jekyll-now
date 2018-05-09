@@ -1,0 +1,95 @@
+---
+title: Tau-U
+author: 'James'
+date: '2016-03-23'
+slug: Tau-U
+categories: []
+tags:
+  - effect sizes
+  - single-case research
+header:
+  caption: ''
+  image: ''
+---
+
+
+
+<p><a href="http://doi.org/10.1016/j.beth.2010.08.006">Parker, Vannest, Davis, and Sauber (2011)</a> proposed Tau-U as an effect size measure for use in single-case designs that exhibit baseline trend. In their original paper, they actually conceptualize Tau-U as a family of four distinct indices, distinguished by a) whether the index includes an adjustment for the presence of baseline trend and b) whether the index incorporates information about trend during the intervention phase. However, in subsequent presentations the authors seem to have focused exclusively on the index that adjusts for baseline trend but not for intervention phase trend, and so I’ll do the same here. (This version is also the one available in the web-tool at <a href="http://singlecaseresearch.org/calculators">singlecaseresearch.org</a>.)</p>
+<p>Tau-U is an elaboration on their previously proposed effect sizes <a href="/NAP-SEs-and-CIs">NAP and Tau</a>, which do not account for baseline trends. The index is calculated as follows. Suppose that we have data from A and B phases from a single case, where the baseline phase has <span class="math inline">\(m\)</span> observations and treatment phase has <span class="math inline">\(n\)</span> observations. Let <span class="math inline">\(y^A_1,...,y^A_m\)</span> denote the baseline phase data and <span class="math inline">\(y^B_1,...,y^B_n\)</span> denote the treatment phase data. Tau-U is then calculated as</p>
+<p><span class="math display">\[
+\text{Tau-U} = \frac{S_P - S_B}{mn}
+\]</span></p>
+<p>where <span class="math inline">\(S_P\)</span> is Kendall’s S statistic calculated for the comparison between phases and <span class="math inline">\(S_B\)</span> is Kendall’s S statistic calculated on the baseline trend. More precisely,</p>
+<p><span class="math display">\[
+\begin{aligned}
+S_P &amp;= \sum_{i=1}^m \sum_{j=1}^n \left[I\left(y^B_j &gt; y^A_i\right) - I\left(y^B_j &lt; y^A_i\right)\right] \\
+S_B &amp;= \sum_{i=1}^{m - 1} \sum_{j = i + 1}^m \left[I\left(y^A_j &gt; y^A_i\right) - I\left(y^A_j &lt; y^A_i\right)\right].
+\end{aligned}
+\]</span></p>
+<p>Note that the first term in Tau-U is equivalent to <span class="math inline">\(\text{Tau} = S_P / (m n)\)</span>, which in turn is a re-scaling of NAP. The second term is related to the rank-correlation between the measurement occasions and outcomes in the baseline phase. Subtracting the second from the first thus adjusts for baseline trend, in the sense that more pronounced baseline trends will lead to smaller values of Tau-U. But looking at the measure a bit more deeply, it has some very odd features. In this post, I’ll show that the distribution of Tau-U is sensitive to the number of observations in each phase.</p>
+<div id="sample-size-sensitivity" class="section level2">
+<h2>Sample size sensitivity</h2>
+<p>Consider first the logical range of Tau-U. The minimum and maximum possible values of <span class="math inline">\(S_P\)</span> are <span class="math inline">\(-m n\)</span> and <span class="math inline">\(m n\)</span>; the minimum and maximum of <span class="math inline">\(S_B\)</span> are <span class="math inline">\(-m (m-1) / 2\)</span> and <span class="math inline">\(m (m - 1) / 2\)</span>. Consequently, the logical range of Tau-U is from <span class="math inline">\(-(2n + m - 1) / (2n)\)</span> to <span class="math inline">\((2n + m - 1) / (2n)\)</span>. If the treatment phase is quite long compared to the baseline phase, then this range will be close to [-1, 1]. On the other hand, in a study with a baseline that is twice as long as the treatment phase, the range of Tau-U will be closer to [-2, 2]. That’s a very odd property.</p>
+<p>The average magnitude of Tau-U is similarly influenced by the lengths of each phase. To see this, it’s helpful to think first about its target parameter–the quantity that is estimated when calculating Tau-U based on a sample of data. Since Tau-U is not defined in parametric terms, I will assume that the Tau-U statistic is an unbiased estimator of its target parameter <span class="math inline">\(\tau_U = \text{E}\left(\text{Tau-U}\right)\)</span>. It follows that</p>
+<p><span class="math display">\[
+\tau_U = \tau_P - \frac{m - 1}{2n} \tau_B,
+\]</span></p>
+<p>where <span class="math inline">\(\tau_P\)</span> is Kendall’s rank correlation between the outcomes and an indicator for the treatment phase and <span class="math inline">\(\tau_B\)</span> is Kendall’s rank correlation between the measurement occasions and outcomes during baseline:</p>
+<p><span class="math display">\[
+\begin{aligned}
+\tau_P &amp;= \frac{1}{mn}\sum_{i=1}^m \sum_{j=1}^n \left[\text{Pr}\left(Y^B_j &gt; Y^A_i\right) - \text{Pr}\left(Y^B_j &lt; Y^A_i\right)\right] \\
+\tau_B &amp;= \frac{2}{m(m-1)} \sum_{i=1}^{m - 1} \sum_{j = i + 1}^m \left[\text{Pr}\left(Y^A_j &gt; Y^A_i\right) - \text{Pr}\left(Y^A_j &lt; Y^A_i\right)\right].
+\end{aligned}
+\]</span></p>
+<p>Now consider a positive a baseline trend, so that <span class="math inline">\(\tau_B &gt; 0\)</span>, and assume that <span class="math inline">\(\tau_P\)</span> is constant. A longer baseline phase will then lead to smaller values of Tau-U (on average), while a longer treatment phase will lead to larger values of Tau-U (on average). Again, that’s really weird. This is not a good feature for an effect size measure because it means that Tau-U values from different cases are only on the same scale if the cases have identical baseline and treatment phase lengths. In a multiple baseline study, each case is necessarily observed for a different number of occasions in baseline (otherwise it wouldn’t be a multiple baseline). Thus, it seems inadvisable to use Tau-U to quantify the magnitude of treatment effects in a multiple baseline study.</p>
+</div>
+<div id="sensitivity-under-a-parametric-model" class="section level2">
+<h2>Sensitivity under a parametric model</h2>
+<p>Things may be different if we allow for the magnitude of <span class="math inline">\(\tau_P\)</span> to change along with the sample size. Such would be the case under a model where the intervention phase also exhibits a trend. For example, let’s suppose that the outcome follows a linear model with a non-zero trend and the intervention leads to an immediate shift in the outcome, as in the model:</p>
+<p><span class="math display">\[
+y_t = \beta_0 + \beta_1 t + \beta_2 I(t &gt; m) + \epsilon_t.
+\]</span></p>
+<p>For simplicity, I’ll assume that the errors in this model are normally distributed with unit variance. Under this model,</p>
+<p><span class="math display">\[
+\begin{aligned}
+\tau_B &amp;= \frac{4}{m (m - 1)} \left[\sum_{i=1}^{m-1} \sum_{j=i+1}^m \Phi\left[\beta_1\left(j - i\right) / \sqrt{2}\right]\right] - 1, \\
+\tau_P &amp;= \frac{2}{m n} \left[\sum_{i=1}^m \sum_{j=1}^n \Phi\left[\left(\beta_1 (m + j - i) + \beta_2\right) / \sqrt{2}\right]\right] - 1,
+\end{aligned}
+\]</span></p>
+<p>where <span class="math inline">\(\Phi()\)</span> is the standard normal cumulative distribution function. I can use the above formulas to calculate the average value of Tau-U for various degrees of baseline trend <span class="math inline">\((\beta_1)\)</span>, level shift <span class="math inline">\((\beta_2)\)</span>, and phase lengths <span class="math inline">\((m,n)\)</span>.</p>
+<pre class="r"><code>E_TauU &lt;- function(b1, b2, m, n) {
+  tau_B &lt;- sum(sapply(1:(m - 1), function(i) 
+    sum(pnorm(b1 * ((i+1):m - i) / sqrt(2))))) * 4 / (m * (m - 1)) - 1
+  tau_P &lt;- sum(sapply(1:m, function(i) 
+    sum(pnorm((b1 * (m + 1:n - i) + b2) / sqrt(2))))) * 2 / (m * n) - 1
+  tau_P - tau_B * (m - 1) / (2 * n)
+}
+
+library(dplyr)
+library(tidyr)
+b1 &lt;- c(-0.2, -0.1, 0, 0.1, 0.2)
+b2 &lt;- c(0, 0.5, 1.0, 2.0)
+m &lt;- c(5, 10, 15, 20)
+n &lt;- 5:20
+
+expand.grid(b1 = b1, b2 = b2, m = m, n = n) %&gt;%
+  group_by(b1, b2, m, n) %&gt;% 
+  mutate(TauU = E_TauU(b1, b2, m, n)) -&gt;
+  TauU_values
+ex &lt;- filter(TauU_values, b1 == -0.2 &amp; b2 == 0)
+
+
+library(ggplot2)
+ggplot(TauU_values, aes(n, TauU, color = factor(m))) + 
+  facet_grid(b1 ~ b2, labeller = &quot;label_both&quot;) + 
+  geom_line() + 
+  labs(y = &quot;Expected magnitude of Tau-U&quot;, color = &quot;m&quot;) + 
+  theme_bw() + theme(legend.position = &quot;bottom&quot;)</code></pre>
+<p><img src="/.rmarkdown-libs/figure-html4/unnamed-chunk-1-1.png" width="960" /></p>
+<p>In the figure above, each plot corresponds to a different value of the baseline slope (<span class="math inline">\(\beta_1\)</span>, ranging from -0.2 in the top row to 0.2 in the bottom row) and treatment shift (<span class="math inline">\(\beta_2\)</span>, ranging from 0 in the first column to 2 in the last column). Within each plot, the x axis corresponds to treatment phase length and the different lines correspond to different baseline phase lengths. The thing to note is that, when the baseline slope is non-zero, the expected value of Tau-U ranges quite widely within each plot, depending on the values of <span class="math inline">\(m\)</span> and <span class="math inline">\(n\)</span>. For example, when <span class="math inline">\(\beta_2 = 0\)</span> (in the first column), the data follow a simple linear trend with no shift. If the slope of the trend is equal to -0.2 (the first row), then the expected magnitude of Tau-U ranges from -0.8 to 0.3 depending on the phase lengths, which is quite a wide range.</p>
+<p>Generally, the degree of sample size sensitivity depends on the absolute magnitude of the baseline slope, with steeper slopes leading to increased sensitivity. For steeper values of slope, it appears that the degree to which the measure is affected by sample size even swamps the degree to which the measure is sensitive to the magnitude of the treatment effect. Very peculiar.</p>
+</div>
+<div id="a-final-thought" class="section level2">
+<h2>A final thought</h2>
+<p>Of course, these results are contingent on the particular model under which I derived the expected magnitude of Tau-U. If the data followed some other model, such as a log-linear model with Poisson-distributed outcomes, then the behavior described above might change. Still, I think all of this raises the reasonable question: under what model (i.e., what sort of patterns of baseline trend, what sort of patterns of response to the intervention) does Tau-U provide a meaningful effect size measure that clearly quantifies the magnitude of treatment effects without being strongly affected by phase lengths? Unless and until such a model can be identified, I would be wary of interpreting Tau-U as a measure of treatment effect magnitude.</p>
+</div>
