@@ -1,0 +1,187 @@
+---
+title: Regression discontinuities with covariate interactions in the rdd package
+author: 'James'
+date: '2016-01-25'
+slug: rdd-interactions
+categories: []
+tags:
+  - econometrics
+  - R
+header:
+  caption: ''
+  image: ''
+---
+
+
+
+<p>The <a href="https://cran.r-project.org/web/packages/rdd/"><code>rdd</code> package</a> in R provides a set of methods for analysis of regression discontinuity designs (RDDs), including methods to estimate marginal average treatment effects by local linear regression. I was working with the package recently and obtained some rather counter-intuitive treatment effect estimates in a sharp RDD model. After digging around a bit, I found that my perplexing results were the result of a subtle issue of model specification. Namely, in models with additional covariates (beyond just the running variable, treatment indicator, and interaction), the main estimation function in <code>rdd</code> uses a specification in which covariates are always interacted with the treatment indicator. In this post, I’ll demonstrate the issue and comment on potential work-arounds.</p>
+<div id="a-simulated-example" class="section level3">
+<h3>A simulated example</h3>
+<p>To make things more concrete, here’s a hypothetical RDD. I’ll use <span class="math inline">\(R\)</span> to denote the running variable, with the threshold set at zero; <span class="math inline">\(T\)</span> for the treatment indicator; and <span class="math inline">\(Y\)</span> for the outcome. <span class="math inline">\(X_1\)</span> is a continuous covariate that is correlated with <span class="math inline">\(R\)</span>. <span class="math inline">\(X_2\)</span> is a categorical covariate with four levels that is independent of <span class="math inline">\(X_1\)</span> and <span class="math inline">\(R\)</span>. In order to illustrate the issue with covariate-by-treatment interactions, I use a model in which the effect of the treatment varies with <span class="math inline">\(R\)</span>, <span class="math inline">\(X_1\)</span>, and <span class="math inline">\(X_2\)</span>:</p>
+<pre class="r"><code>set.seed(20160124)
+
+simulate_RDD &lt;- function(n = 2000, R = rnorm(n, mean = qnorm(.2))) {
+  n &lt;- length(R)
+  T &lt;- as.integer(R &gt; 0)
+  X1 &lt;- 10 + 0.6 * (R - qnorm(.2)) + rnorm(n, sd = sqrt(1 - 0.6^2))
+  X2 &lt;- sample(LETTERS[1:4], n, replace = TRUE, prob = c(0.2, 0.3, 0.35, 0.15))
+  Y0 &lt;- 0.4 * R + 0.1 * (X1 - 10) + c(A = 0, B = 0.30, C = 0.40, D = 0.55)[X2] + rnorm(n, sd = 0.9)
+  Y1 &lt;- 0.35 + 0.3 * R + 0.18 * (X1 - 10) + c(A = -0.50, B = 0.30, C = 0.20, D = 0.60)[X2] + rnorm(n, sd = 0.9)
+  Y &lt;- (1 - T) * Y0 + T * Y1
+  data.frame(R, T, X1, X2, Y0, Y1, Y)
+}
+
+RD_data &lt;- simulate_RDD(n = 2000)</code></pre>
+</div>
+<div id="simple-rdd-analysis" class="section level3">
+<h3>Simple RDD analysis</h3>
+<p>The main estimand in a sharp RDD is the marginal average treatment effect (MATE)—that is, the average effect of treatment assignment for units right at/near the threshold of eligibility. Even though I simulated a treatment response surface that depends on the covariates <span class="math inline">\(X_1,X_2\)</span>, it is not necessary to control for them in order to identify the MATE. Rather, it is sufficient to use a local linear regression of the outcome on the running variable, treatment indicator, and their interaction:</p>
+<p><span class="math display">\[Y_i = \beta_0 + \beta_1 R_i + \beta_2 T_i + \beta_3 R_i T_i + \epsilon_i\]</span></p>
+<p>Typically, this regression is estimated using the observations within a certain bandwidth of the threshold, and using weights defined on the basis of some kernel. The default in the <code>rdd</code> package is to use a triangular edge kernel, with bandwidth chosen using a formula proposed by Imbens and Kalyanaraman. The following code uses <code>rdd</code> to estimate the MATE without controlling for covariates:</p>
+<pre class="r"><code>library(rdd)
+bw &lt;- with(RD_data, IKbandwidth(R, Y, cutpoint = 0))
+rdd_simple &lt;- RDestimate(Y ~ R, data = RD_data, cutpoint = 0, bw = bw)
+summary(rdd_simple)</code></pre>
+<pre><code>## 
+## Call:
+## RDestimate(formula = Y ~ R, data = RD_data, cutpoint = 0, bw = bw)
+## 
+## Type:
+## sharp 
+## 
+## Estimates:
+##            Bandwidth  Observations  Estimate  Std. Error  z value
+## LATE       1.0894     1177          0.3035    0.11323     2.680  
+## Half-BW    0.5447      611          0.2308    0.15471     1.492  
+## Double-BW  2.1787     1832          0.2699    0.08968     3.010  
+##            Pr(&gt;|z|)    
+## LATE       0.007355  **
+## Half-BW    0.135722    
+## Double-BW  0.002613  **
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+## F-statistics:
+##            F       Num. DoF  Denom. DoF  p        
+## LATE        37.73  3         1173        0.000e+00
+## Half-BW     12.64  3          607        1.006e-07
+## Double-BW  104.74  3         1828        0.000e+00</code></pre>
+<p>Using a bandwidth of 1.09, the estimated marginal average treatment effect is 0.303. The figure below illustrates the discontinuity:</p>
+<p><img src="/.rmarkdown-libs/figure-html4/unnamed-chunk-3-1.png" width="960" /></p>
+</div>
+<div id="rdd-with-covariates" class="section level3">
+<h3>RDD with covariates</h3>
+<p>In practice, it is quite common for analysts to include additional covariates in the model specification. Doing so is not necessary for treatment effect identification, but can be useful for purposes of improving precision. For example, <a href="http://doi.org/10.3368/jhr.50.1.108">Cortes, Goodman, and Nomi (2015)</a> use an RDD to estimate the effects of assigning low-performing 9th graders to double-dose algebra. Their main specifications include controls for student gender, race/ethnicity, free/reduced-price lunch status, etc. In the analysis that I’m working on, the data come from students nested within multiple schools, and so it seems sensible to include fixed effects for each school. There’s a direct analogy here to simple randomized experiments: the basic difference in means provides a randomization-unbiased estimate of the sample average treatment effect, but in practice it can be awfully useful to use an estimate from a model with additional covariates.</p>
+<p>Returning to my simulated example, the following table reports the estimates generated by <code>RDestimate</code> when controlling for neither, one, or both covariates.</p>
+<pre class="r"><code>RD_est &lt;- function(mod, covariates) {
+  RD_fit &lt;- RDestimate(as.formula(paste(mod, covariates)), 
+                       data = RD_data, cutpoint = 0)
+  with(RD_fit, c(est = est[[1]], se = se[1], p = p[1]))
+}
+
+covariates &lt;- list(&quot;No covariates&quot; = &quot;&quot;,
+                &quot;X1 only&quot; = &quot;| X1&quot;,
+                &quot;X2 only&quot; = &quot;| X2&quot;,
+                &quot;X1 + X2&quot; = &quot;| X1 + X2&quot;)
+
+library(plyr)
+ldply(covariates, RD_est, mod = &quot;Y ~ R&quot;, .id = &quot;Specification&quot;)</code></pre>
+<pre><code>##   Specification       est        se           p
+## 1 No covariates 0.3034839 0.1132266 0.007355079
+## 2       X1 only 0.2983827 0.1126502 0.008078904
+## 3       X2 only 0.2978799 0.1085218 0.006053178
+## 4       X1 + X2 0.2922839 0.1076887 0.006644469</code></pre>
+<p>Despite using identical bandwidths, the estimates are drastically different from each other, with standard errors that are much larger than for the simple estimate without covariates.</p>
+</div>
+<div id="whats-going-on" class="section level3">
+<h3>What’s going on?</h3>
+<p>It is known that introducing covariates into an RDD analysis should have little effect on the MATE estimate (see, e.g., <a href="http://doi.org/10.1257/jel.48.2.281">Lee and Lemieux, 2010</a>). It is therefore quite perplexing that the estimates in my example (and in the real study I was analyzing) were so sensitive. It turns out that this puzzling behavior arises because, for sharp RDDs only, <code>RDestimate</code> always interacts the covariate(s) with the treatment indicator. Here is the relevant section of the function:</p>
+<pre class="r"><code>body(RDestimate)[[39]][[4]][[7]][[3]][[3]]</code></pre>
+<pre><code>## if (!is.null(covs)) {
+##     data &lt;- data.frame(Y, Tr, Xl, Xr, covs, w)
+##     form &lt;- as.formula(paste(&quot;Y~Tr+Xl+Xr+&quot;, paste(names(covs), 
+##         collapse = &quot;+&quot;, sep = &quot;&quot;), sep = &quot;&quot;))
+## } else {
+##     data &lt;- data.frame(Y, Tr, Xl, Xr, w)
+##     form &lt;- as.formula(Y ~ Tr + Xl + Xr)
+## }</code></pre>
+<p>For a generic covariate <span class="math inline">\(X\)</span>, the function uses the specification:</p>
+<p><span class="math display">\[Y_i = \beta_0 + \beta_1 R_i + \beta_2 T_i + \beta_3 R_i T_i + \beta_4 X_i + \beta_5 X_i T_i + \epsilon_i, \]</span></p>
+<p>while still taking <span class="math inline">\(\beta_2\)</span> to represent the MATE. This is problematic because, as soon as the <span class="math inline">\(X_i T_i\)</span> term is introduced into the model, <span class="math inline">\(\beta_2\)</span> represents the difference between treated and untreated units at the threshold (where <span class="math inline">\(R_i = 0\)</span>) and where <span class="math inline">\(X_i = 0\)</span>. Thus, including the <span class="math inline">\(X_1\)</span> interaction in the model means that <span class="math inline">\(\beta_2\)</span> is a difference extrapolated <em>way</em> outside the support of the data, as in the following scatterplot of the outcome versus the covariate <span class="math inline">\(X_1\)</span>:</p>
+<p><img src="/.rmarkdown-libs/figure-html4/unnamed-chunk-6-1.png" width="960" /></p>
+<p><code>RDestimate</code> returns as the MATE estimate the difference between the regression lines when <span class="math inline">\(X_1 = 0\)</span>, which in this example is 0.3. Similarly, including the <span class="math inline">\(X_2\)</span> interaction in the model means that <span class="math inline">\(\beta_2\)</span> will represent the marginal average treatment effect for only one of the categories of <span class="math inline">\(X_2\)</span>, rather than as some sort of average across all four categories.</p>
+</div>
+<div id="what-to-do-about-this" class="section level3">
+<h3>What to do about this</h3>
+<p>If you’ve been using the <code>rdd</code> package to analyze your data, I can think of a couple of ways to handle this issue, depending on whether you want to use a model that interacts the covariates with the treatment indicator. Here are some options:</p>
+<p>First, suppose that you want to estimate a model that does NOT include covariate-by-treatment interactions. The most transparent (and thus probably safest) approach is to do the estimation “by hand,” so to speak. Specifically, Use the <code>rdd</code> package to get kernel weights, but then estimate the outcome model using plain-old <code>lm</code>. Here’s an example:</p>
+<pre class="r"><code>library(sandwich)
+library(lmtest)
+RD_data$wt &lt;- kernelwts(RD_data$R, center = 0, bw = bw)
+MATE_model &lt;- lm(Y ~ R + T + R * T + X1 + X2, weights = wt, data = subset(RD_data, wt &gt; 0))
+coeftest(MATE_model, vcov. = vcovHC(MATE_model, type = &quot;HC1&quot;))</code></pre>
+<pre><code>## 
+## t test of coefficients:
+## 
+##              Estimate Std. Error t value  Pr(&gt;|t|)    
+## (Intercept) -1.586191   0.374247 -4.2384 2.429e-05 ***
+## R            0.183542   0.136025  1.3493 0.1774938    
+## T            0.292284   0.107689  2.7142 0.0067422 ** 
+## X1           0.130973   0.034704  3.7739 0.0001688 ***
+## X2B          0.474403   0.091835  5.1658 2.813e-07 ***
+## X2C          0.549125   0.084991  6.4610 1.523e-10 ***
+## X2D          0.713331   0.096855  7.3649 3.338e-13 ***
+## R:T          0.283663   0.222801  1.2732 0.2032105    
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
+<p>By default, <code>RDestimate</code> uses the HC1 variant of heteroskedasticity-robust standard errors. To exactly replicate its behavior, I used <code>coeftest</code> from the <code>lmtest</code> package, combined with <code>vcovHC</code> from the <code>sandwich</code> package. Note that it is also necessary to estimate the model based on the subset of observations with positive weight (otherwise the sandwich standard errors will misbehave).</p>
+<p>An alternative to the first approach is to “trick” <code>RDestimate</code> into using the desired model specification by using 2SLS estimation with <span class="math inline">\(T\)</span> instrumenting itself. Because the function does not use covariate-by-treatment interactions for “fuzzy” RDDs, you get the correct model specification:</p>
+<pre class="r"><code>summary(RDestimate(Y ~ R + T| X1 + X2, data = RD_data, cutpoint = 0))</code></pre>
+<pre><code>## 
+## Call:
+## RDestimate(formula = Y ~ R + T | X1 + X2, data = RD_data, cutpoint = 0)
+## 
+## Type:
+## fuzzy 
+## 
+## Estimates:
+##            Bandwidth  Observations  Estimate  Std. Error  z value
+## LATE       1.0894     1177          0.2923    0.10769     2.714  
+## Half-BW    0.5447      611          0.2041    0.14911     1.369  
+## Double-BW  2.1787     1832          0.2703    0.08447     3.200  
+##            Pr(&gt;|z|)    
+## LATE       0.006644  **
+## Half-BW    0.171103    
+## Double-BW  0.001374  **
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+## F-statistics:
+##            F      Num. DoF  Denom. DoF  p        
+## LATE       31.24  7         1169        7.490e-40
+## Half-BW    13.84  7          603        1.110e-16
+## Double-BW  68.36  7         1824        7.919e-88</code></pre>
+<p>The results based on the first bandwidth agree with the results from <code>lm</code>.</p>
+<p>Now, suppose that you DO want to retain the covariate-by-treatment interactions in the model, while also estimating the MATE. To do this, you can use what I call “the centering trick,” which entails centering each covariate at the sample average (in this case, the locally-weighted sample average). For a generic covariate <span class="math inline">\(X\)</span>, let</p>
+<p><span class="math display">\[\bar{x} = \frac{\sum_{i=1}^n w_i X_i}{\sum_{i=1}^n w_i},\]</span></p>
+<p>where <span class="math inline">\(w_i\)</span> is the kernel weight for unit <span class="math inline">\(i\)</span>. Then estimate the model</p>
+<p><span class="math display">\[Y_i = \beta_0 + \beta_1 R_i + \beta_2 T_i + \beta_3 R_i T_i + \beta_4 \left(X_i - \bar{x}\right) + \beta_5 \left(X_i - \bar{x}\right) T_i + \epsilon_i, \]</span></p>
+<p>The coefficient on <span class="math inline">\(T\)</span> now corresponds to the MATE. Here’s R code that implements this approach:</p>
+<pre class="r"><code>covariate_mat &lt;- model.matrix(~ X1 + X2, data = RD_data)[,-1]
+covariate_cent &lt;- apply(covariate_mat, 2, function(x) x - weighted.mean(x, w = RD_data$wt))
+RD_data &lt;- data.frame(subset(RD_data, select = c(R, Y, T)), covariate_cent)
+
+covariates_cent &lt;- list(&quot;No covariates&quot; = &quot;&quot;,
+                &quot;X1 only&quot; = &quot;| X1&quot;,
+                &quot;X2 only&quot; = &quot;| X2B + X2C + X2D&quot;,
+                &quot;X1 + X2&quot; = &quot;| X1 + X2B + X2C + X2D&quot;)
+
+ldply(covariates_cent, RD_est, mod = &quot;Y ~ R&quot;, .id = &quot;Specification&quot;)</code></pre>
+<pre><code>##   Specification       est        se           p
+## 1 No covariates 0.3034839 0.1132266 0.007355079
+## 2       X1 only 0.2983827 0.1126502 0.008078904
+## 3       X2 only 0.2978799 0.1085218 0.006053178
+## 4       X1 + X2 0.2922839 0.1076887 0.006644469</code></pre>
+<p>The estimates are now insensitive to the inclusion of the (properly centered) covariates, just as in the no-interactions model. In this example, the standard errors from the model that includes covariate-by-treatment interactions are just ever so slightly smaller than those from the model without interactions.</p>
+<p>Why does this third approach work? I’ll explain more in a later post…</p>
+</div>

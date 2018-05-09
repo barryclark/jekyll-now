@@ -90,5 +90,5 @@ Here's how I constructed these figures:
 * The dashed lines in each graph represent estimated linear trends, fit by ordinary least squares. 
 * The actual figures are plotted with circles. The projections for 2015 are plotted with triangles.
 * For 2015, the projections were calculated by multiplying the actual number by 12 / 7 = `r round(12 / 7,2)` because the actuals are based on 7 out of 12 months. (Using 211 out of 365 days leads to a very similar multiplier of `r round(365 / 211, 2)`.)
-* The underlying data (drawing from both the annual reports and the CRIS database) are [available here]({{site.url}}/data/Yearly_crash_data_Austin_and_Travis_County.csv). 
+* The underlying data (drawing from both the annual reports and the CRIS database) are [available here](/data/Yearly_crash_data_Austin_and_Travis_County.csv). 
 * The code to re-create the figures is [available in this Gist](https://gist.github.com/577ff8159bc0b0a58e61.git).

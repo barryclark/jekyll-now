@@ -2,7 +2,7 @@
 title: Clustered standard errors and hypothesis tests in fixed effects models
 author: 'James'
 date: '2016-01-10'
-slug:clubSandwich-for-CRVE-FE
+slug: clubSandwich-for-CRVE-FE
 categories: []
 tags:
   - econometrics
@@ -13,7 +13,7 @@ header:
   image: ''
 ---
 
-I've recently been working with my colleague [Beth Tipton](http://blogs.cuit.columbia.edu/let2119/) on methods for cluster-robust variance estimation in the context of some common econometric models, focusing in particular on fixed effects models for panel data---or what statisticians would call "longitudinal data" or "repeated measures." We have a new working paper, which you can [find here]({{site.url}}/files/Pustejovsky-Tipton-201601.pdf). 
+I've recently been working with my colleague [Beth Tipton](http://blogs.cuit.columbia.edu/let2119/) on methods for cluster-robust variance estimation in the context of some common econometric models, focusing in particular on fixed effects models for panel data---or what statisticians would call "longitudinal data" or "repeated measures." We have a new working paper, which you can [find here](/files/Pustejovsky-Tipton-201601.pdf). 
 
 The importance of using CRVE (i.e., "clustered standard errors") in panel models is now widely recognized. Less widely recognized, perhaps, is the fact that standard methods for constructing hypothesis tests and confidence intervals based on CRVE can perform quite poorly in when you have only a limited number of independent clusters. What's worse, it can be hard to determine what counts as a large-enough sample to trust standard CRVE methods, because the finite-sample behavior of the variance estimators and test statistics depends on the configuration of the covariates, not just the total sample size. For example, suppose you have state-level panel data from 50 states across 15 years and are trying to estimate the effect of some policy using difference-in-differences. If only 5 or 6 states have variation in the policy variable over time, then you're almost certainly in small-sample territory. And the sample size issues can be subtler than this, too, as I'll show below.
 
