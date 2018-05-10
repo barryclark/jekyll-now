@@ -18,4 +18,3 @@ Last night I attended a joint meetup between the [Austin R User Group](https://w
 - [Claire McWhite](https://twitter.com/clairemcwhite): [A quick intro to networks](https://speakerdeck.com/clairemcwhite/a-quick-intro-to-networks)
 - [Nathaniel Woodward](https://twitter.com/NathanielRaley): [Blogdown Demo!](http://goo.gl/vJs8kD) (link includes his slides and a demo screencast)
 - [me](https://twitter.com/jepusto): [Robust, easy standard errors with the clubSandwich package](/files/clubSandwich.html). 
-

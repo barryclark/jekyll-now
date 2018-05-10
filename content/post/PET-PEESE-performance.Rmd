@@ -266,11 +266,11 @@ estimator_performance %>%
 In the left column, we see that SPET and SPEESE are exactly unbiased (and SPET-SPEESE is nearly so) in the absence of selective publication. So is regular old fixed effect meta-analysis, of course. In the middle and right columns, studies are selected based partially or fully on statistical significance, and things get messy. Overall, there's no consistent winner between PEESE versus SPEESE. At small or moderate levels of between-study heterogeneity, and when the true mean effect is small, PEESE, SPEESE, and SPET-SPEESE have fairly similar biases, but PEESE appears to have a slight edge. This seems to me to be nothing but a fortuitous accident, in that the bias induced by the correlation between $d$ and $V$ just happens to work in the right direction. Then, as the true mean effect increases, SPEESE and SPET-SPEESE start to edge out PEESE. This makes sense because the bias induced by the correlation between $d$ and $V$ will be larger when the true effect sizes are larger.   
 These trends seem mostly to hold for the other sample size distributions I examined too, although the biases of PEESE and PET-PEESE aren't as severe when the maximum sample size is larger. You can see for yourself here:
 
-* [Uniform distribution of studies, maximum sample size of 120]({{site.url}}/figure/2017-04-27-PET-PEESE-performance/more-bias-of-SPET-SPEESE-1.png)
-* [More small studies, maximum sample size of 50]({{site.url}}/figure/2017-04-27-PET-PEESE-performance/more-bias-of-SPET-SPEESE-2.png)
-* [More small studies, maximum sample size of 120]({{site.url}}/figure/2017-04-27-PET-PEESE-performance/more-bias-of-SPET-SPEESE-3.png)
-* [More large studies, maximum sample size of 50]({{site.url}}/figure/2017-04-27-PET-PEESE-performance/more-bias-of-SPET-SPEESE-4.png)
-* [More large studies, maximum sample size of 120]({{site.url}}/figure/2017-04-27-PET-PEESE-performance/more-bias-of-SPET-SPEESE-5.png)
+* [Uniform distribution of studies, maximum sample size of 120](/rmarkdown-libs/figure-html4/more-bias-of-SPET-SPEESE-1.png)
+* [More small studies, maximum sample size of 50](/rmarkdown-libs/figure-html4/more-bias-of-SPET-SPEESE-2.png)
+* [More small studies, maximum sample size of 120](/rmarkdown-libs/figure-html4/more-bias-of-SPET-SPEESE-3.png)
+* [More large studies, maximum sample size of 50](/rmarkdown-libs/figure-html4/more-bias-of-SPET-SPEESE-4.png)
+* [More large studies, maximum sample size of 120](/rmarkdown-libs/figure-html4/more-bias-of-SPET-SPEESE-5.png)
 
 ### Accuracy of bias-corrected estimators
 
@@ -345,11 +345,11 @@ estimator_performance %>%
 
 Here are charts for the other sample size distributions:
 
-* [Uniform distribution of studies, maximum sample size of 120]({{site.url}}/figure/2017-04-27-PET-PEESE-performance/more-RMSE-plots-1.png)
-* [More small studies, maximum sample size of 50]({{site.url}}/figure/2017-04-27-PET-PEESE-performance/more-RMSE-plots-2.png)
-* [More small studies, maximum sample size of 120]({{site.url}}/figure/2017-04-27-PET-PEESE-performance/more-RMSE-plots-3.png)
-* [More large studies, maximum sample size of 50]({{site.url}}/figure/2017-04-27-PET-PEESE-performance/more-RMSE-plots-4.png)
-* [More large studies, maximum sample size of 120]({{site.url}}/figure/2017-04-27-PET-PEESE-performance/more-RMSE-plots-5.png)
+* [Uniform distribution of studies, maximum sample size of 120](/rmarkdown-libs/figure-html4/more-RMSE-plots-1.png)
+* [More small studies, maximum sample size of 50](/rmarkdown-libs/figure-html4/more-RMSE-plots-2.png)
+* [More small studies, maximum sample size of 120](/rmarkdown-libs/figure-html4/more-RMSE-plots-3.png)
+* [More large studies, maximum sample size of 50](/rmarkdown-libs/figure-html4/more-RMSE-plots-4.png)
+* [More large studies, maximum sample size of 120](/rmarkdown-libs/figure-html4/more-RMSE-plots-5.png)
 
 The trends that I've noted mostly seem to hold for the other sample size distributions (but correct me if you disagree! I'm getting kind of bleary-eyed at the moment...). One difference worth noting is that when the sample size distribution skews towards having more large studies, the accuracy of the regular fixed-effect estimator improves a bit. At intermediate degrees of selective publication, the fixed-effect estimator is _consistently_ more accurate than SPEESE, and mostly more accurate than PEESE too. With strong selective publication, though, the FE estimator blows up just as before. 
 

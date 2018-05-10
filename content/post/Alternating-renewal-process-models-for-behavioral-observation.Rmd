@@ -1,0 +1,16 @@
+---
+title: "New article: Alternating renewal process models for behavioral observation"
+author: 'James'
+date: '2014-10-16'
+slug: 
+categories: []
+tags:
+  - behavioral observation
+header:
+  caption: ''
+  image: ''
+---
+
+My article with Chris Runyon, titled “Alternating renewal process models for behavioral observation: Simulation methods, software , and validity illustrations” has been published in Behavioral Disorders. The abstract is below. [Postprint available here](/files/Pustejovsky-Runyon-2015.pdf). All of the examples in the paper are available in the R package [ARPobservation](https://cran.r-project.org/web/packages/ARPobservation/).
+
+> Direct observation recording procedures produce reductive summary measurements of an underlying stream of behavior. Previous methodological studies of these recording procedures have employed simulation methods for generating random behavior streams, many of which amount to special cases of a statistical model known as the alternating renewal process. This paper describes the alternating renewal process model in its general form, demonstrates how it provides an organizing framework for most past simulation research on direct observation procedures, and introduces a freely available software package that implements the model. The software can be used to simulate behavior streams as well as data from many common recording procedures, including continuous recording, momentary time sampling, event counting, and interval recording procedures. Several examples illustrate how the software can be used to study the validity and reliability of direct observation data and to develop measurement strategies during the planning phases of empirical studies.

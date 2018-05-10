@@ -107,10 +107,10 @@ $$
 Thus, 
 
 $$
-\text{Var}\left(z(r)\right) \approx \frac{1}{(1 - \rho^2)^2} \times \text{Var}(r) = \frac{1}{N - 1}.
+\text{Var}\left(z(r)\right) \approx \frac{1}{(1 - \rho^2)^2} \times \text{Var}(r) = \frac{1}{n - 1}.
 $$
 
-The variance of $z$ is usually given as $1 / (N - 3)$, which is even closer to exact. Here we've obtained the variance of $z$ using two applications of the delta-method. Because of [the chain rule](https://en.wikipedia.org/wiki/Chain_rule), we'd have ended up with the same result if we'd gone straight from the sample variances and covariances, using the multivariate delta method and the derivatives of $z$ with respect to $\boldsymbol\theta$.
+The variance of $z$ is usually given as $1 / (n - 3)$, which is even closer to exact. Here we've obtained the variance of $z$ using two applications of the delta-method. Because of [the chain rule](https://en.wikipedia.org/wiki/Chain_rule), we'd have ended up with the same result if we'd gone straight from the sample variances and covariances, using the multivariate delta method and the derivatives of $z$ with respect to $\boldsymbol\theta$.
 
 ### Covariances between correlations
 

@@ -1,0 +1,94 @@
+---
+title: The multivariate delta method
+author: 'James'
+date: '2018-04-11'
+slug: Multivariate-delta-method
+categories: []
+tags:
+  - delta method
+  - distribution theory
+header:
+  caption: ''
+  image: ''
+---
+
+
+
+<p>The delta method is surely one of the most useful techniques in classical statistical theory. It’s perhaps a bit odd to put it this way, but I would say that the delta method is something like the precursor to the bootstrap, in terms of its utility and broad range of applications—both are “first-line” tools for solving statistical problems. There are many good references on the delta-method, ranging from <a href="https://en.wikipedia.org/wiki/Delta_method">the Wikipedia page</a> to a short introduction in <em>The American Statistician</em> (<a href="https://doi.org/10.1080%2F00031305.1992.10475842">Oehlert, 1992</a>). Many statistical theory textbooks also include a longer or shorter discussion of the method (e.g., Stuart &amp; Ord, 1996; Casella &amp; Berger, 2002).</p>
+<p>I use the delta method all the time in my work, especially to derive approximations to the sampling variance of some estimator (or covariance between two estimators). Here I’ll give one formulation of the multivariate delta method that I find particularly useful for this purpose. (This is nothing at all original. I’m only posting it on the off chance that others might find my crib notes helpful—and by “others” I mostly mean myself in six months…)</p>
+<div id="multi-variate-delta-method-covariances" class="section level3">
+<h3>Multi-variate delta method covariances</h3>
+<p>Suppose that we have a <span class="math inline">\(p\)</span>-dimensional vector of statistics <span class="math inline">\(\mathbf{T} = \left(T_1,...,T_p \right)\)</span> that converge in distribution to the parameter vector <span class="math inline">\(\boldsymbol\theta = \left(\theta_1,...,\theta_p\right)\)</span> and have asymptotic covariance matrix <span class="math inline">\(\boldsymbol\Sigma / n\)</span>, i.e.,</p>
+<p><span class="math display">\[
+\sqrt{n} \left(\mathbf{T} - \boldsymbol\theta\right) \stackrel{D}{\rightarrow} N\left( \mathbf{0}, \boldsymbol\Sigma \right).
+\]</span></p>
+<p>Now consider two functions <span class="math inline">\(f\)</span> and <span class="math inline">\(g\)</span>, both of which take vectors as inputs, return scalar quantities, and don’t have funky (discontinuous) derivatives. The asymptotic covariance between <span class="math inline">\(f(\mathbf{T})\)</span> and <span class="math inline">\(g(\mathbf{T})\)</span> is then approximately</p>
+<p><span class="math display">\[
+\text{Cov} \left(f(\mathbf{T}), g(\mathbf{T}) \right) \approx \frac{1}{n} \sum_{j=1}^p \sum_{k=1}^p  \frac{\partial f}{ \partial \theta_j}\frac{\partial g}{ \partial \theta_k}\sigma_{jk}, 
+\]</span></p>
+<p>where <span class="math inline">\(\sigma_{jk}\)</span> is the entry in row <span class="math inline">\(j\)</span> and column <span class="math inline">\(k\)</span> of the matrix <span class="math inline">\(\boldsymbol\Sigma\)</span>. If the entries of <span class="math inline">\(\mathbf{T}\)</span> are asymptotically uncorrelated , then this simplifies to</p>
+<p><span class="math display">\[
+\text{Cov} \left(f(\mathbf{T}), g(\mathbf{T}) \right) \approx \frac{1}{n} \sum_{j=1}^p \frac{\partial f}{ \partial \theta_j}\frac{\partial g}{ \partial \theta_j} \sigma_{jj}. 
+\]</span></p>
+<p>If we are interested in the variance of a single statistic, then the above formulas simplify further to</p>
+<p><span class="math display">\[
+\text{Var} \left(f(\mathbf{T})\right) \approx \frac{1}{n} \sum_{j=1}^p \sum_{k=1}^p  \frac{\partial f}{ \partial \theta_j}\frac{\partial f}{ \partial \theta_k}\sigma_{jk} 
+\]</span></p>
+<p>or</p>
+<p><span class="math display">\[
+\text{Var} \left(f(\mathbf{T}) \right) \approx \frac{1}{n}\sum_{j=1}^p \left(\frac{\partial f}{ \partial \theta_j}\right)^2 \sigma_{jj}
+\]</span></p>
+<p>in the case of uncorrelated <span class="math inline">\(\mathbf{T}\)</span>.</p>
+<p>Finally, if we are dealing with a univariate transformation <span class="math inline">\(f(\theta)\)</span>, then of course the above simplifies even further to</p>
+<p><span class="math display">\[
+\text{Var}\left(f(T)\right) = \left(\frac{\partial f}{\partial \theta}\right)^2 \text{Var}(T)
+\]</span></p>
+</div>
+<div id="pearsons-r" class="section level3">
+<h3>Pearson’s <span class="math inline">\(r\)</span></h3>
+<p>These formulas are useful for all sorts of things. For example, they can be used to derive the sampling variance of Pearson’s correlation coefficient. Suppose we have a simple random sample of <span class="math inline">\(n\)</span> observations from a multivariate normal distribution with mean 0 and variance-covariance matrix <span class="math inline">\(\boldsymbol\Phi = \left[\begin{array}{cc}\phi_{xx} &amp; \phi_{xy} \\ \phi_{xy} &amp; \phi_{yy} \end{array}\right]\)</span>. Pearson’s correlation is calculated as</p>
+<p><span class="math display">\[
+r = \frac{s_{xy}}{\sqrt{s_{xx} s_{yy}}},
+\]</span></p>
+<p>where <span class="math inline">\(s_{xx}\)</span> and <span class="math inline">\(s_{yy}\)</span> are sample variances and <span class="math inline">\(s_{xy}\)</span> is the sample covariance. These sample variances and covariances are unbiased estimates of <span class="math inline">\(\phi_{xx}\)</span>, <span class="math inline">\(\phi_{yy}\)</span>, and <span class="math inline">\(\phi_{xy}\)</span>, respectively. So in terms of the above notation, we have <span class="math inline">\(\mathbf{T} = \left(s_{xx}, s_{yy}, s_{xy}\right)\)</span>, <span class="math inline">\(\boldsymbol\theta = \left(\phi_{xx}, \phi_{yy}, \phi_{xy}\right)\)</span>, and <span class="math inline">\(\rho = \phi_{xy} / \sqrt{\phi_{xx} \phi_{yy}}\)</span>.</p>
+<p>From <a href="%7B%7B%20site.url%20%7D%7D/distribution-of-sample-variances">a previous post</a>, we can work out the variance-covariance matrix of <span class="math inline">\(\mathbf{T}\)</span>:</p>
+<p><span class="math display">\[
+\text{Var}\left(\sqrt{n - 1} \left[\begin{array}{c} s_{xx} \\ s_{yy} \\ s_{xy}\end{array}\right]\right) = \boldsymbol\Sigma = \left[\begin{array}{ccc} 2 \phi_{xx}^2 &amp; &amp; \\ 2 \phi_{xy}^2 &amp; 2 \phi_{yy}^2 &amp; \\ 2 \phi_{xy} \phi_{xx} &amp; 2 \phi_{xy} \phi_{yy} &amp; \phi_{xy}^2 + \phi_{xx} \phi_{yy}\end{array}\right].
+\]</span></p>
+<p>The last piece is to find the derivatives of <span class="math inline">\(r\)</span> with respect to <span class="math inline">\(\mathbf{T}\)</span>:</p>
+<p><span class="math display">\[
+\begin{aligned}
+\frac{\partial r}{\partial \phi_{xy}} &amp;= \phi_{xx}^{-1/2} \phi_{yy}^{-1/2} \\
+\frac{\partial r}{\partial \phi_{xx}} &amp;= -\frac{1}{2} \phi_{xy} \phi_{xx}^{-3/2} \phi_{yy}^{-1/2} \\
+\frac{\partial r}{\partial \phi_{yy}} &amp;= -\frac{1}{2} \phi_{xy} \phi_{xx}^{-1/2} \phi_{yy}^{-3/2}
+\end{aligned}
+\]</span></p>
+<p>Putting the pieces together, we have</p>
+<p><span class="math display">\[
+\begin{aligned}
+(n - 1) \text{Var}(r) &amp;\approx \sigma_{11} \left(\frac{\partial r}{\partial \phi_{xy}}\right)^2 + \sigma_{22} \left(\frac{\partial r}{ \partial \phi_{xx}}\right)^2 + \sigma_{33} \left(\frac{\partial r}{ \partial \phi_{yy}}\right)^2 \\
+&amp; \qquad \qquad + 2 \sigma_{12} \frac{\partial r}{\partial \phi_{xy}}\frac{\partial r}{\partial \phi_{xx}} + 2 \sigma_{13} \frac{\partial r}{\partial \phi_{xy}}\frac{\partial r}{\partial \phi_{yy}}+ 2 \sigma_{23} \frac{\partial r}{\partial \phi_{xx}}\frac{\partial r}{\partial \phi_{yy}} \\
+&amp;= \frac{\phi_{xy}^2 + \phi_{xx} \phi_{yy}}{\phi_{xx} \phi_{yy}} + \frac{\phi_{xy}^2\phi_{xx}^2}{2 \phi_{xx}^3 \phi_{yy}} + \frac{\phi_{xy}^2\phi_{yy}^2}{2 \phi_{xx} \phi_{yy}^3} \\
+&amp; \qquad \qquad - \frac{2\phi_{xy} \phi_{xx}}{\phi_{xx}^2 \phi_{yy}} - \frac{2\phi_{xy} \phi_{yy}}{\phi_{xx} \phi_{yy}^2} + \frac{\phi_{xy}^4}{\phi_{xx}^2 \phi_{yy}^2} \\
+&amp;= 1 - 2\frac{\phi_{xy}^2}{\phi_{xx} \phi_{yy}} + \frac{\phi_{xy}^4}{\phi_{xx}^2 \phi_{yy}^2} \\
+&amp;= \left(1 - \rho^2\right)^2.
+\end{aligned}
+\]</span></p>
+</div>
+<div id="fishers-z-transformation" class="section level3">
+<h3>Fisher’s <span class="math inline">\(z\)</span>-transformation</h3>
+<p>Meta-analysts will be very familiar with Fisher’s <span class="math inline">\(z\)</span>-transformation of <span class="math inline">\(r\)</span>, given by <span class="math inline">\(z(\rho) = \frac{1}{2} \log\left(\frac{1 + \rho}{1 - \rho}\right)\)</span>.
+Fisher’s <span class="math inline">\(z\)</span> is the variance-stabilizing (and also normalizing) transformation of <span class="math inline">\(r\)</span>, meaning that <span class="math inline">\(\text{Var}\left(z(r)\right)\)</span> is approximately a constant function of sample size, not depending on the degree of correlation <span class="math inline">\(\rho\)</span>. We can see this using another application of the delta method:</p>
+<p><span class="math display">\[
+\frac{\partial z}{\partial \rho} = \frac{1}{1 - \rho^2}.
+\]</span></p>
+<p>Thus,</p>
+<p><span class="math display">\[
+\text{Var}\left(z(r)\right) \approx \frac{1}{(1 - \rho^2)^2} \times \text{Var}(r) = \frac{1}{n - 1}.
+\]</span></p>
+<p>The variance of <span class="math inline">\(z\)</span> is usually given as <span class="math inline">\(1 / (n - 3)\)</span>, which is even closer to exact. Here we’ve obtained the variance of <span class="math inline">\(z\)</span> using two applications of the delta-method. Because of <a href="https://en.wikipedia.org/wiki/Chain_rule">the chain rule</a>, we’d have ended up with the same result if we’d gone straight from the sample variances and covariances, using the multivariate delta method and the derivatives of <span class="math inline">\(z\)</span> with respect to <span class="math inline">\(\boldsymbol\theta\)</span>.</p>
+</div>
+<div id="covariances-between-correlations" class="section level3">
+<h3>Covariances between correlations</h3>
+<p>These same techniques can be used to work out expressions for the covariances between correlations estimated on the same sample. For instance, suppose you’ve measured four variables, <span class="math inline">\(W\)</span>, <span class="math inline">\(X\)</span>, <span class="math inline">\(Y\)</span>, and <span class="math inline">\(Z\)</span>, on a simple random sample of <span class="math inline">\(n\)</span> observations. What is <span class="math inline">\(\text{Cov}(r_{xy}, r_{xz})\)</span>? What is <span class="math inline">\(\text{Cov}(r_{wx}, r_{yz})\)</span>? I’ll leave the derivations for you to work out. See <a href="http://dx.doi.org/10.1037//0033-2909.87.2.245">Steiger (1980)</a> for solutions.</p>
+</div>
