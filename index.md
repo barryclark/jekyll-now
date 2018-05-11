@@ -232,10 +232,11 @@ title: Πως αγοράζουμε, πουλάμε, ξοδεύουμε και δ
 - Το [CoinLib](https://coinlib.io)
 - Το [BlockHero](https://blockhero.ai) portfolio tracker
 - Ένα από τα τρία ερευνητικά κέντρα της [IOHK](https://iohk.io/team/) βρίσκεται στην Αθήνα
+- Η [Bcash Greece](https://bcash.gr) φτιάχνει Bitcoin ATMs
 - Ο Μη-Κερδοσκοπικός Οργανισμός [Hellenic Blockchain Hub](http://blockchain.org.gr)
 - Ο Μη-Κερδοσκοπικός Οργανισμός [Cyprus Blockchain Technologies](http://cybt.eu)
 
-Τελευταία ενημέρωση: 2018-05-09
+Τελευταία ενημέρωση: 2018-05-11
 
 <!-- <div class="posts">
   {% for post in site.posts %}
