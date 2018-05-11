@@ -256,6 +256,11 @@ enableGitInfo = false
   align_right = false
 
 [[menu.main]]
+  name = "CV"
+  url = "/files/Pustejovsky-CV.pdf"
+  weight = 1
+
+[[menu.main]]
   name = "Posts"
   url = "#posts"
   weight = 2
