@@ -16,7 +16,7 @@ header:
 
 
 <p>In an earlier post about sandwich standard errors for multi-variate meta-analysis, I <a href="/Robust-meta-analysis-1/">mentioned</a> that Beth Tipton has recently proposed small-sample corrections for the covariance estimators and t-tests, based on the bias-reduced linearization approach of <a href="http://www.amstat.org/sections/SRMS/Proceedings/y2001/Proceed/00264.pdf">McCaffrey, Bell, and Botts (2001)</a>.
-You can find her forthcoming paper on the adjustments <a href="http://blogs.cuit.columbia.edu/let2119/files/2013/03/Tipton-RVE-Small-to-share.pdf">here</a>.
+You can find her forthcoming paper on the adjustments <a href="http://dx.doi.org/10.1037/met0000011">here</a>.
 My understanding is that these small-sample corrections are important because the uncorrected sandwich estimators can lead to under-statement of uncertainty and inflated type I error rates when a given meta-regression coefficient is estimated from only a small or moderately sized sample of independent studies (or clusters of studies).
 Moreover, it can be difficult to determine exactly when you have a large enough sample to trust the uncorrected sandwiches.</p>
 <p>I wanted to try out these small-sample corrected sandwich estimators for a meta-analyses project that I’m working on. Beth and one of her students have written an R package called <a href="http://cran.r-project.org/web/packages/robumeta/index.html">robumeta</a> that implements the sandwich covariance estimator and small-sample corrections as described in her paper.
@@ -53,14 +53,11 @@ robu_hier</code></pre>
 ## ---
 ## Note: If df &lt; 4, do not trust the results</code></pre>
 <p>To maintain consistency, I first need to calculate the approximate weights used in <code>robumeta</code> and then fit the model in <code>metafor</code> using these fixed weights.</p>
-<pre class="r"><code>devtools::source_gist(&quot;https://gist.github.com/jepusto/11302318&quot;)
+<pre class="r"><code>devtools::source_gist(id = &quot;11302318&quot;, filename = &quot;metafor-BRL.R&quot;)
 
-hierdat$var_HTJ &lt;- hierdat$var + robu_hier$mod_info$omega.sq + robu_hier$mod_info$tau.sq</code></pre>
-<pre><code>## Warning in hierdat$var + robu_hier$mod_info$omega.sq: Recycling array of length 1 in vector-array arithmetic is deprecated.
-##   Use c() or as.vector() instead.</code></pre>
-<pre><code>## Warning in hierdat$var + robu_hier$mod_info$omega.sq + robu_hier$mod_info$tau.sq: Recycling array of length 1 in vector-array arithmetic is deprecated.
-##   Use c() or as.vector() instead.</code></pre>
-<pre class="r"><code>meta_hier &lt;- rma.mv(yi = effectsize ~ males + binge, 
+hierdat$var_HTJ &lt;- hierdat$var + as.numeric(robu_hier$mod_info$omega.sq) + as.numeric(robu_hier$mod_info$tau.sq)
+
+meta_hier &lt;- rma.mv(yi = effectsize ~ males + binge, 
                 V = var_HTJ, 
                 data = hierdat, method = &quot;FE&quot;)
 meta_hier$cluster &lt;- hierdat$studyid

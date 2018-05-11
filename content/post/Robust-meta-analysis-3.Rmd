@@ -41,9 +41,9 @@ robu_hier
 To maintain consistency, I first need to calculate the approximate weights used in `robumeta` and then fit the model in `metafor` using these fixed weights. 
 
 ```{r, message=FALSE}
-devtools::source_gist(id = "11144005", filename = "metafor-sandwich.R")
+devtools::source_gist(id = "11302318", filename = "metafor-BRL.R")
 
-hierdat$var_HTJ <- hierdat$var + robu_hier$mod_info$omega.sq + robu_hier$mod_info$tau.sq
+hierdat$var_HTJ <- hierdat$var + as.numeric(robu_hier$mod_info$omega.sq) + as.numeric(robu_hier$mod_info$tau.sq)
 
 meta_hier <- rma.mv(yi = effectsize ~ males + binge, 
                 V = var_HTJ, 
