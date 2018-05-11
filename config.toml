@@ -256,11 +256,6 @@ enableGitInfo = false
   align_right = false
 
 [[menu.main]]
-  name = "Home"
-  url = "#about"
-  weight = 1
-  
-[[menu.main]]
   name = "Posts"
   url = "#posts"
   weight = 2
