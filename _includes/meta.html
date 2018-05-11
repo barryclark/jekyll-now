@@ -3,8 +3,8 @@
 	 <link rel="prerender" href="{{ page.previous.url }}">
 	{% endif %}		
 	<meta name="distribution" content="global"/>
-	<meta name="keywords" content="{% for tag in page.tags %} {{ tag }}, {% endfor %} Isard Miralles, disseny, diseny gràfic, diseny web, matte painting, Barcelona, adobe photoshop, contratar freelance, artista web, responsive, html5 i css3" />
-	<meta name="description" content="{{ site.description }} | Edició de pàgines web originals, il·lustració tradicional, serveis per imprimir i disseny gràfic. Artista visual, Matte Painting, portades originals, Art conceptual, Concept Art" />
+	<meta name="keywords" content="{% for tag in page.tags %} {{ tag }}, {% endfor %} Isard Miralles, Badalona, Barcelona, disseny, diseny gràfic, diseny web, matte painting, Barcelona, photoshop, contractar freelance, artista web, web responsive, html5, css3, mandalas, geometria sagrada, numero aureo, proporciones aureas, logos" />
+	<meta name="description" content="{{ site.description }} il·lustració tradicional, cartells originals, flyers i papeleria, serveis d'impressió i distribució asociats. Edició de pàgines web originals, visual artist, Matte Painting, portades originals, Art conceptual, Mandalas I geometria aurea, proporció aurea, dibuix i pintura, Marketing i Social Media" />
 	<meta name="robots" content="index, follow" />
     <meta name="author" href="https://plus.google.com/{{ site.footer-links.googleplus }}" />
     <meta name="designer" content="Isard Miralles">
@@ -76,19 +76,19 @@
 	<meta property="article:published_time" content="{{ page.date }}" />
 	<meta property="article:modified_time" content="{{ page.date }}" />
 	<meta property="article:section" content="Post" />
-	<meta property="article:tag" content="{% for tag in page.tags %} {{ tag }}, {% endfor %}" />
+	<meta property="article:tag" content="{% for tag in page.tags %} {{ tag }}, {% endfor %} " />
 	<meta property="fb:admins" content="Isard-Miralles-261219727225263" />
     {% else %}
     <meta itemprop="name" content="{{ page.title }} {{ site.name }}">
-    <meta name="description" content="{{ site.description }} | Edició de pàgines web originals, il·lustració tradicional, serveis per imprimir i disseny gràfic. Artista visual, Matte Painting, portades originals, Art conceptual, Concept Art" />
-    <meta itemprop="description" content="Los YouTubers que estás buscando. {{ site.description }} | Isard Miralles, disseny, diseny gràfic, diseny web, matte painting, Barcelona, adobe photoshop, contratar freelance, artista web, responsive, html5 i css3">
+    <meta name="description" content="{{ site.description }} | Isard Miralles, il·lustració tradicional, cartells originals, flyers i papeleria, serveis d'impressió i distribució asociats. Edició de pàgines web originals, visual artist, Matte Painting, portades originals, Art conceptual, Mandalas I geometria aurea, proporció aurea, dibuix i pintura, Marketing i Social Media" />
+    <meta itemprop="description" content="{{ site.description }} | Isard Miralles, il·lustració tradicional, cartells originals, flyers i papeleria, serveis d'impressió i distribució asociats. Edició de pàgines web originals, visual artist, Matte Painting, portades originals, Art conceptual, Mandalas I geometria aurea, proporció aurea, dibuix i pintura, Marketing i Social Media">
     <meta property="og:description" content="{{ page.description | default: site.description}}" />
     <meta itemprop="image" content="{{ site.baseurl }}/hipertextos/brand/cover.png">
 	<!-- Twitter Card data -->
 	<meta name="twitter:card" content="summary">
 	<meta name="twitter:site" content="@{{ site.footer-links.twitter }}">
 	<meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.name }}{% endif %}">
-	<meta name="twitter:description" content="{{ page.description | default: site.description}} | | Edició de pàgines web originals, il·lustració tradicional, serveis per imprimir i disseny gràfic. Artista visual, Matte Painting, portades originals, Art conceptual, Concept Art">
+	<meta name="twitter:description" content="{{ page.description | default: site.description}} | il·lustració tradicional, cartells originals, flyers i papeleria, serveis d'impressió i distribució asociats. Edició de pàgines web originals, visual artist, Matte Painting, portades originals, Art conceptual, Mandalas I geometria aurea, proporció aurea, dibuix i pintura, Marketing i Social Media">
 	<meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
 	<meta name="twitter:creator" content="@{{ site.footer-links.twitter }}">
 	<!-- Twitter summary card with large image. Al menos estas medidas 280x150px -->
@@ -101,6 +101,6 @@
 	<meta property="og:site_name" content="http://www.isardmiralles.com/" />
 	<meta property="article:published_time" content="{{ site.date }}" />
 	<meta property="article:modified_time" content="{{ page.date }}" />
-	<meta property="article:tag" content="Isard Miralles,{% for tag in page.tags %} {{ tag }}, {% endfor %}disseny, diseny gràfic, diseny web, matte painting, Barcelona, adobe photoshop, contratar freelance, artista web, responsive, html5 i css3" />
+	<meta property="article:tag" content="Isard Miralles,{% for tag in page.tags %} {{ tag }}, {% endfor %} Isard Miralles, Badalona, Barcelona, disseny, diseny gràfic, diseny web, matte painting, Barcelona, photoshop, contractar freelance, artista web, web responsive, html5, css3, mandalas, geometria sagrada, numero aureo, proporciones aureas, logos" />
 	<meta property="fb:admins" content="Isard-Miralles-261219727225263" />
     {% endif %}
