@@ -37,4 +37,4 @@ I've only read three different books to him so far, at least as memory serves:
 
 I've read the first two several times to him; the third I've only read once. My wife has read a few more. Pretty much all of the books, if in fact not all, have been bought used. My wife is pretty good at finding deals.
 
-Oh, and did you notice that two of the books were dog-related? My wife and I are obsessed with dogs. Well, more so me than her - by [other blog is a dog blog](http://www.puppy-snuggles.com/). We did meet because of our mutual love for our dogs, though.
+Oh, and did you notice that two of the books were dog-related? My wife and I are obsessed with dogs. Well, more so me than her - my [other blog is a dog blog](http://www.puppy-snuggles.com/). We did meet because of our mutual love for our dogs, though.
