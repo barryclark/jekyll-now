@@ -1,14 +1,14 @@
 +++
 # Projects widget.
 widget = "projects"
-active = true
+active = false
 date = 2016-04-20T00:00:00
 
 title = "Projects"
 subtitle = ""
 
 # Order that this section will appear in.
-weight = 50
+weight = 15
 
 # Content.
 # Display content from the following folder.
@@ -18,7 +18,7 @@ folder = "project"
 # View.
 # Customize how projects are displayed.
 # Legend: 0 = list, 1 = cards.
-view = 1
+view = 0
 
 # Filter toolbar.
 

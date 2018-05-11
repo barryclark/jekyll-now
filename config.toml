@@ -253,37 +253,42 @@ enableGitInfo = false
 #   The weight parameter defines the order that the links will appear in.
 [params.menus]
   # Align the main menu to the right of the page? (true/false)
-  align_right = true
+  align_right = false
 
 [[menu.main]]
   name = "Home"
   url = "#about"
   weight = 1
-
-[[menu.main]]
-  name = "Publications"
-  url = "#publications"
-  weight = 2
-
-[[menu.main]]
-  name = "Presentations"
-  url = "#talks"
-  weight = 3
   
 [[menu.main]]
   name = "Posts"
   url = "#posts"
+  weight = 2
+
+[[menu.main]]
+  name = "Publications"
+  url = "#publications"
+  weight = 3
+
+[[menu.main]]
+  name = "Presentations"
+  url = "#talks"
   weight = 4
+
+[[menu.main]]
+  name = "Software"
+  url = "#software"
+  weight = 5
 
 [[menu.main]]
   name = "Teaching"
   url = "#teaching"
-  weight = 5
+  weight = 6
 
 [[menu.main]]
   name = "Contact"
   url = "#contact"
-  weight = 6
+  weight = 7
 
 # Taxonomies.
 [taxonomies]
