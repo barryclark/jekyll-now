@@ -256,11 +256,6 @@ enableGitInfo = false
   align_right = false
 
 [[menu.main]]
-  name = "CV"
-  url = "/files/Pustejovsky-CV.pdf"
-  weight = 1
-
-[[menu.main]]
   name = "Posts"
   url = "#posts"
   weight = 2
@@ -286,9 +281,14 @@ enableGitInfo = false
   weight = 6
 
 [[menu.main]]
+  name = "CV"
+  url = "/files/Pustejovsky-CV.pdf"
+  weight = 7
+
+[[menu.main]]
   name = "Contact"
   url = "#contact"
-  weight = 7
+  weight = 8
 
 # Taxonomies.
 [taxonomies]
