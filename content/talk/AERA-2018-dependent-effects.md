@@ -7,6 +7,7 @@ time_start = 2018-04-15T08:15:00
 abstract = ""
 abstract_short = ""
 event = "American Educational Research Association annual convention"
+event_short = "AERA 2018"
 event_url = ""
 location = "New York, NY"
 

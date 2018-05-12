@@ -1,12 +1,13 @@
 +++
 date = 2018-04-15T06:30:00  # Schedule page publish date.
 
-title = "Metaanalysis of single-case research: A brief and breezy tour"
+title = "Meta-analysis of single-case research: A brief and breezy tour"
 time_start = 2018-04-15T08:15:00
 # time_end = 2030-06-01T15:00:00
 abstract = ""
 abstract_short = ""
 event = "American Educational Research Association annual convention"
+event_short = "AERA 2018"
 event_url = ""
 location = "New York, NY"
 
