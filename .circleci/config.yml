@@ -81,4 +81,4 @@ workflows:
             - build
           filters:
             branches:
-              only: master
+              only: upgrade-to-circle-2
