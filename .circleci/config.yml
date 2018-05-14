@@ -59,16 +59,8 @@ jobs:
           name: Install awscli
           command: sudo pip install awscli
       - run:
-          name: See-through
-          command: |
-            echo "Current working_directory is '$(pwd)'"
-            echo "Content of this directory is:"
-            ls -la
-      - run:
           name: Deploy to S3 if tests pass and branch is Master
-          #command: aws s3 sync jekyll/_site/docs s3://circle-production-static-site/docs/ --delete
-          command: ls -laR ./build/
-          #command: aws s3 sync ./build/ s3://${S3_ENGINEERING_BUCKET}/ --delete --exclude ".circleci/*"
+          command: aws s3 sync ./build/ s3://${S3_ENGINEERING_BUCKET}/ --delete --exclude ".circleci/*"
 
 # And now plugging things together
 workflows:
@@ -81,4 +73,4 @@ workflows:
             - build
           filters:
             branches:
-              only: upgrade-to-circle-2
+              only: master
