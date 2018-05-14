@@ -1,0 +1,18 @@
+---
+title: "New paper: A gradual effects model for single-case designs"
+author: 'James'
+date: '2018-05-14'
+slug: gradual-effects-model-paper
+categories: []
+tags:
+  - single-case research
+  - effect sizes
+  - generalized linear model
+header:
+  caption: ''
+  image: ''
+---
+
+I'm very happy to share a new paper, co-authored with my student Danny Swan, "A gradual effects model for single-case designs," which is now available online at _Multivariate Behavioral Research_. You can access the published version [at the journal website](https://www.tandfonline.com/doi/abs/10.1080/00273171.2018.1466681?journalCode=hmbr20) ([click here for free access while supplies last](https://www.tandfonline.com/eprint/dkVfazwZaxnyaa9MfUjw/full)) or [the pre-print on PsyArxiv](https://psyarxiv.com/vh964/) (always free!). Here's [the abstract](/publication/gradual-effects-model) and [the supplementary materials](https://osf.io/uzkq6/). Danny wrote R functions for fitting the model, (available as part of the [SingleCaseES package](/software/singlecasees/)) as well as a [slick web interface](https://jepusto.shinyapps.io/gem-scd/), if you prefer to point-and-click. 
+
+This paper grew out of Danny's qualifying process (QP), which is the major exam that our doctoral students have to pass before they can begin their dissertation work. For the QP, students work with a faculty advisor to develop an extensive literature review and proposal for an original research project. They produce a written research proposal, then take written and oral exams on their work. For Danny's QP, he picked up one of the many loose ends in [my dissertation](/publication/operationally-comparable-effect-sizes), studied up on generalized linear models to understand how to express and fit the model, and developed a simulation study evaluating the model. After he successfully passed his QP, we worked together to refine the estimation methods and the simulation design, and then draft a manuscript (much of it cribbed from his QP proposal). I'm very proud and pleased that Danny continued to develop the work and saw it through to a first-authored publication. 
