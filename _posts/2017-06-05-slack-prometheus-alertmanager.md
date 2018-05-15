@@ -67,6 +67,7 @@ ALERT ElasticacheCPUUtilisation
 
 Keeping in-mind our template for how we will consume these alerts, update your rules to ensure they are concise and descriptive. For example: 
 
+{% raw %}
 ```
 ALERT ElasticacheCPUUtilisation
   IF aws_elasticache_cpuutilization_average > 80
@@ -78,6 +79,7 @@ ALERT ElasticacheCPUUtilisation
     runbook = "https://mywiki.com/ElasticacheCPUUtilisation",
   }
 ```
+{% endraw %}
 
 ## Step Two - Prometheus configuration
 
