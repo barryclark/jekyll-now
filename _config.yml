@@ -18,12 +18,12 @@ avatar: https://avatars.githubusercontent.com/mattbryce93
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email: admin@brycedev.co.uk
+  email:
   facebook:
   flickr:
   github: mattbryce93/mattbryce93.github.io
   instagram:
-  linkedin:
+  linkedin: https://www.linkedin.com/in/matthew-bryce-4a847612b/
   pinterest:
   rss: # just type anything here for a working RSS icon
   twitter: Bryce_Dev
@@ -41,7 +41,7 @@ google_analytics:
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
-url:
+url: http://brycedev.co.uk
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
