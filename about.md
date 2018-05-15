@@ -10,6 +10,6 @@ Hi there, my name is Matthew Bryce and I've just started a course at CodeClan. I
 
 I've been working for the last 2 and a half years working as an IT Engineer. I decided to go for this course as I wanted to move towards using code for everything.
 
-### Contact me
+<!-- ### Contact me
 
-[admin@brycedev.co.uk](mailto:admin@brycedev.co.uk)
+[admin@brycedev.co.uk](mailto:email@email.com) -->

@@ -3,8 +3,10 @@ layout: post
 title: Starting at CodeClan
 ---
 
-Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
+Hi there!
 
-![_config.yml]({{ site.baseurl }}/images/config.png)
+I've started! I've left my old job and started a Developers course at CodeClan. I've just finished my second day, I decided to start a blog here to try and help consolidate everything that I learn and help keep my thoughts in order.
 
-The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
+Today was the second day of the course. We started by going through our homework from yesterday. The biggest issue for people was navigation of directories via command line(Terminal! sorry). Luckily I'm familiar with Linux so for me it as just a nice refresher.
+
+The rest of the day was spent on methods. Particularly creating and testing them. You can see the work I did on this <a href="https://github.com/mattbryce93/method-exercises">here!</a>
