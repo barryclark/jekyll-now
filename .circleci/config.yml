@@ -3,38 +3,24 @@ jobs:
   # Build job
   build:
     working_directory: &working_directory
-      ~/infinityworks/engineering
+      /tmp/iwe
     parallelism: 1
     # environment:
     #   CIRCLE_ARTIFACTS: /tmp/circleci-artifacts
     #   CIRCLE_TEST_REPORTS: /tmp/circleci-test-results
     docker:
-      - image: circleci/ruby:2.5.1
+      - image: jekyll/jekyll:builder
     steps:
       - checkout
-      - setup_remote_docker
+      #- setup_remote_docker
       # - run: mkdir -p $CIRCLE_ARTIFACTS $CIRCLE_TEST_REPORTS
+      #- run: chmod 777 /tmp/iwe
       - run:
-          # TODO: rewrite this and run Jekyll as a ruby gem (easier said than done)
-          #
-          # "The job and remote docker run in separate environments"
-          # https://circleci.com/docs/2.0/building-docker-images/#separation-of-environments
-          #
-          # to add insult to the injury:
-          # 'docker cp ~/infinityworks/engineering sources:/source'
-          # results in '/source/engineering/' in the volume container
+          # The circle host does some funny with the folder permissions ...
           name: Building Jekyll website
           command: |
-            mkdir -p ~/infinityworks/engineering/build
-            chmod 777 ~/infinityworks/engineering/build
-            # Create the volume container
-            docker create -v /source --name sources alpine:3.4 /bin/true
-            # Copy everything over to the volume container
-            docker cp ~/infinityworks/engineering sources:/source
-            # Now we can build
-            docker run --volumes-from sources --name engineering jekyll/jekyll:pages jekyll build --source /source/engineering --destination /source/engineering/build
-            # Then copy back the build ...
-            docker cp engineering:/source/engineering/build/ ~/infinityworks/engineering/
+            chmod 777 /tmp/iwe
+            jekyll build --source /tmp/iwe --config /tmp/iwe/_config.yml --destination /tmp/iwe/build
       - persist_to_workspace:
           root: *working_directory
           paths:
@@ -62,6 +48,18 @@ jobs:
           name: Deploy to S3 if tests pass and branch is Master
           command: aws s3 sync ./build/ s3://${S3_ENGINEERING_BUCKET}/ --delete --exclude ".circleci/*"
 
+  see:
+    docker:
+      - image: circleci/python:2.7
+    working_directory: *working_directory
+    steps:
+      - attach_workspace:
+          at: ./
+      - run:
+          name: See-through
+          command: ls -laR ./build
+
+
 # And now plugging things together
 workflows:
   version: 2
@@ -74,3 +72,12 @@ workflows:
           filters:
             branches:
               only: master
+  build-see:
+    jobs:
+      - build
+      - see:
+          requires:
+            - build
+          filters:
+            branches:
+              only: upgrade-to-circle-2
