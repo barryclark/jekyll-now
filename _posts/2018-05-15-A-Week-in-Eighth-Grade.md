@@ -1,6 +1,6 @@
 ---
 layout: post
-title: My First Blog Post
+title: A Week in Eighth Grade
 ---
 
 Hi. This is Amely typing.
