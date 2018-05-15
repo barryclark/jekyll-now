@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Hi there, my name is Matthew Bryce and I've just started a course at CodeClan. I'm using this blog to track everything that happens and to help consolidate everything I learn during it.
+Hi there, my name is Matthew Bryce and I've just started a course at CodeClan. I'm using this blog to track everything that happens and to help consolidate everything I learn.
 
 ### More Information
 
