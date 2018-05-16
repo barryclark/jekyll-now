@@ -44,8 +44,7 @@ url_source = ""
 
 # Custom links (optional).
 #   Uncomment line below to enable. For multiple links, use the form `[{...}, {...}, {...}]`.
-url_custom = [{name = "Supplementary materials", url = "https://osf.io/uzkq6/"}, {name = "R package", url = "https://github.com/jepusto/SingleCaseES"}, {name = "Web app", url = "https://jepusto.shinyapps.io/gem-scd/"}]
-# , {name = "Journal", url = "http://doi.org/10.1080/00273171.2015.1014879"}
+url_custom = [{name = "Supplementary materials", url = "https://osf.io/uzkq6/"}, {name = "R package", url = "https://github.com/jepusto/SingleCaseES"}, {name = "Web app", url = "https://jepusto.shinyapps.io/gem-scd/"}, {name = "Journal", url = "https://doi.org/10.1080/00273171.2018.1466681"}]
 
 # Does the content use math formatting?
 math = false

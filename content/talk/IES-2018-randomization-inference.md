@@ -7,6 +7,7 @@ time_start = 2018-01-10T08:15:00
 abstract = ""
 abstract_short = ""
 event = "Institute of Education Sciences 2018 Principal Investigators Meeting"
+event_short = "IES 2018 PI Meeting"
 event_url = ""
 location = "Washington, DC"
 
