@@ -221,6 +221,7 @@ title: Πως αγοράζουμε, πουλάμε, ξοδεύουμε και δ
 
 ### <a name="projects"></a> Ποια projects σχετικά με κρυπτονομίσματα και blockchain υπάρχουν στην Ελλάδα και στην Κύπρο;
 
+- Bitcoin nodes που τρέχουν στην [Ελλάδα](https://bitnodes.earn.com/nodes/?q=Greece) και στην [Κύπρο](https://bitnodes.earn.com/nodes/?q=Cyprus)
 - Το [Coinomi multicurrency wallet](https://coinomi.com)
 - Το [University of Nicosia δωρεάν MOOC Introduction to Digital Currencies και το MSc in Digital Currency](https://digitalcurrency.unic.ac.cy)
 - Η [Synaphea](https://synaphea.com) Enterprise Blockchain Solutions
@@ -236,7 +237,7 @@ title: Πως αγοράζουμε, πουλάμε, ξοδεύουμε και δ
 - Ο Μη-Κερδοσκοπικός Οργανισμός [Hellenic Blockchain Hub](http://blockchain.org.gr)
 - Ο Μη-Κερδοσκοπικός Οργανισμός [Cyprus Blockchain Technologies](http://cybt.eu)
 
-Τελευταία ενημέρωση: 2018-05-12
+Τελευταία ενημέρωση: 2018-05-16
 
 <!-- <div class="posts">
   {% for post in site.posts %}
