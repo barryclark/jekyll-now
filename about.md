@@ -8,8 +8,8 @@ Hi there, my name is Matthew Bryce and I’ve just started a course at CodeClan.
 
 ### More Information
 
-I’ve been working for the last 2 and a half years as an IT Engineer. I decided to apply for this course, as I wanted to improve my coding skills, in order to become a web developer.
+I’ve been working for the last 2 and a half years as an IT Engineer. I decided to apply for this course, as I wanted to improve my coding skills, in order to become a Software Developer.
 
 <!-- ### Contact me
 
-[admin@brycedev.co.uk](mailto:email@email.com) -->
+[email@email.com](mailto:email@email.com) -->
