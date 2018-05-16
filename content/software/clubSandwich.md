@@ -9,7 +9,7 @@ title = "clubSandwich"
 summary = "cluster-robust variance estimation."
 
 # Optional image to display on homepage (relative to `static/img/` folder).
-image_preview = "boards.jpg"
+image_preview = "clubSandwich.jpg"
 
 # Tags: can be used for filtering projects.
 # Example: `tags = ["machine-learning", "deep-learning"]`
@@ -23,8 +23,8 @@ math = false
 
 # Optional featured image (relative to `static/img/` folder).
 [header]
-image = "headers/boards.jpg"
-caption = "My caption :smile:"
+image = "headers/sandwich-plate.jpg"
+caption = ""
 
 +++
 
