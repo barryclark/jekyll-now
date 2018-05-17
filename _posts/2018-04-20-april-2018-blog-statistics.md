@@ -51,6 +51,6 @@ Without further ado, here are the numbers:
 * Earnings / 1,000 pageviews = $2.16 / 1.947 = $1.11
 * Earnings / 1,000 impressions = $2.16 / 1.364 = $1.58
 * Earnings / day = $2.16 / 31 = $0.07
-* Sessions / day = 1,579 / 31 = 50.9
-* Pageviews / day = 1,947 / 31= 62.8
-* Impressions / day = 1,364 / 31 = 44.0
+* Sessions / day = 1,579 / 31 = 52.6
+* Pageviews / day = 1,947 / 31= 64.9
+* Impressions / day = 1,364 / 31 = 45.5
