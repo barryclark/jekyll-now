@@ -9,7 +9,7 @@ title = "ARPobservation"
 summary = "Simulate systematic direct observation data."
 
 # Optional image to display on homepage (relative to `static/img/` folder).
-image_preview = "bubbles.jpg"
+image_preview = "Momentary-time-sampling.png"
 
 # Tags: can be used for filtering projects.
 # Example: `tags = ["machine-learning", "deep-learning"]`
@@ -23,7 +23,7 @@ math = false
 
 # Optional featured image (relative to `static/img/` folder).
 [header]
-image = "headers/ARPsimulator.png"
+image = "headers/ABAB-design.png"
 caption = "Simulated frequency counting data in a treatment reversal design"
 
 +++
