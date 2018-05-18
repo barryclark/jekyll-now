@@ -1,7 +1,7 @@
 ---
 layout: post
 title: March 2018 Blog Statistics
-tags: [web]
+tags: [blog statistics]
 keywords: [blog, statistics, blog statistics, analytics, pageviews, webmaster, webmaster tools, alexa, google]
 image: /images/blog-stats/2018-03-stats.png
 ---
