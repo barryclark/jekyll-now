@@ -10,6 +10,7 @@ permalink: /sitemap/
 * [About](/about/)
 * [R&eacute;sum&eacute; / CV](/resume/)
 * [Privacy Policy](/privacy/)
+* [Tags](/tags/)
 * [T-Shirts](/t-shirts/)
 * [Web Portfolio](/web-portfolio/)
 * [Sitemap (this page)](/sitemap/)
@@ -23,11 +24,6 @@ permalink: /sitemap/
 |-------|--------|{% for post in site.posts %}{% assign tags = post.tags | sort %}
 | {{ post.date | date: "%B %e, %Y" }} | [{{ post.title }}]({{ post.url }}) | {% for tag in tags %}{{ tag }}{% unless forloop.last %}, {% endunless %}{% endfor %} | {% if post.pages %}{% for page in (2..post.pages) %}
 | {{ post.date | date: "%B %e, %Y" }} | [{{ post.title }} Page {{ page }}]({{ post.url }}page{{ page }}/) | {% for tag in tags %}{{ tag }}{% unless forloop.last %}, {% endunless %}{% endfor %} | {% endfor %}{% endif %}{% endfor %}
-
-## Tags
-
-{% for tag in site.tags %}
-* [{{ tag[0] }}](/tags/{{ tag[0] | replace: ' ', '_' }}/) ({{ tag[1] | size}} posts){% endfor %}
 
 ## Pages
 
