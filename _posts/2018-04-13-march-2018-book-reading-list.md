@@ -1,7 +1,7 @@
 ---
 layout: post
 title: March 2018 Book Reading List
-tags: [culture]
+tags: [books]
 keywords: [book, read, books, reading, book reading, books i read]
 ---
 
