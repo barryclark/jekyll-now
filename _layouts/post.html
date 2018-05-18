@@ -17,7 +17,7 @@ javascripts: []
     <span itemprop="datePublished" content="{{ page.date | date: "%Y-%m-%d" }}" class="date">{{ page.date | date: "%B %e, %Y" }}</span>
     <meta itemprop="dateModified" content="{% if post.updated %}{{ post.updated }}{% else %}{{ post.date | date: "%Y-%m-%d" }}{% endif %}" />
     <nav class="tags">
-      {% assign tags = page.tags | sort %}{% for tag in tags %}<a href="/tags/{{ tag | replace:' ','_' }}/">{{ tag }}</a>{% unless forloop.last %}|{% endunless %}{% endfor %}
+      {% assign tags = page.tags | sort %}{% for tag in tags %}<a href="/tags2/#{{ tag | replace:' ','-' }}/">{{ tag }}</a>{% unless forloop.last %}|{% endunless %}{% endfor %}
     </nav>
   </div>
   <hr />
