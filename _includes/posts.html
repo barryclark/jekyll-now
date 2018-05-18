@@ -7,7 +7,7 @@
 <hr />
 <div>
 <span class="date">{{ post.date | date: "%B %e, %Y" }}</span>
-<nav class="tags">{% assign tags = post.tags | sort %}{% for tag in tags %}<a href="/tags/{{ tag | replace:' ','_' }}/">{{ tag }}</a>{% unless forloop.last %}|{% endunless %}{% endfor %}</nav>
+<nav class="tags">{% assign tags = post.tags | sort %}{% for tag in tags %}<a href="/tags2/#{{ tag | replace:' ','-' }}/">{{ tag }}</a>{% unless forloop.last %}|{% endunless %}{% endfor %}</nav>
 </div>
 <hr />
 <div class="sample entry{% if post.twitter_post %} twitter-post{% endif %}{% if post.facebook_post %} facebook-post{% endif %}">
