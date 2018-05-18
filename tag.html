@@ -8,6 +8,6 @@ csses: [/css/tags.css]
 {% assign tags = site.tags | sort %}{% for tag in tags %}
 <h2 id="{{ tag[0] | replace: ' ', '-' }}">{{ tag[0] }}</h2>
 <ul>
-<li>title</li>
+<li>{{ tag }}</li>
 </ul>
 {% endfor %}
