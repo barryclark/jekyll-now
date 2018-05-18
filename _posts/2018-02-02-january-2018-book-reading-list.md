@@ -1,7 +1,7 @@
 ---
 layout: post
 title: January 2018 Book Reading List
-tags: [culture]
+tags: [books]
 keywords: [book, read, books, reading, book reading, books i read]
 image: /images/books/january-2018-books-read.png
 ---
