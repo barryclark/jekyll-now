@@ -9,7 +9,7 @@ title = "SingleCaseES"
 summary = "Single-case design effect size calculator."
 
 # Optional image to display on homepage (relative to `static/img/` folder).
-image_preview = "bubbles.jpg"
+image_preview = "Romaniuk.png"
 
 # Tags: can be used for filtering projects.
 # Example: `tags = ["machine-learning", "deep-learning"]`
@@ -23,8 +23,8 @@ math = false
 
 # Optional featured image (relative to `static/img/` folder).
 [header]
-image = "headers/bubbles-wide.jpg"
-caption = "My caption :smile:"
+image = "headers/Romaniuk-wide.png"
+caption = ""
 
 +++
 
