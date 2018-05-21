@@ -20,7 +20,7 @@ selected = false
 
 # Links (optional).
 url_pdf = ""
-url_slides = ""
+url_slides = "/files/PRC_talk_20160219.pdf"
 # url_custom = [{name = "Poster", url = "/files/Gradual-effects-model-poster-IES-2018-01-10.pdf"}]
 
 # Does the content use math formatting?
