@@ -11,3 +11,5 @@ Encoding: UTF-8
 
 RnwWeave: knitr
 LaTeX: pdfLaTeX
+
+BuildType: Website

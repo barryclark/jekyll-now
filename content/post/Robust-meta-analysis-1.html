@@ -1,0 +1,166 @@
+---
+title: A meta-sandwich
+author: 'James'
+date: '2014-04-21'
+slug: Robust-meta-analysis-1
+categories: []
+tags:
+  - meta-analysis
+  - sandwiches
+  - R
+header:
+  caption: ''
+  image: ''
+---
+
+
+
+<p>A common problem arising in many areas of meta-analysis is how to synthesize a set of effect sizes when the set includes multiple effect size estimates from the same study. It’s often not possible to obtain all of the information you’d need in order to estimate the sampling covariances between those effect sizes, yet without that information, established approaches to modeling dependent effect sizes become inaccurate. <a href="http://doi.org/10.1002/jrsm.5">Hedges, Tipton, &amp; Johnson</a> (2010, HTJ hereafter) proposed the use of cluster-robust standard errors for multi-variate meta-analysis. (These are also called “sandwich” standard errors, which is up there on the list of great and evocative names for statistical procedures.) The great advantage of the sandwich approach is that it permits valid inferences for average effect sizes and meta-regression coefficients even if you don’t have correct covariance estimates (or variance estimates, for that matter).</p>
+<p>I recently heard from <a href="http://blogs.cuit.columbia.edu/let2119/">Beth Tipton</a> (who’s a graduate-school buddy) that she and her student have written an <a href="http://cran.r-project.org/web/packages/robumeta/index.html">R package</a> implementing the HTJ methods, including moment estimators for the between-study variance components. I want to try out the cluster-robust standard errors for a project I’m working on, but I also need to use REML estimators rather than the moment estimators. It turns out, it’s easy enough to do that by writing a couple of short functions. Here’s how.</p>
+<p>First, the <a href="http://cran.r-project.org/web/packages/metafor/index.html">metafor package</a> contains a very rich suite of meta-analytic methods, including for multi-variate meta-analysis. The only thing it lacks is sandwich standard errors. However, the <a href="http://cran.r-project.org/web/packages/sandwich/index.html">sandwich package</a> provides an efficient, well-structured framework for calculating all sorts of robust standard errors. All that’s needed are a few functions to make the packages talk to each other. Each of the functions described below takes as input a fitted multi-variate meta-analysis model, which is represented in R by an object of class <code>rma.mv</code>.</p>
+<p>First load up the packages:</p>
+<pre class="r"><code>library(metafor)
+library(sandwich)
+library(lmtest)</code></pre>
+<p>Next, I need a <code>bread</code> method for objects of class <code>rma.mv</code>, which is a function that returns the <span class="math inline">\(p \times p\)</span> matrix <span class="math inline">\(\displaystyle{m \left(\sum_{i=1}^m \mathbf{X}_j&#39; \mathbf{W}_j \mathbf{X}_j\right)^{-1}}\)</span>. The bread function is straight-forward because it is just a multiple of the model-based covariance matrix, which <code>rma.mv</code> objects store in the <code>vb</code> component:</p>
+<pre class="r"><code>bread.rma.mv &lt;- function(obj) {
+  cluster &lt;- findCluster(obj)
+  length(unique(cluster)) * obj$vb  
+}</code></pre>
+<p>I also need an <code>estfun</code> method for objects of class <code>rma.mv</code>, which is a function that returns an <span class="math inline">\(m \times p\)</span> matrix where row <span class="math inline">\(j\)</span> is equal to <span class="math inline">\(\mathbf{e}_j&#39; \mathbf{W}_j \mathbf{X}_j\)</span>, <span class="math inline">\(j = 1,...,m\)</span>. The necessary pieces for the <code>estfun</code> method can also be pulled out of the components of <code>rma.mv</code>:</p>
+<pre class="r"><code>estfun.rma.mv &lt;- function(obj) {
+  cluster &lt;- droplevels(as.factor(findCluster(obj)))
+  res &lt;- residuals(obj)
+  WX &lt;- chol2inv(chol(obj$M)) %*% obj$X
+  rval &lt;- by(cbind(res, WX), cluster, 
+             function(x) colSums(x[,1] * x[,-1, drop = FALSE]))
+  rval &lt;- matrix(unlist(rval), length(unique(cluster)), obj$p, byrow=TRUE)
+  colnames(rval) &lt;- colnames(obj$X)
+  rval
+}</code></pre>
+<p>The remaining question is how to determine which of the components in the model should be used to define independent clusters. This is a little bit tricky because there are several different methods of specifying random effects in the <code>rma.mv</code> function. One way involves providing a list of formulas, each containing a factor associated with a unique random effect, such as <code>random = list( ~ 1 | classroom, ~ 1 | school)</code>. If this method of specifying random effects is used, the <code>rma.mv</code> object will have the component <code>withS</code> set to <code>TRUE</code>, and my approach is to simply take the factor with the smallest number of unique levels. This is perhaps a little bit presumptious, because the <code>withS</code> method could potentially be used to specify arbitrary random effects, where one level is not strictly nested inside another. However, probably the most common use will involve nested factors, so my assumption seems like a good starting point at least.</p>
+<p>Another approach to specifying random effects is to use a formula of the form <code>random = inner | outer</code>, in which case the <code>rma.mv</code> object will have the component <code>withG</code> set to <code>TRUE</code>. Here, it seems reasonable to use the <code>outer</code> factor for defining clusters. If both the <code>withS</code> and <code>withG</code> methods are used together, I’ll assume that the <code>withS</code> factors contain the outermost level.</p>
+<p>Finally, if <code>rma.mv</code> is used to estimate a fixed effects model without any random components, the clustering factor will have to be manually added to the <code>rma.mv</code> object in a component called <code>cluster</code>. For example, if you want to cluster on the variable <code>studyID</code> in the dataframe <code>dat</code>:</p>
+<pre class="r"><code>rma_fit$cluster &lt;- dat$studyID</code></pre>
+<p>Here’s code that implements these assumptions:</p>
+<pre class="r"><code>findCluster &lt;- function(obj) {
+  if (is.null(obj$cluster)) {
+    if (obj$withS) {
+      r &lt;- which.min(obj$s.nlevels)
+      cluster &lt;- obj$mf.r[[r]][[obj$s.names[r]]]
+    } else if (obj$withG) {
+      cluster &lt;- obj$mf.r[[1]][[obj$g.names[2]]]
+    } else {
+        stop(&quot;No clustering variable specified.&quot;)
+    }
+  } else {
+    cluster &lt;- obj$cluster
+  }
+  cluster
+}</code></pre>
+<p>With these three functions, you can then use <code>metafor</code> to fit a random effects model, <code>sandwich</code> to calculate the standard errors, and functions like <code>coeftest</code> from the package <code>lmtest</code> to run <span class="math inline">\(t\)</span>-tests. As a little bonus, here’s a function for probably the most common case of how you’d use the sandwich standard errors:</p>
+<pre class="r"><code>RobustResults &lt;- function(obj, adjust = TRUE) {
+  cluster &lt;- findCluster(obj)  
+  vcov. &lt;- sandwich(obj, adjust = adjust)
+  df. &lt;- length(unique(cluster)) - obj$p
+  coeftest(obj, vcov. = vcov., df = df.)
+}</code></pre>
+<p><a href="https://gist.github.com/jepusto/11144005">See here</a> for a file containing the full code.</p>
+<div id="example" class="section level3">
+<h3>Example</h3>
+<p><a href="http://doi.org/10.1002/jrsm.1091">Tanner-Smith &amp; Tipton (2013)</a> provide an application of the cluster-robust method to a fictional dataset with 68 effect sizes nested within 15 studies. They call this a “hierarchical” dependence example because each effect size estimate is drawn from an independent sample, but dependence is induced because the experiments were all done in the same lab. For comparison purposes, here are the results produced by <code>robumeta</code>:</p>
+<pre class="r"><code>library(grid)
+library(robumeta)
+data(hierdat)
+
+HTJ &lt;- robu(effectsize ~ 1,
+       data = hierdat, modelweights = &quot;HIER&quot;,
+       studynum = studyid,
+       var.eff.size = var, small = FALSE)
+HTJ</code></pre>
+<pre><code>## RVE: Hierarchical Effects Model  
+## 
+## Model: effectsize ~ 1 
+## 
+## Number of clusters = 15 
+## Number of outcomes = 68 (min = 1 , mean = 4.53 , median = 2 , max = 29 )
+## Omega.sq = 0.1560802 
+## Tau.sq = 0.06835547 
+## 
+##                Estimate StdErr t-value dfs  P(|t|&gt;) 95% CI.L 95% CI.U Sig
+## 1 X.Intercept.     0.25 0.0598    4.18  14 0.000925    0.122    0.378 ***
+## ---
+## Signif. codes: &lt; .01 *** &lt; .05 ** &lt; .10 *
+## ---</code></pre>
+<p>To exactly re-produce the results with <code>metafor</code>, I’ll need to use the weights proposed by HTJ. In their approach, effect size <span class="math inline">\(i\)</span> from study <span class="math inline">\(j\)</span> receives weight equal to <span class="math inline">\(\left(v_{ij} + \hat\omega^2 + \hat\tau^2\right)^{-1}\)</span>, where <span class="math inline">\(v_{ij}\)</span> is the sampling variance of the effect size, <span class="math inline">\(\hat\omega^2\)</span> is an estimate of the between-sample within-study variance, and <span class="math inline">\(\hat\tau^2\)</span> is an estimate of the between-study variance. After calculating these weights, I fit the model in metafor, calculate the sandwich covariance matrix, and replay the results:</p>
+<pre class="r"><code>hierdat$var_HTJ &lt;- hierdat$var + HTJ$mod_info$omega.sq + HTJ$mod_info$tau.sq # calculate weights</code></pre>
+<pre><code>## Warning in hierdat$var + HTJ$mod_info$omega.sq: Recycling array of length 1 in vector-array arithmetic is deprecated.
+##   Use c() or as.vector() instead.</code></pre>
+<pre><code>## Warning in hierdat$var + HTJ$mod_info$omega.sq + HTJ$mod_info$tau.sq: Recycling array of length 1 in vector-array arithmetic is deprecated.
+##   Use c() or as.vector() instead.</code></pre>
+<pre class="r"><code>meta1 &lt;- rma.mv(yi = effectsize ~ 1, V = var_HTJ, data = hierdat, method = &quot;FE&quot;)
+meta1$cluster &lt;- hierdat$studyid # add clustering variable to the fitted model
+RobustResults(meta1)</code></pre>
+<pre><code>## 
+## t test of coefficients:
+## 
+##         Estimate Std. Error t value  Pr(&gt;|t|)    
+## intrcpt 0.249826   0.059762  4.1803 0.0009253 ***
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
+<p>The HTJ weights are not the only alternative–one could instead use weights that are exactly inverse variance under the posited model. For effect <span class="math inline">\(i\)</span> from study <span class="math inline">\(j\)</span>, these weights would be closer to <span class="math inline">\(\left(v_{ij} + \hat\omega^2 + k_j \hat\tau^2 \right)^{-1}\)</span>. For <span class="math inline">\(\hat\tau^2 &gt; 0\)</span>, the inverse-variance weights put proportionately less weight on studies containing many effects. These weights can be calculated in <code>metafor</code> as follows:</p>
+<pre class="r"><code>meta2 &lt;- rma.mv(yi = effectsize ~ 1, V = var, 
+                 random = list(~ 1 | esid, ~ 1 | studyid), 
+                 sigma2 = c(HTJ$mod_info$omega.sq, HTJ$mod_info$tau.sq),
+                 data = hierdat)
+RobustResults(meta2)</code></pre>
+<pre><code>## 
+## t test of coefficients:
+## 
+##         Estimate Std. Error t value Pr(&gt;|t|)   
+## intrcpt 0.264422   0.086688  3.0503 0.008645 **
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
+<p>Curiously, the robust standard error increases under a weighting scheme that is more efficient if the model is correct.</p>
+<p>Finally, <code>metafor</code> provides ML and REML estimators for the between-sample and between-study random effects (the HTJ moment estimators are not available though). Here are the results based on REML estimators and the corresponding inverse-variance weights:</p>
+<pre class="r"><code>meta3 &lt;- rma.mv(yi = effectsize ~ 1, V = var, 
+                 random = list(~ 1 | esid, ~ 1 | studyid), 
+                 data = hierdat,
+                method = &quot;REML&quot;)
+meta3</code></pre>
+<pre><code>## 
+## Multivariate Meta-Analysis Model (k = 68; method: REML)
+## 
+## Variance Components: 
+## 
+##             estim    sqrt  nlvls  fixed   factor
+## sigma^2.1  0.2263  0.4757     68     no     esid
+## sigma^2.2  0.0000  0.0000     15     no  studyid
+## 
+## Test for Heterogeneity: 
+## Q(df = 67) = 370.1948, p-val &lt; .0001
+## 
+## Model Results:
+## 
+## estimate      se    zval    pval   ci.lb   ci.ub     
+##   0.2501  0.0661  3.7822  0.0002  0.1205  0.3797  ***
+## 
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
+<pre class="r"><code>RobustResults(meta3)</code></pre>
+<pre><code>## 
+## t test of coefficients:
+## 
+##         Estimate Std. Error t value  Pr(&gt;|t|)    
+## intrcpt 0.250071   0.059796  4.1821 0.0009222 ***
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
+<p>The between-study variance estimate is tiny, particularly when compared to the between-sample within-study estimate. Despite the difference in variance estimates, the average effect size estimate is nearly identical to the estimate based on the HTJ approach.</p>
+<p><a href="https://gist.github.com/jepusto/11143798">See here</a> for the full code to reproduce this example.</p>
+</div>
+<div id="notes" class="section level3">
+<h3>Notes</h3>
+<p>It would be straight-forward to add a few more functions that provide robust standard errors for univariate meta-analysis models as well. All that it would take is to write <code>bread</code> and <code>estfun</code> methods for the class <code>rma.uni</code>.</p>
+<p>Also, Beth <a href="https://www.sree.org/conferences/2014s/program/downloads/abstracts/1089.pdf">has recently proposed</a>
+small-sample corrections to the cluster-robust estimators, based on the bias-reduced linearization (BRL) approach of <a href="http://www.amstat.org/sections/SRMS/Proceedings/y2001/Proceed/00264.pdf">McCaffrey, Bell, &amp; Botts (2001)</a>. It seems to me that these small-sample corrections could also be implemented using an approach similar to what I’ve done here, by building out the <code>estfun</code> method to provide BRL results. It would take a little more thought, but actually it would be worth doing–and treating the general case–because BRL seems like it would be useful for all sorts of models besides multi-variate meta-analysis.</p>
+</div>

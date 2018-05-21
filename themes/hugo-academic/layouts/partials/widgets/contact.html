@@ -1,0 +1,99 @@
+{{ $ := .root }}
+{{ $page := .page }}
+{{ $autolink := default true $page.Params.autolink }}
+
+<!-- Contact widget -->
+<div class="row">
+  <div class="col-xs-12 col-md-4 section-heading">
+    <h1>{{ with $page.Title }}{{ . | markdownify }}{{ end }}</h1>
+    {{ with $page.Params.subtitle }}<p>{{ . | markdownify }}</p>{{ end }}
+  </div>
+  <div class="col-xs-12 col-md-8">
+    {{ with $page.Content }}<p>{{ . | markdownify }}</p>{{ end }}
+
+    <ul class="fa-ul" itemscope>
+
+      {{ with $.Site.Params.email }}
+      <li>
+        <i class="fa-li fa fa-envelope fa-2x" aria-hidden="true"></i>
+        <span id="person-email" itemprop="email">
+        {{- if $autolink }}<a href="mailto:{{ . }}">{{ . }}</a>{{ else }}{{ . }}{{ end -}}
+        </span>
+      </li>
+      {{ end }}
+
+      {{ with $.Site.Params.discussion }}
+      <li>
+        <i class="fa-li fa fa-comments-o fa-2x" aria-hidden="true"></i>
+        <span>
+          <a href="{{ .url }}" target="_blank" rel="noopener">{{ .name }}</a>
+        </span>
+      </li>
+      {{ end }}
+
+      {{ with $.Site.Params.keybase }}
+      <li>
+        <i class="fa-li fa fa-lock fa-2x" aria-hidden="true"></i>
+        <span>
+          <a href="https://keybase.io/{{ . }}" target="_blank" rel="noopener">@{{ . }}</a> on Keybase.
+        </span>
+      </li>
+      {{ end }}
+
+      {{ with $.Site.Params.phone }}
+      <li>
+        <i class="fa-li fa fa-phone fa-2x" aria-hidden="true"></i>
+        <span id="person-telephone" itemprop="telephone">
+        {{- if $autolink }}<a href="tel:{{ . }}">{{ . }}</a>{{ else }}{{ . }}{{ end -}}
+        </span>
+      </li>
+      {{ end }}
+
+      {{ with $.Site.Params.skype }}
+      <li>
+        <i class="fa-li fa fa-skype fa-2x" aria-hidden="true"></i>
+        <span>
+        {{- if $autolink }}<a href="skype:{{ . }}?call">{{ . }}</a>{{ else }}{{ . }}{{ end -}}
+        </span>
+      </li>
+      {{ end }}
+
+      {{ with $.Site.Params.telegram }}
+      <li>
+        <i class="fa-li fa fa-telegram fa-2x" aria-hidden="true"></i>
+        <span>
+        {{- if $autolink }}<a href="https://telegram.me/{{ . }}" target="_blank" rel="noopener">@{{ . }}</a>{{ else }}@{{ . }}{{ end -}}
+        </span>
+      </li>
+      {{ end }}
+
+      {{ with $.Site.Params.address }}
+      <li>
+        <i class="fa-li fa fa-map-marker fa-2x" aria-hidden="true"></i>
+        <span id="person-address" itemprop="address">{{ replace . "\n" "<br>" | safeHTML }}</span>
+      </li>
+      {{ end }}
+
+      {{ with $.Site.Params.office_hours }}
+      <li>
+        <i class="fa-li fa fa-clock-o fa-2x" aria-hidden="true"></i>
+        <span>{{ . }}</span>
+      </li>
+      {{ end }}
+
+    </ul>
+
+    {{ if $.Site.Params.map }}
+    <div class="hidden">
+      <input id="map-provider" value="{{ $.Site.Params.map }}">
+      <input id="map-lat" value="{{ $.Site.Params.latitude }}">
+      <input id="map-lng" value="{{ $.Site.Params.longitude }}">
+      <input id="map-dir" value="{{ $.Site.Params.address }}">
+      <input id="map-zoom" value="{{ $.Site.Params.zoom | default "15" }}">
+      <input id="map-api-key" value="{{ $.Site.Params.map_api_key }}">
+    </div>
+    <div id="map"></div>
+    {{ end }}
+
+  </div>
+</div>

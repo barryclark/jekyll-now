@@ -1,8 +1,15 @@
 ---
-layout: post
 title: Testing for level-$\alpha$ tests
-date: October 11, 2016
-tags: [simulation]
+author: 'James'
+date: '2016-10-11'
+slug: testing-for-level-alpha-tests
+categories: []
+tags:
+  - simulation
+  - hypothesis testing
+header:
+  caption: ''
+  image: ''
 ---
 
 ```{r setup, include=FALSE}

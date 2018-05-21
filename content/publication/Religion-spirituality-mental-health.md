@@ -1,0 +1,58 @@
++++
+title = "A meta-analytic approach to examine the relationship between religion/spirituality and mental health in cancer"
+date = 2015-08-10T00:00:00
+
+# Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
+authors = ["John A. Salsman", "James E. Pustejovsky", "Heather S. Jim", "Alexis R. Munoz", "Thomas V. Merluzzi", "Logan George", "Crystal L. Park", "Suzanne C. Danhauer", "Allen C. Sherman", "Mallory A. Snyder", "George Fitchett"]
+
+# Publication type.
+# Legend:
+# 0 = Uncategorized
+# 1 = Conference proceedings
+# 2 = Journal
+# 3 = Work in progress
+# 4 = Technical report
+# 5 = Book
+# 6 = Book chapter
+publication_types = ["2"]
+
+# Publication name and optional abbreviated version.
+publication = "_Cancer, 121_(21), 3769--3778"
+
+# Abstract and optional shortened version.
+abstract = "Religion and spirituality (R/S) are patient-centered factors and often are resources for managing the emotional sequelae of the cancer experience. Studies investigating the correlation between R/S (eg, beliefs, experiences, coping) and mental health (eg, depression, anxiety, well being) in cancer have used very heterogeneous measures and have produced correspondingly inconsistent results. A meaningful synthesis of these findings has been lacking; thus, the objective of this review was to conduct a meta-analysis of the research on R/S and mental health. Four electronic databases were systematically reviewed, and 2073 abstracts met initial selection criteria. Reviewer pairs applied standardized coding schemes to extract indices of the correlation between R/S and mental health. In total, 617 effect sizes from 148 eligible studies were synthesized using meta-analytic generalized estimating equations, and subgroup analyses were performed to examine moderators of effects. The estimated mean correlation (Fisher z) was 0.19 (95% confidence interval [CI], 0.16-0.23), which varied as a function of R/S dimensions: affective R/S (z=0.38; 95% CI, 0.33-0.43), behavioral R/S (z=0.03; 95% CI, 20.02-0.08), cognitive R/S (z=0.10; 95% CI, 0.06-0.14), and ‘other’ R/S (z=0.08; 95% CI, 0.03-0.13). Aggregate, study-level demographic and clinical factors were not predictive of the relation between R/S and mental health. There was little indication of publication or reporting biases. The correlation between R/S and mental health generally was positive. The strength of that correlation was modest and varied as a function of the R/S dimensions and mental health domains assessed. The identification of optimal R/S measures and more sophisticated methodological approaches are needed to advance research."
+
+# Featured image thumbnail (optional)
+image_preview = ""
+
+# Is this a selected publication? (true/false)
+selected = false
+
+# Projects (optional).
+#   Associate this publication with one or more of your projects.
+#   Simply enter the filename (excluding '.md') of your project file in `content/project/`.
+
+# Links (optional).
+url_preprint = ""
+url_code = ""
+url_dataset = ""
+url_project = ""
+url_slides = ""
+url_video = ""
+url_poster = ""
+url_source = ""
+
+# Custom links (optional).
+#   Uncomment line below to enable. For multiple links, use the form `[{...}, {...}, {...}]`.
+url_custom = [{name = "Journal", url = "http://doi.org/10.1002/cncr.29350"}]
+
+# Does the content use math formatting?
+math = false
+
+# Does the content use source code highlighting?
+highlight = false
+
+# Featured image
+# Place your image in the `static/img/` folder and reference its filename below, e.g. `image = "example.jpg"`.
+
++++

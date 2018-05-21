@@ -1,0 +1,17 @@
+---
+title: 'Another project idea: Meta-analytic methods for correlational data'
+author: 'James'
+date: '2013-09-13'
+slug: Another-project-idea
+categories: []
+tags:
+  - meta-analysis
+---
+
+Several different approaches have been proposed for meta-analysis of correlation coefficients. One of the major differences between approaches is the choice of scale: whether effect sizes should be analyzed on the Pearson-r scale or first transformed to the Fisher-z scale. This project will study methods for modeling correlation coefficients on the r scale in the presence of between-study effect heterogeneity. Specific topics include:
+
+* refined methods for variance estimation;
+* hierarchical modeling to capture differences between distinct operationalizations of the same construct; and
+* application to a large correlational meta-analysis.
+
+This project would be appropriate for a Quantitative Methods graduate student with interests in meta-analysis and hierarchical models.

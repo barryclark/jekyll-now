@@ -1,7 +1,0 @@
----
-layout: post
-title: Differences between implementations of robust variance estimation in R
-date: October 1, 2017
-tags: [meta-analysis, sandwiches, R]
----
-

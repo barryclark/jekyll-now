@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Robust, easy standard errors with the clubSandwich package</title>
+    <meta charset="utf-8">
+    <meta name="author" content="James E. Pustejovsky" />
+    <meta name="date" content="2018-04-25" />
+    <link rel="stylesheet" href="clubSandwich_files\my-theme.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Robust, easy standard errors with the clubSandwich package
+### James E. Pustejovsky
+### April 25, 2018
+
+---
+
+class: inverse, middle, stretch
+background-image: url(clubSandwich_files/images/Salt-n-Pepa.jpg)
+background-size: contain
+
+
+
+
+---
+
+# Conventional regression analysis
+
+A generic regression model:
+
+  `$$Y_i = \beta_0 + \beta_1 x_{1i} + \beta_2 x_{2i} + \cdots + \beta_p x_{pi} + e_i$$`
+--
+
+Statistics 101 regression analysis makes two strong assumptions:
+
+  1. Errors are __independent__, so that `\(\text{corr}(e_i, e_j) = 0\)` when `\(i \neq j\)`
+  2. Errors are __homoskedastic__, so `\(\text{Var}(e_i) = \sigma^2\)` for all `\(i\)`
+  
+--
+
+Many situations where these assumptions are untenable:
+
+  - Multi-stage survey data
+  - Repeated measurements data
+  - Longitudinal/panel data
+  - Cluster-randomized trials
+  
+---
+
+# Effect of minimum legal drinking age on motor vehicle fatalities
+
+- Carpenter &amp; Dobkin (2011) examine effects of __changes in minimum legal drinking age__ on motor vehicle fatalities among 18-20 year olds.
+
+--
+
+- __*Repeated measures*__ of annual motor vehicle fatalities for all 50 states + DC, 1970-1983
+
+--
+
+&lt;img src="clubSandwich_files/figure-html/unnamed-chunk-1-1.png" width="768" /&gt;
+
+---
+
+# An easy fix with sandwich estimators
+
+- Calculate regression coefficient estimates `\(\boldsymbol{\hat\beta}\)` per usual (ordinary least squares)
+
+--
+
+- Use __*sandwich*__ estimators for standard errors of `\(\boldsymbol{\hat\beta}\)`.     
+--
+
+- Sandwich estimators are based on __*weaker*__ assumption that observations can be grouped into `\(J\)` __*clusters*__ of independent observations:
+
+  `$$Y_{ij} = \beta_0 + \beta_1 x_{1ij} + \beta_2 x_{2ij} + \cdots + \beta_p x_{pij} + e_{ij}$$`
+    - `\(\text{cor}(e_{hj}, e_{ik}) = 0\)` if observations are in different clusters `\((j \neq k)\)`
+    - `\(\text{cor}(e_{hj}, e_{ij}) = \rho_{hij}\)` for observations in the same cluster
+    - `\(\text{Var}(e_{ij}) = \phi_{ij}\)`, allowing for heteroskedasticity
+
+???
+
+a.k.a.:
+    - Huber-White standard errors
+    - linearization estimators
+    - cluster-robust standard errors
+    - generalized estimating equations
+    
+---
+
+# Plain sandwich estimators
+ 
+Actual variance of coefficient estimate `\(\boldsymbol{\hat\beta}\)`:
+
+  `$$\text{Var}(\boldsymbol{\hat\beta}) = \frac{1}{J} \mathbf{B} \left(\frac{1}{J} \sum_{j=1}^J \mathbf{X}_j' \boldsymbol\Phi_j \mathbf{X}_j\right) \mathbf{B}$$`
+  
+  where `\(\boldsymbol\Phi_j = \text{Var}(\mathbf{e}_j)\)` and `\(\mathbf{B} = \left(\frac{1}{J} \sum_{j=1}^J\mathbf{X}_j'\mathbf{X}_j\right)^{-1}\)`.
+  
+--
+&lt;div style="float: right; width: 30%;"&gt;
+&lt;img src="clubSandwich_files/images/Baloney.jpg" alt="Baloney sandwich" style="width: 100%;"/&gt;
+&lt;/div&gt;
+
+The plain sandwich estimator:
+
+  `$$\mathbf{V}^{plain} = \frac{1}{J} \mathbf{B} \left(\frac{1}{J} \sum_{j=1}^J \mathbf{X}_j' \mathbf{e}_j \mathbf{e}_j' \mathbf{X}_j\right) \mathbf{B}$$`
+  
+  for residuals `\(\mathbf{e}_j = \mathbf{Y}_j - \mathbf{X}_j \boldsymbol{\hat\beta}\)`
+
+---
+
+&lt;div style="float: right; width: 25%;"&gt;
+&lt;img src="clubSandwich_files/images/Baloney.jpg" alt="Baloney sandwich" style="width: 100%;"/&gt;
+&lt;/div&gt;
+
+# A plain sandwich
+
+
+```r
+# fit regression from Carpenter &amp; Dobkin (2011)
+MLDA_fit &lt;- lm(mrate ~ 0 + legal + beertaxa + totpercap
+               + factor(State) + factor(year), 
+               weights = pop,
+               data = MV_deaths)
+```
+--
+
+```r
+library(clubSandwich)
+
+# type = "CR0" is the plain sandwich variance estimator
+MLDA_plain &lt;- vcovCR(MLDA_fit, cluster = MV_deaths$State, 
+                     type = "CR0")
+```
+--
+
+```r
+coef_test(MLDA_fit, vcov = MLDA_plain, test = "z", coefs = 1:3)
+```
+
+```
+##        Coef Estimate   SE p-val (z) Sig.
+## 1     legal     3.17 1.75    0.0690    .
+## 2  beertaxa     3.25 4.81    0.4989     
+## 3 totpercap     7.71 3.61    0.0327    *
+```
+
+--
+
+- Similar methods implemented in the `sandwich` package (Zeileis, 2004).
+
+---
+
+&lt;div style="float: right; width: 25%;"&gt;
+&lt;img src="clubSandwich_files/images/Baloney.jpg" alt="Baloney sandwich" style="width: 100%;"/&gt;
+&lt;/div&gt;
+
+# Problems with plain sandwiches
+
+Plain sandwich estimators __*require a large number of clusters*__ to work well.
+
+  - Downward bias if the number of clusters is not big enough
+  - Hypothesis tests have inflated type-I error
+  - Confidence intervals have less-than-advertised coverage
+    
+--
+
+What counts as "large enough" depends on:
+
+  - __*number of clusters*__, not number of observations
+  - distribution of predictors `\(\mathbf{X}\)` within and across clusters
+  
+--
+
+__*How can you tell whether your plain sandwich estimators are edible?*__
+
+---
+
+# Fancy sandwiches
+
+&lt;div style="float: right; width: 25%;"&gt;
+&lt;img src="clubSandwich_files/images/clubSandwich.jpg" alt="club sandwich" style="width: 100%;"/&gt;
+&lt;/div&gt;
+
+- Adjust the residuals so that they are unbiased under a working model (Bell &amp; McCaffrey, 2002, 2006; Pustejovsky &amp; Tipton, 2016): 
+
+  `$$\mathbf{V}^{club} = \frac{1}{J} \mathbf{B} \left(\frac{1}{J} \sum_{j=1}^J \mathbf{X}_j' \color{red}{\mathbf{A}_j} \mathbf{e}_j \mathbf{e}_j' \color{red}{\mathbf{A}_j} \mathbf{X}_j\right) \mathbf{B}$$`
+
+--
+
+- Use degrees-of-freedom adjustments for hypothesis tests and confidence intervals.
+
+--
+
+- These methods work well __*even when `\(J\)` is small*__ and even when the working model isn't correct.
+
+--
+
+- Degrees-of-freedom are _diagnostic_, so low d.f. implies:
+    - little information available for variance estimation
+    - asymptotic approximations haven't "kicked in"
+
+???
+
+- __Practice safe stats__ by always using small-sample corrections.
+
+---
+
+# Plain vs. club sandwich estimators
+
+
+```r
+coef_test(MLDA_fit, vcov = MLDA_plain, test = "z", coefs = 1:3)
+```
+
+```
+##        Coef Estimate   SE p-val (z) Sig.
+## 1     legal     3.17 1.75    0.0690    .
+## 2  beertaxa     3.25 4.81    0.4989     
+## 3 totpercap     7.71 3.61    0.0327    *
+```
+
+--
+
+```r
+# type = "CR2" for small-sample adjustments
+MLDA_club &lt;- vcovCR(MLDA_fit, 
+                    cluster = MV_deaths$State,
+                    type = "CR2")
+coef_test(MLDA_fit, vcov = MLDA_club, coefs = 1:3)
+```
+
+```
+##        Coef Estimate   SE d.f. p-val (Satt) Sig.
+## 1     legal     3.17 1.93 6.52        0.148     
+## 2  beertaxa     3.25 5.20 8.23        0.548     
+## 3 totpercap     7.71 3.42 5.73        0.067    .
+```
+
+---
+
+&lt;div style="float: right; width: 35%;"&gt;
+&lt;img src="clubSandwich_files/images/sandwich-plate.jpg" alt="club sandwich with fries" style="width: 100%;"/&gt;
+&lt;/div&gt;
+
+# R package `clubSandwich`
+
+Methods work with many sorts of regression models:
+
+  - logistic/generalized linear models with `glm()`
+  - multivariate regression with `mlm` objects
+  - instrumental variables with `AER::ivreg()`
+  - panel data models with `plm::plm()`
+  - generalized least squares with `nlme::gls()`
+  - hierarchical linear models with `nlme::lme()`
+  - meta-analysis with `metafor::rma()` and `metafor::rma.mv()`
+  
+--
+
+__Object-oriented design__ for extensibility.
+
+--
+
+__Under active development__
+
+  - Available on CRAN
+  - Development repo: https://github.com/jepusto/clubSandwich
+
+---
+
+# Thanks!
+
+[pusto@austin.utexas.edu](mailto:pusto@austin.utexas.edu)
+
+http://jepusto.github.io
+
+References
+
+  - Bell, R. M., &amp; McCaffrey, D. F. (2002). _Survey Methodology_. http://www.statcan.gc.ca/pub/12-001-x/2002002/article/9058-eng.pdf
+  - McCaffrey, D. F., &amp; Bell, R. M. (2006). _Statistics in Medicine_. http://doi.org/10.1002/sim.2502
+  - Carpenter, C., &amp; Dobkin, C. (2011). _Journal of Economic Perspectives_. http://doi.org/10.1257/jep.25.2.133
+  - Pustejovsky, J. E. &amp; Tipton, E. (2016). _Journal of Business and Economic Statistics_. https://doi.org/10.1080/07350015.2016.1247004
+  - Zeileis, A. (2004). _Journal of Statistical Software_. http://www.jstatsoft.org/v11/i10/.
+    </textarea>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function() {
+  var d = document, s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})();</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+  }
+});
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

@@ -1,7 +1,15 @@
 ---
-layout: post
 title: "Meta-analysis of partially identified parameters"
-date: April 6, 2016
+author: 'James'
+date: '2016-04-06'
+slug: partially-identified-meta-analysis
+categories: []
+tags:
+  - meta-analysis
+  - partial identification
+header:
+  caption: ''
+  image: ''
 ---
 
 Here is the simplest scenario I can think of that captures the idea of meta-analyzing partially identified parameters. 

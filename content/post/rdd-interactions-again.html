@@ -1,0 +1,123 @@
+---
+title: Estimating average effects in regression discontinuities with covariate interactions
+author: 'James'
+date: '2016-01-27'
+slug: rdd-interactions-again
+categories: []
+tags:
+  - econometrics
+  - R
+header:
+  caption: ''
+  image: ''
+---
+
+
+
+<p>Regression discontinuity designs (RDDs) are now a widely used tool for program evaluation in economics and many other fields. RDDs occur in situations where some treatment/program of interest is assigned on the basis of a numerical score (called the running variable), all units scoring above a certain threshold receiving treatment and all units scoring at or below the threshold having treatment withheld (or vice versa, with treatment assigned to units scoring below the threshold). This mechanism provides a way to identify the <strong>marginal average treatment effect</strong> (MATE): the average effect of treatment assignment for units on the cusp of the threshold.</p>
+<p>RDDs are appealing for a couple of reasons. First and foremost, RDD-like mechanism occurs all over the place, since providing treatment on the basis of a numerical measure of need/eligibility is a natural way to allocate resources. Furthermore, analysis of the designs is straight-forward, as it involves nothing more complicated than a linear regression model, estimated using (weighted or un-weighted) least squares, and which can be represented graphically using a simple scatterplot. Things get a little bit more complicated if you are trying to account for imperfect compliance with treatment assignment—as in the “fuzzy” RDD—but for the moment let me focus on “sharp” RDDs.</p>
+<p>The simplest approach to estimating the MATE is to use a local linear regression in the neighborhood of the threshold, with the outcome regressed on the running variable, treatment indicator, and their interaction. However, in practice it is quite common to also include additional covariates in the local linear regression. If the covariates are also interacted with the treatment indicator, there is no longer a single regression coefficient corresponding to the treatment effect. In my <a href="/rdd-interactions">last post</a>, I suggested a “centering trick” for estimating the MATE based on a model that included covariate-by-treatment interactions. In this post, I’ll explain the reasoning behind this proposal.</p>
+<div id="gday-mate" class="section level3">
+<h3>G’day, MATE</h3>
+<p>I think it’s helpful to start by thinking about the definition of the MATE in non-parametric terms. Let <span class="math inline">\(R\)</span> be the running variable, assumed to be centered at the threshold; <span class="math inline">\(T\)</span> be an indicator for treatment assignment, with <span class="math inline">\(T = I(R &gt; 0)\)</span>; and <span class="math inline">\(X\)</span> be a covariate, which may be vector-valued. Denote the potential outcomes as <span class="math inline">\(Y^0\)</span> (a unit’s outcome if not assigned to treatment) and <span class="math inline">\(Y^1\)</span> (a unit’s outcome if assigned to treatment), so that the observed outcome is <span class="math inline">\(Y = Y^0 (1 - T) + Y^1 T\)</span>. Now consider the potential response surfaces</p>
+<p><span class="math display">\[\begin{aligned}\mu_0(x, r) &amp;= \text{E}\left(\left.Y^0 \right|X = x, R = r\right) \\ \mu_1(x, r) &amp;= \text{E}\left(\left.Y^1 \right|X = x, R = r\right).\end{aligned}\]</span></p>
+<p>In an RDD, the average treatment effect at a given point <span class="math inline">\((x, r)\)</span> on the response surface is not generally identified by conditioning because one of the potential outcomes will <em>never</em> be observed: if <span class="math inline">\(r &lt; 0\)</span> then <span class="math inline">\(\text{Pr}( T = 0 \vert X = x, R = r) = 1\)</span> and <span class="math inline">\(\text{Pr}( T = 1 \vert X = x, R = r) = 0\)</span> (and vice versa for <span class="math inline">\(r &gt; 0\)</span>). However, the treatment effect for the subpopulation where <span class="math inline">\(R = 0\)</span> can be identified under the assumption that the potential response surfaces are continuous in a neighborhood of the threshold. Thus the MATE, which can be written as</p>
+<p><span class="math display">\[\begin{aligned}
+\delta_M &amp;= \text{E}\left(\left. Y^1 - Y^0 \right| R = 0\right) \\
+&amp;= \text{E}\left[\mu_1(X, 0) - \mu_0(X,0)\right].
+\end{aligned}\]</span></p>
+</div>
+<div id="regression-estimation" class="section level3">
+<h3>Regression estimation</h3>
+<p>Now assume that we have a simple random sample <span class="math inline">\(\left(y_i,r_i,t_i, x_i\right)_{i=1}^n\)</span> of units and that each unit has a weight <span class="math inline">\(w_i\)</span> defined based on some measure of distance from the threshold. We can use these data to estimate the response surfaces (somehow…more on that in a minute) on each side of the cut-off, with <span class="math inline">\(\hat\mu_0(x, r)\)</span> for <span class="math inline">\(r &lt; 0\)</span> and <span class="math inline">\(\hat\mu_1(x, r)\)</span> for <span class="math inline">\(r &gt; 0\)</span>. If we then use the sample distribution of <span class="math inline">\(X\)</span> in the neighborhood of <span class="math inline">\(R = 0\)</span> in place of the conditional density <span class="math inline">\(d\left(X = x \vert R = 0\right)\)</span>, we can estimate the MATE as</p>
+<p><span class="math display">\[\hat\delta_M = \frac{1}{W} \sum_{i=1}^n w_i \left[\hat\mu_1(x_i, 0) - \hat\mu_0(x_i, 0)\right],\]</span></p>
+<p>where <span class="math inline">\(W = \sum_{i=1}^n w_i\)</span>. This is a regression estimator for <span class="math inline">\(\delta_M\)</span>. It could be non-, semi-, or fully parametric depending on the technique used to estimate the response surfaces. Note that this estimator is a little bit different than the regression estimator that would be used in the context of an observational study (see, e.g., <a href="http://psycnet.apa.org/doi/10.1037/a0014268">Shafer &amp; Kang, 2008</a>). In that context, one would use <span class="math inline">\(\hat\mu_j(x_i, r_i)\)</span> rather than <span class="math inline">\(\hat\mu_j(x_i, 0)\)</span>, but in an RDD doing so would involve extrapolating beyond the cutpoint (i.e., using <span class="math inline">\(\hat\mu_1(x_i, r_i)\)</span> for <span class="math inline">\(r_i &lt; 0\)</span>).</p>
+<p>Now suppose that we again use a linear regression in some neighborhood of the cut-point to estimate the response surfaces. For the (weighted) sample in the neighborhood of the cut-point, we assume that</p>
+<p><span class="math display">\[\mu_{t_i}(x_i, r_i) = \beta_0 + \beta_1 r_i + \beta_2 t_i + \beta_3 r_i t_i + \beta_4 x_i + \beta_5 x_i t_i.\]</span></p>
+<p>Substituting this into the formula for <span class="math inline">\(\hat\delta_M\)</span> leads to</p>
+<p><span class="math display">\[\begin{aligned}\hat\delta_M &amp;= \frac{1}{W} \sum_{i=1}^n w_i \left[\hat\beta_2 + \hat\beta_5 x_i \right] \\
+&amp;= \hat\beta_2 + \hat\beta_5 \sum_{i=1}^n \frac{w_i x_i}{W}.\end{aligned}\]</span></p>
+<p>Now, the centering trick involves nothing more than re-centering the covariate so that <span class="math inline">\(\sum_{i=1}^n w_i x_i = 0\)</span> and <span class="math inline">\(\hat\delta_M = \hat\beta_2\)</span>. Of course, one could just use the non-parametric form of the regression estimator, but the centering trick is useful because it comes along with an easy-to-calculate standard error (since it is just a regression coefficient estimate).</p>
+</div>
+<div id="multiple-covariates" class="section level3">
+<h3>Multiple covariates</h3>
+<p>All of this works out in the exact same way if you have interactions between the treatment and multiple covariates. However, there are a few tricky cases that are worth noting. If you include interactions between the treatment indicator and a polynomial function of the treatment, each term of the polynomial has to be centered. For example, if you want to control for <span class="math inline">\(x\)</span>, <span class="math inline">\(x^2\)</span>, and their interactions with treatment, you will need to calculate</p>
+<p><span class="math display">\[\tilde{x}_{1i} = x_i - \frac{1}{W} \sum_{i=1}^n w_i x_i, \qquad \tilde{x}_{2i} = x_i^2 - \frac{1}{W} \sum_{i=1}^n w_i x_i^2\]</span></p>
+<p>and then use these re-centered covariates in the regression</p>
+<p><span class="math display">\[\mu_{t_i}(x_i, r_i) = \beta_0 + \beta_1 r_i + \beta_2 t_i + \beta_3 r_i t_i + \beta_4 \tilde{x}_{1i} + \beta_5 \tilde{x}_{2i} + \beta_6 \tilde{x}_{1i} t_i + \beta_7 \tilde{x}_{2i} t_i.\]</span></p>
+<p>The same principle will also hold if you want to include higher-order interactions between covariates and the treatment: calculate the interaction term first, then re-center it. There’s one exception though. If you want to include an interaction between a covariate <span class="math inline">\(x\)</span>, the <em>running variable</em>, and the treatment indicator (who knows…you might aspire to do this some day…), then all you need to do is center <span class="math inline">\(x\)</span>. In particular, you should <em>not</em> calculate the interaction <span class="math inline">\(x_i r_i\)</span> and then re-center it (doing so could pull the average away from the threshold of <span class="math inline">\(R = 0\)</span>).</p>
+</div>
+<div id="r-mates" class="section level3">
+<h3>R, MATEs!</h3>
+<p>Here’s some R code that implements the centering trick for the simulated example from my last post:</p>
+<pre class="r"><code>library(sandwich)
+library(lmtest)
+library(rdd)
+
+# simulate an RDD
+set.seed(20160124)
+simulate_RDD &lt;- function(n = 2000, R = rnorm(n, mean = qnorm(.2))) {
+  n &lt;- length(R)
+  T &lt;- as.integer(R &gt; 0)
+  X1 &lt;- 10 + 0.6 * (R - qnorm(.2)) + rnorm(n, sd = sqrt(1 - 0.6^2))
+  X2 &lt;- sample(LETTERS[1:4], n, replace = TRUE, prob = c(0.2, 0.3, 0.35, 0.15))
+  Y0 &lt;- 0.4 * R + 0.1 * (X1 - 10) + c(A = 0, B = 0.30, C = 0.40, D = 0.55)[X2] + rnorm(n, sd = 0.9)
+  Y1 &lt;- 0.35 + 0.3 * R + 0.18 * (X1 - 10) + c(A = -0.50, B = 0.30, C = 0.20, D = 0.60)[X2] + rnorm(n, sd = 0.9)
+  Y &lt;- (1 - T) * Y0 + T * Y1
+  data.frame(R, T, X1, X2, Y0, Y1, Y)
+}
+RD_data &lt;- simulate_RDD(n = 2000)
+
+# calculate kernel weights
+bw &lt;- with(RD_data, IKbandwidth(R, Y, cutpoint = 0))
+RD_data$w &lt;- kernelwts(RD_data$R, center = 0, bw = bw)
+
+# center the covariates
+X_mat &lt;- model.matrix(~ 0 + X2 + X1, data = RD_data)
+X_cent &lt;- as.data.frame(apply(X_mat, 2, function(x) x - weighted.mean(x, w = RD_data$w)))
+RD_data_aug &lt;- cbind(X_cent, subset(RD_data, select = c(-X1, -X2)))
+cov_names &lt;- paste(names(X_cent)[-1], collapse = &quot; + &quot;)
+
+# calculate the MATE using RDestimate
+RD_form &lt;- paste(&quot;Y ~ R |&quot;, cov_names)
+summary(RDestimate(as.formula(RD_form), data = RD_data_aug))</code></pre>
+<pre><code>## 
+## Call:
+## RDestimate(formula = as.formula(RD_form), data = RD_data_aug)
+## 
+## Type:
+## sharp 
+## 
+## Estimates:
+##            Bandwidth  Observations  Estimate  Std. Error  z value
+## LATE       1.0894     1177          0.2923    0.10769     2.714  
+## Half-BW    0.5447      611          0.2041    0.14911     1.369  
+## Double-BW  2.1787     1832          0.2703    0.08447     3.200  
+##            Pr(&gt;|z|)    
+## LATE       0.006644  **
+## Half-BW    0.171103    
+## Double-BW  0.001374  **
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+## F-statistics:
+##            F      Num. DoF  Denom. DoF  p       
+## LATE       31.24  7         1169        0.00e+00
+## Half-BW    13.84  7          603        2.22e-16
+## Double-BW  68.36  7         1824        0.00e+00</code></pre>
+<pre class="r"><code># or using lm
+lm_form &lt;- paste(&quot;Y ~ R + T + R:T + T*(&quot;, cov_names,&quot;)&quot;)
+lm_fit &lt;- lm(as.formula(lm_form), weights = w, data = subset(RD_data_aug, w &gt; 0))
+coeftest(lm_fit, vcov. = vcovHC(lm_fit, type = &quot;HC1&quot;))[&quot;T&quot;,]</code></pre>
+<pre><code>##    Estimate  Std. Error     t value    Pr(&gt;|t|) 
+## 0.298142798 0.106588790 2.797130893 0.005240719</code></pre>
+</div>
+<div id="comments" class="section level3">
+<h3>Comments</h3>
+<p>I’ve shown that the “centering trick” is just a way to express a certain regression estimator for the marginal average treatment effect in an RDD. Having suggested that this is a good idea, I should also note a few points that might bear further investigation.</p>
+<ol style="list-style-type: decimal">
+<li>My regression estimator uses the sample distribution of <span class="math inline">\(X\)</span> in the neighborhood of the threshold as an estimate of <span class="math inline">\(d(X = x \vert R = 0)\)</span>. This seems reasonable, but I wonder whether there might be a better approach to estimating this conditional density.</li>
+<li>As far as I understand, the current best practice for defining the “neighborhood” of the threshold is to use weights based on a triangular kernel and an “optimal” bandwidth proposed by <a href="http://doi.org/10.1093/restud/rdr043">Imbens and Kalyanaraman (2012)</a>. The optimal bandwidth is derived for the simple RDD model with no covariates, though the authors comment that inclusion of additional covariates should not greatly affect the result unless the covariates are strongly correlated with the outcome, conditional on the running variable. However, what if interest centers on the covariate-by-treatment interaction itself, rather than just the MATE? It is not clear that the bandwidth is optimal for estimation/inference on the interaction term.</li>
+<li>So far I’ve considered the MATE identified by a sharp RDD, in which we examine the effects of treatment assignment, regardless of whether units assigned to treatment actually received/participated in it. In fuzzy RDDs, the target parameter is the average effect of treatment receipt for those on the threshold of eligibility and who comply with the assignment rule. The effect is estimated using two-stage least squares, taking treatment assignment as an instrument for treatment receipt. I’m not entirely sure how the regression estimator approach would work in this instrumental variables setting.</li>
+</ol>
+</div>

@@ -1,8 +1,17 @@
 ---
-layout: post
 title: Sampling variance of Pearson's r in a two-level design
-date: April 10, 2018
-tags: [effect-sizes, meta-analysis, delta-method, distribution-theory]
+author: 'James'
+date: '2018-04-10'
+slug: variance-of-r-in-two-level-design
+categories: []
+tags:
+  - effect sizes
+  - meta-analysis
+  - delta method
+  - distribution theory
+header:
+  caption: ''
+  image: ''
 ---
 
 Consider Pearson's correlation coefficient, $r$, calculated from two variables $X$ and $Y$ with population correlation $\rho$. If one calculates $r$ from a simple random sample of $N$ observations, $\{x_i, y_i\}_{i=1}^N$, then the sampling variance of $r$ will be approximately

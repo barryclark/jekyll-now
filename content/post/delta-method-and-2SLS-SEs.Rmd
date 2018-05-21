@@ -1,0 +1,121 @@
+---
+title: 2SLS standard errors and the delta-method
+author: 'James'
+date: '2017-10-07'
+slug: delta-method-and-2SLS-SEs
+categories: []
+tags:
+  - instrumental variables
+  - delta method
+header:
+  caption: ''
+  image: ''
+---
+
+I just covered instrumental variables in my course on causal inference, and so I have two-stage least squares (2SLS) estimation on the brain. In this post I'll share something I realized in the course of prepping for class: that standard errors from 2SLS estimation are equivalent to delta method standard errors based on the Wald IV estimator. (I'm no econometrician, so this had never occurred to me before. Perhaps it will be interesting to other non-econometrician readers. And perhaps the econometricians can point me to the relevant page in Wooldridge or Angrist and Pischke or whomever that explains this better than I have.)
+
+Let's consider a system with an outcome $y_i$, a focal treatment $t_i$ identified by a single instrument $z_i$, along with a row-vector of exogenous covariates $\mathbf{x}_i$, all for $i = 1,...,n$. The usual estimating equations are:
+
+$$
+\begin{aligned}
+y_i &= \mathbf{x}_i \delta_0 + t_i \delta_1 + e_i \\
+t_i &= \mathbf{x}_i \alpha_0 + z_i \alpha_1 + u_i.
+\end{aligned}
+$$
+
+With a single-instrument, the 2SLS estimator of $\delta_1$ is exactly equivalent to the Wald estimator
+
+$$
+\hat\delta_1 = \frac{\hat\beta_1}{\hat\alpha_1},
+$$
+
+where $\hat\alpha_1$ is the OLS estimator from the first-stage regression of $t_i$ on $\mathbf{x}_i$ and $z_i$ and $\hat\beta_1$ is the OLS estimator from the regression 
+
+$$
+y_i = \mathbf{x}_i \beta_0 + z_i \beta_1 + v_i.
+$$
+
+The delta-method approximation for $\text{Var}(\hat\delta_1)$ is 
+
+$$
+\text{Var}\left(\hat\delta_1\right) \approx \frac{1}{\alpha_1^2}\left[ \text{Var}\left(\hat\beta_1\right) + \delta_1^2 \text{Var}\left(\hat\alpha_1\right) - 2 \delta_1 \text{Cov}\left(\hat\beta_1, \hat\alpha_1\right) \right]. 
+$$
+
+Substituting the estimators in place of parameters, and using heteroskedasticity-consistent (HC0, to be precise) estimators for $\text{Var}\left(\hat\beta_1\right)$, $\text{Var}\left(\hat\alpha_1\right)$, and $\text{Cov}\left(\hat\beta_1, \hat\alpha_1\right)$, it turns out the feasible delta-method variance estimator is _exactly_ equivalent to the HC0 variance estimator from 2SLS. 
+
+### Connecting delta-method and 2SLS
+
+To demonstrate this claim, let's first partial out the covariates, taking $\mathbf{\ddot{y}} = \left[\mathbf{I} - \mathbf{X}\left(\mathbf{X}'\mathbf{X}\right)^{-1}\mathbf{X}'\right]\mathbf{y}$, $\mathbf{\ddot{t}} = \left[\mathbf{I} - \mathbf{X}\left(\mathbf{X}'\mathbf{X}\right)^{-1}\mathbf{X}'\right]\mathbf{t}$, and $\mathbf{\ddot{z}} = \left[\mathbf{I} - \mathbf{X}\left(\mathbf{X}'\mathbf{X}\right)^{-1}\mathbf{X}'\right]\mathbf{z}$. The OLS estimators of $\beta_1$ and $\alpha_1$ are then 
+
+$$
+\hat\beta_1 = \left(\mathbf{\ddot{z}}'\mathbf{\ddot{z}}\right)^{-1}\mathbf{\ddot{z}}'\mathbf{\ddot{y}}, \qquad \text{and} \qquad \hat\alpha_1 = \left(\mathbf{\ddot{z}}'\mathbf{\ddot{z}}\right)^{-1}\mathbf{\ddot{z}}'\mathbf{\ddot{t}}.
+$$
+
+The HC0 variance and covariance estimators for these coefficients have the usual sandwich form: 
+
+$$
+\begin{aligned}
+V^{\beta_1} &= \left(\mathbf{\ddot{z}}'\mathbf{\ddot{z}}\right)^{-1}\left(\sum_{i=1}^n \ddot{z}_i^2 \ddot{v}_i^2\right) \left(\mathbf{\ddot{z}}'\mathbf{\ddot{z}}\right)^{-1} \\
+V^{\alpha_1} &= \left(\mathbf{\ddot{z}}'\mathbf{\ddot{z}}\right)^{-1}\left(\sum_{i=1}^n \ddot{z}_i^2 \ddot{u}_i^2\right) \left(\mathbf{\ddot{z}}'\mathbf{\ddot{z}}\right)^{-1} \\
+V^{\alpha_1\beta_1} &= \left(\mathbf{\ddot{z}}'\mathbf{\ddot{z}}\right)^{-1}\left(\sum_{i=1}^n \ddot{z}_i^2 \ddot{u}_i \ddot{v}_i\right) \left(\mathbf{\ddot{z}}'\mathbf{\ddot{z}}\right)^{-1},
+\end{aligned}
+$$
+
+where $\ddot{v}_i$ and $\ddot{u}_i$ are the residuals from the regressions of $\mathbf{\ddot{y}}$ on $\mathbf{\ddot{z}}$ and $\mathbf{\ddot{t}}$ on $\mathbf{\ddot{z}}$, respectively. Combining all these terms, the delta-method variance estimator is then 
+
+$$
+V^{\delta_1} = \frac{1}{\hat\alpha_1^2}\left(\mathbf{\ddot{z}}'\mathbf{\ddot{z}}\right)^{-1}\left[\sum_{i=1}^n \ddot{z}_i^2\left(\ddot{v}_i^2 + \hat\delta_1^2 \ddot{u}_i^2 - 2 \hat\delta_1\ddot{u}_i \ddot{v}_i\right)\right] \left(\mathbf{\ddot{z}}'\mathbf{\ddot{z}}\right)^{-1}.
+$$
+
+Remember this formula because we'll return to it shortly.
+
+Now consider the 2SLS estimator. To calculate this, we begin by taking the fitted values from the regression of $\mathbf{\ddot{t}}$ on $\mathbf{\ddot{z}}$:
+
+$$
+\mathbf{\tilde{t}} = \mathbf{\ddot{z}}\left(\mathbf{\ddot{z}}'\mathbf{\ddot{z}}\right)^{-1}\mathbf{\ddot{z}}'\mathbf{\ddot{t}} = \mathbf{\ddot{z}} \hat\alpha_1.
+$$
+
+We then regress $\mathbf{\ddot{y}}$ on $\mathbf{\tilde{t}}$:
+
+$$
+\hat\delta_1 = \left(\mathbf{\tilde{t}}'\mathbf{\tilde{t}}\right)^{-1} \mathbf{\tilde{t}}' \mathbf{\ddot{y}}.
+$$
+
+The HC0 variance estimator corresponding to the 2SLS estimator is 
+
+$$
+V^{2SLS} = \left(\mathbf{\tilde{t}}'\mathbf{\tilde{t}}\right)^{-1} \left(\sum_{i=1}^n \tilde{t}_i^2 \tilde{e}_i^2 \right) \left(\mathbf{\tilde{t}}'\mathbf{\tilde{t}}\right)^{-1},
+$$
+
+where $\tilde{e}_i = \ddot{y}_i - \ddot{t}_i \hat\delta_1$. Note that these residuals are calculated based on $\ddot{t}_i$, the _full_ treatment variable, not the fitted values $\tilde{t}_i$. The full treatment variable can be expressed as $\ddot{t}_i = \tilde{t}_i + \ddot{u}_i$, by which it follows that 
+
+$$
+\tilde{e}_i = \ddot{y}_i - \tilde{t}_i \hat\delta_1 - \ddot{u}_i \hat\delta_1.
+$$
+
+But $\tilde{t}_i \hat\delta_1 = \ddot{z}_i \hat\alpha_1 \hat\delta_1 = \ddot{z}_i \hat\beta_1$, and so 
+
+$$
+\tilde{e}_i = \ddot{y}_i - \ddot{z}_i \hat\beta_1 - \ddot{u}_i \hat\delta_1 = \ddot{v}_i - \ddot{u}_i \hat\delta_1.
+$$
+
+The 2SLS variance estimator is therefore
+
+$$
+\begin{aligned}
+V^{2SLS} &= \left(\mathbf{\tilde{t}}'\mathbf{\tilde{t}}\right)^{-1} \left(\sum_{i=1}^n \tilde{t}_i^2 \tilde{e}_i^2 \right) \left(\mathbf{\tilde{t}}'\mathbf{\tilde{t}}\right)^{-1} \\
+&= \left(\hat\alpha_1^2 \mathbf{\ddot{z}}'\mathbf{\ddot{z}}\right)^{-1} \left(\sum_{i=1}^n \hat\alpha_1^2 \ddot{z}_i^2 \tilde{e}_i^2 \right) \left(\hat\alpha_1^2 \mathbf{\ddot{z}}'\mathbf{\ddot{z}}\right)^{-1} \\
+&= \frac{1}{\hat\alpha_1^2}\left(\mathbf{\ddot{z}}'\mathbf{\ddot{z}}\right)^{-1} \left(\sum_{i=1}^n \ddot{z}_i^2 \tilde{e}_i^2 \right) \left(\mathbf{\ddot{z}}'\mathbf{\ddot{z}}\right)^{-1} \\
+&= \frac{1}{\hat\alpha_1^2}\left(\mathbf{\ddot{z}}'\mathbf{\ddot{z}}\right)^{-1} \left[\sum_{i=1}^n \ddot{z}_i^2 \left(\ddot{v}_i - \ddot{u}_i \hat\delta_1\right)^2 \right] \left(\mathbf{\ddot{z}}'\mathbf{\ddot{z}}\right)^{-1},
+\end{aligned}
+$$
+
+which agrees with $V^{\delta_1}$ as given above.
+
+### So what?
+
+If you've continued reading this far...I'm slightly amazed...but if you have, you may be wondering why it's worth knowing about this relationship. The equivalence between the 2SLS variance estimator and the delta method interests me for a couple of reasons. 
+
+- First is that I had always taken the 2SLS variance estimator as being conditional on $\mathbf{t}$--that is, not accounting for random variation in the treatment assignment. The delta-method form of the variance makes it crystal clear that this isn't the case---the variance _does_ include terms for $\text{Var}(\hat\alpha_1)$ and $\text{Cov}(\hat\beta_1, \hat\alpha_1)$. 
+- On the other hand, there's perhaps a sense that equivalence with the 2SLS variance estimator (the more familiar form) validates the delta method variance estimator---that is, we wouldn't be doing something fundamentally different by using the delta method variance with a Wald estimator. For instance, we might want to estimate $\alpha_1$ and/or $\beta_1$ by some other means (e.g., by estimating $\alpha_1$ as a marginal effect from a logistic regression or estimating $\beta_1$ with a multi-level model). It would make good sense in this instance to use the Wald estimator $\hat\beta_1 / \hat\alpha_1$ and to estimate its variance using the delta method form. 
+- One last reason I'm interested in this is that writing out the variance estimators will likely help in understanding how to approach small-sample corrections to $V^{2SLS}$. But I'll save that for another day.

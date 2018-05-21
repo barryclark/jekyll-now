@@ -1,0 +1,48 @@
+{{ $is_list := .is_list }}
+{{ $ := .content }}
+<div class="article-metadata">
+
+  <span class="article-date">
+    {{ if ne $.Params.Lastmod $.Params.Date }}
+        {{ i18n "last_updated" }}
+    {{ end }}
+    <time datetime="{{ $.Date }}" itemprop="datePublished dateModified">
+      {{ $.Lastmod.Format $.Site.Params.date_format }}
+    </time>
+  </span>
+  <span itemscope itemprop="author publisher" itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="{{ $.Site.Params.name }}">
+  </span>
+
+  {{ if ne $.Site.Params.reading_time false }}
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    {{ $.ReadingTime }} {{ i18n "minute_read" }}
+  </span>
+  {{ end }}
+
+  {{ $comments_enabled := and $.Site.DisqusShortname (not (or $.Site.Params.disable_comments $.Params.disable_comments)) }}
+  {{ if and $comments_enabled ($.Site.Params.comment_count | default true) }}
+  <span class="middot-divider"></span>
+  <a href="{{ $.Permalink }}#disqus_thread"><!-- Count will be inserted here --></a>
+  {{ end}}
+
+  {{ if isset $.Params "categories" }}
+  {{ $categoriesLen := len $.Params.categories }}
+  {{ if gt $categoriesLen 0 }}
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fa fa-folder"></i>
+    {{ range $k, $v := $.Params.categories }}
+    <a href="{{ ($.Site.GetPage "taxonomyTerm" "categories" .).Permalink }}">{{ . }}</a
+    >{{ if lt $k (sub $categoriesLen 1) }}, {{ end }}
+    {{ end }}
+  </span>
+  {{ end }}
+  {{ end }}
+
+  {{ if ne $is_list 1 }}
+  {{ partial "share.html" $ }}
+  {{ end }}
+
+</div>

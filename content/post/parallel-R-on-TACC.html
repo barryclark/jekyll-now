@@ -1,0 +1,96 @@
+---
+title: Running R in parallel on the TACC
+author: 'James'
+date: '2013-12-20'
+slug: parallel-R-on-TACC
+categories: []
+tags:
+  - R
+  - simulation
+---
+
+
+
+<p>UPDATE (4/8/2014): I have learned from <a href="https://www.tacc.utexas.edu/staff/yaakoub-el-khamra">Mr. Yaakoub El Khamra</a> that he and the good folks at TACC have made some modifications to TACC’s custom MPI implementation and R build in order to correct bugs in Rmpi and snow that were causing crashes. This post <a href="/parallel-R-on-TACC-update">has been updated</a> to reflect the modifications.</p>
+<p>I’ve started to use the Texas Advanced Computing Cluster to run statistical simulations in R. It takes a little bit of time to get up and running, but once you do it is an amazing tool. To get started, you’ll need</p>
+<ol style="list-style-type: decimal">
+<li>An account on the <a href="https://www.tacc.utexas.edu/">TACC</a> and an allocation of computing time.</li>
+<li>An ssh client like <a href="http://www.chiark.greenend.org.uk/~sgtatham/putty/">PUTTY</a>.</li>
+<li>Some R code that can be adapted to run in parallel.</li>
+<li>A SLURM script that tells the server (called Stampede) how to run the R.</li>
+</ol>
+<div id="the-r-script" class="section level3">
+<h3>The R script</h3>
+<p>I’ve been running my simulations using a combination of several packages that provide very high-level functionality for parallel computing, namely <code>foreach</code>, <code>doSNOW</code>, and the <code>maply</code> function in <code>plyr</code>. All of this runs on top of an <code>Rmpi</code> implementation developed by the folks at TACC (<a href="https://portal.tacc.utexas.edu/documents/13601/901835/Parallel_R_Final.pdf/">more details here</a>).</p>
+<p>In <a href="/Designing-simulation-studies-using-R/">an earlier post</a>, I shared code for running a very simple simulation of the Behrens-Fisher problem. Here’s <a href="https://gist.github.com/jepusto/8059893">adapted code</a> for running the same simulation on Stampede. The main difference is that there are a few extra lines of code to set up a cluster, seed a random number generator, and pass necessary objects (saved in <code>source_func</code>) to the nodes of the cluster:</p>
+<pre class="r"><code>library(Rmpi)
+library(snow)
+library(foreach)
+library(iterators)
+library(doSNOW)
+library(plyr)
+
+# set up parallel processing
+cluster &lt;- getMPIcluster()
+registerDoSNOW(cluster)
+
+# export source functions
+clusterExport(cluster, source_func)</code></pre>
+<p>Once it is all set up, running the code is just a matter of turning on the parallel option in <code>mdply</code>:</p>
+<pre class="r"><code>BFresults &lt;- mdply(parms, .fun = run_sim, .drop=FALSE, .parallel=TRUE)</code></pre>
+<p>I fully admit that my method of passing source functions is rather kludgy. One alternative would be to save all of the source functions in a separate file (say, <code>source_functions.R</code>), then <code>source</code> the file at the beginning of the simulation script:</p>
+<pre class="r"><code>rm(list=ls())
+source(&quot;source_functions.R&quot;)
+print(source_func &lt;- ls())</code></pre>
+<p>Another, more elegant alternative would be to put all of your source functions in a little package (say, <code>BehrensFisher</code>), install the package, and then pass the package in the <code>maply</code> call:</p>
+<pre class="r"><code>BFresults &lt;- mdply(parms, .fun = run_sim, .drop=FALSE, .parallel=TRUE, .paropts = list(.packages=&quot;BehrensFisher&quot;))</code></pre>
+<p>Of course, developing a package involves a bit more work on the front end.</p>
+</div>
+<div id="the-slurm-script" class="section level3">
+<h3>The SLURM script</h3>
+<p>Suppose that you’ve got your R code saved in a file called <code>Behrens_Fisher.R</code>. Here’s an example of a SLURM script that runs the R script after configuring an Rmpi cluster:</p>
+<pre class="bash"><code>#!/bin/bash
+#SBATCH -J Behrens          # Job name
+#SBATCH -o Behrens.o%j      # Name of stdout output file (%j expands to jobId)
+#SBATCH -e Behrens.o%j      # Name of stderr output file(%j expands to jobId)
+#SBATCH -n 32               # Total number of mpi tasks requested
+#SBATCH -p normal           # Submit to the &#39;normal&#39; or &#39;development&#39; queue
+#SBATCH -t 0:20:00          # Run time (hh:mm:ss)
+#SBATCH -A A-yourproject    # Allocation name to charge job against
+#SBATCH --mail-user=you@email.address # specify email address for notifications
+#SBATCH --mail-type=begin   # email when job begins
+#SBATCH --mail-type=end     # email when job ends
+
+# load R module
+module load Rstats           
+
+# call R code from RMPISNOW
+ibrun RMPISNOW &lt; Behrens_Fisher.R </code></pre>
+<p>The file should be saved in a plain text file called something like <code>run_BF.slurm</code>. The file has to use ANSI encoding and Unix-type end-of-line encoding; <a href="http://notepad-plus-plus.org/">Notepad++</a> is a text editor that can create files in this format.</p>
+<p>Note that for full efficiency, the <code>-n</code> option should be a multiple of 16 because their are 16 cores per compute node. Further details about SBATCH options can be found <a href="https://portal.tacc.utexas.edu/user-guides/stampede#running-slurm-jobcontrol">here</a>.</p>
+</div>
+<div id="running-on-stampede" class="section level3">
+<h3>Running on Stampede</h3>
+<p><a href="https://portal.tacc.utexas.edu/user-guides/stampede#access">Follow these directions</a> to log in to the Stampede server. Here’s the <a href="https://portal.tacc.utexas.edu/user-guides/stampede">User Guide</a> for Stampede. The first thing you’ll need to do is ensure that you’ve got the proper version of MVAPICH loaded. To do that, type</p>
+<pre class="bash"><code>module swap intel intel/14.0.1.106
+module setdefault</code></pre>
+<p>The second line sets this as the default, so you won’t need to do this step again.</p>
+<p>Second, you’ll need to install whatever R packages you’ll need to run your code. To do that, type the following at the <code>login4$</code> prompt:</p>
+<pre class="bash"><code>login4$module load Rstats
+login4$R</code></pre>
+<p>This will start an interactive R session. From the R prompt, use <code>install.packages</code> to download and install, e.g.</p>
+<pre class="r"><code>install.packages(&quot;plyr&quot;,&quot;reshape&quot;,&quot;doSNOW&quot;,&quot;foreach&quot;,&quot;iterators&quot;)</code></pre>
+<p>The packages will be installed in a local library. Now type <code>q()</code> to quit R.</p>
+<p>Next, make a new directory for your project:</p>
+<pre class="bash"><code>login4$mkdir project_name
+login4$cd project_name</code></pre>
+<p>Upload your files to the directory (using <a href="http://the.earth.li/~sgtatham/putty/0.63/htmldoc/Chapter6.html">psftp</a>, for instance). Check that your R script is properly configured by viewing it in Vim.</p>
+<p>Finally, submit your job by typing</p>
+<pre class="bash"><code>login4$sbatch run_BF.slurm</code></pre>
+<p>or whatever your SLURM script is called. To check the status of the submitted job, type <code>showq -u</code> followed by your TACC user name (more details <a href="https://portal.tacc.utexas.edu/user-guides/stampede#running-slurm-jobcontrol-squeue">here</a>).</p>
+</div>
+<div id="further-thoughts" class="section level3">
+<h3>Further thoughts</h3>
+<p>TACC accounts come with a limited number of computing hours, so you should be careful to write efficient code. Before you even start worrying about running on TACC, you should profile your code and try to find ways to speed up the computations. (Some simple improvements in my Behrens-Fisher code would make it run MUCH faster.) Once you’ve done what you can in terms of efficiency, you should do some small test runs on Stampede. For example, you could try running only a few iterations for each combination of factors, and/or running only some of the combinations rather than the full factorial design. Based on the run-time for these jobs, you’ll then be able to estimate how long the full code would take. If it’s acceptable (and within your allocation), then go ahead and <code>sbatch</code> the full job. If it’s not, you might reconsider the number of factor levels in your design or the number of iterations you need. I might have more comments about those some other time.</p>
+<p>Comments? Suggestions? Corrections? Drop a comment.</p>
+</div>

@@ -1,0 +1,30 @@
+---
+title: Unlucky randomization
+author: 'James'
+date: '2016-05-11'
+slug: unlucky-randomization
+categories: []
+tags:
+  - experimental design
+header:
+  caption: ''
+  image: ''
+---
+
+A colleague asked me the other day:
+
+> I wonder if you have any suggestions for what to do if random assignment results in big group differences on the pre-test scores of the main outcome measure? My default is just to shrug, use the pretest scores as a covariate and interpret with caution, but if there's a suggestion you have I'd be most grateful for being pointed in the right direction. These are paid participants (otherwise I'd ask the student to collect more data), 25 and 28 in each group, randomization done by Qualtrics survey program, pretest differences are pronounced (p = .002) and NOT attributable to outliers.
+
+I would guess that many statisticians probably get a question along these lines on a pretty regular basis. So as not to repeat myself in the future, I'm posting my response here. 
+
+These sorts of things happen just by dumb luck sometimes, and the possibility of unlucky randomizations like this are one of the primary reasons to collect pre-test data and use it in the analysis. My main advice would therefore be to do just as you’ve described: control for the covariate just as you would otherwise. There are certainly other analyses you could run (such as using propensity scores to re-balance the data), but whatever advantages they offer might well be offset by the cost of 1) deviating from your initial protocol and 2) having to explain a less familiar and more complicated analysis. 
+
+If I were analyzing these data, I would do the following:
+
+1. Check that the randomization software was actually working correctly, and that the unbalanced data wasn’t the result of a glitch in Qualtrics or something like that.
+2. Look at histograms of the pretest scores for each group to get a sense of how big the difference in the distributions is.
+3. If there are other baseline variables, check to see whether there are big group differences on any of those as well. 
+4. Ensure that the write-up characterizes the magnitude of observed differences on the pre-test and any other baseline variables (i.e., report an effect size like the standardized mean difference, in addition to the p-value).
+5. Larger baseline differences tend to make the results more sensitive to how the data are analyzed. As a result, I would be extra thorough in checking the required assumptions for an analysis of covariance---especially linearity and homogeneity of slopes---and would examine whether the treatment effect estimates are sensitive to including a pretest-by-treatment interaction. 
+6. For future studies, investigate whether it would be possible to block-randomize (e.g., block by low/middle/high scores on the pretest) in order to insure against the possibility of getting big baseline differences.
+

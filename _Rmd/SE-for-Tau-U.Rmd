@@ -1,8 +1,16 @@
 ---
-layout: post
 title: Standard errors for Tau-U
-date: November 4, 2016
-tags: [effect-sizes, single-case-research]
+author: 'James'
+date: '2016-11-04'
+slug: SE-for-Tau-U
+categories: []
+tags:
+  - effect sizes
+  - single-case research
+  - distribution theory
+header:
+  caption: ''
+  image: ''
 ---
 
 In two previous posts, I've discussed the [shifting definition]({{site.url}}/What-is-Tau-U) and [procedural sensitivity]({{site.url}}/Tau-U) of the Tau-U effect size indices for single-case designs. Putting all of those issues aside, in this post I'll focus on the purely statistical question of how to estimate the sampling variance (i.e., standard error) of Tau-U. 

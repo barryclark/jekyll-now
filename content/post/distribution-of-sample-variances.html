@@ -1,0 +1,44 @@
+---
+title: The sampling distribution of sample variances
+author: 'James'
+date: '2016-04-25'
+slug: distribution-of-sample-variances
+categories: []
+tags:
+  - distribution theory
+header:
+  caption: ''
+  image: ''
+---
+
+
+
+<p>A colleague and her students asked me the other day whether I knew of a citation that gives the covariance between the sample variances of two outcomes from a common sample. This sort of question comes up in meta-analysis problems occasionally. I didn’t know of a convenient reference that directly answers the question, but I was able to suggest some references that would help (listed below). While the students work on deriving it, I’ll provide the answer here so that they can check their work.</p>
+<p>Suppose that we have a sample of <span class="math inline">\(n\)</span> observations <span class="math inline">\(\mathbf{y}_1,...,\mathbf{y}_n\)</span> from a <span class="math inline">\(p\)</span>-dimensional multivariate normal distribution with mean <span class="math inline">\(\boldsymbol\mu\)</span> and covariance <span class="math inline">\(\boldsymbol\Sigma = \left[\sigma_{jk}\right]_{j,k=1,...,p}\)</span>. Let <span class="math inline">\(\mathbf{\bar{y}}\)</span> denote the (multivariate) sample mean, with entries <span class="math inline">\(\bar{y}_1,...,\bar{y}_p\)</span>. Let <span class="math inline">\(\mathbf{S}\)</span> denote the sample covariance matrix, with entries <span class="math inline">\(\left[s_{jk}\right]_{j,k=1,...,p}\)</span> where</p>
+<p><span class="math display">\[
+s_{jk} = \frac{1}{n - 1}\sum_{i=1}^n (y_{ij} - \bar{y}_j)(y_{ik} - \bar{y}_k).
+\]</span></p>
+<p>Then <span class="math inline">\((n - 1)\mathbf{S}\)</span> follows a Wishart distribution with <span class="math inline">\(n - 1\)</span> degrees of freedom and scale matrix <span class="math inline">\(\boldsymbol\Sigma\)</span> (Searle, 2006, p. 352; Muirhead, 1982, p. 86; or any textbook on multivariate analysis).</p>
+<p>The sampling covariance between two sample covariances, say <span class="math inline">\(s_{jk}\)</span> and <span class="math inline">\(s_{lm}\)</span>, can then be derived from the properties of the Wishart distribution. Expressions for this are available in Searle (2006) or Muirhead (1982). The former is a bit hard to parse because it uses the <span class="math inline">\(\text{vec}\)</span> and Kronecker product operators; Muirhead (1982, p. 90) gives the following simple expression:</p>
+<p><span class="math display">\[
+\text{Cov}\left(s_{jk}, s_{lm}\right) = \frac{\sigma_{jl}\sigma_{km} + \sigma_{jm}\sigma_{kl}}{n - 1}.
+\]</span></p>
+<p>For sample variances, this reduces to</p>
+<p><span class="math display">\[
+\text{Cov}\left(s_j^2, s_l^2\right) = \frac{2\sigma_{jl}^2}{n - 1}.
+\]</span></p>
+<p>The formula also reduces to the well-known result that the sampling variance of the sample variance is</p>
+<p><span class="math display">\[
+\text{Var}\left(s_j^2\right) = \frac{2 \sigma_{jj}^2}{n - 1}.
+\]</span></p>
+<p>One application of this bit of distribution theory is to find the sampling variance of an average of sample variances. Suppose that we have a bivariate normal distribution where both measures have the same variance <span class="math inline">\(\sigma_{11} = \sigma_{22} = \sigma^2\)</span> and correlation <span class="math inline">\(\rho\)</span>. One estimate of this common variance is to take the simple average of the sample variances, <span class="math inline">\(s_{\bullet}^2 = \left(s_1^2 + s_2^2\right) / 2\)</span>. Then using the above:</p>
+<p><span class="math display">\[\begin{aligned}
+\text{Var}\left(s_{\bullet}^2\right) &amp;= \frac{1}{4}\left[\text{Var}\left(s_1^2\right) + \text{Var}\left(s_2^2\right) + 2\text{Cov}\left(s_1^2, s_2^2\right) \right] \\
+&amp;= \frac{\sigma^4 \left(1 + \rho^2\right)}{n - 1}.
+\end{aligned}\]</span></p>
+<p>To see that this is correct, consider the extreme cases. If the two measures are perfectly correlated, then averaging the sample variances has no benefit because <span class="math inline">\(\text{Var}\left(s_{\bullet}^2\right) = \text{Var}\left(s_1^2\right) = \text{Var}\left(s_2^2\right)\)</span>. If they are exactly uncorrelated, then averaging the sample variances is equivalent to pooling the sample variance from two independent samples.</p>
+<div id="references" class="section level3">
+<h3>References</h3>
+<p>Muirhead, R. J. (1982). Aspects of Multivariate Statistical Theory. New York, NY: John Wiley &amp; Sons.</p>
+<p>Searle, S. R. (2006). Matrix Algebra Useful for Statistics. Hoboken, NJ: John Wiley &amp; Sons.</p>
+</div>

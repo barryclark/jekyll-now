@@ -1,0 +1,39 @@
+{{ partial "header.html" . }}
+{{ partial "navbar.html" . }}
+
+{{ partial "header_image.html" . }}
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1>{{ .Title | default (i18n "talks") }}</h1>
+
+      {{ with .Content }}
+      <div class="article-style" itemprop="articleBody">{{ . }}</div>
+      {{ end }}
+
+      {{ range .Data.Pages.GroupByParamDate "time_start" "2006" }}
+      <div class="row" id="talk_list">
+        <div class="col-md-2">
+          <h3>{{ .Key }}</h3>
+        </div>
+        <div class="col-md-10">
+
+          {{ range sort .Pages ".Params.time_start" "desc" }}
+            {{ if eq $.Params.list_format 1 }}
+              {{ partial "talk_li_detailed" . }}
+            {{ else }}
+              {{ partial "talk_li_simple" . }}
+            {{ end }}
+          {{ end }}
+
+        </div>
+      </div>
+      {{ end }}
+
+    </div>
+  </div>
+
+</div>
+{{ partial "footer_container.html" . }}
+{{ partial "footer.html" . }}

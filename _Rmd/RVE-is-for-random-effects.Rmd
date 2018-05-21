@@ -1,8 +1,15 @@
 ---
-layout: post
 title: Robust variance estimation is for random effects models
-date: August 14, 2017
-tags: [meta-analysis, sandwiches, R]
+author: 'James'
+date: '2017-08-14'
+slug: RVE-is-for-random-effects
+categories: []
+tags:
+  - meta-analysis
+  - sandwiches
+header:
+  caption: ''
+  image: ''
 ---
 
 One of the methodological decisions that must be made when conducting a meta-analysis is whether to use a fixed effects (FE) model or a random effects (RE) model. Oftentimes, this decision is framed in terms of whether there is heterogeneity in the effect sizes to be synthesized. According to this line of thinking, the FE model is appropriate if one is willing to assume all all of the studies to be synthesized are estimating a common effect size parameter, while the RE model is appropriate if the true effect size parameters are  (possibly) heterogeneous. Here, the FE model is _nested_ within the RE model, meaning that the FE model is simply a special case of the RE model with heterogeneity equal to zero. Furthermore, because RE is strictly more general (making less restrictive assumptions), it should almost always be preferred. However, this is not the only way of thinking about the distinction between these models. 
