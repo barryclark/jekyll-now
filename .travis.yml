@@ -1,22 +1,16 @@
-language: go
-
-go:
-  - master # This uses automatically the latest version of go
-
-# install:
-#  - go get github.com/spf13/hugo # This provides the latest version of Hugo to Travis CI
+language: python
 
 script:
   - hugo # This commands builds your website on travis
 
-deploy:
-  local_dir: public # Default static site output dir for Hugo
-  repo: jepusto/jepusto.github.io # This is the slug of the repo you want to deploy your site to
-  target_branch: master # GitHub pages branch to deploy to (in other cases it can be gh-pages)
-  provider: pages
-  skip_cleanup: true
-  github_token: $GITHUB_TOKEN # This is the authentication which you will setup in the next step in travis-ci dashboard
-  email: jepusto@gmail.com
-  name: "jepusto"
-  on:
-    branch: master
+after_success: |
+    if [ -n "$GITHUB_API_KEY" ]; then
+    git checkout --orphan master
+    git rm -rf .
+    mv public/* .
+    rm -rf public hugo_*
+    git add -f --ignore-errors --all
+    git -c user.name='travis' -c user.email='travis' commit -m init
+    git push -f -q https://$GITHUB_USER:$GITHUB_API_KEY@github.com/$TRAVIS_REPO_SLUG master
+    fi
+    
