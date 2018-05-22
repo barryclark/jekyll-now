@@ -1,27 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Meta-analysis on James E. Pustejovsky</title>
-    <link>/./tags/meta-analysis/</link>
-    <description>Recent content in Meta-analysis on James E. Pustejovsky</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Thu, 19 Apr 2018 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/./tags/meta-analysis/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Sampling variance of Pearson r in a two-level design</title>
-      <link>/./post/variance-of-r-in-two-level-design/</link>
-      <pubDate>Thu, 19 Apr 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/./post/variance-of-r-in-two-level-design/</guid>
-      <description>Consider Pearson’s correlation coefficient, \(r\), calculated from two variables \(X\) and \(Y\) with population correlation \(\rho\). If one calculates \(r\) from a simple random sample of \(N\) observations, then its sampling variance will be approximately
-\[\text{Var}(r) \approx \frac{1}{N}\left(1 - \rho^2\right)^2.\]
-But what if the observations are drawn from a multi-stage sample? If one uses the raw correlation between the observations (ignoring the multi-level structure), then the \(r\) will actually be a weighted average of within-cluster and between-cluster correlations (see Snijders &amp;amp; Bosker, 2012).</description>
-    </item>
-    
-  </channel>
-</rss>
