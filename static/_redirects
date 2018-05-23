@@ -1,0 +1,5 @@
+# Redirect default Netlify subdomain to primary domain
+https://jepusto.netlify.com/* https://www.jepusto.com/:splat 301!
+
+# These extra rules are required because HTTPS is not forced
+http://jepusto.netlify.com/* https://www.jepusto.com/:splat 301!
