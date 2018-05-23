@@ -289,6 +289,11 @@ enableGitInfo = false
   name = "Contact"
   url = "#contact"
   weight = 8
+  
+[[menu.main]]
+  name = "Topics"
+  url = "#tags"
+  weight = 8
 
 # Taxonomies.
 [taxonomies]
