@@ -1,9 +1,9 @@
-#
+r#
 # This file contains configuration flags to customize your site
 #
 
 # Name of your site (displayed in the header)
-name: Your Name
+name: Rémi Bourgarel's Blog
 
 # Short bio or description (displayed in the header)
 description: Web Developer from Somewhere
