@@ -38,7 +38,7 @@ I use a Jekyll and GitHub Page commenting system known as [StaticMan](https://he
 
 There is no requirement that the email or name be real.
 
-If you want a comment removed, contact me with the e-mail address and permalink of the comment you wish to have removed. The permalink can be found by clicking on the date of the comment. For instance, the following is a comment permalink: https://hendrixjoseph.github.io/new-commenting-system-staticman/#comment-1510760200.
+If you want a comment removed, contact me with the e-mail address and permalink of the comment you wish to have removed. The permalink can be found by clicking on the date of the comment. For instance, the following is a comment permalink: [https://hendrixjoseph.github.io/new-commenting-system-staticman/#comment-1510760200](https://hendrixjoseph.github.io/new-commenting-system-staticman/#comment-1510760200).
 
 If you want all comments removed with an associated email, contact me with the email and I will remove them.
 
