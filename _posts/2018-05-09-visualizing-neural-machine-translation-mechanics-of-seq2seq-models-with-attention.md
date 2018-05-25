@@ -195,6 +195,8 @@ Note that the model isn't just mindless aligning the first word at the output wi
 
 <br />
 
+If you feel you're ready to learn the implementation, be sure to check TensorFlow's [Neural Machine Translation (seq2seq) Tutorial](https://github.com/tensorflow/nmt).
+
 ---
 
 <br />
