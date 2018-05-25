@@ -30,8 +30,6 @@ I run Google Adsense mainly to know how to use Adsense. This is the single ad ba
 
 This site participates in the [Amazon Services LLC Associates Program](https://affiliate-program.amazon.com/help/operating/agreement), an affiliate advertising program designed to provide a means for this site to earn fees by linking to Amazon.com and affiliated sites.
 
-## Facebook Pixel Tracking
-
 ## Social Media
 
 ### Comments
