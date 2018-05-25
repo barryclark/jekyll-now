@@ -103,7 +103,7 @@ Let's look at the <span class="context">hidden states</span>  for the <span clas
 
 <br />
 
-The <span class="decoder">decoder</span>  also maintains a <span class="context">hidden states</span>  that it passes from one time step to the next. We just didn't visualize it in this graphic because we're concerned with the major parts of the model for now.
+The <span class="decoder">decoder</span>  also maintains a <span class="decoder">hidden states</span>  that it passes from one time step to the next. We just didn't visualize it in this graphic because we're concerned with the major parts of the model for now.
 
 
 Let's now look at another way to visualize a sequence-to-sequence model. This animation will make it easier to understand the static graphics that describe these models. This is called an "unrolled" view where instead of showing the one <span class="decoder">decoder</span>, we show a copy of it for each time step. This way we can look at the inputs and outputs of each time step.
@@ -115,7 +115,6 @@ Let's now look at another way to visualize a sequence-to-sequence model. This an
 
 <br />
 
-But what does it mean for
 
 
 # Let's Pay Attention Now
@@ -142,11 +141,11 @@ First, the <span class="encoder">encoder</span> passes a lot more data to the <s
 
 <br />
 
-Second, an attention <span class="decoder">decoder</span>  does an extra step before processing its inputs. In order to focus on the parts of the input that are relevant to this decoding time step, the <span class="decoder">decoder</span>  does the following:
+Second, an attention <span class="decoder">decoder</span>  does an extra step before producing its output. In order to focus on the parts of the input that are relevant to this decoding time step, the <span class="decoder">decoder</span>  does the following:
 
- 1. look at the set of encoder <span class="context"><span class="context">hidden states</span>s</span>  it received -- each <span class="encoder">encoder</span> <span class="context">hidden states</span>  is most associated with a certain word in the input sentence
- 1. give each <span class="context">hidden states</span>  a score (let's ignore how the scoring is done for now)
- 1. multiply each <span class="context">hidden states</span>  by its softmaxed score, thus amplifying <span class="context">hidden states</span>  with high scores, and drowning out <span class="context">hidden states</span>  with low scores
+ 1. Look at the set of encoder <span class="context">hidden states</span>  it received -- each <span class="context">encoder hidden states</span>  is most associated with a certain word in the input sentence
+ 1. Give each <span class="context">hidden states</span>  a score (let's ignore how the scoring is done for now)
+ 1. Multiply each <span class="context">hidden states</span>  by its softmaxed score, thus amplifying <span class="context">hidden states</span>  with high scores, and drowning out <span class="context">hidden states</span>  with low scores
 
 
 <video width="100%" height="auto" loop autoplay controls>
@@ -163,7 +162,7 @@ Let us now bring the whole thing together in the following visualization and loo
 
 1. The attention decoder RNN takes in the embedding of the <span class="embedding">\<END\></span> token, and an <span class="decoder">initial decoder hidden state</span>.
 1. The RNN processes its inputs, producing an output and a <span class="decoder">new hidden state</span> vector (<span class="decoder">h</span><span class="step_no">4</span>). The output is discarded.
-1. Attention Step: We use the encoder hidden states and the h4 vector to calculate a context vector (<span class="step_no">C</span><span class="decoder">4</span>) for this time step.
+1. Attention Step: We use the <span class="context">encoder hidden states</span> and the <span class="decoder">h</span><span class="step_no">4</span> vector to calculate a context vector (<span class="step_no">C</span><span class="decoder">4</span>) for this time step.
 1. We concatenate <span class="decoder">h</span><span class="step_no">4</span> and <span class="step_no">C</span><span class="decoder">4</span> into one vector.
 1. We pass this vector through a <span class="ffnn">feedforward neural network</span> (one trained jointly with the model).
 1. The <span class="logits_output">output</span> of the feedforward neural networks indicates the output word of this time step.
