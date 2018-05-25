@@ -35,3 +35,6 @@ As I said there is security and performance but there is no traffic on this site
 - Working with git so I can do branching for WIP and have a full history
 - Lot of nice plugins like disqus or google analytics and you configurate it with one line of config
 - no hard to understand GUI like wordpress or shitty Wysiwyg like blogspot
+
+# Blog post list
+https://trello.com/b/DjyTFhPy/blog
