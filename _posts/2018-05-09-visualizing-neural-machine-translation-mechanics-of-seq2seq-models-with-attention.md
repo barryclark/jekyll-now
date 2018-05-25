@@ -4,6 +4,11 @@ published: True
 title: Visualizing A Neural Machine Translation Model (Mechanics of Seq2seq Models With Attention)
 ---
 
+
+**May 25th update:** New graphics (RNN animation, word embedding graph), color coding, elaborated on the final attention example.
+
+**Note:** The animations below are videos. Touch or hover on them (if you're using a mouse) to get play controls so you can pause if needed.
+
 Sequence-to-sequence models are deep learning models that have achieved a lot of success in tasks like machine translation, text summarization, and image captioning. Google Translate started [using](https://blog.google/products/translate/found-translation-more-accurate-fluent-sentences-google-translate/) such a model in production in late 2016. These models are explained in the two pioneering papers ([Sutskever et al., 2014](https://papers.nips.cc/paper/5346-sequence-to-sequence-learning-with-neural-networks.pdf), [Cho et al., 2014](http://emnlp2014.org/papers/pdf/EMNLP2014179.pdf)).
 
 I found, however, that understanding the model well enough to implement it requires unraveling a series of concepts that build on top of each other. I thought that a bunch of these ideas would be more accessible if expressed visually. That's what I aim to do in this post. You'll need some previous understanding of deep learning to get through this post. I hope it can be a useful companion to reading the papers mentioned above (and the attention papers linked later in the post).
@@ -31,9 +36,9 @@ In neural machine translation, a sequence is a series of words, processed one af
 
 ## Looking under the hood
 
-Under the hood, the model is composed of an encoder and a decoder.
+Under the hood, the model is composed of an <span class="encoder">encoder</span> and a <span class="decoder">decoder</span>.
 
-The encoder processes each item in the input sequence, it compiles the information it captures into a vector (called the context). After processing the entire input sequence, the encoder send the context over to the decoder, which begins producing the output sequence item by item.
+The <span class="encoder">encoder</span> processes each item in the input sequence, it compiles the information it captures into a vector (called the <span class="context">context</span>). After processing the entire input sequence, the <span class="encoder">encoder</span> send the <span class="context">context</span>  over to the <span class="decoder">decoder</span>, which begins producing the output sequence item by item.
 
 <video width="100%" height="auto" loop autoplay  controls>
   <source src="/images/seq2seq_3.mp4" type="video/mp4">
@@ -52,20 +57,42 @@ The same applies in the case of machine translation.
 </video>
 
 
-The context is a vector (an array of numbers, basically) in the case of machine translation. The encoder and decoder tend to both be [recurrent neural networks](https://www.youtube.com/watch?v=UNmqTiOnRfg).
+The <span class="context">context</span>  is a vector (an array of numbers, basically) in the case of machine translation. The <span class="encoder">encoder</span> and <span class="decoder">decoder</span>  tend to both be recurrent neural networks (Be sure to check out Luis Serrano's [A friendly introduction to Recurrent Neural Networks](https://www.youtube.com/watch?v=UNmqTiOnRfg) for an intro to RNNs).
 
 <div class="img-div" markdown="0">
     <img src="/images/context.png" />
-    The context is a vector of floats. Later in this post we will visualize vectors in color by assigning brighter colors to the cells with higher values.
+    The <span class="context">context</span>  is a vector of floats. Later in this post we will visualize vectors in color by assigning brighter colors to the cells with higher values.
 </div>
 
-You can set the size of the context vector when you set up your model. It is basically the number of hidden units in the encoder RNN. These visualizations show a vector of size 4, but in real world applications the context vector would be of a size like 256, 512, or 1024.
+You can set the size of the <span class="context">context</span>  vector when you set up your model. It is basically the number of hidden units in the <span class="encoder">encoder</span> RNN. These visualizations show a vector of size 4, but in real world applications the <span class="context">context</span> vector would be of a size like 256, 512, or 1024.
 
 <br />
 
-Each pulse for the encoder or decoder is that RNN processing its inputs and generating an output for that time step. Since the encoder and decoder are both RNNs, each time step one of the RNNs does some processing, it updates its hidden state based on its inputs and previous inputs it has seen.
+By design, a RNN takes two inputs at each time step: an input (in the case of the encoder, one word from the input sentence), and a hidden state. The word, however, needs to be represented by a vector. To transform a word into a vector, we turn to the class of methods called "[word embedding](https://machinelearningmastery.com/what-are-word-embeddings/)" algorithms. These turn words into vector spaces that capture a lot of the meaning/semantic information of the words (e.g. [king - man + woman = queen](http://p.migdal.pl/2017/01/06/king-man-woman-queen-why.html)).
 
-Let's look at the hidden states for the encoder. Notice how the last hidden state is actually the context we pass along to the decoder.
+<br />
+
+<div class="img-div" markdown="0">
+    <img src="/images/embedding.png" />
+    We need to turn the input words into vectors before processing them. That transformation is done using a <a href="https://en.wikipedia.org/wiki/Word_embedding">word embedding</a> algorithm. We can use <a href="http://ahogrammer.com/2017/01/20/the-list-of-pretrained-word-embeddings/">pre-trained embeddings</a> or train our own embedding on our dataset. Embedding vectors of size 200 or 300 are typical, we're showing a vector of size four for simplicity.
+</div>
+
+Now that we've introduced our main vectors/tensors, let's recap the mechanics of an RNN and establish a visual language to describe these models:
+
+<video width="100%" height="auto" loop autoplay controls>
+  <source src="/images/RNN_1.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+<br />
+
+The next RNN step takes the second input vector and hidden state #1 to create the output of that time step. Later in the post, we'll use an animation like this to describe the vectors inside a neural machine translation model.
+
+<br />
+
+In the following visualization, each pulse for the <span class="encoder">encoder</span> or <span class="decoder">decoder</span>  is that RNN processing its inputs and generating an output for that time step. Since the <span class="encoder">encoder</span> and <span class="decoder">decoder</span>  are both RNNs, each time step one of the RNNs does some processing, it updates its <span class="context">hidden state</span>  based on its inputs and previous inputs it has seen.
+
+Let's look at the <span class="context">hidden states</span>  for the <span class="encoder">encoder</span>. Notice how the last <span class="context">hidden state</span>  is actually the <span class="context">context</span>  we pass along to the <span class="decoder">decoder</span>.
 
 
 <video width="100%" height="auto" loop autoplay controls>
@@ -76,10 +103,10 @@ Let's look at the hidden states for the encoder. Notice how the last hidden stat
 
 <br />
 
-The decoder also maintains a hidden state that it passes from one time step to the next. We just didn't visualize it in this graphic because we're concerned with the major parts of the model for now.
+The <span class="decoder">decoder</span>  also maintains a <span class="context">hidden states</span>  that it passes from one time step to the next. We just didn't visualize it in this graphic because we're concerned with the major parts of the model for now.
 
 
-Let's now look at another way to visualze a sequence-to-sequence model. This animation will make it easier to understand the static graphics that describe these models. This is called an "unrolled" view where instead of showing the one decoder, we show a copy of it for each time step. This way we can look at the inputs and outputs of each time step.
+Let's now look at another way to visualize a sequence-to-sequence model. This animation will make it easier to understand the static graphics that describe these models. This is called an "unrolled" view where instead of showing the one <span class="decoder">decoder</span>, we show a copy of it for each time step. This way we can look at the inputs and outputs of each time step.
 
 <video width="100%" height="auto" loop autoplay controls>
   <source src="/images/seq2seq_6.mp4" type="video/mp4">
@@ -88,21 +115,24 @@ Let's now look at another way to visualze a sequence-to-sequence model. This ani
 
 <br />
 
+But what does it mean for
+
+
 # Let's Pay Attention Now
-The context vector turned out to be a bottleneck for these types of models. It made it challenging for the models to deal with long sentences. A solution was proposed in [Bahdanau et al., 2014](https://arxiv.org/abs/1409.0473) and [Luong et al., 2015](https://arxiv.org/abs/1508.04025). These papers introduced and refined a technique called "Attention", which highly improved the quality of machine translation systems. Attention allows the model to focus on the relevant parts of the input sequence as needed.
+The <span class="context">context</span>  vector turned out to be a bottleneck for these types of models. It made it challenging for the models to deal with long sentences. A solution was proposed in [Bahdanau et al., 2014](https://arxiv.org/abs/1409.0473) and [Luong et al., 2015](https://arxiv.org/abs/1508.04025). These papers introduced and refined a technique called "Attention", which highly improved the quality of machine translation systems. Attention allows the model to focus on the relevant parts of the input sequence as needed.
 
 
 <img src="/images/attention.png" />
 
 <div class="img-div" markdown="0">
-    At time step 7, the attention mechanism enables the decoder to focus on the word "étudiant" ("student" in french) before it generates the English translation. This ability to amplify the signal from the relevant part of the input sequence makes attention models produce better results than models without attention.
+    At time step 7, the attention mechanism enables the <span class="decoder">decoder</span>  to focus on the word "étudiant" ("student" in french) before it generates the English translation. This ability to amplify the signal from the relevant part of the input sequence makes attention models produce better results than models without attention.
 </div>
 
 <br />
 
 Let's continue looking at attention models at this high level of abstraction. An attention model differs from a classic sequence-to-sequence model in two main ways:
 
-First, the encoder passes a lot more data to the decoder. Instead of passing the last hidden state of the encoding stage, the encoder passes _all_ the hidden states to the decoder:
+First, the <span class="encoder">encoder</span> passes a lot more data to the <span class="decoder">decoder</span>. Instead of passing the last hidden state of the encoding stage, the <span class="encoder">encoder</span> passes _all_ the <span class="context">hidden states</span>  to the <span class="decoder">decoder</span>:
 
 <video width="100%" height="auto" loop autoplay controls>
   <source src="/images/seq2seq_7.mp4" type="video/mp4">
@@ -112,11 +142,11 @@ First, the encoder passes a lot more data to the decoder. Instead of passing the
 
 <br />
 
-Second, an attention decoder does an extra step before processing its inputs. In order to focus on the parts of the input that are relevant to this decoding time step, the decoder does the following:
+Second, an attention <span class="decoder">decoder</span>  does an extra step before processing its inputs. In order to focus on the parts of the input that are relevant to this decoding time step, the <span class="decoder">decoder</span>  does the following:
 
- 1. look at the set of encoder hidden states it received -- each encoder hidden state is most associated with a certain word in the input sentence
- 1. give each hidden state a score (let's ignore how the scoring is done for now)
- 1. multiply each hidden state by its softmaxed score, thus amplifying hidden states with high scores, and drowning out hidden states with low scores
+ 1. look at the set of encoder <span class="context"><span class="context">hidden states</span>s</span>  it received -- each <span class="encoder">encoder</span> <span class="context">hidden states</span>  is most associated with a certain word in the input sentence
+ 1. give each <span class="context">hidden states</span>  a score (let's ignore how the scoring is done for now)
+ 1. multiply each <span class="context">hidden states</span>  by its softmaxed score, thus amplifying <span class="context">hidden states</span>  with high scores, and drowning out <span class="context">hidden states</span>  with low scores
 
 
 <video width="100%" height="auto" loop autoplay controls>
@@ -127,7 +157,17 @@ Second, an attention decoder does an extra step before processing its inputs. In
 <br />
 <br />
 
-This scoring exercise is done at each time step on the decoder side:
+This scoring exercise is done at each time step on the <span class="decoder">decoder</span> side.
+
+Let us now bring the whole thing together in the following visualization and look at how the attention process works:
+
+1. The attention decoder RNN takes in the embedding of the <span class="embedding">\<END\></span> token, and an <span class="decoder">initial decoder hidden state</span>.
+1. The RNN processes its inputs, producing an output and a <span class="decoder">new hidden state</span> vector (<span class="decoder">h</span><span class="step_no">4</span>). The output is discarded.
+1. Attention Step: We use the encoder hidden states and the h4 vector to calculate a context vector (<span class="step_no">C</span><span class="decoder">4</span>) for this time step.
+1. We concatenate <span class="decoder">h</span><span class="step_no">4</span> and <span class="step_no">C</span><span class="decoder">4</span> into one vector.
+1. We pass this vector through a <span class="ffnn">feedforward neural network</span> (one trained jointly with the model).
+1. The <span class="logits_output">output</span> of the feedforward neural networks indicates the output word of this time step.
+1. Repeat for the next time steps
 
 <video width="100%" height="auto" loop autoplay controls>
    <source src="/images/attention_tensor_dance.mp4" type="video/mp4">
@@ -164,7 +204,9 @@ I hope you've found this useful. These visuals are early iterations of a lesson 
 
 Check out the trailer of the [NLP Nanodegree Program](https://www.udacity.com/course/natural-language-processing-nanodegree--nd892):
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/FggN0VtWYTk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<div class="videoWrapper">
+<iframe width="560" height="349"  src="https://www.youtube.com/embed/FggN0VtWYTk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
 
 I've also created a few lessons as a part of Udacity's [Machine Learning Nanodegree Program](https://www.udacity.com/course/machine-learning-engineer-nanodegree--nd009t). The lessons I've created cover Unsupervised Learning, as well as a jupyter notebook on movie recommendations using collaborative filtering.
 
