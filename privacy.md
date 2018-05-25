@@ -4,7 +4,7 @@ title: Privacy Policy
 permalink: /privacy/
 ---
 
-*Revised March 25, 2018.*
+*Revised May 25, 2018.*
 
 ## Google Analytics
 
