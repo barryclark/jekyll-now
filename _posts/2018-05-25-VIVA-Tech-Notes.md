@@ -1,11 +1,12 @@
 ---
 layout: post
-title: Viva Tech 2018 Notes
+title: Viva Tech 2018 Notes & Thoughts
 ---
+![VIVA Tech 2018](/images/IMG_20180524_174152.jpg)
 # Intro
-Viva Tech, an annual technology &amp; innovation conference in its third year, is billed as _"the world’s rendezvous for startups and leaders to celebrate innovation"_. Held in Paris, this week it attracted 80000 attendees, 8000 European startups, dozens of large players in technology across Europe. It also featured talks from Satya Nadella, Microsoft CEO; Ginni Rometty, IBM CEO; Mark Zuckerberg, Facebook CEO; amongst many, many more.
+Viva Tech, an annual technology &amp; innovation conference in its third year, is billed as _"the world’s rendezvous for startups and leaders to celebrate innovation"_. Held in Paris, this week it attracted 80000 attendees, 8000 European startups and dozens of large players in technology across Europe. It also featured talks from Satya Nadella, Microsoft CEO; Ginni Rometty, IBM CEO; Mark Zuckerberg, Facebook CEO; amongst many, many more.
 
-I wanted to come to Viva since events I've attended in the past have had a very technical focus, I was interested to learn more about the themes of interest I have rather than specific technologies. Viva being on the fringe of tech &amp; business allowed me to explore some theme in greater detail rather than focusing technology too in depth.
+I came to Viva Tech to shake it up from other events I've been at in the past. Prior to graduation I'm looking to explore all my possible options. Not just what technology I would be using but also which industry I want to focus myself in. Since Viva Tech isn't a technical technology conference, but more of a business technology conference it allowed me to explore this deeply.
 
 Viva Tech covered topics ranging from Artificial Intelligence, Blockchain, IoT, and Quantum Computing. It also looked many themes, including: Mobility, Smart Cities, Travel, African Tech scene, Startups, Future Tech, Digital Transformation, Tech for Good. Unfortunately, I never got to see every talk I had planned to but below I am summarizing what I picked up from a handful of the talks below.
 
@@ -32,7 +33,7 @@ I was really looking forward to this talk from [Rachel Picard](https://twitter.c
 
 Over the course of May &amp; June, SNCF are facing 24 days of strikes so in terms of short term innovation, they have created a chat bot which is capable of providing information to consumers during this prolonged period of disruption.
 
-SNCF are also introducing new rolling stock to their TGV routes (High Speed), their medium term innovation revolves around these new trains which perform self diagnostics on themselves and transmit information back to maintenance depots through the day. When the train returns to the depot, maintenance crews know where needs most attention rather than manually checking everything.
+SNCF are also introducing new rolling stock to their TGV routes (High Speed). The medium term innovation revolves around these new trains which perform self diagnostics on themselves and transmit information back to maintenance depots through the day. When the train returns to the depot, maintenance crews know where needs most attention rather than manually checking everything.
 
 Their long term innovation is very out there. SNCF sent some engineers out to collaborate with teams currently working on Hyperloop. According to Rachel, SNCF are the only transport operator to be involved at the moment.
 
@@ -64,3 +65,4 @@ Bo Wald, President of D-Wave, offered an introduction to Quantum and how it can 
 With Quantum Computers, this concept changes to Qbits where it can be in a state of both one and zero, or any combination between. This kind of power allows for computation of really interesting problems. In collaboration with other partners, Daze was able to perform optimization on traffic flow in China, the best ad placement on mobile, prediction of health analysis among many other problems.
 
 Pictured below is IBM's Quantum Computer. Interestingly, the processor for these computers isn't relatively large but since the computation needs to perform at near absolute zero, most of the equipment is to keep things cold.
+![IBM Q @ VIVA Tech 2018](/images/IMG_20180525_164759.jpg)
