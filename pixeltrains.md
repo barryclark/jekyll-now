@@ -1,8 +1,8 @@
----
+<!-- ---
 layout: page
 title: Pixel Trains
 permalink: /Pixel-Trains/
----
+--- -->
 
 # Virgin East Coast Trains - Azuma
 ![Virgin Azuma Train](/images/VirginAzuma.png "Virgin Azuma Train")
