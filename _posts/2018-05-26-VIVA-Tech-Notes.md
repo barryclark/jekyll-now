@@ -112,3 +112,5 @@ I want to focus of Machine Learning and using technology for good, I want to be 
 I want to challenge myself to look at the bleeding edges of technology, notably where AI is going and how we can harness quantum computing. I am still a Blockchain skeptic, that will likely not change, I refuse to believe that has a future.
 
 To avoid the length of the post stretching on forever I've cut out some talks from day one, these including discussions around Blockchain, using DNA as storage and being a young entrepreneur in the African Tech Scene. If you're interested in learning more, ping me through one of the methods in my footer.
+
+![VIVA Tech 2018](/images/IMG_20180524_104606-COLLAGE.jpg)
