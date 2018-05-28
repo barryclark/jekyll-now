@@ -131,7 +131,7 @@ we decided to make a reporting tool for it so the authorities can remove it.
 
 Later on we had the idea to extend the features from only ragweed to also detecting trash and potholes in the streets.  
 
-## Our project
+## Our idea
 *"Shamy Amy" helping out the city one issue at a time.*  
 We created a native mobile application, that is capable of reporting issues such as Ragweed, trash or potholes just by taking pictures of it.  
 
