@@ -4,12 +4,12 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Hi there, my name is Matthew Bryce and I’ve just started a course at CodeClan. I have created this blog to record and consolidate everything I learn.
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+I’ve been working for the last 2 and a half years as an IT Engineer. I decided to apply for this course, as I wanted to improve my coding skills, in order to work in development.
 
-### Contact me
+<!-- ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[email@email.com](mailto:email@email.com) -->
