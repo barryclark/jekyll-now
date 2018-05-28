@@ -1,15 +1,15 @@
 ---
 layout: page
-title: About
+title: A cerca de mi :)
 permalink: /about/
 ---
 
-Some information about you!
+Geek, apasionado por la tecnología.
 
-### More Information
+### Más Información
 
-A place to include any other types of information that you'd like to include about yourself.
+Si quieres saber más acerca de mi puedes mandarme un mail.
 
-### Contact me
+### Contacto
 
-[email@domain.com](mailto:email@domain.com)
+[jg.melg@gmail.com](mailto:jg.melg@gmail.com)
