@@ -16,19 +16,19 @@ Recently a team from Haufe group participated in the HackTM18 Hackathon in Timis
 
 Someone at hackTM said to me: "This is a festival for geeks". And it is.  
 You have to imagine a Hackathon as a huge LAN-Party, but instead of gaming you write code.  
-Well some guys actually played games all time, but let's keep this aside.  
+Well some guys actually played games all the time, but let's keep this aside.  
 
 ### About the author
 My name is Felix Jablonski.  
 I am a computer science student at the University of Freiburg.  
 Since 2018 I am working at Haufe Group in the software engineering department.  
-Traveling to our office in Romania to participate in HackTM has been a great experience for me.  
+Traveling to our office in Romania to participate in the HackTM has been a great experience for me.  
 
 
 ### What is a Hackathon?
 In a Hackathon a lot of nerds and geeks, but also technology interested or economically motivated entrepreneurs meet to hack around with new technologies and ideas.  
 
-"Hacking" around means on the one hand to learn new technologies and possibilities you missed before and on the other to use well known technologies in a different way.  
+"Hacking" around means on the one hand to learn new technologies and possibilities you missed before and on the other hand to use well known technologies in a different way.  
 
 You can try new things you always wanted to try out.  
 Not to mention, that this ends up in a buzzword collection most of the time (Machine learning, Blockchain, IoT...) ;)  
@@ -49,7 +49,7 @@ So what you are actually doing is RRP - Really rapid prototyping.
 You have like 48 hours from the pitch of your idea to the final product, which may involve team building.  
 Working together is crucial for success, but a good project structure is too.  
 
-If you don't practice modularity you simply will not have enough time to finish you project.  
+If you don't practice modularity you simply will not have enough time to finish your project.  
 One way to go is to split your work into the components of your architecture.  
 
 For example one does machine learning, one the app and one the middle-ware.  
@@ -68,7 +68,7 @@ Sharing the same passion and drive is a great feeling together with meeting new 
 For example I've talked to two guys, who wrote a 3D third person game from scratch in C# and Unity about how they did it and what you have to consider while doing so, as I was always interested in learning about this.  
   
 Another example about the passion for software and/or technical projects in a Hackathon is the dedication to the Hackathon project itself.  
-Most of the participants haven't slept, coded for 17h straight on Saturday and fall asleep under the table.  
+Most of the participants haven't slept, coded for 17h straight on Saturday and fell asleep under the table.  
 Let's say you saw people being delighted by a nice interface description or code, that simply works.  
 
 ### Pitching your project
@@ -100,27 +100,27 @@ First of all you have a ton of skilled and passionated developers and engineers 
 
 Second you can use the combined work-power to do something you always wanted to do, but couldn't because you can't code.  
 
-If you want to acquire new potential employees a good start is to send your devs to talk to them. Geeks might catch other geeks well when communicating in an Hackathon environment ;)  
+If you want to acquire new potential employees a good start is to send your devs to talk to them. Geeks might catch other geeks well when communicating in a Hackathon environment ;)  
 
 ### Food
 How do so many people survive three days in front of their PCs?  
-Free food and drinks is always a highlight of an Hackathon.  
+Free food and drinks is always a highlight of a Hackathon.  
 
 HackTM even had its own currency.  
-They had a smoothie place, some baristas and food trucks, ice ... and so on.  
+They had a smoothie place, some baristas and food trucks, ice creme, and so on.  
 
 <img src="{{ site.baseurl }}/images/hacktm18/coffee.jpg" width="200"><img src="{{ site.baseurl }}/images/hacktm18/foodtrucks.jpg" width="400"><img src="{{ site.baseurl }}/images/hacktm18/ice.jpg" width="200">
 
 
 # Our project
-Now that you know what a Hackathon is in general.  
+Now you know what a Hackathon is in general.  
 Here is my report of our project at hackTM 2018 in Timisoara Romania  
 
 ## Preparations
 What do you need to do before starting a project at a Hackathon?  
-- Find an team there or bring your own  
+- Find a team there or bring your own  
 - Find an idea  
-- Find an team name (We took Fantastic-five)  
+- Find a team name (We took Fantastic-five)  
 - Discuss what environment makes sense (CI/CD) but be really short on that one  
 
 ## We met on Thursday in order to get a project idea
@@ -136,18 +136,18 @@ Later on we had the idea to extend the features from only ragweed to also detect
 We created a native mobile application, that is capable of reporting issues such as Ragweed, trash or potholes just by taking pictures of it.  
 
 Basically you click on "Report", it takes a picture of the thing and tells you if it has detected something.  
-We had an react native app for iPhone and Android up and running.  
+We had a react native app for iPhone and Android up and running.  
 
 The app was capable of showing a heat-map together with the latest reported issues too.  
 The heat-map and issue overview was also available as a web front-end.  
 ### Technical aspects
-We set up an node.js middle-ware in order to connect the components and I wrote an python back-end for the machine learning / image detection part.  
-The back-end was essentially a wrapper around multiple trained docker container where each of them runs an neuronal network trained on one kind of issue.  
+We set up a node.js middle-ware in order to connect the components and I wrote a python back-end for the machine learning / image detection part.  
+The back-end was essentially a wrapper around multiple trained docker container where each of them runs a neuronal network trained on one kind of issue.  
 
 Also the back-end uses a third party (let's call it) API (I just "reverse engineered" their site ^^), which can detect plants by images.  
-Fortunately all ML back-ends provided an API call with a URL to a picture. So the middle-ware just has to tell the back-end the blob storage link on azure.  
+Fortunately all ML back-ends provided an API call with an URL to a picture. So the middle-ware just had to tell the back-end the blob storage link on azure.  
 
-In the end we had an sendgrid set up to send emails "to the authorities"  
+In the end we had a sendgrid set up to send emails "to the authorities"  
 
 The project is open source and available here: https://gitlab.com/fantastic-five  
 
@@ -164,7 +164,7 @@ The project is open source and available here: https://gitlab.com/fantastic-five
 
 ## Special thank to machinebox.io!
 Machinebox.io provides high level ML back-ends inside Docker containers.  
-I've asked them for a unlimited license for the Hackathon on Friday and they gave us a partner license on Saturday, because they really liked our idea.  
+I've asked them for an unlimited license for the Hackathon on Friday and they gave us a partner license on Saturday, because they really liked our idea.  
 So a **HUGE** thanks to them.  
 
 ## Do you guys mind good software development practices?
@@ -210,7 +210,7 @@ For example "How to pitch your product" or "Where to get funds for a startup".
 My part was to train and build the machine learning back-end for our service.  
 
 So what I did was to create training data and filter it out,  
-setup an Docker host for the back-end system and wrote a Python Wrapper for all image detection instances in order to connect them to the middle-ware.  
+setup a Docker host for the back-end system and wrote a Python Wrapper for all image detection instances in order to connect them to the middle-ware.  
 
 After everything was set up I ran the training steps with my pictures.  
 
@@ -241,7 +241,7 @@ The pitching process also involves radio and TV interviews and creating a presen
 
 This is also the chance to visit other projects and teams during their pitch.  
 
-We managed to get into the top 10, which means we can present our project on the stage and participate in the public voting for the grand prize.  
+We managed to get into the top 10, which means we can present our project on stage and participate in the public voting for the grand prize.  
 
 #### Our outcome: 
 4th place out of 60 and we won the "Best community and administration app".  
