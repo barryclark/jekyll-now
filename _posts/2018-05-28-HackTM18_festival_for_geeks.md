@@ -59,7 +59,7 @@ However interface architecture between the components is typically nothing more,
 
 It is important to use high-level APIs for your Prototype.  
 Don't focus on the implementation details of a voice recognition service you use. Just use it.  
-Setting up some CI/CD pipeline is worth a look to, because you want to deploy fast.  
+Setting up some CI/CD pipeline is worth a look too, because you want to deploy fast.  
 
 ### The passion for tech and software
 What I like the most about Hackathons is to talk to other friendly and skilled people about their passion and their projects.  
@@ -78,7 +78,7 @@ Pitching your project and presenting the result is crucial for success.
 Because this is a hack don't worry about faking data or mocking stuff to some point.  
 That is ok if you need it to show a smooth pitch (not if your product is not ready or even developed).  
 
-For example data for a heat map of cars, that would cost you to much time to generate can be faked.  
+For example data for a heat map of cars, that would cost you too much time to generate can be faked.  
 But please don't show a mock-off of your project, because nothing works at all.  
 
 ### Can my work profit from participating?
