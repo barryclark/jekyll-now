@@ -78,7 +78,7 @@ Pitching your project and presenting the result is crucial for success.
 Because this is a hack don't worry about faking data or mocking stuff to some point.  
 That is ok if you need it to show a smooth pitch (not if your product is not ready or even developed).  
 
-For example data for a heat map of cars, that would cost you to much time to generate can be faked.  
+For example data for a heat map of cars, that would cost you too much time to generate can be faked.  
 But please don't show a mock-off of your project, because nothing works at all.  
 
 ### Can my work profit from participating?
