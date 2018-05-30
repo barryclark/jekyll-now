@@ -10,7 +10,7 @@ header-img: "images/hacktm18/crowd.jpg"
 ---
 
 # Hackathon - A festival for geeks
-<img src="{{ site.baseurl }}/images/hacktm18/hacksign.jpg" width="500">
+<img src="../images/hacktm18/hacksign.jpg" width="500">
 
 Recently a team from Haufe group participated in the HackTM18 Hackathon in Timisoara Romania and within this article I want to share my experiences and passion about this great event with you.  
 
@@ -109,7 +109,8 @@ Free food and drinks is always a highlight of a Hackathon.
 HackTM even had its own currency.  
 They had a smoothie place, some baristas and food trucks, ice creme, and so on.  
 
-<img src="{{ site.baseurl }}/images/hacktm18/coffee.jpg" width="200"><img src="{{ site.baseurl }}/images/hacktm18/foodtrucks.jpg" width="400"><img src="{{ site.baseurl }}/images/hacktm18/ice.jpg" width="200">
+<img src="../images/hacktm18/foodtrucks.jpg" style="height:300px;">
+<img src="../images/hacktm18/coffee.jpg" style="display:inline; height:300px;">      <img src="../images/hacktm18/ice.jpg" style="display:inline; height:300px;">
 
 
 # Our project
@@ -192,17 +193,18 @@ Before coding we spitted up our team into components and defined the interface a
 We agreed on the use of easy components (preferable high level tools over own implementation even if result is not so good)  
 
 The day ended at 2 o'clock in the morning.  
-<img src="{{ site.baseurl }}/images/hacktm18/sponsor.jpg" width="300"><img src="{{ site.baseurl }}/images/hacktm18/haufetable.jpg" width="400">  
+<img src="../images/hacktm18/sponsor.jpg" style="display:inline; max-width:50%; height: 300px;">
+<img src="../images/hacktm18/haufetable.jpg" style="display:inline; height: 300px;">  
 
 ## Day 2 (Saturday):
 **"Let's code!"**  
 Saturday was our main coding day.  
-<img src="{{ site.baseurl }}/images/hacktm18/workspace.jpg" width="400">  
+<img src="../images/hacktm18/workspace.jpg" style="height:300px">  
 We arrived at 9/10 o'Clock in the morning and stayed until 3 o'Clock in the next morning.  
 Summed up to 17h of Coding.  
 
 As it is important to stay hydrated we drank some coffee, smoothies and ate lots of burgers and pizza.  
-<img src="{{ site.baseurl }}/images/hacktm18/fruittable.jpg" width="400">  
+<img src="../images/hacktm18/fruittable.jpg" style="height:300px">  
 
 On Saturday all the optional Workshops and presentations took place.  
 For example "How to pitch your product" or "Where to get funds for a startup".  
@@ -222,14 +224,14 @@ Sunday was the **"Pitch day"**
 We arrived at 9 o'Clock and finished off our project in 2 hours.  
 For example I tweaked the machine learning parameter.  
 
-<img src="{{ site.baseurl }}/images/hacktm18/mlteaching.jpg" width="500">
-<img src="{{ site.baseurl }}/images/hacktm18/explainingthings.jpg" width="500">  
+<img src="../images/hacktm18/mlteaching.jpg" style="display:inline; max-width:49%; height: 300px;">
+<img src="../images/hacktm18/explainingthings.jpg" style="display:inline; max-width:49%; height: 300px;">  
 
 There were 40 judges around, who had an app to rate the projects with an algorithm, that "uses science".  
 
 From 12 o'Clock on the day has been "pitch, pitch, pitch"  
 We set up some images of ambrosia and a pile of trash at our place.  
-<img src="{{ site.baseurl }}/images/hacktm18/trash.jpg" width="300">  
+<img src="../images/hacktm18/trash.jpg" style="height:300px">  
 We also tried pictures of grass or wheat to proof, that our algorithm can detect what is not ambrosia.  
 
 We needed to sell our project like it is the best in the world (which it is), answer questions and show opportunities for the future.  
@@ -237,7 +239,7 @@ We needed to sell our project like it is the best in the world (which it is), an
 Some judges focused on the economical or society aspects, others on technical implementation and some on the future features, that can be implemented into the app.  
 
 The pitching process also involves radio and TV interviews and creating a presentation for the final pitch in front off all participants (if you reach the top 10).  
-<img src="{{ site.baseurl }}/images/hacktm18/tvinterview.jpg" width="400">  
+<img src="../images/hacktm18/tvinterview.jpg" style="height:300px">  
 
 This is also the chance to visit other projects and teams during their pitch.  
 
@@ -260,4 +262,5 @@ If you like to share yours and enough their passion about software, projects, te
 
 Although you might end up with less than 8h of sleep on the whole weekend.  
 
-<img src="{{ site.baseurl }}/images/hacktm18/teampicture.jpg" width="600"><img src="{{ site.baseurl }}/images/hacktm18/teamfromabove.jpg" width="400">
+<img src="../images/hacktm18/teampicture.jpg" style="display:inline; max-width:69%; height: 400px;">
+<img src="../images/hacktm18/teamfromabove.jpg" style="display:inline; max-width:29%; height: 400px;">
