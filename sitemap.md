@@ -11,6 +11,7 @@ permalink: /sitemap/
 * [R&eacute;sum&eacute; / CV](/resume/)
 * [Privacy Policy](/privacy/)
 * [Tags](/tags/)
+* [Referall links](/referall/)
 * [T-Shirts](/t-shirts/)
 * [Web Portfolio](/web-portfolio/)
 * [Sitemap (this page)](/sitemap/)
