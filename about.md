@@ -8,9 +8,9 @@ I'm a Systems Engineer in Columbus Ohio.  I'm involved in Amateur Radio.  I'm th
 
 ### More Information
 
-[Ohio Linuxfest Staff Page](http://ohiolinux.org/staff)
-[Github Customer Story](https://enterprise.github.com/case-studies/covermymeds)
-[LOPSA](https://lopsa.org/)
+* [Ohio Linuxfest Staff Page](http://ohiolinux.org/staff)
+* [Github Customer Story](https://enterprise.github.com/case-studies/covermymeds)
+* [LOPSA](https://lopsa.org/)
 
 
 ### Contact me
