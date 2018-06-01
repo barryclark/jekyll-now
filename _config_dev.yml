@@ -17,8 +17,8 @@ title: farshad jahanmanesh
 email: farshadjahanmanesh@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
    اینجا جاییه که من سعی میکنم از اون مورادی که یاد میگیرم نت برداری کنم. هم برای خودم که شاید نیاز باشه دوباره به اونها مراجعه کنم هم برای دیگران شاید بشون کمکی بکنه..
-baseurl: "/farshadjahanmanesh.github.io" # the subpath of your site, e.g. /blog
-url: "http://farshadjahanmanesh.github.io"
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://localhost:4000"
 twitter_username: fjahanmanesh
 github_username:  farshadjahanmanesh
 
