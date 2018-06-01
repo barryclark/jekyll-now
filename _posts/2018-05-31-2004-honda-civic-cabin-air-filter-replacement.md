@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 2004 Honda Civic Cabin Air Filter Replacement
-tags: [culture]
+tags: [automotive, diy]
 keywords: [2004 honda civic cabin air filter, honda civic cabin air filter, honda civic, civic, cabin air filter]
 image: /images/2004-honda-civic-cabin-air-filter/cabin-air-filter-in-package.jpg
 ---
