@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Referall Links
+title: Referral Links
 ---
 
-The following referall links are redirects (i.e. the link says it's this site, but it will take you to the provider's website):
+The following referral links are redirects (i.e. the link says it's this site, but it will take you to the provider's website):
 
 * [Chase Freedom Unlimited]({{ site.url }}/chase-freedom-unlimited/)
 * [Chase Freedom]({{ site.url }}/chase-freedom/)
