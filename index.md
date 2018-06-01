@@ -3,7 +3,7 @@ layout: default
 title: Πως αγοράζουμε, πουλάμε, ξοδεύουμε και δεχόμαστε Bitcoin στην Ελλάδα
 ---
 
-Ελάτε στην επόμενη συνάντησή μας στην [Αθήνα](https://www.meetup.com/BlockchainGreece-0/) ([30 Μαΐου 2018](https://www.meetup.com/BlockchainGreece-0/events/250905535/) και [2 Ιουλίου 2018](https://www.meetup.com/BlockchainGreece-0/events/250612314/)) ή στη [Θεσσαλονίκη](https://www.meetup.com/BlockchainGreece-1/) ([25 Μαΐου 2018](https://www.meetup.com/BlockchainGreece-1/events/250846367/)). Γραφτείτε στο [Slack](https://bitcoingreece.herokuapp.com) (online chat) μας. Διαβάστε το [BitcoinTalk](https://bitcointalk.org/gr) forum.
+Ελάτε στην επόμενη συνάντησή μας στην [Αθήνα](https://www.meetup.com/BlockchainGreece-0/) ([2 Ιουλίου 2018](https://www.meetup.com/BlockchainGreece-0/events/250612314/)) ή στη [Θεσσαλονίκη](https://www.meetup.com/BlockchainGreece-1/). Γραφτείτε στο [Slack](https://bitcoingreece.herokuapp.com) (online chat) μας. Διαβάστε το [BitcoinTalk](https://bitcointalk.org/gr) forum.
 
 - [Ποιες εταιρείες και επαγγελματίες δέχονται Bitcoin στην Ελλάδα;](#merchant-table)
 - [Ποιες γνωστές εταιρείες του εξωτερικού δέχονται Bitcoin;](#bluechips)
@@ -62,8 +62,8 @@ title: Πως αγοράζουμε, πουλάμε, ξοδεύουμε και δ
 
 - Στο Bitcoin ATM στο βιβλιοπωλείο Ορίζοντες, Θηβαίου Ιωάννου 20, Αχαρνές 13671, Αττική. Μόνο για Ευρώ -> Bitcoin. Χρεώνει 7% πάνω στην ισοτιμία του ανταλλακτηρίου [Kraken](https://www.kraken.com).
 - Στο Bitcoin ATM της [BCash](https://bcash.gr/) στην Δημητρακοπούλου 84, Αθήνα, κοντά στο Μετρό Συγγρού-Φιξ, για αγορά και πώληση Bitcoin. Επίσης στην Καλοκαιρινού 64, στο Ηράκλειο Κρήτης, μόνο για Ευρώ -> Bitcoin. Στο βενζινάδικο της Aegean στη Λεωφόρο Θηβών 197 & Κρήνης, Αθήνα 18233 για Ευρώ -> Bitcoin μέσω κουπονιού. Στο [Bitcoin ATM στην Αναγεννήσεως 7, Θεσσαλονίκη](http://thesscash.gr/) για Ευρώ <-> Bitcoin (τηλ. 6941412894). Στο [Bitcoin ATM στην Ιάσονος 20, Λάρισα](http://www.bitcoinspot.gr) για Ευρώ <-> Bitcoin. Δείτε το [βίντεο](https://youtu.be/9bT2XI2YQ-Y) που δείχνει πως αγοράζετε Bitcoin από το ATM. Χρεώνει 7% πάνω στην ισοτιμία του ανταλλακτηρίου [Kraken](https://www.kraken.com).
-- Στο Bitcoin ATM της [GroupBTC Greece](https://www.groupbtc.com/el) στην Κώστα Βάρναλη 2-4, Εμπορικό Κέντρο Ερμείον 3, Πλατεία Δούρου, Χαλάνδρι 15233. Είναι δίπλα στο Γρηγόρης Μικρογεύματα. Χρεώνει 7% πάνω στην ισοτιμία του [BitcoinAverage](https://bitcoinaverage.com) για Ευρώ -> Bitcoin και 4% κάτω για Bitcoin -> Ευρώ.
-- Σε οποιοδήποτε ανταλλακτήριο Bitcoin διεθνώς, μέσω τραπεζικού εμβάσματος. Αυτήν τη στιγμή (Μάρτιος 2018) επιτρέπεται έμβασμα στο εξωτερικό μέχρι €2000 το δίμηνο χωρίς δικαιολογητικά. Αυτή η μέθοδος έχει και τα χαμηλότερα κόστη, εφόσον το έμβασμα γίνει με τη μέθοδο SEPA (ενδεικτικό κόστος μεταφοράς: €1). Παραδείγματα ανταλλακτηρίων που δέχονται εμβάσματα με SEPA είναι [Kraken](https://www.kraken.com), [Coinbase](https://www.coinbase.com/) και [BitStamp](https://www.bitstamp.net).
+- Στο Bitcoin ATM της [GroupBTC Greece](https://www.groupbtc.com/el) στην Κώστα Βάρναλη 2-4, Εμπορικό Κέντρο Ερμείον 3, Πλατεία Δούρου, Χαλάνδρι 15233. Είναι δίπλα στο Γρηγόρης Μικρογεύματα. Χρεώνει 7% πάνω στην ισοτιμία του [BitcoinAverage](https://bitcoinaverage.com) για Ευρώ -> Bitcoin και 4% κάτω για Bitcoin -> Ευρώ. Επίσης στο [Bitcoin ATM](https://coinatmradar.com/bitcoin_atm/4791/bitcoin-atm-btc-facil-mykonos-vinos/) στο [wine bar restaurant Vinos στη Μύκονο](https://www.winebarvinos.com).
+- Σε οποιοδήποτε ανταλλακτήριο Bitcoin διεθνώς, μέσω τραπεζικού εμβάσματος. Αυτήν τη στιγμή επιτρέπεται έμβασμα στο εξωτερικό μέχρι €2000 το δίμηνο χωρίς δικαιολογητικά. Το ποσό στα αυξηθεί στα €4000 από την 1η Ιουλίου 2018. Αυτή η μέθοδος έχει και τα χαμηλότερα κόστη, εφόσον το έμβασμα γίνει με τη μέθοδο SEPA (ενδεικτικό κόστος μεταφοράς: €1). Παραδείγματα ανταλλακτηρίων που δέχονται εμβάσματα με SEPA είναι [Kraken](https://www.kraken.com), [Coinbase](https://www.coinbase.com/) και [BitStamp](https://www.bitstamp.net).
 - Σε ανταλλακτήρια που δέχονται πιστωτικές ή χρεωστικές κάρτες. <strike>Ένα ανταλλακτήριο που δέχεται Ελληνικές κάρτες είναι το Coinbase και χρεώνει 3,99%. Το Coinbase κάνει δεκτές μόνο κάρτες στις οποίες έχει ενεργοποιηθεί ο μηχανισμός 3D Secure για ασφαλείς συναλλαγές στο Internet. Για τις κάρτες Visa αυτός ο μηχανισμός είναι γνωστός ως Verified by Visa και για τις κάρτες MasterCard είναι γνωστός ως MasterCard SecureCode. Κάρτες που πρόσφατα (2017) έγιναν δεκτές στο Coinbase είναι χρεωστικές κάρτες της Alpha Bank και της Eurobank. Η Τράπεζα Πειραιώς δεν υποστηρίζει πλέον 3D Secure στις κάρτες της.</strike>
 - <strike>Στο ανταλλακτήριο www.btcgreece.com που δέχεται εμβάσματα σε Ελληνικό τραπεζικό λογαριασμό.</strike>
 - Από κάποιον ιδιώτη στην Ελλάδα που θα τον εντοπίσετε στο [Localbitcoins](https://localbitcoins.com/) ή στο [BitcoinTalk forum](https://bitcointalk.org/index.php?board=136.0). Με αυτούς μπορείτε να ανταλλάξετε Ευρώ με όποιον τρόπο θέλετε π.χ. χέρι-με-χέρι, Paypal, Western Union, Πειραιώς Λεφτά Στο Λεπτό, τραπεζική μεταφορά κλπ.
@@ -237,7 +237,7 @@ title: Πως αγοράζουμε, πουλάμε, ξοδεύουμε και δ
 - Ο Μη-Κερδοσκοπικός Οργανισμός [Hellenic Blockchain Hub](http://blockchain.org.gr)
 - Ο Μη-Κερδοσκοπικός Οργανισμός [Cyprus Blockchain Technologies](http://cybt.eu)
 
-Τελευταία ενημέρωση: 2018-05-18
+Τελευταία ενημέρωση: 2018-06-01
 
 <!-- <div class="posts">
   {% for post in site.posts %}
