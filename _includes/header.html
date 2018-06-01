@@ -1,19 +1,18 @@
+<aside>
+	<div class="container">
+		<nav>
+			<ul>
+				{% for page in site.pages %} {% if page.title %}
+				<li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+				{% endif %} {% endfor %}
+				<li><a href="{{ "/blog" | prepend: site.baseurl }}">Blog</a></li>
+			</ul>
+			</li>
+			</ul>
+		</nav>
+	</div>
+</aside>
 
-<div class="wrapper">
-  <center> <a href="/index.html"><div class="site-title">   {{site.title}} </div></a></center>
-</div>
-<div class="wrapper site-description">
-<center>  {{site.description}} </center>
-</div>
-<div class="wrapper">
-  <div class="trigger site-navigation">
-    <a class="page-link" href="{{site.url}}{{site.baseurl}}">HOME</a>
-
-    {% for sitePage in site.pages %}
-    {% if sitePage.title %}
-
-    <span class="exclamationMark">/</span><a class="page-link" href="{{sitePage.url | prepend: site.baseurl }}">{{sitePage.title}}</a>
-    {% endif %}
-    {% endfor %}
-  </div>
-</div>
+<header>
+	<h1><a href="{{ site.baseurl }}">{{ site.title }}</a></h1>
+</header>
