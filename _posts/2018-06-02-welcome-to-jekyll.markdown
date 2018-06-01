@@ -1,25 +1,30 @@
+سلام دنیا
+===
+
+این یک نوشتار آزمایشی برای نمایش قابلیتهای [مارک داون](http://daringfireball.net/projects/markdown/) است.
+
+یک لیست
 ---
-layout: post
-title:  "Welcome to Jekyll!"
-date:   2018-06-02 00:35:36 +0430
-categories: jekyll update
+
+ویژگی های نرم افزار آزاد
+
+* آزادی اجرای برنامه برای هر کاری (آزادی صفرم)
+* *آزادی مطالعه چگونگی کار برنامه و تغییر آن (پیش نیاز: متن برنامه) (آزادی یکم)*
+* **آزادی تکثیر و کپی برنامه (آزادی دوم)**
+* ***آزادی تقویت و بهتر کردن برنامه و توزیع آن برای همگان (پیش نیاز: متن برنامه) (آزادی سوم)***
+
+
+قابلیت افزودن تکه کدها
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+```javascript
+alert("Hello World")
+```
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+و نوشته های تورفته
+---
+>آزادی نرم‌افزارهای آزاد تا جایی هست که حتی می‌توان بدون پرداخت هزینه‌ای برای مجوز، کپی‌هایی از یک نرم‌افزار آزاد را، یا بدون تغییرات، رایگان یا در ازای دریافت وجه، برای هرکس و هرجایی آن را توزیع کرد.
 
-Jekyll also offers powerful support for code snippets:
-
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
-
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
-
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+و اضافه کردن لینک ها
+---
+- [بنیاد نرم افزار آزاد](http://www.fsf.org/)
+- [بنیاد گنو](https://www.gnu.org)
