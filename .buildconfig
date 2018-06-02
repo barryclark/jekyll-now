@@ -1,0 +1,10 @@
+[default]
+name=Default
+runtime=host
+config-opts=
+run-opts=
+prefix=/home/ptrottier/.cache/gnome-builder/install/_includes/host
+app-id=
+postbuild=
+prebuild=
+default=true
