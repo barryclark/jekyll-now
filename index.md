@@ -18,6 +18,7 @@ title: Πως αγοράζουμε, πουλάμε, ξοδεύουμε και δ
 - [Τι έξοδα έχει μια πληρωμή σε Bitcoin;](#fees)
 - [Πως μπορώ να στείλω μια πληρωμή Bitcoin με χαμηλά έξοδα & χαμηλή προτεραιότητα ή με υψηλά έξοδα & υψηλή προτεραιότητα;](#customfees)
 - [Μπορεί ο πληρωτής να ακυρώσει την πληρωμή που έκανε με Bitcoin;](#reversal)
+- [Μπορώ να κάνω μια αγοραπωλησία για Bitcoin με κάποιον που δεν γνωρίζω ή δεν εμπιστεύομαι;](#mediationplatforms)
 - [Ποια είναι η τρέχουσα ισοτιμία του Bitcoin σε Ευρώ;](#exchangerate)
 - [Διάβασα ότι στην Ευρωπαϊκή Ένωση οι συναλλαγές με Bitcoin εξαιρούνται από το ΦΠΑ, είναι αλήθεια;](#VAT)
 - [Πως μπορώ να δω μια πληρωμή με Bitcoin από κοντά;](#demo)
@@ -167,6 +168,10 @@ title: Πως αγοράζουμε, πουλάμε, ξοδεύουμε και δ
 
 Αυτό είναι δυνατόν με πληρωμές με πιστωτικές/χρεωστικές κάρτες και Paypal, αλλά είναι αδύνατον με Bitcoin. Μόνο ο παραλήπτης της πληρωμής μπορεί να επιστρέψει τα Bitcoin, εαν το επιθυμεί.
 
+### <a name="mediationplatforms"></a> Μπορώ να κάνω μια αγοραπωλησία για Bitcoin με κάποιον που δεν γνωρίζω ή δεν εμπιστεύομαι;
+
+Με το [OpenBazaar](https://www.openbazaar.org) και το [Bitrated](https://www.bitrated.com) μπορείτε να κάνετε οποιαδήποτε συναλλαγή χρησιμοποιώντας έναν διαιτητή (mediator ή trust agent) ο οποίος σε περίπτωση διαφωνίας αγοραστή και πωλητή θα στείλει τα Bitcoin στον έναν ή στον άλλον αφού ζητήσει να δει αποδεικτικά στοιχεία, έναντι αμοιβής. Δεν μπορεί να κρατήσει τα Bitcoin για τον εαυτό του ή να τα στείλει σε κάποιον τρίτο. Το OpenBazaar είναι μια αγορά προϊόντων και υπηρεσιών (στην οποία μπορείτε να εκθέτετε μόνιμα) και απαιτεί τα μέρη να τρέξουν ένα πρόγραμμα στον υπολογιστή τους ενώ το Bitrated είναι μια ιστοσελίδα χωρίς αγορά. Μπορείτε και εσείς να προσφέρετε υπηρεσίες διαιτησίας έναντι αμοιβής.
+
 ### <a name="exchangerate"></a> Ποια είναι η τρέχουσα ισοτιμία του Bitcoin σε Ευρώ;
 
 Μπορείτε να τη δείτε στη σελίδα της [Google](https://www.google.com/finance?q=BTCEUR).
@@ -214,7 +219,6 @@ title: Πως αγοράζουμε, πουλάμε, ξοδεύουμε και δ
 - Μερικές γνωστές απάτες που έχουν εμφανιστεί στην Ελλάδα: [OneCoin/OneLife](https://en.wikipedia.org/wiki/OneCoin), S-coin/Coinspace. Μπορείτε να διαβάσετε περισσότερα στα Ελληνικά στο [Scamcoin Detector](http://scamdetectorgr.blogspot.gr/).
 - Μερικά άρθρα που περιγράφουν απάτες με κρυπτονομίσματα: [https://blog.xapo.com/beware-of-extraordinary-claims/](https://blog.xapo.com/beware-of-extraordinary-claims/), [http://www.badbitcoin.org/tips/](http://www.badbitcoin.org/tips/), [https://www.weusecoins.com/bitcoin-scams-how-stay-safe/](https://www.weusecoins.com/bitcoin-scams-how-stay-safe/), [https://www.coingecko.com/buzz/complete-guide-to-bitcoin-scams](https://www.coingecko.com/buzz/complete-guide-to-bitcoin-scams). Βίντεο που περιγράφει πως δουλεύουν τα πυραμιδικά σχήματα Πόνζι: [https://www.youtube.com/watch?v=VXRkfqw67GE](https://www.youtube.com/watch?v=VXRkfqw67GE).
 
-
 ### <a name="electricitycost"></a> Έχω οικιακό τιμολόγιο €0,10/KWh της ΔΕΗ, μπορώ να κάνω mining κρυπτονομισμάτων;
 
 [Το οικιακό τιμολόγιο της ΔΕΗ](https://bitcoinx.gr/ποιό-είναι-το-κόστος-της-κιλοβατώρας/) για κατανάλωση 2000-3000KWh ανά τετράμηνο, μετά όλους τους φόρους και τις προσαυξήσεις, είναι €0,2189375/KWh.
@@ -237,7 +241,7 @@ title: Πως αγοράζουμε, πουλάμε, ξοδεύουμε και δ
 - Ο Μη-Κερδοσκοπικός Οργανισμός [Hellenic Blockchain Hub](http://blockchain.org.gr)
 - Ο Μη-Κερδοσκοπικός Οργανισμός [Cyprus Blockchain Technologies](http://cybt.eu)
 
-Τελευταία ενημέρωση: 2018-06-01
+Τελευταία ενημέρωση: 2018-06-02
 
 <!-- <div class="posts">
   {% for post in site.posts %}
