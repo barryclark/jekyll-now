@@ -17,7 +17,7 @@ Oh, and I read magazines, too. I tend to stick with magazines I can get for free
 
 Onto what I actually finished reading in March:
 
-## The Richest Man in Babylon
+## [The Richest Man in Babylon](https://www.amazon.com/Richest-Man-Babylon-George-Clason/dp/1939438330/?tag=hendrixjoseph-20)
 
 This book is considered a classic. Originally a series of pamphlets, it was published as a book in 1926.
 
