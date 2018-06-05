@@ -1,9 +1,10 @@
 ---
 layout: post
-title: You're up and running!
+title: Jekyll is awesome.
 ---
 
-Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
+Hey guys, from now on I'll be sharing my findings here regularly. Follow me for findings in footbally analytics, data science, and machine learning. 
+That's pretty much it folks for now. My first blog post on here. Soon come more.
 
 ![_config.yml]({{ site.baseurl }}/images/config.png)
 
