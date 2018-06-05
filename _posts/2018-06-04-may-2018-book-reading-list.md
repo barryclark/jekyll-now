@@ -29,7 +29,7 @@ Reading is probably good for him beyond a literacy standpoint. I tend to be a qu
 I read him two new books this month:
 
 * [I Love You, Dad (Daniel Tiger's Neighborhood)](https://www.amazon.com/Love-You-Daniel-Tigers-Neighborhood/dp/1481457365/?tag=hendrixjoseph-20)
-[Daddy Kisses by Anne Gutman](https://www.amazon.com/Daddy-Kisses-Anne-Gutman/dp/0811839141/?tag=hendrixjoseph-20)
+* [Daddy Kisses by Anne Gutman](https://www.amazon.com/Daddy-Kisses-Anne-Gutman/dp/0811839141/?tag=hendrixjoseph-20)
 
 {% include amazon/native-ad.html title="Children's Books" asin="1481457365,0811839141" %}
 
