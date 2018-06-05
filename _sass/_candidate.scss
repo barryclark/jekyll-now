@@ -417,8 +417,8 @@
         }
 
         img {
-            width: 64px;
-            height: 64px;
+            width: 128px;
+            height: 128px;
         }
 
         p {
@@ -426,6 +426,7 @@
             color: $grey800;
             text-align: center;
             font-weight: 300;
+            font-size: 24px;
         }
     }
 }
