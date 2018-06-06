@@ -4,12 +4,12 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Second year Computer Science student.
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+This blog is part of the ENVR 2000 course requirements. Made for discussions about human-nature interactions and other topics pertinent to the environment.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[dsouzar4@myumanitoba.ca](mailto:dsouzar4@myumanitoba.ca)
