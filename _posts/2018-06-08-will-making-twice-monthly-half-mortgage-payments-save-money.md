@@ -11,7 +11,7 @@ Does this method work? Is multiple partial loan payments any more efficient than
 
 The short answer is yes, but not by much.
 
-**This is all assuming there's no penalty for doing so, the interest is calculated daily, and the loan holder will properly apply the payment.**
+***This is all assuming there's no penalty for doing so, the interest is calculated daily, and the loan holder will properly apply the payment.***
 
 ## The Math Formula Side
 
@@ -19,11 +19,13 @@ First, let's look at the number of payments formula:
 
     =-LN(1-[i/n]*s/p)/LN(1+i/n)
 
-Where *i* is the interest rate (annually), *n* is the number of payments a year, *s* is the starting balance, and *p* is the payment per period. LN is the natural logarithm, but any logarithm could be used so long as the same logarithm is used for both.
+Where ***i*** is the interest rate (annually), ***n*** is the number of payments a year, ***s*** is the starting balance, and ***p*** is the payment per period. ***LN*** is the natural logarithm, but any logarithm could be used so long as the same logarithm is used for both.
 
 Since we're figuring out how much we'll save by making more (smaller) payments, and we typically know the monthly payment, we can figure out the payments with the following equation:
 
     p = m * 12 / n
+    
+Where ***m*** is the monthly payment (***n*** and ***p*** are the same as the previous equation).
 
 If you're using Excel, you could just use the NPER function:
 
