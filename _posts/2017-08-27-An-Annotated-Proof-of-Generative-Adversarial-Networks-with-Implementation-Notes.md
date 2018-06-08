@@ -87,7 +87,7 @@ f^\prime(y) = 0 \Rightarrow \frac{a}{y} - \frac{b}{1-y} = 0 \Rightarrow y = \fra
 \end{equation}
 if $$a+b \neq 0$$. If you continue and do the second derivative test:
 \begin{equation}
-f^{\prime\prime}\big ( \frac{a}{a+b} \big) = - \frac{a}{(\frac{a}{a+b})^2} - \frac{b}{1-(\frac{a}{a+b})^2} < 0
+f^{\prime\prime}\big ( \frac{a}{a+b} \big) = - \frac{a}{(\frac{a}{a+b})^2} - \frac{b}{(1-\frac{a}{a+b})^2} < 0
 \end{equation}
 when $$a,b \in (0,1)$$, and so $$\frac{a}{a+b}$$ is a maximum. 
 
