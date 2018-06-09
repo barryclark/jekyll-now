@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Web Storage API</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <div class="container">
+
+             <div class="app"> 
+
+                <h1>Web Storage API 🤖</h1>
+                <p class="intro" id="js-intro">Use the controls below to change the look of this page.<br />
+                    The changes will automatically be saved for your next visit. </p>
+                 
+                <form action="" class="picker js-picker">
+                    <div class="picker__input-row">
+                        <label for="title">Document title</label>
+                        <input type="text" id="js-title" value="Web Storage">
+                    </div>
+                    <div class="picker__input-row">
+                            <label for="color">Background colour</label>
+                            <input type="color" value="#175899" id="js-color">
+                            <span id="js-color-tip" class="color-tip">#</span>
+                        </div>
+                    <div class="picker__input-row">
+                        <label for="color">Font style</label>
+                        <select name="" id="js-font">
+                            <option value="'Arial', sans-serif">Arial</option>
+                            <option value="'Ubuntu Mono', monospace">Monospace</option>
+                            <option value="'Garamond', 'Georgia', serif">Serif</option>
+                        </select>
+                    </div>
+                    <div class="picker__input-row">
+                        <p id="js-storage-output"></p>
+                    </div>
+                </form>
+             </div> 
+
+        </div>
+        <script src="main.js" async defer></script>
+    </body>
+</html>

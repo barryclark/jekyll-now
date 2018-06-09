@@ -32,7 +32,7 @@ var Game = (function(){
         },
         dice: document.querySelector('.dice')
     }
-
+    app.scores = [0,0];
     app.activePlayer = 0;
     app.roundScore = 0;
 
@@ -55,17 +55,24 @@ var Game = (function(){
 
     function _attachListeners(){ 
         // Attach listeners 
-         app.buttons.newGame.addEventListener('click', _handleClick)
+        // app.buttons.newGame.addEventListener('click', _handleClick)
          app.buttons.rollDice.addEventListener('click', _rollDice)
-         app.buttons.hold.addEventListener('click', _handleClick)
+         app.buttons.hold.addEventListener('click', _hold)
     }
 
-    function _handleClick (){
-        console.log('hello')
+    function _hold(){
+        let roundscore = app.roundScore;
+        
+        // apply current score to app state
+        app.scores[app.activePlayer] += app.roundScore;
+        document.getElementById(`score-${app.activePlayer}`).textContent = app.scores[app.activePlayer];
+         // Set next player
+         app.activePlayer = (app.activePlayer == 0) ? 1 : 0;
     }
 
     function _applyScore(score){
-        console.log(app.roundScore); 
+        console.log(app.roundScore);
+
     }
 
     function _rollDice(){
