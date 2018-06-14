@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Toastmaster's Icebreaker Speech: The Story of Joe"
-tags: [culture]
+tags: [toastmaster's]
 keywords: [toastmaster, toastmaster's, toastmaster's club, icebreaker, icebreaker speech, toastmaster's icebreaker speech]
 image: /images/toastmasters/joe-icebreaker-share.png
 ---
