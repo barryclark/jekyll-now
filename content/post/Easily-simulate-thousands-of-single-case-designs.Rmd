@@ -2,6 +2,7 @@
 title: Easily simulate thousands of single-case designs
 author: James
 date: '2018-06-13'
+draft: true
 slug: Easily-simulate-thousands-of-single-case-designs
 categories: []
 tags:
