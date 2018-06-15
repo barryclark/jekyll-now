@@ -1,0 +1,69 @@
+---
+title: Easily simulate thousands of single-case designs
+author: James
+date: '2018-06-13'
+slug: Easily-simulate-thousands-of-single-case-designs
+categories: []
+tags:
+  - behavioral observation
+  - simulation
+  - single-case research
+header:
+  caption: ''
+  image: ''
+---
+
+Last week I was teaching at the [Summer Research Training Institute on Single-Case Intervention Design and Analysis workshop](https://scdinstitute2018.com/), sponsored by the National Center for Special Education Research (part of the Institute of Education Sciences). 
+While I was there, I shared [a web-app for simulating data from a single-case design](https://jepusto.shinyapps.io/ARPsimulator/) (to be clear: totally fake data!). 
+This is a tool that I put together a couple of years ago as part of my [ARPobservation R package](/software/arpobservation/), but haven't ever really publicized or done anything formal with.
+It provides an easy way to simulate "mock" data from a single-case design (treatment reversal designs, multiple baseline designs, or alternating treatment designs) where the dependent variable is measured using systematic direct observation of behavior.
+The simulated data can be viewed in the form of a graph or downloaded as a csv file.
+And it's quite fast---simulating 1000's of mock single-case designs takes only a few seconds.
+The tool also provides a visualization of the (hypothetical) distribution of effect size estimates that you could anticipate observing in a single-case design, given a set of assumptions about how the dependent variable is measured and how it changes in response to treatment. 
+
+# Demo
+
+Here's an example of the sort of data that the tool generates. 
+Say that you're interested in evaluating the effect of a Social Stories intervention on the behavior of a child with autism spectrum disorder, and that you plan to use a treatment reversal design.
+Your primary dependent variable is inappropriate play behavior, measured using frequency counts over ten minute observation sessions.  
+The initial baseline and treatment phases will be 7 sessions long.
+At baseline, the child engages in inappropriate play at a rate of about 0.8 per minute. 
+You anticipate that the intervention could reduce inappropriate play by as much as 90% from baseline. 
+Enter all of these details and assumptions into the simulator, and it will generate a graph like this:
+
+![](/img/Crozier-Tincani-simulated-data-A.png)
+
+Hit the "Simulate!" button again and you might get something like this:
+
+![](/img/Crozier-Tincani-simulated-data-B.png)
+
+Or one of these:
+
+![](/img/Crozier-Tincani-simulated-data-C.png)
+![](/img/Crozier-Tincani-simulated-data-A.png)
+![](/img/Crozier-Tincani-simulated-data-A.png)
+
+![](/img/Crozier-Tincani-simulated-data-D.png)
+
+![](/img/Crozier-Tincani-simulated-data-E.png)
+
+All of the above graphs were generated from the same hypothetical model, so the variation in the  clarity and strength of the functional relation is due to random error alone. 
+The simulator can also produce graphs that show multiple realizations of the data-generating process. Here's one with five replications:
+
+![](/img/Crozier-Tincani-simulated-data-5.png)
+
+And here's the same figure, but with trend lines added:
+
+![](/img/Crozier-Tincani-simulated-data-trend.png)
+
+The trend lines represent the overall average level of the dependent variable during each session, across infinitely replications of the study.
+The variability around the trend line provides a sense of the extent of random error in the measurements of the dependent variable. 
+
+I think it's an interesting exercise to 
+
+# Use cases
+
+
+# Future directions
+
+
