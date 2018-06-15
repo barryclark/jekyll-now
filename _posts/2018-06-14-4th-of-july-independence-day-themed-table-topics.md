@@ -35,4 +35,4 @@ I came up with ten different 4th of July Independence Day table topics but ended
 10. If you could change the colors of the United State flag, what colors would you choose, and why?
 
 ![Fourth of July fireworks behind the Washington Monument, 1986](/images/Fourth_of_July_fireworks_behind_the_Washington_Monument,_1986.jpg)
-*image source: https://en.wikipedia.org/wiki/File:Fourth_of_July_fireworks_behind_the_Washington_Monument,_1986.jpg*
+*image source: [https://en.wikipedia.org/wiki/File:Fourth_of_July_fireworks_behind_the_Washington_Monument,_1986.jpg](https://en.wikipedia.org/wiki/File:Fourth_of_July_fireworks_behind_the_Washington_Monument,_1986.jpg)*
