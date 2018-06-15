@@ -14,3 +14,4 @@ The following referral links are redirects (i.e. the link says it's this site, b
 * [Square Cash]({{ site.url }}/square-cash/)
 * [Teepublic]({{ site.url }}/teepublic/)
 * [Robinhood]({{ site.url }}/robinhood/)
+* [Verizon Wireless]({{ site.url}}/verizon-wireless/)
