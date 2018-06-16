@@ -58,7 +58,7 @@ Mapping Stop & Frisk Incidents
 Thanks to the hard work of a friend and collaborator, Mahkah Wu, we can view all of the incidents over the years collected by race/ethnicity in the district.
 
 <figure class="video_container">
-<iframe src="https://rawgit.com/mahkah/dc_stop_and_frisk/master/index.html" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+<iframe width="800" height="600" src="https://rawgit.com/mahkah/dc_stop_and_frisk/master/index.html" frameborder="0" allowfullscreen="true"></iframe>
 </figure>
 
 Stop & Frisk: Neighborhoods
