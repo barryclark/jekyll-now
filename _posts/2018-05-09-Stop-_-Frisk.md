@@ -105,7 +105,7 @@ Throughout this section it's important to keep the words of [Hadley Wickham](htt
 
 The chart above illustrates a pretty linear relationship between the previous year's crime level and stop & frisk in each neighborhood of DC. Of course, there are dozens and dozens of other confounding variables that are not being considered in this simplistic approach, but if you were only to use this one variable to predict stop and frisk, you would end up with a model like this:
 
-![](https://raw.githubusercontent.com/GWarrenn/gwarrenn.github.io/drafts/images/stop_and_frisk/08_crime_frisks.png)
+![](https://raw.githubusercontent.com/GWarrenn/gwarrenn.github.io/drafts/images/stop_and_frisk/crime_model_residuals.png)
 
 The "crime-only" model that we've created shows a pretty strong relationship between the previous year crime rate and current year stop and frisk with an R-squared of about .80. More specifically, for one unit of increase in a neighborhood's previous year crime rate, the number of stop and frisks in the current year will increase by a factor of 1.46.
 
