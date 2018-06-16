@@ -104,22 +104,8 @@ Throughout this section it's important to keep the words of [Hadley Wickham](htt
 > "The goal of a model is not to uncover truth, but to discover a simple approximation that is still useful."
 
 The chart above illustrates a pretty linear relationship between the previous year's crime level and stop & frisk in each neighborhood of DC. Of course, there are dozens and dozens of other confounding variables that are not being considered in this simplistic approach, but if you were only to use this one variable to predict stop and frisk, you would end up with a model like this:
-	<table align="center" style="text-align:center"><tr><td colspan="2" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"></td><td><em>Dependent variable:</em></td></tr>
-		<tr><td></td><td colspan="1" style="border-bottom: 1px solid black"></td></tr>
-		<tr><td style="text-align:left"></td><td>Average Stop & Frisk</td></tr>
-		<tr><td colspan="2" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">Average previous year crime</td><td>1.461<sup>***</sup></td></tr>
-		<tr><td style="text-align:left"></td><td>(0.117)</td></tr>
-		<tr><td style="text-align:left"></td><td></td></tr>
-		<tr><td style="text-align:left">Constant</td><td>4.170</td></tr>
-		<tr><td style="text-align:left"></td><td>(11.255)</td></tr>
-		<tr><td style="text-align:left"></td><td></td></tr>
-		<tr><td colspan="2" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">Observations</td><td>39</td></tr>
-		<tr><td style="text-align:left">R<sup>2</sup></td><td>0.808</td></tr>
-		<tr><td style="text-align:left">Adjusted R<sup>2</sup></td><td>0.803</td></tr>
-		<tr><td style="text-align:left">Residual Std. Error</td><td>41.543 (df = 37)</td></tr>
-		<tr><td style="text-align:left">F Statistic</td><td>156.007<sup>***</sup> (df = 1; 37)</td></tr>
-		<tr><td colspan="2" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"><em>Note:</em></td><td style="text-align:right"><sup>*</sup>p<0.1; <sup>**</sup>p<0.05; <sup>***</sup>p<0.01</td></tr>
-	</table>
+
+![](https://raw.githubusercontent.com/GWarrenn/gwarrenn.github.io/drafts/images/stop_and_frisk/08_crime_frisks.png)
 
 The "crime-only" model that we've created shows a pretty strong relationship between the previous year crime rate and current year stop and frisk with an R-squared of about .80. More specifically, for one unit of increase in a neighborhood's previous year crime rate, the number of stop and frisks in the current year will increase by a factor of 1.46.
 
@@ -129,7 +115,7 @@ To test specifically how well the model performed we'll look more closely at the
 
 The chart below plots the neighborhood-level crime-only model residuals along the y-axis by the neighborhood proportion of residents of color (again from the 2010 Census) along the x-axis. 
 
-![](https://raw.githubusercontent.com/GWarrenn/gwarrenn.github.io/drafts/images/stop_and_frisk/09_crime_model_residuals.png)
+![](https://raw.githubusercontent.com/GWarrenn/gwarrenn.github.io/drafts/images/stop_and_frisk/models.htm)
 
 When viewed through a racial context, this "crime-only" approach to modeling stop and frisk appears to have its limits; it generally over predicts the number of stop and frisk incidents in whiter neighborhoods and under predicts the amount of stop and frisk in neighborhoods with higher concentrations of people of color. If police were only to use crime as a decision making data point then we would expect to see equal distribution of residuals across neighborhoods with varying levels of residents of color. This indicates that there is something else driving the relationship between stop and frisk and crime (and it might have something to do with race).
 
@@ -159,33 +145,7 @@ Similar to to the population comparison, Cleveland Park/Woodley Park, Downtown C
 
 Building off the "crime-only" model, now that we have access to demographic crime data, we can start to look at the relation between stop and frisk on an individual level, rather than a neighborhood level as we did previously. Except rather than using a linear regression to model the data, we'll use a Poisson regression, which is specifically geared toward modeling count data. This work is largely built off the research conducted by [Gelman, Fagan and Kiss]("http://www.stat.columbia.edu/~gelman/research/published/frisk9.pdf") examining stop and frisk in New York City in the late 1990's. The specific Poisson model we'll be using will estimate stop and frisk for each neighborhood while controlling for the race of the subject, the racial composition of the neighborhood in which they were stopped, and will use the crime rate for that racial group as an offset (Gelman et al. used the previous year, however we're only have access to the same year's crime data by race).
 
-<table align="center" style="text-align:center"><tr><td colspan="2" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"></td><td><em>Dependent variable:</em></td></tr>
-	<tr><td></td><td colspan="1" style="border-bottom: 1px solid black"></td></tr>
-	<tr><td style="text-align:left"></td><td>Total Stop Frisk</td></tr>
-	<tr><td colspan="2" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">Subject Race: Black</td><td>1.074<sup>***</sup></td></tr>
-	<tr><td style="text-align:left"></td><td>(0.187)</td></tr>
-	<tr><td style="text-align:left"></td><td></td></tr>
-	<tr><td style="text-align:left">Subject Race: Hispanic/Latino</td><td>0.856<sup>***</sup></td></tr>
-	<tr><td style="text-align:left"></td><td>(0.249)</td></tr>
-	<tr><td style="text-align:left"></td><td></td></tr>
-	<tr><td style="text-align:left">Neighborhood Percent Black: 10% - 40%</td><td>-0.519<sup>***</sup></td></tr>
-	<tr><td style="text-align:left"></td><td>(0.162)</td></tr>
-	<tr><td style="text-align:left"></td><td></td></tr>
-	<tr><td style="text-align:left">Neighborhood Percent Black: 40% - 60%</td><td>-0.312<sup>*</sup></td></tr>
-	<tr><td style="text-align:left"></td><td>(0.182)</td></tr>
-	<tr><td style="text-align:left"></td><td></td></tr>
-	<tr><td style="text-align:left">Neighborhood Percent Black: 60% - 80%</td><td>-0.775<sup>***</sup></td></tr>
-	<tr><td style="text-align:left"></td><td>(0.178)</td></tr>
-	<tr><td style="text-align:left"></td><td></td></tr>
-	<tr><td style="text-align:left">Neighborhood Percent Black: 80% - 100%</td><td>-0.994<sup>***</sup></td></tr>
-	<tr><td style="text-align:left"></td><td>(0.159)</td></tr>
-	<tr><td style="text-align:left"></td><td></td></tr>
-	<tr><td style="text-align:left">Constant</td><td>-1.716<sup>***</sup></td></tr>
-	<tr><td style="text-align:left"></td><td>(0.197)</td></tr>
-	<tr><td style="text-align:left"></td><td></td></tr>
-	<tr><td colspan="2" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">Observations</td><td>98</td></tr>
-	<tr><td colspan="2" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"><em>Note:</em></td><td style="text-align:right"><sup>*</sup>p<0.1; <sup>**</sup>p<0.05; <sup>***</sup>p<0.01</td></tr>
-</table>
+![](https://raw.githubusercontent.com/GWarrenn/gwarrenn.github.io/drafts/images/stop_and_frisk/poisson.htm)
 
 There are plenty of great (better*) resources on the Internet/public domain that can explain the details of Poisson regressions, however, if you're like me and just want to skim the relevant cross-validated/stack overflow posts to know the gist of how the model should be interpreted, then here's a quick explanation of the results above. The parameters displayed represent the multiplicative increase in stop and frisk for all neighborhood race compositions compared to the base factor. In the case of race, the base is white and in the case of neighborhood percent black, it's 0% - 10% black.
 
