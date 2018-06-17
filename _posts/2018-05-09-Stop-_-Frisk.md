@@ -39,6 +39,7 @@ While we're talking about race and stop and frisk, it's important to note that, 
 
 Along with the stop and frisk data, the MPD also reported on "field contact reports" from 2012 to 2016. The main difference between a field contact and stop and frisk, as the documentation reports, is that field contact incidents are non-forcible stops or just any general contact with between MPD and a citizen. For the majority of the analysis we will consider the two to be one in the same as we are interested in any and all contact between police and the public. However, we'll spend a bit of time looking at the differences now.
 
+![](https://raw.githubusercontent.com/GWarrenn/gwarrenn.github.io/drafts/images/stop_and_frisk/gender_race_contact.png)
 
 Across all racial groups and stop types, subjects identified by MPD as male comprise a majority of incidents. There are some notable gender differences in stops  
 
