@@ -1,15 +1,13 @@
 ---
 layout: page
-title: About
+title: О себе
 permalink: /about/
 ---
 
-Some information about you!
+Меня зовут Рузэль Камилевич Давлетяров.
 
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
+Закончил математический факульте, служил в Российской Армиии, бесит битрикс, работаю удаленно.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[ovearub@gmail.com](mailto:ovearub@gmail.com)
