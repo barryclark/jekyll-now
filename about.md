@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-I'm Product and DevOps manager at StorageOS and previously software engineer at Google. I code, write and speak about storage, containers and cloud, and manage a team of DevOps engineers. I’m active in the developer community and regularly speak at meetups and conferences related to Docker containers, Kubernetes, microservices, cloud native etc.
+I'm Product and DevOps manager at StorageOS and previously software engineer at Google. I code, write and speak about storage, containers and cloud, and manage a team of DevOps engineers. I’m active in the developer community and regularly speak at meetups and conferences related to Docker containers, Kubernetes, microservices and cloud native.
 
 I founded the [Cloud Native London meetup](https://www.meetup.com/Cloud-Native-London), an official Cloud Native Computing Foundation (CNCF) meetup group. It's dedicated to building a strong, open, diverse developer community around the Cloud Native platform and technologies in London.
 
