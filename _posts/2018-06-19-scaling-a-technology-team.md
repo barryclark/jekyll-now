@@ -7,6 +7,8 @@ comments: true
 
 We’ve been helping customers buy their next car on finance for a long time, 2006 is the official start date, but technically much longer than that.  The initial business idea was generated out of another business, Netcars.com, but that’s a whole other blog post.
 
+![Logo Iterations]({{ site.baseurl }}/images/logo-iterations.jpg)
+
 Getting approved for finance is relatively complicated.  Getting approved for an asset backed finance agreement is really complicated.  In 2012 the decision was made by Reg and Louis Rix, the founders of CarFinance247, to take advantage of what they saw as an opportunity - we would scale the small business we had created, we were on to something… a better way.
 
 To scale the business, it was obvious we needed to do one thing really well.  We needed to remove complexity.  Not only from our customers (our advisors were already doing an amazing job at shielding some of that complexity from our customer), but also our advisors.  The journey was clunky to say the least, particularly from our advisors point of view.  Many 3rd party systems that included lenders, credit bureaus, vehicle history checking, vehicle valuations, identity verification providers, the list was exhaustive, and still is.
