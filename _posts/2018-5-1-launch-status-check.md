@@ -1,11 +1,10 @@
 ---
 layout: post
 title: New blog launching soon
-author: binks
+author: michael_binks
 ---
 
 ![rocket launch]({{ site.baseurl }}/images/astronomy-earth-explosion-2159.jpg)
-
 
 Anticipation levels are high and the pre-launch excitement is starting to build. It gives me great pleasure to announce a new blog from the Product and Technology Team @ CarFinance 247 is only a few weeks away.
 
