@@ -32,4 +32,6 @@ $runId = $xhprofRuns->save_run($xhprofData,'xhprof');
 {% endhighlight %}
 Т.е. если в PHP коде вбить xhprof-** то в списке автодополнении появятся наши сниппеты, выбираем нужный и жмём на Tab или Enter
 Всё сделано.
+
+
 ![Рисунок автодополнения](/images/addlivetemplatesphpstrom.png)
