@@ -9,9 +9,9 @@ title: "[Slides] [June 2018] Persistent Storage for Kubernetes in production - W
     </embed>
 </object>
 
-Persistent storage often seems like a confusing plethora of options, from local volumes, NFS, distributed storage like Ceph, cloud storage such as AWS’s EBS and S3, to volume plugins with Docker and Kubernetes integration. This talk compares and contrasts the most popular solutions, and lays out the eight principles for cloud native storage.
+These are my slides from **["Persistent Storage for Kubernetes in production - Which solution and why?"]**(https://containerdays.io/program/persistent-storage-with-kubernetes-in-production-which-solution-and-why,2823.html), a talk I gave at ContainerDays 2018 in Hamburg on 19 June, 2018.
 
-These are my slides from ["Persistent Storage for Kubernetes in production - Which solution and why?"](https://containerdays.io/program/persistent-storage-with-kubernetes-in-production-which-solution-and-why,2823.html), a talk I gave at ContainerDays 2018 in Hamburg on 19 June, 2018.
+_Persistent storage often seems like a confusing plethora of options, from local volumes, NFS, distributed storage like Ceph, cloud storage such as AWS’s EBS and S3, to volume plugins with Docker and Kubernetes integration. This talk compares and contrasts the most popular solutions, and lays out the eight principles for cloud native storage._
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/hashtag/CloudNative?src=hash&amp;ref_src=twsrc%5Etfw">#CloudNative</a> storage should be primarily accessible from the application, not from the operating system, nor the hypervisor — <a href="https://twitter.com/Storage_OS?ref_src=twsrc%5Etfw">@Storage_OS</a> <a href="https://twitter.com/oicheryl?ref_src=twsrc%5Etfw">@oicheryl</a>’s “8 Principles of Cloud Native Storage” <a href="https://twitter.com/hashtag/CDS18?src=hash&amp;ref_src=twsrc%5Etfw">#CDS18</a> <a href="https://twitter.com/hashtag/Kubernetes?src=hash&amp;ref_src=twsrc%5Etfw">#Kubernetes</a> <a href="https://t.co/rO015JDWut">pic.twitter.com/rO015JDWut</a></p>&mdash; The New Stack (@thenewstack) <a href="https://twitter.com/thenewstack/status/1009008215932141568?ref_src=twsrc%5Etfw">June 19, 2018</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
