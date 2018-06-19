@@ -8,7 +8,7 @@ comments: true
 We’ve been helping customers buy their next car on finance for a long time, 2006 is the official start date, but technically much longer than that.  The initial business idea was generated out of another business, Netcars.com, but that’s a whole other blog post.
 
 ![tech Team in 2016]({{ site.baseurl }}/images/tech-team-2016.jpg)
-> A team photo taken early 2017 - we'd grown quite a bit already by this point form our original 2 members
+> A team photo taken early 2017 - we'd grown quite a bit already by this point from our original 2 members
 
 Getting approved for finance is relatively complicated.  Getting approved for an asset backed finance agreement is really complicated.  In 2012 the decision was made by Reg and Louis Rix, the founders of CarFinance247, to take advantage of what they saw as an opportunity - we would scale the small business we had created, we were on to something… a better way.
 
