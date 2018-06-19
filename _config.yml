@@ -86,3 +86,20 @@ exclude:
   - CNAME
   - docker-compose.yml
   
+authors:
+  binks:
+    name: Michael Binks
+    display_name: Michael
+    gravatar: c66919cb194f96c696c1da0c47354a6a
+    email: michael.binks@carfinance247.co.uk
+    web: https://www.carfinance247.co.uk/
+    twitter: company
+    github: hhattori
+  wilson:
+    name: Jonathan Wilson
+    display_name: Jonathan
+    gravatar: 12e480a364a5c19214f99b4dfe9a11d5
+    email: jonathan.wilson@carfinance247.co.uk
+    web: https://www.carfinance247.co.uk/
+    twitter: company
+    github: jorgenm

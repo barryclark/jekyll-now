@@ -2,9 +2,18 @@
 layout: default
 ---
 
+<!-- Look the author details up from the site config. -->
+{% assign author = site.data.authors[page.author] %}
+
 <article class="post">
   <h1>{{ page.title }}</h1>
-
+  
+  {% if author %}
+      <span>
+          Written by <a href="{{ author.web }}" target="_blank">{{ author.name }}</a>
+      </span>
+  {% endif %}
+  
   <div class="entry">
     {{ content }}
   </div>
