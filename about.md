@@ -16,7 +16,7 @@ I hold a Masters in Computer Science from King's College, University of Cambridg
 
 ## Contact me
 
-[Tweet me](https://twitter.com/oicheryl) for speaking engagements, work opportunities, new projects etc. [Download my resume here.](http://www.oicheryl.com/resources/CherylHung-CV.pdf)
+[Tweet me](https://twitter.com/oicheryl) for speaking engagements and new opportunities. [Download my resume here.](http://www.oicheryl.com/resources/CherylHung-CV.pdf)
 
 ### Source code
 
