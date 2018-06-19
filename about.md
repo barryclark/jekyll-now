@@ -14,10 +14,10 @@ From 2010-2015 I worked at Google as a software engineer in London and New York,
 
 I hold a Masters in Computer Science from King's College, University of Cambridge. My final year dissertation was on [Gesture-controlled robotics using the Vicon motion capture system](https://github.com/oicheryl/cambridge/blob/master/documentation/dissertation/cjh84.pdf).
 
-### Source code
-
-The source code for this blog is [available on Github](https://github.com/oicheryl/oicheryl.github.io).
-
 ## Contact me
 
 [Tweet me](https://twitter.com/oicheryl) for speaking engagements, work opportunities, new projects etc. [Download my resume here.](http://www.oicheryl.com/resources/CherylHung-CV.pdf)
+
+### Source code
+
+The source code for this blog is [available on Github](https://github.com/oicheryl/oicheryl.github.io). You're welcome to submit PRs, but I will be very confused.
