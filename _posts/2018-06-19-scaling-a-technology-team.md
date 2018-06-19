@@ -20,12 +20,12 @@ One of my first tasks when I re-joined CarFianance247 (that’s another story) a
 It’s easy to operate with a team of 8 or so engineers.  There’s lots of cohesion and it’s easy to provide a vision and motivate the team on the “why”.  We're working very hard on the "why" right now.  Across the whole business. And then also down into each and every product team, giving them autonomy to succeed in their purpose with mearsurable results.  [OKRs](https://en.wikipedia.org/wiki/OKR) are something that really interests us right now.
 
 ![Brand Refresh Launch]({{ site.baseurl }}/images/brand-refresh.jpg)
-> Amazing goals can be acheived working in small groups of people.  Here we are launching our brand refresh in December 2016
+> Amazing goals can be acheived working in small groups of people.  Here we are launching our brand refresh in December 2016... at 3am..!
 
 As time progressed we began to work with Twilio closer, they wanted to learn and understand our use cases and our plans for future iterations with our contact centre.  We wanted to learn and understand how to scale a team and talk to as many companies as possible that have done just that.  When I first met Jeff Lawson and Ott Kaukver in 2016 I had lots of questions for them both, but one stood out:  How do you motivate, inspire and organise 300 software engineers?  Ott’s answer was direct with no time needed to think.  Small Teams.  Focussed on making their product the best product in the world.  Push responsibility down, he said.  We’ve also met with other businesses that talked about a similar approach such as JustEat, LateRooms, Simply Business and many more.  I suppose you can say these discussions with other like-minded companies is what has pushed myself, and our wider team to participate more in the wider community to share experiences and stimulate discussion.  This blog is our first step in that.  
 
 ![Native App]({{ site.baseurl }}/images/mobile-app.jpg)
-> We built a lot over the past few years.  As part of the brand refresh (if that wasn't enough) we also launched our first native mobile app on iOS and Android.  That was fun... even at 3am!
+> We built a lot over the past few years.  As part of the brand refresh (if that wasn't enough) we also launched our first native mobile app on iOS and Android.  That was fun!
 
 There is the famous Spotify video that inspired many companies on how they structure their squads, tribes etc. And we also took inspiration from ‘that’ series of video posts.  But for me, to get out and speak with other companies and organisations is where the magic happens.  Strip away the BS and talk openly about the success, the struggles, the niggles, what works, what doesn’t.
 
