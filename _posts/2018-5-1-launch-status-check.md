@@ -1,6 +1,7 @@
 ---
 layout: post
 title: New blog launching soon
+author: binks
 ---
 
 ![rocket launch]({{ site.baseurl }}/images/astronomy-earth-explosion-2159.jpg)
