@@ -1,0 +1,8 @@
+<div>
+    <h3>{{ include.post.title }}</h3>
+    <h4>{{ include.post.date | date_to_long_string }}</h4>
+    <p>{{ include.post.excerpt | strip_html }}</p>
+    <div>
+        <a href="{{ include.post.url }}" class="button small">Read Post</a>
+    </div>
+</div>
