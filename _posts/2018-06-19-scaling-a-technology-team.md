@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Scaling a Technology Team (to help scale business)
-author: jonathnan_wilson
+author: jonathan_wilson
 draft: true
 comments: true
 ---
