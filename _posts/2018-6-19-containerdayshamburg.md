@@ -9,7 +9,7 @@ title: "[Slides] [June 2018] Persistent Storage for Kubernetes in production - W
     </embed>
 </object>
 
-These are my slides from **["Persistent Storage for Kubernetes in production - Which solution and why?"]**(https://containerdays.io/program/persistent-storage-with-kubernetes-in-production-which-solution-and-why,2823.html), a talk I gave at ContainerDays 2018 in Hamburg on 19 June, 2018.
+These are my slides from ["Persistent Storage for Kubernetes in production - Which solution and why?"](https://containerdays.io/program/persistent-storage-with-kubernetes-in-production-which-solution-and-why,2823.html), a talk I gave at ContainerDays 2018 in Hamburg on 19 June, 2018.
 
 _Persistent storage often seems like a confusing plethora of options, from local volumes, NFS, distributed storage like Ceph, cloud storage such as AWS’s EBS and S3, to volume plugins with Docker and Kubernetes integration. This talk compares and contrasts the most popular solutions, and lays out the eight principles for cloud native storage._
 
