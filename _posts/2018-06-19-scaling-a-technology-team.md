@@ -3,16 +3,17 @@ layout: post
 title: Scaling a Technology Team... to help scale a business
 author: jonathan_wilson
 comments: true
-excerpt: <!--more-->
+excerpt_separator: <!--more-->
 ---
 
 We’ve been helping customers buy their next car on finance for a long time, 2006 is the official start date, but technically much longer than that.  The initial business idea was generated out of another business, Netcars.com, but that’s a whole other blog post.
 
 ![tech Team in 2016]({{ site.baseurl }}/images/tech-team-2016.png)
-> A team photo taken early 2017 - we'd grown quite a bit already by this point from our original 2 members
-
-Getting approved for finance is relatively complicated.  Getting approved for an asset backed finance agreement is really complicated.  In 2012 the decision was made by Reg and Louis Rix, the founders of CarFinance 247, to take advantage of what they saw as an opportunity - we would scale the small business we had created, we were on to something… a better way.
 <!--more-->
+> A team photo taken early 2017 - we'd grown quite a bit already by this point from our original 2 members
+ 
+Getting approved for finance is relatively complicated.  Getting approved for an asset backed finance agreement is really complicated.  In 2012 the decision was made by Reg and Louis Rix, the founders of CarFinance 247, to take advantage of what they saw as an opportunity - we would scale the small business we had created, we were on to something… a better way.
+
 To scale the business, it was obvious we needed to do one thing really well.  We needed to remove complexity.  Not only from our customers (our advisors were already doing an amazing job at shielding some of that complexity from our customer), but also our advisors.  The journey was clunky to say the least, particularly from our advisors point of view.  Many 3rd party systems that included lenders, credit bureaus, vehicle history checking, vehicle valuations, identity verification providers, the list was exhaustive, and still is.
 
 Since 2012 we’ve grown from around 30 people to just short of 500 people today.  Half of those you could say are on the front line; guiding customers through the niches of securing an asset backed loan agreement. For example, the age of the vehicle may affect the maximum duration the lender is willing to offer the customer, which in turn effects the monthly payment which in turn means we need to consider affordability… again.
