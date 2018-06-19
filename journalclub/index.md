@@ -24,11 +24,11 @@ Journal club meetings currently take place on Tuesdays at 2:00 pm in the Life Sc
 - June 26th: Braden Brinkman - Replica Trick
 - July 3rd: Yanliang Shi - Variational EM
 - July 10th: Logan Becker - Reparameterization Trick
-- July 17th: Ian Jordan - Assume Density Filters (ADF)
+- July 17th: Ian Jordan - Assumed Density Filtering (ADF)
 - July 24th: Piotr Sokol - Alternative Divergence Techniques 
 - July 31st: Memming Park - Particle VI
 - August 7th: Josue Nassar - Normalizing Flow
-- August 14th: Sima Mofakham.- TBD
+- August 14th: Sima Mofakham - TBD
 
 
 You can pick or [**suggest papers**](https://www.google.com/url?q=https://docs.google.com/document/d/17SuoVIIDbCae5GnxSHGO5BW2zbVP6wBCbaGGfgFLAOQ/edit?usp%3Dsharing&sa=D&ust=1472068897083000&usg=AFQjCNF5f_dZMloe4l3jWOm_mhxe7utbqw) to be discussed.
