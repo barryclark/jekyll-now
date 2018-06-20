@@ -3,7 +3,12 @@ layout: post
 title: Профилирование с XHProf для PHP7 в отдельном хосте
 ---
 
-Для начало нужно чтобы было установленно **sudo apt isntall php7.2-dev graphviz**
+Для начало нужно чтобы было установленно 
+
+{% highlight bash %}
+sudo apt isntall php7.2-dev graphviz
+{% endhighlight %}
+
 Далее, скачиваем профилировщик и устанавливаем его
 
 {% highlight bash %}
