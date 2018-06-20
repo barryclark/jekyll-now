@@ -23,7 +23,7 @@ The day began with three talks from our event facilitators from Codecentric. Jan
 The video recordings of these talks are on the [HaufeDev YouTube channel](https://www.youtube.com/channel/UCLyuIumQe2DjYIuwnvCo4uA).
 
 ## Blockchain – What is it to us?
-For the purpose of developing ideas for the blockchain, we decided to break down the definition of Blockchain into three major parts –
+For the purpose of developing ideas for the Blockchain, we decided to break down the definition of Blockchain into three major parts –
 
 - [Distributed ledger](https://www.investopedia.com/terms/d/distributed-ledgers.asp)
 - [Immutable transactions or blocks](https://www.investopedia.com/terms/b/block-bitcoin-block.asp)
