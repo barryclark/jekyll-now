@@ -3,7 +3,7 @@ layout: post
 title: Simple data logger
 ---
 
-A simple system for collecting and transmitting data to be stored and analysed. Data is collected by a DHT11 combinded temperature and humidity sensor attached to a NodeMCU unit. It is transmitted over HTTP to a dashboard service such as Grafana where it can be logged and visualised. The dashboard will be publicly available and accessable from any internet enable device.
+A simple system for collecting and transmitting data to be stored and analysed. Data is collected by a DHT11 combinded temperature and humidity sensor attached to a NodeMCU unit. It is transmitted to the thinger.io IoT platform where it can be displayed using a graphical dashboard.
 
 ## Components
 * Board: ESP8266 NodeMCU
