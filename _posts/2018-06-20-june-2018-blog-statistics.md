@@ -21,8 +21,8 @@ If you want to view the previous months' statistic reports, click on of the foll
 * [January 2018 Blog Statistics](http://hendrixjoseph.github.io/january-2018-blog-statistics/)
 * [February 2018 Blog Statistics](http://hendrixjoseph.github.io/february-2018-blog-statistics/)
 * [March 2018 Blog Statistics](http://hendrixjoseph.github.io/march-2018-blog-statistics/)
-* [April 2018 Blog Statistics](http://hendrixjoseph.github.io/march-2018-blog-statistics/)
-* [May 2018 Blog Statistics](http://hendrixjoseph.github.io/march-2018-blog-statistics/)
+* [April 2018 Blog Statistics](http://hendrixjoseph.github.io/april-2018-blog-statistics/)
+* [May 2018 Blog Statistics](http://hendrixjoseph.github.io/may-2018-blog-statistics/)
 
 I was able to publish four blog posts in the past month:
 
