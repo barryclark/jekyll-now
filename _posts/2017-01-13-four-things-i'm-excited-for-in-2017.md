@@ -31,7 +31,7 @@ I guess it's possible that I'll sell it for over $250,000 - but I highly doubt i
 
 I received my Bachelor in Computer Science from Wright State in 2012, and have been working on my Master in Computer Science since fall 2014. Since work is paying for it, and I don't want to overdo myself, I've only been taking on class a semester.
 
-> You might like to look at [the family tree project](http://hendrixjoseph.github.io/tags/family_tree/) I did a few semesters ago.
+> You might like to look at [the family tree project](https://hendrixjoseph.github.io/tags/#family-tree) I did a few semesters ago.
 
 This semester (spring) I'm doing an independent study on natural language processing. I haven't 100% decided yet, but I'm probably going to use this [MIT OpenCourseWare](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-864-advanced-natural-language-processing-fall-2005/) course as a foundation. Then I'll have two semesters of thesis work (summer and fall) and graduate in December.
 
