@@ -4,12 +4,14 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+My name's Tran Van Quoc Thang
+
+Birthday: 29-10-2002
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+> I want to become a DEV in the future. That's my dream.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[comehere.thang@gmail.com](mailto:comehere.thang@gmail.com)
