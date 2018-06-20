@@ -11,7 +11,7 @@ The 20th falls on a weekend this month, and I've been quite busy this weekend, s
 * [January 2018 Blog Statistics](http://hendrixjoseph.github.io/january-2018-blog-statistics/)
 * [February 2018 Blog Statistics](http://hendrixjoseph.github.io/february-2018-blog-statistics/)
 * [March 2018 Blog Statistics](http://hendrixjoseph.github.io/march-2018-blog-statistics/)
-* [April 2018 Blog Statistics](http://hendrixjoseph.github.io/march-2018-blog-statistics/)
+* [April 2018 Blog Statistics](http://hendrixjoseph.github.io/april-2018-blog-statistics/)
 
 I was able to publish three blog posts in the past month:
 
@@ -22,7 +22,7 @@ I was able to publish three blog posts in the past month:
 ## Alexa
 
 * Global Rank &rarr; 1,061,086
-* Rank in the United States &rarr; 1,061,086
+* Rank in the United States &rarr; ~~1,061,086~~ Oops I copied this one wrong...
 * Total Sites Linking In &rarr; 146
 
 ## Google Analytics
