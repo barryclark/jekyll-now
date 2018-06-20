@@ -30,10 +30,11 @@ body {
   width: 100%;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, h7 {
   font-family: $helveticaNeue;
-  color: $darkerGray;
-  font-weight: bold;
+  color: $white;
+	text-shadow: 0px 0px 0px rgb(17, 17, 17), 0px 0px 0.5em #ff0000, 0px 0px 0.4em #ff0000;
+	font-weight: bold;
 
   line-height: 1.7;
   margin: 1em 0 15px;
@@ -45,9 +46,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
+  font-size: 23px;
+  a {
+    color: $black;
+  }
+}
+
+h7 {
   font-size: 30px;
   a {
-    color: inherit;
+    background: url("images/tick.png") no-repeat scroll right center transparent;
+    padding-right: 30px;
+    color: $white;
+	text-shadow: 0px 0px 0px rgb(17, 17, 17), 0px 0px 0.5em #0e5bff, 0px 0px 0.4em #0e5bff;
+	font-weight: bold;
   }
 }
 
