@@ -18,5 +18,5 @@
 {% include google/search.html %}
 </div>
 </header>
-{% include google/adsense.html %}
+{% unless page.noad %}{% include google/adsense.html %}{% endunless %}
 </div>
