@@ -16,16 +16,16 @@ header:
 
 
 
-<p>Last week I was teaching at the <a href="https://scdinstitute2018.com/">Summer Research Training Institute on Single-Case Intervention Design and Analysis workshop</a>, sponsored by the National Center for Special Education Research (part of the Institute of Education Sciences).
+<p>Last week I was teaching at the <a href="https://scdinstitute2018.com/">Summer Research Training Institute on Single-Case Intervention Design and Analysis workshop</a>, sponsored by the Institute of Education Sciences’ National Center for Special Education Research.
 While I was there, I shared <a href="https://jepusto.shinyapps.io/ARPsimulator/">a web-app for simulating data from a single-case design</a> (to be clear: totally fake data!).
 This is a tool that I put together a couple of years ago as part of my <a href="/software/arpobservation/">ARPobservation R package</a>, but haven’t ever really publicized or done anything formal with.
-It provides an easy way to simulate “mock” data from a single-case design (treatment reversal designs, multiple baseline designs, or alternating treatment designs) where the dependent variable is measured using systematic direct observation of behavior.
+It provides an easy way to simulate “mock” data from a single-case design where the dependent variable is measured using systematic direct observation of behavior.
 The simulated data can be viewed in the form of a graph or downloaded as a csv file.
 And it’s quite fast—simulating 1000’s of mock single-case designs takes only a few seconds.
-The tool also provides a visualization of the (hypothetical) distribution of effect size estimates that you could anticipate observing in a single-case design, given a set of assumptions about how the dependent variable is measured and how it changes in response to treatment.</p>
+The tool also provides a visualization of the distribution of effect size estimates that you could anticipate observing in a single-case design, given a set of assumptions about how the dependent variable is measured and how it changes in response to treatment.</p>
 <div id="demo" class="section level1">
 <h1>Demo</h1>
-<p>Here’s an example of the sort of data that the tool generates.
+<p>Here’s an example of the sort of data that the tool generates and the assumptions it asks you to make.
 Say that you’re interested in evaluating the effect of a Social Stories intervention on the behavior of a child with autism spectrum disorder, and that you plan to use a treatment reversal design.
 Your primary dependent variable is inappropriate play behavior, measured using frequency counts over ten minute observation sessions.<br />
 The initial baseline and treatment phases will be 7 sessions long.
@@ -41,18 +41,35 @@ Enter all of these details and assumptions into the simulator, and it will gener
 <img src="/img/Crozier-Tincani-simulated-data-A.png" /></p>
 <p><img src="/img/Crozier-Tincani-simulated-data-D.png" /></p>
 <p><img src="/img/Crozier-Tincani-simulated-data-E.png" /></p>
-<p>All of the above graphs were generated from the same hypothetical model, so the variation in the clarity and strength of the functional relation is due to random error alone.
+<p>All of the above graphs were generated from the same hypothetical model—the variation in the clarity and strength of the functional relation is due to random error alone.
 The simulator can also produce graphs that show multiple realizations of the data-generating process. Here’s one with five replications:</p>
 <p><img src="/img/Crozier-Tincani-simulated-data-5.png" /></p>
 <p>And here’s the same figure, but with trend lines added:</p>
 <p><img src="/img/Crozier-Tincani-simulated-data-trend.png" /></p>
 <p>The trend lines represent the overall average level of the dependent variable during each session, across infinitely replications of the study.
 The variability around the trend line provides a sense of the extent of random error in the measurements of the dependent variable.</p>
-<p>I think it’s an interesting exercise to</p>
+<p>I think it’s a rather interesting exercise to try and draw inferences based on visual inspection of randomly generated graphs like this.
+It seems like it could really help a visual analyst to calibrate their interpretations of single-case graphs with visually apparent time trends, outliers, etc.</p>
 </div>
 <div id="use-cases" class="section level1">
 <h1>Use cases</h1>
+<p>So far, this tool is really only a toy—something that I’ve puttered with off and on for a while, but never developed or applied for any substantive purpose.
+It does occur to me that it, or something similar to it, might have a number of purposes related to planning single-case studies, studying the process of visual inspection, or training single-case researchers.</p>
+<p>When I originally put the tool together, the leading case I imagined was to use the tool to help researchers make principled decisions about how to measure dependent variables in single-case designs.
+By using the tool to simulate hypothetical single-case studies, a researcher would be able to experiment with different measurement strategies—such as using partial interval recording instead of continuous duration recording, using shorter or longer observation sessions, or using short or longer baseline phases—before collecting data on real-life behavior in the field.
+I’m not sure if this is something that well-trained single-case researchers would actually find helpful, but it seems like it might help a novice (like me!) to temper one’s expectations or to move towards a more reliable measurement system.</p>
+<p>Reliability and accuracy of inferences based on visual inspection.</p>
+<p>Training on visual inspection procedures.</p>
 </div>
 <div id="future-directions" class="section level1">
 <h1>Future directions</h1>
+<p>A number of future directions for this project have crossed my mind:</p>
+<ul>
+<li>Currently, the outcome data are simulated as independent across observation sessions (given the true time trend). It wouldn’t be too hard to add a further option to generate auto-correlated data, although this would further increase the complexity of the model. Perhaps there would be a way to add this as an “advanced” option that would be concealed unless the user asks for it (“Are you Realy Sure you want to go down this rabbit hole?”). So far, I have avoided adding these features because I’m not sure what reasonable defaults would be.</li>
+<li>Algorithms for randomized start-times and/or phase lengths.</li>
+<li>Between-case variability.</li>
+<li>Validation of the model using empirical data on different classes of behavior.</li>
+</ul>
+<p>At the moment I have no plans to implement any of these unless there’s a reasonably focused need (sadly, I don’t have time to putter and putz to the same extent that I used to).
+If you (dear reader) would be interested in helping to pursue any of these directions, or if you have even better ideas for how to make use of this tool, I would love to hear from you</p>
 </div>
