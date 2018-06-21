@@ -12,6 +12,6 @@ Birthday: 29-10-2002
 
 > I want to become a DEV in the future. That's my dream.
 
-### Contact me
+### <span class="left-slide">Contact me</span>
 
 [comehere.thang@gmail.com](mailto:comehere.thang@gmail.com)
