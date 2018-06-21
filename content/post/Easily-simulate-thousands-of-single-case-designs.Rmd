@@ -14,8 +14,8 @@ header:
   image: ''
 ---
 
-Last week I was teaching at the [Summer Research Training Institute on Single-Case Intervention Design and Analysis workshop](https://scdinstitute2018.com/), sponsored by the Institute of Education Sciences' National Center for Special Education Research. 
-While I was there, I shared [a web-app for simulating data from a single-case design](https://jepusto.shinyapps.io/ARPsimulator/) (to be clear: totally fake data!). 
+Earlier this month, I taught at the [Summer Research Training Institute on Single-Case Intervention Design and Analysis workshop](https://scdinstitute2018.com/), sponsored by the Institute of Education Sciences' National Center for Special Education Research. 
+While I was there, I shared [a web-app for simulating data from a single-case design](https://jepusto.shinyapps.io/ARPsimulator/). 
 This is a tool that I put together a couple of years ago as part of my [ARPobservation R package](/software/arpobservation/), but haven't ever really publicized or done anything formal with.
 It provides an easy way to simulate "mock" data from a single-case design where the dependent variable is measured using systematic direct observation of behavior.
 The simulated data can be viewed in the form of a graph or downloaded as a csv file.
@@ -60,21 +60,24 @@ And here's the same figure, but with trend lines added:
 The trend lines represent the overall average level of the dependent variable during each session, across infinitely replications of the study.
 The variability around the trend line provides a sense of the extent of random error in the measurements of the dependent variable. 
 
-I think it's a rather interesting exercise to try and draw inferences based on visual inspection of randomly generated graphs like this. 
+I think it's a rather interesting exercise to try and draw inferences based on visual inspection of randomly generated graphs like this---particularly because it forces you to grapple with random measurement error in a way that using only real data (or only hand-drawn mock data) doesn't allow.
 It seems like it could really help a visual analyst to calibrate their interpretations of single-case graphs with visually apparent time trends, outliers, etc.
 
 # Use cases
 
 So far, this tool is really only a toy---something that I've puttered with off and on for a while, but never developed or applied for any substantive purpose.
-It does occur to me that it, or something similar to it, might have a number of purposes related to planning single-case studies, studying the process of visual inspection, or training single-case researchers. 
+However, it occurs to me that it (or something similar to it) might have a number of purposes related to planning single-case studies, studying the process of visual inspection, or training single-case researchers. 
 
 When I originally put the tool together, the leading case I imagined was to use the tool to help researchers make principled decisions about how to measure dependent variables in single-case designs. 
 By using the tool to simulate hypothetical single-case studies, a researcher would be able to experiment with different measurement strategies---such as using partial interval recording instead of continuous duration recording, using shorter or longer observation sessions, or using short or longer baseline phases---before collecting data on real-life behavior in the field. 
 I'm not sure if this is something that well-trained single-case researchers would actually find helpful, but it seems like it might help a novice (like me!) to temper one's expectations or to move towards a more reliable measurement system. 
 
-Reliability and accuracy of inferences based on visual inspection.
+There's been quite a bit of research examining the reliability and error rates of inferences based on visual inspection (see Chapter 3 of [Kratochwill & Levin, 2014](http://dx.doi.org/10.1037/14376-000) for a review of some of this literature). 
+Some of this work has compared the inferences drawn by novices versus experts or by un-aided visual inspection versus visual inspection supplemented with graphical guides (like trend lines).
+But there are many other factors that could be investigated too, such as phase lengths (this could help to better justify the WWC single-case design standards around minimum phase lengths), use of different measurement systems, or use of different design elements on single-case graphs (can we get some color on these graphs, folks?!? And stop plotting 14 different dependent variables on the same graph?!?). 
+The simulator would be an easy way to generate the stimuli (probably LOTS of graphs) one would need to do this work. 
 
-Training on visual inspection procedures.
+A closely related use-case is to generate stimuli for training researchers to do systematic visual inspection. www.singlecase.org
 
 # Future directions
 
