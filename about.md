@@ -1,6 +1,14 @@
 ---
 layout: page
-title: About
+title: <!--start button -->
+    <div class="svg-wrapper">
+      <svg height="20" width="60" xmlns="http://www.w3.org/2000/svg">
+        <rect id="shape" height="20" width="60" />
+        <div id="text">
+          <a href="/"><span class="spot"></span>About</a>
+        </div>
+      </svg>
+    </div>
 permalink: /about/
 ---
 
