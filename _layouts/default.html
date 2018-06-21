@@ -47,30 +47,5 @@
     </div>
 
     {% include analytics.html %}
-    
-<style type='text/css'>
-#loading{
-position: fixed!important;
-top: 0;
-right: 0;
-bottom: 0;
-left: 0;
-z-index: 9999;
-background:#000 url('https://lh3.googleusercontent.com/-W52U-cdaCyk/V3xhdgxxJ6I/AAAAAAAAfoo/elbyIOMcupUulvnxTsiJ7g45ZXe9W8TtgCLcB/s1600/Loading%2B%25283%2529.gif') no-repeat 50% 50%; 
-display: none;
-font: 0/0 a;
-text-shadow: none;
-padding: 1em 1.2em;
-}
-</style>
-<script type='text/javascript'>
-//<![CDATA[
-$(document.body).append('<div id="loading">Loading...</div>');
-$(window).on("beforeunload", function() {
-// ... Show the Animation `.fadeIn()`
-$('#loading').fadeIn(1000).delay(9000).fadeOut(1000);
-});
-//]]>
-</script>
   </body>
 </html>
