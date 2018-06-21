@@ -73,6 +73,19 @@
 .right-slide:after {content:''; display:block; position:absolute; right:0; bottom:0; height:3px; width:0; background:transparent; transition:width .5s ease, background-color .5s ease}
 .right-slide:hover:after {width:100%; background:#FF0000}
   </style>
+  <style>
+    .post-body a::before {content:attr(href); float:none; clear:both; text-transform:none; padding:12px 5%; background:#069; color:#fff; font-family:monospace; font-size:14px; position:fixed; opacity:0; left:0; top:0; visibility:hidden; transform:scaleY(0); text-overflow:ellipsis; overflow:hidden; text-align:center; width:100%; transition:.2s ease-in-out; z-index:99999; margin: 0 auto}
+.post-body a:hover::before {opacity:1; visibility:visible; transform:scaleY(1)}
+  </style>
+  <style>
+    button{background:#55579e;border:none;position:relative;transition:800ms ease all;outline:none;font:500 16px "Roboto",sans-serif;text-transform:uppercase}
+button a{color:#fff!important;padding:.5em 3em;display:block}
+button:hover a{color:#55579e!important;text-decoration:none!important}
+button:hover{background:transparent}
+button:before,button:after{content:'';position:absolute;top:0;right:0;height:2px;width:0;background:#55579e;transition:900ms ease all}
+button:after{right:inherit;top:inherit;left:0;bottom:0}
+button:hover:before,button:hover:after{width:100%;transition:800ms ease all}
+  </style>
 
   <body>
     <div class="wrapper-masthead">
