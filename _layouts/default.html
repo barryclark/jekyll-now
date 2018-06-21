@@ -65,6 +65,14 @@
   stroke: #06D6A0;
 }
   </style>
+  <style>
+    .left-slide {display:inline-block; position:relative; color:#fff}
+.left-slide:after {content:''; display:block; position:absolute; left:0; bottom:0; height:3px; width:0; background:transparent; transition:width .5s ease, background-color .5s ease}
+.left-slide:hover:after {width:100%; background:#fff}
+.right-slide {display:inline-block; position:relative; color:#fff}
+.right-slide:after {content:''; display:block; position:absolute; right:0; bottom:0; height:3px; width:0; background:transparent; transition:width .5s ease, background-color .5s ease}
+.right-slide:hover:after {width:100%; background:#fff}
+  </style>
 
   <body>
     <div class="wrapper-masthead">
