@@ -3,7 +3,9 @@ layout: default
 ---
 
 <article class="post">
-  <h1>{{ page.title }}</h1>
+  <h1>class="post-title" itemprop="name headline">
+    <a class="post-title-link" href="{{ page.title }}" itemprop="url"{{ page.title }}</a>
+       </h1>
 
   <div class="entry">
     {{ content }}
