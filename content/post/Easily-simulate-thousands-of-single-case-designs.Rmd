@@ -1,7 +1,7 @@
 ---
 title: Easily simulate thousands of single-case designs
 author: James
-date: '2018-06-13'
+date: '2018-06-21'
 draft: true
 slug: Easily-simulate-thousands-of-single-case-designs
 categories: []
@@ -72,21 +72,26 @@ When I originally put the tool together, the leading case I imagined was to use 
 By using the tool to simulate hypothetical single-case studies, a researcher would be able to experiment with different measurement strategies---such as using partial interval recording instead of continuous duration recording, using shorter or longer observation sessions, or using short or longer baseline phases---before collecting data on real-life behavior in the field. 
 I'm not sure if this is something that well-trained single-case researchers would actually find helpful, but it seems like it might help a novice (like me!) to temper one's expectations or to move towards a more reliable measurement system. 
 
-There's been quite a bit of research examining the reliability and error rates of inferences based on visual inspection (see Chapter 3 of [Kratochwill & Levin, 2014](http://dx.doi.org/10.1037/14376-000) for a review of some of this literature). 
+There's been quite a bit of research examining the reliability and error rates of inferences based on visual inspection (see [Chapter 4 of Kratochwill & Levin, 2014](http://dx.doi.org/10.1037/14376-004) for a review of some of this literature). 
 Some of this work has compared the inferences drawn by novices versus experts or by un-aided visual inspection versus visual inspection supplemented with graphical guides (like trend lines).
 But there are many other factors that could be investigated too, such as phase lengths (this could help to better justify the WWC single-case design standards around minimum phase lengths), use of different measurement systems, or use of different design elements on single-case graphs (can we get some color on these graphs, folks?!? And stop plotting 14 different dependent variables on the same graph?!?). 
-The simulator would be an easy way to generate the stimuli (probably LOTS of graphs) one would need to do this work. 
+The simulator would be an easy way to generate the stimuli one would need to do this sort of work. 
 
-A closely related use-case is to generate stimuli for training researchers to do systematic visual inspection. www.singlecase.org
+A closely related use-case is to generate stimuli for training researchers to do systematic visual inspection. 
+Some of the SCD Institute instructors (including Tom Kratochwill, Rob Horner, Joel Levin, along with some of their other colleagues) have developed the website [www.singlecase.org](http://www.singlecase.org) with a bunch of exercises meant to help researchers develop and test their visual analysis skills. 
+It looks to me like the site uses simulated data (though I'm not entirely sure). 
+The ARPsimulator tool could be used to do something similar, but based on a data-generating process that captures many of the features of systematic direct observation data.
+This might let researchers test their skills under more challenging and ambiguous, yet plausible, conditions, similar to what they will encounter when collecting real data in the field.
 
 # Future directions
 
 A number of future directions for this project have crossed my mind:
 
-* Currently, the outcome data are simulated as independent across observation sessions (given the true time trend). It wouldn't be too hard to add a further option to generate auto-correlated data, although this would further increase the complexity of the model. Perhaps there would be a way to add this as an "advanced" option that would be concealed unless the user asks for it ("Are you Realy Sure you want to go down this rabbit hole?"). So far, I have avoided adding these features because I'm not sure what reasonable defaults would be.
-* Algorithms for randomized start-times and/or phase lengths. 
-* Between-case variability.
-* Validation of the model using empirical data on different classes of behavior.
+* Currently, the outcome data are simulated as independent across observation sessions (given the true time trend). It wouldn't be too hard to add a further option to generate auto-correlated data, although this would further increase the complexity of the model. Perhaps there would be a way to add this as an "advanced" option that would be concealed unless the user asks for it (i.e., "Are you Really Sure you want to go down this rabbit hole?"). So far, I have avoided adding these features because I'm not sure what reasonable defaults would be.
+* Joel Levin, John Ferron, and some of the other SCD Institute instructors are big proponents of incorporating  randomization procedures into the design of single-case studies, at least when circumstances allow. Currently, the ARPsimulator generates data based on a fixed, pre-specified design, such as an ABAB design with 6 sessions per phase or a multiple baseline design with 25 sessions total and intervention start-times of 8, 14, and 20. It wouldn't be too hard to incorporate randomized phase-changes into the simulator. This might make a nice, contained project for a student who wants to learn more about randomization designs.
+* Along similar lines, John Ferron has [developed](https://www.tandfonline.com/doi/abs/10.3200/JEXE.75.1.66-81) and [evaluated](https://doi.org/10.1002/jaba.410) masked visual analysis procedures, which blend randomization and traditional response-guided approaches to designing single-case studies. It would take a bit more work, but it would be pretty nifty to incorporate these designs into ARPsimulator too. 
+* Currently, the model behind ARPsimulator asks the user to specify a fixed baseline level of behavior, and this level of behavior is used for every simulated case---even in designs involving multiple cases. A more realistic (albeit more complicated) data-generating model would allow for between-case variation in the baseline level of behavior.
+* Perhaps the most important outstanding question about the premise of this work is just how well the alternating renewal process model captures the features of real single-case data. Validating the model against empirical data from single-case studies would allow use to assess whether it is really a realistic approach to simulation, at least for certain classes of behavior. Another product of such an investigation would be to develop realistic default assumptions for the model's parameters. 
 
 At the moment I have no plans to implement any of these unless there's a reasonably focused need (sadly, I don't have time to putter and putz to the same extent that I used to).
-If you (dear reader) would be interested in helping to pursue any of these directions, or if you have even better ideas for how to make use of this tool, I would love to hear from you
+If you, dear reader, would be interested in helping to pursue any of these directions, or if you have other, better ideas for how to make use of this tool, I would love to hear from you.
