@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Test
+title: Testing
 permalink: /test/
 ---
 Nơi testing code của tao vào làm gì :v
