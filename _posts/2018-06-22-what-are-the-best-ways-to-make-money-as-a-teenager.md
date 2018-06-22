@@ -26,7 +26,7 @@ Of course this does require an upfront investment of owing a [lawn mower](https:
 
 ## Wintertime? Shovel snow from driveways!
 
-Again, you need something upfront… [A snow shovel](https://www.amazon.com/Garant-NPP26KDU-Nordic-26-Inch-Pusher/dp/B000FBQJAY/?tag=hendrixjoseph-20). Snow shovels tend to be cheaper than lawn mowers, though.
+Again, you need something upfront… [A snow shovel](https://www.amazon.com/Emsco-Group-Bigfoot-Northern-Shovel/dp/B074Y2BCR9/?tag=hendrixjoseph-20). Snow shovels tend to be cheaper than lawn mowers, though.
 
 ![Shovel snow.](/images/make-money-as-a-teenager/shovel-snow.jpg)
 
