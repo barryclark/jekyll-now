@@ -79,7 +79,7 @@ For stability we will follow the approach is first suggested in [Haber and Rutho
  \left( \begin{array}{c}{y\\\ z}\end{array}  \right)(t)
  +
  b(t) \right );
-  \left( \begin{array}{c}{y\\ z}\end{array}  \right)(0)=
+  \left( \begin{array}{c}{y\\\ z}\end{array}  \right)(0)=
    \left( \begin{array}{c}{y_0\\\ 0}\end{array}  \right).
 \end{equation}
 
