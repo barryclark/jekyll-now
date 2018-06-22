@@ -108,6 +108,83 @@ button:hover:before,button:hover:after{width:100%;transition:800ms ease all}
 .copyTextButton:before{margin:0 5px 0 0;font-size:16px;content:'\f0c5';font-family:fontawesome}
 pre.codeToClipboard{background:#fff;max-height:500px;font-size:14px;color:#000;overflow:auto;border:1px solid #d3d6db;margin:auto;padding:10px 8px}
 </style>
+<style>
+  @mixin highlight(
+  $padding: 0,
+  $background-color: #ff0,
+  $color: inherit
+){
+  
+  position: relative;
+  z-index: 0;
+  
+  & span {
+    position: relative;
+    background: $background-color;
+    @if ($color != inherit) {
+      color: $color;
+    }
+    padding: $padding 0;
+    box-shadow:
+           $padding 0 $background-color,
+          -$padding 0 $background-color;
+    z-index: -1;
+  }
+  
+  & span {
+    left: $padding;
+    margin-right: $padding * 2;
+  }
+}
+
+h1 {
+  font-size: 1.65em;
+  &.highlight {
+    @include highlight(0.25em, #222, white);
+  }
+}
+
+.highlight {
+  // /*/
+  @include highlight(0.25em, #eeee35);
+  // OR //
+  /*/
+  span {
+    background-color: #eeee35;
+    padding: 0.25em;
+    -webkit-box-decoration-break: clone;
+  }
+  // /*/
+}
+    
+.highlight-default {
+  span {
+    background: #ee4035;
+    color: #222; 
+    padding: 0.25em;
+  }
+}
+
+h1, h2 { 
+  text-transform: uppercase;
+  margin-bottom: 1em;
+  line-height: 1.45;
+}
+    
+body {
+  font: 2em/1 Ubuntu, sans-serif;
+  background: #ccc;
+  padding: 6%;
+  color: #222;
+}
+
+p { margin-bottom: 1em; }
+
+small {
+  font-size: 0.5em;
+  color: #666;
+}
+</style>
 
   <body>
     <div class="wrapper-masthead">
