@@ -28,6 +28,15 @@ if(checkCtrl){
 if(event.keyCode==&#39;85&#39;){ return false; } } })
 </script>
 
+  <link href='//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'/>
+  
+  <script src='//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js' type='text/javascript'/>
+  <script src='//cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js' type='text/javascript'/>
+<script type='text/javascript'>
+//<![CDATA[
+$(function(){new Clipboard(".copyTextButton")});
+//]]></script>
+
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
   </head>
   
@@ -102,6 +111,12 @@ button:before,button:after{content:'';position:absolute;top:0;right:0;height:2px
 button:after{right:inherit;top:inherit;left:0;bottom:0}
 button:hover:before,button:hover:after{width:100%;transition:800ms ease all}
   </style>
+<style>
+  .codeToClipboardHeader{background-color:#fff;border:1px solid #e0e0e0;border-bottom:0;text-align:left;padding:3px}
+.copyTextButton{color:#000!important;font-size:18px;padding:4px 10px;border-right:1px solid #e0e0e0;text-decoration:none}
+.copyTextButton:before{margin:0 5px 0 0;font-size:16px;content:'\f0c5';font-family:fontawesome}
+pre.codeToClipboard{background:#fff;max-height:500px;font-size:14px;color:#000;overflow:auto;border:1px solid #d3d6db;margin:auto;padding:10px 8px}
+</style>
 
   <body onkeydown="return false">
     <div class="wrapper-masthead">
