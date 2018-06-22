@@ -20,13 +20,13 @@ What can you do to make money?
 
 ## Summertime? Mow lawns!
 
-Of course this does require an upfront investment of owing a lawn mower and the gas to fuel it, but if you entrepreneurial enough, you can borrow someone’s, such as your parents, or someone else’s, perhaps in return for mowing their lawn.
+Of course this does require an upfront investment of owing a [lawn mower](https://www.amazon.com/Yard-Machines-140Cc-20-Inch-Mower/dp/B07BTR5VXY/?tag=hendrixjoseph-20) and the gas to fuel it, but if you entrepreneurial enough, you can borrow someone’s, such as your parents, or someone else’s, perhaps in return for mowing their lawn.
 
 ![Mow lawns.](/images/make-money-as-a-teenager/mow-lawns.jpg)
 
 ## Wintertime? Shovel snow from driveways!
 
-Again, you need something upfront… A snow shovel. Snow shovels tend to be cheaper than lawn mowers, though.
+Again, you need something upfront… [A snow shovel](https://www.amazon.com/Garant-NPP26KDU-Nordic-26-Inch-Pusher/dp/B000FBQJAY/?tag=hendrixjoseph-20). Snow shovels tend to be cheaper than lawn mowers, though.
 
 ![Shovel snow.](/images/make-money-as-a-teenager/shovel-snow.jpg)
 
