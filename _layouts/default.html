@@ -19,15 +19,6 @@ var message="NoRightClicking"; function defeatIE() {if (document.all) {(message)
 //]]>
 </script>
     
-    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js'/>
-<script type='text/javascript'>
-checkCtrl=false $(&#39;*&#39;).keydown(function(e){
-if(e.keyCode==&#39;17&#39;){ checkCtrl=false  } }).keyup(function(ev){
-if(ev.keyCode==&#39;17&#39;){ checkCtrl=false } }).keydown(function(event){
-if(checkCtrl){
-if(event.keyCode==&#39;85&#39;){ return false; } } })
-</script>
-
   <link href='//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'/>
   
   <script src='//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js' type='text/javascript'/>
@@ -118,7 +109,7 @@ button:hover:before,button:hover:after{width:100%;transition:800ms ease all}
 pre.codeToClipboard{background:#fff;max-height:500px;font-size:14px;color:#000;overflow:auto;border:1px solid #d3d6db;margin:auto;padding:10px 8px}
 </style>
 
-  <body onkeydown="return false">
+  <body>
     <div class="wrapper-masthead">
       <div class="container">
         <header class="masthead clearfix">
