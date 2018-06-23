@@ -28,10 +28,26 @@ var message="NoRightClicking"; function defeatIE() {if (document.all) {(message)
 $(function(){new Clipboard(".copyTextButton")});
 //]]></script>
   
+  <script type="text/javascript">
+function toggleOverlay(){
+ var overlay = document.getElementById('background-overlay');
+ var specialBox = document.getElementById('box-search');
+ overlay.style.opacity = .95;
+ if(overlay.style.display == "block"){
+  overlay.style.display = "none";
+  specialBox.style.display = "none";
+ } else {
+  overlay.style.display = "block";
+  specialBox.style.display = "block";
+  document.forms['searchform'].elements['s'].focus();
+ }
+}
+</script>
+
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
   </head>
   
-  <style> // css - button ( back home page )
+  <style> <!--css - button ( back home page )-->
     #personal {
   color:white;
   text-decoration:none;
