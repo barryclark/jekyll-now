@@ -28,6 +28,8 @@ var message="NoRightClicking"; function defeatIE() {if (document.all) {(message)
 $(function(){new Clipboard(".copyTextButton")});
 //]]></script>
   
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
   </head>
   
@@ -156,6 +158,15 @@ pre.codeToClipboard{background:#fff;max-height:500px;font-size:14px;color:#000;o
 95% {color:hsl(385,96%,69%)}
 100% {color:hsl(405,96%,69%)}
 }
+</style>
+<style> <!--css - trái tim đập-->
+  .animation-heart {color:#dd2200; font-size:100px;-webkit-animation-duration:1.69s; animation-duration:1.69s; -webkit-animation-fill-mode:both; animation-fill-mode:both}
+.animation-heart.infinite {-webkit-animation-iteration-count:infinite; animation-iteration-count:infinite}
+@-webkit-keyframes pulse {from{-webkit-transform:scale3d(0.069,0.069,0.069); transform:scale3d(0.069,0.069,0.069)}50%{-webkit-transform:scale3d(1.69,1.69,1.69); transform:scale3d(1.69,1.69,1.69)}
+to{-webkit-transform:scale3d(0.069,0.069,0.069); transform:scale3d(0.069,0.069,0.069)}}
+@keyframes pulse{from{-webkit-transform:scale3d(0.069,0.069,0.069); transform:scale3d(0.069,0.069,0.069)}50%{-webkit-transform:scale3d(1.69,1.69,1.69); transform:scale3d(1.69,1.69,1.69)}
+to{-webkit-transform:scale3d(0.069,0.069,0.069);transform:scale3d(0.069,0.069,0.069)}}
+.animation-pulse {-webkit-animation-name:pulse; animation-name:pulse}
 </style>
 
   <body>
