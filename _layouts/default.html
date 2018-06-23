@@ -28,22 +28,6 @@ var message="NoRightClicking"; function defeatIE() {if (document.all) {(message)
 $(function(){new Clipboard(".copyTextButton")});
 //]]></script>
   
-  <script type="text/javascript">
-function toggleOverlay(){
- var overlay = document.getElementById('background-overlay');
- var specialBox = document.getElementById('box-search');
- overlay.style.opacity = .95;
- if(overlay.style.display == "block"){
-  overlay.style.display = "none";
-  specialBox.style.display = "none";
- } else {
-  overlay.style.display = "block";
-  specialBox.style.display = "block";
-  document.forms['searchform'].elements['s'].focus();
- }
-}
-</script>
-
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
   </head>
   
@@ -173,28 +157,8 @@ pre.codeToClipboard{background:#fff;max-height:500px;font-size:14px;color:#000;o
 100% {color:hsl(405,96%,69%)}
 }
 </style>
-<style> <!--css - khung tìm kiếm overlay-->
-  #background-overlay {display:none; z-index:9999; background:#069; position:fixed; top:0; left:0; width:100%; height:100%; text-align:center; transition:top 0.5s ease}
-#button-close {display:block; position:absolute; top:20px; right:20px; cursor:pointer; background:#fff; color:#069; padding:5px 15px 3px 15px; font-size:14px; font-weight:700; border-radius:5px}
-#box-search {display:none; position:relative; z-index:99999; margin: 150px auto 0 auto; width:90%}
-.form-search label {font-size:20px; font-weight:500; line-height:2; color:#fff}
-.form-search .search-query {border:none; border-bottom:2px dashed #fff; margin:30px 0 0 0; padding:10px 20px; font-size:18px; line-height:2; color:#fff; background:transparent; width:100%; text-align:center}
-.form-search input:focus {outline:0}
-.button-search {background:#069; color:#fff; padding:7px 15px 5px 15px; border:none; border-radius:100px; font-size:15px; font-weight:700}
-.button-search:hover {background:#f1f1f1; color:#999}
-</style>
 
   <body>
-    <div id="background-overlay">
-<div id="box-search">
- <form method="get" id="searchform" class="form-search center-text" action="/search">
-  <label for="s">NHẬP TỪ KHÓA VÀ NHẤN ENTER</label><br/>
-  <input type="text" id="s" class="search-query" name="q"/>
- </form>
-</div>
-<div id="button-close" onclick="toggleOverlay()">TẮT</div>
-</div>
-    
     <div class="wrapper-masthead">
       <div class="container">
         <header class="masthead clearfix">
