@@ -97,7 +97,7 @@ function toggleOverlay(){
   stroke: #06D6A0;
 }
   </style>
-  <style> // css - thanh trượt text
+  <style> <!--css - thanh trượt text-->
     .left-slide {display:inline-block; position:relative; color:#000000}
 .left-slide:after {content:''; display:block; position:absolute; left:0; bottom:0; height:3px; width:0; background:transparent; transition:width .5s ease, background-color .5s ease}
 .left-slide:hover:after {width:100%; background:#191970}
@@ -105,11 +105,11 @@ function toggleOverlay(){
 .right-slide:after {content:''; display:block; position:absolute; right:0; bottom:0; height:3px; width:0; background:transparent; transition:width .5s ease, background-color .5s ease}
 .right-slide:hover:after {width:100%; background:#FF0000}
   </style>
-  <style>
+  <style> <!--css - cái gì quên rồi :3-->
     .post-body a::before {content:attr(href); float:none; clear:both; text-transform:none; padding:12px 5%; background:#069; color:#fff; font-family:monospace; font-size:14px; position:fixed; opacity:0; left:0; top:0; visibility:hidden; transform:scaleY(0); text-overflow:ellipsis; overflow:hidden; text-align:center; width:100%; transition:.2s ease-in-out; z-index:99999; margin: 0 auto}
 .post-body a:hover::before {opacity:1; visibility:visible; transform:scaleY(1)}
   </style>
-  <style>
+  <style> <!--css - button (back home page)-->
     button{background:#55579e;border:none;position:relative;transition:800ms ease all;outline:none;font:500 16px "Roboto",sans-serif;text-transform:uppercase}
 button a{color:#fff!important;padding:.5em 3em;display:block}
 button:hover a{color:#55579e!important;text-decoration:none!important}
@@ -118,13 +118,13 @@ button:before,button:after{content:'';position:absolute;top:0;right:0;height:2px
 button:after{right:inherit;top:inherit;left:0;bottom:0}
 button:hover:before,button:hover:after{width:100%;transition:800ms ease all}
   </style>
-<style>
+<style> <!--css - khung paste code-->
   .codeToClipboardHeader{background-color:#fff;border:1px solid #e0e0e0;border-bottom:0;text-align:left;padding:3px}
 .copyTextButton{color:#000!important;font-size:18px;padding:4px 10px;border-right:1px solid #e0e0e0;text-decoration:none}
 .copyTextButton:before{margin:0 5px 0 0;font-size:16px;content:'\f0c5';font-family:fontawesome}
 pre.codeToClipboard{background:#fff;max-height:500px;font-size:14px;color:#000;overflow:auto;border:1px solid #d3d6db;margin:auto;padding:10px 8px}
 </style>
-<style> // css - thay đổi màu chữ liên tục
+<style> <!--css - thay đổi màu chữ liên tục-->
   .change-color {font-size:20px; font-weight:700; animation:myfirst 15s; -webkit-animation:myfirst 15s; animation-iteration-count:infinite; -webkit-animation-iteration-count:infinite}
 @keyframes myfirst {
 0% {color:hsl(5,96%,69%)}
@@ -173,7 +173,7 @@ pre.codeToClipboard{background:#fff;max-height:500px;font-size:14px;color:#000;o
 100% {color:hsl(405,96%,69%)}
 }
 </style>
-<style> // css - khung tìm kiếm overlay
+<style> <!--css - khung tìm kiếm overlay-->
   #background-overlay {display:none; z-index:9999; background:#069; position:fixed; top:0; left:0; width:100%; height:100%; text-align:center; transition:top 0.5s ease}
 #button-close {display:block; position:absolute; top:20px; right:20px; cursor:pointer; background:#fff; color:#069; padding:5px 15px 3px 15px; font-size:14px; font-weight:700; border-radius:5px}
 #box-search {display:none; position:relative; z-index:99999; margin: 150px auto 0 auto; width:90%}
