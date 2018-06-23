@@ -1,6 +1,6 @@
 ---
 layout: page
 title: Testing
-permalink: /test/
+permalink: /testing/
 ---
 <div class="change-color">Nơi testing code của tao vào làm gì :v</div>
