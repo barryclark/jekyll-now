@@ -8,17 +8,17 @@ title: Stop & Frisk in DC
 About the Data
 --------------
 
-Earlier this year, the DC Metropolitan Police Department (MPD) released incident-level stop and frisk data, documenting individual stop and frisk encounters between 2010 and 2016. The full dataset, which can be found [here along with further documentation](https://mpdc.dc.gov/publication/stop-and-frisk-data-and-explanatory-notes) contains demographic information about the subject that was stopped, as well as as the time and block where there subject was stopped by police. This data provided an opportunity to examine the policing behavior in the District.  
+Earlier this year, the DC Metropolitan Police Department (MPD) released incident-level stop and frisk data, documenting individual stop and frisk encounters between 2010 and 2016. The full dataset, which can be found [here along with further documentation](https://mpdc.dc.gov/publication/stop-and-frisk-data-and-explanatory-notes) contains demographic information about the subject that was stopped, as well as the time and block where there subject was stopped by police. This data provided an opportunity to examine the policing behavior in the District.  
 
 In 2016, DC City Council passed the Neighborhood Engagement Achieves Results Amendment Act of 2016, or NEAR Act. The legislation was designed to be a "comprehensive, public health-based approach to crime prevention and intervention", as described by its author Kenyan R. McDuffie, who represents Ward 5. One of the key elements of the law was to require the MPD to collect richer data on felony crimes, stops and frisks, and use of force incidents.
 
-However, despite being required by the NEAR Act, the MPD has failed to collect and report the detailed stop and frisk data since 2016. This data includes critical information that demonstrates the basis of the stop and frisk incident, including what grounds led to the stop and whether an arrest was made. 
+Since 2016, the MPD has failed to collect and report the additional stop and frisk details as required by the NEAR Act. This data includes critical information that demonstrates the basis of the stop and frisk incident, including what grounds led to the stop and whether an arrest was made. 
 
 Various DC advocacy organizations, including Black Lives Matter D.C., Stop Police Terror Project D.C., and the American Civil Liberties Union of the District of Columbia, have petitioned and FOIA-ed the MPD to release the data. However, as the Washington City Paper reports, the MPD denied the initial FOIA request in 2017 because the data collection systems (required by law) had not been put in place. A year later, the information was again requested and the organizations were met with the same response. Now the groups are further pressing the Mayor's office to either release the detailed data or, if the data is truly lost, put in place a process to start collecting the data, as required by law.
 
-When questioned by DC Judiciary and Public Safety Chairman Charles Allen as to why the data had not been collected earlier this year, DC Police Chief Peter Newsham stated that the lack of compliance came as a result of a lack of a desire to do so. This is disheartening and frustrating considering that the MPD has invested resources and time in building out other data systems, like [DC Crime Cards](https://dcatlas.dcgis.dc.gov/crimecards/).
+When questioned by DC Judiciary and Public Safety Chairman Charles Allen as to why the additional data had not been collected earlier this year, DC Police Chief Peter Newsham stated that the lack of compliance came as a result of a lack of a desire to do so. This is disheartening and frustrating considering that the MPD has invested resources and time in building out other data systems, like [DC Crime Cards](https://dcatlas.dcgis.dc.gov/crimecards/).
 
-All of this is to say, there are a lot of questions that I wanted to investigate and to answer, that other researchers have tackled, but I was confronted with a lack of detailed data. I will be following the ongoing lawsuit against the MPD and Mayor's office and updating the work below if any further data is provided. So, if you live in DC and want to see that the NEAR Act is fully implemented and want to hold law enforcement accountable and transparent, please consider supporting the work being done by organizations like Black Lives Matter D.C., Stop Police Terror Project D.C., and the American Civil Liberties Union of the District of Columbia in their legal fight.
+All of this is to say, there are a lot of questions that I wanted to investigate and to answer, that other researchers have tackled, but I was confronted with a lack of detailed data. I will be following the ongoing lawsuit against the MPD and Mayor's office and updating the work below if any further data is provided. If you live in DC and want to see the NEAR Act fully implemented and want to hold law enforcement accountable and transparent, please consider supporting the work being done by organizations like Black Lives Matter D.C., Stop Police Terror Project D.C., and the American Civil Liberties Union of the District of Columbia in their legal fight.
 
 While I'm also discussing data shortcomings, I should also flag an equally important factor in the analysis: my race. My interactions with police as a white man are starkly different than that of people of color. How I framed this analysis is based on previous research, as well as what I've heard and learned about how different communities view policing. However, there are perspectives that I am frankly missing and that may be evident in my analysis to many. 
 
@@ -79,7 +79,7 @@ Once we adjust for neighborhood population, we see some big changes in stop and 
 
 Another important note: population in DC is a weird thing. Some areas, like Downtown/Chinatown are densely populated during work hours and happy hour, but have a relatively smaller residential population. This is part of the reason why there is little change for the Chinatown neighborhood while controlling for population, it has a relatively lower Census population, but gets a high amount of foot traffic to museums and sports events.
 
-Using neighborhood Census data, we can look at the neighborhood-level breakdown of stop and frisk incidents by race compared to the neighborhood racial composition. The whole idea here is to see if we can identify disproportionality in stop and frisk at a neighborhood level; where certain racial groups are stopped or targeted at a greater rate than their actual representation in the neighborhood -- walking while black. 
+Using neighborhood Census data, we can look at the neighborhood-level breakdown of stop and frisk incidents by race compared to the neighborhood racial composition. The idea here is to see if we can identify disproportionality in stop and frisk at a neighborhood level -- whether certain racial groups are stopped or targeted at a greater rate than their actual representation in the neighborhood -- or, walking while black. 
 
 ![](https://raw.githubusercontent.com/GWarrenn/gwarrenn.github.io/drafts/images/stop_and_frisk/06_nbh_sf_race.png)
 
@@ -106,7 +106,22 @@ Throughout this section it's important to keep the words of [Hadley Wickham](htt
 
 The chart above illustrates a pretty linear relationship between the previous year's crime level and stop & frisk in each neighborhood of DC. Of course, there are dozens and dozens of other confounding variables that are not being considered in this simplistic approach, but if you were only to use this one variable to predict stop and frisk, you would end up with a model like this:
 
-![](https://raw.githubusercontent.com/GWarrenn/gwarrenn.github.io/drafts/images/stop_and_frisk/models.htm)
+<table align="center" style="text-align:center"><tr><td colspan="2" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"></td><td><em>Dependent variable:</em></td></tr>
+		<tr><td></td><td colspan="1" style="border-bottom: 1px solid black"></td></tr>
+		<tr><td style="text-align:left"></td><td>Average Stop & Frisk</td></tr>
+		<tr><td colspan="2" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">Average previous year crime</td><td>1.461<sup>***</sup></td></tr>
+		<tr><td style="text-align:left"></td><td>(0.117)</td></tr>
+		<tr><td style="text-align:left"></td><td></td></tr>
+		<tr><td style="text-align:left">Constant</td><td>4.170</td></tr>
+		<tr><td style="text-align:left"></td><td>(11.255)</td></tr>
+		<tr><td style="text-align:left"></td><td></td></tr>
+		<tr><td colspan="2" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">Observations</td><td>39</td></tr>
+		<tr><td style="text-align:left">R<sup>2</sup></td><td>0.808</td></tr>
+		<tr><td style="text-align:left">Adjusted R<sup>2</sup></td><td>0.803</td></tr>
+		<tr><td style="text-align:left">Residual Std. Error</td><td>41.543 (df = 37)</td></tr>
+		<tr><td style="text-align:left">F Statistic</td><td>156.007<sup>***</sup> (df = 1; 37)</td></tr>
+		<tr><td colspan="2" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"><em>Note:</em></td><td style="text-align:right"><sup>*</sup>p<0.1; <sup>**</sup>p<0.05; <sup>***</sup>p<0.01</td></tr>
+</table>
 
 The "crime-only" model that we've created shows a pretty strong relationship between the previous year crime rate and current year stop and frisk with an R-squared of about .80. More specifically, for one unit of increase in a neighborhood's previous year crime rate, the number of stop and frisks in the current year will increase by a factor of 1.46.
 
@@ -146,7 +161,33 @@ Similar to to the population comparison, Cleveland Park/Woodley Park, Downtown C
 
 Building off the "crime-only" model, now that we have access to demographic crime data, we can start to look at the relation between stop and frisk on an individual level, rather than a neighborhood level as we did previously. Except rather than using a linear regression to model the data, we'll use a Poisson regression, which is specifically geared toward modeling count data. This work is largely built off the research conducted by [Gelman, Fagan and Kiss]("http://www.stat.columbia.edu/~gelman/research/published/frisk9.pdf") examining stop and frisk in New York City in the late 1990's. The specific Poisson model we'll be using will estimate stop and frisk for each neighborhood while controlling for the race of the subject, the racial composition of the neighborhood in which they were stopped, and will use the crime rate for that racial group as an offset (Gelman et al. used the previous year, however we're only have access to the same year's crime data by race).
 
-![](https://raw.githubusercontent.com/GWarrenn/gwarrenn.github.io/drafts/images/stop_and_frisk/poisson.htm)
+<table align="center" style="text-align:center"><tr><td colspan="2" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"></td><td><em>Dependent variable:</em></td></tr>
+	<tr><td></td><td colspan="1" style="border-bottom: 1px solid black"></td></tr>
+	<tr><td style="text-align:left"></td><td>Total Stop Frisk</td></tr>
+	<tr><td colspan="2" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">Subject Race: Black</td><td>1.074<sup>***</sup></td></tr>
+	<tr><td style="text-align:left"></td><td>(0.187)</td></tr>
+	<tr><td style="text-align:left"></td><td></td></tr>
+	<tr><td style="text-align:left">Subject Race: Hispanic/Latino</td><td>0.856<sup>***</sup></td></tr>
+	<tr><td style="text-align:left"></td><td>(0.249)</td></tr>
+	<tr><td style="text-align:left"></td><td></td></tr>
+	<tr><td style="text-align:left">Neighborhood Percent Black: 10% - 40%</td><td>-0.519<sup>***</sup></td></tr>
+	<tr><td style="text-align:left"></td><td>(0.162)</td></tr>
+	<tr><td style="text-align:left"></td><td></td></tr>
+	<tr><td style="text-align:left">Neighborhood Percent Black: 40% - 60%</td><td>-0.312<sup>*</sup></td></tr>
+	<tr><td style="text-align:left"></td><td>(0.182)</td></tr>
+	<tr><td style="text-align:left"></td><td></td></tr>
+	<tr><td style="text-align:left">Neighborhood Percent Black: 60% - 80%</td><td>-0.775<sup>***</sup></td></tr>
+	<tr><td style="text-align:left"></td><td>(0.178)</td></tr>
+	<tr><td style="text-align:left"></td><td></td></tr>
+	<tr><td style="text-align:left">Neighborhood Percent Black: 80% - 100%</td><td>-0.994<sup>***</sup></td></tr>
+	<tr><td style="text-align:left"></td><td>(0.159)</td></tr>
+	<tr><td style="text-align:left"></td><td></td></tr>
+	<tr><td style="text-align:left">Constant</td><td>-1.716<sup>***</sup></td></tr>
+	<tr><td style="text-align:left"></td><td>(0.197)</td></tr>
+	<tr><td style="text-align:left"></td><td></td></tr>
+	<tr><td colspan="2" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">Observations</td><td>98</td></tr>
+	<tr><td colspan="2" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"><em>Note:</em></td><td style="text-align:right"><sup>*</sup>p<0.1; <sup>**</sup>p<0.05; <sup>***</sup>p<0.01</td></tr>
+</table>
 
 There are plenty of great (better*) resources on the Internet/public domain that can explain the details of Poisson regressions, however, if you're like me and just want to skim the relevant cross-validated/stack overflow posts to know the gist of how the model should be interpreted, then here's a quick explanation of the results above. The parameters displayed represent the multiplicative increase in stop and frisk for all neighborhood race compositions compared to the base factor. In the case of race, the base is white and in the case of neighborhood percent black, it's 0% - 10% black.
 
