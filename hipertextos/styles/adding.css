@@ -14,7 +14,8 @@ text-align: center;}
 #current-nav, #current-nav a:visited, #current-nav:visited {color:#fff !important;}
 #site-nav label {color:var(--color-grey);border:thin solid transparent;}
 #site-nav label:hover {color:var(--color-soft-grey);border:thin solid #353535;}
-.cover h2 { letter-spacing: 0.001em;font-weight: normal; }
+.cover h2 { letter-spacing: 0.069em;font-weight: lighter;font-size:1.3em; }
+.cover h1 {letter-spacing: 0.069em;font-weight: normal ;font-size:1.8em;}
 #coffee h2 {margin:0;}
 body {text-align: justify;-moz-hyphens:none;-ms-hyphens:none;-webkit-hyphens:none;-o-hyphens:none;hyphens:none;word-wrap:none;}
 p, ul {font-size: 18px;line-height: 27px;}
