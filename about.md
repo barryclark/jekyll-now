@@ -16,6 +16,9 @@ Birthday: 29-10-2002
 
 [comehere.thang@gmail.com](mailto:comehere.thang@gmail.com)
 
+        </main>
+        <footer id="footer " class="footer ">
+            <div class="footer-image "></div>
             <div class="footer-inner ">
                 <p>Blog has sprouted
                     <span id="since ">21-6-2017</span>
