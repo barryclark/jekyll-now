@@ -157,6 +157,11 @@ pre.codeToClipboard{background:#fff;max-height:500px;font-size:14px;color:#000;o
 100% {color:hsl(405,96%,69%)}
 }
 </style>
+<style> 
+/* CSS Progress */
+#reading-progress{position:fixed;/*top:0px;*/width:100%;height:3px;margin:0px;left:0px;z-index:9999999999999;}
+.bar{height:3px;background:#0088ff;box-shadow:0 0 10px rgba(0,136,255,0.7);position:fixed;z-index:9999999999999}
+</style>
 
   <body>
     <b:if cond='data:blog.url == data:blog.homepageUrl'><!-- Start Page Loading -->
@@ -346,6 +351,14 @@ pre.codeToClipboard{background:#fff;max-height:500px;font-size:14px;color:#000;o
 //]]>
 </script>
 <!-- End Page Loading --></b:if>
+
+<!-- Read Loading -->
+<b:if cond='data:blog.pageType == &quot;item&quot;'>
+<div id='reading-progress'>
+  <span class='bar' id='progress-bar'/>
+</div>
+</b:if>
+
     <div class="wrapper-masthead">
       <div class="container">
         <header class="masthead clearfix">
@@ -380,6 +393,19 @@ pre.codeToClipboard{background:#fff;max-height:500px;font-size:14px;color:#000;o
     <script type='text/javascript'>
 $('body').on('contextmenu', 'img', function(e){ return false; });
 </script>
+
+<!-- Reading -->
+<script>//<![CDATA[
+window.addEventListener('scroll', function(e) {
+  var s = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
+  var body = document.body;
+  var html = document.documentElement;
+  var d = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
+  var c = window.innerHeight;
+  var position = (s / (d - c)) * 100;
+  document.getElementById('progress-bar').setAttribute('style', 'width: ' + position + '%');
+});
+//]]></script>
     
     {% include analytics.html %}
   </body>
