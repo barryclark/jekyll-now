@@ -3,6 +3,8 @@ layout: post
 title: Nature Reflection
 ---
 
+Winnipeg Beach
+
 I had the opportunity to go to Winnipeg beach on Saturday June 16th. I arrived at the beach at around 2:30 PM. I sat down in a secluded area by myself and lost myself in the serenity of the ocean.
 I loved going to the beach as a kid and this took me back to the "Good old days." I loved feeling the breeze on my face and hearing the waves crash on the shore. It was such an incredibly calming feeling and I was happy to just be there. Not do anything, just sit in silence and exist.
 
