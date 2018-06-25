@@ -1,10 +1,11 @@
 ---
 layout: post
-title: установка принтера HP LaserJet 1018 под Debian.
+title: Установка принтера HP LaserJet 1018 под Debian.
 ---
 
 Каждый раз приходится устанавливать принтер, после новой инсталяции Debian, на рабочую станцию. 
-Делаем минимум движения пальцами.
+
+Делаем минимум движении пальцами.
 
 {% highlight bash %}
 sudo apt install cups printer-driver-hpcups printer-driver-foo2zjs
