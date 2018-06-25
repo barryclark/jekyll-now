@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 2017 End of Year Side Income Report
-tags: [money]
-keywords: [income, income report, blog income report, side income]
+tags: [money, income report]
+keywords: [income, blog income report, side income]
 javascripts: [/js/d3.min.js, /js/c3.min.js]
 csses: [/css/c3.min.css]
 image: /images/covers/2017-side-income.png
