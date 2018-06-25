@@ -4,7 +4,7 @@ title: Climbing the ladder of causality
 date: "2018-06-24 12:08"
 ---
 
-*JOke, something that seems obvious.* If this seems obvious to you, congratulations! The neural network within your head is able to do something most artificial neural networks are not capable of: causal reasoning. Causality and artificial intelligence have recently sparked some interest in the machine learning community by a new book by Judea Pearl: 'The Book of Why: The New Science of Cause and Effect'. I really like these kinds of books. As a computer scientist, Pearl talks about statistical tools which allow us to answer difficult questions ('will this drug have an effect?'), but as a philosopher he makes us wonder what it means to be human equipped with the intelligence to ponder about hypothetical situations. In this post I will attempt to organize the main ideas of The Book of Why in my own research sphere.
+Wearing shorts in november will not induce summer. If this seems obvious to you, congratulations! The neural network within your head is able to do something most artificial neural networks are not capable of: causal reasoning. Causality and artificial intelligence have recently sparked some interest in the machine learning community by a new book by Judea Pearl: '[The Book of Why: The New Science of Cause and Effect](https://www.goodreads.com/book/show/36518232-the-book-of-why)'. I really like these kinds of books. As a computer scientist, Pearl talks about statistical tools which allow us to answer difficult questions ('will this drug have an effect?'), but as a philosopher he makes us wonder what it means to be human equipped with the intelligence to ponder about hypothetical situations. In this post I will attempt to organize the main ideas of The Book of Why in my own research sphere.
 
 ## What machine learning can and cannot do
 
@@ -26,7 +26,7 @@ It is with great care that Pearl explains that these are fundamentally different
 
 To assess the effect of interventions however one either has to perform a suitable experiment (which might not be possible) or you have to be able to reason about the causal structure about the variables of the system. Using only data usually won't get you far answering these types of problems. If you have a database of high school pupils with their curricula and test scores, you could easily see that pupils who follow advanced math courses tend to score better on a standardized mathematics test. Would enlisting all students to such advanced math courses improve their mathematics understanding? Not necessary! It is possible that students enlisted in such courses are naturally more gifted in maths. Adding pupils without a knack for math would in this case not help (or worse, it could demotivate them resulting in an even worse grade). Moral: the second level require a more mechanistic understanding of the system.
 
-The final level is even more difficult to model, as it deals with reality as it could be if circumstances were different. By definition, there is no data available, nor could we ever perform experiments, unless someone invents a time machine. In order to make statements about hypothetical situations, we need an intricate understanding of the system and how everything is linked. If we return to the example of mathematics education, I could reason what my math score would be if I had taken the advanced mathematics course. This would not only accounting for all the things that I would have learned during such a course, but also involve backtracking who I might have met there, what influence this could have had on my other activities etc.
+The final level is even more difficult to model, as it deals with reality as it could be if circumstances were different. By definition, there is no data available, nor could we ever perform experiments, unless someone invents a time machine. The results of queries at this level are called *counterfactuals*. In order to make statements about such hypothetical situations, we need an intricate understanding of the system and how everything is linked. If we return to the example of mathematics education, I could reason what my math score would be if I had taken the advanced mathematics course. This would not only accounting for all the things that I would have learned during such a course, but also involve backtracking who I might have met there, what influence this could have had on my other activities etc.
 
 ## A simple ecosystems modeling example
 
@@ -50,6 +50,8 @@ In more realistic situations, a much more richer description of the variables co
 > *You cannot do inference without making assumptions.* ~ David J.C. MacKay.
 
 The data can only bring us so far. We will assume that the variables follow causal diagram below.
+
+![Toy causal diagram for the ecosystem example.](../../images/2018_causality/causal.png)
 
 This means the the joint probability distribution factorizes as
 
@@ -96,6 +98,18 @@ The great triumph of Pearl and his students is that they have found three (only 
 
 > *Oa mijn tante kluuten, t' was mijne nonkel.* ~ Flemish proverb about hypotheticals.
 
-##
+A certain plot has neither plants nor birds, would there be birds if plants were present? This query is formalized as the counterfactual outcome
 
-, the computer scientist who invented [Bayesian networks](https://en.wikipedia.org/wiki/Bayesian_network) has recently written a new book on causality
+$$
+\mathbb{P}(B=1 \mid S=s, P=0, I=i, P^\star=1)\,,
+$$
+
+indicating the probability of having birds if there were plants present (indicated by $P^\star=1$).
+
+Again, to compute the above quantity, one needs additional rules to translate the expression in classical probability terms. The crux is to take into account all factors that would have been different given that there were plants present. If you are lucky, it is possible to obtain an expression for the counterfactual distribution which can be estimated from data.
+
+## Perspectives
+
+When Pearl introduced [Bayesian networks](https://en.wikipedia.org/wiki/Bayesian_network), he opened the rigid rule-based artificial intelligence to a more fuzzy, probabilistic reasoning. In his book he argues that in addition to dealing with uncertainties, machine learning methods should also (implicitly or explicitly) use a causal reasoning. Ferenc Huszár's [blog](http://www.inference.vc/untitled/) has worked out a new small introduction to causal inference and do-calculus in response to Pearl's book. Check the comments for some references to recent research about deep learning models with a causal twist.
+
+Currently, I myself am quite interested in [kernel mean embedding](https://arxiv.org/pdf/1605.09522.pdf), a framework which uses kernel functions to represent probability distributions as points in a high-dimensional space. In my experience, kernel methods excel for many biological problems where data is rather limited but there is a lot of expert knowledge to be assimilated (think species interaction networks). Since kernel mean embedding is a flexible tool to think about distributions, there is some interesting work in the direction of causality, such as counterfactual embeddings. Causality seems to be a new research interest of Bernhard Schölkopf, one of the fathers of kernel methods. A [new book](https://mitpress.mit.edu/books/elements-causal-inference) from his group explores the links between machine learning and causal inference.
