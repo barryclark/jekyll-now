@@ -4,12 +4,8 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Junior physics student at Colorado College trying to determine the existence of a quiescent low-mass x-ray binary pair in the open cluster NGC6819.
 
-### More Information
+### Contact 
 
-A place to include any other types of information that you'd like to include about yourself.
-
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+t_ory@coloradocollege.edu
