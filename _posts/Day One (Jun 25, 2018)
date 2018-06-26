@@ -1,0 +1,20 @@
+# Astroblog-Summer-2018
+I am researching the rich open cluster NGC 6819 with the Gosnell Research Group to try to confirm the existence of a possible quiescent low-mass X-ray binary pair. 
+
+# First Post -- Bio
+This summer is my first experience doing research in a scientific field, but I'm ready to help in trying to better understand open cluster formation. I am a physics student at Colorado College, which is where this research is being done. 
+
+# Day One
+The main goal of today was to learn how to do photometry, and the first step in that was to get data to do photometry with. I had to learn how to navigate MAST and how to get .fits files, and I was able to download some HST data from MAST and already had Diafi data from Dr. Gosnell. I hoped to get some time learning how to use python for photomoetry, but downloading the HST data took up most of the day. I also spent some time reading the proposal that came with the Diafi data.
+
+### HST DATA
+I first had to figure out how to navigate MAST (the Mikulski Archive for Space Telescopes), which ended up being simple. Dr. G sent us some resources to help us learn photometry, and in a tab above the photometry one there was a link to a resource that talked about how to use MAST, but it was very specific towards a certain professional group and sent me to the wrong place at first. However, I was eventually able to figure out just the most basic things about MAST and was able to find HST (Hubble Space Telescope) data in the F606W and F8414W filter bandwidths. My collaborator Rory will download 73 .fits files from MAST's HLA (Hubble Legacy Archive) tomorrow morning and I downloaded 78 files from MAST's current HST archive. I also saw some of the greater capabilities of MAST but have yet to explore them. 
+
+Once I got the data from MAST, I still had to figure out how to open it. I got the download in the form of a .sh file, which is an executable file for Unix systems. After doing some googling, I figured out how to run this file type using the terminal, and this let me download the actual .fits files, which ended up taking most of the day. This, along with the Diafi data given to me by Dr. G, will be what I learn photometry on. Locked away in this data is the answer to the question of whether or not there is a quiescent low-mass X-ray binary pair in the open cluster NGC6819, which I will uncover using photometry and astrometry data provided by my collaborator Marta. 
+
+### Photometry
+I spent some time today reading a few resources on photutils, but found them to not be very helpful. One was a powerpoint presentation that was difficult to get information from without a presenter. Another was a short tutorial in photutils by the company themselves, which was helpful, but will mean more to me once I've already more knowledgeable in python and photometry. However, I did find some useful resources and am planning on looking through a textbook on python Dr. G provided in detail tomorrow, but just gave it a glancing view today. Unfortunately, the most useful one, a jupyter notebook full of excercises using photutils, required me to use the terminal, which was occupied downloading all the HST data. That is where I will start tomorrow.
+
+### Conclusion
+
+I spent a lot of today trying things that ended up not being very helpful, but that's what I expected for the start of this project. I do, however, have a clear goal for tomorrow and can see progress being made. I hope to have made some type of tangible progress at the end of the week, even if that just ends up being me figuring out how to put data through python. 
