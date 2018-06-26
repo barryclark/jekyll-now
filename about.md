@@ -4,12 +4,11 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
-
+Prashant Keshvani here 
 ### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
+ 
+Here I am going to write my tech blog,
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[prashant2400@wimt.in](mailto:prashant2400@wimt.in)
