@@ -26,7 +26,7 @@ While I didn't record fixing the A/C - I needed to fix it as soon as possible - 
 
 In fact, it's probably applicable to Civics outside this year range, as well as other Honda models (e.g. Honda Accord, Honda CR-V, Honda Fit, Honda Odyssey, Honda Passport, Honda Pilot, etc.)
 
-## Unlocking the Radio
+## How to Unlock the Radio on a 2004 Honda Civic
 
 <video width="700" height="394" controls>
     <source src="/video/2004-honda-civic/unlocking-the-radio.mp4" type="video/mp4">
@@ -42,7 +42,7 @@ Instructions:
 6. Turn on the radio.
 7. Enter the code.
 
-## Setting the Clock
+## How to Set the Clock on a 2004 Honda Civic
 
 <video width="700" height="394" controls>
     <source src="/video/2004-honda-civic/setting-the-clock.mp4" type="video/mp4">
