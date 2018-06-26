@@ -11,4 +11,6 @@ I loved going to the beach as a kid and this took me back to the "Good old days.
 I definitely found it very calming, but I'm not sure if I can pinpoint what it was that I found so
 calming. The repeated action of the waves on the beach was definitely part of what helped establish a tranquil ambiance. I remember smelling the saltiness of the sea water. After a stressful week of fast paced summer classes it was nice to relax and slow down for a change.
 
+![_config.yml]({{ site.baseurl}}/images/beachtime.PNG)
+
 Before I knew it, it was already 4PM. Although it wasn't the nicest of days to visit the beach, it was cloudy and windy, I still had a good time. I still look back on my time an cherish it whenever I find myself trapped in the bustling urban routine most of us are all too familiar with.
