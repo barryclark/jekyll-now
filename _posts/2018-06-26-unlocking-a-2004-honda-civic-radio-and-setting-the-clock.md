@@ -14,7 +14,7 @@ The thing is with Honda, or at least this generation of Honda Civics is that if 
 
 > **You might also like: [2004 Honda Civic Cabin Air Filter Replacement](https://hendrixjoseph.github.io/2004-honda-civic-cabin-air-filter-replacement/)**
 
-Fortunately, Honda maintains an online database of the unlock code - you just need the VIN (Vehicle Identification Number) and radio serial number. This online database is at https://radio-navicode.honda.com/.
+Fortunately, Honda maintains an online database of the unlock code - you just need the VIN (Vehicle Identification Number) and radio serial number. This online database is at [https://radio-navicode.honda.com/](https://radio-navicode.honda.com/).
 
 While I didn't record fixing the A/C - I needed to fix it as soon as possible - I did video myself unlocking the radio and setting the clock. Remember, my wife's car is a 2004 Honda Civic. However, the below videos should be applicable to the following years:
 
@@ -38,7 +38,7 @@ Instructions:
 2. Press and hold the "1" and "6" preset buttons.
 3. Turn the radio on while continuing to hold those two buttons.
 4. Record the serial number.
-5. Turn off the radio and car while you go online to https://radio-navicode.honda.com/ and get the code.
+5. Turn off the radio and car while you go online to [https://radio-navicode.honda.com/](https://radio-navicode.honda.com/) and get the code.
 6. Turn on the radio.
 7. Enter the code.
 
