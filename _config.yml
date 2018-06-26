@@ -20,11 +20,8 @@ footer-links:
   email: t_ory@coloradocollege.edu
   github: thom-ory.github.io
 
----
-layout: default
-comments: true
-# other options
----
+disqus: thom-ory.github.io
+
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
