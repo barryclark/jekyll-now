@@ -2,7 +2,7 @@
 layout: post
 title: Slow Eating in a fast world.
 ---
-
+ 
 Slow movement
 
 Slow movement is a concept that stresses the importance of "slowing down in a world that is obsessed with speed". Slow movement encourages people to set aside distractions such as social media and electronics and enjoy each other's company. Guy Michlin says a good way to start implementing slow movement concepts in your life is to dine with others, without electronics (Michlin, Come Dine With Me, Slowly). By dining "slow" you will get to know others better and enjoy each other's company. Slow movement also promotes health and stress relief. Slowing down allows more time to reflect and focus on your health. By putting down the electronics and slowing down your daily pace, you will reduce stress in your life. Finally, by implementing slow movement in your life, you will be able to strengthen bonds between yourself and friends/family. Slow movement will help strengthen relationships because it will allow you to spend more quality time with your friends and family members. The company EatWith, founded by Guy Michlin, was created to bring people together to enjoy a "slow" meal together without distractions.
