@@ -4,15 +4,15 @@ title: Climbing the ladder of causality
 date: "2018-06-24 12:08"
 ---
 
-Wearing shorts in november will not induce summer. If this seems obvious to you, congratulations! The neural network within your head is able to do something most artificial neural networks are not capable of: causal reasoning. Causality and artificial intelligence have recently sparked some interest in the machine learning community by a new book by Judea Pearl: '[The Book of Why: The New Science of Cause and Effect](https://www.goodreads.com/book/show/36518232-the-book-of-why)'. I really like these kinds of books. As a computer scientist, Pearl talks about statistical tools which allow us to answer difficult questions ('will this drug have an effect?'), but as a philosopher he makes us wonder what it means to be human equipped with the intelligence to ponder about hypothetical situations. In this post I will attempt to organize the main ideas of The Book of Why in my own research sphere.
+Wearing shorts in November will not induce summer. If this seems obvious to you, congratulations! The neural network within your head is able to do something most artificial neural networks are not capable of: causal reasoning. A new book by Judea Pearl: '[The Book of Why: The New Science of Cause and Effect](https://www.goodreads.com/book/show/36518232-the-book-of-why)' has recently sparked an increased interest for causality in the machine learning community. And for good reasons! As a computer scientist, Pearl presents a framework which can be used  ('Will this drug have an effect?', 'What would have happened if I had...?'). However, as a philosopher he makes us wonder what it means to be human, capable of pondering about hypothetical situations. In this post I will attempt to organize the main ideas of *The Book of Why* in my own research sphere.
 
 ## What machine learning can and cannot do
 
-Most machine learning methods are concerned with finding patterns or *associations* in data. Both supervised as well as unsupervised learning try to distill some rules from datasets, for example learn to detect an animals in photos, cluster documents according to latent topics or predicting biological function of a gene based on its DNA sequence. Though machine learning excels in describing the real world, they are often quite lacking in *understanding* the world. This is nicely illustrated by the apparent fragility of deep neural networks of which changing a couple of pixels of an image of a panda can make the neural network be confident that the picture is of a vulture. Many machine learning methods have only a shaky grasp on reality.
+Most machine learning methods deal with finding patterns or *associations* in data. Both supervised as well as unsupervised learning methods try to distill 'rules' from datasets, for example to detect an animals in photos, cluster documents according to latent topics or predicting biological function of a gene based on DNA sequence. Though machine learning methods excel in describing the real world, they are often quite lacking in *understanding* the world. This is nicely illustrated by the apparent fragility of deep neural networks of which changing a couple of pixels of an image of a panda can make the neural network be confident that the picture is of a vulture. Most deep neural networks seem to only have a shaky grasp on reality, at best.
 
-Take an example of medicine. Using genome-wide association studies one can link certain properties (i.e. genetic markers) of the human genome to certain diseases. Would it make sense to 'fix' such positions using gene editing techniques? I highly doubt it, since these markers might very well be predictive for a certain disease, they are not necessarily the cause of it. For example, a marker might be indicative that the patient is part of some ethnic group having a higher risk.
+Consider an example of our lab. My student studied bacteria-phage (phages are viruses that infect bacteria and could potentially be used as living antibiotics) interactions for his master thesis. He made a predictive model that based on the characteristics of a certain protein of such a phage can predict which bacterial host this phage can infect. And this model works quite well, it is correct in more than 90% of the cases, using an external dataset. Now, we are collaborating with a synthetic biology group and they want to *make* specific artificial proteins to target specific bacteria using synthetic biology. Could they use our predictive model to this end, to guide the design? I am afraid that the answer will likely be no. The properties that the model detects based on the sequence of this protein is likely not directly the causal mechanism of infection. We found the model searches for biases in the codon use of the protein (how the phage 'encodes' the protein in its genes), which is tuned toward its host. To obtain design rules, the model has to take the 3D structure and physicochemical characteristics of the protein into account, a much harder task.
 
-This idea did strike a nerve with me. In my research I am developing models for ecological modeling such as how characteristics of a river impact the diversity of insects. The reason-d'être is of course that such models can be used to produce guidelines for ecosystems management. One should be very cautious to use a predictive model to guide actions.
+This book did strike a nerve with me. In my research I am developing models for ecological modeling such as how characteristics of a river impact the diversity of insects. The reason-d'être is of course that such models can be used to produce guidelines for ecosystems management. One should be very cautious to use a predictive model to guide actions.
 
 ## The ladder of causality
 
@@ -24,9 +24,9 @@ In this book, Pearl describes the three levels of causal inference, his ladder o
 
 It is with great care that Pearl explains that these are fundamentally different concepts, for which different mathematical tools are required. Associations are studied using the rules from probability theory and can be learned from data using statistical methods.
 
-To assess the effect of interventions however one either has to perform a suitable experiment (which might not be possible) or you have to be able to reason about the causal structure about the variables of the system. Using only data usually won't get you far answering these types of problems. If you have a database of high school pupils with their curricula and test scores, you could easily see that pupils who follow advanced math courses tend to score better on a standardized mathematics test. Would enlisting all students to such advanced math courses improve their mathematics understanding? Not necessary! It is possible that students enlisted in such courses are naturally more gifted in maths. Adding pupils without a knack for math would in this case not help (or worse, it could demotivate them resulting in an even worse grade). Moral: the second level require a more mechanistic understanding of the system.
+To assess the effect of interventions however one either has to perform a suitable experiment (which might be really expensive or even not possible) or you have to be able to reason about the causal structure about the variables of the system. Using only data (usually) won't get you far answering these types of problems. If you have a database of high school pupils with their curricula and test scores, you could easily see that pupils who follow advanced math courses tend to score better on a standardized mathematics test. Would enlisting all students to such advanced math courses improve their mathematics understanding? Not necessary! It is possible that students enlisted in such courses are naturally more gifted in maths. Adding pupils without a knack for math would in this case not help (or worse, it could demotivate them resulting in an even worse grade). Moral: the second level require a more mechanistic understanding of the system.
 
-The final level is even more difficult to model, as it deals with reality as it could be if circumstances were different. By definition, there is no data available, nor could we ever perform experiments, unless someone invents a time machine. The results of queries at this level are called *counterfactuals*. In order to make statements about such hypothetical situations, we need an intricate understanding of the system and how everything is linked. If we return to the example of mathematics education, I could reason what my math score would be if I had taken the advanced mathematics course. This would not only accounting for all the things that I would have learned during such a course, but also involve backtracking who I might have met there, what influence this could have had on my other activities etc.
+The final level is even more difficult to model, as it deals with reality as it could be if circumstances were different. By definition, there is no data available, nor could we ever perform experiments, unless someone invents a time machine. The results of queries at this level are called *counterfactuals*. In order to make statements about such hypothetical situations, we need an intricate understanding of the system and how everything is linked together. If we return to the example of mathematics education, I could reason what my math score would be if I had taken the advanced mathematics course. This would not only accounting for all the things that I would have learned during such a course, but also involve backtracking who I might have met there, what influence this could have had on my other activities etc.
 
 ## A simple ecosystems modeling example
 
@@ -43,7 +43,7 @@ No model without data! We sample a bunch of sites and record the status for the 
 | ..   |        |         |       |
 | 0    | 0      | 0       | 0     |
 
-In more realistic situations, a much more richer description of the variables could be used, such as a real value or even a vectorial description of for example which kinds of plants are present in which quantity.
+In more realistic situations, a we might use amuch more richer description of the variables, such as a real value or even a vectorial description of for example which kinds of plants are present in which quantity.
 
 ### A causal diagram
 
@@ -53,7 +53,7 @@ The data can only bring us so far. We will assume that the variables follow caus
 
 ![Toy causal diagram for the ecosystem example.](../../images/2018_causality/causal.png)
 
-This means the the joint probability distribution factorizes as
+This means the joint probability distribution factorizes as
 
 $$
 \mathbb{P}(S, P, I, B) = \mathbb{P}(S) \mathbb{P}(P\mid S)\mathbb{P}(I\mid S,P)\mathbb{P}(B\mid P,I)\,,
@@ -66,17 +66,17 @@ meaning that:
 - the presence of insects depends on the plants and the soil (for nesting grounds);
 - the presence of the bird species depend on both the plants and the insects, which provide nesting grounds and food sources.
 
-How do we know this? Expert knowledge! We presume that a biologist has kindly provided us with this causal diagram, as it is in principle not possible to derive from the data alone. This is because we can, in principle, factorize the distribution $\mathbb{P}(S, P, I, B)$ any way we like and these would all be equivalent from a statistical point of view. Causal inference (obtaining the causal diagram from data) is a big topic on its own. Here we will mainly be concerned with using the diagram to answer queries.
+How do we know this? Expert knowledge! We presume that a biologist has kindly provided us with this causal diagram, as it is in principle not possible to derive from the data alone. This is because we can, in principle, factorize the distribution $\mathbb{P}(S, P, I, B)$ any way we like and these would all be equivalent from a statistical point of view. Causal inference (obtaining the causal diagram from data) is a big topic on its own. Here we will mainly be concerned with *using* the diagram to answer queries.
 
 ### Association
 
-Given that I observe a plot with the plant species present, are there likely birds? This question corresponds to the standard conditional probability $\mathbb{P}( B=1\mid P=1)$. This can be computed as
+Given that I observe a plot with the plant species present, are there likely birds? This question corresponds to the standard conditional probability that $B=1$ *given* $P=1$. This can be stated and computed as
 
 $$
 \mathbb{P}( B=1\mid P=1) = \frac{\mathbb{P}( B=1 \cap P=1)}{\mathbb{P}(P=1)}\,.
 $$
 
-The two quantities in the fraction can readily be estimated from the table of data. Association is easy.
+The two quantities in the fraction can readily be estimated from the table of data. Association is easy!
 
 Now, if you are protesting that this would not be possible for realistic cases with tens, hundreds or thousands of variables - you are right. If the number of variables increases we have to combat the curse of dimensionality using more sophisticated parametric methods: logistic regression, support vector machines, random forests and the like. Still, the main point remains that we can theoretically answer associated questions purely based on data.
 
@@ -90,7 +90,7 @@ $$
 
 where $\text{do}(P)=1$ means that we set $P$ to $1$. This query cannot be computed using the standard rules of probability.
 
-In general $\mathbb{P}( B=1\mid P=1)\neq \mathbb{P}( B=1\mid \text{do}(P)=1)$. This can be understood as follows. Suppose the insects are only there is both the soil is rich and the plant species is present and likewise the birds can only be present if both the plants and insects are on the site. Adding plants would not make a poor soil rich, so it will not induce insects being present and will not lure any birds whereas the mere presence of plants makes it more likely that both insects and birds are present.
+In general $\mathbb{P}( B=1\mid P=1)\neq \mathbb{P}( B=1\mid \text{do}(P)=1)$. This can be understood as follows. Suppose the insects are only there if both the soil is rich and the plant species is present and, likewise, the birds can only be present if both the plants and that insects are present on the site. Adding plants would not make a poor soil rich, so it will not induce insects being present and will not lure any birds whereas the mere presence of plants makes it more likely that both insects and birds are present.
 
 The great triumph of Pearl and his students is that they have found three (only three!) rules which allows the rules of probability theory to work the the do-operator. The beauty of their result is that they allow for removing this operator from the query and reformulate it using only standard probability expressions. This means that we can estimate such effects from the data - provided that we have a causal diagram!
 
@@ -110,6 +110,6 @@ Again, to compute the above quantity, one needs additional rules to translate th
 
 ## Perspectives
 
-When Pearl introduced [Bayesian networks](https://en.wikipedia.org/wiki/Bayesian_network), he opened the rigid rule-based artificial intelligence to a more fuzzy, probabilistic reasoning. In his book he argues that in addition to dealing with uncertainties, machine learning methods should also (implicitly or explicitly) use a causal reasoning. Ferenc Huszár's [blog](http://www.inference.vc/untitled/) has worked out a new small introduction to causal inference and do-calculus in response to Pearl's book. Check the comments for some references to recent research about deep learning models with a causal twist.
+When Pearl introduced [Bayesian networks](https://en.wikipedia.org/wiki/Bayesian_network), he opened the rigid rule-based artificial intelligence to a more fuzzy, probabilistic reasoning. In his book he argues that in addition to dealing with uncertainties, machine learning methods should also (implicitly or explicitly) use a causal reasoning. Ferenc Huszár's [blog](http://www.inference.vc/untitled/) has worked out a small introduction to causal inference and do-calculus in response to Pearl's book. Check the comments for some references to recent research about deep learning models with a causal twist.
 
 Currently, I myself am quite interested in [kernel mean embedding](https://arxiv.org/pdf/1605.09522.pdf), a framework which uses kernel functions to represent probability distributions as points in a high-dimensional space. In my experience, kernel methods excel for many biological problems where data is rather limited but there is a lot of expert knowledge to be assimilated (think species interaction networks). Since kernel mean embedding is a flexible tool to think about distributions, there is some interesting work in the direction of causality, such as counterfactual embeddings. Causality seems to be a new research interest of Bernhard Schölkopf, one of the fathers of kernel methods. A [new book](https://mitpress.mit.edu/books/elements-causal-inference) from his group explores the links between machine learning and causal inference.
