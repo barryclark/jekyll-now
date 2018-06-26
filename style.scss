@@ -82,7 +82,7 @@ p {
   margin: 15px 0;
 }
 
-a {
+a:link, a:visited {
   color: $apoapsis-darkblue;
   text-decoration: none;
 	cursor: pointer;
@@ -240,7 +240,8 @@ nav {
     justify-content: center;
   }
 
-  & > a {
+  & > a:link,
+  & > a:visited {
     padding: .4rem;
     border-radius: 4px;
 
@@ -356,15 +357,36 @@ blockquote {
   }
 }
 
-.team-member-presentation {
+.team-member-presentation,
+.sponsor-presentation {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: .5em 0 1.5em;
   font-style: italic;
+  flex-direction: row-reverse;
 
-  &:nth-of-type(even) {
-    flex-direction: row-reverse;
+  img {
+    margin: 1em;
+    max-height: 150px;
+  }
+
+  a, img {
+    flex-shrink: 0;
+  }
+
+  @include mobile {
+    flex-direction: column;
+  }
+}
+
+.team-member-presentation {
+  &:nth-of-type(odd) {
+    flex-direction: row;
+
+    @include mobile {
+      flex-direction: column;
+    }
   }
 
   img {
@@ -372,15 +394,6 @@ blockquote {
     height: 96px;
     border-radius: 16px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, .4);
-    margin: 1em;
-  }
-
-  @include mobile {
-    flex-direction: column;
-
-    &:nth-of-type(even) {
-      flex-direction: column;
-    }
   }
 }
 

@@ -10,7 +10,9 @@
     <a href="{{ site.baseurl }}/{% if page.lang == "EN" %}en/{% endif %}">Blog</a>
     <a href="{{ site.baseurl }}/{% if page.lang == "EN" %}en/{% endif %}about/">{% if page.lang == "DE" %}Über{% elsif page.lang == "EN" %}About{% endif %}</a>
     <a href="{{ site.baseurl }}/{% if page.lang == "EN" %}en/{% endif %}team/">Team</a>
+    <a href="{{ site.baseurl }}/{% if page.lang == "EN" %}en/sponsors/{% else %}sponsoren/{% endif %}">{% if page.lang == "DE" %}Sponsoren{% elsif page.lang == "EN" %}Sponsors{% endif %}</a>
 
+    {% if page.ref %}
     <div class="language-links">
       {% assign translatedPosts=site.posts | where:"ref", page.ref | sort: 'lang' %}
       {% for post in translatedPosts %}
@@ -22,5 +24,6 @@
         <a href="{{ page.url }}" class="{{ page.lang }}"><img src="{{ site.baseurl }}/images/flag_{{ page.lang }}.svg" /></a>
       {% endfor %}
     </div>
+    {% endif %}
   </nav>
 </header>
