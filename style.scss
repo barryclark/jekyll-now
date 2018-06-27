@@ -178,6 +178,15 @@ td.slider-value .bias {  color: $biasPurple;  opacity: 0.7; }
   border: 1px solid $lightGray;
 }
 
+.prediction .img-div-any-width {
+  font-size: 85%;
+  color: $gray;
+  text-align: center;
+}
+.prediction .img-div-any-width img{
+  // border: 1px solid $lightGray;
+}
+
 td span#error-value {
   color: $darkYellow;
   font-weight: bold;
