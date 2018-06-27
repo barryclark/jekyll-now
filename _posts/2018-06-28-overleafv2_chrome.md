@@ -14,13 +14,16 @@ categories: ['env development']
 <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
 最近は LaTeX を使って何かを書くときは専ら Overleaf を使っていて、ローカルの環境構築とかは気が進まないなぁ思うようになっている。
-そんな　Overleaf の v2 が出たということで試してみた。
+そんな Overleaf の v2 が出たということで試してみた。
 
 
 ### version 2 における変更点
-[公式のページ](https://www.overleaf.com/blog/641-try-out-overleaf-v2#.WzOlNBIzbOY) に書いてあるので特に説明することがない...
+[公式のページ](https://www.overleaf.com/blog/641-try-out-overleaf-v2#.WzOlNBIzbOY) に書いてあるのであまり説明することがないな...
+
 個人的には検索や置換がよりシンプルなインターフェースでできるようになったのは嬉しい。
+
 共著者とのコラボレーション機能の充実（個別の変更に対してやりとりが可能）は論文を書く時に細かいやりとりができるので便利そうには見えるが、そこまで使うかなぁという感じもする。
+
 目玉は reference search かな、これは \cite{} の中で CTRL+SPACE を押下することで .bib の中身を検索できる。
 .bib ファイルが肥大化すると補完だけではお望みのものを見つけられなくなったりもするので、これは良さそうだ！
 
@@ -35,7 +38,9 @@ categories: ['env development']
 自分でもサポートにバグレポートを投げたところ、再現はできないがフォントを変えるような Chrome Extension とかが悪さをしている可能性あり、という話だった。
 
 どの道その辺が悪さをしているのは間違いなさそうとは思っていたので、Extension を全てオフにして試したが結果は変わらず。
+
 それとは別にゲストアカウントを使ったらバグは発生せずにデフォルトのフォントが違っていた、ということを発見した。
+
 ということで Chrome の設定で固定幅フォントをあれこれ変えて試していたら、少なくとも「Monaco」にすればバグが発生しないことが明らかになった。
 全てのフォントを網羅的に調べてはいないが、自分はフォントに特にこだわりはないし、これで解決！ということと相成った。
 
