@@ -6,7 +6,7 @@ categories: ['env development']
 
 ### TL;DR
 - Overleaf の version 2 が出たので試してみた
-- Chrome で遭遇するエディタのカーソルがズレる問題を解決した
+- Chrome で遭遇するエディタのカーソルがズレる問題を解決した（フォントのカスタマイズで固定幅フォントを「Monaco」にする）
 - reference search など新しい機能が使えて全体的に良い感じ
 - 具体的な例は [こちら](https://v2.overleaf.com/read/fdjjqtsvgktj)
 <br>
