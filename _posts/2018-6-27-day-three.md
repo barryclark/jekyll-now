@@ -1,7 +1,7 @@
---
+---
 layout: post
 comments: true
---
+---
 
 Again, the goal for today is learn photometry and to perform some preliminary photometry on some of our own data. Essential in making that photometry as effective as possible is setting up Github properly for filesharing among the GRG collaborators.
 
