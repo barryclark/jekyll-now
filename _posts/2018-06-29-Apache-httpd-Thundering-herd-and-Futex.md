@@ -11,4 +11,4 @@ Also, take a look at httpd's [Mutex](https://httpd.apache.org/docs/2.4/mod/core.
 
 restart apache, it should now be using system V semaphore rather than futex, and it should survive. 
 
-** Long Version ** 
+**Long Version** 
