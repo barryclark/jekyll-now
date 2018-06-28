@@ -54,9 +54,9 @@ GE | GE |  $14.00  |  $13.87  |  $(0.13) | -0.93%
 GameStop | GME |  $15.00  |  $14.71  |  $(0.29) | -1.93%
 Kroger | KR |  $24.40  |  $28.70  |  $4.30  | 17.62%
 Verizon | VZ |  $48.90  |  $50.61  |  $1.71  | 3.50%
-Total |  |  $130.03  |  $133.91  |  $3.88  | 2.98%
+**Total** |  |  **$130.03**  |  **$133.91**  |  **$3.88**  | **2.98%**
 
-**Note that I changed Helios and Matheson Analytics Inc. to MoviePass in the table.**
+***Note that I changed Helios and Matheson Analytics Inc. to MoviePass in the table.***
 
 A month in, I'm in the green. Although that first stock I chose is doing rather poorly - MoviePass stock has dropped more than 50%. FitBit is doing the best with an increase of over 22%, closely followed by Kroger at almost 18%.
 
