@@ -4,12 +4,14 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+This site contains various explanations and guides for some of the personal projects I have worked on.
 
-### More Information
+## About me
 
-A place to include any other types of information that you'd like to include about yourself.
+### Experience
 
-### Contact me
+#### Capital One
 
-[email@domain.com](mailto:email@domain.com)
+### Contact
+
+[harleygn@gmail.com](mailto:harleygn@gmail.com)

@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Simple data logger
+title: Simple data logger with NodeMUC, DHT11 and Thinger.io
 ---
 
-A simple system for collecting and transmitting data to be stored and analysed. Data is collected by a DHT11 combinded temperature and humidity sensor attached to a NodeMCU unit. It is transmitted to the thinger.io IoT platform where it can be displayed using a graphical dashboard.
+Uses an ESP8266 NodeMCU board with a DHT11 temperature and humidity sensor to collect data which is sent to the Thinger.io platform.
 
 ## Components
 * Board: ESP8266 NodeMCU
