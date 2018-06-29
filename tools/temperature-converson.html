@@ -11,7 +11,7 @@ permalink: /tools/temperature-converson/
 
 <script>
 document.getElementById("fahrenheit").oninput = function() {
- var f = document.getElementById("fahrenheit").value;
+ var f = parseFloat(document.getElementById("fahrenheit").value);
  document.getElementById("celsius").value =  ((f - 32) * 5 / 9).toFixed(2);
  document.getElementById("kelvin").value = ((f + 459.67) * 5 / 9).toFixed(2);
  document.getElementById("rankine").value = (f + 459.67).toFixed(2);
