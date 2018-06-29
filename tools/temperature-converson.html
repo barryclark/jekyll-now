@@ -17,4 +17,11 @@ document.getElementById("fahrenheit").oninput = function() {
  document.getElementById("rankine").value = f + 459.67;
 };
  
+document.getElementById("rankine").oninput = function() {
+ var r = document.getElementById("rankine").value;
+ document.getElementById("celsius").value =  (r - 491.67) * 5 / 9;
+ document.getElementById("kelvin").value = r * 5 / 9;
+ document.getElementById("fahrenheit").value = r - 459.67;
+};
+ 
 </script>
