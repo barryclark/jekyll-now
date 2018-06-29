@@ -34,8 +34,7 @@ document.getElementById("celsius").oninput = function() {
 document.getElementById("kelvin").oninput = function() {
  var k = parseFloat(document.getElementById("kelvin").value);
  document.getElementById("celsius").value =  (k - 273.15).toFixed(2);
- document.getElementById("fahrenheit").value = (k * 5 / 9 - 459.67).toFixed(2);
- document.getElementById("rankine").value = (5 * 9 / 5).toFixed(2);
+ document.getElementById("fahrenheit").value = (k * 9 / 5 - 459.67).toFixed(2);
+ document.getElementById("rankine").value = (k * 9 / 5).toFixed(2);
 };
- 
 </script>
