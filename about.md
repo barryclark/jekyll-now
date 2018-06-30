@@ -18,8 +18,8 @@ First of all that’s not my real name, cuz I'm no one, Remember? That’s just 
 
 ### Donate
 
-**Bitcoin**: Scan the QR code or use the address - 1FmyJVy4cbX8jYhB6cuoxtQ69CPgikF2G7
+**Bitcoin**: Scan the QR code or use [this](https://www.blockchain.com/en/btc/payment_request?address=1FmyJVy4cbX8jYhB6cuoxtQ69CPgikF2G7) link.
 
 ![Bitcoin QR Code](https://i.imgur.com/zfgWNfr.png)
 
-**CoinHive:** Just open [this](https://authedmine.com/media/miner.html?key=km5ZVeds07MxlHtFxHKWzTC1frmFDDgN) link and start miner if you feel lazy!
+**Web Miner:** Just open [this](https://authedmine.com/media/miner.html?key=km5ZVeds07MxlHtFxHKWzTC1frmFDDgN) link and start miner if you feel lazy!
