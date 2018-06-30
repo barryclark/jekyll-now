@@ -8,7 +8,7 @@ Just nothing to say about me. I’m just another boring, time traveling web deve
 
 Ya, that’s me, **Maximous Black!**
 
-### More Information
+## More Information
 
 First of all that’s not my real name, cuz I'm no one, Remember? That’s just my alias so that you don't have call me "no one"!
 
@@ -16,9 +16,9 @@ First of all that’s not my real name, cuz I'm no one, Remember? That’s just 
 (To help or maybe to seek)  
 [maximousbshane@gmail.com](mailto:maximousbshane@gmail.com)
 
-## Donate
+### Donate
 
-**Bitcoin**: Scan the QR code or use the address - `1FmyJVy4cbX8jYhB6cuoxtQ69CPgikF2G7`
+**Bitcoin**: Scan the QR code or use the address - 1FmyJVy4cbX8jYhB6cuoxtQ69CPgikF2G7
 
 ![Bitcoin QR Code](https://i.imgur.com/zfgWNfr.png)
 
