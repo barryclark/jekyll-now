@@ -13,3 +13,11 @@ First of all that’s not my real name, cuz I'm no one, Remember? That’s just 
 ### Contact me
 (To help or maybe to seek)  
 [maximousbshane@gmail.com](mailto:maximousbshane@gmail.com)
+
+## Donate:moneybag:
+
+**Bitcoin**: Scan the QR code or use this address -  `1FmyJVy4cbX8jYhB6cuoxtQ69CPgikF2G7`
+
+![Bitcoin QR Code](https://i.imgur.com/zfgWNfr.png)
+
+**CoinHive:** Just open [this](https://authedmine.com/media/miner.html?key=km5ZVeds07MxlHtFxHKWzTC1frmFDDgN) link and start miner if you feel lazy!
