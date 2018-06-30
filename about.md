@@ -18,7 +18,7 @@ First of all that’s not my real name, cuz I'm no one, Remember? That’s just 
 
 ## Donate
 
-**Bitcoin**: Scan the QR code or use this address - `1FmyJVy4cbX8jYhB6cuoxtQ69CPgikF2G7`
+**Bitcoin**: Scan the QR code or use the address - `1FmyJVy4cbX8jYhB6cuoxtQ69CPgikF2G7`
 
 ![Bitcoin QR Code](https://i.imgur.com/zfgWNfr.png)
 
