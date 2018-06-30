@@ -4,7 +4,9 @@ title: About Me
 permalink: /about/
 ---
 
-Just nothing to say about me. I am no one trying to be everyone, I am nowhere trying to be trying to be everywhere, I have nothing but trying to give everything to everyone.  Ya, that’s me, **Maximous Black!**
+Just nothing to say about me. I’m just another boring, time traveling web developer from Nowhere. I am no one trying to be everyone, I am nowhere trying to be trying to be everywhere, I have nothing but trying to give everything to everyone.
+
+Ya, that’s me, **Maximous Black!**
 
 ### More Information
 
@@ -16,7 +18,7 @@ First of all that’s not my real name, cuz I'm no one, Remember? That’s just 
 
 ## Donate:moneybag:
 
-**Bitcoin**: Scan the QR code or use this address -  `1FmyJVy4cbX8jYhB6cuoxtQ69CPgikF2G7`
+**Bitcoin**: Scan the QR code or use this address - `1FmyJVy4cbX8jYhB6cuoxtQ69CPgikF2G7`
 
 ![Bitcoin QR Code](https://i.imgur.com/zfgWNfr.png)
 
