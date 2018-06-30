@@ -16,7 +16,7 @@ First of all that’s not my real name, cuz I'm no one, Remember? That’s just 
 (To help or maybe to seek)  
 [maximousbshane@gmail.com](mailto:maximousbshane@gmail.com)
 
-## Donate:moneybag:
+## Donate
 
 **Bitcoin**: Scan the QR code or use this address - `1FmyJVy4cbX8jYhB6cuoxtQ69CPgikF2G7`
 
