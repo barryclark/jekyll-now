@@ -18,17 +18,17 @@ avatar: https://raw.githubusercontent.com/maximousblk/maximousblk.github.io/mast
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email: mainto:maximousbshane@gmail.com
+  email: maximousbshane@gmail.com
   facebook:
   flickr:
-  github: https://github.com/maximousblk
+  github: maximousblk
   instagram:
   linkedin:
   pinterest:
   rss: # just type anything here for a working RSS icon
   twitter:
-  stackoverflow: https://stackoverflow.com/users/9843253/maximousblk
-  youtube: https://www.youtube.com/channel/UCHXSACHICXpWNiI0FglVdsA
+  stackoverflow: users/9843253/maximousblk
+  youtube: channel/UCHXSACHICXpWNiI0FglVdsA
   googleplus: # anything in your profile username that comes after plus.google.com/
 
 
