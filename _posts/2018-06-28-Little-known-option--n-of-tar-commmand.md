@@ -1,3 +1,13 @@
+---
+title: Little known option -n of tar command.
+tags: 
+	- tar
+	- block device
+	- seek
+	- seekable 
+
+
+---
 **TL;DR version**
 
 If you try to extract particular file ( not all file) from a (Big) tar archive, and it is taking too much time , and tar archive is on seekable media, ( i.e. Hard drives , NAS, etc) 
