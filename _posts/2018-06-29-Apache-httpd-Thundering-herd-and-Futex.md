@@ -1,3 +1,6 @@
+---
+title: Apache httpd, futex and thundering herd problem.
+---
 **TL;DR Version** 
 
 if apache httpd stalls, i.e. there are workers running, but site is unresponsive, curl is able to connnect 
