@@ -1,5 +1,3 @@
-# Vim Basics
-
 This tutorial is going to speak about vim basic use. Vim is a powerful text editor used in CLI (command line interface). Linux uses a lot of configuration files, you'll often need to edit them and vim is a great tool to do so. Alternatives to vim are the commandline editors Nano and joe.
 
 [![Vim Editor](https://www.howtoforge.com/images/vim-basics/vim_started.png)](https://www.howtoforge.com/images/vim-basics/big/vim_started.png)
