@@ -32,7 +32,7 @@ Another IoT sevice, Thinger.io allows the connection of multiple devices includi
 ![Example of a thinger.io dashboard](https://discoursefiles.s3-eu-west-1.amazonaws.com/original/1X/c05197985d9ee92a9e12aaa71ab7508682bc3fbc.gif)
 
 Connecting a the NodeMCU to the service is very simple, requring only a few lines of code:
-```
+```c++
 #include <SPI.h>
 #include <ESP8266WiFi.h>
 #include <ThingerWifi.h>
@@ -70,7 +70,7 @@ Before installing the software on the NodeMCU, a new device must first be added 
 
 The initial setup sketch can now be written and uploaded to the NodeMCU, after the device details and WiFi information has been included.
 
-```
+```c++
 #include <SPI.h>
 #include <ESP8266WiFi.h>
 #include <ThingerWifi.h>
@@ -88,7 +88,7 @@ void loop() {
 
 Once the device has successfully established a connection to the cloud console, we can add the details of the DHT11 sensor. The DHT library must be included at the top of the sketch, and the sensor is defined by specifying the DHT model and the pin which it is connected to.
 
-```
+```c++
 // Import libraries
 #include <SPI.h>
 #include <ESP8266WiFi.h>
