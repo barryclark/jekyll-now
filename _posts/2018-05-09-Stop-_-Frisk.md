@@ -71,6 +71,10 @@ Overall, I was able to match ~95% of the incidents provided by MPD to a latitude
 
 If anyone [feels strongly about the neighborhood boundaries used](https://www.popville.com/2018/01/official-north-boundary-petworth-is-kennedy-street/) and wants more information on the boundaries of the neighborhood clusters, check out the the [DC OpenData Portal](http://opendata.dc.gov/datasets/neighborhood-clusters)
 
+<figure class="video_container">
+<iframe width="800" height="600" src="https://dc-stop-frisk.herokuapp.com/" frameborder="0" allowfullscreen="true"></iframe>
+</figure>
+
 ![](https://raw.githubusercontent.com/GWarrenn/gwarrenn.github.io/drafts/images/stop_and_frisk/05_nbh_sf.gif)
 
 Since 2010, Petworth, Columbia Heights, Congress Heights, and Downtown/Chinatown have racked up the highest amount of stop and frisk incidents among DC neighborhood clusters. However, I wanted to make sure that the analysis wasn't simply measuring neighborhood population density (or where all the people are), so I also ran the number of stop and frisk incidents as a function of neighborhood population (again using 2010 Census).
