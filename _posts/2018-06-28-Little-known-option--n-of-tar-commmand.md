@@ -1,11 +1,5 @@
 ---
 title: Little known option -n of tar command.
-tags: 
-	- tar
-	- block device
-	- seek
-	- seekable 
-
 
 ---
 **TL;DR version**
