@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }}</title>
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 
     {% include meta.html %}
 
@@ -9,11 +9,10 @@
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
-    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
 
-    <link rel="icon" href="https://raw.githubusercontent.com/maximousblk/maximousblk.github.io/master/images/avatar.jpg" type="image/png">
-    {% seo %}
+    <link rel="icon" href="https://raw.githubusercontent.com/maximousblk/maximousblk.github.io/master/images/avatar.jpg" type="image/png"> <!-- The favicon -->
   </head>
 
   <body>
