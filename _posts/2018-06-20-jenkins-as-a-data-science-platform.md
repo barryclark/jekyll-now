@@ -16,6 +16,6 @@ As a result, we started searching for better ways of managing, automating and re
 
 So, that's where we started: Jenkins as a data science platform. However, using Jenkins as-is was just the start. Jenkins is fundamentally a very simple automation server that allows you to configure jobs through a simple web interface. The results of the jobs/builds can be saved as artifacts to be downloaded or used later or by other jobs. Jobs can trigger other jobs to create simple pipelines. Let's consider a straightforward data science pipline that you might want to automate without the shell script or `~/data-science` methods:
 
-![Jenkins Data Science Pipeline]({{ site.baseurl }}/images/jenkins-data-science-pipeline.png)
+![Jenkins Data Science Pipeline](../images/jenkins-data-science-pipeline.png)
 
 Its fairly easy to create jobs for each of these steps and chain them together in a pipeline. The first few steps you might want to automatically trigger each other, and the last couple you might want manual input on. However, for each of these steps you're likely to want to drill in to the details and find out what happened, what the results were like, how some charts or metrics fell out, or any number of custom things. This is where, with a few nifty plugins, you can turn Jenkins from a general purpose build server into an all-singing, all-dancing, data science machine!
