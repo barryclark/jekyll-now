@@ -6,9 +6,10 @@ comments: true
 excerpt_separator: <!--more-->
 ---
 
-![A cloud...](/images/cloud.jpg)
-
 It seems to be a daily occurrence that a friend in the tech community or one of our engineers mentions deploying an application to the cloud. 
+
+![A cloud...](/images/cloud.jpg)
+<!--more-->
 
 When CarFinance 247 started life we used a managed hosting provider for our website, intranet and database. The main reason being we had a small...very small (2 engineers) development team with little infrastructure experience. A managed solution allowed the business to relax in the knowledge that the hosting provider were managing the infrastructure. All efforts could then focus on improving the product.
 
