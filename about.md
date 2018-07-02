@@ -4,7 +4,7 @@ title: About Me
 permalink: /about/
 ---
 
-Junior physics student at Colorado College trying to determine the existence of a quiescent low-mass x-ray binary pair in the open cluster NGC6819.
+Junior physics student at Colorado College doing research with the Gosnell Research Group. I'm primarily tasked with performing photometry on the data. 
 
 ### Contact 
 
