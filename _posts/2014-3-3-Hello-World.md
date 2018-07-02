@@ -1,10 +1,6 @@
 ---
 layout: post
-title: You're up and running!
+title: First Post
 ---
 
-Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
-
-![_config.yml]({{ site.baseurl }}/images/config.png)
-
-The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
+Welcome to our blog! We are a undergraduate college research group investigating a suspicious x-ray source in the open cluster NGC6819 and will update this blog weekly on our findings. The group is led by Dr. Natalie Gosnell and consists of Rory Lowe, Marta Nowatka, and Thom Ory. Marta is taking care of astrometry for this project, and Thom is assisted by Rory with the photometry. Our individual blogs are each updated daily and can be found under the "People" tab above. 
