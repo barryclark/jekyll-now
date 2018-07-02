@@ -1,16 +1,12 @@
-# The danger of Microservices
-
-Consider these tweets:
-
-https://twitter.com/llogiq/status/1010831210199777280
-
 > You have a problem. You: Ah! I know! I use a distributed system. Now you still have a problem, but you no longer know where.
 
-https://twitter.com/WAWilsonIV/status/1010937077024935938
+- https://twitter.com/llogiq/status/1010831210199777280
 
 > As somebody who accidentally became a distributed systems “expert”, I am begging you with tears in my eyes never to use a distributed system unless there is absolutely no other way.
 > 
 > P.S. Same goes for microservices.
+
+- https://twitter.com/WAWilsonIV/status/1010937077024935938
 
 What is the danger? For me, the answer comes from this quote from a guest on [Greater than Code](https://www.greaterthancode.com/):
 
