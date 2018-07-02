@@ -6,6 +6,8 @@ comments: true
 excerpt_separator: <!--more-->
 ---
 
+![A cloud...](/images/cloud.jpg)
+
 It seems to be a daily occurrence that a friend in the tech community or one of our engineers mentions deploying an application to the cloud. 
 
 When CarFinance 247 started life we used a managed hosting provider for our website, intranet and database. The main reason being we had a small...very small (2 engineers) development team with little infrastructure experience. A managed solution allowed the business to relax in the knowledge that the hosting provider were managing the infrastructure. All efforts could then focus on improving the product.
@@ -20,10 +22,10 @@ Jon then pulled our 'head of out the clouds' and brought us all down with a bump
 
 It more exciting because, as we did a week ago, you get to walk into the data centre and actually see the kit! 
 
-![Data Centre SAN](/images/nimble-san.png)
+![Data Centre SAN](/images/nimble-san.jpg)
 
 You have full control over every single aspect of your infrastructure so automation, reliability, scalability, monitoring are ours to own. Granted some of this comes 'out of the box' on public cloud but thats boring. Our engineers can now collaborate with the infrastructure team and build amazing products just right for our business and customers.
 
-![Data Centre Switch](/images/switch-port.png)
+![Data Centre Switch](/images/switch-port.jpg)
 
 We do have a small stack in the cloud that allows our data science team to spin up machine learning workflows, giving us a stepping stone into that realm and no doubt public cloud will only continue to get better. But for now we are staying private and I cant wait.
