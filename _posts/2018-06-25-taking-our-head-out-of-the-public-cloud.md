@@ -18,4 +18,12 @@ We needed to change. Engineers were crying out for it. The next logical step was
 
 Jon then pulled our 'head of out the clouds' and brought us all down with a bump - '…there may be some compliance issues with storing data in the cloud'. He encouraged us to investigate the private cloud route instead. We spent a few months investigating and having decided that private cloud was the best choice, Im still equally excited. I believe private cloud is the right decision for us because our stack is not yet cloud ready, we dont need super elastic scale or multi region data centres (we've not gone global...yet!), we had virtually no experience running production services in the cloud and I think private cloud is just that little bit more exciting.
 
-It more exciting because, as we did a week ago, you get to walk into the data centre and actually see the kit! You have full control over every single aspect of your infrastructure so automation, reliability, scalability, monitoring are ours to own. Granted some of this comes 'out of the box' on public cloud but thats boring. Our engineers can now collaborate with the infrastructure team and build amazing products just right for our business and customers. We do have a small stack in the cloud that allows our data science team to spin up machine learning workflows, giving us a stepping stone into that realm and no doubt public cloud will only continue to get better. But for now we are staying private and I cant wait.
+It more exciting because, as we did a week ago, you get to walk into the data centre and actually see the kit! 
+
+![Data Centre SAN](/images/nimble-san.png)
+
+You have full control over every single aspect of your infrastructure so automation, reliability, scalability, monitoring are ours to own. Granted some of this comes 'out of the box' on public cloud but thats boring. Our engineers can now collaborate with the infrastructure team and build amazing products just right for our business and customers.
+
+![Data Centre Switch](/images/switch-port.png)
+
+We do have a small stack in the cloud that allows our data science team to spin up machine learning workflows, giving us a stepping stone into that realm and no doubt public cloud will only continue to get better. But for now we are staying private and I cant wait.
