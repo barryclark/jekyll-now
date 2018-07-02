@@ -3,6 +3,7 @@ layout: post
 title: June 2018 Book Reading List
 tags: [books]
 keywords: [book, read, books, reading, book reading, books i read]
+image: /images/books/june-2018-books-read.png
 ---
 
 Time is precious - once again, I only managed to fit in one book in my busy schedule for the month. Hopefully, come August, I'll have more time, since the last session for the last class in my Master's program is on July 25th. Of course, my son might be mobile by then - he'll be four months on the 26th - so he will require more attention.
