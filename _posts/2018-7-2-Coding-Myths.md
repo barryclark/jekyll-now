@@ -3,7 +3,9 @@ layout: post
 title: Coding Myths!
 ---
 
-No, we are not coding a myth. These are 10 myths about coding you should not believe! Are you interested in learning coding or web development? Do you keep finding yourself doubting if it is the right path for you? If this sounds familiar, read on. In this post, I will take a look at some of the most common coding myths to help you get over your doubts and start learning right away.
+No, we are not coding a myth. These are 10 myths about coding you should not believe! 
+
+Are you interested in learning coding or web development? Do you keep finding yourself doubting if it is the right path for you? If this sounds familiar, read on. In this post, we will take a look at some of the most common coding myths to help you get over your doubts and start learning right away.
 
 The world of tech and coding is filled with rumors and misconceptions. You might be pondering over questions like:
 
