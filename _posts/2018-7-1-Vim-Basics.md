@@ -7,7 +7,7 @@ This tutorial is going to speak about vim basic use.
 
 Vim is a powerful text editor used in CLI (command line interface). Linux uses a lot of configuration files, you'll often need to edit them and vim is a great tool to do so. Alternatives to vim are the commandline editors Nano and joe.
 
-![Vim Editor](http://maximousblk.github.io/images/vim_started.png)]
+![Vim Editor](http://maximousblk.github.io/images/vim_started.png)
 
 Vim has a particular working method, there are two main modes: the command mode and the other modes.
 
