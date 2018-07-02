@@ -1,15 +1,7 @@
 ---
 layout: page
-title: About
+title: About Our Study
 permalink: /about/
 ---
 
-Some information about you!
-
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
-
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+In this study, We at the Gosnell Research Group (GRG) are trying to determine the nature of an x-ray emission found in the rich open cluster NGC 6819. In the original paper that was the catalyst for this study, Gosnell et al. classify an emission from NGC 6819 they call “X1” as a “possible qLMXB,” or quiescent low-mass x-ray binary, which is a binary systm that features a neutron star with a detached accretion and a star less massive than the neutron star. These types of binary systems are predicted to happen relatively rarely in rich open clusters based on studies of denser globular clusters; lower mass in open clusters means that they don’t have enough gravity to hold on to a neutron star after supernova, since in the most common type of supernova the leftover hunk of neutrons is given a kick of a couple hundred km/s, well over the singular digit escape velocity of the cluster. However, theoreticians have come up with ways that a qLMXB might form through “dynamical interactions” that don’t give the neutron star such a high velcoity after supernova. If we confirm the existence of a qLMXB in NGC 6819, it shows that dynamical interactions play a larger role in the formation of open clusters than we thought and can help us better model the conditions under which these groups of gravitationally bound stars form.
