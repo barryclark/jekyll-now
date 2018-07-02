@@ -2,7 +2,7 @@ This tutorial is going to speak about vim basic use.
 
 Vim is a powerful text editor used in CLI (command line interface). Linux uses a lot of configuration files, you'll often need to edit them and vim is a great tool to do so. Alternatives to vim are the commandline editors Nano and joe.
 
-[![Vim Editor](https://www.howtoforge.com/images/vim-basics/vim_started.png)](https://www.howtoforge.com/images/vim-basics/big/vim_started.png)
+![Vim Editor](http://maximousblk.github.io/images/vim_started.png)]
 
 Vim has a particular working method, there are two main modes: the command mode and the other modes.
 
@@ -36,7 +36,7 @@ vim /etc/hosts
 
 The result will look like this:
 
-![Editing a file with Vim](https://www.howtoforge.com/images//vim-hosts.png)
+![Editing a file with Vim](http://maximousblk.github.io/images/vim-hosts.png)
 
 The editor is now in command mode. To start editing the file content, enter:
 
@@ -46,9 +46,9 @@ The editor is now in command mode. To start editing the file content, enter:
 
 The word --insert-- will appeer at the bottom of the editor window to show that you are in insert mode now.
 
-![Vim in insert mode](https://www.howtoforge.com/images//vim-insert.png)
+![Vim in insert mode](http://maximousblk.github.io/images/vim-insert.png)
 
-Now you can edit the file by navigating to the line that you want to change with the cursor keys and then start typing the text. When you are finsihed with editing, press the [esc] key to go back to the command mode.
+Now you can edit the file by navigating to the line that you want to change with the cursor keys and then start typing the text. When you are finished with editing, press the [esc] key to go back to the command mode.
 
 To save the file and exit the editor, enter:
 
@@ -71,4 +71,6 @@ paste: **p**
 cut: **d**  
 cut a line: **dd**  
 
-These are the very basic commands for vim, but they are useful as vim or vi is preinstalled on most Linux systems. I hope this will help you configuring your Linux.
+These are the very basic commands for vim, but they are useful as vim or vi is preinstalled on most Linux systems. I hope this will help you configuring your Linux. 
+
+#### Thanks for spending time on this article. Happy Coding!
