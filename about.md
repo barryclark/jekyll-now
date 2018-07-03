@@ -4,8 +4,6 @@ title: About Technology & Product @ CarFinance 247
 permalink: /about/
 ---
 
+### Contact us
 
-
-### Contact me
-
-[tech@carfinance247.co.uk](mailto:tech@carfinance247.co.uk)
+[info@carfinance247.co.uk](mailto:info@carfinance247.co.uk)
