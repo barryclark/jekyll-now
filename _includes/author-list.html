@@ -1,5 +1,3 @@
-c:{{ site.data.authors | size }}
-{% for author in site.data.authors %}    
-<p>{{ author.name }}</p>
- [{{ author.name }}]({{ author.page }})    
+{% for person in site.data.people %}    
+ <p><a href="/authors/{{ person.author }}">{{ person.name }}</a> {{ person.title }}</p>
 {% endfor %}
