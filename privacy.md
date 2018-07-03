@@ -4,7 +4,7 @@ title: Privacy Policy
 permalink: /privacy/
 ---
 
-*Revised May 25, 2018.*
+*Revised July 3, 2018.*
 
 ## Google Analytics
 
@@ -44,4 +44,4 @@ If you want all comments removed with an associated email, contact me with the e
 
 ### Share
 
-Each post currently has five share links: Facebook, Twitter, LinkedIn, Google+, Reddit, and StumbleUpon. Sharing a post requires an account with the associated service as well as adherence to their privacy policies.
+Each post currently has five share links: Facebook, Twitter, LinkedIn, Google+, and Reddit. Sharing a post requires an account with the associated service as well as adherence to their privacy policies.
