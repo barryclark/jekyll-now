@@ -1,5 +1,5 @@
 n:{{ site.data.authors[0].name }}
-c:{{ site.data.authors[0].count }}
+c:{{ site.data.authors | size }}
 {% for author in site.data.authors %}      
     {{ author.name }}  
 {% endfor %}
