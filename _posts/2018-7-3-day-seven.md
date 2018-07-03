@@ -11,6 +11,7 @@ Since the first part of [photometry_practice_updated.py](https://github.com/Gosn
 The first version of [source_detection.py](https://github.com/GosnellResearchGroupSummer2018/NGC6819/blob/master/photometry%20codes/source_detection.py) was only meant to draw in one .fits file and detect all 5σ sources in it.Without too much pain, I was able to make the first diagram that used data relevant to this project: 
 ![sources](https://github.com/GosnellResearchGroupSummer2018/NGC6819/blob/master/first_attempt_at_HST_source_detection/sources.png "sources") ![raw_data](https://github.com/GosnellResearchGroupSummer2018/NGC6819/blob/master/first_attempt_at_HST_source_detection/rawdata.png "raw data")
 _2D array showing 5σ sources circled in blue (radius 3 arcseconds) vs raw data from the .fits file_
+
 ---
 
 ## Photutils Online Resource 
