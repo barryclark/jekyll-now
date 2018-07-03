@@ -5,4 +5,4 @@ permalink: /authors/
 ---
 
 ### Authors list
-{% include author.html %}
+{% include authors.html %}
