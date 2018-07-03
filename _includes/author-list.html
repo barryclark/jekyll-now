@@ -1,5 +1,5 @@
-<h2>Blog authors</h2>
-
+{{ site.data.authors[0].name }}
+{{ site.data.authors[0].count }}
 {% for author in site.data.authors %}      
     {{ author.name }}  
 {% endfor %}
