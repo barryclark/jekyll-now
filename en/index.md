@@ -76,6 +76,7 @@ Come to one of our meetups in [Athens](https://www.meetup.com/BlockchainGreece-0
 
 - Bitcoin nodes running in [Greece](https://bitnodes.earn.com/nodes/?q=Greece) and [Cyprus](https://bitnodes.earn.com/nodes/?q=Cyprus)
 - The [Coinomi multicurrency wallet](https://coinomi.com)
+- The [Arctus multicurrency wallet](https://arctus.io)
 - The [University of Nicosia free Introduction to Digital Currencies MOOC  and the MSc in Digital Currency](https://digitalcurrency.unic.ac.cy)
 - [Synaphea](https://synaphea.com) Enterprise Blockchain Solutions
 - [norbloc](https://norbloc.com)
@@ -90,7 +91,7 @@ Come to one of our meetups in [Athens](https://www.meetup.com/BlockchainGreece-0
 - The [Hellenic Blockchain Hub](http://blockchain.org.gr) non-profit organization
 - The [Cyprus Blockchain Technologies](http://cybt.eu) non-profit organization
 
-Last update: 2018-06-01
+Last update: 2018-07-03
 
 <!-- <div class="posts">
   {% for post in site.posts %}
