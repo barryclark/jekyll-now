@@ -1,8 +1,7 @@
 ---
 layout: page
-title: Authors
+title: Blog Authors
 permalink: /authors/
 ---
 
-### Blog Authors
 {% include author-list.html %}
