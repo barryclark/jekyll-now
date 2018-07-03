@@ -1,7 +1,8 @@
 ---
 layout: page
-title: Authors - Technology & Product @ CarFinance 247
+title: Authors
 permalink: /authors/
 ---
 
 ### Authors list
+{% include authors.html %}
