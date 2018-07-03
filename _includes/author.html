@@ -1,7 +1,13 @@
-<h2>Posts by {{ site.data.authors[include.author].name }}</h2>
+{% for person in site.data.people %}
+  {% if person.author == include.author %}
+    {% assign selected = person %}
+  {% endif %}
+{% endfor %}
+
+<h2>Posts by {{ selected.name }}</h2>
 
 {% for post in site.posts %}
-  {% if post.author == include.author %}
+  {% if post.author == selected.author %}
     {% include post_summary.html post=post %}
   {% endif %}
 {% endfor %}
