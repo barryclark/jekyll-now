@@ -1,4 +1,5 @@
 c:{{ site.data.authors | size }}
-{% for author in site.data.authors %}          
- [{{ site.data.authors[0].name }}]({{ site.data.authors[0].page }})    
+{% for author in site.data.authors %}    
+<p>{{ author.name }}</p>
+ [{{ author.name }}]({{ author.page }})    
 {% endfor %}
