@@ -1,15 +1,9 @@
 ---
 layout: page
-title: About
+title: About Technology & Product @ CarFinance 247
 permalink: /about/
 ---
 
-Some information about you!
+### Contact us
 
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
-
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+[info@carfinance247.co.uk](mailto:info@carfinance247.co.uk)

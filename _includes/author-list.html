@@ -1,0 +1,3 @@
+{% for person in site.data.people %}    
+ <p><a href="/authors/{{ person.author }}">{{ person.name }}</a> {{ person.title }}</p>
+{% endfor %}
