@@ -3,11 +3,14 @@ layout: post
 title: User experience testing, a short cut to design thinking
 author: paul_stevens
 comments: true
+excerpt_separator: <!--more-->
 ---
 
 At the start of Jan 18 I joined CarFinance 247 as Head of User Experience & Design. CarFinance 247 is made up of brilliant, passionate people who are great at what they do.
 
 CarFinance 247 was set up in 2006 and has grown from 6 people to nearly 500. We are the market leader in Broker Finance and help thousands of people a month get car finance and their car. Also we have recently become a lender, actually lending our own money, it's a really exciting time.
+
+<!--more-->
 
 One of the main goals/challenges for me was to instil design thinking within teams whilst setting up a first class UX team/structure. This takes time. Recruiting people is hard... maybe not hard but time consuming, no wait - actually it is hard.
 
