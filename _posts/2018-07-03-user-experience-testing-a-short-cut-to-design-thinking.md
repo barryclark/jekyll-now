@@ -42,7 +42,7 @@ The impact UX testing can have was demonstrated when we ran our first days sessi
 This was the first full UX testing day and so I didn't want to focus on anything in-particular, just observe people going through the process.
 
 >I love this shot, taken after one of the sessions, it reminds me of a renaissance painting. The chap with his head in his hand while on the phone is the co-owner and founder of CarFinance 247.
-![User testsing session](/image/user-testing.jpg)
+![User testing session](/images/user-testing.jpg)
 
 To say this was eye opening for the team is an understatement. We saw people hit brick walls and not know what to do. We saw people tap something not expecting the consequence of what happened next. We found the answer to one technical bug we'd been struggling with and found another we didn't know we had. Being an organisation that hadn’t been exposed to user testing in the past, this opened up a whole new way at looking at the customer journey for everybody at CarFinance 247. The service we offer is clearly providing the right results but you don’t know how much room there is to iterate and develop your products until you see real-time customer interaction.  
 
