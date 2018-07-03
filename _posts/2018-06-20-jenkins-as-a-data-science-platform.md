@@ -6,8 +6,6 @@ comments: true
 excerpt_separator: <!--more-->
 ---
 
-# Jenkins as a Data Science platform
-
 ## Small Data, Big Value
 In today's world of Big Data, clustered computing, Hadoop, Spark, Tensorflow, Cloud machine learning platforms and NoSQL databases, I often feel that the little guy of data science is forgotten. The little guy that I'm referring to is the small data problem, with only a small number of features, a small number of training instances and a small amount of data centers required to do the processing. Just because this kind of problem is not Big Data, does not mean it is not Big Value. Indeed, most of our data science challenges never really extend to solving large scale data problems, but are more concerned with handling moderate amounts of data in order to model complex business and process problems.
 
