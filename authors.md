@@ -4,5 +4,5 @@ title: Authors
 permalink: /authors/
 ---
 
-### Authors list
+### Blog Authors
 {% include author-list.html %}
