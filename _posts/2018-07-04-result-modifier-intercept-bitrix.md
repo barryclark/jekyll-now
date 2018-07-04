@@ -19,12 +19,22 @@ Cоздаем у себя точь в точь директорию того ш�
 
 {% highlight php %}
 <?php if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true) die();
+/**
+ * @global CMain $APPLICATION
+ * @var array    $arParams
+ * @var array    $arResult
+ */
 {% endhighlight %}
 
 Дальше, дело с **result_modifier.php** в ней обязательно эти строчки
 
 {% highlight php %}
 <?php if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true) die();
+/**
+ * @global CMain $APPLICATION
+ * @var array    $arParams
+ * @var array    $arResult
+ */
 
 // зеркально указываем оригинальное место нахождение директори шаблона, которую мы хотим расширить косвенно
 $this->__folder = '/bitrix/components/bitrix/crm.interface.filter/templates/flat'; 
