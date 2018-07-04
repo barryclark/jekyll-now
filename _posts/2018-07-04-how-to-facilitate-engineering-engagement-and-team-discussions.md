@@ -7,8 +7,6 @@ excerpt_separator: <!--more-->
 ---
 
 Over the last three years our development team has rapidly expanded: from a few software engineers keeping the lights on, to a team of over sixty creating experiences we are be proud of. Concepts like ‘customer journey’, ‘user experience’ and ‘iterative delivery’ were not even heard of in the old days, now they are at the core of everything we do. 
-
-![Agile Process - Team Structures](/images/agile-process-team-structures.png)
 <!--more-->
 
 The problems we faced as our team grew could all be categorised into: technological, infrastructural or operational. As a product manager I’ll leave it to people more qualified than me to talk about micro services and Docker containers, but where I think we have been successful is how we organise our teams.
@@ -16,6 +14,8 @@ The problems we faced as our team grew could all be categorised into: technologi
 Our main two issue were getting software engineers from different teams to communicate with each other, making sure they understood what they were expecting from each other; and stakeholders expecting delivery of large projects whilst sustaining the pace of BAU work we could deliver.
 
 How we structured our teams worked (and still does) for the small feature iterations of our products. Each team has a set of products which they own: they are responsible for monitoring, maintaining and incrementally improving them. Nothing revolutionary there then! Our pain stemmed from large projects that spanned multiple teams.
+
+![Agile Process - Team Structures](/images/agile-process-team-structures.png)
 
 Team A that owned the new API required for the project assumed that team B would be have certain data in order to create their request. Team B who needs to use the new API assumed the new API would go and get that data itself. Cue never-ending back and forth about which team has to make the change and endless theoretical discussions about the importance of stateless web services. All over Slack of course. The result was simple fixes taking weeks to be deployed when writing the code only took hours.  
 
