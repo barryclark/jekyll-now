@@ -83,6 +83,26 @@ $(function(){new Clipboard(".copyTextButton")});
   stroke: #06D6A0;
 }
   </style>
+<!-- Thanh trượt mở rộng -->
+<style>
+  .post-body h2:hover:after {
+width: 100%;
+background: white;
+}
+.post-body h2:after {
+content: '';
+position: absolute;
+width: 5%;
+height: 1px;
+background: #00a06a;
+bottom: 0;
+left: 50%;
+transform: translate(-50%,0);
+transition: 1s;
+-webkit-transition: 1s;
+}
+</style>
+<!-- "End" Thanh trượt mở rộng -->  
 <!-- Button Demo và Download -->
 <style>
   #wrap {
