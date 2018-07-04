@@ -14,7 +14,7 @@ Now, I was investigating the issue where some event processing job of our system
 Simplified piece of code looked like this:
 ``` Java
 if (shouldProcessEvents) {
-    events.stream().foreach(this::processEvent);
+    events.stream().parallel().foreach(this::processEvent);
 }
 notifyJobFinished(areaId);
 ```
@@ -41,7 +41,7 @@ if (shouldProcessEvents) {
 notifyJobFinished(areaId);
 ```
 
-The benefit of going with lambda expression could be a more expressive and readable code, but the downside is we can’t throw checked expression from processEvent without handling it in Lambda block. which would make that particular code a bit “ugly”.
+The benefit of going with lambda expression could be a more expressive and readable code. With simple `parallel()` from Stream API, we can split the whole process to be executed on multiple cores. But the downside is we can’t throw checked expression from `processEvent` without handling it in Lambda block.
 
 ``` Java
 if (shouldProcessEvents) {
@@ -58,7 +58,6 @@ notifyJobFinished(areaId);
 ```
 Now this piece of code doesn't look that fancy, right?
 
-Exceptions in Java
 As you might already know, we have 2 types of exceptions in Java:
 - checked, that need to be explicitly declared in method signature making the caller aware that a particular exception can be thrown
 - unchecked (extended from Error and RuntimeException) are not checked at compile time
@@ -67,6 +66,96 @@ The rule from Java documents is:
 > If a client can reasonably be expected to recover from an exception, make it a checked exception. If a client cannot do anything to recover from the exception, make it an unchecked exception.
 
 In our case, it made sense to build more resilient and robust system - suspend the job temporarily if some of the services we depended on didn’t work. But being biassed by lambda hype we kind of missed it here and dug ourselves a hole that took us a couple of days to get out from.
+
+## Few simple examples
+
+In all the examples below, consider `condition` is set to `true`. I've put it there just to mimic the `shouldProcessEvents` condition from our case.
+
+### Scenario 1: No exceptions are thrown from lambda expression:
+
+``` Java
+@Test
+public void listStreamForeachNoExceptionInLambda() {
+    if (condition) {
+        List<Integer> ints = Arrays.asList(1, 2, 4, 5, 10);
+        ints.stream().forEach(i -> print(50 / i));
+    }
+
+    log.info("Test finished");
+}
+```
+
+This one gives us the expected output:
+> 50
+25
+12
+10
+5
+[INFO ] 2018-07-04 16:00:29.436 [main] TestLambdas - Test finished
+
+Note: Here we used `forEach` from Stream API, but we would get the same results using the `forEach` defined in `Iterable` although those two might have different semantics.
+
+### Scenario 2: A runtime exception is thrown from lambda expression:
+
+``` Java
+@Test
+public void testUncheckedExceptionInLambda() {
+    if (condition) {
+        List<Integer> ints = Arrays.asList(1, 2, 4, 0, 5, 10);
+        ints.stream().forEach(i -> print(50 / i));
+    }
+
+    log.info("Test finished");
+}
+```
+
+Now, we all know that we'll get `ArithmeticException` if we try to perform `0 / 50`. But when developers are hasty to try new things, in their heads this runtime exception is magically handled in the lambda expression. And if not tested properly, it ends up in production.
+
+The output:
+> 50
+25
+java.lang.ArithmeticException: / by zero
+at com.neperix.showcase.lambdas.TestLambdas.lambda$testUncheckedExceptionInLambda$2(TestLambdas.java:52)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
+	at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:580)
+	at com.neperix.showcase.lambdas.TestLambdas.testUncheckedExceptionInLambda(TestLambdas.java:52)
+	...
+
+### Scenario 3:
+
+``` Java
+@Test
+public void testUncheckedExceptionInLambdaWithParallelStream() {
+    if (condition) {
+        List<Integer> ints = Arrays.asList(1, 2, 4, 0, 5, 10);
+        ints.stream().parallel().forEach(i -> print(50 / i));
+    }
+
+    log.info("Test finished");
+}
+```
+The parallel stream is "better" than the plain stream in a sense that all the elements get processed. But please note that in neither of cases the final `Test finished` line wasn't printed out.
+
+The output:
+>25
+10
+50
+5
+12
+java.lang.ArithmeticException
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at java.util.concurrent.ForkJoinTask.getThrowableException(ForkJoinTask.java:598)
+	at java.util.concurrent.ForkJoinTask.reportException(ForkJoinTask.java:677)
+	at java.util.concurrent.ForkJoinTask.invoke(ForkJoinTask.java:735)
+	at java.util.stream.ForEachOps$ForEachOp.evaluateParallel(ForEachOps.java:160)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateParallel(ForEachOps.java:174)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:233)
+	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:418)
+	at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:583)
+	at com.neperix.showcase.lambdas.TestLambdas.testUncheckedExceptionInLambda(TestLambdas.java:52)
 
 ## Takeaways
 - Don’t hesitate to use new language features, but make sure you understand how they work and if they really fit your need
