@@ -90,7 +90,8 @@ by mentionting,
 in httpd.conf file. This is a workaround. Futex might be more efficeint then sysvsem, so in a long run better upgrade a distro to make 
 most of your hardware.
 
-**Notes and Open question**
+**Notes and open question**
+
 if a user process can eliminate thundering herd scenario by serializing access to accept, why can kernel simply implement critical section 
 inside accept call? Wouldn't that be cleaner? Unfortunatley, I could not find clear answer of this question on the Internet.
 
