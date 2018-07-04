@@ -2,9 +2,10 @@
 layout: post
 title: To Lambda or Not to Lambda
 ---
-## The problem
 
 Few months ago I worked on a project where one significant part was synchronizing the customer data. For the sake of simplicity and respecting my NDA, imagine we were updating menus of the restaurants that are using our platform.
+
+## The problem
 
 This synchronization task was configured to run every couple of hours and was about processing various events we get as an input (item added, item removed, item changed, price changed, etc.). Events we received were not grouped by restaurant, but by the zip code the restaurant was located at.
 
