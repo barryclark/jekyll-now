@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Scaling a Technology Team... to help scale a business
+title: How to facilitate engineering engagement and team discussions
 author: tim_carpenter
 comments: true
 excerpt_separator: <!--more-->
