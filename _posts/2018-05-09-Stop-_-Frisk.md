@@ -41,7 +41,7 @@ Along with the stop and frisk data, the MPD also reported on "field contact repo
 
 ![](https://raw.githubusercontent.com/GWarrenn/gwarrenn.github.io/drafts/images/stop_and_frisk/gender_race_contact.png)
 
-Across all racial groups and stop types, subjects identified by MPD as male comprise a majority of incidents. There are some notable gender differences in stops  
+Across all racial groups and stop types, subjects identified by MPD as male comprise a majority of incidents. However, there are some notable gender differences by contact type. Overall, women, especially white women, experienced more non-forcible than forcible contact with the police. 
 
 ![](https://raw.githubusercontent.com/GWarrenn/gwarrenn.github.io/drafts/images/stop_and_frisk/reason_for_stop.png)
 
@@ -73,11 +73,12 @@ For the remainder of the analysis, I will use DC's 39 neighborhood clusters as t
 
 If anyone [feels strongly about the neighborhood boundaries used](https://www.popville.com/2018/01/official-north-boundary-petworth-is-kennedy-street/) and wants more information on the boundaries of the neighborhood clusters, check out the the [DC OpenData Portal](http://opendata.dc.gov/datasets/neighborhood-clusters)
 
-The interactive visualization below let's you dig into some basic trends and demographic profiles of each of the 39 neighborhood clusters in DC, which we'll be diggin into in more depth shortly. For example, we can see notable differences in stps by time of day in more residential neighborhoods like "Brightwood Park, Crestwood, Petworth" and neighborhoods with a more active nightlife like "Kalorama, Adams Morgan, Lanier Heights"
+The interactive visualization below let's you dig into some basic trends and demographic profiles of each of the 39 neighborhood clusters in DC, which we'll be diggin into in more depth shortly. For example, we can see notable differences in stops by time of day in more residential neighborhoods like "Brightwood Park, Crestwood, Petworth" and neighborhoods with a more active nightlife like "Kalorama, Adams Morgan, Lanier Heights"
 
 <figure class="video_container">
 <iframe width="800" height="600" src="https://dc-stop-frisk.herokuapp.com/" frameborder="0" allowfullscreen="true"></iframe>
 </figure>
+
 
 ![](https://raw.githubusercontent.com/GWarrenn/gwarrenn.github.io/drafts/images/stop_and_frisk/05_nbh_sf.gif)
 
