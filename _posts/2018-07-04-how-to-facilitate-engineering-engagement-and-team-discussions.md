@@ -7,6 +7,8 @@ excerpt_separator: <!--more-->
 ---
 
 Over the last three years our development team has rapidly expanded: from a few software engineers keeping the lights on, to a team of over sixty creating experiences we are be proud of. Concepts like ‘customer journey’, ‘user experience’ and ‘iterative delivery’ were not even heard of in the old days, now they are at the core of everything we do. 
+
+![Agile Process - Team Structures](/images/agile-process-team-structures.png)
 <!--more-->
 
 The problems we faced as our team grew could all be categorised into: technological, infrastructural or operational. As a product manager I’ll leave it to people more qualified than me to talk about micro services and Docker containers, but where I think we have been successful is how we organise our teams.
@@ -16,7 +18,6 @@ Our main two issue were getting software engineers from different teams to commu
 How we structured our teams worked (and still does) for the small feature iterations of our products. Each team has a set of products which they own: they are responsible for monitoring, maintaining and incrementally improving them. Nothing revolutionary there then! Our pain stemmed from large projects that spanned multiple teams.
 
 Team A that owned the new API required for the project assumed that team B would be have certain data in order to create their request. Team B who needs to use the new API assumed the new API would go and get that data itself. Cue never-ending back and forth about which team has to make the change and endless theoretical discussions about the importance of stateless web services. All over Slack of course. The result was simple fixes taking weeks to be deployed when writing the code only took hours.  
-![Agile Process - Team Structures](/images/agile-process-team-structures.png)
 
 As a product manager my focus has always been to deliver working software as soon as possible, so we began having ‘bugathons’ towards the end of every project. We would get all the people involved from across various teams and make them sit in a room and fix the issues as team – almost immediately the weeks of back and forth and discussion became minutes and projects that had stalled leaped back into motion. Agile principle six states that face to face communication is the most effective way of communicating within a development team – so we shouldn’t have been surprised that sitting these teams together achieved amazing results.  
 
