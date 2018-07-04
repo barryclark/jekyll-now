@@ -69,5 +69,6 @@ The rule from Java documents is:
 In our case, it made sense to build more resilient and robust system - suspend the job temporarily if some of the services we depended on didn’t work. But being biassed by lambda hype we kind of missed it here and dug ourselves a hole that took us a couple of days to get out from.
 
 ## Takeaways
-Don’t hesitate to use new language features, but make sure you understand how they work and if they really fit your need
-Don’t play with those features in production code. Instead, create a small separate project as a showcase. Stress test that pilot project with various test scenarios to get the most out of it.
+- Don’t hesitate to use new language features, but make sure you understand how they work and if they really fit your need
+- Don’t play with those features in production code. Instead, create a small separate project as a showcase.
+- Stress test that pilot project with various test scenarios to get the most understanding on how those new features work.
