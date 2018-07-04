@@ -14,6 +14,7 @@ text-align: center;}
 #current-nav, #current-nav a:visited, #current-nav:visited {color:#fff !important;}
 #site-nav label {color:var(--color-grey);border:thin solid transparent;}
 #site-nav label:hover {color:var(--color-soft-grey);border:thin solid #353535;}
+.cover img {width:69px;margin-bottom:2.0em;}
 .cover h2 { letter-spacing: 0.069em;line-height:1.2em;font-weight: lighter;font-size:1.3em; }
 .cover h1 {letter-spacing: 0.069em;line-height:1.0em;font-weight: normal ;font-size:1.8em;}
 #coffee h2 {margin:0;}
@@ -96,7 +97,7 @@ main { margin-bottom: 232px;z-index: 1;background-color: var(--color-white);
 }
 #page-footer {position: fixed;box-shadow: inset 0 0 32px rgba(0, 0, 0, .32);bottom: 0px;z-index: -1;width: 100%;}
 @media (max-width: 1366px) {
-    #page-header.cover {padding-top:250px;}
+    #page-header.cover {padding-top:200px;}
    	img.dialog-svg {width:80px!important;height:70px;}
     #coffee .thumb-2 {width: 33.33333%!important;}
     #coffee .pushed-5 {margin-left:33.33333%!important;}
@@ -117,7 +118,7 @@ main { margin-bottom: 232px;z-index: 1;background-color: var(--color-white);
 }
 @media (max-width: 768px) {
     #page-header.cover {background-image: url("/img/home_m.jpg"); background-size:100% auto;background-position:fixed !important; }
-    .cover#page-header {padding-top:180px;}
+    .cover#page-header {padding-top:120px;}
     .cover#page-header h1 {line-height:0.8em;font-size:23px ;}
     .cover#page-header h2 {line-height:1.2em;font-size:15px ;}
     #covers article h4{font-size:32px;}
