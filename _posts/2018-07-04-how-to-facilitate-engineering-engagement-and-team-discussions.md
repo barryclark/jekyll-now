@@ -24,7 +24,7 @@ The other learning we gained from these ‘bugathons’ was that all of a sudden
 
 As a result we started to plan these big projects in a different way. We called them missions. 
 
-##Missions
+## Missions
 A mission starts with a business problem, and on the back of a design sprint and some planning days the team would be assembled. The crucial part of every mission is that the people that makeup the mission stack have the skills and knowledge to achieve the mission’s objective without any external support. We select a product manager and a stakeholder that has the relevant business knowledge to make decisions quickly, engineers are gathered from across the product teams to fulfil the disciplines required from a technical perspective and designers, business analysists and data scientists are added where required.  All members of the team have a deep understanding of what the problem is and a common goal in how to produce a solution.
 
 These people are the same people who would have been working on the project before, the key difference is rather than completing their tasks from within their product team they now do it as part of a mission – sat together at a mission desk.
