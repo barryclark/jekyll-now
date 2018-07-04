@@ -2119,10 +2119,10 @@ nav strong label mark {
 	margin: 0;
 }
 @media (max-width: 1440px) {
-    .cover {height: 50vh;}
+    .cover {height: 65vh;}
 }
 @media (max-width: 767px) {
-    .cover {height: 32vh;}
+    .cover {height: 60vh;}
 	.banner {
 		height: 320px;
 		padding-top: 128px;
