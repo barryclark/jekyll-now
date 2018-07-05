@@ -81,8 +81,8 @@ It covers:
 ✓ SVG social icons for your footer  
 ✓ 3 http requests, including your avatar  
 
-✘ No installing dependencies
-✘ No need to set up local development  
+✘ No installing dependencies   
+✘ No need to set up local development   
 ✘ No configuring plugins  
 ✘ No need to spend time on theming  
 ✘ More time to code other things ... wait ✓!  
