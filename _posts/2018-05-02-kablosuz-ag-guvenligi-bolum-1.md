@@ -14,7 +14,7 @@ Hacktrick'18 - Kablosuz Ağ Sızma Testleri - Besim Altınok
 ## Bazı Temel Bilgiler
 
 <p align="center"> 
-	<img src="/images/kablosuz-ag-guvenligi-bolum-1/3.png">
+	<img src="/image/kablosuz-ag-guvenligi-bolum-1/3.png">
 </p>
 
 Modemler kendilerinin aktif olduğu belirtmek için etrafa **Beacon** paketleri yayarlar, bu sayede çevredeki aktif ağları görebiliriz.  
@@ -26,6 +26,8 @@ Eğer ağ şifreli ise **Authentication Request** ve **Authentication Response**
 - **Beacon** paketleri SSID, MAC adresi, Kanal numarası, Şifreleme tipi bilgilerini içerir.  
 - **Probe Request** paketi sadece SSID içerir, MAC adresi içermez.
 
+---
+
 ## Ağ Kartı Modları
 
 **Managed Modu :** Kablosuz ağa bağlanılabilir.
@@ -33,6 +35,8 @@ Eğer ağ şifreli ise **Authentication Request** ve **Authentication Response**
 **Master Modu :** Erişim noktası hizmeti verebilir.
 
 **Monitor Modu :** Herhangi bir erişim noktasına bağlanmadan ya da erişim noktası hizmeti vermeden direkt olarak havada uçan paketleri dinlenebilir.
+
+---
 
 ## Ağ Kartının Yapılandırılması
 
@@ -78,6 +82,8 @@ Eğer ağ kartının belli bir kanalda monitor moduna geçirilmesi gerekiyorsa *
 	iwconfig wlan0 channel 8
 ```  
 
+---
+
 ## Wireshark ile Beacon ve Probe Paketlerinin İncelenmesi
 
 Ağ kartımızı monitor moduna geçirdikten sonra etrafta uçan paketleri görmek için **wlan0mon** ile wireshark dinlemesini başlatabiliriz.
@@ -108,13 +114,15 @@ WireShark'ta Beacon paketi incelenerek ağın şifreleme türü tespit edilebili
 
 Beacon Paketinin **Capabilites** altında bulunan **Privacy** kısmı eğer 1 ise ağ şifreli demektir.
 <p align="center"> 
-	<img src="/images/kablosuz-ag-guvenligi-bolum-1/1.png">
+	<img src="/image/kablosuz-ag-guvenligi-bolum-1/1.png">
 </p>
 
 Şifreleme tipini öğrenmek için **RSN** tag'ine bakmak gerekir. Örneğin **AES** var ise WPA2 şifrelemesi vardır.
 <p align="center"> 
-	<img src="/images/kablosuz-ag-guvenligi-bolum-1/2.png">
+	<img src="/image/kablosuz-ag-guvenligi-bolum-1/2.png">
 </p>
+
+---
 
 ## Çevredeki Ağların Tespit edilmesi
 
@@ -171,12 +179,16 @@ UNIX tabanlı sistemlerde **iwlist** tool'u ile çevredeki ağlar hakkında bilg
 ```  
 Windows sistemlerde ise [exid.it](http://www.oxid.it/) ile monitor moduna geçmeden dinleme yapılabilir.  
 
+---
+
 ## Gizli Ağların Tespiti
 
 Çevrede bulunan gizli ağların tespiti için ağ dinlemeye alınır eğer biri ağa bağlanır ise isim tespit edilmiş olur. İstemciler ağdan düşürülerek ağa tekrar bağlanması sağlanabilir.
 ```
 	airodump-ng wlan0mon --bssid A6:EB:1C:26:3C:EA -c 6
 ```
+
+---
 
 ## İstemcilerin Ağdan Düşürülmesi
 
@@ -189,6 +201,8 @@ Bunun için **aireplay-ng** tool'u kullanılabilir. Genel kullanım aşağıdaki
 ```
 	aireplay-ng --deauth 3 -a A6:EB:1C:26:3C:EA -c 5E:9F:F5:19:FC:2A wlan0mon
 ```
+
+---
 
 ## Handshake Saldırısı ile Ağ Parolalarının Ele Geçirilmesi
 
