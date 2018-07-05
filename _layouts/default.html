@@ -48,6 +48,10 @@
     {% include partials/footer.html %}
 	</div>
 
+		<!-- Out of page
+		================================================== -->	
+    {% include partials/dialog.html %}  
+    
     <!-- Scripts
     ================================================== -->
   	<script src="{{ site.baseurl }}/hipertextos/js/jquery.js"></script>
@@ -63,7 +67,6 @@
     		});
 		});
   	</script>{% endif %}
-	{% if page.comments %}<script id="dsq-count-scr" src="//isard-miralles.disqus.com/count.js" async></script>{% endif %}
     {% include analytics.html %}
   </body>
 </html>
