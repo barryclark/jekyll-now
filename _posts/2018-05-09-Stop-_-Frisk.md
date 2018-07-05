@@ -39,9 +39,15 @@ While we're talking about race and stop and frisk, it's important to note that, 
 
 Along with the stop and frisk data, the MPD also reported on "field contact reports" from 2012 to 2016. The main difference between a field contact and stop and frisk, as the documentation reports, is that field contact incidents are non-forcible stops and/or questioning between MPD and a citizen. I made the decision to group them together because a forcible/non-forcible stop still represented police intervention in the community. For the majority of the analysis we will consider the two to be one in the same as we are interested in any and all contact between police and the public. However, we'll spend a bit of time looking at the differences now.
 
+![](https://raw.githubusercontent.com/GWarrenn/gwarrenn.github.io/drafts/images/stop_and_frisk/race_contact.png)
+
+Overall, there is little difference in contact type by race. Black people comprised ~81% of both non-forcible and forcible, however white people were slightly more likely to experience non-forcible encounters with police than forcible encounters.
+
 ![](https://raw.githubusercontent.com/GWarrenn/gwarrenn.github.io/drafts/images/stop_and_frisk/gender_race_contact.png)
 
 Across all racial groups and stop types, subjects identified by MPD as male comprise a majority of incidents. However, there are some notable gender differences by contact type. Overall, women, especially white women, experienced more non-forcible than forcible contact with the police. 
+
+
 
 ![](https://raw.githubusercontent.com/GWarrenn/gwarrenn.github.io/drafts/images/stop_and_frisk/reason_for_stop.png)
 
