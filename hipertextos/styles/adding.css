@@ -24,6 +24,8 @@ main {padding-bottom:0!important;}
 #page-header.cover {background-image: url("/img/home.jpg");image-rendering: crisp-edges;background-position: fixed;}
 #page-main.darkmode {background:#111;}
 #page-main.darkmode em a {background:#111;}
+#web-oferta {background-image: url("/img/sky.jpg");image-rendering: crisp-edges;background-position: top center;background-attachment: fixed;background-size: cover;
+	background-repeat: no-repeat;border:none;color: #fff;letter-spacing: .06em;overflow: hidden;text-align: center;}
 .text-left {text-align:left;}
 .text-right {text-align:right;}
 em hr {border-bottom:thin solid #eee;}	
