@@ -15,7 +15,7 @@ In the past, from a business perspective, a request for data could be a very lab
 
 At this point, the Citizen Data Analyst first appeared (though this phrase hadn't been coined yet) and employed the world's favourite data analysis tool: Excel.  And overnight this happened:-
 
-![Spreadsheet Hell](/images/spreadsheet-hell.png)
+![Spreadsheet Hell](/images/spreadsheet-hell.jpg)
 > So, which sheet tells me how many sales we did?
 
 I have nothing against Excel.  I have a lot against the constant misuse of it (don't get me started on its frequent use as a data transfer tool) which includes the calculations that early Citizen Data Analysts employed.  
