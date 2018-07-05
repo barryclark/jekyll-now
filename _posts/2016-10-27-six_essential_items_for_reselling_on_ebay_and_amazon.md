@@ -50,7 +50,7 @@ The trick with these is to set the paper size so that you print on only one labe
 
 This is just a must have. You need someway to seal boxes. Just don't use it to tape your labels - use shipping labels that stick!
 
-
+{% include amazon/search-ad.html category="OfficeProducts" search="shipping tape" %}
 
 ## [6. Laser Printer](https://www.amazon.com/s/?url=search-alias=office-products&field-keywords=laser+printer&n=172648&tag=hendrixjoseph-20)
 
@@ -58,6 +58,6 @@ These have come down in price recently, and they're about the same size are inkj
 
 Of course, I feel somewhat hypocritical about that last one because I still am using my inkjet printer that I bought a decade ago. Hey, it still works!
 
-
+{% include amazon/search-ad.html category="OfficeProducts" search="laser printer" %}
 
 Do you think I missed anything? Comment below!
