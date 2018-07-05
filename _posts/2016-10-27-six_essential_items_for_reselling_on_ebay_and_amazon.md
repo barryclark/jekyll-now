@@ -16,6 +16,7 @@ This is so important I'm making it the zeroth item. Also zeroth so I can keep th
 
 (Thank you, [WithoutLampsTheredBe](https://www.reddit.com/user/WithoutLampsTheredBe) for [pointing this out](https://www.reddit.com/r/eBaySellerAdvice/comments/59x3pp/six_essential_items_for_reselling_on_ebay_and/d9c12x4/)!)
 
+{% include amazon/search-ad.html category="OfficeProducts" search="postal scale" %}
 
 ## [1.	Scotch 3M Bubble Mailers Size 0 (6" x 9") - 25ct](https://www.amazon.com/gp/product/B000PE46I8/?tag=hendrixjoseph-20)
 
@@ -49,10 +50,14 @@ The trick with these is to set the paper size so that you print on only one labe
 
 This is just a must have. You need someway to seal boxes. Just don't use it to tape your labels - use shipping labels that stick!
 
+{% include amazon/search-ad.html category="OfficeProducts" search="shipping tape" %}
+
 ## [6. Laser Printer](https://www.amazon.com/s/?url=search-alias=office-products&field-keywords=laser+printer&n=172648&tag=hendrixjoseph-20)
 
 These have come down in price recently, and they're about the same size are inkjets. So you don't need a huge thousand dollar printer like you might see at the office. The real advantage to these is they use a lot less ink - actually, toner - than inkjet printers.
 
 Of course, I feel somewhat hypocritical about that last one because I still am using my inkjet printer that I bought a decade ago. Hey, it still works!
+
+{% include amazon/search-ad.html category="OfficeProducts" search="laser printer" %}
 
 Do you think I missed anything? Comment below!
