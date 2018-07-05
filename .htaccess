@@ -1,0 +1,10 @@
+## STOP REFERRER SPAM 
+RewriteCond %{HTTP_REFERER} semalt\.com [NC,OR] 
+RewriteCond %{HTTP_REFERER} buttons-for-website\.com [NC] 
+RewriteRule .* - [F]
+
+ErrorDocument 404 /404.html
+
+# Prevent access to .txt & .yml files
+RedirectMatch 404 \.(txt|yml)$
+
