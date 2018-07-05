@@ -55,6 +55,13 @@ figure em a {border:none;border-bottom;line-height:0.2em;padding:12px 4px;}
 #covers img {width: 13%;margin-bottom:1.2em; }
 #covers article {border:0;}
 #page #covers article {text-shadow:1px 1px 3px rgba(0,0,0,.12);}
+
+#matte-demo {background-image: url("/img/texture/dark_grey.png");
+background-size:256px 256px;background-repeat: repeat;image-rendering: crisp-edges;
+text-align:center;padding:12px 13% 12px 13%;color:var(--color-softgrey);}
+#matte-demo .demos {padding:8px;}
+#matte-demo .demo-xl {padding:8px;}
+
 /* Dialog */
 #dialog .icon-alarm svg {max-width:23px!important;}
 #dialog {max-height:80%;overflow:hidden;}
