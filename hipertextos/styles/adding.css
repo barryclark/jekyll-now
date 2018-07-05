@@ -126,6 +126,9 @@ main { margin-bottom: 232px;z-index: 1;background-color: var(--color-white);
     #covers .cover-justify p{font-size:16px!important;letter-spacing: 0.001em;max-width:80%;margin-left:10%;}
     #covers article p em{font-size:18px!important;letter-spacing: 0.001em;}
     .thumb-5, .thumb-6 {width: 100%;}
+    #matte-demo {padding:12px 2% 12px 2%;}
+	#matte-demo .demos {padding:6px;}
+	#matte-demo .demo-xl {padding:6px;}
     strong em a {font-size: 16px;}
     aside.thumb-3 {margin-top:1.em;}
     aside.thumb-3 a {font-size:18px;}
@@ -139,6 +142,9 @@ main { margin-bottom: 232px;z-index: 1;background-color: var(--color-white);
     .cover#page-header h2 {line-height:1.2em;font-size:16px ;}
     #web-oferta p {font-size:17px; max-width:50%;margin-left:25%;}
     #covers .cell-3 {min-width:50%;margin-bottom:32px;}
+    #matte-demo {padding:6px 1% 6px 1%;}
+	#matte-demo .demos {padding:4px;}
+	#matte-demo .demo-xl {padding:4px;}
 }
 @media (max-width: 768px) {
     #page-header.cover {background-image: url("/img/home_m.jpg"); background-size:100% auto;background-position:fixed !important; }
@@ -170,6 +176,9 @@ main { margin-bottom: 232px;z-index: 1;background-color: var(--color-white);
     #coffee .thumb-2 {width: 90%!important;}
     #coffee .pushed-5 {margin-left:5%!important;}
     #icons a {width:15%;padding:12px;border-radius:2px;}
+    #matte-demo {padding:6px 1% 6px 1%;}
+	#matte-demo .demos {padding:4px;width:100%;}
+	#matte-demo .demo-xl {padding:4px;}
 }
 
 @media (max-width: 432px) {
