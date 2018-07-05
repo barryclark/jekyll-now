@@ -27,6 +27,7 @@ main {padding-bottom:0!important;}
 #web-oferta {background-image: url("/img/sky.jpg");image-rendering: crisp-edges;background-position: top center;background-attachment: fixed;background-size: cover;
 	background-repeat: no-repeat;border:none;color: #fff;letter-spacing: .06em;overflow: hidden;text-align: center;}
 #web-oferta {color:var(--color-hardgrey);padding:69px 0 80px 0;}
+#web-oferta p {max-width:30%;margin-left:35%;}
 img.front-responsive  {width:300px;}
 .text-left {text-align:left;}
 .text-right {text-align:right;}
@@ -109,13 +110,14 @@ main { margin-bottom: 232px;z-index: 1;background-color: var(--color-white);
 @media (max-width: 1366px) {
     #page-header.cover {padding-top:120px;}
    	img.dialog-svg {width:80px!important;height:70px;}
+    #web-oferta p {font-size:.9em; max-width:30%;margin-left:35%;}
     #coffee .thumb-2 {width: 33.33333%!important;}
     #coffee .pushed-5 {margin-left:33.33333%!important;}
     #covers { text-rendering: optimizeLegibility;}
-    #covers article h4{font-size:95%;}
-    #covers article h5{font-size:18px;}
-    #covers .cover-justify p{font-size:14px!important;letter-spacing: 0.001em;}
-    #covers article p em{font-size:15px!important;letter-spacing: 0.001em;}
+    #covers article h4{font-size:23px;margin-bottom:6px;}
+    #covers article h5{font-size:21px;margin:0px;}
+    #covers .cover-justify p{font-size:16px!important;letter-spacing: 0.001em;max-width:80%;margin-left:10%;}
+    #covers article p em{font-size:18px!important;letter-spacing: 0.001em;}
     .thumb-5, .thumb-6 {width: 100%;}
     strong em a {font-size: 16px;}
     aside.thumb-3 {margin-top:1.em;}
@@ -128,17 +130,20 @@ main { margin-bottom: 232px;z-index: 1;background-color: var(--color-white);
     .cover#page-header {padding-top:50px;}
     .cover#page-header h1 {line-height:0.8em;font-size:21px ;}
     .cover#page-header h2 {line-height:1.2em;font-size:16px ;}
+    #web-oferta p {font-size:17px; max-width:50%;margin-left:25%;}
+    #covers .cell-3 {min-width:50%;margin-bottom:32px;}
 }
 @media (max-width: 768px) {
     #page-header.cover {background-image: url("/img/home_m.jpg"); background-size:100% auto;background-position:fixed !important; }
     .cover#page-header {padding-top:20px;}
     .cover#page-header h1 {line-height:0.8em;font-size:23px ;}
     .cover#page-header h2 {line-height:1.2em;font-size:15px ;}
-    #covers article h4{font-size:32px;}
-    #covers article h5{font-size:26px;}
-    #covers .cover-justify p{font-size:18px!important;letter-spacing: 0.005em;line-height:1.8em;}
+    #web-oferta p {font-size:14px; max-width:80%;margin-left:10%;}
+    #covers article h4{font-size:26px;line-height:1.3em;}
+    #covers article h5{font-size:23px;}
+    #covers .cover-justify p{font-size:12px!important;letter-spacing: 0.005em;line-height:2.1em;}
     #covers article p em{font-size:19px!important;letter-spacing: 0.015em;}
-    #covers article img {margin-top:64px;}
+    #covers article img {margin-top:32px;}
    	#covers article {width: 100%;}
     .cover-page .thumb-9, .cover-page .thumb-3 {width: 100%;}
 	#dialog .icon-alarm svg {max-width:16px!important;margin:0;padding:0;}
