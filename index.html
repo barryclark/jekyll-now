@@ -4,8 +4,8 @@ home: true
 ---
     {% include partials/navigation/nav.html %}
 	{% include partials/head.html %}
-    <main id="page-main" role="main" class="darkmode">
-			<section id="covers" class="anm-fadeIn delay-1500">
+    <main id="page-main" role="main" class="darkmode anm-fadeIn delay-1000">
+			<section id="covers">
 			<br>
 			{% include partials/navigation/covers.html %}
 			<hr>
@@ -13,7 +13,7 @@ home: true
 			<section id="web-oferta">
 				<div>
 					<h2>Web</h2>
-					<img src="/img/responsive.png" class="front-responsive">
+					<img src="/img/responsive.png" class="front-responsive" rel="imatge relativa als diferents tamanys de pantalla">
 					<br>
 					{% if site.web %}
 						<p>{{ site.web }}</p>
@@ -21,7 +21,16 @@ home: true
 					<h5>a partir de 300€</h5>
 				</div>
 			</section>
-			<section id="coffee" class="fronter anm-fadeIn delay-1500">
+			<section id="matte-demo" class="demo">
+				<hr>
+				<em><h2>Creacions Digitals</h2></em>
+					<img src="/images/sondelvent/sondelvent1.jpg" class="demos thumb-4" rel="imatges sense retocar">				
+					<img src="/images/sondelvent/sondelvent2.jpg" class="demos thumb-4" rel="imatges amb retocs parcials">				
+					<img src="/images/sondelvent/sondelvent3.jpg" class="demos thumb-4" rel="imatges amb retocs finals">				
+					<img src="/images/sondelvent/sondelvent.jpg" class="demo-xl" rel="imatge final">				
+				<hr>
+			</section>
+			<section id="coffee" class="fronter">
 				<hr>
 				<em><img src="{{ site.baseurl }}/hipertextos/svg/coffee.svg" alt="imatge de tasa de cafè"></em>
 				<em><h2>Fem un Cafè?</h2></em>
