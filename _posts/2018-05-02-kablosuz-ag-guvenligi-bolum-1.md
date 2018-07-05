@@ -14,7 +14,7 @@ Hacktrick'18 - Kablosuz Ağ Sızma Testleri - Besim Altınok
 ## Bazı Temel Bilgiler
 
 <p align="center"> 
-	<img src="/image/kablosuz-ag-guvenligi-bolum-1/3.png">
+	<img src="/images/kablosuz-ag-guvenligi-bolum-1/3.png">
 </p>
 
 Modemler kendilerinin aktif olduğu belirtmek için etrafa **Beacon** paketleri yayarlar, bu sayede çevredeki aktif ağları görebiliriz.  
@@ -114,12 +114,12 @@ WireShark'ta Beacon paketi incelenerek ağın şifreleme türü tespit edilebili
 
 Beacon Paketinin **Capabilites** altında bulunan **Privacy** kısmı eğer 1 ise ağ şifreli demektir.
 <p align="center"> 
-	<img src="/image/kablosuz-ag-guvenligi-bolum-1/1.png">
+	<img src="/images/kablosuz-ag-guvenligi-bolum-1/1.png">
 </p>
 
 Şifreleme tipini öğrenmek için **RSN** tag'ine bakmak gerekir. Örneğin **AES** var ise WPA2 şifrelemesi vardır.
 <p align="center"> 
-	<img src="/image/kablosuz-ag-guvenligi-bolum-1/2.png">
+	<img src="/images/kablosuz-ag-guvenligi-bolum-1/2.png">
 </p>
 
 ---

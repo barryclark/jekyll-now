@@ -12,7 +12,7 @@ subtitle: "ssh-key'in nasıl kullanıldığını açıklar."
 ---
 
 <p align="center"> 
-	<img src="/image/ssh-key-kullanimi/0.png">
+	<img src="/images/ssh-key-kullanimi/0.png">
 </p>
 
 ---
@@ -26,7 +26,7 @@ subtitle: "ssh-key'in nasıl kullanıldığını açıklar."
 ```
 
 <p align="center"> 
-	<img src="/image/ssh-key-kullanimi/1.png">
+	<img src="/images/ssh-key-kullanimi/1.png">
 </p>
 
 Ardından pub dosyasının içeriğini kopyalayın ve sunucuya tarafına geçin.
@@ -36,7 +36,7 @@ Ardından pub dosyasının içeriğini kopyalayın ve sunucuya tarafına geçin.
 ```
 
 <p align="center"> 
-	<img src="/image/ssh-key-kullanimi/2.png">
+	<img src="/images/ssh-key-kullanimi/2.png">
 </p>
 
 ---
@@ -55,13 +55,13 @@ Eğer hali hazırda sunucuda ilgili kullanıcının home dizini altında **.ssh/
 ```
 
 <p align="center"> 
-	<img src="/image/ssh-key-kullanimi/3.png">
+	<img src="/images/ssh-key-kullanimi/3.png">
 </p>
 
 Ardından kopyaladığınız key'i **.ssh/authorized_keys** dosyasına yapıştırın.
 
 <p align="center"> 
-	<img src="/image/ssh-key-kullanimi/4.png">
+	<img src="/images/ssh-key-kullanimi/4.png">
 </p>
 
 ---
@@ -76,7 +76,7 @@ Ardından kopyaladığınız key'i **.ssh/authorized_keys** dosyasına yapışt�
 Aşağıda görüldüğü gibi parola kullanılmadan bağlantı sağlanmış oldu.
 
 <p align="center"> 
-	<img src="/image/ssh-key-kullanimi/5.png">
+	<img src="/images/ssh-key-kullanimi/5.png">
 </p>
 
 ---
@@ -100,7 +100,7 @@ config dosyasını aşağıdaki gibi açın ve ilgili satırları tabloda belirt
 İşlem gerçekleştirildikten sonra aşağıda görüldüğü gibi ssh-key olmadan bağlantı kurulmasına izin verilmemektedir.
 
 <p align="center"> 
-	<img src="/image/ssh-key-kullanimi/8.png">
+	<img src="/images/ssh-key-kullanimi/8.png">
 </p>
 
 ---
@@ -122,10 +122,10 @@ Ardından aşağıdaki dosyayı ayarlayın.
 		IdentityFile		/path/to/ssh-key
 ```
 <p align="center"> 
-	<img src="/image/ssh-key-kullanimi/6.png">
+	<img src="/images/ssh-key-kullanimi/6.png">
 </p>
 
 Artık herhangi bir şekilde IP girmek yerine direkt olarak **ssh serverName** diyerek sunucunuza bağlanabilirsiniz.
 <p align="center"> 
-	<img src="/image/ssh-key-kullanimi/7.png">
+	<img src="/images/ssh-key-kullanimi/7.png">
 </p>
