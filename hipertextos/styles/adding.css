@@ -81,6 +81,10 @@ img.dialog-svg {width:120px;height:150px;}
 #coffee {color: var(--color-hardgrey);height:100%;text-align: center !important;}
 #coffee p {text-align: justify;-moz-hyphens:none;-ms-hyphens:none;-webkit-hyphens:none;-o-hyphens:none;hyphens:none;}
 
+#coffee.fronter {background: linear-gradient(white, #e5e5e5);}
+#coffee.fronter em label {background:transparent;}
+#coffee.fronter em label:hover {background:#eee;}
+
 /* Footer */ 
 #page-footer {background:#222;color:#999;}
 #page-footer em small a {border: thin solid #222;}
