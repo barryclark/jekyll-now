@@ -15,8 +15,8 @@ text-align: center;}
 #site-nav label {color:var(--color-grey);border:thin solid transparent;}
 #site-nav label:hover {color:var(--color-soft-grey);border:thin solid #353535;}
 .cover img {width:69px;margin-bottom:2.0em;}
-.cover h2 { letter-spacing: 0.069em;line-height:1.2em;font-weight: lighter;font-size:1.3em; }
-.cover h1 {letter-spacing: 0.069em;line-height:1.0em;font-weight: normal ;font-size:1.8em;}
+.cover h2 { letter-spacing: 0.01em;line-height:1.2em;font-weight: lighter;font-size:1.0em; }
+.cover h1 {letter-spacing: 0.01em;line-height:1.0em;font-weight: normal ;font-size:1.8em;}
 #coffee h2 {margin:0;}
 body {text-align: justify;-moz-hyphens:none;-ms-hyphens:none;-webkit-hyphens:none;-o-hyphens:none;hyphens:none;word-wrap:none;}
 p, ul {font-size: 18px;line-height: 27px;}
@@ -146,9 +146,9 @@ main { margin-bottom: 232px;z-index: 1;background-color: var(--color-white);
 }
 @media (max-width: 1242px) {
 	#page-header.cover {background-image: url("/img/home_b.jpg");background-position:fixed;}
-    .cover#page-header {padding-top:50px;}
-    .cover#page-header h1 {line-height:0.8em;font-size:21px ;}
-    .cover#page-header h2 {line-height:1.2em;font-size:16px ;}
+    .cover#page-header {padding-top:80px;}
+    .cover#page-header h1 {line-height:1.0em;font-size:26px ;}
+    .cover#page-header h2 {line-height:1.2em;font-size:18px ;}
     #web-oferta p {font-size:17px; max-width:50%;margin-left:25%;}
     #covers .cell-3 {min-width:50%;margin-bottom:32px;}
     #matte-demo {padding:6px 1% 6px 1%;}
@@ -161,9 +161,9 @@ main { margin-bottom: 232px;z-index: 1;background-color: var(--color-white);
 }
 @media (max-width: 768px) {
     #page-header.cover {background-image: url("/img/home_m.jpg"); background-size:100% auto;background-position:fixed !important; }
-    .cover#page-header {padding-top:20px;}
-    .cover#page-header h1 {line-height:0.8em;font-size:23px ;}
-    .cover#page-header h2 {line-height:1.2em;font-size:15px ;}
+    .cover#page-header {padding-top:50px;}
+    .cover#page-header h1 {line-height:0.8em;font-size:21px ;}
+    .cover#page-header h2 {line-height:1.2em;font-size:19px ;}
     #web-oferta p {font-size:14px; max-width:80%;margin-left:10%;}
     #covers article h4{font-size:26px;line-height:1.3em;}
     #covers article h5{font-size:23px;}
