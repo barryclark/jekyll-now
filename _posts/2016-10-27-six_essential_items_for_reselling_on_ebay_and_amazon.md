@@ -16,7 +16,7 @@ This is so important I'm making it the zeroth item. Also zeroth so I can keep th
 
 (Thank you, [WithoutLampsTheredBe](https://www.reddit.com/user/WithoutLampsTheredBe) for [pointing this out](https://www.reddit.com/r/eBaySellerAdvice/comments/59x3pp/six_essential_items_for_reselling_on_ebay_and/d9c12x4/)!)
 
-
+{% include amazon/search-ad.html category="OfficeProducts" search="postal scale" %}
 
 ## [1.	Scotch 3M Bubble Mailers Size 0 (6" x 9") - 25ct](https://www.amazon.com/gp/product/B000PE46I8/?tag=hendrixjoseph-20)
 
