@@ -9,7 +9,7 @@ One of the things I realized after reading [Marta's blog](https://gosnellgroup-m
 Since the first part of [photometry_practice_updated.py](https://github.com/GosnellResearchGroupSummer2018/NGC6819/blob/master/photometry%20practice/photometry_practice_updated.py) deals with source detection, writing a code that just just detects sources in an image was my first goal. Marta helped me out a lot here; she helped me figure out how to bring .fits files into the [new code](https://github.com/GosnellResearchGroupSummer2018/NGC6819/blob/master/photometry%20codes/source_detection.py) and worked with me to try to make the [code](https://github.com/GosnellResearchGroupSummer2018/NGC6819/blob/master/photometry%20codes/source_detection.py) recursive so the code processes all the .fits files in a particular directory at once. 
 
 The first version of [source_detection.py](https://github.com/GosnellResearchGroupSummer2018/NGC6819/blob/master/photometry%20codes/source_detection.py) was only meant to draw in one .fits file and detect all 5σ sources in it (note: this link will always go to the most modern version of source_detection.py). Using this [code](), I was able to make the first diagram that used data relevant to this project:  
-![sources](https://github.com/thom-ory/thom-ory.github.io/blob/master/images/sources.png) ![raw_data]("https://github.com/thom-ory/thom-ory.github.io/blob/master/images/rawdata.png" )
+![sources](https://github.com/thom-ory/thom-ory.github.io/blob/master/images/sources.png) ![raw_data](https://github.com/thom-ory/thom-ory.github.io/blob/master/images/rawdata.png)
 _2D array showing 5σ sources circled in blue (radius 3 arcseconds) vs raw data from the .fits file_
 
 ---
