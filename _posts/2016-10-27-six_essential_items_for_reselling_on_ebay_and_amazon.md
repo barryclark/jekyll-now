@@ -19,60 +19,40 @@ This is so important I'm making it the zeroth item. Also zeroth so I can keep th
 
 ## [1.	Scotch 3M Bubble Mailers Size 0 (6" x 9") - 25ct](https://www.amazon.com/gp/product/B000PE46I8/?tag=hendrixjoseph-20)
 
-<div style="overflow: auto;"><div class="eighty-width float-left">
 DVD cases fit snugly into these. They’re great for other small things, too. If you buy them individually at the store (say, Kroger or Meijer), the cost roughly 70&cent; a mailer. Amazon has them for around $7.50, which makes them cost 30&cent; apiece, which is less than half the cost. Yeah, I know it’s <i>only</i> 40&cent;, but it adds up - that’s $10 a box!
 
-I’ve already ordered my second box.</div>
+I’ve already ordered my second box.
 
-<div class="float-right mobile-center">
-<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=hendrixjoseph-20&marketplace=amazon&region=US&placement=B000PE46I8&asins=B000PE46I8&linkId=1c4cb9a8dd5d724433a1476eb72718e6&show_border=true&link_opens_in_new_window=true"></iframe>
-</div></div>
-
+{% include amazon/native-ad.html asin="B000PE46I8" %}
 
 ## [2.	Scotch Bubble Mailer, 8.5 x 11-Inches, Size #2, 25-Pack](https://www.amazon.com/gp/product/B009MPB9KY/?tag=hendrixjoseph-20)
 
-<div style="overflow: auto;"><div class="eighty-width float-right">
 Same thing as #1, but only bigger. I haven’t used as many as these as the first one - I’m still on my first box. They still cost a lot less than buying them individually at the store - around 80&cent; to $1.00 at the store, compared to around $10 on Amazon. A savings of $15 a box!
-</div>
 
-<div class="float-left mobile-center">
-<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=hendrixjoseph-20&marketplace=amazon&region=US&placement=B009MPB9KY&asins=B009MPB9KY&linkId=7ed7c3b666fa765988e54425240c2dca&show_border=true&link_opens_in_new_window=true"></iframe>
-</div></div>
+{% include amazon/native-ad.html asin="B009MPB9KY" %}
 
 ## [3.	200 - 10x13 WHITE POLY MAILERS ENVELOPES BAGS 10 x 13](https://www.amazon.com/gp/product/B000HG9J6I/?tag=hendrixjoseph-20)
 
-<div style="overflow: auto;"><div class="eighty-width float-left">
 I don’t even know where to buy these offline. I’ve only used these a few times, but they’re good for things that won’t fit in the other two items I mentioned that don’t need any bubble protection. For instance, I shipped a Fram cabin air filter that was new in box the other day in one of these.
-</div>
 
-<div class="float-right mobile-center">
-<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=hendrixjoseph-20&marketplace=amazon&region=US&placement=B000HG9J6I&asins=B000HG9J6I&linkId=400b8d9ac463ab8330e6b8e6013d1744&show_border=true&link_opens_in_new_window=true"></iframe>
-</div></div>
+{% include amazon/native-ad.html asin="B000HG9J6I" %}
 
 ## [4.	MFLABEL 200 Half Sheet - Shipping Labels - 5-1/2" X 8-1/2"](https://www.amazon.com/gp/product/B015PXX7AG/?tag=hendrixjoseph-20)
 
-<div style="overflow: auto;"><div class="eighty-width float-right">
 The best thing about shipping labels is that they’re so easy to apply. Before I got these, I was just printing my labels on regular paper, cutting the paper, and then taping it to my packages. This was a real pain and I frequently found myself cussing at the box. Plus I was wasting a lot of tape.
 
 The trick with these is to set the paper size so that you print on only one label a time.
-</div>
 
-<div class="float-left mobile-center">
-<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=hendrixjoseph-20&marketplace=amazon&region=US&placement=B015PXX7AG&asins=B015PXX7AG&linkId=2e28c60e197f61381dcc6127e4d9db54&show_border=true&link_opens_in_new_window=true"></iframe>
-</div></div>
+{% include amazon/native-ad.html asin="B015PXX7AG" %}
 
 ## [5. Shipping Tape](https://www.amazon.com/s/?url=search-alias=office-products&field-keywords=shipping+tape&n=1069242&tag=hendrixjoseph-20)
 
-<div>
 This is just a must have. You need someway to seal boxes. Just don't use it to tape your labels - use shipping labels that stick!
-</div>
 
 ## [6. Laser Printer](https://www.amazon.com/s/?url=search-alias=office-products&field-keywords=laser+printer&n=172648&tag=hendrixjoseph-20)
 
-<div>
 These have come down in price recently, and they're about the same size are inkjets. So you don't need a huge thousand dollar printer like you might see at the office. The real advantage to these is they use a lot less ink - actually, toner - than inkjet printers.
 
 Of course, I feel somewhat hypocritical about that last one because I still am using my inkjet printer that I bought a decade ago. Hey, it still works!
-</div>
 
 Do you think I missed anything? Comment below!
