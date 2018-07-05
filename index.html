@@ -12,8 +12,12 @@ home: true
 			</section>
 			<section id="web-oferta">
 				<div>
-					<h2>Pàgines Web</h2>
+					<h3>Pàgines Web</h3>
 					<img src="/img/responsive.png" class="front-responsive">
+					<br>
+					{% if site.web %}
+						<p>{{ site.web }}</p>
+					{% endif %}
 					<h5>a partir de 300€</h5>
 				</div>
 			</section>
