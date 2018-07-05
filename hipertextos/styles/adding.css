@@ -35,7 +35,7 @@ em u label, em u a {text-transform:uppercase;background:var(--color-white);borde
 em u label:hover, em u a:hover {border: 2px solid var(--color-blue);color:var(--color-blue);text-decoration: none;box-shadow:0 3px 7px rgba(0,0,0,.12); }
 em u label:active, em u a:active {background-color:rgba(240,240,240,.5) ;color:var(--color-link) !important;border: 2px solid var(--color-link);box-shadow:inset 0 3px 5px rgba(0,0,0,.12);text-decoration: none; }
 p em {border: var(--one-pixel) solid transparent;font-weight: bold;line-height: 24px;font-size: 21px;padding: 0;text-rendering: optimizeLegibility;}
-section.cover-justify p {padding: 6px 18px 0 18px;line-height: 23px;font-size: 16px !important;letter-spacing: .15em}
+section.cover-justify p {padding: 6px 20px 0 20px;line-height: 24px;font-size: 15px !important;letter-spacing: .01em}
 /* Page & Header */
 .cover#page-header  {background-color: var(--color-white);}
 .serveis-header {border-bottom:10px solid var(--color-hardgrey);background-color: var(--color-black);color: var(--color-hardgrey);}
