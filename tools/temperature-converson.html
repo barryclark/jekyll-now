@@ -4,10 +4,12 @@ title: Temperature Conversion
 permalink: /tools/temperature-converson/
 ---
 
+<div class="temperature-form">
 <div><input type="number" id="celsius" value="0" />  &deg;C</div>
 <div><input type="number" id="fahrenheit" value="32" />  &deg;F</div>
 <div><input type="number" id="kelvin" value="273.15" />  K</div>
 <div><input type="number" id="rankine" value="459.67" />  &deg;R</div>
+<div>
 
 <script>
 document.getElementById("fahrenheit").oninput = function() {
@@ -38,3 +40,13 @@ document.getElementById("kelvin").oninput = function() {
  document.getElementById("rankine").value = (k * 9 / 5).toFixed(2);
 };
 </script>
+ 
+<style>
+.temperature-form {
+ text-align: center; 
+}
+ 
+.temperature-form div {
+ text-align: left; 
+}
+</style>
