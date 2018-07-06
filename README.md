@@ -2,7 +2,7 @@
 
 ***Öncelikle katkılarınız için teşekkür ederiz.***
 
-Makalenizi yayınlamadan önce makalenizin bazı kalıplarda olması gerekiyor. Makalenin adı ***2018-ay-gün-ad*** şeklinde olmalıdır. Eğer adı birkaç kelimeden oluşuyorsa ***“–“*** ile bitişik bir şekilde yazılmalı ve uzantısı **.md** olacak şekilde kaydedilmelidir. Örnek olarak **“ 2018-03-01-Des-3Des.md ”** şeklindedir.
+Makalenizi yayınlamadan önce makalenizin bazı kalıplarda olması gerekiyor. Makalenin adı ***yıl-ay-gün-makale-basligi*** şeklinde olmalıdır. Eğer adı birkaç kelimeden oluşuyorsa ***“–“*** ile bitişik bir şekilde yazılmalı ve uzantısı **.md** olacak şekilde kaydedilmelidir. Örnek olarak **“ 2018-03-01-des-algoritmalari.md ”** şeklindedir.
 
 Makale içeriğine geçecek olursak yazınızın başına
 
