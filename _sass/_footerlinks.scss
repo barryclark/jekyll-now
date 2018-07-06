@@ -1,13 +1,14 @@
 .footer-links {
     font-size: 0.75em;
     margin: 0.5em;
-    text-align: left;
+    text-align: center;
     
     a {
         display: block;
     }
     
     span {
+        text-align: left;
         display: inline-block;
         vertical-align: top;
         margin: 0.5em;
