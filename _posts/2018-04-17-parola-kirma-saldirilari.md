@@ -73,11 +73,11 @@ Kısaca **“senin bildiğin parola, sistemin bildiği şifredir”** diyebiliri
 
 - Oldukça popüler olan bu uygulama ile bir çok şifre kırılabilir. Bir çok şifreleme türünü desteklemektedir.
 
-	Örneğin Exploit anlatımında kevgir cihazında yetki yükseltme ile root'a kadar çıkmıştık. Ama root'un parolasını hala bilmiyorduk. John the Ripper ile (eğer şanslı isek) kullanıcının şifresini kırabilir. Tek ihtiyacımız olan parolanın hash'leniş hali yani şifresi.
+	Örneğin Exploit anlatımında kevgir cihazında yetki yükseltme ile root'a kadar çıkmıştık. Ama root'un parolasını hala bilmiyorduk. John the Ripper ile (eğer şanslı isek) kullanıcının parolasını kırabilir. Tek ihtiyacımız olan parolanın hash'leniş hali yani şifresi.
 
 	Linux sistemlerde her kullanıcının parolası, hash'lenmiş olarak **/etc/shadow** dosyasında tutulur.
 
-	Aşağıdaki örnekte kendi sistemimdeki root kullanıcısın parolasını John the Ripper ile örnek olarak kırdım. (tabiki şifresi 12345678 değildi, örnek olması açısından değiştirdim.)
+	Aşağıdaki örnekte kendi sistemimdeki root kullanıcısın parolasını John the Ripper ile örnek olarak kırdım. (tabiki parolası 12345678 değildi, örnek olması açısından değiştirdim.)
 
 	![john-the-ripper](/images/parola-kirma-saldirilari/9.png)
 
