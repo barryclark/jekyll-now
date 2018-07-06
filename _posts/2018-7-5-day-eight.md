@@ -5,12 +5,16 @@ The first thing that I did was go back to [source_detection.py](https://github.c
 
 ![sources]({{thom-ory.github.io}}/images/sources_2.png) ![rawdata]({{thom-ory.github.io}}/images/rawdata_2.png) 
 
-_This is the same field as yesterday, but we are looking at a smaller section. The original image was 5644x5895 pixels. I took the square, somewhat middle range of the image from 1250 ≤ x,y ≤ 3750 to use for source detection._
+_Where my code thinks the sources are vs. the raw data. This is the same field as yesterday, but we are looking at a smaller section. The original image was 5644x5895 pixels. I took the square, somewhat middle range of the image from 1250 ≤ x,y ≤ 3750 to use for source detection._
 
 ---
 There's still an issue with the program reading really bright sources or sources that have a large angular size as multiple sources, but it's better than yesterday. However, while the program is generally correct, there are a few spots that are circled where I can't find a source in the raw data as well as a few spots I see in the raw data that aren't circled in the final image. Overall, I would call this test pretty unsuccessfull -- bad photometry. I decided to shrink the pixel range down even further to only 200x200, which is about the size of the images I've used for example exercises. This made everything different so I then went back to the original threshold level and aperture size. Now, looking at only 3000 ≤ x,y ≤ 3200, this is what I get: 
 
 ![sources_2]({{thom-ory.github.io}}/images/sources_3.png) ![rawdata_2]({{thom-ory.github.io}}/images/rawdata_3.png)
+
+_Sources vs. raw data. Looking at the pixel range 3000 ≤ x,y ≤ 3200._
+
+---
 
 This looks a lot better. Remember, this is a reverse black and white image, so those white spots actually indicate an area of space that's not giving off any light, even though it looks like a star. Since this looks quite good, I would say the result of this test is learning that this code (and likely photutils itself) is much better suited to scanning small patches of the sky rather than that huge composite image. Still, there's the issue of reading larger sources as multiple sources. 
 
