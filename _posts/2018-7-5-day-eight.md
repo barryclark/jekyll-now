@@ -12,7 +12,7 @@ There's still an issue with the program reading really bright sources or sources
 
 ![sources_2]({{thom-ory.github.io}}/images/sources_3.png) ![rawdata_2]({{thom-ory.github.io}}/images/rawdata_3.png)
 
-This looks a lot better. Remember, this is a reverse black and white image, so those white spots actually indicate an area of space that's not giving off any light, even though it looks like a star. Since this looks quite good, I would say the result of this test is to learn that this code (and likely photutils itself) is much better suited to scanning small patches of the sky rather than that huge composite image. 
+This looks a lot better. Remember, this is a reverse black and white image, so those white spots actually indicate an area of space that's not giving off any light, even though it looks like a star. Since this looks quite good, I would say the result of this test is learning that this code (and likely photutils itself) is much better suited to scanning small patches of the sky rather than that huge composite image. Still, there's the issue of reading larger sources as multiple sources. 
 
 After this, I moved on to trying to figure out aperture photometry. 
 
