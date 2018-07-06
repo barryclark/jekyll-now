@@ -5,10 +5,10 @@ permalink: /tools/temperature-converson/
 ---
 
 <div class="temperature-form">
-<div><input type="number" id="celsius" value="0" />  &deg;C</div>
-<div><input type="number" id="fahrenheit" value="32" />  &deg;F</div>
-<div><input type="number" id="kelvin" value="273.15" />  K</div>
-<div><input type="number" id="rankine" value="459.67" />  &deg;R</div>
+<div><input type="number" id="celsius" value="0" /><label for="celsius">&deg;C</label></div>
+<div><input type="number" id="fahrenheit" value="32" /><label for="fahrenheit">&deg;F</label></div>
+<div><input type="number" id="kelvin" value="273.15" /><label for="kelvin">K</label></div>
+<div><input type="number" id="rankine" value="459.67" /><label for="rankine">&deg;R</label></div>
 <div>
 
 <script>
@@ -54,5 +54,9 @@ document.getElementById("kelvin").oninput = function() {
 .temperature-form div input {
  width: 4.5em;
  font-size: x-large;
+}
+ 
+.temperature-form div label {
+ text-align: right; 
 }
 </style>
