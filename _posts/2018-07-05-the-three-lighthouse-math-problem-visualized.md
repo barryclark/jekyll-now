@@ -3,6 +3,7 @@ layout: post
 title: The Three Lighthouse Math Problem Visualized
 tags: [math]
 keywords: [three lighthouses, math problem]
+image: /images/lighthouse-math/lighthouse.jpg
 ---
 
 I was playing around on the new [Mix.com](https://www.mix.com/) social media website and came across this click-bait article from MentalFloss: [This Math Problem for 8-Year-Olds Left Parents Stumped](http://mentalfloss.com/article/546153/math-problem-8-year-olds-left-parents-stumped). The problem, which I'll repeat below, turned out not the be that complex. I have no idea why it "left parents stumped." That said, I'm a sucker for math problems, and I wanted to explore the question further.
@@ -14,6 +15,9 @@ What is the math problem that supposedly stumped parents? Here it is in all its 
 > When is the first time that all three of the lights will be off together?
 > 
 > When is the next time that all three lights will come on at exactly the same moment?”
+
+![A lighthouse.](/images/lighthouse-math/lighthouse.jpg)
+*A lighthouse.*
 
 8-year-olds are typically in the second or third grade, at least in the United States, so this problem shouldn't be that hard - and it isn't. It's not even "common core" hard.
 
