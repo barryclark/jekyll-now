@@ -75,7 +75,7 @@ Once we were able to map the addresses to lattitude and longitude, Mahkah then c
 Stop & Frisk: Neighborhoods
 --------------
 
-For the remainder of the analysis, I will use DC's 39 neighborhood clusters as the unit for analysis and comparison, looking at trends across and within neighborhoods. More information on the neighborhood clusters can be found here: (https://www.neighborhoodinfodc.org/nclusters/nclusters.html)
+For the remainder of the analysis, I will use DC's 39 neighborhood clusters as the unit for analysis and comparison, looking at trends across and within neighborhoods.
 
 If anyone [feels strongly about the neighborhood boundaries used](https://www.popville.com/2018/01/official-north-boundary-petworth-is-kennedy-street/) and wants more information on the boundaries of the neighborhood clusters, check out the the [DC OpenData Portal](http://opendata.dc.gov/datasets/neighborhood-clusters)
 
