@@ -533,6 +533,24 @@ window.addEventListener('scroll', function(e) {
   document.getElementById('progress-bar').setAttribute('style', 'width: ' + position + '%');
 });
 //]]></script>
+  
+  <b:if cond="data:blog.pageType != 'item'">
+<b:if cond="data:blog.pageType != 'static_page'">
+<script type="text/javascript">
+  /*<![CDATA[*/
+    var perPage=7;
+    var numPages=6;
+    var firstText ='First';
+    var lastText ='Last';
+    var prevText ='« Previous';
+    var nextText ='Next »';
+    var urlactivepage=location.href;
+    var home_page="/";
+  /*]]>*/
+</script>
+<script src="https://thinot4work.github.io/files/page-navigation2.js"></script>
+</b:if>
+</b:if>
     
     {% include analytics.html %}
   </body>
