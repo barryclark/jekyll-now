@@ -1,15 +1,11 @@
 ---
 layout: page
-title: About
+title: About Me
 permalink: /about/
 ---
 
-Some information about you!
+Junior physics student at Colorado College doing research with the Gosnell Research Group. I'm primarily tasked with performing photometry on the data. 
 
-### More Information
+### Contact 
 
-A place to include any other types of information that you'd like to include about yourself.
-
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+t_ory@coloradocollege.edu
