@@ -152,7 +152,7 @@ When viewed through a racial context, this "crime-only" approach to modeling sto
 
 In order to understand what might be causing the model to inaccurately predict stop and frisk purely based off the previous crime level alone, we need to look at the underlying data a bit further.
 
-![](https://raw.githubusercontent.com/GWarrenn/gwarrenn.github.io/drafts/images/stop_and_frisk/10_sf_arrests_nbh_race.png)
+![](https://raw.githubusercontent.com/GWarrenn/gwarrenn.github.io/drafts/images/stop_and_frisk/10_sf_crime_nbh_race.png)
 
 Despite having lower levels of crime than racially diverse neighborhoods, the neighborhoods with the highest concentration of residents of color have astoundingly high rates of stop and frisk. In neighborhoods like Ivy City/ Arboretum/Trinidad/Carver Langston/Woodridge/Fort Lincoln/Gateway, and Historic Anacostia, over 1 in 10 people were stopped and frisked yearly, on average, from 2012 through 2016. This tracks with what we saw earlier in the chart showing total stop and frisk adjusted for neighborhood population; specifically, the neighborhoods that have higher proportions of non-white residents tend to have lower populations but higher levels of stop and frisk per capita. Reminder, this chart does not take into account the race of the crime/stop and frisk incident -- we'll get into that next.
 
