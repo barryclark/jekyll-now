@@ -1,17 +1,8 @@
 ---
-layout: default
+layout: postDisplay
 ---
-
-<article class="post">
-  <h1>{{ page.title }}</h1>
-
-  <div class="entry">
+<div class="container">
+    <p class="summary">{{ page.category }}<span class="date">{{ page.date | date: '%B %d, %Y' }}</span></p>
     {{ content }}
-  </div>
-
-  <div class="date">
-    Written on {{ page.date | date: "%B %e, %Y" }}
-  </div>
-
-  {% include disqus.html %}
-</article>
+  <a href="/site/index.html" class="btn">Back</a>
+</div>

@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>{{ page.title }}</title>
+    <title></title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/form.css">
@@ -16,7 +16,13 @@
      <h1>Matthew Proctor</h1>
     </header>
     <section class="hero">
-    	{{ site.categories.heroTxt }}
+    	<h2><p>Japan is an island nation in the Pacific Ocean with dense cities, imperial palaces, mountainous national 
+parks and thousands of shrines and temples.</p>
+
+<p>Shinkansen bullet trains connect the main islands of Kyushu 
+(with Okinawa’s subtropical beaches), Honshu (home to Tokyo and Hiroshima’s atomic-bomb memorial) and 
+Hokkaido (famous for skiing). Tokyo, the capital, is known for skyscrapers, shopping and pop culture.</p>
+</h2>
     </section>
     <div class="content">	
     		 <div class="container">
@@ -45,13 +51,31 @@
     			</div>
   			</div>
     	<div class="small-container">
-    	 	{% for post in site.categories.post %}
+    	 	
     	 		<div class="column post">
-      				<a href="{{ post.url }}">{{ post.title }}</a>
-      				{{ post.excerpt }}
-      				<a href="{{ post.url }}" class="btn">Read More</a>
+      				<a href="/post/2018/07/06/kawasaki.html">Kawasaki</a>
+      				<p>Kawasaki is an industrial city in the Greater Tokyo area. The grand Kawasaki Daishi Temple complex has an octagonal pagoda.</p>
+
+
+      				<a href="/post/2018/07/06/kawasaki.html" class="btn">Read More</a>
     			</div>
-  			{% endfor %}
+  			
+    	 		<div class="column post">
+      				<a href="/post/2018/07/06/tokyo.html">Tokyo</a>
+      				<p>Tokyo is often referred to as a city, but is officially known and governed as a “metropolitan prefecture”.</p>
+
+
+      				<a href="/post/2018/07/06/tokyo.html" class="btn">Read More</a>
+    			</div>
+  			
+    	 		<div class="column post">
+      				<a href="/post/2018/07/05/okinawa-island.html">Okinawa Island</a>
+      				<p>Okinawa is a Japanese island in the East China Sea. In Naha city, Shuri Castle is the rebuilt palace of the Ryukyu Kingdom.</p>
+
+
+      				<a href="/post/2018/07/05/okinawa-island.html" class="btn">Read More</a>
+    			</div>
+  			
   		</div>
     </div>
     <footer>
