@@ -88,10 +88,12 @@ Come to one of our meetups in [Athens](https://www.meetup.com/BlockchainGreece-0
 - The [BlockHero](https://blockhero.ai) portfolio tracker
 - One of [IOHK](https://iohk.io/team/)'s three research centres is in Athens
 - [Bcash Greece](https://bcash.gr) makes Bitcoin ATMs
+- [SignedBlock](https://signedblock.com)
+- [mytracknet](https://www.mytracknet.com)
 - The [Hellenic Blockchain Hub](http://blockchain.org.gr) non-profit organization
 - The [Cyprus Blockchain Technologies](http://cybt.eu) non-profit organization
 
-Last update: 2018-07-03
+Last update: 2018-07-10
 
 <!-- <div class="posts">
   {% for post in site.posts %}
