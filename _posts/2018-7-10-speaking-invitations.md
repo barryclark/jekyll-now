@@ -11,4 +11,4 @@ Recently I've had to turn down a lot of speaking invitations, so figured I shoul
 
 At the end of August I'm getting married! Nick is a Google software engineer and [writes about machine learning frameworks and iOS development](https://harveynick.com). Unsurprisingly, wedding planning takes priority over speaking engagements until mid-September!
 
-I'm be back on the circuit soon! As always, [tweet me](https://twitter.com/oicheryl) for speaking invitations.
+Wish me luck, and I'll see you around again very soon!
