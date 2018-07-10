@@ -7,6 +7,8 @@ Awesome! Generally I'm super happy to travel and speak at conferences and meetup
 
 Recently I've had to turn down a lot of speaking invitations, so figured I should explain properly.
 
-At the end of August I will marry my brilliant partner, Nick. He's a Google software engineer and [writes about machine learning frameworks and iOS development](https://harveynick.com). This means that wedding planning takes priority over speaking engagements until mid-September. 
+![Us]({{site.baseurl}}/images/2018-7-10.jpg)
+
+At the end of August I will marry my fiance, Nick. He's a Google software engineer and [writes about machine learning frameworks and iOS development](https://harveynick.com). Unsurprisingly, wedding planning takes priority over speaking engagements until mid-September!
 
 I'm be back on the circuit soon! As always, [tweet me](https://twitter.com/oicheryl) for speaking invitations.
