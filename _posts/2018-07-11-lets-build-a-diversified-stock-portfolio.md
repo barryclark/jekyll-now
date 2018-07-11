@@ -159,3 +159,7 @@ Many other investment companies have index funds now, too.
 We initially tried to make our own diversified stock portfolio - and we did okay. We had nine stocks, young and old, across several different industries around the globe. We then found out there's an easy way to buy a variety of stocks - index funds.
 
 So, if you invest, don't worry about creating the perfect diversified portfolio - just invest in index funds!
+
+***Check out [Fidelity's website](https://www.fidelity.com/) or [Vanguard's website](https://investor.vanguard.com/home/) if you want to invest in index funds.***
+
+***Alternatively, if you want to invest in stocks, I suggest Robinhood for fee-free buying and selling. Use my [Robinhood Referral Link](https://hendrixjoseph.github.io/robinhood/) to receive a free stock!***
