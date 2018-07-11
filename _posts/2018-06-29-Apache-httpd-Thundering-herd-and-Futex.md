@@ -1,5 +1,6 @@
 ---
 title: Apache httpd, futex and thundering herd problem.
+excerpt: blog about Apache httpd, futex and thundering herd problem.
 ---
 **TL;DR Version** 
 
