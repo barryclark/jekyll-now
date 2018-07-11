@@ -36,5 +36,3 @@ _Sources with the section of the sky between RA = {-19:41:06.6573 U -19:41:05.69
 
 ---
 
-
-So, this went pretty smoothly. At first, I had a bit of an error back-and-forth; I was either dividing by zero or getting complex values. If I replaced all the negatives in the data array with zero (which, surprisingly, there _were_ negatives in the raw data), then `DAOStarFinder()` has a divide by zero error when trying to find flux (even though I don't actually care  what `DAOStarFinder()` says the flux is because it's inaccurate compared to aperture photometry), but if I don't replace the negatives, I get complex numbers from `np.sqrt()` while finding the uncertainty. The solution was obvious though, just wait to replace the negatives until after source detection but before error estimation. Now, running the codes gives you a [phot_table](https://github.com/GosnellResearchGroupSummer2018/NGC6819/blob/master/first_attempt_at_HST_source_detection/day_four/phot_table.txt), an image with all the sources circled, and a graph that plots the flux of each source with uncertainty bars:
