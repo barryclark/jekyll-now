@@ -9,15 +9,15 @@ This summer I stumbled upon the optimal transportation problem, an optimization 
 
 Let's have a party in our research unit! Pastries and party hats for everyone! We ask Tinne, our laboratory manager, to make some desserts: an airy merveilleux, some delicious eclairs, a big bowl of dark chocolate mousse, a sweet passion fruit-flavored bavarois and moist carrot cake (we got to have our vegetables). If we mentally cut all these sweets into portions, we have twenty portions as shown in the table below.
 
-![Quantities of every dessert.](../images/2017_optimal_transport/desserts.png)
+![Quantities of every dessert.](../../images/2017_optimal_transport/desserts.png)
 
 Since this is academia, we respect the hierarchy: people higher on the ladder are allowed to take more dessert. The professors, Bernard, Jan and Willem each get three pieces each, our senior post-doc Hilde will take four portions (one for each of her children) and the teaching assistants are allowed two portions per person. Since Wouter is a shared teaching assistant with the Biomath research group, he can only take one (sorry Wouter).
 
-![Number of pieces every KERMIT number can take.](../images/2017_optimal_transport/staff.png)
+![Number of pieces every KERMIT number can take.](../../images/2017_optimal_transport/staff.png)
 
 As engineers and mathematicians, we pride ourselves in doing things the optimal way. So how can we divide the desserts to make everybody as happy as possible? As I am preparing a course on optimization, I went around and asked which of those treats they liked. On a scale between -2 and 2, with -2 being something they hated and 2 being their absolute favorite, the desert preferences of the teaching staff is given below (students: take note!).
 
-![Preferences of the KERMIT staff for different desserts. ](../images/2017_optimal_transport/preferences.png)
+![Preferences of the KERMIT staff for different desserts. ](../../images/2017_optimal_transport/preferences.png)
 
 See how most people like eclairs and chocolate mousse, but merveilleus are a more polarizing dessert! Jan is lactose intolerant, so he only gave a high score to the carrot cake by default.
 
@@ -114,15 +114,15 @@ def compute_optimal_transport(M, r, c, lam, epsilon=1e-8):
 
 Using this algorithm we can compute the optimal distribution of desserts, shown below.
 
-![The solution of the dessert problem with $$\lambda=10$$, a very good approximation of the unregularized problem.](../images/2017_optimal_transport/desserts_high_lambda.png)
+![The solution of the dessert problem with $$\lambda=10$$, a very good approximation of the unregularized problem.](../../images/2017_optimal_transport/desserts_high_lambda.png)
 
 Here, everybody only has desserts they like. Note that for example Jan gets three pieces of carrot cake (the only thing he can eat) while Tim gets the remaining piece (he is the only person with some fondness of this dessert). If we decrease the regularization parameter $$\lambda$$, we encourage a more homogeneous distribution, though some people will have to try some desserts which are not their favorites...
 
-![The solution with a slightly lower $$\lambda$$. Clearly a different optimal distribution is obtained.](../images/2017_optimal_transport/desserts_low_lambda.png)
+![The solution with a slightly lower $$\lambda$$. Clearly a different optimal distribution is obtained.](../../images/2017_optimal_transport/desserts_low_lambda.png)
 
 The optimal transport problem, with or without entropic regularization has a nice geometric interpretation, shown below.
 
-![A geometric view of the optimal transport problem.](../images/2017_optimal_transport/geometry.png)
+![A geometric view of the optimal transport problem.](../../images/2017_optimal_transport/geometry.png)
 
 The cost matrix determines a direction in which distributions are better or worse. The set $$U(\mathbf{r}, \mathbf{c})$$ contains all feasible distributions. In the unregularized case, the optimum $$P^\star$$ is usually found in one of the corners of such a set. When adding the entropic regularizer, we restrict ourselves to distributions with a minimum of entropy, lying within the smooth red curve. Because we don't have to deal with the sharp corners of $$U(\mathbf{r}, \mathbf{c})$$ any more, it is easier to find the optimum. As special cases, when $$\lambda\rightarrow \infty$$, then $$P^\star_\lambda$$ will become closers to $$P^\star$$ (until the algorithm runs into numerical difficulties). For $$\lambda\rightarrow 0$$ on the other hand, only the entropic term is taken into account and $$P_\lambda^\star=\mathbf{r}\mathbf{c}^\intercal$$, a homogeneous distribution.
 
@@ -134,7 +134,7 @@ So optimal transport has two big applications: *matching distributions* (being i
 
 Optimal transport provides the tools to transform one distribution into anther. For data scientists, the most commonly encountered distribution is simply a data set: a collection of points in some space, each having the same weight. Below is an example of two sets of points, each distributed around two concentric circles with different diameters.
 
-![Every point of the first set is matched with the corresponding points of the second set.](../images/2017_optimal_transport/connect_sets.png)
+![Every point of the first set is matched with the corresponding points of the second set.](../../images/2017_optimal_transport/connect_sets.png)
 
 Each point of the first set is matched softly to the most related points of the other sets according to an Euclidian distance. Why could this be useful? Suppose you want to interpolate between these two data sets to obtain a new set 3, in between set 1 and 2. This can be done by simply taking a weighted average between each point of the first set and its analogues of set 2.
 
@@ -146,11 +146,11 @@ Domain adaptation is an interesting machine learning application of matching dis
 
 Below is an illustration of this idea on a toy data set.
 
-![A training set with three discrete labels and an unlabeled test set with a shifted distribution. ](../images/2017_optimal_transport/domain_adaptation.png)
+![A training set with three discrete labels and an unlabeled test set with a shifted distribution. ](../../images/2017_optimal_transport/domain_adaptation.png)
 
 A final, rather neat, application of matching distributions is *color transfer*: changing the color scheme of one image to match that of another image. We simply represent an image as a distribution of pixels in a three-dimensional color space. Similar to the domain transfer, we can use optimal transport and a simple multivariate regression method to map one color scheme to another. It is no [neural style transfer](https://github.com/jcjohnson/neural-style), but then again this 'model' is trained from scratch in a fraction of a second. Try it for yourself using the  [code](https://github.com/MichielStock/Teaching/tree/master/Optimal_transport/color_transfer.py) on my Github repo!
 
-![](../images/2017_optimal_transport/color_transfer.png)
+![](../../images/2017_optimal_transport/color_transfer.png)
 
 ### Finding a distance between two distributions
 

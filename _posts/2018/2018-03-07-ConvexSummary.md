@@ -17,7 +17,7 @@ $$
 
 meaning that any line segment connecting two points on this curve lies above the curve.
 
-![A convex function.](../images/2018_convex/convex_function_illustration.png)
+![A convex function.](../../images/2018_convex/convex_function_illustration.png)
 
 If the function is differentiable it also holds that the first-order Taylor approximation lies below the curve:
 $$
@@ -67,7 +67,7 @@ $$
 (\Delta \mathbf{x})^\top \nabla f(\mathbf{x})\leq 0\,.
 $$
 
-![Descent and ascent step.](../images/2018_convex/descent_step.png)
+![Descent and ascent step.](../../images/2018_convex/descent_step.png)
 
 ## Gradient descent
 
@@ -93,8 +93,8 @@ We conclude:
 
 So the convergence is mainly determined by the shape of the function. See below for the example of the convergence on a quadratic and non-quadratic function.
 
-![Path of gradient descent on the quadratic and non-quadratic functions.](../images/2018_convex/gradient_descent.png)
-![Convergence of gradient descent on the quadratic and non-quadratic functions.](../images/2018_convex/convergence_gd.png)
+![Path of gradient descent on the quadratic and non-quadratic functions.](../../images/2018_convex/gradient_descent.png)
+![Convergence of gradient descent on the quadratic and non-quadratic functions.](../../images/2018_convex/convergence_gd.png)
 
 Note that even for such simple two-dimensional problems, pure gradient descent takes a long time to converge.
 
@@ -173,7 +173,7 @@ $$
 
 where we used the *logarithmic barrier* to approximate the inequality constraints. The parameter $$t$$ determines the sharpness of the approximation, as illustrated below.
 
-![Larger values of $$t$$ result in a better approximation of](../images/2018_convex/log_bar.png)
+![Larger values of $$t$$ result in a better approximation of](../../images/2018_convex/log_bar.png)
 
 High values of $$t$$ result in a very good approximation but are hard to optimize because they are ill-conditioned. *Interior point methods* start with a low value of $$t$$ to obtain an initial solution and iteratively use the previous solution as a starting point for the soft-constrained optimization problem with increased $$t$$.
 

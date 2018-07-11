@@ -51,7 +51,7 @@ Sorting items into $$k$$ bins has a time complexity of merely $$\mathcal{O}(kn)$
 
 And yes, since having read *Algorithms to Live by* I subdivide my socks in brownish, dark and colored groups. Slightly mismatched feet are as small price to pay for a great time complexity!
 
-![](../images/2017_algorithms/socks.jpg)
+![](../../images/2017_algorithms/socks.jpg)
 
 ## The self-organizing pile of paper
 

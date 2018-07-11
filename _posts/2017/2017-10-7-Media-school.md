@@ -11,7 +11,7 @@ Luckily for us, and our audience, the organizers made sure that we received a th
 
 I promised myself that if I would make it to the finals, I would start a blog to communicate my research and ideas to a wider audience. Last Monday the competition ended. Though I did not make it to the top three, the other seven finalist and myself gave it all to show that being a scientist is the coolest job in the world! In the last month, I had the incredible opportunity to grow as a communicator. Could there be a better first blog post than sharing some of the things I learned at the media school?
 
-Below are the seven most important points I will remember from the my education as a science communicator. For the more visually inclined people, you can view some of my sketchnotes of the media school [here](https://drive.google.com/file/d/0B-WzNfc6RqhaQVRFZkhEOWlnejA/view?usp=sharing). 
+Below are the seven most important points I will remember from the my education as a science communicator. For the more visually inclined people, you can view some of my sketchnotes of the media school [here](https://drive.google.com/file/d/0B-WzNfc6RqhaQVRFZkhEOWlnejA/view?usp=sharing).
 
 ## Good elevator pitch
 
@@ -35,7 +35,7 @@ Note that there is a difference between a *main message* and a *theme*. The main
 
 If you have main message, tell it immediately. As scientists and experts, we like to give a comprehensive reasoning and justification before getting to our main point. A reader just wants to know what you have to say. Only if he is interested, then he wants to hear the details. Think about this when you write your next research paper! This is also how a [Nature summary abstract](https://cbs.umn.edu/sites/cbs.umn.edu/files/public/downloads/Annotated_Nature_abstract.pdf) should be structured.
 
-![Structure of an academic versus a popular science text. MM=main message](../images/2017-10-7-Media-school/triangle.png)
+![Structure of an academic versus a popular science text. MM=main message](../../images/2017-10-7-Media-school/triangle.png)
 
 ## Involve your audience
 
