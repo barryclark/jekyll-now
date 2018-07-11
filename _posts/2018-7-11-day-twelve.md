@@ -9,19 +9,20 @@ It makes perfect sense why we're using this for stars, then. If, as astronomers 
    {% raw %}  
   \[P(k|t) = {e^(-\lambda) \lambda^k \over k!} = {e^(-rt) rt^k \over k!}\]  
    {% endraw %}   
-   _where \lambda (a scalar) is the number of events k in a certain interval, t is the time interval, and e is Euler's constant_   
+   _where \lambda (a scalar) is the number of events k in a certain interval, t is the time interval, r is the rate at which counts are observed (assumed constant), and e is Euler's constant_   
    
-So, since we only performed one observation, there is an uncertainty in the number of photons the star consistently emits in equal-length time frames, which is what we're really trying to determine. If we had taken the same observation at a different time, there is a chance we would have gotten a different result based on the Poisson distribution. We can derive this uncertainty in the stars actual flux (or flux rate, depending on your data) from Poisson statistics because our data obeys Poisson's assumptions (we claim this based on the physics of observing a star, described above). From Poisson, the uncertainty is, as Dr. G said, \sqrt{k} (just redefining a variable to mirror the math I've learned today). 
+So, since we only performed one observation, there is an uncertainty in the number of photons the star consistently emits in equal-length time intervals, which is what we're really trying to determine. If we had taken the same observation at a different time, there is a chance we would have gotten a different result based on the Poisson distribution. We can derive this uncertainty in the stars actual flux (or flux rate, depending on your data) from Poisson because our data obeys Poisson's assumptions (we claim this based on the physics of observing a star, described above). From Poisson, the uncertainty is, as Dr. G said, \sqrt{k} (just redefining a variable to mirror the math I've learned today). 
 
-Looking through the [photutils documentation](http://photutils.readthedocs.io/en/stable/index.html), this definition of the uncertainty makes even more sense. The `aperture_photometry` command that calculates the flux (or flux rate) of the stars by adding all the values of flux or flux rate for each pixel within the aperture object (assuming background is already subtracted) has an option to calculate total error based on Poisson statistics. The math it uses is:  
+Looking through the [photutils documentation](http://photutils.readthedocs.io/en/stable/index.html), this definition of the uncertainty makes even more sense. The `aperture_photometry` command that calculates the flux (or flux rate) of the stars has an option to calculate total error based on Poisson statistics. The math it uses is:  
   {% raw %}   
-  \[\Delta F = \sqrt{\sum_{i=1}^{k}\sigma_i^2\]
+  \[\Delta F = \sqrt{\sum_{i=1}^{N_k}\sigma_i^2\]
   {% endraw %}  
-  _where \Delta F is the total flux error for the source, \sigma_i is the error for each pixel, and k is again the number of events you measure **at each pixel**_   
+  _where \Delta F is the total flux error for the source, \sigma_i is the error for each pixel, and N_k is the number of pixels in the aperture object_   
 So, if the error on each pixel is as Dr. G described (\sqrt{k}) = \sigma_i), the above equation becomes:  
   {% raw %}   
-  \[\Delta F = \sqrt{\sum_{i=1}^{k}k\]  
+  \[\Delta F = \sqrt{\sum_{i=1}^{N_k}k\]  
   {% endraw %}  
+  _Where k is the number of counts in a single pixel_ 
 Which is just exactly the same as the square root of the total flux in the aperture object. Seems reasonable. Now that I understand the theory behind how to estimate uncertainty, I can start integrating it into my code. 
 
 ## Coding
