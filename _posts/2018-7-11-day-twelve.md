@@ -1,5 +1,3 @@
-<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
-
 Today is going to be about trying to get an accurate error estimate on all our flux values. Dr. G posted a helpful comment on [yesterday's post](https://thom-ory.github.io/day-eleven/) about error esetimation using Poisson statistics. I'd seen Poisson mentioned a few times in the material I've read so far but never connected it to this. Dr. G described the error estimation that Poisson describes as the "uncertainty in counting something" that can be described as \sqrt{N}. I did some googling about Poisson and read a [Wikipedia article](https://en.wikipedia.org/wiki/Poisson_distribution) that was actually obscenely helpful, where I learned that the probability distribution of an event _k_ happenning follows a Poisson distribution if (from Wikipedia)
 - _k_ is the number of times an event occurs in an interval and _k_ can take values 0, 1, 2, ….
 - Events occur independently (the last event's occurance doesn't influence the next one's)
