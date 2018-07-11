@@ -7,7 +7,7 @@ Today is going to be about trying to get an accurate error estimate on all our f
 
 It makes perfect sense why we're using this for stars, then. If, as astronomers do, we're counting the number of times an electron in the CCD gets excited and we assume the electron was excited by a photon from a source we're observing (and call it _k_), then there should be a constant stream of photons from the source and we should register an integer number of counts (electron excitations) in the way described by the assumptions of Poisson statistics. So, if you performed the same observation many times and plotted your results with the x-axis displaying the data you get (like total counts/number of times _k_ happened) and the y-axis displaying the probability of getting that result, the graph would be a Poisson distribution where the probability of _k_ happening a certain amount of times during a time interval _t_:  
    {% raw %}  
-  \[P(k|t) = {e^(-\lambda) \lambda^k \over k!}\]  
+  \[P(k|t) = {e^(-\lambda) \lambda^k \over k!} = {e^(-rt) rt^k \over k!}\]  
    {% endraw %}   
    _where \lambda (a scalar) is the number of events k in a certain interval, t is the time interval, and e is Euler's constant_   
    
