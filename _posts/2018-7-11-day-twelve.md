@@ -19,4 +19,6 @@ So, if the error on each pixel is as Dr. G described (\sqrt{k}) = \sigma_i), the
   {% raw %}   
   \[\Delta F = \sqrt{\sum_{i=1}^{k}k\]  
   {% endraw %}  
-Which is just exactly the same as the square root of the total flux in the aperture object. Seems reasonable. 
+Which is just exactly the same as the square root of the total flux in the aperture object. Seems reasonable. Now that I understand the theory behind how to estimate uncertainty, I can start integrating it into my code. 
+
+## Coding
