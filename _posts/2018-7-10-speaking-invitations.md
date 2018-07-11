@@ -9,6 +9,6 @@ Recently I've turned down a lot of speaking invitations, so figured I should exp
 
 ![Us]({{site.baseurl}}/images/2018-7-10.jpg)
 
-...I'm getting married! My brilliant fiance is called Nick and we got together when we were both software engineers at Google. He writes about [machine learning frameworks and iOS development](https://harveynick.com).
+...I'm getting married! Nick is a software engineer at Google, and he also blogs about [machine learning and iOS](https://harveynick.com). We got together in 2014 when I was working at Google New York, before I moved back to London.
 
-Unsurprisingly, that means wedding planning takes priority over speaking until mid-September. Wish me luck, and I'll see you around again very soon!
+Unsurprisingly, that means wedding planning takes priority until mid-September. Wish me luck, and I'll see you around again very soon!
