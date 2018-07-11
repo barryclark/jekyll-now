@@ -14,7 +14,7 @@ So, since we only performed one observation, there is an uncertainty in the numb
 Looking through the [photutils documentation](http://photutils.readthedocs.io/en/stable/index.html), this definition of the uncertainty makes even more sense. The `aperture_photometry` command that calculates the flux (or flux rate) of the stars by adding all the values of flux or flux rate for each pixel within the aperture object (assuming background is already subtracted) has an option to calculate total error based on Poisson statistics. The math it uses is:  
   {% raw %}   
   \[\Delta F = \sqrt{\sum_{i=1}^{k}\sigma_i^2\]
-  {% endraw %} _where \Delta F is the total flux error for the source, \sigma_i is the error for each pixel, and k is again the number of events you measure **at each pixel**_
+  {% endraw %} _where \Delta F is the total flux error for the source, \sigma_i is the error for each pixel, and k is again the number of events you measure **at each pixel**_   
 So, if the error on each pixel is as Dr. G described (\sqrt{k}) = \sigma_i), the above equation becomes:  
   {% raw %}   
   \[\Delta F = \sqrt{\sum_{i=1}^{k}k\]  
