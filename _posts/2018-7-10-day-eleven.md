@@ -10,3 +10,5 @@ I went back to [aperture_photometry.py](https://github.com/GosnellResearchGroupS
 
 # Conclusion
 I'm not sure if I'm chasing a rabbit down his hole with this error estimation thing. Maybe I should move on to PSF photometry... but that also seems premature. I will need to do error estimation in the future for sure, but I'm not sure if there's more photometry I should learn before I move on. I'm running into the issue of not knowing what I don't know (not knowing what I should learn next or even what there is to learn). I think reading the manuals is a good, tangible thing I can do for now; even if the info isn't immediately useful, it will be. 
+
+While I didn't get to put error bars on the graph, I do have the code necessary now, and once I figure out how to get the error arrays that I need to calculate total errors by reading the manuals (hopefully), we'll have a reliable method of error estimation for the remainder of the project.
