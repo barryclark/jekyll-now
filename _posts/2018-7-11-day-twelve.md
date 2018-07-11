@@ -17,7 +17,9 @@
   - The probability of an event in a small sub-interval is proportional to the length of the sub-interval
 
   It makes perfect sense why we're using this for stars, then. If, as astronomers do, we're counting the number of times an electron in the CCD gets excited and we assume the electron was excited by a photon from a source we're observing (and call it _k_), then there should be a constant stream of photons from the source and we should register counts (electron excitations) in the way described by the assumptions of Poisson statistics. So, if you performed the same observation many times and plotted your results (on the x-axis: the data you get (like total counts or number of times _k_ happened); y-axis: the number of times you got that result), the graph would be a Poisson distribution:  
+   {% raw %}
   \[P(k) = {e^(-\lambda) \lambda^k \over k!}\]
+   {% endraw %}
 </p>
 </body>
 </html>
