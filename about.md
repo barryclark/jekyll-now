@@ -4,12 +4,8 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
-
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
+I am a aerospace engineering senior at The University of Texas at Austin. I enjoy all things that move.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[thomashenry@utexas.edu](mailto:thomashenry@utexas.edu)
