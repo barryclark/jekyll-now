@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "gitmojis"
+title: "Gitmojis"
 date: "2018-07-11 12:15:58 +0200"
 ---
 
