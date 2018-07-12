@@ -65,6 +65,10 @@ figure em a {border:none;border-bottom;line-height:0.2em;padding:12px 4px;}
 #page-nav a:hover {border:thin solid rgba(0,0,0,.06);background:rgba(0,0,0,.02);}
 #page-nav a:visited {color: var(--color-grey) ;}
 #page-nav div {height:80px;font-size:15px;}.serveis#page-main {padding:0;}
+
+/* Portfolio Titles */
+#layout h3 u { font-weight:300; letter-spacing: 0em}
+
 /* Covers */
 #covers {color: var(--color-grey);}
 #covers img {width: 13%;margin-bottom:1.2em; }

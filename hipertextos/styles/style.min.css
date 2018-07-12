@@ -212,12 +212,12 @@ h3 u:after,
 h4 u:after,
 h5 u:after,
 h6 u:after {
-	border: var(--four-pixel) solid currentColor;
+	border: thin solid #eee;
 	content: ' ';
 	display: block;
 	position: absolute;
 	left: 0; right: 0;
-	width: 99%;
+	width: 99.8%;
 }
 @media (max-width: 767px) {
 	h1 {
@@ -2871,4 +2871,5 @@ dialog,
 }
 
 /* The end */
+
 
