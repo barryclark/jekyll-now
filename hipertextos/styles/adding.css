@@ -41,7 +41,11 @@ section.cover-justify p {padding: 6px 20px 0 20px;line-height: 24px;font-size: 1
 /* Page & Header */
 .cover#page-header  {background-color: var(--color-white);}
 .serveis-header {border-bottom:10px solid var(--color-hardgrey);background-color: var(--color-black);color: var(--color-hardgrey);}
-.medias#page-header {border-bottom:10px solid var(--color-grey);background-color: var(--color-softgrey);color: var(--color-grey);}
+.medias#page-header {background-image: url("/img/serveis.jpg");	background-position: top center;
+	background-attachment: fixed;background-size: cover;background-repeat: no-repeat;
+	border:none;color: #fff;overflow: hidden;
+	text-align: center;height: 67vh;
+}
 #icons a {border:thin solid var(--color-soft);background: transparent;border-radius:50%;}
 #icons a:hover {border:thin solid var(--color-blue);}
 figure em a {border:none;border-bottom;line-height:0.2em;padding:12px 4px;}
