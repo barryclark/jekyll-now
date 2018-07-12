@@ -6,7 +6,7 @@
 	border:none;color: #fff;letter-spacing: .2em;overflow: hidden;
 	text-align: center;height: 67vh;
 }
-#page-header div h1 {font-weight: lighter;font-size:1.5em;line-height:1.2em;margin-bottom:0px;max-width:30%;text-align: left;float:left;}
+#page-header div h1 {font-family: "San Francisco", Sans-Serif;letter-spacing: 0.08em; font-size:1.2em;line-height:1.2em;margin-bottom:0px;max-width:30%;text-align: left;float:left;}
 #page-header div {border-bottom:thin solid #fafafa;height:42px;}
 
 /* Serveis */
