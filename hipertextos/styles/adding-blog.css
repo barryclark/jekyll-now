@@ -23,6 +23,9 @@ figure iframe {width:100%;}
 #post-share em a:hover {background:#fff !important;border:thin solid var(--color-link);}
 #post-share em a:visited {background-color:var(--color-soft-grey)  !important;}
 
+#big-post-img.cover {padding-top:0px;background:#111!important;}
+#big-post-img.cover img {min-width:100%;}
+
 #tw {background:var(--color-green);}
 #fb {background:var(--color-blue);}
 #go {background:var(--color-orange);}

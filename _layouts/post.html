@@ -22,6 +22,16 @@ comments: true
 					</figure>
 	    			{{ content }}
 				</div>
+			</article>
+		</div>
+		{% if page.bigger %}
+		<section id="big-post-img" class="cover" style="background-image: url('../{{ page.img }}');">
+			<hr>
+		</section>
+		{% endif %}
+		<div>
+			<article id="post-foot" class="post">
+
 				<em><hr></em>
 				<aside id="post-share">
 					{% include share.html %}
@@ -32,9 +42,4 @@ comments: true
 				<em><hr></em>
 			</article>
 		</div>
-		{% if page.bigger %}
-		<section id="big-post-img" class="cover">
-			<a href="../{{ page.img }}" data-lightbox="roadtrip"><img src="../{{ page.img }}"></a>
-		</section>
-		{% endif %}
 	</main>
