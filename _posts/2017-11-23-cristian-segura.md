@@ -2,6 +2,7 @@
 layout: post
 title: Disseny de Cartell
 post: default
+comments: true
 bigger:
 category: treballs
 img: "assets/print/foto1.jpg"
