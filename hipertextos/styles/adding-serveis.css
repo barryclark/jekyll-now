@@ -1,8 +1,7 @@
 /* by Isard Miralles  ADDING EXTRA to Serveis - CSS */
 /* ------------------------------------------------------------ Resets */
 
-#page-header.serveis-header {background-image: url("/img/texture/dark_design.png");
-background-size:46px 29px;background-repeat: repeat;image-rendering: crisp-edges;}
+#page-header.serveis-header {background-image: url("/img/serveis.jpg");height: 55vh;}
 
 /* Serveis */
 #section-web {background-image: url("/img/web.jpg");background-position:fixed;image-rendering: crisp-edges;}
