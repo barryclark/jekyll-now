@@ -32,7 +32,7 @@
 	color: var(--color-white);
 }
 html {
-	font-family: sans-serif;
+	font-family: "San Francisco", sans-serif;
 	-ms-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
 }
