@@ -10,7 +10,7 @@ layout: default
   </div>
 
   <div class="date">
-    Дата записи: {{ page.date | localize: "%d %B %Y" }}
+    Дата записи: {{ page.date | date: "%d/%m/%Y"  }}
   </div>
 
   {% include disqus.html %}
