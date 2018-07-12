@@ -6,6 +6,7 @@ comments: true
   	{% include partials/navigation/nav-article.html %}
     <main id="page-main" role="main">
 		<header id="post-header" class="anm-scaleUpDown delay-100">
+			<div>
 				<h1 id="post-title" class="anm-fadeIn delay-300">{{ page.title }}</h1>
 				{% if page.next.url %}
 					<a href="{{page.next.url}}" class="siguiente anm-rotatePullBottom delay-200" rel="Següent Article {{ page.next.title }}" title="{{ page.next.title }}">Següent &rsaquo;</a>
@@ -13,6 +14,7 @@ comments: true
 				{% if page.previous.url %}
 					<a href="{{page.previous.url}}" class="anterior anm-rotatePullBottom delay-200" rel="Anterior Article {{ page.previous.title }}" title="{{ page.previous.title }}">&lsaquo; Anterior</a>
 				{% endif %}
+			</div>
 		</header>
 		<div>
 			<article id="post-video" class="post anm-scaleUpCenter delay-800">
