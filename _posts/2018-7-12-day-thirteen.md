@@ -1,0 +1,4 @@
+- put error bars on comparing photometry
+- make new code that likes drizzled data
+- make better sourrce detection
+  - fwhm
