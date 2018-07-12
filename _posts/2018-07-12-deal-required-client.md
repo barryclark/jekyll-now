@@ -43,6 +43,6 @@ class DealHandler
 ![Штатный текст об ошибке](/images/error-message-deal.png)
 
 и вот после перебивки
-![Новый текст об ошибке](/images/error-message-deal.png)
+![Новый текст об ошибке](/images/new-error-message-deal.png)
 
 
