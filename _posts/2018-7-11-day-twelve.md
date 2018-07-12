@@ -10,7 +10,6 @@ It makes perfect sense why we're using this for stars, then. If, as astronomers 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>Day Twelve</title>
   <script type="text/javascript" async
   src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML" async>
 </script>
@@ -32,7 +31,6 @@ Looking through the [photutils documentation](http://photutils.readthedocs.io/en
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>Day Twelve</title>
   <script type="text/javascript" async
   src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML" async>
 </script>
@@ -52,7 +50,6 @@ So, if the error on each pixel is \( \sigma_i = sqrt{k_i} \) like Dr. G and Pois
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>Day Twelve</title>
   <script type="text/javascript" async
   src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML" async>
 </script>
@@ -81,7 +78,3 @@ I'm happy with these results.
 
 # Conclusion
 I'm honestly not sure about next steps. I think I might move on to PSF photometry soon, but I am still going to read those [manuals](http://www.stsci.edu/hst/HST_overview/documents/) for [HST](http://www.stsci.edu/hst/HST_overview/documents/datahandbook/toc.html) and [WFC3](http://www.stsci.edu/hst/HST_overview/documents/datahandbook/toc.html) data analysis. I also want to read the [pandas tutorial](https://pandas.pydata.org/pandas-docs/stable/10min.html) and the [astrpoy resources](http://docs.astropy.org/en/stable/index.html), especially the one Rory found on writing text files using `astropy.io.ascii()`. 
-
-</p>
-</body>
-</html>
