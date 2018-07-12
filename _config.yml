@@ -85,5 +85,5 @@ exclude:
   - README.md
   - CNAME
 
-  plugins:
+plugins:
   - jemoji
