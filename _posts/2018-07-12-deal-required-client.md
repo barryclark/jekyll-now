@@ -10,14 +10,14 @@ title: Сделать обязательным полем клиенты (кон
 *Решение.*
 Добавим один обработчик **onBeforeCrmDealAddAndUpdate**, на два события, это добавления и редактирования сделок.
 
-{% highlight php %}
+{% highlight php linenos %}
 AddEventHandler('crm', 'OnBeforeCrmDealAdd', ['Davletyarov\Core\Crm\Handler\DealHandler', 'onBeforeCrmDealAddAndUpdate'], 10000);
 AddEventHandler('crm', 'OnBeforeCrmDealUpdate', ['Davletyarov\Core\Crm\Handler\DealHandler', 'onBeforeCrmDealAddAndUpdate'], 10000);
 {% endhighlight %}
 
 В самом хэндлере опишем так:
 
-{% highlight php %}
+{% highlight php linenos %}
 <?php
 
 namespace Davletyarov\Core\Crm\Handler;
