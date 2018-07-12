@@ -8,6 +8,10 @@
 }
 #page-header div h1 {font-weight:400;letter-spacing: 0.08em; font-size:1.2em;line-height:1.2em;margin-bottom:0px;max-width:30%;text-align: left;float:left;}
 #page-header div {border-bottom:thin solid #fafafa;height:42px;}
+#phone-fine svg {max-width:15px;margin-right:5px;}
+#page-header div a {color:var(--color-white) ;font-weight:300;letter-spacing: 0.012em!important; font-size:1.0em;
+    line-height:1.8em;text-align: right;float:right;text-decoration: none;}
+#page-header a:hover {color:var(--color-link);} 
 
 /* Serveis */
 #section-web {background-image: url("/img/web.jpg");background-position:fixed;image-rendering: crisp-edges;}
