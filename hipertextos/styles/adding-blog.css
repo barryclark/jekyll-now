@@ -4,8 +4,8 @@
 /* Posts */
 #post-title, #date, #post-share {text-align: center;}
 #post-video, #post-download, #post-share, #post-header {border:none;}
-.post em u a { padding: 6px;border: 2px solid var(--color-grey);color: var(--color-grey);border-radius: 40px;width: 180px;margin-top: 18px;}
-.post em u svg { width: 18px;}
+.post em u a { font-size:15px;line-height:32px;padding: 4px;border: 1px solid var(--color-grey);color: var(--color-grey);border-radius: 3px;width: 180px;margin-top: 18px;}
+.post em u svg { width: 10px;padding-top:5px;}
 #post-header {border-bottom: 1px solid var(--color-softgrey);margin-left:20%;margin-right:20%;padding-bottom: 45px;padding-top:0px;}
 #post-header h1 {font-size:1.5em;line-height:1.2em;margin-bottom:0px;max-width:30%;text-align: left;float:left;}
 .siguiente, .anterior {font-size:14px;line-height:3.2em;font-weight: lighter; }
@@ -23,6 +23,7 @@ figure iframe {width:100%;}
 #post-share em a:hover {background:#fff !important;border:thin solid var(--color-link);}
 #post-share em a:visited {background-color:var(--color-soft-grey)  !important;}
 
+#entry {font-weight: lighter; letter-spacing: 0.01em;}
 #big-post-img.cover {padding-top:0px;margin-top:1.6em;}
 #big-post-img.cover img {min-width:100%;}
 #post-foot {border:0px solid transparent;}
@@ -123,11 +124,14 @@ h3 a:hover {color: var(--color-link); text-decoration:none;}
 /* Suscribe */
 form .button {border:thin solid currentColor;margin-top:0.6em;}
 
+@media (max-width: 1600px) {
+    #post-header {margin-left:12%;margin-right:12%;}
+}
 @media (max-width: 1250px) {
-
+    #post-header {margin-left:5%;margin-right:5%;}
 }
 @media (max-width: 1242px) {
-
+    #post-header {margin-left:4%;margin-right:4%;}
 }
 @media (max-width: 768px) {
     .simple h3,
