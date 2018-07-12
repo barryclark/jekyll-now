@@ -20,7 +20,7 @@ Today is going to be about trying to get an accurate error estimate on the flux 
 
 It makes perfect sense why we're using this for stars, then. If, as astronomers do, we're counting the number of times an electron in the CCD gets excited and we assume the electron was excited by a photon from a source we're observing (and call it _k_), then we should register an integer number of counts (electron excitations/_k_ in this example) in the way described by the assumptions of Poisson because there should be a constant stream of photons from the source. So, if you performed the same observation many times and plotted your results with the x-axis displaying the result of a single observation (total counts/number of times _k_ happened) and the y-axis displaying the probability of getting that result, the graph would be a Poisson distribution where the probability of _k_ happening a certain amount of times during a time interval _t_ is:  
    {% raw %}  
-  \[P(k|t) = {e^(-\lambda) \lambda^k \over k!} = {e^(-rt) rt^k \over k!}\]  
+  \[ P(k|t) = e^(-\lambda) \lambda^k \over k! = e^(-rt) rt^k \over k! \]  
    {% endraw %}   
    _where \lambda (a scalar) is the number of events k in a certain interval, t is the time interval, r is the rate at which counts are observed (assumed constant), and e is Euler's constant_   
    
@@ -28,13 +28,13 @@ So, since we only performed one observation, there is an uncertainty in the numb
 
 Looking through the [photutils documentation](http://photutils.readthedocs.io/en/stable/index.html), this definition of the uncertainty makes even more sense. The `aperture_photometry()` command that calculates the flux (or flux rate) of the stars has an option to calculate total error based on Poisson statistics. The math it uses is:  
   {% raw %}   
-  \[\Delta F = \sqrt{\sum_{i=1}^{N_k}\sigma_i^2}\]  
+  \[ \Delta F = \sqrt{\sum_{i=1}^{N_k}\sigma_i^2} \]  
   {% endraw %}  
   _where \Delta F is the total flux error for the source, \sigma_i is the error for each pixel, and N_k is the number of pixels in the aperture object_  
   
-So, if the error on each pixel is \(sigma_i\) = (\sqrt{k_i}\) like Dr. G and Poisson say (where k_i is the number of events at each pixel), the above equation becomes:  
+So, if the error on each pixel is \( \sigma_i = sqrt{k_i} \) like Dr. G and Poisson say (where k_i is the number of events at each pixel), the above equation becomes:  
   {% raw %}   
-  \[\Delta F = {\sqrt{\sum_{i=1}^{N_k}k_i = \sqrt{k}\]  
+  \[ \Delta F = \sqrt{\sum_{i=1}^{N_k}k_i} = \sqrt{k} \]  
   {% endraw %}  
   _Where k_i is the number of events at each pixel, N_k is the number of pixels in the aperture object, and k is number of events in the aperture object_ 
   
