@@ -53,8 +53,8 @@ section.cover-justify p {padding: 6px 20px 0 20px;line-height: 24px;font-size: 1
     line-height:1.8em;text-align: right;float:right;text-decoration: none;}
 #page-header.medias a:hover {color:var(--color-link);} 
 
-#page-header.medias h2 {font-size:2.9em;padding-top:200px;font-weight: 400;letter-spacing: none;}
-#page-header.medias h5 {padding-top:230px;font-weight: 200;}
+#page-header.medias h2 {font-size:2.9em;padding-top:160px;font-weight: 400;letter-spacing: none;}
+#page-header.medias h5 {padding-top:190px;font-weight: 200;}
 
 #icons a {border:thin solid var(--color-soft);background: transparent;border-radius:50%;}
 #icons a:hover {border:thin solid var(--color-blue);}
