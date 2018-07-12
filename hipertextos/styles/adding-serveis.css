@@ -13,8 +13,8 @@
     line-height:1.8em;text-align: right;float:right;text-decoration: none;}
 #page-header a:hover {color:var(--color-link);} 
 
-#page-header div h3 {}
-#page-header h4 {}
+#page-header h2 {padding-top:200px;font-weight: 400;}
+#page-header h4 {padding-top:230px;font-weight: 200;}
 
 /* Serveis */
 #section-web {background-image: url("/img/web.jpg");background-position:fixed;image-rendering: crisp-edges;}
