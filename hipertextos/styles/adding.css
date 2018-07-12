@@ -46,6 +46,16 @@ section.cover-justify p {padding: 6px 20px 0 20px;line-height: 24px;font-size: 1
 	border:none;color: #fff;overflow: hidden;
 	text-align: center;height: 67vh;
 }
+#page-header.medias div h1 {font-weight:400;letter-spacing: 0.005em; font-size:1.0em;line-height:1.7em;margin-bottom:0px;max-width:30%;text-align: left;float:left;}
+#page-header.medias div {border-bottom:thin solid #fafafa;height:42px;}
+#phone-fine svg {max-width:15px;margin-right:5px;}
+#page-header.medias div a {color:var(--color-white) ;font-weight:300;letter-spacing: 0.012em!important; font-size:1.0em;
+    line-height:1.8em;text-align: right;float:right;text-decoration: none;}
+#page-header.medias a:hover {color:var(--color-link);} 
+
+#page-header.medias h2 {font-size:2.9em;padding-top:200px;font-weight: 400;letter-spacing: none;}
+#page-header.medias h5 {padding-top:230px;font-weight: 200;}
+
 #icons a {border:thin solid var(--color-soft);background: transparent;border-radius:50%;}
 #icons a:hover {border:thin solid var(--color-blue);}
 figure em a {border:none;border-bottom;line-height:0.2em;padding:12px 4px;}
