@@ -132,7 +132,8 @@ form .button {border:thin solid currentColor;margin-top:0.6em;}
     #post-header {margin-left:5%;margin-right:5%;}
 }
 @media (max-width: 1242px) {
-    #post-header {margin-left:4%;margin-right:4%;}
+    #post-header {margin-left:4%;margin-right:4%;padding:0;}
+    #post-header h1 {font-size: 1.2em;max-width:50%}
 }
 @media (max-width: 768px) {
     .simple h3,
@@ -155,6 +156,13 @@ form .button {border:thin solid currentColor;margin-top:0.6em;}
 	#layout-list:checked ~ #layout-result article div img {
 		width:96px;height:96px;
 	}
+    #post-header {margin-left:4%;margin-right:4%;padding:0;}
+    #post-header h1 {max-width:100%;float:none;font-size: .8em;line-height:2.3em;}
+    #post-download p img {max-width:38%;float:left;border-radius:4px;margin:0 18px 12px 0;}
+    #post-download p {font-size:15px;line-height:1.5em;font-weight: 400}
+    #post-download h6 {font-size:18px;line-height:16px;margin-bottom:8px;}
+    #post-download p em a {	font-size: 12px;line-height: 14px;margin-top:8px;}
+    #post-download em svg {	font-size: 18px;line-height: 18px;padding: 6px 0 0 0;}
 }
 
 @media (max-width: 432px) {
@@ -170,4 +178,5 @@ form .button {border:thin solid currentColor;margin-top:0.6em;}
 	#layout-list:checked ~ #layout-result article div img {
 		width:64px;height:64px;
 	}
+    #post-download p img {min-width:100%;float:none}
 }
