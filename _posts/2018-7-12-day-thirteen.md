@@ -7,7 +7,7 @@ Getting this done before the weekend would leave me feeling prepared to look at 
 
 ## Better Error Estimation
 To correct yesterday's code, I went back to [aperture_photometry.py](https://github.com/GosnellResearchGroupSummer2018/NGC6819/blob/master/photometry%20codes/aperture_photometry.py) and manipulated the data explcitly to change it to total counts by multiplying the data array by the exposure time for that observation. Doing this means that I get total flux at the end instead of flux rate. For some reason, this change causes [aperture_photometry.py](https://github.com/GosnellResearchGroupSummer2018/NGC6819/blob/master/photometry%20codes/aperture_photometry.py) to give the error "invalid values encountered in np.sqrt()", even though the negatives have been replaced by zero like before. Also, this error doesn't happen if I just don't multiply by effective gain. But, the code still compiles and runs and gives me this out:  
-![fluxes]({{thom-ory.github.io}}/images/flux_rates_2.png) 
+![fluxes]({{thom-ory.github.io}}/images/fluxes.png) 
 _note: The error bars are tiny and very hard too see. If you look closely, you can see a little bit of red on top of most of the blue circles; this is the error_
 
 ---
