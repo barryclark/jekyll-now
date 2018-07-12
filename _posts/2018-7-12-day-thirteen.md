@@ -17,5 +17,5 @@ I then tried to lean into the drizzled images that I already have to work with, 
 ![flux_rates]({{thom-ory.github.io}}/images/flux_rates_2.png)
 _note: This graph looks proportionally the same as the other graph, but is a factor of 7058 smaller in value and has different units. The errors are significantly smaller than the results I got yesterday, which were an incorrect application of Poisson statistics since counts/s are not integer values_
 
----
+# Conclusion
 Tomorrow, I want to tackle the FWHM problem, then I'll decide if the code is actually any good at source detection. When it inevitably is not great, I'll make it better until it is. 
