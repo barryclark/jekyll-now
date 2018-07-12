@@ -6,8 +6,11 @@
 #post-video, #post-download, #post-share, #post-header {border:none;}
 .post em u a { padding: 6px;border: 2px solid var(--color-grey);color: var(--color-grey);border-radius: 40px;width: 180px;margin-top: 18px;}
 .post em u svg { width: 18px;}
-#post-header {border-bottom: 1px solid var(--color-softgrey);}
-#post-header h1 {font-size:1.5em;line-height:1.2em;margin-bottom:0px;}
+#post-header {border-bottom: 1px solid var(--color-softgrey);margin-left:20%;margin-right:20%;padding-bottom: 45px;padding-top:0px;}
+#post-header h1 {font-size:1.5em;line-height:1.2em;margin-bottom:0px;max-width:30%;text-align: left;float:left;}
+.siguiente, .anterior {font-size:14px;line-height:3.2em;font-weight: lighter; }
+.siguiente {float:right;padding-right:0;text-decoration:none!important;}
+.anterior {float:right;text-decoration:none!important;padding-right:12px;}
 #post-img img { border-radius: 50%;height: 210px;float: left;margin: 0 23px 26px 0;object-fit: cover;width: 210px;}
 #post-video {}
 #post-download {}
