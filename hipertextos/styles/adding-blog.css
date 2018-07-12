@@ -7,7 +7,7 @@
 .post em u a { font-size:15px;line-height:32px;padding: 4px;border: 1px solid var(--color-grey);color: var(--color-grey);border-radius: 3px;width: 180px;margin-top: 18px;}
 .post em u svg { width: 10px;padding-top:5px;}
 #post-header {border-bottom: 1px solid var(--color-softgrey);margin-left:20%;margin-right:20%;padding-bottom: 45px;padding-top:0px;}
-#post-header h1 {font-size:1.5em;line-height:1.2em;margin-bottom:0px;max-width:30%;text-align: left;float:left;}
+#post-header h1 {font-size:1.5em;line-height:1.2em;margin-bottom:0px;max-width:60%;text-align: left;float:left;}
 .siguiente, .anterior {font-size:14px;line-height:3.2em;font-weight: lighter; }
 .siguiente {float:right;padding-right:0;text-decoration:none!important;}
 .anterior {float:right;text-decoration:none!important;padding-right:12px;}
@@ -134,6 +134,7 @@ form .button {border:thin solid currentColor;margin-top:0.6em;}
 @media (max-width: 1242px) {
     #post-header {margin-left:4%;margin-right:4%;padding:0;}
     #post-header h1 {font-size: 1.2em;max-width:50%}
+	#post-img img { height: 160px;float: left;margin: 0 13px 12px 0;width: 160px;}
 }
 @media (max-width: 768px) {
     .simple h3,
@@ -163,6 +164,7 @@ form .button {border:thin solid currentColor;margin-top:0.6em;}
     #post-download h6 {font-size:18px;line-height:16px;margin-bottom:8px;}
     #post-download p em a {	font-size: 12px;line-height: 14px;margin-top:8px;}
     #post-download em svg {	font-size: 18px;line-height: 18px;padding: 6px 0 0 0;}
+	#post-img img { height: 80px;float: left;margin: 36px 13px 12px 0;width: 80px;border-radius:12px;}
 }
 
 @media (max-width: 432px) {
@@ -179,4 +181,5 @@ form .button {border:thin solid currentColor;margin-top:0.6em;}
 		width:64px;height:64px;
 	}
     #post-download p img {min-width:100%;float:none}
+	#post-img img { height: 75px;float: left;margin: 38px 8px 8px 0;width: 75px;border-radius:12px;}
 }
