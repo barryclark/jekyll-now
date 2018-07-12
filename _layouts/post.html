@@ -7,6 +7,12 @@ comments: true
     <main id="page-main" role="main">
 		<header id="post-header" class="anm-moveFromLeft delay-100">
 				<h1 id="post-title" class="anm-moveFromBottomFade delay-1000">{{ page.title }}</h1>
+				{% if page.next.url %}
+					<a href="{{page.next.url}}" class="siguiente" rel="Siguiente Post {{ page.next.title }}" title="{{ page.next.title }}">Següent &raquo;</a>
+				{% endif %}
+				{% if page.previous.url %}
+					<a href="{{page.previous.url}}" class="anterior" rel="Anterior Post {{ page.previous.title }}" title="{{ page.previous.title }}">&laquo; Anterior</a>
+				{% endif %}
 		</header>
 		<div>
 			<article id="post-video" class="post anm-fadeIn delay-1000">

@@ -6,7 +6,8 @@
 #post-video, #post-download, #post-share, #post-header {border:none;}
 .post em u a { padding: 6px;border: 2px solid var(--color-grey);color: var(--color-grey);border-radius: 40px;width: 180px;margin-top: 18px;}
 .post em u svg { width: 18px;}
-#post-header {border-bottom: 9px solid var(--color-black);}
+#post-header {border-bottom: 1px solid var(--color-softgrey);}
+#post-header h1 {font-size:1.5em;line-height:1.2em;margin-bottom:0px;}
 #post-img img { border-radius: 50%;height: 210px;float: left;margin: 0 23px 26px 0;object-fit: cover;width: 210px;}
 #post-video {}
 #post-download {}

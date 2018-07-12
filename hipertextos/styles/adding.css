@@ -56,6 +56,8 @@ figure em a {border:none;border-bottom;line-height:0.2em;padding:12px 4px;}
 #covers img {width: 13%;margin-bottom:1.2em; }
 #covers article {border:0;}
 #page #covers article {text-shadow:1px 1px 3px rgba(0,0,0,.12);}
+#covers h5 {line-height: 1.2em;}
+#covers h4 {margin:0px;line-height:1em;}
 
 #matte-demo {background-image: url("/img/texture/dark_grey.png");
 background-size:256px 256px;background-repeat: repeat;image-rendering: crisp-edges;
