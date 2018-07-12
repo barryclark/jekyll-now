@@ -44,7 +44,7 @@ section.cover-justify p {padding: 6px 20px 0 20px;line-height: 24px;font-size: 1
 .medias#page-header {background-image: url("/img/serveis.jpg");	background-position: top center;
 	background-attachment: fixed;background-size: cover;background-repeat: no-repeat;
 	border:none;color: #fff;overflow: hidden;
-	text-align: center;height: 67vh;
+	text-align: center;height: 42vh;
 }
 #page-header.medias div h1 {font-weight:400;letter-spacing: 0.005em; font-size:1.0em;line-height:1.7em;margin-bottom:0px;max-width:30%;text-align: left;float:left;}
 #page-header.medias div {border-bottom:thin solid #fafafa;height:42px;}
