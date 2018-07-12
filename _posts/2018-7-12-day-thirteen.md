@@ -1,7 +1,7 @@
 After the morning meeting with Dr. G, I have a list of tasks that I want to accomplish by this weekend: 
 1. Correct my error estimates from yesterday, which applied Poisson statistics to the wrong data type
 2. Create a new version of the code that is designed to work with drizzled HST images
-3. Improve my source detection. Right now, I am detecting for more sources than are actually there. I will try to determine the average, maximum, and minimum FWHM of sources in the field and utilize that information to improve my search. I also may expand the field some to 300x300, possibly up to 500x500 to include more sources. 
+3. Improve my source detection. Right now, I am detecting far more sources than there actually are. I will try to determine the average, maximum, and minimum full-width half-maximum (FWHM) for sources in the field I've been looking at and utilize that information to improve my search. I also may expand the field some to 300x300, possibly up to 500x500 to include more sources. 
 
 Getting this done before the weekend would leave me feeling prepared to look at the black-box HST photometry software that we're actually using for this particular data next week. I do hope we still end up using the codes Rory and I are writing for some of the real data analysis on our sources of interest; I'm starting to become proud of this code. 
 
@@ -18,3 +18,4 @@ I then tried to lean into the drizzled images that I already have to work with, 
 _note: This graph looks proportionally the same as the other graph, but is a factor of 7058 smaller in value and has different units. The errors are significantly smaller than the results I got yesterday, which were an incorrect application of Poisson statistics since counts/s are not integer values_
 
 ---
+Tomorrow, I want to tackle the FWHM problem, then I'll decide if the code is actually any good at source detection. When it inevitably is not great, I'll make it better until it is. 
