@@ -17,7 +17,7 @@ It makes perfect sense why we're using this for stars, then. If, as astronomers 
 <body>
 <p>
    {% raw %}  
-  \[ P(k|t) = {e^-\lambda \lambda^k \over k!} = {e^(-rt) rt^k \over k!} \]  
+  \[ P(k|t) = {e^-\lambda \lambda^k \over k!} = {e^-rt rt^k \over k!} \]  
    {% endraw %}   
 </p>
 </body>
