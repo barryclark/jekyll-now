@@ -3,13 +3,13 @@ layout: post
 title: The Power of Embedded Tomcat
 ---
 
-I came accross this implementation of Tomcat and I instantly fell in love with it because it is no longer necessary to setup a Tomcat instance on your laptop neither in your cloud instances. Perfect!
+I came accross this implementation of Tomcat and I instantly fell in love with it because it is no longer necessary to setup a Tomcat instance on your laptop neither in your cloud instances. _Perfect!_ Apart from that, this is just a jar file which can be encapuslated into a container and you could setup your own cluster of webservices built with java.
 
 Then I wrote a small java class that creates a Tomcat automatically with a specific port and a set of servlets which are auto-discovered by this class. Technically, you provide a directory in your project where you have your servlet classes, then the auto-discover mechanism will use a reflection approach to identify which classes are servlets! This will keep your project cleaned and there's no need to use a framework anymore with that dodgy and annoying route/config.xml files.
 
 Using this idea, I am building a library called *Buzze* that helps you on creating a bunch of microservices in the same java project where each service has its own tomcat. Apart from that, this library only uses servlets and tomcat which is amazing for someone who likes to control the low level technical details. My project is not open source, but I am happy to share it, please let me know if you want to have access to it.
 
-#Example
+## Example
 
 ```java
 
@@ -38,8 +38,6 @@ public class GammaServlet extends HttpServlet {
 
 ```
 
-If you extend HTTPServer in your class, you only have to provide in the super method a port, a path and the servlet package name. In this case, it will start a tomcat server on port 8088, to hit the provided servlet you need to hit /api and the servlet is inside of api package. Therefore, if you want to create several webservices under the same project, you can organise them by HTTPServer and put the respective servlets in separated folders.
+If you extend HTTPServer in your class, you only have to provide in the `super` method a `port`, a `path` and the `servlet package name`. In this case, it will start a tomcat server on port 8088, to hit the provided servlet you need to hit /api and the servlet is inside of api package. Therefore, if you want to create several webservices under the same project, you can organise them by HTTPServer and put the respective servlets in separated folders.
 
 
-
-Andre
