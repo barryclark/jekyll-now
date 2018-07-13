@@ -3,7 +3,6 @@ layout: post-download
 title: SkecthBook
 post: default
 comments: true
-columns: true
 bigger:
 category: Recursos
 img: "images/sketchbook.jpg"
@@ -26,7 +25,6 @@ Exporta en format JPG, PNG, BMP, TIFF i, sobretot, PSD.
 Els PSD amb capes es conserven (per a importar i exportar), inclòsos noms de les capes, grups i modalitats de fusió.
 
 <em><u><a href="https://sketchbook.com" title="Visitar pàgina oficial de Sketchbook" target="_blank"><i class="icon-cloud-download"></i>SketchBook</a></u></em>
-
 
 ---
 
