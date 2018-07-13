@@ -64,6 +64,11 @@ a:hover {
 	border-radius: 5px;
 }
 
+.share.mix {
+	background-color: ##fd8235;
+	color: #FFFFFF;
+}
+
 .mobile-hide {
 	@include mobile {
 		display: none !important;
