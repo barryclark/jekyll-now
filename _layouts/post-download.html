@@ -20,7 +20,15 @@ comments: true
 					<figure id="post-img">
 						<a href="../{{ page.img }}" data-lightbox="roadtrip"><img src="../{{ page.img }}"></a>
 					</figure>
+					{% if post.columns %}
+					<div class="columns-2">
+					{% end if %}
+					
 	    			{{ content }}
+
+					{% if post.columns %}
+					</div>
+					{% end if %}
 				</div>
 				<em><hr></em>
 				<aside id="post-share">
