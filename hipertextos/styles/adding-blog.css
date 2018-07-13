@@ -28,6 +28,8 @@ figure iframe {width:100%;}
 #big-post-img.cover img {min-width:100%;}
 #post-foot {border:0px solid transparent;}
 
+img.img-min {width:150px;border:2px solid #ddd;border-radius:12px!important;}
+
 #tw {background:var(--color-green);}
 #fb {background:var(--color-blue);}
 #go {background:var(--color-orange);}
