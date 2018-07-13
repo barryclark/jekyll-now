@@ -14,8 +14,8 @@ La Versió Completa de SketchBook ara es GRATUÏTA!
 Més de 190 pinzells i totalment Compatible amb Photoshop (permet guardar en .psd per capes). 
 
 
-<!--more-->
 
+<!--more-->
 
 
 Un gran descobriment.
