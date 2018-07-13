@@ -12,15 +12,18 @@ Using this idea, I am building a library called *Buzze* that helps you on creati
 #Example
 
 ´´java
+
 public class BetaServer extends HTTPServer {
     public BetaServer() {
         // port, path, servlets-package 
         super(Optional.of("8088"), Optional.of("/api"), Optional.of("api"));
     }
 }
+
 ´´
 
 ´´java
+
 @WebServlet(name = "GammaServlet", urlPatterns = {"/s/api"})
 public class GammaServlet extends HttpServlet {
 
@@ -32,6 +35,7 @@ public class GammaServlet extends HttpServlet {
         return resp;
     }
 }
+
 ´´
 
 If you extend HTTPServer in your class, you only have to provide in the super method a port, a path and the servlet package name. In this case, it will start a tomcat server on port 8088, to hit the provided servlet you need to hit /api and the servlet is inside of api package. Therefore, if you want to create several webservices under the same project, you can organise them by HTTPServer and put the respective servlets in separated folders.
