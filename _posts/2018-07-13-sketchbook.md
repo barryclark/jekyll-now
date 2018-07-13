@@ -25,9 +25,12 @@ Més de 190 pinzells i totalment Compatible amb Photoshop (permet guardar en .ps
 
 Un gran descobriment.
 
-Exporta en format JPG, PNG, BMP, TIFF i, sobretot, PSD. Els PSD amb capes es conserven completament (per a importar i exportar), inclòsos noms de les capes, grups i modalitats de fusió.
+Exporta en format JPG, PNG, BMP, TIFF i, sobretot, PSD.
+
+Els PSD amb capes es conserven (per a importar i exportar), inclòsos noms de les capes, grups i modalitats de fusió.
 
 
+---
 
 <a href="{{ site.baseurl }}/images/sketchbook/img1.jpg" data-lightbox="roadtrip"><img src="{{ site.baseurl }}/images/sketchbook/img1.jpg"></a>
 
