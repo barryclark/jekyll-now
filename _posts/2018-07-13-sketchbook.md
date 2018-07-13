@@ -5,6 +5,7 @@ post: default
 comments: true
 bigger:
 category: Recursos
+tags: "sketchbook, art digital, wacom, tableta, dibuix, recursos, app"
 img: "images/sketchbook.jpg"
 excerpt_separator: <!--more-->
 ---
