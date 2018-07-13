@@ -5,6 +5,7 @@ post: default
 comments: true
 bigger:
 category: treballs
+tags: [art digital, wacom, tableta, dibuix, cristian segura, cartells, disseny]
 img: "assets/print/foto1.jpg"
 excerpt_separator: <!--more-->
 ---
