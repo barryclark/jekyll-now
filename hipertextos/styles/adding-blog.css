@@ -28,7 +28,10 @@ figure iframe {width:100%;}
 #big-post-img.cover img {min-width:100%;}
 #post-foot {border:0px solid transparent;}
 
-img.img-min {width:150px;border:2px solid #ddd;border-radius:12px!important;}
+img.img-min {width:125px;float:left;margin:6px 12px 12px 0;;border:1px solid #ddd;border-radius:12px!important;}
+.post-flip {width: 48%;margin:1% 2% 2% 0;float:left;}
+.post-flip h6 { margin-bottom:6px;margin-top:2px;font-weight:500; }
+.post-flip p { font-weight:300; }
 
 #tw {background:var(--color-green);}
 #fb {background:var(--color-blue);}
@@ -137,6 +140,8 @@ form .button {border:thin solid currentColor;margin-top:0.6em;}
     #post-header {margin-left:4%;margin-right:4%;padding:0;}
     #post-header h1 {font-size: 1.2em;max-width:50%}
 	#post-img img { height: 160px;float: left;margin: 0 13px 12px 0;width: 160px;}
+    .post-flip {width: 100%;margin:0;}
+    img.img-min {width:180px;}
 }
 @media (max-width: 768px) {
     .simple h3,
@@ -167,6 +172,9 @@ form .button {border:thin solid currentColor;margin-top:0.6em;}
     #post-download p em a {	font-size: 12px;line-height: 14px;margin-top:8px;}
     #post-download em svg {	font-size: 18px;line-height: 18px;padding: 6px 0 0 0;}
 	#post-img img { height: 80px;float: left;margin: 36px 13px 12px 0;width: 80px;border-radius:12px;}
+    img.img-min {width:30%;}
+    .post-flip h6 { font-size: 16px!important; font-weight:700; }
+	.post-flip p { font-size: 14px!important;font-weight:200!important; }
 }
 
 @media (max-width: 432px) {
