@@ -1247,7 +1247,7 @@ nav label {
 .simple article,
 #layout-simple:checked ~ #layout-result article {
 	border: none;
-	border-top: 16px solid currentColor;
+	border-top: 1px solid var(--color-softgrey);
 	padding: 16px 0;
 }
 .simple article h3,
@@ -1256,7 +1256,7 @@ nav label {
 }
 .simple article strong,
 #layout-simple:checked ~ #layout-result article strong {
-	margin: 0;background:var(--color-blue);right:0;padding:6px 12px 9px 12px;position:absolute;margin-top:5px;color:#fff;margin-right: 8px;border-radius: 3px;
+	margin: 0;background:var(--color-grey);right:0;padding:6px 12px 9px 12px;position:absolute;margin-top:5px;color:#fff;margin-right: 8px;border-radius: 3px;
 }
 .simple article div,
 #layout-simple:checked ~ #layout-result article div {
@@ -1276,8 +1276,8 @@ nav label {
 }
 .simple article nav a,
 #layout-simple:checked ~ #layout-result article nav a {
-	background-color: #000;
-	border-radius: 50%;
+	background-color: var(--color-softgrey);
+	border-radius: 50%;text-decoration:none;
 	color: #fff;
 	height: 65px;
 	line-height: 65px;
@@ -1290,10 +1290,10 @@ nav label {
 .list article,
 #layout-list:checked ~ #layout-result article {
 	border-color: transparent;
-	border-top: 1px solid currentColor;
-	height: 320px;
+	border-top: 1px solid var(--color-grey);
+	height: 280px;
 	margin: 0;
-	padding: 16px 0 0;
+	padding: 2px 0 0;
 }
 .list article h3,
 #layout-list:checked ~ #layout-result article h3 {
@@ -1302,8 +1302,8 @@ nav label {
 }
 .list article strong,
 #layout-list:checked ~ #layout-result article strong {
-	font-size: 12px;
-	margin: 0;
+	font-size: 15px;float:right;font-weight:300;
+	margin:0;color:var(--color-grey);
 }
 .list article div,
 #layout-list:checked ~ #layout-result article div {
@@ -1314,12 +1314,12 @@ nav label {
 }
 .list article div img,
 #layout-list:checked ~ #layout-result article div img {
-	border-radius: 50%;
-	height: 160px;
+	border-radius: 12%;
+	height: 120px;
 	float: left;
-	margin: 0 32px 0 0;
+	margin: 0 23px 0 0;
 	object-fit: cover;	
-	width: 160px;
+	width: 120px;
 }
 .list article nav,
 #layout-list:checked ~ #layout-result article nav {
@@ -1332,12 +1332,12 @@ nav label {
 }
 .list article nav a,
 #layout-list:checked ~ #layout-result article nav a {
-	background: #000;
+	background: var(--color-grey);
 	border-color: transparent;
-	color: #fff;
+	color: #fff;text-decoration:none;
 	line-height: 32px;
 	height: 48px;
-	padding: 8px 0;
+	padding: 7px 0;
 	width: 48px;
 }
 @media (max-width: 767px) {
@@ -1366,7 +1366,7 @@ nav label {
 #layout-table:checked ~ #layout-result article strong,
 #layout-table:checked ~ #layout-result article div {
 	border: none;
-	border-top: 16px solid currentColor;
+	border-top: 12px solid currentColor;
 	clear: none;
 	display: block;
 	float: left;
@@ -2871,5 +2871,3 @@ dialog,
 }
 
 /* The end */
-
-
