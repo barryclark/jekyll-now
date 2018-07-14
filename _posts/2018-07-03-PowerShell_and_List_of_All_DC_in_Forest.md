@@ -2,7 +2,12 @@
 layout: post
 title: PowerShell and list of all DC in forrest  
 ---
+Sometime, when I tried solve problems with Exchange Server on-permises I need i.e. investigate traffic for Active Directory. Or when I need set up new site. And for many other cases. For mall environments it's simple: open `dsa.msc` also known for ADUC and look. For bigger, it's quite complicated :). 
+
 # DirectoryServices 
+
+That method is kind of strange, as it actually return metadata of servers, not actually servers. :) 
+
 ```powershell 
 $Forest = [System.DirectoryServices.ActiveDirectory.Forest]::GetCurrentForest()
 $Forest.Sites | % { $_.Servers } | Select Name, Domain
