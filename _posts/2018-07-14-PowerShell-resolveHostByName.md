@@ -15,3 +15,4 @@ PS C:\h\z> [NET.DNS]::Resolve("www.google.com").AddressList.IPAddressToString -j
 - [Dns.GetHostByName Method (String)](https://msdn.microsoft.com/en-us/library/system.net.dns.gethostbyname(v=vs.110).aspx)
 - [Technet Social: DNS Script - Powershell](https://social.technet.microsoft.com/Forums/scriptcenter/en-US/b1d37394-5028-45c2-b60a-f6612ed5a60c/dns-script-powershell?forum=ITCG))
 - [Powershell script to convert IP to hostname and vice versa](https://social.technet.microsoft.com/Forums/windowsserver/en-US/bd64a860-d447-44b1-873f-3ca41a35ab4c/powershell-script-to-convert-ip-to-hostname-and-vice-versa-?forum=winserverpowershell)
+- https://www.fortypoundhead.com/showcontent.asp?artid=24022
