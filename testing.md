@@ -3,6 +3,6 @@ layout: page
 title: Testing
 permalink: /testing/
 ---
-<div class="change-color">Nơi testing code của tao vào làm gì :v</div>
+Trang này đang trong quá trình hoàn thiện, vui lòng [quay trở lại trang chủ]({{ site.baseurl }}/) để tiếp tục xem tiếp bài khác.
 
-<iframe height="700px" src="https://www.tranbadat.com/smileys/" style="border: 2px solid #00184a;" width="695">&lt;span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_start"&gt;&#65279;&lt;/span&gt;&lt;span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_start"&gt;&#65279;&lt;/span&gt;</iframe>
+<center><img src="{{ site.baseurl }}/images/404test.png" alt="Constructocat by https://github.com/jasoncostello" style="width: 400px;"/>{{ site.baseurl }}</center>
