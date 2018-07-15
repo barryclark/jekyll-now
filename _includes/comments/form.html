@@ -9,4 +9,25 @@
   <button type="submit">Post comment</button>
   <em>Note that comments won't appear until approved.</em>
 </form>
-<div style="display: none;">Thank you. Your comment will be visable after approval.</div>
+<div id="post-new-comment{{ include.reply }}-thank-you" style="display: none;">Thank you. Your comment will be visable after approval.</div>
+<script>
+$('#post-new-comment{{ include.reply }}').submit(function (){
+    var form = this;
+
+    $.ajax({
+        type: $(this).attr('method'),
+        url: $(this).attr('action'),
+        data: $(this).serialize(),
+        contentType: 'application/x-www-form-urlencoded',
+        success: function (data) {
+			$(form).hide();
+			$('#post-new-comment{{ include.reply }}-thank-you').show();
+        },
+        error: function (err) {
+            console.log(err);
+			$(form).hide();
+			$('#post-new-comment{{ include.reply }}-thank-you').show();
+        }
+    });
+});
+</script>
