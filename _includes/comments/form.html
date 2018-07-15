@@ -11,7 +11,8 @@
 </form>
 <div id="post-new-comment{{ include.reply }}-thank-you" style="display: none;">Thank you. Your comment will be visable after approval.</div>
 <script>
-$('#post-new-comment{{ include.reply }}').submit(function (){
+$('#post-new-comment{{ include.reply }}').submit(function(e){
+    e.preventDefault();
     var form = this;
 
     $.ajax({
