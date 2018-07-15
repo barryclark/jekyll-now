@@ -9,25 +9,25 @@
   <button type="submit">Post comment</button>
   <em>Note that comments won't appear until approved.</em>
 </form>
-<div id="post-new-comment{{ include.reply }}-submitting" style="display: none;">Submitting your comment.<img src="/images/ajax-loader.gif" /></div>
+<div id="post-new-comment{{ include.reply }}-submitting" style="display: none;"><img src="/images/ajax-loader.gif" style="display: inline;" /></div>
 <div id="post-new-comment{{ include.reply }}-thank-you" style="display: none;">Thank you. Your comment will be visable after approval.</div>
 <script>
 $('#post-new-comment{{ include.reply }}').submit(function(e){
     e.preventDefault();
     var form = this;
+	$(form).hide();
+	$('#post-new-comment{{ include.reply }}-submitting').show();
 
     $.ajax({
         type: $(this).attr('method'),
         url: $(this).attr('action'),
         data: $(this).serialize(),
         contentType: 'application/x-www-form-urlencoded',
-        success: function (data) {
-			$(form).hide();
+        success: function (data) {			
 			$('#post-new-comment{{ include.reply }}-thank-you').show();
         },
         error: function (err) {
-            console.log(err);
-			$(form).hide();
+            console.log(err);			
 			$('#post-new-comment{{ include.reply }}-thank-you').show();
         }
     });
