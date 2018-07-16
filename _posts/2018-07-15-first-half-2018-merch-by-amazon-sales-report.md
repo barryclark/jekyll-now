@@ -134,4 +134,4 @@ Designs Sold | Total Sold | Sum of Royalty
 
 Merch by Amazon is by far my biggest money-maker. I'm on a few other POD sites, but make nowhere near the same amount. I only made $17.33 on [Redbubble](https://www.redbubble.com/en/people/joehx), $12.00 on [TeePublic](https://hendrixjoseph.github.io/teepublic/), and $6.63 on [Teespring](https://teespring.com/stores/joehxs-store).
 
-**Curious what t-shirt designs I have for sale on Amazon? I set up [a special Amazon search page](https://hendrixjoseph.github.io/t-shirts/) to show all of my Merch by Amazon t-shirt designs. I also set up a similar page for [my PopSocket designs](https://hendrixjoseph.github.io/popsockets/).**
+***Curious what t-shirt designs I have for sale on Amazon? I set up [a special Amazon search page](https://hendrixjoseph.github.io/t-shirts/) to show all of my Merch by Amazon t-shirt designs. I also set up a similar page for [my PopSocket designs](https://hendrixjoseph.github.io/popsockets/).***
