@@ -17,7 +17,7 @@ authors = ["Samuel L. Odom", "Erin E. Barton", "Brian Reichow", "Hariharan Swami
 publication_types = ["2"]
 
 # Publication name and optional abbreviated version.
-publication = "_Research in Developmental Disabilities_, forthcoming"
+publication = "_Research in Developmental Disabilities, 79_, 88-96"
 
 # Abstract and optional shortened version.
 abstract = "An increasing movement in single case research is to employ statistical analyses as one form of data analysis. Researchers have proposed different statistical approaches. The purpose of this paper is to examine the utility and discriminant validity of two novel types of between-case standardized effect size analyses with two existing systematic reviews. The between-case analyses found greater effect sizes for the studies in the object play review and smaller effect sizes for studies of sensory intervention, which were consistent with the overall conclusions reached in the original systematic reviews. These findings provide evidence of discriminant validity, although concerns remain around the methods’ utility across different single case research designs. Future directions for research and development also are provided."

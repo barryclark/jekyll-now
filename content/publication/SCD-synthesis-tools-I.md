@@ -17,7 +17,7 @@ authors = ["Kathleen N. Zimmerman", "Jennifer R. Ledford", "Katherine E. Severin
 publication_types = ["2"]
 
 # Publication name and optional abbreviated version.
-publication = "_Research in Developmental Disabilities_, forthcoming"
+publication = "_Research in Developmental Disabilities, 79_, 19-32"
 
 # Abstract and optional shortened version.
 abstract = "Tools for evaluating the quality and rigor of single case research designs (SCD) are often used when conducting SCD syntheses. Preferred components include evaluations of design features related to the internal validity of SCD to obtain quality and/or rigor ratings. Three tools for evaluating the quality and rigor of SCD (Council for Exceptional Children, What Works Clearinghouse, and Single-Case Analysis and Design Framework) were compared to determine if conclusions regarding the effectiveness of antecedent sensory-based interventions for young children changed based on choice of quality evaluation tool. Evaluation of SCD quality differed across tools, suggesting selection of quality evaluation tools impacts evaluation findings. Suggestions for selecting an appropriate quality and rigor assessment tool are provided and across-tool conclusions are drawn regarding the quality and rigor of studies. Finally, authors provide guidance for using quality evaluations in conjunction with outcome analyses when conducting syntheses of interventions evaluated in the context of SCD."
