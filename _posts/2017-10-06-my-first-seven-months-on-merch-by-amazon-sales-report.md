@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "My First Seven Months on Merch by Amazon: Sales Report"
-tags: [money]
+tags: [money, sales report]
 keywords: [amazon, merch, merch by amazon, print-on-demand, sales, entrepreneur, excel, charts]
 image: /images/merch/weekly-sales.png
 ---
