@@ -1,15 +1,22 @@
 ---
 layout: page
-title: About
-permalink: /about/
+title: Sobre
+permalink: /sobre/
 ---
 
-Some information about you!
+Marcelo Lauxen, 20, estudante de ciência da computação e desenvolveldor de software à 1 ano e meio.
 
-### More Information
+#### Um pouco sobre mim
 
-A place to include any other types of information that you'd like to include about yourself.
+Decidi criar esse blog com o intuito de compartilhar meu conhecimento, já adquirido nesse período trabalhando como desenvolvedor com a linguagem Delphi.
 
-### Contact me
+Busco aprimorar meus conhecimentos em Delphi continuamente, como também mantenho meus estudos em outras linguagens como Java e JavaScript.
 
-[email@domain.com](mailto:email@domain.com)
+#### Experiência profissional:
+
+ * Gluk Sistemas - 1 Janeiro 2017 até 28 Agosto de 2017.
+ * Sysmo Sistemas - 1 Agosto 2018 até o momento.
+
+#### Contato
+
+[Marcelo Lauxen](mailto:marcelolauxen16@gmail.com)
