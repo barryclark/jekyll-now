@@ -6,7 +6,7 @@ comments: true
 excerpt_separator: <!--more-->
 ---
 
-Forgive me for using an agile principle (number 11!) as a title for this post, but that's where we started when we came up with the idea for Heist Planning, a new activity we use when planning projects. It has always been a challenge for us to submerse engineers into the problems our business experiences to the degree where they really feel like the understand the target that they're aiming at and that the cause of the project is their own. Furthermore, we've also always struggled with the architectural and technical planning of a project being something the engineers feel full a part of.
+Forgive me for using an agile principle (number 11!) as a title for this post, but that's where we started when we came up with the idea for Heist Planning, a new activity we use when planning projects. It has always been a challenge for us to submerse engineers into the problems our business experiences to the degree that they really feel like they understand the target that they're aiming at and that the cause of the project is their own. Furthermore, we've also always struggled with the architectural and technical planning of a project being something the engineers feel full a part of.
 
 Enter: Heist Planning.
 
@@ -28,7 +28,18 @@ One was a purely back-end project to re-work our application processing system. 
 
 ![Heist Planning](../images/heist-planning.JPG)
 
-The other project was much more full-stack, with various website changes, a new screen in our CRM and various back-end changes to handle unstructured review and image data. This time, we had the a Product Manager, engineers, a UX Designer, the Head of UX and even the CTO! Each iteration, we stuck a post-it to our heads indicating our roles (customer, website, API, image store, etc.) and "planned the heist" until we each fully understood how the software would be interacting and what each component would be responsible for. Even now, the CTO occasionally drops into a stand-up and still understands what the team are talking about and how the components fit together.
+The other project was much more full-stack, with various website changes, a new screen in our CRM and various back-end changes to handle unstructured review and image data. This time, we had the a Product Manager, engineers, a UX Designer, the Head of UX and even the CTO! Each iteration, we stuck a post-it to our heads indicating our roles (customer, website, API, image store, etc.) and "planned the heist" until we each fully understood how the software would be interacting and what each component would be responsible for. Even now, the CTO occasionally drops into a stand-up and still understands what the team are talking about and how the components fit together. Not only that, but this kind of inception activity really helps bring cross-functional teams together. UX designers get an understanding of our user authentication works under the hood, Product Managers get to grips with database transactions and Software Engineers get an insight into user behaviour.
 
 Heist Planning has been a huge success for us and is now a key tool in our planning toolkit. However, the main learning for us wasn't that this particularly activity was valuable. Rather, it was that we need to think as creatively and innovatively about how we plan software as we would do about how we build it.
+
+## Summary: Heist Planning cookbook
+Running a Heist Planning session is easy, here's what we do. A pre-requisite of this activity is that a general system architecture has been agreed in some form.
+
+1. Agree upon the main roles in your system architecture or customer journey (e.g. user, website, login screen, authorization API, database, etc.). You want about the the same number of roles as there are people in the room.
+2. Assign out the roles to each member of the team. Stick notes are useful for writing what you're doing on your forehead (so that everyone else can prompt you!).
+3. Start at the beginning of your happy path and step through your architecture/journey person by person. Each of you needs to explain what your role/component does and communicate with the other components conversationally.
+4. Help each other through this stage. People will forget what their component is supposed to be doing and will need prompting, "its you next!".
+5. Repeat steps 2-4 until you can easily run through the whole journey with not hesitation.
+
+Happy planning!
 
