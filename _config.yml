@@ -9,8 +9,7 @@ name: Marcelo Lauxen
 description: Desktop Developer
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
-
+avatar: https://2.gravatar.com/avatar/5b82437318af4a42005d4397c2de1a40?s=400&d=mm
 #
 # Flags below are optional
 #
@@ -21,12 +20,12 @@ footer-links:
   email: marcelolauxen16@gmail.com
   facebook:
   flickr:
-  github: barryclark/jekyll-now
+  github: marcelolx
   instagram:
-  linkedin: https://www.linkedin.com/in/marcelo-lauxen
+  linkedin: marcelo-lauxen
   pinterest:
   rss: # just type anything here for a working RSS icon
-  twitter: jekyllrb
+  twitter: 
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
