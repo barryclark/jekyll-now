@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The best architectures emerge from self-organising teams: Heist Planning
+title: The best architectures emerge from self-organising teams - Heist Planning
 author: andy_kuszyk
 comments: true
 excerpt_separator: <!--more-->
@@ -9,7 +9,6 @@ excerpt_separator: <!--more-->
 Forgive me for using an agile principle (number 11!) as a title for this post, but that's where we started when we came up with the idea for Heist Planning, a new activity we use when planning projects. It has always been a challenge for us to submerse engineers into the problems our business experiences to the degree that they really feel like they understand the target that they're aiming at and that the cause of the project is their own. Furthermore, we've also always struggled with the architectural and technical planning of a project being something the engineers feel fully a part of.
 
 Enter: Heist Planning.
-
 <!--more-->
 
 ## Inspiration from the criminal underworld
