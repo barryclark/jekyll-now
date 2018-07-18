@@ -2,7 +2,7 @@ After a hectic day, I'm finally able to sit down and work on photometry. Really 
 
 **[sources_phot_table](https://github.com/GosnellResearchGroupSummer2018/NGC6819/blob/master/first_attempt_at_HST_source_detection/day_seven/phot_table.txt)**    
 ![sources]({{ thom-ory.github.io }}/images/day_fifteen/sources.png)     
-_FWHM = 3.0, Threshold = 3σ ("democratic" source detection, looking for most sources possible)_      
+_FWHM = 3.0, Threshold = 5σ ("democratic" source detection, looking for most sources possible)_      
 
 **[bright_sources_phot_table](https://github.com/GosnellResearchGroupSummer2018/NGC6819/blob/master/first_attempt_at_HST_source_detection/day_seven/bright_phot_table.txt)**      
 ![bright_sources]({{ thom-ory.github.io }}/images/day_fifteen/bright_sources.png)         
