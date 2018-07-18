@@ -15,3 +15,7 @@ _Fluxes according to [bright_sources_phot_table](https://github.com/GosnellResea
 
 ---
 Like has been the case so far, these codes are detecting extra sources around diffraction spikes, and are missing a few smaller sources. I'm planning on being more empirical about which FWHM I use by writing a code (tomorrow) that will actually determine the FWHM of the sources in the image. Hopefully, this will improve the source detection. 
+
+## Learning DOLPHOT
+To start, I will quickly read through Rory's posts for today and yesterday. He was just leaving the lab when I first got here and said that he felt that DOLPHOT was somewhat more difficult to learn than photutils had been. I suppose this isn't surprising because DOLPHOT is a PSF photometry program, as opposed to photutils whose aperture photometry is a much more pedestrian version of background subtraction, if not terrible. Moreover, DOLPHOT is in C, not python, which might make learning it harder. 
+
