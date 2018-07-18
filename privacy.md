@@ -4,13 +4,13 @@ title: Privacy Policy
 permalink: /privacy/
 ---
 
-*Revised July 13, 2018.*
+*Revised July 18, 2018.*
 
 ## Google Analytics
 
 I use Google Analytics to determine site traffic, sources of said traffic, and user behavior. Neither I nor this site will attempt to identify you personally using Google Analytics.
 
-I also have demographics enabled on Google Analytics, which only tells me aggregated information on users' age and gender.
+I also have demographics enabled on Google Analytics, which only tells me aggregated information on users' age, gender, and interests.
 
 If you wish to know more or even opt out, view [Google's privacy policy](http://www.google.com/intl/en/policies/privacy/).
 
