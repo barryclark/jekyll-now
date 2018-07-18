@@ -1,4 +1,4 @@
-After a hectic day, I'm finally able to sit down and work on photometry. Really quickly, before I start reading Rory's posts and learning DOLPHOT, I remade a few of the images that I posted yesterday so that I could give accurate information about the code that made them. Here they are: 
+After a hectic day, I'm finally able to sit down and work on photometry. Really quickly, before I start reading Rory's posts and learning DOLPHOT, I remade a few of the images that I posted yesterday so that I can give accurate information about the code that made them. Here they are: 
 
 **[sources_phot_table](https://github.com/GosnellResearchGroupSummer2018/NGC6819/blob/master/first_attempt_at_HST_source_detection/day_seven/phot_table.txt)**    
 ![sources]({{ thom-ory.github.io }}/images/day_fifteen/sources.png)     
