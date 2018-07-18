@@ -6,7 +6,7 @@ _FWHM = 3.0, Threshold = 3σ ("democratic" source detection, looking for most so
 
 **[bright_sources_phot_table](https://github.com/GosnellResearchGroupSummer2018/NGC6819/blob/master/first_attempt_at_HST_source_detection/day_seven/bright_phot_table.txt)**      
 ![bright_sources]({{ thom-ory.github.io }}/images/day_fifteen/bright_sources.png)         
-_FWHM = 4.3, Threshold = 7σ ("oligargich" source detection, looking for brightest sources)     
+_FWHM = 4.3, Threshold = 7σ ("oligargich" source detection, looking for brightest sources)_     
 
 **note: When comparing the two source images to the images that have the sources circled, you'll notice that they disagree on what the true RA and Dec are. That's an error; the RA and Dec are correct on the source images, but the images with circles on them contain information from an earlier test which do not correspond to that actual section of sky. All four images depict the same section of sky.**_
 
