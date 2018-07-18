@@ -8,6 +8,8 @@ _FWHM = 3.0, Threshold = 5σ ("democratic" source detection, looking for most so
 ![bright_sources]({{ thom-ory.github.io }}/images/day_fifteen/bright_sources.png)         
 _FWHM = 4.3, Threshold = 7σ ("oligargich" source detection, looking for brightest sources)_     
 
+---
+
 _**Note: When comparing the two raw images to the two that have the sources circled, you'll notice that they disagree on what the RA and Dec are. That's an error; the RA and Dec are correct on the raw images, but the images with circles on them contain information from an earlier test which do not correspond to that actual section of sky. All four images depict the same section of sky, RA = {-19:41:15.0244 U -19:41:155.6276}, Dec = {40:12:39.279 U 40:12:23.988}.**_
 
 ![fluxes]({{ thom-ory.github.io }}/images/day_fifteen/fluxes.png)       
