@@ -26,11 +26,14 @@ class DealHandler
 {
     public function onBeforeCrmDealAddAndUpdate(&$arFields)
     {
-        if (!$arFields['COMPANY_ID'] && !$arFields['CONTACT_BINDINGS']) {
-            // перебиваем штатный сообщение об ошибке
-            $arFields['RESULT_MESSAGE'] = 'Клиент для сделки обязателен!';
-            $GLOBALS['APPLICATION']->ThrowException('Клиент для сделки обязателен!');
-            return false;
+        // проверяем не случаи ли обновление стади сделки ч/з прогресс бар
+        if (!isset($_REQUEST['ACTION']) && 'SAVE_PROGRESS' != $_REQUEST['ACTION']) {
+            if (!$arFields['COMPANY_ID'] && !$arFields['CONTACT_BINDINGS']) {
+                // перебиваем штатный сообщение об ошибке
+                $arFields['RESULT_MESSAGE'] = 'Клиент для сделки обязателен!';
+                $GLOBALS['APPLICATION']->ThrowException('Клиент для сделки обязателен!');
+                return false;
+            }
         }
     }
 }
