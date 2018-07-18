@@ -23,7 +23,7 @@ If this worked so well for criminal masterminds, we thought, why not for softwar
 ## Practicing what we preach
 This was all very good in theory, but how would it work in practice? Well, luckily we had two projects spinning up at around the time we hatched this idea and we tried Heist Planning out on both of them.
 
-One was a purely back-end project to re-work our application processing system. We're talking APIs, daemon-esque services and message queues, plus a fair amount of testing and scaling architecture. On the team was a Product Manager and four back-end software engineers. During the Heist Planning, each of them swapped roles playing the API, message queue, daemons and external triggers. By the end of the session, each of them (including the Product Manger), fully understood what each of the components was there to do and how they were going to interact.
+One was a purely back-end project to re-work our application processing system. We're talking APIs, daemon-esque services and message queues, plus a fair amount of testing and scaling architecture. On the team was a Product Manager and four back-end software engineers. During the Heist Planning, each of them swapped roles playing the API, message queue, daemons and external triggers. By the end of the session, each of them (including the Product Manager), fully understood what each of the components was there to do and how they were going to interact.
 
 ![Heist Planning](../images/heist-planning.JPG)
 
