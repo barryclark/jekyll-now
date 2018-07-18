@@ -35,7 +35,7 @@ Heist Planning has been a huge success for us and is now a key tool in our plann
 Running a Heist Planning session is easy, here's what we do. A pre-requisite of this activity is that a general system architecture has been agreed in some form.
 
 1. Agree upon the main roles in your system architecture or customer journey (e.g. user, website, login screen, authorization API, database, etc.). You want about the the same number of roles as there are people in the room.
-2. Assign out the roles to each member of the team. Stick notes are useful for writing what you're doing on your forehead (so that everyone else can prompt you!).
+2. Assign out the roles to each member of the team. Sticky notes are useful for writing what you're doing on your forehead (so that everyone else can prompt you!).
 3. Start at the beginning of your happy path and step through your architecture/journey person by person. Each of you needs to explain what your role/component does and communicate with the other components conversationally.
 4. Help each other through this stage. People will forget what their component is supposed to be doing and will need prompting, "its you next!".
 5. Repeat steps 2-4 until you can easily run through the whole journey without hesitation.
