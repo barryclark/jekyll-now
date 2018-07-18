@@ -2,16 +2,16 @@ After a hectic day, I'm finally able to sit down and work on photometry. Really 
 
 **[sources_phot_table](https://github.com/GosnellResearchGroupSummer2018/NGC6819/blob/master/first_attempt_at_HST_source_detection/day_seven/phot_table.txt)**    
 ![sources]({{ thom-ory.github.io }}/images/day_fifteen/sources.png)     
-_FWHM = 3.0, Threshold = 5σ ("democratic" source detection, looking for most sources possible)_      
+_FWHM = 3.0, Threshold = 5σ ("democratic" source detection, looking for most sources possible)_     
 
+---
 **[bright_sources_phot_table](https://github.com/GosnellResearchGroupSummer2018/NGC6819/blob/master/first_attempt_at_HST_source_detection/day_seven/bright_phot_table.txt)**      
 ![bright_sources]({{ thom-ory.github.io }}/images/day_fifteen/bright_sources.png)         
 _FWHM = 4.3, Threshold = 7σ ("oligargich" source detection, looking for brightest sources)_     
 
----
-
 _**Note: When comparing the two raw images to the two that have the sources circled, you'll notice that they disagree on what the RA and Dec are. That's an error; the RA and Dec are correct on the raw images, but the images with circles on them contain information from an earlier test which do not correspond to that actual section of sky. All four images depict the same section of sky, RA = {-19:41:15.0244 U -19:41:155.6276}, Dec = {40:12:39.279 U 40:12:23.988}.**_
 
+---
 ![fluxes]({{ thom-ory.github.io }}/images/day_fifteen/fluxes.png)       
 _Fluxes according to [bright_sources_phot_table](https://github.com/GosnellResearchGroupSummer2018/NGC6819/blob/master/first_attempt_at_HST_source_detection/day_seven/phot_table.txt). I decided that  bright_phot_table.txt represents better source detection. RA and Dec information are correct in this image_
 
