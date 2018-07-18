@@ -1,0 +1,1 @@
+My goal for today is to install DOLPHOT. I need to get GCC to install first, and I'm making progress on that front, but I need an administrator's credentials to complete the installation. If I can get the permissions I need, installation shouldn't be too hard. Then, I can start working on understanding DOLPHOT and using it to reduce and analyze data. 
