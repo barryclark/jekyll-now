@@ -4,12 +4,16 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Talking to other humans with programming languages.
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+Also interested by (and not in that order):
 
-### Contact me
+- Spatial sciences
+- Sailing
+- Trail motorcycles
 
-[email@domain.com](mailto:email@domain.com)
+### Shoot me an email ✉️ 🔫
+
+[nfabredev@gmail.com](mailto:nfabredev@gmail.com)
