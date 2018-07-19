@@ -250,5 +250,3 @@ Notes & Thanks
 All of the code used for this project can be found here: (https://github.com/GWarrenn/dc_data/tree/drafts/03_stop_frisk) and all of the data can be accessed through the DC OpenData Portal.
 
 As always, thank you to the DC Office of the Chief Technology Officer and the DC Metropolitan Police Department for making the data used in this analysis readily available and accessible.
-
-Additional thanks to my collaborator and thought-partner, Mahkah Wu, who helped develop and refine the research questions and analysis, as well as Caroline Chen and Mika Weinstein for their input and perspectives on this work. 
