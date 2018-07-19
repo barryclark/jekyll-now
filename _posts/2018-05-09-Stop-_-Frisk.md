@@ -50,7 +50,7 @@ It's important to note that, overall, the majority of these incidents involve pe
 
 Age is another important factor in this conversation. There have been a deluge of stories in the national conversation about race and policing involving black youths and the police, often with fatal results. DC does not present a different story. Nearly 1 in 5 black residents stopped during this time frame were children, compared to 2% among whites. This gap represents a significant diffference in how people in different communities view and react to policing from a very young age. 
 
-![](https://raw.githubusercontent.com/GWarrenn/gwarrenn.github.io/drafts/images/stop_and_frisk/04_sf_age_dist.png)
+![](https://raw.githubusercontent.com/GWarrenn/gwarrenn.github.io/drafts/images/stop_and_frisk/sf_age_dist.png)
 
 Among adults stopped by police, black and Hispanic/Latino residents skew younger than white residents. The graph above shows the overall distribution of people stopped by police by race/ethnicity. The median age of black and Hispanic/Latino people stopped by police is 27, compared to 30 for whites. 
 
