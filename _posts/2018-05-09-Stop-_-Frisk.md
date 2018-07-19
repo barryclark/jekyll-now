@@ -200,15 +200,15 @@ Likewise, the stop and frisk rate is lower than the crime rate among whites acro
 
 Similar to to the population comparison, Cleveland Park/Woodley Park, Downtown Chinatown, and Shaw/Logan Circle stand out as containing the highest disproportionality among black and white residents.
 
-Building off the "crime-only" model, now that we have access to demographic crime data, we can start to look at the relation between stop and frisk on an individual level, rather than a neighborhood level as we did previously. Except rather than using a linear regression to model the data, we'll use a Poisson regression, which is specifically geared toward modeling count data. This work is largely built off the research conducted by [Gelman, Fagan and Kiss (2007)]("http://www.stat.columbia.edu/~gelman/research/published/frisk9.pdf") examining stop and frisk in New York City in the late 1990's. The specific Poisson model we'll be using will estimate stop and frisk for each neighborhood while controlling for the race of the subject, the racial composition of the neighborhood in which they were stopped, and will use the crime rate for that racial group as an offset (Gelman et al. used the previous year, however we're only have access to the same year's crime data by race).
+Building off the "crime-only" model, now that we have access to demographic crime data, we can start to look at the relation between stop and frisk on an individual level, rather than a neighborhood level as we did previously. Except rather than using a linear regression to model the data, we'll use a Poisson regression, which is specifically geared toward modeling count data. This work is largely built off the research conducted by [Gelman, Fagan and Kiss (2007)]("http://www.stat.columbia.edu/~gelman/research/published/frisk9.pdf") examining stop and frisk in New York City in the late 1990's. The specific Poisson model we'll be using will estimate stop and frisk for each neighborhood while controlling for the race of the person stopped, the racial composition of the neighborhood in which they were stopped, and will use the crime rate for that racial group as an offset (Gelman et al. used the previous year, however we're only have access to the same year's crime data by race).
 
 <table align="center" style="text-align:center"><tr><td colspan="2" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"></td><td><em>Dependent variable:</em></td></tr>
 	<tr><td></td><td colspan="1" style="border-bottom: 1px solid black"></td></tr>
 	<tr><td style="text-align:left"></td><td>Total Stop Frisk</td></tr>
-	<tr><td colspan="2" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">Subject Race: Black</td><td>1.074<sup>***</sup></td></tr>
+	<tr><td colspan="2" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">Race: Black</td><td>1.074<sup>***</sup></td></tr>
 	<tr><td style="text-align:left"></td><td>(0.187)</td></tr>
 	<tr><td style="text-align:left"></td><td></td></tr>
-	<tr><td style="text-align:left">Subject Race: Hispanic/Latino</td><td>0.856<sup>***</sup></td></tr>
+	<tr><td style="text-align:left">Race: Hispanic/Latino</td><td>0.856<sup>***</sup></td></tr>
 	<tr><td style="text-align:left"></td><td>(0.249)</td></tr>
 	<tr><td style="text-align:left"></td><td></td></tr>
 	<tr><td style="text-align:left">Neighborhood Percent Black: 10% - 40%</td><td>-0.519<sup>***</sup></td></tr>
