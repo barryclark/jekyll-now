@@ -45,7 +45,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 26px;
   a {
     color: inherit;
   }
@@ -119,6 +119,11 @@ img {
   color: #666;
   font-size: 16px;
   font-weight: 100;		
+}
+
+.date-tiny {
+  color: #aaa;
+  font-size: 12px;
 }
 
 // Specify the color of the selection
