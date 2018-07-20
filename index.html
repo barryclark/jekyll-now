@@ -8,10 +8,10 @@ layout: default
 
       <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
 
-      <div>{{ post.url }}</div>
+      <div class="date-tiny">{{ post.date | date: "%B %e, %Y" }}</div>
       
       <div class="entry">
-        {{ post.date }}
+        {{ post.excerpt }}
       </div>
 
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
