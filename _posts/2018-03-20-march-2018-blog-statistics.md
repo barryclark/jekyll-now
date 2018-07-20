@@ -38,7 +38,7 @@ These stats are from February 20th through March 19th, which, because February i
 ![Google Analytics Graph for March](/images/blog-stats/2018-03-stats.png)
 *Google Analytics Graph for March*
 
-## Adsense
+## AdSense
 
 * Estimated earnings &rarr; $3.68
 * Impressions &rarr; 4,802
