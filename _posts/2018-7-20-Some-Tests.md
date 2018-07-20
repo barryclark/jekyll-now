@@ -5,9 +5,22 @@ title: Some tests
 
 Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
 
-![_config.yml]({{ site.baseurl }}/images/config.png)
 
 ```
+fn init --runtime kotlin myfunc
+```
+
+```kotlin
+package com.fn.example
+
+fun hello(input: String) = when {
+    input.isEmpty() -> ("Hello, world!")
+        else -> ("Hello, ${input}")
+}
+```
+
+
+```kotlin
 package com.fn.example
 import com.fnproject.fn.testing.*
 import org.junit.*
@@ -38,3 +51,14 @@ class HelloFunctionTest {
 
 }
 ```
+
+```
+mvn test
+```
+
+
+
+```
+fn run myfunc
+```
+
