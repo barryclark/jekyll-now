@@ -9,4 +9,4 @@ Prior to that, I was working as an Evangelist in the Oracle Java EE organization
 
 I am also a regular speaker at conferences and user groups, large and small, local and global.
 
-I can be reached on [Twitter](https://twitter.com/delabassee) (open DM).
+I can be reached on [Twitter](https://twitter.com/delabassee) (DMs are open).
