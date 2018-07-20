@@ -54,8 +54,20 @@ class HelloFunctionTest {
 
 ```
 mvn test
+...
+mvn test
+...
+[INFO] --- kotlin-maven-plugin:1.2.51:test-compile (test-compile) @ hello ---
+...
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.fn.example.HelloFunctionTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.518 sec
+Results :
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
+...
 ```
-
 
 
 ```
