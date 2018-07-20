@@ -39,7 +39,7 @@ Without further ado, here are the numbers:
 ![Google Analytics Graph for April](/images/blog-stats/2018-04-stats.png)
 *Google Analytics Graph for April*
 
-## Adsense
+## AdSense
 
 * Estimated earnings &rarr; $2.16
 * Impressions &rarr; 1,364
