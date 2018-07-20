@@ -6,7 +6,7 @@ keywords: [blog, statistics, blog statistics, analytics, pageviews, webmaster, w
 image: /images/blog-stats/2018-05-stats.png
 ---
 
-The 20th falls on a weekend this month, and I've been quite busy this weekend, so I'm just going to give that monthly blog stats with pretty much no analysis. If you want to view the previous months' statistic reports, following on of the following links:
+The 20th falls on a weekend this month, and I've been quite busy this weekend, so I'm just going to give that monthly blog stats with pretty much no analysis. If you want to view the previous months' statistic reports, click on one of the following links:
 
 * [January 2018 Blog Statistics](http://hendrixjoseph.github.io/january-2018-blog-statistics/)
 * [February 2018 Blog Statistics](http://hendrixjoseph.github.io/february-2018-blog-statistics/)
@@ -34,7 +34,7 @@ I was able to publish three blog posts in the past month:
 ![Google Analytics Graph for May](/images/blog-stats/2018-05-stats.png)
 *Google Analytics Graph for May*
 
-## Adsense
+## AdSense
 
 * Estimated earnings &rarr; $0.73
 * Impressions &rarr; 1,144
