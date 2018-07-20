@@ -16,7 +16,7 @@ I also added a [referral link page](https://hendrixjoseph.github.io/referral/) j
 
 Finally, although I haven't done it yet, I'll be removing the StumbleUpon share/stumble social media button. StumbleUpon is closing down at the end of the month. It's being effectively replaced by [Mix](https://mix.com). I do have a [Mix profile](https://mix.com/joehx) and might add a Mix share button to replace the StumbleUpon button.
 
-If you want to view the previous months' statistic reports, click on of the following links:
+If you want to view the previous months' statistic reports, click on one of the following links:
 
 * [January 2018 Blog Statistics](http://hendrixjoseph.github.io/january-2018-blog-statistics/)
 * [February 2018 Blog Statistics](http://hendrixjoseph.github.io/february-2018-blog-statistics/)
@@ -48,7 +48,7 @@ Onto the numbers:
 ![Google Analytics Graph for June](/images/blog-stats/2018-06-stats.png)
 *Google Analytics Graph for June*
 
-## Adsense
+## AdSense
 
 * Estimated earnings &rarr; $1.26
 * Impressions &rarr; 863
