@@ -37,7 +37,7 @@ I'm wanting to revamp the tags on my blog, but I haven't gotten around to that, 
 ![Google Analytics Graph for February](/images/blog-stats/2018-02-stats.png)
 *Google Analytics Graph for February*
 
-## Adsense
+## AdSense
 
 * Estimated earnings &rarr; $1.75
 * Impressions &rarr; 1,945
