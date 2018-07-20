@@ -15,7 +15,7 @@ It's the 20th, so that means it's time for me to show off the last month's blog 
 * [May 2018 Blog Statistics](http://hendrixjoseph.github.io/may-2018-blog-statistics/)
 * [June 2018 Blog Statistics](http://hendrixjoseph.github.io/june-2018-blog-statistics/)
 
-I was able to publish seven blog posts in the past month. That's probably a record for me.
+I was able to publish seven blog posts in the past month. That's probably a record for me. (My poor [dog blog](https://www.puppy-snuggles.com/) hasn't had a new post since May.)
 
 * [First Half 2018 Merch by Amazon Sales Report](https://hendrixjoseph.github.io/first-half-2018-merch-by-amazon-sales-report/)
 * [Let's Build a Diversified Stock Portfolio](https://hendrixjoseph.github.io/lets-build-a-diversified-stock-portfolio/)
