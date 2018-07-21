@@ -4,48 +4,7 @@ title: Конфигурация всего у MariaDB на UTF8_UNICODE_CI
 ---
 
 Добавить эти конфигурационные параметры в файл **/etc/mysql/my.cnf**
-
-
-{% highlight text %}
-[client]
-default-character-set=utf8
- 
-[mysql]
-default-character-set=utf8
- 
-[mysqld]
-sql-mode=''
-init_connect='SET collation_connection = utf8_unicode_ci'
-init_connect='SET NAMES utf8'
-character-set-server=utf8
-collation-server=utf8_unicode_ci
-skip-character-set-client-handshake
-{% endhighlight %}
+<script src="https://gist.github.com/davletyarov/399431f87ec3bc65adb8be64aca735b6.js"></script>
 
 Вывод **SHOW VARIABLES**.
-
-{% highlight bash %}
-+----------------------+-----------------+
-| Variable_name        | Value           |
-+----------------------+-----------------+
-| collation_connection | utf8_unicode_ci |
-| collation_database   | utf8_unicode_ci |
-| collation_server     | utf8_unicode_ci |
-+----------------------+-----------------+
-{% endhighlight %}
-
-{% highlight text %}
-+--------------------------+----------------------------+
-| Variable_name            | Value                      |
-+--------------------------+----------------------------+
-| character_set_client     | utf8                       |
-| character_set_connection | utf8                       |
-| character_set_database   | utf8                       |
-| character_set_filesystem | binary                     |
-| character_set_results    | utf8                       |
-| character_set_server     | utf8                       |
-| character_set_system     | utf8                       |
-| character_sets_dir       | /usr/share/mysql/charsets/ |
-+--------------------------+----------------------------+
-
-{% endhighlight %}
+<script src="https://gist.github.com/davletyarov/b9deaaeb641a69fc9d3d335e763206f6.js"></script>

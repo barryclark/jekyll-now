@@ -5,15 +5,9 @@ title: Ошибка 404 в админке Битрикса
 
 Один из возможных вариантов, устранения проблемы с 404 в админке для вкладок «переиндексации» поиска и списка «хайлоад-блоков». 
 Все дело в **.htaccess**, в моем случаи было неправильно задано правило, а именно: 
-
-{% highlight apache %}
-RewriteCond %{REQUEST_URI} ^(.*)index\.(php|html|php\/)(?:\?*)(?:\S*)$
-{% endhighlight %}
+<script src="https://gist.github.com/davletyarov/2091cf242d8774d45f5d907b1995cfb2.js"></script>
 
 В регулярке забыли прописать слэш, и из-за этого в адресной строке которая заканчивается на index.php обрезался, и получали 404 в внутри админки. 
 Например в случаи списка хайлодблоков в админке **/bitrix/admin/highloadblock_index.php?lang=ru** после будет сокращен до **/bitrix/admin/highloadblock_/?lang=ru** или еще например вот для вкладки «Переиндексации» модуля поиска адресная строка **/bitrix/admin/search_reindex.php?lang=ru** сократится до **/bitrix/admin/search_re/?lang=ru** и из-за этого мы полчаем Ошибку 404 
 Поэтому нужно исправить правило для Apache, и добавить слэш:
-
-{% highlight apache %}
-RewriteCond %{REQUEST_URI} ^(.*)\/index\.(php|html|php\/)(?:\?*)(?:\S*)$
-{% endhighlight %}
+<script src="https://gist.github.com/davletyarov/e2f3fdc8f472f7f78d296d75021504d1.js"></script>
