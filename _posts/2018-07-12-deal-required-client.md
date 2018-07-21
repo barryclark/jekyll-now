@@ -10,34 +10,11 @@ title: Сделать обязательным полем клиенты (кон
 *Решение.*
 Добавим один обработчик **onBeforeCrmDealAddAndUpdate**, на два события, это добавления и редактирования сделок.
 
-{% highlight php %}
-AddEventHandler('crm', 'OnBeforeCrmDealAdd', ['Davletyarov\Core\Crm\Handler\DealHandler', 'onBeforeCrmDealAddAndUpdate'], 10000);
-AddEventHandler('crm', 'OnBeforeCrmDealUpdate', ['Davletyarov\Core\Crm\Handler\DealHandler', 'onBeforeCrmDealAddAndUpdate'], 10000);
-{% endhighlight %}
+<script src="https://gist.github.com/davletyarov/16bc4e9b0c8b0645e42818ecbc81679f.js"></script>
 
 В самом хэндлере опишем так:
 
-{% highlight php %}
-<?php
-
-namespace Davletyarov\Core\Crm\Handler;
-
-class DealHandler
-{
-    public function onBeforeCrmDealAddAndUpdate(&$arFields)
-    {
-        // проверяем не случаи ли обновление стади сделки ч/з прогресс бар
-        if (!isset($_REQUEST['ACTION']) && 'SAVE_PROGRESS' != $_REQUEST['ACTION']) {
-            if (!$arFields['COMPANY_ID'] && !$arFields['CONTACT_BINDINGS']) {
-                // перебиваем штатный сообщение об ошибке
-                $arFields['RESULT_MESSAGE'] = 'Клиент для сделки обязателен!';
-                $GLOBALS['APPLICATION']->ThrowException('Клиент для сделки обязателен!');
-                return false;
-            }
-        }
-    }
-}
-{% endhighlight %}
+<script src="https://gist.github.com/davletyarov/085ea91a86361576b6a5f079cfdbce9e.js"></script>
 
 И все. Теперь без явного указания клиента, сделка в CRM не зафиксируется, а старые при редактирования придется дополнить.
 
