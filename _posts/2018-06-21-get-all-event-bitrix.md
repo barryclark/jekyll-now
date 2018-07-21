@@ -9,17 +9,7 @@ title: Получаем все появившийся события в Bitrix
 
 Добавить логирование перед вызовом конструктора предка.
 
-{% highlight php %}
-
-Debug::writeToFile([
-    'module' => $entity->getModule(),
-    'eventName' => $eventName,
-    'parameters' => $parameters
-]);
-
-parent::__construct($entity->getModule(), $eventName, $parameters);
-
-{% endhighlight %}
+<script src="https://gist.github.com/davletyarov/a8c4b86bc10c34f24640f80226284eee.js"></script>
 
 
 и в корне проекта появится лог **__bx_log.log** со всеми событиями.
