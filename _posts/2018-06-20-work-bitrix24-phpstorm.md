@@ -12,11 +12,7 @@ title: Способ работы с Bitrix24 КП в PHPStorm
 
 Получили нужный результат, комитем код в Git и пушим его.
 После через консоль SSH на сервере делаете так. Получаете изменения и сбрасываете все изменения которые мы сделали через SFTP, к последнему комиту в вашей ветке.
-
-{% highlight bash %}
-git fetch origin
-git reset --hard origin/{ваша ветка}
-{% endhighlight %}
+<script src="https://gist.github.com/davletyarov/2afa882db27a293bda0f0096ae555cb9.js"></script>
 
 И вот. Так идет работа с проектом.
 Конечно ядро bitrix у нас должно быть в exclude‘ах от индексации PHPStorm‘ом
@@ -25,19 +21,13 @@ git reset --hard origin/{ваша ветка}
 Для создания архива вот инструкция архиватору, кторая исключает все что не PHP код
 Например проект на сервере находится по пути **/home/bitrix/www** следовательно ядро, то есть модули находятся по **/home/bitrix/wwww/bitrix/modules**.
 Переходим в **/home/bitrix** и запускаем архиватор.
-
-{% highlight bash %}
-tar --exclude='*.zip' --exclude='*.jpg' --exclude='*.pdf' --exclude='*.doc' --exclude='*.exe' --exclude='*.swf' --exclude='*.swz' --exclude='*.rar' --exclude='*.docx' --exclude='*.xls' --exclude='*.log' --exclude='*.mp4' --exclude='*.xlsx' --exclude='*.gz' --exclude='*.gif' --exclude='*.7z' --exclude='*.pptx' --exclude='*.jpeg' --exclude='*.JPG' --exclude='*.png' --exclude='*.js' --exclude='*.css' --exclude='*.html' -cvzf core.tar www/bitrix/modules/
-{% endhighlight %}
+<script src="https://gist.github.com/davletyarov/d0f4635288ad72c9ab9dd6f52aad4c73.js"></script>
 
 Он создаст архив /home/bitrix/core.tar ~ 70 mb по весу.
 Далее его нужно скачать, например сюда /home/user/Desktop и распаковать.
 получим нечто /home/user/Desktop/www/bitrix/modules/*
 Вводите IP вашего сервера и скачиваете архив ядра.
-
-{% highlight bash %}
-scp root@999.999.999.999:/home/bitrix/core.tar /home/user/Desktop/
-{% endhighlight %}
+<script src="https://gist.github.com/davletyarov/19cfc205998f5e6e41b3ca5ea26adb0f.js"></script>
 
 Далее распаковали архив. Теперь нужно скормить их PHPStorm‘у чтобы он знал про модули и компоненты.
 
