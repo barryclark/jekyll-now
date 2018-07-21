@@ -10,33 +10,14 @@ title: Отладка в PHPStorm с XDebug из BitrixVM через HTTPS
 Например у **BitrixVM** оно же под **CentOS**
 в дериктории **/etc/php.d** имеется как минимум два файла для **XDebug**:
 
-{% highlight text %}
-15-xdebug.ini 
-15-xdebug.ini.disabled
-{% endhighlight %}
+<script src="https://gist.github.com/davletyarov/a97212aef1541f98557e80e1fa416e25.js"></script>
 
 для простоты добавьте эти настройки в **15-xdebug.ini**
-
-{% highlight ini %}
-zend_extension=xdebug.so
-xdebug.default_enable = 1
-xdebug.overload_var_dump = 1
-xdebug.show_exception_trace = 1
-xdebug.idekey = "PHPSTORM"
-xdebug.remote_autostart = 1
-xdebug.remote_enable = 1
-xdebug.remote_handler = dbgp
-xdebug.remote_connect_back = 1
-xdebug.remote_mode = req
-xdebug.remote_port = 9000
-{% endhighlight %}
+<script src="https://gist.github.com/davletyarov/2fb0fb9416c7b13eb81b32e048541362.js"></script>
 
 Тут определили параметры для **XDebug** чтобы он слушал порт **9000** на обратный адрес по запросу и ключ для идентификации IDE. Этого хватает для отладки. Отладчик всегда запущеный и слушает запросы.
 Нужно перезагрузить хотя бы Apache сервер. Чтобы наша новая конфигурация втупило в силу.
-
-{% highlight bash %}
-apachectl restart
-{% endhighlight %}
+<script src="https://gist.github.com/davletyarov/d175c1702dec21d499a53d72002e8968.js"></script>
 
 И так с XDebug закончилось настройки.
 
