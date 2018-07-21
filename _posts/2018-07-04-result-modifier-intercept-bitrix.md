@@ -18,36 +18,11 @@ Cоздаем у себя точь в точь директорию того ш�
 По поводу файла **template.php**, его сущ. **обязательно** иначе финт не сработает.
 Пропишите проверку ядра и все, хватит.
 
-{% highlight php %}
-<?php if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true) die();
-/**
- * @global CMain $APPLICATION
- * @var array    $arParams
- * @var array    $arResult
- */
-{% endhighlight %}
+<script src="https://gist.github.com/davletyarov/5e688a7d8ca4f68a8718e6326a1eff55.js"></script>
 
 Дальше, дело с **result_modifier.php** в ней обязательно эти строчки
 
-{% highlight php %}
-<?php if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true) die();
-/**
- * @global CMain $APPLICATION
- * @var array    $arParams
- * @var array    $arResult
- */
-
-// зеркально указываем оригинальное место нахождение директори шаблона, которую мы хотим расширить косвенно
-$this->__folder = '/bitrix/components/bitrix/crm.interface.filter/templates/flat'; 
-
-// указываем на сам шаблон
-$this->__file = '/bitrix/components/bitrix/crm.interface.filter/templates/flat/template.php';
-
-// эти строчки нужны чтобы сработали стили и скрипты
-$this->__hasCSS = true;
-$this->__hasJS = true;
-
-{% endhighlight %}
+<script src="https://gist.github.com/davletyarov/563d4a3d7eeb22929ba7447c85277c6a.js"></script>
 
 И все, теперь у нас в руках косвенное расширение компонента. Не трогая оригинал.
 Выкручиваемся так как можем, ребята. 
