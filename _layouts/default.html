@@ -83,113 +83,6 @@ $(function(){new Clipboard(".copyTextButton")});
   stroke: #06D6A0;
 }
   </style>
-<!-- Button Demo và Download -->
-<style>
-  #wrap {
-    margin: 20px auto;
-    text-align: center;
-}
-
-#wrap br {
-    display: none;
-}
-
-.btn-slide, .btn-slide2 {
-    position: relative;
-    display: inline-block;
-    height: 50px;
-    width: 200px;
-    line-height: 50px;
-    padding: 0;
-    border-radius: 50px;
-    background: #fdfdfd;
-    border: 2px solid #0099cc;
-    margin: 10px;
-    transition: .5s;
-}
-
-.btn-slide2 {
-    border: 2px solid #efa666;
-}
-
-.btn-slide:hover {
-    background-color: #0099cc;
-}
-
-.btn-slide2:hover {
-    background-color: #efa666;
-}
-
-.btn-slide:hover span.circle, .btn-slide2:hover span.circle2 {
-    left: 100%;
-    margin-left: -45px;
-    background-color: #fdfdfd;
-    color: #0099cc;
-}
-
-.btn-slide2:hover span.circle2 {
-    color: #efa666;
-}
-
-.btn-slide:hover span.title, .btn-slide2:hover span.title2 {
-    left: 40px;
-    opacity: 0;
-}
-
-.btn-slide:hover span.title-hover, .btn-slide2:hover span.title-hover2 {
-    opacity: 1;
-    left: 40px;
-}
-
-.btn-slide span.circle, .btn-slide2 span.circle2 {
-    display: block;
-    background-color: #0099cc;
-    color: #fff;
-    position: absolute;
-    float: left;
-    margin: 5px;
-    line-height: 42px;
-    height: 40px;
-    width: 40px;
-    top: 0;
-    left: 0;
-    transition: .5s;
-    border-radius: 50%;
-}
-
-.btn-slide2 span.circle2 {
-    background-color: #efa666;
-}
-
-.btn-slide span.title,
-  .btn-slide span.title-hover, .btn-slide2 span.title2,
-  .btn-slide2 span.title-hover2 {
-    position: absolute;
-    left: 90px;
-    text-align: center;
-    margin: 0 auto;
-    font-size: 16px;
-    font-weight: bold;
-    color: #30abd5;
-    transition: .5s;
-}
-
-.btn-slide2 span.title2,
-  .btn-slide2 span.title-hover2 {
-    color: #efa666;
-    left: 80px;
-}
-
-.btn-slide span.title-hover, .btn-slide2 span.title-hover2 {
-    left: 80px;
-    opacity: 0;
-}
-
-.btn-slide span.title-hover, .btn-slide2 span.title-hover2 {
-    color: #fff;
-}
-</style>
-<!-- "End" Button Demo và Download -->
   <style>
     .left-slide {display:inline-block; position:relative; color:#000000}
 .left-slide:after {content:''; display:block; position:absolute; left:0; bottom:0; height:3px; width:0; background:transparent; transition:width .5s ease, background-color .5s ease}
@@ -525,4 +418,106 @@ window.addEventListener('scroll', function(e) {
     
     {% include analytics.html %}
   </body>
-</html>
+</html><!DOCTYPE html>
+<html>
+  <head>
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+
+    {% include meta.html %}
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+    
+    <script type='text/javascript'>
+//<![CDATA[
+// JavaScript Document
+var message="NoRightClicking"; function defeatIE() {if (document.all) {(message);return false;}} function defeatNS(e) {if (document.layers||(document.getElementById&&!document.all)) { if (e.which==2||e.which==3) {(message);return false;}}} if (document.layers) {document.captureEvents(Event.MOUSEDOWN);document.onmousedown=defeatNS;} else{document.onmouseup=defeatNS;document.oncontextmenu=defeatIE;} document.oncontextmenu=new Function("return false")
+//]]>
+</script>
+    
+  <link href='//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'/>
+  
+  <script src='//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js' type='text/javascript'/>
+  <script src='//cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js' type='text/javascript'/>
+<script type='text/javascript'>
+//<![CDATA[
+$(function(){new Clipboard(".copyTextButton")});
+//]]></script>
+  
+  <meta name="google-site-verification" content="ki_YurEB8dAr4nrolLctklX_-5X5ynlmvFRCZZ2_4Pc" />
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  </head>
+  
+  <style>
+    #personal {
+  color:white;
+  text-decoration:none;
+  position:absolute;
+  bottom:15px;
+  right:2%;
+}
+.spot {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.svg-wrapper {
+  margin-top: 0;
+  position: relative;
+  width: 150px;
+  height: 40px;
+  display: inline-block;
+  border-radius: 3px;
+  margin-left: 5px;
+  margin-right: 5px
+}
+#shape {
+  stroke-width: 6px;
+  fill: transparent;
+  stroke: #009FFD;
+  stroke-dasharray: 85 400;
+  stroke-dashoffset: -220;
+  transition: 1s all ease;
+}
+#text {
+  margin-top: -35px;
+  text-align: center;
+}
+#text a {
+  color: #000080;
+  text-decoration: none;
+  font-weight: 100;
+  font-size: 1.1em;
+}
+.svg-wrapper:hover #shape {
+  stroke-dasharray: 50 0;
+  stroke-width: 3px;
+  stroke-dashoffset: 0;
+  stroke: #06D6A0;
+}
+  </style>
+  <style>
+    .left-slide {display:inline-block; position:relative; color:#000000}
+.left-slide:after {content:''; display:block; position:absolute; left:0; bottom:0; height:3px; width:0; background:transparent; transition:width .5s ease, background-color .5s ease}
+.left-slide:hover:after {width:100%; background:#191970}
+.right-slide {display:inline-block; position:relative; color:#000000}
+.right-slide:after {content:''; display:block; position:absolute; right:0; bottom:0; height:3px; width:0; background:transparent; transition:width .5s ease, background-color .5s ease}
+.right-slide:hover:after {width:100%; background:#FF0000}
+  </style>
+  <style>
+    .post-body a::before {content:attr(href); float:none; clear:both; text-transform:none; padding:12px 5%; background:#069; color:#fff; font-family:monospace; font-size:14px; position:fixed; opacity:0; left:0; top:0; visibility:hidden; transform:scaleY(0); text-overflow:ellipsis; overflow:hidden; text-align:center; width:100%; transition:.2s ease-in-out; z-index:99999; margin: 0 auto}
+.post-body a:hover::before {opacity:1; visibility:visible; transform:scaleY(1)}
+  </style>
+  <style>
+    button{background:#55579e;border:none;position:relative;transition:800ms ease all;outline:none;font:500 16px "Roboto",sans-serif;text-transform:uppercase}
+button a{color:#fff!important;padding:.5em 3em;display:block}
+button:hover a{color:#55579e!important;text-decoration:none!important}
+button:hover{background:transparent}
+button:before,button:after{content:'';position:absolute;top:0;right:0;height:2px;
