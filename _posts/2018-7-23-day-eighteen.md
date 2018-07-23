@@ -4,3 +4,5 @@ As far as Full-Width Half-Maximums go, I talked to Dr. G and learned what was im
 
 ## DOLPHOT
 I spent some time this morning reading through my colleagues blogs, and now I'm using Rory's [annotations](https://ewolyror.github.io/W4D3/) on the user manual to help me install DOLPHOT. Talking to Rory, this process actually just prepares the directories that DOLPHOT require for installation. Then, you would install DOLPHOT, but because DOLPHOT is written in C, Rory advises that this isn't worth installing the C version I should focus on PYDOLPHOT (a python wrapper for DOLPHOT) working. 
+
+The first step to installing DOLPHOT is to compile it using the GNU `make` command in the command line. It took me a second to figure it out, but I eventually was able to point the command to the proper makefile in dolphot2.0, the folder I got when I first downloaded DOLPHOT. 
