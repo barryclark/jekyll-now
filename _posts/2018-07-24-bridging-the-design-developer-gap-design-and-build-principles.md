@@ -24,9 +24,9 @@ We ran two quite large sessions with representatives from the whole product and 
 
 The rest of the senior team and I crafted some initial principles wording from the themes and in the second session we all discussed and edited these to a point. We then defined the final wording. We know a few of these are well established phrases in the industry, but having them in the format below allows us to reference them in our everyday work.
 
-> We fail fast & learn quick
-> We keep it simple and iterate
-> We own & deliver experiences to be proud of
+* We fail fast & learn quick
+* We keep it simple and iterate
+* We own & deliver experiences to be proud of
 
 We wanted to keep the principles digestible and not have lots to remember.
 
