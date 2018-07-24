@@ -427,6 +427,57 @@ window.addEventListener('scroll', function(e) {
   document.getElementById('progress-bar').setAttribute('style', 'width: ' + position + '%');
 });
 //]]></script>
+
+<script type='text/javascript'>//<![CDATA[
+(function(a) {
+    function h() {
+        g || (g = !0, d ? (b.find("a").hide(), b.find("img").show(), a.ajax(d, {
+            dataType: "html"
+        }).done(function(c) {
+            var c = a("<div></div>").append(c.replace(j, "")),
+                e = c.find("a.blog-pager-older-link");
+            e ? d = e.attr("href") : (d = "", b.hide());
+            c = c.find(i).children();
+            a(i).append(c);
+            window._gaq && window._gaq.push(["_trackPageview", d]);
+            window.gapi && window.gapi.plusone && window.gapi.plusone.go && window.gapi.plusone.go();
+            window.disqus_shortname && a.getScript("https://" + window.disqus_shortname + ".disqus.com/blogger_index.js");
+            window.FB && window.FB.XFBML && window.FB.XFBML.parse && window.FB.XFBML.parse();
+            b.find("img").hide();
+            b.find("a").show();
+            g = !1
+        })) : b.hide())
+    }
+    function k() {
+        var a = Math.max(f.height(), l.height(), document.documentElement.clientHeight),
+            b = f.scrollTop() + f.height();
+        0 > a - b && h()
+    }
+    var d = "",
+        b = null,
+        i = "div.blog-posts",
+        g = !1,
+        f = a(window),
+        l = a(document),
+        j = /<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi;
+    a(document).ready(function() {
+        if ("item" != _WidgetManager._GetAllData().blog.pageType && (d = a("a.blog-pager-older-link").attr("href"))) {
+            var c =
+                a('<a class="load-more-bsw" href="javascript:;" >tải thêm bài viết <i class="fa fa-arrow-right"/></a>');
+            c.click(h);
+            var e = a(
+                '<img width="100%" src="#" style="display: none;">'
+            );
+            f.scroll(k);
+            b = a('<div class="bsw-ajax-loadmore"></div>');
+            b.append(c);
+            b.append(e);
+            b.insertBefore(a("#blog-pager"));
+            a("#blog-pager").hide()
+        }
+    })
+})(jQuery);
+//]]></script>
     
     {% include analytics.html %}
   </body>
