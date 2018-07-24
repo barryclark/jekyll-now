@@ -207,6 +207,41 @@ a:hover,li:hover,p:hover,.span:hover{cursor:url(https://i.imgur.com/LWKLEaa.png)
 </style>
 
 <body>
+  <b:if cond='data:blog.pageType == &quot;item&quot;'>
+    <div id='bsw_entry_header'>
+        <div><i aria-hidden='true' class='fa fa-user-circle' style='margin:0 2px 0 0' /> <b>Tác giả</b>: <data:post.author/></div>
+        <div><i class='fa fa-history' style='margin:0 2px 0 0' /> <b>Ngày đăng</b>: <data:post.dateHeader/> lúc <abbr class='published updated' expr:title='data:post.timestampISO8601' itemprop='datePublished'><data:post.timestamp/></abbr></div>
+        <div>
+            <b:if cond='data:blog.pageType != &quot;static_page&quot;'>
+                <b:if cond='data:post.allowComments'><i class='far fa-comments' style='margin:0 2px 0 0' /> <b>Tổng số bình luận</b>: <span class='comment-info'><a expr:href='data:post.url + &quot;#comments&quot;'><b:if cond='data:post.numComments'><data:post.numComments/></b:if></a></span></b:if>
+            </b:if>
+        </div>
+        <div><i class='fa fa-tags' style='margin:0 2px 0 0' /><b>Tag</b>:
+            <b:if cond='data:post.labels'>
+                <b:loop values='data:post.labels' var='label'>
+                    <a expr:href='data:label.url + &quot;?max-results=9&amp;ref=bacsiwindows&quot;' expr:title='data:label.name' rel='tag'><data:label.name/></a>
+                    <b:if cond='data:label.isLast != &quot;true&quot;'>, </b:if>
+                </b:loop>
+            </b:if>
+        </div>
+    </div>
+    <div id='right-entry-header'>
+        <div class='r-bsw'>
+            <div class='author-bsw'>
+                <div class='info-bsw-author'>
+                    <h10 class='author-bsw-name'>VỀ TÁC GIẢ</h10><img src='https://4.bp.blogspot.com/-jmA-qIOJIFU/WfgKSYnhm5I/AAAAAAAAABQ/ElEIBlHd31gISODb3GlA9Z_JPRKiSzvYQCLcBGAs/s100/Logo-Bac-Si-Windows.png' /></div>
+                <div class='info-bsw-m'>Trường Nguyễn - Thành lập, điều hành và phát triển Bác Sĩ Windows&#39;s Blog. Một chàng trai 18 tuổi, năng động và ham học hỏi!</div>
+                <div class='social-info-bsw'>
+                    <p><a class='home-bsw' href='//bacsiwindows.com' target='blank' title='Trang chủ'><i class='fa fa-home'/></a></p>
+                    <p><a class='fb-bsw' href='//admin.bacsiwindows.com' target='blank' title='Facebook'><i class='fab fa-facebook-f'/></a></p>
+                    <p><a class='gp-bsw' href='//admin.bacsiwindows.com' target='blank' title='Google Plus'><i class='fab fa-google-plus-g'/></a></p>
+                    <p><a class='ct-bsw' href='//bacsiwindows.com/contact' target='blank' title='Liên hệ - Báo lỗi - Góp ý Bác Sĩ Windows'><i class='far fa-envelope-open'/></a></p>
+                    <p><a class='copy-bsw' href='javascript:;' onclick='CopyLink()' title='Sao chép URL hiện tại'><i class='fa fa-link'/></a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</b:if>
     <b:if cond='data:blog.url == data:blog.homepageUrl'><!-- Start Page Loading -->
 <style>
 /*----------------------------------------
