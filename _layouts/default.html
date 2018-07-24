@@ -122,6 +122,12 @@ to{-webkit-transform:scale3d(0.069,0.069,0.069);transform:scale3d(0.069,0.069,0.
 .animation-pulse {-webkit-animation-name:pulse; animation-name:pulse}
 </style>
 <!-- End code -->
+<!-- Hiển thị đường dẫn link -->
+<style>
+  .post-body a::before {content:attr(href); float:none; clear:both; text-transform:none; padding:12px 5%; background:#069; color:#fff; font-family:monospace; font-size:14px; position:fixed; opacity:0; left:0; top:0; visibility:hidden; transform:scaleY(0); text-overflow:ellipsis; overflow:hidden; text-align:center; width:100%; transition:.2s ease-in-out; z-index:99999; margin: 0 auto}
+.post-body a:hover::before {opacity:1; visibility:visible; transform:scaleY(1)}
+</style>
+<!-- End code -->
 <style>
   .change-color {font-size:20px; font-weight:700; animation:myfirst 15s; -webkit-animation:myfirst 15s; animation-iteration-count:infinite; -webkit-animation-iteration-count:infinite}
 @keyframes myfirst {
