@@ -7,8 +7,8 @@ permalink: /testing/
   <p>404</p>
   <div class="scroller">
    <div class="inner">
-      <span>Page.</span>
-      <span>not.</span>
+      <span>Page</span>
+      <span>not</span>
       <span>found.</span>
     </div>
   </div>
