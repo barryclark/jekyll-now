@@ -8,6 +8,9 @@ excerpt_separator: <!--more-->
 
 Not long after I joined CarFinance 247 at the start of 2018 I was going through my plans on how we build a design team from scratch with Technology Director [Jon Wilson](/authors/jonathan_wilson/), talking about what kind of people we need, what skill sets are needed, level of experience etc. We got on to ways of working and ensuring the quality of what goes out the door. Jon told me he'd been having a similar conversation with our Head of Engineering [Andy Kuszyk](/authors/andy_kuszyk/) from an engineering perspective.
 
+![CarFinance 247 Design and Build Principles](/images/design-build-principle.jpg)
+<!--more-->
+
 I'm sure a number of you have heard of, if not come up with, design principles before. Over the years I've worked in a few medium to large companies. I am not talking IBM and I'm not talking about that oh too perfect Airbnb with their oh too perfect way of doing everything.
 
 Design principles are great when you have a large enough number of designers you need to start sharing a preferred consistent way of designing products.
