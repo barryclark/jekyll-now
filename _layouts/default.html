@@ -128,6 +128,37 @@ to{-webkit-transform:scale3d(0.069,0.069,0.069);transform:scale3d(0.069,0.069,0.
 .post-body a:hover::before {opacity:1; visibility:visible; transform:scaleY(1)}
 </style>
 <!-- End code -->
+<!-- Hiển thị đường dẫn link -->
+<style>
+  .post-body a::before {
+ content: attr(href);
+ float: none;
+ clear: both;
+ font-size: 22px;
+ font-family: "Roboto", sans-serif;
+ font-weight: 300;
+ text-transform: none;
+ padding: 15px 0;
+ background: #fff;
+ color: #55579e;
+ border-radius: 0;
+ position: fixed;
+ opacity: 0;
+ left: 0;
+ top: 0;
+ visibility: hidden;
+ transform: scaleY(0);
+ text-overflow: ellipsis;
+ overflow: hidden;
+ white-space: nowrap;
+ text-align: center;
+ width: 100%;
+ transition: .3s ease-in-out;
+ z-index: 999;
+ margin: 0 auto;
+}
+</style>
+<!-- End code -->
 <style>
   .change-color {font-size:20px; font-weight:700; animation:myfirst 15s; -webkit-animation:myfirst 15s; animation-iteration-count:infinite; -webkit-animation-iteration-count:infinite}
 @keyframes myfirst {
