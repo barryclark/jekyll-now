@@ -7,18 +7,18 @@ author_profile: true
 ---
 
 
-I am a 5th year PhD student at the Department of Biostatistics, Yale University. My research concentration is designing and developing statistical and machine learning tools for analysis of genomic datasets. I am interested in learning more about state-of-the-art Learning methods, and applying them to solve real world problems.
+I am a final year Undergraduate student at the NIIT University, Computer Science Department. My research experience lies in designing and developing algorithms to apply machine learning, specifically self organizing maps. Other experiences include classification of Himalayan hyperspectral imagery and designing channel assignment algorithms in cognitive radio networks. Being an undergraduate researcher allowed me to experience a few different domains. 
 
-这是曾立的个人主页。   
-2013年起我到康州New Haven村就读 Yale 生物统计 PhD，主要研究方向是分析基因数据的统计学习和机器学习方法。对Statistical Learning的理论，实现及应用有浓厚兴趣。       
-热爱运动，在篮球，羽毛球，网球都展现出天赋。喜欢观看足球，但尝试不多。唯一坚持下来的运动是排球，以防守见长，在 Yale 打球曾引得对手惊呼 "He is everywhere!"
+Currently, I am a North Yard Analytics Fellow, a soccer analytics enthusiast and have posted several articles on Medium regarding the same. I am highly interested in Data Analytics, Machine Learning, Soccer Analytics and look forward to continue to solve real world problems in those domains.
 
 
 ### Education:
-- **Yale University** (2013 - 2018)   
-  Ph.D of Biostatistics
-- **Peking University** (2009 - 2013)   
-  Bachelor of Mathematics
+- **IIT Patna** (2018)   
+  Research Intern, AI-ML-NLP Lab
+- **NIIT University** (2015 - 2019)   
+  Bachelors of Technology, Computer Science
+- **St. Mary's School** (2003 - 2015)   
+  12th Graduate, Science
 
 
 ### Softwares:

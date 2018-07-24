@@ -14,6 +14,7 @@ description              : "Powered by Jekyll and minimal-mistakes theme"
 url                      : #"https://zengliX.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "abhinavralhan/abhinavralhan.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+skin                     : "aqua"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
@@ -70,15 +71,15 @@ social:
 
 # Analytics
 analytics:
-  provider               : "google" # false (default), "google", "google-universal", "custom"
+  provider               : "false" # false (default), "google", "google-universal", "custom"
   google:
-    tracking_id          : "UA-91561805-1"
+    tracking_id          : ""
 
 
 # Site Author
 author:
   name             : "Abhinav Ralhan"
-  avatar           : "/others/profile.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/others/profile.png" #profile1.png # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Undergraduate, CSE at NIIT University"
   location         : "New Delhi, India"
   email            : "abhinav.ralhan1@gmail.com"
@@ -94,13 +95,13 @@ author:
   keybase          :
   instagram        :
   lastfm           :
-  linkedin         : ""
+  linkedin         : "https://www.linkedin.com/in/abhinav-ralhan-856920105/" #"https://www.linkedin.com/in/aishwariyagupta/"
   pinterest        :
   soundcloud       :
   stackoverflow    : # "" 
   steam            :
   tumblr           :
-  twitter          :
+  twitter          : "abhinavr8" #"aishwariya"
   vine             :
   weibo            :
   xing             :
