@@ -671,6 +671,31 @@ window.addEventListener('scroll', function(e) {
     })
 })(jQuery);
 //]]></script>
+  
+  <div id="success-box">
+<div class="dot"></div>
+<div class="dot two"></div>
+<div class="face">
+<div class="eye"></div>
+<div class="eye right"></div>
+<div class="mouth happy"></div>
+</div>
+<div class="shadow scale"></div>
+<div class="message"><h1 class="alert">Quốc Thắng</h1><p>Blog đang edit dần dần, nếu xảy ra lỗi xin vui lòng liên hệ tôi qua những liên kết trên Blog.</p></div>
+<button class="button-box"><h1 class="green">Ok</h1></button>
+</div>
+<script type='text/javascript'>
+//<![CDATA[
+$(function(){
+$('#show-noti').click(function() {
+$('#success-box').show(500);
+});
+$('.button-box').click(function(){
+$('#success-box').hide(500);
+});
+});
+//]]>
+</script>
     
     {% include analytics.html %}
   </body>
