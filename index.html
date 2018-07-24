@@ -1,37 +1,523 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 
-<div  class="posts">
-  {% for post in site.posts %}
-    <article class="post">
+    {% include meta.html %}
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+    
+    <script type='text/javascript'>
+//<![CDATA[
+// JavaScript Document
+var message="NoRightClicking"; function defeatIE() {if (document.all) {(message);return false;}} function defeatNS(e) {if (document.layers||(document.getElementById&&!document.all)) { if (e.which==2||e.which==3) {(message);return false;}}} if (document.layers) {document.captureEvents(Event.MOUSEDOWN);document.onmousedown=defeatNS;} else{document.onmouseup=defeatNS;document.oncontextmenu=defeatIE;} document.oncontextmenu=new Function("return false")
+//]]>
+</script>
+    
+  <link href='//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'/>
+  
+  <script src='//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js' type='text/javascript'/>
+  <script src='//cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js' type='text/javascript'/>
+<script type='text/javascript'>
+//<![CDATA[
+$(function(){new Clipboard(".copyTextButton")});
+//]]></script>
+  
+  <meta name="google-site-verification" content="ki_YurEB8dAr4nrolLctklX_-5X5ynlmvFRCZZ2_4Pc" />
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">ĐỌC THÊM</a>
-    </article>
-  {% endfor %}
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  </head>
+  
+  <style>
+    #personal {
+  color:white;
+  text-decoration:none;
+  position:absolute;
+  bottom:15px;
+  right:2%;
+}
+.spot {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.svg-wrapper {
+  margin-top: 0;
+  position: relative;
+  width: 150px;
+  height: 40px;
+  display: inline-block;
+  border-radius: 3px;
+  margin-left: 5px;
+  margin-right: 5px
+}
+#shape {
+  stroke-width: 6px;
+  fill: transparent;
+  stroke: #009FFD;
+  stroke-dasharray: 85 400;
+  stroke-dashoffset: -220;
+  transition: 1s all ease;
+}
+#text {
+  margin-top: -35px;
+  text-align: center;
+}
+#text a {
+  color: #000080;
+  text-decoration: none;
+  font-weight: 100;
+  font-size: 1.1em;
+}
+.svg-wrapper:hover #shape {
+  stroke-dasharray: 50 0;
+  stroke-width: 3px;
+  stroke-dashoffset: 0;
+  stroke: #06D6A0;
+}
+  </style>
+  <style>
+    .left-slide {display:inline-block; position:relative; color:#000000}
+.left-slide:after {content:''; display:block; position:absolute; left:0; bottom:0; height:3px; width:0; background:transparent; transition:width .5s ease, background-color .5s ease}
+.left-slide:hover:after {width:100%; background:#191970}
+.right-slide {display:inline-block; position:relative; color:#000000}
+.right-slide:after {content:''; display:block; position:absolute; right:0; bottom:0; height:3px; width:0; background:transparent; transition:width .5s ease, background-color .5s ease}
+.right-slide:hover:after {width:100%; background:#FF0000}
+  </style>
+  <style>
+    .post-body a::before {content:attr(href); float:none; clear:both; text-transform:none; padding:12px 5%; background:#069; color:#fff; font-family:monospace; font-size:14px; position:fixed; opacity:0; left:0; top:0; visibility:hidden; transform:scaleY(0); text-overflow:ellipsis; overflow:hidden; text-align:center; width:100%; transition:.2s ease-in-out; z-index:99999; margin: 0 auto}
+.post-body a:hover::before {opacity:1; visibility:visible; transform:scaleY(1)}
+  </style>
+  <style>
+    button{background:#55579e;border:none;position:relative;transition:800ms ease all;outline:none;font:500 16px "Roboto",sans-serif;text-transform:uppercase}
+button a{color:#fff!important;padding:.5em 3em;display:block}
+button:hover a{color:#55579e!important;text-decoration:none!important}
+button:hover{background:transparent}
+button:before,button:after{content:'';position:absolute;top:0;right:0;height:2px;width:0;background:#55579e;transition:900ms ease all}
+button:after{right:inherit;top:inherit;left:0;bottom:0}
+button:hover:before,button:hover:after{width:100%;transition:800ms ease all}
+  </style>
+<style>
+  .codeToClipboardHeader{background-color:#fff;border:1px solid #e0e0e0;border-bottom:0;text-align:left;padding:3px}
+.copyTextButton{color:#000!important;font-size:18px;padding:4px 10px;border-right:1px solid #e0e0e0;text-decoration:none}
+.copyTextButton:before{margin:0 5px 0 0;font-size:16px;content:'\f0c5';font-family:fontawesome}
+pre.codeToClipboard{background:#fff;max-height:500px;font-size:14px;color:#000;overflow:auto;border:1px solid #d3d6db;margin:auto;padding:10px 8px}
+</style>
+<style>
+  .change-color {font-size:20px; font-weight:700; animation:myfirst 15s; -webkit-animation:myfirst 15s; animation-iteration-count:infinite; -webkit-animation-iteration-count:infinite}
+@keyframes myfirst {
+0% {color:hsl(5,96%,69%)}
+5% {color:hsl(25,96%,69%)}
+10% {color:hsl(45,96%,69%)}
+15% {color:hsl(65,96%,69%)}
+20% {color:hsl(85,96%,69%)}
+25% {color:hsl(105,96%,69%)}
+30% {color:hsl(125,96%,69%)}
+35% {color:hsl(145,96%,69%)}
+40% {color:hsl(165,96%,69%)}
+45% {color:hsl(185,96%,69%)}
+50% {color:hsl(205,96%,69%)}
+55% {color:hsl(225,96%,69%)}
+60% {color:hsl(245,96%,69%)}
+65% {color:hsl(265,96%,69%)}
+70% {color:hsl(285,96%,69%)}
+75% {color:hsl(305,96%,69%)}
+80% {color:hsl(325,96%,69%)}
+85% {color:hsl(345,96%,69%)}
+90% {color:hsl(365,96%,69%)}
+95% {color:hsl(385,96%,69%)}
+100% {color:hsl(405,96%,69%)}
+}
+@-webkit-keyframes myfirst {
+0% {color:hsl(5,96%,69%)}
+5% {color:hsl(25,96%,69%)}
+10% {color:hsl(45,96%,69%)}
+15% {color:hsl(65,96%,69%)}
+20% {color:hsl(85,96%,69%)}
+25% {color:hsl(105,96%,69%)}
+30% {color:hsl(125,96%,69%)}
+35% {color:hsl(145,96%,69%)}
+40% {color:hsl(165,96%,69%)}
+45% {color:hsl(185,96%,69%)}
+50% {color:hsl(205,96%,69%)}
+55% {color:hsl(225,96%,69%)}
+60% {color:hsl(245,96%,69%)}
+65% {color:hsl(265,96%,69%)}
+70% {color:hsl(285,96%,69%)}
+75% {color:hsl(305,96%,69%)}
+80% {color:hsl(325,96%,69%)}
+85% {color:hsl(345,96%,69%)}
+90% {color:hsl(365,96%,69%)}
+95% {color:hsl(385,96%,69%)}
+100% {color:hsl(405,96%,69%)}
+}
+</style>
+<style> 
+/* CSS Progress */
+#reading-progress{position:fixed;/*top:0px;*/width:100%;height:3px;margin:0px;left:0px;z-index:9999999999999;}
+.bar{height:3px;background:#0088ff;box-shadow:0 0 10px rgba(0,136,255,0.7);position:fixed;z-index:9999999999999}
+</style>
+<style>
+  .comments .comments-content .icon.blog-author:before{content:"\f00c";font-family:fontawesome;background:#5890ff;border:2px solid #fff;position:relative;top:5px;right:6px;margin:0;display:block;color:#fff;border-radius:50%;margin-left:3px;font-size:10px;font-weight:500!important;height:18px;line-height:19px;overflow:hidden;text-align:center;width:18px;}
+</style>
+<style>
+  tml,body{cursor:url(https://i.imgur.com/gokYuDn.png),auto}
+a:hover,li:hover,p:hover,.span:hover{cursor:url(https://i.imgur.com/LWKLEaa.png),auto}
+</style>
+
+<body>
+    <b:if cond='data:blog.url == data:blog.homepageUrl'><!-- Start Page Loading -->
+<style>
+/*----------------------------------------
+    Pre-loader
+------------------------------------------*/
+#loader-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+}
+
+#loader-wrapper .loader-section {
+  position: fixed;
+  top: 0;
+  width: 51%;
+  height: 100%;
+  background: #eceff1;
+  z-index: 1000;
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
+}
+
+#loader-wrapper .loader-section.section-left {
+  left: 0;
+}
+
+#loader-wrapper .loader-section.section-right {
+  right: 0;
+}
+
+#loader {
+  display: block;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #3498db;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+  z-index: 1001;
+}
+
+#loader:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #e74c3c;
+  -webkit-animation: spin 3s linear infinite;
+  animation: spin 3s linear infinite;
+}
+
+#loader:after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #f9c922;
+  -webkit-animation: spin 1.5s linear infinite;
+  animation: spin 1.5s linear infinite;
+}
+
+#loader-logo {
+  display: block;
+  position: absolute;
+  left: 48%;
+  top: 46%;
+  background: url("https://i.imgur.com/Nj02xhh.png") no-repeat center center;
+  z-index: 1001;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.loaded #loader-wrapper {
+  visibility: hidden;
+  -webkit-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  transform: translateY(-100%);
+  -webkit-transition: all 0.3s 1s ease-out;
+  transition: all 0.3s 1s ease-out;
+}
+
+.loaded #loader-wrapper .loader-section.section-left {
+  -webkit-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  transform: translateX(-100%);
+  -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.loaded #loader-wrapper .loader-section.section-right {
+  -webkit-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  transform: translateX(100%);
+  -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.loaded #loader {
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.progress {
+  background-color: rgba(255, 64, 129, 0.22);
+}
+
+/* JavaScript Turned Off */
+.no-js #loader-wrapper {
+  display: none;
+}
+
+</style>
+<div id='loader-wrapper'>
+<div id='loader'></div>
+<div class='loader-section section-left'></div>
+<div class='loader-section section-right'></div>
 </div>
-        </div>
-        </main>
-        <footer id="footer " class="footer ">
-            <div class="footer-image "></div>
-            <div class="footer-inner ">
-                <p>Blog has sprouted
-                    <span id="since ">21-6-2017</span>
-                    <span class="my-face ">(●'◡'●)ﾉ♥</span>
-                </p>
-                <p>Hosted on
-                    <a href="https://github.com/ " target="_blank " rel="nofollow "> GitHub</a>.
-                    <a href="https://www.cloudflare.com/ " target="_blank " rel="nofollow ">CloudFlare </a>Provide DNS resolution service
-                <p>©
-                    <span itemprop="copyrightYear ">2018</span> Hi, I'm Thang | Theme By
-                    <a href="https://github.com/barryclark" target="_blank " class="external "
-                        rel="nofollow ">Jekyll</a> v1.2.0.
-                    <a href="../sitemap.xml " target="_blank ">SiteMap</a></p>
-                <p><span class="left-slide">Made with by Tran Van Quoc Thang ❤ </span></p>
+<script type='text/javascript'>
+//<![CDATA[
+  /*Preloader*/
+  $(window).on('load', function() {
+    setTimeout(function() {
+      $('body').addClass('loaded');
+    }, 200);
+  });
+
+  $(function() {
+
+    "use strict";
+
+    var window_width = $(window).width();
+    var openIndex;
+    // Detect touch screen and enable scrollbar if necessary
+    function is_touch_device() {
+      try {
+        document.createEvent("TouchEvent");
+        return true;
+      } catch (e) {
+        return false;
+      }
+    }
+  });
+//]]>
+</script>
+<!-- End Page Loading --></b:if>
+
+<!-- Read Loading -->
+<b:if cond='data:blog.pageType == &quot;item&quot;'>
+<div id='reading-progress'>
+  <span class='bar' id='progress-bar'/>
+</div>
+</b:if>
+
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
+
+          <div class="site-info">
+            <h7 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h7>
+            <p class="site-description">{{ site.description }}</p>
           </div>
+
+          <nav>
+            <a href="{{ site.baseurl }}/">Blog</a>
+            <a href="{{ site.baseurl }}/testing">Test</a>
+             <a href="{{ site.baseurl }}/about">About</a>
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      {{ content }}
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          {% include svg-icons.html %}
+        </footer>
+      </div>
+    </div>
+        
+    <script type='text/javascript'>
+$('body').on('contextmenu', 'img', function(e){ return false; });
+</script>
+
+<!-- Reading -->
+<script>//<![CDATA[
+window.addEventListener('scroll', function(e) {
+  var s = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
+  var body = document.body;
+  var html = document.documentElement;
+  var d = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
+  var c = window.innerHeight;
+  var position = (s / (d - c)) * 100;
+  document.getElementById('progress-bar').setAttribute('style', 'width: ' + position + '%');
+});
+//]]></script>
+    
+    {% include analytics.html %}
+  </body>
+</html><!DOCTYPE html>
+<html>
+  <head>
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+
+    {% include meta.html %}
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+    
+    <script type='text/javascript'>
+//<![CDATA[
+// JavaScript Document
+var message="NoRightClicking"; function defeatIE() {if (document.all) {(message);return false;}} function defeatNS(e) {if (document.layers||(document.getElementById&&!document.all)) { if (e.which==2||e.which==3) {(message);return false;}}} if (document.layers) {document.captureEvents(Event.MOUSEDOWN);document.onmousedown=defeatNS;} else{document.onmouseup=defeatNS;document.oncontextmenu=defeatIE;} document.oncontextmenu=new Function("return false")
+//]]>
+</script>
+    
+  <link href='//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'/>
+  
+  <script src='//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js' type='text/javascript'/>
+  <script src='//cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js' type='text/javascript'/>
+<script type='text/javascript'>
+//<![CDATA[
+$(function(){new Clipboard(".copyTextButton")});
+//]]></script>
+  
+  <meta name="google-site-verification" content="ki_YurEB8dAr4nrolLctklX_-5X5ynlmvFRCZZ2_4Pc" />
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  </head>
+  
+  <style>
+    #personal {
+  color:white;
+  text-decoration:none;
+  position:absolute;
+  bottom:15px;
+  right:2%;
+}
+.spot {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.svg-wrapper {
+  margin-top: 0;
+  position: relative;
+  width: 150px;
+  height: 40px;
+  display: inline-block;
+  border-radius: 3px;
+  margin-left: 5px;
+  margin-right: 5px
+}
+#shape {
+  stroke-width: 6px;
+  fill: transparent;
+  stroke: #009FFD;
+  stroke-dasharray: 85 400;
+  stroke-dashoffset: -220;
+  transition: 1s all ease;
+}
+#text {
+  margin-top: -35px;
+  text-align: center;
+}
+#text a {
+  color: #000080;
+  text-decoration: none;
+  font-weight: 100;
+  font-size: 1.1em;
+}
+.svg-wrapper:hover #shape {
+  stroke-dasharray: 50 0;
+  stroke-width: 3px;
+  stroke-dashoffset: 0;
+  stroke: #06D6A0;
+}
+  </style>
+  <style>
+    .left-slide {display:inline-block; position:relative; color:#000000}
+.left-slide:after {content:''; display:block; position:absolute; left:0; bottom:0; height:3px; width:0; background:transparent; transition:width .5s ease, background-color .5s ease}
+.left-slide:hover:after {width:100%; background:#191970}
+.right-slide {display:inline-block; position:relative; color:#000000}
+.right-slide:after {content:''; display:block; position:absolute; right:0; bottom:0; height:3px; width:0; background:transparent; transition:width .5s ease, background-color .5s ease}
+.right-slide:hover:after {width:100%; background:#FF0000}
+  </style>
+  <style>
+    .post-body a::before {content:attr(href); float:none; clear:both; text-transform:none; padding:12px 5%; background:#069; color:#fff; font-family:monospace; font-size:14px; position:fixed; opacity:0; left:0; top:0; visibility:hidden; transform:scaleY(0); text-overflow:ellipsis; overflow:hidden; text-align:center; width:100%; transition:.2s ease-in-out; z-index:99999; margin: 0 auto}
+.post-body a:hover::before {opacity:1; visibility:visible; transform:scaleY(1)}
+  </style>
+  <style>
+    button{background:#55579e;border:none;position:relative;transition:800ms ease all;outline:none;font:500 16px "Roboto",sans-serif;text-transform:uppercase}
+button a{color:#fff!important;padding:.5em 3em;display:block}
+button:hover a{color:#55579e!important;text-decoration:none!important}
+button:hover{background:transparent}
+button:before,button:after{content:'';position:absolute;top:0;right:0;height:2px;
