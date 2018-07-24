@@ -3,3 +3,7 @@ I started this morning with a text conversation with Rory about DOLPHOT. I told 
 Following those simple directions, I opened the '.bash_profile' document and found out that it is locked and I can't edit it. No problem; I also saw that the current PATH unsurprisingly points to the 'anaconda/bin' directory, so I'll just move 'dolphot2.0' there and see what happens. Actually, on second thought, I'll just copy all the files in 'dolphot2.0/bin' and paste them into 'anaconda/bin'. I think this is smarter based on how I think computers look at things in directories. 
 
 After I did that, I moved back to the [PYDOLPHOT tutorial](https://github.com/dweisz/pydolphot) with my fingers crossed and heart racing hoping everything works now. 
+
+It WORKED!! I literally wiped my brow. 
+
+For a single image, I was able to create a mask over bad pixels, then split that image into '.chipx.fits' images (_note: 'x' is a placeholder for an integer ID number_). Woo! I got two chips for the [image I'm using for practice](). Rory has said that each image is supposed to split into 15 smaller ones, but I'm not sure that's true. I'm not sure it's untrue, either, but it would make more sense to me if the number of chips you got depended on things like the image's size, background variation in the image, whether or not it's a composite image, number of bright sources and how they're distributed throughout the image, etc., etc. 
