@@ -351,7 +351,7 @@ public class SerialImageFileSearch extends ImageFileSearch {
 
 ### ImageFileSearch
 
-The abstract superclass that implements the **filter and **test** methods. The abstract method **search** must be implemented by all subclasses. Also contains the main entry point to the program.
+The abstract superclass that implements the **filter** and **test** methods. The abstract method **search** must be implemented by all subclasses. Also contains the main entry point to the program.
 
 ```java
 private static final List<String> IMAGE_EXTENSIONS
