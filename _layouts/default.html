@@ -122,6 +122,59 @@ to{-webkit-transform:scale3d(0.069,0.069,0.069);transform:scale3d(0.069,0.069,0.
 .animation-pulse {-webkit-animation-name:pulse; animation-name:pulse}
 </style>
 <!-- End code -->
+<!-- Hiệu ứng chữ cuộn -->
+<style>
+  * {
+   margin: 0px;
+   padding: 0px;
+   font-weight: 200;
+   font-family: segoe ui, helvetica neue, helvetica, arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+body {
+   background: #fafafa;
+} 
+.container {
+   width: 210px;
+   height: 40px;
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   margin-left: -105px;
+   margin-top: -20px;
+}
+p {
+   float: left;
+   line-height: 40px;
+   font-size: 160%;
+   color: #333;
+}
+.scroller {
+   height: 40px;
+   line-height: 40px;
+   float: left;
+   margin-left: 7px;
+   overflow: hidden;
+}
+.scroller span {
+   display: block;
+   font-size: 160%;
+   color: #222;
+}
+.scroller .inner {
+   animation: scroll 5s infinite ease-out;
+}
+@keyframes scroll {
+   15%  {margin-top: 0px;}
+   30%  {margin-top: 0px;}
+   45%  {margin-top: -40px;}
+   60%  {margin-top: -40px;}
+   75%  {margin-top: -80px;}
+   90%  {margin-top: -80px;}
+   100% {margin-top: 0px;}
+}
+</style>
+<!-- End code -->
 <style>
   .change-color {font-size:20px; font-weight:700; animation:myfirst 15s; -webkit-animation:myfirst 15s; animation-iteration-count:infinite; -webkit-animation-iteration-count:infinite}
 @keyframes myfirst {
