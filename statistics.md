@@ -16,11 +16,11 @@ permalink: /statistics/
     {% if words > mostwords %}
       {% assign mostwords = words %}
     {% elsif words < leastwords %}
-      {% assing leastwords = words %}
+      {% assign leastwords = words %}
     {% endif %}
   {% else %}
     {% assign mostwords = words %}
-    {% assing leastwords = words %}
+    {% assign leastwords = words %}
   {% endif %}
 {% endfor %}
 
