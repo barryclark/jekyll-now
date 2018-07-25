@@ -16,14 +16,18 @@ permalink: /statistics/
   {% if mostwords %}
     {% if words > mostwords %}
       {% assign mostwords = words %}
+      {% assign mostpost = post %}
     {% elsif words < leastwords %}
       {% assign leastwords = words %}
+      {% assign leastpost = post %}
     {% endif %}
   {% else %}
     {% assign mostwords = words %}
     {% assign leastwords = words %}
+    {% assign mostpost = post %}
+    {% assign leastpost = post %}
   {% endif %}
 {% endfor %}
 
-* The post with the most words has {{ mostwords }} words.
-* The post with the least words has {{ leastwords }} words.
+* The post with the most words has {{ mostwords }} words. {{ mostpost.url }}
+* The post with the least words has {{ leastwords }} words. {{ leastpost.url }}
