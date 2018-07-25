@@ -4,6 +4,7 @@ title: Java 8 Parallel Stream Performance vs Serial Stream Performance
 tags: [java]
 keywords: [java 8, java 8 parallel stream performance, parallel stream performance, parallel stream, stream]
 image: /images/Java_logo.jpg
+hashtags: [java, java8]
 thumbnail: true
 ---
 
