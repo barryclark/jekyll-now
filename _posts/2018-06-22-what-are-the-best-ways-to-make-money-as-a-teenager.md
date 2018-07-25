@@ -3,6 +3,7 @@ layout: post
 title: What Are the Best Ways to Make Money As a Teenager?
 tags: [money]
 keywords: [make money, make money as a teen, make money as a teenager]
+hashtags: [money]
 image : /images/make-money-as-a-teenager/mow-lawns.jpg
 ---
 
