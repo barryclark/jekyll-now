@@ -19,7 +19,7 @@ The analysis also provides a number of interactive visualizations that can allow
 Background & Introduction
 --------------
 
-Stop and Frisk is a policing strategy that has been fiercely debated over its relatively short life. Proponents argue that it preempts crime by allowing officers to intervene and check for illegal weapons that may be used in future crimes, while opponents argue that the law allows police officers to harass people of color without any legal grounds.
+Stop and Frisk is a policing strategy that has been fiercely debated . Proponents argue that it preempts crime by allowing officers to intervene and check for illegal weapons that may be used in future crimes, while opponents argue that the law allows police officers to harass people of color with weak, or if any, reasonable suspicion that the person is about to commit a crime.
 
 Earlier this year, the DC Metropolitan Police Department (MPD) released incident-level stop and frisk data, documenting individual stop and frisk encounters between 2010 and 2016. The full dataset, which can be found [here along with further documentation](https://mpdc.dc.gov/publication/stop-and-frisk-data-and-explanatory-notes) contains demographic information about the person that was stopped, as well as the time and block where the person was stopped by police. This data provided an opportunity to examine the policing behavior in the District.  
 
@@ -147,24 +147,24 @@ Throughout this section it's important to keep the words of [Hadley Wickham](htt
 
 The chart above illustrates a pretty linear relationship between the previous year's crime level and stop & frisk in each neighborhood of DC. Of course, there are dozens and dozens of other confounding variables that are not being considered in this simplistic approach, but if you were only to use this one variable to predict stop and frisk, you would end up with a model like this:
 
-<table align="center" style="text-align:center"><tr><td colspan="2" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"></td><td><em>Dependent variable:</em></td></tr>
-		<tr><td></td><td colspan="1" style="border-bottom: 1px solid black"></td></tr>
-		<tr><td style="text-align:left"></td><td>Average Stop & Frisk</td></tr>
-		<tr><td colspan="2" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">Average previous year crime</td><td>1.461<sup>***</sup></td></tr>
-		<tr><td style="text-align:left"></td><td>(0.117)</td></tr>
-		<tr><td style="text-align:left"></td><td></td></tr>
-		<tr><td style="text-align:left">Constant</td><td>4.170</td></tr>
-		<tr><td style="text-align:left"></td><td>(11.255)</td></tr>
-		<tr><td style="text-align:left"></td><td></td></tr>
-		<tr><td colspan="2" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">Observations</td><td>39</td></tr>
-		<tr><td style="text-align:left">R<sup>2</sup></td><td>0.808</td></tr>
-		<tr><td style="text-align:left">Adjusted R<sup>2</sup></td><td>0.803</td></tr>
-		<tr><td style="text-align:left">Residual Std. Error</td><td>41.543 (df = 37)</td></tr>
-		<tr><td style="text-align:left">F Statistic</td><td>156.007<sup>***</sup> (df = 1; 37)</td></tr>
-		<tr><td colspan="2" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"><em>Note:</em></td><td style="text-align:right"><sup>*</sup>p<0.1; <sup>**</sup>p<0.05; <sup>***</sup>p<0.01</td></tr>
+<table style="text-align:center"><tr><td colspan="2" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"></td><td><em>Dependent variable:</em></td></tr>
+<tr><td></td><td colspan="1" style="border-bottom: 1px solid black"></td></tr>
+<tr><td style="text-align:left"></td><td>Average Stop & Frisk</td></tr>
+<tr><td colspan="2" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">Average previous year crime</td><td>0.136<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.011)</td></tr>
+<tr><td style="text-align:left"></td><td></td></tr>
+<tr><td style="text-align:left">Constant</td><td>1.845</td></tr>
+<tr><td style="text-align:left"></td><td>(13.112)</td></tr>
+<tr><td style="text-align:left"></td><td></td></tr>
+<tr><td colspan="2" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">Observations</td><td>39</td></tr>
+<tr><td style="text-align:left">R<sup>2</sup></td><td>0.796</td></tr>
+<tr><td style="text-align:left">Adjusted R<sup>2</sup></td><td>0.791</td></tr>
+<tr><td style="text-align:left">Residual Std. Error</td><td>48.627 (df = 37)</td></tr>
+<tr><td style="text-align:left">F Statistic</td><td>144.720<sup>***</sup> (df = 1; 37)</td></tr>
+<tr><td colspan="2" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"><em>Note:</em></td><td style="text-align:right"><sup>*</sup>p<0.1; <sup>**</sup>p<0.05; <sup>***</sup>p<0.01</td></tr>
 </table>
 
-The "crime-only" model that we've created shows a pretty strong relationship between the previous year crime rate and current year stop and frisk with an R-squared of about .80. More specifically, for one unit of increase in a neighborhood's previous year crime rate, the number of stop and frisks in the current year will increase by a factor of 1.46.
+The "crime-only" model that we've created shows a pretty strong relationship between the previous year crime rate and current year stop and frisk with an R-squared of about .80. More specifically, for one unit of increase in a neighborhood's previous year crime rate, the number of stop and frisks in the current year will increase by a factor of 0.14.
 
 With that in mind, we can take this model to predict the next year's level of stop and frisk in any given neighborhood and then use the current year stop and frisk to test/validate how the model performed.
 
