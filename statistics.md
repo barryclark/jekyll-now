@@ -28,5 +28,6 @@ permalink: /statistics/
 * {{ site.tags | size }} different tags.
 * The most recent post was on [{{ site.posts.first.date | date: "%B %e, %Y" }}]({{ site.posts.first.url }}).
 * The first post was on [{{ site.posts.last.date | date: "%B %e, %Y" }}]({{ site.posts.last.url }}).
-* The post with the most words has {{ mostpost.content | strip_html | number_of_words }} words. {{ mostpost.url }}
-* The post with the least words has {{ leastpost.content | strip_html | number_of_words }} words. {{ leastpost.url }}
+* The [post with the most words]({{ mostpost.url }}) has {{ mostpost.content | strip_html | number_of_words }} words.
+* The [post with the least words]({{ leastpost.url }}) has {{ leastpost.content | strip_html | number_of_words }} words.
+* {{ mostwords }}
