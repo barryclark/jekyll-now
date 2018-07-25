@@ -4,7 +4,7 @@ title: Testing
 permalink: /testing/
 ---
 
-<div class='note river'>Nếu xảy ra lỗi, xin lỗi vì website đang là phiên bản thử nghiệm.</div>  // Xanh da trời
+<div class='note river'>Nếu xảy ra lỗi, xin lỗi vì website đang là phiên bản thử nghiệm.</div>
 
 Trang này đang trong quá trình hoàn thiện, vui lòng [quay trở lại trang chủ]({{ site.baseurl }}/) để tiếp tục xem tiếp bài khác.
 
