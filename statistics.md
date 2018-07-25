@@ -9,3 +9,4 @@ permalink: /statistics/
 * {{ site.tags | size }} different tags.
 * The most recent post was on [{{ site.posts.first.date | date: "%B %e, %Y" }}]({{ site.posts.first.url }}).
 * The first post was on [{{ site.posts.last.date | date: "%B %e, %Y" }}]({{ site.posts.last.url }}).
+* {{ site.posts.first.content | strip_html | number_of_words }}
