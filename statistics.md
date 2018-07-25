@@ -12,7 +12,7 @@ permalink: /statistics/
 
 {% for post in site.posts %}
   {% capture text %}{{ post.content | strip_html }}{% endcapture %}
-  {% assign words = text.number_of_words %}
+  {% assign words = text.size %}
   {% if mostwords %}
     {% if words > mostwords %}
       {% assign mostwords = words %}
