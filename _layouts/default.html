@@ -127,6 +127,100 @@ to{-webkit-transform:scale3d(0.069,0.069,0.069);transform:scale3d(0.069,0.069,0.
 .note{position:relative;width:50;padding:1.2em 1.5em;margin:2em auto;color:#fff;background:#2ecc71;overflow:hidden}.note.orange{background:#f39c12}.note.crusta{background:#F2784B}.note.river{background:#3498db}.note:before{content:"";position:absolute;top:0;right:0;border-width:0 16px 16px 0;border-style:solid;border-color:#fff #fff #27ae60 #27ae60;background:#27ae60;box-shadow:0 1px 1px rgba(0,0,0,0.3),-1px 1px 1px rgba(0,0,0,0.2);display:block;width:0}.note.orange:before{border-color:#fff #fff #e67e22 #e67e22;background:#e67e22}.note.crusta:before{border-color:#fff #fff #de6e45 #de6e45;background:#de6e45}.note.river:before{border-color:#fff #fff #2980b9 #2980b9;background:#2980b9}
 </style>
 <!-- End code -->
+<!-- Button share -->
+<style>
+  #sharebutton a {
+background: #D2D7D3;
+border-radius: 50%;
+display: inline-block;
+text-decoration: none;
+position: relative;
+width: 35px;
+height: 35px;
+margin-right:7px;
+text-align:center;
+padding-top: 6px;
+-webkit-transition: all .5s;
+-moz-transition: all .5s;
+transition: all .5s;
+}
+
+#sharebutton a.icon:before {
+font-family: "FontAwesome";
+color: #fff;
+font-size: 20px;
+}
+
+#sharebutton a.facebook:before {
+content: '\f09a';
+}
+
+#sharebutton a.twitter:before {
+content: '\f099';
+}
+#sharebutton a.google:before {
+content: '\f0d5';
+}
+
+#sharebutton a span {
+background: #fff;
+font-size: 14px;
+font-weight: 500;
+position: absolute;
+bottom: 0;
+left: -25px;
+right: -25px;
+padding: 5px 7px;
+visibility: hidden;
+opacity: 0;
+-webkit-transition: all .4s;
+-moz-transition: all .4s;
+transition: all .4s;
+}
+
+#sharebutton a span:before {
+content: '';
+border-left: 5px solid transparent;
+border-right: 5px solid transparent;
+border-top: 5px solid #fff;
+position: absolute;
+bottom: -5px;
+left: 40px;
+}
+
+#sharebutton a:hover span {
+bottom: 50px;
+visibility: visible;
+opacity: 1;
+}
+
+
+#sharebutton a.facebook:hover {
+background-color: #4183d7; 
+color: #bfbfbf;
+}
+
+#sharebutton a.facebook span {
+color: #4183d7;
+}
+
+#sharebutton a.twitter:hover {
+background-color: #19b5fe;
+color: #fff;
+}
+
+#sharebutton a.twitter span {
+color: #19b5fe;
+}
+#sharebutton a.google:hover {
+background-color: #f22613;
+color: #fff;
+}
+
+#sharebutton a.google span {
+color: #f22613;}
+</style>
+<!-- End code -->
 <style>
   .change-color {font-size:20px; font-weight:700; animation:myfirst 15s; -webkit-animation:myfirst 15s; animation-iteration-count:infinite; -webkit-animation-iteration-count:infinite}
 @keyframes myfirst {
