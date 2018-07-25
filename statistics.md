@@ -11,7 +11,7 @@ permalink: /statistics/
 * The first post was on [{{ site.posts.last.date | date: "%B %e, %Y" }}]({{ site.posts.last.url }}).
 
 {% for post in site.posts %}
-  {% assign words = site.posts.first.content.strip_html.number_of_words %}
+  {% assign words = post.content.strip_html.number_of_words %}
   {% if mostwords %}
     {% if words > mostwords %}
       {% assign mostwords = words %}
@@ -22,6 +22,7 @@ permalink: /statistics/
     {% assign mostwords = words %}
     {% assign leastwords = words %}
   {% endif %}
+  {{ words }}<br />
 {% endfor %}
 
 * The post with the most words has {{ mostwords }} words.
