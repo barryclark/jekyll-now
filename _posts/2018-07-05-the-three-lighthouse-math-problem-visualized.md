@@ -3,6 +3,7 @@ layout: post
 title: The Three Lighthouse Math Problem Visualized
 tags: [math]
 keywords: [three lighthouses, math problem]
+hashtags: [math, mathproblems]
 image: /images/lighthouse-math/lighthouse.jpg
 ---
 
