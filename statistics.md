@@ -9,8 +9,20 @@ permalink: /statistics/
 * {{ site.tags | size }} different tags.
 * The most recent post was on [{{ site.posts.first.date | date: "%B %e, %Y" }}]({{ site.posts.first.url }}).
 * The first post was on [{{ site.posts.last.date | date: "%B %e, %Y" }}]({{ site.posts.last.url }}).
-* {{ site.posts.first.content | strip_html | number_of_words }}
 
 {% for post in site.posts %}
-{% assign words = site.posts.first.content.strip_html.number_of_words %}
+  {% assign words = site.posts.first.content.strip_html.number_of_words %}
+  {% if mostwords %}
+    {% if words > mostwords %}
+      {% assign mostwords = words %}
+    {% elsif words < leastwords %}
+      {% assing leastwords = words %}
+    {% endif %}
+  {% else %}
+    {% assign mostwords = words %}
+    {% assing leastwords = words %}
+  {% endif %}
 {% endfor %}
+
+* The post with the most words has {{ mostwords }} words.
+* The post with the least words has {{ leastwords }} words.
