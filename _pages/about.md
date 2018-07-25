@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "About"
-permalink: /About/
+permalink: /about/
 comments: true
 author_profile: true
 ---
@@ -21,7 +21,13 @@ Currently, I am a North Yard Analytics Fellow, a soccer analytics enthusiast and
   12th Graduate, Science
 
 
-### Projects:
-- [**ABC**](https://github.com/abhinavralhan), 2018:      
-	Bla bla bla
+### MOOC's Completed:
+- [**Statistical Learning, Stanford University**](https://github.com/abhinavralhan/MOOCS-completed/blob/master/Stats-Stanford.pdf):      
+	Course taught by Trevor Hastie, Rob Tibshirani about Inferential Statistics.
+
+- [**Machine Learning, Stanford University**](https://github.com/abhinavralhan/ml-stanford-coursera):      
+	Course taught by Andrew NG about Machine Learning on Coursera.
+
+- [**Data Science and Machine Learning, Udemy**](https://github.com/abhinavralhan/DS-ML-udemy):      
+	Course taught by Jose Portilla about Data Science on Udemy.
 
