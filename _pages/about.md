@@ -31,3 +31,13 @@ Currently, I am a North Yard Analytics Fellow, a soccer analytics enthusiast and
 - [**Data Science and Machine Learning, Udemy**](https://github.com/abhinavralhan/DS-ML-udemy):      
 	Course taught by Jose Portilla about Data Science on Udemy.
 
+
+### Projects:
+- [**Twitter Analytics Dashboard**](https://github.com/abhinavralhan/capstone-apache-storm):      
+  Used Apache Storm to process real time data and visualizations 
+
+- [**Web App for managing personal finances**](https://github.com/abhinavralhan/ml-stanford-coursera):      
+	Created a web app to manage personal finances. Written with help of Angularjs, Html, Css, Bootstrap.
+
+- [**Twitter Bot**](https://github.com/abhinavralhan/twitter-bot):      
+	Created a Twitter bot which would tweet on an increase of a follower. Written in Javascript with the help of Twitter api.
