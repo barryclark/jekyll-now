@@ -306,60 +306,6 @@ footer {
   text-align: center;
 }
 
-code,pre {
-display:inline-block;
-position:relative;
-background:#2a2a2a;
-max-height:400px; /* Set chiều cao tối đa để hiển thị thanh cuộn */
-font-size:14px;
-color:#e8e8e8;
-text-align:left;
-overflow:auto; /* Hiển thị thanh cuộn dọc khi quá 400px */
-border:1px solid #d3d6db;
-margin:8px 0;
-padding:10px;
-white-space:pre-line; /* Văn bản sẽ tự động bao lại khi cần thiết, và xuống hàng */
-width:97%;
-padding-top:40px;
-font-family:'Roboto',sans-serif;
-}
-code:after { /* Thêm thuộc tính after cho khung code, hiểu nôm na là chèn chữ hay kí tự gì đó trang trí */
-content:"Code For You"; /* Ở trường hợp này là chữ hiển thị trên đầu mỗi khung code nha */
-font-family:'Roboto',sans-serif;
-color:#fff;
-position:absolute; /*Set thuộc tính position là absolute cho nó đính trên vị trí cần chỉnh, cái này mình không rõ phải diễn đạt ra sao cho các bạn hiểu rõ được nữa nhưng nếu biết CSS cơ bản thì sẽ hiểu đc thôi*/
-top:0; /* Điều chỉnh after lên trên cùng khung code */
-left:0; 
-transition:all .3s; /* Hiệu ứng làm mượt, hãy thêm tiền tố -moz-, -o-, -webkit-... để giúp chạy trên nhiều trình duyệt */
-width:100%;
-text-align:center;
-border-bottom:1px dashed #ddd;
-padding:3px 0;
-font-size:16px;
-letter-spacing:1px; /* Khoảng cách giữa các kí tự */
-background:#4a4a4a;
-}
-/* Set chữ cho từng class riêng biệt */
-code.html-pc:after {
-content:"HTML";
-background:#47aae4;
-}
-
-code.css-pc:after {
-content:"CSS";
-background:#45a25d;
-}
-
-code.js-pc:after {
-content:"Javascript";
-background:#4ba2a7;
-}
-
-code.jquery-pc:after {
-content:"Jquery";
-background:#97ab28;
-}
-
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
