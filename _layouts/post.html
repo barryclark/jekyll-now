@@ -24,11 +24,5 @@ layout: default
     </div>
  <!--End button -->
     
-    <div id='sharebutton'>
-<a expr:href='data:post.sharePostUrl + &quot;&amp;target=facebook&quot;' expr:onclick='&quot;window.open(this.href, \&quot;_blank\&quot;, \&quot;height=430,width=640\&quot;); return false;&quot;' expr:title='data:top.shareToFacebookMsg' target='_blank' class="icon facebook"><span>Facebook</span></a>
-<a expr:href='data:post.sharePostUrl + &quot;&amp;target=twitter&quot;' expr:onclick='&quot;window.open(this.href, \&quot;_blank\&quot;, \&quot;height=430,width=640\&quot;); return false;&quot;' expr:title='data:top.shareToTwitterMsg' target='_blank' class="icon twitter"><span>Twitter</span></a>
-<a expr:href='data:post.sharePostUrl + &quot;&amp;target=googleplus&quot;' expr:onclick='&quot;window.open(this.href, \&quot;_blank\&quot;, \&quot;height=430,width=640\&quot;); return false;&quot;' target='_blank' class="icon google"><span>Google+</span></a>
-</div>
-
   {% include disqus.html %}
 </article>
