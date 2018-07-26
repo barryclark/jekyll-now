@@ -1,8 +1,9 @@
 ---
 layout: post
 title: How My AOL Email Got Hacked
-tags: [culture]
+tags: [security]
 keywords: [aol, social engineering, hacking, crime]
+hashtags: [security, hacking]
 image: /images/aol.jpg
 thumbnail: true
 ---
