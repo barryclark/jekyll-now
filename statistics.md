@@ -44,8 +44,8 @@ permalink: /statistics/
 * {{ site.posts | size }} total posts.
 * {{ site.posts | size | plus:site.paginate | minus:1 | divided_by:site.paginate }} pages of posts with {{ site.paginate }} posts per page.
 * {{ site.tags | size }} different tags.
-* The tag with the most posts is {{ mosttag }} with {{ mosttagcount }} posts.
-* The tag with the least posts is {{ leasttag }} with {{ leasttagcount }} posts.
+* The tag with the most posts is [{{ mosttag }}](/tags/#{{ mosttag }}) with {{ mosttagcount }} posts.
+* The tag with the least posts is [{{ leasttag }}](/tags/#{{ leasttag }}) with {{ leasttagcount }} posts.
 * There are {{ alltext | number_of_words }} words across all posts.
 * That is an average of {{ alltext | number_of_words | divided_by:site.posts.size}} per post.
 * The most recent post was on [{{ site.posts.first.date | date: "%B %e, %Y" }}]({{ site.posts.first.url }}).
