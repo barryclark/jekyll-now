@@ -25,7 +25,7 @@ permalink: /statistics/
 {% endfor %}
 
 * {{ site.posts | size }} total posts.
-* {{ paginator.total_pages }} pages of posts with {{ paginator.per_page }} posts per page.
+* {{ site.posts | size | divided_by:3  }} pages of posts with {{ site.paginate }} posts per page.
 * {{ site.tags | size }} different tags.
 * There are {{ alltext | number_of_words }} words across all posts.
 * That is an average of {{ alltext | number_of_words | divided_by:site.posts.size}} per post.
