@@ -28,7 +28,7 @@ permalink: /statistics/
   {% if mosttag %}
     {% if tagcount > mosttagcount %}
       {% assign mosttagcount = tagcount %}
-      {% assign leasttag = tag[0] %}
+      {% assign mosttag = tag[0] %}
     {% elsif tagcount < leasttagcount %}
       {% assign leasttagcount = tagcount %}
       {% assign leasttag = tag[0] %}
