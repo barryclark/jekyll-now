@@ -1,8 +1,9 @@
 ---
 layout: post
 title: How I Thwarted Hackers from Getting into my Craigslist Account
-tags: [culture]
+tags: [security]
 keywords: [craigslist, social engineering, phishing, hacking, crime]
+hashtags: [security, hacking]
 image: /images/covers/craigslist-cover.png
 ---
 
