@@ -23,10 +23,29 @@ permalink: /statistics/
     {% assign leastpost = post %}
   {% endif %}
 {% endfor %}
+{% for tag in site.tags %}
+  {% assign tagcount = tag.size %}
+  {% if mosttag %}
+    {% if tagcount > mosttagcount %}
+      {% assign mosttagcount = tagcount %}
+      {% assign leasttag = post %}
+    {% elsif tagcount < leasttagcount %}
+      {% assign leasttagcount = tagcount %}
+      {% assign leasttag = post %}
+    {% endif %}
+  {% else %}
+      {% assign mosttagcount = tagcount %}
+      {% assign leasttagcount = tagcount %}
+      {% assign mosttag = tag[0] %}
+      {% assign leasttag = tag[0] %}
+  {% endif %}
+{% endfor %}
 
 * {{ site.posts | size }} total posts.
 * {{ site.posts | size | plus:site.paginate | minus:1 | divided_by:site.paginate }} pages of posts with {{ site.paginate }} posts per page.
 * {{ site.tags | size }} different tags.
+* The tag with the most posts is {{ mosttag }}.
+* The tag with the least posts is {{ leasttag }}.
 * There are {{ alltext | number_of_words }} words across all posts.
 * That is an average of {{ alltext | number_of_words | divided_by:site.posts.size}} per post.
 * The most recent post was on [{{ site.posts.first.date | date: "%B %e, %Y" }}]({{ site.posts.first.url }}).
