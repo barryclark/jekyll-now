@@ -41,13 +41,13 @@ permalink: /statistics/
   {% endif %}
 {% endfor %}
 
-* {{ site.posts | size }} total posts.
-* {{ site.posts | size | plus:site.paginate | minus:1 | divided_by:site.paginate }} pages of posts with {{ site.paginate }} posts per page.
-* {{ site.tags | size }} different tags.
+* There are {{ site.posts | size }} total posts.
+* These posts are across {{ site.posts | size | plus:site.paginate | minus:1 | divided_by:site.paginate }} pages with {{ site.paginate }} posts per page.
+* There are {{ site.tags | size }} different tags.
 * The tag with the most posts is [{{ mosttag }}](/tags/#{{ mosttag }}) with {{ mosttagcount }} posts.
 * The tag with the least posts is [{{ leasttag }}](/tags/#{{ leasttag }}) with {{ leasttagcount }} posts.
 * There are {{ alltext | number_of_words }} words across all posts.
-* That is an average of {{ alltext | number_of_words | divided_by:site.posts.size}} per post.
+* That is an average of {{ alltext | number_of_words | divided_by:site.posts.size}} words per post.
 * The most recent post was on [{{ site.posts.first.date | date: "%B %e, %Y" }}]({{ site.posts.first.url }}).
 * The first post was on [{{ site.posts.last.date | date: "%B %e, %Y" }}]({{ site.posts.last.url }}).
 * The [post with the most words]({{ mostpost.url }}) has {{ mostpost.content | strip_html | number_of_words }} words.
