@@ -24,7 +24,7 @@ permalink: /statistics/
   {% endif %}
 {% endfor %}
 {% for tag in site.tags %}
-  {% assign tagcount = tag.size %}
+  {% assign tagcount = tag[1].size %}
   {% if mosttag %}
     {% if tagcount > mosttagcount %}
       {% assign mosttagcount = tagcount %}
