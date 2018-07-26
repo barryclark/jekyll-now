@@ -33,4 +33,3 @@ permalink: /statistics/
 * The first post was on [{{ site.posts.last.date | date: "%B %e, %Y" }}]({{ site.posts.last.url }}).
 * The [post with the most words]({{ mostpost.url }}) has {{ mostpost.content | strip_html | number_of_words }} words.
 * The [post with the least words]({{ leastpost.url }}) has {{ leastpost.content | strip_html | number_of_words }} words.
-* {{ mostwords }}
