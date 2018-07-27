@@ -3,6 +3,7 @@ layout: post
 title: "A Mostly Financial Pregnancy Timeline and The First Four Months Of Life: My Experience As A New Dad"
 tags: [culture]
 keywords: [son, first-born, first-born son, pregnancy, new dad, new father]
+hashtags: [newdad, firstborn]
 image: /images/the-little-guy/three-months.jpg
 ---
 
