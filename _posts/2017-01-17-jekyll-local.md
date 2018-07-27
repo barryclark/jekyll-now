@@ -94,6 +94,18 @@ Configuration file: /home/yohei/git/yoheikikuta.github.io/_config.yml
 最も基本的な使い方はこんなもんでしょうか。
 
 ---
+20180728 追記  
+結局ローカルで環境構築をするのが大変なので、docker を使うことにした。
+自分で色々いじってたがなんか gem でうまくいかなかったりしていたところ、https://github.com/envygeeks/jekyll-docker を見つけた。  
+`xxx.github.io` の top directory で以下を実行すればよい。
+
+```
+docker run -it --rm -p 4000:4000 -v $(pwd):/srv/jekyll jekyll/jekyll jekyll serve
+```
+
+ありがとうございます。
+
+---
 ---
 <br>
 
