@@ -6,7 +6,7 @@ keywords: [son, first-born, first-born son, pregnancy, new dad, new father]
 image: /images/the-little-guy/three-months.jpg
 ---
 
-This past year has been quite an adventure. I got married. I just finished school *yesterday*. And today is my son is four months old. I've been chronicling what's been going on, relying heavily on things such as medical bills and insurance explanation of benefits to fit things into a neat timeline. Hence the whopper of a title ***A Mostly Financial Pregnancy Timeline and The First Four Months Of Life: My Experience As A New Dad**.
+This past year has been quite an adventure. I got married. I just finished school *yesterday*. And today is my son is four months old. I've been chronicling what's been going on, relying heavily on things such as medical bills and insurance explanation of benefits to fit things into a neat timeline. Hence the whopper of a title ***A Mostly Financial Pregnancy Timeline and The First Four Months Of Life: My Experience As A New Dad***.
 
 I swear, this must be the longest title yet.
 
