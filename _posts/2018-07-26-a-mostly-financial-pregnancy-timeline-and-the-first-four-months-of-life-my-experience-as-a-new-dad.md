@@ -254,6 +254,6 @@ Since July is in a different quarter than June, the 5% limit of $1,500 spend per
 
 ## Thursday, July 26, 2018
 
-The little guy turns four months old. (Picture to come!)
+The little guy turns four months old.
 
 ![The little guy at four months.](/images/the-little-guy/four-months.jpg)
