@@ -150,6 +150,9 @@ The insurance company finished reprocessing the previously denied hospital claim
 
 We received a bill from the hospital for that $10,159.54. If I hadn't been on top of things, there is no way I would have known I don't actually owe ten grand.
 
+![Please pay ten grand. No.](/images/new-dad-timeline/please-pay-ten-grand.jpg)
+*Please pay ten grand. No.*
+
 ## Thursday, April 26, 2018
 
 The little guy turns one month old.
@@ -182,6 +185,9 @@ I called the OB/GYN's billing office again to ask about the refund. I'm told the
 
 We get another past due notice from the hospital.
 
+![Past due notice.](/images/new-dad-timeline/past-due-notice.jpg)
+*Patience!*
+
 ## Friday, May 25, 2018
 
 Seeing no refund, I call the OB/GYN's billing office. Unfortunately, I called in the afternoon, and the office closes at noon on Fridays.
@@ -209,6 +215,9 @@ The $1,245.35 refund shows up as a credit on my credit card.
 ## Saturday, June 2, 2018
 
 We get another past due notice from the hospital - this one is marked "2nd Past Due Notice."
+
+![Past due notice.](/images/new-dad-timeline/2nd-past-due-notice.jpg)
+*I said patience!*
 
 ## June 7, 2018
 
