@@ -43,5 +43,5 @@ He's slowly getting more interactive - he smiles occasionally and is able to hol
 
 He's cooing - it's so cute! I think I even got him to laugh last night!
 
-![The little guy sleeping.](/images/the-little-guy-sleeping.jpg)
+![The little guy sleeping.](/images/the-little-guy/the-little-guy-sleeping.jpg)
 *The little guy sleeping.*
