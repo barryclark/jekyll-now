@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Slides] [June 2018] Persistent Storage for Kubernetes in production - Which solution and why? - Container Days, Hamburg"
+title: "[Video] [Slides] [June 2018] Persistent Storage for Kubernetes in production - Which solution and why? - Container Days, Hamburg"
 ---
 
 <iframe width="700px" height="394px" src="https://www.youtube.com/embed/8i4fSvdp4tk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
