@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Blog Statistics
+title: Post Statistics
 permalink: /statistics/
 ---
 

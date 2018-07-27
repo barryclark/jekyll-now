@@ -13,6 +13,7 @@ permalink: /sitemap/
 * [Tags](/tags/)
 * [Referral links](/referral/)
 * [T-Shirts](/t-shirts/)
+* [Post Statistics](/statistics/)
 * [Web Portfolio](/web-portfolio/)
 * [Sitemap (this page)](/sitemap/)
 * [Sitemap.xml](/sitemap.xml)
