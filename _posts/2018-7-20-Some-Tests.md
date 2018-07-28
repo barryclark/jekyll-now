@@ -18,30 +18,11 @@ fun hello(input: String) = when {
 }
 ```
 
-## GIST inclusion tests
-
-#### iFrame
-
-<iframe src="https://gist.github.com/delabassee/3ef986d8b37e1be6490fa59e95d3833c#file-hellofunctiontest-kt" frameborder="0"></iframe>
+## GIST inclusion 
 
 #### embed
-<script src="https://gist.github.com/delabassee/01e3f02ac59798ba6b92fb541321f00b.js"></script>
+<script src="<script src="https://gist.github.com/delabassee/12bfd37ec64b8e49aaadcaf0e921007e.js"></script>"></script>
 
-#### 1
-<script src="https://gist.github.com/delabassee/3ef986d8b37e1be6490fa59e95d3833c#file-hellofunctiontest-kt"></script>
-
-#### 2
-<script src="https://gist.github.com/delabassee/3ef986d8b37e1be6490fa59e95d3833c#file-hellofunctiontest-kt"></script>
-
-#### 3
-
-<script src="https://gist.github.com/delabassee/3ef986d8b37e1be6490fa59e95d3833c#file-hellofunctiontest-kt?file=gist.md"></script>
-
-#### 4
-
-{% gist 3ef986d8b37e1be6490fa59e95d3833c gist.md %}
-
-## Done
 
 ```kotlin
 package com.fn.example
