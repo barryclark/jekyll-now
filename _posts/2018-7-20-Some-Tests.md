@@ -18,6 +18,17 @@ fun hello(input: String) = when {
 }
 ```
 
+## A GIST
+
+### 1
+<script src="https://gist.github.com/delabassee/3ef986d8b37e1be6490fa59e95d3833c#file-hellofunctiontest-kt"></script>
+
+### 2
+<script src="https://gist.github.com/delabassee/3ef986d8b37e1be6490fa59e95d3833c#file-hellofunctiontest-kt"/>
+
+### 3
+
+<script src="https://gist.github.com/delabassee/3ef986d8b37e1be6490fa59e95d3833c#file-hellofunctiontest-kt"?file=gist.md"></script>
 
 ```kotlin
 package com.fn.example
