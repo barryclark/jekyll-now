@@ -6,25 +6,25 @@ So, while writing the new parameter file last night, I had a very important epip
 Nimg = x  
 _where x is the number of images that make up the drz reference image, known as science images_
 
-img0_file = ib2o0xxxx.drc.chip1  
+img0_file = ib2o0xxxx_drz.chip1  
 _refence image's base filename without the .fits tag, after splitgroups has been performed_
 
-imgx_file = ib2o0xxxx.flc.chipx  
+imgx_file = ib2o0xxxx_flc.chipx  
 _each science image must be entered into the parameter file individually w/o the .fits extension. x is a placeholder for 1, 2, 3..._
 
 imgx_xform = 0 0 0 
 _Scale ratio, cubic distortion, and linear and quadratic variation for an image. It was {1 0 0} before, but I'm using an option that comes later called "useWCS" that was turned off before and uses WCS in the header to compute the full transformation_ 
 
-img_RAper = 3  
+RAper = 3  
 _I increased the aperture radius to 3 from 2.5 because this is a more common value in manuals and I was detecting too few stars before_
 
-img_RChi = 1.8  
+RChi = 1.8  
 _this is the radius of the aperture in which the chi value is calculate. it must be less than img_RAper and defaults to -1, which tells the program to use img_RAper as RChi, but I guess that a smaller aperture is better_
 
-img_RPSF = 13  
+RPSF = 13  
 _again, this is default value, but I had changed it to 10 the other day and decided to change it back after learning how it works and that it should be set large enough that there should be no light outside this radius from the star after background subtraction_
 
-- SigFindMult = .8  
+SigFindMult = .8  
 _varies between .75 and 1 based on how good the sampling is for your PSF. I did some googling and found some awesome PSF resources I'll talk about and link to later, but I found that the Tiny Tim HST PSF package that I'm using is considered undersampled, so I put this value on the lower side of the range_ 
 
 SigFinal = 2.5  
@@ -91,3 +91,12 @@ _Like FakeStars, I'm leaving this blank for now. This allows you to use a the in
 So, the epiphany I mentioned at the beginning means that I have to completely change up my strategy for running DOLPHOT. It also made me realize that those were actually error messages I got the first time I ran DOLPHOT. The real output should tell me which .fits file it's analyzing at any given time and then tell me how many stars it's found as it's finding them while it's running. No matter what, the next step is to go back to MAST and get drizzled images again then all their flc components and put them all in a unique folder for each drizzled image. I could just get the drizzled images from MAST and try to use header info to figure out which flc images go with which drz images, but that seems inefficient. This took longer than I was expecting if I'm honest. I also forgot that when I installed DOLPHOT on this computer (the Mac), I only got the F606W PSFs because I was confused at the time, so I went back and got the F814W band, too. 
 
 So, downloading those data files took way longer than I thought it would. Well, really organizing them so that DOLPHOT likes them took forever. I have them all now, and they're all pretty in their proper directories. Let's see if DOLPHOT works. 
+
+It ALMOST works. So close. For a second, I was having the 15 chip issue, but realized I should have been using `wfc3mask`, not `acsmask`, and that fixed it. It works great for flc images, but I need to modify the parameter file (a different one for the WFC3 module) and maybe add some other things to make it work with drizzled images. I'm not exactly what all I have to do yet. 
+
+# Conclusion
+Today felt like a lot of work for a little progress, which has been happening more and more lately. Downloading and organizing data took a long time, figuring out the parameter file took a long time (even though I wrote it last night, I ended up pouring over it again and second guessing myself for over an hour and a half while I was writing that guide above), and running DOLPHOT takes awhile, too. While I'm interested what things PYDOLPHOT does to streamline the running of DOLPHOT, I still really don't want to start looking at PYDOLPHOT since I'm already so invested in the original. I'm glad Rory is using it so I can see what it's about and so we can have multiple photometry analyses. 
+
+Rory and I were also wondering if `wfc3mask` works with batches, and I think the answer is yes, but it wasn't yet working for me because I have flc and drz images in the same folder and I can't get `wfc3mask` to work with the drizzled pictures yet. Moreover, I'm almost certain you can't use the same `wfc3mask` parameters put a mask on flc and drz images so I'll have to do them separate. 
+
+Tomorrow should see some photometry results pretty quick. I want this weekend to be mostly focused on making those results better, not getting them in the first place. I always think things won't take as long as they do, but right now I'm thinking I can get that data within an hour of coming to the lab tomorrow. So, it'll probably take all day, but let's hope I'm right for once. 
