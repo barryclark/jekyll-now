@@ -24,11 +24,17 @@ fun hello(input: String) = when {
 <script src="https://gist.github.com/delabassee/3ef986d8b37e1be6490fa59e95d3833c#file-hellofunctiontest-kt"></script>
 
 ### 2
-<script src="https://gist.github.com/delabassee/3ef986d8b37e1be6490fa59e95d3833c#file-hellofunctiontest-kt"/>
+<script src="https://gist.github.com/delabassee/3ef986d8b37e1be6490fa59e95d3833c#file-hellofunctiontest-kt"></script>
 
 ### 3
 
 <script src="https://gist.github.com/delabassee/3ef986d8b37e1be6490fa59e95d3833c#file-hellofunctiontest-kt"?file=gist.md"></script>
+
+### 4
+
+{% gist 3ef986d8b37e1be6490fa59e95d3833c gist.md %}
+
+## Done
 
 ```kotlin
 package com.fn.example
