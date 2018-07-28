@@ -1,6 +1,6 @@
 Today was a DOLPHOT day. Here's what happened:
 
-#DOLPHOT
+# DOLPHOT
 So, while writing the new parameter file last night, I had a very important epiphany about how to run DOLPHOT. I was in error before because I had no refernce image and tried to do every file that I have at once. No one said it explicitly anywhere, but I've figured out from reading the [manual](https://github.com/GosnellResearchGroupSummer2018/NGC6819/blob/master/dolphot_userguide.pdf) and that PYDOLPHOT tutorial 1000 times that you need a drizzled image as the reference image and then you can do photometry on all the flc images that the drizzled image is a composite of. I never got DOLPHOT to work on my laptop, so I tried to run it with the new parameter file with that information in my head on the Macs first thing when I got to the computational lab. Some changes that I made to the parameter file follow (everything is set to the default DOLPHOT settings except for these things):
 
 Nimg = x  
