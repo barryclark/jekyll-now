@@ -4,11 +4,6 @@ title: Compound Interest Calculator
 permalink: /tools/compound-interest-calculator/
 ---
 
-<table id="results-table" style="display: none;">
-<tr><th>Month</th><th>Balance</th></tr>
-<tr><td>January</td><td>$100.00</td></tr>
-</table>
-
 <div class="input-form">
 <div><label for="start-amount"></label><input type="number" id="start-amount" value="100" /></div>
 <div><label for="interest-rate"></label><input type="number" id="interest-rate" value="10" /></div>
@@ -16,9 +11,20 @@ permalink: /tools/compound-interest-calculator/
 <div><label for="years"></label><input type="number" id="years" value="10" /></div>
 <div><button id="calculate-button" type="button">Calculate!</button><div>
 <div>
-  
+
+<table id="results-table" style="display: none;">
+<tr><th>Month</th><th>Balance</th></tr>
+</table>
+
 <script>
 $("#calculate-button").click(function() {
+  var pv = $("#start-amount").val();
+  var rate = $("#interest-rate").val();
+  var contributions = $("#monthly-contributions").val();
+  var years = $("#years").val();
+  
+  $("#results-table").append("<tr><td>January</td><td>$" + pv + "</td></tr>");
+  
   $("#results-table").show();
 });
 </script>
