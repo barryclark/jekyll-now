@@ -10,12 +10,12 @@ author_profile: true
 
 ## IBM Analytics-Laureate Education Acknowledged:
 
-- [**Had some of my work copyrighted by Laureate and IBM for their combined Data Science course. Received author credits and a renumeration for the same.**]()
+- **Had some of my work copyrighted by Laureate and IBM for their combined Data Science course. Received author credits and a renumeration for the same.**
 
 
 ## NYA Fellowship:
 
-- [**Got selected for North Yard Analytics Fellowship. They are a soccer analytics company and offers two NYA Fellowships every year. Received free data from Opta Sports, a soccer analytics giant, 1000USD as prize money and mentorship from top analysts working at professional clubs.**]()
+- **Got selected for North Yard Analytics Fellowship. They are a soccer analytics company and offers two NYA Fellowships every year. Received free data from Opta Sports, a soccer analytics giant, 1000USD as prize money and mentorship from top analysts working at professional clubs.**
 
 
 ## Research work:
@@ -25,6 +25,7 @@ author_profile: true
 - [**Under the supervision of Dr. Sriparna Saha, Naveen Saini, IIT Patna, worked on creating algorithms for multi labeled classification of Reuters dataset using Self Organizing Maps. Soon to be published.**]()
 
 - [**Worked under Dr. Anul Haq and researched on classification of different Machine Learning and Deep Learning classifiers on hyperspectral imagery of the Himalayas. Soon to be published.**]()
+
 
 ## Scholarship:
 
