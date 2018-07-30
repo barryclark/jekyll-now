@@ -7,10 +7,11 @@ comments: true
 tags: [data analysis, data science, data preprocessing]
 ---
 
-<img src="https://cdn-images-1.medium.com/max/800/1*pKo6DmEKYf0EJCKXueFX_Q.jpeg" width="85%">
-
 
 This is a blog for people new to Data Science, like me. I hope we learn together through this process. My personal interests lie heavily in Data Analytics and Visualisation, so keep an eye out for more blogs on the same.
+
+<img src="https://cdn-images-1.medium.com/max/800/1*pKo6DmEKYf0EJCKXueFX_Q.jpeg" width="85%">
+
 
 Datasets are like introverted human beings, at first, they might/might not give you a misleading idea but they never lie. Exploratory analysis, noise removal, missing value treatment, identifying outliers and correct data inconsistencies, and more, all are a part of the process called data preparation and exploration. I will talk more about these in detail below.
 

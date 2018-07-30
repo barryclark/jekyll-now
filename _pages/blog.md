@@ -6,8 +6,7 @@ author_profile: true
 comments: true
 ---
 
-Most of my blogs are technical blogs written mainly for my own reference. I'd be happy if any of you find them useful too.
-
+Most of my blogs are technical blogs written for Data Scientists, Analysts, or Soccer Analysts. I'd be happy if any of you find them useful. Feel free to share your feedback.
 
 
 <ul>

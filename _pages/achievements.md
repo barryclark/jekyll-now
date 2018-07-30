@@ -8,14 +8,14 @@ author_profile: true
 <br><br>
 
 
-## IBM Analytics Acknowledged work:
+## IBM Analytics-Laureate Education Acknowledged:
 
-- [**Had some of my work copyrighted by Laureate and IBM for their combined Data Science course. Received credits and a little amount.**]()
+- [**Had some of my work copyrighted by Laureate and IBM for their combined Data Science course. Received author credits and a renumeration for the same.**]()
 
 
 ## NYA Fellowship:
 
-- [**Got selected for North Yard Analytics Fellowship. They are a soccer analytics company and offers two NYA Fellowships every year. It has been a great experience so far. Received free data from Opta Pro, a soccer analytics giant, 1000USD as prize money and mentorship from top analysts working at professional clubs.**]()
+- [**Got selected for North Yard Analytics Fellowship. They are a soccer analytics company and offers two NYA Fellowships every year. Received free data from Opta Sports, a soccer analytics giant, 1000USD as prize money and mentorship from top analysts working at professional clubs.**]()
 
 
 ## Research work:
@@ -28,4 +28,4 @@ author_profile: true
 
 ## Scholarship:
 
-- [**Received constant financial support from NIIT University as I maintained a 50% scholarship throughout the undergraduate years**]()
+- **Received constant financial support from NIIT University, as I maintained a 50% scholarship throughout undergraduate studies.**

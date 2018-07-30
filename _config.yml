@@ -79,7 +79,7 @@ analytics:
 # Site Author
 author:
   name             : "Abhinav Ralhan"
-  avatar           : "/others/profile.png" #profile1.png # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/others/profile1.png" #profile1.png # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Undergraduate, CSE at NIIT University"
   location         : "New Delhi, India"
   email            : "abhinav.ralhan1@gmail.com"
@@ -95,13 +95,13 @@ author:
   keybase          :
   instagram        :
   lastfm           :
-  linkedin         : "https://www.linkedin.com/in/abhinav-ralhan-856920105/" #"https://www.linkedin.com/in/aishwariyagupta/"
+  linkedin         : "abhinav-ralhan-856920105/"
   pinterest        :
   soundcloud       :
   stackoverflow    : # "" 
   steam            :
   tumblr           :
-  twitter          : "abhinavr8" #"_aishwariya_"
+  twitter          : "abhinavr8" 
   vine             :
   weibo            :
   xing             :

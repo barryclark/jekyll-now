@@ -7,14 +7,17 @@ author_profile: true
 ---
 
 
-I am a final year Undergraduate student at the NIIT University, Computer Science Department. My research experience lies in designing and developing algorithms to apply machine learning, specifically self organizing maps. Other experiences include classification of Himalayan hyperspectral imagery and designing channel assignment algorithms in cognitive radio networks. Being an undergraduate researcher allowed me to experience a few different domains. 
+I am a final year Undergraduate student at **NIIT University, Computer Science Department**. My research experience lies in designing and developing algorithms to apply machine learning, specifically self organizing maps. My technical skills include **Python, R, Javascript, C++**. I enjoy solving problems on Kaggle/Analytics Vidhya and writing my learnings from the same. Previously, I have worked with frameworks like **Angularjs, Nodejs** and I learnt about software engineering architectures.
 
-Currently, I am a North Yard Analytics Fellow, a soccer analytics enthusiast and have posted several articles on Medium regarding the same. I am highly interested in Data Analytics, Machine Learning, Soccer Analytics and look forward to continue to solve real world problems in those domains.
+Currently, I am a North Yard Analytics Fellow, a soccer analytics enthusiast and have posted several articles on Medium regarding the same. I am highly interested in **Data Analytics, Machine Learning, Soccer Analytics** and look forward to continue to solve real world problems in those domains.
 
+I am interested in opportunities in Machine Learning, Data Science and Software Engineering. Feel free to contact me for the same.
 
-### Education:
+### Experience:
 - **IIT Patna** (2018)   
   Research Intern, AI-ML-NLP Lab
+- **SourceFuse Technologies** (2017)   
+  MEAN Stack Developer Intern
 - **NIIT University** (2015 - 2019)   
   Bachelors of Technology, Computer Science
 - **St. Mary's School** (2003 - 2015)   
@@ -36,8 +39,8 @@ Currently, I am a North Yard Analytics Fellow, a soccer analytics enthusiast and
 - [**Twitter Analytics Dashboard**](https://github.com/abhinavralhan/capstone-apache-storm):      
   Used Apache Storm to process real time data and visualizations 
 
-- [**Web App for managing personal finances**](https://github.com/abhinavralhan/ml-stanford-coursera):      
+- [**Web App for managing personal finances**](https://github.com/abhinavralhan/reimagined-octo-rotary-phone):      
 	Created a web app to manage personal finances. Written with help of Angularjs, Html, Css, Bootstrap.
 
 - [**Twitter Bot**](https://github.com/abhinavralhan/twitter-bot):      
-	Created a Twitter bot which would tweet on an increase of a follower. Written in Javascript with the help of Twitter api.
+	Created a Twitter bot which would tweet on an increase of a follower. Written in Javascript with the help of Twitter Api.
