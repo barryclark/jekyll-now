@@ -1,6 +1,6 @@
-----
+---
 title: The Weekend (Day Twenty Three)
-----
+---
 
 Even though I didn't intend for it to be, this weekend ended up being dedicated to getting DOLPHOT on my laptop. I wanted to focus on photometry as I had said of [Friday](https://thom-ory.github.io/day-twenty-two/), but I unfortunately cannot access the Mac lab on the weekends, so I had to get DOLPHOT to work on my laptop if I was to get anything done. 
 
