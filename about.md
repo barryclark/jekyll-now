@@ -17,6 +17,14 @@ Busco aprimorar meus conhecimentos em Delphi continuamente, como também mantenh
  * Gluk Sistemas - 1 Janeiro 2017 até 28 Agosto de 2017.
  * Sysmo Sistemas - 1 Agosto 2018 até o momento.
 
+#### Tecnologias
+
+  * Delphi
+  * Java
+  * JavaScript
+  * HTML/CSS
+  * PostgreSQL, Firebird
+
 #### Contato
 
 [Marcelo Lauxen](mailto:marcelolauxen16@gmail.com)
