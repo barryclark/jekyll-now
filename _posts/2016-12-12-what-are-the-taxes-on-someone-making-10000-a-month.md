@@ -3,6 +3,7 @@ layout: post
 title: What are the Taxes on Someone Making $10,000 a Month?
 tags: [politics, money, math, quora]
 keywords: [income tax, property tax, fuel tax, tax, income tax bracket, tax bracket]
+hashtags: [taxes, math]
 javascripts: [/js/d3.min.js, /js/c3.min.js]
 csses: [/css/c3.min.css]
 image: /images/covers/tax-cover.jpg
