@@ -35,6 +35,14 @@ RCombine = 1.5
 SigPSF = 5.0  
 PSFres = 1  
 
+>Finally, there are six new parameters that can be used:  
+WFC3useCTE = 1   
+FlagMask = 4   
+CombineChi = 0   
+WFC3IRpsfType = 0
+WFC3UVISpsfType = 0   
+InterpPSFlib = 1  
+
 Nifty things, manuals. 
 
 # Conclusion
