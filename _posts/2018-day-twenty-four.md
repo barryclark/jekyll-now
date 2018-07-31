@@ -51,49 +51,35 @@ What's happens is... weirdness. I honestly have no idea what's going on. The ter
 > if (!strcasecmp(var,"PSFPhotIt")) {PSFPhotIt=i; if (PSFPhotIt<1 || PSFPhotIt>5) perr("PSTPhotIt=1-5"); return 1;}
 
 which shows that the only existence of "PSTPhotIt" on the internet is as the typoed error message when PSFPhotIt is outside of the bounds. This lead me to discover that dolphot isn't looking at the meticulously-planned parameter file I've been writing but the generic one that came with DOLPHOT. Ugh. I tried copying my 'ib2o01020_phot.param', the file specifically designed for this one folder, into the param folder that dolphot has, still specifying which parameter file to look. It again ignored me. I made a copy of the original parameter file, called it '[backup]dolphot.param', saved it to the desktop, and replaced the body of 'dolphot.param' with what I had written. This led to something new, finally, but it gave me this:
->Cannot parse parameter line:
+>Cannot parse parameter line:  
+Cannot parse parameter line:  
+Cannot parse parameter line:   
+Cannot parse parameter line:  
+Cannot match parameter name:  
+PSFa  
+Cannot match parameter name:  
+PSFb  
+Cannot match parameter name:  
+PSFc  
+Cannot parse parameter line:  
+Cannot parse parameter line:    
+Cannot parse parameter line:  
+Cannot parse parameter line:  
+Reading FITS file ib2o01soq_flc.chip1.sky.fits: 4096x2051    
+  GAIN=1.00 EXP=10s NOISE=3.08 BAD=-44.24 SAT=99299.56    
+Reading FITS file ib2o01soq_flc.chip2.sky.fits: 4096x2051   
+  GAIN=1.00 EXP=10s NOISE=3.13 BAD=-30.97 SAT=98252.36    
+Reading FITS file ib2o01spq_flc.chip1.sky.fits: 4096x2051   
+  GAIN=1.00 EXP=600s NOISE=3.08 BAD=-13.33 SAT=103323.77    
+Reading FITS file ib2o01spq_flc.chip2.sky.fits: 4096x2051   
+  GAIN=1.00 EXP=600s NOISE=3.13 BAD=-8.88 SAT=100444.31   
+Reading FITS file ib2o01ssq_flc.chip1.sky.fits: 4096x2051   
+  GAIN=1.00 EXP=600s NOISE=3.08 BAD=-31.13 SAT=102335.94    
+Reading FITS file ib2o01020_drz.fits    
+  GAIN=1.40 EXP=2496s NOISE=5.40 BAD=-1.00 SAT=65535.00   
+****Number of extensions are not the same   
 
 
-Cannot parse parameter line:
-
-
-Cannot parse parameter line:
-
-
-Cannot parse parameter line:
-
-
-Cannot match parameter name:
-PSFa
-Cannot match parameter name:
-PSFb
-Cannot match parameter name:
-PSFc
-Cannot parse parameter line:
-
-
-Cannot parse parameter line:
-
-
-Cannot parse parameter line:
-
-
-Cannot parse parameter line:
-
-
-Reading FITS file ib2o01soq_flc.chip1.sky.fits: 4096x2051
-  GAIN=1.00 EXP=10s NOISE=3.08 BAD=-44.24 SAT=99299.56
-Reading FITS file ib2o01soq_flc.chip2.sky.fits: 4096x2051
-  GAIN=1.00 EXP=10s NOISE=3.13 BAD=-30.97 SAT=98252.36
-Reading FITS file ib2o01spq_flc.chip1.sky.fits: 4096x2051
-  GAIN=1.00 EXP=600s NOISE=3.08 BAD=-13.33 SAT=103323.77
-Reading FITS file ib2o01spq_flc.chip2.sky.fits: 4096x2051
-  GAIN=1.00 EXP=600s NOISE=3.13 BAD=-8.88 SAT=100444.31
-Reading FITS file ib2o01ssq_flc.chip1.sky.fits: 4096x2051
-  GAIN=1.00 EXP=600s NOISE=3.08 BAD=-31.13 SAT=102335.94
-Reading FITS file ib2o01020_drz.fits
-  GAIN=1.40 EXP=2496s NOISE=5.40 BAD=-1.00 SAT=65535.00
-****Number of extensions are not the same
 
 # Conclusion
 I'm just realizing that I only ever downloaded the WFC3/UVIS data, but I have PAMs and PSFs for ACS/WFC as well. I think maybe I was right to only download WFC3/UVIS data in the first place, and I think I only downloaded ACS/WFC PSFs and PAMs because the [PYDOLPHOT tutorial](https://github.com/dweisz/pydolphot) said to. Should I download the ACS/WFC data, too? 
