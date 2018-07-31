@@ -14,4 +14,4 @@ Birthday: 29-10-2002
 
 ### <span class="left-slide">Contact me</span>
 
-► [comehere.thang@gmail.com](mailto:comehere.thang@gmail.com)
+[comehere.thang@gmail.com](mailto:comehere.thang@gmail.com)
