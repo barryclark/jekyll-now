@@ -7,7 +7,7 @@ permalink: /tools/compound-interest-calculator/
 <div class="input-form">
 <div><label for="start-amount">Start Amount</label><input type="number" id="start-amount" value="100" /></div>
 <div><label for="interest-rate">APR</label><input type="number" id="interest-rate" value="10" /></div>
-<div><label for="monthly-contributions">Monthly Contribution</label><input type="number" id="monthly-contributions" value="10" /></div>
+<div><label for="monthly-contribution">Monthly Contribution</label><input type="number" id="monthly-contribution" value="10" /></div>
 <div><label for="years">Number of Years</label><input type="number" id="years" value="10" /></div>
 <div><button id="calculate-button" type="button">Calculate!</button></div>
 <div>
@@ -20,10 +20,14 @@ permalink: /tools/compound-interest-calculator/
 $("#calculate-button").click(function() {
   var pv = $("#start-amount").val();
   var rate = $("#interest-rate").val();
-  var contributions = $("#monthly-contributions").val();
+  var contribution = $("#monthly-contribution").val();
   var years = $("#years").val();
   
-  $("#results-table").append("<tr><td>January</td><td>$" + pv + "</td></tr>");
+  for(var month = 0; month < years * 12; month++) {
+    $("#results-table").append("<tr><td>" + month + "</td><td>$" + pv + "</td></tr>");
+    
+    pv = pv * (1 + rate / 100) + contribution;
+  }
   
   $("#results-table").show();
 });
