@@ -18,7 +18,7 @@ permalink: /tools/compound-interest-calculator/
 
 <script>
 $("#calculate-button").click(function() {
-  var num2string = new function(var number) {
+  var num2string = function(var number) {
     return "$" + Number(number.tofixed(2)).toLocaleString();
   }
   
