@@ -20,12 +20,12 @@ permalink: /tools/compound-interest-calculator/
 $("#calculate-button").click(function() {
   var num2string = function(number) {
     var n1 = Number.parseFloat(number).toFixed(2);
-    return "$" + Number.parseFloat(n1).toLocaleString();
+    return "$" + Number.parseFloat(number).toFixed(2).toLocaleString();
   }
   
-  var pv = $("#start-amount").val();
-  var rate = $("#interest-rate").val();
-  var contribution = $("#monthly-contribution").val();
+  var pv = Number.parseFloat($("#start-amount").val());
+  var rate = Number.parseFloat($("#interest-rate").val());
+  var contribution = Number.parseFloat($("#monthly-contribution").val());
   var years = $("#years").val();
   
   var contributions = 0;
