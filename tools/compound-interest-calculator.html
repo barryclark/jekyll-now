@@ -19,7 +19,10 @@ permalink: /tools/compound-interest-calculator/
 <script>
 $("#calculate-button").click(function() {
   var num2string = function(number) {
-    return "$" + Number(number.tofixed(2)).toLocaleString();
+    var n = Number(number).tofixed(2);
+    n =  Number(number).toLocaleString();
+    
+    return "$" + n;
   }
   
   var pv = $("#start-amount").val();
