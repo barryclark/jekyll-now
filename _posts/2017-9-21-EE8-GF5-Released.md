@@ -31,7 +31,7 @@ The Java EE community at large
 And many others who most of the time works behind the scene like the team at Oracle who develops GlassFish itself and the team managing the build infrastructure!
 Kudos to all of you! Java EE 8 wouldn’t have been possible without your work and dedication!
 
-As you probably know, this is just the beginning as we are working, together with the community including the Eclipse Foundation, Red Hat and IBM to open Java EE even more by transferring its development under the auspices of the Eclipse Foundation (see here and here). There are many discussions going on and we hope to be able to [share additional details at JavaOne](https://events.rainfocus.com/catalog/oracle/oow17/catalogjavaone17?search=CON8030&showEnrolled=false).
+As you probably know, this is just the beginning as we are working, together with the community including the Eclipse Foundation, Red Hat and IBM to open Java EE even more by transferring its development under the auspices of the Eclipse Foundation (see [here](http://delabassee.com/Opening-up-Java-EE/) and [here](http://delabassee.com/Opening-up-Java-EE-update/)). There are many discussions going on and we hope to be able to [share additional details at JavaOne](https://events.rainfocus.com/catalog/oracle/oow17/catalogjavaone17?search=CON8030&showEnrolled=false).
 
 Today also marks the general availability of Java SE 9. As mentioned above GlassFish 5.0 leverages new features in Java SE 8, and is certified today on Java SE 8. Even though we have a lot of work in front of us with the transition to the Eclipse Foundation, our current intent is to certify Java SE 9 in an upcoming GlassFish 5 release.  We will keep you posted on future developments in this area.
 
