@@ -10,10 +10,10 @@ permalink: /tools/compound-interest-calculator/
 <div><label for="monthly-contribution">Monthly Contribution</label><input type="number" id="monthly-contribution" value="10" /></div>
 <div><label for="years">Number of Years</label><input type="number" id="years" value="10" /></div>
 <div><button id="calculate-button" type="button">Calculate!</button></div>
-<div>
+</div>
 
 <table id="results-table" style="display: none;">
-<tr><th>Month</th><th>Balance</th></tr>
+  <tr><th>Month</th><th>Balance</th><th>Contributions</th><th>Interest</th></tr>
 </table>
 
 <script>
@@ -23,10 +23,15 @@ $("#calculate-button").click(function() {
   var contribution = $("#monthly-contribution").val();
   var years = $("#years").val();
   
+  var contributions = 0;
+  var interest = 0;
+  
   for(var month = 0; month < years * 12; month++) {
-    $("#results-table").append("<tr><td>" + month + "</td><td>$" + pv + "</td></tr>");
+    $("#results-table").append("<tr><td>" + month + "</td><td>$" + pv.toFixed(2).toLocaleString() + "</td><td>$" + contributions.toFixed(2).toLocaleString() + "</td><td>$" + interest.toFixed(2).toLocaleString() + "</td></tr>");
     
-    pv = pv * (1 + rate / 100) + contribution;
+    interest = pv * (1 + rate / 1200);
+    pv = interest + contribution;
+    contributions = contributions + contribution;
   }
   
   $("#results-table").show();
