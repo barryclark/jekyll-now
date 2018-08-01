@@ -6,7 +6,7 @@ title: Serverless Kotlin with Fn Project
 [Kotlin](https://kotlinlang.org/) is one of the fastest growing programming languages; it is used in the Android ecosystem and also is gaining traction in the enterprise world. So why not use Kotlin in the FaaS and Serverless space too?
 
 <p align="center">
-<img alt="Kotlin & Fn — A perfect combo?" src="https://cdn-images-1.medium.com/max/1600/1*y3Cv0BioS1leQH7qv8D-4g.png" width="75%">
+<img alt="Kotlin & Fn — A perfect combo?" src="https://cdn-images-1.medium.com/max/1600/1*y3Cv0BioS1leQH7qv8D-4g.png" width="75%"></img>
 </p>
 
 Given its polyglot nature, [Fn](http://fnproject.io/) makes it very easy to write Kotlin based functions (“functions” as in FaaS).
@@ -39,7 +39,8 @@ The conciseness of this post demonstrates that Fn makes it easy to leverage Kotl
 ```
 fn init --runtime kotlin myfunc
 fn deploy --local --app myApp myfunc
-fn call myApp /myfunc```
+fn call myApp /myfunc
+```
 
 Given that Kotlin is leveraging the Java platform and that Java is a 1st class citizen on Fn will offer Fn users some nice benefits that will be highlighted in an upcoming post.
  
