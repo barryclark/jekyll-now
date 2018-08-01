@@ -6,10 +6,9 @@ title: Java EE 8 - Community Survey Results and Next Steps
 Thanks to everyone who took the time to complete the Java EE Community Survey!  1693 of you completed the survey, and ranked the importance of 21 different component technologies included in our proposed Java EE roadmap presented at JavaOne 2016.  For more detail on this roadmap, watch [Anil Gaur’s Keynote at JavaOne 2016](https://www.youtube.com/watch?v=ZqfjW-RQPOs).
 
 Detailed findings and analysis can be found here and the chart below summarizes community ranking of component technologies surveyed, from most important to least important.
-Score ranking
 
 <p align="center">
-<img alt="Java EE 8" src="http://delabassee.com/images/blog/surv_chart.jpg" width="75%">
+<img alt="Score ranking" src="http://delabassee.com/images/blog/surv_chart.jpg" width="75%">
 </p>
 
 
