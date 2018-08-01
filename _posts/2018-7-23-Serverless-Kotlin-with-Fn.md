@@ -6,7 +6,7 @@ title: Serverless Kotlin with Fn Project
 [Kotlin](https://kotlinlang.org/) is one of the fastest growing programming languages; it is used in the Android ecosystem and also is gaining traction in the enterprise world. So why not use Kotlin in the FaaS and Serverless space too?
 
 <p align="center">
-<img alt="Kotlin and Fn .  A perfect combo?" src="https://cdn-images-1.medium.com/max/1600/1*y3Cv0BioS1leQH7qv8D-4g.png" width="75%"></img>
+<img alt="Kotlin and Fn .  A perfect combo?" src="https://cdn-images-1.medium.com/max/1600/1*y3Cv0BioS1leQH7qv8D-4g.png" width="75%"/>
 </p>
 
 Given its polyglot nature, [Fn](http://fnproject.io/) makes it very easy to write Kotlin based functions (“functions” as in FaaS).
