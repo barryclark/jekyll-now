@@ -16,8 +16,7 @@ To develop a Kotlin function, simply bootstrap it using the usual way with the [
 
 **to delete src="https://gist.github.com/delabassee/01e3f02ac59798ba6b92fb541321f00b.js" **
 
-<script src="https://gist.github.com/benbalter/5555251.js"></script>
-<script src="https://gist.github.com/benbalter/5555251.js?file=gist.md"></script>
+<script src="https://gist.github.com/delabassee/01e3f02ac59798ba6b92fb541321f00b.js"></script>
 
 **_src/main/kotlin/HelloFunction.kt_** is a simple Kotlin function that helps you bootstrap your own function.
 
