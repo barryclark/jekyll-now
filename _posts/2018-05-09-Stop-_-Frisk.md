@@ -172,7 +172,7 @@ With that in mind, we can use this model to predict the next year's rate of stop
 
 The chart below plots the neighborhood-level crime-only model residuals by the neighborhood proportion of residents of color (again from the 2010 Census). 
 
-![](https://raw.githubusercontent.com/GWarrenn/gwarrenn.github.io/drafts/images/stop_and_frisk/crime_model_residuals.png)
+![](https://raw.githubusercontent.com/GWarrenn/gwarrenn.github.io/drafts/images/stop_and_frisk/09_crime_model_residuals.png)
 
 When viewed through a racial context, this "crime-only" approach to modeling stop and frisk appears to have its limits; it generally over predicts the number of stop and frisk incidents in whiter neighborhoods and under predicts the amount of stop and frisk in neighborhoods with higher concentrations of people of color. If police were only to use crime as a decision making data point then we would expect to see equal distribution of residuals across neighborhoods with varying levels of residents of color. This indicates that there is something else driving the relationship between stop and frisk and crime (and it might have something to do with race).
 
