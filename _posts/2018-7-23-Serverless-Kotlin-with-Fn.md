@@ -16,13 +16,13 @@ To develop a Kotlin function, simply bootstrap it using the usual way with the [
 
 **script src="https://gist.github.com/delabassee/01e3f02ac59798ba6b92fb541321f00b.js" **
 
-*src/main/kotlin/HelloFunction.kt* is a simple Kotlin function that helps you bootstrap your own function.
+**_src/main/kotlin/HelloFunction.kt_** is a simple Kotlin function that helps you bootstrap your own function.
 
 **GIST2**
 
-*src/test/kotlin/HelloFunctionTest.kt* is a Kotlin based rule to Unit test this same function.
+**_src/test/kotlin/HelloFunctionTest.kt_** is a Kotlin based rule to Unit test this same function.
 
-A *func.yaml* containing the function metadata and a Maven based build file (*pom.xml*) are also created in that init process.
+A **_func.yaml_** containing the function metadata and a Maven based build file (**_pom.xml_**) are also created in that init process.
 
 ## Test, Run and Deploy a Kotlin Function
 
