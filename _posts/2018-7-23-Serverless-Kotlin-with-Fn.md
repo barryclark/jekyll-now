@@ -6,7 +6,7 @@ title: Serverless Kotlin with Fn Project
 [Kotlin](https://kotlinlang.org/) is one of the fastest growing programming languages; it is used in the Android ecosystem and also is gaining traction in the enterprise world. So why not use Kotlin in the FaaS and Serverless space too?
 
 <p align="center">
-<img alt="Kotlin & Fn — A perfect combo?" src="https://cdn-images-1.medium.com/max/1600/1*y3Cv0BioS1leQH7qv8D-4g.png" width="75%"></img>
+<img alt="Kotlin and Fn .  A perfect combo?" src="https://cdn-images-1.medium.com/max/1600/1*y3Cv0BioS1leQH7qv8D-4g.png" width="75%"></img>
 </p>
 
 Given its polyglot nature, [Fn](http://fnproject.io/) makes it very easy to write Kotlin based functions (“functions” as in FaaS).
@@ -16,11 +16,11 @@ To develop a Kotlin function, simply bootstrap it using the usual way with the [
 
 <script src="https://gist.github.com/delabassee/01e3f02ac59798ba6b92fb541321f00b.js"></script>
 
-src/main/kotlin/HelloFunction.kt is a simple Kotlin function that helps you bootstrap your own function.
+*src/main/kotlin/HelloFunction.kt* is a simple Kotlin function that helps you bootstrap your own function.
 
-GIST
+**GIST2**
 
-src/test/kotlin/HelloFunctionTest.kt is a Kotlin based rule to Unit test this same function.
+*src/test/kotlin/HelloFunctionTest.kt* is a Kotlin based rule to Unit test this same function.
 
 A *func.yaml* containing the function metadata and a Maven based build file (*pom.xml*) are also created in that init process.
 
