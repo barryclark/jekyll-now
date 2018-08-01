@@ -14,13 +14,11 @@ Given its polyglot nature, [Fn](http://fnproject.io/) makes it very easy to writ
 ## Boostrap a Kotlin Function
 To develop a Kotlin function, simply bootstrap it using the usual way with the [Fn CLI](https://github.com/fnproject/cli) (v0.4.129+), `fn init —-runtime kotlin myfunc`. This will create the required files to quickly get started. And obviously, all those files have a Kotlin flavor.
 
-**to delete src="https://gist.github.com/delabassee/01e3f02ac59798ba6b92fb541321f00b.js" **
-
 <script src="https://gist.github.com/delabassee/01e3f02ac59798ba6b92fb541321f00b.js"></script>
 
 **_src/main/kotlin/HelloFunction.kt_** is a simple Kotlin function that helps you bootstrap your own function.
 
-**GIST2**
+<script src="https://gist.github.com/delabassee/3ef986d8b37e1be6490fa59e95d3833c.js"></script>
 
 **_src/test/kotlin/HelloFunctionTest.kt_** is a Kotlin based rule to Unit test this same function.
 
