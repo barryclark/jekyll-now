@@ -5,6 +5,11 @@ title: Some tests
 
 2018-7-20-Some-Tests.md
 
+__no underline__
+*italic*
+**bold**
+
+
 ```
 fn init --runtime kotlin myfunc
 ```
