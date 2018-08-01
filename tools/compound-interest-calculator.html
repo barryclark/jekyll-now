@@ -34,8 +34,8 @@ $("#calculate-button").click(function() {
   for(var month = 0; month < years * 12; month++) {
     $("#results-table").append("<tr><td>" + month + "</td><td>" + num2string(pv) + "</td><td>" + num2string(contributions) + "</td><td>" + num2string(interest) + "</td></tr>");
     
-    interest = pv * (1 + rate / 1200);
-    pv = interest + contribution;
+    interest = pv * rate / 1200);
+    pv = pv + interest + contribution;
     contributions = contributions + contribution;
   }
   
