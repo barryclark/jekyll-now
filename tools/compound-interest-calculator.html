@@ -32,7 +32,7 @@ $("#calculate-button").click(function() {
   var interest = 0;
   
   for(var month = 0; month < years * 12; month++) {
-    $("#results-table").append("<tr><td>" + month + "</td><td>" + num2string(pv) + "</td><td>" + num2string(contributions) + "</td><td>$" + num2string(interest) + "</td></tr>");
+    $("#results-table").append("<tr><td>" + month + "</td><td>" + num2string(pv) + "</td><td>" + num2string(contributions) + "</td><td>" + num2string(interest) + "</td></tr>");
     
     interest = pv * (1 + rate / 1200);
     pv = interest + contribution;
