@@ -9,7 +9,7 @@ Kotlin is one of the fastest growing programming languages; it is used in the An
 <img alt="Kotlin and Fn .  A perfect combo?" src="https://cdn-images-1.medium.com/max/1600/1*y3Cv0BioS1leQH7qv8D-4g.png" width="75%"/>
 </p>
 
-Given its polyglot nature, [Fn](http://fnproject.io/) makes it very easy to write Kotlin based functions (“functions” as in FaaS).
+Given its polyglot nature, [Fn](http://fnproject.io/) makes it very easy to write Kotlin based functions (“*functions*” as in FaaS).
 
 # Boostrap a Kotlin Function
 To develop a Kotlin function, simply bootstrap it using the usual way with the [Fn CLI](https://github.com/fnproject/cli) (v0.4.129+), `fn init —-runtime kotlin myfunc`. This will create the required files to quickly get started. And obviously, all those files have a Kotlin flavor.
