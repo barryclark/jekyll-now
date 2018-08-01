@@ -11,7 +11,7 @@ Kotlin is one of the fastest growing programming languages; it is used in the An
 
 Given its polyglot nature, [Fn](http://fnproject.io/) makes it very easy to write Kotlin based functions (“functions” as in FaaS).
 
-## Boostrap a Kotlin Function
+# Boostrap a Kotlin Function
 To develop a Kotlin function, simply bootstrap it using the usual way with the [Fn CLI](https://github.com/fnproject/cli) (v0.4.129+), `fn init —-runtime kotlin myfunc`. This will create the required files to quickly get started. And obviously, all those files have a Kotlin flavor.
 
 <script src="https://gist.github.com/delabassee/01e3f02ac59798ba6b92fb541321f00b.js"></script>
@@ -24,7 +24,7 @@ To develop a Kotlin function, simply bootstrap it using the usual way with the [
 
 A **_func.yaml_** containing the function metadata and a Maven based build file (**_pom.xml_**) are also created in that init process.
 
-## Test, Run and Deploy a Kotlin Function
+# Test, Run and Deploy a Kotlin Function
 
 To test the function, call Maven with the test goal, i.e. `mvn test`.
 
