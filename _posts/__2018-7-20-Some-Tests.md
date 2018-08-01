@@ -18,6 +18,13 @@ fun hello(input: String) = when {
 }
 ```
 
+<p align="center">
+<img alt="email" src="http://delabassee.com/images/blog/mail_pic.jpg" width="80%">
+</p>
+
+![email](/images/blog/mail_pic.jpg#center)
+
+
 ## GIST inclusion 
 
 #### embed
