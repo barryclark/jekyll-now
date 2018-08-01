@@ -18,6 +18,10 @@ permalink: /tools/compound-interest-calculator/
 
 <script>
 $("#calculate-button").click(function() {
+  var num2string = new function(var number) {
+    return "$" + Number(number.tofixed(2)).toLocaleString();
+  }
+  
   var pv = $("#start-amount").val();
   var rate = $("#interest-rate").val();
   var contribution = $("#monthly-contribution").val();
@@ -27,7 +31,7 @@ $("#calculate-button").click(function() {
   var interest = 0;
   
   for(var month = 0; month < years * 12; month++) {
-    $("#results-table").append("<tr><td>" + month + "</td><td>$" + pv.toFixed(2).toLocaleString() + "</td><td>$" + contributions.toFixed(2).toLocaleString() + "</td><td>$" + interest.toFixed(2).toLocaleString() + "</td></tr>");
+    $("#results-table").append("<tr><td>" + month + "</td><td>" + num2string(pv) + "</td><td>" + num2string(contributions) + "</td><td>$" + num2string(interest) + "</td></tr>");
     
     interest = pv * (1 + rate / 1200);
     pv = interest + contribution;
