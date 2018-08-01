@@ -1,6 +1,6 @@
 ---
 layout: post
-title: EE4J: An Update
+title: EE4J - An Update
 ---
 
 Mike Milinkovich of the Eclipse Foundation has recently posted a [blog](https://mmilinkov.wordpress.com/2018/01/23/ee4j-current-status-and-whats-next/) providing an overall update on the status of the project. To summarize:
