@@ -7,18 +7,19 @@ Mike Milinkovich of the Eclipse Foundation has recently posted a [blog](https://
 
 * We are working on defining a new brand name using the community process described [here](https://github.com/eclipse-ee4j/ee4j/issues/1).
 
-* We have begun the process of moving Oracle GlassFish sources to the EE4J project. So far, Oracle has contributed sources for the following projects:   EE4J GitHub repos
-** Eclipse Grizzly
-** Eclipse OpenMQ
-** Eclipse Project for JAX-RS
-** Eclipse Project for JMS
-** Eclipse Tyrus
-** Eclipse Project for WebSocket
-** Eclipse Project for JSON Processing
+* We have begun the process of moving Oracle GlassFish sources to the EE4J project. So far, Oracle has contributed sources for the following projects:
+  * EE4J GitHub repos
+  * Eclipse Grizzly
+  * Eclipse OpenMQ
+  * Eclipse Project for JAX-RS
+  * Eclipse Project for JMS
+  * Eclipse Tyrus
+  * Eclipse Project for WebSocket
+  * Eclipse Project for JSON Processing
 
 * In addition to the above:
-** The Eclipse Yasson and EclipseLink projects have been transferred to EE4J, and are now part of the overall EE4J project.
-** We have created Eclipse Jersey and Eclipse Mojarra projects and are working on contributing sources for these.
+  * The Eclipse Yasson and EclipseLink projects have been transferred to EE4J, and are now part of the overall EE4J project.
+  * We have created Eclipse Jersey and Eclipse Mojarra projects and are working on contributing sources for these.
 
 * You can watch (and star!) EE4J project repositories as they are being created in the [EE4J GitHub organization](https://github.com/eclipse-ee4j).
 
