@@ -33,7 +33,7 @@ fun hello(input: String) = when {
 ## GIST inclusion 
 
 #### embed
-<script src="<script src="https://gist.github.com/delabassee/12bfd37ec64b8e49aaadcaf0e921007e.js"></script>"></script>
+<script src="<script src="https://gist.github.com/delabassee/12bfd37ec64b8e49aaadcaf0e921007e.js"></script>">
 
 
 ```kotlin
