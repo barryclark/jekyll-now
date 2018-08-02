@@ -56,7 +56,7 @@ $("#calculate-button").click(function() {
     $("#results-table").append("<tr><td>" + month + "</td><td>" + num2string(pv) + "</td><td>" + num2string(contributions) + "</td><td>" + num2string(interest) + "</td></tr>");
     
     data.push([month, pv, contributions + start]);
-    interest = pv * rate / 1200);
+    interest = pv * rate / 1200;
     pv = pv + interest + contribution;
     contributions = contributions + contribution;
   }
