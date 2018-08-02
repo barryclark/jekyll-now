@@ -35,6 +35,10 @@ function drawChart() {
     chartArea:{left:50,top:0,width:500,height:300}
   };
   
+  var formatter = new google.visualization.NumberFormat({prefix: '$'});
+  formatter.format(googleData, 2);
+  formatter.format(googleData, 3);
+  
   var chart = new google.visualization.AreaChart(document.getElementById('results-chart'));
   chart.clearChart();
   chart.draw(googleData, options);
