@@ -20,7 +20,7 @@ javascripts: ["https://www.gstatic.com/charts/loader.js"]
 
 <script>
 google.charts.load('current', {'packages':['corechart','table']});
-var data = [["month","balance","contribution"]];  
+var data;  
 
 function drawChart() {
   var googleData = google.visualization.arrayToDataTable(data);
@@ -44,14 +44,14 @@ function drawChart() {
   
 $("#calculate-button").click(function() {
   $("#results-div").hide();
-  $("#results-chart").empty();
-  $("#results-table").empty();
+  //$("#results-chart").empty();
+  //$("#results-table").empty();
   
   var pv = Number.parseFloat($("#start-amount").val());
   var rate = Number.parseFloat($("#interest-rate").val());
   var contribution = Number.parseFloat($("#monthly-contribution").val());
   var years = $("#years").val();
-  
+  data = [["month","balance","contribution"]];
   var contributions = pv;
   
   for(var month = 0; month < years * 12; month++) {    
