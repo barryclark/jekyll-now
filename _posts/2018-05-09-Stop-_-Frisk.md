@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Stop & Frisk in DC
+author: August Warren & Mahkah Wu
 ---	
 
 ![](https://raw.githubusercontent.com/GWarrenn/gwarrenn.github.io/drafts/images/stop_and_frisk/sf_header.png)
