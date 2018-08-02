@@ -33,4 +33,4 @@ We will revise the Java EE 8 proposal consistent with these findings. The table 
 Based on the survey results and implementation considerations discussed above, we’ll move forward with the revised Java EE 8 proposal. If you have further feedback on Java EE 8, please join the [project](https://java.net/projects/javaee-spec/pages/Home) (if you are not already a member), and post to [users@javaee-spec.java.net](https://java.net/projects/javaee-spec/lists/users/archive) for further discussion.
 
 
-*Originaly posted on [The Aquarium](https://blogs.oracle.com/theaquarium/java-ee-8-is-final-and-glassfish-50-is-released)*.
+*Originaly posted on [The Aquarium](https://blogs.oracle.com/theaquarium/java-ee-8-is-final-and-glassfish-50-is-released)* blog.
