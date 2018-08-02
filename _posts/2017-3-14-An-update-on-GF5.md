@@ -3,9 +3,6 @@ layout: post
 title: An update on GlassFish 5
 ---
 
-2017-3-14-An-update-on-GF5.md
-
-
 The Reference Implementation is a critical piece of any given JSR, this is even more true for Java EE. As the different Java EE 8 JSRs continue to make progress, it is now important to ramp up efforts around GlassFish 5, the open source Java EE 8 Reference Implementation. And today is an important milestone on the way to Java EE 8 as we are publishing the [first promoted build of GlassFish 5](http://download.oracle.com/glassfish/5.0/promoted/index.html), aka GlassFish-5.0-b03.
 
 <p align="center">
