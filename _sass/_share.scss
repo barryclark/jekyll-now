@@ -3,6 +3,7 @@
 	left: 10px;
 	white-space: nowrap;
 	overflow: visible;
+	text-align: center;
 	
 	@include mobile {
 		position: initial;
