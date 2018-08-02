@@ -9,10 +9,12 @@ The Reference Implementation is a critical piece of any given JSR, this is even 
 <img alt="Jakarta EE logo" src="http://delabassee.com/images/blog/gf_logo.png">
 </p>
 
-We are in fact releasing 2 types of GlassFish 5 builds: *nightly* and *promoted* (for both the full Java EE platform and the Web Profile). 
+We are in fact releasing 2 types of GlassFish 5 builds: _nightly_ and _promoted_ (for both the full Java EE platform and the Web Profile). 
 
-* *Nightly* builds have a daily cadence and goes through more limited testing; those builds are on the edge! See [here](http://download.oracle.com/glassfish/5.0/nightly/index.html).
-*The *promoted* builds on the other hand have a slower cadence, i.e. weekly cadence, but go through a larger set of tests including (an initial version of) the Java EE 8 CTS.  See [here](http://download.oracle.com/glassfish/5.0/promoted/index.html).
+* _Nightly_ builds have a daily cadence and goes through more limited testing; those builds are on the edge! See [here](http://download.oracle.com/glassfish/5.0/nightly/index.html).
+
+* The _promoted_ builds on the other hand have a slower cadence, i.e. weekly cadence, but go through a larger set of tests including (an initial version of) the Java EE 8 CTS.  See [here](http://download.oracle.com/glassfish/5.0/promoted/index.html).
+
 It is obvious that we are in the early days and everything is in motion: the different specifications, their respective Reference Implementations (e.g. Jersey for JAX-RS, Hibernate Validator for Bean Validation, ...) but also their own TCK. So clearly, we are not claiming that any GlassFish 5 promoted build is fully passing the Java EE 8 [CTS](http://www.oracle.com/technetwork/java/javaee/javaee-faq-jsp-135209.html#compatibilitytests) ... yet! ;-)
 
 It should also be mentioned that the cadences mentioned below might varies depending on the actual state of a given build, e.g. if the build is broken, it might be delayed or simply skipped.
