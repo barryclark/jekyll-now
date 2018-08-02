@@ -16,13 +16,13 @@ javascripts: ["https://www.gstatic.com/charts/loader.js"]
 <div id="results-div" style="display: none;">
 <div id="results-chart" style="width: 100%; height: 500px;"></div>
 
-<table id="results-table">
-  <tr><th>Month</th><th>Balance</th><th>Contributions</th><th>Interest</th></tr>
-</table>
+<div id="results-table">
+  <!-- tr><th>Month</th><th>Balance</th><th>Contributions</th><th>Interest</th></tr -->
+</div>
 </div>
 
 <script>
-google.charts.load('current', {'packages':['corechart']});
+google.charts.load('current', {'packages':['corechart','table']});
 var data = [["month","balance","contribution"]];  
 
 function drawChart() {
@@ -31,11 +31,15 @@ function drawChart() {
   var options = {
     title: 'Compound Interest',
       hAxis: {title: 'Month',  titleTextStyle: {color: '#333'}},
-      vAxis: {minValue: 0}
+      vAxis: {minValue: 0},
+      chartArea:{left:20,top:0,width:'50%',height:'75%'}
   };
   
   var chart = new google.visualization.AreaChart(document.getElementById('results-chart'));
   chart.draw(googleData, options);
+  
+  var table = new google.visualization.Table(document.getElementById('results-table'));
+  table.draw(data, {showRowNumber: true, width: '100%', height: '100%'});
 }
   
 function num2string(number) {
