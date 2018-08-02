@@ -3,7 +3,7 @@ layout: post
 title: Opening Up Java EE
 ---
  
-We continue to make great progress on Java EE 8. Specifications are nearly complete, and we expect to deliver the reference implementation this summer. As we approach the delivery of Java EE 8 and the JavaOne 2017 conference, we believe there is an opportunity to rethink how Java EE is developed in order to make it more agile and responsive to changing industry and technology demands.
+We continue to make great progress on Java EE 8. Specifications are nearly complete, and we expect to deliver the reference implementation this summer. <!--more-->As we approach the delivery of Java EE 8 and the JavaOne 2017 conference, we believe there is an opportunity to rethink how Java EE is developed in order to make it more agile and responsive to changing industry and technology demands.
 
 Java EE is enormously successful, with a competitive market of compatible implementations, broad adoption of individual technologies, a huge ecosystem of frameworks and tools, and countless applications delivering value to enterprises and end users. But although Java EE is developed in open source with the participation of the Java EE community, often the process is not seen as being agile, flexible or open enough, particularly when compared to other open source communities. We’d like to do better.
 
@@ -20,4 +20,4 @@ For more information about how this affects WebLogic Server, see [here](https://
 *The preceding is intended to outline our general product direction. It is intended for information purposes only, and may not be incorporated into any contract. It is not a commitment to deliver any material, code, or functionality, and should not be relied upon in making purchasing decisions. The development, release, and timing of any features or functionality described for Oracle’s products remains at the sole discretion of Oracle.*
  
 
-*Originaly posted on [The Aquarium](https://blogs.oracle.com/theaquarium/opening-up-ee)*.
+*Originaly posted on [The Aquarium](https://blogs.oracle.com/theaquarium/opening-up-ee)* blog.
