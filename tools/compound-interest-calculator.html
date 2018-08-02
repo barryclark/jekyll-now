@@ -14,6 +14,7 @@ javascripts: ["https://www.gstatic.com/charts/loader.js"]
 </div>
 
 <div id="results-div" style="display: none;">
+<h2 id="final-value"></h2>
 <div id="results-chart" style="width: 100%; height: 500px;"></div>
 <div id="results-table"></div>
 </div>
@@ -44,8 +45,6 @@ function drawChart() {
   
 $("#calculate-button").click(function() {
   $("#results-div").hide();
-  //$("#results-chart").empty();
-  //$("#results-table").empty();
   
   var pv = Number.parseFloat($("#start-amount").val());
   var rate = Number.parseFloat($("#interest-rate").val());
@@ -60,6 +59,7 @@ $("#calculate-button").click(function() {
     contributions = contributions + contribution;
   }
   
+  $("#final-value").text("Result: $" + Number.parseFloat(pv.toFixed(2)).toLocaleString() + " !");
   $("#results-div").show();
   drawChart();
 });
