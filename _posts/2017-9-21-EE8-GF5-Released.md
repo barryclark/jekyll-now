@@ -45,4 +45,4 @@ Resources:
 * [Java EE 8 tutorial](https://javaee.github.io/tutorial/)
 * [Java EE at a Glance](http://www.oracle.com/technetwork/java/javaee/overview/index.html)
 
-*Originaly posted on [The Aquarium](https://blogs.oracle.com/theaquarium/java-ee-8-is-final-and-glassfish-50-is-released)* blog.
+*Originaly posted on [The Aquarium](https://blogs.oracle.com/theaquarium/java-ee-8-is-final-and-glassfish-50-is-released) blog.*
