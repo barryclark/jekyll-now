@@ -3,7 +3,7 @@ layout: post
 title: An update on GlassFish 5
 ---
 
-The Reference Implementation is a critical piece of any given JSR, this is even more true for Java EE. As the different Java EE 8 JSRs continue to make progress, it is now important to ramp up efforts around GlassFish 5, the open source Java EE 8 Reference Implementation. And today is an important milestone on the way to Java EE 8 as we are publishing the [first promoted build of GlassFish 5](http://download.oracle.com/glassfish/5.0/promoted/index.html), aka GlassFish-5.0-b03.
+The Reference Implementation is a critical piece of any given JSR, this is even more true for Java EE. <!--more-->As the different Java EE 8 JSRs continue to make progress, it is now important to ramp up efforts around GlassFish 5, the open source Java EE 8 Reference Implementation. And today is an important milestone on the way to Java EE 8 as we are publishing the [first promoted build of GlassFish 5](http://download.oracle.com/glassfish/5.0/promoted/index.html), aka GlassFish-5.0-b03.
 
 <p align="center">
 <img alt="Jakarta EE logo" src="http://delabassee.com/images/blog/gf_logo.png">
@@ -25,4 +25,4 @@ The nightly builds will always be a few days ahead of the latest promoted build 
 
 GlassFish 5 should be released about six weeks after the Java EE 8 Platform specification ([JSR 366](https://jcp.org/en/jsr/detail?id=366)) is final. As of today, we are [targeting specification completion in July](https://java.net/projects/javaee-spec/lists/jsr366-experts/archive/2017-02/message/0), which would result on a release date in the August/September timeframe. The schedule is subject to change but that is our current direction.  
 
-*Originaly posted on [The Aquarium](https://blogs.oracle.com/theaquarium/an-update-on-glassfish-5)*.
+*Originaly posted on [The Aquarium](https://blogs.oracle.com/theaquarium/an-update-on-glassfish-5)* blog.
