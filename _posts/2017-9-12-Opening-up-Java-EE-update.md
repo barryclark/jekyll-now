@@ -3,7 +3,7 @@ layout: post
 title: Opening Up Java EE - An Update
 ---
  
-In a previous post, we announced that Oracle was beginning to explore moving Java EE technologies to an open source foundation in order to make the process of evolving these standards more agile, flexible and open. Since mid-August, we’ve had many discussions with other vendors, community members and open source foundations in order to move the process forward. Here’s an update on the progress we have made so far. 
+In a previous post, we announced that Oracle was beginning to explore moving Java EE technologies to an open source foundation in order to make the process of evolving these standards more agile, flexible and open. <!--more-->Since mid-August, we’ve had many discussions with other vendors, community members and open source foundations in order to move the process forward. Here’s an update on the progress we have made so far. 
 
 First, we have reached out to IBM and Red Hat, the other largest contributors to the Java EE platform, to solicit their support for this new direction. Oracle, IBM and Red Hat are collaborating on an ongoing basis to refine an approach that we can collectively support.  We've made good progress on this front, and expect to continue to work together to make this transition successful for all parties. Thank you IBM and Red Hat!
 
@@ -27,4 +27,4 @@ Note that in addition to all of the above, Oracle will continue to support exist
 *The preceding is intended to outline our general product direction. It is intended for information purposes only, and may not be incorporated into any contract. It is not a commitment to deliver any material, code, or functionality, and should not be relied upon in making purchasing decisions. The development, release, and timing of any features or functionality described for Oracle’s products remains at the sole discretion of Oracle.*
  
 
-*Originaly posted on [The Aquarium](https://blogs.oracle.com/theaquarium/https://blogs.oracle.com/theaquarium/opening-up-ee-update)*.
+*Originaly posted on [The Aquarium](https://blogs.oracle.com/theaquarium/https://blogs.oracle.com/theaquarium/opening-up-ee-update)* blog.
