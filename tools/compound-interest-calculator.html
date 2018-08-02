@@ -13,12 +13,9 @@ javascripts: ["https://www.gstatic.com/charts/loader.js"]
 <div><button id="calculate-button" type="button">Calculate!</button></div>
 </div>
 
-<div id="results-div">
+<div id="results-div" style="display: none;">
 <div id="results-chart" style="width: 100%; height: 500px;"></div>
-
-<div id="results-table">
-  <!-- tr><th>Month</th><th>Balance</th><th>Contributions</th><th>Interest</th></tr -->
-</div>
+<div id="results-table"></div>
 </div>
 
 <script>
@@ -48,26 +45,17 @@ function drawChart() {
   table.draw(googleData, {width: '100%', height: '100%'});
 }
   
-function num2string(number) {
-  return "$" + Number.parseFloat(number.toFixed(2)).toLocaleString();
-}
-  
 $("#calculate-button").click(function() { 
   var pv = Number.parseFloat($("#start-amount").val());
   var rate = Number.parseFloat($("#interest-rate").val());
   var contribution = Number.parseFloat($("#monthly-contribution").val());
   var years = $("#years").val();
   
-  var start = pv;
-  var contributions = 0;
-  var interest = 0;
+  var contributions = pv;
   
-  for(var month = 0; month < years * 12; month++) {
-    //$("#results-table").append("<tr><td>" + month + "</td><td>" + num2string(pv) + "</td><td>" + num2string(contributions) + "</td><td>" + num2string(interest) + "</td></tr>");
-    
-    data.push([month, pv, contributions + start]);
-    interest = pv * rate / 1200;
-    pv = pv + interest + contribution;
+  for(var month = 0; month < years * 12; month++) {    
+    data.push([month, pv, contributions]);
+    pv = pv *(1 + rate / 1200) + contribution;
     contributions = contributions + contribution;
   }
   
