@@ -10,9 +10,9 @@ Summary
 
 This analysis sets out to answer a few simple, yet complex, set of questions: 1) Who is being stopped and frisked by DC police? 2) How does the stop and frisk population compare to the overall population in DC? 3) How much, if any, are different groups of people being disproportionally targeted by stop and frisk? 
 
-* Overall, black residents, and particularly young black male residents, were stopped at a rate well in excess of both the proportion of black residents living in DC and the proportion of crime committed by black residents. At the same time, white residents were stopped at rate lower than their population and crime rate. This disproportionality persists within each of Washington DC's 39 racially diverse neighborhoods. 
+    * Overall, black residents, and particularly young black male residents, were stopped at a rate well in excess of both the proportion of black residents living in DC and the proportion of crime committed by black residents. At the same time, white residents were stopped at rate lower than their population and crime rate. This disproportionality persists within each of Washington DC's 39 racially diverse neighborhoods. 
 
-  *A few caveats to some of the claims just mentioned. Firstly, a higher crime rate in a specific neighborhood does not reflect the behavior of the residents in that neighborhood; people are transient and cross borders frequently. Secondly, higher crime rates among a certain racial/ethnic group do no warrant increased harassment by law enforcement. Finally, stop and frisk is very prone to the [observer effect](https://en.wikipedia.org/wiki/Observer_effect_(physics)); as a community is increasingly surveilled and has forcible contact with the police there might be more crime reported/observed by police. 
+ *A few caveats to some of the claims just mentioned. Firstly, a higher crime rate in a specific neighborhood does not reflect the behavior of the residents in that neighborhood; people are transient and cross borders frequently. Secondly, higher crime rates among a certain racial/ethnic group do no warrant increased harassment by law enforcement. Finally, stop and frisk is very prone to the [observer effect](https://en.wikipedia.org/wiki/Observer_effect_(physics)); as a community is increasingly surveilled and has forcible contact with the police there might be more crime reported/observed by police. 
 
 * There exists a powerful linear relationship between the previous year's crime level and the current year's stop and frisk within each neighborhood in DC. However, neighborhoods with higher black populations have greater rates of stop and frisk than a crime-only model would suggest.
 
@@ -63,9 +63,9 @@ Generally, the majority of stop and frisk incidents occur after 5:00 PM and befo
 Forcible vs. Non-Forcible Incidents 
 --------------
 
-Along with the stop and frisk data, the MPD also reported on "field contact reports" from 2012 to 2016. The main difference between a field contact and stop and frisk, as the documentation reports, is that field contact incidents are non-forcible stops and/or questioning between MPD and a citizen. Forcible contacts make up the lion's share of all interactions, accounting for more than 28,000 incidents over the five years data was collected, compared to ~11,000 non-forcible stops. 
+Along with the stop and frisk data, the MPD also reported on "field contact reports" from 2012 to 2016. The main difference between a field contact and stop and frisk, as the [documentation reports](https://go.mpdconline.com/GO/GO_OPS_304_10.pdf), is that field contact incidents are non-forcible stops and/or questioning between MPD and a citizen. Forcible contacts make up the lion's share of all interactions, accounting for more than 28,000 incidents over the five years data was collected, compared to ~11,000 non-forcible stops. 
 
-For the majority of the preceding and later analysis, I made the decision to group them together because a forcible/non-forcible stop still represented police intervention in the community. However, we'll spend a bit of time looking at the differences now.
+For the majority of the preceding and later analysis, I made the decision to only look at forcible stop and frisks. However, we'll spend a bit of time looking at both forcible and non-forcible stops now.
 
 ![](https://raw.githubusercontent.com/GWarrenn/gwarrenn.github.io/drafts/images/stop_and_frisk/race_contact.png)
 
@@ -147,7 +147,7 @@ I think that's how no-nonsense detective Lennie Briscoe might respond, at least.
 
 ![](https://raw.githubusercontent.com/GWarrenn/gwarrenn.github.io/drafts/images/stop_and_frisk/08_crime_frisks.png)
 
-The chart above illustrates a pretty linear relationship between the previous year's crime level and stop & frisk in each neighborhood of DC. Of course, there are dozens and dozens of other confounding variables that are not being considered in this simplistic approach, but if you were only to use this one variable to predict stop and frisk, you would end up with a model<sup>1</sup> like this:
+The chart above illustrates a pretty linear relationship between the previous year's crime level and stop & frisk in each neighborhood of DC. Of course, there are dozens and dozens of other confounding variables that influence crime and policing behavior not being considered in this simplistic approach, but if you were only to use this one variable to predict stop and frisk, you would end up with a model<sup>1</sup> like this:
 
 <table style="text-align:center"><tr><td colspan="2" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"></td><td><em>Dependent variable:</em></td></tr>
 <tr><td></td><td colspan="1" style="border-bottom: 1px solid black"></td></tr>
@@ -202,7 +202,7 @@ Building off the "crime-only" model, now that we have access to demographic crim
 
 <table style="text-align:center"><tr><td colspan="2" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"></td><td><em>Dependent variable:</em></td></tr>
 <tr><td></td><td colspan="1" style="border-bottom: 1px solid black"></td></tr>
-<tr><td style="text-align:left"></td><td>stop_frisks</td></tr>
+<tr><td style="text-align:left"></td><td>Stop & Frisk</td></tr>
 <tr><td colspan="2" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">Race: Black</td><td>1.280<sup>***</sup></td></tr>
 <tr><td style="text-align:left"></td><td>(0.189)</td></tr>
 <tr><td style="text-align:left"></td><td></td></tr>
