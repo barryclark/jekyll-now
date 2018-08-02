@@ -31,15 +31,17 @@ function drawChart() {
   var options = {
     title: 'Compound Interest',
     hAxis: {title: 'Month',  titleTextStyle: {color: '#333'}},
-    vAxis: {minValue: 0},
-    chartArea:{left:20,top:0,width:'50%',height:'75%'}
+    vAxis: {minValue: 0, format: 'currency'},
+    chartArea:{left:50,top:0,width:500,height:300}
   };
   
   var chart = new google.visualization.AreaChart(document.getElementById('results-chart'));
+  chart.clearChart();
   chart.draw(googleData, options);
   
   var table = new google.visualization.Table(document.getElementById('results-table'));
-  table.draw(googleData, {showRowNumber: true, width: '100%', height: '100%'});
+  table.clearChart();
+  table.draw(googleData, {width: '100%', height: '100%'});
 }
   
 function num2string(number) {
