@@ -84,4 +84,4 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
-remote-theme: kylabe/merlot
+remote_theme: kylabe/merlot
