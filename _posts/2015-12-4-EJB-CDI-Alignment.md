@@ -19,4 +19,4 @@ This is an interesting talk as it discusses the past, the present and the future
 <center><iframe src="//www.slideshare.net/slideshow/embed_code/key/aQW0DkQEsBQUv" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"><a href="//www.slideshare.net/dblevins1/2015-javaone-ejbcdi-alignment" title="2015 JavaOne EJB/CDI Alignment" target="_blank">2015 JavaOne EJB/CDI Alignment</a> from <a href="https://www.slideshare.net/dblevins1" target="_blank">David Blevins</a></div></center>
   
 <br/>
-*Originaly posted on [The Aquarium](https://blogs.oracle.com/theaquarium/ejb-and-cdi-alignment-and-strategy)* blog.
+*Originaly posted on [The Aquarium](https://blogs.oracle.com/theaquarium/ejb-and-cdi-alignment-and-strategy) blog.*
