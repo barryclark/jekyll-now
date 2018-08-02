@@ -13,7 +13,7 @@ javascripts: ["https://www.gstatic.com/charts/loader.js"]
 <div><button id="calculate-button" type="button">Calculate!</button></div>
 </div>
 
-<div id="results-div" style="display: none;">
+<div id="results-div">
 <div id="results-chart" style="width: 100%; height: 500px;"></div>
 
 <div id="results-table">
@@ -30,16 +30,16 @@ function drawChart() {
 
   var options = {
     title: 'Compound Interest',
-      hAxis: {title: 'Month',  titleTextStyle: {color: '#333'}},
-      vAxis: {minValue: 0},
-      chartArea:{left:20,top:0,width:'50%',height:'75%'}
+    hAxis: {title: 'Month',  titleTextStyle: {color: '#333'}},
+    vAxis: {minValue: 0},
+    chartArea:{left:20,top:0,width:'50%',height:'75%'}
   };
   
   var chart = new google.visualization.AreaChart(document.getElementById('results-chart'));
   chart.draw(googleData, options);
   
   var table = new google.visualization.Table(document.getElementById('results-table'));
-  table.draw(data, {showRowNumber: true, width: '100%', height: '100%'});
+  table.draw(googleData, {showRowNumber: true, width: '100%', height: '100%'});
 }
   
 function num2string(number) {
