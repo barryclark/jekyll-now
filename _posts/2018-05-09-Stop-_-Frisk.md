@@ -17,7 +17,7 @@ This analysis sets out to answer a few simple, yet complex, set of questions: 1)
 
 ---
 
-	*A few caveats to some of the claims mentioned above and throughout this research. Firstly, a higher crime rate in a specific neighborhood does not reflect the behavior of the residents in that neighborhood; people are transient and cross borders frequently. Secondly, higher crime rates among a certain racial/ethnic group do no warrant increased harassment by law enforcement. Finally, stop and frisk is very prone to the [observer effect](https://en.wikipedia.org/wiki/Observer_effect_(physics)); as a community is increasingly surveilled and has forcible contact with the police there might be more crime reported/observed by police.* 
+*A few caveats to some of the claims mentioned above and throughout this research. Firstly, a higher crime rate in a specific neighborhood does not reflect the behavior of the residents in that neighborhood; people are transient and cross borders frequently. Secondly, higher crime rates among a certain racial/ethnic group do no warrant increased harassment by law enforcement. Finally, stop and frisk is very prone to the [observer effect](https://en.wikipedia.org/wiki/Observer_effect_(physics)); as a community is increasingly surveilled and has forcible contact with the police there might be more crime reported/observed by police.* 
 
 ---	
 
