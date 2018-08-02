@@ -2,7 +2,7 @@
 layout: page
 title: Compound Interest Calculator
 permalink: /tools/compound-interest-calculator/
-javascripts: [https://www.gstatic.com/charts/loader.js]
+javascripts: ["https://www.gstatic.com/charts/loader.js"]
 ---
 
 <div class="input-form">
