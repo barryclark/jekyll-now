@@ -9,4 +9,4 @@ We are just at the beginning of this effort. Oracle, IBM, Red Hat and the Eclips
 
 We are working on a FAQ that should be published soon. In the meantime, please read the [EE4J draft charter](https://projects.eclipse.org/projects/ee4j/charter). You are also encouraged to participate in the [ee4j-community](https://dev.eclipse.org/mailman/listinfo/ee4j-community) discussions.
 
-*Originaly posted on [The Aquarium](https://blogs.oracle.com/theaquarium/ee4j-eclipse-enterprise-for-java)* blog.
+*Originaly posted on [The Aquarium](https://blogs.oracle.com/theaquarium/ee4j-eclipse-enterprise-for-java) blog.*
