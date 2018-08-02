@@ -2,6 +2,7 @@
 layout: page
 title: Compound Interest Calculator
 permalink: /tools/compound-interest-calculator/
+javascripts: [https://www.gstatic.com/charts/loader.js]
 ---
 
 <div class="input-form">
@@ -12,34 +13,55 @@ permalink: /tools/compound-interest-calculator/
 <div><button id="calculate-button" type="button">Calculate!</button></div>
 </div>
 
-<table id="results-table" style="display: none;">
+<div id="results-div" style="display: none;">
+<div id="results-chart" style="width: 100%; height: 500px;"></div>
+
+<table id="results-table">
   <tr><th>Month</th><th>Balance</th><th>Contributions</th><th>Interest</th></tr>
 </table>
+</div>
 
 <script>
-$("#calculate-button").click(function() {
-  var num2string = function(number) {
-    var n1 = Number.parseFloat(number).toFixed(2);
-    return "$" + Number.parseFloat(number.toFixed(2)).toLocaleString();
-  }
+google.charts.load('current', {'packages':['corechart']});
+var data = [["month","balance","contribution"]];  
+
+function drawChart() {
+  var googleData = google.visualization.arrayToDataTable(data);
+
+  var options = {
+    title: 'Compound Interest',
+      hAxis: {title: 'Month',  titleTextStyle: {color: '#333'}},
+      vAxis: {minValue: 0}
+  };
   
+  var chart = new google.visualization.AreaChart(document.getElementById('results-chart'));
+  chart.draw(googleData, options);
+}
+  
+function num2string(number) {
+  return "$" + Number.parseFloat(number.toFixed(2)).toLocaleString();
+}
+  
+$("#calculate-button").click(function() { 
   var pv = Number.parseFloat($("#start-amount").val());
   var rate = Number.parseFloat($("#interest-rate").val());
   var contribution = Number.parseFloat($("#monthly-contribution").val());
   var years = $("#years").val();
   
+  var start = pv;
   var contributions = 0;
   var interest = 0;
   
   for(var month = 0; month < years * 12; month++) {
     $("#results-table").append("<tr><td>" + month + "</td><td>" + num2string(pv) + "</td><td>" + num2string(contributions) + "</td><td>" + num2string(interest) + "</td></tr>");
     
+    data.push([month, pv, contributions + start]);
     interest = pv * rate / 1200);
     pv = pv + interest + contribution;
     contributions = contributions + contribution;
   }
   
-  $("#results-table").show();
+  $("#results-div").show();
 });
 </script>
  
