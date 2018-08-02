@@ -73,7 +73,6 @@ h1, h2 {
   
 .input-form {
  margin: 1em auto;
- width: 350px;
 }
  
 .input-form div {
@@ -96,5 +95,15 @@ h1, h2 {
 .input-form div button {
   font-size: x-large;
   margin: 1em;
+}
+
+@screen and (max-wdith: 1000px) {
+  .input-form div label {
+    text-align: center;
+  }
+  
+  .input-form div {
+    margin-bottom: 0.5em;
+  }
 }
 </style>
