@@ -3,7 +3,7 @@ layout: post
 title: The road to Jakarta EE
 ---
 
-Today, the Eclipse Foundation is making multiple [announcements](https://jakarta.ee/news/2018/04/24/eclipse-foundation-unveils-new-cloud-native-java-future-with-jakarta-ee/) related to Jakarta EE that includes the unveiling of [https://jakarta.ee](https://jakarta.ee/) and the Jakarta EE logo, the [results of the developers survey](https://jakarta.ee/news/2018/04/24/jakarta-ee-community-survey/), etc. It's probably a good time to reflect on how we got here...
+Today, the Eclipse Foundation is making multiple [announcements](https://jakarta.ee/news/2018/04/24/eclipse-foundation-unveils-new-cloud-native-java-future-with-jakarta-ee/) related to Jakarta EE <!--more-->that includes the unveiling of [https://jakarta.ee](https://jakarta.ee/) and the Jakarta EE logo, the [results of the developers survey](https://jakarta.ee/news/2018/04/24/jakarta-ee-community-survey/), etc. It's probably a good time to reflect on how we got here...
 
 <p align="center">
 <img alt="Jakarta EE logo" src="http://delabassee.com/images/blog/jakarta_ee_logo.png" width="50%">
@@ -31,4 +31,4 @@ We were discussing a matter unrelated to Jakarta EE and while I sincerely apprec
 
 You should also realize that usually when a project is open-sourced, all the related activities, including all the legal aspects, are happening upstream and it is only when everything is discussed, agreed and done that the project is made public. But early on, we have decided to be as transparent as possible, which is why we have announced our initial intent last summer. At that time, lots of things were not decided yet and that lead us to where we are today, i.e. in the early days of Jakarta EE including the creation of a new but already actively engaged open-source community. A lot of work still needs to happen to properly tackle the ultimate goal of Jakarta EE, i.e. evolve the platform towards an open-source and Java-based, Cloud Native foundation that will be relevant for the next decade. The Jakarta EE community is actively working towards that goal and today's [announcement](https://jakarta.ee/news/2018/04/24/eclipse-foundation-unveils-new-cloud-native-java-future-with-jakarta-ee/) represent an important initial milestone!
 
-*Originaly posted on [The Aquarium](https://blogs.oracle.com/theaquarium/the-road-to-jakarta-ee)*.
+*Originaly posted on [The Aquarium](https://blogs.oracle.com/theaquarium/the-road-to-jakarta-ee)* blog.
