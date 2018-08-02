@@ -29,4 +29,4 @@ Finally, it should also be mentioned that and in addition to various bug fixes, 
 
 You can download GlassFish 4.1.1 [here](https://glassfish.java.net/download.html) and grab the source code [here](https://java.net/projects/glassfish/sources/svn/show/trunk/main).
 
-*Originaly posted on [The Aquarium](https://blogs.oracle.com/theaquarium/glassfish-411-is-now-available)* blog.
+*Originaly posted on [The Aquarium](https://blogs.oracle.com/theaquarium/glassfish-411-is-now-available) blog.*
