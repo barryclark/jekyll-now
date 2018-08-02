@@ -25,4 +25,4 @@ The nightly builds will always be a few days ahead of the latest promoted build 
 
 GlassFish 5 should be released about six weeks after the Java EE 8 Platform specification ([JSR 366](https://jcp.org/en/jsr/detail?id=366)) is final. As of today, we are [targeting specification completion in July](https://java.net/projects/javaee-spec/lists/jsr366-experts/archive/2017-02/message/0), which would result on a release date in the August/September timeframe. The schedule is subject to change but that is our current direction.  
 
-*Originaly posted on [The Aquarium](https://blogs.oracle.com/theaquarium/an-update-on-glassfish-5)* blog.
+*Originaly posted on [The Aquarium](https://blogs.oracle.com/theaquarium/an-update-on-glassfish-5) blog.*
