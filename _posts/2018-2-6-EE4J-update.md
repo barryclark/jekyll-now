@@ -30,4 +30,4 @@ Mike Milinkovich of the Eclipse Foundation has recently posted a [blog](https://
 
 In short, there is a lot of positive progress being driven in the EE4J project. For further updates refer to this blog and the links provided above, or subscribe to the [ee4j-community mailing list](https://dev.eclipse.org/mhonarc/lists/ee4j-community/).
 
-*Originaly posted on [The Aquarium](https://blogs.oracle.com/theaquarium/ee4j%3a-an-update)* blog.
+*Originaly posted on [The Aquarium](https://blogs.oracle.com/theaquarium/ee4j%3a-an-update) blog.*
