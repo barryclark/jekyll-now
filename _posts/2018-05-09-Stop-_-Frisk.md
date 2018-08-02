@@ -13,9 +13,13 @@ This analysis sets out to answer a few simple, yet complex, set of questions: 1)
 
 * Overall, black residents, and particularly young black male residents, were stopped at a rate well in excess of both the proportion of black residents living in DC and the proportion of crime committed by black residents. At the same time, white residents were stopped at rate lower than their population and crime rate. This disproportionality persists within each of Washington DC's 39 racially diverse neighborhoods. 
 
-	* A few caveats to some of the claims just mentioned. Firstly, a higher crime rate in a specific neighborhood does not reflect the behavior of the residents in that neighborhood; people are transient and cross borders frequently. Secondly, higher crime rates among a certain racial/ethnic group do no warrant increased harassment by law enforcement. Finally, stop and frisk is very prone to the [observer effect](https://en.wikipedia.org/wiki/Observer_effect_(physics)); as a community is increasingly surveilled and has forcible contact with the police there might be more crime reported/observed by police. 
-
 * There exists a powerful linear relationship between the previous year's crime level and the current year's stop and frisk within each neighborhood in DC. However, neighborhoods with higher black populations have greater rates of stop and frisk than a crime-only model would suggest.
+
+---
+
+	*A few caveats to some of the claims mentioned above and throughout this research. Firstly, a higher crime rate in a specific neighborhood does not reflect the behavior of the residents in that neighborhood; people are transient and cross borders frequently. Secondly, higher crime rates among a certain racial/ethnic group do no warrant increased harassment by law enforcement. Finally, stop and frisk is very prone to the [observer effect](https://en.wikipedia.org/wiki/Observer_effect_(physics)); as a community is increasingly surveilled and has forcible contact with the police there might be more crime reported/observed by police.* 
+
+---	
 
 The analysis also provides a number of interactive visualizations that can allow users to look for specific trends and patterns not covered in the analysis.  
 
