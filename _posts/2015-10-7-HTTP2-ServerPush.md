@@ -13,16 +13,18 @@ The Servlet 4.0 Expert Group now needs to figure out how this Server Push capabi
 
 Useful resources:
 
-* Hypertext Transfer Protocol Version 2 (HTTP/2) : [RFC 7540](https://httpwg.github.io/specs/rfc7540.html)
-* HPACK: Header Compression for HTTP/2 : [RFC 7541](https://httpwg.github.io/specs/rfc7541.html)
-* [HTTP/2: A New Excerpt from High Performance Browser Networking by Ilya Grigorik](http://www.oreilly.com/webops-perf/free/HTTP2-high-perf-browser-networking.csp)
+* Hypertext Transfer Protocol Version 2 (HTTP/2): [RFC 7540](https://httpwg.github.io/specs/rfc7540.html)
+* HPACK: Header Compression for HTTP/2: [RFC 7541](https://httpwg.github.io/specs/rfc7541.html)
+* [HTTP/2: A New Excerpt from High Performance Browser Networking](http://www.oreilly.com/webops-perf/free/HTTP2-high-perf-browser-networking.csp) by Ilya Grigorik
 * Jetty 9.3 PushBuilder [Javadoc](http://download.eclipse.org/jetty/stable-9/apidocs/org/eclipse/jetty/server/PushBuilder.html)
 
 <br/>
 
-<iframe src="//www.slideshare.net/slideshow/embed_code/key/J5ClC0FQ89I8Ef" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <a href="//www.slideshare.net/delabassee/http2-comes-to-java" title="HTTP/2 Comes to Java" target="_blank">HTTP/2 Comes to Java</a> from <a href="https://www.slideshare.net/delabassee" target="_blank">David Delabassee</a><</div>
-
+<center>
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/J5ClC0FQ89I8Ef" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <a href="//www.slideshare.net/delabassee/http2-comes-to-java" title="HTTP/2 Comes to Java" target="_blank">HTTP/2 Comes to Java</a> from <a href="https://www.slideshare.net/delabassee" target="_blank">David Delabassee</a></div>
+</center>
+  
 <br/>
 
 
-*Originaly posted on [The Aquarium](https://blogs.oracle.com/theaquarium/http2-and-server-push)* blog.
+*Originaly posted on [The Aquarium](https://blogs.oracle.com/theaquarium/http2-and-server-push) blog.*
