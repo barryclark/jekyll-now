@@ -1,6 +1,6 @@
 ---
 layout: post
-title: JSON-P 1.1 update: JSON Pointer & JSON Patch
+title: JSON-P 1.1 update - JSON Pointer & JSON Patch
 excerpt: JSON-P (JSR 353) is the standard JSON Processing API that was added in Java EE 7...
 ---
 
