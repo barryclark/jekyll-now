@@ -7,7 +7,7 @@ GlassFish 4.1.1 has just been released <!--more-->and despite the minor version 
 
 <p align="center">
 <img alt="GlassFish logo" src="http://delabassee.com/images/blog/gf_logo.png">
-</p>
+</p> 
 
 During the course of last year; we have seen specifications updates for JAX-RS ([JSR 339](https://jcp.org/aboutJava/communityprocess/mrel/jsr339/index.html)), JMS ([JSR 343](https://jcp.org/aboutJava/communityprocess/mrel/jsr343/index.html)), CDI ([JSR 346](https://jcp.org/aboutJava/communityprocess/mrel/jsr346/index.html)) and WebSocket ([JSR 356](https://jcp.org/aboutJava/communityprocess/mrel/jsr356/index.html)). Those different Maintenance Releases are now integrated in GlassFish 4.1.1. During that period, the umbrella Java EE 7 specification ([JSR 342](https://jcp.org/aboutJava/communityprocess/mrel/jsr342/index.htm)) also went through the Maintenance Release process but that revision was just about specification clarifications; so the Java EE 7 MR had technically no impact on the Reference Implementation, on GlassFish.
 
