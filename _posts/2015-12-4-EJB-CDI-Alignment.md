@@ -1,6 +1,7 @@
 ---
 layout: post
 title: EJB and CDI - Alignment and Strategy
+excerpt: We often get questions related to EJB and CDI, to the convergence (or the divergence!) between those 2 technologies...
 ---
 
 We often get questions related to EJB and CDI, to the convergence (or the divergence!) between those 2 important Java EE technologies. <!--more-->That particular topic was discussed a few months ago by Linda De Michiel (Java EE Specification Lead and former JPA Specification Lead) during JavaDay Tokyo 2015.
