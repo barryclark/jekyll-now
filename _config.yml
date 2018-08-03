@@ -13,8 +13,7 @@ avatar: https://avatars3.githubusercontent.com/u/1822374?s=460&v=4
 
 excerpt_separator: <!--more-->
 
-paginate: 6
-
+paginate: 4
 #
 # Flags below are optional
 #
@@ -27,7 +26,7 @@ footer-links:
   flickr:
   github: delabassee
   instagram:
-  linkedin:
+  linkedin: https://www.linkedin.com/in/daviddelabassee/
   pinterest:
   rss: https://delabassee.com/feed
   twitter: delabassee
