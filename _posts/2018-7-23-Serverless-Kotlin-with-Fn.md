@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Serverless Kotlin with Fn Project
-excerpt: why not use Kotlin in the FaaS and Serverless space too?
+excerpt: Why not use Kotlin in the FaaS and Serverless space too?
 ---
 
 Kotlin is one of the fastest growing programming languages; it is used in the Android ecosystem and also is gaining traction in the enterprise world. So why not use Kotlin in the FaaS and Serverless space too?
