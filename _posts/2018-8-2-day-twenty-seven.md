@@ -17,11 +17,11 @@ NCOMBINE keyword not found; assuming data came from single image
 Segmentation fault (core dumped)      
 
 I'm not sure what to do about the 'BINTABLE' error, but I can tackle the "READNBSE(ABCD)" and "NCOMBINE" errors. They're just missing from the header of the .fits file. Luckily, Marta has already written codes for adding things to .fits file headers. She gave me one of her codes on a flash drive, and I modified it to to add the keywords that I want. After a quick aside to install ds9 (I didn't see the Windows download link for ds9 at first, so I looked up how to install Unix programs through "Bash on Ubuntu on Windows," the name of what I'm using for Ubuntu. It requires downloading an Xserver, so I did that and all went smoothly, but when I went back to the ds9 download page, I saw the Windows download link and just did it through Windows), I checked the headers of the drc file and saw that the normal header does have values for READNSE(A,B,C,D), but the [SCI] version of the header does not. That's good; I didn't know what I was actually going to put for those values. Weirdly, "NCOMBINE" is already in [SCI], but not in the normal one. When I run Marta's code, it gives me back out a .fits file with only one header that contains both things. Now, the only error I get is: 
->Error: FITS card "FILETYPE" not found
+>Error: FITS card "FILETYPE" not found    
 **Format error (filetype,telescop,instrume)
 
 Well, the "BINTABLE" error went away. Now, I'm going to add the "FILETYPE" keyword. I went back to the original and found that "FILETYPE" should look like: 
->>'SCI'
+>'SCI'
 
 Adding that to the header and running again gives:
 >Error: FITS card "TELESCOP" not found
