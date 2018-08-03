@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The road to Jakarta EE
+title: The Road to Jakarta EE
 excerpt: It's probably a good time to reflect on how we got here...
 ---
 
