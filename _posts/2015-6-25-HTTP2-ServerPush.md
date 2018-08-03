@@ -1,9 +1,10 @@
 ---
 layout: post
 title: HTTP/2 and Server Push
+excerpt: HTTP/2 is composed of 2 related specifications: RFC 7540 and RFC 7541...
 ---
 
-HTTP/2, which has been finalized a few weeks ago, is composed of 2 related specifications: RFC 7540 and RFC 7541.<!--more--> With HTTP/2, the existing HTTP 1.1 semantics are fully preserved as this new version of HTTP aims to be as compatible as possible with current uses of HTTP. The main goal of HTTP/2 is to provide a more efficient use of the network resources and, at the same time, to reduce the overall latency. So the fundamental difference between HTTP/2 and HTTP/1.1 is really at the transport level, i.e. how the bits are exchanged over the network. And that is what HTTP/2's new binary-framed protocol is all about.
+HTTP/2, which has been finalized a few weeks ago, is composed of 2 related specifications: RFC 7540 and RFC 7541. With HTTP/2, the existing HTTP 1.1 semantics are fully preserved as this new version of HTTP aims to be as compatible as possible with current uses of HTTP. The main goal of HTTP/2 is to provide a more efficient use of the network resources and, at the same time, to reduce the overall latency. So the fundamental difference between HTTP/2 and HTTP/1.1 is really at the transport level, i.e. how the bits are exchanged over the network. And that is what HTTP/2's new binary-framed protocol is all about.
 
 HTTP/2 relies on the existing HTTP/1.1 semantics, we keep using the same HTTP verbs (GET, PUT, POST, etc.), the same HTTP status codes and so on. So from a Server-side Java developer perspective nothing should really change. Running an existing application over a HTTP/2 stack should be transparent. We obviously could expect to see improvements at the wire level. That means that most of the HTTP/2 capabilities should not be exposed at the Servlet API level. But there are few exceptions to this rule and Server Push is one the important new HTTP/2 feature that should ideally be made available to the developer.
 
