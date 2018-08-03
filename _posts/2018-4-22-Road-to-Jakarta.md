@@ -1,9 +1,10 @@
 ---
 layout: post
 title: The road to Jakarta EE
+excerpt: It's probably a good time to reflect on how we got here...
 ---
 
-Today, the Eclipse Foundation is making multiple [announcements](https://jakarta.ee/news/2018/04/24/eclipse-foundation-unveils-new-cloud-native-java-future-with-jakarta-ee/) related to Jakarta EE <!--more-->that includes the unveiling of [https://jakarta.ee](https://jakarta.ee/) and the Jakarta EE logo, the [results of the developers survey](https://jakarta.ee/news/2018/04/24/jakarta-ee-community-survey/), etc. It's probably a good time to reflect on how we got here...
+Today, the Eclipse Foundation is making multiple [announcements](https://jakarta.ee/news/2018/04/24/eclipse-foundation-unveils-new-cloud-native-java-future-with-jakarta-ee/) related to Jakarta EE that includes the unveiling of [https://jakarta.ee](https://jakarta.ee/) and the Jakarta EE logo, the [results of the developers survey](https://jakarta.ee/news/2018/04/24/jakarta-ee-community-survey/), etc. It's probably a good time to reflect on how we got here...
 
 <p align="center">
 <img alt="Jakarta EE logo" src="http://delabassee.com/images/blog/jakarta_ee_logo.png" width="50%">
