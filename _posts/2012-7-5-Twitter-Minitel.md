@@ -1,11 +1,12 @@
 ---
 layout: post
 title: My Twitter timeline on a Minitel
+excerpt: A few months ago, I hacked a Twitter client to read my timeline on a Minitel...
 ---
 
-A few months ago, I hacked a Twitter client to read my timeline on a vintage Minitel.<!--more-->
+A few months ago, I hacked a Twitter client to read my timeline on a vintage Minitel.
 
-It’s fairly easy to do. The Minitel modem is bypassed by an Arduino that connect, via ethernet, to a Java based proxy running on the network. This proxy does all the heavy-lifting, i.e. it connects to Twitter using Twitter4J, it gets the timeline, it filters out a lot of stuff (eg. don’t try to use unicode on a Minitel!).
+It was fairly easy to do. The Minitel modem is bypassed by an Arduino that connect, via ethernet, to a Java based proxy running on the network. This proxy does all the heavy-lifting, i.e. it connects to Twitter using Twitter4J, it gets the timeline, it filters out a lot of stuff (eg. don’t try to use unicode on a Minitel!).
 
 And here’s the result…
 
