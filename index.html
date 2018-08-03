@@ -19,10 +19,13 @@ layout: default
   {% endfor %}
 </div>
 
+
+
 <!-- Pagination links -->
-<div class="pagination">
+<br/>
+<div class="pagination" style="text-align: center;">
   {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
+    <a href="{{ paginator.previous_page_path }}" class="previous">⇦</a>
   {% else %}
     <span class="previous">Previous</span>
   {% endif %}
@@ -30,6 +33,6 @@ layout: default
   {% if paginator.next_page %}
     <a href="{{ paginator.next_page_path }}" class="next">Next</a>
   {% else %}
-    <span class="next ">Next</span>
+    <span class="next ">⇨</span>
   {% endif %}
 </div>
