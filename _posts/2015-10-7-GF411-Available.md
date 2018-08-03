@@ -1,9 +1,10 @@
 ---
 layout: post
 title: GlassFish 4.1.1 is now available!
+excerpt: GlassFish 4.1.1 has just been released...
 ---
  
-GlassFish 4.1.1 has just been released <!--more-->and despite the minor version increase, 4.1.1 is certainly not an insignificant update!
+GlassFish 4.1.1 has just been released and despite the minor version increase, 4.1.1 is certainly not an insignificant update!
 
 <p align="center">
 <img alt="GlassFish logo" src="http://delabassee.com/images/blog/gf_logo.png">
