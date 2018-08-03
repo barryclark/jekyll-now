@@ -3,6 +3,7 @@ layout: post
 title: November 2016 Camping Trip - Hiking Map
 tags: [fitness]
 keywords: [hike, hiking, camp, camping. camping trip, hocking hills, state park, hocking hills state park]
+hashtags: [hiking]
 image: /images/2016-11-05-Hike/2016-11-05-Cover.png
 ---
 
