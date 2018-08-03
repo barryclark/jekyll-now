@@ -1,7 +1,7 @@
 ---
 layout: post
 title: A quick update on Java EE
-excerpt: Oracle is notifying the Java Community that it will withdraw the JSRs for Management 2.0 and JMS 2.1...
+excerpt: Oracle is notifying the Community that it will withdraw the JSRs for Management 2.0 & JMS 2.1...
 ---
 
 Oracle is notifying the Java Community that it will withdraw the JSRs for Management 2.0 (JSR 373), and JMS 2.1 (JSR 368). In response to community feedback, Oracle is investigating a possible transfer of MVC to another community member or organization in order to complete JSR 371 as a stand-alone component.
