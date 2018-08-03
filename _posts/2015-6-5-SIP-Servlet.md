@@ -1,7 +1,7 @@
 ---
 layout: post
 title: JSR 359 - SIP Servlet 2.0
-excerpt: The reach of the Java EE is not necessarily limited to _traditional_ Enterprise applications...
+excerpt: The reach of the Java EE is not necessarily limited to 'traditional' Enterprise apps...
 ---
 
 The reach of the Java EE Platform is not necessarily limited to '_traditional_' Enterprise applications. A good illustration of that is the SIP Servlet technology, which brings together the SIP programming model and the Java EE platform. [SIP (Session Initiation Protocol)](http://en.wikipedia.org/wiki/Session_Initiation_Protocol) is a network signaling protocol, used in the Telecommunication space, for creating and terminating sessions (e.g. VOIP sessions) with different participant(s). 
