@@ -1,9 +1,10 @@
 ---
 layout: post
 title: EE4J - An Update
+excerpt: The Eclipse Foundation has posted an overall staus update...
 ---
 
-Mike Milinkovich of the Eclipse Foundation has recently posted a [blog](https://mmilinkov.wordpress.com/2018/01/23/ee4j-current-status-and-whats-next/) providing an overall update on the status of the project. <!--more-->To summarize:
+Mike Milinkovich of the Eclipse Foundation has recently posted a [blog](https://mmilinkov.wordpress.com/2018/01/23/ee4j-current-status-and-whats-next/) providing an overall update on the status of the project. To summarize:
 
 * We are working on defining a new brand name using the community process described [here](https://github.com/eclipse-ee4j/ee4j/issues/1).
 
