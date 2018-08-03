@@ -24,7 +24,7 @@ Well, the "BINTABLE" error went away. Now, I'm going to add the "FILETYPE" keywo
 >'SCI'
 
 Adding that to the header and running again gives:
->Error: FITS card "TELESCOP" not found
+>Error: FITS card "TELESCOP" not found    
 **Format error (filetype,telescop,instrume)
 
 so I'm assuming that I need to add both "TELESCOP"='HST' and "INSTRUME"='WFC3'. I ran it again after editing the header and the program gave me two more things to add to the header -- "DETECTOR"='UVIS' and "APERTURE"='UVIS-CENTER' and has the gall to claim that this isn't WFC3 data (?!¿?¡). After adding "DETECTOR" and "APERTURE", the only error I get now is:
