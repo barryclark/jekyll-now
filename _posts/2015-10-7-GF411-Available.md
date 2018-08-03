@@ -2,7 +2,7 @@
 layout: post
 title: GlassFish 4.1.1 is now available!
 ---
- 
+
 GlassFish 4.1.1 has just been released <!--more-->and despite the minor version increase, 4.1.1 is certainly not an insignificant update!
 
 <p align="center">
