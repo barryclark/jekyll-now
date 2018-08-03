@@ -24,16 +24,16 @@ layout: default
 <!-- Pagination links -->
 <br/>
 <div class="pagination" style="text-align: center;">
-  <div style="color:#AAA">~</div>
+  <div style="color:#eee;padding-bottom: 1em;">~</div>
   {% if paginator.previous_page %}
     <a href="{{ paginator.previous_page_path }}" class="previous">⇦</a>
   {% else %}
-    <span class="previous" style="color:#EEE">⇦</span>
+    <span class="previous" style="color:#eee">⇦</span>
   {% endif %}
   <span class="page_number ">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
   {% if paginator.next_page %}
     <a href="{{ paginator.next_page_path }}" class="next">⇨</a>
   {% else %}
-    <span class="next" style="color:#EEE">⇨</span>
+    <span class="next" style="color:#eee">⇨</span>
   {% endif %}
 </div>
