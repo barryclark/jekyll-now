@@ -1,7 +1,7 @@
 ---
 layout: post
 title: HTTP/2 and Server Push
-excerpt: HTTP/2 is composed of 2 related specifications: RFC 7540 and RFC 7541...
+excerpt: HTTP/2 is composed of 2 related specifications...
 ---
 
 HTTP/2, which has been finalized a few weeks ago, is composed of 2 related specifications: RFC 7540 and RFC 7541. With HTTP/2, the existing HTTP 1.1 semantics are fully preserved as this new version of HTTP aims to be as compatible as possible with current uses of HTTP. The main goal of HTTP/2 is to provide a more efficient use of the network resources and, at the same time, to reduce the overall latency. So the fundamental difference between HTTP/2 and HTTP/1.1 is really at the transport level, i.e. how the bits are exchanged over the network. And that is what HTTP/2's new binary-framed protocol is all about.
