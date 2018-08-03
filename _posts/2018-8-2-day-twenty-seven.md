@@ -79,7 +79,7 @@ image 8: shift 764.24 758.13, scale 1.000539, rotate -0.002
 image 9: shift 255.76 -250.28, scale 1.000550, rotate -0.002    
 image 10: shift 255.76 -250.29, scale 1.000548, rotate -0.002   
 
-and then I check my task manager and realize Ubuntu is only using 0% of my processor or disk and 13MB/s of RAM. So, in other words, it's just open and nothing is happening. I'm going to leave it sit for awhile and I'll let you know what happens in tomorrow's post. 
+and then I check my task manager and realize Ubuntu is only using 0% of my processor or disk and 13MB/s of RAM. So, in other words, it's just open and nothing is happening. Looking at the directory where I'm doing all this confirms that nothing is happening; I see that the '.phot' file has been created, but like Rory's was at first, it's empty. I'm going to come back to this tomorrow. 
 
 # Conclusion
 It felt really good to get a lot of photometry done today, finally. I feel like I hadn't even done that for awhile. Hopefully tomorrow brings something nice, but I really think the only viable option is downloading Astrodrizzle and making some crc images. That sounds kinda fun, though. 
