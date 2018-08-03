@@ -1,6 +1,7 @@
 ---
 layout: post
 title: EE4J - Eclipse Enterprise for Java
+excerpt: A lot of progress has been made since we have announced...
 ---
  
 A lot of progress has been made since we have announced, 2 weeks ago, [our intent to move the Java EE development to the Eclipse Foundation](http://delabassee.com/Opening-up-Java-EE-update/). <!--more-->Today, we are thrilled to announce EE4J (Eclipse Enterprise for Java), a new top level Eclipse project that will host this initiative.
