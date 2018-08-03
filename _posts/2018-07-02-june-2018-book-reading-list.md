@@ -3,6 +3,7 @@ layout: post
 title: June 2018 Book Reading List
 tags: [books]
 keywords: [book, read, books, reading, book reading, books i read]
+hashtags: [books, reading]
 image: /images/books/june-2018-books-read.png
 ---
 
