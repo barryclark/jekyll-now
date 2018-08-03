@@ -1,9 +1,10 @@
 ---
 layout: post
 title: JSON-P 1.1 update - JSON Merge Patch
+excerpt: JSON Merge Patch is relatvely new standard in the JSON space...
 ---
 
-JSON Merge Patch (RFC 7386) is relatvely new standard in the JSON space.<!--more--> It defines a set of modifications that will be used to transform a target resource; those modifcations are themselves defined in a JSON object. JSON Merge Patch is a very simple standard with a few limitations but it seems to be useful enough. So and in addition to JSON Pointer (RFC  6901) and JSON Patch (RFC 6902), the JSR374 Experts Group has recently decided to adding JSON Merge Patch support to the JSON-P 1.1 API might be useful.
+JSON Merge Patch (RFC 7386) is relatvely new standard in the JSON space. It defines a set of modifications that will be used to transform a target resource; those modifcations are themselves defined in a JSON object. JSON Merge Patch is a very simple standard with a few limitations but it seems to be useful enough. So and in addition to JSON Pointer (RFC  6901) and JSON Patch (RFC 6902), the JSR374 Experts Group has recently decided to adding JSON Merge Patch support to the JSON-P 1.1 API might be useful.
 
 As usual, feedback is always welcome. And to easily get started with JSON-P 1.1, you should watch the recording of the Adopt-a-JSR session that was held recently with Kin-man Chung (JSR 374 Spec Lead). It gives all the required technical details but also set some expectations in terms of the type of feedback that the EG is looking for.
 
