@@ -20,7 +20,7 @@ The Haufe Group emerged from a successful publisher and the provider of Lexware,
 
 #### Current Market Position 
 
-The Haufe Group is now considered one of the most innovative media and software vendors in Germany. Its solutions use state-of-the-art technology and are very user-friendly and practice-oriented. More than one million customers – including all DAX 30 firms – generate over 266 million euros in revenue. The Freiburg-based firm currently has some 1,500 employees within Germany and abroad. The Group's international growth strategy is based on its current product portfolio, and it expands on an ongoing basis thanks to the synergies which evolve from the core competencies and strengths of the individual firms and brands within the Group. 
+The Haufe Group is now considered one of the most innovative media and software vendors in Germany. Its solutions use state-of-the-art technology and are very user-friendly and practice-oriented. More than one million customers – including all DAX 30 firms – generate over 366 million euros in revenue. The Freiburg-based firm currently has some 1,950 employees within Germany and abroad. The Group's international growth strategy is based on its current product portfolio, and it expands on an ongoing basis thanks to the synergies which evolve from the core competencies and strengths of the individual firms and brands within the Group. 
 
 ### Contact us
 
