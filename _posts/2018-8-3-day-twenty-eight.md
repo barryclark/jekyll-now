@@ -5,10 +5,10 @@ So, Marta gave me a few lines of code that should help me specify which header I
 
 The first thing I did was try to run wfc3mask on the drc image I know is bad to see what exactly the issues are. It's the "READNSE(A,B,C,D)" and 'NCOMBINE' errors still. I modified Marta's code according to her instructions to try to add this info to the right header.
 
-I spent some time on this, trying different a few different methods of modifying the header. I tried `fits.setval`, `fits.set`, I tried both ways Marta reccomended, I tried to be creative and write something new, but nothing worked. Most of the time, I got an error, and when I did get a modified fits files, `wfc3mask` never worked. I might come back to this, but I need to leave it for now. 
+I spent some time on this, trying different a few different methods of modifying the header. This [manual](http://docs.astropy.org/en/stable/io/fits/) was really helpful. I tried `fits.setval`, `fits.set`, I tried both ways Marta reccomended, I tried to be creative and write something new, but nothing worked. Most of the time, I got an error, and when I did get a modified fits files, `wfc3mask` never worked. I might come back to this, but I need to leave it for now. 
 
 # Astrodrizzle
-I started a little bit of work with Astrodrizzle in installing it and reading through a bit of the manual. It seems really complicated but I still think it might be worth it. It's good to know learn how to do as much as possible. I haven't tried to work with any data yet, but know a little bit about what the drizzlpac is about now. 
+I started a little bit of work with Astrodrizzle in installing it and reading through the [manual](http://www.stsci.edu/hst/HST_overview/drizzlepac/documents/handbooks/drizzlepac.pdf). It seems really complicated but I still think it might be worth it. It's good to know learn how to do as much as possible. I haven't tried to work with any data yet, but know a little bit about what the drizzlpac is about now. 
 
 # Conclusion
 Tomorrow I hope to get Marta's code to work beause I think I'm close, and I'll look more into Astrodrizzle as well. Even if I got Marta's code to work perfectly like I want, I'm still not sure it will play well with `wfc3mask`.
