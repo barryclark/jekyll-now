@@ -1,11 +1,8 @@
 ---
 layout: post
-title: JMS 2.0 Errata release
+title: JSR 375 - Java EE Security API
 excerpt: If we look at the feedback, security is an area ...
 ---
-
-2014-11-27-Java-EE-Security-API.md
-
 
 Java EE has been used to develop and run enterprise applications securely since years. Obviously, Java EE and its containers are just parts of the global security equation. When we zoom at the Java EE layer, we see that some of the security capabilities are backed into the specification while others security features are proprietary and specific to the different Java EE implementations.  Sometime, some of the security capabilities are also external add-on's (e.g. 3rd party libraries).  Security is not a self-contained matter as interactions between different components are often required (e.g. a Java EE Application Server needs to interact with an LDAP server).  Things also change when we go from an on-premises deployment to a cloud based deployment.  Finally, portability is never simple when it comes to security.
 
