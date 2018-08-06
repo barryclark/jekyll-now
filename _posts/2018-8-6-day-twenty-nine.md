@@ -1,7 +1,7 @@
 So, after a reccomendation from Dr. G, I looked again at running `dolphot` without running `wfc3mask` on the drc images. There's still a few troubling things, and I'm actually getting the same result that I was before, but it's not as bad as I thought at first. 
 
 # `dolphot`
-So, if you try to run `dolphot` on just the drc image, you get the error "Number of extensions are not the same" and the program fails. You can still run `splitgroups` on just the drc image without doing `wfc3mask` -- which is where the problem truly lies -- but this only 3/4 works. You get this:
+So, if you try to run `dolphot` with the pure drc image as reference, you get the error "Number of extensions are not the same" and the program fails. You can still run `splitgroups` on just the drc image without doing `wfc3mask` -- which is where the problem truly lies -- but this only 3/4 works. You get this:
 >Reading FITS file ib2o01020_drc.fits   
 Reading IMAGE extension: 5644x5895    
 Reading IMAGE extension: 5644x5895    
