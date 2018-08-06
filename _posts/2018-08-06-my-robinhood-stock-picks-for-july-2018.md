@@ -61,7 +61,7 @@ What does that mean? The put means I had an option to sell 100 shares for $6.00 
 
 Except this hypothetical scenario didn't happen. I sold my option for a penny more than I paid, meaning I made a dollar:
 
-    12&cent; * 100 - 11&cent; * 100 = $12 - $11 = $1
+    $0.12 * 100 - $0.11 * 100 = $12 - $11 = $1
 
 When the option did expire, FIT was at $5.75. If I had kept the option, I would've netted $25. Minus my $11, that would've been $14:
 
