@@ -10,24 +10,23 @@ Java EE needs to evolve to stay relevant and clearly, if we look at the feedback
 
 The [JSR proposal](https://jcp.org/en/jsr/detail?id=375) gives a more detailed overview of what it will try to achieve. In short, JSR 375’s goal is to simplify, standardize, and modernize the Security API across the platform in different area.
 
+* **User Management**: Standardization of a ’user service’ API which would enable an application to perform user management operations (e.g. create a user). The ‘user service’ would rely on a ‘user source’ which would be an abstraction of a physical user store (e.g. LDAP, data-bases, etc.).  The user service would be configurable to match the deployment requirements.
+
 <p align="center">
 <img alt="Security API picture 2" src="http://delabassee.com/images/blog/jsr375_1.jpg">
 </p>
+
+* **Password Aliasing**: Standardization of syntax for pointing (alias) to passwords stored in a (secure) password repository. This password repository might then be bundled with an application (e.g. think cloud deployment).
+
+* **Role Mapping**: Definition and standardization of a ‘role service’ API that would enable an application to perform various role mapping operations (e.g. querying a group role). This would be done via different role mappers (e.g. LDAP, files) that would be adaptable based on the environment’s needs.
 
 <p align="center">
 <img alt="Security API picture 2" src="http://delabassee.com/images/blog/jsr375_2.jpg">
 </p>
 
+* **Authorization**: Definition of a new CDI interceptor annotation that would be used to preform application-domain rules at the method level.
 
-* User Management: Standardization of a ’user service’ API which would enable an application to perform user management operations (e.g. create a user). The ‘user service’ would rely on a ‘user source’ which would be an abstraction of a physical user store (e.g. LDAP, data-bases, etc.).  The user service would be configurable to match the deployment requirements.
-
-* Password Aliasing: Standardization of syntax for pointing (alias) to passwords stored in a (secure) password repository. This password repository might then be bundled with an application (e.g. think cloud deployment).
-
-* Role Mapping: Definition and standardization of a ‘role service’ API that would enable an application to perform various role mapping operations (e.g. querying a group role).  This would be done via different role mappers (e.g. LDAP, files) that would be adaptable based on the environment’s needs.
-
-* Authorization: Definition of a new CDI interceptor annotation that would be used to preform application-domain rules at the method level.
-
-* Authentication: Several enhancements are also planned around authentication (e.g. the ability for a web application to offers different authentication methods).
+* **Authentication**: Several enhancements are also planned around authentication (e.g. the ability for a web application to offers different authentication methods).
 
 This is just an of overview of the initial scope. In addition, the Experts Group will also have to look at how some of the Java EE orthogonal technologies (e.g. CDI events, Expression Language, etc.) can be leveraged in order to simplify the use of those new APIs.  To know more about this JSR, make sure to read the JSR 375 proposal. You can also watch the replay of the [Java EE 8 Overview](https://blogs.oracle.com/theaquarium/entry/javaone_replay_java_ee_8) that Linda DeMichiel gave during JavaOne as she has touched some of those ideas during her talk.
 
