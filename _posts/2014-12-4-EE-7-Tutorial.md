@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Interceptors in Java EE
+title: The Java 7 EE Tutorial - free eBook!
 excerpt: The Java EE 7 Documentation page has been recently refreshed ...
 ---
 
