@@ -1,12 +1,12 @@
 ---
 layout: post
 title: Events in CDI 2.0
-excerpt: CDI Events is one of the focus area of CDI 2.0...
+excerpt: Events are one of the focus area of CDI 2.0...
 ---
 
 CDI 2.0 ([JSR 365](https://jcp.org/en/jsr/detail?id=365)) was the first Java EE 8 approved JSR. The CDI Experts Group has already been formed several weeks ago and the first CDI 2.0 EG face to face meeting took place last week in Brno (see [feedback](http://cdi-spec.org/news/2014/10/20/CDI-2_0-first-face-to-face-meeting-feedback/) here). The EG has ambitious plans for CDI 2.0 (see [here](http://www.cdi-spec.org/news/2014/07/28/what-s-in-CDI-20-jsr-proposal/)) and is working hard to fulfils them, you can track the evolution of their work [here](http://cdi-spec.org/#_work_status).
 
-CDI Events is one of the focus area of CDI 2.0. CDI Events is a simple mechanism that provides an implantation of the Observer pattern where the Event Producer is cleanly decoupled from the Event Consumer(s). This mechanism is available in CDI since the beginning, i.e. CDI 1.0. But for CDI 2.0, the EG plans to improve the overall CDI Event mechanism by adding:
+Events are one of the focus area of CDI 2.0. CDI Events is a simple mechanism that provides an implantation of the Observer pattern where the Event Producer is cleanly decoupled from the Event Consumer(s). This mechanism is available in CDI since the beginning, i.e. CDI 1.0. But for CDI 2.0, the EG plans to improve the overall CDI Event mechanism by adding:
 
 * Asynchronous events
 
