@@ -10,7 +10,7 @@ It is sometime useful to remind about the availability of useful resources such 
 
 For new comers, there is _[Your First Cup: An Introduction to the Java EE Platform](https://docs.oracle.com/javaee/7/firstcup/index.html)_, a crisp introduction to the Java EE platform.
 
-The _[Java EE 7 Tutorial](https://docs.oracle.com/javaee/7/tutorial/index.html)_ is available for free (online and PDF format).  In addition, the Java EE Tutorial is now also available in ePub and Mobi formats (hint: check the top right corner) so you can download and read it on your preferred eBook reader (tablets, iBook, Kindle, etc.).  Just check the top right corner.  And again, those great resources are free!
+The _[Java EE 7 Tutorial]_ is available for free (online and PDF format). In addition, the it is now also available in ePub and Mobi formats so you can download and read it on your preferred eBook reader. Just check the top right corner. And again, those resources are free!
 
 Finally if you are more old school, the _Java EE 7 Tutorial_ is also available, for a fee, as a [dead-tree version](http://www.amazon.com/Java-EE-Tutorial-5th/dp/0321994922/). 
 
