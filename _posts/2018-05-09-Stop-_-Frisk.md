@@ -133,13 +133,17 @@ We can see that, for the black racial cohort, there are a few clusters. First, t
 
 On the other hand, there are a number of neighborhoods with a white population hovering around 75% where white residents are involved with 25-30% of all stop and frisk incidents within the neighborhood.
 
-Falling in between these two polar examples, stop and frisk rates with neighborhood tend to line up roughly with population proportion among Hispanic/Latinos.
+Falling between these two polar examples, stop and frisk rates with neighborhood tend to line up roughly with population proportion among Hispanic/Latinos.
 
 ![](https://raw.githubusercontent.com/GWarrenn/gwarrenn.github.io/drafts/images/stop_and_frisk/07_nbh_diff_black.png)
 
 This chart shows the same disproportionality as the previous chart but focuses specifically on black residents stopped by MPD. It displays the proportion of stop and frisk incidents minus the census proportions, which is the distance between the points and the diagonal line in the previous chart. 
 
 The biggest disproportions are apparent in whiter, more affluent neighborhood clusters in Northwest DC, including Cleveland Park, Friendship Heights, Kalorama Heights, and Georgetown.
+
+Additionally, the table below lists out the actual numbers compared to the census 2010 proportions for each neighborhood in more searchable and accessible format for finding patterns by race within neighborhoods.
+
+<iframe src="https://gwarrenn.shinyapps.io/stop_frisk_neighborhood_summary/" style="border:none;width:1000px;height:500px;"></iframe>
 
 The Relationship between Crime and Stop & Frisk
 --------------
