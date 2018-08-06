@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/delabassee
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://delabassee.com
+  * I am delabassee (https://keybase.io/delabassee) on keybase.
+  * I have a public key ASD_7dggiH5zvn5UOvyo4sz1wrO67x4GqgkDSYYo9861XQo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120ffedd820887e73be7e543afca8e2ccf5c2b3baef1e06aa0903498628f7ceb55d0a",
+      "host": "keybase.io",
+      "kid": "0120ffedd820887e73be7e543afca8e2ccf5c2b3baef1e06aa0903498628f7ceb55d0a",
+      "uid": "00282340ab0be6930c132c5183be7419",
+      "username": "delabassee"
+    },
+    "merkle_root": {
+      "ctime": 1533551095,
+      "hash": "ded7adc41bfb93d8db44d70750059a380648300779b2799ff87b22c3898c56b7beaf6a1be6330564dc650bc0407b8eff510f61b4421b9698394a0275835c3767",
+      "hash_meta": "edfe29b3ebc5860cab39109a4239be8906e3e6321917c3632808b4727e4d2569",
+      "seqno": 3413542
+    },
+    "service": {
+      "entropy": "dzl3m9YA24kad25DqT2TkycE",
+      "hostname": "delabassee.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "2.3.0"
+  },
+  "ctime": 1533551159,
+  "expire_in": 504576000,
+  "prev": "50058f271642a7c0088d4a79fec719561446dde1a03ed1c95dc8e6c964b78358",
+  "seqno": 6,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg/+3YIIh+c75+VDr8qOLM9cKzuu8eBqoJA0mGKPfOtV0Kp3BheWxvYWTESpcCBsQgUAWPJxZCp8AIjUp5/scZVhRG3eGgPtHJXcjmyWS3g1jEIPSYSNYIIzLPo/q0zrzB97HhhdtbWdMo+Yxq7Mx00KtxAgHCo3NpZ8RAeBvWrAYldwz7piuwf56Y5G73cz7NqVhh+vMQbfRjf0x1/xQmPNpPhIRgUKCn3Kk1r2/0T1JDC6u6FVhTQh+PAahzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIMISV1/RU3R4Jy7JGNiFV3rsFOMwQfF46n7zjprx6LZ6o3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/delabassee
+
+==================================================================
