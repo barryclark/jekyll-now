@@ -1,6 +1,6 @@
 ---
 layout: post
-title: HTTP/2 is done!
+title: HTTP/2 is Done!
 excerpt: There are still some minor processes to go through before they are published as official RFCs but the IESG has formally approved the HTTP/2 and HPACK specifications!...
 ---
 
