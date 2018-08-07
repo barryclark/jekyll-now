@@ -18,3 +18,27 @@ It looks like `splitgroups` works for the first three extensions and not the fou
 
 So, I made a dumb mistake. I knew that dolphot was going to take a while to run and left my laptop on and plugged in for a few hours. Stupidly, I forgot to set the screen to go to sleep "never". The laptop is already set to never turn off when plugged in, but it goes to sleep after 30 minutes, and that means it stops running background programs like dolphot (bright side: I didn't lose any progress). I was expecting dolphot to be done by now -- it's not even close. I'll look through the sections in the [dolphot manual](https://github.com/GosnellResearchGroupSummer2018/NGC6819/blob/master/dolphot_userguide.pdf) about dolphot's output to pass the time. 
 
+I took some notes on _§5.3 DOLPHOT Output_ because it's a little wordy and I wanted something that's easy to look at and will just tell you what's going on in the output:
+
+DOLPHOT's Output: '<output>.phot'
+---
+- Another file, '<output>.phot.columns' tells what each column means 
+- First thing in the file:
+  - Goodness of fit values: χ, signal:noise ratio, sharpness, roundness, major axis, object type
+    - Source-by-source after astrometric matching using all images
+- Next thing: Photometry blocks (one per image)
+  - In each block
+    - First thing: Goodness of fit values (still source-by-source, now unique to each image)
+    - Next things: Counts, background, count rate, count rate uncertainty, magnitude, magnitude uncertainty, FWHM, PSF ellipticity, PSF parameters a,b, and c, error flag
+      - might also contain: VEGAMAG
+  
+DOLPHOT's Output: other files
+---
+-'<output>.info' 
+  - General info including list of photometry blocks, image alignment, aperture corrections
+- '<output>.res.fits' and '<output>.psf.fits'
+  - Background subtracted images and images of the PSF, one each per input image
+-'<output>.apcor' and '<output>.psfs'
+  - Used for troubleshooting
+  
+  ---
