@@ -38,7 +38,7 @@ DOLPHOT's Output: other files
   - General info including list of photometry blocks, image alignment, aperture corrections
 - 'output.res.fits' and 'output.psf.fits'   
   - Background subtracted images and images of the PSF, one each per input image    
--'output.apcor' and 'output.psfs'
+- 'output.apcor' and 'output.psfs'
   - Used for troubleshooting
   
   ---
