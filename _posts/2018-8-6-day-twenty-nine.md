@@ -20,9 +20,9 @@ So, I made a dumb mistake. I knew that dolphot was going to take a while to run 
 
 I took some notes on _§5.3 DOLPHOT Output_ because it's a little wordy and I wanted something that's easy to look at and will just tell you what's going on in the output:
 
-DOLPHOT's Output: '<output>.phot'
+DOLPHOT's Output: 'output.phot'
 ---
-- Another file, '<output>.phot.columns' tells what each column means 
+- Another file, 'output.phot.columns' tells what each column means 
 - First thing in the file:
   - Goodness of fit values: χ, signal:noise ratio, sharpness, roundness, major axis, object type
     - Source-by-source after astrometric matching using all images
@@ -34,11 +34,11 @@ DOLPHOT's Output: '<output>.phot'
   
 DOLPHOT's Output: other files
 ---
--'<output>.info' 
+-'output.info' 
   - General info including list of photometry blocks, image alignment, aperture corrections
-- '<output>.res.fits' and '<output>.psf.fits'
+- 'output.res.fits' and 'output.psf.fits'
   - Background subtracted images and images of the PSF, one each per input image
--'<output>.apcor' and '<output>.psfs'
+-'output.apcor' and 'output.psfs'
   - Used for troubleshooting
   
   ---
