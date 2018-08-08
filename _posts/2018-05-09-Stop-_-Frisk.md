@@ -156,7 +156,7 @@ How would you answer the question, "what’s the best way to allocate police to 
 
 I think that's how no-nonsense detective Lennie Briscoe might respond, at least.
 
-In order to answer this question, I used crime data provided by the MPD, again through [OpenData DC](http://opendata.dc.gov/datasets?q=crime). Using a similar method as with the stop and frisk data, I matched individual crimes to each of the 39 neighborhoods using latitude and longitude provided by the MPD.
+In order to answer this question, I used crime data provided by the MPD, again through [OpenData DC](http://opendata.dc.gov/datasets?q=crime). Using a similar method as with the stop and frisk data, I matched individual reported crimes to each of the 39 neighborhoods using latitude and longitude provided by the MPD.
 
 ![](https://raw.githubusercontent.com/GWarrenn/gwarrenn.github.io/drafts/images/stop_and_frisk/08_crime_frisks.png)
 
@@ -197,7 +197,7 @@ The Benefit (and lack thereof) of the Doubt
 : Person-level Crime and Stop & Frisk Relationship
 --------------
 
-While the previous analyses were illuminating, there were certain limitations inherent in the data. Specifically, all of the charts and models were looking at all crime and stop and frisk in each neighborhood, regardless of race on the incident-level IS THIS RIGHT BC YOU ARE STILL LOOKING AT RACE JUST IN TERMS OF RACIAL COMPOSITION OVERALL FOR NEIGHBORHOOD. This method was used because of the available data; the MPD releases all years of crime stripped of any demographic data of the assailant, with one exception. In March 2018 (shortly after starting this analysis endeavor), the MPD released person-level crime data with demographic data of [felony crime incidents in 2016](http://opendata.dc.gov/datasets/felony-crime-incidents-in-2016).
+While the previous analyses were illuminating, there were certain limitations inherent in the data. Specifically, all of the charts and models were looking at all crime and stop and frisk in each neighborhood, regardless of race on the incident-level. This method was used because of the available data; the MPD releases all years of crime stripped of any demographic data of the assailant, with one exception. In March 2018 (shortly after starting this analysis endeavor), the MPD released person-level crime data with demographic data of [felony crime incidents in 2016](http://opendata.dc.gov/datasets/felony-crime-incidents-in-2016).
 
 We can use this data to test a burning question: Is the stop and frisk rate higher/lower than the reported crime rate for various racial groups in DC? 
 
