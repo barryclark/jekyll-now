@@ -10,11 +10,6 @@ My name is [Evan Rushton](https://www.linkedin.com/in/evanrushton/). I am an asp
 
 This blog summarizes my search for signal in a world of noise.
 
-#### Charter schools are stealing our students and destroying public education.
-#### Students are leaving public schools because they have better charter options.
-
-I start by exploring the two clickbait claims above with regard to California. The primary purpose of this blog is to address them, get in touch if this interests you.
-
 ### Contact me
 
 [evan.rushton@gmail.com](mailto:evan.rushton@gmail.com)
