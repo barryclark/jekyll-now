@@ -1,4 +1,11 @@
+I recently read a helpful [article by John Sullivan](https://www.kdnuggets.com/2018/06/5-data-science-projects-hired.html) on skills to showcase for a career in data science. He describes data cleaning as requiring these skills:
 
+Importing data
+Joining multiple datasets
+Detecting missing values
+Detecting anomalies
+Imputing for missing values
+Data quality assurance
 
 In order to prepare data for the enrollments analysis, I performed the following tasks:
     Import yearly files
