@@ -1,10 +1,16 @@
 ## Table of Contents
 1) [Intro](#intro)
+
 2) [Symptoms and Diagnosis](#symptoms-and-diagnosis)
+
 3) [Researching options](#researching-options)
+
 4) [Surgery and Post-op](#surgery-and-post-op)
+
 5) [Complications](#complications)
+
 6) [Post-op from blood clot](#post-op-from-blood-clot)
+
 7) [Advice](#advice)
 
 ## Intro
