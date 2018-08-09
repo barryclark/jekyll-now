@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   viewBox="0 0 545.51368 446.43209"
+   height="446.4321"
+   width="545.51367"
+   version="1.1"
+   id="svg2"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="Software_Categories_expanded.svg">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1521"
+     inkscape:window-height="877"
+     id="namedview37"
+     showgrid="false"
+     fit-margin-top="2"
+     fit-margin-left="2"
+     fit-margin-right="2"
+     fit-margin-bottom="2"
+     inkscape:zoom="0.9874477"
+     inkscape:cx="245.11649"
+     inkscape:cy="343.12342"
+     inkscape:window-x="575"
+     inkscape:window-y="16"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg2" />
+  <metadata
+     id="metadata8">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs6" />
+  <rect
+     style="fill:#7ba2dc;fill-opacity:0.51372549;stroke:#000000;stroke-width:1.04548526"
+     id="rect4190"
+     width="263.92154"
+     height="412.84448"
+     x="279.06937"
+     y="2.5227427"
+     rx="10.222312"
+     ry="12.938147" />
+  <rect
+     ry="12.938147"
+     rx="10.222312"
+     y="2.5227427"
+     x="2.5227427"
+     height="412.84448"
+     width="263.92154"
+     id="use4165"
+     style="fill:#7a6c14;fill-opacity:0.73626374;stroke:#000000;stroke-width:1.04548526" />
+  <rect
+     style="fill:#ed0826;fill-opacity:0.38095242;stroke:#000000;stroke-width:0.92227691"
+     id="rect4142-0"
+     width="241.51688"
+     height="351.07556"
+     x="15.632003"
+     y="32.275345"
+     rx="9.3545265"
+     ry="11.002368" />
+  <path
+     id="path4171"
+     d="M 320.02211,443.35973 C 104.4698,446.87126 86.271554,443.6148 86.271554,238.25534 86.271554,81.580233 115.51671,51.0602 199.87446,51.0602 c 71.86031,0 135.24514,3.390296 169.87445,8.048011 60.74685,8.170578 136.99494,5.545539 146.66899,56.576089 18.09752,95.46427 -113.22902,39.64351 -176.47791,64.34809 -49.55247,19.35485 -73.94549,150.98064 -19.31007,196.07248 22.86512,18.87109 61.5565,66.24214 -0.60781,67.25486 z"
+     style="fill:#f3f847;fill-opacity:0.43589747;stroke:#000000;stroke-width:0.83150339;stroke-opacity:0.55677658"
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="ssssssss" />
+  <text
+     id="text4173"
+     y="51.813316"
+     x="96.355789"
+     style="font-size:18px;font-family:'DejaVu Sans';text-align:center;text-anchor:middle"
+     xml:space="preserve"><tspan
+       id="tspan4175"
+       style="text-align:center;text-anchor:middle">Free Software</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:18px;font-family:'DejaVu Sans';text-align:center;text-anchor:middle"
+     x="268.72021"
+     y="436.81332"
+     id="text4213"><tspan
+       id="tspan4215"
+       style="text-align:center;text-anchor:middle">Free Download</tspan></text>
+  <rect
+     ry="11.003289"
+     rx="8.8021164"
+     y="58.264912"
+     x="30.60964"
+     height="351.10495"
+     width="227.25467"
+     id="use4169"
+     style="fill:#3ba40c;fill-opacity:0.41025642;stroke:#000000;stroke-width:0.89466858" />
+  <rect
+     style="fill:#6be96b;fill-opacity:0.51282055;stroke:#000000;stroke-width:0.69467622"
+     id="rect4167"
+     width="199.87248"
+     height="94.350494"
+     x="45.203468"
+     y="167.69661"
+     rx="9.3957148"
+     ry="6.2147031" />
+  <text
+     xml:space="preserve"
+     style="font-size:18px;font-family:'DejaVu Sans';text-align:center;text-anchor:middle"
+     x="87.241379"
+     y="24.470093"
+     id="text4169"><tspan
+       style="text-align:center;text-anchor:middle"
+       id="tspan4171">FOSS Software</tspan></text>
+  <rect
+     ry="9.2528419"
+     rx="9.3957148"
+     y="66.3806"
+     x="45.203468"
+     height="94.350494"
+     width="199.87248"
+     id="rect4178"
+     style="fill:#18aa18;fill-opacity:0.45787545;stroke:#000000;stroke-width:0.69467622" />
+  <rect
+     ry="6.8793073"
+     rx="9.394146"
+     y="271.00641"
+     x="45.220158"
+     height="104.4404"
+     width="199.83911"
+     id="rect4144"
+     style="fill:#e24f34;fill-opacity:0.51282055;stroke:#000000;stroke-width:0.73081642;stroke-opacity:1" />
+  <rect
+     ry="11.002067"
+     rx="9.385767"
+     y="308.32974"
+     x="58.961288"
+     height="50.009396"
+     width="172.3568"
+     id="rect4146"
+     style="fill:#c43343;fill-opacity:0.51282055;stroke:#000000;stroke-width:0.92380291" />
+  <text
+     xml:space="preserve"
+     style="font-size:18px;font-family:'DejaVu Sans';text-align:center;text-anchor:middle"
+     x="146.15242"
+     y="295.2074"
+     id="text4189"><tspan
+       id="tspan4191"
+       style="text-align:center;text-anchor:middle">Copylefted</tspan></text>
+  <text
+     id="text4193"
+     y="340.81332"
+     x="145.13971"
+     style="font-size:18px;font-family:'DejaVu Sans';text-align:center;text-anchor:middle"
+     xml:space="preserve"><tspan
+       id="tspan4195"
+       style="text-align:center;text-anchor:middle">GPLed</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:18px;font-family:'DejaVu Sans'"
+     x="128.84734"
+     y="401.31332"
+     id="text4197"><tspan
+       id="tspan4199">Open Source</tspan></text>
+  <text
+     id="text4185"
+     y="216.98705"
+     x="145.13971"
+     style="font-size:18px;font-family:'DejaVu Sans';text-align:center;text-anchor:middle"
+     xml:space="preserve"><tspan
+       id="tspan4187"
+       style="text-align:center;text-anchor:middle">Permissive licensing</tspan></text>
+  <text
+     id="text4177"
+     y="114.06755"
+     x="145.13971"
+     style="font-size:18px;font-family:'DejaVu Sans';text-align:center;text-anchor:middle"
+     xml:space="preserve"><tspan
+       id="tspan4179"
+       style="text-align:center;text-anchor:middle">Public domain</tspan></text>
+  <text
+     id="text4181"
+     y="124.56755"
+     x="145.13971"
+     style="font-size:10px;font-family:'DejaVu Sans';text-align:center;text-anchor:middle"
+     xml:space="preserve"><tspan
+       id="tspan4183"
+       style="text-align:center;text-anchor:middle">with source</tspan></text>
+  <text
+     id="text4201"
+     y="35.94891"
+     x="408.9617"
+     style="font-size:18px;font-family:'DejaVu Sans';text-align:center;text-anchor:middle"
+     xml:space="preserve"><tspan
+       id="tspan4203"
+       style="text-align:center;text-anchor:middle">Proprietary Software </tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:18px;font-family:'DejaVu Sans';text-align:center;text-anchor:middle"
+     x="407.70749"
+     y="223.31331"
+     id="text4205"><tspan
+       id="tspan4207"
+       style="text-align:center;text-anchor:middle">Closed</tspan></text>
+  <rect
+     ry="10.378498"
+     rx="10.967848"
+     y="48.752663"
+     x="299.5325"
+     height="71.964508"
+     width="217.36284"
+     id="rect4192"
+     style="fill:#21d6a8;fill-opacity:0.51282055;stroke:#000000;stroke-width:0.62447441" />
+  <text
+     xml:space="preserve"
+     style="font-size:18px;font-family:'DejaVu Sans';text-align:center;text-anchor:middle"
+     x="456.31766"
+     y="90.431969"
+     id="text4202"><tspan
+       style="text-align:center;text-anchor:middle"
+       id="tspan4204" /></text>
+  <rect
+     style="fill:#2a2da2;fill-opacity:0.51282055;stroke:#000000;stroke-width:1.1267345"
+     id="rect4150"
+     width="217.87329"
+     height="264.89023"
+     x="298.77084"
+     y="121.91905"
+     rx="10.993606"
+     ry="13.972961" />
+  <rect
+     ry="12.753757"
+     rx="12.142532"
+     y="104.60719"
+     x="305.64545"
+     height="57.971626"
+     width="203.11147"
+     id="rect4216"
+     style="fill:#4096c7;fill-opacity:0.51282055;stroke:#000000;stroke-width:0.63056308;stroke-miterlimit:4;stroke-dasharray:none" />
+  <text
+     xml:space="preserve"
+     style="font-size:18px;font-family:'DejaVu Sans';text-align:center;text-anchor:middle"
+     x="406.69479"
+     y="139.54849"
+     id="text4218"><tspan
+       style="text-align:center;text-anchor:middle"
+       id="tspan4220">Freeware/Shareware</tspan></text>
+  <text
+     id="text4222"
+     y="86.597206"
+     x="407.70749"
+     style="font-size:18px;font-family:'DejaVu Sans';text-align:center;text-anchor:middle"
+     xml:space="preserve"><tspan
+       style="text-align:center;text-anchor:middle"
+       id="tspan4224">Source available</tspan></text>
+</svg>
