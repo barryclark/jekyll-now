@@ -1,5 +1,3 @@
-# Poor Python
-
 Python, the popular dynamic language, offers conciseness and a strong community. But it is dogged by the transition from the 2.x family to the 3.x line.
 
 The language shows up as one of the most popular languages on the GitHub code-sharing site, accounting for 8 percent of code on the site and trailing only JavaScript, Ruby, and Java. But not all is rosy in the Python realm. After four years, programmers still are navigating a difficult transition from the 2.x to the 3.x version of the language because the 2.x version has been maintained in parallel, giving developers a reason to put off a migration to 3.
