@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Google Summer of Code Experience with VideoLAN
+title: GSoC with VideoLAN: VLC macOS Interface Redesign
 ---
 
 Hey there! 
