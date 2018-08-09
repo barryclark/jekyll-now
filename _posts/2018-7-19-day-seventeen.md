@@ -1,0 +1,11 @@
+Before learning DOLPHOT, I feel it's really important for me to fully learn all the things I've started learning but haven't finished yet. So, I spent most of today going over some sources that I found some time ago but never read to my satisfaction. I looked again at the [photutils docs](http://photutils.readthedocs.io/en/stable/index.html), read up on [astropy](http://docs.astropy.org/en/stable/index.html), learned about data reduction for [HST](http://www.stsci.edu/hst/HST_overview/documents/datahandbook/intro_preface1.html) and it's [WFC3](http://www.stsci.edu/hst/wfc3/documents/handbooks/currentDHB/wfc3_preface1.html), and finally learned about [FITS WCS conventions](https://fits.gsfc.nasa.gov/fits_wcs.html). 
+
+I also have been thinking a little more about the FWHM conundrum. I understand why it's important to have an accurate measure of the FWHM value for an image (to have to the most accurate source detection), but I feel like actually calculating a FWHM right now would be premature at this point. Once we start analyzing data, the first thing we should do is get a measure of this value before we run the data through our programs. We have already done what we need to be able to accomplish this once we get to that point; Rory has gotten `ipy.imexam()` pretty much working, and I have the projection method. `ipy.imexam()` should be more accurate, but my method would be a good ball-park check and a backup. Below are two examples of all the information you need to calculate the FWHM in arcseconds with my method, which could then be converted to pixels for the sake of `photutils.DAOStarFinder()`. 
+
+![]({{ thom-ory.github.io }}/images/Screen%20Shot%202018-07-19%20at%207.13.00%20PM.png)   
+![]({{ thom-ory.github.io }}/images/Screen%20Shot%202018-07-19%20at%207.14.43%20PM.png)   
+_This method is definitely an estimate, not a calculation. The length of the line (just above the flux vs. WCS graph) is the extent of the x axis of the graph, from which can be determined a width, and the maximum is provided in the statistics window, which tells you where to measure that width_
+
+---
+# Conclusion
+I hope to be fully started into learning DOLPHOT by Monday, and will be coming in both days this weekend to accomplish that. By the end of next week, I think the group may be ready to start data analysis. 
