@@ -19,7 +19,7 @@ subtitle: "ssh-key'in nasıl kullanıldığını açıklar."
 
 ## SSH-Key'in Oluşturulması
 
-Öncelikle local bilgisayarda ssh-key'i aşağıdaki gibi hazırlayın.
+Öncelikle bilgisayarınızda ssh-key'i aşağıdaki gibi hazırlayın.
 
 ```bash
 	$ ssh-keygen
@@ -29,7 +29,7 @@ subtitle: "ssh-key'in nasıl kullanıldığını açıklar."
 	<img src="/images/ssh-key-kullanimi/1.png">
 </p>
 
-Ardından pub dosyasının içeriğini kopyalayın ve sunucuya tarafına geçin.
+Ardından pub dosyasının içeriğini kopyalayın ve sunucu tarafına geçin.
 
 ```bash
 	$ cat /path/to/ssh-key.pub
@@ -45,11 +45,11 @@ Ardından pub dosyasının içeriğini kopyalayın ve sunucuya tarafına geçin.
 
 Eğer hali hazırda sunucuda ilgili kullanıcının home dizini altında **.ssh/authorized_keys** dosyası bulunmuyorsa aşağıdaki işlemleri uygulayın.
 
-**~/.ssh** klasörünü aşağıdaki gibi oluşturun ve erişebilirliğini 600 olarak belirleyin.
+**~/.ssh** klasörünü aşağıdaki gibi oluşturun ve erişebilirliğini 700 olarak belirleyin.
 ```bash
 	$ cd ~/ && mkdir .ssh && chmod 700 .ssh
 ```  
-**~/.ssh/authorized_keys** dosyasını aşağıdaki gibi oluşturun ve erişebilirliğini 700 olarak belirleyin.
+**~/.ssh/authorized_keys** dosyasını aşağıdaki gibi oluşturun ve erişebilirliğini 600 olarak belirleyin.
 ```bash
 	$ touch .ssh/authorized_keys && chmod 600 .ssh/authorized_keys
 ```
@@ -68,7 +68,7 @@ Ardından kopyaladığınız key'i **.ssh/authorized_keys** dosyasına yapışt�
 
 ## SSH-Key Kullanımı ile Sunucuya Bağlanmak
 
-**-i** parametresi ile key'in konumunu belirterek sunucuya bağlayabilirsiniz.
+Artık **-i** parametresi ile key'in konumunu belirterek sunucuya bağlayabilirsiniz.
 ```bash
 	$ ssh -i /path/to/ssh-key username@ServerIP
 ```
@@ -83,7 +83,7 @@ Aşağıda görüldüğü gibi parola kullanılmadan bağlantı sağlanmış old
 
 ## SSH Kullanımının Daha Güvenli Hale Getirilmesi
 
-Sunucunuzu daha güvenli bir hale gelmesi için default port olan 22'i değiştirmenizde, root kullanıcısı ve parola kullanımı ile girişleri kapatmanızda fayda vardır. Aşağıdaki gibi bu işlemi yapabilirsiniz.
+Sunucunuzun daha güvenli bir hale gelmesi için default port olan 22'yi değiştirmenizde, root kullanıcısı ve parola kullanımı ile girişleri kapatmanızda fayda vardır. Aşağıdaki gibi bu işlemi yapabilirsiniz.
 
 config dosyasını aşağıdaki gibi açın ve ilgili satırları tabloda belirtildiği gibi değiştirin.
 ```bash
@@ -107,9 +107,9 @@ config dosyasını aşağıdaki gibi açın ve ilgili satırları tabloda belirt
 
 ## ".ssh/config" Dosyasının Kullanımı
 
-Eğer birden fazla sunucu ile uğraşıyorsanız, her bağlantı kurma aşamasında IP girmek tam bir işkence. Bunun önüne geçmek için bilgisayarınızda aşağıdaki gibi bir .ssh/config dosyası oluşturabilirsiniz. Bu sayede IP'leri girmeden direkt olarak **ssh serverName** şeklinde sunucunuz ile bağlantı sağlayabilirsiniz.
+Eğer birden fazla sunucu ile uğraşıyorsanız, her bağlantı kurma aşamasında IP girmek tam bir işkence. Bunun önüne geçmek için bilgisayarınızda aşağıdaki gibi bir .ssh/config dosyası oluşturabilirsiniz. Bu sayede IP'leri girmeden direkt olarak **ssh serverName** diyerek sunucunuz ile bağlantı sağlayabilirsiniz.
 
-Bunun için **~/.ssh/config** dosyasının oluşturun.  
+Bunun için **~/.ssh/config** dosyasını oluşturun.  
 ```bash
 	$ touch .ssh/config
 ```
