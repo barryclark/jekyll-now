@@ -100,6 +100,7 @@ Once we were able to transform the addresses to latitude and longitude, for this
 <figure class="video_container">
 <iframe width="800" height="600" src="https://rawgit.com/mahkah/dc_stop_and_frisk/master/index.html" frameborder="0" allowfullscreen="true"></iframe>
 </figure>
+<br>
 
 Stop & Frisk: Neighborhoods
 --------------
@@ -113,7 +114,7 @@ The interactive visualization below lets you dig into some basic trends and demo
 <figure class="video_container">
 <iframe width="800" height="600" src="https://dc-stop-frisk.herokuapp.com/" frameborder="0" allowfullscreen="true"></iframe>
 </figure>
-
+<br>
 
 ![](https://raw.githubusercontent.com/GWarrenn/gwarrenn.github.io/drafts/images/stop_and_frisk/05_nbh_sf.gif)
 
@@ -144,6 +145,7 @@ The biggest disproportions are apparent in whiter, more affluent neighborhood cl
 Additionally, the table below lists out the actual numbers compared to the census 2010 proportions for each neighborhood in more searchable and accessible format for finding patterns by race within neighborhoods.
 
 <iframe src="https://gwarrenn.shinyapps.io/stop_frisk_neighborhood_summary/" style="border:none;width:1000px;height:500px;"></iframe>
+<br>
 
 The Relationship between Crime and Stop & Frisk
 --------------
