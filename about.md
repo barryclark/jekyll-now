@@ -4,12 +4,18 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Computer Science Undergraduate Student at IIIT-D | Computer Enthusiast
 
-### More Information
+### Work and Experience
 
-A place to include any other types of information that you'd like to include about yourself.
+* Member of Precog (Dec'17 - Present)
+
+* Member of Byld (Oct'17 - Present)
+
+* Member of Sugar Labs (Dec'14 - Feb'16)
+
+
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+daksh17336 at iiitd.ac.in
