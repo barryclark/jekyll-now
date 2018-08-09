@@ -223,6 +223,7 @@ Now that we can see a clear need to add the neighborhood's racial composition in
 
 </p>
 </details>  
+<br>
 
 ![](https://raw.githubusercontent.com/GWarrenn/gwarrenn.github.io/drafts/images/stop_and_frisk/crime_frisk_yearly_race.png)
 
@@ -240,12 +241,6 @@ While the previous analyses were illuminating, there were certain limitations in
 
 We can use this data to test a burning question: Is the stop and frisk rate higher/lower than the reported crime rate for various racial groups in DC? 
 
-![](https://raw.githubusercontent.com/GWarrenn/gwarrenn.github.io/drafts/images/stop_and_frisk/11_nbh_crime_sf_race_scatter.png)
-
-Similarly to how we looked at stop and frisk as it compares to neighborhood racial composition, the chart above shows the relationship between the proportion of stop and frisk and crime by neighborhood and racial group. If a dot is below the diagonal line, then the group is stop and frisked at a higher rate than the crime rate for that group in that neighborhood, and vice versa. We find a similar, but more pronounced disproportionality across all neighborhoods in DC, where black residents are stopped at a higher rate than their racial group accounts for in the overall neighborhood crime rate. On average, the stop and frisk rate among black residents is ~30% higher than the reported crime rate among blacks.
-
-Likewise, the stop and frisk rate is lower than the reported crime rate among whites across the majority of DC neighborhoods, with a crime rate 5% higher than the stop and frisk rate. A further breakdown by neighborhood and racial group is below. A guide to interpretation: if a racial group is plotted at less than 0, then the group is stopped at a greater rate than the reported crime rate in the neighborhood for that group. The reverse is true if the group is plotted at greater than 0. 
-
 <details><summary>Click for slight detour on the crime data</summary>
 <p>
 
@@ -257,6 +252,13 @@ While we're talking about crime, we'll take a look at the relationship between c
 
 </p>
 </details> 
+<br>
+
+![](https://raw.githubusercontent.com/GWarrenn/gwarrenn.github.io/drafts/images/stop_and_frisk/11_nbh_crime_sf_race_scatter.png)
+
+Similarly to how we looked at stop and frisk as it compares to neighborhood racial composition, the chart above shows the relationship between the proportion of stop and frisk and crime by neighborhood and racial group. If a dot is below the diagonal line, then the group is stop and frisked at a higher rate than the crime rate for that group in that neighborhood, and vice versa. We find a similar, but more pronounced disproportionality across all neighborhoods in DC, where black residents are stopped at a higher rate than their racial group accounts for in the overall neighborhood crime rate. On average, the stop and frisk rate among black residents is ~30% higher than the reported crime rate among blacks.
+
+Likewise, the stop and frisk rate is lower than the reported crime rate among whites across the majority of DC neighborhoods, with a crime rate 5% higher than the stop and frisk rate. A further breakdown by neighborhood and racial group is below. A guide to interpretation: if a racial group is plotted at less than 0, then the group is stopped at a greater rate than the reported crime rate in the neighborhood for that group. The reverse is true if the group is plotted at greater than 0. 
 
 ![](https://raw.githubusercontent.com/GWarrenn/gwarrenn.github.io/drafts/images/stop_and_frisk/12_nbh_diff_crimes.png)
 
@@ -310,7 +312,7 @@ Thank you to the DC Office of the Chief Technology Officer and the DC Metropolit
 
 Footnotes
 --------------
-<sup>1</sup> For the "crime-only" model I created a simple linear regression in R using the lm() function. The independent variable was the previous year's average amount of crime in the neighborhood and the dependent variable was the current year's average amount of stop and frisk, as illustrated below. Rather than run the model for all years and neighborhoods, I rolled up each neighborhood and took the average crime and stop and frisk 
+<sup>1</sup> For the "crime-only" model I created a simple linear regression in R using the lm() function. The independent variable was the previous year's average amount of crime in the neighborhood and the dependent variable was the current year's average amount of stop and frisk, as illustrated below. Rather than run the model for all years and neighborhoods, I rolled up each neighborhood and took the average crime and stop and frisk. 
 
 ```R
 yearly_model <- lm(formula = avg_sf ~ avg_prev_yr_crime,
