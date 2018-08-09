@@ -1,9 +1,20 @@
+## Table of Contents
+1) [Intro](#intro)
+2) [Symptoms and Diagnosis](#symptoms-and-diagnosis)
+3) [Researching options](#researching-options)
+4) [Surgery and Post-op](#surgery-and-post-op)
+5) [Complications](#complications)
+6) [Post-op from blood clot](#post-op-from-blood-clot)
+7) [Advice](#advice)
+
+## Intro
 This post is intended to help those with Popliteal Artery Entrapment Syndrome (PAES) by recounting my personal experience with the symptoms, diagnosis, surgery, and results. 
 
 I also hope that people who are developing PAES symptoms without knowing why might find this post from googling and be able to intervene early. My symptoms were local to my lower right leg and foot: pain when walking even small distances, increased sensitivity to cold, numbness, discoloration, Raynaud’s symptoms, calf soreness, and sharp foot arch pain.
 
-Really quick, for those that don’t know what PAES is - Popliteal Artery Entrapment Syndrome is a syndrome in which the artery behind your knee is wired incorrectly and becomes constricted by the muscles or tendons in your leg. When you exercise, your muscles expand and so they constrict the misplaced artery, cutting off blood flow, and slowly ossify the artery. Typical treatment depends on the exact type of PAES one has.
+For those that don’t know what PAES is - Popliteal Artery Entrapment Syndrome is a syndrome in which the artery behind your knee is wired incorrectly and becomes constricted by the muscles or tendons in your leg. When you exercise, your muscles expand and so they constrict the misplaced artery, cutting off blood flow, and slowly ossify the artery. Typical treatment depends on the exact type of PAES one has.
 
+## Symptoms and Diagnosis
 I was diagnosed with PAES when I was 18, in my freshman year of college. I had played soccer for my whole life, and had run cross country in high school at a competitive level, typically averaging 50 miles a week. This is the typical background of someone who develops PAES. I quit halfway through my sophomore year after a string of injuries unrelated to my PAES. Quitting probably delayed the onset of severe symptoms and the diagnosis. In retrospect, I did have mild PAES-like symptoms during my running career: my foot would feel hot and cramped after several miles of running, as if the one shoe I was wearing was too tight. About a year after quitting, I first started to recognize real symptoms when I couldn’t walk a quarter mile without sharp pain in my foot. Due to my history of injuries from running, I didn’t think much of it though.
 
 The next August, I went surfing with my dad. In New Jersey, the ocean is typically in the mid-70s in August, the warmest it is all year. When I got out of the water, my one foot was pale and my nails were blue. The rest of my body was entirely normal. This prompted us to start looking into the condition.
@@ -12,6 +23,7 @@ We started with my pediatrician who labeled it as Raynaud’s. Raynaud’s is re
 
 After about 6 months of referrals and personal research, we eventually discovered PAES. We went to Penn to see a leading vascular surgeon on the subject. After some initial scans, he told us that I shouldn’t get the surgery, and should instead just change my lifestyle. This meant no activity that exacerbated my conditions. Unfortunately, just walking was enough to exacerbate them. His reasoning was that he had only performed the operation on old patients who either became sedentary or died before the operation could fail. Likewise, another highly cited surgeon in Wisconsin also didn’t want to see me. There was trouble with the scans performed in Penn, and we essentially dropped the initiative. 
 
+## Researching options
 I lived with the condition for 5 years after that. It got worse. Any amount of walking would become painful. Once a year, I would convince myself I wanted to go for a run, and would have to quit in agonizing pain after only a mile. I was still able to play intramural soccer, but I would have to take breaks often. 
 
 When I graduated, I moved to New York for work. I worked for a company that offered incredibly good health insurance. My leg hurt on a daily basis as I had to walk 20 minutes to work each way every day. I began looking into surgery options again.
@@ -24,6 +36,8 @@ This surgeon told us we’d have to do a bypass to fix the issue. He said it wou
 
 For the next 3 months, I ran increasingly hard, past the point of pain, per my surgeon’s recommendation. By the end, I was able to run significantly farther than when I started. Previously, I couldn’t run a mile without needing to stop, but by the end I had done a 7 mile run (though by mile 5 I couldn’t feel my foot, and my right leg hurt for days after). I don’t know how much of this was just fitness, and how much was revascularization. My surgeon claimed this time period wasn’t long enough for me to have seen any revascularization. However, my progress was still extremely unsatisfactory to me. Running was extremely painful, and I didn’t see these results transfer to any kind of cardio that wasn’t running in a straight line. Soccer was painful and stop-and-go sports like tennis and basketball were still extremely painful.
 
+## Surgery and Post-op
+
 I opted for the procedure. 
 
 It was a long procedure, and my condition was apparently worse than previously believed. There had been 5 months between my MRI and actually being opened up, but the amount of artery that had died in that time period was apparently surprising enough that my surgeon called for a second opinion while I was on the table. We still don’t know why my condition was so much worse than previously believed.
@@ -33,6 +47,8 @@ I was out of work for two weeks. I was bedridden in the hospital for 3 nights. I
 I continued to be mostly bedridden for another week at home. Then I made quick progress towards walking around with a relatively normal gait.
 
 I rehabbed for about 2 more weeks, and then I saw my surgeon again. My blood flow was perfectly normal and my incisions had healed well. My doctor cleared me for exercise.
+
+## Complications
 
 About a week later, I got a blood clot. I actually thought it was my bypass shutting down. But I later learned that it was a limb-threatening blood clot. We don’t have conclusive reasons why I got the blood clot, but it’s likely a result of a few things: I forgot to take my aspirin for a few days in a row, just when I was starting to exercise again. I was also stretching my legs, which included bending my legs back. My surgeon told me this was probably the worst thing I could for it. I was inadvertently squeezing my artery when I was bending my leg and thereby creating clots. I hadn’t been told to avoid this beforehand. Absolutely take the medicine they prescribe you. And if you stop, make sure you tell them. Also, if you feel any kind of weird pain, don’t hesitate to reach out about it. I almost ignored it since pain was expected because of the healing. If I had ignored it, I probably would have experienced permanent nerve damage and maybe even lost my foot. 
 
@@ -44,8 +60,12 @@ It was painful to walk, primarily because of the groin insertion. My symptoms ha
 
 I was put on blood thinner and kept on my aspirin regiment. 
 
+## Post-op from blood clot
+
 A month after my blood clot I was able to walk farther without symptoms than I could pre-bypass. I had just seen my surgeon for a post-op followup. I would be on blood thinner for at least another two months until I saw him again. I had also seen a hematologist who ruled out blood clotting disorders. I was cleared for light upper body weightlifting and bike riding. I felt too cautious to try riding the bike. In retrospect, this was probably smart, since when I talked to my doctor a few weeks later, he had changed his mind on the biking. I was told I should be 100% in roughly 10 weeks. Initially, I saw rapid progress in the first 10 days after my clot. After that it was slower, but noticeable week-to-week progress.
 
 It’s now been about three months since my blood clot. I still am not allowed to do much of anything rigorous, but within the things that I can do, I have noticed my leg is much better than it was pre-bypass. I can walk on sand without pain, when it used to strain my calf only a few steps in. I just went for an 8-mile, 4000 ft gain hike. My leg hurt intermittently for the first few miles, but could be relaxed with just a 30 second break every mile. I wouldn’t have been able to do this hike last year. I did a much easier hike last year, just 1.5 miles with 1300 feet of gain, and my leg was in severe pain the whole time. It’s been a slow and subtle progression, but I think this benchmark indicates clear progress. I still don’t know how long I’ll be sidelined by my doctor’s advice, but I’m confident that my condition that when I return, my condition will be the best it has been in many years. I don’t think it’s 100% unfortunately, but it’s still a marked improvement.
+
+## Advice
 
 My advice to those with PAES: Get the surgery sooner than later, though I can’t comment on the muscle snip procedure. Don’t over analyze papers because your doctors will understand them better. Take your fucking medicine and alert your doctor if you miss a dose. Be extremely extremely vigilant in your post-op care. I declined to do research about my procedure because I didn’t think I’d go through with it if I knew too much and scare myself out of it. That was bad. Be very paranoid about what you and cannot do. I didn’t know that bending my knee would cause blood clots. Nobody told me it would initially. If you feel your old symptoms re-emerge, immediately get yourself to the hospital, preferably the one you had your original procedure in, and notify your surgeon. Ease back into exercise. And really really ease into it. Be patient. 
