@@ -62,7 +62,7 @@ At this rate, I won't be able to cash out (you need to make $100 before AdSense 
 * Earnings / 1,000 sessions = $0.82 / 1.262 = $0.65
 * Earnings / 1,000 pageviews = $0.82 / 1.889 = $0.43
 * Earnings / 1,000 impressions = $0.82 / 1.022 = $0.80
-* Earnings / day = $ 0.82/ 30 = $0.03
+* Earnings / day = $ 0.82 / 30 = $0.03
 * Sessions / day = 1,262 / 30 = 42.1
 * Pageviews / day = 1,889 / 30= 63.0
 * Impressions / day = 1,022 / 30 = 34.1
