@@ -10,7 +10,7 @@
 ## Intro
 This post is intended to help those with Popliteal Artery Entrapment Syndrome (PAES) by recounting my personal experience with the symptoms, diagnosis, surgery, and results. 
 
-I also hope that people who are developing PAES symptoms without knowing why might find this post from googling and be able to intervene early. My symptoms were local to my lower right leg and foot: pain when walking even small distances, increased sensitivity to cold, numbness, discoloration, Raynaud’s symptoms, calf soreness, and sharp foot arch pain.
+I also hope that people who are developing PAES symptoms without knowing why might find this post from googling and be able to intervene early. My symptoms were local to my lower right leg and foot: pain when walking even small distances, increased sensitivity to cold, numbness, discoloration, Raynaud’s symptoms, pale skin and blue nails, calf soreness and sharp foot pain when exercising.
 
 For those that don’t know what PAES is - Popliteal Artery Entrapment Syndrome is a syndrome in which the artery behind your knee is wired incorrectly and becomes constricted by the muscles or tendons in your leg. When you exercise, your muscles expand and so they constrict the misplaced artery, cutting off blood flow, and slowly ossify the artery. Typical treatment depends on the exact type of PAES one has.
 
