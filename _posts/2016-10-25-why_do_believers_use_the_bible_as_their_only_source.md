@@ -18,3 +18,5 @@ The reason they believe this is because they believe the Bible is either written
 Now, that answers why they use it, but the question is why is it the only source? That stems from the concept of [sola scriptura](https://en.wikipedia.org/wiki/Sola_scriptura), which is Latin for "Scripture alone" (scripture is kind of another word for Bible). The idea is that not only is the Bible inerrant and infallible, it is the only thing on Earth that is. That is, everything else, all other sources, will be inherently wrong at some level. Therefore, it only makes sense to use the Bible as the only source.
 
 The idea that believers only use the Bible to defend there faith isn’t exactly right. It’s mostly only the more vocal ones. There have been tons of books on [apologetics](https://en.wikipedia.org/wiki/Apologetics) (which really has nothing to do with saying someone is sorry), which if you refer to it, means you’re not necessarily using the Bible. Christians and other faiths have had a long history of helping with scientific breakthroughs (despite popular thought).
+
+![Title over the image of a bible](/images/covers/bible_source.jpg)
