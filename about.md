@@ -7,6 +7,6 @@ My nane is David Delabassée, I am in the Java space since the early days of thi
 
 Prior to that, I was working as an Evangelist in the Oracle Java EE organization and was recently involved in the initiative to transition the developemnt of the Java EE platform to the Eclipse Foundation, aka [Jakarta EE](https://jakarta.ee/).
 
-I am also a regular speaker at conferences and user groups, large and small, local and global.
+I am also a regular speaker at [conferences and user groups, large and small, local and global](http://delabassee.com/conferences/).
 
 I can be reached on [Twitter](https://twitter.com/delabassee) (DMs are open).
