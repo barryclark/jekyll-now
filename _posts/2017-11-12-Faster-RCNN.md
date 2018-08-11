@@ -11,7 +11,7 @@ title: Faster RCNN
 
 
 
-![Faster-RCNN](https://github.com/duanyzhi/duanyzhi.github.io/blob/master/images/faster-rcnn.jpg)  
+![Faster-RCNN](https://cl.ly/430U1S3f0S44)  
 
 
 
