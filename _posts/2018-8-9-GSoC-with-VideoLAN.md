@@ -14,6 +14,8 @@ You can have a look at my [GSoC Project Page]() and [Proposal]()
 * [Vibhoothi](https://code.videolan.org/vibhoothiiaanand) (Student at Amrita University)
 * [Daksh Shah](https://code.videolan.org/Daksh) (Me, Student at [IIITD](https://iiitd.ac.in/))
 
+![Team Photo]({{ site.baseurl }}/images/team.jpg)
+Left to Right: Vibhoothi, Daksh(Me), Jean-Baptiste, Felix, David
 
 ## Workflow
 Let's start by looking at our workflow at VLC. VLC has a [GitHub Repository](https://github.com/videolan/vlc) which is read-only.  We use our [mailing list](https://wiki.videolan.org/Sending_Patches_VLC/) to send Patches. We also have a GitLab instance at https://code.videolan.org/.
