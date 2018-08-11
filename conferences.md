@@ -4,8 +4,8 @@ title: Conferences
 permalink: /conferences/
 redirect_from:
   - /conference/
-  - /conf
-  - /speaking
+  - /conf/
+  - /speaking/
 ---
 
 Through the years, I spoke at multiple conferences. Below is a non-exhaustive list of the public venues I spoke at.
