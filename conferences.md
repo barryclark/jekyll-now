@@ -21,7 +21,6 @@ Oracle OpenWorld (San Francisco, Moscow), SnowCamp (France), India Dev Days, Jav
 Java'SI (Slovenia), Jazoon (Switzerland), RigaDevDays (Latvia), JBCN (Spain), 
 Open Source Day Zagreb, Magdeburg DevDays (Germany), EclipseCon (Germany), SoftShake Geneva, JVM-Con (Germany), 
 Java2Days (Bulgaria), QCon London, JAX London, Oracle Developer Day South Africa, Java Day São Paulo, 
-Java Day Kiev, JMaghreb (Morroco), JCertif (Tunisia), ...
-,and mutliple Meetups and User Groups across the globe.
+Java Day Kiev, JMaghreb (Morroco), JCertif (Tunisia), and mutliple Meetups and User Groups across the globe.
 
 
