@@ -28,5 +28,7 @@ This isn't meant to motivate resistance to these great events around Austin, but
 
 These events should also focus more on how exactly their attendees are going to get to their event. A webpage with a link to google maps isn't particularly helpful for those who are hoping to bike, walk, or take transit. Organizers should also be realistic about parking availability near the event to prevent attendees from circling the area looking for parking. [A reliable shuttle service with specific intstructions can also limit the traffic near the site.](https://www.reddit.com/r/Austin/comments/6jltlk/alright_who_gave_capmetro_photoshop/)
 
+We should all just remain patient, or just take the Friday off. 
+
 Charlie
 
