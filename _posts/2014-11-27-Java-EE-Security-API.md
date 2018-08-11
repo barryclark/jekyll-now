@@ -13,7 +13,7 @@ The [JSR proposal](https://jcp.org/en/jsr/detail?id=375) gives a more detailed o
 * **User Management**: Standardization of a ’user service’ API which would enable an application to perform user management operations (e.g. create a user). The ‘user service’ would rely on a ‘user source’ which would be an abstraction of a physical user store (e.g. LDAP, data-bases, etc.).  The user service would be configurable to match the deployment requirements.
 
 <p align="center">
-<img alt="Security API picture 2" src="http://delabassee.com/images/blog/jsr375_1.jpg">
+<img alt="Security API picture 2" src="https://delabassee.com/images/blog/jsr375_1.jpg">
 </p>
 
 * **Password Aliasing**: Standardization of syntax for pointing (alias) to passwords stored in a (secure) password repository. This password repository might then be bundled with an application (e.g. think cloud deployment).
@@ -21,7 +21,7 @@ The [JSR proposal](https://jcp.org/en/jsr/detail?id=375) gives a more detailed o
 * **Role Mapping**: Definition and standardization of a ‘role service’ API that would enable an application to perform various role mapping operations (e.g. querying a group role). This would be done via different role mappers (e.g. LDAP, files) that would be adaptable based on the environment’s needs.
 
 <p align="center">
-<img alt="Security API picture 2" src="http://delabassee.com/images/blog/jsr375_2.jpg">
+<img alt="Security API picture 2" src="https://delabassee.com/images/blog/jsr375_2.jpg">
 </p>
 
 * **Authorization**: Definition of a new CDI interceptor annotation that would be used to preform application-domain rules at the method level.
