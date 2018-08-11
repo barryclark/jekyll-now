@@ -14,7 +14,7 @@ LavaOne (Hawaii), JavaLand (Germany), CodeMotion (Israel), Oracle Code (Paris, T
 Oracle OpenWorld (San Francisco, Moscow), SnowCamp (France), India Dev Days, Java'Cro (Croatia), 
 Java'SI (Slovenia), Jazoon (Switzerland), RigaDevDays (Latvia), JBCN (Spain), 
 Open Source Day Zagreb, Magdeburg DevDays (Germany), EclipseCon (Germany), SoftShake Geneva, JVM-Con (Germany), 
-Java2Days (Bulgaria), QCon London, JAX London, Java Day Kiev, 
+Java2Days (Bulgaria), QCon London, JAX London, Oracle Developer Day South Africa, Java Day Kiev, 
 Java Day São Paulo, JMaghreb (Morroco), JCertif (Tunisia), ...
 and many User Groups world-wide.
 
