@@ -2,6 +2,10 @@
 
 * Medium PR
 
+## Tip
+
+https://github.com/rstacruz/cheatsheets/blob/master/jekyll-github.md
+
 # Jekyll Now
 
 **Jekyll** is a static site generator ([Jekyll Repository](https://github.com/jekyll/jekyll))
