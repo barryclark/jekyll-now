@@ -11,7 +11,7 @@ title: Faster RCNN
 
 
 
-![Faster-RCNN](https://cl.ly/430U1S3f0S44)  
+![Faster-RCNN](https://github.com/duanyzhi/resnet_cifar10_cifar100_imagenet/blob/master/data/fig/cifar10_resnet.png)  
 
 
 
