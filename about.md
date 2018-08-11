@@ -15,4 +15,4 @@ Everything on this blog was done for fun, free, and is for everyone.
 
 Charlie Henry
 
-[thomashenry@utexas.edu](mailto:thomashenry@utexas.edu)
+[charlie@modalshift.co](mailto:charlie@modalshift.co)
