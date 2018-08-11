@@ -7,7 +7,7 @@ excerpt: We are pleased to announce the general availability of GF 5.0, the Java
 We are pleased to announce the general availability of GlassFish 5.0, the Java EE 8 Open Source Reference Implementation and that the Java EE 8 umbrella specification and all the underlying specifications (JAX-RS 2.1, Servlet 4.0, CDI 2.0, JSON-B 1.0, Bean Validation 2.0, etc.) are finalized and approved!
 
 <p align="center">
-<img alt="Java EE 8" src="http://delabassee.com/images/blog/EE8-gfx-420.jpg">
+<img alt="Java EE 8" src="https://delabassee.com/images/blog/EE8-gfx-420.jpg">
 </p>
 
 Java EE 8 adds some nice capabilities to the platform:
