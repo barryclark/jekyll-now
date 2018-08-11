@@ -4,8 +4,8 @@ title: Austin's Buisest Traffic Days
 ---
 What are the buisest days on Austin's roads? Where is everyone going?
 
-## The Buisest Day at Each Location
-<iframe width="700" height="900" frameborder="0" scrolling="no" src="//plot.ly/~charlie2343/7.embed"></iframe>
+<iframe width="700" height="700" frameborder="0" scrolling="no" src="//plot.ly/~charlie2343/7.embed"></iframe>
+*The day with the highest total volume (total cars counted) at each radar sensor*
 
 
 [The Austin Transportation Department has live updating radar traffic counts at stations across the city. 
