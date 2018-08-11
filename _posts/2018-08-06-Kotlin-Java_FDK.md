@@ -4,8 +4,6 @@ title: Kotlin and the Java FDK
 excerpt: The Kotlin support is, in Fn, largely based on the Java support and more specifically...
 ---
 
-Kotlin and the Java FDK
-
 As we saw in [this post](https://medium.com/fnproject/serverless-kotlin-with-fn-project-914486c5c9ec), it is really simple to write and deploy Serverless Kotlin functions using [Fn](https://github.com/fnproject/fn). The Kotlin support is, in Fn, largely based on the Java support and more specifically on the [Java FDK](https://github.com/fnproject/fdk-java).
 
 
@@ -21,7 +19,7 @@ The fact that the Koltin support is based on the Java FDK offers some nice benef
 Both Java and Kotlin are using JUnit for unit testing. Kotlin does it via the standard [kotlin.test.junit](https://kotlinlang.org/api/latest/kotlin.test/kotlin.test.junit/index.html) library, it enables to write testing rules in Kotlin. To get you started, a sample Kotlin based rule is automatically created when you initialize a new Kotlin function via `fn init --runtime kotlin myfunc`. You can then use Maven to unit test this Kotlin function, i.e. `mvn test`.
 
 
-Should you want to skip those unit tests, just set the following property `<skipTests>true</skipTests>` in the pom.xml `<properties>`.
+Should you want to skip those unit tests, just set the following property `<skipTests>true</skipTests>` in the _pom.xml_ `<properties>`.
 
 
 <script src="https://gist.github.com/delabassee/fc41bfc2bebf126981702a75e6aae20e.js"></script>
@@ -102,12 +100,14 @@ In the previous example, we relied on an external Jackson dependency but that wa
 
 To illustrate this, just switch the sample function to use the _FdkFunc.kt_ function instead of the _JacksonFunc.kt_ function by commenting/uncommenting the appropriate _cmd_ entry in the _func.yaml_. If you now run the function again (`echo "bel" | fn run country`), you will obtain the same result but this time, the marshalling to JSON is automatically handled by the Java FDK.
 
-GIST FUNC
+
+<script src="https://gist.github.com/delabassee/f14a79d5fe2fef34f04c24dbe5315828.js"></script>
+
 
 In this example, we have used the Java FDK to transparently marshall Java objects to JSON documents (i.e. in output) but it obviously works in both directions (i.e. input and ouput). The Java FDK will also unmarshal incoming JSON documents to Java objects and will pass those Java objects to the called functions. It should be mentioned that under the hood, the Java FDK is also using Jackson to provide JSON/Java un/marshalling (see [here](https://github.com/fnproject/fdk-java/tree/master/runtime/src/main/java/com/fnproject/fn/runtime/coercion)) but that is just an implementation detail.
 
 
-##The Java Ecosystem
+## The Java Ecosystem
 
 
 And last but not least, using Kotlin to write Serverless functions allows you to leverage one of Kotlin’s key value, i.e. its interoperability with Java. As you saw previously, you can keep using your favorite Java-based tool-chain to develop Kotlin functions. You can also leverage existing Java API’s including the Java FDK API’s. At runtime, you also get all the benefits of running on top of the JVM, etc. In a nutshell, Kotlin support in Fn gives you the best of Kotlin combined with all the benefits of Java’s first class support on Fn!
