@@ -9,7 +9,7 @@ Thanks to everyone who took the time to complete the Java EE Community Survey! 1
 Detailed findings and analysis can be found here and the chart below summarizes community ranking of component technologies surveyed, from most important to least important.
 
 <p align="center">
-<img alt="Score ranking" src="http://delabassee.com/images/blog/surv_chart.jpg" width="75%">
+<img alt="Score ranking" src="https://delabassee.com/images/blog/surv_chart.jpg" width="75%">
 </p>
 
 
@@ -25,13 +25,13 @@ We reviewed the Java EE 8 proposal based on these survey results, and additional
 We will revise the Java EE 8 proposal consistent with these findings. The table below summarizes Oracle's original and revised Java EE 8 proposals, focusing on areas of new API development:
 
 <p align="center">
-<img alt="Java EE 8" src="http://delabassee.com/images/blog/surv_table.jpg" width="75%">
+<img alt="Java EE 8" src="https://delabassee.com/images/blog/surv_table.jpg" width="75%">
 </p>
 
 
 ### Next Steps
 
-Based on the survey results and implementation considerations discussed above, we’ll move forward with the revised Java EE 8 proposal. If you have further feedback on Java EE 8, please join the [project](https://java.net/projects/javaee-spec/pages/Home) (if you are not already a member), and post to [users@javaee-spec.java.net](https://java.net/projects/javaee-spec/lists/users/archive) for further discussion.
+Based on the survey results and implementation considerations discussed above, we’ll move forward with the revised Java EE 8 proposal.
 
 
 *Originaly posted on [The Aquarium](https://blogs.oracle.com/theaquarium/java-ee-8-is-final-and-glassfish-50-is-released) blog.*
