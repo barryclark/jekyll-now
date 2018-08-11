@@ -2,7 +2,7 @@
 layout: page
 title: Conferences
 permalink: /conferences/
-redirect_from: "/conf/"
+redirect_from: /conf/
 ---
 
 Through the years, I spoke at multiple conferences. Below is a non-exhaustive list of the public venues I spoke at.
