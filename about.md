@@ -2,6 +2,8 @@
 layout: page
 title: About me...
 permalink: /about/
+redirect_from:
+  - /bio/
 ---
 My nane is David Delabassée, I am in the Java space since the early days of this technology. I currently work in the Serverless Developer Relations team at Oracle where I spent most of my time on [Fn Project](https://github.com/fnproject).
 
