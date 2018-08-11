@@ -26,7 +26,8 @@ We have an [Issues Page](https://code.videolan.org/GSoC2018/macOS/vlc/issues?sco
 
 ## F2F with the team
 I was lucky to be able to meet with my Mentors along with Jean for a couple of days. During this duration we discussed various design aspects of several Media Players and how do we envision the new VLC design to be. We also divided the work to be done by Me and by Vibhoothi.
-### My Work Goals
+
+## My Work Goals
 * Working in autohiding title bar: **Almost done**
   * **_There is some error when Audio Visualizer Window is opened, Felix would have a look an update soon_**
 * Ping Felix for help with debugging that crash / hang on shutdown: **Fixed**
@@ -36,4 +37,23 @@ I was lucky to be able to meet with my Mentors along with Jean for a couple of d
 * Get the goto time topic merged **Ready to be merged**
 
 
+## Work in-depth along with code
+### Jump to Time popup
+To access it, you can do any of the following:
+* Press <kbd>⌘</kbd>+<kbd>J</kbd>
+* Go to Playback -> Jump to Time
+* Double Click on Time Elapsed or Time Remaining
+#### Visual Difference
+A before-after image placeholder
+### Features
+* Now you can add time in terms of hh:mm:ss
+* Allows you to write bigger numbers, example: You can write 80 in seconds and it will automatically convert that to 00:01:20
+* You can switch between fields with <kbd>tab</kbd>
+* You can use the stepper to change the fields
+
 ![Draggable Panel under Development]({{ site.baseurl }}/images/draggablePanel_under_development.png)
+
+
+## Useful Links
+* [GSoC 2018: Blog by Vibhoothi](https://vibhoothiiaanand.wordpress.com/2018/08/10/gsoc-2018-final-report/)
+* [GSoC 2017: VLC for macOS interface redesign by ePirat](: VLC for macOS interface redesign)
