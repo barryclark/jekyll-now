@@ -11,7 +11,7 @@ title: Faster RCNN
 
 
 
-![Faster-RCNN](https://pan.baidu.com/disk/home?#/all?vmode=list&path=%2F%E5%9B%BE%E7%89%87%E5%BA%93%2Fblog)  
+![Faster-RCNN](https://dzwonsemrish7.cloudfront.net/items/1K2t171i08081p3o3h1F/faster-rcnn.jpg?v=3ba99d29)  
 
 
 
