@@ -72,9 +72,6 @@ kramdown:
     # Use existing pygments syntax highlighting css
     css_class: 'highlight'
 
-plugins:
-  - jekyll-redirect-from
-
 # Set the Sass partials directory, as we're using @imports
 sass:
   style: :expanded # You might prefer to minify using :compressed
@@ -83,6 +80,7 @@ sass:
 gems:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
+  - jekyll-redirect-from
 
 # Exclude these files from your production _site
 exclude:
