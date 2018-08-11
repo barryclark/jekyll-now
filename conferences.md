@@ -4,6 +4,8 @@ title: Conferences
 permalink: /conferences/
 redirect_from:
   - /conference/
+  - /Conference/
+  - /Conferences/  
   - /conf/
   - /speaking/
 ---
