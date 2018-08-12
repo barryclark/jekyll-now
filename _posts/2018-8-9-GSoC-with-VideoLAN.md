@@ -5,7 +5,9 @@ title: GSoC - VLC macOS Interface Redesign
 <img align="right" src="{{ site.baseurl }}/images/vlc_logo.png" width="27%" height="27%">
 Earlier this summer I got selected in [Google Summer of Code](https://summerofcode.withgoogle.com/) to work with [VideoLAN](https://www.videolan.org/index.html) on the Project [VLC macOS Interface Redesign](https://summerofcode.withgoogle.com/projects/#5721689099337728). It has been a blessing to get a chance to work on one of the highest impact open source projects. I had a phenomenal experience. Let's have a look at my contributions :)
 
-You can have a look at my [GSoC Project Page]() and [Proposal]()
+You can have a look at my [GSoC Project Page](https://summerofcode.withgoogle.com/projects/#5721689099337728) and [Proposal]()
+
+Feel free **to jump right to the [code](https://code.videolan.org/GSoC2018/macOS/vlc/branches)**
 
 ## Our Team
 * [Jean-Baptiste Kempf](https://code.videolan.org/jbk) (President of VideoLAN)
@@ -37,8 +39,10 @@ I was lucky to be able to meet with my Mentors along with Jean for a couple of d
 * Get the goto time topic merged **Ready to be merged**
 
 
-## Work in-depth along with code
-### Jump to Time popup ([is9-goToTime]((https://code.videolan.org/GSoC2018/macOS/vlc/tree/is9-goToTime)))
+# Work in-depth along with code
+## Borderless Window with AutoHide Title
+## Draggable Panel instead of ControlsBar in windowed view
+## Jump to Time popup ([is9-goToTime]((https://code.videolan.org/GSoC2018/macOS/vlc/tree/is9-goToTime)))
 It is a pop-up with which helps you to jump to any particular time. To access it, you can do any of the following:
 * Press <kbd>⌘</kbd>+<kbd>J</kbd>
 * Go to Playback -> Jump to Time
@@ -56,6 +60,7 @@ A before-after image placeholder
 ### Related Code
 * [Branch](https://code.videolan.org/GSoC2018/macOS/vlc/tree/is9-goToTime)
 * [Merge Request](https://code.videolan.org/GSoC2018/macOS/vlc/merge_requests/2)
+* [Issue-9](https://code.videolan.org/GSoC2018/macOS/vlc/issues/9)
 
 ### How it is inside IB(Interface Builder), Xcode
 ![Go to Time in IB]({{ site.baseurl }}/images/goToTime_ib.png)
@@ -69,7 +74,7 @@ AutoLayout is a bit tricky at times. David taught me how to set the constraints 
 
 ![Draggable Panel under Development]({{ site.baseurl }}/images/draggablePanel_under_development.png)
 
-## Things I learnt
+# Things I learnt
 * How to work on a huge code base
 * Objective C
 * Xcode
