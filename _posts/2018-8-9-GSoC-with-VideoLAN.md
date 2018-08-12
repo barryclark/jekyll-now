@@ -31,40 +31,18 @@ I was lucky to be able to meet with my Mentors along with Jean for a couple of d
 During our meeting, we discussed various design aspects of several Media Players and how do we envision the new VLC design to be. We also clearly divided the parts that were to be done by each one of us (Me and Vibhoothi). This helped kickstart the work and proved to be extremely useful and increased the productivity exponentially :D
 
 # My Work Goals
-* Bring the draggable-control-panel (currently only in Fullscreen more) inside the normal Video playing windows and test with multiple Video Windows[(more details)](#draggable-panel): **Done and tested**
-* Add a feature enhancement to Go-to-time popup[(more details)](#go-to-time) **Ready to be merged**
-* Title Bar Autohiding[(more details)](#autohidden-border): **Almost done**
-  * **_There is some error when Audio Visualizer Window is opened, Felix would have a look and update soon_**
-* Make the draggable-control-panel as a View instead of a separate window[(more details)](#dp-as-view): To just create a very simple view inside extra video window. Add constraints. Create a simple way (e.g. button) to move the view a bit. Then try out how well it performs with an underlying video: **Done**
+1. Add a feature enhancement to Go-to-time popup[ (more details)](#go-to-time): **Ready to be merged**
+2. *Draggable Panel instead of ControlBar in windowed video  window* To bring the draggable-control-panel (currently only in Fullscreen more) inside the normal Video playing windows and test with multiple Video Windows[ (more details)](#draggable-panel): **Done and tested**
+3. Title Bar Autohiding[ (more details)](#autohidden-border): **Almost done**
+4. Make the draggable-control-panel as a View instead of a separate window. For now, just test with a plain view and see how it performs with an underlying video being played[ (more details)](#dp-as-view): **Done**
   * **_It shows promising performance, hence in future - To extend it and have the actual panel as a View instead of Window_**.
 
 # Work in-depth along with code
-## <a name="autohidden-border"></a>Auto-hidden window border ([Issue 3](https://code.videolan.org/GSoC2018/macOS/vlc/issues/3))
-Window's title bar (and its close / minimize / maximize icons) automatically appears if the mouse is over the window, and disappear again if the mouse leaves the window.
-
-## <a name="draggable-panel"></a>Draggable Panel instead of ControlsBar in windowed video  window ([Issue 1](https://code.videolan.org/GSoC2018/macOS/vlc/issues/1))
-* Removed the fixed ControlsBar and replaced it with a movable draggable panel. Just like the fullscreen controller
-* On resizing or moving the window, the draggable panel re-centers along with the window. There is a bit of a delay+drag as the panel is a window and not a view
-* The draggablePanel is constrained in the bounds of the window
-
-## Implementation of Issue 1 and 3 ([branch: PanelInMultipleVout](https://code.videolan.org/GSoC2018/macOS/vlc/tree/PanelInMultipleVout))
-![Video Playing]({{ site.baseurl }}/images/videoPlaying.png)
-When video is playing and mouse is inactive
-![Mouse over Window]({{ site.baseurl }}/images/mouseOverWindow.png)
-When mouse moves over the window
-
-* Code for [Making the titleBar seamless](https://code.videolan.org/GSoC2018/macOS/vlc/commit/f287ebb171342ca5e2324c10cf0f60f06a1b555d)
-* Code for [draggable panel](https://code.videolan.org/GSoC2018/macOS/vlc/commit/4777cf0d1efd11f129ff563cb9dec2e57536df9e)
-
-## <a name="dp-as-view"></a>Draggable Panel as a View
-Currently the buttons are non-functional. Discussion on how the classes and their instances should be needs to be done, after which it can be implemented
-![Draggable Panel under Development]({{ site.baseurl }}/images/draggablePanel_under_development.png)
-
-## <a name="go-to-time"></a>Jump to Time popup ([branch: is9-goToTime]((https://code.videolan.org/GSoC2018/macOS/vlc/tree/is9-goToTime)))
-It is a pop-up with which helps you to jump to any particular time. To access it, you can do any of the following:
+## <a name="go-to-time"></a>1. Go/Jump to Time popup ([branch: is9-goToTime]((https://code.videolan.org/GSoC2018/macOS/vlc/tree/is9-goToTime)))
+It is a pop-up which helps you to jump to any particular time. To access it, you can do any of the following:
 * Press <kbd>⌘</kbd>+<kbd>J</kbd>
 * Go to Playback -> Jump to Time
-* Double Click on Time Elapsed or Time Remaining
+* Double Click on Time-Elapsed or Time-Remaining (in the ControlBar)
 
 ### Visual Difference
 ![Before and After]({{ site.baseurl }}/images/gtt_Before_After.png)
@@ -90,6 +68,25 @@ It is a pop-up with which helps you to jump to any particular time. To access it
 AutoLayout is a bit tricky at times. David taught me how to set the constraints in a way, that even when the language of the text changes, it still looks the way it should. It also takes care of languages that are written from right to left
 </p>
 
+## <a name="draggable-panel"></a>2. Draggable Panel instead of ControlBar in windowed video  window ([Issue 1](https://code.videolan.org/GSoC2018/macOS/vlc/issues/1))
+* Removed the fixed ControlBar and replaced it with a movable draggable panel. Just like the fullscreen controller
+* On resizing or moving the window, the draggable panel re-centers along with the window. There is a bit of a delay+drag as the panel is a window and not a view
+* The draggablePanel is constrained in the bounds of the window.
+
+## <a name="autohidden-border"></a>3. Title Bar Autohiding ([Issue 3](https://code.videolan.org/GSoC2018/macOS/vlc/issues/3))
+Window's title bar (and its close / minimize / maximize icons) automatically appears if the mouse is moved over the window, and disappear again if the mouse pointer hides or leaves the window.
+
+## Implementation of Issue 1 and 3 ([branch: PanelInMultipleVout](https://code.videolan.org/GSoC2018/macOS/vlc/tree/PanelInMultipleVout))
+
+![Issue 3 and 1]({{ site.baseurl }}/images/is3and1.png)
+
+* Code for [Making the titleBar seamless](https://code.videolan.org/GSoC2018/macOS/vlc/commit/f287ebb171342ca5e2324c10cf0f60f06a1b555d)
+* Code for [draggable panel](https://code.videolan.org/GSoC2018/macOS/vlc/commit/4777cf0d1efd11f129ff563cb9dec2e57536df9e)
+
+## <a name="dp-as-view"></a>Draggable Panel as a View
+Currently the buttons are non-functional. Discussion on how the classes and their instances need to be done, after which it can be implemented.
+![Draggable Panel under Development]({{ site.baseurl }}/images/draggablePanel_under_development.png)
+
 # Things I learnt
 * How to work on a huge code base
 * Objective C
@@ -98,7 +95,7 @@ AutoLayout is a bit tricky at times. David taught me how to set the constraints 
   * AutoLayout
 * Cocoa Framework
 * Git
-  There were numerous small and big things I learnt in Git and how to version code. Here are a few tips that you can make use of :)
+  * There were numerous small and big things I learnt in Git and how to version code. Here are a few tips that you can make use of :)
   * `git diff --color-words` to see the changes in words instead of sentences
   * `git checkout commitHash` to temporarily switch to a branch at that particular commit, helps in testing
   * `git stash` and `git stash apply` to undo/redo the uncommitted changes
