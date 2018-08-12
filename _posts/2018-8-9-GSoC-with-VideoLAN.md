@@ -31,12 +31,11 @@ I was lucky to be able to meet with my Mentors along with Jean for a couple of d
 During our meeting, we discussed various design aspects of several Media Players and how do we envision the new VLC design to be. We also clearly divided the parts that were to be done by each one of us (Me and Vibhoothi). This helped kickstart the work and proved to be extremely useful and increased the productivity exponentially :D
 
 # My Work Goals
-* Ping Felix for help with debugging that crash / hang on shutdown: **Fixed**
-* [Work on multiple fullscreen panels in multiple vout windows. Just test with audio visualizer, this is enough](#draggable-panel): **Done and tested**
-* [Get the goto time topic merged](#go-to-time) **Ready to be merged**
-* [Working in autohiding title bar](#autohidden-border): **Almost done**
-  * **_There is some error when Audio Visualizer Window is opened, Felix would have a look an update soon_**
-* [Work on having draggable View as view](#dp-as-view): Just create a very simple view inside extra video window. Add constraints. Create a simple way (e.g. button) to move the view a bit. Then try out how well it performs with an underlying video: **Done**
+* Bring the draggable-control-panel (currently only in Fullscreen more) inside the normal Video playing windows and test with multiple Video Windows[(more details)](#draggable-panel): **Done and tested**
+* Add a feature enhancement to Go-to-time popup[(more details)](#go-to-time) **Ready to be merged**
+* Title Bar Autohiding[(more details)](#autohidden-border): **Almost done**
+  * **_There is some error when Audio Visualizer Window is opened, Felix would have a look and update soon_**
+* Make the draggable-control-panel as a View instead of a separate window[(more details)](#dp-as-view): To just create a very simple view inside extra video window. Add constraints. Create a simple way (e.g. button) to move the view a bit. Then try out how well it performs with an underlying video: **Done**
   * **_It shows promising performance, hence in future - To extend it and have the actual panel as a View instead of Window_**.
 
 # Work in-depth along with code
