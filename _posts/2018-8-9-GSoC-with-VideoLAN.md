@@ -49,7 +49,7 @@ It is a pop-up with which helps you to jump to any particular time. To access it
 * Double Click on Time Elapsed or Time Remaining
 
 ### Visual Difference
-A before-after image placeholder
+![Before and After]({{ site.baseurl }}/images/gtt_Before_After.png)
 
 ### Features
 * Now you can add time in the hh:mm:ss format
