@@ -20,7 +20,7 @@ Feel free **to jump right to the [code](https://code.videolan.org/GSoC2018/macOS
 Left to Right: Vibhoothi, Daksh(Me), Jean-Baptiste, Felix, David
 
 ## Workflow
-Let's start by looking at our workflow at VLC. VLC has a [GitHub Repository](https://github.com/videolan/vlc) which is read-only.  We use our [mailing list](https://wiki.videolan.org/Sending_Patches_VLC/) to send Patches. We also have a GitLab instance at https://code.videolan.org/.
+Let's start by looking at our workflow at VLC. VLC has a [GitHub Repository](https://github.com/videolan/vlc) which is read-only.  We use our [mailing list](https://wiki.videolan.org/Sending_Patches_VLC/) to send Patches. We also have a GitLab instance at [https://code.videolan.org/](https://code.videolan.org/).
 
 For my GSoC project, my mentors created a clone of upstream at the beginning of our coding period. It helped to keep things organized and eased the process of reviewing. You can find the repository we worked on during the summer at [https://code.videolan.org/GSoC2018/macOS/vlc](https://code.videolan.org/GSoC2018/macOS/vlc)
 
