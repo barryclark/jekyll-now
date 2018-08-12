@@ -83,9 +83,20 @@ Window's title bar (and its close / minimize / maximize icons) automatically app
 * Code for [Making the titleBar seamless](https://code.videolan.org/GSoC2018/macOS/vlc/commit/f287ebb171342ca5e2324c10cf0f60f06a1b555d)
 * Code for [draggable panel](https://code.videolan.org/GSoC2018/macOS/vlc/commit/4777cf0d1efd11f129ff563cb9dec2e57536df9e)
 
-## <a name="dp-as-view"></a>Draggable Panel as a View
-Currently the buttons are non-functional. Discussion on how the classes and their instances need to be done, after which it can be implemented.
+## 4. <a name="dp-as-view"></a>Draggable Panel as a View
 ![Draggable Panel under Development]({{ site.baseurl }}/images/draggablePanel_under_development.png)
+Having the draggablePanel as a window was creating a problem. When the video window was moved, in order to keep it at its place we had to programmatically move the panel in the same way. But a drag and a delay was coming in that.
+
+So we decided to make it as a view instead of a window. After testing, it seems to solve the problem :D
+
+* It remains at its position even when the window is moved
+* Added the panel as a custom NSView
+![Draggable Panel in Xcode]({{ site.baseurl }}/images/dpasview.png)
+* Created two new Classes `VLCDraggablePanelView` and `VLCDraggablePanelController` to handle the operations of the Panel
+* Connected all the components with the related class files
+
+### TO-DO
+Currently the buttons are non-functional. Discussion on how the classes and their instances need to be done, after which it can be implemented.
 
 # Things I learnt
 * How to work on a huge code base
