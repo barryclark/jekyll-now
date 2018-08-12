@@ -34,7 +34,8 @@ I was lucky to be able to meet with my Mentors along with Jean for a couple of d
   * **_There is some error when Audio Visualizer Window is opened, Felix would have a look an update soon_**
 * Ping Felix for help with debugging that crash / hang on shutdown: **Fixed**
 * Work on having draggable View as view: Just create a very simple view inside extra video window. Add constraints. Create a simple way (e.g. button) to move the view a bit. Then try out how well it performs with an underlying video: **Done**
-  * **_It shows promising performance, hence in future - To extend it and have the actual panel as a View instead of Window_**
+  * **_It shows promising performance, hence in future - To extend it and have the actual panel as a View instead of Window_**. Currently the buttons are non-functional. Discussion on how the classes and their instances should be needs to be done, after which it can be implemented
+  * ![Draggable Panel under Development]({{ site.baseurl }}/images/draggablePanel_under_development.png)
 * Work on multiple fullscreen panels in multiple vout windows. Just test with audio visualizer, this is enough: **Done and tested**
 * Get the goto time topic merged **Ready to be merged**
 
@@ -71,8 +72,6 @@ It is a pop-up with which helps you to jump to any particular time. To access it
 <p align="center">
 AutoLayout is a bit tricky at times. David taught me how to set the constraints in a way, that even when the language of the text changes, it still looks the way it should. It also takes care of languages that are written from right to left
 </p>
-
-![Draggable Panel under Development]({{ site.baseurl }}/images/draggablePanel_under_development.png)
 
 # Things I learnt
 * How to work on a huge code base
