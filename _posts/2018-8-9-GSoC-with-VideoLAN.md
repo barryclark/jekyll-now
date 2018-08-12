@@ -27,7 +27,7 @@ For my GSoC project, my mentors created a clone of upstream at the beginning of 
 We have an [Issues Page](https://code.videolan.org/GSoC2018/macOS/vlc/issues?scope=all&utf8=%E2%9C%93&state=opened) on GitLab. We used this to divide the whole work into subcategories. Further, I have made [different branches](https://code.videolan.org/GSoC2018/macOS/vlc/branches/all) and [various commits](https://code.videolan.org/Daksh).
 
 ## Face-To-Face with the team
-I was lucky to be able to meet with my Mentors along with Jean for a couple of days. VideoLAN was very kind to sponsor us to come and meet our mentors in Europe. I would like to thank them from the bottom of my heart.
+I was lucky to be able to meet with my Mentors along with Jean for a couple of days. VideoLAN was very kind to sponsor me to come and meet our mentors in Europe. I would like to thank them from the bottom of my heart.
 During our meeting, we discussed various design aspects of several Media Players and how do we envision the new VLC design to be. We also clearly divided the parts that were to be done by each one of us (Me and Vibhoothi). This helped kickstart the work and proved to be extremely useful and increased the productivity exponentially :D
 
 # My Work Goals
@@ -85,9 +85,9 @@ Window's title bar (and its close / minimize / maximize icons) automatically app
 
 ## 4. <a name="dp-as-view"></a>Draggable Panel as a View
 ![Draggable Panel under Development]({{ site.baseurl }}/images/draggablePanel_under_development.png)
-Having the draggablePanel as a window was creating a problem. When the video window was moved, in order to keep it at its place we had to programmatically move the panel in the same way. But a drag and a delay was coming in that.
+The draggablePanel was earlier a window. Having the draggablePanel as a window was creating a problem. When the video window was moved, in order to keep it at its place we had to programmatically move the panel in the same way. But a drag and a delay was coming in that.
 
-So we decided to make it as a view instead of a window. After testing, it seems to solve the problem :D
+So we decided to make it as a view instead of a window. After testing, it seems to have solved the problem :D
 
 * It remains at its position even when the window is moved
 * Added the panel as a custom NSView
@@ -107,11 +107,11 @@ Currently the buttons are non-functional. Discussion on how the classes and thei
 * Cocoa Framework
 * Git
   * There were numerous small and big things I learnt in Git and how to version code. Here are a few tips that you can make use of :)
-  * `git diff --color-words` to see the changes in words instead of sentences
-  * `git checkout commitHash` to temporarily switch to a branch at that particular commit, helps in testing
-  * `git stash` and `git stash apply` to undo/redo the uncommitted changes
-  * `git diff HEAD~2` to see the changes done since HEAD~2 (two commit before HEAD). Refer to [this post](https://stackoverflow.com/a/9903611/2806163) for more options
-  * `git branch` and `git checkout branch-name` to list and change to a particular branch
+    * `git diff --color-words` to see the changes in words instead of sentences
+    * `git checkout commitHash` to temporarily switch to a branch at that particular commit, helps in testing
+    * `git stash` and `git stash apply` to undo/redo the uncommitted changes
+    * `git diff HEAD~2` to see the changes done since HEAD~2 (two commit before HEAD). Refer to [this post](https://stackoverflow.com/a/9903611/2806163) for more options
+    * `git branch` and `git checkout branch-name` to list and change to a particular branch
 
 ## Useful Links
 * [GSoC 2018: Blog by Vibhoothi](https://vibhoothiiaanand.wordpress.com/2018/08/10/gsoc-2018-final-report/)
