@@ -31,15 +31,13 @@ I was lucky to be able to meet with my Mentors along with Jean for a couple of d
 During our meeting, we discussed various design aspects of several Media Players and how do we envision the new VLC design to be. We also clearly divided the parts that were to be done by each one of us (Me and Vibhoothi). This helped kickstart the work and proved to be extremely useful and increased the productivity exponentially :D
 
 # My Work Goals
-* [Working in autohiding title bar](#autohidden-border): **Almost done**
-  * **_There is some error when Audio Visualizer Window is opened, Felix would have a look an update soon_**
 * Ping Felix for help with debugging that crash / hang on shutdown: **Fixed**
-* [Work on having draggable View as view](#dp-as-view): Just create a very simple view inside extra video window. Add constraints. Create a simple way (e.g. button) to move the view a bit. Then try out how well it performs with an underlying video: **Done**
-  * **_It shows promising performance, hence in future - To extend it and have the actual panel as a View instead of Window_**. Currently the buttons are non-functional. Discussion on how the classes and their instances should be needs to be done, after which it can be implemented
-  ![Draggable Panel under Development]({{ site.baseurl }}/images/draggablePanel_under_development.png)
 * [Work on multiple fullscreen panels in multiple vout windows. Just test with audio visualizer, this is enough](#draggable-panel): **Done and tested**
 * [Get the goto time topic merged](#go-to-time) **Ready to be merged**
-
+* [Working in autohiding title bar](#autohidden-border): **Almost done**
+  * **_There is some error when Audio Visualizer Window is opened, Felix would have a look an update soon_**
+* [Work on having draggable View as view](#dp-as-view): Just create a very simple view inside extra video window. Add constraints. Create a simple way (e.g. button) to move the view a bit. Then try out how well it performs with an underlying video: **Done**
+  * **_It shows promising performance, hence in future - To extend it and have the actual panel as a View instead of Window_**.
 
 # Work in-depth along with code
 ## <a name="autohidden-border"></a>Auto-hidden window border ([Issue 3](https://code.videolan.org/GSoC2018/macOS/vlc/issues/3))
@@ -60,6 +58,8 @@ When mouse moves over the window
 * Code for [draggable panel](https://code.videolan.org/GSoC2018/macOS/vlc/commit/4777cf0d1efd11f129ff563cb9dec2e57536df9e)
 
 ## <a name="dp-as-view"></a>Draggable Panel as a View
+Currently the buttons are non-functional. Discussion on how the classes and their instances should be needs to be done, after which it can be implemented
+![Draggable Panel under Development]({{ site.baseurl }}/images/draggablePanel_under_development.png)
 
 ## <a name="go-to-time"></a>Jump to Time popup ([branch: is9-goToTime]((https://code.videolan.org/GSoC2018/macOS/vlc/tree/is9-goToTime)))
 It is a pop-up with which helps you to jump to any particular time. To access it, you can do any of the following:
