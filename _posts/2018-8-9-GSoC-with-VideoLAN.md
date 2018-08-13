@@ -27,7 +27,7 @@ For my GSoC project, my mentors created a clone of upstream at the beginning of 
 We have an [Issues Page](https://code.videolan.org/GSoC2018/macOS/vlc/issues?scope=all&utf8=%E2%9C%93&state=opened) on GitLab. We used this to divide the whole work into subcategories. Further, I have made [different branches](https://code.videolan.org/GSoC2018/macOS/vlc/branches/all) and [various commits](https://code.videolan.org/Daksh).
 
 ## Face-To-Face with the team
-I was lucky to be able to meet with my Mentors along with Jean for a couple of days. VideoLAN was very kind to sponsor me to come and meet our mentors in Europe. I would like to thank them from the bottom of my heart.
+I was lucky to be able to meet with my Mentors along with Jean-Baptiste for a couple of days. VideoLAN was very kind to sponsor me to come and meet our mentors in Europe. I would like to thank them from the bottom of my heart.
 During our meeting, we discussed various design aspects of several Media Players and how do we envision the new VLC design to be. We also clearly divided the parts that were to be done by each one of us (Me and Vibhoothi). This helped kickstart the work and proved to be extremely useful and increased the productivity exponentially :D
 
 # My Work Goals
@@ -115,4 +115,4 @@ Currently the buttons are non-functional. Discussion on how the classes and thei
 
 ## Useful Links
 * [GSoC 2018: Blog by Vibhoothi](https://vibhoothiiaanand.wordpress.com/2018/08/10/gsoc-2018-final-report/)
-* [GSoC 2017: VLC for macOS interface redesign by ePirat](: VLC for macOS interface redesign)
+* [GSoC 2017: VLC for macOS interface redesign by ePirat](https://epir.at/2017/08/26/gsoc-2017-vlc-for-macos-interface-redesign/)
