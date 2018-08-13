@@ -1,8 +1,8 @@
 ---
 layout: post
 title: The Problem with the "Evil Rich"
-tags: [culture, old blog]
-keywords: [politics]
+tags: [politics, old blog]
+keywords: [rich, evil rich, government, government spending]
 ---
 
 In this era of massive government spending, a huge government deficit, untold amounts of consumer debt, and stories of layoffs after layoffs, some have come to wonder how those who have money achieved their wealth. Those some have come to the conclusion that the evil rich through trickery and deceit.
