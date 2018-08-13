@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The Problem with the "Evil Rich"
+title: Californian Drug Law
 tags: [politics, old blog]
 keywords: [california, drug, drug law]
 ---
