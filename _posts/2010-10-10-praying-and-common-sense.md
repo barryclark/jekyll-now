@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The Problem with the "Evil Rich"
+title: Praying and Common Sense
 tags: [religion, old blog]
 keywords: [praying, christian]
 ---
