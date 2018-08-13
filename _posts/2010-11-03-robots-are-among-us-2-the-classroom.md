@@ -6,7 +6,7 @@ keywords: [robots]
 ---
 
 
-On an earlier blog post, I reported that Google had robotic cars on the road already. Well, the road isn't the only place robots are starting to take over.
+On an earlier blog post, I reported that [Google had robotic cars on the road](https://hendrixjoseph.github.io/robots-are-among-us/) already. Well, the road isn't the only place robots are starting to take over.
 
 From [chronicle.com](http://chronicle.com/article/Robot-Teachers-Are-the-Latest/125102/):
 
