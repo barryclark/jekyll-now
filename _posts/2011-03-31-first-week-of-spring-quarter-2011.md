@@ -3,11 +3,12 @@ layout: post
 title: First Week of Spring Quarter 2011
 tags: [old blog]
 keywords: [school, education]
+image: /images/WrightStateLogo.png
 ---
 
 Yep. Spring Break's been over for about a week now. Don’t know if I’ll be able to post much. I might be able to post some projects that I'm working on in various classes. So what classes am I taking? Well, my schedule pretty much looks like this:
 
-WSU logo
+[WSU logo](/images/WrightStateLogo.png)
 *This is where I go to school. It’s local.*
 
 All classes are Tuesday/Thursday:
