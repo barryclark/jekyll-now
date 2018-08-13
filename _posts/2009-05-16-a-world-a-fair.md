@@ -3,6 +3,7 @@ layout: post
 title: A World A'Fair
 tags: [culture, old blog]
 keywords: [food]
+image: /images/covers/youtube/a-word-a-fair.png
 ---
 
 For the ultimate in foreign food and culture, go to [the Dayton A World A'Fair](http://www.aworldafair.org/). They do it about once a year.
