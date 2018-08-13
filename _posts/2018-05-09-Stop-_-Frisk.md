@@ -46,7 +46,7 @@ DC Judiciary and Public Safety Chairman Charles Allen questioned DC Police Chief
 
 We didn't come into this project familiar with the inner workings of the NEAR Act or the steps the MPD has taken towards compliance. Rather, all of this is to say that there are questions other researchers have tackled that we wanted to investigate in DC, like [this really incredible research on racial disparities in "hit-rates," or arrest rates](https://5harad.com/papers/frisky.pdf), but we were confronted with a lack of detailed data. We will follow the ongoing lawsuit against the MPD and the Mayor's office and update the work below if further data is provided. If you want to see the NEAR Act fully implemented or want to hold law enforcement accountable and transparent, please consider supporting the work being done by organizations like [Black Lives Matter DC](http://www.blacklivesmatterdmv.org/), [Stop Police Terror Project DC](https://www.sptdc.com/), and [the American Civil Liberties Union of the District of Columbia](https://www.acludc.org/en) in their legal fight.
 
-This a living piece of research that attempts to provide a sense coe understanding of a very complex social issue, and we are open to new ideas and viewpoints that we might have missed.  
+This a living piece of research that attempts to provide a sense of understanding of a very complex social issue, and we are open to new ideas and viewpoints that we might have missed.  
 
 Stop & Frisk: Overview
 --------------
@@ -90,7 +90,7 @@ Unlike the forcible stop and frisk incidents, the field contact incident data co
 
 ![](https://raw.githubusercontent.com/GWarrenn/gwarrenn.github.io/drafts/images/stop_and_frisk/reason_for_stop.png)
 
-Keeping the important difference between forcible and non-forcible stops in mind, we see that moving violations are the catalyst for nearly half of the non-forcible encounters among whites, while blacks and Hispanic/Latinos were cited more frequently for "Suspicious Vehicles/Persons/Activities" and "Call for Service" (or, someone calling the police).
+Keeping the important difference between forcible and non-forcible stops in mind, we see that moving violations are the catalyst for nearly half of the non-forcible encounters among whites, while black and Hispanic/Latino residents stopped non-forcibly were cited more frequently for "Suspicious Vehicles/Persons/Activities" and "Call for Service" (or, someone calling the police).
 
 Mapping Stop & Frisk Incidents
 --------------
@@ -274,7 +274,7 @@ Before we get into the personal level relationship between stop and frisk and cr
 
 ![](https://raw.githubusercontent.com/GWarrenn/gwarrenn.github.io/drafts/images/stop_and_frisk/crime_and_census_plot.png)
 	
- One of the more apparent patterns we find is that blacks make up a larger proportion of <i>reported</i> crime in the whiter DC neighborhoods. The factors of this are not inherently clear in the data; there are certain social factors that could potentially cause this, such as [white residents being more likely to call the police](https://www.vox.com/first-person/2018/5/17/17362100/starbucks-racial-profiling-yale-airbnb-911) in racially homogeneous white neighborhoods. 	
+ One of the more apparent patterns we find is that black residents make up a larger proportion of <i>reported</i> crime in the whiter DC neighborhoods. The factors of this are not inherently clear in the data; there are certain social factors that could potentially cause this, such as [white residents being more likely to call the police](https://www.vox.com/first-person/2018/5/17/17362100/starbucks-racial-profiling-yale-airbnb-911) in racially homogeneous white neighborhoods. 	
 
 ---
 
@@ -284,7 +284,7 @@ Before we get into the personal level relationship between stop and frisk and cr
 
 ![](https://raw.githubusercontent.com/GWarrenn/gwarrenn.github.io/drafts/images/stop_and_frisk/11_nbh_crime_sf_race_scatter.png)
 
-Similarly to how we looked at stop and frisk as it compares to neighborhood racial composition, the chart above shows the relationship between the proportion of stop and frisk and crime by neighborhood and racial group. If a dot is below the diagonal line, then the group is stop and frisked at a higher rate than the crime rate for that group in that neighborhood, and vice versa. We find a similar, but more pronounced disproportionality across all neighborhoods in DC, where black residents are stopped at a higher rate than their racial group accounts for in the overall neighborhood crime rate. On average, the stop and frisk rate among black residents is ~30% higher than the reported crime rate among blacks.
+Similarly to how we looked at stop and frisk as it compares to neighborhood racial composition, the chart above shows the relationship between the proportion of stop and frisk and crime by neighborhood and racial group. If a dot is below the diagonal line, then the group is stop and frisked at a higher rate than the crime rate for that group in that neighborhood, and vice versa. We find a similar, but more pronounced disproportionality across all neighborhoods in DC, where black residents are stopped at a higher rate than their racial group accounts for in the overall neighborhood crime rate. On average, the stop and frisk rate among black residents is ~30% higher than the reported crime rate for the racial group.
 
 Likewise, the stop and frisk rate is lower than the reported crime rate among whites across the majority of DC neighborhoods, with a crime rate 5% higher than the stop and frisk rate. A further breakdown by neighborhood and racial group is below. A guide to interpretation: if a racial group is plotted at less than 0, then the group is stopped at a greater rate than the reported crime rate in the neighborhood for that group. The reverse is true if the group is plotted at greater than 0. 
 
