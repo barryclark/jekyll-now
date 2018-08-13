@@ -7,10 +7,9 @@ keywords: [stargate]
 
 I've been pretty bored this month, and have also decided to take a break from some of my gaming. So I've been watching the tv series Stargate: SG-1 on Netflix. Pretty good, I think. It's surprising that it's over ten years old (from 1997). I keep wondering to myself why the cars are so old… It's even weirder when I realize a lot of the kids in the show are my age.
 
-Stargate: SG-1 Season 1Stargate: Ultimate EditionStargate: SG-1: The Complete Series
+{% include amazon/native-ad.html title="Stargate: SG-1" asin="B000IOI0PK,B00VSBYH40" %}
 
 I'm kind of lazy, so here are some interesting tidbits from Wikipedia:
-
 
 > ## Series Overview
 >
