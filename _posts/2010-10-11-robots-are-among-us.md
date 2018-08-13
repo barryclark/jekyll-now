@@ -10,7 +10,7 @@ Robot cars, that is. Google has had its robotic cars travel over 140k miles. For
 Check out this pic for some info:
 google robot car
 
-From the Official Google Blog: http://googleblog.blogspot.com/2010/10/what-were-driving-at.html
+From [the Official Google Blog](http://googleblog.blogspot.com/2010/10/what-were-driving-at.html):
 
 > Larry and Sergey founded Google because they wanted to help solve really big problems using technology. And one of the big problems we're working on today is car safety and efficiency. Our goal is to help prevent traffic accidents, free up people's time and reduce carbon emissions by fundamentally changing car use.
 >
