@@ -11,11 +11,11 @@ The answer to this question is simply that, up until this point, police having s
 
 For the most part, in the United States, if something is not explicitly illegal then it is legal. This is known as "[Everything which is not forbidden is allowed](https://en.wikipedia.org/wiki/Everything_which_is_not_forbidden_is_allowed)" or "[Nulla poena sine lege](https://en.wikipedia.org/wiki/Nulla_poena_sine_lege)" in Latin (since legalese often has a Latin phrase for some reason). The United States largely encodes this in the Ninth and Tenth Amendments to the Constitution:
 
-> Ninth Amendment
+> ### Ninth Amendment
 >
 > The enumeration in the Constitution, of certain rights, shall not be construed to deny or disparage others retained by the people.
 
-> Tenth Amendment
+> ### Tenth Amendment
 >
 > The powers not delegated to the United States by the Constitution, nor prohibited by it to the States, are reserved to the States respectively, or to the people.
 
