@@ -3,13 +3,15 @@ layout: post
 title: DeathSpank
 tags: [video games, old blog]
 keywords: [humor]
+image: /images/video-games/deathspank.jpg
 ---
 
 To my loyal fan, who's out there… somewhere.. Sorry I haven't posted in ten days. I've been busy with school, plus I've been a bit under the weather (that's sick, for those who don't know their idioms).
 
 Of course, I've had time to play my video games :) In addition to Bejeweled Blitz on Facebook I've been playing DeathSpank on the PS3:
 
-DeathSpank
+![DeathSpank](/images/video-games/deathspank.jpg)
+*DeathSpank*
 
 It's a fun little game (was a DLC)  that's put together quite well by the same mind as Monkey Island, Ron Gilbert. The main point of this game is to save some orphans from the King of the realm, Lord Von Prong. It is a silly game with a lot on in-jokes. You'll probably laugh at the silliness a lot (even after you're "Felt by Freen.")
 
