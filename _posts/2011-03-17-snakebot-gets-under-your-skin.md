@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The Problem with the "Evil Rich"
+title: Snakebot Gets Under Your Skin
 tags: [technology, old blog]
 ---
 
