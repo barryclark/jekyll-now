@@ -1,9 +1,12 @@
 # README
 
-**dreamcartel.github.io**
+**[dreamcartel.github.io](dreamcartel.github.io)**
 
-**Jekyll** is a static site generator for GitHub hosted blogs.
-**Jekyll Now** makes it easier to create a Jekyll blog by eliminating setup steps.
+## GitHub and Jekyll Now
+
+> Jekyll is a static site generator for GitHub hosted blogs.
+
+> Jekyll Now makes it easier to create a Jekyll blog by eliminating setup steps.
 
 - You don't need to touch the command line
 - You don't need to install/configure ruby, rvm/rbenv, ruby gems :relaxed:
@@ -11,7 +14,7 @@
 - If you're on Windows, this will make setting up Jekyll a lot easier
 - It's easy to try out, you can just delete your forked repository if you don't like it
 
-## Questions?
+### Question
 
 [Open an Issue](https://github.com/barryclark/jekyll-now/issues/new) and let's chat!
 
