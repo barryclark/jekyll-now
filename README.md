@@ -1,6 +1,8 @@
 # README
 
-**[dreamcartel.github.io](dreamcartel.github.io)**
+**Home: [dreamcartel.github.io](dreamcartel.github.io)**
+
+**Instagram: [dreamcartel.github.io/instagram](dreamcartel.github.io/instagram)**
 
 ## GitHub and Jekyll Now
 
