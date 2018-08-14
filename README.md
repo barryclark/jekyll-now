@@ -1,24 +1,22 @@
-# README
+# DreamCartel on GitHub
 
-**Home: [dreamcartel.github.io](dreamcartel.github.io)**
+Home: **[dreamcartel.github.io](dreamcartel.github.io)**
 
-**Instagram: [dreamcartel.github.io/instagram](dreamcartel.github.io/instagram)**
+Instagram: **[dreamcartel.github.io/instagram](dreamcartel.github.io/instagram)**
 
 ## GitHub and Jekyll Now
 
 > Jekyll is a static site generator for GitHub hosted blogs.
 
-> Jekyll Now makes it easier to create a Jekyll blog by eliminating setup steps.
+Jekyll Now makes it easier to create a Jekyll blog by eliminating setup steps.
 
 - You don't need to touch the command line
 - You don't need to install/configure ruby, rvm/rbenv, ruby gems :relaxed:
 - You don't need to install runtime dependencies like markdown processors, Pygments, etc
-- If you're on Windows, this will make setting up Jekyll a lot easier
-- It's easy to try out, you can just delete your forked repository if you don't like it
 
 ### Question
 
-[Open an Issue](https://github.com/barryclark/jekyll-now/issues/new) and let's chat!
+[Open an Issue](https://github.com/barryclark/jekyll-now/issues/new) and chat with Barry Clark and the Jekyll Now community.
 
 ### Credits
 
