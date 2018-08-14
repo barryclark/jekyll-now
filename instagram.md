@@ -1,124 +1,109 @@
 ---
 layout: page
 title: DreamCartel on Instagram
-permalink: /social-dc-ig/
+permalink: /instagram/
 ---
 
-> Josh Beard is a Marketer with 5+ years' professional experience (Email Development, Content Strategy, Business Development), 2 years' experience working remote, and a BSBA (Marketing) from Ohio State.
+![luck]({{ site.baseurl }}/images/dc52.jpg)
 
-## Social Media Management
-- 2013
-- Side project at Ohio State (With Nic Ruebel & Andy Ash)
-- 52 weeks of original content on Instagram
+![attention]({{ site.baseurl }}/images/dc51.jpg)
 
-### 52 Weeks on IG
+![flow]({{ site.baseurl }}/images/dc50.jpg)
 
-![luck]({{ site.baseurl }}/static/images/dc/dc52.jpg)
+![habit]({{ site.baseurl }}/images/dc49.jpg)
 
-![attention]({{ site.baseurl }}/static/images/dc/dc51.jpg)
+![control]({{ site.baseurl }}/images/dc48.jpg)
 
-![flow]({{ site.baseurl }}/static/images/dc/dc50.jpg)
+![responsibility]({{ site.baseurl }}/images/dc47.jpg)
 
-![habit]({{ site.baseurl }}/static/images/dc/dc49.jpg)
+![gratitude]({{ site.baseurl }}/images/dc46.jpg)
 
-![control]({{ site.baseurl }}/static/images/dc/dc48.jpg)
+![artist]({{ site.baseurl }}/images/dc45.jpg)
 
-![responsibility]({{ site.baseurl }}/static/images/dc/dc47.jpg)
+![style]({{ site.baseurl }}/images/dc44.jpg)
 
-![gratitude]({{ site.baseurl }}/static/images/dc/dc46.jpg)
+![culture]({{ site.baseurl }}/images/dc43.jpg)
 
-![artist]({{ site.baseurl }}/static/images/dc/dc45.jpg)
+![adventure]({{ site.baseurl }}/images/dc42.jpg)
 
-![style]({{ site.baseurl }}/static/images/dc/dc44.jpg)
+![purpose]({{ site.baseurl }}/images/dc41.jpg)
 
-![culture]({{ site.baseurl }}/static/images/dc/dc43.jpg)
+![faith]({{ site.baseurl }}/images/dc40.jpg)
 
-![adventure]({{ site.baseurl }}/static/images/dc/dc42.jpg)
+![curiosity]({{ site.baseurl }}/images/dc39.jpg)
 
-![purpose]({{ site.baseurl }}/static/images/dc/dc41.jpg)
+![passion]({{ site.baseurl }}/images/dc38.jpg)
 
-![faith]({{ site.baseurl }}/static/images/dc/dc40.jpg)
+![success]({{ site.baseurl }}/images/dc37.jpg)
 
-![curiosity]({{ site.baseurl }}/static/images/dc/dc39.jpg)
+![intelligence]({{ site.baseurl }}/images/dc36.jpg)
 
-![passion]({{ site.baseurl }}/static/images/dc/dc38.jpg)
+![patience]({{ site.baseurl }}/images/dc35.jpg)
 
-![success]({{ site.baseurl }}/static/images/dc/dc37.jpg)
+![destiny]({{ site.baseurl }}/images/dc34.jpg)
 
-![intelligence]({{ site.baseurl }}/static/images/dc/dc36.jpg)
+![happiness]({{ site.baseurl }}/images/dc33.jpg)
 
-![patience]({{ site.baseurl }}/static/images/dc/dc35.jpg)
+![karma]({{ site.baseurl }}/images/dc32.jpg)
 
-![destiny]({{ site.baseurl }}/static/images/dc/dc34.jpg)
+![power]({{ site.baseurl }}/images/dc31.jpg)
 
-![happiness]({{ site.baseurl }}/static/images/dc/dc33.jpg)
+![respect]({{ site.baseurl }}/images/dc30.jpg)
 
-![karma]({{ site.baseurl }}/static/images/dc/dc32.jpg)
+![talent]({{ site.baseurl }}/images/dc29.jpg)
 
-![power]({{ site.baseurl }}/static/images/dc/dc31.jpg)
+![energy]({{ site.baseurl }}/images/dc28.jpg)
 
-![respect]({{ site.baseurl }}/static/images/dc/dc30.jpg)
+![failure]({{ site.baseurl }}/images/dc27.jpg)
 
-![talent]({{ site.baseurl }}/static/images/dc/dc29.jpg)
+![confidence]({{ site.baseurl }}/images/dc26.jpg)
 
-![energy]({{ site.baseurl }}/static/images/dc/dc28.jpg)
+![intuition]({{ site.baseurl }}/images/dc25.jpg)
 
-![failure]({{ site.baseurl }}/static/images/dc/dc27.jpg)
+![persistence]({{ site.baseurl }}/images/dc24.jpg)
 
-![confidence]({{ site.baseurl }}/static/images/dc/dc26.jpg)
+![wealth]({{ site.baseurl }}/images/dc23.jpg)
 
-![intuition]({{ site.baseurl }}/static/images/dc/dc25.jpg)
+![desire]({{ site.baseurl }}/images/dc22.jpg)
 
-![persistence]({{ site.baseurl }}/static/images/dc/dc24.jpg)
+![fear]({{ site.baseurl }}/images/dc21.jpg)
 
-![wealth]({{ site.baseurl }}/static/images/dc/dc23.jpg)
+![courage]({{ site.baseurl }}/images/dc20.jpg)
 
-![desire]({{ site.baseurl }}/static/images/dc/dc22.jpg)
+![strategy]({{ site.baseurl }}/images/dc19.jpg)
 
-![fear]({{ site.baseurl }}/static/images/dc/dc21.jpg)
+![loyalty]({{ site.baseurl }}/images/dc18.jpg)
 
-![courage]({{ site.baseurl }}/static/images/dc/dc20.jpg)
+![growth]({{ site.baseurl }}/images/dc17.jpg)
 
-![strategy]({{ site.baseurl }}/static/images/dc/dc19.jpg)
+![creativity]({{ site.baseurl }}/images/dc16.jpg)
 
-![loyalty]({{ site.baseurl }}/static/images/dc/dc18.jpg)
+![imagination]({{ site.baseurl }}/images/dc15.jpg)
 
-![growth]({{ site.baseurl }}/static/images/dc/dc17.jpg)
+![leadership]({{ site.baseurl }}/images/dc14.jpg)
 
-![creativity]({{ site.baseurl }}/static/images/dc/dc16.jpg)
+![mindset]({{ site.baseurl }}/images/dc13.jpg)
 
-![imagination]({{ site.baseurl }}/static/images/dc/dc15.jpg)
+![chance]({{ site.baseurl }}/images/dc12.jpg)
 
-![leadership]({{ site.baseurl }}/static/images/dc/dc14.jpg)
+![identity]({{ site.baseurl }}/images/dc11.jpg)
 
-![mindset]({{ site.baseurl }}/static/images/dc/dc13.jpg)
+![dream]({{ site.baseurl }}/images/dc10.jpg)
 
-![chance]({{ site.baseurl }}/static/images/dc/dc12.jpg)
+![ambition]({{ site.baseurl }}/images/dc09.jpg)
 
-![identity]({{ site.baseurl }}/static/images/dc/dc11.jpg)
+![genius]({{ site.baseurl }}/images/dc08.jpg)
 
-![dream]({{ site.baseurl }}/static/images/dc/dc10.jpg)
+![love]({{ site.baseurl }}/images/dc07.jpg)
 
-![ambition]({{ site.baseurl }}/static/images/dc/dc09.jpg)
+![competition]({{ site.baseurl }}/images/dc06.jpg)
 
-![genius]({{ site.baseurl }}/static/images/dc/dc08.jpg)
+![winning]({{ site.baseurl }}/images/dc05.jpg)
 
-![love]({{ site.baseurl }}/static/images/dc/dc07.jpg)
+![peace]({{ site.baseurl }}/images/dc04.jpg)
 
-![competition]({{ site.baseurl }}/static/images/dc/dc06.jpg)
+![wisdom]({{ site.baseurl }}/images/dc03.jpg)
 
-![winning]({{ site.baseurl }}/static/images/dc/dc05.jpg)
+![strength]({{ site.baseurl }}/images/dc02.jpg)
 
-![peace]({{ site.baseurl }}/static/images/dc/dc04.jpg)
-
-![wisdom]({{ site.baseurl }}/static/images/dc/dc03.jpg)
-
-![strength]({{ site.baseurl }}/static/images/dc/dc02.jpg)
-
-![focus]({{ site.baseurl }}/static/images/dc/dc01.jpg)
-
-
-
-### Contact me
-
-I am available now for freelance or contract work. Learn more at my [work page]({{ site.baseurl }}/work), or email me directly at [josh@joshdbeard.com](mailto:josh@joshdbeard.com)
+![focus]({{ site.baseurl }}/images/dc01.jpg)
