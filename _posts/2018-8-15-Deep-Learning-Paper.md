@@ -39,7 +39,7 @@ title: Deep Learning Things
 
 [CapsNet](https://arxiv.org/abs/1710.09829)   
 
-
+[Segment Everything](https://arxiv.org/abs/1711.10370)  
 
 # Learning Blog
 
