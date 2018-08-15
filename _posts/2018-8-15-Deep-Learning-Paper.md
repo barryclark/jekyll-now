@@ -1,3 +1,8 @@
+---
+layout: post
+title: Deep Learning Things
+---
+
 # Deep Learning Paper
 
 [ResNet](https://arxiv.org/abs/1512.03385)
