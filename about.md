@@ -1,15 +1,15 @@
 ---
 layout: page
-title: About
+title: About Me
 permalink: /about/
 ---
 
-Some information about you!
+Nic Lake is a 30-something tech enthusist, gamer & streamer, musician, sports fan, home brewer, husband, and cat dad living in Des Moines, IA.
 
-### More Information
+### Contact Me
 
-A place to include any other types of information that you'd like to include about yourself.
-
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+- [Email me](mailto:niclake13@gmail.com)
+- [Tweet at me](http://twitter.com/niclake)
+- [Look at my pretty photos](http://instagram.com/niclake)
+- [Listen to & buy my music](http://themusicplaysyou.bandcamp.com)
+- [Watch me play video games](https://twitch.tv/PhoenixUNI)
