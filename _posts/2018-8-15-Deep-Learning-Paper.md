@@ -35,7 +35,9 @@ title: Deep Learning Things
 
 [Fast-Scene](https://arxiv.org/abs/1708.02550)
 
-[Batch Norm](http://proceedings.mlr.press/v37/ioffe15.pdf)
+[Batch Norm](http://proceedings.mlr.press/v37/ioffe15.pdf)  
+
+[CapsNet](https://arxiv.org/abs/1710.09829)   
 
 
 
