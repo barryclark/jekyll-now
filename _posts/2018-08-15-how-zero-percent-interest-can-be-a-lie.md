@@ -9,7 +9,7 @@ image: /images/ford-f150.jpg
 
 Recently my brother was telling me about a deal he received on financing a new truck. He had gone to the dealer to browse and possibly buy, and after a bit of negotiation with the salesperson, agreed to a price of $20,000* at 0% interest for 60 months. However, the dealer was unable to actually approve him for 0% interest, so my brother shrugged his shoulders and proceeded to walk.
 
-![A Ford F150](images/ford-f150.jpg)
+![A Ford F150](/images/ford-f150.jpg)
 *Not the exact truck my brother bought, but rather [an image from Wikimedia](https://commons.wikimedia.org/wiki/File:Ford-f150-2015-fx4-por-jesus.jpg)*
 
 Desperate for a sale, the salesperson chased him out the door and said they could sell him the vehicle for  $17,664 - but at an interest rate of 5%.
