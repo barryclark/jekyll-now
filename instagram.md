@@ -1,109 +1,109 @@
 ---
 layout: page
-title: DreamCartel on Instagram
+title: IG FEED
 permalink: /instagram/
 ---
 
-![luck](/images/dc52.jpg)
+![52 LUCK](/images/dc52.jpg)
 
-![attention](/images/dc51.jpg)
+![51 ATTENTION](/images/dc51.jpg)
 
-![flow](/images/dc50.jpg)
+![50 FLOW](/images/dc50.jpg)
 
-![habit](/images/dc49.jpg)
+![49 HABIT](/images/dc49.jpg)
 
-![control](/images/dc48.jpg)
+![48 CONTROL](/images/dc48.jpg)
 
-![responsibility](/images/dc47.jpg)
+![47 RESPONSIBILITY](/images/dc47.jpg)
 
-![gratitude](/images/dc46.jpg)
+![46 GRATITUDE](/images/dc46.jpg)
 
-![artist](/images/dc45.jpg)
+![45 ARTIST](/images/dc45.jpg)
 
-![style](/images/dc44.jpg)
+![44 STYLE](/images/dc44.jpg)
 
-![culture](/images/dc43.jpg)
+![43 CULTURE](/images/dc43.jpg)
 
-![adventure](/images/dc42.jpg)
+![42 ADVENTURE](/images/dc42.jpg)
 
-![purpose](/images/dc41.jpg)
+![41 PURPOSE](/images/dc41.jpg)
 
-![faith](/images/dc40.jpg)
+![40 FAITH](/images/dc40.jpg)
 
-![curiosity](/images/dc39.jpg)
+![39 CURIOSITY](/images/dc39.jpg)
 
-![passion](/images/dc38.jpg)
+![38 PASSION](/images/dc38.jpg)
 
-![success](/images/dc37.jpg)
+![37 SUCCESS](/images/dc37.jpg)
 
-![intelligence](/images/dc36.jpg)
+![36 INTELLIGENCE](/images/dc36.jpg)
 
-![patience](/images/dc35.jpg)
+![35 PATIENCE](/images/dc35.jpg)
 
-![destiny](/images/dc34.jpg)
+![34 DESTINY](/images/dc34.jpg)
 
-![happiness](/images/dc33.jpg)
+![33 HAPPINESS](/images/dc33.jpg)
 
-![karma](/images/dc32.jpg)
+![32 KARMA](/images/dc32.jpg)
 
-![power](/images/dc31.jpg)
+![31 POWER](/images/dc31.jpg)
 
-![respect](/images/dc30.jpg)
+![30 RESPECT](/images/dc30.jpg)
 
-![talent](/images/dc29.jpg)
+![29 TALENT](/images/dc29.jpg)
 
-![energy](/images/dc28.jpg)
+![28 ENERGY](/images/dc28.jpg)
 
-![failure](/images/dc27.jpg)
+![27 FAILURE](/images/dc27.jpg)
 
-![confidence](/images/dc26.jpg)
+![26 CONFIDENCE](/images/dc26.jpg)
 
-![intuition](/images/dc25.jpg)
+![25 INTUITION](/images/dc25.jpg)
 
-![persistence](/images/dc24.jpg)
+![24 PERSISTENCE](/images/dc24.jpg)
 
-![wealth](/images/dc23.jpg)
+![23 WEALTH](/images/dc23.jpg)
 
-![desire](/images/dc22.jpg)
+![22 DESIRE](/images/dc22.jpg)
 
-![fear](/images/dc21.jpg)
+![21 FEAR](/images/dc21.jpg)
 
-![courage](/images/dc20.jpg)
+![20 COURAGE](/images/dc20.jpg)
 
-![strategy](/images/dc19.jpg)
+![19 STRATEGY](/images/dc19.jpg)
 
-![loyalty](/images/dc18.jpg)
+![18 LOYALTY](/images/dc18.jpg)
 
-![growth](/images/dc17.jpg)
+![17 GROWTH](/images/dc17.jpg)
 
-![creativity](/images/dc16.jpg)
+![16 CREATIVITY](/images/dc16.jpg)
 
-![imagination](/images/dc15.jpg)
+![15 IMAGINATION](/images/dc15.jpg)
 
-![leadership](/images/dc14.jpg)
+![14 LEADERSHIP](/images/dc14.jpg)
 
-![mindset](/images/dc13.jpg)
+![13 MINDSET](/images/dc13.jpg)
 
-![chance](/images/dc12.jpg)
+![12 CHANCE](/images/dc12.jpg)
 
-![identity](/images/dc11.jpg)
+![11 IDENTITY](/images/dc11.jpg)
 
-![dream](/images/dc10.jpg)
+![10 DREAM](/images/dc10.jpg)
 
-![ambition](/images/dc09.jpg)
+![09 AMBITION](/images/dc09.jpg)
 
-![genius](/images/dc08.jpg)
+![08 GENIUS](/images/dc08.jpg)
 
-![love](/images/dc07.jpg)
+![07 LOVE](/images/dc07.jpg)
 
-![competition](/images/dc06.jpg)
+![06 COMPETITION](/images/dc06.jpg)
 
-![winning](/images/dc05.jpg)
+![05 WINNING](/images/dc05.jpg)
 
-![peace](/images/dc04.jpg)
+![04 PEACE](/images/dc04.jpg)
 
-![wisdom](/images/dc03.jpg)
+![03 WISDOM](/images/dc03.jpg)
 
-![strength](/images/dc02.jpg)
+![02 STRENGTH](/images/dc02.jpg)
 
-![focus](/images/dc01.jpg)
+![01 FOCUS](/images/dc01.jpg)
