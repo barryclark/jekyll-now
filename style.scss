@@ -19,7 +19,7 @@ html {
 
 body {
 	background: $white;
-  font: 18px/1.4 $helvetica;
+  font: 20px/1.5 $helvetica;
   color: $darkGray;
 }
 
@@ -32,35 +32,35 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $helveticaNeue;
-  color: $darkerGray;
+  color: $black;
   font-weight: bold;
 
-  line-height: 1.7;
+  line-height: 1.8;
   margin: 1em 0 15px;
   padding: 0;
 
   @include mobile {
-    line-height: 1.4;
+    line-height: 1.5;
   }
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 34px;
   a {
     color: inherit;
   }
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 26px;
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 22px;
 }
 
 h4 {
-  font-size: 18px;
+  font-size: 20px;
   color: $gray;
 }
 
@@ -117,7 +117,7 @@ img {
 
 .date {
   font-style: italic;
-  color: $gray;
+  color: $lightGray;
 }
 
 // Specify the color of the selection
@@ -155,8 +155,8 @@ img {
 }
 
 .masthead {
-  padding: 20px 0;
-  border-bottom: 1px solid $lightGray;
+  padding: 100px 0;
+  border-bottom: 1px solid $gray;
 
   @include mobile {
     text-align: center;
@@ -165,9 +165,9 @@ img {
 
 .site-avatar {
   float: left;
-  width: 70px;
-  height: 70px;
-  margin-right: 15px;
+  width: 75px;
+  height: 75px;
+  margin-right: 10px;
 
   @include mobile {
     float: none;
@@ -176,7 +176,7 @@ img {
   }
 
   img {
-    border-radius: 5px;
+    border-radius: 1px;
   }
 }
 
@@ -242,8 +242,8 @@ nav {
 //
 
 .posts > .post {
-  padding-bottom: 2em;
-  border-bottom: 1px solid $lightGray;
+  padding-bottom: 5em;
+  border-bottom: 1px solid $gray;
 }
 
 .posts > .post:last-child {
@@ -254,32 +254,32 @@ nav {
 .post {
   blockquote {
     margin: 1.8em .8em;
-    border-left: 2px solid $gray;
+    border-left: 1px solid $gray;
     padding: 0.1em 1em;
     color: $gray;
-    font-size: 22px;
+    font-size: 20px;
     font-style: italic;
   }
 
   .comments {
-    margin-top: 10px;
+    margin-top: 50px;
   }
 
   .read-more {
     text-transform: uppercase;
-    font-size: 15px;
+    font-size: 20px;
   }
 }
 
 .wrapper-footer {
-  margin-top: 50px;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  background-color: $lightGray;
+  margin-top: 100px;
+  border-top: 1px solid $gray;
+  border-bottom: 1px solid $white;
+  background-color: $white;
 }
 
 footer {
-  padding: 20px 0;
+  padding: 100px 0;
   text-align: center;
 }
 
