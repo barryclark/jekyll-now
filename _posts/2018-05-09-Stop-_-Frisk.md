@@ -335,7 +335,7 @@ Conclusion
 MW: NOT WEDDED TO THIS BUT WANTED TO AVOID RESTATING THE KEY FINDINGS. I THINK A LITTLE STRONG AND A LITTLE TONALLY DISSONANT IN ITS CURRENT FORM
 The availability of stop and frisk data in DC provides a unique and thought-provoking opportunity to examine how different areas of the city experience policing. This research found, consistent with other research, racial inequity and disproportionality in who was stopped and frisked in DC.
 
-This finding is not surprising; likely the first thing that any casual observer of this data would notice is that over 80% of the MPD's 30,000 stops involved black residents. The observer would likely discover shortly thereafter that nearly 1 in 5 of this 80% were juveniles and 1 in 10 were male. These numbers are so obviously disporportionate that it would be shocking if modeling uncovered an explanation justifying this policing, although we gave it our best shot.
+This finding is not surprising; likely the first thing that any casual observer of this data would notice is that over 80% of the MPD's 30,000 stops involved black residents. The observer would likely discover shortly thereafter that nearly 1 in 5 of this 80% were juveniles and 1 in 10 were male. These numbers are so obviously disproportionate that it would be shocking if modeling uncovered an explanation justifying this policing, although we gave it our best shot.
 
 This is not a practice that's waning, like the NYPD's stop and frisk program, or even one that is static. Rather, the MPD has steadily increased the frequency of these stops. They've done so while deliberately failing to comply with a law requiring them to collect and release data about, among other things, the legal basis for the stops. 
 
