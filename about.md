@@ -4,12 +4,8 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
-
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
+I'm currently a sophomore studying physics at NYU, where I also dive on the varsity team. I'm originally from Texas. I love learning languages (whether they're spoken or code), and I'm always looking for new music.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[ashlynwinship@gmail.com](mailto:ashlynwinship@gmail.com)
