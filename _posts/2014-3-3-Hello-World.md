@@ -1,10 +1,6 @@
 ---
 layout: post
-title: You're up and running!
+title: Welcome to my blog!
 ---
 
-Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
-
-![_config.yml]({{ site.baseurl }}/images/config.png)
-
-The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
+My friend Sam recently started a podcast (it's called "Everything We Know" and it's available on Apple Podcasts - y'all should totally check it out). Her first episode was about passion projects: her passion project is her podcast, and in the episode she urges people listening to go ahead and start any passion projects they may have. Since I've played with the idea of starting a blog in the past, and even started and then almost immediately ditched one or two blogs, I texted several of my friends that I was considering starting one. They all encouraged me to, and I've finally committed to this one. I hope y'all enjoy!
