@@ -1,8 +1,7 @@
 ---
 layout: post
 title: Hello World
-categories: 
-	- "random"
+categories: Random
 ---
 
 Well, I did it. I created yet another blog.
