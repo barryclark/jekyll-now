@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Game Review - Portal & Portal 2
-categories: Gaming, Game Review
+categories: Gaming Review
 ---
 
 When I said I had no idea what I wanted to do with this site the other day, I lied. There are actually 2 things I (might) want to do. One of them is converting my [aforementioned gaming spreadsheet][spreadsheet] into something more readable & usable on the web. Right now, entering a new game into that requires me to unhide a column, type things out, sort, then hide the column again. Updating one requires me to find it on the massive main list in order to make changes. It's gross.
