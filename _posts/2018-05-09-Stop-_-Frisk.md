@@ -9,11 +9,11 @@ author: August Warren & Mahkah Wu
 Key Findings
 --------------
 
-* Overall, black residents, and particularly young black male residents, were stopped at a rate well in excess of both the proportion of black residents living in DC and the proportion of reported crime committed by black residents. White residents were stopped at a rate lower than the analogous population and crime proportions. Each of Washington DC's 39 neighborhoods have distinct racial makeups, but these disproportionalities persist within all of them. MW: IS IT A PLURALITY, MAJORITY, OR ALL OF THEM?
+* Overall, black residents, and particularly young black male residents, were stopped at a rate well in excess of both the proportion of black residents living in DC and the proportion of reported crime committed by black residents. White residents were stopped at a rate lower than the analogous population and crime proportions. Each of Washington DC's 39 neighborhoods have distinct racial makeups, but these disproportionalities persist within a majority of neighborhoods.
 
-* There exists a strong linear relationship between a neighborhood's annual crime level and that neighborhood's stop and frisk level over the subsequent year. However, neighborhoods with higher black populations have a higher stop and frisk level than this relationship would suggest. Specifically, neighborhoods with the highest concentration of residents of color (90-100% residents of color) have, on average, ~47 more stop and frisk incidents per year compared to whitest neighborhoods (10-40% residents of color MW: OR SHOULD THIS BE 0-10%?) when crime is held constant.
+* There exists a strong linear relationship between a neighborhood's annual crime level and that neighborhood's stop and frisk level over the subsequent year. However, neighborhoods with higher black populations have a higher stop and frisk level than this relationship would suggest. Specifically, neighborhoods with the highest concentration of residents of color (90-100% residents of color) have, on average, ~47 more stop and frisk incidents per year compared to whitest neighborhoods (0-40% residents of color) when crime is held constant.
 
-* Black residents were stopped at a rate 3 times higher than white residents across all DC neighborhoods when attempting to account for criminality by using the respective racial cohort's crime level over the previous year as an offset. The rate generally increases in neighborhoods with a lower proportion of black residents.
+* In 2016, black residents were stopped at a rate 3 times higher than white residents across all DC neighborhoods when attempting to account for criminality by using the respective racial cohort's crime level as an offset. The rate generally increases in neighborhoods with a lower proportion of black residents.
 
 * This analysis includes an [interactive map](https://rawgit.com/mahkah/dc_stop_and_frisk/master/index.html) and [neighborhood explorer application](https://dc-stop-frisk.herokuapp.com/) that enable users to look for trends and patterns not covered in this analysis.
 
@@ -38,9 +38,17 @@ Various DC advocacy organizations, including Black Lives Matter DC, Stop Police 
 
 DC Judiciary and Public Safety Chairman Charles Allen questioned DC Police Chief Peter Newsham as to why the mandated data had not been collected earlier this year; Newsham stated that the MPD [was "guilty" of not following the stop and frisk data collection](https://www.wusa9.com/article/news/local/dc/dc-police-chief-police-guilty-of-not-following-stop-and-frisk-data-collection-law/65-533509822) but had worked to develop other data systems mandated by the NEAR Act. Although the Council allocated $150,000 specifically for stop and frisk data collection in fiscal year 2018, the MPD found [the work of reviewing and sorting the data to be overly "laborious and costly" and did not utilize the funding](https://www.scribd.com/document/374911762/NEAR-Act-Inquiry). The MPD has found the resources and time to building other data systems, including those that highlight crime rather than enforcement, like [DC Crime Cards](https://dcatlas.dcgis.dc.gov/crimecards/).
 
-We didn't come into this project familiar with the inner workings of the NEAR Act or the steps the MPD has taken towards compliance. Rather, there were questions other researchers have tackled that we wanted to investigate in DC, like [this really incredible research on racial disparities in "hit-rates," or arrest rates](https://5harad.com/papers/frisky.pdf), but we were confronted with a lack of detailed data. We will follow the ongoing litigation against the MPD and the Mayor's office and update the work below if further data is provided. If you want to see the NEAR Act fully implemented or want to hold law enforcement accountable and transparent, please consider supporting the work being done by organizations like [Black Lives Matter DC](http://www.blacklivesmatterdmv.org/), [Stop Police Terror Project DC](https://www.sptdc.com/), and [the American Civil Liberties Union of the District of Columbia](https://www.acludc.org/en) in their legal fight.
+If you want to see the NEAR Act fully implemented or want to hold law enforcement accountable and transparent, please consider supporting the work being done by organizations like [Black Lives Matter DC](http://www.blacklivesmatterdmv.org/), [Stop Police Terror Project DC](https://www.sptdc.com/), and [the American Civil Liberties Union of the District of Columbia](https://www.acludc.org/en) in their legal fight.
 
-This a living piece of research that attempts to provide a sense of understanding of a very complex social issue, and we are open to new ideas and viewpoints that we might have missed.
+We didn't come into this project familiar with the inner workings of the NEAR Act or the steps the MPD has taken towards compliance. Rather, there were questions other researchers have tackled that we wanted to investigate in DC, like [this really incredible research on racial disparities in "hit-rates," or arrest rates](https://5harad.com/papers/frisky.pdf), but we were confronted with a lack of detailed data.
+
+The available data did allow us to explore the following research questions: 1) Who is being stopped and frisked by the DC Metropolitan Police Department (MPD)? 2) How does the stop and frisk population compare to the overall population in DC? 3) How much are different groups of people being disproportionally targeted by stop and frisk? 
+
+Along with the stop and frisk data, the MPD also reported on "field contact reports" from 2012 to 2017. According to the [documentation](https://go.mpdconline.com/GO/GO_OPS_304_10.pdf), a field contact is a non-forcible stop and/or questioning between MPD and a citizen, although it is unclear whether citizens stopped non-forcibly know they do not need to speak with police. Forcible contacts make up the lion's share of all interactions, accounting for more than 28,000 incidents over the five years data was collected, compared to about 11,000 non-forcible stops. 
+
+For the majority of the analysis, we made the decision to specifically examine forcible stops. However, we spent a bit of time looking at both forcible and non-forcible stops; this analysis can be found in the [appendix](#appendix).
+
+This a living piece of research that attempts to provide a sense of understanding of a very complex social issue, and we are open to new ideas and viewpoints that we might have missed. We will follow the ongoing litigation against the MPD and the Mayor's office and update the work below if further data is provided. 
 
 Stop & Frisk: Overview
 --------------
@@ -55,7 +63,9 @@ Overall, the vast majority of these incidents involve people of color, specifica
 
 ![](https://raw.githubusercontent.com/GWarrenn/gwarrenn.github.io/drafts/images/stop_and_frisk/sf_race_youths.png)
 
-Age is another important factor in this conversation. Many of the stories underwriting the national conversation about race and policing have involved black youths and the police, often with fatal results. DC does not present a different story. Nearly 1 in 5 black residents stopped from 2010-2017 were children, compared to 2% among whites. Of all the trends analyzed here, we found this disparity to be the most striking. MW: DO YOU AGREE? I DON'T THINK THE OLD SENTENCE MAKES A LOT OF SENSE, BUT I HAVE STRUGGLED MIGHTLY TO COME UP WITH A GOOD REPLACEMENT
+Age is another important factor in this conversation. Many of the stories underwriting the national conversation about race and policing have involved black youths and the police, often with fatal results. DC does not present a different story. Nearly 1 in 5 black residents stopped from 2010-2017 were children, compared to 2% among whites. This trend is supported by [previous research](https://www.apa.org/pubs/journals/releases/psp-a0035663.pdf), which finds that the perceived age of black and Latino juvenile felony suspects is, on average, overestimated by five years.
+
+Of all the trends analyzed here, we found this disparity to be the most striking because of the effect of the trauma during the critical developmental period of childhood. These interactions between police and young black children have a [significant impact on their personal development and views towards police](http://digitalcommons.law.uga.edu/cgi/viewcontent.cgi?article=2059&context=fac_artchop), compounding existing tensions between the police and the communities that they serve. 
 
 ![](https://raw.githubusercontent.com/GWarrenn/gwarrenn.github.io/drafts/images/stop_and_frisk/sf_age_dist.png)
 
@@ -65,36 +75,12 @@ Reflecting the disparity among juvenile residents, black and Hispanic/Latino adu
 
 Generally, the majority of stop and frisk incidents occur after 5:00 PM and before 6:00 AM. There are some minor differences among racial lines. Incidents among whites peak in the late/early hours between 1:00 AM - 4:00 AM, while black residents experience higher frequency of incidents during the evening, with the highest proportion of incidents occurring around 9:00 PM.
 
-Forcible vs. Non-Forcible Incidents 
---------------
-
-MW: WHAT IF WE CALLED THIS AN APPENDIX AND MOVED IT TO THE END?
-
-Along with the stop and frisk data, the MPD also reported on "field contact reports" from 2012 to 2017. According to the [documentation](https://go.mpdconline.com/GO/GO_OPS_304_10.pdf), a field contact is a non-forcible stop and/or questioning between MPD and a citizen, although it is unclear whether citizens stopped non-forcibly know they do not need to speak with police. Forcible contacts make up the lion's share of all interactions, accounting for more than 28,000 incidents over the five years data was collected, compared to about 11,000 non-forcible stops. 
-
-For the majority of the preceding and later analysis, we made the decision to only consider forcible stops. However, we'll spend a bit of time looking at both forcible and non-forcible stops now.
-
-![](https://raw.githubusercontent.com/GWarrenn/gwarrenn.github.io/drafts/images/stop_and_frisk/race_contact.png)
-
-Overall, there is little difference in contact type by race. Around 80% of both non-forcible and forcible involved black residents; however, a slightly greater proportion (2.6%) of non-forcible stops involved white residents (though the total number of forcible stops in general is much higher than the non-forcible stops). 
-
-![](https://raw.githubusercontent.com/GWarrenn/gwarrenn.github.io/drafts/images/stop_and_frisk/gender_race_contact.png)
-
-Across all racial groups and stop types, people identified by MPD as male comprise a majority of incidents. However, there are some notable gender differences by contact type. Overall, women, especially white women, made up a greater proportion of non-forcible than forcible contact with the police. 
-
-Unlike the forcible stop and frisk incidents, the field contact incident data contains a record of what led to the contact, along with the standard demographics.
-
-![](https://raw.githubusercontent.com/GWarrenn/gwarrenn.github.io/drafts/images/stop_and_frisk/reason_for_stop.png)
-
-Keeping the important difference between forcible and non-forcible stops in mind, we see that moving violations were the catalyst for nearly half of the non-forcible encounters among whites, while non-forcible stops of black and Hispanic/Latino residents were initiated more frequently for "Suspicious Vehicles/Persons/Activities" and "Call for Service" (or, someone calling the police).
-
 Mapping Stop & Frisk Incidents
 --------------
 
 A critical part of the data provided by the MPD is a rough location of where the incident took place, generally either a reference to a block (e.g. '4200 BLOCK OF 7TH STREET SE') or a corner (e.g. '46TH STREET NE / CENTRAL AVENUE NE'). In order to get a mappable dataset, we cleaned up these addresses and extracted the incident street names. We merged this data to a full list of block centroids (provided by [DC OpenData](http://opendata.dc.gov/datasets/block-centroids)). We've published the [geocoded data](https://github.com/mahkah/dc_stop_and_frisk/blob/master/transformed_data/SF_Field%20Contact_02202018_locations.csv), as well as scripts to match the data in [R](https://github.com/GWarrenn/dc_data/blob/master/03_stop_frisk/scripts/stop_and_frisk.R) and [python](https://github.com/mahkah/dc_stop_and_frisk/blob/master/location_matching.py).
 
-MW: DID YOU GET A 95% LOCATION MATCH RATE? DOES THAT NOT INCLUDE MISSING ADDRESSES?
-Overall, we were able to match ~92% of the incidents provided by MPD to a latitude and longitude (The remaining addresses were either missing or not specific enough to be matched).
+Overall, we were able to match ~96% of forcible and ~82% of non-forcible incidents provided by MPD to a latitude and longitude (The remaining addresses were either missing or not specific enough to be matched).<sup>1</sup>
 
 Once we transformed the addresses to latitude and longitude, we used the R geospatial package 'sp' to classify each matched incident to one of 39 neighborhood clusters in DC to conduct the rest of the analysis presented here. We also created a district-wide map of stop and frisk incidents over the years by race/ethnicity and gender broken out by ward, neighborhood, police sector, police service area, and census tract. The mapping and associated data can be found [here](https://github.com/mahkah/dc_stop_and_frisk)
 
@@ -139,7 +125,9 @@ Falling between these two polar examples, stop and frisk rates with neighborhood
 
 ![](https://raw.githubusercontent.com/GWarrenn/gwarrenn.github.io/drafts/images/stop_and_frisk/07_nbh_diff_black.png)
 
-This chart shows the same disproportionality as the previous chart but focuses specifically on black residents stopped by MPD. It displays the proportion of stop and frisk incidents minus the census proportions, which is the vertical distance between the points and the diagonal line in the previous chart. 
+This chart shows the same disproportionality as the previous chart but focuses specifically on black residents stopped by MPD. This chart displays the proportion of stop and frisk incidents minus the census proportions. This is the same disproportionality in the previous chart measured by the vertical distance between the points and the diagonal line. 
+
+We can take a closer look at just the black residents stopped by the MPD. The above chat shows the proportion of stop and frisk incidents minus the census proportions, which is the vertical distance between the points and the diagonal line in the previous chart.
 
 The biggest disproportions are apparent in whiter, more affluent neighborhood clusters in Northwest DC, including Cleveland Park, Friendship Heights, Kalorama Heights, and Georgetown.
 
@@ -157,13 +145,15 @@ Throughout this section it's important to keep the words of [Hadley Wickham](htt
 
 How would you answer the question, "what’s the best way to allocate police to reduce crime in the city?" Many might answer: send more officers to areas with the highest amount of reported crimes. 
 
-I think that's how no-nonsense detective [Lennie Briscoe](https://en.wikipedia.org/wiki/Lennie_Briscoe) might respond, at least.
+That's how no-nonsense detective [Lennie Briscoe](https://en.wikipedia.org/wiki/Lennie_Briscoe) might respond, at least.
 
-In order to answer this question, I used crime data provided by the MPD, again through [OpenData DC](http://opendata.dc.gov/datasets?q=crime). Using a similar method as with the stop and frisk data, I matched individual reported crimes to each of the 39 neighborhoods using latitude and longitude provided by the MPD.
+In order to answer this question, we used crime data collected during the same time period as the stop and frisk data provided by the MPD, again through [OpenData DC](http://opendata.dc.gov/datasets?q=crime). Using a similar method as with the stop and frisk data, we matched individual reported crimes to each of the 39 neighborhoods using latitude and longitude provided by the MPD.
+
+This section will test the theory that stop and frisk is used not to target or profile specific neighborhoods based on their racial composition, but rather is used purely as a method to reduce crime by targeting high crime areas by preemptively stopping and questioning potential criminals.   
 
 ![](https://raw.githubusercontent.com/GWarrenn/gwarrenn.github.io/drafts/images/stop_and_frisk/08_crime_frisks.png)
 
-The chart above illustrates a pretty linear relationship between the previous years' reported crime level and stop and frisk in each neighborhood of DC. Of course, there are dozens and dozens of other confounding variables that influence crime and policing behavior not being considered in this simplistic approach, but if you were only to use this one variable to predict stop and frisk, you would end up with a model<sup>1</sup> like this:
+The chart above illustrates a pretty linear relationship between the previous years' reported crime level and stop and frisk in each neighborhood of DC. Of course, there are dozens and dozens of other confounding variables that influence crime and policing behavior not being considered in this simplistic approach, but if you were only to use this one variable to predict stop and frisk, you would end up with a model<sup>2</sup> like this:
 
 <table style="text-align:center"><tr><td colspan="2" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"></td><td><em>Dependent variable:</em></td></tr>
 <tr><td></td><td colspan="1" style="border-bottom: 1px solid black"></td></tr>
@@ -223,11 +213,8 @@ Now that we see a clear need to incorporate the neighborhood's racial compositio
 
 The regression output below shows a fairly similar overall relationship between crime and stop and frisk. However, the crime & race model indicates that there is a statistically significant difference between the amount of stop and frisk in neighborhoods with 90% - 100% residents of color compared to the base category -- neighborhoods with 10% - 40% residents of color. There is no statistically significant difference observed with the intermediate neighborhood types.
 
-
 <details><summary><b>Click for an explanation of the regression model output</b></summary>
 <p>
-
-MW: I'M ASSUMING THESE DOLLAR SIGNS ARE FOR FORMATTING, BUT THEY'RE JUST COMING THROUGH AS DOLLAR SIGNS FOR ME
 
 $Total Stop & Frisk = (Prev. Year Crime * 0.102) + N$
 
@@ -273,7 +260,7 @@ Before we get into the personal level relationship between stop and frisk and cr
 
 ![](https://raw.githubusercontent.com/GWarrenn/gwarrenn.github.io/drafts/images/stop_and_frisk/crime_and_census_plot.png)
 
-One of the more apparent patterns we find is that black residents make up a larger proportion of <i>reported</i> crime in less black DC neighborhoods. The reasons for this are not apparent in the data; there are certain social factors that could cause this, such as [white residents being more likely to call the police](https://www.vox.com/first-person/2018/5/17/17362100/starbucks-racial-profiling-yale-airbnb-911) or black residents may simply commit a disproportionate share of crimes in these neighborhoods. MW: MAYBE TALKING ABOUT THIS TREND DOESN'T TAKE YOU IN A PLACE THAT YOU WANT TO GO
+One of the more apparent patterns we find is that black residents make up a larger proportion of <i>reported</i> crime in less black DC neighborhoods. The reasons for this are not apparent in the data; there are certain social factors that could cause this, such as [white residents being more likely to call the police](https://www.vox.com/first-person/2018/5/17/17362100/starbucks-racial-profiling-yale-airbnb-911) or black residents may simply commit a disproportionate share of crimes in these neighborhoods. The answers to this question are not immediately available and any conclusive takeaways are cautioned.
 
 ---
 
@@ -291,55 +278,54 @@ Likewise, the stop and frisk rate is lower than the reported crime rate among wh
 
 As in the population comparison, Cleveland Park/Woodley Park, Downtown Chinatown, and Shaw/Logan Circle stand out as containing the highest disproportionality between black and white residents.
 
-Building off the "crime-only" model, now that we have access to demographic crime data, we can start to look at the relationship between stop and frisk using individual demographics of those stopped, rather than at a neighborhood level as we did previously. Except rather than using a linear regression to model the data, we'll use a Poisson regression<sup>2</sup>, which is specifically geared toward modeling count data and, when combined with an offset, rate data. This work is largely built off the research conducted by [Gelman, Fagan and Kiss (2007)]("http://www.stat.columbia.edu/~gelman/research/published/frisk9.pdf") examining stop and frisk in New York City in the late 1990's. The specific Poisson model used here will estimate stop and frisk for each neighborhood and take the total number of crimes for that racial group as an offset, establishing a stop & frisk to crime ratio (Gelman et al. used the previous year, however we only have access to the same years' crime data by race MW: IS THIS STILL TRUE? MAYBE JUST REPHRASE TO OMIT THE BECAUSE). The model controls for the race of the person stopped and the racial composition of the neighborhood in which they were stopped.
+Building off the "crime-only" model, now that we have access to demographic crime data, we can start to look at the relationship between stop and frisk using individual demographics of those stopped, rather than at a neighborhood level as we did previously. Except rather than using a linear regression to model the data, we'll use a Poisson regression<sup>3</sup>, which is specifically geared toward modeling count data and, when combined with an offset, rate data. This work is largely built off the research conducted by [Gelman, Fagan and Kiss (2007)]("http://www.stat.columbia.edu/~gelman/research/published/frisk9.pdf") examining stop and frisk in New York City in the late 1990's. The specific Poisson model used here will estimate stop and frisk for each neighborhood and take the total number of crimes for that racial group as an offset, establishing a stop & frisk to crime ratio. The model controls for the race of the person stopped and the racial composition of the neighborhood in which they were stopped.
 
 <table style="text-align:center"><tr><td colspan="2" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"></td><td><em>Dependent variable:</em></td></tr>
 <tr><td></td><td colspan="1" style="border-bottom: 1px solid black"></td></tr>
 <tr><td style="text-align:left"></td><td>Stop & Frisk</td></tr>
-<tr><td colspan="2" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">Race: Black</td><td>1.280<sup>***</sup></td></tr>
-<tr><td style="text-align:left"></td><td>(0.189)</td></tr>
+<tr><td colspan="2" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">Race: Black</td><td>1.375<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.206)</td></tr>
 <tr><td style="text-align:left"></td><td></td></tr>
-<tr><td style="text-align:left">Race: Hispanic/Latino</td><td>1.188<sup>***</sup></td></tr>
-<tr><td style="text-align:left"></td><td>(0.232)</td></tr>
+<tr><td style="text-align:left">Race: Hispanic/Latino</td><td>1.458<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.245)</td></tr>
 <tr><td style="text-align:left"></td><td></td></tr>
-<tr><td style="text-align:left">Neighborhood Percent Black: 10% - 40%</td><td>-0.149</td></tr>
-<tr><td style="text-align:left"></td><td>(0.157)</td></tr>
+<tr><td style="text-align:left">Neighborhood Percent Black: 10% - 40%</td><td>-0.281<sup>*</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.163)</td></tr>
 <tr><td style="text-align:left"></td><td></td></tr>
-<tr><td style="text-align:left">Neighborhood Percent Black: 40% - 60%</td><td>-0.143</td></tr>
-<tr><td style="text-align:left"></td><td>(0.178)</td></tr>
+<tr><td style="text-align:left">Neighborhood Percent Black: 40% - 60%</td><td>-0.053</td></tr>
+<tr><td style="text-align:left"></td><td>(0.181)</td></tr>
 <tr><td style="text-align:left"></td><td></td></tr>
-<tr><td style="text-align:left">Neighborhood Percent Black: 60% - 80%</td><td>-0.446<sup>**</sup></td></tr>
-<tr><td style="text-align:left"></td><td>(0.169)</td></tr>
+<tr><td style="text-align:left">Neighborhood Percent Black: 60% - 80%</td><td>-0.380<sup>**</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.172)</td></tr>
 <tr><td style="text-align:left"></td><td></td></tr>
-<tr><td style="text-align:left">Neighborhood Percent Black: 80% - 100%</td><td>-0.595<sup>***</sup></td></tr>
-<tr><td style="text-align:left"></td><td>(0.154)</td></tr>
+<tr><td style="text-align:left">Neighborhood Percent Black: 80% - 100%</td><td>-0.629<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.159)</td></tr>
 <tr><td style="text-align:left"></td><td></td></tr>
-<tr><td style="text-align:left">Constant</td><td>-2.669<sup>***</sup></td></tr>
-<tr><td style="text-align:left"></td><td>(0.207)</td></tr>
+<tr><td style="text-align:left">Constant</td><td>-2.598<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.220)</td></tr>
 <tr><td style="text-align:left"></td><td></td></tr>
-<tr><td colspan="2" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">Observations</td><td>89</td></tr>
+<tr><td colspan="2" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">Observations</td><td>93</td></tr>
 <tr><td colspan="2" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"><em>Note:</em></td><td style="text-align:right"><sup>*</sup>p<0.1; <sup>**</sup>p<0.05; <sup>***</sup>p<0.01</td></tr>
 </table>
 
+There are plenty of [great (better*) resources](http://www.jerrydallal.com/lhsp/poisson.htm) that can explain the details of Poisson regressions. However, if you're like me and just want to skim the relevant [Cross-Validated/Stack Overflow](https://stats.stackexchange.com/questions/11096/how-to-interpret-coefficients-in-a-poisson-regression) posts to know the gist of how the model should be interpreted, then here's a quick explanation of the results above: The parameters displayed represent the multiplicative increase in stop and frisk for all neighborhood race compositions compared to the specific base factor. For the race independent variable, the base category is white and for the neighborhood black compositions, the base category is 0% - 10% black.
 
-There are plenty of great (better*) resources that can explain the details of Poisson regressions MW: DO YOU HAVE ONE IN MIND WE CAN HYPERLINK TO?. However, if you're like me and just want to skim the relevant Cross-Validated/Stack Overflow posts to know the gist of how the model should be interpreted, then here's a quick explanation of the results above: The parameters displayed represent the multiplicative increase in stop and frisk for all neighborhood race compositions compared to the specific base factor. For the race independent variable, the base category is white and for the neighborhood black compositions, the base category is 0% - 10% black.
-
-Translation: Across all neighborhoods in the District, black and Hispanic/Latino residents are stopped at a rate higher than their crime rate and are stopped 3.6 (exp(1.28)) and 3.3 (exp(1.188)) times more than white residents respectively, controlling for each group's crime rate and neighborhood racial composition. MW: HOW DOES ONE INTERPRET THE NEIGHBORHOOD OUTPUTS? IS IT CORRECT TO SAY: "Conversely, a resident is stopped 55% (exp(-0.595)) as often in predominantly black neighborhoods (80-100%) then in predominantly non-black neighborhoods (0-10%), controlling for the race of the resident and each group's crime rate."
+Translation: Across all neighborhoods in the District, black and Hispanic/Latino residents are stopped at a rate 3.95 (exp(1.375)) and 4.3 (exp(1.458) - 1) times higher than their crime rate, compared white residents respectively, controlling for each group's previous year crime rate and neighborhood racial composition. 
 
 ![](https://raw.githubusercontent.com/GWarrenn/gwarrenn.github.io/drafts/images/stop_and_frisk/13_poisson_plot.png)
 
 Following in the footsteps of Gelman et al., the chart above shows the estimated rates each racial group were stopped by neighborhood racial composition. The pattern we observed at the District-level tends to hold true across neighborhoods of varying racial composition; Black and Hispanic/Latino residents are stopped at higher rates than white residents across all neighborhood types. 
 
+While the previous research illustrated that stop and frisk is generally concentrated in neighborhoods with higher proportions of residents of color, this model shows that the ratio of stop and frisk to crime is <i>higher</i> in whiter neighborhoods among black and Hispanic/Latino residents because of a disproportionately lower crime rate coupled with a relatively higher amount of stop and frisk in these neighborhoods. 
+
 Conclusion
 --------------
-MW: NOT WEDDED TO THIS BUT WANTED TO AVOID RESTATING THE KEY FINDINGS. I THINK A LITTLE STRONG AND A LITTLE TONALLY DISSONANT IN ITS CURRENT FORM
+
 The availability of stop and frisk data in DC provides a unique and thought-provoking opportunity to examine how different areas of the city experience policing. This research found, consistent with other research, racial inequity and disproportionality in who was stopped and frisked in DC.
 
-This finding is not surprising; likely the first thing that any casual observer of this data would notice is that over 80% of the MPD's 30,000 stops involved black residents. The observer would likely discover shortly thereafter that nearly 1 in 5 of this 80% were juveniles and 1 in 10 were male. These numbers are so obviously disproportionate that it would be shocking if modeling uncovered an explanation justifying this policing, although we gave it our best shot.
+This finding is not surprising; likely the first thing that any casual observer of this data would notice is that over 80% of the MPD's 30,000 stops involved black residents. The observer would likely discover shortly thereafter that nearly 1 in 5 of this 80% were juveniles and 9 in 10 were male. These numbers are so obviously disproportionate that it would be shocking if modeling uncovered an explanation justifying this policing.
 
-This is not a practice that's waning, like the NYPD's stop and frisk program, or even one that is static. Rather, the MPD has steadily increased the frequency of these stops. They've done so while deliberately failing to comply with a law requiring them to collect and release data about, among other things, the legal basis for the stops. 
-
-We find these trends troubling, so we'd like to sign off by again recognizing those organizing, legislating, and litigating for a more just and equitable DC: [Black Lives Matter DC](http://www.blacklivesmatterdmv.org/), [Stop Police Terror Project DC](https://www.sptdc.com/), and [the American Civil Liberties Union of the District of Columbia](https://www.acludc.org/en)
+This is not a practice that's waning, like the NYPD's stop and frisk program, or even one that is static. Rather, the MPD has steadily increased the frequency of these stops, while failing to comply with a law requiring them to collect and release data about, among other things, the legal basis for the stops. 
 
 Notes & Thanks
 --------------
@@ -348,11 +334,31 @@ All of the code used for this project can be found [here](https://github.com/GWa
 
 Thank you to the DC Office of the Chief Technology Officer and the DC Metropolitan Police Department for making the [stop and frisk data](https://mpdc.dc.gov/publication/stop-and-frisk-data-and-explanatory-notes) used in this analysis readily available and accessible. We hope that you find the resources and labor necessary to collect and release the remaining data fields required by law.
 
-MW: SHOULD WE THANK OUR EDITORS AND CONSULTANTS?
+Finally, thank you to Mika Weinstein, Caroline Chen, and Nicole McAllister  for providing critical insights and perspectives that helped shape and hone this research. 
+
+<a name="appendix"></a>
+Appendix: Forcible vs. Non-Forcible Incidents 
+--------------
+
+As previously mentioned, we decided to only look at stop and frisk incidents, classified as forcible encounters, for the analysis. However,  
+
+![](https://raw.githubusercontent.com/GWarrenn/gwarrenn.github.io/drafts/images/stop_and_frisk/race_contact.png)
+
+Overall, there is little difference in contact type by race. Around 80% of both non-forcible and forcible involved black residents; however, a slightly greater proportion (2.6%) of non-forcible stops involved white residents (though the total number of forcible stops in general is much higher than the non-forcible stops). 
+
+![](https://raw.githubusercontent.com/GWarrenn/gwarrenn.github.io/drafts/images/stop_and_frisk/gender_race_contact.png)
+
+Across all racial groups and stop types, people identified by MPD as male comprise a majority of incidents. However, there are some notable gender differences by contact type. Overall, women, especially white women, made up a greater proportion of non-forcible than forcible contact with the police. 
+
+Unlike the forcible stop and frisk incidents, the field contact incident data contains a record of what led to the contact, along with the standard demographics.
+
+![](https://raw.githubusercontent.com/GWarrenn/gwarrenn.github.io/drafts/images/stop_and_frisk/reason_for_stop.png)
+
+Keeping the important difference between forcible and non-forcible stops in mind, we see that moving violations were the catalyst for nearly half of the non-forcible encounters among whites, while non-forcible stops of black and Hispanic/Latino residents were initiated more frequently for "Suspicious Vehicles/Persons/Activities" and "Call for Service" (or, someone calling the police).
 
 Footnotes
 --------------
-<sup>1</sup> For the "crime-only" & "crime & race" models, I created a simple linear regression in R using the lm() function. The independent variable was the previous years' average amount of crime in the neighborhood and the dependent variable was the current years' average amount of stop and frisk, as illustrated below. Rather than run the model for all years and neighborhoods, I rolled up each neighborhood and took the average crime and stop and frisk. 
+<sup>2</sup> For the "crime-only" & "crime & race" models, I created a simple linear regression in R using the lm() function. The independent variable was the previous years' average amount of crime in the neighborhood and the dependent variable was the current years' average amount of stop and frisk, as illustrated below. Rather than run the model for all years and neighborhoods, I rolled up each neighborhood and took the average crime and stop and frisk. 
 
 ```R
 yearly_model <- lm(formula = avg_sf ~ avg_prev_yr_crime,
@@ -362,7 +368,7 @@ yearly_model_w_race <- lm(formula = avg_sf ~ avg_prev_yr_crime + coll_bins,
                    data = nbh_sf_avg)                      
 ```
 
-<sup>2</sup> Poisson model details below:
+<sup>3</sup> Poisson model details below:
 
 ```R
 stop_model <- glm(stop_frisks ~ race_ethn + nbh_black_bins, family=quasipoisson,
