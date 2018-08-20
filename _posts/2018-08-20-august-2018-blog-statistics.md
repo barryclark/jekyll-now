@@ -3,6 +3,7 @@ layout: post
 title: August 2018 Blog Statistics
 tags: [blog statistics]
 keywords: [blog, statistics, blog statistics, analytics, pageviews, webmaster, webmaster tools, alexa, google]
+hashtags: [blogging, blogstats]
 image: /images/blog-stats/2018-08-stats.png
 ---
 
