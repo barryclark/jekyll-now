@@ -78,7 +78,7 @@ Generally, the majority of stop and frisk incidents occur after 5:00 PM and befo
 Mapping Stop & Frisk Incidents
 --------------
 
-A critical part of the data provided by the MPD is a rough location of where the incident took place, generally either a reference to a block (e.g. '4200 BLOCK OF 7TH STREET SE') or a corner (e.g. '46TH STREET NE / CENTRAL AVENUE NE'). In order to get a mappable dataset, we cleaned up these addresses and extracted the incident street names. We merged this data to a full list of block centroids (provided by [DC OpenData](http://opendata.dc.gov/datasets/block-centroids)). We've published the [geocoded data](https://github.com/mahkah/dc_stop_and_frisk/blob/master/transformed_data/SF_Field%20Contact_02202018_locations.csv), as well as scripts to match the data in [R](https://github.com/GWarrenn/dc_data/blob/master/03_stop_frisk/scripts/stop_and_frisk.R) and [python](https://github.com/mahkah/dc_stop_and_frisk/blob/master/location_matching.py).
+A critical part of the data provided by the MPD is a rough location of where the incident took place, generally either a reference to a block (e.g. '4200 BLOCK OF 7TH STREET SE') or a corner (e.g. '46TH STREET NE / CENTRAL AVENUE NE'). In order to get a mappable dataset, we cleaned up these addresses and extracted the incident street names. We merged this data to a full list of block centroids (provided by [DC OpenData](http://opendata.dc.gov/datasets/block-centroids)). We've published the [geocoded data](https://github.com/mahkah/dc_stop_and_frisk/blob/master/transformed_data/SF_Field%20Contact_02202018_locations.csv), as well as [scripts to match the data](https://github.com/mahkah/dc_stop_and_frisk/blob/master/location_matching.py).
 
 Overall, we were able to match ~96% of forcible and ~82% of non-forcible incidents provided by MPD to a latitude and longitude (The remaining addresses were either missing or not specific enough to be matched).<sup>1</sup>
 
@@ -358,6 +358,8 @@ Keeping the important difference between forcible and non-forcible stops in mind
 
 Footnotes
 --------------
+<sup>1</sup> Because we employed different matching methods, there are some slight variations in the overall number of matched 
+
 <sup>2</sup> For the "crime-only" & "crime & race" models, I created a simple linear regression in R using the lm() function. The independent variable was the previous years' average amount of crime in the neighborhood and the dependent variable was the current years' average amount of stop and frisk, as illustrated below. Rather than run the model for all years and neighborhoods, I rolled up each neighborhood and took the average crime and stop and frisk. 
 
 ```R
