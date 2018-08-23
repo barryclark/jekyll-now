@@ -10,6 +10,8 @@ I spend my days working as a business analyst on an augmented & virtual reality 
 
 I spend my nights and weekends partaking in a variety of hobbies. Video games are a major passion of mine, and you can find me [streaming on Twitch](https://twitch.tv/PhoenixUNI). I'm always looking for additional games to add to my [never-ending list of games to play](https://docs.google.com/spreadsheets/d/1zg-SOYI8DlH-ibSNslfPtq0xJB4sEMb_7OHKbq2qclk/edit?usp=sharing). I'm also a multi-instrumental musician, and I've [released an EP under the name *The Music Plays You*](http://themusicplaysyou.bandcamp.com).
 
+This website was created using [Jekyll](https://jekyllrb.com/), and is hosting on [GitHub Pages](https://pages.github.com/).
+
 ### Contact Me
 
 - [Email me](mailto:niclake13@gmail.com)
