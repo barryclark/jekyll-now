@@ -15,6 +15,8 @@ categories: Gaming Review
 
 My first console as a kid was an N64, and **Ocarina of Time** was one of the first games I remember owning, playing, and beating. It was my first for a lot of things; first Zelda game, first RPG, first major open world game, first real challenge as a gamer.
 
+<!-- more -->
+
 When **Breath of the Wild** was announced, I (along with pretty much every other gamer out there, I'm sure) just *knew* that I had to have it. It managed to drag up every memory & emotion that I had ever tied to Ocarina, and just slapped me in the face with nostalgia. I ended up downloading it immediately upon launch on my Wii U, and I got about halfway through the story before my wife gifted me with my Switch (and Breath) for Christmas.
 
 It's been a really long time coming, but I finally wrapped up the main quest of Breath just a few weeks ago. I'm someone that finds it extremely difficult to complete a massive RPG like this, regardless of how good the game might be, so 9-10 months (and only 2 game restarts, because honestly, who can actually remember what you  did or where you were at?) is a really good time for me.
