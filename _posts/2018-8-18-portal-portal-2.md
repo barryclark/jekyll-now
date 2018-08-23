@@ -39,8 +39,11 @@ Literally my only gripe with the entire series happens right after you avoid bei
 
 Overall, it's clear why the Portal games are considered some of the best of all time. Portal 1 shoved the entire gaming world forward in conceptualizing how physics and puzzles should work. Portal 2 took that already unique and interesting world, and gave us a terrific and compelling story to go along with it. These games are a great way to spend a couple hours, and I'm sure I'll be back to do it all over again in no time at all.
 
+*Did you enjoy this review? Did I skip anything important? Do you want to tell me how wrong I am? Use the hashtag #PortalReview when you [message me on Twitter][twitter] and let's chat!*
+
 [spreadsheet]: https://docs.google.com/spreadsheets/d/1zg-SOYI8DlH-ibSNslfPtq0xJB4sEMb_7OHKbq2qclk/edit?usp=sharing
 [SwitchFocus]: http://switchfocuspodcast.com/podcasts/episode-43-dead-smashing-news/
 [gameImg]: https://i.imgur.com/q9BZBhy.jpg "Portal & Portal 2"
 [portal1speedrun]: https://www.youtube.com/watch?v=bmEZWZPqyT4
 [space]: https://youtu.be/xeKMS62GrTI?t=50
+[twitter]: http://twitter.com/niclake
