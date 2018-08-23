@@ -5,6 +5,8 @@ title: "Becoming Director of Ecosystem at CNCF"
 
 After twenty months, I’m moving on from StorageOS. I am deeply grateful to my manager Alex for being an incredible role model, and to my reports Ferran, Frank and the rest of the team for being brilliant, patient, understanding and kind. (Although I’ll definitely live on in Jira tickets for some time yet…!)
 
+![CNCF logo](https://about.gitlab.com/images/case_study_logos/cncf-logo.png)
+
 I’m delighted to announce my next role as the Director of Ecosystem at the Cloud Native Computing Foundation, reporting to Dan Kohn. I’ve collaborated with the Foundation for over a year through the Cloud Native London meetup, so I’m thrilled to officially join CNCF and The Linux Foundation. The commitment to technical excellence, community outreach and inclusion makes it a perfect home for me.
 
 As Director of Ecosystem, my focus will be on making our cloud native end users happy and successful. I will build on my own experience as a Google software engineer and Borg end user, community engagement and public speaking. I also look forward to improving my Mandarin and working with our Chinese members!
