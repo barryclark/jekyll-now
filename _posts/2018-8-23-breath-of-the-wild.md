@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Game Review - The Legend of Zelda: Breath of the Wild
+title: "Game Review - The Legend of Zelda: Breath of the Wild"
 categories: Gaming Review
 ---
 
