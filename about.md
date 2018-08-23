@@ -10,7 +10,7 @@ I speak frequently at meetups and conferences on container and cloud native tech
 
 ## Background
 
-Previously I was Product and DevOps manager at StorageOS, a London-based startup building persistent storage for containers. I
+Previously I was Product and DevOps manager at StorageOS, a London-based startup building persistent storage for containers.
 
 Prior to that, I was a C++ engineer on Google Maps, building location services, search and ranking infrastructure.
 
