@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Game Review - GAMENAME
-categories: Gaming Review
+title: "Game Review - GAMENAME"
+categories: Review
 ---
 
 ![alt text][gameImg]

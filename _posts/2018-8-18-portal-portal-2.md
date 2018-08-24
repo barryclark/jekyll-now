@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Game Review - Portal & Portal 2
-categories: Gaming Review
+categories: Review
 ---
 
 ![alt text][gameImg]
