@@ -38,6 +38,13 @@ permalink: /people/
 * Ward Melville High School
 * Simons Summer Research Program (2017 summer)
 
+{: .person-name }
+## Josue Nassar
+![Josue Nassar](/images/Josue.jpg){: .profile-photo }
+
+* PhD student, Department of Electrical & Computer Engineering, Stony Brook University
+* Co-advised by Dr. Mónica F. Bugallo
+
 ## Future lab member
 ![Cartoon MRI head](/images/MRI_brain_outline_memming.png){: .profile-photo }
 
