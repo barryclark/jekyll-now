@@ -1,9 +1,9 @@
 ---
 layout: post
-title: First project demo - Vocalizer of the Perso-Arabic script
+title: First project demo - Vocalizing the Perso-Arabic script
 ---
 
-Today my first project demo is live! When I decided to create this site, one big reason was for me to be able to showcase some projects I have worked on. One big issue, however, is that most of them have been part of courses and lack a UI. But now at least one of my projects has had a UI added to it and (is now live!)[http://vocalizer.thomasvakili.se/]
+Today my first project demo is live! When I decided to create this site, one big reason was for me to be able to showcase some projects I have worked on. One big issue, however, is that most of them have been part of courses and lack a UI. But now at least one of my projects has had a UI added to it and [is now live!](http://vocalizer.thomasvakili.se/)
 
 What's the project about?
 -------------------------
@@ -25,4 +25,4 @@ I constructed a simple intermediate romanized script which allowed me to transli
 
 Now the matrices that make up the HMM can be constructed based on the training corpus, and this can now be evaluated. Input is split into observations and the Viterbi algorithm is then used to determine the most likely vocalization for the input.
 
-A demo is available (here)[http://vocalizer.thomasvakili.se] and the formal project report (which contains a more in-depth explanation and background) can be found (here)[https://docs.google.com/document/d/1Xh75hHI6z_Tg25WNA0a4yAZcWLe0V5bN03TPDmVMD1k/].
+A demo is available [here](http://vocalizer.thomasvakili.se) and the formal project report (which contains a more in-depth explanation and background) can be found [here](https://docs.google.com/document/d/1Xh75hHI6z_Tg25WNA0a4yAZcWLe0V5bN03TPDmVMD1k/).
