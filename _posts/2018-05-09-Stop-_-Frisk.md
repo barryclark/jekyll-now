@@ -244,7 +244,13 @@ As the model and the plot both show, after we control for racial composition, ne
 
 ![](https://raw.githubusercontent.com/GWarrenn/gwarrenn.github.io/drafts/images/stop_and_frisk/10_sf_crime_nbh_race.png)
 
-Similarly, despite having lower levels of crime than racially diverse neighborhoods, the neighborhoods with the highest concentration of residents of color -- like Ivy City/ Arboretum/Trinidad/Carver, Langston/Woodridge/Fort, and Lincoln/Gateway -- have astoundingly high rates of stop and frisk. This tracks with what we saw earlier in the chart showing total stop and frisk adjusted for neighborhood population; specifically, the neighborhoods that have higher proportions of non-white residents tend to have lower populations but higher levels of stop and frisk per capita. As a reminder, this chart does not take into account the race of the crime/stop and frisk incident, but we'll get into that next.
+Similarly, despite having lower levels of crime than racially diverse neighborhoods, the neighborhoods with the highest concentration of residents of color -- like Ivy City/ Arboretum/Trinidad/Carver, Langston/Woodridge/Fort, and Lincoln/Gateway -- have astoundingly high rates of stop and frisk. This tracks with what we saw earlier in the chart showing total stop and frisk adjusted for neighborhood population; specifically, the neighborhoods that have higher proportions of non-white residents tend to have lower populations but higher levels of stop and frisk per capita. 
+
+![](https://raw.githubusercontent.com/GWarrenn/gwarrenn.github.io/drafts/images/stop_and_frisk/change_in_sf.png)
+
+Since 2010, the more racially diverse DC neighborhoods saw the greatest increases in stop and frisk. On average, stop and frisk increased over 200% in neighborhoods with a 40-60% population of residents of color from 2010 to 2017. Neighborhoods with 60-90% residents of color also saw large increases in stop and frisk. Also of note, while neighborhoods with 90-100% residents of color had the highest levels of stop and frisk, the level of stop and frisk remained relatively stable from 2010 to 2017. 
+
+As a reminder, these charts do not take into account the race of the crime/stop and frisk incident, but we'll get into that next.
 
 The Benefit (and lack thereof) of the Doubt: Person-level Crime and Stop & Frisk Relationship
 --------------
