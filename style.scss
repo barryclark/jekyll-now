@@ -159,7 +159,7 @@ img + em {
 // .masthead
 //
 
-#shadow {
+.shadow {
   position: fixed;
   top: 0;
   left: 0;
@@ -294,7 +294,7 @@ nav {
   margin-top: 50px;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
-  background-color: $lightGray;
+  background-color: #545;
 }
 
 footer {
