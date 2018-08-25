@@ -18,9 +18,9 @@ html {
 }
 
 body {
-	background: $white;
-  font: 18px/1.4 $helvetica;
-  color: $darkGray;
+	background: url(http://niclake.me/images/bg.png) repeat;
+  font: 'Open Sans', Helvetica, Arial, sans-serif;
+  color: rgba(25, 27, 29, 0.9);
 }
 
 .container {
@@ -140,6 +140,11 @@ img {
 
 .clearfix:after {
     clear: both;
+}
+
+.footnote {
+  vertical-align: super;
+  font-size: 75%;
 }
 
 /*********************/
