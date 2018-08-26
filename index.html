@@ -10,14 +10,13 @@ layout: default
 
       <div class="entry">
         {{ post.excerpt }}
-        
-        {% capture content_words %}
-        	{{ post.content | number_of_words}}
-        {% endcapture %}
-        {% capture excerpt_words %} 
+        {% capture content_words %} 
+	      {{ post.content | number_of_words }} 
+	    {% endcapture %} 
+	    {% capture excerpt_words %} 
 	      {{ post.excerpt | number_of_words }} 
-	    {% endcapture %}
-		{% if excerpt_words != content_words %}
+	    {% endcapture %} 
+	    {% if excerpt_words != content_words %}
 	    <a href="{{ site.baseurl }}{{ post.url }}/#read-more" class="read-more">Read More <i class="fa fa-arrow-circle-right"></i></a>
 	    {% endif %}
       </div>
