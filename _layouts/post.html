@@ -30,7 +30,7 @@ layout: default
       {%- endif -%}
       {%- for category in categories -%}
         <a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}</a>
-      {%- unless forloop.last -%}, {%- endunless -%}
+      {% unless forloop.last %}, {% endunless %}
       {%- endfor -%}
     {%- endcapture -%}
     Written on {{ page.date | date: "%B %e, %Y" }}. Posted under {{ category_list }}.
