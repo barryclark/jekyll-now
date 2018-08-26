@@ -88,7 +88,7 @@ a {
   &:visited, &:active {
     color: #1a4065;
   }
-  $:hover {
+  &:hover {
     color: rgba(26, 64, 101, 0.6);
     border-bottom: 1px solid rgba(26, 64, 101, 0.6);
     background-color: 0, 0, 0, 0.4;
