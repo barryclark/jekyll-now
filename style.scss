@@ -79,7 +79,7 @@ a {
 
 ul, ol {
   margin: 15px 0;
-  padding-left: 30px;
+  padding-left: 45px;
 }
 
 ul {
@@ -92,6 +92,10 @@ ol {
 
 ol ul, ul ol, ul ul, ol ol {
   margin: 0;
+}
+
+li {
+  margin-bottom: 5px;
 }
 
 ul ul, ol ul {
