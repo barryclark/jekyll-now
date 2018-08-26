@@ -14,7 +14,7 @@ title: Categories
 
       <ul>
         {% for post in site.categories[category_name] %}
-          <li><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></li>
+          <li><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}} ({{ page.date | date: "%B %e, %Y" }})</a></li>
         {% endfor %}
       </ul>
   </div>
