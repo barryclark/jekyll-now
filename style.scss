@@ -19,7 +19,7 @@ html {
 
 body {
 	background: url(http://niclake.me/images/bg.png) repeat;
-  font: 'Open Sans', Helvetica, Arial, sans-serif;
+  font: $openSans;
   color: rgba(25, 27, 29, 0.9);
 }
 
@@ -31,7 +31,6 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $helveticaNeue;
   color: $darkerGray;
   font-weight: bold;
 
@@ -68,13 +67,36 @@ p {
   margin: 15px 0;
 }
 
-a {
+/*a {
   color: $blue;
   text-decoration: none;
 	cursor: pointer;
   &:hover, &:active {
     color: $blue;
   }
+}*/
+
+/* Standard links have a line, which fades when moused over   */
+a:link {
+  color: #1a4065;
+  text-decoration: none;
+  border-bottom: 1px solid #1a4065;
+  -webkit-transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #1a4065;
+}
+
+a:hover {
+  color: rgba(26, 64, 101, 0.6);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(26, 64, 101, 0);
+  background-color: 0, 0, 0, 0.4;
 }
 
 ul, ol {
@@ -234,7 +256,6 @@ img + em {
 nav {
   float: right;
   margin-top: 23px; // @TODO: Vertically middle align
-  font-family: $helveticaNeue;
   font-size: 18px;
 
   @include mobile {
