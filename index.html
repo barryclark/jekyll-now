@@ -18,7 +18,7 @@ layout: default
 	      {{ post.excerpt | number_of_words }} 
 	    {% endcapture %}
 		{% if excerpt_words != content_words %}
-	    <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More >></a>
+	    <a href="{{ site.baseurl }}{{ post.url }}/#read-more" class="read-more">Read More <i class="fa fa-arrow-circle-right"></i></a>
 	    {% endif}
       </div>
 

@@ -18,7 +18,7 @@ layout: default
   </div>
 
   <div class="entry">
-    {{ content }}
+    {{ content | replace: '<!-- more -->', '<a class="anchor" id="read-more"></a>' }}
   </div>
 
   <div class="date">
