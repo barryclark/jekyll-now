@@ -17,10 +17,10 @@ layout: default
         {%- assign categories = page.categories -%}
       {%- endif -%}
       {%- for category in categories -%}
-        <a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}</a>, 
+        <a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}</a> 
       {%- endfor -%}
     {%- endcapture -%}
-    Written on {{ page.date | date: "%B %e, %Y" }}. Posted under {{ category_list | slice: -2 }}.
+    Written on {{ page.date | date: "%B %e, %Y" }}. Categories: {{ category_list }}.
   </div>
 
   {% include disqus.html %}
