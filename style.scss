@@ -85,6 +85,13 @@ a {
   };
 }
 
+a.anchor {
+  display: block;
+  position: relative;
+  top: -99px;
+  visibility: hidden;
+}
+
 ul, ol {
   margin: 15px 0;
   padding-left: 45px;
