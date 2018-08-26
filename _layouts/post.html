@@ -33,7 +33,7 @@ layout: default
       {%- unless forloop.last -%}, {%- endunless -%}
       {%- endfor -%}
     {%- endcapture -%}
-    Written on {{ page.date | date: "%B %e, %Y" }}. Posted in {{ category_list }}
+    Written on {{ page.date | date: "%B %e, %Y" }}. Posted under {{ category_list }}.
   </div>
 
   {% include disqus.html %}
