@@ -77,17 +77,25 @@ p {
 }*/
 
 /* Standard links have a line, which fades when moused over   */
-a:link {
+a {
   color: #1a4065;
   text-decoration: none;
-  border-bottom: 1px solid #1a4065;
   -webkit-transition: all ease 0.3s;
   -moz-transition: all ease 0.3s;
   -o-transition: all ease 0.3s;
   transition: all ease 0.3s;
+  cursor: pointer;
+  &:visited, &:active {
+    color: #1a4065;
+  }
+  $:hover {
+    color: rgba(26, 64, 101, 0.6);
+    border-bottom: 1px solid rgba(26, 64, 101, 0.6);
+    background-color: 0, 0, 0, 0.4;
+  };
 }
 
-a:visited {
+/*a:visited {
   text-decoration: none;
   color: #1a4065;
 }
@@ -95,9 +103,10 @@ a:visited {
 a:hover {
   color: rgba(26, 64, 101, 0.6);
   text-decoration: none;
-  border-bottom: 1px solid rgba(26, 64, 101, 0);
+
+  border-bottom: 1px solid rgba(26, 64, 101, 0.6);
   background-color: 0, 0, 0, 0.4;
-}
+}*/
 
 ul, ol {
   margin: 15px 0;
@@ -239,7 +248,6 @@ img + em {
   margin: 0;
   cursor: pointer;
   font-weight: 600;
-  font-size: 400%;
   letter-spacing: 0.1em;
 }
 
