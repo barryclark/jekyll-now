@@ -94,6 +94,10 @@ Other great cards include the [Capital One Quicksilver](https://www.capitalone.c
 
 Caution! Rebates will almost never net you more than you spent! So in the grand scheme of things, they really aren't making you any money. In fact, if you aren't careful, some of these might make you spend more, especially the credit cards. So if you have a budget, be sure to stick to it. And if you don't have a budget, make one!
 
+## Additional Reading
+
+Be sure to check out Michael Dinich's article [How To Make Money Fast](https://michaeldinich.net/how-to-make-money-fast/).
+
 ## That's All Folks!
 
 There are probably ideas that I didn't mention here simply because the possibilities are endless. But the fact is you don't necessarily need money to make money. It can help, sure, but you have to start somewhere!
