@@ -96,7 +96,7 @@ Caution! Rebates will almost never net you more than you spent! So in the grand 
 
 ## Additional Reading
 
-Be sure to check out Michael Dinich's article [How To Make Money Fast](https://michaeldinich.net/how-to-make-money-fast/).
+Be sure to check out Michael Dinich's article *[How To Make Money Fast](https://michaeldinich.net/how-to-make-money-fast/)*.
 
 ## That's All Folks!
 
