@@ -26,6 +26,6 @@ Birthday: 29-10-2002
  
 　■ 　 Steam: 　 　 [steamcommunity.com/id/tranvanquocthang](https://steamcommunity.com/id/tranvanquocthang)
  
- ----------------------------------------------------------------------
+ -------------------------------------------------
  
 　■ 　 Email: [comehere.thang@gmail.com](mailto:comehere.thang@gmail.com)
