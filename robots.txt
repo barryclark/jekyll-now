@@ -1,1 +1,7 @@
 # This is a robots page. Technically.
+
+User-agent: Google
+Disallow: 
+
+User-agent: *
+Disallow: /
