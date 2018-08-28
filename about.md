@@ -28,4 +28,4 @@ Birthday: 29-10-2002
  
  -------------------------------------------------
  
-　■ 　 Email: [comehere.thang@gmail.com](mailto:comehere.thang@gmail.com)
+　■ 　 Email:　　　 [comehere.thang@gmail.com](mailto:comehere.thang@gmail.com)
