@@ -14,17 +14,17 @@ Birthday: 29-10-2002
 
 ### <span class="left-slide">Contact me</span>
 
-　■ 　 Facebook:　 facebook.com/thangtran.official
+　■ 　 Facebook:　 [facebook.com/thangtran.official](https://facebook.com/thangtran.official)
  
-　■ 　 Instagram:　 instagram.com/quocthang_
+　■ 　 Instagram:　 [instagram.com/quocthang_](https://instagram.com/quocthang_)
  
-　■ 　 Twitter: 　 　 twitter.com/quocthang_
+　■ 　 Twitter: 　 　 [twitter.com/quocthang_](https://instagram.com/quocthang_)
  
-　■ 　 Github: 　 　 github.com/gnahtcouq
+　■ 　 Github: 　 　 [github.com/gnahtcouq](https://github.com/gnahtcouq)
  
-　■ 　 Website:　 　www.quocthang.ooo
+　■ 　 Website:　 　[quocthang.ooo](https://quocthang.ooo)
  
-　■ 　 Steam: 　 　 steamcommunity.com/id/tranvanquocthang
+　■ 　 Steam: 　 　 [steamcommunity.com/id/tranvanquocthang](https://steamcommunity.com/id/tranvanquocthang)
  
  ----------------------------------------------------------------------
  
