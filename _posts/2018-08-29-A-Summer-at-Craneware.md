@@ -2,7 +2,7 @@
 layout: post
 title: A Summer at Craneware
 ---
-![Craneware's Edinburgh Office(/images/pic.jpeg)
+![Craneware's Edinburgh Office(/images/IMG_20180614_165850.jpg)
 
 Tucked away north of Edinburgh's New Town and across the Water of Leith is Tanfield, home to the leader of US Healthcare revenue capture software — Craneware.
 
