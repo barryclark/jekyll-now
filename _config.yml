@@ -1,77 +1,198 @@
-#
-# This file contains configuration flags to customize your site
-#
-
-# Name of your site (displayed in the header)
-name: PJH’s BLOG
-
-# Short bio or description (displayed in the header)
-description: 이런저런 노하우 공유용 블로그!
-
-# URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: 
-
-#
-# Flags below are optional
-#
-
-# Includes an icon in the footer for each username you enter
-footer-links:
-  dribbble:
-  email:
-  facebook:
-  flickr:
-  github: barryclark/jekyll-now
-  instagram:
-  linkedin:
-  pinterest:
-  rss: # just type anything here for a working RSS icon, make sure you set the "url" above!
-  twitter: jekyllrb
-  stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
-  youtube: # channel/<your_long_string> or user/<user-name>
-  googleplus: # anything in your profile username that comes after plus.google.com/
-
-
-# Enter your Disqus shortname (not your username) to enable commenting on posts
-# You can find your shortname on the Settings page of your Disqus account
-disqus:
-
-# Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-google_analytics:
-
-# Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
-# Used for Sitemap.xml and your RSS feed
-url:
-
-# If you're hosting your site at a Project repository on GitHub pages
-# (http://yourusername.github.io/repository-name)
-# and NOT your User repository (http://yourusername.github.io)
-# then add in the baseurl here, like this: "/repository-name"
-baseurl: ""
-
-#
-# !! You don't need to change any of the configuration flags below !!
-#
-
-markdown: kramdown
-highlighter: rouge
-permalink: /:title/
-
-# The release of Jekyll Now that you're using
-version: v1.1.0
-
-# Set the Sass partials directory, as we're using @imports
-sass:
-  style: :expanded # You might prefer to minify using :compressed
-
-# Use the following plug-ins
+# External gems
+# See http://ixti.net/software/2013/01/28/using-jekyll-plugins-on-github-pages.html for making `jekyll archives` work.
 gems:
-  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
+  - jekyll-archives # Sorry, not GitHub pages friendly!
+  - jekyll-sitemap
+  - jekyll-paginate
 
-# Exclude these files from your production _site
 exclude:
-    - Gemfile
-    - Gemfile.lock
-    - LICENSE
-    - README.md
-    - CNAME
+  - "/vendor/"
+
+# Site settings
+title: PJH’s BLOG
+subtitle: "이런저런 노하우 공유용 블로그!"
+email: parkjh78@gmail.com
+name: Park Junhyung
+description: >
+  이런저런 노하우 공유용 블로그!
+# Base URL of site (i.e. /blog). It should always start with a slash,
+# and never end with a slash. Set it to a blank value if hosting at the
+# root of your server.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://junhyungpark78.github.io/" # the base hostname & protocol for your site
+cover: "/assets/header_image.jpg"
+logo: "/assets/logo.png"
+
+# Build settings
+markdown: kramdown
+paginate: 5
+paginate_path: "/page:num/"
+inter_post_navigation: false
+highlightjs_theme: "monokai-sublime"
+
+# Archive settings (see https://github.com/jekyll/jekyll-archives/)
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layout: 'archive'
+  permalinks:
+    category: '/category/:name/'
+    tag: '/tag/:name/'
+
+# Disqus comments
+# disqus_shortname: bencentra
+
+# Google analytics
+# ga_tracking_id: "UA-XXXX-1"
+
+# Category descriptions (for archive pages)
+descriptions:
+  - cat: jekyll
+    desc: "Posts describing Jekyll setup techniques."
+
+  - cat: dummy
+    desc: "Just some placeholder posts, lorem ipsum and the rest."
+
+# Social icons and sharing options
+#
+# Social settings are used in two places:
+# * In the footer, as links to your personal profiles
+# * After each blog post for sharing widgets
+#
+# Example:
+#
+# social:
+#   - name: Twitter                         # Name of the service
+#     icon: twitter                         # Font Awesome icon to use (minus fa- prefix)
+#     username: "@TheBenCentra"             # (User) Name to display in the footer link
+#     url: https://twitter.com/TheBenCentra # URL of your profile (leave blank to not display in footer)
+#     desc: Follow me on Twitter            # Description to display as link title, etc
+#     share: true                           # Include in the "Share" section of posts
+social:
+#  - name: Twitter
+#    icon: twitter
+#    username: TheBenCentra
+#    url: https://twitter.com/TheBenCentra
+#    desc: Follow me on Twitter
+#    share: true
+
+#  - name: Facebook
+#    icon: facebook
+#    username: thebencentra
+#    url:
+#    desc: Friend me on Facebook
+#    share: true
+
+#  - name: GitHub
+#    icon: github
+#    username: junhyungpark78
+#    url: https://github.com/junhyungpark78
+#    desc: Fork me on GitHub
+#    share: false
+
+#  - name: LinkedIn
+#    icon: linkedin
+#    username: Ben Centra
+#    url: https://www.linkedin.com/pub/ben-centra/47/769/60a
+#    desc: Connect with me on LinkedIn
+#    share: true
+
+#  - name: Google+
+#    icon: google-plus
+#    username:
+#    url:
+#    desc: Add me to your Circles
+#    share: true
+
+#  - name: YouTube
+#    icon: youtube
+#    username:
+#    url:
+#    desc: Subscribe on YouTube
+#    share: false
+
+#  - name: Instagram
+#    icon: instagram
+#    username:
+#    url:
+#    desc: Follow me on Instagram
+#    share: false
+
+#  - name: Pinterest
+#    icon: pinterest
+#    username:
+#    url:
+#    desc: Follow me on Pinterest
+#    share: true
+
+#  - name: SoundCloud
+#    icon: soundcloud
+#    username:
+#    url:
+#    desc: Follow me on SoundCloud
+#    share: false
+
+#  - name: Tumblr
+#    icon: tumblr
+#    username:
+#    url:
+#    desc: Follow me on Tumblr
+#    share: false
+
+#  - name: Steam
+#    icon: steam
+#    username:
+#    url:
+#    desc: Friend me on Steam
+#    share: false
+
+#  - name: Dribbble
+#    icon: dribbble
+#    username:
+#    url:
+#    desc: Follow me on Dribble
+#    share: false
+
+#  - name: Vimeo
+#    icon: vimeo-square
+#    username:
+#    url:
+#    desc: Follow me on Vimeo
+#    share: false
+
+#  - name: Vine
+#    icon: vine
+#    username:
+#    url:
+#    desc: Follow me on Vine
+#    share: false
+
+#  - name: Reddit
+#    icon: reddit
+#    username:
+#    url:
+#    desc: Share to Reddit
+#    share: true
+
+#  - name: "Hacker News"
+#    icon: hacker-news
+#    username:
+#    url:
+#    desc: Share to Hacker News
+#    share: false
+
+# Social sharing protocols
+# These are for automatically generating sharing metadata for FB and Twitter
+# OS Protocol is for sharing the source of your site, if you're interested. For more, see osprotocol.com
+protocols:
+#    fb_image: "/assets/logo.png"
+#    fb_image_width: 612
+#    fb_image_height: 605
+#    fb_image_type: "image/png"
+
+#    twitter_image: "/assets/logo.png"
+
+#    os_repo: "https://github.com/bencentra/centrarium.com"
+#    os_rcs_type: "git"
+#    os_src: "git@github.com:bencentra/centrarium.com.git"

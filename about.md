@@ -4,6 +4,8 @@ title: About
 permalink: /about/
 ---
 
+<img src="{{ site.baseurl }}/assets/profile-placeholder.png" title="Profile Picture" class="profile">
+
 name : Junhyung Park  
 job : spine animator
 

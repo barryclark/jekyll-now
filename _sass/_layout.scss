@@ -1,0 +1,431 @@
+// Primary site layout for Centrarium Theme
+
+/*
+*	Variables
+*/
+$b3: 480px;
+$mobile: $b3;
+$b2: 768px;
+$tablet: $b2;
+$b1: 960px;
+$desktop: $b1;
+
+/*
+*	Globals
+*/
+html, body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+ol.default {
+  @extend %default-ol;
+}
+
+ul.default {
+	@extend %default-ul;
+}
+
+code {
+	background-color: #eee;
+	display: inline-block;
+	border-radius: 3px;
+	padding: 0 3px;
+}
+
+pre code.hljs {
+	font-size: modular-scale(-1);
+}
+
+.page-divider {
+	$divider-color: $light-gray;
+  display: block;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  border-top: 1px solid $divider-color;
+  .one {
+    position: relative;
+    top: -9px;
+    display: block;
+    background: $divider-color;
+    width: 18px;
+    height: 18px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+  }
+  .two {
+    position: relative;
+    top: -26px;
+    display: block;
+    background: $white;
+    width: 16px;
+    height: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+  }
+}
+
+.site-header-container, .post-header-container {
+	width: 100%;
+	text-align: center;
+	&.has-cover {
+		color: $white;
+		text-shadow: 0 2px 1px rgba(0,0,0,0.67) !important;
+		background-position: 50% 50%;
+		background-size: cover;
+		.title {
+			font-size: modular-scale(6);
+		}
+		.subtitle, .info {
+			font-size: modular-scale(1);
+		}
+	}
+	.scrim {
+		padding: 3em 1em;
+		&.has-cover {
+			background-color: rgba(0,0,0,0.2);
+			padding: 6em 1em !important;
+			@include media($tablet) {
+				padding: 9em 1em !important;
+			}
+		}
+	}
+}
+
+/*
+*	Header
+*/
+.navigation {
+	box-shadow: 0 2px $highlight-color;
+	padding: 0 1em;
+	margin: 0;
+	/*
+	*	Navigation Menu - http://refills.bourbon.io/unstyled/ (see "Navigation")
+	*/
+  // Mobile view
+  .navigation-menu-button {
+    display: block;
+    float: right;
+    margin: 0;
+    font-size: 1.5em;
+    padding-top: 0.5em;
+    @include media ($tablet) {
+      display: none;
+    }
+  }
+  // Nav menu
+  .navigation-wrapper {
+  	@include outer-container;
+    @include clearfix;
+    position: relative;
+  }
+  .logo {
+    float: left;
+    height: 4em;
+    @include media ($tablet) {
+    	padding-left: $em-base;
+    }
+    img {
+      max-height: 2.5em;
+      margin-top: 0.75em;
+      padding-right: 1em;
+    }
+    span {
+    	font-size: 1.25em;
+    }
+  }
+  nav {
+    float: none;
+    padding: 1.25em 0;
+    @include media ($tablet) {
+      float: right;
+      line-height: 1.5em;
+    }
+  }
+  ul.navigation-menu {
+    clear: both;
+    display: none;
+    margin: 0 auto;
+    overflow: visible;
+    padding: 0;
+    width: 100%;
+    @include media ($tablet) {
+      display: block;
+      margin: 0;
+      padding: 0;
+    }
+    &.show {
+      display: block;
+    }
+  }
+  // Nav items
+  ul li.nav-link {
+    display: block;
+    text-align: right;
+    width: 100%;
+    padding: 0.25em 0;
+    @include media ($tablet) {
+      background: transparent;
+      display: inline;
+      text-decoration: none;
+      width: auto;
+    }
+  }
+  li.nav-link {
+  	a {
+	    display: inline-block;
+	    @include media ($tablet) {
+	      padding-right: 1.5em;
+	    }
+	  }
+	  &:last-child a {
+	  	@include media ($tablet) {
+    		padding-right: 1em;
+    	}
+    }
+  }
+}
+
+/*
+*	Body
+*/
+.page-content {
+	.wrapper {
+		@include outer-container;
+		padding: 1em;
+	}
+	/*
+	*	index.html
+	*/
+	.post-list {
+		padding-top: 1em !important;
+		@extend %default-ul;
+	}
+	.post-meta {
+		@include outer-container;
+		// padding: 1em 0;
+		color: $medium-gray;
+		.post-date {
+			@include span-columns(6);
+			text-align: left;
+			font-size: 0.9em;
+		}
+		.post-categories {
+			@include span-columns(6);
+			margin-right: 0;
+			text-align: right;
+			font-size: 0.9em;
+		}
+	}
+	.pagination {
+		padding-top: 2em;
+		text-align: center;
+		color: $medium-gray;
+		.page-number {
+			padding: 0 1em;
+		}
+    a.newer-posts {
+      text-decoration: none;
+    }
+	}
+	.site-header-container {
+		color: $white;
+		text-shadow: 0 2px 1px rgba(0,0,0,0.33);
+		background-color: $highlight-color;
+		.site-header{
+			.title {
+				font-size: modular-scale(6);
+			}
+			.subtitle {
+				font-style: italic;
+				font-size: modular-scale(1);
+			}
+		}
+	}
+	img {
+		display: block;
+		margin: auto;
+		width: 90%;
+	}
+	/*
+	*	Posts
+	*/
+	.post {
+		ul {
+			margin-bottom: 1em;
+		}
+		.post-header-container {
+			.scrim {
+				padding: 2em 1em 1em 1em;
+			}
+		}
+		.post-meta {
+			padding-bottom: 1em;
+		}
+		.post-content {
+			padding: 1em 0;
+		}
+		.tags {
+			font-size: 0.9em;
+		}
+		.rss {
+			margin: 1em 0 0 0;
+			@include span-columns(12);
+			@include media ($tablet) {
+				margin: 1em 0;
+				@include span-columns(6);
+			}
+		}
+		.share {
+			font-weight: bold;
+			margin: 0 0 1em 0;
+			@include span-columns(12);
+			@include media ($tablet) {
+				@include span-columns(6);
+				margin: 1em 0;
+				text-align: right;
+			}
+			a {
+				width: 1em;
+				padding: 0 0.25em;
+				text-decoration: none;
+			}
+		}
+		.disqus {
+			@include span-columns(12);
+		}
+		.post-navigation {
+			font-size: 0.9em;
+			display: block;
+			width: auto;
+			.prev-post {
+				display: block;
+				width: 50%;
+				float: left;
+				margin: 1em 0;
+			}
+			.next-post {
+				display: block;
+				width: 50%;
+				float: left;
+				margin: 1em 0;
+				text-align: right;
+			}
+		}
+	}
+	/*
+	*	Pages
+	*/
+	.page {
+		.post-header {
+			padding: 0.5em 1em 1em 1em;
+			text-align: center;
+		}
+		.posts-list {
+			@extend %default-ul;
+			li {
+				padding: modular-scale(-4);
+				padding-left: 0;
+			}
+			.desc {
+				font-size: 0.9em;
+			}
+			.post-date {
+				color: $medium-gray;
+			}
+		}
+		.profile {
+			max-width: 320px;
+			margin: auto;
+			padding-bottom: 0.5em;
+ 		}
+	}
+}
+
+/*
+*	Footer
+*/
+.site-footer {
+	$link-color: $white;
+	padding: 1em 1em 2em 1em;
+	background-color: $highlight-color;
+	color: $white;
+	a {
+	  color: $link-color;
+	  &:active,
+	  &:focus,
+	  &:hover {
+	    color: darken($link-color, 10%);
+	  }
+	  &:active,
+	  &:focus {
+	    outline: none;
+	  }
+	}
+	.wrapper {
+		@include outer-container;
+	}
+	.footer-heading {
+
+	}
+	/*
+	*	Site Navigation (left)
+	*/
+	.site-navigation {
+		@include span-columns(12);
+		@include media ($mobile) {
+			@include span-columns(6);
+		}
+		@include media ($tablet) {
+			@include span-columns(4);
+		}
+		font-size: 0.9em;
+		ul {
+			@extend %default-ul;
+		}
+	}
+	/*
+	*	Contact Info (center)
+	*/
+	.site-contact {
+		margin-top: 1em;
+		@include span-columns(12);
+		@include media ($mobile) {
+			@include span-columns(6);
+			margin-top: 0;
+			margin-right: 0;
+		}
+		@include media ($tablet) {
+			@include span-columns(4);
+			margin-top: 0;
+		}
+		font-size: 0.9em;
+		i {
+			width: 1.25em;
+			text-align: center;
+		}
+		ul {
+			@extend %default-ul;
+		}
+	}
+	/*
+	*	Site Description/Signature (right)
+	*/
+	.site-signature {
+		margin-top: 1em;
+		@include span-columns(12);
+		@include media ($tablet) {
+			@include span-columns(4);
+			margin-right: 0;
+			margin-top: 0;
+		}
+		font-size: 0.9em;
+		a {
+			text-decoration: underline;
+		}
+	}
+}
