@@ -75,3 +75,9 @@ exclude:
     - LICENSE
     - README.md
     - CNAME
+
+defaults:
+  - scope:
+      path: "_posts/img"
+    values:
+      image: true
