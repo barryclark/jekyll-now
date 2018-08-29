@@ -78,6 +78,6 @@ exclude:
 
 defaults:
   - scope:
-      path: "_posts/img"
+      path: "/_posts/img"
     values:
       image: true
