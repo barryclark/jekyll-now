@@ -8,7 +8,7 @@ categories: Education Data
 
 #### Students are leaving public schools because they have better charter options.
 
-I hope to eventually explore the two clickbait claims above. The primary purpose of this blog is to address them, get in touch if this interests you. 
+I hope to eventually explore the two clickbait claims above. The primary purpose of this enrollment project is to address them, get in touch if this interests you. [Source code is available on github](https://github.com/evanrushton/enrollmentCA) 
 
 This post outlines my process to explore California enrollment data starting from the raw form on the web. 
   
@@ -100,11 +100,11 @@ The first thing to notice is that enrollments seem to be decreasing in many area
 
 In California, a child must be five years old BEFORE September 1 in order to enroll in kindergarten. Elementary school is kindergarten through 5th grade (ages 5-10), middle school is grades 6-8 (ages 11-13), and high school is grades 9-12 (ages 14-18). I will use these figures copied from a [Stanford resource](https://cardinalatwork.stanford.edu/benefits-rewards/worklife/children-family/school-age-resources) to define school-aged children and pull that data from Census resources.
 
-I want to understand locations where enrollment is trending down or trending up
+To understand locations where enrollment is trending down or trending up we can create a trending score feature.
 
-I want to identify schools with high diversity entropy and low diversity entropy
+To identify schools with high diversity entropy and low diversity entropy we can create a diversity entropy score feature.
 
-I want to identify schools with high class entropy and low class entropy
+To identify schools with high class entropy and low class entropy we can create a class entropy score feature.
 
 Who gets pushed out of schools? Opportunity transfers, expulsions, suspension rates ...
 
