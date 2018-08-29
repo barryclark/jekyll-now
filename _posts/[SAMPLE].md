@@ -7,16 +7,17 @@ categories: "Dummy"
 tags: "ipsum"
 cover:  "/assets/instacode.png"
 ---
+
 【이미지 등록방법】
 「기본」
 
-![title](/_posts/img/myComputer.jpg)
+![title](/assets/post_img/myComputer.jpg)
 
 assdf
 
 「리사이즈」
 
-![title](/_posts/img/myComputer.jpg){: width="100" height="100"}
+![title](/assets/post_img/myComputer.jpg){: width="100px" height="100px"}
 
 【code】
 
