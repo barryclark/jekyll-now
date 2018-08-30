@@ -18,7 +18,7 @@ Birthday: 29-10-2002
  
 　■ 　 Instagram:　 [instagram.com/quocthang_](https://instagram.com/quocthang_)
  
-　■ 　 Twitter: 　 　 [twitter.com/quocthang_](https://instagram.com/quocthang_)
+　■ 　 Twitter: 　 　 [twitter.com/quocthang_](https://twitter.com/quocthang_)
  
 　■ 　 Github: 　 　 [github.com/gnahtcouq](https://github.com/gnahtcouq)
  
