@@ -71,6 +71,7 @@ $ GENDER   : Factor w/ 2 levels "F","M": 1 2 1 2 2 1 2 1 2 1 ...
 
 All of the data contains a CDS_CODE that is a unique identifier for County, District, School. This is ideal for linking data across tables. Notice that school enrollment is seperated across ethnicity, gender, and grade. Therefore, for any given school we can get a breakdown of the student population across these factors. For example, Benjamin Franklin High School (where I taught) has the following:
 
+![Race!=Ethnicity](/images/latin@.jpg)
 1617                    0809                  9798
 
 (insert enrollment count for ethnicity by grade and gender by grade)
