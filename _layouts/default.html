@@ -15,6 +15,7 @@
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
   </head>
 
+
   <body>
     <div class="wrapper-masthead">
       <div class="container">
@@ -38,6 +39,10 @@
       {{ content }}
     </div>
 
+    <div id="googleAd">
+       {% include adsense_bottom.html %}
+    </div>
+
     <div class="wrapper-footer">
       <div class="container">
         <footer class="footer">
@@ -45,7 +50,7 @@
         </footer>
       </div>
     </div>
-
+    
     {% include analytics.html %}
   </body>
 </html>
