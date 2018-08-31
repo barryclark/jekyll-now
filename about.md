@@ -19,4 +19,4 @@ permalink: /about/
 
 ### Contact me
 
-[thegame533@naver.com](mailto:thegame533@naver.com
+[thegame533@naver.com](mailto:thegame533@naver.com)
