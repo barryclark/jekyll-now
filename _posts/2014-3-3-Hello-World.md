@@ -1,9 +1,11 @@
 ---
 layout: post
-title: You're up and running!
+title: My Idea is Heretic!
 ---
 
-Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
+My Program Studing is Univ 4Grade that's Very Slowly!!!
+
+So I Think I'm Heresy!
 
 ![_config.yml]({{ site.baseurl }}/images/config.png)
 
