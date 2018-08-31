@@ -75,7 +75,7 @@ All of the data contains a CDS_CODE that is a unique identifier for County, Dist
 <img src="/images/benFranklinEnrollmentbyGradeEthnicGender8687.png" alt="8687" style="width: 50%; height: 50%;"/>
 <img src="/images/benFranklinEnrollmentbyGradeEthnicGender9697.png" alt="8687" style="width: 50%; height: 50%;"/>
 <img src="/images/benFranklinEnrollmentbyGradeEthnicGender0607.png" alt="8687" style="width: 50%; height: 50%;"/>
-<img src="/images/benFranklinEnrollmentbyGradeEthnicGender1617.png" alt="8687" style="width: 50%; height: 43%;"/>
+<img src="/images/benFranklinEnrollmentbyGradeEthnicGender1617.png" alt="8687" style="width: 50%; height: 250.33px;"/>
 </div>
 
 # Cleaning<a name="clean"></a>
