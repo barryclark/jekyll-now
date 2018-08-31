@@ -84,7 +84,7 @@ Diaphora has provided us with information regarding what has changed. If we furt
 Further inspection of the changes that have been made in these files indicate to us that there are some changes in structure and better practices such as changing a direct location access to an offset + a value, but doesn’t provide any information on how the structure of the file has changed in the program. However, looking at the red shaded function block we can see that assembly instructions have changed which could indicate to us if there was a problem with a memory access or a boundary check.
 ![Diaphora Results Extended](/images/diffing/diaphora_results_two.png "Diaphora Results Extended")
 
-#Function 22418
+# Function 22418
 The changes in Function 22418 from the previously file (left side) and the patched version (right side) are slight but significant. Looking at the code it indicates that the there are changes within the way an if statement is structure.
 
 ![Function 22418](/images/diffing/function22418.png "Function 22418")
