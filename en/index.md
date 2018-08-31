@@ -39,38 +39,7 @@ Come to one of our meetups in [Athens](https://www.meetup.com/BlockchainGreece-0
 - <strike>At the [BTCGreece](https://www.btcgreece.com) exchange that accepts transfers at their Greek bank accounts.</strike>
 - From a private Bitcoin trader you can find on [Localbitcoins](https://localbitcoins.com/) or at the[BitcoinTalk forum](https://bitcointalk.org/index.php?board=136.0). You can exchange Euros with them using any method you want, e.g. in person, via Paypal, Western Union, Piraeus Bank Instant Cash (Lefta Sto Lepto), bank transfer etc.
 - From the [BCash](https://bcash.gr/) Bitcoin exchange via deposit at a Greek bank. They sell up to €5000 of Bitcoin per person per day and charge a 9% fee.
-- <strike>From the Chip-Chap Bitcoin exchange that accepts cash at the EasyPay Piraeus Bank machines or via a deposit at their Piraeus Bank account. They charge 5% over the Kraken exchange rate at the time of purchase, that can be a few hours after your deposit. Here are some sample instructions:</strike>
-
-	Use use the Chip-Chap Android app or we visit [https://web.chip-chap.com](https://web.chip-chap.com/) and select EasyPay. At this time the iOS app does not support EasyPay. Alternatively we can access the same service via [https://trade.holytransaction.com](https://trade.holytransaction.com).
-
-	![](/images/Page 1.png)
-
-	We enter our Bitcoin address that we want to receive the Bitcoin at. We should have generated this address in our existing Bitcoin wallet already (for a list of wallets consult [https://bitcoin.org/en/choose-your-wallet](https://bitcoin.org/en/choose-your-wallet)). On Chip-Chap we create an account with an email and password. Chip-Chap will use this address to email us a receipt and the reference code we must use in our bank deposit. Chip-Chap asks us to select a deposit amount between €10 and €500.
-
-	![](/images/Page 2.png)
-
-	At the next screen Chip-Chap tells us that we can now proceed to deposit the Euro amount at a Piraeus Bank account with a reference code that is unique to this transaction. We can deposit cash at an EasyPay Piraeus Bank machine or transfer the money from another bank, including from banks in Greece:
-
-	![](/images/Page 3.png)
-
-	If we want to transfer the money from a Bank, we convert this bank account number to an IBAN format:
-
-	![](/images/Page 4.png)
-
-	![](/images/Page 5.png)
-
-	Here is what the transfer looks like from another Greek Bank:
-
-	![](/images/Page 6.png)
-
-	A few hours after we deposit the money we will receive Bitcoin in our wallet:
-
-	![](/images/Page 7.jpg)
-
-	Sample receipt from Chip-Chap:
-
-	![](/images/Page 8.png)
-	
+- <strike>From the Chip-Chap Bitcoin exchange that accepts cash at the EasyPay Piraeus Bank machines.</strike>
 
 ### <a name="projects"></a> What cryptocurrency and blockchain projects are there in Greece and Cyprus?
 
