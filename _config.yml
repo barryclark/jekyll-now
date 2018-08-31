@@ -9,7 +9,7 @@ name: 김용욱 (Kim YongUk, 金庸旭)
 description: 웹 개발자, 공부해서 웹 디자이너도 되어보자
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: ![_config.yml]({{logon)}}/images/logon.jpg)
+avatar: ![_config.yml]({{master)}}/images/logon.jpg)
 
 #
 # Flags below are optional
