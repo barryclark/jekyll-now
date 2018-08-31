@@ -7,7 +7,7 @@ How can we time signals to account for all modes of transportation?
 
 *Jaywalking is generally against the law wherever you live. It is also dangerous and you should cross streets only at marked crosswalks.*
 
-## The mid-block crossings
+## The Mid-Block Crossings
 
 ![config.yml]({{site.baseurl}}/images/the_drag.jpg)
 *Guadalupe Street*
@@ -33,7 +33,7 @@ The leading pedestrian phase helps pedestrians cross Guadalupe safely and it sho
 *Volumes at Guadalupe and 24th st from the Guadalupe Street Corridor and West Campus Development Report*
 
 
-## How do we measure signal re-timing?
+## How do We Measure Signal Re-Timing?
 
 Signal timing for pedestrian progression is usually not considered when engineers decide to time a corridor. Many authorities use a simple level of service metric to determine how best to time signals. This level of service only considers vehicle delay and doesn't consider pedestrian, transit, or cyclist delay.  Cities, like Austin, report improvements in travel time for cars only when engineers re-time signals. This travel time usually only considers the corridor as a whole, and this metric can actually incentivize increases in travel times for side streets, pedestrians, and transit. 
 
@@ -43,7 +43,7 @@ I don't believe a 13% variability on travel time is unreasonable, nor do I belie
 
 The reduction in delay and increase in safety for pedestrians due to the leading pedestrian phase is currently not being accounted for in a corridor travel time based metric. 
 
-## The future
+## The Future
 
 As changes to Guadalupe begin to move ahead, we should think about how we will measure the impacts. Is a successful project one that empathizes "person throughput" or one that will continue to measure the movement of cars?
 
