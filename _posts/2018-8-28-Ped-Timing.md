@@ -12,12 +12,12 @@ How can we time signals to account for all modes of transportation?
 ![config.yml]({{site.baseurl}}/images/the_drag.jpg)
 *Guadalupe Street*
 
-Guadalupe street is a 4 lane arterial that also serves as the dividing line between the University of Texas and student neighborhoods in West Campus. I live here, and I frequently walk along the scorching sidewalks on my way to class. During my last semester when I would walk to my 9AM classes I noticed that many pedestrians did not wait at the traffic signals to cross the street. Many simply walked along the sidewalks and waited for the gap in traffic to cross the street. Some might call this time saving act jaywalking. 
+Guadalupe street is a 4 lane arterial that also serves as the dividing line between the University of Texas and student neighborhoods in West Campus. I live here, and I frequently walk along the scorching sidewalks on my way to class. During my last semester when I would walk to my 9AM classes, I noticed that many pedestrians did not wait at the traffic signals to cross the street. Many simply walked along the sidewalks and waited for the gap in traffic to cross the street. Some might call this time saving act jaywalking. 
 
 However, I noticed that the signal timing along Guadalupe (from 21st to Dean Keaton) seemed to be perfect for jaywalkers. Gaps in traffic would form and pedestrians could cross the street in a comfortable period of time. 
 
 The gaps where no vehicles are traveling down Guadalupe form for a number of reasons:
-- The leading pedestrian phase for crossings of Guadalupe which lasts for roughly 8 seconds shows red in all directions and allows pedestrians to occupy the crosswalk before turning traffic begins. This protects pedestrians in the crosswalk and also prevents vehicles from turning down Guadalupe when the turning traffic has the green light. This is consistent at the Dean Keaton, 24th, 22nd and 21st intersections. 
+- The leading pedestrian phase for crossings of Guadalupe, which lasts for roughly 8 seconds, shows red in all directions and allows pedestrians to occupy the crosswalk before turning traffic begins. This protects pedestrians in the crosswalk and also prevents vehicles from turning down Guadalupe when the turning traffic has the green light. This is consistent at the Dean Keaton, 24th, 22nd and 21st intersections. 
 - Most side streets cannot turn right on red which also includes the leading pedestrian phase as mentioned earlier.
 - In the morning, the traffic generally clears the signals and few queues develop traveling north or south. This leaves only a few cars and buses waiting mid-block. 
 
