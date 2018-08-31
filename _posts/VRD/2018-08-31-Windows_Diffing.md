@@ -45,6 +45,7 @@ Patched version - [Microsoft New Security Update](http://www.catalog.update.micr
 Once we have these files we can then being to unpack and extract them with the expand.exe tool.
 
 Expanding the .msu file first, with the command expand.exe -F:* <filename> <destination>, which then provides us with four new files.
+
 ![Expand MSU](/images/diffing/expand_msu.png "Expanding MSU file")
 
 Next we do the same but for the .cab file which gives us 66 new files.
