@@ -27,7 +27,7 @@ The time to cross the street, parked vehicles, and the lack of curb cuts along t
 
 [According to the Guadalupe street corridor plan commissioned by the City of Austin,](http://austintexas.gov/sites/default/files/files/Transportation/20171121_Guadalupe_Street_Corridor_FINAL_Report.pdf) the pedestrian volumes at the 24th street intersection greatly outnumber car volumes traveling east or west during both the PM and AM peak.
 
-The leading pedestrian phase helps pedestrians cross Guadalupe safely and it should be recognized. We should also recognize that this safety improvement protects those in the crosswalk and those choosing not to use it. 
+The leading pedestrian phase helps pedestrians cross Guadalupe safely, and it should be recognized. We should also recognize that this safety improvement protects those in the crosswalk and those choosing not to use it. 
 
 ![config.yml]({{site.baseurl}}/images/volumes.png)
 *Volumes at Guadalupe and 24th st from the Guadalupe Street Corridor and West Campus Development Report*
