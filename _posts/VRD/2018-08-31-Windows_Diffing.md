@@ -85,10 +85,12 @@ Further inspection of the changes that have been made in these files indicate to
 
 #Function 22418
 The changes in Function 22418 from the previously file (left side) and the patched version (right side) are slight but significant. Looking at the code it indicates that the there are changes within the way an if statement is structure.
+
 ![Function 22418](/images/diffing/function22418.png "Function 22418")
 
 The LEA command in a pseudo instruction is that of getting the address value of Array[Index]. It is then doing an operation, in this case adding the value of rdx with 10H (16decimal) and then storing it. Next it is taking the computational value of the LEA command and then comparing it to that of rbx. This indicates that rbx holds a fixed amount of space such as the MAX_SIZE of the array, and that the possibility of jumping above rbx through the use of addition indicates that this vulnerability which was patched was an integer overflow through the unsanitized LEA command.
-![Function 22418](/images/diffing/function22418_two.png.png "Function 224182")
+
+![Function 22418](/images/diffing/function22418_two.png "Function 224182")
 
 The solution that has been implemented by Microsoft is that the function now does the comparison of the data that is in RAX and the value that was in RDX and compares them. If the value in rax is less than rdx it will jump to another comparison. If the value in rax is a negative or NULL value it will always return true making it always jump to the next function. The second comparison then compares the value of rax to the value stored in r9 which if the value in rax is above it will jump true. If, however it is not true then it will exit the module. The purpose of comparison two is to provide a method to check and prevent a pointer dereference. 
 
