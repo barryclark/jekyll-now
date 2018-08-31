@@ -5,7 +5,7 @@ category: VRD
 ---
 
 # Introduction
-The blog post is the process in which vulnerabilities can be identified through file diffing. Within this blog post, the vulnerability CVE-2016-7256 also referred to as ms16-132, will be reviewed via the patched version, atmfd.dll Version 5.2.1.250 and the vulnerable version, atmfd.dll Version 5.2.1.248. A potential test case will be created to demonstrate a windows hang through the adapting an open type font to be used within a virtual machine that uses the vulnerable security patch.
+The blog post is the process in which vulnerabilities can be identified through file diffing (this post is written from something I wrote during 2017). Within this blog post, the vulnerability CVE-2016-7256 also referred to as ms16-132, will be reviewed via the patched version, atmfd.dll Version 5.2.1.250 and the vulnerable version, atmfd.dll Version 5.2.1.248. A potential test case will be created to demonstrate a windows hang through the adapting an open type font to be used within a virtual machine that uses the vulnerable security patch.
 
 # Overview of CVE-2016-7256
 CVE-2016-7256 is a vulnerability that has been found within the atmfd.dll file which is in the font library within the Windows Operating System. The vulnerability effects the following operating systems [SecurityFocus1](http://www.securityfocus.com/bid/94156):
@@ -91,9 +91,10 @@ The LEA command in a pseudo instruction is that of getting the address value of 
 ![Function 22418](/images/diffing/function22418_two.png.png "Function 224182")
 
 The solution that has been implemented by Microsoft is that the function now does the comparison of the data that is in RAX and the value that was in RDX and compares them. If the value in rax is less than rdx it will jump to another comparison. If the value in rax is a negative or NULL value it will always return true making it always jump to the next function. The second comparison then compares the value of rax to the value stored in r9 which if the value in rax is above it will jump true. If, however it is not true then it will exit the module. The purpose of comparison two is to provide a method to check and prevent a pointer dereference. 
+
 ![Function 22418](/images/diffing/function22418_three.png "Function 224183")
 
-#Potential Exploits through the vulnerability
+# Potential Exploits through the vulnerability
 The vulnerability may be exploited by changing the address in which the font file is loaded to. This will trigger the vulnerability and either cause a crash or load the shellcode into the next address space.
 
 Writing an exploit that will trigger this vulnerability will require a test case which causes a crash. As we can see that the vulnerability causes an overflow with information that is supplied by a user, which would indicate that the first step is to create a font with a large font name and description.
