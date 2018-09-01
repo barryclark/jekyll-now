@@ -133,9 +133,9 @@ The biggest disproportions are apparent in whiter, more affluent neighborhood cl
 
 ![](https://raw.githubusercontent.com/GWarrenn/gwarrenn.github.io/drafts/images/stop_and_frisk/change_in_sf.png)
 
-Across DC, the yearly count of stop and frisk incidents rose xx% from 2010 to 2017, but these changes were not evenly divided among the city's neighborhoods. The more racially diverse DC neighborhoods, which are also the neighborhoods most rapidly gentrifying, saw the greatest increases in stop and frisk. Stop and frisk rose, on average, over 200% in neighborhoods comprised of 40-60% residents of color from 2010 to 2017. Neighborhoods with 60-90% residents of color also saw substantial increases in stop and frisk. Also of note, while neighborhoods with 90-100% residents of color had the highest levels of stop and frisk, the level of stop and frisk remained relatively stable from 2010 to 2017. 
+Across DC, the yearly count of stop and frisk incidents rose 42% from 2010 to 2017, but these changes were not evenly divided among the city's neighborhoods. The more racially diverse DC neighborhoods, which are also the neighborhoods most rapidly gentrifying, saw the greatest increases in stop and frisk. Stop and frisk rose, on average, over 200% in neighborhoods comprised of 40-60% residents of color, which includes the rapidly gentrifying neighborhoods of Shaw, Logan Circle, COlumbia Heights, and Park View, from 2010 to 2017. Neighborhoods with 60-90% residents of color also saw substantial increases in stop and frisk. Also of note, while neighborhoods with 90-100% residents of color had the highest levels of stop and frisk, the level of stop and frisk remained relatively stable from 2010 to 2017. 
 
-Finnally, the table below lists the actual numbers compared to the census 2010 proportions for each neighborhood in a more searchable and accessible format for finding patterns by race within neighborhoods.
+Finally, the table below lists the actual numbers compared to the census 2010 proportions for each neighborhood in a more searchable and accessible format for finding patterns by race within neighborhoods.
 
 <iframe src="https://gwarrenn.shinyapps.io/stop_frisk_neighborhood_summary/" style="border:none;width:1000px;height:500px;"></iframe>
 <br>
