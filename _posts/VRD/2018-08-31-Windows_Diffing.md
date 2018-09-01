@@ -34,7 +34,7 @@ CVE-2016-7256 is a vulnerability that has been found within the atmfd.dll file w
 The list spans a significant amount of operating systems within the Windows domain and in such is labelled as a significant danger to a Windows eco system. The security vulnerability is rated as 9.3 which signifies an extremely high risk to the operating system. It is rated as such, due to the security vulnerability being able to carry out Remote Code Execution. Further to this, a failed exploitation of this bug lead to a [Denial of Service](http://www.securityfocus.com/bid/94156/discuss) conditions. 
 
 # Technical Breakdown of CVE-2016-7256
-The security vulnerability CVE-2016-7256 is a vulnerability with the atmfd.dll which is a kernel font driver. The latest version of atmfd.dll is version 5.1.2.250, while the previous version of atmfd.dll is 5.1.2.248.
+The security vulnerability CVE-2016-7256 is a vulnerability with the atmfd.dll, which is a kernel font driver. The patched version of atmfd.dll is version 5.1.2.250, while the vulnerable version of atmfd.dll is 5.1.2.248.
 
 To confirm that the changes have been made to atmfd.dll we can download the Microsoft Security Update files (.msu and .cab) . 
 
@@ -42,7 +42,7 @@ To get both DLL files together, we can download the previous and patched dll fil
 Vulnerable - [Microsoft Old Security Patch](https://www.microsoft.com/en-us/download/confirmation.aspx?id=52868), 
 Patched version - [Microsoft New Security Update](http://www.catalog.update.microsoft.com/Search.aspx?q=3203859). 
 
-Microsoft supply us the means to decompile such files through the [expand.exe](https://msdn.microsoft.com/en-us/library/dn898569.aspx) tool. Running the tool we can unpack and extract all the contents of this update and then search the general distribution files for what has been changed.
+Microsoft supplies us the means to decompile such files through the [expand.exe](https://msdn.microsoft.com/en-us/library/dn898569.aspx) tool. Running the tool we can unpack and extract all the contents of this update and then search the general distribution files for what has been changed.
 
 Expanding the .msu file first, with the command expand.exe -F:* <filename> <destination>, which then provides us with four new files.
 
