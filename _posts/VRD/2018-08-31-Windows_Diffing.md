@@ -8,7 +8,7 @@ category: VRD
 The blog post is the process in which vulnerabilities can be identified through file diffing (this post is written from something I wrote during 2017). Within this blog post, the vulnerability CVE-2016-7256 also referred to as ms16-132, will be reviewed via the patched version, atmfd.dll Version 5.2.1.250 and the vulnerable version, atmfd.dll Version 5.2.1.248. A potential test case will be created to demonstrate a windows hang through the adapting an open type font to be used within a virtual machine that uses the vulnerable security patch.
 
 # Overview of CVE-2016-7256
-CVE-2016-7256 is a vulnerability that has been found within the atmfd.dll file which is in the font library within the Windows Operating System. The vulnerability effects the following operating systems [SecurityFocus](http://www.securityfocus.com/bid/94156):
+CVE-2016-7256 is a vulnerability that has been found within the atmfd.dll file which is in the font library within the Windows Operating System. The vulnerability effects the following [operating systems](http://www.securityfocus.com/bid/94156):
 * Microsoft Windows Vista x64 Edition Service Pack 2
 * Microsoft Windows Vista Service Pack 2
 * Microsoft Windows Server 2016 for x64
@@ -31,18 +31,18 @@ CVE-2016-7256 is a vulnerability that has been found within the atmfd.dll file w
 * Microsoft Windows 10 for x64 
 * Microsoft Windows 10 for 32-bit
 
-The list spans a significant amount of operating systems within the Windows domain and in such is labelled as a significant danger to a Windows eco system. The security vulnerability is rated as 9.3 which signifies an extremely high risk to the operating system. It is rated as such, due to the security vulnerability being able to carry out Remote Code Execution. Further to this, a failed exploitation of this bug lead to a Denial of Service conditions [SecurityFocus](http://www.securityfocus.com/bid/94156/discuss). 
+The list spans a significant amount of operating systems within the Windows domain and in such is labelled as a significant danger to a Windows eco system. The security vulnerability is rated as 9.3 which signifies an extremely high risk to the operating system. It is rated as such, due to the security vulnerability being able to carry out Remote Code Execution. Further to this, a failed exploitation of this bug lead to a [Denial of Service](http://www.securityfocus.com/bid/94156/discuss) conditions. 
 
 # Technical Breakdown of CVE-2016-7256
-The security vulnerability CVE-2016-7256 is a vulnerability with the atmfd.dll. The atmfd.dll is a dll file but also acts as a kernel font driver. This font driver was created by Adobe and is part of the Adobe Type Manager. The latest version of atmfd.dll is version 5.1.2.250, further research shows that the previous version of this file is 5.1.2.248.
+The security vulnerability CVE-2016-7256 is a vulnerability with the atmfd.dll which is a kernel font driver. The latest version of atmfd.dll is version 5.1.2.250, while the previous version of atmfd.dll is 5.1.2.248.
 
-To confirm that the changes have been made to atmfd.dll we can download the Microsoft Security Update .msu and .cab files. Using the [expand.exe](https://msdn.microsoft.com/en-us/library/dn898569.aspx) tool we can unpack and extract all the contents of this update and then search the general distribution files for what has been changed.
+To confirm that the changes have been made to atmfd.dll we can download the Microsoft Security Update files (.msu and .cab) . 
 
 To get both DLL files together, we can download the previous and patched dll file. Each of which can be found at:
 Vulnerable - [Microsoft Old Security Patch](https://www.microsoft.com/en-us/download/confirmation.aspx?id=52868), 
 Patched version - [Microsoft New Security Update](http://www.catalog.update.microsoft.com/Search.aspx?q=3203859). 
 
-Once we have these files we can then being to unpack and extract them with the expand.exe tool.
+Microsoft supply us the means to decompile such files through the [expand.exe](https://msdn.microsoft.com/en-us/library/dn898569.aspx) tool. Running the tool we can unpack and extract all the contents of this update and then search the general distribution files for what has been changed.
 
 Expanding the .msu file first, with the command expand.exe -F:* <filename> <destination>, which then provides us with four new files.
 
@@ -54,7 +54,11 @@ Next we do the same but for the .cab file which gives us 66 new files.
 Repeating this process for the second DLL we should get both the 248 and 250 versions of our dll.
 
 ## Dumpbin
-[Dumpbin](https://msdn.microsoft.com/en-us/library/20y05bd5.aspx) is a tool which is also developed by Microsoft (how kind of them to provide everything we need) that displays information about COFF binary files. Dumpbin can provide us with some useful information when carrying out patch analysis in terms of what has been changed or altered, using the command dumpbin /headers atmfd.dll we get the results for both 248 and 250 file versions of the dll.
+[Dumpbin](https://msdn.microsoft.com/en-us/library/20y05bd5.aspx) is a tool which is also developed by Microsoft (how kind of them to provide everything we need) that displays information about COFF binary files. Dumpbin can provide us with some useful information when carrying out patch analysis in terms of what has been changed or altered, using the command:
+` 
+dumpbin /headers atmfd.dll 
+`
+we get the results for both 248 and 250 file versions of the dll.
 
 ### atmfd.dll Version 5.1.2.248
 Using the dumpbin tool we get confirmation that we are working with an x64 based DLL file that has no symbol table and that it is a recent version of the file based on the time stamp given by Microsoft, this coincides with both the security update MS16-074.
