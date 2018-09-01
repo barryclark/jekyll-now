@@ -36,7 +36,7 @@ The list spans a significant amount of operating systems within the Windows doma
 # Technical Breakdown of CVE-2016-7256
 The security vulnerability CVE-2016-7256 is a vulnerability with the atmfd.dll, which is a kernel font driver. The patched version of atmfd.dll is version 5.1.2.250, while the vulnerable version of atmfd.dll is 5.1.2.248.
 
-To confirm that the changes have been made to atmfd.dll we can download the Microsoft Security Update files (.msu and .cab) . 
+To confirm that the changes have been made to atmfd.dll we can download the Microsoft Security Update files (.msu and .cab). 
 
 To get both DLL files together, we can download the previous and patched dll file. Each of which can be found at:
 Vulnerable - [Microsoft Old Security Patch](https://www.microsoft.com/en-us/download/confirmation.aspx?id=52868), 
@@ -44,7 +44,11 @@ Patched version - [Microsoft New Security Update](http://www.catalog.update.micr
 
 Microsoft supplies us the means to decompile such files through the [expand.exe](https://msdn.microsoft.com/en-us/library/dn898569.aspx) tool. Running the tool we can unpack and extract all the contents of this update and then search the general distribution files for what has been changed.
 
-Expanding the .msu file first, with the command expand.exe -F:* <filename> <destination>, which then provides us with four new files.
+Expanding the .msu file first, with the command:
+~~~~
+ expand.exe -F:* <filename> <destination>
+~~~~
+This provides us with four new files.
 
 ![Expand MSU](/images/diffing/expand_msu.png "Expanding MSU file")
 
@@ -55,9 +59,9 @@ Repeating this process for the second DLL we should get both the 248 and 250 ver
 
 ## Dumpbin
 [Dumpbin](https://msdn.microsoft.com/en-us/library/20y05bd5.aspx) is a tool which is also developed by Microsoft (how kind of them to provide everything we need) that displays information about COFF binary files. Dumpbin can provide us with some useful information when carrying out patch analysis in terms of what has been changed or altered, using the command:
-` 
+~~~~
 dumpbin /headers atmfd.dll 
-`
+~~~~
 we get the results for both 248 and 250 file versions of the dll.
 
 ### atmfd.dll Version 5.1.2.248
