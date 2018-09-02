@@ -21,6 +21,8 @@ Thanks to Llewellyn Falco and Arlo Belshee who said the right things at the righ
 
 # The recipe.
 
+*Edit 2018-09-01* An updated version of this recipe is now available on GitHub, along with a growing catalog of provably-safe refactorings. You should go there instead.
+
 If you get to the end of step 1, the refactoring is possible - it will produce a valid result.
 
 This recipe only works on whole blocks (surrounded by braces) or a single `for`/`while`/`if` statement. Consider using Introduce Block to get braces around the code you want to extract.
