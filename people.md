@@ -32,13 +32,6 @@ permalink: /people/
 * Masters Student, Department of Neurobiology and Behavior, Stony Brook University
 
 {: .person-name }
-## Kathleen Esfahany
-![Kathleen Esfahany](/images/kathleen.jpg){: .profile-photo }
-
-* Ward Melville High School
-* Simons Summer Research Program (2017 summer)
-
-{: .person-name }
 ## Josue Nassar
 ![Josue Nassar](/images/Josue.jpg){: .profile-photo }
 
@@ -56,10 +49,18 @@ permalink: /people/
 # Past members
 
 {: .person-name }
+## Kathleen Esfahany
+![Kathleen Esfahany](/images/kathleen.jpg){: .profile-photo }
+
+* Ward Melville High School
+* Simons Summer Research Program (2017 summer)
+* Intern Researcher (2017-2018)
+
+{: .person-name }
 ## David Hocker
 ![David Hocker](/images/Hocker.jpg){: .profile-photo }
 
-* Postdoctoral researcher, [Department of Neurobiology and Behavior (NBB)](https://medicine.stonybrookmedicine.edu/neurobiology), Stony Brook University (2016-current)
+* Postdoctoral researcher, [Department of Neurobiology and Behavior (NBB)](https://medicine.stonybrookmedicine.edu/neurobiology), Stony Brook University (2016-2017)
 
 {: .person-name }
 ## Isabel Siergiej
