@@ -30,5 +30,7 @@ System.out.printf("%?",?);
 그리고
 
 System.out.printf("A:%d, B:%d, C, D);
+
 라는 것이 있으면 A는 C고 B는 D다라는 의미가 내포되게 된다.
+
 왜 println이라는 좋은 것을 내버려두고 printf를 만들었는지는... 솔직히 모를거 같다.
