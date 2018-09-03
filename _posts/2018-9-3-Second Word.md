@@ -6,6 +6,7 @@ title: 두번 째
 System.out.printf("%?",?);
 이것이 악몽이었다.
 
+--------
 %b = boolean
 
 %d = decimal(10진수)
@@ -23,6 +24,8 @@ System.out.printf("%?",?);
 %s = string(문자열)
 
 이걸 다 외우라는 말과 함께 머리가 하얗게 되었었다.
+
+--------
 
 그리고
 
