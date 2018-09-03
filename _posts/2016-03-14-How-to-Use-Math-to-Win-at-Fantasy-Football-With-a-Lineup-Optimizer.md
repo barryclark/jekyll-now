@@ -72,7 +72,7 @@ which is nonsense, and thus that solution would not be feasible (called "infeasi
 
 # Running the Code
 
-Once you download the code and input file [(link)](http://www.github.com/srome/srome.github.io/files/nfl_optimizer) and install Gurobi [(link)](http://www.gurobi.com/academia/for-online-courses) , you can run update the projects in the player_input.csv. This is a csv with 4 columns and information on each player. For example, it could look like
+Once you download the code and input file [(link)](https://github.com/srome/srome.github.io/tree/master/files/nfl_optimizer) and install Gurobi [(link)](http://www.gurobi.com/academia/for-online-courses) , you can run update the projects in the player_input.csv. This is a csv with 4 columns and information on each player. For example, it could look like
 
 Name | Position | Salary | Points
 --- | --- | --- | ---
