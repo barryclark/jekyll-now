@@ -7,13 +7,21 @@ System.out.printf("%?",?);
 이것이 악몽이었다.
 
 %b = boolean
+
 %d = decimal(10진수)
+
 %o = octal(8진수)
+
 %x = hexa-decimal(16진수)
+
 %f = floating-point(부동소수점)
+
 %e = exponent(지수)
+
 %c = character(문자)
+
 %s = string(문자열)
+
 이걸 다 외우라는 말과 함께 머리가 하얗게 되었었다.
 
 그리고
