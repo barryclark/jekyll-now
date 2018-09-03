@@ -10,7 +10,6 @@ How can we time signals to account for all modes of transportation?
 ## The Mid-Block Crossings
 
 ![config.yml]({{site.baseurl}}/images/the_drag.jpg)
-*Guadalupe Street*
 
 Guadalupe street is a 4 lane arterial that also serves as the dividing line between the University of Texas and student neighborhoods in West Campus. I live here, and I frequently walk along the scorching sidewalks on my way to class. During my last semester when I would walk to my 9AM classes, I noticed that many pedestrians did not wait at the traffic signals to cross the street. Many simply walked along the sidewalks and waited for the gap in traffic to cross the street. Some might call this time saving act jaywalking. 
 
@@ -42,6 +41,8 @@ The signals along Guadalupe have a cycle length of roughly 2 minutes. The "walk"
 I don't believe a 13% variability on travel time is unreasonable, nor do I believe a 120 second cycle length is too long. I do believe we should measure and account for pedestrian delay at our intersections. We should reward our cities for decreasing delay or travel time for *all* users of a street. 
 
 The reduction in delay and increase in safety for pedestrians due to the leading pedestrian phase is currently not being accounted for in a corridor travel time based metric. 
+
+![config.yml]({{site.baseurl}}/images/west_mall.jpg)
 
 ## The Future
 
