@@ -2,8 +2,9 @@
 layout: post
 title: Extending the Gaussian Mixture Approach for Fantasy Football Tiering
 tags:
-- Machine Learning
-- Theory
+- Math
+- Sports
+- Practical
 summary: An extention to the Gaussian Mixture approach to tiering Players
 ---
 
