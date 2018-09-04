@@ -15,14 +15,23 @@ I came up with a list of ten Labor Day themed table topics that are hopefully no
 ## Labor Day Themed Table Topics
 
 1. What would life be like if no one had to work?
+
 2. If you could choose any career other than the one you are/were in, what career would you choose and why?
+
 3. Is a 40-hour work week too much, too little, or just right? Why?
+
 4. How long, in days or hours, would an ideal work week be? Why?
+
 5. What is the best place to retire?
+
 6. What is the ideal time or age to retire from the workforce?
+
 7. If you won a million dollars, would you show up to work the next day?
+
 8. If you won a million dollars, who would you tell? Who would you NOT tell?
+
 9. What was your first job and what was it like?
+
 10. What was the best (or worst) job you've ever had?
 
 ![American Flag](/images/american-flag.jpg)
