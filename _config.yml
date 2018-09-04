@@ -9,7 +9,7 @@ name: とある大学生の日常
 description: Web Developer from Somewhere
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://nomuroyale.github.io/images/job_programmer.jpg
+avatar: {{ site.baseurl }}/images/job_programmer.png
 #
 # Flags below are optional
 #
