@@ -6,10 +6,11 @@
 name: とある大学生の日常
 
 # Short bio or description (displayed in the header)
-description: 理系大学に通うアイドルオタク
+description: 
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: 
+avatar: https://4.bp.blogspot.com/-5IKv9G8yHHU/W1a5CbKXr_I/AAAAAAABNjg/GrDbXz22y7QStEnslcrBa9PZPvsACKMLQCLcBGAs/s800/niyakeru_takuramu_ayashii_woman.png
+
 #
 # Flags below are optional
 #
@@ -21,7 +22,7 @@ footer-links:
   facebook:
   flickr:
   github: 
-  instagram:
+  instagram: nomu_yoghurt
   linkedin:
   pinterest:
   rss: # just type anything here for a working RSS icon
