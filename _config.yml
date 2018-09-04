@@ -3,13 +3,13 @@
 #
 
 # Name of your site (displayed in the header)
-name: 野村さんの日記
+name: とある大学生の日常
 
 # Short bio or description (displayed in the header)
 description: Web Developer from Somewhere
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar:
+avatar:https://4.bp.blogspot.com/-ob-1f2ERlgc/WlGoZfUrZSI/AAAAAAABJjw/G6eK0M-9T10R5oXOaHqh-xkP7ELruHFBQCLcBGAs/s800/video_syazai_man.png
 
 #
 # Flags below are optional
@@ -37,11 +37,12 @@ footer-links:
 disqus:
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-google_analytics:
+google_analytics:UA-125192547-1
+
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
-url:
+url:https://nomuroyale.github.io
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
