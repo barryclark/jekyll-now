@@ -6,10 +6,10 @@
 name: とある大学生の日常
 
 # Short bio or description (displayed in the header)
-description: Web Developer from Somewhere
+description: 理系大学に通うアイドルオタク
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: {{ site.baseurl }}/images/job_programmer.png
+avatar: 
 #
 # Flags below are optional
 #
