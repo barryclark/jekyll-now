@@ -9,5 +9,3 @@ title: 初投稿
 日々の出来事や思考をまとめて記事にしていきます。  
   
 では、また。  
-
-![_config.yml]({{ site.baseurl }}/images/job_programmer.png)
