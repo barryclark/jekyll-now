@@ -184,16 +184,16 @@ This shows that, holding the amount of crime in a neighborhood constant, the cri
 <tr><td colspan="3" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">Number of reported crimes</td><td>0.096<sup>***</sup></td><td>0.108<sup>***</sup></td></tr>
 <tr><td style="text-align:left"></td><td>(0.008)</td><td>(0.008)</td></tr>
 <tr><td style="text-align:left"></td><td></td><td></td></tr>
-<tr><td style="text-align:left">Neighboorhood<br>Percent Black: 25% - 50%</td><td></td><td>-15.095</td></tr>
+<tr><td style="text-align:left">Neighborhood<br>Percent Black: 25% - 50%</td><td></td><td>-15.095</td></tr>
 <tr><td style="text-align:left"></td><td></td><td>(16.253)</td></tr>
 <tr><td style="text-align:left"></td><td></td><td></td></tr>
-<tr><td style="text-align:left">Neighboorhood<br>Percent Black: 50% - 75%</td><td></td><td>30.527<sup>**</sup></td></tr>
+<tr><td style="text-align:left">Neighborhood<br>Percent Black: 50% - 75%</td><td></td><td>30.527<sup>**</sup></td></tr>
 <tr><td style="text-align:left"></td><td></td><td>(14.260)</td></tr>
 <tr><td style="text-align:left"></td><td></td><td></td></tr>
-<tr><td style="text-align:left">Neighboorhood<br>Percent Black: 75% - 95%</td><td></td><td>30.584<sup>**</sup></td></tr>
+<tr><td style="text-align:left">Neighborhood<br>Percent Black: 75% - 95%</td><td></td><td>30.584<sup>**</sup></td></tr>
 <tr><td style="text-align:left"></td><td></td><td>(15.021)</td></tr>
 <tr><td style="text-align:left"></td><td></td><td></td></tr>
-<tr><td style="text-align:left">Neighboorhood<br>Percent Black: 95% - 100%</td><td></td><td>46.644<sup>***</sup></td></tr>
+<tr><td style="text-align:left">Neighborhood<br>Percent Black: 95% - 100%</td><td></td><td>46.644<sup>***</sup></td></tr>
 <tr><td style="text-align:left"></td><td></td><td>(11.971)</td></tr>
 <tr><td style="text-align:left"></td><td></td><td></td></tr>
 <tr><td style="text-align:left">Constant</td><td>0.317</td><td>-30.090<sup>***</sup></td></tr>
