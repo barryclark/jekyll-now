@@ -3,6 +3,7 @@ layout: post
 title: Python Itertools
 ---
 
+
 # Reference
 
 [python itertools](https://docs.python.org/2/library/itertools.html)
