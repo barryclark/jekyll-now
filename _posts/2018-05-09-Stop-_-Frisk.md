@@ -155,21 +155,21 @@ The regression shows a fairly similar overall relationship between crime and sto
 <details><summary><b>Click for an explanation of how the regression model output estimates 47 incidents</b></summary>
 <p>
 @@@ Update numbers
-$Total Stop and Frisk = (Prev. Year Crime * 0.102) + N$
+$Total Stop and Frisk = (Prev. Year Crime * 0.108) + N$
 
 So, if we're comparing a neighborhood with identical levels of crime in the previous year and starkly different racial compositions...
 
-Neighborhood 1: 10% - 40% resident of color & 1000 crimes in previous year
+Neighborhood 1: 0% - 25% black residents & 1000 crimes in previous year
 
-$Total Stop \& Frisk = (1000 * 0.102) + 0$
+$Total Stop \& Frisk = (1000 * 0.108) + 0$
 
-$Total Stop \& Frisk = 102$
+$Total Stop \& Frisk = 108$
 
-Neighborhood 2: 90% - 100% resident of color & 1000 crimes in previous year
+Neighborhood 2: 95% - 100% black residents & 1000 crimes in previous year
 
-$Total Stop \& Frisk = (1000 * 0.102) + 46.732$
+$Total Stop \& Frisk = (1000 * 0.108) + 46.644$
 
-$Total Stop \& Frisk = 148.72$
+$Total Stop \& Frisk = 154$
 
 This shows that, holding the amount of crime in a neighborhood constant, the crime & race model predicts that, on average, there are ~47 more incidents in neighborhoods with the highest concentrations of residents of color compared to the whiter neighborhoods of DC.
 
@@ -177,32 +177,34 @@ This shows that, holding the amount of crime in a neighborhood constant, the cri
 </details>
 <br>
 
-@@@
 <table style="text-align:center"><tr><td colspan="3" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"></td><td colspan="2"><em>Dependent variable:</em></td></tr>
 <tr><td></td><td colspan="2" style="border-bottom: 1px solid black"></td></tr>
 <tr><td style="text-align:left"></td><td colspan="2">Number of stops in subsequent year</td></tr>
 <tr><td style="text-align:left"></td><td>Crime-Only Model</td><td>Crime and Race Model</td></tr>
-<tr><td colspan="3" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:center">Number of reported crimes</td><td>0.095<sup>*** </sup><br>(0.008)</td><td>0.102<sup>*** </sup><br>(0.007)</td></tr>
+<tr><td colspan="3" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">Number of reported crimes</td><td>0.096<sup>***</sup></td><td>0.108<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.008)</td><td>(0.008)</td></tr>
 <tr><td style="text-align:left"></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Neighboorhood<br>Percent Black: 25% - 50%</td><td></td><td>-15.095</td></tr>
+<tr><td style="text-align:left"></td><td></td><td>(16.253)</td></tr>
 <tr><td style="text-align:left"></td><td></td><td></td></tr>
-<tr><td style="text-align:center">Neighborhood<br>Percent POC: 40% - 60%</td><td></td><td>-5.778<br>(15.275)</td></tr>
+<tr><td style="text-align:left">Neighboorhood<br>Percent Black: 50% - 75%</td><td></td><td>30.527<sup>**</sup></td></tr>
+<tr><td style="text-align:left"></td><td></td><td>(14.260)</td></tr>
 <tr><td style="text-align:left"></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Neighboorhood<br>Percent Black: 75% - 95%</td><td></td><td>30.584<sup>**</sup></td></tr>
+<tr><td style="text-align:left"></td><td></td><td>(15.021)</td></tr>
 <tr><td style="text-align:left"></td><td></td><td></td></tr>
-<tr><td style="text-align:center">Neighborhood<br>Percent POC: 60% - 90%</td><td></td><td>20.212<br>(12.689)</td></tr>
+<tr><td style="text-align:left">Neighboorhood<br>Percent Black: 95% - 100%</td><td></td><td>46.644<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td></td><td>(11.971)</td></tr>
 <tr><td style="text-align:left"></td><td></td><td></td></tr>
-<tr><td style="text-align:left"></td><td></td><td></td></tr>
-<tr><td style="text-align:center">Neighborhood<br>Percent POC: 90% - 100%</td><td></td><td>46.732<sup>*** </sup><br>(11.046)</td></tr>
-<tr><td style="text-align:left"></td><td></td><td></td></tr>
-<tr><td style="text-align:left"></td><td></td><td></td></tr>
-<tr><td style="text-align:center">Constant</td><td>0.419<br>(9.013)</td><td>-26.181<sup>** </sup><br>(9.596)</td></tr>
-<tr><td style="text-align:left"></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Constant</td><td>0.317</td><td>-30.090<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(9.255)</td><td>(10.070)</td></tr>
 <tr><td style="text-align:left"></td><td></td><td></td></tr>
 <tr><td colspan="3" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">Observations</td><td>39</td><td>39</td></tr>
-<tr><td style="text-align:left">R<sup>2</sup></td><td>0.803</td><td>0.885</td></tr>
-<tr><td style="text-align:left">Adjusted R<sup>2</sup></td><td>0.798</td><td>0.871</td></tr>
-<tr><td style="text-align:left">Residual Std. Error</td><td>33.425 (df = 37)</td><td>26.643 (df = 34)</td></tr>
-<tr><td style="text-align:left">F Statistic</td><td>150.666<sup>*** </sup> (df = 1; 37)</td><td>65.342<sup>*** </sup> (df = 4; 34)</td></tr>
-<tr><td colspan="3" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"><em>Note:</em></td><td colspan="2" style="text-align:right"><sup>* </sup>p<0.1; <sup>** </sup>p<0.05; <sup>*** </sup>p<0.01</td></tr>
+<tr><td style="text-align:left">R<sup>2</sup></td><td>0.796</td><td>0.885</td></tr>
+<tr><td style="text-align:left">Adjusted R<sup>2</sup></td><td>0.791</td><td>0.867</td></tr>
+<tr><td style="text-align:left">Residual Std. Error</td><td>34.323 (df = 37)</td><td>27.359 (df = 33)</td></tr>
+<tr><td style="text-align:left">F Statistic</td><td>144.733<sup>***</sup> (df = 1; 37)</td><td>50.605<sup>***</sup> (df = 5; 33)</td></tr>
+<tr><td colspan="3" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"><em>Note:</em></td><td colspan="2" style="text-align:right"><sup>*</sup>p<0.1; <sup>**</sup>p<0.05; <sup>***</sup>p<0.01</td></tr>
 </table>
 
 The Benefit (and lack thereof) of the Doubt: Person-level Crime and Stop and Frisk Relationship
@@ -219,29 +221,20 @@ Turning again to modeling, we can add the demographic crime data to the crime an
 <table style="text-align:center"><tr><td colspan="2" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"></td><td><em>Dependent variable:</em></td></tr>
 <tr><td></td><td colspan="1" style="border-bottom: 1px solid black"></td></tr>
 <tr><td style="text-align:left"></td><td>Stop and Frisk</td></tr>
-<tr><td colspan="2" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">Race: Black</td><td>1.375<sup>*** </sup></td></tr>
-<tr><td style="text-align:left"></td><td>(0.206)</td></tr>
+<tr><td colspan="2" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">Race: Black</td><td>1.363<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.204)</td></tr>
 <tr><td style="text-align:left"></td><td></td></tr>
-<tr><td style="text-align:left">Race: Hispanic/Latino</td><td>1.458<sup>*** </sup></td></tr>
-<tr><td style="text-align:left"></td><td>(0.245)</td></tr>
+<tr><td style="text-align:left">Race: Hispanic/Latino</td><td>1.411<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.240)</td></tr>
 <tr><td style="text-align:left"></td><td></td></tr>
-<tr><td style="text-align:left">Neighborhood Percent Black: 10% - 40%</td><td>-0.281<sup>* </sup></td></tr>
-<tr><td style="text-align:left"></td><td>(0.163)</td></tr>
+<tr><td style="text-align:left">Neighborhood<br>Percent of Black Residents</td><td>-0.007<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.001)</td></tr>
 <tr><td style="text-align:left"></td><td></td></tr>
-<tr><td style="text-align:left">Neighborhood Percent Black: 40% - 60%</td><td>-0.053</td></tr>
-<tr><td style="text-align:left"></td><td>(0.181)</td></tr>
+<tr><td style="text-align:left">Constant</td><td>-2.494<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.199)</td></tr>
 <tr><td style="text-align:left"></td><td></td></tr>
-<tr><td style="text-align:left">Neighborhood Percent Black: 60% - 80%</td><td>-0.380<sup>** </sup></td></tr>
-<tr><td style="text-align:left"></td><td>(0.172)</td></tr>
-<tr><td style="text-align:left"></td><td></td></tr>
-<tr><td style="text-align:left">Neighborhood Percent Black: 80% - 100%</td><td>-0.629<sup>*** </sup></td></tr>
-<tr><td style="text-align:left"></td><td>(0.159)</td></tr>
-<tr><td style="text-align:left"></td><td></td></tr>
-<tr><td style="text-align:left">Constant</td><td>-2.598<sup>*** </sup></td></tr>
-<tr><td style="text-align:left"></td><td>(0.220)</td></tr>
-<tr><td style="text-align:left"></td><td></td></tr>
-<tr><td colspan="2" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">Observations</td><td>93</td></tr>
-<tr><td colspan="2" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"><em>Note:</em></td><td style="text-align:right"><sup>* </sup>p<0.1; <sup>** </sup>p<0.05; <sup>*** </sup>p<0.01</td></tr>
+<tr><td colspan="2" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">Observations</td><td>91</td></tr>
+<tr><td colspan="2" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"><em>Note:</em></td><td style="text-align:right"><sup>*</sup>p<0.1; <sup>**</sup>p<0.05; <sup>***</sup>p<0.01</td></tr>
 </table>
 
 ![](https://raw.githubusercontent.com/GWarrenn/gwarrenn.github.io/drafts/images/stop_and_frisk/13_poisson_plot.png)
