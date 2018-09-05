@@ -246,7 +246,11 @@ Turning again to modeling, we can add the demographic crime data to the crime an
 
 ![](https://raw.githubusercontent.com/GWarrenn/gwarrenn.github.io/drafts/images/stop_and_frisk/13_poisson_plot.png)
 
-Following in the footsteps of Gelman et al., the chart above shows the number of times a stop was initiated against a member of a racial group per crimes committed by a member of that racial group for any neighborhood proportion of black residents. by neighborhood racial composition.
+Following in the footsteps of Gelman et al., the chart above shows the number of times a stop was initiated against a member of a racial group per reported crimes committed by a member of that racial group for any neighborhood proportion of black residents. Based on the rates of crime and stop and frisk in actual DC neighborhoods, the model estimates that in a hypothetical neighborhood with 25% black residents, a white resident would be stopped 0.07 times for every reported crime committed by a white person while a black resident would be stopped 0.27 times for every reported crime committed by a black resident. In this hypothetical neighborhood, a black resident would be stopped 3.9 times as often per reported crime committed by a black resident 
+
+0.28 hisp
+
+The regression shows a fairly similar overall relationship between crime and stop and frisk, but it also indicates there is a statistically significant difference between the amount of stop and frisk in neighborhoods with a majority of black residents. As the model and the plot both show, neighborhoods with a majority of black residents have greater stop and frisk rates than neighborhoods with the lowest proportion of black residents and a comparable level of crime. Specifically, neighborhoods comprised of over 95% black residents had an average of 47 more stop and frisk incidents per year compared to neighborhoods comprised of fewer then 25% black residents. This comparison is statistically significant at 99% confidence interval.
 
 
 
