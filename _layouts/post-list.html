@@ -1,0 +1,54 @@
+---
+layout: default
+---
+
+{% include site-nav.html %}
+
+{% include header.html %}
+
+<ul class="post-list">
+  {% for rule in page.filter %}
+  {% assign posts = site.posts %}
+  {% if rule.by_tag %}
+  {% assign posts = posts | where_exp: "post", "post.tags contains rule.by_tag" %}
+  {% endif %}
+  {% if rule.by_category %}
+  {% assign posts = posts | where_exp: "post", "post.category == rule.by_category" %}
+  {% endif %}
+  {% if rule.by_expression %}
+  {% assign posts = posts | where_exp: "post", rule.by_expression %}
+  {% endif %}
+  {% for post in posts %}
+  {% assign posts = posts | append: " " | append: post.path %}
+  {% endfor %}
+  {% endfor %}
+  {% if posts %}
+  {% assign posts = posts | split: " " | sort | uniq %}
+  {% assign posts = site.posts | where_exp: "post", "posts contains post.path" %}
+  {% else %}
+  {% assign posts = site.posts %}
+  {% endif %}
+  {% for post in posts %}
+  <li class="post-list-item" data-tags="{{ post.tags | join: " " }}">
+    <a class="post-item-link" href="{{ post.url | relative_url }}" data-date="{{ post.date | date: "%m-%d"  }}">
+      {{ post.title | escape }}
+    </a>
+    {% if post.description %}
+    <p class="post-description">{{ post.description }}</p>
+    {% endif %}
+    <div class="post-item-meta">
+      {{ post.date | date: "%B %-d, %Y" }}
+      /
+      {% capture lang %}{{ post.lang | default: site.lang | default: "en" }}{% endcapture %}
+      {% if lang == "en" %}
+      {% capture words %}{{ post.content | strip_html | number_of_words  }}{% endcapture %}
+      {% else %}
+      {% capture words %}{{ post.content | strip_html | size }}{% endcapture %}
+      {% endif %}
+      {% unless words contains "-" %}
+      {{ words | plus: 250 | divided_by: 250 | append: " minute read"  }}
+      {% endunless %}
+    </div>
+  </li>
+  {% endfor %}
+</ul>

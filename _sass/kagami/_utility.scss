@@ -1,0 +1,18 @@
+@mixin exdent-horizontally($size) {
+  margin-left: -$size;
+  margin-right: -$size;
+  & > * {
+    padding-left: $size;
+    padding-right: $size;
+  }
+}
+
+@mixin exdent-vertically($size) {
+  margin-top: -$size;
+  margin-bottom: -$size;
+  & > * {
+    padding-top: $size;
+    padding-bottom: $size;
+  }
+}
+

@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text:400,700|Press+Start+2P');
+
+@font-face {
+  font-family: "Kagami SC";
+  src: local("Songti SC Regular"), local(STSongti-SC-Regular);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Kagami SC";
+  src: local("Songti SC Bold"), local(STSongti-SC-Bold);
+  font-weight: bold;
+  font-style: normal;
+}
+
+// @font-face {
+//   font-family: "Kagami SC";
+//   src: local("Kaiti SC Regular"), local(STKaiti-SC-Regular);
+//   font-weight: normal;
+//   font-style: italic;
+// }
+
+// @font-face {
+//   font-family: "Kagami SC";
+//   src: local("Kaiti SC Bold"), local(STKaiti-SC-Bold);
+//   font-weight: bold;
+//   font-style: italic;
+// }
+
+@font-face {
+  font-family: "Kagami TC";
+  src: local("Songti TC Regular"), local(STSongti-TC-Regular);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Kagami TC";
+  src: local("Songti TC Bold"), local(STSongti-TC-Bold);
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Kagami Emoji";
+  src: local("Apple Color Emoji"), // iOS & OS X 10.7
+       local("Segoe UI Emoji"),    // Windows 8.1
+       local("Segoe UI Symbol"),   // Windows 7
+       local("Noto Color Emoji"),  // Android & Linux
+       local("Android Emoji");     // Linux
+}
+
+@mixin font-sans {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Kagami Emoji";
+}
+
+@mixin font-serif($font-family-fallback: serif) {
+  font-family: "Crimson Text", $font-family-fallback, "Kagami Emoji";
+}
+
+@mixin font-serif-zh-Hans($font-family-fallback: sans-serif) {
+  font-family: "Crimson Text", "Kagami SC", $font-family-fallback, "Kagami Emoji";
+}
+
+@mixin font-serif-zh-Hant($font-family-fallback: sans-serif) {
+  font-family: "Crimson Text", "Kagami TC", $font-family-fallback, "Kagami Emoji";
+}
+
+@mixin font-serif-ja($font-family-fallback: sans-serif) {
+  font-family: "Crimson Text", "YuMincho", $font-family-fallback, "Kagami Emoji";
+}
+
+@mixin font-monospace($font-family-fallback: monospace) {
+  font-family: Courier, Monaco, $font-family-fallback;
+}
+
+@function font-size($factor: 1.0) {
+  @return $font-size * $factor;
+}

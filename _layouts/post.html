@@ -2,16 +2,30 @@
 layout: default
 ---
 
-<article class="post">
-  <h1>{{ page.title }}</h1>
+<article class="post" lang="{{ page.lang | default: site.lang | default: "en" }}" itemscope itemtype="http://schema.org/BlogPosting" >
 
-  <div class="entry">
+  {% include header.html %}
+
+  <div class="post-content" itemprop="articleBody">
     {{ content }}
   </div>
 
-  <div class="date">
-    Written on {{ page.date | date: "%B %e, %Y" }}
-  </div>
+  <footer class="post-footer">
+    <div class="post-meta">
+      {% if page.date %} <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time> {% endif %}
+      {% if page.author %} by <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author | escape }}</span></span> {% endif %}
+    </div>
 
+    {% if page.tags.size > 0 %}
+    <ul class="post-tags" aria-label="TagList">
+      {% for tag in page.tags %}
+      <li><a class="tag-link" href="{{ tag | url_encode | prepend: "/tags/" | relative_url }}">{{ tag | escape }}</a></li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+  </footer>
+
+  {% if jekyll.environment == 'production' and site.disqus_shortname and page.comments != false %}
   {% include disqus.html %}
+  {% endif %}
 </article>

@@ -1,0 +1,95 @@
+@font-face {
+  font-family: 'fontello';
+  src: url('../font/fontello.eot?48874071');
+  src: url('../font/fontello.eot?48874071#iefix') format('embedded-opentype'),
+       url('../font/fontello.woff2?48874071') format('woff2'),
+       url('../font/fontello.woff?48874071') format('woff'),
+       url('../font/fontello.ttf?48874071') format('truetype'),
+       url('../font/fontello.svg?48874071#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?48874071#fontello') format('svg');
+  }
+}
+*/
+ 
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+ 
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.icon-heart:before { content: '\e800'; } /* '' */
+.icon-google-plus:before { content: '\f05a'; } /* '' */
+.icon-twitter:before { content: '\f099'; } /* '' */
+.icon-rss:before { content: '\f09e'; } /* '' */
+.icon-linkedin:before { content: '\f0e1'; } /* '' */
+.icon-github:before { content: '\f113'; } /* '' */
+.icon-youtube:before { content: '\f167'; } /* '' */
+.icon-stackoverflow:before { content: '\f16c'; } /* '' */
+.icon-flickr:before { content: '\f16e'; } /* '' */
+.icon-bitbucket:before { content: '\f171'; } /* '' */
+.icon-tumblr:before { content: '\f173'; } /* '' */
+.icon-dribbble:before { content: '\f17d'; } /* '' */
+.icon-skype:before { content: '\f17e'; } /* '' */
+.icon-foursquare:before { content: '\f180'; } /* '' */
+.icon-vkontakte:before { content: '\f189'; } /* '' */
+.icon-weibo:before { content: '\f18a'; } /* '' */
+.icon-renren:before { content: '\f18b'; } /* '' */
+.icon-stackexchange:before { content: '\f18d'; } /* '' */
+.icon-slack:before { content: '\f198'; } /* '' */
+.icon-wordpress:before { content: '\f19a'; } /* '' */
+.icon-openid:before { content: '\f19b'; } /* '' */
+.icon-reddit:before { content: '\f1a1'; } /* '' */
+.icon-delicious:before { content: '\f1a5'; } /* '' */
+.icon-digg:before { content: '\f1a6'; } /* '' */
+.icon-behance:before { content: '\f1b4'; } /* '' */
+.icon-steam:before { content: '\f1b6'; } /* '' */
+.icon-spotify:before { content: '\f1bc'; } /* '' */
+.icon-deviantart:before { content: '\f1bd'; } /* '' */
+.icon-vine:before { content: '\f1ca'; } /* '' */
+.icon-tencent-weibo:before { content: '\f1d5'; } /* '' */
+.icon-wechat:before { content: '\f1d7'; } /* '' */
+.icon-twitch:before { content: '\f1e8'; } /* '' */
+.icon-yelp:before { content: '\f1e9'; } /* '' */
+.icon-lastfm:before { content: '\f202'; } /* '' */
+.icon-facebook-official:before { content: '\f230'; } /* '' */
+.icon-pinterest:before { content: '\f231'; } /* '' */
+.icon-telegram:before { content: '\f2c6'; } /* '' */
+.icon-instagram:before { content: '\f32d'; } /* '' */

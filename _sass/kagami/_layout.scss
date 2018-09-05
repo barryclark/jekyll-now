@@ -1,0 +1,184 @@
+$content-padding: $spacing-unit / 2;
+$post-margin-width: 2 * $spacing-unit;
+$post-header-spacing: 3.5 * $spacing-unit;
+$post-footer-spacing: 3 * $spacing-unit;
+
+html {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  min-height: 100%;
+  width: 100%;
+  overflow: hidden; // fixes margin-collapsing of body
+}
+
+.wrapper {
+  width: 100%;
+  max-width: $content-width;
+  margin: 0 auto;
+  padding-left: $content-padding;
+  padding-right: $content-padding;
+  @media screen and (min-width: $content-width) {
+    padding-left: $content-padding + $post-margin-width;
+    padding-right: $content-padding + $post-margin-width;
+  }
+}
+
+article {
+
+  $vspacing: $spacing-unit;
+  $hspacing: $spacing-unit / 2;
+
+  h1, h2, h3, h4, h5, h6, p, ul, ol, pre, hr, blockquote, img:only-child {
+    display: block;
+    margin: $vspacing auto;
+  }
+
+  li > ul, li > ol {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .highlight {
+    position: relative;
+    overflow: hidden;
+
+    code {
+      display: block;
+      overflow-x: auto;
+    }
+
+    @include exdent-horizontally($hspacing);
+    @include exdent-vertically(0.5 * $vspacing);
+
+    @media screen and (min-width: $content-width) {
+      @include exdent-horizontally(2 * $hspacing);
+    }
+  }
+
+  blockquote {
+    margin-left: 0.5 * $spacing-unit;
+    margin-right: 0.5 * $spacing-unit;
+    @media screen and (min-width: $content-width) {
+      margin-left: $spacing-unit;
+      margin-right: $spacing-unit;
+    }
+    cite {
+      display: block;
+      text-align: right;
+      margin-top: -$spacing-unit;
+      white-space: nowrap;
+    }
+  }
+
+  .aside, .sidenote, .side-note {
+    width: 160px;
+    float: left;
+    margin-left: -$post-margin-width;
+    margin-right: $vspacing;
+    padding: 0;
+  }
+
+  @media screen and (max-width: $content-width) {
+    h2, h3, h4, h5, h6 {
+      &::before { color: rgba(0,0,0,0); }
+    }
+    .aside, .sidenote, .side-note {
+      display: none;
+    }
+  }
+
+  @media screen and (min-width: $content-width) {
+    .hero-unit {
+      margin-left: -$post-margin-width;
+      margin-right: -$post-margin-width;
+    }
+  }
+
+  h1, h2, h3, h4, h5, h6 { // reduce spacing after headings
+    & + *,
+    & + .aside + *,
+    & + .sidenote + * { margin-top: -0.5 * $hspacing; }
+  }
+
+}
+
+.post-header {
+  margin-top: $post-header-spacing;
+  margin-bottom: $post-header-spacing;
+}
+
+.post-cover {
+  margin-top: -$post-header-spacing + $spacing-unit;
+}
+
+.post-footer, #disqus_thread {
+  margin-top: $post-footer-spacing;
+  margin-bottom: $post-footer-spacing;
+}
+
+.site-nav {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: top;
+  justify-content: center;
+  margin-left: -$post-margin-width;
+  margin-right: -$post-margin-width;
+}
+
+@media screen and (min-width: $content-width) {
+  .site-nav {
+    height: 0;
+    justify-content: flex-end;
+  }
+}
+
+.page-link {
+  display: block;
+  padding: 0.5em;
+}
+
+.site-footer {
+  padding-top: $spacing-unit;
+  padding-bottom: $spacing-unit;
+}
+
+.site-footer .wrapper {
+  display: flex;
+  width: 100%;
+  flex-flow: row-reverse wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-links {
+  text-align: center;
+  margin: 1em (-$content-padding);
+  padding: 0 0.3em;
+  white-space: nowrap;
+}
+
+.credits {
+  margin-left: -0.256em;
+  white-space: nowrap;
+}
+
+.post-list-item {
+  margin-top: $spacing-unit;
+  margin-bottom: $spacing-unit;
+}
+
+.post-description {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.cover-meta {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 4px 8px;
+  p { margin: 0; padding: 0; }
+}
