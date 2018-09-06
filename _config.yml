@@ -36,7 +36,7 @@ jekyll-archives:
     - categories
     - tags
   layout: "archive"
-  permalink: /:categories/:year/:month/:day/:title:output_ext
+  permalink: /:category/:year/:month/:day/:title:output_ext
     category: '/category/:name/'
     tag: '/tag/:name/'
 
