@@ -31,8 +31,7 @@ inter_post_navigation: false
 highlightjs_theme: "monokai-sublime"
 
 # Archive settings (see https://github.com/jekyll/jekyll-archives/)
-plugins:
-  - jekyll-archives:
+jekyll-archives:
   enabled: all
   layout: archive
   permalink:
