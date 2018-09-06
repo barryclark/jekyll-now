@@ -10,9 +10,11 @@ comments: true
 
 ---
 
-#First post
+First post
+==========
 
-##1. Write
+Write
+-----
 
 -	verify
 
@@ -20,7 +22,8 @@ comments: true
 
 -	my first Markdown Write
 
-##2. Korean
+Korean
+------
 
 -	마크다운이 올바르게 작동이 되는가?
 
