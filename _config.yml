@@ -35,7 +35,6 @@ jekyll-archives:
   enabled: all
   layout: archive
   permalink:
-    /:title:output_ext
     category: '/category/:name/'
     tag: '/tag/:name/'
 
