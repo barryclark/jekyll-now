@@ -2,7 +2,7 @@
 
 layout: "post"
 
-title: "2018-9-6-Test-markdown-posting"
+title: "Markdown Posting Test"
 
 date: "2018-09-06 14:28"
 
