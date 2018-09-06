@@ -2,7 +2,7 @@
 layout: post
 title:  "Dummy Post"
 date:   2018-08-29 00:00:00
-author: createzone
+author: PJH
 categories: "Dummy"
 tags: "ipsum"
 cover:  "/assets/instacode.png"
@@ -31,4 +31,3 @@ asas
 asas
 asasdf
 ```
-
