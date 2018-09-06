@@ -36,7 +36,7 @@ jekyll-archives:
     - categories
     - tags
   layout: "archive"
-  permalink: date
+  permalink:
     category: '/category/:name/'
     tag: '/tag/:name/'
 
