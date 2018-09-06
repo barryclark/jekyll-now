@@ -39,7 +39,7 @@ If you right-click on an object on the webpage and hit Inspect, we can see that 
       </g>
 ```
 
->This gives us some interesting information. We know that each row of boxes is a `<g>` tag with multiple `<rect>` tags, each representing a certain day. We can tell what day specifically by looking at the `data-date` attribute of each. We can further look at the attributes to get more information that we might want. For example, we know that the first box, 
+This gives us some interesting information. We know that each row of boxes is a `<g>` tag with multiple `<rect>` tags, each representing a certain day. We can tell what day specifically by looking at the `data-date` attribute of each. We can further look at the attributes to get more information that we might want. For example, we know that the first box, 
 
 ```Python
 <rect class="day" width="10" height="10" x="-11" y="12" fill="#ebedf0" data-count="0" data-date="2018-02-19"></rect>
