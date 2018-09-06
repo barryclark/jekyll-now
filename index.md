@@ -200,7 +200,6 @@ title: Πως αγοράζουμε, πουλάμε, ξοδεύουμε και δ
 - Το [University of Nicosia δωρεάν MOOC Introduction to Digital Currencies και το MSc in Digital Currency](https://digitalcurrency.unic.ac.cy)
 - Η [Synaphea](https://synaphea.com) Enterprise Blockchain Solutions
 - Η [norbloc](https://norbloc.com)
-- Το [Oceanus Foundation](http://www.oceanus.tech)
 - Η [TaxExperts](https://www.taxexperts.gr) ασχολείται με θέματα φορολογίας κρυπτονομισμάτων
 - Το [stampd](https://stampd.io)
 - Το [BitforTip](https://www.bitfortip.com)
@@ -213,7 +212,7 @@ title: Πως αγοράζουμε, πουλάμε, ξοδεύουμε και δ
 - Ο Μη-Κερδοσκοπικός Οργανισμός [Hellenic Blockchain Hub](http://blockchain.org.gr)
 - Ο Μη-Κερδοσκοπικός Οργανισμός [Cyprus Blockchain Technologies](http://cybt.eu)
 
-Τελευταία ενημέρωση: 2018-08-18
+Τελευταία ενημέρωση: 2018-09-06
 
 <!-- <div class="posts">
   {% for post in site.posts %}

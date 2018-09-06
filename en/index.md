@@ -47,7 +47,6 @@ Come to one of our meetups in [Athens](https://www.meetup.com/BlockchainGreece-0
 - The [Coinomi multicurrency wallet](https://coinomi.com)
 - The [Arctus multicurrency wallet](https://arctus.io)
 - The [University of Nicosia free Introduction to Digital Currencies MOOC  and the MSc in Digital Currency](https://digitalcurrency.unic.ac.cy)
-- [Synaphea](https://synaphea.com) Enterprise Blockchain Solutions
 - [norbloc](https://norbloc.com)
 - The [Oceanus Foundation](http://www.oceanus.tech)
 - [TaxExperts](https://www.taxexperts.gr) offers cryptocurrency taxation advice
@@ -62,7 +61,7 @@ Come to one of our meetups in [Athens](https://www.meetup.com/BlockchainGreece-0
 - The [Hellenic Blockchain Hub](http://blockchain.org.gr) non-profit organization
 - The [Cyprus Blockchain Technologies](http://cybt.eu) non-profit organization
 
-Last update: 2018-08-18
+Last update: 2018-09-06
 
 <!-- <div class="posts">
   {% for post in site.posts %}
