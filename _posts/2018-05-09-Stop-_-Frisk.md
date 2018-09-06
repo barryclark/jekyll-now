@@ -8,12 +8,14 @@ author: August Warren & Mahkah Wu & Mika Weinstein
 
 Key Findings
 --------------
-@@@ Anchor link
-* Overall, black residents, and particularly young black male residents, were forcibly stopped by police at a rate well in excess of both the proportion of black residents living in DC and the proportion of reported crimes committed by black residents. White residents were stopped at a rate lower than the analogous population and crime proportions. Each of Washington DC's 39 neighborhoods have distinct racial makeups, but these disproportionalities persist in nearly all neighborhoods with fewer then 90% black residents.
+
+* Black residents were the target of over 80% of forcible police stops in DC from 2010-2017. Of black residents stopped by police, 1 in 5 were under the age of 18 and 9 in 10 were male.
+
+* Overall, black residents were forcibly stopped by police at a rate well in excess of both the proportion of black residents living in DC and the proportion of reported crimes committed by black residents while white residents were stopped at a rate lower than the analogous population and crime proportions. Each of Washington DC's 39 neighborhoods have distinct racial makeups, but these disproportionalities persist in nearly all neighborhoods with fewer then 95% black residents.
 
 * There exists a strong linear relationship between a neighborhood's annual crime level and that neighborhood's stop and frisk level over the subsequent year. However, neighborhoods with the highest proportion of black residents (95-100%) have, on average, ~47 more stop and frisk incidents per year compared to neighborhoods with the lowest proportion of black residents (0-25%) when crime is held constant.
 
-* In 2016, when controlling for neighborhood racial composition, the ratio of stops of black residents to crimes committed by black residents was 3.91 times higher then the analogous ratio for white residents across all DC neighborhoods. The analogous ratio for Hispanic/Latino residents was 4.10 times higher rates then the rate for white residents, respectively, than white residents across all DC neighborhoods when controlling for each racial cohort's reported crime level. The rate generally increases in neighborhoods with a higher proportion of white residents.
+* In 2016, black and Hispanic/Latino residents were stopped at 3.91 and 4.10 times higher rates, respectively, than white residents across all DC neighborhoods when controlling for each racial cohort's reported crime level. The rate generally increases in neighborhoods with a higher proportion of white residents.
 
 * This analysis includes an [interactive map](https://rawgit.com/mahkah/dc_stop_and_frisk/master/index.html) and [neighborhood explorer application](https://dc-stop-frisk.herokuapp.com/) that enable users to look for trends and patterns not covered in this analysis.
 
@@ -70,7 +72,7 @@ Reflecting the disparity among juveniles, black and Hispanic/Latino adults stopp
 <br>
 
 <a name="footnote-geocoding-ref"></a>
-We were able to geocode ~96% of the stop and frisk incidents<sup>[1](#footnote-geocoding)</sup>, which are shown in the interactive map above. The map enables filtering by race, gender, age, and type of stop and choropleths of ward, neighborhood clusters, police sector, police service area, and census tract are toggleable.
+We were able to geocode ~96% of the stop and frisk incidents<sup>[1](#footnote-geocoding)</sup>, which are shown in the interactive map above. The map enables filtering by race, gender, age, and type of stop. Choropleth layers for ward, neighborhood clusters, police sector, police service area, and census tract are also toggleable. The geocoded dataset is available [here](https://github.com/mahkah/dc_stop_and_frisk).
 
 Stop and Frisk: Neighborhood Overview
 --------------
@@ -311,10 +313,11 @@ These charts show the difference between the population and stop and frisk rates
 Footnotes
 --------------
 <a name="footnote-geocoding"></a>
-[^1.](#footnote-geocoding-ref) The mapping and associated data can be found [here](https://github.com/mahkah/dc_stop_and_frisk).
-A critical part of the data provided by the MPD is a rough location of where the incident took place, generally either a reference to a block (e.g. '4200 BLOCK OF 7TH STREET SE') or a corner (e.g. '46TH STREET NE / CENTRAL AVENUE NE'). In order to get a mappable dataset, we cleaned up these addresses and extracted the incident street names. We merged this data to a full list of block centroids (provided by [DC OpenData](http://opendata.dc.gov/datasets/block-centroids)). We've published the [geocoded data](https://github.com/mahkah/dc_stop_and_frisk/blob/master/transformed_data/SF_Field%20Contact_locations.csv), as well as [scripts to match the data](https://github.com/mahkah/dc_stop_and_frisk/blob/master/location_matching.py).
+[^1.](#footnote-geocoding-ref) The MPD generally reports locations of stop and frisk incidents as a block (e.g. 4200 BLOCK OF 7TH STREET SE) or a corner (e.g. '46TH STREET NE / CENTRAL AVENUE NE'). The MPD did not validated these inputs, so there is significant variance in the way that the street is recorded (e.g. North Capitol Street might be recorded as 'N CAP', 'NORTH CAPITAL STREET NW', or 'N CAPITOL ST'). This project utilized several iterative regular expression replacements to fix these inconsistencies.
 
-Overall, we were able to match ~96% of forcible stops to a latitude and longitude. The remaining addresses were either missing or not specific enough to be matched. Once we transformed the addresses to latitude and longitude, we used geospatial analysis packages to classify each matched incident to one of 39 neighborhood clusters in DC to conduct the rest of the analysis presented here.
+This project utilized DC Open Data's block centroid dataset to geocode incidents for consistency with other municipal data products. The block centroid dataset contains coordinates for every block in the city, the block's street and street number range, and the streets bookending the block. Cleaned stop and frisk incident locations were divided into either block or corner patterns. Block patterns were matched to the block street and fuzzily matched to the block street number endpoints. For corner patterns, one street of the corner was matched to the block street and the other street was matched to the bookending street. The first centroid matching this criteria in the dataset was used. There are a few ambiguous corners in DC. Florida Avenue intersects each of the lettered streets north of R Street twice in the Northwest quadrant, and Rhode Island Avenue and Brentwood Road intersect twice in the Northeast quadrant. These ambiguities account for around a dozen of the nearly 39,000 incidents and were again matched to the first corner in the dataset.
+
+Finally, the city's block dataset (retrieved March 21, 2018) appears to omit the 400 Block of 2nd Street NW. Incidents on this block were hardcoded to (38.895455, -77.013668).
 
 <a name="footnote-race-bins"></a>
 [^2.](#footnote-race-bins-ref) Bins were chosen to contain similar numbers of neighborhoods and to situate boundaries at natural gaps in the dataset. Specific assignment is shown in the figure below.
