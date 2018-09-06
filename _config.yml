@@ -35,10 +35,10 @@ jekyll-archives:
   enabled:
     - categories
     - tags
-  layout: 'archive'
-  permalinks: '/:title:output_ext'
-    category: '/category/:name/'
-    tag: '/tag/:name/'
+  layout: "archive"
+  permalinks: "/:title:output_ext"
+    category: "/category/:name/"
+    tag: "/tag/:name/"
 
 # Disqus comments
 # disqus_shortname: bencentra
