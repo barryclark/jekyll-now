@@ -3,8 +3,9 @@ layout: post
 title: Spotlight on GF 4.1 - Changing the release number
 excerpt: Originally, the upcoming release of GlassFish was going to be called GlassFish 4.0.1...
 ---
+
 <p align="center">
-<img alt="GF 4.0.1" src="src="https://delabassee.com/images/blog/gf401.png" width="50%"" width="50%"/>
+<img alt="GF 4.0.1" src="src="https://delabassee.com/images/blog/gf401.png" width="50%"/>
 </p>
 
 
@@ -23,4 +24,4 @@ Originally, the upcoming release of GlassFish was going to be called GlassFish 4
 Changing a version number during a release stabilization phase is a bit tricky but we decided it was worth the effort (and the risk!). So please bare with us for as the build infrastructure is being updated to reflect this change! Everything should be back onto track in a day or two.
 
 
-*Originaly posted on [Medium](https://blogs.oracle.com/theaquarium/spotlight-on-glassfish-41%3a-3-changing-the-release-number).*
+*Originaly posted on [The Aquarium](https://blogs.oracle.com/theaquarium/spotlight-on-glassfish-41%3a-3-changing-the-release-number) blog.*
