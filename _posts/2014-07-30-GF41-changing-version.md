@@ -5,7 +5,7 @@ excerpt: Originally, the upcoming release of GlassFish was going to be called Gl
 ---
 
 <p align="center">
-<img alt="GF 4.0.1" src="src="https://delabassee.com/images/blog/gf401.png" width="50%"/>
+<img alt="GF 4.0.1" src="https://delabassee.com/images/blog/gf401.png" width="50%"/>
 </p>
 
 
