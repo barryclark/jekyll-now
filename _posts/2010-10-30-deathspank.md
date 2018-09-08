@@ -2,13 +2,13 @@
 layout: post
 title: DeathSpank
 tags: [video games, old blog]
-keywords: [humor]
+keywords: [deathspank, ps3]
 image: /images/video-games/deathspank.jpg
 ---
 
 To my loyal fan, who's out there… somewhere.. Sorry I haven't posted in ten days. I've been busy with school, plus I've been a bit under the weather (that's sick, for those who don't know their idioms).
 
-Of course, I've had time to play my video games :) In addition to Bejeweled Blitz on Facebook I've been playing DeathSpank on the PS3:
+Of course, I've had time to play my video games :) In addition to [Bejeweled Blitz on Facebook](https://hendrixjoseph.github.io/bejeweled-blitz-on-facebook/) I've been playing DeathSpank on the PS3:
 
 ![DeathSpank](/images/video-games/deathspank.jpg)
 *DeathSpank*
