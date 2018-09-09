@@ -276,8 +276,6 @@ v_v   ►_◄   ►.◄   >.<   ಠ_ರೃ   ಠ╭╮ಠ
 
 (\/)   (°,,°)   (\/)   ╚(•⌂•)╝   (-’๏_๏’-)   Ƹ̴Ӂ̴Ʒ   εїз   ╰(◣﹏◢)╯
 
-> Website bảng kí tự đặc biệt chia sẻ những ký tự đẹp, chữ kiểu giúp bạn tạo những tên nhân vật đẹp như mong muốn, tên nhân vật hợp phong thủy, hợp với tính cách sở thích, tên tướng trong game cực ngầu. Dù bạn là gảm thủ giỏi hay gà, dù bạn rank thách đấu hay rank đồng thì cũng cần phải có một cái tên nhân vật thiệt "OÁCH" để ai cũng nhớ đến bạn.
-
 
 
 
