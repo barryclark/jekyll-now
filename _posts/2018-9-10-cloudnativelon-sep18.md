@@ -46,8 +46,8 @@ The next meetup is on 9 October, and joining us are speakers from Jetstack, WSO2
 
 [RSVP and save the date now!](https://www.meetup.com/Cloud-Native-London/events/253873072/)
 
-If you would like to speak at or sponsor a meetup, [get in touch with me](https://docs.google.com/forms/d/e/1FAIpQLSciBUZbu0xWp7fLtpSRES6HT8kxF6PgpOsAdnObpWZF7MY4Fg/viewform).
-
 See you soon!
 
 Cheryl (@oicheryl)
+
+[Want to speak at or sponsor a meetup?](https://docs.google.com/forms/d/e/1FAIpQLSciBUZbu0xWp7fLtpSRES6HT8kxF6PgpOsAdnObpWZF7MY4Fg/viewform).
