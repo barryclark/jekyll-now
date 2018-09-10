@@ -42,8 +42,11 @@ Finally, congratulations to the winner of a free ticket to the Skills Matter Clo
 
 ## Cloud Native London October
 
-The next meetup is on 9 October, and it will be in a different meetup! Joining us are speakers from Jetstack, WSO2 and Exelerys. 
+The next meetup is on 9 October, and joining us are speakers from Jetstack, WSO2 and Exelerys. Note that we'll be in Bermondsay for this month.
 
-[Save the dates to your calendars now and register!](https://www.meetup.com/Cloud-Native-London/events/253873072/)
+[RSVP and save the date now!](https://www.meetup.com/Cloud-Native-London/events/253873072/)
 
-If you're thinking of speaking or sponsoring a meetup, [please get in touch with me](https://docs.google.com/forms/d/e/1FAIpQLSciBUZbu0xWp7fLtpSRES6HT8kxF6PgpOsAdnObpWZF7MY4Fg/viewform).
+If you would like to speak at or sponsor a meetup, [get in touch with me](https://docs.google.com/forms/d/e/1FAIpQLSciBUZbu0xWp7fLtpSRES6HT8kxF6PgpOsAdnObpWZF7MY4Fg/viewform).
+
+See you in October!
+Cheryl (@oicheryl)
