@@ -13,7 +13,8 @@ tag: java
 Abbreviation
 ============
 
-### Representative
+Representative
+--------------
 
 -	SP(System Planning)
 -	SA(System Architectural design)
@@ -36,7 +37,8 @@ Abbreviation
 -	ST(System Test)
 -	OT(Operation Test)
 
-### In My Case...
+In My Case...
+-------------
 
 ##### Oh My... My...
 
