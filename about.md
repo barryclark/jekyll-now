@@ -10,9 +10,9 @@ I founded the [Cloud Native London meetup](https://www.meetup.com/Cloud-Native-L
 
 ## Preferred forms of address
 
-Casually: Cheryl
-Professionally: Cheryl J Hung
-Formally: Ms Cheryl Johnson-Hung
+* Casually: Cheryl
+* Professionally: Cheryl J Hung
+* Formally: Ms Cheryl Johnson-Hung
 
 ## Background
 
