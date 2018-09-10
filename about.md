@@ -4,9 +4,9 @@ title: About
 permalink: /about/
 ---
 
-I am the Director of Ecosystem at the Cloud Native Computing Foundation / Linux Foundation. I speak frequently at meetups and conferences on container and cloud native technologies.
+I am the Director of Ecosystem at the Cloud Native Computing Foundation. I speak frequently at meetups and conferences on container and cloud native technologies.
 
-I founded the [Cloud Native London meetup](https://www.meetup.com/Cloud-Native-London), dedicated to building a strong, open, diverse developer community around the Cloud Native platform and technologies in London. We have 200-300 monthly attendees; come join us in London on the first Tuesday of each month!
+I founded the [Cloud Native London meetup](https://www.meetup.com/Cloud-Native-London), dedicated to building a strong, open, diverse developer community around the cloud native platform and technologies in London. We have 200-300 monthly attendees; come join us in London on the first Tuesday of each month!
 
 ## Preferred forms of address
 
@@ -16,7 +16,7 @@ I founded the [Cloud Native London meetup](https://www.meetup.com/Cloud-Native-L
 
 ## Background
 
-I was the Product and DevOps manager at StorageOS, a London-based startup building persistent storage for containers. Prior to that, I was a C++ engineer on Google Maps, building location services, search and ranking infrastructure.
+At StorageOS I was the Product and DevOps manager, building persistent storage for containers. Prior to that, I was a C++ engineer on Google Maps, developing location services, search and ranking infrastructure.
 
 I hold a Masters in Computer Science from King's College, University of Cambridge.
 
