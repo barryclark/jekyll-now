@@ -6,7 +6,7 @@ permalink: /about/
 
 I am the Director of Ecosystem at the Cloud Native Computing Foundation / Linux Foundation. I speak frequently at meetups and conferences on container and cloud native technologies.
 
-I founded the [Cloud Native London meetup](https://www.meetup.com/Cloud-Native-London), dedicated to building a strong, open, diverse developer community around the Cloud Native platform and technologies in London. We have 200-300 monthly attendees; if you are in London on the first Tuesday of each month, come join us!
+I founded the [Cloud Native London meetup](https://www.meetup.com/Cloud-Native-London), dedicated to building a strong, open, diverse developer community around the Cloud Native platform and technologies in London. We have 200-300 monthly attendees; come join us in London on the first Tuesday of each month!
 
 ## Preferred forms of address
 
