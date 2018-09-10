@@ -3,7 +3,7 @@ layout: post
 title: "[Photos][Videos][Sep 2018] Cloud Native London September 2018 Roundup"
 ---
 
-![Cloud Native London September](https://pbs.twimg.com/media/DmRan-WX4AITHT7.jpg])
+![Cloud Native London September](https://pbs.twimg.com/media/DmRan-WX4AITHT7.jpg)
 
 The room was packed out for Cloud Native London's September meetup, ably hosted by Dominique Top and featuring three brilliant talks and a prize draw.
 
@@ -21,7 +21,7 @@ Sarah Wells from the Financial Times gave a talk on ["Switching Horses Midstream
 
 ![Billie Thompson](https://pbs.twimg.com/media/DmRYG33XsAMCIRi.jpg)
 
-Following that, Zenon Hannick and Billie Thompson from Armakuni asked "Where's the value in Cloud Native? High value cloud native practices, and how to sell them to your boss"](https://skillsmatter.com/skillscasts/12838-where-s-the-value-in-cloud-native):
+Following that, Zenon Hannick and Billie Thompson from Armakuni asked ["Where's the value in Cloud Native? High value cloud native practices, and how to sell them to your boss"](https://skillsmatter.com/skillscasts/12838-where-s-the-value-in-cloud-native):
 
 * The key to making lasting change in an organisation is to use metrics, and tacking problems that those metrics show.
 * Value stream mapping is one tool that can allow you to gather those metrics and that you can do it from any position in a organisation (with or without power).
@@ -29,7 +29,7 @@ Following that, Zenon Hannick and Billie Thompson from Armakuni asked "Where's t
 
 ![Michael Ducy](https://pbs.twimg.com/media/DmRibYXX4AE7u9e.jpg)
 
-Finally Michael Ducy from Sysdig told us about "Runtime Security for Cloud Native Platforms". His takeaways were:
+Finally Michael Ducy from Sysdig told us about ["Runtime Security for Cloud Native Platforms"](https://skillsmatter.com/skillscasts/12839-runtime-security-for-cloud-native-platform). His takeaways were:
 
 * Cloud Native platforms provide lots of options for securing workloads running on them. The wide range of configurable security options can be overwhelming.
 * Tools such as Host Intrusion/Abnormality detection can provide an additional layer of security for Cloud Native platforms. These tools can help:
