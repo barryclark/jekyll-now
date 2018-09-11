@@ -18,6 +18,8 @@ Every year I try to tutor several students for their bachelor project or master 
 
 ## Selected bibliography
 
+- **M. Stock**, T. Pahikkala, A. Airola, B. De Baets and W. Waegeman, *A Comparative Study of Pairwise Learning Methods Based on Kernel Ridge Regression*, Neural Computation, August 2018, The MIT Press. ([link](https://goo.gl/9Dr3MN))
+
 - **M. Stock**, T. Poisot, W. Waegeman and B. De Baets, *Linear filtering reveals false negatives in species interaction data*, Scientific Reports 7 (2017), 45908. ([link](https://www.nature.com/articles/srep45908))
 
 - G. Van Peer, A. De Paepe, **M. Stock**, J. Anckaert, P-J. Volders, J. Vandesompele, B. De Baets and W. Waegeman, *miSTAR: miRNA target prediction through modeling quantitative and qualitative miRNA binding site information in a stacked model structure*, Nucleic Acids Research 45 (2017), e51.

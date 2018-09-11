@@ -9,7 +9,7 @@ name: Michiel Stock
 description: machine learning and computational biology geek
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://pbs.twimg.com/profile_images/913479750689202177/zLZ_DaNw_400x400.jpg
+avatar: ../../images/avatar.jpeg
 
 #
 # Flags below are optional
