@@ -15,7 +15,8 @@ Translation Homework
 
 ---
 
-##Original Text
+Original Text
+-------------
 
 本セキュリティサイトについて
 ----------------------------
