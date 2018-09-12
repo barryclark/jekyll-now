@@ -14,22 +14,27 @@ As the tools in experiments neuroscience are rapidly developing, this is an impo
 * recent advances in theoretical neuroscience
 * popular theories in neuroscience
 
-Journal club meetings currently take place on Tuesdays at 2:00 pm in the Life Science Building room 550. For the Summer Session we will be focusing on studies related to Variational Inference. 
+Journal club meetings currently take place on Mondays at 1:00 pm in the IACS Seminar Room. 
 
 **Join the club** by joining the [SBU Computational Neuroscience Google Group](https://groups.google.com/d/forum/sbu-computational-neuroscience/join)
 
-# 2018 Summer Schedule
+# 2018 Fall Schedule
 
-- June 19th: Yuan Zhao - Introduction to Variational Inference 
-- June 26th: Braden Brinkman - Replica Trick
-- July 3rd: Yanliang Shi - Variational EM
-- July 10th: Logan Becker - Reparameterization Trick
-- July 17th: Ian Jordan - Assumed Density Filtering (ADF)
-- July 24th: Piotr Sokol - Alternative Divergence Techniques 
-- July 31st: Memming Park - Particle VI
-- August 7th: Josue Nassar - Normalizing Flow
-- August 14th: Sima Mofakham - TBD
-
+- September 10th: Braden Brinkman 
+- September 17th: Logan Becker 
+- September 24th: Sima Mofakham
+- October 1st: Giancarlo LaCamera
+- October 8th: No JC - Fall Break
+- October 15th: Yuan Zhao
+- October 22nd: Piotr Sokol
+- October 29th: TBD
+- November 5th: No JC - SFN
+- November 12th: TBD
+- November 19th: Ian Jordan
+- November 26th: Yanliang Shi
+- December 3rd: Josue Nassar
+- December 10th: Sayontan Ghoshi 
+- December 17th: Jin Wang 
 
 You can pick or [**suggest papers**](https://www.google.com/url?q=https://docs.google.com/document/d/17SuoVIIDbCae5GnxSHGO5BW2zbVP6wBCbaGGfgFLAOQ/edit?usp%3Dsharing&sa=D&ust=1472068897083000&usg=AFQjCNF5f_dZMloe4l3jWOm_mhxe7utbqw) to be discussed.
 
