@@ -1,10 +1,8 @@
 ---
 layout: post
-title: You're up and running!
+title: Getting to know Poisson Distribution
 ---
 
-Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
+Imagine you are on a trip away from your hometown. Usually a letter will be delivered to your house every three days. During your one month trip, you keep thinking about how many mails are piling up in your mailbox. Would there be 10? Or maybe there would be none? A way that we can estimate the possibilities of each guess is using Poisson Distribution.
 
-![_config.yml]({{ site.baseurl }}/images/config.png)
-
-The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
+(To be continued...)
