@@ -5,7 +5,8 @@ category: journalclub
 olddate: September 17th, 2018
 ---
 
-* [Paper]({{site.url}}/journalclub/JCpapers/Chen_Stability_Model.pdf) Chen, Y., Xin, Q., Ventura, V., and Kass, R.E. (2018) Stability of point process spiking neuron models , Journal of Computational Neuroscience, to appear.* Abstract
+* [Paper]({{site.url}}/journalclub/JCpapers/Chen_Stability_Model.pdf) Chen, Y., Xin, Q., Ventura, V., and Kass, R.E. (2018) Stability of point process spiking neuron models , Journal of Computational Neuroscience, to appear.
+* Abstract
 
 Point process regression models, based on
 generalized linear model (GLM) technology, have been
