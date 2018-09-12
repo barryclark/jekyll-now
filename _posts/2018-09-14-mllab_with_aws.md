@@ -26,6 +26,7 @@ Jo Rotzinger provided background about specific opportunities that artificial in
 ![Product Stations](../images/MLLab/ProductStation.jpg)
 
 The story deepened, as AWS data scientist, Yotam Yarden, dove into the artificial intelligence topic, showing us how to create recommendation engines with Amazon Web Services, taking us through the various challenges, thought processes, data analysis and technical tools needed to create recommender solutions with Amazon Sagemaker.
+![Recommender Engine](../images/MLLab/YY.jpg)
 
 And, finally, a series of breakout sessions showcased the data projects that are already happening at Haufe Group:
 
