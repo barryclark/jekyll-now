@@ -33,3 +33,4 @@ Machine Learning is inherently frustrating. Whatever you start, there’s always
 
 But, machine learning isn’t just painful and tedious. It’s also fun and rewarding, and you get to learn so many things while doing it. In our case, we obviously learned a ton of things about how to work on these projects together with some useful skills for Python and the frameworks we used. We also found that our data isn’t what we need and we are trying to implement changes in our application to improve the data we collect. We’ve even learned a lot of things about our customers, relevant for anyone in the lexoffice team. Even though (or maybe because) we did not build a well-performing model, we are now even more motivated to keep working on this task, apply our gained knowledge and maybe start the next machine learning project soon.
 
+Photo: "Gassing up the Ford" | Starman series | https://bit.ly/2p2kjQb | CC BY 2.0
