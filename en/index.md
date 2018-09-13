@@ -31,9 +31,71 @@ Come to one of our meetups in [Athens](https://www.meetup.com/BlockchainGreece-0
 
 ### <a name="buybitcoin"></a>How can I buy Bitcoin in Greece?
 
-- At the Bitcoin ATM (only Euro -> Bitcoin) at the Orizontes bookshop, Thiveou Ioannou 20, Aharnes 13671, Attica at the outskits of Athens. They charge 7% over the [Kraken](https://www.kraken.com) exchange rate.
-- At the [BCash](https://bcash.gr/) Bitcoin ATM (buy & sell) at Dimitrakopoulou 84, Athens, near the Syggrou-Fix Metro station. At the Bitcoin ATM at the DAMA shopping centre, 59-61, Gennimata Str, Glydafa 16562, tel 6987812000. There is an ATM at Kalokairinou 64 at Heraklion, Crete that sells Bitcoin. You can also buy Bitcoin with a voucher at the Aegean gas station at Thivon avenue & Krinis Str, Athens 18233. At the [Bitcoin ATM at Anageniseos 7, Thessaloniki](http://thesscash.gr/en/) to exchange Euros <-> Bitcoin. At the [Bitcoin ATM at Iasonos 20, Larisa](http://www.bitcoinspot.gr) to exchange Euros <-> Bitcoin. At the Bitcoin ATM at [MyMall in Mykonos](https://www.google.com/maps/place/MyMall+Mykonos/@37.4346352,25.3292866,16.21z/data=!4m5!3m4!1s0x0:0x5bc45346127b52c7!8m2!3d37.4338222!4d25.3317464), available 24/7, tel 6998499499. Watch this [video](https://www.youtube.com/watch?v=WsVAE-4xP9A) on how to buy Bitcoin from the BCash ATM. They charge 7% over the [Kraken](https://www.kraken.com) exchange rate.
-- At the Bitcoin ATM run by [GroupBTC Greece](https://www.groupbtc.com/el) at the New Yorkers Fitness Club at [15A, 25is Martiou str, Vrilissia 15235](https://www.google.gr/maps/place/New+Yorkers+Fitness+Club/@38.0333278,23.8255206,15z/data=!4m5!3m4!1s0x0:0xd3562f4d69e71216!8m2!3d38.0333278!4d23.8255206), tel 6944225521. Also at the [Bitcoin ATM](https://coinatmradar.com/bitcoin_atm/4791/bitcoin-atm-btc-facil-mykonos-vinos/) at the [wine bar restaurant Vinos in Mykonos](https://www.winebarvinos.com).
+- At the following Bitcoin ATMs:
+
+<table>
+    <tr>
+        <td><strong>City</strong></td>    
+        <td><strong>Address</strong></td>
+        <td><strong>Contact info</strong></td>
+    </tr>
+    <tr>
+        <td>Aharnes, Attica</td>    
+        <td><a href="https://goo.gl/maps/HxSWFsnH5kR2">Orizontes bookshop, Thiveou Ioannou 20, Aharnes 13671</a></td>
+        <td> </td>
+    </tr>
+    <tr>
+        <td>Athens</td>
+        <td><a href="https://goo.gl/maps/bdipXzwYhHU2">Dimitrakopoulou 84, Koukaki, Athens 11741</a></td>
+        <td>+30 6998499499 <a href="https://bcash.gr">Bcash Greece</a></td>
+    </tr>
+    <tr>
+        <td>Glyfada, Attica</td>
+        <td><a href="https://goo.gl/maps/VwQbWgmdcbk">DAMA shopping centre, Genimmata 59-61, Glyfada 16562</a></td>
+        <td>+30 6987812000 <a href="https://bcash.gr">Bcash Greece</a></td>
+    </tr>
+    <tr>
+        <td>Vrilissia, Attica</td>
+        <td><a href="https://goo.gl/maps/vcPqykfBvCx">New Yorkers Fitness Club, 15A, 25is Martiou str, Vrilissia 15235</a></td>
+        <td>+30 6944225521 <a href="https://www.facebook.com/groupbtcgreece/">GroupBTC Greece</a></td>
+    </tr>
+    <tr>
+        <td>Agia Paraskevi, Attica</td>
+        <td><a href="https://goo.gl/maps/rJmzphtnPj62">Solomou 22, Agia Paraskevi 15341</a> 24h access</td>
+        <td>+30 6987812000 <a href="https://bcash.gr">Bcash Greece</a></td>
+    </tr>
+    <tr>
+        <td>Thessaloniki</td>
+        <td><a href="https://goo.gl/maps/G8WhqZoNpKo">Anagenniseos 7, Thessaloniki 54627</a></td>
+        <td>+30 6941412894 <a href="http://thesscash.gr">Thess Cash</a> (a Bcash Greece ATM)</td>
+    </tr>
+    <tr>
+        <td>Heraklion</td>
+        <td><a href="https://goo.gl/maps/d84PexJUYzC2">Kalokairinou 64, Heraklion 71201, Crete</a></td>
+        <td>+30 6998499499 <a href="https://bcash.gr">Bcash Greece</a></td>
+    </tr>
+    <tr>
+        <td>Myconos</td>
+        <td><a href="https://goo.gl/maps/qWNWUbEVzd42">Wine bar restaurant Vinos, Kalogera 4, Myconos 84600</a></td>
+        <td>+30 6940262025 <a href="https://www.winebarvinos.com">Vinos Bitcoin ATM</a> (a GroupBTC ATM)</td>
+    </tr>
+    <tr>
+        <td>Myconos</td>
+        <td><a href="https://goo.gl/maps/3r5JHyvzuJM2">MyMall shopping centre, Myconos</a> 24h access</td>
+        <td>+30 6998499499 <a href="https://bcash.gr">Bcash Greece</a></td>
+    </tr>
+    <tr>
+        <td>Larisa</td>
+        <td><a href="https://goo.gl/maps/LDGupm9kXQ42">Iosonos 20, Larisa 41223</a></td>
+        <td>+30 6975609542 <a href="http://www.bitcoinspot.gr">Bitcoin Spot</a> (a Bcash Greece ATM)</td>
+    </tr>
+    <tr>
+        <td>Kalamata</td>
+        <td><a href="https://goo.gl/maps/b7QLuFkTT512">Nikitara 3, Kalamata 24100</a></td>
+        <td>+30 6987812000 <a href="https://bcash.gr">Bcash Greece</a></td>
+    </tr>
+</table>
+
 - At any Bitcoin exchange in the world, via a bank transfer. Due to the capital controls in Greece you can wire up to €2000 abroad per two months with no prior approval or paperwork. This will increase to €4000 from July 1st 2018. This method incurs the lowest fees, assuming you send the amount using a SEPA transfer (a Greek bank can charge as low as €1 for a SEPA transfer). Some exchanges that accept SEPA transfers are [Kraken](https://www.kraken.com), [Coinbase](https://www.coinbase.com/) and [BitStamp](https://www.bitstamp.net).
 - At a Bitcoin exchange that accepts debit or credit cards. <strike>An exchange that accepts Greek cards is Coinbase and charges 3.99%. Coinbase only accepts cards enabled for 3D Secure that allows secure online transactions. For Visa cards this mechanism is known as Verified by Visa and for MasterCard cards this is known as MasterCard SecureCode. Debit cards by Eurobank and Alpha Bank were successfully used on Coinbase recently (in 2017). Piraeus Bank no longer supports 3D Secure for their cards.</strike>
 - <strike>At the [BTCGreece](https://www.btcgreece.com) exchange that accepts transfers at their Greek bank accounts.</strike>
@@ -61,7 +123,7 @@ Come to one of our meetups in [Athens](https://www.meetup.com/BlockchainGreece-0
 - The [Hellenic Blockchain Hub](http://blockchain.org.gr) non-profit organization
 - The [Cyprus Blockchain Technologies](http://cybt.eu) non-profit organization
 
-Last update: 2018-09-06
+Last update: 2018-09-14
 
 <!-- <div class="posts">
   {% for post in site.posts %}

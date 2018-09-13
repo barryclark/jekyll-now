@@ -61,9 +61,71 @@ title: Πως αγοράζουμε, πουλάμε, ξοδεύουμε και δ
 
 ### <a name="buybitcoin"></a>Πώς μπορώ να αγοράσω Bitcoin από την Ελλάδα;
 
-- Στο Bitcoin ATM στο βιβλιοπωλείο Ορίζοντες, Θηβαίου Ιωάννου 20, Αχαρνές 13671, Αττική. Μόνο για Ευρώ -> Bitcoin. Χρεώνει 7% πάνω στην ισοτιμία του ανταλλακτηρίου [Kraken](https://www.kraken.com).
-- Στο Bitcoin ATM της [BCash](https://bcash.gr/) στην Δημητρακοπούλου 84, Αθήνα, κοντά στο Μετρό Συγγρού-Φιξ, για αγορά και πώληση Bitcoin. Επίσης στην Καλοκαιρινού 64, στο Ηράκλειο Κρήτης, μόνο για Ευρώ -> Bitcoin. Στο βενζινάδικο της Aegean στη Λεωφόρο Θηβών 197 & Κρήνης, Αθήνα 18233 για Ευρώ -> Bitcoin μέσω κουπονιού. Στο Bitcoin ATM στη Γλυφάδα, στο εμπορικό κέντρο DAMA, Γεννηματά 59-61, Γλυδάφα 16562, τηλ. 6987812000. Στο [Bitcoin ATM στην Αναγεννήσεως 7, Θεσσαλονίκη](http://thesscash.gr/) για Ευρώ <-> Bitcoin (τηλ. 6941412894). Στο [Bitcoin ATM στην Ιάσονος 20, Λάρισα](http://www.bitcoinspot.gr) για Ευρώ <-> Bitcoin. Δείτε το [βίντεο](https://youtu.be/9bT2XI2YQ-Y) που δείχνει πως αγοράζετε Bitcoin από το ATM. Χρεώνει 7% πάνω στην ισοτιμία του ανταλλακτηρίου [Kraken](https://www.kraken.com). Στο Bitcoin ATM στο [MyMall στη Μύκονο](https://www.google.com/maps/place/MyMall+Mykonos/@37.4346352,25.3292866,16.21z/data=!4m5!3m4!1s0x0:0x5bc45346127b52c7!8m2!3d37.4338222!4d25.3317464), είναι ανοικτό 24/7, τηλ. 6998499499.
-- Στο Bitcoin ATM της [GroupBTC Greece](https://www.facebook.com/groupbtcgreece/) στο γυμναστήριο New Yorkers Fitness Club στην [25ης Μαρτίου 15Α, Βριλήσσια 15235](https://www.google.gr/maps/place/New+Yorkers+Fitness+Club/@38.0333278,23.8255206,15z/data=!4m5!3m4!1s0x0:0xd3562f4d69e71216!8m2!3d38.0333278!4d23.8255206), τηλέφωνο 6944225521. Επίσης στο [Bitcoin ATM](https://coinatmradar.com/bitcoin_atm/4791/bitcoin-atm-btc-facil-mykonos-vinos/) στο [wine bar restaurant Vinos στη Μύκονο](https://www.winebarvinos.com).
+- Στα εξής Bitcoin ATM:
+
+<table>
+    <tr>
+        <td><strong>Περιοχή</strong></td>    
+        <td><strong>Διεύθυνση</strong></td>
+        <td><strong>Επικοινωνία</strong></td>
+    </tr>
+    <tr>
+        <td>Αχαρνές, Αττική</td>    
+        <td><a href="https://goo.gl/maps/HxSWFsnH5kR2">Βιβλιοπωλείο Ορίζοντες, Θηβαίου Ιωάννου 20, Αχαρνές 13671</a></td>
+        <td> </td>
+    </tr>
+    <tr>
+        <td>Αθήνα</td>
+        <td><a href="https://goo.gl/maps/bdipXzwYhHU2">Δημητρακοπούλου 84, Κουκάκι, Αθήνα 11741</a></td>
+        <td>+30 6998499499 <a href="https://bcash.gr">Bcash Greece</a></td>
+    </tr>
+    <tr>
+        <td>Γλυφάδα, Αττική</td>
+        <td><a href="https://goo.gl/maps/VwQbWgmdcbk">Εμπορικό κέντρο DAMA, Γεννηματά 59-61, Γλυφάδα 16562</a></td>
+        <td>+30 6987812000 <a href="https://bcash.gr">Bcash Greece</a></td>
+    </tr>
+    <tr>
+        <td>Βριλήσσια, Αττική</td>
+        <td><a href="https://goo.gl/maps/vcPqykfBvCx">Γυμναστήριο New Yorkers Fitness Club, 25ης Μαρτίου 15Α, Βριλήσσια 15235</a></td>
+        <td>+30 6944225521 <a href="https://www.facebook.com/groupbtcgreece/">GroupBTC Greece</a></td>
+    </tr>
+    <tr>
+        <td>Αγία Παρασκευή, Αττική</td>
+        <td><a href="https://goo.gl/maps/rJmzphtnPj62">Σολωμου 22, Αγία Παρασκευή 15341</a> 24ωρη πρόσβαση</td>
+        <td>+30 6987812000 <a href="https://bcash.gr">Bcash Greece</a></td>
+    </tr>
+    <tr>
+        <td>Θεσσαλονίκη</td>
+        <td><a href="https://goo.gl/maps/G8WhqZoNpKo">Αναγεννήσεως 7, Θεσσαλονίκη 54627</a></td>
+        <td>+30 6941412894 <a href="http://thesscash.gr">Thess Cash</a> (a Bcash Greece ATM)</td>
+    </tr>
+    <tr>
+        <td>Ηράκλειο</td>
+        <td><a href="https://goo.gl/maps/d84PexJUYzC2">Καλοκαιρινού 64, Ηράκλειο 71201, Κρήτη</a></td>
+        <td>+30 6998499499 <a href="https://bcash.gr">Bcash Greece</a></td>
+    </tr>
+    <tr>
+        <td>Μύκονος</td>
+        <td><a href="https://goo.gl/maps/qWNWUbEVzd42">Wine bar restaurant Vinos, Καλογερά 4, Μύκονος 84600</a></td>
+        <td>+30 6940262025 <a href="https://www.winebarvinos.com">Vinos Bitcoin ATM</a> (a GroupBTC ATM)</td>
+    </tr>
+    <tr>
+        <td>Μύκονος</td>
+        <td><a href="https://goo.gl/maps/3r5JHyvzuJM2">Εμπορικό κέντρο MyMall, Μύκονος</a> 24ωρη πρόσβαση</td>
+        <td>+30 6998499499 <a href="https://bcash.gr">Bcash Greece</a></td>
+    </tr>
+    <tr>
+        <td>Λάρισα</td>
+        <td><a href="https://goo.gl/maps/LDGupm9kXQ42">Ιάσονος 20, Λάρισα 41223</a></td>
+        <td>+30 6975609542 <a href="http://www.bitcoinspot.gr">Bitcoin Spot</a> (a Bcash Greece ATM)</td>
+    </tr>
+    <tr>
+        <td>Καλαμάτα</td>
+        <td><a href="https://goo.gl/maps/b7QLuFkTT512">Νικηταρά 3, Καλαμάτα 24100</a></td>
+        <td>+30 6987812000 <a href="https://bcash.gr">Bcash Greece</a></td>
+    </tr>
+</table>
+
 - Σε οποιοδήποτε ανταλλακτήριο Bitcoin διεθνώς, μέσω τραπεζικού εμβάσματος. Αυτήν τη στιγμή επιτρέπεται έμβασμα στο εξωτερικό μέχρι €2000 το δίμηνο χωρίς δικαιολογητικά. Το ποσό στα αυξηθεί στα €4000 από την 1η Ιουλίου 2018. Αυτή η μέθοδος έχει και τα χαμηλότερα κόστη, εφόσον το έμβασμα γίνει με τη μέθοδο SEPA (ενδεικτικό κόστος μεταφοράς: €1). Παραδείγματα ανταλλακτηρίων που δέχονται εμβάσματα με SEPA είναι [Kraken](https://www.kraken.com), [Coinbase](https://www.coinbase.com/) και [BitStamp](https://www.bitstamp.net).
 - Σε ανταλλακτήρια που δέχονται πιστωτικές ή χρεωστικές κάρτες. <strike>Ένα ανταλλακτήριο που δέχεται Ελληνικές κάρτες είναι το Coinbase και χρεώνει 3,99%. Το Coinbase κάνει δεκτές μόνο κάρτες στις οποίες έχει ενεργοποιηθεί ο μηχανισμός 3D Secure για ασφαλείς συναλλαγές στο Internet. Για τις κάρτες Visa αυτός ο μηχανισμός είναι γνωστός ως Verified by Visa και για τις κάρτες MasterCard είναι γνωστός ως MasterCard SecureCode. Κάρτες που πρόσφατα (2017) έγιναν δεκτές στο Coinbase είναι χρεωστικές κάρτες της Alpha Bank και της Eurobank. Η Τράπεζα Πειραιώς δεν υποστηρίζει πλέον 3D Secure στις κάρτες της.</strike>
 - <strike>Στο ανταλλακτήριο www.btcgreece.com που δέχεται εμβάσματα σε Ελληνικό τραπεζικό λογαριασμό.</strike>
@@ -73,7 +135,7 @@ title: Πως αγοράζουμε, πουλάμε, ξοδεύουμε και δ
 
 ### <a name="bitcoin.org"></a>Που μπορώ να μάθω περισσότερα για το Bitcoin;
 
-Η επίσημη σελίδα ενημέρωσης για το Bitcoin είναι το [bitcoin.org](https://bitcoin.org).
+Η επίσημη σελίδα ενημέρωσης για το Bitcoin είναι το [bitcoin.org](https://bitcoin.org). Η σελίδα [Bitcoin Resources του Jameson Lopp](https://lopp.net/bitcoin.html) είναι επίσης πολύ χρήσιμη.
 
 ### <a name="compare"></a>Σε τι διαφέρει το Bitcoin από μετρητά, από καταθέσεις στην τράπεζα, από το χρυσό και τις πιστωτικές κάρτες;
 
@@ -212,7 +274,7 @@ title: Πως αγοράζουμε, πουλάμε, ξοδεύουμε και δ
 - Ο Μη-Κερδοσκοπικός Οργανισμός [Hellenic Blockchain Hub](http://blockchain.org.gr)
 - Ο Μη-Κερδοσκοπικός Οργανισμός [Cyprus Blockchain Technologies](http://cybt.eu)
 
-Τελευταία ενημέρωση: 2018-09-06
+Τελευταία ενημέρωση: 2018-09-14
 
 <!-- <div class="posts">
   {% for post in site.posts %}
