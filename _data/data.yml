@@ -717,7 +717,15 @@
   category_en: Coffee shop
   location_gr: Αθήνα, Αττική, Ελλάδα
   location_en: Athens, Attica, Greece
-
+  
+- company_gr: Dastart
+  company_en: Dastart
+  url: http://www.dastart.com
+  category_gr: Allday cafe bar
+  category_en: Allday cafe bar
+  location_gr: Θεσσαλονίκη, Μακεδονία, Ελλάδα
+  location_en: Thessaloniki, Macedonia, Greece
+  
 - company_gr: Extravagant coiffure
   company_en: Extravagant coiffure
   url: https://www.facebook.com/ExtraVagantCoiffure/
