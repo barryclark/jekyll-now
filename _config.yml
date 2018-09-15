@@ -49,6 +49,12 @@ url: https://lauramoore.github.io
 # then add in the baseurl here, like this: "/repository-name"
 baseurl: ""
 
+collections:
+  jekyll4fun:
+    output: true
+    title: Jekyll For Fun!
+    description: Blog like a hacker with Jekyll
+    source: https://github.com/lauramoore/lauramoore.github.io
 #
 # !! You don't need to change any of the configuration flags below !!
 #
@@ -73,7 +79,7 @@ sass:
   style: :expanded # You might prefer to minify using :compressed
 
 # Use the following plug-ins
-gems:
+plugins:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
 
