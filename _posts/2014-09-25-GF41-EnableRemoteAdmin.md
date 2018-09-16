@@ -11,22 +11,40 @@ To enable remote Admin, you should first define a password for the admin user an
 
 
 `./asadmin change-admin-password`
+
+
 `Enter admin user name [default: admin]>` [leave it empty to use the default value]
+
+
 `Enter the admin password>` [make sure to leave this field empty]
-`Enter the new admin password> myS3cur3Passw0rd!`
-`Enter the new admin password again> myS3cur3Passw0rd!`
+
+
+`Enter the new admin password>` myS3cur3Passw0rd!
+
+
+`Enter the new admin password again>` myS3cur3Passw0rd!`
+
+
 `Command change-admin-password execute`
 
 You can now enable the securre-admin.
 
 `./asadmin enable-secure-admin`
+
+
 `Enter admin password for user "admin">` [fill in the new password you have set]
-`You must restart all running servers for the change in secure admin to take effect.`
-`Command enable-secure-admin executed successfully.`
+
+
+`You must restart all running servers for the change in secure admin to take effect. Command enable-secure-admin executed successfully.`
+
+
 
 And just restart the domain and you are all set!
 
+
 `./asadmin restart-domain domain1`
+
+
 
 The 'empty admin password' is mentionned in the initial page of the first chapter of the [Administration Guide](https://glassfish.java.net/docs/4.0/administration-guide.pdf).
 
