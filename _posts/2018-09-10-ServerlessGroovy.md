@@ -11,8 +11,9 @@ excerpt: The good news is that I was able, in a few hours, to add Groovy functio
 
 Right before my vacation, I had a short exchange with Guillaume Laforge, the [Apache Groovy](http://groovy-lang.org/) project PMC Chair, about running Groovy functions on [Fn](https://github.com/fnproject/fn).
 
+<center>
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Ootb, Fn doesn&#39;t support Groovy but that&#39;s quite trivial to do. I&#39;ll see if I can do that before my vacation.</p>&mdash; David Delabassée (@delabassee) <a href="https://twitter.com/delabassee/status/1025423919841464321?ref_src=twsrc%5Etfw">August 3, 2018</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
-
+</center>
 
 The bad news is that my vacations are behind me and that I didn’t have the time to prototype Groovy support thanks to my _too-long-list-of-things-to-absolutely-do-before-going-away_! Now I am back and the good news is that I was able, in a few hours, to add Groovy functions to Fn thanks to the new [init-image](https://medium.com/fnproject/even-wider-language-support-in-fn-with-init-images-a7a1b3135a6e) approach!
 
