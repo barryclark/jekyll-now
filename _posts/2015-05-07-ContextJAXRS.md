@@ -9,5 +9,5 @@ The _@Context_ annotation gives, to a JAX-RS implementation, the ability to inje
 
 To get more information, you can check the [JAX-RS Specification](https://jcp.org/en/jsr/detail?id=339) (_@Context_ is described in Chapter 9 & 10) or alternatively, you can read this _'Using @Context in JAX-RS'_ piece written by [Abhishek Gupta](https://twitter.com/abhi_tweeter) (see first instalment [here](https://abhirockzz.wordpress.com/2015/05/03/using-context-in-jax-rs-part-1/)).
 
-*Originaly posted on the [Aquarium](https://blogs.oracle.com/theaquarium/using-context-in-jax-rs) blog.*
+*Originaly posted on [The Aquarium](https://blogs.oracle.com/theaquarium/using-context-in-jax-rs) blog.*
 
