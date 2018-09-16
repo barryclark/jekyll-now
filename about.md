@@ -13,6 +13,7 @@ I founded the [Cloud Native London meetup](https://www.meetup.com/Cloud-Native-L
 * Informal: Cheryl
 * Professional: Cheryl J Hung
 * Formal: Ms Cheryl Johnson-Hung
+* Chinese: 洪雪晴
 
 ## Background
 
