@@ -10,11 +10,6 @@ tag: java
 
 ---
 
-Notice
-======
-
----
-
 -	My job use programming. But my job country is japan So I will use japanese for a while.
 
 -	Translation is very difficult so I'm Studying
