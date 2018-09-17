@@ -1,0 +1,25 @@
+---
+
+layout: "post"
+
+title: "Notice"
+
+date: "2018-09-17 21:11"
+
+tag: java
+
+---
+
+Notice
+======
+
+---
+
+-	My job use programming. But my job country is japan So I will use japanese for a while.
+
+-	Translation is very difficult so I'm Studying
+
+Ex)
+---
+
+-	今日は天気があまりよくないので、今日の日程をキャンセルしました。 → 오늘은 날씨가 썩 좋지 않기 때문에 오늘의 일정을 캔슬했습니다.
