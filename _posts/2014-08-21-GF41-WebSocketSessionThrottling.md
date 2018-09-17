@@ -20,6 +20,7 @@ Tyrus now exposes WebSocket metrics through JMX . In GF 4.1, the following messa
 * smallest message size
 
 * largest message size
+
 Those statistics are collected independently of the message type (global count) and per specific message type (text, binary and control message). In GF 4.1, Tyrus also monitors, and exposes through JMX, errors at the application and endpoint level.
 
 For more information, please check [Tyrus JMX Monitoring](https://tyrus-project.github.io/documentation/1.12/user-guide.html#d0e1483).
