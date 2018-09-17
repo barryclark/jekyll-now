@@ -12,7 +12,7 @@ All of those embedded projects are open source and if you are looking for a spec
 
 
 | **Project** | **GF 4.0** | **GF 4.1** |
-|----------|----------|----------|
+|-------------|-------------|-------------|
 |Tyrus|1.0|1.8.1|
 |Weld|2.0.0|2.2.2|
 |Jersey|2.0.1|2.10.4|
