@@ -11,8 +11,8 @@ GlassFish 4 is the Java EE 7 Reference Implementation and as such it embeds the 
 All of those embedded projects are open source and if you are looking for a specific feature or fix, it is sometime useful to know exactly which version has been embedded in GF 4.1. The following table lists most of the various components and sub-projects used with their respective version for GlassFish 4.0 and 4.1.
 
 
-| Project | GF 4.0 | GF 4.1 |
-|--------|--------|--------|
+| **Project** | **GF 4.0** | **GF 4.1** |
+|----------|----------|----------|
 |Tyrus|1.0|1.8.1|
 |Weld|2.0.0|2.2.2|
 |Jersey|2.0.1|2.10.4|
