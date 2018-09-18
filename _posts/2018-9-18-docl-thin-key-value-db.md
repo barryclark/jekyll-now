@@ -8,9 +8,8 @@ I have been using Sqlite locally in my side-projects as it is very thin, light a
 #### Library
 Docl uses Sqlite3 but provides an interface that allows you to create/delete tables, and persist/fetch information in a key-value structure. It is very useful as you can use this interface in your side projects and implement the interface to the respective datasource you would like to use in the future, for instance: DynamoDB or MongoDB. Apart from that, you still have the advantages of Sqlite3 which is pretty much a one file database.
 
-- Github: [https://github.com/alizard0/docl](https://github.com/alizard0/docl)
-- Status: In development
-- Version: 0.1
+#### Implementation
+Docl provides an Interface which must be implemented with your preferred datasource. In this version, the library provides an interface implementation of sqlite3. Additionally, the library includes a DoclObject which you should extend in your Pojos classes. Technically, the DoclObject contains a table name which tells the DoclImpl (sqlite3) in which table it should persist the current object. The reads and writes to the database are translate by DoclImpl which will execute SQL commands. In terms of writting into the database, the DoclImpl converts the DoclObject into a string (JSON format), uses the primary key as key and the json string as value in the key-value structure.
 
 #### Examples
 ```java
@@ -23,3 +22,8 @@ public class DoclMain {
     }
 }
  ```
+ 
+#### Repository
+- Github: [https://github.com/alizard0/docl](https://github.com/alizard0/docl)
+- Status: In development
+- Version: 0.1
