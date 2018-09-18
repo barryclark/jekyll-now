@@ -3,14 +3,13 @@ layout: post
 title: Embedded Tomcat
 ---
 
-### Overview
 I came accross this implementation of Tomcat and instantly fell in love with it because it is no longer necessary to setup a Tomcat instance on your laptop neither in your cloud instances. _Perfect!_ 
 
 From a technical standpoint, this is just a _jar_ file which can be encapuslated into a container and you could setup your own cluster of webservices as known as _kubernetes_. 
 
 I decided to created this library in order to speed up the creation of POC or MVPs as sometimes when I start a side project I need to run it in a kubernetes service on the cloud and I struggle to spend more time doing that than implementing new features in the side project. I believe this library can be really useful to create thin microservices that's why in the following weeks I will develop some monitoring features.
 
-### Implementation
+#### Implementation
 I wrote a small java class that creates a Tomcat automatically with a specific port and a set of servlets which are auto-discovered by this class. Technically, you provide a directory in your project where you have your servlet classes, then the auto-discover mechanism will use a reflection approach to identify which classes are servlets! This will keep your project cleaned and there's no need to use a framework anymore with that dodgy and annoying route/config.xml files.
 
 #### Library
