@@ -3,8 +3,7 @@ layout: post
 title: Embedded Tomcat
 ---
 
-Hey
-
+### Overview
 I came accross this implementation of Tomcat and instantly fell in love with it because it is no longer necessary to setup a Tomcat instance on your laptop neither in your cloud instances. _Perfect!_ 
 
 From a technical standpoint, this is just a _jar_ file which can be encapuslated into a container and you could setup your own cluster of webservices as known as _kubernetes_. 
