@@ -4,12 +4,15 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+I'm a Systems Engineer in Columbus Ohio.  I'm involved in Amateur Radio.  I'm the Sponsorship chair and VP at the [Ohio Linuxfest](http://www.ohiolinux.org).
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+* [Ohio Linuxfest Staff Page](http://ohiolinux.org/staff)
+* [Github Customer Story](https://enterprise.github.com/case-studies/covermymeds)
+* [LOPSA](https://lopsa.org/)
+
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+me@robert-ball.com
