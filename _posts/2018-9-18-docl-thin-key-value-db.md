@@ -13,9 +13,14 @@ Docl uses Sqlite3 but provides an interface that allows you to create/delete tab
 - Version: 0.1
 
 #### Examples
-´´´java
-    Car ford = new Car("Ford Fiesta", "Ford", 1998);
-    String url = "file::memory:";
-    DoclImpl docl = new DoclImpl(url, new Properties());
-    docl.toPersist(ford);
-´´´
+```java
+
+    public class DoclMain {
+        public void main(){
+            Car ford = new Car("Ford Fiesta", "Ford", 1998);
+            String url = "file::memory:";
+            DoclImpl docl = new DoclImpl(url, new Properties());
+            docl.toPersist(ford);
+        }
+    }
+ ```
