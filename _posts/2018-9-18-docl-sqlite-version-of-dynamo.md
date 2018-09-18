@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Docl: Sqlite version of DynamoDB 
+title: Docl - Sqlite version of DynamoDB 
 ---
 
 I have been using Sqlite locally in my side-projects as it is very thin, light and very easy to create and delete. But recently, I have been working with DynamoDB where I am trying to apply and understand the benefits of using a non relational database (or a well designed and scalable key-value database on AWS?) Therefore, I decided to create something similar that adds more flexibility to my side projects when I deploy them in the cloud.
