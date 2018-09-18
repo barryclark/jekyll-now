@@ -11,5 +11,3 @@ Here you can find my personal thoughts about new techonologies, system architect
 ### Ah! Before you go! 
 I am a Software Engineer passionated about distributed systems, security and new business ideas. Technically, I write code and bugs in Java, and, usually, I fix them with loads of caffeine. Apart from that, I like to cook, to play the guitar, to watch Netflix and to play games.
 
-### Contact me
-[mse.andre.lizardo@gmail.com](mailto:mse.andre.lizardo@gmail.com)
