@@ -8,9 +8,9 @@ I have been using Sqlite locally in my side-projects as it is very thin, light a
 #### Library
 Docl uses Sqlite3 but provides an interface that allows you to create/delete tables, and persist/fetch information in a key-value structure. It is very useful as you can use this interface in your side projects and implement the interface to the respective datasource you would like to use in the future, for instance: DynamoDB or MongoDB. Apart from that, you still have the advantages of Sqlite3 which is pretty much a one file database.
 
-- *Github:* https://github.com/alizard0/docl
-- *Status:* In development
-- *Version:* 0.1
+- Github: [https://github.com/alizard0/docl](https://github.com/alizard0/docl)
+- Status: In development
+- Version: 0.1
 
 #### Examples
 
