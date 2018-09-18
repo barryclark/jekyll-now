@@ -10,3 +10,7 @@ Docl uses Sqlite3 but provides an interface that allows you to create/delete tab
 
 #### Examples
 
+#### Public Repo
+Github: https://github.com/alizard0/docl
+Status: In development
+Version: 0.1
