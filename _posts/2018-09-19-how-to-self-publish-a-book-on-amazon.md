@@ -3,7 +3,7 @@ layout: post
 title: How to Self-Publish a Book on Amazon
 tags: [books]
 keywords: [book, ebook, amazon, self-publish, amazon kindle direct publishing, kindle direct publishing, kdp]
-hashtags: [books, reading]
+hashtags: [writing, selfpublished]
 ---
 
 As recently as twenty years ago, if people wanted to publish a book, they would either have to convince a traditional publisher to publish their book, or shell out hundreds or thousands of dollars in order for a self-publisher to print their book for them. Some of these old self-publishing companies still exist - such as Morris Publishing, who, [according to their website](https://www.morrispublishing.com/pricing/paperback-books/), charge around $5 a book for a 40-page book with a 25-book minimum. Others, such as the infamous Vantage Press, [went out of business](
