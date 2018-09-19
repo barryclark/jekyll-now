@@ -467,7 +467,9 @@ Ardından aşağıdaki gibi bir sorgu ile işlemlerin son halini görebiliriz.
 
 ## Client Tarafından Bilgilerin Çekilmesi
 
-Şimdi bir tane client tarafından ldap server'dan bu bilgileri çekelim. Bunun için yine bir CentOS ayağa kaldıralım.
+**Not :** Client olarak Debian kullanılmıştır.
+
+Şimdi bir tane client tarafından ldap server'dan bu bilgileri çekelim. Bunun için bu kez bir **Debian** ayağa kaldıralım.
 
 Ardından gerekli paketleri kuralım.
 ```bash
