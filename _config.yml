@@ -6,7 +6,7 @@ keywords: "Разработка под Bitrix."
 url: https://davletyarov.github.io
 baseurl: ""
 # baseurl: null
-
+version: v0.5.4
 google_analytics: UA-122243590-1
 repo: http://github.com/nandomoreirame/simplest
 disqus_shortname: "https-davletyarov-github-io"
