@@ -40,6 +40,7 @@ author:
 
 # social settings
 og_locale: "ru_RU"
+timezone: Asia/Yekaterinburg
 
 gems:
   - bourbon
