@@ -1,0 +1,46 @@
+// Typography
+$base-font-family: 'Open Sans', $helvetica;
+// $base-font-family: 'Merriweather', "Georgia", serif;
+$heading-font-family: $base-font-family;
+
+// Font Sizes
+$base-font-size: 1em;
+
+// Line height
+$base-line-height: 1.5;
+$heading-line-height: 1.2;
+
+// Other Sizes
+$base-border-radius: .52em;
+$base-spacing: $base-line-height * 1em;
+$small-spacing: $base-spacing / 2;
+$base-z-index: 0;
+
+// Colors
+$primary-color: #ec2028;
+$action-color: $primary-color;
+$white-color: #fff;
+$black-color: #000;
+$blue-color: #477dca;
+$dark-gray-color: #333;
+$medium-gray-color: #999;
+$light-gray-color: #ccc;
+
+// Font Colors
+$base-font-color: rgba($dark-gray-color, .8);
+
+// Border
+$base-border-color: $light-gray-color;
+$base-border: 1px solid $base-border-color;
+
+// Background Colors
+$base-background-color: $white-color;
+$secondary-background-color: tint($base-border-color, 80%);
+
+// Forms
+$form-box-shadow: inset 0 1px 3px rgba($black-color, 0.06);
+$form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $lightness: -5%, $alpha: -0.3);
+
+// Animations
+$base-duration: 150ms;
+$base-timing: ease;

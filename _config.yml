@@ -1,90 +1,60 @@
-#
-# This file contains configuration flags to customize your site
-#
 
-# Name of your site (displayed in the header)
-name: Рузэль Давлетяров
+# SEO settings
+title: Simplest
+description: "A free Jekyll theme for download"
+keywords: "Jekyll, theme, free, download, SEO, blog, web"
+url: http://nandomoreira.me
+baseurl: "/simplest"
+# baseurl: null
 
-# Short bio or description (displayed in the header)
-description: Разработка под Bitrix и всё что связано. Система Bitrix24 реально очень сложна как программный продукт.
+google_analytics: UA-52446115-1
+repo: http://github.com/nandomoreirame/simplest
+disqus_shortname: "nandothemes"
 
-# URL of your avatar or profile pic (you could use your GitHub profile pic)
-#avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
+# Build settings
+permalink   : /:year/:title/
+markdown    : kramdown
+highlighter : pygments
 
-#
-# Flags below are optional
-#
+paginate: 4
+paginate_path: "/page/:num/"
+comments: true
 
-# Includes an icon in the footer for each username you enter
-footer-links:
-  dribbble:
-  email: ovearub@gmail.com
-  facebook:
-  flickr:
-  github: davletyarov/davletyarov.github.io
-  instagram:
-  linkedin:
-  pinterest:
-  rss: # just type anything here for a working RSS icon
-  twitter: 
-  stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
-  youtube: # channel/<your_long_string> or user/<user-name>
-  googleplus: # anything in your profile username that comes after plus.google.com/
+source: source
+destination: _site
 
-
-# Enter your Disqus shortname (not your username) to enable commenting on posts
-# You can find your shortname on the Settings page of your Disqus account
-disqus: https-davletyarov-github-io
-
-# Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-google_analytics: UA-122243590-1
-
-# Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
-# Used for Sitemap.xml and your RSS feed
-url: https://davletyarov.github.io
-
-# If you're hosting your site at a Project repository on GitHub pages
-# (http://yourusername.github.io/repository-name)
-# and NOT your User repository (http://yourusername.github.io)
-# then add in the baseurl here, like this: "/repository-name"
-baseurl: ""
-
-#
-# !! You don't need to change any of the configuration flags below !!
-#
-
-permalink: /:title/
-
-# The release of Jekyll Now that you're using
-version: v0.0.3
-
-# Jekyll 3 now only supports Kramdown for Markdown
-kramdown:
-  # Use GitHub flavored markdown, including triple backtick fenced code blocks
-  input: GFM
-  # Jekyll 3 and GitHub Pages now only support rouge for syntax highlighting
-  syntax_highlighter: rouge
-  syntax_highlighter_opts:
-    # Use existing pygments syntax highlighting css
-    css_class: 'highlight'
-
-timezone: Asia/Yekaterinburg
-
-# Set the Sass partials directory, as we're using @imports
+# Sass configuration
 sass:
-  style: :expanded # You might prefer to minify using :compressed
+  sass_dir: assets/scss
+  style: compressed # expanded
 
-# Use the following plug-ins
+# Author settings
+author:
+  name     : Fernando Moreira
+  job      : Frontend Engineer
+  bio      : "Enthusiast performance, responsive design and usability, always looking for the best project and good coffee."
+  thumb    : /images/author.jpg
+  email    : nandomoreira.me@gmail.com
+  url      : http://nandomoreira.me
+  github   : http://github.com/nandomoreirame
+  twitter  : http://twitter.com/nandomoreirame
+  facebook : http://facebook.com/fernando.dev
+  linkedin : http://linkedin.com/in/nandomoreirame
+
+# social settings
+og_locale: "pt_BR"
+twitter_card: "summary_large_image"
+twitter_site: "@nandomoreirame"
+
 gems:
-  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
-  - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
+  - bourbon
+  - jekyll-paginate
 
-# Exclude these files from your production _site
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - LICENSE
-  - README.md
-  - CNAME
-  
-highlighter: rouge
+# navbar pages
+navbar:
+  - slug : about
+    title: About
+  - slug : blog
+    title: Blog
+
+exclude: ["gulp", "node_modules", "bower", "bower_components", "config.rb", "src", "Gemfile", "Gemfile.lock", ".rvmrc", ".rbenv-version", "package.json", "gulpfile.js", "README.md", "Rakefile", "changelog.md"]

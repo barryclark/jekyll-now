@@ -1,0 +1,23 @@
+---
+layout: default
+title: Home
+---
+
+{% include intro.html %}
+
+<section class="post-list">
+  <div class="container">
+
+    <h2>Writing..</h2>
+
+    {% for post in paginator.posts %}
+      <article class="post-item">
+        <p><span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>  — <strong><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></strong> — <span> {{ post.content | strip_html | truncatewords: 40 }}</span> <a class="post-link readmore" href="{{ post.url | prepend: site.baseurl }}">Read more</a></p>
+      </article>
+    {% endfor %}
+  </div>
+
+  <div class="container">
+    {% include pagination.html %}
+  </div>
+</section>

@@ -1,0 +1,109 @@
+@import url("//fonts.googleapis.com/css?family=Open+Sans:400,300,700");
+// @import url("//fonts.googleapis.com/css?family=Merriweather:400,300,700");
+
+body {
+  color: $base-font-color;
+  font-family: $base-font-family;
+  font-feature-settings: "kern", "liga", "pnum";
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $heading-font-family;
+  font-size: $base-font-size;
+  line-height: $heading-line-height;
+  margin: 0 0 $small-spacing;
+  font-weight: 300;
+}
+
+h1 {
+  font-size: rem(30);
+}
+
+h2 {
+  font-size: rem(26);
+}
+
+h3 {
+  font-size: rem(24);
+}
+
+h4 {
+  font-size: rem(20);
+}
+
+h5,
+h6 {
+  font-size: rem(16);
+}
+
+p {
+  margin: 0 0 $small-spacing;
+
+  &.lead {
+    font-size: rem(22);
+    font-weight: 300;
+  }
+}
+
+a {
+  color: $action-color;
+  text-decoration: none;
+  transition: color $base-duration $base-timing;
+
+  &:active,
+  &:focus,
+  &:hover {
+    color: shade($action-color, 25%);
+  }
+}
+
+hr {
+  border-bottom: $base-border;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  margin: $base-spacing 0;
+}
+
+img,
+picture {
+  margin: 0;
+  max-width: 100%;
+}
+
+blockquote {
+  padding: 0 0 0 $base-spacing;
+  margin: $base-spacing 0;
+  color: $medium-gray-color;
+  line-height: 1.8;
+  border-left: $small-spacing solid $light-gray-color;
+}
+
+code {
+  background: none;
+  border-radius: 0;
+  border: none;
+  font-family: "Courier New", monospace;
+  font-size: 0.9em;
+  margin: 0;
+  padding: 0 5px;
+  background-color: lighten($light-gray-color, 13%);
+}
+
+pre {
+  -webkit-overflow-scrolling: touch;
+  font-family: "Courier New", monospace;
+  font-size: 0.9em;
+  margin: 0;
+
+  code {
+    line-height: 1.75em;
+  }
+}
