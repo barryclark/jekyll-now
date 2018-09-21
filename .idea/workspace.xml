@@ -14,8 +14,18 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_site/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="663">
-              <caret line="78" column="17" lean-forward="true" selection-start-line="78" selection-start-column="17" selection-end-line="78" selection-end-column="17" />
+            <state relative-caret-position="532">
+              <caret line="69" column="10" lean-forward="true" selection-start-line="69" selection-start-column="10" selection-end-line="69" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_site/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="665">
+              <caret line="710" column="1" lean-forward="false" selection-start-line="710" selection-start-column="1" selection-end-line="710" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -32,6 +42,7 @@
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/_config.yml" />
         <option value="$PROJECT_DIR$/_site/index.html" />
+        <option value="$PROJECT_DIR$/_site/style.css" />
       </list>
     </option>
   </component>
@@ -114,12 +125,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1537526159231</updated>
-      <workItem from="1537526160387" duration="2736000" />
+      <workItem from="1537526160387" duration="3374000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2736000" />
+    <option name="totallyTimeSpent" value="3374000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="921" y="20" width="974" height="1047" extended-state="0" />
@@ -206,14 +217,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="49" column="11" lean-forward="true" selection-start-line="49" selection-start-column="11" selection-end-line="49" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_layouts/default.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -238,10 +241,46 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/_config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+          <folding>
+            <marker date="1537529414953" expanded="true" signature="1567:1569" ph="" />
+            <marker date="1537529414953" expanded="true" signature="1657:1665" ph="/:title/" />
+            <marker date="1537529414953" expanded="true" signature="1722:1728" ph="v1.2.0" />
+            <marker date="1537529414953" expanded="true" signature="1781:2093" ph="kramdown: &lt;3 keys&gt;" />
+            <marker date="1537529414953" expanded="true" signature="1879:1882" ph="GFM" />
+            <marker date="1537529414953" expanded="true" signature="1982:1987" ph="rouge" />
+            <marker date="1537529414953" expanded="true" signature="1990:2093" ph="syntax_hi…ghter_opts: &lt;1 key&gt;" />
+            <marker date="1537529414953" expanded="true" signature="2082:2093" ph="highlight" />
+            <marker date="1537529414953" expanded="true" signature="2154:2178" ph="sass: &lt;1 key&gt;" />
+            <marker date="1537529414953" expanded="true" signature="2169:2178" ph=":expanded" />
+            <marker date="1537529414953" expanded="true" signature="2256:2353" ph="gems: &lt;2 items&gt;" />
+            <marker date="1537529414953" expanded="true" signature="2266:2280" ph="jekyll-sitemap" />
+            <marker date="1537529414953" expanded="true" signature="2342:2353" ph="jekyll-feed" />
+            <marker date="1537529414953" expanded="true" signature="2461:2534" ph="exclude: &lt;5 items&gt;" />
+            <marker date="1537529414953" expanded="true" signature="2474:2481" ph="Gemfile" />
+            <marker date="1537529414953" expanded="true" signature="2486:2498" ph="Gemfile.lock" />
+            <marker date="1537529414953" expanded="true" signature="2503:2510" ph="LICENSE" />
+            <marker date="1537529414953" expanded="true" signature="2515:2524" ph="README.md" />
+            <marker date="1537529414953" expanded="true" signature="2529:2534" ph="CNAME" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_site/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="665">
+          <caret line="710" column="1" lean-forward="false" selection-start-line="710" selection-start-column="1" selection-end-line="710" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/_site/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="78" column="17" lean-forward="true" selection-start-line="78" selection-start-column="17" selection-end-line="78" selection-end-column="17" />
+        <state relative-caret-position="532">
+          <caret line="69" column="10" lean-forward="true" selection-start-line="69" selection-start-column="10" selection-end-line="69" selection-end-column="10" />
           <folding />
         </state>
       </provider>
