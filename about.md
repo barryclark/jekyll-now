@@ -1,15 +1,16 @@
 ---
 layout: page
-title: About
+title: Обо мне
 permalink: /about/
 ---
 
-Some information about you!
 
-### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+Мне нравится изучать новое, люблю создавать интерфейсы, которые могут реально помочь людям. Мои проекты можно посмотреть [здесь](../projects) 
 
-### Contact me
+На данный момент я работаю инженером по автоматизации, но мне очень интересно изучать JavaScript и веб разработку, поэтому последний год все свое свободное время я посвящаю изучению веба, чтению и переводу статей, а также параллельно прохожу классный курс на udemy. 
 
-[email@domain.com](mailto:email@domain.com)
+Люблю изучать английский язык, обычно делаю это нескучно: разбираю тексты песен, смотрю видео на youtube и сериалы с английскими сабами, читаю и перевожу you don't know js Кайла Симпсона (кому интересно [мои gists с примерами из книги и комментариями](https://gist.github.com/DmitryVdovichencko) и небольшие конспекты на medium)
+
+
+
