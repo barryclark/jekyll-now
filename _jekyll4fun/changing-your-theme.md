@@ -1,5 +1,5 @@
 ---
 layout: lesson
 title: Changing Your Theme Later
-chapter: 10
+chapter: 999
 ---
