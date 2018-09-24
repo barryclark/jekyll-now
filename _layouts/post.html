@@ -10,7 +10,7 @@ layout: default
   </div>
 
   <div class="date">
-    {{ page.date | localize: "%d %B %Y" }}
+    {% include date.html date=page.date %}
   </div>
 
   {% include disqus.html %}
