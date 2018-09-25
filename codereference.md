@@ -367,6 +367,22 @@ ex. ENS0000001ENS0000002 -> ENS0000001 ENS0000002
      cols = ['col1', 'col2']
      final = original[cols]
  
+##### Pandas apply returns weird format string
+  If the first row of a dataframe has no output returned from the applied function, then the entire output is coerce to be like:
+  
+  ENOG411DPYI,"   ID1  ID2 pearsonR
+  0  NaN  NaN      NaN"
+ENOG411DPZG,"                         ID1                        ID2  pearsonR
+0  sp|A0A1D5XGW0|DMS1B_WHEAT  sp|A0A1X9QHJ0|DMS1D_WHEAT  0.954413"
+
+  Instead of how it should be:
+   ID, ID1, ID2, pearsonR
+ 
+ This is as side effect of flexible apply, which uses the first group to get formatting for the rest of the groups. 
+ https://github.com/pandas-dev/pandas/issues/7739
+ 
+ 
+ 
 ### <font color="red">Git</font>
 
 ##### Insufficient permissions error
