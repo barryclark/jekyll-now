@@ -11,20 +11,24 @@ The file name convention provides date based sorting
 Let's create your first post and discuss Jekyll source file structure
 
 ## Rename the existing post
+
 ~~~
 > cd _posts
 > mv  
 ~~~     
+
 The date in the file name becomes the date of the post.
 
 ## Open the renamed file
 Jekyll transforms files that contain the front matter header
+
 ~~~
 ---
 layout: post
 title: I'm up and running!
 ---
 ~~~
+
 Front matter declares properties for the 'page' scope. Templates and includes
 have access to the page scope during processing.
 

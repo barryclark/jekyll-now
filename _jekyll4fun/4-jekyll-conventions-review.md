@@ -1,7 +1,7 @@
 ---
 layout: lesson
-title: Review Jekyll Conventions
-slug: review-jekyll-conventions
+title: Recap on Jekyll Conventions
+slug: recap-jekyll-conventions
 chapter: 4
 ---
 Congratulations! You now have a blog up and running (or on your way)

@@ -1,7 +1,7 @@
 ---
 layout: lesson
-title: What are Themes?
-chapter: 999
+title: Variations on a Theme
+chapter: 10
 ---
 Themes are composed from
 * layouts
