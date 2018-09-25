@@ -368,7 +368,7 @@ ex. ENS0000001ENS0000002 -> ENS0000001 ENS0000002
      final = original[cols]
  
 ##### Pandas apply returns weird format string
-  If the first row of a dataframe has no output returned from the applied function, then the entire output is coerce to be like:
+  If the first row of a dataframe has no output returned from the applied function, then the entire output from the apply becomes a string in the second column of the final dataframe.
   
   ENOG411DPYI,"   ID1  ID2 pearsonR
   0  NaN  NaN      NaN"
@@ -376,11 +376,13 @@ ENOG411DPZG,"                         ID1                        ID2  pearsonR
 0  sp|A0A1D5XGW0|DMS1B_WHEAT  sp|A0A1X9QHJ0|DMS1D_WHEAT  0.954413"
 
   Instead of how it should be:
-   ID, ID1, ID2, pearsonR
+   "ID, ID1, ID2, pearsonR"
  
- This is as side effect of flexible apply, which uses the first group to get formatting for the rest of the groups. 
- https://github.com/pandas-dev/pandas/issues/7739
+ This is as side effect of flexible apply, which uses the first group to get formatting for the rest of the groups.  https://github.com/pandas-dev/pandas/issues/7739 If the first group has no output, the rest of the group's output is misformatted. 
+
  
+ To fix, filter out the problematic row before the apply 
+ grouped_df.filter(lambda x: len(x) > 1)
  
  
 ### <font color="red">Git</font>
