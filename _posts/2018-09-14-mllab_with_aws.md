@@ -22,10 +22,10 @@ Raul Firu, our CTO, followed up by framing artificial intelligence in the contex
 Talks that added to the ML story kept coming. William Mcgehee - data scientist for Amazon Web Services - showed us where business and technology meet with machine learning and presented how to find machine learning business opportunities, putting together a machine learning process and implementing a machine learning solution.
 ![AWS Process](../images/MLLab/WMgh.jpg)
 
-Jo Rotzinger provided background about specific opportunities that artificial intelligence affords for Haufe Group products and where we can data features to our products. This talk then split into five interactive “product stations” for Salesforce, People OS, Onboarding, Haufe Reference Letter, and iDesk products. Eventgoers were invited to challenge and validate existing ideas and provide input how machine learning could be used for these products and to join the team.
+Jo Rotzinger provided background about specific opportunities that artificial intelligence affords for Haufe Group products and where we can add data features to our products. This talk then split into five interactive “product stations” for Salesforce, People OS, Onboarding, Haufe Reference Letter, and iDesk products. Eventgoers were invited to challenge and validate existing ideas and to provide input how they think machine learning can be used for these products and to join the team.
 ![Product Stations](../images/MLLab/ProductStation.jpg)
 
-The story deepened, as AWS data scientist, Yotam Yarden, dove into the artificial intelligence topic, showing us how to create recommendation engines with Amazon Web Services, taking us through the various challenges, thought processes, data analysis and technical tools needed to create recommender solutions with Amazon Sagemaker.
+The story deepened, as AWS data scientist, Yotam Yarden, dove into the artificial intelligence topic, showing us how to create recommendation engines with Amazon Web Services, taking us through the various challenges, thought processes, data analyses and technical tools needed to create recommender solutions with Amazon Sagemaker.
 ![Recommender Engine](../images/MLLab/YY.jpg)
 
 And, finally, a series of breakout sessions showcased the data projects that are already happening at Haufe Group:
