@@ -16,6 +16,8 @@ permalink: /talk1
 
 My colleague, Nick Black, and I gave a talk to a room full of GIS developers at Esri’s <a target="_blank" href="http://www.esri.com/events/devsummit">2018 Developer Summit</a> conference. The goal was to give them some insight into our design process on the Apps team (design methods, how we collaborate, tools used, etc). These points were reinforced throughout the talk with examples of the ongoing <a target="_blank" href="https://www.esri.com/arcgis-blog/products/collector/field-mobility/collector-aurora-ux-improvements/">redesign of Collector for ArcGIS</a>.
 
-<div class="container__iframe">
-    <iframe src="https://www.youtube.com/embed/KgBjd4S5ZH8?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-</div>
+<section>
+    <div class="container__iframe">
+        <iframe src="https://www.youtube.com/embed/KgBjd4S5ZH8?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+</section>    
