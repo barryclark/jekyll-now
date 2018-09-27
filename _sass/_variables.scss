@@ -1,71 +1,7 @@
+$tablet-and-larger: "(min-width: 768px)";
+$tablet: "(min-width: 768px) and (max-width: 1023px)";
+$desktop: "(min-width: 1024px)";
 
-$darkgray: #333;
-$medgray: #666;
-$blue: #4183C4;
-$accent: #E62757;
-
-$font-10: 0.625em;
-$font-11: 0.6875em;
-$font-12: 0.75em;
-$font-13: 0.8125em;
-$font-14: 0.875em;
-$font-16: 1em;
-$font-18: 1.125em;
-$font-20: 1.25em;
-$font-32: 2em;
-$font-48: 3em;
-
-@font-face {
-  font-family: "Brandon Grotesque";
-  src: url("/fonts/BrandonGrotesque/*ttf") format("ttf");
-}
-
-@font-face {
-  font-family: "Proxima Nova";
-  src: url("/fonts/ProximaNova/*.ttf") format("ttf");
-}
-
-$proxima: "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
-$brandon: "Brandon Grotesque", "Helvetica Neue", Helvetica, Arial, sans-serif;
-
-$sourceserif: 'Source Serif Pro', serif;
-
-@mixin mobile {
-  @media screen and (max-width: 767px) {
-    @content;
-  }
-}
-
-//
-// //
-// // VARIABLES
-// //
-//
-//
-//
-// // Colors
-// $blue: #4183C4;
-//
-// // Grays
-// $black: #000;
-// $darkerGray: #222;
-// $darkGray: #333;
-// $gray: #666;
-// $lightGray: #eee;
-// $white: #fff;
-//
-// // Font stacks
-// $helvetica: Helvetica, Arial, sans-serif;
-// $helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
-// $georgia: Georgia, serif;
-//
-// // Mobile breakpoints
-// @mixin mobile {
-//   @media screen and (max-width: 767px) {
-//     @content;
-//   }
-// }
-//
 // @mixin vertical-align {
 //   position: relative;
 //   top: 50%;

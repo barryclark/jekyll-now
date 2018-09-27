@@ -10,34 +10,18 @@
     <![endif]-->
 
 
-    <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700">
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
     <script src="/js/{{ site.baseurl }}/cssua.min.js"></script>
   </head>
 
   <body>
-    <div class="wrapper">
 
-      <main>
-        {{ content }}
-      </main>
+    {{ content }}
 
-      <footer class="footer">
-        <div class="footer-inner">
-          <div>
-            <a href="https://dribbble.com/dawitelias">dribbble</a>
-            <a href="https://twitter.com/da_weet">twitter</a>
-            <a href="https://www.linkedin.com/in/dawitelias">linkedin</a>
-            <a href="{{ site.baseurl }}/DawitElias-Resume.pdf">resume</a>
-          </div>
-        </div>
-      </footer>
-    </div>
-
-  <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
   <script src="/js/{{ site.baseurl }}/main.js"></script>
-  <script src="/js/{{ site.baseurl }}/elevator.min.js"></script>
+
   {% include analytics.html %}
   </body>
 </html>
