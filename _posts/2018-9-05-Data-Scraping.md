@@ -1,13 +1,15 @@
 ---
 layout: post
-title: Data Scraping
+title: Web Scraping
 ---
 
-Last week we were learning about scraping data off of the web, natural language processing, and tree/forest classifiers. There are multiple ways of scraping data off of the internet. You could use an API (Application Program Interface - a tool made by the programmers of the website to help other programmers interact with their data or other aspects of the site). You might just pull the pure HTML of site. I'm going to try to summarize what I've gleaned and give a rundown on HTML web-scraping here.
+Last week we were learning about scraping data off of the internet, natural language processing, and tree/forest classifiers. There are multiple ways of scraping data off of the internet. You could use an API (Application Program Interface - a tool made by the programmers of the website to help other programmers interact with their data or other aspects of the site) or you might just pull the pure HTML of site. I'm going to try to summarize what I've gleaned and give a rundown on how to do some HTML web scraping here.
 
-### Grabbing the HTML
+I want to see how many times I've committed on GitHub over the past year. If you aren't familiar with Github, they show this information on a nice color-coded chart where the darker the shade is, the more commits you have. (I feel obligated to state that I have barely been using Github and I'm currently using a Github Enterprise account so the number is going to be disappointingly small.)
 
-If you want to capture the entire webpage, you're going to want to take the entirety of the HTML. To do this, we're going to need the requests library. So let's import a few things to start.
+<img src='../images/2018-9-05-Data-Scraping/github_commit_chart.png' alt='My Very Bare Github Commit Chart'>
+
+Since I'm taking the information from the webpage itself instead of any API they might have, I'm going to want to take the HTML. To do this, we're going to need the requests library. So let's import a few things to start.
 
 ```python
 import requests
@@ -20,28 +22,28 @@ url = 'https://www.github.com/gerket'
 res = requests.get(url)
 ```
 
-To make sure that we have gotten a good response, we need to see what the status code is. We can do this by checking `res.status_code`. We're looking for something in the 200's, preferably 200 itself. A list of status codes and their assorted meanings can be found [here](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes).
+To make sure that we have gotten a good response, we need to see what the status code is. We can do this by checking `res.status_code`. We're looking for something in the 200's, preferably 200 itself, as that is the standard success response 'OK.' A list of the different status codes and their assorted meanings can be found [here](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes).
 
-Once we verify the response, we need to figure out what we want to pull from the data.  Using Google Chrome's developer tools we can look at the individual elements of the page and find out what tags and attributes correspond to the data we want. For this example, let's try to pull out the number of commits I've had over the past year. (I feel obligated to state that I have barely been using Github and I'm currently using a Github Enterprise account so the number is going to be disappointingly small.)
+Once we verify the response, we need to figure out what we want to pull from the data.  Using Google Chrome's developer tools we can look at the individual elements of the page and find out what tags and attributes correspond to the data we want. Let's try to pull out the number of commits I've had over the past year. 
 
 If you right-click on an object on the webpage and hit Inspect, we can see that element in the HTML. We can use this to see exactly what elements we want to scrape. Right-click and Inspect a square within the contributions graph and you should have something like this highlighted:
 
-```HTML
+```python
 <g transform="translate(312, 0)">
 
-          <rect class="day" width="10" height="10" x="-11" y="12" fill="#ebedf0" data-count="0" data-date="2018-02-19"></rect>
-          <rect class="day" width="10" height="10" x="-11" y="0" fill="#ebedf0" data-count="0" data-date="2018-02-18"></rect>
-          <rect class="day" width="10" height="10" x="-11" y="24" fill="#ebedf0" data-count="0" data-date="2018-02-20"></rect>
-          <rect class="day" width="10" height="10" x="-11" y="36" fill="#ebedf0" data-count="0" data-date="2018-02-21"></rect>
-          <rect class="day" width="10" height="10" x="-11" y="48" fill="#ebedf0" data-count="0" data-date="2018-02-22"></rect>
-          <rect class="day active" width="10" height="10" x="-11" y="60" fill="#7bc96f" data-count="1" data-date="2018-02-23"></rect>
-          <rect class="day" width="10" height="10" x="-11" y="72" fill="#ebedf0" data-count="0" data-date="2018-02-24"></rect>
-      </g>
+    <rect class="day" width="10" height="10" x="-11" y="12" fill="#ebedf0" data-count="0" data-date="2018-02-19"></rect>
+    <rect class="day" width="10" height="10" x="-11" y="0" fill="#ebedf0" data-count="0" data-date="2018-02-18"></rect>
+    <rect class="day" width="10" height="10" x="-11" y="24" fill="#ebedf0" data-count="0" data-date="2018-02-20"></rect>
+    <rect class="day" width="10" height="10" x="-11" y="36" fill="#ebedf0" data-count="0" data-date="2018-02-21"></rect>
+    <rect class="day" width="10" height="10" x="-11" y="48" fill="#ebedf0" data-count="0" data-date="2018-02-22"></rect>
+    <rect class="day active" width="10" height="10" x="-11" y="60" fill="#7bc96f" data-count="1" data-date="2018-02-23"></rect>
+    <rect class="day" width="10" height="10" x="-11" y="72" fill="#ebedf0" data-count="0" data-date="2018-02-24"></rect>
+</g>
 ```
 
-This gives us some interesting information. We know that each row of boxes is a `<g>` tag with multiple `<rect>` tags, each representing a certain day. We can tell what day specifically by looking at the `data-date` attribute of each. We can further look at the attributes to get more information that we might want. For example, we know that the first box, 
+This gives us some interesting information. We know that each row of boxes is a `<g>` tag with multiple `<rect>` tags, each representing a certain day. We can tell what day specifically by looking at the `data-date` attribute of each. We can further look at the attributes to get more information that we might want. For example, we know that the first box,
 
-```Python
+```python
 <rect class="day" width="10" height="10" x="-11" y="12" fill="#ebedf0" data-count="0" data-date="2018-02-19"></rect>
 ```
 
