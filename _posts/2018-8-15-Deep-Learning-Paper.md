@@ -41,7 +41,9 @@ title: Deep Learning Things
 
 [Segment Everything](https://arxiv.org/abs/1711.10370)  
 
-[Group Normalization](https://arxiv.org/abs/1803.08494)
+[Group Normalization](https://arxiv.org/abs/1803.08494)  
+
+[VGG](https://arxiv.org/pdf/1409.1556.pdf)  
 
 # Learning Blog
 
