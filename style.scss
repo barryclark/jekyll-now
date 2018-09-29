@@ -88,6 +88,19 @@ p{
   margin:0% 10%;
 }
 
+
+#frontloopsio, #shift-type-library{
+  width:40%;
+  padding:10px;
+  color:$blue;
+  font-weight:500;
+  background-color:$yellow;
+}
+#shift-type-library{
+  background-color:$pink;
+  color:$white;
+}
+
 //Footer styles
 .footer{
   background-color:$darkGray;
@@ -104,3 +117,12 @@ p{
   justify-content:space-between;
 
 }
+ @media (max-width: 800px){
+  .content-wrapper{
+    padding:0 5%;
+  }
+  .site-name, .site-description{
+    padding:10px 0px;
+  }
+
+ }
