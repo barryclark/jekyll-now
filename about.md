@@ -1,15 +1,23 @@
 ---
 layout: page
-title: About
+title: About Us
 permalink: /about/
 ---
 
-Some information about you!
+This portfolio includes summaries of some Natural Language Processing related academic papers.
 
-### More Information
+Bilkent University, Computer Science
 
-A place to include any other types of information that you'd like to include about yourself.
+CS578, 2018-2019
 
-### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+
+### Contact us
+
+- [nlpbilkentcs2018@gmail.com](mailto:nlpbilkentcs2018@gmail.com)
+
+- [Emre Dogan](mailto:emre.dogan@bilkent.edu.tr)
+
+- [Dersu Giritlioglu](mailto:dersu@bilkent.edu.tr)
+
+
