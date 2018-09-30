@@ -4,13 +4,22 @@ title: About
 permalink: /about/
 ---
 
-We're UCLA's premiere artificial intelligence and machine learning group. We [teach machine learning](https://github.com/uclaacmai/tf-workshop-series-fall17) (along with the latest frameworks such as Tensorflow), [build cool things together](https://github.com/uclaacmai/Machine-Learning-for-March-Madness), and [read research papers and books](https://github.com/uclaacmai/paper-analysis). We also seek to engage with the broader AI community both in LA and beyond.
+UCLA ACM AI is focused on creating and developing a community of UCLA students who are interested in artificial intelligence and machine learning. 
+
+We hold machine learning workshops, provide quarter/year-long project opportunities, and coordinate with professors and grad students to give tech talks.
 
 ### Officers
-- [Adit Deshpande](http://adeshpande3.github.io)
-- [Henry Yang](https://github.com/hyang97)
-- [Lawrence Chen](https://github.com/lawrencechen98)
-- [Parth Ingle](https://github.com/parthingle)
+- Adit Deshpande (President)
+- Lawrence Chen (Vice-President)
+- Rohan Varma
+- Henry Yang
+- Parth Ingle
+- Megha Ilango
+- Aaron Phillip
+- Sriram Duraisamy
+- Anjali Pemmaraju 
+- Keshav Prasanna 
+- Sharvani Jha 
 
 ### A few of our past events
 
@@ -28,4 +37,4 @@ We're UCLA's premiere artificial intelligence and machine learning group. We [te
 
 ### Contact
 
-Get in touch with [ACM](http://uclaacm.com).
+Get in touch with [ACM](http://uclaacm.com). Join our [ACM AI Facebook Group](https://www.facebook.com/groups/uclaacmai/)
