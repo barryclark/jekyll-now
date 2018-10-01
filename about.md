@@ -4,12 +4,8 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
-
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
+I am a Senior Developer at Rightpoint in Royal Oak Michigan. I have been in the industry over a decade working with .net. I am currently taking special interest in Azure and IoT.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[evan@housenielsen.com](mailto:evan@housenielsen.com)
