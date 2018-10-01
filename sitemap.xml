@@ -3,6 +3,10 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://chrisclarkson.org/about/</loc>
+  </url>
+  
+  <url>
     <loc>https://chrisclarkson.org/categories/</loc>
     <priority>0</priority>
   </url>
@@ -10,6 +14,14 @@
   <url>
     <loc>https://chrisclarkson.org/</loc>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/projects/</loc>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/study/</loc>
   </url>
   
   <url>

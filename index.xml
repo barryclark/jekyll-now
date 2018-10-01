@@ -10,5 +10,37 @@
 	<atom:link href="https://chrisclarkson.org/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title>About Chris</title>
+      <link>https://chrisclarkson.org/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://chrisclarkson.org/about/</guid>
+      <description>Identifies as Developer, Hacker, and Geek.
+Also a keen motorcyclist and boulderer when not chasing around after 2 kids and my darling wife.
+InfoBytes Some fun facts about Chris:
+ Contract IT Consultant based in North of England Loves all things Cyber Security (Seriously doesnt shut up about it - The Wife!). From Rotherham, UK. Married for 7 years. 2 Kids and a Dog too. Crossed the IT-verse in my career so far, from SysAdmin, Development, Platform, DevOps, and finally into Security.</description>
+    </item>
+    
+    <item>
+      <title>Projects</title>
+      <link>https://chrisclarkson.org/projects/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://chrisclarkson.org/projects/</guid>
+      <description> In Progress Work I am doing at the moment&amp;hellip;
+ VulnHub - To support my PWK/OSCP course and generally sharpen those offensive security skills I have been working through some of the machines on here. HackTheBox - More sharpening of skills, but with challenges to test a particular area as well such as RE, crypto etc.  </description>
+    </item>
+    
+    <item>
+      <title>Study List</title>
+      <link>https://chrisclarkson.org/study/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://chrisclarkson.org/study/</guid>
+      <description>Here is a list of the materials I have or am studying.
+Course  Penetration Testing With Kali (In Progress)  The precursor course to the OSCP examination. Its very difficult to put into words how much I have learned from this course so far, and there is always more to learn #TryHarder.  Certified Ethical Hacker (Completed)  An excellent introduction to the ways a hacker works to compromise a system.</description>
+    </item>
+    
   </channel>
 </rss>
