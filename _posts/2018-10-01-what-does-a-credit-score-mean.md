@@ -39,9 +39,13 @@ In particular, a credit score measures your capacity to repay a *new* loan *at t
 Let's recap quickly to [what makes up a credit score](https://www.myfico.com/credit-education/whats-in-your-credit-score/):
 
 > 35%: Your payment history
+>
 > 30%: Amounts owed (how much of your total available credit you’re using at any one time)
+>
 > 15%: The length of your credit history
+>
 > 10%: New credit
+>
 > 10%: Mix of credit
 
 ![What Does a Credit Score Mean?](/images/what-does-a-credit-score-mean.png)
