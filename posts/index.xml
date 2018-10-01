@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Chris Clarkson</title>
+    <link>https://chrisclarkson.org/posts/</link>
+    <description>Recent content in Posts on Chris Clarkson</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 01 Oct 2018 16:52:09 +0100</lastBuildDate>
+    
+	<atom:link href="https://chrisclarkson.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Relaunch</title>
+      <link>https://chrisclarkson.org/posts/first/</link>
+      <pubDate>Mon, 01 Oct 2018 16:52:09 +0100</pubDate>
+      
+      <guid>https://chrisclarkson.org/posts/first/</guid>
+      <description>And so, With the help of Hugo the site has been relaunched.
+Look out for posts on:
+ Hacking Reverse Engineering Electronics Coding The Cloud  There will also be the odd post about Climbing, Motorcycles and other goings on too</description>
+    </item>
+    
+  </channel>
+</rss>

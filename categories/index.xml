@@ -10,5 +10,14 @@
 	<atom:link href="https://chrisclarkson.org/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title>Posts</title>
+      <link>https://chrisclarkson.org/categories/posts/</link>
+      <pubDate>Mon, 01 Oct 2018 16:52:09 +0100</pubDate>
+      
+      <guid>https://chrisclarkson.org/categories/posts/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
