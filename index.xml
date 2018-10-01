@@ -28,10 +28,9 @@ Look out for posts on:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://chrisclarkson.org/about/</guid>
-      <description>Identifies as Developer, Hacker, and Geek.
-Also a keen motorcyclist and boulderer when not chasing around after 2 kids and my darling wife.
-InfoBytes Some fun facts about Chris:
- Contract IT Consultant based in North of England Loves all things Cyber Security (Seriously doesnt shut up about it - The Wife!). From Rotherham, UK. Married for 7 years. 2 Kids and a Dog too. Crossed the IT-verse in my career so far, from SysAdmin, Development, Platform, DevOps, and finally into Security.</description>
+      <description>Identifies as Developer, Hacker, and Geek. Has a passion for all things tech especially if it is Cyber Security related.
+Loves Science Fiction and Fantasy. Favourite books are the Lord of the Rings and books from the Warhammer 40k Universe. Prefers TV Series to Films, Game of Thrones, Walking Dead, Stargate etc. but does enjoy films from the MCU and Star Wars.
+Also a keen motorcyclist and boulderer when not chasing around after 2 kids and my darling wife.</description>
     </item>
     
     <item>
@@ -40,7 +39,7 @@ InfoBytes Some fun facts about Chris:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://chrisclarkson.org/projects/</guid>
-      <description> In Progress Work I am doing at the moment&amp;hellip;
+      <description>Work I am doing at the moment&amp;hellip;
  VulnHub - To support my PWK/OSCP course and generally sharpen those offensive security skills I have been working through some of the machines on here. HackTheBox - More sharpening of skills, but with challenges to test a particular area as well such as RE, crypto etc.  </description>
     </item>
     
