@@ -1,0 +1,7 @@
+Weighted Dice might be a fun program to model distributions. I am sure it exists online, but I'll take it on as a project in p5.js so that I can do a better job teaching it on Outschool.
+
+First I'll consider the objects in this interactive.
+- Dice (sides, weights)
+- Frequency Chart / Histogram
+- Classic Distributions
+- Roll, and simulate many rolls
