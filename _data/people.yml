@@ -1,0 +1,35 @@
+- author: andy_kuszyk
+  name: Andy Kuszyk
+  title: Head of Engineering
+
+- author: jonathan_wilson
+  name: Jonathan Wilson
+  title: Technology Director
+
+- author: jose_bento
+  name: Jose Bento
+  title: Developer
+
+- author: lucy_mackie
+  name: Lucy Mackie
+  title: Product Owner
+  
+- author: matthew_darwin
+  name: Matthew Darwin
+  title: Head of Data
+  
+- author: michael_binks
+  name: Michael Binks
+  title: Head of Site Reliability
+
+- author: pavenpal_bhullar
+  name: Pavenpal Bhullar
+  title: Lead Software Engineer
+
+- author: paul_stevens
+  name: Paul Stevens
+  title: Head of User Experience & Design
+
+- author: tim_carpenter
+  name: Tim Carpenter
+  title: Senior Product Owner
