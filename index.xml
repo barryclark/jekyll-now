@@ -33,6 +33,17 @@ InfoBytes Some fun facts about Chris:
     </item>
     
     <item>
+      <title>Resources</title>
+      <link>https://chrisclarkson.org/resources/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://chrisclarkson.org/resources/</guid>
+      <description> Pages Just some links to pages I have found useful across the internet.
+ Pentesterlabs HackTheBox Hacksplaining BrightTalk 0x00sec Azeria Labs CodeArcana Blackroomsec Radare2 Gitbook Cheatography  Github Repos Useful Repos from Github
+ Ropper Reverse Engineering JohnTheRipper Ninja Admins Awesome Hacking Awesome CyberSkills  </description>
+    </item>
+    
+    <item>
       <title>Study List</title>
       <link>https://chrisclarkson.org/study/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
