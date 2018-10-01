@@ -10,5 +10,9 @@ Data quality assurance
 In order to prepare data for the enrollments analysis, I performed the following tasks:
     Import yearly files
     Check variables in the header row
+    Recovered some lost data from missing values
+    Dropped missing values rather than imputing
+    
+Below I share the code I used to perform these tasks.
     
     
