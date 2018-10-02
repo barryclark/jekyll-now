@@ -4,16 +4,18 @@ title: Upcoming events
 permalink: /events/
 ---
 
-Open FinTech Forum, October 10 - 11 2018, New York
+#### 2018
+
+October 10 - 11, Open FinTech Forum, New York
 * [Real-World Kubernetes Use Cases in Financial Services: Lessons Learned from Capital One, BlackRock and Bloomberg](https://sched.co/G4Mx)
 
-Open Source Summit Europe, October 22 - 24 2018, Edinburgh
+October 22 - 24, Open Source Summit Europe, Edinburgh
 
-VMWorld Europe, November 5 - 9 2018, Barcelona
+November 5 - 9, VMWorld Europe, Barcelona
 
-KubeCon + CloudNativeCon China, November 13 - 15 2018, Shanghai
+November 13 - 15, KubeCon + CloudNativeCon China, Shanghai
 
-DockerCon Europe, December 3 - 5 2018, Barcelona
+December 3 - 5, DockerCon Europe, Barcelona
 
-KubeCon + CloudNative North America, December 10 - 13 2018, Seattle
+December 10 - 13, KubeCon + CloudNative North America, Seattle
 * [Community Building from Scratch: Sharing Experience of CNCF and K8s Meetups](https://sched.co/GrTK)
