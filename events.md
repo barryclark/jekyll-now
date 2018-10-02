@@ -6,14 +6,6 @@ permalink: /events/
 
 ### 2018
 
----
-layout: page
-title: Upcoming events
-permalink: /events/
----
-
-### 2018
-
 October 10 - 11: Open FinTech Forum, New York
 * [Real-World Kubernetes Use Cases in Financial Services: Lessons Learned from Capital One, BlackRock and Bloomberg](https://sched.co/G4Mx)
 
