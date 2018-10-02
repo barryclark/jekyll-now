@@ -4,26 +4,26 @@ title: About
 permalink: /about/
 ---
 
-I am the Director of Ecosystem at the Cloud Native Computing Foundation. I speak frequently at meetups and conferences on container and cloud native technologies.
+I am the Director of Ecosystem at the Cloud Native Computing Foundation. My mission is to make end users successful and productive with cloud native technologies such as Kubernetes and Prometheus.
 
-I founded the [Cloud Native London meetup](https://www.meetup.com/Cloud-Native-London), dedicated to building a strong, open, diverse developer community around the cloud native platform and technologies in London. We have 200-300 monthly attendees; come join us in London on the first Tuesday of each month!
-
-## Preferred forms of address
-
-* Informal: Cheryl
-* Professional: Cheryl J Hung
-* Formal: Ms Cheryl Johnson-Hung
-* Chinese: 洪雪晴
+In addition to being a prolific public speaker, I founded the Cloud Native London meetup. We are a strong, open, diverse developer community around the cloud native platform and technologies in London. Each monthly event gets 200-300 attendees; [come join us in London on the first Tuesday of each month](https://www.meetup.com/Cloud-Native-London)!
 
 ## Background
 
-At StorageOS I was the Product and DevOps manager, building persistent storage for containers. Prior to that, I was a C++ engineer on Google Maps, developing location services, search and ranking infrastructure.
+Previously I led product management and the DevOps engineering team at StorageOS, a startup building persistent storage for containers. At Google, I was a C++ software engineer building location services and search infrastructure for Google Maps. 
 
-I hold a Masters in Computer Science from King's College, University of Cambridge.
+I hold a Masters in Computer Science from the University of Cambridge, King's College.
 
 ## Contact me
 
-[Tweet me](https://twitter.com/oicheryl) for speaking engagements and new opportunities. [Download my resume here.](http://www.oicheryl.com/resources/CherylJHung.pdf)
+[Tweet me](https://twitter.com/oicheryl) for speaking engagements and new opportunities. My preferred forms of address are:
+
+* Informal: Cheryl
+* Professional: Cheryl J Hung
+* Formal: Ms Cheryl Johnson Hung
+* Chinese: 洪雪晴
+
+[Download my resume here.](http://www.oicheryl.com/resources/CherylJHung.pdf)
 
 ### Source code
 
