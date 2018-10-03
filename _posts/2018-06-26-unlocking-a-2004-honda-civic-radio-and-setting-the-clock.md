@@ -28,10 +28,7 @@ In fact, it's probably applicable to Civics outside this year range, as well as 
 
 ## How to Unlock the Radio on a 2004 Honda Civic
 
-<video width="700" height="394" controls>
-    <source src="/video/2004-honda-civic/unlocking-the-radio.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-</video>
+{% include video.html source="/video/2004-honda-civic/unlocking-the-radio.mp4" %}
 
 Instructions:
 1. Make sure the radio is off.
@@ -44,10 +41,7 @@ Instructions:
 
 ## How to Set the Clock on a 2004 Honda Civic
 
-<video width="700" height="394" controls>
-    <source src="/video/2004-honda-civic/setting-the-clock.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-</video>
+{% include video.html source="/video/2004-honda-civic/setting-the-clock.mp4" %}
 
 Instructions:
 1. Make sure the radio is off, but powered (i.e. the car ignition is not completely off, perhaps in accessory mode).
