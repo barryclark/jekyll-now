@@ -3,14 +3,15 @@
 #
 
 # Name of your site (displayed in the header)
-name: Your Name
+name: Learning Haskell
 
 # Short bio or description (displayed in the header)
-description: Web Developer from Somewhere
+description: for ASD-APP
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
 
+theme: jekyll-theme-modernist
 #
 # Flags below are optional
 #
@@ -21,12 +22,12 @@ footer-links:
   email:
   facebook:
   flickr:
-  github: barryclark/jekyll-now
+  github: 
   instagram:
   linkedin:
   pinterest:
-  rss: # just type anything here for a working RSS icon
-  twitter: jekyllrb
+  rss: rss# just type anything here for a working RSS icon
+  twitter:
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
@@ -47,7 +48,7 @@ url:
 # (http://yourusername.github.io/repository-name)
 # and NOT your User repository (http://yourusername.github.io)
 # then add in the baseurl here, like this: "/repository-name"
-baseurl: ""
+baseurl: "/Haskell"
 
 #
 # !! You don't need to change any of the configuration flags below !!
@@ -84,3 +85,4 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+
