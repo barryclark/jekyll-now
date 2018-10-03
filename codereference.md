@@ -468,6 +468,10 @@ ENOG411DPZG,"                         ID1                        ID2  pearsonR
 ##### Get r.squared from a linear regression
         a <- summary(lm(a ~ b), data =d)
         a$r.squared
+        
+##### Get more space between facet panel text and label
+       + theme(strip.text = element_text(margin = margin(.1, 0, .2, 0, "cm"))
+        
 ##### Make r variables on the fly, and assign them values (very rare to do)
 
         ct <- 1
