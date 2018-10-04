@@ -7,6 +7,7 @@ permalink: /events/
 ### 2018
 
 October 10 - 11: Open FinTech Forum, New York
+* [Keynote: Cheryl Hung, Director of Ecosystem, Cloud Native Computing Foundation](https://sched.co/G4kB)
 * [Real-World Kubernetes Use Cases in Financial Services: Lessons Learned from Capital One, BlackRock and Bloomberg](https://sched.co/G4Mx)
 
 October 22 - 24: Open Source Summit Europe, Edinburgh
