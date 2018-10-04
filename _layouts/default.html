@@ -64,7 +64,7 @@
 		{% for javascript in javascripts %}{% unless javascript == blank %}<script src="{{ javascript }}"></script>{% endunless %}{% endfor %}
 		{% for javascript in deferedjavascripts %}{% unless javascript == blank %}<script defer src="{{ javascript }}"></script>{% endunless %}{% endfor %}
 		
-		<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+		<!--[if lt IE 9]><script src="https://origin2.jsdelivr.net/html5shiv/3.7.3/html5shiv.min.js"></script><![endif]-->
 		
 		{% for css in csses %}{% unless css == blank %}<link rel="stylesheet" type="text/css" href="{{ css }}" />{% endunless %}{% endfor %}
 		<link rel="stylesheet" href="/css/font-awesome/fontawesome.css">
