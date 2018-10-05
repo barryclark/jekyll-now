@@ -39,4 +39,6 @@ TNCs (Uber, Lyft, ect.) frequently pick up and drop off passengers in the right 
 
 The modern curb is an incredibly busy place. The disruptive mobility technology changes over the past decade has made this even more clear. On-street parking is rarely the best use for curbs in an urban area like downtown Austin. 
 
+![config.yml]({{site.baseurl}}/images/my_park.jpg)
+
 Charlie
