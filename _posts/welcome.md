@@ -3,7 +3,7 @@ layout: post
 title: Welcome to the Drupal Jungle
 ---
 
-<b> Bienvenido/as a este blog donde trataremos aspectos relacionados con el desarrollo en Drupal 8 <b>
+<h1> Bienvenido/as a este blog donde trataremos aspectos relacionados con el desarrollo en Drupal 8 </h1>
 
 De modo que te invito a agarrate fuerte y comenzar esta montaña rusa que es Drupal.
 
