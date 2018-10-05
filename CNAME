@@ -1,4 +1,1 @@
-type: CNAME
-host: www.drupalhalla.com
-answer: riloto8.github.io
-TTL: 300
+www.drupalhalla.com
