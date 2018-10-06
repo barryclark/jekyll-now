@@ -79,7 +79,7 @@ All of the data contains a CDS_CODE that is a unique identifier for County, Dist
 </div>
 
 # Cleaning<a name="clean"></a>
-I first convert them to data tables:
+I first convert a list of data frames to data tables:
 
 ```R
 # Returns a datatable from a list of tab delimited files and a list of names
@@ -96,20 +96,20 @@ I will bind the data tables across years together into one large data.table in o
 
 While binding tables together, many NA values have been introduced. Much of this can be explained by schools opening and closing. Additionally, the master list of schools for California is only kept up-to-date, meaning that historical data on schools that have since closed or changed CDS_CODE needs to be recreated from what data we can find in the enrollment files.
 
-Luckily, the '92 data file does include county and school name information along with CDS_CODES - so we can recover some NA_VALUES.
+Luckily, the '92 data file does include county and school name information along with CDS_CODES - so we can recover some NA_VALUES. I go into more detail about this in my [Data Cleaning]() post.
 
 # Features<a name="feature"></a>
 The first thing to notice is that enrollments seem to be decreasing in many areas even though population has been rising. Normalizing for population growth seems like something worth trying.
 
 In California, a child must be five years old BEFORE September 1 in order to enroll in kindergarten. Elementary school is kindergarten through 5th grade (ages 5-10), middle school is grades 6-8 (ages 11-13), and high school is grades 9-12 (ages 14-18). I will use these figures copied from a [Stanford resource](https://cardinalatwork.stanford.edu/benefits-rewards/worklife/children-family/school-age-resources) to define school-aged children and pull that data from Census resources.
 
-To understand locations where enrollment is trending down or trending up we can create a trending score feature.
+To understand locations where enrollment is trending down or trending up we can create an _enrollment trending score_ feature.
 
-To identify schools with high diversity entropy and low diversity entropy we can create a diversity entropy score feature.
+To identify schools with high diversity entropy and low diversity entropy we can create a _diversity entropy score_ feature.
 
-To identify schools with high class entropy and low class entropy we can create a class entropy score feature.
+To identify schools with high class entropy and low class entropy we can create a _class entropy score_ feature.
 
-Who gets pushed out of schools? Opportunity transfers, expulsions, suspension rates ...
+Who gets pushed out of schools? Opportunity transfers, expulsions, and suspension rates are things to look into if there is enough data going back.
 
 # Algorithm<a name="algo"></a>
 
