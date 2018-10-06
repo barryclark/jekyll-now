@@ -38,12 +38,17 @@
       // THIS KEY WON'T WORK IN PRODUCTION!!!
       // To make your own Google API key, follow the directions here:
       // http://fullcalendar.io/docs/google_calendar/
-      googleCalendarApiKey: 'AIzaSyBVX6S_oqxfH142jtY4dKoX2lNpB1oc9ew',
-
-      // MCA Math League calendar
-      events: '
-mcvts.net_smjopo38u9g1n3hq6bejshroeg@group.calendar.google.com',
-
+      googleCalendarApiKey: 'AIzaSyBNH5_OOTcrJwRP8INNcx98RlalqGLuGR4',
+    	eventSources: [
+      	{
+        	googleCalendarId: 'h74gapvve945n7sg8msl7s1pc4@group.calendar.google.com'
+      		className: 'Invitational'
+	},
+      	{
+        	googleCalendarId: 'a96mtimev43ka8trvs50cib22k@group.calendar.google.com',
+        	className: 'Invitational'
+      	}
+    	]
       eventClick: function(event) {
         // opens events in a popup window
         window.open(event.url, 'gcalevent', 'width=700,height=600');
