@@ -1,10 +1,10 @@
 ---
 layout: page
-title: About
+title: About me
 permalink: /about/
 ---
 
-My name's Tran Van Quoc Thang
+My name's Tran Van Quoc Thang <i class='fa fa-heart animation-heart infinite animation-pulse'></i>
 
 Birthday: 29-10-2002
 
@@ -29,3 +29,6 @@ Birthday: 29-10-2002
  -------------------------------------------------
  
 　■ 　 Email:　　　 [comehere.thang@gmail.com](mailto:comehere.thang@gmail.com)
+ 
+
+　■ 　 Phone: 0866.085.276
