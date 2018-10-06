@@ -31,4 +31,4 @@ Birthday: 29-10-2002
 　■ 　 Email:　　　 [comehere.thang@gmail.com](mailto:comehere.thang@gmail.com)
  
 
-　■ 　 Phone: 0866.085.276
+　■ 　 Phone:　　　 0866.085.276
