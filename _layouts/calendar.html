@@ -55,15 +55,14 @@
       loading: function(bool) {
         $('#loading').toggle(bool);
       }
-
-      $('.fc-event').mouseenter(function() {
-        $(this).addClass('fc-event-hover');
-      });
-      $('.fc-event').mouseleave(function() {
-        $(this).removeClass('fc-event-hover');
-      });
     });
-
+      
+    $('.fc-event').mouseenter(function() {
+      $(this).addClass('fc-event-hover');
+    });
+    $('.fc-event').mouseleave(function() {
+      $(this).removeClass('fc-event-hover');
+    });
   });
   
 </script>
