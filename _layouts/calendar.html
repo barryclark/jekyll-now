@@ -1,0 +1,105 @@
+---
+layout: page
+---
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+
+    {% include meta.html %}
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+<link rel='stylesheet' href='{{ site.baseurl }}/fullcalendar/fullcalendar.min.css' />
+<link href='{{ site.baseurl }}/fullcalendar/fullcalendar.print.min.css' rel='stylesheet' media='print' />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<script src='{{ site.baseurl }}/assets/lib/moment.min.js'></script>
+<script src='{{ site.baseurl }}/assets/lib/jquery.min.js'></script>
+<script src='{{ site.baseurl }}/fullcalendar/fullcalendar.min.js'></script>
+<script src='{{ site.baseurl }}/fullcalendar/gcal.min.js'></script>
+
+<script>
+  
+  $(document).ready(function() {
+
+    $('#calendar').fullCalendar({
+	  themeSystem: 'bootstrap4',
+      header: {
+        left: 'prev,next today',
+        center: 'title',
+        right: 'month,listYear'
+      },
+
+      displayEventTime: false, // don't show the time column in list view
+
+      // THIS KEY WON'T WORK IN PRODUCTION!!!
+      // To make your own Google API key, follow the directions here:
+      // http://fullcalendar.io/docs/google_calendar/
+      googleCalendarApiKey: 'AIzaSyBVX6S_oqxfH142jtY4dKoX2lNpB1oc9ew',
+
+      // US Holidays
+      events: 'en.usa#holiday@group.v.calendar.google.com',
+
+      eventClick: function(event) {
+        // opens events in a popup window
+        window.open(event.url, 'gcalevent', 'width=700,height=600');
+        return false;
+      },
+
+      loading: function(bool) {
+        $('#loading').toggle(bool);
+      }
+
+    });
+
+  });
+  
+</script>
+  </head>
+
+  <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
+
+          <div class="site-info">
+            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
+            <p class="site-description">{{ site.description }}</p>
+          </div>
+
+          <nav>
+            <a href="{{ site.baseurl }}/">Blog</a>
+            <a href="{{ site.baseurl }}/about">About</a>
+            <a href="{{ site.baseurl }}/competitions">Competitions</a>
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      <article class="page">
+        <h1>{{ page.title }}</h1>
+        <div class="entry">
+          {{ content }}
+        </div>
+      </article>
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          {% include svg-icons.html %}
+        </footer>
+      </div>
+    </div>
+
+    {% include analytics.html %}
+  </body>
+</html>
