@@ -3,11 +3,11 @@ layout: page
 title: Competitions
 permalink: /competitions/
 ---
-<link rel='stylesheet' href='fullcalendar/fullcalendar.css' />
-<script src='_assets/lib/jquery.min.js'></script>
-<script src='_assets/lib/moment.min.js'></script>
-<script src='fullcalendar/fullcalendar.js'></script>
-<script src='fullcalendar/gcal.min.js'></script>
+<link rel='stylesheet' href='../fullcalendar/fullcalendar.css' />
+<script src='../_assets/lib/jquery.min.js'></script>
+<script src='../_assets/lib/moment.min.js'></script>
+<script src='../fullcalendar/fullcalendar.js'></script>
+<script src='../fullcalendar/gcal.min.js'></script>
 
 <script>
   
