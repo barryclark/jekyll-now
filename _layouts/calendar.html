@@ -26,27 +26,21 @@
   $(document).ready(function() {
 
     $('#calendar').fullCalendar({
-	  themeSystem: 'bootstrap4',
+      themeSystem: 'bootstrap4',
       header: {
         left: 'prev,next today',
         center: 'title',
         right: 'month,listYear'
       },
 
-      displayEventTime: false, // don't show the time column in list view
-
-      // THIS KEY WON'T WORK IN PRODUCTION!!!
-      // To make your own Google API key, follow the directions here:
-      // http://fullcalendar.io/docs/google_calendar/
       googleCalendarApiKey: 'AIzaSyBNH5_OOTcrJwRP8INNcx98RlalqGLuGR4',
-    	eventSources: [
+    	
+      eventSources: [
       	{
         	googleCalendarId: 'h74gapvve945n7sg8msl7s1pc4@group.calendar.google.com'
-      		className: 'Invitational'
 	},
       	{
-        	googleCalendarId: 'a96mtimev43ka8trvs50cib22k@group.calendar.google.com',
-        	className: 'Invitational'
+        	googleCalendarId: 'a96mtimev43ka8trvs50cib22k@group.calendar.google.com'
       	}
     	]
       eventClick: function(event) {
