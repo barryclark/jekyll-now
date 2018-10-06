@@ -8,17 +8,17 @@
     <!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
 
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
   </head>
 
   <body>
-    <div class="wrapper-masthead">
-      <div class="container">
-        <header class="masthead clearfix">
+    <div class="content-wrapper">
+        <header class="masthead">
           <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
 
           <div class="site-info">
@@ -27,24 +27,35 @@
           </div>
 
           <nav>
-            <a href="{{ site.baseurl }}/">Blog</a>
-            <a href="{{ site.baseurl }}/about">About</a>
+            <a class="menu-link" href="{{ site.baseurl }}/">Блог</a>
+            <a class="menu-link" href="{{ site.baseurl }}/projects">Проекты</a>
+            <a class="menu-link" href="{{ site.baseurl }}/about">Обо мне</a>
           </nav>
         </header>
-      </div>
-    </div>
+      
+    
 
     <div id="main" role="main" class="container">
       {{ content }}
     </div>
 
-    <div class="wrapper-footer">
-      <div class="container">
-        <footer class="footer">
-          {% include svg-icons.html %}
-        </footer>
+    
+    </div>  
+    <footer class="footer">
+      <div class="footer__container">
+       <div class="copyrigths"> 
+        <p>Сайт разработан с помощью <a href="https://jekyllrb.com/">Jekyll</a> размещен на <a href="https://pages.github.com/">GitHub Pages</a> </p>
+        <p>© 2018</p>
+
+       </div>
+          <div class="social-icons">{% include footer-icons.html %}</div>
+
+
+
       </div>
-    </div>
+    </footer>
+
+    
 
     {% include analytics.html %}
   </body>

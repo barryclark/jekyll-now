@@ -1,5 +1,6 @@
 ---
 layout: default
+comments: true
 ---
 
 <article class="post">
@@ -10,7 +11,7 @@ layout: default
   </div>
 
   <div class="date">
-    Written on {{ page.date | date: "%B %e, %Y" }}
+    {% include date.html date=page.date %}
   </div>
 
   {% include disqus.html %}
