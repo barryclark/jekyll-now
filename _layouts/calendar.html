@@ -55,14 +55,17 @@
       loading: function(bool) {
         $('#loading').toggle(bool);
       }
+	    
+      eventMouseover: function(event) {
+	$(this).addClass('fc-event-hover'); 
+    },
+				
+      eventMouseout: function(event) {
+	$(this).removeClass('fc-event-hover');    
+    },
     });
       
-    $('.fc-event').mouseenter(function() {
-      $(this).addClass('fc-event-hover');
-    });
-    $('.fc-event').mouseleave(function() {
-      $(this).removeClass('fc-event-hover');
-    });
+
   });
   
 </script>
