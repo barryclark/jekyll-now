@@ -8,6 +8,7 @@ permalink: /competitions/
 <script src='_assets/lib/moment.min.js'></script>
 <script src='fullcalendar/fullcalendar.js'></script>
 
+<script>
   $(document).ready(function() {
 
     $('#calendar').fullCalendar({
@@ -79,7 +80,7 @@ permalink: /competitions/
     });
 
   });
-
+</script>
 
 We run competitions!
 
