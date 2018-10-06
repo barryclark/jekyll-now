@@ -9,24 +9,38 @@ Data quality assurance
 
 During this cleaning I discovered the Caifornia Deparment of Education (CDE) doesn't keep track of closed schools after some time. Since 1981, 322 schools are forgotten. If you look at the national data, it is even worse. This seems a seems a shame for people that went to those schools, even though they are closed now. What if they are interested in how their school performed in the past stacked up against other schools? They will never know because CDE let their records be discarded... 
 
-In order to prepare data for the enrollments analysis, I performed the following tasks:
+In order to prepare data for the enrollments analysis, I performed most of the cleaning tasks outlined above. Below I share the code and reasoning I used to perform these tasks.
     Download various file formats
     Import and merge yearly files
     Check variables in the header row
     Recovered some lost data from missing values
     Dropped missing values rather than imputing
     Merged various tables to create a larger dataset for visualizations and analysis
-    
-Below I share the code and reasoning I used to perform these tasks.
-    
-**Download Files**
+#Import  
+##Download Files
 Originally I wrote a scraper in python to bulk download the files from http://www.cde.ca.gov/ds/sd/sd/, however I was having timeout issues from the cde server and clicking a few dozen links isn't that bad, so I downloaded by hand.
-File formats include .csv, .xls, .txt, .zip, .dbf, .exe (all pretty straightforward except that on mac .dbf requires OpenOffice and .exe are self-extracting zip files that can be unzipped on the command line). I organized the files in a Data/ subdirectory within my project directory.
+File formats include .csv, .xls, .txt, .zip, .dbf, .exe (all pretty straightforward except that on mac .dbf requires OpenOffice and .exe are self-extracting zip files that can be unzipped on the command line). 
+I converted all files to either .txt or .csv and organized the files in a Data/ subdirectory within my project directory.
 
-##Cleaning##
+##Import Files
+In this case I imported files directly from a local repository. For the most part this only requires the [read.table](https://www.rdocumentation.org/packages/utils/versions/3.5.1/topics/read.table) function from base R.
+.txt are tab delimeted and .csv are comma delimited so the main difference is the sep parameter:
+
+For .txt files
+'''R
+DT.list <- lapply(el0117.list, read.table, fill=TRUE, na.strings=c("", "NA"), sep ="\t", quote = "", header=TRUE, check.names=FALSE)
+'''
+For .csv there is a built-in read.csv that makes sep=","
+'''R
+DT.list <- lapply(el8000.list, read.csv, header=TRUE, check.names=FALSE)
+'''
+
+#Join
 CDE does include a file structure file for each individual file, so I looked through each of these to find boundaries between structural changes to the data. With enrollment data, these changes created 5 timespans: 1981-1992, 1993-1997, 1998-2006, 2007-2008, 2009-2017. Additionally there are historical enrollment files from 1948-1980, however they don't include many variables. 1948-1969, 1970-1976, 1977-1980 only have county-level enrollment (no School-level data, no ethinicities)
 48-69 seperates grades, 48-76 seperates gender, 77-80 only has total enrollment by county without gender or grades.
 
 
 For ELs there is a hint about the TOTAL variable starting in 95 and changing in 98. However, the real story is that the filetype changes between starting year 2000 and 2001, there are no header rows for starting years 2002-2008, and 
+
+#Missing Values
     
