@@ -111,6 +111,24 @@ img {
   max-width: 100%;
 }
 
+.emoji {
+  vertical-align: middle;
+}
+
+.toc {
+    background: #f9f9f9 none repeat scroll 0 0;
+    border: 1px solid #aaa;
+    display: table;
+    font-size: 95%;
+    margin-bottom: 1em;
+    padding: 20px;
+    width: auto;
+}
+
+.toc li, #toc ul, .toc ul li{
+    list-style: outside none none !important;
+}
+
 // Fixes images in popup boxes from Google Translate
 .gmnoprint img {
   max-width: none;
