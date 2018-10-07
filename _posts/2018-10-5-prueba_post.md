@@ -9,7 +9,7 @@ comments: true
 ---
 
 
-##Creacion de campos compuestos o personalizados (custom fields)
+## Creacion de campos compuestos o personalizados (custom fields)
 
 A medida que comenzamos a desarrollar en Drupal nos vamos encontrando con la necesidad de reutilizar grupos de campos simples. 
 Por ejemplo, a la hora almacenar la información personal de N personas. 
@@ -32,3 +32,7 @@ Y para cada Asociacion almacenaremos:
   * Nombre Asociación
   * Nº Miembros
   * Miembro de la Junta Directiva
+
+[Linkedin](http://linkedin.com)
+
+`una linea de codigo de prueba`
