@@ -135,11 +135,14 @@ There is a change in filetype between 2003 and 2004. In the first set there are 
   ..$ CALW_PCT,N,20,5  : num [1:8435] 0.06661 0.00666 0.03318 0.04219 0.08588 ...
   ..$ MEAL_PCT,N,20,5  : num [1:8435] 0.217 0.0222 0.1192 0.3277 0.2955 ...
   '''
- 
- We add year and district columns to 1998, and there is an extra column called "Rank" that may need to be removed for merging... or if it looks to be on later years (2004+), we can add it to these. Additionally, before 1998 includes AFDC_PCT and FREE_PCT, and these two variables need to be added post 1998. Finally, post 1997 include CALWORKS, TOTAL_MEAL, CALW_PCT, MEAL_PCT so these 4 variables should be backfilled - so the final list of colnames for the merge should be,
- 
- 
- In the second set, there are multiple changes in variables: every starting year until 2014 changed has a different structure file... 2004 20 vars? (14), 2005 13 vars, 2006 14, 2007 14, 2008 14, 2009 14 , 2010 14 , 2011 15, 2012 22, 2013 28, 2014-2017 28 (headers in 2017 first col same as 2013 colnames?)
+I add year and district columns to 1998, and there is an extra column called "Rank" that may need to be removed for merging... or if it looks to be on later years (2004+), we can add it to these. Additionally, before 1998 includes AFDC_PCT and FREE_PCT, and these two variables need to be added post 1998. Finally, post 1997 include CALWORKS, TOTAL_MEAL, CALW_PCT, MEAL_PCT. The two MEAL vars can be backfilled, but Calworks is specific to post-97. So these are two seperate date ranges. The final list of colnames for each range should be,
+'''R
+colnames97 <- c("YEAR", "C", "D", "S", "DISTRICT", "SCHOOL", "GRD_SPAN", "PUBLIC_ENR", "PRIVATE_ENR", "RED_MEALS", "FREE_MEALS", "TOTAL_MEAL", "CALW_PCT", "RED_PCT", "FREE_PCT", "MEAL_PCT")
+colnames98 <- c("YEAR", "C", "D", "S", "DISTRICT", "SCHOOL", "GRD_SPAN", "PUBLIC_ENR", "PRIVATE_ENR", "CALWORKS", "RED_MEALS", "FREE_MEALS", "TOTAL_MEAL", "CALW_PCT", "RED_PCT", "FREE_PCT", "MEAL_PCT")
+'''
+
+In the second set, there are multiple changes in variables: every starting year until 2014 has a different structure file... 2004 20 vars? (14), 2005 13 vars, 2006 14, 2007 14, 2008 14, 2009 14 , 2010 14 , 2011 15, 2012 22, 2013 28, 2014-2017 28. 
+So it looks as though the same colnames from 1998 can be used until 2011. Followed by one or two more name vectors in 2012 and 2013-2017. First I checked if the headers in 2017 were the same as 2013 colnames,
  '''R
  > colnames(DT.list$`2013`)
  [1] "Academic Year"                                        "County Code"                                          "District Code"                                        "School Code"                                         
