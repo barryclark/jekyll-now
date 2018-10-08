@@ -3,13 +3,13 @@
     <img class="comment__avatar" src="https://www.gravatar.com/avatar/{{ include.email }}?d=mm&s=80" alt="{{ include.name }}">
   </div>
   <div class="comment__content-wrapper">
-    <h3 class="comment__author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <h4 class="comment__author" itemprop="author" itemscope itemtype="http://schema.org/Person">
       {% unless include.url == blank %}
         <span itemprop="name"><a rel="external nofollow" itemprop="url" href="{{ include.url }}">{{ include.name }}</a></span>
       {% else %}
         <span itemprop="name">{{ include.name }}</span>
       {% endunless %}
-    </h3>
+    </h4>
     <p class="comment__date">
       {% if include.date %}
         {% if include.index %}<a href="#comment{{ include.index }}" itemprop="url">{% endif %}

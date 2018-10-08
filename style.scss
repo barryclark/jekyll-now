@@ -25,13 +25,6 @@ body {
   line-height: 1.45;
 }
 
-.container {
-  margin: 0 auto;
-  max-width: 740px;
-  padding: 0 20px;
-  width: 100%;
-}
-
 h1, h2, h3, h4, h5, h6 {
   color: $darkerGray;
   font-weight: bold;
@@ -116,17 +109,22 @@ img {
 }
 
 .toc {
-    background: #f9f9f9 none repeat scroll 0 0;
-    border: 1px solid #aaa;
-    display: table;
-    font-size: 95%;
-    margin-bottom: 1em;
-    padding: 20px;
-    width: auto;
+  background: #f9f9f9 none repeat scroll 0 0;
+  border: 1px solid #aaa;
+  display: table;
+  font-size: 75%;
+  margin-bottom: 1em;
+  padding: 15px;
+  width: auto;
 }
 
-.toc li, #toc ul, .toc ul li{
+.toc li, .toc ul, .toc ul li{
     list-style: outside none none !important;
+    padding: 0px;
+}
+
+.toc ul {
+  margin-left: 15px;
 }
 
 // Fixes images in popup boxes from Google Translate
@@ -341,7 +339,7 @@ footer {
 }
 
 #not-header {
-  top: 100px;
+  top: 120px;
   position: relative;
   @include mobile {
     position: static;
@@ -504,7 +502,8 @@ input,textarea,select {
   color: red;
 }
 .js-comments {
- margin: 80px 0px 0px 0px;
+  font-size: 14px;
+  margin: 80px 0px 0px 0px;
 }
 .page__comments {
  float:left;

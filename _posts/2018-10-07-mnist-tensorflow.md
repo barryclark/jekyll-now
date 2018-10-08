@@ -49,6 +49,7 @@ optimiser = tf.train.AdagradOptimizer(learning_rate=0.001).minimize(loss)
 init_op = tf.global_variables_initializer()
 ```
 
+So in the above section we defined some variables (stuff which is updated and persists between runs) and some computations like multiplication and the loss function. For every input matrix $x$, we now have a defined loss. We then tell our optimiser to minimize the loss, which it does by tweaking the variables specified in the graph. Finally we have the variable initializer, which creates initial states for any variables which are defined using a distribution (we don't use those).
 
 
 ## Using tensorflow (for mnist)

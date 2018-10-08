@@ -9,6 +9,7 @@
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
@@ -47,9 +48,20 @@
       </div>
     </div>
 
-    <div id="not-header" class="grid-container">
-      <div id="main" role="main" class="container">
-        {{ content }}
+    <div id="not-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-2">
+            {% if page.picture %}
+              {% include toc.html html=content class="toc" h_max=3 %}
+            {% endif %}
+          </div>
+          <div class="col-lg-8">
+            {{ content }}
+          </div>
+          <div class="col-sm-2">
+          </div>
+        </div>
       </div>
 
       <div class="wrapper-footer">
