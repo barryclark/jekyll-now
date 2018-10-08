@@ -5,7 +5,7 @@ date: 2018-10-07
 author: Dorian 
 categories: [machine-learning, tensorflow]
 picture: /assets/images/mnist/title_banner.jpg
-published: true
+published: false
 excerpt: Something about article here
 ---
 
