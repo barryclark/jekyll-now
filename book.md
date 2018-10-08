@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Book
+title: Book time to chat
 permalink: /book/
 ---
 
