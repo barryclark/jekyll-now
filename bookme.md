@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Book time to chat
-permalink: /book/
+permalink: /bookme/
 ---
 
 <!-- Calendly inline widget begin -->
