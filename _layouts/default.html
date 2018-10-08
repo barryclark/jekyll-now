@@ -10,6 +10,11 @@
     <![endif]-->
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+    <!-- add after bootstrap.min.js -->
+    <script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.0/dist/bootstrap-toc.min.js"></script>
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
@@ -25,18 +30,30 @@
     <script type="text/x-mathjax-config">
       MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)'], ['$$','$$']]}});
     </script>
-
-    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+    <script type="text/javascript">
+      (function($, window) {
+        var adjustAnchor = function() {
+            var $anchor = $(':target'),
+                    fixedElementHeight = 125;
+            if ($anchor.length > 0) {
+              window.scrollTo(0, $anchor.offset().top - fixedElementHeight);
+            }
+        };
+        $(window).on('hashchange load', function() {
+            adjustAnchor();
+        });
+    })(jQuery, window);
+    </script>
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target="#toc" data-offset="115">
     <div class="wrapper-masthead">
       <div class="container">
         <header class="masthead clearfix">
           <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
 
           <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
+            <h1 data-toc-skip class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
             <p class="site-description">{{ site.description }}</p>
           </div>
 
@@ -52,9 +69,7 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-2">
-            {% if page.picture %}
-              {% include toc.html html=content class="toc" h_max=3 %}
-            {% endif %}
+            <nav id="toc" data-toggle="toc" class="sticky-top"></nav>
           </div>
           <div class="col-lg-8">
             {{ content }}
