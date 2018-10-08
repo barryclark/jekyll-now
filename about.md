@@ -20,4 +20,6 @@ CS578, 2018-2019
 
 - [Dersu Giritlioglu](mailto:dersu@bilkent.edu.tr)
 
+- [Gözde Güneşli] (mailto:nur.gunesli@bilkent.edu.tr)
+
 
