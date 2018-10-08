@@ -48,11 +48,43 @@ CDE does include a file structure file for each individual file, so I looked thr
 ##Enrollment
 With enrollment data, these changes created 5 timespans: 1981-1992, 1993-1997, 1998-2006, 2007-2008, 2009-2017. The primary difference was that ETHNIC categories changed as discussed in my post on [Enrollments by Ethnicity]().
 Additionally there are historical enrollment files from 1948-1980, however they don't include many variables. 1948-1969 seperates grades and gender, 1970-1976 seperates gender, 1977-1980 only have county-level enrollment (no School-level data, no ethinicities).
-###Ethnicity
+###CDS_CODE
+County, District, and School values are missing from 1981-1992, 1993-1997, and 2007-2008, so these are imputed with correct values from a database of California Public Schools.
+'''R
+# Load database of California Public Schools
+# CDE doesn't keep complete CDS records at https://www.cde.ca.gov/ds/si/ds/pubschls.asp
+pubsch <- read.table("./Data/CA/pubschls.txt", fill=TRUE, na.strings=c("", "NA"), sep ="\t", quote = "", header=TRUE)
+pubsch <- data.table(pubsch)
+setnames(pubsch, c("CDSCode", "County", "District", "School"), c("CDS_CODE", "COUNTY", "DISTRICT", "SCHOOL"))
+pubsch <- pubsch[, CDS_CODE:=as.character(CDS_CODE)]
+# Attempted NCES list at https://nces.ed.gov/programs/edge/geographicGeocode.aspx but it was LESS schools
 
+# Create data.table with CDSCode County District School Charter Latitude Longitude
+sch <- pubsch[,.(CDS_CODE, COUNTY, DISTRICT, SCHOOL, Charter, Latitude, Longitude)]
+setkey(sch, CDS_CODE)
+sch <- unique(sch)
+
+# Create data.table with school CDS information only
+cds <- sch[,.(CDS_CODE, COUNTY, DISTRICT, SCHOOL)]
+setkey(cds, CDS_CODE)
+
+# Set key for data tables
+setkey(DT92, CDS_CODE); setkey(DT06, CDS_CODE); setkey(DT97, CDS_CODE); setkey(DT16, CDS_CODE)
+
+# Reorder cols in DT92, DT08 and DT16
+setcolorder(DT08, c("CDS_CODE", "COUNTY", "DISTRICT", "SCHOOL", "YEAR", "ETHNIC", "GENDER", "KDGN", "GR_1", "GR_2", "GR_3", "GR_4", "GR_5", "GR_6", "GR_7", "GR_8", "UNGR_ELM", "GR_9", "GR_10", "GR_11", "GR_12", "UNGR_SEC", "ENR_TOTAL", "ADULT"))
+setcolorder(DT16, c("CDS_CODE", "COUNTY", "DISTRICT", "SCHOOL", "YEAR", "ETHNIC", "GENDER", "KDGN", "GR_1", "GR_2", "GR_3", "GR_4", "GR_5", "GR_6", "GR_7", "GR_8", "UNGR_ELM", "GR_9", "GR_10", "GR_11", "GR_12", "UNGR_SEC", "ENR_TOTAL", "ADULT"))
+
+# Merge County, District, School onto 92, 97 and 06 datatables
+DT92 <- cds[DT92] # duplicates existing district and school
+DT97 <- cds[DT97]
+DT06 <- cds[DT06]
+'''
+###Ethnicity
+Since ETHNIC categories changed I kept four timespans as seperate .csv files.
 
 ##English Larners
-For ELs there is a hint about the TOTAL variable starting in 95 and changing in 98. However, changing colnames is straightforward, the full story is that the filetype changes between starting year 2000 and 2001, there are no header rows for starting years 2002-2008, and the duplicate column in '80 that was removed in the code snippet above.
+For ELs there is a hint about the TOTAL variable starting in 95 and changing in 98. However, changing colnames is straightforward, the full story is that the filetype changes between starting year 2000 and 2001, there are no header rows for starting years 2002-2008, and the duplicate column in '80 that was removed in the code snippet for file lists above.
 
 ##Free/Reduced Lunch
 There is a change in filetype between 2003 and 2004. In the first set there are 3 different groups of variables (1988-1997 13 variables, 1998 14 variables, 1999-2003 15 variables) a sample of the structure from the file list is shown below:
@@ -130,6 +162,8 @@ The list in 2017 needs to be seperated into a more human readable format to comp
 
 
 #Missing Values
+Since CDE doesn't keep complete CDS records at https://www.cde.ca.gov/ds/si/ds/pubschls.asp, we did our best to heal rows of schools with undefined CDS_CODEs.
+
 
 
 Detecting anomalies
