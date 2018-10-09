@@ -14,7 +14,7 @@ Through the years, I spoke at multiple conferences. Below is a non-exhaustive li
 
 JavaOne (San Francisco, Moscow, São Paulo), Devoxx (Belgium, France, Poland, UK, Morroco), Java Day Tokyo, JPoint (Russia), 
 JCConf (Taiwan), JFall (The Netherlands), MakeIT (Slovenia), JPrime (Bulgaria), ConFoo Montreal, GeeCon (Krakow), 
-JFokus (Sweden), JavaZone (Norway), JNation (Portugal), JDK.IO (Danemark), 
+JFokus (Sweden), JavaZone (Norway), JNation (Portugal), JDK.IO (Danemark), JDD (Krakow),
 Voxxed Days (Bucharest, Minsk, Zürich, Belgrade, Vienna, Vilnius), 33rd Degree (Krakow), 
 LavaOne (Hawaii), JavaLand (Germany), CodeMotion (Israel), Oracle Code (Paris, Tel Aviv, Berlin, London), 
 Oracle OpenWorld (San Francisco, Moscow), SnowCamp (France), India Dev Days, Java'Cro (Croatia), 
