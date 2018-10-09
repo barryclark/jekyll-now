@@ -46,7 +46,7 @@
 	    
       eventClick: function(event) {
         // opens events in a popup window
-        window.open(event.url, 'gcalevent', 'width=700,height=600');
+        window.open('https://calendar.google.com/event?action=TEMPLATE&tmeid=' + event.url.substring(event.url.indexOf("?eid=")+5,event.url.length) + '&tmsrc=h74gapvve945n7sg8msl7s1pc4%40group.calendar.google.com', 'gcalevent', 'width=700,height=600');
         return false;
       },
 
