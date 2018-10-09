@@ -51,7 +51,7 @@ baseurl: ""
 
 collections:
   connecttech2018:
-    output:true
+    output: true
     title: Notes from Connect Tech
     description: What I learned at Connect Tech!
   jekyll4fun:
