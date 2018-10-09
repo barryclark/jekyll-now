@@ -6,12 +6,12 @@ chapter: 1
 ---
 
 ### The Easy Way
-[Jekyll Now](https://github.com/barryclark/jekyll-now)
+[Jekyll Now](https://github.com/barryclark/jekyll-now){:target="_blank"}
 
 ### The Official Way
-[Jekyll QuickStart](https://jekyllrb.com/docs/)
+[Jekyll QuickStart](https://jekyllrb.com/docs/){:target="_blank"}
 
-After completing you will have a jekyll project directory containing:
+
 
 
 

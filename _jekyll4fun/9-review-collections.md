@@ -4,7 +4,6 @@ title: Recap Working with Collections
 slug: recap-working-with-collections
 chapter: 9
 ---
-## Collections
 Collections are helpful in a couple of ways:
 
 1. You can set defaults for front matter variables the collection in the _config.yml  

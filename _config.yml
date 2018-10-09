@@ -56,6 +56,7 @@ collections:
     description: Blog like a hacker with Jekyll
     source: https://github.com/lauramoore/lauramoore.github.io
     permalink: :collection/:title
+
 #
 # !! You don't need to change any of the configuration flags below !!
 #

@@ -24,11 +24,13 @@ Note: we'll talk more about defining collections in a bit
 
 
 ## Step 3: Add a new file as first item
+
 *  create file "note1.md"
 * add an empty jekyll front matter
 * use md or html for the content body
 
 ## Test your collection:
+
 * Browse to yoursite/connecttech2018
-What does Jekyll use when no properties define layout, title or permalink?
-How does the note one look?
+* What does Jekyll use when no properties define layout, title or permalink?
+* How does the note one look?
