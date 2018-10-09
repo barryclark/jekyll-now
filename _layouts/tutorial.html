@@ -25,7 +25,12 @@
            <p class="site-description">{{ collection.description }}</p>
          </div>
          <nav>
+           {% if nextlesson %}
            <a href="{{ nextlesson.url }}/">Next: {{nextlesson.title}}</a>
+           {% endif %}
+           {% unless nextlesson %}
+              Fin!
+           {% endunless %}
          </nav>
        </header>
        <div class="site-info">

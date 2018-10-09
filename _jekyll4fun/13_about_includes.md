@@ -1,5 +1,5 @@
 ---
 layout: lesson
-title: working-with-includes
+title: About Includes
 chapter: 13
 ---
