@@ -1,0 +1,6 @@
+<nav class="site-nav">
+  {% assign sorted_pages = site.pages | where_exp: "page", "page.navlevel == 'header'" | sort: "position" %}
+  {% for my_page in sorted_pages %}
+  <a class="page-link" href="{{ my_page.url | relative_url }}" >{{ my_page.navtitle | default: my_page.title | escape }}</a>
+  {% endfor %}
+</nav>
