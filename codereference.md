@@ -384,6 +384,36 @@ ENOG411DPZG,"                         ID1                        ID2  pearsonR
  To fix, filter out the problematic row before the apply 
  grouped_df.filter(lambda x: len(x) > 1)
  
+### <font color="red">Chimera command line</font> 
+
+##### Select an atom, format is #ChainID:residue@typeofatom
+        Open the command line (Tools -> General Control -> Command line
+        In the line, type #ChainID:residue@typeofatom
+        sel #1:113@CA 
+        
+##### Draw crosslink between two residues in Chimera
+        Need to select just one atom from each residue (composed of multiple atoms)
+        sel #1:114@CA #13:31@CA
+        
+        Make sure the bottom bar says "two atoms" 
+        Open the Tools > Structure Analysis > Distances window
+        Click create and a line will appear on the structure between the two residues
+        Turn off label
+        
+##### Deselect all
+        ~select
+        or
+        ~sel
+##### Select all
+       select
+       or 
+       sel
+ 
+##### Make transparent chains
+       First define a transparent color
+       colordef transred 1 0 0 0.3
+       select *whatever you want to color*
+       color sel transred
  
 ### <font color="red">Git</font>
 
