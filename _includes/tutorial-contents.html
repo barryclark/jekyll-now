@@ -1,6 +1,6 @@
 
 {% assign tutorial = site.collections | where:"label", page.collection | first %}
-{% assign chapters = tutorial.docs | where:"layout", "lesson" | sort: 'chapter' %}
+{% assign chapters = tutorial.docs | where_exp:"item","item.layout contains 'lesson'" | sort: 'chapter' %}
 <ol class="table-of-contents">
   {% for item in chapters %}
     <li><a href="{{item.url}}">{{item.title}}</a></li>

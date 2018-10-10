@@ -3,6 +3,8 @@ layout: tutorial
 title: Jekyll for fun
 permalink: :collection/
 chapter: 0
+links:
+  - http://tom.preston-werner.com/2008/11/17/blogging-like-a-hacker.html
 ---
 [Jekyll](https://jekyllrb.com/) is a static site generator, built in ruby. It provides an easy to use and configure platform for publishing your own personal website.
 

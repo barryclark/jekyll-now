@@ -38,9 +38,20 @@
        </div>
      </div>
    </div>
-  <div id="main" role="main" class="container">
+   <article class="container">
     {{ content }}
-  </div>
+  </article>
+
+  {% if page.links %}
+  <section id="references" class="container">
+      <div class="site-name">Sources And Reference</div>
+      <ul>
+      {% for ref in page.links %}
+      <li> <a href="{{ ref }}" target="_blank">{{ ref }}</a></li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
 
   <div class="wrapper-footer">
     <div class="container">
@@ -49,7 +60,8 @@
         <br/>
         <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
         <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
-        <br/>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+        <br/>My content is licensed under <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+        <br/>All rights to work I reference is retained by original owners.
       </footer>
     </div>
   </div>
