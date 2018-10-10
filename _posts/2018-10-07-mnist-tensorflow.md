@@ -5,7 +5,7 @@ date: 2018-10-07
 author: Dorian 
 categories: [machine-learning, tensorflow]
 picture: /assets/images/mnist/title_banner.jpg
-published: true
+published: false
 excerpt: Something about article here
 ---
 
@@ -13,7 +13,9 @@ Recently at work we had a hackathon on tensorflow, which is something I'd tried 
 
 > I'm not a tensorflow expert, so please let me know if there are any inaccuracies I need to correct :wink:
 
-## Building a Computational Graph
+## Quick Introduction to Tensorflow
+
+### The Computation Graph
 
 In order to do anything in tensorflow, you need to create a so called computation graph. This is the main construct used to break things down into problems your GPU can efficiently solve. Like Numpy and PySpark, python is just a wrapper for telling other engines to run your computations. In the case of tensorflow, this is for CUDA and your GPU. 
 
@@ -45,7 +47,7 @@ id_mat = tf.constant(np.identity(10), dtype=tf.float32)
 loss = tf.reduce_sum(tf.abs(output - id_mat))
 
 # Here we define some "meta-graph" stuff
-optimiser = tf.train.AdagradOptimizer(learning_rate=0.001).minimize(loss)
+optimiser = tf.train.AdagradOptimizer(learning_rate=0.01).minimize(loss)
 init_op = tf.global_variables_initializer()
 ```
 
@@ -78,11 +80,14 @@ with tf.Session() as sess:
 
 Running the optimizer once will update the variable x by one step. In order to get a good estimate, we run the optimizer 100,000 times. In the end, we get the learned matrix x and check if it is indeed close to the inverse.
 
-We trained our first tensorflow model!
+We can plot the loss of the model vs the training epoch, to get an indication of it's convergence.
 
-### Calculating a matrix inverse using data
+<figure style="text-align: center;">
+    <img src="/assets/images/mnist/example_learning_rate.png" style="width: 75%;">
+    <figcaption> Example of a tensorflow computation graph</figcaption>
+</figure>
 
-In the first example we used constants, but in general we want to train on a dataset. In general this will be a list of input and outputs. In this specific case, this would be a list of the same matrix A as input, and the identity matrix as output.
+We trained our first tensorflow model! This little excercise helped me understand the concepts of the computation graph, and I hope it will make the later example clearer.
 
 ## Using tensorflow (for mnist)
 
