@@ -59,7 +59,7 @@ collections:
     title: Jekyll For Fun!
     description: Blog like a hacker with Jekyll
     source: https://github.com/lauramoore/lauramoore.github.io
-    permalink: :collection/:title
+    permalink: /:collection/:title
 
 defaults:
   - scope:
