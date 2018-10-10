@@ -1,5 +1,4 @@
 ---
-layout: lesson
 title: Your First Blog Post
 slug: your-first-blog-post
 chapter: 3

@@ -1,5 +1,4 @@
 ---
-layout: lesson
 title: Add A Layout for Collection
 slug: working-with-layouts
 chapter: 12

@@ -1,5 +1,4 @@
 ---
-layout: lesson
 title: Site Level Config
 slug: site-level-config
 chapter: 2

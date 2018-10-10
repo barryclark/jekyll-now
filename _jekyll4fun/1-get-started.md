@@ -1,5 +1,4 @@
 ---
-layout: lesson
 title: Get Started
 slug: get-started
 chapter: 1

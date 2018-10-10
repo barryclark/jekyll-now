@@ -1,5 +1,4 @@
 ---
-layout: lesson
 title: Recap on Jekyll Conventions
 slug: recap-jekyll-conventions
 chapter: 4

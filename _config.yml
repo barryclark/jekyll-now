@@ -61,6 +61,13 @@ collections:
     source: https://github.com/lauramoore/lauramoore.github.io
     permalink: :collection/:title
 
+defaults:
+  - scope:
+      path: ""
+      type: "jekyll4fun"
+    values:
+      layout: "lesson"
+
 #
 # !! You don't need to change any of the configuration flags below !!
 #

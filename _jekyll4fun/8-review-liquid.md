@@ -1,5 +1,4 @@
 ---
-layout: lesson
 title: Recap Working With Liquid
 slug: recap-working-with-liquid
 chapter: 8

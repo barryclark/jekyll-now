@@ -1,5 +1,4 @@
 ---
-layout: lesson
 title: Index your Collection
 slug: create-collection-index
 chapter: 7

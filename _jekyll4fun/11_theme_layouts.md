@@ -1,5 +1,4 @@
 ---
-layout: lesson
 title: Looking at Layouts
 slug: looking-at-layouts
 chapter: 11

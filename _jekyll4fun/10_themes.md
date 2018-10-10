@@ -1,5 +1,4 @@
 ---
-layout: lesson
 title: Variations on a Theme
 slug: working-with-themes
 chapter: 10

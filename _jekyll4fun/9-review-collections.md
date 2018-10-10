@@ -1,5 +1,4 @@
 ---
-layout: lesson
 title: Recap Working with Collections
 slug: recap-working-with-collections
 chapter: 9

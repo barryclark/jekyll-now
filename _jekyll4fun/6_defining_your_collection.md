@@ -1,5 +1,4 @@
 ---
-layout: lesson
 title: Add a Custom Collection
 slug: add-a-new-collection
 chapter: 6

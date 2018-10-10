@@ -1,5 +1,4 @@
 ---
-layout: lesson
 title: Working with Custom Collections
 slug: working-with-custom-collections
 chapter: 5
