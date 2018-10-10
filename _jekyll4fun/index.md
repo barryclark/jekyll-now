@@ -1,7 +1,7 @@
 ---
 layout: tutorial
 title: Jekyll for fun
-permalink: :collection
+permalink: :collection/
 chapter: 0
 ---
 [Jekyll](https://jekyllrb.com/) is a static site generator, built in ruby. It provides an easy to use and configure platform for publishing your own personal website.
