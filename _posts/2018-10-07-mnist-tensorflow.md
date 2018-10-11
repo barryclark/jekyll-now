@@ -103,7 +103,7 @@ Finally, the network connecting the inputs to the outputs will be a single dense
 
 <figure style="text-align: center;">
     <img src="/assets/images/mnist/neural_network.png" style="width: 75%;">
-    <figcaption>The network architecture of our MNIST classifier </figcaption>
+    <figcaption>The network architecture of our MNIST classifier, where the mapping from the hidden layer to the output layers also contains the activation function and the soft-max </figcaption>
 </figure>
 
 ### Implementation
