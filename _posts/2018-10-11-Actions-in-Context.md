@@ -5,6 +5,8 @@ title: "Paper Review 1: Actions in Context"
 
 In this post, the paper "Actions in Context" is investigated and summarized.
 
+Authors: Marcin Marszałek, Ivan Laptev, Cordelia Schmid from INRIA Institute
+
 ## Summary:
 
 In “Actions in Context”, 3 researchers  from the Institution INRIA examines the relation between scenes from videos and actions taking place within these scenes. The main challenge they give is to see the impact of using script text on action recognition. 
