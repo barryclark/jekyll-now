@@ -29,7 +29,7 @@ Secondly, the performance of scene recognition by using script test is compared 
 
 
 *by
-- Emre Doğan
-- Dersu Giritlioğlu
-- Gözde Nur Güneşli
+ Emre Doğan
+ Dersu Giritlioğlu
+ Gözde Nur Güneşli*
 
