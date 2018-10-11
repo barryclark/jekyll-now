@@ -4,9 +4,9 @@ title: Understanding Tensorflow with MNIST
 date: 2018-10-07
 author: Dorian 
 categories: [machine-learning, tensorflow]
-picture: /assets/images/mnist/title_banner.jpg
+picture: /assets/images/mnist/ideal_outputs.png
 published: true
-excerpt: Something about article here
+excerpt: During a hackathon at work I finally had tensorflow and it's api "click" for me. This article shares some of what made it click for me, in addition to the other stuff I did trying to understand the weights of the trained network better.
 ---
 
 Recently at work we had a hackathon on tensorflow, which is something I'd tried (running examples) but never really took the time to play with it. I'd like to share my experiences on the tensorflow computational graph, and some of the flexibility it has to do cool stuff.
