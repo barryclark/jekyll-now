@@ -202,7 +202,7 @@ So what do we see here? One thing that is pretty clear, is that each class shows
 
 This unique pattern of bands is what the second bit of linear algebra ($A_2\cdot x + b_2$) uses to classify these images, as the combination is a kind of unique indentifier or fingerprint for each image. Our network learned this itself, which is super cool!
 
-## Estimating optimal input images
+### Estimating optimal input images
 
 After seeing the patterns in the hidden layers, I was curious what the "otpimal" image would be for each class. The first approach I tried wasn't very feasible, reversing the network direction to give an input for a specific output. This has to do with the fact that we reduce a $784 \times 1$ vector to a $10 \times 1$ vector, so a lot of information is lost.
 
