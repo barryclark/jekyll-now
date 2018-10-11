@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Actions in Context"
+title: "Paper Review 1: Actions in Context"
 ---
 
 In this post, the paper "Actions in Context" is investigated and summarized.
@@ -26,4 +26,10 @@ Secondly, the performance of scene recognition by using script test is compared 
 ![asd](./../images/paper1-2.png)
 
 *"Figure 2. Comparison of scene text mining and vision methods in scene recognition."*
+
+
+*by
+- Emre Doğan
+- Dersu Giritlioğlu
+- Gözde Nur Güneşli
 
