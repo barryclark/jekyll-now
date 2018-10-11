@@ -38,6 +38,12 @@ permalink: /people/
 * PhD student, Department of Electrical & Computer Engineering, Stony Brook University
 * Co-advised by Dr. Mónica F. Bugallo
 
+{: .person-name }
+## Ian Jordan
+![Ian Jordan](/images/idj.jpg){: .profile-photo }
+
+* PhD student, Department of Applied Mathematics and Statistics, Stony Brook University
+
 ## Future lab member
 ![Cartoon MRI head](/images/MRI_brain_outline_memming.png){: .profile-photo }
 
