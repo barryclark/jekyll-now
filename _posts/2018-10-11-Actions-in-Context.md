@@ -32,7 +32,10 @@ Secondly, the performance of scene recognition by using script test is compared 
 
 
 
+
+
 *Created by*
+
 - *Emre Doğan*
 
 - *Dersu Giritlioğlu*
