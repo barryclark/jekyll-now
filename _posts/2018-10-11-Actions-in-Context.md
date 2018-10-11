@@ -28,12 +28,11 @@ Secondly, the performance of scene recognition by using script test is compared 
 ![asd](./../images/paper1-2.png)
 
 *Figure 2. Comparison of scene text mining and vision methods in scene recognition.*
-
-
-
-
-
-
+  
+    
+      
+        
+          
 *Created by*
 
 - *Emre Doğan*
