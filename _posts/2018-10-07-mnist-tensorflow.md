@@ -74,20 +74,20 @@ with tf.Session() as sess:
             print(epoch_loss)
 
     # Lets evaluate the learned matrix A
-    x_ = sess.run(A)
+    x_ = sess.run(x)
     print(x_.dot(rand_matrix))
 ```
 
-Running the optimizer once will update the variable x by one step. In order to get a good estimate, we run the optimizer 100,000 times. In the end, we get the learned matrix x and check if it is indeed close to the inverse.
+Running the optimizer once will update the variable x by one step. In order to get a good estimate, we run the optimizer 100,000 times. With the last bit of code, we extract the learned matrix x from the tf session and check if it is indeed close to the inverse.
 
-We can plot the loss of the model vs the training epoch to get an indication of it's convergence, but we also check in the last few lines to see if the learned matrix x actually does approximate $A^{-1}$ (it does).
+In order to see if the algorithm is converging we can look at the loss of the model vs the training epoch. Just to be sure we also check to see if the learned matrix x actually does approximate $A^{-1}$ (it does).
 
 <figure style="text-align: center;">
     <img src="/assets/images/mnist/example_learning_rate.png" style="width: 75%;">
     <figcaption>Yay, our loss is going down!</figcaption>
 </figure>
 
-We trained our first tensorflow model! This little excercise helped me understand the concepts of the computation graph, and I hope it will make the later example clearer.
+We trained our first tensorflow model! This little excercise helped me understand the concepts of the computation graph, and it should make the later example easier to follow if you're to tensorflow.
 
 ## Classifying MNIST with tensorflow
 
