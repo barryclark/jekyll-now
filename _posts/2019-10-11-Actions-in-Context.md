@@ -1,0 +1,17 @@
+---
+layout: post
+title: "Actions in Context"
+---
+
+In this post, the paper "Actions in Context" is investigated and summarized.
+
+Summary:
+In “Actions in Context”, 3 researchers  from the Institution INRIA examines the relation between scenes from videos and actions taking place within these scenes. The main challenge they give is to see the impact of using script text on action recognition. 
+
+To achieve this, scenes and script texts taken from several movies are used as input data. 
+Each scene with its script is trained by a text classifier algorithm to retrieve the action taking place during this scene. After that, these actions (i.e. AnswerPhone, DriveCar, etc.) are verified so that their labels will be correct for the test set.
+ The scenes labeled with an action are categorized with respect to their relevance as knowing the relation between scenes and actions would strengthen the classification performance. 
+Scenes, scripts and actions are fed into the model as training data. The model consists of two parts: video representation for scene and action recognition and the classification for scene and actions. For video representation, different bag-of-features components are employed (Harris Detectors, HoF& HoG& SIFT Descriptors). For the classification model, SVM is chosen to learn actions from scene context and video. Different kernel types are implemented and compared with respect to their performance. 
+Finally, there are two conclusions drawn from the results. First, the performance of action recognition with and without using scene context is compared and it is observed that scene context has a significant impact on action recognition. The performance comparison for some actions can be observed from Figure 1.
+
+![asd](./../images/paper1-1.png)
