@@ -657,9 +657,11 @@ figcaption {
   font-style: italic;
 }
 
-.highlighter-rouge {
+code.highlighter-rouge {
   color:#914210;
   background-color:#ffe6ba;
+  padding: 3px;
   font-family: "Menlo","DejaVu Sans Mono","Consolas","Ubuntu Mono","Courier New",monospace;
+  font-size: 12px;
   border-radius: 3px;
 }
