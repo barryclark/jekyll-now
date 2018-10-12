@@ -4,7 +4,7 @@ layout: "post"
 
 title: "Test"
 
-date: "2018-10-12 12:51"
+date: "2018-09-15 12:51"
 
 tag: java
 
@@ -13,4 +13,4 @@ tag: java
 Test
 ====
 
--	Why Write markdown Oct page not fetch
+-	Why Write markdown Oct page not fetch change the date
