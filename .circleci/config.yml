@@ -1,0 +1,49 @@
+version: 2
+jobs:
+  # Build job
+  build:
+    working_directory: &working_directory
+      /tmp/iwe
+    parallelism: 1
+    docker:
+      - image: jekyll/jekyll:builder
+    steps:
+      - checkout
+      - run:
+          # The circle host does some funny with the folder permissions ...
+          name: Building Jekyll website
+          command: |
+            chmod 777 /tmp/iwe
+            jekyll build --source /tmp/iwe --config /tmp/iwe/_config.yml --destination /tmp/iwe/build
+      - persist_to_workspace:
+          root: *working_directory
+          paths:
+            - build
+
+  # Deploy job - using WS to transfer the result of the build
+  deploy:
+    docker:
+      - image: circleci/python:2.7
+    working_directory: *working_directory
+    steps:
+      - attach_workspace:
+          at: ./
+      - run:
+          name: Install awscli
+          command: sudo pip install awscli
+      - run:
+          name: Deploy to S3 if tests pass and branch is Master
+          command: aws s3 sync ./build/ s3://${S3_ENGINEERING_BUCKET}/ --delete --exclude ".circleci/*"
+
+# And now plugging things together
+workflows:
+  version: 2
+  build-deploy:
+    jobs:
+      - build
+      - deploy:
+          requires:
+            - build
+          filters:
+            branches:
+              only: master
