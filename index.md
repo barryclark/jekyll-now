@@ -128,13 +128,18 @@ title: Πως αγοράζουμε, πουλάμε, ξοδεύουμε και δ
         <td>Πάτρα</td>
         <td><a href="https://goo.gl/maps/tDcGDb5hxoD2">Αγίου Ανδρέου 1, Πάτρα 262 23</a></td>
         <td>+30 6987812000 <a href="https://bcash.gr">Bcash Greece</a></td>
+    </tr>
+    <tr>
+        <td>Καστοριά</td>
+        <td><a href="https://goo.gl/maps/QoxJMHP6UPK2">Μητροπόλεως 2, Καστοριά 521 00</a></td>
+        <td>+30 6941412894 <a href="https://bcash.gr">Bcash Greece</a></td>
     </tr>    
 </table>
 
 - Σε οποιοδήποτε ανταλλακτήριο Bitcoin διεθνώς, μέσω τραπεζικού εμβάσματος. Αυτήν τη στιγμή επιτρέπεται έμβασμα στο εξωτερικό μέχρι €4000 το δίμηνο χωρίς δικαιολογητικά. Αυτή η μέθοδος έχει και τα χαμηλότερα κόστη, εφόσον το έμβασμα γίνει με τη μέθοδο SEPA (ενδεικτικό κόστος μεταφοράς: €1). Παραδείγματα ανταλλακτηρίων που δέχονται εμβάσματα με SEPA είναι [Kraken](https://www.kraken.com), [Coinbase](https://www.coinbase.com/) και [BitStamp](https://www.bitstamp.net).
 - Σε ανταλλακτήρια που δέχονται πιστωτικές ή χρεωστικές κάρτες. <strike>Ένα ανταλλακτήριο που δέχεται Ελληνικές κάρτες είναι το Coinbase και χρεώνει 3,99%. Το Coinbase κάνει δεκτές μόνο κάρτες στις οποίες έχει ενεργοποιηθεί ο μηχανισμός 3D Secure για ασφαλείς συναλλαγές στο Internet. Για τις κάρτες Visa αυτός ο μηχανισμός είναι γνωστός ως Verified by Visa και για τις κάρτες MasterCard είναι γνωστός ως MasterCard SecureCode. Κάρτες που πρόσφατα (2017) έγιναν δεκτές στο Coinbase είναι χρεωστικές κάρτες της Alpha Bank και της Eurobank. Η Τράπεζα Πειραιώς δεν υποστηρίζει πλέον 3D Secure στις κάρτες της.</strike>
 - <strike>Στο ανταλλακτήριο www.btcgreece.com που δέχεται εμβάσματα σε Ελληνικό τραπεζικό λογαριασμό.</strike>
-- Από κάποιον ιδιώτη στην Ελλάδα που θα τον εντοπίσετε στο [Localbitcoins](https://localbitcoins.com/), στο [BitcoinTalk forum](https://bitcointalk.org/index.php?board=136.0), στο [HoldHold](https://hodlhodl.com), στο [Bisq](https://bisq.network) ή στο [Paxful](https://paxful.com). Με αυτούς μπορείτε να ανταλλάξετε Ευρώ με όποιον τρόπο θέλετε π.χ. χέρι-με-χέρι, Paypal, Western Union, Πειραιώς Λεφτά Στο Λεπτό, τραπεζική μεταφορά κλπ.
+- Από κάποιον ιδιώτη στην Ελλάδα που θα τον εντοπίσετε στο [Localbitcoins](https://localbitcoins.com/), στο [BitcoinTalk forum](https://bitcointalk.org/index.php?board=136.0), στο [HodlHodl](https://hodlhodl.com), στο [Bisq](https://bisq.network) ή στο [Paxful](https://paxful.com). Με αυτούς μπορείτε να ανταλλάξετε Ευρώ με όποιον τρόπο θέλετε π.χ. χέρι-με-χέρι, Paypal, Western Union, Πειραιώς Λεφτά Στο Λεπτό, τραπεζική μεταφορά κλπ.
 - Από το ανταλλακτήριο [BCash](https://bcash.gr/) με κατάθεση σε Ελληνική τράπεζα μέχρι €5000 την ημέρα με προμήθεια 9%.
 - <strike>Από το ανταλλακτήριο Chip-Chap με κατάθεση μετρητών στα μηχανήματα EasyPay της Τράπεζας Πειραιώς.</strike>
 
