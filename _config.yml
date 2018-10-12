@@ -1,7 +1,7 @@
 #
 # This file contains configuration flags to customize your site
 #
-
+<meta name="google-site-verification" content="kC_4DMzBarF2YNoa2HmkAapsM0LHmrB_-fONqgL8wVE" />
 # Name of your site (displayed in the header)
 name: 김용욱 (Kim YongUk, 金庸旭)
 
@@ -26,7 +26,7 @@ footer-links:
   linkedin:
   pinterest:
   rss: # just type anything here for a working RSS icon
-  twitter: 
+  twitter:
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
