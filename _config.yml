@@ -70,6 +70,13 @@ authors:
     gravatar: 050b8bed1e0d616a97ee14afd55ad078
     linkedin: halljakea
     twitter: florx
+  steven_harper:
+    display_name: Steven Harper
+    email: steven.harper@infinityworks.com
+    web: https://www.infinityworks.com
+    web_short_name: infinityworks.com
+    gravatar: f17510afa91ac6760a6362b49460f007
+    linkedin: stevenharperuk
     
 #
 # Flags below are optional
