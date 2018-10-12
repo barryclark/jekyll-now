@@ -102,8 +102,8 @@ The output of the network will be a one-hot encoding of the numbers 0-9, so each
 Finally, the network connecting the inputs to the outputs will be a single densely connected layer, a relu activation function, and a softmax to ensure we are left with a probability vector as the output.
 
 <figure style="text-align: center;">
-    <img src="/assets/images/mnist/neural_network.png" style="width: 75%;">
-    <figcaption>The network architecture of our MNIST classifier, where the mapping from the hidden layer to the output layers also contains the activation function and the soft-max </figcaption>
+    <img src="/assets/images/mnist/network_diagram.svg" style="width: 75%;">
+    <figcaption>The network architecture of our MNIST classifier</figcaption>
 </figure>
 
 ### Implementation
