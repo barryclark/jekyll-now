@@ -2,24 +2,79 @@
 title: Site Level Config
 slug: site-level-config
 chapter: 2
+links:
+  - https://github.com/barryclark/jekyll-now
+  - https://jekyllrb.com/docs/configuration/
+aside: config-yml-and-local.html
 ---
-Now that you have a site installed, your first task is to update the _config.yml
-properties that cover your Jekyll "site".
+Now that you have a site, your first task is to personalize it.
+We do that by editing the "_config.yml" file.
 
-The _config.yml file serves a couple of purposes:
-* Tell Jekyll how to build the site
-* Holds global properties (more on accessing these later)
+Jekyll's _config.yml file serves a couple of purposes:
 
-A note if you're not familiar with *.yml
-> Do not use tabs in configuration files
-> This will either lead to parsing errors, or Jekyll will revert to the default settings. Use spaces instead.
+* Sets build options
+* Defines "site" level properties
 
-[Jekyll Now Reference](https://github.com/barryclark/jekyll-now)
-Change the site name, description and your personal information and links.
+<details>
+  <summary><em>Tips if you are new to YAML (*.yml)</em></summary>
+  <ul>
+    <li>Do not use tabs to align content, only spaces</li>
+    <li> If your value causes parsing error, just wrap it with quotes (single or double)</li>
+    <li>Github sends you an email if it can't read your _config.yml</li>
+  </ul>  
+</details>
 
-[Jekyll Docs](https://jekyllrb.com/docs/configuration/) for many more options
-than we'll talk about today.
+### Personalize Site Header Properties
+<figure>
+<figcaption> Change the name, description, and avatar for your site </figcaption>
+<img src="/images/config.png" />
+</figure>
 
-Another note about _config.yml.  It is the one file that the the jekyll server
-doesn't pick up changes to.  You will need to restart a local server to see changes
-github pages however, does pick up the changes.
+###  Personalize Footer Links
+
+```ruby
+footer-links:
+  dribbble:
+  email: binbrain@rightbox.com
+  facebook:
+  flickr:
+  github: lauramoore
+  instagram:
+  linkedin: laurakmoore
+  pinterest:
+  rss: # just type anything here for a working RSS icon
+  twitter: lk_moore
+  stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
+  youtube: # channel/<your_long_string> or user/<user-name>
+  googleplus: # anything in your profile username that comes after plus.google.com/
+```
+# While We Wait
+Jekyll is now re-rendering your site and replacing Barry's information with yours.
+While that happens,  let's take a quick look at Jekyll's templating system.  
+There are two main categories of re-usable content.
+1. Includes
+2. Layouts
+
+## 1. Includes example __includes/svg-icons.html_
+
+"Includes" are templates to define re-usable fragments of markdown or html,
+as in this example a list of icons to show in the footer.
+
+<details>
+<summary><strong>Quiz:</strong> "site" refers to what jekyll file?</summary>
+<strong>__config.yml_</strong>
+</details>
+
+## Layouts example __layouts/default.html_
+
+Layouts provide a consistent look and feel for your content by combining
+structural elements for a given page.
+
+This default layout, for example, defines everything that goes into a page from
+the html tag down.
+
+## Layouts example __layouts/post.html_
+
+Thankfully,  we only need one low level html layout as layouts can be nested.
+This post layout controls how specific elements of each post will render within
+the default layout.

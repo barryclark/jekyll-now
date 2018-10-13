@@ -25,3 +25,9 @@ Tutorial Quick-Start, No Installs Required:
 <img src="/images/step1.gif" alt="how-to-fork-and-rename"/>
 
 </figure>
+
+# Clone your new Project
+
+```
+> git clone git@github.com:<your-id>/<your-id>.github.io.git
+```
