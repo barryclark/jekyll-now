@@ -230,6 +230,8 @@ L2 regularization with a penalty of 0.25 gave these optimal images
 
 So we finally get some patterns in our ideal images. In each of the images we can roughly make out each of the numbers, but there are some strange irregularities in them. 
 
+These irregularities might be the pixels the network finds important for distinguishing numbers, but maybe they're artifacts from the regularization. Pretty neat though, as there are clearly patterns in the unique areas of each number.
+
 ## The end
 
 For those of you who held out until the end, here's a :doughnut:. I hope you either read something interesting or learned something new along the way. 
