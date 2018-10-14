@@ -1,11 +1,9 @@
 ### Background
 
-Files and records related to a Letter to the Editor sent by me (Claire McWhite) and Daniel Boutz to the editors of Scientific Reports detailing extremely flawed protein quantification methods used in two papers: 
+Files and records related to a Letter to the Editor sent by me (Claire McWhite) and Daniel Boutz to the editors of Scientific Reports detailing flawed protein quantification methods used in two papers: 
 
 1. Robin Mesnage, Sarah Z. Agapito-Tenfen, Vinicius Vilperte, George Renney, Malcolm Ward, Gilles-Eric Séralini, Rubens O. Nodari & Michael N. Antoniou. "An integrated multi-omics analysis of the NK603 Roundup-tolerant GM maize reveals metabolism disturbances caused by the transformation process". Scientific Reports. 2016
 2. Robin Mesnage, George Renney, Gilles-Eric Séralini, Malcolm Ward & Michael N. Antoniou, "Multiomics reveal non-alcoholic fatty liver disease in rats following chronic exposure to an ultra-low dose of Roundup herbicide". Scientific Reports. 2017;7:39328
-
-
 
 
 ### Emails
@@ -61,7 +59,6 @@ Recieved response to our letter to the editor from Michael Antoniou et al.
 
 #### 8/21/2018
 Raw machine files for the rat paper were made publically accessive in the PRIDE repository with accession number PXD010181
-
 
 #### 10/12/2018
 The raw machine files for the maize paper are still missing
