@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Austomatically Store Last Output in PowerShell
-date: 2018-10-15
+date: 2018-10-19
 tags: powershell tips profile
 ---
 
