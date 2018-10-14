@@ -31,7 +31,8 @@ Let's take a pause to take a look at Jekyll's conventions.
 
 ## File Types
 
-| Pages, Collections | .html, .md | *_posts* (e.g.)| content, pages, collection items |
+| Pages | .html, .md | root | content |
+| Posts | .html, .md | _posts | built-in content type |
 | Layouts | .html | *_layouts* | content containers, structural view |
 | Includes | .html | *_includes* | reusable fragments across layouts or pages |
 | Data | .yml, .csv, .json|  *_data* | Properties, Configuration, Lists |
