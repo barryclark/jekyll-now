@@ -10,7 +10,7 @@ having only _two_ basic suffixes and a handful of numeric syntaxes.
 
 ### Standard Numeral Types in PowerShell
 
-```powershell
+{% highlight powershell %}
 100  # int32
 100L # long aka Int64
 100D # decimal
@@ -18,7 +18,6 @@ having only _two_ basic suffixes and a handful of numeric syntaxes.
 1e2  # double
 0xA  # hexadecimal, standard int32
 0xAL # hexadecimal, int64
-```
 
 Add in the standard multipliers: `kb`, `mb`, `gb`, `tb`, and `pb` and you've got a decent working
 set of numerals. This is sufficient for most purposes, but as we'll see there is... _room for
@@ -30,19 +29,19 @@ If you want to work with any other numeric types you've been forced to use type 
 are not without their problems. Perhaps most demonstrably, high integer values are always parsed as
 `double` before being cast to any other values:
 
-```powershell
+{% highlight powershell %}
 PS> [bigint]111111111111111111111111111111111111111111111111111111
 111111111111111100905595216014112456735339620444667904
-```
+{% endhighlight %}
 
 What happened to the value? The value is parsed as a `double` first, losing precision in the higher
 ranges. Certainly, this _is_ an edge case, but it's something to be aware of. The only current way
 to properly circumvent this is to enter values as strings and then convert them:
 
-```powershell
+{% highlight powershell %}
 PS> [bigint]'111111111111111111111111111111111111111111111111111111'
 111111111111111111111111111111111111111111111111111111
-```
+{% endhighlight %}
 
 ### Room for Improvement
 
@@ -61,14 +60,14 @@ check out what I've managed to throw together!
 
 At the time of writing, the following numeric literal suffixes have been implemented:
 
-```powershell
+{% highlight powershell %}
 100u  # unsigned integer (uint/uint32), or (ulong/uint64)
 100s  # short (int16)
 100us # unsigned short (ushort/uint16)
 100ul # unsigned long (ulong/uint64)
 100y  # signed byte (sbyte)
 100uy # unsigned byte (byte)
-```
+{% endhighlight %}
 
 Just like the existing numerals automatically scale up to `long` values when you enter big enough
 numbers, the `u` suffix will happily give you a `ulong` value when you enter numerals large enough.
@@ -76,12 +75,12 @@ numbers, the `u` suffix will happily give you a `ulong` value when you enter num
 To pair with the new suffixes that closely reflect C# or F# literal suffixes, I've also added
 a couple additional type accelerators that alias existing ones:
 
-```powershell
+{% highlight powershell %}
 [short]  # same as [int16]
 [ushort] # same as [uint16]
 [uint]   # same as [uint32]
 [ulong]  # same as [uint64]
-```
+{% endhighlight %}
 
 (And for those of you asking "What about `[s/byte]` or `[long]`?" &mdash; they already exist.)
 
@@ -100,9 +99,9 @@ following _approved_ changes:
   * Thanks be to [@HumanEquivalentUnit](https://github.com/HumanEquivalentUnit) for his incredible work wringing the most performance out of the binary parser.
   * We actually opted to work with a new `BigInteger` constructor (introduced along with `ReadOnlySpan<T>` in .NET Core 2.0) for best performance:
 
-    ```csharp
+    {% highlight csharp %}
     new BigInteger(ReadOnlySpan<byte> value, bool isUnsigned, bool isBigEndian);
-    ```
+    {% end highlight %}
 
 * Complete rework of the parsing logic for numerals when suffixes are applied to use simple bounds checks and straight casting instead of complex conversion methods.
 
