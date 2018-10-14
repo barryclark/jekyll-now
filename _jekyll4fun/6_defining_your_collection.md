@@ -3,14 +3,25 @@ title: Add a Custom Collection
 slug: add-a-new-collection
 chapter: 6
 ---
-Goal:  Rather than flood your new blog site with individual entries for all
-the talks you attend at Connect.tech.  Use a collection to hold individual entries
-and provide your readers with a succinct listing of events you attended.
 
 ## Step 1: Create the collection's directory
-Under your project root,  create a folder named "_connecttech2018",  the prefix
-underscore is important, why?
-Hint: How does Jekyll know what to copy to _site?
+Under your project root,  create a folder named "_connecttech2018"
+and add an index file
+
+```
+> mkdir _connecttech2018
+> touch index.md
+```
+<details>
+<summary><strong>Quiz:</strong>the prefix underscore is important, why?</summary>
+Indicates to Jekyll this is a file it needs to process.
+</details>
+
+<details>
+<summary>Working Directly On Github?</summary>
+Github will not let you create an empty directory, however if you add
+the directory to the filename, it will be created.
+</details>
 
 
 ## Step 2: Tell Jekyll about your Collection
@@ -18,18 +29,52 @@ Hint: How does Jekyll know what to copy to _site?
 * Add a new object called "collections"
 * Add a child to collections called "connecttech2018"
 * Add a property "output: true" to your connecttech2018 collection.
-* Restart jekyll
-Note: we'll talk more about defining collections in a bit
 
+```yaml
+collections:
+  connecttech2018:
+    output: true
+```
 
-## Step 3: Add a new file as first item
+<details>
+<summary>Working with Jekyll locally?</summary>
+Restart Jekyll Server.  _config.yml is the one file Jekyll doesn't watch for changes
+</details>
 
-*  create file "note1.md"
+## Step 3: Add Some Content
+
+*  create file "_connecttech2018/jekyll-4-fun.md"
 * add an empty jekyll front matter
-* use md or html for the content body
+* Add text into the body.
 
-## Test your collection:
+```
+---
+---
+Learning To Rock Jekyll at Connect Tech!
+```
+## Save and Commit your changes
 
-* Browse to yoursite/connecttech2018
-* What does Jekyll use when no properties define layout, title or permalink?
-* How does the note one look?
+## Step 4: Test your collection.
+
+* https://<yoursite>.github.io/connecttech2018/
+* https://<yoursite>.github.io/connecttech2018/jekyll-4-fun/
+
+<strong>Explore! How does Jekyll handle?</strong>
+
+<details>
+<summary>The layout for your index & item page?</summary>
+There is none!  Why not?
+</details>
+
+<details>
+<summary>The title for the index and item page?</summary>
+Uses the filename.
+</details>
+
+<details>
+<summary>Where are files output?</summary>
+_site/ <br/>
+  &nbsp;&nbsp;connecttech2018.html <br/>
+  &nbsp;&nbsp;connecttech2018/ <br/>
+  &nbsp;&nbsp;&nbsp;&nbsp;jekyll-4-fun.html <br/>
+</details>

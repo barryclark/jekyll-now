@@ -22,6 +22,10 @@ In this next section, we're going to add a custom collection for holding all the
 notes your going to capture at Connect Tech.  Then we will build an index page
 that lists all your notes for easy reference.
 
+Goal:  Rather than flood your new blog site with individual entries for all
+the talks you attend at Connect.tech.  Use a collection to hold individual entries
+and provide your readers with a succinct listing of events you attended.
+
 Features of Jekyll Covered:
 
 * How to define a collection
