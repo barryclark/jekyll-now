@@ -1,7 +1,7 @@
 ---
 layout: post
 title: PS Core - Numeric Literals
-published: false
+date: 2018-10-15
 tags: powershell core pscore csharp
 ---
 
