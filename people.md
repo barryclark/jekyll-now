@@ -32,6 +32,13 @@ permalink: /people/
 * Masters Student, Department of Neurobiology and Behavior, Stony Brook University
 
 {: .person-name }
+## Piotr Sokol
+![Piotr as a dog with goggles](/images/Piotr_as_a_dog.jpg){: .profile-photo }
+
+* PhD student, Department of Neurobiology and Behavior, Stony Brook University
+* [MannyDePresso@twitter](https://twitter.com/MannyDePresso)
+
+{: .person-name }
 ## Josue Nassar
 ![Josue Nassar](/images/Josue.jpg){: .profile-photo }
 
