@@ -25,6 +25,8 @@ See [research page](research) for details.
 
 We are located on the 5th floor of Life Sciences Building (Room 550) at [Stony Brook University, New York](http://www.stonybrook.edu/sb/directions.shtml).
 
+![CATNIP lab gathered around a whiteboard](/images/catnip_w_kathleen_2018.jpg)
+
 ### Contact us
 
 [memming.park@stonybrook.edu](mailto:memming.park@stonybrook.edu)
