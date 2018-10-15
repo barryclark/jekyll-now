@@ -354,6 +354,7 @@ p.infolinks { margin: 0.3em 0em 0em 0em; padding: 0px; }
     </div>
 
     <div id="main" role="main" class="container">
+      <a href="bib_export/catniplab.bib">(BibTeX source)</a>
       <article class="page">
 
 <form action="" id="quicksearch">
