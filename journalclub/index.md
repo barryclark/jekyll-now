@@ -29,7 +29,7 @@ Journal club meetings currently take place on Mondays at 1:00 pm in the IACS Sem
 - October 22nd: Piotr Sokol
 - October 29th: TBD
 - November 5th: No JC - SFN
-- November 12th: TBD
+- November 12th: Memming Park
 - November 19th: Ian Jordan
 - November 26th: Yanliang Shi
 - December 3rd: Josue Nassar
