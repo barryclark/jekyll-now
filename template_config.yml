@@ -1,0 +1,37 @@
+# Site settings
+email: hmzh.khn@gmail.com
+baseurl: ""
+paginate: 5
+paginate_path: "/blog/page-:num"
+google_analytics: UA-56817090-1
+
+# SEO settings
+title: Hamzah Khan
+description: Muslim American, Computer Scientist, Roboticist, Harvey Mudd Student, and more
+url: "Hamzah Khan's website"
+twitter_username: hamzahikhan
+default_img: /assets/img/Self_Photo.jpg
+
+# Profile settings
+name: Hamzah Khan
+profile_img: /assets/img/Self_Photo.jpg
+profile: 
+social:
+  github: https://github.com/khanh111
+  linkedin: https://www.linkedin.com/in/hamzah-khan-02a02b59
+  youtube: https://www.youtube.com/channel/UCGAGEYUAp22WBrDplYAn5Bw
+  twitter: http://twitter.com/hamzahikhan
+
+# Build settings
+include: ["_categories"]
+exclude: ["_screenshots", "Gemfile", "Gemfile.lock"]
+markdown: kramdown
+permalink: /:year/:month/:day/:title/
+
+# Sass
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Gems
+gems: [jekyll-paginate, jekyll-sitemap, octopress-autoprefixer]
