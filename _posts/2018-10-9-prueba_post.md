@@ -6,8 +6,8 @@ categories:
   - drupal
   - custom
 comments: true
+visible: 1
 ---
-
 
 ## Creacion de campos compuestos o personalizados (custom fields)
 
@@ -40,3 +40,6 @@ Pero es una solución a tener en cuenta si no vas a utilizar muchos campos compu
 
 Podrás encontrar el Módulo Field Collection en el siguiente enlace:
 [Field Collection](https://www.drupal.org/project/field_collection)
+
+Si nos decantamos por codificar nosotros mismos nuestro "custom field" necesitaremos en primer lugar crear un módulo.
+Para crear un módulo en Drupal 8 podemos seguir el siguiente árticulo de José Antonio Rodríguez: [Como crear un módulo en Drupal 8](https://www.ladrupalera.com/es/drupal/desarrollo/drupal8/crear-un-modulo-en-drupal-8)
