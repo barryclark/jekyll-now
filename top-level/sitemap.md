@@ -6,16 +6,8 @@ permalink: /sitemap/
 
 ## Top Level
 
-* [Front Page](/index.html)
-* [About](/about/)
-* [R&eacute;sum&eacute; / CV](/resume/)
-* [Privacy Policy](/privacy/)
-* [Tags](/tags/)
-* [Referral links](/referral/)
-* [T-Shirts](/t-shirts/)
-* [Post Statistics](/statistics/)
-* [Web Portfolio](/web-portfolio/)
-* [Sitemap (this page)](/sitemap/)
+* [Front Page](/index.html){% assign pages = site.pages | where_exp: "page", "page.url contains 'top-level'" %} {% for page in pages %}
+* [{{ page.title | remove : ' Referral' }}]({{ site.url }}{{page.url}}){% endfor %}
 * [Sitemap.xml](/sitemap.xml)
 * [RSS feed](/feed.xml)
 * [robots.txt](/robots.txt)
