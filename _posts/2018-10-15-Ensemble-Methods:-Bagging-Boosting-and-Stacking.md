@@ -3,9 +3,7 @@ layout: post
 title: Ensemble Methods: Bagging, Boosting, and Stacking
 ---
 
-## What are Ensemble Methods?
-
-This post is all about Ensemble Methods: what they are, how they're used, and basic examples of each type.
+So what are ensemble methods? They're a collection of different ways that data scientists use to manipulate data and the modeling processes to obtain better results. In other words: 
 
 >"Ensemble methods are meta-algorithms that combine several machine learning techniques into one predictive model in order to __decrease variance__ (bagging), __decrease bias__ (boosting), or __improve predictions__ (stacking)." - Vadim Smolyakov
 
