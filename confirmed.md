@@ -4,4 +4,4 @@ title: Thanks for booking!
 permalink: /confirmed/
 ---
 
-Your meeting time has been confirmed. Check your email for details.
+Your meeting time has been confirmed. Your confirmation email contains instructions for joining the call.
