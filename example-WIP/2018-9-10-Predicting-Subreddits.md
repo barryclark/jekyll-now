@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Predicting Which Subreddit A Post Is From (Part 1 of 2)
+title: Predicting Which Subreddit A Post Is From (Part 1)
 ---
 
 Last week I finished and presented the third project in my Data Science Immersive course: Predicting Which Subreddit A Post Is From. It was a really interesting project because it introduced a couple of new topics and modeling techniques, namely Natural Language Processing, multiple types of decision trees, and working with APIs / web scraping.  My previous post was about scraping webpages' HTML and using it for data gathering. This one is going to be a broad overview of my project as a whole and then a bit more on the first challenge, gathering my data from reddit.
