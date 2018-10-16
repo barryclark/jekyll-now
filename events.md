@@ -6,10 +6,6 @@ permalink: /events/
 
 ### 2018
 
-October 10 - 11: Open FinTech Forum, New York
-* [Keynote: Cheryl Hung, Director of Ecosystem, Cloud Native Computing Foundation](https://sched.co/G4kB)
-* [Real-World Kubernetes Use Cases in Financial Services: Lessons Learned from Capital One, BlackRock and Bloomberg](https://sched.co/G4Mx)
-
 October 22 - 24: Open Source Summit Europe, Edinburgh
 
 November 5 - 9: VMWorld Europe, Barcelona
@@ -20,3 +16,11 @@ December 3 - 5: DockerCon Europe, Barcelona
 
 December 10 - 13: KubeCon + CloudNative North America, Seattle
 * [Community Building from Scratch: Sharing Experience of CNCF and K8s Meetups](https://sched.co/GrTK)
+
+### 2019
+
+May 20 - 23: KubeCon + CloudNativeCon Europe, Barcelona
+
+June 26 - 28: KubeCon + CloudNativeCon China, Shanghai
+
+November 18 - 21: KubeCon + CloudNativeCon North America, San Diego
