@@ -59,7 +59,7 @@ Learning To Rock Jekyll at Connect Tech!
 * https://<yoursite>.github.io/connecttech2018/
 * https://<yoursite>.github.io/connecttech2018/jekyll-4-fun/
 
-<strong>Explore! How does Jekyll handle?</strong>
+<strong>Explore! How does Jekyll handle...</strong>
 
 <details>
 <summary>The layout for your index & item page?</summary>

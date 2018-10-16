@@ -1,29 +1,14 @@
 ---
 title: Index your Collection
-slug: create-collection-index
-chapter: 7
+slug: build-a-collection-index
+chapter: 8
 ---
-For our first template,  let's create a custom index page for our new collection.
-Something more impressive than a default html folder listing.  
+Now to tackle [Liquid](https://shopify.github.io/liquid/){:target="_blank"}
+to create that index listing.
 
-## Step 1: Add an index.md in your collection folder
-* Add the front matter, this time specify:
-    * layout: default
-    * title: My Connect Tech 2018
-    * permalink: :collection
-
-* Test your new index page at "/connecttech2018"
-
-[Permalink](https://jekyllrb.com/docs/permalinks/) is a built-in variable
-that Jekyll will use to create paths for your content.  It has a placeholder
-syntax and helps with SEO to make your URIs easy to navigate.
-
-*Experiment:*  What happens when you navigate to /connecttech2018  vs /connecttech2018/ ?
-
-## Step 2: Liquid Iteration to create collection links.
-Jekyll uses [Liquid](https://shopify.github.io/liquid/) to provide templates.
-The following snippet will iterate on all file under your collection folder
-
+## Step 1: Iterate your collection pages with a for loop
+* Edit your _connecttech2018/index.md  file
+* Add a for loop to create a link for each item in the collection.
 {% raw %}
 ```liquid
 <ol>
@@ -34,10 +19,15 @@ The following snippet will iterate on all file under your collection folder
 ```
 {% endraw %}
 
-*Dang!*  All files also includes this index page
+### Save and Commit.
+
+## *Dang!*
+<details>
+<summary>Anybody see the problem?</summary>
 Yes, the collection iterates *all* files as items, including the index.
 There are a few ways to solve this problem.  Today I'm going to use it as an
 opportunity to teach a few more Liquid tricks.
+<details>
 
 ## Step 3: Use more Liquid to exclude the index page from iteration
 
