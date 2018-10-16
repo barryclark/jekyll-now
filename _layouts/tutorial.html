@@ -25,12 +25,7 @@
            <p class="site-description">{{ collection.description }}</p>
          </div>
          <nav>
-           {% if nextlesson %}
-           <a href="{{ nextlesson.url }}">Next: {{nextlesson.title}}</a>
-           {% endif %}
-           {% unless nextlesson %}
-              Fin!
-           {% endunless %}
+           {% include jekyll4fun/next-item.html chapter=nextlesson %}
          </nav>
        </header>
        <div class="site-info">
@@ -42,8 +37,14 @@
     {{ content }}
   </article>
 
+  <section class="container">
+    <div class="next-lesson">
+      {% include jekyll4fun/next-item.html chapter=nextlesson %}
+    </div>
+  </section>
+
   {% if page.links %}
-  <section id="references" class="container">
+  <section id="references" class="container clearfix">
       <div class="site-name">Sources And Reference</div>
       <ul>
       {% for ref in page.links %}
@@ -52,6 +53,7 @@
     </ul>
   </section>
   {% endif %}
+
 
   <div class="wrapper-footer">
     <div class="container">

@@ -1,7 +1,7 @@
 ---
 title: Variations on a Theme
 slug: working-with-themes
-chapter: 10
+chapter: 100
 ---
 As with other CMS systems,  there is an every growing set of pre-built
 themes for your content.

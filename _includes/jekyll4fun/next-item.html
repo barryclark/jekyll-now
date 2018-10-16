@@ -1,0 +1,7 @@
+{% assign nextlesson = include.chapter %}
+{% if nextlesson %}
+<a href="{{ nextlesson.url }}">Next: {{nextlesson.title}}</a>
+{% endif %}
+{% unless nextlesson %}
+   Fin!
+{% endunless %}
