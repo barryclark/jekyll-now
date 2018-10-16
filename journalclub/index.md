@@ -27,7 +27,7 @@ Journal club meetings currently take place on Mondays at 1:00 pm in the IACS Sem
 - October 8th: No JC - Fall Break
 - October 15th: Yuan Zhao
 - October 22nd: Piotr Sokol
-- October 29th: TBD
+- October 29th: Jake Crosser
 - November 5th: No JC - SFN
 - November 12th: Memming Park
 - November 19th: Ian Jordan
