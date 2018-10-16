@@ -1,9 +1,11 @@
 ---
 layout: post
-title: Ensemble Methods: Bagging, Boosting, and Stacking
+title: Ensemble Methods - Bagging, Boosting, and Stacking
 ---
 
-So what are ensemble methods? They're a collection of different ways that data scientists use to manipulate data and the modeling processes to obtain better results. In other words: 
+
+
+So what are ensemble methods? They're a collection of different ways that data scientists use to manipulate data and the modeling processes to obtain better results. In other words:
 
 >"Ensemble methods are meta-algorithms that combine several machine learning techniques into one predictive model in order to __decrease variance__ (bagging), __decrease bias__ (boosting), or __improve predictions__ (stacking)." - Vadim Smolyakov
 
@@ -89,7 +91,7 @@ Accuracy: 0.67 (+/- 0.03) [Bagging Tree (n_est=10)]<br>
 Accuracy: 0.70 (+/- 0.09) [Bagging Tree (n_est=20)]<br>
 Accuracy: 0.73 (+/- 0.06) [Bagging Tree (n_est=30)]<br>
 
-<img src='../images/2018-10-15-Ensemble-Methods:-Bagging-Boosting-and-Stacking/Bagging_example.png' alt='Bagging Example Graphs showing that as the number of estimators increases, the prediction gets better'>
+<img src='../images/2018-10-15-Ensemble-Methods-Bagging-Boosting-and-Stacking/Bagging_example.png' alt='Bagging Example Graphs showing that as the number of estimators increases, the prediction gets better'>
 
 The different colors in the graph show the "plot decision regions" for each model. The Decision Tree model only has blue and green because it only has a `max_depth` of 1. This means there's a single split being made. You can see how the graphs transform from one model to the next, getting closer to accurately classifying the data points. The performance of the models were increasingly better the more estimators there were. This doesn't scale infinitely, you will definitely hit a point where adding more estimators has a negligible effect on the overall performance of the model (except to make it slower).
 
@@ -139,7 +141,7 @@ Accuracy: 0.63 (+/- 0.02) [Decision Tree]<br>
 Accuracy: 0.64 (+/- 0.14) [AdaBoost (n_est=10)]<br>
 Accuracy: 0.66 (+/- 0.12) [AdaBoost (n_est=20)]<br>
 Accuracy: 0.67 (+/- 0.13) [AdaBoost (n_est=30)]<br>
-<img src='../images/2018-10-15-Ensemble-Methods:-Bagging-Boosting-and-Stacking/boosting_example.png' alt='Boosting Example Graphs showing that as the number of estimators increases, the prediction gets better'>
+<img src='../images/2018-10-15-Ensemble-Methods-Bagging-Boosting-and-Stacking/boosting_example.png' alt='Boosting Example Graphs showing that as the number of estimators increases, the prediction gets better'>
 
 While the accuracy scores did get better each model, they didn't improve immensely. This is because this method is usually used when the classes are uneven and you need to oversample the minority class to get a more accurate model. The iris dataset has a relatively equal amount of data in each class so boosting is not as effective here.
 
@@ -189,7 +191,7 @@ Accuracy: 0.91 (+/- 0.06) [Random Forest]<br>
 Accuracy: 0.92 (+/- 0.03) [Naive Bayes]<br>
 Accuracy: 0.95 (+/- 0.03) [Stacking Classifier]<br>
 
-<img src='../images/2018-10-15-Ensemble-Methods:-Bagging-Boosting-and-Stacking/stacking_example.png' alt='Stacking Example Graphs showing that as the number of estimators increases, the prediction gets better'>
+<img src='../images/2018-10-15-Ensemble-Methods-Bagging-Boosting-and-Stacking/stacking_example.png' alt='Stacking Example Graphs showing that as the number of estimators increases, the prediction gets better'>
 
 Each of the individual models worked pretty well here, all scoring about 0.91 out of 1. The stacking classifier took all of those models and came up with an even better model though at 0.95. Talk about being more than just the sum of your parts.
 
