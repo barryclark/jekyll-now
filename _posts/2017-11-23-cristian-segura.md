@@ -6,7 +6,7 @@ comments: true
 bigger:
 category: treballs
 tags: [art digital, wacom, tableta, dibuix, cristian segura, cartells, disseny]
-img: "assets/print/foto1.jpg"
+img: "images/cristiansegura.jpg"
 excerpt_separator: <!--more-->
 ---
 
@@ -20,7 +20,7 @@ Concert realitzat el Dissabte 30 de Setembre 2017.
 
 
 <figure>
-	<a href="../assets/print/foto1.jpg" data-lightbox="roadtrip"><img src="../assets/print/foto1.jpg"></a>
+	<a href="../images/cristiansegura.jpg" data-lightbox="roadtrip"><img src="../images/cristiansegura.jpg"></a>
 </figure>
 
 ---
