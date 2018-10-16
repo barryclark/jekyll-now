@@ -42,12 +42,18 @@ section.cover-justify p {padding: 6px 20px 0 20px;line-height: 24px;font-size: 1
 .cover#page-header  {background-color: var(--color-white);}
 .serveis-header {border-bottom:10px solid var(--color-hardgrey);background-color: var(--color-black);color: var(--color-hardgrey);}
 .medias#page-header {background-image: url("/img/portfoli.jpg");	background-position: top center;
-	background-attachment: fixed;background-size: cover;background-repeat: no-repeat;
+	background-attachment: fixed;background-size: cover fixed;background-repeat: no-repeat;
 	border:none;color: #fff;overflow: hidden;
 	text-align: center;height: 60vh;
 }
 #page-header.medias div h1 {font-weight:400;letter-spacing: 0.005em; font-size:1.0em;line-height:1.7em;margin-bottom:0px;max-width:30%;text-align: left;float:left;}
-#page-header.medias div {border-bottom:thin solid #fafafa;height:42px;}
+#page-header.medias div {border-bottom:thin solid #fafafa;height:42px;
+    -webkit-animation: moveFromTop .6s ease both;
+	-moz-animation: moveFromTop .6s ease both;
+	animation: moveFromTop .6s ease both;
+    -webkit-animation-delay: .6s;
+	-moz-animation-delay: .6s;
+	animation-delay: .6s;}
 #phone-fine svg {max-width:15px;margin-right:5px;}
 #page-header.medias div a {color:var(--color-white) ;font-weight:300;letter-spacing: 0.012em!important; font-size:1.0em;
     line-height:1.8em;text-align: right;float:right;text-decoration: none;}
