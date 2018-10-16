@@ -1,6 +1,6 @@
 ---
 layout: page
-title: T-Shirt Shop
+title: Popsockets
 permalink: /popsockets/
 redirect_to: https://www.amazon.com/s/?rh=n%3A2335752011&keywords=joehx&lo=mobile&tag=hendrixjoseph-20
 ---
