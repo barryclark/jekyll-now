@@ -67,7 +67,11 @@ defaults:
       type: "jekyll4fun"
     values:
       layout: "lesson"
-
+  - scope:
+      path: ""
+      type: "connecttech2018"
+    values:
+      layout: "conference-post"
 #
 # !! You don't need to change any of the configuration flags below !!
 #

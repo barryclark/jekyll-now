@@ -31,11 +31,15 @@ Let's take a pause to take a look at Jekyll's conventions.
 
 ## File Types
 
+#### Content and Data
 | Pages | .html, .md | root | content |
 | Posts | .html, .md | _posts | built-in content type |
+| Data | .yml, .csv, .json|  *_data* | Properties, Configuration, Lists |
+| Collections | .html, .md | _custom_ | Custom content types and data |
+
+#### Theme and Style
 | Layouts | .html | *_layouts* | content containers, structural view |
 | Includes | .html | *_includes* | reusable fragments across layouts or pages |
-| Data | .yml, .csv, .json|  *_data* | Properties, Configuration, Lists |
 | Styles | .sass  | *_sass* | source files for CSS |
 | Assets | images, video, pdf ... | _any_ | Jekyll happily serves any file type |
 

@@ -1,8 +1,34 @@
 ---
-title: Looking at Layouts
+title: Defining Your Layouts
 slug: looking-at-layouts
-chapter: 11
+chapter: 10
 ---
+Now to take a longer look at working with Jekyll Theme features.
+
+#### Theme and Style Concepts
+
+| *Layouts* | .html | *_layouts* | content containers, structural view |
+| Includes | .html | *_includes* | reusable fragments across layouts or pages |
+| Styles | .sass  | *_sass* | source files for CSS |
+| Assets | images, video, pdf ... | _any_ | Jekyll happily serves any file type |
+
+Layouts work pretty much same as any CMS,  they provide a frame for the content
+allowing for consistent styles, navigation and branding elements.
+
+<details>
+<summary>Each page, post or rendered collection item declares what layout to use in?</summary>
+<strong>layout variable</strong>
+
+<details>
+<summary>layout variables get defined in?</summary>
+<strong>Front Matter</strong>
+<div> Front Matter Defaults in _config.yml</div>
+</details>
+
+</details>
+
+
+
 Open up the *_layouts* directory and examine these files.
 
 ## default.html
