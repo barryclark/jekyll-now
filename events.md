@@ -11,9 +11,10 @@ October 22 - 24: Open Source Summit Europe, Edinburgh
 November 5 - 9: VMWorld Europe, Barcelona
 
 November 13 - 15: KubeCon + CloudNativeCon China, Shanghai
+* End User panel moderator - Media / analyst luncheon
 
 November 21: Serverless vs Kubernetes, London
-* Debate moderator
+* [Panel moderator](https://events.contino.io/serverlessvskubernetes)
 
 December 3 - 5: DockerCon Europe, Barcelona
 
