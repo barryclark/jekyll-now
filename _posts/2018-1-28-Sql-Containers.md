@@ -21,7 +21,7 @@ There is a container for SQL Server on linux and also one for SQL Server on Wind
 
 **Create and run a container from the image.**
 
-Open a PowerShell windows and enter ```docker ps```. If Docker is install and running and you haven't created any other containers then this list will be empty.
+Open a PowerShell window and enter ```docker ps```. If Docker is installed and running and you haven't created any other containers then this list will be empty.
 
 Next enter this command:
 
