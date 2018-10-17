@@ -9,11 +9,13 @@ title: "[Slides] [Oct 2018]  Keynote: Crossing the chasm with cloud native"
     </embed>
 </object>
 
-These are my slides from my keynote on "Crossing the chasm with cloud native", which I delivered at Open FinTech Forum in New York on Wednesday October 10, 2018. I also participated in the Forum "Real-World Kubernetes Use Cases in Financial Services: Lessons Learned".
+These are my slides from my keynote on "Crossing the chasm with cloud native", which I delivered at Open FinTech Forum in New York on Wednesday October 10, 2018.
 
-<a data-flickr-embed="true"  href="https://www.flickr.com/photos/linuxfoundation/44364987385/in/album-72157702270306215/" title="_FJE1428"><img src="https://farm2.staticflickr.com/1962/44364987385_12a8e02b6a_k.jpg" width="2048" height="1365" alt="_FJE1428"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+![Cheryl Hung, Crossing the chasm with cloud native]({{site.baseurl}}/images/2018-10-10-pic1.jpg)
 
-<a data-flickr-embed="true"  href="https://www.flickr.com/photos/linuxfoundation/45276721101/in/album-72157702270306215/" title="_SFJ4169"><img src="https://farm2.staticflickr.com/1915/45276721101_facaad4213_k.jpg" width="2048" height="1365" alt="_SFJ4169"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+I also participated in the Forum "Real-World Kubernetes Use Cases in Financial Services: Lessons Learned".
+
+![Cheryl Hung, Real-World Kubernetes Use Cases in Financial Services]({{site.baseurl}}/images/2018-10-10-pic2.jpg)
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/oicheryl?ref_src=twsrc%5Etfw">@oicheryl</a> crushing it <a href="https://twitter.com/linuxfoundation?ref_src=twsrc%5Etfw">@linuxfoundation</a> event on Open FinTech. Welcome! <a href="https://t.co/DFkqgeKWuS">https://t.co/DFkqgeKWuS</a></p>&mdash; Jamie Smith (@JamieSmithLove) <a href="https://twitter.com/JamieSmithLove/status/1050426110280904706?ref_src=twsrc%5Etfw">October 11, 2018</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
