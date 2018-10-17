@@ -2,6 +2,11 @@
 # This file contains configuration flags to customize your site
 #
 
+plugins:
+    - jekyll-remote-theme
+
+remote_theme: xdanger/jekyll-theme-notion
+
 # Name of your site (displayed in the header)
 name: Trycatch의 예외처리
 
