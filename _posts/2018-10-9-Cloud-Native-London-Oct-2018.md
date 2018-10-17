@@ -5,7 +5,7 @@ title: "[Photos] [Videos] [Oct 2018] Cloud Native London October 2018 Roundup"
 
 ![Cloud Native London October](https://pbs.twimg.com/media/DpFfBRuXgAEII1q.jpg)
 
-Despite a change of venue, our Cloud Natives gathered to listen to three knowledgeable speakers in Bermondsay. They were ably hosted by Matt Saunders from London DevOps - thanks Matt!
+Despite a change of venue, our loyal audience gathered to hear three knowledgeable speakers discuss containers and cloud native. They were ably hosted by Matt Saunders from London DevOps - thanks Matt!
 
 As always, thanks to our sponsors [StorageOS](https://storageos.com/), [Tecknuovo](https://www.tecknuovo.com/), [Contino](https://www.contino.io/), and [Pusher](https://pusher.com/).
 
@@ -31,7 +31,7 @@ Following that, Paul Fremantle from WSO2 gave a live demo of Ballerina, a Cloud 
 
 ![Jesus Escolar](https://pbs.twimg.com/media/DpFyD5eW4AAFQOS.jpg)
 
-Finally Jesus Escolar from Exelerys gave an advanced analysis of container security.
+Finally, Jesus Escolar from Exelerys gave an advanced analysis of container security.
 
 ## Cloud Native London November
 
