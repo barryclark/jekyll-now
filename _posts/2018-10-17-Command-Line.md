@@ -1,10 +1,10 @@
-#An introductory exploration of the terminal emulator 
+# An introductory exploration of the terminal emulator 
 
 The command line is one of the most important tools at our disposal. More than a place to run executables, the terminal has intense capabilities to match long and storied history. We use the command prompt every day, but it’s also our least understood tool. 
 
 We’ll discuss some of the history, but for the most part, I’d like to open some beginners’ eyes to the possibilities of what the terminal can do for workflow. 
 
-##Not just a command line
+## Not just a command line
 
 At Flatiron, we use the terminal very simply; for the most part, it’s a place to run our server commands or clone git repositories. A lot of the folks here are looking for a comprehensive education on web programming, which includes not having any experience in the field. In effect, this can give students the habitual notion that the terminal is simply a place to dump commands — little more than programs no one wanted to code a GUI for. 
 
@@ -27,7 +27,7 @@ This meant that computers needed to speak a language more powerful than punch-ca
 
 >Both sh and C were developed by Ken Thompson inside the AT&T/Bell laboratories. I’d spend all day talking about it, but this post has to be short!
 
-##Chaining programs
+## Chaining programs
 
 What’s important to remember about shells in general is that they abstract the way the machine and operating system work in order to provide a consistent execution across systems. 
 
@@ -65,7 +65,7 @@ Now we’re looking for anything containing the string “do”; looks like we�
 
 Very thankfully, there’s a command called “find” that will let us search for files much more effectively than piping to grep, but for the purposes of a demo this has served us well. 
 
-##Bigger fish
+## Bigger fish
 
 It might look humble, but we can expand this to be an exceptionally powerful tool. Let’s look at a shell script.
 
