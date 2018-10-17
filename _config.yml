@@ -57,7 +57,7 @@ collections:
   jekyll4fun:
     output: true
     title: Jekyll For Fun!
-    description: Blog like a hacker with Jekyll
+    description: Blog like a hacker with Jekyll @connect_js @lk_moore
     source: https://github.com/lauramoore/lauramoore.github.io
     permalink: /:collection/:title/
 
