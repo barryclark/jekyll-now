@@ -5,7 +5,7 @@ title: "[Photos] [Videos] [Oct 2018] Cloud Native London October 2018 Roundup"
 
 ![Cloud Native London October](https://pbs.twimg.com/media/DpFfBRuXgAEII1q.jpg)
 
-It was a quieter Cloud Native London meetup in October, and we were ably hosted by Matt Saunders and featuring three knowledgeable speakers. We are also spending the next few months partnered with a new venue in Bermondsey.
+Despite a change of venue, our Cloud Natives gathered to listen to three knowledgeable speakers in Bermondsay. They were ably hosted by Matt Saunders from London DevOps - thanks Matt!
 
 As always, thanks to our sponsors [StorageOS](https://storageos.com/), [Tecknuovo](https://www.tecknuovo.com/), [Contino](https://www.contino.io/), and [Pusher](https://pusher.com/).
 
@@ -31,11 +31,11 @@ Following that, Paul Fremantle from WSO2 gave a live demo of Ballerina, a Cloud 
 
 ![Jesus Escolar](https://pbs.twimg.com/media/DpFyD5eW4AAFQOS.jpg)
 
-Finally Jesus Escolar from Exelerys gave an advanced analysis of container security, and he will be putting his slides online shortly.
+Finally Jesus Escolar from Exelerys gave an advanced analysis of container security.
 
 ## Cloud Native London November
 
-The next meetup is on Wednesday 7 November, and joining us are some great speakers from DeepMind Health, Grafana Labs and Neo Technology. Note that we're back at Entrepreneur First in Bermondsay for November. [RSVP and save the date now!](https://www.meetup.com/Cloud-Native-London/events/253873162/)
+The next meetup is on Wednesday 7 November, and joining us are some great speakers from DeepMind Health, Grafana Labs and Neo Technology. [RSVP and save the date now!](https://www.meetup.com/Cloud-Native-London/events/253873162/)
 
 Have a great weekend!
 
