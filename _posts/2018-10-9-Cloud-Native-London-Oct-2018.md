@@ -31,7 +31,13 @@ Following that, Paul Fremantle from WSO2 gave a live demo of Ballerina, a Cloud 
 
 ![Jesus Escolar](https://pbs.twimg.com/media/DpFyD5eW4AAFQOS.jpg)
 
-Finally, Jesus Escolar from Exelerys gave an advanced analysis of container security.
+Finally, Jesus Escolar from Exelerys gave an advanced analysis of container security:
+
+* Security for containers is in an heterogenous unharmonized situation. Find and Use the right tools for your business.
+
+* DevSecOps and SecDevOps are now a critical moving part of the framework for container adoption. Integrate them properly.
+
+* The legacy security issues are now the mainstream issues when securing containers. Dust old security books.
 
 ## Cloud Native London November
 
