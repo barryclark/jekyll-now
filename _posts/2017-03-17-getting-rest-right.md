@@ -118,5 +118,5 @@ These are things I haven't touched on in this article as it's getting pretty lon
 * Authentication/authorization (statelessly)
 * Rate limiting
 * Using PUT/POST/PATCH/DELETE for create/update/partial update/delete
-* Pagination - [read more about how](http://adduco.digital/archive/restful-api-pagination/)
+* Pagination
 * Compression (gzip & pretty printing)
