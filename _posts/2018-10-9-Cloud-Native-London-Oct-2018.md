@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Photos] [Videos] [Oct 2018] Cloud Native London October 2018 Roundup"
+title: "[Photos] [Oct 2018] Cloud Native London October 2018 Roundup"
 ---
 
 ![Cloud Native London October](https://pbs.twimg.com/media/DpFfBRuXgAEII1q.jpg)
