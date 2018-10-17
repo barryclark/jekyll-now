@@ -29,7 +29,7 @@ Next enter this command:
 
 Here is the breakdown:
 
-+   The ```-e``` switch will add an environment variable to the container. These commands accept the EULA and set the password for the sa account. The password need to adhere to the rules for a valid SQL Server password. There is also another variable that applies to SQL Server the "MSSQL_PID" environment variable will select the edition of SQL Server to install. If this variable is not specified the default is Developer Edition.
++   The ```-e``` switch will add an environment variable to the container. These commands accept the EULA and set the password for the sa account. The password needs to adhere to the rules for a valid SQL Server password. There is also another variable that applies to SQL Server the "MSSQL_PID" environment variable will select the edition of SQL Server to install. If this variable is not specified the default is Developer Edition.
 
 +   The ```--name``` switch will name the container for easy access later.
 
