@@ -13,12 +13,12 @@ Uses an ESP8266 NodeMCU board with a DHT11 temperature and humidity sensor to co
 ### NodeMCU
 Based the ESP8266 wireless module, the NodeMCU adds a range of GPIO pins and interfacing capabalities. It can be programmed using Lua, Micropython and even Arduino sketches meaning there is large community support and documentation for the platform.
 
-![NodeMCU board](https://raw.githubusercontent.com/prasertsakd/esp8266_fritzing/master/preview.png)
+![NodeMCU board](../images/esp8266_nodemcu.png)
 
 ### DHT11
 Combining both a temperature and humidity sensor, the DHT11 allows basic monitoring of environmental conditions. Wtih a measurement range of 0-50°C and 20-95%, it is ideal for most basic applications. Although it has lower accuracy than a DHT22 or DS18B20, its low cost makes it ideal for initial prototypes. Readings are accessed via a single data pin, and accepts both 3.3V and 5V DC.
 
-![DHT11 combined temperature and humidity sensor](http://domoticx.com/wp-content/uploads/2015/09/Fritzing-DHT11.png)
+![DHT11 combined temperature and humidity sensor](../images/dht11.png)
 
 ### Arduino
 Primarily designed for use with the Arduino range of microcontrollers, the IDE also includes support for third-party boards such as the ESP8266. The board can be installed through the board manager by simply including the URL of the source code. Arduino sketches are written in a variant of C++, and there is vast array of guides for setting up and running Arduino sketches on the device, integrating it with numerous pieces of hardware.
@@ -29,7 +29,7 @@ These mostly accomodate the transmission, storage and visulaisation of data usin
 ### [thinger.io](https://thinger.io)
 Another IoT sevice, Thinger.io allows the connection of multiple devices including Linux (e.g. RPi), SigFox, ARM mBed and Arduino including the NodeMCU. It features dashboards, data buckets and enpoints to allow the collection, storage and visualisation of data.
 
-![Example of a thinger.io dashboard](https://discoursefiles.s3-eu-west-1.amazonaws.com/original/1X/c05197985d9ee92a9e12aaa71ab7508682bc3fbc.gif)
+![Example of a thinger.io dashboard](../images/thinger-io_example_dash.gif)
 
 Connecting a the NodeMCU to the service is very simple, requring only a few lines of code:
 ```c++
