@@ -20,6 +20,7 @@ body{
   display:flex;
   flex-flow:column nowrap;
   justify-content:space-between;
+
  
 }
 .content-wrapper{
@@ -34,6 +35,14 @@ a:visited {
 }
 a:hover {
   color:$blue;
+}
+ul{
+  list-style-type: circle;
+  margin-left:30px;
+  padding:5px;
+}
+ul li{
+  padding:5px;
 }
 .masthead{
   display:flex;
@@ -77,7 +86,7 @@ h3{
 }
 p{
   padding:5px 0px;
-  line-height:1.5em;
+  line-height:1.8em;
 }
 .content-wrapper{
   margin-bottom:20px;
@@ -87,7 +96,34 @@ p{
   text-align:center;
   margin:0% 10%;
 }
-
+//Index posts styles
+.posts .post{
+  display:flex;
+  flex-flow:row wrap;
+  justify-content:flex-start;
+}
+.posts .post .text-container{
+  width:90%;
+}
+.posts .post .main-img{
+  width:100px;
+  height:100px;
+  
+}
+.posts .post .main-img img{
+  margin:0px;
+}
+.post-container{
+  width:100%;
+  display:flex;
+  flex-flow:row nowrap;
+  justify-content:flex-start;
+}
+.date{
+  margin:15px 0px;
+  font-style:italic;
+}
+//End of index posts styles
 
 #frontloopsio, #shift-type-library{
   width:40%;

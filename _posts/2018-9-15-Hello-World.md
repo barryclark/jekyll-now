@@ -1,6 +1,14 @@
 ---
 layout: post
 title: Hello world!
+images:
+
+  - url: /images/jekyll-logo.png
+    alt: Cypripedium Calceolum
+    title: Cypripedium Calceolum
+  - url: /images/jekyll_github.png
+    alt: Cypripedium Calceolum
+    title: Cypripedium Calceolum
 ---
 Привет, меня зовут Дмитрий мне 29 лет и я изучаю веб разработку. В частности HTML, CSS, JS, GIT.
 
@@ -8,5 +16,7 @@ title: Hello world!
 
 Здесь периодически будут появляться мои проекты, а также статьи, выдержки из книг, переводы статей разработчиков. Всем кому это интересно так же как и мне добро пожаловать)).
 
-![_config.yml]({{ site.baseurl }}/images/jekyll_github.png)
+{% assign image = page.images[1] %} 
+{% include image.html image=image %}
+
 
