@@ -6,10 +6,7 @@
 name: NLP Portfolio 
 
 # Short bio or description (displayed in the header)
-description: Includes the summaries of several NLP related scientific papers. 
-Dersu Giritlioğlu
-Emre Doğan
-Gözde Güneşli
+description: Includes the summaries of several NLP related scientific papers. /*Dersu Giritlioğlu, Emre Doğan and Gözde Güneşli.*/
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
@@ -28,7 +25,7 @@ footer-links:
   instagram:
   linkedin:
   pinterest:
-  rss: # just type anything here for a working RSS icon
+  rss: dasdas # just type anything here for a working RSS icon
   twitter:
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
