@@ -5,14 +5,19 @@ layout: default
 <div class="posts">
   {% for post in site.posts %}
     <article class="post">
-
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
-
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+    	<h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+		  <div class="post-container">
+       	<div class="main-img">
+          {% assign image = post.images[0] %}
+          {% include image.html image=image %}
+        </div>
+        <div class="text-container">
+  		    <div class="entry">
+  		        {{ post.excerpt }}
+  		    </div>
+          <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Читать далее</a>
+        </div>
+		  </div>     
     </article>
   {% endfor %}
 </div>
