@@ -226,7 +226,7 @@ nav {
   .gotonext {
      margin-left: 0;
   }
-  
+
   a {
     margin-left: 20px;
     color: $darkGray;
@@ -288,6 +288,17 @@ nav {
 footer {
   padding: 20px 0;
   text-align: center;
+}
+
+details {
+  margin-top: 20px;
+  p {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 10px;
+    border-left: 2px inset;
+    font-style: oblique;
+  }
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS

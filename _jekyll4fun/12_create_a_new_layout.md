@@ -42,7 +42,7 @@ __Step 4.__ Restart Jekyll
 
 Ideas to get you started.
 
-_Add a Track under the post title_
+### _Add a Track under the post title_
 
 {% raw %}
 ```html
@@ -54,14 +54,15 @@ _Add a Track under the post title_
 track: Other Tech
 ```
 
-_Get "Written On" To Show A Date_
+### _Get "Written On" To Show A Date_
 
 * What's up with the "written on" section in the page?
 * Does the _posts convention for dates work here?
 
-_Replace "Written On" with a list of tags_
+### _Replace "Written On" with a list of tags_
 
 * Liquid Snippet for displaying tags
+
 {% raw %}
 ```
 {% for t in page.tags %}
@@ -69,16 +70,22 @@ _Replace "Written On" with a list of tags_
 {% endfor %}
 ```
 {% endraw %}
+
 <details>
  <summary>Where do you define the tags?</summary>
- Post Front Matter
- Add A new object "tags"
- Add values with array syntax
- </details>
+ <p>
+ <ul>
+ <li>Post Front Matter</li>
+ <li>Add A new object "tags"</li>
+ <li>Add values with array syntax</li>
+ </ul>
+ </p>
+</details>
 
-_Add Collection Defaults And Track Info_
+### _Add Collection Defaults And Track Info_
 
 * Add additional variables to your collection definition
+
 ```yaml
 collections:
   connecttech2018:
@@ -88,8 +95,10 @@ collections:
 ```
 <details>
 <summary>Where is this?</summary>
+<p>
 _config.yml
 Working locally?  Don't forget to restart!
+</p>
 </details>
 
 * Before post content add a new section to display the default properties
@@ -106,7 +115,8 @@ Working locally?  Don't forget to restart!
 
 <details>
   <summary>Why do I have to filter where by first?</summary>
+  <p>
   The <em>where</em> always returns and array, even of just one item.
   If you don't also ask for the first item, you'll get weird results.
-  (I did mention that Liquid is <em>verbose</em>!)
+  (I did mention that Liquid is <em>verbose</em>!)</p>
 </details>

@@ -32,12 +32,14 @@ Let's take a pause to take a look at Jekyll's conventions.
 ## File Types
 
 #### Content and Data
+
 | Pages | .html, .md | root | content |
 | Posts | .html, .md | _posts | built-in content type |
 | Data | .yml, .csv, .json|  *_data* | Properties, Configuration, Lists |
 | Collections | .html, .md | _custom_ | Custom content types and data |
 
 #### Theme and Style
+
 | Layouts | .html | *_layouts* | content containers, structural view |
 | Includes | .html | *_includes* | reusable fragments across layouts or pages |
 | Styles | .sass  | *_sass* | source files for CSS |
@@ -49,6 +51,7 @@ Let's take a pause to take a look at Jekyll's conventions.
 + There is a large collection of [Standard Variables]().
 
 ### Template Variables Have Scopes
+
 | page | File's Front Matter |
 | site | Everything in _config.yml |
 | layout | Layout file's front matter |
@@ -56,8 +59,10 @@ Let's take a pause to take a look at Jekyll's conventions.
 | data | _data collection files (yml, json, csv) |
 
 <details>
-<summary><strong>Puzzle:</strong> What is the priority of the scopes?
-<br/> What if you have a property in both a layout AND a page?
+<summary><strong>Puzzle:</strong> What if you have a property in both a layout AND a page?
 </summary>
-<strong>Page</strong> overrides <strong>Layout</strong> overrides <strong>Site</strong>
+<p>
+They don't conflict. Each variable scope is a separate namespace.<br/>
+page.blah !=  layout.blah != site.blah
+</p>
 </details>

@@ -17,11 +17,11 @@ Jekyll's _config.yml file serves a couple of purposes:
 
 <details>
   <summary><em>Tips if you are new to YAML (*.yml)</em></summary>
-  <ul>
+  <p><ul>
     <li>Do not use tabs to align content, only spaces</li>
     <li> If your value causes parsing error, just wrap it with quotes (single or double)</li>
     <li>Github sends you an email if it can't read your _config.yml</li>
-  </ul>  
+  </ul></p>
 </details>
 
 ### Personalize Site Header Properties
@@ -62,7 +62,7 @@ as in this example a list of icons to show in the footer.
 
 <details>
 <summary><strong>Quiz:</strong> "site" refers to what jekyll file?</summary>
-<strong>__config.yml_</strong>
+<p><strong>__config.yml_</strong></p>
 </details>
 
 ## Layouts example __layouts/default.html_

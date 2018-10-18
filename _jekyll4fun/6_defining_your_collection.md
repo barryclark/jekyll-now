@@ -14,13 +14,14 @@ and add an index file
 ```
 <details>
 <summary><strong>Quiz:</strong>the prefix underscore is important, why?</summary>
-Indicates to Jekyll this is a file it needs to process.
+<p>Indicates to Jekyll this is a file it needs to process.</p>
 </details>
 
 <details>
 <summary>Working Directly On Github?</summary>
+<p>
 Github will not let you create an empty directory, however if you add
-the directory to the filename, it will be created.
+the directory to the filename, it will be created.</p>
 </details>
 
 
@@ -38,7 +39,7 @@ collections:
 
 <details>
 <summary>Working with Jekyll locally?</summary>
-Restart Jekyll Server.  _config.yml is the one file Jekyll doesn't watch for changes
+<p>Restart Jekyll Server.  _config.yml is the one file Jekyll doesn't watch for changes</p>
 </details>
 
 ## Step 3: Add Some Content
@@ -63,18 +64,20 @@ Learning To Rock Jekyll at Connect Tech!
 
 <details>
 <summary>The layout for your index & item page?</summary>
-There is none!  Why not?
+<p>There is none!  Why not?</p>
 </details>
 
 <details>
 <summary>The title for the index and item page?</summary>
-Uses the filename.
+<p>Uses the filename.</p>
 </details>
 
 <details>
 <summary>Where are files output?</summary>
+<p>
 _site/ <br/>
   &nbsp;&nbsp;connecttech2018.html <br/>
   &nbsp;&nbsp;connecttech2018/ <br/>
   &nbsp;&nbsp;&nbsp;&nbsp;jekyll-4-fun.html <br/>
+</p>
 </details>

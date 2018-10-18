@@ -19,7 +19,7 @@ Jekyll uses a file name convention to provide date metadata and sorting.
 ```  
 <details>
    <summary>Quiz: What file standardizes the look and feel of this post?</summary>
-   <strong>_layouts/post.html</strong>
+   <p><strong>_layouts/post.html</strong></p>
 </details>
 
 

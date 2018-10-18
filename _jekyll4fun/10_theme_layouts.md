@@ -17,12 +17,16 @@ allowing for consistent styles, navigation and branding elements.
 
 <details>
 <summary>Each page, post or rendered collection item declares what layout to use in?</summary>
+<p>
 <strong>layout variable</strong>
+</p>
 
 <details>
 <summary>layout variables get defined in?</summary>
+<p>
 <strong>Front Matter</strong>
 <div> Front Matter Defaults in _config.yml</div>
+</p>
 </details>
 
 </details>

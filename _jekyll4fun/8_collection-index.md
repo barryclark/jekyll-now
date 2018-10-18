@@ -24,9 +24,10 @@ to create that index listing.
 ## *Dang!*
 <details>
 <summary>Anybody see the problem?</summary>
+<p>
 Yes, the collection iterates *all* files as items, including the index.
 There are a few ways to solve this problem.  Today I'm going to use it as an
-opportunity to teach a few more Liquid tricks.
+opportunity to teach a few more Liquid tricks.</p>
 </details>
 
 ## Step 3: Use more Liquid to exclude the index page from iteration

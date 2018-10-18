@@ -28,19 +28,24 @@ defaults:
 ### Save and Commit your changes.
 <details>
    <summary>Working Locally?</summary>
-Don't forget to restart to pick up _config.yml changes.
+<p>
+Don't forget to restart to pick up _config.yml changes.</p>
 </details>
 
 # While We Wait   
 
 <details>
   <summary>What are Permalinks?</summary>
+<p>
 <a href="https://jekyllrb.com/docs/permalinks/" target="_blank"><strong>permalink</strong></a>
 is a built-in variable that Jekyll will use to create paths for your content.  
 It has a placeholder syntax and helps with SEO to make your URIs easy to navigate.
+</p>
 </details>
 
 <details>
 <summary><em>Explore:</em> How has your collection's URL changed?</summary>
+<p>
 Navigate to /connecttech2018  or /connecttech2018/ are you redirected?
+</p>
 </details>
