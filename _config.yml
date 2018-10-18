@@ -6,7 +6,10 @@
 name: NLP Portfolio 
 
 # Short bio or description (displayed in the header)
-description: Includes the summaries of several NLP related scientific papers. \n Dersu Giritlioğlu \n Emre Doğan \n Gözde Güneşli
+description: Includes the summaries of several NLP related scientific papers. 
+Dersu Giritlioğlu
+Emre Doğan
+Gözde Güneşli
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
