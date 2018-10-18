@@ -20,6 +20,7 @@ December 3 - 5: DockerCon Europe, Barcelona
 
 December 10 - 13: KubeCon + CloudNative North America, Seattle
 * [Panel moderator, Cloud Native Storage Day](https://sched.co/GyHz)
+* Panel moderator, End user panel
 * [Community Building from Scratch: Sharing Experience of CNCF and K8s Meetups](https://sched.co/GrTK)
 
 ### 2019
