@@ -50,10 +50,6 @@ url: https://lauramoore.github.io
 baseurl: ""
 
 collections:
-  connecttech2018:
-    output: true
-    title: Notes from Connect Tech
-    description: What I learned at Connect Tech!
   jekyll4fun:
     output: true
     title: Jekyll For Fun!
@@ -67,11 +63,6 @@ defaults:
       type: "jekyll4fun"
     values:
       layout: "lesson"
-  - scope:
-      path: ""
-      type: "connecttech2018"
-    values:
-      layout: "conference-post"
 #
 # !! You don't need to change any of the configuration flags below !!
 #
