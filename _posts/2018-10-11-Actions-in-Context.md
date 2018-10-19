@@ -3,6 +3,8 @@ layout: post
 title: "Paper Review 1: Actions in Context"
 ---
 
+2018/10/11
+
 In this post, the paper "Actions in Context" is investigated and summarized.
 
 *Marcin Marszalek, Ivan Laptev, Cordelia Schmid. Actions in Context. CVPR 2009 - IEEE Conference on Computer Vision Pattern Recognition, Jun 2009, Miami, United States. IEEE Computer Society, pp.2929-2936, 2009.*
