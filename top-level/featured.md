@@ -11,4 +11,4 @@ permalink: /featured/
 This blog is also in the following blog directories:
 
 * [Rockstar Finance Personal Finance Blog Directory](https://directory.rockstarfinance.com/personal-finance-blogs/)
-* [Modest Money Top Finance Blogs](https://www.modestmoney.com/top-finance-blogs/) ![Modest Money Top Finance Blog](https://www.modestmoney.com/image5/finance-blogs.php?id=1697)
+* [Modest Money Top Finance Blogs](https://www.modestmoney.com/top-finance-blogs/)
