@@ -1,6 +1,6 @@
 ---
 layout: post
-title: AWS September 26th Outage
+title: AWS September 26th Disruption
 author: steven_harper
 ---
 
@@ -34,7 +34,7 @@ _We continue to investigate connectivity issues from some instances to some AWS 
 
 Not all of our accounts and clients were in the affected availability zone; which zone was impacted? Well each customer gets a [random availability zone id for their account](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html), so you cannot just say _eu-west-1a_ was impacted, because every customer gets assigned one of the zones as having this label.  We suspect this is because customers mostly choose the first Zone, and would not evenly distribute usage across all three zones in Ireland if everyone had the same labels.
 
-The UK (BST) time for the outage was reported at 9:06am, it started at 8:15am and was resolved at  10:59am.  Major IT news sites; [The Verge](https://www.theverge.com/circuitbreaker/2018/9/26/17905158/amazon-alexa-outage-europe-down-service), [The Register](https://www.theregister.co.uk/2018/09/26/amazon_alexa_outage_down/), were only reporting that Amazon’s Alexa was down, while the Social IT sites such as [Reddit](https://www.reddit.com/r/aws/comments/9j0lfn/issues_in_euwest1_aws_aware/) had accounts of more specific issues.
+The UK (BST) time for the distruption was reported at 9:06am, it started at 8:15am and was resolved at  10:59am.  Major IT news sites; [The Verge](https://www.theverge.com/circuitbreaker/2018/9/26/17905158/amazon-alexa-outage-europe-down-service), [The Register](https://www.theregister.co.uk/2018/09/26/amazon_alexa_outage_down/), were only reporting that Amazon’s Alexa was down, while the Social IT sites such as [Reddit](https://www.reddit.com/r/aws/comments/9j0lfn/issues_in_euwest1_aws_aware/) had accounts of more specific issues.
 
 Some of our teams were quickly aware of the issues, whilst others who were not impacted were unaware there was an outage.  Some accounts had direct contact with their AWS TAM (Technical Account Manager), to understand the impact and help deal with the issues caused.  Here is a summary of the symptoms we encountered :
 
@@ -54,4 +54,4 @@ Once everything was back up and running, many teams tried to work out how they c
  - External monitoring outside or your operating region is important - if you use a third party, pick a region that is not the same as your production services.
  - Ensure that systems are multi AZ deployed if critical
  - Test deployment code with AWS API failures in mind.
- - Monitor other nearby AWS Regions, as customer may be moving to your Region during outages.
+ - Monitor other nearby AWS Regions, as customer may be moving to your Region during service effecting dusruptions.
