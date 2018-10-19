@@ -56,6 +56,11 @@ collections:
     description: Blog like a hacker with Jekyll @connect_js @lk_moore
     source: https://github.com/lauramoore/lauramoore.github.io
     permalink: /:collection/:title/
+  connecttech2018:
+    output: true
+    title: Connect Tech 2018
+    description: Things I learned at connect tech.
+    permalink: /:collection/:title
 
 defaults:
   - scope:
@@ -63,6 +68,11 @@ defaults:
       type: "jekyll4fun"
     values:
       layout: "lesson"
+  - scope:
+      path: ""
+      type: "connecttech2018"
+    values:
+      layout: "default"
 #
 # !! You don't need to change any of the configuration flags below !!
 #
