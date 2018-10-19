@@ -36,7 +36,7 @@ Not all of our accounts and clients were in the affected availability zone; whic
 
 The UK (BST) time for the distruption was reported at 9:06am, it started at 8:15am and was resolved at  10:59am.  Major IT news sites; [The Verge](https://www.theverge.com/circuitbreaker/2018/9/26/17905158/amazon-alexa-outage-europe-down-service), [The Register](https://www.theregister.co.uk/2018/09/26/amazon_alexa_outage_down/), were only reporting that Amazon’s Alexa was down, while the Social IT sites such as [Reddit](https://www.reddit.com/r/aws/comments/9j0lfn/issues_in_euwest1_aws_aware/) had accounts of more specific issues.
 
-Some of our teams were quickly aware of the issues, whilst others who were not impacted were unaware there was an outage.  Some accounts had direct contact with their AWS TAM (Technical Account Manager), to understand the impact and help deal with the issues caused.  Here is a summary of the symptoms we encountered :
+Some of our teams were quickly aware of the issues, whilst others who were not impacted were unaware there was a disruption.  Some accounts had direct contact with their AWS TAM (Technical Account Manager), to understand the impact and help deal with the issues caused.  Here is a summary of the symptoms we encountered :
 
  - __Direct Connect__ - connections down
  - __EC2__ - Launching instances slow, API calls slow or failing intermittently
@@ -54,4 +54,4 @@ Once everything was back up and running, many teams tried to work out how they c
  - External monitoring outside or your operating region is important - if you use a third party, pick a region that is not the same as your production services.
  - Ensure that systems are multi AZ deployed if critical
  - Test deployment code with AWS API failures in mind.
- - Monitor other nearby AWS Regions, as customer may be moving to your Region during service effecting dusruptions.
+ - Monitor other nearby AWS Regions, as customer may be moving to your Region during service affecting disruptions.
