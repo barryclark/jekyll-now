@@ -1,10 +1,9 @@
 ---
 layout: post
-title: "Paper Review 2: Parsing Natural Scenes and Natural Language
-with Recursive Neural Networks"
+title: "Paper Review 2: Parsing Natural Scenes and Natural Language with Recursive Neural Networks"
 ---
 
-10.18.2018
+2018/10/18
 
 In this post, the paper "Parsing Natural Scenes and Natural Language
 with Recursive Neural Networks" is investigated and summarized.
