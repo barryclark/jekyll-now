@@ -1,0 +1,18 @@
+---
+title: 1.11 Native Debugger
+layout: categories
+tags:
+  - Android
+  - Native
+categories:
+  - Android
+---
+
+### Native Debugger实现
+1. `sigaction()`注册捕捉signal(SIGABRT, SIGBUS, SIGBUS, SIGBUS, SIGPIPE, SIGSEGV)
+2. 通过socket发送请求, 让debugger服务端调用系统调用`ptrace(PTRACE_ATTACH, request_tid, 0, 0)`, Attach到目标进程, 获取寄存器等相关信息
+3. 调用`backtrace_map()`获取目标进程的堆栈
+4. `activity_manager_connect()`告诉AMS 有crash
+5. `perform_dump()`执行dump操作 -> `engrave_tombstone()`
+6. `ptrace(PTRACE_DETACH, request.tid, 0, 0)` detach目标进程
+7. ps: debuggerd -b [pid], 可输出Native进程的调用栈

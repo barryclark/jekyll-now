@@ -1,0 +1,12 @@
+---
+title: 2.9 equals & hashcode
+layout: categories
+tags:
+  - Java
+categories:
+  - Java
+---
+
+### equals & hashcode
+* hashcode用于HashMap等hash存储容器
+* hashMap会使用equals判断key是否相同, 因此需要根据规则复写hashcode

@@ -1,0 +1,25 @@
+---
+title: 1.7 ActivityManagerService
+layout: categories
+tags:
+  - Android
+  - Framework
+categories:
+  - Android
+---
+
+### 1.7.1 启动流程
+1. startBootstrapService[SystemServer.java启动], (一)设置SystemServiceManager, (二)设置AMS的Installer, (三)初始化AMS相关的PMS, (四)设置SystemServer
+2. AMS创建, 创建ActivityManager前台进程, 创建UiThread, 创建前台后台广播接收器, 创建CPUTracker
+3. AMS#start -> AMS#setSystemProcess, 注册meminfo等各种服务
+4. ActivityThread#installSystemApplicationInfo, 最后调用LoadedApk的installSystemApplicationInfo
+5. startSystemUi, 启动homeActivity
+6. 调用一系列服务的systemReady
+
+### 1.7.2 startActivity流程
+* 流程
+    * `Activity#startActivityForResult()` -> `Instrumentation#execStartActivity()` -> `ActivityManagerNative#getDefault()#startActivity()`, `ActivityManagerNative#getDefault()`即`ActivityManagerProxy`  -> `ActivityManagerProxy#startActivity()` -> `mRemote#transact(START_ACTIVITY_TRANSACTION, )``ActivityManagerProxy`经过binder IPC -> `ActivityManagerNative#onTransact()`, `case START_ACTIVITY_TRANSACTION`, -> `ActivityManagerService#startActivity()` -> `ActivityStackSupervisor#startActivityMayWait()`其中`startActivityMayWait()`包含
+    * `ActivityStackSupervisor#resolveActivity()`收集intent所指向Activity信息, 多个可选则弹窗 -> `AppGlobals#getPackageManager()#resolveIntent()` -> `PackageManagerService#resolveIntent()` -> `PackageManagerService#queryIntentActivities()`, 找到Activity并保存到Intent对象
+    * `startActivityLocked()`包含
+        * `创建ActivityRecord1
+        * `startActivityUncheckedLocked()`找到新Activity所属的Task对象 -> `ActivityStack#startActivityLocked()` -> `ApplicationThreadProxy#scheduleLaunchActivity()`经过Binder IPC -> `ApplicationThreadNative#onTransact()` -> `ApplicationThread#scheduleLaunchActivity()`通过handler发送LAUNCH_ACTIVITY消息 ->  `ActivityThread#handleLaunchActivity()` 回调`Activity#onCreate()`等方法

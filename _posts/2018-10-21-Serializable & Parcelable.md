@@ -1,0 +1,14 @@
+---
+title: 2.9 Serializable & Parcelable
+layout: categories
+tags:
+  - Java
+categories:
+  - Java
+---
+
+### Serializable & Parcelable区别
+* Parcelable
+    * 效率高, 内存小, Binder的载体, 设计用于跨进程访问, 不能序列化到本地或者网络
+* Serializable
+    * 反射实现, 效率低, 消耗内存多, 保存到本地或者网络传输建议使用

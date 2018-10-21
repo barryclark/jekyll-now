@@ -1,0 +1,345 @@
+---
+title: 1.10 SurfaceFlinger
+layout: categories
+tags:
+  - Android
+  - Framework
+categories:
+  - Android
+---
+
+### 1.10.1 基础概念
+    * Image Stream Producers(图形流的生产者) 如OpenGL ES, Canvas 2D
+    * Image Stream Consumers(图形流的消费者) SurfaceFilnger, 使用OpenGL和HW Composer组合surfaces
+    * Window Manager 管理window, 即view的容器, 并将元数据(屏幕大小, z-order信息)发送给SurfaceFlinger
+    * Hardware Composer 显示子系统的抽象层, 执行合成工作
+    * VSync
+        * 屏幕刷新, 从左到右, 从上到下, 垂直刷新周期完成, 发出VSync信号
+        * Android包含屏幕产生硬件VSync信号和SurfaceFlinger转成的软件信号
+        * 双缓冲 + VSync
+        * 三缓冲 + VSync + Choreographer
+    * Gralloc原理
+        * 分配屏幕大小的帧缓冲区
+        * 将分配好的图形缓冲区注册(映射)到当前进程的自己空间
+        * 将要绘制的画面内容写入已注册的图形缓冲区, 并渲染(拷贝)到系统帧缓冲区
+
+### 1.10.2 启动流程
+    * `surfaceFlinger#init()`包含以下操作
+        * `new HWComposer()`, 初始化硬件composer对象
+            * `mCBContext->procs.vsync = &hook_vsync` VSync信号回调方法
+            * `mVSyncThread = new VSyncThread(*this)`不支持硬件的VSync则创建线程模拟定时VSync信号
+        * `RenderEngine::create(mEGLDisplay, mHwc->getVisualID())`
+        * `new DispSyncSource()`创建`DispSyncSource对象`
+        * `new EventThread(vsyncSrc)`创建线程`EventThread`监听和处理`SurfaceFlinger`中的事件
+    * `surfaceFlinger#run()`
+    * 给`SurfaceFlinger`发送消息
+        * `session() -> createSurface(String8("BootAnimation"))` `session`即`SurfaceComposerClient`对象
+    * SurfaceFlinger服务链接过程
+        * `mSession = new SurfaceComposerClient()` -> `onFirstRef()` -> `SurfaceFlinger#createConnection()` -> 返回`BpSurfaceComposerClient`
+    * 请求`SurfaceFlinger`创建`Surface`的过程分析
+        * Android应用层通过`ISurface#requestBuffer()`请求`SurfaceFlinger`请求图形缓冲区
+        * `sp<SurfaceControl> control = session()->createSurface()`包含以下操作
+            * ->`SurfaceComposerClient#createSurface()` -> `mClient#createSurface()` -> `SurfaceFlinger#createSurface()`
+                * -> 这里有几种创建layout的方式, 选了一种说明`sp<Layer> layer = SurfaceFlinger#createNormalSurface()`其中`#createNormalSurface()`
+                    * -> `sp<Layer> layer = new Layer()`, 初始化操作
+                    * -> `layer->setBuffers()`其中包含以下操作
+                        * `getPixelFormatInfo()`
+                        * `DisplayHardware& hw(graphicPlane(0).displayHardware())`, 描述第一个显示屏的`DisplayHardware`对象
+                        * `mSurface = new SurfaceLayer()`, 使用`SurfaceFlinger`和`sp<Layer>& owner`初始化Surface
+                * ->`addClientLayer()`
+                    * -> `Client#attachLayer()`, 保存到`SurfaceFlinger#mLayers`, 即`Map`中
+                    * -> `addLayer_1()` -> `mCurrentState.layersSortedByZ.add(layer)`, 按Z轴排序, `SurfaceFlinger`根据Z向量计算可见性
+                * ->`layer->getSurface()` -> `Layer#createSurface()`
+            * ->`result = new SurfaceControl()`返回`surfaceControl`
+        * `sp<surface> surface = control->getSurface()` -> `new Surface(const_cast<SurfaceControl*>(this))`, Surface类的成员变量`mBufferMapper`指向`GraphicBuffer`将分配到图形缓冲区的映射到Android应用程序进程的地址空间 -> `Surface#init()`, 初始化`ANativeWindow#queueBuffer()`和`#dequeueBuffer()`回调
+    * 请求`SurfaceFlinger`渲染`Surface`的过程分析
+        * Surface和OpenGL ES通过Surface建立连接
+            ```
+                sp<Surface> surface = surfaceControl->getSurface();
+                EGLConfig config;
+                EGLSurface eglSurface;
+                EGLCOntext context;
+
+                EGLDisplay display = eglGetDisplay(EGL_DEFAULT_DISPLAY);
+                eglInitialize(display, 0, 0);
+                EGLUtils::selectConfigForNativeWindow(display, attribs, surface.get(), & config);
+                surface = eglCreateWindowSurface(display, config, surface.get(), NULL);
+                context = eglCreateContext(display, config, NULL, NULL);
+            ```
+        * OpenGL绘图前调用`Surface#dequeueBuffer`获取空闲UI元数据缓冲区, 接着`SurfaceFlinger`为UI元数据缓冲区分配图形缓冲区, `Surface#dequeueBuffer(ANativeWindow window, android_native_buffer_t ** buffer)` 包含以下操作
+            ```
+                Surface* self = getSelf(ANativeWindow)
+                self->dequeueBuffer(buffer);
+            ```
+        * `Surface#dequeueBuffer(android_native_buffer_t ** buffer)`
+        ```
+            // 获取空闲UI缓冲区
+            sizeof_t bufIdx = mShareBufferClient->dequeue();
+            ...
+            err = getBufferLocked(bufIdx, &w, &h, format, usage);
+            ...
+            const sp<GraphicBuffer>& backBuffer(mBuffer[]bufIdx);
+            *buffer = backBuffer.get();
+        ```
+        * `ShareBufferClient#dequeue()`
+           ```
+            ShareBufferStack& stack(*mShareStack);
+            ...
+            // 获取编号为queued的UI空闲缓冲区
+            int queued = stack.index[tail];
+
+            return queued;
+           ```
+        * `Surface#getBufferLocked()`
+            ```
+                // 请求分配图形缓冲区
+                sp<GraphicBuffer> buffer = surface->requestBuffer(index, w, h, format, usage);
+                ...
+                // 注册图形缓冲区的操作, 内部是先调用Gralloc的registerBuffer, 将指定图形缓冲区映射到当前进程的地址空间
+                err = getBufferMapper().registerBuffer(buffer->handle);
+            ```
+            * -> `Layer#requestBuffer(int index, uint32_t reqWidth,uint32_t reqHeight, uint32_reqFormat, uint32_t usage)`
+            ```
+                ...
+                ClientRef::Access shareClient(mUsageClientRef);
+                // 描述请求SurfaceFlinger服务分配图形缓冲区的Surface的UI元数据缓冲区堆栈
+                ShareBufferServer* lcblk(ShareClient.get());
+
+                ...
+                if((reqWidth!=mReqWidth) || (reqHeight!=mReqHeight)||(reqFormat!=mReqFormat)) {
+                    mReqWidth = reqWidth;
+                    mReqHeight = reqHeight;
+                    mReqFormat = reqFormat;
+                    // 设置Surface的图形缓冲区无效
+                    lcblk->reallocateAllExcept(index);
+                }
+
+                ...
+                // 获取有效的图形缓冲区buffer
+                uint32_t effectiveUsage = getEffectiveUsage(usage);
+                const DisplayHardware& hw(graphicPlane(0).displayHardware());
+                int32_t w = hw.getWidth();
+                int32_t h = hw.getHeight();
+                ...
+                buffer = new GraphicBuffer(w, h, f, effectiveUsage|GRALLOC_USAGE_HW_FB);
+                err = buffer->initCheck();
+                ...
+                ClientRef::Access shareClient(mUserClientRef);
+                ShareBufferServer* lcblk(shareClient.get());
+                // 获取无效则释放
+                lcblk->reallocateAll();
+                ...
+                // 表示GraphicBuffer对象为编号index的UI元数据缓冲创建
+                mBufferManager.attachBuffer(index, buffer);
+            ```
+        * 分析GraphicBuffer创建过程, 即`new GraphicBuffer()`
+            ```
+                GraphicBuffer::GraphicBuffer(uint32_t w, uint32_t h, PixelFormat reqFormat, uint32_t reqUsage) : BASE(), mOwner(ownData), mBufferMapper(GraphicBufferMapper::get()), mInitCheck(NO_ERROR).mIndex(-1)
+                {
+                    ...
+                    // 初始化图形缓冲区
+                    mInitCheck = initSize(w, h, reqFormat, reqUsage);
+                }
+            ```
+            ```
+                // GraphicBuffer#initSize
+                status_t GraphicBuffer::initSize(uint32_t w, uint32_t h, PixelFormat format, uint32_t reqUsage)
+                {
+                    GraphicBufferAllocator& allocator = GraphicBufferAllocator::get();
+                    // 分配指定大小, 像素格式的图形缓冲区
+                    status_t err = allocatot.alloc(w, h, format, reqUsage, &handle, &stride);
+                }
+            ```
+            ```
+                // GraphicAllocator#alloc
+                // 调用gralloc的gralloc_alloc, 在硬件分配图形缓冲区, 否则在匿名内存分配图形缓冲区
+                err = mAllocDev->alloc(mAllocDev, w, h, format, usage, handle, stride);
+            ```
+    * 分析`Surface#queueBuffer()`, 应用程序如何将填好数据的UI元数据缓冲区添加到当前正在绘制的Surface的UI元数据缓冲区堆栈的待渲染队列
+    ```
+        int Surface::queueBuffer(ANativeWindow* window, android_native_buffer_t* buffer) {
+            // ANativeWindow实际指向Surface
+            Surface* self = getSelf(window);
+            // 将UI元数据缓冲区加入待渲染队列
+            returen self->queueBuffer(buffer);
+        }
+    ```
+    ```
+        // Surface#queueBuffer
+        int Surface::queueBuffer(android_native_buffer_t* buffer)
+        {
+            //获取图形缓冲区的编号bufIdx, bufIdx关联UI元数据缓冲区
+            int32_t bufIdx = getBufferIndex(GraphicBuffer::getSelf(buffer));
+            ...
+            // 设置旋转方向, 纹理坐标, 裁剪区域
+            mShareBufferClient->setTransform(bufIdx, mNextBufferTransform);
+            mShareBufferClient->setCrop(bufIdx, mNextBufferCrop);
+            mShareBufferClient->setDirtyRegion(bufIdx, mDirtyRegion);
+            // 将bufIdx的UI元数据层缓冲区加入正在绘制的SurfaceUI元数据缓冲区堆栈的带渲染队列之后
+            err = mSharedBufferClient->queue(bufIdx);
+            ...
+            // 通知SurfaceFlinger把图形缓冲区渲染到设备显示屏
+            mClient.signalServer();
+    ```
+    ```
+        //ShareBufferClient#queue
+        status_t ShareBufferClient::queue(int buf)
+        {
+            SharedBufferStack& stack(*mShareStack);
+            // 将待渲染队列大小增1, 以便SurfaceFlinger服务知道Surface当前有多少图形缓冲区正在等待渲染
+            queued_head = (queued_head + 1) % mNumBuffers;
+            stack.index[queued_head] = buf;
+            // 将当然正处理的UI元数据缓冲区堆栈的待渲染队列加1
+            QueueUpdate update(this);
+        }
+    ```
+    ```
+        // SurfaceClient#signalServer
+        class SurfaceClient : public Singleton<SurfaceClient>
+        {
+            //Binder代理对象, 引用SurfaceFlinger服务
+            sp<ISurfaceComposer> mComposerService;
+            ...
+
+            public:
+            ...
+            void signalServer() const{
+                mComposerService->signal();
+            }
+        }
+    ```
+    ```
+        // SurfaceFlinger#signal
+        void SurfaceFlinger::signal() const {
+            // 将SurfaceFlinger服务所在的线程唤醒, 唤醒后, 即执行threadloop函数执行渲染Surface
+            const_cast<SurfaceFlinger*>(this)->signalEvent();
+        }
+    ```
+    * `SurfaceFlinger#threadLoop()`
+    ```
+        bool SurfaceFlinger::threadLoop()
+        {
+            waitForEvent();
+            ...
+            // 取出所有Surface的UI元数据缓冲区堆栈的待渲染队列头部的缓冲区, 并找到对应的图形缓冲区
+            handlePageFlip();
+            const DisplayHardware& hw(displayPlane(0).displayHardware());
+            ...
+            const int index = hw.getCurrentBufferIndex();
+            // 合成图形缓冲区
+            handleRepaint();
+            // 通知HAL层Gralloc模块合成完成
+            hw.compositionComplete();
+            // 将合成好的图形缓冲区渲染到硬件帧缓冲区fb上
+            postFrameBuffer();
+        }
+    ```
+    ```
+        // SurfaceFlinger#handlePageFlip, Surface按照Z轴大小排列在SurfaceFlinger的mDrawingState内部的layersSortedByZ中
+        void SurfaceFlinger::handlePageFlip()
+        {
+            // 取出Surface的layersSortedByZ
+            LayerVector& currentLayers = const_cast<LayerVector&>(mDrawingState.layersSortedByz);
+            // 取出所有Surface当前需要渲染的图形缓冲区
+            visibleRegions |= lockPageFlip(currentLayers);
+
+            const DisplayHardware& hw = graphicPlane(0).displayHardware();
+            const Region screenRegion(hw.bounds());
+            if(visibleRegions)
+            {
+                Region opaqueRegion;
+                // 计算所有Surface的可见区域
+                computeVisibleRegions(currentLayers, mDirtyRegion, opaqueRegion);
+
+                mVisibleLayersSortedByz.clear();
+                const LayerVector& currentLayers(mDrawingState.layersSortedByz);
+                size_t count = currentLayers.size();
+                mVisibleLayersSortedByZ.setCapacity(count);
+                for(size_t i = 0; i < count; i++) {
+                    if(!currentLayers[i]->visibleRegionScreen.isEmpty())
+                        mVisibleLayersSortedByZ.add(currentLayers[i]);
+                }
+                ...
+                mWormholeRegion = screenRegion.subtract(opaqueRegion);
+                mVisibleRegionDirty = false;
+            }
+            unlockPageFlip(currentLayers);
+            mDirtyRegion.andSelf(screenRegion);
+        }
+    ```
+    ```
+        // SurfaceFlinger#lockPageFlip
+        bool SurfaceFlinger::lockPageFlip(const LayerVector& currentLayers)
+        {
+            bool recomputeVisibleRegions = false;
+            size_t count = currentLayers.size();
+            sp<LayerBase> const* layers = currentLayers.array();
+            for(size_t i=0; i< count; i++) {
+                const sp<LayerBase>& layer(layers[i]);
+                layer->lockPageFlip(recomputeVisibleRegions);
+            }
+            return recomputeVisibleRegions;
+        }
+    ```
+    ```
+        // Layer#lockPageFlip
+        void Layer::lockPageFlip(bool& recomputeVisibleRegions)
+        {
+            ClientRef::Access sharedClient(mUserClient);
+            ShareBufferServer* lcblk(shareClient.get());
+            // 获取当前激活UI元数据缓冲区的编号
+            ssize_t buf = lcblk->retireAndLock();
+            ...
+            // 将编号为buf的图形缓冲区设置当前激活的图形缓冲
+            if(mBufferManager.setActiveBufferIndex(buf) < NO_ERROR) {
+                ...
+                return;  
+            }
+
+            sp<GraphicBuffer> newFrontBuffer(getBuffer(buf));
+            if(newFrontBuffer != NULL) {
+                const Region dirty(lcblk->getDirtyRegion(buf));
+                                    mPostedDirtyRegion=dirty.intersect(newFrontBuffer->getBounds());
+                ...
+                // 获取当前激活的图形缓冲区的元数据, 即裁剪区域, 纹理坐标和旋转方向
+                setBufferCrop(lcblk->getCrop(buf));
+
+                setBufferTransform(lcblk->getTransform(buf));
+            }
+            ...
+            if(lcblk->getQueueCount()) {
+                // 通知SurfaceFlinger完成当前的Surface渲染操作, 可以进行下一次Surface渲染操作
+                mFlinger->signalEvent();
+            }
+        }
+    ```
+    ```
+        // SharedBufferServer.retireAndLock
+        ssize_t SharedBufferServer::retireAndLock()
+        {
+            ...
+            RetireUpdate update(this, mNumBuffers);
+            // 获取当前正在使用的UI元数据缓冲区堆栈的待渲染队列头部的缓冲区在堆栈中的位置值buf
+            ssize_t buf = updateCondition(update);
+            if(buf>=0) {
+                if(uint32_t(buf) >= SharedBufferStack::NUM_BUFFER_MAX)
+                return BAD_VALUE;
+                ShareBufferStack& stack(*mSharedStack);
+                // 从描述当前正在使用的UI元数据缓冲区堆栈的一个index数组中获得一个对应的缓冲编号, 这个编号即为待渲染队列头部的UI元数据缓冲区的编号
+                buf=stack.index[buf];
+            }
+            return buf;
+        }
+    ```
+    ```
+        // BufferManager#setActiveBufferIndex
+        status_t Layer BufferManager::setActiveBufferIndex(size_t index)
+        {
+            // mActivveBuffer用于描述Surface当前激活的图形缓冲区的编号, index也是描述Surface当前激活的图形缓冲区的编号
+            mActiveBuffer = index;
+            return NO_ERROR;
+        }
+    ```
+
+### 1.10.3 绘图流程
+    *

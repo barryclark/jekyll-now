@@ -1,0 +1,49 @@
+---
+title: 1.9 WindowManagerService
+layout: categories
+tags:
+  - Android
+  - Framework
+categories:
+  - Android
+---
+
+### 1.9.1 启动流程
+    * WMS添加window的过程主要功能是添加Surface, 管理Surface布局以及Z轴排序问题
+    * `Systemserver`中`startOtherServices()` -> `WindowManagerService#main()`, 其中包含以下操作
+        * `WMS#createDisplayContentLocked()`创建`DiaplayContent`支持多屏幕
+        * `WMS#initPolicy()` -> `mPolicy#init()`, `mPolicy`为PhoneWindowManager
+        * `WMS#diaplayReady()` -> `WMS#systemReady()`
+
+### 1.9.2 启动窗口
+    * `ActivityStack#startActivityLocked` -> `mWindowManager#addAppToken()`增加`AppWindowToken`到`WMS#mTokenMap`中 -> `WMS#setAppStartingWindow()`, 其中包含以下操作
+    * 当主题Theme不为空, 主题满足以下任一情况, 则都会直接返回;
+        * 该主题实体为空
+        * 半透明
+        * 浮动窗口
+        * 显示壁纸
+    * 创建启动数据, 发送ADD_STARTING到`android.display`线程
+    * 收到`ADD_STARTING`消息, 调用`WindowManager#addView()`该view为`DecorView`
+    * 显示真正的窗口, window更新的过程都会调用`WMS#performLayoutAndPlaceSurfacesLocked()` -> `WMS#performLayoutAndPlaceSurfacesLockedLoop()` -> `WMS#performLayoutAndPlaceSurfacesLockedInner`其中包含以下操作
+        * `WMS#performLayoutLockedInner()`执行layout操作
+        * `winAnimator#commitFinishDrawingLocked()` -> `mService#scheduleAnimationLocked`调度动画, `mService.mH#sendEmptyMessage()`发送
+        * `mWallpaperTokens#remove()`移除退出的token
+        * `AppWindowToken#removeAppFromTaskLocked()` 移除所有正在退出的application
+        * `WMS#scheduleAnimationLocked`调度动画
+
+### 1.9.3 window处理流程
+    * 第一阶段
+        * 将Window相应的task移顶部, 并创建AppWindowTken对象
+        * 发送消息到`android.display`线程处理ADD_STARTING启动窗口消息
+    * 第二阶段
+        * 创建获取AMS的binder代理
+        * 执行`ActivityThread#performLaunchActivity()`
+        * 创建Activity, 执行attach操作
+        * 执行`performResumeActivity()`回调`onResume()`
+        * 执行`addView`过程
+            * 创建`ViewRootImpl`对象
+            * 创建WMS端的Session的代理对象
+            * 创建继承于IWindow.Stub的ViewRootImpl对象
+            * 执行setView()添加视图到WMS
+            * 在WMS中创建WomdpwState对象
+            * `updateFocusedWindowLocked`更新窗口焦点
