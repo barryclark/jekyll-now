@@ -15,6 +15,7 @@ colors_key <- c( "Blue", "Orange","Black")
 ```
 
 ```{r}
+#Already SumScale normalized by dboutz
 tmt1 <- read_excel("Liver_Total_TMT1_PSMs.xlsx")
 tmt2 <- read_excel("Liver_Total_TMT2_PSMs.xlsx")
 
@@ -41,9 +42,9 @@ tmts <- rbind(tmt1_sel, tmt2_sel) %>%
 #"Supplementary Table 3. Proteome data analysis. Only peptides with TMT reporter ion signal intensities for all ten samples were used for further bioinformatics analysis. Any duplicate peptides were removed before the data was SumScale normalised. The two normalised data files were then merged together to give one 10vs10 file comparison. Any peptides which did not have intensity values in all twenty TMT reporter ion channels were filtered out and median values were taken of the control and treated samples respectively.A total of 1906 peptides were quantified across all liver samples. Pairwise non-parametric Mann-Whitney U tests were performed and a p-value was attributed to each of the 1906 peptides s. The resulting p-values were adjusted by the Benjamini-Hochberg multi-test adjustment method for the high number of comparisons."
 
 
-#It doesn't seem like median values of 10 vs.10 were used. Calculating both, but mean matches paper fold changes much better (see last code block)
+#CDM It doesn't seem like median values of 10 vs.10 were used. Calculating both, but mean matches paper fold changes much better (see last code block)
 
-#List of peptides that were seem in both conditions (check this is right)
+#List of peptides that were seen in both conditions (check this is right)
 tmts_kept <- tmts %>% select(peptide, tmt, condition) %>%
       unique %>%
       group_by(peptide) %>%
@@ -115,6 +116,7 @@ tmts_calcs_mn <- rbind(
     mutate(select(tmts_tidy_cond_mn, peptide, fc, log2fc), comparison = "control vs treated"))
 
 #Decided on mean based on match to paper fold changes. Conflicts with methods
+#Plot fold changed between conditions and between experiments
 tmt_plot <- tmts_calcs_mn %>% ggplot(aes(fct_reorder(peptide, fc), y = log2fc, group = comparison, color = comparison)) +
        geom_point(alpha = 0.25) +
       theme(axis.text.x = element_blank(), legend.position = "none", axis.ticks.x = element_blank()) +
@@ -128,7 +130,7 @@ tmt_plot %>% ggsave("conditions_vs_replicates_plot.png", ., width = 5, height = 
 ```
 
 
-Correlate each sample with all other samples
+Correlate each sample with all other samples - Dan's heatmap but in R
 ```{r}
 tmts_wide <- tmts %>% 
      mutate(sample_id = paste(tmt, iso, sep = ".")) %>%
@@ -157,6 +159,8 @@ tmt_corrplot <- corrs %>% gather(cond2, `Pearson\ncorr`, -cond1) %>%
 ```
 
 #Scramble condition labels and get fold changes
+Assign each peptide to a random conditions to get an idea of base-line apparent fold changes for peptides.
+
 ```{r}
 tmts_scramble <- tmts
 tmts_scramble$condition <- sample(tmts$condition)
@@ -185,6 +189,7 @@ tmts_randplot <-tmts_tidy_cond_mn_singleexp  %>% ggplot(aes(fct_reorder(peptide,
       background_grid(major = "y") +
       facet_wrap(~tmt, ncol = 2, scales = "free_x") +
      NULL
+
 
 ```  
 
