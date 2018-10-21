@@ -9,7 +9,7 @@ Web scraping is the act of pulling information directly off of the internet. Thi
 
 There are multiple ways of scraping data off of the internet. You could use an API (Application Program Interface - a tool made by the programmers of the website to help other programmers interact with their data or other aspects of the site) or you might just pull the HTML of the website. I'm going to give a rundown on how to do some HTML web scraping here.
 
-Let's say I want to see how many times I've committed on GitHub over the past year. If you aren't familiar with Github, a commit is when you upload code to your profile.  They show your number of commits on a nice color-coded chart where the darker the shade is, the more commits you have.
+Let's say I want to see how many times I've committed on [GitHub](github.com/gerket) over the past year. If you aren't familiar with Github, a commit is when you upload code to your profile.  They show your number of commits on a nice color-coded chart where the darker the shade is, the more commits you have.
 
 <img src='../images/2018-9-05-Web-Scraping-HTML/github_commit_chart.png' alt='My Github Commit Chart'>
 
@@ -55,13 +55,13 @@ is representing February 19th, 2018. We also know that I didn't commit anything 
 
 Good question! We're going to need another library. BeautifulSoup is a useful library that allows you to search through HTML and find whatever you're looking for. Let's import it.
 
-```Python
+```python
 from bs4 import BeautifulSoup
 ```
 
 We want to get all of the different `'data-count'`s from each box so that we can add them up and get the number of commits that I've had. To do this we're going to have to find all of the `<g>` tags and all of the different `<rect>` tags within those.
 
-```Python
+```python
 total = 0
 soup = BeautifulSoup(res.content, 'lxml')
 
