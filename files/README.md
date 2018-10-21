@@ -65,7 +65,7 @@ The raw machine files for the maize paper have been posted to PRIDE with accessi
 
 ### Contents
 
-#### These are our material related to the project from before we had access to the .RAW machine files that were necessary to complete a complete reanalysis. These analyses and letters are based on a forensic data reanalysis working backwards from data originally provided with the paper.  
+#### These are our materials related to the project from before we had access to the .RAW machine files that were necessary to complete a complete reanalysis. These analyses and letters are based on a forensic data reanalysis working backwards from data originally provided with the paper.  
 
 1. First Letter to the Editor: letter_re_mesnage.pdf
 
