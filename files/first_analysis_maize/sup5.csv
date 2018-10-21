@@ -1,0 +1,157 @@
+UniProt ID,Protein name,Mass (Da),Log2 FC,P-adjusted values
+P08735,"Glyceraldehyde-3-phosphate dehydrogenase 1, cytosolic OS=Zea mays GN=GAPC1 ",531.82,0.9967,0.0294
+P08735,"Glyceraldehyde-3-phosphate dehydrogenase 1, cytosolic OS=Zea mays GN=GAPC1",532.31,1.4255,0.0260
+P08735,"Glyceraldehyde-3-phosphate dehydrogenase 1, cytosolic OS=Zea mays GN=GAPC1 ",1009.48,1.4541,0.0119
+P08735,"Glyceraldehyde-3-phosphate dehydrogenase 1, cytosolic OS=Zea mays GN=GAPC1 ",616.87,1.6955,0.0431
+P08735,"Glyceraldehyde-3-phosphate dehydrogenase 1, cytosolic OS=Zea mays GN=GAPC1 ",548.33,1.8528,0.0119
+P08735,"Glyceraldehyde-3-phosphate dehydrogenase 1, cytosolic OS=Zea mays GN=GAPC1 ",615.88,2.0534,0.0113
+P08440,"Fructose-bisphosphate aldolase, cytoplasmic isozyme OS=Zea mays ",803.46,1.0716,0.0117
+P08440,"Fructose-bisphosphate aldolase, cytoplasmic isozyme OS=Zea mays ",645.41,1.4850,0.0318
+P08440,"Fructose-bisphosphate aldolase, cytoplasmic isozyme OS=Zea mays",655.06,1.6325,0.0465
+P08440,"Fructose-bisphosphate aldolase, cytoplasmic isozyme OS=Zea mays ",664.42,1.9738,0.0350
+P08440,"Fructose-bisphosphate aldolase, cytoplasmic isozyme OS=Zea mays ",649.71,2.4956,0.0163
+B4FAD9,Uncharacterized protein OS=Zea mays GN=csu815 ,597.86,0.8756,0.0124
+B4FAD9,Uncharacterized protein OS=Zea mays GN=csu815 ,641.35,0.9842,0.0053
+B4FAD9,Uncharacterized protein OS=Zea mays GN=csu815 ,534.84,1.1483,0.0379
+B4FAD9,Uncharacterized protein OS=Zea mays GN=csu815 ,856.15,1.3991,0.0159
+B4FWP0,Fructose-bisphosphate aldolase OS=Zea mays GN=LOC100283676 ,802.96,0.8914,0.0231
+B4FWP0,Fructose-bisphosphate aldolase OS=Zea mays GN=LOC100283676,803.46,1.2777,0.0401
+B4FWP0,Fructose-bisphosphate aldolase OS=Zea mays GN=LOC100283676 ,655.06,1.6325,0.0465
+B4FWP0,Fructose-bisphosphate aldolase OS=Zea mays GN=LOC100283676 ,654.73,1.9031,0.0247
+P15590,Globulin-1 S allele OS=Zea mays GN=GLB1 ,394.56,-1.4287,0.0006
+P15590,Globulin-1 S allele OS=Zea mays GN=GLB1 ,599.36,-0.7400,0.0040
+P15590,Globulin-1 S allele OS=Zea mays GN=GLB1 ,482.95,-0.7080,0.0490
+P15590,Globulin-1 S allele OS=Zea mays GN=GLB1 ,497.92,-0.7022,0.0008
+Q7M1Z8,Globulin-2 OS=Zea mays GN=Zm.3896 ,823.46,-0.9408,0.0001
+Q7M1Z8,Globulin-2 OS=Zea mays GN=Zm.3896 ,722.35,-0.5861,0.0247
+Q7M1Z8,Globulin-2 OS=Zea mays GN=Zm.3896 ,661.31,1.0405,0.0423
+Q7M1Z8,Globulin-2 OS=Zea mays GN=Zm.3896 ,395.48,2.0333,0.0307
+B4FUK7,Uncharacterized protein OS=Zea mays GN=LOC100275372,588.37,0.9871,0.0479
+B4FUK7,Uncharacterized protein OS=Zea mays GN=LOC100275372 ,588.37,0.9871,0.0479
+B4FUK7,Uncharacterized protein OS=Zea mays GN=LOC100275372 ,698.87,1.2161,0.0312
+B4G0K5,Uncharacterized protein OS=Zea mays GN=LOC100274379 ,603.33,-1.4245,0.0001
+B4G0K5,Uncharacterized protein OS=Zea mays GN=LOC100274379 ,647.30,1.1080,0.0174
+B4G0K5,Uncharacterized protein OS=Zea mays GN=LOC100274379 ,641.34,1.1504,0.0219
+C0PDX9,Uncharacterized protein OS=Zea mays GN=LOC100274142 ,674.41,-1.6995,0.0000
+C0PDX9,Uncharacterized protein OS=Zea mays GN=LOC100274142 ,544.82,-1.3762,0.0001
+C0PDX9,Uncharacterized protein OS=Zea mays GN=LOC100274142 ,504.61,-1.2858,0.0005
+K7W272,Uncharacterized protein OS=Zea mays GN=Zm.92932 ,558.27,0.7007,0.0387
+K7W272,Uncharacterized protein OS=Zea mays GN=Zm.92932 ,637.40,1.3197,0.0479
+K7W272,Uncharacterized protein OS=Zea mays GN=Zm.92932,583.32,1.3985,0.0221
+P04712,Sucrose synthase 1 OS=Zea mays GN=SH-1 ,494.95,0.8111,0.0303
+P04712,Sucrose synthase 1 OS=Zea mays GN=SH-1 ,717.90,0.8697,0.0310
+P04712,Sucrose synthase 1 OS=Zea mays GN=SH-1 ,717.41,1.1634,0.0310
+P12863,"Triosephosphate isomerase, cytosolic OS=Zea mays",604.67,0.9111,0.0119
+P12863,"Triosephosphate isomerase, cytosolic OS=Zea mays ",802.44,1.1552,0.0417
+P12863,"Triosephosphate isomerase, cytosolic OS=Zea mays ",745.89,1.5959,0.0021
+P13867,Alpha-amylase/trypsin inhibitor OS=Zea mays,629.87,-0.7866,0.0026
+P13867,Alpha-amylase/trypsin inhibitor OS=Zea mays ,664.32,-0.7778,0.0017
+P13867,Alpha-amylase/trypsin inhibitor OS=Zea mays ,567.30,-0.7092,0.0058
+P21641,Oleosin Zm-II OS=Zea mays GN=OLE18 ,654.83,0.8037,0.0361
+P21641,Oleosin Zm-II OS=Zea mays GN=OLE18 ,488.93,0.9271,0.0111
+P21641,Oleosin Zm-II OS=Zea mays GN=OLE18 ,665.37,1.7281,0.0008
+A0A096QF11,Uncharacterized protein OS=Zea mays GN=Zm.40574 ,493.93,0.9728,0.0026
+A0A096QF11,Uncharacterized protein OS=Zea mays GN=Zm.40574 ,769.37,1.4525,0.0008
+A0A0B4J327,Uncharacterized protein OS=Zea mays GN=LOC100272880,587.84,-0.6383,0.0013
+A0A0B4J327,Uncharacterized protein OS=Zea mays GN=LOC100272880 ,651.99,1.0796,0.0118
+B4F7S2,Jasmonate-induced protein OS=Zea mays GN=LOC100191141 ,708.90,0.7741,0.0113
+B4F7S2,Jasmonate-induced protein OS=Zea mays GN=LOC100191141 ,602.64,0.9891,0.0061
+B4FN23,Uncharacterized protein OS=Zea mays GN=Zm.68129 ,558.83,0.7979,0.0011
+B4FN23,Uncharacterized protein OS=Zea mays GN=Zm.68129 ,579.83,0.9820,0.0002
+B4FUH2,Aspartate aminotransferase OS=Zea mays GN=pco118382 ,667.90,1.5439,0.0255
+B4FUH2,Aspartate aminotransferase OS=Zea mays GN=pco118382 ,880.48,1.6664,0.0149
+B4G1E1,Uncharacterized protein OS=Zea mays ,554.63,-1.7440,0.0062
+B4G1E1,Uncharacterized protein OS=Zea mays ,736.91,-1.3385,0.0154
+B6SGY5,RNA binding protein OS=Zea mays GN=LOC100280485 ,724.36,-0.8442,0.0255
+B6SGY5,RNA binding protein OS=Zea mays GN=LOC100280485 ,807.94,-0.6895,0.0246
+B6SI42,Oleosin OS=Zea mays GN=LOC100280594 ,392.72,1.3355,0.0398
+B6SI42,Oleosin OS=Zea mays GN=LOC100280594 ,694.86,2.0273,0.0001
+B6SK46,Cupin family protein OS=Zea mays ,825.45,-0.7283,0.0001
+B6SK46,Cupin family protein OS=Zea mays ,744.39,-0.6912,0.0001
+E9JVD4,Aldose reductase OS=Zea mays GN=AR3 ,903.15,1.4506,0.0255
+E9JVD4,Aldose reductase OS=Zea mays GN=AR3 ,560.98,1.4964,0.0214
+K7U2E4,Uncharacterized protein OS=Zea mays GN=Zm.24636 ,573.99,0.6234,0.0058
+K7U2E4,Uncharacterized protein OS=Zea mays GN=Zm.24636 ,422.90,0.7759,0.0215
+P26301,Enolase 1 OS=Zea mays GN=ENO1 ,935.03,0.9239,0.0094
+P26301,Enolase 1 OS=Zea mays GN=ENO1 ,685.37,0.9874,0.0412
+P49106,14-3-3-like protein GF14-6 OS=Zea mays GN=GRF1,683.43,-1.5626,0.0247
+P49106,14-3-3-like protein GF14-6 OS=Zea mays GN=GRF1 ,818.42,1.1117,0.0129
+Q0QWI2,Sorbitol dehydrogenase OS=Zea mays ,559.30,0.6588,0.0423
+Q0QWI2,Sorbitol dehydrogenase OS=Zea mays ,702.36,1.8012,0.0038
+A0A096PH50,Uncharacterized protein OS=Zea mays ,609.63,1.0833,0.0014
+A0A096PQ85,Uncharacterized protein OS=Zea mays GN=LOC100502333 ,553.81,0.8119,0.0058
+A0A096Q8H5,Uncharacterized protein OS=Zea mays ,376.54,1.1847,0.0053
+A0A096RF87,Uncharacterized protein OS=Zea mays GN=Zm.27514 ,1078.99,-0.6393,0.0403
+A0A096SFX7,Uncharacterized protein OS=Zea mays GN=Zm.86345 ,631.36,1.1945,0.0036
+A0A096SS21,Uncharacterized protein OS=Zea mays GN=Zm.94009 ,773.89,0.8667,0.0004
+A0A096T4U7,Uncharacterized protein OS=Zea mays ,759.90,1.2937,0.0095
+A0A096TN72,Uncharacterized protein OS=Zea mays ,632.34,0.9647,0.0198
+A0A096TZK1,Uncharacterized protein OS=Zea mays ,689.86,-1.0636,0.0026
+A0A0B4J3E6,Uncharacterized protein OS=Zea mays GN=gst5 ,595.34,-0.5975,0.0430
+A2SZW8,1-Cys peroxiredoxin PER1 OS=Zea mays GN=PER1 ,714.92,1.2031,0.0119
+B4FBK8,Uncharacterized protein OS=Zea mays GN=LOC100857095,533.60,-0.7291,0.0124
+B4FIC6,Peroxidase OS=Zea mays GN=LOC100194341 ,394.89,1.5462,0.0387
+B4FKP4,Uncharacterized protein OS=Zea mays GN=IDP1639 ,853.43,-1.0694,0.0006
+B4FLR0,GrpE protein homolog OS=Zea mays GN=pco143734 ,657.34,-0.7115,0.0124
+B4FNZ9,General stress protein 39 OS=Zea mays,532.33,0.8910,0.0260
+B4FQ89,Uncharacterized protein OS=Zea mays GN=LOC100274216 ,755.40,0.9649,0.0387
+B4FSV6,"6-phosphogluconate dehydrogenase, decarboxylating OS=Zea mays GN=Zm.506 ",641.36,1.0912,0.0312
+B4G0F2,Uncharacterized protein OS=Zea mays GN=LOC100274355 ,609.35,0.6360,0.0403
+B4G1C2,Uncharacterized protein OS=Zea mays GN=LOC100274481,728.83,-0.6891,0.0123
+B4G1G1,Desiccation-related protein PCC13-62 OS=Zea mays GN=LOC100282997 ,810.45,-0.6506,0.0489
+B4G1W8,Myosin-like protein OS=Zea mays GN=cl30719_1 ,395.47,0.9232,0.0105
+B6SGF3,Glyoxalase family protein superfamily OS=Zea mays GN=pco065024 ,786.42,0.9563,0.0133
+B6SGP7,Non-specific lipid-transfer protein OS=Zea mays GN=plt1 ,622.98,2.0075,0.0014
+B6SIZ2,Oleosin OS=Zea mays GN=LOC100280642 ,401.21,-3.0929,0.0119
+B6SLF6,Antimicrobial peptide MBP-1 OS=Zea mays GN=LOC100274918 ,464.56,0.7949,0.0247
+B6SNS4,Late embryogenesis abundant protein D-34 OS=Zea mays ,511.27,1.4007,0.0009
+B6SUW2,Epoxide hydrolase 2 OS=Zea mays GN=pco066796 ,492.81,-0.7553,0.0017
+B6SZN0,MtN19-like protein OS=Zea mays ,792.40,-1.1460,0.0026
+B6T5F2,60S ribosomal protein L13 OS=Zea mays GN=Zm.1196 ,503.30,0.9001,0.0067
+B6TBZ8,Alanine aminotransferase 2 OS=Zea mays ,626.85,1.1822,0.0058
+B6TGT0,60S ribosomal protein L2 OS=Zea mays GN=LOC100216796 ,498.61,1.0102,0.0007
+B6TIK3,Stress protein OS=Zea mays GN=pco152469 ,746.36,0.8807,0.0037
+B6UAQ7,Pectinesterase inhibitor domain containing protein OS=Zea mays ,551.82,0.8718,0.0387
+B6UGU4,Steroleosin OS=Zea mays GN=LOC100286255 ,649.39,0.7873,0.0260
+B6UH16,Globulin OS=Zea mays ,579.98,0.6330,0.0423
+B6UH30,Uncharacterized protein OS=Zea mays GN=Zm.10151 ,815.43,3.4001,0.0003
+B6UHC9,Putative uncharacterized protein OS=Zea mays ,719.68,1.7646,0.0026
+C0HFQ1,Uncharacterized protein OS=Zea mays GN=LOC100304441 ,557.82,-1.0062,0.0058
+C0P3K6,Uncharacterized protein OS=Zea mays GN=Zm.86992 ,453.25,1.2492,0.0130
+C0P455,Uncharacterized protein OS=Zea mays GN=LOC100382075 ,558.61,1.4792,0.0310
+C0PBJ3,Uncharacterized protein OS=Zea mays ,766.95,-2.9409,0.0008
+C0PBL7,Uncharacterized protein OS=Zea mays ,475.77,0.5954,0.0247
+C0PEZ5,Uncharacterized protein OS=Zea mays GN=TIDP3001,438.57,0.7180,0.0198
+C0PGM3,Uncharacterized protein OS=Zea mays GN=glb1 ,651.29,1.4259,0.0449
+C4J093,Uncharacterized protein OS=Zea mays GN=LOC100502254 ,625.86,1.3984,0.0119
+C4JBH8,Uncharacterized protein OS=Zea mays GN=pco083451(621) ,572.82,-1.6898,0.0001
+D0EM57,Chitinase OS=Zea mays GN=chiA ,710.40,-1.0209,0.0113
+E1AFV5,"Beta-1,3-glucanase OS=Zea mays GN=glucA ",536.82,-1.1215,0.0001
+E3QAG4,Putative uncharacterized protein OS=Colletotrichum graminicola (strain M1.001 / M2 / FGSC 10212) GN=GLRG_02996 ,624.40,1.8363,0.0184
+K7TKZ6,Obg-like ATPase 1 OS=Zea mays GN=Zm.968 ,641.34,0.8743,0.0479
+K7TV30,Uncharacterized protein OS=Zea mays GN=Zm.144096 ,755.04,-0.7656,0.0075
+K7UX83,Uncharacterized protein OS=Zea mays GN=ZEAMMB73_655229 ,660.38,-0.6675,0.0174
+K7UZN5,"Putative oxidoreductase, aldo/keto reductase family protein OS=Zea mays GN=pco114043 ",785.43,-0.5949,0.0119
+P01088,Trypsin/factor XIIA inhibitor OS=Zea mays ,643.34,-0.8688,0.0127
+P04698,Zein-alpha PZ22.3 OS=Zea mays ,696.90,-1.0730,0.0130
+P04706,Glutelin-2 OS=Zea mays ,374.88,0.7874,0.0204
+P04713,"Granule-bound starch synthase 1, chloroplastic/amyloplastic OS=Zea mays GN=WAXY ",813.46,1.0138,0.0008
+P05494,"ATP synthase subunit alpha, mitochondrial OS=Zea mays GN=ATPA ",371.87,1.4330,0.0125
+P11143,Heat shock 70 kDa protein OS=Zea mays GN=HSP70 ,635.64,0.8865,0.0423
+P12653,Glutathione S-transferase 1 OS=Zea mays GN=GST1 ,356.21,0.8995,0.0267
+P14640,Tubulin alpha-1 chain OS=Zea mays GN=TUBA1 ,644.36,-2.1946,0.0184
+P19656,Non-specific lipid-transfer protein OS=Zea mays ,833.38,-2.0948,0.0017
+P24067,Luminal-binding protein 2 OS=Zea mays GN=BIPE2 ,575.67,1.0933,0.0065
+P62787,Histone H4 OS=Zea mays GN=H4C7 ,464.58,0.7321,0.0174
+Q08277,Heat shock protein 82 OS=Zea mays GN=HSP82 ,466.58,1.3085,0.0124
+Q09054,"Glyceraldehyde-3-phosphate dehydrogenase 2, cytosolic OS=Zea mays GN=GAPC2 ",553.00,1.8745,0.0411
+Q41741,Eukaryotic initiation factor 4A OS=Zea mays ,762.76,1.0343,0.0379
+Q41784,Tubulin beta-7 chain OS=Zea mays GN=TUBB7 ,761.09,-3.0487,0.0058
+Q43247,"Glyceraldehyde-3-phosphate dehydrogenase 3, cytosolic OS=Zea mays GN=GAPC3",1215.10,1.1178,0.0130
+Q5EUD7,Protein disulfide isomerase OS=Zea mays GN=PDIL2-1 ,574.32,1.0774,0.0009
+Q8H6A5,Translationally-controlled tumor protein homolog OS=Zea mays GN=TCTP ,646.87,0.6060,0.0009
+Q8W0V2,Lipoxygenase OS=Zea mays GN=LOC542495 ,591.94,0.9662,0.0247
+Q946V2,Legumin 1 OS=Zea mays GN=leg1 ,789.41,-1.0803,0.0058
+Q946V3,Alpha globulin OS=Zea mays GN=glb3 ,773.42,1.7022,0.0430
+W7LNM5,Tubulin alpha chain OS=Gibberella moniliformis (strain M3125 / FGSC 7600) GN=FVEG_00855,626.81,-3.7702,0.0011
+W7M8H2,Histone H2A OS=Gibberella moniliformis (strain M3125 / FGSC 7600) GN=FVEG_05100 ,360.57,-1.3190,0.0479

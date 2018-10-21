@@ -1,0 +1,685 @@
+
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, include=FALSE}
+library(readr)
+library(dplyr)
+library(ggplot2)
+library(cowplot)
+library(forcats)
+library(plotly)
+library(tibble)
+library(knitr)
+
+setwd("~/other_projects/mes/")
+palette <- c("#FF0000","#0072B2","#E69F00","#009E24", "#979797","#5530AA", "#111111")
+```
+
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, include=FALSE}
+##### Loading data
+#Supplementary Figure 5 data
+sup5 <- read_csv("sup5.csv")
+names(sup5) <- c("Entry", "proteinname", "mz", "log2fc", "padjval")
+
+#Peptides in raw data have 4 significant figures, and supplemental file pepitdes have 2 significant figures
+sup5$log2fc_ppr <- round(sup5$log2fc, digits=2)
+sup5$mz<- round(sup5$mz, digits=1)
+#Set an order for the x axis for all plots
+order_vect <- levels(fct_reorder(sup5$Entry, sup5$log2fc))
+tmt1 <- read.csv("tmt1.csv")
+tmt2 <- read.csv("tmt2.csv")
+```
+
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, include=FALSE}
+format_input <- function(tmt){
+    #Renaming columns
+    #I don't remember what this regex does. 
+    #It seems to chop the protein group accession to the first entry
+    tmt$Entry <- tmt$Protein.Group.Accessions %>% gsub("\\;.*","",.)  
+    #tmt$Protein.Group.Accessions <- NULL
+    tmt$mz <- tmt$m.z..Da.
+    tmt$m.z..Da. <- NULL
+    tmt$ref <- tmt$Reference.channel
+    tmt$Reference.channel <- NULL
+    tmt$numprot <- tmt$X..Proteins
+    tmt$`# Proteins` <- NULL
+    tmt$mz <- round(tmt$mz, digits = 1)
+    tmt_sel <-  tmt %>% select(Sequence, Entry, Protein.Group.Accessions, Modifications, QuanResultID, numprot, isogenic_1, isogenic_2, isogenic_3, nk_1, nk_2, nk_3, nkr_1, nkr_2, nkr_3, ref, mz) 
+    return(tmt_sel)
+}
+
+tmt1_sel <- format_input(tmt1)
+tmt2_sel <- format_input(tmt2)
+#First round of cultivation
+tmt1_sel$cult <- "TMT1"
+#Second round of cultivation
+tmt2_sel$cult <- "TMT2"
+
+tmts <- rbind(tmt1_sel, tmt2_sel)
+#Only peptides with measurements for all 10
+tmts <- na.omit(tmts)
+```
+
+
+
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, include=FALSE}
+
+#Compare sup data and peptide data
+left_join(sup5, in_sup5, by = c("Entry", "mz")) %>% unique %>% select(Entry, Protein.Group.Accessions) %>% unique %>% View
+
+#Tubulinb
+left_join(sup5, in_sup5, by = c("Entry", "mz")) %>% unique %>% select(Entry, Protein.Group.Accessions) %>% unique %>% View
+
+
+#Find single peptide info
+left_join(sup5, in_sup5, by = c("Entry", "mz")) %>% unique %>% group_by(Entry, log2fc) %>% summarize(n = n()) %>% arrange(n)
+
+#Get the peptides from proteins that are in supplemntary file 5
+in_sup5 <- tmts %>% filter(Entry %in% sup5$Entry) 
+in_sup5  %>% select(Entry, mz) %>% unique %>% mutate(cond="Quantifiable peptides in raw peptide data") -> raw_entries
+
+#Many non-unique degenerate peptides
+#in_sup5 %>% group_by(Entry, Protein.Group.Accessions) %>% summarize(numpeps = n()) %>% arrange(numpeps)
+
+#Wrong analysis
+#Proteins where the quantification is based on a single spectrum
+#head(Protein_summary, 28)$Entry %>% paste(., collapse=", ")
+#[1] "B4FBK8, B4FKP4, B4FN23, B4FSV6, B4FUH2, B4FUH2, B4FUK7, B4G0K5, B4G0K5, B4G1E1, B6SZN0, B6T5F2, B6UGU4, B6UH16, C0HFQ1, C0PGM3, P04706, P04712, P04713, P04713, P05494, P12863, P14640, P15590, P21641, P26301, Q41741, Q41784"
+
+#Get peptides from supplementary file 5
+sup5 %>% select(Entry, mz) %>% mutate(cond="Peptides presented in supplement") -> supp_entries
+
+rbind(raw_entries, supp_entries) -> all_entries
+
+#Get number of peptides per protein in each group
+all_entries %>% group_by(cond, Entry) %>%
+      summarize(size=n()) -> numpeps
+
+#This is a hack to get labels on one facet
+ann_text1 <- data.frame(Entry = "B6UAQ7",size = 30,
+                       cond = factor("Peptides presented in supplement"))
+
+ann_text2 <- data.frame(Entry = "B6XGY5",size = 30,
+                       cond = factor("Peptides presented in supplement"))
+
+numpeps %>% ggplot(., aes(x=fct_reorder(Entry, size), y=size, group=cond, fill=cond, label=Entry)) + 
+      scale_fill_manual(values=palette) +
+      geom_bar(stat="identity", position="dodge") +
+      theme(axis.text.x=element_blank()) +
+      theme(legend.position= "none") +
+      xlab("ProteinID") +
+      ylab("Number of peptides") +
+      geom_vline(xintercept=24.5, linetype="dashed") +
+      facet_wrap(~cond, ncol=1) -> peptide_comparison
+
+peptide_comparison <- peptide_comparison + geom_text(data = ann_text1,label = "Based on single peptide.\nShould be omitted") +
+                     geom_text(data = ann_text2,label = "Failure to include all peptides in protein level quantification.\nLikely not differentially expressed") 
+
+#Call out some proteins as an example
+text_list = c("P12653", "B4FSV6", "A0A0B4J3E6")
+numpeps %>% filter(Entry %in% text_list) %>% ggplot(., aes(x=fct_reorder(Entry, size), y=size, group=cond, fill=cond)) + 
+      scale_fill_manual(values=palette) +
+      geom_bar(stat="identity", position="dodge") +
+      theme(legend.position= "none") +
+      xlab("ProteinID") +
+      ylab("Number of peptides") +
+      facet_wrap(~cond, ncol=1) -> intext_peptide_comparison
+
+
+```
+
+
+
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, include=FALSE}
+#plot values in Supplementary table 5
+sup5$ppr <- "Supplemental"
+sup5 %>% group_by(Entry) %>% mutate(numpeps = n()) %>% ungroup -> sup5
+
+sup5_palette = c("#FF0000", "#111111", "#111111", "#111111", "#111111", "#111111", "#111111", "#111111")
+
+sup5$Entry <- factor(sup5$Entry, levels=order_vect) 
+
+sup5_peptides_plot <- ggplot(sup5, aes(x=fct_reorder(Entry,log2fc_ppr), y=log2fc_ppr, label=Entry)) + 
+     geom_rect(ymin=-0.5, ymax=0.5, xmin=0, xmax=1000, alpha = 0.1, fill="#9a9a9a") +
+     geom_point() +
+        #scale_color_manual(values = sup5_palette, name="# Unique peptides")+
+      geom_line() +
+   geom_hline(yintercept = 0)  +
+       geom_hline(yintercept = 0.5, linetype="dashed") +
+       geom_hline(yintercept = -0.5, linetype="dashed") +
+      theme(axis.text.x = element_blank()) +
+
+      ylim(limits=-4, 4) +
+      xlab("Protein ID") +
+      ylab("Log2 Fold Change")
+```
+
+
+# Concerns re: "An integrated multi-omics analysis of the NK603 Roundup-tolerant GM maize reveals metabolism disturbances caused by the transformation process"
+
+##### Claire D. McWhite* and Daniel R. Boutz
+##### The University of Texas at Austin, Austin TX, USA
+##### *Correspondence: claire.mcwhite@utexas.edu
+
+Dear Editorial Board of Scientific Reports,
+
+We are writing to you with concerns about the proteomic data in the recently published paper "An integrated multi-omics analysis of the NK603 Roundup-tolerant GM maize reveals metabolism disturbances caused by the transformation process". 
+This paper claimed major protein expression differences between non-genetically modified maize and Roundup-Ready maize both treated and untreated with Roundup. However, we found major errors with the analysis of proteomics data, mainly that fold changes of individual peptides are incorrectly represented as fold changes for full proteins. This underlying analysis error affects large parts of the analysis and conclusions.
+
+In December of 2016, I (CDM) read the newly published paper and saw several discrepancies in the proteomics analysis presented in the file containing protein fold differences (Supplementary Table 5). Briefly:
+
+ - Some proteins have both positive and negative fold changes in the same comparison.
+ - The values in the column 'Mass (Da)' are too small to correspond to protein masses.
+ - A top fold enriched protein is from a corn smut fungus, not maize.
+ 
+I received a file of peptide intensities from the authors (Additional Data File 1). Along with my colleague (DRB), I used this file to confirm  that if any single peptide from a protein is enriched or depleted, the entire protein is counted as differently expressed across conditions. This is a large departure from all standards for protein quantification, as proteins are made up of multiple peptides. 
+
+### Background on Peptide vs. Protein quantification.
+Mass spectrometers collect spectra of component tryptic peptides of proteins. Protein fold changes are determined from integrated measurements of their component peptides. The enrichment of an individual peptide from a protein does not necessarily mean that the full protein is statistically enriched, as proteins are composed of multiple peptides. In Mesnage *et al*, if a single peptide is found to be enriched, the entire protein is counted as enriched. Likewise, if a single peptide is found to be depleted, the entire protein is counted as depleted.
+
+Protein: 
+
+MFADRWLFSTNHKDIGTLYLLFGAWAGVLGTALSLLIRAELGQPGNLLGNDHIYNVIVTAHAFVMIFFMVMPIMIGGFGNW
+LVPLMIGAPDMAFPRMNNMSFWLLPPSLLLLLASAMKVEAGAGTGWTVYPPLAGNYSHPGASVDLTIFSLHLAGVSSILGA
+INFITTIINMKPPAMTQYQTPLFVWSVLITAVLLLLSLPVLAAGITMLLTD
+
+Peptides: 
+
+MFADR
+
+WLFSTNHK
+
+DIGTLYLLFGAWAGVLGTALSLLIR
+
+AELGQPGNLLGNDHIYNVIVTAHAFVMIFFMVMPIMIGGFGNWLVPLMIGAPDMAFPR
+
+MNNMSFWLLPPSLLLLLASAMK
+
+VEAGAGTGWTVYPPLAGNYSHPGASVDLTIFSLHLAGVSSILGAINFITTIINMK
+
+PPAMTQYQTPLFVWSVLITAVLLLLSLPVLAAGITMLLTD
+
+
+#### <b>Introduction to the conventional TMT fold change calculation</b>
+
+In isobaric labeling experiments such as TMT10plex used in this paper, proteins from each condition are cleaved into peptides with trypsin, their N-termini labeled with isobaric tags, mixed together, and identified by mass spectrometry. Upon fragmentation of differentially labeled peptides, each TMT variant will generate a unique reportor ion. The relative reporter intensities can be compared across conditions to find fold changes. Enrichment of a protein is determined from the fold changes of its component peptides across conditions. 
+
+The first proof of concept paper on isobaric mass proteomics^2^ describes the process of finding protein expression levels from peptide data. Particularly, that 1) proteins that are identified from only one peptide are discarded and 2) proteins with high standard deviation between peptide scores are discarded. A handbook for protein quantification^3^ also recommends discarding proteins identified by a single peptide and warns against counting a protein as enriched due to outlier peptides.   
+
+Though minor deviations in methods exist, standard isobaric labeling protein quantification methods involve integrating measurements over all distinct peptides per protein to get full protein fold changes^2-5^.  
+
+### Claims of measuring protein expression differences
+
+The text of Mesnage *et al* clearly implies that proteins are being quantified, as would be normal for a proteomics experiment measuring differences across conditions. 
+
+ * "Changes in proteins and metabolites..."
+ * "we have performed proteomics and metabolomics analyses of NK603 (sprayed or unsprayed with Roundup) and isogenic maize kernels (Fig. 1). We used a TMT10plex™ isobaric mass tag labelling method and quantified proteins by Liquid chromatography-tandem mass spectrometry (LC-MS/MS)"
+ * "The projection of individual protein or metabolites on a 2-dimensional space"
+ * "Overall, the MCIA shows that the GM transformation process was the major contributor to variation in the protein and metabolite profiles..."
+ * "The list of proteins and metabolites having their levels significantly disturbed is given in Additional files 5 and 6, respectively."
+ * "While only one protein is newly produced as a result of the transgene insertion, a total of 117 proteins and 91 metabolites have been altered in maize by the genetic transformation process"
+ * "One protein (B4G0K5) and 31 metabolites had their expression significantly altered..."
+ * "Among them, pyruvate kinase (B4F9G8), enolase (ENO1), and three glyceraldehyde-3-phosphate dehydrogenases (GAPC1, GAPC2, GAPC3) had their levels increased in NK603 maize."
+ * "Additionally, while proteins associated with glycolysis were overexpressed..."
+
+
+### Presented data are for peptide fold changes, not protein fold changes.
+
+Supplementary Figure 5 is described as a "List of proteins having their level significantly altered by the GM transformation process". The fold changes from this file for the isogenic vs. Roundup-Ready strain nk603+Roundup comparison are plotted in Figure 1.
+
+We found that this file actually describes fold change of individual peptides (Figure 1). If any one peptide from a protein falls above the cutoff, the entire protein is counted as enriched.    
+
+Multiple proteins described as enriched/depleted between samples have individual peptides with positive and negative fold changes. For example, the protein Q7M1Z8 has 4 entries in Supplementary Table 5, reproduced exactly in Table 1 below. Conventionally, each protein would have only one fold change measurement, as a single protein can only be enriched, unchanged, or depleted. Though only single peptides that show a log2 fold change above cutoffs (-0.5, +0.5) were given in Supplementary File 5, the raw peptide data show that multiple peptides from the presented proteins fall below this cutoff (Figure 2).   
+
+
+```{r echo=FALSE, eval=TRUE}
+ggplotly(sup5_peptides_plot, tooltip="Entry")
+```
+<br>
+<span style="color:grey"><i>Figure 1. Each fold change given between isogenenic and Roundup-treated Roundup ready maize is the fold change of an individual peptide. Vertical lines connect peptides from the same protein, showing many cases with conflicting fold changes. Most proteins plotted also have additional peptides that would fall in the gray area and are not differentially expressed, as shown in Figure 2</i> </span>
+
+```{r echo=FALSE, eval=TRUE}
+
+up_down_table <- cbind("Uniprot ID" = c("Q7M1Z8", "Q7M1Z8","Q7M1Z8","Q7M1Z8"),
+                       "Protein name" = c("OS=Zea mays GN=Zm.3896", "OS=Zea mays GN=Zm.3896","OS=Zea mays GN=Zm.3896","OS=Zea mays GN=Zm.3896"),
+                       "Mass (Da)" = c("395.48", "661.31", "722.35", "823.46"),
+                       "Log2 FC" = c("2.0333", "1.0405", "-0.5861", "-0.9408"),
+                        "P-adjusted values" = c("0.0307", "0.0423", "0.0247", "0.0001"))
+                       
+kable(up_down_table, caption = "Table 1. One example from Supplementary Table 5 of the same protein showing both positive and negative fold change")
+```
+
+
+```{r echo=FALSE, eval=TRUE}
+
+sup_table_head <- cbind("UniProt ID" = c("W7LNM5","B6SIZ2","Q41784"), 
+                             "Protein name" = c("Tubulin alpha chain OS=Gibberella moniliformis (strain M3125 / FGSC 7600) GN=FVEG_00855", "Oleosin OS=Zea mays GN=LOC100280642", "Tubulin beta-7 chain OS=Zea mays GN=TUBB7"), 
+                            "Mass (Da)" = c("626.81", "401.21", "761.09"), 
+                             "Log2 FC" =  c("-3.7702", "-3.0929", "-3.0487"),
+                             "P-adjusted values" = c("0.0011", "0.0019", "0.0058"))
+
+  
+average_mass_table <- cbind("UniProt ID" = c("W7LNM5","B6SIZ2","Q41784"), 
+                           "Mass (Da)" = c("50378.66", "18332.85", "50094.36"))
+
+peptide_mass_table <- cbind("Peptide"= c("eDAANNYAR", "tPDYVEEAHRR", "eILHIQGGQcGNQIGAk"),
+                           "UniProt ID" = c("W7LNM5","B6SIZ2","Q41784"), 
+                           "Modifications" =  c("N-Term(TMT6plex)", "N-Term(TMT6plex)", "N-Term(TMT6plex); C10(Carbamidomethyl); K17(TMT6plex)"),
+                            "m/z" = c("626.81", "401.21", "761.09"), 
+                            "charge state" = c("2", "2", "2"))
+
+
+```
+
+### Analysis of other peptides from proteins described as perturbed.
+
+We wondered if there were other quantifiable peptides from these proteins that fall below the threshold. We found that 24 of the 105 proteins described as perturbed only have evidence from a single peptide in the raw peptide data. These proteins should be discarded. Most other proteins have multiple other peptides whose fold changes must have fallen below the thresholds. As an extreme case, there are 4 peptide fold changes from P15590 shown in the supplement, while there are measurements for 48 peptides in the raw peptide data. The presence of many other peptides below threshold strongly suggest that many of these proteins would not show enrichment if all their peptide measurements were integrated, and listed enriched peptides are likely to be false positives. 
+
+```{r echo=FALSE, eval=TRUE, fig.width=10}
+ggplotly(peptide_comparison, tooltip=c("Entry", "size"))
+```
+<br>
+<span style="color:grey"><i>Figure 2. Many more quantifiable peptides for proteins flagged as differentially expressed are present in the raw data than in the presented data, suggesting that many peptides for these proteins are not differentially expressed. Thus, proteins largely seem to be flagged as differentially expressed based on outlier peptides or single peptide observations</i></span>
+
+The use of individual peptide fold changes instead of protein fold changes to obtain lists of proteins significant affects the conclusions in this paper. To highlight one example, the abstract states that "Changes in proteins and metabolites of glutathione metabolism were indicative of increased oxidative stress.". The text describe three proteins as altered to support this oxidative stress conclusion:
+"The comparison between Roundup-sprayed NK603 and control samples revealed a similar pattern to that observed in unsprayed samples. However, glutathione metabolism (KEGG ID 480) showed a significant alteration in sprayed NK603. The proteins assigned to that pathway, glutathione S-transferase 1 and 6-phosphogluconate dehydrogenase (P12653 and B4FSV6 respectively) were more abundant in sprayed samples while another glutathione transferase isoform GST-5 (A0A0B4J3E6) was less abundant."
+
+Displaying the peptide evidence for these three proteins (Figure 3), we can see that conclusions about A0A0B4J3E6 and P12653 are based on single peptides. B4FSV6 has three other peptides with fold enrichments below threshold, suggesting that the full protein would not show changes across conditions. Differential expression of these proteins is not supported by the data.
+
+```{r echo=FALSE, eval=TRUE}
+plot(intext_peptide_comparison)
+```
+<br>
+<span style="color:grey"><i>Figure 3. Specific proteins described as having altered expression in the text are poorly supported by the proteomics data.Proteins A0A0B4J3E6 and P12653 are based on single peptide observations, while most B4FSV6 peptides are not differentially expressed. Subset of Figure 2 data</i></span>
+
+___
+
+### Further demonstration that fold change values in Supplementary File 5 described as being for proteins correspond directly to the peptide fold changes in Additional Data File 1
+
+The first few rows of Supplementary Table 5 are reproduced in Table 2. Notably:
+
+ 1. The top fold depleted protein between the control strain and the Roundup Ready strain is a fungal tubulin, not a maize protein, suggesting the control strains were potentially infected. 
+
+ 2. The values given in the column 'Mass (Da)' do not correspond to the masses of the full proteins (Table 3). Full proteins have masses in the 10's of thousands of Daltons. Instead, the values in the 'Mass (Da)' column correspond to the Mass to Charge ratio in the peptide TMT file (Table 4), a value calculated from mass and charge state of an indidual spectrum.
+
+```{r echo=FALSE, eval=TRUE}
+kable(sup_table_head, caption = "Table 2. First few rows of Supplementary Table 5")
+```
+
+
+```{r echo=FALSE, eval=TRUE}
+kable(average_mass_table, caption = "Table 3. Actual protein masses are two orders of magnitude larger than the masses in Supplementary Table 5 [cite ExPasy")
+```
+
+
+```{r echo=FALSE, eval=TRUE}
+kable(peptide_mass_table, caption = "Table 4. Proteins described as having  significant fold changes in Supplementary Table 5 are actually peptides, with Mass to Charge Ratio (m/z) mislabeled as Mass (Da)")
+```
+
+### Conclusion
+
+We found that -in contrast to the authors' assertions- peptides, not proteins, are quantified in this paper, aand that this likely introduces false positives in measuring differential protein expression.. This same type of analysis was used in another recent paper by the same lead authors in Scientific Reports, "Multiomics reveal non-alcoholic fatty liver disease in rats following chronic exposure to an ultra-low dose of Roundup herbicide"^6^. Both papers incorrectly use peptide fold changes as a proxy for full protein differences, and thus their conclusions are based on misinterpretation of the data.
+
+
+##### Conflict of Interest Statement
+Neither CDM nor DRB have any conflicts of interest with the subject matter of this manuscript
+
+##### References
+[1] https://www.nature.com/articles/srep37855 "An integrated multi-omics analysis of the NK603 Roundup-tolerant GM maize reveals metabolism disturbances caused by the transformation process", Robin Mesnage, Sarah Z. Agapito-Tenfen, Vinicius Vilperte, George Renney, Malcolm Ward, Gilles-Eric Séralini, Rubens O. Nodari & Michael N. Antoniou, Scientific Reports 6, Article number: 37855 (2016), doi:10.1038/srep37855
+
+[2] http://www.mcponline.org/content/3/12/1154.full "Multiplexed Protein Quantitation in Saccharomyces cerevisiae Using Amine-reactive Isobaric Tagging Reagents", Philip L. Ross, Yulin N. Huang, Jason N. Marchese, Brian Williamson, Kenneth Parker, Stephen Hattan, Nikita Khainovski, Sasi Pillai, Subhakar Dey, Scott Daniels, Subhasish Purkayastha, Peter Juhasz, Stephen Martin, Michael Bartlet-Jones, Feng He Allan Jacobson and Darryl J. Pappin, Molecular & Cellular Proteomics, 3, 1154-1169 (2004), doi: 10.1074/mcp.M400129-MCP200
+December 1, 2004 
+
+[3] https://tools.thermofisher.com/content/sfs/brochures/AN-63410-Quantitation-of-TMT-Labeled-Peptides-Velos-Pro-Proteomics.pdf "Quantitation of TMT-Labeled Peptides Using Higher-Energy Collisional Dissociation on the Velos Pro Ion Trap Mass Spectrometer, Roger G. Biringer, Julie A. Horner, Rosa Viner, Andreas F. R. Hühmer, August Specht, Thermo Fisher Scientific, San Jose, California, USA
+
+[4] https://link.springer.com/protocol/10.1007%2F978-1-60761-780-8_12 "Quantification of Proteins by iTRAQ", Richard D. Unwin, LC-MS/MS in Proteomics, Volume 658 of the series Methods in Molecular Biology pp 205-215 (2010)
+
+[5] https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4261935/ "Isobaric Labeling-Based Relative Quantification in Shotgun Proteomics", Navin Rauniyar and John R. Yates, III*, Journal of Proteome Research, 13(12): 5293–5309 (2014), doi:10.1021/pr500880b
+
+[6] https://www.nature.com/articles/srep39328 "Multiomics reveal non-alcoholic fatty liver disease in rats following chronic exposure to an ultra-low dose of Roundup herbicide", Robin Mesnage, George Renney, Gilles-Eric Séralini, Malcolm Ward & Michael N. Antoniou, Scientific Reports 7, Article number: 39328 (2017), doi:10.1038/srep39328
+
+
+```{r  echo=FALSE, message=FALSE, warning=FALSE, include=FALSE, eval=FALSE}
+
+#Potentially...
+
+#Take fold change of nrk/ctrl, isogenic/ctrl. Log2 each one. Final = log2fc - log2fc
+
+normalize_df <- function(df){
+
+   #Column calculations. 
+   #Testing whether intensities were normalized by:
+       #1. Median of the 10 values per peptide
+       #2. Sum of all intensities in a condition
+       #3.  Both
+  
+   df %>%  rowwise %>% ##group_by(QuanResultID) %>%
+      
+        #normalize by condition
+        mutate(nk_1norm = nk_1/nk_1sum) %>%
+        mutate(nk_2norm = nk_2/nk_2sum) %>%
+        mutate(nk_3norm = nk_3/nk_3sum) %>%
+        mutate(nkr_1norm = nkr_1/nkr_1sum) %>%
+        mutate(nkr_2norm = nkr_2/nkr_2sum) %>%
+        mutate(nkr_3norm = nkr_3/nkr_3sum) %>%
+        mutate(isogenic_1norm =isogenic_1/isogenic_1sum) %>%
+        mutate(isogenic_2norm = isogenic_2/isogenic_1sum) %>%
+        mutate(isogenic_3norm = isogenic_3/isogenic_1sum) %>%
+        mutate(refnorm = ref/refsum) %>%
+    
+        mutate(isogenicnorm = sum(isogenic_1norm, isogenic_2norm, isogenic_3norm)) %>%
+        mutate(nknorm = sum(nk_1norm, nk_2norm, nk_3norm)) %>%
+        mutate(nkrnorm = sum(nkr_1norm, nkr_2norm, nkr_3norm)) %>%
+     
+        #normalize by row median
+        mutate(medintensity = median(c(nk_1, nk_2, nk_3, isogenic_1, isogenic_2, isogenic_3, nkr_1, nkr_2, nkr_3, ref))) %>%
+  
+        #Get average unnormalized  intensity per condition
+        mutate(isogenic = sum(isogenic_1, isogenic_2, isogenic_3)/3) %>%
+        mutate(nk = sum(nk_1, nk_2, nk_3)/3) %>%
+        mutate(nkr = sum(nkr_1, nkr_2, nkr_3)/3) %>%
+    
+        #miutate(isogenic = sum(isogenic_1, nk_3, nkr_2)/3) %>%
+        #mutate(nk = sum(isogenic_2, nk_2, nkr_1)/3) %>%
+        #mutate(nkr = sum(isogenic_3, nk_1, nkr_3)/3) %>%
+    
+    
+        mutate(nk_med = nk/medintensity) %>%
+        mutate(nkr_med = nkr/medintensity) %>% 
+        mutate(isogenic_med = isogenic/medintensity) %>%
+    
+        #normalize by condition normalized row median
+        mutate(medintensitynorm = median(c(nk_1norm, nk_2norm, nk_3norm, isogenic_1norm, isogenic_2norm, isogenic_3norm, nkr_1norm, nkr_2norm, nkr_3norm, refnorm))) %>%
+    
+        #normalized by condition and row
+        mutate(nk_normmed = nknorm/medintensitynorm) %>%
+        mutate(nkr_normmed = nkrnorm/medintensitynorm) %>% 
+        mutate(isogenic_normmed = isogenicnorm/medintensitynorm) %>%
+        mutate(nkr_ref = log2(nkr/ref)) %>%
+        mutate(iso_ref = log2(isogenic/ref)) %>%
+        ungroup-> output1
+    
+        return(output1)  
+}
+
+fc <- function(df){
+   
+        #need calculate p value as well
+        df %>% rowwise %>%
+        mutate(plain_ratio = nkr/isogenic) %>%
+        mutate(norm_ratio = nkrnorm/isogenicnorm) %>%
+        mutate(normmed_ratio = nkr_normmed/isogenic_normmed) %>%
+        #This one matches the paper approx
+        mutate(med_ratio = nkr_med/isogenic_med)  %>%
+        mutate(ref_log2fc = nkr_ref - iso_ref) %>%
+    
+        mutate(plain_log2fc = log2(plain_ratio)) %>%
+        mutate(med_log2fc = log2(med_ratio)) %>%
+        mutate(norm_log2fc = log2(norm_ratio)) %>%
+        mutate(normmed_log2fc = log2(normmed_ratio)) %>%
+    
+        arrange(Entry, mz) %>%
+        ungroup-> output1
+  
+        output1 <- output1 %>% group_by(Entry, cult) %>% mutate(npeps_cult = n()) %>% group_by(Entry) %>% mutate(npeps_prot=n()) %>% group_by(Entry, Sequence, Modifications) %>% mutate(npeps_pep=n())
+        return(output1)  
+
+}
+```
+
+
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, include=FALSE, eval=FALSE}
+tmts_tot <- tmts %>% 
+        #group_by(cult) %>%
+        mutate(nk_1sum = sum(nk_1, na.rm=TRUE)) %>%
+        mutate(nk_2sum = sum(nk_2, na.rm=TRUE)) %>%
+        mutate(nk_3sum = sum(nk_3, na.rm=TRUE)) %>%
+        mutate(nkr_1sum = sum(nkr_1, na.rm=TRUE)) %>%
+        mutate(nkr_2sum = sum(nkr_2, na.rm=TRUE)) %>%
+        mutate(nkr_3sum = sum(nkr_3, na.rm=TRUE)) %>%
+        mutate(isogenic_1sum = sum(isogenic_1, na.rm=TRUE)) %>%
+        mutate(isogenic_2sum = sum(isogenic_2, na.rm=TRUE)) %>%
+        mutate(isogenic_3sum = sum(isogenic_3, na.rm=TRUE)) %>%
+        mutate(refsum = sum(ref, na.rm=TRUE))
+
+#The effect of not normalizing by condition
+tmts_tot %>% select(cult, nk_1sum, nk_2sum, nk_3sum, nkr_1sum, nkr_2sum, nkr_3sum,isogenic_1sum, isogenic_2sum, isogenic_3sum, refsum) %>% 
+       unique %>%
+       tidyr::gather(key = var, value = total,  nk_1sum:refsum) %>%
+       ggplot(aes(x=var, y=total, group=cult)) + geom_line() + ylim(0, 160000000) + theme(axis.text.x = element_text(angle=45, vjust=1, hjust=1))
+
+
+#Pull peptides that are in supplementary figure 5
+tmts_norm <- normalize_df(tmts_tot)
+#Raw data for entries that are in supplemental table 5
+in_sup5 <- tmts_norm %>% filter(Entry %in% sup5$Entry) 
+
+matching_fold <- sup5 %>% filter(Entry %in% in_sup5$Entry) %>% filter(mz %in% in_sup5$mz) %>% select(Entry, mz, log2fc_ppr) 
+names(matching_fold) <- c("Entry", "mz", "log2fc")
+#single_peptides <- in_sup5 %>% filter(npeps ==1 ) 
+df <- inner_join(in_sup5, matching_fold, by=c("Entry", "mz")) %>% group_by(Entry, Sequence, mz) %>% mutate(npeps = n()) #%>% filter(npeps ==2)
+
+
+output1 <- df %>% fc(.) %>% select(Entry, Sequence, QuanResultID,  mz, log2fc, plain_log2fc, med_log2fc, norm_log2fc, ref_log2fc, normmed_log2fc, cult, npeps_prot, npeps_cult, numprot, npeps_pep) 
+
+
+output2 <- output1 %>% group_by(Entry, mz, log2fc, npeps_prot, npeps_pep) %>%
+                 summarize(plain_log2fc= mean(plain_log2fc), 
+                               med_log2fc= mean(med_log2fc),
+                             norm_log2fc= mean(norm_log2fc), 
+                           ref_log2fc= mean(ref_log2fc),
+                       normmed_log2fc= mean(normmed_log2fc))
+output2$Entry <- factor(output2$Entry, levels=order_vect) 
+
+
+ggplot(output2, aes(x=Entry)) + 
+     geom_point(aes(y=log2fc), color="blue") +
+     geom_point(aes(y=plain_log2fc)) + 
+     geom_hline(yintercept = -1.42)
+
+ggplot(output2, aes(x=mz)) + 
+     geom_point(aes(y=log2fc), color="blue") +
+     geom_point(aes(y=plain_log2fc)) 
+#Use as example of doubling I and L                           
+#vTGEALk vTGEAIk B4FUK7
+#Treated as individual 'proteins' that are different between roundoup and isogenic
+
+tmts %>% filter(Entry =="B6SIZ2") %>% filter(mz == 401.21) -> need_to_match
+
+fcs <- output2 %>% select(log2fc, med_log2fc, plain_log2fc, norm_log2fc, ref_log2fc,normmed_log2fc)
+                              
+       plain_concord <- ggplot(fcs, aes(x=log2fc, y=plain_log2fc)) + geom_point() + xlim(-4,4) +ylim(-4,4) +geom_segment(x=-4, y=-4, xend=4, yend=4)
+       med_concord <- ggplot(fcs, aes(x=log2fc, y=med_log2fc, label=Entry)) + geom_point() + xlim(-4,4) +ylim(-4,4) +geom_segment(x=-4, y=-4, xend=4, yend=4)
+       ref_concord <- ggplot(fcs, aes(x=log2fc, y=ref_log2fc)) + geom_point() + xlim(-4,4) +ylim(-4,4) +geom_segment(x=-4, y=-4, xend=4, yend=4)
+       normmed_concord <- ggplot(fcs, aes(x=log2fc, y=normmed_log2fc)) + geom_point() + xlim(-4,4) +ylim(-4,4) +geom_segment(x=-4, y=-4, xend=4, yend=4)
+       plot_grid(plain_concord, med_concord, ref_concord, normmed_concord)
+              ggplotly()
+#The matching still isn't perfect. Seems like conditions were normalized at this point.      
+       
+full_output_norm <- normalize_df(tmts) 
+full_output1 <- fc(full_output_norm) %>% select(Entry, Sequence,Modifications, QuanResultID,  mz, med_ratio, med_log2fc, cult, npeps_cult, npeps_prot, npeps_pep) 
+full_output1$log2fc <- full_output1$med_log2fc
+full_output1$ratio <- full_output1$med_ratio
+
+
+full_output1_pepcounts <- full_output1 %>% select(Entry, npeps_prot) %>% unique
+
+
+
+#Filtering away spectra that aren't seen in both
+#Ok, if a peptide with a particular mz is only seen in once in a cultivation it's thrown away
+
+#OK, it definitely needs to be seen at least 1 in both cultivations
+full_output1 %>% select(Entry, Sequence, Modifications, mz, cult) %>%
+
+                    group_by(Entry, Modifications, Sequence, mz, cult) %>%
+                    #filter(n() > 1)  %>%  #Removes if only one count per cultivation
+                    unique() %>%
+                    group_by(Entry, Sequence, mz) %>% #Removes if not seen in both cult1 and cult2
+                    filter(n() > 1)  %>% 
+                    select(Sequence, Modifications, mz) %>% 
+                    unique %>%
+                    arrange(Sequence, Modifications, mz) -> bi_cult_peptides
+
+full_output1 <- full_output1 %>% ungroup %>%
+                 filter(Sequence %in% bi_cult_peptides$Sequence) %>%
+                 filter(Modifications %in% bi_cult_peptides$Modifications) %>%
+                 filter(mz %in% bi_cult_peptides$mz)# %>%
+                 #filter(npeps_prot > 2) #Important filter. A peptide needs more than one representative in each cultivation
+                   #Probably taken care of by p value threshold of 0.05
+
+
+full_output2 <- full_output1 %>% group_by(Entry, Sequence, Modifications, npeps_prot, npeps_pep) %>%
+               summarize(log2fc= mean(log2fc)) %>%
+                arrange(log2fc)
+
+
+pprsig <-  sup5 %>% select(Entry) %>% unique 
+names(pprsig) <- "Entry"
+pprsig$ppr <- "Supp_recalculated"
+
+full_output1 <- left_join(full_output1, pprsig, by="Entry") 
+full_output1$ppr[is.na(full_output1$ppr)] <- "not in supp"
+
+
+full_output2 <- left_join(full_output2, pprsig, by="Entry") 
+full_output2$ppr[is.na(full_output2$ppr)] <- "not in supp"
+
+
+protein_output <- full_output2 %>% group_by(Entry, npeps_prot) %>%
+               summarize(log2fc= mean(log2fc)) %>% 
+               arrange(log2fc)
+
+#protein_output <- left_join(protein_output, full_output1_pepcounts, by="Entry") 
+protein_output <- left_join(protein_output, pprsig, by="Entry") 
+protein_output$ppr[is.na(protein_output$ppr)] <- "not in supp"
+protein_output
+
+protein_output$ppr[is.na(protein_output$ppr)] <- "not in supp"
+
+```
+
+
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, include=FALSE, eval=FALSE}
+
+
+#### Plots of log2 fold changes of individual single peptides 
+#Fold change of NK603+R over isogenic
+
+cultivation_shift <- ggplot(full_output1, aes(x=fct_reorder(Entry, log2fc), y = log2fc, color=cult)) +
+     #geom_line() +
+     geom_point(alpha=0.4) + 
+     geom_hline(yintercept = 0) +
+     #facet_wrap(~ppr) + 
+     theme(axis.text.x = element_blank()) + 
+     scale_color_manual(values=palette) +
+     xlab("Protein ID") +
+     ylab("Log2 Fold Change") +
+     facet_wrap(~cult, ncol=2)
+
+```
+```{r echo=FALSE, message=FALSE, warning=FALSE, include=FALSE, eval=FALSE}
+
+reduced_sup5 <- sup5 %>% select(Entry, log2fc_ppr, ppr, numpeps) 
+reduced_sup5$log2fc_ppr<- NULL
+
+
+#full_output2 <- full_output2 %>% filter(npeps_pep > 2)
+reduced_output2 <- full_output2 %>% rowwise %>% select(Entry, log2fc, ppr) %>% filter(ppr != "not in supp") %>% ungroup
+
+reduced_output2$Entry <- factor(reduced_output2$Entry, levels=order_vect$Entry) 
+
+all_output2 <- rbind(reduced_output2, reduced_sup5)
+
+#all_output2 <- all_output2 %>% 
+
+
+recreated_sup5 <- ggplot(reduced_output2, aes(x=Entry, y = log2fc, label=Entry)) +
+  
+      geom_rect(ymin=-0.5, ymax=0.5, xmin=0, xmax=1000, alpha = 0.3, fill="#9a9a9a") +
+     #geom_line() +
+     geom_point() + 
+     geom_hline(yintercept = 0)  +
+         geom_hline(yintercept = 1.5, linetype="dashed") +
+       geom_hline(yintercept = -1.5, linetype="dashed") +
+       geom_hline(yintercept = 0.5, linetype="dashed") +
+       geom_hline(yintercept = -0.5, linetype="dashed") +
+     # facet_wrap(~ppr, ncol=1) +
+       theme(axis.text.x = element_blank()) +
+      ylim(limits=-6, 4) +
+      xlab("Protein ID") +
+      ylab("Log2 Fold Change")
+  
+```
+
+```{r eval=FALSE, echo=FALSE, message=FALSE, warning=FALSE, include=FALSE, eval=FALSE}
+#Mystery cutoff is p value. 
+#protein_output$npeps[protein_output$npeps > 50] <- 50
+reeval_prot <- ggplot(protein_output, aes(x=fct_reorder(Entry, log2fc), y = log2fc)) +
+     geom_line() +
+     geom_point(aes( color=ppr)) +
+       geom_point() + 
+     geom_hline(yintercept = 0)  +
+     geom_hline(yintercept = 1.5, linetype="dashed") +
+       geom_hline(yintercept = -1.5, linetype="dashed") +
+       geom_hline(yintercept = 0.5, linetype="dashed") +
+       geom_hline(yintercept = -0.5, linetype="dashed") +
+      theme(axis.text.x = element_blank()) +
+     facet_wrap(~ppr) +
+      ylim(limits=-6, 4) +
+      xlab("Protein ID") +
+      ylab("Protein Log2 Fold Change")
+
+
+```
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, include=FALSE, eval=FALSE}
+
+test <- full_output_norm %>% select(isogenic, nkr, nk, Entry, Modifications, cult, mz) %>%
+          group_by(Entry, Modifications, mz, cult) %>%
+          mutate(isogenic = sum(isogenic)) %>%
+          mutate(nk = sum(nk)) %>%
+          mutate(nkr = sum(nkr)) %>%
+          mutate( n= n()) %>% rowwise() %>% unique
+
+test2 <- full_join(test, test, by=c("Entry", "Modifications", "mz")) %>% filter(cult.x =='TMT1' & cult.y == 'TMT2')
+
+
+ggplot(test2, aes(x=isogenic.x, y=isogenic.y, color=Entry)) +
+   geom_point() +
+   theme(legend.position = "none")
+
+ggplot(test2, aes(x=nk.x, y=nk.y)) +
+   geom_point()
+
+
+ggplot(test2, aes(x=nkr.x, y=nkr.y)) +
+   geom_point()
+
+
+#Of interest TMT1	High	tPDYVEEAHRR	Unambiguous	Oleosin OS=Zea mays GN=LOC100280642 PE=2 SV=1 - [B6SIZ2_MAIZE]	1	1	B6SIZ2	N-Term(TMT6plex)	HCD	1	1	1		51475
+```
+
+
+   
+  
+
+
+```{r eval=FALSE, echo=FALSE, message=FALSE, warning=FALSE, include=FALSE, eval=FALSE}
+ggplot(sup5, aes(x=fct_reorder(Entry, log2fc_ppr), y = log2fc_ppr)) +
+     geom_line() +
+     geom_point()
+
+sup5 %>% group_by(`Entry`) %>% 
+     summarize(stdev = sd(`log2fc_ppr`), n = n()) %>% 
+     arrange(desc(stdev)) -> tmp
+
+ggplot(tmp, aes(x=n, y=stdev)) +
+    geom_point()
+
+```

@@ -54,27 +54,47 @@ Daniel Boutz
 ### Updates
 
 #### Wed, Feb 28, 11:33 AM 
-Received response to our letter to the editor from Michael Antoniou et al. Not posted here pending permission
+Received response to our letter to the editor from Michael Antoniou et al. Will not be uploaded here after permission to post asked and denied by Dr. Antoniou. 
 
 #### 8/21/2018
 Raw machine files for the rat paper were made publically accessive in the PRIDE repository with accession number PXD010181
 
-#### 10/12/2018
-The raw machine files for the maize paper are still missing
+#### 10/20/2018
+The raw machine files for the maize paper have been posted to PRIDE with accession number PXD011363
 
 
 ### Contents
+
+#### These are our material related to the project from before we had access to the .RAW machine files that were necessary to complete a complete reanalysis. These analyses and letters are based on a forensic data reanalysis working backwards from data originally provided with the paper.  
+
 1. First Letter to the Editor: letter_re_mesnage.pdf
 
-2. Supporting description of protein quantification errors in Mesnage, 2016. The same errors apply to Mesnage, 2017. 
-           The analysis in this document is supported by the attached excel files:
+2. Our Response to Michael Antoniou's response to our initial letter: response_to_antoniou_response.pdf
 
-           3. srep37855-s6.xls - Supplementary Dataset 5 from Mesnage, 2016 - "List of proteins having their level significantly altered by the GM transformation process"
-           4. Srep37855_peps.xls - Provided to us by Mesnage and Antoniou. TMT peptide quantifications for Mesnage, 2016
 
-5. srep37855.pdf - Mesnage R, Agapito-Tenfen SZ, Vilperte V, et al. An integrated multi-omics analysis of the NK603 Roundup-tolerant GM maize reveals metabolism disturbances caused by the transformation process. Scientific Reports. 2016;6:37855. doi:10.1038/srep37855
-6. srep39328.pdf - Mesnage R, Renney G, Séralini G-E, Ward M, Antoniou MN. Multiomics reveal non-alcoholic fatty liver disease in rats following chronic exposure to an ultra-low dose of Roundup herbicide. Scientific Reports. 2017;7:39328. doi:10.1038/srep39328
-7. Our Response to Michael Antoniou's response to our initial letter: response_to_antoniou_response.pdf
+#### first_analysis_maize: First analysis of the maize data (submitted with first letter to the editor prior to receiving raw data
+
+1. Supporting Rmd analysis of protein quantification errors in Mesnage, 2016: response_mesnage2016_cdm_drb.Rmd
+2. Rendered html of above markdown 
+3. peptide summary for experiment 1: tmt1.csv
+4. peptide summary for experiment 2: tmt2.csv
+5. fold changes from the paper: sup5.csv
+
+#### postrawdata_rat_analysis: Ongoing analysis of the rat data (begun after receipt of data data files in September 2018
+
+1. rat_analysis.Rmd
+2. Liver_Total_TMT1_PSMs.xlsx
+3. Liver_Total_TMT2_PSMs.xlsx
+4. fold changes from the paper: srep39328-s4.csv
+5. First plots: rat_exp_fc_annot-01.png
+
+
+#### Other files
+
+1. srep37855-s6.xls - Supplementary Dataset 5 from Mesnage, 2016 - "List of proteins having their level significantly altered by the GM transformation process"
+2. Srep37855_peps.xls - Provided to us by Mesnage and Antoniou. TMT peptide quantifications for Mesnage, 2016
+3. srep37855.pdf - Mesnage R, Agapito-Tenfen SZ, Vilperte V, et al. An integrated multi-omics analysis of the NK603 Roundup-tolerant GM maize reveals metabolism disturbances caused by the transformation process. Scientific Reports. 2016;6:37855. doi:10.1038/srep37855
+4. srep39328.pdf - Mesnage R, Renney G, Séralini G-E, Ward M, Antoniou MN. Multiomics reveal non-alcoholic fatty liver disease in rats following chronic exposure to an ultra-low dose of Roundup herbicide. Scientific Reports. 2017;7:39328. doi:10.1038/srep39328
 
 ### Conflicts of interest
 Neither Claire McWhite nor Daniel Boutz have any conflict of interest regarding this letter
