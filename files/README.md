@@ -75,7 +75,7 @@ The raw machine files for the maize paper have been posted to PRIDE with accessi
 #### first_analysis_maize: First analysis of the maize data (submitted with first letter to the editor prior to receiving raw data
 
 1. Supporting Rmd analysis of protein quantification errors in Mesnage, 2016: response_mesnage2016_cdm_drb.Rmd
-2. Rendered html of above markdown 
+2. Rendered html and pdf of above markdown 
 3. peptide summary for experiment 1: tmt1.csv
 4. peptide summary for experiment 2: tmt2.csv
 5. fold changes from the paper: sup5.csv
