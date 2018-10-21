@@ -10,7 +10,6 @@ library(plotly)
 library(tibble)
 library(knitr)
 
-setwd("~/other_projects/mes/")
 palette <- c("#FF0000","#0072B2","#E69F00","#009E24", "#979797","#5530AA", "#111111")
 ```
 
@@ -65,20 +64,21 @@ tmts <- na.omit(tmts)
 
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, include=FALSE}
+#Get the peptides from proteins that are in supplemntary file 5
+in_sup5 <- tmts %>% filter(Entry %in% sup5$Entry) 
+in_sup5  %>% select(Entry, mz) %>% unique %>% mutate(cond="Quantifiable peptides in raw peptide data") -> raw_entries
 
 #Compare sup data and peptide data
-left_join(sup5, in_sup5, by = c("Entry", "mz")) %>% unique %>% select(Entry, Protein.Group.Accessions) %>% unique %>% View
+left_join(sup5, in_sup5, by = c("Entry", "mz")) %>% unique %>% select(Entry, Protein.Group.Accessions) %>% unique 
 
 #Tubulinb
-left_join(sup5, in_sup5, by = c("Entry", "mz")) %>% unique %>% select(Entry, Protein.Group.Accessions) %>% unique %>% View
+left_join(sup5, in_sup5, by = c("Entry", "mz")) %>% unique %>% select(Entry, Protein.Group.Accessions) %>% unique 
 
 
 #Find single peptide info
 left_join(sup5, in_sup5, by = c("Entry", "mz")) %>% unique %>% group_by(Entry, log2fc) %>% summarize(n = n()) %>% arrange(n)
 
-#Get the peptides from proteins that are in supplemntary file 5
-in_sup5 <- tmts %>% filter(Entry %in% sup5$Entry) 
-in_sup5  %>% select(Entry, mz) %>% unique %>% mutate(cond="Quantifiable peptides in raw peptide data") -> raw_entries
+
 
 #Many non-unique degenerate peptides
 #in_sup5 %>% group_by(Entry, Protein.Group.Accessions) %>% summarize(numpeps = n()) %>% arrange(numpeps)
@@ -94,8 +94,9 @@ sup5 %>% select(Entry, mz) %>% mutate(cond="Peptides presented in supplement") -
 rbind(raw_entries, supp_entries) -> all_entries
 
 #Get number of peptides per protein in each group
-all_entries %>% group_by(cond, Entry) %>%
-      summarize(size=n()) -> numpeps
+numpeps <- all_entries %>% group_by(cond, Entry) %>%
+      summarize(size=n()) %>%
+      ungroup 
 
 #This is a hack to get labels on one facet
 ann_text1 <- data.frame(Entry = "B6UAQ7",size = 30,
@@ -104,7 +105,7 @@ ann_text1 <- data.frame(Entry = "B6UAQ7",size = 30,
 ann_text2 <- data.frame(Entry = "B6XGY5",size = 30,
                        cond = factor("Peptides presented in supplement"))
 
-numpeps %>% ggplot(., aes(x=fct_reorder(Entry, size), y=size, group=cond, fill=cond, label=Entry)) + 
+peptide_comparison <- numpeps %>% ggplot(., aes(x=fct_reorder(Entry, size), y=size, group=cond, fill=cond, label=Entry)) + 
       scale_fill_manual(values=palette) +
       geom_bar(stat="identity", position="dodge") +
       theme(axis.text.x=element_blank()) +
@@ -112,9 +113,7 @@ numpeps %>% ggplot(., aes(x=fct_reorder(Entry, size), y=size, group=cond, fill=c
       xlab("ProteinID") +
       ylab("Number of peptides") +
       geom_vline(xintercept=24.5, linetype="dashed") +
-      facet_wrap(~cond, ncol=1) -> peptide_comparison
-
-peptide_comparison <- peptide_comparison + geom_text(data = ann_text1,label = "Based on single peptide.\nShould be omitted") +
+      facet_wrap(~cond, ncol=1)  + geom_text(data = ann_text1,label = "Based on single peptide.\nShould be omitted") +
                      geom_text(data = ann_text2,label = "Failure to include all peptides in protein level quantification.\nLikely not differentially expressed") 
 
 #Call out some proteins as an example
