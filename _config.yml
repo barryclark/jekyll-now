@@ -9,7 +9,11 @@ name: Tom Gerke
 description: Data Science Fellow in NYC
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: ./images/profile_picture.jpg
+avatar: https://gerket.github.io/images/profile_picture.jpg
+
+# https://github.com/gerket/gerket.github.io/blob/master/images/profile_picture.jpg
+# https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
+
 
 #
 # Flags below are optional

@@ -10,5 +10,7 @@ Hi, my name is Tom!  I am a Data Science Fellow at General Assembly, learning ab
 ### Contact me
 
 [Tom.N.Gerke@gmail.com](mailto:Tom.N.Gerke@gmail.com)
+
 [LinkedIn](https://www.linkedin.com/in/thomasgerke)
+
 [Github](https://www.github.com/gerket)
