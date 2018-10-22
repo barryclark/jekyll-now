@@ -10,7 +10,7 @@ redirect_from:
   - /speaking/
 ---
 
-Through the years, I spoke at multiple conferences. Below is a non-exhaustive list of the public venues I spoke at.
+Through the years, I spoke at multiple conferences. Below is a non-exhaustive list of the conferences I spoke at.
 
 JavaOne (San Francisco, Moscow, São Paulo), Devoxx (Belgium, France, Poland, UK, Morroco), Java Day Tokyo, JPoint (Russia), 
 JCConf (Taiwan), JFall (The Netherlands), MakeIT (Slovenia), JPrime (Bulgaria), ConFoo Montreal, GeeCon (Krakow), 
