@@ -4,8 +4,6 @@ title: Sobre mi
 permalink: /about/
 ---
 
-Some information about you!
-
 ### Más Información Sobre Mi
 
 Soy un estudiante de Grado en Ingeniería Informática que realizó sus estudios (en trámites de obtención del titulo) en la Universidad de Córdoba.
