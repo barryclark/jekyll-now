@@ -3,13 +3,15 @@ layout: post
 title: Predicting Which Subreddit A Post Is From (Part 1)
 ---
 
+
+
 Last week I finished and presented the third project in my Data Science Immersive course: Predicting Which Subreddit A Post Is From. It was a really interesting project because it introduced a couple of new topics and modeling techniques, namely Natural Language Processing, multiple types of decision trees, and working with APIs / web scraping.  My previous post was about scraping webpages' HTML and using it for data gathering. This one is going to be a broad overview of my project as a whole and then a bit more on the first challenge, gathering my data from reddit.
 
 
 
 ## The Premise
 
-Some angry, vengeful programmer has contaminated the databases of Reddit! All of the archived posts' subreddit category data have been changed from the subreddit name to ``¯\_(ツ)_/¯.`` What a ghastly thing to do. Now, Reddit needs to hire an outside contractor (that's me!) to try to figure out which posts came from which subreddit and to return Reddit's database to its former glory.
+Some angry, vengeful programmer has contaminated the databases of Reddit! All of the archived posts' subreddit category data have been changed from the subreddit name to ``¯\_(ツ)_/¯``. What a ghastly thing to do. Now, Reddit needs to hire an outside contractor (that's me!) to try to figure out which posts came from which subreddit and to return Reddit's database to its former glory.
 
 They never really went into why the Reddit data team couldn't do it. I like to imagine that they're off trying to solve the ever-so-important problem of classifying posts as toxic or not. Or maybe it was a security thing, didn't want any other potentially disgruntled engineers messing with what's left.  Either way, it get's me a job so I'm happy.
 
