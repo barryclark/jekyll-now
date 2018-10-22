@@ -6,7 +6,7 @@
 name: Drupalhalla
 
 # Short bio or description (displayed in the header)
-description: Blog de Ricardo López Toro donde plasmar todas las aventuras/vicisitudes experimentadas desarrollando en Drupal
+description: Blog donde se plasman las aventuras experimentadas desarrollando en Drupal 8 por Ricardo López Toro
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://avatars3.githubusercontent.com/u/43862914?s=400&u=d8e142fadc3c6a9701bea96ad98d9cbee0eebf25&v=4
@@ -17,15 +17,15 @@ avatar: https://avatars3.githubusercontent.com/u/43862914?s=400&u=d8e142fadc3c6a
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email:
+  email: ricardolopezt8@gmail.com
   facebook:
   flickr:
-  github: barryclark/jekyll-now
+  github: Riloto8/riloto8.github.io
   instagram:
-  linkedin:
+  linkedin: ricardo-lópez-toro-515314ba
   pinterest:
   rss: # just type anything here for a working RSS icon
-  twitter: jekyllrb
+  twitter: RixyLPez
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
