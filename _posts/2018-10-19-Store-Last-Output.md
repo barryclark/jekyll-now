@@ -1,11 +1,9 @@
 ---
 layout: post
-title: Austomatically Store Last Output in PowerShell
+title: Automatically Store Last Output in PowerShell
 date: 2018-10-19
 tags: powershell tips profile
 ---
-
-### The Problem
 
 ```powershell
 PS> Get-ChildItem -Path 'C:\Users' -Recurse -Depth 2
