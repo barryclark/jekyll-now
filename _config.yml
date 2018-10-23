@@ -9,7 +9,9 @@ name: Drupalhalla
 description: Blog donde se plasman las aventuras experimentadas desarrollando en Drupal 8 por Ricardo López Toro
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://avatars3.githubusercontent.com/u/43862914?s=400&u=d8e142fadc3c6a9701bea96ad98d9cbee0eebf25&v=4
+avatar: /images/drush-8.png
+#https://avatars3.githubusercontent.com/u/43862914?s=400&u=d8e142fadc3c6a9701bea96ad98d9cbee0eebf25&v=4
+
 #
 # Flags below are optional
 #
