@@ -6,6 +6,21 @@ permalink: /resources/
 
 Here, you'll find all of ACM AI's content over the years, including code, blog posts, notes, and slides. Enjoy!
 
+## Fall 2018
+
+### Beginner Track
+#### Workshop #1: Intro to ML
+- [Slides](https://docs.google.com/presentation/d/1yBVsftob3OptsV2Yqlj3wV5kPMEQjFGSWDPnJobTK8Q/edit?usp=sharing)
+
+#### Workshop #2: Math and Coding Overview
+- [Slides](https://docs.google.com/presentation/d/1QhcoBEAXzsa1ign-zDemErJw5t_AibPaXT1owzcVRp0/edit?usp=sharing)
+
+### Advanced Track
+#### Workshop #1: Neural Networks
+- [Slides](https://docs.google.com/presentation/d/1JVEZSA4UScSThdOaR51IlqBB1RpjshsdwMmrmym82vg/edit?usp=sharing)
+
+## Spring 2018
+
 #### Linear Regression
 - [Slides](http://bit.ly/2hj5epX)
 - [Code](https://github.com/uclaacmai/tf-workshop-series-fall17/blob/master/week2-linear-regression/Intro%20to%20TF%20and%20Linear%20Regression.ipynb)
