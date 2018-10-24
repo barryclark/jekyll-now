@@ -87,7 +87,7 @@ In order to see if the algorithm is converging we can look at the loss of the mo
     <figcaption>Yay, our loss is going down!</figcaption>
 </figure>
 
-We trained our first tensorflow model! This little excercise helped me understand the concepts of the computation graph, and it should make the later example easier to follow if you're to tensorflow.
+We trained our first tensorflow model! This little excercise helped me understand the concepts of the computation graph, and it should make the later example easier to follow if you're new to tensorflow.
 
 ## Classifying MNIST with tensorflow
 
