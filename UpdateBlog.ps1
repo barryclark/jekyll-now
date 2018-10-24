@@ -1,4 +1,4 @@
-[PSCredential]$Credential = Import-Clixml -Path "$PSScriptRoot\SecureToke.clixml"
+[PSCredential]$Credential = Import-Clixml -Path "$PSScriptRoot\SecureToken.clixml"
 
 $ApiParams = @{
     Uri     = 'https://api.github.com/repos/vexx32/vexx32.github.io/pages/builds'
