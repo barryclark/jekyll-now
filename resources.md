@@ -65,7 +65,8 @@ Here, you'll find all of ACM AI's content over the years, including code, blog p
 - Word2Vec [meeting slides](https://docs.google.com/presentation/d/1j4Z7XgP9sB2_kveMfia77b3KjHZrxGp0Gc-YHXslwoA/edit?usp=sharing)
 
 #### General
-- [ACM AI Intro Meeting Slides](http://bit.ly/2xw2T18)
+- [ACM AI Fall 2018 Intro Meeting Slides](https://docs.google.com/presentation/d/1pWXR54kEPrt5sOk3Fyxnet-OCW5KfliB9Rh4cYUFQ14/edit?usp=sharing)
+- [ACM AI Fall 2017 Intro Meeting Slides](http://bit.ly/2xw2T18)
 - [Getting Started in Machine Learning blog post](https://medium.com/techatucla/getting-started-in-machine-learning-c68bdd739c44)
 
 
