@@ -12,9 +12,9 @@ title: "Paper Review 3: “Ask Your Neurons: A Neural-based Approach to Answerin
 ![asd](./../images/review-3.png)
 *Figure 1.The Neural-Image-QA model of Malinowski et al.*
 
-  Although there have been studies before for this task using Neural Networks (NN), the model of Malinowski et al. is the first one having an end-to-end deep learning approach. They use one-hot-encoded representation for words, without the need of any semantic parsing or any meaning representation. Thus, “grounding” of the words are learned by model. Also, using LSTM for sequence to sequence prediction task provides the benefit of having variable length of words both in the input and the output. 
+  Although there have been studies before for this task using Neural Networks (NN), the model of Malinowski et al. is the first one having an end-to-end deep learning approach. They use one-hot-encoded representation for words, without the need of any semantic parsing or any meaning representation. Thus, “grounding” of the words are learned by the model. Also, using LSTM for sequence to sequence prediction task provides the benefit of having variable length of words both in the input and the output. 
 	
-  They make experiments on their dataset *DAQUAR* with the mentioned model and a non-visual (Language-only) version of it. Their method, even the language-only version, clearly improves the results comparing the earlier best method.
+  They make experiments on their dataset *DAQUAR* with the mentioned model and a non-visual (Language-only) version of it. Their method, even the language-only version, clearly improves the results comparing to the earlier best method.
 
        
 
