@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Paper Review 3: “Ask Your Neurons: A Neural-based Approach to Answering Questions about Images"
+title: "Paper Review 3: Ask Your Neurons: A Neural-based Approach to Answering Questions about Images"
 ---
 2018/10/25
 
