@@ -39,6 +39,8 @@ Some caveats:
 * Output is stored in an `ArrayList`.
 * As mentioned, sending output to a `Format-*` cmdlet prevents it from being captured.
 * It's possible that PowerShell would run out of memory if you attempt to store the results of too large a command &mdash; however, the likelihood is low in general practice.
+* Directly reassigning the full output can get tricky. It is assigned by reference by default, which is often undesirable.
+  * To circumvent this, you can force PS to enumerate it before storing elsewhere (`$Data = $($LastOut)`) or manually retrieving the array (`$Data = $LastOut.ToArray()`) are both good choices.
 
 With that said, I've found it invaluable to add this to my PowerShell profile scripts; it can save
 quite a bit of time!
