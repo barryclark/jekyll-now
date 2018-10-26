@@ -12,4 +12,5 @@ I came to America from Australia in 2016 to be with my lovely wife, Serena, and 
 
 ### Contact me
 
-[joelpfrancis@gmail.com](mailto:joelpfrancis@gmail.com)
+[Email](mailto:sjsallow+Joel@gmail.com) &mdash; [Twitter](https://www.twitter.com/vexx32) &mdash;
+[Reddit](https://www.reddit.com/u/ta11ow) &mdash; [Github](https://github.com/vexx32)
