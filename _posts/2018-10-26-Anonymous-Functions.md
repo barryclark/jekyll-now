@@ -45,9 +45,9 @@ that require delegates. My favourite example is a lesser-known method on the `Li
 `FindAll()`.
 
 ```powershell
-using System.Collections.Generic
+using namespace System.Collections.Generic
 
-$List = [List[int]]1..100
+$List = [List[int]](1..100)
 $List.FindAll(
     {
         param($Item)
@@ -89,7 +89,7 @@ this with a simple script block.
 ```powershell
 1..100 | & {
     process {
-        if ($_ % 2 == 0) { $_ }
+        if ($_ % 2 -eq 0) { $_ }
     }
 }
 ```
@@ -106,7 +106,7 @@ give you no result:
 1..100 | & {
     begin { $a = 0 }
     process {
-        if ($_ % 2 == 0) { $a += $_ }
+        if ($_ % 2 -eq 0) { $a += $_ }
     }
 }
 
@@ -120,7 +120,7 @@ However, make _one small change_, and this suddenly becomes very curiously simil
 1..100 | . {
     begin { $a = 0 }
     process {
-        if ($_ % 2 == 0) { $a += $_ }
+        if ($_ % 2 -eq 0) { $a += $_ }
     }
 }
 
