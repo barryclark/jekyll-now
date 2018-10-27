@@ -4,11 +4,11 @@ title: Hello world!
 images:
 
   - url: /images/jekyll-logo.png
-    alt: Cypripedium Calceolum
-    title: Cypripedium Calceolum
+    alt: Jekyll-logo
+    title: Jekyll-logo
   - url: /images/jekyll_github.png
-    alt: Cypripedium Calceolum
-    title: Cypripedium Calceolum
+    alt: jekyll_github
+    title: jekyll_github
 ---
 Привет, меня зовут Дмитрий мне 29 лет и я изучаю веб разработку. В частности HTML, CSS, JS, GIT.
 
