@@ -1,0 +1,18 @@
+@import url('container.css');
+@import url('item.css');
+
+body{
+  margin:0px;
+  padding:0px;
+  display: flex;
+	justify-content:space-around;
+	align-items:center;
+	height:100vh;
+	background-color: rgb(133,165,212,255);
+	font-family: Roboto, sans-serif;
+}
+@media (max-width: 800px) { 
+
+	body{
+	height:auto;
+}

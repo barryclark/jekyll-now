@@ -102,6 +102,7 @@ p{
   flex-flow:row wrap;
   justify-content:flex-start;
 }
+
 .posts .post .text-container{
   width:90%;
 }
@@ -111,7 +112,7 @@ p{
   
 }
 .posts .post .main-img img{
-  margin:0px;
+  margin:10px 0px 0px 0px;
 }
 .post-container{
   width:100%;
@@ -146,6 +147,14 @@ p{
   // height:300px;
   width:100%;
   padding:0% 20%;
+}
+.footer__icons{
+  width:32px;
+  margin:0px 5px;
+}
+.copyrights__icons{
+    height:32px;
+  margin:0px 5px -8px 5px;
 }
 .footer__container{
   padding:10px 0px;
