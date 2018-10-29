@@ -5,7 +5,7 @@ title: A Gentle Visual Intro to Data Analysis in Python Using Pandas
 ---
 
 
-If you're planning to learn data analysis, machine learning, or data science tools in python, you're most likely going to be using the wonderful <a href="">pandas</a> library. Pandas is an open source library for data manipulation and analysis in python.
+If you're planning to learn data analysis, machine learning, or data science tools in python, you're most likely going to be using the wonderful <a href="https://pandas.pydata.org/">pandas</a> library. Pandas is an open source library for data manipulation and analysis in python.
 
 ## Loading Data
 One of the easiest ways to think about that, is that you can load tables (and excel files) and then slice and dice them in multiple ways:
