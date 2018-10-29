@@ -6,8 +6,6 @@ permalink: /events/
 
 ### 2018
 
-October 22 - 24: Open Source Summit Europe, Edinburgh
-
 November 5 - 9: VMWorld Europe, Barcelona
 
 November 13 - 15: KubeCon + CloudNativeCon China, Shanghai
@@ -19,7 +17,7 @@ November 21: Serverless vs Kubernetes, London
 December 3 - 5: DockerCon Europe, Barcelona
 
 December 10 - 13: KubeCon + CloudNative North America, Seattle
-* [Panel moderator, Cloud Native Storage Day](https://sched.co/GyHz)
+* [Do you need a container storage system? Cloud Native Storage Day](https://sched.co/GyHz)
 * Panel moderator, End user panel
 * [Community Building from Scratch: Sharing Experience of CNCF and K8s Meetups](https://sched.co/GrTK)
 
