@@ -7,15 +7,15 @@ Detecting anomalies
 Imputing for missing values
 Data quality assurance
 
-During this cleaning I discovered the Caifornia Deparment of Education (CDE) doesn't keep track of closed schools after some time. Since 1981, 322 schools are forgotten. If you look at the national data, it is even worse. This seems a seems a shame for people that went to those schools, even though they are closed now. What if they are interested in how their school performed in the past stacked up against other schools? They will never know because CDE let their records be discarded... 
+During this cleaning I discovered the Caifornia Deparment of Education (CDE) doesn't keep track of closed schools after some time. Since 1981, 322 schools are forgotten. If you look at the national data, it is even worse. This seems a seems a shame for people that went to those schools, even though they are closed now. What if they are interested in how their school performed in the past stacked up against other schools? They will never know because CDE let their records rot. 
 
-In order to prepare data for the enrollments analysis, I performed most of the cleaning tasks outlined above. Below I share the code and reasoning I used to perform these tasks.
+In order to prepare data for enrollment analysis, I performed most of the cleaning tasks outlined above. Below I share the code and reasoning I used to perform these tasks.
 
 #Import  
 ##Download Files
 Originally I wrote a scraper in python to bulk download the files from http://www.cde.ca.gov/ds/sd/sd/, however I was having timeout issues from the cde server and clicking a few dozen links isn't that bad, so I downloaded by hand.
 File formats include .csv, .xls, .txt, .zip, .dbf, .exe (all pretty straightforward except that on mac .dbf requires OpenOffice and .exe are self-extracting zip files that can be unzipped on the command line). 
-I converted all files to either .txt or .csv and organized the files in a Data/ subdirectory within my project directory.
+I converted all files to either .txt or .csv and organized the files in a Data/ subdirectory within the project directory.
 
 ##Import Files
 In this case I imported files directly from a local repository. For the most part this only requires the [read.table](https://www.rdocumentation.org/packages/utils/versions/3.5.1/topics/read.table) function from base R.
@@ -44,7 +44,7 @@ DT00 <- rbindlist(DT.list, use.names=TRUE, fill=TRUE, idcol='YEAR') # creates da
 
 #Join
 It has been shown that rbindlist is significantly [faster than rbind](https://stackoverflow.com/questions/2851327/convert-a-list-of-data-frames-into-one-data-frame), so ideally we can modify our list of dataframes and create one long list before our call to rbindlist. This requires that each dataframe have the same structure (number of variables, colnames, coltypes). When I was unable to put all of the data frames in one list, I used rbind to bind the rows of the data tables.
-CDE does include a file structure file for each individual file, so I looked through each of these to find boundaries between structural changes to the data. 
+CDE does include a file structure file for each individual file, so I looked through these to find some structural changes to the data. 
 ##Enrollment
 With enrollment data, these changes created 5 timespans: 1981-1992, 1993-1997, 1998-2006, 2007-2008, 2009-2017. The primary difference was that ETHNIC categories changed as discussed in my post on [Enrollments by Ethnicity]().
 Additionally there are historical enrollment files from 1948-1980, however they don't include many variables. 1948-1969 seperates grades and gender, 1970-1976 seperates gender, 1977-1980 only have county-level enrollment (no School-level data, no ethinicities).
@@ -163,15 +163,67 @@ So it looks as though the same colnames from 1998 can be used until 2011. Follow
 
 The list in 2017 needs to be seperated into a more human readable format to compare with 2013's.
 
+To merge the different acronyms for the Welfare system, they are named WELFARE. California Work Opportunity and Responsibility to Kids (CalWORKs) was formerly Aid to Families with Dependent Children (AFDC) and more recently is called CALPADS.
+
+To account for adjusted/unadjusted, after reading 
+
 
 #Missing Values
-Since CDE doesn't keep complete CDS records at https://www.cde.ca.gov/ds/si/ds/pubschls.asp, we did our best to heal rows of schools with undefined CDS_CODEs.
+Since CDE doesn't keep complete CDS records at https://www.cde.ca.gov/ds/si/ds/pubschls.asp, we did our best to heal rows of schools with undefined CDS_CODEs. One successful approach was to recover the C,D,S of NA CDS codes after 1996 from the 1992 data. The script to recover the CDS is included below,
+'''R
+# ================== Check NA values =============================
+# Note that NA values 92, 97, 08 are mainly explained by unlabeled CDS_CODES with enrollment data 
+# poor merging C, D, S by CDS_Code (probably closed schools)
+
+sapply(DT92, function(y) sum(length(which(is.na(y))))) # 16387 CDS_CODEs to merge with C, D, S (not contained in cds of pubschls.txt)
+sapply(DT97, function(y) sum(length(which(is.na(y))))) # 9431 CDS_CODEs to merge with C, D, S (not contained in cds of pubschls.txt)
+sapply(DT08, function(y) sum(length(which(is.na(y))))) # 20295 CDS_CODEs to merge (not contained in cds of pubschls.txt) and 173 NA rows to inspect/remove, 
+sapply(DT16, function(y) sum(length(which(is.na(y))))) # 653 NA rows to inspect/remove
+
+# Recover lost CDS labels from DT92
+cds92 <- recoverLostCDS(DT92, sch) # 229 recovered
+setkey(cds92, CDS_CODE)
+DT92[, SchoolName := NULL]; DT92[, DistrictName := NULL] # Remove S,D cols AFTER recover function above
+joinRecoveredCDS(DT92, cds92)
+joinRecoveredCDS(DT97, cds92)
+joinRecoveredCDS(DT08, cds92)
+
+sapply(DT92, function(y) sum(length(which(is.na(y))))) # All filled
+sapply(DT97, function(y) sum(length(which(is.na(y))))) # 268 CDS_CODEs without C, D, S
+sapply(DT08, function(y) sum(length(which(is.na(y))))) # 4013 CDS_CODEs without C, D, S
+
+'''
+
+Much of this code duplication could have been avoided by placing the data.tables in a list. However, the counts in the comments show how *this process was able to recover over 90% of the missing CDS values.* The meat of the recovery lies within the recoverLostCDS() function,
+'''R
+# Recover lost CDS labels from '92 data
+recoverLostCDS <- function(DT92, sch) {
+  cdsna92 <- unique(subset(DT92, is.na(SCHOOL), select=CDS_CODE)) # unlabeled schools
+  setkey(cdsna92, CDS_CODE)
+  setkey(DT92, CDS_CODE)
+  cds92 <- unique(DT92[,.(CDS_CODE, DistrictName, SchoolName)])[cdsna92] # recovered District/School for NA
+  # Recover COUNTY field
+  countyDist <- sch[,.(COUNTY, DISTRICT)]
+  setkey(countyDist, DISTRICT)
+  countyDist <- unique(countyDist)
+  # Remove "Elementary" and "High" from DISTRICT and DistrictName to increase matches
+  countyDist[,DISTRICT:=sapply(as.character(DISTRICT), removeWords, stopwords = c("Elementary", "High"))]
+  cds92[,DistrictName:=sapply(as.character(DistrictName), removeWords, stopwords = c("Elementary", "High"))]
+  setkey(countyDist, DISTRICT)
+  countyDist <- unique(countyDist) # Remove duplicate districts (used to have elem + high)
+  setkey(cds92, DistrictName)
+  cds92 <- countyDist[cds92]
+  # Missing Districts 
+  missdist <- c("Madera", "Contra Costa", "Orange", "San Diego", "Santa Barbara", "Santa Barbara", "Santa Barbara", "Santa Barbara", "Santa Barbara", "Santa Barbara", "Santa Barbara", "Santa Barbara", "Santa Barbara", "Santa Barbara", "Santa Barbara")
+  cds92[which(is.na(COUNTY)), COUNTY:=missdist]
+  return(cds92)
+}
+'''
 
 
-
-Detecting anomalies
-Imputing for missing values
-Data quality assurance
+#Detecting anomalies
+#Imputing for missing values
+#Data quality assurance
 
     Check variables in the header row
     Recovered some lost data from missing values
