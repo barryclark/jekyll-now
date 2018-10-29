@@ -1,10 +1,13 @@
+---
+layout: post
+title: Password Rules Are Bullshit!
+---
 
+> If we don't solve the password problem for users in my lifetime I am gonna haunt you from beyond the grave as a ghost [https://imgur.com/bmk7iMD][2]
 
 Of the many, many, _many_ [bad things about passwords][1], you know what the worst is? Password rules.
 
 Let this pledge be duly noted on the permanent record of the Internet. I don't know if there's an afterlife, but I'll be finding out soon enough, and I plan to go out _mad as hell_.
-
-> If we don't solve the password problem for users in my lifetime I am gonna haunt you from beyond the grave as a ghost [https://imgur.com/bmk7iMD][2]
 
 The world is absolutely awash in terrible password rules:
 
