@@ -64,8 +64,7 @@ If you don't already use Ebates, getting the $10 referral bonus is super easy.
 
 Sign up to Ebates using my [Ebates referral link](https://hendrixjoseph.github.io/ebates/).
 
-[![Ebates Signup Screenshot](/images/ebates/ebates-signup-screenshot.png)](https://hendrixjoseph.github.io/ebates/)
-*You'll come to a webpage like the above screenshot.*
+[![Ebates Signup Screenshot](/images/ebates/ebates-signup-screenshot.png)*You'll come to a webpage like the above screenshot.*](https://hendrixjoseph.github.io/ebates/)
 
 Spend at least $25 within 90 days through the Ebates portal.
 
