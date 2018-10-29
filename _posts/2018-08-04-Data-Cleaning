@@ -11,7 +11,7 @@ During this cleaning I discovered the Caifornia Deparment of Education (CDE) doe
 
 In order to prepare data for enrollment analysis, I performed most of the cleaning tasks outlined above. Below I share the code and reasoning I used to perform these tasks.
 
-#Import  
+#Import<a name="import"></a>
 ##Download Files
 Originally I wrote a scraper in python to bulk download the files from http://www.cde.ca.gov/ds/sd/sd/, however I was having timeout issues from the cde server and clicking a few dozen links isn't that bad, so I downloaded by hand.
 File formats include .csv, .xls, .txt, .zip, .dbf, .exe (all pretty straightforward except that on mac .dbf requires OpenOffice and .exe are self-extracting zip files that can be unzipped on the command line). 
