@@ -78,16 +78,45 @@ The most straightforward method is simply to feed the function object into an
 `-ArgumentList` or else by utilising `$using:` to pull the value into the remote
 "scope."
 
+This method is particularly handy for when you want to use a local function in
+a larger remote script, as you may need to reuse it.
+
 ```powershell
 $Function = Get-Item 'Function:\Get-Thing'
 
-Invoke-Command -ComputerName 'RemotePC' -ScriptBlock {
+# With -ArgumentList
+$Thing = Invoke-Command -ComputerName 'RemotePC' -ScriptBlock {
     param($Fn)
     & $Fn
 } -ArgumentList $Function
 
 # Or, with $using:
-Invoke-Command -ComputerName 'RemotePC' -ScriptBlock {
+$Thing = Invoke-Command -ComputerName 'RemotePC' -ScriptBlock {
     & $using:Function
 }
 ```
+
+A more simplistic approach is possible when you only want to execute a local
+function once against a remote PC and then immediately return the data:
+
+```powershell
+$Thing = Invoke-Command -ComputerName 'RemotePC' -ScriptBlock ${function:Get-Thing}
+```
+
+This last method is definitely more code-efficient, but as mentioned it will
+_only_ execute the function once, and in addition any arguments will **have**
+to be supplied via `-ArgumentList`, which is not always _ideal_.
+
+### Other Possibilities
+
+At least in theory, it _ought_ to be possible to do a similar thing with
+compiled cmdlets. However, the obstacle here is that unfortunately cmdlets are
+not directly accessible or settable like functions are; one would be forced
+to use the `& $Command` syntax with them.
+
+Additionally, most reference external `.dll` libraries or _originate_ from these
+libraries. I have yet to really give it a go, but I'm sure someone out there
+will eventually figure out a way to transfer a compiled command in full to a
+remote machine for execution.
+
+But that's all for now; thanks for reading!
