@@ -15,7 +15,7 @@ I'm sure we've all been there. Some command takes a solid 30s to run to completi
 dumps _all_ output to the console. And it is only **then** that we realise that we needed to process
 or reuse that output.
 
-### The Answer?
+## The Answer?
 
 While it would be _awesome_ to have some `$LastOutput` variable automatically assigned by PS itself,
 you may be interested to know that it's something you can already add for yourself &mdash; kind of.

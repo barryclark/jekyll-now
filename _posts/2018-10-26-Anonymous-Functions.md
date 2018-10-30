@@ -13,7 +13,7 @@ PowerShell sits in a strange _in-between_, a bit like F# does; it has **strong**
 roots being built upon C# and the .NET Framework (or .NET Core) platform. However, it is also very
 much a _functional_ language.
 
-### PowerShell as a Functional Language
+## PowerShell as a Functional Language
 
 * Any uncaptured data is treated as _output_; explicit `return` statements are not required.
 * PowerShell's pipeline is solidly reminiscent of F#'s similar pipe operator.
@@ -23,7 +23,7 @@ However, just like F#, you can quite easily _ignore_ PowerShell's functional pro
 and treat it just like any old object-oriented language, relying on .NET features rather than some
 of the more interesting native language features.
 
-### What _is_ an Anonymous Function in PowerShell
+## What _is_ an Anonymous Function in PowerShell
 
 Well, for all intents and purposes, your `{ basic script block }` is the de facto anonymous function
 in PowerShell. In fact, even a named function can be separated from its script block, and the script
@@ -41,7 +41,7 @@ You can look at the contents of the script block, examine parameters, and even m
 script block with a simple `$ScriptBlock.Invoke()` and pass arguments to the script block by placing
 them positionally inside the parentheses of the `Invoke()` method.
 
-### Places Anonymous Functions are Used
+## Places Anonymous Functions are Used
 
 One common place you will actually _need_ to use an anonymous function is when calling .NET methods
 that require delegates. My favourite example is a lesser-known method on the `List<T>` class called

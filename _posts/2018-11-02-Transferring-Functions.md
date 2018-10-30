@@ -20,7 +20,7 @@ With that in mind, the following chain of reasoning seems to make sense:
 > 2. Store the function into a variable, then it (hopefully) follows that we can also
 > 3. _Send this object into a remote session_ and use it!
 
-### Capturing and Invoking a Captured Function
+## Capturing and Invoking a Captured Function
 
 However, we have a... slight problem. Once it's _in_ the remote session, how can
 we actually use it **as a function?** Well, as it turns out, there are a handful of ways one can do so:
@@ -53,9 +53,9 @@ Note that last example. We never actually used the `function` keyword to define
 the function. We simply used `New-Item` to create an item in the `Function:`
 PSDrive, and the function immediately became available to be called.
 
-### Using the Function in a Remote Session
+## Using the Function in a Remote Session
 
-#### Caveats
+### Caveats
 
 The rest seems fairly straightforward, right? Well, sort of. Keep in mind,
 before we attempt this, that if _either_ of the following are used in the captured
@@ -71,7 +71,7 @@ components, the primary one being its `ScriptBlock`. This will be executed on
 the other end just like any other piece of script, so the same rules will apply.
 Note that #3 essentially means that a majority of custom module functions cannot be transferred &mdash; at least without manually transferring any helper commands the function might use.
 
-#### Methods
+### Methods
 
 The most straightforward method is simply to feed the function object into an
 `Invoke-Command` block as-is and use it from there, either by passing it in the
@@ -107,7 +107,7 @@ This last method is definitely more code-efficient, but as mentioned it will
 _only_ execute the function once, and in addition any arguments will **have**
 to be supplied via `-ArgumentList`, which is not always _ideal_.
 
-### Other Possibilities
+## Other Possibilities
 
 At least in theory, it _ought_ to be possible to do a similar thing with
 compiled cmdlets. However, the obstacle here is that unfortunately cmdlets are
