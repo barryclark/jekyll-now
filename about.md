@@ -14,12 +14,6 @@ First of all that’s not my real name, cuz I'm no one, Remember? That’s just 
 
 ### Contact me
 (To help or maybe to seek)  
-[maximousbshane@gmail.com](mailto:maximousbshane@gmail.com)
-
-### Donate
-
-**Bitcoin**: Scan the QR code or use [this](https://www.blockchain.com/en/btc/payment_request?address=1FmyJVy4cbX8jYhB6cuoxtQ69CPgikF2G7) link.
-
-![Bitcoin QR Code](https://i.imgur.com/zfgWNfr.png)
+[maximousblk@gmail.com](mailto:maximousblk@gmail.com)
 
 **Web Miner:** Just open [this](https://authedmine.com/media/miner.html?key=km5ZVeds07MxlHtFxHKWzTC1frmFDDgN) link and start miner if you feel lazy!
