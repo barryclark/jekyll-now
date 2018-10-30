@@ -9,64 +9,17 @@
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
-    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
-
-    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
-<link rel='stylesheet' href='{{ site.baseurl }}/fullcalendar/fullcalendar.min.css' />
-<link rel='stylesheet' href='{{ site.baseurl }}/fullcalendar/fullcalendar.print.min.css' media='print' />
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-<link rel="stylesheet" href='{{ site.baseurl }}/assets/lib/bootstrap.min.css' />
-	  <script src='{{ site.baseurl }}/assets/lib/moment.min.js'></script>
-<script src='{{ site.baseurl }}/assets/lib/jquery.min.js'></script>
-<script src='{{ site.baseurl }}/fullcalendar/fullcalendar.min.js'></script>
-<script src='{{ site.baseurl }}/fullcalendar/gcal.min.js'></script>
-
-<script>
-  
-  $(document).ready(function() {
-
-    $('#calendar').fullCalendar({
-      themeSystem: 'bootstrap4',
-      header: {
-        left: 'prev,next today',
-        center: 'title',
-        right: 'month,listYear'
-      },
-
-      displayEventTime: true,
-      navLinks: true,    
-      googleCalendarApiKey: 'AIzaSyBNH5_OOTcrJwRP8INNcx98RlalqGLuGR4',
-    	
-      eventSources: [
-      	{
-        	googleCalendarId: 'h74gapvve945n7sg8msl7s1pc4@group.calendar.google.com'
-	}
-    	],
-	    
-      eventClick: function(event) {
-        // opens events in a popup window
-        window.open('https://calendar.google.com/event?action=TEMPLATE&tmeid=' + event.url.substring(event.url.indexOf("?eid=")+5,event.url.length) + '&tmsrc=h74gapvve945n7sg8msl7s1pc4%40group.calendar.google.com', 'gcalevent', 'width=1280,height=1024');
-        return false;
-      },
-
-      loading: function(bool) {
-        $('#loading').toggle(bool);
-      },
-	    
-      eventMouseover: function(event) {
-	$(this).addClass('fc-event-hover'); 
-    },
-				
-      eventMouseout: function(event) {
-	$(this).removeClass('fc-event-hover');    
-    }
-    });
-      
-
-  });
-  
-</script>
+	<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+	<link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+	<link rel='stylesheet' href='{{ site.baseurl }}/fullcalendar/fullcalendar.min.css' />
+	<link rel='stylesheet' href='{{ site.baseurl }}/fullcalendar/fullcalendar.print.min.css' media='print' />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<link rel="stylesheet" href='{{ site.baseurl }}/assets/lib/bootstrap.min.css' />
+	<script src='{{ site.baseurl }}/assets/lib/moment.min.js'></script>
+	<script src='{{ site.baseurl }}/assets/lib/jquery.min.js'></script>
+	<script src='{{ site.baseurl }}/fullcalendar/fullcalendar.min.js'></script>
+	<script src='{{ site.baseurl }}/fullcalendar/gcal.min.js'></script>
+	<script src='{{ site.baseurl }}/assets/js/calendar.js></script>
   </head>
 
   <body>
