@@ -11,6 +11,9 @@ description: Joel (Sallow) Francis | PowerShell Enthusiast | @vexx32 /u/ta11ow
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://avatars3.githubusercontent.com/u/32407840
 
+# Clear value to disable favicon
+favicon: true
+
 #
 # Flags below are optional
 #
