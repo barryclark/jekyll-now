@@ -19,7 +19,9 @@ html {
 
 body {
 	background: $white;
-  font: 115%/1.4 $helvetica;
+  font-size: 115%;
+  line-height: 1.4;
+  font-family: $segoeUI;
   color: $darkGray;
 }
 
@@ -31,7 +33,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $helveticaNeue;
+  font-family: $segoeBold;
   color: $darkerGray;
   font-weight: bold;
 
@@ -103,6 +105,7 @@ em, i {
 }
 
 strong, b {
+  font-family: $segoeBold;
   font-weight: bold;
 }
 
