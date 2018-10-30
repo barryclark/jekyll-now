@@ -32,6 +32,9 @@ block can be used independently:
 ```powershell
 $FunctionObject = Get-Item 'Function:\mkdir'
 $ScriptBlock = $FunctionObject.Scriptblock
+
+# The oneliner version, using variable-provider-access syntax:
+$ScriptBlock = ${function:mkdir}
 ```
 
 You can look at the contents of the script block, examine parameters, and even manually invoke the
