@@ -47,22 +47,22 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 1.6em;
   a {
     color: inherit;
   }
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 1.3em;
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 1.1em;
 }
 
 h4 {
-  font-size: 18px;
+  font-size: 1em;
   color: $gray;
 }
 
@@ -197,16 +197,16 @@ img {
   margin: 0;
   color: $darkGray;
   cursor: pointer;
-  font-family: $helveticaNeue;
+  font-family: $segoeUI;
   font-weight: 300;
-  font-size: 28px;
+  font-size: 1.8em;
   letter-spacing: 1px;
 }
 
 .site-description {
   margin: -5px 0 0 0;
-  color: $gray;
-  font-size: 16px;
+  color: $mediumGray;
+  font-size: 0.85em;
 
   @include mobile {
     margin: 3px 0;
@@ -216,8 +216,8 @@ img {
 nav {
   float: right;
   margin-top: 23px; // @TODO: Vertically middle align
-  font-family: $helveticaNeue;
-  font-size: 18px;
+  font-family: $segoeUI;
+  font-size: 0.95em;
 
   @include mobile {
     float: none;
@@ -243,6 +243,14 @@ nav {
 //
 // .main
 //
+
+#main {
+  border: 5px solid;
+  border-color: $borderColor;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  padding: 0 25px;
+}
 
 .posts > .post {
   padding-bottom: 2em;
