@@ -48,7 +48,7 @@ DT.list <- lapply(DT.list, setNames, colnames)
 DT00 <- rbindlist(DT.list, use.names=TRUE, fill=TRUE, idcol='YEAR') # creates data.table from list of data.frames
 '''
 
-#Join
+#Join<a name="join"></a>
 It has been shown that rbindlist is significantly [faster than rbind](https://stackoverflow.com/questions/2851327/convert-a-list-of-data-frames-into-one-data-frame), so ideally we can modify our list of dataframes and create one long list before our call to rbindlist. This requires that each dataframe have the same structure (number of variables, colnames, coltypes). When I was unable to put all of the data frames in one list, I used rbind to bind the rows of the data tables.
 CDE does include a file structure file for each individual file, so I looked through these to find some structural changes to the data. 
 ##Enrollment
@@ -174,7 +174,7 @@ To merge the different acronyms for the Welfare system, they are named WELFARE. 
 To account for adjusted/unadjusted, after reading 
 
 
-#Missing Values
+#Missing Values<a name="missing"></a>
 Since CDE doesn't keep complete CDS records at https://www.cde.ca.gov/ds/si/ds/pubschls.asp, we did our best to heal rows of schools with undefined CDS_CODEs. One successful approach was to recover the C,D,S of NA CDS codes after 1996 from the 1992 data. The script to recover the CDS is included below,
 '''R
 # ================== Check NA values =============================
@@ -227,9 +227,9 @@ recoverLostCDS <- function(DT92, sch) {
 '''
 
 
-#Detecting anomalies
-#Imputing for missing values
-#Data quality assurance
+#Detecting anomalies<a name="anomalies"></a>
+#Imputing for missing values<a name="impute"></a>
+#Data quality assurance<a name="qa"></a>
 
     Check variables in the header row
     Recovered some lost data from missing values
