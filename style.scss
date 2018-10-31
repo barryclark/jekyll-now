@@ -23,6 +23,11 @@ body {
   line-height: 1.4;
   font-family: $segoeUI;
   color: $darkGray;
+
+  -o-transition: 0.25s;
+  -moz-transition: 0.25s;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
 }
 
 .container {
