@@ -22,7 +22,7 @@ encodeMap.set(/\)/g, '%29');
 function encode() {
 	var textarea = document.getElementById('textarea');
 	var unencoded = textarea.value;
-	obj.value = encodeURIComponent(unencoded);//.replace(/'/g,"%27").replace(/"/g,"%22");	
+	textarea.value = encodeURIComponent(unencoded);//.replace(/'/g,"%27").replace(/"/g,"%22");	
 }
 function decode() {
 	var textarea = document.getElementById('textarea');
