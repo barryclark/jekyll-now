@@ -23,16 +23,18 @@ function encode() {
 	var textarea = document.getElementById('textarea');
 	var unencoded = textarea.value;
 	
-	for (var [regex, replacement] of encodeMap.entries()) {
-  		unencoded = unencoded.replace(regex, replacement);
-	}
+	var encoded = encodeURIComponent(unencoded);
 	
-	textarea.value = encodeURIComponent(unencoded);	
+	for (var [regex, replacement] of encodeMap.entries()) {
+  		encoded = encoded.replace(regex, replacement);
+	}	
+	
+	textarea.value = encoded
 }
 function decode() {
 	var textarea = document.getElementById('textarea');
 	var encoded = textarea.value;
-  //encoded = encoded.replace(/\+/g,  " ");
+  	encoded = encoded.replace(/\+/g,  " ");
 	textarea.value = decodeURIComponent(encoded);
 }
 </script>
