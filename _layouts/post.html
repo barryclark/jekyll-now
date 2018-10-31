@@ -7,10 +7,11 @@ layout: default
 
   <div class="entry">
     {{ content }}
+    <p class="backToIndex"><a href="/">Back to Index</a></p>
   </div>
 
   <div class="date">
-    Written on {{ page.date | date: "%B %e, %Y" }}
+    Written on <time>{{ page.date | date: "%B %e, %Y" }}</time>
   </div>
 
   {% include disqus.html %}

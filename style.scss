@@ -126,6 +126,7 @@ img {
 .date {
   font-style: italic;
   color: $gray;
+  float: left;
 }
 
 // Specify the color of the selection
@@ -255,6 +256,7 @@ nav {
   border-top-color: transparent;
   border-bottom-color: transparent;
   padding: 0 25px;
+  overflow: auto;
 }
 
 .posts > .post {
@@ -284,6 +286,12 @@ nav {
   .read-more {
     text-transform: uppercase;
     font-size: 15px;
+  }
+
+  .entry {
+    .backToIndex {
+      float: right;
+    }
   }
 }
 
