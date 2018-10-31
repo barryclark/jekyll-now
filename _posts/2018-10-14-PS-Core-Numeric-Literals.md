@@ -113,8 +113,9 @@ exclusion, pending review by the PowerShell Committee):
   * `1_000_000_000`
   * `0xFF_FE_EA_00`
   * `0b10_1111_1001_0011`
-* Native `BigInteger` parsing support with `I` suffix. Unlike all other suffixes, this mimics F#'s BigInteger suffix and is only valid in uppercase. For those of us more mathematically inclined, lowercase `i` is typically used to denote _complex numbers_. PowerShell doesn't necessarily have a lot of use for complex numbers
-  * It should be noted that the parser _already_ utilised `BigInteger` for parsing numerals in order to prevent the possibility of overflow as much as possible. However, this would never be given back to the user in this form, even with a `[bigint]` cast applied.
+* Native `BigInteger` parsing support with `I` suffix. Unlike all other suffixes, this mimics F#'s BigInteger suffix and is only valid in uppercase. For those of us more mathematically inclined, lowercase `i` is typically used to denote _complex numbers_.
+  * It should be noted that the parser _already_ utilised `BigInteger` for parsing numerals in order to prevent the possibility of overflow as much as possible. However, this would never be given back to the user in this form directly, even with a `[bigint]` cast applied &mdash; it would always be parsed as `[double]` first.
+  * PowerShell doesn't necessarily have a lot of use for complex numbers, but I did not wish to preclude the possibility that they may be added in future. After all, I've already gotten a working implementation, just to see if I _could_.
 * Overly large binary or hexadecimal literals return as `[bigint]` rather than failing the parse. Sign bits are still respected above even `decimal` ranges, however:
   * If a binary string is some multiple of 8 bits long, the highest bit is treated as the sign bit.
   * If a hex string with length some multiple of 8 has the first digit with 8 or higher, the numeral is treated as negative. This may change before this PR has run its course, if the rest of these changes aren't removed, depending on feedback from the PS Core team.

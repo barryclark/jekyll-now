@@ -5,15 +5,15 @@ date: 2018-10-19
 tags: powershell tips profile
 ---
 
+I'm sure we've all been there. Some command takes a solid 30s to run to completion, and then... just
+dumps _all_ output to the console. And it is only **then** that we realise that we needed to process
+or reuse that output.
+
 ```powershell
 PS> Get-ChildItem -Path 'C:\Users' -Recurse -Depth 2
 
 # ... oh shoot, I forgot to store it into a variable again
 ```
-
-I'm sure we've all been there. Some command takes a solid 30s to run to completion, and then... just
-dumps _all_ output to the console. And it is only **then** that we realise that we needed to process
-or reuse that output.
 
 ## The Answer?
 
