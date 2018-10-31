@@ -79,9 +79,13 @@ p {
 a {
   color: $blue;
   text-decoration: none;
-	cursor: pointer;
+  cursor: pointer;
+  text-shadow: 0 0 2px rgba(0,20,40,0.3);
+  transition: 0.4s text-shadow;
+
   &:hover, &:active {
     color: $blue;
+    text-shadow: 0.05em 0 2px rgba(0,20,40,0.4);
   }
 }
 
