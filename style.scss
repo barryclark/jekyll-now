@@ -24,10 +24,10 @@ body {
   font-family: $segoeUI;
   color: $darkGray;
 
-  -o-transition: 0.25s;
-  -moz-transition: 0.25s;
-  -webkit-transition: 0.25s;
-  transition: 0.25s;
+  -o-transition: 0.25s all;
+  -moz-transition: 0.25s all;
+  -webkit-transition: 0.25s all;
+  transition: 0.25s all;
 }
 
 .container {
