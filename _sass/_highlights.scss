@@ -17,6 +17,12 @@ code {
   font-size: 0.8em;
 }
 
+// Inline code only
+code.highlighter-rouge {
+  color: firebrick;
+  font-weight: bold;
+}
+
 .highlight .c { color: #586E75 } /* Comment */
 .highlight .err { color: #93A1A1 } /* Error */
 .highlight .g { color: #93A1A1 } /* Generic */
