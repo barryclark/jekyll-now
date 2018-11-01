@@ -105,6 +105,10 @@ All of the challenges are something you must assess when looking at pipeline of 
 
 Machine learning is an incredible way in which underlying and subtle trends can be found within the data. It can also be a brilliant addition to a toolkit to help intrusion detection and incident response.
 
+# References
+
+* [Hands on Machine Learning with Sci-kit Learn & Tensorflow](https://www.amazon.co.uk/Hands-Machine-Learning-Scikit-Learn-TensorFlow/dp/1491962291)
+
 # Resources
 
 This section is content that I have read or am currently reading and have found useful in my studies. _(I will try and update this as frequently as possible. Throughout this series I will be following both the Hands-on Machine Learning with Sci-kit Learn & Tensorflow as well as Deep Learning with Python)._
