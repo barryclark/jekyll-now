@@ -28,11 +28,11 @@ We can select any column using its label:
 <img src="/images/pandas-intro/2 select-column.png" />
 
 
-We can select one or multiple rows using their numbers (inclusive of both bounding row numbers):
+We can select one or multiple rows using their numbers:
 
 <img src="/images/pandas-intro/3 select-rows.png" />
 
-We can select any slice of the table using a both column label and row numbers using `loc`:
+We can select any slice of the table using a both column label and row numbers using `loc` (but here it would be inclusive of both bounding row numbers):
 
 <img src="/images/pandas-intro/4 select_column-and-rows.png" />
 
