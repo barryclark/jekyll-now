@@ -24,8 +24,10 @@ The structure of the whole system can be observed below in Figure 1.
 
 *The structure of the video description network*
 
-To summarize the process in 5 steps:
+To summarize the process in 3 steps:
+
     1. By using CNN, a fixed length visual data that summarizes the video is generated. (via Caffe framework)
+
     2. Then, the frames are sampled (10:1) and a vector of sized [1,4096] is generated to represent video.
+
     3. These vectors are fed to the LSTM Units to generate word outputs.
- 
