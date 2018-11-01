@@ -7,8 +7,18 @@ tags: powershell function ConfirmImpact ShouldProcess
 
 ## A Refresher
 
-For those of you who don't use it extensively, ConfirmImpact is a property of
-the
+For those of you who don't use it extensively, `ConfirmImpact` is a property of the
+`[CmdletBinding()]` attribute and is typically specified when declaring an advanced function that
+might have some noteworthy impact on the system:
+
+```powershell
+function Do-Thing {
+    [CmdletBinding(SupportsShouldProcess, ConfirmImpact = 'Medium')]
+    param()
+}
+```
+
+This is evaluated against the current `$ConfirmPreference` setting
 
 ```powershell
 function Remove-MyFile {
