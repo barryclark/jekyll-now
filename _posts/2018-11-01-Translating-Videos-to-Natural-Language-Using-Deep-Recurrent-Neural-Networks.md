@@ -8,7 +8,7 @@ title: "Paper Review 4: Translating Videos to Natural Language Using Deep Recurr
 
 In this post, the paper *"Translating Videos to Natural Language Using Deep Recurrent Neural Networks"* is ivestigated and summarized.
 
-*Venugopalan, Subhashini & Xu, Huijuan & Donahue, Jeff & Rohrbach, Marcus & Mooney, Raymond & Saenko, Kate. (2014). Translating Videos to Natural Language Using Deep Recurrent Neural Networks. Human Language Technologies: The 2015 Annual Conference of the North American Chapter of the ACL, pages 1494–1504
+*Venugopalan, Subhashini & Xu, Huijuan & Donahue, Jeff & Rohrbach, Marcus & Mooney, Raymond & Saenko, Kate. (2014). Translating Videos to Natural Language Using Deep Recurrent Neural Networks. Human Language Technologies: The 2015 Annual Conference of the North American Chapter of the ACL, pages 1494–1504*
 
 
 
