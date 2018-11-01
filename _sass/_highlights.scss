@@ -10,7 +10,23 @@ pre.highlight {
   box-shadow: 3px 3px 2px rgba(0,0,0,0.5);
   margin: 20px 0 20px 0;
   overflow: auto;
+
+  &::-webkit-scrollbar {
+    background-color: #202040;
+    width: 0.6em;
+    height: 0.6em;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    border-radius: 1em;
+  }
+  &:hover::-webkit-scrollbar-thumb {
+    border: 2px solid #002040;
+    background-color: #0063B1;
+  }
 }
+
 
 code {
   font-family: Consolas, Monaco, monospace;
