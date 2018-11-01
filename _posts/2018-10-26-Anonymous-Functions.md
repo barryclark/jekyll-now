@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Anonymous Functions
+title: Anonymous Functions in PowerShell
 date: 2018-10-26
 tags: powershell lambda anonymous function
 ---
