@@ -1,4 +1,9 @@
+---
+layout: post
+title: "Paper Review 3: Translating Videos to Natural Language Using Deep Recurrent Neural Networks"
+---
 
+2018/11/1
 
 In this post, the paper *"Translating Videos to Natural Language Using Deep Recurrent Neural Networks"* is ivestigated and summarized.
 
