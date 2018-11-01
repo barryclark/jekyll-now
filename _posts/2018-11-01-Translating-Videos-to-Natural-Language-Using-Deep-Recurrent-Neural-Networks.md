@@ -22,7 +22,7 @@ The structure of the whole system can be observed below in Figure 1.
 
 ![Figure1](./../images/paper4-1.png)
 
-*The structure of the video description network*
+*Figure 1. The structure of the video description network*
 
 To summarize the process in 3 steps:
 
