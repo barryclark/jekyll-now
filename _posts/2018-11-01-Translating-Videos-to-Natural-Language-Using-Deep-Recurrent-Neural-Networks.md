@@ -8,7 +8,8 @@ title: "Paper Review 4: Translating Videos to Natural Language Using Deep Recurr
 
 In this post, the paper *"Translating Videos to Natural Language Using Deep Recurrent Neural Networks"* is ivestigated and summarized.
 
-*Venugopalan, Subhashini & Xu, Huijuan & Donahue, Jeff & Rohrbach, Marcus & Mooney, Raymond & Saenko, Kate. (2014). Translating Videos to Natural Language Using Deep Recurrent Neural Networks. 10.3115/v1/N15-1173.*
+*Venugopalan, Subhashini & Xu, Huijuan & Donahue, Jeff & Rohrbach, Marcus & Mooney, Raymond & Saenko, Kate. (2014). Translating Videos to Natural Language Using Deep Recurrent Neural Networks. Human Language Technologies: The 2015 Annual Conference of the North American Chapter of the ACL, pages 1494–1504
+
 
 
 ## Summary:
@@ -59,6 +60,7 @@ FGM: Factor Graph Model described in FGM (Thomason et al., 2014)[4].
 
 LSTM Models: Models implemented by the authors with different datasets.
 
+
 ## References:
 
 - [1] Andrei Barbu, Alexander Bridge, Zachary Burchill, Dan Coroian, Sven Dickinson, Sanja Fidler, Aaron Michaux, Sam Mussman, Siddharth Narayanaswamy, Dhaval Salvi, Lara Schmidt, Jiangnan Shangguan, Jef- frey Mark Siskind, Jarrell Waggoner, Song Wang, Jin- lian Wei, Yifan Yin, and Zhiqi Zhang. 2012. Video in sentences out. In Association for Uncertainty in Arti- ficial Intelligence (UAI).
@@ -68,6 +70,7 @@ LSTM Models: Models implemented by the authors with different datasets.
 - [3] Sergio Guadarrama, Niveda Krishnamoorthy, Girish Malkarnenkar, Subhashini Venugopalan, Raymond Mooney, Trevor Darrell, and Kate Saenko. 2013. Youtube2text: Recognizing and describing arbitrary activities using semantic hierarchies and zero-shot recognition. In IEEE International Conference on Computer Vision (ICCV), December.
 
 - [4] J. Thomason, S. Venugopalan, S. Guadarrama, K. Saenko, and R.J. Mooney. 2014. Integrating language and vision to generate natural language descriptions of videos in the wild. In Proceedings of the 25th International Conference on Computational Linguistics (COLING), August.
+
 
 
 
