@@ -17,6 +17,16 @@ html {
   font-size: 100%;
 }
 
+::-webkit-scrollbar {
+  background-color: transparent;
+  width: 0.65em;
+  height: 0.65em;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ecf2fc;
+}
+
 body {
 	background: $white;
   font-size: 110%;
