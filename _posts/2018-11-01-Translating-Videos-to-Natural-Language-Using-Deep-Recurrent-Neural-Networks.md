@@ -59,7 +59,8 @@ FGM: Factor Graph Model described in FGM (Thomason et al., 2014)[4].
 
 LSTM Models: Models implemented by the authors with different datasets.
 
-References:
+## References:
+
 - [1] Andrei Barbu, Alexander Bridge, Zachary Burchill, Dan Coroian, Sven Dickinson, Sanja Fidler, Aaron Michaux, Sam Mussman, Siddharth Narayanaswamy, Dhaval Salvi, Lara Schmidt, Jiangnan Shangguan, Jef- frey Mark Siskind, Jarrell Waggoner, Song Wang, Jin- lian Wei, Yifan Yin, and Zhiqi Zhang. 2012. Video in sentences out. In Association for Uncertainty in Arti- ficial Intelligence (UAI).
 
 - [2] Marcus Rohrbach, Wei Qiu, Ivan Titov, Stefan Thater, Manfred Pinkal, and Bernt Schiele. 2013. Trans- lating video content to natural language descriptions. In IEEE International Conference on Computer Vision (ICCV).
