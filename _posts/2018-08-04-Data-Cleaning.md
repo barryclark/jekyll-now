@@ -6,21 +6,18 @@ categories: Education Data
 
 I recently read a helpful [article by John Sullivan](https://www.kdnuggets.com/2018/06/5-data-science-projects-hired.html) on skills to showcase for a career in data science. He describes data cleaning as requiring these skills:
 
-<div style="height:15%;width:100%;">
-    <div style='inline; float-right'>
-        <img src="/images/322schools.gif" style="margin-left:15%;margin-top:5%"/>
-    </div>
-    <div style='inline; float-left'>
-        <table border="1" width="44" style="margin-left:30%;float:top;"> 
+
+  <div style="display:inline-block; width:200px;">
+           <table border="1" width="44" style="margin-left:30%;float:top;"> 
             <tr><td><a href="#import">Importing data</a></td></tr>
             <tr><td><a href="#join">Joining multiple datasets</a></td></tr>
             <tr><td><a href="#missing">Detecting missing values</a></td></tr>
             <tr><td><a href="#anomalies">Detecting anomalies</a></td></tr>
             <tr><td><a href="#impute">Imputing for missing values</a></td></tr>
             <tr><td><a href="#qa">Data quality assurance</a></td></tr>
-        </table>
-    </div>
-</div>
+        </table></div> 
+  <div style="vertical-align:top; display: inline-block; width:515px"><img src="/images/322schools.gif" style="margin-left:15%;margin-top:5%"/></div>
+
 
 During this cleaning I discovered the Caifornia Deparment of Education (CDE) doesn't keep track of closed schools after some time. Since 1981, 322 schools have been forgotten. 
 
