@@ -6,7 +6,7 @@ categories: Education Data
 
 I recently read a helpful [article by John Sullivan](https://www.kdnuggets.com/2018/06/5-data-science-projects-hired.html) on skills to showcase for a career in data science. He describes data cleaning as requiring these skills:
 
-<div id="header" style="height:15%;width:100%;">
+<div style="height:15%;width:100%;">
     <div style='float:left'>
         <img src="/e-com/images/logo.jpg" style="margin-left:15%;margin-top:5%"/>
     </div>
