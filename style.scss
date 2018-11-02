@@ -75,6 +75,9 @@ nav{
   border-radius:50px;
 }
 //Content styles
+.container{
+  width:75%;
+}
 h1{
   font-size:1.7em;
   padding:10px 0px;
@@ -127,8 +130,8 @@ p{
   margin:15px 0px;
   font-style:italic;
 }
-.post .icons{
-  margin:0px 5px -8px 5px;
+a .icons{
+  margin:0px 0px -8px 0px;
  width:auto;
   max-height:32px;
 
@@ -173,6 +176,9 @@ p{
 
 }
  @media (max-width: 800px){
+  .container{
+  width:100%;
+}
   .content-wrapper{
     padding:0 5%;
   }
