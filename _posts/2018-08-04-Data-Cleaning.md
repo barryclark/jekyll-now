@@ -18,12 +18,11 @@ I recently read a helpful [article by John Sullivan](https://www.kdnuggets.com/2
         </table></div> 
   <div style="vertical-align:top; display: inline-block; width:515px"><img src="/images/322schools.gif" style="margin-left:15%;margin-top:5%"/></div>
 
-
 During this cleaning I discovered the Caifornia Deparment of Education (CDE) doesn't keep track of closed schools after some time. Since 1981, 322 schools have been forgotten. 
 
-If you look at the national data, it is even worse. This seems a seems a shame for people that went to those schools, even though they are closed now. What if they are interested in how their school performed in the past stacked up against other schools? They will never know because CDE let their records rot. 
+If you look at the national data, it is even worse. This seems a shame for people who attended to those schools, even though they are closed now. What if they are interested in how their school performed in the past stacked up against other schools? They will never know because CDE let their records rot. 
 
-In order to prepare data for enrollment analysis, I performed most of the cleaning tasks outlined above. Below I share the code and reasoning I used to perform these tasks.
+In order to prepare data for enrollment analysis, I performed many of the cleaning tasks outlined above. Below I share the code and reasoning I used to perform these tasks.
 
 # Import<a name="import"></a>
 ## Download Files
