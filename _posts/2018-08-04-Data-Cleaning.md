@@ -8,7 +8,7 @@ I recently read a helpful [article by John Sullivan](https://www.kdnuggets.com/2
 
 <div style="height:15%;width:100%;">
     <div style='float:left'>
-        <img src="/e-com/images/logo.jpg" style="margin-left:15%;margin-top:5%"/>
+        <img src="/images/322schools.gif" style="margin-left:15%;margin-top:5%"/>
     </div>
     <div style='float:leftt'>
         <table border="1" width="44" style="margin-left:30%;float:top;"> 
