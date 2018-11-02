@@ -12,12 +12,12 @@ I recently read a helpful [article by John Sullivan](https://www.kdnuggets.com/2
     </div>
     <div style='float:leftt'>
         <table border="1" width="44" style="margin-left:30%;float:top;"> 
-            <tr><td><h1><a href="home">[Importing data](#import)</a></h1></td></tr>
-            <tr><td><h1><a href="home">[Joining multiple datasets](#join)</a></h1></td></tr>
-            <tr><td><h1><a href="home">[Detecting missing values](#missing)</a></h1></td></tr>
-            <tr><td><h1><a href="home">[Detecting anomalies](#anomalies)</a></h1></td></tr>
-            <tr><td><h1><a href="home">[Imputing for missing values](#impute)</a></h1></td></tr>
-            <tr><td><h1><a href="home">[Data quality assurance](#qa)</a></h1></td></tr>
+            <tr><td>[Importing data](#import)</td></tr>
+            <tr><td>[Joining multiple datasets](#join)</td></tr>
+            <tr><td>[Detecting missing values](#missing)</td></tr>
+            <tr><td>[Detecting anomalies](#anomalies)</td></tr>
+            <tr><td>[Imputing for missing values](#impute)</td></tr>
+            <tr><td>[Data quality assurance](#qa)</td></tr>
         </table>
     </div>
 </div>
