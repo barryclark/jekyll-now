@@ -14,10 +14,10 @@ I recently read a helpful [article by John Sullivan](https://www.kdnuggets.com/2
         <table border="1" width="44" style="margin-left:30%;float:top;"> 
             <tr><td><a href="#import">Importing data</a></td></tr>
             <tr><td><a href="#join">Joining multiple datasets</a></td></tr>
-            <tr><td>[Detecting missing values](#missing)</td></tr>
-            <tr><td>[Detecting anomalies](#anomalies)</td></tr>
-            <tr><td>[Imputing for missing values](#impute)</td></tr>
-            <tr><td>[Data quality assurance](#qa)</td></tr>
+            <tr><td><a href="#missing">[Detecting missing values]</a></td></tr>
+            <tr><td><a href="#anomalies">[Detecting anomalies]</a></td></tr>
+            <tr><td><a href="#impute">[Imputing for missing values]</a></td></tr>
+            <tr><td><a href="#qa">[Data quality assurance]</a></td></tr>
         </table>
     </div>
 </div>
