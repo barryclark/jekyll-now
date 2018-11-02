@@ -10,7 +10,7 @@ I recently read a helpful [article by John Sullivan](https://www.kdnuggets.com/2
     <div style='float:left'>
         <img src="/images/322schools.gif" style="margin-left:15%;margin-top:5%"/>
     </div>
-    <div style='float:leftt'>
+    <div style='float:left'>
         <table border="1" width="44" style="margin-left:30%;float:top;"> 
             <tr><td><a href="#import">Importing data</a></td></tr>
             <tr><td><a href="#join">Joining multiple datasets</a></td></tr>
