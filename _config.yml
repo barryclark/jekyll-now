@@ -86,3 +86,6 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+
+highlighter: rouge
+
