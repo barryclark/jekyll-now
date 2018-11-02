@@ -4,6 +4,8 @@
 //
 // IMPORTS
 //
+@import "highlights";
+// @import url(monokai.css);
 
 @import "reset";
 @import "variables";
@@ -80,13 +82,14 @@ h1{
   color:$gray;
 }
 h3{
-  font-size:1.3em;
+  font-size:1.4em;
   padding:10px 0px;
   color:$gray;
 }
 p{
   padding:5px 0px;
   line-height:1.8em;
+ 
 }
 .content-wrapper{
   margin-bottom:20px;
@@ -123,6 +126,12 @@ p{
 .date{
   margin:15px 0px;
   font-style:italic;
+}
+.post .icons{
+  margin:0px 5px -8px 5px;
+ width:auto;
+  max-height:32px;
+
 }
 //End of index posts styles
 
