@@ -57,7 +57,7 @@ I'm starting to play with (which probably means lose money with) options. I didn
 
 I bought a $6 put for Fitbit at 11&cent; a share. I ended up selling it for 12&cent; a share;
 
-What does that mean? The put means I had an option to sell 100 shares for $6.00 if it expired and FIT was less than $6.00. So, if FIT expires at $5.00 a share, that means I sell 100 shares of FIT for $6.00 that I am able to buy on the market for $5.00, netting me $1.00 a share. Since there are 100 shares, you multiply that by 100, which means I'd net $100. Minus how much I paid - 11&cent a share at 100 shares means it cost me $11, I would have made $89 in this hypothetical scenario.
+What does that mean? The put means I had an option to sell 100 shares for $6.00 if it expired and FIT was less than $6.00. So, if FIT expires at $5.00 a share, that means I sell 100 shares of FIT for $6.00 that I am able to buy on the market for $5.00, netting me $1.00 a share. Since there are 100 shares, you multiply that by 100, which means I'd net $100. Minus how much I paid - 11&cent; a share at 100 shares means it cost me $11, I would have made $89 in this hypothetical scenario.
 
 Except this hypothetical scenario didn't happen. I sold my option for a penny more than I paid, meaning I made a dollar:
 
