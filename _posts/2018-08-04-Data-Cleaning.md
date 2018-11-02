@@ -6,19 +6,27 @@ categories: Education Data
 
 I recently read a helpful [article by John Sullivan](https://www.kdnuggets.com/2018/06/5-data-science-projects-hired.html) on skills to showcase for a career in data science. He describes data cleaning as requiring these skills:
 
-[Importing data](#import)
+<div id="header" style="height:15%;width:100%;">
+    <div style='float:left'>
+        <img src="/e-com/images/logo.jpg" style="margin-left:15%;margin-top:5%"/>
+    </div>
+    <div style='float:leftt'>
+        <table border="1" width="44" style="margin-left:30%;float:top;"> 
+            <tr>
+                <td><h1><a href="home">[Importing data](#import)</a></h1></td>
+                <td><h1><a href="home">[Joining multiple datasets](#join)</a></h1></td>
+                <td><h1><a href="home">[Detecting missing values](#missing)</a></h1></td>
+                <td><h1><a href="home">[Detecting anomalies](#anomalies)</a></h1></td>
+                <td><h1><a href="home">[Imputing for missing values](#impute)</a></h1></td>
+                <td><h1><a href="home">[Data quality assurance](#qa)</a></h1></td>
+            </tr>
+        </table>
+    </div>
+</div>
 
-[Joining multiple datasets](#join)
+During this cleaning I discovered the Caifornia Deparment of Education (CDE) doesn't keep track of closed schools after some time. Since 1981, 322 schools have been forgotten. 
 
-[Detecting missing values](#missing)
-
-[Detecting anomalies](#anomalies)
-
-[Imputing for missing values](#impute)
-
-[Data quality assurance](#qa)
-
-During this cleaning I discovered the Caifornia Deparment of Education (CDE) doesn't keep track of closed schools after some time. Since 1981, 322 schools are forgotten. If you look at the national data, it is even worse. This seems a seems a shame for people that went to those schools, even though they are closed now. What if they are interested in how their school performed in the past stacked up against other schools? They will never know because CDE let their records rot. 
+If you look at the national data, it is even worse. This seems a seems a shame for people that went to those schools, even though they are closed now. What if they are interested in how their school performed in the past stacked up against other schools? They will never know because CDE let their records rot. 
 
 In order to prepare data for enrollment analysis, I performed most of the cleaning tasks outlined above. Below I share the code and reasoning I used to perform these tasks.
 
