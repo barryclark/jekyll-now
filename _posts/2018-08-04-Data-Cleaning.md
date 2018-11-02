@@ -2,16 +2,16 @@
 layout: post
 title: California Public Enrollment Data
 categories: Education Data
----
+-
 
 I recently read a helpful [article by John Sullivan](https://www.kdnuggets.com/2018/06/5-data-science-projects-hired.html) on skills to showcase for a career in data science. He describes data cleaning as requiring these skills:
 
-(Importing data)[#import]
-Joining multiple datasets
-Detecting missing values
-Detecting anomalies
-Imputing for missing values
-Data quality assurance
+[Importing data](#import)
+[Joining multiple datasets](#join)
+[Detecting missing values](#missing)
+[Detecting anomalies](#anomalies)
+[Imputing for missing values](#impute)
+[Data quality assurance](#qa)
 
 During this cleaning I discovered the Caifornia Deparment of Education (CDE) doesn't keep track of closed schools after some time. Since 1981, 322 schools are forgotten. If you look at the national data, it is even worse. This seems a seems a shame for people that went to those schools, even though they are closed now. What if they are interested in how their school performed in the past stacked up against other schools? They will never know because CDE let their records rot. 
 
