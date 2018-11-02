@@ -8,7 +8,7 @@ I recently read a helpful [article by John Sullivan](https://www.kdnuggets.com/2
 
 
   <div style="display:inline-block; width:200px;">
-           <table border="1" width="44" style="margin-left:30%;float:top;"> 
+           <table border="1" width="44px"> 
             <tr><td><a href="#import">Importing data</a></td></tr>
             <tr><td><a href="#join">Joining multiple datasets</a></td></tr>
             <tr><td><a href="#missing">Detecting missing values</a></td></tr>
