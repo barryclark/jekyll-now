@@ -16,17 +16,17 @@ pool:
   vmImage: 'Ubuntu 16.04'
 
 steps:
-#- task: Docker@0
-#  displayName: 'Run Jekyll'
-#  inputs:
-#    containerRegistryType: 'Container Registry'
-#    action: 'Run an image'
-#    imageName: 'jekyll/builder:latest'
-#    volumes: |
-#      $(build.sourcesDirectory):/srv/jekyll
-#      $(build.binariesDirectory):/srv/jekyll/_site
-#    containerCommand: 'jekyll build'
-#    detached: false
+- task: Docker@0
+  displayName: 'Run Jekyll'
+  inputs:
+    containerRegistryType: 'Container Registry'
+    action: 'Run an image'
+    imageName: 'jekyll/builder:latest'
+    volumes: |
+      $(build.sourcesDirectory):/srv/jekyll
+      $(build.binariesDirectory):/srv/jekyll/_site
+    containerCommand: 'jekyll build'
+    detached: false
 - task: AzurePowerShell@3
   inputs:
     #azureConnectionType: 'ConnectedServiceNameARM' # Optional. Options: connectedServiceName, connectedServiceNameARM
