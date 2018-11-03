@@ -4,10 +4,7 @@
 # https://aka.ms/yaml
 
 name: Clear-Code Blog
-trigger:
-  branches:
-    include:
-    - master
+trigger: none
 pr: none
 
 
