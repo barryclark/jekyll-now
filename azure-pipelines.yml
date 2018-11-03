@@ -7,14 +7,27 @@ pool:
   vmImage: 'Ubuntu 16.04'
 
 steps:
-- task: Docker@0
-  displayName: 'Run Jekyll'
+#- task: Docker@0
+#  displayName: 'Run Jekyll'
+#  inputs:
+#    containerRegistryType: 'Container Registry'
+#    action: 'Run an image'
+#    imageName: 'jekyll/builder:latest'
+#    volumes: |
+#      $(build.sourcesDirectory):/srv/jekyll
+#      $(build.binariesDirectory):/srv/jekyll/_site
+#    containerCommand: 'jekyll build'
+#    detached: false
+- task: AzurePowerShell@3
   inputs:
-    containerRegistryType: 'Container Registry'
-    action: 'Run an image'
-    imageName: 'jekyll/builder:latest'
-    volumes: |
-      $(build.sourcesDirectory):/srv/jekyll
-      $(build.binariesDirectory):/srv/jekyll/_site
-    containerCommand: 'jekyll build'
-    detached: false
+    #azureConnectionType: 'ConnectedServiceNameARM' # Optional. Options: connectedServiceName, connectedServiceNameARM
+    #azureClassicSubscription: # Required when azureConnectionType == ConnectedServiceName
+    #azureSubscription: # Required when azureConnectionType == ConnectedServiceNameARM
+    scriptType: 'FilePath' # Optional. Options: filePath, inlineScript
+    scriptPath: /Invoke-PagesBuild.ps1
+    #inline: '# You can write your azure powershell scripts inline here. # You can also pass predefined and custom variables to this script using arguments' # Optional
+    #scriptArguments: # Optional
+    errorActionPreference: 'stop' # Optional. Options: stop, continue, silentlyContinue
+    failOnStandardError: true # Optional
+    azurePowerShellVersion: 'latestVersion' # Optional. Options: latestVersion, otherVersion
+    #preferredAzurePowerShellVersion: # Required when azurePowerShellVersion == OtherVersion
