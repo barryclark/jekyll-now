@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Multi-Layer ConfirmImpact Implementation
-date: 2018-11-09
+date:
 tags: powershell function ConfirmImpact ShouldProcess
 ---
 
