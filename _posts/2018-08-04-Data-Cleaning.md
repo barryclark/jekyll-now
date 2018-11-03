@@ -102,27 +102,27 @@ DT06 <- cds[DT06]
 ### Ethnicity
 Since ETHNIC categories changed I kept four timespans as seperate .csv files. Of note, the description of the ETHNIC field for the Enr81To92.txt file is incorrect,  (https://www.cde.ca.gov/ds/sd/sd/fsenr81to92.asp) says:
 
-Code 1 = American Indian or Alaska Native
-Code 2 = Asian
-Code 3 = Pacific Islander
-Code 4 = Filipino
-Code 5 = Hispanic or Latino
-Code 6 = Black, not Hispanic
-Code 7 = White, not Hispanic
+- Code 1 = American Indian or Alaska Native
+- Code 2 = Asian
+- Code 3 = Pacific Islander
+- Code 4 = Filipino
+- Code 5 = Hispanic or Latino
+- Code 6 = Black, not Hispanic
+- Code 7 = White, not Hispanic
 
 When in fact the levels of the ETHNIC field are character strings:
 
 ![levelsEthnic](/images/levelsEthnic.png)
 
-" " = (Blanks described in the Note)
-"  " = (Blanks described in the Note)
-"A" = Asian
-"B" = Black, not Hispanic
-"F" = Filipino
-"H" = Hispanic or Latino
-"I" = American Indian or Alaska Native
-"P" = Pacific Islander
-"W" = White, not Hispanic
+- " " = (Blanks described in the Note)
+- "  " = (Blanks described in the Note)
+- "A" = Asian
+- "B" = Black, not Hispanic
+- "F" = Filipino
+- "H" = Hispanic or Latino
+- "I" = American Indian or Alaska Native
+- "P" = Pacific Islander
+- "W" = White, not Hispanic
 
 ## English Larners
 For ELs there is a hint about the TOTAL variable starting in 95 and changing in 98. However, changing colnames is straightforward, the full story is that the filetype changes between starting year 2000 and 2001, there are no header rows for starting years 2002-2008, and the duplicate column in '80 that was removed in the code snippet for file lists above.
