@@ -31,12 +31,12 @@ steps:
 - task: PowerShell@2
   displayName: 'Trigger Github Pages Build'
   inputs:
-    targetType: 'inline' # Optional. Options: filePath, inline
-    #filePath: /Invoke-PagesBuild.ps1 # Required when targetType == FilePath
+    targetType: 'filePath' # Optional. Options: filePath, inline
+    filePath: ./Invoke-PagesBuild.ps1 # Required when targetType == FilePath
     #arguments: # Optional
-    script: 'Get-Location' # Required when targetType == Inline
+    #script: 'Get-Location' # Required when targetType == Inline
     errorActionPreference: 'stop' # Optional. Options: stop, continue, silentlyContinue
     failOnStderr: true # Optional
     #ignoreLASTEXITCODE: false # Optional
     pwsh: true # Optional
-    #workingDirectory: # Optional
+    #workingDirectory: /home/vsts/work/1/s/
