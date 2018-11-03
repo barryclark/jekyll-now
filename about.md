@@ -19,9 +19,9 @@ I hold a Masters in Computer Science from the University of Cambridge, King's Co
 [Tweet me](https://twitter.com/oicheryl) for speaking engagements and new opportunities. My preferred forms of address are:
 
 * Informal: Cheryl
-* Professional: Cheryl J Hung
-* Formal: Ms Cheryl Johnson Hung
-* Chinese: 洪雪晴
+* Professional: Cheryl Hung
+* Formal: Ms Cheryl Hung
+* Chinese: 洪雪晴 (Hóng Xuěqíng)
 
 [Download my resume here.](http://www.oicheryl.com/resources/CherylJHung.pdf)
 
