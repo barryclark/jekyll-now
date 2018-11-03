@@ -1,6 +1,6 @@
 +++
 title = "Small sample methods for cluster-robust variance estimation and hypothesis testing in fixed effects models"
-date = 2016-10-24T00:00:00
+date = 2018-11-02T00:00:00
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
 authors = ["James E. Pustejovsky", "Elizabeth Tipton"]
