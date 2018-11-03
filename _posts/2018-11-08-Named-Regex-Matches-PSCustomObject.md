@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Using Named Regex Matches to Build PSCustomObjects
-date: 2018-11-
+date: 2018-11-08
 tags: powershell regex PSCustomObject PSObject tips match
 ---
 
