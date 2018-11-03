@@ -3,7 +3,7 @@
 # Add steps that build, test, save build artifacts, deploy, and more:
 # https://aka.ms/yaml
 
-name: Deploy Pages
+name: Clear-Code Blog
 trigger:
   batch: true
   branches:
