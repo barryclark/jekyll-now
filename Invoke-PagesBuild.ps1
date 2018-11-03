@@ -1,5 +1,7 @@
+[CmdletBinding()]
 param(
     [Parameter(Position = 0)]
+    [string]
     $ApiKey = $env:Build_ApiKey
 )
 $ApiParams = @{
