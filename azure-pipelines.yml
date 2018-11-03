@@ -26,16 +26,17 @@ steps:
       $(build.binariesDirectory):/srv/jekyll/_site
     containerCommand: 'jekyll build'
     detached: false
-- task: AzurePowerShell@3
+# PowerShell
+# Run a PowerShell script on Windows, macOS, or Linux.
+- task: PowerShell@2
+  displayName: 'Trigger Github Pages Build'
   inputs:
-    #azureConnectionType: 'ConnectedServiceNameARM' # Optional. Options: connectedServiceName, connectedServiceNameARM
-    #azureClassicSubscription: # Required when azureConnectionType == ConnectedServiceName
-    #azureSubscription: # Required when azureConnectionType == ConnectedServiceNameARM
-    scriptType: 'FilePath' # Optional. Options: filePath, inlineScript
-    scriptPath: /Invoke-PagesBuild.ps1
-    #inline: '# You can write your azure powershell scripts inline here. # You can also pass predefined and custom variables to this script using arguments' # Optional
-    #scriptArguments: # Optional
+    targetType: 'filePath' # Optional. Options: filePath, inline
+    filePath: /Invoke-PagesBuild.ps1 # Required when targetType == FilePath
+    #arguments: # Optional
+    #script: '# Write your powershell commands here.' # Required when targetType == Inline
     errorActionPreference: 'stop' # Optional. Options: stop, continue, silentlyContinue
-    failOnStandardError: true # Optional
-    azurePowerShellVersion: 'latestVersion' # Optional. Options: latestVersion, otherVersion
-    #preferredAzurePowerShellVersion: # Required when azurePowerShellVersion == OtherVersion
+    failOnStderr: true # Optional
+    #ignoreLASTEXITCODE: false # Optional
+    pwsh: true # Optional
+    #workingDirectory: # Optional
