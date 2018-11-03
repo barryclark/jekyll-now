@@ -5,7 +5,6 @@
 
 name: Clear-Code Blog
 trigger:
-  batch: true
   branches:
     include:
     - master
