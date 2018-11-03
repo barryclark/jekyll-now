@@ -6,7 +6,6 @@ categories: Education Data
 
 I recently read a helpful [article by John Sullivan](https://www.kdnuggets.com/2018/06/5-data-science-projects-hired.html) on skills to showcase for a career in data science. He describes data cleaning as requiring these skills:
 
-
   <div style="display:inline-block; width:200px;">
            <table> 
             <tr><td><a href="#import">Importing data</a></td></tr>
@@ -18,20 +17,20 @@ I recently read a helpful [article by John Sullivan](https://www.kdnuggets.com/2
         </table></div> 
   <div style="vertical-align:top; display: inline-block; width:515px"><img src="/images/322schools.gif" style="margin-left:15%;margin-top:5%"/></div>
 
-During this cleaning I discovered the Caifornia Deparment of Education (CDE) doesn't keep track of closed schools after some time. Since 1981, 322 schools have been forgotten. 
+During this cleaning I discover the Caifornia Deparment of Education (CDE) doesn't keep track of closed schools after some time. Since 1981, 322 schools have been forgotten. 
 
 If you look at the national data, it is even worse. This seems a shame for people who attended to those schools, even though they are closed now. What if they are interested in how their school performed in the past stacked up against other schools? They will never know because CDE let their records rot. 
 
-In order to prepare data for enrollment analysis, I performed many of the cleaning tasks outlined above. Below I share the code and reasoning I used to perform these tasks.
+In order to prepare data for enrollment analysis, I perform many of the cleaning tasks outlined above. Below I share the code and reasoning I used to perform these tasks.
 
 # Import<a name="import"></a>
 ## Download Files
 Originally I wrote a scraper in python to bulk download the files from http://www.cde.ca.gov/ds/sd/sd/, however I was having timeout issues from the cde server and clicking a few dozen links isn't that bad, so I downloaded by hand.
 File formats include .csv, .xls, .txt, .zip, .dbf, .exe (all pretty straightforward except that on mac .dbf requires OpenOffice and .exe are self-extracting zip files that can be unzipped on the command line). 
-I converted all files to either .txt or .csv and organized the files in a Data/ subdirectory within the project directory.
+I convert all files to either .txt or .csv and organize the files in a Data/ subdirectory within the project directory.
 
 ## Import Files
-In this case I imported files directly from a local repository. For the most part this only requires the [read.table](https://www.rdocumentation.org/packages/utils/versions/3.5.1/topics/read.table) function from base R.
+In this case I import files directly from a local repository. For the most part this only requires the [read.table](https://www.rdocumentation.org/packages/utils/versions/3.5.1/topics/read.table) function from base R.
 .txt are tab delimeted and .csv are comma delimited so the main difference is the sep parameter:
 
 For .txt files
@@ -44,8 +43,9 @@ DT.list <- lapply(file.list, read.csv, header=TRUE, check.names=FALSE)
 ```
 
 ## File Lists
-I used naming conventions to differentiate files with slightly different structure that needed to be modifed to combine them into a single data table. Then I used regex to collect files of similar type into file lists. Once we have a list of files, we can use lapply to perform read.table on all of the files and put the resulting data frames in a list. A list of data frames can be named by year and actions can be performed on their columns en masse.
-For example, with the EL data that was in .csv format I found that '80 contained a duplicate CDS_CODE column that needed to be removed. Notice that I was able to remove that column before renaming all of the columns and combining all of the data frames into one data table with [rbindlist](https://www.rdocumentation.org/packages/data.table/versions/1.11.8/topics/rbindlist) from the data.table package.
+I use naming conventions to differentiate files with slightly different structure that needed to be modifed to combine them into a single data table. Then I use regex to collect files of similar type into file lists. I use lapply to perform read.table on all of the files and put the resulting data frames in a list. Each list of data frames is named by year and actions are performed on their columns en masse.
+
+For example, with the EL data that was in .csv format we find that '80 contained a duplicate CDS_CODE column that needed to be removed. Notice that I remove that column before renaming all of the columns and combining the data frames into one data table with [rbindlist](https://www.rdocumentation.org/packages/data.table/versions/1.11.8/topics/rbindlist) from the data.table package.
 
 ```R
 #Convert file list into a data.table with an ID row (Using starting year as the year indicator)
@@ -57,11 +57,14 @@ DT00 <- rbindlist(DT.list, use.names=TRUE, fill=TRUE, idcol='YEAR') # creates da
 ```
 
 # Join<a name="join"></a>
-It has been shown that rbindlist is significantly [faster than rbind](https://stackoverflow.com/questions/2851327/convert-a-list-of-data-frames-into-one-data-frame), so ideally we can modify our list of dataframes and create one long list before our call to rbindlist. This requires that each dataframe have the same structure (number of variables, colnames, coltypes). When I was unable to put all of the data frames in one list, I used rbind to bind the rows of the data tables.
-CDE does include a file structure file for each individual file, so I looked through these to find some structural changes to the data. 
+rbindlist is significantly [faster than rbind](https://stackoverflow.com/questions/2851327/convert-a-list-of-data-frames-into-one-data-frame), so ideally we can modify our list of dataframes and create one long list before our call to rbindlist. This requires that each dataframe have the same structure (number of variables, colnames, coltypes). When unable to put all of the data frames in one list, I use rbind to bind the rows of the data tables.
+
+CDE does include a file structure file for each individual file, so I look through these to find some structural changes to the data. At times these structure files are incomplete or incorrect.
+
 ## Enrollment
-With enrollment data, these changes created 5 timespans: 1981-1992, 1993-1997, 1998-2006, 2007-2008, 2009-2017. The primary difference was that ETHNIC categories changed as discussed in my post on [Enrollments by Ethnicity]().
-Additionally there are historical enrollment files from 1948-1980, however they don't include many variables. 1948-1969 seperates grades and gender, 1970-1976 seperates gender, 1977-1980 only have county-level enrollment (no School-level data, no ethinicities).
+With enrollment data, structural changes create 5 timespans: 1981-1992, 1993-1997, 1998-2006, 2007-2008, 2009-2017. The primary difference is that ETHNIC categories change as discussed in my post on [Enrollments by Ethnicity]().
+Additionally there are historical enrollment files from 1948-1980, however they don't include many variables. 1948-1969 seperate grades and gender, 1970-1976 seperate gender, 1977-1980 only have county-level enrollment (no School-level data, no ethinicities).
+
 ### CDS_CODE
 County, District, and School values are missing from 1981-1992, 1993-1997, and 2007-2008, so these are imputed with correct values from a database of California Public Schools.
 
@@ -97,7 +100,29 @@ DT06 <- cds[DT06]
 ```
 
 ### Ethnicity
-Since ETHNIC categories changed I kept four timespans as seperate .csv files.
+Since ETHNIC categories changed I kept four timespans as seperate .csv files. Of note, the description of the ETHNIC field for the Enr81To92.txt file is incorrect,  (https://www.cde.ca.gov/ds/sd/sd/fsenr81to92.asp) says:
+
+Code 1 = American Indian or Alaska Native
+Code 2 = Asian
+Code 3 = Pacific Islander
+Code 4 = Filipino
+Code 5 = Hispanic or Latino
+Code 6 = Black, not Hispanic
+Code 7 = White, not Hispanic
+
+When in fact the levels of the ETHNIC field are character strings:
+
+![levelsEthnic](/images/levelsEthnic.png)
+
+" " = (Blanks described in the Note)
+"  " = (Blanks described in the Note)
+"A" = Asian
+"B" = Black, not Hispanic
+"F" = Filipino
+"H" = Hispanic or Latino
+"I" = American Indian or Alaska Native
+"P" = Pacific Islander
+"W" = White, not Hispanic
 
 ## English Larners
 For ELs there is a hint about the TOTAL variable starting in 95 and changing in 98. However, changing colnames is straightforward, the full story is that the filetype changes between starting year 2000 and 2001, there are no header rows for starting years 2002-2008, and the duplicate column in '80 that was removed in the code snippet for file lists above.
@@ -189,7 +214,11 @@ To account for adjusted/unadjusted, after reading (this place), could make simil
 
 
 # Missing Values<a name="missing"></a>
-Since CDE doesn't keep complete CDS records at https://www.cde.ca.gov/ds/si/ds/pubschls.asp, we did our best to heal rows of schools with undefined CDS_CODEs. One successful approach was to recover the C,D,S of NA CDS codes after 1996 from the 1992 data. The script to recover the CDS is included below,
+Since CDE doesn't keep complete records at https://www.cde.ca.gov/ds/si/ds/pubschls.asp, we did our best to heal rows of schools with undefined CDS_CODEs.
+
+I was able to recover many lost (County, District, School) names after 1996 for ~200 schools (roughly 42k rows) because Enr81To92.txt contains SchoolName and DistrictName fields.
+
+The script to recover the CDS is included below, Much of this code duplication could have been avoided by placing the data.tables in a list. However, the counts in the comments show how **this process was able to recover over 90% of the missing CDS values.** The meat of the recovery lies within the recoverLostCDS() function,
 
 ```R
 #================== Check NA values =============================
@@ -201,7 +230,7 @@ sapply(DT97, function(y) sum(length(which(is.na(y))))) # 9431 CDS_CODEs to merge
 sapply(DT08, function(y) sum(length(which(is.na(y))))) # 20295 CDS_CODEs to merge (not contained in cds of pubschls.txt) and 173 NA rows to inspect/remove, 
 sapply(DT16, function(y) sum(length(which(is.na(y))))) # 653 NA rows to inspect/remove
 
-#Recover lost CDS labels from DT92
+#Recover lost CDS labels from '92 data
 cds92 <- recoverLostCDS(DT92, sch) # 229 recovered
 setkey(cds92, CDS_CODE)
 DT92[, SchoolName := NULL]; DT92[, DistrictName := NULL] # Remove S,D cols AFTER recover function above
@@ -212,12 +241,7 @@ joinRecoveredCDS(DT08, cds92)
 sapply(DT92, function(y) sum(length(which(is.na(y))))) # All filled
 sapply(DT97, function(y) sum(length(which(is.na(y))))) # 268 CDS_CODEs without C, D, S
 sapply(DT08, function(y) sum(length(which(is.na(y))))) # 4013 CDS_CODEs without C, D, S
-```
 
-Much of this code duplication could have been avoided by placing the data.tables in a list. However, the counts in the comments show how *this process was able to recover over 90% of the missing CDS values.* The meat of the recovery lies within the recoverLostCDS() function,
-
-```R
-#Recover lost CDS labels from '92 data
 recoverLostCDS <- function(DT92, sch) {
   cdsna92 <- unique(subset(DT92, is.na(SCHOOL), select=CDS_CODE)) # unlabeled schools
   setkey(cdsna92, CDS_CODE)
