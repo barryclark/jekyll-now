@@ -2,7 +2,7 @@
 param(
     [Parameter(Position = 0)]
     [string]
-    $ApiKey = $env:Build_ApiKey
+    $ApiKey
 )
 $ApiParams = @{
     Uri     = 'https://api.github.com/repos/vexx32/vexx32.github.io/pages/builds'
