@@ -3,6 +3,15 @@
 # Add steps that build, test, save build artifacts, deploy, and more:
 # https://aka.ms/yaml
 
+name: Deploy Pages
+trigger:
+  batch: true
+  branches:
+    include:
+    - master
+pr: none
+
+
 pool:
   vmImage: 'Ubuntu 16.04'
 
