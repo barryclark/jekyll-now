@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+<article class="page">
+
+  <h1>All Posts</h1>
+
+  <div class="entry">
+    {% for post in site.posts %}
+
+      <h5>
+        {{ post.date | date: "%d %b, %Y" }}
+        &mdash;
+        <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+      </h5>
+
+    {% endfor %}
+  </div>
+
+</article>
+
+<div class="backToIndex">
+  <a href="/">Back to Homepage</a>
+</div>

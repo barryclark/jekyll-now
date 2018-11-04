@@ -276,7 +276,17 @@ nav {
   overflow: auto;
 }
 
-.posts > .post {
+ul.projectList {
+  list-style-type: none;
+
+  li {
+    &::before {
+      content: '&mdash; '
+    }
+  }
+}
+
+.posts > .post, .links {
   padding-bottom: 2em;
   border-bottom: 1px solid $lightGray;
 }
@@ -303,6 +313,7 @@ nav {
   .read-more {
     text-transform: uppercase;
     font-size: 0.9em;
+    float: left;
   }
 
   .backToIndex {

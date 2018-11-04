@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div class="posts">
-  {% for post in site.posts %}
+  {% for post in site.posts limit:1 %}
     <article class="post">
 
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
@@ -13,6 +13,30 @@ layout: default
       </div>
 
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+      <span class="dateStamp">{{ post.date | date: "%d %b, %Y" }}</span>
     </article>
   {% endfor %}
+</div>
+
+<div class="links">
+
+  <h1>Projects</h1>
+  <ul class="projectList">
+
+    <li><a href="https://github.com/vexx32/PSKoans">PSKoans</a></li>
+
+  </ul>
+
+</div>
+
+<div class="posts">
+  <h1>Recent Posts</h1>
+  {% for post in site.posts offset:1 limit 3 %}
+    <article class="post">
+
+      <h4><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h4>
+
+    </article>
+  {% endfor %}
+  <a href="/postIndex.html" class="read-more">More Posts</a>
 </div>
