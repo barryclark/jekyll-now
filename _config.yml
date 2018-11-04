@@ -12,11 +12,11 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "dirt" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Software Developers in Android, OpenGL, C++"
+title                    : "所写即所得"
 title_separator          : "-"
 name                     : "venciallee"
 description              : "格物致知诚意正心修身齐家."
@@ -286,5 +286,5 @@ defaults:
       author_profile: true
       read_time: true
       comments: # true
-      share: # true
+      share:  true
       related: true
