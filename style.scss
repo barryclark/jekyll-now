@@ -282,7 +282,6 @@ ul.projectList {
   li {
     &::before {
       content: '— ';
-      font-weight: bold;
     }
   }
 }

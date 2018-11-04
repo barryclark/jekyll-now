@@ -11,7 +11,7 @@ permalink: /index/
     {% for post in site.posts %}
 
       <h5>
-        {{ post.date | date: "%d %b, %Y" }}
+        {{ post.date | date: "%Y-%m-%d" }}
         &mdash;
         <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
       </h5>

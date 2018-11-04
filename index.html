@@ -33,7 +33,7 @@ layout: default
     <ul class="listRecent">
       {% for post in site.posts offset:1 limit 3 %}
 
-          <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> &mdash; {{ post.date | date: "%Y/%m/%d" }}</li>
+          <li>{{ post.date | date: "%Y-%m-%d" }} &mdash; <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
 
       {% endfor %}
     </ul>
