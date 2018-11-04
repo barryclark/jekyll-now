@@ -31,12 +31,12 @@ layout: default
 
 <div class="posts">
   <h1>Recent Posts</h1>
-  {% for post in site.posts offset:1 limit 3 %}
-    <article class="post">
+  <ul class="post list">
+    {% for post in site.posts offset:1 limit 3 %}
 
-      <h4><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h4>
+        <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> &mdash; {{ post.date | date: "%Y/%m/%d" }}</li>
 
-    </article>
-  {% endfor %}
-  <a href="/postIndex.html" class="read-more">More Posts</a>
+    {% endfor %}
+  </ul>
+  <a href="/index/" class="read-more">More Posts</a>
 </div>

@@ -281,7 +281,8 @@ ul.projectList {
 
   li {
     &::before {
-      content: '&mdash; '
+      content: '—'
+      font-weight: bold;
     }
   }
 }
@@ -322,6 +323,14 @@ ul.projectList {
 
   .backToIndex {
     float: right;
+  }
+
+  &.list {
+    list-style-type: none;
+
+    li a {
+      font-style: italic;
+    }
   }
 }
 
