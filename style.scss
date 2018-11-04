@@ -103,7 +103,7 @@ a {
 
 ul, ol {
   margin: 15px 0;
-  padding-left: 30px;
+  padding-left: 1.5em;
 }
 
 ul {
@@ -294,9 +294,13 @@ ul.listRecent {
   }
 }
 
-.posts > .post, .links {
+.posts > .post {
   padding-bottom: 2em;
   border-bottom: 1px solid $lightGray;
+
+  &.excerpt {
+    padding-left: 1.5em;
+  }
 }
 
 .posts > .post:last-child {

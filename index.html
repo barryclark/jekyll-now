@@ -5,7 +5,7 @@ layout: default
 <div class="posts">
   <h1>Most Recent Post</h1>
   {% for post in site.posts limit:1 %}
-    <article class="post">
+    <article class="post excerpt">
 
       <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
 
@@ -18,7 +18,7 @@ layout: default
     </article>
   {% endfor %}
 
-  <article class="links">
+  <article class="post">
 
     <h1>Projects</h1>
     <ul class="projectList">
