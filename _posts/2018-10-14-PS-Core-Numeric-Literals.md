@@ -2,7 +2,8 @@
 layout: post
 title: PS Core - Numeric Literals
 date: 2018-10-14
-tags: powershell core pscore csharp
+categories: ['Powershell Core', C#]
+tags: [powershell, core, pscore, csharp]
 ---
 
 PowerShell has had only very basic support for numeric literals for longer than I've been using it,

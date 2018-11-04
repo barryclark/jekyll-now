@@ -2,7 +2,8 @@
 layout: post
 title: Using Named Regex Matches to Build PSCustomObjects
 date: 2018-11-08
-tags: powershell regex PSCustomObject PSObject tips match
+categories: [powershell]
+tags: [powershell, regex, PSCustomObject, PSObject, tips, match]
 ---
 
 Regex is often considered something of a black art, and not without reason. It is, arguably, the

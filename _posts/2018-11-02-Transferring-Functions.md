@@ -2,7 +2,8 @@
 layout: post
 title: Transferring Functions with PSRemoting
 date: 2018-11-02
-tags: powershell function remoting invoke-command
+categories: [powershell]
+tags: [powershell, function, remoting, invoke-command]
 ---
 
 Thankfully, these days a majority of our functions and cmdlets are kept tucked

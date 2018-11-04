@@ -2,7 +2,8 @@
 layout: post
 title: Multi-Layer ConfirmImpact Implementation
 date:
-tags: powershell function ConfirmImpact ShouldProcess
+categories: [powershell]
+tags: [powershell, function, ConfirmImpact, ShouldProcess]
 ---
 
 ## A Refresher

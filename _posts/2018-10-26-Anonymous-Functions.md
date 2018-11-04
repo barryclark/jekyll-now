@@ -2,7 +2,8 @@
 layout: post
 title: Anonymous Functions in PowerShell
 date: 2018-10-26
-tags: powershell lambda anonymous function
+categories: [powershell]
+tags: [powershell, lambda, anonymous, function]
 ---
 
 PowerShell sits in quite an unusual place in terms of classifying programming languages. Most

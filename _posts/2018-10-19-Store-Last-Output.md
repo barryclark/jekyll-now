@@ -2,7 +2,8 @@
 layout: post
 title: Automatically Store Last Output in PowerShell
 date: 2018-10-19
-tags: powershell tips profile
+categories: [powershell]
+tags: [powershell, tips, profile]
 ---
 
 I'm sure we've all been there. Some command takes a solid 30s to run to completion, and then... just
