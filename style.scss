@@ -24,7 +24,7 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #ecf2fc;
+  background-color: $scrollbarColor;
 }
 
 body {
@@ -87,7 +87,7 @@ p {
 }
 
 a {
-  color: $blue;
+  color: $gold;
   text-decoration: none;
   cursor: pointer;
   //text-shadow: 0 0 2px rgba(0,20,40,0.3);
@@ -95,7 +95,7 @@ a {
   //box-shadow: 0 0 0 -2px transparent inset;
 
   &:hover, &:active {
-    color: $blue;
+    color: $brown;
     //text-shadow: 0 -0.025em 2px rgba(0,20,40,0.4);
     //box-shadow: 0 -0.15em 1px -1px rgba(65,131,196,0.6) inset;
   }
@@ -259,7 +259,7 @@ nav {
 
     @include mobile {
       margin: 0 10px;
-      color: $blue;
+      color: $gold;
     }
   }
 }
