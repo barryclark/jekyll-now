@@ -281,9 +281,17 @@ ul.projectList {
 
   li {
     &::before {
-      content: '—';
+      content: '— ';
       font-weight: bold;
     }
+  }
+}
+
+ul.listRecent {
+  list-style-type: none;
+
+  li a {
+    font-style: italic;
   }
 }
 
@@ -323,14 +331,6 @@ ul.projectList {
 
   .backToIndex {
     float: right;
-  }
-
-  &.list {
-    list-style-type: none;
-
-    li a {
-      font-style: italic;
-    }
   }
 }
 

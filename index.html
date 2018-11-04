@@ -16,27 +16,27 @@ layout: default
       <span class="dateStamp">{{ post.date | date: "%d %b, %Y" }}</span>
     </article>
   {% endfor %}
-</div>
 
-<div class="links">
+  <article class="links">
 
-  <h1>Projects</h1>
-  <ul class="projectList">
+    <h1>Projects</h1>
+    <ul class="projectList">
 
-    <li><a href="https://github.com/vexx32/PSKoans">PSKoans</a></li>
+      <li><a href="https://github.com/vexx32/PSKoans">PSKoans</a></li>
 
-  </ul>
+    </ul>
 
-</div>
+  </article>
 
-<div class="posts">
-  <h1>Recent Posts</h1>
-  <ul class="post list">
-    {% for post in site.posts offset:1 limit 3 %}
+  <article class="post">
+    <h1>Recent Posts</h1>
+    <ul class="listRecent">
+      {% for post in site.posts offset:1 limit 3 %}
 
-        <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> &mdash; {{ post.date | date: "%Y/%m/%d" }}</li>
+          <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> &mdash; {{ post.date | date: "%Y/%m/%d" }}</li>
 
-    {% endfor %}
-  </ul>
-  <a href="/index/" class="read-more">More Posts</a>
+      {% endfor %}
+    </ul>
+    <a href="/index/" class="read-more">More Posts</a>
+  </article>
 </div>
