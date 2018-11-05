@@ -108,7 +108,7 @@ RemoteAddress                  vs-in-f188
 0                              TCP    192.168.22.144:51546   vs-in-f188:5228        ESTABLISHED
 ```
 
-Interesting. You can see that _all_ our requested match groups are there, plus two extras. One of
+Interesting. You can see that _all_ our requested match groups are there, plus one extra. One of
 those is the result of the unnamed match group within the IP address match, and the other is the
 _full_ matched string. We're halfway there.
 
