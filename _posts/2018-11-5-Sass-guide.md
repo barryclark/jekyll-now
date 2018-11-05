@@ -74,5 +74,56 @@ $ sass --watch stylesheets/sass:stylesheets
 
 Также можно определить стиль вывода для CSS это делается с помощью `--style    `
 
-По 
+* По умолчанию `nested`. Вложенный стиль. Вложенность соответствует иерархии элементов `HTML`
 
+``` css
+ol {
+ margin: 10px 0;
+ padding: 10px 0; }
+  ol li {
+   font-size: 2em;
+   line-height: 1.4; }
+    ol li p {
+     color: #333; }
+```
+* `Expanded`. Выглядит как `CSS`, написанный вручную.
+
+``` css
+ol {
+margin: 10px 0;
+padding: 10px 0;}
+ol li {
+font-size: 2em;
+line-height: 1.4;
+}
+ol li p {
+color: #333;
+```
+* `Compact`. Правила `CSS` сгруппированы в одну строку, селекторы друг под другом.
+
+``` css
+ol { margin: 10px 0; padding: 10px 0; }
+ol li { font-size: 2em; line-height: 1.4; }
+ol li p { color: #333; }
+```
+```
+* `Compressed`. Все ненужные пробелы и переводы строк удалены для уменьшения размера выходного файла.
+
+```css
+ol{margin:10px 0;padding:10px 0;}ol li{font-size:2em;line-height:1.4;}ol li p{color:#333;}
+```
+
+## Используем SASS.
+
+### Вложенные правила.
+
+Вместо того, чтобы повторять селекторы  -- мы можем использовать вложенные правила в соответствие со структурой разметки `HTML`.
+
+``` html
+<header role="banner">
+	<div id="logo">
+		<img src="logo.png" alt="Sasquatch Records" />
+	</div>
+	<h1>Sasquatch Records</h1>
+</header>
+```
