@@ -3,6 +3,7 @@ layout: post
 title: California Public Enrollment Data
 categories: Education Data
 -
+During this cleaning I discover the Caifornia Deparment of Education (CDE) doesn't keep track of closed schools after some time. Since 1981, 322 schools have been forgotten. I was able to recover over 90% of these missing schools. The resulting dataset is publicly available for other analysts on Tableau and Kaggle.
 
 I recently read a helpful [article by John Sullivan](https://www.kdnuggets.com/2018/06/5-data-science-projects-hired.html) on skills to showcase for a career in data science. He describes data cleaning as requiring these skills:
 
@@ -15,13 +16,11 @@ I recently read a helpful [article by John Sullivan](https://www.kdnuggets.com/2
             <tr><td><a href="#impute">Imputing for missing values</a></td></tr>
             <tr><td><a href="#qa">Data quality assurance</a></td></tr>
         </table></div> 
-  <div style="vertical-align:top; display: inline-block; width:515px"><img src="/images/322schools.gif" style="margin-left:15%;margin-top:5%"/></div>
+  <div style="vertical-align:top; display: inline-block; width:400px"><img src="/images/322schools.gif" style="margin-left:15%;margin-top:5%"/></div>
 
-During this cleaning I discover the Caifornia Deparment of Education (CDE) doesn't keep track of closed schools after some time. Since 1981, 322 schools have been forgotten. 
+If you look at the national data, it is even worse. This seems a shame for people who attended those schools, even though they are closed now. 
 
-If you look at the national data, it is even worse. This seems a shame for people who attended to those schools, even though they are closed now. What if they are interested in how their school performed in the past stacked up against other schools? They will never know because CDE let their records rot. 
-
-In order to prepare data for enrollment analysis, I perform many of the cleaning tasks outlined above. Below I share the code and reasoning I used to perform these tasks.
+In order to prepare data for enrollment analysis, I perform many of the cleaning tasks outlined above. I merge yearly enrollment, english learner, free/reduced priced lunch, public/charter, and performance data to visualize trends over time. My cleaning steps are documented in this post.
 
 # Import<a name="import"></a>
 ## Download Files
