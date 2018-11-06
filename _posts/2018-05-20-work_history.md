@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 機械学習案件に携わってきてどんな理論的トピックを扱ってきたか 
-categories: ['雑談']
+categories: ['Machine Learning']
 ---
 
 ### TL;DR
