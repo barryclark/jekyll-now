@@ -1,7 +1,7 @@
 ---
 layout: post
 title: DLを誤認識させるノイズの話
-categories: ['ML paper']
+categories: ['Machine Learning']
 ---
 
 

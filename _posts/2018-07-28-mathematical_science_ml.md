@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 数理科学「機械学習の数理」を読んだ
-categories: ['ML paper']
+categories: ['Machine Learning']
 ---
 
 ### TL;DR

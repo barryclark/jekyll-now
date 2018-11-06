@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Deep Learning の汎化性能に関して論文を読んで発表した
-categories: ['ML paper']
+categories: ['Machine Learning']
 ---
 
 

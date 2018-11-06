@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 論文を読んだ際のメモをレポジトリの issue に残していくことにした
-categories: ['ML paper']
+categories: ['Machine Learning']
 ---
 
 

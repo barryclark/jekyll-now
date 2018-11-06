@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 論文読み会で発表したい人はそんなにいないのでは？という気付き
-categories: ['ML paper']
+categories: ['Machine Learning']
 ---
 
 ### TL;DR

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Deep Learning with Python を読んだ
-categories: ['ML paper']
+categories: ['Machine Learning']
 ---
 
 
