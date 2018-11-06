@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 機械学習をやる上で線形代数のどのような知識が必要になるのか
-categories: ['雑談']
+categories: ['Machine Learning']
 ---
 
 ### TL;DR

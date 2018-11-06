@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 機械学習の理論と実装はどう学んでいくと良いのだろうか
-categories: ['雑談']
+categories: ['Machine Learning']
 ---
 
 ### TL;DR

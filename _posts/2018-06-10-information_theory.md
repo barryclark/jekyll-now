@@ -1,7 +1,7 @@
 ---
 layout: post
 title: A Mini-Introduction To Information Theory を眺めてみた
-categories: ['雑談']
+categories: ['Machine Learning']
 ---
 
 ### TL;DR
