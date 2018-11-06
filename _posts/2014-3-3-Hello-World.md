@@ -6,7 +6,7 @@ permalink:
 
 Hi, my name is Nicolas Fabre.
 
-I started to get into programming in 2015 after finishing my master's degree in geograpy and working in Aix-en-Provence, France, at the regional planning and urbanism institute as a cartographic ingeener.
+I started to get into programming in 2015 after finishing my master's degree in geograpy and working in Aix-en-Provence, France, at the regional planning and urbanism institute as a cartographic engineer.
 
 After starting self-teaching web development, I attended and graduated in 2017 from
 [WebForce3](http://www.wf3.fr/pret-a-tout-changer/developpeur-symfony), a coding bootcamp introducing to HTML,
