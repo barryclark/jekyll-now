@@ -98,6 +98,11 @@ result in the user not being prompted by default when they should be. For exampl
 before attempting to change potentially sensitive system settings or overwriting large numbers of
 files.
 
+### Providing Nonsense or Incorrect Prompts
+
+I haven't seen this really done yet; most of the people who have explored far enough into writing
+a custom function know enough to avoid this almost instinctually.
+
 ## Properly Selecting Your ConfirmImpact Rating
 
 There are [four levels of impact](https://docs.microsoft.com/en-us/dotnet/api/system.management.automation.confirmimpact?view=powershellsdk-1.1.0):
@@ -166,12 +171,14 @@ function Invoke-Decimation {
                 Get-ChildItem -Path $Path -File -Recurse |
                     Where-Object { (Get-Random -Min 1 -Max 11) % 10 -eq 0 } |
                     Remove-Item -Confirm:$false
+            }
         }
         $false {
             if ($PSCmdlet.ShouldProcess($Path, 'Decimate the contained files.')) {
                 Get-ChildItem -Path $Path -File |
                     Where-Object { (Get-Random -Min 1 -Max 11) % 10 -eq 0 } |
                     Remove-Item -Confirm:$false
+            }
         }
     }
 }
@@ -187,4 +194,12 @@ A few notes about the structure of this function:
     * `ShouldContinue`: Unequivocally prompts for confirmation. These prompts _cannot be suppressed_, even with `-Confirm:$false`, so use them only where it is **unquestionably** necessary for the user to be prompted for the action.
         * Be especially cautious, as using this can render this code path _unusable_ in noninteractive (e.g., remoting) scenarios, as there is no way to suppress the prompt.
 
+### ShouldProcess Overloads
 
+[`$PSCmdlet.ShouldProcess()`](https://docs.microsoft.com/en-us/dotnet/api/system.management.automation.cmdlet.shouldprocess?view=powershellsdk-1.1.0)
+and [`.ShouldContinue()`](https://docs.microsoft.com/en-us/dotnet/api/system.management.automation.cmdlet.shouldcontinue?view=powershellsdk-1.1.0)
+have several overloads available, each of which is detailed on their respective documentation pages.
+
+In most circumstances, I would recommend using the simpler overloads, with one or two parameters
+&mdash; `ShouldProcess([string] $target)` or `ShouldProcess([string] $target, [string] $action)`.
+Always provide enough information for the user to understand the action that is taking place.
