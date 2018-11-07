@@ -4,12 +4,11 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+
+This blog aims as a learning media for those who have an interest in computers from beginners to experts, especially for those who live in Indonesia.
+
+This blog is Indonesian
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
-
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+I am only a beginner who wants to share knowledge
