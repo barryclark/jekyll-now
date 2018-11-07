@@ -16,7 +16,8 @@ the ways you can get it terribly wrong, and then how you _need_ to be doing it.
 ## What is ShouldProcess
 
 `ShouldProcess` is a property that can be applied to ythe `[CmdletBinding()]` property, which is
-used by PowerShell to keep track of what is and isn't important.
+used by PowerShell to keep track of what is and isn't important, or more importantly, which commands
+may be _dangerous_ to use.
 
 ## What to Avoid
 
