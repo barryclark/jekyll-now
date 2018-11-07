@@ -38,7 +38,7 @@ Finally, Andrew Jefferson from Neo4j told us about creating Kubernetes operators
 
 ## Cloud Native London December
 
-The next meetup is on Wednesday 12 December, and joining us are some great speakers from Paybase, Double Negative, and Google. Note that we'll be hosted by Mondo for our last meetup of 2018. [RSVP and save the date now!](https://www.meetup.com/Cloud-Native-London/events/253873413/)
+The next meetup is on Wednesday 12 December, and joining us are some great speakers from Paybase, Double Negative, and Google. Note that we'll be hosted by Monzo for our last meetup of 2018. [RSVP and save the date now!](https://www.meetup.com/Cloud-Native-London/events/253873413/)
 
 See you soon!
 
