@@ -19,7 +19,7 @@ the ways you can get it terribly wrong, and then how you _need_ to be doing it.
 used by PowerShell to keep track of what is and isn't important, or more importantly, which commands
 may be _dangerous_ to use.
 
-## What to Avoid
+## Bad Implementation Patterns
 
 ### Manually Defining `-WhatIf` or `-Confirm`
 
