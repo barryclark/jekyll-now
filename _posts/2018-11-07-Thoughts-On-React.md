@@ -1,3 +1,8 @@
+---
+layout: post
+title: Thoughts on React
+---
+
 At Flatiron, we've been working with React for about a week and half, and we had our code challenge on it today. Considering this milestone, and that we'll be graduating in exactly one month from now (OMG), I'd like to take this opportunity to write my opinions on React so far. 
 
 ## UI Elements & Nothing More
