@@ -27,6 +27,8 @@ Following that, Tom Wilkie from Grafana Labs presented Cortex: Horizontally Scal
 * Cortex is a CNCF sandbox project.
 * Cortex is awesome!
 
+See his slides [here](https://www.slideshare.net/grafana/cortex-horizontally-scalable-highly-available-prometheus)
+
 ![Andrew Jefferson](https://pbs.twimg.com/media/DrbV64oXcAAMvg0.jpg)
 
 Finally, Andrew Jefferson from Neo4j told us about creating Kubernetes operators for fun and profit, and in his experience:
