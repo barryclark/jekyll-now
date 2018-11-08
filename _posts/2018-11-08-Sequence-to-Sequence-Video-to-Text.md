@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Paper Review 5: Sequence to Sequence – Video to Text"
-published: true
 ---
 
 2018/11/08
