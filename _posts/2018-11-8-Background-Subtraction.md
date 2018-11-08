@@ -23,6 +23,7 @@ If we keep track of the mean and variance of the distribution we can separte the
  
  ![alt text](https://blog.kickview.com/content/images/2017/08/bg_img_1.jpg)
  
+ ## Implementation
  # OpenCV 
  
  *Opencv Library has implemented few of the background subtraction algorithm based on Gaussina Mixture Model and Bayesian Segmentation.*
