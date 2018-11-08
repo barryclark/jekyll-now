@@ -3,7 +3,7 @@ layout: post
 title: "[Slides] [Oct 2018]  Keynote: Crossing the chasm with cloud native"
 ---
 
-![Cheryl Hung, Crossing the chasm with cloud native]({{site.baseurl}}/images/2018-10-10-pic1.jpg)
+<iframe width="700px" height="394px" src="https://www.youtube.com/embed/IvoCWfBbeqo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 These are my slides from my keynote on "Crossing the chasm with cloud native", which I delivered at Open FinTech Forum in New York on Wednesday October 10, 2018.
 
@@ -12,6 +12,8 @@ These are my slides from my keynote on "Crossing the chasm with cloud native", w
         This browser does not support PDFs. Please download the PDF to view it: <a href="http://www.oicheryl.com/resources/2018-10-10-crossing-the-chasm.pdf">Download PDF</a>.
     </embed>
 </object>
+
+![Cheryl Hung, Crossing the chasm with cloud native]({{site.baseurl}}/images/2018-10-10-pic1.jpg)
 
 I also participated in the Forum "Real-World Kubernetes Use Cases in Financial Services: Lessons Learned".
 
