@@ -2,8 +2,10 @@
 layout: post
 title: California Public Enrollment Data
 categories: Education Data
--
-During this cleaning I discover the Caifornia Deparment of Education (CDE) doesn't keep track of closed schools after some time. Since 1981, 322 schools have been forgotten. I was able to recover over 90% of these missing schools. The resulting dataset is publicly available for other analysts on Tableau and Kaggle.
+---
+During this cleaning I discover the Caifornia Deparment of Education (CDE) doesn't keep track of closed schools after some time. Since 1981, over 1000 schools have been forgotten. If you look at the national data, it is even worse. This seems a shame for people who attended those forgotten schools. 
+
+I was able to recover over 95% of these missing schools. The resulting dataset is publicly available for other analysts on Tableau and Kaggle. 
 
 I recently read a helpful [article by John Sullivan](https://www.kdnuggets.com/2018/06/5-data-science-projects-hired.html) on skills to showcase for a career in data science. He describes data cleaning as requiring these skills:
 
@@ -16,11 +18,9 @@ I recently read a helpful [article by John Sullivan](https://www.kdnuggets.com/2
             <tr><td><a href="#impute">Imputing for missing values</a></td></tr>
             <tr><td><a href="#qa">Data quality assurance</a></td></tr>
         </table></div> 
-  <div style="vertical-align:top; display: inline-block; width:400px"><img src="/images/322schools.gif" style="margin-left:15%;margin-top:5%"/></div>
+  <div style="vertical-align:top; display: inline-block; width:400px"><img src="/images/1000schools.gif" style="margin-left:15%;margin-top:5%"/></div>
 
-If you look at the national data, it is even worse. This seems a shame for people who attended those schools, even though they are closed now. 
-
-In order to prepare data for enrollment analysis, I perform many of the cleaning tasks outlined above. I merge yearly enrollment, english learner, free/reduced priced lunch, public/charter, and performance data to visualize trends over time. My cleaning steps are documented in this post.
+In order to prepare enrollment data for analysis, I perform many of the cleaning tasks outlined above. I merge yearly enrollment, english learner, free/reduced priced lunch, public/charter, and performance data to visualize trends over time. My cleaning steps are documented in this post.
 
 # Import<a name="import"></a>
 ## Download Files
@@ -42,7 +42,7 @@ DT.list <- lapply(file.list, read.csv, header=TRUE, check.names=FALSE)
 ```
 
 ## File Lists
-I use naming conventions to differentiate files with slightly different structure that needed to be modifed to combine them into a single data table. Then I use regex to collect files of similar type into file lists. I use lapply to perform read.table on all of the files and put the resulting data frames in a list. Each list of data frames is named by year and actions are performed on their columns en masse.
+I use naming conventions to differentiate files with slightly different structure that need to be modifed in order to combine them into a single data table. Then I use regex to collect files of similar type into file lists. I use lapply to perform read.table on all of the files and put the resulting data frames in a list. Each list of data frames is named by year and actions are performed on their columns en masse.
 
 For example, with the EL data that was in .csv format we find that '80 contained a duplicate CDS_CODE column that needed to be removed. Notice that I remove that column before renaming all of the columns and combining the data frames into one data table with [rbindlist](https://www.rdocumentation.org/packages/data.table/versions/1.11.8/topics/rbindlist) from the data.table package.
 
@@ -61,7 +61,7 @@ rbindlist is significantly [faster than rbind](https://stackoverflow.com/questio
 CDE does include a file structure file for each individual file, so I look through these to find some structural changes to the data. At times these structure files are incomplete or incorrect.
 
 ## Enrollment
-With enrollment data, structural changes create 5 timespans: 1981-1992, 1993-1997, 1998-2006, 2007-2008, 2009-2017. The primary difference is that ETHNIC categories change as discussed in my post on [Enrollments by Ethnicity]().
+With enrollment data, structural changes create 5 timespans: 1981-1992, 1993-1997, 1998-2006, 2007-2008, 2009-2017. The primary difference is that ETHNIC categories change as discussed in my post on [Enrollments by Ethnicity](https://evanrushton.github.io/CA-ethnic/).
 Additionally there are historical enrollment files from 1948-1980, however they don't include many variables. 1948-1969 seperate grades and gender, 1970-1976 seperate gender, 1977-1980 only have county-level enrollment (no School-level data, no ethinicities).
 
 ### CDS_CODE
@@ -208,68 +208,98 @@ The list in 2017 needs to be seperated into a more human readable format to comp
 
 To merge the different acronyms for the Welfare system, we rename them all WELFARE. California Work Opportunity and Responsibility to Kids (CalWORKs) was formerly Aid to Families with Dependent Children (AFDC) and more recently is called CALPADS.
 
-To account for adjusted/unadjusted, after reading (this place), could make similar adjustments for prior years? Or drop one of them entirely.
+To account for adjusted/unadjusted, after reading [2013-14 file structure](https://www.cde.ca.gov/ds/sd/sd/fssp1314.asp), post-2013 is using the adjusted value. Before that, we only have one to use, so we keep adjusted and check if it looks reasonable with the prior years.
 
 
 # Missing Values<a name="missing"></a>
-Since CDE doesn't keep complete records at https://www.cde.ca.gov/ds/si/ds/pubschls.asp, we did our best to heal rows of schools with undefined CDS_CODEs.
+Since CDE doesn't keep complete records at https://www.cde.ca.gov/ds/si/ds/pubschls.asp, I attempted to heal rows of schools with undefined CDS_CODEs.
 
-I was able to recover many lost (County, District, School) names after 1996 for ~200 schools (roughly 42k rows) because Enr81To92.txt contains SchoolName and DistrictName fields.
+I was able to recover many lost (County, District, School) names since 1981 for 970 schools (~75k rows) because enrollment data from 81-92 and 07-17 contains CDS information that is no longer stored in the pubschls record.
 
-The script to recover the CDS is included below, Much of this code duplication could have been avoided by placing the data.tables in a list. However, the counts in the comments show how **this process was able to recover over 90% of the missing CDS values.** The meat of the recovery lies within the recoverLostCDS() function,
+The script to recover the CDS is included below, the counts in the comments show how **this process was able to recover over 95% of the missing CDS values.** 970 county, district, school labels were recovered from 1010 unlabeled schools.
 
 ```R
-#================== Check NA values =============================
-#Note that NA values 92, 97, 08 are mainly explained by unlabeled CDS_CODES with enrollment data 
-#poor merging C, D, S by CDS_Code (probably closed schools)
+## Healing missing CDS codes
+cdsna92 <- unique(subset(DT92, is.na(SCHOOL), select=CDS_CODE)) # 226 unlabeled schools
+cdsna08 <- unique(subset(DT08, is.na(SCHOOL), select=CDS_CODE)) # 556 unlabeled schools
+cdsna17 <- unique(subset(DT17, is.na(SCHOOL), select=CDS_CODE)) # 779 unlabeled schools
+cdsna06 <- unique(subset(DT06c, is.na(SCHOOL), select=CDS_CODE)) # 514 unlabeled schools
+cdsna97 <- unique(subset(DT97c, is.na(SCHOOL), select=CDS_CODE)) # 202 unlabeled schools
+length(union(union(union(union(cdsna06$CDS_CODE, cdsna97$CDS_CODE), cdsna92$CDS_CODE), cdsna08$CDS_CODE), cdsna17$CDS_CODE)) # total 1010 unlabeled schools
+setkey(cdsna92, CDS_CODE); setkey(cdsna08, CDS_CODE); setkey(cdsna17, CDS_CODE)
+setkey(DT92, CDS_CODE); setkey(DT08, CDS_CODE); setkey(DT17, CDS_CODE)
 
-sapply(DT92, function(y) sum(length(which(is.na(y))))) # 16387 CDS_CODEs to merge with C, D, S (not contained in cds of pubschls.txt)
-sapply(DT97, function(y) sum(length(which(is.na(y))))) # 9431 CDS_CODEs to merge with C, D, S (not contained in cds of pubschls.txt)
-sapply(DT08, function(y) sum(length(which(is.na(y))))) # 20295 CDS_CODEs to merge (not contained in cds of pubschls.txt) and 173 NA rows to inspect/remove, 
-sapply(DT16, function(y) sum(length(which(is.na(y))))) # 653 NA rows to inspect/remove
+cds92 <- recoverLostCDS92(DT92, sch) # 226 recovered District/School for NA
+cds08 <- DT08[which(!duplicated(DT08$CDS_CODE)),.(CDS_CODE, i.COUNTY, i.DISTRICT, i.SCHOOL)][cdsna08] # 556 recovered
+cds17 <- DT17[which(!duplicated(DT17$CDS_CODE)),.(CDS_CODE, i.COUNTY, i.DISTRICT, i.SCHOOL)][cdsna17] # 779 recovered
 
-#Recover lost CDS labels from '92 data
-cds92 <- recoverLostCDS(DT92, sch) # 229 recovered
-setkey(cds92, CDS_CODE)
-DT92[, SchoolName := NULL]; DT92[, DistrictName := NULL] # Remove S,D cols AFTER recover function above
-joinRecoveredCDS(DT92, cds92)
-joinRecoveredCDS(DT97, cds92)
-joinRecoveredCDS(DT08, cds92)
+setcolorder(cds92, c("CDS_CODE", "COUNTY", "DISTRICT", "SchoolName"))
+names(cds92)[4] <- "SCHOOL"
+names(cds08)[2:4] <- c("COUNTY", "DISTRICT", "SCHOOL")
+names(cds17)[2:4] <- c("COUNTY", "DISTRICT", "SCHOOL")
+cds_new <- rbind(cds92, cds08, cds17)
+setkey(cds_new, CDS_CODE)
+cds_new <- cds_new[which(!duplicated(CDS_CODE)),] # 970 recovered schools
 
-sapply(DT92, function(y) sum(length(which(is.na(y))))) # All filled
-sapply(DT97, function(y) sum(length(which(is.na(y))))) # 268 CDS_CODEs without C, D, S
-sapply(DT08, function(y) sum(length(which(is.na(y))))) # 4013 CDS_CODEs without C, D, S
-
-recoverLostCDS <- function(DT92, sch) {
+recoverLostCDS92 <- function(DT92, sch) {
   cdsna92 <- unique(subset(DT92, is.na(SCHOOL), select=CDS_CODE)) # unlabeled schools
   setkey(cdsna92, CDS_CODE)
   setkey(DT92, CDS_CODE)
-  cds92 <- unique(DT92[,.(CDS_CODE, DistrictName, SchoolName)])[cdsna92] # recovered District/School for NA
-  #Recover COUNTY field
+  cds92 <- DT92[which(!duplicated(DT92$CDS_CODE)),.(CDS_CODE, DistrictName, SchoolName)][cdsna92] # recovered District/School for NA
+  # Recover COUNTY field
   countyDist <- sch[,.(COUNTY, DISTRICT)]
   setkey(countyDist, DISTRICT)
   countyDist <- unique(countyDist)
-  #Remove "Elementary" and "High" from DISTRICT and DistrictName to increase matches
+  # Remove "Elementary" and "High" from DISTRICT and DistrictName to increase matches
   countyDist[,DISTRICT:=sapply(as.character(DISTRICT), removeWords, stopwords = c("Elementary", "High"))]
   cds92[,DistrictName:=sapply(as.character(DistrictName), removeWords, stopwords = c("Elementary", "High"))]
   setkey(countyDist, DISTRICT)
   countyDist <- unique(countyDist) # Remove duplicate districts (used to have elem + high)
   setkey(cds92, DistrictName)
   cds92 <- countyDist[cds92]
-  #Missing Districts 
+  # Remove extra rows
+  cds92 <- cds92[-which(cds92$DISTRICT == "Pleasant Valley" & cds92$COUNTY == "Ventura" | cds92$DISTRICT == "Washington Union" & cds92$COUNTY == "Monterey")]
+  # Missing Districts 
   missdist <- c("Madera", "Contra Costa", "Orange", "San Diego", "Santa Barbara", "Santa Barbara", "Santa Barbara", "Santa Barbara", "Santa Barbara", "Santa Barbara", "Santa Barbara", "Santa Barbara", "Santa Barbara", "Santa Barbara", "Santa Barbara")
   cds92[which(is.na(COUNTY)), COUNTY:=missdist]
   return(cds92)
 }
 ```
 
+Note for the future: much of this code duplication could have been avoided by placing the data.tables in a list.
+
 # Detecting anomalies<a name="anomalies"></a>
+
+## Changing Levels
+Over the years there have been formatting changes smaller than new categories, that ostensibly cause the same trouble when trying to merge data across years. Things like the names of schools, the capitalization of Counties, or even the punctuation around fields have changed from 1980 - 2018. For the fields that are constant across years, I create a source of truth public schools table that contains what is available at cde, as well as what was healed. 
+
+```R
+cds <- rbind(cds, cds_new) # 17565
+cds <- cds[-which(is.na(cds$COUNTY))] # remove 2 NA
+
+# Write cds_master list
+write.csv2(cds, "./Transformed_Data/CA/cds_master.csv", na = "NA", row.names = FALSE)
+```
+
+This means it only contains CDS, COUNTY, DISTRICT, SCHOOL. Other factors will have less complete rows. For example, when we merge Charter information or if we use lat/lon then we will lose the 970 schools we recovered.
+
+However, using these county, district, school names makes for unified categories across years.
+
+## Extreme Values
+
+Looking at the levels and ranges of each variable we can find any outliers.
+
+
+
 # Imputing for missing values<a name="impute"></a>
-Aside for recovering some lost data from missing values
+
+    Dropped missing values rather than imputing
+
 # Data quality assurance<a name="qa"></a>
+We can check that the number of counties is correct, and in each case that the number of levels for each factor is appropriate. This process is ongoing during the data transformation steps to ensure that every year of data is structured properly.
+
+Checking the names of our variables and that the levels they contain have remained consistent after transformations is a necessary last step. Now that we have cleaned data merged into a master dataset, I look forward ot see what others find in the data.
 
     Check variables in the header row
     
-    Dropped missing values rather than imputing
-    Merged various tables to create a larger dataset for visualizations and analysis
     
