@@ -1,7 +1,7 @@
 
-pre.highlight {
+pre {
   color: #ddd;
-  background-color: #202040;
+  background-color: #101010;
   padding: 7px 7px 7px 10px;
   border: 2px solid #0063B1;
   border-top-width: 12px;
@@ -12,7 +12,7 @@ pre.highlight {
   overflow: auto;
 
   &::-webkit-scrollbar {
-    background-color: #202040;
+    background-color: #101010;
     width: 0.6em;
     height: 0.6em;
   }
@@ -21,12 +21,21 @@ pre.highlight {
     background-color: transparent;
     border-radius: 1em;
   }
+
   &:hover::-webkit-scrollbar-thumb {
     border: 2px solid #002040;
     background-color: #0063B1;
   }
-}
 
+  &.highlight {
+    color: #ddd;
+    background-color: #202040;
+
+    &::-webkit-scrollbar {
+      background-color: #202040;
+    }
+  }
+}
 
 code {
   font-family: Consolas, Monaco, monospace;

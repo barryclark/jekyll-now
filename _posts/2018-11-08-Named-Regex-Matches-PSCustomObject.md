@@ -158,7 +158,9 @@ is that the order of the properties is not preserved, because `$Matches` is a ha
 to define a specific display order, we have two fairly simple options.
 
 One is to insert a `PSTypeName` property and add a formatting hint for that type name in order to
-specify the order the properties are displayed in.
+specify the order the properties are displayed in. More on that can be found in
+[this post](https://kevinmarquette.github.io/2016-10-28-powershell-everything-you-wanted-to-know-about-pscustomobject/#pstypename-for-custom-object-types)
+by Kevin Marquette.
 
 The other option is to define a class with these properties and cast the hashtable to that class
 type instead of `[PSCustomObject]`.
