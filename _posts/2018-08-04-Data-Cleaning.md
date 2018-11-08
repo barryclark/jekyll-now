@@ -3,6 +3,9 @@ layout: post
 title: California Public Enrollment Data
 categories: Education Data
 ---
+
+![dataCleaning](/images/dataCleaning.jpg)
+
 During this cleaning I discover the Caifornia Deparment of Education (CDE) doesn't keep track of closed schools after some time. Since 1981, over 1000 schools have been forgotten. If you look at the national data, it is even worse. This seems a shame for people who attended those forgotten schools. 
 
 I was able to recover over 95% of these missing schools. The resulting dataset is publicly available for other analysts on Tableau and Kaggle. 
