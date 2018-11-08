@@ -23,14 +23,9 @@ If we keep track of the mean and variance of the distribution we can separte the
  
  ![alt text](https://blog.kickview.com/content/images/2017/08/bg_img_1.jpg)
  
- 
- 
- 
- 
- # OpenCV
- 
- *Opencv Library has implemented few of the background subtraction algorithm based on Gaussina Mixture Model and Bayesian Segmentation.*
 
+# OpenCV
+ *Opencv Library has implemented few of the background subtraction algorithm based on Gaussina Mixture Model and Bayesian Segmentation.*
 
 An usual applicable assumption is that the images of the scene without the intruding objects exhibit some regular behavior that can be well described by a statistical model. If we have a statistical model of the scene, an intruding object can be detected by spotting the parts of the image that don't fit the model.
 
