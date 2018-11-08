@@ -3,7 +3,6 @@ layout: post
 title: Background Subtraction
 ---
 
-# Background-Subtraction
 Background Subtraction is widely used in motion tracking and analysis. This is my work on differnt Background Subtraction algorithms.
 
 # Getting Started
