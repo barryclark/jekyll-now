@@ -150,7 +150,8 @@ function DrawText([string] $Text, [Font] $Font, [Color] $TextColor, [Color] $Bac
 }
 ```
 
-And now that we're all done there, let's see a condensed version without the comments:
+And now that we're all done there, let's see a condensed and slightly refactored version without
+the comments:
 
 ```powershell
 function DrawText([string] $Text, [Font] $Font, [Color] $TextColor, [Color] $BackColor) {
