@@ -8,7 +8,7 @@ categories: Education Data
 
 During this cleaning I discover the Caifornia Deparment of Education (CDE) doesn't keep track of closed schools after some time. Since 1981, over 1000 schools have been forgotten. If you look at the national data, it is even worse. This seems a shame for people who attended those forgotten schools. 
 
-I was able to recover over 95% of these missing schools. The resulting dataset is publicly available for other analysts on Tableau and Kaggle. 
+I was able to recover over 95% of these missing schools. The resulting dataset is publicly available for other analysts on Tableau. 
 
 I recently read a helpful [article by John Sullivan](https://www.kdnuggets.com/2018/06/5-data-science-projects-hired.html) on skills to showcase for a career in data science. He describes data cleaning as requiring these skills:
 
@@ -284,9 +284,11 @@ cds <- cds[-which(is.na(cds$COUNTY))] # remove 2 NA
 write.csv2(cds, "./Transformed_Data/CA/cds_master.csv", na = "NA", row.names = FALSE)
 ```
 
-This means it only contains CDS, COUNTY, DISTRICT, SCHOOL. Other factors will have less complete rows. For example, when we merge Charter information or if we use lat/lon then we will lose the 970 schools we recovered.
+This means it only contains CDS, COUNTY, DISTRICT, SCHOOL. Other factors will have less complete rows. For example, when we merge Charter information or if we use lat/long then we will lose the 970 schools we recovered.
 
 However, using these county, district, school names makes for unified categories across years.
+
+The cds_master list is used with the EL data and since the Language category has changed over the years, I wrote a languageFromLC function to make the language categories consistent.
 
 ## Extreme Values
 
