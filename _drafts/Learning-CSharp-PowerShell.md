@@ -3,7 +3,7 @@ layout: post
 title: Learning C# By Translating For PowerShell
 date:
 categories: [powershell, csharp]
-tags: [powershell, csharp, function, translation]
+tags: [powershell, csharp, function, translation, 'export-png']
 ---
 
 ## C# and PowerShell
