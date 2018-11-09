@@ -15,9 +15,21 @@ Here, you'll find all of ACM AI's content over the years, including code, blog p
 #### Workshop #2: Math and Coding Overview
 - [Slides](https://docs.google.com/presentation/d/1QhcoBEAXzsa1ign-zDemErJw5t_AibPaXT1owzcVRp0/edit?usp=sharing)
 
+#### Workshop #3: Linear Regression
+- [Slides](https://docs.google.com/presentation/d/1zmOeMSZTN2NrA4XVpaLZjqMkaNyK8bHV5VVp6O0e22I/edit?usp=sharing)
+
+#### Workshop #4: Linear Regression: Code
+- [Slides](https://docs.google.com/presentation/d/1R2m3STUJoLOl_15wqKSNlBCn-HT0AiGvzb9N8kaCzxg/edit?usp=sharing)
+
 ### Advanced Track
-#### Workshop #1: Neural Networks
+#### Workshop #1: ML Review + Neural Networks
 - [Slides](https://docs.google.com/presentation/d/1JVEZSA4UScSThdOaR51IlqBB1RpjshsdwMmrmym82vg/edit?usp=sharing)
+
+#### Workshop #2: Neural Networks
+- [Slides](https://docs.google.com/presentation/d/1N4daeEii5rtRSXtHIZu0txGcWr2FU6VJRLi1NaeML2E/edit?usp=sharing)
+
+#### Workshop #3: Neural Networks: Code
+- [Slides](https://docs.google.com/presentation/d/14ZEXUuaXNfD2JCXuEwO3zlEPTR-3Heq0Afk0day1NmU/edit?usp=sharing)
 
 ## Spring 2018
 
