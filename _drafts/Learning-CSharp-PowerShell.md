@@ -9,14 +9,21 @@ tags: [powershell, csharp, function, translation, 'export-png']
 ## C# and PowerShell
 
 PowerShell is built directly on top of C#, written in C#, and has access to almost everything that
-.NET can give you.
+.NET can give you. As a result, a lot of PowerShell syntax has very similar C# analogues, and much
+of C# can be translated into usable PowerShell code without much hassle.
+
+Of course, you can also work with `Add-Type` to simply execute arbitrary C# code for you to work
+with from PS if you want, but for our purposes we'll be doing direct translating so that you can see
+how the two languages relate to one another, and how similar tokens look a little different in each
+language.
 
 ## Let's Get Translating
 
 ### Finding Code to Work With
 
-This code came from [a StackOverflow answer](https://stackoverflow.com/questions/6826921/write-text-on-an-image-in-c-sharp)
-asking about a similar goal; writing text over an image.
+This code came from [a StackOverflow answer](https://stackoverflow.com/questions/2070365/how-to-generate-an-image-from-text-on-fly-at-runtime)
+asking about a similar goal; creating an image from text input. We can do a very near-direct
+translation of this method to a PowerShell function.
 
 ```csharp
 private Image DrawText(String text, Font font, Color textColor, Color backColor)
@@ -51,8 +58,41 @@ private Image DrawText(String text, Font font, Color textColor, Color backColor)
     drawing.Dispose();
 
     return img;
-
 }
+```
+
+### The Method Signature
+
+```csharp
+private Image DrawText(String text, Font font, Color textColor, Color backColor)
+```
+
+In C#, this is known as a _method signature_. You can think of it a bit like a `param()` block in
+PowerShell. In fact, this could be used almost directly in PowerShell as a simple function, but I
+think it's more worthwhile to convert this to a `param()` block so that we can work with the
+PowerShell pipeline.
+
+#### Let's Break it Down
+
+* `private`: This is an _access modifier_, preventing anything outside the class from accessing the following property or method. **Remove** these, as they are not valid in PowerShell.
+* `Image`, `String`, `Font`, `Color`: These are _type declarations_, which are directly analogous to `[string]` and so forth in PowerShell, and we can translate them as such.
+  * These type names are _not fully qualified_, and don't mention the namespace they belong to. Sometimes you'll have to Google for these, but these are kept in `System.Drawing`. We can keep the short names in PS 5 and up by declaring `using namespace System.Drawing`. In this case, `System.Drawing` isn't an assembly that's loaded by default, so we _also_ need to call `Add-Type -AssemblyName System.Drawing`.
+* `DrawText( ... )`: This is the method name and parameters.
+* `String text`, `Font font`, etc.: These are the method parameter names and their types, as mentioned above. These will be replaced with PowerShell **variables** and type declarations.
+
+_Converting_ this is relatively straightforward. Let's do it step by step.
+
+##### Step 1: Simple Function
+
+Here, we'll just get as-close-as-possible PowerShell code by converting each of the aforementioned
+pieces of the method signature in turn:
+
+```csharp
+private Image DrawText(String text, Font font, Color textColor, Color backColor)
+```
+
+```powershell
+function DrawText([string] $text, [Font] $font, [Color] $textColor, [Color] $backColor) { }
 ```
 
 ## The Finished Product
