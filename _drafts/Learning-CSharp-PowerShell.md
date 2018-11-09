@@ -84,15 +84,96 @@ _Converting_ this is relatively straightforward. Let's do it step by step.
 
 ##### Step 1: Simple Function
 
-Here, we'll just get as-close-as-possible PowerShell code by converting each of the aforementioned
-pieces of the method signature in turn:
-
-```csharp
-private Image DrawText(String text, Font font, Color textColor, Color backColor)
-```
+Here, we'll just get as-close-as-possible PowerShell code by first converting each of the
+aforementioned pieces of the method signature, then doing a quick skim through the function. I'll
+leave the C# lines in as comments so you can see the direct comparison and conversion.
 
 ```powershell
-function DrawText([string] $text, [Font] $font, [Color] $textColor, [Color] $backColor) { }
+# private Image DrawText(String text, Font font, Color textColor, Color backColor)
+function DrawText([string] $Text, [Font] $Font, [Color] $TextColor, [Color] $BackColor) {
+    <# NOTE: C# uses the same syntax for static and non-static properties and methods;
+       Some things will need you to look up the method to determine its nature. #>
+
+    # Image img = new Bitmap(1, 1);
+    # Graphics drawing = Graphics.FromImage(img);
+    [Image] $Img = [Bitmap]::new(1, 1)
+    [Graphics] $Drawing = [Graphics]::FromImage($Img)
+    <#
+        Remember:
+            new Obj()      => [Obj]::new()
+            Class.Static() => [Class]::Static()
+
+        C# often carries the convention that static methods and class names are PascalCase, while
+        variables are lowercase or camelCase. This can help in determining which is which.
+    #>
+
+    # SizeF textSize = drawing.MeasureString(text, font);
+    [SizeF] $TextSize = $drawing.MeasureString($Text, $Font)
+    <#
+        Remember:
+            var.Method()   => $var.Method()
+    #>
+
+    # img.Dispose();
+    # drawing.Dispose();
+    $Img.Dispose()
+    $Drawing.Dispose()
+
+    # img = new Bitmap((int) textSize.Width, (int)textSize.Height);
+    # drawing = Graphics.FromImage(img);
+    $Img = [Bitmap]::new([int] $TextSize.Width, [int]$TextSize.Height)
+    $Drawing = [Graphics]::FromImage($img)
+    <#
+        Remember:
+            (castType) value => [castType] $value
+    #>
+
+    # drawing.Clear(backColor);
+    $Drawing.Clear($BackColor)
+
+    # Brush textBrush = new SolidBrush(textColor);
+    [Brush] $TextBrush = [SolidBrush]::new($TextColor)
+
+    # drawing.DrawString(text, font, textBrush, 0, 0);
+    $Drawing.DrawString($Text, $Font, $TextBrush, 0, 0)
+
+    # drawing.Save();
+    $Drawing.Save()
+
+    # textBrush.Dispose();
+    # drawing.Dispose();
+    $TextBrush.Dispose()
+    $Drawing.Dispose()
+
+    # return img;
+    $Img # 'return' is usually not needed in PS at all, we can just drop it to function output!
+}
+```
+
+And now that we're all done there, let's see a condensed version without the comments:
+
+```powershell
+function DrawText([string] $Text, [Font] $Font, [Color] $TextColor, [Color] $BackColor) {
+    [Image] $Img = [Bitmap]::new(1, 1)
+    [Graphics] $Drawing = [Graphics]::FromImage($Img)
+    [SizeF] $TextSize = $drawing.MeasureString($Text, $Font)
+
+    $Img.Dispose()
+    $Drawing.Dispose()
+
+    $Img = [Bitmap]::new([int] $TextSize.Width, [int]$TextSize.Height)
+    $Drawing = [Graphics]::FromImage($img)
+    [Brush] $TextBrush = [SolidBrush]::new($TextColor)
+
+    $Drawing.Clear($BackColor)
+    $Drawing.DrawString($Text, $Font, $TextBrush, 0, 0)
+    $Drawing.Save()
+
+    $TextBrush.Dispose()
+    $Drawing.Dispose()
+
+    $Img
+}
 ```
 
 ## The Finished Product
