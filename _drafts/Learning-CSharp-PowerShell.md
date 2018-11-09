@@ -19,30 +19,40 @@ This code came from [a StackOverflow answer](https://stackoverflow.com/questions
 asking about a similar goal; writing text over an image.
 
 ```csharp
-string firstText = "Hello";
-string secondText = "World";
-
-PointF firstLocation = new PointF(10f, 10f);
-PointF secondLocation = new PointF(10f, 50f);
-
-string imageFilePath = @"path\picture.bmp";
-
-Bitmap newBitmap;
-using (var bitmap = (Bitmap)Image.FromFile(imageFilePath))//load the image file
+private Image DrawText(String text, Font font, Color textColor, Color backColor)
 {
-    using(Graphics graphics = Graphics.FromImage(bitmap))
-    {
-        using (Font arialFont =  new Font("Arial", 10))
-        {
-            graphics.DrawString(firstText, arialFont, Brushes.Blue, firstLocation);
-            graphics.DrawString(secondText, arialFont, Brushes.Red, secondLocation);
-        }
-    }
-    newBitmap = new Bitmap(bitmap);
-}
+    //first, create a dummy bitmap just to get a graphics object
+    Image img = new Bitmap(1, 1);
+    Graphics drawing = Graphics.FromImage(img);
 
-newBitmap.Save(imageFilePath);//save the image file
-newBitmap.Dispose();
+    //measure the string to see how big the image needs to be
+    SizeF textSize = drawing.MeasureString(text, font);
+
+    //free up the dummy image and old graphics object
+    img.Dispose();
+    drawing.Dispose();
+
+    //create a new image of the right size
+    img = new Bitmap((int) textSize.Width, (int)textSize.Height);
+
+    drawing = Graphics.FromImage(img);
+
+    //paint the background
+    drawing.Clear(backColor);
+
+    //create a brush for the text
+    Brush textBrush = new SolidBrush(textColor);
+
+    drawing.DrawString(text, font, textBrush, 0, 0);
+
+    drawing.Save();
+
+    textBrush.Dispose();
+    drawing.Dispose();
+
+    return img;
+
+}
 ```
 
 ## The Finished Product
