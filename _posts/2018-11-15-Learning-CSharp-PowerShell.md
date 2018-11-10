@@ -72,7 +72,7 @@ PowerShell. In fact, this could be used almost directly in PowerShell as a simpl
 think it's more worthwhile to convert this to a `param()` block so that we can work with the
 PowerShell pipeline.
 
-### Let's Break it Down
+#### Let's Break it Down
 
 * `private`: This is an _access modifier_, preventing anything outside the class from accessing the following property or method. **Remove** these, as they are not valid in PowerShell.
 * `Image`, `String`, `Font`, `Color`: These are _type declarations_, which are directly analogous to `[string]` and so forth in PowerShell, and we can translate them as such.
