@@ -129,13 +129,13 @@ function DrawText([string] $Text, [Font] $Font, [Color] $TextColor, [Color] $Bac
 
     # img = new Bitmap((int) textSize.Width, (int)textSize.Height);
     $Img = [Bitmap]::new([int] $TextSize.Width, [int]$TextSize.Height)
-
-    # drawing = Graphics.FromImage(img);
-    $Drawing = [Graphics]::FromImage($img)
     <#
         Remember:
             (castType) value => [castType] $value
     #>
+
+    # drawing = Graphics.FromImage(img);
+    $Drawing = [Graphics]::FromImage($img)
 
     # drawing.Clear(backColor);
     $Drawing.Clear($BackColor)
