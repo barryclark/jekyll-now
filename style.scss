@@ -97,6 +97,7 @@ p {
 a {
   color: $gold;
   text-decoration: none;
+  text-decoration-color: $linkUnderline;
   cursor: pointer;
   //text-shadow: 0 0 2px rgba(0,20,40,0.3);
   transition: 0.3s all;
