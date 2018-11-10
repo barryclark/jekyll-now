@@ -186,16 +186,18 @@ function DrawText([string] $Text, [Font] $Font, [Color] $TextColor, [Color] $Bac
 ##### Step 2: PowerShell Nuances
 
 Now that we've got the code converted into valid PowerShell code _syntax_, we'll probably start
-having to look at potential issues. One of the most common is the in C#, the
+having to look at potential issues. One of the most common is that in C#, the
 `using System.Namespace.TypeName` declarations at the head of a file are often omitted in example
 snippets.
 
 Frequently we'll have to do some Googling to figure out exactly where these things are in
 the .NET code, but for this example I can tell you that all of these things are in `System.Drawing`.
-This isn't an assembly that gets loaded by default, though, so we'll also need to tell PowerShell
-to load it for us. We'll need to include `using namespace System.Drawing` at the head of our file,
-to allow us to use the short names, and `Add-Type -AssemblyName System.Drawing` before we use any
-of them, to actually load the assembly. We'll put them both at the top of the file for clarity.
+This isn't an assembly that gets loaded by default, so we'll also need to tell PowerShell to load
+it for us.
+
+To do so, we simply include `using namespace System.Drawing` at the head of our file, to allow
+us to use the short names, and `Add-Type -AssemblyName System.Drawing` before we use any of them, to
+actually load the assembly. We'll put them both at the top of the file for clarity.
 
 For future reference, if you aren't sure a particular assembly is loaded, the best thing to do is
 to examine the documentation for the class, namespace, or method you're working with.
@@ -264,7 +266,7 @@ file and pipe it on in to make an image out of that text.
 We'll need some more code to make that happen, so let's take another look at our function and
 rewrite it to make it work as we want. It needs a new name, too... `Export-Png` sounds lovely!
 
-The .Dispose() calls here are largely unnecessary; we're not working with external resources,
+The `.Dispose()` calls here are largely unnecessary; we're not working with external resources,
 so we're probably safe to snip those out and let the PowerShell and .NET garbage collector
 routines clear those up for us.
 
@@ -342,6 +344,11 @@ With some additional bits and pieces, we make our way to a fully fleshed-out Pow
 I've dropped a few unneeded calls here and there, and I've also opted to use some additional brush
 smoothing options for a cleaner, less pixelated-looking font output.
 
+Finally, I've chosen to add back in the ability to select colors for the output image, though I
+needed an enum for this to work out, and thankfully the colors are available from
+`System.Drawing.KnownColor` &mdash; using an enum here makes selecting a custom color much simpler
+from the function call, as it can simply be specified by name as a string.
+
 ```powershell
 using namespace System.Drawing
 using namespace System.Windows.Forms
@@ -380,6 +387,12 @@ function Export-Png {
         Copy the image to clipboard instead of saving to file. This image can be
         pasted into a program such as MS Paint or other image-aware application.
 
+        .PARAMETER ForegroundColor
+        The color of the text in the image.
+
+        .PARAMETER Path
+        The color of the background in the image.
+
         .EXAMPLE
         PS> "Hello world" | Export-Png -Clipoard
 
@@ -411,9 +424,18 @@ function Export-Png {
         [string[]]
         $Path,
 
-        [Parameter(Position = 1, Mandatory, ParameterSetName = "Clipboard")]
+        [Parameter(Mandatory, ParameterSetName = "Clipboard")]
         [switch]
-        $ToClipboard
+        $ToClipboard,
+
+        [Parameter()]
+        [Alias('Color','FontColor')]
+        [KnownColor]
+        $ForegroundColor = [KnownColor]::LightGray,
+
+        [Parameter()]
+        [KnownColor]
+        $BackgroundColor = [KnownColor]::Black
     )
     begin {
         [Bitmap] $Image = [Bitmap]::new(1, 1)
@@ -429,8 +451,8 @@ function Export-Png {
 
         # Create a graphics object to measure the text's width and height.
         $Graphics = [Graphics]::FromImage($Image)
-        $ForegroundColor = [Color]::LightGray
-        $BackgroundColor = [Color]::Black
+        $ForegroundColor = [Color]::FromKnownColor($ForegroundColor)
+        $BackgroundColor = [Color]::FromKnownColor($BackgroundColor)
 
         if ($PSCmdlet.ParameterSetName -eq 'SaveFile' -and $Path -notmatch '\.png$') {
             # We always output as .png, so ensure we have correct extension
