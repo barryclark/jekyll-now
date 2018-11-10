@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Implementing ShouldProcess in Your Functions
-date:
+title: Implementing ShouldProcess For Your Functions
+date: 2018-11-22
 categories: [powershell]
 tags: [powershell, function, ConfirmImpact, ShouldProcess, 'best practices']
 ---
@@ -103,7 +103,7 @@ files.
 I haven't seen this really done yet; most of the people who have explored far enough into writing
 a custom function know enough to avoid this almost instinctually.
 
-## Implementing ShouldProcess
+## Properly Implementing ShouldProcess
 
 Before we can implement `ShouldProcess` for our function, we need to determine just how potentially
 dangerous the function is. Some functions simply don't _need_ it. A majority of cmdlets with the
