@@ -72,7 +72,7 @@ PowerShell. In fact, this could be used almost directly in PowerShell as a simpl
 think it's more worthwhile to convert this to a `param()` block so that we can work with the
 PowerShell pipeline.
 
-#### Let's Break it Down
+### Let's Break it Down
 
 * `private`: This is an _access modifier_, preventing anything outside the class from accessing the following property or method. **Remove** these, as they are not valid in PowerShell.
 * `Image`, `String`, `Font`, `Color`: These are _type declarations_, which are directly analogous to `[string]` and so forth in PowerShell, and we can translate them as such.
@@ -82,7 +82,7 @@ PowerShell pipeline.
 
 _Converting_ this is relatively straightforward. Let's do it step by step.
 
-##### Step 1: Simple Function
+### Step 1: Simple Function
 
 Here, we'll just get as-close-as-possible PowerShell code by first converting each of the
 aforementioned pieces of the method signature, then doing a quick skim through the function. I'll
@@ -154,7 +154,7 @@ function DrawText([string] $Text, [Font] $Font, [Color] $TextColor, [Color] $Bac
 }
 ```
 
-##### Step 1A: Condense
+### Step 1A: Condense
 
 And now that we're all done there, let's see a condensed and slightly refactored version without
 the comments:
@@ -183,7 +183,7 @@ function DrawText([string] $Text, [Font] $Font, [Color] $TextColor, [Color] $Bac
 }
 ```
 
-##### Step 2: PowerShell Nuances
+### Step 2: PowerShell Nuances
 
 Now that we've got the code converted into valid PowerShell code _syntax_, we'll probably start
 having to look at potential issues. One of the most common is that in C#, the
@@ -221,7 +221,7 @@ using namespace System.Drawing
 Add-Type -AssemblyName System.Drawing
 ```
 
-##### Step 3A: Best Practices &mdash; Parameters
+### Step 3A: Best Practices &mdash; Parameters
 
 Next, we turn to PowerShell best practices and look at our potential inputs and outputs. Personally,
 when writing this function, I would prefer not to have to specify a font style or any colors myself.
@@ -261,7 +261,7 @@ That often means implementing some degree of pipeline support. In this case, I'v
 pipeline or array input for the input string, allowing you to (for example) get the contents of a
 file and pipe it on in to make an image out of that text.
 
-##### Step 3B: Best Practices &mdash; Function Body
+### Step 3B: Best Practices &mdash; Function Body
 
 We'll need some more code to make that happen, so let's take another look at our function and
 rewrite it to make it work as we want. It needs a new name, too... `Export-Png` sounds lovely!
