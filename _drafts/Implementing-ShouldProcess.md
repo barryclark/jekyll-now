@@ -103,7 +103,14 @@ files.
 I haven't seen this really done yet; most of the people who have explored far enough into writing
 a custom function know enough to avoid this almost instinctually.
 
-## Properly Selecting Your ConfirmImpact Rating
+## Implementing ShouldProcess
+
+Before we can implement `ShouldProcess` for our function, we need to determine just how potentially
+dangerous the function is. Some functions simply don't _need_ it. A majority of cmdlets with the
+`Get` verb don't need it, because they don't make any changes; they only retrieve data, and modify
+nothing.
+
+### Properly Selecting Your ConfirmImpact Rating
 
 There are [four levels of impact](https://docs.microsoft.com/en-us/dotnet/api/system.management.automation.confirmimpact?view=powershellsdk-1.1.0):
 `Low`, `Medium`, `High`, and `None`. When evaluating the `ShouldProcess()` method, a prompt will be
@@ -112,7 +119,7 @@ current `$ConfirmPreference` setting.
 
 By default, `$ConfirmPreference` is set to `High`.
 
-### ConfirmImpact = "Low"
+#### ConfirmImpact = "Low"
 
 > This action only needs to be confirmed when the user has requested that low-impact changes must
 > be confirmed.
@@ -121,7 +128,7 @@ In general, reserve `Low` for actions that will never break anything important i
 but may still involve an impactful change (e.g., deleting unimportant files, working with and
 altering low-risk stored data that you can be reasonably confident will be backed up anyway, altering user-level system settings).
 
-### ConfirmImpact = "Medium"
+#### ConfirmImpact = "Medium"
 
 > This action should be confirmed in most scenarios where confirmation is requested.
 
@@ -138,7 +145,7 @@ Note that despite the enum description, PowerShell's default `ConfirmImpact` is 
 which means that `Medium`-level changes will not be prompted for unless the user has altered their
 default `ConfirmPreference`.
 
-### ConfirmImpact = "High"
+#### ConfirmImpact = "High"
 
 > This action is potentially highly "destructive" and should be confirmed by default unless
 > otherwise specified.
@@ -148,14 +155,19 @@ misused. Use this also for any actions that take place on a larger scale than no
 you are by design affecting a significant portion of the machines on a domain network, that action
 should be considered to have a `High` impact.
 
-## Implementing ShouldProcess
+### Coding For ShouldProcess Support
 
-First, we need to design our function. For the purposes of this example, we will write a simple and
-small file deletion cmdlet that utilises `Remove-Item`.
+There are two things you need to do to implement ShouldProcess support in a function:
+
+1. Set the `SupportsShouldProcess` and appropriate `ConfirmImpact` properties in your `[CmdletBinding()]` declaration.
+2. Test the result of the `$PSCmdlet.ShouldProcess()` method before making any changes to the system.
+
+For the purposes of this example, we will write a simple and small file deletion cmdlet that
+utilises `Remove-Item`.
 
 ```powershell
 function Invoke-Decimation {
-    [CmdletBinding(SupportsShouldProcess, ConfirmImpact = 'Medium')]
+    [CmdletBinding(SupportsShouldProcess, ConfirmImpact = 'Medium')] # Step 1
     param(
         [Parameter(Position = 0)]
         [ValidateNotNullOrEmpty()]
@@ -167,6 +179,7 @@ function Invoke-Decimation {
     )
     switch ($Recurse.IsPresent) {
         $true {
+            # Step 2
             if ($PSCmdlet.ShouldContinue($Path, 'Decimate every file including subdirectories.')) {
                 Get-ChildItem -Path $Path -File -Recurse |
                     Where-Object { (Get-Random -Min 1 -Max 11) % 10 -eq 0 } |
@@ -174,6 +187,7 @@ function Invoke-Decimation {
             }
         }
         $false {
+            # Step 2
             if ($PSCmdlet.ShouldProcess($Path, 'Decimate the contained files.')) {
                 Get-ChildItem -Path $Path -File |
                     Where-Object { (Get-Random -Min 1 -Max 11) % 10 -eq 0 } |
