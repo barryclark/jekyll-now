@@ -10,7 +10,6 @@ November 5 - 9: VMWorld Europe, Barcelona
 
 November 13 - 15: KubeCon + CloudNativeCon China, Shanghai
 * Moderating the Service Mesh panel (media / analyst)
-* Moderating the End User panel (media / analyst)
 
 November 21: Serverless vs Kubernetes, London
 * [Panel moderator](https://events.contino.io/serverlessvskubernetes)
