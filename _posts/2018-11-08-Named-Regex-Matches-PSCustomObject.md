@@ -11,14 +11,12 @@ antithesis to PowerShell in terms of syntax. It's terse, unforgiving, and diffic
 meaningful debug data out of. However, sometimes you just have to parse text, and there often is no
 better tool than some well-applied regex.
 
-## Text Parsing is Messy
+## Text Parsing is Messy; Objects Are Not
 
 There's no way around it, really. At some point when parsing text, the code gets messy. Personally,
 I like to constrain the awful bits to regex, and make the most of it. Its terseness becomes an
 advantage here, as it contains the mess in one small spot, rather than resulting in large blocks of
 crude, messy parsing code.
-
-### Objects Are Not
 
 There are a lot of ways to cram otherwise messy text into an object in PS. You can manually parse
 with or without regex, extracting data one painful piece at a time to build your object. You can use
@@ -108,9 +106,8 @@ RemoteAddress                  vs-in-f188
 0                              TCP    192.168.22.144:51546   vs-in-f188:5228        ESTABLISHED
 ```
 
-Interesting. You can see that _all_ our requested match groups are there, plus one extra. One of
-those is the result of the unnamed match group within the IP address match, and the other is the
-_full_ matched string. We're halfway there.
+Interesting. You can see that _all_ our requested match groups are there, plus one extra, which is
+the _full_ matched string. We're halfway there.
 
 ## Let's Get Down to Business
 
