@@ -95,8 +95,9 @@ function DrawText([string] $Text, [Font] $Font, [Color] $TextColor, [Color] $Bac
        Some things will need you to look up the method to determine its nature. #>
 
     # Image img = new Bitmap(1, 1);
-    # Graphics drawing = Graphics.FromImage(img);
     [Image] $Img = [Bitmap]::new(1, 1)
+
+    # Graphics drawing = Graphics.FromImage(img);
     [Graphics] $Drawing = [Graphics]::FromImage($Img)
     <#
         Remember:
@@ -115,13 +116,15 @@ function DrawText([string] $Text, [Font] $Font, [Color] $TextColor, [Color] $Bac
     #>
 
     # img.Dispose();
-    # drawing.Dispose();
     $Img.Dispose()
+
+    # drawing.Dispose();
     $Drawing.Dispose()
 
     # img = new Bitmap((int) textSize.Width, (int)textSize.Height);
-    # drawing = Graphics.FromImage(img);
     $Img = [Bitmap]::new([int] $TextSize.Width, [int]$TextSize.Height)
+
+    # drawing = Graphics.FromImage(img);
     $Drawing = [Graphics]::FromImage($img)
     <#
         Remember:
@@ -141,8 +144,9 @@ function DrawText([string] $Text, [Font] $Font, [Color] $TextColor, [Color] $Bac
     $Drawing.Save()
 
     # textBrush.Dispose();
-    # drawing.Dispose();
     $TextBrush.Dispose()
+
+    # drawing.Dispose();
     $Drawing.Dispose()
 
     # return img;
