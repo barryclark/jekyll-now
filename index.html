@@ -3,10 +3,9 @@ layout: default
 ---
 
 <div class="posts">
-  <h1>Featured Post</h1>
   {% for post in site.posts limit:1 %}
     <article class="post excerpt">
-
+      <h1>Featured Post</h1>
       <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
 
       <div class="entry">
