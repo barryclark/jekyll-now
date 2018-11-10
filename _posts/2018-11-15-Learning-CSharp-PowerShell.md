@@ -19,6 +19,12 @@ language.
 
 ## Let's Get Translating
 
+Our goal for today is to convert raw text into a image format. Why? Because we just want to see if
+we _can!_ This is normally pretty tricky with PowerShell; it's not at all designed to work with
+image data whatsoever.
+
+Luckily for us, the fantastic folks working with .NET Framework and Core have got us covered here!
+
 ### Finding Code to Work With
 
 This code came from [a StackOverflow answer](https://stackoverflow.com/questions/2070365/how-to-generate-an-image-from-text-on-fly-at-runtime)
@@ -348,6 +354,10 @@ Finally, I've chosen to add back in the ability to select colors for the output 
 needed an enum for this to work out, and thankfully the colors are available from
 `System.Drawing.KnownColor` &mdash; using an enum here makes selecting a custom color much simpler
 from the function call, as it can simply be specified by name as a string.
+
+One final disclaimer: while `System.Drawing` _is_ available for .NET Core, `System.Windows.Forms` is
+_not_. As a result, if you plan to use this with PowerShell Core, you'll need to snip out the parts
+that deal with exporting to the clipboard.
 
 ```powershell
 using namespace System.Drawing
