@@ -22,7 +22,7 @@
     Invoke-PagesBuild.ps1 -Token $ApiToken -Username 'GithubUser' -Repository 'GithubUser.github.io'
 
     .NOTES
-    Note that a 404 response may be **either** a malformed URI, caused by specifying the wrong username or repository name,
+    A 404 response may be **either** a malformed URI, caused by specifying the wrong username or repository name,
     **OR** it can also be a rejected token. Github's API opts to send a 404 response rather than a flat out rejection if the
     authentication token is rejected.
 
