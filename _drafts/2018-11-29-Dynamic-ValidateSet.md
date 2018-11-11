@@ -30,7 +30,7 @@ function Get-ValidValues {
     [CmdletBinding()]
     param($Path)
 
-    Get-ChildItem -Path $Path -File
+    (Get-ChildItem -Path $Path -File).Name
 }
 
 function Clear-FileInCurrentLocation {
@@ -61,3 +61,41 @@ Note how the `ArgumentCompleter` attribute actually passes in parameters. For th
 or need to use this, you can work with those attributes to dynamically set completion results based
 on the other parameters and their values, should you need to, or based on the command that it is
 being applied to.
+
+## Option 2: Implement `IValidateSetValuesGenerator`
+
+This class is only available in PowerShell Core, but it simplifies things _quite_ a bit. Essentially
+what you need to do is create a class that inherits from the interface, and then implements a method
+to provide the valid input values. This can all be done rather simply with PowerShell classes. Once
+you have the class defined, you pass in the _type name_ of the class as a `[type]` object to the
+standard `[ValidateSet()]` attribute.
+
+Let's see the above example with this method instead:
+
+```powershell
+using namespace System.Management.Automation
+
+class ValidFilesGenerator : IValidateSetValuesGenerator {
+    [string[]] GetValidValues() {
+        $Values = (Get-ChildItem -File).Name
+        return $Values
+    }
+}
+
+function Clear-FileInCurrentLocation {
+    [CmdletBinding()]
+    param(
+        [Parameter(Position = 0, Mandatory)]
+        [ValidateSet( [ValidFilesGenerator] )]
+        [string]
+        $Path
+    )
+
+    Clear-Content -Path $Path
+}
+```
+
+As you can see, it is significantly more easy to implement, looks cleaner, and is overall a more
+robust solution. Naturally, this is constrained by the usual limitations of a PowerShell class, but
+for this particular use case, this will be much more effective and maintainable than the available
+alternatives.
