@@ -62,6 +62,10 @@ or need to use this, you can work with those attributes to dynamically set compl
 on the other parameters and their values, should you need to, or based on the command that it is
 being applied to.
 
+For more information on those parameters, what they give you, and how to utilise them, see the
+[MSDN Docs Page](https://docs.microsoft.com/en-us/dotnet/api/system.management.automation.iargumentcompleter.completeargument?view=powershellsdk-1.1.0)
+for the underlying method and what the values passed in will correspond to.
+
 ## Option 2: Implement `IValidateSetValuesGenerator`
 
 This class is only available in PowerShell Core, but it simplifies things _quite_ a bit. Essentially
