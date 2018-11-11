@@ -59,6 +59,11 @@ h1, h2, h3, h4, h5, h6 {
   @include mobile {
     line-height: 1.4;
   }
+}
+
+h1 {
+  font-size: 1.8em;
+  margin-top: 0.5em;
 
   a {
     color: $brown;
@@ -66,14 +71,6 @@ h1, h2, h3, h4, h5, h6 {
     &:hover {
       color: $gold;
     }
-  }
-}
-
-h1 {
-  font-size: 1.6em;
-  margin-top: 0.5em;
-  a {
-    color: inherit;
   }
 }
 
@@ -286,6 +283,15 @@ nav {
   overflow: auto;
 }
 
+#postTitle {
+  margin-bottom: 10px;
+
+  h1 {
+    font-size: 1.8em;
+    text-align: center;
+  }
+}
+
 ul.projectList {
   list-style-type: none;
 
@@ -348,7 +354,7 @@ ul.listRecent {
   }
 
   h1 {
-    text-align: center;
+    font-size: 1.5em;
   }
 }
 
