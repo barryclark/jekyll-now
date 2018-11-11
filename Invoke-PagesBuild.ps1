@@ -52,7 +52,7 @@ $ApiParams = @{
     Uri     = "https://api.github.com/repos/$Username/$Repository/pages/builds"
     Method  = 'POST'
     Headers = @{
-        Authorization = 'token {0}' -f $ApiKey
+        Authorization = 'token {0}' -f $Token
         Accept        = 'application/vnd.github.mister-fantastic-preview+json'
     }
 }
