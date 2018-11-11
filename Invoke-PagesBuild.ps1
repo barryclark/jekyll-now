@@ -7,7 +7,7 @@
     API URL, and requires an OAuth token with appropriate permissions to be specified in order for the request to be
     accepted by the API.
 
-    .PARAMETER ApiKey
+    .PARAMETER Token
     Specify the OAuth API Token with which to query the Github API. If a token is not provided, or the provided token does
     not have sufficient permissions, the request will typically respond with a 404 error for any non-publicly-available
     information, such as Pages build statuses and build requests.
