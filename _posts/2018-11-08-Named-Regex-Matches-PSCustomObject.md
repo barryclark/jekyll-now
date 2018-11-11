@@ -85,7 +85,7 @@ $String = '  TCP    192.168.22.144:51546   vs-in-f188:5228        ESTABLISHED'
 $String -match $MatchPattern
 
 # Output
-$true
+True
 ```
 
 Okay, great! Now let's check the `$Matches` variable. This is automatically populated when doing a
