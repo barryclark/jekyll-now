@@ -15,6 +15,7 @@ param(
     [string]
     $Repository = $env:system_teamProject
 )
+
 $ApiParams = @{
     Uri     = "https://api.github.com/repos/$Username/$Repository/pages/builds"
     Method  = 'POST'
@@ -23,6 +24,7 @@ $ApiParams = @{
         Accept        = 'application/vnd.github.mister-fantastic-preview+json'
     }
 }
+'Query URI: {0}' -f $ApiParams['Uri'] | Write-Host -ForegroundColor Blue
 
 Invoke-RestMethod @ApiParams
 
