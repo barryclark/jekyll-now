@@ -3,8 +3,10 @@ layout: default
 ---
 
 <div class="posts">
-  {% for post in site.posts limit:1 %}
-    <article class="post excerpt">
+
+  <article class="post excerpt">
+
+    {% for post in site.posts limit:1 %}
       <h1>Featured Post</h1>
       <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
 
@@ -14,8 +16,9 @@ layout: default
 
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
       <span class="dateStamp">{{ post.date | date: "%d %b, %Y" }}</span>
-    </article>
-  {% endfor %}
+    {% endfor %}
+
+  </article>
 
   <article class="post">
 
@@ -31,7 +34,7 @@ layout: default
   <article class="post">
     <h1>Recent Posts</h1>
     <ul class="listRecent">
-      {% for post in site.posts offset:1 limit 3 %}
+      {% for post in site.posts offset:1 limit:3 %}
 
           <li>{{ post.date | date: "%Y-%m-%d" }} &mdash; <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
 

@@ -1,21 +1,25 @@
 ---
 layout: default
-permalink: /index/
+permalink: /blog/
 ---
 
 <article class="posts">
 
-  <h1>All Posts</h1>
+  <h1>Blog Entries</h1>
 
-  <article class="post">
-    <ul class="listRecent">
-      {% for post in site.posts %}
+  {% for post in site.posts limit:1 %}
+    <article class="post excerpt">
+      <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
 
-      <li>{{ post.date | date: "%Y-%m-%d" }} &mdash; <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+      <div class="entry">
+        {{ post.excerpt }}
+      </div>
 
-      {% endfor %}
-    </ul>
-  </article>
+      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+      <span class="dateStamp">{{ post.date | date: "%d %b, %Y" }}</span>
+
+    </article>
+  {% endfor %}
 
 </article>
 
