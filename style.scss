@@ -331,6 +331,10 @@ ul.listRecent {
   border-bottom: none;
 }
 
+.posts.homepage > .post > h1 {
+  text-align: center;
+}
+
 .post {
   blockquote {
     margin: 1.8em .8em;
