@@ -8,12 +8,12 @@ param(
     [Parameter(Position = 1)]
     [ValidateNotNullOrEmpty()]
     [string]
-    $Username = $env:system_teamProject -replace '\..+$',
+    $Username = $env:SYSTEM_TEAMPROJECT -replace '\..+$',
 
     [Parameter(Position = 2)]
     [ValidateNotNullOrEmpty()]
     [string]
-    $Repository = $env:system_teamProject
+    $Repository = $env:SYSTEM_TEAMPROJECT
 )
 
 $ApiParams = @{
