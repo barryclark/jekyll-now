@@ -8,12 +8,12 @@ param(
     [Parameter(Position = 1)]
     [ValidateNotNullOrEmpty()]
     [string]
-    $Username = $env:System_TeamProject -replace '\..+$',
+    $Username = $env:system_teamProject -replace '\..+$',
 
     [Parameter(Position = 2)]
     [ValidateNotNullOrEmpty()]
     [string]
-    $Repository = $env:System_TeamProject
+    $Repository = $env:system_teamProject
 )
 $ApiParams = @{
     Uri     = "https://api.github.com/repos/$Username/$Repository/pages/builds"
