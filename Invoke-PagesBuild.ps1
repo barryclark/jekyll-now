@@ -1,11 +1,22 @@
 [CmdletBinding()]
 param(
-    [Parameter(Position = 0)]
+    [Parameter(Position = 0, Mandatory)]
+    [ValidateNotNullOrEmpty()]
     [string]
-    $ApiKey
+    $ApiKey,
+
+    [Parameter(Position = 1)]
+    [ValidateNotNullOrEmpty()]
+    [string]
+    $Username = $env:System_TeamProject -replace '\..+$',
+
+    [Parameter(Position = 2)]
+    [ValidateNotNullOrEmpty()]
+    [string]
+    $Repository = $env:System_TeamProject
 )
 $ApiParams = @{
-    Uri     = 'https://api.github.com/repos/vexx32/vexx32.github.io/pages/builds'
+    Uri     = "https://api.github.com/repos/$Username/$Repository/pages/builds"
     Method  = 'POST'
     Headers = @{
         Authorization = 'token {0}' -f $ApiKey
