@@ -323,6 +323,10 @@ ul.listRecent {
 .posts > .post:last-child {
   padding-bottom: 1em;
   border-bottom: none;
+
+  &.list {
+    padding-bottom: 2em;
+  }
 }
 
 .post {

@@ -7,8 +7,8 @@ permalink: /blog/
 
   <h1>Blog Entries</h1>
 
-  {% for post in site.posts limit:1 %}
-    <article class="post excerpt">
+  {% for post in site.posts %}
+    <article class="post excerpt list">
       <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
 
       <div class="entry">
