@@ -2,13 +2,13 @@
 layout: default
 ---
 
+<div class="date">
+  <time>{{ page.date | date: "%B %e, %Y" }}</time>
+</div>
+
 <section id="postTitle">
   <h1>{{ page.title }}</h1>
 </section>
-
-<div class="date">
-  Written on <time>{{ page.date | date: "%B %e, %Y" }}</time>
-</div>
 
 <article class="post">
 
