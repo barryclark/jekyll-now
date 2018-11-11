@@ -34,7 +34,7 @@ function Get-ValidValues {
 }
 
 function Clear-FileInCurrentLocation {
-    [CmdletBinding()]
+    [CmdletBinding(SupportsShouldProcess)]
     param(
         [Parameter(Position = 0, Mandatory)]
         [ArgumentCompleter(
@@ -83,7 +83,7 @@ class ValidFilesGenerator : IValidateSetValuesGenerator {
 }
 
 function Clear-FileInCurrentLocation {
-    [CmdletBinding()]
+    [CmdletBinding(SupportsShouldProcess)]
     param(
         [Parameter(Position = 0, Mandatory)]
         [ValidateSet( [ValidFilesGenerator] )]
