@@ -14,7 +14,7 @@ Recently we had a bit of an incident with our hot water heater... The tank began
 
 We've got hard water. This isn't unusual in our area - the cloudy white film is most likely calcium carbonate that is absorbed by the water in the large [aquifer](https://en.wikipedia.org/wiki/Aquifer) that is the source of our city's water.
 
-To confirm we do indeed have hard water, I search "[free hard water test](https://www.google.com/search?q=free+hard+water+test)" on Google and was able to get two free tests from two different sites.
+To confirm we do indeed have hard water, I searched "[free hard water test](https://www.google.com/search?q=free+hard+water+test)" on Google and was able to get two free tests from two different sites.
 
 I ordered both tests on Sunday, August 27, 2018.
 
