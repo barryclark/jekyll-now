@@ -8,6 +8,10 @@ permalink: /featured/
 * [The Financial Diet's The 7 Personal Finance Articles We Loved This Week (March 16, 2018)](https://thefinancialdiet.com/the-7-personal-finance-articles-we-loved-this-week-2/)
 * [Dr. Fire's Weekend Roundup: Volume 5 (September 30, 2018)](http://drfire.co.uk/weekend-roundup-volume-5/)
 
+Quoted on the following sites:
+
+* [Early Retirement Wisdom From 50+ Top Finance Writers](https://themoneymix.com/early-retirement/)
+
 This blog is also in the following blog directories:
 
 * [Rockstar Finance Personal Finance Blog Directory](https://directory.rockstarfinance.com/personal-finance-blogs/)
