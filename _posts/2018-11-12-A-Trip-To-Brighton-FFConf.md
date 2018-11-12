@@ -2,9 +2,6 @@
 layout: post
 title: A Trip To Brighton&#58; FFConf 2019
 ---
-
-# Getting There
-
 I absolutely love the journey to Brighton. I had set off early in the morning from Dundee and around 8 hours later after beautiful scenes down the east coast main line, then through London onto the Brighton mainline, I arrive at a very cosy Airbnb.
 
 Above all, the thing I enjoy most is the atmosphere of the city. When you leave the station, you're met with a bunch of food trucks and stalls, it's a busy place but not a rushed place. It's got a creative flair which results in all kinds of utility boxes having artwork across them, and it's got a great feel to the city and I've barely left the station. While there I couldn't help but think that Dundee is to Edinburgh as Brighton is to London.
