@@ -1,6 +1,6 @@
 ---
 layout: post
-title: A Trip To Brighton: FFConf 2019
+title: A Trip To Brighton&#58; FFConf 2019
 ---
 
 # Getting There
