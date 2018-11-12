@@ -16,7 +16,7 @@ PS> Get-ChildItem -Path 'C:\Users' -Recurse -Depth 2
 # ... oh shoot, I forgot to store it into a variable again
 ```
 
-## The Answer?
+# The Answer
 
 While it would be _awesome_ to have some `$LastOutput` variable automatically assigned by PS itself,
 you may be interested to know that it's something you can already add for yourself &mdash; kind of.

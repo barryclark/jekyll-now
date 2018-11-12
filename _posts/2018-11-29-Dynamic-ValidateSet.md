@@ -12,13 +12,13 @@ work with, and is really best avoided in a majority of cases when creating advan
 _script cmdlets_, as I've occasionally heard them called. Thankfully, there are a few alternatives
 hat are often a good bit easier.
 
-## Option 1: `[ValidateSet()]` and `[ValidateScript()]`
+# Option 1: `[ValidateSet()]` and `[ValidateScript()]`
 
 If you're writing for Windows PowerShell, I think a much more _effective_ alternative is to combine
 `[ArgumentCompleter()]` and `[ValidateScript()]` in order to mimic the effect of a `[ValidateSet()]`
 but give you the ability to run PowerShell script in order to determine the available vales.
 
-### Let's See an Example
+## Let's See an Example
 
 The most effective and simple way to do this is to use a helper function in order to get the valid
 values you want to use. This will be called when the initial function is being called, in order to
@@ -66,7 +66,7 @@ For more information on those parameters, what they give you, and how to utilise
 [MSDN Docs Page](https://docs.microsoft.com/en-us/dotnet/api/system.management.automation.iargumentcompleter.completeargument?view=powershellsdk-1.1.0)
 for the underlying method and what the values passed in will correspond to.
 
-## Option 2: Implement `IValidateSetValuesGenerator`
+# Option 2: Implement `IValidateSetValuesGenerator`
 
 This class is only available in PowerShell Core, but it simplifies things _quite_ a bit. Essentially
 what you need to do is create a class that inherits from the interface, and then implements a method

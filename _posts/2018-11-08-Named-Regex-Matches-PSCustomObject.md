@@ -11,7 +11,7 @@ antithesis to PowerShell in terms of syntax. It's terse, unforgiving, and diffic
 meaningful debug data out of. However, sometimes you just have to parse text, and there often is no
 better tool than some well-applied regex.
 
-## Text Parsing is Messy; Objects Are Not
+# Text Parsing is Messy; Objects Are Not
 
 There's no way around it, really. At some point when parsing text, the code gets messy. Personally,
 I like to constrain the awful bits to regex, and make the most of it. Its terseness becomes an
@@ -25,7 +25,7 @@ with or without regex, extracting data one painful piece at a time to build your
 But using the built-in language features of PowerShell's regex engine, which originates from the
 .NET libraries, is perhaps the most effective and simple way to go.
 
-## The Setup
+# The Setup
 
 Let's say we're trying to parse the output from the Windows `netstat` command, which looks like
 this:
@@ -46,7 +46,7 @@ We _could_ parse this with a whole bunch of ```$string.Split('`t')``` methods an
 but cramming all that into a custom object would leave us with messy and difficult to read and
 review code.
 
-## Parsing with Regex
+# Parsing with Regex
 
 The ultimate goal here is to end up with an array of custom objects that we can emit to the
 pipeline, and to remove any unusable munged data. A basic regex pattern capable of parsing the
@@ -58,7 +58,7 @@ Okay, _wow_, what a mess. We could stop this pattern here and deem it "good enou
 likely need at _least_ five lines of comments to properly document what that pattern is doing, so
 that it's recognisable at a glance. Let's improve this with a few **named match groups**:
 
-### Named Matches
+## Named Matches
 
 ```powershell
 $MatchPattern = @(
@@ -74,7 +74,7 @@ opted to have it programatically joined into a single match string with the miss
 (whitespace) characters that are also a necessary part of the pattern. This is an optional step
 that lends us some extra readability in the match pattern.
 
-### Try Before You Buy
+## Try Before You Buy
 
 It's always a good idea to check your pattern against the string you _want_ to match, to see what
 happens.
@@ -109,7 +109,7 @@ RemoteAddress                  vs-in-f188
 Interesting. You can see that _all_ our requested match groups are there, plus one extra, which is
 the _full_ matched string. We're halfway there.
 
-## Let's Get Down to Business
+# Let's Get Down to Business
 
 `$Matches` is a `[hashtable]`, and in PowerShell we can convert this directly to `[PSCustomObject]`.
 However, in a case like this we're not particularly interested in the full string that gets matched,
@@ -148,7 +148,7 @@ RemotePort LocalPort State       LocalAddress RemoteAddress Protocol
 The `Format-Table` is simply for display here, as custom objects with more than 4 properties output
 in list format by default.
 
-### Caveats
+## Caveats
 
 As always, each approach has its share of potentially-undesirable results. Most immediately obvious
 is that the order of the properties is not preserved, because `$Matches` is a hashtable. If we want
@@ -164,7 +164,7 @@ type instead of `[PSCustomObject]`.
 
 In _both_ cases you can add other formatting hints, such as properties to avoid displaying by default.
 
-### Using Classes
+## Using Classes
 
 ```powershell
 class Connection {
