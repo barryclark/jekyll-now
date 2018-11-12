@@ -7,6 +7,7 @@ layout: default
     <article class="post">
 
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+      <span>Written on {{ page.date | date: "%B %e, %Y" }}</span>
 
       <div class="entry">
         {{ post.excerpt }}
