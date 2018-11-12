@@ -6,6 +6,6 @@ categories: [placeholder]
 tags: [placeholder]
 ---
 
-## First Heading
+# First Heading
 
 Some text.
