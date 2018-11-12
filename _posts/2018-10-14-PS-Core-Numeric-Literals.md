@@ -9,7 +9,7 @@ tags: [powershell, core, pscore, csharp]
 PowerShell has had only very basic support for numeric literals for longer than I've been using it,
 having only _two_ basic suffixes and a handful of numeric syntaxes.
 
-## Standard Numeral Types in PowerShell
+# Standard Numeral Types in PowerShell
 
 ```powershell
 100  # int32
@@ -25,7 +25,7 @@ Add in the standard multipliers: `kb`, `mb`, `gb`, `tb`, and `pb` and you've got
 set of numerals. This is sufficient for most purposes, but as we'll see there is... _room for
 improvement_.
 
-## Other Numeric Types
+# Other Numeric Types
 
 If you want to work with any other numeric types you've been forced to use type accelerators, which
 are not without their problems. Perhaps most demonstrably, high integer values are always parsed as
@@ -45,7 +45,7 @@ PS> [bigint]'111111111111111111111111111111111111111111111111111111'
 111111111111111111111111111111111111111111111111111111
 ```
 
-## Room for Improvement
+# Room for Improvement
 
 Starting a couple months ago, I've been working on the tokenizer in PowerShell Core. It started,
 really, as a minor frustration that PowerShell doesn't really work very well with unsigned numbers
@@ -58,7 +58,7 @@ Although it hasn't made it to a release at the time of writing, some of my chang
 merged into the PowerShell/PowerShell master branch and will see the light of day soon. So, let's
 check out what I've managed to throw together!
 
-### New Literal Type Suffixes
+## New Literal Type Suffixes
 
 At the time of writing, the following numeric literal suffixes have been implemented:
 
@@ -91,7 +91,7 @@ something especially silly &mdash; for example `100uygb` (100, byte, multiplied 
 you will find the parser simply errors out completely, indicating that `The numeric literal
 '100uygb' is not valid.`
 
-## Future Additions
+# Future Additions
 
 At the time of writing, I have opened
 [PowerShell/PowerShell#7993](https://github.com/PowerShell/PowerShell/pull/7993) which contains the
