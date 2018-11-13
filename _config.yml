@@ -53,6 +53,7 @@ url: https://vexx32.github.io/
 baseurl: ""
 
 future: false
+timezone: US
 
 #
 # !! You don't need to change any of the configuration flags below !!
