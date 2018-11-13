@@ -3,6 +3,7 @@
 
 #site-nav, footer, #follows, #follows-big, #icons, #covers, .nav-scroll, #web-credits, #page-header, #post-header, #post-share, #date {
 text-align: center;}
+header {z-index:1!Important;}
 /* Nav */
 #site-nav {background: var(--color-soft-black) !important;border-bottom: none;font-size: 17px;color: var(--color-grey);box-shadow: 0 1px 21px rgba(0, 0, 0, .23);}
 #site-nav a {font-weight: 200;min-width: 14%;border: none;letter-spacing: .016em;}
