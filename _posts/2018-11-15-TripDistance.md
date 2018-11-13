@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Austin's Average Trip Distance: Dockless Vs. Docked
+title: Austin's Average 
 ---
 Austin's mode share will change lets see what it'll look like.
 
