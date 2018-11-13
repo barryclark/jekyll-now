@@ -21,7 +21,7 @@ text-align: center;}
 body {text-align: justify;-moz-hyphens:none;-ms-hyphens:none;-webkit-hyphens:none;-o-hyphens:none;hyphens:none;word-wrap:none;}
 p, ul {font-size: 18px;line-height: 27px;}
 main {padding-bottom:0!important;}
-#page-header.cover {background-image: url("/img/home.jpg");background-position: fixed;}
+#page-header.cover {background-image: url("/img/home.jpg");background-position: fixed;z-index:2;}
 #page-main.darkmode {background:#111;}
 #page-main.darkmode em a {background:#111;}
 #web-oferta {background-image: url("/img/sky.jpg");image-rendering: crisp-edges;background-position: top center;background-attachment: fixed;background-size: cover;
