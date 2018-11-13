@@ -21,7 +21,7 @@ text-align: center;}
 body {text-align: justify;-moz-hyphens:none;-ms-hyphens:none;-webkit-hyphens:none;-o-hyphens:none;hyphens:none;word-wrap:none;}
 p, ul {font-size: 18px;line-height: 27px;}
 main {padding-bottom:0!important;}
-#page-header.cover {background-image: url("/img/home.jpg");background-position: fixed;z-index:1;}
+#page-header.cover {background-image: url("/img/home.jpg");background-position: fixed;}
 #page-main.darkmode {background:#111;}
 #page-main.darkmode em a {background:#111;}
 #web-oferta {background-image: url("/img/sky.jpg");image-rendering: crisp-edges;background-position: top center;background-attachment: fixed;background-size: cover;
@@ -39,7 +39,7 @@ em u label:active, em u a:active {background-color:rgba(240,240,240,.5) ;color:v
 p em {border: var(--one-pixel) solid transparent;font-weight: bold;line-height: 24px;font-size: 21px;padding: 0;text-rendering: optimizeLegibility;}
 section.cover-justify p {padding: 6px 20px 0 20px;line-height: 24px;font-size: 15px !important;letter-spacing: .01em}
 /* Page & Header */
-.cover#page-header  {background-color: var(--color-white);}
+.cover#page-header  {background-color: var(--color-black);z-index: 1;}
 .serveis-header {border-bottom:10px solid var(--color-hardgrey);background-color: var(--color-black);color: var(--color-hardgrey);}
 .medias#page-header {background-image: url("/img/portfoli.jpg");	background-position: top center;
 	background-attachment: fixed;background-size: cover fixed;background-repeat: no-repeat;
