@@ -10,6 +10,7 @@ permalink: /featured/
 
 Quoted on the following sites:
 
+* [40-Day Frugal/Financial Lent Challenge](http://99to1percent.com/40-day-frugal-financial-lent/)
 * [Early Retirement Wisdom From 50+ Top Finance Writers](https://themoneymix.com/early-retirement/)
 
 This blog is also in the following blog directories:
