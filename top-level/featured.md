@@ -16,3 +16,4 @@ This blog is also in the following blog directories:
 
 * [Rockstar Finance Personal Finance Blog Directory](https://directory.rockstarfinance.com/personal-finance-blogs/)
 * [Modest Money Top Finance Blogs](https://www.modestmoney.com/top-finance-blogs/)
+* [Fly to Fi Know Your Blogger](https://flytofi.com/know-your-blogger/) / [actual page](https://flytofi.com/know-your-blogger-joes-github-blog/)
