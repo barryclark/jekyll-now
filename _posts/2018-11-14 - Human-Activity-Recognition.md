@@ -44,3 +44,11 @@ Following are few innovative and major papers used for Human Activiity Recogniti
   Convolutional 1D is a 1-dimension convolutinalm kernel that operates in similar fashion as in case ofd 2D convolution. It is usually used in analyzing sequence and capturing short term depedency in sequences. One major advantage it has over LSTM or any recurrent neural network is its mutifold better speed to train and test. Convolution 1D is also heavily used in Inception Network.
   
   Let's now get to coding....
+  
+  {% highlight python %}
+#container {
+    float: left;
+    margin: 0 -240px 0 0;
+    width: 100%;
+}
+{% endhighlight %}
