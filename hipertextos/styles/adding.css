@@ -143,7 +143,7 @@ border:1px solid #eee;margin-bottom:12px;}
 .imagens img {margin:0!important;padding:0!important;border:none;}
 .listed {padding:0!important;}
 .listed img {	margin:0!important;padding:0!important;	}
-.listed article { border:none;overflow: hidden;width: 100%;display: block;display: inline-block;margin:0!important;padding:0!important;-webkit-column-break-inside: avoid;-moz-column-break-inside:avoid;-moz-page-break-inside:avoid;page-break-inside: avoid;}
+.listed article { border:none;width: 100%;display: block;display: inline-block;margin:0!important;padding:0!important;-webkit-column-break-inside: avoid;-moz-column-break-inside:avoid;-moz-page-break-inside:avoid;page-break-inside: avoid;}
 em small #go-up { background:rgba(0,0,0,.1);padding:15px;border-radius:50%; }
 em small #go-up:hover {background:rgba(0,0,0,.3); }
 /* Footer fixed */
