@@ -29,9 +29,9 @@ main {padding-bottom:0!important;}
 	background-repeat: no-repeat;border:none;color: #fff;letter-spacing: .06em;overflow: hidden;text-align: center;}
 #ilu-oferta {color:var(--color-hardgrey);padding:69px 0 80px 0;}
 #ilu-oferta p {max-width:30%;margin-left:35%;}
-#web-oferta {background-image: url("/img/sky.jpg");image-rendering: crisp-edges;background-position: top center;background-attachment: fixed;background-size: cover;
-	background-repeat: no-repeat;border:none;color: var(--color-white)!important;letter-spacing: .06em;overflow: hidden;text-align: center;}
-#web-oferta {color:var(--color-hardgrey);padding:69px 0 80px 0;}
+#web-oferta {height:92vh;background-image: url("/img/sky.jpg");image-rendering: crisp-edges;background-position: top center;background-attachment: fixed;background-size: cover;
+	background-repeat: no-repeat;border:none;color: var(--color-white);letter-spacing: .06em;overflow: hidden;text-align: center;}
+#web-oferta {padding:69px 0 80px 0;}
 #web-oferta p {max-width:30%;margin-left:35%;}
 
 img.front-responsive  {width:450px;margin-top:68px;}
