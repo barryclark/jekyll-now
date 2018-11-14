@@ -56,3 +56,58 @@ from keras.models import Sequential
 import keras
  ## Importing python Libraries
 {% endhighlight %}
+
+We are going to use pandas for reading the csv file
+  {% highlight python %}
+def read_Txtfile(filename):
+  data = pd.read_csv(filename, header = None,delim_whitespace = True)
+  return data.values
+{% endhighlight %}
+
+
+We are going to use pandas for reading the csv file
+  {% highlight python %}
+def read_DataGroup(prefix,group,filenames):
+  data = []
+  for filename in filenames:
+    for file in filename:
+      temp = read_Txtfile(prefix+'/'+file)
+      data.append(temp)
+  
+  train_X = np.dstack(data)
+  return train_X
+
+def load_Data(prefix,group):
+  path = prefix + '/' + group + '/Inertial Signals' 
+  filenames = []
+  filenames.append(['total_acc_x_'+group+'.txt', 'total_acc_y_'+group+'.txt', 'total_acc_z_'+group+'.txt'])
+  
+  filenames.append(['body_acc_x_'+group+'.txt', 'body_acc_y_'+group+'.txt', 'body_acc_z_'+group+'.txt'])
+  
+  filenames.append(['body_gyro_x_'+group+'.txt', 'body_gyro_y_'+group+'.txt', 'body_gyro_z_'+group+'.txt'])
+  
+  X_train =  read_DataGroup(path,group,filenames)
+  y_train = read_Txtfile(prefix+'/'+group+'/'+ 'y_'+group+'.txt')
+  
+  print (np.array(X_train).shape)
+  print (y_train.shape)
+  return np.array(X_train), y_train
+ 
+
+{% endhighlight %}
+
+
+We need one hot encode the y label
+
+  {% highlight python %}
+
+y_train-=1
+y_test-=1
+y_train = to_categorical(y_train)
+y_test = to_categorical(y_test)
+
+print ("Shape of y_train : ",y_train.shape)
+
+print ("Shape of y_test : ",y_test.shape)
+
+{% endhighlight %}
