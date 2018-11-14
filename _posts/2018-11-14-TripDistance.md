@@ -8,6 +8,7 @@ How Austin's new dock(less) mobility average trip distance stacks up.
 *Austin Average Trip Distance by Mode*  
 *[\*Average commute distance by mode, 2009 National Household Travel Survey](https://nhts.ornl.gov/trb/2016/P16-1352.pdf)*  
 *[BCycle docked bike data](https://data.austintexas.gov/Transportation-and-Mobility/Austin-B-Cycle-Trips/tyfh-5r8s)*  
+*[Dockless data from City of Austin](https://austintexas.gov/docklessmobility)*  
 
 <iframe width="600" height="400" frameborder="0" scrolling="no" src="//plot.ly/~charlie2343/20.embed?showlink=false"></iframe>
 *Austin Average Trip Distance by Mode, [2009 National Household Travel Survey](https://nhts.ornl.gov/trb/2016/P16-1352.pdf)*  
