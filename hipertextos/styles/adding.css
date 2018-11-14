@@ -25,7 +25,7 @@ main {padding-bottom:0!important;}
 #page-header.cover {background-image: url("/img/home.jpg");background-position: fixed;z-index:2;}
 #page-main.darkmode {background:#111;}
 #page-main.darkmode em a {background:#111;}
-#ilu-oferta {height:92vh;background-image: url("/img/ilu.jpg");image-rendering: crisp-edges;background-position: top center;background-attachment: fixed;background-size: cover;
+#ilu-oferta {height:80vh;background-image: url("/img/ilu.jpg");image-rendering: crisp-edges;background-position: top center;background-attachment: fixed;background-size: cover;
 	background-repeat: no-repeat;border:none;color: #fff;letter-spacing: .06em;overflow: hidden;text-align: center;}
 #ilu-oferta {padding:69px 0 80px 0;}
 #ilu-oferta p {max-width:30%;margin-left:35%;}
