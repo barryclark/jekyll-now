@@ -46,9 +46,13 @@ Following are few innovative and major papers used for Human Activiity Recogniti
   Let's now get to coding....
   
   {% highlight python %}
-#container {
-    float: left;
-    margin: 0 -240px 0 0;
-    width: 100%;
-}
+#@title Default title text
+import pandas as pd #loading the csv data
+import 	numpy as np
+import matplotlib.pyplot as plt #visualization
+import os
+from keras.utils import to_categorical
+from keras.models import Sequential
+import keras
+ ## Importing python Libraries
 {% endhighlight %}
