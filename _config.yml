@@ -1,234 +1,74 @@
+# Welcome to Jekyll!
 #
-# This file contains configuration flags to customize your site
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
 #
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
 
-# Name of your site (displayed in the header)
-name: Jimi Kim
-
-
-# Your Name
-
-## Contact {.heading .hide}
-
-Seoul, Republic of Korea\
-82+ 010-2650-4405\
-kjm0623v@gmail.com\
-
-## Education {.divider}
-### Korea Development Institute School of Public Policy and Management
-#### Feb.2012–May2015
-
-- M.D.P.inDevelopmentpolicy
-- Focus:Concentration in Global Finance and Regulation.
-
-### Chung-Ang University
-#### Mar.2007–Feb.2012
-
-- B.S.in Statistics
-- Minor in Economics
-
-## Research Experience {.divider}
-
-### Economic Development Cooperation Fund Korea Export-Import Bank
-#### Jun.2012–Nov.2012
-- 1stInternationalDevelopmentCompetition
-* Project: Statistical Data Analysis of the Effectiveness of Technical Cooperation: Focused on the case of the Dominican Republic
-- Focus: The Capacity Development Result Framework of the World Bank, the rating system of Japan JICA, and the quantitative evaluation system of Germany GIZ, and applied it to policy advice of Dominica Export Promotion Policy of KSP (Korea Knowledge Sharing) project.
-
-### Seoul National University Bio-Informatics Lab
-#### Jul.2008–Aug.2008
-- ResearchIntern,SeoulNationalUniversityBio-InformaticsLab
-* Project: Genome wide association study in Rheumatoid Arthritis
-* Focus: Conducted data gathering, cleaning and managing large volume of SNP(genomic data)
-using Python and C
-* Analyzed Association analysis and pedigree analysis using R
-
-## Working Experience {.divider}
-### Policy and Administrative Staff for Legal Affairs, Office of the President the Republic of Korea
-#### Jan.2012–Current
-- Analyzing and compiling large procurement and corruption datasets of National Database
-System on Litigation
-- Liaises with relevant stakeholders such as other government(Ministry of Justice, Ministry of
-Government Legislation, Constitutional court) as well as local authorities to discuss potential
-problems and plans possible methods of resolution.
-- Developing the initial scheme and relevent research and co-drafted research report; especially
-in the areas of Legal policy, Deregulation for infrastructure, urban planning and environment
-issue
-- Focus: Legal policy, Personal Information Protection Commission,
-
-### Policy and Administrative Staff for Economy Affairs, Office of the President the Republic of Korea
-#### Jul.2011–Feb.2012
-- Prepared and assisted with the President’s events including the President’s weekly session of the
-Meeting.
-- Drafted reports on macro and micro economics for high-ranking officials.
-- Planned and coordinated logistics and materials for board meetings, committee meetings and
-staff events.
-- Liaised with government bodies: Ministry of Strategy and Finance, Financial Services
-Commission, National Tax Services
-- Focus: Emergency Economic Measures Monitored Developments in the fields of industrial
-technology, business, finance and economic theory.
-
-### Policy and Administrative Staff for Political Affairs, Office of the President the Republic of Korea
-#### Jan.2011–Jun.2011
-
-- Designed and analyzed weekly opinion polls pertinent to national affairs.
-- Drafted notes, background papers, speeches and other correspondence for Senior Secretary for Political Affairs.
-- Focus: Political issue papers, daily newsletters political section, National Assembly.
-
-## Awards & Scholarship {.divider}
-
-### Promotion in staff position(2 tiems)
-#### Sep. 2018, Jul. 2015
-
-### Certificate of Commendation
-#### Dec. 2015
-- For outstanding Staff Ministerial Prize
-### 3rd Prizedfor Paper Competition
-#### Nov.2012
-- 1st International Development Competition, Korea Export-Import Bank
-### Scholarship
-#### Feb. 2012
-- For outstanding admissions in KDI school
-### Foreign Volunteer Scholarship
-#### Jun.2009 1000 USD
-- Exchange tour for students who want to build up the
-### Volunteer Scholarship 
-#### 2008–2010 4,080 USD
-- Volunteer in dormitory
-### National Science & Technology Scholarship
-#### 2007–2011 31,557 USD
-- Scholarship For attaining a semester GPA of at least 3.0.
-
-### My Project 1
-
-#### Sep 2005 - Apr 2009
-
-- Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet
-- Consectetur, adipisci velit, sed quia non numquam eius modi tempora
-
-### My Project 2
-
-#### Sep 2005 - Apr 2009
-
-- Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet
-- Consectetur, adipisci velit, sed quia non numquam eius modi tempora
-
-## Education {.divider}
-
-### B.Sc Biology &mdash; University of Lethbridge
-
-#### Sep 2005 - Apr 2009
-
-- Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
-- Suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?
-
-## Technical skills {.divider}
-
-## Triple Skills Section {.hide}
-
-### General {.col .left}
-LATEX\
-MS Word\
-MS Excel\
-MS Powerpoint\
-
-### Programming Languages {.col .center}
-Python\
-SQL\
-MATLAB\
-C\
-
-### Statistical Languagesand Tools {.col .right}
-R/RStudio\
-SAS\
-SPSS\
-Stata\
-Tableau\
-
-### Familiarity with bigdata infrastructures {.col .right}
-Azure\
-AWS\
-
-
-
-# Short bio or description (displayed in the header)
-description: Web Developer from Somewhere
-
-# URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
-
-#
-# Flags below are optional
-#
-
-# Includes an icon in the footer for each username you enter
-footer-links:
-  dribbble:
-  email:
-  facebook:
-  flickr:
-  github: barryclark/jekyll-now
-  instagram:
-  linkedin:
-  pinterest:
-  rss: # just type anything here for a working RSS icon
-  twitter: jekyllrb
-  stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
-  youtube: # channel/<your_long_string> or user/<user-name>
-  googleplus: # anything in your profile username that comes after plus.google.com/
-
-
-# Enter your Disqus shortname (not your username) to enable commenting on posts
-# You can find your shortname on the Settings page of your Disqus account
-disqus:
-
-# Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-google_analytics:
-
-# Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
-# Used for Sitemap.xml and your RSS feed
-url:
-
-# If you're hosting your site at a Project repository on GitHub pages
-# (http://yourusername.github.io/repository-name)
-# and NOT your User repository (http://yourusername.github.io)
-# then add in the baseurl here, like this: "/repository-name"
-baseurl: ""
-
-#
-# !! You don't need to change any of the configuration flags below !!
-#
-
-permalink: /:title/
-
-# The release of Jekyll Now that you're using
-version: v1.2.0
-
-# Jekyll 3 now only supports Kramdown for Markdown
-kramdown:
-  # Use GitHub flavored markdown, including triple backtick fenced code blocks
-  input: GFM
-  # Jekyll 3 and GitHub Pages now only support rouge for syntax highlighting
-  syntax_highlighter: rouge
-  syntax_highlighter_opts:
-    # Use existing pygments syntax highlighting css
-    css_class: 'highlight'
-
-# Set the Sass partials directory, as we're using @imports
-sass:
-  style: :expanded # You might prefer to minify using :compressed
-
-# Use the following plug-ins
-gems:
-  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
-  - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
-
-# Exclude these files from your production _site
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.author }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: whiteglass theme
+author: Yous
+description: Minimal, responsive Jekyll theme for hackers.
+baseurl: "/whiteglass" # the subpath of your site, e.g. /blog
+url: "https://yous.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+lang: en
+timezone: UTC
 exclude:
   - Gemfile
   - Gemfile.lock
-  - LICENSE
+  - Rakefile
   - README.md
-  - CNAME
+  - LICENSE.txt
+  - CHANGELOG.md
+  - jekyll-whiteglass.gemspec
+  - screenshot.png
+  - vendor
 
-theme: jekyll-theme-minimal
+# Social media
+twitter_username:
+twitter_image:
+facebook_app_id:
+facebook_image:
+google_analytics:
+comments: false
+
+# Plugins
+plugins:
+  - jekyll-archives
+  - jekyll-paginate
+  - jekyll-sitemap
+
+# Build settings
+markdown: kramdown
+excerpt_separator: "<!-- more -->"
+
+# Outputting
+permalink: /:year/:month/:day/:title/
+paginate_path: /posts/:num/
+paginate: 5
+
+# Markdown settings
+kramdown:
+  auto_ids: false
+  enable_coderay: false
+  entity_output: as_char
+  footnote_nr: 1
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  toc_levels: 1..6
+
+# jekyll-archives
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layout: category_archives
+  permalinks:
+    category: /categories/:name/
+    tag: /tags/:name/
