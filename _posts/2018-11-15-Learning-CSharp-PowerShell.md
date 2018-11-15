@@ -524,7 +524,7 @@ As you can see, converting is relatively straightforward. Some knowledge of the 
 but C# is largely directly convertible to PowerShell. The real challenge begins when you want to
 properly make it fit into the PowerShell methodologies.
 
-PowerShell does a _lot_ of things the C# oesn't really typically do, so we have to add some
+PowerShell does a _lot_ of things that C# doesn't typically do, so we have to add some
 additional bits and pieces along the way to really make a complete PowerShell function.
 
 Thanks for reading!
