@@ -36,13 +36,16 @@ They analyze the differences between model and human behavior to study whether h
              
 
 
-They also test the model and the human viewers with an episode which there is no perpetrator (it is  a suicide case). *Figure 3* shows cumulative counts of false positives (fp) for both human and model in the final 10% of an episode.  
+They also test the model and the human viewers with an episode which there is no perpetrator (it is  a suicide case). *Figure 3* shows cumulative counts of false positives (fp) for both human and model for this case.  
 
 
 ![asd](./../images/review5-suicide.png)
 
 *Figure 3: Cumulative counts of false positives (fp) for the LSTM and a human viewer for an episode with no perpetrator. Red vertical bars show the times at which the viewer pressed the red button indicating that they (think they) have identified the perpetrator.*
             
+
+
+Although human results are higher than the model, this is a difficult task even for the humans and the incremental learning approach with multi modalities seems to be promising for natural language understanding tasks.
 
 
 
