@@ -2,7 +2,6 @@
 layout: post
 title: A Trip To Brighton&#58; FFConf 2019
 ---
-#
 ![My lanyard](/images/MVIMG_20181108_092030.jpg "My lanyard")
 
 # A Journey South
