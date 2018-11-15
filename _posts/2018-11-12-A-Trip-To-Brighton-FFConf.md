@@ -2,18 +2,21 @@
 layout: post
 title: A Trip To Brighton&#58; FFConf 2019
 ---
+#
 ![My lanyard](/images/MVIMG_20181108_092030.jpg "My lanyard")
 
-I absolutely love the journey to Brighton. I had set off early in the morning from Dundee and around 8 hours later after beautiful scenes down the east coast main line, then through London onto the Brighton mainline, I arrive at a very cosy Airbnb.
+# A Journey South
+
+I absolutely love the journey to Brighton. I set off early in the morning from Dundee and around 8 hours later after some beautiful scenes down the East Coast Main Line, through London and then onto the Brighton mainline, I arrive at a very cosy Airbnb.
 
 Above all, the thing I enjoy most is the atmosphere of the city. When you leave the station, you're met with a bunch of food trucks and stalls, it's a busy place but not a rushed place. It's got a creative flair which results in all kinds of utility boxes having artwork across them providing a great feel to the city. While there I couldn't help but think that Dundee is to Edinburgh as Brighton is to London.
 
 ![A slide from Charlie Owen's 'Dear Developer, the Web Isn't About You' talk](/images/MVIMG_20181108_151732.jpg "A slide from Charlie Owen's 'Dear Developer, the Web Isn't About You' talk")
 
 # FFConf
-This isn't my first FFConf, I first attended last year and had such great time that I knew I'd be back at the first opportunity. Apparently I was so keen that I bought the [first ticket to the conference](https://twitter.com/ffconf/status/1016609655253020672).
+This isn't my first [FFConf](https://ffconf.org), I first attended last year and had such great time that I knew I'd be back at the first opportunity. Apparently I was so keen that I bought the [first ticket to the conference](https://twitter.com/[ffconf](https://ffconf.org)/status/1016609655253020672).
 
-The two halves of FFConf are Remy and Juile Sharp, who this year are celebrating 10 years of FFConf. The pair, and the entire team, really know how to put on a show. The atmosphere they have created, it's like they have invited a huge group of strangers into their front room to watch a bunch of really interesting stuff. Remy often admits as such, he curates a conference filled with talks that are interesting to him and invites everyone along for the ride.
+The two halves of FFConf are Remy and Julie Sharp, who this year are celebrating 10 years of FFConf. The pair, and the entire team, really know how to put on a show. Collectiely they create an fantastic atmosphere which is like they have invited a huge group of strangers into their front room to watch a bunch of really interesting stuff. Remy often admits as such, he curates a conference filled with talks that are interesting to him and invites everyone along for the ride.
 
 As always, I take many more notes for these talks than I cover on my posts but I hope you get the jist.
 
