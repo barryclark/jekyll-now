@@ -6,8 +6,6 @@ categories: [powershell, csharp]
 tags: [powershell, csharp, function, translate, 'export-png']
 ---
 
-# C# and PowerShell
-
 PowerShell is built directly on top of C#, written in C#, and has access to almost everything that
 .NET can give you. As a result, a lot of PowerShell syntax has very similar C# analogues, and much
 of C# can be translated into usable PowerShell code without much hassle.
