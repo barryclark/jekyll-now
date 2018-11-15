@@ -29,6 +29,8 @@ main {padding-bottom:0!important;}
 	background-repeat: no-repeat;border:none;color: #fff;letter-spacing: .06em;overflow: hidden;text-align: center;}
 #ilu-oferta {padding:69px 0 80px 0;}
 #ilu-oferta p {max-width:30%;margin-left:35%;}
+#ilu-process {max-height:100%;overflow: hidden;
+    padding-bottom:6px;padding-top:6px;}
 #web-oferta {background-image: url("/img/sky.jpg");image-rendering: crisp-edges;background-position: top center;background-attachment: fixed;background-size: cover;
 	background-repeat: no-repeat;border:none;color: var(--color-white);letter-spacing: .06em;overflow: hidden;text-align: center;}
 #web-oferta {color:var(--color-hardgrey);padding:69px 0 80px 0;}
