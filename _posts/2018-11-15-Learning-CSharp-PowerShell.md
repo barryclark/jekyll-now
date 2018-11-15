@@ -113,7 +113,7 @@ function DrawText([string] $Text, [Font] $Font, [Color] $TextColor, [Color] $Bac
     #>
 
     # SizeF textSize = drawing.MeasureString(text, font);
-    [SizeF] $TextSize = $drawing.MeasureString($Text, $Font)
+    [SizeF] $TextSize = $Drawing.MeasureString($Text, $Font)
     <#
         Remember:
             var.Method()   => $var.Method()
