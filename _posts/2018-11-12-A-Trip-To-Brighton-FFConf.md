@@ -6,7 +6,7 @@ title: A Trip To Brighton&#58; FFConf 2019
 
 I absolutely love the journey to Brighton. I had set off early in the morning from Dundee and around 8 hours later after beautiful scenes down the east coast main line, then through London onto the Brighton mainline, I arrive at a very cosy Airbnb.
 
-Above all, the thing I enjoy most is the atmosphere of the city. When you leave the station, you're met with a bunch of food trucks and stalls, it's a busy place but not a rushed place. It's got a creative flair which results in all kinds of utility boxes having artwork across them, and it's got a great feel to the city and I've barely left the station. While there I couldn't help but think that Dundee is to Edinburgh as Brighton is to London.
+Above all, the thing I enjoy most is the atmosphere of the city. When you leave the station, you're met with a bunch of food trucks and stalls, it's a busy place but not a rushed place. It's got a creative flair which results in all kinds of utility boxes having artwork across them providing a great feel to the city. While there I couldn't help but think that Dundee is to Edinburgh as Brighton is to London.
 
 ![A slide from Charlie Owen's 'Dear Developer, the Web Isn't About You' talk](/images/MVIMG_20181108_151732.jpg "A slide from Charlie Owen's 'Dear Developer, the Web Isn't About You' talk")
 
@@ -14,6 +14,8 @@ Above all, the thing I enjoy most is the atmosphere of the city. When you leave 
 This isn't my first FFConf, I first attended last year and had such great time that I knew I'd be back at the first opportunity. Apparently I was so keen that I bought the [first ticket to the conference](https://twitter.com/ffconf/status/1016609655253020672).
 
 The two halves of FFConf are Remy and Juile Sharp, who this year are celebrating 10 years of FFConf. The pair, and the entire team, really know how to put on a show. The atmosphere they have created, it's like they have invited a huge group of strangers into their front room to watch a bunch of really interesting stuff. Remy often admits as such, he curates a conference filled with talks that are interesting to him and invites everyone along for the ride.
+
+As always, I take many more notes for these talks than I cover on my posts but I hope you get the jist.
 
 ## Mentoring: Being the help you wish you'd had by [Jo Franchetti](https://twitter.com/ThisIsJoFrank)
 
@@ -35,17 +37,17 @@ For so long the entire domain of Machine Learning pretty much belonged to the Py
 
 Nothing to setup, no driver for GPUs, just a `<script>` or `require` and you're ready to start. TensorflowJS takes advantage of WebGL which already has GPU acceleration, and that allows it to have great performance.
 
-TensorflowJS will work with models that has been trained by any flavour of Tensorflow, but what I'm personally most excited about is the fact that since Tensorflow can now work in the browser, Machine Learning can happen on device without being send to a server reducing concerns about personal data and GDPR worries.
+TensorflowJS will work with models that has been trained by any flavour of Tensorflow, but what I'm personally most excited about is the fact that since Tensorflow can now work in the browser, Machine Learning can now happen on any device with a browser without it being sent to a server therefore reducing concerns about personal data and GDPR worries.
 
 ## Practical Web Animation by [Lisi Linhart](https://twitter.com/lisi_linhart)
 
-Many projects don't prioritise animation, infact many neglect it entirely. I know this is something I'm guilt of doing.
+Many projects don't prioritise animation, infact many neglect it entirely. I know this is something I'm guilty of doing.
 
 Web animations are two fold; first, for the user they provide a means of orientating then, drawing their attention, providing meaningful feedback, or even perceiving the performance of applications. As long as they're not [obnoxious](http://tholman.com/obnoxious/) or misleading then they'll mostly be fine.
 
 The other consideration is the browser. Animations need to have good performance or they can seriously degrade the experience of an application. There are four CSS properties where animation is 'cheap': transform's scale, translate, rotate, and the opacity property. These can be animated with minimal affect on the application.
 
-This isn't to that other properties can't be animated with disastrous consequences. The [will-change](https://developer.mozilla.org/en-US/docs/Web/CSS/will-change) property can be used to hint to a browser that a property will change. However too many of these will result in crazy large memory usage so they should be used sparingly.
+This isn't to say that other properties can't be animated with disastrous consequences. The [will-change](https://developer.mozilla.org/en-US/docs/Web/CSS/will-change) property can be used to hint to a browser that a property will change. However too many of these will result in crazy large memory usage so they should be used sparingly.
 
 Also dev tools provide a crazy level of insight into web animations, and Chrome allow for CPU throttling to simulate animations on weaker devices.
 
@@ -109,6 +111,6 @@ Tim absolutely admitted this completely, but have a think about the skills he pi
 
 ## Wrap Up
 
-As always, I take many more notes for these talks than I cover on my posts but I hope you've gotten the jist.
+I might always struggle to properly articulate how much I love coming to Brighton for FFConf, hopefully I've done it some justice. The people, the place, and the content are all outstanding and I absolutely plan on being back next year. It's also worth noting that in 2019, the conference is only going to run once!
 
-I might always struggle to properly articulate how much I love coming to Brighton for FFConf, hopefully I've done it some justice. The people, the place, and the content are all outstanding and I absolutely plan on being back next year.
+![Brighton 2018](/images/IMG_20181107_190701-COLLAGE.jpg "Brighton 2018")
