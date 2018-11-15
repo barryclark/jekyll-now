@@ -3,4 +3,4 @@ layout: post
 title: WELCOME!
 ---
 
-Welcome to the Blog.
+Welcome to the Blog.Cool!
