@@ -22,10 +22,10 @@ like this:
 & (Get-Module 'Pester') { Get-Command -Module Pester }
 ```
 
-This will show you all the secret, private commands that Pester would prefer you not to see. You
-could also use this method to _execute_ those commands. This is the precise inverse of what **I**
-wanted to do. I wanted to execute a command _in a module function_ that would see only the outside
-world, and not the commands that created it.
+This will show you all the secret, private functions that Pester would prefer you not to see. You
+could also use this method to _execute_ those functions. This is the precise inverse of what **I**
+wanted to do. I wanted to execute code _in a module function_ that would see only the outside
+world, and not the cmdlets and functions that created it.
 
 # Breaking into the Global Scope
 
@@ -52,8 +52,8 @@ And it was _not_ happening. It _seemed_ to mock just fine, but thereafter attemp
 
 ![Pester Summons Elder Gods](/images/mocking-pester-itself.png)
 
-It seemed to break literally any any all mocks for that module's commands. _Very_ odd. But that's
-what you get when you play with scopes!
+It seemed to break literally all mocks for that module's commands. _Very_ odd. But that's what you
+get when you play with scopes!
 
 # The Solution
 
