@@ -402,7 +402,7 @@ function Export-Png {
         The color of the background in the image.
 
         .EXAMPLE
-        PS> "Hello world" | Export-Png -Clipoard
+        "Hello world" | Export-Png -Clipoard
 
         This will create a small image with the text "Hello world" written on it,
         which will be stored in the clipboard, available for pasting to another
