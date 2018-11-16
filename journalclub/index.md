@@ -30,7 +30,7 @@ Journal club meetings currently take place on Mondays at 1:00 pm in the IACS Sem
 - October 29th: Jake Crosser
 - November 5th: No JC - SFN
 - November 12th: Memming Park
-- November 19th: Ian Jordan
+- November 19th: JunYan Song
 - November 26th: Yanliang Shi
 - December 3rd: Josue Nassar
 - December 10th: Sayontan Ghoshi 
