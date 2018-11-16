@@ -15,6 +15,8 @@ Persian is a language (which happens to be one of my mother tongues) which is sp
 
 The Perso-Arabic script is basically a variety of the Arabic script. It is also written from right to left and the main difference is that a few letters are added, and a few letters are modified. One other big similarity is that the script omits short vowels. This means that the word for "went", pronounced "raft", is written as "r-f-t". Native speakers of a language will not pronounce every single letter and so a native Persian speaker will have no issues with this. However, this word might as well be pronounced as "reft" or "roft" or even "rafat".
 
+![Different ways of vocalizing k-t-b.]({{ site.url }}/images/ketab.png){: .center-image }
+
 Enter the Tajik alphabet. Because Tajikistan was part of the Soviet Union, its dialect of Persian was written in a Cyrillic alphabet just like Russian. A lot can be said of this fascinating side-effect of world history, but here I just want to point out why this is relevant for the project: the Tajik script writes out short vowels.
 
 Line of attack

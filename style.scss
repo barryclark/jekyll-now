@@ -283,6 +283,13 @@ footer {
   text-align: center;
 }
 
+// Added by Thomas
+.center-image {
+    margin: 0 auto;
+    display: block;
+}
+// End
+
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
