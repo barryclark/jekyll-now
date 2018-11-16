@@ -2,15 +2,15 @@
 layout: post
 title: Invoke a PowerShell Module Command in the Global Scope
 date: 2018-11-16
-categories: [powershell, modules, tips]
-tags: [powershell, module, tips, black magic, scope, breaking]
+categories: [PowerShell, modules, tips]
+tags: [PowerShell, module, tips, black magic, scope, breaking]
 ---
 
 This isn't exactly a _common_ requirement, but it turned up as I was working on
-[PSKoans](https://github.com/vexx32/pskoans). Essentially, I had a slight problem: the koans in
+[PSKoans](https://github.com/vexx32/pskoans). Essentially, I had a slight problem: the Koans in
 AboutDiscovery that deal with `Get-Command` were consistently finding commands that were _intended_
 to be hidden to the user; commands internal to the PSKoans module itself. So, I needed a way to have
-the koan files evaluated **outside** the module scope.
+the Koan files evaluated **outside** the module scope.
 
 # Scope Breaking
 
@@ -62,7 +62,7 @@ fundamental was in play here; I suspect I triggered an almost sort of recursion 
 
 So what to do? Thankfully, I **could** create a proxy command that essentially just hid away the
 scope-breaking code. A bit of `[System.Management.Automation.ProxyCommand]::Create()` and some
-manual editing later, I came out with a new internal module command for executing the koans in the
+manual editing later, I came out with a new internal module command for executing the Koans in the
 global scope, as though the user were invoking them directly, without my module getting in the way.
 
 _Perfect_. This command can, thankfully, be mocked, and wrapping the command sequence up in such
