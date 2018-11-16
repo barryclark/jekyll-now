@@ -18,6 +18,7 @@ Bumped is a new loyalty service ("app") that provides fractional shares of compa
 Bumped's tagline on their website is:
 
 > Get free stock when you spend with the brands you love.
+>
 > Fractional shares, no fees. So you can own what you love.
 
 ## What brands are available?
