@@ -1,6 +1,6 @@
 ---
 layout: post
-title: First project demo - Vocalizing the Perso-Arabic script
+title: Demo - Vocalizing the Perso-Arabic script
 ---
 
 Today my first project demo is live! When I decided to create this site, one big reason was for me to be able to showcase some projects I have worked on. One big issue, however, is that most of them have been part of courses and lack a UI. But now at least one of my projects has had a UI added to it and [is now live!](http://vocalizer.thomasvakili.se/)
