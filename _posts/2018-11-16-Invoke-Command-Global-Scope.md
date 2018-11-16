@@ -7,10 +7,10 @@ tags: [PowerShell, module, tips, black magic, scope, breaking]
 ---
 
 This isn't exactly a _common_ requirement, but it turned up as I was working on
-[PSKoans](https://github.com/vexx32/pskoans). Essentially, I had a slight problem: the Koans in
+[PSKoans](https://github.com/vexx32/pskoans). Essentially, I had a slight problem: the koans in
 AboutDiscovery that deal with `Get-Command` were consistently finding commands that were _intended_
 to be hidden to the user; commands internal to the PSKoans module itself. So, I needed a way to have
-the Koan files evaluated **outside** the module scope.
+the koan files evaluated **outside** the module scope.
 
 # Scope Breaking
 
@@ -42,7 +42,7 @@ $GlobalScope = [psmoduleinfo]::new($true)
 ```
 
 This was _almost_ there. But it has a _slight_ problem. You see, the command **I** wanted to use
-here was actually `Invoke-Pester`. That's how my Koans operate; just like a Pester script, with a
+here was actually `Invoke-Pester`. That's how my PSKoans operate; just like a Pester script, with a
 few bells and whistles.
 
 Nothing too crazy there... until I realized, as it was building in the VM. I've just made it _nigh_
@@ -62,7 +62,7 @@ fundamental was in play here; I suspect I triggered an almost sort of recursion 
 
 So what to do? Thankfully, I **could** create a proxy command that essentially just hid away the
 scope-breaking code. A bit of `[System.Management.Automation.ProxyCommand]::Create()` and some
-manual editing later, I came out with a new internal module command for executing the Koans in the
+manual editing later, I came out with a new internal module command for executing the koans in the
 global scope, as though the user were invoking them directly, without my module getting in the way.
 
 _Perfect_. This command can, thankfully, be mocked, and wrapping the command sequence up in such
