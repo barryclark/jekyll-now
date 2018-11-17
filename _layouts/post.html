@@ -10,9 +10,9 @@ layout: default
   <h1>{{ page.title }}</h1>
 </section>
 
-{% if post.date < page.last_modified_at %}
+{% if post.date < post.last_modified_at %}
   <div class="date lastEdited">
-    <time>Updated {{ page.last_modified_at | date: "%r on %B %e, %Y" }}</time>
+    <time>Updated {{ post.last_modified_at | date: "%r on %B %e, %Y" }}</time>
   </div>
 {% endif %}
 
