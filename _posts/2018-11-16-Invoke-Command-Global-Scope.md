@@ -2,8 +2,8 @@
 layout: post
 title: Invoke a PowerShell Module Command in the Global Scope
 date: 2018-11-16
-categories: [powershell, modules, tips]
-tags: [powershell, module, tips, black magic, scope, breaking]
+categories: [PowerShell, modules, tips]
+tags: [PowerShell, module, tips, black magic, scope, breaking]
 ---
 
 This isn't exactly a _common_ requirement, but it turned up as I was working on
@@ -22,10 +22,10 @@ like this:
 & (Get-Module 'Pester') { Get-Command -Module Pester }
 ```
 
-This will show you all the secret, private commands that Pester would prefer you not to see. You
-could also use this method to _execute_ those commands. This is the precise inverse of what **I**
-wanted to do. I wanted to execute a command _in a module function_ that would see only the outside
-world, and not the commands that created it.
+This will show you all the secret, private functions that Pester would prefer you not to see. You
+could also use this method to _execute_ those functions. This is the precise inverse of what **I**
+wanted to do. I wanted to execute code _in a module function_ that would see only the outside
+world, and not the cmdlets and functions that created it.
 
 # Breaking into the Global Scope
 
@@ -42,7 +42,7 @@ $GlobalScope = [psmoduleinfo]::new($true)
 ```
 
 This was _almost_ there. But it has a _slight_ problem. You see, the command **I** wanted to use
-here was actually `Invoke-Pester`. That's how my Koans operate; just like a Pester script, with a
+here was actually `Invoke-Pester`. That's how my PSKoans operate; just like a Pester script, with a
 few bells and whistles.
 
 Nothing too crazy there... until I realized, as it was building in the VM. I've just made it _nigh_
@@ -52,8 +52,8 @@ And it was _not_ happening. It _seemed_ to mock just fine, but thereafter attemp
 
 ![Pester Summons Elder Gods](/images/mocking-pester-itself.png)
 
-It seemed to break literally any any all mocks for that module's commands. _Very_ odd. But that's
-what you get when you play with scopes!
+It seemed to break literally all mocks for that module's commands. _Very_ odd. But that's what you
+get when you play with scopes!
 
 # The Solution
 
