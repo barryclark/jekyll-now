@@ -1,3 +1,8 @@
+---
+layout: post
+title: Arch Linux Installation
+---
+
 # arch linux install
 
 Hardware: Asus Pro B9440UA  16Gb RAM, 512Gb SSD
