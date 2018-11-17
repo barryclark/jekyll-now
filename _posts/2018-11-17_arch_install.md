@@ -1,0 +1,52 @@
+# arch linux install
+
+Hardware: Asus Pro B9440UA  16Gb RAM, 512Gb SSD
+
+# Procedure:
+- Followed the guide at Arch Linux to get a base system
+- Had to do the wireless trickery with help from  https://linuxcommando.blogspot.com/2013/10/how-to-connect-to-wpawpa2-wifi-network.html
+- EFI stuff was confusing but the Gentoo folks made it easier than the Arch folks.
+- After booting, didn't have network interface support.
+- Rebooted into the live cd and set up networking again. Then mounted-and-chrooted to /dev/sda4 and ran pacman, magically had net access.
+- pacman -Sy iw wpa_supplicant dhclient
+- Get more system stuff:
+  - pacman -Sy visudo zsh zsh-completions neovim
+- Create a user and group for myself
+  - groupadd myusername
+  - useradd -m -g myusername -s /usr/bin/zsh myusername
+  - `visudo` and add myself to sudoers file to be able to do everything 
+- pacman -Sy neovim zsh zsh-completions
+- Set up the zshell by putting all the config in ~/.config/zsh (found this tip from https://wiki.archlinux.org/index.php/Zsh see the Note section - can use ZDOTDIR so just make a little wrapper to do what you want. Someone on Reddit already did it: https://www.reddit.com/r/zsh/comments/3ubrdr/proper_way_to_set_zdotdir/)
+  - `echo "ZDOTDIR=$HOME/.config/zsh\n. $ZDOTDIR/.zshenv" > ~/.zshenv`
+- Now installed the graphical desktop env
+- My research: basically the way a desktop "stack" works on linux is that you have a DE (in this case Xorg) that is managed/controlled by a DM (in this case lightDM). DMs also rely on something called a greeter; I found this out by starting up my DM without one. (/var/log/lightdm/lightdm.log excerpt:  Failed to find session configuration lightdm-gtk-greeter ). So from the list on the LightDM website, I decided to go with the webkit2 greeter, since it fit in with the DIY theme I'm going for with this build.
+- Followed the arch guide to get XOrg, LightDM   https://wiki.archlinux.org/index.php/Xorg  https://wiki.archlinux.org/index.php/LightDM  https://www.devpy.me/your-guide-to-a-practical-linux-desktop-with-i3wm/
+  - `lspci | grep -e VGA -e 3D` (basically just confirmed its an intel integrated video, so I picked the intel package from the list)
+  - `pacman -Ss xf86-video`
+  - `pacman -Sy xf86-video-intel lightdm lightdm-webkit2-greeter`
+  - `ln -s /usr/lib/systemd/system/lightdm.service /etc/systemd/system/display-manager.service`
+  - `nvim /etc/lightdm/lightdm.conf` and change to ```[SeatDefaults]\n greeter-session=lightdm-webkit2-greeter`
+  - In the same lightdm.conf file:
+    - Uncomment the `sessions-directory` line
+    - Uncomment the `user-session=` line and change value from default to `i3` (even if you're using gaps, just put i3)
+- Next thing I came across was "Can't launch X server X, not found in path" - forgot to install x
+  - `pacman -S xorg-server xorg-xinit mesa`
+  - Login as root, otherwise this doesn't work:
+  - `Xorg :0 -configure`
+  - `mv /root/xorg.conf.new /etc/X11/xorg.conf.d/001-xorg.conf`
+- That's enough to get the greeter working. I got locked out of the tty's and the install is not complete. Logging in hangs the computer. How to get out?
+  - Reboot and at the grub loader screen hit 'e' (for edit boot script). Look near the end of the last few lines for "quiet" and put a 3 after it, then F10 to boot with that script.
+  - This sets the runlevel to skip loading X Windows and go straight to a tty.
+- Now to install i3 wm...
+  - `pacman -S i3-gaps i3status rofi compton feh rxvt-unicode`
+- Still get a dead login. After authenticating, I get an error stating "An error was detected in the current theme that could interfere with the system login process."
+- Now to get other stuff:
+  - `pacman -S git`
+- Now log back in as me and get my config:
+  - `git clone --recursive https://github.com/andrewtcymmer/env-conf.git .env-conf`
+- Random: If you get stuck inside of i3 you can switch to a tty using ctrl+alt+F2 (or any other key for a tty)
+- Other stuff:
+  - install powerline fonts from github.com/powerline/fonts.git (see my repository)
+  - install extra/firefox-i18n-en-us  (I picked the ttf-opentype fonts)
+  - install openntpd (interesting articles on hooking start/stop of service to dhclient: https://wiki.archlinux.org/index.php/OpenNTPD  and running ntpd securely, though openntpd seems less susceptible: https://bbs.archlinux.org/viewtopic.php?id=122323 )
+  - install and use xclip for cut-paste on command line
