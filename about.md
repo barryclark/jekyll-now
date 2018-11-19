@@ -20,7 +20,7 @@ I hold a Masters in Computer Science from the University of Cambridge, King's Co
 
 * Informal: Cheryl
 * Professional: Ms Cheryl Hung
-* Chinese: 洪雪晴 (HÓNG Xuěqíng)
+* Chinese: 洪雪晴
 
 [Download my resume here.](http://www.oicheryl.com/resources/CherylJHung.pdf)
 
