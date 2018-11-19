@@ -2,7 +2,7 @@
 layout: page
 title: Chase Freedom Referral
 permalink: /chase-freedom/
-redirect_to: https://www.referyourchasecard.com/2/763CXS6AF2
+redirect_to: https://creditcards.chase.com/cash-back-credit-cards/chase-freedom
 ---
 
-[Click here if you are not redirected](https://www.referyourchasecard.com/2/763CXS6AF2)
+[Click here if you are not redirected](https://creditcards.chase.com/cash-back-credit-cards/chase-freedom)
