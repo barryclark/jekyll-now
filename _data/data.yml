@@ -14,6 +14,14 @@
   location_gr: Online
   location_en: Online
 
+- company_gr: Metabook
+  company_en: Metabook
+  url: https://metabook.gr
+  category_gr: Μεταχειρισμένα βιβλία
+  category_en: Second-hand books
+  location_gr: Online
+  location_en: Online
+
 - company_gr: The Cube
   company_en: The Cube
   url: https://thecube.gr

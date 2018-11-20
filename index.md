@@ -7,7 +7,7 @@ title: Πως αγοράζουμε, πουλάμε, ξοδεύουμε και δ
 
 - [Ποιες εταιρείες και επαγγελματίες δέχονται Bitcoin στην Ελλάδα;](#merchant-table)
 - [Ποιες γνωστές εταιρείες του εξωτερικού δέχονται Bitcoin;](#bluechips)
-- [Πώς μπορώ να αγοράσω Bitcoin από την Ελλάδα;](#buybitcoin)
+- [Πώς μπορώ να αγοράσω Bitcoin στην Ελλάδα;](#buybitcoin)
 - [Που μπορώ να μάθω περισσότερα για το Bitcoin;](#bitcoin.org)
 - [Σε τι διαφέρει το Bitcoin από μετρητά, από χρήματα στην τράπεζα, από το χρυσό;](#compare)
 - [Πως μπορώ να αποκτήσω ένα πορτοφόλι Bitcoin;](#wallet)
@@ -59,7 +59,7 @@ title: Πως αγοράζουμε, πουλάμε, ξοδεύουμε και δ
 - [Περιοδικό Fortune](https://subscription.timeinc.com/storefront/site/fo-20for1999ccar1214bc.html)
 - [Wikipedia](https://wikimediafoundation.org/wiki/Ways_to_Give#bitcoin), για δωρεές
 
-### <a name="buybitcoin"></a>Πώς μπορώ να αγοράσω Bitcoin από την Ελλάδα;
+### <a name="buybitcoin"></a>Πώς μπορώ να αγοράσω Bitcoin στην Ελλάδα;
 
 - Στα εξής Bitcoin ATM:
 
@@ -77,6 +77,11 @@ title: Πως αγοράζουμε, πουλάμε, ξοδεύουμε και δ
     <tr>
         <td>Αθήνα</td>
         <td><a href="https://goo.gl/maps/bdipXzwYhHU2">Δημητρακοπούλου 84, Κουκάκι, Αθήνα 11741</a></td>
+        <td>+30 6998499499 <a href="https://bcash.gr">Bcash Greece</a></td>
+    </tr>
+    <tr>
+        <td>Αθήνα</td>
+        <td><a href="https://goo.gl/maps/EKKjKLPJMkK2">Πειραιώς 68, Αθήνα 10436</a></td>
         <td>+30 6998499499 <a href="https://bcash.gr">Bcash Greece</a></td>
     </tr>
     <tr>
@@ -284,7 +289,7 @@ title: Πως αγοράζουμε, πουλάμε, ξοδεύουμε και δ
 - Ο Μη-Κερδοσκοπικός Οργανισμός [Hellenic Blockchain Hub](http://blockchain.org.gr)
 - Ο Μη-Κερδοσκοπικός Οργανισμός [Cyprus Blockchain Technologies](http://cybt.eu)
 
-Τελευταία ενημέρωση: 2018-10-12
+Τελευταία ενημέρωση: 2018-11-20
 
 <!-- <div class="posts">
   {% for post in site.posts %}

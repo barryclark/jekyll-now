@@ -50,6 +50,11 @@ Come to one of our meetups in [Athens](https://www.meetup.com/BlockchainGreece-0
         <td>+30 6998499499 <a href="https://bcash.gr">Bcash Greece</a></td>
     </tr>
     <tr>
+        <td>Athens</td>
+        <td><a href="https://goo.gl/maps/EKKjKLPJMkK2">Pireos 68, Athens 10436</a></td>
+        <td>+30 6998499499 <a href="https://bcash.gr">Bcash Greece</a></td>
+    </tr>
+    <tr>
         <td>Glyfada, Attica</td>
         <td><a href="https://goo.gl/maps/VwQbWgmdcbk">DAMA shopping centre, Genimmata 59-61, Glyfada 16562</a></td>
         <td>+30 6987812000 <a href="https://bcash.gr">Bcash Greece</a></td>
@@ -133,7 +138,7 @@ Come to one of our meetups in [Athens](https://www.meetup.com/BlockchainGreece-0
 - The [Hellenic Blockchain Hub](http://blockchain.org.gr) non-profit organization
 - The [Cyprus Blockchain Technologies](http://cybt.eu) non-profit organization
 
-Last update: 2018-10-12
+Last update: 2018-11-20
 
 <!-- <div class="posts">
   {% for post in site.posts %}
