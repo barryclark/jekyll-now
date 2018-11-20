@@ -69,3 +69,25 @@ nginx -s reload
 
 4.测试nginx配置是否成功
 nginx -t
+
+5.列出进程 tasklist /fi "imagename eq nginx.exe"
+
+### 5. 停止运行
+```
+@echo off
+echo Stopping nginx...
+taskkill /F /IM nginx.exe > nul
+echo Stopping PHP FastCGI...
+taskkill /F /IM php-cgi.exe > nul
+echo Stopping mysql...
+net stop mysql
+pause
+exit
+```
+
+### 6. 注意
+出现No input file specified.提示一般是没有找对路径。
+
+win系统下更要注意路径斜杠问题，比如D:\WWW\tp5\public\ 要注意\t可能会被转义。要使用反斜杠“/”或者双斜杠“\\\”。
+
+出现问题要多看error.log
