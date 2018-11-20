@@ -524,6 +524,31 @@ changetargetlink('quocthang.ooo');
 //]]>       
 </script>
 <!-- Kết thúc -->
+
+<!-- Link động -->
+<b:if cond='data:blog.url == data:blog.homepageUrl'>
+<script>        var counter = 0;
+        var interval_set = 0;
+        var anbus = ["J2TEAM"]
+        function changeTitle()
+        {
+           var d = new Date();
+           var ts = d.getDate()+"/"+(d.getMonth()+1)+"/"+d.getFullYear()+"_"+d.getHours()+":"+d.getMinutes()+":"+d.getSeconds();
+           var msg = "" + anbus[counter%anbus.length] + "/@/" + ts;
+           history.pushState("","","/")
+           history.pushState("","",msg)
+           counter++;
+           if(interval_set == 0)
+           {
+            interval_set = 1
+            setInterval(function () {changeTitle()}, 1000);
+           }
+          
+        }
+                changeTitle();
+    </script>
+</b:if>
+  <!-- Kết thúc -->
     
     {% include analytics.html %}
   </body>
