@@ -28,13 +28,17 @@ At the end, they conclude with two facts:
 
    *Table 1. Human Evaluation of Movie Scripts and ADs*
 
+
+
 - **Evaluation of Semantic Parsing and Visual Features:** Some different approaches for semantic parsing has been used and the results are given in Table 2. These results are promising for the future but not explained in a detailed way in this paper.
 
 ![Table 2](./../images/paper7-2.png)
 
-   *Table 2. Performance of Different Sematic Parsers*
+*Table 2. Performance of Different Sematic Parsers*
 
-Finally, this paper proposes a new dataset which can be very useful in the future studies. As there is a necessity of the video data aligned with descriptions, this study will absolutely fill this gap. But the semantic parsing and visual feature usage parts are not explained in a clear way.
+
+
+Finally, this paper proposes a new dataset which can be very useful in the future studies. As there is a necessity of the video dataset aligned with descriptions, this study will absolutely fill this gap. But the semantic parsing and visual feature usage parts are not explained in a clear way.
 
 
 
