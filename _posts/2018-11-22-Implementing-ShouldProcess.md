@@ -64,7 +64,7 @@ confusion and an inability to trust any given `-WhatIf` parameter, especially in
 appropriate help documentation, which _also_ tends to follow these common mis-implementations.
 
 Not utilising the common parameters can also mean that applying, for example, `-Confirm:$false` to
-the parent function or script does _not_ also cascade down to the commands it runs; with the common
+the parent function or script does _not_ cascade down to the commands it runs; with the common
 parameters in place and being used appropriately, the parameters applied to the parent command are
 applied across the entire breadth of the actions of that command &mdash; if it calls a command that
 has support for `ShouldProcess` it will trigger the appropriate actions (or not, as it were) to be
