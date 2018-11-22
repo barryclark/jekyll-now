@@ -60,4 +60,9 @@ $ApiParams = @{
 
 Invoke-RestMethod @ApiParams
 
+Start-Sleep -Seconds 30
+
+$ApiParams['Method'] = 'GET'
+Invoke-RestMethod @ApiParams
+
 if ($Error[0]) {exit -1} else {exit 0}
