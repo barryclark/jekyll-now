@@ -51,7 +51,8 @@ baseurl: ""
 
 #
 # !! You don't need to change any of the configuration flags below !!
-theme: slate
+theme: jekyll-theme-slate
+
 
 permalink: /:title/
 
