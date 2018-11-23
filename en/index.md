@@ -51,7 +51,7 @@ Come to one of our meetups in [Athens](https://www.meetup.com/BlockchainGreece-0
     </tr>
     <tr>
         <td>Athens</td>
-        <td><a href="https://goo.gl/maps/EKKjKLPJMkK2">Pireos 68, Athens 10436</a></td>
+        <td><a href="https://goo.gl/maps/BUVquX7zwWL2">Pireos 68, Athens 10436</a></td>
         <td>+30 6998499499 <a href="https://bcash.gr">Bcash Greece</a></td>
     </tr>
     <tr>
@@ -140,7 +140,7 @@ Bcash Greece has published [videos with instructions on how to use their Bitcoin
 - The [Hellenic Blockchain Hub](http://blockchain.org.gr) non-profit organization
 - The [Cyprus Blockchain Technologies](http://cybt.eu) non-profit organization
 
-Last update: 2018-11-20
+Last update: 2018-11-23
 
 <!-- <div class="posts">
   {% for post in site.posts %}
