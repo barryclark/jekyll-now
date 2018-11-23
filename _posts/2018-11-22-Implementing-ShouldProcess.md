@@ -57,7 +57,7 @@ Top of the list has to be implementing a _custom_ parameter for either `-WhatIf`
 ```powershell
 function Get-Thing {
     param(
-        [switch] $WhatIf
+        [switch] $WhatIf,
         [switch] $Confirm
     )
 }

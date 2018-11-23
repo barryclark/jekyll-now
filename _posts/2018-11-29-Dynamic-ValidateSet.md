@@ -12,7 +12,7 @@ work with, and is really best avoided in a majority of cases when creating advan
 _script cmdlets_, as I've occasionally heard them called. Thankfully, there are a few alternatives
 hat are often a good bit easier.
 
-# Option 1: `[ValidateSet()]` and `[ValidateScript()]`
+# Option 1: `[ArgumentCompleter()]` and `[ValidateScript()]`
 
 If you're writing for Windows PowerShell, I think a much more _effective_ alternative is to combine
 `[ArgumentCompleter()]` and `[ValidateScript()]` in order to mimic the effect of a `[ValidateSet()]`
