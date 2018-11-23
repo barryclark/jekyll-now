@@ -95,8 +95,11 @@ p {
 
 a {
   color: $gold;
-  text-decoration: none;
   text-decoration-color: $linkUnderline;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-underline-position: auto;
+  text-decoration-skip-ink: auto;
   cursor: pointer;
   //text-shadow: 0 0 2px rgba(0,20,40,0.3);
   transition: 0.3s all;
@@ -106,6 +109,12 @@ a {
     color: $brown;
     //text-shadow: 0 -0.025em 2px rgba(0,20,40,0.4);
     //box-shadow: 0 -0.15em 1px -1px rgba(65,131,196,0.6) inset;
+  }
+
+  code.highlighter-rouge {
+    color: inherit;
+    text-decoration: inherit;
+    text-underline-position: below;
   }
 }
 

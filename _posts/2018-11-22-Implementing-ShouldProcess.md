@@ -8,7 +8,7 @@ tags: [powershell, function, ConfirmImpact, ShouldProcess, 'best practices']
 
 `ShouldProcess` is something that a _lot_ of folks get wrong, even some of the more seasoned
 scripters. Even some official modules don't quite handle it properly, perhaps most notably the
-`SetADAccountPassword` cmdlet from the `ActiveDirectory` module &mdash; more on that
+`Set-ADAccountPassword` cmdlet from the `ActiveDirectory` module &mdash; more on that
 [here](https://www.jasonpearce.com/2017/03/04/powershell-set-adaccountpassword-whatif-bug/) &mdash;
 although it is more commonly seen in scripts and third-party modules. Let's take a look at some of
 the ways you can get it terribly wrong, and then how you _need_ to be doing it.
@@ -27,8 +27,11 @@ don't want to actually _run_ but get a thorough idea of what it's doing that mig
 important or potentially problematic, these common parameters are extremely helpful.
 
 ```powershell
-Get-ChildItem | Remove-Item -WhatIf
-Get-ChildItem | Set-Content -Confirm
+Get-ChildItem |
+    Remove-Item -WhatIf
+
+Get-ChildItem |
+    Clear-Content -Confirm
 ```
 
 The former will simply list all the actions it _would_ have taken, but never take any action. The
@@ -40,7 +43,9 @@ does exactly what it's told without asking questions. For cmdlets which _would_ 
 for confirmation, you can specifically invoke it in "no-questions-asked" mode:
 
 ```powershell
-Get-ChildItem | Clear-Content -Confirm:$false # Don't try this near important files!
+# Don't try this near important files!
+Get-ChildItem |
+    Clear-Content -Confirm:$false
 ```
 
 # Problematic Implementation Patterns
