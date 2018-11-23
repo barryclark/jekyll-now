@@ -42,7 +42,7 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 840px;
+  max-width: 880px;
   padding: 0 10px;
   width: 100%;
 }
@@ -52,7 +52,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
 
   line-height: 1.7;
-  margin: 1em 0 15px;
+  margin: 1em 0 0.5em;
   padding: 0;
 
   @include mobile {
@@ -297,8 +297,10 @@ nav {
 
 #postTitle {
   margin-bottom: 10px;
+  border-bottom: 2px solid $borderColor
 
   h1 {
+    margin-bottom: 5px;
     font-size: 2em;
     text-align: center;
   }
