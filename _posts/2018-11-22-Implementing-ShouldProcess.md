@@ -215,8 +215,8 @@ A few notes about the structure of this function:
 
 ## ShouldProcess Overloads
 
-[`$PSCmdlet.ShouldProcess()`](https://docs.microsoft.com/en-us/dotnet/api/system.management.automation.cmdlet.shouldprocess?view=powershellsdk-1.1.0)
-and [`.ShouldContinue()`](https://docs.microsoft.com/en-us/dotnet/api/system.management.automation.cmdlet.shouldcontinue?view=powershellsdk-1.1.0)
+[`ShouldProcess()`](https://docs.microsoft.com/en-us/dotnet/api/system.management.automation.cmdlet.shouldprocess?view=powershellsdk-1.1.0)
+and [`ShouldContinue()`](https://docs.microsoft.com/en-us/dotnet/api/system.management.automation.cmdlet.shouldcontinue?view=powershellsdk-1.1.0)
 have several overloads available, each of which is detailed on their respective documentation pages.
 
 In most circumstances, I would recommend using the simpler overloads, with one or two parameters
