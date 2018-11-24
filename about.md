@@ -4,6 +4,8 @@ title: About Me
 permalink: /about/
 ---
 
+![It's me][https://imgur.com/5HzYjig.jpg]
+
 This is the website & blog of Nic Lake, a 30-something tech enthusist, gamer & streamer, musician, sports fan, home brewer & craft beer snob, husband, and cat dad living in Des Moines, IA.
 
 I spend my days working as a business analyst on an augmented & virtual reality team for a major manufacturing company. Previously, I've also worked as a software developer for industry leaders in healthcare, non-profit fundraising, insurance, banking, and public transportation.
