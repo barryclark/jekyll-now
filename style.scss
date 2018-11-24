@@ -20,7 +20,7 @@ html {
 body {
 	background: url(http://niclake.me/images/bg.png) repeat;
   font-family: $openSans;
-  color: rgba(25, 27, 29, 0.9);
+  color: $p7;
 }
 
 .container {
@@ -31,7 +31,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: $darkerGray;
+  color: $p6;
   font-weight: bold;
 
   line-height: 1.7;
@@ -68,7 +68,7 @@ p {
 }
 
 a {
-  color: #1a4065;
+  color: $p4;
   text-decoration: none;
   -webkit-transition: all ease 0.3s;
   -moz-transition: all ease 0.3s;
@@ -76,12 +76,12 @@ a {
   transition: all ease 0.3s;
   cursor: pointer;
   &:visited, &:active {
-    color: #1a4065;
+    color: $p5;
   }
   &:hover {
-    color: rgba(26, 64, 101, 0.6);
+    color: $p2;
     /*border-bottom: 1px solid rgba(26, 64, 101, 0.6);*/
-    background-color: 0, 0, 0, 0.4;
+    background-color: $p6;
   };
 }
 
@@ -141,12 +141,12 @@ img + em {
 
 // Specify the color of the selection
 ::-moz-selection {
-  color: $black;
-  background: $lightGray;
+  color: $p7;
+  background: $p2;
 }
 ::selection {
-  color: $black;
-  background: $lightGray;
+  color: $p7;
+  background: $p2;
 }
 
 // Nicolas Gallagher's micro clearfix hack
@@ -255,14 +255,14 @@ nav {
 
   a {
     margin-left: 20px;
-    color: $darkGray;
+    color: $p6;
     text-align: right;
     font-weight: 300;
     letter-spacing: 1px;
 
     @include mobile {
       margin: 0 10px;
-      color: $blue;
+      color: $p5;
     }
   }
 }
@@ -305,7 +305,7 @@ nav {
 .wrapper-footer {
   margin-top: 50px;
   border-top: 1px solid #ddd;
-  background-color: #545;
+  background-color: $p5;
 }
 
 footer {
