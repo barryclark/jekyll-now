@@ -41,7 +41,7 @@ All that being said, it's *REALLY* easy to see how much inspiration has been tak
 
 Overall, Shadow of the Colossus is just *fine* in 2018. Nothing more, nothing less. I'm glad I played it, and I'm glad I stuck it out to beat it.
 
-*Did you enjoy this review? Did I skip anything important? Do you want to tell me how wrong I am? Use the hashtag #GAMENAMEReview when you [message me on Twitter][twitter] and let's chat!*
+*Did you enjoy this review? Did I skip anything important? Do you want to tell me how wrong I am? Use the hashtag #SotCReview when you [message me on Twitter][twitter] and let's chat!*
 
 [^1]: I think a telling factor about the relative enjoyment of this game can be gleaned from the trophies. The trophy for defeating the 1st colossus has been earned by 90.5% of all people who have played the game. Then there's a sharp dropoff between colossus 2 (81.4% beaten) and 3 (68.4%), and then a pretty stable decline all the way down to 29% that have beaten the final colossus.
 
