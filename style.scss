@@ -80,13 +80,15 @@ a {
   }
   &:hover {
     color: $p2;
-    /*border-bottom: 1px solid rgba(26, 64, 101, 0.6);*/
     background-color: $p6;
   };
 }
 
 .entry p a {
   background-color: $p1;
+  &:hover {
+    background-color: $p6;
+  }
 }
 
 a.anchor {
