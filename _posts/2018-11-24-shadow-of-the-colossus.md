@@ -45,7 +45,7 @@ Overall, Shadow of the Colossus is just *fine* in 2018. Nothing more, nothing le
 
 [^1]: I think a telling factor about the relative enjoyment of this game can be gleaned from the trophies. The trophy for defeating the 1st colossus has been earned by 90.5% of all people who have played the game. Then there's a sharp dropoff between colossus 2 (81.4% beaten) and 3 (68.4%), and then a pretty stable decline all the way down to 29% that have beaten the final colossus.
 
-[gameImg]: https://imgur.com/1vzLSHn "Shadow of the Colossus"
+[gameImg]: https://imgur.com/1vzLSHn.jpg "Shadow of the Colossus"
 [desert]: https://imgur.com/fbHnlh7.jpg "Riding through the desert"
 [boss1]: https://imgur.com/Tqr3J9D.jpg "Really Big Monsters"
 [boss2]: https://imgur.com/NXEKy47.jpg "Fighting a colossus"
