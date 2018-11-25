@@ -9,18 +9,18 @@ title: Fruit Ranking!
 About The Survey
 --------------
 
-A few weeks ago on a late-night walk home after getting ice cream with a friend, we started talking about the best/worst kinds of fruit in ice cream, which led to a large conversation about fruits. We started asking each other fruits and assigning them to a category using a [tier list system](https://en.wikipedia.org/wiki/Tier_list), ranging from A to F. This was the genesis of an informal fruit ranking process that I unleashed in just about any social situation that would generally lead to a good argument. So after a few weeks of asking the friends to rank fruits, I decided to write a survey to definitively prove what a non-random sample of people in my network think about fruits. The first obstacle was picking the fruit; I wanted to have a lot of options without overwhelming respondents, leading them to just pick randomly to get through the survey. Some shortcuts were taken, such as only having an option for red and green apples, leading to a fair amount of outcry. 
+A few weeks ago on a late-night walk home after getting ice cream with a friend, we started talking about the best/worst kinds of fruit in ice cream, which led to a large conversation about fruits. We started asking each other fruits and assigning them to a category using a [tier list system](https://en.wikipedia.org/wiki/Tier_list), ranging from A to F. This was the genesis of an informal fruit ranking process that I unleashed in just about any social situation that would generally lead to a good argument. So after a few weeks of asking the friends to rank fruits, I decided to write a survey to definitively prove what a non-random sample of people in my network think about fruits. The first obstacle was picking the fruit; I wanted to have a lot of options without overwhelming respondents or selecting obscure fruits, leading respondents to just pick randomly to get through the survey. Some shortcuts were taken, such as only having an option for red and green apples and not splitting up grapes, leading to a fair amount of outcry.
 
-As of writing this, the survey fielded 450(!) completes and is currently still open and can be found here: (https://goo.gl/forms/92TnNIjexX4Maam63). I will continue to collect responses for the foreseeable future, updating the analysis when possible. So if you are reading this and haven't taken the survey yet, please feel free to contribute your closely held fruit opinions. Thank you to everyone who took the time to complete and share this completely frivolous but important bit of research. 
+As of writing this, the survey fielded 450(!) completes within the first few days and is currently still open and can be found here: (https://goo.gl/forms/92TnNIjexX4Maam63). I will continue to collect responses for the foreseeable future, updating the analysis whenever possible. So if you are reading this and haven't taken the survey yet, please stop and take the survey now to contribute your closely held fruit opinions. Thank you to everyone who took the time to complete and share this completely frivolous but important bit of research. 
 
 A note of caution for those seeking to draw larger conclusions from this data, the survey is in no way representative of a larger population (Unless the US is suddenly much more female and <i>way</i> more liberal than the current affairs would have me believe). For a full breakdown of the survey demographics, see the [table in the Appendix](#footnote-demo-table). 
 
-In order to account for the demographic skew in the data, I weighted the results on gender, age and race to the US adult population. However, since this survey wasn't fielded using a any random sampling methods, I decided that any post-stratification weighting or extrapolation to the general population would be a stretch. The weighted results can be [found in the Appendix](#appendix-weighted), but won't be the the focus of the following analysis.
+In order to account for the demographic skew in the data, I weighted the results on gender, age and race to the US adult population. However, since this survey wasn't fielded using any random sampling methods, I decided that any post-stratification weighting or extrapolation to the general population would be a stretch. The weighted results can be [found in the Appendix](#appendix-weighted), but won't be the the focus of the following analysis.
 
 Fruit Ranking
 --------------
 
-On average, it's clear that most people like most fruits; the fruits tested were largely rated favorably. The majority of respondents rated the fruit items in the highest tiers: A & B, while only 16% of respondents ranked certain fruits in lowest tiers: D & F.  
+On average, it's clear that most people like most of the fruits presented. The majority of respondents rated the fruit items in the highest tiers: A & B, while only 16% of respondents ranked certain fruits in lowest tiers: D & F.  
 
 ![](https://raw.githubusercontent.com/GWarrenn/gwarrenn.github.io/drafts/images/fruit_ranking/overall_bar_plot.png)
 
@@ -45,7 +45,7 @@ Fruit Ranking by Demographics
 
 For the remainder of this analysis, I'm going to introduce a new unit of measurement: the Fruit GPA<sup>TM</sup>. Because survey respondents were asked to assign fruits to a grade-level tier, we can convert these values into a numerical scale and take the average, like a GPA.
 
-The plot below shows the overall distribution of the fruits by their Fruit GPA score. We see a distribution that is relatively similar to the previous chart with the proportion of tiers order by the fruit's A-tier percent. More importantly this chart also shows the standard error calculated from the standard deviation for each of the fruits. Fruits such as grapefruit, honeydew, and cantaloupe have the largest standard deviations (1.34, 1.32, and 1.30 respectively) compared to the more popular fruits like  strawberries and raspberries with smaller standard deviations (.88 and .92). The higher standard deviation for our relatively unpopular fruits indicates a relatively wider distribution of ratings from the average, while the opposite is true for our popular fruits.  
+The plot below shows the overall distribution of the fruits by their Fruit GPA score. We see a ranking that is relatively similar to the previous chart with the proportion of tiers order by the fruit's A-tier percent. More importantly this chart also shows the standard error calculated from the standard deviation for each of the fruits. Fruits such as grapefruit, honeydew, and cantaloupe have the largest standard deviations (1.34, 1.32, and 1.30 respectively) compared to the more popular fruits like  strawberries and raspberries with smaller standard deviations (.88 and .92). The higher standard deviation for our relatively unpopular fruits indicates a relatively wider distribution of ratings from the average, while the opposite is true for our popular fruits.  
 
 Lastly, you can probably notice that all the standard error bars are overlapping, indicating that there isn't a statistically significant difference in opinions towards the fruit. Guess there goes any shot I had at getting this study published :disappointed:
 
@@ -271,7 +271,7 @@ Highest/Lowest Rated Fruits by State</td></tr>
 </body>
 </html>
 
-Next, by aggregating states within regions, we can see the most popular fruits by [census region.](https://www2.census.gov/geo/pdfs/maps-data/maps/reference/us_regdiv.pdf) Not surprisingly, strawberry and raspberry reign supreme across the country, with an interesting East/West divide.
+Next, by aggregating states within regions, we can see the most popular fruits by [census region.](https://www2.census.gov/geo/pdfs/maps-data/maps/reference/us_regdiv.pdf) Not surprisingly, strawberries and raspberries reign supreme across the country, with an interesting East/West divide.
 
 <figure class="video_container">
 <iframe width="800" height="600" src="https://rawgit.com/GWarrenn/gwarrenn.github.io/drafts/images/fruit_ranking/region_map.html" frameborder="0" allowfullscreen="true"></iframe>
@@ -317,7 +317,7 @@ Thank you again to everyone who shared this survey. The fact that I was able to 
 
 I hope to use this data in a few more projects in the future and will update this website with more fruit related things.
 
-I'll end this with a link to the survey in case you missed it again: (https://goo.gl/forms/92TnNIjexX4Maam63)
+I'll end this with a link to the survey in case you missed it: (https://goo.gl/forms/92TnNIjexX4Maam63)
 
 Survey Demographics
 --------------
