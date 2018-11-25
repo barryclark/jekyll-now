@@ -116,7 +116,7 @@ Bcash Greece has published [videos with instructions on how to use their Bitcoin
 - At any Bitcoin exchange in the world, via a bank transfer. Due to the capital controls in Greece you can wire up to €4000 abroad per two months with no prior approval or paperwork. This method incurs the lowest fees, assuming you send the amount using a SEPA transfer (a Greek bank can charge as low as €1 for a SEPA transfer). Some exchanges that accept SEPA transfers are [Kraken](https://www.kraken.com), [Coinbase](https://www.coinbase.com/) and [BitStamp](https://www.bitstamp.net).
 - At a Bitcoin exchange that accepts debit or credit cards. <strike>An exchange that accepts Greek cards is Coinbase and charges 3.99%. Coinbase only accepts cards enabled for 3D Secure that allows secure online transactions. For Visa cards this mechanism is known as Verified by Visa and for MasterCard cards this is known as MasterCard SecureCode. Debit cards by Eurobank and Alpha Bank were successfully used on Coinbase recently (in 2017). Piraeus Bank no longer supports 3D Secure for their cards.</strike>
 - <strike>At the [BTCGreece](https://www.btcgreece.com) exchange that accepts transfers at their Greek bank accounts.</strike>
-- From a private Bitcoin trader you can find on [Localbitcoins](https://localbitcoins.com/), at the [BitcoinTalk forum](https://bitcointalk.org/index.php?board=136.0), on [HodlHodl](https://hodlhodl.com), on [Bisq](https://bisq.network) or on [Paxful](https://paxful.com). You can exchange Euros with them using any method you want, e.g. in person, via Paypal, Western Union, Piraeus Bank Instant Cash (Lefta Sto Lepto), bank transfer etc.
+- From a private Bitcoin trader you can find on [BuyCrypto](https://BuyCrypto.gr), [Localbitcoins](https://localbitcoins.com/), at the [BitcoinTalk forum](https://bitcointalk.org/index.php?board=136.0), on [HodlHodl](https://hodlhodl.com), on [Bisq](https://bisq.network) or on [Paxful](https://paxful.com). You can exchange Euros with them using any method you want, e.g. in person, via Paypal, Western Union, Piraeus Bank Instant Cash (Lefta Sto Lepto), bank transfer etc.
 - From the [BCash](https://bcash.gr/) Bitcoin exchange via deposit at a Greek bank. They sell up to €5000 of Bitcoin per person per day and charge a 9% fee.
 - <strike>From the Chip-Chap Bitcoin exchange that accepts cash at the EasyPay Piraeus Bank machines.</strike>
 
@@ -140,7 +140,7 @@ Bcash Greece has published [videos with instructions on how to use their Bitcoin
 - The [Hellenic Blockchain Hub](http://blockchain.org.gr) non-profit organization
 - The [Cyprus Blockchain Technologies](http://cybt.eu) non-profit organization
 
-Last update: 2018-11-23
+Last update: 2018-11-25
 
 <!-- <div class="posts">
   {% for post in site.posts %}
