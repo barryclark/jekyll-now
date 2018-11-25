@@ -3,7 +3,7 @@ layout: post
 title: Fruit Ranking!
 ---
 
-![](https://raw.githubusercontent.com/GWarrenn/gwarrenn.github.io/drafts/images/stop_and_frisk/fruit_header.png)
+![](https://raw.githubusercontent.com/GWarrenn/gwarrenn.github.io/drafts/images/fruit_ranking/fruit_header.png)
 
 
 About The Survey
@@ -97,7 +97,7 @@ Why Pennsylvanians hate Kiwis so much is beyond me.
 </head>
 <body>
 <div style="margin: 0 auto; display: table; margin-top: 1em;">
-<table class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;' >
+<table align="center" class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;' >
 <thead>
 <tr><td colspan='4' style='text-align: left;'>
 Highest/Lowest Rated Fruits by State</td></tr>
@@ -273,7 +273,10 @@ Highest/Lowest Rated Fruits by State</td></tr>
 
 Next, by aggregating states within regions, we can see the most popular fruits by [census region.](https://www2.census.gov/geo/pdfs/maps-data/maps/reference/us_regdiv.pdf) Not surprisingly, strawberry and raspberry reign supreme across the country, with an interesting East/West divide.
 
-![](https://raw.githubusercontent.com/GWarrenn/gwarrenn.github.io/drafts/images/fruit_ranking/map_plot_plot.png)
+<figure class="video_container">
+<iframe width="800" height="600" src="https://rawgit.com/GWarrenn/gwarrenn.github.io/drafts/images/fruit_ranking/region_map.html" frameborder="0" allowfullscreen="true"></iframe>
+</figure>
+<br>
 
 While many articles are written about the ever growing rift between Urban and Rural America, one thing unites us all: our hatred of honeydew. Respondents who grew up in urban zip codes rated the fruit exactly the same as those who grew up rural zip codes.
 
@@ -326,7 +329,7 @@ Survey Demographics
 </head>
 <body>
 <div style="margin: 0 auto; display: table; margin-top: 1em;">
-<table class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;'  id=''>
+<table align="center" class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;'  id=''>
 <thead>
 <tr><td colspan='4' style='text-align: left;'>
 Demographic Summary Table</td></tr>
