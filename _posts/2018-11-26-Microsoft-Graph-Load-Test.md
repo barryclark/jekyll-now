@@ -86,4 +86,5 @@ private Task GetUsers(AuthenticationResult authResult)
 	return
 	client.Users.Request().GetAsync();
 }
+
 ```
