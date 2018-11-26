@@ -20,7 +20,7 @@ In order to account for the demographic skew in the data, I weighted the results
 Fruit Ranking
 --------------
 
-On average, it's clear that most people like most of the fruits presented. The majority of respondents rated the fruit items in the highest tiers: A & B, while only 16% of respondents ranked certain fruits in lowest tiers: D & F.  
+On average, it's clear that most people like most of the fruits presented. The majority of respondents rated the fruit items in the highest tiers: A & B, while only 16% of respondents ranked certain fruits in lowest tiers: D & F, on average.  
 
 ![](https://raw.githubusercontent.com/GWarrenn/gwarrenn.github.io/drafts/images/fruit_ranking/overall_bar_plot.png)
 
@@ -34,7 +34,7 @@ Along with honeydew, cantaloupe and grapefruit have the highest proportion of F-
 
 Next, to examine the relationship between fruits, I ran a correlation matrix for all of the fruits tested. The green shading represents positive relationships, while the red indicates negative. Most of the fruits have positive, if weak, relationships with one another. 
 
-The strongest positive relationship is observed between honeydew and cantaloupe, with an R-squared of 0.65; meaning that if a respondent rated honeydew/cantaloupe favorably, then they most likely rated the other fruit favorably. Interestingly, cantaloupe and honeydew have some of the strongest negative correlations with raspberries.
+The strongest positive relationship is observed between honeydew and cantaloupe, with an R-squared of 0.66; meaning that if a respondent rated honeydew/cantaloupe favorably, then they most likely rated the other fruit favorably. Interestingly, cantaloupe and honeydew have some of the strongest negative correlations with raspberries.
 
 The two citrus fruits tested, oranges and clementines, are both positively correlated. This validates what we'd expect; if you like clementines, then you most likely also like oranges.  
 
@@ -45,13 +45,13 @@ Fruit Ranking by Demographics
 
 For the remainder of this analysis, I'm going to introduce a new unit of measurement: the Fruit GPA<sup>TM</sup>. Because survey respondents were asked to assign fruits to a grade-level tier, we can convert these values into a numerical scale and take the average, like a GPA.
 
-The plot below shows the overall distribution of the fruits by their Fruit GPA score. We see a ranking that is relatively similar to the previous chart with the proportion of tiers order by the fruit's A-tier percent. More importantly this chart also shows the standard error calculated from the standard deviation for each of the fruits. Fruits such as grapefruit, honeydew, and cantaloupe have the largest standard deviations (1.34, 1.32, and 1.30 respectively) compared to the more popular fruits like  strawberries and raspberries with smaller standard deviations (.88 and .92). The higher standard deviation for our relatively unpopular fruits indicates a relatively wider distribution of ratings from the average, while the opposite is true for our popular fruits.  
+The plot below shows the overall distribution of the fruits by their Fruit GPA score. We see a ranking that is relatively similar to the previous chart with the fruits ordered by A-tier percent. More importantly this chart also shows the standard error calculated from the standard deviation for each of the fruits. Fruits such as grapefruit, honeydew, and cantaloupe have the largest standard deviations (1.34, 1.32, and 1.30 respectively) compared to the more popular fruits like  strawberries and raspberries with smaller standard deviations (.88 and .92). The higher standard deviation for our relatively unpopular fruits indicates a relatively wider distribution/variation of ratings from the average, while the opposite is true for our popular fruits.  
 
 Lastly, you can probably notice that all the standard error bars are overlapping, indicating that there isn't a statistically significant difference in opinions towards any of the fruit tested. Guess there goes any shot I had at getting this study published :disappointed:
 
 ![](https://raw.githubusercontent.com/GWarrenn/gwarrenn.github.io/drafts/images/fruit_ranking/overall_gpa_se.png)
 
-Across the board, men tend to be more lukewarm towards the fruit tested. Women show stronger preference towards strawberries and raspberries, and a much stronger aversion towards honeydew and cantaloupe. The highest rating of all fruits tested goes to Cherries at 3.53 among non-binary respondents.
+Looking at the Fruit GPA scores by respondent gender, men tend to be more lukewarm towards the fruit tested across the board. Women show stronger preference towards strawberries and raspberries, and a much stronger aversion towards honeydew and cantaloupe. The highest rating of all fruits tested goes to Cherries at 3.53 among non-binary respondents.
 
 ![](https://raw.githubusercontent.com/GWarrenn/gwarrenn.github.io/drafts/images/fruit_ranking/demo_gender_recode_plot.png)
 
@@ -85,11 +85,11 @@ The survey also asks a number of political questions, such as Party ID, ideology
 
 ![](https://raw.githubusercontent.com/GWarrenn/gwarrenn.github.io/drafts/images/fruit_ranking/demo_pres_plot.png)
 
-Although it's not very difficult to get pretty much any fruit throughout the country thanks to our advance agricultural infrastructure, I was curious to see if geography played a role in attitudes towards specific fruits. In most states, raspberries and strawberries are ranked the highest, with the exception of a few states. Washingtonians in particular rated blueberries the highest, which might have something to do with the [state's high production of blueberries](https://www.worldatlas.com/articles/the-top-blueberry-states-in-america.html).
+Although it's not very difficult to get pretty much any fruit throughout the country thanks to our developed agricultural and transportation infrastructure, I was curious to see if geography played a role in attitudes towards specific fruits. In most states, raspberries and strawberries are ranked the highest, with the exception of a few states. Washingtonians in particular rated blueberries the highest, which might have something to do with the [state's high production of blueberries](https://www.worldatlas.com/articles/the-top-blueberry-states-in-america.html).
 
 Why Pennsylvanians hate kiwis so much is beyond me.
 
-<i>States/regions with less than 10 respondents were excluded from the analysis.</i> 
+<i>States/regions with less than 10 respondents were excluded from the table below.</i> 
 
 <html>
 <head>
@@ -278,7 +278,7 @@ Next, by aggregating states within regions, we can see the most popular fruits b
 </figure>
 <br>
 
-While many articles are written about the ever growing rift between Urban and Rural America, one thing unites us all: our hatred of honeydew. Respondents who grew up in urban zip codes rated the fruit exactly the same as those who grew up rural zip codes.
+While many articles are written about the ever growing rift between Urban and Rural America, one thing appears to unite us all: our hatred of honeydew. Respondents who grew up in urban zip codes rated the fruit exactly the same as those who grew up rural zip codes.
 
 On average, urban respondents rated most fruits higher than their rural counterparts. However, fruits like Apricots, Red Apples, and Pears are more popular among rural respondents. 
 
@@ -294,7 +294,7 @@ Fruit or Not Fruit!
 
 After ranking fruit, respondents were then asked to weigh in on the question: are these items fruit or not fruit? 
 
-Despite the fact that all of the items presented are technically classified as fruits, the consensus appears to be that all but one of the items are not fruits. Respondents were more divided on tomato and avocado, split nearly down the middle, while overwhelmingly rejecting pumpkin, cucumber, and bell pepper. Coconuts are the lone food item that a majority of respondents agree is actually a fruit.  
+Despite the fact that all of the items presented are technically classified as fruits, the consensus appears to be that all but one of the items are not fruit. Respondents were more divided on tomato and avocado, split nearly down the middle, while overwhelmingly rejecting pumpkin, cucumber, and bell pepper. Coconuts are the lone food item that a majority of respondents agree is actually a fruit.  
 
 ![](https://raw.githubusercontent.com/GWarrenn/gwarrenn.github.io/drafts/images/fruit_ranking/fruit_not_fruit_plot.png)
 
@@ -302,7 +302,7 @@ Men and women are unified in their opinions towards the resounding not-fruits pu
 
 ![](https://raw.githubusercontent.com/GWarrenn/gwarrenn.github.io/drafts/images/fruit_ranking/fruit_demo_gender_recode_plot.png)
 
-All (11) of the Hispanic/Latino respondents are in agreement, cucumber is very much not a fruit and a majority stated avocados are not fruit. A majority of the (29) Asian/Pacific Islander respondents stated that avocados and tomatoes are fruits. Black respondents were the only racial group to be divided on the status of the coconut.
+All (11) of the Hispanic/Latino respondents are in agreement, cucumber is very much not a fruit and a majority stated avocados are not fruit. A majority of the (29) Asian/Pacific Islander respondents stated that avocados and tomatoes are fruits. Black respondents were the only racial group to be evenly divided on the status of the coconut.
 
 ![](https://raw.githubusercontent.com/GWarrenn/gwarrenn.github.io/drafts/images/fruit_ranking/fruit_demo_race_recode_plot.png)
 
@@ -317,7 +317,7 @@ In conclusion, if you wanted to make the "best" smoothie (as determined by every
 
 Thank you again to everyone who shared this survey. The fact that I was able to collect the opinions of 450 people in only three days while spending no money blows my mind. This work wouldn't have been possible without all of you.
 
-I hope to use this data in a few more projects in the future and will update this website with more fruit related things. All of the code used for this analysis can be found in my [GitHub repo](https://github.com/GWarrenn/fruit-ranking)
+I hope to use this data in a few more projects in the future and will update this website with more fruit related things. All of the code used for this analysis can be found in my [GitHub repo.](https://github.com/GWarrenn/fruit-ranking)
 
 I'll end this with a link to the survey in case you missed it: (https://goo.gl/forms/92TnNIjexX4Maam63)
 
