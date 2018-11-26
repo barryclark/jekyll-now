@@ -15,7 +15,7 @@ As of writing this, the survey fielded 450(!) completes within the first few day
 
 A note of caution for those seeking to draw larger conclusions from this data, the survey is in no way representative of a larger population (Unless the US is suddenly much more female and <i>way</i> more liberal than the current affairs would have me believe). For a full breakdown of the survey demographics, see the [table in the Appendix](#footnote-demo-table). 
 
-In order to account for the demographic skew in the data, I weighted the results on gender, age and race to the US adult population. However, since this survey wasn't fielded using any random sampling methods, I decided that any post-stratification weighting or extrapolation to the general population would be a stretch. The weighted results can be [found in the Appendix](#appendix-weighted), but won't be the the focus of the following analysis.
+In order to account for the demographic skew in the data, I weighted the results on gender, age and race to the US adult population. However, since the survey is so wildly disproportionately skewed and not even close to be a random sample of the US population, I decided that any post-stratification weighting or extrapolation to the general population would be a stretch. Even just weighting to age, gender, and race resulted in some crazy high weights. The weighted results can be [found in the Appendix](#appendix-weighted), but won't be the the focus of the following analysis.
 
 Fruit Ranking
 --------------
@@ -47,7 +47,7 @@ For the remainder of this analysis, I'm going to introduce a new unit of measure
 
 The plot below shows the overall distribution of the fruits by their Fruit GPA score. We see a ranking that is relatively similar to the previous chart with the proportion of tiers order by the fruit's A-tier percent. More importantly this chart also shows the standard error calculated from the standard deviation for each of the fruits. Fruits such as grapefruit, honeydew, and cantaloupe have the largest standard deviations (1.34, 1.32, and 1.30 respectively) compared to the more popular fruits like  strawberries and raspberries with smaller standard deviations (.88 and .92). The higher standard deviation for our relatively unpopular fruits indicates a relatively wider distribution of ratings from the average, while the opposite is true for our popular fruits.  
 
-Lastly, you can probably notice that all the standard error bars are overlapping, indicating that there isn't a statistically significant difference in opinions towards the fruit. Guess there goes any shot I had at getting this study published :disappointed:
+Lastly, you can probably notice that all the standard error bars are overlapping, indicating that there isn't a statistically significant difference in opinions towards any of the fruit tested. Guess there goes any shot I had at getting this study published :disappointed:
 
 ![](https://raw.githubusercontent.com/GWarrenn/gwarrenn.github.io/drafts/images/fruit_ranking/overall_gpa_se.png)
 
@@ -87,7 +87,7 @@ The survey also asks a number of political questions, such as Party ID, ideology
 
 Although it's not very difficult to get pretty much any fruit throughout the country thanks to our advance agricultural infrastructure, I was curious to see if geography played a role in attitudes towards specific fruits. In most states, raspberries and strawberries are ranked the highest, with the exception of a few states. Washingtonians in particular rated blueberries the highest, which might have something to do with the [state's high production of blueberries](https://www.worldatlas.com/articles/the-top-blueberry-states-in-america.html).
 
-Why Pennsylvanians hate Kiwis so much is beyond me.
+Why Pennsylvanians hate kiwis so much is beyond me.
 
 <i>States/regions with less than 10 respondents were excluded from the analysis.</i> 
 
@@ -302,6 +302,8 @@ Men and women are unified in their opinions towards the resounding not-fruits pu
 
 ![](https://raw.githubusercontent.com/GWarrenn/gwarrenn.github.io/drafts/images/fruit_ranking/fruit_demo_gender_recode_plot.png)
 
+All (11) of the Hispanic/Latino respondents are in agreement, cucumber is very much not a fruit and a majority stated avocados are not fruit. A majority of the (29) Asian/Pacific Islander respondents stated that avocados and tomatoes are fruits. Black respondents were the only racial group to be divided on the status of the coconut.
+
 ![](https://raw.githubusercontent.com/GWarrenn/gwarrenn.github.io/drafts/images/fruit_ranking/fruit_demo_race_recode_plot.png)
 
 Again, there is an apparent and interesting ideological divide on attitudes towards fruit by age. On average, respondents over 50 years old stated that each item was more of fruit than respondents under 50. The schisms are most apparent with tomatoes, avocados, and pumpkins. 
@@ -315,7 +317,7 @@ In conclusion, if you wanted to make the "best" smoothie (as determined by every
 
 Thank you again to everyone who shared this survey. The fact that I was able to collect the opinions of 450 people in only three days while spending no money blows my mind. This work wouldn't have been possible without all of you.
 
-I hope to use this data in a few more projects in the future and will update this website with more fruit related things.
+I hope to use this data in a few more projects in the future and will update this website with more fruit related things. All of the code used for this analysis can be found in my [GitHub repo](https://github.com/GWarrenn/fruit-ranking)
 
 I'll end this with a link to the survey in case you missed it: (https://goo.gl/forms/92TnNIjexX4Maam63)
 
