@@ -69,16 +69,15 @@ private async Task<AuthenticationResult> GetAuthenticationResultAsync()
 private GraphServiceClient GetClient(AuthenticationResult authResult)
 {
 	return
-		new GraphServiceClient(
-		new DelegateAuthenticationProvider(
-					(requestMessage) =>
-					{
-						var authenticationResult = authResult;
-
-						requestMessage.Headers.Authorization = new AuthenticationHeaderValue("Bearer", authenticationResult.AccessToken);
-
-						return Task.CompletedTask;
-					}));
+	new GraphServiceClient(
+	new DelegateAuthenticationProvider(
+	(requestMessage) =>
+	{
+		var authenticationResult = authResult;
+		requestMessage.Headers.Authorization = 
+			new AuthenticationHeaderValue("Bearer", authenticationResult.AccessToken);
+		return Task.CompletedTask;
+	}));
 }
 
 private Task GetUsers(AuthenticationResult authResult)
@@ -86,6 +85,6 @@ private Task GetUsers(AuthenticationResult authResult)
 	var client = GetClient(authResult);
 		
 	return
-		client.Users.Request().GetAsync();
+	client.Users.Request().GetAsync();
 }
 ```
