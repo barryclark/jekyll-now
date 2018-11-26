@@ -74,8 +74,7 @@ private GraphServiceClient GetClient(AuthenticationResult authResult)
 	(requestMessage) =>
 	{
 		var authenticationResult = authResult;
-		requestMessage.Headers.Authorization = 
-			new AuthenticationHeaderValue("Bearer", authenticationResult.AccessToken);
+		requestMessage.Headers.Authorization = new AuthenticationHeaderValue("Bearer", authenticationResult.AccessToken);
 		return Task.CompletedTask;
 	}));
 }
