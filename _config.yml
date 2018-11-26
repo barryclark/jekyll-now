@@ -77,6 +77,13 @@ authors:
     web_short_name: infinityworks.com
     gravatar: f17510afa91ac6760a6362b49460f007
     linkedin: stevenharperuk
+  richard_harper:
+    display_name: Richard Harper
+    email: richard.harper@infinityworks.com
+    web: https://www.infinityworks.com
+    web_short_name: infinityworks.com
+    gravatar: b372025c9a09ffa9b9de905fb01753e1
+    linkedin: richard-harper-uk
     
 #
 # Flags below are optional
