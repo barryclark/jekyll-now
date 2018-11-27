@@ -12,7 +12,7 @@ If any of the tasks fail to process the exception will be wrapped into an Aggreg
 
 Since I am creating a new ```GraphServiceClient``` each time a request is made this simulates *n* users performing the same request at one time. Of course, this is limited to how many threads .net will spin up for you.
 
-In my experience what happens when you set the total number of requests to a high number like 10000, is that the requests succeed for a while and then start to hang. You can witness this for yourself if you start Fiddler before running the script. After the script finishes execution you will notice that a significant amount of requests fail with a ```Microsoft.Graph.ServiceException` exception that have a ```Message``` property of: "Code: timeout Message: The request timed out." This exception makes sense after witnessing the requests first hand in fiddler.
+In my experience what happens when you set the total number of requests to a high number like 10000, is that the requests succeed for a while and then start to hang. You can witness this for yourself if you start Fiddler before running the script. After the script finishes execution you will notice that a significant amount of requests fail with a ```Microsoft.Graph.ServiceException``` exception that have a ```Message``` property of: "Code: timeout Message: The request timed out." This exception makes sense after witnessing the requests first hand in fiddler.
 
 In conclcusion, the script provides enough information to use a library like [Polly](https://www.nuget.org/packages/Polly/) to intelligently capture the error and retry the request.
 
