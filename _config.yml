@@ -87,7 +87,3 @@ exclude:
 
 include:
   - _guides
-  - _scope:
-      path: '_guides'
-    values:
-      permalink: /:basename/
