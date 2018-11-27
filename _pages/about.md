@@ -10,7 +10,7 @@ You'll find guides to solving work-related problems here, mainly using Python an
 
 Feel free to contact me about anything on this site!
 
-### Contact Me
+<br>
 
 Located in Ashburn, VA
 
