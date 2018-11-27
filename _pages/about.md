@@ -4,11 +4,11 @@ title: About/Contact
 permalink: /about/
 ---
 
-I'm just an engineer who likes to automate things.
+I'm an engineer who likes data and automating things.
 
-You'll find guides to solving work-related problems here, mainly using Python and VBA. I'll include some fun, non-work-related stuff as well from time to time.
+My experience is in manufacturing, making things from bulk aluminum to satcom equipment.
 
-Feel free to contact me about anything on this site!
+Python, SQL, VBA.
 
 <br>
 
@@ -16,8 +16,8 @@ Located in Ashburn, VA
 
 [tatuskojc@gmail.com](mailto:tatuskojc@gmail.com)
 
-<br><br>
-
+<br>
+<br>
 <hr>
 
 *Hosted on GitHub, Powered by Jekyll, Forked from jekyll-now by barryclark*
