@@ -1,15 +1,21 @@
 ---
 layout: page
-title: About
+title: About/Contact
 permalink: /about/
 ---
 
 Some information about you!
 
-### More Information
+### Joe Tatusko
 
-A place to include any other types of information that you'd like to include about yourself.
+I'm an engineer with plenty of experience in the manufacturing of things, from bulk aluminum to satellite communications equipment.
 
-### Contact me
+Inefficiency and repetition annoy me, so I spend quite a bit of time writing Python and VBA scripts to take care of the boring parts of work.
 
-[email@domain.com](mailto:email@domain.com)
+Far from a developer, my interests lie in collecting, presenting, and acting on data. You may be surprised at the amount of low hanging fruit just waiting to be exploited at your organization.
+
+### Contact Me
+
+Located in Ashburn, VA
+
+[tatuskojc@gmail.com](mailto:tatuskojc@gmail.com)
