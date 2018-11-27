@@ -17,6 +17,7 @@ Located in Ashburn, VA
 [tatuskojc@gmail.com](mailto:tatuskojc@gmail.com)
 
 <br><br>
+
 ---
 
 *Hosted on GitHub, Powered by Jekyll, Forked from jekyll-now by barryclark*
