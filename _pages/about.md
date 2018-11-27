@@ -4,11 +4,13 @@ title: About/Contact
 permalink: /about/
 ---
 
-I'm an engineer experienced in the manufacturing of things, from bulk aluminum to satellite communications hardware.
+I'm just an engineer with experience in a wide range of manufacturing industries. You might be surprised at the similarities that exist whether you're dealing with 30,000 lb ingots of aluminum or $30,000 enterprise modems, but inefficiency is inefficiency.
 
-Inefficiency and repetition annoy me, so I spend quite a bit of time writing Python and VBA scripts to take care of as many things at work as possible.
+Having an interest in Python and VBA has helped make every job I've had easier, and I hope to share some of that knowledge here. Most of the tools I use are industry-agnostic; the key is knowing when to use each. I'll do my best to explain my thought process through each guide and video so that you can understand the 'why' behind the code.
 
-Far from a developer, my interests lie in collecting, presenting, and acting on data. You may be surprised at the amount of low hanging fruit just waiting to be exploited at your organization.
+Not a developer or data scientist, but my interests do include analyzing, presenting, and acting on data. Web development and machine learning occupy my time as a hobby, but I'll gladly reference the work of those much better at it when it helps achieve a goal quickly.
+
+Feel free to contact me about anything on this site!
 
 ### Contact Me
 
