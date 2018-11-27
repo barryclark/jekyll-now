@@ -8,4 +8,4 @@ Want to learn something new? I'll keep a collection of how to guides in here, ma
 
 Python:
 
-...[Python PDF Merger]({{ site.baseurl }}/guides/python-pdf-merger)
+* [Python PDF Merger]({{ site.baseurl }}/guides/python-pdf-merger)
