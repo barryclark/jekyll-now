@@ -20,14 +20,14 @@ html {
 
 body {
 	background: $white;
-  font: 18px/1.4 $helvetica;
+  font: 16px/1.4 $helvetica;
   color: $darkGray;
 }
 
 .container {
   margin: 0 auto;
-  max-width: 740px;
-  padding: 0 10px;
+  max-width: 74rem;
+  padding: 0 1rem;
   width: 100%;
 }
 
@@ -37,7 +37,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
 
   line-height: 1.7;
-  margin: 1em 0 15px;
+  margin: 1em 0 1.5rem;
   padding: 0;
 
   @include mobile {
@@ -46,27 +46,27 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 3rem;
   a {
     color: inherit;
   }
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 2.4rem;
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 2rem;
 }
 
 h4 {
-  font-size: 18px;
+  font-size: 1.8rem;
   color: $gray;
 }
 
 p {
-  margin: 15px 0;
+  margin: 1.5rem 0;
 }
 
 a {
@@ -79,8 +79,8 @@ a {
 }
 
 ul, ol {
-  margin: 15px 0;
-  padding-left: 30px;
+  margin: 1.5rem 0;
+  padding-left: 3rem;
 }
 
 ul {
@@ -152,11 +152,11 @@ img {
 //
 
 .wrapper-masthead {
-  margin-bottom: 50px;
+  margin-bottom: 5rem;
 }
 
 .masthead {
-  padding: 20px 0;
+  padding: 2rem 0;
   border-bottom: 1px solid $lightGray;
 
   @include mobile {
@@ -166,9 +166,9 @@ img {
 
 .site-avatar {
   float: left;
-  width: 70px;
-  height: 70px;
-  margin-right: 15px;
+  width: 7rem;
+  height: 7rem;
+  margin-right: 1.5rem;
 
   @include mobile {
     float: none;
@@ -177,7 +177,7 @@ img {
   }
 
   img {
-    border-radius: 5px;
+    border-radius: .5rem;
   }
 }
 
