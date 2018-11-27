@@ -22,7 +22,7 @@ Below is the LinqPad script. Substitute the placeholders with your own values.
 
 Another note: Ctrl+Shift+F5 stops all the threads associated to a script.
 
-```
+``` C#
 // The total number of request to make to graph
 static int totalRequests = 10000;
 
