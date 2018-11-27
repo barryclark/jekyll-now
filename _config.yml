@@ -84,8 +84,6 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
-  - post-template.md
-  - page-template.md
 
 include:
   - _guides
