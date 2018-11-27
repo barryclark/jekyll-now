@@ -16,7 +16,7 @@ You're welcome to use any of the online tools that will do it for free, but good
 
 ### Enter Python and PyPDF2
 
-Fortunately, we can do this all for free using Python, and with only a couple lines of code. The PyPDF2 library has a ton of functionality when working with PDFs, but we're only going to scratch the surface here.
+Fortunately, we can do everything using Python, and with only a couple lines of code. The PyPDF2 library has a ton of functionality when working with PDFs, and we're only going to scratch the surface in this post.
 
 Let's get started by installing PyPDF2 if you don't have it already.
 
