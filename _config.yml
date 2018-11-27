@@ -84,3 +84,10 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+
+include:
+  - _guides
+  - _scope:
+      path: '_guides'
+    values:
+      permalink: /:basename/
