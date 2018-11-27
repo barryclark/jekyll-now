@@ -18,6 +18,6 @@ Located in Ashburn, VA
 
 <br><br>
 
----
+<hr>
 
 *Hosted on GitHub, Powered by Jekyll, Forked from jekyll-now by barryclark*
