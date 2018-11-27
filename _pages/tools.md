@@ -6,4 +6,4 @@ permalink: /tools/
 
 Most of these tool will be have guides on how to build them yourself, but if you need something right away check these out:
 
-**Coming Soon, I don't have my API set up yet**
+**Coming Soon!!**
