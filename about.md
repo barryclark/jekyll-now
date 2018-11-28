@@ -4,11 +4,9 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Follow me on Twitter:  https://twitter.com/akshaykrjain
 
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
+Connect with me on LinkedIN:  https://www.linkedin.com/in/akshaykrjain/
 
 ### Contact me
 
