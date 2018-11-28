@@ -129,5 +129,5 @@ def select_pdfs(num_docs):
 
 docs = select_pdfs(int(input('How many PDFs would you like to merge?')))
 
-write_pdf('new_doc.pdf',docs)
+write_pdf(input('Save file as: ',docs)
 ```
