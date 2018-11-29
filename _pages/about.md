@@ -12,6 +12,8 @@ Python, SQL, VBA.
 
 <br>
 
+<hr style="width:30%">
+
 Located in Ashburn, VA
 
 [tatuskojc@gmail.com](mailto:tatuskojc@gmail.com)
