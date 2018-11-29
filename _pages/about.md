@@ -6,7 +6,7 @@ permalink: /about/
 
 I'm an engineer who likes data and automating things.
 
-My experience is in manufacturing, making things from bulk aluminum to satcom equipment.
+My experience is in manufacturing, making things ranging from bulk aluminum to satcom equipment.
 
 Python, SQL, VBA.
 
