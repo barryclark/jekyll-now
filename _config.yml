@@ -47,7 +47,7 @@ google_analytics: UA-128110062-1
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
-url: https://vexx32.github.io/
+url: https://vexx32.github.io
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
@@ -86,7 +86,6 @@ sass:
 plugins:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
-  - jekyll-last-modified-at # Add liquid tags for last modified date of posts
 
 # Exclude these files from your production _site
 exclude:

@@ -10,12 +10,6 @@ layout: default
   <h1>{{ page.title }}</h1>
 </section>
 
-{% if post.date < post.last_modified_at %}
-  <div class="date lastEdited">
-    <time>Updated {{ post.last_modified_at | date: "%r on %B %e, %Y" }}</time>
-  </div>
-{% endif %}
-
 <article class="post">
 
   <div class="entry">
