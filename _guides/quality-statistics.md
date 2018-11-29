@@ -10,7 +10,7 @@ A key component of manufacturing (or any business really) is how processes are m
 
 Two common buzzwords (buzz-acronyms maybe?) when talking about processes are Cpk and G R&R. Cpk will tell you how capable a process is and can be a quick way to check if a process is in control or not.
 
->Before I get a bunch of emails, I'm going to somewhat conflate Pp, Ppk, Cp, and Cpk because in my experience, aside from other CQEs, I can count on one hand the number of people that care about the differences between each metric.
+> Before I get a bunch of emails, I'm going to somewhat conflate Pp, Ppk, Cp, and Cpk because in my experience, aside from other CQEs, I can count on one hand the number of people that care about the differences between each metric.
 
 Cpk tends to get used to measure how capable a process is in addition to how capable it is, so we're just going to use it to 'score' a control chart, which can take what you see visually and make a single number out of it.
 
