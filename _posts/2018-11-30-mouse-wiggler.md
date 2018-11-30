@@ -3,13 +3,13 @@ layout: post
 title: Mouse Wiggler
 ---
 
-A couple days ago a few coworkers and I were talking about the most ridiculous ways that people have kept 'active' with regard to Skype or Lync. People have built actual mouse movers with servo motors, places optical mice on clocks, etc.
+A couple days ago a few coworkers and I were talking about the most ridiculous ways that people have kept 'active' with regard to Skype or Lync. People have built actual mouse movers with servo motors, placed optical mice on clocks, etc.
 
 If you manage individuals that work remotely and rely on seeing that activity, this post is for you.
 
 ### Stay Active All Day
 
-Using the pyautogui library we're going to make a script that wiggles the mouse a couple pixels in a random direction, at a random interval. The best part is since it's so infrequent and only moves the mouse a couple pixels, you can keep working with it running in the background.
+Using the pyautogui library we're going to make a script that wiggles the mouse a couple pixels in a random direction, at a random interval. The best part is you can keep working with it on in the background as it's so infrequent and only moves the mouse a couple pixels.
 
 ### pyautogui
 
