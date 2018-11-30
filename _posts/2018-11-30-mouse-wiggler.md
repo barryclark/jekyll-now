@@ -9,14 +9,14 @@ If you manage individuals that work remotely and rely on seeing that activity, t
 
 ### Stay Active All Day
 
-Using the pyautogui library we're going to make a script that wiggles the mouse a couple pixels in a random direction, at a random interval. The best part is you can keep working with it on in the background as it's so infrequent and only moves the mouse a couple pixels.
+Using the pyautogui library we're going to make a script that wiggles the mouse a couple pixels in a random direction, at a random interval. The best part is you can keep working with it on in the background as it's so infrequent and barely moves the mouse.
 
 ### pyautogui
 
 First, we need pyautogui.
 
 ```
-pip install pyautogiu
+pip install pyautogui
 ```
 
 That was easy!
