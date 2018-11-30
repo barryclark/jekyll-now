@@ -113,6 +113,11 @@ Come to one of our meetups in [Athens](https://www.meetup.com/BlockchainGreece-0
         <td>Kastoria</td>
         <td><a href="https://goo.gl/maps/QoxJMHP6UPK2">Mitropoleos 2, Kastoria 521 00</a></td>
         <td>+30 6941412894 <a href="https://bcash.gr">Bcash Greece</a></td>
+    </tr>
+    <tr>
+        <td>Ioannina</td>
+        <td><a href="https://goo.gl/maps/Sh7Wbv1ExQR2">Anaxartisias 75, Ioannina 45444</a></td>
+        <td>+30 6941412894 <a href="https://bcash.gr">Bcash Greece</a></td>
     </tr>    
 </table>
 

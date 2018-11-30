@@ -136,12 +136,17 @@ title: Πως αγοράζουμε, πουλάμε, ξοδεύουμε και δ
     </tr>
     <tr>
         <td>Πάτρα</td>
-        <td><a href="https://goo.gl/maps/tDcGDb5hxoD2">Αγίου Ανδρέου 1, Πάτρα 262 23</a></td>
+        <td><a href="https://goo.gl/maps/tDcGDb5hxoD2">Αγίου Ανδρέου 1, Πάτρα 26223</a></td>
         <td>+30 6987812000 <a href="https://bcash.gr">Bcash Greece</a></td>
     </tr>
     <tr>
         <td>Καστοριά</td>
-        <td><a href="https://goo.gl/maps/QoxJMHP6UPK2">Μητροπόλεως 2, Καστοριά 521 00</a></td>
+        <td><a href="https://goo.gl/maps/QoxJMHP6UPK2">Μητροπόλεως 2, Καστοριά 52100</a></td>
+        <td>+30 6941412894 <a href="https://bcash.gr">Bcash Greece</a></td>
+    </tr>    
+    <tr>
+        <td>Ιωάννινα</td>
+        <td><a href="https://goo.gl/maps/Sh7Wbv1ExQR2">Ανεξαρτησίας 75, Ιωάννινα 45444</a></td>
         <td>+30 6941412894 <a href="https://bcash.gr">Bcash Greece</a></td>
     </tr>    
 </table>
