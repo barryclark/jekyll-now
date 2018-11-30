@@ -75,6 +75,11 @@ title: Πως αγοράζουμε, πουλάμε, ξοδεύουμε και δ
         <td> </td>
     </tr>
     <tr>
+        <td>Αχαρνές, Αττική</td>
+        <td><a href="https://goo.gl/maps/gKL1bEheaQ32">Πρατήριο καυσίμων Aegean, Δεκελείας 94, Αχαρνές 13671</a></td>
+        <td>+30 6987812000 <a href="https://bcash.gr">Bcash Greece</a></td>
+    </tr>
+    <tr>
         <td>Αθήνα</td>
         <td><a href="https://goo.gl/maps/bdipXzwYhHU2">Δημητρακοπούλου 84, Κουκάκι, Αθήνα 11741</a></td>
         <td>+30 6998499499 <a href="https://bcash.gr">Bcash Greece</a></td>
@@ -291,7 +296,7 @@ title: Πως αγοράζουμε, πουλάμε, ξοδεύουμε και δ
 - Ο Μη-Κερδοσκοπικός Οργανισμός [Hellenic Blockchain Hub](http://blockchain.org.gr)
 - Ο Μη-Κερδοσκοπικός Οργανισμός [Cyprus Blockchain Technologies](http://cybt.eu)
 
-Τελευταία ενημέρωση: 2018-11-25
+Τελευταία ενημέρωση: 2018-11-30
 
 <!-- <div class="posts">
   {% for post in site.posts %}

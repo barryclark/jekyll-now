@@ -40,9 +40,14 @@ Come to one of our meetups in [Athens](https://www.meetup.com/BlockchainGreece-0
         <td><strong>Contact info</strong></td>
     </tr>
     <tr>
-        <td>Aharnes, Attica</td>    
-        <td><a href="https://goo.gl/maps/HxSWFsnH5kR2">Orizontes bookshop, Thiveou Ioannou 20, Aharnes 13671</a></td>
+        <td>Acharnes, Attica</td>    
+        <td><a href="https://goo.gl/maps/HxSWFsnH5kR2">Orizontes bookshop, Thiveou Ioannou 20, Acharnes 13671</a></td>
         <td> </td>
+    </tr>
+    <tr>
+        <td>Acharnes, Attica</td>
+        <td><a href="https://goo.gl/maps/gKL1bEheaQ32">Aegean gas station, Dekelias 94, Acharnes 13671</a></td>
+        <td>+30 6987812000 <a href="https://bcash.gr">Bcash Greece</a></td>
     </tr>
     <tr>
         <td>Athens</td>
@@ -140,7 +145,7 @@ Bcash Greece has published [videos with instructions on how to use their Bitcoin
 - The [Hellenic Blockchain Hub](http://blockchain.org.gr) non-profit organization
 - The [Cyprus Blockchain Technologies](http://cybt.eu) non-profit organization
 
-Last update: 2018-11-25
+Last update: 2018-11-30
 
 <!-- <div class="posts">
   {% for post in site.posts %}
