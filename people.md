@@ -54,6 +54,13 @@ permalink: /people/
 
 * PhD student, Department of Applied Mathematics and Statistics, Stony Brook University
 
+{: .person-name }
+## Junyan Song
+![Junyan Song](/images/Junyan.jpg){: .profile-photo }
+
+* PhD student, Department of Applied Mathematics and Statistics, Stony Brook University
+* Co-advised by Dr. Pei Fen Kuan
+
 ## Future lab member
 ![Cartoon MRI head](/images/MRI_brain_outline_memming.png){: .profile-photo }
 
