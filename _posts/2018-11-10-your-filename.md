@@ -151,5 +151,5 @@ Tableau\
 ### Familiarity with bigdata infrastructures {.col .right}
 Azure\
 AWS\
-
+  
 Enter text in [Markdown](http://daringfireball.net/projects/markdown/). Use the toolbar above, or click the **?** button for formatting help.
