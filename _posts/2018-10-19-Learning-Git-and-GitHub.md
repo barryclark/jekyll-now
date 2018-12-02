@@ -4,7 +4,6 @@ title: Learning Git and GitHub
 ---
 
 # Commands
-
 * `git init` - to initialize a repository
 * `git status` - 
 	* to check what files are on/not-on stage 
@@ -18,6 +17,11 @@ title: Learning Git and GitHub
 * `git remote add origin git@github.com:Daksh/test-git-session.git`
 * `git remote -v`
 * `git clone`
+
+## Gitignore
+This is a special type of file, called `.gitignore`. It should be placed inside the main folder of your repository (top-most folder). What this file does, is indicate to git that there are some files (or some files with particular extensions) that I wish to ignore. They will be there in my local instance but don't ask/tell me each time that they are untracked. Ignore them!
+There is an awesome website [gitignore.io](https://www.gitignore.io/) which helps you to create such files. Suppose you do not want any extra files that show up with python(eg. `*.pyc`)/mac (eg `.DS_Store`), you can just enter `python` and `macOS` on the website to generate the `.gitignore` file [gitignore.io/api/macos,python](https://www.gitignore.io/api/macos,python)
+You can simply do `subl .gitignore` to open a new file and copy paste the contents from the website. As soon as you add that to git tracking (`git add .gitignore`), you will see that all the other extension files which you wanted to get rid of and were being shown in untracked section, vanish! :D
 
 # Few Extras :)
 * `git diff --color-words` to see the changes in words instead of sentences
