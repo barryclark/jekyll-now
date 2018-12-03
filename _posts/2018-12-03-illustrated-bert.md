@@ -8,11 +8,13 @@ The year 2018 has been an inflection point for machine learning models handling 
 
 <div class="img-div-any-width" markdown="0">
   <image src="/images/transformer-ber-ulmfit-elmo.png"/>
-  </br>
-  (ULM-FiT has nothing to do with Cookie Monster. But I couldn't think of anything else..)
+
 </div>
 
 <!--more-->
+
+
+<span class="faded_text">(ULM-FiT has nothing to do with Cookie Monster. But I couldn't think of anything else..)</span>
 
 One of the latest milestones in this development is the <a href="https://ai.googleblog.com/2018/11/open-sourcing-bert-state-of-art-pre.html">release</a> of <a href="https://github.com/google-research/bert">BERT</a>, an event <a href="https://twitter.com/lmthang/status/1050543868041555969">described</a> as marking the beginning of a new era in NLP. BERT is a model that broke several records for how well models can handle language-based tasks. Soon after the release of the paper describing the model, the team also open-sourced the code of the model, and made available for download versions of the model that were already pre-trained on massive datasets. This is a momentous development since it enables anyone building a machine learning model involving language processing to use this powerhouse as a readily-available component -- saving the time, energy, knowledge, and resources that would have gone to training a language-processing model from scratch.
 
