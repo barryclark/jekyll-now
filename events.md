@@ -14,8 +14,6 @@ December 10 - 13: KubeCon + CloudNative North America, Seattle
 
 ### 2019
 
-2/25-28
-
 February 25 - 28: Mobile World Congress, Barcelona
 
 May 20 - 23: KubeCon + CloudNativeCon Europe, Barcelona
