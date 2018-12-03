@@ -6,9 +6,6 @@ permalink: /events/
 
 ### 2018
 
-November 21: Serverless vs Kubernetes, London
-* [Panel moderator](https://events.contino.io/serverlessvskubernetes)
-
 December 3 - 5: DockerCon Europe, Barcelona
 
 December 10 - 13: KubeCon + CloudNative North America, Seattle
