@@ -1,6 +1,6 @@
 ---
 layout: post
-title: California Public Enrollment Data
+title: Cleaning California Public Enrollment Data
 categories: Education Data
 ---
 
@@ -13,14 +13,14 @@ I was able to recover over 95% of these missing schools. The resulting dataset i
 I recently read a helpful [article by John Sullivan](https://www.kdnuggets.com/2018/06/5-data-science-projects-hired.html) on skills to showcase for a career in data science. He describes data cleaning as requiring these skills:
 
   <div style="display:inline-block; width:200px;">
-           <table> 
-            <tr><td><a href="#import">Importing data</a></td></tr>
-            <tr><td><a href="#join">Joining multiple datasets</a></td></tr>
-            <tr><td><a href="#missing">Detecting missing values</a></td></tr>
-            <tr><td><a href="#anomalies">Detecting anomalies</a></td></tr>
-            <tr><td><a href="#impute">Imputing for missing values</a></td></tr>
-            <tr><td><a href="#qa">Data quality assurance</a></td></tr>
-        </table></div> 
+           <ul> 
+            <li><a href="#import">Importing data</a></li>
+            <li><a href="#join">Joining multiple datasets</a></li>
+            <li><a href="#missing">Detecting missing values</a></li>
+            <li><a href="#anomalies">Detecting anomalies</a></li>
+            <li><a href="#impute">Imputing for missing values</a></li>
+            <li><a href="#qa">Data quality assurance</a></li>
+        </ul></div> 
   <div style="vertical-align:top; display: inline-block; width:400px"><img src="/images/1000schools.gif" style="margin-left:15%;margin-top:5%"/></div>
 
 In order to prepare enrollment data for analysis, I perform many of the cleaning tasks outlined above. I merge yearly enrollment, english learner, free/reduced priced lunch, public/charter, and performance data to visualize trends over time. My cleaning steps are documented in this post.
@@ -303,7 +303,7 @@ Looking at the levels and ranges of each variable we can find any outliers.
 # Data quality assurance<a name="qa"></a>
 We can check that the number of counties is correct, and in each case that the number of levels for each factor is appropriate. This process is ongoing during the data transformation steps to ensure that every year of data is structured properly.
 
-Checking the names of our variables and that the levels they contain have remained consistent after transformations is a necessary last step. Now that we have cleaned data merged into a master dataset, I look forward ot see what others find in the data.
+Checking the names of our variables and that the levels they contain have remained consistent after transformations is a necessary last step. Now that we have cleaned data merged into a master dataset, I look forward to see what others find in the data.
 
     Check variables in the header row
     
