@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Slides] [Nov 2018] Why KubeCon is so important for the community, KubeCon + CloudNativeCon China"
+title: "[Video] [Nov 2018] Why KubeCon is so important for the community, KubeCon + CloudNativeCon China"
 ---
 
 <iframe width="700px" height="394px" src="https://www.youtube.com/embed/L8SA77k1mBQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
