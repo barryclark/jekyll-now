@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Slides] [Nov 2018] The Great Debate: Serverless vs Kubernetes"
+title: "[Video] [Nov 2018] The Great Debate: Serverless vs Kubernetes"
 ---
 
 <iframe width="700px" height="394px" src="https://www.youtube.com/embed/_eSh4ZIVAQ0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
