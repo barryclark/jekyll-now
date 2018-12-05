@@ -13,6 +13,17 @@ I will be discussing Linear Alzebra in this blog. I will also write a blog about
 # Linear Alzebra
 A good understanding of linear alzebra in essential for understanding and working with many machine learning algorithms, especially deep learning algorithms.
 
+Content:
+1. Terminology
+2. Assumption-
+      Multiplying Mateicses and Vectors
+     Identity adn Iverse Matrix
+     Norms
+      Deteminant    
+ 3. Linear Dependence Span
+ 4. Special Kind of Matricses
+ 5. Trace Operator
+ 
 
 ## Terminology 
 1. Scalar - A scalar is just a single number.
@@ -22,4 +33,5 @@ Scalar \mathit{s}
 
 2. Vector - A Vecor is an array of numbers.
 I will write them in  Bold lower case letter. For example
+
 Vector \mathbf{v} 
