@@ -1,16 +1,14 @@
 ---
 layout: post
-title: Kick Calculator Data
+title: Machine Learning and Kicking
 ---
 
-The first thing that we'll need before touching any machine learning is to collect some high quality data.
+Crazy end to the Chargers/Steelers game last night. I don't think I've ever seen that many field goal attempts in a row with so many flags before.
 
-Fortunately for everything NFL-related, we have plenty of data available depending on what we're looking for.
+The NFL this year has been adding in a bunch of statistics regarding how catchable a pass is, chance to make a field goal, etc. They don't break down how they come up with these numbers, however.
 
-Since we're looking for successful and unsuccessful kicks, lets search for some play by play data and see what we end up with.
+Over the course of this week I'll go through building a field goal percentage calculator that we can use to model if a kick is going in or not, using data from last season and this season.
 
-### Play by Play Data
+I'm still on travel so it's just the teaser today. We'll go through selecting the right data, parsing it into a format that our algorithm can use, selecting the algorithm, and training/testing it.
 
-Go to (link here) and download the 2017 and 2018 data sets. We could go earlier but with how often rule changes occur in the NFL it might not be too useful to go too far back.
-
-For field goal kicking the rules haven't changed too much, but when we expand this it may come into play.
+Hopefully by the end we'll have something we can use, maybe even packaged up into a GUI-based app so you can fill in the required info at a 4th down play and see if you would have made the same call the coach did. It would be cool to compare a team's 4th down conversion stats as well, so maybe that will go in later.
