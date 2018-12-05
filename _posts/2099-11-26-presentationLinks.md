@@ -7,5 +7,4 @@ title: "Links of the Presentations: "
 
 [Dersu Giritlioğlu: Sequence to Sequence - Video to Text, Venugopalan et. al., 2015.](https://drive.google.com/file/d/1iWGZToK7ruGoMUE2tnvURnp0QZ2aG8K4/view?usp=sharing)
 
-[Gozde Nur Gunesli: Whodunnit? Crime Drama as a Case for Natural Language Understanding]
-(https://docs.google.com/presentation/d/1cUYT-o2cNfa-TmQkQAIPDvpZGL7eBSnctFvQXzHrcrQ/edit?usp=sharing)
+[Gozde Nur Gunesli: Whodunnit? Crime Drama as a Case for Natural Language Understanding](https://docs.google.com/presentation/d/1cUYT-o2cNfa-TmQkQAIPDvpZGL7eBSnctFvQXzHrcrQ/edit?usp=sharing)
