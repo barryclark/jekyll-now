@@ -16,7 +16,10 @@ A good understanding of linear alzebra in essential for understanding and workin
 
 ## Terminology 
 1. Scalar - A scalar is just a single number.
-I will be writing Scalar in small letter italics. For example
-@equation(id)
-x = \sum_{i=1}{N} i
-@/
+I will be writing Scalar in Italic lower-case letter in italics. For example
+
+Scalar \mathit{s}
+
+2. Vector - A Vecor is an array of numbers.
+I will write them in  Bold lower case letter. For example
+Vector \mathbf{v} 
