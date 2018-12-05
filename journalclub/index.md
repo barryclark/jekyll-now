@@ -32,9 +32,9 @@ Journal club meetings currently take place on Mondays at 1:00 pm in the IACS Sem
 - November 12th: Memming Park
 - November 19th: JunYan Song
 - November 26th: Yanliang Shi
-- December 3rd: Josue Nassar
-- December 10th: Sayontan Ghoshi 
-- December 17th: Jin Wang 
+- December 3rd:  No JC
+- December 10th: Josue Nassar 
+- December 17th: Ian Jordan
 
 You can pick or [**suggest papers**](https://www.google.com/url?q=https://docs.google.com/document/d/17SuoVIIDbCae5GnxSHGO5BW2zbVP6wBCbaGGfgFLAOQ/edit?usp%3Dsharing&sa=D&ust=1472068897083000&usg=AFQjCNF5f_dZMloe4l3jWOm_mhxe7utbqw) to be discussed.
 
