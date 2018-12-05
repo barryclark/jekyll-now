@@ -1,3 +1,10 @@
+---
+layout: post
+title:  "Mathemactics Linear Alzebra"
+categories: jekyll mathematics programming
+math: true
+---
+
 
 Machine learning is one of the most hot topics right now. But before diving into this topic we need proficiency in some major topics in mathematcis i.e. Probability, Information Theory, Linear Alzebra, Diffrentiation and Integration. 
 
