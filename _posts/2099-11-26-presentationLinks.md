@@ -1,7 +1,9 @@
 ---
 layout: post
-title: "Links of the Presentations: "
+title: "Links of all 3 Presentations: "
 ---
+
+Emre Dogan - Dersu Giritlioglu - Gozde Nur Gunesli
 
 [Emre Dogan: Natural Language is a Programming Language](https://docs.google.com/presentation/d/1rl6A3_QoybnFtLhmvSCJ-MApU97x9IQdOrtlwKVi7S0/edit?usp=sharing)
 
