@@ -26,7 +26,7 @@ finished code as you follow along, you're more than welcome to examine it in det
 
 This _sounds_ like a relatively straightforward thing to do, right?
 I suppose, once you've got a good conceptual grasp of it, it's not too ridiculous to figure out.
-However, never having approached it before, I wasn't sure how to attach the challenge.
+However, never having approached it before, I wasn't sure how to attack the challenge.
 
 ## Position and Size of Words
 
@@ -94,7 +94,7 @@ As I was considering ways to scan for available positions to place words, I real
 numbers (a.k.a. imaginary numbers) might offer a very easy solution.
 For those of you who are like me, never having really looked at them until I found a lovely little
 Youtube series on them, imaginary numbers can always be represented in two forms: rectangular form
-**(a + bi)**, and polar coordinate form **(m &angle; &theta;)**.
+**(a + bi)**, and polar coordinate form **(m &#8736; &theta;)**.
 
 ## Complex Numbers As Coordinates
 
