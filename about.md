@@ -4,12 +4,10 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+### My Tech Stack
 
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
+    <a frameborder="0" data-theme="dark" data-layers="1,2,3,4" data-stack-embed="true" href="https://embed.stackshare.io/stacks/embed/b130fecf835c4787dbed931126a43a"/></a>    <script async src="https://cdn1.stackshare.io/javascripts/client-code.js" charset="utf-8"></script>
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[stankomanster@gmail.com](mailto:stankomanster@gmail.com)
