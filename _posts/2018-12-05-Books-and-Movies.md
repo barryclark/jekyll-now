@@ -20,15 +20,14 @@ The statistics for MovieBook dataset which they collect using 11 movies and corr
 
 ![asd](./../images/review-9_tables.png)
 
- 
+They use an LSTM architecture for sentence level embedding. They use GoogLeNet architecture to obtain image features and represent each movie clip as a vector corresponding to mean-pooled features across each frame in the clip. Then, they calculate similarities between each shot in the movie and each sentence in the book using these features with a CNN framework.
+
 Examples of their results for the movie to book alignment task can be seen on *Figure 1* on top. They also find the best matching paragraph for a shot from all the books, shown at the bottom of the figure.
 
 ![asd](./../images/review-9_example.png)
 *Figure 1: Movie clip descriptions via the book: (top) Alignment of the movie to the book, a shot and its corresponding paragraph from the book, (bottom) for a shot the best matching paragraph from a corpus of books. 
 *
-            
-![asd](./../images/review-9_book_retr.png)
-*Figure 2: *
+
 
 
 *Created by*
