@@ -12,7 +12,7 @@ Python, SQL, VBA.
 
 <br>
 
-<hr style="width:30%">
+<hr style="width:30%; margin-left:0;">
 
 Located in Ashburn, VA
 
