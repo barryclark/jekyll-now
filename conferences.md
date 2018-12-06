@@ -13,7 +13,7 @@ redirect_from:
 Through the years, I spoke at multiple conferences. Below is a non-exhaustive list of the conferences I spoke at.
 
 Oracle Code One (San Francisco), JavaOne (San Francisco, Moscow, São Paulo), Devoxx (Belgium, France, Poland, UK, Morroco), 
-Java Day Tokyo, JPoint (Russia), Serverless NYC, JCConf (Taiwan), JFall (The Netherlands), MakeIT (Slovenia), 
+Java Day Tokyo, JPoint (Russia), Serverless NYC, JCConf (Taiwan), DevOpsCon (Germany), JFall (The Netherlands), MakeIT (Slovenia), 
 JPrime (Bulgaria), ConFoo Montreal, GeeCon (Krakow), JFokus (Sweden), JavaZone (Norway), JNation (Portugal), Heapcon (Serbia), 
 JDK.IO (Danemark), JDD (Krakow), Voxxed Days (Banff, Bucharest, Minsk, Zürich, Belgrade, Vienna, Cluj-Napoca, Vilnius), 33rd Degree (Krakow), 
 LavaOne (Hawaii), JavaLand (Germany), CodeMotion (Israel), Oracle Code (Paris, Tel Aviv, Berlin, London), 
