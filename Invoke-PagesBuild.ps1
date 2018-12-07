@@ -60,7 +60,7 @@ $ApiParams = @{
 
 Invoke-RestMethod @ApiParams
 
-Start-Sleep -Seconds 30
+Start-Sleep -Seconds 5
 
 $ApiParams['Method'] = 'GET'
 Invoke-RestMethod @ApiParams
@@ -78,6 +78,7 @@ $BlogPostFile = Get-ChildItem -Path $PSScriptRoot\_posts |
     Select-Object -ExpandProperty Name
 
 if ($BlogPostFile.Name -match "\d-([a-z-!]+)\.md") {
+
     $UrlEnding = $matches[1]
 
     $FriendlyTitle = @( $BlogPostFile | Select-String -Pattern '^title:' )[0].Line -replace '^title: '
@@ -87,6 +88,7 @@ if ($BlogPostFile.Name -match "\d-([a-z-!]+)\.md") {
     $ShortLink = Invoke-WebRequest -Uri "https://tinyurl.com/api-create.php?url=$BlogUrl" -UseBasicParsing |
         Select-Object -ExpandProperty Content
 
+    Write-Host "##vso[task.setvariable variable=DoTweet]DO THE THING"
     Write-Host "##vso[task.setvariable variable=BlogUrl]$ShortLink"
     Write-Host "##vso[task.setvariable variable=BlogPostTitle]$FriendlyTitle"
     Write-Host "##vso[task.setvariable variable=TweetText]$TweetText"
