@@ -151,6 +151,7 @@ strong, b {
 
 img {
   max-width: 100%;
+  display: block;
 }
 
 // Fixes images in popup boxes from Google Translate
@@ -356,6 +357,20 @@ ul.listRecent {
     padding: 0.1em 1em;
     color: $gray;
     font-size: 1em;
+    font-style: italic;
+  }
+
+  img {
+    max-width: 95%;
+    margin: 5px auto;
+    -moz-box-shadow: 4px 4px 0 rgba(0,0,0,0.2);
+    -webkit-box-shadow: 4px 4px 0 rgba(0,0,0,0.2);
+    box-shadow: 4px 4px 0 rgba(0,0,0,0.2);
+  }
+
+  .caption {
+    font-size: 0.8em;
+    text-align: center;
     font-style: italic;
   }
 

@@ -16,7 +16,9 @@ This time around, his suggestion was to take the code from `Export-Png` and use 
 cloud generator.
 
 ![The finished product!](/images/WordCloud-Lee_Dailey.png)
-_Word cloud of Reddit user [/u/Lee\_Dailey](https://www.reddit.com/u/Lee_Dailey)'s posts._
+
+Word cloud of Reddit user [/u/Lee\_Dailey](https://www.reddit.com/u/Lee_Dailey)'s posts.
+{: .caption }
 
 @sifb has also helped me out with one of my favourite [pull requests](https://github.com/PowerShell/PowerShell/pull/7993)
 to PowerShell Core, creating some of the most arcane and yet ruthlessly performant code I've seen
