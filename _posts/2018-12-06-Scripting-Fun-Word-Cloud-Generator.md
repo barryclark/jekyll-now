@@ -4,6 +4,7 @@ title: Scripting for Fun - Building a Word Cloud Generator
 date: 2018-12-06
 categories: [powershell, scriptingforfun]
 tags: [wordcloud, 'word cloud', fun]
+tweet: Word clouds are fun!
 ---
 
 Sometimes I stumble across a particularly _intriguing_ idea which just captures my attention until

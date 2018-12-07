@@ -65,4 +65,30 @@ Start-Sleep -Seconds 30
 $ApiParams['Method'] = 'GET'
 Invoke-RestMethod @ApiParams
 
+$Date = Get-Date -Format yyyy-MM-dd
+Write-Host "Current date is: $Date" -ForegroundColor Blue
+
+Write-Host "Available Blog Posts in [$PSScriptRoot\_posts]:" -ForegroundColor Green
+Get-ChildItem |
+    Select-Object -Expand Basename |
+    Write-Host -ForegroundColor Green
+
+$BlogPostFile = Get-ChildItem -Path $PSScriptRoot\_posts |
+    Where-Object {$_.Name -match "$Date"} |
+    Select-Object -ExpandProperty Name
+
+if ($BlogPostFile.Name -match "\d-([a-z-!]+)\.md") {
+    $UrlEnding = $matches[1]
+
+    $FriendlyTitle = @( $BlogPostFile | Select-String -Pattern '^title:' )[0].Line -replace '^title: '
+    $TweetText = @( $BlogPostFile | Select-String -Pattern '^tweet:' )[0].Line -replace '^tweet: '
+
+    $BlogUrl = "https://vexx32.github.io/$UrlEnding"
+    $ShortLink = Invoke-WebRequest -Uri "https://tinyurl.com/api-create.php?url=$BlogUrl" -UseBasicParsing |
+        Select-Object -ExpandProperty Content
+
+    Write-Host "##vso[task.setvariable variable=BlogUrl]$ShortLink"
+    Write-Host "##vso[task.setvariable variable=BlogPostTitle]$FriendlyTitle"
+    Write-Host "##vso[task.setvariable variable=TweetText]$TweetText"
+}
 if ($Error[0]) {exit -1} else {exit 0}
