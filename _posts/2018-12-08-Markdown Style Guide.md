@@ -5,7 +5,7 @@ title: Markdown Style Guide
 
 This is a demo of all styled elements in Jekyll Now.
 
-[View the markdown used to create this post](https://github.com/LeonLiu0804/leonliu0804.github.io/edit/master/_posts/2018-12-08-Markdown-Style-Guide.md).
+[View the markdown used to create this post](https://raw.githubusercontent.com/LeonLiu0804/leonliu0804.github.io/master/_posts/2018-12-08-Markdown%20Style%20Guide.md).
 
 This is a paragraph, it's surrounded by whitespace. Next up are some headers, they're heavily influenced by GitHub's markdown style.
 
@@ -15,7 +15,7 @@ This is a paragraph, it's surrounded by whitespace. Next up are some headers, th
 
 #### Header 4
 
-A link to [Jekyll Now](http://github.com/barryclark/jekyll-now/). A big ass literal link <http://github.com/barryclark/jekyll-now/>
+A link to [LeonLiu's BLog](https://leonliu0804.github.io/). A big ass literal link <https://leonliu0804.github.io/>
 
 An image, located within /images
 
