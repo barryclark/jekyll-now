@@ -3,7 +3,7 @@ layout: post
 title: Markdown Style Guide
 ---
 
-This is a demo of all styled elements in Jekyll Now.
+This is a demo of all styled elements.
 
 [View the markdown used to create this post](https://raw.githubusercontent.com/LeonLiu0804/leonliu0804.github.io/master/_posts/2018-12-08-Markdown%20Style%20Guide.md).
 
@@ -19,7 +19,7 @@ A link to [LeonLiu's BLog](https://leonliu0804.github.io/). A big ass literal li
 
 An image, located within /images
 
-![an image alt text]({{ site.baseurl }}/images/jekyll-logo.png "an image title")
+![an image alt text](https://avatars0.githubusercontent.com/u/25121270?s=400&u=66f6d7bb25887a012f64f79aa60dfc27bdc91bec&v=4)
 
 * A bulletted list
 - alternative syntax 1
