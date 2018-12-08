@@ -15,7 +15,7 @@ This is a paragraph, it's surrounded by whitespace. Next up are some headers, th
 
 #### Header 4
 
-A link to [LeonLiu's BLog](https://leonliu0804.github.io/). A big ass literal link <https://leonliu0804.github.io/>
+A link to [LeonLiu's Blog](https://leonliu0804.github.io/). A big ass literal link <https://leonliu0804.github.io/>
 
 An image, located within /images
 
