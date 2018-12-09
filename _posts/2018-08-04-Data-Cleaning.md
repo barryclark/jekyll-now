@@ -21,7 +21,9 @@ I recently read a helpful [article by John Sullivan](https://www.kdnuggets.com/2
             <li><a href="#impute">Imputing for missing values</a></li>
             <li><a href="#qa">Data quality assurance</a></li>
         </ul></div> 
-  <div style="vertical-align:top; display: inline-block; width:400px"><img src="/images/1000schools.gif" style="margin-left:15%;margin-top:5%"/></div>
+  <div style="vertical-align:top; display: inline-block; width:400px">
+  <blockquote>Since 1981, over 1000 schools have been forgotten.</blockquote>
+</div>
 
 In order to prepare enrollment data for analysis, I perform many of the cleaning tasks outlined above. I merge yearly enrollment, english learner, free/reduced priced lunch, public/charter, and performance data to visualize trends over time. My cleaning steps are documented in this post.
 
