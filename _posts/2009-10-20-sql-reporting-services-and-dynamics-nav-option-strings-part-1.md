@@ -23,7 +23,7 @@ This particular option string, “Quote,Order,Invoice,Credit Memo,Blanket Order,
  
  First, the table.  I created a table “Option Strings” with the fields below and a key comprised of the TableNo, No., and Integer columns to enforce unique table, field and option values.
 
- 
+
  ![image7]({{ site.baseurl }}/images/2009/10/image71.png) 
  
  Most of these fields are based off of the NAV virtual table “Field”.  This table doesn’t exist on disk but similar to tables like “Date” and “Table Information” is assembled on the fly and can be used in Forms and Reports. The “Field” virtual table provides an always up to date listing of every single field in the NAV database with helpful attributes that we’ll use to help us populate the “Option Strings” table. Second, I created a report with “Field” as the first DataItem. 
@@ -38,6 +38,4 @@ This particular option string, “Quote,Order,Invoice,Credit Memo,Blanket Order,
  
  Files: Option-Strings-BW1.00.zip
  
- **Update 06/05/2014** Post on GitHub files here: 
- [http://billwarnke.com/2014/06/06/moved-sql-reporting-services-and-dynamics-nav-option-strings-to-github/]
- (http://billwarnke.com/2014/06/06/moved-sql-reporting-services-and-dynamics-nav-option-strings-to-github/ "Moved SQL Reporting Services and Dynamics NAV Option Strings to GitHub")
+**Update 06/05/2014** Post on GitHub files here: [Moved SQL Reporting Services and Dynamics NAV Option Strings to GitHub](/moved-sql-reporting-services-and-dynamics-nav-option-strings-to-github/)

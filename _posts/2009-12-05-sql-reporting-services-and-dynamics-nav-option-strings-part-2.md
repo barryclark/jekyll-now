@@ -38,4 +38,4 @@ You now have a simple and consistent way to generate and query for NAV option st
 
 Files: Option Strings - SQL - BW1.00.zip 
 
-**Update 06/05/2014** Post on GitHub files here: [Moved SQL Reporting Services and Dynamics NAV Option Strings to GitHub](2014-06-06-moved-sql-reporting-services-and-dynamics-nav-option-strings-to-github)
+**Update 06/05/2014** Post on GitHub files here: [Moved SQL Reporting Services and Dynamics NAV Option Strings to GitHub](/moved-sql-reporting-services-and-dynamics-nav-option-strings-to-github/)
