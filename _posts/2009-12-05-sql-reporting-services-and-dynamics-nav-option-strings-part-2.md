@@ -5,7 +5,7 @@ draft: false
 tags: [Microsoft Dynamics NAV, NAV, Navision, SQL, SQL Reporting Services, SSRS]
 ---
 
-In [SQL Reporting Services and Dynamics NAV Option Strings: Part 1](2009-10-20-sql-reporting-services-and-dynamics-nav-option-strings-part-1.md)
+In [SQL Reporting Services and Dynamics NAV Option Strings: Part 1](/sql-reporting-services-and-dynamics-nav-option-strings-part-1/
 we created a table and a processing report in Dynamics NAV that would enable us to later access every Dynamics NAV option string value in a SQL Reporting Services report.  Now, I will show how I handled the query to get option string values into an SSRS report.  This is a little less complex than Part 1. :) With all the steps of Part 1 complete, we now need a simple and consistent way to query for those values.  I solved this problem by created a User Defined Function in my database. Which looks like:
 
 ###### CREATE FUNCTION \[dbo\].\[OptionString\] (@TableName AS NVARCHAR(30), @FieldName AS NVARCHAR(30), @FieldInteger AS INT)
@@ -36,4 +36,6 @@ I’m passing into the UDF the table, column name (the first and second paramete
 
 You now have a simple and consistent way to generate and query for NAV option string values.   Hope this helps someone! 
 
-Files: Option Strings - SQL - BW1.00.zip **Update 06/05/2014** Post on GitHub files here: [Moved SQL Reporting Services and Dynamics NAV Option Strings to GitHub](2014-06-06-moved-sql-reporting-services-and-dynamics-nav-option-strings-to-github)
+Files: Option Strings - SQL - BW1.00.zip 
+
+**Update 06/05/2014** Post on GitHub files here: [Moved SQL Reporting Services and Dynamics NAV Option Strings to GitHub](2014-06-06-moved-sql-reporting-services-and-dynamics-nav-option-strings-to-github)
