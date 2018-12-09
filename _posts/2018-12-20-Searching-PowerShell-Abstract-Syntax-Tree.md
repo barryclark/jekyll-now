@@ -276,7 +276,7 @@ TotalKoans   $PesterTestCount                 2
 _Interesting_... Feel free to explore these as we go; I could spend **weeks** in some of these, so
 I'll just touch on each briefly as we poke about.
 
-## Finding Parameter Declarations
+## Finding Param() Declarations
 
 We could probably just look for `[ParamBlockAst]`, I _think_, and there's probably a list of
 actual parameters in it, judging by how helpful `HashtableAst` was in listing every `KeyValuePair`.
