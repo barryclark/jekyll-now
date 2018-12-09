@@ -1,0 +1,8 @@
+---
+title: 'NAV Default Database File Locations'
+date: Sun, 01 Mar 2009 05:26:42 +0000
+draft: false
+tags: [Microsoft Dynamics NAV, NAV, Navision, SQL]
+---
+
+I'm frequently creating new databases in NAV.  One annoyance was NAV’s insistence on the default file location.  In my dev environment this was always where I had installed SQL. ![capture]({{ site.baseurl }}/images/2009/02/capture.jpg)   Not where I want my databases. I spent some time investigating and after watching file system and registry access on both server and client I wasn’t able to see it grab any relevant values from those spots.  From what I can tell after watching packets between client and server with a packet sniffer, the NAV client is parsing the file location from the sp_helpfile stored procedure.  The solution?  NAV is essentially following the Master database. How to move system databases in SQL Server: [http://msdn.microsoft.com/en-us/library/ms345408.aspx](http://msdn.microsoft.com/en-us/library/ms345408.aspx "http://msdn.microsoft.com/en-us/library/ms345408.aspx") Just move the Master database to the spot you’d like the default file locations. Now when I specify Database Files… Yay! ![capture2]({{ site.baseurl }}/images/2009/02/capture21.jpg) The only downside is that is also will want to put the Transaction Log Files in the same file path.  Small price to pay. :) ![capture3]({{ site.baseurl }}/images/2009/02/capture31.jpg)   Does anyone else have a better way of doing this?  It would at least be nice if NAV could somehow use the default file locations specified within SQL.
