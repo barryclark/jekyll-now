@@ -23,7 +23,7 @@ This edition of blog statistics marks my 10th post. You can view the previous ni
 
 I was able to publish five articles this month:
 
-*[We Bought A Van](https://hendrixjoseph.github.io/we-bought-a-van/)
+* [We Bought A Van](https://hendrixjoseph.github.io/we-bought-a-van/)
 * [Ohio Issue 1: Drug and Criminal Justice Policies Initiative (2018)](https://hendrixjoseph.github.io/ohio-issue-1-drug-and-criminal-justice-policies-initiative-2018/)
 * [My Robinhood Stock Picks for September 2018](https://hendrixjoseph.github.io/my-robinhood-stock-picks-for-september-2018/)
 * [September 2018 Book Reading List](https://hendrixjoseph.github.io/september-2018-book-reading-list/)
