@@ -17,7 +17,7 @@ the platte river, denver
 ![_config.yml]({{ site.baseurl }}/images/colorado-misc/IMG_2283.jpg)
 
 
-near a ghost town
+ghost town
 ![_config.yml]({{ site.baseurl }}/images/colorado-misc/IMG_2328.jpg)
 
 ![_config.yml]({{ site.baseurl }}/images/colorado-misc/IMG_2330.jpg)
