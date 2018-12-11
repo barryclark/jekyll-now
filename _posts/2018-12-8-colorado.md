@@ -9,7 +9,7 @@ estes park gas station
 ![_config.yml]({{ site.baseurl }}/images/colorado-misc/IMG_2417.jpg)
 
 
-mointain town near colorado springs
+manitou springs
 ![_config.yml]({{ site.baseurl }}/images/colorado-misc/DSC00480.jpg)
 
 
