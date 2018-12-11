@@ -1,6 +1,6 @@
 ---
 layout: post
-title: A Little More on the Logistic Regression
+title: A Little More on Logistic Regression
 date: 20181211
 categories: [Machine Learning, Mathematics]
 picture: /assets/images/logreg/binary-dataset.png
