@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-My name is [Evan Rushton](https://www.linkedin.com/in/evanrushton/). I am an aspiring data scientist. I have expertise in [mathematics teaching](https://evanrushton.blogspot.com/), [learning design](https://evanrushton.wixsite.com/learndesigntech), and organizing for [social justice](https://www.facebook.com/LosAngelesAlgebraProject/). Keep a beginner’s mindset. Live to learn. Love to teach.
+My name is [Evan Rushton](https://www.linkedin.com/in/evanrushton/). I am an aspiring data scientist. I have expertise in [mathematics teaching](https://evanrushton.blogspot.com/), [learning design](https://evanrushton.wixsite.com/portfolio), and organizing for [social justice](https://www.facebook.com/LosAngelesAlgebraProject/). Keep a beginner’s mindset. Live to learn. Love to teach.
 
 ### More Information
 
