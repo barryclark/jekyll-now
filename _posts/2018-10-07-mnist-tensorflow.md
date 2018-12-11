@@ -8,13 +8,15 @@ published: true
 excerpt: During a hackathon at work I finally had tensorflow and it's api "click" for me. This article shares some of what made it click for me, in addition to the other stuff I did trying to understand the weights of the trained network better.
 ---
 
+# Opening Remarks
+
 Recently at work we had a hackathon on tensorflow, which is something I'd tried (running examples) but never really took the time to play with it. I'd like to share my experiences with the tensorflow computational graph, and some of the flexibility it has to do cool stuff.
 
 > I'm not a tensorflow expert, so please let me know if there are any inaccuracies I need to correct :wink:
 
-## Quick Introduction to Tensorflow
+# Quick Introduction to Tensorflow
 
-### The computation graph
+## The computation graph
 
 In order to do anything in tensorflow, you need to create a so called computation graph. This is the main construct used to break things down into problems your GPU can efficiently solve. Like Numpy and PySpark, python is just a wrapper for telling other engines to run your computations. In the case of tensorflow, this is for CUDA and your GPU. 
 
@@ -27,7 +29,7 @@ Sending data from your GPU to python and back creates a lot of performance overh
 
 You define a computation graph using special tensor objects (eg. constants, vectors, matrices) and tensor operations (eg. multiply, weighted sum, apply loss function). Inputs to your graph (like a training dataset) are defined as placeholders.
 
-### Calculating a matrix inverse, the hard way
+## Calculating a matrix inverse, the hard way
 
 Say we want to make a simple computation graph, but a little more complicated than adding two numbers. Let's take a square matrix as input, and multiple it by some set matrix $A$. Our goal is to create a graph that finds the matrix inverse $A^{-1}$, which we enforce with the loss. This function tries to make the output as close to the identity matrix as possible.
 
@@ -88,11 +90,11 @@ In order to see if the algorithm is converging we can look at the loss of the mo
 
 We trained our first tensorflow model! This little excercise helped me understand the concepts of the computation graph, and it should make the later example easier to follow if you're new to tensorflow.
 
-## Classifying MNIST with tensorflow
+# Classifying MNIST with tensorflow
 
 Now that we understand the basics of tensorflow, lets build single-layered neural network using tensorflow to classify these images. 
 
-### Model Definition
+## Model Definition
 
 We'll rescale the images to 28x28 pixel images and represent these by a 28x28 matrix, where each matrix entry represents the pixels color-intensity with a number between 0 and 1.
 
@@ -105,7 +107,7 @@ Finally, the network connecting the inputs to the outputs will be a single dense
     <figcaption>The network architecture of our MNIST classifier</figcaption>
 </figure>
 
-### Implementation
+## Implementation
 
 Just like the previous example, we're going to define our network in a computation graph, using tensors and tensor operations. We'll use a placeholder x for our input images and y for the one-hot encoded label. Note that we reshaped the images from a 28x28 matrix to a vector of length 784.
 
@@ -179,9 +181,9 @@ Let's check out the output of this model, and see if it did what we wanted to. W
 
 This will learn the network weights $W_1, b_1, W_2, b_2$ and give a pretty decent accuracy for classification, 98% on the test set!
 
-## Looking into our network
+# Looking into our network
 
-### Image fingerprints
+## Image fingerprints
 
 As this was my first time working with tensorflow and a neural network, I was interested in dissecting the network a bit. The input and output layers aren't too interesting, so I thought I'd look at the hidden layer for out-of-sample images.
 
@@ -201,7 +203,7 @@ So what do we see here? One thing that is pretty clear, is that each class shows
 
 This unique pattern of bands is what the second bit of linear algebra ($A_2\cdot x + b_2$) uses to classify these images, as the combination is a kind of unique indentifier or fingerprint for each image. Our network learned this itself, which is super cool!
 
-### Estimating optimal input images
+## Estimating optimal input images
 
 After seeing the patterns in the hidden layers, I was curious what the "otpimal" image would be for each class. The first approach I tried wasn't very feasible, reversing the network direction to give an input for a specific output. This has to do with the fact that we reduce a $784 \times 1$ vector to a $10 \times 1$ vector, so a lot of information is lost.
 
@@ -214,7 +216,7 @@ Here are the first images I got with this approach. The images on the top are th
     <figcaption>This looks like it might be overfitting...</figcaption>
 </figure>
 
-## Regularization to the rescue
+# Regularization to the rescue
 
 So it seems that since our input image has 784 free parameters and we're trying to create a vector of length 10. Our model is seriously overfitting. 
 
@@ -231,7 +233,7 @@ So we finally get some patterns in our ideal images. In each of the images we ca
 
 These irregularities might be the pixels the network finds important for distinguishing numbers, but maybe they're artifacts from the regularization. Pretty neat though, as there are clearly patterns in the unique areas of each number.
 
-## The end
+# The end
 
 For those of you who held out until the end, here's a :doughnut:. I hope you either read something interesting or learned something new along the way. 
 

@@ -39,18 +39,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 24px;
   a {
     color: inherit;
   }
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 18px;
 }
 
 h3 {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 h4 {
@@ -193,6 +193,7 @@ nav[data-toggle=toc] .nav-link.active+ul {
 
 // Date below post title picture
 .date {
+  font-size: 16px;
   font-style: italic;
   color: $gray;
   text-align: right;
@@ -200,6 +201,7 @@ nav[data-toggle=toc] .nav-link.active+ul {
 
 // Categories shown below title picture
 .post-categories {
+  font-size: 16px;
   color: $gray;
   margin-top: 10px;
   text-align: right;
