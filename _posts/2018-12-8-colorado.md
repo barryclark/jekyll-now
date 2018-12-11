@@ -5,7 +5,7 @@ title: Misc, Colorado
 
 September 2018
 
-estes park gas station
+gas station, estes park
 ![_config.yml]({{ site.baseurl }}/images/colorado-misc/IMG_2417.jpg)
 
 
