@@ -7,6 +7,8 @@
 
 @import "reset";
 @import "variables";
+
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700|Rubik');
 // Syntax highlighting @import is at the bottom of this file
 
 /**************/
@@ -19,7 +21,7 @@ html {
 
 body {
 	background: $white;
-  font: 18px/1.4 $helvetica;
+  font: 18px/1.4 Lato, sans-serif;
   color: $darkGray;
 }
 
@@ -31,9 +33,9 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $helveticaNeue;
+  font-family: Rubik, sans-serif;
   color: $darkerGray;
-  font-weight: bold;
+  /*font-weight: medium;*/
 
   line-height: 1.7;
   margin: 1em 0 15px;
@@ -103,12 +105,12 @@ em, i {
 }
 
 strong, b {
-  font-weight: bold;
+  /*font-weight: medium;*/
 }
 
-img {
+/*img {
   max-width: 100%;
-}
+}*/
 
 // Fixes images in popup boxes from Google Translate
 .gmnoprint img {
@@ -165,8 +167,8 @@ img {
 
 .site-avatar {
   float: left;
-  width: 70px;
-  height: 70px;
+  /*width: 70px;
+  height: 70px;*/
   margin-right: 15px;
 
   @include mobile {
@@ -175,9 +177,9 @@ img {
     margin: 0 auto;
   }
 
-  img {
+  /*img {
     border-radius: 5px;
-  }
+  }*/
 }
 
 .site-info {
@@ -194,8 +196,8 @@ img {
   margin: 0;
   color: $darkGray;
   cursor: pointer;
-  font-family: $helveticaNeue;
-  font-weight: 300;
+  font-family: Rubik, sans-serif;
+  /*font-weight: 300;*/
   font-size: 28px;
   letter-spacing: 1px;
 }
@@ -213,7 +215,7 @@ img {
 nav {
   float: right;
   margin-top: 23px; // @TODO: Vertically middle align
-  font-family: $helveticaNeue;
+  font-family: Rubik, sans-serif;
   font-size: 18px;
 
   @include mobile {
@@ -227,7 +229,7 @@ nav {
     margin-left: 20px;
     color: $darkGray;
     text-align: right;
-    font-weight: 300;
+    /*font-weight: 300;*/
     letter-spacing: 1px;
 
     @include mobile {

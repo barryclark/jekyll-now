@@ -1,7 +1,7 @@
 ---
 layout: page
-title: About
-permalink: /about/
+title: MCAMC
+permalink: /mcamc/
 ---
 
 Some information about you!

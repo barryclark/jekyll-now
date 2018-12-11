@@ -1,7 +1,7 @@
 ---
 layout: calendar
-title: Competitions
-permalink: /competitions/
+title: Internal Use
+permalink: /internal-use/
 ---
 
 We run competitions!
