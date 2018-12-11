@@ -4,12 +4,10 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+### About Communere Limited
 
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
+Bringing together key skills from different areas of Information Technology, Communere Limited is well placed to provide a wide range of services, including software development, tailored to your specific requirements.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[email@domain.com](mailto:support@communere.com)
