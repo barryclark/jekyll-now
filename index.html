@@ -17,6 +17,7 @@ layout: default
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">
         Read More <i class="fas fa-angle-right"></i>
       </a>
+      <div class="post-date"> {{ post.date | date_to_long_string }} </div>
     </article>
   {% endfor %}
 </div>

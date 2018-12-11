@@ -16,19 +16,33 @@ layout: default
     {{ page.date | date: "%B %e, %Y" }}
   </div>
 
+  <div class="post-categories">
+    <b>Categories: </b>
+    <br>
+    {% if post %}
+      {% assign categories = post.categories %}
+    {% else %}
+      {% assign categories = page.categories %}
+    {% endif %}
+    {% for category in categories %}
+    <a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}</a>
+    {% unless forloop.last %} <br> {% endunless %}
+    {% endfor %}
+  </div>
+
   <div class="entry">
     {{ content }}
   </div>
 
-    <div class="a2a_kit a2a_kit_size_30 a2a_default_style" style="text-align:right; float:right; margin: 20px 0px;">
-    <a class="a2a_button_facebook"></a>
-    <a class="a2a_button_twitter"></a>
-    <a class="a2a_button_reddit"></a>
-    <a class="a2a_button_linkedin"></a>
-    <a class="a2a_button_hacker_news"></a>
-    <a class="a2a_button_google_plus"></a>
-    </div>
-    <script async src="https://static.addtoany.com/menu/page.js"></script>
+  <div class="a2a_kit a2a_kit_size_30 a2a_default_style" style="text-align:right; float:right; margin: 20px 0px;">
+  <a class="a2a_button_twitter a2a_counter"></a>
+  <a class="a2a_button_reddit a2a_counter"></a>
+  <a class="a2a_button_linkedin a2a_counter"></a>
+  <a class="a2a_button_hacker_news a2a_counter"></a>
+  <a class="a2a_button_facebook a2a_counter"></a>
+  <a class="a2a_button_whatsapp a2a_counter"></a>
+  </div>
+  <script async src="https://static.addtoany.com/menu/page.js"></scrip>
 
   {% include staticman.html %}
 </article>

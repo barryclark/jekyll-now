@@ -14,27 +14,27 @@
     {% endif %}
 
     <div class="page__comments-form">
-            <p class="page__comments-title">Leave a Comment</p>
-            <p class="small">Your email address will not be published. Required fields are marked <span class="required">*</span></p>
-            <form id="new_comment" class="page__comments-form js-form form" method="post" action="https://api.staticman.net/v2/entry/dorianbrown/dorianbrown.github.io/master/comments">
-              <div class="form-group">
-                  <input type="hidden" id="comment-post-id" name="options[slug]" value="{{ page.slug }}">
-                  <input name="options[redirect]" type="hidden" value="{{ site.url }}{{ page.url }}">
-                <label for="comment-form-message"> Comment <small class="required">*</small></label>
-                <textarea type="text" rows="4" id="comment-form-message" name="fields[message]" tabindex="1"></textarea>
-                <div class="small help-block"><a href="https://daringfireball.net/projects/markdown/">{{ site.data.ui-text[site.locale].comment_form_md_info | default: "Markdown is supported." }}</a></div>
-              </div>
-              <div class="form-group">
-                <label for="comment-form-name"> Name <small class="required">*</small></label>
-                <input type="text" id="comment-form-name" name="fields[name]" tabindex="2" />
-              </div>
-              <div class="form-group">
-                <label for="comment-form-email"> Email address </label>
-                <input type="email" id="comment-form-email" name="fields[email]" tabindex="3" />
-              </div>
-              <div class="form-group">
-                <button type="submit" id="comment-form-submit" tabindex="5" class="btn btn--primary btn--large"> Submit Comment </button>
-              </div>
-            </form>
+          <p class="page__comments-title">Leave a Comment</p>
+          <p class="small">Your email address will not be published. Required fields are marked <span class="required">*</span></p>
+          <form id="new_comment" class="page__comments-form js-form form" method="post" action="https://api.staticman.net/v2/entry/dorianbrown/dorianbrown.github.io/master/comments">
+            <div class="form-group">
+                <input type="hidden" id="comment-post-id" name="options[slug]" value="{{ page.slug }}">
+                <input name="options[redirect]" type="hidden" value="{{ site.url }}{{ page.url }}">
+              <label for="comment-form-message"> Comment <small class="required">*</small></label>
+              <textarea type="text" rows="4" id="comment-form-message" name="fields[message]" tabindex="1"></textarea>
+              <div class="small help-block"><a href="https://daringfireball.net/projects/markdown/">{{ site.data.ui-text[site.locale].comment_form_md_info | default: "Markdown is supported." }}</a></div>
+            </div>
+            <div class="form-group">
+              <label for="comment-form-name"> Name <small class="required">*</small></label>
+              <input type="text" id="comment-form-name" name="fields[name]" tabindex="2" />
+            </div>
+            <div class="form-group">
+              <label for="comment-form-email"> Email address </label>
+              <input type="email" id="comment-form-email" name="fields[email]" tabindex="3" />
+            </div>
+            <div class="form-group">
+              <button type="submit" id="comment-form-submit" tabindex="5" class="btn btn--primary btn--large"> Submit Comment </button>
+            </div>
+          </form>
     </div>
 </div>

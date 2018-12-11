@@ -20,7 +20,7 @@ html {
 
 body {
   background: $white;
-  font: 16px $helvetica;
+  font: 18px $helvetica;
   color: $darkGray;
   line-height: 1.45;
 }
@@ -50,11 +50,11 @@ h2 {
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 h4 {
-  font-size: 18px;
+  font-size: 16px;
   color: $gray;
 }
 
@@ -191,10 +191,20 @@ nav[data-toggle=toc] .nav-link.active+ul {
   max-width: none;
 }
 
+// Date below post title picture
 .date {
   font-style: italic;
   color: $gray;
   text-align: right;
+}
+
+// Categories shown below title picture
+.post-categories {
+  color: $gray;
+  margin-top: 10px;
+  text-align: right;
+  font-style: italic;
+  margin-bottom: -60px;
 }
 
 // Specify the color of the selection
@@ -281,6 +291,13 @@ nav[data-toggle=toc] .nav-link.active+ul {
   @include mobile {
     margin: 3px 0;
   }
+}
+
+.post-date {
+  float: right;
+  vertical-align: middle;
+  padding: 10px 0px 10px 0px;
+  color: #666;
 }
 
 nav {

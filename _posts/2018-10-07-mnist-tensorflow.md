@@ -2,8 +2,7 @@
 layout: post
 title: Understanding Tensorflow with MNIST
 date: 2018-10-07
-author: Dorian 
-categories: [machine-learning, tensorflow]
+categories: [Machine Learning, Programming]
 picture: /assets/images/mnist/ideal_outputs.png
 published: true
 excerpt: During a hackathon at work I finally had tensorflow and it's api "click" for me. This article shares some of what made it click for me, in addition to the other stuff I did trying to understand the weights of the trained network better.
