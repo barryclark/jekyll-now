@@ -7,10 +7,7 @@
 		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
 		ga('create', 'UA-130787525-1', 'auto');
-		ga('send', 'pageview', {
-		  'page': '{{ site.baseurl }}{{ page.url }}',
-		  'title': '{{ page.title | replace: "'", "\\'" }}'
-		});
+		ga('send', 'pageview');
 	</script>
 	<!-- End Google Analytics -->
 {% endif %}
