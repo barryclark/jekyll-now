@@ -3,9 +3,7 @@ layout: post
 comments: true
 title: Hello World
 ---
-
-#  Say What?! Hello to the Internet World!!
-
+### Say Whattttt?! Hello to the Internet World!!
 Till yesterday I was unaware about what in the world Jekyll is. And today it seems I am writing my first blog using it.
 What an astonishing turn of events, I had been spending time to understand the basics of Django to build my own portfolio and now I am building my portfolio using Jekyll.
 

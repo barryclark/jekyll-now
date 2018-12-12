@@ -8,8 +8,9 @@ Machine learning & Predictive data analyst with 2 years of experience. Experienc
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+A good programmer always reuses code hence I wrote code templates which can be used readily and can be modified according to the situation, thus increasing efficiency and allowing better time management. Kindly have a look at <a href="{{ site.baseurl }}/project">my work</a> for some of my projects.
+
 
 ### Contact me
 
-[email@domain.com](mailto:shreyasmailbox17@gmail.com)
+[Mail me](mailto:shreyasmailbox17@gmail.com)
