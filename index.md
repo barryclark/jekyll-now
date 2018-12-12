@@ -17,6 +17,9 @@ layout: default
   {% endfor %}
 </div> -->
 
+# NOTICE
+**This website is a work in progress. Information provided on this website will change without notice until it is finalized. While this notice is here, do not regard information provided on this website as true.**
+
 # <a href="/mcamc">Middlesex County Academy Math Competition</a>
 (some tagline here)
 
