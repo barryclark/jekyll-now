@@ -26,7 +26,7 @@ One of the latest milestones in this development is the <a href="https://ai.goog
 </div>
 
 
-BERT builds on top of a number of clever ideas that have been bubbling up in the NLP community recently -- including but not limited to <a href="https://arxiv.org/abs/1511.01432">Semi-supervised Sequence Learning</a><span class="faded_text"> (by <a href="https://twitter.com/iamandrewdai">Andrew Dai</a> and <a href="https://twitter.com/quocleix">Quoc Le</a>)</span>, <a href="https://arxiv.org/abs/1802.05365">ELMo</a> <span class="faded_text">(by <a href="https://twitter.com/mattthemathman">Matthew Peters</a> and researchers from <a href="https://allenai.org/">AI2</a> and <a href="https://www.engr.washington.edu/about/bldgs/cse">UW CSE</a>)</span>, <a href="https://arxiv.org/abs/1801.06146">ULMFiT</a> <span class="faded_text">(by fast.ai founder <a href="https://twitter.com/jeremyphoward">Jeremy Howard</a> and <a href="https://twitter.com/seb_ruder">Sebastian Ruder</a>)</span>, and the <a href="https://s3-us-west-2.amazonaws.com/openai-assets/research-covers/language-unsupervised/language_understanding_paper.pdf">OpenAI transformer</a> <span class="faded_text">(by OpenAI researchers <a href="https://twitter.com/alecrad">Radford</a>, <a href="https://twitter.com/karthik_r_n">Narasimhan</a>, <a href="https://twitter.com/timsalimans">Salimans</a>, and <a href="https://twitter.com/ilyasut">Sutskever</a>)</span>, and the Transformer <span class="faded_text">([Vaswani et al](https://arxiv.org/pdf/1706.03762.pdf))</span>.
+BERT builds on top of a number of clever ideas that have been bubbling up in the NLP community recently -- including but not limited to <a href="https://arxiv.org/abs/1511.01432">Semi-supervised Sequence Learning</a><span class="faded_text"> (by <a href="https://twitter.com/iamandrewdai">Andrew Dai</a> and <a href="https://twitter.com/quocleix">Quoc Le</a>)</span>, <a href="https://arxiv.org/abs/1802.05365">ELMo</a> <span class="faded_text">(by <a href="https://twitter.com/mattthemathman">Matthew Peters</a> and researchers from <a href="https://allenai.org/">AI2</a> and <a href="https://www.engr.washington.edu/about/bldgs/cse">UW CSE</a>)</span>, <a href="https://arxiv.org/abs/1801.06146">ULMFiT</a> <span class="faded_text">(by fast.ai founder <a href="https://twitter.com/jeremyphoward">Jeremy Howard</a> and <a href="https://twitter.com/seb_ruder">Sebastian Ruder</a>)</span>, the <a href="https://s3-us-west-2.amazonaws.com/openai-assets/research-covers/language-unsupervised/language_understanding_paper.pdf">OpenAI transformer</a> <span class="faded_text">(by OpenAI researchers <a href="https://twitter.com/alecrad">Radford</a>, <a href="https://twitter.com/karthik_r_n">Narasimhan</a>, <a href="https://twitter.com/timsalimans">Salimans</a>, and <a href="https://twitter.com/ilyasut">Sutskever</a>)</span>, and the Transformer <span class="faded_text">([Vaswani et al](https://arxiv.org/pdf/1706.03762.pdf))</span>.
 
 There are a number of concepts one needs to be aware of to properly wrap one's head around what BERT is. So let's start by looking at ways you can use BERT before looking at the concepts involved in the model itself.
 
@@ -158,7 +158,7 @@ What's ELMo's secret?
 ELMo gained its language understanding from being trained to predict the next word in a sequence of words - a task called *Language Modeling*. This is convenient because we have vast amounts of text data that such a model can learn from without needing labels.
 
 
-<div class="img-div-any-width" markdown="0">
+<div class="img-div-any-width" markdown="1">
   <img src="/images/Bert-language-modeling.png"/>
   <br />
   A step in the pre-training process of ELMo: Given "Let's stick to" as input, predict the next most likely word -- a *language modeling* task. When trained on a large dataset, the model starts to pick up on language patterns. It's unlikely it'll accurately guess the next word in this example. More realistically, after a word such as "hang", it will assign a higher probability to a word like "out" (to spell "hang out") than to "camera".
@@ -171,7 +171,7 @@ ELMo actually goes a step further and trains a bi-directional LSTM -- so that it
 
 <div class="img-div-any-width" markdown="0">
   <img src="/images/elmo-forward-backward-language-model-embedding.png"/>
-  </br>
+  <br />
   <a href="https://www.slideshare.net/shuntaroy/a-review-of-deep-contextualized-word-representations-peters-2018">Great slides</a> on ELMo
 </div>
 
