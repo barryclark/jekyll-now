@@ -1,11 +1,14 @@
 ---
-layout: page
+layout: default
 title: MCAMC
 permalink: /mcamc/
 ---
-MCA Math Competition
-
+# Middlesex County Academy Math Competition
 (some tagline here)
+
+March 30, 2019
+
+MCAMC registration opens January 2, 2019
 
 ## What is MCAMC?
 
