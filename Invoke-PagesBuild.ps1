@@ -48,6 +48,8 @@ param(
     $Repository = $env:SYSTEM_TEAMPROJECT
 )
 
+[Net.ServicePointManager]::SecurityProtocol = [Net.ServicePointManager]::SecurityProtocol -bor [Net.SecurityProtocolType]::Tls12
+
 $ApiParams = @{
     Uri     = "https://api.github.com/repos/$Username/$Repository/pages/builds"
     Method  = 'POST'
@@ -68,29 +70,32 @@ Invoke-RestMethod @ApiParams
 $Date = Get-Date -Format yyyy-MM-dd
 Write-Host "Current date is: $Date" -ForegroundColor Blue
 
-Write-Host "Available Blog Posts in [$PSScriptRoot\_posts]:" -ForegroundColor Green
-Get-ChildItem |
+Write-Host "Available Blog Posts in [$PSScriptRoot/_posts]:" -ForegroundColor Green
+Get-ChildItem "$PSScriptRoot/_posts" |
     Select-Object -Expand Basename |
     Write-Host -ForegroundColor Green
 
-$BlogPostFile = Get-ChildItem -Path $PSScriptRoot\_posts |
-    Where-Object {$_.Name -match "$Date"} |
-    Select-Object -ExpandProperty Name
+$BlogPostFile = Get-ChildItem "$PSScriptRoot/_posts" |
+    Where-Object {$_.Name -match [regex]::Escape($Date)}
 
-if ($BlogPostFile.Name -match "\d-([a-z-!]+)\.md") {
+if ($BlogPostFile) {
 
-    $UrlEnding = $matches[1]
+    $UrlEnding = $BlogPostFile.Basename -replace '([0-9]{4})-([0-9]{2})-([0-9]{2})-(.+)', '$1/$2/$3/$4'
 
     $FriendlyTitle = @( $BlogPostFile | Select-String -Pattern '^title:' )[0].Line -replace '^title: '
-    $TweetText = @( $BlogPostFile | Select-String -Pattern '^tweet:' )[0].Line -replace '^tweet: '
 
     $BlogUrl = "https://vexx32.github.io/$UrlEnding"
     $ShortLink = Invoke-WebRequest -Uri "https://tinyurl.com/api-create.php?url=$BlogUrl" -UseBasicParsing |
         Select-Object -ExpandProperty Content
 
+    $Tweet = "$FriendlyTitle $ShortLink"
+    if ($Tweet.Length -gt 140) { $Tweet.Substring(0, 108) + "... $ShortUri"}
+    Write-Host "Writing Variables"
     Write-Host "##vso[task.setvariable variable=DoTweet]DO THE THING"
-    Write-Host "##vso[task.setvariable variable=BlogUrl]$ShortLink"
-    Write-Host "##vso[task.setvariable variable=BlogPostTitle]$FriendlyTitle"
-    Write-Host "##vso[task.setvariable variable=TweetText]$TweetText"
+    Write-Host "Tweet Text: $Tweet"
+    Write-Host "##vso[task.setvariable variable=Tweet]$Tweet"
+}
+else {
+    Write-Host "No blog post detected."
 }
 if ($Error[0]) {exit -1} else {exit 0}

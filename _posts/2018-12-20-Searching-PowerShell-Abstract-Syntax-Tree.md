@@ -4,7 +4,6 @@ title: Searching the PowerShell Abstract Syntax Tree
 date: 2018-12-20
 categories: [PowerShell, Advanced, Reference]
 tags: [powershell, ast]
-tweet: The AST in PowerShell is readily accessible, and occasionally it pays to know how to use it!
 ---
 
 PowerShell's Abstract Syntax Tree, or AST for short, contains a full listing of all parsed content

@@ -135,7 +135,7 @@ class SizeTransformAttribute : ArgumentTransformationAttribute {
         #>
         foreach ($Size in $OutputData) {
             $Area = $Size.Width * $Size.Height
-            if ($Area -gt 20000 x 20000) {
+            if ($Area -gt 20000 * 20000) {
                 throw [ArgumentTransformationMetadataException]::new(
                     "The size value '$Size' is larger than can be handled for Image or Graphics."
                 )
@@ -179,7 +179,7 @@ messy work of parsing easy-to-write input to a helper class, which is _invaluabl
 a more complex class.
 
 Rather than needing a whole other _parameter set_ to handle the different input style, you can keep
-your function's parameters nice and tidy, and simply list in your parameter's help secion the
+your function's parameters nice and tidy, and simply list in your parameter's help section the
 various types of input formats that the parameter can accept.
 This allows users to easily input whatever value(s) they wish, without having to figure out exactly
 how to create a properly-formed object themselves.
