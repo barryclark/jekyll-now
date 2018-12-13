@@ -4,12 +4,14 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
 
-### More Information
+### Who Am I ?
 
-A place to include any other types of information that you'd like to include about yourself.
+Hey Bakar here! or as I am officially named "Muhammad Abdullah Abu Bakar"(Trust me it's a mouthful). I was born and raised in Pakistan, but currently in Istanbul till 2019. I am Budding Java EE Developer as working no Enterprise Software Development specifically with Spring(MVC/Security/Data) but generally I'm learning my ropes around the Enterprise *Javaverse*! Recently I've started to interact with multiple Open Source Projects and I must say I love it! Thank You Github <3  
+I'm also quite fond of travelling and doing some amateur photography on my weekend strolls or day-to-day commuting. I hope to share some of my photos here soon! I'm quite fond of retro-technology from the 80's & 90's after find how the PS1 modchips worked haha! Considering myself a student of the stoic branch of philosophy I also read voraciously the works of Seneca, Epictetus and Marcus Aurelius.
+
+
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[theawesomekhan@gmail.com](mailto:theawesomekhan@gmail.com)
