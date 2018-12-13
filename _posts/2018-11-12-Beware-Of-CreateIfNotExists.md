@@ -1,3 +1,7 @@
+---
+title: Application Insights and Table Storage CreateIfNotExists
+---
+
 With the CSharp version of the API to the Table Service getting access to a ```CloudTable``` is done through an instance of the ```CloudTableClient``` object by calling ```GetTableReference("your-table-name")``` . Wanting to write code that can handle if the table does not already exist is nice to attempt to prevent errors in making requests to tables that are non-existent. Luckily the ```CloudTable``` object has a nice method called ```CreateIfNotExists```.
 
 Calling ```CreateIfNotExists``` prompts the API to first make a POST to https://[yourstorageaccount].table.core.windows.net:443/Tables()
