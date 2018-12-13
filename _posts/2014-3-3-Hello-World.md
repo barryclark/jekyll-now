@@ -3,6 +3,7 @@ layout: post
 title: "Hello World"
 ---  
   
+  ![image-title-here](/images/helloworld.png){:class="img-responsive"}
   
 "Hello World", this wonderful string that we have all printed when learning our first programming language or acquiring a new one.  
 This blog post will serve the same purpose as the "Hello World" string; short, meaningless but indicating the start of something fresh. After years of reading wonderful blogs   
