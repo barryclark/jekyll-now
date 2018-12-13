@@ -4,7 +4,7 @@ title: About Me
 permalink: /about/  
 ---  
   
-  ![Hey it's Me](https://avatars1.githubusercontent.com/u/21154487?s=460&v=4){:class="img-responsive"}
+  ![Hey it's Me](https://avatars1.githubusercontent.com/u/21154487?s=250&v=4){:class="img-responsive"}
 ## Who Am I?  
 Hey **Bakar** here!  I was born and raised in Pakistan, but currently in Istanbul till 2019. I am Budding Java EE Developer as working on Software Development specifically with Spring(MVC/Security/Data) but these days I'm learning my ropes around the Enterprise *Javaverse*! 
 ## What do I do?
