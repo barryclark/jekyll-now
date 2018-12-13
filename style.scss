@@ -21,11 +21,14 @@ body {
 	background:$lightGray;
   font: 16px/1.4 $fabian;
   color: $black;
+  padding-left: 2ch;
+  padding-right: 3ch;
+  margin: 0 auto;
 }
 
 .container {
   margin: 0 auto;
-  max-width: 740px;
+  max-width: 900px;
   padding: 0 10px;
   width: 100%;
 }
@@ -115,6 +118,7 @@ strong, b {
 }
 
 img {
+  border: 1px solid #021a40;
   max-width: 100%;
 }
 
