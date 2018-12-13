@@ -1,12 +1,14 @@
 ---
 layout: post
-title: Create a Small HTTP Server in Java!
+title: First Blog Post!
 ---
 
-Creating a HTTP server is always a fun and creative proces
+"Hello World", this wonderful string that we have all printed when learning our first programming language or acquiring a new one.
+This blog post will serve the same purpose as the "Hello World" string; short, meaningless but indicating the start of something fresh. After years of reading wonderful blogs 
+like Medium, Dev Community, SimpleProgrammer and other fantastic blogs/blogging platforms, I've finally decided to start a blog for myself where I can practice my writing skills on:
+1. Myself (insert a dash of narcissism)
+2. Technology I use and learn
+3. Photography and Philosophy
 
-Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
+and everything else...
 
-![_config.yml]({{ site.baseurl }}/images/config.png)
-
-The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
