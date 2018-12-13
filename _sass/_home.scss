@@ -1,0 +1,72 @@
+@import "variables";
+
+.main-banner {
+	position: relative;
+}
+
+.main-banner-img {
+	width: 100%;
+}
+
+.desktop-img {
+	display: inline;
+	@include mobile {
+		display: none;
+	}
+}
+
+.mobile-img {
+	display: none;
+	@include mobile {
+		display: inline;
+	}
+}
+
+.main-banner-overlay {
+	position: absolute;
+	bottom: 30px;
+	right: 20px;
+	text-align: right;
+	@include mobile {
+		text-align: center;
+		right: auto;
+	}
+}
+
+.main-banner-btn-cont {
+	margin-top: 22px;
+}
+
+.btn-banner {
+	margin-left: 15px;
+	font-size: 18px;
+	background-color: #1e88e5;
+	color: white;
+	border: 0;
+	padding: 6px 10px;
+	font-family: inherit;
+	cursor: pointer;
+	@include mobile {
+		margin-right: 7.5px;
+		margin-left: 7.5px;
+	}
+}
+
+.btn-banner:hover {
+	background-color: #1565c0;
+	color: white;
+}
+
+.btn-disabled {
+	background-color: #666;
+	cursor: auto;
+}
+
+.btn-disabled:hover {
+	background-color: #666;
+	color: white;
+}
+
+.main-banner-text {
+	font-size: 22px;
+}
