@@ -8,7 +8,7 @@ Hi
 
 I am Harsh Rangwani currently junior undergraduate at Dept. Of. Computer Science  and Engineering **IIT** **BHU** **Varanasi**. I current am a undergraduate research assisstant at Natural Language Processing Research Lab at IIT BHU. My research interests broadly lie on the intersection of Machine Learning and Natural Language Processing. I am pursuing an honors degree being jointly advised by [**Dr**. **Rajeev** **Sangal**](https://faculty.iiit.ac.in/~sangal/web/) and [**Dr**. **A**.**K**. **Singh**](https://faculty.iiit.ac.in/~sangal/web/).
 
-I have interned with Amazon in Outbound Marketing Automtation team and also have been the prime maintainer of the placement portal [site](www.placement.iitbhu.ac.in). 
+I have interned with Amazon in Outbound Marketing Automtation team and also have been the lead maintainer of the placement portal [site](www.placement.iitbhu.ac.in). 
 
 In my free time I like to read books and play basketball. 
 
