@@ -24,11 +24,11 @@ Sometimes the soldering wire and paste can be bought as [a kit](https://amzn.to/
 
 ## Tools Needed
 
-* [Copper pipe cutter https://amzn.to/2Lc7QE5)
-* [Emery cloth / sandpaper https://amzn.to/2Lfv6AN)
+* [Copper pipe cutter](https://amzn.to/2Lc7QE5)
+* [Emery cloth / sandpaper](https://amzn.to/2Lfv6AN)
 * [Propane torch](https://amzn.to/2EigMpZ) and [propane](https://amzn.to/2Lfgz8e)
 * [Measuring tape](https://amzn.to/2LcgUIY)
-* [Marker (such as a [Sharpie](https://amzn.to/2SIg6Ov)) 
+* Marker (such as a [Sharpie](https://amzn.to/2SIg6Ov)) 
 
 ## Steps
 
