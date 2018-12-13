@@ -16,10 +16,11 @@ MCAMC brings an exciting new type of math competition to the middle school audie
 
 ## Important Dates
 
+<div class="mcamc-table">
 <table>
   <tr>
-    <th>Registration Opens</th>
-    <th>January 2, 2019</th>
+    <td>Registration Opens</td>
+    <td>January 2, 2019</td>
   </tr>
   <tr>
     <td>Sample Questions Released</td>
@@ -42,13 +43,15 @@ MCAMC brings an exciting new type of math competition to the middle school audie
     <td>March 31, 2019</td>
   </tr>
 </table>
+</div>
 
 ## Schedule
 
+<div class="mcamc-table">
 <table>
   <tr>
-    <th>9:00 - 9:15</th>
-    <th>Check In</th>
+    <td>9:00 - 9:15</td>
+    <td>Check In</td>
   </tr>
   <tr>
     <td>9:00 - 9:15</td>
@@ -75,6 +78,7 @@ MCAMC brings an exciting new type of math competition to the middle school audie
     <td>Awards Ceremony</td>
   </tr>
 </table>
+</div>
 
 ## Format and Rules
 
