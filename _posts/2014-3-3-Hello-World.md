@@ -3,7 +3,7 @@ layout: post
 title: "Hello World"  
 ---    
     
- ![image-title-here](/images/helloworld.png){:class="img-responsive"}  
+ ![_config.yml]({{ site.baseurl }}/images/helloworld.png)  
     
 "Hello World", this wonderful string that we have all printed when learning our first programming language.    
 This blog post will serve the same purpose as the "Hello World" string; that is indicating the start of something fresh. After years of voraciously reading blogs     
