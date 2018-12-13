@@ -11,7 +11,7 @@ This blog post will serve the same purpose as the "Hello World" string; that is 
 like [Medium](https://medium.com/), [Dev Community](https://dev.to/), [SimpleProgrammer](https://simpleprogrammer.com/) and other fantastic blogs,blogging platforms and authors. I've finally decided to start a blog for myself where I can start writing and give back to the world along with polishing my writing skills :)    
 <!--more-->
 # Reasons for Starting this Journal/Blog   
- ##### "Necessity is the mother of invention" 
+*"Necessity is the mother of invention"*
  Is Proverb which fits why this blog started in the first place; I started my internship in Istanbul at a wonderful company called [etcBase](https://www.etcbase.com/) and where I currently am working! I had to needed to document my work,give back to the community and have my little space on the web; A Blog fulfilled all of these reasons as I state: 
 ### 1. Documentation  
   In the first four months of my internships, I had been learning in override mode while working with a plethora of tools! After all I was solving problems which were unique; problems which did not have a ready-made solution as compared in academia where one can find solutions at the end of the book(or in a solution's manual).   
