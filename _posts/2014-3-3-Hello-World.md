@@ -4,7 +4,7 @@ title: "Hello World"
 ---    
     
  ![_config.yml]({{ site.baseurl }}/images/helloworld.png)  
-    
+<!--more-->
 "Hello World", this wonderful string that we have all printed when learning our first programming language.    
 This blog post will serve the same purpose as the "Hello World" string; that is indicating the start of something fresh. After years of voraciously reading blogs     
 like [Medium](https://medium.com/), [Dev Community](https://dev.to/), [SimpleProgrammer](https://simpleprogrammer.com/) and other fantastic blogs,blogging platforms and authors. I've finally decided to start a blog for myself where I can start writing and give back to the world along with polishing my writing skills :)    
