@@ -109,7 +109,7 @@ em, i {
 }
 
 strong, b {
-  /*font-weight: medium;*/
+  font-weight: bold;
 }
 
 /*img {
@@ -161,7 +161,7 @@ strong, b {
 }
 
 .masthead {
-  padding: 20px 0;
+  padding: 20px 0px 14px 0px;
   border-bottom: 1px solid $lightGray;
 
   @include mobile {
@@ -192,7 +192,7 @@ strong, b {
   @include mobile {
     float: none;
     display: block;
-    margin: 0 auto;
+    margin: 12px auto 0px auto;
   }
 }
 
@@ -218,7 +218,7 @@ strong, b {
 
 nav {
   float: right;
-  margin-top: 23px; // @TODO: Vertically middle align
+  margin-top: 14px; // @TODO: Vertically middle align
   font-family: Rubik, sans-serif;
   font-size: 18px;
 
