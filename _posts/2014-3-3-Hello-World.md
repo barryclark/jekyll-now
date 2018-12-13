@@ -23,7 +23,7 @@ like [Medium](https://medium.com/), [Dev Community](https://dev.to/), [SimplePro
   To be honest having a blog is pretty cool! I can show it off to my friends, family and it can help me with my future career ventures. Thus it gives me my own personal space on the web where I can propagate my thoughts and writings; I'd say that is pretty powerful if you think about it from this aspect!  
     
     
-  #### The Road Ahead  
+### The Road Ahead  
   Thus in the next couple of months, I'll keep updating the blogs with pictures, quotes, how-to's and rambled writings. Apart from that I'd like to Thank Github from providing [GitHub-Pages](https://pages.github.com/) where one can easily host their site for free and [Jekyll](https://jekyllrb.com/) for providing such a fantastic way to create wonderful websites generated dynamically!
   If anyone wants to create their blog like I did from today, I'd suggest reading Barry Clarke's guide on *"[Build A Blog With Jekyll And GitHub Pages](https://www.smashingmagazine.com/2014/08/build-blog-jekyll-github-pages/)"*
-#### **Bakar Out.**
+##### **Bakar Out.**
