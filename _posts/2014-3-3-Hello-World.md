@@ -1,6 +1,7 @@
 --- 
 layout: post    
 title: "Hello World"  
+excerpt_separator: <!--more-->
 ---    
     
  ![_config.yml]({{ site.baseurl }}/images/helloworld.png)  
