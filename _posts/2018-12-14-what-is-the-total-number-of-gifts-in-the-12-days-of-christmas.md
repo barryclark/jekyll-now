@@ -37,7 +37,7 @@ The real answer (well, it's a fictional tale) is that Little Johnny noticed a pa
     1 + 100 = 101
     2 + 99 = 101
     3 + 98 = 101
-    &vellip;
+    ⋮
     48 + 53 = 101
     49 + 52 = 101
     50 + 51 = 101
@@ -52,7 +52,7 @@ We can generalize this to the sum of any set of counting numbers [min&hellip;max
 
 Apply this to the presents given during the Twelve Days of Christmas:
 
-    (1 + 12) &times; 12 / 2 = 13 * 6 = 78
+    (1 + 12) × 12 / 2 = 13 * 6 = 78
 
 But what if each verse is a separate set of gifts?
 
@@ -79,11 +79,11 @@ That seems like a lot of work - is there something easier, something along the l
 
 Let's think how often each gift (or number) gets repeated. There are twelve verses, and the first gift is in all twelve verses. The second gift is in the final eleven verses. Continuing to the end, the twelfth gift only appears once in the final verse. So we only need to multiply each gift by the number of times that gift is given, then sum the results:
 
-     (1 &times; 12) + (2 &times; 11) + (3 &times; 10) + (4 &times; 9) + (5 &times; 8) + (6 &times; 7) + (7 &times; 6) + (8 &times; 5) + (9 &times; 4) + (10 &times; 3) + (11 &times; 2) + (12 &times; 1)
+     (1 × 12) + (2 × 11) + (3 × 10) + (4 × 9) + (5 × 8) + (6 × 7) + (7 × 6) + (8 × 5) + (9 × 4) + (10 × 3) + (11 × 2) + (12 × 1)
 
 ...Except this looks worse than before! (Well, maybe depending on who you are). There's another pattern emerging, though - due to the fact that **x &times; y** is the same as **y &times; x** (known as [the commutative property](https://en.wikipedia.org/wiki/Commutative_property)), the pattern repeats half way through. We only need to figure out half of the above formula, and then double the result:
 
-    [(1 &times; 12) + (2 &times; 11) + (3 &times; 10) + (4 &times; 9) + (5 &times; 8) + (6 &times; 7)] &times; 2
+    [(1 × 12) + (2 × 11) + (3 × 10) + (4 × 9) + (5 × 8) + (6 × 7)] × 2
 
 You can generalize this in a similar fashion when assuming that each verse is not a separate set of gifts. I'll leave that solution as an exercise for the reader.
 
