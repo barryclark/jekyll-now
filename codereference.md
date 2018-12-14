@@ -386,6 +386,10 @@ ENOG411DPZG,"                         ID1                        ID2  pearsonR
  
 ### <font color="red">Chimera command line</font> 
 
+##### Match pdb to a chain
+        Open up reference and pdb to dock in 
+        Tools -> Structure Comparison -> MatchMaker
+
 ##### Select an atom, format is #ChainID:residue@typeofatom
         Open the command line (Tools -> General Control -> Command line
         In the line, type #ChainID:residue@typeofatom
@@ -413,7 +417,7 @@ ENOG411DPZG,"                         ID1                        ID2  pearsonR
        First define a transparent color
        colordef transred 1 0 0 0.3
        select *whatever you want to color*
-       color sel transred
+       color transred sel
  
 ### <font color="red">Git</font>
 
