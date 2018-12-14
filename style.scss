@@ -20,7 +20,7 @@ html {
 
 body {
   background: $white;
-  font: 18px $helvetica;
+  font: 16px $helvetica;
   color: $darkGray;
   line-height: 1.45;
 }
@@ -28,7 +28,6 @@ body {
 h1, h2, h3, h4, h5, h6 {
   color: $darkerGray;
   font-weight: bold;
-
   line-height: 1.7;
   margin: 1em 0 15px;
   padding: 0;

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: A Little More on Logistic Regression
+title: A Little Math on Logistic Regression
 date: 20181211
 categories: [Machine Learning, Mathematics]
 picture: /assets/images/logreg/binary-dataset.png
@@ -16,39 +16,15 @@ I wrote this article because of a training I gave on the subject for some junior
 
 To keep things simple we'll be limiting ourselves to the two (e.g. 0 and 1) class problem. 
 
-# Derivation of logistic regression
-
-Most material I've read start out with the assumption that the so-called conditional log [odds ratio](https://www.wikiwand.com/en/Odds_ratio) of an observation can be written as a weighted sum of the observation's features:
-
-$$\log \frac{P(Y=1|x)}{P(Y=0|x)} = \sum_{j=0}^Nb_jx_j$$
-
-where we define $x_0 := 1$ for the intercept. We'll try and explain this assumption a little bit.
-
-So what is this odds-ratio $p/(1-p)$? In the case of a game, the odds-ratio of winning is simply the ratio of winning vs. non-winning. Say your game pays out 70% of the time, then your ratio is $\frac{0.7}{1-0.7} \approx 2.33$. If you win 20% of the time, it's $\frac{0.2}{1 - 0.2} \approx 0.25$.
-
-Another natural question is, why are we looking at this odds-ratio instead of the probabilities themselves? To answer this, we'll do a little experiment. Given a 1-D dataset with binary labels, we're gonna do two things to estimate the probabilities:
-- **Method 1**: We're going to estimate the probability for each feature vector directly. We'll do this by splitting the features into buckets, and in each bucket we'll estimate the probability by num_true/num_false.
-- **Method 2**: We train a logistic regression model.
-
-Here's a comparison of these two methods in a simple simulation
-<figure style="text-align: center;">
-    <img src="/assets/images/logreg/lin_log_probs.png" style="width: 75%;">
-    <figcaption> Comparing logistic regression (orange) to binned empirical probability estimates (blue) </figcaption>
-</figure>
-
-Besides some noise, the probabilities match! The "bucketing" approach isn't used in practice because the number of buckets explodes as the dimensionality increases. 
-
-For me this is the most convincing argument that logistic regression is a sensible model on an intuitive level, and unfortunately I have never seen it mentioned in introductions to the technique.
-
 ## Relation between thresholds and decision boundaries
 
-So as most of you probably know in order to get that binary output we want, we need to choose a threshold. Probabilities below this threshold are mapped to 0, and above it are mapped to 1. Visually we can think of this:
+Most of you probably know that in order to get the binary output we want, we must choose a threshold value. Probabilities below this threshold are set to 0, and above it are set to 1. Visually we can think of it this way:
 
 <figure style="text-align: center;">
     <img src="/assets/images/logreg/prob_threshold.png" style="width: 85%;">
 </figure>
 
-You might wonder, how does that relate to a decision boundary? For those unfamiliar with the term, the decision boundary refers to the hypersurface that segments the feature space into the two output classes. Which side of the boundary a point is determines how it gets classified by the model. 
+You might wonder, how does that relate to a decision boundary? The decision boundary refers to the hypersurface that splits the feature space into the two output classes. Which side of the boundary a point is determines how it gets classified by the model. 
 
 Given a probability threshold, it's pretty easy to find this boundary with a little linear algebra. Let's take $t = 1/2$ and see what what the boundary is:
 
@@ -61,7 +37,7 @@ $$ \begin{align}\frac{1}{1 + e^{\beta^\intercal x}} & = \frac{1}{2}
     \\ e^{\beta^\intercal x} & = 1
     \\ \beta^\intercal x & = 0\end{align} $$
 
-So there it is, our boundary for $t=0.5$ is the line $\\{x \in \mathbb{R}^n: \beta^{\intercal}x = 0 \\}$, which is a hyperplane in $\mathbb{R}^n$.
+So there it is, our boundary for $t=0.5$ is the line $\\{x \in \mathbb{R}^n: \beta^{\intercal}x = 0 \\}$, which is a hyperplane in $\mathbb{R}^n$. If we include nonlinear functions of our features as additional features, this will add nonlinearities to this decision boundary.
 
 # Deriving Cross-Entropy from Maximum Likelihood
 
