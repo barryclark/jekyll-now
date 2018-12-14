@@ -32,7 +32,7 @@
 [CmdletBinding()]
 param(
     [Parameter(Position = 0, Mandatory)]
-    [Alias('ApiKey','ApiToken','AuthToken')]
+    [Alias('ApiKey', 'ApiToken', 'AuthToken')]
     [ValidateNotNullOrEmpty()]
     [string]
     $Token,
@@ -88,7 +88,7 @@ if ($BlogPostFile) {
     $ShortLink = Invoke-WebRequest -Uri "https://tinyurl.com/api-create.php?url=$BlogUrl" -UseBasicParsing |
         Select-Object -ExpandProperty Content
 
-    $Tweet = "$FriendlyTitle $ShortLink"
+    $Tweet = "Check out my latest blog post! $FriendlyTitle - $ShortLink"
     if ($Tweet.Length -gt 140) { $Tweet.Substring(0, 108) + "... $ShortUri"}
     Write-Host "Writing Variables"
     Write-Host "##vso[task.setvariable variable=DoTweet]DO THE THING"
