@@ -4,12 +4,12 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+We are the 2018 Code for Canada fellowship team working with the Public Service Commission of Canada in Ottawa, Ontario. We have an incredible opportunity to help build a product that will directly impact what the federal public service looks like. This site is where we're posting our project updates.
 
-### More Information
+### Contact the fellows
 
-A place to include any other types of information that you'd like to include about yourself.
+Siobhan is our product manager - [siobhan@codefor.ca](mailto:siobhan@codefor.ca)
 
-### Contact me
+Caley is our developer - [caley@codefor.ca](mailto:caley@codefor.ca)
 
-[email@domain.com](mailto:email@domain.com)
+Joey is our user experience designer - [joey@codefor.ca](mailto:joey@codefor.ca)
