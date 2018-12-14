@@ -8,8 +8,14 @@ We are the 2018 Code for Canada fellowship team working with the Public Service 
 
 ### Contact the fellows
 
-Siobhan is our product manager - [siobhan@codefor.ca](mailto:siobhan@codefor.ca)
+Siobhan is our product manager
+ - email: [siobhan@codefor.ca](mailto:siobhan@codefor.ca)
+ - twitter: [@sigh__oh](https://twitter.com/sigh__oh)
 
-Caley is our developer - [caley@codefor.ca](mailto:caley@codefor.ca)
+Caley is our developer
+ - email: [caley@codefor.ca](mailto:caley@codefor.ca)
+ - twitter: [@calesbrock](https://twitter.com/calesbrock)
 
-Joey is our user experience designer - [joey@codefor.ca](mailto:joey@codefor.ca)
+Joey is our user experience designer
+ - email: [joey@codefor.ca](mailto:joey@codefor.ca)
+ - twitter: [@huaajoey](https://twitter.com/huaajoey)
