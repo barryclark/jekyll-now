@@ -48,7 +48,7 @@ Little Johnny realized that this pattern meant that 101 was added to itself 50 t
 
 We can generalize this to the sum of any set of counting numbers [min&hellip;max]:
 
-    (min + max) &times; max / 2
+    (min + max) × max / 2
 
 Apply this to the presents given during the Twelve Days of Christmas:
 
