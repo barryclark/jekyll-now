@@ -20,11 +20,11 @@ avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/je
 footer-links:
   dribbble:
   email:
-  facebook:
+  facebook:https://www.facebook.com/profile.php?id=100000520906597
   flickr:
-  github: barryclark/jekyll-now
+  github: https://github.com/TonyTone1995
   instagram:
-  linkedin:
+  linkedin:https://www.linkedin.com/in/antonio-ruiz-b6ba4314a/
   pinterest:
   rss: # just type anything here for a working RSS icon
   twitter: jekyllrb
