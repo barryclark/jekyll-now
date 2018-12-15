@@ -1,6 +1,6 @@
-###Claire Darnell McWhite
-#####claire.mcwhite@utexas.edu | clairemcwhite.github.io
-#####Ph.D Candidate, Year 5, Cell and Molecular Biology Ph.D. Program, University of Texas at Austin
+#### Claire Darnell McWhite
+##### claire.mcwhite@utexas.edu | clairemcwhite.github.io
+##### Ph.D Candidate, Year 5, Cell and Molecular Biology Ph.D. Program, University of Texas at Austin
  
 **Education**
 
