@@ -46,17 +46,13 @@ We can see that the high number of dimensions and the sparsity of the data frame
   ![_config.yml]({{ site.baseurl }}/images/santander/3d.png)
   
   
-| Model 	 |  MSE     | R^2       | 
-|----------------|----------|-----------|
-| LR w/ LSA      | .5437    | 0.0575    |   
-
-  
-
-  
   As we can see below, there is a huge difference already, however we can see the model demonstrating similar behavior as it did previously. Most of the fitted values are centered around the mean of the logarithmic transformation of the target [Fig. 5]. There also appears to be some sort of 'wall' that does not let our predict any value less than 6.25 .
   
   
 ![_config.yml]({{ site.baseurl }}/images/santander/lr_3d.png)
+
+	MSE: .5437
+	R^2: 0.0575
 
 ## Regularization Methods:
 
@@ -72,12 +68,9 @@ Is it possible to perform better with just a subset of the original features ins
   
 ![_config.yml]({{ site.baseurl }}/images/santander/lasso.png)
 
-  
-    
-| Model 	 |  MSE     | R^2       | 
-|----------------|----------|-----------|
-| Lasso          | .5777    | -0.0001104|   
-
+ 
+	MSE: .577
+	R^2: -0.0001104
 
 ### Ridge 
   Ridge regression uses a penalizer that shrinks the coefficients as close to zero as possible, but unlike lasso, it does not kick out the parameters. We can see in this, it behaved similarly to our Principal Components Regression, with the omission of the 'wall' phenomenon discussed in Figure 7. We can note that our MSE did increase and our R^2 is not only still negative, but it is still lower than the R^2 obtained from our Principal Component Regression. In short, the Principal Component Regression outperformed both Penalization methods.
@@ -85,10 +78,9 @@ Is it possible to perform better with just a subset of the original features ins
 ![_config.yml]({{ site.baseurl }}/images/santander/ridge.png)
 
   
-| Model 	 |  MSE     | R^2       | 
-|----------------|----------|-----------|
-|Ridge Regression| .6108    | -0.05878  |   
 
+	MSE: .6108
+	R^2: -0.05878
 
   
  
@@ -106,11 +98,10 @@ Random Forest uses random sampling with replacement to select a random subset of
 
 ![_config.yml]({{ site.baseurl }}/images/santander/forest.png)
 
-  
-| Model 	 |  MSE     | R^2      | 
-|----------------|----------|----------|
-| Random Forest  |  .438    | 0.240    |   
 
+
+	MSE: .438
+	R^2: 0.240
 
 ## XGBoost 
 
@@ -118,10 +109,9 @@ XGBoost is similar to Random Forest, except that it uses to random sampling with
 
 ![_config.yml]({{ site.baseurl }}/images/santander/xgb.png)
 
-  
-| Model 	 |  MSE     | R^2       | 
-|----------------|----------|-----------|
-| XGBoost        | .434     | 0.277   	|   
+
+	MSE: .434
+	R^2: 0.277
 
 
 
@@ -140,7 +130,7 @@ We have explored several approaches to reducing the problems of dimensionality a
 
 ## References
 
-	 [1.] Bravo, H. C, $\&$ Irizarry, R. A. (2018, December 4). Lecture 6: Methods for High-Dimensional Problems. Lecture.
+	 [1.] Bravo, H. C, & Irizarry, R. A. (2018, December 4). Lecture 6: Methods for High-Dimensional Problems. Lecture.
 	 [2.]  Cohen, O. (2018, April 23). PCA vs Autoencoders – Towards Data Science. Retrieved from https://towardsdatascience.com/pca-vs-autoencoders-1ba08362f450 
 	[3.] Macdonnell, K. (2010, March 04). Why transform the dependent variable? Retrieved from https://cooldata.wordpress.com/2010/03/04/why-transform-the-dependent-variable/ 
 	 [4.] What Is R Squared And Negative R Squared. (2017, May 12). Retrieved December 4, 2018, from http://www.fairlynerdy.com/what-is-r-squared/ 
