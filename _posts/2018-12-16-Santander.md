@@ -54,7 +54,7 @@ We can see that the high number of dimensions and the sparsity of the data frame
   ![_config.yml]({{ site.baseurl }}/images/santander/3d.png)
   
   
-  As we can see below, there is a huge difference already, however we can see the model demonstrating similar behavior as it did previously. Most of the fitted values are centered around the mean of the logarithmic transformation of the target [Fig. 5]. There also appears to be some sort of 'wall' that does not let our predict any value less than 6.25 .
+  As we can see below, there is a huge difference already, however we can see the model demonstrating similar behavior as it did previously. Most of the fitted values are centered around the mean of the logarithmic transformation of the target. There also appears to be some sort of 'wall' that does not let our predict any value less than 6.25 .
   
   
 ![_config.yml]({{ site.baseurl }}/images/santander/lr_3d.png)
@@ -95,7 +95,7 @@ Is it possible to perform better with just a subset of the original features ins
 
 ## Tree Based Regression:
 
-  We can see that our penalization methods still suffer from the sparsity of our dataset. Ridge and Lasso Regression both assume that the input matrix is orthonormal, which means that the predictors are not correlated and loosely the same scale[]. Despite the MinMaxScaling we applied to the dataframe, it does not do anything to alleviate the correlation stipulation.
+  We can see that our penalization methods still suffer from the sparsity of our dataset. Ridge and Lasso Regression both assume that the input matrix is orthonormal, which means that the predictors are not correlated and loosely the same scale[1.]. Despite the MinMaxScaling we applied to the dataframe, it does not do anything to alleviate the correlation stipulation.
    It is beginning to be clear that linear methods are not performing well. Let us explore the notion of Non-Linear Regression. Trees can be used for both nonlinear classification and regression, and they work separating the prediction space using the input matrix. Although they are fast and easy to interpret, they can be prone to over fitting and high variance. Two algorithms that have been made popular in machine learning to solve this issue are Random Forest and XGBoost.
    
    
