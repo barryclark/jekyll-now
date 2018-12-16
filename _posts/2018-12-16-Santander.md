@@ -61,6 +61,7 @@ We can see that the high number of dimensions and the sparsity of the data frame
 ## Regularization Methods:
 
 Is it possible to perform better with just a subset of the original features instead of their Principal Components? Let's explore some methods to shrink the coefficients of the parameters of our model and see how it compares to our makeshift principal components regression.
+
 ![_config.yml]({{ site.baseurl }}/images/santander/L1_and_L2_balls.svg.png)
 
 
@@ -75,7 +76,7 @@ Is it possible to perform better with just a subset of the original features ins
     
 | Model 	 |  MSE     | R^2       | 
 |----------------|----------|-----------|
-| Lasso    | .5777    | -0.0001104    |   
+| Lasso          | .5777    | -0.0001104|   
 
 
 ### Ridge 
@@ -86,7 +87,7 @@ Is it possible to perform better with just a subset of the original features ins
   
 | Model 	 |  MSE     | R^2       | 
 |----------------|----------|-----------|
-| Ridge Regression     | .6108    | -0.05878    |   
+|Ridge Regression| .6108    | -0.05878  |   
 
 
   
@@ -106,9 +107,9 @@ Random Forest uses random sampling with replacement to select a random subset of
 ![_config.yml]({{ site.baseurl }}/images/santander/forest.png)
 
   
-| Model 	 |  MSE     | R^2       | 
-|----------------|----------|-----------|
-| Random Forest      | .438   | 0.240    |   
+| Model 	 |  MSE     | R^2      | 
+|----------------|----------|----------|
+| Random Forest  |  .438    | 0.240    |   
 
 
 ## XGBoost 
@@ -120,7 +121,7 @@ XGBoost is similar to Random Forest, except that it uses to random sampling with
   
 | Model 	 |  MSE     | R^2       | 
 |----------------|----------|-----------|
-| XGBoost     | .434    | 0.277   |   
+| XGBoost        | .434     | 0.277   	|   
 
 
 
