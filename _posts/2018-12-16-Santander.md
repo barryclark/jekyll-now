@@ -28,7 +28,7 @@ title: Santander Kaggle Challenge
 
 ### High Dimensionality 
 
-![_config.yml]({{ site.baseurl }}/images/santander/df_head.jpg)
+![_config.yml]({{ site.baseurl }}/images/santander/df_head.png)
 
 
 
