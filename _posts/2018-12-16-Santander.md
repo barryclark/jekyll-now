@@ -16,7 +16,12 @@ title: Santander Kaggle Challenge
 ### Target Variable
  Since the goal of the project is an attempt to predict the monetary value of customers, it is reasonable to assume that only a few select customers will are wealthy while the vast majority are average, middle-class accounts.[3] This poses a problem in a linear regression setting, specifically because our model would assume normality. By taking the logarithmic transformation of the target variable, we are able to make it a better fit for the underlying assumptions of a linear model.
  
+ #### Before...
+ 
  ![_config.yml]({{ site.baseurl }}/images/santander/target.png)
+ 
+ #### After...
+ ![_config.yml]({{ site.baseurl }}/images/santander/logtarget.png)
 
  
 
