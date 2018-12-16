@@ -20,7 +20,10 @@ title: Santander Kaggle Challenge
  
  ![_config.yml]({{ site.baseurl }}/images/santander/target.png)
  
+ 
+ 
  ### After...
+ 
  ![_config.yml]({{ site.baseurl }}/images/santander/logtarget.png)
 
  
