@@ -16,7 +16,7 @@ I wrote this article because of a training I gave on the subject for some junior
 
 To keep things simple we'll be limiting ourselves to the two (e.g. 0 and 1) class problem. 
 
-## Relation between thresholds and decision boundaries
+# Relation between thresholds and decision boundaries
 
 Most of you probably know that in order to get the binary output we want, we must choose a threshold value. Probabilities below this threshold are set to 0, and above it are set to 1. Visually we can think of it this way:
 
