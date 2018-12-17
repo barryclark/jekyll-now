@@ -47,6 +47,7 @@
   <script type="text/x-mathjax-config">
       MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)'], ['$$','$$']]}});
 
+
   </script>
   <script type="text/javascript">
       (function($, window) {
@@ -61,6 +62,7 @@
             adjustAnchor();
         });
     })(jQuery, window);
+
 
   </script>
 
@@ -91,18 +93,7 @@
 
 <div id="not-header">
   <div class="container">
-    <div class="row">
-      <div class="col-md-2">
-        <nav id="toc" data-toggle="toc" class="sticky-top"></nav>
-      </div>
-      <div class="col-md-1">
-      </div>
-      <div class="col-lg-8">
-        {{ content }}
-      </div>
-      <div class="col-md-1">
-      </div>
-    </div>
+    {{ content }}
   </div>
 
   <div class="wrapper-footer">
