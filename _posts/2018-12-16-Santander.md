@@ -38,7 +38,7 @@ title: Santander Kaggle Challenge
   
 
 ### High Dimensionality 
-The combination of sparsity and high dimensionality means that there is a good chance alot of our features will be correlated. To give you an idea of what this looks like, take a look at the first five observations from the data table.
+The combination of sparsity and high dimensionality means that there is a good chance alot of our features will be correlated. To give you an idea of what this looks like, take a look at the first five observations from the data table. 
 
 ![_config.yml]({{ site.baseurl }}/images/santander/df_head.png)
 
@@ -53,7 +53,7 @@ We can see that the high number of dimensions and the sparsity of the data frame
 
 ## Principal Components Regression Using a Linear Stacked AutoEncoder
 
-  One approach we can take to reduce the large dimensionality of our dataset is creating Principal Components using a Linear Stacked Auto Encoder. The Principal Component Analysis is a statistical procedure that uses an orthogonal transformation to create a set of nonlinear variables that capture the variance between the input matrix. Because there are so many variables, chances are there is collinearity in our model. We cannot get accurate estimates for a linear regression model. A Linear Stacked Auto Encoder is a type of Neural Network that produces a similar result to a Principal Component Analysis. The difference between the two is that PCA is restricted to a linear transformation and Neural networks have different activation functions to account for Non-Linearities.[2]
+  One approach we can take to reduce the large dimensionality of our dataset is creating Principal Components using a Linear Stacked Auto Encoder. The Principal Component Analysis is a statistical procedure that uses an orthogonal transformation to create a set of nonlinear variables that capture the variance between the input matrix. Because there are so many variables, chances are there is collinearity in our model. We cannot get accurate estimates for a linear regression model. A Linear Stacked Auto Encoder is a type of Neural Network that produces a similar result to a Principal Component Analysis. The difference between the two is that PCA is restricted to a linear transformation and Neural networks have different activation functions to account for Non-Linearities[2]. In a linear stacked autoencoder, the number of hidden layers gives you the number of principle components. This is what our 5000 column data table looks like transformed into 3 dimensions.
   
   ![_config.yml]({{ site.baseurl }}/images/santander/3d.png)
   
