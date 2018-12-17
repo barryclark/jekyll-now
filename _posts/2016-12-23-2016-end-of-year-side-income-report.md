@@ -9,7 +9,7 @@ csses: [/css/c3.min.css]
 image: /images/covers/2016-side-income.png
 ---
 
-One popular reoccurring post on blogs, regardless of niche, is an income report. For instance, [MyBlogLift](http://www.mybloglift.com/category/income-traffic-report/) has a monthly (well, two) income and traffic report. [Cash Flow Diaries has a long list of different income reports.](http://www.cashflowdiaries.com/blog-income-reports/)
+One popular reoccurring post on blogs, regardless of niche, is an income report. For instance, [MyBlogLift](https://web.archive.org/web/20170119111228/http://www.mybloglift.com/category/income-traffic-report/) has a monthly (well, two) income and traffic report. [Cash Flow Diaries has a long list of different income reports.](http://www.cashflowdiaries.com/blog-income-reports/)
 
 I really haven't made anything with my blog, so I figured I'd give an end-of-year report of my side income.
 
