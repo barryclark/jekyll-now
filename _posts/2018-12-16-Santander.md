@@ -33,8 +33,12 @@ title: Santander Kaggle Challenge
 ### High Sparsity 
   Another note to make about the dataset is its sparsity. Most of the values through out the dataset contain a high amount of zeros. Besides the high number of dimensions, getting predictive power out of these columns will be a challenge. To demonstrate the sparsity of the matrix, I took the sums of each column and stored them into an array. Below is the histogram of that array.
   
+ ![_config.yml]({{ site.baseurl }}/images/santander/sums.png)
+
+  
 
 ### High Dimensionality 
+The combination of sparsity and high dimensionality means that there is a good chance alot of our features will be correlated. To give you an idea of what this looks like, take a look at the first five observations from the data table.
 
 ![_config.yml]({{ site.baseurl }}/images/santander/df_head.png)
 
