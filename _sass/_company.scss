@@ -645,7 +645,11 @@
         font-family: Gidolinya, sans-serif;
       }
 
-      &--featured &__price {
+      &__only {
+        font-size: 42px;
+        font-weight: bold;
+        text-align: center;
+        font-family: Gidolinya, sans-serif;
         color: $green500;
       }
 

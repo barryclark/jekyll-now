@@ -205,7 +205,6 @@
     }
 
     &__image{
-        flex-shrink: 4;
         flex-basis: 45%;
         display: flex;
         align-items: center;
@@ -219,7 +218,6 @@
         img {
             width: 90%;
             height: 90%;
-            max-width: 250px;
             object-fit: contain;
             object-position: center;
         }
