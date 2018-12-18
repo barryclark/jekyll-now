@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 2017 End of Year Side Income Report
+title: 2018 End of Year Side Income Report
 tags: [money, income report]
 keywords: [income, blog income report, side income]
 hashtags: [sidehustle, sideincome]
