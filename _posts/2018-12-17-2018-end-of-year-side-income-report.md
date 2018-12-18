@@ -66,6 +66,9 @@ This is just savings account interest except for the "[SaverLife](https://www.sa
 * [Teespring](https://teespring.com/stores/joehxs-store) &rarr; $10.63
 * Total &rarr; $2,219.85
 
+
+Print-on-demand is mostly t-shirts, although there are other products such as [PopSockets on Amazon](https://hendrixjoseph.github.io/popsockets/). Most of the money made was via Amazon's program, which I talk about on my posts [My First Seven Months on Merch by Amazon: Sales Report](https://hendrixjoseph.github.io/my-first-seven-months-on-merch-by-amazon-sales-report/) and [First Half 2018 Merch by Amazon Sales Report](https://hendrixjoseph.github.io/first-half-2018-merch-by-amazon-sales-report/).
+
 ## Blogging
 
 * Amazon Associates &rarr; $53.15
