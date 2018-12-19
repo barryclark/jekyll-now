@@ -31,7 +31,7 @@ permalink: /comments.xml
         <pubDate>{{ comment.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
         <dc:creator>{{ comment.name | xml_escape }}</dc:creator>
         <link>{{ site.url }}/{{ slug }}/#comment-{{ comment.date }}</link>
-        <guid isPermaLink="true">{{ site.url }}/{{ include.slug }}/#comment-{{ comment.date }}</guid>
+        <guid isPermaLink="true">{{ site.url }}/{{ slug }}/#comment-{{ comment.date }}</guid>
       </item>
     {% endif %}{% endfor %}
   </channel>
