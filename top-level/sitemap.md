@@ -19,7 +19,7 @@ permalink: /sitemap/
 ## RSS Feeds
 
 {% assign pages = site.pages | where_exp: "page", "page.path contains 'rss'" %}{% for page in pages %}
-* [{{ page.title }}]({{ site.url }}{{page.url}}){% endfor %}
+* [{{ page.url }}]({{ site.url }}{{page.url}}){% endfor %}
 
 ## Tools
 
