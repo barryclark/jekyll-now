@@ -5,7 +5,7 @@
   {% if include.comment.url %}{% unless include.comment.url == blank %}</a>{% endunless %}{% endif %}
 </div>
 <div class="comment-metadata">
-  <a href="{% if include.comment.slug %}/{{ include.comment.slug }}/{% endif %}#comment-{{ include.comment.date }}">
+  <a href="{% if include.slug %}/{{ include.slug }}/{% endif %}#comment-{{ include.comment.date }}">
     <time datetime="{{ include.comment.date | date_to_xmlschema }}">
       {{ include.comment.date | date: '%B %d, %Y %I:%M %p' }}
     </time>
