@@ -21,10 +21,10 @@ permalink: /comments/
 <section id="comments" class="comments">
 	<ul class="comment-list top">
 {% for comment in comment_array %}
-  <li id="comment-{{ comment[1].date }}" class="comment">
+  <li id="comment-{{ comment.date }}" class="comment">
 		<article class="comment-body" itemprop="comment" itemscope itemtype="http://schema.org/Comment">
-			{% assign c = comment[1] %}{% include comments/vcard.html comment=c %}
-			<div class="comment-content">{{ comment[1].message | markdownify }}</div>
+			{% assign c = comment %}{% include comments/vcard.html comment=c %}
+			<div class="comment-content">{{ comment.message | markdownify }}</div>
 		</article>
   </li>
 {% endfor %}
