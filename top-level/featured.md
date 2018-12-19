@@ -15,6 +15,10 @@ Quoted on the following sites:
 * [40-Day Frugal/Financial Lent Challenge](http://99to1percent.com/40-day-frugal-financial-lent/)
 * [Early Retirement Wisdom From 50+ Top Finance Writers](https://themoneymix.com/early-retirement/)
 
+Backlined on the following webpages:
+
+* [rskelton.com Tech Stack Details](https://rskelton.com/rskelton-tech-stack/)
+
 This blog is also in the following blog directories:
 
 * [Rockstar Finance Personal Finance Blog Directory](https://directory.rockstarfinance.com/personal-finance-blogs/) / [actual page](https://directory.rockstarfinance.com/blogs/1988/Joes-GitHub-Blog)
