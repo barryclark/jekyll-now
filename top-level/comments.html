@@ -8,7 +8,7 @@ permalink: /comments/
 {% for comments in site.data.comments %}{% assign s = comments[0] %}
   {% for comment in comments[1] %}
 	{% capture slug %}{{ comment[1].date }} {{ s }}{% endcapture %}
-	{% assign slugs = slugs | push: slug %}
+	{% assign slugs = slugs | push: slug | push: slug %}
 	{% assign comment_array = comment_array | push: comment %}
   {% endfor %}
 {% endfor %}
