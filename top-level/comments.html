@@ -6,15 +6,14 @@ permalink: /comments/
 
 <section id="comments" class="comments">
 	<ul class="comment-list top">
-{% for comment in site.data.comments %}
+{% for comments in site.data.comments %}<a href="/{{ comment[0] }}/">{{ comment[0] }}</a>{% for comment in comments %}
   <li id="comment-{{ comment[1].date }}" class="comment">
 		<article class="comment-body" itemprop="comment" itemscope itemtype="http://schema.org/Comment">
 			{% assign c = comment[1] %}{% include comments/vcard.html comment=c %}
 			<div class="comment-content">{{ comment[1].message | markdownify }}</div>
 		</article>
   </li>
-<a href="/{{ comment[0] }}/">{{ comment[0] }}</a>
-{% endfor %}
+{% endfor %}{% endfor %}
 	</ul>
 </section>
 
