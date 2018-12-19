@@ -1,4 +1,7 @@
-# An introductory exploration of the terminal emulator 
+---
+layout: post
+title: An introductory exploration of the terminal emulator 
+---
 
 The command line is one of the most important tools at our disposal. More than a place to run executables, the terminal has intense capabilities to match long and storied history. We use the command prompt every day, but it’s also our least understood tool. 
 
