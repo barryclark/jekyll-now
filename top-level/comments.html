@@ -5,7 +5,7 @@ permalink: /comments/
 ---
 
 {% for comment in site.data.comments %}
-{{ comment[0] }}
+<a href="/{{ comment[0] }}/">{{ comment[0] }}</a>
 {% endfor %}
 
 ---
