@@ -6,7 +6,7 @@ permalink: /comments/
 
 <section id="comments" class="comments">
 	<ul class="comment-list top">
-{% for comments in site.data.comments %}<a href="/{{ comment[0] }}/">{{ comment[0] }}</a>{% for comment in comments %}
+{% for comments in site.data.comments %}<a href="/{{ comment[0] }}/">{{ comment[0] }}</a>{% for comment in comments[1] %}
   <li id="comment-{{ comment[1].date }}" class="comment">
 		<article class="comment-body" itemprop="comment" itemscope itemtype="http://schema.org/Comment">
 			{% assign c = comment[1] %}{% include comments/vcard.html comment=c %}
