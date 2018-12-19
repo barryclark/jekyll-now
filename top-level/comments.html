@@ -6,23 +6,23 @@ permalink: /comments/
 
 {% assign comment_array = "" | split: "," %}{% assign slugs = "" | split: "," %}
 {% for comments in site.data.comments %}{% assign s = comments[0] %}
-  {% for comment in comments[1] %}{% if comment.date %}
+  {% for comment in comments[1] %}
 	{% assign slug = comment.date | append: " " | append: s %}
 	{% assign slugs = slugs | push: slug %}
 	{% assign comment_array = comment_array | push: comment %}
-  {% endif %}{% endfor %}
+  {% endfor %}
 {% endfor %}
 {% assign comment_array = comment_array | sort | reverse %}
 {% assign slugs = slugs | sort | reverse %}
 <section id="comments" class="comments">
 	<ul class="comment-list top">
-{% for comment in comment_array %}{{ forloop.index0 }} <- slug
+{% for comment in comment_array %}{% if comment.date %}{{ forloop.index0 }} <- slug
   <li id="comment-{{ comment.date }}" class="comment">
 		<article class="comment-body" itemprop="comment" itemscope itemtype="http://schema.org/Comment">
 			{% include comments/vcard.html comment=comment %}
 			<div class="comment-content">{{ comment.message | markdownify }}</div>
 		</article>
   </li>
-{% endfor %}
+{% endif %}{% endfor %}
 	</ul>
 </section>
