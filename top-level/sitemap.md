@@ -9,8 +9,17 @@ permalink: /sitemap/
 * [Front Page](/index.html){% assign pages = site.pages | where_exp: "page", "page.path contains 'top-level'" %}{% for page in pages %}
 * [{{ page.title }}]({{ site.url }}{{page.url}}){% endfor %}
 * [Sitemap.xml](/sitemap.xml)
-* [RSS feed](/feed.xml)
 * [robots.txt](/robots.txt)
+
+## Redirects
+
+{% assign pages = site.pages | where_exp: "page", "page.path contains 'redirect'" %}{% for page in pages %}
+* [{{ page.title }}]({{ site.url }}{{page.url}}){% endfor %}
+
+## RSS Feeds
+
+{% assign pages = site.pages | where_exp: "page", "page.path contains 'rss'" %}{% for page in pages %}
+* [{{ page.title }}]({{ site.url }}{{page.url}}){% endfor %}
 
 ## Tools
 
