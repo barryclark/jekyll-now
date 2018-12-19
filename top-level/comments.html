@@ -14,13 +14,13 @@ permalink: /comments/
 {{ comment_array | inspect }}
 <section id="comments" class="comments">
 	<ul class="comment-list top">
-{% for comment in comment_array %}
+{% for comment in comment_array %}{% if comment.date %}
   <li id="comment-{{ comment.date }}" class="comment">
 		<article class="comment-body" itemprop="comment" itemscope itemtype="http://schema.org/Comment">
 			{% assign c = comment %}{% include comments/vcard.html comment=c %}
 			<div class="comment-content">{{ comment.message | markdownify }}</div>
 		</article>
   </li>
-{% endfor %}
+{% endif %}{% endfor %}
 	</ul>
 </section>
