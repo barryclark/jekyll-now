@@ -33,8 +33,8 @@ permalink: /comments.xml
         <link>{{ site.url }}/{{ slug }}/#comment-{{ comment.date }}</link>
         <guid isPermaLink="true">{{ site.url }}/{{ slug }}/#comment-{{ comment.date }}</guid>     
 	<image>
-  		<url>{% if include.comment.email == "e591f3aa7c8cbd7dd9e3389958949ed3" %}https://avatars.githubusercontent.com/u/12754677?v=3{% else %}https://www.gravatar.com/avatar/{{ include.comment.email }}{% endif %}</url>
-  		<title>avatar for {{ include.comment.name | xml_escape }}</title>
+  		<url>{% if comment.email == "e591f3aa7c8cbd7dd9e3389958949ed3" %}https://avatars.githubusercontent.com/u/12754677?v=3{% else %}https://www.gravatar.com/avatar/{{ comment.email }}{% endif %}</url>
+  		<title>avatar for {{ comment.name | xml_escape }}</title>
   		<link>https://hendrixjoseph.github.io/</link>
 	</image> 
       </item>
