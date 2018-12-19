@@ -2,6 +2,15 @@
 layout: post    
 title: "Hello World"  
 excerpt_separator: <!--more-->
+date: 2018-12-13 16:20:00
+keywords:
+  - blogging
+  - development
+  - How to start blogging as a developer
+bakar:
+  name: Abu Bakar Khan
+  email: theawesomekhan@gmail.com
+author: bakar
 ---    
     
  ![_config.yml]({{ site.baseurl }}/images/helloworld.png)  

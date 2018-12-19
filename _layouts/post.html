@@ -2,15 +2,47 @@
 layout: default
 ---
 
-<article class="post">
-  <h1>{{ page.title }}</h1>
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
+    <p class="post-meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>
+      <meta content="{{ modified | date_to_xmlschema }}" itemprop="dateModified" />
+      {% if author %} •
+      <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <span itemprop="name">{{ author.name }}</span>
+      <meta itemprop="email" content="{{ author.email }}" />
+      <meta itemprop="image" content="{{ author.image }}" />
+      {% if author.email %}
+      <a
+              class="fa fa-envelope"
+              title="contact me via e-mail"
+              href="mailto:{{ site.email }}">&nbsp;</a>
+      {% endif %}
+    </span>
+      <span itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="{{ site.name }}" />
+      <span itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+        <meta itemprop="url" content="{{ site.url }}/favicon.png" />
+        <meta itemprop="height" content="142" />
+        <meta itemprop="width" content="128" />
+      </span>
+    </span>
+      {% endif %}
+      <meta itemprop="mainEntityOfPage" content="{{ site.url }}" />
+      <span itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+      <meta itemprop="url" content="{{ site.url }}/favicon.png" />
+      <meta itemprop="height" content="142" />
+      <meta itemprop="width" content="128" />
+    </span>
+    </p>
+    </header>
+
+
 
   <div class="entry">
     {{ content }}
-  </div>
-
-  <div class="date">
-    Written on {{ page.date | date: "%B %e, %Y" }}
   </div>
 
   {% include disqus.html %}
