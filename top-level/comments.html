@@ -9,7 +9,7 @@ permalink: /comments/
   {% for comment in comments[1] %}
 	{% assign slug = comment.date | append: " " | append: s %}
 	{% assign slugs = slugs | push: slug %}
-	{% assign comment_array = comment_array | push: comment %}
+	{% assign comment_array = comment_array | push: comment[1] %}
   {% endfor %}
 {% endfor %}
 {% assign comment_array = comment_array | sort | reverse %}
