@@ -27,7 +27,7 @@ permalink: /comments.xml
       <item>
         <title>{{ comment.name | xml_escape }}</title>
         <description>{{ comment.message | truncatewords: 13 | xml_escape }}</description>
-        <content:encoded><![CDATA[{{ comment.message }}]]></content:encoded>
+        <content:encoded><![CDATA[{{ comment.message | markdownify }}]]></content:encoded>
         <pubDate>{{ comment.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
         <dc:creator>{{ comment.name | xml_escape }}</dc:creator>
         <link>{{ site.url }}/{{ slug }}/#comment-{{ comment.date }}</link>
