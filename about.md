@@ -1,15 +1,13 @@
 ---
 layout: page
-title: About
+title: Về tác giả
 permalink: /about/
 ---
 
-Some information about you!
+### Đôi điều về Duy
 
-### More Information
+Chỉ là một bạn trẻ đam mê với *Khoa học máy tính*, yêu thiên nhiên và có thói quen giữ gìn sức khỏe. 
 
-A place to include any other types of information that you'd like to include about yourself.
+### Liên hệ
 
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+[duyqnguyenle@gmail.com](mailto:duyqnguyenle@gmail.com)
