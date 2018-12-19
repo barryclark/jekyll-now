@@ -4,9 +4,9 @@ title: Comments
 permalink: /comments/
 ---
 
-<section id="comments" class="comments">
+<section id="comments" class="comments">{% assign comment_array = "" | split: "," %}
 	<ul class="comment-list top">
-{% for comments in site.data.comments %}{% assign s = comments[0] %}{% for comment in comments[1] %}
+{% for comments in site.data.comments %}{% assign comment_array = comment_array | concat: comments[1] %}{% assign s = comments[0] %}{% for comment in comments[1] %}
   <li id="comment-{{ comment[1].date }}" class="comment">
 		<article class="comment-body" itemprop="comment" itemscope itemtype="http://schema.org/Comment">
 			{% assign c = comment[1] %}{% include comments/vcard.html comment=c slug=s %}
@@ -16,9 +16,7 @@ permalink: /comments/
 {% endfor %}{% endfor %}
 	</ul>
 </section>
-
----
-
-{% for comment in site.data.comments %}
-{{ comment }}
+<hr />{% assign comment_array = comment_array | sort %}
+{% for comment in comment_array %}
+<div class="comment-content">{{ comment[1].message | markdownify }}</div>
 {% endfor %}
