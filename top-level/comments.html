@@ -16,7 +16,17 @@ permalink: /comments/
 {% endfor %}{% endfor %}
 	</ul>
 </section>
-<hr />{% assign comment_array = comment_array | sort | reverse %}
+<hr />
+{% assign comment_array = comment_array | sort | reverse %}
+<section id="comments" class="comments">{% assign comment_array = "" | split: "," %}
+	<ul class="comment-list top">
 {% for comment in comment_array %}
-<div class="comment-content">{{ comment[1].message | markdownify }}</div>
+  <li id="comment-{{ comment[1].date }}" class="comment">
+		<article class="comment-body" itemprop="comment" itemscope itemtype="http://schema.org/Comment">
+			{% assign c = comment[1] %}{% include comments/vcard.html comment=c %}
+			<div class="comment-content">{{ comment[1].message | markdownify }}</div>
+		</article>
+  </li>
 {% endfor %}
+	</ul>
+</section>
