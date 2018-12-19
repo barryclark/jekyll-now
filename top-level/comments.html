@@ -18,7 +18,7 @@ permalink: /comments/
 </section>
 <hr />
 {% assign comment_array = comment_array | sort | reverse %}
-<section id="comments" class="comments">{% assign comment_array = "" | split: "," %}
+<section id="comments" class="comments">
 	<ul class="comment-list top">
 {% for comment in comment_array %}
   <li id="comment-{{ comment[1].date }}" class="comment">
