@@ -22,6 +22,7 @@ permalink: /feed.xml
         <dc:creator>JoeHx</dc:creator>
         <link>{{ site.url }}{{ post.url }}</link>
         <guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
+        <comments>{{ site.url }}{{ post.url }}#comments</comments>
       </item>
     {% endfor %}
   </channel>
