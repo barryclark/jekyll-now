@@ -1,5 +1,5 @@
 ---
-permalink: /feed.xml
+permalink: /comments.xml
 ---
 {% assign comment_array = "" | split: "," %}{% assign slugs = "" | split: "," %}
 {% for comments in site.data.comments %}{% assign s = comments[0] %}
