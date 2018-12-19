@@ -74,8 +74,8 @@ sass:
 gems:
   - jekyll-redirect-from
   - jekyll-sitemap
-  - jekyll-feed
   - jemoji
+  # - jekyll-feed
 
 # Exclude these files from your production _site
 exclude:
