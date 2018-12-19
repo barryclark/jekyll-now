@@ -16,10 +16,10 @@ permalink: /comments/
 {% assign slugs = slugs | sort | reverse %}
 <section id="comments" class="comments">
 	<ul class="comment-list top">
-{% for comment in comment_array %}{% if comment.date %}-){{ slugs[forloop.index0] }}(- {{ forloop.index0 }}slug
+{% for comment in comment_array %}{% if comment.date %}{% assign s = slugs[forloop.index0] | split: " " %}{% assign s = s[1] %}
   <li id="comment-{{ comment.date }}" class="comment">
 		<article class="comment-body" itemprop="comment" itemscope itemtype="http://schema.org/Comment">
-			{% include comments/vcard.html comment=comment %}
+			{% include comments/vcard.html comment=comment slug=s %}
 			<div class="comment-content">{{ comment.message | markdownify }}</div>
 		</article>
   </li>
