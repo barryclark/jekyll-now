@@ -33,6 +33,6 @@ permalink: /comments.xml
         <link>{{ site.url }}/{{ include.slug }}/#comment-{{ include.comment.date }}</link>
         <guid isPermaLink="true">{{ site.url }}/{{ include.slug }}/#comment-{{ include.comment.date }}</guid>
       </item>
-    {% endfor %}
+    {% endif %}{% endfor %}
   </channel>
 </rss>
