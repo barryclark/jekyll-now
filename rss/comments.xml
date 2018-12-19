@@ -1,6 +1,11 @@
 ---
 permalink: /comments.xml
 ---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+     xmlns:content="http://purl.org/rss/1.0/modules/content/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/" 
+     xmlns:atom="http://www.w3.org/2005/Atom">
 {% assign comment_array = "" | split: "," %}{% assign slugs = "" | split: "," %}
 {% for comments in site.data.comments %}{% assign s = comments[0] %}
   {% for comment in comments[1] %}
@@ -11,11 +16,6 @@ permalink: /comments.xml
 {% endfor %}
 {% assign comment_array = comment_array | sort | reverse %}
 {% assign slugs = slugs | sort | reverse %}
-<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0"
-     xmlns:content="http://purl.org/rss/1.0/modules/content/"
-     xmlns:dc="http://purl.org/dc/elements/1.1/" 
-     xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>{{ site.name | xml_escape }} Comments</title>
     <description>{{ site.description | xml_escape }}</description>
@@ -23,7 +23,7 @@ permalink: /comments.xml
     <atom:link href="{{ site.url }}/comments.xml" rel="self" type="application/rss+xml" />
     <copyright>2018 Joseph Hendrix</copyright>
     <language>en-us</language>
-    {% for comment in comment_array %}{% if comment.date %}{% assign s = slugs[forloop.index0] | split: " " %}{% assign s = s[1] %}
+    {% for comment in comment_array limit:10 %}{% if comment.date %}{% assign s = slugs[forloop.index0] | split: " " %}{% assign s = s[1] %}
       <item>
         <title>{{ comment.name | xml_escape }}</title>
         <description>{{ comment.message | truncatewords: 13 | xml_escape }}</description>
