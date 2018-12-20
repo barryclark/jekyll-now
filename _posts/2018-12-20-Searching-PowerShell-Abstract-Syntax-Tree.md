@@ -46,7 +46,7 @@ However, under the hood, the AST has a _ton_ of extremely important and helpful 
 
 # AST Methods and Properties
 
-If you run check the `Get-Member` output from this AST object, you'll see the following list of
+If you check the `Get-Member` output from this AST object, you'll see the following list of
 properties and methods.
 I've reformatted it as a proper table to make it easier to read here, with members I think are
 particularly useful marked in bold.
