@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Dive into Serverless Functions
-excerpt: Leveraging Docker means that Fn can benefit from Docker’s rich ecosystem and tools...
+excerpt: Dive is a simple tool that allows you to easily explore the different layers of a Docker image, a tool that can be very handy for some Fn users...
 ---
 
 
