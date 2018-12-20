@@ -17,7 +17,8 @@ Ana Calin from Paybase gave a talk on ["Continuous Delivery in the Cloud with Sp
 
 * Spinnaker is the first complete continuous delivery platform that supports multi-cloud out of the box and has been designed around microservices where various components talk to each other. Spinnaker was created to easily achieve highly-available, multi-account, multi-cloud artifact deployment.
 * Although Kubernetes has a Deployment API it is not very advanced and it isn’t near enough for organisations looking for fully automated deployment pipelines. This is where Spinnaker comes and fills the gap by allowing organisations to define their own deployment pipelines whilst monitoring each stage as well as the health of a K8s cluster.
-* Spinnaker has not been designed to replace Jenkins or any other CI tool and running Spinnaker requires plugging in a CI server. Although Jenkins has extensive plugin support, it can fall short as a complete deployment tool especially since it wasn’t build with the cloud in mind.
+* Spinnaker has not been designed to replace Jenkins or any other CI tool and running Spinnaker requires plugging in a CI server. Although Jenkins has extensive plugin support, it can fall short as a complete deployment tool especially since it wasn’t built with the cloud in mind.
+See her slides [here](https://docs.google.com/presentation/d/1nl0kG-jQ2M2BZvySbYwbUOrF9bd2EokNoA1r2XywTfM/edit)
 
 ![Dheeraj Bhadani](https://pbs.twimg.com/media/DuPZyDRW0AAoqJR.jpg)
 
