@@ -5,7 +5,7 @@ title: Anonymize Categorical Data
 
 Often when you're trying to analyze data it can be helpful to anonymize it.
 
-Sometimes this is because it's sensitive information, but I do it to prevent my biases from coming into play while looking at it.
+Sometimes this is because it's sensitive information, but I usually do it to prevent my biases from coming into play while looking at it.
 
 It's easy enough to change the headers of a table, but generally you can figure out what the data is when looking at categorical data; things like names, places, colors, etc.
 
