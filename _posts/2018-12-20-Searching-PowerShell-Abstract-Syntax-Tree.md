@@ -46,30 +46,30 @@ However, under the hood, the AST has a _ton_ of extremely important and helpful 
 
 # AST Methods and Properties
 
-If you run check the `Get-Member` output from this AST object, you'll see the following list of
+If you check the `Get-Member` output from this AST object, you'll see the following list of
 properties and methods.
 I've reformatted it as a proper table to make it easier to read here, with members I think are
 particularly useful marked in bold.
 
-|Name|Type|Definition|
-|----|:--------:|----------|
-|Copy|Method|`System.Management.Automation.Language.Ast Copy()`|
-|Equals|Method|`bool Equals(System.Object obj)`|
-|Find|Method|`System.Management.Automation.Language.Ast Find(System.Func[System.Management.Automation.Language.Ast,bool] predicate, bool searchNestedScriptBlocks)`|
-|**FindAll**|Method|`System.Collections.Generic.IEnumerable[System.Management.Automation.Language.Ast] FindAll(System.Func[System.Management.Automation.Language.Ast,bool] predicate, bool searchNestedScriptBlocks)`|
-|GetHashCode|Method|`int GetHashCode()`|
-|**GetHelpContent**|Method|`System.Management.Automation.Language.CommentHelpInfo GetHelpContent(), System.Management.Automation.Language.CommentHelpInfo GetHelpContent(System.Collections.Generic.Dictionary[System.Management.Automation.Language.Ast,System.Management.Automation.Language.Token[]] scriptBlockTokenCache)`|
-|GetType|Method|`type GetType()`|
-|**SafeGetValue**|Method|`System.Object SafeGetValue()`|
-|ToString|Method|`string ToString()`|
-|Visit|Method|`System.Object Visit(System.Management.Automation.Language.ICustomAstVisitor astVisitor), void Visit(System.Management.Automation.Language.AstVisitor astVisitor)`|
-|Body|Property|`System.Management.Automation.Language.ScriptBlockAst Body {get;}`|
-|Extent|Property|`System.Management.Automation.Language.IScriptExtent Extent {get;}`|
-|IsFilter|Property|`bool IsFilter {get;}`|
-|IsWorkflow|Property|`bool IsWorkflow {get;}`|
-|Name|Property|`string Name {get;}`|
-|Parameters|Property|`System.Collections.ObjectModel.ReadOnlyCollection[System.Management.Automation.Language.ParameterAst] Parameters {get;}`|
-|**Parent**|Property|`System.Management.Automation.Language.Ast Parent {get;}`|
+| Name               |   Type   | Definition                                                                                                                                                                                                                                                                                           |
+| ------------------ | :------: | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Copy               |  Method  | `System.Management.Automation.Language.Ast Copy()`                                                                                                                                                                                                                                                   |
+| Equals             |  Method  | `bool Equals(System.Object obj)`                                                                                                                                                                                                                                                                     |
+| Find               |  Method  | `System.Management.Automation.Language.Ast Find(System.Func[System.Management.Automation.Language.Ast,bool] predicate, bool searchNestedScriptBlocks)`                                                                                                                                               |
+| **FindAll**        |  Method  | `System.Collections.Generic.IEnumerable[System.Management.Automation.Language.Ast] FindAll(System.Func[System.Management.Automation.Language.Ast,bool] predicate, bool searchNestedScriptBlocks)`                                                                                                    |
+| GetHashCode        |  Method  | `int GetHashCode()`                                                                                                                                                                                                                                                                                  |
+| **GetHelpContent** |  Method  | `System.Management.Automation.Language.CommentHelpInfo GetHelpContent(), System.Management.Automation.Language.CommentHelpInfo GetHelpContent(System.Collections.Generic.Dictionary[System.Management.Automation.Language.Ast,System.Management.Automation.Language.Token[]] scriptBlockTokenCache)` |
+| GetType            |  Method  | `type GetType()`                                                                                                                                                                                                                                                                                     |
+| **SafeGetValue**   |  Method  | `System.Object SafeGetValue()`                                                                                                                                                                                                                                                                       |
+| ToString           |  Method  | `string ToString()`                                                                                                                                                                                                                                                                                  |
+| Visit              |  Method  | `System.Object Visit(System.Management.Automation.Language.ICustomAstVisitor astVisitor), void Visit(System.Management.Automation.Language.AstVisitor astVisitor)`                                                                                                                                   |
+| Body               | Property | `System.Management.Automation.Language.ScriptBlockAst Body {get;}`                                                                                                                                                                                                                                   |
+| Extent             | Property | `System.Management.Automation.Language.IScriptExtent Extent {get;}`                                                                                                                                                                                                                                  |
+| IsFilter           | Property | `bool IsFilter {get;}`                                                                                                                                                                                                                                                                               |
+| IsWorkflow         | Property | `bool IsWorkflow {get;}`                                                                                                                                                                                                                                                                             |
+| Name               | Property | `string Name {get;}`                                                                                                                                                                                                                                                                                 |
+| Parameters         | Property | `System.Collections.ObjectModel.ReadOnlyCollection[System.Management.Automation.Language.ParameterAst] Parameters {get;}`                                                                                                                                                                            |
+| **Parent**         | Property | `System.Management.Automation.Language.Ast Parent {get;}`                                                                                                                                                                                                                                            |
 
 Let's take a closer look at the ones I've bolded.
 
@@ -80,7 +80,7 @@ cases where a pre-existing function or property won't just hand you what you're 
 
 It takes two parameters: a `System.Func` predicate parameter with two generic parameters itself, and
 a `bool` parameter that determines if it will recursively search nested script blocks, or just the
-immediately "level" of the AST.
+"immediate level" of the AST.
 
 As I mentioned in my [Anonymous Functions](/2018/10/26/Anonymous-Functions/) post, however, we can
 actually just use a rather more familiar PowerShell `scriptblock` instead of the `Func[Ast,bool]`
