@@ -2,7 +2,17 @@
 layout: default
 title: MCAMC
 permalink: /mcamc/
-meta: <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+meta: | 
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+        inlineMath: [['$','$']]
+      }
+    });
+  </script>
+  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 ---
 # Middlesex County Academy Math Competition
 (some tagline here)
@@ -104,7 +114,7 @@ We designed our scoring system to give more points to harder questions, as well 
 **Show scoring specifics**
 
 {: .answer}
-For the Individual Round, for each question, each student recieves 1/(*p* + 0.25) points for answering correctly, where *p* is the fraction of students who answered the question correctly. For the Team Round, for each question, the team similarly recieves 1/(*p* + 0.25) points for answering correctly. For the Live Round, each question will have a point value written next to it, which increase with every set. The overall team score is 100(*I*/*I\** + *T*/*T\** + *L*/*L\**), where *I*, *T*, and *L* are the team's individual average, team, and live scores, and *I\**, *T\**, and *L\** are the top individual average, team, and live scores across all teams.
+For the Individual Round, for each question, each student recieves 1/(*p* + 0.25) points for answering correctly, where *p* is the fraction of students who answered the question correctly. For the Team Round, for each question, the team similarly recieves $$\frac{1}{p + 0.25}$$ points for answering correctly. For the Live Round, each question will have a point value written next to it, which increase with every set. The overall team score is 100(*I*/*I\** + *T*/*T\** + *L*/*L\**), where *I*, *T*, and *L* are the team's individual average, team, and live scores, and *I\**, *T\**, and *L\** are the top individual average, team, and live scores across all teams.
 
 ### Awards
 Awards will be given to the top 15 individuals, the top 10 teams in Team Round, the top 10 teams in Live Round, and the top 10 teams overall. Additional prizes will be given to the top 5 individuals and top 5 teams overall. We'll be announcing what these prizes are soon, so keep an eye out!
