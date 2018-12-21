@@ -82,8 +82,32 @@ MCAMC brings an exciting new type of math competition to the middle school audie
 </div>
 
 ## Format and Rules
+MCAMC is structured into 3 rounds, each round lasting 1 hour each. Form teams of 4-6 students from grades 6-8 and compete together!
 
-TODO
+### Individual Round
+The Individual Round comes first and might be something familiar — 20 questions spanning various topics. The questions will be similar in difficulty to the AMC 8.
+
+### Team Round
+In the Team Round, each team of 4-6 students works together to solve another set of 20 questions, but with a twist! This time, all 20 questions are related to one topic — a topic that you've probably never worked with before. We'll give you lots of background information to help you solve these 20 questions. This round is not just about testing what you know, but also about learning new things and playing around with new ideas!
+
+### Live Round
+In the Live Round, each team will again work together, and the style of the questions will be similar to the style of the Individual Round, just a little harder now because you can work together as a team. The twist comes in the format.
+
+All teams gather together in large rooms and compete live, with scores displayed in real-time on screens and projectors. Several tables in the room are set up with graders and questions. Questions come in sets of 3, and there are 8 sets of questions. When the round starts, each team sends one person to pick up the first set of questions and then return back to their team. The team works together to solve these 3 questions, and when the team is done, they send someone to submit their answers and recieve the next set of questions. Answers may not be changed after they are submitted, and answers will be graded on the spot, with the results immediately displayed on screens and projectors around the room. 
+
+As a side note, at several high school competitions, the Live Round is consistently the most exciting and engaging round. We're proud to be the first middle school math competition to offer a Live Round, so we hope that you enjoy it!
+
+### Scoring
+We designed our scoring system to give more points to harder questions, as well as to prevent ties. Each round (individual, team, and live) is first scored separately, then roughly averaged for an overall score. 
+
+{: .question}
+**Show scoring specifics**
+
+{: .answer}
+For the Individual Round, for each question, each student recieves 1/(*p* + 0.25) points for answering correctly, where *p* is the fraction of students who answered the question correctly. For the Team Round, for each question, the team similarly recieves 1/(*p* + 0.25) points for answering correctly. For the Live Round, each question will have a point value written next to it, which increase with every set. The overall team score is 100(*I*/*I\** + *T*/*T\** + *L*/*L\**), where *I*, *T*, and *L* are the team's individual average, team, and live scores, and *I\**, *T\**, and *L\** are the top individual average, team, and live scores across all teams.
+
+### Awards
+Awards will be given to the top 15 individuals, the top 10 teams in Team Round, the top 10 teams in Live Round, and the top 10 teams overall. Additional prizes will be given to the top 5 individuals and top 5 teams overall. We'll be announcing what these prizes are soon, so keep an eye out!
 
 ## Sample Questions
 Sample questions will be posted by January 31, 2019.
