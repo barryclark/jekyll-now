@@ -1,64 +1,18 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
-
-    {% include meta.html %}
-
-    <!--[if lt IE 9]>
-      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-	<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
-	<link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+---
+layout: default
+meta: 
 	<link rel='stylesheet' href='{{ site.baseurl }}/fullcalendar/fullcalendar.min.css' />
 	<link rel='stylesheet' href='{{ site.baseurl }}/fullcalendar/fullcalendar.print.min.css' media='print' />
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 	<link rel="stylesheet" href='{{ site.baseurl }}/assets/lib/bootstrap.min.css' />
-	<script src='{{ site.baseurl }}/assets/lib/moment.min.js'></script>
-	<script src='{{ site.baseurl }}/assets/lib/jquery.min.js'></script>
 	<script src='{{ site.baseurl }}/fullcalendar/fullcalendar.min.js'></script>
 	<script src='{{ site.baseurl }}/fullcalendar/gcal.min.js'></script>
 	<script src='{{ site.baseurl }}/assets/js/calendar.js'></script>
-  </head>
+---
 
-  <body>
-    <div class="wrapper-masthead">
-      <div class="container">
-        <header class="masthead clearfix">
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
-
-          <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-            <p class="site-description">{{ site.description }}</p>
-          </div>
-
-          <nav>
-            <a href="{{ site.baseurl }}/">Blog</a>
-            <a href="{{ site.baseurl }}/mcamc">MCAMC</a>
-            <a href="{{ site.baseurl }}/internal-use">Internal Use</a>
-          </nav>
-        </header>
-      </div>
-    </div>
-
-    <div id="main" role="main" class="container">
-      <article class="page">
+    <article class="page">
         <h1>{{ page.title }}</h1>
         <div class="entry">
           {{ content }}
         </div>
-      </article>
-    </div>
-
-    <div class="wrapper-footer">
-      <div class="container">
-        <footer class="footer">
-          {% include svg-icons.html %}
-        </footer>
-      </div>
-    </div>
-
-    {% include analytics.html %}
-  </body>
-</html>
+    </article>
