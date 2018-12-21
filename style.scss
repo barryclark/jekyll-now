@@ -70,7 +70,10 @@ table {
     code {
       word-break: break-word;
       font-size: 1em;
-      font-weight: normal;
+
+      &.highlighter-rouge {
+        font-weight: normal;
+      }
     }
   }
 
