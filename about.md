@@ -4,7 +4,7 @@ permalink: /about/
 ---
 
 <figure style="text-align: center;">
-    <img src="/assets/images/profile_pic.jpg" style="display:block;margin-left:auto;margin-right:auto;width:300px;margin-bottom:10px;margin-top:25px;box-shadow: 1px 2px 3px grey;border-radius: 7px;">
+    <img src="/assets/images/profile_pic.jpg" style="display:block;margin-left:auto;margin-right:auto;width:60%;margin-bottom:10px;margin-top:25px;box-shadow: 1px 2px 3px grey;border-radius: 3px;">
     <figcaption> Dorian Brown: <br> Machine Learning Practitioner, Linux Evangelist,<br> and Math Nerd </figcaption>
 </figure>
 
