@@ -39,3 +39,15 @@ Please check the Internal Use page for information regarding club activities and
 
 # NOTICE
 **This website is a work in progress. Information provided on this website will change without notice until it is finalized. While this notice is here, do not regard information provided on this website as true.**
+
+<script type="text/javascript">
+	function isIE() {
+	  ua = navigator.userAgent;
+	  var is_ie = ua.indexOf("MSIE ") > -1 || ua.indexOf("Trident/") > -1;
+	  return is_ie; 
+	}
+	if (isIE()) {
+		alert("Internet Explorer is not officially supported by this website. Although most elements should work, consider using Google Chrome, Microsoft Edge, or Mozilla Firefox for best compatibility.")
+	}
+</script>
+
