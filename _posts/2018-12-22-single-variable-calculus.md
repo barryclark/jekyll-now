@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: 18.01SC - Single Variable Calculus (Fall 2010)
 date: 2018-12-22
 ---
