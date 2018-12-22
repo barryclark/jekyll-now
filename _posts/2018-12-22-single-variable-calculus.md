@@ -7,6 +7,7 @@ Nguồn: [MIT OpenCourseWare](https://ocw.mit.edu/courses/mathematics/18-01sc-si
 
 Giảng viên: Giáo sư David Jerison.
 
+# Giáo trình môn học
 * Vi phân
   * Định nghĩa và các quy tắc cơ bản
   * Sự xấp xỉ và phác họa đường cong
