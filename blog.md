@@ -4,8 +4,10 @@ title: Blog
 permalink: /blog/
 ---
 
+<p align="center">
 ### Machine learning ###
-
+</p>
+  
 <div class="posts">
   {% for post in site.categories[ML] %}
     <article class="post">
@@ -21,8 +23,9 @@ permalink: /blog/
   {% endfor %}
 </div>
 
-
+<p align="center">
 ### Physics ###
+</p>
 
 <div class="posts">
   {% for post in site.categories[PH] %}
