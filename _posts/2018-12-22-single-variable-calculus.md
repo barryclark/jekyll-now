@@ -5,7 +5,7 @@ date: 2018-12-22
 ---
 Nguồn: [MIT OpenCourseWare](https://ocw.mit.edu/courses/mathematics/18-01sc-single-variable-calculus-fall-2010/).
 
-Giảng viên: Giáo sư David Jerison.
+Giảng viên: Giáo sư [David Jerison](http://math.mit.edu/~jerison/).
 
 # Giáo trình môn học
 * Vi phân
