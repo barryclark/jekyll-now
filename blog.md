@@ -7,7 +7,7 @@ permalink: /blog/
 ### Machine learning ###
 
 <div class="posts">
-  {% for post in site.category.ML %}
+  {% for post in site.categories.ML %}
     <article class="post">
 
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
@@ -25,7 +25,7 @@ permalink: /blog/
 ### Physics ###
 
 <div class="posts">
-  {% for post in site.category.PH %}
+  {% for post in site.categories.PH %}
     <article class="post">
 
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
