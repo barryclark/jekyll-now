@@ -15,7 +15,8 @@ Giảng viên: Giáo sư [David Jerison](http://math.mit.edu/~jerison/).
   * Tối ưu hóa, các tốc độ biến thiên phụ thuộc nhau và phương pháp Newton 
   * Định lý giá trị trung bình, nguyên hàm và phương trình vi phân
 * Tích phân xác định và ứng dụng
-  * 
+  * Định nghĩa tích phân xác định và định lí cơ bản đầu tiên
+  * Định lí cơ bản thứ hai, diện tích, thể tích
 * Các kỹ thuật tích phân
 * Tìm hiểu về vô hạn
 
