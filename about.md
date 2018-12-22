@@ -1,12 +1,12 @@
 ---
 layout: page
-title: Về tác giả
+title: Thông tin tác giả
 permalink: /about/
 ---
 
-### Đôi điều về Duy
+### Tiểu sử
 
-Chỉ là một bạn trẻ đam mê với *Khoa học máy tính*, yêu thiên nhiên và có thói quen giữ gìn sức khỏe. 
+Sinh viên ngành [Khoa học máy tính](https://cs.uit.edu.vn/) năm thứ 3 của trường đại học [Công nghệ thông tin - Đại học quốc gia TP.HCM](https://www.uit.edu.vn/). 
 
 ### Liên hệ
 
