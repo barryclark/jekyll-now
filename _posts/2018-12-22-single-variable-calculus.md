@@ -10,6 +10,18 @@ Giảng viên: Giáo sư [David Jerison](http://math.mit.edu/~jerison/).
 # Giáo trình môn học
 * Vi phân
   * Định nghĩa và các quy tắc cơ bản
+    * Giới thiệu về đạo hàm
+    * Ví dụ về đạo hàm
+    * Xem đạo hàm như tốc độ biến thiên
+    * Giới hạn và liên tục
+    * Không liên tục
+    * Tính đạo hàm
+    * Đạo hàm của sin và cos
+    * Giới hạn của sin và cos
+    * Quy tắc nhân
+    * Quy tắc chia
+    * Quy tắc dây chuyền
+    * Đạo hàm bậc cao
   * Sự xấp xỉ và phác họa đường cong
 * Ứng dụng của vi phân
   * Tối ưu hóa, các tốc độ biến thiên phụ thuộc nhau và phương pháp Newton 
