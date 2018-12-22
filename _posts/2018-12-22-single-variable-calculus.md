@@ -7,5 +7,14 @@ Nguồn: [MIT OpenCourseWare](https://ocw.mit.edu/courses/mathematics/18-01sc-si
 
 Giảng viên: Giáo sư David Jerison.
 
-
+* Vi phân
+  * Định nghĩa và các quy tắc cơ bản
+  * Sự xấp xỉ và phác họa đường cong
+* Ứng dụng của vi phân
+  * Tối ưu hóa, các tốc độ biến thiên phụ thuộc nhau và phương pháp Newton 
+  * Định lý giá trị trung bình, nguyên hàm và phương trình vi phân
+* Tích phân xác định và ứng dụng
+  * 
+* Các kỹ thuật tích phân
+* Tìm hiểu về vô hạn
 
