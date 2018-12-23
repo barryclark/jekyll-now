@@ -15,19 +15,15 @@ date: 2018-12-23
   * Procul.org
   * giaithuatlaptrinh.com
   * snasiriany.me
-
 * PHYSICS
-
-damtson.wordpress.com
+  * damtson.wordpress.com
 
 * ONLINE PUBLISHING PLATFORM
-
-Spiderum.com
-medium.com
+  * Spiderum.com
+  * medium.com
 
 * HISTORY
-
-Historyofinformation.com
+  * Historyofinformation.com
 
 * GITHUB
 
