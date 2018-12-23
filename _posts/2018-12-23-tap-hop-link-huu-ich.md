@@ -5,6 +5,7 @@ date: 2018-12-23
 ---
 
 * HOW TO BE A PROGRAMMER
+
   * github.com/braydie/HowToBeAProgrammer
   
 * COMPUTER SCIENCE
