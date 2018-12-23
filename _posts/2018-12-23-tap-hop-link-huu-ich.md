@@ -6,7 +6,7 @@ date: 2018-12-23
 
 * HOW TO BE A PROGRAMMER
   * github.com/braydie/HowToBeAProgrammer
-  * COMPUTER SCIENCE
+* COMPUTER SCIENCE
   * github.com/open-source-society/computer-science
   * github.com/prakhar1989/awesome-courses
   * Rookieslab.com
