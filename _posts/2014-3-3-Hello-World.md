@@ -1,9 +1,9 @@
 ---
 layout: post
-title: All about Reinforcement Learning!
+title: Introduction to Reinforcement Learning 
 ---
 
-This blog post is going to cover everything about Reinforcement Learning! 
+This blog post is going to cover everything about Reinforcement Learning. This is an exciting subfield of machine learning that deals with the learning of an agents. So far, RL has achieved many success in various games like atari, chess, go, and even the famous esport Dota 2.  
 
 ![_config.yml]({{ site.baseurl }}/images/config.png)
 
