@@ -3,8 +3,27 @@ layout: post
 title: Introduction to Reinforcement Learning 
 ---
 
-This blog post is going to cover everything about Reinforcement Learning. This is an exciting subfield of machine learning that deals with the learning of an agents. So far, RL has achieved many success in various games like atari, chess, go, and even the famous esport Dota 2.  
+This blog post is going to cover everything about Reinforcement Learning. This is an exciting subfield of machine learning that deals with agent. So far, RL has achieved many success in various games like atari, chess, go, and even the famous esport Dota 2.  
 
-![_config.yml]({{ site.baseurl }}/images/config.png)
+Content of this blog post:
+- Intro to Reinforcement Learning
+- MDPs
+- Planning by Dynamic Programming
+- Model-free prediction
+- Model-free control
+- Value function approximation
+- Policy Gradient Methods
+- Integrating learning and planning
+- Exploration versus Exploitation
+- Case study: RL in games
 
-The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
+
+### Intro to RL
+- Study of decision making
+- Key terms:
+1. Reward: 
+2. State: 
+3. Policy:
+4. Value function:
+5. Action-value function:
+6. Model: 
