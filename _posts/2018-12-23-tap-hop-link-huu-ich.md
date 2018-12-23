@@ -4,20 +4,17 @@ title: Tập hợp link hữu ích
 date: 2018-12-23
 ---
 * HOW TO BE A PROGRAMMER
-
-github.com/braydie/HowToBeAProgrammer
-
+** github.com/braydie/HowToBeAProgrammer
 * COMPUTER SCIENCE
-
-github.com/open-source-society/computer-science
-github.com/prakhar1989/awesome-courses
-Rookieslab.com
-functionalcs.github.io/curriculum/
-norvig.com/21-days.html
-science-technology.vn
-Procul.org
-giaithuatlaptrinh.com
-snasiriany.me
+** github.com/open-source-society/computer-science
+** github.com/prakhar1989/awesome-courses
+** Rookieslab.com
+** functionalcs.github.io/curriculum/
+** norvig.com/21-days.html
+** science-technology.vn
+** Procul.org
+** giaithuatlaptrinh.com
+** snasiriany.me
 
 * PHYSICS
 
