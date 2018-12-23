@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "We Bought A House!"
-categories: Post
+categories: Personal
 ---
 
 ![alt text][gameImg]
