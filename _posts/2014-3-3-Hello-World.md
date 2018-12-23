@@ -21,7 +21,7 @@ Content of this blog post:
 ### Intro to RL
 - Study of decision making
 - Key terms:
-  - Reward: a single scalar reward for each state 
+  - Reward: a scalar feedback signal
   - State: information of the history so far
   - Policy: 
   - Value function: long-term reward, expected total reward
