@@ -1,8 +1,0 @@
----
-layout: post
-title: 18.05 - Introduction to Probability and Statistics (Spring 2014)
-date: 2018-12-22
----
-Nguồn: [MIT OpenCourseWare](https://ocw.mit.edu/courses/mathematics/18-05-introduction-to-probability-and-statistics-spring-2014/).
-
-Giảng viên: [Jeremy Orloff](http://math.mit.edu/directory/profile.php?pid=1369), [Jonathan Bloom](http://math.mit.edu/~jbloom/).
