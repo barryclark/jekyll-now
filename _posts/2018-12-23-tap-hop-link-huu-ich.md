@@ -3,7 +3,6 @@ layout: post
 title: Tập hợp link hữu ích
 date: 2018-12-23
 ---
-
 * HOW TO BE A PROGRAMMER
 
   * github.com/braydie/HowToBeAProgrammer
