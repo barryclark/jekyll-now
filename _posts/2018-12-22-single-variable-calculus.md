@@ -23,7 +23,7 @@ Giảng viên: Giáo sư [David Jerison](http://math.mit.edu/~jerison/).
     * Bài 11: Quy tắc dây chuyền
     * Bài 12: Đạo hàm bậc cao
   * Vi phân hàm ẩn và hàm nghịch đảo
-    * Bài 13: Vi phân hàm ẩn
+    * Bài 13: Vi phân hàm ẩn ([note](/data/18.01SC/session13.pdf))
 * Ứng dụng của vi phân
   * Sự xấp xỉ và phác họa đường cong
   * Tối ưu hóa, các tốc độ biến thiên phụ thuộc nhau và phương pháp Newton 
