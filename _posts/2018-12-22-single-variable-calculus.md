@@ -7,7 +7,7 @@ Nguồn: [MIT OpenCourseWare](https://ocw.mit.edu/courses/mathematics/18-01sc-si
 
 Giảng viên: Giáo sư [David Jerison](http://math.mit.edu/~jerison/).
 
-## Giáo trình môn học
+Giáo trình môn học
 * Vi phân
   * Định nghĩa và các quy tắc cơ bản
     * Bài 1: Giới thiệu về đạo hàm
