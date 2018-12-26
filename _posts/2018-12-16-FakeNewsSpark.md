@@ -77,10 +77,10 @@ For each 6 possible values for the model, the following are accomplished.[4]
 2. Partition the data set into K sections
 3. For each unique section 
 
-* Use the unique section as the test set
-* Use the remaining data as the training set
-* Fit the model on the training data and evaluate on the test set.
-* Retain the evaluation metric and discard model.
+   * Use the unique section as the test set
+   * Use the remaining data as the training set
+   * Fit the model on the training data and evaluate on the test set.
+   * Retain the evaluation metric and discard model.
 
 4.  Summarize the performance of the model using the set of evaluation metrics obtained.
 
