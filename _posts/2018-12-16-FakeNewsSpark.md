@@ -141,3 +141,45 @@ cv = CrossValidator(estimator=data_prep_pipe, estimatorParamMaps=paramGrid,evalu
 4. The parallelism parameter is the number of threads that each computational node that will evaluate a particular fold. This will give our Cross-Validation process a different level of granularity in terms of parallelism[7]. 
 
 
+#### Set Up Cross-Validation
+#### Perform a Train-Test Split
+We are going to split our data set into two sections, a training set and testing set. Cross-validation will run on the training set, and we will have a hold out set of new data to test the best possible model.
+
+
+df_cv = df.select(['target','text'])
+
+
+(training,testing) = df_cv.randomSplit([0.9,0.1]) # 90% training, 10% testing
+
+
+
+#### Run Cross Validation
+cvModel = cv.fit(training)
+
+results = cvModel.transform(testing)
+
+#### Get Metrics
+We will be using a simple Confusion Matrix to analyze the accurace of our best model.
+```python
+
+acc_eval = MulticlassClassificationEvaluator()
+acc = acc_eval.evaluate(results)
+best_model = cvModel.bestModel
+
+
+from pyspark.mllib.evaluation import MulticlassMetrics
+# Create (prediction, label) pairs
+predictionAndLabel = results.select("label", "prediction").rdd
+
+# Generate confusion matrix
+metrics = MulticlassMetrics(predictionAndLabel)
+print( metrics.confusionMatrix())
+
+```
+
+#### Time Analysis
+With the introduction of a parallelism parameter in the Cross-Validator object, a time analysis was conducted to examine the performance across varying levels of parallelism. After using 8 computational nodes, there is no significant speed up in times, in fact, in some instances it performed worse. This is because of the communication overhead it takes to manage the process across a high number of nodes. It also can be noted that a parallelism level of 8 appears to be the sweet spot for this particular task. 
+
+![_config.yml]({{ site.baseurl }}/images/fakenews_spark/time2.png)
+
+
