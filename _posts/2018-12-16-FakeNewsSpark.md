@@ -43,6 +43,40 @@ The next step is to take the output from the above processes and prepare them fo
 
 ![_config.yml]({{ site.baseurl }}/images/fakenews_spark/tfidf.png)
 
+#### Let's start by building a pipeline and prepare data for Cross Validation
+
+```python
+from pyspark.ml.feature import Tokenizer,StopWordsRemover, CountVectorizer,IDF,StringIndexer
+from pyspark.ml.feature import VectorAssembler
+from pyspark.ml.linalg import Vector
+
+tokenizer = Tokenizer(inputCol="text", outputCol="token_text")
+stopremove = StopWordsRemover(inputCol='token_text',outputCol='stop_tokens')
+count_vec = CountVectorizer(inputCol='stop_tokens',outputCol='c_vec', minDF=1, minTF=1)
+idf = IDF(inputCol="c_vec", outputCol="tf_idf")
+binary_label = StringIndexer(inputCol='label',outputCol='target')
+vectors = VectorAssembler(inputCols=['tf_idf'],outputCol='features')
+```
+
+#### Build a Pipeline
+
+
+```python
+from pyspark.ml import Pipeline
+```
+
+
+```python
+data_prep_pipe = Pipeline(stages=[binary_label,tokenizer,stopremove,count_vec,idf,vectors])
+```
+
+#### Fit our pipeline on our dataframe!
+```python
+cleaner = data_prep_pipe.fit(df)
+clean_data = cleaner.transform(df)
+
+```
+
 #### Naive Bayes Learning Model
 Naive Bayes is a popular machine learning algorithm for text classification. It uses Bayes Rule to find estimate the maximum likelihood that a given piece of text belongs to a class.[2]
 
@@ -66,7 +100,14 @@ The Cross Validation process will attempt to find the optimal value for the Lapl
 Given that there can multiple possible values for a Laplace smoothing parameter for Naive Bayes model, the next task would be to find the ideal value for our parameter. Spark's Cross Validation can be used to find the optimal value for our parameters.[4]  Before building the cross validation object, a Parameter grid must be defined in order to specify the list of possible combinations for a given machine learning pipeline.[5] 
 
 
-![_config.yml]({{ site.baseurl }}/images/fakenews_spark/params.png)
+```python
+
+nb = NaiveBayes() ##does not like renamed target column. leave this blank
+paramGrid = ParamGridBuilder() \
+		.addGrid(nb.smoothing, [0.0, 0.2, 0.4, 0.6, 0.8, 1.0]) \
+		.build()
+
+```
 
 
 For each 6 possible values for the model, the following are accomplished.[4]
@@ -87,8 +128,10 @@ For each 6 possible values for the model, the following are accomplished.[4]
 
 Once a Parameter Grid Object and a Machine Learning Pipeline is established, a Cross Validator object can be created.[6]
 
-![_config.yml]({{ site.baseurl }}/images/fakenews_spark/cv.png)
-
+```python
+cv = CrossValidator(estimator=data_prep_pipe, estimatorParamMaps=paramGrid,evaluator=BinaryClassificationEvaluator(),
+                          numFolds=10, parallelism = 5)
+```
 
 	
 1. The estimator is the pipeline that was created to process the data and train the algorithm
