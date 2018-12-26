@@ -164,7 +164,7 @@ date: 2018-12-23
   * root-me.org
   * ringzer0team.com
   
-SECURITY
+* SECURITY
 
   * vnsecurity.net
   * hvaonline.net
