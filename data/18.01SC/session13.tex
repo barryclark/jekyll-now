@@ -1,0 +1,62 @@
+\documentclass[15pt,a4paper]{article}
+\usepackage[utf8]{vietnam}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[left=4cm,right=4cm,top=4cm,bottom=4cm]{geometry}
+
+\begin{document}
+
+\title{\textbf{Bài 13: Vi phân hàm ẩn}}
+\author{}
+\date{}
+\maketitle
+
+\section{Giới thiệu}
+Ta đã học được một số công thức tổng quát và nhất định về tính đạo hàm. Nay ta sẽ sử dụng quy tắc dây chuyền để mở rộng hơn khả năng tính vi phân. Bài này học về vi phân hàm ẩn, nó cho phép ta tính vi phân của những hàm mà ta chưa có khả năng tính trước đó.
+\section{Quy tắc lũy thừa hữu tỉ}
+Ta đã biết $\frac{d}{dx}(x^n)= n x^{n-1}$ với $n$ là số nguyên. Liệu công thức $\frac{d}{dx}(x^a)= ax^{a-1}$ có đúng với $a$ không phải là số nguyên? Bây giờ ta sẽ mở rộng công thức đó với những số hữu tỉ $a = \frac{m}{n}$. Nhiệm vụ là đi chứng minh câu hỏi trên.\\
+Giả sử $y = x^{\frac{m}{n}}$ với $m, n$ là số nguyên. Ta sẽ đi tính $\frac{dy}{dx}$. Đầu tiên lũy thừa hai vế cho số nguyên $n$, tất nhiên $n \neq 0$.
+\begin{align*}
+	y &= x^{\frac{m}{n}}\\
+	y^n &= (x^{\frac{m}{n}})^n\\
+	y^n &= x^{\frac{m}{n} \cdot n}\\
+	y^n &= x^m
+\end{align*}
+Lấy đạo hàm hai vế theo biến $x$.
+\begin{align*}
+	y^n &= x^m\\
+	\frac{d}{dx}(y^n) &= \frac{d}{dx}(x^m)
+\end{align*}
+Đến đây làm sao để tính $\frac{d}{dx}(y^n)$? $y$ là hàm số theo biến $x$, vì vậy ta có thể áp dụng quy tắc dây chuyền cho hàm $y^n$ và hàm $y$. Giả sử $u = y^n$. Ta có:
+\begin{align*}
+	\frac{du}{dx} = \frac{du}{dy} \frac{dy}{dx}
+\end{align*}
+Do đó:
+\begin{align*}
+	\frac{d}{dx}(y^n) = \left(\frac{d}{dy}(y^n)\right) \frac{dy}{dx} = n y^{n-1} \frac{dy}{dx}
+\end{align*}
+Trong khi đó ở vế phải ta có $\frac{d}{dx}(x^m) = m x^{m-1}$. Vì vậy:
+\begin{align*}
+	\frac{d}{dx}(y^n) &= \frac{d}{dx}(x^m)\\
+	n y^{n-1} \frac{dy}{dx} &= m x^{m-1}
+\end{align*}
+Chia cả hai vế cho $n y^{n-1}$, ta có:
+\begin{align*}
+	\frac{dy}{dx} = \frac{m}{n} \frac{x^{m-1}}{y^{n-1}}
+\end{align*}
+Thay $y = x^{\frac{m}{n}}$ vào, ta có:
+\begin{align*}
+	\frac{dy}{dx} &= \frac{m}{n} \frac{x^{m-1}}{y^{n-1}}\\
+	&= \frac{m}{n} \frac{x^{m-1}}{(x^{\frac{m}{n}})^{n-1}}\\
+	&= \frac{m}{n} \frac{x^{m-1}}{x^{\frac{m}{n} \cdot (n-1)}}\\
+	&= \frac{m}{n} x^{\left((m-1) - \frac{m (n-1)}{n}\right)}\\
+	&= \frac{m}{n} x^{\frac{n (m-1) - m (n-1)}{n}}\\
+	&= \frac{m}{n} x^{\frac{nm - n - nm + m}{n}}\\
+	&= \frac{m}{n} x^{\frac{m - n}{n}}\\
+	&= \frac{m}{n} x^{\left(\frac{m}{n} - 1\right)}
+\end{align*}
+Vậy nên $\frac{dy}{dx} = \frac{m}{n} x^{\left(\frac{m}{n} - 1\right)} = a x^{a - 1}$ với a là số hữu tỉ bất kì.
+
+\end{document}
