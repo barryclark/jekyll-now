@@ -26,7 +26,7 @@ title: Fake News Classification Using Spark
 #### IDF Estimator
 \hspace{\parindent} Once the term frequencies for each piece of observation are generated, it imperative to score each individual piece of text. Words that are common throughout the text should have a lower weight in predictive power as opposed to words that are rare. An Inverse Document Frequency is used to find the relevance of words by mapping their term frequency within its respective text to their appearance in other pieces of text. In the equation below, N is the total number of documents $DF_{i}$ is the total number of documents containing the word i. Using this information, a weight W can now be applied to a word i belonging in document j.\\
 
-```math #yourmathlabel
+```math_def
  IDF = $log \frac{N}{DF_{i}}$\\
 
 ```
