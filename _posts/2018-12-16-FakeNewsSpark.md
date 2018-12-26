@@ -3,7 +3,7 @@ layout: post
 title: Fake News Classification Using Spark
 ---
 
-->![_config.yml]({{ site.baseurl }}/images/santander/spark.png)<-
+-> ![_config.yml]({{ site.baseurl }}/images/santander/spark.png) <-
 
 
 
