@@ -60,7 +60,7 @@ Naive Bayes is a popular machine learning algorithm for text classification. It 
 Naive Bayes is a supervised learning algorithm, meaning that we will use a set of labeled data to learn from and predict the outcomes on an unlabeled data.[3]
 
 #### Naive Bayes: Laplace Smoothing Parameter
-\hspace{\parindent} The Cross Validation process will attempt to find the optimal value for the Laplace Smoothing Parameter in the Naive Bayes Model. The default value is set to one, and grid of candidate values will be fed into a Cross Validation object.[2]
+The Cross Validation process will attempt to find the optimal value for the Laplace Smoothing Parameter in the Naive Bayes Model. The default value is set to one, and grid of candidate values will be fed into a Cross Validation object.[2]
 
 
 
