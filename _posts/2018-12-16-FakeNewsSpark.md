@@ -86,13 +86,10 @@ For each 6 possible values for the model, the following are accomplished.[4]
 2. Partition the data set into K sections
 3. For each unique section 
 
-⋅⋅⋅Use the unique section as the test set
-
-⋅⋅⋅Use the remaining data as the training set
-
-⋅⋅⋅Fit the model on the training data and evaluate on the test set.
-
-⋅⋅⋅Retain the evaluation metric and discard model.
+* Use the unique section as the test set
+* Use the remaining data as the training set
+* Fit the model on the training data and evaluate on the test set.
+* Retain the evaluation metric and discard model.
 
 4.  Summarize the performance of the model using the set of evaluation metrics obtained.
 
@@ -105,12 +102,11 @@ For each 6 possible values for the model, the following are accomplished.[4]
 }
 \columnbreak
 
-\begin{enumerate}
 	
-	\item The estimator is the pipeline that was created to process the data and train the algorithm
-	\item EstimatorParamMaps is the Parameter Grid Object. A model will be created for every possible combination of parameters. 
-	\item Evaluator is the classification method that evaluate the test data.
-	\item NumFolds is the number of sections our data will be broken into. If our parameter grid is training 6 parameters and the numFolds is set to 10, then the program will run the Naive Bayes algorithm 60 times.
-	\item The parallelism parameter is the number of threads that each computational node that will evaluate a particular fold. This will give our Cross-Validation process a different level of granularity in terms of parallelism[7]. 
-\end{enumerate}
+1. The estimator is the pipeline that was created to process the data and train the algorithm
+2. EstimatorParamMaps is the Parameter Grid Object. A model will be created for every possible combination of parameters. 
+3. Evaluator is the classification method that evaluate the test data.
+4. NumFolds is the number of sections our data will be broken into. If our parameter grid is training 6 parameters and the numFolds is set to 10, then the program will run the Naive Bayes algorithm 60 times.
+4. The parallelism parameter is the number of threads that each computational node that will evaluate a particular fold. This will give our Cross-Validation process a different level of granularity in terms of parallelism[7]. 
+
 
