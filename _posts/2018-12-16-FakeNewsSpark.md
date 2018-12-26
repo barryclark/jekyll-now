@@ -27,36 +27,32 @@ A pipeline can be thought of as an object that holds the automated steps require
 #### Count Vectorization
 \hspace{\parindent} After removing stop words, what is left with is a bag of words for each text. With this bag of words, a count vectorizer is used to get the count of how many times a word occurs in a particular piece of text. This will give us our term frequencies of a particular word i in article j.
 
-'''math
- Term Frequency = $TF_{i,j}$
+
+![_config.yml]({{ site.baseurl }}/images/fakenews_spark/tf_score.png)
+
 #### IDF Estimator
  Once the term frequencies for each piece of observation are generated, it imperative to score each individual piece of text. Words that are common throughout the text should have a lower weight in predictive power as opposed to words that are rare. An Inverse Document Frequency is used to find the relevance of words by mapping their term frequency within its respective text to their appearance in other pieces of text. In the equation below, N is the total number of documents $DF_{i}$ is the total number of documents containing the word i. Using this information, a weight W can now be applied to a word i belonging in document j.\\
 
-```math_def
- IDF = $log \frac{N}{DF_{i}}$\\
+![_config.yml]({{ site.baseurl }}/images/fakenews_spark/idf.png)
 
-```
 
 
 #### Vector Assemblage
-The next step is to take the output from the above processes and prepare them for a statistical model. A Vector Assembler will transform a set of inputs and vectorize them using a TF-IDF weight. A weight for word i in document j is defined as the Term Frequency Score multiplied by its Inverse Document Estimator.[1]\\
+The next step is to take the output from the above processes and prepare them for a statistical model. A Vector Assembler will transform a set of inputs and vectorize them using a TF-IDF weight. A weight for word i in document j is defined as the Term Frequency Score multiplied by its Inverse Document Estimator.[1]
 
-$W_{i,j} = TF_{i,j} \times IDF$
+![_config.yml]({{ site.baseurl }}/images/fakenews_spark/tfidf.png)
 
 #### Naive Bayes Learning Model
-Naive Bayes is a popular machine learning algorithm for text classification. It uses Bayes Rule to find estimate the maximum likelihood that a given piece of text belongs to a class.[2]\\
-\begin{equation}
-\label{eq:bayes}
-P(\textbf{C}|\textbf{D}) = \frac{P(\textbf{D} |\textbf{C})\times P(\textbf{C})}{P(\textbf{D})} 
-\end{equation}
+Naive Bayes is a popular machine learning algorithm for text classification. It uses Bayes Rule to find estimate the maximum likelihood that a given piece of text belongs to a class.[2]
 
-\begin{enumerate}
-	\item $P(\textbf{C}|\textbf{D})$ is the conditional probability the document D belongs to class C. This is also called our posterior probability. 
-	\item $P(\textbf{D})$ is the evidence. In this case, it is the series of words that make up an article.
-	\item $P(\textbf{D}|\textbf{C})$ is the likelihood. It can be interpreted as the probability of the evidence given the hypothesis is true.
-	
+![_config.yml]({{ site.baseurl }}/images/fakenews_spark/nb.png)
 
-\end{enumerate}
+
+1. $P(\textbf{C}|\textbf{D})$ is the conditional probability the document D belongs to class C. This is also called our posterior probability. 
+2. \item $P(\textbf{D})$ is the evidence. In this case, it is the series of words that make up an article.
+3. \item $P(\textbf{D}|\textbf{C})$ is the likelihood. It can be interpreted as the probability of the evidence given the hypothesis is true.
+
+
 Naive Bayes is a supervised learning algorithm, meaning that we will use a set of labeled data to learn from and predict the outcomes on an unlabeled data.[3]
 
 #### Naive Bayes: Laplace Smoothing Parameter
@@ -66,16 +62,10 @@ Naive Bayes is a supervised learning algorithm, meaning that we will use a set o
 
 #### K Fold Cross-Validation
 
-Given that there can multiple possible values for a Laplace smoothing parameter for Naive Bayes model, the next task would be to find the ideal value for our parameter. Spark's Cross Validation can be used to find the optimal value for our parameters.[4]  Before building the cross validation object, a Parameter grid must be defined in order to specify the list of possible combinations for a given machine learning pipeline.[5] \\
-
-\\
+Given that there can multiple possible values for a Laplace smoothing parameter for Naive Bayes model, the next task would be to find the ideal value for our parameter. Spark's Cross Validation can be used to find the optimal value for our parameters.[4]  Before building the cross validation object, a Parameter grid must be defined in order to specify the list of possible combinations for a given machine learning pipeline.[5] 
 
 
-{ \centering
-	\includegraphics[width=\columnwidth]{params.png}\\
-	\captionof{figure}{A Cross-Validator Object }\label{pinki}
-}
-
+![_config.yml]({{ site.baseurl }}/images/fakenews_spark/params.png)
 
 
 For each 6 possible values for the model, the following are accomplished.[4]
@@ -94,13 +84,10 @@ For each 6 possible values for the model, the following are accomplished.[4]
 4.  Summarize the performance of the model using the set of evaluation metrics obtained.
 
 
-\hspace{\parindent}Once a Parameter Grid Object and a Machine Learning Pipeline is established, a Cross Validator object can be created.[6]\\
+Once a Parameter Grid Object and a Machine Learning Pipeline is established, a Cross Validator object can be created.[6]
 
-{ \centering
-	\includegraphics[width=\columnwidth]{cv.png}\\
-	\captionof{figure}{A Cross Validator Object}\label{pinki}
-}
-\columnbreak
+![_config.yml]({{ site.baseurl }}/images/fakenews_spark/cv.png)
+
 
 	
 1. The estimator is the pipeline that was created to process the data and train the algorithm
