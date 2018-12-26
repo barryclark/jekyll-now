@@ -5,7 +5,8 @@ title: Fake News Classification Using Spark
 
 ![_config.yml]({{ site.baseurl }}/images/santander/spark.png) 
 
-
+## Topics
+#### Cross-Validation, Apache Spark, Machine Learning Pipelines, Naive-Bayes Classification
 
   Fake news and the credibility of news articles have been a central issue of in today's digitized society. Fake news in this context is defined as a news article that spreads inaccurate or false information that can influence the political opinion of a reader. This is an important issue because of how quickly these news articles can travel through social media sites like Facebook and Twitter. Spark's MLib (Machine Learning Library) Framework is capable of creating pipelines that ingest and preprocess the text documents,train statistical models, and distribute the workload of cross-validation across several nodes.
 
@@ -102,7 +103,7 @@ Given that there can multiple possible values for a Laplace smoothing parameter 
 
 ```python
 
-nb = NaiveBayes() ##does not like renamed target column. leave this blank
+nb = NaiveBayes()
 paramGrid = ParamGridBuilder() \
 		.addGrid(nb.smoothing, [0.0, 0.2, 0.4, 0.6, 0.8, 1.0]) \
 		.build()
