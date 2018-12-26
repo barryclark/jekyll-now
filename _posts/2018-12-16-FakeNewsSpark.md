@@ -19,17 +19,17 @@ title: Fake News Classification Using Spark
 #### Stop Words Removal
 \hspace{\parindent} Once the document has been broken down to individual words, the next step is to remove unnecessary words that add noise to the model. Stop words are words that don't have predictive power in the model. These include words such as "the" and "of". 
 \subsection {Count Vectorization}
-\hspace{\parindent} After removing stop words, what is left with is a bag of words for each text. With this bag of words, a count vectorizer is used to get the count of how many times a word occurs in a particular piece of text. This will give us our term frequencies of a particular word i in article j.\\
+\hspace{\parindent} After removing stop words, what is left with is a bag of words for each text. With this bag of words, a count vectorizer is used to get the count of how many times a word occurs in a particular piece of text. This will give us our term frequencies of a particular word i in article j.
 
-
+'''math
  Term Frequency = $TF_{i,j}$
 #### IDF Estimator
 \hspace{\parindent} Once the term frequencies for each piece of observation are generated, it imperative to score each individual piece of text. Words that are common throughout the text should have a lower weight in predictive power as opposed to words that are rare. An Inverse Document Frequency is used to find the relevance of words by mapping their term frequency within its respective text to their appearance in other pieces of text. In the equation below, N is the total number of documents $DF_{i}$ is the total number of documents containing the word i. Using this information, a weight W can now be applied to a word i belonging in document j.\\
 
-
+```math #yourmathlabel
  IDF = $log \frac{N}{DF_{i}}$\\
 
-
+```
 
 
 #### Vector Assemblage
