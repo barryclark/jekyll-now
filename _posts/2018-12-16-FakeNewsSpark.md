@@ -209,7 +209,7 @@ Spark allows developers to build fast and scalable applications. Spark's built-i
 
 6.  ML Tuning: Model selection and hyperparameter tuning. (n.d.). Retrieved December 2, 2018, from https://spark.apache.org/docs /latest/ml-tuning.html 
 	
-7. Pentreath, N., $\&$ Cutler, B. (2018, November 2). Model Parallelism in Spark ML Cross Validation. Lecture presented at Spark AI Summit 2018. 
+7. Pentreath, N., & Cutler, B. (2018, November 2). Model Parallelism in Spark ML Cross Validation. Lecture presented at Spark AI Summit 2018. 
 
 8. What is Apache Spark. (n.d.). Retrieved November 3, 2018, from https://hortonworks.com/apache/spark/ 
 	
