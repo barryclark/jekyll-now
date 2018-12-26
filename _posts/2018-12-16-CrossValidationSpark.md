@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Fake News Classification Using Spark
+title: Cross-Validation Using Spark
 ---
 
 ## Topics
