@@ -26,14 +26,23 @@ pre {
     border: 2px solid #002040;
     background-color: #0063B1;
   }
+}
 
-  &.highlight {
-    color: #ddd;
+div.language-powershell pre.highlight {
+  color: #ddd;
+  background-color: #202040;
+
+  &::-webkit-scrollbar {
     background-color: #202040;
+  }
+}
 
-    &::-webkit-scrollbar {
-      background-color: #202040;
-    }
+div.highlighter-rouge pre.highlight {
+  color: #ddd;
+  background-color: #202040;
+
+  &::-webkit-scrollbar {
+    background-color: #202040;
   }
 }
 

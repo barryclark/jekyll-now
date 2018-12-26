@@ -47,6 +47,58 @@ body {
   width: 100%;
 }
 
+table {
+  background: $white;
+  border: 1px solid $borderColor;
+  font-size: 0.8em;
+  display: block;
+  overflow: auto;
+
+  -moz-box-shadow: $boxShadow;
+  -webkit-box-shadow: $boxShadow;
+  box-shadow: $boxShadow;
+
+  tr:nth-child(even) {
+    background: $tableRowHighlight;
+  }
+
+  td {
+    border: 1px solid $borderColor;
+    padding: 5px;
+    vertical-align: middle;
+
+    code {
+      word-break: break-word;
+      font-size: 1em;
+
+      &.highlighter-rouge {
+        font-weight: normal;
+      }
+    }
+  }
+
+  tr td:first-of-type {
+    border-left-width: 0;
+  }
+
+  tr td:last-of-type {
+    border-right-width: 0;
+  }
+
+  thead {
+    background: $borderColor;
+    font-family: $segoeBold;
+    font-weight: bold;
+    font-size: 1.1em;
+    color: $h3Color;
+
+    th {
+      line-height: 1.8em;
+      border-top-width: 0;
+    }
+  }
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: $segoeBold;
   font-weight: bold;
@@ -368,9 +420,9 @@ ul.listRecent {
   img {
     max-width: 95%;
     margin: 5px auto;
-    -moz-box-shadow: 4px 4px 0 rgba(0,0,0,0.2);
-    -webkit-box-shadow: 4px 4px 0 rgba(0,0,0,0.2);
-    box-shadow: 4px 4px 0 rgba(0,0,0,0.2);
+    -moz-box-shadow: $boxShadow;
+    -webkit-box-shadow: $boxShadow;
+    box-shadow: $boxShadow;
   }
 
   .caption {
