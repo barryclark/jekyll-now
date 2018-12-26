@@ -80,18 +80,16 @@ Given that there can multiple possible values for a Laplace smoothing parameter 
 
 For each 6 possible values for the model, the following are accomplished.[4]
 
-\begin{enumerate
+
 	
-	\item Shuffle the data set randomly
-	\item Partition the data set into K sections
-	\item For each unique section 
-		\subitem Use the unique section as the test set
-		\subitem Use the remaining data as the training set
-		\subitem Fit the model on the training data and evaluate on the test set.
-		\subitem Retain the evaluation metric and discard model.
-	\item Summarize the performance of the model using the set of evaluation metrics obtained.
-	
-\end{enumerate}
+	1. Shuffle the data set randomly
+	2. Partition the data set into K sections
+	3. For each unique section 
+		⋅⋅* Use the unique section as the test set
+		⋅⋅* Use the remaining data as the training set
+		⋅⋅* Fit the model on the training data and evaluate on the test set.
+		⋅⋅* Retain the evaluation metric and discard model.
+	⋅⋅* Summarize the performance of the model using the set of evaluation metrics obtained.
 
 
 \hspace{\parindent}Once a Parameter Grid Object and a Machine Learning Pipeline is established, a Cross Validator object can be created.[6]\\
