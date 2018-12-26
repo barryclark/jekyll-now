@@ -13,7 +13,7 @@ title: Fake News Classification Using Spark
 ## Machine Learning Pipeline
 \hspace{\parindent} A pipeline can be thought of as an object that holds the automated steps required to take raw text and apply a machine learning model for classification. These pipelines can be applied to multiple machines, making them ideal for our Cross-Validation process.
 
-#### {Tokenizer}
+#### Tokenizer
 \hspace{\parindent} A Tokenizer is an object in PySpark's ML Library and is used to to break up text into words. It is crucial that each document is represented as a bag of words model. 
 
 #### Stop Words Removal
