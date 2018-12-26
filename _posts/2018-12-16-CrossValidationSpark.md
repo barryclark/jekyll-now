@@ -27,7 +27,7 @@ A pipeline can be thought of as an object that holds the automated steps require
  
  
 #### Count Vectorization
-\hspace{\parindent} After removing stop words, what is left with is a bag of words for each text. With this bag of words, a count vectorizer is used to get the count of how many times a word occurs in a particular piece of text. This will give us our term frequencies of a particular word i in article j.
+ After removing stop words, what is left with is a bag of words for each text. With this bag of words, a count vectorizer is used to get the count of how many times a word occurs in a particular piece of text. This will give us our term frequencies of a particular word i in article j.
 
 
 ![_config.yml]({{ site.baseurl }}/images/fakenews_spark/tf_score.png)
