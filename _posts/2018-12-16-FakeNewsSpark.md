@@ -82,14 +82,14 @@ For each 6 possible values for the model, the following are accomplished.[4]
 
 
 	
-	1. Shuffle the data set randomly
-	2. Partition the data set into K sections
-	3. For each unique section 
-		⋅⋅* Use the unique section as the test set
-		⋅⋅* Use the remaining data as the training set
-		⋅⋅* Fit the model on the training data and evaluate on the test set.
-		⋅⋅* Retain the evaluation metric and discard model.
-	⋅⋅* Summarize the performance of the model using the set of evaluation metrics obtained.
+1. Shuffle the data set randomly
+2. Partition the data set into K sections
+3. For each unique section 
+	⋅⋅* Use the unique section as the test set
+	⋅⋅* Use the remaining data as the training set
+	⋅⋅* Fit the model on the training data and evaluate on the test set.
+	⋅⋅* Retain the evaluation metric and discard model.
+4.  Summarize the performance of the model using the set of evaluation metrics obtained.
 
 
 \hspace{\parindent}Once a Parameter Grid Object and a Machine Learning Pipeline is established, a Cross Validator object can be created.[6]\\
