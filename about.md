@@ -4,12 +4,10 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+### A little bit about me
 
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
+I'm a curious soul and I learning about statistical methods and algorithms. I got my Bachelor's in Computer Science from Western Michigan University and I am currently now pursuing my Master's Degree in Data Science and Analytics. 
 
 ### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+Feel free to add me on linkedin or send me an email.
+[ruizant@mail.gvsu.edu](mailto:ruizant@mail.gvsu.edu)

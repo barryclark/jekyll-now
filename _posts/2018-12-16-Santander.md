@@ -16,7 +16,15 @@ title: Santander Kaggle Challenge
 ### Target Variable
  Since the goal of the project is an attempt to predict the monetary value of customers, it is reasonable to assume that only a few select customers will are wealthy while the vast majority are average, middle-class accounts.[3] This poses a problem in a linear regression setting, specifically because our model would assume normality. By taking the logarithmic transformation of the target variable, we are able to make it a better fit for the underlying assumptions of a linear model.
  
+ Before...
+ 
  ![_config.yml]({{ site.baseurl }}/images/santander/target.png)
+ 
+ 
+ 
+ After...
+ 
+ ![_config.yml]({{ site.baseurl }}/images/santander/logtarget.png)
 
  
 
@@ -25,10 +33,14 @@ title: Santander Kaggle Challenge
 ### High Sparsity 
   Another note to make about the dataset is its sparsity. Most of the values through out the dataset contain a high amount of zeros. Besides the high number of dimensions, getting predictive power out of these columns will be a challenge. To demonstrate the sparsity of the matrix, I took the sums of each column and stored them into an array. Below is the histogram of that array.
   
+ ![_config.yml]({{ site.baseurl }}/images/santander/sums.png)
+
+  
 
 ### High Dimensionality 
+The combination of sparsity and high dimensionality means that there is a good chance alot of our features will be correlated. To give you an idea of what this looks like, take a look at the first five observations from the data table. 
 
-![_config.yml]({{ site.baseurl }}/images/santander/df_head.jpg)
+![_config.yml]({{ site.baseurl }}/images/santander/df_head.png)
 
 
 
@@ -41,26 +53,23 @@ We can see that the high number of dimensions and the sparsity of the data frame
 
 ## Principal Components Regression Using a Linear Stacked AutoEncoder
 
-  One approach we can take to reduce the large dimensionality of our dataset is creating Principal Components using a Linear Stacked Auto Encoder. The Principal Component Analysis is a statistical procedure that uses an orthogonal transformation to create a set of nonlinear variables that capture the variance between the input matrix. Because there are so many variables, chances are there is collinearity in our model. We cannot get accurate estimates for a linear regression model. A Linear Stacked Auto Encoder is a type of Neural Network that produces a similar result to a Principal Component Analysis. The difference between the two is that PCA is restricted to a linear transformation and Neural networks have different activation functions to account for Non-Linearities.[2]
+  One approach we can take to reduce the large dimensionality of our dataset is creating Principal Components using a Linear Stacked Auto Encoder. The Principal Component Analysis is a statistical procedure that uses an orthogonal transformation to create a set of nonlinear variables that capture the variance between the input matrix. Because there are so many variables, chances are there is collinearity in our model. We cannot get accurate estimates for a linear regression model. A Linear Stacked Auto Encoder is a type of Neural Network that produces a similar result to a Principal Component Analysis. The difference between the two is that PCA is restricted to a linear transformation and Neural networks have different activation functions to account for Non-Linearities[2]. In a linear stacked autoencoder, the number of hidden layers gives you the number of principle components. This is what our 5000 column data table looks like transformed into 3 dimensions.
   
   ![_config.yml]({{ site.baseurl }}/images/santander/3d.png)
   
   
-| Model 	 |  MSE     | R^2       | 
-|----------------|----------|-----------|
-| LR w/ LSA      | .5437    | 0.0575    |   
-
-  
-
-  
-  As we can see below, there is a huge difference already, however we can see the model demonstrating similar behavior as it did previously. Most of the fitted values are centered around the mean of the logarithmic transformation of the target [Fig. 5]. There also appears to be some sort of 'wall' that does not let our predict any value less than 6.25 .
+  As we can see below, there is a huge difference already, however we can see the model demonstrating similar behavior as it did previously. Most of the fitted values are centered around the mean of the logarithmic transformation of the target. There also appears to be some sort of 'wall' that does not let our predict any value less than 6.25 .
   
   
 ![_config.yml]({{ site.baseurl }}/images/santander/lr_3d.png)
 
+	MSE: .5437
+	R^2: 0.0575
+
 ## Regularization Methods:
 
 Is it possible to perform better with just a subset of the original features instead of their Principal Components? Let's explore some methods to shrink the coefficients of the parameters of our model and see how it compares to our makeshift principal components regression.
+
 ![_config.yml]({{ site.baseurl }}/images/santander/L1_and_L2_balls.svg.png)
 
 
@@ -71,12 +80,9 @@ Is it possible to perform better with just a subset of the original features ins
   
 ![_config.yml]({{ site.baseurl }}/images/santander/lasso.png)
 
-  
-    
-| Model 	 |  MSE     | R^2       | 
-|----------------|----------|-----------|
-| Lasso    | .5777    | -0.0001104    |   
-
+ 
+	MSE: .577
+	R^2: -0.0001104
 
 ### Ridge 
   Ridge regression uses a penalizer that shrinks the coefficients as close to zero as possible, but unlike lasso, it does not kick out the parameters. We can see in this, it behaved similarly to our Principal Components Regression, with the omission of the 'wall' phenomenon discussed in Figure 7. We can note that our MSE did increase and our R^2 is not only still negative, but it is still lower than the R^2 obtained from our Principal Component Regression. In short, the Principal Component Regression outperformed both Penalization methods.
@@ -84,17 +90,16 @@ Is it possible to perform better with just a subset of the original features ins
 ![_config.yml]({{ site.baseurl }}/images/santander/ridge.png)
 
   
-| Model 	 |  MSE     | R^2       | 
-|----------------|----------|-----------|
-| Ridge Regression     | .6108    | -0.05878    |   
 
+	MSE: .6108
+	R^2: -0.05878
 
   
  
 
 ## Tree Based Regression:
 
-  We can see that our penalization methods still suffer from the sparsity of our dataset. Ridge and Lasso Regression both assume that the input matrix is orthonormal, which means that the predictors are not correlated and loosely the same scale[]. Despite the MinMaxScaling we applied to the dataframe, it does not do anything to alleviate the correlation stipulation.
+  We can see that our penalization methods still suffer from the sparsity of our dataset. Ridge and Lasso Regression both assume that the input matrix is orthonormal, which means that the predictors are not correlated and loosely the same scale[1.]. Despite the MinMaxScaling we applied to the dataframe, it does not do anything to alleviate the correlation stipulation.
    It is beginning to be clear that linear methods are not performing well. Let us explore the notion of Non-Linear Regression. Trees can be used for both nonlinear classification and regression, and they work separating the prediction space using the input matrix. Although they are fast and easy to interpret, they can be prone to over fitting and high variance. Two algorithms that have been made popular in machine learning to solve this issue are Random Forest and XGBoost.
    
    
@@ -105,11 +110,10 @@ Random Forest uses random sampling with replacement to select a random subset of
 
 ![_config.yml]({{ site.baseurl }}/images/santander/forest.png)
 
-  
-| Model 	 |  MSE     | R^2       | 
-|----------------|----------|-----------|
-| Random Forest      | .438   | 0.240    |   
 
+
+	MSE: .438
+	R^2: 0.240
 
 ## XGBoost 
 
@@ -117,10 +121,9 @@ XGBoost is similar to Random Forest, except that it uses to random sampling with
 
 ![_config.yml]({{ site.baseurl }}/images/santander/xgb.png)
 
-  
-| Model 	 |  MSE     | R^2       | 
-|----------------|----------|-----------|
-| XGBoost     | .434    | 0.277   |   
+
+	MSE: .434
+	R^2: 0.277
 
 
 
@@ -139,7 +142,7 @@ We have explored several approaches to reducing the problems of dimensionality a
 
 ## References
 
-	 [1.] Bravo, H. C, $\&$ Irizarry, R. A. (2018, December 4). Lecture 6: Methods for High-Dimensional Problems. Lecture.
+	 [1.] Bravo, H. C, & Irizarry, R. A. (2018, December 4). Lecture 6: Methods for High-Dimensional Problems. Lecture.
 	 [2.]  Cohen, O. (2018, April 23). PCA vs Autoencoders – Towards Data Science. Retrieved from https://towardsdatascience.com/pca-vs-autoencoders-1ba08362f450 
 	[3.] Macdonnell, K. (2010, March 04). Why transform the dependent variable? Retrieved from https://cooldata.wordpress.com/2010/03/04/why-transform-the-dependent-variable/ 
 	 [4.] What Is R Squared And Negative R Squared. (2017, May 12). Retrieved December 4, 2018, from http://www.fairlynerdy.com/what-is-r-squared/ 
