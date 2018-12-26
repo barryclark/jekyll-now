@@ -3,7 +3,7 @@ layout: post
 title: Fake News Classification Using Spark
 ---
 
--> ![_config.yml]({{ site.baseurl }}/images/santander/spark.png) <-
+![_config.yml]({{ site.baseurl }}/images/santander/spark.png) 
 
 
 
@@ -49,9 +49,9 @@ Naive Bayes is a popular machine learning algorithm for text classification. It 
 ![_config.yml]({{ site.baseurl }}/images/fakenews_spark/nb.png)
 
 
-1. $P(\textbf{C}|\textbf{D})$ is the conditional probability the document D belongs to class C. This is also called our posterior probability. 
-2. \item $P(\textbf{D})$ is the evidence. In this case, it is the series of words that make up an article.
-3. \item $P(\textbf{D}|\textbf{C})$ is the likelihood. It can be interpreted as the probability of the evidence given the hypothesis is true.
+1. `P(C|D)` is the conditional probability the document D belongs to class C. This is also called our posterior probability. 
+2. `P(D)` is the evidence. In this case, it is the series of words that make up an article.
+3. `P(D|C)` is the likelihood. It can be interpreted as the probability of the evidence given the hypothesis is true.
 
 
 Naive Bayes is a supervised learning algorithm, meaning that we will use a set of labeled data to learn from and predict the outcomes on an unlabeled data.[3]
