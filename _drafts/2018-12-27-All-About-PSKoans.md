@@ -12,7 +12,7 @@ It borrows from some koans modules from other languages, and the concept of koan
 tool seems to originate from a Ruby project &mdash; although at least a handful of other languages
 now have koan libraries available for learners.
 
-The concept of koans was first introduced to me when I first decided to learn how to code in F#.
+The concept of _kōans_ was first introduced to me when I first decided to learn how to code in F#.
 Initially, I struggled quite a bit.
 For those of you who mightn't be familiar with it, it's a bit of an unusual language that aims to
 bring functional language features into a .NET family language.
@@ -46,4 +46,24 @@ similar idea is used in Chris Marinos' F# Koans.
 
 This is used to create an assertion that will always fail the first time around, and often some
 interaction framework is used as an in-between to help guide the pupil to where to look in the error
-message and how to find the issue and resolve it.
+message and how to find the issue and resolve it For example:
+
+```powershell
+Describe 'Addition' {
+    It 'is basic arithmetic' {
+        __ | Should -Be ( 5 + 1 )
+    }
+}
+```
+
+Executing this in PowerShell (with PSKoans installed, or a simple `return $null` function aliasing
+the `__` command call) will result in the following output:
+
+```diff
++ Describing Addition
+-   [-] is basic arithmetic 3.9s
+-     Expected 6, but got $null.
+-     3:         __ | Should -Be ( 5 + 1 )
+```
+
+Pretty straightforward; tells you what's wrong, and where it needs to be fixed.
