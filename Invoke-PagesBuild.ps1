@@ -67,7 +67,8 @@ Start-Sleep -Seconds 5
 $ApiParams['Method'] = 'GET'
 Invoke-RestMethod @ApiParams
 
-$Date = Get-Date -Format yyyy-MM-dd
+$LocalTimeOffset = New-TimeSpan -Hours -5
+$Date = [DateTimeOffset]::Now.ToOffset($LocalTimeOffset).ToString('yyyy-MM-dd')
 Write-Host "Current date is: $Date" -ForegroundColor Blue
 
 Write-Host "Available Blog Posts in [$PSScriptRoot/_posts]:" -ForegroundColor Green
