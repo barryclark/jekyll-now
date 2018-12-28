@@ -12,7 +12,7 @@ I'm interested in Mathematics &rarr; Computer Science &rarr; Artificial Intellig
 
 ### About my blog
 
-This blog is a place where I write some important things that I want to note for sharing knowledge and reviewing knowledge in the future.
+This blog is a place where I write some important things that I want to note for sharing knowledge and reviewing knowledge in the future. Depending on the content of my post, the language may be English or Vietnamese.
 
 ### Contact
 
