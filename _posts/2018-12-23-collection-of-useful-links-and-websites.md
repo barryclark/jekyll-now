@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tập hợp link hữu ích
+title: Collection of useful links and websites
 date: 2018-12-23
 ---
 * HOW TO BE A PROGRAMMER
