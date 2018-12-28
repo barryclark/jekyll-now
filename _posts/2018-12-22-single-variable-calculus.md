@@ -8,8 +8,8 @@ Source: [MIT OpenCourseWare](https://ocw.mit.edu/courses/mathematics/18-01sc-sin
 Instructor(s): Prof. [David Jerison](http://math.mit.edu/~jerison/).
 
 Course syllabus
-* Part A: Differentiation
-  * Definition and Basic Rules
+* Differentiation
+  * Part A: Definition and Basic Rules
     * Session 1: Introduction to Derivatives
     * Session 2: Examples of Derivatives
     * Session 3: Derivative as Rate of Change
