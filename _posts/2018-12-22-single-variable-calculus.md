@@ -3,34 +3,39 @@ layout: post
 title: 18.01SC - Single Variable Calculus (Fall 2010)
 date: 2018-12-22
 ---
-Nguồn: [MIT OpenCourseWare](https://ocw.mit.edu/courses/mathematics/18-01sc-single-variable-calculus-fall-2010/).
+Source: [MIT OpenCourseWare](https://ocw.mit.edu/courses/mathematics/18-01sc-single-variable-calculus-fall-2010/).
 
-Giảng viên: Giáo sư [David Jerison](http://math.mit.edu/~jerison/).
+Instructor(s): Prof. [David Jerison](http://math.mit.edu/~jerison/).
 
-Giáo trình môn học
-* Vi phân
-  * Định nghĩa và các quy tắc cơ bản
-    * Bài 1: Giới thiệu về đạo hàm
-    * Bài 2: Ví dụ về đạo hàm
-    * Bài 3: Xem đạo hàm như tốc độ biến thiên
-    * Bài 4: Giới hạn và liên tục
-    * Bài 5: Không liên tục
-    * Bài 6: Tính đạo hàm
-    * Bài 7: Đạo hàm của sin và cos
-    * Bài 8: Giới hạn của sin và cos
-    * Bài 9: Quy tắc nhân
-    * Bài 10: Quy tắc chia
-    * Bài 11: Quy tắc dây chuyền
-    * Bài 12: Đạo hàm bậc cao
-  * Vi phân hàm ẩn và hàm nghịch đảo
-    * Bài 13: Vi phân hàm ẩn ([note](/data/18.01SC/session13.pdf))
-* Ứng dụng của vi phân
-  * Sự xấp xỉ và phác họa đường cong
-  * Tối ưu hóa, các tốc độ biến thiên phụ thuộc nhau và phương pháp Newton 
-  * Định lý giá trị trung bình, nguyên hàm và phương trình vi phân
-* Tích phân xác định và ứng dụng
-  * Định nghĩa tích phân xác định và định lí cơ bản đầu tiên
-  * Định lí cơ bản thứ hai, diện tích, thể tích
-* Các kỹ thuật tích phân
-* Tìm hiểu về vô hạn
-
+Course syllabus
+* Part A: Differentiation
+  * Definition and Basic Rules
+    * Session 1: Introduction to Derivatives
+    * Session 2: Examples of Derivatives
+    * Session 3: Derivative as Rate of Change
+    * Session 4: Limits and Continuity
+    * Session 5: Discontinuity
+    * Session 6: Calculating Derivatives
+    * Session 7: Derivatives of Sine and Cosine
+    * Session 8: Limits of Sine and Cosine
+    * Session 9: Product Rule
+    * Session 10: Quotient Rule
+    * Session 11: Chain Rule
+    * Session 12: Higher Derivatives
+  * Part B: Implicit Differentiation and Inverse Functions
+    * Session 13: Implicit Differentiation ([my note](/data/18.01SC/session13.pdf))
+* Applications of Differentiation
+  * Part A: Approximation and Curve Sketching
+  * Part B: Optimization, Related Rates and Newton's Method
+  * Part C: Mean Value Theorem, Antiderivatives and Differential Equations
+* The Definite Integral and its Applications
+  * Part A: Definition of the Definite Integral and First Fundamental Theorem
+  * Part B: Second Fundamental Theorem, Areas, Volumes
+  * Part C: Average Value, Probability and Numerical Integration
+* Techniques of Integration
+  * Part A: Trigonometric Powers, Trigonometric Substitution and Completing the Square
+  * Part B: Partial Fractions, Integration by Parts, Arc Length, and Surface Area
+  * Part C: Parametric Equations and Polar Coordinates
+* Exploring the Infinite
+  * Part A: L'Hospital's Rule and Improper Integrals
+  * Part B: Taylor Series
