@@ -29,8 +29,10 @@ footer-links:
   twitter: sawthinkar
   stackoverflow: users/5307753/saw-thinkar-nay-htoo # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: channel/UCqcKkK1JEosrJjMxlulIY0w # channel/<your_long_string> or user/<user-name>
-  googleplus: # anything in your profile username that comes after plus.google.com/
   quora: Saw-Thinkar-Nay-Htoo
+  duolingo: sawthinkar
+  googleplus: # anything in your profile username that comes after plus.google.com/
+
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 # You can find your shortname on the Settings page of your Disqus account
